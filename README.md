@@ -5,7 +5,7 @@
 ### B1.church
 
 ### ChUMS
-- [Sample Article](chums/sample-article.md)
+- [How To Setup Online Giving](chums/giving.md)
 
 ### Lessons.church
 
