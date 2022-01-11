@@ -21,5 +21,5 @@
 ## How to set up an account to give as a user.
 -This video is here for you to share with anyone that wants to give to your church please feel free to use it anyway you want.
 [![Setting Up Donations](https://img.youtube.com/vi/tW8iT-9WuWQ/0.jpg)](https://www.youtube.com/watch?v=tW8iT-9WuWQ)
-[Download this video(https://www.dropbox.com/s/1lgwmh2t51lm57c/Setting%20up%20Donations.mp4?dl=0)
+[Download this video](https://www.dropbox.com/s/1lgwmh2t51lm57c/Setting%20up%20Donations.mp4?dl=0)
 
