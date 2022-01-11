@@ -1,6 +1,6 @@
 ## Start accepting Payments Online in Chums
 
-[![How To Setup Online Giving](https://img.youtube.com/vi/M5wWLBEtg/0.jpg)](https://www.youtube.com/watch?v=M555wWLBEtg)
+[![How To Setup Online Giving](https://img.youtube.com/vi/M555wWLBEtg/0.jpg)](https://www.youtube.com/watch?v=M555wWLBEtg)
 
 1. Setup an account for your church on [Stripe](https://stripe.com) (you will need to Activate your account and take it  out of test mode)
 2. Connect Your new Stripe account to Chums.
