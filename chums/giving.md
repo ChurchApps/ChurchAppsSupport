@@ -16,6 +16,7 @@
 - Go back to Stripe and Reveal your Secrect Key you can only do this once. (make a backup) 
 - Return to Church apps and paste that key into the Secrect Key Spot Hit Save.
 - You are now ready to start taking donations the site that you need to send people to is **YourSubdomain**.b1.church/donate
+- You are now ready to start taking donations.  One more step.  Think of an easy to remember subdomain name and add it to this link  ______________.b1.church/donate (example: TCChurch.b1.church/donate). Now copy and paste your link wherever you want to take donations.
 
 
 ## How to set up an account to give as a user.
