@@ -23,3 +23,7 @@
 [![Setting Up Donations](https://img.youtube.com/vi/tW8iT-9WuWQ/0.jpg)](https://www.youtube.com/watch?v=tW8iT-9WuWQ)
 [Download this video](https://www.dropbox.com/s/1lgwmh2t51lm57c/Setting%20up%20Donations.mp4?dl=0)
 
+## Admin work after payments start coming in.
+-You will get a notification in your e-mail every time you get a donation on [Stripe](https://stripe.com).
+-If you would like to change the email address that receives the notification of a donation go to the [Stripe](https://stripe.com) dashboard, click on the profile on the top right corner, in the pop-up choose "profile".  Click on "edit" in profile and you can change the e-mail to whatever you choose.
+You can also follow [these](https://support.stripe.com/questions/change-the-email-address-where-stripe-emails-are-sent#:~:text=If%20you%20want%20account%2Drelated,Stripe%20to%20other%20email%20addresses) instructions to forward notifications to whoever you would like.
