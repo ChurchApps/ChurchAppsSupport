@@ -1,3 +1,0 @@
-## Sample Articles
-
-Sample content
