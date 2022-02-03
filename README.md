@@ -1,6 +1,7 @@
 ## ChurchApps Support
 
 ### Accounts Management
+- [How to reset your password on any LCS Platform](chums/reset-passwords.md)
 
 ### B1.church
 
