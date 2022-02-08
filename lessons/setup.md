@@ -11,7 +11,7 @@
 4.**Make At least one Scheduale you can make as many as you want with as many classrooms as you have.** 
 ![Screen Shot 2022-02-07 at 6 51 07 AM](https://user-images.githubusercontent.com/65249159/152794198-0f05d8a6-d5ef-4ad4-874a-23af551bcfac.png)
 
-5. **Next Head over to [B1.Church](https://b1.church/login) your username and password is the same as it is for Lessons.Church.**
+5. **Head over to [B1.Church](https://b1.church/login) and login your username and password are the same as Lessons.Church.**
 ![Screen Shot 2022-02-07 at 6 51 50 AM](https://user-images.githubusercontent.com/65249159/152794706-33465ce4-3dd9-49e0-ae97-98b10ddf7471.png)
 
 6. **Choose your Church.**
