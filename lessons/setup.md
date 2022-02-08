@@ -32,22 +32,29 @@
 ![Screen Shot 2022-02-08 at 7 03 59 AM](https://user-images.githubusercontent.com/65249159/152997454-d59609a9-9929-4c62-917d-e6fb57f58e2d.png)
 
 ## Looading on your phone or tablet.
-Currently the B1 App is only availble in the google play store but will be availble in the app store very soon. The setup process will be very similar if you have an apple device you can simply load yourchurchsname.b1.church in your browser and it will function the same way.
+Currently the B1 App is only availble in the [google play store](https://play.google.com/store/apps/details?id=church.b1.mobile but will be availble in the app store very soon. The setup process will be very similar if you have an apple device you can simply load yourchurchsname.b1.church in your browser and it will function the same way.
 
 1. In The Google play store search b1.church
+
 ![Screenshot_2022-02-08-06-55-46](https://user-images.githubusercontent.com/65249159/152998360-30412081-031d-4cde-b00e-5287f0244e56.png)
 
  2. Click Install
- ![Screenshot_2022-02-08-06-55-52](https://user-images.githubusercontent.com/65249159/152998554-2664f0a1-09a5-4c61-939b-9a3a25c8a3e1.png)
+
+![Screenshot_2022-02-08-06-55-52](https://user-images.githubusercontent.com/65249159/152998554-2664f0a1-09a5-4c61-939b-9a3a25c8a3e1.png)
  
  3. Find your church
- ![Screenshot_2022-02-08-06-57-52](https://user-images.githubusercontent.com/65249159/152998684-037695e7-3072-4e5c-8562-d64a9a8c0444.png)
+
+![Screenshot_2022-02-08-06-57-52](https://user-images.githubusercontent.com/65249159/152998684-037695e7-3072-4e5c-8562-d64a9a8c0444.png)
 
 4. Click on your church.
+
 ![Screenshot_2022-02-08-06-58-50](https://user-images.githubusercontent.com/65249159/152998783-c8f7cb86-5d2c-4625-b56f-32157d28a830.png)
 
 5.That it you are in now your app will update evry week with the correct lessons from lessons.church
+
 ![Screenshot_2022-02-08-07-04-20](https://user-images.githubusercontent.com/65249159/152998976-ac130590-c764-4b30-9d10-edbbfb6adde1.png)
+
+
 ![Screenshot_2022-02-08-07-04-33](https://user-images.githubusercontent.com/65249159/152999000-a7a93d15-34be-4256-adb3-892731aefde5.png)
 
 
