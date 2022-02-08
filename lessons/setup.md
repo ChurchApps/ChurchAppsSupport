@@ -23,7 +23,7 @@
 8. **Name Your Written material feed button then click save.**
 ![Screen Shot 2022-02-08 at 6 44 08 AM](https://user-images.githubusercontent.com/65249159/152995165-0a1e789c-4f7e-4870-98ae-872f9d09d6a2.png)
 
-9. **Now to access that Contentent to see it right away on any browser just typey in yourchurchsname.b1.church you can also find this in your address bar.**
+9. **Now to access that Contentent to see it right away on any browser just type in yourchurchsname.b1.church you can also find this in your address bar.**
 ![Screen Shot 2022-02-08 at 7 22 00 AM](https://user-images.githubusercontent.com/65249159/152996187-c95eb2e6-9540-46f4-a3c9-bede4ac0c867.png)
 
 10. **When you go that page if you have 2 or more classrooms setup it will look like this.**
