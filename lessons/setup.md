@@ -51,7 +51,7 @@ Currently the B1 App is only availble in the [google play store](https://play.go
 
 ![Screenshot_2022-02-08-06-58-50](https://user-images.githubusercontent.com/65249159/152998783-c8f7cb86-5d2c-4625-b56f-32157d28a830.png)
 
-5. **That it you are in now your app will update evry week with the correct lessons from lessons.church**
+5. **That it you are in. Now your app will update evry week with the correct lessons from lessons.church**
 
 ![Screenshot_2022-02-08-07-04-20](https://user-images.githubusercontent.com/65249159/152998976-ac130590-c764-4b30-9d10-edbbfb6adde1.png)
 
