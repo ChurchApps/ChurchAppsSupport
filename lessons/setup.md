@@ -1,7 +1,8 @@
 ## Connect Lessons.Church to the B1 app
 
 1. Register or login to your [Lessons.Church](https://lessons.church/login) account.
-2. If you have not allready you will need to register your church.
+
+2. **If you have not allready you will need to register your church.**
 ![Screen Shot 2022-02-07 at 6 49 38 AM](https://user-images.githubusercontent.com/65249159/152793813-d8cc1d74-9171-4f4a-b686-5f511cb8eabf.png)
 
 3. Click on your name on the Right side of the screen and then click on Scheduales. 
