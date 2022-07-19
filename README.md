@@ -2,7 +2,7 @@
 
 ### Accounts Management
 - [How to reset your password on any LCS Platform](accounts/reset-passwords.md)
-- [How to ser or reset your Church Logo](accounts/change-logo.md)
+- [How to set or reset your Church Logo](accounts/change-logo.md)
 
 ### B1.church
 
