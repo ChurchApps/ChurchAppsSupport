@@ -31,5 +31,14 @@ Click on Get Started:
 <img width="1501" alt="Screen Shot 2022-09-23 at 8 55 47 AM" src="https://user-images.githubusercontent.com/65249159/192040895-e051bfee-8bb0-4138-82a8-8c1da05add01.png">
 15. Connect Families togther: (Click on an Adult in the Family)
 <img width="1512" alt="Screen Shot 2022-09-23 at 3 17 03 PM" src="https://user-images.githubusercontent.com/65249159/192043444-1592ddac-b193-4ae7-a6fe-1e917d0475b8.png">
+16. Click on the edit window in the households window:
+<img width="1512" alt="Screen Shot 2022-09-23 at 3 17 52 PM" src="https://user-images.githubusercontent.com/65249159/192043928-60a9ebb7-b85c-4155-bfad-73ac811bf159.png">
+17. Add all Family members togther:
+<img width="1512" alt="Screen Shot 2022-09-23 at 3 18 10 PM" src="https://user-images.githubusercontent.com/65249159/192044051-22a765f7-d6c1-44a4-ab8b-af97a32de890.png">
+18. Next Click on the attendace icon:
+<img width="1494" alt="020" src="https://user-images.githubusercontent.com/65249159/192044382-c27b568d-9d53-4999-8922-2bf4f888c69c.png">
+19. Click on the Plus icon to add a campus:
+<img width="1494" alt="022" src="https://user-images.githubusercontent.com/65249159/192044691-768e1816-5b80-4bb1-a96d-3242cbc53c4b.png">
+20. Click on Add campus and name your campus
 
 
