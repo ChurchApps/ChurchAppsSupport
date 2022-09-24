@@ -53,6 +53,17 @@ Click on Get Started:
 <img width="1512" alt="Screen Shot 2022-09-23 at 8 07 14 PM" src="https://user-images.githubusercontent.com/65249159/192071313-8c7f7cde-981c-4457-9c34-a452d1a01636.png">
 26. Click on the name of the group you would like to setup for checkin then click the edit button:
 <img width="1501" alt="Screen Shot 2022-09-23 at 8 32 16 AM" src="https://user-images.githubusercontent.com/65249159/192071472-ef93d8b6-3735-4630-8d97-e2a872e74011.png">
+27. At this point you need to set each group according to what you want to happen a checkin. If you want to track attendance make sure to select Yes. Parent pickup means that when checkin happens on the app it will print a kid tag and parent tag for that group.
+<img width="1501" alt="Screen Shot 2022-09-23 at 8 32 36 AM" src="https://user-images.githubusercontent.com/65249159/192072791-ab49cace-937d-4f63-8947-40f262d65996.png">
+
+## Using the App on a tablet 
+
+The chums Checkin app works on the amazon platform we recomend the [Fire tablet 7” display](https://amzn.to/3fdglBJ)
+
+1. Download the [Chums Checkin](https://www.amazon.com/Live-Church-Solutions-Chums-Checkin/dp/B08JD5D4JK/ref=sr_1_1?crid=CDVBC5AELTTH&keywords=chums+checkin+app&qid=1663980694&sprefix=chums+checkin+app%2Caps%2C198&sr=8-1)
+
+Video on how the app works:
+
 
 
 
