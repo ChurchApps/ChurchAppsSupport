@@ -8,6 +8,7 @@
 
 ### ChUMS
 - [How To Setup Online Giving](chums/giving.md)
+- [How To Setup Chums Checkin](chums/checkin.md)
 
 ### Lessons.church
 - [Initial Setup](lessons/setup.md)
