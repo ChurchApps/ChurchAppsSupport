@@ -39,6 +39,20 @@ Click on Get Started:
 <img width="1494" alt="020" src="https://user-images.githubusercontent.com/65249159/192044382-c27b568d-9d53-4999-8922-2bf4f888c69c.png">
 19. Click on the Plus icon to add a campus:
 <img width="1494" alt="022" src="https://user-images.githubusercontent.com/65249159/192044691-768e1816-5b80-4bb1-a96d-3242cbc53c4b.png">
-20. Click on Add campus and name your campus
+20. Click on Add Campus and name your campus
+<img width="1494" alt="022" src="https://user-images.githubusercontent.com/65249159/192070332-919cd118-ad61-4532-a74d-87400af622c2.png">
+21. Click on Add Service and name the service:
+<img width="1494" alt="024" src="https://user-images.githubusercontent.com/65249159/192070431-b972df95-8f11-4b5c-a96e-1c36cbb2bffd.png">
+22. Click on Add Service Time and add the time of your service:
+<img width="1494" alt="027" src="https://user-images.githubusercontent.com/65249159/192070697-63b01483-dde1-4086-a32e-11aaa718ae5c.png">
+23. Next click on the groups icon:
+<img width="1501" alt="Screen Shot 2022-09-23 at 8 24 46 AM" src="https://user-images.githubusercontent.com/65249159/192070968-e199995b-a490-4342-9e9a-f1219aacf426.png">
+24. Click on the plus sign to add a new group:
+<img width="1501" alt="Screen Shot 2022-09-23 at 8 27 35 AM" src="https://user-images.githubusercontent.com/65249159/192071068-46fcfa28-5073-431e-b398-bb161834830d.png">
+25. Continue to add as many groups as your church needs:
+<img width="1512" alt="Screen Shot 2022-09-23 at 8 07 14 PM" src="https://user-images.githubusercontent.com/65249159/192071313-8c7f7cde-981c-4457-9c34-a452d1a01636.png">
+26. Click on the name of the group you would like to setup for checkin then click the edit button:
+<img width="1501" alt="Screen Shot 2022-09-23 at 8 32 16 AM" src="https://user-images.githubusercontent.com/65249159/192071472-ef93d8b6-3735-4630-8d97-e2a872e74011.png">
+
 
 
