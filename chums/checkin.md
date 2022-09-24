@@ -65,5 +65,8 @@ The chums Checkin app works on the amazon platform we recomend the [Fire tablet 
 Video on how the app works:
 
 
+[![Chums Checkin App](https://img.youtube.com/vi/qsxmrWHfX08/0.jpg)](https://youtu.be/qsxmrWHfX08)
+
+
 
 
