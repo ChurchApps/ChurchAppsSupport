@@ -19,7 +19,7 @@ Click on Get Started:
 <img width="1494" alt="009" src="https://user-images.githubusercontent.com/65249159/192037400-f2a25691-29a1-4fca-aaab-b96e9afb8f41.png">
 9: You will now be logged into your Chums account:
 <img width="1494" alt="010" src="https://user-images.githubusercontent.com/65249159/192037702-af3f6902-705b-4de9-ac85-04554ae11c5f.png">
-10: First we need to add all the people who will be checking in. There are several ways to do this if you already have all the data. For demonstration purposes, we are going to show how to add each person. Search for who you would like to add.
+10: First we need to add all the people who will be checking in. Search for who you would like to add:
 <img width="1494" alt="011" src="https://user-images.githubusercontent.com/65249159/192038029-cdc7bfc8-dd6a-4cf1-b862-a082aca5c3fc.png">
 11. If they are not in the system, enter their first and last name and click ADD:
 <img width="1494" alt="013" src="https://user-images.githubusercontent.com/65249159/192038389-723586aa-5b12-475a-9f7a-9c421d836766.png">
