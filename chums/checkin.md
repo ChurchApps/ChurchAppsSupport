@@ -1,6 +1,6 @@
 ## Setup Kids Checkin for your church
 
-1. Setup an account on [Chums Account](https://chums.org/) If you already have one, please skip to step 9.
+1. Setup an account on [Chums Account].(https://chums.org/) If you already have one, please skip to step 9.
 Click on Get Started:
 <img width="1511" alt="001" src="https://user-images.githubusercontent.com/65249159/192035631-24da974b-498c-434d-945c-6cc9f9c0583f.png">
 2. Fill out your church's info:
