@@ -67,6 +67,11 @@ Click on this Video to see how the app works:
 
 [![Chums Checkin App](https://img.youtube.com/vi/qsxmrWHfX08/0.jpg)](https://youtu.be/qsxmrWHfX08)
 
+## Hardware We recomend
+
+Smaller Tablet [SAMSUNG Galaxy Tab A7 Lite 8.7" 32GB].(https://amzn.to/3E0zYaz)
+Larger Tablet [Samsung Galaxy Tab A8 Android Tablet, 10.5”].(https://amzn.to/3rdXRnm)
+
 
 
 
