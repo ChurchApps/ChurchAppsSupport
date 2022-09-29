@@ -1,6 +1,6 @@
 ## Setup Kids Checkin for your church
 
-1. Setup an account on [Chums Account].(https://chums.org/) If you already have one, please skip to step 9.
+1. Setup an account on [Chums Account](https://chums.org/) If you already have one, please skip to step 9.
 Click on Get Started:
 <img width="1511" alt="001" src="https://user-images.githubusercontent.com/65249159/192035631-24da974b-498c-434d-945c-6cc9f9c0583f.png">
 2. Fill out your church's info:
@@ -69,14 +69,14 @@ Click on this Video to see how the app works:
 
 ## Hardware We Recommend
 
-Smaller Tablet [SAMSUNG Galaxy Tab A7 Lite 8.7" 32GB].(https://amzn.to/3E0zYaz)
+Smaller Tablet [SAMSUNG Galaxy Tab A7 Lite 8.7" 32GB](https://amzn.to/3E0zYaz)
 
-Larger Tablet [Samsung Galaxy Tab A8 Android Tablet, 10.5”].(https://amzn.to/3rdXRnm)
+Larger Tablet [Samsung Galaxy Tab A8 Android Tablet, 10.5”](https://amzn.to/3rdXRnm)
 
 Printer We like 
 
-Multiple tablet connections & bluetooth or wifi.[Brother QL-1110NWB ].(https://amzn.to/3DD08QG)
+Multiple tablet connections & bluetooth or wifi.[Brother QL-1110NWB ](https://amzn.to/3DD08QG)
 
-Wifi only [Brother QL-1100 Wide Format Thermal Label Printer].(https://amzn.to/3Sps8eX)
+Wifi only [Brother QL-1100 Wide Format Thermal Label Printer](https://amzn.to/3Sps8eX)
 
 
