@@ -77,6 +77,6 @@ For now Checkins only works with Brother Printers these are the printers we reco
 
 Multiple tablet connections & bluetooth or wifi.[Brother QL-1110NWB ](https://amzn.to/3DD08QG)
 
-Wifi only [Brother QL-1100 Wide Format Thermal Label Printer](https://amzn.to/3Sps8eX)
+Wifi only [Brother QL-1100](https://amzn.to/3Sps8eX)
 
 
