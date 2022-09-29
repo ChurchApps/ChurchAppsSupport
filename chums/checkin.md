@@ -73,7 +73,7 @@ Smaller Tablet [SAMSUNG Galaxy Tab A7 Lite 8.7" 32GB](https://amzn.to/3E0zYaz)
 
 Larger Tablet [Samsung Galaxy Tab A8 Android Tablet, 10.5”](https://amzn.to/3rdXRnm)
 
-Printer We like 
+For now Checkins only works with Brother Printers these are the printers we recomend:
 
 Multiple tablet connections & bluetooth or wifi.[Brother QL-1110NWB ](https://amzn.to/3DD08QG)
 
