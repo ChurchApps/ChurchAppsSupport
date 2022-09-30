@@ -79,6 +79,6 @@ Multiple tablet connections & bluetooth or wifi.[Brother QL-1110NWB ](https://am
 
 Wifi only [Brother QL-1100](https://amzn.to/3Sps8eX) (Not tested will update as soon as confirmed working)
 
-Lables .[Brother lables ](https://amzn.to/3LVbEsA)
+Lables (These are currtnly the only lables that work.) [Brother Lables ](https://amzn.to/3LVbEsA)
 
 
