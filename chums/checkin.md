@@ -67,7 +67,7 @@ Click on this Video to see how the app works:
 
 [![Chums Checkin App](https://img.youtube.com/vi/qsxmrWHfX08/0.jpg)](https://youtu.be/qsxmrWHfX08)
 
-## Hardware We Recommend
+## Hardware that will work.
 
 Smaller Tablet [SAMSUNG Galaxy Tab A7 Lite 8.7" 32GB](https://amzn.to/3E0zYaz)
 
@@ -77,6 +77,8 @@ For now Checkins only works with Brother Printers these are the printers we reco
 
 Multiple tablet connections & bluetooth or wifi.[Brother QL-1110NWB ](https://amzn.to/3DD08QG)
 
-Wifi only [Brother QL-1100](https://amzn.to/3Sps8eX)
+Wifi only [Brother QL-1100](https://amzn.to/3Sps8eX) (Not tested will update as soon as confirmed working)
+
+Lables .[Brother lables ](https://amzn.to/3LVbEsA)
 
 
