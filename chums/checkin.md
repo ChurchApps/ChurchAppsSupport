@@ -56,17 +56,6 @@ Click on Get Started:
 27. At this point you need to set each group according to what you want to happen at checkin. If you want to track attendance make sure to select Yes. Parent pickup means that when checkin happens on the app it will print a kid tag and parent tag for that group.
 <img width="1501" alt="Screen Shot 2022-09-23 at 8 32 36 AM" src="https://user-images.githubusercontent.com/65249159/192072791-ab49cace-937d-4f63-8947-40f262d65996.png">
 
-## Using the App on a tablet 
-
-The Chums Checkin app works on the Amazon platform. We recomend the [Fire tablet 7” display](https://amzn.to/3fdglBJ)
-
-1. Download the [Chums Checkin](https://www.amazon.com/Live-Church-Solutions-Chums-Checkin/dp/B08JD5D4JK/ref=sr_1_1?crid=CDVBC5AELTTH&keywords=chums+checkin+app&qid=1663980694&sprefix=chums+checkin+app%2Caps%2C198&sr=8-1)
-
-Click on this Video to see how the app works:
-
-
-[![Chums Checkin App](https://img.youtube.com/vi/qsxmrWHfX08/0.jpg)](https://youtu.be/qsxmrWHfX08)
-
 ## Hardware that will work.
 
 Smaller Tablet [SAMSUNG Galaxy Tab A7 Lite 8.7" 32GB](https://amzn.to/3E0zYaz)
