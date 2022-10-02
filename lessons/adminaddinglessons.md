@@ -24,4 +24,9 @@
 
 <img width="1509" alt="Screen Shot 2022-10-01 at 9 10 21 PM" src="https://user-images.githubusercontent.com/65249159/193433773-99281999-0699-402e-bc6f-d080cbcc9d69.png">
 
-7. 
+7. Next You would add a program but most likly the program has allready been set so we will add a Lesson Click on thee + sign.
+
+<img width="1509" alt="Screen Shot 2022-10-02 at 7 31 56 AM" src="https://user-images.githubusercontent.com/65249159/193479486-4e1d0659-f356-4698-bb12-623663acf1dd.png">
+
+8. 
+
