@@ -220,15 +220,15 @@ For this applacation we will choose the Varaint option because we will be adding
 
 52. There are 5 differnt Action Types it is important to think about how the user is useing the content when you set an action.
 
-# 1. Say: This is the action you use when you want the presenter to say something to the crowd they are talking to.
+### 1. Say: This is the action you use when you want the presenter to say something to the crowd they are talking to.
 
-# 2. Do: This action is setup for the leadear to read and do an example would be for dramatic effect (Walk off the Stage)
+### 2. Do: This action is setup for the leadear to read and do an example would be for dramatic effect (Walk off the Stage)
 
-# 3. Play: This action is used to play a slide or video on the lessons.church app
+### 3. Play: This action is used to play a slide or video on the lessons.church app
 
-# 4. Download this action is used to indicate to the user to download something to print and give out like a parent guide.
+### 4. Download this action is used to indicate to the user to download something to print and give out like a parent guide.
 
-# 5. Note is just a note to give the instructtor. 
+### 5. Note is just a note to give the instructtor. 
 
 Select the correct action and then put in the appropiate material.
 
