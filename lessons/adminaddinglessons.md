@@ -161,11 +161,11 @@
 <img width="1510" alt="Screen Shot 2022-10-03 at 1 26 54 PM" src="https://user-images.githubusercontent.com/65249159/193642348-d8972384-95f1-4abd-b586-63a614d93b8b.png">
 
 40. The 3 types of files you have to choose from are as follows.
-#1 Add Variant (for download/player) 
+## 1 Add Variant (for download/player) 
 Used for most applications
-#2 Add Asset (for player only)
+## 2 Add Asset (for player only)
 This would be used only if you want a file to use that only plays on the lessons.church app. An example would be you uploaded a zip file as a Variant so users can download all the slides you have but you are wanting to use those assets so when someone is useing the lessons.church app they can access those files.
-#3 Bulk Add Asset 
+## 3 Bulk Add Asset 
 Very usefull for uploading all the slides for a Lesson at 1 time. Rember when you do this make sure to make a .zip and upload as a varaint in the same folder so any user that wants to can download all the slides and use them outsise of the lessons.church app.
 
 For this applacation we will choose the Varaint option because we will be adding a countdown for the lessons.church app but we also want to allow useres to easily download this file.
