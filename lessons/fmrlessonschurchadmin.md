@@ -1,4 +1,4 @@
-## How For Minstry Rescources adds lessons in lessons.church.
+## For Minstry Rescources guide to add lessons on lessons.church.
 
 1. Go to [Lessons.Church](https://lessons.church/login) and click on login.
 
