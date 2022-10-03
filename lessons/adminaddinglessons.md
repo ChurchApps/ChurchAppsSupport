@@ -220,13 +220,23 @@ For this applacation we will choose the Varaint option because we will be adding
 
 52. There are 5 differnt Action Types it is important to think about how the user is useing the content when you set an action.
 
-## 1. Say: This is the action you use when yopu want the presenter to say something to the crowd they are talking to.
+# 1. Say: This is the action you use when you want the presenter to say something to the crowd they are talking to.
 
-## 2. Do: This action is setup for the leadear to read and do an example would be for dramatic effect (Walk off the Stage)
+# 2. Do: This action is setup for the leadear to read and do an example would be for dramatic effect (Walk off the Stage)
 
-## 3. 
+# 3. Play: This action is used to play a slide or video on the lessons.church app
 
+# 4. Download this action is used to indicate to the user to download something to print and give out like a parent guide.
 
+# 5. Note is just a note to give the instructtor. 
+
+Select the correct action and then put in the appropiate material.
+
+<img width="1510" alt="Screen Shot 2022-10-03 at 2 55 07 PM" src="https://user-images.githubusercontent.com/65249159/193664225-d9aebdc2-d58f-4ecb-8d71-863d0acb0365.png">
+
+53. Finsh and Check to make sure everything is working correctly once you have completeed the lesson make sure to go back and mark the Lesson as live and the Study as live then head over to [Lessons.Church](https://lessons.church/login) to make sure everything is working correctly test the downloads and go through the text layout.
+
+<img width="1510" alt="Screen Shot 2022-10-03 at 3 41 07 PM" src="https://user-images.githubusercontent.com/65249159/193664935-7e386c2a-b6bc-46a8-811d-e68ad54b4a04.png">
 
 
 
