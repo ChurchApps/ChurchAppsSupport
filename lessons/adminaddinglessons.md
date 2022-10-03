@@ -128,6 +128,55 @@
 
 <img width="1509" alt="Screen Shot 2022-10-03 at 7 32 43 AM" src="https://user-images.githubusercontent.com/65249159/193576747-09359187-f191-4869-9de8-5fe7f4cb3eb1.png">
 
+32. Setting files on the Study Level gives you access to those files from any Lesson you are working on. (Click the + sign)
+
+<img width="1510" alt="Screen Shot 2022-10-03 at 1 02 17 PM" src="https://user-images.githubusercontent.com/65249159/193637495-c026bff9-a442-45c7-95bd-bff930609943.png">
+
+33. Click on the Add Bundel lable (Bundel is essietinally a file any files in a bundel will be downloaded if one of the files is added in the lesson) Make a 
+
+<img width="1510" alt="Screen Shot 2022-10-03 at 1 03 14 PM" src="https://user-images.githubusercontent.com/65249159/193637793-065307ee-73e1-47cc-962c-286ce5a8f829.png">
+
+34. Make a good name for all the materials that will be for all lessons in this study. In this exampe we use "Series Materials" Click save
+
+<img width="1510" alt="Screen Shot 2022-10-03 at 1 16 03 PM" src="https://user-images.githubusercontent.com/65249159/193638957-6298c234-1e92-4be7-867f-cd094e407e92.png">
+
+35. Click ( + Resource ) 
+
+<img width="1510" alt="Screen Shot 2022-10-03 at 1 16 47 PM" src="https://user-images.githubusercontent.com/65249159/193639461-c9e2ce9c-3862-4781-9124-70bd93de3e15.png">
+
+36. This will auto put the new resource in the bundle you are in but you can change the bundle if you need to.
+
+<img width="1510" alt="Screen Shot 2022-10-03 at 1 21 38 PM" src="https://user-images.githubusercontent.com/65249159/193639925-5711275c-689e-4beb-92cd-81f6505b012a.png">
+
+37. Next we need a Rescource name this is the name of the file you are adding to the file structure. After putting in the name be sure to hit save.
+
+<img width="1510" alt="Screen Shot 2022-10-03 at 1 24 10 PM" src="https://user-images.githubusercontent.com/65249159/193641770-9cab5496-d401-4256-8b06-e5d4ad51ddb1.png">
+
+38. Next click the small arrow to ipen the Series Materials folder
+
+<img width="1510" alt="Screen Shot 2022-10-03 at 1 25 30 PM" src="https://user-images.githubusercontent.com/65249159/193642150-7b33f8be-a2ee-4f3a-b65e-d4de2c8b60a0.png">
+
+39. Click the add button to add the file to file name you made.
+
+<img width="1510" alt="Screen Shot 2022-10-03 at 1 26 54 PM" src="https://user-images.githubusercontent.com/65249159/193642348-d8972384-95f1-4abd-b586-63a614d93b8b.png">
+
+40. The 3 types of files you have to choose from are as follows.
+#1 Add Variant (for download/player) 
+Used for most applications
+#2 Add Asset (for player only)
+This would be used only if you want a file to use that only plays on the lessons.church app. An example would be you uploaded a zip file as a Variant so users can download all the slides you have but you are wanting to use those assets so when someone is useing the lessons.church app they can access those files.
+#3 Bulk Add Asset 
+Very usefull for uploading all the slides for a Lesson at 1 time. Rember when you do this make sure to make a .zip and upload as a varaint in the same folder so any user that wants to can download all the slides and use them outsise of the lessons.church app.
+
+For this applacation we will choose the Varaint option because we will be adding a countdown for the lessons.church app but we also want to allow useres to easily download this file.
+
+<img width="1510" alt="Screen Shot 2022-10-03 at 1 26 54 PM" src="https://user-images.githubusercontent.com/65249159/193644484-3ac992aa-390a-44c9-8d12-2f1f7c1d07f9.png">
+
+41. 
+
+
+
+
 
 
  
