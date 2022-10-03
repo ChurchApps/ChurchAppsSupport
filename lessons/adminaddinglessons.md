@@ -34,3 +34,34 @@
 
 9. If the study should be live set live to yes (this will usually be “no” right away to provide time for review).
 
+<img width="1509" alt="Screen Shot 2022-10-03 at 7 11 57 AM" src="https://user-images.githubusercontent.com/65249159/193571147-6b04761c-1bd2-45bc-a051-f752b4efcc90.png">
+
+10. Add a numerical value to represent the order in which the studies should be listed
+
+<img width="1509" alt="Screen Shot 2022-10-03 at 7 12 35 AM" src="https://user-images.githubusercontent.com/65249159/193571300-ab74f2a6-2c86-459a-9abf-b1dd2d81d81c.png">
+
+11. Add the name of the study
+
+<img width="1509" alt="Screen Shot 2022-10-03 at 7 16 20 AM" src="https://user-images.githubusercontent.com/65249159/193571467-d37040b2-fa41-4553-bef9-39f451fa78a9.png">
+
+12. Slug for the URL (no caps or spaces here)
+
+<img width="1509" alt="Screen Shot 2022-10-03 at 7 16 20 AM copy" src="https://user-images.githubusercontent.com/65249159/193571704-a80deb8c-b62e-47cb-a452-9d2039de10dc.png">
+
+13. Add a one-sentence description.
+
+<img width="1509" alt="Screen Shot 2022-10-03 at 7 16 20 AM copy 2" src="https://user-images.githubusercontent.com/65249159/193571920-dbc3f3bc-fe84-4481-a413-92b51f018807.png">
+
+14. You can add a longer description here.
+
+<img width="1509" alt="Screen Shot 2022-10-03 at 7 16 30 AM" src="https://user-images.githubusercontent.com/65249159/193572101-5ca4a789-89cc-4912-b5c1-aaf962a6bad1.png">
+
+15. Next you will need and embeded link to the youtube if you have one enter it here. Below are the images showing you how to retreive the embeded video off of youtube.
+
+<img width="1509" alt="Screen Shot 2022-10-03 at 7 17 51 AM" src="https://user-images.githubusercontent.com/65249159/193572357-0d76860a-9996-4d71-8440-f5049326af41.png">
+<img width="1509" alt="Screen Shot 2022-10-03 at 7 17 05 AM" src="https://user-images.githubusercontent.com/65249159/193572382-78121259-791c-4890-b146-1869abb49d35.png">
+<img width="1509" alt="Screen Shot 2022-10-03 at 7 17 15 AM" src="https://user-images.githubusercontent.com/65249159/193572400-6e9c8b75-6478-4826-b296-47ac34a169ba.png">
+<img width="1509" alt="Screen Shot 2022-10-03 at 7 17 33 AM" src="https://user-images.githubusercontent.com/65249159/193572425-46eee164-0415-4064-9737-5d29436353d4.png">
+
+16. 
+
