@@ -24,9 +24,13 @@
 
 <img width="1509" alt="Screen Shot 2022-10-01 at 9 10 21 PM" src="https://user-images.githubusercontent.com/65249159/193433773-99281999-0699-402e-bc6f-d080cbcc9d69.png">
 
-7. Next You would add a program but most likly the program has allready been set so we will add a Lesson Click on thee + sign.
+7. Next You would add a program but most likly the program has allready been set but to add a new program use the + sign on the top right.
 
 <img width="1509" alt="Screen Shot 2022-10-02 at 7 31 56 AM" src="https://user-images.githubusercontent.com/65249159/193479486-4e1d0659-f356-4698-bb12-623663acf1dd.png">
 
-8. 
+8. To add a new study in a program allready created click the + study button.
+
+<img width="1509" alt="Screen Shot 2022-10-03 at 7 09 07 AM" src="https://user-images.githubusercontent.com/65249159/193563259-b7be89db-86ee-450a-8af0-9eb0315117af.png">
+
+9. If the study should be live set live to yes (this will usually be “no” right away to provide time for review).
 
