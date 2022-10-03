@@ -161,18 +161,75 @@
 <img width="1510" alt="Screen Shot 2022-10-03 at 1 26 54 PM" src="https://user-images.githubusercontent.com/65249159/193642348-d8972384-95f1-4abd-b586-63a614d93b8b.png">
 
 40. The 3 types of files you have to choose from are as follows.
-## 1 Add Variant (for download/player) 
+## 1. Add Variant (for download/player) 
 Used for most applications
-## 2 Add Asset (for player only)
+## 2. Add Asset (for player only)
 This would be used only if you want a file to use that only plays on the lessons.church app. An example would be you uploaded a zip file as a Variant so users can download all the slides you have but you are wanting to use those assets so when someone is useing the lessons.church app they can access those files.
-## 3 Bulk Add Asset 
+## 3. Bulk Add Asset 
 Very usefull for uploading all the slides for a Lesson at 1 time. Rember when you do this make sure to make a .zip and upload as a varaint in the same folder so any user that wants to can download all the slides and use them outsise of the lessons.church app.
 
 For this applacation we will choose the Varaint option because we will be adding a countdown for the lessons.church app but we also want to allow useres to easily download this file.
 
 <img width="1510" alt="Screen Shot 2022-10-03 at 1 26 54 PM" src="https://user-images.githubusercontent.com/65249159/193644484-3ac992aa-390a-44c9-8d12-2f1f7c1d07f9.png">
 
-41. 
+41. Choose the correct file. 
+
+<img width="1510" alt="Screen Shot 2022-10-03 at 2 03 59 PM" src="https://user-images.githubusercontent.com/65249159/193648553-925ebd7c-763c-4208-a242-05a907673ea2.png">
+<img width="1510" alt="Screen Shot 2022-10-03 at 2 04 44 PM" src="https://user-images.githubusercontent.com/65249159/193648585-88c5798f-39ad-4c94-bae4-01384431bbf7.png">
+
+42. Lable the varaint what type of file it is mp4,pdf,jpg ect... after that be sure to hit save.
+
+<img width="1510" alt="Screen Shot 2022-10-03 at 2 05 04 PM" src="https://user-images.githubusercontent.com/65249159/193649125-5a757033-52b9-405e-9d92-fff4d676916d.png">
+
+43. Add assets to the individuale lessons in the same way. Below are 2 images of how I set up the file structure for this Lesson. the first image shows a Bulk Add Asset with a .zip for downloads. The second image is an example of a .PDF that will need to be downloaded.
+
+<img width="1510" alt="Screen Shot 2022-10-03 at 2 30 36 PM" src="https://user-images.githubusercontent.com/65249159/193652692-291aae9d-301e-460e-b877-639b871631cd.png">
+<img width="1510" alt="Screen Shot 2022-10-03 at 2 30 54 PM" src="https://user-images.githubusercontent.com/65249159/193653008-022b2dbd-5c33-43b1-82a3-d3a49513a877.png">
+
+44. Creating the venues click on Venues.
+
+<img width="1510" alt="Screen Shot 2022-10-03 at 2 38 20 PM" src="https://user-images.githubusercontent.com/65249159/193653421-c5e0d235-142b-4d63-a6ab-c2a67d9bd4e8.png">
+
+45. Click the + button.
+
+<img width="1510" alt="Screen Shot 2022-10-03 at 2 40 26 PM" src="https://user-images.githubusercontent.com/65249159/193654355-93a4148b-c709-4187-bd2d-f9e18310864d.png">
+
+46. Enter the Venu name and click save.
+
+<img width="1510" alt="Screen Shot 2022-10-03 at 2 41 09 PM" src="https://user-images.githubusercontent.com/65249159/193654608-76877960-18f9-4edc-8579-a548afc41d7e.png">
+
+47. After you make as many Venus that you want click edit.
+
+<img width="1510" alt="Screen Shot 2022-10-03 at 2 41 42 PM" src="https://user-images.githubusercontent.com/65249159/193654757-12041d2b-6074-4a9d-9000-51ea5daf9e71.png">
+
+48. Click the + button to add your new section.
+
+<img width="1510" alt="Screen Shot 2022-10-03 at 2 48 31 PM" src="https://user-images.githubusercontent.com/65249159/193656719-f57597e9-c839-4e4d-a7f3-79f081ffbfe5.png">
+
+49. Then Select Create New.
+
+<img width="1510" alt="Screen Shot 2022-10-03 at 2 48 43 PM" src="https://user-images.githubusercontent.com/65249159/193656935-a7566dc6-2c51-4798-9e8b-e36ead9b0b5d.png">
+
+50. Make a section name and add any materials notes you would like to add click save.
+
+<img width="1510" alt="Screen Shot 2022-10-03 at 2 51 25 PM" src="https://user-images.githubusercontent.com/65249159/193657167-3b654513-cfb0-4296-a710-37408d9b765c.png">
+
+51. Add your first role (this is the normally the person presenting make a name and click save.
+
+<img width="1510" alt="Screen Shot 2022-10-03 at 2 51 44 PM" src="https://user-images.githubusercontent.com/65249159/193657315-351233d4-4d9c-4b8d-aa32-cb852ac3303d.png">
+
+52. There are 5 differnt Action Types it is important to think about how the user is useing the content when you set an action.
+
+## 1. Say: This is the action you use when yopu want the presenter to say something to the crowd they are talking to.
+
+## 2. Do: This action is setup for the leadear to read and do an example would be for dramatic effect (Walk off the Stage)
+
+## 3. 
+
+
+
+
+
 
 
 
