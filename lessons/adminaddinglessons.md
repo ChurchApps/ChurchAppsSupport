@@ -122,9 +122,9 @@
 
 30. Add a Lesson Grafic. Follow steps 17-22.
 
-<img width="1509" alt="Screen Shot 2022-10-03 at 9 12 42 AM" src="https://user-images.githubusercontent.com/65249159/193587404-5cda9ebb-0c29-4560-8add-dfcf84e5129e.png">
+<img width="1509" alt="Screen Shot 2022-10-03 at 9 16 58 AM" src="https://user-images.githubusercontent.com/65249159/193587816-b544cca4-2dc4-43ce-b195-83dd5a818093.png">
 
-30. Now that we have the lesson structure set lets start on the file structure. (Click on files from the Study Level) Note if you have files for the program lable you can also set up files on the progam level.)
+31. Now that we have the lesson structure set lets start on the file structure. (Click on files from the Study Level) Note if you have files for the program lable you can also set up files on the progam level.)
 
 <img width="1509" alt="Screen Shot 2022-10-03 at 7 32 43 AM" src="https://user-images.githubusercontent.com/65249159/193576747-09359187-f191-4869-9de8-5fe7f4cb3eb1.png">
 
