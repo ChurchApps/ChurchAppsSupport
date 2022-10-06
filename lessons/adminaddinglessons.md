@@ -17,6 +17,7 @@
 
 7. Next, add a program. Most likly the program has already been set but to add a new program use the + sign on the top right.
 <img width="1509" alt="Screen Shot 2022-10-02 at 7 31 56 AM" src="https://user-images.githubusercontent.com/65249159/193479486-4e1d0659-f356-4698-bb12-623663acf1dd.png">
+
 ## Create a Study
 
 8. To add a new study in a program already created click the + study button.
@@ -52,6 +53,7 @@
 <img width="1509" alt="Screen Shot 2022-10-03 at 8 34 45 AM" src="https://user-images.githubusercontent.com/65249159/193584458-0840d8bd-c628-4d35-916a-b2b6209e552d.png">
 22. Scroll down and hit save before leaving the page.
 <img width="1509" alt="Screen Shot 2022-10-03 at 9 12 42 AM" src="https://user-images.githubusercontent.com/65249159/193585582-a6ab230a-c2fa-4bb9-8d4a-517910fc0c5e.png">
+
 ## Create a Lesson
 
 23. Under the study, click the lesson button.
@@ -70,6 +72,7 @@
 <img width="1509" alt="Screen Shot 2022-10-03 at 7 31 59 AM" src="https://user-images.githubusercontent.com/65249159/193576086-f9c3fd2d-cae3-4aac-a511-c14cb30ca38b.png">
 30. Add a Lesson graphic. Follow steps 17-22.
 <img width="1509" alt="Screen Shot 2022-10-03 at 9 16 58 AM" src="https://user-images.githubusercontent.com/65249159/193587816-b544cca4-2dc4-43ce-b195-83dd5a818093.png">
+
 ## Add files to a Lesson
 
 31. Now that we have the lesson structure set, lets start on the file structure. (Click on files from the Study Level) Note if you have files for the program label, you can also set up files on the progam level.
@@ -107,6 +110,7 @@ For this application, we will choose the Varaint option because we will be addin
 43. Add assets to the individual lessons in the same way. Below are 2 images of how I set up the file structure for this Lesson. The first image shows a Bulk Add Asset with a .zip for downloads. The second image is an example of a .PDF that will need to be downloaded.
 <img width="1510" alt="Screen Shot 2022-10-03 at 2 30 36 PM" src="https://user-images.githubusercontent.com/65249159/193652692-291aae9d-301e-460e-b877-639b871631cd.png">
 <img width="1510" alt="Screen Shot 2022-10-03 at 2 30 54 PM" src="https://user-images.githubusercontent.com/65249159/193653008-022b2dbd-5c33-43b1-82a3-d3a49513a877.png">
+
 ## Create a Venue
 
 44. Creating the venues click on Venues.
