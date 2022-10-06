@@ -12,6 +12,7 @@
 <img width="1509" alt="Screen Shot 2022-10-01 at 5 14 08 PM" src="https://user-images.githubusercontent.com/65249159/193433698-069ca4c7-2107-4a45-bab9-f1a886dc836d.png">
 6. Click the + on the correct program you are wanting to work on. 
 <img width="1509" alt="Screen Shot 2022-10-01 at 9 10 21 PM" src="https://user-images.githubusercontent.com/65249159/193433773-99281999-0699-402e-bc6f-d080cbcc9d69.png">
+
 ## Create a Program
 
 7. Next, add a program. Most likly the program has already been set but to add a new program use the + sign on the top right.
