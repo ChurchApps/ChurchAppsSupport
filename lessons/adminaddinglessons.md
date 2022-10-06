@@ -12,8 +12,10 @@
 <img width="1509" alt="Screen Shot 2022-10-01 at 5 14 08 PM" src="https://user-images.githubusercontent.com/65249159/193433698-069ca4c7-2107-4a45-bab9-f1a886dc836d.png">
 6. Click the + on the correct program you are wanting to work on. 
 <img width="1509" alt="Screen Shot 2022-10-01 at 9 10 21 PM" src="https://user-images.githubusercontent.com/65249159/193433773-99281999-0699-402e-bc6f-d080cbcc9d69.png">
+## Create a Program
 7. Next, add a program. Most likly the program has already been set but to add a new program use the + sign on the top right.
 <img width="1509" alt="Screen Shot 2022-10-02 at 7 31 56 AM" src="https://user-images.githubusercontent.com/65249159/193479486-4e1d0659-f356-4698-bb12-623663acf1dd.png">
+## Create a Study
 8. To add a new study in a program already created click the + study button.
 <img width="1509" alt="Screen Shot 2022-10-03 at 7 09 07 AM" src="https://user-images.githubusercontent.com/65249159/193563259-b7be89db-86ee-450a-8af0-9eb0315117af.png">
 9. If the study should be live, set live to yes (this will usually be “no” right away to provide time for review).
@@ -47,6 +49,7 @@
 <img width="1509" alt="Screen Shot 2022-10-03 at 8 34 45 AM" src="https://user-images.githubusercontent.com/65249159/193584458-0840d8bd-c628-4d35-916a-b2b6209e552d.png">
 22. Scroll down and hit save before leaving the page.
 <img width="1509" alt="Screen Shot 2022-10-03 at 9 12 42 AM" src="https://user-images.githubusercontent.com/65249159/193585582-a6ab230a-c2fa-4bb9-8d4a-517910fc0c5e.png">
+## Create a Lesson
 23. Under the study, click the lesson button.
 <img width="1509" alt="Screen Shot 2022-10-03 at 7 18 49 AM" src="https://user-images.githubusercontent.com/65249159/193574026-ac9797d6-b9f7-42d2-a190-a6eb38fc6882.png">
 24. Select yes to if the lesson should be live (this is usually “no” right away o provide time for review).
@@ -63,6 +66,7 @@
 <img width="1509" alt="Screen Shot 2022-10-03 at 7 31 59 AM" src="https://user-images.githubusercontent.com/65249159/193576086-f9c3fd2d-cae3-4aac-a511-c14cb30ca38b.png">
 30. Add a Lesson graphic. Follow steps 17-22.
 <img width="1509" alt="Screen Shot 2022-10-03 at 9 16 58 AM" src="https://user-images.githubusercontent.com/65249159/193587816-b544cca4-2dc4-43ce-b195-83dd5a818093.png">
+## Add files to a Lesson
 31. Now that we have the lesson structure set, lets start on the file structure. (Click on files from the Study Level) Note if you have files for the program label, you can also set up files on the progam level.
 <img width="1509" alt="Screen Shot 2022-10-03 at 7 32 43 AM" src="https://user-images.githubusercontent.com/65249159/193576747-09359187-f191-4869-9de8-5fe7f4cb3eb1.png">
 32. Setting files on the Study Level gives you access to those files from any Lesson you are working on. (Click the + sign)
@@ -98,6 +102,7 @@ For this application, we will choose the Varaint option because we will be addin
 43. Add assets to the individual lessons in the same way. Below are 2 images of how I set up the file structure for this Lesson. The first image shows a Bulk Add Asset with a .zip for downloads. The second image is an example of a .PDF that will need to be downloaded.
 <img width="1510" alt="Screen Shot 2022-10-03 at 2 30 36 PM" src="https://user-images.githubusercontent.com/65249159/193652692-291aae9d-301e-460e-b877-639b871631cd.png">
 <img width="1510" alt="Screen Shot 2022-10-03 at 2 30 54 PM" src="https://user-images.githubusercontent.com/65249159/193653008-022b2dbd-5c33-43b1-82a3-d3a49513a877.png">
+## Create a Venue
 44. Creating the venues click on Venues.
 <img width="1510" alt="Screen Shot 2022-10-03 at 2 38 20 PM" src="https://user-images.githubusercontent.com/65249159/193653421-c5e0d235-142b-4d63-a6ab-c2a67d9bd4e8.png">
 45. Click the + button.
