@@ -1,9 +1,7 @@
 ## How to add lessons in lessons.church as an admin. 
 
 1. Go to [Lessons.Church](https://lessons.church/login) and click on login.
-
-<img width="1509" alt="Screen Shot 2022-10-01 at 5 12 11 PM" src="https://user-images.githubusercontent.com/65249159/193429051-9a358605-2d95-4c05-8657-ce7ee53d5b5c.png">
-
+![Login](https://user-images.githubusercontent.com/65249159/193429051-9a358605-2d95-4c05-8657-ce7ee53d5b5c.png)
 2. Enter the correct credentials click "sign in"
 
 <img width="1509" alt="Screen Shot 2022-10-01 at 5 13 14 PM" src="https://user-images.githubusercontent.com/65249159/193433653-21279ffe-6ce7-4130-8c95-d3aae6e3ccc7.png">
