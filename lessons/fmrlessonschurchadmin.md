@@ -68,7 +68,7 @@
 
 <img width="1509" alt="Screen Shot 2022-10-03 at 8 32 45 AM" src="https://user-images.githubusercontent.com/65249159/193581804-e0e557b6-a107-4a23-92e5-64b192429f59.png">
 
-17. Click Upload
+17. Click Upload.
 
 <img width="1509" alt="Screen Shot 2022-10-03 at 9 04 34 AM" src="https://user-images.githubusercontent.com/65249159/193583836-20d2bacd-3410-4ae3-ae11-074faa827e36.png">
 
