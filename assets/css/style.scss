@@ -1,24 +1,29 @@
----
----
+--- --- @import "{{ site.theme }}";
 
-@import "{{ site.theme }}";
-
-.site-footer {display: none;}
-
-a[href*=youtube]::after{
-  content:"Watch video";
-  display:block;
+.site-footer {
+  display: none;
 }
 
-.page-header{
-  color:#fff;
-  text-align:center;
-  background-color:#343a40!important;
-  background-image:none;
-  padding:8px 16px;
+a[href*=youtube]::after {
+  content: "Watch video";
+  display: block;
 }
 
-@media screen and (min-width: 80em)
-{
-  .main-content {max-width: 80rem;}
+a[href*=vimeo]::after {
+  content: "Watch video";
+  display: block;
+}
+
+.page-header {
+  color: #fff;
+  text-align: center;
+  background-color: #343a40 !important;
+  background-image: none;
+  padding: 8px 16px;
+}
+
+@media screen and (min-width: 80em) {
+  .main-content {
+    max-width: 80rem;
+  }
 }
