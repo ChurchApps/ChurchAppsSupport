@@ -1,7 +1,3 @@
----
-layout: default
----
-
 ## ChurchApps Support
 
 ### Accounts Management
