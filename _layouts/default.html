@@ -17,22 +17,23 @@
 <body>
   <a id="skip-to-content" href="#content">Skip to the content.</a>
   <header class="page-header" role="banner">
-    <table style="width:100%">
-      <tr>
-        <td style="text-align:left"><img src="https://churchapps.org/images/logo-white.png" style="padding-top:0px;padding-bottom:0px;"></td>
-        <td style="text-align:right">
-          <h1 style="margin-top:7px;font-size:24px;">ChurchApps Support</h1>
-        </td>
-      </tr>
-    </table>
+    <img src="https://churchapps.org/images/logo-white.png" style="padding-top:0px;padding-bottom:0px;">
   </header>
+  <div id="banner">
+    <span id="logo"></span>
+    <h1 style="margin-top:7px;font-size:24px;">ChurchApps Support</h1>
+  </div>
 
-  <main id="content" class="main-content" role="main">
-    {{ content }}
+  <div class="wrapper">
+    <main id="content" class="main-content" role="main">
+      <section>
+        {{ content }}
+      </section>
 
-    <footer class="site-footer">
-    </footer>
-  </main>
+      <footer class="site-footer">
+      </footer>
+    </main>
+  </div>
 </body>
 
 </html>
