@@ -16,16 +16,9 @@ a[href*=vimeo]::after {
   display: block;
 }
 
-.page-header {
-  color: #fff;
-  text-align: center;
-  background-color: #343a40 !important;
-  background-image: none;
-  padding: 8px 16px;
-}
-
-@media screen and (min-width: 80em) {
-  .main-content {
-    max-width: 80rem;
+@media screen and (max-width: 620px) {
+  .main-content section {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
