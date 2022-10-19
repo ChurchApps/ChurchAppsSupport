@@ -1,8 +1,12 @@
+---
+layout: page
+---
+
 ## Adding Pages and Tabs to StreamingLive
 
 [![Adding Pages and Tabs to StreamingLive](https://i.vimeocdn.com/video/1527052511-5881387f6203c511d311c95e8e200e31b9ca5770798ad64533435bb48303a78a-d_640)](https://vimeo.com/760360242)
 
-You can add custom tabs to the sidebar of your StreamingLive page, including small in-line content pages.  Tab contents display embeded in-line on the page rather than being links to other sites.
+You can add custom tabs to the sidebar of your StreamingLive page, including small in-line content pages. Tab contents display embeded in-line on the page rather than being links to other sites.
 
 1. Click on your account name in the top right corner of the page and select admin dashboard
 2. It will open a page full of admin settings.

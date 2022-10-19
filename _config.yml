@@ -1,3 +1,7 @@
-theme: jekyll-theme-leap-day
-title: ChurchApps Support
-description: Welcome to the support wiki for all ChurchApps.org apps.
+title: ChurchApps Wiki
+description: Your description goes here...
+baseurl: ''
+url: ''
+# theme: minima
+# plugins:
+#   - jekyll-feed
