@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 ## Connect SignPresenter to Lessons.Church
 
 Watch the following video to learn how to use [Lessons.Church](https://lessons.church/) a free rescource for Curriculum with the program Sign-Presenter.

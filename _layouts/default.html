@@ -1,56 +1,29 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-
-  {% seo %}
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#157878">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  {% include head-custom.html %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{site.title}} | {{site.description}}</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{'assets/css/custom.css' | relative_url}}">
 </head>
 
 <body>
-  <a id="skip-to-content" href="#content">Skip to the content.</a>
-  <header class="page-header" role="banner">
-    <img src="https://churchapps.org/images/logo-white.png" style="padding-top:0px;padding-bottom:0px;">
-  </header>
-  <div id="banner">
-    <h1 style="font-size:24px;background-color: inherit;" class="fork">ChurchApps Support</h1>
-  </div>
-
-  <div class="wrapper">
-    <nav>
-      <ul>
-        <li><a href="/">Support Home</a></li>
-      </ul>
-      <b>Apps:</b>
-      <ul>
-        <li><a href="https://churchapps.org/">ChurchApps</a></li>
-        <li><a href="https://livecs.org/">Live Church Solutions</a></li>
-        <li><a href="https://chums.org/">ChuMS</a></li>
-        <li><a href="https://streaminglive.church/">StreamingLive</a></li>
-        <li><a href="https://b1.church/">B1 Church</a></li>
-        <li><a href="https://lessons.church">Lessons.church</a></li>
-      </ul>
-    </nav>
-    <main id="content" class="main-content" role="main">
-      <section>
-        {{ content }}
-      </section>
-
-      <footer class="site-footer">
-        <h4>Contact Support:</h4>
-        <div><b>Email:</b><br />support@livecs.org</div>
-        <div style="margin-top:20px;"><b>Phone:</b><br />+1 (918) 994-2638</div>
-        <div style="margin-top:20px;"><b>Messenger:</b><br /><a href="https://m.me/livecsolutions">https://m.me/livecsolutions</a></div>
-      </footer>
-    </main>
-  </div>
+    {% include navbar.html %}
+    {{content}}
+    {% include footer.html %}
+    <script>
+        document.querySelectorAll('body > div.container > img').forEach(img => {
+            if (!img.classList.contains('img-fluid')) {
+                img.classList.add('img-fluid')
+                img.classList.add('rounded')
+                img.classList.add('post-img')
+            }
+        })
+    </script>
 </body>
 
 </html>

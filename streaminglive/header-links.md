@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 ## Adding Header Links to StreamingLive
 
 [![How to change your password](https://i.vimeocdn.com/video/1527045606-7cca82c4580e62d390f29c837f3e340a9740fbd1d419afe972e8ce88ad532e32-d_640)](https://vimeo.com/760359986)

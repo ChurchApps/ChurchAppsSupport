@@ -1,0 +1,37 @@
+h2 {
+  color: gray;
+}
+
+ul {
+  margin-bottom: 2em;
+}
+
+ul > li > a {
+  color: #14a44d;
+}
+
+ul > li > a:hover {
+  color: #166d39;
+}
+
+.post-img {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+a[href*='youtube']::after {
+  content: 'Watch video';
+  display: block;
+}
+
+a[href*='vimeo']::after {
+  content: 'Watch video';
+  display: block;
+}
+
+@media screen and (max-width: 620px) {
+  .main-content section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
