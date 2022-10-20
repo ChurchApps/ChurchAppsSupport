@@ -16,7 +16,7 @@
     {{content}}
     {% include footer.html %}
     <script>
-        document.querySelectorAll('body > div.container > img').forEach(img => {
+        document.querySelectorAll('img').forEach(img => {
             if (!img.classList.contains('img-fluid')) {
                 img.classList.add('img-fluid')
                 img.classList.add('rounded')
