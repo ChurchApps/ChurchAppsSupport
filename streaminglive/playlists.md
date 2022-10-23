@@ -13,3 +13,5 @@ A playlist is any group of sermons, but usually represents a sermon series.  You
 5. Click the Save button.
 
 You can now assign sermons to this playlist by editing the sermon.
+
+![image](https://user-images.githubusercontent.com/1447203/197371598-c86e095e-f8c1-4fec-b8fd-aabce33d5740.png)
