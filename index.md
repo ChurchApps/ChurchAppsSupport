@@ -12,8 +12,8 @@ layout: home
 - [Resetting a Forgotten Password](accounts/reset-passwords)
 - [Setting Your Church Logo](accounts/change-logo)
 
-### B1.church
-
+### B1.church Admin
+- [Setting up access to the Member Directory](b1/member-dir-access)
 
 ### B1.church Member
 - [Setting up access to the Member Directory](b1/member-dir)
