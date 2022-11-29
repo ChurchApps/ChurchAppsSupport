@@ -4,7 +4,7 @@ layout: page
 
 ## Signing up for the Member Directory inside the B1 App
 
-In the app click on the menu button on the top left.
+### In the app click on the menu button on the top left.
 
 ![IMG_6881](https://user-images.githubusercontent.com/65249159/204531051-f98ed31d-08ba-4fda-82d2-b394c516d16f.PNG)
 Click on "login" bottom left of app.
