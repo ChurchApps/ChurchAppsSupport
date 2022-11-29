@@ -15,7 +15,7 @@ layout: home
 ### B1.church
 
 ### B1.church Member
-- [Setting up access to the Member Directory](b1/member_dir)
+- [Setting up access to the Member Directory](b1/member-dir)
 
 
 ### ChuMS
