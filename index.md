@@ -8,7 +8,6 @@ layout: home
 
 ### Accounts Management
 
-- [Changing Your Password](accounts/reset-passwords)
 - [Resetting a Forgotten Password](accounts/reset-passwords)
 - [Setting Your Church Logo](accounts/change-logo)
 
