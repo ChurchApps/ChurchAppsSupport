@@ -8,7 +8,6 @@ layout: home
 
 ### Accounts Management
 
-- [Resetting a Forgotten Password](accounts/reset-passwords)
 - [Setting Your Church Logo](accounts/change-logo)
 
 ### B1.church Admin
