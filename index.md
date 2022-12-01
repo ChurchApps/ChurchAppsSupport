@@ -8,7 +8,7 @@ layout: home
 
 ### Accounts Management
 
-- [Setting Your Church Logo](accounts/change-logo)
+
 
 ### B1.church Admin
 - [Setting up access to the Member Directory](b1/member-dir-access)
