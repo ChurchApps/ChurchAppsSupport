@@ -4,7 +4,7 @@ layout: page
 
 ## Changing your Church Logo.
 
-1. login to [ChurchApps.org](https://accounts.churchapps.org/login).
+1. login to [ChurchApps.org](https://app.chums.org/login).
    <img width="1487" alt="Screen Shot 2022-07-19 at 6 22 12 AM" src="https://user-images.githubusercontent.com/65249159/179729718-0c09e219-f92b-4df3-8b35-55291cfc4f73.png">
 
 2. Choose the correct Church you are wanting to change the logo for
