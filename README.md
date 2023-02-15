@@ -10,7 +10,6 @@
 ### ChuMS
 - [How To Setup Online Giving](chums/giving.md)
 - [How To Setup Chums Checkin](chums/checkin.md)
-- [How To import your Breeze informations to chums](chums/importfrombreeze.md)
 
 ### Lessons.church
 - [Initial Setup](lessons/setup.md)
