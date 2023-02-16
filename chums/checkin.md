@@ -75,7 +75,7 @@ Larger Tablet [Samsung Galaxy Tab A8 Android Tablet, 10.5”](https://amzn.to/3r
 
 For now Checkins only works with Brother Printers these are the printers we recomend:
 
-Multiple tablet connections & bluetooth or wifi.[Brother QL-1110NWB ](https://amzn.to/3DD08QG)
+Multiple tablet connections & bluetooth or wifi.[Brother QL-1110NWB ](https://amzn.to/3K9QPL1)
 
 Wifi only [Brother QL-810W](https://amzn.to/3Scj6mf)
 
