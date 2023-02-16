@@ -4,8 +4,7 @@ layout: page
 
 ## How to Export Data From Breeze.
 
-1. Export your Data From Breeeze you will need 3 files for this. You will need 3 files 
-People, Tags, Contributions Export each of these seperatly.
+1. Export your Data From Breeeze you will need 3 files for this. You will need People, Tags, Contributions Export each of these .xlsx files seperatly. To get here on your Breeze account from the dashboard go to 'settings' then to 'manage accounts"
 <img width="1512" alt="Screen Shot 2023-02-14 at 6 20 24 PM" src="https://user-images.githubusercontent.com/65249159/218885516-805db43d-6720-4746-93b6-277f5337374e.png">
 2. Next put those three files into a zip file. 
 On a Mac: Highlight those 3 files and then right click or control click on them and choose Compress. This will make a file named Archive save it somewhere on your computuer where  you know where it is.
