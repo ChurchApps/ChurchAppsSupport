@@ -71,7 +71,7 @@ layout: page
 
 You will need at least 3 items to get this running
 
-1. A tablet or any android phone that can download [The Chums Chekin App]([https://amzn.to/3E0zYaz](https://play.google.com/store/apps/details?id=org.chums.checkin)
+1. A tablet or any android phone that can download [The Chums Chekin App](https://play.google.com/store/apps/details?id=org.chums.checkin)
 2. one of the Brother Printers listed below.
 3. And these [Brother Lables ](https://amzn.to/3LVbEsA)
 
