@@ -82,7 +82,7 @@ Larger Tablet [Samsung Galaxy Tab A8 Android Tablet, 10.5”](https://amzn.to/3r
 
 Amazon Tablet [Amazon Fire HD 8 tablet, 8" HD display, 64 GB](https://amzn.to/3YXCHcv)
 
-For now Checkins only works with Brother Printers these are the printers we recomend:
+## For now Checkins only works with Brother Printers these are the printers we recomend:
 
 Multiple tablet connections & bluetooth or wifi.[Brother QL-1110NWB ](https://amzn.to/3K9QPL1)
 
