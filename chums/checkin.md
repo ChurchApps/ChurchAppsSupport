@@ -66,7 +66,7 @@ layout: page
 2. Make sure to follow [the instructions](https://support.brother.com/g/b/downloadtop.aspx?c=us&lang=en&prod=lpql1110nwbeus&_ga=2.156293496.295918436.1665227103-2042905656.1665227103&_gl=1*6hne9l*_ga*MjA0MjkwNTY1Ni4xNjY1MjI3MTAz*_ga_NCEW43SJ8W*MTY2NTIyNzEwMy4xLjEuMTY2NTIyNzE0MS4yMi4wLjA.) that came with the printer to get it on the same Wifi network as your Tablet,
 [click here](https://www.youtube.com/watch?v=U5pmTRddt2w) for a great video on setting up the printer.
 3. Follow this video to connect your printer to the app and print your first name tag.
-   [![Chums Checkin App](https://img.youtube.com/vi/gZIM23R4-TE/0.jpg)](https://www.youtube.com/watch?v=gZIM23R4-TE)
+[![Chums Checkin App](https://img.youtube.com/vi/gZIM23R4-TE/0.jpg)](https://www.youtube.com/watch?v=gZIM23R4-TE)
 
 ## Hardware that will work.
 
