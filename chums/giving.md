@@ -22,7 +22,7 @@ layout: page
 - Return to Church apps and paste that key into the Secrect Key Spot Hit Save.
 - Now we need to set up the page for the public to be able to start giving. Head over to [B1.Church](https://b1.church/) and login.
 - Click On the Settings Icon
-- <img width="1512" alt="Screen Shot 2023-03-14 at 9 35 37 AM" src="https://user-images.githubusercontent.com/65249159/225040257-1482a19b-79c1-4242-a398-8a55071f0369.png">
+<img width="1512" alt="Screen Shot 2023-03-14 at 9 35 37 AM" src="https://user-images.githubusercontent.com/65249159/225040257-1482a19b-79c1-4242-a398-8a55071f0369.png">
 - Next we need to add a tab
 <img width="1512" alt="Screen Shot 2023-03-14 at 9 36 03 AM" src="https://user-images.githubusercontent.com/65249159/225040592-35750e6e-2508-40ad-9273-5ab57ccb4c2e.png">
 - Choose Donation as the Type
