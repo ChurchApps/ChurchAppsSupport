@@ -36,12 +36,6 @@ layout: page
 <img width="1512" alt="Screen Shot 2023-03-14 at 10 12 32 AM" src="https://user-images.githubusercontent.com/65249159/225047607-afde6b2f-9a26-4cbf-87b7-748e42bffb9a.png">
 - (yoursubdomian).b1.church/donation-landing (example: https://cummingscc.b1.church/donation-landing). Now copy and paste your link wherever you want to take donations.
 
-## How to set up an account to give as a user.
-
--This video is here for you to share with anyone that wants to give to your church please feel free to use it anyway you want.
-[![Setting Up Donations](https://img.youtube.com/vi/tW8iT-9WuWQ/0.jpg)](https://www.youtube.com/watch?v=tW8iT-9WuWQ)
-[Download this video](https://www.dropbox.com/s/1lgwmh2t51lm57c/Setting%20up%20Donations.mp4?dl=0)
-
 ## Admin work after payments start coming in.
 
 - You will get a notification in your e-mail every time you get a donation on [Stripe](https://stripe.com).
