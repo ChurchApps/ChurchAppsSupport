@@ -24,13 +24,13 @@ layout: page
 - Click On the Settings Icon
 - <img width="1512" alt="Screen Shot 2023-03-14 at 9 35 37 AM" src="https://user-images.githubusercontent.com/65249159/225040257-1482a19b-79c1-4242-a398-8a55071f0369.png">
 - Next we need to add a tab
-- <img width="1512" alt="Screen Shot 2023-03-14 at 9 36 03 AM" src="https://user-images.githubusercontent.com/65249159/225040592-35750e6e-2508-40ad-9273-5ab57ccb4c2e.png">
+<img width="1512" alt="Screen Shot 2023-03-14 at 9 36 03 AM" src="https://user-images.githubusercontent.com/65249159/225040592-35750e6e-2508-40ad-9273-5ab57ccb4c2e.png">
 - Choose Donation as the Type
-- <img width="1512" alt="Screen Shot 2023-03-14 at 9 37 17 AM" src="https://user-images.githubusercontent.com/65249159/225040887-4d246d66-cff5-428e-86be-bd7071199439.png">
+<img width="1512" alt="Screen Shot 2023-03-14 at 9 37 17 AM" src="https://user-images.githubusercontent.com/65249159/225040887-4d246d66-cff5-428e-86be-bd7071199439.png">
 - Enter a name for the tab and click save
-- <img width="1512" alt="Screen Shot 2023-03-14 at 9 39 15 AM" src="https://user-images.githubusercontent.com/65249159/225041271-f2e4b351-29b9-40b2-b32f-3fe212c43a08.png">
+<img width="1512" alt="Screen Shot 2023-03-14 at 9 39 15 AM" src="https://user-images.githubusercontent.com/65249159/225041271-f2e4b351-29b9-40b2-b32f-3fe212c43a08.png">
 - You can also change the icon (Type Giv to get a great giving icon)
-- <img width="1512" alt="Screen Shot 2023-03-14 at 9 41 41 AM" src="https://user-images.githubusercontent.com/65249159/225041560-b667e653-d04b-436e-85fa-528683834524.png">
+<img width="1512" alt="Screen Shot 2023-03-14 at 9 41 41 AM" src="https://user-images.githubusercontent.com/65249159/225041560-b667e653-d04b-436e-85fa-528683834524.png">
 - You are now ready to start taking donations. One more step. Think of an easy to remember subdomain name and add it to this link **\*\***\_\_**\*\***.b1.church/donate (example: TCChurch.b1.church/donate). Now copy and paste your link wherever you want to take donations.
 
 ## How to set up an account to give as a user.
