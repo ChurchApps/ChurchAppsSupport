@@ -34,7 +34,7 @@ layout: page
 - You are now ready to start taking donations. 
 - To find the domain to send those wanting to give go back to [Chums.org](https://chums.org/) and login click on the settings icon to find your subdomain
 <img width="1512" alt="Screen Shot 2023-03-14 at 10 12 32 AM" src="https://user-images.githubusercontent.com/65249159/225047607-afde6b2f-9a26-4cbf-87b7-748e42bffb9a.png">
-- (yoursubdomian).b1.church/donation-landing (example: https://cummingscc.b1.church/donation-landing). Now copy and paste your link wherever you want to take donations.
+- (yoursubdomian).b1.church/donation-landing (example: https://cummingscc.b1.church/donation-landing). Now you can copy and paste or link your domain wherever you want to take donations.
 
 ## Admin work after payments start coming in.
 
