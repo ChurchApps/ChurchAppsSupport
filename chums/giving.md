@@ -31,7 +31,10 @@ layout: page
 <img width="1512" alt="Screen Shot 2023-03-14 at 9 39 15 AM" src="https://user-images.githubusercontent.com/65249159/225041271-f2e4b351-29b9-40b2-b32f-3fe212c43a08.png">
 - You can also change the icon (Type Giv to get a great giving icon)
 <img width="1512" alt="Screen Shot 2023-03-14 at 9 41 41 AM" src="https://user-images.githubusercontent.com/65249159/225041560-b667e653-d04b-436e-85fa-528683834524.png">
-- You are now ready to start taking donations. One more step. Think of an easy to remember subdomain name and add it to this link **\*\***\_\_**\*\***.b1.church/donate (example: TCChurch.b1.church/donate). Now copy and paste your link wherever you want to take donations.
+- You are now ready to start taking donations. 
+- To find the domain to send those wanting to give go back to [Chums.org](https://chums.org/) and login click on the settings icon to find your subdomain
+<img width="1512" alt="Screen Shot 2023-03-14 at 10 12 32 AM" src="https://user-images.githubusercontent.com/65249159/225047607-afde6b2f-9a26-4cbf-87b7-748e42bffb9a.png">
+- (yoursubdomian).b1.church/member/donate (example: https://cummingscc.b1.church/member/donate). Now copy and paste your link wherever you want to take donations.
 
 ## How to set up an account to give as a user.
 
