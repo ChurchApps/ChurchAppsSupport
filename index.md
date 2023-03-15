@@ -21,8 +21,8 @@ layout: home
 
 - [How To Setup Online Giving](chums/giving)
 - [How To Setup Chums Checkin](chums/checkin)
-- [How To import your Breeze informations to chums](chums/importfrombreeze.md)
-- [How To import csv/excel data into Chums](chums/importcsv)
+- [How To import your Breeze information to chums](chums/importfrombreeze.md)
+- [How To import csv/excel data into Chums](chums/importcsv.md)
 
 ### Lessons.church
 
