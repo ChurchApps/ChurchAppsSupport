@@ -2,7 +2,7 @@
 layout: page
 ---
 
-## How to Import Your Data from Excel or CVS 
+## How to Import Your Data from Excel or CSV 
 
 1. Put your excel or cvs file on your desktop.
 2. Next, in Chums go to settings then to import/export  
