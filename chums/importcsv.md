@@ -11,7 +11,7 @@ layout: page
 <img width="1440" alt="Slide 2" src="https://user-images.githubusercontent.com/127863068/225676038-50c45667-d1ec-48de-b9df-ba523cc60707.png">
 4. Download sample file
 <img width="1440" alt="Slide 3" src="https://user-images.githubusercontent.com/127863068/225676578-591f718c-327b-4d84-b41e-f402a740bf26.png">
-5. Unzip sample file and open the file people.csv replace data in this file with your data. Do not change the top row and be sure to save your edited file as a .csv
+5. Unzip sample file and open the file people.csv replace data in this file with your data. Do not change the top row and be sure to save your edited file as people.csv
 <img width="1440" alt="Slide 4" src="https://user-images.githubusercontent.com/127863068/225677907-8831a674-dc65-4102-9049-6e2790abebd7.png">
 6. On a Mac: Highlight the files in the sample folder and drag them onto your desktop  and then right click or control click on them and choose Compress. This will make a file named Archive save it on your desktop.
 On a PC: Press and hold (or right-click) the folder, select (or point to) Send to, and then select Compressed (zipped) folder. A new zipped folder with the same name is created in the same location. Next, go back to Chums and click the upload icon 
