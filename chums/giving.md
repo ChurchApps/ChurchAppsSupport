@@ -42,13 +42,15 @@ layout: page
 - If you would like to change the email address that receives the notification of a donation go to the [Stripe](https://stripe.com) dashboard, click on the profile on the top right corner, in the pop-up choose "profile". Click on "edit" in profile and you can change the e-mail to whatever you choose.
   You can also follow [these](https://support.stripe.com/questions/change-the-email-address-where-stripe-emails-are-sent#:~:text=If%20you%20want%20account%2Drelated,Stripe%20to%20other%20email%20addresses) instructions to forward notifications to whoever you would like.
 
-Donation summary 
+**Donation summary** 
+
 Gives a weekly summary of giving in graph form. 
 Download:  Gives a csv with the total amount given, the week it was given and what fund it was given to.
 This summary does not tell who gave.
 You can filter the report by date.  The top date should be the earlier date and the bottom date the most recent date.
 
-Batches
+**Batches**
+
 This is a report of who gave, when they gave, how much they gave and to what fund.
 Download: Gives a csv with the number of donations, the id, the name and the total amount given.
 Click on “name” this opens a window with a breakdown of how many times the person donated and how much each time.
