@@ -2,6 +2,7 @@
 layout: page
 ---
 
+##Create forms in CHUMS
 To create forms click on the forms icon<img width="1299" alt="Forms Screen" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/97fec6f6-4e0c-41e7-96ab-60acb13ced6b">
 Click the "+" button to add a form<img width="1304" alt="Screen Shot 2023-05-09 at 3 20 40 PM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/62a5208a-b58e-4026-a0d8-3a5704abb16c">
 Give the form a name <img width="1302" alt="Screen Shot 2023-05-09 at 3 21 58 PM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/eb657bf2-4fd8-4417-be74-c8869d9fedfc">
