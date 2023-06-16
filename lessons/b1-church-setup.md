@@ -7,34 +7,22 @@ layout: page
 1. Register or login to your [Lessons.Church](https://lessons.church/login) account.
 
 2. **If you have not already, you will need to register your church.**
-   ![Screen Shot 2022-02-07 at 6 49 38 AM](https://user-images.githubusercontent.com/65249159/152793813-d8cc1d74-9171-4f4a-b686-5f511cb8eabf.png)
+   ![Screen Shot 2023-06-16 at 12 04 35 PM](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/9e52de5e-0d7e-45f6-a56d-a0e4c952e462)
 
-3. **Click on your name on the right side of the screen and then click on schedules.**
-   ![Screen Shot 2022-02-07 at 6 49 38 AM](https://user-images.githubusercontent.com/65249159/152793967-378d4238-467c-4deb-aa5c-5b4d49dd1a78.png)
+3.**Make at least one Schedule. You can make as many schedules as you want with as many classrooms as you have.**
+  ![Screen Shot 2023-06-16 at 8 10 44 AM](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/81a40922-0f44-4ad0-8259-287489cdff21)
 
-4.**Make at least one Schedule. You can make as many schedules as you want with as many classrooms as you have.**
-![Screen Shot 2022-02-07 at 6 51 07 AM](https://user-images.githubusercontent.com/65249159/152794198-0f05d8a6-d5ef-4ad4-874a-23af551bcfac.png)
+4. **Click On Your Name / App Then B1 Church**
+   ![Screen Shot 2023-06-16 at 8 11 25 AM](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/015c8bd9-36ce-44e8-975a-a02519dad371)
 
-5. **Head over to [B1.Church](https://b1.church/login) and login. Your username and password are the same as Lessons.Church.**
-   ![Screen Shot 2022-02-07 at 6 51 50 AM](https://user-images.githubusercontent.com/65249159/152794706-33465ce4-3dd9-49e0-ae97-98b10ddf7471.png)
+5. **Once logged in, click on the settings icon.**
+  ![Screen Shot 2023-06-16 at 8 11 52 AM](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/e5831fa7-12fa-4c8f-b890-7396e29e9d45)
 
-6. **Choose your Church.**
-   ![Screen Shot 2022-02-07 at 6 52 20 AM](https://user-images.githubusercontent.com/65249159/152794810-8abe035b-d0d6-48b3-a70d-84fa00e9334b.png)
+6. **Next Add a New Tab**
+   ![Screen Shot 2023-06-16 at 8 12 21 AM](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/7907014d-141b-4f84-9aca-f204dcd3a27f)
 
-7. **Once logged in, click on the add tab icon.**
-   ![Screen Shot 2022-02-08 at 6 40 27 AM](https://user-images.githubusercontent.com/65249159/152995017-a4b721ee-d2fa-4211-aa3e-3ad2d3e1841f.png)
-
-8. **Name Your written material feed button then click save.**
-   ![Screen Shot 2022-02-08 at 6 44 08 AM](https://user-images.githubusercontent.com/65249159/152995165-0a1e789c-4f7e-4870-98ae-872f9d09d6a2.png)
-
-9. **Now to access that content: to see it right away on any browser just type in yourchurchsname.b1.church, you can also find this in your address bar.**
-   ![Screen Shot 2022-02-08 at 7 22 00 AM](https://user-images.githubusercontent.com/65249159/152996187-c95eb2e6-9540-46f4-a3c9-bede4ac0c867.png)
-
-10. **When you go that page if you have 2 or more classrooms setup, it will look like this.**
-    ![Screen Shot 2022-02-08 at 7 03 40 AM](https://user-images.githubusercontent.com/65249159/152997173-26c970c5-068f-48b3-bf82-0a4123015ea9.png)
-
-11. **If you have only 1 classroom setup, it will go directly into that classroom always showing what is next on your schedule.**
-    ![Screen Shot 2022-02-08 at 7 03 59 AM](https://user-images.githubusercontent.com/65249159/152997454-d59609a9-9929-4c62-917d-e6fb57f58e2d.png)
+7. **Name your Lessons anything you would like and make sure to select the type as Lessons.Church**
+   ![Screen Shot 2023-06-16 at 8 13 13 AM](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/ede0ccd6-390c-4f35-819e-211bb1f51c0e)
 
 ## Looading on your phone or tablet.
 
@@ -61,3 +49,7 @@ Currently the B1 App is only available in the [google play store](https://play.g
 ![Screenshot_2022-02-08-07-04-20](https://user-images.githubusercontent.com/65249159/152998976-ac130590-c764-4b30-9d10-edbbfb6adde1.png)
 
 ![Screenshot_2022-02-08-07-04-33](https://user-images.githubusercontent.com/65249159/152999000-a7a93d15-34be-4256-adb3-892731aefde5.png)
+
+**To see all this content in a regular browser or to share with parents or teachers when in Lessons.Church click Subscribe you will see all the links you need**
+![Screen Shot 2023-06-16 at 8 14 35 AM](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/ade3a599-34df-47c7-8b05-7bc900bb7480)
+
