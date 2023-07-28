@@ -57,7 +57,11 @@ You are now ready to add an element to the page. There are several different ele
 
 
 
-https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/9dcd626b-4dad-42b9-b517-4def1f5d17dd
+https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/71c342d1-941d-4aec-af1a-a4835d4b52f8
+
+
+
+
 
 You can also design reusable blocks for header and footers. Click the + on the Reusable Blocks block
 
