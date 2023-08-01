@@ -54,14 +54,10 @@ If you are using an image you can upload it from your computer or use stock imag
 Drag and drop the section box to the top of the page.
 
 You are now ready to add an element to the page. There are several different elements available. Just drag and drop the element you want to use into the section and customize it.
-
-
-
-https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/71c342d1-941d-4aec-af1a-a4835d4b52f8
-
-
-
-
+<img width="1167" alt="Screen Shot 2023-07-28 at 3 05 37 PM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/d61172c6-0846-460b-8455-a2ae63a3accd">
+<img width="1177" alt="Screen Shot 2023-07-28 at 3 06 44 PM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/931cf36a-c64a-4396-8e0c-783e3deb73dd">
+<img width="1171" alt="Screen Shot 2023-07-28 at 3 08 31 PM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/8f8d7846-158f-446f-ad45-80da95979532">
+<img width="1171" alt="Screen Shot 2023-07-28 at 3 09 51 PM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/8a8f1b9b-4750-4a2d-bd92-cc1dee1ddfa9">
 
 You can also design reusable blocks for header and footers. Click the + on the Reusable Blocks block
 
