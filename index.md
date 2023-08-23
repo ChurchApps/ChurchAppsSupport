@@ -38,8 +38,5 @@ layout: home
 
 ### StreamingLive
 
-- [Adding Headers Links](streaminglive/header-links)
-- [Adding Pages and Tabs](streaminglive/pages-tabs)
-- [Adding a Service](streaminglive/services)
-- [Customizing Appearance](accounts/appearance)
-- [OBS Basics](streaminglive/obs-basics)
+- [Setting up your Stream](streaminglive/stream_setup.md)
+
