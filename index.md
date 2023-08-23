@@ -39,4 +39,6 @@ layout: home
 ### StreamingLive
 
 - [Setting up your Stream](streaminglive/stream_setup.md)
+- [Obs Basics](streaminglive/obs-basics.md)
+  
 
