@@ -16,7 +16,7 @@ Choose "Add Peremnant Live URL"
 <img width="1505" alt="Screen Shot 2023-08-23 at 10 32 40 AM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/51c6dc57-2087-485b-84ac-4f758db31730">
 You will come to a screen that looks like this
 <img width="1505" alt="Screen Shot 2023-08-23 at 10 33 21 AM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/6f7b469a-b160-4010-b470-191d9fbbedd0">
-From here you will need your channel ID if you are not sure where to find this click on the link to learn how
+From here you will need your channel ID if you are not sure where to find this click on the [link](https://support.google.com/youtube/answer/6180214)  to learn how
 <img width="1505" alt="Screen Shot 2023-08-23 at 10 34 09 AM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/98d3ee35-48c6-4cc7-9bc5-a5d121efff1b">
 Customize to your liking and then hit save
 <img width="1505" alt="Screen Shot 2023-08-23 at 10 36 08 AM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/35f8139e-04b7-41e6-afb4-01304f489de6">
@@ -32,9 +32,9 @@ Next, if you added chat as an option we need to add it to your sidebar
 <img width="1505" alt="Screen Shot 2023-08-23 at 10 48 23 AM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/43f3656a-25e3-463a-b0e5-eb4ee24b79e3">
 Make sure to hit the save button
 <img width="1505" alt="Screen Shot 2023-08-23 at 10 49 03 AM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/fbaac6f9-888b-4156-a5c8-7c6117514f06">
-Once this is done your Stream page is set and when you stream on Sunday morning it will show up on your stream page. To access this page just enter /stream after your domain
+Once this is done your Stream page is set and when you stream on Sunday morning it will show up on your Stream page. To access this page just enter /stream after your domain
 <img width="1505" alt="Screen Shot 2023-08-23 at 10 47 23 AM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/2eb1b856-f50d-495f-8511-c3961d63744e">
-It will lead you to a page like this. You can also ad the stream anywhere on your website in the website editor you will see a new stream block that makes it easy to embed.
+It will lead you to a page like this. You can also add the stream anywhere on your website in the website editor you will see a new stream block that makes it easy to embed.
 <img width="1505" alt="Screen Shot 2023-08-23 at 10 53 09 AM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/40ce7729-a5fb-4d8d-8f2a-72f1e0e668ef">
 
 
