@@ -16,7 +16,7 @@ tailored to your setup.
 In this example, let's assume we are using GoDaddy.com as the registrar, which operates with the older type of DNS configuration. 
 With GoDaddy, we need to set up an A record to point the root domain to the desired IP address.
 
-###  Ensure your homepage path is left blank to load the website as the root.
+###  Navigate to the b1 app to ensure your homepage path is left blank to load the website as the root.
 
 <img width="1473" alt="Screen Shot 2023-07-08 at 8 05 03 PM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/fe610952-6889-4ab0-aab8-b03503ccbbbc">
 
