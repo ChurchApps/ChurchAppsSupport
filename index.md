@@ -14,6 +14,7 @@ layout: home
 - [Setting up access to the Member Directory](b1/member-dir-access)
 - [Connecting your B1 Website to your domain](b1/add-cname-record.md)
 - [Designing your B1 Website](b1/B1webdesign.md)
+- [Useing the Carousel Simple Element](b1/carousel.md)
 - [Manage Bulk youtube import for sermons ](b1/bulkyoutubeimport.md)
 
 ### B1.church Member
