@@ -19,6 +19,7 @@ layout: home
 - [Using the Text with Photo Simple Element](b1/textwithphoto.md)
 - [Using the Embed Page Simple Element](b1/embedpage.md)
 - [Using the Location Simple Element](b1/location.md)
+- [Using the Image Simple Element](b1/image.md)
 - [Manage Bulk youtube import for sermons ](b1/bulkyoutubeimport.md)
 
 ### B1.church Member
