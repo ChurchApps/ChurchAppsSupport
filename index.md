@@ -17,6 +17,7 @@ layout: home
 - [Using the Carousel Simple Element](b1/carousel.md)
 - [Using the Row Simple Element](b1/rows.md)
 - [Using the Text with Photo Element](b1/textwithphoto.md)
+- [Using the Embed Page Element](b1/embedpage.md)
 - [Manage Bulk youtube import for sermons ](b1/bulkyoutubeimport.md)
 
 ### B1.church Member
