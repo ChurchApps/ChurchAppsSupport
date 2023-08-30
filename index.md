@@ -15,6 +15,7 @@ layout: home
 - [Connecting your B1 Website to your domain](b1/add-cname-record.md)
 - [Designing your B1 Website](b1/B1webdesign.md)
 - [Using the Text Element](b1/text.md)
+- [Using the Card Element](b1/card.md)
 - [Using the Carousel Simple Element](b1/carousel.md)
 - [Using the Row Simple Element](b1/rows.md)
 - [Using the Text with Photo Simple Element](b1/textwithphoto.md)
