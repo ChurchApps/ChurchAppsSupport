@@ -35,7 +35,7 @@ After you save you click the word "Home" to begin designing your home page
 
 <img width="1316" alt="B1 Web Design 9" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/cc501e05-509e-400f-99b8-ae8c0a0c580e">
 
-Every page design begins with a section. 
+Every page design begins with a section. Drag and drop the section box to the top of the page.
 
 <img width="1302" alt="B1 Web Design 10" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/cd20014c-7739-4b32-8272-5549694be899">
 
@@ -50,9 +50,6 @@ If you are using an image you can upload it from your computer or use stock imag
 ![B1 Web Design 14](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/b4d87ba7-b226-4ea1-84f0-3b9362a477ab)
 ![B1 Web Design 15](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/ecf6286e-fc4f-4afa-8c11-8f18d551b8c1)
 ![B1 Web Design 16](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/07d5f259-194b-42bd-97b8-1498dc6522d8)
-
-Drag and drop the section box to the top of the page.
-
 You are now ready to add an element to the page. There are several different elements available. Just drag and drop the element you want to use into the section and customize it.
 <img width="1167" alt="Screen Shot 2023-07-28 at 3 05 37 PM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/d61172c6-0846-460b-8455-a2ae63a3accd">
 <img width="1177" alt="Screen Shot 2023-07-28 at 3 06 44 PM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/931cf36a-c64a-4396-8e0c-783e3deb73dd">
