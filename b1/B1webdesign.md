@@ -27,9 +27,9 @@ Now you are ready to start adding pages. Click the + sign in the Pages box
 
 <img width="1349" alt="B1 Web Design 7" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/512cb744-6b32-447d-b925-0f5cff4d0aa4">
 
-Give your first page the title "Home" Just put a forward slash (/) in the Url Path box and save
+Give your first page the title "Home" Just put a forward slash (/) in the Url Path box. Be sure to choose a layout (you will not be able to edit without a layout) and save
 
-<img width="1228" alt="B1 Web Design 8" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/870cae65-fd8e-497f-9bab-3ef5239c54e5">
+<img width="1228" alt="B1 Web Design 8" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/2335e3cf-14e8-48ec-944e-849c332fa258">
 
 After you save you click the word "Home" to begin designing your home page
 
