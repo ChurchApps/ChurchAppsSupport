@@ -39,6 +39,8 @@ Every page design begins with a section. Drag and drop the section box to the to
 
 <img width="1302" alt="B1 Web Design 10" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/cd20014c-7739-4b32-8272-5549694be899">
 
+<img width="1313" alt="Web design Section" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/e92ae1c3-2d12-47f9-bf4a-9ffb6578a9fd">
+
 You can choose a variety of backgrounds. If you are using a youtube video you must own the video or have permission to use it.
 
 <img width="1307" alt="B1 Web Design 11" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/d829a804-7879-44d6-8b9b-5c9e3035ca38">
