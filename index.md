@@ -16,6 +16,7 @@ layout: home
 - [Designing your B1 Website](b1/B1webdesign.md)
 - [Using the Text Simple Element](b1/text.md)
 - [Using the Card Simple Element](b1/card.md)
+- [Using the HTML Simple Element](b1/htmp.md)
 - [Using the Carousel Simple Element](b1/carousel.md)
 - [Using the Row Simple Element](b1/rows.md)
 - [Using the Text with Photo Simple Element](b1/textwithphoto.md)
