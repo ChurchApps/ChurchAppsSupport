@@ -19,6 +19,7 @@ layout: home
 - [Using the HTML Simple Element](b1/htmp.md)
 - [Using the Expandable Simple Element](b1/expandable.md)
 - [Using the Carousel Simple Element](b1/carousel.md)
+- [Using the White Space Simple Element](b1/whitespace.md)
 - [Using the Row Simple Element](b1/rows.md)
 - [Using the Text with Photo Simple Element](b1/textwithphoto.md)
 - [Using the Embed Page Simple Element](b1/embedpage.md)
