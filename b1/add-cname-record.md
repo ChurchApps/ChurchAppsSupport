@@ -20,17 +20,29 @@ With GoDaddy, we need to set up an A record to point the root domain to the desi
 
 <img width="1473" alt="Screen Shot 2023-07-08 at 8 05 03 PM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/fe610952-6889-4ab0-aab8-b03503ccbbbc">
 
-### Navigate to Chums.org and log in once logged in click on setting then click the pencil icon to edit the church settings.
+### Navigate to Chums.org and log in. Once logged in, click on setting then click the pencil icon to edit the church settings.
 
 <img width="1497" alt="Screen Shot 2023-07-09 at 7 08 22 AM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/d9133b07-c217-441c-8073-a8d29488b8ab">
 
-### Scroll down and add your domain ad it 2 times one with www and one without then click save.
+### Check your subdomain name to make sure it matches your website address. For example, if your website address is www.test0923.org then your subdomain should be test0923. 
+
+![subdomain](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/d9ecbf39-fb35-47a1-8395-7eb989dda026)
+
+### Scroll down and add your domain. Add it twice, once with www and once without. Click save.
+
 <img width="1473" alt="Screen Shot 2023-07-08 at 8 00 52 PM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/fb5e4ce7-f57a-4287-8717-8c610b50ae33">
 
-### Login to your go-daddy account and navigate to your domains once you find the domain you want to use click on DNS.
+### Login to your GoDaddy account, click on your name and navigate to "my products."  Choose the domain you want to use. Once you find the domain you want to use click on "DNS."
+
 <img width="1469" alt="Screen Shot 2023-07-08 at 7 10 53 PM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/09d8ff68-e528-495c-81bc-645b882ce91c">
 
-### Click on DNS Records then click on "Add new Record".
+### If "Add a new Record" is grey instead of black you will need to change your nameserver to GoDaddy. Click on Nameservers then "change name Servers" and make sure you are on GoDaddy name Servers.
+
+<img width="1497" alt="Screen Shot 2023-07-09 at 7 23 57 AM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/54b97102-d09a-41e5-b88b-ea3b625fbd44">
+
+<img width="1497" alt="Screen Shot 2023-07-09 at 7 25 12 AM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/2a1828b1-9c58-4d98-a573-d56992064bf6">
+
+### Return to DNS management, click on DNS Records then click on "Add new Record".
 <img width="1462" alt="Screen Shot 2023-07-09 at 6 48 05 AM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/80705e90-981e-4ff2-af2b-8573bcc0eadb">
 
 ### First let's add the CNAME: proxy.b1.church
@@ -42,8 +54,5 @@ With GoDaddy, we need to set up an A record to point the root domain to the desi
 ### After adding both records, the page should resemble the following example, indicating that your site is now pointing to the website you created on b1.Church.
 <img width="1473" alt="Screen Shot 2023-07-08 at 7 57 49 PM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/7b56fe27-10ca-486b-bf18-7f61b9fd8df7">
 
-### If for some reason you can not change your DNS records click on Nameservers then "change name Serververs and make sure you are on GoDaddy nameServers.
-<img width="1497" alt="Screen Shot 2023-07-09 at 7 23 57 AM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/54b97102-d09a-41e5-b88b-ea3b625fbd44">
-<img width="1497" alt="Screen Shot 2023-07-09 at 7 25 12 AM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/2a1828b1-9c58-4d98-a573-d56992064bf6">
 
 
