@@ -1,4 +1,4 @@
-### How to set up Attendence in Chums
+### How to set up Attendance in Chums
 
 Click the Attendence icon.
 
