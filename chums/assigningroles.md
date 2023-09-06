@@ -19,5 +19,5 @@ Once they are added hit save.
 ![assigning roles 15](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/8b7a4561-1577-48b3-bea0-5b672887e64b)
 Click on the pencil by their name to choose which permissions you want to give them.
 ![assigning roles 16](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/5cb83ccf-4ea8-4415-8e4f-a2ee208d1b3b)
-Domain Administrators have all permissions and you cannot edit thier permissions.
+Domain Administrators have all permissions and you cannot edit their permissions.
 ![Assigning roles 50](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/632a1038-9d47-4be8-9092-44478f884ebd)
