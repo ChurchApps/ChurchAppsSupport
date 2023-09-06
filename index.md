@@ -35,6 +35,7 @@ layout: home
 ### ChuMS
 
 - [How to Enter People into Chums](chums/addingpeople.md)
+- [How to Enter Groups into Chums](chums/groups.md)
 - [How To Setup Online Giving](chums/giving)
 - [How To Setup Chums Checkin](chums/checkin)
 - [How To import your Breeze information to chums](chums/importfrombreeze.md)
