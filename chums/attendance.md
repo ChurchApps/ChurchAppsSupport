@@ -55,7 +55,6 @@ Click on the Group icon then choose one of your groups.
 
 <img width="1368" alt="Attendance 1:1" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/db2f313e-95a1-4c25-9b3a-6e5c02477807">
 
-
 Go to Sessions.
 
 ![Attendence 2](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/778664ab-5547-4e4f-978d-6324520f0d2d)
