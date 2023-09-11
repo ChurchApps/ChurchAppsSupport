@@ -36,6 +36,7 @@ layout: home
 ### ChuMS
 
 - [How to Enter People into Chums](chums/addingpeople.md)
+- [How to use the Advanced Search function in Chums](chums/advancedsearch.md)
 - [How to Enter Groups into Chums](chums/groups.md)
 - [How to Take Attendance in Chums](chums/attendance.md)
 - [How To Setup Online Giving](chums/giving)
