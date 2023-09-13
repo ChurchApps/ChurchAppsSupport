@@ -45,6 +45,7 @@ layout: home
 - [How To import your excel/csv information to chums](chums/importcsv.md)
 - [How To Setup Forms](chums/forms.md)
 - [How to Setup Tasks](chums/tasks.md)
+- [Hot to Setup Task Automations](chums/automations.md)
 - [How to Assign Administrative Roles](chums/assigningroles.md)
 
 ### Lessons.church
