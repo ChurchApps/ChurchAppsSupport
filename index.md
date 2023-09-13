@@ -44,6 +44,7 @@ layout: home
 - [How To import your Breeze information to chums](chums/importfrombreeze.md)
 - [How To import your excel/csv information to chums](chums/importcsv.md)
 - [How To Setup Forms](chums/forms.md)
+- [How to Setup Tasks](chums/tasks.md)
 - [How to Assign Administrative Roles](chums/assigningroles.md)
 
 ### Lessons.church
