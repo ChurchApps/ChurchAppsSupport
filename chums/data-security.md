@@ -1,7 +1,7 @@
 
-### How Data is Secured Within Chums ###
+## How Data is Secured Within Chums ##
 
-While there is no such thing as a perfectly secure system, we take data security seriously.  The following steps are taken to secure all data entered into CHUMS and other Live Church Solutions sites.
+While there is no such thing as a perfectly secure system, we take data security seriously.  The following steps are taken to secure all data entered into Chums and other Live Church Solutions products.
 
 #### Limiting Sensitive Data Stored ####
 Our first approach is to not secure any more sensitive data than necessary.  This means never storing any credit card or bank account details used for making donations.  When a user makes a donation using Chums or B1, the credit card data is never transmitted to any of our servers, only your payment gateway (Stripe). This means in the event of a data breach, no credit card or bank info would be compromised.
@@ -24,4 +24,4 @@ Access to the production servers is strictly limited to the server administrator
 
 #### Privacy Policy ####
 
-Your data is yours and will never be sold to third parties.  You can read our full privacy policy at [privacy policy](https://chums.org/privacy).
+Your data is yours and will never be sold to third parties.  You can read our full privacy policy [here](https://chums.org/privacy).
