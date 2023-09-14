@@ -26,9 +26,9 @@ layout: page
 
 ## Looading on your phone or tablet.
 
-Currently the B1 App is only available in the [google play store](https://play.google.com/store/apps/details?id=church.b1.mobile) It will be available in the Apple app store very soon. The setup process will be very similar if you have an apple device, you can simply load yourchurchsname.b1.church in your browser and it will function the same way.
+The B1 App is available in the [google play store](https://play.google.com/store/apps/details?id=church.b1.mobile) and the [Apple app store](https://apps.apple.com/us/app/b1-church/id1610587256) . 
 
-1.  **In The Google play store search b1.church**
+1.  **Search b1.church**
 
 ![Screenshot_2022-02-08-06-55-46](https://user-images.githubusercontent.com/65249159/152998360-30412081-031d-4cde-b00e-5287f0244e56.png)
 
