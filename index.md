@@ -11,6 +11,7 @@ layout: home
 
 
 ### B1.church Admin
+- [Setting up your B1 Mobile App](b1/churchapp.md)
 - [Setting up access to the Member Directory](b1/member-dir-access)
 - [Setting up the Member Directory on the B1 Church App](b1/member-dirctory.md)
 - [Connecting your B1 Website to your domain](b1/add-cname-record.md)
