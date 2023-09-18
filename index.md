@@ -42,7 +42,7 @@ layout: home
 - [How to Enter Groups into Chums](chums/groups.md)
 - [How to Take Attendance in Chums](chums/attendance.md)
 - [How to Setup Online Giving](chums/giving)
-- [How to Manually input Donations](manuallyinput.md)
+- [How to Manually input Donations](manualinput.md)
 - [How To Setup Chums Checkin](chums/checkin)
 - [How to import your Breeze information to chums](chums/importfrombreeze.md)
 - [How to import your excel/csv information to chums](chums/importcsv.md)
