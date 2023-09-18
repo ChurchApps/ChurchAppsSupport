@@ -28,6 +28,7 @@ layout: home
 - [Using the Video Simple Element](b1/video.md)
 - [Using the Location Simple Element](b1/location.md)
 - [Using the Image Simple Element](b1/image.md)
+- [Using Google Calander in your Website](b1/googlecal.md)
 - [Manage Bulk youtube import for sermons ](b1/bulkyoutubeimport.md)
 
 ### B1.church Member
