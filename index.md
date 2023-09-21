@@ -6,8 +6,10 @@ layout: home
 
 ---
 
+
+### Google Chrome is the preferred browser for ChurchApps.
+
 ### Accounts Management 
-### The preferred browser for ChurchApps is Google Chrome
 
 
 ### B1.church Admin
