@@ -10,14 +10,8 @@ layout: page
 ### This will ask you for the Channel Id there are several ways to retrieve this we are going to show you one way. 
 <img width="1508" alt="Screen Shot 2023-08-01 at 9 51 25 AM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/4ad881c8-8f68-45ca-98af-df06051c496b">
 
-### Navigate to your youtube channel and follow the directions on the image using Chrome to view the source of the page. 
-<img width="1500" alt="Screen Shot 2023-08-01 at 9 52 44 AM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/f9e1f5e8-6dc8-441f-b8e0-ca67ae662e6f">
-
-### On that page you will search "/channel/"
-<img width="1502" alt="Screen Shot 2023-08-01 at 9 54 01 AM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/2ae47e76-2f25-4330-b6a3-82092416b9c0">
-
-### Your youtube channel id is this string of letters and numbers right after /channel/
-<img width="1502" alt="Screen Shot 2023-08-01 at 9 54 08 AM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/ffeb69dd-5cdb-4afa-971d-f6516d6efc37">
+### Navigate to the about tab of your Youtube channel.  Click the share icon to get the channel id.
+![image](https://github.com/ChurchApps/ChurchAppsSupport/assets/1447203/adfd4155-dd4c-4881-b7c0-2b27f41b8c8a)
 
 ### Next navigate back to the B1.Church app and paste that string in and click fetch.
 <img width="1500" alt="Screen Shot 2023-08-01 at 9 54 52 AM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/fd44a0fb-563d-4580-af8e-3cef793ded20">
