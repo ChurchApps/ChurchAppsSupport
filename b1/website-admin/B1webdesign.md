@@ -1,3 +1,9 @@
+---
+layout: page
+section: B1 Website Admin
+title: Create Your Website
+---
+
 **Designing your website in B1.Church**
 
 In order to design your website in B1.Church you must first be an administrator in B1.Church. You can check to make sure you are an admin by going to CHUMS clicking on settings, navigate to Roles then to B1 Admin. and see if your name is there. If your name is not there you will need to have the Admin add you to the list.
@@ -10,7 +16,7 @@ Next, click on the gear on the left side of the screen
 
 <img width="1362" alt="B1 Web Design 2" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/d5685ea9-399c-4da9-9619-af0a4dd8559a">
 
-Click on the website icon 
+Click on the website icon
 
 <img width="1374" alt="B1 Web Design 3" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/3f533970-5747-4f26-b32b-8ad06e550ccc">
 
@@ -78,7 +84,6 @@ If you need to edit something after you have already put it on the page just cli
 ![B1 Web Design 24](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/fdf421f7-632c-4aa8-9799-4d260c810430)
 
 To put your pages in order just add them to the navigation links
-
 
 ![B1 Web Design 25](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/1b8f3866-e92d-45c3-979c-b2db39e29502)
 

@@ -1,3 +1,9 @@
+---
+layout: page
+section: B1 Website Admin
+title: Elements - Card
+---
+
 **Using Card in your Website**
 
 Make sure you have a section placed on your page.

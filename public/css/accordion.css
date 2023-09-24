@@ -1,0 +1,36 @@
+.accordion {
+  background-color: #202020;
+  color: #FFF;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/*
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+*/
+
+.panel {
+  background-color: #303030;
+  color: #FFFFFF;
+  display: none;
+  overflow: hidden;
+}
+
+.nav-item {
+  padding-left:30px;
+  padding-top:10px;
+  padding-bottom: 10px;
+  display: block;
+}
+
+.nav-item.current, .nav-item:hover {
+  color: #EEEE00;
+  text-decoration: none;
+}
