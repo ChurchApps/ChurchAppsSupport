@@ -1,8 +1,11 @@
 ---
 layout: page
+section: B1 Streaming
+title: Stream Setup
 ---
 
 ## Setting up your recurring service live stream
+
 The idea behind this is to set up your live stream that repeats every week we recommend using youtube. Why because it is free and it is the easiest to view on most devices.
 You will need to set up a YouTube account and remember to test streaming from the YouTube page. YouTube makes you wait 24 hours before your first stream so try to start one and it will start that countdown.
 
@@ -16,7 +19,7 @@ Choose "Add Peremnant Live URL"
 <img width="1505" alt="Screen Shot 2023-08-23 at 10 32 40 AM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/51c6dc57-2087-485b-84ac-4f758db31730">
 You will come to a screen that looks like this
 <img width="1505" alt="Screen Shot 2023-08-23 at 10 33 21 AM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/6f7b469a-b160-4010-b470-191d9fbbedd0">
-From here you will need your channel ID if you are not sure where to find this click on the [link](https://support.google.com/youtube/answer/6180214)  to learn how
+From here you will need your channel ID if you are not sure where to find this click on the [link](https://support.google.com/youtube/answer/6180214) to learn how
 <img width="1505" alt="Screen Shot 2023-08-23 at 10 34 09 AM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/98d3ee35-48c6-4cc7-9bc5-a5d121efff1b">
 Customize to your liking and then hit save
 <img width="1505" alt="Screen Shot 2023-08-23 at 10 36 08 AM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/35f8139e-04b7-41e6-afb4-01304f489de6">
@@ -36,6 +39,3 @@ Once this is done your Stream page is set and when you stream on Sunday morning 
 <img width="1505" alt="Screen Shot 2023-08-23 at 10 47 23 AM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/2eb1b856-f50d-495f-8511-c3961d63744e">
 It will lead you to a page like this. You can also add the stream anywhere on your website in the website editor you will see a new stream block that makes it easy to embed.
 <img width="1505" alt="Screen Shot 2023-08-23 at 10 53 09 AM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/40ce7729-a5fb-4d8d-8f2a-72f1e0e668ef">
-
-
-

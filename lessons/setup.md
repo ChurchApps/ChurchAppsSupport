@@ -1,5 +1,7 @@
 ---
 layout: page
+section: Lessons.church
+title: Setup Lessons.church
 ---
 
 ## Connect Lessons.Church to the B1 app

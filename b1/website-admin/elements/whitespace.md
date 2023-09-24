@@ -1,3 +1,9 @@
+---
+layout: page
+section: B1 Website Admin
+title: Elements - Whitespace
+---
+
 **Using White Space in your Website**
 
 White space is a great way to add blank space to your web page. You can adjust it to whatever size you would like it to be. It will spread out your elements so more of your background will show. (Especially useful if you are using a video or photo background).
@@ -12,7 +18,7 @@ Set the design of your section and click save.
 
 <img width="1210" alt="Rows 3" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/0b8845ce-20af-44c5-8c15-f5e8996a8184">
 
-Text has been added to this example to demonstrate white space. 
+Text has been added to this example to demonstrate white space.
 
 Choose the White space button and drag and drop it on the section.
 

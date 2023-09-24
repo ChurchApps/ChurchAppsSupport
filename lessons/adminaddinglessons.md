@@ -1,5 +1,7 @@
 ---
 layout: page
+section: Lessons.church
+title: Admin - Add a Lesson
 ---
 
 # How to add lessons in lessons.church as an admin.

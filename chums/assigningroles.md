@@ -1,11 +1,16 @@
+---
+layout: page
+section: ChuMS
+title: Assign Roles
+---
+
 **Assigning Roles for Church Apps**
 
 The first person who signs up for Church Apps is automatically a domain administrator for all apps. You must be a domain administrator to assign roles. You can add administrative privilages to anyone who is registered under your church.
 
-In the Chums homepage click the gear on the left side of your screen. 
+In the Chums homepage click the gear on the left side of your screen.
 
 <img width="1000" alt="Assigning roles 1" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/022f9a8e-03cb-4685-a61a-094ed8de2cf5">
-
 
 You have several options to choose from. If you only want someone to have admin. privilages in one app you can choose it here. If you want someone to have full administrative privilages choose Domain Admins.
 

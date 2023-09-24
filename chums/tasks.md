@@ -1,4 +1,10 @@
-### How to set up Tasks in Chums ###
+---
+layout: page
+section: ChuMS
+title: Tasks Setup
+---
+
+### How to set up Tasks in Chums
 
 Tasks are a great way to assign jobs within your organization. In the Chums homepage click on the Tasks icon.
 

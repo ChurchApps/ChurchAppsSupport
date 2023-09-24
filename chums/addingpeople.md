@@ -1,3 +1,9 @@
+---
+layout: page
+section: ChuMS
+title: Adding People
+---
+
 **Adding People to Chums**
 
 In the Chums homepage, go to the people icon on the left side of the page

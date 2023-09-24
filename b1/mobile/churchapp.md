@@ -1,4 +1,10 @@
-### Setting up your B1 Mobile App ###
+---
+layout: page
+section: B1 Mobile
+title: Set Up Mobile App
+---
+
+### Setting up your B1 Mobile App
 
 From the drop down menu under your name choose B1.church.
 
@@ -24,7 +30,7 @@ Choose the type of tab.
 
 ![Mobile App 4](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/4ec31aa2-1e48-47c4-8922-5ccc78f33c77)
 
-In this example we will choose Bible. 
+In this example we will choose Bible.
 
 ![Mobile App 5](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/af2bdf8c-f911-4023-aa03-a54efd9062ac)
 

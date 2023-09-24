@@ -1,5 +1,7 @@
 ---
 layout: page
+section: Lessons.church
+title: Play order
 ---
 
 ## Arrange lesson items to play the way you want them to play.

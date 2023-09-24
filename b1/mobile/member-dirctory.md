@@ -1,5 +1,7 @@
 ---
 layout: page
+section: B1 Mobile
+title: Add Member Directory
 ---
 
 ## Setting up the member Directory in the B1 App.

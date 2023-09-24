@@ -1,5 +1,7 @@
 ---
 layout: page
+section: B1 Streaming
+title: OBS Basics
 ---
 
 ## OBS Basics

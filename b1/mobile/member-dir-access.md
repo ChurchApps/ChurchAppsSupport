@@ -1,5 +1,7 @@
 ---
 layout: page
+section: B1 Mobile
+title: Granting Directory Access
 ---
 
 ## Giving Access to the Church Directory

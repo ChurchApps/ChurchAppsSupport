@@ -1,3 +1,9 @@
+---
+layout: page
+section: B1 Website Admin
+title: Elements - Expandable
+---
+
 **Using Expandable in your Website**
 
 Make sure you have a section placed on your page.
@@ -18,7 +24,7 @@ Give your expandable element a title.
 
 <img width="1052" alt="Expandable 2" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/b71fdfb9-d8b3-48a0-88d4-80a5af2823a1">
 
-Paste or type some text or a link. 
+Paste or type some text or a link.
 
 <img width="1058" alt="Expandable 3" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/04168572-d72d-41a7-bc35-83149096ed8a">
 
@@ -27,5 +33,3 @@ Your title will show up on the page and the text will be hidden until you click 
 <img width="1059" alt="Expandable 4" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/fdf19b33-dba7-49c7-9e08-f06c52bc763f">
 
 <img width="1055" alt="Expandable 5" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/f8276a6d-95bc-4afd-8b01-99c53f68bc50">
-
-

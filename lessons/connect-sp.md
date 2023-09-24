@@ -1,5 +1,7 @@
 ---
 layout: page
+section: Lessons.church
+title: Connect to SignPresenter
 ---
 
 ## Connect SignPresenter to Lessons.Church

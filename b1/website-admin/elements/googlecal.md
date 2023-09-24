@@ -1,3 +1,9 @@
+---
+layout: page
+section: B1 Website Admin
+title: Elements - Google Calendar
+---
+
 **Using Google Calander in your Website**
 
 Make sure you have a section placed on your page.
@@ -16,7 +22,7 @@ Click on HTML and drag it to your section.
 
 ![HTML 2](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/cbd7b7da-9f10-4eb6-be69-8bf982f6b008)
 
-Go to your Google calendar and make sure  the calendar is marked "Make available to public" and copy the "Use this code to embed this calendar in a web page."
+Go to your Google calendar and make sure the calendar is marked "Make available to public" and copy the "Use this code to embed this calendar in a web page."
 
 <img width="1507" alt="Screenshot 2023-09-18 at 11 05 41 AM" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/65249159/30c2c4c1-ecd6-4810-9803-5d8dad8daca7">
 <img width="1507" alt="Screenshot 2023-09-18 at 11 06 01 AM" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/65249159/1d99b187-0306-4aa2-bbfc-4df76e639505">

@@ -1,4 +1,10 @@
-### How to Manualy Input Donations ###
+---
+layout: page
+section: ChuMS
+title: Manually Add Donations
+---
+
+### How to Manualy Input Donations
 
 In the Chums dashboard click on the giving icon.
 
@@ -24,11 +30,11 @@ To enter donations into the Batch choose the name of the Batch.
 
 ![Manual Donation Input  6](https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/6f7088c5-02fc-4af2-987b-09bb6af53bdd)
 
-Click the + on the Donations box. 
+Click the + on the Donations box.
 
 ![Manual Donation Input  7](https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/f1c52dc1-7500-4846-bf45-701fcd8c4a41)
 
-Choose the person who gave the donation or if Anonymous just leave it.  If the person is not in your Chums database you will need to enter them for Chums to record their donation under their name.
+Choose the person who gave the donation or if Anonymous just leave it. If the person is not in your Chums database you will need to enter them for Chums to record their donation under their name.
 
 ![Manual Donation Input  8](https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/821f251d-97c9-40fc-bd46-447a960e54d0)
 
@@ -44,7 +50,7 @@ Choose the method of payment, Check, Cash or Card.
 
 ![Manual Donation Input  11](https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/104771fd-8aee-4df8-af6a-f16cae2a4e8a)
 
-If it's a Check, enter the check number. If it's a Card enter the last four digits. 
+If it's a Check, enter the check number. If it's a Card enter the last four digits.
 
 ![Manual Donation Input  12](https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/4123f59d-c1d5-4764-bcf7-3c33d9ae074d)
 

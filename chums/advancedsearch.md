@@ -1,4 +1,10 @@
-### How to perform an Advanced Search on your Chums Database ###
+---
+layout: page
+section: ChuMS
+title: Advanced Search
+---
+
+### How to perform an Advanced Search on your Chums Database
 
 Click on the People icon.
 
@@ -16,7 +22,7 @@ For this example we will choose "Birth Month".
 
 ![Adv  Search 4](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/9bb10917-389b-423d-bbad-ca50dad43a7a)
 
-Choose an operator. This tells the program how to conduct the search. In this case we will choose =. 
+Choose an operator. This tells the program how to conduct the search. In this case we will choose =.
 
 ![Adv  Search 5](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/3491e4be-1cdc-4692-a8f4-6d278ceac5e6)
 

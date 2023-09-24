@@ -1,3 +1,9 @@
+---
+layout: page
+section: B1 Website Admin
+title: Elements - Text
+---
+
 **Using Text in your Website**
 
 Make sure you have a section placed on your page.
@@ -30,11 +36,11 @@ Choose different styles from the options on top of the box.
 
 ![Text  5](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/54bc0041-aa2f-4757-83e3-107175ac08e6)
 
-Choose the text format 
+Choose the text format
 
 ![Text  6](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/5cb4b0c0-1dee-49ab-93bf-4d6ab18e023c)
 
-You can also make your text a link. Highlight your text and click on the link icon.  Type or paste in the URL then choose the appearance you would like.
+You can also make your text a link. Highlight your text and click on the link icon. Type or paste in the URL then choose the appearance you would like.
 
 ![Text  6:1](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/e6d266e6-be70-49ed-bc95-a5cdd161a550)
 

@@ -1,23 +1,17 @@
-**Creating Rows in your Website**
+---
+layout: page
+section: B1 Website Admin
+title: Elements - Text with Photo
+---
+
+**Using Text with Photos in your Website**
 
 Make sure you have a section placed on your page.
 <img width="1218" alt="Rows 1" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/f0fa9c40-d1ab-4c32-ad11-474543ed8dc1">
 <img width="1210" alt="Rows 2" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/3c251b2d-bafe-4c61-8379-e39b184e22b1">
 Set the design of your section and click save.
 <img width="1210" alt="Rows 3" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/0b8845ce-20af-44c5-8c15-f5e8996a8184">
-Now choose Row from simple elements.
-<img width="1212" alt="Rows 4" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/007ec23d-997e-474c-9527-37868af0d576">
-Drag the Row button to your section.
-<img width="1209" alt="Rows 5" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/e48df012-a433-4c4e-a32b-b69c0524c9cf">
-Set the number of rows you want to divide your page into.
-<img width="1211" alt="Rows 6" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/c1d232d1-0c16-4da2-ac13-064d5e80bdf4">
-Be sure to hit save.
-![Rows 7](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/25e4db29-6924-4862-8e42-d56ffa4c2353)
-This will give you the number of rows you set. In this case three.
-![Rows 8](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/c659fc30-032b-4019-b9ec-a40980c6822d)
-You can place any of the elements you would like in the rows. Each one is independent of the others.  For this example we will use the Text with Photo element.
-![Rows 9](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/51afb0a9-aef7-4264-893c-559d692c4ad1)
-Drag the Text with Photo button into the Row you want to place it in.
+You can use the Text with Photo in a Section or in a Row. In this case we will be using it in a row that has already been placed in the Section. Drag the Text with Photo button into the Row you want to place it in.
 ![Text w:photo 1](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/25214962-1ff4-4cfd-9384-f99897b68363)
 It will open a dialog box to the right. First you'll need to choose a photo. You will have three choices to choose from. Gallery (these are photos you have previously uploaded), Upload (you can upload from your computer) and Stock Photos (these are copyright free photos you can use).
 ![Text w:photo 2](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/4dc52bba-2474-4078-b6b2-d85e70cc4689)
@@ -36,5 +30,5 @@ Enter your text. You can customize it using the tools on top of the text box.
 ![Text w:photo 6](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/64798f46-89d6-4d2d-9759-f545034036a5)
 Be sure to hit save.
 ![Text w:photo 7](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/fd29916e-f4ae-4786-ba0d-75f03f3e957c)
-Do the same thing for each of the three Rows. The finished product is three perfectly spaced rows.
+Do the same thing for each of the three Rows.
 ![Text w:photo 8](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/6bec2fda-f9e7-4308-9022-4a4b67066017)

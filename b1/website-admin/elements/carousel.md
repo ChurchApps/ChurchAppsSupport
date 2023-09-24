@@ -1,3 +1,9 @@
+---
+layout: page
+section: B1 Website Admin
+title: Elements - Carousel
+---
+
 **How to Use the Simple Element Carousel**
 
 The Carousel simple element is a great easy way to add a slideshow on your page of whatever items you would like to have. For this demonstration, we will be using it to make a simple slideshow..
@@ -28,6 +34,6 @@ Click save
 <img width="1512" alt="Screen Shot 2023-08-28 at 8 06 09 PM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/e1cb988c-bd92-4ed3-9a2d-2dbd282d09cf">
 To add the next photo click the arrow on the Carousel
 <img width="1512" alt="Screen Shot 2023-08-28 at 8 06 47 PM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/18efde08-74a3-4f1f-a7f3-f7cb467bf0c0">
-Repeat the process for as many more elements as you selected in the Carousel element. 
+Repeat the process for as many more elements as you selected in the Carousel element.
 Once completed you will have a great Carousel for your site.
 <img width="1512" alt="Screen Shot 2023-08-28 at 8 11 44 PM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/607641e5-ae00-4dab-bfa7-d724830fab8c">

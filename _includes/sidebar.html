@@ -10,7 +10,7 @@
      
        <nav class="sidebar-nav">
 
-         {% assign all_sections = site.pages | map: "section" | uniq %}
+         {% assign all_sections = site.pages | sort:"section" | map: "section" | uniq %}
          {% assign all_pages = site.pages | sort:"url" %}
 
 

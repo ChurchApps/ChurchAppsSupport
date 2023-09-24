@@ -1,3 +1,9 @@
+---
+layout: page
+section: ChuMS
+title: Attendance
+---
+
 ### How to set up Attendance in Chums
 
 Click the Attendence icon.
@@ -49,7 +55,7 @@ Click save.
 ![Groups 22](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/93ad402b-597a-4aa9-8611-9aee2562c027)
 ![Groups 23](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/a802040a-e075-4191-9cf8-de8d481655a1)
 
-### How to Record Attendance 
+### How to Record Attendance
 
 Click on the Group icon then choose one of your groups.
 

@@ -1,5 +1,7 @@
 ---
 layout: page
+section: ChuMS
+title: Forms
 ---
 
 **Create forms in CHUMS**
@@ -9,7 +11,7 @@ Click the "+" button to add a form<img width="1304" alt="Screen Shot 2023-05-09 
 Give the form a name <img width="1302" alt="Screen Shot 2023-05-09 at 3 21 58 PM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/eb657bf2-4fd8-4417-be74-c8869d9fedfc">
 Associate the form with "People" or "Stand Alone". The "people" form will show up in the edit box of each individual. The "stand alone" form will produce a link which can be used in your web page<img width="1303" alt="Screen Shot 2023-05-09 at 3 23 35 PM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/5c0cdca0-5db8-4cea-8fdb-860ec0acd976">
 You will now see your form. Click on the form name (to rename click on the edit button)<img width="1303" alt="Screen Shot 2023-05-09 at 3 24 51 PM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/2cbe9539-b165-4349-b396-43589fa47e7c">
-Click the "+" to add a question. Choose from a variety of question types. Click save. The form will appear to the left.  <img width="1303" alt="Screen Shot 2023-05-09 at 3 51 43 PM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/4d7fecff-dbad-4a0d-b977-a8f00951a014">
+Click the "+" to add a question. Choose from a variety of question types. Click save. The form will appear to the left. <img width="1303" alt="Screen Shot 2023-05-09 at 3 51 43 PM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/4d7fecff-dbad-4a0d-b977-a8f00951a014">
 You are now ready to use the form. Click on the persons name and you will see the title of the form below their info. Click on the name of the form and fill in the blanks.<img width="1310" alt="Screen Shot 2023-05-09 at 3 28 42 PM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/c18dc16d-d8d9-46a3-9bbe-bddb85bef389">
 **Create a Stand Alone Form**
 

@@ -1,3 +1,9 @@
+---
+layout: page
+section: B1 Website Admin
+title: Elements - Image
+---
+
 **Using Image in your Website**
 
 Make sure you have a section placed on your page.
@@ -10,7 +16,7 @@ Click on the Image button and drag it into the Section.
 ![Image 2](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/f22b1cad-45b2-4817-a9d7-1fdf62b96e4e)
 Click on the Select Photo button.
 ![Image 3](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/6e19efd5-7429-4a95-aa0f-009dfe7e25d8)
-You will see a box with three options, Gallery (photos you have uploaded), Upload (photos that are on your computer to upload), Stock Photos (Copyright free photos from our photo library)  Choose where you want to get your photo.
+You will see a box with three options, Gallery (photos you have uploaded), Upload (photos that are on your computer to upload), Stock Photos (Copyright free photos from our photo library) Choose where you want to get your photo.
 ![Image 4](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/0f7ea8bb-d352-4e63-b01c-380ed2e3a1ed)
 You can also choose the aspect ratio.
 ![Image 5](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/4efccc0d-1ae9-4dcb-bc31-386e9f1cb36e)

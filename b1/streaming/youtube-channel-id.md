@@ -1,6 +1,6 @@
 ---
 layout: page
-section: B1 Website Admin
+section: B1 Streaming
 title: Get Youtube Channel ID
 ---
 

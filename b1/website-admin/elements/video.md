@@ -1,3 +1,9 @@
+---
+layout: page
+section: B1 Website Admin
+title: Elements - Video
+---
+
 **Using Video in your Website**
 
 Make sure you have a section placed on your page.
@@ -26,7 +32,7 @@ Go to your youtube channel. If you do not have a youtube channel follow the inst
 
 ![youtube Id 3:1](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/3f206bc4-73d3-463c-9791-ed3ee5a0fac7)
 
-Click on your photo in the top right corner and choose your channel. 
+Click on your photo in the top right corner and choose your channel.
 
 ![youtube id 3:2](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/90331292-6a5f-4e59-90ed-3c2a31fc2820)
 
@@ -89,4 +95,3 @@ This leaves the ID.
 Your video will appear in your page.
 
 ![vimeo id 3:8](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/52382717-091a-4b77-81b5-f078f26e2382)
-

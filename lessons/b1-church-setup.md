@@ -1,5 +1,7 @@
 ---
 layout: page
+section: Lessons.church
+title: Connect to B1
 ---
 
 ## Connect Lessons.Church to the B1 app
@@ -10,13 +12,13 @@ layout: page
    ![Screen Shot 2023-06-16 at 12 04 35 PM](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/9e52de5e-0d7e-45f6-a56d-a0e4c952e462)
 
 3.**Make at least one Schedule. You can make as many schedules as you want with as many classrooms as you have.**
-  ![Screen Shot 2023-06-16 at 8 10 44 AM](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/81a40922-0f44-4ad0-8259-287489cdff21)
+![Screen Shot 2023-06-16 at 8 10 44 AM](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/81a40922-0f44-4ad0-8259-287489cdff21)
 
 4. **Click On Your Name / App Then B1 Church**
    ![Screen Shot 2023-06-16 at 8 11 25 AM](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/015c8bd9-36ce-44e8-975a-a02519dad371)
 
 5. **Once logged in, click on the settings icon.**
-  ![Screen Shot 2023-06-16 at 8 11 52 AM](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/e5831fa7-12fa-4c8f-b890-7396e29e9d45)
+   ![Screen Shot 2023-06-16 at 8 11 52 AM](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/e5831fa7-12fa-4c8f-b890-7396e29e9d45)
 
 6. **Next Add a New Tab**
    ![Screen Shot 2023-06-16 at 8 12 21 AM](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/7907014d-141b-4f84-9aca-f204dcd3a27f)
@@ -26,7 +28,7 @@ layout: page
 
 ## Looading on your phone or tablet.
 
-The B1 App is available in the [google play store](https://play.google.com/store/apps/details?id=church.b1.mobile) and the [Apple app store](https://apps.apple.com/us/app/b1-church/id1610587256) . 
+The B1 App is available in the [google play store](https://play.google.com/store/apps/details?id=church.b1.mobile) and the [Apple app store](https://apps.apple.com/us/app/b1-church/id1610587256) .
 
 1.  **Search b1.church**
 
@@ -52,4 +54,3 @@ The B1 App is available in the [google play store](https://play.google.com/store
 
 **To see all this content in a regular browser or to share with parents or teachers when in Lessons.Church click Subscribe you will see all the links you need**
 ![Screen Shot 2023-06-16 at 8 14 35 AM](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/ade3a599-34df-47c7-8b05-7bc900bb7480)
-

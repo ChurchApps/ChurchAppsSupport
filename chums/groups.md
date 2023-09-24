@@ -1,3 +1,9 @@
+---
+layout: page
+section: ChuMS
+title: Groups Setup
+---
+
 ### How to set up Groups in Chums
 
 Click on the Groups icon.
@@ -12,7 +18,7 @@ Add a Category Name and Group Name and click Add Group.
 
 ![Groups 3](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/ea0b7675-109e-4030-af13-1e5db4a9780b)
 
-Your new group will show up in the Groups list. 
+Your new group will show up in the Groups list.
 
 ![Groups 4](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/d4134edd-5f8d-46e3-b202-d2578dcc7830)
 

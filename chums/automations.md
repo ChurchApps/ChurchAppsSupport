@@ -1,4 +1,10 @@
-### How to set up Automated Tasks in Chums ###
+---
+layout: page
+section: ChuMS
+title: Automations
+---
+
+### How to set up Automated Tasks in Chums
 
 You can set up any number of tasks using qualifiers to make the task specific to a group or individual. Click the Tasks icon and click Automations.
 
@@ -62,7 +68,7 @@ Choose a month qualifier.
 
 ![Auto Task 16](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/2cb3d8fc-7e71-4893-8518-d345f2b66bcf)
 
-The conditions show at the bottom of the Automation Details 
+The conditions show at the bottom of the Automation Details
 
 ![Auto Task 17](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/eaa3e2d1-a432-4b45-b545-c11dfaf3407c)
 
