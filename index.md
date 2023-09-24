@@ -2,20 +2,20 @@
 layout: home
 ---
 
-## Support topics
+# Support topics
 
 ---
 
+## B1.church Admin
 
-### Google Chrome is the preferred browser for ChurchApps.
+### Mobile App
 
-### Accounts Management 
-
-
-### B1.church Admin
 - [Setting up your B1 Mobile App](b1/churchapp.md)
 - [Setting up access to the Member Directory](b1/member-dir-access)
 - [Setting up the Member Directory on the B1 Church App](b1/member-dirctory.md)
+
+### Website Builder
+
 - [Connecting your B1 Website to your domain](b1/add-cname-record.md)
 - [Designing your B1 Website](b1/B1webdesign.md)
 - [Using the Text Simple Element](b1/text.md)
@@ -31,13 +31,15 @@ layout: home
 - [Using the Location Simple Element](b1/location.md)
 - [Using the Image Simple Element](b1/image.md)
 - [Using Google Calander in your Website](b1/googlecal.md)
-- [Manage Bulk youtube import for sermons ](b1/bulkyoutubeimport.md)
 
-### B1.church Member
-- [Setting up access to the Member Directory](b1/member-dir)
+### Live Streaming
 
+- [Fetching Youtube Channel ID](b1/youtube-channel-id.md)
+- [Manage Bulk youtube import for sermons](b1/bulkyoutubeimport.md)
+- [Setting up your Stream](streaminglive/stream_setup.md)
+- [Obs Basics](streaminglive/obs-basics.md)
 
-### ChuMS
+## ChuMS
 
 - [How to Enter People into Chums](chums/addingpeople.md)
 - [How to use the Advanced Search function in Chums](chums/advancedsearch.md)
@@ -53,15 +55,8 @@ layout: home
 - [Hot to Setup Task Automations](chums/automations.md)
 - [How to Assign Administrative Roles](chums/assigningroles.md)
 
-### Lessons.church
+## Lessons.church
 
 - [Initial Setup](lessons/setup)
 - [Connect to Lessons.Church to the B1 App.](lessons/b1-church-setup)
 - [Arrange lesson items to play the way you want them to play.](lessons/arranging_items)
-
-### StreamingLive
-
-- [Setting up your Stream](streaminglive/stream_setup.md)
-- [Obs Basics](streaminglive/obs-basics.md)
-  
-
