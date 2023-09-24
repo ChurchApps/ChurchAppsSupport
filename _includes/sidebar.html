@@ -19,8 +19,8 @@
 
         {% for section in all_sections %}
           {% if section != null %}
-            <button class="accordion">{{ section }}</button>
-            <div class="panel">
+            <button class="accordion{% if page.section == section %} active{% endif %}">{{ section }}</button>
+            <div class="panel"{% if page.section == section %} style="display:block"{% endif %}>
               {% for node in all_pages %}
                 {% if node.section == section && node.title != null %}
                   {% if node.layout == "page" %}
