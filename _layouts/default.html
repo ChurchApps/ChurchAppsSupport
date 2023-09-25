@@ -20,15 +20,32 @@
     {% include sidebar.html %}
     {{content}}
     {% include footer.html %}
+
+    
     <script>
-        document.querySelectorAll('img').forEach(img => {
+        document.querySelectorAll('#pageContent img').forEach(img => {
+          const div = document.createElement('div');
+          div.className = 'img-clear';
+          img.parentNode.insertBefore(div, img.previousSibling);
+
+
+          const anchor = document.createElement('a');
+          anchor.href = img.src;
+          anchor.target = '_blank';
+          anchor.innerHTML = img.outerHTML;
+          anchor.className = "doc-img"
+          img.parentElement.replaceChild(anchor, img);
+          
+          /*
             if (!img.classList.contains('img-fluid')) {
                 img.classList.add('img-fluid')
                 img.classList.add('rounded')
                 img.classList.add('post-img')
             }
+          */
         })
     </script>
+    
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
     <script src='{{ site.baseurl }}/public/js/accordion.js'></script>
     <script src='{{ site.baseurl }}/public/js/script.js'></script>

@@ -4,10 +4,6 @@ section: ChuMS
 title: Checkin Setup
 ---
 
----
-
-## layout: page
-
 ## Setup Kids Checkin for your church
 
 1. Setup an account on [Chums Account](https://chums.org/) If you already have one, please skip to step 9.
