@@ -6,7 +6,7 @@ layout: page
 
 [![Customizing Your Church Appearance](https://i.vimeocdn.com/video/1527065053-de23749ebac689ae6adb211fba6321525cc85fd362d5cd80f2373997851e542d-d_640)](https://vimeo.com/760360379)
 
-Church appearance settings apply to all apps, but are used the most heavily by StreamingLive. To change your appearance on StreamingLive:
+Church appearance settings apply to all apps, but are used the most heavily by B1 Streaming. To change your appearance on B1 Streaming:
 
 1. Click on your account name in the top right corner of the page and select admin dashboard
 2. It will open a page full of admin settings.
@@ -17,4 +17,4 @@ Church appearance settings apply to all apps, but are used the most heavily by S
 7. Click on the color boxes to set your color scheme. Both the primary and background colors also require a contrast color which is the color text appears on those backgrounds.
 8. Click save.
 
-Your StreamingLive page will now utilize your color scheme and logo. All other ChurchApps you configure will also use the provided logos for consistent branding.
+Your B1 Streaming page will now utilize your color scheme and logo. All other ChurchApps you configure will also use the provided logos for consistent branding.
