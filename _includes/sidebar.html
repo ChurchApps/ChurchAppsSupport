@@ -1,0 +1,38 @@
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+     <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" {% if page.layout == "home" %} checked{% endif %}>
+
+     <!-- Toggleable sidebar -->
+     <div class="sidebar" id="sidebar">
+       <div class="sidebar-item">
+         <p>{{ site.description }}</p>
+       </div>
+     
+       <nav class="sidebar-nav">
+
+         {% assign all_sections = site.pages | sort:"section" | map: "section" | uniq %}
+         {% assign all_pages = site.pages | sort:"url" %}
+
+
+    
+
+
+        {% for section in all_sections %}
+          {% if section != null %}
+            <button class="accordion{% if page.section == section %} active{% endif %}">{{ section }}</button>
+            <div class="panel"{% if page.section == section %} style="display:block"{% endif %}>
+              {% for node in all_pages %}
+                {% if node.section == section && node.title != null %}
+                  {% if node.layout == "page" %}
+                    <a class="nav-item{% if page.url == node.url %} current{% endif %}" href="{{ node.url | absolute_url }}">{{ node.title }}</a>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
+        {% endfor %}
+
+       </nav>
+     
+     </div>
+     
