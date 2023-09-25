@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{ '/public/css/poole.css' | absolute_url }}">
     <link rel="stylesheet" href="{{ '/public/css/syntax.css' | absolute_url }}">
     <link rel="stylesheet" href="{{ '/public/css/lanyon.css' | absolute_url }}">
-    <link rel="stylesheet" href="{{ '/public/css/accordion.css' | absolute_url }}">
+    <link rel="stylesheet" href="{{ '/public/css/custom.css' | absolute_url }}">
 </head>
 
 <body>
@@ -37,8 +37,15 @@
 
           
           const anchor = document.createElement('a');
-          anchor.href = img.src;
-          anchor.target = '_blank';
+          //anchor.href = img.src;
+          anchor.href = "#";
+          
+          //anchor.attributes["onclick"] = "showModal('" + img.src + "')";
+          anchor.onclick = function() {
+            showModal(img.src);
+            return false;
+          }
+          //anchor.target = '_blank';
           anchor.innerHTML = img.outerHTML;
           anchor.className = "doc-img"
           img.parentElement.replaceChild(anchor, img);
@@ -55,7 +62,7 @@
     </script>
     
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
-    <script src='{{ site.baseurl }}/public/js/accordion.js'></script>
+    <script src='{{ site.baseurl }}/public/js/custom.js'></script>
     <script src='{{ site.baseurl }}/public/js/script.js'></script>
 </body>
 
