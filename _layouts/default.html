@@ -24,17 +24,25 @@
     
     <script>
         document.querySelectorAll('#pageContent img').forEach(img => {
-          const div = document.createElement('div');
-          div.className = 'img-clear';
-          img.parentNode.insertBefore(div, img.previousSibling);
+
+          console.log("Prev", img.previousSibling)
+          if (img.previousSibling?.previousSibling?.className !== 'doc-img') {
+            const div = document.createElement('div');
+            div.className = 'img-clear';
+            //img.parentNode.insertBefore(div, img.previousSibling);
+            img.parentNode.insertBefore(div, img);  
+          }
+          
 
 
+          
           const anchor = document.createElement('a');
           anchor.href = img.src;
           anchor.target = '_blank';
           anchor.innerHTML = img.outerHTML;
           anchor.className = "doc-img"
           img.parentElement.replaceChild(anchor, img);
+          
           
           /*
             if (!img.classList.contains('img-fluid')) {

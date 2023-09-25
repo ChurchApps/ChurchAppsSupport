@@ -66,3 +66,12 @@
 .img-clear {
   clear:both;
 }
+
+#pageContent li {
+  min-height: 220px;
+}
+
+#pageContent {
+  padding-top:30px;
+  padding-bottom: 30px;
+}

@@ -1,6 +1,6 @@
 <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
      styles, `#sidebar-checkbox` for behavior. -->
-     <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" checked>
+     <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" {% if page.layout == "home" %} checked{% endif %}>
 
      <!-- Toggleable sidebar -->
      <div class="sidebar" id="sidebar">
@@ -34,10 +34,5 @@
 
        </nav>
      
-       <div class="sidebar-item">
-         <p>
-           &copy; {{ site.time | date: '%Y' }}. All rights reserved.
-         </p>
-       </div>
      </div>
      
