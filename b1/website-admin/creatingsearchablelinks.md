@@ -27,7 +27,8 @@ title: Creating Searchable Links Within a Webpage
 <img width="1264" alt="links 8" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/3b5deefd-cb1a-4ab6-8563-98a0e16c2efe">
 7. Now go to the Navigation Links. 
 
-<img width="1266" alt="links 9" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/a509406c-b3e4-4e39-9167-a1236050bc20"> <img width="1267" alt="links 10" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/c15de268-9a4a-404f-92fa-1eefb1f47361">
+<img width="1266" alt="links 9" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/a509406c-b3e4-4e39-9167-a1236050bc20"> 
+<img width="1267" alt="links 10" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/c15de268-9a4a-404f-92fa-1eefb1f47361">
 8. Give the Link a name and a URL path.  If you are building your home page the URL would be just the /# then the number of the section. 
 
 <img width="1178" alt="Sample" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/9ee45918-f7e5-423f-b78f-5da9b2fd5dff">
@@ -39,7 +40,9 @@ title: Creating Searchable Links Within a Webpage
 <img width="1255" alt="links 12" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/baa523c1-c6d7-4fcb-8313-4aa430c8028a">
 11. You will see the links you created in the navigation bar of the page.
 
-<img width="1262" alt="links 15" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/a42a40ce-c00c-4b19-a35a-7e8bafd66d51"> <img width="1255" alt="links  14" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/d5306996-944a-4cae-ab89-fff638d7a2bd"> <img width="1258" alt="links 13" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/35b0b570-3c46-4919-8146-cbb51b1ba7a9">
+<img width="1262" alt="links 15" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/a42a40ce-c00c-4b19-a35a-7e8bafd66d51"> 
+<img width="1255" alt="links  14" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/d5306996-944a-4cae-ab89-fff638d7a2bd"> 
+<img width="1258" alt="links 13" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/35b0b570-3c46-4919-8146-cbb51b1ba7a9">
 
-12. When you click on one for the links it will take you to that section of the page. 
+12. When you click on one of the links it will take you to that section of the page. 
 
