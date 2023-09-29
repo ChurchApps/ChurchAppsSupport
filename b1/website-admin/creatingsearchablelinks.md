@@ -1,6 +1,6 @@
 ---
 layout: page
-section: b1 website-admin
+section: B1 website-admin
 title: Creating Searchable Links Within a Webpage
 ---
 
