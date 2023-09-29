@@ -40,5 +40,6 @@ title: Creating Searchable Links Within a Webpage
 11. You will see the links you created in the navigation bar of the page.
 
 <img width="1262" alt="links 15" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/a42a40ce-c00c-4b19-a35a-7e8bafd66d51"> <img width="1255" alt="links  14" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/d5306996-944a-4cae-ab89-fff638d7a2bd"> <img width="1258" alt="links 13" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/35b0b570-3c46-4919-8146-cbb51b1ba7a9">
+
 12. When you click on one for the links it will take you to that section of the page. 
 
