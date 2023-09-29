@@ -7,9 +7,7 @@ title: Creating Searchable Links Within a Webpage
 ### Creating Searchable Links Within a Webpage
 
 1.  Put a Section on your page
-
 <img width="1269" alt="links 1" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/d2573ccb-81d8-4e3d-8141-8aa383a1b901">
-
 <img width="1264" alt="links 2" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/58d33ad0-0bc2-466b-8181-0fe69759afc5">
 
 2.  In the "ID" field give the section the number 1. Put your content in that section.
