@@ -64,4 +64,4 @@ A venue is a variant of a lesson designed for a specific setting. For example yo
 
 ## Sample
 
-The OLL file for Lessons.church is available [here](https://api.lessons.church/lessons/public/oll).
+The OLL file for Lessons.church is available [here](https://api.lessons.church/lessons/public/tree).
