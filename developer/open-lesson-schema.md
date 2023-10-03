@@ -1,10 +1,10 @@
 ---
 layout: page
 section: Developer
-title: Open Lesson Format
+title: Open Lesson Schema
 ---
 
-# Introducing Open Lesson Format
+# Introducing Open Lesson Schema
 
 There are a variety of curriculums and other church lessons available from a number of independent providers. There are also a number of desktop, television and mobile applications used to present these lessons in classrooms. There is typically a recurring task to download lesson videos and print outlines each week in order to lead a classroom. This is a time consuming an expensive process.
 
@@ -14,11 +14,11 @@ Some curriculum providers have provided applications to making delivery of their
 
 There are three JSON data file formats that make up Open Lesson format. They are
 
-1. [**Open Lesson List (OLL)**](oll.md) - This contains a list of lessons that are available from a provider. These are broken down by program, study, lesson and venue. For paid curriculum providers, this feed does not need to be public, it can be restricted by a user specific access token passed in the query string.
+1. [**Open Lesson List (OLL)**](oll.html) - This contains a list of lessons that are available from a provider. These are broken down by program, study, lesson and venue. For paid curriculum providers, this feed does not need to be public, it can be restricted by a user specific access token passed in the query string.
 
-2. **Open Lesson Format (OLF)** - This contains the detailed lesson instructions for an individual lesson/venue. The lesson is broken down into sections for organizational purposes. Within each section there are a series of actions indicating what the leader should "play", "say", or "do", along with notes and materials needed and other downloads available.
+2. [**Open Lesson Format (OLF)**](olf.html) - This contains the detailed lesson instructions for an individual lesson/venue. The lesson is broken down into sections for organizational purposes. Within each section there are a series of actions indicating what the leader should "play", "say", or "do", along with notes.
 
-3. **Open Lesson Playlist (OLP)** - This is a condensed list of just the "play" actions from the OLM file. It is designed to be a simpler format for use in presentation software with just a list of the images and videos that should be presented as part of the lesson. The software should be able to read this file to automatically download all the linked media and assemble them into a playlist.
+3. [**Open Lesson Playlist (OLP)**](olp.html) - This is a condensed list of just the "play" actions from the OLM file. It is designed to be a simpler format for use in presentation software with just a list of the images and videos that should be presented as part of the lesson. The software should be able to read this file to automatically download all the linked media and assemble them into a playlist.
 
 ## Which providers support Open Lesson Format?
 
