@@ -1,6 +1,6 @@
 ---
 layout: page
-section: Chums
+section: ChuMS
 title: Adding Events in Group Calendar
 ---
 
