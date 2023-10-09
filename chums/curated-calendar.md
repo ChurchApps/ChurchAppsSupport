@@ -1,6 +1,6 @@
 ---
 layout: page
-section: Chums
+section: ChuMS
 title: Creating a Curated Calendar
 ---
 
