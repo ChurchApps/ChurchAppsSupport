@@ -8,8 +8,7 @@ title: Attendance
 
 1. ![Groups 10](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/f3a977c9-1f1b-44b6-8ed3-4ed3a41a61d8)
    Click the Attendence icon.
-   This is a test of a long title.This is a test of a long title.This is a test of a long title.This is a test of a long title.
-
+   
 2. ![Groups 11](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/49383c9e-ecf1-4e01-8b00-01080113d45b)
    Click the + in Groups.
 
