@@ -23,7 +23,7 @@ title: Import from Breeze
    Once Uploaded you will see your data scroll to the bottom and click continue.
 
 6. <img width="1512" alt="Screen Shot 2023-02-14 at 6 54 21 PM" src="https://user-images.githubusercontent.com/65249159/218890226-e861b934-ff86-4db8-9c3b-e07828027863.png">
-   Next we need to import the file into the Chums Database.
+   Next we need to import the file into the Chums Database. At the bottom of the page click confirm.
 
 7. <img width="1512" alt="Screen Shot 2023-02-15 at 5 11 24 PM" src="https://user-images.githubusercontent.com/65249159/219187739-8f430e0f-0bce-4daa-be29-84197a5d4943.png">
    Let the Process Run until you see a screen like this showing it is completed. Click go to chums to get back to chums
