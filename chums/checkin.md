@@ -93,4 +93,4 @@ Wifi only Works with Multiple tablet connections [Brother QL-810W](https://amzn.
 
 Wifi only [Brother QL-1100](https://amzn.to/3Sps8eX) (Not tested this printer should work but has not been tested)
 
-Lables (These are currtnly the only lables that work DK-1201 (1-1/7" x 3-1/2").) [Brother Lables ](https://amzn.to/3IzQAqt)
+Lables (These are currently the only lables that work DK-1201 (1-1/7" x 3-1/2").) [Brother Lables ](https://amzn.to/3IzQAqt)
