@@ -1,7 +1,7 @@
 ---
 layout: page
 section: ChuMS
-title: Exporting Data
+title: Exporting Data From Chums
 ---
 **Exporting Data from Chums**
 
@@ -27,7 +27,7 @@ This will take you to "Step 2-Preview"
 
 <img width="1265" alt="Exporting Data 6" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/21f18175-1ee8-4f31-9857-cf898396bd05">
 
-Scroll to the bottome of that tab and click "Continue"
+Scroll to the bottom of that tab and click "Continue"
 
 <img width="1273" alt="Exporting Data 7" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/a0ae708c-82b4-4b85-8bd6-adb812f431db">
 
