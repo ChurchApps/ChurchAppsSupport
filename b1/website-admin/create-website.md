@@ -111,7 +111,7 @@ title: Create Your Website
    You can designate a style for Desktop, Mobile or both platforms. 
 
 35. <img width="1295" alt="B1 Web Design 35" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/d05d714d-57ca-4c10-95f7-c0717ba926e4">
-<img width="1290" alt="B1 Web Design 36" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/b39997d2-3b04-4a88-9af5-de912b2953d4">
+    <img width="1290" alt="B1 Web Design 36" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/b39997d2-3b04-4a88-9af5-de912b2953d4">
    You can toggle between desktop and mobile view by clicking the computer icon in the top right corner.
    
 36. ![B1 Web Design 12](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/c5f273b8-a783-4b12-9b55-f23f898322f4)
