@@ -7,7 +7,7 @@ title: Create Your Website
 **Designing your website in B1.Church**
 
 1. <img width="1291" alt="Slide 1" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/461ba96f-9354-43eb-8b0b-452e698dc1e9">
-   In order to design your website in B1.Church you must first be an administrator in B1.Church. You can check to make sure you are an admin by going to CHUMS clicking on settings, navigate to Roles then to B1 Admin. and see if your name is there. If your name is not there you will need to have the Admin add you to the list.
+   In order to design your website in B1.Church you must first be an administrator in B1.Church. You can check to make sure you are an admin by going to CHUMS, click on "Settings", navigate to Roles then to B1 Admin. and see if your name is there. If your name is not there you will need to have the Admin add you to the list.
 
    The first step to designing your website is to click on your name in the top righ hand corner, go to Switch App and choose B1.Church
 
