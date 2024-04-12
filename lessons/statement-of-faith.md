@@ -1,3 +1,8 @@
+---
+layout: page
+section: Lessons.church
+title: Statement of Faith
+---
 **STATEMENT OF FAITH**
 
 Although we acknowledge that no man-made statement can encapsulate the full Biblical understanding of our faith. We submit this statement to make clear the core beliefs of Church Apps as an organization.
