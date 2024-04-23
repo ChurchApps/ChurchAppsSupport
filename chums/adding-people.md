@@ -20,3 +20,9 @@ title: Adding People
 
 5. <img width="1247" alt="Add People 11" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/f950edd6-a691-458d-952d-3b97af828e31">
    You can also search for and add new people from the Chums home page
+
+6. <img width="1201" alt="View Screen" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/f0271399-0121-464a-9525-c7850782aa61">
+   You can change which fields show up on the view screen by clicking the icon in the top right corner and choosing which fields you want.
+
+7. ![Delete Function](https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/553769c7-dd8f-45dc-ac6f-43591820f8c6)
+   You can add a quick delete button by clicking the icon in the top right corner and choosing "Delete Option". 
