@@ -19,7 +19,8 @@ title: .
 
 5. <img width="1511" alt="Screenshot 2024-05-02 at 1 22 59 PM" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/65249159/7c074d63-1d4f-4ae4-8eab-2282c4d49abb">
     Next Enter the name as "Peace Out" and for the API URL enter https://files.churchpdf.com/peace-out/lessons.json
-    Step 02 click on scheduales to get you back to the scheduale page. Now from the Provider tab you will be able to choose "Peace Out"
+    
+    Step 02 click on schedules to get you back to the scheduale page. Now from the Provider tab you will be able to choose "Peace Out"
 
 6. ![Screen Shot 2022-02-07 at 6 49 38 AM](https://user-images.githubusercontent.com/65249159/152793967-378d4238-467c-4deb-aa5c-5b4d49dd1a78.png)
    Click on your name on the right side of the screen and then click on schedules.
