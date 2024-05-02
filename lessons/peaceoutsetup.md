@@ -6,7 +6,7 @@ title: .
 
 ## Connect Lessons.Church to the B1 app
 
-1. Register or login to your [Lessons.Church](https://lessons.church/login) account.
+1. In a seprate google chrome browser tab Register or login to your [Lessons.Church](https://lessons.church/login) account.
 
 2. ![Screen Shot 2022-02-07 at 6 49 38 AM](https://user-images.githubusercontent.com/65249159/152793813-d8cc1d74-9171-4f4a-b686-5f511cb8eabf.png)
    If you have not already, you will need to register your church.
