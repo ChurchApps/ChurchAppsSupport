@@ -6,7 +6,7 @@ title: .
 
 ## Connect Lessons.Church to the B1 app
 
-1. In a seprate google chrome browser tab Register or login to your [Lessons.Church](https://lessons.church/login) account.
+1. In a separate Google Chrome browser tab, register or login to your Lessons.Church account. [Lessons.Church](https://lessons.church/login) account.
 
 2. ![Screen Shot 2022-02-07 at 6 49 38 AM](https://user-images.githubusercontent.com/65249159/152793813-d8cc1d74-9171-4f4a-b686-5f511cb8eabf.png)
    If you have not already, you will need to register your church.
@@ -20,7 +20,7 @@ title: .
 5. <img width="1511" alt="Screenshot 2024-05-02 at 1 22 59 PM" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/65249159/7c074d63-1d4f-4ae4-8eab-2282c4d49abb">
     Next Enter the name as "Peace Out" and for the API URL enter https://files.churchpdf.com/peace-out/lessons.json
     
-    Step 02 click on schedules to get you back to the scheduale page. Now from the Provider tab you will be able to choose "Peace Out"
+    Step 02 click on schedules to get you back to the schedule page. Now from the Provider tab you will be able to choose "Peace Out"
 
 7. ![Screen Shot 2022-02-23 at 2 00 54 PM](https://user-images.githubusercontent.com/65249159/155400207-23e1bf59-a6fc-4cd8-b155-ab01cf9ca3ac.png)
    Click on the plus sign.
