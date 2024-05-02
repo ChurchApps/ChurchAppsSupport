@@ -8,8 +8,8 @@ title: .
 
 1. In a separate Google Chrome browser tab, register or login to your [Lessons.Church](https://lessons.church/login) account.
 
-2. ![Screen Shot 2022-02-07 at 6 49 38 AM](https://user-images.githubusercontent.com/65249159/152793813-d8cc1d74-9171-4f4a-b686-5f511cb8eabf.png)
-   If you have not already, you will need to register your church.
+2. <img width="1511" alt="Screenshot 2024-05-02 at 4 44 30 PM" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/65249159/2ea201d2-9d44-4e89-b9cb-2c265657a0f4">
+If you have not already, you will need to register your church.
 
 3. <img width="1511" alt="Screenshot 2024-05-02 at 1 20 32 PM" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/65249159/ffa91df1-dbda-432a-a251-96da7830a6a8">
    Click on providers on the left side of the page.
