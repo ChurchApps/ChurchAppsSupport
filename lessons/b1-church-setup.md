@@ -1,6 +1,5 @@
 ---
 layout: page
-section: Lessons.church
 title: Connect to B1
 ---
 
