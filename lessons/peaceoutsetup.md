@@ -4,7 +4,7 @@ section: Lessons.church
 title: .
 ---
 
-## Connect Lessons.Church to the B1 app
+## Setting up Lessons.Church
 
 1. In a separate Google Chrome browser tab, register or login to your [Lessons.Church](https://lessons.church/login) account.
 
