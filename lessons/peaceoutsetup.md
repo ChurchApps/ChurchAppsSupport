@@ -18,7 +18,7 @@ If you have not already, you will need to register your church.
     Click the + sign on the External Proividers page.
 
 5. <img width="1511" alt="Screenshot 2024-05-02 at 1 22 59 PM" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/65249159/7c074d63-1d4f-4ae4-8eab-2282c4d49abb">
-    Next Enter the name as "Peace Out" and for the API URL enter https://files.churchpdf.com/peace-out/lessons.json
+    Next Enter the name as "Peace Out" and for the API URL enter https://api.lessons.church/lessons/public/tree?providerId=_f9_06XVB74
     
     Step 02 click on schedules to get you back to the schedule page. Now from the Provider tab you will be able to choose "Peace Out"
 
