@@ -1,7 +1,7 @@
 ---
 layout: page
 section: Lessons.church
-title: '
+title: .
 ---
 
 ## Setting up Lessons.Church
