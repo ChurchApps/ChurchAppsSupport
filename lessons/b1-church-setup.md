@@ -1,5 +1,6 @@
 ---
 layout: page
+section: Lessons.church
 title: Connect to B1
 ---
 
@@ -13,17 +14,50 @@ title: Connect to B1
 3. ![Screen Shot 2023-06-16 at 8 10 44 AM](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/81a40922-0f44-4ad0-8259-287489cdff21)
    Make at least one Schedule. You can make as many schedules as you want with as many classrooms as you have.
 
-4. ![Screen Shot 2023-06-16 at 8 11 25 AM](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/015c8bd9-36ce-44e8-975a-a02519dad371)
-   Click On Your Name / App Then B1 Church
+4. <img width="1507" alt="Screenshot 2024-05-27 at 8 47 18 AM" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/65249159/472150dd-8094-464f-9169-a0367dffa661">
+   Click On Your Name / Then Switch App
 
-5. ![Screen Shot 2023-06-16 at 8 11 52 AM](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/e5831fa7-12fa-4c8f-b890-7396e29e9d45)
-   Once logged in, click on the settings icon.
+5. <img width="1507" alt="Screenshot 2024-05-27 at 8 47 51 AM" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/65249159/1afe9811-bb91-415b-93b1-8e2fe436b059">
+   Next click on Chums You will need to have access to chums to complete this step if you do not please contact your Domain Admin.
 
-6. ![Screen Shot 2023-06-16 at 8 12 21 AM](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/7907014d-141b-4f84-9aca-f204dcd3a27f)
-   Next Add a New Tab
+6. <img width="1507" alt="Screenshot 2024-05-27 at 9 04 35 AM" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/65249159/bc8c129c-e908-4e55-9d0e-4972a202c846">
+   Click plans
 
-7. ![Screen Shot 2023-06-16 at 8 13 13 AM](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/ede0ccd6-390c-4f35-819e-211bb1f51c0e)
-   Name your Lessons anything you would like and make sure to select the type as Lessons.Church
+7. <img width="1507" alt="Screenshot 2024-05-27 at 9 05 17 AM" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/65249159/92a143f9-beb8-4111-883a-6ef5fd363d98">
+   Click the + icon to add a new ministry
+   
+8. <img width="1507" alt="Screenshot 2024-05-27 at 9 07 28 AM" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/65249159/a1b152b7-3d07-46f9-8fbe-0c8778051e5d">
+    Choose whatever name you would like and click Add
+
+ 9.  <img width="1507" alt="Screenshot 2024-05-27 at 9 07 58 AM" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/65249159/1c372be8-e289-4dab-b6fb-0e79e50ceeae">
+    Now click on Teams
+
+10. <img width="1507" alt="Screenshot 2024-05-27 at 9 08 40 AM" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/65249159/00f52b3f-716e-45ea-9a3d-a2490b809996">
+     Again Click the + icon to make a new team
+
+11. <img width="1507" alt="Screenshot 2024-05-27 at 9 09 15 AM" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/65249159/eb984634-d07b-42b2-aa26-d01c02b04848">
+     Click Add
+
+12. <img width="1507" alt="Screenshot 2024-05-27 at 9 09 35 AM" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/65249159/030811f3-af89-44f0-a814-f2ed74591b10">
+     Click on the class you just created.
+
+13. <img width="1507" alt="Screenshot 2024-05-27 at 9 10 19 AM" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/65249159/607b9460-77b6-4256-9f30-0d7d643e97df">
+      Now, add any teachers you want to view the lesson to this team.
+
+14. <img width="1507" alt="Screenshot 2024-05-27 at 9 10 59 AM" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/65249159/5978e6f4-24f1-4425-b6fa-8e4cf7735f79">
+     Remember to click the add icon.
+
+15. <img width="1507" alt="Screenshot 2024-05-27 at 9 12 15 AM" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/65249159/ba7ec02d-4bbd-423d-9525-173e67d1014a">
+     Now, let's switch the app back to Lessons.Church.
+
+16. <img width="1507" alt="Screenshot 2024-05-27 at 9 13 29 AM" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/65249159/01c6a7e2-f5f1-44ae-8966-069fbe901919">
+     Click "Edit" on the class where you want to add the volunteer team.
+
+17. <img width="1507" alt="Screenshot 2024-05-27 at 9 14 04 AM" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/65249159/3b51c4cd-1258-47ac-abe3-3ebafa7ebc9a">
+    Choose the volunteer team you just organized.
+
+18. <img width="1507" alt="Screenshot 2024-05-27 at 9 14 38 AM" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/65249159/ba84fbb0-cec1-441b-8b1a-764649f80534">
+     Make sure to hit "Save" to complete the setup. Remember, whenever you add a new teacher, you will need to add them to the team in Plans on the Chums app
 
 ## Looading on your phone or tablet.
 
