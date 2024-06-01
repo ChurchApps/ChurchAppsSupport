@@ -18,8 +18,8 @@
             <button class="accordion{% if page.section == section %} active{% endif %}">{{ section }}</button>
             <div class="panel"{% if page.section == section %} style="display:block"{% endif %}>
               {% for node in all_pages %}
-                {% if node.section == section && node.title != null %}
-                  {% if node.layout == "page" && node.title != "." %}
+                {% if node.section == section and node.title != null %}
+                  {% if node.layout == "page" and node.title != "." %}
                     <a class="nav-item{% if page.url == node.url %} current{% endif %}" href="{{ node.url | absolute_url }}">{{ node.title }}</a>
                   {% endif %}
                 {% endif %}
