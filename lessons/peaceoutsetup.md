@@ -45,3 +45,6 @@ If you have not already, you will need to register your church.
 
 14. ![Screen Shot 2022-02-23 at 2 08 31 PM](https://user-images.githubusercontent.com/65249159/155401302-bc6e4c3c-d45e-4d19-b5e7-a3a6cc348599.png)
     Set up as many classrooms and scheduled times as you want to
+
+15. If you would like to use the  [B1 Mobile app](https://b1.church/) for teachers to view the lessons,
+    [here](https://support.churchapps.org/lessons/b1-church-setup.html) is a guide on how to set it up.
