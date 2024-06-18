@@ -9,22 +9,23 @@
        </div>
      
        <nav class="sidebar-nav">
+        {% assign pages = site.pages | where: "app", page.app %}
 
-         {% assign all_sections = site.pages | sort:"section" | map: "section" | uniq %}
-         {% assign all_pages = site.pages | sort:"url" %}
+         {% assign all_sections = pages | sort:"section" | map: "section" | uniq %}
+         {% assign all_pages = pages | sort:"url" %}
 
         {% for section in all_sections %}
           {% if section != null %}
-            <button class="accordion{% if page.section == section %} active{% endif %}">{{ section }}</button>
-            <div class="panel"{% if page.section == section %} style="display:block"{% endif %}>
+            <h5>{{ section }}</h5>
+            <ul>
               {% for node in all_pages %}
                 {% if node.section == section and node.title != null %}
                   {% if node.layout == "page" and node.title != "." %}
-                    <a class="nav-item{% if page.url == node.url %} current{% endif %}" href="{{ node.url | absolute_url }}">{{ node.title }}</a>
+                    <li><a class="nav-item{% if page.url == node.url %} current{% endif %}" href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
                   {% endif %}
                 {% endif %}
               {% endfor %}
-            </div>
+            </ul>
           {% endif %}
         {% endfor %}
 

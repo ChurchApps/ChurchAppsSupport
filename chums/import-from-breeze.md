@@ -1,6 +1,7 @@
 ---
 layout: page
-section: ChuMS
+app: chums
+section: Data
 title: Import from Breeze
 ---
 
@@ -27,4 +28,3 @@ title: Import from Breeze
 
 7. <img width="1512" alt="Screen Shot 2023-02-15 at 5 11 24 PM" src="https://user-images.githubusercontent.com/65249159/219187739-8f430e0f-0bce-4daa-be29-84197a5d4943.png">
    Let the Process Run until you see a screen like this showing it is completed. Click go to chums to get back to chums.
-

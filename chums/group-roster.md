@@ -1,8 +1,10 @@
 ---
 layout: page
-section: ChuMS
+app: chums
+section: Groups
 title: Group Roster
 ---
+
 **How To Make a Group Roster**
 
 <img width="1218" alt="Group rosters 1" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/9e6dcaf8-a6d9-4d40-9f7c-9c4f386a9044">
