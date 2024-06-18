@@ -1,5 +1,6 @@
 ---
 layout: page
+app: b1
 section: B1 Website Admin
 title: Connecting Your Domain
 ---
@@ -45,10 +46,10 @@ With GoDaddy, we need to set up an A record to point the root domain to the desi
    Return to DNS management, click on DNS Records then click on "Add new Record".
 
 8. <img width="1473" alt="Screen Shot 2023-07-08 at 7 57 13 PM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/accb1372-051f-48a8-ad37-07224f1e1af2">
-   First let's add the CNAME: proxy.b1.church. If you get the warning that it cannot be added because there is another CNAME file using www go to that file and delete it. 
+   First let's add the CNAME: proxy.b1.church. If you get the warning that it cannot be added because there is another CNAME file using www go to that file and delete it.
 
 9. <img width="1462" alt="Screen Shot 2023-07-09 at 6 50 59 AM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/886360b0-2ffc-4cf6-973f-e703a25ba11b">
    Next the A Record 3.23.251.61.
 
 10. <img width="1473" alt="Screen Shot 2023-07-08 at 7 57 49 PM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/65249159/7b56fe27-10ca-486b-bf18-7f61b9fd8df7">
-    After adding both records, the page should resemble this example, indicating that your site is now pointing to the website you created on b1.Church. If there is an A file named "Parked" or "Park" delete it.  
+    After adding both records, the page should resemble this example, indicating that your site is now pointing to the website you created on b1.Church. If there is an A file named "Parked" or "Park" delete it.

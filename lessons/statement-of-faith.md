@@ -1,8 +1,10 @@
 ---
 layout: page
+app: lessons
 section: Lessons.church
 title: Statement of Faith
 ---
+
 **STATEMENT OF FAITH**
 
 Although we acknowledge that no man-made statement can encapsulate the full Biblical understanding of our faith. We submit this statement to make clear the core beliefs of Church Apps as an organization.
@@ -19,12 +21,12 @@ Although we acknowledge that no man-made statement can encapsulate the full Bibl
 
 **SALVATION:** Salvation can be found in Christ alone and is offered to all by grace through faith. A living faith is demonstrated through repentance, confession, baptism by immersion, and a life of obedience. (Rom 3:23; 5:12, Acts 2:38, Gal 3:26-29; Eph 2:4-10)
 
-**CHURCH:** The church is the body of Christ on earth, with Christ as the head. God’s church is comprised of a priesthood of all believers, serving as minister of the gospel according to the gifts which God has given them. Together the church is called to make disciples of all nations until Christ returns. (Matt 28:18-20; Eph 3:10; 4:11-13; Col 1:18; 1 Pet 2:9-10) 
+**CHURCH:** The church is the body of Christ on earth, with Christ as the head. God’s church is comprised of a priesthood of all believers, serving as minister of the gospel according to the gifts which God has given them. Together the church is called to make disciples of all nations until Christ returns. (Matt 28:18-20; Eph 3:10; 4:11-13; Col 1:18; 1 Pet 2:9-10)
 
 **RETURN OF CHRIST:** Christ will visibly return to restore creation and judge the world. There will be a bodily resurrection for the believers to eternal life with God in heaven and for the unbelievers to eternal judgment in hell. In heaven, sin will be no more and those in Christ will live in fellowship with God forever. (Acts 1:11; 2 Thess 1:5-12; 1 Thess 4:13-18; Rev 20:11-15)
 
 **Curriculum Guidelines**
 
-Lessons.church uses curriculum from a variety of different Christian sources. Every lesson we offer is vetted through our internal review for Biblical accuracy and doctrinal soundness. We understand that there are a variety of differing views within the Church, we chose to unite on what we have in common. Information about the authors of each curriculum can be found in the “About” section of the individual lessons. 
+Lessons.church uses curriculum from a variety of different Christian sources. Every lesson we offer is vetted through our internal review for Biblical accuracy and doctrinal soundness. We understand that there are a variety of differing views within the Church, we chose to unite on what we have in common. Information about the authors of each curriculum can be found in the “About” section of the individual lessons.
 
-We encourage our users to contact us concerning questions they have about a particular lesson or series. 
+We encourage our users to contact us concerning questions they have about a particular lesson or series.

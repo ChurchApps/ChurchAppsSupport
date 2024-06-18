@@ -1,5 +1,6 @@
 ---
 layout: page
+app: lessons
 section: Lessons.church
 title: Play order
 ---

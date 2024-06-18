@@ -1,5 +1,6 @@
 ---
 layout: page
+app: lessons
 ---
 
 # Open Lesson Playlist (OLP)

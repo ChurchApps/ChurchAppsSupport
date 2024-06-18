@@ -1,5 +1,6 @@
 ---
 layout: page
+app: lessons
 ---
 
 # Open Lesson Format (OLF)
