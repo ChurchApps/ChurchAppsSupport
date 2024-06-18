@@ -1,10 +1,5 @@
-<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
-     styles, `#sidebar-checkbox` for behavior. -->
-     <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" {% if page.layout == "home" %} checked{% endif %}>
 
-     <!-- Toggleable sidebar -->
-     <div class="sidebar" id="sidebar">
-    
+
        <nav class="sidebar-nav">
         {% assign pages = site.pages | where: "app", page.app %}
 
@@ -25,6 +20,4 @@
         {% endfor %}
 
        </nav>
-     
-     </div>
      
