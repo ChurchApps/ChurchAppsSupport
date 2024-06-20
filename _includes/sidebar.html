@@ -1,6 +1,15 @@
 
 
        <nav class="sidebar-nav">
+        
+        {% if page.url == "/" %}
+          <a class="nav-item" href="/b1/">B1</a>
+          <a class="nav-item" href="/chums/">ChuMS</a>
+          <a class="nav-item" href="/lessons/">Lessons.church</a>
+        {%else%}
+          <a class="nav-item" href="/">Home</a><br/>
+        {% endif %}
+
         {% assign pages = site.pages | where: "app", page.app %}
 
          {% assign all_sections = pages | sort:"section" | map: "section" | uniq %}
