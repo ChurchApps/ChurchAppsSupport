@@ -8,25 +8,26 @@
           <a class="nav-item" href="/lessons/">Lessons.church</a>
         {%else%}
           <a class="nav-item" href="/">Home</a><br/>
+          {% assign pages = site.pages | where: "app", page.app %}
+
+          {% assign all_sections = pages | sort:"section" | map: "section" | uniq %}
+          {% assign all_pages = pages | sort:"url" %}
+
+          {% for section in all_sections %}
+            {% if section != null %}
+              <h5>{{ section }}</h5>
+              {% for node in all_pages %}
+                {% if node.section == section and node.title != null %}
+                  {% if node.layout == "page" and node.title != "." %}
+                    <a class="nav-item{% if page.url == node.url %} current{% endif %}" href="{{ node.url | absolute_url }}">{{ node.title }}</a>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
         {% endif %}
 
-        {% assign pages = site.pages | where: "app", page.app %}
-
-         {% assign all_sections = pages | sort:"section" | map: "section" | uniq %}
-         {% assign all_pages = pages | sort:"url" %}
-
-        {% for section in all_sections %}
-          {% if section != null %}
-            <h5>{{ section }}</h5>
-            {% for node in all_pages %}
-              {% if node.section == section and node.title != null %}
-                {% if node.layout == "page" and node.title != "." %}
-                  <a class="nav-item{% if page.url == node.url %} current{% endif %}" href="{{ node.url | absolute_url }}">{{ node.title }}</a>
-                {% endif %}
-              {% endif %}
-            {% endfor %}
-          {% endif %}
-        {% endfor %}
+        
 
        </nav>
      
