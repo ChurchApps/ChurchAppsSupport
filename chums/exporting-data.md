@@ -1,8 +1,10 @@
 ---
 layout: page
-section: ChuMS
+app: chums
+section: Data
 title: Exporting Data From Chums
 ---
+
 **Exporting Data from Chums**
 
 <img width="1272" alt="Exporting Data 1" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/72c98fd6-67ee-4ddd-b42d-a9fab9e6c9e2">
@@ -43,15 +45,15 @@ This will take you to "Step 4-Run" and show progress with green check marks
 
 <img width="1272" alt="Exporting Data 10" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/2bb3d04b-3665-4786-8e5c-b0fb96f3f3bd">
 
- When this step is complete the zipped folder will download to your download file. 
+When this step is complete the zipped folder will download to your download file.
 
 <img width="1262" alt="Exporting Data 11" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/be3d80ff-e591-4205-bcff-d5796d167853">
 
-Find the "Chums Download" file in your downloads. 
+Find the "Chums Download" file in your downloads.
 
 <img width="1270" alt="Exporting Data 12" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/53035f6e-e907-4466-81d0-efd5dc652eff">
 
-If the file is not unzipped, unzip it and find the "people.csv" file. 
+If the file is not unzipped, unzip it and find the "people.csv" file.
 
 <img width="1198" alt="Exporting Data 13" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/8d4576fd-65a2-4a67-b91b-bb1f68e36a7d">
 

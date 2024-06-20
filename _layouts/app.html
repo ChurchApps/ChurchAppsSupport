@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+{% assign url = "/" %}
+{% assign pages = site.pages | where: "app", page.app %}
+
+{% assign all_sections = pages | sort:"section" | map: "section" | uniq %}
+{% assign all_pages = pages | sort:"url" %}
+
+{% for section in all_sections %}
+  {% if section != null %}
+    {% for node in all_pages %}
+      {% if node.section == section and node.title != null %}
+        {% if node.layout == "page" and node.title != "." and url == "/" %}
+          {% assign url = node.url %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+
+
+<div class="container"  id="pageContent">
+  <meta http-equiv="refresh" content="0;url={{ url }}"/>
+  {{content | markdownify}}
+  <div style="clear:both"></div>
+</div>

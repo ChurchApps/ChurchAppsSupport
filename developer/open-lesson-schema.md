@@ -1,5 +1,6 @@
 ---
 layout: page
+app: lessons
 section: Developer
 title: Open Lesson Schema
 ---

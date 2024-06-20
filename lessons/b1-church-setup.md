@@ -1,5 +1,6 @@
 ---
 layout: page
+app: lessons
 section: Lessons.church
 title: Connect to B1
 ---
@@ -25,12 +26,11 @@ title: Connect to B1
 
 7. <img width="1507" alt="Screenshot 2024-05-27 at 9 05 17 AM" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/65249159/92a143f9-beb8-4111-883a-6ef5fd363d98">
    Click the + icon to add a new ministry
-   
 8. <img width="1507" alt="Screenshot 2024-05-27 at 9 07 28 AM" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/65249159/a1b152b7-3d07-46f9-8fbe-0c8778051e5d">
-    Choose whatever name you would like and click Add
+   Choose whatever name you would like and click Add
 
- 9.  <img width="1507" alt="Screenshot 2024-05-27 at 9 07 58 AM" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/65249159/1c372be8-e289-4dab-b6fb-0e79e50ceeae">
-    Now click on Teams
+9. <img width="1507" alt="Screenshot 2024-05-27 at 9 07 58 AM" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/65249159/1c372be8-e289-4dab-b6fb-0e79e50ceeae">
+   Now click on Teams
 
 10. <img width="1507" alt="Screenshot 2024-05-27 at 9 08 40 AM" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/65249159/00f52b3f-716e-45ea-9a3d-a2490b809996">
      Again Click the + icon to make a new team

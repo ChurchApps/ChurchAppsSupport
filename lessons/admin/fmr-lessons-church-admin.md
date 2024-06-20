@@ -1,5 +1,6 @@
 ---
 layout: page
+app: lessons
 ---
 
 ## "For Ministry Resources" guide to add lessons on lessons.church.

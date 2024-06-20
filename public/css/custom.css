@@ -1,3 +1,11 @@
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #0A0A19;
+  color: #FFFFFF;
+}
+
+
 .accordion {
   background-color: #202020;
   color: #FFF;
@@ -111,3 +119,9 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+
+.sidebar-nav { padding:20px;}
+.sidebar-nav h5 { color:#FFF; font-size:18px; }
+.sidebar-nav a { color:#CCC; display:block; padding:5px; padding-left: 15px; text-decoration: none;; }
+.sidebar-nav a:hover { color:#FFF; }

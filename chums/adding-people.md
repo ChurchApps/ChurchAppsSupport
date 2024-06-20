@@ -1,6 +1,7 @@
 ---
 layout: page
-section: ChuMS
+app: chums
+section: People
 title: Adding People
 ---
 
@@ -25,4 +26,4 @@ title: Adding People
    You can change which fields show up on the view screen by clicking the icon in the top right corner and choosing which fields you want.
 
 7. ![Delete Function](https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/553769c7-dd8f-45dc-ac6f-43591820f8c6)
-   You can add a quick delete button by clicking the icon in the top right corner and choosing "Delete Option". 
+   You can add a quick delete button by clicking the icon in the top right corner and choosing "Delete Option".

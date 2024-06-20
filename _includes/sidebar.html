@@ -1,34 +1,32 @@
-<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
-     styles, `#sidebar-checkbox` for behavior. -->
-     <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" {% if page.layout == "home" %} checked{% endif %}>
 
-     <!-- Toggleable sidebar -->
-     <div class="sidebar" id="sidebar">
-       <div class="sidebar-item">
-         <p>{{ site.description }}</p>
-       </div>
-     
+
        <nav class="sidebar-nav">
+        
+        {% if page.url == "/" %}
+          <a class="nav-item" href="/b1/">B1</a>
+          <a class="nav-item" href="/chums/">ChuMS</a>
+          <a class="nav-item" href="/lessons/">Lessons.church</a>
+        {%else%}
+          <a class="nav-item" href="/">Home</a><br/>
+        {% endif %}
 
-         {% assign all_sections = site.pages | sort:"section" | map: "section" | uniq %}
-         {% assign all_pages = site.pages | sort:"url" %}
+        {% assign pages = site.pages | where: "app", page.app %}
+
+         {% assign all_sections = pages | sort:"section" | map: "section" | uniq %}
+         {% assign all_pages = pages | sort:"url" %}
 
         {% for section in all_sections %}
           {% if section != null %}
-            <button class="accordion{% if page.section == section %} active{% endif %}">{{ section }}</button>
-            <div class="panel"{% if page.section == section %} style="display:block"{% endif %}>
-              {% for node in all_pages %}
-                {% if node.section == section and node.title != null %}
-                  {% if node.layout == "page" and node.title != "." %}
-                    <a class="nav-item{% if page.url == node.url %} current{% endif %}" href="{{ node.url | absolute_url }}">{{ node.title }}</a>
-                  {% endif %}
+            <h5>{{ section }}</h5>
+            {% for node in all_pages %}
+              {% if node.section == section and node.title != null %}
+                {% if node.layout == "page" and node.title != "." %}
+                  <a class="nav-item{% if page.url == node.url %} current{% endif %}" href="{{ node.url | absolute_url }}">{{ node.title }}</a>
                 {% endif %}
-              {% endfor %}
-            </div>
+              {% endif %}
+            {% endfor %}
           {% endif %}
         {% endfor %}
 
        </nav>
-     
-     </div>
      

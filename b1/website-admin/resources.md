@@ -1,5 +1,6 @@
 ---
 layout: page
+app: b1
 section: B1 Website Admin
 title: Resources
 ---
@@ -8,7 +9,7 @@ title: Resources
 
 <img width="1386" alt="Resources 1" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/140a604f-9fad-4905-8e65-b2669aad9fad">
 
-In the B1 app navigate to the web design page. In the bottom right corner choose "Manage Files" under "Additonal Resources". 
+In the B1 app navigate to the web design page. In the bottom right corner choose "Manage Files" under "Additonal Resources".
 
 <img width="1394" alt="Resources 2" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/b5bfac6e-5116-43b2-a238-8588cdcdb33d">
 
@@ -52,4 +53,4 @@ Choose a height (1000 is good for a regular sized PDF)
 
 <img width="1400" alt="Resources 12" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/868123e9-5230-404e-ac22-b1d370309827">
 
-Your PDF is now embedded in your web page. 
+Your PDF is now embedded in your web page.

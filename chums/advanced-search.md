@@ -1,6 +1,7 @@
 ---
 layout: page
-section: ChuMS
+app: chums
+section: People
 title: Advanced Search
 ---
 

@@ -1,5 +1,6 @@
 ---
 layout: page
+app: b1
 section: B1 Mobile
 title: Set Up Mobile App
 ---

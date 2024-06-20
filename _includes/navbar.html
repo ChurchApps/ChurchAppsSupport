@@ -1,8 +1,12 @@
-<nav class="navbar navbar-light bg-white shadow">
+{% assign logo = page.app %}
+{% if logo == null %}
+{% assign logo = "logo" %}
+{% endif %}
+<nav class="navbar">
     <div class="container">
         <a href="{{'/' | relative_url }}" class="navbar-brand d-flex align-items-center">
-            <img src="{{'assets/logo.png' | relative_url}}" alt="" class="img-fluid">
-            <span class="fw-bold text-muted"> WIKI</span>
+            <img src="{{ 'assets/' | append: logo | append: '.png' | relative_url }}" alt="" class="img-fluid" style="height:50px;">
+            <span class="fw-bold" style="color:#CCC"> WIKI</span>
         </a>
     </div>
 </nav>
