@@ -1,0 +1,49 @@
+<speak>
+  The people tab of Chums helps you track key information on your members and visitors
+  <break time="1s"/>
+  By default you get a list of the most recent additions, but you can use the search to find specific people
+  <break time="1s"/>
+  You can also use the advance search functionality to find people based on specific criteria
+  <break time="1s"/>
+  For example, if we want to find people we may want to invite to join the Men's Ministry
+  <break time="500ms"/>
+  We can search for men
+  <break time="1s"/>
+  Who are 18 or older
+  <break time="1s"/>
+  And are not already in the Men's Ministry
+  <break time="2s"/>
+  We can also customize the results to include additional information such as age and marital status
+  <break time="1s"/>
+  If you have added custom fields, you can also include those values
+  <break time="500ms"/>
+  We'll cover those in another video.
+  <break time="2s"/>
+  Results can be sorted by any column
+  <break time="500ms"/>
+  and all lists can be exported to a CSV file to use with Excel or other spreadsheet programs
+  <break time="2s"/>
+  Click on a person's name to view their details
+  <break time="1s"/>
+  You will see an overview of their information with the option to edit in the corner
+  <break time="2s"/>
+  If you have added custom fields, you can view and edit those as well
+  <break time="1s"/>
+  Below the member details, you will see a list of existing notes with the option to add more
+  <break time="1s"/>
+  These notes are only visible to staff members who can view the person's details
+  <break time="1s"/>
+  Depending on your access, you may see additional tabs to view their attendance
+  <break time="1s"/>
+  As well as donations
+  <break time="1s"/>
+  On the right you will see members of Robert's household
+  <break time="500ms"/>
+  With the option to edit
+  <break time="1s"/>
+  We'll set Robert's role as head of the household
+  <break time="1s"/>
+  And add his daughter
+  <break time="2s"/>
+  Below households you can see the groups Robert is currently a member of
+</speak>
