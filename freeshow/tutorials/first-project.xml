@@ -1,0 +1,59 @@
+<speak>
+  Welcome to FreeShow!  This guide will walk you through creating your first presentation
+  <break time="1s"/>
+  To get started, simply open FreeShow and click Get Started
+  <break time="1s"/>
+  In the Projects pane, we will click the New Project button and give it a name of "Sunday Service"
+  <break time="1s"/>
+  Click on your project and we'll add a new Section
+  <break time="1s"/>
+  Sections help you keep your project organized
+  <break time="1s"/>
+  We'll call this section "Worship"
+  <break time="1s"/>
+  Let's add some worship song lyrics
+  <break time="1s"/>
+  Each song will be a "Show" within the project
+  <break time="1s"/>
+  Click on the 'Shows' tab at the bottom and then "New Show"
+  <break time="1s"/>
+  Type in the name of the song and click search
+  <break time="1s"/>
+  Select the song from the search results and lyrics will be loaded automatically
+  <break time="1s"/>
+  You can then select additional option such as the category for this show and how many lines of text per slide
+  <break time="1s"/>
+  Use templates to change the look of your presentation
+  <break time="1s"/>
+  We'll add a few more songs
+  <break time="1s"/>
+  Let's add another section for the sermon
+  <break time="1s"/>
+  We'll add a new show for the sermon notes which can be pasted in manually
+  <break time="1s"/>
+  For offering time lets add a new show category of Other
+  <break time="1s"/>
+  Then add a new empty Show called "Offering Time"
+  <break time="1s"/>
+  Let's add a new slide to it
+  <break time="1s"/>
+  Then we can add a background image by going to the Media tab
+  <break time="1s"/>
+  We could select an image on our computer or use the Online tab to search for one
+  <break time="1s"/>
+  Simply drag the image to the edit box
+  <break time="1s"/>
+  Change the fit from Contain to cover
+  <break time="1s"/>
+  Now we can add a label by going to Items and selecting the Textbox item
+  <break time="1s"/>
+  We'll type "Offering Time" <break time="500ms"/> but that's hard to read
+  <break time="1s"/>
+  Lets change the text color to black
+  <break time="1s"/>
+  Then auto-size the text
+  <break time="1s"/>
+  And resize and position the textbox to our liking
+  <break time="1s"/>
+  Go back to the Show tab and you can preview your entire project by clicking the arrow keys
+</speak>

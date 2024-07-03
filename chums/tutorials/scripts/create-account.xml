@@ -1,0 +1,23 @@
+<speak>
+  To create an account for any ChurchApps application, click the login link
+  <break time="1s"/>
+  Then click "Register" on the form
+  <break time="1s"/>
+  Fill in your name and email address and click "Register"
+  <break time="1s"/>
+  You will receive an email with a link to set your password
+  <break time="1s"/>
+  Click that link, select a password and click "Sign In"
+  <break time="1s"/>
+  You will be prompted to search for your church
+  <break time="1s"/>
+  If it already exists, simply click the church name
+  <break time="1s"/>
+  Otherwise click "Register a New Church" and confirm
+  <break time="1s"/>
+  Enter the church information and click "Save"
+  <break time="1s"/>
+  You are now logged in and can begin using the application
+  <break time="1s"/>
+  If you have logged into Chums, you can grant others access by clicking the "Permissions" link on the left.
+</speak>
