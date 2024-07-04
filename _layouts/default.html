@@ -30,14 +30,33 @@
       <div class="col-lg-2">
         {% include sidebar.html %}
       </div>
-      <div class="col-lg-10" style="border-left:1px solid #333">
+      <div class="col-lg-8" style="border-left:1px solid #333">
+        <div class="sectionName">{{page.section}}</div>
         {{content}}
       </div>
-      <!--
+      
       <div class="col-lg-2">
-        On this page:
+        
+        {% assign lines = page.content | newline_to_br | split: "<br />" %}
+        {% assign filtered_lines = '' | split: '' %}
+        {% for line in lines %}
+          {% if line contains '## ' %}
+            {% assign filtered_lines = filtered_lines | push: line %}
+          {% endif %}
+        {% endfor %}
+
+        {% if filtered_lines.size > 1 %}
+          <h4>On this page:</h4>
+          <ul id="onThisPage">
+            {% for line in filtered_lines %}
+              {% assign h2_text = line | remove: "#### " | remove: "### " | remove: "## " %}
+              <li><a href="#{{ h2_text | slugify }}">{{ h2_text }}</a></li>
+            {% endfor %}
+          </ul>  
+        {% endif %}
+        
       </div>
-      -->
+      
     </div>
 
     

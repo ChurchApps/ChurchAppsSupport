@@ -2,8 +2,13 @@ body {
   font-family: Roboto, Arial, Helvetica, sans-serif;
   margin: 0;
   background-color: #0A0A19;
-  color: #FFFFFF;
+  color: #CCC;
 }
+
+h1, h2, h3, h4 { color:#FFF; }
+h2 { font-size: 1.5rem; margin-top:40px; }
+h3 { font-size: 1.25rem; margin-top:30px; }
+h4 { font-size: 1.1rem; margin-top:20px; }
 
 
 .accordion {
@@ -120,6 +125,16 @@ body {
   cursor: pointer;
 }
 
+#onThisPage { padding-left:0px; margin-top:20px; }
+#onThisPage li { margin-top: 10px; list-style-type: none; padding-left: 0px; }
+#onThisPage li a { color: #CCC; text-decoration: none; }
+#onThisPage li a:hover { color: #FFF; }
+
+.sectionName {
+  color:#24b9ff;
+  padding-left:13px;
+  margin-bottom:-25px;
+}
 
 .sidebar-nav { padding:20px;}
 .sidebar-nav h5 { color:#FFF; font-size:18px; }
