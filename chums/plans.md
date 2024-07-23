@@ -8,7 +8,7 @@ title: Plans Setup
 # How to set up Plans in Chums
 
 1. ![Plans 1](https://github.com/user-attachments/assets/cbb0c6ed-bfaa-4b7f-872d-433257da9521)
-  Click the notebook icon to set up plans.
+  Click the clipboard icon to set up plans. Plans is designed to be set up by leaders of specific ministries. Only those leaders can edit their plan. In other words, if you are not the leader of a specific ministry you will see the ministry but you will not be able to click on it to edit volunteers.
 
 2. ![Plans 13](https://github.com/user-attachments/assets/dab30ff5-03f3-40f5-925b-72dbcc51f62f)
   Add your ministries. You can add as many ministries as you like.
