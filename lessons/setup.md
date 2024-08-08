@@ -36,5 +36,6 @@ title: Setup Lessons.church
 10. ![Screen Shot 2022-02-23 at 2 08 31 PM](https://user-images.githubusercontent.com/65249159/155401302-bc6e4c3c-d45e-4d19-b5e7-a3a6cc348599.png)
     Set up as many classrooms and scheduled times as you want to.
 
+
 11. Watch this video on how to Set up the app to play the lessons on your TV every Sunday.
     [![Connect Lessons.Church to your tv and phone app](https://img.youtube.com/vi/-fs2E4kHo-A/0.jpg)](https://vimeo.com/969317486/6e14e821ab)
