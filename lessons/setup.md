@@ -37,4 +37,4 @@ title: Setup Lessons.church
     Set up as many classrooms and scheduled times as you want to.
 
 11. Watch this video on how to Set up the app to play the lessons on your TV every Sunday.
-    [![Connect Lessons.Church to Sign Presenter](https://img.youtube.com/vi/-fs2E4kHo-A/0.jpg)](https://www.youtube.com/watch?v=-fs2E4kHo-A)
+    [![Connect Lessons.Church to your tv and phone app](https://img.youtube.com/vi/-fs2E4kHo-A/0.jpg)](https://vimeo.com/969317486/6e14e821ab)
