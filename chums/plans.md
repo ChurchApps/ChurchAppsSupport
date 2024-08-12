@@ -38,7 +38,7 @@ title: Plans Setup
 
 10. ![Plans 3](https://github.com/user-attachments/assets/263e3629-7efe-4cae-9fbb-15747183cccd)
   Give the plan a name or just leave the date for the name.
-
+  
 11. ![Plans 4](https://github.com/user-attachments/assets/428807a9-8144-4cdf-bbcb-a303b3b113a7)
   Click on the plan name.
 
@@ -60,7 +60,16 @@ title: Plans Setup
 17. ![Plans 10](https://github.com/user-attachments/assets/d9313e60-1d3c-4949-bccd-49bd4187ca43)
   Choose from people in your volunteer list.
 
-18. ![Plans 11](https://github.com/user-attachments/assets/51b5137e-051b-4467-8e55-dbcc3f56c7db)
+18. <img width="1115" alt="Plans Times 1" src="https://github.com/user-attachments/assets/c70d0de2-f6b2-4519-98fb-868936ba705f">
+  Now click the "+" to add times to your Plan.
+
+19. <img width="1114" alt="Plans Times 2" src="https://github.com/user-attachments/assets/d46c3d07-0a0b-4d6e-9979-22831aa07adc">
+  Choose a "Display Name", "Start Time", "End Time", and "Needed Teams". 
+
+20. <img width="1115" alt="Plans Times 3" src="https://github.com/user-attachments/assets/392b5e54-bccd-4d03-8780-5b6ef391abb4">
+  Be sure to "Save".
+
+21. ![Plans 11](https://github.com/user-attachments/assets/51b5137e-051b-4467-8e55-dbcc3f56c7db)
   Write a note and notify your volunteers.
 
 
