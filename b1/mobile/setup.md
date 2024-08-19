@@ -25,20 +25,20 @@ title: Set Up Mobile App
 6. ![Mobile App 4](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/4ec31aa2-1e48-47c4-8922-5ccc78f33c77)
    Choose the type of tab.
 
-7. ![Mobile App 5](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/af2bdf8c-f911-4023-aa03-a54efd9062ac)
-   In this example we will choose Bible.
+7. ![Mobil App 5](https://github.com/user-attachments/assets/602cd98e-31ba-4f2e-a7a0-307d1bad8463)
+   There are several default tabs that will not show up on the list but will be on the individuals mobile app. This list includes:    1)Website (this will point to the b1 website) if you have a different website you will want to link it with the External           Url. 2)My Groups (only be visible to people who are members of groups) 3)Member Directory (only visible to members) 4)Lessons      (only visible to teachers who are listed in teams) 5)Chums (only visible to Administrators).
+   In this example we will choose Bible. 
 
-8. ![Mobile App 6](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/0706fecd-0d01-4c7a-96ae-1a1faf47c16f)
+9. ![Mobile App 6](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/0706fecd-0d01-4c7a-96ae-1a1faf47c16f)
    Type whatever text you want to show up on your tab.
 
-9. ![Mobile App 7](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/7fccc348-3100-4ba5-aec0-3880433dee85)
-   Click the Change Image icon to add a different image.
+10. ![Mobil App 7](https://github.com/user-attachments/assets/ff2acca1-d2ea-4b2a-884e-d062cf21b492)
+    Click the Change Image icon to add a different image.
 
-10. ![Mobile App 8](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/b561aeba-004d-42ec-b0ba-e0a27f33e0e4)
+11. ![Mobil App 8](https://github.com/user-attachments/assets/b196af04-fe37-436d-b447-0ba00c343695)
     Choose from your Gallery; Upload an image from your computer; or choose a Stock Photo.
 
-11. ![Mobile App 9](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/82a642c2-0e74-4f98-9055-fab80de780c3)
+12. ![Mobile App 9](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/82a642c2-0e74-4f98-9055-fab80de780c3)
     After you have added the tabs you can move them up or down using the arrows.
 
-12. ![Mobile App 10](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/f36ab716-8c1f-4195-8c58-eeb7f001ce71)
-    This is how your mobile app will look on your phone.
+
