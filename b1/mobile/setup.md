@@ -39,6 +39,6 @@ title: Set Up Mobile App
     Choose from your Gallery; Upload an image from your computer; or choose a Stock Photo.
 
 12. ![Mobile App 9](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/82a642c2-0e74-4f98-9055-fab80de780c3)
-    After you have added the tabs you can move them up or down using the arrows.
+    After you have added the tabs you can move them up or down using the arrows. To access the app go to Google Play (Android) or the App Store (Apple) and search for B1 Church.  Members can choose your church and log in to the app. 
 
 
