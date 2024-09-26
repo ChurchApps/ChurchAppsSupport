@@ -71,26 +71,26 @@ title: Create Your Website
 21. <img width="1091" alt="Global 20" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/c7f1a2a6-cace-4b35-b7a1-8700ab2cc7c1">
     Your logos are now ready. You can change your logo at any time.
 
-22. <img width="1140" alt="B1 Web Design 22" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/419e8767-8bd1-434e-9a6e-d43c7772a92a">
-    Now you are ready to start adding pages. Click the + sign in the Pages box
+22. <img width="1334" alt="webdesign 201" src="https://github.com/user-attachments/assets/af395ca2-45a5-4840-91c2-87f85bed43de">
+   Now you are ready to start adding pages. Click the + sign next to Main Navigation or Not Linked. Pages in Main Navigation will be published when you publish your website. Pages in Not Linked will not be published but can be moved to Main Navigation when they are completed by dragging and dropping.  
 
-23. <img width="1325" alt="B1 Web Design 23" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/4239c940-4b04-45ea-bb9c-7404e89222ac">
-    Give your first page the title "Home" Put a forward slash (/) in the Url Path box and click the "check" button. Be sure to choose a layout, typically "header & footer" (you will not be able to edit without a layout) and click "save".
+23. <img width="1330" alt="webdesign 301" src="https://github.com/user-attachments/assets/bd5750c3-b9da-464a-9455-52101c7f85d6">
+   Choose what type of page you will be creating. Your first page will be the home page.
+    
+24. <img width="1330" alt="webdesign 401" src="https://github.com/user-attachments/assets/d770aa23-2c1e-4737-a4b2-c33e84700c94">
+   Give the page a title and a link text.
 
-24. <img width="1138" alt="B1 Web Design 24" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/307c589d-3fe3-4271-8fa3-8bb27457edf3">
-    After you save, click the word "Home" to begin designing your Home page.
+25. <img width="1333" alt="webdesign 501" src="https://github.com/user-attachments/assets/2c4822d2-f4f2-46e8-a895-a7b91c42a250">
+   Click "Edit Content" to add content to your page using the web design elements. 
+   
+26. <img width="1333" alt="webdesign 601" src="https://github.com/user-attachments/assets/ad7008be-8747-4202-98a3-5204a70b92ee">
+   Click the + in the top right corner to begin adding elements to your page.
 
-25. <img width="1142" alt="B1 Web Design 25" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/9a40c492-e54f-41b6-a3e8-c3e2ea9328cc">
-    To begin adding content to your page, click the "+" in the top right corner.
+27. <img width="1337" alt="webdesign 701" src="https://github.com/user-attachments/assets/5804b3d0-d6b2-4c5a-9dd8-36992258a954">
+   Drag and drop the section icon onto the page. Every design begins with a section. Once the section is in place you can add the elements.
 
-26. <img width="1140" alt="B1 Web Design 26" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/5beb52c0-5aa9-44bc-8df9-850621621aa3">
-    Choose "Simple Elements"
-
-27. <img width="1140" alt="B1 Web Design 27" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/3d4dcfc9-72fd-45c8-8d0e-0000001b9254">
-    Drag and drop the section icon onto the page. Every design begins with a section. Once the section is in place you can add the elements.
-
-28. <img width="1143" alt="B1 Web Design 28" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/846816b3-fd66-4360-b029-abb6ee3bf6da">
-    Click "Manually Select Colors" to design your section.
+28. <img width="1156" alt="webdesign 702" src="https://github.com/user-attachments/assets/a3a8acdd-14d7-4535-afa1-130ba5ad8e46">
+   Click "Custom" to design your section or leave it on "Suggested" for default values.
 
 29. <img width="1140" alt="B1 Web Design 29" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/44c4b4b9-ecc8-450d-a2b1-e8007cbd0238">
     You can choose your background color, image or YouTube video.
@@ -114,44 +114,32 @@ title: Create Your Website
      <img width="1290" alt="B1 Web Design 36" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/b39997d2-3b04-4a88-9af5-de912b2953d4">
     You can toggle between desktop and mobile view by clicking the computer icon in the top right corner.
 
-36. ![B1 Web Design 12](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/c5f273b8-a783-4b12-9b55-f23f898322f4)
-    ![B1 Web Design 13](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/020ce94a-cc6f-4731-b9ea-538ab50556ee)
-    ![B1 Web Design 14](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/b4d87ba7-b226-4ea1-84f0-3b9362a477ab)
-    ![B1 Web Design 15](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/ecf6286e-fc4f-4afa-8c11-8f18d551b8c1)
-    ![B1 Web Design 16](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/07d5f259-194b-42bd-97b8-1498dc6522d8)
-    If you are using an image you can upload it from your computer or use stock images provided by B1.Church
+36. ![webdesign 703](https://github.com/user-attachments/assets/3504a480-be2c-4e35-9b5f-6fb301f713c3)
 
-37. <img width="1167" alt="Screen Shot 2023-07-28 at 3 05 37 PM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/d61172c6-0846-460b-8455-a2ae63a3accd">
-    <img width="1177" alt="Screen Shot 2023-07-28 at 3 06 44 PM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/931cf36a-c64a-4396-8e0c-783e3deb73dd">
-    <img width="1171" alt="Screen Shot 2023-07-28 at 3 08 31 PM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/8f8d7846-158f-446f-ad45-80da95979532">
-    <img width="1171" alt="Screen Shot 2023-07-28 at 3 09 51 PM" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/8a8f1b9b-4750-4a2d-bd92-cc1dee1ddfa9">
-    You are now ready to add an element to the page. There are several different elements available. Just drag and drop the element you want to use into the section and customize it.
+![webdesign 704](https://github.com/user-attachments/assets/06c2d681-0be5-48b1-8ba4-48e26a7c28b4)
 
-38. ![B1 Web Design 18](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/d05ced11-db8b-4110-b7e5-b5d1dd885082)
-    You can also design reusable blocks for header and footers. Click the + on the Reusable Blocks block
+![webdesign 705](https://github.com/user-attachments/assets/8bfc6ed4-49f9-4cfb-9b4b-e6a483456c7a)
+   If you are using an image you can upload it from your computer or use stock images provided by B1.Church. You can also choose the background opacity or your image.
 
-39. ![B1 Web Design 19](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/24d92e35-b8c4-4c7b-bbac-2652a96dc1e1)
-    ![B1 Web Design 20](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/482782b9-ccd9-48a1-a9b0-dc1b1035660d)
-    Give the block a name and a type
+37. <img width="1156" alt="webdesign 706" src="https://github.com/user-attachments/assets/fcbe678d-57c2-4b32-9a04-ffd5fdba5f7a">
+<img width="1165" alt="webdesign 707" src="https://github.com/user-attachments/assets/24de6787-e303-4595-9fdc-93f3078c72cd">
+   You are now ready to add an element to the page. There are several different elements available. Just drag and drop the element you want to use into the section and customize it.
 
-40. ![B1 Web Design 21](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/a5419e94-3f65-42e6-8730-cf01e2b075cb)
-    Edit your block just like pages
+38. <img width="1152" alt="webdesign 708" src="https://github.com/user-attachments/assets/bd035ca9-99c0-454a-a0ab-3eb6bca991c8">
+   You can also design reusable blocks for header and footers. Click the + on Reusable Blocks 
 
-41. ![B1 Web Design 22](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/4341cf5d-da3c-4e96-89da-e94e4ee9bff1)
-    ![B1 Web Design 23](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/ec223b25-2816-45f6-9863-d29b64282c60)
-    ![B1 Web Design 24](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/fdf421f7-632c-4aa8-9799-4d260c810430)
-    If you need to edit something after you have already put it on the page just click on the edit pencil and make your changes.
+39. <img width="1108" alt="webdesign 709" src="https://github.com/user-attachments/assets/f44f6a98-6a01-4066-9435-c8407adbd63b">
+   Give the block a name and a type
 
-42. ![B1 Web Design 25](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/1b8f3866-e92d-45c3-979c-b2db39e29502)
-    To put your pages in order just add them to the navigation links
+40. <img width="1116" alt="webdesign 710" src="https://github.com/user-attachments/assets/9229cc14-adcc-4ba0-a578-5ba24cadfc41">
+<img width="1101" alt="webdesign 711" src="https://github.com/user-attachments/assets/59875ffa-47bd-4828-b19e-b42e09c338a4">
+   Edit your block just like pages
 
-43. ![B1 Web Design 26](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/60c5065a-ec92-4d6f-8072-b6a6c245d437)
-    Remember the home link only needs the / as a URL
+41.<img width="1114" alt="webdesign 712" src="https://github.com/user-attachments/assets/37025ca7-7947-4978-921d-ed855205295a">
+<img width="1105" alt="webdesign 713" src="https://github.com/user-attachments/assets/f3aa438e-bfee-498b-93d0-c49886a53842">
+   If you need to edit something after you have already put it on the page just double click on the element and make your changes.
 
-44. ![B1 Web Design 27](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/bfb3099b-5975-43a6-944e-426856f35311)
-    Add each page to the navigation links
+42. <img width="1227" alt="webdesign 714" src="https://github.com/user-attachments/assets/f5387be5-86ff-4953-b889-7132e14c2fad">
+<img width="1224" alt="webdesign 715" src="https://github.com/user-attachments/assets/3efc2bb3-9069-4155-b55d-f88c4ee14d3e">
+   Before you publish you will need to edit your Home page URL. Click on "Page Settings". Delete "/Home" and replace with just the forward slash "/"
 
-45. ![B1 Web Design 28](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/04f55761-fe3a-4ce2-b3f5-a9b716e7ccd0)
-    ![B1 Web Design 29](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/9e1efc1d-d3f2-4bc3-aac0-547b1e790a9a)
-    ![B1 Web Design 30](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/b5c3c8a9-eb5c-4d49-9880-657b156c0d8a)
-    If you want to look at the finished project or see how it looks as you go just click on the home edit pencil and open the home link. You will be able to see how your pages will look when they are online.
