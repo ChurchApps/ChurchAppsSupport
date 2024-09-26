@@ -114,11 +114,9 @@ title: Create Your Website
      <img width="1290" alt="B1 Web Design 36" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/b39997d2-3b04-4a88-9af5-de912b2953d4">
     You can toggle between desktop and mobile view by clicking the computer icon in the top right corner.
 
-36. ![webdesign 703](https://github.com/user-attachments/assets/3504a480-be2c-4e35-9b5f-6fb301f713c3)
-
-![webdesign 704](https://github.com/user-attachments/assets/06c2d681-0be5-48b1-8ba4-48e26a7c28b4)
-
-![webdesign 705](https://github.com/user-attachments/assets/8bfc6ed4-49f9-4cfb-9b4b-e6a483456c7a)
+36. ![webdesign 703](https://github.com/user-attachments/assets/6accb3fc-ded7-42d7-b04e-1b8435997cb5)
+   ![webdesign 704](https://github.com/user-attachments/assets/06c2d681-0be5-48b1-8ba4-48e26a7c28b4)
+   ![webdesign 705](https://github.com/user-attachments/assets/5e8a584e-fbf1-469b-be02-d10d52b0ff87)
    If you are using an image you can upload it from your computer or use stock images provided by B1.Church. You can also choose the background opacity or your image.
 
 37. <img width="1156" alt="webdesign 706" src="https://github.com/user-attachments/assets/fcbe678d-57c2-4b32-9a04-ffd5fdba5f7a">
