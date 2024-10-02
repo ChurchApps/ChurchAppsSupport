@@ -1,0 +1,32 @@
+<speak>
+  <mark name="1" />
+  To register an account, click the register button in the top right corner.
+  <break time="1s"/>
+  <mark name="2" />
+  Enter your name and your email address and click "Register"
+  <break time="1s"/>
+  <mark name="3" />
+  You will receive an email with the next steps.
+  <break time="1s"/>
+  Click the link in the email and you'll be prompted to set a password.
+  <break time="1s"/>
+  <mark name="4" />
+  Enter your password, and verify it, then click the "Sign In" button.
+  <break time="1s"/>
+  <mark name="5" />
+  Next you'll be prompted to search for your church.
+  <break time="1s"/>
+  Search for your church to see if it already exists.
+  <break time="1s"/>
+  <mark name="6" />
+  If not, come to the bottom and click the "Register a New Church" link.
+  <break time="1s"/>
+  <mark name="7" />
+  And click "OK".
+  <mark name="8" />
+  <break time="1s"/>
+  Enter your church information and click "Save".
+  <mark name="9" />
+  <break time="2s"/>
+  <mark name="end" />
+</speak>

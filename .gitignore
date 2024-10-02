@@ -1,2 +1,3 @@
 _site
 .jekyll-cache
+/admin/node_modules
