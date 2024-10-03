@@ -1,0 +1,20 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    On the right side of the page, click the plus sign next to Classrooms.
+    <break time="1s"/>
+    <mark name="2" />
+    Enter the name of your classroom.
+    <break time="1s"/>
+    <mark name="3" />
+    If you wish to share the upcoming lesson with your teachers via the B1 app, select a volunteer team.  These are configured in the planning section of Chums.
+    <break time="1s"/>
+    <mark name="4" />
+    If you wish to share the current lesson with your students or their parents via the B1 app, select a parent/student group.  These are configured in the groups section of Chums.
+    <break time="1s"/>
+    <mark name="5" />
+    Click Save
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
