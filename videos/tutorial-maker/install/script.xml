@@ -1,0 +1,23 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    If you haven't already, download and install NodeJS from nodejs.org.
+    <break time="1s"/>
+    <mark name="2" />
+    Download F F mpeg for your operating system from f f mpeg dot org.
+    <break time="1s"/>
+    <mark name="3" />
+    Unzip the F F mpeg bin folder to a folder of your choice on your hard drive.
+    <break time="1s"/>
+    <mark name="4" />
+    Add that folder to your system's PATH.  On windows this is done from Environment Variables.
+    <break time="1s"/>
+    <mark name="5" />
+    Clone the tutorial-maker repository from github.
+    <break time="1s"/>
+    <mark name="6" />
+    Run "npm install -g" to install the tutorial-maker globally.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>

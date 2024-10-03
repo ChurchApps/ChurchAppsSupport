@@ -1,0 +1,29 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    Create a new folder and add a script.xml file to it.
+    <break time="1s"/>
+    <mark name="2" />
+    Add any screenshots you wish to use in the tutorial to the same folder.  Name the first one 1.png and continue that pattern.
+    <break time="1s"/>
+    <mark name="3" />
+    In script.xml, add a tutorial tag at the top level, followed by a speak tag.
+    <break time="1s"/>
+    <mark name="4" />
+    Add a mark tag with a name attribute of "1" to load the first screenshot.
+    <break time="1s"/>
+    <mark name="5" />
+    Add the text you would like to be spoken for the first step.
+    <break time="1s"/>
+    <mark name="6" />
+    Add a break tag with a time attribute of "1s" to pause for a second.
+    <break time="1s"/>
+    <mark name="7" />
+    Continue to add mark, speak, and break tags for each step in the tutorial.
+    <break time="1s"/>
+    <mark name="8" />
+    End the tutorial with a 2 second break and a mark tag with a name attribute of "end".
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
