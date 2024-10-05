@@ -11,8 +11,7 @@ title: How to Make Tutorials
   <ul id="playlist">
       <li class="active"><a href="../videos/tutorial-maker/install/output.mp4">Install the Tutorial Maker</a></li>
       <li><a href="../videos/tutorial-maker/create/output.mp4">Create a Script</a></li>
-      <li><a href="../videos/lessons/schedule-lesson/output.mp4">Running the Tutorial Maker</a></li>
-      <li><a href="../videos/tutorial-maker/run/output.mp4">Connect Apps</a></li>
+      <li><a href="../videos/tutorial-maker/run/output.mp4">Run tutorial-maker</a></li>
   </ul>
 </div>
 

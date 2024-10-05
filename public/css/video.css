@@ -7,14 +7,12 @@
   color: #24b9ff;
 }
 video {
-  width: 70%;
+  
   margin:0px;
   padding:0px;
   vertical-align: top;
 }
 #playlist {
-  float:right;
-  width: 30%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -32,4 +30,23 @@ li a {
 }
 li a:hover {
   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  video {
+    width: 70%;
+  }
+  #playlist {
+    float:right;
+    width: 30%;
+  }
+}
+
+@media (max-width: 767px) {
+  video {
+    width: 100%;
+  }
+  #playlist {
+    width: 100%;
+  }
 }
