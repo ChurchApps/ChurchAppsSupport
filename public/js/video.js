@@ -41,8 +41,10 @@ function init(){
         if(typeof link === "function" || typeof link === "number") continue;
         if(!this.src) this.src = tracks[0];
         if(track == (tracks.length - 1)) nextTrack = 0;
-                                console.log(nextTrack);
-        if(link.getAttribute('href') === this.src) {
+        const shortPath = link.getAttribute('href').replace(/\.\.\//g, '');
+        //console.log(nextTrack, shortPath, this.src);
+
+        if(this.src.indexOf(shortPath) != -1){
           var nextLink = tracks[nextTrack];
           run(nextLink.getAttribute('href'), videoplaylist, nextLink);
           break;
@@ -52,6 +54,7 @@ function init(){
 }
 
 function run(song, videoplaylist, link){
+  console.log("run", song);
   var parent = link.parentElement;
 
   //quitar el active de todos los elementos de la lista
