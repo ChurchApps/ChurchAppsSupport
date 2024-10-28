@@ -1,35 +1,35 @@
 <tutorial>
 <speak>
 <mark name="1" />
-Today, I’ll show you how to integrate Lessons.Church seamlessly within FreeShow to make your ministry presentations even more impactful.
+Today, I'll show you how to integrate Lessons.Church seamlessly within FreeShow to make your ministry presentations even more impactful.
 <break time="1s"/>
 <mark name="2" />
 Go to Lessons.Church to browse free curriculum options.
-<mark name=“3” />
+<mark name="3" />
 Select the lesson you'd like to import into FreeShow.
 <break time="1s"/>
-<mark name=“4” />
-Click this icon on that lesson
+<mark name="4" />
+Click the Share icon on that lesson
 <break time="1s"/>
-<mark name=“5” />
+<mark name="5" />
 Export to OLF
 <break time="1s"/>
-<mark name=“6” />
+<mark name="6" />
 Click Download
 <break time="1s"/>
-<mark name=“7” />
-Open Freeshow and choose File then import
+<mark name="7" />
+Open FreeShow and choose File then import
 <break time="1s"/>
-<mark name=“8” />
+<mark name="8" />
 Choose the Lessons.church type for file to import
 <break time="1s"/>
-<mark name=“9” />
-Open The ,olf file you just downloaded from lessons.church
+<mark name="9" />
+Open The O L F file you just downloaded from Lessons.church
 <break time="1s"/>
-<mark name=“10” />
+<mark name="10" />
 Wait for the files to download 
 <break time="1s"/>
-<mark name=“11” />
+<mark name="11" />
 The lesson from Lessons.church has been successfully imported into FreeShow.
 <break time="1s"/>
 <break time="2s"/>
