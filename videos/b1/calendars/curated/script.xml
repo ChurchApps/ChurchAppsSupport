@@ -13,13 +13,16 @@
     Next Click on the "Manage Events" icon to select what appears on the calendar.
     <break time="1s"/>
     <mark name="5" />
-    The actual events are added from the group pages, not the curated calendar.  Here are you selecting which of those existing events to include.  Click "Add" to begin.
+    The actual events are added from the group pages, not the curated calendar.  Here you are selecting which of those existing events to include.  Click "Add" to begin.
     <break time="1s"/>
     <mark name="6" />
     Select a Group to include that groups events on this calendar and click "Save".
     <break time="1s"/>
     <mark name="7" />
-    Those events will show up on the curated calendar.  As new events are added to the group, they will automatically be included.
+    Continue to do so with other groups you wish to include.
+    <break time="1s"/>
+    <mark name="8" />
+    Events from those groups will show up on the curated calendar.  As new events are added to the groups, they will automatically be included.
     <break time="2s"/>
     <mark name="end" />
   </speak>

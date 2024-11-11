@@ -1,0 +1,23 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    To show a curated calendar, embed it into a webpage using the web page builder.
+    <break time="1s"/>
+    <mark name="2" />
+    Create a new web page or edit an existing one.
+    <break time="1s"/>
+    <mark name="3" />
+    Add a section if you don't already have one by dragging and dropping it onto the page.
+    <break time="1s"/>
+    <mark name="4" />
+    Drag and drop a calendar component into that section.
+    <break time="1s"/>
+    <mark name="5" />
+    Select curated calendar and select the curated calendar you wish to display.
+    <break time="1s"/>
+    <mark name="6" />
+    Click "Done".  You now have a web page containing your calendar.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
