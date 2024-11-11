@@ -2,7 +2,7 @@
 layout: page
 app: b1
 section: B1 Streaming
-title: Add a Sermon
+title: Add a Service
 ---
 
 # Adding Services to B1 Streaming
