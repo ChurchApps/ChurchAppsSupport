@@ -1,0 +1,26 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    In B1, each group has a calendar of events.
+    <break time="1s"/>
+    <mark name="2" />
+    Any group leader can add an event to their calendar by double clicking a date or clicking the "Add Event" button.
+    <break time="1s"/>
+    <mark name="3" />
+    To add a basic event, just select the start and end times for the event, and give it a title and description.  Then click "Save".
+    <break time="1s"/>
+    Group calendars can be included in a church-wide curated calendar which we'll cover in another video. 
+    <break time="1s"/>
+    <mark name="4" />
+    The "Private" toggle on the edit event page will prevent a specific event from showing up in these curated calendars.
+    <break time="1s"/>
+    <mark name="5" />
+    You can make an event recurring by checking the recurring box and selecting how often it recurs. 
+    <break time="1s"/>
+    For a quarterly meeting, select every 3 months, and select whether that is tied to a specific date, or day of the week.
+    <break time="1s"/>
+    Finally, set an end date if desired, or set it to never to keep the event recurring until it is deleted.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>

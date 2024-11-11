@@ -1,0 +1,26 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    Once groups have added events to their calendars, an admin can create curated calendars, which contain events from multiple groups.
+    <break time="1s"/>
+    <mark name="2" />
+    To add a new one, go to the calendars section of the B1 admin and click the "Add" icon.
+    <break time="1s"/>
+    <mark name="3" />
+    Give it a name and click "Save".
+    <break time="1s"/>
+    <mark name="4" />
+    Next Click on the "Manage Events" icon to select what appears on the calendar.
+    <break time="1s"/>
+    <mark name="5" />
+    The actual events are added from the group pages, not the curated calendar.  Here are you selecting which of those existing events to include.  Click "Add" to begin.
+    <break time="1s"/>
+    <mark name="6" />
+    Select a Group to include that groups events on this calendar and click "Save".
+    <break time="1s"/>
+    <mark name="7" />
+    Those events will show up on the curated calendar.  As new events are added to the group, they will automatically be included.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
