@@ -1,0 +1,34 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    To see where you have been requested to volunteer and to confirm or decline, click on "Plans".
+    <break time="1s"/>
+    <mark name="2" />
+    The "Serving Times" section has a list of upcoming roles you have been requested for.
+    <break time="1s"/>
+    
+    Click on a role to see the details and confirm or decline the request.
+    <break time="1s"/>
+    <mark name="3" />
+    Here you can see the details about what the time commitments are.  A notes section with any additional details.
+    <break time="1s"/>
+    You can also see who else you will be serving with on the right side of the screen.
+    <break time="1s"/>
+    <mark name="4" />
+    Click the Accept or Decline button to confirm or decline the request.
+    <break time="1s"/>
+    <mark name="5" />
+    Back on the Plans page, you can see all upcoming serving dates and a list of blockout dates you have set.
+    <break time="1s"/>
+    <mark name="6" />
+    If you would like to set a new blockout date for a vacation or other reasons, click the Add icon.
+    <break time="1s"/>
+    <mark name="7" />
+    Set the start and end date you wish to block out and click "Save".
+    <break time="1s"/>
+    <mark name="8" />
+    The scheduler will see the blockout dates and will not be able to schedule you during those times.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>

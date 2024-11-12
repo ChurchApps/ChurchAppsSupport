@@ -1,7 +1,7 @@
 ---
 layout: page
 app: b1
-section: B1 Groups
+section: Portal Features
 title: Calendars
 ---
 

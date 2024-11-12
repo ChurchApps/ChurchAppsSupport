@@ -1,7 +1,7 @@
 ---
 layout: page
 app: b1
-section: B1 Website Admin
+section: Website Admin
 title: Elements - Location
 ---
 

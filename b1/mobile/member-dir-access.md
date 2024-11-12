@@ -1,7 +1,7 @@
 ---
 layout: page
 app: b1
-section: B1 Mobile
+section: Mobile App
 title: Granting Directory Access
 ---
 

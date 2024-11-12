@@ -1,7 +1,7 @@
 ---
 layout: page
 app: b1
-section: B1 Streaming
+section: Streaming
 title: Bulk Youtube Import
 ---
 
