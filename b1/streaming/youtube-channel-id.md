@@ -1,7 +1,6 @@
 ---
 layout: page
 app: b1
-section: Streaming
 title: Get Youtube Channel ID
 ---
 
