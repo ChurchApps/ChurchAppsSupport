@@ -1,0 +1,40 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    To import your existing videos, you can use the bulk import from YouTube or Vimeo option in the Settings sidebar.  They both work the same way.
+    <break time="1s"/>
+    <mark name="2" />
+    Before you can do so, you must first create a playlist for the videos to be added to.
+    <break time="1s"/>
+    <mark name="3" />
+    If you wish you can create a single "sermons" playlist to contain all videos.  In our case, we're going to make one for our Exodus sermon series.
+    Give it a name, description and a 16 by 9 photo.  Set a start date for the series so they appear in order and click save.
+    <break time="1s"/>
+    <mark name="4" />
+    We're now ready to run the bulk import.  Click the link for Youtube or Vimeo.
+    <break time="1s"/>
+    <mark name="5" />
+    You will need to enter your channel I.D. to fetch videos.  See the help link on this page for instructions on how to find it.
+    <break time="1s"/>
+    <mark name="6" />
+    Click fetch and you will see a list of videos from your YouTube channel.
+    <break time="1s"/>
+    <mark name="7" />
+    Select your Playlist and check the videos you wish to be a part of it and click Save.
+    If you wish you can check the box for new videos uploaded to automatically be added in the future.
+    <break time="1s"/>
+    <mark name="8" />
+    Those videos will be imported along with all their details such as date, run time, descriptions and thumbnails.
+    <break time="1s"/>
+    <mark name="9" />
+    You can repeat the process with additional sermon series.
+    <break time="1s"/>
+    <mark name="10" />
+    These sermon series
+    <break time="0.5s"/>
+    <mark name="11" />
+    And their related videos will show up on the sermons page you create with the website builder.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
