@@ -1,0 +1,35 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    To set your color scheme and logo, click on Customize Appearance.
+    <break time="1s"/>
+    <mark name="2" />
+    This will take you to the Appearance settings of the B1 website builder, which also controls your stream appearance.
+    <break time="1s"/>
+    <mark name="3" />
+    The stream uses the light accent color <break time="0.2s"/> with dark text for the header... and the dark accent color <break time="0.2s"/> with light text for the sidebar.
+    <break time="1s"/>
+    <mark name="4" />
+    You can change the colors by selecting a suggested pallet, or clicking on the individual colors.  You will see example pairings of your color pallet below.
+    <break time="1s"/>
+    <mark name="5" />
+    Click "Save" and the color scheme of your streaming page will be updated.
+    <break time="1s"/>
+    <mark name="6" />
+    To set your logo, simply click the Logo link in the Style Settings sidebar.
+    <break time="1s"/>
+    <mark name="7" />
+    For Streaming, you'll need to set the light background logo.  The others are for the website builder and covered in that section.
+    <break time="1s"/>
+    <mark name="8" />
+    Simply click on the existing logo or the "None" link.
+    <break time="1s"/>
+    <mark name="9" />
+    Then click the upload button to select your logo file. You'll want to select an image with a transparent background and 4:1 aspect ratio.
+    <break time="1s"/>
+    <mark name="10" />
+    Use the cropping tool to make sure your logo is centered and click "Update".
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
