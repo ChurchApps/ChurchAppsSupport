@@ -1,0 +1,24 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    To manually add a new sermon, click the plus icon on the Sermons page and select "Add Sermon".
+    <break time="1s"/>
+    <mark name="2" />
+    Select a Playlist, then enter the youtube video I.D. and click fetch.
+    <break time="1s"/>
+    <mark name="3" />
+    The youtube video I.D. is the string of characters after the "v=" in the video's URL on YouTube.
+    <break time="1s"/>
+    <mark name="4" />
+    When you click fetch, all of the video details will be imported automatically.  This includes the date, duration, title, description, and thumbnail.
+    Make any changes you wish and click save.
+    <break time="1s"/>
+    <mark name="5" />
+    The video will be added to your sermons page.
+    <break time="1s"/>
+    <mark name="6" />
+    It can also now be scheduled as a pre-recorded live stream from the stream settings page.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
