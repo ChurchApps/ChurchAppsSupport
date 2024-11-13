@@ -1,0 +1,21 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    You can also embed a truly live stream by choosing the "Add Permanent Live URL" option.
+    <break time="1s"/>
+    <mark name="2" />
+    With YouTube, there is the option to set this up one-time to always show whatever is currently live on your channel.
+    To do so, you will need your channel I.D.  
+    <break time="0.3s"/>
+    See the instructions on this page for how to find your channel I.D.
+    <break time="1s"/>
+    <mark name="3" />
+    Fill out the rest of the details and provide a thumbnail image for the stream.
+    For the duration, select how long to leave the stream live, including announcements before and after service.
+    <break time="1s"/>
+    <mark name="4" />
+    Click "Save".  You can now schedule your services to show this live stream from the services page.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
