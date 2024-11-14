@@ -13,6 +13,7 @@ title: Initial Setup
       <li><a href="/videos/b1/streaming/links-tabs/output.mp4">Adding Links and Tabs</a></li>
       <li><a href="/videos/b1/streaming/appearance/output.mp4">Set Colors and Logo</a></li>
       <li><a href="/videos/b1/streaming/import/output.mp4">Import Existing Videos</a></li>
+      <li><a href="/videos/b1/streaming/hosts/output.mp4">Adding Hosts</a></li>
   </ul>
 </div>
 
