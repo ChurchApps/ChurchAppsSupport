@@ -1,0 +1,38 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    Adding content to pages begins with sections.  Sections are containers that span the whole width of the page, have a background color or image, determine colors, and can contain multiple elements.
+    <break time="1s"/>
+    <mark name="2" />
+    To add a new section to the page click the "Add" icon
+    <break time="1s"/>
+    <mark name="3" />
+    Click on "Section" and drag it onto the page.
+    <break time="1s"/>
+    <mark name="4" />
+    Drop it on any of the green boxes.
+    <break time="1s"/>
+    <mark name="5" />
+    You will be given a dialog window to customize this section.
+    You can give this section a unique I.D. to allow you to link directly to it later.
+    <break time="1s"/>
+    <mark name="7" />
+    Below are a list of color combination suggestions based on your websites color scheme.  Click one to select it
+    <break time="1s"/>
+    <mark name="8" />
+    If none of those combinations work for you, you can select custom color, by clicking the custom tab.
+    Click "Save" when you are done
+    <break time="1s"/>
+    <mark name="9" />
+    You now have a section you can add elements to.  Double click within it to edit the section settings.
+    <break time="1s"/>
+    <mark name="10" />
+    Make your desired changes.
+    <break time="1s"/>
+    <mark name="11" />
+    And Click Save.
+
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
