@@ -1,0 +1,59 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    Some elements are designed to be containers for other elements.
+    <break time="1s"/>
+    <mark name="2" />
+    Row is one of these.  It divides the width of the page into 12 parts.
+    <break time="1s"/>
+    <mark name="3" />
+    This allows you to easily create elements that span and denominator of twelfths just as halves, thirds, quarters, sixths, or 12ths.
+    <break time="1s"/>
+    <mark name="4" />
+    We'll choose thirds and add it to the page.
+    <break time="1s"/>
+    <mark name="5" />
+    What is added is just three empty columns.  On the preview they have borders to make it easier to work with, but the real page will not have these.
+    <break time="1s"/>
+    <mark name="6" />
+    To add content to these columns, simply drag and drop an existing element into a column.
+    <break time="1s"/>
+    <mark name="7" />
+    Here we drug the image element we created earlier.  Notice it spans the full width of the column now, instead of the full width of the page.
+    <break time="1s"/>
+    <mark name="8" />
+    Continue to drag existing elements into the other columns.
+    <break time="0.3s"/>
+    <mark name="9" />
+    Or add new elements to columns with the plus icon.
+    <break time="1s"/>
+    <mark name="10" />
+    You can add more than one element to each column by dragging it above or below the existing element.
+    <break time="1s"/>
+    <mark name="12" />
+    Double-click on the Row label to edit your row settings.
+    <break time="1s"/>
+    <mark name="13" />
+    Here we'll change from three equal columns to a custom layout.
+    <break time="1s"/>
+    <mark name="14" />
+    Let's make the first column twice as wide so it spans half the page, and the other two each span a quarter.
+    <break time="1s"/>
+    <mark name="15" />
+    The layout is updated accordingly.
+    <break time="1.5s"/>
+    <mark name="16" />
+    It's common to want a different layout for mobile devices than you have for desktop.  Click on Show Mobile Sizes to configure this.
+    <break time="1s"/>
+    <mark name="17" />
+    We want the first two elements to be on the same row that's split 50/50, so we'll set them to half.  Then set the last column to whole so it spans the whole width.
+    <break time="1s"/>
+    <mark name="18" />
+    When you click "Save", the page will look the same because this is the desktop layout.  Click the desktop icon in the top right corner to switch to mobile.
+    <break time="1s"/>
+    <mark name="19" />
+    Here you can see the mobile layout of the page with the custom mobile column widths we selected.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
