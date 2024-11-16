@@ -1,0 +1,59 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    For advanced users, we have the ability to add any custom HTML you wish to the page.  You will need to know HTML and JAvascript in order to use this element type.
+    <break time="1s"/>
+    <mark name="2" />
+    Add your HTML and your Javascript and click "Save".  Do not include the Script tag in your Javascript.
+    <break time="1s"/>
+    <mark name="3" />
+    The Javascript will not execute while in the page designer..
+    <mark name="4" />
+    but will when the page is loaded by a visitor.
+    <break time="1.5s"/>
+    <mark name="5" />
+    The embed element allows you to add an i-frame to the page.  This is useful for embedding content from other providers you may use for donations, forms, etc.
+    <break time="1s"/>
+    <mark name="6" />
+    Set the url you wish to load and the height of the frame and click Save.
+    <break time="1s"/>
+    <mark name="7" />
+    The external website will be embedded on the page.
+    <break time="2s"/>
+    <mark name="8" />
+    You have the ability to add animations and custom styles to every element and section.
+    <break time="1s"/>
+    <mark name="9" />
+    Animations run when an element first becomes visible.
+    <break time="1s"/>
+    <mark name="10" />
+    Simply choose the animation type and how fast you want it to run.  Then click Update and Save.
+    <break time="1s"/>
+    <mark name="11" />
+    When you visit the page
+    <mark name="12" />
+    The animation will run.
+    <mark name="13" />
+    This is a great way to add some flair to your page.
+    <break time="1.5s"/>
+    <mark name="14" />
+    If you need to customize an element in a way that the built in options do not permit, you can likely do so with styles.
+    <break time="1s"/>
+    <mark name="15" />
+    Click "Add Style" under all platforms to get started.
+    <break time="1s"/>
+    <mark name="16" />
+    There are many options to choose from.  
+    <break time="1s"/>
+    <mark name="17" />
+    You can adjust the color, padding, margin, font, shadow, and more.
+    <break time="1s"/>
+    <mark name="18" />
+    When you're done you can see all the options you have set, and further customize just for desktop or mobile.
+    <break time="1s"/>
+    <mark name="19" />
+    Click "Save" to see your changes applied.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
