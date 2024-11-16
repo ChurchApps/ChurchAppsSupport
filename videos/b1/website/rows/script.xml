@@ -7,7 +7,7 @@
     Row is one of these.  It divides the width of the page into 12 parts.
     <break time="1s"/>
     <mark name="3" />
-    This allows you to easily create elements that span and denominator of twelfths just as halves, thirds, quarters, sixths, or 12ths.
+    This allows you to easily create elements that span and denominator of twelfths such as halves, thirds, quarters, sixths, or 12ths.
     <break time="1s"/>
     <mark name="4" />
     We'll choose thirds and add it to the page.

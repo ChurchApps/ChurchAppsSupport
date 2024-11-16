@@ -1,0 +1,47 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    Box is another container element.
+    <break time="1s"/>
+    <mark name="2" />
+    It behaves like a section, but spans a content area rather than the whole width of the screen.
+    <break time="1s"/>
+    <mark name="3" />
+    Configure it and hit save... and you'll have an empty, styled, box on your page.
+    <break time="1s"/>
+    <mark name="4" />
+    Drag and drop elements into the box and they will take on that styling.
+    <break time="1.5s"/>
+    <mark name="5" />
+    Carousel is another container element.
+    <break time="1s"/>
+    <mark name="6" />
+    Set the height, the number of slides and whether you want it to auto-play and hit save.
+    <break time="1s"/>
+    <mark name="7" />
+    It will give you an empty carousel with three slides.
+    <break time="1s"/>
+    <mark name="8" />
+    Add a component to the first slide.
+    <break time="1s"/>
+    <mark name="9" />
+    Click the right arrow to add an element to the next slide.
+    <break time="1s"/>
+    <mark name="10" />
+    Continue until all the slides are full.  It will auto-rotate between these when a visitor loads the page.
+    <break time="1.5s"/>
+    <mark name="11" />
+    The expandable element allows you to add collapsible accordions containing information.
+    <break time="1s"/>
+    <mark name="12" />
+    They're great for FAQs or other content that you want to hide until a visitor clicks on it.
+    <break time="1s"/>
+    <mark name="13" />
+    Add several in sequence and they will appear as a list of topics.
+    <break time="1s"/>
+    <mark name="14" />
+    Click to expand or collapse any topic.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
