@@ -14,6 +14,8 @@
     <break time="1s"/>
     <mark name="5" />
     You will be given a dialog window to customize this section.
+    <break time="1s"/>
+    <mark name="6" />
     You can give this section a unique I.D. to allow you to link directly to it later.
     <break time="1s"/>
     <mark name="7" />

@@ -1,0 +1,66 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    Once you've added a section you can add elements to it.  Click the Plus icon to add a new element.
+    <break time="1s"/>
+    <mark name="2" />
+    Regardless of the element type, simply drag it into a section...
+    <break time="1s"/>
+    <mark name="3" />
+    And drop it on any of the green boxes.
+    <break time="1s"/>
+    <mark name="4" />
+    You will be prompted to customize the element.  For text simply set the alignment...
+    <break time="1s"/>
+    <mark name="5" />
+    Enter your text...
+    <break time="1s"/>
+    <mark name="6" />
+    And use the editor controls to adjust the appearance.
+    <break time="1s"/>
+    <mark name="7" />
+    The element will appear on the page.  Double click it to edit.  Or drag and drop it to move.
+    <break time="1s"/>
+    <mark name="8" />
+    Let's look at some other element types.
+    <break time="1s"/>
+    <mark name="9" />
+    "Text with Photo" is a common type for adding an image surrounded by text.
+    Click Select Photo to get started.
+    <break time="1s"/>
+    <mark name="10" />
+    You can select from photos you've uploaded before in the gallery...
+    <break time="0.3s"/>
+    <mark name="11" />
+    Upload a new photo...
+    <break time="0.3s"/>
+    <mark name="12" />
+    Or select a stock photo.
+    <break time="0.3s"/>
+    <mark name="13" />
+    Use the search feature to find a relevant photo.
+    <break time="1s"/>
+    <mark name="14" />
+    Give your photo a label, set where the photo appears in relation to the text, your text alignment, and enter your text.
+    <break time="1s"/>
+    <mark name="15" />
+    Click Save and the page will be updated with your text with photo.
+    <break time="1s"/>
+    <mark name="16" />
+    Adding a simple photo is similar.  Click Select Photo...
+    <break time="1s"/>
+    <mark name="17" />
+    This time note the aspect ratio drop down.
+    <break time="1s"/>
+    <mark name="18" />
+    This will allow you to select images that conform to a specific shape.  Very useful for ensuring consistency.
+    <break time="1s"/>
+    <mark name="19" />
+    Give the photo a label, and if you wish to have it be a link, provide the url and click save.
+    <break time="1s"/>
+    <mark name="20" />
+    The image will be inserted, spanning the whole width.  See the video on Rows if you do not wish the image to be so wide.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
