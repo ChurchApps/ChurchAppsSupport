@@ -1,0 +1,55 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    Next let's add a Video element
+    <break time="1s"/>
+    <mark name="2" />
+    Both YouTube and Vimeo are supported
+    <break time="1s"/>
+    <mark name="3" />
+    Enter the video I.D., which with YouTube is the string of characters after the v= in the video url.
+    <break time="1s"/>
+    <mark name="4" />
+    The video will be embedded on the page.
+    <break time="1.5s"/>
+    <mark name="5" />
+    The Card element type is similar to Text with Photo.
+    Like before, give it a label, url, and text.
+    This time you'll also set a title and click Save.
+    <break time="1s"/>
+    <mark name="6" />
+    A full-width card element with a border will be shown.  These are best used in combination with Rows.
+    <break time="1s"/>
+    <mark name="7" />
+    The location element allows you to drop a Google Maps component onto the page.
+    <break time="1s"/>
+    <mark name="8" />
+    Enter your address and give it a label and click Save.
+    <break time="1s"/>
+    <mark name="9" />
+    An interactive map with your selected location will be added to the page.
+    <break time="1s"/>
+    <mark name="10" />
+    You can edit the component and adjust the default zoom level as desired.
+    <break time="1.5s"/>
+    <mark name="11" />
+    The Table element is used to show a grid of data.
+    <break time="1s"/>
+    <mark name="12" />
+    Select the number of rows and columns you wish and enter your data.
+    <break time="1s"/>
+    <mark name="13" />
+    If your first row contains headers, like in our example, set Headers to Yes and click Save.
+    <break time="1s"/>
+    <mark name="14" />
+    A formatted table will be added to the page.
+    <break time="1s"/>
+    <mark name="15" />
+    If you need additional formatting such as bolding, or adding links, set Allow Markdown to true.
+    <break time="1s"/>
+    <mark name="16" />
+    This will allow you to use the Editor to format your data.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
