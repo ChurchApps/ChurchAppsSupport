@@ -1,0 +1,52 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    The Church Specific elements use data from your Church in order to automatically provide content.
+    <break time="1s"/>
+    <mark name="2" />
+    The first is simply the logo element.  Drag it to your page and select whether or not it should be linked.
+    <break time="1s"/>
+    <mark name="3" />
+    Click Save and the logo will be added to the page.  It will automatically choose the light or dark variant based on the text color for this section.  See the appearance tutorial for how to set your logo.
+    <break time="1.5s"/>
+    <mark name="4" />
+    Next is the sermons element.  It requires no configuration.
+    <mark name="5" />
+    Simply add it and you will see a library of your sermons.  
+    <mark name="6" />
+    Drill down to any specific sermon to watch the video.
+    See the tutorial on the Sermons section for how to set these up.
+    <break time="1.5s"/>
+    <mark name="7" />
+    Similarly, you can add a lyve stream element to create a custom lyve page.
+    <break time="1s"/>
+    <mark name="8" />
+    Choose whether it is video only.
+    <break time="0.5s"/>
+    <mark name="9" />
+    Or video with interaction.
+    <break time="1s"/>
+    <mark name="10" />
+    You can also choose what is shown when you are not lyve.  It can be the next service time.
+    You can hide the component completely, which is a great option for your home page.
+    Or you can show a block containing other content, such as the sermon archive.  See the tutorial on creating blocks.
+    <break time="2s"/>
+    <mark name="11" />
+    The donation element allows you to add a form to your page to accept donations.  The element itself doesn't require any configuration, but you need to set up a Stripe account in Chums first.
+    <break time="2s"/>
+    <mark name="12" />
+    The Form element allows you to embed a form in your page for visitors to fill out.  
+    <break time="1s"/>
+    <mark name="13" />
+    See the Forms section of Chums to learn how to configure these.
+    <break time="2s"/>
+    <mark name="14" />
+    The Calendar element let's you add a calendar of events to your page.
+    <break time="1s"/>
+    <mark name="15" />
+    This can be a group's calendar or a curated calendar from multiple groups.
+    See the calendars tutorial for instructions on how to configure these.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
