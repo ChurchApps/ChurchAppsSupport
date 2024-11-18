@@ -1,0 +1,64 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    Every church in b1 has a website available at subdomain.b1.church.  
+    <break time="1s"/>
+    <mark name="2" />
+    See the Chums settings tutorial for how to configure your subdomain.
+    <break time="1s"/>
+    <mark name="3" />
+    You can use this as your primary website or have it be a suppliment to your existing site with B1 features.
+    <break time="1s"/>
+    <mark name="4" />
+    To Add a new page which is part of the main navigation, click the Plus sign next to Main Navigation.
+    <break time="1s"/>
+    <mark name="5" />
+    We have several pre-built pages as starting points to choose from.  
+    <break time="1s"/>
+    <mark name="6" />
+    Let's choose location page.  It will automatically populate a suggested page title and link text for the navigation menu.  You can change these if you wish.
+    <break time="1s"/>
+    <mark name="7" />
+    Click Save and a new location page will be created with suggested content you can edit.
+    <break time="1s"/>
+    <mark name="8" />
+    If you wish to rename your page, click the Page Settings button in the top right.
+    <break time="1s"/>
+    <mark name="9" />
+    In addition to the name, you can change the template or adjust the url.
+    There is also a duplicate link if you want to create a second page with this content as the starting point.
+    <break time="1s"/>
+    <mark name="10" />
+    To edit the actual content of the page, click the Edit Content button.
+    <break time="1s"/>
+    <mark name="11" />
+    Here you can double-click any element to edit it, and add and remove elements.
+    See the tutorial on Sections and Elements to learn how.
+    <break time="1s"/>
+    <mark name="12" />
+    Click "Done" to go back.
+    <break time="1s"/>
+    <mark name="13" />
+    Continue to add more pages using the plus icon.  If you prefer, you can start from a blank page instead of a template.
+    <break time="1s"/>
+    <mark name="14" />
+    You can also add links to external websites.
+    <break time="1s"/>
+    <mark name="15" />
+    To re-arrange the order of your navigation bar, simply drag and drop the page names in the Main Navigation section.
+    <break time="1s"/>
+    <mark name="16" />
+    Then release, and the navigation order will be updated.
+    <break time="1s"/>
+    <mark name="17" />
+    You can also add new pages that are not part of the main navigation by clicking the plus icon next to "Not Linked".
+    <break time="1s"/>
+    <mark name="18" />
+    The options are the same with the exception of it does not ask for a url.
+    <break time="1s"/>
+    <mark name="19" />
+    If you later wish to add an unlinked page to the nav bar, or vice-versa.  You can do so by simply dragging it.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
