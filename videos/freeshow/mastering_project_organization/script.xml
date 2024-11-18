@@ -1,0 +1,44 @@
+<tutorial>
+<speak>
+<mark name="1" />
+Welcome! Let's learn about project organization and how to effectively manage your work.
+<break time="1s"/>
+<mark name="2" />
+Projects are organized using both folders and project files. You can create folders within folders, and store your project files inside them to maintain a clean structure.
+<break time="1s"/>
+<mark name="3" />
+To navigate through your folders, simply click on any folder's row to expand or collapse it.
+<break time="1s"/>
+<mark name="4" />
+As your presentation library grows, staying organized becomes essential. Using folders effectively will help you maintain a clean and efficient workspace.
+<break time="1s"/>
+<mark name="5" />
+To create a new folder or project, right-click anywhere in the projects pane and select either "New Folder" or "New Project" from the menu.
+<break time="1s"/>
+<mark name="6" />
+You can also create new folders or projects by using the buttons located at the bottom of the Project window.
+<break time="1s"/>
+<mark name="7" />
+By default, new projects are automatically named with today's date in the format: day, month, and year.
+<break time="1s"/>
+<mark name="8" />
+To customize how project names are generated, open the Settings menu.
+<break time="1s"/>
+<mark name="9" />
+Navigate to the General tab, where you'll find the "Default Project Name" option. This allows you to modify how automatic naming works.
+<break time="1s"/>
+<mark name="10" />
+For example, if you prefer to have the month appear first in the date, you can adjust the format here.
+<break time="1s"/>
+<mark name="11" />
+After making your changes, click the Show button to return to the projects window.
+<break time="1s"/>
+<mark name="12" />
+Now when you create a new project, it will follow your preferred date format.
+<break time="1s"/>
+<mark name="13" />
+Remember, projects are designed to contain one meeting's worth of content, helping you keep each presentation separate and organized.
+<break time="2s"/>
+<mark name="end" />
+</speak>
+</tutorial>
