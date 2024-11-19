@@ -1,0 +1,32 @@
+<tutorial>
+<speak>
+<mark name="1" />
+It's common to need to upload PDFs or other documents for your website.
+We offer the files section to accommodate this need.
+Click manage files.
+<break time="1s"/>
+<mark name="2" />
+Here you'll see a list of files you have uploaded with the option to upload more on the right.
+<break time="1s"/>
+<mark name="3" />
+Click the Choose File button and select the file you want to upload.
+<break time="1s"/>
+<mark name="4" />
+Next click the Upload button.
+<break time="1s"/>
+<mark name="5" />
+Your File will be uploaded.
+<break time="1s"/>
+<mark name="6" />
+You can now see your file and it's size.  On the right, you can see how much space is remaining.
+Since we offer free hosting to churches, this space is limited.  You can however upload files to Google Drive, Dropbox or other services and include them on your site.
+<break time="1s"/>
+<mark name="7" />
+To get the url to your file, right click on it and choose copy link address.
+<break time="1s"/>
+<mark name="8" />
+To delete it, click on the trash can icon.
+<break time="2s"/>
+<mark name="end" />
+</speak>
+</tutorial>
