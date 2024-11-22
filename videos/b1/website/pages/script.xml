@@ -4,7 +4,7 @@
     Every church in b1 has a website available at subdomain.b1.church.  
     <break time="1s"/>
     <mark name="2" />
-    See the Chums settings tutorial for how to configure your subdomain.
+    See the Configuring Domains tutorial below for how to configure your subdomain.
     <break time="1s"/>
     <mark name="3" />
     You can use this as your primary website or have it be a suppliment to your existing site with B1 features.
