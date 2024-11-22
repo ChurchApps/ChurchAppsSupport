@@ -1,0 +1,41 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    Configuring domains for your site takes place in Chums.  You can go to chums.org and login
+    <mark name="2" />
+    or if you're on B1, click the profile drop down and choose switch app.
+    <break time="1s"/>
+    <mark name="3" />
+    In Chums, choose the settings menu on the left.
+    <break time="1s"/>
+    <mark name="4" />
+    And click the edit settings icon.
+    If you are missing these options, it's because you lack permissions.
+    Request the person who set up your church grant you access to "Edit Church Settings"
+    <break time="1s"/>
+    <mark name="5" />
+    Every church that uses B1 has a subdomain assigned to them.  In our case, we have chosen "ironwood" as the subdomain for our test church of Ironwood Church.
+    This means we can go to ironwood.b1.church to get to our B1 content.
+    <break time="1s"/>
+    <mark name="6" />
+    Set this subdomain to whatever you would like.  It needs to have no spaces and be unique.
+    <mark name="7" />
+    In addition to the subdomain, you can set up your own custom domains to point to your B1 site.
+    For example, the site ChurchApps.org is hosted with B1.
+    <break time="1s"/>
+    <mark name="8" />
+    To configure this, you will need to log into your DNS provider such as GoDaddy, CloudFlare, or in our case A.W.S.
+    <break time="1s"/>
+    <mark name="9" />
+    There are two records you will need to add.  An A record for your root domain of 3.23.251.61.
+    <break time="1s"/>
+    <mark name="10" />
+    And a CNAME record for your www subdomain pointing to proxy.b1.church.
+    <break time="1s"/>
+    <mark name="11" />
+    Once these have been added, return to Chums and add your domain to the list of custom domains and click Add and Save.
+    After a few minutes your B1 site will be accessible from your custom domain.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
