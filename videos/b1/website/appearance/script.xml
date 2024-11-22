@@ -1,0 +1,59 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    The Manage Appearance section allows you to configure global appearance options such as logo, colors, and fonts.
+    <break time="1s"/>
+    <mark name="2" />
+    You will see a preview of a website with your current styles.  Click any option on the right to get started.  We'll start with Color Palette.
+    <break time="1s"/>
+    <mark name="3" />
+    This is where you set the overall color theme for your site.  
+    <break time="1s"/>
+    <mark name="4" />
+    Click on any of the suggested pallets to choose a different scheme.
+    The pairings show suggestions of how these colors can be used together.
+    <break time="1s"/>
+    <mark name="5" />
+    You can also set your own custom theme by double clicking on any of the five colors to manually set the color.
+    <break time="1s"/>
+    <mark name="6" />
+    Slide the dial, use the dropper, set the RGB,
+    <mark name="7" />
+    Or use the toggle to set the value as hex.
+    <break time="1s"/>
+    <mark name="8" />
+    Click Save and the preview will be updated with your choices.  Next we'll choose fonts.
+    <break time="1s"/>
+    <mark name="9" />
+    You can set global fonts for the headings and for the body text of your pages.  If you choose, you can still use additional fonts on specific elements.
+    <break time="1s"/>
+    <mark name="10" />
+    Simply click on either font and you'll be able to choose from thousands of options provided by Google Fonts.
+    <break time="1s"/>
+    <mark name="11" />
+    Search for a specific name or use the category filter to browse.
+    <break time="1s"/>
+    <mark name="12" />
+    Choose a font and you can see how your pairing will look.
+    <break time="1s"/>
+    <mark name="13" />
+    Click save and the preview site has also been updated.
+    <break time="1s"/>
+    <mark name="14" />
+    The CSS and Javascript section is an advanced option for those familiar with web development.  Add any code you wish to be included on your pages such as tracking scripts.
+    <break time="1s"/>
+    <mark name="15" />
+    Finally the logo section allows you to brand your website and other features with your logo.  Click the pencil icon to edit.
+    <break time="1s"/>
+    <mark name="16" />
+    You'll need to provide two versions of your logo.  One for dark backgrounds and another for light backgrounds.  Simply click either to edit.
+    <break time="1s"/>
+    <mark name="17" />
+    You'll see an Upload button for providing the image.  Be sure it is on a transparent background.
+    <break time="1s"/>
+    <mark name="18" />
+    The site expects a 4 by 1 logo, so you will be given a cropping tool to ensure your logo is the appropriate shape by adding the necessary horizontal and vertical padding.  Adjust accordingly and click Update and Save.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
