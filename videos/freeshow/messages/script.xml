@@ -1,0 +1,77 @@
+<tutorial>
+<speak>
+<mark name="1" />
+We are going to walk through how to set up your meetings or services. FreeShow is designed to have one meeting per project. Keep in mind that a meeting can also be called a service or experience.
+<break time="1s"/>
+<mark name="2" />
+Meetings can contain multiple elements including songs, presentations, videos, and more. Most of these can be found in your Shows drawer. To access the Shows drawer, simply click on the Shows tab.
+<break time="1s"/>
+<mark name="3" />
+In the Shows tab, you'll find all your available content: songs, scripture, presentations, and media that you can use in your meeting.
+<break time="1s"/>
+<mark name="4" />
+Let's add a new song called "Romans Sixteen Nineteen" to our song list. To add a song from your library, first click on the Songs section.
+<break time="1s"/>
+<mark name="5" />
+Finding specific songs is easy, even if you have thousands. Click on the search bar to begin.
+<break time="1s"/>
+<mark name="6" />
+Start typing the song title in the search bar, and you'll see it quickly appear at the top of the Songs tab.
+<break time="1s"/>
+<mark name="7" />
+When you find your song, simply drag it into your meeting under the appropriate labeled section.
+<break time="1s"/>
+<mark name="8" />
+To create new sections in your meeting, click the "New Section" button.
+<break time="1s"/>
+<mark name="9" />
+After creating a new section, you can give it any label you want and add notes for the production team.
+<break time="1s"/>
+<mark name="10" />
+You can drag and drop sections to reposition them anywhere within your meeting.
+<break time="1s"/>
+<mark name="11" />
+For PDF presentations, you can drag them directly into your meeting at the desired location.
+<break time="1s"/>
+<mark name="12" />
+For smoother playback, it's recommended to convert PDFs to image files by clicking the conversion button.
+<break time="1s"/>
+<mark name="13" />
+After conversion, you'll see all the new image files at the bottom of your meeting.
+<break time="1s"/>
+<mark name="14" />
+Move the new image presentation to where you need it, then right-click and delete the original PDF presentation.
+<break time="1s"/>
+<mark name="15" />
+Need to add an image to a presentation? No problem! You can drag images directly from anywhere on your computer into your show.
+<break time="1s"/>
+<mark name="16" />
+To import Google Slides presentations, start in Google Slides and go to File > Share > Publish to web.
+<break time="1s"/>
+<mark name="17" />
+Click on "Embedded" and copy the highlighted code that ends with "start=false".
+<break time="1s"/>
+<mark name="18" />
+To add this to your meeting, first create a new show by right-clicking in the project window and selecting "New Show".
+<break time="1s"/>
+<mark name="19" />
+Give your show a name and select "Empty Show".
+<break time="1s"/>
+<mark name="20" />
+Add a new slide by clicking the "New Slide" button.
+<break time="1s"/>
+<mark name="21" />
+Select "Website" as the slide type.
+<break time="1s"/>
+<mark name="22" />
+Paste the URL copied from Google Slides and toggle the "Disable Navigation" tab. Click "Show" to return to the show view.
+<break time="1s"/>
+<mark name="23" />
+Select the show and display it to an external display.
+<break time="1s"/>
+<mark name="24" />
+To control the slideshow, click once on the external display. You can then use arrow keys to navigate through slides or use the controls at the bottom of the page.
+<break time="2s"/>
+<mark name="end" />
+</speak>
+</tutorial>
