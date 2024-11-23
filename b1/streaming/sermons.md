@@ -17,5 +17,5 @@ title: Managing Sermons
 
 ## Related Tutorials
 - <a href="/b1/streaming/youtube-channel-id.html">Get Your YouTube Channel ID</a>
-- <a href="/b1/website-admin/create-website.html">Website Builder</a>
+- <a href="/b1/website-admin/initial-setup.html">Website Builder</a>
 - <a href="https://vimeo.com/760360001">OBS Basics</a>
