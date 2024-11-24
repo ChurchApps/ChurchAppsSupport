@@ -1,0 +1,23 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    B1 is the platform for communicating with members and visitors of your church.
+    It is broken into two main parts:
+    <break time="1s"/>
+    A website builder where you can create your primary church website or supplimental web content.
+    <break time="1s"/>
+    <mark name="2" />
+    And the member portal that provides various ways for users to interact with your church.
+    <break time="1s"/>
+    <mark name="3" />
+    This member portal is also available as a mobile app, the B1.church app.
+    <break time="1s"/>
+    <mark name="4" />
+    This tutorial provides an overview of the member portal and how to add options to it as an admin.  It will reference other tutorials for the details of each.
+    <break time="1s"/>
+    <mark name="5" />
+    Some of the navigation options show up automatically when conditions are met.  Others need to be manually added by an admin when desired.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>

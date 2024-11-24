@@ -1,0 +1,37 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    Of the items added automatically, there are two that will show up for logged out visitors.
+    <break time="1s"/>
+    The first is just a link to the homepage of your website if it has been added.
+    <break time="1s"/>
+    <mark name="2" />
+    The second is the option to give.
+    <break time="1s"/>
+    <mark name="3" />
+    To enable the website option, you simply need to create a home page with the website builder.
+    <break time="1s"/>
+    <mark name="4" />
+    You can get to this by first logging in as a user with admin permissions and clicking the admin link on the left.
+    <break time="1s"/>
+    <mark name="5" />
+    Go to WebSite and click the plus icon to make a new page.  The tutorial on the website admin will guide you through this process.
+    <break time="1s"/>
+    <mark name="6" />
+    This will cause the website option to appear in the member portal.
+    <break time="2s"/>
+    <mark name="7" />
+    The second item is the option to give.  This will show up if you have linked a stripe account to your church.
+    <break time="1s"/>
+    <mark name="8" />
+    This is done from the Chums application.
+    <break time="1s"/>
+    <mark name="8" />
+    Go to Settings and edit.
+    <break time="1s"/>
+    <mark name="9" />
+    Then scroll down to giving and enter your Stripe information.  See the giving tutorial to learn more.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
