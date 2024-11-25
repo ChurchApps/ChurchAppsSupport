@@ -1,0 +1,67 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    Once a member logs in, there are a number of additional options that may appear in the member portal.
+    <break time="1s"/>
+    <mark name="2" />
+    The first is the My Groups option.  
+    This will show a list of all groups at your church the member belongs to in the right column.
+    Along with a timeline of events and posts from those groups.
+    <break time="1s"/>
+    <mark name="3" />
+    Group membership is managed from the Groups section of Chums.
+    <break time="1s"/>
+    <mark name="4" />
+    Back in B1, users can click on their groups to see events, conversations, members and other group info.
+    <break time="2s"/>
+    <mark name="5" />
+    The next option is Check In, which allows users to automatically mark themselves as in attendance to groups.
+    <break time="1s"/>
+    <mark name="6" />
+    This will show up if you've configured services and groups in Chums.
+    <break time="2s"/>
+    <mark name="7" />
+    Like with Giving, detailed reports are avaialable for all check-ins.
+    <break time="2s"/>
+    <mark name="8" />
+    We covered Donate in the anonymous video, but when users are logged in they have additional option such as giving history and the ability to manage recurring donations and payment methods.
+    <break time="2s"/>
+    <mark name="9" />
+    The member directory is a very popular option which is only available to members and staff, not visitors.
+    <break time="1s"/>
+    <mark name="10" />
+    Click on any member to see their contact info and family members.  You can message them directly from the app by clicking the Message button.
+    <break time="1s"/>
+    <mark name="11" />
+    Members are managed from the People tab of Chums.
+    <break time="1s"/>
+    <mark name="12" />
+    If you wish to give members the option to manage their own information, you can enable this by setting a directory approval group in the Chums settings.
+    <break time="1s"/>
+    <mark name="13" />
+    Once this is set, members will see a new Modify Profile option on their own profile where they can update their own information.
+    <break time="1s"/>
+    <mark name="14" />
+    These change requests must be approved by the group you selected before they will show up.  This is to prevent abuse.
+    <break time="2s"/>
+    <mark name="15" />
+    Plans are used to allow users to respond to volunteer requests.  
+    <break time="1s"/>
+    <mark name="16" />
+    These show up for any users who are a part of a volunteer team.  These teams are configured in the Plans section of Chums.
+    <break time="2s"/>
+    <mark name="17" />
+    The lessons tab provides a guide for your teachers to lead lessons or for students to review them.
+    <break time="1s"/>
+    <mark name="18" />
+    This is an integration with Lessons.church which has hundreds of high quality lessons available for free.
+    <break time="1s"/>
+    <mark name="19" />
+    This tab will show up if you are a member of the volunteer team or parent or student group for any classroom in lessons.church.
+    <break time="2s"/>
+    <mark name="20" />
+    The last two options that show up automatically are based on your permissions.  People marked as staff members will see a link to Chums and those with content admin permissions will see an admin link.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>

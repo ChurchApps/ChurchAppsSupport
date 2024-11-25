@@ -1,11 +1,12 @@
 <tutorial>
   <speak>
     <mark name="1" />
-    Of the items added automatically, there are two that will show up for logged out visitors.
-    <break time="1s"/>
-    The first is just a link to the homepage of your website if it has been added.
+    To get to the member portal go to your subdomain dot b1 dot church slash member.  
+    The content on this portal is the same as the B1.church mobile app.
     <break time="1s"/>
     <mark name="2" />
+    Of the items added automatically, there are two that will show up for logged out visitors.
+    The first is just a link to the homepage of your website if it has been added.
     The second is the option to give.
     <break time="1s"/>
     <mark name="3" />
@@ -15,22 +16,31 @@
     You can get to this by first logging in as a user with admin permissions and clicking the admin link on the left.
     <break time="1s"/>
     <mark name="5" />
-    Go to WebSite and click the plus icon to make a new page.  The tutorial on the website admin will guide you through this process.
+    Go to "Web Site" and click the plus icon to make a home page.  The tutorial on the website admin will guide you through this process.
     <break time="1s"/>
     <mark name="6" />
     This will cause the website option to appear in the member portal.
     <break time="2s"/>
     <mark name="7" />
-    The second item is the option to give.  This will show up if you have linked a stripe account to your church.
+    The second item is the option to give.  This will show up if you have linked a Stripe account to your church.
     <break time="1s"/>
     <mark name="8" />
-    This is done from the Chums application.
-    <break time="1s"/>
-    <mark name="8" />
-    Go to Settings and edit.
+    This is done from the Chums application.  You can get to it by logging in, clicking your profile photo and selecting Switch App.
     <break time="1s"/>
     <mark name="9" />
-    Then scroll down to giving and enter your Stripe information.  See the giving tutorial to learn more.
+    Within Chums, go to settings, click Edit and scroll down to the giving section.
+    All giving is powered by Stripe which is a payment gateway.  You will need to create an account at Stripe.com if you don't already have one.
+    <break time="1s"/>
+    <mark name="10" />
+    To get this key from Stripe, click Developers in the header, and then API Keys.  
+    Create a new Standard key and copy paste the public and secret keys into Chums.
+    <break time="1s"/>
+    <mark name="11" />
+    Once valid keys have been entered, users will be able to make online donations.  ChurchApps does not charge any fees at all for this feature, however Stripe does charge credit card processing fees.
+    See their documentation for more information.  Discounted rates are available for non-profits.
+    <break time="1s"/>
+    <mark name="12" />
+    All donations made through Chums and B1 are logged and detailed reporting and financial statements are avaialable.  See the Chums documentation for more info.
     <break time="2s"/>
     <mark name="end" />
   </speak>
