@@ -1,7 +1,7 @@
 ---
 layout: page
 app: b1
-section: Website Admin
+section: B1 Admin
 title: Sections and Elements
 ---
 
@@ -21,7 +21,7 @@ title: Sections and Elements
 </div>
 
 ## Related Tutorials
-- <a href="/b1/website-admin/initial-setup.html">Website Setup</a>
+- <a href="/b1/admin/initial-setup.html">Website Setup</a>
 - <a href="/b1/calendars/">Configuring Calendars</a>
 - <a href="/b1/streaming/sermons.html">Configure Sermons</a>
 - <a href="/b1/streaming/initial-setup.html">Configure Live Stream</a>
