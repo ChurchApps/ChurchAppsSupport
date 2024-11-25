@@ -1,0 +1,47 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    In addition to the navigation options that are included automatically, you can manually add other options if desired.
+    <break time="1s"/>
+    <mark name="2" />
+    To do this, log in, go to admin and choose Mobile.
+    <break time="1s"/>
+    <mark name="3" />
+    On the right you will see a section for Tabs.  Click the Plus icon to add a new one.
+    <break time="1s"/>
+    <mark name="4" />
+    Select the type of page to include.  In this example we'll include the Bible.
+    <break time="1s"/>
+    <mark name="5" />
+    Change the text and image as desired.  You will see a real-time preview of this navigation option on the mobile app.
+    <break time="1s"/>
+    <mark name="6" />
+    And search for a suitable icon for use on the web version.
+    <break time="1s"/>
+    <mark name="7" />
+    Click Save and your member portal and mobile app both will now include an easily accessible Bible tab.
+    <break time="1s"/>
+    <mark name="8" />
+    The other tabs work the same way.
+    <break time="1s"/>
+    <mark name="9" />
+    Select live stream to include a link to your live stream.
+    <break time="1s"/>
+    <mark name="10" />
+    Or choose Verse of the Day.
+    <break time="1s"/>
+    <mark name="11" />
+    External url will allow you to include any page on the web, including other platforms you may be using.
+    <break time="1s"/>
+    <mark name="12" />
+    The final option is Page, which will show a new page you create.  To create the page, click the plus icon in the Pages section.
+    <break time="1s"/>
+    <mark name="13" />
+    You will use the webpage builder to add content to the page.  See the Sections and Elements tutorial for doing so.
+    <break time="1s"/>
+    <mark name="14" />
+    Once the page has been built you can add it to your navigation and it will be included.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
