@@ -1,0 +1,37 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    The "My Groups" tab shows a list of all the groups you are a member of such as a Sunday School class, ministries, your small group, parent groups for your children, and groups for church-wide updates.
+    It also includes a timeline, showing all updates from all of your groups in one place.
+    <break time="1s"/>
+    <mark name="2" />
+    You can comment on any item in this timeline to discuss it with other group members.
+    <break time="2s"/>
+    On the right side of the page is a list of all groups you belong to.  Click on one to view the details.
+    <break time="1s"/>
+    <mark name="3" />
+    You will see details about the group, including the timeline for this single group and a list of group members on the right.
+    <break time="1s"/>
+    <mark name="4" />
+    Click on any person to view their contact information or to send them a message.
+    <break time="1s"/>
+    <mark name="5" />
+    Click the group calendar tab to see a list of upcoming events for this group.
+    <break time="1s"/>
+    <mark name="6" />
+    You can click on any event to see the details and discussions.
+    <break time="1s"/>
+    <mark name="7" />
+    If you are a group leader you can also add new events by clicking add event or double-clicking any date.
+    <break time="1s"/>
+    <mark name="8" />
+    The conversations tab allows you to start a new conversation with your group or continue an existing one.
+    All group members will be notified of new comments.
+    <break time="1s"/>
+    <mark name="9" />
+    Finally the files section allows group leaders to upload resources such as PDF books for the group to share.  
+    Space is limited. If you need more, you can upload to a third party service like DropBox or Google Drive and link these resources in conversations.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
