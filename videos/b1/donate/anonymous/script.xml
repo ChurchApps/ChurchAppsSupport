@@ -1,0 +1,37 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    If the church has configured giving, you can donate to your church directly from the B1 mobile or web app.
+    You will receive two different views depending on if you are donating as a guest.
+    <mark name="2" />
+    Or while logged in.
+    <break time="2s"/>
+    <mark name="1" />
+    You can choose whether you wish to make a one-time
+    <mark name="3" />
+    or recurring donation.
+    <break time="1s"/>
+    <mark name="4" />
+    Next enter your name an email address.  If you are making a one-time donation, you can choose to leave these fields blank and donate anonymously.
+    However, they are required for recurring donations so you can edit them later.
+    Be sure to also check the box to confirm you are human.
+    <break time="1s"/>
+    <mark name="5" />
+    Next you will enter your credit or debit card information.  You can also choose to save this information for future donations.
+    <break time="1s"/>
+    <mark name="6" />
+    Next you will enter the amount you wish to donate and which fund it should go to.
+    <break time="1s"/>
+    <mark name="7" />
+    If you wish you can donate to multiple funds with a single transaction.
+    <break time="1s"/>
+    <mark name="8" />
+    B1 does not charge any fees, however the payment gateway your church uses such as Stripe or PayPal may charge a processing fee.  
+    The amount of this is shown and you have the option to donate extra to cover this fee so the church receives the full amount you intended.  This is optional.
+    <break time="1s"/>
+    <mark name="9" />
+    Finally, click submit and you will receive a confirmation of your donation.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
