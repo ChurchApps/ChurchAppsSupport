@@ -1,0 +1,19 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    The recurring donations work the same as one time with two differences.
+    <break time="1s"/>
+    The first is the donation cannot be anonymous.  You must enter your name and email address so that you can later edit or cancel the donation.
+    <break time="1s"/>
+    <mark name="2" />
+    The second is that you need to choose the frequency of the donation and choose the start date for the first donation.
+    <break time="1s"/>
+    <mark name="3" />
+    Submit the form as before.
+    <break time="1s"/>
+    <mark name="4" />
+    This time you will receive a confirmation email with a link to edit your donations.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
