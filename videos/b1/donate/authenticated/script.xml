@@ -1,0 +1,42 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    When you log in, the donation screen has some different options.
+    In addition to the ability to make a new donation, you can see a list of all your past donations.
+    <break time="1s"/>
+    <mark name="2" />
+    Click the download icon in the top right corner to download a report of all your donations as either a CSV data file
+    <mark name="3" />
+    Or as a printable donation statement PDF.
+    <break time="1s"/>
+    <mark name="4" />
+    Below that, you will see a list of your recurring donations.
+    <break time="1s"/>
+    <mark name="5" />
+    Click edit to change the frequency or cancel the schedule donations.  
+    If you need to change the amount, delete the existing scheduled donation and create a new one.
+    <break time="1s"/>
+    <mark name="6" />
+    At the bottom of the page you will see a list of payment methods you have configured.
+    <break time="1s"/>
+    <mark name="7" />
+    Click add and you'll see that in addition to credit card, you can now link a bank account for ACH donations.
+    The payment processors charge your church significantly lower fees for bank transfers than for credit card processing, so this is the preferred way to give.
+    <break time="1s"/>
+    <mark name="8" />
+    It does however take more effort to set up.  
+    First you will enter your bank account information and click submit.
+    <break time="1s"/>
+    <mark name="9" />
+    It will show up in your list of accounts, but it cannot be used yet until it's verified.
+    Stripe will make two small deposits to your bank account of a few cents each.  This can take a few days.
+    <break time="1s"/>
+    <mark name="10" />
+    When those show up, click the Verify Account link and enter the amounts of those two deposits.
+    <break time="1s"/>
+    <mark name="11" />
+    Click Save and the account will be verified and ready to use.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
