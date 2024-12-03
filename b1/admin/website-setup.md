@@ -1,8 +1,8 @@
 ---
 layout: page
 app: b1
-section: B1 Admin
-title: Initial Website Setup
+section: Admin
+title: Website - Setup
 ---
 
 # Initial Website Setup
@@ -19,4 +19,4 @@ title: Initial Website Setup
 </div>
 
 ## Related Tutorials
-- <a href="/b1/admin/sections-elements.html">Page Content - Sections and Elements</a>
+- <a href="/b1/admin/website-elements.html">Page Content - Sections and Elements</a>

@@ -1,8 +1,8 @@
 ---
 layout: page
 app: b1
-section: Streaming
-title: Managing Sermons
+section: Admin
+title: Stream - Sermons
 ---
 
 # How to Add a Sermon
@@ -16,6 +16,6 @@ title: Managing Sermons
 </div>
 
 ## Related Tutorials
-- <a href="/b1/streaming/youtube-channel-id.html">Get Your YouTube Channel ID</a>
-- <a href="/b1/website-admin/initial-setup.html">Website Builder</a>
+- <a href="/b1/admin/youtube-channel-id.html">Get Your YouTube Channel ID</a>
+- <a href="/b1/admin/website-setup.html">Website Builder</a>
 - <a href="https://vimeo.com/760360001">OBS Basics</a>

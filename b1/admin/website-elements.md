@@ -1,8 +1,8 @@
 ---
 layout: page
 app: b1
-section: B1 Admin
-title: Sections and Elements
+section: Admin
+title: Website - Elements
 ---
 
 # Adding Sections and Elements to Pages
@@ -21,8 +21,8 @@ title: Sections and Elements
 </div>
 
 ## Related Tutorials
-- <a href="/b1/admin/initial-setup.html">Website Setup</a>
+- <a href="/b1/admin/website-setup.html">Website Setup</a>
 - <a href="/b1/calendars/">Configuring Calendars</a>
-- <a href="/b1/streaming/sermons.html">Configure Sermons</a>
-- <a href="/b1/streaming/initial-setup.html">Configure Live Stream</a>
+- <a href="/b1/admin/sermons.html">Configure Sermons</a>
+- <a href="/b1/admin/stream-setup.html">Configure Live Stream</a>
 - <a href="/chums/giving.html">Configure Giving</a>

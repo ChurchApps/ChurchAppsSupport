@@ -1,8 +1,8 @@
 ---
 layout: page
 app: b1
-section: B1 Admin
-title: Portal Admin
+section: Admin
+title: Portal
 ---
 
 # Portal Admin
@@ -18,5 +18,5 @@ title: Portal Admin
 </div>
 
 ## Related Tutorials
-- <a href="/b1/admin/initial-setup.html">Website Setup</a>
-- <a href="/b1/admin/sections-elements.html">Page Content - Sections and Elements</a>
+- <a href="/b1/admin/website-setup.html">Website Setup</a>
+- <a href="/b1/admin/website-elements.html">Page Content - Sections and Elements</a>

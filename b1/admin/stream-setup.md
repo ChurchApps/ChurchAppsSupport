@@ -1,8 +1,8 @@
 ---
 layout: page
 app: b1
-section: Streaming
-title: Initial Setup
+section: Admin
+title: Stream - Setup
 ---
 
 # Configuring Online Streaming and Sermon Videos
@@ -18,5 +18,5 @@ title: Initial Setup
 </div>
 
 ## Related Tutorials
-- <a href="/b1/streaming/youtube-channel-id.html">Get Your YouTube Channel ID</a>
-- <a href="/b1/website-admin/initial-setup.html">Website Builder</a>
+- <a href="/b1/admin/youtube-channel-id.html">Get Your YouTube Channel ID</a>
+- <a href="/b1/admin/website-setup.html">Website Builder</a>
