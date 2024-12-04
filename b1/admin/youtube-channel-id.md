@@ -8,7 +8,6 @@ title: Get Youtube Channel ID
 
 ---
 
-1. ![image](https://github.com/ChurchApps/ChurchAppsSupport/assets/1447203/adfd4155-dd4c-4881-b7c0-2b27f41b8c8a)
-   Navigate to the about tab of your Youtube channel. Click the share icon to get the channel id.
-
+1. <img width="1486" alt="Screenshot 2024-12-04 at 11 40 55 AM" src="https://github.com/user-attachments/assets/32fb9b67-8a99-40b4-a2d9-c1fbbcf7912f">
+Navigate to the advanced settings tab of your Youtube channel. Click copy to copy your channel id.
 2. Paste in the copied value to the channel id field
