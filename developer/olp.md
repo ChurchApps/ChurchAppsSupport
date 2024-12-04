@@ -39,7 +39,7 @@ An individual file that is available to be downloaded.
 
 ```
 {
-  "name": //The file name as it should be stored on disk after download.
+  "name": //The display name of this file.
   "url": //The link to download the file.
   "seconds": //The duration of a video, when not a looping video
   "loop": //Boolean indicating if a video should loop
