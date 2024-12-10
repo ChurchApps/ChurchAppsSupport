@@ -14,7 +14,7 @@ title: Website - Setup
       <li><a href="/videos/b1/website/blocks/output.mp4">Reusable Blocks</a></li>
       <li><a href="/videos/b1/website/appearance/output.mp4">Global Appearance</a></li>
       <li><a href="/videos/b1/website/files/output.mp4">Upload Files</a></li>
-      <li><a href="/videos/b1/website/domains/output.mp4">Configure Domains</a></li>
+      <li><a href="/videos/b1/website/domain/output.mp4">Configure Domains</a></li>
   </ul>
 </div>
 
