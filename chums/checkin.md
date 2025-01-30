@@ -24,45 +24,48 @@ title: Checkin Setup
     Confirm you do want to register a new church by selecting ok:
 8.  <img width="1494" alt="009" src="https://user-images.githubusercontent.com/65249159/192037400-f2a25691-29a1-4fca-aaab-b96e9afb8f41.png">
     Fill in the correct information for your Church (leave the subdomain as it is):
-9.  <img width="1494" alt="010" src="https://user-images.githubusercontent.com/65249159/192037702-af3f6902-705b-4de9-ac85-04554ae11c5f.png">
+9. <img width="1512" alt="9" src="https://github.com/user-attachments/assets/85c45e99-eb6e-445f-b3f0-d7c967eb576d" />
     You will now be logged into your Chums account:
-    10. First we need to add all the people who will be checking in. Search for who you would like to add:
-    <img width="1494" alt="011" src="https://user-images.githubusercontent.com/65249159/192038029-cdc7bfc8-dd6a-4cf1-b862-a082aca5c3fc.png">
-10. <img width="1494" alt="013" src="https://user-images.githubusercontent.com/65249159/192038389-723586aa-5b12-475a-9f7a-9c421d836766.png">
+10. <img width="1512" alt="10" src="https://github.com/user-attachments/assets/56aa7aca-55e5-4290-8779-81e3d2a75f6c" />
+    First we need to add all the people who will be checking in. Search for who you would like to add:
+11. <img width="1512" alt="11" src="https://github.com/user-attachments/assets/b7a32ab5-cf6b-4666-a1d1-b6d7825a1722" />
     If they are not in the system, enter their first and last name and click ADD:
-11. <img width="1494" alt="014" src="https://user-images.githubusercontent.com/65249159/192038802-31a79cea-e617-4612-b297-133ce187af69.png">
+12. <img width="1512" alt="12" src="https://github.com/user-attachments/assets/aa74b3c8-b97f-4fd5-ad1b-151288a57496" />
     Click on the edit pencil to edit that person's information
-12. <img width="1494" alt="016" src="https://user-images.githubusercontent.com/65249159/192039176-1e50d90d-16e4-46fa-8910-e68069843252.png">
-    Enter as much detail as you have, then click SAVE:
-13. <img width="1501" alt="Screen Shot 2022-09-23 at 8 55 47 AM" src="https://user-images.githubusercontent.com/65249159/192040895-e051bfee-8bb0-4138-82a8-8c1da05add01.png">
-    Click on the People icon and add as many people as you need:
-14. <img width="1512" alt="Screen Shot 2022-09-23 at 3 17 03 PM" src="https://user-images.githubusercontent.com/65249159/192043444-1592ddac-b193-4ae7-a6fe-1e917d0475b8.png">
-    Connect Families togther; Click on an Adult in the Family:
-
-15. <img width="1512" alt="Screen Shot 2022-09-23 at 3 17 52 PM" src="https://user-images.githubusercontent.com/65249159/192043928-60a9ebb7-b85c-4155-bfad-73ac811bf159.png">
-    Click on the pencil to edit the household:
-16. <img width="1512" alt="Screen Shot 2022-09-23 at 3 18 10 PM" src="https://user-images.githubusercontent.com/65249159/192044051-22a765f7-d6c1-44a4-ab8b-af97a32de890.png">
-    Add all Family members togther:
-17. <img width="1494" alt="020" src="https://user-images.githubusercontent.com/65249159/192044382-c27b568d-9d53-4999-8922-2bf4f888c69c.png">
+13. <img width="1512" alt="13" src="https://github.com/user-attachments/assets/18af30bc-3da7-4df1-b54d-9678ffa9446a" />
+    Enter as much detail as you have, including adding Family members by clicking the edit pencil in the household section then click SAVE:
+14. <img width="1512" alt="14" src="https://github.com/user-attachments/assets/ad6540f7-36d5-4f35-b55c-b6a6411f2659" />
+    Click on the add person icon and add as many Family members as you need:
+15. <img width="1536" alt="15" src="https://github.com/user-attachments/assets/be9cf48c-51c7-4fdb-938b-347ef19c6b5b" />
     Next Click on the attendace icon:
-18. <img width="1494" alt="022" src="https://user-images.githubusercontent.com/65249159/192044691-768e1816-5b80-4bb1-a96d-3242cbc53c4b.png">
+16. <img width="1512" alt="16" src="https://github.com/user-attachments/assets/5722583b-b8eb-489b-b13b-b1999acadd87" />
     Click on the + icon to add a campus:
-19. <img width="1494" alt="022" src="https://user-images.githubusercontent.com/65249159/192070332-919cd118-ad61-4532-a74d-87400af622c2.png">
+17. <img width="1512" alt="17" src="https://github.com/user-attachments/assets/378c0051-9d5b-41ed-ac70-aea073556872" />
     Click on Add Campus and name your campus
-20. <img width="1494" alt="024" src="https://user-images.githubusercontent.com/65249159/192070431-b972df95-8f11-4b5c-a96e-1c36cbb2bffd.png">
-    Click on Add Service and name the service:
-21. <img width="1494" alt="027" src="https://user-images.githubusercontent.com/65249159/192070697-63b01483-dde1-4086-a32e-11aaa718ae5c.png">
-    Click on Add Service Time and add the time of your service:
-22. <img width="1501" alt="Screen Shot 2022-09-23 at 8 24 46 AM" src="https://user-images.githubusercontent.com/65249159/192070968-e199995b-a490-4342-9e9a-f1219aacf426.png">
-    Next click on the groups icon:
-23. <img width="1501" alt="Screen Shot 2022-09-23 at 8 27 35 AM" src="https://user-images.githubusercontent.com/65249159/192071068-46fcfa28-5073-431e-b398-bb161834830d.png">
+18. <img width="1512" alt="18" src="https://github.com/user-attachments/assets/eb1f14f4-74a2-4180-9986-829bb900ca84" />
+    Click on Add Service:
+19. <img width="1512" alt="19" src="https://github.com/user-attachments/assets/d6d78b30-e273-4868-b713-e64011c75927" />
+    Name your Service:
+20. <img width="1512" alt="20" src="https://github.com/user-attachments/assets/9cae0c87-f2cc-43e7-9731-250b4dbe12b5" />
+    Click on Add Service time:
+21. <img width="1512" alt="21 a" src="https://github.com/user-attachments/assets/97eee27d-38ee-4ee8-9ee4-fefb7b2a0fe5" />
+    Add the time of your service or serivices:
+22. <img width="1512" alt="20" src="https://github.com/user-attachments/assets/92fc0d1b-d9b6-4636-843f-801a949492f5" />
+    Next click on groups:
+23. <img width="1512" alt="21" src="https://github.com/user-attachments/assets/d0d3af06-f45d-430f-b652-eb6ac58d5ff1" />
     Click on the + sign to add a new group:
-24. <img width="1512" alt="Screen Shot 2022-09-23 at 8 07 14 PM" src="https://user-images.githubusercontent.com/65249159/192071313-8c7f7cde-981c-4457-9c34-a452d1a01636.png">
-    Continue to add as many groups as your church needs:
-25. <img width="1501" alt="Screen Shot 2022-09-23 at 8 32 16 AM" src="https://user-images.githubusercontent.com/65249159/192071472-ef93d8b6-3735-4630-8d97-e2a872e74011.png">
+24. <img width="1512" alt="22" src="https://github.com/user-attachments/assets/d749587f-8329-404d-a112-8667719a1388" />
+    Add as many groups as your church needs. To create multiple groups within the same category, simply enter the category name followed by the group 
+    name:
+25. <img width="1512" alt="23" src="https://github.com/user-attachments/assets/2c7646eb-dfd9-4c9d-a8e4-e5a62d8f017d" />
     Click on the name of the group you would like to setup for checkin then click the edit button:
-26. <img width="1501" alt="Screen Shot 2022-09-23 at 8 32 36 AM" src="https://user-images.githubusercontent.com/65249159/192072791-ab49cace-937d-4f63-8947-40f262d65996.png">
+26. <img width="1512" alt="24" src="https://github.com/user-attachments/assets/1aae0204-094a-4ed3-b27e-1fe41d2934ec" />
+     Click the edit pencil to edit the details of this group:  
+27. <img width="1512" alt="27" src="https://github.com/user-attachments/assets/50056359-5bad-44a2-825b-4044ec26d545" />
     At this point you need to set each group according to what you want to happen at checkin. If you want to track attendance make sure to select Yes. Parent pickup means that when checkin happens on the app it will print a kid tag and parent tag for that group.
+28. <img width="1512" alt="28" src="https://github.com/user-attachments/assets/8390d887-7993-44c3-96a9-037f9b99754a" />
+    The final step is to select the times you set up in the attendance step. Simply choose a time and click “Add” to include it.
+
 
 ## Tablet and Printer Setup
 
