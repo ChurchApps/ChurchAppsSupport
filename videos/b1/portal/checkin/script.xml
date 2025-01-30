@@ -1,0 +1,35 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    If your church has configured attendance, you can check yourself in via the web portal.
+    Click the Checkin Option on the left to get started
+    <break time="1s"/>
+    <mark name="2" />
+    If your church has multiple location or services you will be asked to select a service first.
+    Otherwise this screen will be skipped.
+    <break time="1s"/>
+    Next you will see a list of people in your household and the groups they are currently marked as attending.
+    This is based on your selections last time you checked in.
+    If the list is correct, click the Checkin button.  
+    <break time="1s"/>
+    <mark name="3" />
+    Otherwise click on a person to expand their details.
+    You will see all of the service times for this service and the groups that person is attending for each.
+    Click on one to make changes
+    <break time="1s"/>
+    <mark name="4" />
+    Here is a list of categories of groups available.  Click on one to expand it.
+    <break time="1s"/>
+    <mark name="5" />
+    Then select the group within that category that you plan to attend.
+    You can also select "None" at the bottom of the page.
+    <break time="1s"/>
+    <mark name="6" />
+    You will be returned to the overview page.  Continue to make any changes needed and click Checkin when done.
+    <break time="1s"/>
+    <mark name="7" />
+    You will receive a confirmation message that you have been checked in and the attendance reports will be updated accordingly.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
