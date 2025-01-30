@@ -87,7 +87,7 @@ Smaller Tablet [SAMSUNG Galaxy Tab A7 Lite 8.7" 32GB](https://amzn.to/3E0zYaz)
 
 Larger Tablet [Samsung Galaxy Tab A8 Android Tablet, 10.5”](https://amzn.to/3rdXRnm)
 
-Amazon Tablet [Amazon Fire HD 8 tablet, 8" HD display, 64 GB](https://amzn.to/3YXCHcv)
+Amazon Tablet [Amazon Fire HD 10 tablet 10.1" vibrant Full HD screen](https://amzn.to/4aHfvpK)
 
 ## For now Checkins only works with Brother Printers these are the printers we recomend:
 
