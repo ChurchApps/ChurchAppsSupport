@@ -1,0 +1,41 @@
+<tutorial>
+    <speak>
+    <mark name="1" />
+    For advanced search, navigate to the People icon on the Chums dashboard.
+    <break time="1s"/>
+    <mark name="2" />
+    Click on Advanced in the Search window. In this example, we will search for all men over 21 years of age.
+    <break time="1s"/>
+    <mark name="3" />
+    Choose a field you would like to search.
+    <break time="1s"/>
+    <mark name="4" />
+    Any of the default fields can be searched.
+    <break time="1s"/>
+    <mark name="5" />
+    Next, choose an operator.
+    <break time="1s"/>
+    <mark name="6" />
+    Choose a value.
+    <break time="1s"/>
+    <mark name="7" />
+    Save the condition if you plan on adding other conditions.
+    <break time="1s"/>
+    <mark name="8" />
+    Add another condition.
+    <break time="1s"/>
+    <mark name="9" />
+    Choose the field, operator, and value.
+    <break time="1s"/>
+    <mark name="10" />
+    Click Search.
+    <break time="1s"/>
+    <mark name="11" />
+    Seven men are in the database who are over 21.
+    <break time="1s"/>
+    <mark name="12" />
+    You can download a CSV file of this list.
+    <break time="2s"/>
+    <mark name="end" />
+    </speak>
+</tutorial>

@@ -1,0 +1,44 @@
+<tutorial>
+    <speak>
+    <mark name="1" />
+    To establish roles for members of your staff and volunteers, navigate to the Chums Dashboard, then to Settings.
+    <break time="1s"/>
+    <mark name="2" />
+    In Settings, choose Roles.
+    <break time="1s"/>
+    <mark name="3" />
+    The screen will show all the roles you have set up. The Domain Admin role is reserved for those who have complete control and permissions of all ChurchApps programs.
+    <break time="1s"/>
+    <mark name="4" />
+    The person who set up the account is the first Domain Admin. Caution: Do not delete the last Domain Admin. There must be at least one Domain Admin for the programs to function.
+    <break time="1s"/>
+    <mark name="5" />
+    You can easily add other Domain Admins.
+    <break time="1s"/>
+    <mark name="6" />
+    Search for the person you want to add. If the person does not have an account, you can create a new user.
+    <break time="1s"/>
+    <mark name="7" />
+    You can also assign limited permissions using a custom role or a default role.
+    <break time="1s"/>
+    <mark name="8" />
+    Add a custom role.
+    <break time="1s"/>
+    <mark name="9" />
+    In this example, it is called “Check-in.”
+    <break time="1s"/>
+    <mark name="10" />
+    After you have created the custom role, click on it and add members.
+    <break time="1s"/>
+    <mark name="11" />
+    Edit the permissions for this role.
+    <break time="1s"/>
+    <mark name="12" />
+    Add people to this role just like before.
+    <break time="1s"/>
+    <mark name="13" />
+    These people will only have permission for check-in.
+    <break time="2s"/>
+    <mark name="end" />
+    </speak>
+</tutorial>
