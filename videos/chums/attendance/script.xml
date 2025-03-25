@@ -1,0 +1,99 @@
+<tutorial>
+    <speak>
+    <mark name="1" />
+    To keep attendance, go to the Chums dashboard.
+    <break time="1s"/>
+    <mark name="2" />
+    Choose People.
+    <break time="1s"/>
+    <mark name="3" />
+    Click on Attendance.
+    <break time="1s"/>
+    <mark name="4" />
+    By default, you will open the Setup page.
+    <break time="1s"/>
+    <mark name="5" />
+    Choose the plus in the top right corner to begin setting up your attendance.
+    <break time="1s"/>
+    <mark name="6" />
+    Add a campus, where the class will take place.
+    <break time="1s"/>
+    <mark name="7" />
+    We'll set this class in the Education Wing.
+    <break time="1s"/>
+    <mark name="8" />
+    Be sure to save.
+    <break time="1s"/>
+    <mark name="9" />
+    Add a service; this could be any day or name you choose.
+    <break time="1s"/>
+    <mark name="10" />
+    We'll call this service Wednesday Night.
+    <break time="1s"/>
+    <mark name="11" />
+    Be sure to save.
+    <break time="1s"/>
+    <mark name="12" />
+    The last step is to add a time.
+    <break time="1s"/>
+    <mark name="13" />
+    This class will take place Wednesday night at 7:00.
+    <break time="1s"/>
+    <mark name="14" />
+    Once again, make sure you save your work.
+    <break time="1s"/>
+    <mark name="15" />
+    You can now see this class will be in the Education Wing, Wednesday night at 7:00 p.m.
+    <break time="1s"/>
+    <mark name="16" />
+    Now navigate to Groups.
+    <break time="1s"/>
+    <mark name="17" />
+    Choose any group that will be meeting Wednesday night at 7:00 in the Education Wing.
+    <break time="1s"/>
+    <mark name="18" />
+    We will look at the K-3rd grade class. Make sure the "track attendance" field says "yes." If it says "no," click the edit pencil and.
+    <break time="1s"/>
+    <mark name="19" />
+    Change "track attendance" to "yes" and choose the "Add service time."
+    <break time="1s"/>
+    <mark name="20" />
+    Choose the time of the service you will be tracking attendance for.
+    <break time="1s"/>
+    <mark name="21" />
+    Add that service time.
+    <break time="1s"/>
+    <mark name="22" />
+    Save your work.
+    <break time="1s"/>
+    <mark name="23" />
+    Now let's record the attendance for the meeting we just set up. Click on Sessions.
+    <break time="1s"/>
+    <mark name="24" />
+    Click "New" to add a new session.
+    <break time="1s"/>
+    <mark name="25" />
+    Choose the service time.
+    <break time="1s"/>
+    <mark name="26" />
+    And session date.
+    <break time="1s"/>
+    <mark name="27" />
+    You can choose a past date to record the attendance of a class that has already taken place or a future date so it will be available when you are ready to record the attendance for that session.
+    <break time="1s"/>
+    <mark name="28" />
+    Don't forget to save.
+    <break time="1s"/>
+    <mark name="29" />
+    You will see the group members on the right side of the page.
+    <break time="1s"/>
+    <mark name="30" />
+    Add members who were at the class session that day.
+    <break time="1s"/>
+    <mark name="31" />
+    You can download a CSV of the attendance.
+    <break time="1s"/>
+    <mark name="32" />
+    The CSV can be opened as an Excel or Numbers document.
+    </speak>
+</tutorial>
