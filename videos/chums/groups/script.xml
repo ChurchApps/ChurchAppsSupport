@@ -1,0 +1,65 @@
+<tutorial>
+    <speak>
+    <mark name="1" />
+    To set up groups within Chums, navigate to the dashboard.
+    <break time="1s"/>
+    <mark name="2" />
+    Click on People.
+    <break time="1s"/>
+    <mark name="3" />
+    Choose Groups at the top of the page.
+    <break time="1s"/>
+    <mark name="4" />
+    Click the plus sign to add a new group. Groups are any organization or class that you want to distinguish within your congregation.
+    <break time="1s"/>
+    <mark name="5" />
+    Choose a category or create a new category.
+    <break time="1s"/>
+    <mark name="6" />
+    Give your group a name.
+    <break time="1s"/>
+    <mark name="7" />
+    To edit the group details, choose the group name.
+    <break time="1s"/>
+    <mark name="8" />
+    Then choose the pencil icon in the top right corner.
+    <break time="1s"/>
+    <mark name="9" />
+    Set up group details.
+    <break time="1s"/>
+    <mark name="10" />
+    Choose a label or create a new one.
+    <break time="1s"/>
+    <mark name="11" />
+    Choose whether to track attendance, parent pickup, or print labels. These categories are for children’s classes where check-in is used. Be sure to save.
+    <break time="1s"/>
+    <mark name="12" />
+    You can now add members to your group.
+    <break time="1s"/>
+    <mark name="13" />
+    Type an individual's name or leave it blank to search your entire database.
+    <break time="1s"/>
+    <mark name="14" />
+    Choose members for your group.
+    <break time="1s"/>
+    <mark name="15" />
+    In this case, the members will show up in the Ushers group.
+    <break time="1s"/>
+    <mark name="16" />
+    Click the message icon to send a message to all of your group members.
+    <break time="1s"/>
+    <mark name="17" />
+    The message will be sent to their B1 app or their email if they do not have the B1 app.
+    <break time="1s"/>
+    <mark name="18" />
+    Hit send.
+    <break time="1s"/>
+    <mark name="19" />
+    You can also download a CSV of the group members by clicking the download icon.
+    <break time="1s"/>
+    <mark name="20" />
+    Your group now shows up under Groups.
+    <break time="2s"/>
+    <mark name="end" />
+    </speak>
+</tutorial>
