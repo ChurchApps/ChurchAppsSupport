@@ -1,0 +1,68 @@
+<tutorial>
+    <speak>
+    <mark name="1" />
+    The people tab of Chums helps you track key information on your members and visitors.
+    <break time="1s"/>
+    <mark name="2" />
+    By default, you get a list of the 25 most recent additions.
+    <break time="1s"/>
+    <mark name="3" />
+    You can use the search.
+    <break time="1s"/>
+    <mark name="4" />
+    To find specific people.
+    <break time="1s"/>
+    <mark name="5" />
+    You can also use the advanced search functionality to find people based on specific criteria.
+    <break time="1s"/>
+    <mark name="6" />
+    For example, if we want to find men to invite to join the men's ministry.
+    <break time="1s"/>
+    <mark name="7" />
+    We can search for men.
+    <break time="1s"/>
+    <mark name="8" />
+    Who are 18 or older.
+    <break time="1s"/>
+    <mark name="9" />
+    And are not already in the men's ministry.
+    <break time="1s"/>
+    <mark name="10" />
+    We can also customize the results to include.
+    <break time="1s"/>
+    <mark name="11" />
+    Additional information such as age and marital status.
+    <break time="1s"/>
+    <mark name="12" />
+    If you have added custom fields, you could also include those values. We will cover those in another video.
+    <break time="1s"/>
+    <mark name="13" />
+    Results can be sorted by any column and all lists can be exported to a CSV file to use with Excel or other spreadsheet programs.
+    <break time="1s"/>
+    <mark name="14" />
+    Click on a person's name to view details.
+    <break time="1s"/>
+    <mark name="15" />
+    You will see an overview of their information with the option to edit in the corner.
+    <break time="1s"/>
+    <mark name="16" />
+    If you have added custom fields, you can view and edit those as well.
+    <break time="1s"/>
+    <mark name="17" />
+    To the left of the member details, you will see a list of existing notes with the option to add more.
+    <break time="1s"/>
+    <mark name="18" />
+    These notes are only visible to staff members who can view the person's details. Depending on your access, you may see additional tabs to view their attendance, as well as donations and groups.
+    <break time="1s"/>
+    <mark name="19" />
+    Below his profile, you will see members of Robert's household with the option to edit.
+    <break time="1s"/>
+    <mark name="20" />
+    You can set Robert's role as head of the household.
+    <break time="1s"/>
+    <mark name="21" />
+    And his daughter as his child.
+    <break time="2s"/>
+    <mark name="end" />
+    </speak>
+</tutorial>
