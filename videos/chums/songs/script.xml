@@ -1,0 +1,63 @@
+<tutorial>
+    <speak>
+      <mark name="1" />
+      On the Songs tab of the Serving section you will find all the songs in your churches library.
+      <break time="1s"/>
+      <mark name="2" />
+      You can add a new song by clicking the Add Song button.  Type in the song title and click search.
+      <break time="1s"/>
+      <mark name="3" />
+      Select a song from the search results to add it to your library.
+      <break time="1s"/>
+      <mark name="4" />
+      This will take you to the song details page with some information automatically loaded.
+      <break time="1s"/>
+      <mark name="5" />
+      The right pane contains facts about the song which are shared across all churches.  The rest of the page is specific to your church.
+      <break time="1s"/>
+      <mark name="6" />
+      The shared data includes external links to popular services with more data about the song.
+      <break time="1s"/>
+      <mark name="7" />
+      All of this data is editable by the community.
+      <break time="1s"/>
+      <mark name="8" />
+      Lyrics and chord charts are subject to copyright and are not provided by ChurchApps.  
+      You can manually provide these by uploading files or entering text.
+      <break time="1s"/>
+      <mark name="9" />
+      If you have a PraiseCharts account you can link it to have this data auto-populate.  To do so go to your profile
+      <break time="1s"/>
+      <mark name="10" />
+      There you will see a button to link PraiseCharts.
+      <break time="1s"/>
+      <mark name="11" />
+      Click the Authorize App button to link your account.
+      <break time="1s"/>
+      <mark name="12" />
+      When you return to the song details page you will see links to all the PraiseCharts resources you have access to for this song and key.
+      <break time="1s"/>
+      <mark name="13" />
+      If you have at least one product, you can also import the lyrics automatically.
+      <break time="1s"/>
+      <mark name="14" />
+      It's possible to add multiple keys for the same song.  Click the Add link.
+      <break time="1s"/>
+      <mark name="15" />
+      Enter the new key and any notes you wish and click Save.
+      <break time="1s"/>
+      <mark name="16" />
+      You can now have separate files for each key.  Any files available from PraiseCharts will be automatically loaded.
+      <break time="2s"/>
+      <mark name="17" />
+      You can also add other arrangements of the same song. Click the Add Arrangement link.
+      <break time="1s"/>
+      <mark name="18" />
+      You will be shown a list of other recordings of this song.  Choosse one, or scroll to the bottom of the list to manually create your own.
+      <break time="1s"/>
+      <mark name="19" />
+      The new arrangement will be added with separate file, lyrics and keys.
+      <break time="2s"/>
+      <mark name="end" />
+    </speak>
+</tutorial>
