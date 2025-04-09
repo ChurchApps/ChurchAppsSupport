@@ -1,0 +1,56 @@
+<tutorial>
+    <speak>
+      <mark name="1" />
+      The Plans section includes the ability to plan out your service order.  When you create a new plan, you'll see a field to include Service Order.  This enables the option to build an outline of your worship service, in addition to scheduling volunteers.
+      <break time="1s"/>
+      <mark name="2" />
+      When you go to the plan details page, there will be a new tab for Service Order.
+      <break time="1s"/>
+      <mark name="3" />
+      You can start building your service order by adding sections for the main breakdown of your service.  For example, you may have a Welcome, Worship, Communion, Sermon, Closing Worship and Announcements.  Click the plus icon to add each of these.
+      <break time="1s"/>
+      <mark name="4" />
+      Now you can begin adding items to each section.  Click the plus icon to add a new item.  You can choose to add a song or manually add any other item.
+      <break time="1s"/>
+      <mark name="5" />
+      Give the item a name and any notes you like, then enter the estimated duration.
+      <break time="2s"/>
+      <mark name="6" />
+      When adding a song you will be given a search box.
+      <break time="1s"/>
+      <mark name="7" />
+      Enter the song name and click search.
+      <break time="1s"/>
+      <mark name="8" />
+      This will search only songs in your library.  You will see a list of arrangments and keys available for each song.  Choose the one you will use.
+      <break time="1s"/>
+      <mark name="9" />
+      Add the song, and you will see the details in the plan.
+      <break time="1s"/>
+      <mark name="10" />
+      Continue to add items to build out the order of service.
+      <break time="1s"/>
+      <mark name="11" />
+      At any time you can change the order.  Click the six dot icon to the left of any item and drag it to it's new position.
+      <break time="1s"/>
+      <mark name="12" />
+      If you would like to print out copies of your order of service, click the print icon at the top.
+      <break time="1s"/>
+      <mark name="13" />
+      This provides a nice overview sheet you can give to your volunteers.
+      <break time="2s"/>
+      <mark name="14" />
+      Whenever your volunteers log into B1 to accept the serving request, the Order of Service information will also be there.
+      <break time="1s"/>
+      <mark name="15" />
+      They can print out their own copies.  They can also click on any song to see the details.
+      <break time="1s"/>
+      <mark name="16" />
+      From this popup, they can view all the files they need to practice
+      <break time="1s"/>
+      <mark name="17" />
+      along with links to listen to the song on YouTube, Spotify and other popular services.
+      <break time="2s"/>
+      <mark name="end" />
+    </speak>
+</tutorial>
