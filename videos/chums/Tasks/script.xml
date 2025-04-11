@@ -1,0 +1,59 @@
+<tutorial>
+    <speak>
+    <mark name="1" />
+    To set up tasks for your leaders, church members, or groups, navigate to the Chums Dashboard.
+    <break time="1s"/>
+    <mark name="2" />
+    Then click the plus sign on the task bar on the right side of your screen.
+    <break time="1s"/>
+    <mark name="3" />
+    Here is where you will fill out the information for your task. Since you are the one that is making the task, it is associated with you.
+    <break time="1s"/>
+    <mark name="4" />
+    Click the assign to box and type in the name of a person or click on group and type the name of a group.
+    <break time="1s"/>
+    <mark name="5" />
+    Hit search.
+    <break time="1s"/>
+    <mark name="6" />
+    Select the person or add them if they are not in the database.
+    <break time="1s"/>
+    <mark name="7" />
+    Now give the task a title.
+    <break time="1s"/>
+    <mark name="8" />
+    Type in a note to the person the task is assigned to.
+    <break time="1s"/>
+    <mark name="9" />
+    Click save.
+    <break time="1s"/>
+    <mark name="10" />
+    You can now see the task that you assigned. If you need to edit the task, just click on it and edit.
+    <break time="1s"/>
+    <mark name="11" />
+    Now I’ll log in as Terry Seven so you can see what the task notification looks like to the person receiving the task.
+    <break time="1s"/>
+    <mark name="12" />
+    I’m now logged in as Terry Seven.
+    <break time="1s"/>
+    <mark name="13" />
+    You can see the tasks assigned to me listed on the right side of your screen. You can also see these tasks on your mobile app.
+    <break time="1s"/>
+    <mark name="14" />
+    Click on the task to see the details.
+    <break time="1s"/>
+    <mark name="15" />
+    Once the task is completed, you can change the status from open to closed.
+    <break time="1s"/>
+    <mark name="16" />
+    Choose closed.
+    <break time="1s"/>
+    <mark name="17" />
+    The task is now completed and closed.
+    <break time="1s"/>
+    <mark name="18" />
+    It no longer shows up on your Chums dashboard.
+    <break time="2s"/>
+    <mark name="end" />
+    </speak>
+</tutorial>
