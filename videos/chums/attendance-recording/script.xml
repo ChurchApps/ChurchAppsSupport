@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tutorial>
+  <speak>
+    <mark name="1" />
+    To record attendance, start by clicking on the Group icon and selecting one of your groups.
+    <break time="1s"/>
+    <mark name="2" />
+    Navigate to the Sessions tab.
+    <break time="1s"/>
+    <mark name="3" />
+    Click the New button to create a new session.
+    <break time="1s"/>
+    <mark name="4" />
+    Add a session date. You can add multiple session dates for the class. After saving, select a session from the dropdown menu.
+    <break time="1s"/>
+    <mark name="5" />
+    Add the class members who are present for that day's session.
+    <break time="1s"/>
+    <mark name="6" />
+    To view attendance reports, click on the Attendance icon, select Group Attendance, set your desired filters, and click Run Report.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial> 

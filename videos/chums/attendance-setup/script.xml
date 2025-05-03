@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tutorial>
+  <speak>
+    <mark name="1" />
+    To set up attendance in Chums, start by clicking the Attendance icon.
+    <break time="1s"/>
+    <mark name="2" />
+    Click the plus button in the Groups section.
+    <break time="1s"/>
+    <mark name="3" />
+    You'll have three options: Add Campus, Add Service, or Add Service Time.
+    <break time="1s"/>
+    <mark name="4" />
+    First, add a new campus by entering the campus name and clicking save.
+    <break time="1s"/>
+    <mark name="5" />
+    Next, click Add Service to create a new service.
+    <break time="1s"/>
+    <mark name="6" />
+    Select the campus location for this service.
+    <break time="1s"/>
+    <mark name="7" />
+    Give your service a name.
+    <break time="1s"/>
+    <mark name="8" />
+    Now add a service time for this service.
+    <break time="1s"/>
+    <mark name="9" />
+    The service details including name, place, and time will appear in the group details.
+    <break time="1s"/>
+    <mark name="10" />
+    Click add to include this service in the group details.
+    <break time="1s"/>
+    <mark name="11" />
+    Finally, click save to complete the setup.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial> 
