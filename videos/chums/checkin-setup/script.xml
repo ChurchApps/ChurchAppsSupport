@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tutorial>
+  <speak>
+    <mark name="1" />
+    Let's set up check-in for your church. First, you'll need to create a Chums account if you don't already have one. Click on Get Started.
+    <break time="1s"/>
+    <mark name="2" />
+    Fill out your church's information in the registration form.
+    <break time="1s"/>
+    <mark name="3" />
+    After clicking Register, check your email and click on Set Password.
+    <break time="1s"/>
+    <mark name="4" />
+    Create a secure password for your account.
+    <break time="1s"/>
+    <mark name="5" />
+    Click Sign In, and you'll be prompted to search for your church.
+    <break time="1s"/>
+    <mark name="6" />
+    If your church isn't found, click on Register a New Church.
+    <break time="1s"/>
+    <mark name="7" />
+    Confirm that you want to register a new church by selecting OK.
+    <break time="1s"/>
+    <mark name="8" />
+    Fill in your church's information, leaving the subdomain as is.
+    <break time="1s"/>
+    <mark name="9" />
+    You'll now be logged into your Chums account.
+    <break time="1s"/>
+    <mark name="10" />
+    First, we need to add all the people who will be checking in. Search for who you'd like to add.
+    <break time="1s"/>
+    <mark name="11" />
+    If they're not in the system, enter their first and last name and click ADD.
+    <break time="1s"/>
+    <mark name="12" />
+    Click on the edit pencil to edit that person's information.
+    <break time="1s"/>
+    <mark name="13" />
+    Enter as much detail as you have, including adding family members by clicking the edit pencil in the household section, then click SAVE.
+    <break time="1s"/>
+    <mark name="14" />
+    Click on the add person icon to add as many family members as needed.
+    <break time="1s"/>
+    <mark name="15" />
+    Next, click on the attendance icon.
+    <break time="1s"/>
+    <mark name="16" />
+    Click on the plus icon to add a campus.
+    <break time="1s"/>
+    <mark name="17" />
+    Click on Add Campus and name your campus.
+    <break time="1s"/>
+    <mark name="18" />
+    Click on Add Service.
+    <break time="1s"/>
+    <mark name="19" />
+    Name your service.
+    <break time="1s"/>
+    <mark name="20" />
+    Click on Add Service time.
+    <break time="1s"/>
+    <mark name="21" />
+    Add the time of your service or services.
+    <break time="1s"/>
+    <mark name="22" />
+    Next, click on groups.
+    <break time="1s"/>
+    <mark name="23" />
+    Click on the plus sign to add a new group.
+    <break time="1s"/>
+    <mark name="24" />
+    Add as many groups as your church needs. To create multiple groups within the same category, enter the category name followed by the group name.
+    <break time="1s"/>
+    <mark name="25" />
+    Click on the name of the group you'd like to set up for check-in, then click the edit button.
+    <break time="1s"/>
+    <mark name="26" />
+    Click the edit pencil to edit the details of this group.
+    <break time="1s"/>
+    <mark name="27" />
+    Set each group according to what you want to happen at check-in. If you want to track attendance, make sure to select Yes. Parent pickup means that when check-in happens on the app, it will print a kid tag and parent tag for that group.
+    <break time="1s"/>
+    <mark name="28" />
+    The final step is to select the times you set up in the attendance step. Simply choose a time and click Add to include it.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial> 

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tutorial>
+  <speak>
+    <mark name="1"/>
+    Let's set up plans in Chums. First, click on the Plans icon in the navigation menu.
+    <break time="1s"/>
+    <mark name="2"/>
+    Click the Add Plan button to create a new plan.
+    <break time="1s"/>
+    <mark name="3"/>
+    Enter a name for your plan and select the start date.
+    <break time="1s"/>
+    <mark name="4"/>
+    Choose the ministries that will be part of this plan.
+    <break time="1s"/>
+    <mark name="5"/>
+    For each ministry, select the teams that will be involved.
+    <break time="1s"/>
+    <mark name="6"/>
+    Now, let's add volunteers to the teams. Click on a team to see its members.
+    <break time="1s"/>
+    <mark name="7"/>
+    Click the Add Volunteer button to assign people to this team.
+    <break time="1s"/>
+    <mark name="8"/>
+    Search for and select the volunteers you want to add.
+    <break time="1s"/>
+    <mark name="9"/>
+    Set the role for each volunteer in the team.
+    <break time="1s"/>
+    <mark name="10"/>
+    Click Save to add the volunteers to the team.
+    <break time="1s"/>
+    <mark name="11"/>
+    Repeat this process for each team in your plan.
+    <break time="1s"/>
+    <mark name="12"/>
+    Once all teams have their volunteers assigned, click Save Plan.
+    <break time="1s"/>
+    <mark name="13"/>
+    Your plan is now set up! Volunteers will be notified of their assignments.
+    <break time="1s"/>
+    <mark name="end"/>
+  </speak>
+</tutorial> 

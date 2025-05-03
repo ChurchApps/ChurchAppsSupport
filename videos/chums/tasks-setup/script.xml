@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tutorial>
+  <speak>
+    <mark name="1" />
+    Tasks are a great way to assign jobs within your organization. Start by clicking on the Tasks icon on the Chums homepage.
+    <break time="1s"/>
+    <mark name="2" />
+    Click the plus symbol to add a new task.
+    <break time="1s"/>
+    <mark name="3" />
+    First, associate the task with someone in your church who is assigning it.
+    <break time="1s"/>
+    <mark name="4" />
+    You can select either a person or a group as the assigner.
+    <break time="1s"/>
+    <mark name="5" />
+    Next, assign the task to someone who will be completing it.
+    <break time="1s"/>
+    <mark name="6" />
+    Again, you can choose either a person or a group as the assignee.
+    <break time="1s"/>
+    <mark name="7" />
+    Give the task a title describing what needs to be accomplished. You may add an optional note, then click Save.
+    <break time="1s"/>
+    <mark name="8" />
+    The task will appear in your task list when you click the task icon. To mark a task as complete, click on the task name and select "closed".
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial> 
