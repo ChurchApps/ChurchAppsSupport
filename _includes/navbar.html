@@ -2,11 +2,15 @@
 {% if logo == null %}
 {% assign logo = "logo" %}
 {% endif %}
-<nav class="navbar">
+<nav class="navbar navbar-expand-lg" style="background-color: #1a1a1a; border-bottom: 1px solid #333;">
     <div class="container">
         <a href="{{'/' | relative_url }}" class="navbar-brand d-flex align-items-center">
-            <img src="{{ 'assets/' | append: logo | append: '.png' | relative_url }}" alt="" class="img-fluid" style="height:50px;">
-            <span class="fw-bold" style="color:#CCC"> WIKI</span>
+            <img src="{{ 'assets/' | append: logo | append: '.png' | relative_url }}" alt="" class="img-fluid me-2" style="height:40px;">
+            <span class="fw-bold" style="color:#fff; font-size: 1.2rem;">SUPPORT WIKI</span>
         </a>
+        <div class="d-flex align-items-center">
+            <a href="https://churchapps.org/" target="_blank" class="btn btn-outline-light btn-sm me-2">Visit ChurchApps</a>
+            <a href="mailto:support@churchapps.org" class="btn btn-primary btn-sm">Contact Support</a>
+        </div>
     </div>
 </nav>
