@@ -20,93 +20,112 @@
 
     <link rel="stylesheet" href="{{ '/public/css/custom.css' | absolute_url }}">
     <link rel="stylesheet" href="{{ '/public/css/video.css' | absolute_url }}">
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .sectionName {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 500;
+            padding: 1rem 0;
+            border-bottom: 1px solid #333;
+            margin-bottom: 1.5rem;
+        }
+        #onThisPage {
+            list-style: none;
+            padding-left: 0;
+        }
+        #onThisPage li {
+            margin-bottom: 0.5rem;
+        }
+        #onThisPage a {
+            color: #e0e0e0;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        #onThisPage a:hover {
+            color: #fff;
+        }
+        .sidebar-nav {
+            padding: 1rem;
+        }
+        .nav-item {
+            color: #e0e0e0;
+            text-decoration: none;
+            display: block;
+            padding: 0.5rem 0;
+            transition: color 0.2s;
+        }
+        .nav-item:hover {
+            color: #fff;
+        }
+        .nav-item.current {
+            color: #fff;
+            font-weight: 500;
+        }
+    </style>
 </head>
 
 <body>
     {% include navbar.html %}
     
-
-
-    <div class="row">
-      <div class="col-lg-2">
-        {% include sidebar.html %}
-      </div>
-      <div class="col-lg-8" style="border-left:1px solid #333">
-        <div class="sectionName">{{page.section}}</div>
-        {{content}}
-      </div>
-      
-      <div class="col-lg-2">
-        
-        {% assign lines = page.content | newline_to_br | split: "<br />" %}
-        {% assign filtered_lines = '' | split: '' %}
-        {% for line in lines %}
-          {% if line contains '## ' %}
-            {% assign filtered_lines = filtered_lines | push: line %}
-          {% endif %}
-        {% endfor %}
-
-        {% if filtered_lines.size > 1 %}
-          <h4>On this page:</h4>
-          <ul id="onThisPage">
-            {% for line in filtered_lines %}
-              {% assign h2_text = line | remove: "#### " | remove: "### " | remove: "## " %}
-              <li><a href="#{{ h2_text | slugify }}">{{ h2_text }}</a></li>
+    <div class="row mx-0">
+        <div class="col-lg-2">
+            {% include sidebar.html %}
+        </div>
+        <div class="col-lg-8" style="border-left:1px solid #333; border-right:1px solid #333; min-height: calc(100vh - 200px);">
+            <div class="px-4">
+                <div class="sectionName">{{page.section}}</div>
+                {{content}}
+            </div>
+        </div>
+        <div class="col-lg-2">
+            {% assign lines = page.content | newline_to_br | split: "<br />" %}
+            {% assign filtered_lines = '' | split: '' %}
+            {% for line in lines %}
+                {% if line contains '## ' %}
+                    {% assign filtered_lines = filtered_lines | push: line %}
+                {% endif %}
             {% endfor %}
-          </ul>  
-        {% endif %}
-        
-      </div>
-      
+
+            {% if filtered_lines.size > 1 %}
+                <div class="px-3">
+                    <h4 class="h5 mb-3">On this page:</h4>
+                    <ul id="onThisPage">
+                        {% for line in filtered_lines %}
+                            {% assign h2_text = line | remove: "#### " | remove: "### " | remove: "## " %}
+                            <li><a href="#{{ h2_text | slugify }}">{{ h2_text }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+        </div>
     </div>
-
-    
-
 
     {% include footer.html %}
 
-
-    
     <script>
         document.querySelectorAll('#pageContent img').forEach(img => {
-
-          console.log("Prev", img.previousSibling)
-          if (img.previousSibling?.previousSibling?.className !== 'doc-img') {
-            const div = document.createElement('div');
-            div.className = 'img-clear';
-            //img.parentNode.insertBefore(div, img.previousSibling);
-            img.parentNode.insertBefore(div, img);  
-          }
-          
-
-
-          
-          const anchor = document.createElement('a');
-          //anchor.href = img.src;
-          anchor.href = "#";
-          
-          //anchor.attributes["onclick"] = "showModal('" + img.src + "')";
-          anchor.onclick = function() {
-            showModal(img.src);
-            return false;
-          }
-          //anchor.target = '_blank';
-          anchor.innerHTML = img.outerHTML;
-          anchor.className = "doc-img"
-          img.parentElement.replaceChild(anchor, img);
-          
-          
-          /*
-            if (!img.classList.contains('img-fluid')) {
-                img.classList.add('img-fluid')
-                img.classList.add('rounded')
-                img.classList.add('post-img')
+            if (img.previousSibling?.previousSibling?.className !== 'doc-img') {
+                const div = document.createElement('div');
+                div.className = 'img-clear';
+                img.parentNode.insertBefore(div, img);
             }
-          */
+            
+            const anchor = document.createElement('a');
+            anchor.href = "#";
+            anchor.onclick = function() {
+                showModal(img.src);
+                return false;
+            }
+            anchor.innerHTML = img.outerHTML;
+            anchor.className = "doc-img"
+            img.parentElement.replaceChild(anchor, img);
         })
     </script>
     
-    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
     <script src='{{ site.baseurl }}/public/js/custom.js'></script>
     <script src='{{ site.baseurl }}/public/js/script.js'></script>
     <script src='{{ site.baseurl }}/public/js/video.js'></script>
