@@ -1,0 +1,155 @@
+---
+layout: default
+---
+
+<div class="media-player-container">
+  {{ content }}
+</div>
+
+<style>
+.media-player-container {
+  background: #1a1a1a;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100% !important;
+  max-width: none !important;
+}
+
+.media-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  width: 100% !important;
+  max-width: none !important;
+}
+
+.instruction-image-container {
+  flex: 2;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  width: 66.666% !important;
+  min-width: 500px !important;
+}
+
+.instruction-image-container h3 {
+  margin: 0 0 10px 0;
+  padding: 0;
+  color: #fff;
+}
+
+.instruction-image-container img {
+  width: 100% !important;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  max-width: none !important;
+  border-radius: 4px;
+}
+
+.instruction-steps {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  background: #242424;
+  padding: 15px;
+  border-radius: 6px;
+  width: 33.333% !important;
+  max-height: 600px;
+  overflow-y: auto;
+  position: sticky;
+  top: 20px;
+}
+
+.instruction-steps::-webkit-scrollbar {
+  width: 8px;
+}
+
+.instruction-steps::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 4px;
+}
+
+.instruction-steps::-webkit-scrollbar-thumb {
+  background: #4a9eff;
+  border-radius: 4px;
+}
+
+.instruction-steps::-webkit-scrollbar-thumb:hover {
+  background: #357abd;
+}
+
+.instruction-steps h3 {
+  color: #fff;
+  margin: 0 0 15px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #333;
+}
+
+.steps-list {
+  margin: 0;
+  padding: 0;
+  list-style-position: outside;
+  padding-left: 1.5em;
+}
+
+.steps-list li {
+  margin-bottom: 10px;
+  color: #e0e0e0;
+  position: relative;
+}
+
+.instruction-step {
+  cursor: pointer;
+  color: #4a9eff;
+  text-decoration: none;
+  display: inline;
+  transition: all 0.2s ease;
+  line-height: 1.4;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.instruction-step:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+.instruction-step.active {
+  color: #fff;
+  background-color: #4a9eff;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const setupSteps = document.querySelectorAll('.setup-step');
+  const recordSteps = document.querySelectorAll('.record-step');
+  const currentSetupImage = document.getElementById('currentSetupImage');
+  const currentRecordImage = document.getElementById('currentRecordImage');
+
+  function handleStepInteraction(steps, currentImage) {
+    steps.forEach(step => {
+      step.addEventListener('mouseover', function() {
+        currentImage.src = this.getAttribute('data-image');
+        steps.forEach(s => s.classList.remove('active'));
+        this.classList.add('active');
+      });
+      
+      step.addEventListener('click', function() {
+        currentImage.src = this.getAttribute('data-image');
+        steps.forEach(s => s.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  }
+
+  handleStepInteraction(setupSteps, currentSetupImage);
+  handleStepInteraction(recordSteps, currentRecordImage);
+});
+</script> 
