@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tutorial>
+  <speak>
+    <mark name="1" />
+    To give someone access to the church directory, first log into Chums and search for the person who needs access.
+    <break time="1s"/>
+    <mark name="2" />
+    Once you've found their record, click the edit pencil icon to modify their information.
+    <break time="1s"/>
+    <mark name="3" />
+    In the edit view, click on the membership status field.
+    <break time="1s"/>
+    <mark name="4" />
+    From the dropdown menu, select "Member" as their membership status.
+    <break time="1s"/>
+    <mark name="5" />
+    Finally, click the Save button to apply the changes. This will grant them access to the church directory.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial> 

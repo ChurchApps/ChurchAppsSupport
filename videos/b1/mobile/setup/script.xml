@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tutorial>
+  <speak>
+    <mark name="1" />
+    To set up your B1 mobile app, start by selecting B1.church from the dropdown menu under your name.
+    <break time="1s"/>
+    <mark name="2" />
+    Click on the Mobile App icon to access the mobile app settings.
+    <break time="1s"/>
+    <mark name="3" />
+    To add a new tab, click the plus button.
+    <break time="1s"/>
+    <mark name="4" />
+    Click on the icon chooser to select an icon for your tab.
+    <break time="1s"/>
+    <mark name="5" />
+    Choose an appropriate icon from the available options.
+    <break time="1s"/>
+    <mark name="6" />
+    Select the type of tab you want to add. There are several default tabs that will automatically appear based on user roles: Website, My Groups, Member Directory, Lessons, and Chums.
+    <break time="1s"/>
+    <mark name="8" />
+    Enter the text you want to display on your tab.
+    <break time="1s"/>
+    <mark name="9" />
+    You can customize the tab image by clicking the Change Image icon.
+    <break time="1s"/>
+    <mark name="10" />
+    Choose an image from your gallery, upload one from your computer, or select a stock photo.
+    <break time="1s"/>
+    <mark name="11" />
+    After adding tabs, you can reorder them using the arrow buttons. To access the app, users can download it from Google Play or the App Store by searching for B1 Church.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial> 

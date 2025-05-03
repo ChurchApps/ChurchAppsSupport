@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tutorial>
+  <speak>
+    <mark name="1" />
+    To set up the member directory in the B1 app, first log in as an admin and add a new tab.
+    <break time="1s"/>
+    <mark name="2" />
+    In the tab settings, select the type as "Member Directory" and click save.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial> 
