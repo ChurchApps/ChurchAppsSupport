@@ -54,8 +54,6 @@ h4 { font-size: 1.1rem; margin-top:20px; }
 }
 
 .doc-img, .doc-img:hover {
-  float:right;
-  max-width: 250px;
   text-decoration: none;
   margin-left:20px;
   margin-bottom: 50px;;
@@ -66,7 +64,6 @@ h4 { font-size: 1.1rem; margin-top:20px; }
   color:#FFFFFF;
   background-color: #1576d1;
   display: table;
-  width:250px;
   font-size: 16px;
   padding:5px;
   border-radius: 0px 0px 5px 5px;
