@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tutorial>
+  <speak>
+    <mark name="1"/>
+    Let's import your data from Excel or CSV into Chums. First, make sure your Excel or CSV file is on your desktop.
+    <break time="1s"/>
+    <mark name="2"/>
+    In Chums, go to Settings and then to Import/Export.
+    <break time="1s"/>
+    <mark name="3"/>
+    Choose Chums Import Zip from the options.
+    <break time="1s"/>
+    <mark name="4"/>
+    Download the sample file to see the required format.
+    <break time="1s"/>
+    <mark name="5"/>
+    Unzip the sample file and open people.csv. Replace the data in this file with your data, but don't change the top row. Save your edited file as people.csv.
+    <break time="1s"/>
+    <mark name="6"/>
+    Now, create a zip file with your data. On a Mac, highlight the files and drag them to your desktop, then right-click and choose Compress. On a PC, right-click the folder, select Send to, and choose Compressed folder. Save the zip file on your desktop.
+    <break time="1s"/>
+    <mark name="7"/>
+    Go back to Chums and click the upload icon. Upload the zip file you just created. Once uploaded, you'll see your data. Scroll to the bottom and click Continue.
+    <break time="1s"/>
+    <mark name="8"/>
+    Next, we need to import the file into the Chums database. Click Confirm to start the import process.
+    <break time="1s"/>
+    <mark name="9"/>
+    Let the process run until you see a completion screen. Click "Go to Chums" to return to the main application.
+    <break time="1s"/>
+    <mark name="end"/>
+  </speak>
+</tutorial> 

@@ -5,7 +5,17 @@ section: Data
 title: Import from CSV
 ---
 
-# How to Import Your Data from Excel or CSV
+# Importing Data from Excel or CSV into Chums
+
+<div id="videoContainer">
+  <ul id="playlist">
+    <li class="active">
+      <a href="/videos/chums/import-csv/output.mp4">How to Import Data from Excel or CSV into Chums</a>
+    </li>
+  </ul>
+</div>
+
+## Step-by-Step Instructions
 
 1. Put your excel or cvs file on your desktop.
 

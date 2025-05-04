@@ -8,11 +8,9 @@ title: Plans Setup
 # Setting up Plans in Chums
 
 <div id="videoContainer">
-  <playlist>
-    <video>
-      <file>/videos/chums/plans-setup/output.mp4</file>
-    </video>
-  </playlist>
+  <ul id="playlist">
+    <li class="active"><a href="/videos/chums/plans-setup/output.mp4">Plans Setup</a></li>
+  </ul>
 </div>
 
 # Step-by-Step Instructions
