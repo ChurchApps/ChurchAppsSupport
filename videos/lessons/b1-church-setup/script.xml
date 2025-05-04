@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tutorial>
+  <speak>
+    <mark name="1" />
+    Let's walk through how to connect Lessons.Church to the B1 app.
+    <break time="1s"/>
+    <mark name="2" />
+    First, you'll need to register or login to your Lessons.Church account.
+    <break time="1s"/>
+    <mark name="3" />
+    If you haven't already, you'll need to register your church.
+    <break time="1s"/>
+    <mark name="4" />
+    Make at least one schedule. You can create as many schedules as you want with as many classrooms as you have.
+    <break time="1s"/>
+    <mark name="5" />
+    Now, click on your name and select "Switch App".
+    <break time="1s"/>
+    <mark name="6" />
+    Next, click on Chums. You'll need to have access to Chums to complete this step. If you don't, please contact your Domain Admin.
+    <break time="1s"/>
+    <mark name="7" />
+    Click on Plans.
+    <break time="1s"/>
+    <mark name="8" />
+    Click the plus icon to add a new ministry.
+    <break time="1s"/>
+    <mark name="9" />
+    Choose whatever name you would like and click Add.
+    <break time="1s"/>
+    <mark name="10" />
+    Now click on Teams.
+    <break time="1s"/>
+    <mark name="11" />
+    Again, click the plus icon to make a new team.
+    <break time="1s"/>
+    <mark name="12" />
+    Click Add to create the team.
+    <break time="1s"/>
+    <mark name="13" />
+    Click on the class you just created.
+    <break time="1s"/>
+    <mark name="14" />
+    Now, add any teachers you want to view the lesson to this team.
+    <break time="1s"/>
+    <mark name="15" />
+    Remember to click the add icon to save your changes.
+    <break time="1s"/>
+    <mark name="16" />
+    Now, let's switch the app back to Lessons.Church.
+    <break time="1s"/>
+    <mark name="17" />
+    Click "Edit" on the class where you want to add the volunteer team.
+    <break time="1s"/>
+    <mark name="18" />
+    Choose the volunteer team you just organized.
+    <break time="1s"/>
+    <mark name="19" />
+    Make sure to hit "Save" to complete the setup. Remember, whenever you add a new teacher, you will need to add them to the team in Plans on the Chums app.
+    <break time="2s"/>
+    <mark name="20" />
+    To access B1 on your phone or tablet, you can download it from the Google Play Store or Apple App Store.
+    <break time="1s"/>
+    <mark name="21" />
+    Search for B1.church in your device's app store.
+    <break time="1s"/>
+    <mark name="22" />
+    Click Install to download the app.
+    <break time="1s"/>
+    <mark name="23" />
+    Find your church in the app.
+    <break time="1s"/>
+    <mark name="24" />
+    Click on your church to complete the setup.
+    <break time="1s"/>
+    <mark name="25" />
+    That's it! Your app will now update every week with the correct lessons from Lessons.Church.
+    <break time="1s"/>
+    <mark name="26" />
+    To see all this content in a regular browser or to share with parents or teachers, click Subscribe in Lessons.Church to get all the links you need.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial> 
