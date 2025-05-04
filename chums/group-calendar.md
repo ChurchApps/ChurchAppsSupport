@@ -1,9 +1,22 @@
 ---
 layout: page
 app: chums
-section: Calendar
-title: Adding Events in Group Calendar
+section: Groups
+title: Group Calendar
 ---
+
+# How to set up a Group Calendar in Chums
+
+<div id="videoContainer">
+  <ul id="playlist">
+      <li class="active"><a href="/videos/chums/group-calendar/output.mp4">Setting up a Group Calendar</a></li>
+  </ul>
+</div>
+
+## Related Tutorials
+
+- <a href="/chums/groups.html">Groups</a>
+- <a href="/chums/curated-calendar.html">Curated Calendar</a>
 
 1. ![Calendar 1](https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/f636d0e4-029f-45e0-99dd-74f77a0dfaa4)
    Make sure you have at least one group set up and there are people in the group. Choose one person in your group to be a group leader. The group leader is the only person who can edit the group calendar.

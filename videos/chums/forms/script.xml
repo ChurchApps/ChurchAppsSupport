@@ -1,121 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <tutorial>
     <speak>
     <mark name="1" />
-    Forms are a great feature of CHUMS and B1.Church. You can build People forms for your database or Stand Alone forms for your website or to link to. To begin, navigate to the CHUMS dashboard.
+    To create forms click on the forms icon.
     <break time="1s"/>
     <mark name="2" />
-    Go to settings.
+    Click the "+" button to add a form.
     <break time="1s"/>
     <mark name="3" />
-    Choose Forms.
+    Give the form a name.
     <break time="1s"/>
     <mark name="4" />
-    Click on the plus sign in the top right corner.
+    Associate the form with "People" or "Stand Alone". The "people" form will show up in the edit box of each individual. The "stand alone" form will produce a link which can be used in your web page.
     <break time="1s"/>
     <mark name="5" />
-    Give the form a name. We’ll call this form "Baptism". It will be a custom field in our People file.
+    You will now see your form. Click on the form name (to rename click on the edit button).
     <break time="1s"/>
     <mark name="6" />
-    Choose "People" in the drop-down menu.
+    Click the "+" to add a question. Choose from a variety of question types. Click save. The form will appear to the left.
     <break time="1s"/>
     <mark name="7" />
-    Be sure to click "Save".
+    You are now ready to use the form. Click on the persons name and you will see the title of the form below their info. Click on the name of the form and fill in the blanks.
     <break time="1s"/>
     <mark name="8" />
-    Now we will put the questions within the "Baptism" custom field.
+    For a Stand Alone form, name your form, Choose "Stand Alone" in the "Associate with" box, public or private access, and time frame or not.
     <break time="1s"/>
     <mark name="9" />
-    Click on the plus sign in the top right corner to add a question.
+    Add questions to your form.
     <break time="1s"/>
     <mark name="10" />
-    Add a provider from the drop-down menu. This is where you will choose the type of question you are asking.
+    Choose from the different types of questions available under "Provider".
     <break time="1s"/>
     <mark name="11" />
-    Write a title. This is the question you are asking.
+    Now navigate to your B1.Church website builder page and create a page for your form or insert it into a page you have already created.
     <break time="1s"/>
     <mark name="12" />
-    Add a description.
+    In the "Church Specific" box choose the "Form" element.
     <break time="1s"/>
     <mark name="13" />
-    Don’t forget to click save.
+    In the "Edit Element" box choose one of your forms.
     <break time="1s"/>
     <mark name="14" />
-    You can make as many questions as you like. In this example, we will add the question of what date the person was baptized.
+    You can see the results of your form responses under "Form Submissions".
     <break time="1s"/>
     <mark name="15" />
-    Note that the People forms do not have a link associated with them. The links are associated with the Stand Alone forms.
-    <break time="1s"/>
-    <mark name="16" />
-    Go to your People files to look at the custom field you just made titled Baptism. Click on any name.
-    <break time="1s"/>
-    <mark name="17" />
-    You can see the custom field at the bottom of the file.
-    <break time="1s"/>
-    <mark name="18" />
-    Click on Baptism and fill out the form.
-    <break time="1s"/>
-    <mark name="19" />
-    Once the field is complete, it will show up at the bottom of each file.
-    <break time="1s"/>
-    <mark name="20" />
-    Now let’s go back to Forms and make a Stand Alone form.
-    <break time="1s"/>
-    <mark name="21" />
-    This form will be for the Ladies Retreat.
-    <break time="1s"/>
-    <mark name="22" />
-    Choose Stand Alone for this form.
-    <break time="1s"/>
-    <mark name="23" />
-    You can make the form Public or Restricted. The restricted mode allows you to choose who you want to allow to fill out the form.
-    <break time="1s"/>
-    <mark name="24" />
-    You can set a time frame that the form will be available.
-    <break time="1s"/>
-    <mark name="25" />
-    Choose a begin date and an end date.
-    <break time="1s"/>
-    <mark name="26" />
-    Write a thank you note for people who fill out the form.
-    <break time="1s"/>
-    <mark name="27" />
-    Don’t forget to hit save.
-    <break time="1s"/>
-    <mark name="28" />
-    Now click on the form to add questions to the form.
-    <break time="1s"/>
-    <mark name="29" />
-    Add as many questions as you like.
-    <break time="1s"/>
-    <mark name="30" />
-    If you want to take payments with this form, choose payments under questions.
-    <break time="1s"/>
-    <mark name="31" />
-    Be sure to save.
-    <break time="1s"/>
-    <mark name="32" />
-    Now let’s look at Form Members to see who has access to see the completed forms and edit the form.
-    <break time="1s"/>
-    <mark name="33" />
-    You can set Permission to Admin or View only and turn on or off email notifications.
-    <break time="1s"/>
-    <mark name="34" />
-    To add a person, just search for someone and add them.
-    <break time="1s"/>
-    <mark name="35" />
-    Now let’s go over to B1 to add this form to a webpage.
-    <break time="1s"/>
-    <mark name="36" />
-    Click on your icon in the top right corner.
-    <break time="1s"/>
-    <mark name="37" />
-    Choose Admin portal.
-    <break time="1s"/>
-    <mark name="38" />
-    Choose Website.
-    <break time="1s"/>
-    <mark name="39" />
-    Click the plus in the top right.
-    <break time="1s"/>
+    If you want to have the completed forms e-mailed to you go to "Form Members" and turn on "Email Notification". You can also add other people with authority to change the form or view form results here.
+    <break time="2s"/>
+    <mark name="end"/>
     </speak>
 </tutorial>

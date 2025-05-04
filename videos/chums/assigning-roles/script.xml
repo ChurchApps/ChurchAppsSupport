@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tutorial>
+  <speak>
+    <mark name="1"/>
+    Welcome to the Assigning Roles tutorial in Chums. This guide will show you how to assign and manage roles for your church staff and volunteers.
+    <break time="1s"/>
+    <mark name="2"/>
+    To manage roles, navigate to the Settings section in your Chums dashboard.
+    <break time="1s"/>
+    <mark name="3"/>
+    Click on Roles in the settings menu to see all available roles in your system.
+    <break time="1s"/>
+    <mark name="4"/>
+    To assign a role to someone, first find the person in the People section.
+    <break time="1s"/>
+    <mark name="5"/>
+    Click on their name to open their profile, then go to the Roles tab.
+    <break time="1s"/>
+    <mark name="6"/>
+    Click the Add Role button to assign a new role.
+    <break time="1s"/>
+    <mark name="7"/>
+    Select the role you want to assign from the dropdown menu.
+    <break time="1s"/>
+    <mark name="8"/>
+    Some roles may require additional information, such as department or team assignment.
+    <break time="1s"/>
+    <mark name="9"/>
+    You can set an expiration date for temporary roles if needed.
+    <break time="1s"/>
+    <mark name="10"/>
+    Click Save to assign the role to the person.
+    <break time="1s"/>
+    <mark name="11"/>
+    To remove a role, click the three dots next to the role and select Remove.
+    <break time="1s"/>
+    <mark name="12"/>
+    You can also create new roles by going to Settings and clicking Add Role.
+    <break time="1s"/>
+    <mark name="13"/>
+    When creating a role, you can set specific permissions and access levels.
+    <break time="1s"/>
+    <mark name="14"/>
+    Roles can be assigned to multiple people, and people can have multiple roles.
+    <break time="1s"/>
+    <mark name="15"/>
+    The assigned roles will determine what features and information each person can access in Chums and B1.Church.
+    <break time="2s"/>
+    <mark name="end"/>
+  </speak>
+</tutorial> 

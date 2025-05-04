@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tutorial>
+  <speak>
+    <mark name="1"/>
+    Make sure you have at least one group set up and there are people in the group. Choose one person in your group to be a group leader. The group leader is the only person who can edit the group calendar.
+    <break time="1s"/>
+    <mark name="2"/>
+    Navigate to B1.church.
+    <break time="1s"/>
+    <mark name="3"/>
+    Make sure a group is set up in b1. Click on the admin icon.
+    <break time="1s"/>
+    <mark name="4"/>
+    Click on the mobile icon.
+    <break time="1s"/>
+    <mark name="5"/>
+    Click on the + to add a tab.
+    <break time="1s"/>
+    <mark name="6"/>
+    Type "Groups".
+    <break time="1s"/>
+    <mark name="7"/>
+    Add the group icon if you would like.
+    <break time="1s"/>
+    <mark name="8"/>
+    Choose the type "My Groups".
+    <break time="1s"/>
+    <mark name="9"/>
+    Be sure to click Save.
+    <break time="1s"/>
+    <mark name="10"/>
+    Click on the hamburger icon.
+    <break time="1s"/>
+    <mark name="11"/>
+    Choose groups.
+    <break time="1s"/>
+    <mark name="12"/>
+    Select one of your groups.
+    <break time="1s"/>
+    <mark name="13"/>
+    Click "add an event" or click on a date.
+    <break time="1s"/>
+    <mark name="14"/>
+    Fill out the event form.
+    <break time="1s"/>
+    <mark name="15"/>
+    Be sure to add a start and end time for the event.
+    <break time="1s"/>
+    <mark name="16"/>
+    Click the recurring box if the event repeats.
+    <break time="1s"/>
+    <mark name="17"/>
+    Choose the Interval, Frequency and when the recurring event ends.
+    <break time="1s"/>
+    <mark name="18"/>
+    Be sure to save your event.
+    <break time="1s"/>
+    <mark name="19"/>
+    The event will show up in your group calendar.
+    <break time="1s"/>
+    <mark name="20"/>
+    You can add notes to your calendar at the bottom of the page.
+    <break time="1s"/>
+    <mark name="21"/>
+    The event will show up in your member portal.
+    <break time="2s"/>
+    <mark name="end"/>
+  </speak>
+</tutorial> 

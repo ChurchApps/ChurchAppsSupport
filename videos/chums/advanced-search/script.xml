@@ -1,40 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <tutorial>
     <speak>
     <mark name="1" />
-    For advanced search, navigate to the People icon on the Chums dashboard.
+    Welcome to the Advanced Search tutorial in Chums. This guide will show you how to use advanced search features to find specific people in your database.
     <break time="1s"/>
     <mark name="2" />
-    Click on Advanced in the Search window. In this example, we will search for all men over 21 years of age.
+    To access advanced search, navigate to the People section in your Chums dashboard.
     <break time="1s"/>
     <mark name="3" />
-    Choose a field you would like to search.
+    Click on the Advanced Search button next to the search bar.
     <break time="1s"/>
     <mark name="4" />
-    Any of the default fields can be searched.
+    The advanced search interface allows you to create complex search queries using multiple criteria.
     <break time="1s"/>
     <mark name="5" />
-    Next, choose an operator.
+    Start by selecting a field to search, such as name, email, phone number, or any custom field.
     <break time="1s"/>
     <mark name="6" />
-    Choose a value.
+    Choose an operator for your search, such as equals, contains, or greater than.
     <break time="1s"/>
     <mark name="7" />
-    Save the condition if you plan on adding other conditions.
+    Enter the value you're searching for in the value field.
     <break time="1s"/>
     <mark name="8" />
-    Add another condition.
+    You can add multiple conditions to your search by clicking Add Condition.
     <break time="1s"/>
     <mark name="9" />
-    Choose the field, operator, and value.
+    Choose whether the conditions should match all criteria or any criteria.
     <break time="1s"/>
     <mark name="10" />
-    Click Search.
+    You can also search within specific groups or by membership status.
     <break time="1s"/>
     <mark name="11" />
-    Seven men are in the database who are over 21.
+    Once you've set up your search criteria, click Search to see the results.
     <break time="1s"/>
     <mark name="12" />
-    You can download a CSV file of this list.
+    The results will show all people who match your search criteria.
+    <break time="1s"/>
+    <mark name="13" />
+    You can save your search for future use by clicking Save Search.
+    <break time="1s"/>
+    <mark name="14" />
+    Saved searches can be accessed from the Saved Searches dropdown.
+    <break time="1s"/>
+    <mark name="15" />
+    You can also export the search results to a CSV file for further analysis.
     <break time="2s"/>
     <mark name="end" />
     </speak>

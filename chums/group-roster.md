@@ -5,6 +5,19 @@ section: Groups
 title: Group Roster
 ---
 
+# How to Make a Group Roster in Chums
+
+<div id="videoContainer">
+  <ul id="playlist">
+      <li class="active"><a href="/videos/chums/group-roster/output.mp4">Making a Group Roster</a></li>
+  </ul>
+</div>
+
+## Related Tutorials
+
+- <a href="/chums/groups.html">Groups</a>
+- <a href="/chums/reports.html">Reports</a>
+
 **How To Make a Group Roster**
 
 <img width="1218" alt="Group rosters 1" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/9e6dcaf8-a6d9-4d40-9f7c-9c4f386a9044">
