@@ -1,7 +1,20 @@
 ---
 layout: page
 app: lessons
+section: Lessons.church
+title: Admin - FMR Lessons Church Admin
 ---
+
+# How to add lessons in lessons.church as a For Ministry Resources admin
+
+<div id="videoContainer">
+  <ul id="playlist">
+      <li class="active"><a href="/videos/lessons/admin/fmr-lessons-church-admin/output.mp4">FMR Lessons Church Admin Tutorial</a></li>
+  </ul>
+</div>
+
+## Quick Links
+- [Lessons.Church Login](https://lessons.church/login)
 
 ## "For Ministry Resources" guide to add lessons on lessons.church.
 
@@ -21,7 +34,7 @@ app: lessons
    <img width="1509" alt="Screen Shot 2022-10-02 at 7 31 56 AM" src="https://user-images.githubusercontent.com/65249159/193479486-4e1d0659-f356-4698-bb12-623663acf1dd.png">
 8. To add a new study in a program already created click the + study button.
    <img width="1509" alt="Screen Shot 2022-10-03 at 7 09 07 AM" src="https://user-images.githubusercontent.com/65249159/193563259-b7be89db-86ee-450a-8af0-9eb0315117af.png">
-9. If the study should be live, set live to yes (this will usually be “no” right away to provide time for review).
+9. If the study should be live, set live to yes (this will usually be "no" right away to provide time for review).
    <img width="1509" alt="Screen Shot 2022-10-03 at 7 11 57 AM" src="https://user-images.githubusercontent.com/65249159/193571147-6b04761c-1bd2-45bc-a051-f752b4efcc90.png">
 10. Add a numerical value to represent the order in which the studies should be listed.
     <img width="1509" alt="Screen Shot 2022-10-03 at 7 12 35 AM" src="https://user-images.githubusercontent.com/65249159/193571300-ab74f2a6-2c86-459a-9abf-b1dd2d81d81c.png">
@@ -55,7 +68,7 @@ app: lessons
     <img width="1509" alt="Screen Shot 2022-10-03 at 9 12 42 AM" src="https://user-images.githubusercontent.com/65249159/193585582-a6ab230a-c2fa-4bb9-8d4a-517910fc0c5e.png">
 24. Under the study, click the lesson button.
     <img width="1509" alt="Screen Shot 2022-10-03 at 7 18 49 AM" src="https://user-images.githubusercontent.com/65249159/193574026-ac9797d6-b9f7-42d2-a190-a6eb38fc6882.png">
-25. Select yes if the lesson should be live (this is usually “no” right away o provide time for review).
+25. Select yes if the lesson should be live (this is usually "no" right away o provide time for review).
     <img width="1509" alt="Screen Shot 2022-10-03 at 7 24 17 AM" src="https://user-images.githubusercontent.com/65249159/193574323-6084d2f3-7185-453b-86f7-bf6fbf9576ca.png">
 26. Add a numerical value to represent the order in which the lessons within the study should be listed.
     <img width="1509" alt="Screen Shot 2022-10-03 at 7 24 36 AM" src="https://user-images.githubusercontent.com/65249159/193574415-c1d69dc8-2c7c-4fd2-a576-f9891d243455.png">
@@ -158,7 +171,7 @@ Select the correct action and then put in the appropiate material.
 
 ### DropBox path: DropBox >> FMR >> Resources >> Sermon Series >> Name of Sermon
 
-- Create “Small Group Discussion” and “Reading Plan” categories (ensure both are all caps).
+- Create "Small Group Discussion" and "Reading Plan" categories (ensure both are all caps).
 - Click the + sections button.
 - Add categories.
 - Specify the role. (The role for each category is leader, except for the reading plan category. The role for the reading plan category is student.)
