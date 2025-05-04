@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tutorial>
+  <speak>
+    <mark name="1" />
+    Let's walk through setting up Peace Out in Lessons.Church.
+    <break time="1s"/>
+    <mark name="2" />
+    First, register or login to your Lessons.Church account in a separate Google Chrome browser tab.
+    <break time="1s"/>
+    <mark name="3" />
+    If you haven't already, you'll need to register your church.
+    <break time="1s"/>
+    <mark name="4" />
+    Click on providers on the left side of the page.
+    <break time="1s"/>
+    <mark name="5" />
+    Click the plus sign on the External Providers page.
+    <break time="1s"/>
+    <mark name="6" />
+    Enter the name as "Peace Out" and for the API URL enter https://api.lessons.church/lessons/public/tree?providerId=_f9_06XVB74
+    <break time="1s"/>
+    <mark name="7" />
+    Click on schedules to get back to the schedule page. From the Provider tab, you'll now be able to choose "Peace Out".
+    <break time="1s"/>
+    <mark name="8" />
+    Click on the plus sign to add a new classroom.
+    <break time="1s"/>
+    <mark name="9" />
+    Fill in your first classroom name.
+    <break time="1s"/>
+    <mark name="10" />
+    Click save to create the classroom.
+    <break time="1s"/>
+    <mark name="11" />
+    Now click on the classroom you just made.
+    <break time="1s"/>
+    <mark name="12" />
+    Add a new schedule for this classroom by clicking on the plus sign.
+    <break time="1s"/>
+    <mark name="13" />
+    Fill in the scheduled date, the program you want to use, the study from that program, the lesson from that study, and the venue.
+    <break time="1s"/>
+    <mark name="14" />
+    Click save to create the schedule.
+    <break time="1s"/>
+    <mark name="15" />
+    You can set up as many classrooms and scheduled times as you want.
+    <break time="1s"/>
+    <mark name="16" />
+    If you would like to use the B1 Mobile app for teachers to view the lessons, check out our guide on how to set it up.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial> 
