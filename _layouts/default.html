@@ -72,10 +72,7 @@
     {% include navbar.html %}
     
     <div class="row mx-0">
-        <div class="col-lg-2">
-            {% include sidebar.html %}
-        </div>
-        <div class="col-lg-8" style="border-left:1px solid #333; border-right:1px solid #333; min-height: calc(100vh - 200px);">
+        <div class="col-lg-10 offset-lg-1" style="border-left:1px solid #333; border-right:1px solid #333; min-height: calc(100vh - 200px);">
             <div class="px-4">
                 <div class="sectionName">{{page.section}}</div>
                 {{content}}
