@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tutorial>
+  <speak>
+    <mark name="1"/>
+    Let's export your data from Breeze and import it into Chums. You'll need three files for this process: People, Tags, and Contributions. Don't skip any of these files - you need all three to complete the process.
+    <break time="1s"/>
+    <mark name="2"/>
+    To get these files, go to your Breeze account dashboard, then to 'settings' and 'manage accounts'. Export each file as an .xlsx file separately.
+    <break time="1s"/>
+    <mark name="3"/>
+    Now, let's create a zip file with these three files. On a Mac, highlight the three files, right-click or control-click, and choose Compress. This will create a file named Archive. Save it somewhere on your computer where you can find it easily.
+    <break time="1s"/>
+    <mark name="4"/>
+    On a PC, right-click the three files, select Send to, and then choose Compressed (zipped) folder. A new zipped folder will be created in the same location.
+    <break time="1s"/>
+    <mark name="5"/>
+    Next, go to Chums.org and log in. Navigate to Settings, then Import/Export under tools.
+    <break time="1s"/>
+    <mark name="6"/>
+    Upload the Breeze import zip file you created. Once uploaded, you'll see your data. Scroll to the bottom and click continue.
+    <break time="1s"/>
+    <mark name="7"/>
+    At the bottom of the page, click confirm to import the file into the Chums database.
+    <break time="1s"/>
+    <mark name="8"/>
+    Let the process run until you see the completion screen. Click "Go to Chums" to return to the main application.
+    <break time="1s"/>
+    <mark name="end"/>
+  </speak>
+</tutorial> 
