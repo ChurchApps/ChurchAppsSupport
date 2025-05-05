@@ -1,64 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <tutorial>
     <speak>
     <mark name="1" />
-    To set up groups within Chums, navigate to the dashboard.
+    Click on the Groups icon.
     <break time="1s"/>
     <mark name="2" />
-    Click on People.
+    Click the plus.
     <break time="1s"/>
     <mark name="3" />
-    Choose Groups at the top of the page.
+    Add a Category Name and Group Name and click Add Group.
     <break time="1s"/>
     <mark name="4" />
-    Click the plus sign to add a new group. Groups are any organization or class that you want to distinguish within your congregation.
+    Your new group will show up in the Groups list.
     <break time="1s"/>
     <mark name="5" />
-    Choose a category or create a new category.
+    Click the name of a group then click the pencil to edit the group details.
     <break time="1s"/>
     <mark name="6" />
-    Give your group a name.
+    Choose whether to take attendance, parent pickup (for children's classes) and write a group description.
     <break time="1s"/>
     <mark name="7" />
-    To edit the group details, choose the group name.
+    Type a name to add a person to the group.
     <break time="1s"/>
     <mark name="8" />
-    Then choose the pencil icon in the top right corner.
+    Click the add button.
     <break time="1s"/>
     <mark name="9" />
-    Set up group details.
-    <break time="1s"/>
-    <mark name="10" />
-    Choose a label or create a new one.
-    <break time="1s"/>
-    <mark name="11" />
-    Choose whether to track attendance, parent pickup, or print labels. These categories are for children’s classes where check-in is used. Be sure to save.
-    <break time="1s"/>
-    <mark name="12" />
-    You can now add members to your group.
-    <break time="1s"/>
-    <mark name="13" />
-    Type an individual's name or leave it blank to search your entire database.
-    <break time="1s"/>
-    <mark name="14" />
-    Choose members for your group.
-    <break time="1s"/>
-    <mark name="15" />
-    In this case, the members will show up in the Ushers group.
-    <break time="1s"/>
-    <mark name="16" />
-    Click the message icon to send a message to all of your group members.
-    <break time="1s"/>
-    <mark name="17" />
-    The message will be sent to their B1 app or their email if they do not have the B1 app.
-    <break time="1s"/>
-    <mark name="18" />
-    Hit send.
-    <break time="1s"/>
-    <mark name="19" />
-    You can also download a CSV of the group members by clicking the download icon.
-    <break time="1s"/>
-    <mark name="20" />
-    Your group now shows up under Groups.
+    When you are finished click save.
     <break time="2s"/>
     <mark name="end" />
     </speak>

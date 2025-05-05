@@ -5,6 +5,19 @@ section: People
 title: Adding People
 ---
 
+# How to Add People in Chums
+
+<div id="videoContainer">
+  <ul id="playlist">
+      <li class="active"><a href="/videos/chums/adding-people/output.mp4">Adding People</a></li>
+  </ul>
+</div>
+
+## Related Tutorials
+
+- <a href="/chums/advanced-search.html">Advanced Search</a>
+- <a href="/chums/assigning-roles.html">Assigning Roles</a>
+
 # Adding People to Chums
 
 1. <img width="1302" alt="Add People 1" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/e1000805-242c-4ac6-b194-82d5b9a45b79">

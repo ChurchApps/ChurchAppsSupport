@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tutorial>
+  <speak>
+    <mark name="1" />
+    Now that we've created our study, let's learn how to add lessons and venues in Lessons.Church.
+    <break time="1s"/>
+    <mark name="2" />
+    To create a lesson, click the lesson button under the study.
+    <break time="1s"/>
+    <mark name="3" />
+    Set whether the lesson should be live - usually no initially.
+    <break time="1s"/>
+    <mark name="4" />
+    Add a numerical value for the lesson's order.
+    <break time="1s"/>
+    <mark name="5" />
+    Enter the lesson name, typically the lesson number.
+    <break time="1s"/>
+    <mark name="6" />
+    Create a slug for the URL - no caps or spaces.
+    <break time="1s"/>
+    <mark name="7" />
+    Add a longer description for the lesson.
+    <break time="1s"/>
+    <mark name="8" />
+    If you have a YouTube video, enter the embedded URL.
+    <break time="1s"/>
+    <mark name="9" />
+    Add a lesson graphic following the same steps as the series graphic.
+    <break time="1s"/>
+    <mark name="10" />
+    To add files, click on Files from the Study Level.
+    <break time="1s"/>
+    <mark name="11" />
+    Click the plus sign to add a new bundle.
+    <break time="1s"/>
+    <mark name="12" />
+    Click on the Add Bundle label.
+    <break time="1s"/>
+    <mark name="13" />
+    Name your bundle, like "Series Materials", and click save.
+    <break time="1s"/>
+    <mark name="14" />
+    Click plus Resource to add files to your bundle.
+    <break time="1s"/>
+    <mark name="15" />
+    The new resource will be added to your current bundle.
+    <break time="1s"/>
+    <mark name="16" />
+    Enter a resource name and click save.
+    <break time="1s"/>
+    <mark name="17" />
+    Click the arrow to open your bundle folder.
+    <break time="1s"/>
+    <mark name="18" />
+    Click Add to add files to your resource.
+    <break time="1s"/>
+    <mark name="19" />
+    You can add three types of files: Variants for download and player, Assets for player only, or Bulk Add Assets.
+    <break time="1s"/>
+    <mark name="20" />
+    Choose your file and label the variant with its file type.
+    <break time="1s"/>
+    <mark name="21" />
+    To create venues, click on Venues.
+    <break time="1s"/>
+    <mark name="22" />
+    Click the plus button to add a new venue.
+    <break time="1s"/>
+    <mark name="23" />
+    Enter the venue name and click save.
+    <break time="1s"/>
+    <mark name="24" />
+    After creating Large and Small Group venues, click edit on the venue you want to modify.
+    <break time="1s"/>
+    <mark name="25" />
+    Click the plus button to add a new section.
+    <break time="1s"/>
+    <mark name="26" />
+    Select Create New.
+    <break time="1s"/>
+    <mark name="27" />
+    Enter a section name and any material notes, then click save.
+    <break time="1s"/>
+    <mark name="28" />
+    Add your first role, typically the presenter.
+    <break time="1s"/>
+    <mark name="29" />
+    There are five action types: Say, Do, Play, Download, and Note.
+    <break time="1s"/>
+    <mark name="30" />
+    For the Large Group venue, use the sermon scripts from Dropbox.
+    <break time="1s"/>
+    <mark name="31" />
+    Create categories like PREPARATION, ILLUSTRATION, TENSION/TRANSITION, BIBLE STUDY, APPLICATION, and LANDING.
+    <break time="1s"/>
+    <mark name="32" />
+    For the Small Group venue, create SMALL GROUP DISCUSSION and READING PLAN categories.
+    <break time="1s"/>
+    <mark name="33" />
+    Small Group Discussion should have a Do action for asking questions and a Say action for the questions.
+    <break time="1s"/>
+    <mark name="34" />
+    The Reading Plan only requires a Do action.
+    <break time="1s"/>
+    <mark name="35" />
+    Finally, mark the Lesson and Study as live, then test everything on Lessons.Church.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial> 

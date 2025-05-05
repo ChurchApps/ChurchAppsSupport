@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tutorial>
+  <speak>
+    <mark name="1"/>
+    In the Chums dashboard click on the Donation icon.
+    <break time="1s"/>
+    <mark name="2"/>
+    The default Donation Summary is for the past year. You can choose whatever dates you would like to show. Click "Run Report".
+    <break time="1s"/>
+    <mark name="3"/>
+    To download a CSV of the Donation Summary click the download icon. This will produce a dropdown menu. Choose "Fund Summary" and a CSV file will download to your Downloads File. This file does not include donors names.
+    <break time="1s"/>
+    <mark name="4"/>
+    Click on the "Detailed Summary" to produce a CSV file which includes each donors name, how much they have given and which fund they gave to during the "Filter Report" dates.
+    <break time="1s"/>
+    <mark name="5"/>
+    Use the following templates or create your own Pages or Word document to mail merge with the CSV file (using Numbers or Excel) for a donation report.
+    <break time="1s"/>
+    <mark name="6"/>
+    To view individual donations click on the batch you would like to see.
+    <break time="1s"/>
+    <mark name="7"/>
+    You can download a csv file showing the results. This will include the donor and the amount given in that batch.
+    <break time="2s"/>
+    <mark name="end"/>
+  </speak>
+</tutorial> 

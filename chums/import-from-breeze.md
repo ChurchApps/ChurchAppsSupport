@@ -5,6 +5,18 @@ section: Data
 title: Import from Breeze
 ---
 
+# Importing Data from Breeze into Chums
+
+<div id="videoContainer">
+  <ul id="playlist">
+    <li class="active">
+      <a href="/videos/chums/import-breeze/output.mp4">How to Import Data from Breeze into Chums</a>
+    </li>
+  </ul>
+</div>
+
+## Step-by-Step Instructions
+
 # How to Export Data From Breeze.
 
 1. <img width="1512" alt="Screen Shot 2023-02-14 at 6 20 24 PM" src="https://user-images.githubusercontent.com/65249159/218885516-805db43d-6720-4746-93b6-277f5337374e.png">

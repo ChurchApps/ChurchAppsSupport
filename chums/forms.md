@@ -5,6 +5,19 @@ section: Forms
 title: Forms
 ---
 
+# How to Create Forms in Chums
+
+<div id="videoContainer">
+  <ul id="playlist">
+      <li class="active"><a href="/videos/chums/forms/output.mp4">Creating Forms</a></li>
+  </ul>
+</div>
+
+## Related Tutorials
+
+- <a href="/chums/groups.html">Groups</a>
+- <a href="/chums/automations.html">Automations</a>
+
 # Create forms in CHUMS\*
 
 1. <img width="1299" alt="Forms Screen" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/97fec6f6-4e0c-41e7-96ab-60acb13ced6b">

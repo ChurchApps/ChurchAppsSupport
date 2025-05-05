@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tutorial>
+  <speak>
+    <mark name="1"/>
+    Choose the group you want to make a roster for.
+    <break time="1s"/>
+    <mark name="2"/>
+    Click on the download icon.
+    <break time="1s"/>
+    <mark name="3"/>
+    A csv will be downloaded to your computer.
+    <break time="1s"/>
+    <mark name="4"/>
+    Your roster may be used in Excel or Pages.
+    <break time="2s"/>
+    <mark name="end"/>
+  </speak>
+</tutorial> 

@@ -53,6 +53,7 @@ h4 { font-size: 1.1rem; margin-top:20px; }
   text-decoration: none;
 }
 
+/*
 .doc-img, .doc-img:hover {
   text-decoration: none;
   margin-left:20px;
@@ -68,6 +69,7 @@ h4 { font-size: 1.1rem; margin-top:20px; }
   padding:5px;
   border-radius: 0px 0px 5px 5px;
 }
+*/
 
 .doc-img img {
   max-width: 250px;

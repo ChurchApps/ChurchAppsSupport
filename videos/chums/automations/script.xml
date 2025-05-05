@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tutorial>
+  <speak>
+    <mark name="1"/>
+    Welcome to the Chums Automations tutorial. Automations help you streamline your church's workflows by automatically performing tasks based on specific triggers.
+    <break time="1s"/>
+    <mark name="2"/>
+    To get started with automations, navigate to the Chums dashboard and click on the Settings icon.
+    <break time="1s"/>
+    <mark name="3"/>
+    In the Settings menu, find and click on Automations.
+    <break time="1s"/>
+    <mark name="4"/>
+    You'll see a list of your existing automations. To create a new one, click the Add Automation button in the top right corner.
+    <break time="1s"/>
+    <mark name="5"/>
+    First, give your automation a descriptive name. This helps you identify its purpose later.
+    <break time="1s"/>
+    <mark name="6"/>
+    Next, choose a trigger. Triggers are events that start your automation, such as when someone joins a group or when a task is completed.
+    <break time="1s"/>
+    <mark name="7"/>
+    After selecting a trigger, you'll need to configure its specific settings. For example, if you chose "Person joins group" as your trigger, you'll need to select which group.
+    <break time="1s"/>
+    <mark name="8"/>
+    Now, add the actions that should occur when the trigger happens. Click Add Action to see the available options.
+    <break time="1s"/>
+    <mark name="9"/>
+    Common actions include sending an email, creating a task, or adding a person to a group. Select the action you want to perform.
+    <break time="1s"/>
+    <mark name="10"/>
+    Configure the details of your chosen action. For example, if you're sending an email, you'll need to write the subject and message.
+    <break time="1s"/>
+    <mark name="11"/>
+    You can add multiple actions to a single automation. They will execute in the order you add them.
+    <break time="1s"/>
+    <mark name="12"/>
+    Before saving, review your automation settings to ensure everything is configured correctly.
+    <break time="1s"/>
+    <mark name="13"/>
+    Click Save to activate your automation. It will now run automatically whenever the trigger conditions are met.
+    <break time="1s"/>
+    <mark name="14"/>
+    To manage existing automations, you can edit, pause, or delete them from the main automations list.
+    <break time="1s"/>
+    <mark name="15"/>
+    You can also view the history of your automations to see when they've been triggered and what actions were taken.
+    <break time="2s"/>
+    <mark name="end"/>
+  </speak>
+</tutorial> 

@@ -5,7 +5,16 @@ section: Lessons.church
 title: Admin - Add a Lesson
 ---
 
-# How to add lessons in lessons.church as an admin.
+# How to add lessons in lessons.church as an admin
+
+<div id="videoContainer">
+  <ul id="playlist">
+      <li class="active"><a href="/videos/lessons/admin/add-lesson/output.mp4">Adding Lessons in Lessons.Church</a></li>
+  </ul>
+</div>
+
+## Quick Links
+- [Lessons.Church Login](https://lessons.church/login)
 
 ## Login
 
@@ -37,7 +46,7 @@ title: Admin - Add a Lesson
    To add a new study in a program already created click the + study button.
 
 2. <img width="1509" alt="Screen Shot 2022-10-03 at 7 11 57 AM" src="https://user-images.githubusercontent.com/65249159/193571147-6b04761c-1bd2-45bc-a051-f752b4efcc90.png">
-   If the study should be live, set live to yes (this will usually be “no” right away to provide time for review).
+   If the study should be live, set live to yes (this will usually be "no" right away to provide time for review).
 
 3. <img width="1509" alt="Screen Shot 2022-10-03 at 7 12 35 AM" src="https://user-images.githubusercontent.com/65249159/193571300-ab74f2a6-2c86-459a-9abf-b1dd2d81d81c.png">
    Add a numerical value to represent the order in which the studies should be listed.
@@ -86,7 +95,7 @@ title: Admin - Add a Lesson
    Under the study, click the lesson button.
 
 2. <img width="1509" alt="Screen Shot 2022-10-03 at 7 24 17 AM" src="https://user-images.githubusercontent.com/65249159/193574323-6084d2f3-7185-453b-86f7-bf6fbf9576ca.png">
-   Select yes to if the lesson should be live (this is usually “no” right away o provide time for review).
+   Select yes to if the lesson should be live (this is usually "no" right away o provide time for review).
 
 3. <img width="1509" alt="Screen Shot 2022-10-03 at 7 24 36 AM" src="https://user-images.githubusercontent.com/65249159/193574415-c1d69dc8-2c7c-4fd2-a576-f9891d243455.png">
    Add a numerical value to represent the order in which the lessons within the study should be listed.

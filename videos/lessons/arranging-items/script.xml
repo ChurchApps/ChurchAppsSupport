@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tutorial>
+  <speak>
+    <mark name="1" />
+    Let's learn how to arrange lesson items to play in your preferred order.
+    <break time="1s"/>
+    <mark name="2" />
+    First, register or login to your Lessons.Church account.
+    <break time="1s"/>
+    <mark name="3" />
+    Inside your schedules, click on the person with a gear on their shoulder icon.
+    <break time="1s"/>
+    <mark name="4" />
+    Use the Up, Down, and Trashcan icons to set the items inside the schedule the way you want them to be arranged.
+    <break time="1s"/>
+    <mark name="5" />
+    Everything auto-saves and will be distributed to the apps exactly as you set it up.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial> 

@@ -1,32 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <tutorial>
     <speak>
     <mark name="1" />
-    To add people to your Chums database, navigate to your Chums Dashboard.
+    In the Chums homepage, go to the people icon on the left side of the page.
     <break time="1s"/>
     <mark name="2" />
-    The dropdown menu will show your options. Begin in People.
+    If you have already imported people go to the bottom of the first page and find the "Add a New Person" box. Type in the name of the person and click Add.
     <break time="1s"/>
     <mark name="3" />
-    Enter the name of the person you want to add.
+    To see all the files you have added leave the "Simple Search" box blank and click "Search".
     <break time="1s"/>
     <mark name="4" />
-    If the person has not already been entered into the database, the “Add a New Person” box will appear.
-    Enter the person's first and last name and e-mail.
+    To find a specific person, type their name and hit "Search". You can also just type their first or last name and find everyone with that name.
     <break time="1s"/>
     <mark name="5" />
-    Click the edit pencil in the top right corner of the Personal Details dialog box.
+    You can also search for and add new people from the Chums home page.
     <break time="1s"/>
     <mark name="6" />
-    Fill in as much information in the record as you like.
+    You can change which fields show up on the view screen by clicking the icon in the top right corner and choosing which fields you want.
     <break time="1s"/>
     <mark name="7" />
-    By default, the most recent 25 records can be seen.
-    <break time="1s"/>
-    <mark name="8" />
-    To view all records, leave the Simple Search blank and click Search.
-    <break time="1s"/>
-    <mark name="9" />
-    You can also add records by navigating to the bottom of the Recently Added People.
-    <break time="1s"/>
+    You can add a quick delete button by clicking the icon in the top right corner and choosing "Delete Option".
+    <break time="2s"/>
+    <mark name="end"/>
     </speak>
 </tutorial>

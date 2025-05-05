@@ -7,6 +7,17 @@ title: Automations
 
 # How to set up Automated Tasks in Chums
 
+<div id="videoContainer">
+  <ul id="playlist">
+      <li class="active"><a href="/videos/chums/automations/output.mp4">Setting up Automations</a></li>
+  </ul>
+</div>
+
+## Related Tutorials
+
+- <a href="/chums/groups.html">Groups</a>
+- <a href="/chums/forms.html">Forms</a>
+
 1. ![Auto Task 1](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/55f0cbde-3f6a-4b3f-9022-58f38e6b9b54)
    You can set up any number of tasks using qualifiers to make the task specific to a group or individual. Click the Tasks icon and click Automations.
 

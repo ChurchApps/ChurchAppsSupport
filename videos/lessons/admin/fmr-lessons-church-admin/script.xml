@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tutorial>
+  <speak>
+    <mark name="1" />
+    Let's learn how to add lessons in Lessons.Church as a For Ministry Resources admin.
+    <break time="1s"/>
+    <mark name="2" />
+    First, go to Lessons.Church and click on login.
+    <break time="1s"/>
+    <mark name="3" />
+    Enter your credentials and click sign in.
+    <break time="1s"/>
+    <mark name="4" />
+    Select your organization.
+    <break time="1s"/>
+    <mark name="5" />
+    Click your name or the organization's name at the top right.
+    <break time="1s"/>
+    <mark name="6" />
+    Select Admin.
+    <break time="1s"/>
+    <mark name="7" />
+    Click the plus sign on the program you want to work on.
+    <break time="1s"/>
+    <mark name="8" />
+    To add a new program, use the plus sign in the top right.
+    <break time="1s"/>
+    <mark name="9" />
+    To add a new study in an existing program, click the plus study button.
+    <break time="1s"/>
+    <mark name="10" />
+    Set whether the study should be live. Usually set to no initially for review.
+    <break time="1s"/>
+    <mark name="11" />
+    Add a numerical value for the study's order.
+    <break time="1s"/>
+    <mark name="12" />
+    Enter the study name.
+    <break time="1s"/>
+    <mark name="13" />
+    Create a slug for the URL - no caps or spaces allowed.
+    <break time="1s"/>
+    <mark name="14" />
+    Add a one-sentence description from the website page of the given sermon.
+    <break time="1s"/>
+    <mark name="15" />
+    Leave the longer description blank as it's not currently set up.
+    <break time="1s"/>
+    <mark name="16" />
+    Leave the YouTube embedded link blank as it's not currently set up.
+    <break time="1s"/>
+    <mark name="17" />
+    Add a series graphic - this is required. Click anywhere in the gray box.
+    <break time="1s"/>
+    <mark name="18" />
+    Click Upload and choose your image.
+    <break time="1s"/>
+    <mark name="19" />
+    Choose the correct image from your computer files.
+    <break time="1s"/>
+    <mark name="20" />
+    Click Open.
+    <break time="1s"/>
+    <mark name="21" />
+    Adjust the image using the corner handles.
+    <break time="1s"/>
+    <mark name="22" />
+    Click Update.
+    <break time="1s"/>
+    <mark name="23" />
+    Scroll down and click Save before leaving the page.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial> 

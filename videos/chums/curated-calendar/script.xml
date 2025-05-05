@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tutorial>
+  <speak>
+    <mark name="1"/>
+    Navigate to B1.church and choose the settings icon (gear).
+    <break time="1s"/>
+    <mark name="2"/>
+    Choose "Calendars".
+    <break time="1s"/>
+    <mark name="3"/>
+    Click "Add".
+    <break time="1s"/>
+    <mark name="4"/>
+    Select a group you want to add to the calendar.
+    <break time="1s"/>
+    <mark name="5"/>
+    Choose to add all events or specific events.
+    <break time="1s"/>
+    <mark name="6"/>
+    The information will show up on the Curated Calendar.
+    <break time="2s"/>
+    <mark name="end"/>
+  </speak>
+</tutorial> 
