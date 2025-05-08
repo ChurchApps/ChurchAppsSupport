@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tutorial>
+    <speak>
+    <mark name="1" />
+    Navigate to the Chums dashboard
+    <break time="1s"/>
+    <mark name="2" />
+    Go to settings
+    <break time="1s"/>
+    <mark name="3" />
+    Choose Manage
+    <break time="1s"/>
+    <mark name="4" />
+    Click the edit pencil in the top right corner
+    <break time="1s"/>
+    <mark name="5" />
+    Navigate down to the Giving section and choose Stripe in the Provider box
+    <break time="1s"/>
+    <mark name="6" />
+    Go back to your Stripe account and copy your Public and Secret Key and paste them here
+    <break time="1s"/>
+    <mark name="7" />
+    The rates are set at the default rate for Stripe. You can negotiate with Stripe and sometimes get these rates reduced. To apply for a nonprofit discount with Stripe, you'll need to confirm your 501(c)(3) status with Stripe and provide proof that at least 80% of your payment volume will be tax-deductible donations. You can then email Stripe nonprofit@stripe.com with your EIN, primary email address associated with your Stripe account, and confirmation of your nonprofit status.
+    <break time="1s"/>
+    <mark name="8" />
+    Your donation landing page URL will be:
+    yoursubdomian.b1.church/donation-landing for example: https://ironwood.b1.church/donation-landing.
+    Now you can copy and paste or link your domain wherever you want to take donations.
+    <break time="1s"/>
+    <mark name="9" />
+    When you are finished click save.
+    <break time="1s"/>
+    <mark name="9" />
+    Now let's go to B1 and set up a donation page on your website. Go to the manager drop down in the top right corner and choose switch app.
+    <break time="1s"/>
+    <mark name="10" />
+    Choose B1.Church
+    <break time="1s"/>
+    <mark name="11" /> 
+    Once in B1 choose Admin Portal under your name.
+    <break time="1s"/>
+    <mark name="12" />
+    On the left side click on the arrow next to Mobile App and choose Website.
+    <break time="1s"/>
+    <mark name="13" />
+    An auto generated page is available to use as you design your website and mobile app. 
+    <break time="1s"/>
+    <mark name="14" />
+    You can customize this page by clicking on it a converting it to a custom page.
+    <break time="2s "/>
+    <mark name="end" />
+    </speak>
+</tutorial>
