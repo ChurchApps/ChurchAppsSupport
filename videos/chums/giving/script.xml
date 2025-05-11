@@ -47,7 +47,7 @@
     <break time="1s"/>
     <mark name="14" />
     You can customize this page by clicking on it a converting it to a custom page.
-    <break time="2s "/>
+    <break time="2s"/>
     <mark name="end" />
     </speak>
 </tutorial>
