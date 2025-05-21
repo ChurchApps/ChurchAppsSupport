@@ -9,7 +9,7 @@ title: Tasks Setup
 
 <div id="videoContainer">
   <ul id="playlist">
-      <li class="active"><a href="/videos/chums/tasks-setup/output.mp4">Setting up Tasks</a></li>
+      <li class="active"><a href="/videos/chums/tasks/output.mp4">Setting up Tasks</a></li>
   </ul>
 </div>
 
