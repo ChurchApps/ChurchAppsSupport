@@ -1,0 +1,35 @@
+1.Let’s make a new group and set up the group calendar. Navigate to the Chums dashboard then to People. 
+2.Choose Groups.
+3.Click the plus in the top right corner to add a group.
+4.Choose a category name or make a new category.
+5.Give your group a name.
+6.Now click on your group name
+7.Click the edit pencil
+8.Fill in as much information as you like
+9.Be sure to click save.
+10.Click on the members icon on the left side to add members
+11.Add members by typing a name or leaving the search bar blank and hitting search.
+12.Choose a person to be the leader of the group. The leader of the group is the only person who can edit the calendar. Any group member can see a list of events and comment on them.
+13.Navigate to the drop down menu at the top right of your screen 
+14.Choose switch app 
+15.Go to B1.church
+16.On the left side of your screen choose groups
+17.Choose your group to edit the calendar. In this case Master’s Men
+18.Click calendar on the left hand side of the screen
+19.Click add an event
+20.Give the event a title 
+21.Write a short description of the event
+22.Add a start time
+23.And an end time
+24.Click the recurring box if the event is recurring
+25.You can choose intervals so the event will recur every so many days. For instance if you put three in the interval box it will repeat every third day
+26.Or you can choose frequency by day, week or month
+27.This event will repeat every Saturday
+28.There are multiple ways to view the calendar, Month
+29.Week
+30.Day
+31.And agenda
+32.Click the event to see details. Members and leaders can start a conversation within the event and leaders can edit.
+33.You can add your calendar to your google calendar (or any other calendar) by clicking subscribe 
+
+
