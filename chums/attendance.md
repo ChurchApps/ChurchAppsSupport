@@ -10,8 +10,7 @@ title: Attendance
 <div id="videoContainer">
   <ul id="playlist">
       <li class="active"><a href="/videos/chums/attendance/output.mp4">Setting up Attendance</a></li>
-      <li><a href="/videos/chums/attendance-recording/output.mp4">Recording Attendance</a></li>
-  </ul>
+    </ul>
 </div>
 
 ## Related Tutorials
