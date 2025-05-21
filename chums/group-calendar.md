@@ -9,7 +9,7 @@ title: Group Calendar
 
 <div id="videoContainer">
   <ul id="playlist">
-      <li class="active"><a href="/videos/chums/group-calendar/output.mp4">Setting up a Group Calendar</a></li>
+      <li class="active"><a href="/videos/chums/calendars/output.mp4">Setting up a Group Calendar</a></li>
   </ul>
 </div>
 
