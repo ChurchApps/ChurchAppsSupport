@@ -2,22 +2,37 @@
 <tutorial>
   <speak>
     <mark name="1"/>
-    Navigate to B1.church and choose the settings icon (gear).
+    You can make a curated calendar using events from your group calendars. From the Chums dashboard navigate to B1.church
     <break time="1s"/>
     <mark name="2"/>
-    Choose "Calendars".
+    Click on your name and Go to the admin portal
     <break time="1s"/>
     <mark name="3"/>
-    Click "Add".
+    Choose calendars from the mobile app dropdown menu
     <break time="1s"/>
     <mark name="4"/>
-    Select a group you want to add to the calendar.
+    Click the plus sign and give your calendar a name
     <break time="1s"/>
     <mark name="5"/>
-    Choose to add all events or specific events.
+    Be sure to hit save
     <break time="1s"/>
     <mark name="6"/>
-    The information will show up on the Curated Calendar.
+    Click on the calendar icon to add events
+    <break time="1s"/>
+    <mark name="7"/>
+    Click add to choose a group
+    <break time="1s"/>
+    <mark name="8"/>
+    Select a group
+    <break time="1s"/>
+    <mark name="9"/>
+    Choose any group you want to add to the calendar
+    <break time="1s"/>
+    <mark name="10"/>
+    You can add all the events from the calendar or choose specific events to add
+    <break time="1s"/>
+    <mark name="11"/>
+    You now have a curated calender that you can add to your website 
     <break time="2s"/>
     <mark name="end"/>
   </speak>
