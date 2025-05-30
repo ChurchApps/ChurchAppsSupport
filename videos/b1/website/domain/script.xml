@@ -9,11 +9,12 @@
     In Chums, choose the settings menu on the left.
     <break time="1s"/>
     <mark name="4" />
-    And click the edit settings icon.
+    In the dashboard pulldown click on settings
     If you are missing these options, it's because you lack permissions.
     Request the person who set up your church grant you access to "Edit Church Settings"
     <break time="1s"/>
     <mark name="5" />
+    Click on manage
     Every church that uses B1 has a subdomain assigned to them.  In our case, we have chosen "ironwood" as the subdomain for our test church of Ironwood Church.
     This means we can go to ironwood.b1.church to get to our B1 content.
     <break time="1s"/>
