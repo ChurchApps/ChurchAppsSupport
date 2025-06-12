@@ -5,7 +5,7 @@ section: Portal Features
 title: Donations
 ---
 
-# Configuring Online Streaming and Sermon Videos
+# Donations
 
 <div id="videoContainer">
   <ul id="playlist">

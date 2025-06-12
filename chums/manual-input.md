@@ -2,7 +2,7 @@
 layout: page
 app: chums
 section: Giving
-title: Manual Input
+title: Manual-Input
 ---
 
 # How to Manually Input Donations in Chums
