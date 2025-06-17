@@ -1,0 +1,24 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    Every church in B1 has a website available at subdomain.b1.church. See the configuring Domains tutorial to the right for how to configure your subdomain.
+    <mark name="2" />
+    In the Chums dashboard click on your name and click switch app in the dropdown menu
+    <break time="1s"/>
+    <mark name="3" />
+    Click B1 dot Church
+    <break time="1s"/>
+    <mark name="4" />
+    Now click on your name in the top right corner
+    <break time="1s"/>
+    <mark name="5" />
+    and choose Admin Portal
+    <break time="1s"/>
+    <mark name="6" />
+    Click on the down arrow next to Mobile App
+    <mark name="7" />
+    Choose website
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
