@@ -4,7 +4,7 @@
 Sometimes you have information you want repeated on multiple pages.  Blocks are where you can store this information so you can edit a single copy.
 <break time="1s"/>
 <mark name="2" />
-To get started click the Plus icon next to Reusable Blocks
+To get started click the Plus icon in the top right corner
 <break time="1s"/>
 <mark name="3" />
 Give it a name and choose whether this block contains a group of sections or elements.  See the tutorial on Sections and Elements for more information.
