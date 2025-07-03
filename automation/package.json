@@ -1,0 +1,21 @@
+{
+  "name": "churchapps-tutorial-updater",
+  "version": "1.0.0",
+  "description": "Automated tutorial update system for ChurchApps Support",
+  "main": "tutorial_updater.js",
+  "scripts": {
+    "test": "node tutorial_updater.js",
+    "install-browsers": "npx playwright install"
+  },
+  "dependencies": {
+    "playwright": "^1.40.0"
+  },
+  "keywords": [
+    "automation",
+    "tutorial",
+    "churchapps",
+    "playwright"
+  ],
+  "author": "ChurchApps Support Team",
+  "license": "MIT"
+}

@@ -2,25 +2,19 @@
 <tutorial>
     <speak>
     <mark name="1" />
-    In the Chums homepage, go to the people icon on the left side of the page.
+    In the CHUMS dashboard, navigate to the People section to manage your church members.
     <break time="1s"/>
     <mark name="2" />
-    If you have already imported people go to the bottom of the first page and find the "Add a New Person" box. Type in the name of the person and click Add.
+    To add a new person, look for the "Add Person" button on the People page.
     <break time="1s"/>
     <mark name="3" />
-    To see all the files you have added leave the "Simple Search" box blank and click "Search".
+    Click the "Add Person" button to open the new person form.
     <break time="1s"/>
     <mark name="4" />
-    To find a specific person, type their name and hit "Search". You can also just type their first or last name and find everyone with that name.
+    Fill in the person's details including their first name, last name, and email address.
     <break time="1s"/>
     <mark name="5" />
-    You can also search for and add new people from the Chums home page.
-    <break time="1s"/>
-    <mark name="6" />
-    You can change which fields show up on the view screen by clicking the icon in the top right corner and choosing which fields you want.
-    <break time="1s"/>
-    <mark name="7" />
-    You can add a quick delete button by clicking the icon in the top right corner and choosing "Delete Option".
+    Click "Submit" to save the person to your database.
     <break time="2s"/>
     <mark name="end"/>
     </speak>
