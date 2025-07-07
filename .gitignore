@@ -1,3 +1,5 @@
 _site
 .jekyll-cache
 /admin/node_modules
+node_modules
+.claude
