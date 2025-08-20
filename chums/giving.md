@@ -43,7 +43,11 @@ title: Giving Setup
 
 - You will get a notification in your e-mail every time you get a donation on [Stripe](https://stripe.com).
 - If you would like to change the email address that receives the notification of a donation go to the [Stripe](https://stripe.com) dashboard, click on the profile on the top right corner, in the pop-up choose "profile". Click on "edit" in profile and you can change the e-mail to whatever you choose.
-  You can also follow [these](https://support.stripe.com/questions/change-the-email-address-where-stripe-emails-are-sent#:~:text=If%20you%20want%20account%2Drelated,Stripe%20to%20other%20email%20addresses) instructions to forward notifications to whoever you would like.
+  You can also follow [these](https://support.stripe.com/questions/change-the-email-addresses-where-stripe-emails-are-sent#:~:text=If%20you%20want%20account%2Drelated,Stripe%20to%20other%20email%20addresses) instructions to forward notifications to whoever you would like.
+
+**Member Donation Memos**
+
+When members make donations through your B1 church portal, they can now include memos with their gifts to specify the purpose of their donation. These memos will appear in your donation records and reports, helping you track designated gifts even when specific funds aren't set up. For more information on how members can add memos, see [Member Donations](/b1/portal/donations/).
 
 **Donation summary**
 

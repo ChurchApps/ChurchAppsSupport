@@ -41,4 +41,6 @@ title: Donation Report
    To view individual donations click on the batch you would like to see.
 
 9. <img width="1214" alt="Donation report 4" src="https://github.com/ChurchApps/ChurchAppsSupport/assets/127863068/4736ab61-3290-4f33-9d64-5c7c27e80a3d">
-   You can download a csv file showing the results. This will include the donor and the amount given in that batch.
+   You can download a csv file showing the results. This will include the donor and the amount given in that batch, as well as any memos that members included with their donations.
+
+**Note:** When members donate through your B1 church portal, they can include memos with their donations to specify the purpose of their gift. These memos will appear in your donation reports and help you track designated gifts. For more information on how members add memos, see [Member Donations](/b1/portal/donations/).

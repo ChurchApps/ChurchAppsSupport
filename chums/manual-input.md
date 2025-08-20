@@ -17,3 +17,4 @@ title: Manual-Input
 
 - <a href="/chums/donation-report.html">Donation Report</a>
 - <a href="/chums/reports.html">Reports</a>
+- <a href="/b1/portal/donations/memos.html">Member Donation Memos</a>
