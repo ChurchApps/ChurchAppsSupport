@@ -32,3 +32,7 @@ Access to the production servers is strictly limited to the server administrator
 #### Privacy Policy
 
 Your data is yours and will never be sold to third parties. You can read our full privacy policy [here](https://chums.org/privacy).
+
+#### GDPR compliance
+
+ChurchApps does not currently support GDPR compliance due to the significant technical and financial requirements involved. GDPR would require us to host data on EU-based servers and build a separate infrastructure to route and store data regionally, effectively doubling our hosting and development costs. As a nonprofit offering free tools to churches, we do not have the resources to support this at this time.
