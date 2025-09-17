@@ -2,44 +2,104 @@
 <tutorial>
   <speak>
     <mark name="1"/>
-    Let's set up plans in Chums. First, click on the Plans icon in the navigation menu.
+    Let's set up plans in Chums. In the chums dashboard go to serving in the drop-down menu of dashboard
     <break time="1s"/>
     <mark name="2"/>
-    Click the Add Plan button to create a new plan.
+    Click on add ministry
     <break time="1s"/>
     <mark name="3"/>
-    Enter a name for your plan and select the start date.
+    Give your ministry a name.
     <break time="1s"/>
     <mark name="4"/>
-    Choose the ministries that will be part of this plan.
+    Click add
     <break time="1s"/>
     <mark name="5"/>
-    For each ministry, select the teams that will be involved.
+    In this case, we named our ministry worship now click on worship
     <break time="1s"/>
     <mark name="6"/>
-    Now, let's add volunteers to the teams. Click on a team to see its members.
+    Now create a team, click on the teams icon in the top right corner
     <break time="1s"/>
     <mark name="7"/>
-    Click the Add Volunteer button to assign people to this team.
+    Click create team
     <break time="1s"/>
     <mark name="8"/>
-    Search for and select the volunteers you want to add.
+    Now give your team a name
     <break time="1s"/>
     <mark name="9"/>
-    Set the role for each volunteer in the team.
+    And click add
     <break time="1s"/>
     <mark name="10"/>
-    Click Save to add the volunteers to the team.
+    Click on your team name to add members
     <break time="1s"/>
     <mark name="11"/>
-    Repeat this process for each team in your plan.
+    Search your database by leaving the search field blank or typing in the name and add members to the team
     <break time="1s"/>
     <mark name="12"/>
-    Once all teams have their volunteers assigned, click Save Plan.
+    Add as many members as you like
     <break time="1s"/>
     <mark name="13"/>
-    Your plan is now set up! Volunteers will be notified of their assignments.
+    Now, navigate back to the Ministry called “Worship” and click on it
     <break time="1s"/>
-    <mark name="end"/>
+    <mark name="14"/>
+    Click on create plan type
+    <break time="1s"/>
+    <mark name="15"/>
+    Give the plan type a descriptive name 
+    <break time="1s"/>
+    <mark name="16"/>
+    In this case we called our plan type “Sunday Worship”. Click on that.
+    <break time="1s"/>
+    <mark name="17"/>
+    Begin by clicking create service plan
+    <break time="1s"/>
+    <mark name="18"/>
+    Give the plan a name, date and whether or not to include the service order. You also have the option to copy the form from a previous plan.
+    <break time="1s"/>
+    <mark name="19"/>
+    Click save
+    <break time="1s"/>
+    <mark name="20"/>
+    Click on the name of your plan
+    <break time="1s"/>
+    <mark name="21"/>
+    Click add position to your team assignments
+    <break time="1s"/>
+    <mark name="22"/>
+    Change the category name from "Band" to whatever category you like
+    <break time="1s"/>
+    <mark name="23"/>
+    Give the position a name and choose the number of people needed to fill that position
+    <break time="1s"/>
+    <mark name="24"/>
+    Choose a volunteer group to get the people from. 
+    <break time="1s"/>
+    <mark name="25"/>
+    Add as many positions as needed, be sure to save.
+    <break time="1s"/>
+    <mark name="26"/>
+    Click to plus to add a time for the service
+    <break time="1s"/>
+    <mark name="27"/>
+    Make sure the date is correct
+    <break time="1s"/>
+    <mark name="28"/>
+    And choose the needed team  
+    <break time="1s"/>
+    <mark name="29"/>
+    Be sure to save
+    <break time="1s"/>
+    <mark name="30"/>
+    Now, choose and notify the volunteers. You can write them a note to remind or encourage them.
+    <break time="1s"/>
+    <mark name="31"/>
+    Click on “person needed”  to add a volunteer
+    <break time="1s"/>
+    <mark name="32"/>
+    Choose from the names listed on the right
+    <break time="1s"/>
+    <mark name="33"/>
+    Click notify volunteers. They will be notified through the B1 App or if they are not registered with B1 they will receive an e-mail.
+    <break time="2s"/>
+    <mark name="end" />
   </speak>
 </tutorial> 
