@@ -13,3 +13,7 @@ title: Plans Setup
   </ul>
 </div>
 
+## Related Tutorials
+
+- <a href="/videos/chums/songs/output.mp4">Songs</a>
+- <a href="/videos\chums\service-order\output.mp4">Service Order</a>
