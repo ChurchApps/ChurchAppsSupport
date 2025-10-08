@@ -1,20 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tutorial>
     <speak>
+     <break time="1s"/>
     <mark name="1" />
-    In the CHUMS dashboard, navigate to the People section to manage your church members.
+    To add people to the data base navigate to the Chums dashboard.
     <break time="1s"/>
     <mark name="2" />
-    To add a new person, look for the "Add Person" button on the People page.
+    To add a new person, Choose People
     <break time="1s"/>
     <mark name="3" />
     Click the "Add Person" button to open the new person form.
     <break time="1s"/>
     <mark name="4" />
-    Fill in the person's details including their first name, last name, and email address.
+    Fill in the person's details including their first name, last name, and email address and click add.
     <break time="1s"/>
     <mark name="5" />
-    Click "Submit" to save the person to your database.
+    To edit the person’s file go back to the data base and click on their name.
+    <break time="1s"/>
+    <mark name="6" />
+    To complete their file click on the edit pencil by their name and fill in their information
+    <break time="1s"/>
+    <mark name="7" />
+    To add household members click on the edit pencil on the right side of the household box .
+    <break time="1s"/>
+    <mark name="8" />
+    Choose the status of the person
+    <break time="1s"/>
+    <mark name="9" />
+    Click add to add another family member
+    <break time="1s"/>
+    <mark name="10" />
+    Type the person’s name to find them in the data base. 
+    <break time="1s"/>
+    <mark name="11" />
+    If they are not in the data base you can add a new name.
+    <break time="1s"/>
+    <mark name="12" />
+    Type in the name and e-mail address and click add
+    <break time="1s"/>
+    <mark name="13" />
+    Be sure to click save
+    <break time="1s"/>
+    <mark name="14" />
+    Now go back and search for the person you just added
+    <break time="1s"/>
+    <mark name="15" />
+    Click select 
+    <break time="1s"/>
+    <mark name="16" />
+    Choose their status and click save
     <break time="2s"/>
     <mark name="end"/>
     </speak>
