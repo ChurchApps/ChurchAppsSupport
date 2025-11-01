@@ -73,8 +73,8 @@ npx playwright install chromium
    - Step 5: Final result (details page/confirmation)
 
 ### Demo Environment
-- **URL**: https://chumsdemo.churchapps.org/
-- **Login**: demo@chums.org / password
+- **URL**: https://demo.b1.church/
+- **Login**: demo@b1.church / password
 - **Church**: Grace Community Church
 - **Note**: Church selection uses `a:has-text("Grace Community Church")` selector
 
