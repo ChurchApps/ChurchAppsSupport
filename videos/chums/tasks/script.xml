@@ -1,7 +1,7 @@
 <tutorial>
     <speak>
     <mark name="1" />
-    To set up tasks for your leaders, church members, or groups, navigate to the Chums Dashboard.
+    To set up tasks for your leaders, church members, or groups, navigate to the B1.church Admin Dashboard.
     <break time="1s"/>
     <mark name="2" />
     Then click the plus sign on the task bar on the right side of your screen.
@@ -52,7 +52,7 @@
     The task is now completed and closed.
     <break time="1s"/>
     <mark name="18" />
-    It no longer shows up on your Chums dashboard.
+    It no longer shows up on your B1.church Admin dashboard.
     <break time="2s"/>
     <mark name="end" />
     </speak>

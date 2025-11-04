@@ -17,4 +17,4 @@ title: Donations
 
 ## Related Tutorials
 - <a href="/b1/admin/portal.html">Portal Admin</a>
-- <a href="/chums/giving.html">Giving Admin Setup</a>
+- <a href="/b1Admin/giving.html">Giving Admin Setup</a>

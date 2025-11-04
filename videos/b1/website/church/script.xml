@@ -32,13 +32,13 @@
     Or you can show a block containing other content, such as the sermon archive.  See the tutorial on creating blocks.
     <break time="2s"/>
     <mark name="11" />
-    The donation element allows you to add a form to your page to accept donations.  The element itself doesn't require any configuration, but you need to set up a Stripe account in Chums first.
+    The donation element allows you to add a form to your page to accept donations.  The element itself doesn't require any configuration, but you need to set up a Stripe account in B1.church Admin first.
     <break time="2s"/>
     <mark name="12" />
     The Form element allows you to embed a form in your page for visitors to fill out.  
     <break time="1s"/>
     <mark name="13" />
-    See the Forms section of Chums to learn how to configure these.
+    See the Forms section of B1.church Admin to learn how to configure these.
     <break time="2s"/>
     <mark name="14" />
     The Calendar element let's you add a calendar of events to your page.

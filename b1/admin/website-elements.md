@@ -25,4 +25,4 @@ title: Website - Elements
 - <a href="/b1/calendars/">Configuring Calendars</a>
 - <a href="/b1/admin/sermons.html">Configure Sermons</a>
 - <a href="/b1/admin/stream-setup.html">Configure Live Stream</a>
-- <a href="/chums/giving.html">Configure Giving</a>
+- <a href="/b1Admin/giving.html">Configure Giving</a>

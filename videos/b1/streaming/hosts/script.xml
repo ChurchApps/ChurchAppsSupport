@@ -4,7 +4,7 @@
     Your live stream can have hosts to moderate the chat and respond to prayer requests.  To add a host, click the "Edit Users" link under "External Resources".
     <break time="1s"/>
     <mark name="2" />
-    This will take you to the Chums application where users and groups are managed.  For a full tutorial on this, see the Chums help section.  
+    This will take you to the B1.church Admin application where users and groups are managed.  For a full tutorial on this, see the B1.church Admin help section.  
     You will need to create a group called "Streaming Hosts", assign the "Host Chat" permission and add your hosts to this group.
     <break time="1s"/>
     <mark name="3" />

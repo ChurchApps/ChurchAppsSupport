@@ -13,4 +13,4 @@ title: Plans
   </ul>
 </div>
 
-This video shows how to manage your plans as a volunteer.  To learn about creating plans as a minister, see the <a href="/chums/plans.html">plans documentation page for Chums</a>.
+This video shows how to manage your plans as a volunteer.  To learn about creating plans as a minister, see the <a href="/b1Admin/plans.html">plans documentation page for B1.church Admin</a>.

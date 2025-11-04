@@ -2,7 +2,7 @@
 <tutorial>
   <speak>
     <mark name="1"/>
-    In the Chums dashboard click on the Donations icon.
+    In the B1.church Admin dashboard click on the Donations icon.
     <break time="1s"/>
     <mark name="2"/>
     The default Donation Summary is for the past year. You can choose whatever dates you would like to show. Click "Run Report".

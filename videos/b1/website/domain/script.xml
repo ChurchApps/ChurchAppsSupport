@@ -1,12 +1,12 @@
 <tutorial>
   <speak>
     <mark name="1" />
-    Configuring domains for your site takes place in Chums.  You can go to chums.org and login
+    Configuring domains for your site takes place in B1.church Admin.  You can go to admin.b1.church and login
     <mark name="2" />
     or if you're on B1, click the profile drop down and choose switch app.
     <break time="1s"/>
     <mark name="3" />
-    In Chums, click on the dashboard on the left.
+    In B1.church Admin, click on the dashboard on the left.
     <break time="1s"/>
     <mark name="4" />
     In the dashboard pulldown menu click on settings
@@ -34,7 +34,7 @@
     And a CNAME record for your www subdomain pointing to proxy.b1.church.
     <break time="1s"/>
     <mark name="11" />
-    Once these have been added, return to Chums and add your domain to the list of custom domains and click Add and Save.
+    Once these have been added, return to B1.church Admin and add your domain to the list of custom domains and click Add and Save.
     After a few minutes your B1 site will be accessible from your custom domain.
     <break time="2s"/>
     <mark name="end" />

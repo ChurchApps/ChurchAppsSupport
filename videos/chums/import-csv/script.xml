@@ -2,16 +2,16 @@
 <tutorial>
   <speak>
     <mark name="1"/>
-    Let's import your data from Excel or CSV into Chums. First, make sure your Excel or CSV file is on your desktop.
+    Let's import your data from Excel or CSV into B1.church Admin. First, make sure your Excel or CSV file is on your desktop.
     <break time="1s"/>
     <mark name="2"/>
-    In Chums, go to Settings 
+    In B1.church Admin, go to Settings 
     <break time="1s"/>
     <mark name="3"/>
     and then to Import/Export.
     <break time="1s"/>
     <mark name="4"/>
-    Choose Chums Import Zip from the options.
+    Choose B1.church Admin Import Zip from the options.
     <break time="1s"/>
     <mark name="5"/>
     Download the sample file to see the required format.
@@ -23,10 +23,10 @@
     Now, create a zip file with your data. On a Mac, highlight the files and drag them to your desktop, then control-click and choose Compress. On a PC, right-click the folder, select Send to, and choose Compressed folder. Save the zip file on your desktop.
     <break time="1s"/>
     <mark name="8"/>
-    Go back to Chums and click the upload icon. Upload the zip file you just created. Once uploaded, you'll see your data. Scroll to the bottom and click Continue.
+    Go back to B1.church Admin and click the upload icon. Upload the zip file you just created. Once uploaded, you'll see your data. Scroll to the bottom and click Continue.
     <break time="1s"/>
     <mark name="9"/>
-    Next, we need to import the file into the Chums database. Click Continue to Destination to continue the import process.
+    Next, we need to import the file into the B1.church Admin database. Click Continue to Destination to continue the import process.
     <break time="1s"/>
     <mark name="10"/>
     Now Click Start Transfer to transfer the data
@@ -35,7 +35,7 @@
     Let the process run until you see a completion screen. 
     <break time="1s"/>
     <mark name="12"/>
-    Click "Go to Chums" to return to the main application.
+    Click "Go to B1.church Admin" to return to the main application.
     <break time="1s"/>
     <mark name="end"/>
   </speak>

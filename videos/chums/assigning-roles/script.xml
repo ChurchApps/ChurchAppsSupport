@@ -2,10 +2,10 @@
 <tutorial>
   <speak>
     <mark name="1"/>
-    Welcome to the Assigning Roles tutorial in Chums. This guide will show you how to assign and manage roles for your church staff and volunteers.
+    Welcome to the Assigning Roles tutorial in B1.church Admin. This guide will show you how to assign and manage roles for your church staff and volunteers.
     <break time="1s"/>
     <mark name="2"/>
-    To manage roles, navigate to the Settings section in your Chums dashboard.
+    To manage roles, navigate to the Settings section in your B1.church Admin dashboard.
     <break time="1s"/>
     <mark name="3"/>
     By default you will open Roles to see all available roles in your system.
@@ -44,7 +44,7 @@
     Roles can be assigned to multiple people, and people can have multiple roles. You can easily remove someone from a role by clicking the trash can next to their name.
     <break time="1s"/>
     <mark name="15"/>
-    The assigned roles will determine what features and information each person can access in Chums and B1.Church.
+    The assigned roles will determine what features and information each person can access in B1.church Admin and B1.Church.
     <break time="2s"/>
     <mark name="end"/>
   </speak>

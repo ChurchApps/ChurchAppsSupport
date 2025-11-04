@@ -1,6 +1,6 @@
 ---
 layout: page
-app: chums
+app: b1Admin
 section: Attendance
 title: Checkin Setup
 ---
@@ -9,23 +9,23 @@ title: Checkin Setup
 
 <div id="videoContainer">
   <ul id="playlist">
-      <li class="active"><a href="/videos/chums/checkin-setup/output.mp4">Setting up Check-in</a></li>
+      <li class="active"><a href="/videos/b1Admin/checkin-setup/output.mp4">Setting up Check-in</a></li>
   </ul>
 </div>
 
 ## Tablet and Printer Setup
 
-1. Install the [Chums Checkin App on the Android Tablet](https://play.google.com/store/apps/details?id=org.chums.checkin&hl=en_US&gl=US)
+1. Install the [B1.church Checkin App on the Android Tablet](https://play.google.com/store/apps/details?id=org.chums.checkin&hl=en_US&gl=US)
 2. Make sure to follow [the instructions](https://support.brother.com/g/b/downloadtop.aspx?c=us&lang=en&prod=lpql1110nwbeus&_ga=2.156293496.295918436.1665227103-2042905656.1665227103&_gl=1*6hne9l*_ga*MjA0MjkwNTY1Ni4xNjY1MjI3MTAz*_ga_NCEW43SJ8W*MTY2NTIyNzEwMy4xLjEuMTY2NTIyNzE0MS4yMi4wLjA.) that came with the printer to get it on the same Wifi network as your Tablet,
    [click here](https://www.youtube.com/watch?v=U5pmTRddt2w) for a great video on setting up the printer.
 3. Follow this video to connect your printer to the app and print your first name tag.
-   [![Chums Checkin App](https://img.youtube.com/vi/gZIM23R4-TE/0.jpg)](https://www.youtube.com/watch?v=gZIM23R4-TE)
+   [![B1.church Admin Checkin App](https://img.youtube.com/vi/gZIM23R4-TE/0.jpg)](https://www.youtube.com/watch?v=gZIM23R4-TE)
 
 ## Hardware Requirements
 
 You will need at least 3 items to get this running:
 
-1. A tablet or any android phone that can download [The Chums Checkin App](https://play.google.com/store/apps/details?id=org.chums.checkin)
+1. A tablet or any android phone that can download [The B1.church Checkin App](https://play.google.com/store/apps/details?id=org.chums.checkin)
 2. One of the Brother Printers listed below
 3. And these [Brother Labels](https://amzn.to/3LVbEsA)
 

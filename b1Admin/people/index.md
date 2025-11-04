@@ -1,16 +1,16 @@
 ---
 layout: page
-app: chums
+app: b1Admin
 section: People
-title: Change Requests
+title: Overview
 ---
 
-# People
+# People Overview
 The people tab lets you track critical information about your members and visitors.
 
-### Overview Video
+## Overview Video
 <video controls style="width:100%;height:auto;">
-  <source src="/chums/tutorials/people-overview.mp4" type="video/mp4">
+  <source src="/b1Admin/tutorials/people-overview.mp4" type="video/mp4">
 </video>
 
 ## People vs Users
@@ -23,7 +23,7 @@ If the validated email address a user has logged in with matches the email addre
 ## Permission Notes
 In order to edit people you need to be in a role with Edit People permission.  To view Attendance and Donations you need the View Attendance and View Donations permissions.  To edit custom fields, you will need Edit Forms permission.
 
-## Adding People to Chums
+## Adding People to B1.church Admin
 If you have the edit permission you can add new people by first searching for them, then at the bottom of the search result enter their first and last name and click 'Add'.
 
 ## Attendance and Donations

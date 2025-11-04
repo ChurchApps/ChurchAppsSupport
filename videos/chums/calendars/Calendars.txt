@@ -1,4 +1,4 @@
-1.Let’s make a new group and set up the group calendar. Navigate to the Chums dashboard then to People. 
+1.Let’s make a new group and set up the group calendar. Navigate to the B1.church Admin dashboard then to People. 
 2.Choose Groups.
 3.Click the plus in the top right corner to add a group.
 4.Choose a category name or make a new category.

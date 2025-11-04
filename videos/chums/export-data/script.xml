@@ -2,7 +2,7 @@
 <tutorial>
   <speak>
     <mark name="1"/>
-    Let's export your data from Chums. First, in the Chums dashboard, click on the settings icon.
+    Let's export your data from B1.church Admin. First, in the B1.church Admin dashboard, click on the settings icon.
     <break time="1s"/>
     <mark name="2"/>
     Click on Import/Export in the settings menu.
@@ -11,7 +11,7 @@
     Click the "Choose One" button to begin the export process.
     <break time="1s"/>
     <mark name="4"/>
-    Choose "Chums database" as your export option.
+    Choose "B1.church Admin database" as your export option.
     <break time="1s"/>
     <mark name="5"/>
     This will take you to Step 2 - Preview. Here you can review what will be exported.
@@ -23,7 +23,7 @@
     You'll now be at Step 3 - Destination. This is where you choose how to export your data.
     <break time="1s"/>
     <mark name="8"/>
-    Click on "Chums Export Zip" to create a zip file of your data.
+    Click on "B1.church Admin Export Zip" to create a zip file of your data.
     <break time="1s"/>
     <mark name="9"/>
     This takes you to Step 4 - Run. You'll see progress indicated with green check marks as the export processes.
@@ -32,7 +32,7 @@
     When the export is complete, the zipped folder will automatically download to your downloads folder.
     <break time="1s"/>
     <mark name="11"/>
-    Find the "Chums Download" file in your downloads folder.
+    Find the "B1.church Admin Download" file in your downloads folder.
     <break time="1s"/>
     <mark name="12"/>
     If the file isn't already unzipped, unzip it to access the contents.

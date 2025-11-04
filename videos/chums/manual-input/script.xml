@@ -2,7 +2,7 @@
 <tutorial>
   <speak>
     <mark name="1"/>
-    In the Chums dashboard click on donations.
+    In the B1.church Admin dashboard click on donations.
     <break time="1s"/>
     <mark name="2"/>
     Click Batches.
@@ -29,7 +29,7 @@
     Click the + on the Donations box.
     <break time="1s"/>
     <mark name="10"/>
-    Choose the person who gave the donation or if Anonymous just leave it. If the person is not in your Chums database you will need to enter them for Chums to record their donation under their name.
+    Choose the person who gave the donation or if Anonymous just leave it. If the person is not in your B1.church Admin database you will need to enter them for B1.church Admin to record their donation under their name.
     <break time="1s"/>
     <mark name="11"/>
     Type in a persons first or first and last name.

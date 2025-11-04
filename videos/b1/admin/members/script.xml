@@ -9,7 +9,7 @@
     Along with a timeline of events and posts from those groups.
     <break time="1s"/>
     <mark name="3" />
-    Group membership is managed from the Groups section of Chums.
+    Group membership is managed from the Groups section of B1.church Admin.
     <break time="1s"/>
     <mark name="4" />
     Back in B1, users can click on their groups to see events, conversations, members and other group info.
@@ -18,7 +18,7 @@
     The next option is Check In, which allows users to automatically mark themselves as in attendance to groups.
     <break time="1s"/>
     <mark name="6" />
-    This will show up if you've configured services and groups in Chums.
+    This will show up if you've configured services and groups in B1.church Admin.
     <break time="2s"/>
     <mark name="7" />
     Like with Giving, detailed reports are avaialable for all check-ins.
@@ -33,10 +33,10 @@
     Click on any member to see their contact info and family members.  You can message them directly from the app by clicking the Message button.
     <break time="1s"/>
     <mark name="11" />
-    Members are managed from the People tab of Chums.
+    Members are managed from the People tab of B1.church Admin.
     <break time="1s"/>
     <mark name="12" />
-    If you wish to give members the option to manage their own information, you can enable this by setting a directory approval group in the Chums settings.
+    If you wish to give members the option to manage their own information, you can enable this by setting a directory approval group in the B1.church Admin settings.
     <break time="1s"/>
     <mark name="13" />
     Once this is set, members will see a new Modify Profile option on their own profile where they can update their own information.
@@ -48,7 +48,7 @@
     Plans are used to allow users to respond to volunteer requests.  
     <break time="1s"/>
     <mark name="16" />
-    These show up for any users who are a part of a volunteer team.  These teams are configured in the Plans section of Chums.
+    These show up for any users who are a part of a volunteer team.  These teams are configured in the Plans section of B1.church Admin.
     <break time="2s"/>
     <mark name="17" />
     The lessons tab provides a guide for your teachers to lead lessons or for students to review them.
@@ -60,7 +60,7 @@
     This tab will show up if you are a member of the volunteer team or parent or student group for any classroom in lessons.church.
     <break time="2s"/>
     <mark name="20" />
-    The last two options that show up automatically are based on your permissions.  People marked as staff members will see a link to Chums and those with content admin permissions will see an admin link.
+    The last two options that show up automatically are based on your permissions.  People marked as staff members will see a link to B1.church Admin and those with content admin permissions will see an admin link.
     <break time="2s"/>
     <mark name="end" />
   </speak>

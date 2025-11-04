@@ -39,7 +39,7 @@ title: Set Up Mobile App
    Choose the type of tab.
 
 7. ![Mobil App 5](https://github.com/user-attachments/assets/602cd98e-31ba-4f2e-a7a0-307d1bad8463)
-   There are several default tabs that will not show up on the list but will be on the individuals mobile app. This list includes: 1)Website (this will point to the b1 website) if you have a different website you will want to link it with the External Url. 2)My Groups (only be visible to people who are members of groups) 3)Member Directory (only visible to members) 4)Lessons (only visible to teachers who are listed in teams) 5)Chums (only visible to Administrators).
+   There are several default tabs that will not show up on the list but will be on the individuals mobile app. This list includes: 1)Website (this will point to the b1 website) if you have a different website you will want to link it with the External Url. 2)My Groups (only be visible to people who are members of groups) 3)Member Directory (only visible to members) 4)Lessons (only visible to teachers who are listed in teams) 5)B1.church Admin (only visible to Administrators).
    In this example we will choose Bible.
 
 8. ![Mobile App 6](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/0706fecd-0d01-4c7a-96ae-1a1faf47c16f)

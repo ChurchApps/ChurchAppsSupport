@@ -2,7 +2,7 @@
 <tutorial>
   <speak>
     <mark name="1" />
-    Let's set up check-in for your church. First, you'll need to create a Chums account if you don't already have one. Click on Get Started.
+    Let's set up check-in for your church. First, you'll need to create a B1.church Admin account if you don't already have one. Click on Get Started.
     <break time="1s"/>
     <mark name="2" />
     Fill out your church's information in the registration form.
@@ -26,7 +26,7 @@
     Fill in your church's information, leaving the subdomain as is.
     <break time="1s"/>
     <mark name="9" />
-    You'll now be logged into your Chums account.
+    You'll now be logged into your B1.church Admin account.
     <break time="1s"/>
     <mark name="10" />
     First, we need to add all the people who will be checking in. Search for who you'd like to add.

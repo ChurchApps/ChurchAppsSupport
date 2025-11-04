@@ -1,16 +1,16 @@
 ---
 layout: page
-app: chums
+app: b1Admin
 section: Donations
 title: Giving Setup
 ---
 
-## Start accepting Payments Online in Chums
+## Start accepting Payments Online in B1.church Admin
 
 [![How To Setup Online Giving](https://img.youtube.com/vi/M555wWLBEtg/0.jpg)](https://www.youtube.com/watch?v=M555wWLBEtg)
 
 1. Setup an account for your church on [Stripe](https://stripe.com) (you will need to Activate your account and take it out of test mode)
-2. Connect Your new Stripe account to Chums.
+2. Connect Your new Stripe account to B1.church Admin.
 
 - On [Stripe](https://stripe.com) Login and Navigate to the Developers Section then on the left API Keys
 - Copy the Publishable key
@@ -35,7 +35,7 @@ title: Giving Setup
 - You can also change the icon (Type Giv to get a great giving icon)
   <img width="1512" alt="Screen Shot 2023-03-14 at 9 41 41 AM" src="https://user-images.githubusercontent.com/65249159/225041560-b667e653-d04b-436e-85fa-528683834524.png">
 - You are now ready to start taking donations.
-- To find the domain to send those wanting to give go back to [Chums.org](https://chums.org/) and login click on the settings icon to find your subdomain
+- To find the domain to send those wanting to give go back to [B1.church Admin.org](https://b1Admin.org/) and login click on the settings icon to find your subdomain
   <img width="1512" alt="Screen Shot 2023-03-14 at 10 12 32 AM" src="https://user-images.githubusercontent.com/65249159/225047607-afde6b2f-9a26-4cbf-87b7-748e42bffb9a.png">
 - (yoursubdomian).b1.church/donation-landing (example: https://cummingscc.b1.church/donation-landing). Now you can copy and paste or link your domain wherever you want to take donations.
 
