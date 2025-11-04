@@ -14,7 +14,7 @@ title: Giving Setup
 
 - On [Stripe](https://stripe.com) Login and Navigate to the Developers Section then on the left API Keys
 - Copy the Publishable key
-- Now Login to [Church Apps](https://churchapps.org/) You can use the same login as you used for setting up CHUMS
+- Now Login to [B1 Admin](https://admin.b1.church/)
 - Click on Church (Top center of the page)
 - Then Edit Church Settings (Blue button on the Right side of the page)
 - Click on the little green pencil to the Right of Church Settings

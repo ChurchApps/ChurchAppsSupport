@@ -1,7 +1,7 @@
 ---
 layout: app
 app: b1Admin
-title: ChuMS - Church Management Software
+title: B1 Admin - Church Management Software
 ---
 
-This is an app page for B1.church Admin.
+This is the admin sitefor B1.church.
