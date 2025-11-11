@@ -20,7 +20,7 @@ title: Set Up Mobile App
 
 ### Setting up your B1 Mobile App
 
-1. <img width="1219" alt="Mobile App 0" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/0fe911d2-ee69-45aa-9800-3f760d75738b">
+1. <img alt="Mobile App 0" src="https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/0fe911d2-ee69-45aa-9800-3f760d75738b">
    From the drop down menu under your name choose B1.church.
 
 2. ![Mobile App 1](https://github.com/LiveChurchSolutions/ChurchAppsSupport/assets/127863068/dc3a0e38-8141-4307-89f3-7cdd056acdb8)
