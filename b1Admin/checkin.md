@@ -25,7 +25,7 @@ title: Checkin Setup
 
 You will need at least 3 items to get this running:
 
-1. A tablet or any android phone that can download [The B1.church Checkin App](https://play.google.com/store/apps/details?id=org.chums.checkin)
+1. A tablet or any android phone that can download [The B1.church Checkin App](https://play.google.com/store/apps/details?id=church.b1.checkin) or an amazon Fire Tablet that can download [The B1.church Checkin App](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/ref=sr_1_1?crid=1QFBOJWLLND2V&dib=eyJ2IjoiMSJ9.oVXLGb2R_L_fNluWNoL4OA.OJSpR1ZcSnSgpurqLjniy2T1Ah3idGLa4_n21Itvmv4&dib_tag=se&keywords=B1+Checkin&qid=1763047568&s=mobile-apps&sprefix=b1+checkin%2Cmobile-apps%2C124&sr=1-1)
 2. One of the Brother Printers listed below
 3. And these [Brother Labels](https://amzn.to/3LVbEsA)
 
