@@ -9,40 +9,42 @@ title: Checkin Setup
 
 <div id="videoContainer">
   <ul id="playlist">
-      <li class="active"><a href="/videos/b1Admin/checkin-setup/output.mp4">Setting up Check-in</a></li>
+    <li class="active"><a href="/videos/b1Admin/checkin-setup/output.mp4">Setting up Check-in</a></li>
   </ul>
 </div>
 
-## Tablet and Printer Setup
+---
 
-1. Install the [B1.church Checkin App on the Android Tablet](https://play.google.com/store/apps/details?id=org.chums.checkin&hl=en_US&gl=US)
-2. Make sure to follow [the instructions](https://support.brother.com/g/b/downloadtop.aspx?c=us&lang=en&prod=lpql1110nwbeus&_ga=2.156293496.295918436.1665227103-2042905656.1665227103&_gl=1*6hne9l*_ga*MjA0MjkwNTY1Ni4xNjY1MjI3MTAz*_ga_NCEW43SJ8W*MTY2NTIyNzEwMy4xLjEuMTY2NTIyNzE0MS4yMi4wLjA.) that came with the printer to get it on the same Wifi network as your Tablet,
-   [click here](https://www.youtube.com/watch?v=U5pmTRddt2w) for a great video on setting up the printer.
-3. Follow this video to connect your printer to the app and print your first name tag.
-   [![B1.church Admin Checkin App](https://img.youtube.com/vi/gZIM23R4-TE/0.jpg)](https://www.youtube.com/watch?v=gZIM23R4-TE)
+## 📱 Quick Setup Guide
 
-## Hardware Requirements
+### Step 1: Install the App
+Download the B1.church Checkin App:
+- **Android/Samsung Tablets:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
+- **Amazon Fire Tablets:** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/ref=sr_1_1?crid=1QFBOJWLLND2V&dib=eyJ2IjoiMSJ9.oVXLGb2R_L_fNluWNoL4OA.OJSpR1ZcSnSgpurqLjniy2T1Ah3idGLa4_n21Itvmv4&dib_tag=se&keywords=B1+Checkin&qid=1763047568&s=mobile-apps&sprefix=b1+checkin%2Cmobile-apps%2C124&sr=1-1)
 
-You will need at least 3 items to get this running:
+### Step 2: Configure Your Printer
+Follow the [printer instructions](https://support.brother.com/g/b/downloadtop.aspx?c=us&lang=en&prod=lpql1110nwbeus&_ga=2.156293496.295918436.1665227103-2042905656.1665227103&_gl=1*6hne9l*_ga*MjA0MjkwNTY1Ni4xNjY1MjI3MTAz*_ga_NCEW43SJ8W*MTY2NTIyNzEwMy4xLjEuMTY2NTIyNzE0MS4yMi4wLjA.) to connect it to the same WiFi network as your tablet. [Watch setup video](https://www.youtube.com/watch?v=U5pmTRddt2w).
 
-1. A tablet or any android phone that can download [The B1.church Checkin App](https://play.google.com/store/apps/details?id=org.chums.checkin)
-2. One of the Brother Printers listed below
-3. And these [Brother Labels](https://amzn.to/3LVbEsA)
+### Step 3: Connect and Test
+Watch this tutorial to connect your printer and print your first name tag:
 
-### Recommended Tablets
+[![B1.church Admin Checkin App](https://img.youtube.com/vi/gZIM23R4-TE/0.jpg)](https://www.youtube.com/watch?v=gZIM23R4-TE)
 
-- Smaller Tablet [SAMSUNG Galaxy Tab A7 Lite 8.7" 32GB](https://amzn.to/3E0zYaz)
-- Larger Tablet [Samsung Galaxy Tab A8 Android Tablet, 10.5"](https://amzn.to/3rdXRnm)
-- Amazon Tablet [Amazon Fire HD 10 tablet 10.1" vibrant Full HD screen](https://amzn.to/4aHfvpK)
+---
 
-### Recommended Printers
+## 🛒 What You'll Need
 
-For now Check-ins only works with Brother Printers. These are the printers we recommend:
+### Tablets
+Any of these will work with the app:
+- **Compact:** [Samsung Galaxy Tab A7 Lite 8.7"](https://amzn.to/3E0zYaz)
+- **Large Screen:** [Samsung Galaxy Tab A8 10.5"](https://amzn.to/3rdXRnm)
+- **Budget:** [Amazon Fire HD 10](https://amzn.to/4aHfvpK)
 
-- Multiple tablet connections & bluetooth or wifi: [Brother QL-1110NWB](https://amzn.to/3K9QPL1)
-- Wifi only, works with multiple tablet connections: [Brother QL-810W](https://amzn.to/3Scj6mf)
-- Wifi only: [Brother QL-1100](https://amzn.to/3Sps8eX) (Not tested, this printer should work but has not been tested)
+### Printers
+Check-ins only work with Brother Printers:
+- **Best:** [Brother QL-1110NWB](https://amzn.to/3K9QPL1) - Multiple tablets, Bluetooth + WiFi
+- **Good:** [Brother QL-810W](https://amzn.to/3Scj6mf) - Multiple tablets, WiFi only
+- **Budget:** [Brother QL-1100](https://amzn.to/3Sps8eX) - WiFi only *(untested but should work)*
 
 ### Labels
-
-These are currently the only labels that work: DK-1201 (1-1/7" x 3-1/2") [Brother Labels](https://amzn.to/3IzQAqt)
+Only compatible labels: [Brother DK-1201 (1-1/7" x 3-1/2")](https://amzn.to/3LVbEsA)

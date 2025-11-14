@@ -28,6 +28,10 @@ a[href*='vimeo']::after {
   content: 'Watch video';
   display: block;
 }*/
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 @media screen and (max-width: 620px) {
   .main-content section {
