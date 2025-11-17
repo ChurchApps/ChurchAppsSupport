@@ -52,7 +52,7 @@
     Choose any group that will be meeting Wednesday night at 7:00 in the Education Wing.
     <break time="1s"/>
     <mark name="18" />
-    We will look at the K-3rd grade class. Make sure the "track attendance" field says "yes." If it says "no," click the edit pencil and.
+    We will look at the K-3rd grade class. Make sure the "track attendance" field is green." If it is red, click the edit pencil and.
     <break time="1s"/>
     <mark name="19" />
     Change "track attendance" to "yes" and choose the "Add service time."
@@ -95,5 +95,7 @@
     <break time="1s"/>
     <mark name="32" />
     The CSV can be opened as an Excel or Numbers document.
+    <break time="2s"/>
+    <mark name="end" />
     </speak>
 </tutorial>
