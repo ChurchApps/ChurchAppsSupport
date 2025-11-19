@@ -1,28 +1,46 @@
 <tutorial>
     <speak>
     <mark name="1" />
-    Thank you for signing up for B1.church Admin and B1.church. I’d like to show you a couple things to get you started with the programs. When you log into B1.church Admin, you’ll be at the B1.church Admin dashboard.
+    Thank you for signing up for B1.church. I’d like to show you a couple things to get you started with the programs. Using Google Chrome, Log in to B1.church. 
     <break time="1s"/>
     <mark name="2" />
-    In the top right-hand corner, click the icon and see the drop-down menu. This is where you can get your messages, notifications, change your profile, logout, and switch apps.
+    Click sign in and enter your username and password.
     <break time="1s"/>
     <mark name="3" />
-    You can switch between B1.church Admin, B1, and Lessons.Church. All three apps use the same username and password.
+    This will take you to the B1.church Admin dashboard. From here, you can manage your church’s data base, website, mobile app, lessons, and more.
     <break time="1s"/>
     <mark name="4" />
-    Click on the B1 app and we’ll take a look at a couple things there.
+    Click on settings to set up your church’s information, administrative roles and other details.
     <break time="1s"/>
     <mark name="5" />
-    In the B1 app, go to your name in the top right corner and choose the admin portal. This will allow you to edit the website, mobile app, and other programs in B1.
+    Click on the edit pencil to set up your church information.
     <break time="1s"/>
     <mark name="6" />
-    Click on the word "mobile app" in the top left-hand corner for the drop-down menu. This is where you’ll go to edit the programs within B1.
+    Back on the dashboard, click the question mark icon in the top right corner for help and tutorials.
     <break time="1s"/>
     <mark name="7" />
-    To find help, go to the ? in the top right-hand corner.
+    Click view documentation.
     <break time="1s"/>
     <mark name="8" />
-    There you’ll find all of our tutorials, forum, and support email. I hope this gets you started with B1 and B1.church Admin. Feel free to reach out to us if you need any help. God bless.
+    You will see a list of tutorials to help you get started with B1.church. A word of caution: because we are constantly updating and improving B1.church, some of these tutorials may be slightly out of date. 
+    <break time="1s"/>
+    <mark name="9" />
+    Now navigate back to the dashboard and click the arrow next to your profile picture and choose switch app
+    <break time="1s"/>
+    <mark name="10" />
+    Choose lessons.church
+    <break time="1s"/>
+    <mark name="11" />
+    This will take you to Lessons.church, where you can manage your church’s online lessons and curriculum.
+    <break time="1s"/>
+    <mark name="12" />
+    Switch back to B1.church by clicking the arrow next to your profile picture and choosing switch app again.
+    <break time="1s"/>
+    <mark name="13" />
+    You can now enter B1.church through the member portal or the admin portal. The member portal allows you to see how B1.church looks to your members, view your groups and manage your personal donations.
+    <break time="1s"/>
+    <mark name="14" />
+    This video is just a brief introduction to B1.church. Be sure to watch our tutorials to help you get the most out of these programs. Feel free to reach out to our support team with any questions you may have. Thanks for choosing B1.church!
     <break time="2s"/>
     <mark name="end" />
     </speak>
