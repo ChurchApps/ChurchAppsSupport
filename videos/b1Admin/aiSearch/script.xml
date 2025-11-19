@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tutorial>
+    <speak>
+    <mark name="1" />
+    Welcome to the A I Search tutorial in B1.church Admin. This guide will show you how to use advanced A I  search feature to find specific people in your database.
+    <break time="1s"/>
+    <mark name="2" />
+    To access A I search, navigate to the People section in your B1.church Admin dashboard.
+    <break time="1s"/>
+    <mark name="3" />
+    Click in the A I dialog box. The A I  search interface allows you to create complex search queries using multiple criteria.
+    <break time="1s"/>
+    <mark name="4" />
+    Start by typing in a sentence describing who you want A I to look for using any of the fields in your database, such as name, email, phone number, or any custom field.
+    <break time="1s"/>
+    <mark name="5" />
+    Click Search to see the results. A I will process your request and return a list of people matching your criteria.
+    <break time="1s"/>
+    <mark name="6" />
+    You can save your search for future use by downloading a CSV file.
+    <break time="2s"/>
+    <mark name="end" />
+    </speak>
+</tutorial>
