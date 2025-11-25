@@ -1,6 +1,6 @@
 ---
 layout: page
-app: b1
+app: b1Admin
 section: Admin
 title: Stream - Sermons
 ---
@@ -16,6 +16,6 @@ title: Stream - Sermons
 </div>
 
 ## Related Tutorials
-- <a href="/b1/admin/youtube-channel-id.html">Get Your YouTube Channel ID</a>
-- <a href="/b1/admin/website-setup.html">Website Builder</a>
+- <a href="/b1Admin/youtube-channel-id.html">Get Your YouTube Channel ID</a>
+- <a href="/b1Admin/website-setup.html">Website Builder</a>
 - <a href="https://vimeo.com/760360001">OBS Basics</a>

@@ -1,6 +1,6 @@
 ---
 layout: page
-app: b1
+app: b1Admin
 section: Admin
 title: Website - Setup
 ---
@@ -19,4 +19,4 @@ title: Website - Setup
 </div>
 
 ## Related Tutorials
-- <a href="/b1/admin/website-elements.html">Page Content - Sections and Elements</a>
+- <a href="/b1Admin/website-elements.html">Page Content - Sections and Elements</a>

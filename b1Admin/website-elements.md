@@ -1,6 +1,6 @@
 ---
 layout: page
-app: b1
+app: b1Admin
 section: Admin
 title: Website - Elements
 ---
@@ -21,8 +21,8 @@ title: Website - Elements
 </div>
 
 ## Related Tutorials
-- <a href="/b1/admin/website-setup.html">Website Setup</a>
-- <a href="/b1/calendars/">Configuring Calendars</a>
-- <a href="/b1/admin/sermons.html">Configure Sermons</a>
-- <a href="/b1/admin/stream-setup.html">Configure Live Stream</a>
+- <a href="/b1Admin/website-setup.html">Website Setup</a>
+- <a href="/b1/portal/calendars/">Configuring Calendars</a>
+- <a href="/b1Admin/sermons.html">Configure Sermons</a>
+- <a href="/b1Admin/stream-setup.html">Configure Live Stream</a>
 - <a href="/b1Admin/giving.html">Configure Giving</a>
