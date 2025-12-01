@@ -8,43 +8,31 @@
     To access advanced search, navigate to the People section in your B1.church Admin dashboard.
     <break time="1s"/>
     <mark name="3" />
-    Click on the Advanced Search button next to the search bar.
+    Click on the Advanced Search link at the bottom of the search box.
     <break time="1s"/>
     <mark name="4" />
     The advanced search interface allows you to create complex search queries using multiple criteria.
     <break time="1s"/>
     <mark name="5" />
-    Start by selecting a field to search, such as name, email, phone number, or any custom field.
+    Start by checking a box to enable whatever filters you want to use, such as First Name, Email, Phone Number, or any custom field.
     <break time="1s"/>
     <mark name="6" />
-    Choose an operator for your search, such as equals, contains, or greater than.
+    Choose an operator for your search, such as equals, contains, starts with, ends with,or greater than.
     <break time="1s"/>
     <mark name="7" />
-    Enter the value you're searching for in the value field.
+    Enter the value you are searching for in the value field.
     <break time="1s"/>
     <mark name="8" />
-    You can add multiple conditions to your search by clicking Add Condition.
+    You can add multiple conditions to your search by clicking any of the filters.
     <break time="1s"/>
     <mark name="9" />
-    Choose whether the conditions should match all criteria or any criteria.
-    <break time="1s"/>
-    <mark name="10" />
     You can also search within specific groups or by membership status.
     <break time="1s"/>
+    <mark name="10" />
+    Once you've set up your search criteria, the results will appear in the Search Results section. The results will show all people who match your search criteria.
+    <break time="1s"/>
     <mark name="11" />
-    Once you've set up your search criteria, click Search to see the results.
-    <break time="1s"/>
-    <mark name="12" />
-    The results will show all people who match your search criteria.
-    <break time="1s"/>
-    <mark name="13" />
-    You can save your search for future use by clicking Save Search.
-    <break time="1s"/>
-    <mark name="14" />
-    Saved searches can be accessed from the Saved Searches dropdown.
-    <break time="1s"/>
-    <mark name="15" />
-    You can also export the search results to a CSV file for further analysis.
+    You can export the search results to a CSV file for further analysis.
     <break time="2s"/>
     <mark name="end" />
     </speak>
