@@ -14,25 +14,25 @@
      Click on automations
     <break time="1s"/>
     <mark name="5" />
-    Click the plus sign to create a new automated task
+    Click add automations to create a new automated task
     <break time="1s"/>
     <mark name="6" />
     Give the task a title
     <break time="1s"/>
     <mark name="7" />
-    Choose how often you want the task to repeat.
+    Choose how often you want the task to repeat, be sure to click save.
     <break time="1s"/>
     <mark name="8" />
-    Add conditions
+    Choose who to assign the task to. You can assign it to a specific person or a group. 
     <break time="1s"/>
     <mark name="9" />
-    After you add the Condition type, and Operator click save. Add as many conditions as you like.
+    Next, set the conditions for the task by selecting the Condition type, Operator, and Value. After you add the Condition type, and Operator click save. Add as many conditions as you like.
     <break time="1s"/>
     <mark name="10" />
     Click on the Automated Task to view the Automation Details
     <break time="1s"/>
     <mark name="11" />
-    To manage your automated tasks just click on the title
+    To manage your automated tasks just click on the edit pencil next to the Automation Details, Actions or Conditions sections.
     <break time="2s"/>
     <mark name="end" />
   </speak>
