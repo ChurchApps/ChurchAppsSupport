@@ -7,7 +7,7 @@
     Choose Groups.
     <break time="1s"/>
     <mark name="3" />
-    Click the plus in the top right corner to add a group.
+    Click Add Group in the top right corner to add a group.
     <break time="1s"/>
     <mark name="4" />
     Choose a category name or make a new category.
@@ -28,10 +28,10 @@
     Be sure to click save.
     <break time="1s"/>
     <mark name="10" />
-    Click on the members icon on the left side to add members
+    To add a person to the group type their name then click add.
     <break time="1s"/>
     <mark name="11" />
-    Add members by typing a name or leaving the search bar blank and hitting search.
+    You can also add members by leaving the search bar blank and hitting search.
     <break time="1s"/>
     <mark name="12" />
     Choose a person to be the leader of the group. The leader of the group is the only person who can edit the calendar. Any group member can see a list of events and comment on them.
