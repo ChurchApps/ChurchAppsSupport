@@ -1,0 +1,44 @@
+name: Issue Labeler
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  label-issues:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Apply labels based on issue content
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = context.payload.issue;
+            const body = issue.body || '';
+            const labels = [];
+
+            // Platform labels
+            if (body.includes('Platform\n\nMobile')) {
+              labels.push('mobile');
+            }
+            if (body.includes('Platform\n\nWeb')) {
+              labels.push('web');
+            }
+
+            // Application labels (B1 or B1.church)
+            if (body.includes('Application\n\nB1.church') || body.includes('Application\n\nB1\n')) {
+              labels.push('b1');
+            }
+            if (body.includes('Application\n\nLessons.church')) {
+              labels.push('lessons');
+            }
+
+            if (labels.length > 0) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                labels: labels
+              });
+            }
