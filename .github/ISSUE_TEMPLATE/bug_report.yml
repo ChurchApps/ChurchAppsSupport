@@ -8,8 +8,8 @@ body:
     attributes:
       label: Platform
       options:
-        - Mobile
         - Web
+        - Mobile
     validations:
       required: true
 
@@ -18,19 +18,11 @@ body:
     attributes:
       label: Application
       options:
-        - B1
+        - B1.church
         - Lessons.church
         - Other
     validations:
       required: true
-
-  - type: input
-    id: other-app
-    attributes:
-      label: If Other, please specify
-      placeholder: App name
-    validations:
-      required: false
 
   - type: textarea
     id: description
@@ -51,7 +43,7 @@ body:
         3.
         4.
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: logs
@@ -62,15 +54,7 @@ body:
     validations:
       required: false
 
-  - type: textarea
-    id: screenshots
-    attributes:
-      label: Screenshots
-      description: If applicable, add screenshots to help explain the problem.
-    validations:
-      required: false
-
-  - type: textarea
+  - type: input
     id: church
     attributes:
       label: Church Name (optional)
