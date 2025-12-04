@@ -18,42 +18,17 @@ body:
     attributes:
       label: Application
       options:
-        - B1
+        - B1.church
         - Lessons.church
         - Other
     validations:
       required: true
-
-  - type: input
-    id: other-app
-    attributes:
-      label: If Other, please specify
-      placeholder: App name
-    validations:
-      required: false
 
   - type: textarea
     id: description
     attributes:
       label: Description
       description: A clear and concise description of the feature you'd like.
-    validations:
-      required: true
-
-  - type: textarea
-    id: problem
-    attributes:
-      label: Problem Statement
-      description: Describe the problem this feature would solve.
-      placeholder: I'm always frustrated when...
-    validations:
-      required: true
-
-  - type: textarea
-    id: solution
-    attributes:
-      label: Proposed Solution
-      description: Describe the solution you'd like to see implemented.
     validations:
       required: true
 
