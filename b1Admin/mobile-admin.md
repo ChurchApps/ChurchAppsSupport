@@ -5,18 +5,15 @@ section: Admin
 title: Mobile Admin
 ---
 
-# Welcome to B1.church Admin!
+# Mobile Admin
 
-Thank you for choosing B1.church! We're excited to help you manage your church more effectively. This page contains helpful tutorial videos to get you started with the B1.church Admin platform.
+Learn how to configure and customize your church's mobile app experience using B1.church Admin.
 
-If you need additional help or have questions, please visit our [Support Page](https://support.churchapps.org) or contact our support team.
-
-## Getting Started
+For further support, please email [support@churchapps.org](mailto:support@churchapps.org).
 
 <div id="videoContainer">
   <ul id="playlist">
-      <li class="active"><a href="/videos/b1Admin/intro/output.mp4">Introduction to B1.church</a></li>
-      <li><a href="/videos/b1/admin/overview/output.mp4">Mobile Admin Overview</a></li>
+      <li class="active"><a href="/videos/b1/admin/overview/output.mp4">Mobile Admin Overview</a></li>
       <li><a href="/videos/b1/admin/anonymous/output.mp4">Anonymous Tabs</a></li>
       <li><a href="/videos/b1/admin/members/output.mp4">Member Tabs</a></li>
       <li><a href="/videos/b1/admin/manual/output.mp4">Manual Tabs</a></li>
