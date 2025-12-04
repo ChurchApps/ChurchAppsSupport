@@ -1,7 +1,7 @@
 ---
 layout: page
 app: b1Admin
-section: Getting Started
+section: " Getting Started"
 title: Introduction
 ---
 
