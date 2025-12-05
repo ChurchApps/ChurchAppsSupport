@@ -1,8 +1,8 @@
 ---
 layout: page
 app: lessons
-section: "Lessons.church"
-title: "2. Connect to B1"
+section: " Lessons.church"
+title: Connect to B1
 ---
 
 # Connect Lessons.Church to the B1 app

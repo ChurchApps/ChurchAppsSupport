@@ -1,8 +1,8 @@
 ---
 layout: page
 app: lessons
-section: "Lessons.church"
-title: "3. Peace Out Setup"
+section: " Lessons.church"
+title: Peace Out Setup
 ---
 
 # Setting up Peace Out in Lessons.Church
