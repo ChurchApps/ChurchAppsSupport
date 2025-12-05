@@ -10,6 +10,7 @@ title: Add a Lesson
 <div id="videoContainer">
   <ul id="playlist">
       <li class="active"><a href="/videos/lessons/admin/add-lesson/output.mp4">Adding Lessons in Lessons.Church</a></li>
+      <li><a href="/videos/lessons/arranging-items/output.mp4">Arranging Lesson Items - Play Order</a></li>
   </ul>
 </div>
 
