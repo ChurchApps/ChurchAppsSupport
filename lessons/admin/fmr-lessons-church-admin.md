@@ -1,8 +1,8 @@
 ---
 layout: page
 app: lessons
-section: Lessons.church
-title: Admin - FMR Lessons Church Admin
+section: Contributing
+title: FMR Admin Guide
 ---
 
 # How to add lessons in lessons.church as a For Ministry Resources admin

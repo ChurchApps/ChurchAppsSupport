@@ -1,7 +1,7 @@
 ---
 layout: page
 app: lessons
-section: Lessons.church
+section: "  Statement of Faith"
 title: Statement of Faith
 ---
 

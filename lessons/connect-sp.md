@@ -1,7 +1,7 @@
 ---
 layout: page
 app: lessons
-section: Lessons.church
+section: " Lessons.church"
 title: Connect to SignPresenter
 ---
 
