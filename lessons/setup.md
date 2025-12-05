@@ -1,8 +1,8 @@
 ---
 layout: page
 app: lessons
-section: "1. Lessons.church"
-title: Setup Lessons.church
+section: "Lessons.church"
+title: "1. Setup Lessons.church"
 ---
 
 # Setting up Lessons.Church

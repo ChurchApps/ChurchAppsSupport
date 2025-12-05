@@ -1,8 +1,8 @@
 ---
 layout: page
 app: lessons
-section: "1. Lessons.church"
-title: Connect to SignPresenter
+section: "Lessons.church"
+title: "4. Connect to SignPresenter"
 ---
 
 # Connect SignPresenter to Lessons.Church
