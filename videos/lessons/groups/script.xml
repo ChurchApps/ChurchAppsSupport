@@ -1,0 +1,71 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    Before we create our first classroom, let's set up a volunteer team and a parent group. This will help get the right information to your teachers. Click your profile icon in the top right.
+    <break time="2s"/>
+    <mark name="2" />
+    Click Switch App, then select B1 dot church.
+    <break time="2s"/>
+    <mark name="3" />
+    You're now in the Member Portal. Click your name in the top right.
+    <break time="2s"/>
+    <mark name="4" />
+    Select Admin Portal.
+    <break time="2s"/>
+    <mark name="5" />
+    This is the B1 dot church Dashboard where you can manage your church.
+    <break time="2s"/>
+    <mark name="6" />
+    Click the Dashboard dropdown and select Serving.
+    <break time="2s"/>
+    <mark name="7" />
+    We need to create a Ministry first. Click Add Ministry.
+    <break time="2s"/>
+    <mark name="8" />
+    Enter a name for your ministry.
+    <break time="2s"/>
+    <mark name="9" />
+    Type Children's Ministry and click Add.
+    <break time="2s"/>
+    <mark name="10" />
+    Click Manage to configure your ministry.
+    <break time="2s"/>
+    <mark name="11" />
+    Click the Teams tab.
+    <break time="2s"/>
+    <mark name="12" />
+    Click Create Team.
+    <break time="2s"/>
+    <mark name="13" />
+    Enter a name like Elementary Teachers and click Add.
+    <break time="2s"/>
+    <mark name="14" />
+    Now let's create a parent group. Click the Dashboard dropdown and select People.
+    <break time="2s"/>
+    <mark name="15" />
+    Click Groups in the top navigation.
+    <break time="2s"/>
+    <mark name="16" />
+    Click Add Group.
+    <break time="2s"/>
+    <mark name="17" />
+    Click the Category Name dropdown and select Add New.
+    <break time="2s"/>
+    <mark name="18" />
+    Enter Parents as the category and Parents Of Elementary Kids as the group name, then click Add.
+    <break time="2s"/>
+    <mark name="19" />
+    Your parent group is now created.
+    <break time="2s"/>
+    <mark name="20" />
+    Let's head back to Lessons dot church. Click your profile icon and select Switch App.
+    <break time="2s"/>
+    <mark name="21" />
+    Click Lessons dot church.
+    <break time="2s"/>
+    <mark name="22" />
+    You're back in Lessons dot church with your volunteer team and parent group ready. Click Add First Classroom to continue.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
