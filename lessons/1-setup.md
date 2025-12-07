@@ -20,40 +20,67 @@ title: Setup Lessons.church
 <style>
 .video-steps { display: none; margin-top: 20px; }
 .video-steps.active { display: block; }
-.step-grid { display: flex; flex-wrap: wrap; gap: 15px; }
-.step-item { display: flex; align-items: flex-start; gap: 10px; width: calc(50% - 10px); margin-bottom: 10px; }
-.step-thumb { cursor: pointer; border: 2px solid #333; border-radius: 4px; width: 120px; min-width: 120px; }
-.step-thumb:hover { border-color: #08c; }
-.step-text { font-size: 14px; color: #ccc; }
-.step-num { font-weight: bold; color: #08c; }
-@media (max-width: 768px) { .step-item { width: 100%; } }
+.step-accordion { border: 1px solid #333; border-radius: 4px; overflow: hidden; }
+.step-header { display: flex; align-items: center; padding: 10px 15px; cursor: pointer; background: #1a1a1a; border-bottom: 1px solid #333; transition: background 0.2s; }
+.step-header:hover { background: #252525; }
+.step-header:last-child { border-bottom: none; }
+.step-num { font-weight: bold; color: #08c; margin-right: 10px; min-width: 30px; }
+.step-text { color: #ccc; flex: 1; }
+.step-arrow { color: #666; transition: transform 0.2s; }
+.step-header.active .step-arrow { transform: rotate(180deg); }
+.step-content { display: none; padding: 15px; background: #121212; border-bottom: 1px solid #333; text-align: center; }
+.step-content.active { display: block; }
+.step-content img { max-width: 100%; cursor: pointer; border: 2px solid #333; border-radius: 4px; }
+.step-content img:hover { border-color: #08c; }
 </style>
 
 <div id="groups-steps" class="video-steps">
 <h3>Steps</h3>
-<div class="step-grid">
-  <div class="step-item"><img src="../videos/lessons/groups/1.png" class="step-thumb" onclick="showModal(this.src)"><div class="step-text"><span class="step-num">1.</span> Click your profile icon in the top right</div></div>
-  <div class="step-item"><img src="../videos/lessons/groups/2.png" class="step-thumb" onclick="showModal(this.src)"><div class="step-text"><span class="step-num">2.</span> Click Switch App, then select B1.church</div></div>
-  <div class="step-item"><img src="../videos/lessons/groups/3.png" class="step-thumb" onclick="showModal(this.src)"><div class="step-text"><span class="step-num">3.</span> Click your name in the Member Portal</div></div>
-  <div class="step-item"><img src="../videos/lessons/groups/4.png" class="step-thumb" onclick="showModal(this.src)"><div class="step-text"><span class="step-num">4.</span> Select Admin Portal</div></div>
-  <div class="step-item"><img src="../videos/lessons/groups/5.png" class="step-thumb" onclick="showModal(this.src)"><div class="step-text"><span class="step-num">5.</span> This is the B1.church Dashboard</div></div>
-  <div class="step-item"><img src="../videos/lessons/groups/6.png" class="step-thumb" onclick="showModal(this.src)"><div class="step-text"><span class="step-num">6.</span> Click Dashboard dropdown and select Serving</div></div>
-  <div class="step-item"><img src="../videos/lessons/groups/7.png" class="step-thumb" onclick="showModal(this.src)"><div class="step-text"><span class="step-num">7.</span> Click Add Ministry</div></div>
-  <div class="step-item"><img src="../videos/lessons/groups/8.png" class="step-thumb" onclick="showModal(this.src)"><div class="step-text"><span class="step-num">8.</span> Enter a name for your ministry</div></div>
-  <div class="step-item"><img src="../videos/lessons/groups/9.png" class="step-thumb" onclick="showModal(this.src)"><div class="step-text"><span class="step-num">9.</span> Type Children's Ministry and click Add</div></div>
-  <div class="step-item"><img src="../videos/lessons/groups/10.png" class="step-thumb" onclick="showModal(this.src)"><div class="step-text"><span class="step-num">10.</span> Click Manage to configure your ministry</div></div>
-  <div class="step-item"><img src="../videos/lessons/groups/11.png" class="step-thumb" onclick="showModal(this.src)"><div class="step-text"><span class="step-num">11.</span> Click the Teams tab</div></div>
-  <div class="step-item"><img src="../videos/lessons/groups/12.png" class="step-thumb" onclick="showModal(this.src)"><div class="step-text"><span class="step-num">12.</span> Click Create Team</div></div>
-  <div class="step-item"><img src="../videos/lessons/groups/13.png" class="step-thumb" onclick="showModal(this.src)"><div class="step-text"><span class="step-num">13.</span> Enter a name like Elementary Teachers and click Add</div></div>
-  <div class="step-item"><img src="../videos/lessons/groups/14.png" class="step-thumb" onclick="showModal(this.src)"><div class="step-text"><span class="step-num">14.</span> Click Dashboard dropdown and select People</div></div>
-  <div class="step-item"><img src="../videos/lessons/groups/15.png" class="step-thumb" onclick="showModal(this.src)"><div class="step-text"><span class="step-num">15.</span> Click Groups in the top navigation</div></div>
-  <div class="step-item"><img src="../videos/lessons/groups/16.png" class="step-thumb" onclick="showModal(this.src)"><div class="step-text"><span class="step-num">16.</span> Click Add Group</div></div>
-  <div class="step-item"><img src="../videos/lessons/groups/17.png" class="step-thumb" onclick="showModal(this.src)"><div class="step-text"><span class="step-num">17.</span> Click Category Name dropdown and select Add New</div></div>
-  <div class="step-item"><img src="../videos/lessons/groups/18.png" class="step-thumb" onclick="showModal(this.src)"><div class="step-text"><span class="step-num">18.</span> Enter Parents as category and Parents Of Elementary Kids as group name, click Add</div></div>
-  <div class="step-item"><img src="../videos/lessons/groups/19.png" class="step-thumb" onclick="showModal(this.src)"><div class="step-text"><span class="step-num">19.</span> Your parent group is now created</div></div>
-  <div class="step-item"><img src="../videos/lessons/groups/20.png" class="step-thumb" onclick="showModal(this.src)"><div class="step-text"><span class="step-num">20.</span> Click your profile icon and select Switch App</div></div>
-  <div class="step-item"><img src="../videos/lessons/groups/21.png" class="step-thumb" onclick="showModal(this.src)"><div class="step-text"><span class="step-num">21.</span> Click Lessons.church</div></div>
-  <div class="step-item"><img src="../videos/lessons/groups/22.png" class="step-thumb" onclick="showModal(this.src)"><div class="step-text"><span class="step-num">22.</span> You're back in Lessons.church - click Add First Classroom to continue</div></div>
+<div class="step-accordion">
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">1.</span><span class="step-text">Click your profile icon in the top right</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/groups/1.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">2.</span><span class="step-text">Click Switch App, then select B1.church</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/groups/2.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">3.</span><span class="step-text">Click your name in the Member Portal</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/groups/3.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">4.</span><span class="step-text">Select Admin Portal</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/groups/4.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">5.</span><span class="step-text">This is the B1.church Dashboard</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/groups/5.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">6.</span><span class="step-text">Click Dashboard dropdown and select Serving</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/groups/6.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">7.</span><span class="step-text">Click Add Ministry</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/groups/7.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">8.</span><span class="step-text">Enter a name for your ministry</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/groups/8.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">9.</span><span class="step-text">Type Children's Ministry and click Add</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/groups/9.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">10.</span><span class="step-text">Click Manage to configure your ministry</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/groups/10.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">11.</span><span class="step-text">Click the Teams tab</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/groups/11.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">12.</span><span class="step-text">Click Create Team</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/groups/12.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">13.</span><span class="step-text">Enter a name like Elementary Teachers and click Add</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/groups/13.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">14.</span><span class="step-text">Click Dashboard dropdown and select People</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/groups/14.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">15.</span><span class="step-text">Click Groups in the top navigation</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/groups/15.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">16.</span><span class="step-text">Click Add Group</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/groups/16.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">17.</span><span class="step-text">Click Category Name dropdown and select Add New</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/groups/17.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">18.</span><span class="step-text">Enter Parents as category and Parents Of Elementary Kids as group name, click Add</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/groups/18.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">19.</span><span class="step-text">Your parent group is now created</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/groups/19.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">20.</span><span class="step-text">Click your profile icon and select Switch App</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/groups/20.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">21.</span><span class="step-text">Click Lessons.church</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/groups/21.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">22.</span><span class="step-text">You're back in Lessons.church - click Add First Classroom to continue</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/groups/22.png" onclick="showModal(this.src)"></div>
 </div>
 </div>
 
@@ -78,6 +105,23 @@ title: Setup Lessons.church
 </div>
 
 <script>
+function toggleStep(header) {
+  var content = header.nextElementSibling;
+  var isActive = header.classList.contains('active');
+
+  // Close all other steps
+  header.parentElement.querySelectorAll('.step-header').forEach(function(h) {
+    h.classList.remove('active');
+    h.nextElementSibling.classList.remove('active');
+  });
+
+  // Toggle this one
+  if (!isActive) {
+    header.classList.add('active');
+    content.classList.add('active');
+  }
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('#playlist a').forEach(function(link) {
     link.addEventListener('click', function() {
