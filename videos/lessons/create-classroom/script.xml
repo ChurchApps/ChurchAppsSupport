@@ -1,19 +1,22 @@
 <tutorial>
   <speak>
     <mark name="1" />
-    On the right side of the page, click the plus sign next to Classrooms.
-    <break time="1s"/>
+    Now that we have our volunteer team and parent group set up, let's create a classroom. Click Add First Classroom.
+    <break time="2s"/>
     <mark name="2" />
-    Enter the name of your classroom.
-    <break time="1s"/>
+    Enter a name for your classroom, such as Elementary Class.
+    <break time="2s"/>
     <mark name="3" />
-    If you wish to share the upcoming lesson with your teachers via the B1 app, select a volunteer team.  These are configured in the planning section of B1.church Admin.
-    <break time="1s"/>
+    Click the Volunteer Team dropdown. You'll see the Elementary Teachers team we created earlier. Select it to give your teachers access to upcoming lessons in the B1 app.
+    <break time="2s"/>
     <mark name="4" />
-    If you wish to share the current lesson with your students or their parents via the B1 app, select a parent/student group.  These are configured in the groups section of B1.church Admin.
-    <break time="1s"/>
+    Click the Parent Student Group dropdown. You'll see the Parents Of Elementary Kids group we created. Select it to share lessons with parents via the B1 app.
+    <break time="2s"/>
     <mark name="5" />
-    Click Save
+    Click Save to create your classroom.
+    <break time="2s"/>
+    <mark name="6" />
+    Your classroom has been created and is now ready to use. You can add more classrooms by clicking the Add button.
     <break time="2s"/>
     <mark name="end" />
   </speak>

@@ -112,7 +112,20 @@ title: Setup Lessons.church
 
 <div id="classroom-steps" class="video-steps">
 <h3>Steps</h3>
-<p><em>Steps coming soon...</em></p>
+<div class="step-accordion">
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">1.</span><span class="step-text">Click Add First Classroom</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/create-classroom/1.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">2.</span><span class="step-text">Enter a name for your classroom (e.g., Elementary Class)</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/create-classroom/2.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">3.</span><span class="step-text">Select the Volunteer Team we created earlier (Elementary Teachers)</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/create-classroom/3.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">4.</span><span class="step-text">Select the Parent/Student Group we created (Parents Of Elementary Kids)</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/create-classroom/4.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">5.</span><span class="step-text">Click Save to create your classroom</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/create-classroom/5.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">6.</span><span class="step-text">Your classroom is created and ready to use</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/create-classroom/6.png" onclick="showModal(this.src)"></div>
+</div>
 </div>
 
 <div id="schedule-steps" class="video-steps">
