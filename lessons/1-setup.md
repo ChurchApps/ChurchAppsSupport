@@ -13,6 +13,7 @@ title: Setup Lessons.church
       <li><a href="../videos/lessons/groups/output.mp4" data-steps="groups-steps">Create Groups</a></li>
       <li><a href="../videos/lessons/create-classroom/output.mp4" data-steps="classroom-steps">Create a Classroom</a></li>
       <li><a href="../videos/lessons/schedule-lesson/output.mp4" data-steps="schedule-steps">Schedule Lessons</a></li>
+      <li><a href="../videos/lessons/customize-lessons/output.mp4" data-steps="customize-steps">Customize Lessons</a></li>
       <li><a href="../videos/lessons/connect.mp4" data-steps="connect-steps">Connect Apps</a></li>
   </ul>
 </div>
@@ -143,6 +144,28 @@ title: Setup Lessons.church
   <div class="step-content"><img src="../videos/lessons/schedule-lesson/5.png" onclick="showModal(this.src)"></div>
   <div class="step-header" onclick="toggleStep(this)"><span class="step-num">6.</span><span class="step-text">Multiple lessons scheduled - continue to build your full schedule</span><span class="step-arrow">▼</span></div>
   <div class="step-content"><img src="../videos/lessons/schedule-lesson/6.png" onclick="showModal(this.src)"></div>
+</div>
+</div>
+
+<div id="customize-steps" class="video-steps">
+<h3>Steps</h3>
+<div class="step-accordion">
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">1.</span><span class="step-text">Click the small but powerful Customize link next to any scheduled lesson</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/customize-lessons/1.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">2.</span><span class="step-text">View all sections in the lesson that you can customize</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/customize-lessons/2.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">3.</span><span class="step-text">Click a section to select it, then click the trash icon to remove</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/customize-lessons/3.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">4.</span><span class="step-text">Choose This Classroom or All Classrooms - useful when sharing lessons across rooms</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/customize-lessons/4.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">5.</span><span class="step-text">Removed sections show in red with strikethrough</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/customize-lessons/5.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">6.</span><span class="step-text">Use the up/down arrows to reorder sections</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/customize-lessons/6.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">7.</span><span class="step-text">Apply changes to just this classroom or all classrooms as needed</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/customize-lessons/7.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">8.</span><span class="step-text">Your customized lesson is ready to present</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/customize-lessons/8.png" onclick="showModal(this.src)"></div>
 </div>
 </div>
 

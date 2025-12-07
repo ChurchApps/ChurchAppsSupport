@@ -1,0 +1,29 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    Each lesson can be customized to fit your church's needs. Click the small but powerful Customize link next to any scheduled lesson.
+    <break time="2s"/>
+    <mark name="2" />
+    The Customize Lesson page shows all the sections in your lesson. You can remove sections you don't want to use.
+    <break time="2s"/>
+    <mark name="3" />
+    Click on a section to select it, then click the trash icon to remove it.
+    <break time="2s"/>
+    <mark name="4" />
+    You'll be asked where to apply this change. Choose This Classroom to only affect this classroom, or All the Classrooms if multiple classrooms are using the same lesson but only some need editing.
+    <break time="3s"/>
+    <mark name="5" />
+    Removed sections appear in red with a strikethrough. You can also reorder sections using the up and down arrows.
+    <break time="2s"/>
+    <mark name="6" />
+    Select any item and use the arrows to move it up or down in the lesson order.
+    <break time="2s"/>
+    <mark name="7" />
+    Remember, you can apply changes to just this classroom or all classrooms depending on your ministry's needs.
+    <break time="2s"/>
+    <mark name="8" />
+    Your customized lesson is now ready. The changes will be reflected when you present the lesson.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
