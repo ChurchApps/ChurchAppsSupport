@@ -86,7 +86,28 @@ title: Setup Lessons.church
 
 <div id="register-steps" class="video-steps active">
 <h3>Steps</h3>
-<p><em>Steps coming soon...</em></p>
+<div class="step-accordion">
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">1.</span><span class="step-text">Visit lessons.church and click the Register button</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/register/1.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">2.</span><span class="step-text">Enter your first name, last name, and email address, then click Register</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/register/2.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">3.</span><span class="step-text">Check your email for a verification link (check spam if needed)</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/register/3.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">4.</span><span class="step-text">Click the email link and set your password, then click Sign In</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/register/4.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">5.</span><span class="step-text">Click in the search box to select your church</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/register/5.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">6.</span><span class="step-text">Search for your church, or click Register a New Church if not found</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/register/6.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">7.</span><span class="step-text">Click OK on the confirmation dialog</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/register/7.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">8.</span><span class="step-text">Enter your church information and click Save</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/register/8.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">9.</span><span class="step-text">Click on your church to select it</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/register/9.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">10.</span><span class="step-text">You're all set! You can now access the classroom management dashboard</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/register/10.png" onclick="showModal(this.src)"></div>
+</div>
 </div>
 
 <div id="classroom-steps" class="video-steps">
