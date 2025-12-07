@@ -1,23 +1,22 @@
 <tutorial>
   <speak>
     <mark name="1" />
-    Click on your classroom name.
-    <break time="1s"/>
+    Now let's schedule some lessons. Click on your classroom to open it.
+    <break time="2s"/>
     <mark name="2" />
-    In the Schedules box, click the plus icon.
-    <break time="1s"/>
+    Click Add First Schedule to create your first lesson schedule.
+    <break time="2s"/>
     <mark name="3" />
-    Choose the date for the lesson, and which program, study, lesson and venue you wish to display.
-    <break time="1s"/>
+    Select the date, Program, Study, Lesson, and Venue you would like to schedule. If you need to browse available lessons, visit lessons dot church and explore the studies, then come back here to set your schedule. Click Save when ready.
+    <break time="3s"/>
     <mark name="4" />
-    Click "Save"
-    <break time="1s"/>
+    Your first lesson is now scheduled. Click Add Schedule to add more lessons.
+    <break time="2s"/>
     <mark name="5" />
-    Your lesson is now scheduled, repeat the process to schedule additional lessons.
-    <break time="1s"/>
+    Notice that the system automatically sets the next week and selects the next lesson in the series. This makes it super easy to schedule an entire series within minutes. Just verify the details and click Save.
+    <break time="3s"/>
     <mark name="6" />
-    The videos will automatically download to the Lessons.church presenter app, and the outlines will automatically show up in the B1 app.
-    Be sure to download and install each of these apps using the links on this page.
+    You now have multiple lessons scheduled. Continue adding lessons to build out your full schedule.
     <break time="2s"/>
     <mark name="end" />
   </speak>

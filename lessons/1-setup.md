@@ -130,7 +130,20 @@ title: Setup Lessons.church
 
 <div id="schedule-steps" class="video-steps">
 <h3>Steps</h3>
-<p><em>Steps coming soon...</em></p>
+<div class="step-accordion">
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">1.</span><span class="step-text">Click on your classroom to open it</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/schedule-lesson/1.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">2.</span><span class="step-text">Click Add First Schedule</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/schedule-lesson/2.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">3.</span><span class="step-text">Select Date, Program, Study, Lesson, and Venue, then click Save</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/schedule-lesson/3.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">4.</span><span class="step-text">Your first lesson is scheduled - click Add Schedule for more</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/schedule-lesson/4.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">5.</span><span class="step-text">System auto-selects next week and next lesson in series - just Save</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/schedule-lesson/5.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">6.</span><span class="step-text">Multiple lessons scheduled - continue to build your full schedule</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/schedule-lesson/6.png" onclick="showModal(this.src)"></div>
+</div>
 </div>
 
 <div id="connect-steps" class="video-steps">
