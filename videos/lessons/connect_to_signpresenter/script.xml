@@ -1,0 +1,49 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    Signpresenter can help you get your weekly lessons onto your screens automatically by connecting Lessons dot church to it. It's a simple and convenient way to do it. Let's get started. Click the icon next to the classroom. Be sure you are using the correct venue. The feed URL is very important and never changes.
+    <break time="2s"/>
+    <mark name="2" />
+    Right-click on this url and select Copy Link Address.
+    <break time="2s"/>
+    <mark name="3" />
+    Go to Signpresenter and click on Playlists. Select Horizontal to get started.
+    <break time="2s"/>
+    <mark name="4" />
+    You will see different feed options on this page. Choose External Feed to connect your Lessons dot church feed. You can also subscribe to Big Big Worship or any of the other feeds on this page so you have access to them when building a custom playlist.
+    <break time="2s"/>
+    <mark name="5" />
+    Name it and paste the feed URL. Click Save. The playlist will be saved.
+    <break time="2s"/>
+    <mark name="6" />
+    If you go to the playlist tab, you can select a pre-built feed or click Create a New Custom Playlist to combine multiple content sources.
+    <break time="2s"/>
+    <mark name="7" />
+    Let's name it Preschool. This allows you to add slides as well as playlists to it. The Available Content panel on the right shows your messages.
+    <break time="2s"/>
+    <mark name="8" />
+    Click the Playlists tab in Available Content to see your saved playlists.
+    <break time="2s"/>
+    <mark name="9" />
+    Select a playlist like Ark Kids Feed to add it to your custom playlist.
+    <break time="2s"/>
+    <mark name="10" />
+    Big Big Worship offers countdowns, worship songs with motions, and interactive games. All content is updated weekly.
+    <break time="2s"/>
+    <mark name="11" />
+    Click the settings icon next to a playlist to set the starting point and ending point. The digits on the left show the start point while digits on the right indicate the end point.
+    <break time="2s"/>
+    <mark name="13" />
+    Here you can see how a playlist can be broken into sections. The first Ark Kids Feed shows slides 1 through 3, then we have a countdown, then slides 3 through 9, followed by worship, and finally slides 9 through 999 for the rest.
+    <break time="2s"/>
+    <mark name="12" />
+    When you are done, go to the Screens tab. You can add your playlist to a Schedule or as a Manual Playlist. We recommend using a Schedule. With a scheduled playlist, slides auto-advance. Images from Lessons dot church stay on screen for 3600 seconds, so you still have control of when to go to the next slide. With a manual playlist, you have to advance the slides yourself with the remote. Click Save when done.
+    <break time="2s"/>
+    <mark name="14" />
+    You can also upload your own videos or images in the My Content tab under Messages. This ensures any content you want played can be added to your playlists.
+    <break time="2s"/>
+    You do not have to change the feed URL every week. Just add another schedule in Lessons dot church for the next Sunday and you are done. It will automatically update on the screen. That's how you connect Lessons dot church to Signpresenter!
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>

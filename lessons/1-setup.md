@@ -15,6 +15,7 @@ title: Setup Lessons.church
       <li><a href="../videos/lessons/schedule-lesson/output.mp4" data-steps="schedule-steps">Schedule Lessons</a></li>
       <li><a href="../videos/lessons/customize-lessons/output.mp4" data-steps="customize-steps">Customize Lessons</a></li>
       <li><a href="../videos/lessons/connect.mp4" data-steps="connect-steps" data-start="357">Connect Apps</a></li>
+      <li><a href="../videos/lessons/connect_to_signpresenter/output.mp4" data-steps="signpresenter-steps">Connect to SignPresenter</a></li>
   </ul>
 </div>
 
@@ -198,6 +199,40 @@ title: Setup Lessons.church
   <div class="step-content"><img src="../videos/lessons/connect-apps/12.png" onclick="showModal(this.src)"></div>
   <div class="step-header" onclick="toggleStep(this)"><span class="step-num">13.</span><span class="step-text">Present your lesson - no internet required!</span><span class="step-arrow">▼</span></div>
   <div class="step-content"><img src="../videos/lessons/connect-apps/13.png" onclick="showModal(this.src)"></div>
+</div>
+</div>
+
+<div id="signpresenter-steps" class="video-steps">
+<h3>Steps</h3>
+<div class="step-accordion">
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">1.</span><span class="step-text">In Lessons.church, click the RSS icon next to your classroom (use correct venue)</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/connect_to_signpresenter/1.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">2.</span><span class="step-text">Right-click "this url" and select Copy Link Address</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/connect_to_signpresenter/2.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">3.</span><span class="step-text">In SignPresenter, go to Playlists tab and select Horizontal</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/connect_to_signpresenter/3.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">4.</span><span class="step-text">Choose External Feed, or subscribe to bigBigWorship and other feeds for later use</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/connect_to_signpresenter/4.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">5.</span><span class="step-text">Name your playlist and paste the feed URL, then click Save</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/connect_to_signpresenter/5.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">6.</span><span class="step-text">Select a pre-built feed, or click Create a New Custom Playlist</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/connect_to_signpresenter/6.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">7.</span><span class="step-text">Name your custom playlist (e.g., Preschool) - add slides and playlists to it</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/connect_to_signpresenter/7.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">8.</span><span class="step-text">Click the Playlists tab in Available Content to see your saved playlists</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/connect_to_signpresenter/8.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">9.</span><span class="step-text">Click on a playlist like Ark Kids Feed to add it to your custom playlist</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/connect_to_signpresenter/9.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">10.</span><span class="step-text">Add bigBigWorship content for countdowns, worship songs, and games (updated weekly)</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/connect_to_signpresenter/10.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">11.</span><span class="step-text">Click the gear icon to set start/end points for each feed</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/connect_to_signpresenter/11.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">12.</span><span class="step-text">Break your playlist into sections (slides 1-3, countdown, slides 3-9, worship, etc.)</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/connect_to_signpresenter/13.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">13.</span><span class="step-text">Go to Screens tab - add to Schedule (recommended, auto-advance) or Manual Playlist</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/connect_to_signpresenter/12.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">14.</span><span class="step-text">Upload your own videos or images in My Content > Messages</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/connect_to_signpresenter/14.png" onclick="showModal(this.src)"></div>
 </div>
 </div>
 
