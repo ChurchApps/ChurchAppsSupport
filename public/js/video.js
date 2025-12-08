@@ -63,12 +63,21 @@ function run(song, videoplaylist, link){
     if(items[item].classList)
       items[item].classList.remove("active");
   }
-  
+
   //agregar active a este elemento
   parent.classList.add("active");
-  
+
   //tocar la cancion
   videoplaylist.src = song;
   videoplaylist.load();
+
+  var startTime = link.getAttribute('data-start');
+  if (startTime) {
+    videoplaylist.addEventListener('loadedmetadata', function onLoaded() {
+      videoplaylist.currentTime = parseFloat(startTime);
+      videoplaylist.removeEventListener('loadedmetadata', onLoaded);
+    });
+  }
+
   videoplaylist.play();
 }
