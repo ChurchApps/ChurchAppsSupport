@@ -11,7 +11,48 @@ Each tutorial consists of:
 
 ## Creating a Tutorial
 
-### 1. Take Screenshots
+### Using TutorialScreenshot App
+
+The **TutorialScreenshot.app** (located on Desktop) automates the screenshot process:
+
+**Features:**
+- Automatically captures Chrome browser in fullscreen (no URL bar)
+- Resizes screenshots to 1920x1080 for consistent video output
+- Auto-numbers screenshots sequentially (1.png, 2.png, 3.png, etc.)
+- Supports multiple displays with display selection
+
+**How to Use:**
+1. Open the webpage/app you want to capture in Google Chrome
+2. Run **TutorialScreenshot.app** from your Desktop
+3. If you have multiple displays, a dialog will appear:
+   - Select "Display 1 (Main)" for your main display
+   - Select "Display 2 (Extended)" for your extended display
+   - If you only have one display, this is skipped automatically
+4. The app will:
+   - Make Chrome fullscreen
+   - Wait 5.5 seconds for animations to settle
+   - Take a screenshot of the selected display
+   - Exit fullscreen
+   - Save to `~/Desktop/Screenshots/` with the next available number
+
+**Important Notes:**
+- Screenshots are saved to: `/Users/[username]/Desktop/Screenshots/`
+- The app only captures the Chrome browser content, not your wallpaper or other windows
+- If you have multiple displays, only the selected display's screenshot is saved
+- Numbers continue from the last screenshot (if 7.png exists, next will be 8.png)
+- To start a new tutorial, move existing screenshots to your tutorial folder first
+
+**Workflow:**
+1. Clear or move old screenshots from `~/Desktop/Screenshots/`
+2. Run TutorialScreenshot.app and select your display
+3. Click through your tutorial steps, running the app for each screenshot
+4. When done, move all numbered screenshots to your tutorial directory:
+   ```
+   mv ~/Desktop/Screenshots/*.png /Users/terrybyrd/ChurchAppsSupport/videos/[app]/[tutorial-name]/
+   ```
+
+### 1. Take Screenshots (Manual Method)
+Alternative to TutorialScreenshot app:
 - Capture each step of the process as numbered PNG files
 - Name them sequentially: 1.png, 2.png, 3.png, etc.
 - Place in a directory under the appropriate app folder (e.g., `/videos/b1Admin/tutorial-name/`)
