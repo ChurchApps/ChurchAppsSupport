@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tutorial>
+    <speak>
+    <break time="1s"/>
+    <mark name="1" />
+    To add a person to B1 Admin, start from the Search People page and click the "Add Person" button in the top right corner.
+    <break time="1s"/>
+    <mark name="2" />
+    This opens the "Add a New Person" form with fields for First Name, Last Name, and Email.
+    <break time="1s"/>
+    <mark name="3" />
+    Enter the person's first name, last name, and email address, then click the "Add" button.
+    <break time="1s"/>
+    <mark name="4" />
+    The person is now added to your database and their profile page will open automatically.
+    <break time="2s"/>
+    <mark name="end"/>
+    </speak>
+</tutorial>

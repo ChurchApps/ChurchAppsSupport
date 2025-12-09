@@ -14,6 +14,7 @@ For further support, please email [support@churchapps.org](mailto:support@church
 <div id="videoContainer">
   <ul id="playlist">
       <li class="active"><a href="/videos/b1Admin/intro/output.mp4">Introduction to B1.church</a></li>
+      <li><a href="/videos/b1Admin/Test-simple_add/output.mp4">Simple Add Person</a></li>
   </ul>
 </div>
 
