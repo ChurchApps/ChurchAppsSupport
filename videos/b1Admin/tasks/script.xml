@@ -52,7 +52,7 @@
     The task is now marked as completed and closed.
     <break time="1s"/>
     <mark name="18" />
-    Closed tasks will no longer appear in your open tasks list unless you enable Show Closed.
+    Closed tasks will no longer appear in your open tasks list unless you enable Show Closed. To automate a task follow the Automation tutorial below.
     <break time="2s"/>
     <mark name="end" />
     </speak>
