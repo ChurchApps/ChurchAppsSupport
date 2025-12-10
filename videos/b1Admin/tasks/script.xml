@@ -4,7 +4,7 @@
     To set up tasks for your leaders, church members, or groups, navigate to the B1.church Admin Dashboard.
     <break time="1s"/>
     <mark name="2" />
-    Then click the plus sign on the task bar on the right side of your screen.
+    Then click the Add Task button on the right side of your screen.
     <break time="1s"/>
     <mark name="3" />
     Here is where you will fill out the information for your task. Since you are the one that is making the task, it is associated with you.
@@ -34,25 +34,25 @@
     Now I’ll log in as Terry Seven so you can see what the task notification looks like to the person receiving the task.
     <break time="1s"/>
     <mark name="12" />
-    I’m now logged in as Terry Seven.
+    I'm now logged in as Terry Seven and navigated to the Tasks page.
     <break time="1s"/>
     <mark name="13" />
-    You can see the tasks assigned to me listed on the right side of your screen. You can also see these tasks on your mobile app.
+    Here you can see the task assigned to me. You can also see these tasks on the Dashboard and on your mobile app.
     <break time="1s"/>
     <mark name="14" />
-    Click on the task to see the details.
+    You can view your assigned tasks from either the Tasks page or from the Dashboard tasks panel.
     <break time="1s"/>
     <mark name="15" />
-    Once the task is completed, you can change the status from open to closed.
+    Click on the task to open the details. Once the task is completed, you can change the status from open to closed.
     <break time="1s"/>
     <mark name="16" />
-    Choose closed.
+    Click on the status dropdown and choose closed.
     <break time="1s"/>
     <mark name="17" />
-    The task is now completed and closed.
+    The task is now marked as completed and closed.
     <break time="1s"/>
     <mark name="18" />
-    It no longer shows up on your B1.church Admin dashboard.
+    Closed tasks will no longer appear in your open tasks list unless you enable Show Closed.
     <break time="2s"/>
     <mark name="end" />
     </speak>
