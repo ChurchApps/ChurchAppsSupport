@@ -1,6 +1,7 @@
 ---
 layout: page
 app: b1Admin
+section: Admin
 title: Get Youtube Channel ID
 ---
 
