@@ -5,23 +5,44 @@
     In the B1.church Admin dashboard click on the Donations icon.
     <break time="1s"/>
     <mark name="2"/>
-    The default Donation Summary is for the past year. You can choose whatever dates you would like to show. Click "Run Report".
+    The Donation Summary is shown by default. You can choose whatever dates you would like to show. Click "Run Report".
     <break time="1s"/>
     <mark name="3"/>
-    To download a CSV of the Donation Summary click the download icon. This will produce a dropdown menu. Choose "Fund Summary" and a CSV file will download to your Downloads File. This file does not include donors names.
+    To download a CSV of the Donation Summary click the download icon. This will produce a dropdown menu with three options.
     <break time="1s"/>
     <mark name="4"/>
-    Click on the "Detailed Summary" to produce a CSV file which includes each donors name, how much they have given and which fund they gave to during the "Filter Report" dates.
+    Click on "Sample Word Template" to download a template for creating donor reports.
     <break time="1s"/>
     <mark name="5"/>
-    Use the following templates or create your own Pages or Word document to mail merge with the CSV file (using Numbers or Excel) for a donation report.
+    You can also choose "Summary" or "Detailed Report" from this menu to download CSV files for further processing.
     <break time="1s"/>
     <mark name="6"/>
-    To view individual donations click on the batch you would like to see.
+    Click on the "Batches" tab to view individual donation batches. You can see the batch name, date, number of donations, and total amount. Click on the download icon to export batch data.
     <break time="1s"/>
     <mark name="7"/>
-    You can download a csv file showing the results. This will include the donor and the amount given in that batch.
+    The batches list shows all donation batches with their details.
+    <break time="1s"/>
+    <mark name="8"/>
+    Click on a batch name to view its details. You can click "Edit Batch" to modify batch information.
+    <break time="1s"/>
+    <mark name="9"/>
+    Within a batch, you can click the "Edit" button next to individual donations to modify donation details.
+    <break time="1s"/>
+    <mark name="10"/>
+    In the edit view, you can modify the batch name, date, and other details, then click "Save" to save your changes.
+    <break time="1s"/>
+    <mark name="11"/>
+    Click on the "Funds" tab to manage donation funds and categories. Click "Add Fund" to create a new fund.
+    <break time="1s"/>
+    <mark name="12"/>
+    The Funds page shows all available funds and their tax deductible status, which is important for donor reporting.
+    <break time="1s"/>
+    <mark name="13"/>
+    Click on "Giving Statements" to generate individual donor statements. Select a year and click "Download ZIP" to download individual CSV files for each donor.
+    <break time="1s"/>
+    <mark name="14"/>
+    You can also click "Print All 3 Statements" to generate a consolidated PDF document with all donor statements for printing.
     <break time="2s"/>
     <mark name="end"/>
   </speak>
-</tutorial> 
+</tutorial>
