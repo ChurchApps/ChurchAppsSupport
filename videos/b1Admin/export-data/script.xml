@@ -2,44 +2,38 @@
 <tutorial>
   <speak>
     <mark name="1"/>
-    Let's export your data from B1.church Admin. First, in the B1.church Admin dashboard, click on the settings icon.
+    Let's export your data from B1.church Admin. First, in the B1.church Admin dashboard, click on the Settings icon.
     <break time="1s"/>
     <mark name="2"/>
-    Click on Import/Export in the settings menu.
+    In the Settings page, click on the Import/Export button to access the import and export tool.
     <break time="1s"/>
     <mark name="3"/>
-    Click the "Choose One" button to begin the export process.
+    You'll see Step 1 - Import Source. Click on the Data Source dropdown to choose your data source.
     <break time="1s"/>
     <mark name="4"/>
-    Choose "B1.church Admin database" as your export option.
+    Select "B1 Database" from the dropdown menu to export your B1 church data.
     <break time="1s"/>
     <mark name="5"/>
-    This will take you to Step 2 - Preview. Here you can review what will be exported.
+    This takes you to Step 2 - Preview. Here you can see a preview of the data that will be exported, including people, groups, attendance, donations, and forms. Click "Continue to Destination" to proceed.
     <break time="1s"/>
     <mark name="6"/>
-    Scroll to the bottom of the preview tab and click "Continue" to proceed.
+    You'll now be at Step 3 - Choose Export Destination. Click on the Export Destination dropdown.
     <break time="1s"/>
     <mark name="7"/>
-    You'll now be at Step 3 - Destination. This is where you choose how to export your data.
+    Select "B1 Export Zip" to create a zip file containing all your exported data.
     <break time="1s"/>
     <mark name="8"/>
-    Click on "B1.church Admin Export Zip" to create a zip file of your data.
+    Step 4 shows the Export Progress. You'll see green check marks as each section completes. This includes campuses, people, photos, groups, donations, attendance, forms, and more. Please wait for the process to finish without closing your browser.
     <break time="1s"/>
     <mark name="9"/>
-    This takes you to Step 4 - Run. You'll see progress indicated with green check marks as the export processes.
+    When the export is complete, the Recent Download History will show your downloaded B1Export file. The zip file will automatically download to your downloads folder.
     <break time="1s"/>
     <mark name="10"/>
-    When the export is complete, the zipped folder will automatically download to your downloads folder.
+    Open your downloads folder and locate the B1Export zip file. Unzip the file to see the contents. You'll find multiple CSV files for different data types, along with any exported photos.
     <break time="1s"/>
     <mark name="11"/>
-    Find the "B1.church Admin Download" file in your downloads folder.
-    <break time="1s"/>
-    <mark name="12"/>
-    If the file isn't already unzipped, unzip it to access the contents.
-    <break time="1s"/>
-    <mark name="13"/>
-    Open the "people.csv" file. This contains your exported data, which you can now use with Excel or Numbers.
-    <break time="1s"/>
+    Open any CSV file, such as people.csv, with Excel or Numbers. This contains your exported data with all the information you can now use for reporting, analysis, or importing into another system.
+    <break time="2s"/>
     <mark name="end"/>
   </speak>
-</tutorial> 
+</tutorial>
