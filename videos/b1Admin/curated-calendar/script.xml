@@ -2,38 +2,41 @@
 <tutorial>
   <speak>
     <mark name="1"/>
-    You can make a curated calendar using events from your group calendars. From the B1.church Admin dashboard navigate to B1.church
+    You can create a curated calendar for your website. From the B1.church Dashboard click on B1.Church
     <break time="1s"/>
     <mark name="2"/>
-    Click on your name and Go to the admin portal
+    Click your name then Click the Admin Portal
     <break time="1s"/>
     <mark name="3"/>
-    Choose calendars from the mobile app dropdown menu
+    From the dashboard navigate to the Website section
     <break time="1s"/>
     <mark name="4"/>
-    Click the plus sign and give your calendar a name
+    Click on Calendars from the top navigation
     <break time="1s"/>
     <mark name="5"/>
-    Be sure to hit save
+    Click Add Calendar to create a new curated calendar
     <break time="1s"/>
     <mark name="6"/>
-    Click on the calendar icon to add events
+    Give your calendar a name and click Create
     <break time="1s"/>
     <mark name="7"/>
-    Click add to choose a group
+    Click on the manage events icon to configure your new calendar
     <break time="1s"/>
     <mark name="8"/>
-    Select a group
+    Click Add in the Groups in Calendar section to add groups
     <break time="1s"/>
     <mark name="9"/>
-    Choose any group you want to add to the calendar
+    Select a group from the dropdown menu
     <break time="1s"/>
     <mark name="10"/>
-    You can add all the events from the calendar or choose specific events to add
+    Choose whether to add all events or specific events then click Save
     <break time="1s"/>
     <mark name="11"/>
-    You now have a curated calender that you can add to your website 
+    Add as many groups as you want to include in your curated calendar
+    <break time="1s"/>
+    <mark name="12"/>
+    Click Subscribe to copy the ICS link or download the file to share your calendar. Your calendar can now be embeded on your website and mobile app.
     <break time="2s"/>
     <mark name="end"/>
   </speak>
-</tutorial> 
+</tutorial>
