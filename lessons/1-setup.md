@@ -14,7 +14,8 @@ title: Setup Lessons.church
       <li><a href="../videos/lessons/create-classroom/output.mp4" data-steps="classroom-steps">Create a Classroom</a></li>
       <li><a href="../videos/lessons/schedule-lesson/output.mp4" data-steps="schedule-steps">Schedule Lessons</a></li>
       <li><a href="../videos/lessons/customize-lessons/output.mp4" data-steps="customize-steps">Customize Lessons</a></li>
-      <li><a href="../videos/lessons/connect-apps/output.mp4" data-steps="connect-steps">Connect Apps</a></li>
+      <li><a href="../videos/lessons/connect-mobile/output.mp4" data-steps="mobile-steps">Connect Mobile App</a></li>
+      <li><a href="../videos/lessons/connect-tv/output.mp4" data-steps="tv-steps">Connect TV App</a></li>
       <li><a href="../videos/lessons/connect_to_signpresenter/output.mp4" data-steps="signpresenter-steps">Connect to SignPresenter</a></li>
   </ul>
 </div>
@@ -170,58 +171,61 @@ title: Setup Lessons.church
 </div>
 </div>
 
-<div id="connect-steps" class="video-steps">
-<h3>Steps - Mobile App</h3>
+<div id="mobile-steps" class="video-steps">
+<h3>Steps</h3>
 <div class="step-accordion">
   <div class="step-header" onclick="toggleStep(this)"><span class="step-num">1.</span><span class="step-text">Download the B1 Church app from the Apple App Store or Google Play Store</span><span class="step-arrow">▼</span></div>
-  <div class="step-content"><img src="../videos/lessons/connect-apps/1.png" onclick="showModal(this.src)"></div>
+  <div class="step-content"><img src="../videos/lessons/connect-mobile/1.png" onclick="showModal(this.src)"></div>
   <div class="step-header" onclick="toggleStep(this)"><span class="step-num">2.</span><span class="step-text">Open the app and you'll see the Church Search screen</span><span class="step-arrow">▼</span></div>
-  <div class="step-content"><img src="../videos/lessons/connect-apps/2.png" onclick="showModal(this.src)"></div>
+  <div class="step-content"><img src="../videos/lessons/connect-mobile/2.png" onclick="showModal(this.src)"></div>
   <div class="step-header" onclick="toggleStep(this)"><span class="step-num">3.</span><span class="step-text">Type your church name in the search field</span><span class="step-arrow">▼</span></div>
-  <div class="step-content"><img src="../videos/lessons/connect-apps/3.png" onclick="showModal(this.src)"></div>
+  <div class="step-content"><img src="../videos/lessons/connect-mobile/3.png" onclick="showModal(this.src)"></div>
   <div class="step-header" onclick="toggleStep(this)"><span class="step-num">4.</span><span class="step-text">Select your church from the search results</span><span class="step-arrow">▼</span></div>
-  <div class="step-content"><img src="../videos/lessons/connect-apps/4.png" onclick="showModal(this.src)"></div>
+  <div class="step-content"><img src="../videos/lessons/connect-mobile/4.png" onclick="showModal(this.src)"></div>
   <div class="step-header" onclick="toggleStep(this)"><span class="step-num">5.</span><span class="step-text">On the home screen, tap the menu icon in the top left corner</span><span class="step-arrow">▼</span></div>
-  <div class="step-content"><img src="../videos/lessons/connect-apps/5.png" onclick="showModal(this.src)"></div>
+  <div class="step-content"><img src="../videos/lessons/connect-mobile/5.png" onclick="showModal(this.src)"></div>
   <div class="step-header" onclick="toggleStep(this)"><span class="step-num">6.</span><span class="step-text">From the side menu, tap the Login button at the bottom</span><span class="step-arrow">▼</span></div>
-  <div class="step-content"><img src="../videos/lessons/connect-apps/6.png" onclick="showModal(this.src)"></div>
+  <div class="step-content"><img src="../videos/lessons/connect-mobile/6.png" onclick="showModal(this.src)"></div>
   <div class="step-header" onclick="toggleStep(this)"><span class="step-num">7.</span><span class="step-text">The login screen opens where you can sign in with your account</span><span class="step-arrow">▼</span></div>
-  <div class="step-content"><img src="../videos/lessons/connect-apps/7.png" onclick="showModal(this.src)"></div>
+  <div class="step-content"><img src="../videos/lessons/connect-mobile/7.png" onclick="showModal(this.src)"></div>
   <div class="step-header" onclick="toggleStep(this)"><span class="step-num">8.</span><span class="step-text">Enter your Lessons.church email and password, then tap Sign In</span><span class="step-arrow">▼</span></div>
-  <div class="step-content"><img src="../videos/lessons/connect-apps/8.png" onclick="showModal(this.src)"></div>
+  <div class="step-content"><img src="../videos/lessons/connect-mobile/8.png" onclick="showModal(this.src)"></div>
   <div class="step-header" onclick="toggleStep(this)"><span class="step-num">9.</span><span class="step-text">After logging in, you'll see your Lessons card - tap it to view lessons</span><span class="step-arrow">▼</span></div>
-  <div class="step-content"><img src="../videos/lessons/connect-apps/9.png" onclick="showModal(this.src)"></div>
+  <div class="step-content"><img src="../videos/lessons/connect-mobile/9.png" onclick="showModal(this.src)"></div>
   <div class="step-header" onclick="toggleStep(this)"><span class="step-num">10.</span><span class="step-text">Select a scheduled lesson from your classrooms</span><span class="step-arrow">▼</span></div>
-  <div class="step-content"><img src="../videos/lessons/connect-apps/10.png" onclick="showModal(this.src)"></div>
+  <div class="step-content"><img src="../videos/lessons/connect-mobile/10.png" onclick="showModal(this.src)"></div>
   <div class="step-header" onclick="toggleStep(this)"><span class="step-num">11.</span><span class="step-text">View the lesson with section tabs - tap any tab to jump to that section</span><span class="step-arrow">▼</span></div>
-  <div class="step-content"><img src="../videos/lessons/connect-apps/11.png" onclick="showModal(this.src)"></div>
+  <div class="step-content"><img src="../videos/lessons/connect-mobile/11.png" onclick="showModal(this.src)"></div>
 </div>
-<h3>Steps - TV/Streaming Device</h3>
+</div>
+
+<div id="tv-steps" class="video-steps">
+<h3>Steps</h3>
 <div class="step-accordion">
-  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">12.</span><span class="step-text">Present lessons on any Android streaming device (Fire TV, Onn from Walmart, Android 10+)</span><span class="step-arrow">▼</span></div>
-  <div class="step-content"><img src="../videos/lessons/connect-apps/12.png" onclick="showModal(this.src)"></div>
-  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">13.</span><span class="step-text">Hold the blue mic button and say "Download Lessons Dot Church App" or search manually</span><span class="step-arrow">▼</span></div>
-  <div class="step-content"><img src="../videos/lessons/connect-apps/13.png" onclick="showModal(this.src)"></div>
-  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">14.</span><span class="step-text">Open the app to see the Browse Programs screen with available curriculum</span><span class="step-arrow">▼</span></div>
-  <div class="step-content"><img src="../videos/lessons/connect-apps/14.png" onclick="showModal(this.src)"></div>
-  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">15.</span><span class="step-text">Go to Settings using the gear icon, then select Your Church to set it up</span><span class="step-arrow">▼</span></div>
-  <div class="step-content"><img src="../videos/lessons/connect-apps/15.png" onclick="showModal(this.src)"></div>
-  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">16.</span><span class="step-text">Type your church name or scan the QR code with your phone for easier setup</span><span class="step-arrow">▼</span></div>
-  <div class="step-content"><img src="../videos/lessons/connect-apps/16.png" onclick="showModal(this.src)"></div>
-  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">17.</span><span class="step-text">Select your church from the search results</span><span class="step-arrow">▼</span></div>
-  <div class="step-content"><img src="../videos/lessons/connect-apps/17.png" onclick="showModal(this.src)"></div>
-  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">18.</span><span class="step-text">Choose the classroom you want to present lessons for</span><span class="step-arrow">▼</span></div>
-  <div class="step-content"><img src="../videos/lessons/connect-apps/18.png" onclick="showModal(this.src)"></div>
-  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">19.</span><span class="step-text">Wait for the lesson to download - this allows offline playback</span><span class="step-arrow">▼</span></div>
-  <div class="step-content"><img src="../videos/lessons/connect-apps/19.png" onclick="showModal(this.src)"></div>
-  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">20.</span><span class="step-text">Once downloaded, select Start Lesson to begin presenting</span><span class="step-arrow">▼</span></div>
-  <div class="step-content"><img src="../videos/lessons/connect-apps/20.png" onclick="showModal(this.src)"></div>
-  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">21.</span><span class="step-text">Your lesson is now playing on the big screen</span><span class="step-arrow">▼</span></div>
-  <div class="step-content"><img src="../videos/lessons/connect-apps/21.png" onclick="showModal(this.src)"></div>
-  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">22.</span><span class="step-text">Press the up arrow to see all videos - select any to jump directly to it</span><span class="step-arrow">▼</span></div>
-  <div class="step-content"><img src="../videos/lessons/connect-apps/22.png" onclick="showModal(this.src)"></div>
-  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">23.</span><span class="step-text">Use your remote to play, pause, and navigate through the lesson</span><span class="step-arrow">▼</span></div>
-  <div class="step-content"><img src="../videos/lessons/connect-apps/23.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">1.</span><span class="step-text">Present lessons on any Android streaming device (Fire TV, Onn from Walmart, Android 10+)</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/connect-tv/1.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">2.</span><span class="step-text">Hold the blue mic button and say "Download Lessons Dot Church App" or search manually</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/connect-tv/2.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">3.</span><span class="step-text">Open the app to see the Browse Programs screen with available curriculum</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/connect-tv/3.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">4.</span><span class="step-text">Go to Settings using the gear icon, then select Your Church to set it up</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/connect-tv/4.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">5.</span><span class="step-text">Type your church name or scan the QR code with your phone for easier setup</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/connect-tv/5.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">6.</span><span class="step-text">Select your church from the search results</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/connect-tv/6.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">7.</span><span class="step-text">Choose the classroom you want to present lessons for</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/connect-tv/7.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">8.</span><span class="step-text">Wait for the lesson to download - this allows offline playback</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/connect-tv/8.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">9.</span><span class="step-text">Once downloaded, select Start Lesson to begin presenting</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/connect-tv/9.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">10.</span><span class="step-text">Your lesson is now playing on the big screen</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/connect-tv/10.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">11.</span><span class="step-text">Press the up arrow to see all videos - select any to jump directly to it</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/connect-tv/11.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">12.</span><span class="step-text">Use your remote to play, pause, and navigate through the lesson</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/lessons/connect-tv/12.png" onclick="showModal(this.src)"></div>
 </div>
 </div>
 

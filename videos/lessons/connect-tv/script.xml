@@ -1,0 +1,41 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    You can present lessons on your TV using any Android streaming device. This includes Amazon Fire TV, the Onn streaming device from Walmart, or any Android device running version 10 or newer.
+    <break time="3s"/>
+    <mark name="2" />
+    To find the app, hold the blue microphone button on your Fire TV remote and say clearly, Download Lessons Dot Church App. You can also use the on-screen keyboard to search for lessons dot church. Select the app and install it.
+    <break time="3s"/>
+    <mark name="3" />
+    Once installed, open the app. You'll see the Browse Programs screen showing available curriculum.
+    <break time="2s"/>
+    <mark name="4" />
+    To connect your church, go to Settings using the gear icon. Then select Your Church to set it up.
+    <break time="2s"/>
+    <mark name="5" />
+    Use the on-screen keyboard to type your church name. You can also scan the QR code with your phone for easier setup.
+    <break time="2s"/>
+    <mark name="6" />
+    Select your church from the search results.
+    <break time="2s"/>
+    <mark name="7" />
+    Now choose the classroom you want to present lessons for.
+    <break time="2s"/>
+    <mark name="8" />
+    The lesson will download to your device. Wait for all items to finish downloading so you can play the lesson even when offline.
+    <break time="3s"/>
+    <mark name="9" />
+    Once downloaded, select Start Lesson to begin presenting.
+    <break time="2s"/>
+    <mark name="10" />
+    Your lesson is now playing on the big screen.
+    <break time="2s"/>
+    <mark name="11" />
+    Press the up arrow on your remote to see all the videos in the lesson. You can select any video to jump directly to it.
+    <break time="3s"/>
+    <mark name="12" />
+    Use your remote to play, pause, and navigate through the lesson content.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
