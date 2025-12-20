@@ -288,11 +288,22 @@ document.addEventListener('DOMContentLoaded', function() {
       document.querySelectorAll('.video-steps').forEach(function(el) {
         el.classList.remove('active');
       });
+      document.querySelectorAll('#playlist li').forEach(function(li) {
+        li.classList.remove('active');
+      });
+      this.parentElement.classList.add('active');
       if (stepsId) {
         var stepsEl = document.getElementById(stepsId);
         if (stepsEl) stepsEl.classList.add('active');
       }
     });
   });
+
+  // Handle direct links via URL hash (e.g., #tv or #mobile)
+  var hash = window.location.hash.replace('#', '');
+  if (hash) {
+    var link = document.querySelector('#playlist a[data-steps="' + hash + '-steps"]');
+    if (link) link.click();
+  }
 });
 </script>
