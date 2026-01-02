@@ -1,54 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tutorial>
     <speak>
-     <break time="1s"/>
+    <break time="1s"/>
     <mark name="1" />
-    To add people to the data base navigate to the B1.church Admin dashboard.
+    To add people to the database, navigate to the B1.church Admin dashboard.
     <break time="1s"/>
     <mark name="2" />
-    To add a new person, Choose People
+    Click on People in the left sidebar.
     <break time="1s"/>
     <mark name="3" />
-    Click the "Add Person" button to open the new person form.
+    Click the Add Person button in the upper right corner.
     <break time="1s"/>
     <mark name="4" />
-    Fill in the person's details including their first name, last name, and email address and click add.
+    Fill in the person's first name, last name, and email address, then click Add.
     <break time="1s"/>
     <mark name="5" />
-    To edit the person’s file go back to the data base and click on their name.
+    The person's profile page will open. Click the edit pencil next to their name to edit their details.
     <break time="1s"/>
     <mark name="6" />
-    To complete their file click on the edit pencil by their name and fill in their information
+    Fill in additional information such as middle name, membership status, dates, address, and phone numbers.
     <break time="1s"/>
     <mark name="7" />
-    To add household members click on the edit pencil on the right side of the household box .
+    Click on the Notes tab to add notes about the person.
     <break time="1s"/>
     <mark name="8" />
-    Choose the status of the person
+    Click on the Groups tab to view group memberships.
     <break time="1s"/>
     <mark name="9" />
-    Click add to add another family member
+    Click on the Attendance tab to view attendance records.
     <break time="1s"/>
     <mark name="10" />
-    Type the person’s name to find them in the data base. 
+    Click on the Donations tab to view donations.
     <break time="1s"/>
     <mark name="11" />
-    If they are not in the data base you can add a new name.
+    Click on the Forms dropdown to select a form to fill out. These forms are user defined forms which you can build by following the forms tutorial. 
     <break time="1s"/>
     <mark name="12" />
-    Type in the name and e-mail address and click add
+    Click Add Form to open the form.
     <break time="1s"/>
     <mark name="13" />
-    Be sure to click save
+    Fill in the form details and click Save.
     <break time="1s"/>
     <mark name="14" />
-    Now go back and search for the person you just added
+    Return to the Details tab and click Save to save the personal information.
     <break time="1s"/>
     <mark name="15" />
-    Click select 
+    The details are now saved and visible on the profile.
     <break time="1s"/>
     <mark name="16" />
-    Choose their status and click save
+    To add household members, click the edit pencil next to the household name.
+    <break time="1s"/>
+    <mark name="17" />
+    The household editor will open. Select the household role for the current person.
+    <break time="1s"/>
+    <mark name="18" />
+    After selecting the role, click Add to add another household member.
+    <break time="1s"/>
+    <mark name="19" />
+    Type the person's name in the search box and click Search.
+    <break time="1s"/>
+    <mark name="20" />
+    When the person appears in the search results, click Select.
+    <break time="1s"/>
+    <mark name="21" />
+    Choose their household role and click Save to complete the household setup.
     <break time="2s"/>
     <mark name="end"/>
     </speak>
