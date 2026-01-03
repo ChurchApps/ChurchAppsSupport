@@ -116,4 +116,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 - <a href="/b1Admin/advanced-search.html">Advanced Search</a>
 - <a href="/b1Admin/assigning-roles.html">Assigning Roles</a>
-
+- <a href="/b1Admin/forms.html">Forms</a>
