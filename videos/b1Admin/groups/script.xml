@@ -1,32 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tutorial>
     <speak>
+    <break time="1s"/>
     <mark name="1" />
-    Click on the Groups icon.
+    To create groups in B1 Admin, navigate to the B1 dashboard.
     <break time="1s"/>
     <mark name="2" />
-    Click the plus.
+    Click on the Groups tab.
     <break time="1s"/>
     <mark name="3" />
-    Add a Category Name and Group Name and click Add Group.
+    Click Add Group and enter a Category Name.
     <break time="1s"/>
     <mark name="4" />
-    Your new group will show up in the Groups list.
+    Enter the Group Name.
     <break time="1s"/>
     <mark name="5" />
-    Click the name of a group then click the pencil to edit the group details.
+    Click Add. Your new group will appear in the list.
     <break time="1s"/>
     <mark name="6" />
-    Choose whether to take attendance, parent pickup (for children's classes) and write a group description.
+    Click on the group name, then click the pencil icon.
     <break time="1s"/>
     <mark name="7" />
-    Type a name to add a person to the group.
+    Configure the group settings including attendance tracking, meeting times, group description, and service times. Click Save.
     <break time="1s"/>
     <mark name="8" />
-    Click the add button.
+    Click the Members tab and type a person's name in the search field or leave it blank and you can scroll through everyone in your data base.
     <break time="1s"/>
     <mark name="9" />
-    When you are finished click save.
+    Click the Add button next to the person's name.
+    <break time="1s"/>
+    <mark name="10" />
+    Your group members are now listed. You can use the icons to manage members. Click the green key to designate someone as the group leader. The group leader is the only one who can edit the group calendar. You can designate more than one person as a group leader if you like
+    <break time="1s"/>
+    <mark name="11" />
+    You can send messages to all group members. Type your message and click Send.
+    <break time="1s"/>
+    <mark name="12" />
+    To export your group data, click the download icon.
+    <break time="1s"/>
+    <mark name="13" />
+    All your church groups are organized by categories.
     <break time="2s"/>
     <mark name="end" />
     </speak>
