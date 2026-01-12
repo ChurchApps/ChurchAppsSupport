@@ -2,145 +2,128 @@
 <tutorial>
     <speak>
     <mark name="1" />
-    Forms are a great feature of B1.church Admin and b1 church. You can build People forms for your data base or stand alone forms for your website or to link to. To begin, navigate to the B1.church Admin dashboard.
+    Forms allow you to collect custom information from your congregation. To get started, click on Settings.
     <break time="1s"/>
     <mark name="2" />
-    Go to settings
+    Click on the Forms tab in the top menu.
     <break time="1s"/>
     <mark name="3" />
-    Choose Forms
+    Click Add Form to create a new form.
     <break time="1s"/>
     <mark name="4" />
-    Click on the plus sign in the top right corner.
+    Enter a name for your form. We'll create a Date of Membership form and associate it with People.
     <break time="1s"/>
     <mark name="5" />
-    Give the form a name. We’ll call this form “Baptism” it will be a custom field in our People file.
+    The Associate With dropdown lets you choose between People or Stand Alone.
     <break time="1s"/>
     <mark name="6" />
-    Choose “People” in the drop-down menu
+    Click Save to create your form.
     <break time="1s"/>
     <mark name="7" />
-    Be sure to click “Save”.
+    Your new form appears in the list. Click on it to add questions.
     <break time="1s"/>
     <mark name="8" />
-    Now we will put the questions within the “Baptism” custom field
+    Click Add Question to create fields.
     <break time="1s"/>
     <mark name="9" />
-    Click on the plus sign in the top right corner to add a question
+    The Provider dropdown determines the input field type.
     <break time="1s"/>
     <mark name="10" />
-    Add a provider from the drop down menu. This is where you will choose the type of question you are asking.
+    Options include Textbox, Date, Email, Phone Number, Multiple Choice, and Payment.
     <break time="1s"/>
     <mark name="11" />
-    Write a title. This is the question you are asking.
+    Fill in the Title and Description. Check Require an answer if mandatory.
     <break time="1s"/>
     <mark name="12" />
-    Add a description.
+    Click Save, then Add Question for more fields.
     <break time="1s"/>
     <mark name="13" />
-    Don’t forget to click save.
+    Now go to People from the navigation menu.
     <break time="1s"/>
     <mark name="14" />
-    You can make as many questions as you like. In this example we will add the question of what date the person was baptized.
+    Click on a person to view their profile.
     <break time="1s"/>
     <mark name="15" />
-    Note that the people forms do not have a link associated with them. The links are associated with the stand alone forms.
+    Click on the Forms tab to access forms.
     <break time="1s"/>
     <mark name="16" />
-    Go to your People files to look at the custom field you just made titled Baptism. Click on any name.
+    Select Date of Membership from the dropdown.
     <break time="1s"/>
     <mark name="17" />
-    You can see the custom field at the bottom of the file.
+    Click Add Form to enter data.
     <break time="1s"/>
     <mark name="18" />
-    Click on Baptism and fill out the form.
+    Enter the date and click Save.
     <break time="1s"/>
     <mark name="19" />
-    Once the field is complete it will show up at the bottom of each file. 
+    Go back to People.
     <break time="1s"/>
     <mark name="20" />
-    Now let’s go back to Forms and make a stand alone form
+    Click the filter icon.
     <break time="1s"/>
     <mark name="21" />
-    This form will be for the Ladies Retreat
+    Click Custom and check Date of Membership.
     <break time="1s"/>
     <mark name="22" />
-    Choose Stand Alone for this form.
+    Click Apply Filters.
     <break time="1s"/>
     <mark name="23" />
-    You can make the form Public or Restricted. The restricted mode allows you to choose who you want to allow to fill out the form.
+    The list now shows the Date of Membership column.
     <break time="1s"/>
     <mark name="24" />
-    You can set a time frame that the form will be available.
+    Now create a Stand Alone form. Click Add Form.
     <break time="1s"/>
     <mark name="25" />
-    Choose a begin date and an end date.
+    Create Mens Retreat as Stand Alone with availability dates and thank you message.
     <break time="1s"/>
     <mark name="26" />
-    Write a thank you note for people who fill out the form.
+    Stand Alone forms get a unique URL. Click the form to configure it.
     <break time="1s"/>
     <mark name="27" />
-    Don’t forget to hit save.
+    Click Add Question.
     <break time="1s"/>
     <mark name="28" />
-    Now click on the form to add questions to the form.
+    Add a Name field and check Require an answer.
     <break time="1s"/>
     <mark name="29" />
-    Add as many questions as you like
+    Add questions for Name, Email, Phone, and Payment.
     <break time="1s"/>
     <mark name="30" />
-    If you want to take payments with this form choose payments under questions.
+    Click Form Members to manage administrators.
     <break time="1s"/>
     <mark name="31" />
-    Be sure to save
+    Search and add people as Admin or View Only.
     <break time="1s"/>
     <mark name="32" />
-    Now let’s look at Form Members to see who has access to see the completed forms and edit the form.
+    Form Submissions shows completed registrations.
     <break time="1s"/>
     <mark name="33" />
-    You can set Permission to Admin or View only, and turn on or off email notifications.
+    To embed forms, go to Website.
     <break time="1s"/>
     <mark name="34" />
-    To add a person just search for someone and add them.
+    Click Add Page.
     <break time="1s"/>
     <mark name="35" />
-    Now let’s go over to B1 to add this form to a webpage
+    Select Blank, enter Mens Retreat, and Save.
     <break time="1s"/>
     <mark name="36" />
-    Click on your icon in the top right corner
+    Click the plus icon to add elements.
     <break time="1s"/>
     <mark name="37" />
-    Choose Admin portal
+    Add a Section and choose colors.
     <break time="1s"/>
     <mark name="38" />
-    Choose Website
+    Click plus and select Form.
     <break time="1s"/>
     <mark name="39" />
-    Click the plus in the top right corner of pages to add a page or open and existing page to add the form.
+    Click Select to choose the form.
     <break time="1s"/>
     <mark name="40" />
-    Give your page a name
+    Select Mens Retreat and Save.
     <break time="1s"/>
     <mark name="41" />
-    Click on the edit pencil to edit the page.
-    <break time="1s"/>
-    <mark name="42" />
-    Add a section
-    <break time="1s"/>
-    <mark name="43" />
-    Choose the Form element
-    <break time="1s"/>
-    <mark name="44" />
-    From the drop down menu choose the form you want to use. In this case we will add the Ladies Retreat Registration 
-    <break time="1s"/>
-    <mark name="45" />
-    Be sure to save.
-    <break time="1s"/>
-    <mark name="46" />
-    Use the text element to make a title above the form
-    <break time="1s"/>
-    <mark name="47" />
-    Your form is now ready to use.
+    Your form is now embedded and ready for registrations.
+    <break time="2s"/>
     <mark name="end"/>
     </speak>
 </tutorial>
