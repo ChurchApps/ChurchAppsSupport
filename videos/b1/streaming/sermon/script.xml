@@ -1,23 +1,25 @@
 <tutorial>
   <speak>
     <mark name="1" />
-    To manually add a new sermon, click the plus icon on the Sermons page and select "Add Sermon".
+    From the Dashboard, click on Sermons in the left sidebar to access your sermon library.
     <break time="1s"/>
     <mark name="2" />
-    Select a Playlist, then enter the youtube video I.D. and click fetch.
+    On the Sermons page, click the Add Sermon button in the top right corner and select Add Sermon from the dropdown.
     <break time="1s"/>
     <mark name="3" />
-    The youtube video I.D. is the string of characters after the "v=" in the video's URL on YouTube.
+    Select a Playlist for your sermon, choose YouTube as the video provider, then enter the YouTube video I.D. and click Fetch. The video I.D. is the string of characters after "v=" in the YouTube URL.
     <break time="1s"/>
     <mark name="4" />
-    When you click fetch, all of the video details will be imported automatically.  This includes the date, duration, title, description, and thumbnail.
-    Make any changes you wish and click save.
+    We recommend YouTube for your video library because it seems to work best with our system. However, we also support Vimeo, Facebook, or your own Custom URL.
     <break time="1s"/>
     <mark name="5" />
-    The video will be added to your sermons page.
+    When you click Fetch, all of the video details will be imported automatically. This includes the publish date, duration, title, description, and thumbnail. Make any changes you wish and click Save.
     <break time="1s"/>
     <mark name="6" />
-    It can also now be scheduled as a pre-recorded live stream from the stream settings page.
+    The sermon will now appear in your sermons list, organized by playlist.
+    <break time="1s"/>
+    <mark name="7" />
+    To schedule this sermon for a live stream, go to Lyve Stream Times. Under Video Settings, you can select your sermon from the dropdown to broadcast it as a pre-recorded stream.
     <break time="2s"/>
     <mark name="end" />
   </speak>
