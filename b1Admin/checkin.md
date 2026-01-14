@@ -131,7 +131,9 @@ Follow the [printer instructions](https://support.brother.com/g/b/downloadtop.as
 ### Step 3: Connect and Test
 Watch this tutorial to connect your printer and print your first name tag:
 
-[![B1.church Admin Checkin App](https://img.youtube.com/vi/gZIM23R4-TE/0.jpg)](https://www.youtube.com/watch?v=gZIM23R4-TE)
+<video controls width="100%">
+  <source src="../videos/b1Admin/checkin-app/output.mp4" type="video/mp4">
+</video>
 
 ---
 
