@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tutorial>
+  <speak>
+    <mark name="1" />
+    Open the B1 Checkin app on your tablet. The app will automatically log you in to your church account.
+    <break time="1s"/>
+    <mark name="2" />
+    Select the service you want to check people into. You'll see all your available services listed here.
+    <break time="1s"/>
+    <mark name="3" />
+    Next, the app will scan for available printers on your network. Make sure your Brother label printer is turned on and connected to the same WiFi network.
+    <break time="1s"/>
+    <mark name="4" />
+    When your printer is found, select it from the list. You can tap Test Print to verify the connection, then tap Save and Restart.
+    <break time="1s"/>
+    <mark name="5" />
+    After restarting, select your service again. Notice the printer IP address now shows at the top, confirming your printer is connected.
+    <break time="1s"/>
+    <mark name="6" />
+    You're now ready to check people in. You can search by phone number by entering the last four digits, or tap the Name tab to search by name.
+    <break time="1s"/>
+    <mark name="7" />
+    To search by name, tap the Name tab and enter the person's last name.
+    <break time="1s"/>
+    <mark name="8" />
+    Type the last name and tap Search to find matching families.
+    <break time="1s"/>
+    <mark name="9" />
+    The app shows all household members and their assigned groups. Tap on a person to expand their check-in options.
+    <break time="1s"/>
+    <mark name="10" />
+    Select the service time and group for each person you want to check in, then tap the Check In button.
+    <break time="1s"/>
+    <mark name="11" />
+    Check-in complete! The app confirms the family has been checked in and their name tags are now printing. The app returns to the search screen, ready for the next family.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
