@@ -5,10 +5,10 @@
     Download the B1 Checkin app from the Google Play Store or Amazon.
     <break time="1s"/>
     <mark name="2" />
-    Select the service you want to check people into. You'll see all your available services listed here.
+    You'll see all your available services listed here.
     <break time="1s"/>
     <mark name="3" />
-    Next, tap the printer identification at the top center of the tablet the app will scan for available printers on your network. Make sure your Brother label printer is turned on and connected to the same WiFi network.
+    Next, tap the printer identification at the top center of the tablet.  The app will scan for available printers on your network.  Make sure your Brother label printer is turned on and connected to the same WiFi network.
     <break time="1s"/>
     <mark name="4" />
     When your printer is found, select it from the list. You can tap Test Print to verify the connection, then tap Save and Restart.
