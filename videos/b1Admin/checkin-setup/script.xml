@@ -2,89 +2,74 @@
 <tutorial>
   <speak>
     <mark name="1" />
-    Let's set up check-in for your church. First, you'll need to create a B1.church Admin account if you don't already have one. Click on Get Started.
+    Let's set up check-in for your church. Navigate to the B1 Dashboard, click on People in the left sidebar.
     <break time="1s"/>
     <mark name="2" />
-    Fill out your church's information in the registration form.
+    Search for the person you'd like to add. If they're not found, you can add them as a new person by filling out the form below.
     <break time="1s"/>
     <mark name="3" />
-    After clicking Register, check your email and click on Set Password.
+    Enter their first name, last name, and email address, then click Add.
     <break time="1s"/>
     <mark name="4" />
-    Create a secure password for your account.
+    You'll be taken to their profile page. Click the edit pencil next to their name to add more details.
     <break time="1s"/>
     <mark name="5" />
-    Click Sign In, and you'll be prompted to search for your church.
+    Fill in any additional information you have, such as address, phone numbers, and birth date, then click Save.
     <break time="1s"/>
     <mark name="6" />
-    If your church isn't found, click on Register a New Church.
+    To add family members, click the edit pencil in the Household section.
     <break time="1s"/>
     <mark name="7" />
-    Confirm that you want to register a new church by selecting OK.
+    Click the Add button to add family members to this household.
     <break time="1s"/>
     <mark name="8" />
-    Fill in your church's information, leaving the subdomain as is.
+    Next, click on Attendance in the top navigation to set up your services.
     <break time="1s"/>
     <mark name="9" />
-    You'll now be logged into your B1.church Admin account.
+    Click the plus icon in the top right to add a new campus.
     <break time="1s"/>
     <mark name="10" />
-    First, we need to add all the people who will be checking in. Search for who you'd like to add.
+    Enter the name of your campus and click Save.
     <break time="1s"/>
     <mark name="11" />
-    If they're not in the system, enter their first and last name and click ADD.
+    Now click Add Service under your new campus to create a service.
     <break time="1s"/>
     <mark name="12" />
-    Click on the edit pencil to edit that person's information.
+    Enter the service name and click Save.
     <break time="1s"/>
     <mark name="13" />
-    Enter as much detail as you have, including adding family members by clicking the edit pencil in the household section, then click SAVE.
+    Click Add Service Time to add the time for this service.
     <break time="1s"/>
     <mark name="14" />
-    Click on the add person icon to add as many family members as needed.
+    Enter the service time and click Save.
     <break time="1s"/>
     <mark name="15" />
-    Next, click on the attendance icon.
+    Now click on Groups in the top navigation to create groups for check-in.
     <break time="1s"/>
     <mark name="16" />
-    Click on the plus icon to add a campus.
+    Click the Add Group button to create a new group.
     <break time="1s"/>
     <mark name="17" />
-    Click on Add Campus and name your campus.
+    Select an existing category or choose Add New to create a new category.
     <break time="1s"/>
     <mark name="18" />
-    Click on Add Service.
+    Enter the category name and group name, then click Add.
     <break time="1s"/>
     <mark name="19" />
-    Name your service.
+    Click on the group you just created to configure it for check-in.
     <break time="1s"/>
     <mark name="20" />
-    Click on Add Service time.
+    Click the edit pencil to modify the group settings.
     <break time="1s"/>
     <mark name="21" />
-    Add the time of your service or services.
+    Configure your attendance settings. Set Track Attendance to Yes to track who attends. Set Parent Pickup and Print Nametag to Yes if you want to print kid and parent tags at check-in.
     <break time="1s"/>
     <mark name="22" />
-    Next, click on groups.
+    Select any labels that apply to this group, then choose a service time from the dropdown.
     <break time="1s"/>
     <mark name="23" />
-    Click on the plus sign to add a new group.
-    <break time="1s"/>
-    <mark name="24" />
-    Add as many groups as your church needs. To create multiple groups within the same category, enter the category name followed by the group name.
-    <break time="1s"/>
-    <mark name="25" />
-    Click on the name of the group you'd like to set up for check-in, then click the edit button.
-    <break time="1s"/>
-    <mark name="26" />
-    Click the edit pencil to edit the details of this group.
-    <break time="1s"/>
-    <mark name="27" />
-    Set each group according to what you want to happen at check-in. If you want to track attendance, make sure to select Yes. Parent pickup means that when check-in happens on the app, it will print a kid tag and parent tag for that group.
-    <break time="1s"/>
-    <mark name="28" />
-    The final step is to select the times you set up in the attendance step. Simply choose a time and click Add to include it.
+    Click Add to include the service time, then click Save. Your group is now ready for check-in. For more detailed information on setting up groups and adding people to groups see the Groups Setup tutorial.
     <break time="2s"/>
     <mark name="end" />
   </speak>
-</tutorial> 
+</tutorial>
