@@ -1,31 +1,28 @@
 <tutorial>
   <speak>
     <mark name="1" />
-    To configure your online streaming, log into the B1 admin and click on "Sermons".
+    To configure your live stream times, log into the B1 admin and click on "Sermons".
     <break time="1s"/>
     <mark name="2" />
-    On the right side of the page, click on "Edit Times and Appearance" under "Settings".
+    In the top navigation, click on "Live Stream Times".
     <break time="1s"/>
     <mark name="3" />
-    Under "Services", click the "Add" button to add a new service.
+    Click the "Add Service" button to add a new service.
     <break time="1s"/>
     <mark name="4" />
-    Give your service a name and set the next start time.  In most cases you'll want to set it as recurring weekly, unless this is a special one-time service.
-    If you want to open the chat a little bit before service starts or leaving it running a little bit after service ends, enter the number of minutes you would like for each.
+    Give your service a name and set the service time. In most cases you'll want to set it as recurring weekly, unless this is a special one-time service.
     <break time="1s"/>
     <mark name="5" />
-    Often churches will want to start the video stream a few minutes before the scheduled time and show a countdown or slides.  Enter how early if so.
+    Under "Chat Settings", you can configure how many minutes before and after the service the chat should be enabled. This lets visitors start chatting before service begins and continue afterward. Under "Video Settings", you can set how early to start the video stream for countdown or pre-service content.
     <break time="1s"/>
     <mark name="6" />
-    Finally, select which sermon video you would like to play.  "Latest Sermon" plays your most recently added video.  You can set this once and never change it.
-    In another video we'll cover setting up a url to your live feed, which will enable the Live Feed option here.
+    Then select which sermon to play. "Latest Sermon" automatically plays your most recently added video. When you're done, click "Save".
     <break time="1s"/>
     <mark name="7" />
-    Finally, click "Save".  Your service time is now scheduled and will automatically update each week.
-    You can add as many services as you need for your church.
+    Your service is now scheduled and will automatically update each week. You can add as many services as you need for your church.
     <break time="1s"/>
     <mark name="8" />
-    Visitors will see a countdown to the next service when they visit your streaming page.
+    Visitors will see the next scheduled service time when they visit your streaming page.
     <break time="2s"/>
     <mark name="end" />
   </speak>
