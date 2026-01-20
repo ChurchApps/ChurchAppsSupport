@@ -1,68 +1,31 @@
 <tutorial>
   <speak>
     <mark name="1" />
-    Surrounding your live stream video, you can have header links and sidebar nav items, with key resources.
+    To configure navigation links and sidebar tabs for your live stream, start from the Dashboard and click on "Sermons" in the left navigation menu.
     <break time="1s"/>
     <mark name="2" />
-    In the header, you can add simple links.  To do so, click the "Add" button in the Navigation Links section of the Stream Settings page.
+    From the Sermons page, click on the "Live Stream Times" tab to access stream configuration.
     <break time="1s"/>
     <mark name="3" />
-    Enter the link text and url.  It can be any webpage, internal or external.  Click "Save" to add it to the header.
+    On the Live Stream Times page, click the "Settings" button to configure your streaming page options.
     <break time="1s"/>
     <mark name="4" />
-    The link will appear in the header of your streaming page and open in a new tab when clicked.  You can add as many links as you need.
+    In the Settings page, you'll see three sections: Navigation Links for header links, Sidebar Tabs for interactive elements, and External Resources. To add a navigation link, click the "Add" button in the Navigation Links section.
     <break time="1s"/>
     <mark name="5" />
-    Sidebar tabs appear in the right column of your streaming page and are ways for the user to interact on the page.  To add a new tab, click the "Add" button in the Sidebar Tabs section.
+    Enter your link details. For this example, we're adding "Church Calendar" with the URL "/church-calendar". You can organize links under submenus by selecting a folder like "Home" from the Menu Organization section.
     <break time="1s"/>
     <mark name="6" />
-    Give your tab a name and click the icon drop down and search for a suitable icon.  An intuitive icon is especially important for mobile users.
+    After selecting the Home folder, you'll see a confirmation that your link will be placed under that submenu. Click "Save Link" to add it.
     <break time="1s"/>
     <mark name="7" />
-    For the page type, there are four options:
-    External Url - Allows you to embed any webpage from any site into a tab.
-    Page - Allows you to create a new custom page with text, images, and links.
-    Chat - Allows viewers of the stream to chat with each other.
-    Prayer - Allows viewers to start a private chat with a prayer team member.
+    The new Church Calendar link now appears under the Home navigation link. To add a sidebar tab, click the "Add" button in the Sidebar Tabs section.
     <break time="1s"/>
     <mark name="8" />
-    We will choose Chat and click Save.
+    Enter the tab name, select an icon, and choose the page type. For an External URL, enter the full web address. In this example, we're adding a "Womens Retreat Registration" tab with an external registration form URL. Click "Save Tab" when done.
     <break time="1s"/>
     <mark name="9" />
-    This will enable a new chat tab on your streaming page.
-    <break time="1s"/>
-    <mark name="10" />
-    We'll also add an external page tab for sermon notes, and a prayer request tab.
-    <break time="1s"/>
-    <mark name="11" />
-    Before we can add a page tab, we need to first create a new page by clicking the plus icon in the Pages section.
-    <break time="1s"/>
-    <mark name="12" />
-    Give it a name and url and click save.
-    <break time="1s"/>
-    <mark name="13" />
-    Click on the page to add content.
-    <break time="1s"/>
-    <mark name="14" />
-    See the website builder tutorial for details on how to add content to a page.
-    <break time="1s"/>
-    <mark name="15" />
-    Now you can add your page as a sidebar tab, by clicking "Add" in the Sidebar Tabs section.
-    <break time="1s"/>
-    <mark name="16" />
-    Select Page as the page type and choose the page you just created.
-    <break time="1s"/>
-    <mark name="17" />
-    Our streaming page now has tabs for sermon notes...
-    <break time="0.3s"/>
-    <mark name="18" />
-    chat...
-    <break time="0.3s"/>
-    <mark name="19" />
-    prayer requests...
-    <break time="0.3s"/>
-    <mark name="20" />
-    and the offering report...
+    Your streaming settings now show all configured navigation links and sidebar tabs. These will appear on your live streaming page for viewers to access additional resources and interactive features.
     <break time="2s"/>
     <mark name="end" />
   </speak>
