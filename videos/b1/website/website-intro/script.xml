@@ -1,23 +1,100 @@
 <tutorial>
   <speak>
     <mark name="1" />
-    Every church in B1 has a website available at subdomain.b1.church. See the configuring Domains tutorial to the right for how to configure your subdomain.
+    Every B1 account comes with a website. To access your website builder, click Website in the left menu.
+    <break time="1s"/>
     <mark name="2" />
-    After you switch from B1.church Admin
+    This opens Website Pages where you can manage pages and content. Click Add Page at the top right.
     <break time="1s"/>
     <mark name="3" />
-    To B1 you can configure your mobile app, website, sermons and calendars 
+    Choose blank as the page type and name it Home.
     <break time="1s"/>
     <mark name="4" />
-    Click on your name in the top right corner
+    Click Edit to start building your page.
     <break time="1s"/>
     <mark name="5" />
-    and choose Admin Portal
+    Click Page Settings to configure the title and URL.
     <break time="1s"/>
     <mark name="6" />
-    Click on the down arrow next to Mobile App
+    Click the edit pencil.
+    <break time="1s"/>
     <mark name="7" />
-    Choose website
+    Edit your page title and URL path here.
+    <break time="1s"/>
+    <mark name="8" />
+    For the home page, enter a forward slash with no text. Other pages use forward slash and page title. Click Save.
+    <break time="1s"/>
+    <mark name="9" />
+    Click Edit Content to begin adding content.
+    <break time="1s"/>
+    <mark name="10" />
+    Click Add Content to open the elements panel.
+    <break time="1s"/>
+    <mark name="11" />
+    Every page must begin with a Section. Choose Section to add a container.
+    <break time="1s"/>
+    <mark name="12" />
+    Drag a Section onto your page.
+    <break time="1s"/>
+    <mark name="13" />
+    Click the section and switch to the CUSTOM tab.
+    <break time="1s"/>
+    <mark name="14" />
+    The CUSTOM tab controls colors for backgrounds, headings, text, and links.
+    <break time="1s"/>
+    <mark name="15" />
+    Click the Background Type dropdown.
+    <break time="1s"/>
+    <mark name="16" />
+    Choose Image to upload a background image.
+    <break time="1s"/>
+    <mark name="17" />
+    Or choose YouTube Video to add a video background.
+    <break time="1s"/>
+    <mark name="18" />
+    Select Color and choose a background color.
+    <break time="1s"/>
+    <mark name="19" />
+    Add an optional section ID for advanced styling.
+    <break time="1s"/>
+    <mark name="20" />
+    Click Save.
+    <break time="1s"/>
+    <mark name="21" />
+    Your section displays with the custom background.
+    <break time="1s"/>
+    <mark name="22" />
+    Click MOBILE to preview mobile layout.
+    <break time="1s"/>
+    <mark name="23" />
+    Click Add Content again.
+    <break time="1s"/>
+    <mark name="24" />
+    Choose from text, images, videos, cards, forms, and more.
+    <break time="1s"/>
+    <mark name="25" />
+    Drag a Text element into your section.
+    <break time="1s"/>
+    <mark name="26" />
+    Type your text and customize formatting. Click Save.
+    <break time="1s"/>
+    <mark name="27" />
+    Drag an Image element below your text.
+    <break time="1s"/>
+    <mark name="28" />
+    Click Select Photo.
+    <break time="1s"/>
+    <mark name="29" />
+    Upload images or download stock photos. Select an image.
+    <break time="1s"/>
+    <mark name="30" />
+    Click Save.
+    <break time="1s"/>
+    <mark name="31" />
+    Your section displays with text and image.
+    <break time="1s"/>
+    <mark name="32" />
+    Preview your complete website.
     <break time="2s"/>
     <mark name="end" />
   </speak>
