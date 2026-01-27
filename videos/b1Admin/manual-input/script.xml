@@ -1,63 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tutorial>
   <speak>
-    <mark name="1"/>
-    In the B1.church Admin dashboard click on donations.
+    <mark name="1" />
+    Welcome to the Manual Donation Entry tutorial for B1 Admin. This guide will show you how to manually enter donations into a batch.
     <break time="1s"/>
-    <mark name="2"/>
-    Click Batches.
+    <mark name="2" />
+    Navigate to the Batches page and click Add Batch to create a new batch for organizing donations.
     <break time="1s"/>
-    <mark name="3"/>
-    Click the plus in batches
+    <mark name="3" />
+    Enter a batch name and select the date, then click Save.
     <break time="1s"/>
-    <mark name="4"/>
-    Give your Batch a Name.
+    <mark name="4" />
+    Your new batch appears in the list showing zero donations and zero dollars.
     <break time="1s"/>
-    <mark name="5"/>
-    Click on Funds at the top of the screen
+    <mark name="5" />
+    Click on the batch name to open it and begin entering donations.
     <break time="1s"/>
-    <mark name="6"/>
-    Click the + in Funds.
+    <mark name="6" />
+    Type a person's name in the search field to find the donor.
     <break time="1s"/>
-    <mark name="7"/>
-    Give the Fund a name. Add as many Funds as you would like.
+    <mark name="7" />
+    After selecting a person, the donation entry form displays with fields for date, payment method, fund, amount, and check number.
     <break time="1s"/>
-    <mark name="8"/>
-    To enter donations into the Batch choose the name of the Batch.
+    <mark name="8" />
+    Fill in the amount and check number, then click Add Donation.
     <break time="1s"/>
-    <mark name="9"/>
-    Click the + on the Donations box.
+    <mark name="9" />
+    The donation is added to the table below and the form resets for the next entry.
     <break time="1s"/>
-    <mark name="10"/>
-    Choose the person who gave the donation or if Anonymous just leave it. If the person is not in your B1.church Admin database you will need to enter them for B1.church Admin to record their donation under their name.
+    <mark name="10" />
+    To split a donation across multiple funds, click the Edit button on the donation row.
     <break time="1s"/>
-    <mark name="11"/>
-    Type in a persons first or first and last name.
+    <mark name="11" />
+    The edit form opens showing all the donation details that can be modified.
     <break time="1s"/>
-    <mark name="12"/>
-    Click add to choose that person.
+    <mark name="12" />
+    You can split a donation across multiple funds by adding amounts to different funds. The total will automatically calculate from the fund amounts.
     <break time="1s"/>
-    <mark name="13"/>
-    Choose the method of payment, Check, Cash or Card.
-    <break time="1s"/>
-    <mark name="14"/>
-    If it's a Check, enter the check number. If it's a Card enter the last four digits.
-    <break time="1s"/>
-    <mark name="15"/>
-    Enter the amount, choose which fund it goes to and add any notes. (Notes are not required)
-    <break time="1s"/>
-    <mark name="16"/>
-    If there are other donations from this person Add more.
-    <break time="1s"/>
-    <mark name="17"/>
-    Don't forget to click Save.
-    <break time="1s"/>
-    <mark name="18"/>
-    If you need to edit the entry or add another entry to the same person click on the ID and edit the donation.
-    <break time="1s"/>
-    <mark name="19"/>
-    To prepare reports click the download icon and it will download a csv file to your downloads. You can then use this file with excel or numbers to create a mail merge.
+    <mark name="13" />
+    Click Save to update the donation with your multi-fund allocation. You now know how to manually enter donations and split them across multiple funds.
     <break time="2s"/>
-    <mark name="end"/>
+    <mark name="end" />
   </speak>
-</tutorial> 
+</tutorial>
