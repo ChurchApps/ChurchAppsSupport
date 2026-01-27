@@ -1,48 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tutorial>
   <speak>
-    <mark name="1"/>
-    In the B1.church Admin dashboard click on the Donations icon.
+    <mark name="1" />
+    Welcome to the Donations and Giving Management tutorial for B1 Admin. This guide will show you how to manage donations, funds, and batches.
     <break time="1s"/>
-    <mark name="2"/>
-    The Donation Summary is shown by default. You can choose whatever dates you would like to show. Click "Run Report".
+    <mark name="2" />
+    From the dashboard, click on Donations in the sidebar to view the donations summary page with charts and filters.
     <break time="1s"/>
-    <mark name="3"/>
-    To download a CSV of the Donation Summary click the download icon. This will produce a dropdown menu with three options.
+    <mark name="3" />
+    Click on Batches to manage your donation batches.
     <break time="1s"/>
-    <mark name="4"/>
-    Click on "Sample Word Template" to download a template for creating donor reports.
+    <mark name="4" />
+    Click on Funds to view and manage donation funds.
     <break time="1s"/>
-    <mark name="5"/>
-    You can also choose "Summary" or "Detailed Report" from this menu to download CSV files for further processing.
+    <mark name="5" />
+    To create a new fund, click the Add Fund button.
     <break time="1s"/>
-    <mark name="6"/>
-    Click on the "Batches" tab to view individual donation batches. You can see the batch name, date, number of donations, and total amount. Click on the download icon to export batch data.
+    <mark name="6" />
+    The fund edit form opens with fields for the name and tax deductible status.
     <break time="1s"/>
-    <mark name="7"/>
-    The batches list shows all donation batches with their details.
+    <mark name="7" />
+    Enter a name for your fund, such as Building Fund.
     <break time="1s"/>
-    <mark name="8"/>
-    Click on a batch name to view its details. You can click "Edit Batch" to modify batch information.
+    <mark name="8" />
+    The Tax Deductible checkbox determines if donations to this fund are included in annual giving statements.
     <break time="1s"/>
-    <mark name="9"/>
-    Within a batch, you can click the "Edit" button next to individual donations to modify donation details.
+    <mark name="9" />
+    Click Save to create the fund.
     <break time="1s"/>
-    <mark name="10"/>
-    In the edit view, you can modify the batch name, date, and other details, then click "Save" to save your changes.
+    <mark name="10" />
+    Your new fund now appears in the funds list along with any existing funds.
     <break time="1s"/>
-    <mark name="11"/>
-    Click on the "Funds" tab to manage donation funds and categories. Click "Add Fund" to create a new fund.
+    <mark name="11" />
+    You can click Edit on any fund to modify its settings.
     <break time="1s"/>
-    <mark name="12"/>
-    The Funds page shows all available funds and their tax deductible status, which is important for donor reporting.
+    <mark name="12" />
+    The edit form also includes a Delete button if you need to remove a fund.
     <break time="1s"/>
-    <mark name="13"/>
-    Click on "Giving Statements" to generate individual donor statements. Select a year and click "Download ZIP" to download individual CSV files for each donor.
+    <mark name="13" />
+    Click on a fund name to view detailed donation history for that specific fund.
     <break time="1s"/>
-    <mark name="14"/>
-    You can also click "Print All 3 Statements" to generate a consolidated PDF document with all donor statements for printing.
+    <mark name="14" />
+    The fund detail page shows all donations with date range filters and summary statistics.
+    <break time="1s"/>
+    <mark name="15" />
+    Now let's enter donations. Navigate back to the Batches page to manage donation batches.
+    <break time="1s"/>
+    <mark name="16" />
+    Click Add Batch to create a new batch for organizing donations.
+    <break time="1s"/>
+    <mark name="17" />
+    Enter a batch name and select the date, then click Save.
     <break time="2s"/>
-    <mark name="end"/>
+    <mark name="end" />
+  </speak>
+  <speak>
+    <mark name="18" />
+    Your new batch appears in the list showing zero donations and zero dollars.
+    <break time="1s"/>
+    <mark name="19" />
+    Click on the batch name to open it and begin entering donations.
+    <break time="1s"/>
+    <mark name="20" />
+    Type a person's name in the search field to find the donor.
+    <break time="1s"/>
+    <mark name="21" />
+    After selecting a person, the donation entry form displays with fields for date, payment method, fund, amount, and check number.
+    <break time="1s"/>
+    <mark name="22" />
+    Fill in the amount and check number, then click Add Donation.
+    <break time="1s"/>
+    <mark name="23" />
+    The donation is added to the table below and the form resets for the next entry.
+    <break time="1s"/>
+    <mark name="24" />
+    To edit a donation, click the Edit button on the donation row.
+    <break time="1s"/>
+    <mark name="25" />
+    The edit form opens showing all the donation details that can be modified.
+    <break time="1s"/>
+    <mark name="26" />
+    You can split a donation across multiple funds by adding amounts to different funds.
+    <break time="1s"/>
+    <mark name="27" />
+    Click Save to update the donation with your changes.
+    <break time="1s"/>
+    <mark name="28" />
+    The Donations Summary page shows visual reports with options to view different report formats.
+    <break time="1s"/>
+    <mark name="29" />
+    Navigate to Giving Statements to download tax receipts for all donors for a selected year.
+    <break time="1s"/>
+    <mark name="30" />
+    You can export a csv file for each donor or
+    <break time="1s"/>
+    <mark name="31" />
+    You can print all giving statements at once by clicking the Print All Statements button.
+    <break time="1s"/>
+    <mark name="32" />
+    The print preview shows how each donor's annual giving statement will appear.
+    <break time="1s"/>
+    <mark name="33" />
+    Back on the Batches page, you can access the Stripe import feature using the link at the bottom.
+    <break time="1s"/>
+    <mark name="34" />
+    The Stripe Import page lets you select a date range to check for missing transactions.
+    <break time="1s"/>
+    <mark name="35" />
+    Click Preview to see which transactions would be imported, then Import Missing to complete the import. You now know how to create funds, manage batches, enter donations, and generate giving statements in B1 Admin.
+    <break time="2s"/>
+    <mark name="end" />
   </speak>
 </tutorial>
