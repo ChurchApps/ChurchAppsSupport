@@ -7,6 +7,40 @@ title: Setup Lessons.church
 
 # Setting up Lessons.Church
 
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; padding: 30px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);">
+  <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+    <span style="background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); padding: 8px 20px; border-radius: 20px; font-weight: bold; color: white; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; border: 2px solid rgba(255,255,255,0.3);">🚀 Coming Soon</span>
+    <h2 style="margin: 0; color: white; font-size: 28px; font-weight: 800;">Lessons.Church Admin is Moving to B1.church!</h2>
+  </div>
+
+  <p style="color: rgba(255,255,255,0.95); font-size: 18px; line-height: 1.6; margin-bottom: 20px;">
+    Get ready for an amazing upgrade! We're bringing Lessons.church directly into B1.church Admin for a seamless experience.
+  </p>
+
+  <div style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 8px; padding: 20px; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.2);">
+    <h3 style="color: white; margin-top: 0; font-size: 20px; margin-bottom: 15px;">✨ What's New?</h3>
+    <ul style="color: rgba(255,255,255,0.9); font-size: 16px; line-height: 1.8; margin: 0; padding-left: 25px;">
+      <li><strong>Schedule lessons right in B1Admin</strong> - No more switching between apps!</li>
+      <li><strong>New TV Player Coming</strong> - Better than ever with improved performance</li>
+      <li><strong>Seamless Integration</strong> - Everything in one place</li>
+    </ul>
+  </div>
+
+  <div style="background: rgba(255, 193, 7, 0.15); backdrop-filter: blur(10px); border-left: 4px solid #ffc107; padding: 15px 20px; border-radius: 6px; margin-bottom: 20px;">
+    <p style="margin: 0; color: white; font-size: 16px;">
+      <strong>📅 Start Scheduling Now!</strong> You can begin scheduling your lessons in B1Admin today. The new TV player app will be available soon to present your scheduled lessons.
+    </p>
+  </div>
+
+  <video controls style="width: 100%; border-radius: 8px; box-shadow: 0 8px 20px rgba(0,0,0,0.3);">
+    <source src="../videos/b1Admin/lesson-scheduling/output.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <p style="color: rgba(255,255,255,0.8); font-size: 14px; margin-top: 10px; text-align: center;">
+    Watch: How to Schedule Lessons.church Content in B1Admin
+  </p>
+</div>
+
 <div id="videoContainer">
   <ul id="playlist">
       <li class="active"><a href="../videos/lessons/register/output.mp4" data-steps="register-steps">Register Your Church</a></li>

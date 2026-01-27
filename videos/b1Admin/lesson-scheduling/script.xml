@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tutorial>
+  <speak>
+    <mark name="1"/>
+    To schedule lessons from Lessons.church in B1Admin, start by logging into B1Admin and navigating to the Serving section from the left sidebar.
+    <break time="1s"/>
+    <mark name="2"/>
+    In the Serving section, click on the Plans tab to access your service planning area.
+    <break time="1s"/>
+    <mark name="3"/>
+    If you don't have any plan types yet, click Create Plan Type to get started.
+    <break time="1s"/>
+    <mark name="4"/>
+    Enter a name for your plan type, such as Sunday Service or Children's Service.
+    <break time="1s"/>
+    <mark name="5"/>
+    Click Save to create your plan type.
+    <break time="1s"/>
+    <mark name="6"/>
+    Now click on your newly created plan type to open it.
+    <break time="1s"/>
+    <mark name="7"/>
+    Click the Create Plan button to add a new service plan to your calendar.
+    <break time="1s"/>
+    <mark name="8"/>
+    Enter a name and service date for your plan, then click Save.
+    <break time="1s"/>
+    <mark name="9"/>
+    Click on your plan to open it and begin scheduling your service.
+    <break time="1s"/>
+    <mark name="10"/>
+    Click on the Service Order tab to view and manage your service plan.
+    <break time="1s"/>
+    <mark name="11"/>
+    Click the Associate Lesson button to add a lesson from Lessons.church to your service order.
+    <break time="1s"/>
+    <mark name="12"/>
+    Select your Program, Study, Lesson, and Venue from the cascading dropdowns, then click Associate Lesson to add it to your service.
+    <break time="1s"/>
+    <mark name="13"/>
+    Once the lesson is added, you can click the Customize button to modify the lesson for your specific needs.
+    <break time="1s"/>
+    <mark name="14"/>
+    In the customization view, you can drag the segment handles to reorder activities and click the edit icons to modify each segment.
+    <break time="1s"/>
+    <mark name="15"/>
+    Drag segments to the blue drop zones to reorder your lesson activities to match your service flow.
+    <break time="1s"/>
+    <mark name="16"/>
+    To add additional sections to your service, click the Add Section button. Enter a name for your section in the header field.
+    <break time="1s"/>
+    <mark name="17"/>
+    Type a name such as Small Group or Large Group, then click Save.
+    <break time="1s"/>
+    <mark name="18"/>
+    Your new section appears in the service order. Click the plus icon next to the section name to add content.
+    <break time="1s"/>
+    <mark name="19"/>
+    You can add different types of content: Songs, Items, Lesson Actions, or Add-Ons. Click on Add-On to browse available resources.
+    <break time="1s"/>
+    <mark name="20"/>
+    Browse the available add-ons by category. For example, select a scripture song to include in your service.
+    <break time="1s"/>
+    <mark name="21"/>
+    Once you've selected your add-on, click the Select Add-On button to add it to your section.
+    <break time="1s"/>
+    <mark name="22"/>
+    To display your lesson on a TV, navigate back to your plan by clicking on the plan name.
+    <break time="1s"/>
+    <mark name="23"/>
+    Click the Pair TV App button in the top right corner.
+    <break time="1s"/>
+    <mark name="24"/>
+    Download the Lessons.church TV App from Google Play Store or Amazon App Store, then enter the 4-character code displayed on your TV screen to pair it. Your lesson is now ready to present on the big screen.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>
