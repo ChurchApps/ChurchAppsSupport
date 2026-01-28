@@ -7,6 +7,12 @@ title: Website - Setup
 
 # Initial Website Setup
 
+## Getting Started
+
+New to the B1 website builder? Start here:
+- <a href="/b1Admin/website-intro.html">Website Builder Introduction</a> - Learn the basics of creating pages and adding content
+
+## Advanced Setup
 
 <div id="videoContainer">
   <ul id="playlist">
