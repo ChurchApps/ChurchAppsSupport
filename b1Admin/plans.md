@@ -1,7 +1,7 @@
 ---
 layout: page
 app: b1Admin
-section: Plans
+section: "07 Plans"
 title: Plans Setup
 ---
 

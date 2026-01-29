@@ -1,7 +1,7 @@
 ---
 layout: page
 app: b1Admin
-section: Admin
+section: "02 Admin"
 title: Stream - Setup
 ---
 
