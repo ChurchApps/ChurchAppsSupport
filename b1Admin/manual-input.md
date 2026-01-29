@@ -1,7 +1,7 @@
 ---
 layout: page
 app: b1Admin
-section: "09 Giving"
+section: "05 Donations"
 title: Manual-Input
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 app: b1Admin
-section: "11 Calendar"
+section: "08 Calendar"
 title: Curated Calendar
 ---
 

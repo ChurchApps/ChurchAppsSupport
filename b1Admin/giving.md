@@ -1,7 +1,7 @@
 ---
 layout: page
 app: b1Admin
-section: "08 Donations"
+section: "05 Donations"
 title: Giving Setup
 ---
 

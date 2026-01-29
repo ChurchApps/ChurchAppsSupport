@@ -1,7 +1,7 @@
 ---
 layout: page
 app: b1Admin
-section: "04 Attendance"
+section: "07 Attendance"
 title: Attendance
 ---
 

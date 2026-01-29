@@ -1,7 +1,7 @@
 ---
 layout: page
 app: b1Admin
-section: "12 Automation"
+section: "11 Automation"
 title: Automations
 ---
 
