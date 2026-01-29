@@ -1,0 +1,44 @@
+<tutorial>
+  <speak>
+    <mark name="1" />
+    This tutorial will help you configure your tabs in the B1 mobile app. From the B1 dashboard, click Settings in the left sidebar.
+    <break time="1s"/>
+    <mark name="2" />
+    Click on Mobile Apps to access the mobile app settings.
+    <break time="1s"/>
+    <mark name="3" />
+    Click the Add Tab button in the top right to create a new tab.
+    <break time="1s"/>
+    <mark name="4" />
+    The Add Tab dialog opens. Enter a name for your tab, such as Website.
+    <break time="1s"/>
+    <mark name="5" />
+    Click on the icon to choose an icon for your tab.
+    <break time="1s"/>
+    <mark name="6" />
+    The Select Icon modal opens with various icon options to choose from.
+    <break time="1s"/>
+    <mark name="7" />
+    Click select image to add a custom image to your tab
+    <break time="1s"/>
+    <mark name="8" />
+    Choose your image from the gallery, upload a photo or stock photos
+    <break time="1s"/>
+    <mark name="9" />
+    The Tab Type dropdown offers many options including Bible, Live Stream, Donation, and more.
+    <break time="1s"/>
+    <mark name="10" />
+    Enter the URL you want the tab to link to in the URL field.
+    <break time="1s"/>
+    <mark name="11" />
+    Choose the Visibility setting to control who can see this tab.
+    <break time="1s"/>
+    <mark name="12" />
+    Once you've configured all settings, click Save Tab.
+    <break time="1s"/>
+    <mark name="13" />
+    Your new tab now appears in the App Tabs list.
+    <break time="2s"/>
+    <mark name="end" />
+  </speak>
+</tutorial>

@@ -14,7 +14,7 @@ For further support, please email [support@churchapps.org](mailto:support@church
 <div id="videoContainer">
   <ul id="playlist">
       <li class="active"><a href="/videos/b1/admin/overview/output.mp4" data-steps="overview-steps">Mobile Admin Overview</a></li>
-      <li><a href="/videos/b1/admin/anonymous/output.mp4">Anonymous Tabs</a></li>
+      <li><a href="/videos/b1/admin/Tabs/output.mp4" data-steps="tabs-steps">Adding Tabs</a></li>
       <li><a href="/videos/b1/admin/members/output.mp4">Member Tabs</a></li>
       <li><a href="/videos/b1/admin/manual/output.mp4">Manual Tabs</a></li>
   </ul>
@@ -52,6 +52,38 @@ For further support, please email [support@churchapps.org](mailto:support@church
   <div class="step-content"><img src="../videos/b1/admin/overview/5.png" onclick="showModal(this.src)"></div>
   <div class="step-header" onclick="toggleStep(this)"><span class="step-num">6.</span><span class="step-text">Some tabs show up automatically when conditions are met. Others can be manually added by clicking the Add Tab button.</span><span class="step-arrow">▼</span></div>
   <div class="step-content"><img src="../videos/b1/admin/overview/6.png" onclick="showModal(this.src)"></div>
+</div>
+</div>
+
+<div id="tabs-steps" class="video-steps">
+<h3>Steps</h3>
+<div class="step-accordion">
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">1.</span><span class="step-text">This tutorial will help you configure your tabs in the B1 mobile app. From the B1 dashboard, click Settings in the left sidebar.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/admin/Tabs/1.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">2.</span><span class="step-text">Click on Mobile Apps to access the mobile app settings.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/admin/Tabs/2.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">3.</span><span class="step-text">Click the Add Tab button in the top right to create a new tab.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/admin/Tabs/3.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">4.</span><span class="step-text">The Add Tab dialog opens. Enter a name for your tab, such as Website.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/admin/Tabs/4.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">5.</span><span class="step-text">Click on the icon to choose an icon for your tab.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/admin/Tabs/5.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">6.</span><span class="step-text">The Select Icon modal opens with various icon options to choose from.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/admin/Tabs/6.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">7.</span><span class="step-text">Click Select Image to add a custom image to your tab.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/admin/Tabs/7.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">8.</span><span class="step-text">Choose your image from the gallery, upload a photo, or stock photos.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/admin/Tabs/8.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">9.</span><span class="step-text">The Tab Type dropdown offers many options including Bible, Live Stream, Donation, and more.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/admin/Tabs/9.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">10.</span><span class="step-text">Enter the URL you want the tab to link to in the URL field.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/admin/Tabs/10.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">11.</span><span class="step-text">Choose the Visibility setting to control who can see this tab.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/admin/Tabs/11.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">12.</span><span class="step-text">Once you've configured all settings, click Save Tab.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/admin/Tabs/12.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">13.</span><span class="step-text">Your new tab now appears in the App Tabs list.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/admin/Tabs/13.png" onclick="showModal(this.src)"></div>
 </div>
 </div>
 
