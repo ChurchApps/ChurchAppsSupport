@@ -1,58 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <tutorial>
   <speak>
     <mark name="1" />
-    The Manage Appearance section allows you to configure global appearance options such as logo, colors, and fonts.
+    Welcome to the Website Appearance tutorial. This guide will show you how to customize your site's global appearance including colors, fonts, logos, and footer. From the B1 dashboard, click Website in the left sidebar.
     <break time="1s"/>
     <mark name="2" />
-    You will see a preview of a website with your current styles.  Click any option on the right to get started.  We'll start with Color Palette.
+    This opens the Website Pages view where you manage all your pages.
     <break time="1s"/>
     <mark name="3" />
-    This is where you set the overall color theme for your site.  
+    Click the Appearance tab at the top to access the global appearance settings.
     <break time="1s"/>
     <mark name="4" />
-    Click on any of the suggested pallets to choose a different scheme.
-    The pairings show suggestions of how these colors can be used together.
+    The Site Styles page loads, showing a preview of your website with your current colors, fonts, and logos. This preview updates as you make changes.
     <break time="1s"/>
     <mark name="5" />
-    You can also set your own custom theme by double clicking on any of the five colors to manually set the color.
+    On the right side you'll see Style Settings options. Click Color Palette to customize your site's colors.
     <break time="1s"/>
     <mark name="6" />
-    Slide the dial, use the dropper, set the RGB,
+    The Color Palette dialog opens. You'll see Base Colors at the top for light, accent, and dark shades, and Semantic Colors below for Primary, Secondary, Success, Warning, and Error. Click on any color box to change it.
+    <break time="1s"/>
     <mark name="7" />
-    Or use the toggle to set the value as hex.
+    A color picker appears. Drag the selector to choose your desired color, or use the color slider below. Your choice updates the preview instantly.
     <break time="1s"/>
     <mark name="8" />
-    Click Save and the preview will be updated with your choices.  Next we'll choose fonts.
+    You can customize each semantic color. Notice how the Color Combinations Preview on the right shows how your selected colors will look together in different pairings. Below the color values, you'll find Suggested Palettes. Click any palette to instantly apply a pre-designed color scheme to your entire site. Be sure to save.
     <break time="1s"/>
     <mark name="9" />
-    You can set global fonts for the headings and for the body text of your pages.  If you choose, you can still use additional fonts on specific elements.
+    Next, let's customize fonts.
     <break time="1s"/>
     <mark name="10" />
-    Simply click on either font and you'll be able to choose from thousands of options provided by Google Fonts.
+   In the Typography Settings panel, you'll see options for Font Selection and a preview showing how headings will look.
     <break time="1s"/>
     <mark name="11" />
-    Search for a specific name or use the category filter to browse.
+    Click Select a Font to open the font browser. You can search for specific fonts or browse by category.
     <break time="1s"/>
     <mark name="12" />
-    Choose a font and you can see how your pairing will look.
+    The font list shows categories like Serif, Sans Serif, Display, Handwriting, and Monospace. Each font displays a preview of the alphabet.
     <break time="1s"/>
     <mark name="13" />
-    Click save and the preview site has also been updated.
+    Be sure to save.
     <break time="1s"/>
+  </speak>
+  <speak>
     <mark name="14" />
-    The CSS and Javascript section is an advanced option for those familiar with web development.  Add any code you wish to be included on your pages such as tracking scripts.
+    The Typography Scale displays your heading hierarchy. You can see Heading 1 at 39 pixels, Heading 2 at 31 pixels, Heading 3 at 25 pixels, and Heading 4 at 20 pixels.
     <break time="1s"/>
     <mark name="15" />
-    Finally the logo section allows you to brand your website and other features with your logo.  Click the pencil icon to edit.
+    Click on Typography Scale to adjust the sizes. You'll see input fields where you can customize the scale multiplier and base size for all headings.
     <break time="1s"/>
     <mark name="16" />
-    You'll need to provide two versions of your logo.  One for dark backgrounds and another for light backgrounds.  Simply click either to edit.
+    The preview updates to show how your heading sizes appear with sample text below each. You can type directly into the input fields to fine-tune your typography scale. Be sure to click save.
     <break time="1s"/>
     <mark name="17" />
-    You'll see an Upload button for providing the image.  Be sure it is on a transparent background.
+    Click on Spacing Scale in the Style Settings menu.
     <break time="1s"/>
     <mark name="18" />
-    The site expects a 4 by 1 logo, so you will be given a cropping tool to ensure your logo is the appropriate shape by adding the necessary horizontal and vertical padding.  Adjust accordingly and click Update and Save.
+    The Spacing Scale dialog shows spacing values for Extra Small, Small, Medium, Large, and Extra Large, measured in pixels. Scroll down to see Practical Examples showing how your spacing values affect real UI elements like Icon Rows and Cards with Content. These examples help you visualize the spacing in context.
+    <break time="1s"/>
+    <mark name="19" />
+    When you're satisfied with your spacing values, click Save Spacing to apply them across your entire site.
+    <break time="1s"/>
+    <mark name="20" />
+    For advanced users, click CSS and Javascript in the Style Settings. 
+    <break time="1s"/>
+    <mark name="21" />
+    This opens a dialog where you can add Custom CSS to override default styles or create new styling rules. Scroll down to see the Custom HTML section and Common Javascript Examples. You can add third-party scripts like Google Analytics here. The Custom HTML field is where you paste your tracking codes or other scripts.
+    <break time="1s"/>
+    <mark name="22" />
+    Click Logo in the Style Settings to open Logo and Branding.
+    <break time="1s"/>
+  </speak>
+  <speak>
+    <mark name="23" />
+    You'll see sections for Main Logos with Light Background Logo and Dark Background Logo, as well as SEO and Browser Assets below. Upload your logos by clicking Edit Light Background Logo or Edit Dark Background Logo. Below, you can add a Social Media Image and Favicon. The favicon is the small icon that appears in browser tabs. Be sure to load images that are the correct size. Your uploaded logo now appears in the site preview at the top, showing how it will look on your actual website.
+    <break time="1s"/>
+    <mark name="24" />
+    Now let's customize the footer. Click Site Footer in the Style Settings.
+    <break time="1s"/>
+    <mark name="25" />
+    The Site Footer editor opens, showing an empty canvas that says No sections yet. Click the plus button in the toolbar to add content.
+    <break time="1s"/>
+    <mark name="26" />
+    Click on section
+    <break time="1s"/>
+    <mark name="27" />
+    Drag the section onto the footer page
+    <break time="1s"/>
+    <mark name="28" />
+    Edit the section with a custom color or image or leave as is
+    <break time="1s"/>
+    <mark name="29" />
+    Be sure to click save
+    <break time="1s"/>
+    <mark name="30" />
+    Now click the plus sign to add other elements
+    <break time="1s"/>
+    <mark name="31" />
+    A common footer set up is three rows of text, so let's select rows and add them to the page.
+    <break time="1s"/>
+    <mark name="32" />
+    Drag and drop the rows element to the page and select thirds for the configeration.
+    <break time="1s"/>
+    <mark name="33" />
+    Be sure to save
+    <break time="1s"/>
+    <mark name="34" />
+    Now lets drop some text in each section
+    <break time="1s"/>
+    <mark name="35" />
+   Drag and drop a text element to add text
+    <break time="1s"/>
+    <mark name="36" />
+    The Edit Element dialog opens with a text editor. Type your church information such as name, address, and location. You can use the formatting toolbar to style your text with bold, italic, lists, and alignment options.
+    <break time="1s"/>
+    <mark name="37" />
+    Click Done to save your footer. Your completed footer now shows across the page with your church name First Ironwood Church, address 1234 Ironwood Road Anytown USA, your mission statement Making Disciples Who Make Disciples, phone number, and email address. This footer will appear on every page of your website.
     <break time="2s"/>
     <mark name="end" />
   </speak>
