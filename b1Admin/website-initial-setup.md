@@ -11,9 +11,9 @@ Get your B1 website up and running with these foundational tutorials.
 
 <div id="videoContainer">
   <ul id="playlist">
-      <li class="active"><a href="/videos/b1/website/website-intro/output.mp4">Getting Started</a></li>
+      <li class="active"><a href="/videos/b1/website/website-intro/output.mp4" data-steps="website-intro-steps">Getting Started</a></li>
       <li><a href="/videos/b1/website/appearance/output.mp4" data-steps="appearance-steps">Global Appearance</a></li>
-      <li><a href="/videos/b1/website/domain/output.mp4">Domain Configuration</a></li>
+      <li><a href="/videos/b1/website/domain/output.mp4" data-steps="domain-steps">Domain Configuration</a></li>
   </ul>
 </div>
 
@@ -33,6 +33,76 @@ Get your B1 website up and running with these foundational tutorials.
 .step-content img { max-width: 100%; cursor: pointer; border: 2px solid #333; border-radius: 4px; }
 .step-content img:hover { border-color: #08c; }
 </style>
+
+<div id="website-intro-steps" class="video-steps active">
+<h3>Steps</h3>
+<div class="step-accordion">
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">1.</span><span class="step-text">Every B1 account comes with a website. To access your website builder, click Website in the left menu.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/1.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">2.</span><span class="step-text">This opens Website Pages where you can manage pages and content. Click Add Page at the top right.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/2.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">3.</span><span class="step-text">Choose blank as the page type and name it Home.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/3.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">4.</span><span class="step-text">Click Edit to start building your page.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/4.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">5.</span><span class="step-text">Click Page Settings to configure the title and URL.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/5.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">6.</span><span class="step-text">Click the edit pencil.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/6.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">7.</span><span class="step-text">Edit your page title and URL path here.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/7.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">8.</span><span class="step-text">For the home page, enter a forward slash with no text. Other pages use forward slash and page title. Click Save.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/8.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">9.</span><span class="step-text">Click Edit Content to begin adding content.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/9.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">10.</span><span class="step-text">Click Add Content to open the elements panel.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/10.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">11.</span><span class="step-text">Every page must begin with a Section. Choose Section to add a container.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/11.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">12.</span><span class="step-text">Drag a Section onto your page.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/12.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">13.</span><span class="step-text">Click the section and switch to the CUSTOM tab.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/13.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">14.</span><span class="step-text">The CUSTOM tab controls colors for backgrounds, headings, text, and links.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/14.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">15.</span><span class="step-text">Click the Background Type dropdown.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/15.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">16.</span><span class="step-text">Choose Image to upload a background image.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/16.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">17.</span><span class="step-text">Or choose YouTube Video to add a video background.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/17.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">18.</span><span class="step-text">Select Color and choose a background color.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/18.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">19.</span><span class="step-text">Add an optional section ID for advanced styling.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/19.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">20.</span><span class="step-text">Click Save.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/20.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">21.</span><span class="step-text">Your section displays with the custom background.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/21.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">22.</span><span class="step-text">Click MOBILE to preview mobile layout.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/22.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">23.</span><span class="step-text">Click Add Content again.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/23.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">24.</span><span class="step-text">Choose from text, images, videos, cards, forms, and more.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/24.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">25.</span><span class="step-text">Drag a Text element into your section.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/25.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">26.</span><span class="step-text">Type your text and customize formatting. Click Save.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/26.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">27.</span><span class="step-text">Drag an Image element below your text.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/27.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">28.</span><span class="step-text">Click Select Photo.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/28.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">29.</span><span class="step-text">Upload images or download stock photos. Select an image.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/29.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">30.</span><span class="step-text">Click Save.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/30.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">31.</span><span class="step-text">Your section displays with text and image.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/31.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">32.</span><span class="step-text">Preview your complete website.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/website-intro/32.png" onclick="showModal(this.src)"></div>
+</div>
+</div>
 
 <div id="appearance-steps" class="video-steps">
 <h3>Steps</h3>
@@ -111,6 +181,34 @@ Get your B1 website up and running with these foundational tutorials.
   <div class="step-content"><img src="../videos/b1/website/appearance/36.png" onclick="showModal(this.src)"></div>
   <div class="step-header" onclick="toggleStep(this)"><span class="step-num">37.</span><span class="step-text">Click Done to save your footer. Your completed footer now shows with all your church information and will appear on every page of your website.</span><span class="step-arrow">▼</span></div>
   <div class="step-content"><img src="../videos/b1/website/appearance/37.png" onclick="showModal(this.src)"></div>
+</div>
+</div>
+
+<div id="domain-steps" class="video-steps">
+<h3>Steps</h3>
+<div class="step-accordion">
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">1.</span><span class="step-text">Configuring domains for your site takes place in B1.church Admin. You can go to admin.b1.church and login.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/domain/1.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">2.</span><span class="step-text">Or if you're on B1, click the profile drop down and choose switch app.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/domain/2.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">3.</span><span class="step-text">In B1.church Admin, click on the dashboard on the left.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/domain/3.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">4.</span><span class="step-text">In the dashboard pulldown menu click on settings. If you are missing these options, it's because you lack permissions. Request the person who set up your church grant you access to "Edit Church Settings".</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/domain/4.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">5.</span><span class="step-text">Click on manage. Every church that uses B1 has a subdomain assigned to them. In our case, we have chosen "ironwood" as the subdomain for our test church of Ironwood Church. This means we can go to ironwood.b1.church to get to our B1 content.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/domain/5.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">6.</span><span class="step-text">Set this subdomain to whatever you would like. It needs to have no spaces and be unique.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/domain/6.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">7.</span><span class="step-text">In addition to the subdomain, you can set up your own custom domains to point to your B1 site. For example, the site ChurchApps.org is hosted with B1.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/domain/7.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">8.</span><span class="step-text">To configure this, you will need to log into your DNS provider such as GoDaddy, CloudFlare, or in our case A.W.S.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/domain/8.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">9.</span><span class="step-text">There are two records you will need to add. An A record for your root domain of 3.23.251.61.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/domain/9.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">10.</span><span class="step-text">And a CNAME record for your www subdomain pointing to proxy.b1.church.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/domain/10.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">11.</span><span class="step-text">Once these have been added, return to B1.church Admin and add your domain to the list of custom domains and click Add and Save. After a few minutes your B1 site will be accessible from your custom domain.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/website/domain/11.png" onclick="showModal(this.src)"></div>
 </div>
 </div>
 
