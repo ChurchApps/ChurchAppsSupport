@@ -3,6 +3,7 @@ layout: page
 app: b1Admin
 section: "03 Website"
 title: Page Setup
+order: 2
 ---
 
 # Website Page Setup

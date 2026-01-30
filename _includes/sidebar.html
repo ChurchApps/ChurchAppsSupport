@@ -12,7 +12,7 @@
           {% assign pages = site.pages | where: "app", page.app %}
 
           {% assign all_sections = pages | sort:"section" | map: "section" | uniq %}
-          {% assign all_pages = pages | sort:"url" %}
+          {% assign all_pages = pages | sort:"order","url" %}
 
           {% for section in all_sections %}
             {% if section != null %}
