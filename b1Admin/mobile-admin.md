@@ -15,8 +15,6 @@ For further support, please email [support@churchapps.org](mailto:support@church
   <ul id="playlist">
       <li class="active"><a href="/videos/b1/admin/overview/output.mp4" data-steps="overview-steps">Mobile Admin Overview</a></li>
       <li><a href="/videos/b1/admin/Tabs/output.mp4" data-steps="tabs-steps">Adding Tabs</a></li>
-      <li><a href="/videos/b1/admin/members/output.mp4">Member Tabs</a></li>
-      <li><a href="/videos/b1/admin/manual/output.mp4">Manual Tabs</a></li>
   </ul>
 </div>
 
@@ -122,5 +120,5 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 ## Related Tutorials
-- <a href="/b1Admin/website-setup.html">Website Setup</a>
-- <a href="/b1Admin/website-elements.html">Page Content - Sections and Elements</a>
+- <a href="/b1Admin/website-initial-setup.html">Website Initial Setup</a>
+- <a href="/b1Admin/website-page-setup.html">Website Page Setup</a>
