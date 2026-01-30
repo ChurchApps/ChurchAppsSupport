@@ -3,6 +3,7 @@ layout: page
 app: b1Admin
 section: "05 Donations"
 title: Manual-Input
+order: 2
 ---
 
 # How to Manually Input Donations in B1.church Admin

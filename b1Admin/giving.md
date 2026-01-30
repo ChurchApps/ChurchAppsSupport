@@ -3,6 +3,7 @@ layout: page
 app: b1Admin
 section: "05 Donations"
 title: Giving Setup
+order: 1
 ---
 
 ## Start accepting Payments Online in B1.church Admin

@@ -3,6 +3,7 @@ layout: page
 app: b1Admin
 section: "05 Donations"
 title: Donation Report
+order: 3
 ---
 
 # How to Generate a Donation Report in B1.church Admin
