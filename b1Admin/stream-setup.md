@@ -122,6 +122,26 @@ title: Stream - Setup
 <div id="hosts-steps" class="video-steps">
 <h3>Steps</h3>
 <div class="step-accordion">
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">1.</span><span class="step-text">To add hosts for your live stream, start from the Dashboard and click on Settings in the left navigation menu.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/hosts/1.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">2.</span><span class="step-text">From the Settings page, click on the Roles button in the top navigation to access role management.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/hosts/2.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">3.</span><span class="step-text">On the Roles page, click the plus button in the top right corner and select Add Custom Role from the dropdown menu.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/hosts/3.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">4.</span><span class="step-text">In the Role Name field, enter Streaming Host and click Save to create the new role.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/hosts/4.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">5.</span><span class="step-text">Your new Streaming Host role will now appear in the roles list.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/hosts/5.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">6.</span><span class="step-text">Click on the Streaming Host role to edit it. You'll see the Members section where you can add people to this role.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/hosts/6.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">7.</span><span class="step-text">Click the Add button in the Members section, search for the person you want to add as a host, and click Select next to their name.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/hosts/7.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">8.</span><span class="step-text">The person you selected will now appear in the Members list for this role.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/hosts/8.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">9.</span><span class="step-text">Now scroll down to Edit Permissions and expand the Content section. Check the Host Chat permission to give this role the ability to moderate chat and respond to prayer requests.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/hosts/9.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">10.</span><span class="step-text">When your host logs into the live stream page, they will have special host capabilities including the ability to moderate the chat and respond to prayer requests.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/hosts/10.png" onclick="showModal(this.src)"></div>
 </div>
 </div>
 

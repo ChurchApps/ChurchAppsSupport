@@ -1,14 +1,34 @@
 <tutorial>
   <speak>
     <mark name="1" />
-    Your live stream can have hosts to moderate the chat and respond to prayer requests.  To add a host, click the "Edit Users" link under "External Resources".
+    To add hosts for your live stream, start from the Dashboard and click on Settings in the left navigation menu.
     <break time="1s"/>
     <mark name="2" />
-    This will take you to the B1.church Admin application where users and groups are managed.  For a full tutorial on this, see the B1.church Admin help section.  
-    You will need to create a group called "Streaming Hosts", assign the "Host Chat" permission and add your hosts to this group.
+    From the Settings page, click on the Roles button in the top navigation to access role management.
     <break time="1s"/>
     <mark name="3" />
-    When the host is logged into the live stream, they have additional features, such as the ability to delete chat messages and respond to prayer requests.
+    On the Roles page, click the plus button in the top right corner and select Add Custom Role from the dropdown menu.
+    <break time="1s"/>
+    <mark name="4" />
+    In the Role Name field, enter Streaming Host and click Save to create the new role.
+    <break time="1s"/>
+    <mark name="5" />
+    Your new Streaming Host role will now appear in the roles list.
+    <break time="1s"/>
+    <mark name="6" />
+    Click on the Streaming Host role to edit it. You'll see the Members section where you can add people to this role.
+    <break time="1s"/>
+    <mark name="7" />
+    Click the Add button in the Members section, search for the person you want to add as a host, and click Select next to their name.
+    <break time="1s"/>
+    <mark name="8" />
+    The person you selected will now appear in the Members list for this role.
+    <break time="1s"/>
+    <mark name="9" />
+    Now scroll down to Edit Permissions and expand the Content section. Check the Host Chat permission to give this role the ability to moderate chat and respond to prayer requests.
+    <break time="1s"/>
+    <mark name="10" />
+    When your host logs into the live stream page, they will have special host capabilities including the ability to moderate the chat and respond to prayer requests.
     <break time="2s"/>
     <mark name="end" />
   </speak>
