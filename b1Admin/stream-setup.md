@@ -94,6 +94,28 @@ title: Stream - Setup
 <div id="import-steps" class="video-steps">
 <h3>Steps</h3>
 <div class="step-accordion">
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">1.</span><span class="step-text">To import your existing videos from YouTube or Vimeo, start from the Dashboard and click on Sermons in the left navigation menu.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/import/1.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">2.</span><span class="step-text">From the Sermons page, click on the Bulk Import tab at the top.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/import/2.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">3.</span><span class="step-text">Before importing videos, you'll need to create a playlist to organize them. Click on the Playlists tab.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/import/3.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">4.</span><span class="step-text">If you don't have any playlists yet, click the Create First Playlist button to get started.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/import/4.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">5.</span><span class="step-text">Enter a name and description for your playlist, set a publish date, and add a thumbnail image. Then click Save to create your playlist.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/import/5.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">6.</span><span class="step-text">Now return to the Bulk Import tab. Click either Import from YouTube or Import from Vimeo depending on where your videos are hosted.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/import/6.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">7.</span><span class="step-text">Enter your YouTube Channel ID or Vimeo account information in the field provided.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/import/7.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">8.</span><span class="step-text">Click the Fetch button to retrieve all available videos from your channel.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/import/8.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">9.</span><span class="step-text">After fetching, you'll see a list of all your videos. Check the boxes next to the videos you want to import. You can also enable Auto Import New Videos to automatically add future uploads.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/import/9.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">10.</span><span class="step-text">Click the Import Into Playlist dropdown to select which playlist these videos should be added to.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/import/10.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">11.</span><span class="step-text">After selecting your playlist and videos, click the Import button to complete the bulk import. Your videos will be imported with all their details including titles, descriptions, dates, and thumbnails.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/import/11.png" onclick="showModal(this.src)"></div>
 </div>
 </div>
 
