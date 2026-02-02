@@ -9,14 +9,119 @@ title: Stream - Setup
 
 <div id="videoContainer">
   <ul id="playlist">
-      <li class="active"><a href="/videos/b1/streaming/services/output.mp4">Configure Service Times</a></li>
-      <li><a href="/videos/b1/streaming/links-tabs/output.mp4">Adding Links and Tabs</a></li>
-      <li><a href="/videos/b1/streaming/appearance/output.mp4">Set Colors and Logo</a></li>
-      <li><a href="/videos/b1/streaming/import/output.mp4">Import Existing Videos</a></li>
-      <li><a href="/videos/b1/streaming/hosts/output.mp4">Adding Hosts</a></li>
-      <li><a href="/videos/b1/streaming/sermon/output.mp4">Add a Sermon</a></li>
+      <li class="active"><a href="/videos/b1/streaming/services/output.mp4" data-steps="services-steps">Configure Service Times</a></li>
+      <li><a href="/videos/b1/streaming/links-tabs/output.mp4" data-steps="links-tabs-steps">Adding Links and Tabs</a></li>
+      <li><a href="/videos/b1/streaming/appearance/output.mp4" data-steps="appearance-steps">Set Colors and Logo</a></li>
+      <li><a href="/videos/b1/streaming/import/output.mp4" data-steps="import-steps">Import Existing Videos</a></li>
+      <li><a href="/videos/b1/streaming/hosts/output.mp4" data-steps="hosts-steps">Adding Hosts</a></li>
+      <li><a href="/videos/b1/streaming/sermon/output.mp4" data-steps="sermon-steps">Add a Sermon</a></li>
   </ul>
 </div>
+
+<style>
+.video-steps { display: none; margin-top: 20px; }
+.video-steps.active { display: block; }
+.step-accordion { border: 1px solid #333; border-radius: 4px; overflow: hidden; }
+.step-header { display: flex; align-items: center; padding: 10px 15px; cursor: pointer; background: #1a1a1a; border-bottom: 1px solid #333; transition: background 0.2s; }
+.step-header:hover { background: #252525; }
+.step-header:last-child { border-bottom: none; }
+.step-num { font-weight: bold; color: #08c; margin-right: 10px; min-width: 30px; }
+.step-text { color: #ccc; flex: 1; }
+.step-arrow { color: #666; transition: transform 0.2s; }
+.step-header.active .step-arrow { transform: rotate(180deg); }
+.step-content { display: none; padding: 15px; background: #121212; border-bottom: 1px solid #333; text-align: center; }
+.step-content.active { display: block; }
+.step-content img { max-width: 100%; cursor: pointer; border: 2px solid #333; border-radius: 4px; }
+.step-content img:hover { border-color: #08c; }
+</style>
+
+<div id="services-steps" class="video-steps active">
+<h3>Steps</h3>
+<div class="step-accordion">
+</div>
+</div>
+
+<div id="links-tabs-steps" class="video-steps">
+<h3>Steps</h3>
+<div class="step-accordion">
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">1.</span><span class="step-text">To configure navigation links and tabs for your live stream, start from the Dashboard and click on "Sermons" in the left navigation menu.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/links-tabs/1.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">2.</span><span class="step-text">From the Sermons page, click on the "Live Stream Times" tab to access stream configuration.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/links-tabs/2.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">3.</span><span class="step-text">On the Live Stream Times page, click the "Settings" button to configure your streaming page options.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/links-tabs/3.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">4.</span><span class="step-text">In the Settings page, click the add button to add tabs to your livestream.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/links-tabs/4.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">5.</span><span class="step-text">You can add a tab using any external URL or add one of the pre-designed tabs, chat or prayer. If you add a pre-designed tab just give it a name in the tab Text box and the setup is complete.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/links-tabs/5.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">6.</span><span class="step-text">To add a linked tab, give the tab a name and click the icon button to change the icon for the tab.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/links-tabs/6.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">7.</span><span class="step-text">Choose from any of the icons listed or search for more icons.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/links-tabs/7.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">8.</span><span class="step-text">Now enter the URL for the tab you just created. In this case, it is the church calendar for First Ironwood Church.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/links-tabs/8.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">9.</span><span class="step-text">Your streaming settings now show all configured navigation links. These will appear on your live streaming page for viewers to access additional resources and interactive features.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/links-tabs/9.png" onclick="showModal(this.src)"></div>
+</div>
+</div>
+
+<div id="appearance-steps" class="video-steps">
+<h3>Steps</h3>
+<div class="step-accordion">
+</div>
+</div>
+
+<div id="import-steps" class="video-steps">
+<h3>Steps</h3>
+<div class="step-accordion">
+</div>
+</div>
+
+<div id="hosts-steps" class="video-steps">
+<h3>Steps</h3>
+<div class="step-accordion">
+</div>
+</div>
+
+<div id="sermon-steps" class="video-steps">
+<h3>Steps</h3>
+<div class="step-accordion">
+</div>
+</div>
+
+<script>
+function toggleStep(header) {
+  var content = header.nextElementSibling;
+  var isActive = header.classList.contains('active');
+
+  // Close all other steps
+  header.parentElement.querySelectorAll('.step-header').forEach(function(h) {
+    h.classList.remove('active');
+    h.nextElementSibling.classList.remove('active');
+  });
+
+  // Toggle this one
+  if (!isActive) {
+    header.classList.add('active');
+    content.classList.add('active');
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('#playlist a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      var stepsId = this.getAttribute('data-steps');
+      document.querySelectorAll('.video-steps').forEach(function(el) {
+        el.classList.remove('active');
+      });
+      if (stepsId) {
+        var stepsEl = document.getElementById(stepsId);
+        if (stepsEl) stepsEl.classList.add('active');
+      }
+    });
+  });
+});
+</script>
 
 ## Troubleshooting YouTube Automated Livestream
 
