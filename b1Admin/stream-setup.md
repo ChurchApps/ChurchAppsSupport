@@ -148,6 +148,20 @@ title: Stream - Setup
 <div id="sermon-steps" class="video-steps">
 <h3>Steps</h3>
 <div class="step-accordion">
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">1.</span><span class="step-text">From the Dashboard, click on Sermons in the left sidebar to access your sermon library.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/sermon/1.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">2.</span><span class="step-text">On the Sermons page, click the Add Sermon button in the top right corner and select Add Sermon from the dropdown.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/sermon/2.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">3.</span><span class="step-text">Select a Playlist for your sermon, choose YouTube as the video provider, then enter the YouTube video I.D. and click Fetch. The video I.D. is the string of characters after "v=" in the YouTube URL.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/sermon/3.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">4.</span><span class="step-text">We recommend YouTube for your video library because it seems to work best with our system. However, we also support Vimeo, Facebook, or your own Custom URL.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/sermon/4.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">5.</span><span class="step-text">When you click Fetch, all of the video details will be imported automatically. This includes the publish date, duration, title, description, and thumbnail. Make any changes you wish and click Save.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/sermon/5.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">6.</span><span class="step-text">The sermon will now appear in your sermons list, organized by playlist.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/sermon/6.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">7.</span><span class="step-text">To schedule this sermon for a live stream, go to Live Stream Times. Under Video Settings, you can select your sermon from the dropdown to broadcast it as a pre-recorded stream.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/sermon/7.png" onclick="showModal(this.src)"></div>
 </div>
 </div>
 
