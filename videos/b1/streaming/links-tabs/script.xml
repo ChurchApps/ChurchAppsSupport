@@ -1,7 +1,7 @@
 <tutorial>
   <speak>
     <mark name="1" />
-    To configure navigation links and sidebar tabs for your live stream, start from the Dashboard and click on "Sermons" in the left navigation menu.
+    To configure navigation links and tabs for your live stream, start from the Dashboard and click on "Sermons" in the left navigation menu.
     <break time="1s"/>
     <mark name="2" />
     From the Sermons page, click on the "Live Stream Times" tab to access stream configuration.
@@ -10,22 +10,22 @@
     On the Live Stream Times page, click the "Settings" button to configure your streaming page options.
     <break time="1s"/>
     <mark name="4" />
-    In the Settings page, you'll see three sections: Navigation Links for header links, Sidebar Tabs for interactive elements, and External Resources. To add a navigation link, click the "Add" button in the Navigation Links section.
+    In the Settings page, click the add button to add tabs to your livestream
     <break time="1s"/>
     <mark name="5" />
-    Enter your link details. For this example, we're adding "Church Calendar" with the URL "/church-calendar". You can organize links under submenus by selecting a folder like "Home" from the Menu Organization section.
+    You can add a tab using any external URL or add one of the pre-designed tabs, chat or prayer. If you add a pre-designed tab just give it a name in the tab Text box and the setup is complete.
     <break time="1s"/>
     <mark name="6" />
-    After selecting the Home folder, you'll see a confirmation that your link will be placed under that submenu. Click "Save Link" to add it.
+    To add a linked tab, give the tab a name and click the icon button to change the icon for the tab.
     <break time="1s"/>
     <mark name="7" />
-    The new Church Calendar link now appears under the Home navigation link. To add a sidebar tab, click the "Add" button in the Sidebar Tabs section.
+    Choose from any of the icons listed or search for more icons.
     <break time="1s"/>
     <mark name="8" />
-    Enter the tab name, select an icon, and choose the page type. For an External URL, enter the full web address. In this example, we're adding a "Womens Retreat Registration" tab with an external registration form URL. Click "Save Tab" when done.
+    Now enter the URL for the tab you just created. In this case, it is the church calendar for First Ironwood Church.
     <break time="1s"/>
     <mark name="9" />
-    Your streaming settings now show all configured navigation links and sidebar tabs. These will appear on your live streaming page for viewers to access additional resources and interactive features.
+    Your streaming settings now show all configured navigation links.  These will appear on your live streaming page for viewers to access additional resources and interactive features. The chat and prayer tabs will appear at the time of the livestream.
     <break time="2s"/>
     <mark name="end" />
   </speak>
