@@ -68,6 +68,26 @@ title: Stream - Setup
 <div id="appearance-steps" class="video-steps">
 <h3>Steps</h3>
 <div class="step-accordion">
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">1.</span><span class="step-text">To set your color scheme and logo for your live stream page, start from the B1 dashboard and click on Website in the left sidebar.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/appearance/1.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">2.</span><span class="step-text">This opens the Website Pages view where you manage all your pages.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/appearance/2.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">3.</span><span class="step-text">Click the Appearance tab at the top to access the global appearance settings.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/appearance/3.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">4.</span><span class="step-text">The Site Styles page loads, showing a preview of your website with your current colors and logos. On the right side you'll see Style Settings options. Click Color Palette to customize your colors.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/appearance/4.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">5.</span><span class="step-text">The Color Palette dialog opens, showing Base Colors at the top for light, accent, and dark shades, and Semantic Colors below. The stream uses the light accent color with dark text for the header, and the dark accent color with light text for the sidebar.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/appearance/5.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">6.</span><span class="step-text">Click on any color box to change it. A color picker appears where you can drag the selector to choose your desired color. Your choice updates the preview instantly.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/appearance/6.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">7.</span><span class="step-text">You can also use the Suggested Palettes section. Click any palette to instantly apply a pre-designed color scheme. The Color Combinations Preview shows how your selected colors will look together. Be sure to click Save when you're done.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/appearance/7.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">8.</span><span class="step-text">To set your logo, click Logo in the Style Settings sidebar. You'll see sections for Main Logos with Light Background Logo and Dark Background Logo, as well as SEO and Browser Assets.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/appearance/8.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">9.</span><span class="step-text">For streaming, you'll need to set the Light Background Logo. Click Edit Light Background Logo, then upload your logo file. You'll want to select an image with a transparent background and a 4 to 1 aspect ratio. Use the cropping tool to center your logo and click Update.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/appearance/9.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">10.</span><span class="step-text">Your logo will now appear on your live streaming page.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/appearance/10.png" onclick="showModal(this.src)"></div>
 </div>
 </div>
 
