@@ -38,6 +38,22 @@ title: Stream - Setup
 <div id="services-steps" class="video-steps active">
 <h3>Steps</h3>
 <div class="step-accordion">
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">1.</span><span class="step-text">To configure your live stream times, log into the B1 admin and click on "Sermons".</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/services/1.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">2.</span><span class="step-text">In the top navigation, click on "Live Stream Times".</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/services/2.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">3.</span><span class="step-text">Click the "Add Service" button to add a new service.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/services/3.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">4.</span><span class="step-text">Give your service a name and set the service time. In most cases you'll want to set it as recurring weekly, unless this is a special one-time service.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/services/4.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">5.</span><span class="step-text">Under "Chat Settings", you can configure how many minutes before and after the service the chat should be enabled. This lets visitors start chatting before service begins and continue afterward. Under "Video Settings", you can set how early to start the video stream for countdown or pre-service content.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/services/5.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">6.</span><span class="step-text">Then select which sermon to play. "Latest Sermon" automatically plays your most recently added video. "Current live service" plays your current live stream from YouTube. You can also choose any sermon you have already saved. When you're done, click "Save".</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/services/6.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">7.</span><span class="step-text">Your service is now scheduled and will automatically update each week. You can add as many services as you need for your church.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/services/7.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">8.</span><span class="step-text">Visitors will see the next scheduled service time when they visit your streaming page.</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1/streaming/services/8.png" onclick="showModal(this.src)"></div>
 </div>
 </div>
 
