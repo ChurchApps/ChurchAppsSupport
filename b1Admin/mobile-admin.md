@@ -3,6 +3,7 @@ layout: page
 app: b1Admin
 section: "02 Admin"
 title: Mobile Admin
+order: 1
 ---
 
 # Mobile Admin

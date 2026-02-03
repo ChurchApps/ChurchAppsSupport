@@ -3,6 +3,7 @@ layout: page
 app: b1Admin
 section: "02 Admin"
 title: Stream - Setup
+order: 2
 ---
 
 # Configuring Online Streaming and Sermon Videos

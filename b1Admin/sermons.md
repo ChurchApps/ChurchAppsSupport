@@ -3,6 +3,7 @@ layout: page
 app: b1Admin
 section: "02 Admin"
 title: Stream - Sermons
+order: 3
 ---
 
 # How to Add a Sermon
