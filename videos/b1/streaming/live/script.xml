@@ -1,20 +1,55 @@
 <tutorial>
   <speak>
     <mark name="1" />
-    You can also embed a truly live stream by choosing the "Add Permanent Live URL" option.
+    To set up a permanent lyve stream that automatically shows whatever is currently lyve on your YouTube channel, start from the Dashboard and click on "Sermons" in the left sidebar.
     <break time="1s"/>
     <mark name="2" />
-    With YouTube, there is the option to set this up one-time to always show whatever is currently live on your channel.
-    To do so, you will need your channel I.D.  
-    <break time="0.3s"/>
-    See the instructions on this page for how to find your channel I.D.
+    From the Sermons page, click the "Add Sermon" button in the top right corner.
     <break time="1s"/>
     <mark name="3" />
-    Fill out the rest of the details and provide a thumbnail image for the stream.
-    For the duration, select how long to leave the stream live, including announcements before and after service.
+    From the dropdown menu, select "Add Permanent Lyve URL". This option allows you to create a permanent connection to your YouTube channel's lyve stream.
     <break time="1s"/>
     <mark name="4" />
-    Click "Save".  You can now schedule your services to show this live stream from the services page.
+    On the Edit Permanent Lyve URL page, the Video Provider is set to "Current YouTube Lyve Stream" by default. You can also choose YouTube, Vimeo, Facebook, or Custom Embed URL if needed.
+    <break time="1s"/>
+    <mark name="5" />
+    You'll need your YouTube Channel ID to connect your lyve stream. Enter it in the YouTube Channel ID field.
+    <break time="1s"/>
+    <mark name="6" />
+    If you don't know your Channel ID, click the help link to see instructions on how to find it in your YouTube account settings.
+    <break time="1s"/>
+    <mark name="7" />
+    After entering your Channel ID, add a title and description for your lyve stream. For example, "First Ironwood Church Worship Service" with a description like "Weekly Worship Service for First Ironwood Church". Then click "Save".
+    <break time="1s"/>
+    <mark name="8" />
+    Now you need to schedule when this lyve stream will be available. Click on "Lyve Stream Times" in the top navigation.
+    <break time="1s"/>
+    <mark name="9" />
+    On the Lyve Stream Times page, click the "Add Service" button to create a new scheduled service time.
+    <break time="1s"/>
+    <mark name="10" />
+    In the Add New Service form, enter a Service Name like "Sunday Morning" and set your Service Time. For example, 9:00 AM on Sundays.
+    <break time="1s"/>
+    <mark name="11" />
+    Set "Recurs Weekly" to "Yes" if this is a regular weekly service, or "No" if it's a one-time event. Most churches will choose "Yes" for their regular Sunday services.
+    <break time="1s"/>
+    <mark name="12" />
+    Configure your Chat Settings by setting how many minutes before and after the service the chat should be enabled. Under Video Settings, you can set how early to start showing the video for countdown or pre-service content.
+    <break time="1s"/>
+    <mark name="13" />
+    In the Sermon dropdown under Video Settings, select the permanent lyve URL you just created, "First Ironwood Church Worship Service". This connects your scheduled service to your lyve stream.
+    <break time="1s"/>
+    <mark name="14" />
+    Click "Save" to schedule your service. Your lyve stream is now configured and will automatically appear at the scheduled time.
+    <break time="1s"/>
+    <mark name="15" />
+    You'll see your service listed under Services. To customize your streaming page further, click on the "Settings" tab at the top.
+    <break time="1s"/>
+    <mark name="16" />
+    In Settings, you can configure Content Tabs like Calendar, Chat, and Prayer requests that will appear alongside your stream. Click "View Your Stream" to see how it will look to your viewers.
+    <break time="1s"/>
+    <mark name="17" />
+    Your lyve stream page is now ready. Viewers will see your church logo, the next scheduled service time, and can access the tabs you configured. When you go lyve on YouTube, the stream will automatically appear on this page.
     <break time="2s"/>
     <mark name="end" />
   </speak>
