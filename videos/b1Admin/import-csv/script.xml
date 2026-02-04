@@ -2,41 +2,50 @@
 <tutorial>
   <speak>
     <mark name="1"/>
-    Let's import your data from Excel or CSV into B1.church Admin. First, make sure your Excel or CSV file is on your desktop.
+    Let's import your data from Excel or CSV into B1.church Admin. Start by clicking Settings in the left sidebar.
     <break time="1s"/>
     <mark name="2"/>
-    In B1.church Admin, go to Settings 
+    Then click Import/Export in the top navigation.
     <break time="1s"/>
     <mark name="3"/>
-    and then to Import/Export.
+    In the Import/Export tool, click the Data Source dropdown and select B1 Import Zip.
     <break time="1s"/>
     <mark name="4"/>
-    Choose B1.church Admin Import Zip from the options.
+    You'll see a link to download sample files. Click here to download the sample B1 import zip file.
     <break time="1s"/>
     <mark name="5"/>
-    Download the sample file to see the required format.
+    Once downloaded, locate the sampleImport zip file on your desktop and unzip it.
     <break time="1s"/>
     <mark name="6"/>
-    Unzip the sample file and open people.csv. Replace the data in this file with your data, but don't change the top row. Save your edited file as people.csv. You can also remove the sample photos and sample data from the other files if you like .
+    Open the unzipped folder. You'll see files like people.csv, households.csv, photos folder, and others. These show you the required format for your data.
     <break time="1s"/>
     <mark name="7"/>
-    Now, create a zip file with your data. On a Mac, highlight the files and drag them to your desktop, then control-click and choose Compress. On a PC, right-click the folder, select Send to, and choose Compressed folder. Save the zip file on your desktop.
+    Open people.csv to see the format. Replace the sample data with your own data, but keep the header row unchanged. Save the file as people.csv You can also edit other CSV files as needed or delete the sample data.
     <break time="1s"/>
     <mark name="8"/>
-    Go back to B1.church Admin and click the upload icon. Upload the zip file you just created. Once uploaded, you'll see your data. Scroll to the bottom and click Continue.
+    If you want to import photos, replace the sample photos with your own photos. Photos are 400 X 300 pixels.  Photo numbers correspond to the importKey column in your people.csv file.  You can delete the sample photos and add your own. Make sure each photo number matches the importKey for the correct person. Now drag all the files to your desktop. When your files are ready, create a new zip file with all the contents. On Mac, select all files, right-click, and choose Compress. On PC, select the folder, right-click, and choose Send to Compressed folder.
     <break time="1s"/>
     <mark name="9"/>
-    Next, we need to import the file into the B1.church Admin database. Click Continue to Destination to continue the import process.
+    Then return to B1 and click Upload.
     <break time="1s"/>
     <mark name="10"/>
-    Now Click Start Transfer to transfer the data
+    In the file picker, select your prepared zip file you just created and click Open.
     <break time="1s"/>
     <mark name="11"/>
-    Let the process run until you see a completion screen. 
+    B1 will process your file and show you a preview of the data. Review the imported records and click Continue to Destination at the bottom.
     <break time="1s"/>
     <mark name="12"/>
-    Click "Go to B1.church Admin" to return to the main application.
+    On the Destination screen, make sure B1 Database is selected. Review the summary showing how many records will be imported.
+    <break time="1s"/>
+    <mark name="13"/>
+    Scroll down and click Start Transfer to begin importing your data.
+    <break time="1s"/>
+    <mark name="14"/>
+    Wait while B1 imports your data. You'll see a progress indicator showing which items are being imported. This may take a few moments depending on how much data you have.
+    <break time="1s"/>
+    <mark name="15"/>
+    When the import is complete, click Go to B1 to return to your B1.church Admin dashboard.
     <break time="1s"/>
     <mark name="end"/>
   </speak>
-</tutorial> 
+</tutorial>
