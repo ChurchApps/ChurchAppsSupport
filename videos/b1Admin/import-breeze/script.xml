@@ -2,29 +2,59 @@
 <tutorial>
   <speak>
     <mark name="1"/>
-    Let's export your data from Breeze and import it into B1.church Admin. You'll need three files for this process: People, Tags, and Contributions. Don't skip any of these files - you need all three to complete the process.
+    Let's import your data from Breeze Church Management into B1.church Admin. First, log into your Breeze account and click the settings gear icon in the upper right corner.
     <break time="1s"/>
     <mark name="2"/>
-    To get these files, go to your Breeze account dashboard, then to 'settings' and 'manage accounts'. Export each file as an .xlsx file separately.
+    From the dropdown menu, select the settings option to manage your organization.
     <break time="1s"/>
     <mark name="3"/>
-    Now, let's create a zip file with these three files. On a Mac, highlight the three files, right-click or control-click, and choose Compress. This will create a file named Archive. Save it somewhere on your computer where you can find it easily.
+    In the left sidebar, click on Export to access the data export options.
     <break time="1s"/>
     <mark name="4"/>
-    On a PC, right-click the three files, select Send to, and then choose Compressed (zipped) folder. A new zipped folder will be created in the same location.
+    Click the Select Data to Export dropdown and choose People, then click the Export button. This will download your people data as an Excel file.
     <break time="1s"/>
     <mark name="5"/>
-    Next, go to B1.church Admin.org and log in. Navigate to Settings, then Import/Export under tools.
+    Next, return to the Select Data to Export dropdown and choose Tags, then click Export to download your tags data.
     <break time="1s"/>
     <mark name="6"/>
-    Upload the Breeze import zip file you created. Once uploaded, you'll see your data. Scroll to the bottom and click continue.
+    Finally, select Contributions from the dropdown and click Export to download your giving data. You now have three Excel files: People, Tags, and Contributions.
     <break time="1s"/>
     <mark name="7"/>
-    At the bottom of the page, click confirm to import the file into the B1.church Admin database.
+    On your desktop, locate the three exported files. Select all three files by highlighting them together.
     <break time="1s"/>
     <mark name="8"/>
-    Let the process run until you see the completion screen. Click "Go to B1.church Admin" to return to the main application.
+    Right-click on the selected files and choose Compress on Mac, or Send to Compressed folder on Windows. This creates a zip file containing all three exports.
+    <break time="1s"/>
+    <mark name="9"/>
+    Now log into B1.church Admin. Click on Settings in the left sidebar.
+    <break time="1s"/>
+    <mark name="10"/>
+    In the Settings page, click on Import/Export button in the upper right corner.
+    <break time="1s"/>
+    <mark name="11"/>
+    The Import/Export tool will open in a new window. Click the Choose One dropdown under Step 1 - Import Source.
+    <break time="1s"/>
+    <mark name="12"/>
+    Select Breeze Import Zip from the dropdown options.
+    <break time="1s"/>
+    <mark name="13"/>
+    Click the Upload button and select the zip file you created in step 8. B1 will process your Breeze data and convert it automatically.
+    <break time="1s"/>
+    <mark name="14"/>
+    Once uploaded, review the preview of your imported data. Check that the people, households, and other information looks correct, then scroll to the bottom and click Continue.
+    <break time="1s"/>
+    <mark name="15"/>
+    In Step 3 - Choose Export Destination, open the dropdown and select B1 Database. This will import your data directly into your B1 church database.
+    <break time="1s"/>
+    <mark name="16"/>
+    Review the summary showing how many people, households, groups, and other items will be imported. When ready, proceed to Step 4.
+    <break time="1s"/>
+    <mark name="17"/>
+    Step 4 shows the Export Progress. You'll see checkmarks appear as each type of data is imported: Campuses, Services, Times, People, Photos, Groups, Group Members, Donations, Attendance, Forms, Questions, Answers, and Form Submissions. Wait for the process to complete. The message says: This process may take some time. It is important that you do not close your browser until it has finished.
+    <break time="1s"/>
+    <mark name="18"/>
+    When all items show checkmarks and the import is complete, click the Go to B1 button in the upper right to return to your B1.church Admin dashboard. Your Breeze data is now successfully imported into B1.
     <break time="1s"/>
     <mark name="end"/>
   </speak>
-</tutorial> 
+</tutorial>
