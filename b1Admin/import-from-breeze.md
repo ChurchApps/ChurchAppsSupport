@@ -5,38 +5,120 @@ section: "12 Data"
 title: Import from Breeze
 ---
 
-# Importing Data from Breeze into B1.church Admin
+# Importing Data from Breeze Church Management into B1.church Admin
 
 <div id="videoContainer">
   <ul id="playlist">
     <li class="active">
-      <a href="/videos/b1Admin/import-breeze/output.mp4">How to Import Data from Breeze into B1.church Admin</a>
+      <a href="/videos/b1Admin/import-breeze/output.mp4" data-steps="import-breeze-steps">How to Import Data from Breeze into B1.church Admin</a>
     </li>
   </ul>
 </div>
 
-## Step-by-Step Instructions
+<style>
+.video-steps { display: none; margin-top: 20px; }
+.video-steps.active { display: block; }
+.step-accordion { border: 1px solid #333; border-radius: 4px; overflow: hidden; }
+.step-header { display: flex; align-items: center; padding: 10px 15px; cursor: pointer; background: #1a1a1a; border-bottom: 1px solid #333; transition: background 0.2s; }
+.step-header:hover { background: #252525; }
+.step-header:last-child { border-bottom: none; }
+.step-num { font-weight: bold; color: #08c; margin-right: 10px; min-width: 30px; }
+.step-text { color: #ccc; flex: 1; }
+.step-arrow { color: #666; transition: transform 0.2s; }
+.step-header.active .step-arrow { transform: rotate(180deg); }
+.step-content { display: none; padding: 15px; background: #121212; border-bottom: 1px solid #333; text-align: center; }
+.step-content.active { display: block; }
+.step-content img { max-width: 100%; cursor: pointer; border: 2px solid #333; border-radius: 4px; }
+.step-content img:hover { border-color: #08c; }
+</style>
 
-# How to Export Data From Breeze.
+<div id="import-breeze-steps" class="video-steps active">
+<h3>Steps</h3>
+<div class="step-accordion">
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">1.</span><span class="step-text">Log into Breeze and click the settings gear icon</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1Admin/import-breeze/1.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">2.</span><span class="step-text">Select settings to manage your organization</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1Admin/import-breeze/2.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">3.</span><span class="step-text">Click Export in the left sidebar</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1Admin/import-breeze/3.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">4.</span><span class="step-text">Select People and click Export</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1Admin/import-breeze/4.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">5.</span><span class="step-text">Select Tags and click Export</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1Admin/import-breeze/5.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">6.</span><span class="step-text">Select Contributions and click Export</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1Admin/import-breeze/6.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">7.</span><span class="step-text">Locate and select all three exported files on your desktop</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1Admin/import-breeze/7.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">8.</span><span class="step-text">Right-click and compress the files into a zip</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1Admin/import-breeze/8.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">9.</span><span class="step-text">Log into B1.church Admin and click Settings</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1Admin/import-breeze/9.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">10.</span><span class="step-text">Click Import/Export button</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1Admin/import-breeze/10.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">11.</span><span class="step-text">Click Choose One dropdown under Step 1 - Import Source</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1Admin/import-breeze/11.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">12.</span><span class="step-text">Select Breeze Import Zip from the dropdown</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1Admin/import-breeze/12.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">13.</span><span class="step-text">Upload the zip file you created</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1Admin/import-breeze/13.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">14.</span><span class="step-text">Review the data preview and click Continue</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1Admin/import-breeze/14.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">15.</span><span class="step-text">Select B1 Database as the export destination</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1Admin/import-breeze/15.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">16.</span><span class="step-text">Review the import summary and proceed to Step 4</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1Admin/import-breeze/16.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">17.</span><span class="step-text">Watch the export progress with checkmarks for all items</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1Admin/import-breeze/17.png" onclick="showModal(this.src)"></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">18.</span><span class="step-text">Click Go to B1 to return to your dashboard</span><span class="step-arrow">▼</span></div>
+  <div class="step-content"><img src="../videos/b1Admin/import-breeze/18.png" onclick="showModal(this.src)"></div>
+</div>
+</div>
 
-1. <img alt="Screen Shot 2023-02-14 at 6 20 24 PM" src="https://user-images.githubusercontent.com/65249159/218885516-805db43d-6720-4746-93b6-277f5337374e.png">
-   Export your Data From Breeze you will need 3 files for this. Do not skip any of these files, you have to have all 3 to complete the process. You will need People, Tags, and Contributions. Export each of these .xlsx files separately. To get here, on your Breeze account from the dashboard go to 'settings' and then to 'manage accounts"
+<script>
+function toggleStep(header) {
+  var content = header.nextElementSibling;
+  var isActive = header.classList.contains('active');
 
-2. Next put those three files into a zip file.
-   On a Mac: Highlight those 3 files and then right-click or control-click on them and choose Compress. This will make a file named Archive. Save it somewhere on your computer where you know where it is.
-   On a PC: Press and hold (or right-click) the three files, select (or point to) Send to, and then select Compressed (zipped) folder. A new zipped folder with the same name is created in the same location.
+  // Close all other steps
+  header.parentElement.querySelectorAll('.step-header').forEach(function(h) {
+    h.classList.remove('active');
+    h.nextElementSibling.classList.remove('active');
+  });
 
-3. <img alt="Screen Shot 2023-02-14 at 6 28 38 PM" src="https://user-images.githubusercontent.com/65249159/218886493-58658f19-7f23-49bc-ac4f-27e711aef1bb.png">
-   Next Head over to B1.church Admin.org and login. Go to Settings / Import Export under tools.
+  // Toggle this one
+  if (!isActive) {
+    header.classList.add('active');
+    content.classList.add('active');
+  }
+}
 
-4. <img alt="Screen Shot 2023-02-14 at 6 31 25 PM" src="https://user-images.githubusercontent.com/65249159/219192090-b8c2a31a-cfa7-4aeb-b1a6-dfc800aa1e46.png">
-   Upload the Breeze import Zip you just made in step 2. Log back into B1.church Admin on the import/export app.
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('#playlist a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      var stepsId = this.getAttribute('data-steps');
+      document.querySelectorAll('.video-steps').forEach(function(el) {
+        el.classList.remove('active');
+      });
+      if (stepsId) {
+        var stepsEl = document.getElementById(stepsId);
+        if (stepsEl) stepsEl.classList.add('active');
+      }
+    });
+  });
+});
+</script>
 
-5. <img alt="Screen Shot 2023-02-14 at 6 33 45 PM" src="https://user-images.githubusercontent.com/65249159/218886969-638072f7-9766-4d69-990f-869d629cae76.png">
-   Once Uploaded you will see your data scroll to the bottom and click continue.
+## Key Features
 
-6. <img alt="Screen Shot 2023-02-14 at 6 54 21 PM" src="https://user-images.githubusercontent.com/65249159/218890226-e861b934-ff86-4db8-9c3b-e07828027863.png">
-   Next, we need to import the file into the B1.church Admin Database. At the bottom of the page, click confirm.
+- **Direct Import**: B1 has a dedicated "Breeze Import Zip" option that automatically converts Breeze data
+- **Three Required Files**: Export People, Tags, and Contributions from Breeze
+- **Complete Data Transfer**: Imports people, photos, groups, donations, attendance, forms, and more
 
-7. <img alt="Screen Shot 2023-02-15 at 5 11 24 PM" src="https://user-images.githubusercontent.com/65249159/219187739-8f430e0f-0bce-4daa-be29-84197a5d4943.png">
-   Let the Process Run until you see a screen like this showing it is completed. Click go to B1.church Admin to get back to B1.church Admin.
+## Related Tutorials
+
+- <a href="/b1Admin/import-csv.html">Import from CSV</a>
+
+## Additional Resources
+
+- [Breeze Export Documentation](https://support.breezechms.com/hc/en-us/articles/360001160713-Exporting-People)
+- [Tithely Export Guide](https://support.tithe.ly/hc/en-us/articles/32166404593175-Exporting-Your-People-Data)
