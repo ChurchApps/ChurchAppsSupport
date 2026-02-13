@@ -38,6 +38,50 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          // Old b1Admin help icon paths (via help= props)
+          { from: '/b1Admin/advanced-search', to: '/docs/b1-admin/people/searching-people' },
+          { from: '/b1Admin/assigning-roles', to: '/docs/b1-admin/settings/roles-permissions' },
+          { from: '/b1Admin/attendance', to: '/docs/b1-admin/attendance/' },
+          { from: '/b1Admin/donations', to: '/docs/b1-admin/donations/' },
+          { from: '/b1Admin/forms', to: '/docs/b1-admin/forms/' },
+          { from: '/b1Admin/giving', to: '/docs/b1-admin/donations/' },
+          { from: '/b1Admin/groups', to: '/docs/b1-admin/groups/' },
+          { from: '/b1Admin/manual-input', to: '/docs/b1-admin/donations/recording-donations' },
+          { from: '/b1Admin/streaming/playlists', to: '/docs/b1-admin/sermons/playlists' },
+          { from: '/b1Admin/streaming/sermons', to: '/docs/b1-admin/sermons/' },
+
+          // Old hardcoded URLs
+          { from: '/b1Admin/plans.html', to: '/docs/b1-admin/serving/plans' },
+          { from: '/b1/admin/youtube-channel-id.html', to: '/docs/b1-admin/sermons/live-streaming' },
+          { from: '/b1/download', to: '/docs/b1-mobile/getting-started/installing' },
+          { from: '/b1/portal/donations', to: '/docs/b1-church/giving/' },
+          { from: '/developer/open-lesson-schema.html', to: '/docs/developer/' },
+
+          // Top-level old section landing page
+          { from: '/b1Admin', to: '/docs/b1-admin/' },
+
+          // Other old Jekyll pages that were migrated
+          { from: '/b1Admin/intro', to: '/docs/b1-admin/introduction' },
+          { from: '/b1Admin/data-security', to: '/docs/b1-admin/settings/data-security' },
+          { from: '/b1Admin/website-initial-setup', to: '/docs/b1-admin/website/initial-setup' },
+          { from: '/b1Admin/website-initial-setup.html', to: '/docs/b1-admin/website/initial-setup' },
+          { from: '/b1Admin/sermons', to: '/docs/b1-admin/sermons/' },
+          { from: '/b1Admin/sermons.html', to: '/docs/b1-admin/sermons/' },
+          { from: '/b1Admin/stream-setup', to: '/docs/b1-admin/sermons/live-streaming' },
+          { from: '/b1Admin/donation-report', to: '/docs/b1-admin/donations/donation-reports' },
+          { from: '/b1Admin/donation-report.html', to: '/docs/b1-admin/donations/donation-reports' },
+          { from: '/b1Admin/group-roster', to: '/docs/b1-admin/groups/group-members' },
+          { from: '/b1Admin/ai-search', to: '/docs/b1-admin/people/ai-search' },
+        ],
+      },
+    ],
+  ],
+
   presets: [
     [
       'classic',
