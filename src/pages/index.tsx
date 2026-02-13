@@ -14,10 +14,10 @@ function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div style={{display: 'flex', gap: '1rem', marginTop: '1.5rem'}}>
-          <Link className="button button--primary button--lg" to="/docs/getting-started">
+          <Link className="button button--primary button--lg" to="/docs/getting-started/">
             Get Started
           </Link>
-          <Link className="button button--secondary button--lg" to="/docs/b1-admin">
+          <Link className="button button--secondary button--lg" to="/docs/b1-admin/">
             B1 Admin Docs
           </Link>
         </div>
@@ -30,32 +30,32 @@ const products = [
   {
     title: 'B1 - Admin',
     description: 'Church management dashboard for people, groups, attendance, donations, and more.',
-    link: '/docs/b1-admin',
+    link: '/docs/b1-admin/',
   },
   {
     title: 'B1 - Website',
     description: 'Public-facing church website and member portal.',
-    link: '/docs/b1-church',
+    link: '/docs/b1-church/',
   },
   {
     title: 'B1 - Mobile',
     description: 'Mobile app for church members on iOS and Android.',
-    link: '/docs/b1-mobile',
+    link: '/docs/b1-mobile/',
   },
   {
     title: 'B1 - Checkin',
     description: 'Self-service check-in kiosk app for Android tablets.',
-    link: '/docs/b1-checkin',
+    link: '/docs/b1-checkin/',
   },
   {
     title: 'Lessons.church',
     description: 'Free church curriculum and lesson management.',
-    link: '/docs/lessons-church',
+    link: '/docs/lessons-church/',
   },
   {
     title: 'FreePlay',
     description: 'TV app for displaying lesson content on classroom screens.',
-    link: '/docs/freeplay',
+    link: '/docs/freeplay/',
   },
 ];
 

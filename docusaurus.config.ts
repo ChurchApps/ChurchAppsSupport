@@ -124,12 +124,12 @@ const config: Config = {
           label: 'Products',
           position: 'left',
           items: [
-            { label: 'B1 - Admin', to: '/docs/b1-admin' },
-            { label: 'B1 - Website', to: '/docs/b1-church' },
-            { label: 'B1 - Mobile', to: '/docs/b1-mobile' },
-            { label: 'B1 - Checkin', to: '/docs/b1-checkin' },
-            { label: 'Lessons.church', to: '/docs/lessons-church' },
-            { label: 'FreePlay', to: '/docs/freeplay' },
+            { label: 'B1 - Admin', to: '/docs/b1-admin/' },
+            { label: 'B1 - Website', to: '/docs/b1-church/' },
+            { label: 'B1 - Mobile', to: '/docs/b1-mobile/' },
+            { label: 'B1 - Checkin', to: '/docs/b1-checkin/' },
+            { label: 'Lessons.church', to: '/docs/lessons-church/' },
+            { label: 'FreePlay', to: '/docs/freeplay/' },
           ],
         },
         {
@@ -150,9 +150,9 @@ const config: Config = {
         {
           title: 'Documentation',
           items: [
-            { label: 'Getting Started', to: '/docs/getting-started' },
-            { label: 'B1 Admin', to: '/docs/b1-admin' },
-            { label: 'Developer Docs', to: '/docs/developer' },
+            { label: 'Getting Started', to: '/docs/getting-started/' },
+            { label: 'B1 Admin', to: '/docs/b1-admin/' },
+            { label: 'Developer Docs', to: '/docs/developer/' },
           ],
         },
         {
