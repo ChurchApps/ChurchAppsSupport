@@ -13,4 +13,4 @@ When you create an account on any LCS website, you can log in using the same inf
 3. Enter your new password and verify it, then click save.
 4. Log out and log back in with your new password.
 
-It’s that easy. Your password has been changed. If you have forgotten your password and need to reset it instead. See the [How to Reset Your Password](reset-passwords.md)
+It’s that easy. Your password has been changed. If you have forgotten your password and need to reset it instead. See the [How to Reset Your Password](out%20of%20date%20reset-passwords.md)

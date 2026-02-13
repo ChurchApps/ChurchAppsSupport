@@ -245,4 +245,4 @@ Check your YouTube channel for old or upcoming scheduled livestreams and delete 
 
 ## Related Tutorials
 - <a href="/b1Admin/youtube-channel-id.html">Get Your YouTube Channel ID</a>
-- <a href="/b1Admin/website-setup.html">Website Builder</a>
+- <a href="/b1Admin/website-initial-setup.html">Website Builder</a>

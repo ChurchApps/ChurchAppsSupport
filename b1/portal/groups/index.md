@@ -9,6 +9,6 @@ title: Groups
 
 <div id="videoContainer">
   <ul id="playlist">
-      <li class="active"><a href="../../videos/b1/groups/output.mp4">Working with Groups</a></li>
+      <li class="active"><a href="/videos/b1/groups/output.mp4">Working with Groups</a></li>
   </ul>
 </div>

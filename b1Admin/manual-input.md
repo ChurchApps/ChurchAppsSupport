@@ -100,4 +100,4 @@ document.addEventListener('DOMContentLoaded', function() {
 ## Related Tutorials
 
 - <a href="/b1Admin/donation-report.html">Donation Report</a>
-- <a href="/b1Admin/reports.html">Reports</a>
+- <a href="/b1Admin/giving.html">Giving Setup</a>

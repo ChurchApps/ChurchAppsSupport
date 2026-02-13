@@ -9,7 +9,7 @@ title: A I Search
 
 <div id="videoContainer">
   <ul id="playlist">
-      <li class="active"><a href="\videos\b1Admin\aiSearch\output.mp4">Using A I Search</a></li>
+      <li class="active"><a href="/videos/b1Admin/aiSearch/output.mp4">Using A I Search</a></li>
   </ul>
 </div>
 

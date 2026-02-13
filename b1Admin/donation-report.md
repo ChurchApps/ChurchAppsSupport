@@ -144,5 +144,5 @@ document.addEventListener('DOMContentLoaded', function() {
 ## Related Tutorials
 
 - <a href="/b1Admin/manual-input.html">Manual Input</a>
-- <a href="/b1Admin/reports.html">Reports</a>
+- <a href="/b1Admin/giving.html">Giving Setup</a>
 

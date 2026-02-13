@@ -9,7 +9,7 @@ title: Plans
 
 <div id="videoContainer">
   <ul id="playlist">
-      <li class="active"><a href="../../videos/b1/plans/output.mp4">Managing Plans</a></li>
+      <li class="active"><a href="/videos/b1/plans/output.mp4">Managing Plans</a></li>
   </ul>
 </div>
 
