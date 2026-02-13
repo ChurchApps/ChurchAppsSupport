@@ -63,7 +63,8 @@ const config: Config = {
       title: 'ChurchApps Support',
       logo: {
         alt: 'ChurchApps',
-        src: 'img/logo.png',
+        src: 'img/logo-light.png',
+        srcDark: 'img/logo.png',
       },
       items: [
         {
