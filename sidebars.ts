@@ -16,6 +16,7 @@ const sidebars: SidebarsConfig = {
       label: 'B1 - Admin',
       link: { type: 'doc', id: 'b1-admin/index' },
       items: [
+        'b1-admin/introduction',
         {
           type: 'category',
           label: 'People',
@@ -133,6 +134,7 @@ const sidebars: SidebarsConfig = {
             'b1-admin/settings/church-settings',
             'b1-admin/settings/roles-permissions',
             'b1-admin/settings/mobile-app',
+            'b1-admin/settings/data-security',
           ],
         },
         {
@@ -338,6 +340,7 @@ const sidebars: SidebarsConfig = {
       label: 'Lessons.church',
       link: { type: 'doc', id: 'lessons-church/index' },
       items: [
+        'lessons-church/statement-of-faith',
         {
           type: 'category',
           label: 'Getting Started',
