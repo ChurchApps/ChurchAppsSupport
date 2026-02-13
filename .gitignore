@@ -1,5 +1,8 @@
 _site
 .jekyll-cache
-/admin/node_modules
 node_modules
 .claude
+build
+.docusaurus
+scripts/output/
+.cache-loader
