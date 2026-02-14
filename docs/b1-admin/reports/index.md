@@ -4,7 +4,11 @@ title: "Reports"
 
 # Reports
 
-The Reports page gives you quick access to pre-built reports that help you understand your church data. Use these reports to track trends, plan events, and make informed decisions.
+<div class="article-intro">
+
+The Reports page gives you quick access to pre-built reports that help you understand your church data. Use these reports to track attendance trends, monitor giving activity, and stay connected with your congregation through birthday celebrations.
+
+</div>
 
 ## Available Reports
 
@@ -25,6 +29,10 @@ The Reports page displays five report cards. Click any card to open the report w
 
 :::tip
 Run reports regularly to stay on top of attendance trends, upcoming birthdays, and giving patterns. This data helps you plan ministries and outreach more effectively.
+:::
+
+:::info
+Report data depends on consistent data entry. Make sure your team is [tracking attendance](../attendance/tracking-attendance.md), [recording donations](../donations/recording-donations.md), and keeping [people records](../people/adding-people.md) up to date for the most accurate results.
 :::
 
 ## Learn More

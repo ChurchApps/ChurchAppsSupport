@@ -1,6 +1,14 @@
+---
+title: "Shared Libraries"
+---
+
 # Shared Libraries
 
-ChurchApps shared code is published to npm under the `@churchapps/*` scope. These packages are consumed by all ChurchApps projects as regular npm dependencies.
+<div class="article-intro">
+
+ChurchApps shared code is published to npm under the `@churchapps/*` scope. These packages provide common utilities, server-side helpers, and React components that are consumed by all ChurchApps projects as regular npm dependencies.
+
+</div>
 
 ## Packages
 
@@ -25,7 +33,7 @@ cd ../Api && npm link @churchapps/helpers
 This creates a symlink from the consuming project's `node_modules/@churchapps/helpers` to your local build output, so changes are reflected immediately after rebuilding.
 
 :::tip
-Remember to run `npm run build` in the library project after making changes — the consuming project reads from the compiled `dist/` folder, not the source.
+Remember to run `npm run build` in the library project after making changes -- the consuming project reads from the compiled `dist/` folder, not the source.
 :::
 
 :::warning

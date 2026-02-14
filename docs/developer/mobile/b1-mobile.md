@@ -1,17 +1,23 @@
+---
+title: "B1 Mobile"
+---
+
 # B1 Mobile
 
-B1 Mobile is the primary member-facing mobile app for ChurchApps, built with React Native and Expo.
+<div class="article-intro">
 
-## Prerequisites
+B1 Mobile is the primary member-facing mobile app for ChurchApps, built with React Native and Expo. It allows church members to view directories, access giving, check attendance, receive notifications, and interact with their church community.
 
-:::info
-Requires Expo CLI and either Android Studio (for Android emulator) or Xcode (for iOS simulator).
-:::
+</div>
 
-- **Node.js** (see root setup guide for version)
-- **Expo CLI** (`npm install -g expo-cli`)
-- **Android Studio** — for Android emulator and builds
-- **Xcode** — for iOS simulator and builds (macOS only)
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Install **Node.js** and **Expo CLI** -- see [Prerequisites](../setup/prerequisites)
+- Install **Android Studio** (for Android emulator) or **Xcode** (for iOS simulator)
+- Configure your API target (staging or local) -- see [Environment Variables](../setup/environment-variables)
+
+</div>
 
 ## Setup
 
@@ -27,7 +33,7 @@ Requires Expo CLI and either Android Studio (for Android emulator) or Xcode (for
    cd B1Mobile && npm install
    ```
 
-3. Configure environment variables — copy the sample file and update the API endpoints:
+3. Configure environment variables -- copy the sample file and update the API endpoints:
 
    ```bash
    cp dotenv.sample.txt .env
@@ -38,6 +44,10 @@ Requires Expo CLI and either Android Studio (for Android emulator) or Xcode (for
    ```bash
    npm start
    ```
+
+:::tip
+You can use the **Expo Go** app on a physical device for quick testing without setting up Android Studio or Xcode.
+:::
 
 ## Environment Variables
 
@@ -93,6 +103,11 @@ To push an over-the-air update (without going through app store review):
 npm run update:production
 ```
 
-:::tip
+:::info
 OTA updates are ideal for JavaScript-only changes. If you modify native code or dependencies, you must submit a full store build instead.
 :::
+
+## Related Articles
+
+- **[Mobile Deployment](../deployment/mobile)** -- Full guide to building, submitting, and deploying mobile apps
+- **[Environment Variables](../setup/environment-variables)** -- Complete reference for mobile environment configuration

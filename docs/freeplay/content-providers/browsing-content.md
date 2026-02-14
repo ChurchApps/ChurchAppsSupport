@@ -4,7 +4,19 @@ title: "Browsing and Downloading Content"
 
 # Browsing and Downloading Content
 
-Once you have connected to a content provider, you can browse its library, download files, and play them on your TV.
+<div class="article-intro">
+
+Once you have connected to a content provider, you can browse its library, download files, and play them on your TV. The content browser provides a visual grid of folders and files that you navigate with your TV remote.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Connect to at least one content provider -- see [Connecting to Providers](./connecting-providers)
+- Have your TV remote ready for navigation
+
+</div>
 
 ## The Content Browser
 
@@ -49,6 +61,10 @@ Playback works the same way as lesson playback. Use these controls:
 
 When you exit the player, you return to the content browser at the root level of the current provider.
 
+:::info
+For a complete reference of all player controls, see [Playing Lessons](../classroom-mode/playing-lessons).
+:::
+
 ## Switching Between Providers
 
 Connected providers appear as items in the sidebar on the left. To switch to a different provider:
@@ -57,6 +73,6 @@ Connected providers appear as items in the sidebar on the left. To switch to a d
 2. Select the provider you want to browse
 3. The content browser refreshes with that provider's library
 
-:::note
+:::warning
 If a folder shows "No content available," the provider does not have any items at that level. Try navigating to a different folder or checking back later.
 :::

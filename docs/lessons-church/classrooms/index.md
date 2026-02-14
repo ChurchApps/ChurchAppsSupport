@@ -4,7 +4,11 @@ title: "Classrooms"
 
 # Classrooms
 
-Classrooms are the foundation of how you organize teaching at your church in Lessons.church. A classroom represents a physical or virtual room where lessons are taught -- for example, "Preschool Room," "Elementary K-2," or "Adult Bible Study."
+<div class="article-intro">
+
+Classrooms are the foundation of how you organize teaching at your church in Lessons.church. A classroom represents a physical or virtual room where lessons are taught -- for example, "Preschool Room," "Elementary K-2," or "Adult Bible Study." This section covers creating classrooms and scheduling lessons to them.
+
+</div>
 
 ## Why Classrooms Matter
 
@@ -14,18 +18,18 @@ When you set up classrooms, you create a clear structure for your children's min
 
 - **Create unlimited classrooms** -- Set up as many classrooms as your church needs. There is no limit, so you can have separate classrooms for every age group, campus, or program.
 - **Schedule lessons** -- Assign specific lessons to each classroom on specific dates. Your schedule shows both past and upcoming lessons at a glance.
-- **Customize content** -- Tailor lesson content for each classroom so volunteers only see what is relevant to their age group.
+- **Customize content** -- Tailor lesson content for each classroom so volunteers only see what is relevant to their age group. See [Customization](../customization/index.md) for details.
 
 ## How Classrooms Fit Together
 
 Classrooms connect the lesson content on Lessons.church to your church's real-world teaching schedule. Here is the typical workflow:
 
-1. Browse the available programs and studies on Lessons.church.
+1. [Browse](../browsing/index.md) the available programs and studies on Lessons.church.
 2. Set up your classrooms to match your church's rooms and age groups.
 3. Schedule lessons to each classroom for upcoming dates.
 4. Volunteers open their classroom to see what is scheduled and prepare.
 
 ## Next Steps
 
-- **[Setting Up Classrooms](./setting-up-classrooms)** -- Learn how to create and manage your classrooms from the portal.
-- **[Scheduling Lessons](./scheduling-lessons)** -- Add lessons to your classroom schedule so your team knows what is coming up.
+- [Setting Up Classrooms](./setting-up-classrooms.md) -- Learn how to create and manage your classrooms from the portal
+- [Scheduling Lessons](./scheduling-lessons.md) -- Add lessons to your classroom schedule so your team knows what is coming up

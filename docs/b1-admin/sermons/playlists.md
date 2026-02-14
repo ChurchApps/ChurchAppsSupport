@@ -4,7 +4,19 @@ title: "Playlists"
 
 # Playlists
 
+<div class="article-intro">
+
 Playlists let you organize your sermons into series or collections. When visitors browse your sermon library on your B1.church website, playlists help them find and follow along with a complete sermon series in the right order.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- You need the **contentApi.streamingServices.edit** permission. See [Roles & Permissions](../settings/roles-permissions.md) if you do not have access.
+- Have a name, description, and thumbnail image ready for your playlist
+
+</div>
 
 ## Viewing Playlists
 
@@ -21,12 +33,16 @@ Playlists let you organize your sermons into series or collections. When visitor
 5. Upload a **thumbnail image** to represent the series visually.
 6. Click **Save** to create your playlist.
 
-## Adding Sermons to a Playlist
-
-When you add or edit a sermon, you assign it to a playlist using the **Playlist** dropdown. All sermons assigned to the same playlist are grouped together and displayed in order on your website.
-
 :::tip
 Create your playlists first before adding sermons. This way you can assign each sermon to the correct playlist as you go, rather than reorganizing later.
+:::
+
+## Adding Sermons to a Playlist
+
+When you [add or edit a sermon](managing-sermons), you assign it to a playlist using the **Playlist** dropdown. All sermons assigned to the same playlist are grouped together and displayed in order on your website.
+
+:::info
+You can also assign sermons to playlists during [Bulk Import](bulk-import). When importing from YouTube or Vimeo, select a playlist from the **Import Into Playlist** dropdown before clicking **Import**.
 :::
 
 ## How Playlists Appear on Your Website

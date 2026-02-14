@@ -4,7 +4,19 @@ title: "Managing Your Profile"
 
 # Managing Your Profile
 
+<div class="article-intro">
+
 The Profile page lets you edit your personal account settings. Your profile is shared across all ChurchApps products, so any changes you make here will be reflected everywhere you use ChurchApps.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- You must be logged in to your ChurchApps account
+- Have your new email address or password ready if you plan to update them
+
+</div>
 
 ## Profile Information
 
@@ -45,10 +57,18 @@ Your theme preference is saved to your account and will apply across all your se
 
 At the bottom of the Profile page, you will find the option to permanently delete your account. This action removes your account and associated data and cannot be undone.
 
-:::note
-If you are a **Domain Admin**, make sure to transfer administrative responsibilities to another user before deleting your account.
+:::warning
+Account deletion is permanent and cannot be reversed. Make sure you truly want to remove your account before proceeding.
 :::
 
-:::note
+:::info
+If you are a **Domain Admin**, make sure to transfer administrative responsibilities to another user before deleting your account. See [Roles & Permissions](../settings/roles-permissions.md) for details on managing admin roles.
+:::
+
+:::info
 Profile editing is disabled in demo mode. If you are using a demo account, you will not be able to make changes to your profile settings.
 :::
+
+## Next Steps
+
+- [Managing Devices](./devices.md) -- View and manage your connected ChurchAppsPlayer devices

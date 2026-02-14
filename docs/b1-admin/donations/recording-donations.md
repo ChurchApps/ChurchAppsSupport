@@ -4,7 +4,20 @@ title: "Recording Donations"
 
 # Recording Donations
 
-Recording donations in B1 Admin is done through the Batches system. You create a batch to represent a collection (such as a Sunday offering), then add individual donations to that batch. This page walks you through the full process.
+<div class="article-intro">
+
+Recording donations in B1 Admin is done through the Batches system. You create a batch to represent a collection (such as a Sunday offering), then add individual donations to that batch. This keeps your giving records organized and easy to reconcile.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Set up your [funds](funds.md) so you can assign donations to the correct categories
+- Create a [batch](batches.md) to hold the donations you are about to enter
+- Make sure the donors are in your [people directory](../people/adding-people.md) so you can look them up when entering gifts
+
+</div>
 
 ## Creating a Batch and Adding Donations
 
@@ -33,10 +46,19 @@ Sometimes a single donor gives to more than one fund in one transaction. To hand
 2. In the edit form, add amounts to different funds. The total will automatically calculate from the individual fund amounts.
 3. Click **Save** to update the donation.
 
+:::info
+Splitting donations across funds is common when a donor writes a single check designated for multiple purposes, such as General Fund and Missions.
+:::
+
 ## Editing or Removing Donations
 
 To edit a donation, click the **Edit** button on its row in the batch. You can change the date, amount, fund, payment method, or any other detail. Click **Save** when you are done.
 
-:::note
-The batch page header updates automatically to show the total number of donations and the combined dollar amount as you add or edit entries.
+:::tip
+The batch page header updates automatically to show the total number of donations and the combined dollar amount as you add or edit entries. Use this to reconcile against your deposit slip.
 :::
+
+## Next Steps
+
+- Review your entries using [Donation Reports](donation-reports.md) to verify accuracy
+- At year-end, generate [Giving Statements](giving-statements.md) for your donors

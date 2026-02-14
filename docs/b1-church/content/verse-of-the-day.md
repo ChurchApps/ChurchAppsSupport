@@ -4,7 +4,19 @@ title: "Verse of the Day"
 
 # Verse of the Day
 
+<div class="article-intro">
+
 The Verse of the Day page displays a daily Bible verse as a beautifully formatted image. It is a simple way to start your day with Scripture or find encouragement throughout the week.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- No login is required to view the Verse of the Day. The page is publicly accessible.
+- Your church must have added a Verse of the Day page to their site navigation.
+
+</div>
 
 ## Viewing the Verse
 
@@ -23,6 +35,10 @@ The verse image automatically adjusts to fit your screen. Depending on your devi
 - **Portrait (9:16)** -- Optimized for phones held vertically
 
 The page detects your screen dimensions and selects the best format, so the verse always looks good regardless of how you are viewing it. If you resize your browser window, the image will update to match the new dimensions.
+
+:::tip
+Make it a daily habit to check the Verse of the Day, then explore the passage further in the [Bible reader](./bible.md).
+:::
 
 ## Availability
 

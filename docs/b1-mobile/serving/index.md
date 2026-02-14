@@ -4,7 +4,11 @@ title: "Serving"
 
 # Serving
 
+<div class="article-intro">
+
 The **Serving** section in B1 Mobile gives you a quick and easy way to stay on top of your serving commitments. Whether you are on the worship team, greeting at the door, or helping with kids ministry, this is where you can see when you are scheduled and what your role is.
+
+</div>
 
 ## What You Will Find
 
@@ -14,12 +18,12 @@ The **Serving** section in B1 Mobile gives you a quick and easy way to stay on t
 
 ## Getting Started
 
-To view your serving schedule, tap **Serving** in the bottom navigation of the app. You must be logged in to access your assignments. If you are not signed in, you will be prompted to log in first.
+To view your serving schedule, tap **Serving** in the bottom navigation of the app. You must be logged in to access your assignments. If you are not signed in, you will be prompted to [log in](../getting-started/logging-in) first.
 
 :::info
 You will only see plans that you have been assigned to. If you do not see any assignments, it means you have not been added to a serving team yet. Reach out to your church administrator or ministry leader to get involved.
 :::
 
-## Sub-Sections
+## Next Steps
 
-- **[Viewing Plans](./viewing-plans)** -- Learn how to browse your upcoming and past plans and view the full details of each one.
+- [Viewing Plans](./viewing-plans) -- Learn how to browse your upcoming and past plans and view the full details of each one

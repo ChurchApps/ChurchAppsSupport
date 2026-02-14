@@ -4,7 +4,11 @@ title: "Content"
 
 # Content
 
+<div class="article-intro">
+
 B1 Mobile gives you a central place to access all the content your church shares, right from your phone. Depending on what your church has configured, you may have access to sermons, live streaming, Bible reading, a daily verse, and lesson materials -- all without leaving the app.
+
+</div>
 
 ## Available Content Features
 
@@ -32,10 +36,14 @@ Access your church's curriculum and learning materials through the embedded Less
 
 Content features are available through the drawer menu in the app. Your church administrator decides which content features are enabled, so you may not see all of the options listed above. If a particular feature is missing, your church may not have it configured yet.
 
+:::info
+Content features are configured by your church administrator through [B1 Admin](../../b1-admin/). If you do not see a feature you expect, contact your church office.
+:::
+
 ## Next Steps
 
-- [Sermons](sermons) -- Browse and watch recorded sermons
-- [Live Streaming](live-streaming) -- Watch live broadcasts
-- [Bible](bible) -- Read Scripture in the built-in reader
-- [Verse of the Day](verse-of-the-day) -- See today's daily verse
-- [Lessons](lessons) -- Access curriculum and learning materials
+- [Sermons](./sermons) -- Browse and watch recorded sermons
+- [Live Streaming](./live-streaming) -- Watch live broadcasts
+- [Bible](./bible) -- Read Scripture in the built-in reader
+- [Verse of the Day](./verse-of-the-day) -- See today's daily verse
+- [Lessons](./lessons) -- Access curriculum and learning materials

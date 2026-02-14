@@ -1,6 +1,22 @@
+---
+title: "Database"
+---
+
 # Database
 
+<div class="article-intro">
+
 The ChurchApps API uses a **database-per-module** architecture. Each of the six modules has its own MySQL database with an independent connection pool, providing clear data boundaries while keeping everything within a single deployment.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Install **MySQL 8.0+** -- see [Prerequisites](../setup/prerequisites)
+- Configure database connection strings in your `.env` file -- see [Environment Variables](../setup/environment-variables)
+
+</div>
 
 ## Architecture Overview
 
@@ -39,7 +55,7 @@ MESSAGING_DB=mysql://root:password@localhost:3306/churchapps_messaging
 DOING_DB=mysql://root:password@localhost:3306/churchapps_doing
 ```
 
-:::note
+:::info
 In production, connection strings are stored in AWS SSM Parameter Store and read by the `Environment` class at startup.
 :::
 
@@ -104,3 +120,8 @@ const people = await repos.person.loadByChurchId(churchId);
 :::warning
 Always include `churchId` in your queries to maintain multi-tenant isolation. Never query across tenants unless you have a specific, authorized reason to do so.
 :::
+
+## Related Articles
+
+- **[Module Structure](./module-structure)** -- How controllers and repositories are organized within each module
+- **[Local API Setup](./local-setup)** -- Full step-by-step setup guide

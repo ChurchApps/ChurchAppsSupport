@@ -1,6 +1,14 @@
+---
+title: "Deployment"
+---
+
 # Deployment
 
-ChurchApps uses different deployment strategies depending on the project type.
+<div class="article-intro">
+
+ChurchApps uses different deployment strategies depending on the project type. APIs deploy to AWS Lambda, web apps deploy as static sites to S3 with CloudFront, and mobile apps are built and distributed through Expo EAS and the app stores.
+
+</div>
 
 ## Deployment by Project Type
 

@@ -4,7 +4,19 @@ title: "Donation Summary"
 
 # Donation Summary
 
+<div class="article-intro">
+
 The Donation Summary report gives you a clear picture of your church's giving activity. Use it to track donation totals, monitor giving trends, and prepare financial reports for your leadership team.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Ensure donations are being [recorded consistently](../donations/recording-donations.md) in your system
+- You need the appropriate [permissions](../settings/roles-permissions.md) to access financial reports
+
+</div>
 
 ## Running the Report
 
@@ -34,6 +46,6 @@ The Donation Summary report includes:
 Run this report monthly to stay informed about your church's financial health. Comparing month-over-month data helps you spot trends early.
 :::
 
-:::note
-Donation data comes from recorded contributions in your system. Make sure donations are entered consistently, whether through online giving, check processing, or manual entry, for the most accurate reports.
+:::warning
+Donation data comes from recorded contributions in your system. Make sure donations are entered consistently -- whether through online giving, check processing, or manual entry -- for the most accurate reports. See [Recording Donations](../donations/recording-donations.md) for details.
 :::

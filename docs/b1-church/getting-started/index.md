@@ -4,7 +4,11 @@ title: "Getting Started"
 
 # Getting Started with B1.church
 
+<div class="article-intro">
+
 B1.church is your church's online home. It is where you go to stay connected with your congregation, view updates, give online, check in for services, and much more. This section walks you through the basics of accessing and using the member portal.
+
+</div>
 
 ## Accessing Your Church's Site
 

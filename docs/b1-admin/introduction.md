@@ -4,7 +4,11 @@ title: Introduction to B1.church
 
 # Welcome to B1.church Admin!
 
-Thank you for choosing B1.church! We're excited to help you manage your church more effectively. This introduction will walk you through the basics of getting started with the B1.church Admin platform.
+<div class="article-intro">
+
+Thank you for choosing B1.church! This introduction walks you through the basics of getting started with the B1.church Admin platform, from signing in and navigating the dashboard to setting up your church's information and exploring the available tools.
+
+</div>
 
 For further support, please email [support@churchapps.org](mailto:support@churchapps.org).
 
@@ -28,6 +32,10 @@ For further support, please email [support@churchapps.org](mailto:support@church
 9. Switch back to B1.church by clicking the arrow next to your profile picture and choosing **Switch App** again.
 10. You can now enter B1.church through the **member portal** or the **admin portal**. The member portal allows you to see how B1.church looks to your members, view your groups, and manage your personal donations.
 
+:::tip
+Start with the [Settings](./settings/) page to configure your church name, branding, and team permissions. This ensures everything else you set up will display correctly.
+:::
+
 ## Next Steps
 
 After watching this introduction, explore these key features:
@@ -36,3 +44,5 @@ After watching this introduction, explore these key features:
 - [Groups](./groups/) -- Set up and manage church groups
 - [Serving Plans](./serving/plans) -- Organize your serving ministry
 - [Attendance](./attendance/) -- Track attendance and check-in
+- [Website](./website/) -- Build and customize your church website
+- [Settings](./settings/) -- Configure your church information and permissions

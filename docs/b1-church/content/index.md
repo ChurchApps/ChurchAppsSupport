@@ -4,7 +4,11 @@ title: "Content"
 
 # Content
 
+<div class="article-intro">
+
 B1.church gives your congregation a central place to access the content your church shares. Depending on what your church has configured, you may have access to sermons, live streaming, Bible reading, a daily verse, and lesson materials -- all from within the member portal.
+
+</div>
 
 ## Available Content Features
 
@@ -32,10 +36,14 @@ Access your church's curriculum and learning materials through the embedded Less
 
 Content pages are available through your church's site navigation. Your church administrator decides which content features are enabled and how they appear in the menu. If you do not see a particular content feature listed above, it may not be configured for your church.
 
+:::info
+Some content features (like [Lessons](./lessons.md)) require you to be [logged in](../getting-started/logging-in.md), while others (like [Sermons](./sermons.md) and the [Bible](./bible.md)) are available publicly.
+:::
+
 ## Next Steps
 
-- [Sermons](sermons) -- Browse and watch recorded sermons
-- [Live Streaming](live-streaming) -- Watch live broadcasts
-- [Bible](bible) -- Read Scripture in the built-in reader
-- [Verse of the Day](verse-of-the-day) -- See today's daily verse
-- [Lessons](lessons) -- Access curriculum and learning materials
+- [Sermons](./sermons.md) -- Browse and watch recorded sermons
+- [Live Streaming](./live-streaming.md) -- Watch live broadcasts
+- [Bible](./bible.md) -- Read Scripture in the built-in reader
+- [Verse of the Day](./verse-of-the-day.md) -- See today's daily verse
+- [Lessons](./lessons.md) -- Access curriculum and learning materials

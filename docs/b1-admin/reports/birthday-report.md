@@ -4,7 +4,19 @@ title: "Birthday Report"
 
 # Birthday Report
 
+<div class="article-intro">
+
 The Birthday Report helps you stay connected with your congregation by showing members with upcoming birthdays. Use it to plan celebrations, send cards, or make announcements during services.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Ensure birth dates are entered on each person's profile. See [Adding People](../people/adding-people.md) for details.
+- You need the appropriate [permissions](../settings/roles-permissions.md) to access reports
+
+</div>
 
 ## Running the Report
 
@@ -33,6 +45,6 @@ Results are listed within the date range you selected, making it easy to see who
 Run this report at the beginning of each month to plan ahead. You can set the date range to cover the entire month so you have time to prepare cards or announcements.
 :::
 
-:::note
-Birthday data comes from the birth date field on each person's profile. Make sure your membership records are up to date for accurate results.
+:::info
+Birthday data comes from the birth date field on each person's profile. Make sure your [membership records](../people/adding-people.md) are up to date for accurate results.
 :::

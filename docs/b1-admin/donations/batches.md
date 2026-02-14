@@ -4,7 +4,19 @@ title: "Donation Batches"
 
 # Donation Batches
 
+<div class="article-intro">
+
 Batches group your donations together for easier tracking and reconciliation. A typical batch represents a single collection, such as a Sunday offering or a special event. Using batches helps you stay organized and makes it simple to verify that your records match the actual deposits.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Make sure you have [set up your funds](funds.md) so they are available when recording donations
+- You will need access to the **Donations** section in B1 Admin
+
+</div>
 
 ## The Batches Page
 
@@ -39,4 +51,4 @@ Name your batches consistently so they are easy to find later. Including the dat
 
 ## Next Steps
 
-Once you have a batch, see [Recording Donations](recording-donations.md) to learn how to add individual donations to it.
+Once you have a batch, see [Recording Donations](recording-donations.md) to learn how to add individual donations to it. You can also [import Stripe transactions](stripe-import.md) to automatically create batches from online giving.

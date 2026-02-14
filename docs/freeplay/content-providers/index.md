@@ -4,13 +4,17 @@ title: "Content Providers"
 
 # Content Providers
 
+<div class="article-intro">
+
 Content providers are external services that supply lesson materials, videos, and images for playback on your TV. FreePlay supports multiple providers, letting you browse and download content from different sources all in one app.
+
+</div>
 
 ## Available Providers
 
 FreePlay currently includes the following providers:
 
-- **Lessons.church** - Free, open-source children's ministry curriculum
+- **[Lessons.church](../../lessons-church/)** - Free, open-source children's ministry curriculum
 - **Bible Project** - Videos and resources exploring the Bible
 - **SignPresenter** - Presentation and signage content for churches
 - **B1.church** - Content from your own B1 church setup

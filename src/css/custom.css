@@ -58,3 +58,46 @@
   color: var(--ifm-color-emphasis-700);
   margin-bottom: 0;
 }
+
+/* Article intro paragraph */
+.article-intro {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.25rem;
+  border-left: 3px solid var(--ifm-color-primary);
+  background: var(--ifm-background-surface-color);
+  border-radius: 0 4px 4px 0;
+}
+
+/* Prerequisites / Before You Begin box */
+.prereqs {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.prereqs h4 {
+  color: var(--ifm-color-primary);
+  font-size: 0.9rem;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.prereqs ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.prereqs li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.prereqs li:last-child {
+  margin-bottom: 0;
+}

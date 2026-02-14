@@ -4,7 +4,11 @@ title: "Giving"
 
 # Giving
 
+<div class="article-intro">
+
 B1 Mobile makes it easy to support your church with a full giving experience right from your phone. Whether you want to make a quick gift, review your giving history, or manage your payment methods, everything is available in one place.
+
+</div>
 
 ## The Giving Tabs
 
@@ -18,6 +22,10 @@ The giving section is organized into four tabs:
 ## How Payments Work
 
 All donations made through B1 Mobile are processed securely through **Stripe**. Your payment information is handled by Stripe's secure infrastructure and is never stored on ChurchApps servers. You can give with confidence knowing your financial details are protected.
+
+:::info
+Your church administrator sets up the available funds and payment processing through [B1 Admin](../../b1-admin/). If you do not see a giving option in the app, your church may not have this feature configured yet.
+:::
 
 ## What You Can Do
 

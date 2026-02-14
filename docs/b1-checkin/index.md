@@ -4,7 +4,11 @@ title: "B1 Church Checkin Overview"
 
 # B1 Church Checkin Overview
 
+<div class="article-intro">
+
 B1 Church Checkin is a self-service kiosk app for Android tablets. It lets church members look up their family, assign children to groups or classes, and print name labels and parent pickup slips -- all without needing a volunteer at the desk.
+
+</div>
 
 ## How It Works
 
@@ -29,6 +33,10 @@ Place an Android tablet in your lobby or welcome area. Members walk up, search f
 
 :::tip
 B1 Church Checkin works best on a 10-inch Android tablet mounted in landscape orientation where families can easily reach it.
+:::
+
+:::info
+Before using B1 Church Checkin, your church administrator needs to configure services, service times, and groups in B1 Admin. See the [attendance setup guide](../b1-admin/attendance/setup.md) for details.
 :::
 
 For support, email [support@churchapps.org](mailto:support@churchapps.org).

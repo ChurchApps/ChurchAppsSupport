@@ -4,7 +4,20 @@ title: "Pairing Your Device"
 
 # Pairing Your Device
 
-To use Plan Mode, you need to pair your TV with a plan type in B1 Admin. FreePlay generates a unique pairing code that links the device to your church's plan.
+<div class="article-intro">
+
+To use Plan Mode, you need to pair your TV with a plan type in B1 Admin. FreePlay generates a unique pairing code that links the device to your church's plan, enabling automatic content delivery each week.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Install and launch FreePlay -- see [Getting Started](../getting-started/)
+- Choose **Pair to Plan** from the [pairing mode screen](../getting-started/pairing-modes.md)
+- Have access to **B1 Admin** on a computer or phone to complete the pairing
+
+</div>
 
 ## Generating the Pairing Code
 
@@ -22,7 +35,7 @@ The code is displayed as individual characters for easy reading from across the 
 3. Enter the pairing code shown on the TV
 4. Save the settings
 
-FreePlay polls the server every few seconds, checking whether the pairing is complete. Once B1 Admin confirms the connection, the TV automatically moves to the plan download screen.
+FreePlay polls the server every few seconds, checking whether the pairing is complete. Once **B1 Admin** confirms the connection, the TV automatically moves to the plan download screen.
 
 ## Downloading Plan Content
 
@@ -46,6 +59,11 @@ If you prefer not to use the pairing code flow, you can select **or search by ch
 
 If the pairing code cannot be generated (for example, due to a network issue), you will see an error message with a **Try Again** button. Make sure your TV is connected to the internet and try again.
 
-:::note
+:::warning
 Pairing codes expire after a set period. If you wait too long, generate a new code by returning to the pairing screen.
 :::
+
+## Related Articles
+
+- **[Plan Mode Overview](./index.md)** - Understanding how Plan Mode differs from Classroom Mode
+- **[Playing Lessons](../classroom-mode/playing-lessons)** - Player controls are the same in both modes

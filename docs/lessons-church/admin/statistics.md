@@ -4,7 +4,19 @@ title: "Statistics"
 
 # Statistics
 
-The statistics page gives admins insight into how their content is being used. You can see which studies are most popular, which churches are downloading your resources, and where those churches are located.
+<div class="article-intro">
+
+The statistics page gives admins insight into how their content is being used. You can see which studies are most popular, which churches are downloading your resources, and where those churches are located geographically.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Have admin permissions for Lessons.church (see the [Administration overview](./index.md))
+- Have at least one [program](./managing-programs.md) with published content
+
+</div>
 
 ## Accessing Statistics
 
@@ -46,3 +58,8 @@ Here are a few ways to put your download data to work:
 :::info
 Statistics are based on unique downloads. If the same church downloads a resource multiple times, it is counted once.
 :::
+
+## Related Articles
+
+- [Managing Programs](./managing-programs.md) -- Create and edit the programs whose statistics you are reviewing
+- [Managing Studies](./managing-studies.md) -- Manage the studies that appear in your download reports

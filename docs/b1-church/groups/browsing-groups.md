@@ -4,7 +4,18 @@ title: "Browsing Groups"
 
 # Browsing Groups
 
+<div class="article-intro">
+
 Your church's public groups page makes it easy to discover groups that interest you. Groups are organized by category, so you can quickly scan through different types of groups and find the right fit.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- No login is required to browse groups. However, [logging in](../getting-started/logging-in.md) gives you access to additional features on each group's detail page.
+
+</div>
 
 ## Finding the Groups Page
 
@@ -34,5 +45,5 @@ If you are looking for a specific type of group, scan the category headings firs
 
 ## Next Steps
 
-- [Group Details](./group-details) -- Learn what you will find on the group detail page
-- [Group Conversations](./conversations) -- See how to participate in group discussions once you join
+- [Group Details](./group-details.md) -- Learn what you will find on the group detail page
+- [Group Conversations](./conversations.md) -- See how to participate in group discussions once you join

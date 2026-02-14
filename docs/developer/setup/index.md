@@ -4,7 +4,11 @@ title: "Setup"
 
 # Setup
 
-This section walks you through setting up a local development environment for ChurchApps projects.
+<div class="article-intro">
+
+This section walks you through setting up a local development environment for ChurchApps projects. You can either point your frontend at shared staging APIs for quick development, or run the full stack locally for backend work.
+
+</div>
 
 ## Two Approaches
 
@@ -28,7 +32,9 @@ https://api.staging.churchapps.org/attendance
 https://api.staging.churchapps.org/giving
 ```
 
-This approach lets you start making frontend changes in minutes.
+:::tip
+This approach lets you start making frontend changes in minutes. It is the recommended path for most contributors.
+:::
 
 ### 2. Run Everything Locally
 

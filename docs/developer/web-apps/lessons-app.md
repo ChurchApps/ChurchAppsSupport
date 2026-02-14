@@ -1,11 +1,22 @@
+---
+title: "LessonsApp"
+---
+
 # LessonsApp
 
-LessonsApp is the lesson content management application for [Lessons.church](https://lessons.church). It provides an interface for creating, organizing, and publishing church lesson curricula. Built with Next.js and React.
+<div class="article-intro">
 
-## Prerequisites
+LessonsApp is the lesson content management application for [Lessons.church](https://lessons.church). It provides an interface for creating, organizing, and publishing church lesson curricula, built with Next.js and React.
 
-- **Node.js 22+**
-- **Git**
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Install **Node.js 22+** and **Git** -- see [Prerequisites](../setup/prerequisites)
+- Configure your API target (staging or local) -- see [Environment Variables](../setup/environment-variables)
+
+</div>
 
 :::warning
 LessonsApp requires Node.js 22 or later. Earlier versions are not supported.
@@ -57,7 +68,7 @@ The Next.js dev server launches at [http://localhost:3501](http://localhost:3501
 - **React 19** for UI components
 - **`@churchapps/apphelper*`** packages for shared components
 
-:::note
+:::info
 LessonsApp communicates with the **LessonsApi** backend, which is a separate API from the main ChurchApps Api. Make sure your environment is configured with the correct Lessons API endpoint.
 :::
 
@@ -68,3 +79,7 @@ Production builds are deployed to **S3 + CloudFront**:
 1. `npm run build` generates the optimized Next.js build
 2. Build output is synced to an S3 bucket
 3. CloudFront invalidation is triggered to serve the new version
+
+:::tip
+For detailed deployment instructions, see the [Web App Deployment](../deployment/web-apps) guide.
+:::

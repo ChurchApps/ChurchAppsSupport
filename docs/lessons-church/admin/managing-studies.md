@@ -4,17 +4,29 @@ title: "Managing Studies"
 
 # Managing Studies
 
-A study is a series of related lessons within a program. For example, a four-week series called "The Good Samaritan" would be a study inside a larger children's ministry program. Studies give your curriculum a logical grouping so churches can pick up a complete series at a time.
+<div class="article-intro">
+
+A study is a series of related lessons within a program. For example, a four-week series called "The Good Samaritan" would be a study inside a larger children's ministry program. This guide covers creating, editing, and organizing studies in the admin area.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- [Create at least one program](./managing-programs.md) in the admin area
+- Have admin permissions for Lessons.church (see the [Administration overview](./index.md))
+
+</div>
 
 ## Creating a Study
 
 1. Navigate to the **Admin** area and expand the program you want to add a study to.
 2. Click **Add Study**.
 3. Fill in the following fields:
-   - **Name** -- the display name for the study (e.g., "The Good Samaritan").
-   - **Slug** -- a URL-friendly identifier (e.g., "the-good-samaritan").
-   - **Description** -- a summary of what this study covers and how many lessons it includes.
-   - **Image** -- upload a thumbnail image for the study.
+   - **Name** -- The display name for the study (e.g., "The Good Samaritan").
+   - **Slug** -- A URL-friendly identifier (e.g., "the-good-samaritan").
+   - **Description** -- A summary of what this study covers and how many lessons it includes.
+   - **Image** -- Upload a thumbnail image for the study.
 4. Save the study.
 
 ## Editing a Study
@@ -35,7 +47,7 @@ Categories help users browse programs that have many studies. For example, you m
 
 ## Managing Lessons Within a Study
 
-Studies contain one or more lessons. Expand a study in the admin view to see its lessons, or click **Add Lesson** to create a new one. See [Managing Lessons](managing-lessons.md) for details on building out lesson content.
+Studies contain one or more lessons. Expand a study in the admin view to see its lessons, or click **Add Lesson** to create a new one. See [Managing Lessons](./managing-lessons.md) for details on building out lesson content.
 
 ## Uploading Study-Level Resources
 

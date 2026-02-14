@@ -146,6 +146,14 @@ const sidebars: SidebarsConfig = {
             'b1-admin/profile/devices',
           ],
         },
+        {
+          type: 'category',
+          label: 'Guides',
+          items: [
+            'b1-admin/guides/childrens-checkin',
+            'b1-admin/guides/launch-website',
+          ],
+        },
       ],
     },
     {

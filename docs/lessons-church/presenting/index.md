@@ -4,7 +4,11 @@ title: "Presenting"
 
 # Presenting
 
+<div class="article-intro">
+
 Lessons.church provides tools to help your volunteers confidently teach each lesson. Whether you are projecting content on a screen, handing out printed guides, or distributing activity sheets, everything you need is built right into the platform.
+
+</div>
 
 ## Presenter Mode
 
@@ -27,8 +31,12 @@ A typical Sunday morning workflow might look like this:
 3. Open the lesson in **Presenter Mode** on the classroom computer or TV.
 4. Walk through the lesson sections while volunteers follow along with their individual guides.
 
+:::tip
+Preparing materials and sharing guide links a few days before class gives your volunteers time to review and arrive confident on Sunday morning.
+:::
+
 ## Next Steps
 
-- [Presenter Mode](presenter-mode.md) -- display lessons on a screen or projector
-- [Volunteer Guides](volunteer-guides.md) -- role-based instructions for your team
-- [Downloads and Materials](downloads.md) -- print and distribute lesson resources
+- [Presenter Mode](./presenter-mode.md) -- Display lessons on a screen or projector
+- [Volunteer Guides](./volunteer-guides.md) -- Role-based instructions for your team
+- [Downloads and Materials](./downloads.md) -- Print and distribute lesson resources

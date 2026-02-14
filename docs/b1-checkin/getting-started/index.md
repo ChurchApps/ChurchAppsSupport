@@ -4,7 +4,11 @@ title: "Getting Started"
 
 # Getting Started with B1 Church Checkin
 
-Setting up B1 Church Checkin takes just a few minutes. You need an Android tablet, a ChurchApps account, and optionally a network label printer.
+<div class="article-intro">
+
+Setting up B1 Church Checkin takes just a few minutes. This section walks you through installing the app on an Android tablet, logging in with your ChurchApps account, and optionally configuring a network label printer.
+
+</div>
 
 ## What You Need
 
@@ -33,7 +37,12 @@ After the first login, the app saves your credentials and church selection. On f
 The app checks for over-the-air updates each time it starts. If an update is available, it downloads and applies automatically before you reach the login screen.
 :::
 
+:::tip
+Make sure your church administrator has configured services, service times, and groups in B1 Admin before setting up the kiosk. See the [attendance setup guide](../../b1-admin/attendance/setup.md) for details.
+:::
+
 ## Next Steps
 
 - [Logging In](./logging-in) -- Detailed login and church selection instructions.
 - [Printer Setup](./printer-setup) -- How to discover, select, and test your label printer.
+- [Check-In Workflow](../check-in/) -- Learn the full check-in flow once your kiosk is set up.

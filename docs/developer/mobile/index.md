@@ -1,6 +1,14 @@
+---
+title: "Mobile Apps"
+---
+
 # Mobile Apps
 
-ChurchApps mobile apps are built with **React Native** and **Expo**, providing native experiences on Android, iOS, and Android TV.
+<div class="article-intro">
+
+ChurchApps mobile apps are built with **React Native** and **Expo**, providing native experiences on Android, iOS, and Android TV. All mobile apps share the same Expo-based toolchain, so if you can build one, you can build them all.
+
+</div>
 
 ## Apps
 
@@ -23,5 +31,5 @@ A purpose-built kiosk application designed for check-in stations at churches. It
 An Android TV application that displays lesson content in classrooms. Teachers can push lesson slides, videos, and activities to a TV screen, making it easy to present curriculum material during classes.
 
 :::info
-All mobile apps share the same Expo-based toolchain and follow similar setup patterns. If you can build one, you can build them all.
+All mobile apps share the same Expo-based toolchain and follow similar setup patterns. The [B1 Mobile](./b1-mobile) guide serves as a reference for the general setup process across all mobile projects.
 :::

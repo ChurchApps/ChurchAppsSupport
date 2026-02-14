@@ -1,6 +1,22 @@
+---
+title: "Module Structure"
+---
+
 # Module Structure
 
-Each API module follows a consistent internal structure. Understanding this layout makes it straightforward to navigate the codebase and add new functionality.
+<div class="article-intro">
+
+Each API module follows a consistent internal structure with controllers, repositories, models, and helpers. Understanding this layout makes it straightforward to navigate the codebase and add new functionality to any module.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Set up the API locally -- see [Local API Setup](./local-setup)
+- Review the [Database](./database) architecture to understand the data access layer
+
+</div>
 
 ## Directory Layout
 
@@ -151,3 +167,9 @@ When deployed to AWS, the API runs as four Lambda functions:
 :::info
 Locally, the `web` function runs on port 8084 and the `socket` function runs on port 8087. The timer functions can be triggered manually during development.
 :::
+
+## Related Articles
+
+- **[Database](./database)** -- Connection strings, schema scripts, and data access patterns
+- **[Local API Setup](./local-setup)** -- Full step-by-step setup guide
+- **[ApiHelper](../shared-libraries/api-helper)** -- The shared library that provides `CustomBaseController` and auth middleware

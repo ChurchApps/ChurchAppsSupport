@@ -4,7 +4,19 @@ title: "Group Members"
 
 # Group Members
 
-Once you have created a group, the next step is adding members. From a group's detail page you can search for people, add them to the group, assign leaders, send messages, and export the member list.
+<div class="article-intro">
+
+Once you have created a group, the next step is adding members. From a group's detail page you can search for people, add them to the group, assign leaders, send messages, and export the member list. Managing group membership is essential for coordinating ministries, small groups, and teams.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- You need at least one group set up in B1 Admin. See [Creating Groups](creating-groups.md) if you haven't created one yet.
+- The people you want to add must already exist in your [People](../people/adding-people.md) directory.
+
+</div>
 
 ## Adding Members to a Group
 
@@ -20,7 +32,7 @@ Leave the search box blank and click **Search** to browse through your entire di
 
 ## Designating Group Leaders
 
-Group leaders have special privileges -- they can edit the group calendar, manage events, and help coordinate the group.
+Group leaders have special privileges -- they can edit the [group calendar](group-calendar.md), manage events, and help coordinate the group.
 
 1. In the group member list, find the person you want to make a leader.
 2. Click the **green key icon** next to their name.
@@ -49,8 +61,12 @@ To download the group member list as a file:
 1. From the group detail page, click the **download icon**.
 2. A CSV file containing the group's member information will download to your computer.
 
-This is useful for creating printed rosters, importing data into other tools, or keeping offline records.
+This is useful for creating printed rosters, importing data into other tools, or keeping offline records. For more export options, see [Exporting Data](../people/exporting-data.md).
 
 ## Removing Members
 
-To remove someone from a group, locate their name in the member list and click the **remove** button next to their entry. The person will be removed from the group but will remain in your church directory.
+To remove someone from a group, locate their name in the member list and click the **remove** button next to their entry.
+
+:::info
+Removing a person from a group does not delete them from your church directory. They will still appear in the [People](../people/adding-people.md) section and can be re-added to the group at any time.
+:::

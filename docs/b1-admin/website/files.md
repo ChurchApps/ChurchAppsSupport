@@ -4,7 +4,20 @@ title: "Files"
 
 # Files
 
+<div class="article-intro">
+
 The Files page is the central repository for all media and documents used on your church website. From here you can upload, organize, browse, and manage every image, document, and media file your site needs.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Complete the [Initial Setup](initial-setup) for your website
+- Optimize images before uploading for faster page load times
+- Prepare your files in common web formats (PNG, JPG, PDF, etc.)
+
+</div>
 
 ## Uploading Files
 
@@ -13,7 +26,7 @@ The Files page is the central repository for all media and documents used on you
 3. Your files will upload and appear in the file library immediately.
 
 :::tip
-For best results, optimize images before uploading. Smaller file sizes help your website load faster for visitors.
+For best results, optimize images before uploading. Smaller file sizes help your website load faster for visitors. Tools like TinyPNG or Squoosh can compress images without noticeable quality loss.
 :::
 
 ## Organizing with Folders
@@ -34,14 +47,18 @@ For best results, optimize images before uploading. Smaller file sizes help your
 2. **Copy the file URL** to use it in your website pages. You can paste this URL into image elements, download links, or anywhere else that accepts a file URL.
 3. Files you upload here are available for use across all your website pages and content blocks.
 
+:::info
+When building pages in [Managing Pages](managing-pages), you can reference any file uploaded here by its URL. This keeps all your media organized in one central location.
+:::
+
 ## Deleting Files
 
 1. Select the file you want to remove.
 2. Click the **Delete** button to permanently remove it from your library.
 3. Make sure the file is not currently being used on any page before deleting it, as this will break any links or images that reference it.
 
-:::note
-Deleted files cannot be recovered. Double-check that a file is no longer in use before removing it.
+:::warning
+Deleted files cannot be recovered. Double-check that a file is no longer in use on any page before removing it.
 :::
 
 ## Next Steps

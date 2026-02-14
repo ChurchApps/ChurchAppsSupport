@@ -4,7 +4,19 @@ title: "Sermons"
 
 # Sermons
 
+<div class="article-intro">
+
 The Sermons screen lets you browse and watch recorded sermons from your church. It is your go-to spot for catching up on messages you missed or revisiting a sermon that spoke to you.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- [Install B1 Mobile](../getting-started/installing) and [log in](../getting-started/logging-in) to your account
+- Your church must have sermon content configured in their admin portal
+
+</div>
 
 ## What You Will See
 
@@ -17,7 +29,7 @@ At the top of the screen, the most recent sermon is displayed as a featured card
 
 ## Live Stream Countdown
 
-When a live stream is coming up within the next 24 hours, a countdown timer appears on the Sermons screen. This lets you know when the next service will be broadcasting so you can plan to watch live.
+When a [live stream](./live-streaming) is coming up within the next 24 hours, a countdown timer appears on the Sermons screen. This lets you know when the next service will be broadcasting so you can plan to watch live.
 
 ## Watching a Sermon
 
@@ -39,9 +51,9 @@ Each sermon entry can display:
 - **Thumbnail** -- A preview image for the sermon
 
 :::tip
-If you see a countdown on the Sermons screen, tap it to jump straight to the live stream when it starts.
+If you see a countdown on the Sermons screen, tap it to jump straight to the [live stream](./live-streaming) when it starts.
 :::
 
 ## Availability
 
-The Sermons screen is available when your church has added sermon content through their admin portal. If you do not see Sermons in your app, your church may not have this feature configured yet.
+The Sermons screen is available when your church has added sermon content through their admin portal. If you do not see **Sermons** in your app, your church may not have this feature configured yet.

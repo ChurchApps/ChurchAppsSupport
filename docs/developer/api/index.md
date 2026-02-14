@@ -1,6 +1,14 @@
+---
+title: "API"
+---
+
 # API
 
+<div class="article-intro">
+
 The ChurchApps API is a **modular monolith** -- a single codebase that serves six distinct modules, each with its own database. This architecture gives you the organizational benefits of microservices (clear boundaries, independent data stores) with the operational simplicity of a single deployment.
+
+</div>
 
 ## Modules
 
@@ -42,9 +50,15 @@ When deployed to AWS, the API runs as four Lambda functions:
 
 The API depends on two shared ChurchApps packages:
 
-- **`@churchapps/helpers`** -- Base utilities (DateHelper, ApiHelper, etc.)
-- **`@churchapps/apihelper`** -- Express server utilities including auth, database helpers, and AWS integrations
+- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- Base utilities (DateHelper, ApiHelper, etc.)
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Express server utilities including auth, database helpers, and AWS integrations
 
 :::info
 The API uses ES modules (`"type": "module"` in `package.json`). Make sure your imports use the ES module syntax.
 :::
+
+## In This Section
+
+- **[Local Setup](./local-setup)** -- Clone, configure, and run the API locally
+- **[Database](./database)** -- Database-per-module architecture, schema scripts, and data access patterns
+- **[Module Structure](./module-structure)** -- Controllers, repositories, models, and authentication

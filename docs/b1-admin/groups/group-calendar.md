@@ -4,7 +4,19 @@ title: "Group Calendar"
 
 # Group Calendar
 
-Each group in B1 can have its own event calendar. Group leaders use it to schedule meetings, activities, and recurring events. All group members can view upcoming events and join conversations about them.
+<div class="article-intro">
+
+Each group in B1 can have its own event calendar. Group leaders use it to schedule meetings, activities, and recurring events, while all group members can view upcoming events and join conversations about them. The calendar keeps your group organized and ensures everyone stays informed about what is coming up.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- You need a group created in B1 Admin with at least one member. See [Creating Groups](creating-groups.md) and [Group Members](group-members.md).
+- To add or edit calendar events, you must be designated as a group leader. See [Designating Group Leaders](group-members.md) for instructions.
+
+</div>
 
 ## Accessing the Group Calendar
 
@@ -61,6 +73,10 @@ Click on any event to view its details. From the event detail view:
 - **Members and leaders** can start conversations and leave comments about the event.
 - **Leaders** can edit event details, change times, or delete the event.
 
+:::warning
+Deleting an event removes it permanently. If you need to cancel a single occurrence of a recurring event, consider editing it instead.
+:::
+
 ## Subscribing to the Calendar
 
 You can sync the group calendar with your personal calendar:
@@ -68,4 +84,6 @@ You can sync the group calendar with your personal calendar:
 1. From the group calendar page, click **Subscribe**.
 2. Follow the prompts to add the calendar to Google Calendar, Apple Calendar, Outlook, or any other calendar application that supports subscriptions.
 
-This keeps your personal schedule in sync with your group's events without needing to check B1 separately.
+:::tip
+Subscribing keeps your personal schedule in sync with your group's events without needing to check B1 separately. Any changes made by group leaders will automatically appear in your synced calendar.
+:::

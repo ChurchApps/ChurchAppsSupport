@@ -4,7 +4,19 @@ title: "Service Order"
 
 # Service Order
 
+<div class="article-intro">
+
 When you open a plan, the **Order of Service** section shows the sequence of items for that service. This gives you and your team a shared view of the service flow, including timing, song details, and descriptions for each element.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- You must be [logged in](../getting-started/logging-in.md) to your B1.church account.
+- Open a plan from your [Plans list](./viewing-plans.md) to view its service order.
+
+</div>
 
 ## What the Service Order Shows
 
@@ -18,7 +30,7 @@ Items are organized under **headers** that group related elements together (for 
 
 ## Curriculum and Lesson Content
 
-If the plan has associated curriculum or lesson content from a provider like Lessons.church, you will see a preview of that content within the service order. This can include lesson sections, presentation materials, and other resources your team needs for the service.
+If the plan has associated curriculum or lesson content from a provider like [Lessons.church](../content/lessons.md), you will see a preview of that content within the service order. This can include lesson sections, presentation materials, and other resources your team needs for the service.
 
 ## Printing the Service Order
 

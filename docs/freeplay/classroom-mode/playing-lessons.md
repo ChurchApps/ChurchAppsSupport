@@ -4,7 +4,19 @@ title: "Playing Lessons"
 
 # Playing Lessons
 
-The FreePlay media player is a full-screen experience designed for TV remotes. It plays both videos and image slides, advancing through the lesson content automatically or manually.
+<div class="article-intro">
+
+The FreePlay media player is a full-screen experience designed for TV remotes. It plays both videos and image slides, advancing through the lesson content automatically or manually, giving teachers full control over the pace of their lesson.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Download a lesson -- see [Downloading Lesson Content](./downloading-content)
+- Press the **Start Lesson** button to enter the player
+
+</div>
 
 ## Player Controls
 
@@ -40,6 +52,11 @@ Press the **Up** arrow during playback to open the message selector. This shows 
 
 Press **Down**, **Back**, or **Menu** on your remote to exit the player. You will return to the download screen (in Classroom Mode), the plan download screen (in Plan Mode), or the content browser (when playing provider content).
 
-:::note
+:::info
 The screen stays awake while the player is active, so you do not need to worry about the TV going to sleep during a lesson.
 :::
+
+## Related Articles
+
+- **[Downloading Lesson Content](./downloading-content)** - How content gets downloaded before playback
+- **[Browsing and Downloading Content](../content-providers/browsing-content)** - Playing content from providers uses the same player controls

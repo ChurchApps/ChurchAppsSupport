@@ -4,7 +4,19 @@ title: "Creating Calendars"
 
 # Creating Calendars
 
+<div class="article-intro">
+
 Creating a calendar in B1 Admin gives you a central place to manage events for a ministry, department, or your entire church. Each calendar can pull in events from one or more groups, making it easy to keep everything organized.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Set up the [groups](../groups/creating-groups.md) whose events you want to include in your calendar
+- You need administrative access to the Calendars section in B1 Admin
+
+</div>
 
 ## Creating a New Calendar
 
@@ -37,7 +49,11 @@ Groups that have events in the calendar automatically appear in the groups list 
 4. Click **Save**.
 
 :::tip
-Connecting groups to your calendar is a powerful way to automatically aggregate events. When a group leader adds an event to their group, it can flow into your church-wide calendar without any extra work from you.
+Connecting groups to your calendar is a powerful way to automatically aggregate events. When a group leader adds an event to their [group](../groups/creating-groups.md), it can flow into your church-wide calendar without any extra work from you.
+:::
+
+:::info
+If you want to create a single calendar that pulls events from many groups across your church, see [Curated Calendar](curated-calendar) for a streamlined approach.
 :::
 
 ## Next Steps

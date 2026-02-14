@@ -4,7 +4,19 @@ title: "Printer Setup"
 
 # Printer Setup
 
+<div class="article-intro">
+
 B1 Church Checkin can print name labels and parent pickup slips to a network label printer. Setting up the printer is optional -- you can use the app without a printer for attendance tracking only.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- [Log in](./logging-in) to the B1 Church Checkin app and select your church
+- Connect a compatible network label printer to the same Wi-Fi network as the tablet
+
+</div>
 
 ## Accessing Printer Settings
 
@@ -21,8 +33,8 @@ Once the scan completes, you will see a list of discovered printers. Each printe
 
 A **No Printer** option is always included at the bottom of the list.
 
-:::info
-The tablet and the printer must be connected to the same local network for the scan to discover the printer. If your printer does not appear, verify that both devices are on the same Wi-Fi network.
+:::warning
+The tablet and the printer must be connected to the same local network for the scan to discover the printer. If your printer does not appear, verify that both devices are on the same Wi-Fi network and that the printer is powered on.
 :::
 
 ## Selecting a Printer
@@ -40,6 +52,10 @@ Before saving your selection, you can verify the connection works:
 
 If you tap **Test Print** with **No Printer** selected, the app will display an alert reminding you that no printer is selected.
 
+:::tip
+Always run a test print after selecting a printer to confirm the connection before your next service.
+:::
+
 ## Saving Your Selection
 
 When you are satisfied with your printer choice:
@@ -49,6 +65,10 @@ When you are satisfied with your printer choice:
 
 Your printer selection is remembered across app restarts. You do not need to set it up again unless you want to change printers.
 
-:::tip
+:::info
 If you move the kiosk to a different location or change your network setup, return to the printer settings to scan for printers again and update your selection.
 :::
+
+## Next Steps
+
+With your printer configured, you are ready to start checking in. See the [check-in workflow](../check-in/) to learn how the full process works, starting with [selecting a service](../check-in/selecting-service).

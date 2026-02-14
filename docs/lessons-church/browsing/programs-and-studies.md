@@ -4,7 +4,18 @@ title: "Programs and Studies"
 
 # Programs and Studies
 
-All curriculum on Lessons.church is organized in a clear hierarchy. Understanding this structure will help you find the right content for your church quickly.
+<div class="article-intro">
+
+All curriculum on Lessons.church is organized in a clear hierarchy. Understanding this structure will help you find the right content for your church quickly and navigate between related lessons with ease.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Familiarize yourself with the [Browsing Content](./index.md) overview to understand the different ways to find content
+
+</div>
 
 ## Content Hierarchy
 
@@ -39,8 +50,8 @@ From a program page:
 2. Click on a **study name** to open the study page.
 3. The study page displays all of the lessons included in that study, listed in teaching order.
 
-From here, you can click into any lesson to see its full content, including sections, roles, and downloadable materials. See [Viewing Lessons](./viewing-lessons) for a detailed walkthrough.
+From here, you can click into any lesson to see its full content, including sections, roles, and downloadable materials. See [Viewing Lessons](./viewing-lessons.md) for a detailed walkthrough.
 
 :::info
-Programs and studies are managed by curriculum providers. If you are a content creator, you can manage your own programs and studies through the Lessons.church portal.
+Programs and studies are managed by curriculum providers. If you are a content creator, you can manage your own programs and studies through the [Administration](../admin/index.md) area.
 :::

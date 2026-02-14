@@ -4,7 +4,11 @@ title: "Profile"
 
 # Profile
 
+<div class="article-intro">
+
 Your profile in B1 Mobile is where you manage your personal information, your household, and your privacy settings. Everything you update here is reflected across all ChurchApps services, so you only need to make changes in one place.
+
+</div>
 
 ## Profile Tabs
 
@@ -16,11 +20,11 @@ The **Profile** tab lets you view and edit your personal information, including 
 
 ### Household
 
-The **Household** tab shows your family members and their roles within your household. This information is used for features like check-in, where you can check in your whole family at once.
+The **Household** tab shows your family members and their roles within your household. This information is used for features like [check-in](../checkin/), where you can check in your whole family at once.
 
 ### Visibility
 
-The **Visibility** tab lets you control what other church members can see about you in the directory. You decide which personal details are shared and which stay private.
+The **Visibility** tab lets you control what other church members can see about you in the [directory](../community/member-directory.md). You decide which personal details are shared and which stay private.
 
 ### Pending
 
@@ -38,6 +42,6 @@ The **Account** tab provides access to your security settings.
 
 ## Next Steps
 
-- [Editing Your Profile](editing-profile) -- Update your name, contact details, and photo
-- [Household](household) -- View and manage your family members
-- [Privacy Settings](privacy-settings) -- Control what others can see about you
+- [Editing Your Profile](./editing-profile) -- Update your name, contact details, and photo
+- [Household](./household) -- View and manage your family members
+- [Privacy Settings](./privacy-settings) -- Control what others can see about you

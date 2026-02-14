@@ -4,11 +4,23 @@ title: "Group Conversations"
 
 # Group Conversations
 
-The Conversations tab on your group page is a space where group members can post messages and interact with each other. This feature is only available to logged-in members who belong to the group.
+<div class="article-intro">
+
+The Conversations tab on your group page is a space where group members can post messages and interact with each other. Use conversations to discuss topics, share updates, and stay connected with your group between meetings.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- You must be [logged in](../getting-started/logging-in.md) to your B1.church account.
+- You must be a member of the group to access the Conversations tab. See [Group Details](./group-details.md) for how to join a group.
+
+</div>
 
 ## Accessing Conversations
 
-1. Navigate to the group detail page by clicking on a group from the groups page.
+1. Navigate to the group detail page by clicking on a group from the [groups page](./browsing-groups.md).
 2. Make sure you are logged in.
 3. Click the **Conversations** tab in the sidebar.
 
@@ -30,6 +42,10 @@ If there are no announcements and you are not a leader, you will only see the Di
 
 Your message will be visible to all members of the group.
 
+:::tip
+Group conversations also appear on your [Timeline](../community/timeline.md), so you can keep up with discussions without visiting each group individually.
+:::
+
 ## Leader Features
 
 If you are a group leader, you have additional capabilities in the Conversations tab:
@@ -37,6 +53,6 @@ If you are a group leader, you have additional capabilities in the Conversations
 - **Post announcements** -- Switch to the **Announcements** sub-tab and post messages that all group members can read.
 - **Post discussions** -- You can also participate in regular discussions just like any other member.
 
-:::note
+:::info
 Conversations are specific to each group. Messages you post in one group will not appear in another group's conversations.
 :::

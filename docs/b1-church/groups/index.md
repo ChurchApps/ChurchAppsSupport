@@ -4,7 +4,11 @@ title: "Groups"
 
 # Groups
 
+<div class="article-intro">
+
 Groups are a great way to get connected with others at your church. Whether you are looking for a small group, a ministry team, a Bible study, or a volunteer opportunity, you can browse and join groups directly from your church's B1.church site.
+
+</div>
 
 ## What You Can Do
 
@@ -20,10 +24,14 @@ Here is what you can do with groups in B1App:
 
 Anyone can visit your church's groups page and browse the available groups. Visitors who are not logged in can view group descriptions, see who the leaders are, check upcoming calendar events, and send a message to a leader using the contact form.
 
-When you log in, you unlock additional tabs on the group detail page, including **Group Details**, **Calendar**, **Conversations**, **Resources**, **Members**, and **Attendance**. Group leaders have extra editing capabilities on each of these tabs.
+When you [log in](../getting-started/logging-in.md), you unlock additional tabs on the group detail page, including **Group Details**, **Calendar**, **Conversations**, **Resources**, **Members**, and **Attendance**. Group leaders have extra editing capabilities on each of these tabs.
+
+:::tip
+Groups also appear on your [Timeline](../community/timeline.md) -- conversations and updates from your groups will show up in your activity feed automatically.
+:::
 
 ## Next Steps
 
-- [Browsing Groups](./browsing-groups) -- Learn how to find and explore groups
-- [Group Details](./group-details) -- Understand everything on the group detail page
-- [Group Conversations](./conversations) -- Post messages and interact with your group
+- [Browsing Groups](./browsing-groups.md) -- Learn how to find and explore groups
+- [Group Details](./group-details.md) -- Understand everything on the group detail page
+- [Group Conversations](./conversations.md) -- Post messages and interact with your group

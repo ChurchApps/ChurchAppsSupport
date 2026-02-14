@@ -4,7 +4,11 @@ title: "Browsing Lessons"
 
 # Browsing Lessons
 
+<div class="article-intro">
+
 FreePlay includes a built-in lesson browser that lets you explore the full library of available programs, studies, and lessons. This is useful when you want to manually pick a lesson to play rather than relying on a classroom schedule or plan.
+
+</div>
 
 ## The Browsing Flow
 

@@ -4,7 +4,19 @@ title: "Viewing Plans"
 
 # Viewing Plans
 
+<div class="article-intro">
+
 The plans screen in B1 Mobile gives you a complete picture of your serving schedule. It is organized into two tabs so you can quickly find your next assignment or look back at your service history.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- [Install B1 Mobile](../getting-started/installing) and [log in](../getting-started/logging-in) to your account
+- Be assigned to at least one serving plan by your church administrator
+
+</div>
 
 ## Accessing Your Plans
 
@@ -37,4 +49,8 @@ Tap on any plan -- whether upcoming or past -- to open its full details. The det
 
 :::tip
 Check the **Upcoming** tab regularly to stay on top of your schedule. The hero card always shows your very next commitment, so you can open the app and know right away when you are serving next.
+:::
+
+:::info
+You will receive [push notifications](../community/notifications.md) when you are assigned to a new plan or when your assignment status changes, so you never miss an update.
 :::

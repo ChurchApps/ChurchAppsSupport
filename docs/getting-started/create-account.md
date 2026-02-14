@@ -4,7 +4,19 @@ title: "Creating Your Account"
 
 # Creating Your Account
 
-Getting started with ChurchApps begins with creating your account. The process takes just a few minutes and gives you access to all ChurchApps tools.
+<div class="article-intro">
+
+Getting started with ChurchApps begins with creating your account. The process takes just a few minutes and gives you access to all ChurchApps tools, including B1 Admin, B1.church, and Lessons.church.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Have a valid email address ready for account verification
+- Review the [Getting Started overview](./index.md) to understand what ChurchApps offers
+
+</div>
 
 ## Step-by-Step Registration
 
@@ -44,7 +56,7 @@ After confirming your email and logging in, you will have the option to either c
 3. Request to join. An administrator at your church will need to approve your request.
 
 :::info
-The person who creates a new church is automatically assigned the **Domain Admin** role, which grants full access to all settings and features. You can add additional administrators later from the Roles page.
+The person who creates a new church is automatically assigned the **Domain Admin** role, which grants full access to all settings and features. You can add additional administrators later from the **Roles** page.
 :::
 
 ## What Comes Next

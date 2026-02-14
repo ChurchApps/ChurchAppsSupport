@@ -4,9 +4,13 @@ title: "Administration"
 
 # Administration
 
+<div class="article-intro">
+
 The admin area in Lessons.church is where content creators and administrators manage the lesson library. From here you can build out your curriculum structure, upload resources, review usage statistics, and connect third-party content providers.
 
-:::note
+</div>
+
+:::warning
 Admin access requires appropriate permissions. If you do not see the admin options, contact your church administrator to request access.
 :::
 
@@ -34,8 +38,8 @@ Each level can have its own downloadable resources attached.
 
 ## Next Steps
 
-- [Managing Programs](managing-programs.md) -- create and configure programs
-- [Managing Studies](managing-studies.md) -- add studies within a program
-- [Managing Lessons](managing-lessons.md) -- build out lessons with venues, sections, and actions
-- [Statistics](statistics.md) -- review download and usage data
-- [Third-Party Providers](third-party-providers.md) -- connect external curriculum feeds
+- [Managing Programs](./managing-programs.md) -- Create and configure programs
+- [Managing Studies](./managing-studies.md) -- Add studies within a program
+- [Managing Lessons](./managing-lessons.md) -- Build out lessons with venues, sections, and actions
+- [Statistics](./statistics.md) -- Review download and usage data
+- [Third-Party Providers](./third-party-providers.md) -- Connect external curriculum feeds

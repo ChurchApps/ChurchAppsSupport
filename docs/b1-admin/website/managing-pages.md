@@ -4,7 +4,19 @@ title: "Managing Pages"
 
 # Managing Pages
 
+<div class="article-intro">
+
 The Website Pages view is your central hub for creating, editing, and organizing all the pages on your church website. You can manage both your page content and your site's navigation from this single screen.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Complete the [Initial Setup](initial-setup) to configure your domain and basic site settings
+- Have your content and images ready. Use the [Files](files) manager to upload media assets first.
+
+</div>
 
 ## Understanding Page Types
 
@@ -36,7 +48,7 @@ The left sidebar of the Website Pages view displays your navigation links. These
 3. Click the **Edit** icon next to any link to change its label, URL, or position.
 4. To remove a link from the navigation, click the **Delete** icon.
 
-:::note
+:::info
 Removing a navigation link does not delete the page itself. The page still exists and can be accessed directly by its URL -- it simply will not appear in the menu.
 :::
 
@@ -47,7 +59,12 @@ Removing a navigation link does not delete the page itself. The page still exist
 - Review your navigation on mobile by clicking **Mobile Preview** to make sure it works well on smaller screens.
 - Give pages clear, descriptive names that help visitors understand what they will find.
 
+:::tip
+You can add [forms](../forms/creating-forms.md) to your pages to collect registrations, prayer requests, or other information from visitors.
+:::
+
 ## Next Steps
 
 - [Initial Setup](initial-setup) -- First-time setup instructions
 - [Appearance](appearance) -- Customize your site's visual theme
+- [Files](files) -- Upload and manage media assets for your pages

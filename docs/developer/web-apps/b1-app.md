@@ -1,11 +1,22 @@
+---
+title: "B1App"
+---
+
 # B1App
+
+<div class="article-intro">
 
 B1App is the public-facing church member application built with Next.js. It provides the member experience including profiles, group directories, live streaming, and donation pages.
 
-## Prerequisites
+</div>
 
-- **Node.js 22+**
-- **Git**
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Install **Node.js 22+** and **Git** -- see [Prerequisites](../setup/prerequisites)
+- Configure your API target (staging or local) -- see [Environment Variables](../setup/environment-variables)
+
+</div>
 
 :::warning
 B1App requires Node.js 22 or later. Earlier versions are not supported.
@@ -76,3 +87,7 @@ Production builds are deployed to **S3 + CloudFront**:
 1. `npm run build` generates the optimized Next.js build
 2. Build output is synced to an S3 bucket
 3. CloudFront invalidation is triggered to serve the new version
+
+:::tip
+For detailed deployment instructions, see the [Web App Deployment](../deployment/web-apps) guide.
+:::

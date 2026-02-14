@@ -4,7 +4,11 @@ title: "Groups"
 
 # Groups
 
+<div class="article-intro">
+
 Groups in B1 Mobile help you stay connected with the people and ministries that matter to you. Whether you belong to a small group, a Bible study, a volunteer team, or a ministry, the Groups screen is your hub for everything happening in your church community.
+
+</div>
 
 ## What You Will See
 
@@ -24,6 +28,10 @@ Here is what you can do from the Groups screen:
 - **View group details** -- Tap any group to see its full profile, including posts, members, and group information.
 - **Follow the timeline** -- A unified timeline feed shows posts and activity from all your groups in one place, so you never miss an update.
 - **Stay connected** -- See what your group members are sharing, keep up with conversations, and engage with group content.
+
+:::tip
+The Groups screen adapts to your usage, just like the [dashboard](../dashboard/). The groups you visit most often are promoted to the top for quick access.
+:::
 
 ## Next Steps
 

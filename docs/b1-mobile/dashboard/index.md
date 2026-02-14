@@ -4,7 +4,11 @@ title: "Dashboard"
 
 # Dashboard
 
-The dashboard is your home screen in B1 Mobile. It gives you quick access to the features your church offers, organized based on how you use the app.
+<div class="article-intro">
+
+The dashboard is your home screen in B1 Mobile. It gives you quick access to the features your church offers, organized based on how you use the app. The layout adapts over time to put your most-used features front and center.
+
+</div>
 
 ## Welcome Section
 
@@ -20,7 +24,7 @@ Beneath the hero card, you will see up to two **featured cards** displayed side 
 
 ## Quick Actions
 
-The remaining features appear in a **Quick Actions** grid below the featured cards. Each item shows an icon and label. These are all the other navigation links your church has configured, giving you access to everything from groups and giving to check-in, sermons, and more.
+The remaining features appear in a **Quick Actions** grid below the featured cards. Each item shows an icon and label. These are all the other navigation links your church has configured, giving you access to everything from [groups](../groups/) and [giving](../giving/) to [check-in](../checkin/), [sermons](../content/sermons.md), and more.
 
 ## How the Layout Adapts
 
@@ -32,6 +36,10 @@ The dashboard layout is personalized based on your usage patterns. Every time yo
 
 If you have not used the app yet, features appear in the default order your church has configured. Over time, the dashboard reshuffles to match your habits.
 
+:::info
+The features available on your dashboard are configured by your church administrator through [B1 Admin](../../b1-admin/). If you do not see a feature you expect, contact your church office.
+:::
+
 ## Refreshing the Dashboard
 
 Pull down on the dashboard to refresh it. This reloads your church's links and content to make sure you are seeing the latest information.
@@ -41,5 +49,5 @@ Pull down on the dashboard to refresh it. This reloads your church's links and c
 From the dashboard, you can reach any part of the app:
 
 - Tap the **hamburger icon** (three horizontal lines) in the top-left corner to open the drawer menu with all navigation options.
-- Tap the **bell icon** in the top-right corner to view your notifications.
+- Tap the **bell icon** in the top-right corner to view your [notifications](../community/notifications.md).
 - Tap any card or quick action item to go directly to that feature.

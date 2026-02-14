@@ -4,17 +4,29 @@ title: "Managing Programs"
 
 # Managing Programs
 
-Programs are the top-level containers for curriculum in Lessons.church. A program represents an entire curriculum series -- for example, "Ark Kids" or "Youth Foundations". All studies and lessons live inside a program.
+<div class="article-intro">
+
+Programs are the top-level containers for curriculum in Lessons.church. A program represents an entire curriculum series -- for example, "Ark Kids" or "Youth Foundations." This guide covers creating, editing, and organizing programs in the admin area.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Have admin permissions for Lessons.church (see the [Administration overview](./index.md))
+- Prepare a program name, description, and thumbnail image
+
+</div>
 
 ## Creating a Program
 
 1. Navigate to the **Admin** area.
 2. Click **Add Program**.
 3. Fill in the following fields:
-   - **Name** -- the display name for the program (e.g., "Ark Kids").
-   - **Slug** -- a URL-friendly identifier (e.g., "ark-kids"). This is used in web addresses.
-   - **Description** -- a short summary of what the program covers.
-   - **Image** -- upload a thumbnail image that represents the program.
+   - **Name** -- The display name for the program (e.g., "Ark Kids").
+   - **Slug** -- A URL-friendly identifier (e.g., "ark-kids"). This is used in web addresses.
+   - **Description** -- A short summary of what the program covers.
+   - **Image** -- Upload a thumbnail image that represents the program.
 4. Save the program.
 
 Your new program will now appear in the admin program list and, once it has studies and lessons, on the public-facing site.
@@ -22,12 +34,12 @@ Your new program will now appear in the admin program list and, once it has stud
 ## Editing a Program
 
 1. Click on the program name in the admin list.
-2. Update any of the fields (name, slug, description, or image).
+2. Update any of the fields (**Name**, **Slug**, **Description**, or **Image**).
 3. Save your changes.
 
 ## Organizing Studies Within a Program
 
-Once a program exists, you can add studies to it. Studies appear nested under the program in the admin view. Click the expand arrow next to a program to see its studies, or add a new one from there.
+Once a program exists, you can add studies to it. Studies appear nested under the program in the admin view. Click the expand arrow next to a program to see its studies, or add a new one from there. See [Managing Studies](./managing-studies.md) for details.
 
 ## Study Categories
 

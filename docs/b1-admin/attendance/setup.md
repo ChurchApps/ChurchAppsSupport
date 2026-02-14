@@ -4,7 +4,19 @@ title: "Attendance Setup"
 
 # Attendance Setup
 
-Before you can track attendance, you need to tell B1 Admin about your church's physical locations, when services happen, and which groups meet at each service. This page walks you through that process.
+<div class="article-intro">
+
+Before you can track attendance, you need to tell B1 Admin about your church's physical locations, when services happen, and which groups meet at each service. This one-time setup creates the structure that powers all attendance tracking and reporting across your church.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- You need an active B1 Admin account with permission to manage attendance. See [Roles & Permissions](../people/roles-permissions.md) if you're unsure about your access level.
+- If you plan to assign groups to service times, make sure your [groups are created](../groups/creating-groups.md) first.
+
+</div>
 
 ## Key Concepts
 
@@ -28,7 +40,11 @@ If a group meets outside of a regular service -- like a midweek small group that
 
 ## Editing Your Setup
 
-You can update your setup at any time. Select a campus, service time, or group and click **Edit** to change its details, or **Delete** to remove it. Removing a service time does not delete past attendance records.
+You can update your setup at any time. Select a campus, service time, or group and click **Edit** to change its details, or **Delete** to remove it.
+
+:::info
+Removing a service time does not delete past attendance records. Your historical data is preserved even if you change your schedule.
+:::
 
 ## What's Next
 

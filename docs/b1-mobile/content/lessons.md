@@ -4,7 +4,19 @@ title: "Lessons"
 
 # Lessons
 
+<div class="article-intro">
+
 The Lessons screen gives you access to your church's curriculum and learning materials. Content is provided through the Lessons.church platform and is embedded directly within B1 Mobile, so you can browse and view lessons without switching to another app.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- [Install B1 Mobile](../getting-started/installing) and [log in](../getting-started/logging-in) to your account
+- Your church must have curriculum configured through Lessons.church
+
+</div>
 
 ## Accessing Lessons
 
@@ -30,4 +42,9 @@ Lessons.church is a separate ChurchApps platform that integrates with B1 Mobile.
 
 ## Availability
 
-The Lessons screen appears when your church has configured curriculum through Lessons.church. If you do not see a Lessons option in the drawer menu, your church may not have lesson content set up. Contact your church administrator for more information.
+The Lessons screen appears when your church has configured curriculum through Lessons.church. If you do not see a **Lessons** option in the drawer menu, your church may not have lesson content set up. Contact your church administrator for more information.
+
+## Related Articles
+
+- [Bible](./bible) -- Read Scripture alongside your lessons
+- [Sermons](./sermons) -- Watch sermons that complement your studies

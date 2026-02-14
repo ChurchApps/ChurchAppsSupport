@@ -4,7 +4,11 @@ title: Statement of Faith
 
 # Statement of Faith
 
-Although we acknowledge that no man-made statement can encapsulate the full Biblical understanding of our faith, we submit this statement to make clear the core beliefs of ChurchApps as an organization.
+<div class="article-intro">
+
+Although we acknowledge that no man-made statement can encapsulate the full Biblical understanding of our faith, we submit this statement to make clear the core beliefs of ChurchApps as an organization. These beliefs guide the content curation and review process for all curriculum available on Lessons.church.
+
+</div>
 
 **GOD:** There is one, holy God who eternally exists in three persons -- Father, Son, and Holy Spirit. God created all things visible and invisible. God is perfect in wisdom, power, and love, knowing all things past, present, and future, and his sovereign plan of redemption was set in place before the foundation of the world. (Gen 1:1-2, Dt. 6:4, Heb 11:3, Eph 1:9-10; Rev 13:8)
 

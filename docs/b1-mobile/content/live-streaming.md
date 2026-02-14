@@ -4,11 +4,23 @@ title: "Live Streaming"
 
 # Live Streaming
 
+<div class="article-intro">
+
 B1 Mobile lets you watch your church's live stream directly from your phone. When a service is broadcasting, you can tune in from wherever you are and watch in real time.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- [Install B1 Mobile](../getting-started/installing) and [log in](../getting-started/logging-in) to your account
+- Your church must have a streaming schedule configured
+
+</div>
 
 ## Watching a Live Stream
 
-1. Open the **Stream** screen from the drawer menu, or tap the countdown on the **Sermons** screen when a live stream is about to begin.
+1. Open the **Stream** screen from the drawer menu, or tap the countdown on the [Sermons](./sermons) screen when a live stream is about to begin.
 2. If a service is currently live, the video player loads automatically and the broadcast begins playing.
 3. Watch the stream directly in the app.
 
@@ -19,7 +31,7 @@ When no live stream is currently active, the screen may show offline content or 
 There are two ways to access the live stream:
 
 - **Drawer menu** -- Open the drawer menu and tap **Stream** to go directly to the live stream screen.
-- **Sermons screen** -- When a live stream is scheduled within the next 24 hours, a countdown appears on the Sermons screen. Once the broadcast begins, you can navigate to the stream from there.
+- **Sermons screen** -- When a live stream is scheduled within the next 24 hours, a countdown appears on the [Sermons](./sermons) screen. Once the broadcast begins, you can navigate to the stream from there.
 
 ## Before and After the Service
 
@@ -31,4 +43,8 @@ If the stream screen shows a countdown or offline message, the next scheduled se
 
 ## Availability
 
-The live stream screen is available when your church has configured a streaming schedule. If you do not see a Stream option in your app's drawer menu, your church may not have live streaming set up. Contact your church administrator for details.
+The live stream screen is available when your church has configured a streaming schedule. If you do not see a **Stream** option in your app's drawer menu, your church may not have live streaming set up. Contact your church administrator for details.
+
+:::tip
+Check the [Sermons](./sermons) screen for a countdown timer that shows when the next live broadcast will begin.
+:::

@@ -4,7 +4,19 @@ title: "Scheduling Lessons"
 
 # Scheduling Lessons
 
+<div class="article-intro">
+
 Once your classrooms are set up, the next step is scheduling lessons so your volunteers know exactly what to teach and when. Scheduling connects the lesson content from Lessons.church to your classroom calendar.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- [Set up at least one classroom](./setting-up-classrooms.md) in the portal
+- [Browse the content library](../browsing/index.md) to find a program and study you want to teach
+
+</div>
 
 ## Viewing a Classroom Schedule
 
@@ -25,7 +37,7 @@ Once your classrooms are set up, the next step is scheduling lessons so your vol
 The lesson will now appear on the classroom's schedule for that date.
 
 :::info
-Programs, studies, and lessons are the content hierarchy on Lessons.church. A program contains multiple studies, and each study contains individual lessons. Venues provide age-specific variations of the same lesson.
+Programs, studies, and lessons are the content hierarchy on Lessons.church. A program contains multiple studies, and each study contains individual lessons. Venues provide age-specific variations of the same lesson. See [Programs and Studies](../browsing/programs-and-studies.md) for a full explanation.
 :::
 
 ## How Volunteers Use the Schedule
@@ -38,6 +50,10 @@ Once you have scheduled lessons, your volunteers can open the portal, select the
 - **Stay consistent** -- Following a program sequentially helps kids build on what they learned the previous week.
 - **Check the history** -- Use the past lesson list to make sure you are not accidentally repeating content.
 
+:::warning
+Make sure to select the correct venue for your classroom's age group. Choosing the wrong venue means your volunteers will see content designed for a different age level.
+:::
+
 ## What's Next
 
-After scheduling lessons, you may want to [customize the lesson content](../customization/customizing-lessons) for specific classrooms to match your teaching style and age group needs.
+After scheduling lessons, you may want to [customize the lesson content](../customization/customizing-lessons.md) for specific classrooms to match your teaching style and age group needs. When it is time to teach, learn about [Presenting](../presenting/index.md) to deliver lessons effectively.

@@ -4,7 +4,19 @@ title: "Sermons"
 
 # Sermons
 
+<div class="article-intro">
+
 The Sermons page lets you browse and watch recorded sermons from your church. Your church's sermon library is displayed using the appearance and layout your church has configured, so the look and feel will match your church's branding.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- No login is required to view sermons. The Sermons page is publicly accessible.
+- Your church must have added sermon content through their admin portal.
+
+</div>
 
 ## Browsing Sermons
 
@@ -27,9 +39,9 @@ Each sermon entry can display:
 Your church organizes sermons into playlists or series. This makes it easy to follow along with a multi-week series or find sermons on a particular topic.
 
 :::tip
-If you are looking for a live broadcast rather than a recorded sermon, check the [Live Streaming](live-streaming) page instead.
+If you are looking for a live broadcast rather than a recorded sermon, check the [Live Streaming](./live-streaming.md) page instead.
 :::
 
 ## Availability
 
-The Sermons page is available when your church has added sermon content through their admin portal. If you do not see a Sermons link in your church's navigation, your church may not have this feature configured yet. Contact your church administrator for more information.
+The Sermons page is available when your church has added sermon content through their admin portal. If you do not see a **Sermons** link in your church's navigation, your church may not have this feature configured yet. Contact your church administrator for more information.

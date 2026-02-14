@@ -4,7 +4,19 @@ title: "AI Search"
 
 # AI Search
 
-The **AI Search** feature lets you search your church directory using plain, natural language questions instead of traditional search fields and filters. Rather than building a query with specific filter criteria, you can simply describe what you are looking for in everyday language.
+<div class="article-intro">
+
+The **AI Search** feature lets you search your church directory using plain, natural language questions instead of traditional search fields and filters. Rather than building a query with specific filter criteria, you can simply describe what you are looking for in everyday language -- making it fast to answer complex questions about your congregation.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- You need an active B1 Admin account with permission to view people. See [Roles & Permissions](roles-permissions.md) if you're unsure about your access level.
+- Familiarity with the standard [Searching People](searching-people.md) tools is helpful but not required.
+
+</div>
 
 ## How It Works
 
@@ -40,7 +52,7 @@ AI Search is especially helpful when:
 - You want a quick answer to a question about your congregation without building a report.
 
 :::info
-AI Search works alongside the standard quick search and column filters. Use whichever approach fits your needs best. For simple name lookups, quick search is the fastest option. For more nuanced questions, AI Search shines.
+AI Search works alongside the standard quick search and column filters. Use whichever approach fits your needs best. For simple name lookups, the [quick search](searching-people.md) is the fastest option. For more nuanced questions, AI Search shines.
 :::
 
-For other search options, see [Searching People](./searching-people).
+For other search options, see [Searching People](./searching-people.md).

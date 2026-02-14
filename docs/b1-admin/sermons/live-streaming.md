@@ -4,7 +4,22 @@ title: "Live Streaming"
 
 # Live Streaming
 
-The Live Stream Times page lets you configure your church's streaming schedule, manage service times, and customize the viewer experience. The page has two main tabs: **Services** for managing your live stream schedule and **Settings** for configuring your streaming page.
+<div class="article-intro">
+
+The Live Stream Times page lets you configure your church's streaming schedule, manage service times, and customize the viewer experience. Set up recurring weekly services or one-time events, configure chat and video settings, and control when your stream goes live.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- You need the **contentApi.streamingServices.edit** permission. See [Roles & Permissions](../settings/roles-permissions.md) if you do not have access.
+- Have your YouTube Channel ID ready if you plan to use automated live streaming
+- Add at least one [sermon](managing-sermons) or permanent live URL to use as your stream source
+
+</div>
+
+The page has two main tabs: **Services** for managing your live stream schedule and **Settings** for configuring your streaming page.
 
 ## Managing Services
 
@@ -61,7 +76,7 @@ To find your YouTube Channel ID, go to your YouTube channel's advanced settings 
 
 ## Customizing Colors and Logo
 
-Your live stream page uses your website's appearance settings:
+Your live stream page uses your website's [Appearance](../website/appearance) settings:
 
 - The **light accent color** with dark text is used for the header.
 - The **dark accent color** with light text is used for the sidebar.
@@ -81,6 +96,10 @@ To give team members host capabilities (chat moderation, prayer request response
 
 When hosts log into the live stream page, they will have special capabilities including chat moderation and prayer request management.
 
+:::info
+For more details on creating roles and managing permissions, see [Roles & Permissions](../settings/roles-permissions.md).
+:::
+
 ## Troubleshooting
 
 If your automated YouTube live stream is not displaying correctly when using the "Current YouTube Live Stream" option with your Channel ID, try the following:
@@ -99,7 +118,9 @@ Check your YouTube channel for old or upcoming scheduled live streams and delete
 4. Delete these old or scheduled live stream entries.
 5. Test your live stream page again.
 
-**Why this happens:** YouTube's automated channel live stream embed can be blocked when there are multiple scheduled or past live stream entries in your channel. Removing these allows YouTube to properly identify and serve your current live stream.
+:::warning
+YouTube's automated channel live stream embed can be blocked when there are multiple scheduled or past live stream entries in your channel. Removing these allows YouTube to properly identify and serve your current live stream.
+:::
 
 **Additional requirements:**
 - Your live stream must be set to **Public** (not Unlisted or Private).

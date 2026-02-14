@@ -4,7 +4,11 @@ title: "B1.church"
 
 # B1.church
 
+<div class="article-intro">
+
 B1.church is the member-facing portal for your church. It is the place where your congregation goes to stay connected, access church tools, and engage with your community throughout the week. Each church gets its own URL at `https://yourchurchname.b1.church`.
+
+</div>
 
 When members visit your B1.church site, they see your church's public website with your branding, navigation links, and content pages. After logging in, they can access the **Member Portal** where all of their personal church tools live in one place.
 

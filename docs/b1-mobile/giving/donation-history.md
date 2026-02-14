@@ -4,7 +4,19 @@ title: "Donation History"
 
 # Donation History
 
-B1 Mobile gives you a clear picture of your giving through two tabs: **Overview** for a quick summary and **History** for a detailed record of every donation.
+<div class="article-intro">
+
+B1 Mobile gives you a clear picture of your giving through two tabs: **Overview** for a quick summary and **History** for a detailed record of every donation. Use these to track your generosity throughout the year.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- [Install B1 Mobile](../getting-started/installing) and [log in](../getting-started/logging-in) to your account
+- [Make at least one donation](./making-donations) to see your history
+
+</div>
 
 ## Overview Tab
 
@@ -31,7 +43,7 @@ Scroll through the list to review your full giving record. This is useful for ke
 Check the **Overview** tab regularly to stay on top of your giving goals. The year-to-date total makes it easy to see your progress at a glance.
 :::
 
-## Next Steps
+## Related Articles
 
 - [Making a Donation](./making-donations) -- Make a new gift from the app
 - [Managing Payment Methods](./managing-payments) -- Add or remove saved payment methods

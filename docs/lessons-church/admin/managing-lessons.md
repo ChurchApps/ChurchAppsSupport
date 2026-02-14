@@ -4,7 +4,19 @@ title: "Managing Lessons"
 
 # Managing Lessons
 
-Lessons are the individual teaching sessions within a study. Each lesson represents what happens during a single class meeting. This is where you build out the detailed content that volunteers will use when they teach.
+<div class="article-intro">
+
+Lessons are the individual teaching sessions within a study. Each lesson represents what happens during a single class meeting. This is where you build out the detailed content -- venues, sections, roles, and actions -- that volunteers will use when they teach.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- [Create a program](./managing-programs.md) and [add a study](./managing-studies.md) to it
+- Have admin permissions for Lessons.church (see the [Administration overview](./index.md))
+
+</div>
 
 ## Creating a Lesson
 
@@ -25,10 +37,10 @@ Each lesson is organized into several layers:
 
 There are four types of actions you can assign to a role within a section:
 
-- **Say** -- text the volunteer should speak or paraphrase to the class.
-- **Do** -- a physical activity or instruction to carry out.
-- **Note** -- background information or a reminder for the volunteer (not read aloud).
-- **Play** -- a video or audio clip to play during the section.
+- **Say** -- Text the volunteer should speak or paraphrase to the class.
+- **Do** -- A physical activity or instruction to carry out.
+- **Note** -- Background information or a reminder for the volunteer (not read aloud).
+- **Play** -- A video or audio clip to play during the section.
 
 ## Adding a Venue
 
@@ -58,3 +70,9 @@ You can attach downloadable materials directly to a lesson -- for example, an ac
 :::tip
 Build your lesson from the volunteer's perspective. Step through the sections and actions in order and ask yourself whether a first-time volunteer could follow along without any other preparation.
 :::
+
+## Related Articles
+
+- [Managing Programs](./managing-programs.md) -- Set up the top-level curriculum container
+- [Managing Studies](./managing-studies.md) -- Organize lessons into study groups
+- [Statistics](./statistics.md) -- Track how your lessons are being used

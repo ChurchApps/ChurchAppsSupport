@@ -4,7 +4,19 @@ title: "Presenter Mode"
 
 # Presenter Mode
 
-Presenter Mode turns a lesson into a full-screen, projection-friendly display. It is designed for showing lesson content on classroom screens, projectors, or TVs so that everyone in the room can follow along.
+<div class="article-intro">
+
+Presenter Mode turns a lesson into a full-screen, projection-friendly display. It is designed for showing lesson content on classroom screens, projectors, or TVs so that everyone in the room can follow along during class time.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- [Schedule a lesson](../classrooms/scheduling-lessons.md) to a classroom, or navigate to a lesson through the [content library](../browsing/index.md)
+- Make sure your display (projector, TV, or monitor) is connected and configured
+
+</div>
 
 ## Entering Presenter Mode
 
@@ -33,3 +45,8 @@ If you are using a projector, make sure your display is set to mirror or extend 
 ## Exiting Presenter Mode
 
 To leave Presenter Mode, press the **Escape** key or click the exit button in the corner of the screen. You will return to the normal lesson view.
+
+## Related Articles
+
+- [Volunteer Guides](./volunteer-guides.md) -- Share role-specific instructions with your team while you present
+- [Downloads and Materials](./downloads.md) -- Print handouts and activity sheets to complement the presentation

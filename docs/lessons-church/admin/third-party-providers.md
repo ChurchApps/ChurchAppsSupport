@@ -4,7 +4,19 @@ title: "Third-Party Providers"
 
 # Third-Party Providers
 
+<div class="article-intro">
+
 Lessons.church supports external curriculum providers through the Open Lesson Format. This means you can import content from other organizations and make it available alongside the built-in library, giving churches access to curriculum from multiple sources in one place.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Have admin permissions for Lessons.church (see the [Administration overview](./index.md))
+- Obtain the feed URL from the external provider you want to connect
+
+</div>
 
 ## Adding a Provider
 
@@ -38,4 +50,8 @@ If you are a content provider interested in making your curriculum available thr
 
 :::info
 Third-party content is managed by the external provider. If you notice missing or outdated content from a provider, the issue may need to be resolved on their end.
+:::
+
+:::tip
+For church-level external provider configuration (not admin-level), see the [External Providers](../browsing/external-providers.md) page in the Browsing section.
 :::

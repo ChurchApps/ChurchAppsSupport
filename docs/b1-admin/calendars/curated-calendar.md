@@ -4,7 +4,20 @@ title: "Curated Calendar"
 
 # Curated Calendar
 
+<div class="article-intro">
+
 A curated calendar aggregates events from multiple groups into one unified calendar view. This is ideal for creating a church-wide calendar that shows everything happening across all your ministries and groups in a single place.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Set up the [groups](../groups/creating-groups.md) whose events you want to include
+- Ensure group leaders have added events to their respective groups
+- Familiarize yourself with the basics of [Creating Calendars](creating-calendars)
+
+</div>
 
 ## Creating a Curated Calendar
 
@@ -36,7 +49,7 @@ Once your curated calendar is set up, you can share it in several ways:
 - **Download the ICS file** -- Download the calendar file to import it into a calendar application.
 
 :::info
-When group leaders add new events to their groups, those events automatically appear in your curated calendar. You do not need to manually update the curated calendar each time a new event is added.
+When group leaders add new events to their [groups](../groups/creating-groups.md), those events automatically appear in your curated calendar. You do not need to manually update the curated calendar each time a new event is added.
 :::
 
 ## Next Steps

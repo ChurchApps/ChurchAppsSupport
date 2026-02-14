@@ -4,7 +4,18 @@ title: "Searching"
 
 # Searching
 
-When you know what topic you want to teach but are not sure which program or study contains it, the search feature helps you find the right content quickly.
+<div class="article-intro">
+
+When you know what topic you want to teach but are not sure which program or study contains it, the search feature helps you find the right content quickly. Search works across the entire Lessons.church library, including content from external providers.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Familiarize yourself with the [Browsing Content](./index.md) overview to understand all available navigation options
+
+</div>
 
 ## How to Search
 
@@ -32,4 +43,4 @@ Search is most useful when:
 If your keyword returns too many results, try a more specific phrase. For example, search for "Good Samaritan" instead of just "Samaritan" to narrow things down.
 :::
 
-If you already know which program you want, browsing by program is usually faster. See [Programs and Studies](./programs-and-studies) for details on navigating the content hierarchy.
+If you already know which program you want, browsing by program is usually faster. See [Programs and Studies](./programs-and-studies.md) for details on navigating the content hierarchy.

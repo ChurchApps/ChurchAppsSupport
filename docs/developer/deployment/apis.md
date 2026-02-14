@@ -1,6 +1,23 @@
+---
+title: "API Deployment"
+---
+
 # API Deployment
 
-ChurchApps APIs are deployed as AWS Lambda functions using the Serverless Framework.
+<div class="article-intro">
+
+ChurchApps APIs are deployed as AWS Lambda functions using the Serverless Framework. This page covers the build, deploy, and configuration workflow for staging and production environments.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Set up the API locally -- see [Local API Setup](../api/local-setup)
+- Configure AWS credentials on your machine
+- Ensure you have access to the target AWS account
+
+</div>
 
 ## Build
 
@@ -48,3 +65,9 @@ Never commit production credentials to the repository. All sensitive configurati
 :::tip
 To test a deployment without affecting production, always deploy to staging first using `npm run deploy-staging` and verify the changes before promoting to prod.
 :::
+
+## Related Articles
+
+- **[Local API Setup](../api/local-setup)** -- Setting up the API for development
+- **[Module Structure](../api/module-structure)** -- Understanding the Lambda function architecture
+- **[Web App Deployment](./web-apps)** -- Deploying the frontend applications

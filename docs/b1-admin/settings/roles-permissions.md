@@ -4,7 +4,20 @@ title: "Roles & Permissions"
 
 # Roles & Permissions
 
-Roles let you control what different users can access within your ChurchApps account. You can create custom roles for staff, volunteers, and other team members, each with their own level of access.
+<div class="article-intro">
+
+Roles let you control what different users can access within your ChurchApps account. You can create custom roles for staff, volunteers, and other team members, each with their own level of access to keep your data secure.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- You need Domain Admin access or a role with permission to manage roles
+- Have a list of team members and the areas they need access to
+- Review the available permission categories below to plan your roles
+
+</div>
 
 ## Accessing Roles
 
@@ -46,10 +59,10 @@ Each role can be granted access to specific areas of B1 Admin. Permissions are o
 
 Use the checkboxes on the right side of the Roles page to enable or disable access for each area.
 
-:::note
+:::warning
 **Domain Admins** have full access to all areas of your ChurchApps account. Their permissions cannot be modified or restricted. Use this role only for your most trusted administrators.
 :::
 
 :::tip
-Create specific roles like "Treasurer" with only **Donations** access, or "Check-In Volunteer" with only **Attendance** access. This follows the principle of least privilege and keeps your data secure.
+Create specific roles like "Treasurer" with only **Donations** access, or "Check-In Volunteer" with only **Attendance** access. This follows the principle of least privilege and keeps your data secure. See [Data Security](./data-security.md) for more on how ChurchApps protects your information.
 :::

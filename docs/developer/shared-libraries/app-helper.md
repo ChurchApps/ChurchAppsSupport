@@ -1,6 +1,22 @@
+---
+title: "AppHelper"
+---
+
 # AppHelper
 
-The `@churchapps/apphelper*` packages provide shared React components and utilities for all ChurchApps web applications. AppHelper is structured as a workspace (monorepo) containing 6 packages.
+<div class="article-intro">
+
+The `@churchapps/apphelper*` packages provide shared React components and utilities for all ChurchApps web applications. AppHelper is structured as a monorepo workspace containing six packages covering core components, authentication, donations, forms, markdown, and website/CMS functionality.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Install **Node.js** and **Git** -- see [Prerequisites](../setup/prerequisites)
+- Familiarize yourself with the [npm link workflow](./index.md) for local development
+
+</div>
 
 ## Packages
 
@@ -56,3 +72,9 @@ npm run publish:all
 :::warning
 When publishing, make sure to update the version number in the relevant `package.json` file(s) before running the publish command. All packages that depend on a changed package should also be updated.
 :::
+
+## Related Articles
+
+- **[Helpers](./helpers)** -- The base utility package used alongside AppHelper
+- **[Web Apps](../web-apps/)** -- The web applications that consume these packages
+- **[Shared Libraries Overview](./index.md)** -- `npm link` workflow and package overview

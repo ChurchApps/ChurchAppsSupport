@@ -4,7 +4,11 @@ title: "Classroom Mode"
 
 # Classroom Mode
 
+<div class="article-intro">
+
 Classroom Mode connects your TV to a specific room in your church. Once paired, FreePlay automatically downloads the lesson that is scheduled for that room, so your volunteers can simply press **Start Lesson** when class begins.
+
+</div>
 
 ## How It Works
 

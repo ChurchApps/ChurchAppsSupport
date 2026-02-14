@@ -4,7 +4,18 @@ title: "Logging In"
 
 # Logging In
 
+<div class="article-intro">
+
 B1 Mobile uses the same ChurchApps account you use on B1.church and other ChurchApps products. If you already have an account, you can sign in with your existing email and password.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- [Install B1 Mobile](./installing) on your iOS or Android device
+
+</div>
 
 ## How to Log In
 
@@ -13,7 +24,7 @@ B1 Mobile uses the same ChurchApps account you use on B1.church and other Church
 3. Enter your **email address** and **password**.
 4. Tap **Sign In**.
 
-After signing in, you will be taken to the dashboard. If you have not selected a church yet, you will be prompted to search for and select one.
+After signing in, you will be taken to the [dashboard](../dashboard/). If you have not selected a church yet, you will be prompted to search for and select one.
 
 ## Creating a New Account
 
@@ -25,7 +36,11 @@ If you do not have a ChurchApps account yet, you can create one directly in the 
 4. Check your email for a message with your temporary password.
 5. Return to the app, tap **Login**, and sign in with your email and the temporary password from the email.
 
-After your first login, you can change your password from your profile settings.
+After your first login, you can change your password from your [profile settings](../profile/editing-profile.md).
+
+:::warning
+Be sure to check your spam or junk folder if you do not receive the registration email within a few minutes.
+:::
 
 ## Forgot Your Password
 

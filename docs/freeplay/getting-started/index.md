@@ -4,13 +4,17 @@ title: "Getting Started"
 
 # Getting Started with FreePlay
 
-FreePlay is available for Android TV, Amazon Fire TV, and Apple TV. This guide walks you through installing the app and launching it for the first time.
+<div class="article-intro">
+
+FreePlay is available for Android TV, Amazon Fire TV, and Apple TV. This guide walks you through installing the app, launching it for the first time, and learning the basic TV remote controls you will use throughout the app.
+
+</div>
 
 ## Installing FreePlay
 
 ### Android TV / Amazon Fire TV
 
-1. Open the app store on your TV (Google Play Store or Amazon Appstore)
+1. Open the app store on your TV (**Google Play Store** or **Amazon Appstore**)
 2. Search for **FreePlay**
 3. Select the app and choose **Install**
 

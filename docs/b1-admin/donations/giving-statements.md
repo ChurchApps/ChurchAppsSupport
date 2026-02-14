@@ -4,7 +4,19 @@ title: "Giving Statements"
 
 # Giving Statements
 
-At the end of each year, your donors need a summary of their tax-deductible giving for their records. B1 Admin makes it easy to generate these statements for all donors at once.
+<div class="article-intro">
+
+At the end of each year, your donors need a summary of their tax-deductible giving for their records. B1 Admin makes it easy to generate these statements for all donors at once, saving you hours of manual work.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Verify that your [funds](funds.md) are correctly marked as **Tax Deductible** -- only donations to tax-deductible funds appear on statements
+- Ensure all donations have been [recorded](recording-donations.md) and any online transactions have been [imported from Stripe](stripe-import.md)
+
+</div>
 
 ## Accessing Giving Statements
 

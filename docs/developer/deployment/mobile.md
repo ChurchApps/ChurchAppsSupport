@@ -1,6 +1,23 @@
+---
+title: "Mobile Deployment"
+---
+
 # Mobile Deployment
 
-ChurchApps mobile apps are built and deployed using **Expo EAS Build** and distributed through the app stores.
+<div class="article-intro">
+
+ChurchApps mobile apps are built and deployed using **Expo EAS Build** and distributed through the app stores. This page covers building, submitting, and pushing over-the-air updates for both Android and iOS.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Set up the mobile app locally -- see [B1 Mobile](../mobile/b1-mobile)
+- Install and configure the [EAS CLI](https://docs.expo.dev/eas/)
+- Have access to the Google Play Console (Android) and/or Apple App Store Connect (iOS)
+
+</div>
 
 ## Building
 
@@ -18,11 +35,11 @@ eas build --platform ios --profile production
 
 ## Submitting to App Stores
 
-### Android — Google Play Store
+### Android -- Google Play Store
 
 After a successful EAS build, the Android binary (AAB) is submitted to the Google Play Store through the Play Console.
 
-### iOS — Apple App Store
+### iOS -- Apple App Store
 
 Submit the iOS build directly via EAS:
 
@@ -41,7 +58,7 @@ npm run update:production
 This uses EAS Update to push changes directly to users without a full store submission.
 
 :::tip
-OTA updates are significantly faster than store builds — changes can reach users in minutes rather than days. Use them for bug fixes, copy changes, and minor UI updates that do not involve native code changes.
+OTA updates are significantly faster than store builds -- changes can reach users in minutes rather than days. Use them for bug fixes, copy changes, and minor UI updates that do not involve native code changes.
 :::
 
 ## Version Numbers
@@ -57,3 +74,9 @@ Before creating a store build, version numbers must be updated in multiple files
 :::warning
 Forgetting to update version numbers in all files will cause build failures or app store rejection. Double-check every file listed above before starting a production build.
 :::
+
+## Related Articles
+
+- **[B1 Mobile](../mobile/b1-mobile)** -- Local setup and development guide
+- **[API Deployment](./apis)** -- Deploying the backend APIs
+- **[Web App Deployment](./web-apps)** -- Deploying the frontend web applications

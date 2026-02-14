@@ -4,7 +4,20 @@ title: "Connecting to Providers"
 
 # Connecting to Providers
 
-Before you can browse content from a provider, you need to connect to it. Some providers require authentication, while others can be connected with a single click.
+<div class="article-intro">
+
+Before you can browse content from a provider, you need to connect to it. Some providers require authentication through a QR code or email login, while others can be connected with a single click.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Install and launch FreePlay -- see [Getting Started](../getting-started/)
+- Have your TV remote ready for navigation
+- For providers requiring login, have your account credentials available
+
+</div>
 
 ## Browsing Available Providers
 
@@ -29,7 +42,9 @@ Certain providers use a device flow, similar to how you sign in to streaming app
 6. FreePlay detects the successful login and displays **Connected!**
 7. The content browser opens automatically
 
+:::info
 A pulsing **Waiting for authorization** indicator shows that FreePlay is checking for your login. The code expires after several minutes, so complete the process promptly.
+:::
 
 ## Form Login
 
@@ -55,6 +70,11 @@ To disconnect from a provider you have already connected:
 
 After disconnecting, the provider's content will no longer appear in your sidebar.
 
-:::note
+:::warning
 Disconnecting removes the saved authentication from your device. You will need to sign in again if you want to reconnect later.
 :::
+
+## Related Articles
+
+- **[Browsing and Downloading Content](./browsing-content)** - Navigate folders and play content after connecting
+- **[Content Providers Overview](./index.md)** - See all available providers

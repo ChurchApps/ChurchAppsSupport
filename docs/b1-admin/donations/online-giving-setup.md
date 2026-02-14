@@ -4,7 +4,20 @@ title: "Online Giving Setup"
 
 # Online Giving Setup
 
-B1 Admin integrates with **Stripe** and **PayPal** so your members can give online through your B1.church site. Once configured, online donations automatically appear in your donation records alongside manually entered gifts.
+<div class="article-intro">
+
+B1 Admin integrates with **Stripe** and **PayPal** so your members can give online through your B1.church site. Once configured, online donations automatically appear in your donation records alongside manually entered gifts, keeping everything in one system.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Set up your [donation funds](funds.md) so donors can designate their gifts
+- Create a Stripe account at [stripe.com](https://stripe.com) and activate it (take it out of test mode)
+- Have your B1 Admin login credentials ready
+
+</div>
 
 ## Setting Up Stripe
 
@@ -20,8 +33,8 @@ B1 Admin integrates with **Stripe** and **PayPal** so your members can give onli
 10. Go back to Stripe and reveal your **Secret Key** (you can only view this once, so save a backup).
 11. Paste the Secret Key into the **Secret Key** field and click **Save**.
 
-:::note
-Your Stripe Secret Key is only shown once. Copy it to a secure location before navigating away from the Stripe dashboard.
+:::warning
+Your Stripe Secret Key is only shown once. Copy it to a secure location before navigating away from the Stripe dashboard. If you lose it, you will need to generate a new key.
 :::
 
 ## Adding a Donation Page to Your B1.church Site
@@ -54,3 +67,9 @@ You can configure your giving page to let donors optionally cover processing fee
 :::tip
 After setup, make a small test donation to confirm everything is working before announcing online giving to your congregation.
 :::
+
+## Next Steps
+
+- Use [Stripe Import](stripe-import.md) to pull online transactions into B1 Admin if they are not syncing automatically
+- Check your [Donation Reports](donation-reports.md) to verify that online donations are appearing correctly
+- Generate [Giving Statements](giving-statements.md) that include both online and offline donations

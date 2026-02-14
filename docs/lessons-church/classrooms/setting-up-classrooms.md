@@ -4,7 +4,19 @@ title: "Setting Up Classrooms"
 
 # Setting Up Classrooms
 
-Before you can schedule lessons, you need to create classrooms that represent your teaching environments. This guide walks you through the process.
+<div class="article-intro">
+
+Before you can schedule lessons, you need to create classrooms that represent your teaching environments. This guide walks you through creating, naming, and managing classrooms in the Lessons.church portal.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- [Create an account](../getting-started/creating-account.md) and connect to your church
+- Familiarize yourself with the [Portal Overview](../getting-started/portal-overview.md)
+
+</div>
 
 ## Creating a Classroom
 
@@ -34,4 +46,4 @@ Your classrooms appear on the portal dashboard where you can manage them at any 
 
 ## What's Next
 
-Once your classrooms are set up, you are ready to start [scheduling lessons](./scheduling-lessons) so your volunteers know what to teach each week.
+Once your classrooms are set up, you are ready to start [scheduling lessons](./scheduling-lessons.md) so your volunteers know what to teach each week.

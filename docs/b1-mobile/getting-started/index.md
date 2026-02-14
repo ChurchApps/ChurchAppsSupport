@@ -4,7 +4,11 @@ title: "Getting Started"
 
 # Getting Started
 
+<div class="article-intro">
+
 Getting started with B1 Mobile takes just a few minutes. Download the app, sign in with your ChurchApps account, select your church, and you are ready to go.
+
+</div>
 
 ## Quick Start
 
@@ -22,5 +26,5 @@ That is it. Once you have selected your church, the app loads your church's bran
 - [Switching Churches](./switching-churches) -- How to switch between churches if you belong to more than one.
 
 :::tip
-B1 Mobile uses the same ChurchApps account as all other ChurchApps products. If you already have an account from B1.church, B1 Admin, or Lessons.church, you can use those same credentials to log in.
+B1 Mobile uses the same ChurchApps account as all other ChurchApps products. If you already have an account from [B1.church](../../b1-church/), B1 Admin, or Lessons.church, you can use those same credentials to log in.
 :::

@@ -4,11 +4,23 @@ title: "Self Check-In"
 
 # Self Check-In
 
-The self check-in process lets you record attendance for yourself and your household in just a few steps. Navigate to the **Check-In** tab in the sidebar to get started.
+<div class="article-intro">
+
+The self check-in process lets you record attendance for yourself and your household in just a few steps. It is a quick alternative to using a physical kiosk at the church.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- You must be [logged in](../getting-started/logging-in.md) to your B1.church account.
+- Your household members must be linked to your account. If a family member is missing, ask your church administrator to add them to your household.
+
+</div>
 
 ## The Check-In Flow
 
-Check-in follows a simple three-step process:
+Check-in follows a simple three-step process. Navigate to the **Check-In** tab in the [sidebar](../getting-started/navigating.md) to get started.
 
 ### Step 1: Select a Service
 
@@ -31,7 +43,7 @@ You do not need to check in every household member -- only expand and assign gro
 
 Once you have selected groups for everyone who is attending, click the **Complete Check-in** button at the bottom of the page.
 
-You will see a confirmation screen with the message "Check-in Complete!" along with a note that your attendance has been saved. Click **Back to My Page** to return to the timeline.
+You will see a confirmation screen with the message "Check-in Complete!" along with a note that your attendance has been saved. Click **Back to My Page** to return to the [timeline](../community/timeline.md).
 
 :::tip
 If you need to change a group selection before completing check-in, tap the **Change** button next to any service time to pick a different group.
@@ -41,3 +53,7 @@ If you need to change a group selection before completing check-in, tap the **Ch
 
 - You can only check in household members that are linked to your account. If a family member is missing, ask your church administrator to add them to your household.
 - If no services appear on the check-in page, your church may not have any services configured for check-in at this time.
+
+:::warning
+Check-in is only available when your church has active services configured. If you do not see any services listed, check with your church office to confirm whether self check-in is enabled.
+:::

@@ -4,7 +4,19 @@ title: "Logging In"
 
 # Logging In
 
-Before the kiosk can be used for check-in, you need to sign in with a ChurchApps account that has access to your church.
+<div class="article-intro">
+
+Before the kiosk can be used for check-in, you need to sign in with a ChurchApps account that has access to your church. This page covers the first-time login process, church selection, auto-login behavior, and how to log out.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Install B1 Church Checkin on your Android tablet (see [Getting Started](./index.md))
+- Have your ChurchApps account email and password ready
+
+</div>
 
 ## First-Time Login
 
@@ -15,7 +27,7 @@ Before the kiosk can be used for check-in, you need to sign in with a ChurchApps
 
 The app validates your credentials and signs you in. If the email or password is incorrect, you will see an error message at the bottom of the screen.
 
-:::note
+:::info
 This is the same email and password you use for B1 Admin or any other ChurchApps product. You do not need a separate account for the check-in kiosk.
 :::
 
@@ -49,3 +61,11 @@ Logging out is intentionally hidden so that church members using the kiosk canno
 3. Tap **Logout** to confirm, or **Cancel** to stay signed in.
 
 This clears your saved credentials and returns you to the login screen.
+
+:::warning
+Logging out clears all saved credentials and church selection. You will need to re-enter your email and password to use the kiosk again. Only log out when you need to switch accounts or reconfigure the kiosk.
+:::
+
+## Next Steps
+
+Once logged in, you can [set up a printer](./printer-setup) or go directly to the [check-in workflow](../check-in/).

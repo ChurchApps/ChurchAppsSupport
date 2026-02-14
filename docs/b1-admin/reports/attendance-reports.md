@@ -4,7 +4,20 @@ title: "Attendance Reports"
 
 # Attendance Reports
 
-B1 Admin provides three attendance reports to help you understand how people are engaging with your services and groups. Each report offers a different perspective on your attendance data.
+<div class="article-intro">
+
+B1 Admin provides three attendance reports to help you understand how people are engaging with your services and groups. Each report offers a different perspective on your attendance data, from high-level trends to daily breakdowns.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Make sure attendance is being [tracked consistently](../attendance/tracking-attendance.md) for your services and groups
+- Ensure your [groups](../groups/creating-groups.md) and services are configured in B1 Admin
+- You need the appropriate [permissions](../settings/roles-permissions.md) to access reports
+
+</div>
 
 ## Attendance Trend
 
@@ -50,6 +63,6 @@ Use the Attendance Trend report for a high-level overview and the Daily Group At
 - **Board reports** -- Include attendance data in your regular leadership reports to show ministry health.
 - **Event evaluation** -- Compare attendance before and after special events to measure their impact.
 
-:::note
-Attendance data is recorded through your group and service check-in processes. Make sure attendance is being tracked consistently for the most accurate reports.
+:::warning
+Attendance data is recorded through your group and service check-in processes. If attendance is not being tracked consistently, your reports will not accurately reflect actual participation. See [Tracking Attendance](../attendance/tracking-attendance.md) for setup instructions.
 :::

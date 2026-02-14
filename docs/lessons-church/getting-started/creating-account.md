@@ -4,7 +4,19 @@ title: "Creating an Account"
 
 # Creating an Account
 
-Lessons.church uses the same ChurchApps account system as B1.church. If you already have a ChurchApps account, you can log in directly. Otherwise, registration takes just a couple of minutes.
+<div class="article-intro">
+
+Lessons.church uses the same ChurchApps account system as B1.church. If you already have a ChurchApps account, you can log in directly. Otherwise, registration takes just a couple of minutes and gives you access to the full curriculum library.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Have a valid email address ready for account verification
+- If your church already uses Lessons.church, ask your administrator for details before creating a new church profile
+
+</div>
 
 ## Registering a New Account
 
@@ -43,6 +55,10 @@ If you already have a ChurchApps account from B1.church or another ChurchApps to
 2. Enter your existing **email** and **password**.
 3. You will be taken to the portal where you can manage your classrooms and schedules.
 
+:::info
+Your ChurchApps account works across all ChurchApps products. One account gives you access to B1 Admin, B1.church, Lessons.church, and more.
+:::
+
 ## What Comes Next
 
-Once you are logged in and connected to your church, head to the [Portal Overview](./portal-overview) to learn how to navigate the dashboard and start setting up classrooms.
+Once you are logged in and connected to your church, head to the [Portal Overview](./portal-overview.md) to learn how to navigate the dashboard and start setting up classrooms.

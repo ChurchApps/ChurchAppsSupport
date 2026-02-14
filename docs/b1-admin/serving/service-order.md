@@ -4,7 +4,19 @@ title: "Service Order"
 
 # Service Order
 
+<div class="article-intro">
+
 The service order defines the sequence of elements in your worship service. Use it to lay out everything from the opening song to the closing prayer, so your entire team knows the flow of the service ahead of time.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- [Create a service plan](./plans.md) for the date you want to build a service order for
+- Optionally, add [songs](./songs.md) to your library so you can link them directly into the service order
+
+</div>
 
 ## Accessing the Service Order
 
@@ -32,7 +44,7 @@ The service order is a list of items arranged in the sequence they will occur du
 4. Click **Save**.
 
 :::tip
-You can add songs directly from your [Songs](./songs) library. This links the song details, including lyrics and arrangements, to your service plan.
+You can add songs directly from your [Songs](./songs.md) library. This links the song details, including lyrics and arrangements, to your service plan so your worship team has everything they need.
 :::
 
 ## Reordering Items
@@ -51,3 +63,9 @@ The service order is specific to each plan. Changes you make here only affect th
 ## Sharing the Service Order
 
 Once your service order is complete, you can print the full plan (including the service order) from the plan detail page. This gives your team a complete rundown of the service.
+
+## Next Steps
+
+- Manage your worship repertoire on the [Songs](./songs.md) page
+- Assign volunteers to the service on the [Plans](./plans.md) Assignments tab
+- Create [Tasks](./tasks.md) for any follow-up items related to the service

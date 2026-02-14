@@ -4,7 +4,11 @@ title: "Developer Documentation"
 
 # Developer Documentation
 
-ChurchApps is a collection of approximately 20 open-source projects that together provide a complete church management platform. The projects span backend APIs, web applications, mobile apps, a desktop application, and shared libraries -- all written in TypeScript.
+<div class="article-intro">
+
+ChurchApps is a collection of approximately 20 open-source projects that together provide a complete church management platform. The projects span backend APIs, web applications, mobile apps, a desktop application, and shared libraries -- all written in TypeScript. This section provides everything you need to set up a local development environment and start contributing.
+
+</div>
 
 ## Architecture at a Glance
 

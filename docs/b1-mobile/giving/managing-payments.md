@@ -4,7 +4,18 @@ title: "Managing Payment Methods"
 
 # Managing Payment Methods
 
+<div class="article-intro">
+
 The **Manage** tab in the giving section lets you view and manage your saved payment methods. By saving a card, you can make future donations faster without having to re-enter your details each time.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- [Install B1 Mobile](../getting-started/installing) and [log in](../getting-started/logging-in) to your account
+
+</div>
 
 ## Viewing Your Payment Methods
 
@@ -17,10 +28,10 @@ To add a new card:
 1. Open the **Giving** section in B1 Mobile.
 2. Tap the **Manage** tab.
 3. Tap the option to add a new payment method.
-4. Enter your card details. The information is sent securely to Stripe for processing.
+4. Enter your card details. The information is sent securely to **Stripe** for processing.
 5. Once saved, the new card will appear in your list of payment methods.
 
-Your saved card will then be available as a payment option the next time you make a donation from the **Donate** tab.
+Your saved card will then be available as a payment option the next time you [make a donation](./making-donations) from the **Donate** tab.
 
 ## Removing a Payment Method
 
@@ -32,11 +43,15 @@ If you no longer want a card on file, you can remove it from the **Manage** tab:
 
 The card will no longer appear as a payment option when you make a donation.
 
-:::note
-Removing a payment method does not affect any past donations. Your donation history remains unchanged.
+:::info
+Removing a payment method does not affect any past donations. Your [donation history](./donation-history) remains unchanged.
 :::
 
-## Next Steps
+:::tip
+Keep at least one payment method saved for quick giving. This way, you can use the **Repeat** button on the **Overview** tab to give again with a single tap.
+:::
+
+## Related Articles
 
 - [Making a Donation](./making-donations) -- Learn how to make a gift using a saved payment method
 - [Donation History](./donation-history) -- View your giving summary and past donations

@@ -4,7 +4,19 @@ title: "Initial Setup"
 
 # Initial Setup
 
-After creating your account and church, there are a few important steps to configure before inviting your team. This guide walks you through the recommended setup order.
+<div class="article-intro">
+
+After creating your account and church, there are a few important steps to configure before inviting your team. This guide walks you through the recommended setup order so your church is ready to go from day one.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- [Create your account](./create-account.md) and register your church
+- Have your church logo and branding assets ready (optional but recommended)
+
+</div>
 
 ## Step 1: Configure Your Church Information
 
@@ -15,7 +27,7 @@ After creating your account and church, there are a few important steps to confi
 
 ## Step 2: Set Up Your Branding
 
-1. From the Settings page, upload your **church logo**.
+1. From the **Settings** page, upload your **church logo**.
 2. Configure any additional branding options such as colors and images.
 3. Your branding will appear on your B1.church website and in the B1 Mobile app.
 
@@ -25,7 +37,7 @@ Having your logo and branding ready before inviting team members gives a polishe
 
 ## Step 3: Configure Roles and Invite Your Team
 
-1. Click **Roles** from the Settings page.
+1. Click **Roles** from the **Settings** page.
 2. Create roles for your team (for example, "Pastor", "Secretary", "Treasurer").
 3. Assign the appropriate permissions to each role.
 4. Add team members by searching for their accounts and assigning them to roles.
@@ -34,7 +46,7 @@ Having your logo and branding ready before inviting team members gives a polishe
 
 With your team in place, start building out the core areas of B1 Admin:
 
-1. **People** -- Add members to your church directory. This is the foundation for everything else, so start here. You can add people manually or use the Import tool from Settings.
+1. **People** -- Add members to your church directory. This is the foundation for everything else, so start here. You can add people manually or use the **Import** tool from **Settings**.
 2. **Groups** -- Create groups for small groups, ministry teams, classes, and other gatherings.
 3. **Attendance** -- Configure your campuses, services, and service times for tracking attendance.
 4. **Donations** -- Set up donation funds and connect your payment gateway (Stripe) to accept online giving.

@@ -4,7 +4,20 @@ title: "Initial Setup"
 
 # Initial Setup
 
+<div class="article-intro">
+
 Every B1 account comes with a website ready to go. This guide walks you through setting up your church domain, configuring your site's appearance, creating your first pages, and organizing your navigation.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- You need a B1.church account with administrative access
+- If using a custom domain, have your DNS provider login credentials ready (e.g., GoDaddy, Cloudflare, or AWS)
+- Prepare your church logo in PNG format with a transparent background for best results
+
+</div>
 
 ## Setting Up Your Domain
 
@@ -19,7 +32,7 @@ Your church automatically receives a subdomain on B1.church (for example, `yourc
 5. Return to B1.church Admin, add your custom domain to the list, and click **Add** then **Save**. Your site will be accessible from your custom domain within a few minutes.
 
 :::tip
-If you do not see the Settings option, ask the person who set up your church account to grant you the "Edit Church Settings" permission.
+If you do not see the Settings option, ask the person who set up your church account to grant you the "Edit Church Settings" permission. See [Roles & Permissions](../settings/roles-permissions.md) for details.
 :::
 
 ## Creating Your First Page
@@ -30,6 +43,10 @@ If you do not see the Settings option, ask the person who set up your church acc
 4. Click **Page Settings** and set the URL path to `/` (a forward slash with no text) for your home page. Other pages use `/page-name`.
 5. Click **Edit Content** to start building. Every page must begin with a **Section** -- this is the container for all other elements.
 6. After adding a section, click **Add Content** again to insert text, images, videos, cards, forms, and more by dragging them into your section.
+
+:::info
+For detailed instructions on working with pages, navigation, and page types, see [Managing Pages](managing-pages).
+:::
 
 ## Configuring Site Appearance
 
@@ -55,3 +72,4 @@ Your navigation links appear in the left sidebar of the Website Pages view. To o
 
 - [Managing Pages](managing-pages) -- Learn how to work with pages and navigation in detail
 - [Appearance](appearance) -- Fine-tune your site's colors, fonts, and layout
+- [Files](files) -- Upload images and documents for your website

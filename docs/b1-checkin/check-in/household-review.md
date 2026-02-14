@@ -4,7 +4,19 @@ title: "Reviewing Your Household"
 
 # Reviewing Your Household
 
-After you select a person from the search results, the app loads your entire household and displays it on the household review screen. This is where you can see everyone in your family and manage their group assignments before checking in.
+<div class="article-intro">
+
+After you select a person from the search results, the app loads your entire household and displays it on the household review screen. This is the central hub of the check-in process where you can see everyone in your family and manage their group assignments before checking in.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- [Select a service](./selecting-service) from the services screen
+- [Look up a member](./looking-up-members) and select them from the search results
+
+</div>
 
 ## Viewing Household Members
 
@@ -41,3 +53,9 @@ From the household review screen, you have three options:
 :::info
 Any group assignments from a previous check-in to the same service are pre-loaded automatically. If your children attend the same groups each week, you may not need to change anything -- just review and check in.
 :::
+
+## Next Steps
+
+- [Assign groups](./group-assignment) to family members who need to check into a specific class or program.
+- [Add a guest](./adding-guests) if someone is visiting with your family.
+- [Complete check-in](./completing-checkin) when everyone's assignments look correct.

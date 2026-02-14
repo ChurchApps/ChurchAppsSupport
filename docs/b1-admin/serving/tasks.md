@@ -4,7 +4,19 @@ title: "Tasks"
 
 # Tasks
 
-Tasks let you assign action items to people or groups in your church. Whether it is a one-time to-do or a recurring responsibility, tasks help you track what needs to be done and who is responsible.
+<div class="article-intro">
+
+Tasks let you assign action items to people or groups in your church. Whether it is a one-time to-do or a recurring responsibility, tasks help you track what needs to be done and who is responsible so nothing gets overlooked.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Make sure the people or [groups](../groups/creating-groups.md) you want to assign tasks to exist in B1 Admin
+- Navigate to the **Serving** section to access the Tasks page
+
+</div>
 
 ## Viewing Tasks
 
@@ -42,5 +54,10 @@ Click on any task to open its detail page. From here you can:
 4. Closed tasks are removed from the default view but can still be accessed by enabling **Show Closed**.
 
 :::info
-You can automate recurring tasks so they are created on a schedule. See [Automations](./automations) for details on setting this up.
+You can automate recurring tasks so they are created on a schedule. See [Automations](./automations.md) for details on setting this up.
 :::
+
+## Next Steps
+
+- Set up [Automations](./automations.md) to create recurring tasks automatically
+- Use tasks alongside [Service Plans](./plans.md) to track service preparation action items

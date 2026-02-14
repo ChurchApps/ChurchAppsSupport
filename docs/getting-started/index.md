@@ -4,7 +4,11 @@ title: "Getting Started"
 
 # Getting Started
 
+<div class="article-intro">
+
 Welcome to ChurchApps -- free, open-source tools designed to help your church thrive. Whether you are a small congregation or a large multi-campus organization, ChurchApps provides everything you need to manage and grow your church community.
+
+</div>
 
 ## ChurchApps Products
 
@@ -33,3 +37,4 @@ This documentation will walk you through everything you need to get up and runni
 - [Creating Your Account](./create-account.md) -- Register and set up your church
 - [Initial Setup](./initial-setup.md) -- Configure your church after account creation
 - [B1 Admin](/docs/b1-admin/) -- Explore the full B1 Admin documentation
+- [Lessons.church](/docs/lessons-church/) -- Browse and present free curriculum

@@ -4,7 +4,19 @@ title: "Logging In"
 
 # Logging In
 
-Logging in to B1.church gives you access to the member portal where you can view your timeline, manage groups, give online, and use all of the tools your church has set up.
+<div class="article-intro">
+
+Logging in to B1.church gives you access to the member portal where you can view your timeline, manage groups, give online, and use all of the tools your church has set up. This article covers how to sign in, navigate your user menu, and log out.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- You need a ChurchApps account. See [Getting Started](../getting-started/) to create one.
+- You need your church's B1.church URL (for example, `https://yourchurchname.b1.church`).
+
+</div>
 
 ## How to Log In
 
@@ -17,7 +29,7 @@ After signing in, you will be taken back to the page you were on before you clic
 
 ## Accessing the Member Portal
 
-Once logged in, you can access the member portal by clicking on your **name** in the top-right corner of the page and selecting **Member Portal** from the menu. The member portal is where all of your personal church tools live, including your timeline, groups, giving, and more.
+Once logged in, you can access the member portal by clicking on your **name** in the top-right corner of the page and selecting **Member Portal** from the menu. The member portal is where all of your personal church tools live, including your [timeline](../community/timeline.md), [groups](../groups/), [giving](../giving/), and more.
 
 ## Your User Menu
 

@@ -1,11 +1,22 @@
+---
+title: "B1 Admin"
+---
+
 # B1 Admin
+
+<div class="article-intro">
 
 B1Admin is the church administration dashboard -- a React single-page application built with Vite and Material-UI. Church staff use it to manage people, groups, attendance, donations, content, and more.
 
-## Prerequisites
+</div>
 
-- **Node.js 22+**
-- **Git**
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Install **Node.js 22+** and **Git** -- see [Prerequisites](../setup/prerequisites)
+- Configure your API target (staging or local) -- see [Environment Variables](../setup/environment-variables)
+
+</div>
 
 ## Setup
 
@@ -74,3 +85,7 @@ Production builds are deployed to **S3 + CloudFront**:
 1. `npm run build` generates static assets
 2. Assets are synced to an S3 bucket
 3. CloudFront invalidation is triggered to serve the new version
+
+:::tip
+For detailed deployment instructions, see the [Web App Deployment](../deployment/web-apps) guide.
+:::

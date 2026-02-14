@@ -4,7 +4,20 @@ title: "Customizing Lessons"
 
 # Customizing Lessons
 
-This guide walks you through customizing a lesson for your classroom. Customizations let you remove, hide, or reorder content so your volunteers see exactly what they need -- nothing more.
+<div class="article-intro">
+
+This guide walks you through customizing a lesson for your classroom. Customizations let you remove, hide, or reorder content so your volunteers see exactly what they need -- nothing more, nothing less.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- [Set up at least one classroom](../classrooms/setting-up-classrooms.md) in the portal
+- [Schedule a lesson](../classrooms/scheduling-lessons.md) to the classroom you want to customize
+- Read the [Customization overview](./index.md) to understand what can be customized
+
+</div>
 
 ## Opening the Customization View
 
@@ -57,4 +70,6 @@ Customization is most useful when:
 - Your classroom does not use certain roles (like a dedicated worship leader or tech volunteer).
 - You prefer a different order for the lesson flow than what is provided by default.
 
-You do not need to customize every lesson. If the content works as-is for your classroom, you can skip this step entirely.
+:::info
+You do not need to customize every lesson. If the content works as-is for your classroom, you can skip this step entirely and go straight to [presenting](../presenting/index.md).
+:::

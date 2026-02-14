@@ -4,7 +4,18 @@ title: "Project Overview"
 
 # Project Overview
 
-ChurchApps consists of approximately 20 independent repositories, each published under the [ChurchApps GitHub organization](https://github.com/ChurchApps). Below is a complete inventory organized by category.
+<div class="article-intro">
+
+ChurchApps consists of approximately 20 independent repositories, each published under the [ChurchApps GitHub organization](https://github.com/ChurchApps). This page provides a complete inventory of all projects organized by category, along with their frameworks, ports, and relationships.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Install the [prerequisites](./prerequisites) for the project category you want to work on
+
+</div>
 
 ## Backend APIs
 
@@ -85,3 +96,8 @@ FreeShow     ──────┘       @churchapps/apihelper ◄────�
 ```
 
 All frontend apps depend on `@churchapps/helpers`. Web apps additionally depend on `@churchapps/apphelper` packages. All backend APIs depend on both `@churchapps/helpers` and `@churchapps/apihelper`.
+
+## Next Steps
+
+- **[Environment Variables](./environment-variables)** -- Configure your `.env` files to connect to APIs
+- **[API Local Setup](../api/local-setup)** -- Set up the backend API locally

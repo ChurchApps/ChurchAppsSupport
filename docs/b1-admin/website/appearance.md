@@ -4,7 +4,20 @@ title: "Appearance"
 
 # Appearance
 
+<div class="article-intro">
+
 The Appearance page lets you customize the overall look and feel of your church website. From colors and fonts to spacing and custom CSS, you can control every visual aspect of your site from one place.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Complete the [Initial Setup](initial-setup) for your website
+- Have your church logo ready in PNG format with a transparent background and a 4:1 aspect ratio
+- Know your church's brand colors (hex values) if you have an existing style guide
+
+</div>
 
 ## Accessing Appearance Settings
 
@@ -41,6 +54,10 @@ The Appearance page lets you customize the overall look and feel of your church 
 2. Upload your **Light Background Logo** and **Dark Background Logo**. Use images with a transparent background and a 4:1 aspect ratio for best results.
 3. Upload a **Social Media Image** for link previews and a **Favicon** for the browser tab icon.
 
+:::tip
+For best results, use a logo with a transparent background in PNG format. This ensures it looks great on both light and dark backgrounds across your website and [mobile app](../settings/mobile-app.md).
+:::
+
 ## Custom CSS and JavaScript
 
 1. Click **CSS and Javascript** in the Style Settings panel.
@@ -48,13 +65,13 @@ The Appearance page lets you customize the overall look and feel of your church 
 3. Add **Custom HTML** for tracking codes or other scripts.
 4. Use the **Common Javascript Examples** section for snippets like Google Analytics integration.
 
-:::tip
-Custom CSS is powerful but optional. Most churches can achieve the look they want using the built-in color, font, and spacing controls.
+:::warning
+Custom CSS is powerful but can break your site's layout if used incorrectly. Most churches can achieve the look they want using the built-in color, font, and spacing controls. Only use custom CSS if you are comfortable with web development.
 :::
 
 ## Style Themes
 
-If you want a quick starting point, the Suggested Palettes in the Color Palette section offer pre-built themes that set coordinated colors in one click. You can always fine-tune individual settings after applying a theme.
+If you want a quick starting point, the **Suggested Palettes** in the Color Palette section offer pre-built themes that set coordinated colors in one click. You can always fine-tune individual settings after applying a theme.
 
 ## Next Steps
 

@@ -4,7 +4,11 @@ title: "Lessons.church"
 
 # Lessons.church
 
+<div class="article-intro">
+
 Lessons.church is a completely free curriculum platform for churches. There are no subscriptions, no fees, and no limits on usage. It provides 1,100+ video-based lessons across 189+ studies from 12+ providers, covering age groups from preschool through adult.
+
+</div>
 
 ## What You Can Do
 
@@ -41,5 +45,6 @@ Lessons.church works with other ChurchApps tools to help you deliver content:
 - [Customization](./customization/) -- Tailor lessons to your church
 - [Presenting](./presenting/) -- Deliver lessons in class using presenter mode
 - [Administration](./admin/) -- Manage programs, studies, and lessons as an admin
+- [Statement of Faith](./statement-of-faith.md) -- Core beliefs and curriculum guidelines
 
 For support, email [support@churchapps.org](mailto:support@churchapps.org).

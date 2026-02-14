@@ -4,7 +4,19 @@ title: "Searching People"
 
 # Searching People
 
-The **People** page displays your church directory in a searchable, sortable table. You can quickly find anyone in your congregation, customize which information is shown, and export your results.
+<div class="article-intro">
+
+The **People** page displays your church directory in a searchable, sortable table. You can quickly find anyone in your congregation, customize which information is shown, and export your results. Efficient searching is essential for day-to-day church administration tasks like following up with visitors, preparing contact lists, and managing member records.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- You need an active B1 Admin account with permission to view people. See [Roles & Permissions](roles-permissions.md) if you're unsure about your access level.
+- Your church directory should have people in it. If you haven't added anyone yet, see [Adding People](adding-people.md) or [Importing Data](importing-data.md).
+
+</div>
 
 ## Quick Search
 
@@ -58,4 +70,8 @@ You can download your current search results as a CSV file at any time:
 3. Click the **Export** button.
 4. A CSV file will download to your computer, ready to open in Excel, Google Sheets, or any spreadsheet application.
 
-For more details on exporting, see [Exporting Data](./exporting-data).
+For more details on exporting, see [Exporting Data](./exporting-data.md).
+
+:::tip
+For more advanced queries -- like finding everyone who hasn't attended in the last three months -- try the [AI Search](./ai-search.md) feature, which lets you search using plain language questions.
+:::

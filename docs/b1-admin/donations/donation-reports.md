@@ -4,7 +4,19 @@ title: "Donation Reports"
 
 # Donation Reports
 
+<div class="article-intro">
+
 B1 Admin gives you several ways to view and analyze your church's giving data. The Donations Summary page provides a visual overview with charts and filters, while the Reports section offers a more detailed Donation Summary report. Use these tools to track giving trends, prepare for board meetings, or reconcile your records.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Ensure donations have been [recorded in batches](recording-donations.md) or [imported from Stripe](stripe-import.md)
+- Verify that your [funds](funds.md) are set up correctly so donations are properly categorized
+
+</div>
 
 ## Donations Summary Page
 
@@ -15,8 +27,8 @@ The **Summary** page is the first thing you see when you click **Donations** in 
 3. The page displays a weekly giving chart so you can see trends at a glance.
 4. Click **Download** to export a CSV file with the total amount given, the week it was given, and the fund it was given to.
 
-:::note
-The Summary page shows aggregate giving data. It does not include individual donor names. For donor-level details, use the Batches page.
+:::info
+The Summary page shows aggregate giving data. It does not include individual donor names. For donor-level details, use the [Batches](batches.md) page.
 :::
 
 ## Viewing Donor-Level Details
@@ -49,3 +61,9 @@ You can export donation data from multiple places:
 :::tip
 For year-end reporting, combine the Summary page export with the [Giving Statements](giving-statements.md) tool to get both aggregate trends and individual donor statements.
 :::
+
+## Next Steps
+
+- Generate [Giving Statements](giving-statements.md) for your donors at year-end
+- Review individual [batches](batches.md) to verify donation details
+- Check [fund](funds.md) detail pages for giving breakdowns by category

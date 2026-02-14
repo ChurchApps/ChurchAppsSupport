@@ -4,7 +4,20 @@ title: "Selecting Your Church and Room"
 
 # Selecting Your Church and Room
 
+<div class="article-intro">
+
 Before FreePlay can download lessons for your classroom, you need to tell it which church and room to use. This is a one-time setup -- the TV remembers your selection for future sessions.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Install and launch FreePlay -- see [Getting Started](../getting-started/)
+- Register your church and configure classrooms at [freeplay.church](https://freeplay.church)
+- Choose **Pair to Classroom** from the [pairing mode screen](../getting-started/pairing-modes.md)
+
+</div>
 
 ## Finding Your Church
 
@@ -14,7 +27,7 @@ Before FreePlay can download lessons for your classroom, you need to tell it whi
 4. A list of matching churches appears below the search field
 5. Navigate to your church in the list and press **Select** on your remote
 
-:::note
+:::warning
 If your church does not appear in search results, it may not be registered yet. Visit [freeplay.church](https://freeplay.church) to register your church and configure your classrooms.
 :::
 
@@ -35,3 +48,8 @@ If you see "No classrooms found," your church's classrooms have not been configu
 ## Changing Your Selection
 
 To switch to a different church or room later, press the **Back** button on your TV remote from the download screen. This takes you back to the room selection screen where you can choose a different classroom, or continue pressing **Back** to return to the church search.
+
+## Next Steps
+
+- **[Downloading Lesson Content](./downloading-content)** - Learn how the download process works after selecting your room
+- **[Playing Lessons](./playing-lessons)** - Understand the media player controls

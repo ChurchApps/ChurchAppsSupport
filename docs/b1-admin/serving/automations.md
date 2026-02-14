@@ -4,7 +4,19 @@ title: "Automations"
 
 # Automations
 
-Automations create tasks automatically on a recurring schedule. Instead of manually creating the same tasks every week or month, you can set up an automation once and let the system handle it for you.
+<div class="article-intro">
+
+Automations create tasks automatically on a recurring schedule. Instead of manually creating the same tasks every week or month, you can set up an automation once and let the system handle it for you, ensuring nothing falls through the cracks.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Familiarize yourself with how [Tasks](./tasks.md) work in B1 Admin
+- Identify which recurring responsibilities you want to automate
+
+</div>
 
 ## Viewing Automations
 
@@ -33,13 +45,18 @@ You can control whether an automation is running without deleting it:
 - **Inactive** -- The automation is paused and will not create any new tasks until you reactivate it.
 
 :::tip
-Set an automation to **Inactive** during holiday breaks or special seasons when the recurring task is not needed. You can reactivate it at any time.
+Set an automation to **Inactive** during holiday breaks or special seasons when the recurring task is not needed. You can reactivate it at any time without losing your configuration.
 :::
 
 ## How It Works
 
-When an automation runs, it creates a new task with the configured title and assignment. The task behaves just like any other task -- assignees receive notifications and can manage the task from their dashboard or the Tasks page.
+When an automation runs, it creates a new [task](./tasks.md) with the configured title and assignment. The task behaves just like any other task -- assignees receive notifications and can manage the task from their dashboard or the Tasks page.
 
 :::info
 Automations only create new tasks going forward. They do not retroactively create tasks for past dates.
 :::
+
+## Next Steps
+
+- Learn more about managing individual [Tasks](./tasks.md) that automations create
+- Use automations alongside [Service Plans](./plans.md) to keep your weekly service preparation on track

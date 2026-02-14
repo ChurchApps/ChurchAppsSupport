@@ -4,7 +4,20 @@ title: "Bulk Import"
 
 # Bulk Import
 
+<div class="article-intro">
+
 The Bulk Import page lets you quickly populate your sermon library by importing videos from YouTube or Vimeo. This is the fastest way to bring in your existing sermon content rather than adding each video one at a time.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- You need the **contentApi.streamingServices.edit** permission. See [Roles & Permissions](../settings/roles-permissions.md) if you do not have access.
+- Create at least one [playlist](playlists) to import your sermons into
+- Have your YouTube Channel ID or Vimeo account information ready
+
+</div>
 
 ## Choosing Your Source
 
@@ -26,6 +39,8 @@ Before importing videos, you need at least one playlist to organize them into. I
 2. Click **Create First Playlist** and fill in the name, description, publish date, and thumbnail.
 3. Click **Save**, then return to the **Bulk Import** tab.
 
+See [Playlists](playlists) for detailed instructions on creating and managing playlists.
+
 ## Importing Videos
 
 1. After selecting YouTube or Vimeo, enter your **YouTube Channel ID** or **Vimeo account information** in the field provided.
@@ -46,3 +61,4 @@ Bulk import is ideal for getting started when you are migrating from another pla
 
 - [Managing Sermons](managing-sermons) -- Edit imported sermon details
 - [Playlists](playlists) -- Create and manage sermon series
+- [Live Streaming](live-streaming) -- Set up live streaming for your services

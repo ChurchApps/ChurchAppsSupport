@@ -4,7 +4,11 @@ title: "Customization"
 
 # Customization
 
-Lessons.church provides a library of ready-to-use lesson content, but every church is different. The customization features let you tailor lesson content to fit your specific classrooms, teaching style, and age groups.
+<div class="article-intro">
+
+Lessons.church provides a library of ready-to-use lesson content, but every church is different. The customization features let you tailor lesson content to fit your specific classrooms, teaching style, and age groups so your volunteers see only what is relevant to them.
+
+</div>
 
 ## Why Customize?
 
@@ -27,6 +31,10 @@ When you save a customization, you choose how broadly it applies:
 
 This flexibility means you can set up different views of the same lesson for different age groups, or make a change that applies everywhere at once.
 
+:::tip
+If you are new to customization, start with a single classroom to see how it works before applying changes across all classrooms.
+:::
+
 ## Next Steps
 
-- **[Customizing Lessons](./customizing-lessons)** -- Follow the step-by-step guide to customize your first lesson.
+- [Customizing Lessons](./customizing-lessons.md) -- Follow the step-by-step guide to customize your first lesson

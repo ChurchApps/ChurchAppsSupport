@@ -4,7 +4,11 @@ title: "Website"
 
 # Website
 
+<div class="article-intro">
+
 The Website section in B1 Admin gives you a full-featured website builder for your church. You can create pages, customize your site's look and feel, manage media files, and publish event calendars -- all without writing any code.
+
+</div>
 
 ## What You Can Do
 
@@ -22,15 +26,19 @@ Build reusable content components that you can place on multiple pages. Blocks s
 
 ### Appearance
 
-Customize your website's theme, colors, fonts, logo, and spacing. You can apply pre-built style themes for a quick start or fine-tune every detail with the color palette editor, typography settings, and custom CSS.
+Customize your website's theme, colors, fonts, logo, and spacing. You can apply pre-built style themes for a quick start or fine-tune every detail with the color palette editor, typography settings, and custom CSS. See the [Appearance](appearance) guide for full details.
 
 ### Files
 
-Upload and organize all your media assets -- images, documents, and other files -- in one central location. Use folders to keep things tidy and copy file URLs for use anywhere on your site.
+Upload and organize all your media assets -- images, documents, and other files -- in one central location. Use folders to keep things tidy and copy file URLs for use anywhere on your site. See [Files](files) for more information.
 
 ### Calendars
 
 Publish event calendars on your website so visitors can see what is happening at your church. Create curated calendars that pull events from multiple groups into a single view.
+
+:::tip
+Start with [Initial Setup](initial-setup) if you are configuring your website for the first time. It walks you through domain setup, creating your first page, and configuring your site's appearance.
+:::
 
 ## Next Steps
 

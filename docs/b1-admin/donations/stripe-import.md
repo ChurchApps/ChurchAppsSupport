@@ -4,7 +4,19 @@ title: "Stripe Import"
 
 # Stripe Import
 
+<div class="article-intro">
+
 If you accept online donations through Stripe, the Stripe Import tool lets you pull those transactions into B1 Admin so all of your giving data lives in one place. This is especially useful for catching any transactions that were not automatically synced.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Complete the [Online Giving Setup](online-giving-setup.md) to connect your Stripe account to B1 Admin
+- Verify that you have donations in your Stripe dashboard for the date range you want to import
+
+</div>
 
 ## How It Works
 
@@ -46,3 +58,8 @@ The preview step does not create any records. It is a read-only check so you can
 :::tip
 After importing, visit the [Batches](batches.md) page to verify that the imported donations appear correctly and the totals match what you see in your Stripe dashboard.
 :::
+
+## Next Steps
+
+- Check [Donation Reports](donation-reports.md) to review the imported transactions alongside your other giving data
+- Ensure imported donations are assigned to the correct [funds](funds.md) for accurate [giving statements](giving-statements.md)

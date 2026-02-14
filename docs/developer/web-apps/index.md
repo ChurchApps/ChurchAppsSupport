@@ -1,6 +1,14 @@
+---
+title: "Web Apps"
+---
+
 # Web Apps
 
-ChurchApps includes three web applications, each serving a different audience and purpose. They share a common tech foundation but differ in their build tooling and deployment targets.
+<div class="article-intro">
+
+ChurchApps includes three web applications, each serving a different audience and purpose. They share a common tech foundation of React 19, TypeScript, and Material-UI 7, but differ in their build tooling and deployment targets.
+
+</div>
 
 ## Applications at a Glance
 
@@ -31,6 +39,10 @@ The apps share UI components and utilities through the `@churchapps/apphelper*` 
 | `@churchapps/apphelper-forms` | Form builder components |
 | `@churchapps/apphelper-markdown` | Markdown rendering |
 | `@churchapps/apphelper-website` | Website/CMS components |
+
+:::tip
+For details on developing these shared packages locally, see the [AppHelper](../shared-libraries/app-helper) documentation.
+:::
 
 ## Postinstall Script
 

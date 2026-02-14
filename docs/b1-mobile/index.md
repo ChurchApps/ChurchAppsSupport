@@ -4,7 +4,11 @@ title: "B1 Mobile"
 
 # B1 Mobile
 
+<div class="article-intro">
+
 B1 Mobile is the companion app for B1.church, available on iOS and Android. It gives church members on-the-go access to all the tools your church provides -- groups, giving, check-in, serving plans, the member directory, private messaging, sermons, Bible, verse of the day, lessons, and more.
+
+</div>
 
 The app uses your ChurchApps account, the same one you use on B1.church. After logging in and selecting your church, the app adapts to your church's branding and configuration. If you belong to multiple churches, you can switch between them at any time.
 
@@ -36,5 +40,5 @@ B1 Mobile supports push notifications so you never miss an important update from
 - [Profile](./profile/) -- Manage your profile and account settings.
 
 :::info
-B1 Mobile is free to download and use. Your church administrator configures which features are available through B1 Admin. You simply download the app and log in to get started.
+B1 Mobile is free to download and use. Your church administrator configures which features are available through [B1 Admin](../../b1-admin/). You simply download the app and log in to get started.
 :::

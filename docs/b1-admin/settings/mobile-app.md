@@ -4,7 +4,19 @@ title: "Mobile App Settings"
 
 # Mobile App Settings
 
+<div class="article-intro">
+
 The Mobile App Settings page lets you configure the navigation tabs that appear in the B1 Mobile app for your church members. You control which tabs are visible, what they link to, and how they are displayed.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- You need the "Edit Church Settings" permission. See [Roles & Permissions](./roles-permissions.md) if you do not have access.
+- Configure your [Church Settings](./church-settings.md) first, including your church name and branding
+
+</div>
 
 ## Accessing Mobile App Settings
 
@@ -44,3 +56,8 @@ Keep your tab count manageable. Three to five tabs works well for most churches.
 ## Where These Tabs Appear
 
 The tabs you configure here are displayed in the **B1 Mobile app** (B1.church app) that your church members download from the App Store or Google Play. Changes you make on this page are reflected in the app the next time a member opens it.
+
+## Next Steps
+
+- [Church Settings](./church-settings.md) -- Configure your church information and branding
+- [Roles & Permissions](./roles-permissions.md) -- Manage access for your team

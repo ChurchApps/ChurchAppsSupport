@@ -4,7 +4,11 @@ title: "Profile"
 
 # Profile
 
-The **Profile** section lets you manage your personal account settings in ChurchApps. Your profile is shared across all ChurchApps tools, so changes you make here apply everywhere.
+<div class="article-intro">
+
+The Profile section lets you manage your personal account settings in ChurchApps. Your profile is shared across all ChurchApps tools, so changes you make here apply everywhere -- from B1 Admin to the B1 Mobile app.
+
+</div>
 
 ## What You Can Do
 
@@ -20,8 +24,8 @@ From the Profile section, you can:
 
 The Profile area has the following pages:
 
-1. **Managing Your Profile** -- Edit your personal information, change your password, manage linked accounts, adjust theme preferences, and handle account deletion.
-2. **Managing Devices** -- View, add, and manage ChurchAppsPlayer devices paired with your account.
+1. **[Managing Your Profile](./managing-profile.md)** -- Edit your personal information, change your password, manage linked accounts, adjust theme preferences, and handle account deletion.
+2. **[Managing Devices](./devices.md)** -- View, add, and manage ChurchAppsPlayer devices paired with your account.
 
 :::tip
 Keep your email address up to date. It is used for account recovery and important notifications from your church.

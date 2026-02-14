@@ -4,7 +4,19 @@ title: "Prerequisites"
 
 # Prerequisites
 
-The tools you need depend on which projects you plan to work on. Below is the full list, organized by what you are developing.
+<div class="article-intro">
+
+The tools you need depend on which projects you plan to work on. This page lists all required software organized by development area, from the universal requirements to platform-specific toolchains.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Review the [Project Overview](./project-overview) to determine which projects you want to work on
+- Have administrator access on your development machine for installing software
+
+</div>
 
 ## All Projects
 
@@ -40,7 +52,7 @@ For B1Mobile, B1Checkin, LessonsScreen, or other React Native / Expo apps:
 | **Android Studio** | Latest | Required for Android development (includes Android SDK) |
 | **Xcode** | Latest | Required for iOS development (macOS only) |
 
-:::note
+:::info
 You can use the Expo Go app on a physical device for quick testing without Android Studio or Xcode. However, building production binaries requires the native toolchains.
 :::
 
@@ -95,3 +107,8 @@ npm --version     # Should print 10.x.x or higher
 git --version     # Should print git version 2.x.x
 mysql --version   # Only needed for local API development
 ```
+
+## Next Steps
+
+- **[Project Overview](./project-overview)** -- See all projects and what they do
+- **[Environment Variables](./environment-variables)** -- Configure your `.env` files

@@ -4,7 +4,19 @@ title: "External Providers"
 
 # External Providers
 
+<div class="article-intro">
+
 Lessons.church is not limited to its own curriculum. Third-party curriculum providers can publish their content through the **Open Lesson Format**, and that content appears alongside Lessons.church's built-in programs for a unified browsing experience.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Understand how content is organized by reading [Programs and Studies](./programs-and-studies.md)
+- To add a provider connection, you need a [Lessons.church account](../getting-started/creating-account.md) with access to your church's portal
+
+</div>
 
 ## What Are External Providers?
 
@@ -28,7 +40,7 @@ There is no special process or separate section for external content. Everything
 If your church uses a curriculum provider that supports the Open Lesson Format and you want their content available in your Lessons.church portal:
 
 1. Log in to your Lessons.church account.
-2. Navigate to the provider settings in the portal.
+2. Navigate to the **External Providers** page in the portal.
 3. Add the external provider's connection URL.
 4. Their programs and studies will become available for your church to browse, schedule, and use in classrooms.
 
@@ -39,3 +51,7 @@ Adding an external provider connection is done through the Lessons.church portal
 ## For Content Creators
 
 If you are a curriculum publisher interested in making your content available on Lessons.church, the Open Lesson Format provides a standardized way to share your programs, studies, and lessons. Contact the Lessons.church team or visit the developer documentation for integration details.
+
+:::tip
+If you are an admin managing third-party provider feeds at the platform level, see [Third-Party Providers](../admin/third-party-providers.md) in the Administration section.
+:::

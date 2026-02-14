@@ -4,7 +4,19 @@ title: "Creating Groups"
 
 # Creating Groups
 
-Creating a group in B1 Admin is straightforward. You will set up a category, name your group, and then configure its settings. This guide walks you through the entire process.
+<div class="article-intro">
+
+Creating a group in B1 Admin is straightforward. You will set up a category, name your group, and then configure its settings. Groups help you organize your church into meaningful units like small groups, ministry teams, committees, and classes.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- You need an active B1 Admin account with permission to manage groups. See [Roles & Permissions](../people/roles-permissions.md) if you're unsure about your access level.
+- Decide on a category structure for your groups (for example, "Small Groups," "Ministries," "Committees"). Categories help keep related groups organized.
+
+</div>
 
 ## Adding a New Group
 
@@ -23,8 +35,8 @@ Once your group is created, you can fill in additional details:
 3. Configure the following options:
    - **Description** -- A brief summary of what the group is about. This is visible to members.
    - **Meeting Times** -- When the group typically meets (for example, "Wednesdays at 7 PM").
-   - **Attendance Tracking** -- Enable this if you want to record attendance for this group.
-   - **Service Times** -- Associate the group with specific church service times if applicable.
+   - **Attendance Tracking** -- Enable this if you want to record [attendance](../attendance/tracking-attendance.md) for this group.
+   - **Service Times** -- Associate the group with specific church service times if applicable. See [Attendance Setup](../attendance/setup.md) for details on service times.
 4. Click **Save** to apply your changes.
 
 :::tip
@@ -35,8 +47,8 @@ Adding a clear description and meeting time helps members know what to expect wh
 
 After creating and configuring your group, you are ready to:
 
-- **Add members** -- Search for people and add them to the group. Use the green key icon to designate group leaders. See [Group Members](./group-members).
-- **Set up a calendar** -- Create events and recurring meetings for the group. See [Group Calendar](./group-calendar).
+- **Add members** -- Search for people and add them to the group. Use the green key icon to designate group leaders. See [Group Members](./group-members.md).
+- **Set up a calendar** -- Create events and recurring meetings for the group. See [Group Calendar](./group-calendar.md).
 - **Communicate** -- Send messages to all group members directly from the group page.
 - **Export data** -- Click the download icon to export your group's member list.
 

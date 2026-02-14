@@ -4,7 +4,19 @@ title: "Downloading Lesson Content"
 
 # Downloading Lesson Content
 
+<div class="article-intro">
+
 Once you have selected a church and classroom, FreePlay automatically fetches the lesson scheduled for today and begins downloading all of its media files. This screen is where you wait for content to be ready before starting the lesson.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Select your church and classroom -- see [Selecting Your Church and Room](./selecting-room)
+- Ensure your TV is connected to the internet for the initial download
+
+</div>
 
 ## How Downloading Works
 
@@ -38,3 +50,7 @@ Download lessons before Sunday morning while your building has a strong internet
 ## If the Schedule Is Empty
 
 If no lesson is scheduled for the selected classroom, you will see the message "The schedule could not be loaded. Make sure a lesson is scheduled for this class." Check your schedule at [freeplay.church](https://freeplay.church) and make sure the correct lesson is assigned to this room.
+
+## Next Steps
+
+- **[Playing Lessons](./playing-lessons)** - Learn the media player controls for navigating lesson content

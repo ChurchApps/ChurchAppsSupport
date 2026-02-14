@@ -4,7 +4,19 @@ title: "Donation History"
 
 # Donation History
 
+<div class="article-intro">
+
 When you are logged in, you can view a complete record of your past donations and generate giving statements for tax purposes. Your donation history is available from the **Donate** section of your B1.church account.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- You must be [logged in](../getting-started/logging-in.md) to your B1.church account.
+- You need to have made at least one donation. See [Making a Donation](./making-donations.md) to get started.
+
+</div>
 
 ## Viewing Your History
 
@@ -19,7 +31,9 @@ Your donation history is displayed as a table with the following columns:
 - **Fund** -- Which fund the donation was directed to (for example, General Fund, Building Fund).
 - **Amount** -- The dollar amount of the donation.
 
+:::info
 Donations that are still being processed will appear with a "Pending" label next to the fund name and the amount shown in a different color.
+:::
 
 ## Exporting and Printing Statements
 
@@ -40,4 +54,4 @@ From the **Donate** section, you can also click **Recurring Donations** to manag
 
 ## Next Steps
 
-- [Making a Donation](./making-donations) -- Learn how to make a one-time or recurring gift
+- [Making a Donation](./making-donations.md) -- Learn how to make a one-time or recurring gift

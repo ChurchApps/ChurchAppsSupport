@@ -4,7 +4,11 @@ title: "Getting Started"
 
 # Getting Started
 
-Lessons.church is completely free to use. There are no subscriptions, no trial periods, and no feature limits. You can access the full library of 1,100+ video lessons at no cost.
+<div class="article-intro">
+
+Lessons.church is completely free to use. There are no subscriptions, no trial periods, and no feature limits. This section walks you through creating your account, connecting your church, and navigating the portal so you can start scheduling lessons right away.
+
+</div>
 
 ## What You Need
 
@@ -17,7 +21,12 @@ To get started with Lessons.church, you will:
 
 Once your classrooms are set up and lessons are scheduled, your volunteers can access the content through the portal and present lessons to their classes.
 
+:::tip
+If you already have a ChurchApps account from B1.church, you can log in to Lessons.church with the same credentials -- no need to register again.
+:::
+
 ## Next Steps
 
-- [Creating an Account](./creating-account) -- Step-by-step registration instructions
-- [Portal Overview](./portal-overview) -- Learn your way around the church dashboard
+- [Creating an Account](./creating-account.md) -- Step-by-step registration instructions
+- [Portal Overview](./portal-overview.md) -- Learn your way around the church dashboard
+- [Setting Up Classrooms](../classrooms/setting-up-classrooms.md) -- Create your first classroom after getting oriented

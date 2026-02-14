@@ -1,6 +1,22 @@
+---
+title: "Helpers"
+---
+
 # Helpers
 
-The `@churchapps/helpers` package provides base utilities used by all ChurchApps projects, both frontend and backend. It is framework-agnostic and includes common helpers such as `DateHelper`, `ApiHelper`, and other shared utilities.
+<div class="article-intro">
+
+The `@churchapps/helpers` package provides base utilities used by all ChurchApps projects, both frontend and backend. It is framework-agnostic and includes common helpers such as `DateHelper`, `ApiHelper`, `CurrencyHelper`, and other shared utilities.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Install **Node.js** and **Git** -- see [Prerequisites](../setup/prerequisites)
+- Familiarize yourself with the [npm link workflow](./index.md) for local development
+
+</div>
 
 ## Setup for Local Development
 
@@ -45,6 +61,12 @@ To publish a new version to npm:
    npm publish --access=public
    ```
 
-:::note
+:::warning
 Since this package is used by every ChurchApps project, changes here have a wide impact. Test thoroughly with `npm link` in at least one consuming API and one consuming web app before publishing.
 :::
+
+## Related Articles
+
+- **[ApiHelper](./api-helper)** -- Server-side utilities that depend on this package
+- **[AppHelper](./app-helper)** -- React components that depend on this package
+- **[Shared Libraries Overview](./index.md)** -- `npm link` workflow and package overview

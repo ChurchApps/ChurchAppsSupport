@@ -4,11 +4,22 @@ title: "Member Directory"
 
 # Member Directory
 
-The member directory lets you browse and search for people in your church. Whether you need to look up a fellow group member or find someone new, the directory makes it easy to connect.
+<div class="article-intro">
+
+The member directory lets you browse and search for people in your church. Whether you need to look up a fellow group member or find someone new, the directory makes it easy to connect with your church family.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- You must be [logged in](../getting-started/logging-in.md) to your B1.church account.
+
+</div>
 
 ## Accessing the Directory
 
-1. Click **Community** in the sidebar navigation.
+1. Click **Community** in the [sidebar navigation](../getting-started/navigating.md).
 2. The directory loads with a list of all visible church members on the left side of the page.
 
 ## Searching for Members
@@ -29,6 +40,10 @@ If you leave the search box empty and click **Search**, the full directory listi
 2. Select a group from the dropdown list.
 3. Click **Search** to see all members of that group.
 
+:::tip
+Searching by group is a quick way to find someone you met at a [group meeting](../groups/browsing-groups.md) but whose name you cannot quite remember.
+:::
+
 ## Browsing the Directory
 
 Members are listed alphabetically by last name and grouped under letter headings (A, B, C, and so on). Each entry shows the member's photo, display name, and household name, making it easy to scan through the list.
@@ -39,6 +54,6 @@ Click on any member in the list to open their profile in the detail panel on the
 
 You can click on household members within a profile to navigate to their profiles as well.
 
-:::note
+:::info
 The information visible in each profile depends on your church's privacy and directory settings. Not all fields may be shown for every member.
 :::

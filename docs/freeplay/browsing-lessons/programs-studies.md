@@ -4,7 +4,19 @@ title: "Programs and Studies"
 
 # Programs and Studies
 
-The lesson browser uses a step-by-step flow to narrow down to the exact content you want to play. Each step displays a 3-column grid of cards with images and titles.
+<div class="article-intro">
+
+The lesson browser uses a step-by-step flow to narrow down to the exact content you want to play. Each step displays a 3-column grid of cards with images and titles, making it easy to navigate the full lesson library with your TV remote.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Ensure your TV has an internet connection (required for browsing the program catalog)
+- Navigate to the **Browse Programs** screen using the sidebar
+
+</div>
 
 ## Browsing Programs
 
@@ -53,3 +65,8 @@ At any point in the browsing flow, press **Back** on your remote to return to th
 - From the lesson list, **Back** returns to the study list
 - From the study list, **Back** returns to the program grid
 - From the program grid, **Back** opens the sidebar
+
+## Related Articles
+
+- **[Browsing Lessons Overview](./index.md)** - Understanding the lesson hierarchy
+- **[Playing Lessons](../classroom-mode/playing-lessons)** - Player controls for lesson playback

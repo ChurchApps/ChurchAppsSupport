@@ -4,7 +4,19 @@ title: "Self Check-In"
 
 # Self Check-In
 
-Checking in from B1 Mobile is a straightforward, multi-step process. In just a few taps, you can record attendance for yourself and your household members.
+<div class="article-intro">
+
+Checking in from B1 Mobile is a straightforward, multi-step process. In just a few taps, you can record attendance for yourself and your household members without waiting in line at a kiosk.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- [Install B1 Mobile](../getting-started/installing) and [log in](../getting-started/logging-in) to your account
+- Ensure your [household members](../profile/household.md) are set up in your profile
+
+</div>
 
 ## The Check-In Flow
 
@@ -41,9 +53,13 @@ Once you have assigned groups for everyone who is attending, complete the check-
 
 ## Things to Know
 
-- You can only check in household members that are linked to your account. If someone is missing from the list, ask your church administrator to add them to your household.
+- You can only check in household members that are linked to your account. If someone is missing from the list, ask your church administrator to add them to your [household](../profile/household.md).
 - If no services appear on the check-in screen, your church may not have any services configured for check-in at this time.
 - If you need to change a selection before confirming, you can go back and adjust your choices.
+
+:::warning
+Make sure you select the correct service time and group assignments before confirming. Once attendance is recorded, changes may need to be made by your church administrator.
+:::
 
 :::tip
 Open the check-in screen on your way to church so you are ready to check in as soon as you arrive. It only takes a few seconds to complete the process.

@@ -1,10 +1,23 @@
 ---
-title: Data Security
+title: "Data Security"
 ---
 
 # Data Security
 
-While there is no such thing as a perfectly secure system, we take data security seriously. The following steps are taken to secure all data entered into B1.church Admin and other ChurchApps products.
+<div class="article-intro">
+
+While there is no such thing as a perfectly secure system, ChurchApps takes data security seriously. This page explains the measures taken to protect all data entered into B1.church Admin and other ChurchApps products.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Review this page to understand how your church's data is protected
+- Set up [Roles & Permissions](./roles-permissions.md) to control who can access sensitive information
+- Familiarize yourself with the [privacy policy](https://churchapps.org/privacy)
+
+</div>
 
 ## Limiting Sensitive Data Stored
 
@@ -14,6 +27,10 @@ We also never store passwords in our system. All passwords are processed through
 
 After removing these two sources the only sensitive data that remains is a list of names and contact info.
 
+:::tip
+Because ChurchApps never stores credit card or bank information, even a worst-case data breach would not expose financial account details. Only names and contact information would be at risk.
+:::
+
 ## Using Standard Best Practices
 
 We use the industry standard best practices for security, including encrypting all data in transit to and from our servers using HTTPS. All servers are hosted in a secure physical datacenter with Amazon Web Services. All database servers are stored behind a firewall and are inaccessible from the Internet.
@@ -21,6 +38,10 @@ We use the industry standard best practices for security, including encrypting a
 ## Data Segregation
 
 Data is separated into different databases based on scope. Each of our APIs (Membership, Giving, Attendance, Messaging, Doing and Lessons) are independent silos of data with their own databases. If one of them is compromised, the usefulness of the data is limited without others also being compromised. For example, if the Giving API/database was to be compromised, a bad actor could potentially gain access to a list of donations and dates (but never card/bank data). However, they would not have access to which users made the donations or which churches they were for as that data is stored in the separate Membership database.
+
+:::info
+Data segregation means that compromising one system does not give access to all church data. Each API operates independently with its own database, limiting the impact of any potential breach.
+:::
 
 ## Limited Access
 
@@ -33,3 +54,7 @@ Your data is yours and will never be sold to third parties. You can read our ful
 ## GDPR Compliance
 
 ChurchApps does not currently support GDPR compliance due to the significant technical and financial requirements involved. GDPR would require us to host data on EU-based servers and build a separate infrastructure to route and store data regionally, effectively doubling our hosting and development costs. As a nonprofit offering free tools to churches, we do not have the resources to support this at this time.
+
+:::warning
+If your church has members in the European Union, be aware that ChurchApps does not currently meet GDPR requirements. Consult with your legal advisor about compliance obligations before storing EU member data.
+:::

@@ -4,7 +4,19 @@ title: "Managing Submissions"
 
 # Managing Submissions
 
-Once your form is live, submissions will start coming in. You can review every response, track who has submitted, and use the data to follow up with your congregation.
+<div class="article-intro">
+
+Once your form is live, submissions will start coming in. The Submissions tab lets you review every response, track who has submitted, and use the data to follow up with your congregation in a timely manner.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- [Create a form](./creating-forms.md) with at least one question
+- Share the form via its public URL or embed it on your [website](../website/managing-pages.md)
+
+</div>
 
 ## Viewing Submissions
 
@@ -27,7 +39,7 @@ Submissions can come in through several channels:
 - **Internal use** -- Staff and volunteers can also submit forms on behalf of others directly within B1 Admin.
 
 :::tip
-Check the Submissions tab regularly for forms like visitor cards or prayer requests, so you can follow up promptly.
+Check the **Submissions** tab regularly for forms like visitor cards or prayer requests, so you can follow up promptly.
 :::
 
 ## Using Submission Data
@@ -40,5 +52,10 @@ The data collected through forms can help you:
 - Process payments for events or programs
 
 :::info
-Form members with **Admin** or **View Only** roles can access the Submissions tab. Make sure the right people on your team have access to the forms they need.
+Form members with **Admin** or **View Only** roles can access the Submissions tab. Make sure the right people on your team have access to the forms they need by managing roles in the **Members** tab.
 :::
+
+## Next Steps
+
+- Learn how to build and customize forms in [Creating Forms](./creating-forms.md)
+- Add people from form submissions to your [people directory](../people/adding-people.md) for ongoing follow-up

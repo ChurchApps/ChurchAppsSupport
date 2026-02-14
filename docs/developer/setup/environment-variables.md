@@ -4,7 +4,20 @@ title: "Environment Variables"
 
 # Environment Variables
 
-Every ChurchApps project uses a `.env` file for local configuration. Each project includes a sample file that you copy and customize.
+<div class="article-intro">
+
+Every ChurchApps project uses a `.env` file for local configuration. Each project includes a sample file that you copy and customize. This page covers the environment variables for APIs, web apps, and mobile apps, including how to choose between staging and local API targets.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Install the [prerequisites](./prerequisites) for your project
+- Clone the project repository you want to work on
+- Review the [Project Overview](./project-overview) to understand which API modules your project needs
+
+</div>
 
 ## General Pattern
 
@@ -47,7 +60,7 @@ https://api.staging.churchapps.org/doing
 
 ### Option 2: Local API
 
-Run the Api project on your machine. Requires MySQL 8.0+ with databases created for each module.
+Run the Api project on your machine. Requires MySQL 8.0+ with databases created for each module. See the [API local setup](../api/local-setup) guide.
 
 ```bash
 # Base URL pattern
@@ -92,7 +105,7 @@ Each API module has its own MySQL database and connection string:
 | `MESSAGING_CONNECTION_STRING` | `mysql://root:password@localhost:3306/messaging` |
 | `DOING_CONNECTION_STRING` | `mysql://root:password@localhost:3306/doing` |
 
-:::note
+:::tip
 Update `root:password` with your actual MySQL credentials. Each database must be created before running the API. Use `npm run initdb` to create the schema for all modules, or `npm run initdb:membership` for a single module.
 :::
 
@@ -182,7 +195,7 @@ Sample file: `dotenv.sample.txt`
 | `CONTENT_ROOT` | Content delivery URL | `https://content.staging.churchapps.org` |
 | `LESSONS_ROOT` | Lessons site URL | `https://staging.lessons.church` |
 
-:::tip
+:::info
 Mobile apps do not use the `REACT_APP_` or `NEXT_PUBLIC_` prefix. Environment variable access is handled by the Expo configuration.
 :::
 

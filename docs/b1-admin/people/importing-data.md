@@ -4,7 +4,20 @@ title: "Importing Data"
 
 # Importing Data
 
-B1 Admin makes it easy to bring your existing member data into the system. You can import from a CSV file or migrate directly from Breeze ChMS.
+<div class="article-intro">
+
+B1 Admin makes it easy to bring your existing member data into the system. Whether you are migrating from another church management platform or loading records from a spreadsheet, the import tools save you from manually entering every person. You can import from a CSV file or migrate directly from Breeze ChMS.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- You need an active B1 Admin account with access to **Settings**. See [Roles & Permissions](roles-permissions.md) if you're unsure about your access level.
+- Have your member data ready in a spreadsheet or exported from your previous system.
+- If you are migrating from Breeze, make sure you have exported your People, Tags, and Contributions files from Breeze first.
+
+</div>
 
 ## Importing from CSV
 
@@ -26,6 +39,10 @@ If you have member data in a spreadsheet or another system, you can import it us
 Always download and review the sample files first. Matching the expected column format will prevent import errors.
 :::
 
+:::warning
+Importing data will add new records to your database. If you import the same file twice, you may end up with duplicate entries. Double-check your file before starting the transfer.
+:::
+
 ## Importing from Breeze ChMS
 
 If you are migrating from Breeze, B1 has a dedicated import option that handles the conversion automatically.
@@ -45,9 +62,9 @@ The Breeze import transfers people, photos, groups, donations, attendance, forms
 
 Once your import is complete, take a few minutes to verify your data:
 
-1. Browse the **People** page and spot-check a few profiles.
+1. Browse the [People](../people/adding-people.md) page and spot-check a few profiles.
 2. Confirm that names, emails, phone numbers, and addresses came through correctly.
 3. Check that household connections are intact.
-4. Review any groups or tags that were imported.
+4. Review any [groups](../groups/creating-groups.md) or tags that were imported.
 
-If you notice any issues, you can edit individual profiles directly from the People page.
+If you notice any issues, you can edit individual profiles directly from the People page. You can also [export your data](exporting-data.md) at any time to create a backup.

@@ -1,12 +1,23 @@
+---
+title: "Local API Setup"
+---
+
 # Local API Setup
 
-This guide walks you through setting up the ChurchApps API for local development.
+<div class="article-intro">
 
-## Prerequisites
+This guide walks you through setting up the ChurchApps API for local development. You will clone the repository, configure your database connections, initialize the schema, and start the dev server with hot reload.
 
-- **Node.js 22+**
-- **MySQL 8** -- running locally or accessible via network
-- **Git**
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Install **Node.js 22+**, **Git**, and **MySQL 8.0+** -- see [Prerequisites](../setup/prerequisites)
+- Create a MySQL user with database creation privileges
+- Review the [Environment Variables](../setup/environment-variables) reference for API configuration
+
+</div>
 
 ## Step-by-Step Setup
 
@@ -97,3 +108,9 @@ npm link @churchapps/helpers
 ```
 
 This lets you test library changes against the API without publishing to npm.
+
+## Related Articles
+
+- **[Database](./database)** -- Understanding the database-per-module architecture
+- **[Module Structure](./module-structure)** -- How controllers, repositories, and models are organized
+- **[Shared Libraries](../shared-libraries/)** -- Working with `@churchapps/helpers` and `@churchapps/apihelper`

@@ -4,7 +4,19 @@ title: "Viewing Lessons"
 
 # Viewing Lessons
 
-Each lesson on Lessons.church is a complete teaching session with structured content, downloadable materials, and support for multiple age groups. Here is how to navigate and use a lesson page.
+<div class="article-intro">
+
+Each lesson on Lessons.church is a complete teaching session with structured content, downloadable materials, and support for multiple age groups. This guide explains how to navigate and use a lesson page to prepare for your class.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Understand how content is organized by reading [Programs and Studies](./programs-and-studies.md)
+- Browse to a program and study to find the lesson you want to view
+
+</div>
 
 ## Getting to a Lesson
 
@@ -47,7 +59,7 @@ Lessons may include files you can download and print, such as:
 - Craft instructions
 - Take-home sheets for parents
 
-Look for download links within the lesson page to access these resources.
+Look for download links within the lesson page to access these resources. See [Downloads and Materials](../presenting/downloads.md) for more details on preparing printed resources.
 
 ## Switching Between Venues
 
@@ -62,3 +74,9 @@ To switch between venues:
 :::tip
 If you teach multiple age groups, review each venue before your session so you can see how the content is adapted for different levels.
 :::
+
+## Related Articles
+
+- [Presenter Mode](../presenting/presenter-mode.md) -- Display the lesson on a screen or projector during class
+- [Volunteer Guides](../presenting/volunteer-guides.md) -- Share role-specific instructions with your team
+- [Customizing Lessons](../customization/customizing-lessons.md) -- Tailor lesson content for your specific classroom

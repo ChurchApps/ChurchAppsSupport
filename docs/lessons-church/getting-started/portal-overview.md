@@ -4,7 +4,19 @@ title: "Portal Overview"
 
 # Portal Overview
 
+<div class="article-intro">
+
 After logging in to Lessons.church, you are taken to the **Portal** -- your church's dashboard for managing classrooms and lesson schedules. This is where you will spend most of your time when organizing curriculum for your church.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- [Create an account](./creating-account.md) and connect to your church
+- Log in to [Lessons.church](https://lessons.church)
+
+</div>
 
 ## What You See
 
@@ -33,9 +45,15 @@ The portal navigation includes:
 - **Admin** -- Manage programs, studies, and lesson content (visible only if you have admin permissions).
 
 :::info
-The Admin option only appears if your account has been granted content editing permissions. Most church staff will use the Schedules and External Providers pages for day-to-day management.
+The **Admin** option only appears if your account has been granted content editing permissions. Most church staff will use the **Schedules** and **External Providers** pages for day-to-day management.
 :::
 
 ## Getting Started
 
-If you are visiting the portal for the first time and have not created any classrooms yet, start by clicking **Add First Classroom** in the classrooms panel. Give your classroom a name (for example, "Preschool" or "3rd-5th Grade") and save it. From there, you can begin scheduling lessons.
+If you are visiting the portal for the first time and have not created any classrooms yet, start by clicking **Add First Classroom** in the classrooms panel. Give your classroom a name (for example, "Preschool" or "3rd-5th Grade") and save it. From there, you can begin [scheduling lessons](../classrooms/scheduling-lessons.md).
+
+## Related Articles
+
+- [Setting Up Classrooms](../classrooms/setting-up-classrooms.md) -- Detailed guide for creating and managing classrooms
+- [Browsing Content](../browsing/index.md) -- Find programs and studies to schedule
+- [External Providers](../browsing/external-providers.md) -- Add third-party curriculum sources

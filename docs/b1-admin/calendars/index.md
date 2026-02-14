@@ -4,7 +4,11 @@ title: "Calendars"
 
 # Calendars
 
+<div class="article-intro">
+
 The Calendars section in B1 Admin lets you create and manage event calendars for your church. You can set up calendars for different ministries, aggregate events from multiple groups, and publish calendars on your B1.church website for your congregation to see.
+
+</div>
 
 ## Viewing Your Calendars
 
@@ -14,13 +18,13 @@ The Calendars section in B1 Admin lets you create and manage event calendars for
 
 ## What You Can Do
 
-- **Add a new calendar** -- Click the add button to create a calendar for a specific ministry, event type, or purpose.
+- **Add a new calendar** -- Click the add button to create a calendar for a specific ministry, event type, or purpose. See [Creating Calendars](creating-calendars) for step-by-step instructions.
 - **Edit a calendar** -- Click on any calendar to open it and manage its events and associated groups.
 - **Publish calendars** -- Calendars can be displayed on your B1.church website so visitors can see upcoming events at your church.
-- **Create curated calendars** -- Pull events from multiple groups into a single calendar view for a comprehensive look at everything happening at your church.
+- **Create curated calendars** -- Pull events from multiple groups into a single calendar view for a comprehensive look at everything happening at your church. See [Curated Calendar](curated-calendar) for details.
 
 :::info
-Calendars work closely with Groups. When groups have events scheduled, those events can be pulled into your calendars. See the [Creating Calendars](creating-calendars) page to learn how to connect groups to calendars.
+Calendars work closely with [Groups](../groups/creating-groups.md). When groups have events scheduled, those events can be pulled into your calendars. See the [Creating Calendars](creating-calendars) page to learn how to connect groups to calendars.
 :::
 
 ## Next Steps
