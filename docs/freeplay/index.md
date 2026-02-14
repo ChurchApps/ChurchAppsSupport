@@ -15,7 +15,7 @@ FreePlay is a TV app for churches that displays lesson content on classroom TVs.
 - **Offline playback** - Download videos and image slides ahead of time so you never depend on Wi-Fi during services
 - **Classroom pairing** - Connect your TV to a specific room and automatically receive scheduled lesson content
 - **Plan pairing** - Link your device to a church service plan for coordinated content across rooms
-- **Content providers** - Browse and download content from external sources like [Lessons.church](../../lessons-church/) and Bible Project
+- **Content providers** - Browse and download content from external sources like [Lessons.church](/docs/lessons-church/) and Bible Project
 - **TV remote friendly** - Navigate the entire app with a standard TV remote using directional buttons and select
 - **Collapsible sidebar** - A slim sidebar keeps navigation accessible without cluttering the screen
 

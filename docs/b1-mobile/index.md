@@ -40,5 +40,5 @@ B1 Mobile supports push notifications so you never miss an important update from
 - [Profile](./profile/) -- Manage your profile and account settings.
 
 :::info
-B1 Mobile is free to download and use. Your church administrator configures which features are available through [B1 Admin](../../b1-admin/). You simply download the app and log in to get started.
+B1 Mobile is free to download and use. Your church administrator configures which features are available through [B1 Admin](/docs/b1-admin/). You simply download the app and log in to get started.
 :::
