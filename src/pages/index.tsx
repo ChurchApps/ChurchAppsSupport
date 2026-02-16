@@ -21,9 +21,6 @@ function HomepageHeader() {
             <Link className="button button--primary button--lg" to="/docs/getting-started/">
               Get Started
             </Link>
-            <Link className="button button--outline button--lg hero-custom__secondary-btn" to="/docs/b1-admin/">
-              B1 Admin Docs
-            </Link>
           </div>
         </div>
       </div>

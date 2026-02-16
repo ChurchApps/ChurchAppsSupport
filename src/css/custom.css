@@ -336,16 +336,29 @@
 
 .navbar {
   box-shadow: 0 1px 0 0 var(--ifm-color-emphasis-100);
-  backdrop-filter: blur(8px);
 }
 
 [data-theme='dark'] .navbar {
-  background: rgba(20, 24, 32, 0.85);
+  background: #141820;
 }
 
 .navbar__title {
   font-weight: 700;
   font-size: 1.1rem;
+}
+
+@media (max-width: 520px) {
+  .navbar__title {
+    font-size: 0.9rem;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .navbar__logo {
+    margin-right: 0.4rem;
+  }
 }
 
 .navbar__link {
