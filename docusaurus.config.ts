@@ -24,7 +24,11 @@ const config: Config = {
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'es'],
+    localeConfigs: {
+      en: { label: 'English', htmlLang: 'en-US' },
+      es: { label: 'Español', htmlLang: 'es' },
+    },
   },
 
   themes: [
@@ -34,6 +38,7 @@ const config: Config = {
         hashed: true,
         docsRouteBasePath: '/docs',
         indexBlog: false,
+        language: ['en', 'es'],
       },
     ],
   ],
@@ -131,6 +136,10 @@ const config: Config = {
             { label: 'Lessons.church', to: '/docs/lessons-church/' },
             { label: 'FreePlay', to: '/docs/freeplay/' },
           ],
+        },
+        {
+          type: 'localeDropdown',
+          position: 'right',
         },
         {
           href: 'https://github.com/ChurchApps',

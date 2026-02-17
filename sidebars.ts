@@ -5,6 +5,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Getting Started',
+      key: 'getting-started',
       link: { type: 'doc', id: 'getting-started/index' },
       items: [
         'getting-started/create-account',
@@ -33,6 +34,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Groups',
+          key: 'admin-groups',
           link: { type: 'doc', id: 'b1-admin/groups/index' },
           items: [
             'b1-admin/groups/creating-groups',
@@ -67,6 +69,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Serving',
+          key: 'admin-serving',
           link: { type: 'doc', id: 'b1-admin/serving/index' },
           items: [
             'b1-admin/serving/plans',
@@ -140,6 +143,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Profile',
+          key: 'admin-profile',
           link: { type: 'doc', id: 'b1-admin/profile/index' },
           items: [
             'b1-admin/profile/managing-profile',
@@ -172,6 +176,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Getting Started',
+          key: 'church-getting-started',
           link: { type: 'doc', id: 'b1-church/getting-started/index' },
           items: [
             'b1-church/getting-started/logging-in',
@@ -181,6 +186,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Groups',
+          key: 'church-groups',
           link: { type: 'doc', id: 'b1-church/groups/index' },
           items: [
             'b1-church/groups/browsing-groups',
@@ -191,6 +197,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Giving',
+          key: 'church-giving',
           link: { type: 'doc', id: 'b1-church/giving/index' },
           items: [
             'b1-church/giving/making-donations',
@@ -209,6 +216,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Check-In',
+          key: 'church-checkin',
           link: { type: 'doc', id: 'b1-church/checkin/index' },
           items: [
             'b1-church/checkin/self-checkin',
@@ -217,6 +225,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Community',
+          key: 'church-community',
           link: { type: 'doc', id: 'b1-church/community/index' },
           items: [
             'b1-church/community/member-directory',
@@ -226,6 +235,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Content',
+          key: 'church-content',
           link: { type: 'doc', id: 'b1-church/content/index' },
           items: [
             'b1-church/content/sermons',
@@ -245,6 +255,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Getting Started',
+          key: 'mobile-getting-started',
           link: { type: 'doc', id: 'b1-mobile/getting-started/index' },
           items: [
             'b1-mobile/getting-started/installing',
@@ -256,6 +267,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Groups',
+          key: 'mobile-groups',
           link: { type: 'doc', id: 'b1-mobile/groups/index' },
           items: [
             'b1-mobile/groups/group-details',
@@ -265,6 +277,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Giving',
+          key: 'mobile-giving',
           link: { type: 'doc', id: 'b1-mobile/giving/index' },
           items: [
             'b1-mobile/giving/making-donations',
@@ -275,6 +288,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Check-In',
+          key: 'mobile-checkin',
           link: { type: 'doc', id: 'b1-mobile/checkin/index' },
           items: [
             'b1-mobile/checkin/self-checkin',
@@ -283,6 +297,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Serving',
+          key: 'mobile-serving',
           link: { type: 'doc', id: 'b1-mobile/serving/index' },
           items: [
             'b1-mobile/serving/viewing-plans',
@@ -291,6 +306,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Community',
+          key: 'mobile-community',
           link: { type: 'doc', id: 'b1-mobile/community/index' },
           items: [
             'b1-mobile/community/member-directory',
@@ -301,6 +317,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Content',
+          key: 'mobile-content',
           link: { type: 'doc', id: 'b1-mobile/content/index' },
           items: [
             'b1-mobile/content/sermons',
@@ -313,6 +330,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Profile',
+          key: 'mobile-profile',
           link: { type: 'doc', id: 'b1-mobile/profile/index' },
           items: [
             'b1-mobile/profile/editing-profile',
@@ -330,6 +348,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Getting Started',
+          key: 'checkin-getting-started',
           link: { type: 'doc', id: 'b1-checkin/getting-started/index' },
           items: [
             'b1-checkin/getting-started/logging-in',
@@ -339,6 +358,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Check-In',
+          key: 'checkin-checkin',
           link: { type: 'doc', id: 'b1-checkin/check-in/index' },
           items: [
             'b1-checkin/check-in/selecting-service',
@@ -360,6 +380,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Getting Started',
+          key: 'lessons-getting-started',
           link: { type: 'doc', id: 'lessons-church/getting-started/index' },
           items: [
             'lessons-church/getting-started/creating-account',
@@ -426,6 +447,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Getting Started',
+          key: 'freeplay-getting-started',
           link: { type: 'doc', id: 'freeplay/getting-started/index' },
           items: [
             'freeplay/getting-started/pairing-modes',

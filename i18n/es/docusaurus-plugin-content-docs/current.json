@@ -1,0 +1,226 @@
+{
+  "version.label": {
+    "message": "Siguiente",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.getting-started": {
+    "message": "Primeros Pasos",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.B1 - Admin": {
+    "message": "B1 - Admin",
+    "description": "The label for category 'B1 - Admin' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.People": {
+    "message": "Personas",
+    "description": "The label for category 'People' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.admin-groups": {
+    "message": "Grupos",
+    "description": "The label for category 'Groups' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Attendance": {
+    "message": "Asistencia",
+    "description": "The label for category 'Attendance' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Donations": {
+    "message": "Donaciones",
+    "description": "The label for category 'Donations' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.admin-serving": {
+    "message": "Servicio",
+    "description": "The label for category 'Serving' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Forms": {
+    "message": "Formularios",
+    "description": "The label for category 'Forms' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Reports": {
+    "message": "Informes",
+    "description": "The label for category 'Reports' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Website": {
+    "message": "Sitio Web",
+    "description": "The label for category 'Website' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Sermons": {
+    "message": "Sermones",
+    "description": "The label for category 'Sermons' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Calendars": {
+    "message": "Calendarios",
+    "description": "The label for category 'Calendars' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Settings": {
+    "message": "Configuración",
+    "description": "The label for category 'Settings' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.admin-profile": {
+    "message": "Perfil",
+    "description": "The label for category 'Profile' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Guides": {
+    "message": "Guías",
+    "description": "The label for category 'Guides' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.B1 - Website": {
+    "message": "B1 - Sitio Web",
+    "description": "The label for category 'B1 - Website' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-getting-started": {
+    "message": "Primeros Pasos",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-groups": {
+    "message": "Grupos",
+    "description": "The label for category 'Groups' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-giving": {
+    "message": "Ofrendas",
+    "description": "The label for category 'Giving' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Plans": {
+    "message": "Planes",
+    "description": "The label for category 'Plans' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-checkin": {
+    "message": "Registro",
+    "description": "The label for category 'Check-In' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-community": {
+    "message": "Comunidad",
+    "description": "The label for category 'Community' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-content": {
+    "message": "Contenido",
+    "description": "The label for category 'Content' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.B1 - Mobile": {
+    "message": "B1 - Móvil",
+    "description": "The label for category 'B1 - Mobile' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-getting-started": {
+    "message": "Primeros Pasos",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-groups": {
+    "message": "Grupos",
+    "description": "The label for category 'Groups' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-giving": {
+    "message": "Ofrendas",
+    "description": "The label for category 'Giving' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-checkin": {
+    "message": "Registro",
+    "description": "The label for category 'Check-In' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-serving": {
+    "message": "Servicio",
+    "description": "The label for category 'Serving' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-community": {
+    "message": "Comunidad",
+    "description": "The label for category 'Community' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-content": {
+    "message": "Contenido",
+    "description": "The label for category 'Content' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-profile": {
+    "message": "Perfil",
+    "description": "The label for category 'Profile' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.B1 - Checkin": {
+    "message": "B1 - Registro",
+    "description": "The label for category 'B1 - Checkin' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.checkin-getting-started": {
+    "message": "Primeros Pasos",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.checkin-checkin": {
+    "message": "Registro",
+    "description": "The label for category 'Check-In' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Lessons.church": {
+    "message": "Lessons.church",
+    "description": "The label for category 'Lessons.church' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.lessons-getting-started": {
+    "message": "Primeros Pasos",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Browsing Content": {
+    "message": "Explorar Contenido",
+    "description": "The label for category 'Browsing Content' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Classrooms": {
+    "message": "Aulas",
+    "description": "The label for category 'Classrooms' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Customization": {
+    "message": "Personalización",
+    "description": "The label for category 'Customization' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Presenting": {
+    "message": "Presentación",
+    "description": "The label for category 'Presenting' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Administration": {
+    "message": "Administración",
+    "description": "The label for category 'Administration' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.FreePlay": {
+    "message": "FreePlay",
+    "description": "The label for category 'FreePlay' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.freeplay-getting-started": {
+    "message": "Primeros Pasos",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Classroom Mode": {
+    "message": "Modo Aula",
+    "description": "The label for category 'Classroom Mode' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Plan Mode": {
+    "message": "Modo Plan",
+    "description": "The label for category 'Plan Mode' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Content Providers": {
+    "message": "Proveedores de Contenido",
+    "description": "The label for category 'Content Providers' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Browsing Lessons": {
+    "message": "Explorar Lecciones",
+    "description": "The label for category 'Browsing Lessons' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Developer": {
+    "message": "Desarrollador",
+    "description": "The label for category 'Developer' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Setup": {
+    "message": "Configuración",
+    "description": "The label for category 'Setup' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.API": {
+    "message": "API",
+    "description": "The label for category 'API' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Web Apps": {
+    "message": "Aplicaciones Web",
+    "description": "The label for category 'Web Apps' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Mobile Apps": {
+    "message": "Aplicaciones Móviles",
+    "description": "The label for category 'Mobile Apps' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Shared Libraries": {
+    "message": "Bibliotecas Compartidas",
+    "description": "The label for category 'Shared Libraries' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Deployment": {
+    "message": "Despliegue",
+    "description": "The label for category 'Deployment' in sidebar 'docsSidebar'"
+  }
+}

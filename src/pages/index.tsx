@@ -3,6 +3,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
+import Translate, {translate} from '@docusaurus/Translate';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -14,15 +15,17 @@ function HomepageHeader() {
             {siteConfig.title}
           </Heading>
           <p className="hero-custom__subtitle">
-            Free, open-source tools to help your church thrive.
-            Find guides, tutorials, and reference docs for every ChurchApps product.
+            <Translate id="homepage.hero.subtitle">
+              Free, open-source tools to help your church thrive.
+              Find guides, tutorials, and reference docs for every ChurchApps product.
+            </Translate>
           </p>
           <div className="hero-custom__actions">
             <Link className="button button--primary button--lg" to="/docs/getting-started/">
-              Get Started
+              <Translate id="homepage.hero.getStarted">Get Started</Translate>
             </Link>
             <Link className="button button--outline button--lg hero-custom__secondary-btn" to="/docs/b1-admin/">
-              B1 Admin Docs
+              <Translate id="homepage.hero.b1AdminDocs">B1 Admin Docs</Translate>
             </Link>
           </div>
         </div>
@@ -33,8 +36,8 @@ function HomepageHeader() {
 
 const products = [
   {
-    title: 'B1 Admin',
-    description: 'Church management dashboard for people, groups, attendance, donations, and more.',
+    title: translate({id: 'homepage.products.b1admin.title', message: 'B1 Admin'}),
+    description: translate({id: 'homepage.products.b1admin.description', message: 'Church management dashboard for people, groups, attendance, donations, and more.'}),
     link: '/docs/b1-admin/',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -44,8 +47,8 @@ const products = [
     color: '#2196F3',
   },
   {
-    title: 'B1 Website',
-    description: 'Public-facing church website and member portal.',
+    title: translate({id: 'homepage.products.b1website.title', message: 'B1 Website'}),
+    description: translate({id: 'homepage.products.b1website.description', message: 'Public-facing church website and member portal.'}),
     link: '/docs/b1-church/',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -55,8 +58,8 @@ const products = [
     color: '#00897B',
   },
   {
-    title: 'B1 Mobile',
-    description: 'Mobile app for church members on iOS and Android.',
+    title: translate({id: 'homepage.products.b1mobile.title', message: 'B1 Mobile'}),
+    description: translate({id: 'homepage.products.b1mobile.description', message: 'Mobile app for church members on iOS and Android.'}),
     link: '/docs/b1-mobile/',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -66,8 +69,8 @@ const products = [
     color: '#7B1FA2',
   },
   {
-    title: 'B1 Checkin',
-    description: 'Self-service check-in kiosk app for Android tablets.',
+    title: translate({id: 'homepage.products.b1checkin.title', message: 'B1 Checkin'}),
+    description: translate({id: 'homepage.products.b1checkin.description', message: 'Self-service check-in kiosk app for Android tablets.'}),
     link: '/docs/b1-checkin/',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -77,8 +80,8 @@ const products = [
     color: '#E65100',
   },
   {
-    title: 'Lessons.church',
-    description: 'Free church curriculum and lesson management.',
+    title: translate({id: 'homepage.products.lessons.title', message: 'Lessons.church'}),
+    description: translate({id: 'homepage.products.lessons.description', message: 'Free church curriculum and lesson management.'}),
     link: '/docs/lessons-church/',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -88,8 +91,8 @@ const products = [
     color: '#2E7D32',
   },
   {
-    title: 'FreePlay',
-    description: 'TV app for displaying lesson content on classroom screens.',
+    title: translate({id: 'homepage.products.freeplay.title', message: 'FreePlay'}),
+    description: translate({id: 'homepage.products.freeplay.description', message: 'TV app for displaying lesson content on classroom screens.'}),
     link: '/docs/freeplay/',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -123,34 +126,39 @@ function ProductCard({title, description, link, icon, color}: {
 
 const values = [
   {
-    title: '100% Free',
-    description: 'No subscriptions, no premium tiers, no hidden fees. Every feature is free for every church.',
+    title: translate({id: 'homepage.values.free.title', message: '100% Free'}),
+    description: translate({id: 'homepage.values.free.description', message: 'No subscriptions, no premium tiers, no hidden fees. Every feature is free for every church.'}),
     icon: '\u2764\uFE0F',
   },
   {
-    title: 'Open Source',
-    description: 'All code is open source on GitHub. Your data is yours, and you can self-host if you choose.',
+    title: translate({id: 'homepage.values.openSource.title', message: 'Open Source'}),
+    description: translate({id: 'homepage.values.openSource.description', message: 'All code is open source on GitHub. Your data is yours, and you can self-host if you choose.'}),
     icon: '\uD83D\uDD13',
   },
   {
-    title: 'Built for Churches',
-    description: 'Designed specifically for church workflows — not a generic tool adapted for ministry.',
+    title: translate({id: 'homepage.values.builtForChurches.title', message: 'Built for Churches'}),
+    description: translate({id: 'homepage.values.builtForChurches.description', message: 'Designed specifically for church workflows — not a generic tool adapted for ministry.'}),
     icon: '\u26EA',
   },
 ];
 
 export default function Home(): ReactNode {
   return (
-    <Layout title="Home" description="Support documentation for ChurchApps - free, open-source church management tools.">
+    <Layout
+      title={translate({id: 'homepage.title', message: 'Home'})}
+      description={translate({id: 'homepage.description', message: 'Support documentation for ChurchApps - free, open-source church management tools.'})}
+    >
       <HomepageHeader />
       <main>
         <section className="products-section">
           <div className="container">
             <Heading as="h2" className="section-heading">
-              Choose Your Product
+              <Translate id="homepage.products.heading">Choose Your Product</Translate>
             </Heading>
             <p className="section-subtitle">
-              Select a product below to find setup guides, feature documentation, and how-to articles.
+              <Translate id="homepage.products.subtitle">
+                Select a product below to find setup guides, feature documentation, and how-to articles.
+              </Translate>
             </p>
             <div className="products-grid">
               {products.map((product) => (
