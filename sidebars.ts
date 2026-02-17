@@ -513,6 +513,20 @@ const sidebars: SidebarsConfig = {
             'developer/api/local-setup',
             'developer/api/database',
             'developer/api/module-structure',
+            {
+              type: 'category',
+              label: 'Endpoint Reference',
+              link: { type: 'doc', id: 'developer/api/endpoints/index' },
+              items: [
+                'developer/api/endpoints/authentication',
+                'developer/api/endpoints/membership',
+                'developer/api/endpoints/attendance',
+                'developer/api/endpoints/content',
+                'developer/api/endpoints/giving',
+                'developer/api/endpoints/messaging',
+                'developer/api/endpoints/doing',
+              ],
+            },
           ],
         },
         {

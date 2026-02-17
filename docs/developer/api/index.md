@@ -62,3 +62,4 @@ The API uses ES modules (`"type": "module"` in `package.json`). Make sure your i
 - **[Local Setup](./local-setup)** -- Clone, configure, and run the API locally
 - **[Database](./database)** -- Database-per-module architecture, schema scripts, and data access patterns
 - **[Module Structure](./module-structure)** -- Controllers, repositories, models, and authentication
+- **[Endpoint Reference](./endpoints/)** -- Complete REST API documentation for all modules
