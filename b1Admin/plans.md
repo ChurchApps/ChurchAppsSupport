@@ -18,3 +18,8 @@ title: Plans Setup
 - <a href="/videos/b1Admin/lesson-scheduling/output.mp4">Scheduling Lessons from Lessons.church</a>
 - <a href="/videos/b1Admin/songs/output.mp4">Songs</a>
 - <a href="/videos/b1Admin/service-order/output.mp4">Service Order</a>
+
+## Related Articles
+
+- [Scheduling Lessons from Lessons.church](/b1Admin/lesson-scheduling)
+- [Service Order](/b1Admin/service-order)
