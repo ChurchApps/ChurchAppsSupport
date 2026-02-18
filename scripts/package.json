@@ -7,7 +7,9 @@
     "analyze": "tsx src/cli.ts analyze",
     "generate": "tsx src/cli.ts generate",
     "gap-report": "tsx src/cli.ts gap-report",
-    "migrate": "tsx src/cli.ts migrate"
+    "migrate": "tsx src/cli.ts migrate",
+    "translation-status": "tsx src/cli.ts translation-status",
+    "translation-snapshot": "tsx src/cli.ts translation-snapshot"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.52.0",

@@ -24,10 +24,11 @@ const config: Config = {
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'es'],
+    locales: ['en', 'es', 'ko'],
     localeConfigs: {
       en: { label: 'English', htmlLang: 'en-US' },
       es: { label: 'Español', htmlLang: 'es' },
+      ko: { label: '한국어', htmlLang: 'ko' },
     },
   },
 
@@ -38,7 +39,7 @@ const config: Config = {
         hashed: true,
         docsRouteBasePath: '/docs',
         indexBlog: false,
-        language: ['en', 'es'],
+        language: ['en', 'es', 'ko'],
       },
     ],
   ],

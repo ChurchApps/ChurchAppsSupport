@@ -5,6 +5,7 @@ import { buildFeatureMap } from "./analyzer.js";
 import { generateAllArticles } from "./generator.js";
 import { generateGapReport, printGapReport } from "./gap-analyzer.js";
 import { migrateJekyllDocs } from "./migrate.js";
+import { translationStatus, translationSnapshot } from "./translation-tracker.js";
 
 const program = new Command();
 
@@ -89,6 +90,21 @@ program
         console.log(`  ${s.sourceFile}`);
       }
     }
+  });
+
+program
+  .command("translation-status")
+  .description("Show which English docs changed since last translation snapshot")
+  .option("--locale <code>", "Show detailed missing files for a specific language")
+  .action(async (options) => {
+    await translationStatus(options.locale);
+  });
+
+program
+  .command("translation-snapshot")
+  .description("Save current English doc hashes after completing translations")
+  .action(async () => {
+    await translationSnapshot();
   });
 
 program.parse();
