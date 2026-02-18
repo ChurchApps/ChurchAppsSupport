@@ -6,7 +6,7 @@ import { glob } from "glob";
 const ROOT_DIR = resolve(process.cwd(), "..");
 const DOCS_DIR = resolve(ROOT_DIR, "docs");
 const I18N_DIR = resolve(ROOT_DIR, "i18n");
-const MANIFEST_PATH = resolve(process.cwd(), "output", "translation-manifest.json");
+const MANIFEST_PATH = resolve(ROOT_DIR, "translation-manifest.json");
 
 interface Manifest {
   timestamp: string;
