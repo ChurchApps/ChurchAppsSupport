@@ -1,0 +1,226 @@
+{
+  "version.label": {
+    "message": "Aktuell",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.getting-started": {
+    "message": "Erste Schritte",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.B1 - Admin": {
+    "message": "B1 - Admin",
+    "description": "The label for category 'B1 - Admin' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.People": {
+    "message": "Personen",
+    "description": "The label for category 'People' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.admin-groups": {
+    "message": "Gruppen",
+    "description": "The label for category 'Groups' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Attendance": {
+    "message": "Anwesenheit",
+    "description": "The label for category 'Attendance' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Donations": {
+    "message": "Spenden",
+    "description": "The label for category 'Donations' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.admin-serving": {
+    "message": "Dienste",
+    "description": "The label for category 'Serving' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Forms": {
+    "message": "Formulare",
+    "description": "The label for category 'Forms' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Reports": {
+    "message": "Berichte",
+    "description": "The label for category 'Reports' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Website": {
+    "message": "Webseite",
+    "description": "The label for category 'Website' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Sermons": {
+    "message": "Predigten",
+    "description": "The label for category 'Sermons' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Calendars": {
+    "message": "Kalender",
+    "description": "The label for category 'Calendars' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Settings": {
+    "message": "Einstellungen",
+    "description": "The label for category 'Settings' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.admin-profile": {
+    "message": "Profil",
+    "description": "The label for category 'Profile' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Guides": {
+    "message": "Anleitungen",
+    "description": "The label for category 'Guides' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.B1 - Website": {
+    "message": "B1 - Webseite",
+    "description": "The label for category 'B1 - Website' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-getting-started": {
+    "message": "Erste Schritte",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-groups": {
+    "message": "Gruppen",
+    "description": "The label for category 'Groups' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-giving": {
+    "message": "Spenden",
+    "description": "The label for category 'Giving' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Plans": {
+    "message": "Pläne",
+    "description": "The label for category 'Plans' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-checkin": {
+    "message": "Check-in",
+    "description": "The label for category 'Check-In' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-community": {
+    "message": "Gemeinschaft",
+    "description": "The label for category 'Community' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-content": {
+    "message": "Inhalte",
+    "description": "The label for category 'Content' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.B1 - Mobile": {
+    "message": "B1 - Mobil",
+    "description": "The label for category 'B1 - Mobile' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-getting-started": {
+    "message": "Erste Schritte",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-groups": {
+    "message": "Gruppen",
+    "description": "The label for category 'Groups' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-giving": {
+    "message": "Spenden",
+    "description": "The label for category 'Giving' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-checkin": {
+    "message": "Check-in",
+    "description": "The label for category 'Check-In' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-serving": {
+    "message": "Dienste",
+    "description": "The label for category 'Serving' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-community": {
+    "message": "Gemeinschaft",
+    "description": "The label for category 'Community' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-content": {
+    "message": "Inhalte",
+    "description": "The label for category 'Content' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-profile": {
+    "message": "Profil",
+    "description": "The label for category 'Profile' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.B1 - Checkin": {
+    "message": "B1 - Check-in",
+    "description": "The label for category 'B1 - Checkin' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.checkin-getting-started": {
+    "message": "Erste Schritte",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.checkin-checkin": {
+    "message": "Check-in",
+    "description": "The label for category 'Check-In' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Lessons.church": {
+    "message": "Lessons.church",
+    "description": "The label for category 'Lessons.church' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.lessons-getting-started": {
+    "message": "Erste Schritte",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Browsing Content": {
+    "message": "Inhalte durchsuchen",
+    "description": "The label for category 'Browsing Content' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Classrooms": {
+    "message": "Klassenräume",
+    "description": "The label for category 'Classrooms' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Customization": {
+    "message": "Anpassung",
+    "description": "The label for category 'Customization' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Presenting": {
+    "message": "Präsentation",
+    "description": "The label for category 'Presenting' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Administration": {
+    "message": "Verwaltung",
+    "description": "The label for category 'Administration' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.FreePlay": {
+    "message": "FreePlay",
+    "description": "The label for category 'FreePlay' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.freeplay-getting-started": {
+    "message": "Erste Schritte",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Classroom Mode": {
+    "message": "Klassenzimmermodus",
+    "description": "The label for category 'Classroom Mode' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Plan Mode": {
+    "message": "Planmodus",
+    "description": "The label for category 'Plan Mode' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Content Providers": {
+    "message": "Inhaltsanbieter",
+    "description": "The label for category 'Content Providers' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Browsing Lessons": {
+    "message": "Lektionen durchsuchen",
+    "description": "The label for category 'Browsing Lessons' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Developer": {
+    "message": "Entwickler",
+    "description": "The label for category 'Developer' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Setup": {
+    "message": "Einrichtung",
+    "description": "The label for category 'Setup' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.API": {
+    "message": "API",
+    "description": "The label for category 'API' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Web Apps": {
+    "message": "Web-Apps",
+    "description": "The label for category 'Web Apps' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Mobile Apps": {
+    "message": "Mobile Apps",
+    "description": "The label for category 'Mobile Apps' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Shared Libraries": {
+    "message": "Gemeinsame Bibliotheken",
+    "description": "The label for category 'Shared Libraries' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Deployment": {
+    "message": "Bereitstellung",
+    "description": "The label for category 'Deployment' in sidebar 'docsSidebar'"
+  }
+}
