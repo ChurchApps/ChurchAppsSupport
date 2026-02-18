@@ -73,6 +73,7 @@ const sidebars: SidebarsConfig = {
           link: { type: 'doc', id: 'b1-admin/serving/index' },
           items: [
             'b1-admin/serving/plans',
+            'b1-admin/serving/scheduling-lessons',
             'b1-admin/serving/service-order',
             'b1-admin/serving/tasks',
             'b1-admin/serving/automations',
