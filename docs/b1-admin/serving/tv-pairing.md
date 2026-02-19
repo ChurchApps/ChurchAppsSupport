@@ -1,52 +1,55 @@
 ---
-title: "Pairing a TV or Display"
+title: "Connecting FreePlay to B1 Admin"
 ---
 
-# Pairing a TV or Display to a Plan Type
+# Connecting a Classroom TV to Your B1 Admin Lessons
 
 <div class="article-intro">
 
-You can pair a TV, Fire Stick, or Android device to a plan type in B1 Admin so it automatically displays the scheduled lesson content for that ministry. Once paired, the TV always shows the right content for the right room — no manual setup needed each week.
+You can connect a classroom TV to your B1 Admin lessons using **FreePlay** — ChurchApps' free TV app for churches. Once connected, the TV displays the lesson content you have scheduled in B1 Admin, making it available for your teachers right on the classroom screen.
 
 </div>
 
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Set up at least one plan type in your ministry
-- Install the Lessons.church Screen app on the TV or device you want to pair (see download links below)
+- Schedule at least one lesson in B1 Admin (see [Scheduling Lessons](./scheduling-lessons.md))
+- Install **FreePlay** on the TV or Fire Stick you want to use
 
 </div>
 
-## Download the TV App
+## Step 1 — Install FreePlay on Your TV
 
-Install the **Lessons.church Screen** app on your classroom display:
+Install the **FreePlay** app on your classroom display:
 
-- **Fire Stick / Amazon devices** — Search for "Lessons.church" in the Amazon App Store
-- **Android TV / Google TV** — Search for "Lessons.church Screen" in the Google Play Store
+- **Amazon Fire Stick / Fire TV** — Search for **FreePlay** in the Amazon Appstore
+- **Android TV / Google TV** — Search for **FreePlay** in the Google Play Store
+- **Apple TV** — Search for **FreePlay** in the App Store
 
-## Pairing the Device
+For full setup instructions see the [FreePlay Getting Started guide](/docs/freeplay/getting-started/).
 
-1. Open the Lessons.church Screen app on the TV — it will display a **4-character pairing code** on screen
-2. In B1 Admin, go to **Serving** and open your ministry
-3. Find the plan type you want to pair the TV to
-4. Click the **Pair TV App** button next to the plan type
-5. Enter the 4-character code shown on the TV screen
-6. Click **Pair**
-7. The TV displays a success message and is now linked to that plan type
+## Step 2 — Connect B1.church as a Content Provider
 
-Once paired, the TV will automatically show the lesson content scheduled for that plan type each week — no need to set it up again.
+1. Open the **FreePlay** app on the TV
+2. Navigate to the **Content Providers** screen (select the **Providers** icon in the sidebar)
+3. Find and select **B1.church** from the list of available providers
+4. Follow the on-screen prompts to sign in with your B1 church credentials
+5. FreePlay displays **Connected!** once the connection is successful
+
+Once connected, B1.church appears in your FreePlay sidebar. FreePlay will pull the lesson content you have scheduled in B1 Admin so your teachers can play it directly on the classroom TV.
 
 :::tip
-Pair each classroom's TV to its matching plan type (e.g., pair the Preschool TV to the "Preschool" plan type). When you schedule a new lesson for that plan type, the TV picks it up automatically.
+After connecting, your teachers can use the TV remote to advance through videos and slides at their own pace as the lesson flows. No separate setup or USB drives needed.
 :::
 
 :::info
-The pairing code is only valid for a few minutes. If it expires before you finish, simply restart the TV app to get a new code.
+For detailed steps on authenticating with a content provider (QR code, form login, etc.), see [Connecting to Providers](/docs/freeplay/content-providers/connecting-providers).
 :::
 
 ## Related Articles
 
 - [Scheduling Lessons](./scheduling-lessons.md)
 - [Service Plans](./plans.md)
-- [FreePlay — Playing Lessons on a Classroom TV](/docs/freeplay/classroom-mode/playing-lessons)
+- [FreePlay Overview](/docs/freeplay/)
+- [FreePlay — Content Providers](/docs/freeplay/content-providers/)
+- [FreePlay — Connecting to Providers](/docs/freeplay/content-providers/connecting-providers)
