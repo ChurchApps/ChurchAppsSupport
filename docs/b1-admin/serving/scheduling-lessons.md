@@ -66,8 +66,46 @@ Make sure to select the correct **Venue** for your classroom's age group. Choosi
 **Plan ahead** — You can schedule multiple weeks of lessons at once so your team can prepare in advance. Use the past lesson list in the plan view to avoid accidentally repeating content.
 :::
 
+## Customizing Lesson Content
+
+Once a lesson is scheduled, you can tailor it for your specific classroom — remove sections that don't apply, hide roles your room doesn't use, or reorder the content to match your preferred flow. Customizations can be saved for just one classroom or applied across all classrooms at your church.
+
+See the [Customizing Lessons](/docs/lessons-church/customization/customizing-lessons) guide for step-by-step instructions.
+
+## Playing Lessons on a Classroom TV with FreePlay
+
+Scheduling a lesson in B1 Admin pairs perfectly with **[FreePlay](/docs/freeplay/)** — ChurchApps' free media player for classroom TVs and Fire Sticks. When your plan is set up, FreePlay can pull the lesson content directly from Lessons.church and play it full-screen in the classroom. Your teacher controls the pace with a TV remote, advancing through videos and slides as the lesson flows.
+
+This means your volunteers see the plan on their phones while the content plays on the room's TV — no separate setup, no USB drives, no last-minute scrambling.
+
+[Learn how to connect FreePlay to a content provider →](/docs/freeplay/content-providers/connecting-providers)
+
+## Don't See Your Curriculum Provider?
+
+The list of available providers is growing. If your church uses a curriculum provider that isn't showing in B1 Admin yet, reach out to us and we'll work on getting them added.
+
+Feel free to copy and send the message below directly to your curriculum provider — once they reach out to us we'll get the integration set up:
+
+---
+
+> **Subject: ChurchApps Integration Request**
+>
+> Hi [Curriculum Provider Team],
+>
+> We love your curriculum and use it every week with our kids. We also use ChurchApps to manage our volunteers and service plans, and we use FreePlay (freeplay.church) to play lesson content directly on our classroom TVs. It has been a game changer for our teachers.
+>
+> Right now we have to manage your curriculum separately, but if you were integrated with ChurchApps we could schedule your lessons right inside our service plans and play them through FreePlay on our classroom screens — all without leaving the tools we already use.
+>
+> ChurchApps already works with several curriculum providers and their team is ready to work with you too. Could you reach out to them at **support@churchapps.org** to get the conversation started? We'd love to see this happen!
+>
+> Thank you!
+
+---
+
 ## Related Articles
 
 - [Service Plans](./plans.md)
 - [Service Order](./service-order.md)
+- [Customizing Lessons](/docs/lessons-church/customization/customizing-lessons)
+- [FreePlay — Playing Lessons on a Classroom TV](/docs/freeplay/classroom-mode/playing-lessons)
 - [Lessons.church Scheduling Guide](/docs/lessons-church/classrooms/scheduling-lessons)
