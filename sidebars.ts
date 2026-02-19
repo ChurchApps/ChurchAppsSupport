@@ -74,6 +74,8 @@ const sidebars: SidebarsConfig = {
           items: [
             'b1-admin/serving/plans',
             'b1-admin/serving/scheduling-lessons',
+            'b1-admin/serving/plan-validation',
+            'b1-admin/serving/tv-pairing',
             'b1-admin/serving/service-order',
             'b1-admin/serving/tasks',
             'b1-admin/serving/automations',
