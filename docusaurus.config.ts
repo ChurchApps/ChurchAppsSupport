@@ -48,7 +48,7 @@ const config: Config = {
         hashed: true,
         docsRouteBasePath: '/docs',
         indexBlog: false,
-        language: ['en', 'es', 'fr', 'ko', 'de', 'hi', 'it', 'no', 'pt', 'ru', 'tl', 'zh'],
+        language: ['en', 'es', 'fr', 'ko', 'de', 'it', 'no', 'pt', 'ru'],
       },
     ],
   ],
