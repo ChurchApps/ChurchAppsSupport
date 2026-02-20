@@ -1,0 +1,50 @@
+{
+  "title": {
+    "message": "ChurchApps Support",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "ChurchApps",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Documentation": {
+    "message": "Dokumentasyon",
+    "description": "Navbar item with label Documentation"
+  },
+  "item.label.Products": {
+    "message": "Mga Produkto",
+    "description": "Navbar item with label Products"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.ChurchApps.org": {
+    "message": "ChurchApps.org",
+    "description": "Navbar item with label ChurchApps.org"
+  },
+  "item.label.B1 - Admin": {
+    "message": "B1 - Admin",
+    "description": "Navbar item with label B1 - Admin"
+  },
+  "item.label.B1 - Website": {
+    "message": "B1 - Website",
+    "description": "Navbar item with label B1 - Website"
+  },
+  "item.label.B1 - Mobile": {
+    "message": "B1 - Mobile",
+    "description": "Navbar item with label B1 - Mobile"
+  },
+  "item.label.B1 - Checkin": {
+    "message": "B1 - Check-in",
+    "description": "Navbar item with label B1 - Checkin"
+  },
+  "item.label.Lessons.church": {
+    "message": "Lessons.church",
+    "description": "Navbar item with label Lessons.church"
+  },
+  "item.label.FreePlay": {
+    "message": "FreePlay",
+    "description": "Navbar item with label FreePlay"
+  }
+}

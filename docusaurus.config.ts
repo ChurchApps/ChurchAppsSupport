@@ -24,13 +24,20 @@ const config: Config = {
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'es', 'fr', 'ko', 'de'],
+    locales: ['en', 'es', 'fr', 'ko', 'de', 'hi', 'it', 'no', 'pt', 'ru', 'tl', 'zh'],
     localeConfigs: {
       en: { label: 'English', htmlLang: 'en-US' },
       es: { label: 'Español', htmlLang: 'es' },
       fr: { label: 'Français', htmlLang: 'fr' },
       ko: { label: '한국어', htmlLang: 'ko' },
       de: { label: 'Deutsch', htmlLang: 'de' },
+      hi: { label: 'हिन्दी', htmlLang: 'hi' },
+      it: { label: 'Italiano', htmlLang: 'it' },
+      no: { label: 'Norsk', htmlLang: 'no' },
+      pt: { label: 'Português', htmlLang: 'pt' },
+      ru: { label: 'Русский', htmlLang: 'ru' },
+      tl: { label: 'Tagalog', htmlLang: 'tl' },
+      zh: { label: '中文', htmlLang: 'zh' },
     },
   },
 
@@ -41,7 +48,7 @@ const config: Config = {
         hashed: true,
         docsRouteBasePath: '/docs',
         indexBlog: false,
-        language: ['en', 'es', 'fr', 'ko', 'de'],
+        language: ['en', 'es', 'fr', 'ko', 'de', 'it', 'no', 'pt', 'ru'],
       },
     ],
   ],

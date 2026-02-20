@@ -1,0 +1,46 @@
+{
+  "link.title.Documentation": {
+    "message": "Documentazione",
+    "description": "The title of the footer links column with title=Documentation in the footer"
+  },
+  "link.title.Products": {
+    "message": "Prodotti",
+    "description": "The title of the footer links column with title=Products in the footer"
+  },
+  "link.title.Community": {
+    "message": "Comunità",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.item.label.Getting Started": {
+    "message": "Per iniziare",
+    "description": "The label of footer link with label=Getting Started linking to /docs/getting-started/"
+  },
+  "link.item.label.B1 Admin": {
+    "message": "B1 Admin",
+    "description": "The label of footer link with label=B1 Admin linking to /docs/b1-admin/"
+  },
+  "link.item.label.Developer Docs": {
+    "message": "Documentazione per sviluppatori",
+    "description": "The label of footer link with label=Developer Docs linking to /docs/developer/"
+  },
+  "link.item.label.B1.church": {
+    "message": "B1.church",
+    "description": "The label of footer link with label=B1.church linking to https://b1.church"
+  },
+  "link.item.label.Lessons.church": {
+    "message": "Lessons.church",
+    "description": "The label of footer link with label=Lessons.church linking to https://lessons.church"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/ChurchApps"
+  },
+  "link.item.label.Contact Support": {
+    "message": "Contatta il supporto",
+    "description": "The label of footer link with label=Contact Support linking to mailto:support@churchapps.org"
+  },
+  "copyright": {
+    "message": "Copyright 2026 Live Church Solutions. Un'organizzazione 501(c)(3). Realizzato con Docusaurus.",
+    "description": "The footer copyright"
+  }
+}
