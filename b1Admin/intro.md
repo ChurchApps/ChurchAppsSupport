@@ -45,13 +45,13 @@ For further support, please email [support@churchapps.org](mailto:support@church
   <div class="step-content"><img src="../videos/b1Admin/intro/3.png" onclick="showModal(this.src)"></div>
   <div class="step-header" onclick="toggleStep(this)"><span class="step-num">4.</span><span class="step-text">Click on Settings to set up your church's information, administrative roles, and other details.</span><span class="step-arrow">▼</span></div>
   <div class="step-content"><img src="../videos/b1Admin/intro/4.png" onclick="showModal(this.src)"></div>
-  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">5.</span><span class="step-text">Click on the edit pencil to set up your church information.</span><span class="step-arrow">▼</span></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">5.</span><span class="step-text">Click on Edit Settings to set up your church information.</span><span class="step-arrow">▼</span></div>
   <div class="step-content"><img src="../videos/b1Admin/intro/5.png" onclick="showModal(this.src)"></div>
-  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">6.</span><span class="step-text">Back on the dashboard, click the question mark icon in the top right corner for help and tutorials.</span><span class="step-arrow">▼</span></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">6.</span><span class="step-text">Click the question mark icon in the top right corner for help and tutorials, including a Features Tour with links for common tasks.</span><span class="step-arrow">▼</span></div>
   <div class="step-content"><img src="../videos/b1Admin/intro/6.png" onclick="showModal(this.src)"></div>
   <div class="step-header" onclick="toggleStep(this)"><span class="step-num">7.</span><span class="step-text">Click View Documentation.</span><span class="step-arrow">▼</span></div>
   <div class="step-content"><img src="../videos/b1Admin/intro/7.png" onclick="showModal(this.src)"></div>
-  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">8.</span><span class="step-text">You will see a list of tutorials to help you get started with B1.church.</span><span class="step-arrow">▼</span></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">8.</span><span class="step-text">The B1 Admin support site has an overview of key features and links to tutorials covering People, Groups, Attendance, Donations, and more.</span><span class="step-arrow">▼</span></div>
   <div class="step-content"><img src="../videos/b1Admin/intro/8.png" onclick="showModal(this.src)"></div>
   <div class="step-header" onclick="toggleStep(this)"><span class="step-num">9.</span><span class="step-text">Navigate back to the dashboard and click the arrow next to your profile picture and choose Switch App.</span><span class="step-arrow">▼</span></div>
   <div class="step-content"><img src="../videos/b1Admin/intro/9.png" onclick="showModal(this.src)"></div>
