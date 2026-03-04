@@ -19,6 +19,10 @@ Before you can browse content from a provider, you need to connect to it. Some p
 
 </div>
 
+:::tip Setting up B1 Admin + FreePlay together?
+Our **<a href="/guides/freeplay-b1admin" target="_blank">step-by-step guide</a>** walks through linking B1 Admin, scheduling a lesson, and connecting FreePlay — all in one place. Open it in a new tab to follow along.
+:::
+
 ## Browsing Available Providers
 
 1. Open the **Content Providers** screen from the sidebar (select the **Providers** icon at the bottom)

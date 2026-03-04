@@ -10,6 +10,14 @@ FreePlay is a TV app for churches that displays lesson content on classroom TVs.
 
 </div>
 
+:::tip New to FreePlay? Start here
+Watch our **<a href="/guides/freeplay-quickstart" target="_blank">quick start video</a>** — install FreePlay and start playing content in just a few minutes. No tech skills needed.
+:::
+
+:::tip Ready to go further?
+Our **<a href="/guides/freeplay-b1admin" target="_blank">full setup guide</a>** walks through linking B1 Admin so the right lesson downloads to your classroom TV automatically every week. Videos and written steps included.
+:::
+
 ## Key Features
 
 - **Offline playback** - Download videos and image slides ahead of time so you never depend on Wi-Fi during services

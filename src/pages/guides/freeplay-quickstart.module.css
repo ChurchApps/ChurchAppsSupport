@@ -1,0 +1,365 @@
+/* ── Hero ─────────────────────────────────────────────────────────────────── */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  display: block;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.72) 50%, rgba(0,0,0,0.3) 100%);
+  display: flex;
+  align-items: center;
+}
+
+.heroContent {
+  max-width: 600px;
+  padding: 2rem 2.5rem;
+  color: #fff;
+}
+
+.heroEyebrow {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #90CAF9;
+  margin-bottom: 0.5rem;
+}
+
+.heroTitle {
+  font-size: 1.9rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 0.75rem;
+  color: #fff;
+}
+
+.heroSubtitle {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.88);
+  margin-bottom: 1.5rem;
+}
+
+.heroButton {
+  display: inline-block;
+  background: #E65100;
+  color: #fff !important;
+  text-decoration: none !important;
+  padding: 0.65rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.heroButton:hover {
+  background: #F4511E;
+}
+
+/* ── Main content ─────────────────────────────────────────────────────────── */
+.main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+}
+
+/* ── Part section ─────────────────────────────────────────────────────────── */
+.part {
+  padding: 3rem 0 1.5rem;
+}
+
+/* ── Video ────────────────────────────────────────────────────────────────── */
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #000;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ── Accordion ────────────────────────────────────────────────────────────── */
+.accordion {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.accordionToggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.25rem;
+  background: var(--ifm-color-emphasis-100);
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+  text-align: left;
+  transition: background 0.2s;
+}
+
+.accordionToggle:hover {
+  background: var(--ifm-color-emphasis-200);
+}
+
+.accordionArrow {
+  font-size: 0.7rem;
+}
+
+/* ── Steps list & items ───────────────────────────────────────────────────── */
+.stepsList {
+  margin: 0;
+  padding: 0.75rem 1rem 1rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.stepItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+  transition: background 0.15s;
+}
+
+.stepItem:hover {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.stepDone .stepText {
+  color: var(--ifm-color-emphasis-500);
+  text-decoration: line-through;
+}
+
+.checkbox {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid var(--ifm-color-primary);
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, border-color 0.2s;
+  padding: 0;
+}
+
+.stepDone .checkbox {
+  background: #2E7D32;
+  border-color: #2E7D32;
+}
+
+.checkboxNumber {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  line-height: 1;
+}
+
+.stepDone .checkboxNumber {
+  color: #fff;
+  font-size: 0.85rem;
+}
+
+.stepText {
+  flex: 1;
+  font-size: 0.93rem;
+  line-height: 1.5;
+  color: var(--ifm-font-color-base);
+  transition: color 0.2s;
+}
+
+.allDoneBadge {
+  margin-left: auto;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #2E7D32;
+  background: #E8F5E9;
+  padding: 0.15rem 0.6rem;
+  border-radius: 20px;
+}
+
+[data-theme='dark'] .allDoneBadge {
+  color: #81C784;
+  background: rgba(46,125,50,0.2);
+}
+
+.screenshotBtn {
+  flex-shrink: 0;
+  background: none;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.15s, background 0.15s;
+  line-height: 1;
+}
+
+.screenshotBtn:hover {
+  opacity: 1;
+  background: var(--ifm-color-emphasis-100);
+}
+
+/* ── Teaser / next step ───────────────────────────────────────────────────── */
+.teaser {
+  padding: 2rem 0 1rem;
+}
+
+.teaserCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  background: var(--ifm-color-primary-lightest, #E3F2FD);
+  border: 1px solid var(--ifm-color-primary-light, #90CAF9);
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+[data-theme='dark'] .teaserCard {
+  background: rgba(33, 150, 243, 0.1);
+  border-color: rgba(144, 202, 249, 0.3);
+}
+
+.teaserIcon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.teaserTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+
+.teaserText {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--ifm-font-color-base);
+  margin-bottom: 1rem;
+}
+
+.teaserButton {
+  display: inline-block;
+  background: var(--ifm-color-primary);
+  color: #fff !important;
+  text-decoration: none !important;
+  padding: 0.65rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.teaserButton:hover {
+  background: var(--ifm-color-primary-dark);
+  transform: translateY(-1px);
+}
+
+.supportNote {
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+/* ── Lightbox ─────────────────────────────────────────────────────────────── */
+.lightboxOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.88);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.lightboxImg {
+  max-width: 100%;
+  max-height: 90vh;
+  border-radius: 8px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+  cursor: default;
+}
+
+.lightboxClose {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.5rem;
+  background: rgba(255,255,255,0.15);
+  border: none;
+  color: #fff;
+  font-size: 1.25rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.lightboxClose:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+/* ── Responsive ───────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .hero {
+    height: 320px;
+  }
+
+  .heroTitle {
+    font-size: 1.4rem;
+  }
+
+  .heroContent {
+    padding: 1.5rem;
+  }
+
+  .teaserCard {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .teaserButton {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -10,6 +10,14 @@ FreePlay is available for Android TV, Amazon Fire TV, and Apple TV. This guide w
 
 </div>
 
+:::tip New to FreePlay? Start here
+Watch our **<a href="/guides/freeplay-quickstart" target="_blank">quick start video</a>** — install FreePlay and start playing content in just a few minutes. No tech skills needed.
+:::
+
+:::tip Setting up with B1 Admin?
+Our **<a href="/guides/freeplay-b1admin" target="_blank">step-by-step guide</a>** covers the full setup — from linking content providers to having the right lesson download automatically to your classroom TV every week.
+:::
+
 ## Installing FreePlay
 
 ### Android TV / Amazon Fire TV

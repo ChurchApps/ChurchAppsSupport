@@ -18,6 +18,10 @@ B1 Admin integrates directly with [Lessons.church](https://lessons.church) so yo
 
 </div>
 
+:::tip Follow a guided walkthrough
+Want to see the full setup from start to finish? Our **<a href="/guides/freeplay-b1admin" target="_blank">step-by-step guide</a>** covers linking providers, scheduling a lesson, and connecting FreePlay to your classroom TV — with short videos and written steps you can check off as you go.
+:::
+
 ## Step 1 — Link Your Lessons.church Account
 
 This is a one-time setup per ministry. You need to connect your Lessons.church account before you can browse and schedule content.

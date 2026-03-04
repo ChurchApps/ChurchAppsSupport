@@ -1,0 +1,471 @@
+/* ── Hero ─────────────────────────────────────────────────────────────────── */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  display: block;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.72) 50%, rgba(0,0,0,0.3) 100%);
+  display: flex;
+  align-items: center;
+}
+
+.heroContent {
+  max-width: 600px;
+  padding: 2rem 2.5rem;
+  color: #fff;
+}
+
+.heroEyebrow {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #90CAF9;
+  margin-bottom: 0.5rem;
+}
+
+.heroTitle {
+  font-size: 1.9rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 0.75rem;
+  color: #fff;
+}
+
+.heroSubtitle {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.88);
+  margin-bottom: 1.5rem;
+}
+
+.heroButton {
+  display: inline-block;
+  background: #E65100;
+  color: #fff !important;
+  text-decoration: none !important;
+  padding: 0.65rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.heroButton:hover {
+  background: #F4511E;
+}
+
+/* ── Progress bar ─────────────────────────────────────────────────────────── */
+.progressBar {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  background: var(--ifm-color-primary-darkest);
+  padding: 0;
+}
+
+.progressStep {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 2rem;
+  text-decoration: none !important;
+  color: rgba(255,255,255,0.7) !important;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-right: 1px solid rgba(255,255,255,0.1);
+  transition: background 0.2s, color 0.2s;
+}
+
+.progressStep:last-child {
+  border-right: none;
+}
+
+.progressStep:hover {
+  background: rgba(255,255,255,0.08);
+  color: #fff !important;
+}
+
+.progressNumber {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.progressLabel {
+  white-space: nowrap;
+}
+
+/* ── Main content ─────────────────────────────────────────────────────────── */
+.main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+}
+
+/* ── Part section ─────────────────────────────────────────────────────────── */
+.part {
+  padding: 3rem 0 1rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.part:last-child {
+  border-bottom: none;
+}
+
+.partHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.partBadge {
+  background: var(--ifm-color-primary);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  white-space: nowrap;
+  margin-top: 0.35rem;
+  flex-shrink: 0;
+}
+
+.partTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem;
+}
+
+.partSubtitle {
+  color: var(--ifm-color-emphasis-600);
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* ── Video ────────────────────────────────────────────────────────────────── */
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #000;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ── Accordion ────────────────────────────────────────────────────────────── */
+.accordion {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.accordionToggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.25rem;
+  background: var(--ifm-color-emphasis-100);
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+  text-align: left;
+  transition: background 0.2s;
+}
+
+.accordionToggle:hover {
+  background: var(--ifm-color-emphasis-200);
+}
+
+
+/* ── Next button ──────────────────────────────────────────────────────────── */
+.nextWrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.nextButton {
+  display: inline-block;
+  background: var(--ifm-color-primary);
+  color: #fff !important;
+  text-decoration: none !important;
+  padding: 0.75rem 1.75rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background 0.2s, transform 0.1s;
+  box-shadow: 0 2px 8px rgba(33,150,243,0.3);
+}
+
+.nextButton:hover {
+  background: var(--ifm-color-primary-dark);
+  transform: translateY(-1px);
+}
+
+/* ── Done card ────────────────────────────────────────────────────────────── */
+.doneWrap {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.doneCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: #E8F5E9;
+  border: 1px solid #A5D6A7;
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+}
+
+[data-theme='dark'] .doneCard {
+  background: rgba(46, 125, 50, 0.15);
+  border-color: rgba(165, 214, 167, 0.3);
+}
+
+.doneCheck {
+  font-size: 1.5rem;
+  color: #2E7D32;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.doneCard strong {
+  display: block;
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+  color: #2E7D32;
+}
+
+[data-theme='dark'] .doneCard strong {
+  color: #81C784;
+}
+
+.doneCard p {
+  margin: 0 0 0.35rem;
+  font-size: 0.93rem;
+  color: var(--ifm-font-color-base);
+  line-height: 1.55;
+}
+
+.doneCard p:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Steps list & items ───────────────────────────────────────────────────── */
+.stepsList {
+  margin: 0;
+  padding: 0.75rem 1rem 1rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.stepItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+  transition: background 0.15s;
+}
+
+.stepItem:hover {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.stepDone .stepText {
+  color: var(--ifm-color-emphasis-500);
+  text-decoration: line-through;
+}
+
+/* Checkbox */
+.checkbox {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid var(--ifm-color-primary);
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, border-color 0.2s;
+  padding: 0;
+}
+
+.stepDone .checkbox {
+  background: #2E7D32;
+  border-color: #2E7D32;
+}
+
+.checkboxNumber {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  line-height: 1;
+}
+
+.stepDone .checkboxNumber {
+  color: #fff;
+  font-size: 0.85rem;
+}
+
+.stepText {
+  flex: 1;
+  font-size: 0.93rem;
+  line-height: 1.5;
+  color: var(--ifm-font-color-base);
+  transition: color 0.2s;
+}
+
+/* All done badge */
+.allDoneBadge {
+  margin-left: auto;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #2E7D32;
+  background: #E8F5E9;
+  padding: 0.15rem 0.6rem;
+  border-radius: 20px;
+}
+
+[data-theme='dark'] .allDoneBadge {
+  color: #81C784;
+  background: rgba(46,125,50,0.2);
+}
+
+/* Screenshot button */
+.screenshotBtn {
+  flex-shrink: 0;
+  background: none;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.15s, background 0.15s;
+  line-height: 1;
+}
+
+.screenshotBtn:hover {
+  opacity: 1;
+  background: var(--ifm-color-emphasis-100);
+}
+
+/* ── Lightbox ─────────────────────────────────────────────────────────────── */
+.lightboxOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.88);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.lightboxImg {
+  max-width: 100%;
+  max-height: 90vh;
+  border-radius: 8px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+  cursor: default;
+}
+
+.lightboxClose {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.5rem;
+  background: rgba(255,255,255,0.15);
+  border: none;
+  color: #fff;
+  font-size: 1.25rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.lightboxClose:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+/* ── Responsive ───────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .hero {
+    height: 320px;
+  }
+
+  .heroTitle {
+    font-size: 1.4rem;
+  }
+
+  .heroContent {
+    padding: 1.5rem;
+  }
+
+  .progressBar {
+    flex-direction: column;
+  }
+
+  .progressStep {
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .nextButton {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nextWrap {
+    justify-content: stretch;
+  }
+}
