@@ -20,6 +20,7 @@ Place an Android tablet in your lobby or welcome area. Members walk up, search f
 - **Household review** -- See all family members with photos and current group assignments at a glance.
 - **Group assignment** -- Assign each family member to the right class or group for the selected service time.
 - **Guest check-in** -- Add a guest to your household on the spot with a first and last name.
+- **QR guest registration** -- Display a QR code that visitors can scan to [register themselves](../b1-church/checkin/guest-registration) on their own phone before checking in.
 - **Label printing** -- Print name labels for children and parent pickup slips with unique security codes.
 - **Network printer support** -- Discover and configure network printers directly from the app.
 - **Auto-login** -- After the first login, the app remembers your credentials and goes straight to the services screen on future launches.

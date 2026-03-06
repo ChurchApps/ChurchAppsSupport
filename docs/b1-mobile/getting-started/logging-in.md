@@ -32,11 +32,16 @@ If you do not have a ChurchApps account yet, you can create one directly in the 
 
 1. On the login screen, tap the **Register** link at the bottom.
 2. Enter your **first name**, **last name**, and **email address**.
-3. Tap **Register**.
-4. Check your email for a message with your temporary password.
-5. Return to the app, tap **Login**, and sign in with your email and the temporary password from the email.
+3. The form will auto-populate your church if a match is found based on your information.
+4. Tap **Register**.
+5. Check your email for a message with your temporary password.
+6. Return to the app, tap **Login**, and sign in with your email and the temporary password from the email.
 
 After your first login, you can change your password from your [profile settings](../profile/editing-profile.md).
+
+:::info
+If you try to log in with an email that is not yet registered, you will be automatically directed to the registration screen so you can create an account.
+:::
 
 :::warning
 Be sure to check your spam or junk folder if you do not receive the registration email within a few minutes.

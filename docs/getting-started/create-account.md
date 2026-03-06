@@ -45,7 +45,7 @@ After confirming your email and logging in, you will have the option to either c
 **To create a new church:**
 
 1. Select the option to **create a new church**.
-2. Enter your **church name** and basic information.
+2. Enter your **church name** and basic information. The registration form will auto-populate your church details if a match is found.
 3. Complete the setup process.
 4. You will be taken to the **B1 Admin dashboard** where you can begin configuring your church.
 
@@ -54,6 +54,10 @@ After confirming your email and logging in, you will have the option to either c
 1. Select the option to **join an existing church**.
 2. Search for your church by name.
 3. Request to join. An administrator at your church will need to approve your request.
+
+:::info
+If you try to log in with an email that is not yet registered, you will be automatically directed to the registration flow so you can create an account.
+:::
 
 :::info
 The person who creates a new church is automatically assigned the **Domain Admin** role, which grants full access to all settings and features. You can add additional administrators later from the **Roles** page.

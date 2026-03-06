@@ -268,6 +268,46 @@ Authorization: Bearer <token>
 }
 ```
 
+## Email Templates
+
+Base path: `/messaging/emailTemplates`
+
+Manages reusable email templates and sending templated emails to groups.
+
+| Method | Path | Auth | Permission | Description |
+|--------|------|------|------------|-------------|
+| GET | `/` | JWT | — | Load all email templates for the church |
+| GET | `/:id` | JWT | — | Load a single email template by ID |
+| GET | `/preview/:groupId` | JWT | — | Preview email delivery for a group (eligible recipient count, members with no email) |
+| POST | `/` | JWT | — | Create or update email templates (batch) |
+| POST | `/send` | JWT | — | Send a templated email to all members of a group. Body: `{ groupId, subject, htmlContent }` |
+| DELETE | `/:id` | JWT | — | Delete an email template |
+
+### Example: Send Email to Group
+
+```
+POST /messaging/emailTemplates/send
+Authorization: Bearer <token>
+
+{
+  "groupId": "group-123",
+  "subject": "This Week's Update - {{churchName}}",
+  "htmlContent": "<p>Hello {{firstName}},</p><p>Here's what's happening this week...</p>"
+}
+```
+
+```json
+{
+  "totalMembers": 50,
+  "recipientCount": 45,
+  "successCount": 44,
+  "failCount": 1,
+  "noEmailCount": 5
+}
+```
+
+**Supported merge fields:** `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`
+
 ## Blocked IPs
 
 Base path: `/messaging/blockedips`

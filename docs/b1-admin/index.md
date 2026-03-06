@@ -14,7 +14,7 @@ B1 Admin is your church management dashboard. It provides tools to manage every 
 
 1. Open your browser and go to [admin.b1.church](https://admin.b1.church)
 2. Sign in with your username and password
-3. You'll land on the **Dashboard**, which gives you quick access to all major features
+3. You'll land on the **Dashboard**, which provides an overview of your church data along with **Quick Actions** for common tasks like adding people, creating groups, recording donations, and more
 
 :::tip
 New to B1 Admin? Start with the [Introduction](./introduction) for a video walkthrough, then visit [Settings](./settings/) to configure your church information and invite your team.

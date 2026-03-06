@@ -18,8 +18,9 @@ B1 Mobile supports push notifications so you never miss an important update from
 
 - **Groups** -- View your groups, participate in conversations, and stay connected with group members.
 - **Giving** -- Make donations to your church directly from your phone.
+- **Events** -- Browse upcoming events and register directly from your phone.
 - **Check-In** -- Check in yourself and your household members for services and events.
-- **Serving Plans** -- View upcoming service plans and your assigned volunteer positions.
+- **Serving Plans** -- View upcoming service plans, your assigned volunteer positions, and sign up for open positions.
 - **Member Directory** -- Browse your church's directory and view member profiles.
 - **Messaging** -- Send and receive private messages with other church members.
 - **Sermons** -- Watch or listen to sermons from your church.
@@ -33,8 +34,9 @@ B1 Mobile supports push notifications so you never miss an important update from
 - [Dashboard](./dashboard/) -- Understand your personalized home screen.
 - [Groups](./groups/) -- Stay connected with your church groups.
 - [Giving](./giving/) -- Make donations from your phone.
+- [Events](./events/) -- Browse and register for upcoming church events.
 - [Check-In](./checkin/) -- Check in for services and events.
-- [Serving](./serving/) -- View your serving plans and assignments.
+- [Serving](./serving/) -- View your serving plans, assignments, and volunteer opportunities.
 - [Community](./community/) -- Browse the member directory and send messages.
 - [Content](./content/) -- Sermons, Bible, verse of the day, and lessons.
 - [Profile](./profile/) -- Manage your profile and account settings.

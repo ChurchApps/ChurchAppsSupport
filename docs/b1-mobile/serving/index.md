@@ -15,6 +15,7 @@ The **Serving** section in B1 Mobile gives you a quick and easy way to stay on t
 - **Upcoming assignments** -- See all of your future serving times at a glance so you always know when you are needed next.
 - **Past service history** -- Review the services you have already served in to keep track of your involvement over time.
 - **Position assignments** -- Each assignment shows the position you have been given along with its current status -- whether it is requested, confirmed, or pending your response.
+- **Volunteer opportunities** -- Browse open positions and [sign up yourself](./volunteer-signup) for upcoming services.
 
 ## Getting Started
 
@@ -27,3 +28,4 @@ You will only see plans that you have been assigned to. If you do not see any as
 ## Next Steps
 
 - [Viewing Plans](./viewing-plans) -- Learn how to browse your upcoming and past plans and view the full details of each one
+- [Volunteer Signup](./volunteer-signup) -- Browse open positions and sign up for volunteer opportunities

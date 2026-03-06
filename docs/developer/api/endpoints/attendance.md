@@ -253,6 +253,16 @@ Authorization: Bearer <token>
 ]
 ```
 
+## Streaks
+
+Base path: `/attendance/streaks`
+
+Tracks attendance streaks for individuals -- consecutive weeks a person has attended. Useful for engagement metrics and gamification.
+
+| Method | Path | Auth | Permission | Description |
+|--------|------|------|------------|-------------|
+| GET | `/person/:personId` | JWT | — | Load attendance streaks for a person |
+
 ## Related Pages
 
 - [Membership Endpoints](./membership) — People, groups, roles, and church management

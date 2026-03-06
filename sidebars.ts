@@ -99,6 +99,7 @@ const sidebars: SidebarsConfig = {
             'b1-admin/reports/birthday-report',
             'b1-admin/reports/attendance-reports',
             'b1-admin/reports/donation-summary',
+            'b1-admin/reports/audit-log',
           ],
         },
         {
@@ -218,11 +219,30 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'category',
+          label: 'Events',
+          key: 'church-events',
+          link: { type: 'doc', id: 'b1-church/events/index' },
+          items: [
+            'b1-church/events/registering',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Serving',
+          key: 'church-serving',
+          link: { type: 'doc', id: 'b1-church/serving/index' },
+          items: [
+            'b1-church/serving/volunteer-signup',
+          ],
+        },
+        {
+          type: 'category',
           label: 'Check-In',
           key: 'church-checkin',
           link: { type: 'doc', id: 'b1-church/checkin/index' },
           items: [
             'b1-church/checkin/self-checkin',
+            'b1-church/checkin/guest-registration',
           ],
         },
         {
@@ -290,6 +310,15 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'category',
+          label: 'Events',
+          key: 'mobile-events',
+          link: { type: 'doc', id: 'b1-mobile/events/index' },
+          items: [
+            'b1-mobile/events/registering',
+          ],
+        },
+        {
+          type: 'category',
           label: 'Check-In',
           key: 'mobile-checkin',
           link: { type: 'doc', id: 'b1-mobile/checkin/index' },
@@ -304,6 +333,7 @@ const sidebars: SidebarsConfig = {
           link: { type: 'doc', id: 'b1-mobile/serving/index' },
           items: [
             'b1-mobile/serving/viewing-plans',
+            'b1-mobile/serving/volunteer-signup',
           ],
         },
         {

@@ -12,13 +12,14 @@ The Reports page gives you quick access to pre-built reports that help you under
 
 ## Available Reports
 
-The Reports page displays five report cards. Click any card to open the report with its filters.
+The Reports page displays report cards for each available report. Click any card to open the report with its filters.
 
 - **[Birthday Report](./birthday-report)** -- View upcoming birthdays for your congregation members.
 - **[Attendance Trend](./attendance-reports)** -- See how attendance patterns change over time across your services.
 - **[Group Attendance](./attendance-reports)** -- View attendance totals by group for a selected date range.
 - **[Daily Group Attendance](./attendance-reports)** -- Get a day-by-day breakdown of group attendance data.
 - **[Donation Summary](./donation-summary)** -- Review giving totals and trends for financial planning.
+- **[Audit Log](./audit-log)** -- Track all changes and actions across your church management system (found under Settings > Audit Log).
 
 ## Using Reports
 
@@ -40,3 +41,4 @@ Report data depends on consistent data entry. Make sure your team is [tracking a
 - [Birthday Report](./birthday-report) -- Finding and using birthday data.
 - [Attendance Reports](./attendance-reports) -- Understanding the three attendance reports.
 - [Donation Summary](./donation-summary) -- Reviewing giving data and financial summaries.
+- [Audit Log](./audit-log) -- Tracking system activity and changes.

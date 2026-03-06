@@ -18,9 +18,23 @@ B1 Admin gives you several ways to view and analyze your church's giving data. T
 
 </div>
 
+## Giving Dashboard
+
+The **Giving Dashboard** is the first thing you see when you click **Donations** in the sidebar. It provides a high-level view of your giving activity with key performance indicators.
+
+1. Navigate to **Donations** in the sidebar to open the dashboard.
+2. At the top, four **KPI cards** display your giving metrics at a glance:
+   - **Total Giving** -- The total amount donated in the selected period.
+   - **Average Gift** -- The average donation amount.
+   - **Unique Donors** -- The number of distinct people who gave.
+   - **Total Donations** -- The total number of individual donations.
+3. Use the **period toggle** to switch between **Weekly**, **Monthly**, and **Quarterly** views.
+4. Below the KPIs, a chart displays giving trends for the selected period.
+5. Click **Download** to export a CSV file with giving totals.
+
 ## Donations Summary Page
 
-The **Summary** page is the first thing you see when you click **Donations** in the sidebar. It provides a high-level view of your giving activity.
+The **Summary** page provides more detailed aggregate giving data.
 
 1. Navigate to **Donations** in the sidebar to open the Summary page.
 2. Use the **date range filter** to select the time period you want to review. Set the earlier date on top and the more recent date on the bottom.

@@ -47,6 +47,10 @@ FreePlay checks for updated content every hour. If the schedule changes during t
 Download lessons before Sunday morning while your building has a strong internet connection. Once downloaded, the content plays offline without any network dependency.
 :::
 
+## Downloads Tab
+
+FreePlay includes a **Downloads** tab where you can view and manage all content that has been downloaded to the device. This gives you visibility into what is stored locally and ready for offline playback. Use the Downloads tab to verify that lessons are fully downloaded before Sunday morning or to free up storage space by removing old content.
+
 ## If the Schedule Is Empty
 
 If no lesson is scheduled for the selected classroom, you will see the message "The schedule could not be loaded. Make sure a lesson is scheduled for this class." Check your schedule at [freeplay.church](https://freeplay.church) and make sure the correct lesson is assigned to this room.

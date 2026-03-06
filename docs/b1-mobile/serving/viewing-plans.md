@@ -47,6 +47,10 @@ Tap on any plan -- whether upcoming or past -- to open its full details. The det
 - **Your assignment** -- Your position, the time you are needed, and your current status.
 - **Team assignments** -- A summary of everyone serving in the plan, so you can see who else is on the team.
 
+## Printing Plans
+
+You can print a plan's details for offline reference. From the plan detail view, use the **print** option to generate a printable version of the service order and assignments. This is useful for rehearsals, backstage reference, or sharing with team members who prefer a paper copy.
+
 :::tip
 Check the **Upcoming** tab regularly to stay on top of your schedule. The hero card always shows your very next commitment, so you can open the app and know right away when you are serving next.
 :::
@@ -54,3 +58,7 @@ Check the **Upcoming** tab regularly to stay on top of your schedule. The hero c
 :::info
 You will receive [push notifications](../community/notifications.md) when you are assigned to a new plan or when your assignment status changes, so you never miss an update.
 :::
+
+## Related Articles
+
+- [Volunteer Signup](./volunteer-signup) -- Browse and sign up for open volunteer positions

@@ -17,8 +17,10 @@ When members visit your B1.church site, they see your church's public website wi
 - **Timeline** -- A personalized feed of updates, conversations, and activity from your groups and church.
 - **Groups** -- View the groups you belong to, see group members, join conversations, and track attendance.
 - **Giving** -- Make donations to your church online and view your giving history.
+- **Events** -- Browse upcoming events and register yourself and your family.
+- **Serving** -- View service plans, your volunteer positions, and sign up for open volunteer opportunities.
 - **Plans** -- See upcoming service plans, view your assigned positions, and access song details and service orders.
-- **Check-In** -- Check in yourself and your household members for services and events.
+- **Check-In** -- Check in yourself and your household members for services and events. Guests can register via QR code.
 - **Community Directory** -- Browse your church's member directory, view profiles, and send direct messages.
 - **Content** -- Access sermons, read the Bible, work through lessons, and watch live streams, all from your church's site.
 
@@ -27,8 +29,10 @@ When members visit your B1.church site, they see your church's public website wi
 - [Getting Started](./getting-started/) -- Create your account, log in, and learn how to navigate B1.church.
 - [Groups](./groups/) -- Join and participate in your church's groups.
 - [Giving](./giving/) -- Make donations and manage your giving.
+- [Events](./events/) -- Browse and register for upcoming church events.
+- [Serving](./serving/) -- View plans and sign up for volunteer positions.
 - [Plans](./plans/) -- View service plans and your volunteer positions.
-- [Check-In](./checkin/) -- Check in for services and events.
+- [Check-In](./checkin/) -- Check in for services, events, and guest registration.
 - [Community Directory](./community/) -- Find and connect with other members.
 - [Content](./content/) -- Sermons, Bible, lessons, and live streaming.
 

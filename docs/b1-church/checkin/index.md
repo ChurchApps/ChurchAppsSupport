@@ -25,3 +25,4 @@ The check-in feature requires that your church has set up services and attendanc
 ## Next Steps
 
 - [Self Check-In](./self-checkin.md) -- Step-by-step guide to checking in your household for a service.
+- [Guest Registration](./guest-registration.md) -- Register as a guest visitor and your family members.

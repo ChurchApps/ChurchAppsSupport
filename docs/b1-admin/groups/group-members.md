@@ -54,6 +54,22 @@ You can communicate with all members of a group directly from B1 Admin:
 
 Your message will be delivered to all members of the group.
 
+## Emailing Group Members
+
+You can send formatted emails to all members of a group:
+
+1. From the group detail page, click the **email icon**.
+2. The Send Email dialog opens, showing how many members will receive the email and how many have no email address on file.
+3. Optionally select an **email template** from the dropdown, or compose a message from scratch. Click **Manage Templates** to create or edit templates.
+4. Enter a **subject line**. You can insert merge fields by clicking the field chips: `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`.
+5. Compose the **email body** using the HTML editor. The same merge fields are available here.
+6. Click **Send**.
+7. A summary shows how many emails were sent successfully and how many members were skipped (no email on file).
+
+:::tip
+Create reusable email templates for recurring communications like weekly updates, event announcements, or prayer requests. Templates save time and ensure consistent messaging.
+:::
+
 ## Exporting Group Data
 
 To download the group member list as a file:

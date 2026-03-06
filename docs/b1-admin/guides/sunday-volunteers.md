@@ -85,7 +85,22 @@ Follow the [Tasks](../serving/tasks.md) and [Automations](../serving/automations
 Set automations to Inactive during holiday breaks or special seasons, then reactivate when you're ready. No need to delete and recreate.
 :::
 
-## Step 6: Let Volunteers Know
+## Step 6: Enable Self-Service Signup (Optional)
+
+Let volunteers sign up for positions themselves instead of waiting for admin assignments.
+
+1. When editing a plan, set a **Signup Deadline** (hours before service) to control when self-signup closes. Leave blank for no deadline.
+2. Optionally toggle **Show volunteer names on signup page** to let volunteers see who else is signed up.
+3. For each position, check the **Allow Self-Signup** checkbox to make it available for self-service.
+4. Add a **Description** to each position so volunteers know what the role involves.
+
+Once self-signup positions are created, they automatically appear on the volunteer signup pages on [B1.church](../../b1-church/serving/volunteer-signup) and the [B1 Mobile app](../../b1-mobile/serving/volunteer-signup). Members can browse open positions, see how many spots remain, and sign up with one click.
+
+:::tip
+Mix admin-assigned and self-signup positions in the same plan. For example, assign your worship leader directly but let greeters and coffee servers self-select.
+:::
+
+## Step 7: Let Volunteers Know
 
 Assigned volunteers automatically see their plans and can respond.
 
@@ -93,6 +108,7 @@ Assigned volunteers automatically see their plans and can respond.
 2. They can accept or decline assignments directly from either platform
 3. They can set blockout dates for weeks they're unavailable
 4. Plans can be printed for rehearsals or posted backstage
+5. Volunteers can browse and sign up for open positions via the [volunteer signup page](../../b1-church/serving/volunteer-signup)
 
 :::tip
 Push notifications on the mobile app alert volunteers when they receive new assignments or when plans change.
@@ -113,3 +129,5 @@ Your volunteer management system is set up. Each week, create a new plan, assign
 - [Automations](../serving/automations.md) — automate recurring tasks
 - [Viewing Plans (Web)](../../b1-church/plans/viewing-plans.md) — how volunteers see plans online
 - [Viewing Plans (Mobile)](../../b1-mobile/serving/viewing-plans.md) — how volunteers see plans on mobile
+- [Volunteer Signup (Web)](../../b1-church/serving/volunteer-signup) — how members self-select volunteer positions
+- [Volunteer Signup (Mobile)](../../b1-mobile/serving/volunteer-signup) — volunteer self-signup on mobile

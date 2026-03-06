@@ -21,6 +21,7 @@ Our **<a href="/guides/freeplay-b1admin" target="_blank">full setup guide</a>** 
 ## Key Features
 
 - **Offline playback** - Download videos and image slides ahead of time so you never depend on Wi-Fi during services
+- **Downloads management** - View and manage all downloaded content from the dedicated Downloads tab
 - **Classroom pairing** - Connect your TV to a specific room and automatically receive scheduled lesson content
 - **Plan pairing** - Link your device to a church service plan for coordinated content across rooms
 - **Content providers** - Browse and download content from external sources like [Lessons.church](/docs/lessons-church/) and Bible Project

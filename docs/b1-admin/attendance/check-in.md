@@ -65,6 +65,41 @@ Only Brother label printers are compatible with the B1 Checkin app. Other printe
 Follow your printer's setup instructions to connect it to the same WiFi network as your tablet. You can find Brother printer drivers and setup guides on the [Brother support site](https://support.brother.com).
 :::
 
+## Customizing the Kiosk Appearance
+
+You can customize the look and feel of the B1 Checkin app to match your church's branding. In B1 Admin, go to **Attendance > Kiosk Theme** to configure:
+
+### Colors
+
+Customize eight color settings to match your church branding:
+
+- **Primary** and **Primary Contrast** -- Main brand color and its text color.
+- **Secondary** and **Secondary Contrast** -- Accent color and its text color.
+- **Header Background** and **Subheader Background** -- Colors for the kiosk header areas.
+- **Button Background** and **Button Text** -- Colors for interactive buttons.
+
+### Background Image
+
+Upload an optional background image for the kiosk welcome and lookup screens. Recommended size is 1920x1080 pixels.
+
+### Idle Screen / Screensaver
+
+Configure a screensaver that activates after a period of inactivity:
+
+1. Toggle the idle screen **on** or **off**.
+2. Set the **timeout** (how many seconds of inactivity before the screensaver starts, minimum 10 seconds).
+3. Add one or more **slides** -- each slide has an image and a display duration (minimum 3 seconds).
+
+:::tip
+Use the idle screen to display announcements, upcoming events, or welcome messages when the kiosk is not actively being used.
+:::
+
+## Guest Registration via QR Code
+
+The check-in kiosk can display a QR code that visitors scan to register themselves and their family on their own phone. This speeds up the check-in process for first-time guests.
+
+When a guest scans the QR code, they are taken to a [guest registration page](../../b1-church/checkin/guest-registration) where they enter their name, email, and family members. A volunteer can then look them up on the kiosk and check them in.
+
 ## What Gets Recorded
 
 Every check-in creates an attendance record in B1 Admin. You can view these records on the [Attendance](tracking-attendance.md) and [Groups](../groups/group-members.md) tabs just like manually entered attendance. There is no difference in how the data appears — both methods feed into the same reports.
