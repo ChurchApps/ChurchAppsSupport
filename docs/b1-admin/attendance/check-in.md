@@ -100,6 +100,18 @@ The check-in kiosk can display a QR code that visitors scan to register themselv
 
 When a guest scans the QR code, they are taken to a [guest registration page](../../b1-church/checkin/guest-registration) where they enter their name, email, and family members. A volunteer can then look them up on the kiosk and check them in.
 
+### Enabling QR Guest Registration
+
+To turn on the QR code display:
+
+1. In B1 Admin, go to **Mobile** in the left sidebar (phone icon).
+2. Select the **Check-In** tab.
+3. Toggle **QR Guest Registration** on.
+
+:::note
+This setting is under **Mobile**, not under Attendance > Kiosk Theme.
+:::
+
 ## What Gets Recorded
 
 Every check-in creates an attendance record in B1 Admin. You can view these records on the [Attendance](tracking-attendance.md) and [Groups](../groups/group-members.md) tabs just like manually entered attendance. There is no difference in how the data appears — both methods feed into the same reports.
