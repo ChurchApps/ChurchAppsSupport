@@ -4,9 +4,9 @@ import Layout from '@theme/Layout';
 import styles from './freeplay-b1admin.module.css';
 
 const VIDEOS = {
-  part1: 'tlV__b9r2Xc',
-  part2: 'JNxyIH1dT08',
-  part3: '-2MMC1pRBnI',
+  part1: 'uyk6kEO4D2U',
+  part2: 'P4f3PM5dqZQ',
+  part3: 'ULKvfyIRuPw',
 };
 
 const SS = '/img/guides/screenshots/';
