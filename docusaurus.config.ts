@@ -14,7 +14,7 @@ const config: Config = {
   url: 'https://support.churchapps.org',
   baseUrl: '/',
 
-  staticDirectories: ['static', 'videos'],
+  staticDirectories: ['static'],
 
   organizationName: 'ChurchApps',
   projectName: 'ChurchAppsSupport',
