@@ -29,9 +29,9 @@ The Serving section includes three key areas:
 ## Getting Started
 
 1. Navigate to **Serving** from the main menu in B1 Admin.
-2. Select a **ministry tab** to view its plan types and teams.
-3. Choose a plan type to start [creating service plans](./plans.md), or explore the [Songs](./songs.md) and [Tasks](./tasks.md) sub-sections.
+2. Click the add ministry button to create a new ministry or togggle "show all" to view existing ministry tabs. Select a **ministry tab** to view its plan types and teams.
+3. Choose "create a plan type" or choose an existing plan type to start [creating service plans](./plans.md), or explore the [Songs](./songs.md) and [Tasks](./tasks.md) sub-sections.
 
 :::info
-Before you can create plans, you will need to set up your ministries and teams in the Settings area. See the Settings documentation for details on configuring your serving structure.
+Before you can create plans, you will need to create your Ministries in the Serving area and Teams within each Ministry . 
 :::
