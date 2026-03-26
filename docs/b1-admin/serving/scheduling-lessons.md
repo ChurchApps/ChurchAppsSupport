@@ -53,7 +53,7 @@ Once linked, you can schedule lessons directly from Plans.
    - Select a **Program** (e.g., "Bible Stories for Kids")
    - Select a **Study** within that program (e.g., "Creation and Early Stories")
    - Select the specific **Lesson**
-   - Select the **Venue** — this is the age-group version of the lesson (e.g., "Preschool", "Elementary")
+   - Select the **Venue** — this is the age-group version of the lesson
 7. Click **Associate Lesson** to confirm
 8. Choose your **copy option** for volunteers:
    - **Nothing** — fresh plan, no volunteers carried over
@@ -64,7 +64,7 @@ Once linked, you can schedule lessons directly from Plans.
 The plan is created and named automatically (e.g., "Feb 23 - Elementary"). Volunteers can open the plan to see their assignments and review the lesson content before Sunday.
 
 :::warning
-Make sure to select the correct **Venue** for your classroom's age group. Choosing the wrong venue (e.g., Preschool content for an Elementary class) means your volunteers will see content designed for a different age level.
+Make sure to select the correct **Venue** for your classroom's age group. Choosing the wrong venue means your volunteers will see content designed for a different age level.
 :::
 
 :::tip
