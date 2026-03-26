@@ -44,7 +44,8 @@ The Content Provider Accounts section is per ministry. If you run multiple minis
 Once linked, you can schedule lessons directly from Plans.
 
 1. In B1 Admin, go to **Serving → Plans**
-2. Select your ministry tab and click **Add Plan** — the **Schedule Lesson** form opens
+2. Select your ministry tab and click **Add Plan Type** — give the plan type a name such as Children's Church or Sunday School
+3. Click on the plan type you just made and click **Schedule Lesson** for one lesson or **bulk schedule** for a series of lessons.
 3. Select the **date** for the lesson (defaults to the upcoming Sunday)
 4. Click **Select Lesson** — a content browser dialog opens
 5. At the top of the dialog, confirm **Lessons.church** is selected as the provider
