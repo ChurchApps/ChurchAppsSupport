@@ -54,7 +54,7 @@ Set up your teams in the ministry settings before creating plans. This way, you 
 
 ## Printing Plans
 
-You can print a plan for distribution to your team. Open the plan and use the **Print** option to generate a printable version that includes assignments and the service order. This is useful for handing out at rehearsals or posting in a common area.
+You can print a plan for distribution to your team. Open the plan, Open the service order tab and use the **Print** option to generate a printable version that includes assignments and the service order. This is useful for handing out at rehearsals or posting in a common area.
 
 :::info
 Plans are organized by ministry. Make sure you are on the correct ministry tab before creating or viewing plans.
