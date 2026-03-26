@@ -13,7 +13,7 @@ Service plans organize who is serving and when. Each plan is tied to a specific 
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Set up your ministries and teams in the Settings area
+- Set up your ministries and teams in the Serving area
 - Make sure volunteers have been added to your [people directory](../people/adding-people.md) and assigned to teams
 
 </div>
@@ -27,9 +27,10 @@ Service plans organize who is serving and when. Each plan is tied to a specific 
 
 ## Creating a Plan
 
-1. From the plan type view, click **Add Plan**.
-2. Select the **date** for the service.
-3. Save the plan. You can now begin assigning team members and building out the [service order](./service-order.md).
+1. From the plan type view, click **New Plan**.
+2. Give the plan a name or use the date as the name. Select the **date** for the service.
+3. If you would like to copy from a previous plan, choose positions only or positions and assignments. If you do not want to copy, just choose nothing. You can also copy the order of service from my previous plan.
+4. Save the plan. You can now begin assigning team members and building out the [service order](./service-order.md).
 
 ## The Plan Detail Page
 
@@ -41,9 +42,11 @@ When you open a plan, you will see two tabs:
 ## Assigning Team Members
 
 1. Open a plan and go to the **Assignments** tab.
-2. Click on a **team** to expand it.
-3. Add members from your team roster by clicking **Add**.
-4. Assigned members will appear under their team with their assignment status.
+2. Click on **add Position** to expand it. Fill out the information in the ad a position form. For category name add whatever category you like.
+3. Click on **People Needed** is it? and choose volunteers to fill that position.
+4. Add members from your team roster by clicking **Add**.
+5. Assigned members will appear under their team with their assignment status.
+6. Click notify volunteers to notify them within the B1 app or via email.
 
 :::tip
 Set up your teams in the ministry settings before creating plans. This way, you will have a ready pool of volunteers to assign from.
