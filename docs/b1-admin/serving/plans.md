@@ -42,8 +42,8 @@ When you open a plan, you will see two tabs:
 ## Assigning Team Members
 
 1. Open a plan and go to the **Assignments** tab.
-2. Click on **add Position** to expand it. Fill out the information in the ad a position form. For category name add whatever category you like.
-3. Click on **People Needed** is it? and choose volunteers to fill that position.
+2. Click on **add Position** to expand it. Fill out the information in the add a position form. For category name add whatever category you like.
+3. Click on **People Needed** and choose volunteers to fill that position.
 4. Add members from your team roster by clicking **Add**.
 5. Assigned members will appear under their team with their assignment status.
 6. Click notify volunteers to notify them within the B1 app or via email.
