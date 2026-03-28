@@ -42,10 +42,6 @@ Sundin ang gabay sa [Bulk Import](../sermons/bulk-import.md) para:
 2. I-preview ang import para makita kung aling mga video ang iku-pull
 3. I-click ang Import para idagdag ang lahat nang sabay-sabay
 
-:::tip
-I-enable ang auto-import at ang mga bagong video na ia-upload mo sa YouTube/Vimeo ay awtomatikong lalabas sa B1 — walang kinakailangang manual na trabaho.
-:::
-
 ## Hakbang 3: Magdagdag ng mga Indibidwal na Sermon
 
 Para sa mga isahang pagdaragdag o mga sermon na hindi bahagi ng bulk import, idagdag ang mga ito nang isa-isa.

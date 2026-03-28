@@ -373,7 +373,6 @@ Base path: `/content/settings`
 | GET | `/my` | JWT | — | Kunin ang mga setting ng kasalukuyang gumagamit |
 | GET | `/` | JWT | Settings.Edit | Kunin ang lahat ng setting para sa simbahan |
 | GET | `/public/:churchId` | Pampubliko | — | Kunin ang mga pampublikong setting para sa isang simbahan (ibinalik bilang mga key-value pair) |
-| GET | `/imports?playlistId=&channelId=&type=` | JWT | Settings.Edit | Kunin ang mga setting ng auto-import (mga YouTube/Vimeo channel ID) |
 | POST | `/my` | JWT | — | I-save ang mga setting ng antas ng gumagamit (sinusuportahan ang base64 na pag-upload ng imahe) |
 | POST | `/` | JWT | Settings.Edit | I-save ang mga setting ng antas ng simbahan (sinusuportahan ang base64 na pag-upload ng imahe) |
 | DELETE | `/my/:id` | JWT | — | Burahin ang isang setting ng gumagamit |

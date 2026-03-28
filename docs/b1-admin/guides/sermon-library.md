@@ -42,10 +42,6 @@ Follow the [Bulk Import](../sermons/bulk-import.md) guide to:
 2. Preview the import to see which videos will be pulled in
 3. Click Import to add them all at once
 
-:::tip
-Enable auto-import and new videos you upload to YouTube/Vimeo will appear in B1 automatically — no manual work needed.
-:::
-
 ## Step 3: Add Individual Sermons
 
 For one-off additions or sermons not part of a bulk import, add them individually.

@@ -373,7 +373,6 @@ Base path: `/content/settings`
 | GET | `/my` | JWT | — | Get current user's settings |
 | GET | `/` | JWT | Settings.Edit | Get all settings for the church |
 | GET | `/public/:churchId` | Public | — | Get public settings for a church (returned as key-value pairs) |
-| GET | `/imports?playlistId=&channelId=&type=` | JWT | Settings.Edit | Get auto-import settings (YouTube/Vimeo channel IDs) |
 | POST | `/my` | JWT | — | Save user-level settings (supports base64 image upload) |
 | POST | `/` | JWT | Settings.Edit | Save church-level settings (supports base64 image upload) |
 | DELETE | `/my/:id` | JWT | — | Delete a user setting |
