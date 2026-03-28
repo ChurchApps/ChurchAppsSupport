@@ -48,4 +48,4 @@ Removing a service time does not delete past attendance records. Your historical
 
 ## What's Next
 
-Once your campuses, service times, and groups are in place, you are ready to start [tracking attendance](tracking-attendance.md) or set up [self check-in](check-in.md) for your services.
+Once your campuses, service times, and groups are in place, you are ready to start [recording attendance](recording-attendance.md) manually or set up [self check-in](check-in.md) for your services.

@@ -14,7 +14,7 @@ Once your campuses, service times, and groups are configured, B1 Admin makes it 
 <h4>Before You Begin</h4>
 
 - Your attendance structure must be set up with at least one campus and service time. See [Attendance Setup](setup.md) if you haven't done this yet.
-- Attendance data needs to be recorded before reports will show results. Data can come from manual entry or [self check-in](check-in.md).
+- Attendance data needs to be recorded before reports will show results. Data can come from [manual entry](recording-attendance.md) or [self check-in](check-in.md).
 
 </div>
 
