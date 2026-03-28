@@ -14,7 +14,7 @@ Once your campuses, service times, and groups are set up, you can manually recor
 <h4>Before You Begin</h4>
 
 - Your campuses, service times, and groups must be configured. See [Attendance Setup](setup.md) if you haven't done this yet.
-- The groups you want to track must have **Track Attendance** enabled. See [Attendance Setup](setup.md#assigning-groups-to-service-times) for details.
+- The groups you want to track must have **Track Attendance** enabled. See [Attendance Setup](setup.md) for details.
 
 </div>
 
@@ -26,7 +26,7 @@ A session represents one occurrence of a group meeting -- for example, your K--3
 2. Select the group you want to record attendance for.
 3. Click the **Sessions** tab.
 4. Click **New** to create a new session.
-5. Choose the **Service Time** the group is assigned to.
+5. If the group is assigned to a service time, choose the **Service Time**. If it is an unscheduled group, this field will not appear.
 6. Select the **Session Date** -- this can be today, a past date, or a future date.
 7. Click **Save**.
 

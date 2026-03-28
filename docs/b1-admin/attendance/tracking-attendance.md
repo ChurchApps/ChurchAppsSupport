@@ -56,3 +56,8 @@ Group attendance is especially valuable for [small group](../groups/creating-gro
 - Compare campus-level data to understand which locations are growing.
 - Use group-level reports to follow up with [groups](../groups/group-members.md) that show declining attendance.
 - Combine attendance insights with the [AI Search](../people/ai-search.md) tool to find people who haven't attended recently.
+
+## Related Pages
+
+- [Recording Attendance](recording-attendance.md) -- manually enter attendance for a group session
+- [Check-In](check-in.md) -- set up self check-in so attendance is recorded automatically

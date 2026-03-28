@@ -34,6 +34,19 @@ Before you can track attendance, you need to tell B1 Admin about your church's p
 5. Repeat for each service time at that campus.
 6. To assign a group to a service time, select the service time and click **Add Group**. Choose the group from the list and click **Save**.
 
+### Enabling Track Attendance on a Group
+
+Before a group can have attendance recorded, Track Attendance must be turned on for that group.
+
+1. Click **Groups** in the sidebar and select the group.
+2. Click the **Edit** pencil icon.
+3. Set **Track Attendance** to **Yes**.
+4. Click **Save**.
+
+:::tip
+If you assigned the group to a service time in the previous step, also use the **Add Service Time** option on the group's edit screen to link it to the correct service. This ensures sessions are connected to the right campus and time.
+:::
+
 :::tip
 If a group meets outside of a regular service -- like a midweek small group that tracks its own attendance -- you can leave it as an unscheduled group. It will still appear on the Groups tab for attendance reporting.
 :::
