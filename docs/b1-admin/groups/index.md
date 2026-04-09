@@ -6,7 +6,7 @@ title: "Groups"
 
 <div class="article-intro">
 
-The **Groups** section lets you organize your church members into teams, ministries, small groups, Bible studies, committees, and more. Groups are the backbone of community life at your church, and this section gives you the tools to create, manage, and communicate with every group in one place.
+The **Groups** section lets you organize your church members into ministries, small groups, Bible studies, committees, and more. Groups are the backbone of community life at your church, and this section gives you the tools to create, manage, and communicate with every group in one place. Note that **Teams** are separate from Groups — Teams are used for serving and volunteer scheduling.
 
 </div>
 
@@ -39,7 +39,7 @@ Here is what you can accomplish in the Groups section:
 To access Groups, click **People** in the left sidebar of your B1 Admin dashboard, then select **Groups**. You will see all of your existing groups organized by category.
 
 :::tip
-If you are just getting started, begin by creating a few categories that match your church structure (for example, "Ministries," "Small Groups," "Teams"). Then add individual groups within each category. See [Creating Groups](./creating-groups.md) for a step-by-step walkthrough.
+If you are just getting started, begin by creating a few categories that match your church structure (for example, "Ministries," "Small Groups," "Committees"). Then add individual groups within each category. See [Creating Groups](./creating-groups.md) for a step-by-step walkthrough.
 :::
 
 :::info
