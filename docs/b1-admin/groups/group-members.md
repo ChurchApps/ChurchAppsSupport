@@ -6,7 +6,7 @@ title: "Group Members"
 
 <div class="article-intro">
 
-Once you have created a group, the next step is adding members. From a group's detail page you can search for people, add them to the group, assign leaders, send messages, and export the member list. Managing group membership is essential for coordinating ministries, small groups, and teams.
+Once you have created a group, the next step is adding members. From a group's detail page you can search for people, add them to the group, assign leaders, send messages, and export the member list. Managing group membership is essential for coordinating small groups, committees, and classes.
 
 </div>
 
