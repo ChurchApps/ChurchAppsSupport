@@ -1,58 +1,63 @@
 ---
-title: "Acompanhamento de frequência"
+title: "Acompanhamento de Presença"
 ---
 
-# Acompanhamento de frequência
+# Acompanhamento de Presença
 
 <div class="article-intro">
 
-Uma vez que seus campus, horários de culto e grupos estejam configurados, o B1 Admin facilita a revisão dos dados de frequência e a identificação de tendências. A página de Frequência oferece duas visualizações de relatórios -- a aba **Frequência** para tendências da igreja toda e a aba **Grupos** para detalhes por grupo. Use essas ferramentas para entender padrões de crescimento, identificar engajamento em declínio e tomar decisões baseadas em dados para sua igreja.
+Uma vez que seus campi, horários de culto e grupos estejam configurados, o B1 Admin facilita a revisão dos dados de presença e a identificação de tendências. A página de Presença oferece duas visualizações de relatórios -- a aba **Presença** para tendências gerais da igreja e a aba **Grupos** para detalhes por grupo. Use essas ferramentas para entender padrões de crescimento, identificar declínio no engajamento e tomar decisões baseadas em dados para sua igreja.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de começar</h4>
+<h4>Antes de Começar</h4>
 
-- Sua estrutura de frequência deve estar configurada com pelo menos um campus e horário de culto. Consulte [Configuração de frequência](setup.md) se ainda não fez isso.
-- Os dados de frequência precisam ser registrados antes que os relatórios mostrem resultados. Os dados podem vir de entrada manual ou [check-in autônomo](check-in.md).
+- Sua estrutura de presença deve estar configurada com pelo menos um campus e horário de culto. Consulte [Configuração de Presença](setup.md) se ainda não fez isso.
+- Os dados de presença precisam ser registrados antes que os relatórios mostrem resultados. Os dados podem vir de [inserção manual](recording-attendance.md) ou [check-in autônomo](check-in.md).
 
 </div>
 
-## Visualizando tendências de frequência
+## Visualizando Tendências de Presença
 
-1. Abra o **B1 Admin** e clique em **Attendance** na barra lateral.
-2. Selecione a aba **Attendance**.
-3. O relatório é executado automaticamente quando a aba é aberta, mostrando a frequência em um intervalo de datas padrão.
+1. Abra o **B1 Admin** e clique em **Presença** na barra lateral.
+2. Selecione a aba **Presença**.
+3. O relatório é executado automaticamente quando a aba é aberta, mostrando a presença em um período padrão.
 
-## Filtrando seus dados
+## Filtrando Seus Dados
 
-Use os filtros no topo da página para restringir os resultados:
+Use os filtros no topo da página para refinar os resultados:
 
-- **Intervalo de datas** -- escolha uma data de início e fim para focar em um período específico.
-- **Campus** -- selecione um campus para ver a frequência apenas desse local.
-- **Horário de culto** -- escolha um horário de culto para detalhar uma reunião específica.
+- **Período** -- escolha uma data inicial e final para focar em um período específico.
+- **Campus** -- selecione um campus para ver a presença apenas daquela localização.
+- **Horário de Culto** -- escolha um horário de culto para detalhar uma reunião específica.
 
-O gráfico e os dados são atualizados assim que você altera um filtro, para que você possa comparar rapidamente diferentes períodos ou locais.
+O gráfico e os dados são atualizados assim que você altera um filtro, para que possa comparar rapidamente diferentes períodos ou localizações.
 
 :::info
-Os relatórios são executados automaticamente cada vez que você abre a aba Frequência, então você sempre verá números atualizados sem precisar clicar em um botão de atualização.
+Os relatórios são executados automaticamente cada vez que você abre a aba de Presença, então você sempre verá números atualizados sem precisar clicar em um botão de atualizar.
 :::
 
-## Frequência por grupo
+## Presença por Grupo
 
-A aba **Grupos** mostra a frequência dividida por grupo individual. Isso é útil quando você deseja monitorar uma classe específica, equipe ministerial ou pequeno grupo em vez de olhar para os números gerais do culto.
+A aba **Grupos** mostra a presença detalhada por grupo individual. Isso é útil quando você deseja monitorar uma classe, equipe de ministério ou pequeno grupo específico, em vez de olhar para os números gerais do culto.
 
 1. Selecione a aba **Grupos**.
-2. Escolha um grupo na lista para ver seu histórico de frequência.
-3. Use o filtro de intervalo de datas para ajustar a janela do relatório.
+2. Escolha um grupo na lista para ver seu histórico de presença.
+3. Use o filtro de período para ajustar a janela de relatório.
 
 :::tip
-A frequência por grupo é especialmente valiosa para líderes de [pequenos grupos](../groups/creating-groups.md) que desejam acompanhar o engajamento em seu grupo ao longo do tempo.
+A presença por grupo é especialmente valiosa para líderes de [pequenos grupos](../groups/creating-groups.md) que desejam acompanhar o engajamento dentro do seu grupo ao longo do tempo.
 :::
 
-## Dicas para usar dados de frequência
+## Dicas para Usar os Dados de Presença
 
-- Revise as tendências mensalmente para identificar padrões sazonais antecipadamente.
-- Compare dados por campus para entender quais locais estão crescendo.
-- Use relatórios por grupo para acompanhar [grupos](../groups/group-members.md) que mostram frequência em declínio.
-- Combine insights de frequência com a ferramenta [Pesquisa com IA](../people/ai-search.md) para encontrar pessoas que não compareceram recentemente.
+- Revise as tendências mensalmente para identificar padrões sazonais cedo.
+- Compare dados por campus para entender quais localizações estão crescendo.
+- Use relatórios por grupo para acompanhar [grupos](../groups/group-members.md) que mostram declínio na presença.
+- Combine insights de presença com a ferramenta de [Pesquisa com IA](../people/ai-search.md) para encontrar pessoas que não têm frequentado recentemente.
+
+## Páginas Relacionadas
+
+- [Registrar Presença](recording-attendance.md) -- inserir manualmente a presença de uma sessão de grupo
+- [Check-In](check-in.md) -- configurar o check-in autônomo para que a presença seja registrada automaticamente

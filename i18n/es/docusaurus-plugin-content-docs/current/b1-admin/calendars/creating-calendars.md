@@ -1,62 +1,94 @@
 ---
-title: "Crear calendarios"
+title: "Creación de Calendarios"
 ---
 
-# Crear calendarios
+# Creación de Calendarios
 
 <div class="article-intro">
 
-Crear un calendario en B1 Admin te brinda un lugar centralizado para gestionar eventos de un ministerio, departamento o de toda tu iglesia. Cada calendario puede incorporar eventos de uno o más grupos, facilitando mantener todo organizado.
+Crear un calendario en B1 Admin le ofrece un lugar central para gestionar eventos de un ministerio, departamento o de toda su iglesia. Cada calendario puede incorporar eventos de uno o más grupos, facilitando mantener todo organizado.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de comenzar</h4>
+<h4>Antes de Comenzar</h4>
 
-- Configura los [grupos](../groups/creating-groups.md) cuyos eventos deseas incluir en tu calendario
-- Necesitas acceso administrativo a la sección de Calendarios en B1 Admin
+- Configure los [grupos](../groups/creating-groups.md) cuyos eventos desea incluir en su calendario
+- Necesita acceso administrativo a la sección de Calendarios en B1 Admin
 
 </div>
 
-## Crear un nuevo calendario
+## Creación de un Nuevo Calendario
 
-1. Navega a la sección **Calendarios** en B1 Admin.
-2. Haz clic en **Agregar calendario**.
-3. Ingresa un **nombre** para tu calendario (por ejemplo, "Eventos del Ministerio Juvenil" o "Calendario Principal de la Iglesia").
-4. Agrega una **descripción** opcional para ayudar a tu equipo a entender para qué es este calendario.
-5. Haz clic en **Crear** para guardar tu nuevo calendario.
+1. Navegue a la sección **Calendarios** en B1 Admin.
+2. Haga clic en **Agregar Calendario**.
+3. Ingrese un **nombre** para su calendario (por ejemplo, "Eventos del Ministerio Juvenil" o "Calendario Principal de la Iglesia").
+4. Agregue una **descripción** opcional para ayudar a su equipo a entender para qué es este calendario.
+5. Haga clic en **Crear** para guardar su nuevo calendario.
 
-## La página de detalle del calendario
+## La Página de Detalle del Calendario
 
-Después de crear un calendario, haz clic en él para abrir la página de detalle. Esta página tiene dos áreas principales:
+Después de crear un calendario, haga clic en él para abrir la página de detalle. Esta página tiene dos áreas principales:
 
-- **Columna izquierda** -- El editor de calendario y eventos. Aquí puedes ver, agregar y gestionar eventos en tu calendario.
-- **Columna derecha** -- La lista de grupos asociados. Muestra qué grupos tienen eventos incluidos en este calendario.
+- **Columna izquierda** -- El editor de calendario y eventos. Aquí puede ver, agregar y gestionar eventos en su calendario.
+- **Columna derecha** -- La lista de grupos asociados. Esto muestra qué grupos tienen eventos incluidos en este calendario.
 
-## Agregar eventos
+## Agregar Eventos
 
-1. En la página de detalle del calendario, usa el editor de calendario a la izquierda para agregar nuevos eventos.
-2. Establece el nombre del evento, fecha, hora y cualquier otro detalle.
-3. Los eventos que agregues aparecerán en el calendario y pueden publicarse en tu sitio web.
+1. En la página de detalle del calendario, use el editor de calendario a la izquierda para agregar nuevos eventos.
+2. Establezca el nombre del evento, fecha, hora y cualquier otro detalle.
+3. Los eventos que agregue aparecerán en el calendario y pueden publicarse en su sitio web.
 
-## Conectar grupos
+## Conectar Grupos
 
 Los grupos que tienen eventos en el calendario aparecen automáticamente en la lista de grupos en el lado derecho de la página de detalle.
 
-1. Haz clic en **Agregar** en la sección de grupos para asociar un grupo con tu calendario.
-2. Selecciona el grupo del menú desplegable.
-3. Elige si deseas incluir **todos los eventos** de ese grupo o solo **eventos específicos**.
-4. Haz clic en **Guardar**.
+1. Haga clic en **Agregar** en la sección de grupos para asociar un grupo con su calendario.
+2. Seleccione el grupo del menú desplegable.
+3. Elija si desea incluir **todos los eventos** de ese grupo o solo **eventos específicos**.
+4. Haga clic en **Guardar**.
 
 :::tip
-Conectar grupos a tu calendario es una forma poderosa de agregar eventos automáticamente. Cuando un líder de grupo agrega un evento a su [grupo](../groups/creating-groups.md), este puede fluir hacia el calendario general de la iglesia sin ningún trabajo adicional de tu parte.
+Conectar grupos a su calendario es una forma poderosa de agregar eventos automáticamente. Cuando un líder de grupo agrega un evento a su [grupo](../groups/creating-groups.md), puede fluir hacia el calendario general de su iglesia sin ningún trabajo adicional de su parte.
 :::
 
 :::info
-Si deseas crear un solo calendario que reúna eventos de muchos grupos de tu iglesia, consulta [Calendario curado](curated-calendar) para un enfoque simplificado.
+Si desea crear un solo calendario que reúna eventos de muchos grupos en su iglesia, consulte [Calendario Curado](curated-calendar) para un enfoque simplificado.
 :::
 
-## Próximos pasos
+## Habilitar el Registro de Eventos
 
-- [Calendario curado](curated-calendar) -- Crea un calendario que reúna eventos de múltiples grupos
-- [Vista general de calendarios](./) -- Regresa a la vista general de calendarios
+Puede habilitar el registro para cualquier evento del calendario para que los miembros puedan inscribirse a través del sitio web o la aplicación móvil de B1.
+
+1. Haga clic en un evento existente o cree uno nuevo.
+2. En el editor de eventos, active **Registro** para habilitarlo.
+3. Configure los ajustes de registro:
+   - **Capacidad** (opcional) -- Establezca un número máximo de registros. Déjelo en blanco para ilimitado.
+   - **Apertura de Registro** -- La fecha y hora en que el registro estará disponible.
+   - **Cierre de Registro** -- La fecha y hora en que se cierra el registro.
+   - **Etiquetas** -- Etiquetas separadas por comas (por ejemplo, "juventud, retiro, ebv") para ayudar a categorizar eventos con registro.
+4. Guarde el evento.
+
+Una vez habilitado el registro, los miembros verán un botón **Registrarse para este Evento** cuando vean el evento en el [sitio web de B1](../../b1-church/events/registering) o la [aplicación B1 Mobile](../../b1-mobile/events/registering).
+
+### Gestión de Registros
+
+Para ver y gestionar los registros de sus eventos:
+
+1. Navegue a la página **Registros** en B1 Admin.
+2. Verá una tabla de todos los eventos con registro habilitado, mostrando el título del evento, fecha, cantidad actual de registros vs. capacidad y etiquetas.
+3. Haga clic en un evento para ver la lista completa de registros, incluyendo nombres, cantidad de miembros, estado y fecha de registro.
+4. Desde la página de detalle, puede:
+   - **Cancelar** registros individuales
+   - **Eliminar** registros permanentemente
+   - **Exportar** todos los registros a CSV
+
+:::tip
+Use la barra de progreso de capacidad para monitorear qué tan rápido se llenan los eventos. La barra se vuelve roja cuando un evento está en capacidad o la supera.
+:::
+
+## Próximos Pasos
+
+- [Calendario Curado](curated-calendar) -- Crear un calendario que reúna eventos de múltiples grupos
+- [Guía de Registro de Eventos](../guides/event-registration) -- Guía paso a paso para configurar el registro de eventos
+- [Descripción General de Calendarios](./) -- Volver a la descripción general de calendarios

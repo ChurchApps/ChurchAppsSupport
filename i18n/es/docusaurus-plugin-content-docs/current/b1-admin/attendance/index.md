@@ -6,41 +6,42 @@ title: "Asistencia"
 
 <div class="article-intro">
 
-La secci\u00f3n de Asistencia en B1 Admin le brinda una vista completa de qui\u00e9n asiste a su iglesia y c\u00f3mo sus grupos est\u00e1n creciendo con el tiempo. Desde configurar sedes y horarios de servicio hasta revisar tendencias y establecer el auto check-in, todo lo que necesita para registrar y comprender la asistencia se administra desde esta p\u00e1gina.
+La sección de Asistencia en B1 Admin le ofrece una vista completa de quién asiste a su iglesia y cómo crecen sus grupos con el tiempo. Desde la configuración de sedes y horarios de servicio hasta la revisión de tendencias y la configuración del registro de entrada autónomo, todo lo que necesita para rastrear y comprender la asistencia se gestiona desde esta página.
 
 </div>
 
-## Descripci\u00f3n de la p\u00e1gina
+## Descripción General de la Página
 
-Cuando abre la p\u00e1gina de Asistencia, ver\u00e1 un encabezado con estad\u00edsticas clave sobre la configuraci\u00f3n de asistencia de su iglesia:
+Cuando abre la página de Asistencia, verá un encabezado con estadísticas clave sobre la configuración de asistencia de su iglesia:
 
-- **Sedes** -- la cantidad de ubicaciones f\u00edsicas que ha configurado
-- **Horarios de servicio** -- el n\u00famero total de servicios en todas las sedes
-- **Grupos programados** -- grupos que est\u00e1n asignados a un horario de servicio espec\u00edfico
-- **Grupos no programados** -- grupos que registran asistencia independientemente de un horario de servicio
+- **Sedes** -- el número de ubicaciones físicas que tiene configuradas
+- **Horarios de Servicio** -- el número total de servicios en todas las sedes
+- **Grupos Programados** -- grupos que están asignados a un horario de servicio específico
+- **Grupos No Programados** -- grupos que rastrean la asistencia independientemente de un horario de servicio
 
-Debajo del encabezado, tres pesta\u00f1as organizan sus herramientas de asistencia.
+Debajo del encabezado, tres pestañas organizan sus herramientas de asistencia.
 
-## Pesta\u00f1as
+## Pestañas
 
-### Configuraci\u00f3n
+### Configuración
 
-La pesta\u00f1a de **Configuraci\u00f3n** es donde establece los elementos fundamentales del seguimiento de asistencia. Aqu\u00ed define sus sedes, agrega horarios de servicio a cada sede y asigna [grupos](../groups/creating-groups.md) a esos horarios de servicio. Solo necesita hacer esto una vez, aunque puede actualizarlo cuando cambie su horario. Consulte [Configuraci\u00f3n de asistencia](setup.md) para un recorrido completo.
+La pestaña **Configuración** es donde se configuran los elementos básicos del seguimiento de asistencia. Aquí define sus sedes, agrega horarios de servicio a cada sede y asigna [grupos](../groups/creating-groups.md) a esos horarios de servicio. Solo necesita hacer esto una vez, aunque puede actualizarlo cada vez que cambie su horario. Consulte [Configuración de Asistencia](setup.md) para un recorrido completo.
 
 ### Asistencia
 
-La pesta\u00f1a de **Asistencia** muestra las tendencias de asistencia a lo largo del tiempo. Use los filtros para reducir los resultados por rango de fechas, sede o horario de servicio y detecte r\u00e1pidamente patrones en sus datos. Consulte [Seguimiento de asistencia](tracking-attendance.md) para detalles sobre el uso de reportes y filtros.
+La pestaña **Asistencia** muestra las tendencias de asistencia a lo largo del tiempo. Use los filtros para reducir los resultados por rango de fechas, sede o horario de servicio y detectar rápidamente patrones en sus datos. Consulte [Seguimiento de Asistencia](tracking-attendance.md) para detalles sobre el uso de informes y filtros.
 
 ### Grupos
 
-La pesta\u00f1a de **Grupos** desglosa la asistencia por grupo individual. Esto es \u00fatil cuando desea ver c\u00f3mo va un grupo peque\u00f1o, clase o equipo de ministerio espec\u00edfico en lugar de ver los n\u00fameros generales de la iglesia.
+La pestaña **Grupos** desglosa la asistencia por grupo individual. Esto es útil cuando desea ver cómo le va a un grupo pequeño, clase o equipo de ministerio específico en lugar de ver los números generales de la iglesia.
 
-## Pr\u00f3ximos pasos
+## Próximos Pasos
 
-- [Configuraci\u00f3n de asistencia](setup.md) -- configurar sedes, horarios de servicio y grupos
-- [Seguimiento de asistencia](tracking-attendance.md) -- ver tendencias y filtrar reportes
-- [Check-in](check-in.md) -- configurar el auto check-in para servicios
+- [Configuración de Asistencia](setup.md) -- configurar sedes, horarios de servicio y grupos
+- [Registro de Asistencia](recording-attendance.md) -- ingresar manualmente la asistencia de una sesión de grupo
+- [Seguimiento de Asistencia](tracking-attendance.md) -- ver tendencias y filtrar informes
+- [Registro de Entrada](check-in.md) -- configurar el registro de entrada autónomo para servicios
 
 :::tip
-Si est\u00e1 configurando la asistencia por primera vez, comience con la gu\u00eda de [Configuraci\u00f3n de asistencia](setup.md) para definir sus sedes y horarios de servicio. Una vez que eso est\u00e9 en su lugar, puede comenzar a registrar y revisar datos de asistencia de inmediato.
+Si está configurando la asistencia por primera vez, comience con la guía de [Configuración de Asistencia](setup.md) para definir sus sedes y horarios de servicio. Una vez que eso esté en su lugar, puede comenzar a [registrar asistencia](recording-attendance.md) manualmente o configurar el [registro de entrada autónomo](check-in.md).
 :::

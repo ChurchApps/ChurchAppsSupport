@@ -6,7 +6,7 @@ title: "Presenze"
 
 <div class="article-intro">
 
-La sezione Presenze in B1 Admin ti offre una visione completa di chi si presenta nella tua chiesa e di come i tuoi gruppi crescono nel tempo. Dalla configurazione delle sedi e degli orari dei servizi alla revisione delle tendenze e alla configurazione del check-in autonomo, tutto ciò di cui hai bisogno per monitorare e comprendere le presenze viene gestito da questa pagina.
+La sezione Presenze in B1 Admin ti offre una visione completa di chi partecipa alla tua chiesa e di come i tuoi gruppi crescono nel tempo. Dalla configurazione delle sedi e degli orari dei servizi alla revisione delle tendenze e alla configurazione del check-in self-service, tutto ciò che serve per monitorare e comprendere le presenze viene gestito da questa pagina.
 
 </div>
 
@@ -25,22 +25,23 @@ Sotto l'intestazione, tre schede organizzano i tuoi strumenti per le presenze.
 
 ### Configurazione
 
-La scheda **Configurazione** è dove configuri gli elementi fondamentali del monitoraggio delle presenze. Qui definisci le tue sedi, aggiungi gli orari dei servizi a ciascuna sede e assegni i [gruppi](../groups/creating-groups.md) a quegli orari di servizio. Devi farlo solo una volta, anche se puoi aggiornarlo ogni volta che il tuo programma cambia. Consulta [Configurazione presenze](setup.md) per una guida completa.
+La scheda **Configurazione** è dove definisci gli elementi base del monitoraggio delle presenze. Qui definisci le tue sedi, aggiungi orari dei servizi a ogni sede e assegni [gruppi](../groups/creating-groups.md) a quegli orari dei servizi. Devi farlo solo una volta, anche se puoi aggiornarlo ogni volta che il tuo programma cambia. Vedi [Configurazione presenze](setup.md) per una guida completa.
 
 ### Presenze
 
-La scheda **Presenze** mostra le tendenze delle presenze nel tempo. Usa i filtri per restringere i risultati per intervallo di date, sede o orario di servizio e individuare rapidamente i modelli nei tuoi dati. Consulta [Monitoraggio presenze](tracking-attendance.md) per dettagli sull'uso di report e filtri.
+La scheda **Presenze** mostra le tendenze delle presenze nel tempo. Usa i filtri per restringere i risultati per intervallo di date, sede o orario del servizio e individuare rapidamente i pattern nei tuoi dati. Vedi [Monitoraggio presenze](tracking-attendance.md) per dettagli sull'uso dei report e dei filtri.
 
 ### Gruppi
 
-La scheda **Gruppi** suddivide le presenze per singolo gruppo. Questo è utile quando vuoi vedere come sta andando un piccolo gruppo specifico, una classe o un team ministeriale piuttosto che guardare i numeri dell'intera chiesa.
+La scheda **Gruppi** suddivide le presenze per singolo gruppo. È utile quando vuoi vedere come va un piccolo gruppo, una classe o un team ministeriale specifico piuttosto che guardare i numeri complessivi della chiesa.
 
 ## Prossimi passi
 
 - [Configurazione presenze](setup.md) -- configura sedi, orari dei servizi e gruppi
-- [Monitoraggio presenze](tracking-attendance.md) -- visualizza le tendenze e filtra i report
-- [Check-In](check-in.md) -- configura il check-in autonomo per i servizi
+- [Registrazione presenze](recording-attendance.md) -- inserisci manualmente le presenze per una sessione di gruppo
+- [Monitoraggio presenze](tracking-attendance.md) -- visualizza tendenze e filtra i report
+- [Check-In](check-in.md) -- configura il check-in self-service per i servizi
 
 :::tip
-Se stai configurando le presenze per la prima volta, inizia con la guida [Configurazione presenze](setup.md) per definire le tue sedi e gli orari dei servizi. Una volta fatto, puoi iniziare subito a monitorare e rivedere i dati sulle presenze.
+Se stai configurando le presenze per la prima volta, inizia con la guida [Configurazione presenze](setup.md) per definire le tue sedi e gli orari dei servizi. Una volta fatto, puoi iniziare a [registrare le presenze](recording-attendance.md) manualmente o configurare il [check-in self-service](check-in.md).
 :::

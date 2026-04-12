@@ -6,7 +6,7 @@ title: "Oppmøteoppsett"
 
 <div class="article-intro">
 
-Før du kan spore oppmøte, må du fortelle B1 Admin om kirkens fysiske lokasjoner, når gudstjenester finner sted, og hvilke grupper som møtes ved hver gudstjeneste. Dette engangsoppsettet skaper strukturen som driver all oppmøtesporing og rapportering i kirken din.
+Før du kan spore oppmøte, må du fortelle B1 Admin om kirkens fysiske lokasjoner, når gudstjenester foregår og hvilke grupper som møtes ved hver gudstjeneste. Dette engangsoppsettet skaper strukturen som driver all oppmøtesporing og rapportering på tvers av kirken din.
 
 </div>
 
@@ -20,32 +20,45 @@ Før du kan spore oppmøte, må du fortelle B1 Admin om kirkens fysiske lokasjon
 
 ## Nøkkelbegreper
 
-- **Campus** -- en fysisk lokasjon der kirken din møtes (f.eks. "Hovedcampus," "Nord-campus").
-- **Gudstjenestetid** -- en regelmessig samling på en campus (f.eks. "Søndag 09:00," "Onsdag 19:00").
+- **Campus** -- en fysisk lokasjon der kirken din møtes (f.eks. «Hovedcampus», «Nord-campus»).
+- **Gudstjenestetid** -- en gjentakende samling ved et campus (f.eks. «Søndag 09:00», «Onsdag 19:00»).
 - **Planlagt gruppe** -- en gruppe tilordnet en bestemt gudstjenestetid. Oppmøte spores i konteksten av den gudstjenesten.
-- **Ikke-planlagt gruppe** -- en gruppe som sporer oppmøte på egen hånd, uten å være knyttet til en gudstjenestetid.
+- **Uplanlagt gruppe** -- en gruppe som sporer oppmøte på egen hånd, uten å være knyttet til en gudstjenestetid.
 
-## Sette opp oppmøtestrukturen din
+## Sette opp oppmøtestrukturen
 
-1. Åpne **B1 Admin** og klikk på **Attendance** i sidepanelet.
-2. Velg fanen **Setup**.
-3. Klikk på **Add Campus** og skriv inn navnet på lokasjonen din. Klikk **Save**.
-4. Med campusen valgt, klikk på **Add Service Time**. Skriv inn et navn som "Sunday 9:00 AM" og klikk **Save**.
-5. Gjenta for hver gudstjenestetid på den campusen.
-6. For å tilordne en gruppe til en gudstjenestetid, velg gudstjenestetiden og klikk på **Add Group**. Velg gruppen fra listen og klikk **Save**.
+1. Åpne **B1 Admin** og klikk **Oppmøte** i sidefeltet.
+2. Velg fanen **Oppsett**.
+3. Klikk **Legg til campus** og skriv inn navnet på lokasjonen din. Klikk **Lagre**.
+4. Med campus valgt, klikk **Legg til gudstjenestetid**. Skriv inn et navn som «Søndag 09:00» og klikk **Lagre**.
+5. Gjenta for hver gudstjenestetid ved det campuset.
+6. For å tilordne en gruppe til en gudstjenestetid, velg gudstjenestetiden og klikk **Legg til gruppe**. Velg gruppen fra listen og klikk **Lagre**.
+
+### Aktivere oppmøtesporing for en gruppe
+
+Før en gruppe kan få oppmøte registrert, må Spor oppmøte være slått på for den gruppen.
+
+1. Klikk **Grupper** i sidefeltet og velg gruppen.
+2. Klikk **Rediger**-blyantikonet.
+3. Sett **Spor oppmøte** til **Ja**.
+4. Klikk **Lagre**.
 
 :::tip
-Hvis en gruppe møtes utenfor en vanlig gudstjeneste -- som en liten gruppe midt i uken som sporer sitt eget oppmøte -- kan du la den stå som en ikke-planlagt gruppe. Den vil fortsatt vises i Grupper-fanen for oppmøterapportering.
+Hvis du tilordnet gruppen til en gudstjenestetid i forrige steg, bruk også alternativet **Legg til gudstjenestetid** på gruppens redigeringsskjerm for å knytte den til riktig gudstjeneste. Dette sikrer at samlinger kobles til riktig campus og tid.
+:::
+
+:::tip
+Hvis en gruppe møtes utenfor en vanlig gudstjeneste — som en midtukesmågruppe som sporer sitt eget oppmøte — kan du la den være som en uplanlagt gruppe. Den vil fortsatt vises på Grupper-fanen for oppmøterapportering.
 :::
 
 ## Redigere oppsettet ditt
 
-Du kan oppdatere oppsettet ditt når som helst. Velg en campus, gudstjenestetid eller gruppe og klikk **Edit** for å endre detaljene, eller **Delete** for å fjerne den.
+Du kan oppdatere oppsettet når som helst. Velg et campus, en gudstjenestetid eller en gruppe og klikk **Rediger** for å endre detaljene, eller **Slett** for å fjerne den.
 
 :::info
-Fjerning av en gudstjenestetid sletter ikke tidligere oppmøteposter. Historiske data bevares selv om du endrer timeplanen din.
+Å fjerne en gudstjenestetid sletter ikke tidligere oppmøteregistreringer. Historiske data bevares selv om du endrer programmet ditt.
 :::
 
-## Hva nå
+## Hva er neste steg
 
-Når campusene, gudstjenestetidene og gruppene dine er på plass, er du klar til å begynne å [spore oppmøte](tracking-attendance.md) eller sette opp [selvbetjent innsjekking](check-in.md) for gudstjenestene dine.
+Når campus, gudstjenestetider og grupper er på plass, er du klar til å begynne å [registrere oppmøte](recording-attendance.md) manuelt eller sette opp [selvbetjent innsjekking](check-in.md) for gudstjenestene dine.
