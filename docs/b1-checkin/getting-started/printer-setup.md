@@ -20,7 +20,13 @@ B1 Church Checkin can print name labels and parent pickup slips to a network lab
 
 ## Accessing Printer Settings
 
-You can open the printer settings screen at any time by tapping the **printer status bar** at the very top of the screen. This thin bar shows the app version number and the current printer connection status.
+You can open the printer settings screen at any time through the **Admin Settings** menu:
+
+1. Tap the **church logo** in the header **seven times** in quick succession (within two seconds).
+2. If a kiosk PIN is set, enter the PIN when prompted.
+3. On the Admin Settings screen, tap **Change Printer**.
+
+This opens the printer settings screen where you can scan for printers, select one, and run a test print.
 
 ## Scanning for Printers
 

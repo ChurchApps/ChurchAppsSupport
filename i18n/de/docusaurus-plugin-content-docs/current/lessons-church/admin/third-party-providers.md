@@ -40,7 +40,7 @@ Auf der Seite **Third-Party** können Sie alle verbundenen Anbieter sehen. Für 
 
 Das Open Lesson Format ist ein standardisiertes Schema, das Lehrplaninhalte -- Programme, Studienreihen, Lektionen, Veranstaltungsorte, Abschnitte und Aktionen -- strukturiert beschreibt. Jede Organisation, die ihre Inhalte in diesem Format veröffentlicht, kann als Anbieter in Lessons.church hinzugefügt werden.
 
-Wenn Sie ein Inhaltsanbieter sind und Ihren Lehrplan über Lessons.church verfügbar machen möchten, finden Sie die vollständige Schema-Dokumentation im [Open Lesson Schema](https://github.com/LiveChurchSolutions/LessonsScreen)-Repository.
+Wenn Sie ein Inhaltsanbieter sind und Ihren Lehrplan über Lessons.church verfügbar machen möchten, finden Sie die vollständige Schema-Dokumentation im [Open Lesson Schema](./open-lesson-format.md)-Repository.
 
 ## Warum Drittanbieter nutzen?
 

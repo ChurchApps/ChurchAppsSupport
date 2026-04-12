@@ -40,7 +40,7 @@ Fra **Tredjepart**-siden kan du se alle tilkoblede leverandører. For hver lever
 
 Open Lesson Format er et standardisert skjema som beskriver læreplansinnhold -- programmer, studier, leksjoner, arenaer, seksjoner og handlinger -- på en strukturert måte. Enhver organisasjon som publiserer innholdet sitt i dette formatet kan legges til som leverandør i Lessons.church.
 
-Hvis du er en innholdsleverandør som er interessert i å gjøre læreplanen din tilgjengelig gjennom Lessons.church, finner du den fullstendige skjemadokumentasjonen i [Open Lesson Schema](https://github.com/LiveChurchSolutions/LessonsScreen)-repositoriet.
+Hvis du er en innholdsleverandør som er interessert i å gjøre læreplanen din tilgjengelig gjennom Lessons.church, finner du den fullstendige skjemadokumentasjonen i [Open Lesson Schema](./open-lesson-format.md)-repositoriet.
 
 ## Hvorfor bruke tredjepartsleverandører?
 

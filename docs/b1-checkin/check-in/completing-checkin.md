@@ -40,7 +40,7 @@ The same security code appears on both the child's name label and the parent's p
 The security code is generated fresh for each check-in and uses only consonants and digits (vowels are excluded to avoid forming inappropriate words).
 
 :::warning
-If labels do not print, check the printer status bar at the top of the screen. You can tap it to access printer settings and verify the connection. See [Printer Setup](../getting-started/printer-setup) for troubleshooting steps.
+If labels do not print, open the Admin Settings by tapping the **church logo** seven times, then tap **Change Printer** to verify the printer connection. See [Printer Setup](../getting-started/printer-setup) for troubleshooting steps.
 :::
 
 ## What Happens After Check-In

@@ -40,7 +40,7 @@ Desde la página de **Third-Party**, puede ver todos los proveedores conectados.
 
 El Formato Abierto de Lecciones es un esquema estandarizado que describe el contenido del currículo -- programas, estudios, lecciones, ambientes, secciones y acciones -- de manera estructurada. Cualquier organización que publique su contenido usando este formato puede ser agregada como proveedor en Lessons.church.
 
-Si usted es un proveedor de contenido interesado en hacer que su currículo esté disponible a través de Lessons.church, puede encontrar la documentación completa del esquema en el repositorio de [Open Lesson Schema](https://github.com/LiveChurchSolutions/LessonsScreen).
+Si usted es un proveedor de contenido interesado en hacer que su currículo esté disponible a través de Lessons.church, puede encontrar la documentación completa del esquema en el repositorio de [Open Lesson Schema](./open-lesson-format.md).
 
 ## ¿Por qué usar proveedores de terceros?
 

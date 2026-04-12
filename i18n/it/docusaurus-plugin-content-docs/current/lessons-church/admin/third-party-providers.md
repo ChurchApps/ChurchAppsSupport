@@ -40,7 +40,7 @@ Dalla pagina **Terze parti**, puoi vedere tutti i fornitori collegati. Per ogni 
 
 L'Open Lesson Format è uno schema standardizzato che descrive i contenuti didattici -- programmi, studi, lezioni, ambienti, sezioni e azioni -- in modo strutturato. Qualsiasi organizzazione che pubblica i propri contenuti utilizzando questo formato può essere aggiunta come fornitore su Lessons.church.
 
-Se sei un fornitore di contenuti interessato a rendere il tuo materiale didattico disponibile attraverso Lessons.church, puoi trovare la documentazione completa dello schema nel repository [Open Lesson Schema](https://github.com/LiveChurchSolutions/LessonsScreen).
+Se sei un fornitore di contenuti interessato a rendere il tuo materiale didattico disponibile attraverso Lessons.church, puoi trovare la documentazione completa dello schema nel repository [Open Lesson Schema](./open-lesson-format.md).
 
 ## Perché utilizzare fornitori di terze parti?
 

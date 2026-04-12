@@ -40,7 +40,7 @@ Lessons.church는 Open Lesson Format을 통해 외부 커리큘럼 공급자를 
 
 Open Lesson Format은 커리큘럼 콘텐츠 -- 프로그램, 학습 과정, 공과, 장소, 섹션, 활동 -- 를 구조화된 방식으로 설명하는 표준화된 스키마입니다. 이 형식으로 콘텐츠를 게시하는 모든 조직은 Lessons.church에서 공급자로 추가할 수 있습니다.
 
-Lessons.church를 통해 커리큘럼을 제공하는 데 관심이 있는 콘텐츠 공급자라면, [Open Lesson Schema](https://github.com/LiveChurchSolutions/LessonsScreen) 저장소에서 전체 스키마 문서를 확인할 수 있습니다.
+Lessons.church를 통해 커리큘럼을 제공하는 데 관심이 있는 콘텐츠 공급자라면, [Open Lesson Schema](./open-lesson-format.md) 저장소에서 전체 스키마 문서를 확인할 수 있습니다.
 
 ## 외부 공급자를 사용하는 이유
 

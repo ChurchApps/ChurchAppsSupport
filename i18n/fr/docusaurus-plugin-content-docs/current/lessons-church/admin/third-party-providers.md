@@ -40,7 +40,7 @@ Depuis la page **Third-Party**, vous pouvez voir tous les fournisseurs connecté
 
 Le format Open Lesson Format est un schéma standardisé qui décrit le contenu de programmes d'enseignement -- programmes, études, leçons, lieux, sections et actions -- de manière structurée. Toute organisation qui publie son contenu en utilisant ce format peut être ajoutée comme fournisseur dans Lessons.church.
 
-Si vous êtes un fournisseur de contenu intéressé à rendre votre programme d'enseignement disponible via Lessons.church, vous pouvez trouver la documentation complète du schéma dans le dépôt [Open Lesson Schema](https://github.com/LiveChurchSolutions/LessonsScreen).
+Si vous êtes un fournisseur de contenu intéressé à rendre votre programme d'enseignement disponible via Lessons.church, vous pouvez trouver la documentation complète du schéma dans le dépôt [Open Lesson Schema](./open-lesson-format.md).
 
 ## Pourquoi utiliser des fournisseurs tiers ?
 

@@ -40,7 +40,7 @@ From the **Third-Party** page, you can see all connected providers. For each pro
 
 The Open Lesson Format is a standardized schema that describes curriculum content -- programs, studies, lessons, venues, sections, and actions -- in a structured way. Any organization that publishes their content using this format can be added as a provider in Lessons.church.
 
-If you are a content provider interested in making your curriculum available through Lessons.church, you can find the full schema documentation at the [Open Lesson Schema](https://github.com/LiveChurchSolutions/LessonsScreen) repository.
+If you are a content provider interested in making your curriculum available through Lessons.church, you can find the full schema documentation in the [Open Lesson Format](./open-lesson-format.md) guide.
 
 ## Why Use Third-Party Providers?
 

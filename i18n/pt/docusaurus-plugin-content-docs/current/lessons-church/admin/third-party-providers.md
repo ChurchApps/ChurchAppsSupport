@@ -40,7 +40,7 @@ Na página de **Terceiros**, você pode ver todos os provedores conectados. Para
 
 O Open Lesson Format é um esquema padronizado que descreve conteúdo de currículo -- programas, estudos, lições, ambientes, seções e ações -- de forma estruturada. Qualquer organização que publique seu conteúdo usando este formato pode ser adicionada como provedor no Lessons.church.
 
-Se você é um provedor de conteúdo interessado em disponibilizar seu currículo através do Lessons.church, pode encontrar a documentação completa do esquema no repositório [Open Lesson Schema](https://github.com/LiveChurchSolutions/LessonsScreen).
+Se você é um provedor de conteúdo interessado em disponibilizar seu currículo através do Lessons.church, pode encontrar a documentação completa do esquema no repositório [Open Lesson Schema](./open-lesson-format.md).
 
 ## Por Que Usar Provedores de Terceiros?
 

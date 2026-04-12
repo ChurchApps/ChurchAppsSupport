@@ -52,15 +52,17 @@ The app saves your email, password, and selected church after the first successf
 Because the kiosk auto-logs in, you only need to enter credentials once during initial setup. After that, the tablet can be powered on and it will be ready to go.
 :::
 
-## Logging Out
+## Admin Settings
 
-Logging out is intentionally hidden so that church members using the kiosk cannot accidentally sign out. To log out:
+Admin settings are intentionally hidden so that church members using the kiosk cannot accidentally change the configuration. To access them:
 
 1. Tap the **church logo** in the header **seven times** in quick succession (within two seconds).
-2. A confirmation dialog will appear asking if you want to log out.
-3. Tap **Logout** to confirm, or **Cancel** to stay signed in.
-
-This clears your saved credentials and returns you to the login screen.
+2. If a kiosk PIN is set, enter the PIN when prompted.
+3. The **Admin Settings** screen will open with the following options:
+   - **Change Service** — switch the selected service time
+   - **Change Printer** — open [printer settings](./printer-setup) to scan for and select a printer
+   - **Set/Change PIN** — set or update the kiosk PIN that protects admin access
+   - **Logout** — sign out and return to the login screen
 
 :::warning
 Logging out clears all saved credentials and church selection. You will need to re-enter your email and password to use the kiosk again. Only log out when you need to switch accounts or reconfigure the kiosk.

@@ -40,7 +40,7 @@ Ang parehong security code ay lumalabas sa name label ng bata at sa parent picku
 Ang security code ay binubuo nang panibago sa bawat check-in at gumagamit lamang ng mga consonant at digit (ang mga vowel ay hindi kasama para maiwasan ang pagbuo ng hindi naaangkop na mga salita).
 
 :::warning
-Kung hindi nagpi-print ang mga label, suriin ang printer status bar sa itaas ng screen. Maaari mo itong i-tap para ma-access ang printer settings at i-verify ang koneksyon. Tingnan ang [Pag-setup ng Printer](../getting-started/printer-setup) para sa mga hakbang sa troubleshooting.
+Kung hindi nagpi-print ang mga label, buksan ang Admin Settings sa pamamagitan ng pag-tap sa **church logo** nang pitong beses, pagkatapos i-tap ang **Change Printer** para i-verify ang printer connection. Tingnan ang [Pag-setup ng Printer](../getting-started/printer-setup) para sa mga hakbang sa troubleshooting.
 :::
 
 ## Ano ang Nangyayari Pagkatapos ng Check-In

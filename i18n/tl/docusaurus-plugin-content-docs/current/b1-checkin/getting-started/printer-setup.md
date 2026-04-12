@@ -20,7 +20,13 @@ Ang B1 Church Checkin ay maaaring mag-print ng mga name label at parent pickup s
 
 ## Pag-access sa Printer Settings
 
-Maaari mong buksan ang printer settings screen anumang oras sa pamamagitan ng pag-tap sa **printer status bar** sa pinakataas ng screen. Ang manipis na bar na ito ay nagpapakita ng version number ng app at kasalukuyang printer connection status.
+Maaari mong buksan ang printer settings screen anumang oras sa pamamagitan ng **Admin Settings** menu:
+
+1. I-tap ang **church logo** sa header nang **pitong beses** nang sunud-sunod (sa loob ng dalawang segundo).
+2. Kung may nakatakdang kiosk PIN, ilagay ang PIN kapag hiniling.
+3. Sa Admin Settings screen, i-tap ang **Change Printer**.
+
+Bubuksan nito ang printer settings screen kung saan maaari kang mag-scan ng mga printer, pumili ng isa, at mag-test print.
 
 ## Pag-scan ng mga Printer
 

@@ -52,15 +52,17 @@ Sine-save ng app ang iyong email, password, at napiling simbahan pagkatapos ng u
 Dahil awtomatikong nagla-log in ang kiosk, isang beses lang kailangan mong maglagay ng mga credential sa initial setup. Pagkatapos noon, maaaring i-on ang tablet at handa na ito.
 :::
 
-## Pag-log Out
+## Admin Settings
 
-Ang pag-log out ay sadyang nakatago para hindi aksidenteng makapag-sign out ang mga miyembro ng simbahan na gumagamit ng kiosk. Para mag-log out:
+Ang admin settings ay sadyang nakatago para hindi aksidenteng mabago ng mga miyembro ng simbahan ang configuration ng kiosk. Para ma-access ang mga ito:
 
 1. I-tap ang **logo ng simbahan** sa header nang **pitong beses** nang sunod-sunod (sa loob ng dalawang segundo).
-2. May lalabas na confirmation dialog na nagtatanong kung gusto mong mag-log out.
-3. I-tap ang **Logout** para kumpirmahin, o **Cancel** para manatiling naka-sign in.
-
-Kini-clear nito ang iyong mga naka-save na credential at binabalik ka sa login screen.
+2. Kung may nakatakdang kiosk PIN, ilagay ang PIN kapag hiniling.
+3. Magbubukas ang **Admin Settings** screen na may mga sumusunod na opsyon:
+   - **Change Service** — palitan ang napiling service time
+   - **Change Printer** — buksan ang [printer settings](./printer-setup) para mag-scan at pumili ng printer
+   - **Set/Change PIN** — magtakda o mag-update ng kiosk PIN na nagpoprotekta sa admin access
+   - **Logout** — mag-sign out at bumalik sa login screen
 
 :::warning
 Ang pag-log out ay nagki-clear ng lahat ng naka-save na credential at pagpili ng simbahan. Kakailanganin mong muling ilagay ang iyong email at password para magamit ang kiosk. Mag-log out lamang kapag kailangan mong magpalit ng account o i-reconfigure ang kiosk.
