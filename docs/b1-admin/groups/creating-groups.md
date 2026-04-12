@@ -6,7 +6,7 @@ title: "Creating Groups"
 
 <div class="article-intro">
 
-Creating a group in B1 Admin is straightforward. You will set up a category, name your group, and then configure its settings. Groups help you organize your church into meaningful units like small groups, ministry teams, committees, and classes.
+Creating a group in B1 Admin is straightforward. You will set up a category, name your group, and then configure its settings. Groups help you organize your church into meaningful units like small groups, committees, and classes.
 
 </div>
 
