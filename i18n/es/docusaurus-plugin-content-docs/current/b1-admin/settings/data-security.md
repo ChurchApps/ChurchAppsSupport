@@ -53,8 +53,30 @@ Tus datos son tuyos y nunca se venderán a terceros. Puedes leer nuestra políti
 
 ## Cumplimiento del RGPD
 
-ChurchApps actualmente no soporta el cumplimiento del RGPD debido a los significativos requisitos técnicos y financieros involucrados. El RGPD nos requeriría alojar datos en servidores basados en la UE y construir una infraestructura separada para enrutar y almacenar datos regionalmente, duplicando efectivamente nuestros costos de alojamiento y desarrollo. Como organización sin fines de lucro que ofrece herramientas gratuitas a las iglesias, no contamos con los recursos para soportar esto en este momento.
+ChurchApps apoya el cumplimiento del RGPD para iglesias con miembros en el Reino Unido o la Unión Europea. A continuación se explica cómo abordamos los requisitos clave:
 
-:::warning
-Si tu iglesia tiene miembros en la Unión Europea, ten en cuenta que ChurchApps actualmente no cumple con los requisitos del RGPD. Consulta con tu asesor legal sobre las obligaciones de cumplimiento antes de almacenar datos de miembros de la UE.
+### Derechos del interesado
+
+ChurchApps proporciona herramientas para ayudar a las iglesias a responder a las solicitudes de los interesados:
+
+- **Derecho de acceso (Artículo 15)** — Los miembros pueden descargar todos sus datos personales desde el portal de miembros usando el botón "Descargar mis datos". Los administradores también pueden exportar los datos de cualquier persona desde la página de detalle de la persona.
+- **Derecho de supresión (Artículo 17)** — Los miembros pueden eliminar su propia cuenta desde el portal de miembros. Los administradores pueden anonimizar o eliminar permanentemente los datos de una persona en todos los módulos. La anonimización reemplaza la información personal con valores genéricos mientras preserva los registros agregados (totales de donaciones, conteos de asistencia) necesarios para los informes financieros de la iglesia.
+- **Derecho a la limitación del tratamiento (Artículo 18)** — Los miembros pueden restringir el procesamiento de sus datos, incluyendo la exclusión de comunicaciones.
+- **Derecho a la portabilidad de datos (Artículo 20)** — La función de exportación de datos proporciona todos los datos personales en un formato JSON estructurado y legible por máquina.
+
+### Procesamiento de datos
+
+ChurchApps actúa como **encargado del tratamiento** en nombre de tu iglesia (el **responsable del tratamiento**). Nuestro [Acuerdo de procesamiento de datos](https://churchapps.org/terms) describe las responsabilidades de cada parte, incluyendo el uso de subencargados, los procedimientos de notificación de violaciones y el manejo de datos en caso de terminación.
+
+### Transferencias internacionales de datos
+
+Los datos de ChurchApps están alojados en Amazon Web Services (AWS) en Estados Unidos. Las transferencias internacionales de datos desde el Reino Unido/UE están cubiertas por las Cláusulas Contractuales Tipo (SCCs) de AWS bajo el [Anexo de procesamiento de datos de AWS](https://aws.amazon.com/compliance/data-processing-addendum/). No se requiere alojamiento en la UE cuando existen mecanismos de transferencia apropiados como las SCCs.
+
+### Subencargados
+
+- **Amazon Web Services (AWS)** — Alojamiento de infraestructura, almacenamiento de datos y distribución de contenido
+- **Stripe** — Procesamiento de pagos para donaciones (ChurchApps no almacena datos de tarjetas)
+
+:::info
+Para más detalles sobre cómo gestionamos los datos personales, consulta nuestra [Política de privacidad](https://churchapps.org/privacy) y nuestros [Términos de servicio](https://churchapps.org/terms). Si tienes preguntas sobre el cumplimiento del RGPD, contáctanos en support@churchapps.org.
 :::

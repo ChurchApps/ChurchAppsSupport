@@ -53,8 +53,30 @@ Your data is yours and will never be sold to third parties. You can read our ful
 
 ## GDPR Compliance
 
-ChurchApps does not currently support GDPR compliance due to the significant technical and financial requirements involved. GDPR would require us to host data on EU-based servers and build a separate infrastructure to route and store data regionally, effectively doubling our hosting and development costs. As a nonprofit offering free tools to churches, we do not have the resources to support this at this time.
+ChurchApps supports GDPR compliance for churches with members in the UK or European Union. Here's how we address the key requirements:
 
-:::warning
-If your church has members in the European Union, be aware that ChurchApps does not currently meet GDPR requirements. Consult with your legal advisor about compliance obligations before storing EU member data.
+### Data Subject Rights
+
+ChurchApps provides tools to help churches respond to data subject requests:
+
+- **Right of Access (Article 15)** — Members can download all of their personal data from the member portal using the "Download My Data" button. Administrators can also export any person's data from the person detail page.
+- **Right to Erasure (Article 17)** — Members can delete their own account from the member portal. Administrators can anonymize or hard-delete a person's data across all modules. Anonymization replaces personal information with generic values while preserving aggregate records (donation totals, attendance counts) needed for church financial reporting.
+- **Right to Restriction (Article 18)** — Members can restrict processing of their data, including opting out of communications.
+- **Right to Data Portability (Article 20)** — The data export feature provides all personal data in a structured, machine-readable JSON format.
+
+### Data Processing
+
+ChurchApps acts as a **data processor** on behalf of your church (the **data controller**). Our [Data Processing Agreement](https://churchapps.org/terms) outlines the responsibilities of each party, including sub-processor usage, breach notification procedures, and data handling on termination.
+
+### International Data Transfers
+
+ChurchApps data is hosted on Amazon Web Services (AWS) in the United States. International data transfers from the UK/EU are covered by AWS's Standard Contractual Clauses (SCCs) under the [AWS Data Processing Addendum](https://aws.amazon.com/compliance/data-processing-addendum/). EU-based hosting is not required when appropriate transfer mechanisms like SCCs are in place.
+
+### Sub-Processors
+
+- **Amazon Web Services (AWS)** — Infrastructure hosting, data storage, and content delivery
+- **Stripe** — Payment processing for donations (no card data is stored by ChurchApps)
+
+:::info
+For full details on how we handle personal data, see our [Privacy Policy](https://churchapps.org/privacy) and [Terms of Service](https://churchapps.org/terms). If you have questions about GDPR compliance, contact us at support@churchapps.org.
 :::

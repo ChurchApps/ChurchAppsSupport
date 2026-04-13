@@ -53,8 +53,30 @@ Dine data er dine og vil aldri bli solgt til tredjeparter. Du kan lese våre ful
 
 ## GDPR-samsvar
 
-ChurchApps støtter for tiden ikke GDPR-samsvar på grunn av de betydelige tekniske og økonomiske kravene som er involvert. GDPR ville kreve at vi hoster data på EU-baserte servere og bygger en separat infrastruktur for å rute og lagre data regionalt, noe som effektivt ville doble våre hosting- og utviklingskostnader. Som en ideell organisasjon som tilbyr gratis verktøy til kirker, har vi ikke ressursene til å støtte dette for øyeblikket.
+ChurchApps støtter GDPR-samsvar for kirker med medlemmer i Storbritannia eller EU. Slik ivaretar vi de viktigste kravene:
 
-:::warning
-Hvis kirken din har medlemmer i EU, vær oppmerksom på at ChurchApps for tiden ikke oppfyller GDPR-kravene. Rådfør deg med din juridiske rådgiver om samsvarsforpliktelser før du lagrer data om EU-medlemmer.
+### Registrertes rettigheter
+
+ChurchApps tilbyr verktøy som hjelper kirker med å svare på forespørsler fra registrerte:
+
+- **Rett til innsyn (Article 15)** — Medlemmer kan laste ned alle sine personopplysninger fra medlemsportalen ved hjelp av «Download My Data»-knappen. Administratorer kan også eksportere en persons data fra persondetaljsiden.
+- **Rett til sletting (Article 17)** — Medlemmer kan slette sin egen konto fra medlemsportalen. Administratorer kan anonymisere eller permanent slette en persons data på tvers av alle moduler. Anonymisering erstatter personopplysninger med generiske verdier, samtidig som aggregerte poster (donasjonstotaler, oppmøtetall) som trengs for kirkens økonomiske rapportering, bevares.
+- **Rett til begrensning (Article 18)** — Medlemmer kan begrense behandlingen av sine data, inkludert å melde seg av kommunikasjon.
+- **Rett til dataportabilitet (Article 20)** — Dataeksportfunksjonen gir alle personopplysninger i et strukturert, maskinlesbart JSON-format.
+
+### Databehandling
+
+ChurchApps opptrer som **databehandler** på vegne av kirken din (**behandlingsansvarlig**). Vår [databehandleravtale](https://churchapps.org/terms) beskriver ansvarsfordelingen mellom partene, inkludert bruk av underdatabehandlere, prosedyrer for varsling ved brudd og håndtering av data ved opphør.
+
+### Internasjonale dataoverføringer
+
+ChurchApps-data er hostet på Amazon Web Services (AWS) i USA. Internasjonale dataoverføringer fra Storbritannia/EU er dekket av AWS sine Standard Contractual Clauses (SCCs) under [AWS Data Processing Addendum](https://aws.amazon.com/compliance/data-processing-addendum/). EU-basert hosting er ikke påkrevd når passende overføringsmekanismer som SCCs er på plass.
+
+### Underdatabehandlere
+
+- **Amazon Web Services (AWS)** — Infrastrukturhosting, datalagring og innholdslevering
+- **Stripe** — Betalingsbehandling for donasjoner (ingen kortdata lagres av ChurchApps)
+
+:::info
+For fullstendige detaljer om hvordan vi håndterer personopplysninger, se våre [personvernregler](https://churchapps.org/privacy) og [vilkår for bruk](https://churchapps.org/terms). Hvis du har spørsmål om GDPR-samsvar, kontakt oss på support@churchapps.org.
 :::

@@ -51,10 +51,32 @@ L'accès aux serveurs de production est strictement limité aux administrateurs 
 
 Vos données vous appartiennent et ne seront jamais vendues à des tiers. Vous pouvez lire notre politique de confidentialité complète [ici](https://churchapps.org/privacy).
 
-## Conformité RGPD
+## Conformité au RGPD
 
-ChurchApps ne prend actuellement pas en charge la conformité RGPD en raison des exigences techniques et financières importantes que cela implique. Le RGPD nous obligerait à héberger les données sur des serveurs basés dans l'UE et à construire une infrastructure séparée pour acheminer et stocker les données au niveau régional, doublant ainsi nos coûts d'hébergement et de développement. En tant qu'organisation à but non lucratif offrant des outils gratuits aux églises, nous ne disposons pas des ressources nécessaires pour le prendre en charge à ce stade.
+ChurchApps accompagne la conformité au RGPD pour les églises ayant des membres au Royaume-Uni ou dans l'Union européenne. Voici comment nous répondons aux exigences clés :
 
-:::warning
-Si votre église compte des membres dans l'Union européenne, sachez que ChurchApps ne répond actuellement pas aux exigences du RGPD. Consultez votre conseiller juridique concernant les obligations de conformité avant de stocker les données de membres de l'UE.
+### Droits des personnes concernées
+
+ChurchApps fournit des outils pour aider les églises à répondre aux demandes des personnes concernées :
+
+- **Droit d'accès (Article 15)** — Les membres peuvent télécharger l'ensemble de leurs données personnelles depuis le portail des membres en utilisant le bouton « Télécharger mes données ». Les administrateurs peuvent également exporter les données de n'importe quelle personne depuis la page de détail de la personne.
+- **Droit à l'effacement (Article 17)** — Les membres peuvent supprimer leur propre compte depuis le portail des membres. Les administrateurs peuvent anonymiser ou supprimer définitivement les données d'une personne dans tous les modules. L'anonymisation remplace les informations personnelles par des valeurs génériques tout en préservant les enregistrements agrégés (totaux des dons, comptages de présence) nécessaires aux rapports financiers de l'église.
+- **Droit à la limitation du traitement (Article 18)** — Les membres peuvent restreindre le traitement de leurs données, y compris se désinscrire des communications.
+- **Droit à la portabilité des données (Article 20)** — La fonction d'exportation fournit toutes les données personnelles dans un format JSON structuré et lisible par machine.
+
+### Traitement des données
+
+ChurchApps agit en tant que **sous-traitant** pour le compte de votre église (le **responsable du traitement**). Notre [Accord de traitement des données](https://churchapps.org/terms) décrit les responsabilités de chaque partie, y compris l'utilisation de sous-traitants ultérieurs, les procédures de notification de violation et le traitement des données en cas de résiliation.
+
+### Transferts internationaux de données
+
+Les données de ChurchApps sont hébergées sur Amazon Web Services (AWS) aux États-Unis. Les transferts internationaux de données depuis le Royaume-Uni/l'UE sont couverts par les Clauses Contractuelles Types (SCCs) d'AWS dans le cadre de l'[Addendum au traitement des données AWS](https://aws.amazon.com/compliance/data-processing-addendum/). Un hébergement dans l'UE n'est pas requis lorsque des mécanismes de transfert appropriés tels que les SCCs sont en place.
+
+### Sous-traitants ultérieurs
+
+- **Amazon Web Services (AWS)** — Hébergement de l'infrastructure, stockage des données et diffusion de contenu
+- **Stripe** — Traitement des paiements pour les dons (aucune donnée de carte n'est stockée par ChurchApps)
+
+:::info
+Pour tous les détails sur la manière dont nous traitons les données personnelles, consultez notre [Politique de confidentialité](https://churchapps.org/privacy) et nos [Conditions d'utilisation](https://churchapps.org/terms). Si vous avez des questions concernant la conformité au RGPD, contactez-nous à support@churchapps.org.
 :::

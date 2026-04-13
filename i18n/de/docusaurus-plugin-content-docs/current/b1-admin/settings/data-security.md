@@ -53,8 +53,30 @@ Ihre Daten gehören Ihnen und werden niemals an Dritte verkauft. Sie können uns
 
 ## DSGVO-Konformität
 
-ChurchApps unterstützt derzeit keine DSGVO-Konformität aufgrund der erheblichen technischen und finanziellen Anforderungen. Die DSGVO würde erfordern, dass wir Daten auf EU-basierten Servern hosten und eine separate Infrastruktur zur regionalen Datenweiterleitung und -speicherung aufbauen, was unsere Hosting- und Entwicklungskosten praktisch verdoppeln würde. Als gemeinnützige Organisation, die Gemeinden kostenlose Tools anbietet, verfügen wir derzeit nicht über die Ressourcen, dies zu unterstützen.
+ChurchApps unterstützt die DSGVO-Konformität für Gemeinden mit Mitgliedern im Vereinigten Königreich oder der Europäischen Union. So gehen wir auf die wichtigsten Anforderungen ein:
 
-:::warning
-Wenn Ihre Gemeinde Mitglieder in der Europäischen Union hat, beachten Sie, dass ChurchApps derzeit nicht die DSGVO-Anforderungen erfüllt. Konsultieren Sie Ihren Rechtsberater bezüglich der Compliance-Verpflichtungen, bevor Sie EU-Mitgliederdaten speichern.
+### Rechte der betroffenen Personen
+
+ChurchApps stellt Werkzeuge bereit, um Gemeinden bei der Beantwortung von Anfragen betroffener Personen zu unterstützen:
+
+- **Auskunftsrecht (Artikel 15)** — Mitglieder können alle ihre personenbezogenen Daten über das Mitgliederportal mit der Schaltfläche „Meine Daten herunterladen" herunterladen. Administratoren können die Daten jeder Person auch über die Personendetailseite exportieren.
+- **Recht auf Löschung (Artikel 17)** — Mitglieder können ihr eigenes Konto über das Mitgliederportal löschen. Administratoren können die Daten einer Person über alle Module hinweg anonymisieren oder endgültig löschen. Die Anonymisierung ersetzt personenbezogene Informationen durch generische Werte, wobei aggregierte Datensätze (Spendensummen, Anwesenheitszahlen) erhalten bleiben, die für die finanzielle Berichterstattung der Gemeinde benötigt werden.
+- **Recht auf Einschränkung der Verarbeitung (Artikel 18)** — Mitglieder können die Verarbeitung ihrer Daten einschränken, einschließlich der Abmeldung von Kommunikation.
+- **Recht auf Datenübertragbarkeit (Artikel 20)** — Die Datenexportfunktion stellt alle personenbezogenen Daten in einem strukturierten, maschinenlesbaren JSON-Format bereit.
+
+### Datenverarbeitung
+
+ChurchApps handelt als **Auftragsverarbeiter** im Auftrag Ihrer Gemeinde (des **Verantwortlichen**). Unser [Auftragsverarbeitungsvertrag](https://churchapps.org/terms) beschreibt die Verantwortlichkeiten jeder Partei, einschließlich der Nutzung von Unterauftragsverarbeitern, der Verfahren zur Meldung von Datenschutzverletzungen und der Datenverarbeitung bei Vertragsbeendigung.
+
+### Internationale Datenübermittlungen
+
+Die Daten von ChurchApps werden auf Amazon Web Services (AWS) in den Vereinigten Staaten gehostet. Internationale Datenübermittlungen aus dem Vereinigten Königreich/der EU werden durch die Standardvertragsklauseln (SCCs) von AWS im Rahmen des [AWS-Datenverarbeitungsnachtrags](https://aws.amazon.com/compliance/data-processing-addendum/) abgedeckt. Ein Hosting in der EU ist nicht erforderlich, wenn geeignete Übermittlungsmechanismen wie SCCs vorhanden sind.
+
+### Unterauftragsverarbeiter
+
+- **Amazon Web Services (AWS)** — Infrastruktur-Hosting, Datenspeicherung und Inhaltsbereitstellung
+- **Stripe** — Zahlungsabwicklung für Spenden (keine Kartendaten werden von ChurchApps gespeichert)
+
+:::info
+Ausführliche Informationen zum Umgang mit personenbezogenen Daten finden Sie in unserer [Datenschutzerklärung](https://churchapps.org/privacy) und unseren [Nutzungsbedingungen](https://churchapps.org/terms). Bei Fragen zur DSGVO-Konformität kontaktieren Sie uns unter support@churchapps.org.
 :::

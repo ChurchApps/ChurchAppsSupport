@@ -53,8 +53,30 @@ Seus dados são seus e nunca serão vendidos a terceiros. Você pode ler nossa p
 
 ## Conformidade com o GDPR
 
-O ChurchApps atualmente não suporta conformidade com o GDPR devido aos requisitos técnicos e financeiros significativos envolvidos. O GDPR exigiria que hospedássemos dados em servidores baseados na UE e construíssemos uma infraestrutura separada para rotear e armazenar dados regionalmente, efetivamente dobrando nossos custos de hospedagem e desenvolvimento. Como uma organização sem fins lucrativos que oferece ferramentas gratuitas para igrejas, não temos os recursos para suportar isso neste momento.
+O ChurchApps oferece suporte à conformidade com o GDPR para igrejas com membros no Reino Unido ou na União Europeia. Veja como abordamos os principais requisitos:
 
-:::warning
-Se sua igreja tem membros na União Europeia, esteja ciente de que o ChurchApps atualmente não atende aos requisitos do GDPR. Consulte seu consultor jurídico sobre obrigações de conformidade antes de armazenar dados de membros da UE.
+### Direitos do Titular dos Dados
+
+O ChurchApps fornece ferramentas para ajudar as igrejas a responder às solicitações dos titulares de dados:
+
+- **Direito de Acesso (Artigo 15)** — Os membros podem baixar todos os seus dados pessoais pelo portal do membro usando o botão "Baixar Meus Dados". Os administradores também podem exportar os dados de qualquer pessoa a partir da página de detalhes da pessoa.
+- **Direito à Eliminação (Artigo 17)** — Os membros podem excluir sua própria conta pelo portal do membro. Os administradores podem anonimizar ou excluir permanentemente os dados de uma pessoa em todos os módulos. A anonimização substitui as informações pessoais por valores genéricos, preservando os registros agregados (totais de doações, contagens de frequência) necessários para os relatórios financeiros da igreja.
+- **Direito à Limitação do Tratamento (Artigo 18)** — Os membros podem restringir o processamento de seus dados, incluindo a desativação de comunicações.
+- **Direito à Portabilidade dos Dados (Artigo 20)** — O recurso de exportação de dados fornece todos os dados pessoais em um formato JSON estruturado e legível por máquina.
+
+### Processamento de Dados
+
+O ChurchApps atua como **processador de dados** em nome da sua igreja (o **controlador de dados**). Nosso [Acordo de Processamento de Dados](https://churchapps.org/terms) descreve as responsabilidades de cada parte, incluindo o uso de subprocessadores, procedimentos de notificação de violação e tratamento de dados na rescisão.
+
+### Transferências Internacionais de Dados
+
+Os dados do ChurchApps são hospedados na Amazon Web Services (AWS) nos Estados Unidos. As transferências internacionais de dados do Reino Unido/UE são cobertas pelas Cláusulas Contratuais Padrão (SCCs) da AWS sob o [Adendo de Processamento de Dados da AWS](https://aws.amazon.com/compliance/data-processing-addendum/). A hospedagem baseada na UE não é necessária quando mecanismos de transferência apropriados como SCCs estão em vigor.
+
+### Subprocessadores
+
+- **Amazon Web Services (AWS)** — Hospedagem de infraestrutura, armazenamento de dados e entrega de conteúdo
+- **Stripe** — Processamento de pagamentos para doações (nenhum dado de cartão é armazenado pelo ChurchApps)
+
+:::info
+Para detalhes completos sobre como tratamos os dados pessoais, consulte nossa [Política de Privacidade](https://churchapps.org/privacy) e os [Termos de Serviço](https://churchapps.org/terms). Se você tiver dúvidas sobre a conformidade com o GDPR, entre em contato conosco em support@churchapps.org.
 :::

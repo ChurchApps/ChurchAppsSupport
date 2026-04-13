@@ -53,8 +53,30 @@ Ang iyong data ay sa iyo at hindi kailanman ibebenta sa mga third party. Maaari 
 
 ## Pagsunod sa GDPR
 
-Ang ChurchApps ay kasalukuyang hindi sumusuporta sa pagsunod sa GDPR dahil sa mga makabuluhang teknikal at pinansyal na kinakailangan na kasama. Ang GDPR ay mangangailangan sa amin na mag-host ng data sa mga server na naka-base sa EU at bumuo ng isang hiwalay na imprastraktura upang i-route at i-store ang data sa rehiyon, na epektibong nagdodoble ng aming mga gastos sa hosting at development. Bilang isang nonprofit na nag-aalok ng mga libreng tool sa mga simbahan, wala kaming mga mapagkukunan upang suportahan ito sa ngayon.
+Sinusuportahan ng ChurchApps ang pagsunod sa GDPR para sa mga simbahang may mga miyembro sa UK o European Union. Narito kung paano namin tinutugunan ang mga pangunahing kinakailangan:
 
-:::warning
-Kung ang iyong simbahan ay may mga miyembro sa European Union, tandaan na ang ChurchApps ay kasalukuyang hindi nakakatugon sa mga kinakailangan ng GDPR. Kumonsulta sa iyong legal na tagapayo tungkol sa mga obligasyon sa pagsunod bago mag-store ng data ng mga miyembro mula sa EU.
+### Mga Karapatan ng Data Subject
+
+Nagbibigay ang ChurchApps ng mga tool upang matulungan ang mga simbahan na tumugon sa mga kahilingan ng data subject:
+
+- **Karapatan sa Pag-access (Article 15)** — Maaaring i-download ng mga miyembro ang lahat ng kanilang personal na data mula sa member portal gamit ang "Download My Data" na button. Maaari ring i-export ng mga administrator ang data ng sinumang tao mula sa person detail page.
+- **Karapatan sa Pagbura (Article 17)** — Maaaring burahin ng mga miyembro ang kanilang sariling account mula sa member portal. Maaaring i-anonymize o permanenteng burahin ng mga administrator ang data ng isang tao sa lahat ng module. Pinapalitan ng anonymization ang personal na impormasyon ng mga generic na halaga habang pinapanatili ang mga aggregate na rekord (kabuuang donasyon, bilang ng attendance) na kailangan para sa financial reporting ng simbahan.
+- **Karapatan sa Paghihigpit (Article 18)** — Maaaring higpitan ng mga miyembro ang pagproseso ng kanilang data, kabilang ang pag-opt out sa mga komunikasyon.
+- **Karapatan sa Data Portability (Article 20)** — Ibinibigay ng data export feature ang lahat ng personal na data sa isang structured, machine-readable na JSON format.
+
+### Pagproseso ng Data
+
+Ang ChurchApps ay gumaganap bilang isang **data processor** sa ngalan ng iyong simbahan (ang **data controller**). Ang aming [Data Processing Agreement](https://churchapps.org/terms) ay naglalarawan ng mga responsibilidad ng bawat partido, kabilang ang paggamit ng sub-processor, mga pamamaraan sa pag-abiso ng breach, at pangangasiwa ng data sa pagtatapos ng serbisyo.
+
+### Mga International na Paglipat ng Data
+
+Ang data ng ChurchApps ay naka-host sa Amazon Web Services (AWS) sa United States. Ang mga international na paglipat ng data mula sa UK/EU ay sakop ng Standard Contractual Clauses (SCCs) ng AWS sa ilalim ng [AWS Data Processing Addendum](https://aws.amazon.com/compliance/data-processing-addendum/). Hindi kinakailangan ang EU-based hosting kapag may naaangkop na mga mekanismo sa paglipat tulad ng SCCs.
+
+### Mga Sub-Processor
+
+- **Amazon Web Services (AWS)** — Infrastructure hosting, data storage, at content delivery
+- **Stripe** — Pagproseso ng bayad para sa mga donasyon (walang card data ang sino-store ng ChurchApps)
+
+:::info
+Para sa buong detalye kung paano namin pinangangasiwaan ang personal na data, tingnan ang aming [Patakaran sa Privacy](https://churchapps.org/privacy) at [Mga Tuntunin ng Serbisyo](https://churchapps.org/terms). Kung mayroon kang mga tanong tungkol sa pagsunod sa GDPR, makipag-ugnayan sa amin sa support@churchapps.org.
 :::
