@@ -70,7 +70,9 @@ ChurchApps acts as a **data processor** on behalf of your church (the **data con
 
 ### International Data Transfers
 
-ChurchApps data is hosted on Amazon Web Services (AWS) in the United States. International data transfers from the UK/EU are covered by AWS's Standard Contractual Clauses (SCCs) under the [AWS Data Processing Addendum](https://aws.amazon.com/compliance/data-processing-addendum/). EU-based hosting is not required when appropriate transfer mechanisms like SCCs are in place.
+ChurchApps data is hosted on Amazon Web Services (AWS) in the United States. International data transfers from the UK/EU are covered by AWS's Standard Contractual Clauses (SCCs) under the [AWS Data Processing Addendum](https://aws.amazon.com/compliance/data-processing-addendum/). The AWS DPA is automatically incorporated into the AWS Service Terms for all customers. EU-based hosting is not required when appropriate transfer mechanisms like SCCs are in place.
+
+For details on how transfer risks have been evaluated, see the [Transfer Risk Assessment](./transfer-risk-assessment.md).
 
 ### Sub-Processors
 
