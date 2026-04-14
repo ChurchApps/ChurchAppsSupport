@@ -6,42 +6,42 @@ title: "Grupos"
 
 <div class="article-intro">
 
-A secao **Grupos** permite que voce organize os membros da sua igreja em equipes, ministerios, pequenos grupos, estudos biblicos, comites e muito mais. Os grupos sao a espinha dorsal da vida comunitaria na sua igreja, e esta secao oferece as ferramentas para criar, gerenciar e se comunicar com cada grupo em um so lugar.
+A seção **Groups** permite que você organize os membros de sua igreja em ministérios, pequenos grupos, estudos bíblicos, comitês e mais. Grupos são a espinha dorsal da vida comunitária em sua igreja, e esta seção oferece as ferramentas para criar, gerenciar e se comunicar com cada grupo em um único lugar. Note que **Teams** são separados de Groups — Teams são usados para servir e agendamento de voluntários.
 
 </div>
 
-## Visao geral
+## Visão Geral
 
-Os grupos sao organizados por **categoria**. Uma categoria e um rotulo de nivel superior, como "Pequenos Grupos," "Ministerios," ou "Comites." Cada categoria pode conter varios grupos, facilitando manter grupos relacionados juntos.
+Grupos são organizados por **category**. Uma categoria é um rótulo de nível superior como "Pequenos Grupos", "Ministérios" ou "Comitês". Cada categoria pode conter múltiplos grupos, tornando simples manter grupos relacionados juntos.
 
-Quando voce abre a pagina de Grupos, vera um resumo no topo mostrando:
+Quando você abre a página de Grupos, você verá um resumo no topo mostrando:
 
-- **Total de grupos** -- o numero de grupos em todas as categorias
-- **Categorias** -- o numero de categorias de grupos que voce criou
-- **Total de membros** -- a contagem combinada de membros em todos os grupos
+- **Total Groups** -- o número de grupos em todas as categorias
+- **Categories** -- o número de categorias de grupos que você criou
+- **Total Members** -- a contagem combinada de membros em todos os grupos
 
-Abaixo do resumo, seus grupos sao listados por categoria com a contagem de membros exibida para cada grupo.
+Abaixo do resumo, seus grupos são listados por categoria com a contagem de membros mostrada para cada grupo.
 
-## O que voce pode fazer
+## O Que Você Pode Fazer
 
-Veja o que voce pode realizar na secao Grupos:
+Aqui está o que você pode realizar na seção Grupos:
 
-1. **Criar e organizar grupos** -- Adicione novos grupos dentro de categorias para refletir a estrutura da sua igreja. Veja [Criando grupos](./creating-groups.md).
+1. **Criar e organizar grupos** -- Adicione novos grupos dentro de categorias para refletir como sua igreja é estruturada. Veja [Criando Grupos](./creating-groups.md).
 
-2. **Gerenciar membros do grupo** -- Adicione e remova membros, designe lideres e comunique-se com seus grupos. Veja [Membros do grupo](./group-members.md).
+2. **Gerenciar membros do grupo** -- Adicione e remova membros, designe líderes e comunique-se com seus grupos. Veja [Membros do Grupo](./group-members.md).
 
-3. **Agendar eventos** -- Cada grupo pode ter seu proprio calendario para reunioes, eventos e atividades recorrentes. Veja [Calendario do grupo](./group-calendar.md).
+3. **Agendar eventos** -- Cada grupo pode ter seu próprio calendário para reuniões, eventos e atividades recorrentes. Veja [Group Calendar](./group-calendar.md).
 
-4. **Exportar dados do grupo** -- Baixe listas de membros de qualquer grupo como arquivo CSV para uso em planilhas ou correspondencias. Veja [Membros do grupo](./group-members.md) para instrucoes de exportacao.
+4. **Exportar dados do grupo** -- Baixe listas de membros para qualquer grupo como um arquivo CSV para uso em planilhas ou manutenção. Veja [Membros do Grupo](./group-members.md) para instruções de exportação.
 
-## Comecando
+## Começando
 
-Para acessar Grupos, clique em **People** na barra lateral esquerda do seu painel B1 Admin e selecione **Groups**. Voce vera todos os seus grupos existentes organizados por categoria.
+Para acessar Grupos, clique em **People** na barra lateral esquerda do seu painel B1 Admin e selecione **Groups**. Você verá todos os seus grupos existentes organizados por categoria.
 
 :::tip
-Se voce esta comecando agora, comece criando algumas categorias que correspondam a estrutura da sua igreja (por exemplo, "Ministerios," "Pequenos Grupos," "Equipes"). Em seguida, adicione grupos individuais dentro de cada categoria. Veja [Criando grupos](./creating-groups.md) para um passo a passo completo.
+Se você está começando, inicie criando algumas categorias que coincidam com sua estrutura de igreja (por exemplo, "Ministérios", "Pequenos Grupos", "Comitês"). Então adicione grupos individuais dentro de cada categoria. Veja [Criando Grupos](./creating-groups.md) para um guia passo a passo.
 :::
 
 :::info
-Os membros do grupo devem existir primeiro no seu diretorio [People](../people/adding-people.md) antes de poderem ser adicionados a um grupo. Se voce esta configurando o B1 pela primeira vez, [importe os dados dos seus membros](../people/importing-data.md) antes de criar grupos.
+Os membros do grupo devem primeiro existir em seu diretório de [People](../people/adding-people.md) antes de poderem ser adicionados a um grupo. Se você está configurando B1 pela primeira vez, [importe seus dados de membros](../people/importing-data.md) antes de criar grupos.
 :::

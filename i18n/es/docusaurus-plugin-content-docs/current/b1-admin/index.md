@@ -1,41 +1,41 @@
 ---
-title: "Descripci\u00f3n general de B1 Admin"
+title: "Descripción General de B1 Admin"
 ---
 
-# Descripci\u00f3n general de B1 Admin
+# Descripción General de B1 Admin
 
 <div class="article-intro">
 
-B1 Admin es el panel de gesti\u00f3n de su iglesia. Proporciona herramientas para administrar todos los aspectos de las operaciones de su iglesia -- desde directorios de miembros y donaciones hasta la creaci\u00f3n de sitios web y transmisiones en vivo -- todo desde un solo lugar.
+B1 Admin es su panel de control de gestión de iglesia. Proporciona herramientas para gestionar cada aspecto de las operaciones de su iglesia -- desde directorios de miembros y donaciones hasta construcción de sitios web y transmisión en vivo -- todo desde un solo lugar.
 
 </div>
 
-## Primeros pasos
+## Primeros Pasos
 
 1. Abra su navegador y vaya a [admin.b1.church](https://admin.b1.church)
-2. Inicie sesi\u00f3n con su nombre de usuario y contrase\u00f1a
-3. Llegar\u00e1 al **Panel de control**, que le brinda acceso r\u00e1pido a todas las funciones principales
+2. Inicie sesión con su nombre de usuario y contraseña
+3. Aterrizará en el **Panel**, que proporciona una descripción general de sus datos de iglesia junto con **Acciones Rápidas** para tareas comunes como agregar personas, crear grupos, registrar donaciones y más
 
 :::tip
-\u00bfNuevo en B1 Admin? Comience con la [Introducci\u00f3n](./introduction) para ver un recorrido en video, luego visite [Configuraci\u00f3n](./settings/) para establecer la informaci\u00f3n de su iglesia e invitar a su equipo.
+¿Nuevo en B1 Admin? Comience con la [Introducción](./introduction) para un recorrido en video, luego visite [Configuración](./settings/) para configurar la información de su iglesia e invitar a su equipo.
 :::
 
-## Funciones principales
+## Características Clave
 
-- **[Personas](./people/)** - Administre el directorio de su iglesia, agregue miembros, gestione hogares
-- **[Grupos](./groups/)** - Cree y organice grupos, equipos y ministerios de la iglesia
-- **[Asistencia](./attendance/)** - Configure sedes, horarios de servicio y registre la asistencia
-- **[Donaciones](./donations/)** - Registre ofrendas, administre fondos, genere estados de cuenta
-- **[Servicio](./serving/)** - Coordine voluntarios, cree planes de servicio, gestione tareas
-- **[Formularios](./forms/)** - Cree formularios personalizados para inscripciones y recolecci\u00f3n de datos
-- **[Reportes](./reports/)** - Consulte reportes de cumplea\u00f1os, asistencia y donaciones
-- **[Sitio web](./website/)** - Construya y administre el sitio web de su iglesia
-- **[Sermones](./sermons/)** - Administre su biblioteca de sermones y transmisiones en vivo
-- **[Calendarios](./calendars/)** - Cree y publique calendarios de eventos
-- **[Configuraci\u00f3n](./settings/)** - Configure la informaci\u00f3n de la iglesia, roles y permisos
+- **[Personas](./people/)** - Gestionar su directorio de iglesia, agregar miembros, rastrear hogares
+- **[Grupos](./groups/)** - Crear y organizar grupos de iglesia, equipos y ministerios
+- **[Asistencia](./attendance/)** - Configurar sedes, horarios de servicio y rastrear asistencia
+- **[Donaciones](./donations/)** - Registrar ofrendas, gestionar fondos, generar declaraciones
+- **[Serving](./serving/)** - Coordinar voluntarios, crear planes de servicio, gestionar tareas
+- **[Formularios](./forms/)** - Crear formularios personalizados para registros y recopilación de datos
+- **[Informes](./reports/)** - Ver cumpleaños, asistencia e informes de donaciones
+- **[Sitio Web](./website/)** - Construir y gestionar su sitio web de iglesia
+- **[Sermones](./sermons/)** - Gestionar su biblioteca de sermones y transmisión en vivo
+- **[Calendarios](./calendars/)** - Crear y publicar calendarios de eventos
+- **[Configuración](./settings/)** - Configurar información de iglesia, roles y permisos
 
 :::info
-Haga clic en el icono de signo de interrogaci\u00f3n en la esquina superior derecha de cualquier p\u00e1gina para acceder r\u00e1pidamente a la ayuda y documentaci\u00f3n.
+Haga clic en el icono de signo de interrogación en la esquina superior derecha de cualquier página para acceso rápido a ayuda y documentación.
 :::
 
-Para soporte, env\u00ede un correo electr\u00f3nico a [support@churchapps.org](mailto:support@churchapps.org).
+Para soporte, envíe un correo electrónico a [support@churchapps.org](mailto:support@churchapps.org).

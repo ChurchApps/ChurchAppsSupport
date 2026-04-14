@@ -1,56 +1,60 @@
 ---
-title: "Lektionsinhalte herunterladen"
+title: "Unterrichtsinhalte herunterladen"
 ---
 
-# Lektionsinhalte herunterladen
+# Unterrichtsinhalte herunterladen
 
 <div class="article-intro">
 
-Nachdem Sie eine Gemeinde und einen Klassenraum ausgewaehlt haben, ruft FreePlay automatisch die fuer heute geplante Lektion ab und beginnt mit dem Herunterladen aller zugehoerigen Mediendateien. Auf diesem Bildschirm warten Sie, bis der Inhalt bereit ist, bevor Sie die Lektion starten.
+Sobald Sie eine Kirche und ein Klassenzimmer ausgewählt haben, ruft FreePlay automatisch die Lektion ab, die heute geplant ist, und beginnt mit dem Herunterladen aller Mediendateien. Dieser Bildschirm ist der Ort, wo Sie warten, bis die Inhalte vor Unterrichtsbeginn bereit sind.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Waehlen Sie Ihre Gemeinde und Ihren Klassenraum aus -- siehe [Gemeinde und Raum auswaehlen](./selecting-room)
-- Stellen Sie sicher, dass Ihr Fernseher fuer den ersten Download mit dem Internet verbunden ist
+- Wählen Sie Ihre Kirche und das Klassenzimmer aus — siehe [Wählen Sie Ihre Kirche und Raum](./selecting-room)
+- Stellen Sie sicher, dass Ihr Fernseher für den anfänglichen Download mit dem Internet verbunden ist
 
 </div>
 
-## So funktioniert der Download
+## Wie das Herunterladen funktioniert
 
-1. FreePlay prueft den Zeitplan fuer Ihren Klassenraum und laedt die zugewiesene Lektion
-2. Der Lektionsname, Titel und die Beschreibung erscheinen auf dem Bildschirm, ueberlagert auf dem Titelbild der Lektion
-3. Eine Fortschrittsanzeige zeigt **Downloading item X of Y**, waehrend jede Datei auf dem Geraet gespeichert wird
-4. Wenn alle Dateien heruntergeladen sind, erscheint die Schaltflaeche **Start Lesson** mit einem Play-Symbol
+1. FreePlay überprüft den Zeitplan für Ihr Klassenzimmer und lädt die zugeordnete Lektion
+2. Der Lektionsname, Titel und Beschreibung erscheinen auf dem Bildschirm, überlagert auf dem Lektionscover-Bild
+3. Ein Fortschrittsindikator zeigt **Artikel X von Y herunterladen** während jede Datei auf dem Gerät gespeichert wird
+4. Wenn alle Dateien heruntergeladen sind, erscheint die Schaltfläche **Lektion starten** mit einem Play-Symbol
 
-Sie muessen waehrend des Downloads nichts tun. FreePlay erledigt alles automatisch.
+Sie müssen während des Herunterladens nichts tun. FreePlay verarbeitet alles automatisch.
 
-## Aufloesung
+## Auflösung
 
-FreePlay laedt Inhalte standardmaessig in 720p herunter. Die Aufloesungseinstellung (720p oder 1080p) bestimmt die Qualitaet der heruntergeladenen Video- und Bilddateien. Eine hoehere Aufloesung sieht auf grossen Fernsehern schaerfer aus, benoetigt aber laenger zum Herunterladen und verbraucht mehr Speicherplatz.
+FreePlay lädt Inhalte standardmäßig in 720p herunter. Die Auflösungseinstellung (720p oder 1080p) bestimmt die Qualität heruntergeladener Video- und Bilddateien. Höhere Auflösung sieht auf großen Fernsehern schärfer aus, dauert aber länger zum Herunterladen und verwendet mehr Speicher.
 
 :::info
-Die Aufloesung ist standardmaessig auf 720p eingestellt. Inhalte werden in der fuer Ihr Geraet konfigurierten Aufloesung heruntergeladen.
+Die Auflösung ist standardmäßig auf 720p eingestellt. Inhalte werden in der für Ihr Gerät konfigurierten Auflösung heruntergeladen.
 :::
 
-## Die Lektion starten
+## Starten Sie die Lektion
 
-Sobald der Download abgeschlossen ist, blendet sich die Schaltflaeche **Start Lesson** am unteren Bildschirmrand ein. Verwenden Sie Ihre TV-Fernbedienung, um sie hervorzuheben, und druecken Sie **Select**, um die Wiedergabe zu starten.
+Sobald das Herunterladen abgeschlossen ist, erscheint die Schaltfläche **Lektion starten** am unteren Bildschirmrand. Verwenden Sie Ihre Fernbedienung, um sie hervorzuheben und drücken Sie **Wählen**, um die Wiedergabe zu starten.
 
 ## Automatische Aktualisierung
 
-FreePlay prueft stuendlich auf aktualisierte Inhalte. Wenn sich der Zeitplan im Laufe des Tages aendert, uebernimmt die App die neue Lektion automatisch. Sie koennen auch **Back** auf Ihrer Fernbedienung druecken, um zum Raumauswahl-Bildschirm zurueckzukehren und den Download-Bildschirm erneut aufzurufen, um eine Aktualisierung zu erzwingen.
+FreePlay überprüft jede Stunde auf aktualisierte Inhalte. Wenn sich der Zeitplan während des Tages ändert, wird die App automatisch neue Lektionen abgerufen. Sie können auch **Zurück** auf Ihrer Fernbedienung drücken, um zum Raumauswahlbildschirm zurückzukehren und den Downloadbildschirm erneut zu öffnen, um eine Aktualisierung zu erzwingen.
 
 :::tip
-Laden Sie Lektionen vor dem Sonntagmorgen herunter, waehrend Ihr Gebaeude eine starke Internetverbindung hat. Einmal heruntergeladen, werden die Inhalte offline ohne jegliche Netzwerkabhaengigkeit abgespielt.
+Laden Sie Lektionen herunter, bevor Sonntag Morgen kommt, während Ihr Gebäude eine starke Internetverbindung hat. Nach dem Herunterladen wird der Inhalt offline ohne jede Netzwerkabhängigkeit abgespielt.
 :::
+
+## Download-Registerkarte
+
+FreePlay enthält eine **Download**-Registerkarte, auf der Sie alle auf dem Gerät heruntergeladenen Inhalte anzeigen und verwalten können. Dies gibt Ihnen Sichtbarkeit in das, was lokal gespeichert ist und für die Offline-Wiedergabe bereit ist. Verwenden Sie die Download-Registerkarte, um zu überprüfen, dass Lektionen vor Sonntagmorgen vollständig heruntergeladen sind, oder um Speicherplatz durch Entfernen alter Inhalte freizugeben.
 
 ## Wenn der Zeitplan leer ist
 
-Wenn fuer den ausgewaehlten Klassenraum keine Lektion geplant ist, sehen Sie die Meldung "The schedule could not be loaded. Make sure a lesson is scheduled for this class." Ueberpruefen Sie Ihren Zeitplan auf [freeplay.church](https://freeplay.church) und stellen Sie sicher, dass die richtige Lektion diesem Raum zugewiesen ist.
+Wenn keine Lektion für das ausgewählte Klassenzimmer geplant ist, sehen Sie die Nachricht "Der Zeitplan konnte nicht geladen werden. Stellen Sie sicher, dass eine Lektion für diese Klasse geplant ist." Überprüfen Sie Ihren Zeitplan auf [freeplay.church](https://freeplay.church) und stellen Sie sicher, dass die richtige Lektion diesem Raum zugewiesen ist.
 
-## Naechste Schritte
+## Nächste Schritte
 
-- **[Lektionen abspielen](./playing-lessons)** - Lernen Sie die Mediaplayer-Steuerungen fuer die Lektionswiedergabe kennen
+- **[Spielen von Lektionen](./playing-lessons)** - Lernen Sie die Medienspieler-Steuerungen zum Navigieren in Lektionsinhalten

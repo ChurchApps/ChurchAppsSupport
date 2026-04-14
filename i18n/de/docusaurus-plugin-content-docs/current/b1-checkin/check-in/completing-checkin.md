@@ -1,65 +1,65 @@
 ---
-title: "Check-in abschliessen"
+title: "Check-In abschließen"
 ---
 
-# Check-in abschliessen
+# Check-In abschließen
 
 <div class="article-intro">
 
-Sobald Sie Ihren Haushalt ueberprueft und alle notwendigen Gruppenzuweisungen vorgenommen haben, koennen Sie den Check-in abschliessen. Dies ist der letzte Schritt im Kiosk-Ablauf -- die App uebermittelt die Anwesenheit, druckt Etiketten und setzt sich fuer die naechste Familie zurueck.
+Sobald Sie Ihren Haushalt überprüft und notwendige Gruppenzuweisungen getätigt haben, sind Sie bereit, den Check-In zu finalisieren. Dies ist der letzte Schritt im Kiosk-Workflow — die App sendet Anwesenheit, druckt Labels und setzt sich für die nächste Familie zurück.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- [Ueberpruefen Sie Ihren Haushalt](./household-review) auf dem Haushaltsuebersichts-Bildschirm
-- [Weisen Sie Gruppen zu](./group-assignment) fuer alle Familienmitglieder, die in eine bestimmte Klasse oder ein Programm einchecken muessen
-- Optional: [Fuegen Sie Gaeste hinzu](./adding-guests), die mit Ihrer Familie zu Besuch sind
+- [Überprüfen Sie Ihren Haushalt](./household-review) auf dem Haushalt-Überprüfungs-Bildschirm
+- [Weisen Sie Gruppen](./group-assignment) zu jedem Familienmitglied zu, das sich in eine spezifische Klasse oder ein Programm einchecken muss
+- [Fügen Sie optional Gäste](./adding-guests) hinzu, die mit Ihrer Familie zu Besuch sind
 
 </div>
 
-## So checken Sie ein
+## Wie man sich eincheckt
 
-1. Tippen Sie auf dem **Haushaltsuebersichts-Bildschirm** auf die Schaltflaeche **Check-in** am unteren Bildschirmrand.
-2. Die App uebermittelt die Anwesenheitsdaten an den Server und zeigt einen **Erfolgsbildschirm** mit einem gruenen Haekchen und einer Willkommensnachricht an.
+1. Tippen Sie auf dem **Haushalt-Überprüfungs-Bildschirm** auf die Schaltfläche **Check-In** am unteren Bildschirmrand.
+2. Die App sendet die Anwesenheitsdaten an den Server und zeigt einen **Erfolgs-Bildschirm** mit einem grünen Häkchen und einer Willkommensnachricht.
 
-Das ist alles. Die Anwesenheit Ihrer Familie wurde erfasst.
+Das ist alles, was nötig ist. Die Anwesenheit Ihrer Familie wurde aufgezeichnet.
 
-## Etikettendruck
+## Label-Druck
 
-Wenn ein Netzwerkdrucker konfiguriert ist, druckt die App nach dem Check-in automatisch Etiketten:
+Wenn ein Netzwerk-Drucker konfiguriert ist, druckt die App nach dem Check-In automatisch Labels:
 
-- **Namensetiketten** werden fuer jede Person gedruckt, die einer Gruppe zugewiesen ist, bei der die Einstellung **Print Nametag** aktiviert ist. Namensetiketten enthalten den Namen der Person, ihre Gruppenzuweisung und gegebenenfalls Allergie-/Hinweisinformationen.
-- **Abholscheine fuer Eltern** werden gedruckt, wenn eine eingecheckte Person in einer Gruppe ist, bei der die Einstellung **Parent Pickup** aktiviert ist. Der Abholschein listet die Kinder, ihre Gruppenzuweisungen und einen einzigartigen **4-stelligen Sicherheitscode** auf.
+- **Name-Labels** werden für jede Person gedruckt, die einer Gruppe zugewiesen ist, die die **Nametag drucken**-Einstellung aktiviert hat. Name-Labels enthalten den Namen der Person, ihre Gruppen-Zuweisung und Allergie-/Notiz-Informationen, falls auf Datei vorhanden.
+- **Eltern-Abhol-Slips** werden gedruckt, wenn jede eingecheckte Person in einer Gruppe ist, die die **Eltern-Abhol**-Einstellung aktiviert hat. Der Abhol-Slip listet die Kinder, ihre Gruppenzuweisungen und einen eindeutigen **4-Zeichen-Sicherheitscode** auf.
 
 :::info
-Derselbe Sicherheitscode erscheint sowohl auf dem Namensetikett des Kindes als auch auf dem Abholschein der Eltern. Bei der Abholung gleichen Ehrenamtliche die Codes ab, um sicherzustellen, dass die richtige erwachsene Person jedes Kind abholt.
+Derselbe Sicherheitscode erscheint sowohl auf dem Nametag des Kindes als auch auf dem Eltern-Abhol-Slip. Beim Abhol-Zeit koordinieren Freiwillige die Codes, um zu überprüfen, dass der richtige Erwachsene jedes Kind abholt.
 :::
 
-Der Sicherheitscode wird bei jedem Check-in neu generiert und verwendet nur Konsonanten und Ziffern (Vokale werden ausgeschlossen, um die Bildung ungeeigneter Woerter zu vermeiden).
+Der Sicherheitscode wird bei jedem Check-In frisch erstellt und verwendet nur Konsonanten und Ziffern (Vokale werden ausgeschlossen, um unangemessene Wörter zu vermeiden).
 
 :::warning
-Wenn keine Etiketten gedruckt werden, ueberpruefen Sie die Drucker-Statusleiste am oberen Bildschirmrand. Tippen Sie darauf, um die Druckereinstellungen aufzurufen und die Verbindung zu ueberpruefen. Siehe [Druckereinrichtung](../getting-started/printer-setup) fuer Schritte zur Fehlerbehebung.
+Wenn Labels nicht drucken, öffnen Sie die Admin-Einstellungen, indem Sie siebenmal auf das **Kirchenlogo** tippen, dann tippen Sie auf **Drucker ändern**, um die Drucker-Verbindung zu überprüfen. Siehe [Drucker-Konfiguration](../getting-started/printer-setup) für Behebungs-Schritte.
 :::
 
-## Was nach dem Check-in passiert
+## Was nach dem Check-In passiert
 
-- Wenn ein Drucker konfiguriert ist, druckt die App alle Etiketten und kehrt dann automatisch zum **Such-Bildschirm** zurueck, bereit fuer die naechste Familie.
-- Wenn kein Drucker konfiguriert ist, wird der Erfolgsbildschirm einige Sekunden lang angezeigt und kehrt dann automatisch zum **Such-Bildschirm** zurueck.
+- Wenn ein Drucker konfiguriert ist, druckt die App alle Labels und gibt automatisch zum **Nachschlage-Bildschirm** zurück, bereit für die nächste Familie.
+- Wenn kein Drucker konfiguriert ist, zeigt der Erfolgs-Bildschirm für einige Sekunden an und gibt dann automatisch zum **Nachschlage-Bildschirm** zurück.
 
-Sie muessen nichts antippen, um zum Such-Bildschirm zurueckzukehren -- die App uebernimmt den Uebergang automatisch.
+Sie müssen nicht auf dem Nachschlage-Bildschirm auf etwas klicken — die App verarbeitet den Übergang automatisch.
 
 :::tip
-Die App setzt sich nach jedem Check-in vollstaendig zurueck, sodass keine Gefahr besteht, dass eine Familie die Informationen einer anderen Familie sieht.
+Die App setzt sich nach jedem Check-In vollständig zurück, daher besteht kein Risiko, dass eine Familie die Informationen einer anderen Familie sieht.
 :::
 
-## Was erfasst wird
+## Was wird aufgezeichnet
 
-Wenn Sie auf **Check-in** tippen, sendet die App fuer jedes Haushaltsmitglied mit einer Gruppenzuweisung folgende Daten an den Server:
+Wenn Sie auf **Check-In** tippen, sendet die App das Folgende an den Server für jeden Haushalt-Mitglied, der eine Gruppen-Zuweisung hat:
 
 - Die **Person**, die eingecheckt wird
-- Der **Gottesdienst**, an dem sie teilnimmt
-- Die **Gottesdienstzeit** und **Gruppe**, der sie zugewiesen ist
+- Der **Gottesdienst**, an dem sie teilnehmen
+- Die **Gottesdienst-Zeit** und **Gruppe**, der sie zugewiesen sind
 
-Diese Daten erscheinen in B1 Admin im Bereich Anwesenheit, wo Ihre Gemeinde-Administratoren Anwesenheitsdatensaetze einsehen und verwalten koennen. Weitere Informationen finden Sie in der [Anleitung zur Check-in-Verwaltung](../../b1-admin/attendance/check-in.md).
+Diese Daten erscheinen in B1 Admin im Anwesenheits-Bereich, wo Ihre Kirchen-Administratoren Anwesenheit-Datensätze anzeigen und verwalten können. Siehe das [Check-In-Verwaltungs-Handbuch](../../b1-admin/attendance/check-in.md) für Details.

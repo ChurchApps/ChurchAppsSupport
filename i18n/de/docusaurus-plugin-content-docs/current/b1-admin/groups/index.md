@@ -6,42 +6,43 @@ title: "Gruppen"
 
 <div class="article-intro">
 
-Der Bereich **Gruppen** ermöglicht es Ihnen, Ihre Gemeindemitglieder in Dienste, Kleingruppen, Bibelstudien, Ausschüsse und mehr zu organisieren. Gruppen sind das Rückgrat des Gemeindelebens, und dieser Bereich gibt Ihnen die Werkzeuge, um jede Gruppe an einem Ort zu erstellen, zu verwalten und mit ihr zu kommunizieren. Beachten Sie, dass **Teams** von Gruppen getrennt sind — Teams werden für den Dienst und die Planung von Ehrenamtlichen verwendet.
+Der Abschnitt **Gruppen** ermöglicht es Ihnen, Ihre Kirchenmitglieder in Ministeries, Kleingruppen, Bibelstudien, Ausschüsse und mehr zu organisieren. Gruppen sind das Rückgrat des Gemeinschaftslebens Ihrer Kirche, und dieser Abschnitt bietet Ihnen die Tools, um jede Gruppe an einem Ort zu erstellen, zu verwalten und zu kommunizieren. Beachten Sie, dass **Teams** von Gruppen getrennt sind -- Teams werden für die Planung und Terminierung von Freiwilligendiensten verwendet.
 
 </div>
 
-## Überblick
+## Übersicht
 
-Gruppen sind nach **Kategorien** organisiert. Eine Kategorie ist ein übergeordnetes Label wie „Kleingruppen", „Dienste" oder „Ausschüsse". Jede Kategorie kann mehrere Gruppen enthalten, wodurch verwandte Gruppen einfach zusammengehalten werden können.
+Gruppen werden nach **Kategorie** organisiert. Eine Kategorie ist ein Label auf oberster Ebene wie „Kleingruppen", „Ministries" oder „Ausschüsse". Jede Kategorie kann mehrere Gruppen enthalten, was es einfach macht, verwandte Gruppen zusammen zu halten.
 
-Wenn Sie die Gruppenseite öffnen, sehen Sie oben eine Zusammenfassung mit:
+Wenn Sie die Seite "Gruppen" öffnen, sehen Sie oben eine Zusammenfassung, die anzeigt:
 
-- **Gruppen gesamt** -- die Anzahl der Gruppen über alle Kategorien hinweg
-- **Kategorien** -- die Anzahl der von Ihnen erstellten Gruppenkategorien
-- **Mitglieder gesamt** -- die kombinierte Anzahl der Mitglieder über alle Gruppen hinweg
+- **Gesamtgruppen** -- die Anzahl der Gruppen in allen Kategorien
+- **Kategorien** -- die Anzahl der Gruppenkategorien, die Sie erstellt haben
+- **Gesamtmitglieder** -- die kombinierte Anzahl der Mitglieder in allen Gruppen
 
-Unter der Zusammenfassung werden Ihre Gruppen nach Kategorie aufgelistet, wobei die Mitgliederanzahl für jede Gruppe angezeigt wird.
+Unterhalb der Zusammenfassung werden Ihre Gruppen nach Kategorie mit der für jede Gruppe angezeigten Mitgliederzahl aufgelistet.
 
 ## Was Sie tun können
 
-Hier ist, was Sie im Bereich Gruppen erreichen können:
+Hier sind die Dinge, die Sie im Abschnitt "Gruppen" erreichen können:
 
-1. **Gruppen erstellen und organisieren** -- Fügen Sie neue Gruppen innerhalb von Kategorien hinzu, um die Struktur Ihrer Gemeinde abzubilden. Siehe [Gruppen erstellen](./creating-groups.md).
+1. **Gruppen erstellen und organisieren** -- Fügen Sie neue Gruppen in Kategorien hinzu, um widerzuspiegeln, wie Ihre Kirche strukturiert ist. Siehe [Gruppen erstellen](./creating-groups.md).
 
-2. **Gruppenmitglieder verwalten** -- Fügen Sie Mitglieder hinzu und entfernen Sie sie, bestimmen Sie Leiter und kommunizieren Sie mit Ihren Gruppen. Siehe [Gruppenmitglieder](./group-members.md).
+2. **Verwalten Sie Gruppenmitglieder** -- Fügen Sie Mitglieder hinzu und entfernen Sie diese, bestimmen Sie Leiter und kommunizieren Sie mit Ihren Gruppen. Siehe [Gruppenmitglieder](./group-members.md).
 
-3. **Veranstaltungen planen** -- Jede Gruppe kann ihren eigenen Kalender für Treffen, Veranstaltungen und wiederkehrende Aktivitäten haben. Siehe [Gruppenkalender](./group-calendar.md).
+3. **Planen Sie Veranstaltungen** -- Jede Gruppe kann einen eigenen Kalender für Meetings, Veranstaltungen und wiederkehrende Aktivitäten haben. Siehe [Gruppenkalender](./group-calendar.md).
 
-4. **Gruppendaten exportieren** -- Laden Sie Mitgliederlisten für jede Gruppe als CSV-Datei herunter, um sie in Tabellen oder Mailings zu verwenden. Siehe [Gruppenmitglieder](./group-members.md) für Exportanweisungen.
+4. **Exportieren Sie Gruppendaten** -- Laden Sie Mitgliederlisten für jede Gruppe als CSV-Datei zur Verwendung in Tabellen oder Mailings herunter. Siehe [Gruppenmitglieder](./group-members.md) für Exportanweisungen.
 
-## Erste Schritte
+## Anfangen
 
-Um auf Gruppen zuzugreifen, klicken Sie auf **Personen** in der linken Seitenleiste Ihres B1 Admin Dashboards und wählen Sie dann **Gruppen**. Sie sehen alle Ihre bestehenden Gruppen, nach Kategorie organisiert.
+Um auf Gruppen zuzugreifen, klicken Sie in der linken Seitenleiste Ihres B1 Admin-Dashboards auf **Personen** und wählen Sie dann **Gruppen**. Sie sehen alle Ihre vorhandenen Gruppen, die nach Kategorie organisiert sind.
 
 :::tip
-Wenn Sie gerade erst anfangen, erstellen Sie zunächst einige Kategorien, die zu Ihrer Gemeindestruktur passen (zum Beispiel „Dienste", „Kleingruppen", „Ausschüsse"). Fügen Sie dann einzelne Gruppen innerhalb jeder Kategorie hinzu. Siehe [Gruppen erstellen](./creating-groups.md) für eine Schritt-für-Schritt-Anleitung.
+Wenn Sie gerade anfangen, beginnen Sie damit, ein paar Kategorien zu erstellen, die Ihrer Kirchenstruktur entsprechen (zum Beispiel „Ministries", „Kleingruppen", „Ausschüsse"). Fügen Sie dann einzelne Gruppen in jeder Kategorie hinzu. Siehe [Gruppen erstellen](./creating-groups.md) für eine Schritt-für-Schritt-Anleitung.
 :::
 
 :::info
-Gruppenmitglieder müssen zuerst in Ihrem [Personen](../people/adding-people.md)-Verzeichnis vorhanden sein, bevor sie zu einer Gruppe hinzugefügt werden können. Wenn Sie B1 zum ersten Mal einrichten, [importieren Sie Ihre Mitgliederdaten](../people/importing-data.md), bevor Sie Gruppen erstellen.
+Gruppenmitglieder müssen zunächst in Ihrem [Personen-](../people/adding-people.md) Verzeichnis vorhanden sein, bevor sie zu einer Gruppe hinzugefügt werden können. Wenn Sie B1 zum ersten Mal einrichten, [importieren Sie Ihre Mitgliederdaten](../people/importing-data.md), bevor Sie Gruppen erstellen.
 :::
+

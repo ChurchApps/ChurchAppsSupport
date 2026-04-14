@@ -1,64 +1,68 @@
 ---
-title: "Opprette kontoen din"
+title: "Opprettelse av kontoen"
 ---
 
-# Opprette kontoen din
+# Opprettelse av kontoen din
 
 <div class="article-intro">
 
-A komme i gang med ChurchApps begynner med a opprette kontoen din. Prosessen tar bare noen fa minutter og gir deg tilgang til alle ChurchApps-verktoy, inkludert B1 Admin, B1.church og Lessons.church.
+Å komme i gang med ChurchApps begynner med å opprett kontoen din. Prosessen tar bare noen få minutter og gir deg tilgang til alle ChurchApps-verktøy, inkludert B1 Admin, B1.church og Lessons.church.
 
 </div>
 
 <div class="prereqs">
-<h4>For du begynner</h4>
+<h4>Før du begynner</h4>
 
-- Ha en gyldig e-postadresse klar for kontoverifisering
-- Se gjennom [Kom i gang-oversikten](./index.md) for a forsta hva ChurchApps tilbyr
+- Ha en gyldig e-postadresse klar for kontobekreftelse
+- Gjennomgå [Getting Started-oversikten](./index.md) for å forstå hva ChurchApps tilbyr
 
 </div>
 
-## Steg-for-steg-registrering
+## Trinn-for-trinn registrering
 
-1. Ga til [B1.church](https://b1.church) i nettleseren din.
-2. Klikk pa **Registrer**-knappen.
-3. Skriv inn **fornavnet** ditt, **etternavnet** ditt og **e-postadressen** din.
-4. Opprett et passord for kontoen din.
+1. Gå til [B1.church](https://b1.church) i nettleseren.
+2. Klikk på **Registrer**-knappen.
+3. Oppgi **fornavn**, **etternavn** og **e-postadresse**.
+4. Opprett et passord for kontoen.
 5. Send inn registreringsskjemaet.
 
-## Bekrefte e-posten din
+## Bekreftelse av e-posten
 
-Etter registrering vil du motta en bekreftelses-e-post pa adressen du oppga.
+Etter registrering vil du motta en bekreftelses-e-post på adressen du oppga.
 
-1. Sjekk innboksen din for bekreftelses-e-posten fra ChurchApps.
-2. Klikk pa bekreftelseslenken i e-posten.
-3. Kontoen din er na verifisert og klar til bruk.
+1. Sjekk innboksen for bekreftelse-e-posten fra ChurchApps.
+2. Klikk bekreftelsenlenken i e-posten.
+3. Kontoen er nå bekreftet og klar til bruk.
 
 :::tip
-Hvis du ikke ser bekreftelses-e-posten, sjekk spam- eller soppostmappen din. E-posten kommer fra ChurchApps og kan ta et minutt eller to for den ankommer.
+Hvis du ikke ser bekreftelse-e-posten, sjekk søppel- eller uønsket mappen. E-posten kommer fra ChurchApps og kan ta et minutt eller to å ankomme.
 :::
 
-## Sette opp kirken din
+## Oppsett av kirken
 
-Etter at du har bekreftet e-posten din og logget inn, vil du ha muligheten til enten a opprette en ny kirke eller bli med i en eksisterende.
+Etter å ha bekreftet e-posten og logget på, vil du ha muligheten til enten å opprett en ny kirke eller slutte deg til en eksisterende.
 
-**For a opprette en ny kirke:**
+**For å opprett en ny kirke:**
 
-1. Velg alternativet for a **opprette en ny kirke**.
-2. Skriv inn **kirkenavnet** ditt og grunnleggende informasjon.
-3. Fullfar oppsettsprosessen.
-4. Du blir tatt til **B1 Admin-panelet** der du kan begynne a konfigurere kirken din.
+1. Velg alternativet for **opprett en ny kirke**.
+2. Oppgi **kirkens navn** og grunnleggende informasjon. Registreringsskjemaet vil automatisk populate kirkens detaljer hvis et samsvar blir funnet.
+3. Fullfør oppsetsprosessen.
+4. Du vil bli tatt til **B1 Admin-instrumentbordet** hvor du kan begynne å konfigurere kirken.
 
-**For a bli med i en eksisterende kirke:**
+**For å slutte deg til en eksisterende kirke:**
 
-1. Velg alternativet for a **bli med i en eksisterende kirke**.
-2. Sok etter kirken din etter navn.
-3. Send en forespørsel om a bli med. En administrator i kirken din ma godkjenne forespørselen din.
+1. Velg alternativet for **slutte deg til en eksisterende kirke**.
+2. Søk etter kirken etter navn.
+3. Be om å slutte seg. En administrator ved kirken må godkjenne forespørselen.
 
 :::info
-Personen som oppretter en ny kirke far automatisk tildelt rollen som **Domain Admin**, som gir full tilgang til alle innstillinger og funksjoner. Du kan legge til flere administratorer senere fra **Roller**-siden.
+Hvis du prøver å logge på med en e-postadresse som ikke er registrert ennå, blir du automatisk omdirigert til registreringsflytene slik at du kan opprett en konto.
 :::
 
-## Hva kommer videre
+:::info
+Personen som oppretter en ny kirke får automatisk tildelt **Domain Admin**-rollen, som gir full tilgang til alle innstillinger og funksjoner. Du kan legge til flere administratorer senere fra **Roller**-siden.
+:::
 
-Nar kirken din er satt opp, ga til guiden [Forste oppsett](./initial-setup.md) for a konfigurere kirkens innstillinger, merkevarebygging og teamtilgang.
+## Hva som kommer neste
+
+Når kirken er satt opp, gå til [Initial Setup](./initial-setup.md)-guiden for å konfigurere kirkens innstillinger, merkevare og teamtilgang.

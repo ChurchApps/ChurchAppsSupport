@@ -6,112 +6,112 @@ title: "चेक-इन"
 
 <div class="article-intro">
 
-B1 Admin सहयोगी **B1 Checkin** ऐप के माध्यम से सेवाओं में सेल्फ चेक-इन का समर्थन करता है। सदस्य आने पर कियोस्क या समर्पित उपकरणों पर खुद और अपने परिवारों को चेक-इन कर सकते हैं, जिससे प्रक्रिया तेज़ होती है और आपके स्वयंसेवकों पर कार्यभार कम होता है। प्रत्येक चेक-इन स्वचालित रूप से उपस्थिति के रूप में दर्ज होता है।
+B1 Admin एक साथी **B1 Checkin** ऐप के माध्यम से सेवाओं में स्व-चेक-इन को सपोर्ट करता है। सदस्य जब आते हैं तो kiosks या समर्पित डिवाइसों पर अपने और अपने परिवार को चेक-इन कर सकते हैं, जिससे प्रक्रिया तेज़ होती है और आपके स्वयंसेवकों पर काम कम हो जाता है। हर चेक-इन स्वचालित रूप से attendance के रूप में दर्ज हो जाता है।
 
 </div>
 
 <div class="prereqs">
-<h4>शुरू करने से पहले</h4>
+<h4>शुरुआत से पहले</h4>
 
-- आपके परिसर, सेवा समय और समूह [उपस्थिति सेटअप](setup.md) में कॉन्फ़िगर होने चाहिए।
-- आपको अपने डेटाबेस में [लोगों](../people/adding-people.md) की आवश्यकता है जिनके [परिवार](../people/adding-people.md#managing-households) सेट अप हों ताकि परिवार एक साथ चेक-इन कर सकें।
-- आपको एक टैबलेट और वैकल्पिक रूप से एक Brother लेबल प्रिंटर की आवश्यकता होगी (नीचे [अनुशंसित हार्डवेयर](#recommended-hardware) देखें)।
+- आपके campuses, service times, और groups को [Attendance Setup](setup.md) में कॉन्फ़िगर किया जाना चाहिए।
+- आपके डेटाबेस में [लोग होने चाहिए](../people/adding-people.md) जिनके [households](../people/adding-people.md#managing-households) सेट अप हों ताकि परिवार एक साथ चेक-इन कर सकें।
+- आपको एक टैबलेट की जरूरत होगी और वैकल्पिक रूप से Brother लेबल प्रिंटर (नीचे [recommended hardware](#recommended-hardware) देखें)।
 
 </div>
 
 ## यह कैसे काम करता है
 
-B1 Checkin ऐप आपके B1 Admin उपस्थिति सेटअप से जुड़ता है। जब कोई सदस्य चेक-इन करता है, तो उसकी उपस्थिति स्वचालित रूप से सही परिसर, सेवा समय और समूह के लिए दर्ज हो जाती है। चेक-इन सिस्टम का उपयोग करने वाले किसी भी व्यक्ति के लिए आपको मैन्युअल रूप से उपस्थिति दर्ज करने की आवश्यकता नहीं है।
+B1 Checkin ऐप आपके B1 Admin attendance सेटअप से जुड़ता है। जब कोई सदस्य चेक-इन करता है, तो उनकी attendance स्वचालित रूप से सही campus, service time, और group के विरुद्ध दर्ज हो जाती है। आपको चेक-इन सिस्टम का उपयोग करने वाले किसी के लिए भी manually attendance दर्ज करने की आवश्यकता नहीं है।
 
-## चेक-इन सेट अप करना
+## चेक-इन सेटअप करना
 
-1. **पहले अपनी उपस्थिति संरचना कॉन्फ़िगर करें।** B1 Admin में, **Attendance > Setup** पर जाएं और सुनिश्चित करें कि आपके परिसर, सेवा समय और समूह सही जगह पर हैं। चेक-इन ऐप इस कॉन्फ़िगरेशन पर निर्भर करता है। विवरण के लिए [उपस्थिति सेटअप](setup.md) देखें।
-2. **B1 Checkin ऐप इंस्टॉल करें** उन उपकरणों पर जिनका आप उपयोग करने की योजना बना रहे हैं। ऐप निम्नलिखित प्लेटफ़ॉर्म पर उपलब्ध है:
-   - **Android/Samsung टैबलेट:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
-   - **Amazon Fire टैबलेट:** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
-3. **B1 Checkin ऐप में साइन इन करें** अपने चर्च के अकाउंट क्रेडेंशियल्स का उपयोग करके।
-4. **परिसर और सेवा समय चुनें** वर्तमान सभा के लिए।
-5. सदस्य अब उपकरण पर अपना नाम खोजकर चेक-इन कर सकते हैं।
+1. **पहले अपनी attendance structure को कॉन्फ़िगर करें।** B1 Admin में, **Attendance > Setup** पर जाएं और सुनिश्चित करें कि आपके campuses, service times, और groups जगह पर हैं। चेक-इन ऐप इस कॉन्फ़िगरेशन पर निर्भर करता है। विवरण के लिए [Attendance Setup](setup.md) देखें।
+2. **B1 Checkin ऐप** को उन डिवाइसों पर इंस्टॉल करें जिन्हें आप उपयोग करना चाहते हैं। ऐप निम्नलिखित प्लेटफ़ॉर्म पर उपलब्ध है:
+   - **Android/Samsung Tablets:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
+   - **Amazon Fire Tablets:** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
+3. **अपने चर्च के account credentials का उपयोग करके B1 Checkin ऐप में साइन इन करें।**
+4. **वर्तमान gathering के लिए campus और service time चुनें।**
+5. अब सदस्य डिवाइस पर अपना नाम खोज सकते हैं और चेक-इन कर सकते हैं।
 
 :::tip
-चेक-इन उपकरणों को दृश्यमान, आसानी से पहुंचने योग्य स्थानों जैसे लॉबी के प्रवेश द्वार या स्वागत डेस्क पर रखें। सेवाओं के दौरान एक संक्षिप्त घोषणा सदस्यों को यह विकल्प उपलब्ध होने की जानकारी देने में मदद करती है।
+चेक-इन डिवाइसों को दृश्यमान, आसानी से पहुंचने वाली जगहों जैसे लॉबी entrances या welcome desks में रखें। सेवाओं के दौरान एक brief announcement सदस्यों को बताता है कि यह विकल्प उपलब्ध है।
 :::
 
 :::tip
-यदि आपके चर्च में कई परिसर हैं, तो आपको [उपस्थिति सेटअप](setup.md) में प्रत्येक परिसर के लिए सेटअप दोहराना होगा। प्रत्येक चेक-इन उपकरण को एक अलग परिसर के लिए कॉन्फ़िगर किया जा सकता है।
+यदि आपके चर्च के कई campuses हैं, तो आपको [Attendance Setup](setup.md) में प्रत्येक campus के लिए setup को दोहराना होगा। प्रत्येक चेक-इन डिवाइस को एक अलग campus के लिए कॉन्फ़िगर किया जा सकता है।
 :::
 
-## अनुशंसित हार्डवेयर
+## अनुशंसित Hardware
 
-**टैबलेट** — इनमें से कोई भी ऐप के साथ अच्छी तरह काम करता है:
+**Tablets** — ये ऐप के साथ अच्छी तरह काम करते हैं:
 
-- **कॉम्पैक्ट:** Samsung Galaxy Tab A7 Lite 8.7"
-- **बड़ी स्क्रीन:** Samsung Galaxy Tab A8 10.5"
-- **बजट:** Amazon Fire HD 10
+- **Compact:** Samsung Galaxy Tab A7 Lite 8.7"
+- **Large Screen:** Samsung Galaxy Tab A8 10.5"
+- **Budget:** Amazon Fire HD 10
 
-**प्रिंटर** — चेक-इन नेम टैग प्रिंट करने के लिए Brother लेबल प्रिंटर के साथ काम करता है:
+**Printers** — चेक-इन Brother लेबल प्रिंटर के साथ नाम टैग प्रिंट करने के लिए काम करते हैं:
 
-- **सर्वश्रेष्ठ:** Brother QL-1110NWB (Bluetooth और WiFi के माध्यम से कई टैबलेट का समर्थन करता है)
-- **अच्छा:** Brother QL-810W (WiFi के माध्यम से कई टैबलेट का समर्थन करता है)
-- **बजट:** Brother QL-1100 (केवल WiFi)
+- **Best:** Brother QL-1110NWB (Bluetooth और WiFi के माध्यम से कई tablets को सपोर्ट करता है)
+- **Good:** Brother QL-810W (WiFi के माध्यम से कई tablets को सपोर्ट करता है)
+- **Budget:** Brother QL-1100 (केवल WiFi)
 
-**लेबल:** Brother DK-1201 (1-1/7" x 3-1/2")
+**Labels:** Brother DK-1201 (1-1/7" x 3-1/2")
 
 :::warning
-केवल Brother लेबल प्रिंटर ही B1 Checkin ऐप के साथ संगत हैं। अन्य प्रिंटर ब्रांड नेम टैग प्रिंट करने के लिए काम नहीं करेंगे।
+केवल Brother लेबल प्रिंटर B1 Checkin ऐप के साथ compatible हैं। अन्य printer brands नाम टैग प्रिंट करने के लिए काम नहीं करेंगे।
 :::
 
 :::info
-अपने प्रिंटर को अपने टैबलेट के समान WiFi नेटवर्क से कनेक्ट करने के लिए अपने प्रिंटर के सेटअप निर्देशों का पालन करें। आप Brother प्रिंटर ड्राइवर और सेटअप गाइड [Brother सपोर्ट साइट](https://support.brother.com) पर पा सकते हैं।
+अपने printer के setup instructions को follow करें ताकि यह अपने tablet के समान WiFi नेटवर्क से जुड़ जाए। आप [Brother support site](https://support.brother.com) पर Brother printer drivers और setup guides पा सकते हैं।
 :::
 
-## कियोस्क स्वरूप को अनुकूलित करना
+## Kiosk Appearance को Customize करना
 
-आप B1 Checkin ऐप के रूप और अनुभव को अपने चर्च की ब्रांडिंग से मेल खाने के लिए अनुकूलित कर सकते हैं। B1 Admin में, कॉन्फ़िगर करने के लिए **Attendance > Kiosk Theme** पर जाएं:
+आप B1 Checkin ऐप के look और feel को अपने चर्च के branding से match करने के लिए customize कर सकते हैं। B1 Admin में, **Attendance > Kiosk Theme** पर जाएं और निम्नलिखित को कॉन्फ़िगर करें:
 
-### रंग
+### Colors
 
-अपनी चर्च ब्रांडिंग से मेल खाने के लिए आठ रंग सेटिंग्स अनुकूलित करें:
+अपने चर्च branding से match करने के लिए आठ color settings को customize करें:
 
-- **Primary** और **Primary Contrast** -- मुख्य ब्रांड रंग और उसका टेक्स्ट रंग।
-- **Secondary** और **Secondary Contrast** -- एक्सेंट रंग और उसका टेक्स्ट रंग।
-- **Header Background** और **Subheader Background** -- कियोस्क हेडर क्षेत्रों के लिए रंग।
-- **Button Background** और **Button Text** -- इंटरैक्टिव बटनों के लिए रंग।
+- **Primary** और **Primary Contrast** -- Main brand color और इसका text color।
+- **Secondary** और **Secondary Contrast** -- Accent color और इसका text color।
+- **Header Background** और **Subheader Background** -- Kiosk header areas के लिए colors।
+- **Button Background** और **Button Text** -- Interactive buttons के लिए colors।
 
-### पृष्ठभूमि छवि
+### Background Image
 
-कियोस्क स्वागत और लुकअप स्क्रीन के लिए एक वैकल्पिक पृष्ठभूमि छवि अपलोड करें। अनुशंसित आकार 1920x1080 पिक्सेल है।
+Kiosk welcome और lookup screens के लिए एक optional background image अपलोड करें। Recommended size 1920x1080 pixels है।
 
-### निष्क्रिय स्क्रीन / स्क्रीनसेवर
+### Idle Screen / Screensaver
 
-निष्क्रियता की अवधि के बाद सक्रिय होने वाला एक स्क्रीनसेवर कॉन्फ़िगर करें:
+एक screensaver कॉन्फ़िगर करें जो inactivity की एक अवधि के बाद activate हो:
 
-1. निष्क्रिय स्क्रीन को **चालू** या **बंद** करें।
-2. **टाइमआउट** सेट करें (स्क्रीनसेवर शुरू होने से पहले कितने सेकंड की निष्क्रियता, न्यूनतम 10 सेकंड)।
-3. एक या अधिक **स्लाइड** जोड़ें -- प्रत्येक स्लाइड में एक छवि और एक प्रदर्शन अवधि होती है (न्यूनतम 3 सेकंड)।
+1. Idle screen को **on** या **off** करें।
+2. **timeout** को सेट करें (screensaver शुरू होने से पहले inactivity के कितने seconds, minimum 10 seconds)।
+3. एक या अधिक **slides** जोड़ें -- प्रत्येक slide का एक image और एक display duration है (minimum 3 seconds)।
 
 :::tip
-जब कियोस्क सक्रिय रूप से उपयोग में न हो तो घोषणाएं, आगामी कार्यक्रम या स्वागत संदेश प्रदर्शित करने के लिए निष्क्रिय स्क्रीन का उपयोग करें।
+जब kiosk actively उपयोग में न हो तो announcements, upcoming events, या welcome messages दिखाने के लिए idle screen का उपयोग करें।
 :::
 
-## QR कोड के माध्यम से अतिथि पंजीकरण
+## QR Code के माध्यम से Guest Registration
 
-चेक-इन कियोस्क एक QR कोड प्रदर्शित कर सकता है जिसे आगंतुक अपने फ़ोन पर खुद और अपने परिवार को पंजीकृत करने के लिए स्कैन करते हैं। यह पहली बार आने वाले अतिथियों के लिए चेक-इन प्रक्रिया को तेज़ करता है।
+चेक-इन kiosk एक QR code दिखा सकता है जो visitors अपने फोन पर स्कैन करते हैं ताकि वे अपने और अपने परिवार को खुद register कर सकें। यह पहली बार आने वाले guests के लिए चेक-इन प्रक्रिया को तेज़ करता है।
 
-जब कोई अतिथि QR कोड स्कैन करता है, तो उन्हें [अतिथि पंजीकरण पृष्ठ](../../b1-church/checkin/guest-registration) पर ले जाया जाता है जहां वे अपना नाम, ईमेल और परिवार के सदस्य दर्ज करते हैं। फिर एक स्वयंसेवक उन्हें कियोस्क पर ढूंढकर चेक-इन कर सकता है।
+जब कोई guest QR code स्कैन करता है, तो उन्हें एक [guest registration page](../../b1-church/checkin/guest-registration) पर ले जाया जाता है जहां वे अपना नाम, email, और family members को दर्ज करते हैं। फिर एक volunteer उन्हें kiosk पर ढूंढ सकता है और उन्हें चेक-इन कर सकता है।
 
-### QR अतिथि पंजीकरण सक्षम करना
+### QR Guest Registration को Enable करना
 
-QR कोड प्रदर्शन चालू करने के लिए:
+QR code display को turn on करने के लिए:
 
-1. B1 Admin में, बाएं साइडबार में **Mobile** पर जाएं (फ़ोन आइकन)।
-2. **Check-In** टैब चुनें।
-3. **QR Guest Registration** को चालू करें।
+1. B1 Admin में, **Mobile** को left sidebar में जाएं (phone icon)।
+2. **Check-In** tab को चुनें।
+3. **QR Guest Registration** को on करें।
 
 :::note
-यह सेटिंग **Mobile** के अंतर्गत है, Attendance > Kiosk Theme के अंतर्गत नहीं।
+यह setting **Mobile** के तहत है, Attendance > Kiosk Theme के तहत नहीं।
 :::
 
-## क्या दर्ज होता है
+## क्या रिकॉर्ड होता है
 
-प्रत्येक चेक-इन B1 Admin में एक उपस्थिति रिकॉर्ड बनाता है। आप इन रिकॉर्ड को [उपस्थिति](tracking-attendance.md) और [समूह](../groups/group-members.md) टैब पर मैन्युअल रूप से दर्ज की गई उपस्थिति की तरह ही देख सकते हैं। डेटा कैसे दिखाई देता है इसमें कोई अंतर नहीं है — दोनों विधियां समान रिपोर्ट में डेटा प्रदान करती हैं।
+हर चेक-इन B1 Admin में एक attendance record बनाता है। आप [Attendance](tracking-attendance.md) और [Groups](../groups/group-members.md) tabs पर इन records को manually entered attendance की तरह देख सकते हैं। इसमें कोई अंतर नहीं है कि डेटा कैसे दिखाई देता है — दोनों तरीके एक ही reports में feed होते हैं।

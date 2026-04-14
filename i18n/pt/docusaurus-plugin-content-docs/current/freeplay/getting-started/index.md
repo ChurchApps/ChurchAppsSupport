@@ -1,48 +1,43 @@
 ---
-title: "Primeiros Passos"
+title: "Começando com FreePlay"
 ---
 
-# Primeiros Passos com o FreePlay
+# Começando com FreePlay
 
 <div class="article-intro">
 
-O FreePlay está disponível para Android TV, Amazon Fire TV e Apple TV. Este guia orienta você na instalação do aplicativo, no primeiro lançamento e no aprendizado dos controles básicos do controle remoto da TV que você usará em todo o aplicativo.
+FreePlay está disponível para Android TV, Amazon Fire TV e Apple TV. Este guia o leva através de instalar o app, lançá-lo pela primeira vez e aprender os controles básicos de controle remoto de TV que você usará em todo o app.
 
 </div>
 
-## Instalando o FreePlay
+## Instalando FreePlay
 
 ### Android TV / Amazon Fire TV
 
-1. Abra a loja de aplicativos na sua TV (**Google Play Store** ou **Amazon Appstore**)
-2. Pesquise por **FreePlay**
-3. Selecione o aplicativo e escolha **Instalar**
+1. Abra a loja de apps em sua TV (**Google Play Store** ou **Amazon Appstore**)
+2. Procure por **FreePlay**
+3. Selecione o app e escolha **Install**
 
 ### Apple TV
 
-1. Abra a **App Store** na sua Apple TV
-2. Pesquise por **FreePlay**
-3. Selecione o aplicativo e escolha **Obter**
+1. Abra a **App Store** em seu Apple TV
+2. Procure por **FreePlay**
+3. Selecione o app e escolha **Get**
 
-## Iniciando o Aplicativo
+## Lançando o App
 
-Quando você abre o FreePlay pela primeira vez, verá uma tela de abertura animada com o logotipo do FreePlay. O aplicativo verifica se há provedores de conteúdo previamente conectados. Se você já se conectou a um provedor, ele o levará diretamente ao navegador de conteúdo desse provedor. Caso contrário, abrirá a tela **Provedores de Conteúdo** onde você pode se conectar à sua primeira fonte de conteúdo.
+Quando você abre FreePlay pela primeira vez, você verá uma tela de splash animada com o logo FreePlay. O app verifica por provedores de conteúdo previamente conectados. Se você já conectou um provedor, ele levará você diretamente ao navegador de conteúdo daquele provedor. Caso contrário, abrirá a tela **Content Providers** onde você pode se conectar a sua primeira fonte de conteúdo.
 
-## Navegando com o Controle Remoto da TV
+## Navegando com Seu Controle Remoto de TV
 
-O FreePlay foi desenvolvido para controles remotos de TV. Aqui estão os controles que você usará em todo o aplicativo:
+FreePlay foi construído para controles remotos de TV. Aqui estão os controles que você usará em todo o app:
 
-- **Direcional (cima/baixo/esquerda/direita)** - Mover entre itens na tela
-- **Botão Selecionar / OK** - Escolher o item destacado
-- **Seta esquerda** - Abrir a barra lateral de qualquer tela
-- **Seta direita** - Fechar a barra lateral e retornar à área de conteúdo principal
-- **Botão Voltar / Menu** - Voltar para a tela anterior
+- **Direcional (cima/baixo/esquerda/direita)** - Mova entre itens na tela
+- **Botão Select / OK** - Escolha o item destacado
+- **Seta esquerda** - Abra a barra lateral de qualquer tela
+- **Seta direita** - Feche a barra lateral e retorne à área de conteúdo principal
+- **Botão Back / Menu** - Volte para a tela anterior
 
-:::tip
-A barra lateral se recolhe em uma faixa estreita de ícones quando você está navegando pelo conteúdo. Pressione a seta esquerda no controle remoto para expandi-la e ver os rótulos completos.
-:::
+## O Que Vem Depois
 
-## O Que Vem a Seguir
-
-- **[Escolhendo um Modo de Pareamento](./pairing-modes)** - Conheça as diferentes formas de conectar sua TV
-- **[Provedores de Conteúdo](../content-providers/)** - Conecte-se ao Lessons.church, Bible Project e mais
+- **[Provedores de Conteúdo](../content-providers/)** - Conecte a Lessons.church, Bible Project e mais

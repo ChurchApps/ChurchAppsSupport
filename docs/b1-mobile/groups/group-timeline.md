@@ -10,6 +10,10 @@ The Groups screen in B1 Mobile includes a timeline feed that pulls together acti
 
 </div>
 
+:::info
+The group timeline feature is temporarily unavailable while improvements are being made. In the meantime, you can still browse your individual groups from the Groups screen.
+:::
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 

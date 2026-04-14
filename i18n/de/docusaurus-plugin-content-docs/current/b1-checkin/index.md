@@ -1,42 +1,44 @@
 ---
-title: "B1 Church Checkin -- Uebersicht"
+title: "B1 Church Checkin-Übersicht"
 ---
 
-# B1 Church Checkin -- Uebersicht
+# B1 Church Checkin-Übersicht
 
 <div class="article-intro">
 
-B1 Church Checkin ist eine Self-Service-Kiosk-App fuer Android-Tablets. Sie ermoeglicht es Gemeindemitgliedern, ihre Familie nachzuschlagen, Kinder Gruppen oder Klassen zuzuweisen und Namensetiketten sowie Abholscheine fuer Eltern zu drucken -- ganz ohne einen Ehrenamtlichen am Empfang.
+B1 Church Checkin ist eine Self-Service-Kiosk-App für Android-Tablets. Sie ermöglicht es Kirchenmitgliedern, ihren Haushalt zu suchen, Kinder Gruppen oder Klassen zuzuweisen und Namensetiketten und Abholscheine für Eltern zu drucken -- alles ohne dass ein Freiwilliger am Schreibtisch erforderlich ist.
 
 </div>
 
-## So funktioniert es
+## Wie es funktioniert
 
-Stellen Sie ein Android-Tablet in Ihrem Foyer oder Empfangsbereich auf. Mitglieder koennen dort ihren Haushalt anhand der Telefonnummer oder des Nachnamens suchen, ihre Familie ueberpruefen, auswaehlen, welche Gruppen jede Person besuchen soll, und auf **Check-in** tippen. Die App druckt automatisch Namensetiketten und Abholscheine und setzt sich dann fuer die naechste Familie zurueck.
+Platzieren Sie ein Android-Tablet in Ihrer Lobby oder im Willkommensbereich. Mitglieder kommen herein, suchen ihren Haushalt nach Telefonnummer oder Nachname, überprüfen ihre Familie, wählen aus, zu welchen Gruppen jede Person gehen soll, und tippen auf **Check-in**. Die App druckt automatisch Namensetiketten und Abholscheine und setzt sich für die nächste Familie zurück.
 
-## Hauptfunktionen
+## Schlüsselfunktionen
 
-- **Self-Service-Mitgliedersuche** -- Suchen Sie nach Telefonnummer oder Nachname, um Ihren Haushalt schnell zu finden.
-- **Haushaltsuebersicht** -- Sehen Sie alle Familienmitglieder mit Fotos und aktuellen Gruppenzuweisungen auf einen Blick.
-- **Gruppenzuweisung** -- Weisen Sie jedes Familienmitglied der richtigen Klasse oder Gruppe fuer die gewaehlte Gottesdienstzeit zu.
-- **Gaeste-Check-in** -- Fuegen Sie einen Gast direkt vor Ort mit Vor- und Nachnamen zu Ihrem Haushalt hinzu.
-- **Etikettendruck** -- Drucken Sie Namensetiketten fuer Kinder und Abholscheine fuer Eltern mit einzigartigen Sicherheitscodes.
-- **Netzwerkdrucker-Unterstuetzung** -- Erkennen und konfigurieren Sie Netzwerkdrucker direkt in der App.
-- **Automatische Anmeldung** -- Nach der ersten Anmeldung merkt sich die App Ihre Zugangsdaten und wechselt bei zukuenftigen Starts direkt zum Gottesdienst-Bildschirm.
-- **Unterstuetzung mehrerer Gemeinden** -- Wenn Ihr Konto mit mehr als einer Gemeinde verknuepft ist, koennen Sie auswaehlen, bei welcher Sie einchecken moechten.
-- **Gemeinde-Branding** -- Die App zeigt Ihr Gemeinde-Logo in der Kopfzeile an, sobald eine Gemeinde ausgewaehlt wurde.
+- **Self-Service-Mitglieder-Suche** -- Suchen Sie nach Telefonnummer oder Nachname, um Ihren Haushalt schnell zu finden.
+- **Haushalts-Überprüfung** -- Sehen Sie auf einen Blick alle Familienmitglieder mit Fotos und aktuellen Gruppenzuweisungen.
+- **Gruppen-Zuweisung** -- Weisen Sie jedes Familienmitglied der richtigen Klasse oder Gruppe für die ausgewählte Service-Zeit zu.
+- **Gast-Check-in** -- Fügen Sie spontan einen Gast zu Ihrem Haushalt mit Vorname und Nachname hinzu.
+- **QR-Gast-Registrierung** -- Zeigen Sie einen QR-Code an, den Besucher scannen können, um sich [selbst zu registrieren](../b1-church/checkin/guest-registration) auf ihrem eigenen Telefon, bevor sie einchecken.
+- **Etiketten-Druck** -- Drucken Sie Namensetiketten für Kinder und Abholscheine für Eltern mit eindeutigen Sicherheitscodes.
+- **Netzwerk-Drucker-Unterstützung** -- Entdecken und konfigurieren Sie Netzwerk-Drucker direkt aus der App.
+- **Auto-Anmeldung** -- Nach der ersten Anmeldung merkt sich die App Ihre Anmeldedaten und geht direkt zum Bildschirm "Services" bei zukünftigen Starts.
+- **Multi-Kirchen-Unterstützung** -- Wenn Ihr Konto mit mehr als einer Kirche verknüpft ist, können Sie auswählen, in welche Sie einchecken möchten.
+- **Kirchliches Branding** -- Die App zeigt Ihr Kirchenlogo in der Kopfzeile an, sobald eine Kirche ausgewählt ist.
 
 ## Dokumentationsabschnitte
 
-- **[Erste Schritte](./getting-started/)** -- Installation der App, Anmeldung und Druckereinrichtung.
-- **[Check-in-Ablauf](./check-in/)** -- Der vollstaendige Check-in-Ablauf von der Gottesdienstauswahl bis zum Etikettendruck.
+- **[Erste Schritte](./getting-started/)** -- Installation der App, Anmeldung und Einrichtung Ihres Druckers.
+- **[Check-in-Workflow](./check-in/)** -- Der vollständige Check-in-Fluss vom Auswählen eines Service bis zum Drucken von Etiketten.
 
 :::tip
-B1 Church Checkin funktioniert am besten auf einem 10-Zoll-Android-Tablet, das im Querformat montiert ist und leicht von Familien erreicht werden kann.
+B1 Church Checkin funktioniert am besten auf einem 10-Zoll-Android-Tablet im Querformat, bei dem Familien es leicht erreichen können.
 :::
 
 :::info
-Bevor Sie B1 Church Checkin verwenden koennen, muss Ihr Gemeinde-Administrator Gottesdienste, Gottesdienstzeiten und Gruppen in B1 Admin konfigurieren. Weitere Informationen finden Sie in der [Anleitung zur Anwesenheitseinrichtung](../b1-admin/attendance/setup.md).
+Bevor Sie B1 Church Checkin verwenden, müssen Ihr Kirchenadministrator Services, Service-Zeiten und Gruppen in B1 Admin konfigurieren. Siehe die [Anwesenheits-Setup-Anleitung](../b1-admin/attendance/setup.md) für Details.
 :::
 
-Fuer Unterstuetzung schreiben Sie an [support@churchapps.org](mailto:support@churchapps.org).
+Kontaktieren Sie den Support unter [support@churchapps.org](mailto:support@churchapps.org).
+

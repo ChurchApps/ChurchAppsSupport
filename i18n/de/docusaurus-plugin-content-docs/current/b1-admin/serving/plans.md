@@ -1,64 +1,69 @@
 ---
-title: "Dienstpläne"
+title: "Dienst-Pläne"
 ---
 
-# Dienstpläne
+# Dienst-Pläne
 
 <div class="article-intro">
 
-Dienstpläne organisieren, wer wann dient. Jeder Plan ist an ein bestimmtes Datum und einen Dienstbereich gebunden, was es einfach macht, Ihre Ehrenamtlichen-Teams Woche für Woche zu koordinieren und sicherzustellen, dass jeder Gottesdienst vollständig besetzt ist.
+Service-Pläne organisieren, wer dient und wann. Jeder Plan ist mit einem bestimmten Datum und Ministerium verbunden, was es einfach macht, Ihre Freiwilligenteams Woche für Woche zu koordinieren und sicherzustellen, dass jeder Service vollständig besetzt ist.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Richten Sie Ihre Dienstbereiche und Teams im Einstellungsbereich ein
-- Stellen Sie sicher, dass Ehrenamtliche zu Ihrem [Personenverzeichnis](../people/adding-people.md) hinzugefügt und Teams zugewiesen wurden
+- Richten Sie Ihre Ministries und Teams im Dienst-Bereich ein
+- Stellen Sie sicher, dass Freiwillige zu Ihrem [Personen-Verzeichnis](../people/adding-people.md) hinzugefügt und Teams zugewiesen wurden
 
 </div>
 
-## Auf Pläne zugreifen
+## Zugriff auf Pläne
 
-1. Navigieren Sie über das Hauptmenü zu **Dienst**.
-2. Wählen Sie oben auf der Seite eine **Dienstbereich-Registerkarte**.
-3. Klicken Sie auf einen **Plantyp**, um die Liste der Pläne für diesen Typ zu sehen.
+1. Navigieren Sie im Hauptmenü zu **Dienst**.
+2. Wählen Sie eine **Ministry-Registerkarte** oben auf der Seite.
+3. Klicken Sie auf einen **Plan-Typ**, um die Pläne für diesen Typ zu sehen.
 4. Klicken Sie auf einen bestimmten Plan, um ihn zu öffnen.
 
-## Einen Plan erstellen
+## Plan erstellen
 
-1. Klicken Sie in der Plantyp-Ansicht auf **Plan hinzufügen**.
-2. Wählen Sie das **Datum** für den Gottesdienst.
-3. Speichern Sie den Plan. Sie können nun damit beginnen, Teammitglieder zuzuweisen und den [Gottesdienstablauf](./service-order.md) aufzubauen.
+1. Klicken Sie in der Plan-Typ-Ansicht auf **Neuer Plan**.
+2. Geben Sie dem Plan einen Namen oder verwenden Sie das Datum als Namen. Wählen Sie das **Datum** für den Service.
+3. Wenn Sie von einem vorherigen Plan kopieren möchten, wählen Sie nur Positionen oder Positionen und Zuweisungen. Wenn Sie nichts kopieren möchten, wählen Sie einfach nichts. Sie können auch die Service-Reihenfolge von meinem vorherigen Plan kopieren.
+4. Speichern Sie den Plan. Sie können jetzt damit beginnen, Teammitglieder zuzuweisen und die [Service-Reihenfolge](./service-order.md) auszuarbeiten.
 
-## Die Plan-Detailseite
+## Die Seite "Plan-Details"
 
 Wenn Sie einen Plan öffnen, sehen Sie zwei Registerkarten:
 
-- **Einteilungen** -- Verwalten Sie, welche Teammitglieder diesem Plan zugewiesen sind. Sie können Personen aus Ihren bestehenden Teams hinzufügen und sehen, wer bestätigt hat oder noch aussteht.
-- **[Gottesdienstablauf](./service-order.md)** -- Bauen Sie den Gottesdienstablauf mit Elementen wie Lobpreisliedern, Gebeten, Ankündigungen und der Predigt auf.
+- **Zuweisungen** -- Verwalten Sie, welche Teammitglieder diesem Plan zugewiesen sind. Sie können Personen aus Ihren vorhandenen Teams hinzufügen und sehen, wer bestätigt hat oder noch ausstehend ist.
+- **[Service-Reihenfolge](./service-order.md)** -- Erstellen Sie die Service-Reihenfolge mit Elementen wie Anbetungsliedern, Gebeten, Ankündigungen und der Predigt.
 
-## Teammitglieder zuweisen
+## Zuweisen von Teammitgliedern
 
-1. Öffnen Sie einen Plan und gehen Sie zur Registerkarte **Einteilungen**.
-2. Klicken Sie auf ein **Team**, um es aufzuklappen.
-3. Fügen Sie Mitglieder aus Ihrem Team-Kader hinzu, indem Sie auf **Hinzufügen** klicken.
-4. Zugewiesene Mitglieder erscheinen unter ihrem Team mit ihrem Einteilungsstatus.
+1. Öffnen Sie einen Plan und gehen Sie zur Registerkarte **Zuweisungen**.
+2. Klicken Sie auf **Position hinzufügen**, um ihn zu erweitern. Füllen Sie die Informationen im Formular "Position hinzufügen" aus. Für den Kategorienamen fügen Sie eine beliebige Kategorie hinzu.
+3. Klicken Sie auf **Personen erforderlich** und wählen Sie Freiwillige aus, um diese Position zu besetzen.
+4. Fügen Sie Mitglieder aus Ihrer Team-Liste hinzu, indem Sie auf **Hinzufügen** klicken.
+5. Zugewiesene Mitglieder werden unter ihrem Team mit ihrem Zuweisungsstatus angezeigt.
+6. Klicken Sie auf "Freiwillige benachrichtigen", um sie in der B1-App oder per E-Mail zu benachrichtigen.
 
 :::tip
-Richten Sie Ihre Teams in den Dienstbereich-Einstellungen ein, bevor Sie Pläne erstellen. So haben Sie einen bereiten Pool von Ehrenamtlichen, aus dem Sie zuweisen können.
+Richten Sie Ihre Teams in den Ministeriums-Einstellungen ein, bevor Sie Pläne erstellen. So haben Sie einen bereiten Pool von Freiwilligen zum Zuweisen.
 :::
 
 ## Pläne drucken
 
-Sie können einen Plan zur Verteilung an Ihr Team drucken. Öffnen Sie den Plan und verwenden Sie die Option **Drucken**, um eine druckbare Version zu erstellen, die Einteilungen und den Gottesdienstablauf enthält. Dies ist nützlich für die Verteilung bei Proben oder zum Aushängen in einem gemeinsamen Bereich.
+Sie können einen Plan zum Verteilen an Ihr Team drucken. Öffnen Sie den Plan, öffnen Sie die Service-Reihenfolge-Registerkarte und verwenden Sie die Option **Drucken**, um eine druckbare Version zu erstellen, die Zuweisungen und die Service-Reihenfolge enthält. Dies ist nützlich zum Verteilen bei Proben oder zum Anbringen in einem gemeinsamen Bereich.
 
 :::info
-Pläne sind nach Dienstbereich organisiert. Stellen Sie sicher, dass Sie auf der richtigen Dienstbereich-Registerkarte sind, bevor Sie Pläne erstellen oder anzeigen.
+Pläne werden nach Ministry organisiert. Stellen Sie sicher, dass Sie auf der richtigen Ministry-Registerkarte sind, bevor Sie Pläne erstellen oder anzeigen.
 :::
 
 ## Nächste Schritte
 
-- Bauen Sie Ihren [Gottesdienstablauf](./service-order.md) mit Liedern, Lesungen und anderen Elementen auf
-- Fügen Sie [Lieder](./songs.md) aus Ihrer Bibliothek direkt in den Gottesdienstablauf ein
-- Verwenden Sie [Aufgaben](./tasks.md), um Aktionspunkte an Teammitglieder zuzuweisen
+- Verwenden Sie die [Pläne-Übersicht](./plans-overview.md), um alle bevorstehenden Zuweisungen in mehreren Wochen in einem Raster anzuzeigen und unbesetzte Positionen zu erkennen
+- Arbeiten Sie Ihre [Service-Reihenfolge](./service-order.md) mit Liedern, Lesungen und anderen Elementen aus
+- Fügen Sie [Lieder](./songs.md) aus Ihrer Bibliothek direkt in die Service-Reihenfolge ein
+- Verwenden Sie [Aufgaben](./tasks.md), um Nachfolge-Aktionselemente Teammitgliedern zuzuweisen
+

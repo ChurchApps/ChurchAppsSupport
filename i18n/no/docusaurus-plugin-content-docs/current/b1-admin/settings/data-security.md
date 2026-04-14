@@ -6,77 +6,93 @@ title: "Datasikkerhet"
 
 <div class="article-intro">
 
-Selv om det ikke finnes noe perfekt sikkert system, tar ChurchApps datasikkerhet på alvor. Denne siden forklarer tiltakene som er tatt for å beskytte alle data som legges inn i B1.church Admin og andre ChurchApps-produkter.
+Selv om det ikke finnes noe perfekt sikkert system, tar ChurchApps datasikkerhet alvorlig. Denne siden forklarer tiltakene som iverksettes for å beskytte all data som oppgis i B1.church Admin og andre ChurchApps-produkter.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Les gjennom denne siden for å forstå hvordan kirkens data er beskyttet
-- Sett opp [Roller og tillatelser](./roles-permissions.md) for å kontrollere hvem som kan få tilgang til sensitiv informasjon
-- Gjør deg kjent med [personvernreglene](https://churchapps.org/privacy)
+- Gjennomgå denne siden for å forstå hvordan kirkens data beskyttes
+- Sett opp [Roller & Tillatelser](./roles-permissions.md) for å kontrollere hvem som kan få tilgang til sensitiv informasjon
+- Gjør deg kjent med [personvernerklæringen](https://churchapps.org/privacy)
 
 </div>
 
-## Begrensning av lagrede sensitive data
+## Begrensning av sensitiv data som lagres
 
-Vår første tilnærming er å ikke lagre mer sensitive data enn nødvendig. Dette betyr at vi aldri lagrer kredittkort- eller bankkontoopplysninger som brukes til donasjoner. Når en bruker gir en donasjon via B1.church Admin eller B1, overføres kredittkortdataene aldri til noen av våre servere, kun til betalingsløsningen din (Stripe). Dette betyr at ved et datainnbrudd vil ingen kredittkort- eller bankinformasjon bli kompromittert.
+Vår første tilnærming er å ikke lagre mer sensitiv data enn nødvendig. Dette betyr aldri å lagre kredittkortt- eller bankkontoopplysninger som brukes til å gi donasjoner. Når en bruker gir en donasjon ved hjelp av B1.church Admin eller B1, blir kredittkorttdataene aldri overført til noen av serverne våre, bare betalingsgatewayen (Stripe). Dette betyr at i tilfelle et databrudd, vil det ikke være noen kredittkorting- eller bankinfo som ville blitt kompromittert.
 
-Vi lagrer heller aldri passord i systemet vårt. Alle passord behandles gjennom en enveis hashing-algoritme der noen av dataene ødelegges, noe som gjør det umulig for noen å hente passord fra databasen, selv for oss. For å verifisere passord må den angitte verdien gå gjennom samme enveis hash og produsere samme resultat.
+Vi lagrer aldri passord i systemet. Alle passord behandles gjennom en enveishashalgorisme der noen av dataene blir ødelagt, noe som gjør det umulig for noen å hente passord fra databasen, selv for oss. For å verifisere passord, må den oppgitte verdien passere gjennom samme enveishash og produsere samme resultat.
 
-Etter å ha fjernet disse to kildene er de eneste sensitive dataene som gjenstår en liste over navn og kontaktinformasjon.
+Etter å ha fjernet disse to kildene er det eneste sensitive data som gjenstår en liste over navn og kontaktinfo.
 
 :::tip
-Fordi ChurchApps aldri lagrer kredittkort- eller bankinformasjon, vil selv et verste-fall datainnbrudd ikke eksponere finansielle kontoopplysninger. Bare navn og kontaktinformasjon vil være utsatt.
+Fordi ChurchApps aldri lagrer kredittkorting- eller bankopplysninger, ville selv et worst-case-databrudd ikke eksponere finansiell kontoinformasjon. Bare navn og kontaktinformasjon ville være utsatt for fare.
 :::
 
 ## Bruk av standard beste praksis
 
-Vi bruker bransjens standard beste praksis for sikkerhet, inkludert kryptering av alle data under overføring til og fra våre servere ved hjelp av HTTPS. Alle servere er hostet i et sikkert fysisk datasenter hos Amazon Web Services. Alle databaseservere er lagret bak en brannmur og er utilgjengelige fra Internett.
+Vi bruker industristandardens beste praksis for sikkerhet, inkludert kryptering av alle data i transitt til og fra serverne våre ved hjelp av HTTPS. Alle servere er vert i et sikkert fysisk datasenter med Amazon Web Services. Alle databaseservere lagres bak en brannmur og er utilgjengelige fra internett.
 
 ## Datasegregering
 
-Data er separert i forskjellige databaser basert på omfang. Hver av våre API-er (Membership, Giving, Attendance, Messaging, Doing og Lessons) er uavhengige siloer av data med egne databaser. Hvis en av dem blir kompromittert, er nytteverdien av dataene begrenset uten at andre også blir kompromittert. For eksempel, hvis Giving API/databasen skulle bli kompromittert, kunne en ondsinnet aktør potensielt få tilgang til en liste over donasjoner og datoer (men aldri kort-/bankdata). De ville imidlertid ikke ha tilgang til hvilke brukere som ga donasjonene eller hvilke kirker de tilhørte, ettersom disse dataene er lagret i den separate Membership-databasen.
+Data er adskilt i ulike databaser basert på omfang. Hver av API-ene våre (Medlemskap, Giving, Oppmøte, Messaging, Doing og Lessons) er uavhengige data-siloer med sine egne databaser. Hvis en av dem blir kompromittert, er datausefullheten begrenset uten at andre også blir kompromittert. For eksempel, hvis Giving API/databasen skulle bli kompromittert, kunne en ondsinnet aktør potensielt få tilgang til en liste over donasjoner og datoer (men aldri kort- / bankdata). De ville imidlertid ikke ha tilgang til hvilke brukere som gjorde donasjonen eller hvilke kirker de var for, siden disse dataene lagres i den separate medlemskapsdatabasen.
 
 :::info
-Datasegregering betyr at kompromittering av ett system ikke gir tilgang til alle kirkedata. Hver API opererer uavhengig med sin egen database, noe som begrenser konsekvensene av et eventuelt innbrudd.
+Datasegregering betyr at kompromittering av ett system ikke gir tilgang til all kirkdata. Hver API opererer uavhengig med sin egen database, noe som begrenser virkningen av et potensielt brudd.
 :::
 
 ## Begrenset tilgang
 
-Tilgang til produksjonsserverne er strengt begrenset til serveradministratorene som trenger tilgang. Dette er for tiden to personer som også er styremedlemmer. Utviklere, frivillige og andre styremedlemmer har ikke tilgang til produksjonsserverne.
+Tilgang til produksjonserverne er strengt begrenset til serveradministratørene som krever tilgang. Dette er for øyeblikket to individer som også er medlemmer av styret. Utviklere, frivillige og andre styremedlemmer har ikke tilgang til produksjonserverne.
 
-## Personvernregler
+## Personvernerklæring
 
-Dine data er dine og vil aldri bli solgt til tredjeparter. Du kan lese våre fullstendige personvernregler [her](https://churchapps.org/privacy).
+Dataene dine er dine og vil aldri bli solgt til tredjeparter. Du kan lese hele personvernerklæringen vår [her](https://churchapps.org/privacy).
 
 ## GDPR-samsvar
 
-ChurchApps støtter GDPR-samsvar for kirker med medlemmer i Storbritannia eller EU. Slik ivaretar vi de viktigste kravene:
+ChurchApps støtter GDPR-samsvar for kirker med medlemmer i Storbritannia eller EU. Slik adresserer vi nøkkelkravene:
 
-### Registrertes rettigheter
+### Dataeierrettigheter
 
-ChurchApps tilbyr verktøy som hjelper kirker med å svare på forespørsler fra registrerte:
+ChurchApps tilbyr verktøy for å hjelpe kirker med å svare på dataeikerforespørsler:
 
-- **Rett til innsyn (Article 15)** — Medlemmer kan laste ned alle sine personopplysninger fra medlemsportalen ved hjelp av «Download My Data»-knappen. Administratorer kan også eksportere en persons data fra persondetaljsiden.
-- **Rett til sletting (Article 17)** — Medlemmer kan slette sin egen konto fra medlemsportalen. Administratorer kan anonymisere eller permanent slette en persons data på tvers av alle moduler. Anonymisering erstatter personopplysninger med generiske verdier, samtidig som aggregerte poster (donasjonstotaler, oppmøtetall) som trengs for kirkens økonomiske rapportering, bevares.
-- **Rett til begrensning (Article 18)** — Medlemmer kan begrense behandlingen av sine data, inkludert å melde seg av kommunikasjon.
-- **Rett til dataportabilitet (Article 20)** — Dataeksportfunksjonen gir alle personopplysninger i et strukturert, maskinlesbart JSON-format.
+- **Rett til innsyn (artikkel 15)** -- Medlemmer kan be om en kopi av personopplysningene ved å kontakte kirken. Administratorer kan eksportere enhver persons data fra **Data Management**-delen på personen detaljside i B1.church Admin.
+- **Rett til sletting (artikkel 17)** -- Medlemmer kan be om kontosletting ved å kontakte kirken. Administratorer kan anonymisere en persons data på tvers av alle moduler fra **Data Management**-delen på personen detaljside. Anonymisering erstatter personopplysninger med generiske verdier mens aggregerte poster (donasjonstotaler, oppmøtetall) bevares som trengs for kirkens finansiell rapportering.
+- **Rett til begrensning (artikkel 18)** -- Medlemmer kan be om begrensning av behandling ved å kontakte kirken, inkludert fravalgingsalternativ for kommunikasjon.
+- **Rett til dataportabilitet (artikkel 20)** -- Administratorer kan eksportere personopplysninger i strukturert, maskinlesbar JSON-format på vegne av medlemmer som ber om det.
+
+### Bruk av dataadministrasjonsverktøy
+
+For å få tilgang til GDPR-dataverktøy for en person:
+
+1. Gå til **Personer** i B1 Admin og åpne personens post.
+2. Klikk **Rediger** for å gå inn i redigeringsmodus.
+3. Rull ned til **Data Management**-delen (kollapsert som standard) og klikk for å utvide den.
+4. Bruk **Eksport data** for å laste ned en JSON-fil med alle data som lagres for denne personen.
+5. Bruk **Anonymiser** for å erstatte personopplysninger med generiske verdier. Du blir bedt om å skrive `ANONYMISER` for å bekrefte -- denne handlingen kan ikke angres.
+
+:::warning
+Anonymisering er permanent. Donasjonstotaler og oppmøtetall bevares for finansiell rapportering, men alle personidentifikatorer (navn, e-post, adresse osv.) blir fjernet og kan ikke gjenopprettes.
+:::
 
 ### Databehandling
 
-ChurchApps opptrer som **databehandler** på vegne av kirken din (**behandlingsansvarlig**). Vår [databehandleravtale](https://churchapps.org/terms) beskriver ansvarsfordelingen mellom partene, inkludert bruk av underdatabehandlere, prosedyrer for varsling ved brudd og håndtering av data ved opphør.
+ChurchApps fungerer som en **databehandler** på vegne av kirken (dataansvarlig). [Data Processing Agreement](https://churchapps.org/terms) vår skisserer ansvaret for hver part, inkludert underbehandleransvar, prosedyrer for bruddvarsel og datahåndtering ved avslutning.
 
 ### Internasjonale dataoverføringer
 
-ChurchApps-data er hostet på Amazon Web Services (AWS) i USA. Internasjonale dataoverføringer fra Storbritannia/EU er dekket av AWS sine Standard Contractual Clauses (SCCs) under [AWS Data Processing Addendum](https://aws.amazon.com/compliance/data-processing-addendum/). EU-basert hosting er ikke påkrevd når passende overføringsmekanismer som SCCs er på plass.
+ChurchApps data er vert på Amazon Web Services (AWS) i USA. Internasjonale dataoverføringer fra Storbritannia/EU dekkes av AWS sin Standard Contractual Clauses (SCCs) under [AWS Data Processing Addendum](https://aws.amazon.com/compliance/data-processing-addendum/). AWS DPA inkorporeres automatisk i AWS-servicebetingelsene for alle kunder. EU-basert hosting er ikke påkrevd når passende overføringsmekanismer som SCCs er på plass.
 
-### Underdatabehandlere
+For detaljer om hvordan overføringsrisiko har blitt evaluert, se [Transfer Risk Assessment](./transfer-risk-assessment.md).
 
-- **Amazon Web Services (AWS)** — Infrastrukturhosting, datalagring og innholdslevering
-- **Stripe** — Betalingsbehandling for donasjoner (ingen kortdata lagres av ChurchApps)
+### Underbehandlere
+
+- **Amazon Web Services (AWS)** -- Infrastruktur hosting, datalagring og innholdsleveranse
+- **Stripe** -- Betalingsbehandling for donasjoner (ingen kortdata lagres av ChurchApps)
 
 :::info
-For fullstendige detaljer om hvordan vi håndterer personopplysninger, se våre [personvernregler](https://churchapps.org/privacy) og [vilkår for bruk](https://churchapps.org/terms). Hvis du har spørsmål om GDPR-samsvar, kontakt oss på support@churchapps.org.
+For fullstendige detaljer om hvordan vi håndterer personopplysninger, se [personvernerklæringen](https://churchapps.org/privacy) og [servicevilkårene](https://churchapps.org/terms). Hvis du har spørsmål om GDPR-samsvar, kontakt oss på support@churchapps.org.
 :::

@@ -1,64 +1,64 @@
 ---
-title: "Anwesenheitseinrichtung"
+title: "Anmeldekonfiguration"
 ---
 
-# Anwesenheitseinrichtung
+# Anmeldekonfiguration
 
 <div class="article-intro">
 
-Bevor Sie die Anwesenheit erfassen können, müssen Sie B1 Admin über die physischen Standorte Ihrer Gemeinde, die Gottesdienstzeiten und die Gruppen, die bei jedem Gottesdienst zusammenkommen, informieren. Diese einmalige Einrichtung schafft die Struktur, die die gesamte Anwesenheitserfassung und Berichterstattung in Ihrer Gemeinde unterstützt.
+Bevor Sie Anwesenheit nachverfolgen können, müssen Sie B1 Admin über die physischen Orte Ihrer Kirche, wann Gottesdienste stattfinden, und welche Gruppen sich bei jedem Gottesdienst treffen, informieren. Dieses einmalige Setup erstellt die Struktur, die alle Anwesenheitsverfolgung und Berichterstattung in Ihrer Kirche unterstützt.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Sie benötigen ein aktives B1 Admin-Konto mit Berechtigung zur Verwaltung der Anwesenheit. Siehe [Rollen & Berechtigungen](../people/roles-permissions.md), wenn Sie sich über Ihre Zugriffsebene unsicher sind.
-- Wenn Sie Gruppen zu Gottesdienstzeiten zuordnen möchten, stellen Sie sicher, dass Ihre [Gruppen erstellt](../groups/creating-groups.md) sind.
+- Sie benötigen ein aktives B1 Admin-Konto mit Berechtigung zur Verwaltung von Anwesenheit. Siehe [Rollen & Berechtigungen](../people/roles-permissions.md), wenn Sie sich über Ihre Zugriffsstufe unsicher sind.
+- Wenn Sie planen, Gruppen zu Gottesdiensten zuzuweisen, stellen Sie sicher, dass Ihre [Gruppen zuerst erstellt werden](../groups/creating-groups.md).
 
 </div>
 
-## Wichtige Konzepte
+## Schlüsselkonzepte
 
-- **Standort** -- ein physischer Ort, an dem sich Ihre Gemeinde trifft (z. B. „Hauptstandort", „Standort Nord").
-- **Gottesdienstzeit** -- eine wiederkehrende Versammlung an einem Standort (z. B. „Sonntag 9:00 Uhr", „Mittwoch 19:00 Uhr").
-- **Geplante Gruppe** -- eine Gruppe, die einer bestimmten Gottesdienstzeit zugeordnet ist. Die Anwesenheit wird im Kontext dieses Gottesdienstes erfasst.
-- **Ungeplante Gruppe** -- eine Gruppe, die die Anwesenheit eigenständig erfasst, ohne an eine Gottesdienstzeit gebunden zu sein.
+- **Standort** — ein physischer Ort, an dem sich Ihre Kirche trifft (z.B. "Hauptstandort", "Nordstandort").
+- **Gottesdienst** — eine regelmäßige Versammlung an einem Standort (z.B. "Sonntag 9:00 Uhr", "Mittwoch 19:00 Uhr").
+- **Geplante Gruppe** — eine Gruppe, die einem bestimmten Gottesdienst zugewiesen ist. Die Anwesenheit wird im Kontext dieses Gottesdiensts nachverfolgt.
+- **Ungeplante Gruppe** — eine Gruppe, die die Anwesenheit eigenständig nachverfolgt, ohne an einen Gottesdienst gebunden zu sein.
 
-## Ihre Anwesenheitsstruktur einrichten
+## Einrichten Ihrer Anwesenheitsstruktur
 
 1. Öffnen Sie **B1 Admin** und klicken Sie auf **Anwesenheit** in der Seitenleiste.
-2. Wählen Sie den Tab **Einrichtung**.
-3. Klicken Sie auf **Standort hinzufügen** und geben Sie den Namen Ihres Standorts ein. Klicken Sie auf **Speichern**.
-4. Wählen Sie Ihren Standort aus und klicken Sie auf **Gottesdienstzeit hinzufügen**. Geben Sie einen Namen wie „Sonntag 9:00 Uhr" ein und klicken Sie auf **Speichern**.
-5. Wiederholen Sie dies für jede Gottesdienstzeit an diesem Standort.
-6. Um eine Gruppe einer Gottesdienstzeit zuzuordnen, wählen Sie die Gottesdienstzeit aus und klicken Sie auf **Gruppe hinzufügen**. Wählen Sie die Gruppe aus der Liste und klicken Sie auf **Speichern**.
+2. Wählen Sie die Registerkarte **Setup**.
+3. Klicken Sie auf **Standort hinzufügen** und geben Sie den Namen Ihres Ortes ein. Klicken Sie auf **Speichern**.
+4. Klicken Sie bei ausgewähltem Standort auf **Gottesdienst hinzufügen**. Geben Sie einen Namen wie "Sonntag 9:00 Uhr" ein und klicken Sie auf **Speichern**.
+5. Wiederholen Sie dies für jeden Gottesdienst an diesem Standort.
+6. Um eine Gruppe einem Gottesdienst zuzuweisen, wählen Sie den Gottesdienst und klicken Sie auf **Gruppe hinzufügen**. Wählen Sie die Gruppe aus der Liste und klicken Sie auf **Speichern**.
 
-### Anwesenheitserfassung für eine Gruppe aktivieren
+### Anwesenheitsverfolgung für eine Gruppe aktivieren
 
-Bevor für eine Gruppe Anwesenheit erfasst werden kann, muss die Anwesenheitserfassung für diese Gruppe aktiviert sein.
+Bevor für eine Gruppe Anwesenheit erfasst werden kann, muss "Anwesenheit verfolgen" für diese Gruppe aktiviert werden.
 
-1. Klicken Sie auf **Gruppen** in der Seitenleiste und wählen Sie die Gruppe aus.
+1. Klicken Sie in der Seitenleiste auf **Gruppen** und wählen Sie die Gruppe.
 2. Klicken Sie auf das **Bearbeiten**-Stiftsymbol.
-3. Setzen Sie **Anwesenheit erfassen** auf **Ja**.
+3. Stellen Sie **Anwesenheit verfolgen** auf **Ja**.
 4. Klicken Sie auf **Speichern**.
 
 :::tip
-Wenn Sie die Gruppe im vorherigen Schritt einer Gottesdienstzeit zugeordnet haben, verwenden Sie auch die Option **Gottesdienstzeit hinzufügen** auf dem Bearbeitungsbildschirm der Gruppe, um sie mit dem richtigen Gottesdienst zu verknüpfen. Dies stellt sicher, dass Sitzungen mit dem richtigen Standort und der richtigen Zeit verbunden sind.
+Wenn Sie die Gruppe im vorherigen Schritt einem Gottesdienst zugewiesen haben, verwenden Sie auch die Option **Gottesdienst hinzufügen** auf dem Bearbeitungsbildschirm der Gruppe, um sie mit dem richtigen Gottesdienst zu verknüpfen. Dies stellt sicher, dass Sitzungen mit dem richtigen Standort und der richtigen Zeit verbunden sind.
 :::
 
 :::tip
-Wenn eine Gruppe außerhalb eines regulären Gottesdienstes zusammenkommt -- wie eine Kleingruppe unter der Woche, die ihre eigene Anwesenheit erfasst -- können Sie sie als ungeplante Gruppe belassen. Sie erscheint weiterhin auf dem Gruppen-Tab für die Anwesenheitsberichterstattung.
+Wenn sich eine Gruppe außerhalb eines regulären Gottesdiensts trifft — wie eine Kleingruppe unter der Woche, die ihre eigene Anwesenheit nachverfolgt — können Sie sie als ungeplante Gruppe belassen. Sie wird immer noch auf der Registerkarte "Gruppen" für die Anwesenheitsberichterstattung angezeigt.
 :::
 
-## Ihre Einrichtung bearbeiten
+## Bearbeiten Ihres Setups
 
-Sie können Ihre Einrichtung jederzeit aktualisieren. Wählen Sie einen Standort, eine Gottesdienstzeit oder eine Gruppe aus und klicken Sie auf **Bearbeiten**, um Details zu ändern, oder auf **Löschen**, um sie zu entfernen.
+Sie können Ihr Setup jederzeit aktualisieren. Wählen Sie einen Standort, Gottesdienst oder eine Gruppe und klicken Sie auf **Bearbeiten**, um die Details zu ändern, oder auf **Löschen**, um ihn zu entfernen.
 
 :::info
-Das Entfernen einer Gottesdienstzeit löscht keine vergangenen Anwesenheitsdaten. Ihre historischen Daten bleiben erhalten, auch wenn Sie Ihren Zeitplan ändern.
+Das Entfernen eines Gottesdiensts löscht keine vergangenen Anwesenheitsdatensätze. Ihre historischen Daten bleiben erhalten, auch wenn Sie Ihren Plan ändern.
 :::
 
-## Wie geht es weiter
+## Was kommt danach
 
-Sobald Ihre Standorte, Gottesdienstzeiten und Gruppen eingerichtet sind, können Sie mit der manuellen [Anwesenheitserfassung](recording-attendance.md) beginnen oder den [Self-Check-in](check-in.md) für Ihre Gottesdienste einrichten.
+Sobald Ihre Standorte, Gottesdienste und Gruppen vorhanden sind, können Sie mit dem [Aufzeichnen von Anwesenheit](recording-attendance.md) oder dem Einrichten von [Selbstanmeldung](check-in.md) für Ihre Gottesdienste beginnen.

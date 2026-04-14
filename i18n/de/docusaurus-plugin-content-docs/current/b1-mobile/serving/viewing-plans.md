@@ -1,12 +1,12 @@
 ---
-title: "Plaene ansehen"
+title: "Pläne anzeigen"
 ---
 
-# Plaene ansehen
+# Pläne anzeigen
 
 <div class="article-intro">
 
-Der Plaene-Bildschirm in B1 Mobile gibt Ihnen einen vollstaendigen Ueberblick ueber Ihren Dienstplan. Er ist in zwei Tabs organisiert, damit Sie schnell Ihren naechsten Einsatz finden oder Ihre Diensthistorie einsehen koennen.
+Der Bildschirm "Pläne" in B1 Mobile bietet Ihnen einen vollständigen Überblick über Ihren Service-Plan. Er ist in zwei Registerkarten organisiert, damit Sie schnell Ihre nächste Zuweisung finden oder auf Ihre Service-Historien zurückblicken können.
 
 </div>
 
@@ -14,43 +14,52 @@ Der Plaene-Bildschirm in B1 Mobile gibt Ihnen einen vollstaendigen Ueberblick ue
 <h4>Bevor Sie beginnen</h4>
 
 - [Installieren Sie B1 Mobile](../getting-started/installing) und [melden Sie sich an](../getting-started/logging-in) bei Ihrem Konto
-- Seien Sie mindestens einem Dienstplan durch Ihren Gemeindeadministrator zugewiesen
+- Seien Sie mindestens einem Service-Plan von Ihrem Kirchenadministrator zugewiesen
 
 </div>
 
-## Auf Ihre Plaene zugreifen
+## Zugriff auf Ihre Pläne
 
-1. Tippen Sie auf **Dienst** in der unteren Navigation.
-2. Der Plaene-Bildschirm oeffnet sich mit zwei Tabs oben: **Bevorstehend** und **Vergangen**.
+1. Tippen Sie auf **Serving** in der unteren Navigation.
+2. Der Bildschirm "Pläne" öffnet sich mit zwei Registerkarten oben: **Upcoming** und **Past**.
 
-## Der Bevorstehend-Tab
+## Die Registerkarte "Bevorstehend"
 
-Der **Bevorstehend**-Tab ist Ihre erste Anlaufstelle fuer alles, was als Naechstes kommt. Oben sehen Sie eine Hero-Karte, die Ihren naechsten Einsatz hervorhebt, einschliesslich Planname, Datum und Ihrer Position. So wissen Sie auf einen Blick, wann Sie gebraucht werden.
+Die Registerkarte **Bevorstehend** ist Ihre Anlaufstelle für das, was als nächstes kommt. Oben sehen Sie eine Hero-Karte, die Ihre nächste Zuweisung hervorhebt, einschließlich des Plan-Namens, des Datums und Ihrer Position. Dies erleichtert es zu wissen, wann Sie auf einen Blick benötigt werden.
 
-Unter der Hero-Karte finden Sie eine Reihe von Zusammenfassungsstatistiken, die zeigen, wie viele Ihrer Zuweisungen in welchem Status sind:
+Unter der Hero-Karte finden Sie einen Satz von Zusammenfassungs-Statistiken, die anzeigen, wie viele Ihrer Zuweisungen in jedem Status sind:
 
-- **Angefragt** -- Sie wurden gebeten mitzuwirken, haben aber noch nicht geantwortet.
-- **Bestaetigt** -- Sie haben die Zuweisung angenommen.
-- **Ausstehend** -- Die Zuweisung wartet auf weitere Massnahmen.
+- **Angefordert** -- Sie wurden gebeten zu servieren, haben aber noch nicht geantwortet.
+- **Bestätigt** -- Sie haben die Zuweisung akzeptiert.
+- **Ausstehend** -- Die Zuweisung wartet auf weitere Maßnahmen.
 
-Weiter unten auf dem Bildschirm listet eine Tabelle alle Ihre bevorstehenden Dienstzeiten mit Datum, Position und Status auf.
+Weiter unten auf dem Bildschirm listet eine Tabelle alle Ihre bevorstehenden Service-Zeiten mit ihren Daten, Positionen und Status auf.
 
-## Der Vergangen-Tab
+## Die Registerkarte "Vergangenheit"
 
-Tippen Sie auf den **Vergangen**-Tab, um zu Ihrer Diensthistorie zu wechseln. Diese Ansicht zeigt alle Plaene, bei denen Sie zuvor mitgewirkt haben, in umgekehrter chronologischer Reihenfolge. Es ist eine grossartige Moeglichkeit, Ihre Beitraege ueber die Zeit nachzuverfolgen.
+Tippen Sie auf die Registerkarte **Vergangenheit**, um zu Ihrer Service-Historien zu wechseln. Diese Ansicht zeigt alle Pläne, die Sie bereits gedient haben, in umgekehrter chronologischer Reihenfolge aufgelistet. Es ist eine großartige Möglichkeit, Ihre Beiträge im Laufe der Zeit zu verfolgen.
 
-## Plandetails ansehen
+## Anzeigen von Plan-Details
 
-Tippen Sie auf einen beliebigen Plan -- ob bevorstehend oder vergangen --, um seine vollstaendigen Details zu oeffnen. Die Detailansicht umfasst:
+Tippen Sie auf einen beliebigen Plan -- ob bevorstehend oder vergangen -- um seine vollständigen Details zu öffnen. Die Detail-Ansicht enthält:
 
-- **Gottesdienstablauf** -- Der vollstaendige Ablauf des Gottesdienstes mit Zeitangaben und Details zu den einzelnen Elementen, damit Sie den Ablauf des Gottesdienstes sehen koennen.
-- **Ihre Zuweisung** -- Ihre Position, die Zeit, zu der Sie gebraucht werden, und Ihr aktueller Status.
-- **Teamzuweisungen** -- Eine Uebersicht aller Personen, die im Plan mitwirken, sodass Sie sehen koennen, wer sonst noch im Team ist.
+- **Service-Reihenfolge** -- Die vollständige Reihenfolge des Service mit Timing und Element-Details, damit Sie den Fluss des Service sehen können.
+- **Ihre Zuweisung** -- Ihre Position, die Zeit, die Sie benötigt werden, und Ihr aktueller Status.
+- **Team-Zuweisungen** -- Eine Zusammenfassung aller, die im Plan dienen, sodass Sie sehen können, wer sonst noch im Team ist.
+
+## Drucken von Plänen
+
+Sie können die Details eines Plans für die Offline-Referenz drucken. Verwenden Sie aus der Plan-Detail-Ansicht die Option **Drucken**, um eine druckbare Version der Service-Reihenfolge und Zuweisungen zu generieren. Dies ist hilfreich für Proben, Bühnen-Referenzen oder zum Teilen mit Teammitgliedern, die eine Papierkopie bevorzugen.
 
 :::tip
-Pruefen Sie den **Bevorstehend**-Tab regelmaessig, um Ihren Zeitplan im Blick zu behalten. Die Hero-Karte zeigt immer Ihren naechsten Einsatz, sodass Sie die App oeffnen und sofort wissen, wann Sie als Naechstes dienen.
+Überprüfen Sie die Registerkarte **Bevorstehend** regelmäßig, um Ihren Plan im Auge zu behalten. Die Hero-Karte zeigt immer Ihre nächste Verpflichtung, sodass Sie die App öffnen und sofort wissen können, wann Sie als nächstes dienen.
 :::
 
 :::info
-Sie erhalten [Push-Benachrichtigungen](../community/notifications.md), wenn Sie einem neuen Plan zugewiesen werden oder sich der Status Ihrer Zuweisung aendert, damit Sie kein Update verpassen.
+Sie erhalten [Push-Benachrichtigungen](../community/notifications.md), wenn Sie einem neuen Plan zugewiesen werden oder wenn sich Ihr Zuweisungsstatus ändert, sodass Sie kein Update verpassen.
 :::
+
+## Verwandte Artikel
+
+- [Freiwilligenanmeldung](./volunteer-signup) -- Durchsuchen und melden Sie sich für offene Freiwilligenposonen an
+

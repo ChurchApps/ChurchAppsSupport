@@ -6,77 +6,93 @@ title: "Segurança de Dados"
 
 <div class="article-intro">
 
-Embora não exista um sistema perfeitamente seguro, o ChurchApps leva a segurança de dados a sério. Esta página explica as medidas tomadas para proteger todos os dados inseridos no B1.church Admin e outros produtos ChurchApps.
+Embora não exista tal coisa como um sistema perfeitamente seguro, ChurchApps leva segurança de dados a sério. Esta página explica as medidas tomadas para proteger todos os dados inseridos no B1.church Admin e outros produtos da ChurchApps.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de começar</h4>
+<h4>Antes de Começar</h4>
 
-- Revise esta página para entender como os dados da sua igreja são protegidos
+- Revise esta página para entender como os dados de sua igreja são protegidos
 - Configure [Funções e Permissões](./roles-permissions.md) para controlar quem pode acessar informações sensíveis
-- Familiarize-se com a [política de privacidade](https://churchapps.org/privacy)
+- Familiarize-se com nossa [política de privacidade](https://churchapps.org/privacy)
 
 </div>
 
-## Limitação de dados sensíveis armazenados
+## Limitando Dados Sensíveis Armazenados
 
-Nossa primeira abordagem é não armazenar mais dados sensíveis do que o necessário. Isso significa nunca armazenar detalhes de cartão de crédito ou conta bancária usados para doações. Quando um usuário faz uma doação usando o B1.church Admin ou o B1, os dados do cartão de crédito nunca são transmitidos para nenhum dos nossos servidores, apenas para o seu gateway de pagamento (Stripe). Isso significa que, no caso de uma violação de dados, nenhum dado de cartão de crédito ou bancário seria comprometido.
+Nossa primeira abordagem é não armazenar mais dados sensíveis do que o necessário. Isso significa nunca armazenar qualquer detalhe de cartão de crédito ou conta bancária usado para fazer doações. Quando um usuário faz uma doação usando B1.church Admin ou B1, os dados do cartão de crédito nunca são transmitidos para nenhum de nossos servidores, apenas seu gateway de pagamento (Stripe). Isso significa na eventualidade de uma violação de dados, nenhuma informação de cartão de crédito ou banco seria comprometida.
 
-Também nunca armazenamos senhas em nosso sistema. Todas as senhas são processadas por meio de um algoritmo de hashing unidirecional no qual parte dos dados é destruída, tornando impossível para qualquer pessoa recuperar senhas do banco de dados, mesmo para nós. Para verificar senhas, o valor inserido deve passar pelo mesmo hash unidirecional e produzir o mesmo resultado.
+Nós também nunca armazenamos senhas em nosso sistema. Todas as senhas são processadas através de um algoritmo de hashing unidirecional em que alguns dos dados são destruídos, tornando impossível para qualquer pessoa recuperar senhas do banco de dados, até mesmo para nós. Para verificar senhas, o valor inserido deve passar através do mesmo hash unidirecional e produzir o mesmo resultado.
 
-Após remover essas duas fontes, os únicos dados sensíveis que permanecem são uma lista de nomes e informações de contato.
+Depois de remover essas duas fontes o único dado sensível que permanece é uma lista de nomes e informações de contato.
 
 :::tip
-Como o ChurchApps nunca armazena informações de cartão de crédito ou bancárias, mesmo no pior cenário, uma violação de dados não exporia detalhes de contas financeiras. Apenas nomes e informações de contato estariam em risco.
+Como ChurchApps nunca armazena informações de cartão de crédito ou banco, até mesmo uma violação de dados no pior caso não exporia detalhes de contas financeiras. Apenas nomes e informações de contato estariam em risco.
 :::
 
-## Uso de melhores práticas padrão
+## Usando Boas Práticas Padrão
 
-Usamos as melhores práticas padrão do setor para segurança, incluindo a criptografia de todos os dados em trânsito de e para nossos servidores usando HTTPS. Todos os servidores são hospedados em um datacenter físico seguro com a Amazon Web Services. Todos os servidores de banco de dados estão armazenados atrás de um firewall e são inacessíveis pela Internet.
+Usamos as melhores práticas padrão da indústria para segurança, incluindo criptografar todos os dados em trânsito para e dos nossos servidores usando HTTPS. Todos os servidores estão hospedados em um centro de dados físico seguro com Amazon Web Services. Todos os servidores de banco de dados são armazenados atrás de um firewall e não são acessíveis da Internet.
 
-## Segregação de dados
+## Segregação de Dados
 
-Os dados são separados em diferentes bancos de dados com base no escopo. Cada uma das nossas APIs (Membership, Giving, Attendance, Messaging, Doing e Lessons) são silos independentes de dados com seus próprios bancos de dados. Se um deles for comprometido, a utilidade dos dados é limitada sem que outros também sejam comprometidos. Por exemplo, se a API/banco de dados Giving fosse comprometido, um agente malicioso poderia potencialmente obter acesso a uma lista de doações e datas (mas nunca dados de cartão/banco). No entanto, não teria acesso a quais usuários fizeram as doações ou para quais igrejas, pois esses dados são armazenados no banco de dados separado Membership.
+Dados são separados em diferentes bancos de dados baseados em escopo. Cada uma de nossas APIs (Membership, Giving, Attendance, Messaging, Doing e Lessons) são silos independentes de dados com seus próprios bancos de dados. Se um deles é comprometido, a utilidade dos dados é limitada sem que outros também sejam comprometidos. Por exemplo, se o banco de dados de API/Giving fosse comprometido, um ator mal-intencionado poderia potencialmente ganhar acesso a uma lista de doações e datas (mas nunca dados de cartão/banco). No entanto, eles não teriam acesso a quais usuários fizeram as doações ou para quais igrejas elas eram já que aquele dado é armazenado no banco de dados de Membership separado.
 
 :::info
-A segregação de dados significa que comprometer um sistema não dá acesso a todos os dados da igreja. Cada API opera independentemente com seu próprio banco de dados, limitando o impacto de qualquer violação potencial.
+Segregação de dados significa que comprometer um sistema não dá acesso a todos os dados da igreja. Cada API opera independentemente com seu próprio banco de dados, limitando o impacto de qualquer violação potencial.
 :::
 
-## Acesso limitado
+## Acesso Limitado
 
-O acesso aos servidores de produção é estritamente limitado aos administradores de servidor que necessitam de acesso. Atualmente, são duas pessoas que também são membros do conselho. Desenvolvedores, voluntários e outros membros do conselho não têm permissão para acessar os servidores de produção.
+Acesso aos servidores de produção é estritamente limitado aos administradores de servidor que requerem acesso. Isso é atualmente dois indivíduos que também são membros do conselho. Desenvolvedores, voluntários e outros membros do conselho não têm permissão para acesso aos servidores de produção.
 
-## Política de privacidade
+## Política de Privacidade
 
 Seus dados são seus e nunca serão vendidos a terceiros. Você pode ler nossa política de privacidade completa [aqui](https://churchapps.org/privacy).
 
-## Conformidade com o GDPR
+## Conformidade GDPR
 
-O ChurchApps oferece suporte à conformidade com o GDPR para igrejas com membros no Reino Unido ou na União Europeia. Veja como abordamos os principais requisitos:
+ChurchApps suporta conformidade GDPR para igrejas com membros no Reino Unido ou União Europeia. Aqui está como abordamos os requisitos-chave:
 
-### Direitos do Titular dos Dados
+### Direitos de Sujeito de Dados
 
-O ChurchApps fornece ferramentas para ajudar as igrejas a responder às solicitações dos titulares de dados:
+ChurchApps fornece ferramentas para ajudar igrejas a responder a solicitações de sujeitos de dados:
 
-- **Direito de Acesso (Artigo 15)** — Os membros podem baixar todos os seus dados pessoais pelo portal do membro usando o botão "Baixar Meus Dados". Os administradores também podem exportar os dados de qualquer pessoa a partir da página de detalhes da pessoa.
-- **Direito à Eliminação (Artigo 17)** — Os membros podem excluir sua própria conta pelo portal do membro. Os administradores podem anonimizar ou excluir permanentemente os dados de uma pessoa em todos os módulos. A anonimização substitui as informações pessoais por valores genéricos, preservando os registros agregados (totais de doações, contagens de frequência) necessários para os relatórios financeiros da igreja.
-- **Direito à Limitação do Tratamento (Artigo 18)** — Os membros podem restringir o processamento de seus dados, incluindo a desativação de comunicações.
-- **Direito à Portabilidade dos Dados (Artigo 20)** — O recurso de exportação de dados fornece todos os dados pessoais em um formato JSON estruturado e legível por máquina.
+- **Right of Access (Article 15)** — Membros podem solicitar uma cópia de seus dados pessoais contacting sua iglesia. Administradores podem exportar dados de qualquer pessoa da seção **Data Management** na página de detalhe de pessoa no B1.church Admin.
+- **Right to Erasure (Article 17)** — Membros podem solicitar deletação de conta contacting sua iglesia. Administradores podem anonimizar dados de uma pessoa em todos os módulos da seção **Data Management** na página de detalhe de pessoa. Anonimização substitui informação pessoal com valores genéricos enquanto preserva registros agregados (totais de doação, contagens de presença) necessários para relatório financeiro de igre ja.
+- **Right to Restriction (Article 18)** — Membros podem solicitar restrição de processamento contacting sua iglesia, incluindo exclusão de comunicações.
+- **Right to Data Portability (Article 20)** — Administradores podem exportar dados pessoais em um formato JSON estruturado, legível por máquina em nome de membros que solicitam.
+
+### Usando Ferramentas de Gerenciamento de Dados
+
+Para acessar ferramentas GDPR para um indivíduo:
+
+1. Vá até **People** no B1 Admin e abra o registro da pessoa.
+2. Clique em **Edit** para entrar em modo de edição.
+3. Role para baixo até a seção **Data Management** (colapsada por padrão) e clique para expandi-la.
+4. Use **Export Data** para baixar um arquivo JSON de todos os dados armazenados para aquela pessoa.
+5. Use **Anonymize** para substituir informação pessoal com valores genéricos. Você será solicitado a digitar `ANONYMIZE` para confirmar — esta ação não pode ser desfeita.
+
+:::warning
+Anonimização é permanente. Totais de doação e contagens de presença são preservados para fins de relatório financeiro, mas todos os identificadores pessoais (nome, email, endereço, etc.) são removidos e não podem ser recuperados.
+:::
 
 ### Processamento de Dados
 
-O ChurchApps atua como **processador de dados** em nome da sua igreja (o **controlador de dados**). Nosso [Acordo de Processamento de Dados](https://churchapps.org/terms) descreve as responsabilidades de cada parte, incluindo o uso de subprocessadores, procedimentos de notificação de violação e tratamento de dados na rescisão.
+ChurchApps atua como um **processador de dados** em nome de sua chiesa (o **controlador de dados**). Nosso [Data Processing Agreement](https://churchapps.org/terms) delineia as responsabilidades de cada parte, incluindo uso de subprocessadores, procedimentos de notificação de violação e manipulação de dados após encerramento.
 
 ### Transferências Internacionais de Dados
 
-Os dados do ChurchApps são hospedados na Amazon Web Services (AWS) nos Estados Unidos. As transferências internacionais de dados do Reino Unido/UE são cobertas pelas Cláusulas Contratuais Padrão (SCCs) da AWS sob o [Adendo de Processamento de Dados da AWS](https://aws.amazon.com/compliance/data-processing-addendum/). A hospedagem baseada na UE não é necessária quando mecanismos de transferência apropriados como SCCs estão em vigor.
+Os dados de ChurchApps estão hospedados na Amazon Web Services (AWS) nos Estados Unidos. Transferências de dados internacionais do Reino Unido/UE são cobertas pelas Cláusulas Contratuais Padrão da AWS (SCCs) sob o [AWS Data Processing Addendum](https://aws.amazon.com/compliance/data-processing-addendum/). O AWS DPA é automaticamente incorporado nos AWS Service Terms para todos os clientes. Hospedagem baseada em EU não é necessária quando mecanismos de transferência apropriados como SCCs estão em vigor.
+
+Para detalhes sobre como riscos de transferência foram avaliados, veja a [Transfer Risk Assessment](./transfer-risk-assessment.md).
 
 ### Subprocessadores
 
 - **Amazon Web Services (AWS)** — Hospedagem de infraestrutura, armazenamento de dados e entrega de conteúdo
-- **Stripe** — Processamento de pagamentos para doações (nenhum dado de cartão é armazenado pelo ChurchApps)
+- **Stripe** — Processamento de pagamento para doações (nenhum dado de cartão é armazenado por ChurchApps)
 
 :::info
-Para detalhes completos sobre como tratamos os dados pessoais, consulte nossa [Política de Privacidade](https://churchapps.org/privacy) e os [Termos de Serviço](https://churchapps.org/terms). Se você tiver dúvidas sobre a conformidade com o GDPR, entre em contato conosco em support@churchapps.org.
+Para detalhes completos sobre como manipulamos dados pessoais, veja nossa [Privacy Policy](https://churchapps.org/privacy) e [Terms of Service](https://churchapps.org/terms). Se você tem questões sobre conformidade GDPR, contact-nos em support@churchapps.org.
 :::

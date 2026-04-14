@@ -1,69 +1,70 @@
 ---
-title: "Ersteinrichtung"
+title: "Initial Setup"
 ---
 
-# Ersteinrichtung
+# Initial Setup
 
 <div class="article-intro">
 
-Nach der Erstellung Ihres Kontos und Ihrer Gemeinde gibt es einige wichtige Schritte zu konfigurieren, bevor Sie Ihr Team einladen. Diese Anleitung fuehrt Sie durch die empfohlene Einrichtungsreihenfolge, damit Ihre Gemeinde von Anfang an startklar ist.
+Nach dem Erstellen Ihres Kontos und Ihrer Kirche gibt es einige wichtige Schritte zum Konfigurieren, bevor Sie Ihr Team einladen. Dieses Anleitung führt Sie durch die empfohlene Setup-Reihenfolge, damit Ihre Kirche von Tag eins an einsatzbereit ist.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- [Erstellen Sie Ihr Konto](./create-account.md) und registrieren Sie Ihre Gemeinde
-- Halten Sie Ihr Gemeinde-Logo und Branding-Materialien bereit (optional, aber empfohlen)
+- [Erstellen Sie Ihr Konto](./create-account.md) und registrieren Sie Ihre Kirche
+- Haben Sie Ihr Kirchenlogo und Branding-Assets bereit (optional, aber empfohlen)
 
 </div>
 
-## Schritt 1: Gemeindeinformationen konfigurieren
+## Schritt 1: Konfigurieren Sie Ihre Kircheninformationen
 
-1. Navigieren Sie zu **Settings** in der linken Seitenleiste.
-2. Klicken Sie auf **Edit Settings**.
-3. Geben Sie den **Namen**, die **Adresse** und die **Kontaktdaten** Ihrer Gemeinde ein.
-4. Klicken Sie auf **Save**, um Ihre Aenderungen zu uebernehmen.
+1. Navigieren Sie zu **Einstellungen** in der linken Seitenleiste.
+2. Klicken Sie auf **Einstellungen bearbeiten**.
+3. Geben Sie Ihren Kirchen **Namen**, **Adresse** und **Kontaktdetails** ein.
+4. Klicken Sie auf **Speichern**, um Ihre Änderungen anzuwenden.
 
-## Schritt 2: Branding einrichten
+## Schritt 2: Richten Sie Ihr Branding auf
 
-1. Laden Sie auf der Seite **Settings** Ihr **Gemeinde-Logo** hoch.
-2. Konfigurieren Sie zusaetzliche Branding-Optionen wie Farben und Bilder.
-3. Ihr Branding erscheint auf Ihrer B1.church-Website und in der B1 Mobile App.
+1. Navigieren Sie vom **Dashboard** zu **Website**, wählen Sie dann **Aussehen** aus.
+2. Laden Sie Ihr **Kirchenlogo** hoch.
+3. Konfigurieren Sie alle zusätzlichen Branding-Optionen wie Farben und Bilder.
+4. Ihr Branding wird auf Ihrer B1.church-Website und in der B1 Mobile-App angezeigt.
 
 :::tip
-Wenn Ihr Logo und Branding bereit sind, bevor Sie Teammitglieder einladen, hinterlassen Sie einen professionellen ersten Eindruck, wenn diese sich anmelden.
+Wenn Sie Ihr Logo und Branding bereit haben, bevor Sie Team-Mitglieder einladen, entsteht ein polierter erster Eindruck, wenn sie sich anmelden.
 :::
 
-## Schritt 3: Rollen konfigurieren und Team einladen
+## Schritt 3: Konfigurieren Sie Rollen und laden Sie Ihr Team ein
 
-1. Klicken Sie auf **Roles** auf der Seite **Settings**.
-2. Erstellen Sie Rollen fuer Ihr Team (zum Beispiel "Pastor", "Sekretaer/in", "Schatzmeister/in").
-3. Weisen Sie jeder Rolle die entsprechenden Berechtigungen zu.
-4. Fuegen Sie Teammitglieder hinzu, indem Sie nach deren Konten suchen und ihnen Rollen zuweisen.
+1. Klicken Sie auf der **Einstellungen**-Seite auf **Rollen**.
+2. Erstellen Sie Rollen für Ihr Team (zum Beispiel "Pastor", "Sekretär", "Schatzmeister").
+3. Weisen Sie der Rolle die angemessenen Berechtigungen zu.
+4. Fügen Sie Team-Mitglieder hinzu, indem Sie nach ihren Konten suchen und sie den Rollen zuweisen.
 
-## Schritt 4: Ihre Kernbereiche einrichten
+## Schritt 4: Richten Sie Ihre Schlüssel-Bereiche auf
 
-Mit Ihrem Team an Ort und Stelle beginnen Sie mit dem Aufbau der Kernbereiche von B1 Admin:
+Mit Ihrem Team an Ort beginnen Sie mit dem Aufbau der Kern-Bereiche von B1 Admin:
 
-1. **Personen** -- Fuegen Sie Mitglieder zu Ihrem Gemeindeverzeichnis hinzu. Dies ist die Grundlage fuer alles andere, beginnen Sie also hier. Sie koennen Personen manuell hinzufuegen oder das **Import**-Werkzeug unter **Settings** verwenden.
-2. **Gruppen** -- Erstellen Sie Gruppen fuer Kleingruppen, Dienstteams, Klassen und andere Zusammenkuenfte.
-3. **Anwesenheit** -- Konfigurieren Sie Ihre Standorte, Gottesdienste und Gottesdienstzeiten fuer die Anwesenheitserfassung.
-4. **Spenden** -- Richten Sie Spendenfonds ein und verbinden Sie Ihr Zahlungsgateway (Stripe), um Online-Spenden zu akzeptieren.
-5. **Website** -- Erstellen Sie Ihre oeffentliche Gemeinde-Website mit dem B1.church-Website-Builder.
+1. **Personen** -- Fügen Sie Mitglieder zu Ihrem Kirchenverzeichnis hinzu. Dies ist die Grundlage für alles andere, daher hier beginnen. Sie können Personen manuell hinzufügen oder das **Import**-Tool aus **Einstellungen** verwenden.
+2. **Gruppen** -- Erstellen Sie Gruppen für Minigemeinden, Ministerium-Teams, Klassen und andere Versammlungen.
+3. **Anwesenheit** -- Konfigurieren Sie Ihre Standorte, Gottesdienste und Gottesdienst-Zeiten zum Verfolgen der Anwesenheit.
+4. **Spenden** -- Richten Sie Spenden-Fonds ein und verbinden Sie Ihren Zahlungs-Gateway (Stripe), um Online-Spenden zu akzeptieren.
+5. **Website** -- Erstellen Sie Ihre öffentliche Kirchenwebsite mit dem B1.church-Website-Builder.
 
 :::info
-Sie muessen nicht jeden Bereich auf einmal einrichten. Viele Gemeinden beginnen mit **Personen** und **Gruppen** und fuegen dann **Anwesenheit** und **Spenden** hinzu, sobald sie mit der Plattform vertraut sind.
+Sie müssen nicht alle Bereiche auf einmal einrichten. Viele Kirchen beginnen mit **Personen** und **Gruppen**, fügen dann **Anwesenheit** und **Spenden** hinzu, wenn sie sich mit der Plattform vertraut machen.
 :::
 
 ## Empfohlene Reihenfolge
 
-Fuer die reibungsloseste Einrichtung empfehlen wir diese Reihenfolge:
+Für die reibungsloseste Setup-Erfahrung schlagen wir diese Reihenfolge vor:
 
-1. **Personen** -- Fuegen Sie zuerst Ihre Mitglieder und regelmaessigen Teilnehmer hinzu.
+1. **Personen** -- Fügen Sie zunächst Ihre Mitglieder und regelmäßigen Besucher hinzu.
 2. **Gruppen** -- Organisieren Sie Personen in sinnvolle Gruppen.
-3. **Anwesenheit** -- Beginnen Sie zu erfassen, wer jede Woche teilnimmt.
-4. **Spenden** -- Richten Sie das Spendenwesen ein, sobald Ihre Personen im System sind.
-5. **Website** -- Erstellen Sie Ihre oeffentliche Website zuletzt, nachdem Ihre Daten erfasst sind.
+3. **Anwesenheit** -- Beginnen Sie, zu verfolgen, wer jede Woche kommt.
+4. **Spenden** -- Richten Sie das Geben ein, sobald Ihre Personen im System sind.
+5. **Website** -- Bauen Sie Ihre öffentliche Website zuletzt auf, nachdem Ihre Daten vorhanden sind.
 
-Sobald Sie diese Schritte abgeschlossen haben, ist Ihre Gemeinde startklar. Erkunden Sie die [B1 Admin](/docs/b1-admin/)-Dokumentation fuer detaillierte Anleitungen zu jedem Bereich.
+Sobald Sie diese Schritte abgeschlossen haben, ist Ihre Kirche einsatzbereit. Erkunden Sie die [B1 Admin](/docs/b1-admin/)-Dokumentation für ausführliche Anleitungen für jeden Bereich.

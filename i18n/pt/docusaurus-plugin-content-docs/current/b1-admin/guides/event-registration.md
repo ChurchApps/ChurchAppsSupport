@@ -1,14 +1,18 @@
 ---
-title: "Guia: Configurar Inscrição em Eventos"
+title: "Guia: Configurar Registro de Evento"
 ---
 
-# Configurar Inscrição em Eventos
+# Configurar Registro de Evento
 
 <div class="article-intro">
 
-Crie um formulário de inscrição para eventos, colete informações dos participantes e pagamentos opcionais, incorpore-o no site da sua igreja e gerencie as inscrições conforme chegam. No final, você terá uma página de inscrição compartilhável para qualquer evento da igreja.
+Crie um formulário de registro de evento, colete informações de participantes e pagamentos opcionais, incorpore-o em seu site de igreja e gerencie submissões conforme chegam. No final, você terá uma página de registro compartilhável para qualquer evento da igreja.
 
 </div>
+
+:::info
+**Duas formas de lidar com registro de evento:** Este guia cobre **registro baseado em formulários**, que oferece controle total sobre campos personalizados e coleta de pagamento. Para eventos mais simples onde você só precisa rastrear quem está vindo, use **registro de evento nativo** incorporado no calendário -- veja [Criando Calendários](../calendars/creating-calendars.md#enabling-event-registration) para instruções de configuração. O registro nativo permite que membros se inscrevam diretamente do [site B1](../../b1-church/events/registering) e [aplicativo móvel](../../b1-mobile/events/registering) com rastreamento de capacidade, janelas de data e confirmações por email.
+:::
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
@@ -18,66 +22,66 @@ Crie um formulário de inscrição para eventos, colete informações dos partic
 
 </div>
 
-## Passo 1: Crie um Formulário Independente
+## Passo 1: Criar um Formulário Autônomo
 
-Formulários Independentes possuem sua própria URL pública que qualquer pessoa pode acessar — perfeito para inscrição em eventos.
+Formulários Autônomos têm sua própria URL pública que qualquer pessoa pode acessar — perfeito para registro de evento.
 
-Siga o guia [Criando Formulários](../forms/creating-forms.md) para:
+Siga o guia de [Criando Formulários](../forms/creating-forms.md) para:
 
-1. Navegue até Formulários e clique em Adicionar Formulário
-2. Escolha o tipo "Stand Alone" — isso dá ao seu formulário sua própria URL pública
-3. Nomeie-o com o nome do evento (ex.: "Inscrição Retiro Masculino", "Inscrição EBF")
+1. Navegue até Forms e clique em Add Form
+2. Escolha o tipo "Stand Alone" — isso oferece ao seu formulário sua própria URL pública
+3. Nomeie-o após o evento (ex., "Men's Retreat Registration", "VBS Sign-Up")
 
-## Passo 2: Adicione Perguntas
+## Passo 2: Adicionar Perguntas
 
-Monte os campos necessários para coletar informações dos inscritos.
+Construa os campos que você precisa coletar dos participantes.
 
-Siga o guia [Criando Formulários](../forms/creating-forms.md#adding-questions) para adicionar suas perguntas:
+Siga o guia de [Criando Formulários](../forms/creating-forms.md#adding-questions) para adicionar suas perguntas:
 
-1. Vá para a aba Perguntas e adicione campos para as informações necessárias: nome, e-mail, telefone, restrições alimentares, tamanho de camiseta, contato de emergência, etc.
-2. Use Múltipla Escolha para opções como preferências de refeição ou seleção de sessões
+1. Vá para a aba Questions e adicione campos para a informação que você precisa: nome, email, telefone, restrições dietéticas, tamanho de camiseta, contato de emergência, etc.
+2. Use Multiple Choice para opções como preferências de refeição ou seleções de sessão
 
 :::warning
-O tipo de campo Pagamento requer que o Stripe esteja configurado. Se você ainda não configurou as doações online, consulte [Configuração de Doações Online](../donations/online-giving-setup.md) antes de adicionar campos de pagamento.
+O tipo de campo Payment requer Stripe estar configurado. Se você ainda não configurou online giving, veja [Online Giving Setup](../donations/online-giving-setup.md) antes de adicionar campos de pagamento.
 :::
 
-## Passo 3: Configure as Definições do Formulário
+## Passo 3: Configurar Definições de Formulário
 
-Controle quando e como seu formulário de inscrição está disponível.
+Controle quando e como seu formulário de registro está disponível.
 
-1. Defina datas de disponibilidade se a inscrição deve estar aberta apenas por tempo limitado
+1. Defina datas de disponibilidade se o registro deve estar aberto apenas por tempo limitado
 2. Copie a URL pública — você pode compartilhá-la diretamente
-3. Adicione membros do formulário com funções de Admin ou Somente Visualização para ajudar a gerenciar as inscrições
+3. Adicione membros de formulário com funções Admin ou View Only para ajudar a gerenciar submissões
 
-## Passo 4: Incorpore no Seu Site
+## Passo 4: Incorporar no Seu Website
 
-Torne o formulário de inscrição fácil de encontrar adicionando-o ao site da sua igreja.
+Torne o formulário de registro fácil de encontrar adicionando-o ao seu site de igreja.
 
-Siga o guia [Gerenciando Páginas](../website/managing-pages.md) para:
+Siga o guia de [Managing Pages](../website/managing-pages.md) para:
 
-1. No editor do seu site B1, adicione uma nova seção a uma página e selecione o elemento Formulário
-2. Escolha seu formulário de inscrição da lista
+1. No editor de site B1, adicione uma nova seção a uma página e selecione o elemento Form
+2. Escolha seu formulário de registro da lista
 
 :::tip
-Compartilhe a URL independente também por e-mail, redes sociais e boletins da igreja — quanto mais lugares for visível, mais inscrições você receberá.
+Compartilhe a URL autônoma via email, mídia social e boletins da igreja também — quanto mais lugares estiver visível, mais inscrições você receberá.
 :::
 
-## Passo 5: Gerencie as Inscrições
+## Passo 5: Gerenciar Submissões
 
-Acompanhe as inscrições conforme chegam e exporte os dados quando precisar.
+Rastreie registros conforme chegam e exporte dados quando precisar.
 
-Siga o guia [Gerenciando Inscrições](../forms/managing-submissions.md) para:
+Siga o guia de [Managing Submissions](../forms/managing-submissions.md) para:
 
-1. Revise as respostas conforme chegam na aba Inscrições
-2. Exporte para CSV para planilhas, contagem de participantes ou compartilhamento com coordenadores do evento
+1. Revise respostas conforme chegam na aba Submissions
+2. Exporte para CSV para planilhas, rastreamento de contagem ou compartilhamento com coordenadores de evento
 
 ## Pronto!
 
-Sua inscrição para o evento está ativa. Compartilhe o link, incorpore-o no seu site e acompanhe as inscrições pelo B1 Admin. Quando o evento terminar, exporte a lista final para seus registros.
+Seu registro de evento está ativo. Compartilhe o link, incorpore-o em seu website e rastreie inscrições do B1 Admin. Quando o evento terminar, exporte a lista final para seus registros.
 
 ## Artigos Relacionados
 
-- [Criando Formulários](../forms/creating-forms.md) — crie formulários com diferentes tipos de campo
-- [Gerenciando Inscrições](../forms/managing-submissions.md) — revise e exporte respostas de formulários
-- [Gerenciando Páginas](../website/managing-pages.md) — incorpore formulários no seu site
-- [Configuração de Doações Online](../donations/online-giving-setup.md) — necessário para campos de pagamento
+- [Creating Forms](../forms/creating-forms.md) — construa formulários com diferentes tipos de campo
+- [Managing Submissions](../forms/managing-submissions.md) — revise e exporte respostas de formulário
+- [Managing Pages](../website/managing-pages.md) — incorpore formulários em seu website
+- [Online Giving Setup](../donations/online-giving-setup.md) — necessário para campos de pagamento

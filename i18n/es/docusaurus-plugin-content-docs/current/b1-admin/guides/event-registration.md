@@ -1,83 +1,87 @@
 ---
-title: "Guía: Configurar el registro de eventos"
+title: "Guía: Configuración del Registro de Eventos"
 ---
 
-# Configurar el registro de eventos
+# Configuración del Registro de Eventos
 
 <div class="article-intro">
 
-Crea un formulario de registro de eventos, recopila información de los asistentes y pagos opcionales, insértalo en el sitio web de tu iglesia y gestiona las respuestas a medida que lleguen. Al finalizar, tendrás una página de registro compartible para cualquier evento de la iglesia.
+Cree un formulario de registro de eventos, recopile información de asistentes y pagos opcionales, incrústelo en su sitio web de iglesia y gestione los envíos a medida que lleguen. Al final, tendrá una página de registro compartible para cualquier evento de iglesia.
 
 </div>
+
+:::info
+**Dos formas de manejar el registro de eventos:** Esta guía cubre el **registro basado en formularios**, que le brinda control total sobre campos personalizados y recopilación de pagos. Para eventos más simples donde solo necesita rastrear quién viene, use el **registro de eventos nativo** integrado en el calendario -- consulte [Creación de Calendarios](../calendars/creating-calendars.md#enabling-event-registration) para instrucciones de configuración. El registro nativo permite que los miembros se inscriban directamente desde el [sitio web B1](../../b1-church/events/registering) y la [aplicación móvil](../../b1-mobile/events/registering) con seguimiento de capacidad, ventanas de fecha y confirmaciones por correo electrónico.
+:::
 
 <div class="prereqs">
-<h4>Antes de comenzar</h4>
+<h4>Antes de Comenzar</h4>
 
-- Cuenta de B1 Admin con acceso de administrador
-- Para cobrar pagos: [Stripe debe estar configurado](../donations/online-giving-setup.md) primero
+- Cuenta B1 Admin con acceso administrativo
+- Para recopilar pagos: [Stripe debe estar configurado](../donations/online-giving-setup.md) primero
 
 </div>
 
-## Paso 1: Crear un formulario independiente
+## Paso 1: Crear un Formulario Independiente
 
-Los formularios independientes tienen su propia URL pública a la que cualquiera puede acceder — perfecto para el registro de eventos.
+Los formularios independientes tienen su propia URL pública que cualquiera puede acceder — perfecto para registro de eventos.
 
-Sigue la guía [Crear formularios](../forms/creating-forms.md) para:
+Siga la guía de [Creación de Formularios](../forms/creating-forms.md) para:
 
-1. Navegar a Formularios y hacer clic en Agregar formulario
-2. Elegir el tipo "Independiente" — esto le da a tu formulario su propia URL pública
-3. Nombrarlo según el evento (por ejemplo, "Registro del Retiro de Hombres", "Inscripción a la Escuela Bíblica de Vacaciones")
+1. Navegue a Formularios y haga clic en Agregar Formulario
+2. Elija el tipo "Independiente" — esto le da a su formulario su propia URL pública
+3. Nómbrelo según el evento (por ejemplo, "Registro del Retiro de Hombres", "Inscripción de VBS")
 
-## Paso 2: Agregar preguntas
+## Paso 2: Agregar Preguntas
 
-Construye los campos que necesitas recopilar de los participantes.
+Construya los campos que necesita para recopilar información de los inscritos.
 
-Sigue la guía [Crear formularios](../forms/creating-forms.md#agregar-preguntas) para agregar tus preguntas:
+Siga la guía de [Creación de Formularios](../forms/creating-forms.md#adding-questions) para agregar sus preguntas:
 
-1. Ve a la pestaña de Preguntas y agrega campos para la información que necesitas: nombre, correo electrónico, teléfono, restricciones alimentarias, talla de camiseta, contacto de emergencia, etc.
-2. Usa Opción múltiple para opciones como preferencias de comida o selección de sesiones
+1. Vaya a la pestaña de Preguntas y agregue campos para la información que necesita: nombre, correo electrónico, teléfono, restricciones dietéticas, tamaño de camiseta, contacto de emergencia, etc.
+2. Use Opción Múltiple para opciones como preferencias de comidas o selecciones de sesión
 
 :::warning
-El tipo de campo de Pago requiere que Stripe esté configurado. Si aún no has configurado las donaciones en línea, consulta [Configuración de donaciones en línea](../donations/online-giving-setup.md) antes de agregar campos de pago.
+El tipo de campo de Pago requiere que Stripe esté configurado. Si aún no ha configurado donaciones en línea, consulte [Configuración de Donaciones en Línea](../donations/online-giving-setup.md) antes de agregar campos de pago.
 :::
 
-## Paso 3: Configurar los ajustes del formulario
+## Paso 3: Configurar la Configuración del Formulario
 
-Controla cuándo y cómo tu formulario de registro está disponible.
+Controle cuándo y cómo está disponible su formulario de registro.
 
-1. Establece fechas de disponibilidad si el registro solo debe estar abierto por un tiempo limitado
-2. Copia la URL pública — puedes compartirla directamente
-3. Agrega miembros del formulario con roles de Administrador o Solo lectura para ayudar a gestionar las respuestas
+1. Establezca fechas de disponibilidad si el registro solo debe estar abierto durante un período limitado
+2. Copie la URL pública — puede compartirla directamente
+3. Agregue miembros del formulario con roles de Administrador o Solo Ver para ayudar a gestionar los envíos
 
-## Paso 4: Insertar en tu sitio web
+## Paso 4: Incrustar en Su Sitio Web
 
-Haz que el formulario de registro sea fácil de encontrar agregándolo al sitio web de tu iglesia.
+Facilite el acceso al formulario de registro agregándolo a su sitio web de iglesia.
 
-Sigue la guía [Gestionar páginas](../website/managing-pages.md) para:
+Siga la guía de [Gestión de Páginas](../website/managing-pages.md) para:
 
-1. En el editor de tu sitio web B1, agregar una nueva sección a una página y seleccionar el elemento de Formulario
-2. Elegir tu formulario de registro de la lista
+1. En el editor del sitio web B1, agregue una nueva sección a una página y seleccione el elemento Formulario
+2. Elija su formulario de registro de la lista
 
 :::tip
-Comparte también la URL independiente por correo electrónico, redes sociales y boletines de la iglesia — cuantos más lugares sea visible, más inscripciones obtendrás.
+Comparta la URL independiente por correo electrónico, redes sociales y boletines de la iglesia también — cuanto más lugares sea visible, más inscripciones obtendrá.
 :::
 
-## Paso 5: Gestionar las respuestas
+## Paso 5: Gestionar Envíos
 
-Rastrea los registros a medida que lleguen y exporta los datos cuando los necesites.
+Rastreee registros a medida que llegan y exporte datos cuando lo necesite.
 
-Sigue la guía [Gestionar respuestas](../forms/managing-submissions.md) para:
+Siga la guía de [Gestión de Envíos](../forms/managing-submissions.md) para:
 
-1. Revisar las respuestas a medida que lleguen en la pestaña de Respuestas
-2. Exportar a CSV para hojas de cálculo, seguimiento de asistentes o compartir con los coordinadores del evento
+1. Revise las respuestas a medida que lleguen en la pestaña Envíos
+2. Exporte a CSV para hojas de cálculo, seguimiento de asistencia o compartir con coordinadores de eventos
 
-## ¡Listo!
+## ¡Terminado!
 
-Tu registro de eventos está en línea. Comparte el enlace, insértalo en tu sitio web y rastrea las inscripciones desde B1 Admin. Cuando el evento termine, exporta la lista final para tus registros.
+Su registro de eventos está activo. Comparta el enlace, incrústelo en su sitio web y rastreee inscripciones desde B1 Admin. Cuando el evento termine, exporte la lista final para sus registros.
 
-## Artículos relacionados
+## Artículos Relacionados
 
-- [Crear formularios](../forms/creating-forms.md) — crear formularios con diferentes tipos de campos
-- [Gestionar respuestas](../forms/managing-submissions.md) — revisar y exportar respuestas de formularios
-- [Gestionar páginas](../website/managing-pages.md) — insertar formularios en tu sitio web
-- [Configuración de donaciones en línea](../donations/online-giving-setup.md) — requerido para campos de pago
+- [Creación de Formularios](../forms/creating-forms.md) — crear formularios con diferentes tipos de campos
+- [Gestión de Envíos](../forms/managing-submissions.md) — revisar y exportar respuestas de formularios
+- [Gestión de Páginas](../website/managing-pages.md) — incrustar formularios en su sitio web
+- [Configuración de Donaciones en Línea](../donations/online-giving-setup.md) — requerido para campos de pago

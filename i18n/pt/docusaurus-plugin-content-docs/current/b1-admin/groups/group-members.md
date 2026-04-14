@@ -1,72 +1,88 @@
 ---
-title: "Membros do grupo"
+title: "Membros do Grupo"
 ---
 
-# Membros do grupo
+# Membros do Grupo
 
 <div class="article-intro">
 
-Depois de criar um grupo, o proximo passo e adicionar membros. Na pagina de detalhes do grupo, voce pode pesquisar pessoas, adiciona-las ao grupo, designar lideres, enviar mensagens e exportar a lista de membros. Gerenciar a membresia do grupo e essencial para coordenar ministerios, pequenos grupos e equipes.
+Após criar um grupo, o próximo passo é adicionar membros. Da página de detalhes de um grupo você pode procurar por pessoas, adicioná-las ao grupo, designar líderes, enviar mensagens e exportar a lista de membros. Gerenciar a participação do grupo é essencial para coordenar pequenos grupos, comitês e classes.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de comecar</h4>
+<h4>Antes de Começar</h4>
 
-- Voce precisa de pelo menos um grupo configurado no B1 Admin. Veja [Criando grupos](creating-groups.md) se ainda nao criou um.
-- As pessoas que voce deseja adicionar ja devem existir no seu diretorio [People](../people/adding-people.md).
+- Você precisa de pelo menos um grupo configurado no B1 Admin. Veja [Criando Grupos](creating-groups.md) se você ainda não criou um.
+- As pessoas que você quer adicionar devem já existir em seu diretório de [People](../people/adding-people.md).
 
 </div>
 
-## Adicionando membros a um grupo
+## Adicionando Membros a um Grupo
 
-1. Navegue ate a pagina **Groups** e clique no grupo que deseja gerenciar.
+1. Navegue até a página **Groups** e clique no grupo que você quer gerenciar.
 2. Clique na aba **Members**.
-3. Na caixa de pesquisa, digite o nome da pessoa que deseja adicionar.
+3. Na caixa de pesquisa, digite o nome da pessoa que você quer adicionar.
 4. Clique em **Add** ao lado do nome da pessoa nos resultados da pesquisa.
 5. A pessoa agora aparece na lista de membros do grupo.
 
 :::tip
-Deixe a caixa de pesquisa em branco e clique em **Search** para navegar por todo o seu diretorio. Isso e util se voce nao tem certeza da grafia exata do nome de alguem.
+Deixe a caixa de pesquisa em branco e clique em **Search** para procurar em todo seu diretório. Isso é útil se você não tem certeza da grafia exata do nome de alguém.
 :::
 
-## Designando lideres do grupo
+## Designando Líderes de Grupo
 
-Os lideres do grupo tem privilegios especiais -- podem editar o [calendario do grupo](group-calendar.md), gerenciar eventos e ajudar a coordenar o grupo.
+Líderes de grupo têm privilégios especiais -- eles podem editar o [calendário do grupo](group-calendar.md), gerenciar eventos e ajudar a coordenar o grupo.
 
-1. Na lista de membros do grupo, encontre a pessoa que deseja tornar lider.
-2. Clique no **icone da chave verde** ao lado do nome dela.
-3. A pessoa agora esta designada como lider do grupo.
+1. Na lista de membros do grupo, encontre a pessoa que você quer fazer um líder.
+2. Clique no **ícone de chave verde** ao lado de seu nome.
+3. A pessoa agora é designada como um líder de grupo.
 
-Para remover o status de lider, clique no icone da chave verde novamente.
+Para remover o status de líder, clique novamente no ícone de chave verde.
 
 :::info
-Qualquer membro do grupo pode visualizar o calendario e os eventos do grupo, mas apenas lideres podem adicionar ou editar eventos do calendario.
+Qualquer membro do grupo pode visualizar o calendário do grupo e eventos, mas apenas líderes podem adicionar ou editar eventos de calendário.
 :::
 
-## Enviando mensagens aos membros do grupo
+## Enviando Mensagens para Membros do Grupo
 
-Voce pode se comunicar com todos os membros de um grupo diretamente do B1 Admin:
+Você pode se comunicar com todos os membros de um grupo diretamente do B1 Admin:
 
-1. Na pagina de detalhes do grupo, procure a area de mensagens.
+1. A partir da página de detalhes do grupo, procure pela área de mensagens.
 2. Digite sua mensagem na caixa de texto.
 3. Clique em **Send**.
 
-Sua mensagem sera entregue a todos os membros do grupo.
+Sua mensagem será entregue a todos os membros do grupo.
 
-## Exportando dados do grupo
+## Enviando Emails para Membros do Grupo
 
-Para baixar a lista de membros do grupo como arquivo:
+Você pode enviar emails formatados para todos os membros de um grupo:
 
-1. Na pagina de detalhes do grupo, clique no **icone de download**.
-2. Um arquivo CSV contendo as informacoes dos membros do grupo sera baixado para o seu computador.
+1. A partir da página de detalhes do grupo, clique no **ícone de email**.
+2. O diálogo Send Email abre, mostrando quantos membros receberão o email e quantos não têm endereço de email registrado.
+3. Opcionalmente selecione um **email template** no dropdown, ou componha uma mensagem do zero. Clique em **Manage Templates** para criar ou editar templates.
+4. Insira uma **subject line**. Você pode inserir campos de mesclagem clicando nos chips de campo: `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`.
+5. Componha o **corpo do email** usando o editor HTML. Os mesmos campos de mesclagem estão disponíveis aqui.
+6. Clique em **Send**.
+7. Um resumo mostra quantos emails foram enviados com sucesso e quantos membros foram pulados (sem email registrado).
 
-Isso e util para criar listas impressas, importar dados para outras ferramentas ou manter registros offline. Para mais opcoes de exportacao, veja [Exportando dados](../people/exporting-data.md).
+:::tip
+Crie templates de email reutilizáveis para comunicações recorrentes como atualizações semanais, anúncios de eventos ou pedidos de oração. Templates economizam tempo e garantem mensagens consistentes.
+:::
 
-## Removendo membros
+## Exportando Dados do Grupo
 
-Para remover alguem de um grupo, localize o nome da pessoa na lista de membros e clique no botao **remover** ao lado da entrada.
+Para baixar a lista de membros do grupo como um arquivo:
+
+1. A partir da página de detalhes do grupo, clique no **ícone de download**.
+2. Um arquivo CSV contendo a informação de membros do grupo será baixado para seu computador.
+
+Isso é útil para criar rosters impressos, importar dados em outras ferramentas ou manter registros offline. Para mais opções de exportação, veja [Exporting Data](../people/exporting-data.md).
+
+## Removendo Membros
+
+Para remover alguém de um grupo, localize seu nome na lista de membros e clique no botão **remove** ao lado de sua entrada.
 
 :::info
-Remover uma pessoa de um grupo nao a exclui do diretorio da sua igreja. Ela ainda aparecera na secao [People](../people/adding-people.md) e pode ser adicionada novamente ao grupo a qualquer momento.
+Remover uma pessoa de um grupo não a exclui de seu diretório da igreja. Ela ainda aparecerá na seção [People](../people/adding-people.md) e pode ser re-adicionada ao grupo a qualquer momento.
 :::

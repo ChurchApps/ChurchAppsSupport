@@ -1,74 +1,81 @@
 ---
-title: "Druckereinrichtung"
+title: "Drucker-Konfiguration"
 ---
 
-# Druckereinrichtung
+# Drucker-Konfiguration
 
 <div class="article-intro">
 
-B1 Church Checkin kann Namensetiketten und Abholscheine fuer Eltern auf einem Netzwerk-Etikettendrucker drucken. Die Einrichtung des Druckers ist optional -- Sie koennen die App auch ohne Drucker ausschliesslich zur Anwesenheitserfassung verwenden.
+B1 Church Checkin kann Namensetiketten und Abholscheine für Eltern auf einen Netzwerk-Etikett-Drucker drucken. Die Druckereinrichtung ist optional -- Sie können die App ohne Drucker nur zur Anwesenheitsverfolgung verwenden.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- [Melden Sie sich an](./logging-in) bei der B1 Church Checkin App und waehlen Sie Ihre Gemeinde
-- Verbinden Sie einen kompatiblen Netzwerk-Etikettendrucker mit demselben WLAN-Netzwerk wie das Tablet
+- [Melden Sie sich an](./logging-in) bei der B1 Church Checkin-App und wählen Sie Ihre Kirche
+- Verbinden Sie einen kompatiblen Netzwerk-Etikett-Drucker mit demselben Wi-Fi-Netz wie das Tablet
 
 </div>
 
-## Zugriff auf die Druckereinstellungen
+## Zugriff auf Druckereinstellungen
 
-Sie koennen den Druckereinstellungs-Bildschirm jederzeit oeffnen, indem Sie auf die **Drucker-Statusleiste** ganz oben am Bildschirm tippen. Diese schmale Leiste zeigt die App-Versionsnummer und den aktuellen Drucker-Verbindungsstatus an.
+Sie können den Bildschirm "Druckereinstellungen" jederzeit über das Menü **Admin-Einstellungen** öffnen:
 
-## Nach Druckern suchen
+1. Tippen Sie **sieben Mal** schnell hintereinander (innerhalb von zwei Sekunden) auf das **Kirchen-Logo** in der Kopfzeile.
+2. Wenn eine Kiosk-PIN gesetzt ist, geben Sie die PIN ein, wenn Sie dazu aufgefordert werden.
+3. Tippen Sie auf dem Admin-Einstellungsbildschirm auf **Drucker ändern**.
 
-Wenn der Druckereinstellungs-Bildschirm geoeffnet wird, durchsucht die App automatisch Ihr lokales Netzwerk nach kompatiblen Druckern. Sie sehen eine Ladeanzeige mit der Meldung "Scanning for printers", waehrend die Suche laeuft.
+Dies öffnet den Bildschirm "Druckereinstellungen", auf dem Sie nach Druckern scannen, einen auswählen und einen Testdruck ausführen können.
 
-Sobald die Suche abgeschlossen ist, sehen Sie eine Liste der gefundenen Drucker. Jede Druckerkarte zeigt:
+## Scannen nach Druckern
+
+Wenn der Bildschirm "Druckereinstellungen" geöffnet wird, scannt die App automatisch Ihr lokales Netz nach kompatiblen Druckern. Sie sehen einen Ladefindikator mit der Meldung "Scanning for printers" während der Scan läuft.
+
+Nachdem der Scan abgeschlossen ist, sehen Sie eine Liste der erkannten Drucker. Jede Druckerkarte zeigt:
 
 - Den **Druckermodell**-Namen
-- Die **IP-Adresse** des Druckers in Ihrem Netzwerk
+- Die **IP-Adresse** des Druckers in Ihrem Netz
 
-Eine **No Printer**-Option ist immer am Ende der Liste enthalten.
+Eine Option **Kein Drucker** ist immer am unteren Ende der Liste enthalten.
 
 :::warning
-Das Tablet und der Drucker muessen mit demselben lokalen Netzwerk verbunden sein, damit die Suche den Drucker finden kann. Wenn Ihr Drucker nicht angezeigt wird, ueberpruefen Sie, ob beide Geraete im selben WLAN-Netzwerk sind und ob der Drucker eingeschaltet ist.
+Das Tablet und der Drucker müssen mit demselben lokalen Netz verbunden sein, damit der Scan den Drucker findet. Wenn Ihr Drucker nicht angezeigt wird, überprüfen Sie, ob beide Geräte im gleichen Wi-Fi-Netz sind und der Drucker eingeschaltet ist.
 :::
 
-## Einen Drucker auswaehlen
+## Auswahl eines Druckers
 
-1. Tippen Sie auf den Drucker, den Sie verwenden moechten. Die ausgewaehlte Druckerkarte wird mit einem Haekchen hervorgehoben.
-2. Um ohne physischen Drucker zu drucken (zum Testen oder im reinen Anwesenheitsmodus), waehlen Sie **No Printer**.
+1. Tippen Sie auf den Drucker, den Sie verwenden möchten. Die ausgewählte Druckerkarte wird mit einem Häkchen hervorgehoben.
+2. Zum Drucken ohne physischen Drucker (zum Testen oder nur für Anwesenheitsmodus) wählen Sie **Kein Drucker**.
 
 ## Testdruck
 
-Bevor Sie Ihre Auswahl speichern, koennen Sie die Verbindung ueberpruefen:
+Bevor Sie Ihre Auswahl speichern, können Sie überprüfen, ob die Verbindung funktioniert:
 
-1. Waehlen Sie einen Drucker aus der Liste aus.
-2. Tippen Sie auf die Schaltflaeche **Test Print** am unteren Bildschirmrand.
-3. Die App sendet ein Testetikett an den Drucker. Wenn der Drucker ordnungsgemaess verbunden ist, wird eine Testseite gedruckt.
+1. Wählen Sie einen Drucker aus der Liste.
+2. Tippen Sie auf die Schaltfläche **Testdruck** am unteren Ende des Bildschirms.
+3. Die App sendet ein Test-Etikett an den Drucker. Wenn der Drucker ordnungsgemäß verbunden ist, wird eine Testseite gedruckt.
 
-Wenn Sie auf **Test Print** tippen, waehrend **No Printer** ausgewaehlt ist, zeigt die App einen Hinweis an, dass kein Drucker ausgewaehlt ist.
+Wenn Sie auf **Testdruck** tippen, während **Kein Drucker** ausgewählt ist, zeigt die App eine Warnung an, die Sie daran erinnert, dass kein Drucker ausgewählt ist.
 
 :::tip
-Fuehren Sie nach der Auswahl eines Druckers immer einen Testdruck durch, um die Verbindung vor dem naechsten Gottesdienst zu bestaetigen.
+Führen Sie nach der Auswahl eines Druckers immer einen Testdruck aus, um die Verbindung zu bestätigen, bevor Sie den nächsten Service haben.
 :::
 
-## Auswahl speichern
+## Speichern Sie Ihre Auswahl
 
 Wenn Sie mit Ihrer Druckerauswahl zufrieden sind:
 
-1. Tippen Sie auf die Schaltflaeche **Save & Restart** am unteren Bildschirmrand.
-2. Die App speichert Ihre Druckerauswahl und startet neu, um die Einstellungen zu uebernehmen.
+1. Tippen Sie auf die Schaltfläche **Speichern & Neustart** am unteren Ende des Bildschirms.
+2. Die App speichert Ihre Druckerauswahl und startet neu, um die Einstellungen anzuwenden.
 
-Ihre Druckerauswahl wird ueber App-Neustarts hinweg gespeichert. Sie muessen sie nicht erneut einrichten, es sei denn, Sie moechten den Drucker wechseln.
+Ihre Druckerauswahl wird über App-Neustarts hinweg beibehalten. Sie müssen es nicht erneut einrichten, es sei denn, Sie möchten Drucker wechseln.
 
 :::info
-Wenn Sie den Kiosk an einen anderen Standort verlegen oder Ihre Netzwerkeinrichtung aendern, kehren Sie zu den Druckereinstellungen zurueck, um erneut nach Druckern zu suchen und Ihre Auswahl zu aktualisieren.
+Wenn Sie den Kiosk an einen anderen Ort verschieben oder Ihr Netzwerk-Setup ändern, kehren Sie zu den Druckereinstellungen zurück, um erneut nach Druckern zu scannen und Ihre Auswahl zu aktualisieren.
 :::
 
-## Naechste Schritte
+## Nächste Schritte
 
-Mit konfiguriertem Drucker sind Sie bereit, mit dem Einchecken zu beginnen. Sehen Sie sich den [Check-in-Ablauf](../check-in/) an, um zu erfahren, wie der gesamte Prozess funktioniert, beginnend mit der [Gottesdienstauswahl](../check-in/selecting-service).
+Mit Ihrem Drucker konfiguriert sind Sie bereit, mit dem Einchecken zu beginnen. Siehe den [Check-in-Workflow](../check-in/), um zu erfahren, wie der vollständige Prozess funktioniert, beginnend mit dem [Auswählen eines Service](../check-in/selecting-service).
+

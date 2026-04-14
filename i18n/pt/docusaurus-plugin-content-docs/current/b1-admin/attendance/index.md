@@ -6,42 +6,42 @@ title: "Presença"
 
 <div class="article-intro">
 
-A seção de Presença no B1 Admin oferece uma visão completa de quem está frequentando sua igreja e como seus grupos estão crescendo ao longo do tempo. Desde a configuração de campi e horários de culto até a revisão de tendências e a configuração de check-in autônomo, tudo o que você precisa para acompanhar e entender a presença é gerenciado a partir desta página.
+A seção de Presença no B1 Admin oferece uma visão completa de quem está comparecendo à sua igreja e como seus grupos estão crescendo ao longo do tempo. Desde configurar campi e horários de serviço até revisar tendências e configurar auto check-in, tudo o que você precisa para rastrear e compreender a presença é gerenciado a partir desta página.
 
 </div>
 
 ## Visão Geral da Página
 
-Ao abrir a página de Presença, você verá um cabeçalho com estatísticas importantes sobre a configuração de presença da sua igreja:
+Quando você abre a página de Presença, verá um cabeçalho com estatísticas-chave sobre a configuração de presença de sua igreja:
 
-- **Campi** -- o número de localizações físicas que você configurou
-- **Horários de Culto** -- o total de cultos em todos os campi
-- **Grupos Programados** -- grupos que estão atribuídos a um horário de culto específico
-- **Grupos Não Programados** -- grupos que acompanham a presença independentemente de um horário de culto
+- **Campi** -- o número de locais físicos que você configurou
+- **Horários de Serviço** -- o número total de serviços em todos os campi
+- **Grupos Programados** -- grupos que são atribuídos a um horário de serviço específico
+- **Grupos Não Programados** -- grupos que rastreiam presença independentemente de um horário de serviço
 
 Abaixo do cabeçalho, três abas organizam suas ferramentas de presença.
 
 ## Abas
 
-### Configuração
+### Setup
 
-A aba **Configuração** é onde você configura os elementos fundamentais do acompanhamento de presença. Aqui você define seus campi, adiciona horários de culto a cada campus e atribui [grupos](../groups/creating-groups.md) a esses horários de culto. Você só precisa fazer isso uma vez, embora possa atualizar sempre que sua programação mudar. Consulte [Configuração de Presença](setup.md) para um passo a passo completo.
+A aba **Setup** é onde você configura os blocos de construção do rastreamento de presença. Aqui você define seus campi, adiciona horários de serviço para cada campus e atribui [grupos](../groups/creating-groups.md) a esses horários de serviço. Você só precisa fazer isso uma vez, embora possa atualizar sempre que sua programação mudar. Veja [Configuração de Presença](setup.md) para um guia completo.
 
-### Presença
+### Attendance
 
-A aba **Presença** exibe as tendências de presença ao longo do tempo. Use os filtros para refinar os resultados por período, campus ou horário de culto e identifique padrões rapidamente nos seus dados. Consulte [Acompanhamento de Presença](tracking-attendance.md) para detalhes sobre o uso de relatórios e filtros.
+A aba **Attendance** exibe tendências de presença ao longo do tempo. Use os filtros para estreitar os resultados por intervalo de datas, campus ou horário de serviço e identifique rapidamente padrões em seus dados. Veja [Rastreando Presença](tracking-attendance.md) para detalhes sobre como usar relatórios e filtros.
 
-### Grupos
+### Groups
 
-A aba **Grupos** detalha a presença por grupo individual. Isso é útil quando você deseja ver como um pequeno grupo, classe ou equipe de ministério específico está se saindo, em vez de olhar para os números gerais da igreja.
+A aba **Groups** divide a presença por grupo individual. Isso é útil quando você quer ver como um pequeno grupo, classe ou equipe de ministério específica está se saindo em vez de olhar para números em toda a igreja.
 
-## Próximos Passos
+## Próximas Etapas
 
-- [Configuração de Presença](setup.md) -- configurar campi, horários de culto e grupos
-- [Registrar Presença](recording-attendance.md) -- inserir manualmente a presença de uma sessão de grupo
-- [Acompanhamento de Presença](tracking-attendance.md) -- visualizar tendências e filtrar relatórios
-- [Check-In](check-in.md) -- configurar o check-in autônomo para os cultos
+- [Configuração de Presença](setup.md) -- configure campi, horários de serviço e grupos
+- [Registrando Presença](recording-attendance.md) -- insira manualmente a presença para uma sessão de grupo
+- [Rastreando Presença](tracking-attendance.md) -- visualize tendências e filtros de relatórios
+- [Check-In](check-in.md) -- configure auto check-in para serviços
 
 :::tip
-Se você está configurando a presença pela primeira vez, comece com o guia de [Configuração de Presença](setup.md) para definir seus campi e horários de culto. Uma vez que isso esteja pronto, você pode começar a [registrar a presença](recording-attendance.md) manualmente ou configurar o [check-in autônomo](check-in.md).
+Se você está configurando a presença pela primeira vez, comece com o guia de [Configuração de Presença](setup.md) para definir seus campi e horários de serviço. Uma vez que isso esteja em vigor, você pode começar [registrando presença](recording-attendance.md) manualmente ou configurar [auto check-in](check-in.md).
 :::

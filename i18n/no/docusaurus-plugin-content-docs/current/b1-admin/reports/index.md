@@ -6,37 +6,39 @@ title: "Rapporter"
 
 <div class="article-intro">
 
-Rapporter-siden gir deg rask tilgang til ferdiglagde rapporter som hjelper deg å forstå kirkedataene dine. Bruk disse rapportene til å spore oppmøtetrender, overvåke gaveaktivitet og holde kontakten med menigheten gjennom fødselsdagsfeiringer.
+Rapportsiden gir deg rask tilgang til forhåndsinnebygde rapporter som hjelper deg med å forstå kirkens data. Bruk disse rapportene til å spore oppmøtetrender, overvåke givingsaktivitet og holde kontakt med menigheten gjennom fødselsdagsfeiringer.
 
 </div>
 
 ## Tilgjengelige rapporter
 
-Rapporter-siden viser fem rapportkort. Klikk på et kort for å åpne rapporten med filtre.
+Rapportsiden viser rapportkort for hver tilgjengelig rapport. Klikk på ethvert kort for å åpne rapporten med filtrene.
 
-- **[Fødselsdagsrapport](./birthday-report)** -- Se kommende fødselsdager for menighetens medlemmer.
-- **[Oppmøtetrend](./attendance-reports)** -- Se hvordan oppmøtemønstre endrer seg over tid på tvers av gudstjenestene dine.
-- **[Gruppeoppmøte](./attendance-reports)** -- Se oppmøtetotaler per gruppe for et valgt datointervall.
-- **[Daglig gruppeoppmøte](./attendance-reports)** -- Få en dag-for-dag oversikt over gruppeoppmøtedata.
-- **[Donasjonssammendrag](./donation-summary)** -- Gjennomgå gavetotaler og trender for økonomisk planlegging.
+- **[Fødselsdagsrapport](./birthday-report)** -- Se kommende fødselsdager for menighetsmedlemmer.
+- **[Oppmøtetrendrer](./attendance-reports)** -- Se hvordan oppmøtemønstre endres over tid på tvers av tjenestene.
+- **[Gruppeoppmøte](./attendance-reports)** -- Se oppmøtetotaler etter gruppe for et valgt datoområde.
+- **[Daglig gruppeoppmøte](./attendance-reports)** -- Få en dag-for-dag fordeling av gruppeoppmøtedata.
+- **[Donasjonssammendrag](./donation-summary)** -- Gjennomgå givingtotaler og trender for finansiell planlegging.
+- **[Revisjonlogg](./audit-log)** -- Spor alle endringer og handlinger på tvers av kirkens styringssystem (funnet under Innstillinger > Revisjonlogg).
 
-## Bruke rapporter
+## Bruk av rapporter
 
-1. Naviger til **Reports** fra hovedmenyen.
+1. Gå til **Rapporter** fra hovedmenyen.
 2. Klikk på et **rapportkort** for å åpne det.
-3. Bruk **filtrene** øverst i hver rapport for å begrense dataene etter datointervall, gruppe, gudstjeneste eller andre kriterier.
+3. Bruk **filtrene** øverst i hver rapport for å begrense dataene etter datoområde, gruppe, service eller andre kriterier.
 4. Gjennomgå resultatene som vises i rapporten.
 
 :::tip
-Kjør rapporter jevnlig for å holde deg oppdatert på oppmøtetrender, kommende fødselsdager og gavemønstre. Disse dataene hjelper deg med å planlegge tjenester og oppsøkende virksomhet mer effektivt.
+Kjør rapporter regelmessig for å holde deg oppdatert på oppmøtetrender, kommende fødselsdager og givingsmønstre. Disse dataene hjelper deg med å planlegge ministerier og utreach mer effektivt.
 :::
 
 :::info
-Rapportdata avhenger av konsekvent dataregistrering. Sørg for at teamet ditt [registrerer oppmøte](../attendance/tracking-attendance.md), [registrerer donasjoner](../donations/recording-donations.md) og holder [personregistre](../people/adding-people.md) oppdatert for de mest nøyaktige resultatene.
+Rapportdata avhenger av konsistent dataregistrering. Kontroller at teamet ditt [sporer oppmøte](../attendance/tracking-attendance.md), [registrerer donasjoner](../donations/recording-donations.md) og holder [personposter](../people/adding-people.md) oppdatert for de mest nøyaktige resultatene.
 :::
 
 ## Lær mer
 
 - [Fødselsdagsrapport](./birthday-report) -- Finne og bruke fødselsdagsdata.
-- [Oppmøterapporter](./attendance-reports) -- Forstå de tre oppmøterapportene.
-- [Donasjonssammendrag](./donation-summary) -- Gjennomgå gavedata og økonomiske sammendrag.
+- [Oppmøterapporter](./attendance-reports) -- Forståelse av de tre oppmøterapportene.
+- [Donasjonssammendrag](./donation-summary) -- Gjennomgang av givingdata og finansielle oppsummeringer.
+- [Revisjonlogg](./audit-log) -- Sporing av systemaktivitet og endringer.

@@ -1,105 +1,101 @@
 ---
-title: "Guide: Bygg prekenbiblioteket og sett opp direktesending"
+title: "Veiledning: Bygg biblioteket over preken & direktekringkasting"
 ---
 
-# Bygg prekenbiblioteket og sett opp direktesending
+# Bygg biblioteket over preken & direktekringkasting
 
 <div class="article-intro">
 
-Fa prekenarkivet ditt pa nett og sett opp direktesending -- fra import av ditt eksisterende YouTube- eller Vimeo-bibliotek til planlegging av regelmessige direktesendte gudstjenester med interaktiv chat. Til slutt kan menigheten se tidligere prekener og delta pa direktesendte gudstjenester pa nettstedet og mobilappen.
+Få prekenaarkivet ditt online og sett opp direktekringkasting -- fra import av eksisterende YouTube- eller Vimeo-biblioteket til planlegging av gjentakende direktetjenester med interaktiv chat. På slutten kan menigheten se tidligere prekener og delta i direktetjenester på nettstedet og mobilappen din.
 
 </div>
 
 <div class="prereqs">
-<h4>For du begynner</h4>
+<h4>Før du begynner</h4>
 
-- B1 Admin-konto med tillatelse for innholdsadministrasjon
-- YouTube- eller Vimeo-kanal med prekenvideoer (for import av arkivet)
-- YouTube Channel ID (for direktesending -- finn den i YouTube Studio-innstillingene)
+- B1 Admin-konto med innholdsstyringstillatelse
+- YouTube- eller Vimeo-kanal med prekevideoer (for import av arkivet ditt)
+- YouTube-kanal-ID (for direktekringkasting -- finn det i YouTube Studio-innstillingene dine)
 
 </div>
 
-## Steg 1: Opprett prekenspillelister
+## Trinn 1: Opprett prekespillister
 
-Spillelister organiserer prekenene dine i serier og samlinger for enkel navigering.
+Playlistene organiserer prekenene dine i serier og samlinger for enkel gjenleming.
 
-Folg guiden [Spillelister](../sermons/playlists.md) for a:
+Følg veiledningen [Spillelister](../sermons/playlists.md) for å:
 
-1. Opprette serier/samlinger som "Sondagsmeldinger 2024", "Ekteskapsserie", "Julegudstjenester"
-2. Legge til navn, beskrivelse, publiseringsdato og miniatyrbilde for hver spilleliste
-
-:::tip
-Opprett spillelister for du legger til prekener. Dette gjor det enklere a organisere prekenene i riktig serie etter hvert som du legger dem til.
-:::
-
-## Steg 2: Importer eksisterende prekener
-
-Hvis du allerede har prekenvideoer pa YouTube eller Vimeo, kan du hente dem alle inn pa en gang.
-
-Folg guiden [Masseimport](../sermons/bulk-import.md) for a:
-
-1. Skrive inn YouTube- eller Vimeo-kanal-URLen
-2. Forhandsvise importen for a se hvilke videoer som hentes inn
-3. Klikke Import for a legge dem alle til pa en gang
+1. Opprett serier/samlinger som "2024 søndagsmeldinger", "Ekteskapserie", "Julegudstjenester"
+2. Legg til navn, beskrivelse, publiseringsdato og miniatyr for hver spilleliste
 
 :::tip
-Aktiver automatisk import, og nye videoer du laster opp til YouTube/Vimeo vil automatisk vises i B1 -- ingen manuelt arbeid nodvendig.
+Opprett spillelister før du legger til prekener. Dette gjør det lettere å organisere prekener i riktig serie når du legger dem til.
 :::
 
-## Steg 3: Legg til individuelle prekener
+## Trinn 2: Importer eksisterende prekener
 
-For enkeltaddisjoner eller prekener som ikke er del av en masseimport, legg dem til individuelt.
+Hvis du allerede har prekevideoer på YouTube eller Vimeo, kan du få dem alle på en gang.
 
-Folg guiden [Administrere prekener](../sermons/managing-sermons.md) for a:
+Følg veiledningen [Massiv import](../sermons/bulk-import.md) for å:
 
-1. Lime inn en video-URL (YouTube, Vimeo eller Facebook)
-2. Tittel, beskrivelse, miniatyrbilde og varighet fylles automatisk ut fra videometadataene
-3. Tilordne prekenen til en spilleliste
+1. Skriv inn YouTube- eller Vimeo-kanal-URL-adressen
+2. Forhåndsvis importen for å se hvilke videoer som blir trukket inn
+3. Klikk Importer for å legge dem alle til på en gang
 
-## Steg 4: Sett opp direktesending
+## Trinn 3: Legg til individuelle prekener
 
-Koble YouTube-kanalen din slik at B1-nettstedet automatisk fanger opp direktesendingen.
+For engangstillegg eller prekener som ikke er en del av en masseimport, legger du dem til individuelt.
 
-Folg guiden [Direktesending](../sermons/live-streaming.md) for a:
+Følg veiledningen [Håndtering av prekener](../sermons/managing-sermons.md) for å:
 
-1. Skrive inn YouTube Channel ID i sendingsinnstillingene
-2. Konfigurere den regelmessige gudstjenesteplanen (f.eks. sondager kl. 10:00)
-3. Tilpasse sendingssidenfanene: Chat, Bonneonsker og tilpassede lenker
+1. Lim inn en video-URL (YouTube, Vimeo eller Facebook)
+2. Tittel, beskrivelse, miniatyr og varighet fylles automatisk fra videoens metadata
+3. Tilordne preken til en spilleliste
+
+## Trinn 4: Sett opp direktekringkasting
+
+Koble YouTube-kanalen din slik at B1-nettstedet ditt automatisk plukker opp direktekringkastingen din.
+
+Følg veiledningen [Direktekringkasting](../sermons/live-streaming.md) for å:
+
+1. Skriv inn YouTube-kanal-ID-en i direktekringkastingsinnstillingene
+2. Konfigurer gjentakende servicetidsplan (f.eks. søndager kl. 10:00)
+3. Tilpass direktekringkastingsfanene: Chat, Begjæringer om bønn og egendefinerte lenker
 
 :::info
-Nar du gar direkte pa YouTube, fanger B1-sendingssiden automatisk opp strommen. Ingen ekstra trinn nodvendig sondagsmorgen.
+Når du går live på YouTube, plukker B1 direktekringkastingssiden automatisk opp strømmen. Ingen ekstra trinn trengs søndagsmorgen.
 :::
 
-## Steg 5: Vis pa nettstedet
+## Trinn 5: Vis på nettstedet ditt
 
-Gjor prekenbiblioteket og direktesendingen lett tilgjengelig for besokende.
+Gjør prekebibilioteket og direktekringkastingen lett tilgjengelig for besøkende.
 
-Folg guiden [Administrere sider](../website/managing-pages.md) for a:
+Følg veiledningen [Håndtering av sider](../website/managing-pages.md) for å:
 
-1. Legge til en Prekener-seksjon pa B1-nettstedet slik at besokende kan bla i biblioteket
-2. Legge til en Direktesending-seksjon for direktevisningsopplevelsen
+1. Legg til en Prekener-del på B1-nettstedet slik at besøkende kan bla gjennom biblioteket
+2. Legg til en Direktekringkasting-del for direktevisningsopplevelsen
 
-## Steg 6: Mobiltilgang
+## Trinn 6: Mobiltilgang
 
-Medlemmer kan fa tilgang til prekener og direktesendte gudstjenester fra hvilken som helst enhet.
+Medlemmer kan få tilgang til prekener og direktetjenester fra enhver enhet.
 
-1. Medlemmer kan se prekener i [B1 Mobile-appen](../../b1-mobile/content/sermons.md) og pa [B1.church](../../b1-church/content/sermons.md)
-2. Direktesending med chat og bonneonsker fungerer pa begge plattformer
+1. Medlemmer kan se prekener i [B1 Mobile-appen](../../b1-mobile/content/sermons.md) og på [B1.church](../../b1-church/content/sermons.md)
+2. Direktekringkasting med chat og begjæringer om bønn fungerer på begge plattformene
 
 :::info
-Direkte chat og bonneonske-funksjonene lar nettmenigheten delta i sanntid, akkurat som a vaere i rommet.
+Direktechat- og begjæringsfunksjonene for bønn lar menigheten din online delta i sanntid, akkurat som å være i rommet.
 :::
 
 ## Du er ferdig!
 
-Prekenbiblioteket er pa nett og direktesendingen er konfigurert. Medlemmer kan se tidligere prekener nar som helst og delta pa direktesendte gudstjenester fra hvor som helst. Nye prekenopplastinger kan synkroniseres automatisk.
+Prekebiliteket ditt er online og direktekringkastingen er konfigurert. Medlemmer kan ta opp tidligere prekener når som helst og delta i direktetjenester fra hvor som helst. Nye prekeopploadinger kan synkroniseres automatisk.
 
 ## Relaterte artikler
 
-- [Spillelister](../sermons/playlists.md) -- organiser prekener i serier
-- [Masseimport](../sermons/bulk-import.md) -- importer fra YouTube eller Vimeo
-- [Administrere prekener](../sermons/managing-sermons.md) -- legg til og rediger individuelle prekener
-- [Direktesending](../sermons/live-streaming.md) -- konfigurer direktesendte gudstjenester
-- [Prekener (Nett)](../../b1-church/content/sermons.md) -- medlemmenes prekenvisningsopplevelse
-- [Direktesending (Nett)](../../b1-church/content/live-streaming.md) -- medlemmenes direktesendingsopplevelse
-- [Prekener (Mobil)](../../b1-mobile/content/sermons.md) -- prekener pa mobilappen
+- [Spillelister](../sermons/playlists.md) -- organisere prekener i serier
+- [Massiv import](../sermons/bulk-import.md) -- import fra YouTube eller Vimeo
+- [Håndtering av prekener](../sermons/managing-sermons.md) -- legg til og rediger individuelle prekener
+- [Direktekringkasting](../sermons/live-streaming.md) -- konfigurere direktetjenester
+- [Prekener (nett)](../../b1-church/content/sermons.md) -- medlemmenes visningsopplevelse av prekener
+- [Direktekringkasting (nett)](../../b1-church/content/live-streaming.md) -- medlemmenes direktekringkastingsopplevelse
+- [Prekener (mobil)](../../b1-mobile/content/sermons.md) -- prekener på mobilappen

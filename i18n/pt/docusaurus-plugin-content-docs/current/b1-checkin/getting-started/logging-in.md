@@ -1,71 +1,73 @@
 ---
-title: "Fazer Login"
+title: "Entrando"
 ---
 
-# Fazer Login
+# Entrando
 
 <div class="article-intro">
 
-Antes que o quiosque possa ser usado para check-in, você precisa fazer login com uma conta ChurchApps que tenha acesso à sua igreja. Esta página cobre o processo de primeiro login, seleção de igreja, comportamento de login automático e como fazer logout.
+Antes do quiosque poder ser usado para check-in, você precisa entrar com uma conta ChurchApps que tem acesso à sua iglesia. Esta página cobre o processo de login de primeira vez, seleção de iglesia, comportamento de auto-login e como sair.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Instale o B1 Church Checkin no seu tablet Android (consulte [Primeiros Passos](./index.md))
-- Tenha em mãos o e-mail e a senha da sua conta ChurchApps
+- Instale B1 Church Checkin em seu tablet Android (veja [Getting Started](./index.md))
+- Tenha seu email de conta ChurchApps e senha prontos
 
 </div>
 
-## Primeiro Login
+## Login de Primeira Vez
 
-1. Abra o aplicativo B1 Church Checkin. Após a tela de apresentação, você verá a tela de login com o logotipo do B1 Church Checkin.
-2. Insira seu **endereço de e-mail** no primeiro campo.
+1. Abra o app B1 Church Checkin. Após a tela de splash, você verá a tela de login com o logo B1 Church Checkin.
+2. Insira seu **endereço de email** no primeiro campo.
 3. Insira sua **senha** no segundo campo.
 4. Toque no botão **Login**.
 
-O aplicativo valida suas credenciais e faz o login. Se o e-mail ou a senha estiverem incorretos, você verá uma mensagem de erro na parte inferior da tela.
+O app valida suas credenciais e o registra. Se o email ou senha está incorreto, você verá uma mensagem de erro na parte inferior da tela.
 
 :::info
-Este é o mesmo e-mail e senha que você usa no B1 Admin ou em qualquer outro produto ChurchApps. Você não precisa de uma conta separada para o quiosque de check-in.
+Este é o mesmo email e senha que você usa para B1 Admin ou qualquer outro produto ChurchApps. Você não precisa de uma conta separada para o quiosque de check-in.
 :::
 
 ## Selecionando Sua Igreja
 
-Após um login bem-sucedido, o aplicativo carrega uma lista de igrejas vinculadas à sua conta. Cada igreja é exibida como um cartão mostrando o nome da igreja e o logotipo (se configurado no B1 Admin).
+Após um login bem-sucedido, o app carrega uma lista de igrejas vinculadas à sua conta. Cada iglesia é exibida como um cartão mostrando o nome da iglesia e logo (se um foi configurado no B1 Admin).
 
-- Se sua conta estiver vinculada a **apenas uma igreja**, você ainda verá a tela de seleção. Toque na sua igreja para continuar.
-- Se sua conta estiver vinculada a **várias igrejas**, toque na igreja que deseja que este quiosque atenda.
+- Se sua conta é vinculada a **apenas uma iglesia**, você ainda verá a tela de seleção. Toque em sua iglesia para continuar.
+- Se sua conta é vinculada a **múltiplas igrejas**, toque na iglesia que você quer que este quiosque sirva.
 
-Ao selecionar uma igreja, o aplicativo carrega a identidade visual e as configurações de aparência dessa igreja. O logotipo da sua igreja aparecerá no cabeçalho em todas as telas subsequentes.
+Depois que você seleciona uma iglesia, o app carrega as definições de marca e aparência daquela iglesia. Seu logo de iglesia aparecerá no cabeçalho em todas as telas subsequentes.
 
-## Login Automático em Visitas Futuras
+## Auto-Login em Visitas de Retorno
 
-O aplicativo salva seu e-mail, senha e igreja selecionada após o primeiro login bem-sucedido. Nos próximos acessos:
+O app salva seu email, senha e iglesia selecionada após o primeiro login bem-sucedido. Em lançamentos futuros:
 
-- O aplicativo faz login automaticamente com suas credenciais salvas.
-- Se você selecionou uma igreja anteriormente, ele restaura essa seleção e leva você diretamente à **tela de cultos**.
-- Se as credenciais salvas não forem mais válidas, o aplicativo retorna à tela de login para que você possa fazer login novamente.
+- O app automaticamente se loga com suas credenciais salvas.
+- Se você previamente selecionou uma iglesia, ele restaura aquela seleção e o leva diretamente à **tela de serviços**.
+- Se as credenciais salvas já não são válidas, o app retorna à tela de login para que você possa entrar novamente.
 
 :::tip
-Como o quiosque faz login automaticamente, você só precisa inserir as credenciais uma vez durante a configuração inicial. Depois disso, o tablet pode ser ligado e estará pronto para uso.
+Como o quiosque auto-login, você só precisa inserir credenciais uma vez durante configuração inicial. Depois disso, o tablet pode ser ligado e estará pronto para ir.
 :::
 
-## Fazer Logout
+## Admin Settings
 
-O logout é intencionalmente oculto para que os membros da igreja que usam o quiosque não possam sair acidentalmente. Para fazer logout:
+Admin settings são intencionalmente escondidas para que membros de iglesia usando o quiosque não possam acidentalmente mudar a configuração. Para acessá-las:
 
-1. Toque no **logotipo da igreja** no cabeçalho **sete vezes** em rápida sucessão (dentro de dois segundos).
-2. Um diálogo de confirmação aparecerá perguntando se você deseja fazer logout.
-3. Toque em **Logout** para confirmar, ou **Cancelar** para permanecer conectado.
-
-Isso limpa suas credenciais salvas e retorna à tela de login.
+1. Toque no **logo da iglesia** no cabeçalho **sete vezes** em rápida sucessão (dentro de dois segundos).
+2. Se um PIN de quiosque está definido, insira o PIN quando solicitado.
+3. A tela de **Admin Settings** abrirá com as seguintes opções:
+   - **Change Service** — alterne o horário de serviço selecionado
+   - **Change Printer** — abra [configurações de impressora](./printer-setup) para procurar e selecionar uma impressora
+   - **Set/Change PIN** — defina ou atualize o PIN de quiosque que protege acesso de admin
+   - **Logout** — saia e retorne à tela de login
 
 :::warning
-Fazer logout limpa todas as credenciais salvas e a seleção de igreja. Você precisará inserir novamente seu e-mail e senha para usar o quiosque. Faça logout apenas quando precisar trocar de conta ou reconfigurar o quiosque.
+Sair limpa todas as credenciais salvas e seleção de iglesia. Você precisará re-inserir seu email e senha para usar o quiosque novamente. Apenas saia quando você precisar trocar contas ou reconfigurar o quiosque.
 :::
 
-## Próximos Passos
+## Próximas Etapas
 
-Após fazer login, você pode [configurar uma impressora](./printer-setup) ou ir diretamente para o [fluxo de check-in](../check-in/).
+Depois de entrar, você pode [configurar uma impressora](./printer-setup) ou ir diretamente ao [fluxo de check-in](../check-in/).

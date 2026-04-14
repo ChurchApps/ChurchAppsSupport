@@ -1,42 +1,44 @@
 ---
-title: "Reportes"
+title: "Informes"
 ---
 
-# Reportes
+# Informes
 
 <div class="article-intro">
 
-La página de Reportes le da acceso rápido a reportes prediseñados que le ayudan a comprender los datos de su iglesia. Use estos reportes para hacer seguimiento de las tendencias de asistencia, monitorear la actividad de donaciones y mantenerse conectado con su congregación a través de celebraciones de cumpleaños.
+La página de Informes le brinda acceso rápido a informes pre-construidos que lo ayudan a comprender sus datos de iglesia. Use estos informes para rastrear tendencias de asistencia, monitorear la actividad de ofrendas y mantenerse conectado con su congregación a través de celebraciones de cumpleaños.
 
 </div>
 
-## Reportes Disponibles
+## Informes Disponibles
 
-La página de Reportes muestra cinco tarjetas de reportes. Haga clic en cualquier tarjeta para abrir el reporte con sus filtros.
+La página de Informes muestra tarjetas de informes para cada informe disponible. Haga clic en cualquier tarjeta para abrir el informe con sus filtros.
 
-- **[Reporte de Cumpleaños](./birthday-report)** -- Vea los próximos cumpleaños de los miembros de su congregación.
-- **[Tendencia de Asistencia](./attendance-reports)** -- Vea cómo cambian los patrones de asistencia a lo largo del tiempo en sus servicios.
-- **[Asistencia por Grupo](./attendance-reports)** -- Vea los totales de asistencia por grupo para un rango de fechas seleccionado.
-- **[Asistencia Diaria por Grupo](./attendance-reports)** -- Obtenga un desglose día a día de los datos de asistencia por grupo.
-- **[Resumen de Donaciones](./donation-summary)** -- Revise los totales y tendencias de donaciones para la planificación financiera.
+- **[Informe de Cumpleaños](./birthday-report)** -- Ver próximos cumpleaños de los miembros de su congregación.
+- **[Tendencia de Asistencia](./attendance-reports)** -- Ver cómo cambian los patrones de asistencia a lo largo del tiempo en sus servicios.
+- **[Asistencia del Grupo](./attendance-reports)** -- Ver totales de asistencia por grupo para un rango de fechas seleccionado.
+- **[Asistencia Diaria del Grupo](./attendance-reports)** -- Obtener un desglose día por día de datos de asistencia del grupo.
+- **[Resumen de Donaciones](./donation-summary)** -- Revisar totales de ofrendas y tendencias para planificación financiera.
+- **[Registro de Auditoría](./audit-log)** -- Rastrear todos los cambios y acciones en su sistema de gestión de iglesia (encontrado bajo Configuración > Registro de Auditoría).
 
-## Uso de los Reportes
+## Uso de Informes
 
-1. Navegue a **Reportes** desde el menú principal.
-2. Haga clic en una **tarjeta de reporte** para abrirlo.
-3. Use los **filtros** en la parte superior de cada reporte para reducir los datos por rango de fechas, grupo, servicio u otros criterios.
-4. Revise los resultados mostrados en el reporte.
+1. Navegue a **Informes** desde el menú principal.
+2. Haga clic en una **tarjeta de informe** para abrirlo.
+3. Use los **filtros** en la parte superior de cada informe para reducir los datos por rango de fechas, grupo, servicio u otros criterios.
+4. Revise los resultados mostrados en el informe.
 
 :::tip
-Ejecute los reportes regularmente para mantenerse al día con las tendencias de asistencia, los próximos cumpleaños y los patrones de donaciones. Estos datos le ayudan a planificar ministerios y actividades de alcance de manera más efectiva.
+Ejecute informes regularmente para mantenerse al día de las tendencias de asistencia, próximos cumpleaños y patrones de ofrendas. Estos datos lo ayudan a planificar ministerios y alcance más efectivamente.
 :::
 
 :::info
-Los datos de los reportes dependen de una entrada de datos consistente. Asegúrese de que su equipo esté [registrando la asistencia](../attendance/tracking-attendance.md), [registrando las donaciones](../donations/recording-donations.md) y manteniendo los [registros de personas](../people/adding-people.md) actualizados para obtener los resultados más precisos.
+Los datos de informes dependen de la entrada consistente de datos. Asegúrese de que su equipo esté [rastreando asistencia](../attendance/tracking-attendance.md), [registrando donaciones](../donations/recording-donations.md) y manteniendo [registros de personas](../people/adding-people.md) actualizados para obtener los resultados más precisos.
 :::
 
 ## Más Información
 
-- [Reporte de Cumpleaños](./birthday-report) -- Cómo encontrar y usar los datos de cumpleaños.
-- [Reportes de Asistencia](./attendance-reports) -- Comprensión de los tres reportes de asistencia.
-- [Resumen de Donaciones](./donation-summary) -- Revisión de datos de donaciones y resúmenes financieros.
+- [Informe de Cumpleaños](./birthday-report) -- Búsqueda y uso de datos de cumpleaños.
+- [Informes de Asistencia](./attendance-reports) -- Comprensión de los tres informes de asistencia.
+- [Resumen de Donaciones](./donation-summary) -- Revisión de datos de ofrendas y resúmenes financieros.
+- [Registro de Auditoría](./audit-log) -- Rastreo de actividad del sistema y cambios.

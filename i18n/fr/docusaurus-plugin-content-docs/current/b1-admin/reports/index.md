@@ -6,37 +6,39 @@ title: "Rapports"
 
 <div class="article-intro">
 
-La page Rapports vous donne un accès rapide à des rapports préconfigurés qui vous aident à comprendre les données de votre église. Utilisez ces rapports pour suivre les tendances de fréquentation, surveiller l'activité des dons et rester en contact avec votre communauté grâce aux célébrations d'anniversaires.
+La page Rapports vous donne un accès rapide aux rapports pré-construits qui vous aident à comprendre les données de votre église. Utilisez ces rapports pour suivre les tendances de participation, surveiller l'activité d'offrande et rester connecté avec votre congrégation par le biais de célébrations d'anniversaires.
 
 </div>
 
 ## Rapports disponibles
 
-La page Rapports affiche cinq cartes de rapport. Cliquez sur n'importe quelle carte pour ouvrir le rapport avec ses filtres.
+La page Rapports affiche des cartes de rapport pour chaque rapport disponible. Cliquez sur n'importe quelle carte pour ouvrir le rapport avec ses filtres.
 
-- **[Rapport des anniversaires](./birthday-report)** -- Consultez les prochains anniversaires des membres de votre communauté.
-- **[Tendance de fréquentation](./attendance-reports)** -- Observez l'évolution des tendances de fréquentation au fil du temps dans vos cultes.
-- **[Fréquentation par groupe](./attendance-reports)** -- Consultez les totaux de fréquentation par groupe pour une période sélectionnée.
-- **[Fréquentation quotidienne par groupe](./attendance-reports)** -- Obtenez un détail jour par jour des données de fréquentation par groupe.
-- **[Résumé des dons](./donation-summary)** -- Examinez les totaux et les tendances des dons pour la planification financière.
+- **[Rapport d'anniversaire](./birthday-report)** — Affichez les anniversaires à venir pour les membres de votre congrégation.
+- **[Tendance de la présence](./attendance-reports)** — Voyez comment les modèles de participation changent au fil du temps dans vos services.
+- **[Présence au groupe](./attendance-reports)** — Affichez les totaux de présence par groupe pour une plage de dates sélectionnée.
+- **[Présence quotidienne du groupe](./attendance-reports)** — Obtenez une ventilation jour par jour des données de présence du groupe.
+- **[Résumé des donations](./donation-summary)** — Examinez les totaux et les tendances d'offrande pour la planification financière.
+- **[Journal d'audit](./audit-log)** — Suivez tous les changements et les actions dans votre système de gestion d'église (situé dans Paramètres > Journal d'audit).
 
-## Utiliser les rapports
+## Utilisation des rapports
 
-1. Accédez à **Rapports** depuis le menu principal.
+1. Accédez à **Rapports** à partir du menu principal.
 2. Cliquez sur une **carte de rapport** pour l'ouvrir.
-3. Utilisez les **filtres** en haut de chaque rapport pour affiner les données par période, groupe, culte ou autres critères.
-4. Consultez les résultats affichés dans le rapport.
+3. Utilisez les **filtres** en haut de chaque rapport pour affiner les données par plage de dates, groupe, service ou d'autres critères.
+4. Examinez les résultats affichés dans le rapport.
 
 :::tip
-Exécutez les rapports régulièrement pour rester informé des tendances de fréquentation, des prochains anniversaires et des tendances de dons. Ces données vous aident à planifier les ministères et les actions de sensibilisation plus efficacement.
+Exécutez des rapports régulièrement pour rester au courant des tendances de participation, des anniversaires à venir et des modèles d'offrande. Ces données vous aident à planifier les ministères et les actions de sensibilisation plus efficacement.
 :::
 
 :::info
-Les données des rapports dépendent d'une saisie cohérente des données. Assurez-vous que votre équipe [suit la fréquentation](../attendance/tracking-attendance.md), [enregistre les dons](../donations/recording-donations.md) et maintient les [fiches de personnes](../people/adding-people.md) à jour pour obtenir les résultats les plus précis.
+Les données du rapport dépendent d'une saisie de données cohérente. Assurez-vous que votre équipe [suit la présence](../attendance/tracking-attendance.md), [enregistre les donations](../donations/recording-donations.md) et maintient les [dossiers des personnes](../people/adding-people.md) à jour pour les résultats les plus précis.
 :::
 
 ## En savoir plus
 
-- [Rapport des anniversaires](./birthday-report) -- Trouver et utiliser les données d'anniversaires.
-- [Rapports de fréquentation](./attendance-reports) -- Comprendre les trois rapports de fréquentation.
-- [Résumé des dons](./donation-summary) -- Examiner les données de dons et les résumés financiers.
+- [Rapport d'anniversaire](./birthday-report) — Recherche et utilisation des données d'anniversaire.
+- [Rapports de participation](./attendance-reports) — Comprendre les trois rapports de participation.
+- [Résumé des donations](./donation-summary) — Examen des données d'offrande et des résumés financiers.
+- [Journal d'audit](./audit-log) — Suivi de l'activité système et des modifications.

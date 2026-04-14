@@ -1,56 +1,64 @@
----
-title: "Ver Planes"
+﻿---
+title: "Visualización de Planes"
 ---
 
-# Ver Planes
+# Visualización de Planes
 
 <div class="article-intro">
 
-La pantalla de planes en B1 Mobile te brinda una imagen completa de tu calendario de servicio. Está organizada en dos pestañas para que puedas encontrar rápidamente tu próxima asignación o revisar tu historial de servicio.
+La pantalla de planes en B1 Mobile le brinda una imagen completa de su horario de servicio. Se organiza en dos pestañas para que pueda encontrar rápidamente su próxima asignación o mirar hacia atrás en su historial de servicio.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- [Instala B1 Mobile](../getting-started/installing) e [inicia sesión](../getting-started/logging-in) en tu cuenta
-- Estar asignado a al menos un plan de servicio por el administrador de tu iglesia
+- [Instale B1 Mobile](../getting-started/installing) e [inicie sesión](../getting-started/logging-in) en su cuenta
+- Sea asignado a al menos un plan de servicio por su administrador de iglesia
 
 </div>
 
-## Acceder a tus Planes
+## Acceso a Sus Planes
 
-1. Toca **Servicio** en la navegación inferior.
-2. La pantalla de planes se abre con dos pestañas en la parte superior: **Próximos** y **Anteriores**.
+1. Toque **Serving** en la navegación inferior.
+2. La pantalla de planes se abre con dos pestañas en la parte superior: **Próximos** y **Pasados**.
 
-## La Pestaña de Próximos
+## La Pestaña Próximos
 
-La pestaña **Próximos** es tu vista principal para lo que viene. En la parte superior verás una tarjeta destacada resaltando tu próxima asignación, incluyendo el nombre del plan, la fecha y tu posición. Esto facilita saber de un vistazo cuándo te necesitan.
+La pestaña **Próximos** es su vista de referencia para lo que viene a continuación. En la parte superior verá una tarjeta de héroe destacando su muy próxima asignación, incluyendo el nombre del plan, fecha y su posición. Esto facilita saber de un vistazo cuándo se necesita a continuación.
 
-Debajo de la tarjeta destacada, encontrarás un conjunto de estadísticas resumidas que muestran cuántas de tus asignaciones están en cada estado:
+Debajo de la tarjeta de héroe, encontrará un conjunto de estadísticas de resumen mostrando cuántas de sus asignaciones están en cada estado:
 
-- **Solicitada** -- Se te ha pedido servir pero aún no has respondido.
-- **Confirmada** -- Has aceptado la asignación.
-- **Pendiente** -- La asignación está esperando una acción adicional.
+- **Solicitado** -- Se le ha pedido que sirva pero aún no ha respondido.
+- **Confirmado** -- Ha aceptado la asignación.
+- **Pendiente** -- La asignación está esperando más acciones.
 
-Más abajo en la pantalla, una tabla lista todos tus próximos horarios de servicio con sus fechas, posiciones y estados.
+Más abajo en la pantalla, una tabla lista todos sus próximos tiempos de servicio con sus fechas, posiciones y estados.
 
-## La Pestaña de Anteriores
+## La Pestaña Pasados
 
-Toca la pestaña **Anteriores** para cambiar a tu historial de servicio. Esta vista muestra todos los planes en los que has servido anteriormente, listados en orden cronológico inverso. Es una excelente manera de hacer seguimiento de tus contribuciones a lo largo del tiempo.
+Toque la pestaña **Pasados** para cambiar a su historial de servicio. Esta vista muestra todos los planes en los que previamente ha servido, enumerados en orden cronológico inverso. Es una excelente manera de hacer un seguimiento de sus contribuciones a lo largo del tiempo.
 
-## Ver Detalles del Plan
+## Visualización de Detalles del Plan
 
-Toca cualquier plan, ya sea próximo o anterior, para abrir sus detalles completos. La vista de detalles incluye:
+Toque cualquier plan -- ya sea próximo o pasado -- para abrir sus detalles completos. La vista de detalle incluye:
 
-- **Orden del servicio** -- El orden completo del servicio con tiempos y detalles de cada elemento para que puedas ver el flujo del servicio.
-- **Tu asignación** -- Tu posición, la hora en que te necesitan y tu estado actual.
-- **Asignaciones del equipo** -- Un resumen de todos los que sirven en el plan, para que puedas ver quién más está en el equipo.
+- **Orden de servicio** -- El orden completo del servicio con tiempo y detalles de elementos para que pueda ver el flujo del servicio.
+- **Su asignación** -- Su posición, la hora en que se necesita y su estado actual.
+- **Asignaciones del equipo** -- Un resumen de todos los que sirven en el plan, para que pueda ver quién más está en el equipo.
+
+## Impresión de Planes
+
+Puede imprimir los detalles de un plan para referencia sin conexión. Desde la vista de detalle del plan, use la opción **imprimir** para generar una versión imprimible del orden de servicio y las asignaciones. Esto es útil para ensayos, referencia detrás del escenario o para compartir con miembros del equipo que prefieren una copia en papel.
 
 :::tip
-Revisa la pestaña **Próximos** regularmente para estar al tanto de tu calendario. La tarjeta destacada siempre muestra tu próximo compromiso, así que puedes abrir la aplicación y saber de inmediato cuándo te toca servir.
+Revise la pestaña **Próximos** regularmente para mantenerse encima de su horario. La tarjeta de héroe siempre muestra su muy próximo compromiso, para que pueda abrir la aplicación y saber de inmediato cuándo está sirviendo a continuación.
 :::
 
 :::info
-Recibirás [notificaciones push](../community/notifications.md) cuando seas asignado a un nuevo plan o cuando el estado de tu asignación cambie, para que nunca te pierdas una actualización.
+Recibirá [notificaciones push](../community/notifications.md) cuando sea asignado a un nuevo plan o cuando su estado de asignación cambie, para que nunca se pierda una actualización.
 :::
+
+## Artículos Relacionados
+
+- [Registro de Voluntarios](./volunteer-signup) -- Explore y regístrese para posiciones de voluntarios abiertos

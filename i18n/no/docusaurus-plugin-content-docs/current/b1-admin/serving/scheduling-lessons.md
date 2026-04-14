@@ -6,97 +6,102 @@ title: "Planlegging av leksjoner"
 
 <div class="article-intro">
 
-B1 Admin integrerer direkte med [Lessons.church](https://lessons.church) slik at du kan planlegge pensum for klasserommene dine rett inni tjenesteplanene dine. Dette holder alt — frivillige, tildelinger og leksjonsinnhold — på ett sted.
+B1 Admin integreres direkte med [Lessons.church](https://lessons.church) slik at du kan planlegge læreplaner for klassene dine rett innenfor serviceplanen. Dette holder alt -- frivillige, oppgaver og leksjonsinnhold -- på ett sted.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Sett opp tjenestegruppene dine i Tjeneste-området
-- Ha en aktiv [Lessons.church](https://lessons.church)-konto — registrer deg der først hvis kirken din ikke har en ennå
+- Sett opp ministeriene dine i Tjeneste-området
+- Ha en aktiv [Lessons.church](https://lessons.church)-konto -- registrer deg der først hvis kirken din ikke har en ennå
 
 </div>
 
-## Steg 1 — Koble til Lessons.church-kontoen din
-
-Dette er et engangsoppsett per tjenestegruppe. Du må koble til Lessons.church-kontoen din før du kan bla gjennom og planlegge innhold.
-
-1. Logg inn på [B1 Admin](https://admin.b1.church/) og gå til **Tjeneste**
-2. Åpne tjenestegruppen du vil koble til (f.eks. Barnetjeneste)
-3. Bla ned til seksjonen **Innholdsleverandørkontoer**
-4. Klikk **Koble til ny leverandør**
-5. Velg **Lessons.church** fra listen
-6. En enhetsautorisasjons-skjerm med en kode vil vises
-7. Gå til [lessons.church](https://lessons.church), logg inn og skriv inn koden for å autorisere tilkoblingen
-8. Når den er godkjent, vil du se **"Konto tilkoblet"** under Lessons.church i B1 Admin
-
-:::info
-Seksjonen for innholdsleverandørkontoer er per tjenestegruppe. Hvis du driver flere tjenestegrupper (f.eks. Barn og Ungdom), må du koble til Lessons.church for hver enkelt separat.
+:::tip Følg en guidet gjennomgang
+Vil du se det fullstendige oppsettet fra start til slutt? Vår **<a href="/guides/freeplay-b1admin" target="_blank">trinn-for-trinn-veiledning</a>** dekker lenking av leverandører, planlegging av en leksjon og tilkobling av FreePlay til klasseromets TV -- med korte videoer og skriftlige trinn du kan merke av mens du går.
 :::
 
-## Steg 2 — Planlegg en leksjon
+## Trinn 1 -- Lenk Lessons.church-kontoen
 
-Når kontoen er koblet til, kan du planlegge leksjoner direkte fra Planer.
+Dette er et engangoppsett per ministerium. Du må koble Lessons.church-kontoen din før du kan bla gjennom og planlegge innhold.
+
+1. Logg på [B1 Admin](https://admin.b1.church/) og gå til **Tjeneste**
+2. Åpne ministeriet du vil koble (f.eks. barneministerie)
+3. Rull ned til **Content Provider Accounts**-delen
+4. Klikk **Link ny leverandør**
+5. Velg **Lessons.church** fra listen
+6. En enhetsautorisasjonsskjerm vises med en kode
+7. Gå til [lessons.church](https://lessons.church), logg på og oppgi koden for å autorisere tilkoblingen
+8. Når godkjent, vil du se **"Konto linket"** under Lessons.church i B1 Admin
+
+:::info
+Content Provider Accounts-delen er per ministerium. Hvis du kjører flere ministerier (f.eks. barn- og ungdomsministerier), må du lenke Lessons.church for hvert enkelt separat.
+:::
+
+## Trinn 2 -- Planlegg en leksjon
+
+Når den er lenket, kan du planlegge leksjoner direkte fra Planer.
 
 1. I B1 Admin, gå til **Tjeneste → Planer**
-2. Velg tjenestegruppefanen din og klikk **Legg til plan** — skjemaet **Planlegg leksjon** åpnes
-3. Velg **datoen** for leksjonen (standard er kommende søndag)
-4. Klikk **Velg leksjon** — en innholdsbrowser-dialog åpnes
-5. Øverst i dialogen, bekreft at **Lessons.church** er valgt som leverandør
-6. Bla gjennom innholdet:
+2. Velg ministerium-fanen og klikk **Legg til plantype** -- gi plantypenheten et navn som Barnekirkens leksjon eller søndagsskole
+3. Klikk på plantypenen du nettopp opprettet og klikk **Planlegg leksjon** for en leksjon eller **masseplanlegg** for en serie leksjoner.
+4. Velg **datoen** for leksjonen (standarder til kommende søndag)
+5. Klikk **Velg leksjon** -- en innholdsmessig browserdialogg åpnes
+6. Øverst i dialogen bekrefter du at **Lessons.church** er valgt som leverandør
+7. Bla gjennom innholdet:
    - Velg et **Program** (f.eks. "Bibelhistorier for barn")
-   - Velg en **Studie** innenfor det programmet (f.eks. "Skapelsen og tidlige historier")
-   - Velg den spesifikke **Leksjonen**
-   - Velg **Sted** — dette er aldersgruppe-versjonen av leksjonen (f.eks. "Førskole", "Barneskole")
-7. Klikk **Tilknytt leksjon** for å bekrefte
-8. Velg ditt **kopierings-alternativ** for frivillige:
-   - **Ingenting** — ny plan, ingen frivillige overført
-   - **Kun posisjoner** — kopierer frivilligroller fra forrige plan men ikke hvem som er tildelt
-   - **Posisjoner og tildelinger** — kopierer både roller og tildelte frivillige *(vanligst)*
-9. Klikk **Lagre**
+   - Velg en **studie** innenfor programmet (f.eks. "Skapelse og tidlige historier")
+   - Velg den spesifikke **leksjonen**
+   - Velg **stedet** -- dette er aldersgruppeversjonen av leksjonen
+8. Klikk **Tilknytt leksjon** for å bekrefte
+9. Velg **kopialternativ** for frivillige:
+   - **Ingenting** -- frisk plan, ingen frivillige overført
+   - **Bare posisjoner** -- kopierer frivilligrolle fra forrige plan, men ikke hvem som er tilordnet
+   - **Posisjoner og oppgaver** -- kopierer både roller og tildelte frivillige *(mest vanlig)*
+10. Klikk **Lagre**
 
-Planen opprettes og navngis automatisk (f.eks. "23. feb - Barneskole"). Frivillige kan åpne planen for å se sine tildelinger og gjennomgå leksjonsinnholdet før søndag.
+Planen opprettes og navngis automatisk (f.eks. "23. februar - barneskole"). Frivillige kan åpne planen for å se oppgavene sine og gjennomgå leksjonsinnholdet før søndag.
 
 :::warning
-Sørg for å velge riktig **Sted** for klasserommets aldersgruppe. Å velge feil sted (f.eks. førskoleinnhold for en barneskoleklasse) betyr at de frivillige ser innhold designet for et annet aldersnivå.
+Kontroller at du velger riktig **sted** for klasseromets aldersgruppe. Å velge feil sted betyr at frivilligene dine vil se innhold utformet for et annet aldernivå.
 :::
 
 :::tip
-**Planlegg fremover** — Du kan planlegge flere uker med leksjoner på en gang slik at teamet ditt kan forberede seg i forveien. Bruk listen over tidligere leksjoner i planvisningen for å unngå å gjenta innhold ved et uhell.
+**Planlegg på forhånd** -- Du kan planlegge flere uker med leksjoner på en gang slik at teamet ditt kan forberede seg på forhånd. Bruk listen over tidligere leksjoner i planvisningen for å unngå å gjenta innhold.
 :::
 
 ## Tilpasning av leksjonsinnhold
 
-Når en leksjon er planlagt, kan du tilpasse den for ditt spesifikke klasserom — fjern seksjoner som ikke gjelder, skjul roller rommet ditt ikke bruker, eller endre rekkefølgen på innholdet for å matche din foretrukne flyt. Tilpasninger kan lagres for bare ett klasserom eller brukes på tvers av alle klasserom i kirken din.
+Når en leksjon er planlagt, kan du tilpasse den for det spesifikke klasserommet -- fjern seksjoner som ikke gjelder, skjul roller som rommet ikke bruker, eller omorganiser innholdet for å matche den foretrukne flyten. Tilpasninger kan lagres for bare ett klasserom eller brukes på tvers av alle klasserom på kirken din.
 
-Se veiledningen [Tilpasse leksjoner](/docs/lessons-church/customization/customizing-lessons) for steg-for-steg-instruksjoner.
+Se [Tilpasning av leksjoner](/docs/lessons-church/customization/customizing-lessons)-guiden for trinn-for-trinn-instruksjoner.
 
-## Spille av leksjoner på en klasseroms-TV med FreePlay
+## Avspilling av leksjoner på en klasserom-TV med FreePlay
 
-Å planlegge en leksjon i B1 Admin passer perfekt sammen med **[FreePlay](/docs/freeplay/)** — ChurchApps' gratis mediespiller for klasseroms-TVer og Fire Sticks. Når planen din er satt opp, kan FreePlay hente leksjonsinnholdet direkte fra Lessons.church og spille det av i fullskjerm i klasserommet. Læreren styrer tempoet med TV-fjernkontrollen og navigerer gjennom videoer og lysbilder etter hvert som leksjonen flyter.
+Planlegging av en leksjon i B1 Admin egner seg perfekt for **[FreePlay](/docs/freeplay/)** -- ChurchApps gratis mediaavspiller for klasserom-TV og Fire Sticks. Når planen er satt opp, kan FreePlay trekke leksjonsinnholdet direkte fra Lessons.church og spille det på full skjerm i klasserommet. Læreren kontrollerer tempoet med en fjernkontroll, og forflytter gjennom videoer og lysbilder mens leksjonen flyter.
 
-Dette betyr at de frivillige ser planen på telefonene sine mens innholdet spilles av på rommets TV — ingen separat oppsett, ingen USB-stasjoner, ingen siste-liten-stress.
+Dette betyr at frivilligene dine ser planen på telefonene sine mens innholdet spilles på rommets TV -- ingen separat oppsett, ingen USB-enheter, ingen siste minutts kaotisk situasjon.
 
 [Lær hvordan du kobler FreePlay til en innholdsleverandør →](/docs/freeplay/content-providers/connecting-providers)
 
-## Ser du ikke din pensumsleverandør?
+## Ser du ikke læreplanleverandøren?
 
-Listen over tilgjengelige leverandører vokser. Hvis kirken din bruker en pensumsleverandør som ikke vises i B1 Admin ennå, ta kontakt med oss så jobber vi med å få dem lagt til.
+Listen over tilgjengelige leverandører vokser. Hvis kirken din bruker en læreplanleverandør som ikke vises i B1 Admin ennå, kontakt oss og vi vil arbeide med å få dem lagt til.
 
-Du kan gjerne kopiere og sende meldingen nedenfor direkte til din pensumsleverandør — når de tar kontakt med oss setter vi opp integrasjonen:
+Du kan gjerne kopiere og sende meldingen under direkte til læreplanleverandøren -- når de først kontakter oss, setter vi oppintegreringen.
 
 ---
 
-> **Emne: ChurchApps integrasjonsforespørsel**
+> **Emne: ChurchApps-integreringforespørsel**
 >
-> Hei [Pensumsleverandørteam],
+> Hei [Læreplanleverandør Team],
 >
-> Vi elsker pensumet deres og bruker det hver uke med barna våre. Vi bruker også ChurchApps for å administrere frivillige og tjenesteplaner, og vi bruker FreePlay (freeplay.church) for å spille av leksjonsinnhold direkte på klasseroms-TVene våre. Det har vært en game changer for lærerne våre.
+> Vi elsker læreplanen og bruker den hver uke med barna våre. Vi bruker også ChurchApps for å administrere frivillige og serviceplaner, og vi bruker FreePlay (freeplay.church) for å avspille leksjonsinnhold direkte på klasseromets TV-er. Det har vært en game changer for lærerne våre.
 >
-> Akkurat nå må vi administrere pensumet deres separat, men hvis dere var integrert med ChurchApps kunne vi planlegge leksjonene deres rett inni tjenesteplanene våre og spille dem gjennom FreePlay på klasseromsskjermene våre — alt uten å forlate verktøyene vi allerede bruker.
+> Akkurat nå må vi administrere læreplanen din separat, men hvis du var integrert med ChurchApps, kunne vi planlegge leksjonene dine rett innenfor serviceplanen og spille dem gjennom FreePlay på klasseromets skjermer -- alt uten å forlate verktøyene vi allerede bruker.
 >
-> ChurchApps jobber allerede med flere pensumsleverandører og teamet deres er klare til å jobbe med dere også. Kunne dere ta kontakt med dem på **support@churchapps.org** for å starte samtalen? Vi ville elske å se dette skje!
+> ChurchApps fungerer allerede med flere læreplanleverandører og teamet er klart til å arbeide med deg også. Kunne du kontakte dem på **support@churchapps.org** for å starte samtalen? Vi skulle gjerne sett at dette skjedde!
 >
 > Takk!
 
@@ -104,8 +109,8 @@ Du kan gjerne kopiere og sende meldingen nedenfor direkte til din pensumsleveran
 
 ## Relaterte artikler
 
-- [Tjenesteplaner](./plans.md)
-- [Gudstjenesteordning](./service-order.md)
-- [Tilpasse leksjoner](/docs/lessons-church/customization/customizing-lessons)
-- [FreePlay — Spille av leksjoner på en klasseroms-TV](/docs/freeplay/classroom-mode/playing-lessons)
-- [Lessons.church planleggingsguide](/docs/lessons-church/classrooms/scheduling-lessons)
+- [Serviceplan](./plans.md)
+- [Serviceorden](./service-order.md)
+- [Tilpasning av leksjoner](/docs/lessons-church/customization/customizing-lessons)
+- [FreePlay -- Avspilling av leksjoner på en klasserom-TV](/docs/freeplay/classroom-mode/playing-lessons)
+- [Lessons.church Planleggingsveiledning](/docs/lessons-church/classrooms/scheduling-lessons)

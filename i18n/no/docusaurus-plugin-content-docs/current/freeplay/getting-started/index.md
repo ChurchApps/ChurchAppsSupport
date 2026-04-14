@@ -6,43 +6,51 @@ title: "Kom i gang"
 
 <div class="article-intro">
 
-FreePlay er tilgjengelig for Android TV, Amazon Fire TV og Apple TV. Denne guiden veileder deg gjennom installasjon av appen, første gangs oppstart, og de grunnleggende TV-fjernkontrollene du vil bruke gjennom hele appen.
+FreePlay er tilgjengelig for Android TV, Amazon Fire TV og Apple TV. Denne veiledningen leder deg gjennom installasjon av appen, lansering av den for første gang, og læring av de grunnleggende TV-fjernkontrollene du vil bruke gjennom hele appen.
 
 </div>
 
-## Installere FreePlay
+:::tip Ny på FreePlay? Start her
+Se vår **<a href="/guides/freeplay-quickstart" target="_blank">hurtigstartvideo</a>** -- installer FreePlay og begynn å spille innhold på bare noen få minutter. Ingen teknikkkunnskap trengs.
+:::
+
+:::tip Setter du opp med B1 Admin?
+Vår **<a href="/guides/freeplay-b1admin" target="_blank">trinn-for-trinn-veiledning</a>** dekker fullstendig oppsett -- fra lenking av innholdsleverandører til at riktig leksjon lastes ned automatisk til klasserom-TV hver uke.
+:::
+
+## Installasjon av FreePlay
 
 ### Android TV / Amazon Fire TV
 
-1. Åpne appbutikken på TV-en din (**Google Play Butikk** eller **Amazon Appstore**)
+1. Åpne appbutikken på TV-en (**Google Play Store** eller **Amazon Appstore**)
 2. Søk etter **FreePlay**
 3. Velg appen og velg **Installer**
 
 ### Apple TV
 
-1. Åpne **App Store** på Apple TV-en din
+1. Åpne **App Store** på Apple TV
 2. Søk etter **FreePlay**
 3. Velg appen og velg **Hent**
 
-## Starte appen
+## Lansering av appen
 
-Når du åpner FreePlay for første gang, vil du se en animert startskjerm med FreePlay-logoen. Appen sjekker etter tidligere tilkoblede innholdsleverandører. Hvis du allerede har koblet til en leverandør, tar den deg direkte til den leverandørens innholdsnettleser. Ellers åpner den skjermen **Innholdsleverandører** der du kan koble til din første innholdskilde.
+Når du åpner FreePlay for første gang, vil du se en animert velkomstskjerm med FreePlay-logoen. Appen sjekker for tidligere tilkoblede innholdsleverandører. Hvis du allerede har koblet en leverandør, tar den deg direkte til leverandørens innholdselesen. Ellers åpner det **Content Providers**-skjermen der du kan koble deg til første innholdskilde.
 
-## Navigere med TV-fjernkontrollen
+## Navigering med TV-fjernkontrollen
 
 FreePlay er bygget for TV-fjernkontroller. Her er kontrollene du vil bruke gjennom hele appen:
 
-- **Retningsknapper (opp/ned/venstre/høyre)** - Flytt mellom elementer på skjermen
-- **Velg / OK-knapp** - Velg det markerte elementet
-- **Venstre pil** - Åpne sidefeltet fra hvilken som helst skjerm
-- **Høyre pil** - Lukk sidefeltet og gå tilbake til hovedinnholdsområdet
-- **Tilbake / Meny-knapp** - Gå tilbake til forrige skjerm
+- **Retningspad (opp/ned/venstre/høyre)** - Flytt mellom elementer på skjermen
+- **Velg / OK-knapp** - Velg det uthevede elementet
+- **Venstre pil** - Åpne sidestolpen fra en hvilken som helst skjerm
+- **Høyre pil** - Lukk sidestolpen og gå tilbake til hovedinnholdsområdet
+- **Tilbake / Menyknapp** - Gå tilbake til forrige skjerm
 
 :::tip
-Sidefeltet kollapser til en smal stripe med ikoner når du blar gjennom innhold. Trykk venstre pil på fjernkontrollen for å utvide det og se de fullstendige etikettene.
+Sidestolpen kollapser til en smal ikonstripe når du blar gjennom innholdet. Trykk på pilen til venstre på fjernkontrollen for å utvide den og se fullstendig etiketter.
 :::
 
-## Hva er neste steg
+## Hva er neste
 
-- **[Velge paringsmodus](./pairing-modes)** - Lær om de ulike måtene å koble til TV-en din
+- **[Valg av paringsmodus](./pairing-modes)** - Lær om de ulike måtene å koble TV-en
 - **[Innholdsleverandører](../content-providers/)** - Koble til Lessons.church, Bible Project og mer

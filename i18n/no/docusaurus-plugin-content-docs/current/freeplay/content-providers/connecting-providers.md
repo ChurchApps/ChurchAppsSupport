@@ -1,80 +1,79 @@
 ---
-title: "Koble til leverandører"
+title: "Tilkobling av innholdsleverandører"
 ---
 
-# Koble til leverandører
+# Tilkobling av innholdsleverandører
 
 <div class="article-intro">
 
-Før du kan bla gjennom innhold fra en leverandør, må du koble til den. Noen leverandører krever autentisering gjennom en QR-kode eller e-postinnlogging, mens andre kan kobles til med ett enkelt klikk.
+Før du kan bla gjennom innhold fra en leverandør, må du koble deg til det. Noen leverandører krever autentisering gjennom en QR-kode eller e-postpålogging, mens andre kan kobles med ett enkelt klikk.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Installer og start FreePlay -- se [Kom i gang](../getting-started/)
+- Installer og start FreePlay -- se [Getting Started](../getting-started/)
 - Ha TV-fjernkontrollen klar for navigering
-- For leverandører som krever innlogging, ha kontoinformasjonen din tilgjengelig
+- For leverandører som krever pålogging, ha kontolegitimeringen klar
 
 </div>
 
-## Bla gjennom tilgjengelige leverandører
+:::tip Setter du opp B1 Admin + FreePlay sammen?
+Vår **<a href="/guides/freeplay-b1admin" target="_blank">trinn-for-trinn-veiledning</a>** gjennomgår lenking av B1 Admin, planlegging av leksjon og tilkobling av FreePlay -- alt på ett sted. Åpne det i en ny fane for å følge med.
+:::
 
-1. Åpne skjermen **Innholdsleverandører** fra sidefeltet (velg **Leverandører**-ikonet nederst)
-2. Du vil se et rutenett med leverandørkort, som hver viser leverandørens logo og navn
-3. Tilkoblede leverandører viser et grønt **Tilkoblet**-merke under navnet sitt
-4. Leverandører som ennå ikke er tilgjengelige viser en **Kommer snart**-etikett
+## Blaisering av tilgjengelige leverandører
 
-## Koble til uten autentisering
+1. Åpne **Content Providers**-skjermen fra sidestolpen (velg **Providers**-ikonet på bunnen)
+2. Du vil se et rutenett av leverandørkort, hvert viser leverandørens logo og navn
+3. Tilkoblede leverandører viser en grønn **Tilkoblet**-badge under navnet
+4. Leverandører som ikke ennå er tilgjengelige, viser en **Kommer snart**-etikett
 
-Noen leverandører krever ikke innlogging. Når du velger en av disse leverandørene, kobler FreePlay til umiddelbart og åpner innholdsnettleseren. Ingen innloggingsinformasjon er nødvendig.
+## Tilkobling uten autentisering
 
-## Enhetsflytautentisering (QR-kode)
+Noen leverandører krever ikke pålogging. Når du velger en av disse leverandørene, kobler FreePlay seg umiddelbart til og åpner innholdselesen. Ingen legitimasjon trengs.
 
-Enkelte leverandører bruker en enhetsflyt, som ligner på hvordan du logger inn på strømmeapper på en TV:
+## Enhetsflytsautentisering (QR-kode)
 
-1. Velg leverandørkortet på skjermen **Innholdsleverandører**
-2. FreePlay viser en QR-kode og en verifiserings-URL
-3. Skann QR-koden med telefonen din, eller besøk den viste URL-en på en hvilken som helst enhet
-4. Skriv inn brukerkoden som vises på TV-skjermen
-5. Fullfør innloggingsprosessen på telefonen eller datamaskinen din
-6. FreePlay oppdager den vellykkede innloggingen og viser **Tilkoblet!**
-7. Innholdsnettleseren åpnes automatisk
+Visse leverandører bruker en enhetersflyt, lik hvordan du logger på streaming-apper på en TV:
+
+1. Velg leverandørkortet på **Content Providers**-skjermen
+2. FreePlay viser en QR-kode og en bekreftelses-URL
+3. Skann QR-koden med telefonen, eller besøk den viste URL-adressen på enhver enhet
+4. Oppgi brukerkoden som vises på TV-skjermen
+5. Fullfør påloggingsprosessen på telefonen eller datamaskinen
+6. FreePlay oppdager vellykkede pålogging og viser **Tilkoblet!**
+7. Innholdselesen åpnes automatisk
 
 :::info
-En pulserende **Venter på autorisasjon**-indikator viser at FreePlay sjekker etter innloggingen din. Koden utløper etter noen minutter, så fullfør prosessen raskt.
+En pulserende **Venter på autorisasjon**-indikator viser at FreePlay sjekker for påloggingen. Koden utløper etter noen få minutter, så fullfør prosessen raskt.
 :::
 
-## Skjemalogin
+## Skjemapålogging
 
-Andre leverandører bruker en tradisjonell e-post- og passordinnlogging:
+Andre leverandører bruker en tradisjonell e-post- og passordpålogging:
 
 1. Velg leverandørkortet
-2. Skriv inn **E-post** og **Passord** ved hjelp av skjermtastaturet
-3. Velg knappen **Logg inn**
-4. Hvis innloggingsinformasjonen din er riktig, viser FreePlay **Tilkoblet!** og åpner innholdsnettleseren
+2. Oppgi **E-post** og **Passord** ved hjelp av tastaturet på skjermen
+3. Velg **Logg på**-knappen
+4. Hvis legitimasjonen er riktig, viser FreePlay **Tilkoblet!** og åpner innholdselesen
 
 :::tip
-Bruk retningsknappene på fjernkontrollen for å flytte mellom e-postfeltet, passordfeltet og innloggingsknappen. Trykk **Velg** på et tekstfelt for å åpne skjermtastaturet.
+Bruk retningspadden på fjernkontrollen for å bevege deg mellom e-postfeltet, passordfelt og påloggingsknappen. Trykk **Velg** på et tekstfelt for å åpne tastaturet på skjermen.
 :::
 
-## Koble fra en leverandør
+## Frakobling av en leverandør
 
-For å koble fra en leverandør du allerede har koblet til:
+For å koble fra en leverandør du allerede er koblet til:
 
-1. Gå til skjermen **Innholdsleverandører**
-2. Velg leverandørkortet som viser **Tilkoblet**-merket
-3. En bekreftelsesdialog spør om du vil koble fra
-4. Velg **Koble fra** for å fjerne tilkoblingen
+1. Gå til **Content Providers**-skjermen
+2. Velg leverandørkortet som viser **Tilkoblet**-badgen
+3. En bekreftelsesprompt spør om du vil koble fra
+4. Velg **Frakobling** for å fjerne tilkoblingen
 
-Etter frakobling vil leverandørens innhold ikke lenger vises i sidefeltet ditt.
+Etter frakobling, vil leverandørens innhold ikke lenger vises i sidestolpen.
 
 :::warning
-Frakobling fjerner den lagrede autentiseringen fra enheten din. Du må logge inn igjen hvis du vil koble til på nytt senere.
+Frakobling fjerner den lagrede autentiseringen fra enheten. Du må logge på igjen hvis du vil koble på igjen senere.
 :::
-
-## Relaterte artikler
-
-- **[Bla gjennom og laste ned innhold](./browsing-content)** - Naviger i mapper og spill av innhold etter tilkobling
-- **[Oversikt over innholdsleverandører](./index.md)** - Se alle tilgjengelige leverandører

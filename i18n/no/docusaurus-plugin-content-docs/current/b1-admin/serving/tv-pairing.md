@@ -1,55 +1,55 @@
 ---
-title: "Koble FreePlay til B1 Admin"
+title: "Tilkobling av FreePlay til B1 Admin"
 ---
 
-# Koble en klasseroms-TV til B1 Admin-leksjonene dine
+# Tilkobling av en klasserom-TV til B1 Admin-leksjonene
 
 <div class="article-intro">
 
-Du kan koble en klasseroms-TV til B1 Admin-leksjonene dine ved hjelp av **FreePlay** — ChurchApps' gratis TV-app for kirker. Når den er tilkoblet, viser TV-en leksjonsinnholdet du har planlagt i B1 Admin, slik at det er tilgjengelig for lærerne dine rett på klasseromssskjermen.
+Du kan koble en klasserom-TV til B1 Admin-leksjonene ved å bruke **FreePlay** -- ChurchApps' gratis TV-app for kirker. Når den er tilkoblet, viser TV-en leksjonsinnholdet du har planlagt i B1 Admin, noe som gjør det tilgjengelig for lærerne dine rett på klasseromets skjerm.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Planlegg minst én leksjon i B1 Admin (se [Planlegge leksjoner](./scheduling-lessons.md))
-- Installer **FreePlay** på TV-en eller Fire Stick-en du ønsker å bruke
+- Planlegg minst en leksjon i B1 Admin (se [Planlegging av leksjoner](./scheduling-lessons.md))
+- Installer **FreePlay** på TV eller Fire Stick du vil bruke
 
 </div>
 
-## Steg 1 — Installer FreePlay på TV-en din
+## Trinn 1 -- Installer FreePlay på TV-en
 
-Installer **FreePlay**-appen på klasseromsskjermen din:
+Installer **FreePlay**-appen på klasseromsdisplayet:
 
-- **Amazon Fire Stick / Fire TV** — Søk etter **FreePlay** i Amazon Appstore
-- **Android TV / Google TV** — Søk etter **FreePlay** i Google Play Store
-- **Apple TV** — Søk etter **FreePlay** i App Store
+- **Amazon Fire Stick / Fire TV** -- Søk etter **FreePlay** i Amazon Appstore
+- **Android TV / Google TV** -- Søk etter **FreePlay** i Google Play Store
+- **Apple TV** -- Søk etter **FreePlay** i App Store
 
-For fullstendige oppsettsinstruksjoner, se [FreePlay Kom i gang-guide](/docs/freeplay/getting-started/).
+For fullstendige oppsettsanvisninger, se [FreePlay Getting Started-guiden](/docs/freeplay/getting-started/).
 
-## Steg 2 — Koble til B1.church som innholdsleverandør
+## Trinn 2 -- Koble B1.church som innholdsleverandør
 
 1. Åpne **FreePlay**-appen på TV-en
-2. Naviger til skjermen **Innholdsleverandører** (velg **Leverandører**-ikonet i sidefeltet)
+2. Gå til **Content Providers**-skjermen (velg **Providers**-ikonet i sidestolpen)
 3. Finn og velg **B1.church** fra listen over tilgjengelige leverandører
-4. Følg instruksjonene på skjermen for å logge inn med B1-kirkelegitimasjonen din
+4. Følg på-skjermen instruksjoner for å logge på med B1-kirkekredentialene
 5. FreePlay viser **Tilkoblet!** når tilkoblingen er vellykket
 
-Når den er tilkoblet, vises B1.church i FreePlay-sidefeltet ditt. FreePlay vil hente leksjonsinnholdet du har planlagt i B1 Admin slik at lærerne dine kan spille det direkte på klasseroms-TV-en.
+Når tilkoblet, vises B1.church i FreePlay-sidestolpen. FreePlay trekker leksjonsinnholdet du har planlagt i B1 Admin slik at lærerne kan spille det direkte på klasseromets TV.
 
 :::tip
-Etter tilkobling kan lærerne dine bruke TV-fjernkontrollen til å bla gjennom videoer og lysbilder i sitt eget tempo etter hvert som leksjonen skrider frem. Ingen separat oppsett eller USB-minnepinner er nødvendig.
+Etter tilkobling kan lærerne dine bruke TV-fjernkontrollen for å avansere gjennom videoer og lysbilder i sitt eget tempo mens leksjonen flyter. Ingen separat oppsett eller USB-enheter trengs.
 :::
 
 :::info
-For detaljerte steg om autentisering med en innholdsleverandør (QR-kode, skjemainnlogging osv.), se [Koble til leverandører](/docs/freeplay/content-providers/connecting-providers).
+For detaljerte trinn på autentisering med en innholdsleverandør (QR-kode, skjemalogging osv.), se [Tilkobling til leverandører](/docs/freeplay/content-providers/connecting-providers).
 :::
 
 ## Relaterte artikler
 
-- [Planlegge leksjoner](./scheduling-lessons.md)
-- [Tjenesteplaner](./plans.md)
+- [Planlegging av leksjoner](./scheduling-lessons.md)
+- [Serviceplan](./plans.md)
 - [FreePlay-oversikt](/docs/freeplay/)
-- [FreePlay — Innholdsleverandører](/docs/freeplay/content-providers/)
-- [FreePlay — Koble til leverandører](/docs/freeplay/content-providers/connecting-providers)
+- [FreePlay -- Innholdsleverandører](/docs/freeplay/content-providers/)
+- [FreePlay -- Tilkobling til leverandører](/docs/freeplay/content-providers/connecting-providers)

@@ -6,7 +6,7 @@ title: "Kalender erstellen"
 
 <div class="article-intro">
 
-Das Erstellen eines Kalenders in B1 Admin gibt Ihnen einen zentralen Ort zur Verwaltung von Veranstaltungen für einen Dienst, eine Abteilung oder Ihre gesamte Gemeinde. Jeder Kalender kann Veranstaltungen aus einer oder mehreren Gruppen einbeziehen, was die Organisation erleichtert.
+Das Erstellen eines Kalenders in B1 Admin gibt Ihnen einen zentralen Ort zur Verwaltung von Veranstaltungen für einen Dienst, eine Abteilung oder Ihre gesamte Kirche. Jeder Kalender kann Veranstaltungen aus einer oder mehreren Gruppen abrufen, was es einfach macht, alles organisiert zu halten.
 
 </div>
 
@@ -14,81 +14,82 @@ Das Erstellen eines Kalenders in B1 Admin gibt Ihnen einen zentralen Ort zur Ver
 <h4>Bevor Sie beginnen</h4>
 
 - Richten Sie die [Gruppen](../groups/creating-groups.md) ein, deren Veranstaltungen Sie in Ihren Kalender aufnehmen möchten
-- Sie benötigen administrativen Zugang zum Kalender-Bereich in B1 Admin
+- Sie benötigen Administratorzugriff auf den Abschnitt Kalender in B1 Admin
 
 </div>
 
-## Einen neuen Kalender erstellen
+## Erstellen eines neuen Kalenders
 
-1. Navigieren Sie zum Bereich **Kalender** in B1 Admin.
+1. Navigieren Sie zum Abschnitt **Kalender** in B1 Admin.
 2. Klicken Sie auf **Kalender hinzufügen**.
-3. Geben Sie einen **Namen** für Ihren Kalender ein (zum Beispiel „Jugendveranstaltungen" oder „Hauptkalender der Gemeinde").
-4. Fügen Sie eine optionale **Beschreibung** hinzu, damit Ihr Team versteht, wofür dieser Kalender gedacht ist.
+3. Geben Sie einen **Namen** für Ihren Kalender ein (zum Beispiel „Youth Ministry Events" oder „Main Church Calendar").
+4. Fügen Sie optional eine **Beschreibung** hinzu, um Ihrem Team zu helfen, den Zweck dieses Kalenders zu verstehen.
 5. Klicken Sie auf **Erstellen**, um Ihren neuen Kalender zu speichern.
 
-## Die Kalender-Detailseite
+## Die Seite "Kalender-Details"
 
 Nach dem Erstellen eines Kalenders klicken Sie darauf, um die Detailseite zu öffnen. Diese Seite hat zwei Hauptbereiche:
 
-- **Linke Spalte** -- Der Kalender- und Veranstaltungseditor. Hier können Sie Veranstaltungen in Ihrem Kalender anzeigen, hinzufügen und verwalten.
-- **Rechte Spalte** -- Die zugeordnete Gruppenliste. Diese zeigt, welche Gruppen Veranstaltungen in diesem Kalender haben.
+- **Linke Spalte** -- Der Kalender und Editor für Veranstaltungen. Hier können Sie Veranstaltungen in Ihrem Kalender anzeigen, hinzufügen und verwalten.
+- **Rechte Spalte** -- Die Liste der zugeordneten Gruppen. Dies zeigt, welche Gruppen Veranstaltungen in diesem Kalender haben.
 
 ## Veranstaltungen hinzufügen
 
-1. Verwenden Sie auf der Kalender-Detailseite den Kalendereditor auf der linken Seite, um neue Veranstaltungen hinzuzufügen.
-2. Legen Sie Name, Datum, Uhrzeit und weitere Details der Veranstaltung fest.
-3. Hinzugefügte Veranstaltungen erscheinen im Kalender und können auf Ihrer Website veröffentlicht werden.
+1. Verwenden Sie auf der Seite "Kalender-Details" den Kalender-Editor auf der linken Seite, um neue Veranstaltungen hinzuzufügen.
+2. Legen Sie den Namen der Veranstaltung, das Datum, die Uhrzeit und weitere Details fest.
+3. Die Veranstaltungen, die Sie hinzufügen, werden im Kalender angezeigt und können auf Ihrer Website veröffentlicht werden.
 
-## Gruppen verknüpfen
+## Gruppen verbinden
 
-Gruppen, die Veranstaltungen im Kalender haben, erscheinen automatisch in der Gruppenliste auf der rechten Seite der Detailseite.
+Gruppen, die Veranstaltungen im Kalender haben, werden automatisch in der Gruppenliste auf der rechten Seite der Detailseite angezeigt.
 
-1. Klicken Sie auf **Hinzufügen** im Gruppenbereich, um eine Gruppe mit Ihrem Kalender zu verknüpfen.
-2. Wählen Sie die Gruppe aus dem Dropdown-Menü aus.
-3. Wählen Sie, ob **alle Veranstaltungen** dieser Gruppe oder nur **bestimmte Veranstaltungen** einbezogen werden sollen.
+1. Klicken Sie auf **Hinzufügen** im Abschnitt "Gruppen", um eine Gruppe Ihrem Kalender zuzuordnen.
+2. Wählen Sie die Gruppe aus dem Dropdown aus.
+3. Wählen Sie aus, ob Sie **alle Veranstaltungen** aus dieser Gruppe oder nur **bestimmte Veranstaltungen** einbeziehen möchten.
 4. Klicken Sie auf **Speichern**.
 
 :::tip
-Das Verknüpfen von Gruppen mit Ihrem Kalender ist eine leistungsstarke Möglichkeit, Veranstaltungen automatisch zu bündeln. Wenn ein Gruppenleiter eine Veranstaltung zu seiner [Gruppe](../groups/creating-groups.md) hinzufügt, kann sie ohne zusätzlichen Aufwand in Ihren gemeindweiten Kalender einfließen.
+Das Verbinden von Gruppen mit Ihrem Kalender ist eine leistungsstarke Möglichkeit, Veranstaltungen automatisch zu aggregieren. Wenn ein Gruppenleiter eine Veranstaltung zu seiner [Gruppe](../groups/creating-groups.md) hinzufügt, kann sie ohne weitere Arbeit in Ihren kirchenweiten Kalender fließen.
 :::
 
 :::info
-Wenn Sie einen einzelnen Kalender erstellen möchten, der Veranstaltungen aus vielen Gruppen Ihrer Gemeinde zusammenfasst, siehe [Kuratierter Kalender](curated-calendar) für einen optimierten Ansatz.
+Wenn Sie einen einzelnen Kalender erstellen möchten, der Veranstaltungen aus vielen Gruppen in Ihrer Kirche abruft, siehe [Curated Calendar](curated-calendar) für einen optimierten Ansatz.
 :::
 
-## Veranstaltungsregistrierung aktivieren
+## Aktivieren Sie die Ereignisregistrierung
 
-Sie können die Registrierung für jede Kalenderveranstaltung aktivieren, damit sich Mitglieder über die B1-Website oder Mobile-App anmelden können.
+Sie können die Registrierung für beliebige Kalenderveranstaltungen aktivieren, damit sich Mitglieder über die B1-Website oder die mobile App anmelden können.
 
-1. Klicken Sie auf eine bestehende Veranstaltung oder erstellen Sie eine neue.
-2. Schalten Sie im Veranstaltungseditor die **Registrierung** ein.
+1. Klicken Sie auf eine vorhandene Veranstaltung oder erstellen Sie eine neue.
+2. Schalten Sie im Veranstaltungs-Editor **Registrierung** um, um sie zu aktivieren.
 3. Konfigurieren Sie die Registrierungseinstellungen:
    - **Kapazität** (optional) -- Legen Sie eine maximale Anzahl von Registrierungen fest. Lassen Sie das Feld leer für unbegrenzt.
-   - **Registrierung öffnet** -- Datum und Uhrzeit, ab wann die Registrierung verfügbar ist.
-   - **Registrierung schließt** -- Datum und Uhrzeit, wann die Registrierung endet.
-   - **Tags** -- Kommagetrennte Bezeichnungen (z. B. „Jugend, Freizeit, VBS"), um registrierbare Veranstaltungen zu kategorisieren.
+   - **Registrierung öffnet sich** -- Das Datum und die Uhrzeit, wenn die Registrierung verfügbar wird.
+   - **Registrierung schließt** -- Das Datum und die Uhrzeit, wenn die Registrierung endet.
+   - **Tags** -- Kommagetrennte Beschriftungen (z.B. „youth, retreat, vbs"), um registrierbare Veranstaltungen zu kategorisieren.
 4. Speichern Sie die Veranstaltung.
 
-Sobald die Registrierung aktiviert ist, sehen Mitglieder eine Schaltfläche **Für diese Veranstaltung registrieren**, wenn sie die Veranstaltung auf der [B1-Website](../../b1-church/events/registering) oder der [B1 Mobile-App](../../b1-mobile/events/registering) aufrufen.
+Sobald die Registrierung aktiviert ist, sehen Mitglieder eine Schaltfläche **Für diese Veranstaltung anmelden**, wenn sie die Veranstaltung auf der [B1-Website](../../b1-church/events/registering) oder in der [B1 Mobile App](../../b1-mobile/events/registering) anzeigen.
 
-### Registrierungen verwalten
+### Verwalten von Registrierungen
 
-So können Sie Registrierungen für Ihre Veranstaltungen anzeigen und verwalten:
+So zeigen und verwalten Sie Registrierungen für Ihre Veranstaltungen:
 
 1. Navigieren Sie zur Seite **Registrierungen** in B1 Admin.
-2. Sie sehen eine Tabelle aller Veranstaltungen mit aktivierter Registrierung, die den Veranstaltungstitel, das Datum, die aktuelle Registrierungsanzahl im Verhältnis zur Kapazität und Tags anzeigt.
-3. Klicken Sie auf eine Veranstaltung, um die vollständige Liste der Registrierungen zu sehen, einschließlich Namen, Mitgliederanzahl, Status und Registrierungsdatum.
-4. Von der Detailseite aus können Sie:
-   - Einzelne Registrierungen **stornieren**
-   - Registrierungen dauerhaft **löschen**
-   - Alle Registrierungen als CSV **exportieren**
+2. Sie sehen eine Tabelle mit allen Veranstaltungen mit aktivierter Registrierung, die den Titel der Veranstaltung, das Datum, die aktuelle Registrierungsanzahl vs. Kapazität und Tags anzeigt.
+3. Klicken Sie auf eine Veranstaltung, um die vollständige Liste der Registrierungen mit Namen, Mitgliederzahl, Status und Registrierungsdatum anzuzeigen.
+4. Auf der Detailseite können Sie:
+   - Einzelne Registrierungen **Abbrechen**
+   - Registrierungen **Löschen** (dauerhaft)
+   - Alle Registrierungen in CSV **Exportieren**
 
 :::tip
-Verwenden Sie den Kapazitätsfortschrittsbalken, um zu überwachen, wie schnell sich Veranstaltungen füllen. Der Balken wird rot, wenn eine Veranstaltung die Kapazität erreicht oder überschritten hat.
+Verwenden Sie die Kapazitäts-Fortschrittsleiste, um zu überwachen, wie schnell sich Veranstaltungen füllen. Der Balken wird rot, wenn eine Veranstaltung die Kapazität erreicht oder überschreitet.
 :::
 
 ## Nächste Schritte
 
-- [Kuratierter Kalender](curated-calendar) -- Einen Kalender erstellen, der aus mehreren Gruppen zusammengestellt wird
-- [Leitfaden zur Veranstaltungsregistrierung](../guides/event-registration) -- Schritt-für-Schritt-Anleitung zur Einrichtung der Veranstaltungsregistrierung
-- [Kalenderübersicht](./) -- Zurück zur Kalenderübersicht
+- [Curated Calendar](curated-calendar) -- Erstellen Sie einen Kalender, der aus mehreren Gruppen abruft
+- [Event Registration Guide](../guides/event-registration) -- Schritt-für-Schritt-Anleitung zum Einrichten der Ereignisregistrierung
+- [Calendars Overview](./) -- Zurück zur Kalender-Übersicht
+

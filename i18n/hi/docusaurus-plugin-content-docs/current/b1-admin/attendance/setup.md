@@ -1,64 +1,64 @@
 ---
-title: "उपस्थिति सेटअप"
+title: "Attendance Setup"
 ---
 
-# उपस्थिति सेटअप
+# Attendance Setup
 
 <div class="article-intro">
 
-उपस्थिति ट्रैक करने से पहले, आपको B1 Admin को अपने चर्च के भौतिक स्थानों, सेवाओं के समय और प्रत्येक सेवा में कौन से समूह मिलते हैं, यह बताना होगा। यह एकबारगी सेटअप वह संरचना बनाता है जो आपके चर्च में सभी उपस्थिति ट्रैकिंग और रिपोर्टिंग को संचालित करती है।
+इससे पहले कि आप attendance को track कर सकें, आपको B1 Admin को अपने चर्च के physical locations, जब services happen, और कौन से groups प्रत्येक service में meet करते हैं यह बताना चाहिए। यह एक-बार setup एक structure बनाता है जो आपके चर्च में सभी attendance tracking और reporting को power देता है।
 
 </div>
 
 <div class="prereqs">
-<h4>शुरू करने से पहले</h4>
+<h4>शुरुआत से पहले</h4>
 
-- आपको उपस्थिति प्रबंधित करने की अनुमति वाला एक सक्रिय B1 Admin अकाउंट चाहिए। यदि आप अपने एक्सेस स्तर के बारे में अनिश्चित हैं तो [भूमिकाएं और अनुमतियां](../people/roles-permissions.md) देखें।
-- यदि आप समूहों को सेवा समय में सौंपने की योजना बना रहे हैं, तो सुनिश्चित करें कि आपके [समूह पहले बनाए गए](../groups/creating-groups.md) हैं।
+- आपको एक active B1 Admin account की जरूरत है जिसमें attendance को manage करने की permission हो। यदि आप अपनी access level के बारे में unsure हैं तो [Roles & Permissions](../people/roles-permissions.md) देखें।
+- यदि आप groups को service times से assign करने की योजना बनाते हैं, तो पहले सुनिश्चित करें कि [आपके groups बनाए गए हैं](../groups/creating-groups.md)।
 
 </div>
 
-## मुख्य अवधारणाएं
+## Key Concepts
 
-- **परिसर** -- एक भौतिक स्थान जहां आपका चर्च मिलता है (जैसे, "मुख्य परिसर," "उत्तरी परिसर")।
-- **सेवा समय** -- एक परिसर में एक आवर्ती सभा (जैसे, "रविवार 9:00 AM," "बुधवार 7:00 PM")।
-- **अनुसूचित समूह** -- किसी विशिष्ट सेवा समय को सौंपा गया समूह। उपस्थिति उस सेवा के संदर्भ में ट्रैक की जाती है।
-- **अनिर्धारित समूह** -- एक समूह जो सेवा समय से बंधे बिना अपनी उपस्थिति स्वयं ट्रैक करता है।
+- **Campus** -- एक physical location जहां आपका चर्च meets (जैसे, "Main Campus," "North Campus")।
+- **Service Time** -- एक campus में एक recurring gathering (जैसे, "Sunday 9:00 AM," "Wednesday 7:00 PM")।
+- **Scheduled Group** -- एक group जो एक specific service time को assign किया जाता है। Attendance को उस service के context में track किया जाता है।
+- **Unscheduled Group** -- एक group जो एक service time से independently attendance को track करता है।
 
-## अपनी उपस्थिति संरचना सेट अप करना
+## अपनी Attendance Structure को Setup करना
 
-1. **B1 Admin** खोलें और साइडबार में **Attendance** पर क्लिक करें।
-2. **Setup** टैब चुनें।
-3. **Add Campus** पर क्लिक करें और अपने स्थान का नाम दर्ज करें। **Save** पर क्लिक करें।
-4. अपना परिसर चुनने के बाद, **Add Service Time** पर क्लिक करें। "Sunday 9:00 AM" जैसा नाम दर्ज करें और **Save** पर क्लिक करें।
-5. उस परिसर में प्रत्येक सेवा समय के लिए दोहराएं।
-6. किसी समूह को सेवा समय में सौंपने के लिए, सेवा समय चुनें और **Add Group** पर क्लिक करें। सूची से समूह चुनें और **Save** पर क्लिक करें।
+1. **B1 Admin** को खोलें और sidebar में **Attendance** को क्लिक करें।
+2. **Setup** tab को चुनें।
+3. **Add Campus** को क्लिक करें और अपनी location का नाम enter करें। **Save** को क्लिक करें।
+4. अपने campus को selected करके, **Add Service Time** को क्लिक करें। "Sunday 9:00 AM" जैसा नाम enter करें और **Save** को क्लिक करें।
+5. उस campus में प्रत्येक service time के लिए repeat करें।
+6. एक group को service time से assign करने के लिए, service time को चुनें और **Add Group** को क्लिक करें। List से group को चुनें और **Save** को क्लिक करें।
 
-### समूह पर उपस्थिति ट्रैकिंग सक्षम करना
+### Group पर Track Attendance को Enable करना
 
-किसी समूह की उपस्थिति दर्ज करने से पहले, उस समूह के लिए Track Attendance चालू होना चाहिए।
+इससे पहले कि एक group में attendance record किया जा सके, Track Attendance को उस group के लिए turn on होना चाहिए।
 
-1. साइडबार में **Groups** पर क्लिक करें और समूह चुनें।
-2. **Edit** पेंसिल आइकन पर क्लिक करें।
+1. Sidebar में **Groups** को क्लिक करें और group को चुनें।
+2. **Edit** pencil icon को क्लिक करें।
 3. **Track Attendance** को **Yes** पर सेट करें।
-4. **Save** पर क्लिक करें।
+4. **Save** को क्लिक करें।
 
 :::tip
-यदि आपने पिछले चरण में समूह को सेवा समय में सौंपा है, तो इसे सही सेवा से जोड़ने के लिए समूह की संपादन स्क्रीन पर **Add Service Time** विकल्प का भी उपयोग करें। यह सुनिश्चित करता है कि सत्र सही परिसर और समय से जुड़े हों।
+यदि आपने group को previous step में एक service time से assign किया है, तो group की edit screen पर **Add Service Time** option को भी use करें इसे correct service से link करने के लिए। यह सुनिश्चित करता है कि sessions को right campus और time से जोड़ा जाता है।
 :::
 
 :::tip
-यदि कोई समूह नियमित सेवा के बाहर मिलता है -- जैसे एक सप्ताह के मध्य का छोटा समूह जो अपनी उपस्थिति स्वयं ट्रैक करता है -- तो आप इसे अनिर्धारित समूह के रूप में छोड़ सकते हैं। यह अभी भी उपस्थिति रिपोर्टिंग के लिए Groups टैब पर दिखाई देगा।
+यदि एक group एक regular service के बाहर meet करता है -- जैसे एक midweek small group जो अपनी own attendance को track करता है -- तो आप इसे एक unscheduled group के रूप में छोड़ सकते हैं। यह फिर भी attendance reporting के लिए Groups tab पर appear होगा।
 :::
 
-## अपना सेटअप संपादित करना
+## अपनी Setup को Edit करना
 
-आप किसी भी समय अपना सेटअप अपडेट कर सकते हैं। एक परिसर, सेवा समय या समूह चुनें और उसका विवरण बदलने के लिए **Edit** पर या हटाने के लिए **Delete** पर क्लिक करें।
+आप किसी भी समय अपनी setup को update कर सकते हैं। एक campus, service time, या group को चुनें और इसके details को change करने के लिए **Edit** को क्लिक करें, या इसे remove करने के लिए **Delete** को क्लिक करें।
 
 :::info
-किसी सेवा समय को हटाने से पिछले उपस्थिति रिकॉर्ड नहीं मिटते। आपका ऐतिहासिक डेटा संरक्षित रहता है भले ही आप अपनी अनुसूची बदलें।
+एक service time को remove करना past attendance records को delete नहीं करता है। आपका historical data preserved रहता है भले ही आप अपनी schedule को change करें।
 :::
 
 ## आगे क्या है
 
-एक बार आपके परिसर, सेवा समय और समूह तैयार हो जाने पर, आप मैन्युअल रूप से [उपस्थिति दर्ज करना](recording-attendance.md) शुरू करने या अपनी सेवाओं के लिए [सेल्फ चेक-इन](check-in.md) सेट अप करने के लिए तैयार हैं।
+एक बार जब आपके campuses, service times, और groups जगह पर हों, तो आप [manually recording attendance](recording-attendance.md) को शुरू कर सकते हैं या अपनी services के लिए [self check-in](check-in.md) को setup कर सकते हैं।

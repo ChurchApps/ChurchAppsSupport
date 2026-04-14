@@ -1,54 +1,59 @@
 ---
-title: "Gruppen-Zeitachse"
+title: "Gruppen-Timeline"
 ---
 
-# Gruppen-Zeitachse
+# Gruppen-Timeline
 
 <div class="article-intro">
 
-Der Gruppen-Bildschirm in B1 Mobile enthaelt einen Zeitachsen-Feed, der Aktivitaeten aus all Ihren Gruppen in einem einheitlichen Stream zusammenfasst. Anstatt jede Gruppe einzeln zu pruefen, koennen Sie durch einen einzigen Feed scrollen, um alles zu sehen, was passiert.
+Der Abschnitt "Gruppen" in B1 Mobile enthält einen Timeline-Feed, der Aktivitäten aus all Ihren Gruppen in einen einheitlichen Stream bringt. Anstatt jede Gruppe einzeln zu überprüfen, können Sie einen einzelnen Feed durchlesen, um zu sehen, was passiert.
 
 </div>
+
+:::info
+Die Gruppen-Timeline-Funktion ist vorübergehend nicht verfügbar, während Verbesserungen vorgenommen werden. In der Zwischenzeit können Sie Ihre einzelnen Gruppen immer noch vom Abschnitt "Gruppen" aus durchsuchen.
+:::
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
 - [Installieren Sie B1 Mobile](../getting-started/installing) und [melden Sie sich an](../getting-started/logging-in) bei Ihrem Konto
-- Seien Sie Mitglied in mindestens einer Gruppe Ihrer Gemeinde
+- Seien Sie Mitglied mindestens einer Gruppe in Ihrer Kirche
 
 </div>
 
-## So funktioniert es
+## Wie es funktioniert
 
-Die Gruppen-Zeitachse vereint Beitraege, Gespraeche und Neuigkeiten aus jeder Gruppe, der Sie angehoeren. Wenn Gruppenleiter und Mitglieder Inhalte teilen, erscheinen diese in chronologischer Reihenfolge in der Zeitachse. So erhalten Sie ein vollstaendiges Bild Ihres Gruppenlebens, ohne zwischen verschiedenen Gruppen wechseln zu muessen.
+Die Gruppen-Timeline verschmilzt Beiträge, Gespräche und Updates aus jeder Gruppe, zu der Sie gehören. Wenn Gruppenleiter und Mitglieder Inhalte teilen, wird es in der Timeline in chronologischer Reihenfolge angezeigt. Das bedeutet, dass Sie ein vollständiges Bild Ihres Gruppenlebens erhalten, ohne zwischen verschiedenen Gruppen zu wechseln.
 
-## Was in der Zeitachse erscheint
+## Was in der Timeline angezeigt wird
 
-Die Zeitachse enthaelt verschiedene Inhalte aus all Ihren Gruppen:
+Die Timeline enthält verschiedene Inhalte aus Ihren Gruppen:
 
-- **Beitraege** -- Nachrichten und Neuigkeiten, die von Gruppenleitern und Mitgliedern geteilt werden.
-- **Gespraeche** -- Laufende Diskussionen in Ihren Gruppen.
-- **Neuigkeiten** -- Ankuendigungen, Veranstaltungserinnerungen und andere Aktivitaeten aus Ihren Gruppen.
+- **Beiträge** -- Nachrichten und Updates, die von Gruppenleitern und Mitgliedern geteilt werden.
+- **Gespräche** -- Laufende Diskussionen in Ihren Gruppen.
+- **Updates** -- Ankündigungen, Ereigniserinnerer und andere Aktivitäten aus Ihren Gruppen.
 
-Jeder Eintrag in der Zeitachse zeigt an, aus welcher Gruppe er stammt, sodass Sie immer den Kontext dessen kennen, was Sie lesen.
+Jedes Element in der Timeline zeigt, aus welcher Gruppe es stammt, damit Sie immer den Kontext von dem, was Sie lesen, kennen.
 
-## Auf dem Laufenden bleiben
+## Bleiben Sie auf dem Laufenden
 
-Die Zeitachse ist eine grossartige Moeglichkeit, mit Ihrer Gemeindegemeinschaft auf einen Blick in Kontakt zu bleiben. Hier sind einige Tipps, um das Beste daraus zu machen:
+Die Timeline ist eine großartige Möglichkeit, auf einen Blick mit Ihrer Kirchengemeinschaft verbunden zu bleiben. Hier sind ein paar Tipps, um das Beste daraus zu machen:
 
-- **Regelmaessig vorbeischauen** -- Oeffnen Sie den Gruppen-Bildschirm und scrollen Sie durch die Zeitachse, um sich ueber die neuesten Aktivitaeten zu informieren.
-- **Fuer mehr tippen** -- Wenn ein Beitrag Ihr Interesse weckt, tippen Sie darauf oder auf den Gruppennamen, um zur vollstaendigen [Gruppendetailseite](./group-details) fuer mehr Kontext zu gelangen.
-- **Alles an einem Ort** -- Sie muessen nicht jede Gruppe einzeln besuchen. Die Zeitachse bringt alle Aktivitaeten zu Ihnen.
+- **Überprüfen Sie regelmäßig** -- Öffnen Sie den Abschnitt "Gruppen" und durchlesen Sie die Timeline, um über aktuelle Aktivitäten auf dem Laufenden zu bleiben.
+- **Tippen Sie für mehr** -- Wenn ein Beitrag Ihre Aufmerksamkeit erregt, tippen Sie darauf oder tippen Sie auf den Gruppennamen, um zur vollständigen [Gruppendetailseite](./group-details) zu gehen, um mehr Kontext zu erhalten.
+- **Alles an einem Ort** -- Sie müssen jede Gruppe nicht separat besuchen. Die Timeline bringt alle Aktivität zu Ihnen.
 
 :::info
-Die Zeitachse zeigt nur Aktivitaeten aus Gruppen, die mit Ihrer Gemeinde verbunden sind. Wenn Sie keine Beitraege sehen, hatte Ihre Gruppe moeglicherweise keine aktuellen Aktivitaeten, oder Sie sind moeglicherweise noch kein Mitglied einer Gruppe.
+Die Timeline zeigt nur Aktivitäten von Gruppen an, die mit Ihrer Kirche verbunden sind. Wenn Sie keine Beiträge sehen, kann es bedeuten, dass Ihre Gruppen keine aktuelle Aktivität hatten oder Sie möglicherweise noch kein Mitglied einer Gruppe sind.
 :::
 
 :::tip
-Aktivieren Sie [Push-Benachrichtigungen](../community/notifications.md), um benachrichtigt zu werden, wenn neue Beitraege in Ihren Gruppen erscheinen, auch wenn Sie nicht in der App sind.
+Aktivieren Sie [Push-Benachrichtigungen](../community/notifications.md), um benachrichtigt zu werden, wenn neue Beiträge in Ihren Gruppen angezeigt werden, auch wenn Sie nicht in der App sind.
 :::
 
 ## Verwandte Artikel
 
-- [Gruppendetails](./group-details) -- Sehen Sie das vollstaendige Profil und die Beitraege einer einzelnen Gruppe ein
-- [Benachrichtigungen](../community/notifications.md) -- Werden Sie ueber Gruppenaktivitaeten benachrichtigt
+- [Gruppendetails](./group-details) -- Zeigen Sie das vollständige Profil und die Beiträge einer einzelnen Gruppe an
+- [Benachrichtigungen](../community/notifications.md) -- Erhalten Sie Benachrichtigungen über Gruppenaktivitäten
+

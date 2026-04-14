@@ -6,39 +6,42 @@ title: "B1 Mobile"
 
 <div class="article-intro">
 
-B1 Mobile ist die Begleit-App fuer B1.church, verfuegbar fuer iOS und Android. Sie gibt Gemeindemitgliedern unterwegs Zugriff auf alle Werkzeuge, die Ihre Gemeinde bereitstellt -- Gruppen, Spenden, Check-in, Dienstplaene, das Mitgliederverzeichnis, private Nachrichten, Predigten, Bibel, Tagesvers, Lektionen und mehr.
+B1 Mobile ist die Begleit-App für B1.church, verfügbar auf iOS und Android. Sie bietet Kirchenmitgliedern unterwegs Zugriff auf alle Tools, die Ihre Kirche bietet -- Gruppen, Spenden, Check-in, Service-Pläne, das Mitglieder-Verzeichnis, private Messaging, Predigten, Bibel, Vers des Tages, Lektionen und vieles mehr.
 
 </div>
 
-Die App verwendet Ihr ChurchApps-Konto, dasselbe, das Sie auf B1.church nutzen. Nach der Anmeldung und Auswahl Ihrer Gemeinde passt sich die App an das Branding und die Konfiguration Ihrer Gemeinde an. Wenn Sie mehreren Gemeinden angehoeren, koennen Sie jederzeit zwischen ihnen wechseln.
+Die App verwendet Ihr ChurchApps-Konto, das gleiche, das Sie auf B1.church verwenden. Nach der Anmeldung und Auswahl Ihrer Kirche passt sich die App an das Branding und die Konfiguration Ihrer Kirche an. Wenn Sie mehreren Kirchen angehören, können Sie jederzeit zwischen ihnen wechseln.
 
-B1 Mobile unterstuetzt Push-Benachrichtigungen, damit Sie keine wichtige Neuigkeit Ihrer Gemeinde oder Gruppen verpassen. Das Dashboard auf der Startseite passt sich Ihrem Nutzungsverhalten an -- die Funktionen, die Sie am haeufigsten besuchen, werden fuer schnellen Zugriff nach oben verschoben.
+B1 Mobile unterstützt Push-Benachrichtigungen, damit Sie kein wichtiges Update von Ihrer Kirche oder Ihren Gruppen verpassen. Das Home-Dashboard personalisiert sich basierend auf Ihrer Nutzung -- die Funktionen, die Sie am häufigsten besuchen, werden oben für schnellen Zugriff beworben.
 
-## Hauptfunktionen
+## Schlüsselfunktionen
 
-- **Gruppen** -- Sehen Sie Ihre Gruppen ein, nehmen Sie an Gespraechen teil und bleiben Sie mit Gruppenmitgliedern in Kontakt.
-- **Spenden** -- Taetigen Sie Spenden an Ihre Gemeinde direkt von Ihrem Telefon aus.
-- **Check-in** -- Melden Sie sich selbst und Ihre Haushaltsmitglieder fuer Gottesdienste und Veranstaltungen an.
-- **Dienstplaene** -- Sehen Sie bevorstehende Dienstplaene und Ihre zugewiesenen Ehrenamtlichen-Positionen ein.
-- **Mitgliederverzeichnis** -- Durchsuchen Sie das Verzeichnis Ihrer Gemeinde und sehen Sie Mitgliederprofile ein.
-- **Nachrichten** -- Senden und empfangen Sie private Nachrichten mit anderen Gemeindemitgliedern.
-- **Predigten** -- Schauen oder hoeren Sie Predigten Ihrer Gemeinde.
-- **Bibel** -- Lesen Sie die Bibel direkt in der App.
-- **Tagesvers** -- Starten Sie Ihren Tag mit einem taeglichen Bibelvers.
+- **Gruppen** -- Zeigen Sie Ihre Gruppen an, nehmen Sie an Gesprächen teil und bleiben Sie mit Gruppenmitgliedern verbunden.
+- **Spenden** -- Spenden Sie direkt von Ihrem Telefon an Ihre Kirche.
+- **Ereignisse** -- Durchsuchen Sie bevorstehende Ereignisse und registrieren Sie sich direkt von Ihrem Telefon.
+- **Check-In** -- Melden Sie sich selbst und Ihre Haushaltsitglieder für Services und Ereignisse an.
+- **Service-Pläne** -- Zeigen Sie bevorstehende Service-Pläne, Ihre zugewiesenen Freiwilligenposonen an und melden Sie sich für offene Positionen an.
+- **Mitglieder-Verzeichnis** -- Durchsuchen Sie Ihr Kirchenverzeichnis und zeigen Sie Mitglieder-Profile an.
+- **Messaging** -- Senden und empfangen Sie private Nachrichten mit anderen Kirchenmitgliedern.
+- **Predigten** -- Schauen Sie sich Predigten aus Ihrer Kirche an oder hören Sie diese an.
+- **Bibel** -- Lesen Sie die Bibel in der App.
+- **Vers des Tages** -- Beginnen Sie Ihren Tag mit einem täglichen Vers.
 - **Lektionen** -- Greifen Sie auf Lektionen von Lessons.church zu und arbeiten Sie diese durch.
 
-## Mehr erfahren
+## Weitere Informationen
 
-- [Erste Schritte](./getting-started/) -- Installieren Sie die App, erstellen Sie ein Konto und waehlen Sie Ihre Gemeinde.
-- [Dashboard](./dashboard/) -- Verstehen Sie Ihren personalisierten Startbildschirm.
-- [Gruppen](./groups/) -- Bleiben Sie mit Ihren Gemeindegruppen in Kontakt.
-- [Spenden](./giving/) -- Taetigen Sie Spenden von Ihrem Telefon aus.
-- [Check-in](./checkin/) -- Melden Sie sich fuer Gottesdienste und Veranstaltungen an.
-- [Dienst](./serving/) -- Sehen Sie Ihre Dienstplaene und Zuweisungen ein.
-- [Gemeinschaft](./community/) -- Durchsuchen Sie das Mitgliederverzeichnis und senden Sie Nachrichten.
-- [Inhalte](./content/) -- Predigten, Bibel, Tagesvers und Lektionen.
+- [Erste Schritte](./getting-started/) -- Installieren Sie die App, erstellen Sie ein Konto und wählen Sie Ihre Kirche.
+- [Dashboard](./dashboard/) -- Verstehen Sie Ihren personalisierten Home-Bildschirm.
+- [Gruppen](./groups/) -- Bleiben Sie mit Ihren Kirchengruppen verbunden.
+- [Spenden](./giving/) -- Spenden Sie von Ihrem Telefon.
+- [Ereignisse](./events/) -- Durchsuchen und registrieren Sie sich für bevorstehende Kirchenereignisse.
+- [Check-In](./checkin/) -- Melden Sie sich für Services und Ereignisse an.
+- [Serving](./serving/) -- Zeigen Sie Ihre Service-Pläne, Zuweisungen und Freiwilligenposonen an.
+- [Gemeinschaft](./community/) -- Durchsuchen Sie das Mitglieder-Verzeichnis und senden Sie Nachrichten.
+- [Inhalte](./content/) -- Predigten, Bibel, Vers des Tages und Lektionen.
 - [Profil](./profile/) -- Verwalten Sie Ihr Profil und Ihre Kontoeinstellungen.
 
 :::info
-B1 Mobile ist kostenlos zum Herunterladen und Nutzen. Ihr Gemeindeadministrator konfiguriert, welche Funktionen ueber [B1 Admin](/docs/b1-admin/) verfuegbar sind. Sie muessen lediglich die App herunterladen und sich anmelden, um loszulegen.
+B1 Mobile ist kostenlos herunterladbar und kostenlos verwendbar. Ihr Kirchenadministrator konfiguriert, welche Funktionen durch [B1 Admin](/docs/b1-admin/) verfügbar sind. Sie müssen nur die App herunterladen und sich anmelden, um zu beginnen.
 :::
+

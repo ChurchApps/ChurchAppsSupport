@@ -1,36 +1,35 @@
 ---
-title: "Visão Geral do FreePlay"
+title: "FreePlay"
 ---
 
-# Visão Geral do FreePlay
+# FreePlay
 
 <div class="article-intro">
 
-FreePlay é um aplicativo de TV para igrejas que exibe conteúdo de lições em TVs de salas de aula. Ele funciona em Android TV, Amazon Fire TV e Apple TV, e foi projetado para funcionar sem conexão com a internet nos domingos de manhã. Os voluntários podem baixar os materiais das lições durante a semana e simplesmente pressionar reproduzir quando a aula começar.
+FreePlay é um app de TV para igrejas que exibe conteúdo de aula em TVs de sala de aula. Funciona em Android TV, Amazon Fire TV e Apple TV e é projetado para funcionar sem uma conexão de internet nos domingos de manhã. Voluntários podem pré-baixar materiais de aula durante a semana, depois simplesmente pressionar play quando a aula começar.
 
 </div>
 
-## Principais Recursos
+## Características-Chave
 
-- **Reprodução offline** - Baixe vídeos e slides de imagem antecipadamente para nunca depender de Wi-Fi durante os cultos
-- **Pareamento com sala de aula** - Conecte sua TV a uma sala específica e receba automaticamente o conteúdo da lição agendada
-- **Pareamento com plano** - Vincule seu dispositivo a um plano de culto da igreja para conteúdo coordenado entre as salas
-- **Provedores de conteúdo** - Navegue e baixe conteúdo de fontes externas como [Lessons.church](/docs/lessons-church/) e Bible Project
-- **Compatível com controle remoto de TV** - Navegue por todo o aplicativo com um controle remoto de TV padrão usando botões direcionais e selecionar
-- **Barra lateral recolhível** - Uma barra lateral compacta mantém a navegação acessível sem sobrecarregar a tela
+- **Reprodução offline** - Baixe vídeos e slides de imagem com antecedência para nunca depender de Wi-Fi durante serviços
+- **Gerenciamento de downloads** - Visualize e gerencie todo conteúdo que foi baixado para o dispositivo a partir da aba dedicada Downloads
+- **Emparelhamento de sala de aula** - Conecte sua TV a uma sala específica e receba automaticamente conteúdo de aula agendado
+- **Emparelhamento de plano** - Vincule seu dispositivo a um plano de serviço da iglesia para conteúdo coordenado em salas
+- **Provedores de conteúdo** - Procure e baixe conteúdo de fontes externas como Lessons.church e Bible Project
+- **Amigável a controle remoto de TV** - Navegue todo o app com um controle remoto de TV padrão usando botões direcionais e select
+- **Barra lateral recolhível** - Uma barra lateral fina mantém a navegação acessível sem desordenar a tela
 
 ## Como Funciona
 
-Quando você inicia o FreePlay, ele se conecta aos seus provedores de conteúdo e verifica o conteúdo disponível. A partir daí, você pode navegar por pastas, baixar mídias e reproduzir lições -- tudo otimizado para uma experiência de TV em tela grande.
+Quando você lança FreePlay, ele se conecta aos seus provedores de conteúdo e verifica por conteúdo disponível. A partir daí você pode procurar pastas, baixar mídia e tocar aulas -- tudo otimizado para uma experiência de TV de tela grande.
 
 ## Seções
 
-- **[Primeiros Passos](./getting-started/)** - Instale o aplicativo, inicie-o e escolha como se conectar
-- **[Modo Sala de Aula](./classroom-mode/)** - Pareie com uma sala de aula e reproduza lições agendadas
-- **[Modo Plano](./plan-mode/)** - Pareie com um plano de culto da igreja
-- **[Provedores de Conteúdo](./content-providers/)** - Conecte-se a fontes de conteúdo externas
-- **[Navegando pelas Lições](./browsing-lessons/)** - Explore a biblioteca completa de lições por programa e estudo
+- **[Começando](./getting-started/)** - Instale o app, lance-o e escolha como se conectar
+- **[Modo de Sala de Aula](./classroom-mode/)** - Emparelhe a uma sala de aula e toque aulas agendadas
+- **[Provedores de Conteúdo](./content-providers/)** - Conecte a fontes de conteúdo externas
 
 :::info
-FreePlay faz parte do conjunto de ferramentas gratuitas e de código aberto [ChurchApps](https://churchapps.org) para igrejas.
+FreePlay é parte da suite ChurchApps de ferramentas livres e de código aberto para igrejas.
 :::

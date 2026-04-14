@@ -1,54 +1,58 @@
 ---
-title: "Gruppetidslinje"
+title: "Grupp-tidslinje"
 ---
 
-# Gruppetidslinje
+# Grupp-tidslinje
 
 <div class="article-intro">
 
-Grupper-skjermen i B1 Mobile inkluderer en tidslinjestroel som samler aktivitet fra alle gruppene dine i en samlet stroem. I stedet for a sjekke hver gruppe individuelt, kan du bla gjennom en enkelt stroem for a se alt som skjer.
+Gruppeskjermen i B1 Mobil inneholder en tidslinjestrøm som samler aktivitet fra alle gruppene i én enhetlig strøm. I stedet for å sjekke hver gruppe individuelt, kan du scrolle gjennom en enkelt strøm for å se alt som skjer.
 
 </div>
-
-<div class="prereqs">
-<h4>For Du Begynner</h4>
-
-- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) pa kontoen din
-- Vaer medlem av minst en gruppe i kirken din
-
-</div>
-
-## Hvordan Det Fungerer
-
-Gruppetidslinjen slaar sammen innlegg, samtaler og oppdateringer fra alle gruppene du tilhorer. Nar gruppeledere og medlemmer deler innhold, vises det i tidslinjen i kronologisk rekkefoelge. Dette betyr at du far et komplett bilde av gruppelivet ditt uten a bytte mellom forskjellige grupper.
-
-## Hva Som Vises i Tidslinjen
-
-Tidslinjen inkluderer en rekke innhold fra alle gruppene dine:
-
-- **Innlegg** -- Meldinger og oppdateringer delt av gruppeledere og medlemmer.
-- **Samtaler** -- Pagaende diskusjoner i gruppene dine.
-- **Oppdateringer** -- Kunngjoeringer, hendelsespaminnelser og annen aktivitet fra gruppene dine.
-
-Hvert element i tidslinjen viser hvilken gruppe det kom fra, slik at du alltid kjenner konteksten for det du leser.
-
-## Holde Seg Oppdatert
-
-Tidslinjen er en fin mate a holde kontakten med kirkefellesskapet ditt pa et overblikk. Her er noen tips for a fa mest mulig ut av den:
-
-- **Sjekk regelmessig** -- Apne Grupper-skjermen og bla gjennom tidslinjen for a folge med pa nylig aktivitet.
-- **Trykk for mer** -- Hvis et innlegg fanger oppmerksomheten din, trykk pa det eller trykk pa gruppenavnet for a ga til den fulle [gruppedetaljsiden](./group-details) for mer kontekst.
-- **Alt pa ett sted** -- Du trenger ikke a besoeke hver gruppe separat. Tidslinjen bringer all aktivitet til deg.
 
 :::info
-Tidslinjen viser bare aktivitet fra grupper tilknyttet kirken din. Hvis du ikke ser noen innlegg, kan det bety at gruppene dine ikke har hatt nylig aktivitet, eller at du kanskje ikke er medlem av noen grupper enna.
+Gruppetidslinjefunksjonen er midlertidig utilgjengelig mens forbedringer gjøres. I mellomtiden kan du fortsatt bla gjennom enkeltgruppene fra gruppeskjermen.
+:::
+
+<div class="prereqs">
+<h4>Før du begynner</h4>
+
+- [Installer B1 Mobil](../getting-started/installing) og [logg på](../getting-started/logging-in) kontoen din
+- Vær medlem av minst en gruppe på kirken
+
+</div>
+
+## Hvordan det fungerer
+
+Gruppetidslinjen slår sammen innlegg, samtaler og oppdateringer fra alle gruppene du tilhører. Når gruppeleders og medlemmer deler innhold, vises det i tidslinjen i kronologisk rekkefølge. Dette betyr at du får et fullstendig bilde av gruppemengdene dine uten å bytte mellom ulike grupper.
+
+## Hva vises i tidslinjen
+
+Tidslinjen inkluderer en rekke innhold fra alle gruppene:
+
+- **Innlegg** -- Meldinger og oppdateringer delt av gruppeleders og medlemmer.
+- **Samtaler** -- Pågående diskusjoner som skjer innenfor gruppene.
+- **Oppdateringer** -- Kunngjøringer, hendelsespåminnelser og annen aktivitet fra gruppene.
+
+Hver element i tidslinjen viser hvilken gruppe det kom fra, slik at du alltid vet konteksten for det du leser.
+
+## Holde deg oppdatert
+
+Tidslinjen er en fin måte å holde kontakten med kirkemenigheten på et øyeblikk. Her er noen tips for å få det beste ut av det:
+
+- **Sjekk regelmessig** -- Åpne gruppeskjermen og scroll gjennom tidslinjen for å holde deg oppdatert på nylig aktivitet.
+- **Trykk for mer** -- Hvis et innlegg fanger blikket, trykk det eller gruppenavnet for å gå til den fullstendige [gruppdetaljsiden](./group-details) for mer kontekst.
+- **Alt på ett sted** -- Du trenger ikke besøke hver gruppe separat. Tidslinjen bringer all aktivitet til deg.
+
+:::info
+Tidslinjen viser kun aktivitet fra grupper knyttet til kirken. Hvis du ikke ser noen innlegg, kan det bety at gruppene dine ikke har hatt nylig aktivitet, eller du er kanskje ikke medlem av noen grupper ennå.
 :::
 
 :::tip
-Aktiver [push-varsler](../community/notifications.md) for a bli varslet nar nye innlegg vises i gruppene dine, selv nar du ikke er i appen.
+Aktiver [pushvarsler](../community/notifications.md) for å bli varslet når nye innlegg vises i gruppene dine, selv når du ikke er i appen.
 :::
 
-## Relaterte Artikler
+## Relaterte artikler
 
-- [Gruppedetaljer](./group-details) -- Se en enkelt gruppes fulle profil og innlegg
-- [Varsler](../community/notifications.md) -- Bli varslet om gruppeaktivitet
+- [Gruppdetaljer](./group-details) -- Se en enkelt gruppens full profil og innlegg
+- [Varsler](../community/notifications.md) -- Få varsling om gruppaktivitet

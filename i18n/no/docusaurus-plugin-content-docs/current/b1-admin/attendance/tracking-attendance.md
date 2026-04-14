@@ -1,63 +1,63 @@
 ---
-title: "Spore oppmøte"
+title: "Sporing av oppmøte"
 ---
 
-# Spore oppmøte
+# Sporing av oppmøte
 
 <div class="article-intro">
 
-Når campus, gudstjenestetider og grupper er konfigurert, gjør B1 Admin det enkelt å gjennomgå oppmøtedata og oppdage trender. Oppmøtesiden har to rapportvisninger — fanen **Oppmøte** for kirkeomfattende trender og fanen **Grupper** for gruppenivådetaljer. Bruk disse verktøyene for å forstå vekstmønstre, identifisere synkende engasjement og ta datadrevne beslutninger for kirken din.
+Når campuser, servicetider og grupper er konfigurert, gjør B1 Admin det enkelt å gjennomgå oppmøtedata og få øye på trender. Oppmøte-siden gir to rapportvisninger -- **Oppmøte**-fanen for kirkebrede trender og **Grupper**-fanen for gruppenivoådetaljer. Bruk disse verktøyene for å forstå vekstmønstre, identifisere synkende engasjement og ta datadrevne beslutninger for kirken din.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Oppmøtestrukturen din må være satt opp med minst ett campus og én gudstjenestetid. Se [Oppmøteoppsett](setup.md) hvis du ikke har gjort dette ennå.
-- Oppmøtedata må være registrert før rapporter viser resultater. Data kan komme fra [manuell registrering](recording-attendance.md) eller [selvbetjent innsjekking](check-in.md).
+- Oppmøtestrukturen din må være satt opp med minst en campus og servicetid. Se [Oppmøte-oppsett](setup.md) hvis du ikke har gjort dette ennå.
+- Oppmøtedata må registreres før rapporter vil vise resultater. Data kan komme fra [manuell registrering](recording-attendance.md) eller [selvbetjent innsjekking](check-in.md).
 
 </div>
 
-## Vise oppmøtetrender
+## Visning av oppmøtetrender
 
-1. Åpne **B1 Admin** og klikk **Oppmøte** i sidefeltet.
-2. Velg fanen **Oppmøte**.
-3. Rapporten kjøres automatisk når fanen åpnes, og viser oppmøte over en standard datoperiode.
+1. Åpne **B1 Admin** og klikk **Oppmøte** i sidestolpen.
+2. Velg **Oppmøte**-fanen.
+3. Rapporten kjører automatisk når fanen åpnes, og viser oppmøte over en standarddatoområde.
 
-## Filtrere dataene dine
+## Filtrering av dataene dine
 
 Bruk filtrene øverst på siden for å begrense resultatene:
 
-- **Datoperiode** -- velg en start- og sluttdato for å fokusere på en bestemt periode.
-- **Campus** -- velg et campus for å se oppmøte kun for den lokasjonen.
-- **Gudstjenestetid** -- velg en gudstjenestetid for å se nærmere på en bestemt samling.
+- **Datoområde** -- velg en start- og sluttdato for å fokusere på en bestemt periode.
+- **Campus** -- velg en campus for å se oppmøte bare for det stedet.
+- **Servicetid** -- velg en servicetid for å drille inn i et bestemt møte.
 
-Diagrammet og dataene oppdateres så snart du endrer et filter, slik at du raskt kan sammenligne ulike tidsperioder eller lokasjoner.
+Diagrammet og dataene oppdateres så snart du endrer et filter, slik at du raskt kan sammenligne ulike tidsperioder eller steder.
 
 :::info
-Rapporter kjøres automatisk hver gang du åpner Oppmøte-fanen, slik at du alltid ser oppdaterte tall uten å måtte klikke på en oppdateringsknapp.
+Rapporter kjøres automatisk hver gang du åpner Oppmøte-fanen, så du vil alltid se oppdaterte tall uten å trenge å klikke en oppfriskingsknapp.
 :::
 
 ## Gruppeoppmøte
 
-Fanen **Grupper** viser oppmøte fordelt på individuell gruppe. Dette er nyttig når du ønsker å overvåke en bestemt klasse, tjenesteteam eller smågruppe i stedet for å se på samlede gudstjenestetall.
+Fanen **Grupper** viser oppmøte delt ned etter individuelle grupper. Dette er nyttig når du vil overvåke en spesifikk klasse, misjonsgruppe eller liten gruppe i stedet for å se på samlede servicetall.
 
 1. Velg fanen **Grupper**.
 2. Velg en gruppe fra listen for å se oppmøtehistorikken.
-3. Bruk datoperiode-filteret for å justere rapportvinduet.
+3. Bruk datoområdefilteret for å justere rapporteringsvinduet.
 
 :::tip
-Gruppeoppmøte er spesielt verdifullt for [smågruppe](../groups/creating-groups.md)-ledere som ønsker å spore engasjement innen gruppen sin over tid.
+Gruppeoppmøte er spesielt verdifullt for [smågruppe](../groups/creating-groups.md)-ledere som vil spore engasjement innen deres gruppe over tid.
 :::
 
 ## Tips for bruk av oppmøtedata
 
-- Gjennomgå trender månedlig for å fange opp sesongmønstre tidlig.
-- Sammenlign data på campusnivå for å forstå hvilke lokasjoner som vokser.
-- Bruk rapporter på gruppenivå for å følge opp [grupper](../groups/group-members.md) som viser synkende oppmøte.
-- Kombiner oppmøteinnsikt med [AI-søk](../people/ai-search.md)-verktøyet for å finne personer som ikke har deltatt nylig.
+- Gjennomgå trender månedlig for å oppdage sesongmessige mønstre tidlig.
+- Sammenlign data på campusnivå for å forstå hvilke steder som vokser.
+- Bruk rapporter på gruppennivå for å følge opp med [grupper](../groups/group-members.md) som viser synkende oppmøte.
+- Kombiner oppmøteinnsikter med [AI-søk](../people/ai-search.md)-verktøyet for å finne personer som ikke har møtt opp nylig.
 
 ## Relaterte sider
 
-- [Registrere oppmøte](recording-attendance.md) -- registrer oppmøte manuelt for en gruppesamling
+- [Registrering av oppmøte](recording-attendance.md) -- manuell registrering av oppmøte for en gruppeøkt
 - [Innsjekking](check-in.md) -- sett opp selvbetjent innsjekking slik at oppmøte registreres automatisk

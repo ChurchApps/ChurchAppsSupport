@@ -1,69 +1,70 @@
 ---
-title: "Forste oppsett"
+title: "Innledende oppsett"
 ---
 
-# Forste oppsett
+# Innledende oppsett
 
 <div class="article-intro">
 
-Etter at du har opprettet kontoen din og kirken din, er det noen viktige steg a konfigurere for du inviterer teamet ditt. Denne guiden veileder deg gjennom den anbefalte oppsettrekkefolgen slik at kirken din er klar fra dag en.
+Etter å ha opprettet kontoen og kirken, er det noen viktige trinn for å konfigurere før du inviterer teamet ditt. Denne veiledningen leder deg gjennom den anbefalte oppsettsrekkefølgen slik at kirken er klar fra dag en.
 
 </div>
 
 <div class="prereqs">
-<h4>For du begynner</h4>
+<h4>Før du begynner</h4>
 
-- [Opprett kontoen din](./create-account.md) og registrer kirken din
-- Ha kirkens logo og merkevareressurser klare (valgfritt, men anbefalt)
+- [Opprett kontoen din](./create-account.md) og registrer kirken
+- Ha kirkens logo og merkevareaktiva klare (valgfritt, men anbefalt)
 
 </div>
 
-## Steg 1: Konfigurer kirkeinformasjonen din
+## Trinn 1: Konfigurer kirkeinformasjonen
 
-1. Naviger til **Innstillinger** i venstre sidefelt.
-2. Klikk pa **Rediger innstillinger**.
-3. Skriv inn kirkens **navn**, **adresse** og **kontaktinformasjon**.
-4. Klikk pa **Lagre** for a bruke endringene.
+1. Gå til **Innstillinger** i venstre sidefelt.
+2. Klikk **Rediger innstillinger**.
+3. Oppgi kirkens **navn**, **adresse** og **kontaktdetaljer**.
+4. Klikk **Lagre** for å bruke endringene.
 
-## Steg 2: Sett opp merkevarebyggingen din
+## Trinn 2: Sett opp merkevaren
 
-1. Fra **Innstillinger**-siden, last opp **kirkelogoen** din.
-2. Konfigurer eventuelle ekstra merkevarealternativer som farger og bilder.
-3. Merkevarebyggingen din vil vises pa B1.church-nettstedet ditt og i B1 Mobile-appen.
+1. Fra **Instrumentbordet**, gå til **Nettsted**, og velg deretter **Utseende**.
+2. Last opp kirkens **logo**.
+3. Konfigurer eventuelle tilleggsmerkevarealternativer som farger og bilder.
+4. Merkevaren vil vises på B1.church-nettstedet og i B1 Mobile-appen.
 
 :::tip
-A ha logoen og merkevarebyggingen klar for du inviterer teammedlemmer gir et profesjonelt forsteinntrykk nar de logger inn.
+Å ha logoen og merkevaren klar før du inviterer teammedlemmer gir et polert første inntrykk når de logger på.
 :::
 
-## Steg 3: Konfigurer roller og inviter teamet ditt
+## Trinn 3: Konfigurer roller og inviter teamet ditt
 
-1. Klikk pa **Roller** fra **Innstillinger**-siden.
-2. Opprett roller for teamet ditt (for eksempel "Pastor", "Sekretar", "Kasserer").
-3. Tildel passende tillatelser til hver rolle.
-4. Legg til teammedlemmer ved a soke etter kontoene deres og tildele dem roller.
+1. Klikk **Roller** fra **Innstillinger**-siden.
+2. Opprett roller for teamet ditt (f.eks. "Pastor", "Sekretær", "Kasserer").
+3. Tilordne passende tillatelser til hver rolle.
+4. Legg til teammedlemmer ved å søke etter kontiene og tilordne dem til roller.
 
-## Steg 4: Sett opp hovedomradene dine
+## Trinn 4: Sett opp nøkkelområdene
 
-Med teamet pa plass, begynn a bygge ut kjerneomradene i B1 Admin:
+Med teamet på plass, begynn å bygge kjernearealene i B1 Admin:
 
-1. **Personer** -- Legg til medlemmer i kirkekatalogen din. Dette er grunnlaget for alt annet, sa begynn her. Du kan legge til personer manuelt eller bruke **Import**-verktøyet fra **Innstillinger**.
-2. **Grupper** -- Opprett grupper for smagrupper, tjenesteteam, klasser og andre samlinger.
-3. **Oppmote** -- Konfigurer campus, gudstjenester og gudstjenestetider for oppmoteregistrering.
-4. **Donasjoner** -- Sett opp donasjonsfond og koble til betalingslosningen din (Stripe) for a ta imot gaver pa nett.
-5. **Nettsted** -- Bygg det offentlige kirkenettstedet ditt med B1.church-nettstedsbyggeren.
+1. **Personer** -- Legg til medlemmer i kirkemappen. Dette er grunnlaget for alt annet, så start her. Du kan legge til personer manuelt eller bruke **Importer**-verktøyet fra **Innstillinger**.
+2. **Grupper** -- Opprett grupper for smågrupper, misjonsgrupper, klasser og andre samlinger.
+3. **Oppmøte** -- Konfigurer campuser, servicer og servicetider for oppmøtesporing.
+4. **Donasjoner** -- Sett opp donasjonfond og koble betalingsgatewayen (Stripe) for å godta nettgiving.
+5. **Nettsted** -- Bygg offentlig kirkens nettsted ved hjelp av B1.church-nettstedbyggeren.
 
 :::info
-Du trenger ikke a sette opp alle omradene pa en gang. Mange kirker begynner med **Personer** og **Grupper**, og legger deretter til **Oppmote** og **Donasjoner** etter hvert som de blir komfortable med plattformen.
+Du trenger ikke å sette opp alle områder på en gang. Mange kirker starter med **Personer** og **Grupper**, og legger deretter til **Oppmøte** og **Donasjoner** når de blir komfortable med plattformen.
 :::
 
-## Anbefalt rekkefolge
+## Anbefalt rekkefølge
 
-For den smidigste oppsettsopplevelsen foreslår vi denne rekkefolgen:
+For den jevneste oppsettsopplevelsen, foreslår vi denne rekkefølgen:
 
-1. **Personer** -- Legg til medlemmene og de faste deltakerne forst.
-2. **Grupper** -- Organiser folk i meningsfulle grupper.
-3. **Oppmote** -- Begynn a registrere hvem som kommer hver uke.
-4. **Donasjoner** -- Sett opp gaver nar personene dine er i systemet.
-5. **Nettsted** -- Bygg det offentlige nettstedet ditt til slutt, etter at dataene er pa plass.
+1. **Personer** -- Legg til medlemmer og vanlige besøkende først.
+2. **Grupper** -- Organisér mennesker i meningsfulle grupper.
+3. **Oppmøte** -- Begynn å spore hvem som møter opp hver uke.
+4. **Donasjoner** -- Sett opp giving når personene dine er i systemet.
+5. **Nettsted** -- Bygg det offentlig vendte nettstedet sist, etter at dataene er på plass.
 
-Nar du har fullfort disse stegene, er kirken din klar. Utforsk [B1 Admin](/docs/b1-admin/)-dokumentasjonen for detaljerte guider for hvert omrade.
+Når du har fullført disse trinnene, er kirken klar til å gå. Utforsk [B1 Admin](/docs/b1-admin/)-dokumentasjonen for detaljerte guider på hvert område.

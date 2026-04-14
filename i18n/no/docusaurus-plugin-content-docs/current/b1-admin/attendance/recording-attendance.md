@@ -1,65 +1,65 @@
 ---
-title: "Registrere oppmøte"
+title: "Registrering av oppmøte"
 ---
 
-# Registrere oppmøte
+# Registrering av oppmøte
 
 <div class="article-intro">
 
-Når campus, gudstjenestetider og grupper er satt opp, kan du manuelt registrere oppmøte etter hver samling. B1 Admin organiserer oppmøte rundt **samlinger** — én samling per gruppe per møtedato. Du oppretter samlingen, markerer hvem som var til stede, og dataene mates direkte inn i oppmøterapportene dine.
+Når campuser, servicetider og grupper er satt opp, kan du manuelt registrere oppmøte etter hvert møte. B1 Admin organiserer oppmøte rundt **økter** -- en økt per gruppe per møtedato. Du oppretter økten, markerer hvem som møtte opp, og dataene flyter direkte inn i oppmøterapportene dine.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Campus, gudstjenestetider og grupper må være konfigurert. Se [Oppmøteoppsett](setup.md) hvis du ikke har gjort dette ennå.
-- Gruppene du vil spore må ha **Spor oppmøte** aktivert. Se [Oppmøteoppsett](setup.md) for detaljer.
+- Campuser, servicetider og grupper må være konfigurert. Se [Oppmøte-oppsett](setup.md) hvis du ikke har gjort dette ennå.
+- Gruppene du vil spore må ha **Sporing av oppmøte** aktivert. Se [Oppmøte-oppsett](setup.md) for detaljer.
 
 </div>
 
-## Opprette en samling
+## Opprettelse av en økt
 
-En samling representerer én forekomst av et gruppemøte — for eksempel K–3. klasse-klassen din en bestemt søndag.
+En økt representerer ett forekomst av et gruppemøte -- for eksempel klassen din for K-3. klasse på en bestemt søndag.
 
-1. Åpne **B1 Admin** og klikk **Grupper** i sidefeltet.
+1. Åpne **B1 Admin** og klikk **Grupper** i sidestolpen.
 2. Velg gruppen du vil registrere oppmøte for.
-3. Klikk på fanen **Samlinger**.
-4. Klikk **Ny** for å opprette en ny samling.
-5. Hvis gruppen er tilordnet en gudstjenestetid, velg **Gudstjenestetid**. Hvis det er en uplanlagt gruppe, vil ikke dette feltet vises.
-6. Velg **Samlingsdato** — dette kan være i dag, en tidligere dato eller en fremtidig dato.
+3. Klikk **Økter**-fanen.
+4. Klikk **Ny** for å opprette en ny økt.
+5. Hvis gruppen er tilordnet en servicetid, velger du **Servicetid**. Hvis det er en uplanlagt gruppe, vil ikke dette feltet vises.
+6. Velg **Øktdatoen** -- dette kan være i dag, en tidligere dato eller en fremtidig dato.
 7. Klikk **Lagre**.
 
 :::tip
-Du kan opprette samlinger for tidligere datoer for å ta igjen oppmøte du ikke har registrert ennå, eller opprette dem på forhånd slik at de er klare når gruppen møtes.
+Du kan opprette økter for tidligere datoer for å ta igjen oppmøte du ikke har registrert ennå, eller opprette dem på forhånd slik at de er klare når gruppen din møtes.
 :::
 
-## Markere oppmøte
+## Markering av oppmøte
 
-Etter at samlingen er lagret, vises gruppens medlemmer på høyre side av siden.
+Etter lagring av økten vises gruppens medlemmer på høyre side av siden.
 
-1. Merk av i boksen ved siden av hver person som var til stede.
-2. Endringer lagres automatisk — det er ingen ekstra Lagre-knapp for oppmøtemerker.
+1. Merk av boksen ved siden av hver person som møtte opp.
+2. Endringer lagres automatisk -- det er ingen ekstra Lagre-knapp for oppmøtemarkeringer.
 
 :::info
-Kun nåværende gruppemedlemmer vises i samlingslisten. Hvis noen deltok men ikke er i gruppen ennå, [legg dem til i gruppen](../groups/group-members.md) først, og registrer deretter oppmøtet deres.
+Bare gjeldende gruppemedlemmer vises i øktlisten. Hvis noen møtte opp men ikke er i gruppen ennå, [legg dem til gruppen](../groups/group-members.md) først, deretter registrer oppmøtet deres.
 :::
 
-## Eksportere oppmøte til et regneark
+## Eksport av oppmøte til et regneark
 
-Du kan laste ned en registrering av samlingen som en CSV-fil for bruk i Excel, Numbers eller Google Sheets.
+Du kan laste ned en post over økten som en CSV-fil for bruk i Excel, Numbers eller Google Sheets.
 
-1. Åpne samlingen du vil eksportere.
-2. Klikk på knappen **Last ned CSV**.
-3. Åpne den nedlastede filen i regnearkaprogrammet ditt.
+1. Åpne økten du vil eksportere.
+2. Klikk **Last ned CSV**-knappen.
+3. Åpne den nedlastede filen i regnearksapplikasjonen din.
 
-## Vise registrert oppmøte
+## Visning av registrert oppmøte
 
-Etter at samlinger er registrert, vises dataene i oppmøterapportene dine.
+Etter registrering av økter vises dataene i oppmøterapportene dine.
 
-- **Oppmøte-fanen** -- viser kirkeomfattende trender over tid. Se [Spore oppmøte](tracking-attendance.md).
-- **Grupper-fanen** -- viser oppmøte fordelt på individuell gruppe.
+- **Oppmøte-fanen** -- viser kirkebrede trender over tid. Se [Sporing av oppmøte](tracking-attendance.md).
+- **Grupper-fanen** -- viser oppmøte delt ned etter individuelle grupper.
 
 :::tip
-Hvis en samling du nettopp opprettet ikke vises i rapporter med en gang, sørg for at samlingsdatoen faller innenfor datoperioden valgt i rapportfiltrene.
+Hvis en økt du nettopp opprettet ikke vises i rapporter med en gang, sørg for at øktdatoen faller innenfor datoområdet valgt i rapportfiltrene.
 :::

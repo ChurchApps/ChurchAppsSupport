@@ -63,6 +63,10 @@ Removing a navigation link does not delete the page itself. The page still exist
 You can add [forms](../forms/creating-forms.md) to your pages to collect registrations, prayer requests, or other information from visitors.
 :::
 
+## Image Lightbox
+
+When visitors click on an image on your website, it opens in a full-screen lightbox overlay. This lets people view photos at a larger size without leaving the page. No configuration is required — the lightbox is enabled automatically for images in your page content.
+
 ## Next Steps
 
 - [Initial Setup](initial-setup) -- First-time setup instructions

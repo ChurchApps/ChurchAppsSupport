@@ -1,71 +1,73 @@
 ---
-title: "Logge Inn"
+title: "Pålogging"
 ---
 
-# Logge Inn
+# Pålogging
 
 <div class="article-intro">
 
-Før kiosken kan brukes til innsjekking, må du logge inn med en ChurchApps-konto som har tilgang til kirken din. Denne siden dekker førstegangs innloggingsprosess, kirkevalg, automatisk innlogging og hvordan du logger ut.
+Før kioskene kan brukes for innsjekking, må du logge på med en ChurchApps-konto som har tilgang til kirken. Denne siden dekker prosessen for pålogging første gang, kirkeutvalg, auto-pålogging og hvordan du logger ut.
 
 </div>
 
 <div class="prereqs">
-<h4>Før Du Begynner</h4>
+<h4>Før du begynner</h4>
 
-- Installer B1 Church Checkin på Android-nettbrettet ditt (se [Kom i Gang](./index.md))
-- Ha e-posten og passordet for ChurchApps-kontoen din klart
+- Installer B1 Church Checkin på Android-nettbrettet (se [Getting Started](./index.md))
+- Ha e-postadressen og passord for ChurchApps-kontoen klar
 
 </div>
 
-## Førstegangs Innlogging
+## Pålogging første gang
 
-1. Åpne B1 Church Checkin-appen. Etter startskjermen vil du se innloggingsskjermen med B1 Church Checkin-logoen.
-2. Skriv inn **e-postadressen** din i det første feltet.
-3. Skriv inn **passordet** ditt i det andre feltet.
-4. Trykk på **Login**-knappen.
+1. Åpne B1 Church Checkin-appen. Etter velkomstskjermen, vil du se påloggingsskjermen med B1 Church Checkin-logoen.
+2. Skriv inn **e-postadressen** i det første feltet.
+3. Skriv inn **passord** i det andre feltet.
+4. Trykk på **Logg på**-knappen.
 
-Appen validerer legitimasjonen din og logger deg inn. Hvis e-posten eller passordet er feil, vil du se en feilmelding nederst på skjermen.
+Appen validerer legitimasjonen og logger deg på. Hvis e-postadressen eller passord er feil, vil du se en feilmelding på bunnen av skjermen.
 
 :::info
-Dette er den samme e-posten og passordet du bruker for B1 Admin eller andre ChurchApps-produkter. Du trenger ikke en separat konto for innsjekkingskiosken.
+Dette er samme e-postadresse og passord du bruker for B1 Admin eller andre ChurchApps-produkter. Du trenger ikke en separat konto for innsjekkingskioskene.
 :::
 
-## Velge Kirken Din
+## Valg av kirke
 
-Etter en vellykket innlogging laster appen inn en liste over kirker knyttet til kontoen din. Hver kirke vises som et kort som viser kirkenavnet og logoen (hvis en er konfigurert i B1 Admin).
+Etter en vellykket pålogging laster appen en liste over kirker som er knyttet til kontoen. Hver kirke vises som et kort som viser kirkens navn og logo (hvis en har blitt konfigurert i B1 Admin).
 
-- Hvis kontoen din er knyttet til **bare én kirke**, vil du fortsatt se valgskjermen. Trykk på kirken din for å fortsette.
-- Hvis kontoen din er knyttet til **flere kirker**, trykk på kirken du vil at denne kiosken skal betjene.
+- Hvis kontoen din er knyttet til **bare en kirke**, vil du fortsatt se valgsSkjermen. Trykk på kirken for å fortsette.
+- Hvis kontoen din er knyttet til **flere kirker**, trykk på kirken du vil at kioskene skal tjene.
 
-Når du velger en kirke, laster appen inn kirkens profil og utseendeinnstillinger. Kirkelogoen din vises i toppteksten på alle påfølgende skjermer.
+Når du velger en kirke, laster appen kirkens merkevare- og utseendeinnstillinger. Kirkens logo vil vises i toppteksten på alle påfølgende skjermer.
 
-## Automatisk Innlogging ved Gjentatte Besøk
+## Auto-pålogging ved retur
 
-Appen lagrer e-posten, passordet og valgt kirke etter første vellykkede innlogging. Ved fremtidige oppstarter:
+Appen lagrer e-postadressen, passord og valgt kirke etter den første vellykkede påloggingen. Ved fremtidsbommer:
 
-- Appen logger automatisk inn med den lagrede legitimasjonen.
-- Hvis du tidligere valgte en kirke, gjenoppretter den dette valget og tar deg direkte til **gudstjenesteskjermen**.
-- Hvis den lagrede legitimasjonen ikke lenger er gyldig, går appen tilbake til innloggingsskjermen slik at du kan logge inn igjen.
+- Appen logger automatisk på med lagrede legitimasjon.
+- Hvis du tidligere valgte en kirke, gjenoppretter den valget og tar deg direkte til **serviceskjermen**.
+- Hvis den lagrede legitimasjonen ikke lenger er gyldig, returnerer appen til påloggingsskjermen slik at du kan logge på igjen.
 
 :::tip
-Fordi kiosken logger inn automatisk, trenger du bare å skrive inn legitimasjonen én gang under det første oppsettet. Etter det kan nettbrettet slås på og det vil være klart til bruk.
+Fordi kioskene auto-logger på, trenger du bare å oppgi legitimasjon en gang under innledende oppsett. Etter det kan nettbrettet slås på og det vil være klart.
 :::
 
-## Logge Ut
+## Admin-innstillinger
 
-Utlogging er med vilje skjult slik at kirkemedlemmer som bruker kiosken ikke kan logge ut ved et uhell. For å logge ut:
+Admin-innstillinger er bevisst skjult slik at kirkens medlemmer som bruker kioskene ikke kan endre konfigurasjonen. For å få tilgang til dem:
 
-1. Trykk på **kirkelogoen** i toppteksten **syv ganger** i rask rekkefølge (innen to sekunder).
-2. En bekreftelsesdialog vises som spør om du vil logge ut.
-3. Trykk **Logout** for å bekrefte, eller **Cancel** for å forbli innlogget.
-
-Dette sletter den lagrede legitimasjonen din og tar deg tilbake til innloggingsskjermen.
+1. Trykk på **kirkens logo** i toppteksten **sju ganger** i rask rekkefølge (innen to sekunder).
+2. Hvis en kiosk-PIN er satt, oppgi PIN når du blir bedt.
+3. **Admin Settings**-skjermen vil åpne med følgende alternativer:
+   - **Endre service** -- bytte valgt servicetid
+   - **Endre skriver** -- åpne [skriverinnstillinger](./printer-setup) for å søke etter og velge en skriver
+   - **Angi / endre PIN** -- angi eller oppdater kiosk-PIN som beskytter administratoradgang
+   - **Logg ut** -- logg ut og gå tilbake til påloggingsskjermen
 
 :::warning
-Å logge ut sletter all lagret legitimasjon og kirkevalg. Du må skrive inn e-posten og passordet ditt på nytt for å bruke kiosken igjen. Logg bare ut når du trenger å bytte konto eller rekonfigurere kiosken.
+Pålogging fjerner alle lagrede legitimasjon og kirkeutvalg. Du må legge inn e-postadressen og passord igjen for å bruke kioskene. Logg bare ut når du må bytte kontoer eller omkonfigurere kioskene.
 :::
 
-## Neste Trinn
+## Neste trinn
 
-Når du er logget inn, kan du [sette opp en skriver](./printer-setup) eller gå direkte til [innsjekkingsarbeidsflyten](../check-in/).
+Når du er logget på, kan du [sette opp en skriver](./printer-setup) eller gå direkte til [innsjekkingsarbeidsflyten](../check-in/).

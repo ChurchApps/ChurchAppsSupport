@@ -1,57 +1,57 @@
 ---
-title: "Drittanbieter"
+title: "Drittanbieter-Anbieter"
 ---
 
-# Drittanbieter
+# Drittanbieter-Anbieter
 
 <div class="article-intro">
 
-Lessons.church unterstützt externe Lehrplananbieter über das Open Lesson Format. Das bedeutet, dass Sie Inhalte von anderen Organisationen importieren und neben der integrierten Bibliothek verfügbar machen können, sodass Gemeinden an einem Ort auf Lehrpläne aus mehreren Quellen zugreifen können.
+Lessons.church unterstützt externe Lehrplan-Anbieter über das Open Lesson Format. Dies bedeutet, dass Sie Inhalte von anderen Organisationen importieren und zusammen mit der eingebauten Bibliothek verfügbar machen können, was Kirchen Zugriff auf Lehrpläne von mehreren Quellen an einem Ort gibt.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Verfügen Sie über Administratorberechtigungen für Lessons.church (siehe [Administrationsübersicht](./index.md))
-- Beschaffen Sie die Feed-URL des externen Anbieters, den Sie anbinden möchten
+- Haben Sie Admin-Berechtigungen für Lessons.church (siehe die [Verwaltungs-Übersicht](./index.md))
+- Besorgen Sie sich die Feed-URL von dem externen Anbieter, den Sie verbinden möchten
 
 </div>
 
 ## Einen Anbieter hinzufügen
 
-1. Navigieren Sie zum **Admin**-Bereich.
-2. Öffnen Sie die Seite **Third-Party**.
-3. Klicken Sie auf **Add Provider** (oder die entsprechende Schaltfläche zum Hinzufügen einer neuen Verbindung).
-4. Geben Sie die **Feed-URL** des Anbieters ein. Dies ist die URL, unter der der Anbieter seine Lehrplandaten im Open Lesson Format veröffentlicht.
+1. Navigieren Sie zum Bereich **Verwaltung**.
+2. Öffnen Sie die Seite **Drittanbieter**.
+3. Klicken Sie auf **Anbieter hinzufügen** (oder die äquivalente Schaltfläche zum Hinzufügen einer neuen Verbindung).
+4. Geben Sie die **Feed-URL** des Anbieters ein. Dies ist die URL, wo der Anbieter seinen Lehrplan in dem Open Lesson Format veröffentlicht.
 5. Speichern Sie die Verbindung.
 
-Nach dem Speichern importiert Lessons.church die Inhalte des Anbieters. Dessen Programme, Studienreihen und Lektionen erscheinen in der Lehrplanbibliothek neben Ihren eigenen Inhalten.
+Sobald gespeichert, wird Lessons.church die Inhalte des Anbieters importieren. Ihre Programme, Studien und Lektionen werden neben Ihren eigenen Inhalten in der Lehrplan-Bibliothek angezeigt.
 
 ## Anbieter verwalten
 
-Auf der Seite **Third-Party** können Sie alle verbundenen Anbieter sehen. Für jeden Anbieter können Sie:
+Von der Seite **Drittanbieter** können Sie alle verbundenen Anbieter sehen. Für jeden Anbieter können Sie:
 
-- Die importierten Inhalte **anzeigen**, um zu bestätigen, dass sie korrekt übernommen wurden.
-- Die Feed-URL **aktualisieren**, falls der Anbieter seinen Endpunkt ändert.
-- Einen Anbieter **entfernen**, wenn Sie dessen Inhalte nicht mehr einbeziehen möchten.
+- **Ansicht** die importierten Inhalte, um zu bestätigen, dass sie ordnungsgemäß eingezogen wurden.
+- **Aktualisierung** der Feed-URL, wenn der Anbieter seinen Endpunkt ändert.
+- **Entfernen** ein Anbieter, wenn Sie nicht mehr, seine Inhalte einzubeziehen möchten.
 
 ## Was ist das Open Lesson Format?
 
-Das Open Lesson Format ist ein standardisiertes Schema, das Lehrplaninhalte -- Programme, Studienreihen, Lektionen, Veranstaltungsorte, Abschnitte und Aktionen -- strukturiert beschreibt. Jede Organisation, die ihre Inhalte in diesem Format veröffentlicht, kann als Anbieter in Lessons.church hinzugefügt werden.
+Das Open Lesson Format ist ein standardisiertes Schema, das Lehrplan-Inhalte beschreibt — Programme, Studien, Lektionen, Orte, Abschnitte und Aktionen — auf strukturierte Weise. Jede Organisation, die ihren Inhalt mit diesem Format veröffentlicht, kann als Anbieter in Lessons.church hinzugefügt werden.
 
-Wenn Sie ein Inhaltsanbieter sind und Ihren Lehrplan über Lessons.church verfügbar machen möchten, finden Sie die vollständige Schema-Dokumentation im [Open Lesson Schema](./open-lesson-format.md)-Repository.
+Wenn Sie ein Inhalts-Anbieter sind, der Ihren Lehrplan durch Lessons.church verfügbar machen möchte, können Sie die vollständige Schema-Dokumentation im [Open Lesson Format](./open-lesson-format.md)-Anleitung finden.
 
-## Warum Drittanbieter nutzen?
+## Warum externe Anbieter verwenden?
 
-- **Mehr Auswahl für Gemeinden** -- Gemeinden können eine größere Vielfalt an Lehrplänen durchsuchen, ohne die Plattform zu verlassen.
-- **Alles an einem Ort** -- Freiwillige und Koordinatoren müssen nicht mehrere Webseiten besuchen, um Lektionen zu finden und zu planen.
-- **Einfache Einrichtung** -- Das Hinzufügen eines Anbieters erfordert nur eine Feed-URL. Es ist keine manuelle Dateneingabe oder kein Datei-Upload erforderlich.
+- **Mehr Auswahlmöglichkeiten für Kirchen** — Kirchen können eine breitere Vielfalt an Lehrplänen durchsuchen, ohne die Plattform zu verlassen.
+- **Ein Ort für alles** — Freiwillige und Koordinatoren müssen nicht mehrere Websites besuchen, um Lektionen zu finden und zu planen.
+- **Einfache Konfiguration** — Das Hinzufügen eines Anbieters erfordert nur eine Feed-URL. Es gibt keine manuelle Dateneingabe oder Datei-Upload.
 
 :::info
-Drittanbieter-Inhalte werden vom externen Anbieter verwaltet. Wenn Sie fehlende oder veraltete Inhalte eines Anbieters bemerken, muss das Problem möglicherweise auf dessen Seite gelöst werden.
+Drittanbieter-Inhalte werden vom externen Anbieter verwaltet. Wenn Sie fehlende oder veraltete Inhalte von einem Anbieter bemerken, muss das Problem möglicherweise auf ihrer Seite gelöst werden.
 :::
 
 :::tip
-Für die Konfiguration externer Anbieter auf Gemeindeebene (nicht auf Admin-Ebene) siehe die Seite [Externe Anbieter](../browsing/external-providers.md) im Abschnitt „Inhalte durchsuchen".
+Für Kirchenlevel-Konfiguration externer Anbieter (nicht Admin-Level), siehe die [Externe Anbieter](../browsing/external-providers.md)-Seite im Browsing-Bereich.
 :::

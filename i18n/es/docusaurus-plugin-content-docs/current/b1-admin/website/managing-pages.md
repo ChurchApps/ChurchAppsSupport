@@ -1,70 +1,74 @@
 ---
-title: "GestiÃ³n de PÃ¡ginas"
+title: "Gestión de Páginas"
 ---
 
-# GestiÃ³n de PÃ¡ginas
+# Gestión de Páginas
 
 <div class="article-intro">
 
-La vista de PÃ¡ginas del Sitio Web es su centro principal para crear, editar y organizar todas las pÃ¡ginas de su sitio web de la iglesia. Puede gestionar tanto el contenido de sus pÃ¡ginas como la navegaciÃ³n de su sitio desde esta Ãºnica pantalla.
+La vista de Páginas del Sitio Web es su centro central para crear, editar y organizar todas las páginas en su sitio web de iglesia. Puede gestionar tanto el contenido de su página como la navegación de su sitio desde esta única pantalla.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- Complete la [ConfiguraciÃ³n Inicial](initial-setup) para configurar su dominio y la configuraciÃ³n bÃ¡sica del sitio
-- Tenga su contenido e imÃ¡genes listos. Use el gestor de [Archivos](files) para subir recursos multimedia primero.
+- Complete la [Configuración Inicial](initial-setup) para configurar su dominio y configuración básica del sitio
+- Tenga su contenido e imágenes listos. Use el [Administrador de Archivos](files) para cargar activos de medios primero.
 
 </div>
 
-## Comprender los Tipos de PÃ¡gina
+## Comprensión de Tipos de Página
 
-La tabla de **PÃ¡ginas** lista cada pÃ¡gina de su sitio junto con su estado:
+La tabla **Páginas** lista cada página en su sitio junto con su estado:
 
-- **Generada** -- PÃ¡ginas que fueron creadas automÃ¡ticamente por el sistema basÃ¡ndose en los datos de su iglesia (por ejemplo, una pÃ¡gina de Grupos o una pÃ¡gina de Sermones). Estas pÃ¡ginas se actualizan solas a medida que cambian sus datos.
-- **Personalizada** -- PÃ¡ginas que usted creÃ³ con su propio contenido y diseÃ±o.
+- **Generada** -- Páginas que fueron creadas automáticamente por el sistema basadas en los datos de su iglesia (por ejemplo, una página de Grupos o página de Sermones). Estas páginas se actualizan a sí mismas a medida que sus datos cambian.
+- **Personalizada** -- Páginas que usted creó con su propio contenido y diseño.
 
-Puede convertir cualquier pÃ¡gina generada automÃ¡ticamente en una pÃ¡gina personalizada si desea tener control total sobre su contenido y diseÃ±o.
+Puede convertir cualquier página generada automáticamente en una página personalizada si desea control total sobre su contenido y diseño.
 
-## Agregar y Editar PÃ¡ginas
+## Adición y Edición de Páginas
 
-1. Haga clic en el botÃ³n **Agregar PÃ¡gina** en la esquina superior derecha de la tabla de PÃ¡ginas.
-2. Elija un tipo de pÃ¡gina (en blanco o una plantilla) y asÃ­gnele un nombre.
-3. Haga clic en **Editar** junto a cualquier pÃ¡gina para abrir el constructor de pÃ¡ginas, donde puede agregar secciones, texto, imÃ¡genes y otros elementos.
-4. Haga clic en **ConfiguraciÃ³n de PÃ¡gina** para actualizar el tÃ­tulo de la pÃ¡gina, la ruta URL y otros metadatos.
-5. Use el botÃ³n **Vista Previa** para abrir su pÃ¡gina en una nueva ventana y ver exactamente cÃ³mo se verÃ¡ para los visitantes.
+1. Haga clic en el botón **Agregar Página** en la esquina superior derecha de la tabla de Páginas.
+2. Elija un tipo de página (en blanco o una plantilla) y dé un nombre.
+3. Haga clic en **Editar** junto a cualquier página para abrir el constructor de páginas, donde puede agregar secciones, texto, imágenes y otros elementos.
+4. Haga clic en **Configuración de Página** para actualizar el título de la página, ruta de URL y otros metadatos.
+5. Use el botón **Vista Previa** para abrir su página en una nueva ventana y ver exactamente cómo se verá para los visitantes.
 
 :::tip
-Para su pÃ¡gina de inicio, establezca la ruta URL simplemente como `/`. Para todas las demÃ¡s pÃ¡ginas, use una ruta descriptiva como `/acerca-de` o `/contacto`.
+Para su página de inicio, establezca la ruta de URL en simplemente `/`. Para todas las otras páginas, use una ruta descriptiva como `/about` o `/contact`.
 :::
 
-## Gestionar la NavegaciÃ³n
+## Gestión de Navegación
 
-La barra lateral izquierda de la vista de PÃ¡ginas del Sitio Web muestra sus enlaces de navegaciÃ³n. Estos enlaces controlan el menÃº que los visitantes ven en su sitio web.
+La barra lateral izquierda de la vista de Páginas del Sitio Web muestra sus enlaces de navegación. Estos enlaces controlan el menú que los visitantes ven en su sitio web.
 
-1. Haga clic en **Agregar** para crear un nuevo enlace de navegaciÃ³n. Puede apuntarlo a cualquier pÃ¡gina de su sitio o a una URL externa.
-2. Para reordenar los enlaces, arrÃ¡strelos y suÃ©ltelos en el orden que desee. TambiÃ©n puede anidar enlaces bajo un elemento padre para crear menÃºs desplegables.
-3. Haga clic en el icono de **Editar** junto a cualquier enlace para cambiar su etiqueta, URL o posiciÃ³n.
-4. Para eliminar un enlace de la navegaciÃ³n, haga clic en el icono de **Eliminar**.
+1. Haga clic en **Agregar** para crear un nuevo enlace de navegación. Puede señalarlo a cualquier página en su sitio o a una URL externa.
+2. Para reordenar enlaces, arrastre y suéltelos en el orden que desea. También puede anidar enlaces bajo un elemento padre para crear menús desplegables.
+3. Haga clic en el **icono de Edición** junto a cualquier enlace para cambiar su etiqueta, URL o posición.
+4. Para eliminar un enlace de la navegación, haga clic en el **icono de Eliminación**.
 
 :::info
-Eliminar un enlace de navegaciÃ³n no elimina la pÃ¡gina en sÃ­. La pÃ¡gina sigue existiendo y se puede acceder directamente por su URL -- simplemente no aparecerÃ¡ en el menÃº.
+Eliminar un enlace de navegación no elimina la página en sí. La página aún existe y se puede acceder directamente por su URL -- simplemente no aparecerá en el menú.
 :::
 
-## Consejos para Organizar su Sitio
+## Consejos para Organizar Su Sitio
 
-- Mantenga su navegaciÃ³n de nivel superior en cinco o seis elementos para que los visitantes puedan encontrar las cosas rÃ¡pidamente.
-- Use enlaces anidados para subpÃ¡ginas relacionadas (por ejemplo, un menÃº desplegable "Acerca de" con "Nuestro Equipo," "Creencias" e "Historia").
-- Revise su navegaciÃ³n en dispositivos mÃ³viles haciendo clic en **Vista Previa MÃ³vil** para asegurarse de que funcione bien en pantallas mÃ¡s pequeÃ±as.
-- DÃ© a las pÃ¡ginas nombres claros y descriptivos que ayuden a los visitantes a entender lo que encontrarÃ¡n.
+- Mantenga su navegación de nivel superior a cinco o seis elementos para que los visitantes encuentren cosas rápidamente.
+- Use enlaces anidados para sub-páginas relacionadas (por ejemplo, un desplegable "Acerca de" con "Nuestro Equipo", "Creencias" e "Historia").
+- Revise su navegación en dispositivos móviles haciendo clic en **Vista Previa Móvil** para asegurarse de que funcione bien en pantallas más pequeñas.
+- Dé a las páginas nombres claros y descriptivos que ayuden a los visitantes a entender qué encontrarán.
 
 :::tip
-Puede agregar [formularios](../forms/creating-forms.md) a sus pÃ¡ginas para recopilar inscripciones, solicitudes de oraciÃ³n u otra informaciÃ³n de los visitantes.
+Puede agregar [formularios](../forms/creating-forms.md) a sus páginas para recopilar registros, solicitudes de oración u otra información de los visitantes.
 :::
 
-## PrÃ³ximos Pasos
+## Caja de Luz de Imagen
 
-- [ConfiguraciÃ³n Inicial](initial-setup) -- Instrucciones de configuraciÃ³n por primera vez
-- [Apariencia](appearance) -- Personalice el tema visual de su sitio
-- [Archivos](files) -- Suba y gestione recursos multimedia para sus pÃ¡ginas
+Cuando los visitantes hacen clic en una imagen en su sitio web, se abre en una superposición de caja de luz en pantalla completa. Esto permite a las personas ver fotos en un tamaño más grande sin dejar la página. No se requiere configuración — la caja de luz se habilita automáticamente para imágenes en su contenido de página.
+
+## Próximos Pasos
+
+- [Configuración Inicial](initial-setup) -- Instrucciones de configuración por primera vez
+- [Apariencia](appearance) -- Personalizar el tema visual de su sitio
+- [Archivos](files) -- Cargar y gestionar activos de medios para sus páginas

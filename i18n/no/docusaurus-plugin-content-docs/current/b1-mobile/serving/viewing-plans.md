@@ -1,56 +1,64 @@
 ---
-title: "Se Planer"
+title: "Visning av planer"
 ---
 
-# Se Planer
+# Visning av planer
 
 <div class="article-intro">
 
-Planskjermen i B1 Mobile gir deg et komplett bilde av tjenesteplanen din. Den er organisert i to faner slik at du raskt kan finne neste tildeling eller se tilbake pa tjenestehistorikken din.
+Plansskjermen i B1 Mobil gir deg et fullstendig bilde av serviceschemaet ditt. Det er organisert i to faner slik at du raskt kan finne neste oppgave eller se tilbake på servicehistorikken.
 
 </div>
 
 <div class="prereqs">
-<h4>For Du Begynner</h4>
+<h4>Før du begynner</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) pa kontoen din
-- Vaer tildelt minst en tjenesteplan av kirkens administrator
+- [Installer B1 Mobil](../getting-started/installing) og [logg på](../getting-started/logging-in) kontoen din
+- Vær tilordnet minst en serviceplan av kirkens administrator
 
 </div>
 
-## Tilgang til Planene
+## Tilgang til planene dine
 
-1. Trykk pa **Tjeneste** i bunnnavigasjonen.
-2. Planskjermen apnes med to faner overst: **Kommende** og **Tidligere**.
+1. Trykk på **Tjeneste** i nedre navigasjon.
+2. Plansskjermen åpnes med to faner øverst: **Kommende** og **Tidligere**.
 
-## Kommende-fanen
+## Den kommende fanen
 
-**Kommende**-fanen er hovedvisningen din for hva som kommer. Overst ser du et hero-kort som fremhever din aller neste tildeling, inkludert plannavn, dato og din posisjon. Dette gjor det enkelt a vite med et blikk nar du trengs.
+**Kommende**-fanen er din go-to-visning for hva som kommer neste. Øverst vil du se et herokort som fremhever den helt neste oppgaven, inkludert plannavnet, datoen og posisjonen. Dette gjør det enkelt å vite når du trengs på et øyeblikk.
 
-Under hero-kortet finner du et sett med oppsummeringsstatistikk som viser hvor mange av tildelingene dine som er i hver status:
+Under herokortet vil du finne en rekke oppsummeringsstats som viser hvor mange av oppgavene som er i hver status:
 
-- **Forespurt** -- Du har blitt bedt om a tjene, men har ikke svart enna.
-- **Bekreftet** -- Du har akseptert tildelingen.
-- **Ventende** -- Tildelingen venter pa ytterligere handling.
+- **Bedt om** -- Du har blitt bedt om å tjene, men har ikke ennå svart.
+- **Bekreftet** -- Du har akseptert oppgaven.
+- **Venter** -- Oppgaven venter på videre handling.
 
-Lenger ned pa skjermen lister en tabell opp alle kommende tjenestetider med datoer, posisjoner og statuser.
+Lenger ned på skjermen, en tabell viser alle kommende servicetider med datoer, posisjoner og statuser.
 
-## Tidligere-fanen
+## Den tidligere fanen
 
-Trykk pa **Tidligere**-fanen for a bytte til tjenestehistorikken din. Denne visningen viser alle planene du tidligere har tjent i, listet i omvendt kronologisk rekkefoelge. Det er en fin mate a holde oversikt over bidragene dine over tid.
+Trykk på **Tidligere**-fanen for å bytte til servicehistorikken. Denne visningen viser alle planene du tidligere har tjent, oppført i omvendt kronologisk rekkefølge. Det er en flott måte å holde styr på bidragene over tid.
 
-## Se Plandetaljer
+## Visning av plandetaljer
 
-Trykk pa en plan -- enten kommende eller tidligere -- for a apne de fulle detaljene. Detaljvisningen inkluderer:
+Trykk på enhver plan -- enten kommende eller tidligere -- for å åpne fullstendige detaljer. Detaljvisningen inkluderer:
 
-- **Gudstjenesteorden** -- Den komplette gudstjenesteordenen med tider og elementdetaljer slik at du kan se flyten i gudstjenesten.
-- **Din tildeling** -- Posisjonen din, tidspunktet du trengs og din navaerende status.
-- **Teamtildelinger** -- Et sammendrag av alle som tjener i planen, slik at du kan se hvem andre som er pa teamet.
+- **Serviceorden** -- Den fullstendige rekkefølgen på tjenesten med timing og elementdetaljer slik at du kan se flyten på tjenesten.
+- **Din oppgave** -- Din posisjon, tiden du trengs og din nåværende status.
+- **Teamoppgaver** -- Et sammendrag av alle som tjener i planen, slik at du kan se hvem ellers som er på teamet.
+
+## Utskrift av planer
+
+Du kan skrive ut en plandetaljer for offline-referanse. Fra plandetaljvisningen, bruk **print**-alternativet for å generere en utskrivbar versjon av serviceordren og oppgavene. Dette er nyttig for øvelser, backstage-referanse eller deling med teammedlemmer som foretrekker en papirkopi.
 
 :::tip
-Sjekk **Kommende**-fanen regelmessig for a holde deg oppdatert pa planen. Hero-kortet viser alltid din aller neste forpliktelse, slik at du kan apne appen og vite med en gang nar du tjener neste gang.
+Sjekk **Kommende**-fanen regelmessig for å holde deg på toppen av planen. Herokortet viser alltid den helt neste forpliktelsen, slik at du kan åpne appen og vite med en gang når du tjener neste.
 :::
 
 :::info
-Du mottar [push-varsler](../community/notifications.md) nar du blir tildelt en ny plan eller nar tildelingsstatusen din endres, slik at du aldri gar glipp av en oppdatering.
+Du vil motta [pushvarsler](../community/notifications.md) når du blir tilordnet en ny plan eller når oppgavestatus endres, slik at du aldri mister en oppdatering.
 :::
+
+## Relaterte artikler
+
+- [Frivolligpåmelding](./volunteer-signup) -- Bla gjennom og meld deg på åpne frivolligposisjoner

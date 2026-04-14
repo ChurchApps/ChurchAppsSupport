@@ -1,57 +1,57 @@
 ---
-title: "Opprette grupper"
+title: "Opprettelse av grupper"
 ---
 
-# Opprette grupper
+# Opprettelse av grupper
 
 <div class="article-intro">
 
-A opprette en gruppe i B1 Admin er enkelt. Du setter opp en kategori, gir gruppen et navn, og konfigurerer deretter innstillingene. Grupper hjelper deg med a organisere kirken din i meningsfulle enheter som smagrupper, tjenesteteam, komiteer og klasser.
+Opprettelse av en gruppe i B1 Admin er enkelt. Du setter opp en kategori, gir gruppen navn, og konfigurerer deretter innstillingene. Grupper hjelper deg med å organisere kirken din i meningfulle enheter som smågrupper, utvalg og klasser.
 
 </div>
 
 <div class="prereqs">
-<h4>For du begynner</h4>
+<h4>Før du begynner</h4>
 
-- Du trenger en aktiv B1 Admin-konto med tillatelse til a administrere grupper. Se [Roller og tillatelser](../people/roles-permissions.md) hvis du er usikker pa tilgangsnivat ditt.
-- Bestem deg for en kategoristruktur for gruppene dine (for eksempel "Smagrupper," "Tjenester," "Komiteer"). Kategorier hjelper med a holde relaterte grupper organisert.
+- Du trenger en aktiv B1 Admin-konto med tillatelse til å administrere grupper. Se [Roller & Tillatelser](../people/roles-permissions.md) hvis du er usikker på tilgangsnivået ditt.
+- Bestem deg for en kategoristruktur for gruppene dine (f.eks. "Smågrupper", "Ministerier", "Utvalg"). Kategorier hjelper til med å holde beslektede grupper organisert.
 
 </div>
 
 ## Legge til en ny gruppe
 
-1. Naviger til **B1 Admin-dashbordet**.
-2. Klikk pa **Groups**-fanen.
-3. Klikk pa **Add Group** og skriv inn et **Kategorinavn**. Kategorier hjelper deg med a organisere relaterte grupper sammen (for eksempel "Smagrupper," "Tjenester," eller "Komiteer"). Hvis en kategori allerede eksisterer, kan du velge den fra listen.
+1. Gå til **B1 Admin-instrumentbordet**.
+2. Klikk på **Grupper**-fanen.
+3. Klikk **Legg til gruppe** og skriv inn et **Kategorinavn**. Kategorier hjelper deg med å organisere beslektede grupper sammen (f.eks. "Smågrupper", "Ministerier" eller "Utvalg"). Hvis en kategori allerede finnes, kan du velge den fra listen.
 4. Skriv inn **Gruppenavnet**.
-5. Klikk pa **Add**. Den nye gruppen din vises i listen under den valgte kategorien.
+5. Klikk **Legg til**. Den nye gruppen din vises i listen under den valgte kategorien.
 
-## Konfigurere gruppeinnstillinger
+## Konfigurering av gruppeinnstillinger
 
-Nar gruppen din er opprettet, kan du fylle inn ytterligere detaljer:
+Når gruppen er opprettet, kan du fylle inn flere detaljer:
 
-1. Klikk pa **gruppenavnet** i listen for a apne den.
-2. Klikk pa **blyantikonet** for a redigere gruppeinnstillingene.
-3. Konfigurer folgende alternativer:
-   - **Beskrivelse** -- Et kort sammendrag av hva gruppen handler om. Dette er synlig for medlemmer.
-   - **Motetider** -- Nar gruppen vanligvis moter (for eksempel "Onsdager kl. 19:00").
-   - **Oppmotesporing** -- Aktiver dette hvis du vil registrere [oppmote](../attendance/tracking-attendance.md) for denne gruppen.
-   - **Gudstjenestetider** -- Knytt gruppen til spesifikke gudstjenestetider hvis aktuelt. Se [Oppmoteoppsett](../attendance/setup.md) for detaljer om gudstjenestetider.
-4. Klikk pa **Save** for a ta i bruk endringene dine.
+1. Klikk på **gruppenavnet** i listen for å åpne det.
+2. Klikk **blyantikonet** for å redigere gruppeinnstillingene.
+3. Konfigurer følgende alternativer:
+   - **Beskrivelse** -- En kort sammenfatning av hva gruppen handler om. Dette er synlig for medlemmer.
+   - **Møtetider** -- Når gruppen typisk møtes (f.eks. "Onsdager kl. 19:00").
+   - **Oppmøtesporing** -- Aktiver dette hvis du vil registrere [oppmøte](../attendance/tracking-attendance.md) for denne gruppen.
+   - **Servicetider** -- Knytt gruppen til spesifikke kirketjenesters tider hvis relevant. Se [Oppmøte-oppsett](../attendance/setup.md) for detaljer om servicetider.
+4. Klikk **Lagre** for å bruke endringene.
 
 :::tip
-A legge til en tydelig beskrivelse og motetid hjelper medlemmene med a vite hva de kan forvente nar de blir med i en gruppe.
+Tillegg av en klar beskrivelse og møtetid hjelper medlemmene med å vite hva de kan forvente når de går med i en gruppe.
 :::
 
-## Neste steg
+## Neste trinn
 
-Etter a ha opprettet og konfigurert gruppen din, er du klar til a:
+Etter å ha opprettet og konfigurert gruppen, er du klar til å:
 
-- **Legge til medlemmer** -- Sok etter personer og legg dem til i gruppen. Bruk det gronne nokkelikonet for a utpeke gruppeledere. Se [Gruppemedlemmer](./group-members.md).
-- **Sette opp en kalender** -- Opprett arrangementer og gjentakende moter for gruppen. Se [Gruppekalender](./group-calendar.md).
-- **Kommunisere** -- Send meldinger til alle gruppemedlemmer direkte fra gruppesiden.
-- **Eksportere data** -- Klikk pa nedlastingsikonet for a eksportere gruppens medlemsliste.
+- **Legg til medlemmer** -- Søk etter personer og legg dem til gruppen. Bruk det grønne nøkkelikonet for å utpeke gruppeledere. Se [Gruppemedlemmer](./group-members.md).
+- **Sett opp en kalender** -- Opprett hendelser og gjentakende møter for gruppen. Se [Gruppekalender](./group-calendar.md).
+- **Kommuniser** -- Send meldinger til alle gruppemedlemmer direkte fra gruppesiden.
+- **Eksporter data** -- Klikk nedlastingsikonet for å eksportere listen over gruppemedlemmer.
 
 :::info
-Alle kirkegruppene dine er organisert etter kategorier pa hovedsiden for Grupper. Du kan alltid omorganisere eller gi nytt navn til kategorier etter hvert som kirken din vokser.
+Alle gruppene i kirken er organisert etter kategorier på hovedsiden Grupper. Du kan alltid omorganisere eller omdøpe kategorier ettersom kirken vokser.
 :::

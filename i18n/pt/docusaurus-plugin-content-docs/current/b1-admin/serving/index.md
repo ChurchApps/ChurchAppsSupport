@@ -1,37 +1,39 @@
 ---
-title: "Serviço"
+title: "Servindo"
 ---
 
-# Serviço
+# Servindo
 
 <div class="article-intro">
 
-A seção Serviço é o seu centro para coordenar voluntários e planejar cultos da igreja. Seja organizando o culto de domingo, reuniões no meio da semana ou eventos especiais, é aqui que você reúne tudo para que suas equipes saibam exatamente quem está servindo e quando.
+A seção Serving é seu hub para coordenar voluntários e planejar serviços da igreja. Se você está organizando adoração de domingo, reuniões de meio de semana ou eventos especiais, é aqui onde você reúne tudo para que seus times saibam exatamente quem está servindo e quando.
 
 </div>
 
-## Como a página de Serviço funciona
+## Como a Página de Serviço Funciona
 
-Quando você abre a página de **Serviço**, verá seus ministérios exibidos como abas no topo. Cada ministério tem seus próprios tipos de plano e equipes, para que você possa gerenciar vários ministérios de forma independente. Por exemplo, você pode ter abas separadas para Louvor, Ministério Infantil e Recepção.
+Quando você abre a página **Serving**, verá seus ministérios exibidos como abas no topo. Cada ministério tem seus próprios tipos de plano e times, para que você possa gerenciar múltiplos ministérios independentemente. Por exemplo, você pode ter abas separadas para Worship, Kids Ministry e Hospitality.
+
+Pessoal não-admin que são membros de um ministério também podem acessar a página de Serviço. Eles verão apenas os ministérios aos quais pertencem e podem visualizar seus planos e atribuições sem precisar de permissões de admin completas.
 
 :::tip
-Se você é um administrador, ative **Mostrar todos** para visualizar todos os ministérios de uma vez. Isso é útil quando você precisa verificar atribuições em várias equipes.
+Se você é um admin, ative **Show All** para visualizar todos os ministérios de uma vez. Isso é útil quando você precisa verificar atribuições em múltiplos times.
 :::
 
-## Subseções
+## Sub-Seções
 
-A seção Serviço inclui três áreas principais:
+A seção Serving inclui três áreas-chave:
 
-- **[Planos](./plans.md)** -- Crie planos de serviço para datas específicas e atribua voluntários às equipes. Os planos ajudam a organizar quem está servindo e quando, para que todos saibam seu papel com antecedência.
-- **[Músicas](./songs.md)** -- Gerencie sua biblioteca de músicas de louvor com letras, arranjos e links externos. Sua equipe de louvor pode usar isso para se preparar para os próximos cultos.
-- **[Tarefas](./tasks.md)** -- Atribua e acompanhe tarefas para os membros da sua equipe. Configure [Automações](./automations.md) para criar tarefas recorrentes automaticamente, para que nada passe despercebido.
+- **[Plans](./plans.md)** -- Crie planos de serviço para datas específicas e designe voluntários a times. Planos ajudam você a organizar quem está servindo quando, para que todos saibam seu papel com antecedência. Use o **[Plans Overview](./plans-overview.md)** para ver todas as atribuições próximas em múltiplas semanas em uma grade.
+- **[Songs](./songs.md)** -- Gerencie sua biblioteca de músicas de adoração com letras, arranjos e links externos. Sua equipe de adoração pode usar isso para se preparar para serviços próximos.
+- **[Tasks](./tasks.md)** -- Designe e rastreie tarefas para seus membros da equipe. Configure [Automations](./automations.md) para criar tarefas recorrentes automaticamente, para que nada caia entre as rachaduras.
 
-## Primeiros passos
+## Começando
 
-1. Navegue até **Serviço** no menu principal do B1 Admin.
-2. Selecione uma **aba de ministério** para ver seus tipos de plano e equipes.
-3. Escolha um tipo de plano para começar a [criar planos de serviço](./plans.md), ou explore as subseções [Músicas](./songs.md) e [Tarefas](./tasks.md).
+1. Navegue até **Serving** do menu principal no B1 Admin.
+2. Clique no botão adicionar ministério para criar um novo ministério ou ative "show all" para visualizar abas de ministério existentes. Selecione uma **aba de ministério** para visualizar seus tipos de plano e times.
+3. Escolha "create a plan type" ou escolha um tipo de plano existente para começar [criando planos de serviço](./plans.md), ou explore as sub-seções [Songs](./songs.md) e [Tasks](./tasks.md).
 
 :::info
-Antes de poder criar planos, você precisará configurar seus ministérios e equipes na área de Configurações. Consulte a documentação de Configurações para detalhes sobre como configurar sua estrutura de serviço.
+Antes de poder criar planos, você precisará criar seus Ministries na área Serving e Teams dentro de cada Ministry.
 :::

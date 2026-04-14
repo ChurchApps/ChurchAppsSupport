@@ -6,32 +6,35 @@ title: "Dienst"
 
 <div class="article-intro">
 
-Der Bereich Dienst ist Ihre Zentrale für die Koordination von Ehrenamtlichen und die Planung von Gottesdiensten. Ob Sie den Sonntagsgottesdienst, Veranstaltungen unter der Woche oder besondere Anlässe organisieren -- hier bringen Sie alles zusammen, damit Ihre Teams genau wissen, wer wann dient.
+Der Abschnitt "Dienst" ist Ihr Zentrum für die Koordination von Freiwilligen und die Planung von Kirchenservices. Ob Sie Sonntagsgottesdienst, Wochenmitte-Versammlungen oder spezielle Veranstaltungen organisieren, hier bringen Sie alles zusammen, damit Ihre Teams genau wissen, wer dient und wann.
 
 </div>
 
-## So funktioniert die Dienstseite
+## Wie die Dienst-Seite funktioniert
 
-Wenn Sie die Seite **Dienst** öffnen, sehen Sie Ihre Dienstbereiche als Registerkarten am oberen Rand. Jeder Dienstbereich hat seine eigenen Plantypen und Teams, sodass Sie mehrere Dienstbereiche unabhängig voneinander verwalten können. Zum Beispiel könnten Sie separate Registerkarten für Lobpreis, Kinderdienst und Gastfreundschaft haben.
+Wenn Sie die Seite **Dienst** öffnen, sehen Sie Ihre Ministries als Registerkarten oben. Jedes Ministerium hat seine eigenen Plantypen und Teams, sodass Sie mehrere Ministries unabhängig verwalten können. Zum Beispiel könnten Sie separate Registerkarten für Anbetung, Kinder-Ministerium und Gastfreundschaft haben.
+
+Nicht-Admin-Mitarbeiter, die Mitglied eines Ministeriums sind, können auch auf die Seite "Dienst" zugreifen. Sie sehen nur die Ministries, zu denen sie gehören, und können ihre Pläne und Zuweisungen anzeigen, ohne dass volle Admin-Berechtigungen erforderlich sind.
 
 :::tip
-Wenn Sie Administrator sind, schalten Sie **Alle anzeigen** um, um alle Dienstbereiche auf einmal zu sehen. Dies ist hilfreich, wenn Sie Einteilungen über mehrere Teams hinweg prüfen müssen.
+Wenn Sie ein Admin sind, schalten Sie **Alle anzeigen** um, um alle Ministries auf einmal anzuzeigen. Dies ist hilfreich, wenn Sie Zuweisungen in mehreren Teams überprüfen müssen.
 :::
 
-## Unterbereiche
+## Unterabschnitte
 
-Der Bereich Dienst umfasst drei wichtige Bereiche:
+Der Abschnitt "Dienst" umfasst drei Schlüsselbereiche:
 
-- **[Pläne](./plans.md)** -- Erstellen Sie Dienstpläne für bestimmte Daten und weisen Sie Ehrenamtliche Teams zu. Pläne helfen Ihnen zu organisieren, wer wann dient, damit jeder seine Rolle im Voraus kennt.
-- **[Lieder](./songs.md)** -- Verwalten Sie Ihre Lobpreislieder-Bibliothek mit Texten, Arrangements und externen Links. Ihr Lobpreisteam kann dies nutzen, um sich auf kommende Gottesdienste vorzubereiten.
-- **[Aufgaben](./tasks.md)** -- Weisen Sie Aufgaben Ihren Teammitgliedern zu und verfolgen Sie sie. Richten Sie [Automatisierungen](./automations.md) ein, um wiederkehrende Aufgaben automatisch zu erstellen, damit nichts vergessen wird.
+- **[Pläne](./plans.md)** -- Erstellen Sie Service-Pläne für bestimmte Termine und weisen Sie Freiwillige Teams zu. Pläne helfen Ihnen zu organisieren, wer wann dient, damit jeder seine Rolle voraus kennt. Verwenden Sie die **[Pläne-Übersicht](./plans-overview.md)**, um alle bevorstehenden Zuweisungen in mehreren Wochen in einem Raster anzuzeigen.
+- **[Lieder](./songs.md)** -- Verwalten Sie Ihre Anbetungs-Lied-Bibliothek mit Texten, Arrangements und externen Links. Ihr Anbetungsteam kann diese zur Vorbereitung auf bevorstehende Services nutzen.
+- **[Aufgaben](./tasks.md)** -- Weisen Sie Aufgaben für Ihre Teamit zu und verfolgen Sie diese. Richten Sie [Automatisierungen](./automations.md) ein, um wiederkehrende Aufgaben automatisch zu erstellen, damit nichts fallengelassen wird.
 
-## Erste Schritte
+## Anfangen
 
-1. Navigieren Sie über das Hauptmenü in B1 Admin zu **Dienst**.
-2. Wählen Sie eine **Dienstbereich-Registerkarte**, um deren Plantypen und Teams zu sehen.
-3. Wählen Sie einen Plantyp, um mit der [Erstellung von Dienstplänen](./plans.md) zu beginnen, oder erkunden Sie die Unterbereiche [Lieder](./songs.md) und [Aufgaben](./tasks.md).
+1. Navigieren Sie im Hauptmenü von B1 Admin zu **Dienst**.
+2. Klicken Sie auf die Schaltfläche "Ministry hinzufügen", um ein neues Ministry zu erstellen, oder schalten Sie "Alle anzeigen" um, um vorhandene Ministry-Registerkarten anzuzeigen. Wählen Sie eine **Ministry-Registerkarte** aus, um ihre Plantypen und Teams anzuzeigen.
+3. Wählen Sie "Plan-Typ erstellen" oder wählen Sie einen vorhandenen Plan-Typ aus, um mit dem [Erstellen von Service-Plänen](./plans.md) zu beginnen, oder erkunden Sie die [Lieder](./songs.md) und [Aufgaben](./tasks.md) Unterabschnitte.
 
 :::info
-Bevor Sie Pläne erstellen können, müssen Sie Ihre Dienstbereiche und Teams im Einstellungsbereich einrichten. Weitere Details zur Konfiguration Ihrer Dienststruktur finden Sie in der Einstellungsdokumentation.
+Bevor Sie Pläne erstellen können, müssen Sie Ihre Ministries im Dienst-Bereich und Teams in jedem Ministry erstellen. 
 :::
+

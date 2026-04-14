@@ -1,70 +1,74 @@
 ---
-title: "Administrere sider"
+title: "Håndtering av sider"
 ---
 
-# Administrere sider
+# Håndtering av sider
 
 <div class="article-intro">
 
-Visningen for nettsider er ditt sentrale knutepunkt for å opprette, redigere og organisere alle sidene på kirkenettstedet ditt. Du kan administrere både sideinnholdet og nettstedets navigasjon fra denne ene skjermen.
+Siden Website Pages er sentralnavet ditt for å opprett, redigere og organisere alle sider på kirkens nettsted. Du kan administrere både sideinnholdet og nettstedets navigasjon fra dette enkeltskjermen.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Fullfør [Førstegangsoppsett](initial-setup) for å konfigurere domenet og grunnleggende nettstedsinnstillinger
-- Ha innholdet og bildene klare. Bruk [Filer](files)-behandleren til å laste opp medieressurser først.
+- Fullfør [innledende oppsett](initial-setup) for å konfigurere domenet og grunnleggende nettstedinnstillinger
+- Ha innholdet og bildene klare. Bruk [Filer](files)-ansvarlig for å laste opp mediaressurser først.
 
 </div>
 
-## Forstå sidetyper
+## Forståelse av sidetypeene
 
-**Sider**-tabellen viser alle sider på nettstedet sammen med statusen:
+**Sider**-tabellen viser hver side på nettstedet tillsammans med statusen:
 
-- **Generert** -- Sider som ble automatisk opprettet av systemet basert på kirkens data (for eksempel en Grupper-side eller Prekener-side). Disse sidene oppdaterer seg selv etter hvert som dataene endres.
-- **Egendefinert** -- Sider som du har opprettet selv med eget innhold og oppsett.
+- **Generert** -- Sider som automatisk ble opprettet av systemet basert på kirkens data (f.eks. en gruppeside eller Prekener-side). Disse sidene oppdaterer seg selv når dataene endres.
+- **Egendefinert** -- Sider som du opprettet selv med ditt eget innhold og layout.
 
-Du kan konvertere enhver automatisk generert side til en egendefinert side hvis du ønsker full kontroll over innholdet og designet.
+Du kan konvertere enhver auto-generert side til en egendefinert side hvis du vil ha full kontroll over innholdet og designet.
 
 ## Legge til og redigere sider
 
-1. Klikk **Legg til side**-knappen øverst til høyre i Sider-tabellen.
-2. Velg en sidetype (tom eller en mal) og gi den et navn.
-3. Klikk **Rediger** ved siden av en side for å åpne sidebyggeren, der du kan legge til seksjoner, tekst, bilder og andre elementer.
-4. Klikk **Sideinnstillinger** for å oppdatere sidetittel, URL-bane og andre metadata.
+1. Klikk **Legg til side**-knappen i det øvre høyre hjørnet av siden Sider-tabellen.
+2. Velg en sidetype (tom eller mal) og gi den et navn.
+3. Klikk **Rediger** ved siden av enhver side for å åpne sidebyggeren, hvor du kan legge til seksjoner, tekst, bilder og andre elementer.
+4. Klikk **Sideinnstillinger** for å oppdatere sidetittel, URL-banen og annen metadata.
 5. Bruk **Forhåndsvis**-knappen for å åpne siden i et nytt vindu og se nøyaktig hvordan den vil se ut for besøkende.
 
 :::tip
 For hjemmesiden, sett URL-banen til bare `/`. For alle andre sider, bruk en beskrivende bane som `/om` eller `/kontakt`.
 :::
 
-## Administrere navigasjon
+## Håndtering av navigasjon
 
-Venstre sidefelt i visningen for nettsider viser navigasjonslenkene dine. Disse lenkene styrer menyen som besøkende ser på nettstedet.
+Venstre sidefelt på siden Website Pages viser navigasjonslinkene. Disse linkene kontrollerer menyen som besøkende ser på nettstedet.
 
-1. Klikk **Legg til** for å opprette en ny navigasjonslenke. Du kan peke den til en side på nettstedet eller til en ekstern URL.
-2. For å omorganisere lenker, dra og slipp dem i ønsket rekkefølge. Du kan også legge lenker under et overordnet element for å opprette nedtrekksmenyer.
-3. Klikk **Rediger**-ikonet ved siden av en lenke for å endre etikett, URL eller posisjon.
+1. Klikk **Legg til** for å opprette en ny navigasjonslenke. Du kan peke den til en hvilken som helst side på nettstedet eller til en ekstern URL.
+2. For å omorganisere lenker, drar du dem inn i ønsket rekkefølge. Du kan også neste lenker under et overordnet element for å opprett rullegardinmenyer.
+3. Klikk **Rediger**-ikonet ved siden av en link for å endre etiketten, URL-en eller posisjonen.
 4. For å fjerne en lenke fra navigasjonen, klikk **Slett**-ikonet.
 
 :::info
-Å fjerne en navigasjonslenke sletter ikke selve siden. Siden eksisterer fortsatt og kan nås direkte via URL-en -- den vil bare ikke vises i menyen.
+Fjerning av en navigasjonslenke sletter ikke siden selv. Siden finnes fortsatt og kan få tilgang direkte via URL-en -- det vil bare ikke vises i menyen.
 :::
 
-## Tips for å organisere nettstedet
+## Tips for organisering av nettstedet
 
-- Hold toppnivå-navigasjonen til fem eller seks elementer slik at besøkende raskt finner det de leter etter.
-- Bruk nestede lenker for relaterte undersider (for eksempel en «Om»-nedtrekksmeny med «Teamet vårt», «Tro» og «Historikk»).
-- Gjennomgå navigasjonen på mobil ved å klikke **Mobilforhåndsvisning** for å sikre at den fungerer godt på mindre skjermer.
+- Hold navigasjonen på toppnivå til fem eller seks elementer slik at besøkende raskt kan finne ting.
+- Bruk neste lenker for relaterte undersider (f.eks. en "Om" rullgardin med "Teamet vårt", "Tro" og "Historie").
+- Gjennomgå navigasjonen på mobil ved å klikke **Mobil forhåndsvisning** for å kontroller at den fungerer bra på mindre skjermer.
 - Gi sider klare, beskrivende navn som hjelper besøkende å forstå hva de vil finne.
 
 :::tip
-Du kan legge til [skjemaer](../forms/creating-forms.md) på sidene dine for å samle inn påmeldinger, bønneforespørsler eller annen informasjon fra besøkende.
+Du kan legge til [skjemaer](../forms/creating-forms.md) på sidene dine for å samle påmeldinger, begjæringer om bønn eller annen informasjon fra besøkende.
 :::
 
-## Neste steg
+## Bilde Lightbox
 
-- [Førstegangsoppsett](initial-setup) -- Instruksjoner for førstegangskonfigurering
-- [Utseende](appearance) -- Tilpass nettstedets visuelle tema
-- [Filer](files) -- Last opp og administrer medieressurser for sidene dine
+Når besøkende klikker på et bilde på nettstedet, åpner det i et fullskjerms lightbox-overlay. Dette lar personer vise bilder i større størrelse uten å forlate siden. Ingen konfigurasjon kreves -- lightbox-en er aktivert automatisk for bilder i sideinnholdet.
+
+## Neste trinn
+
+- [Innledende oppsett](initial-setup) -- Instruksjoner for første gangs oppsett
+- [Utseende](appearance) -- Tilpass visuelt tema på nettstedet
+- [Filer](files) -- Last opp og administrer mediaressurser for sidene

@@ -1,27 +1,28 @@
----
-title: "Registro de Asistencia"
+﻿---
+title: "Registro de Entrada"
 ---
 
-# Registro de Asistencia
+# Registro de Entrada
 
 <div class="article-intro">
 
-La funcion de **Registro de Asistencia** en B1.church te permite registrar tu asistencia y la de los miembros de tu hogar para los servicios de la iglesia directamente desde el portal de miembros. Es una forma conveniente de registrar tu asistencia sin necesidad de visitar un quiosco fisico de registro.
+La función de **Registro de Entrada** en B1.church le permite registrarse a usted y a los miembros de su hogar para servicios de iglesia directamente desde el portal de miembros. Esta es una forma conveniente de registrar su asistencia sin necesidad de visitar un quiosco de registro de entrada físico.
 
 </div>
 
-## Como Funciona
+## Cómo Funciona
 
-Cuando usas el auto-registro, seleccionas un servicio, eliges cuales miembros del hogar asistiran y asignas a cada persona al grupo apropiado para cada horario de servicio. Una vez que confirmas, tu asistencia se registra automaticamente.
+Cuando utiliza el auto-registro de entrada, selecciona un servicio, elige qué miembros del hogar asisten y asigna a cada persona al grupo apropiado para cada hora de servicio. Una vez que confirma, su asistencia se registra automáticamente.
 
-## Para Comenzar
+## Primeros Pasos
 
-Para acceder al registro de asistencia, haz clic en **Registro de Asistencia** en la [navegacion lateral](../getting-started/navigating.md) de tu portal de miembros. Debes haber [iniciado sesion](../getting-started/logging-in.md) para usar esta funcion -- si no has iniciado sesion, se te pedira que lo hagas primero.
+Para acceder al registro de entrada, haga clic en **Registro de Entrada** en la [navegación de barra lateral](../getting-started/navigating.md) de su portal de miembros. Debe estar [conectado](../getting-started/logging-in.md) para usar esta función -- si no ha iniciado sesión, se le pedirá que inicie sesión primero.
 
 :::info
-La funcion de registro de asistencia requiere que tu iglesia haya configurado servicios y grupos de asistencia en sus ajustes de administracion. Si no hay servicios disponibles cuando abres la pagina de registro, es posible que tu iglesia aun no haya configurado esta funcion. Contacta al administrador de tu iglesia para obtener ayuda.
+La función de registro de entrada requiere que su iglesia haya configurado servicios y grupos de asistencia en su configuración de administración. Si no hay servicios disponibles cuando abre la página de registro de entrada, su iglesia puede no tener esta función configurada aún. Póngase en contacto con su administrador de iglesia para obtener ayuda.
 :::
 
-## Siguientes Pasos
+## Próximos Pasos
 
-- [Auto-Registro](./self-checkin.md) -- Guia paso a paso para registrar la asistencia de tu hogar en un servicio.
+- [Auto-Registro de Entrada](./self-checkin.md) -- Guía paso a paso para registrar su hogar para un servicio.
+- [Registro de Huéspedes](./guest-registration.md) -- Regístrese como visitante e los miembros de su familia.

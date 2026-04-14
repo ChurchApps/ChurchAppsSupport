@@ -1,61 +1,66 @@
 ---
-title: "Logge Inn"
+title: "Pålogging"
 ---
 
-# Logge Inn
+# Pålogging
 
 <div class="article-intro">
 
-B1 Mobile bruker samme ChurchApps-konto som du bruker pa B1.church og andre ChurchApps-produkter. Hvis du allerede har en konto, kan du logge inn med din eksisterende e-post og passord.
+B1 Mobil bruker samme ChurchApps-konto som du bruker på B1.church og andre ChurchApps-produkter. Hvis du allerede har en konto, kan du logge på med eksisterende e-postadresse og passord.
 
 </div>
 
 <div class="prereqs">
-<h4>For Du Begynner</h4>
+<h4>Før du begynner</h4>
 
-- [Installer B1 Mobile](./installing) pa din iOS- eller Android-enhet
+- [Installer B1 Mobil](./installing) på iOS eller Android-enheten
 
 </div>
 
-## Hvordan Logge Inn
+## Slik logger du på
 
-1. Apne B1 Mobile-appen.
-2. Trykk pa **Logg inn**-alternativet fra sidemenyen eller innloggingsmeldingen.
-3. Skriv inn **e-postadressen** og **passordet** ditt.
-4. Trykk pa **Logg inn**.
+1. Åpne B1 Mobil-appen.
+2. Trykk på **Pålogging**-alternativet fra menyskuffen eller påloggingsoppfordringen.
+3. Oppgi **e-postadressen** og **passord**.
+4. Trykk **Logg på**.
 
-Etter innlogging blir du tatt til [hjemmesiden](../dashboard/). Hvis du ikke har valgt en kirke enna, blir du bedt om a soke etter og velge en.
+Etter pålogging vil du bli tatt til [instrumentbordet](../dashboard/). Hvis du ikke har valgt en kirke ennå, blir du bedt om å søke etter og velge en.
 
-## Opprette en Ny Konto
+## Opprettelse av ny konto
 
-Hvis du ikke har en ChurchApps-konto enna, kan du opprette en direkte i appen:
+Hvis du ikke ennå har en ChurchApps-konto, kan du opprett en direkt i appen:
 
-1. Pa innloggingsskjermen, trykk pa **Registrer**-lenken nederst.
-2. Skriv inn **fornavn**, **etternavn** og **e-postadresse**.
-3. Trykk pa **Registrer**.
-4. Sjekk e-posten din for en melding med ditt midlertidige passord.
-5. Ga tilbake til appen, trykk pa **Logg inn** og logg inn med e-posten og det midlertidige passordet fra e-posten.
+1. På påloggingsskjermen, trykk på **Registrer**-lenken nederst.
+2. Oppgi **fornavn**, **etternavn** og **e-postadresse**.
+3. Skjemaet vil automatisk populate kirken hvis et samsvar blir funnet basert på informasjonen.
+4. Trykk **Registrer**.
+5. Sjekk e-posten for en melding med ditt midlertidige passord.
+6. Gå tilbake til appen, trykk **Pålogging** og logg på med e-postadressen og det midlertidige passordet fra e-posten.
 
-Etter forste innlogging kan du endre passordet fra [profilinnstillingene](../profile/editing-profile.md).
+Etter første pålogging kan du endre passordet fra [profilinnstillingene dine](../profile/editing-profile.md).
 
-:::warning
-Sjekk spam- eller soeppelmappen hvis du ikke mottar registrerings-e-posten innen noen minutter.
+:::info
+Hvis du prøver å logge på med en e-postadresse som ikke er registrert ennå, blir du automatisk omdirigert til registreringsskjermen slik at du kan opprett en konto.
 :::
 
-## Glemt Passordet
+:::warning
+Pass på å sjekk søppel- eller uønsket mappen hvis du ikke mottar registreringse-posten innen noen få minutter.
+:::
 
-Hvis du har glemt passordet ditt, trykk pa **Glemt passord?** pa innloggingsskjermen. Dette apner en side i nettleseren der du kan skrive inn e-postadressen og be om en lenke for tilbakestilling av passord.
+## Glemt passord
 
-## Forbli Innlogget
+Hvis du har glemt passordet, trykk **Glemt passord?** på påloggingsskjermen. Dette åpner en side i nettleseren der du kan oppgi e-postadressen og be om en passordtilbakestillingslenke.
 
-B1 Mobile holder deg innlogget mellom okter. Du trenger ikke a logge inn hver gang du apner appen. Hvis du blir logget ut av en eller annen grunn, er det bare a logge inn igjen med e-post og passord.
+## Bli logget inn
 
-## Logge Ut
+B1 Mobil holder deg pålogget mellom økter. Du trenger ikke logge på hver gang du åpner appen. Hvis du blir logget ut av en viss grunn, logger du ganske enkelt på igjen med e-postadressen og passordet.
 
-For a logge ut av appen:
+## Utlogging
 
-1. Apne sidemenyen ved a trykke pa **hamburgerikonet** (tre horisontale linjer) overst til venstre.
-2. Rull til bunnen av sidemenyen.
-3. Trykk pa **Logg ut**.
+For å logge ut av appen:
 
-Du blir logget ut og kan logge inn igjen nar som helst med legitimasjonsopplysningene dine.
+1. Åpne menyskuffen ved å trykke på **hamburgerikonet** (tre horisontale linjer) i øvre venstre hjørne.
+2. Rull til bunnen av menyskuffen.
+3. Trykk **Logg ut**.
+
+Du vil bli logget ut og kan logge på igjen når som helst med legitimasjonen.

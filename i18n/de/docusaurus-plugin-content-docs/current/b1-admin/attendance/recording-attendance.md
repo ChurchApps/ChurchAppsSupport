@@ -1,65 +1,65 @@
 ---
-title: "Anwesenheit erfassen"
+title: "Anwesenheit aufzeichnen"
 ---
 
-# Anwesenheit erfassen
+# Anwesenheit aufzeichnen
 
 <div class="article-intro">
 
-Sobald Ihre Standorte, Gottesdienstzeiten und Gruppen eingerichtet sind, können Sie die Anwesenheit nach jeder Versammlung manuell erfassen. B1 Admin organisiert die Anwesenheit rund um **Sitzungen** -- eine Sitzung pro Gruppe pro Trefftermin. Sie erstellen die Sitzung, markieren, wer anwesend war, und die Daten fließen direkt in Ihre Anwesenheitsberichte ein.
+Sobald Ihre Standorte, Gottesdienste und Gruppen eingerichtet sind, können Sie nach jeder Versammlung manuell Anwesenheit aufzeichnen. B1 Admin organisiert die Anwesenheit um **Sitzungen** — eine Sitzung pro Gruppe pro Treffendatum. Sie erstellen die Sitzung, markieren wer erschienen ist, und die Daten fließen direkt in Ihre Anwesenheitsberichte.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Ihre Standorte, Gottesdienstzeiten und Gruppen müssen konfiguriert sein. Siehe [Anwesenheitseinrichtung](setup.md), falls Sie dies noch nicht getan haben.
-- Die Gruppen, die Sie erfassen möchten, müssen **Anwesenheit erfassen** aktiviert haben. Siehe [Anwesenheitseinrichtung](setup.md) für Details.
+- Ihre Standorte, Gottesdienste und Gruppen müssen konfiguriert sein. Siehe [Anmeldekonfiguration](setup.md), falls noch nicht geschehen.
+- Die Gruppen, die Sie nachverfolgen möchten, müssen **Anwesenheit verfolgen** aktiviert haben. Siehe [Anmeldekonfiguration](setup.md) für Details.
 
 </div>
 
 ## Eine Sitzung erstellen
 
-Eine Sitzung repräsentiert ein einzelnes Treffen einer Gruppe -- zum Beispiel Ihre Kindergottesdienst-Klasse an einem bestimmten Sonntag.
+Eine Sitzung repräsentiert ein Auftreten einer Gruppensitzung — zum Beispiel Ihre Klasse K-3 an einem bestimmten Sonntag.
 
-1. Öffnen Sie **B1 Admin** und klicken Sie auf **Gruppen** in der Seitenleiste.
-2. Wählen Sie die Gruppe aus, für die Sie die Anwesenheit erfassen möchten.
-3. Klicken Sie auf den Tab **Sitzungen**.
+1. Öffnen Sie **B1 Admin** und klicken Sie in der Seitenleiste auf **Gruppen**.
+2. Wählen Sie die Gruppe aus, für die Sie Anwesenheit aufzeichnen möchten.
+3. Klicken Sie auf die Registerkarte **Sitzungen**.
 4. Klicken Sie auf **Neu**, um eine neue Sitzung zu erstellen.
-5. Wenn die Gruppe einer Gottesdienstzeit zugeordnet ist, wählen Sie die **Gottesdienstzeit**. Bei einer ungeplanten Gruppe erscheint dieses Feld nicht.
-6. Wählen Sie das **Sitzungsdatum** -- dies kann heute, ein vergangenes Datum oder ein zukünftiges Datum sein.
+5. Wenn die Gruppe einem Gottesdienst zugewiesen ist, wählen Sie den **Gottesdienst**. Wenn es eine ungeplante Gruppe ist, wird dieses Feld nicht angezeigt.
+6. Wählen Sie das **Sitzungsdatum** — dies kann heute, ein vergangenes Datum oder ein zukünftiges Datum sein.
 7. Klicken Sie auf **Speichern**.
 
 :::tip
-Sie können Sitzungen für vergangene Daten erstellen, um noch nicht erfasste Anwesenheit nachzuholen, oder im Voraus erstellen, damit sie bereit sind, wenn Ihre Gruppe sich trifft.
+Sie können Sitzungen für vergangene Daten erstellen, um Anwesenheit nachzuholen, die Sie noch nicht erfasst haben, oder sie im Voraus erstellen, damit sie bereit sind, wenn sich Ihre Gruppe trifft.
 :::
 
 ## Anwesenheit markieren
 
-Nach dem Speichern der Sitzung erscheinen die Gruppenmitglieder auf der rechten Seite der Seite.
+Nach dem Speichern der Sitzung erscheinen die Mitglieder der Gruppe auf der rechten Seite der Seite.
 
-1. Setzen Sie das Häkchen neben jeder Person, die anwesend war.
-2. Änderungen werden automatisch gespeichert -- es gibt keine zusätzliche Speichern-Schaltfläche für Anwesenheitsmarkierungen.
+1. Aktivieren Sie das Kontrollkästchen neben jeder Person, die teilgenommen hat.
+2. Änderungen werden automatisch gespeichert — es gibt keine zusätzliche Schaltfläche zum Speichern für Anwesenheitsmarken.
 
 :::info
-Nur aktuelle Gruppenmitglieder erscheinen in der Sitzungsliste. Wenn jemand teilgenommen hat, aber noch nicht in der Gruppe ist, [fügen Sie ihn zuerst zur Gruppe hinzu](../groups/group-members.md) und erfassen Sie dann seine Anwesenheit.
+Nur aktuelle Gruppenmitglieder erscheinen in der Sitzungsliste. Wenn jemand teilgenommen hat, aber noch nicht in der Gruppe ist, [fügen Sie ihn zuerst zur Gruppe hinzu](../groups/group-members.md), dann zeichnen Sie ihre Anwesenheit auf.
 :::
 
-## Anwesenheit in eine Tabelle exportieren
+## Anwesenheit in eine Tabellenkalkulation exportieren
 
-Sie können einen Datensatz der Sitzung als CSV-Datei herunterladen, um ihn in Excel, Numbers oder Google Sheets zu verwenden.
+Sie können einen Datensatz der Sitzung als CSV-Datei herunterladen, um in Excel, Numbers oder Google Sheets zu verwenden.
 
 1. Öffnen Sie die Sitzung, die Sie exportieren möchten.
 2. Klicken Sie auf die Schaltfläche **CSV herunterladen**.
 3. Öffnen Sie die heruntergeladene Datei in Ihrer Tabellenkalkulationsanwendung.
 
-## Erfasste Anwesenheit anzeigen
+## Aufgezeichnete Anwesenheit anzeigen
 
-Nach dem Erfassen von Sitzungen erscheinen die Daten in Ihren Anwesenheitsberichten.
+Nach dem Aufzeichnen von Sitzungen erscheinen die Daten in Ihren Anwesenheitsberichten.
 
-- **Tab Anwesenheit** -- zeigt gemeindweite Trends im Zeitverlauf. Siehe [Anwesenheit verfolgen](tracking-attendance.md).
-- **Tab Gruppen** -- zeigt die Anwesenheit aufgeschlüsselt nach einzelnen Gruppen.
+- **Anwesenheitsregisterkarte** — zeigt kirchenweite Trends im Laufe der Zeit. Siehe [Anwesenheit nachverfolgen](tracking-attendance.md).
+- **Gruppenregisterkarte** — zeigt die nach einzelner Gruppe aufgeschlüsselte Anwesenheit.
 
 :::tip
-Wenn eine gerade erstellte Sitzung nicht sofort in den Berichten erscheint, stellen Sie sicher, dass das Sitzungsdatum innerhalb des in den Berichtsfiltern ausgewählten Datumsbereichs liegt.
+Wenn eine gerade erstellte Sitzung nicht sofort in Berichten angezeigt wird, stellen Sie sicher, dass das Sitzungsdatum in den im Berichtfilter ausgewählten Datumsbereich fällt.
 :::

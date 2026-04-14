@@ -1,61 +1,66 @@
----
-title: "Iniciar Sesión"
+﻿---
+title: "Iniciando Sesión"
 ---
 
-# Iniciar Sesión
+# Iniciando Sesión
 
 <div class="article-intro">
 
-B1 Mobile utiliza la misma cuenta de ChurchApps que usas en B1.church y otros productos de ChurchApps. Si ya tienes una cuenta, puedes iniciar sesión con tu correo electrónico y contraseña existentes.
+B1 Mobile utiliza la misma cuenta ChurchApps que usa en B1.church y otros productos ChurchApps. Si ya tiene una cuenta, puede iniciar sesión con su correo electrónico y contraseña existentes.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- [Instala B1 Mobile](./installing) en tu dispositivo iOS o Android
+- [Instale B1 Mobile](./installing) en su dispositivo iOS o Android
 
 </div>
 
 ## Cómo Iniciar Sesión
 
-1. Abre la aplicación B1 Mobile.
-2. Toca la opción **Iniciar Sesión** desde el menú lateral o el aviso de inicio de sesión.
-3. Ingresa tu **correo electrónico** y **contraseña**.
-4. Toca **Iniciar Sesión**.
+1. Abra la aplicación B1 Mobile.
+2. Toque la opción **Iniciar Sesión** desde el menú del cajón o el aviso de inicio de sesión.
+3. Ingrese su **dirección de correo electrónico** y **contraseña**.
+4. Toque **Iniciar Sesión**.
 
-Después de iniciar sesión, serás dirigido al [panel de inicio](../dashboard/). Si aún no has seleccionado una iglesia, se te pedirá que busques y selecciones una.
+Después de iniciar sesión, será llevado al [panel](../dashboard/). Si aún no ha seleccionado una iglesia, se le pedirá que busque y seleccione una.
 
-## Crear una Cuenta Nueva
+## Creación de una Nueva Cuenta
 
-Si aún no tienes una cuenta de ChurchApps, puedes crear una directamente en la aplicación:
+Si aún no tiene una cuenta ChurchApps, puede crear una directamente en la aplicación:
 
-1. En la pantalla de inicio de sesión, toca el enlace **Registrarse** en la parte inferior.
-2. Ingresa tu **nombre**, **apellido** y **correo electrónico**.
-3. Toca **Registrarse**.
-4. Revisa tu correo electrónico en busca de un mensaje con tu contraseña temporal.
-5. Regresa a la aplicación, toca **Iniciar Sesión** e ingresa tu correo electrónico y la contraseña temporal del correo.
+1. En la pantalla de inicio de sesión, toque el enlace **Registrar** en la parte inferior.
+2. Ingrese su **nombre**, **apellido** y **dirección de correo electrónico**.
+3. El formulario rellenará automáticamente su iglesia si se encuentra una coincidencia basada en su información.
+4. Toque **Registrar**.
+5. Revise su correo electrónico para un mensaje con su contraseña temporal.
+6. Regrese a la aplicación, toque **Iniciar Sesión** e inicie sesión con su correo electrónico y la contraseña temporal del correo electrónico.
 
-Después de tu primer inicio de sesión, puedes cambiar tu contraseña desde la [configuración de tu perfil](../profile/editing-profile.md).
+Después de su primer inicio de sesión, puede cambiar su contraseña desde su [configuración de perfil](../profile/editing-profile.md).
 
-:::warning
-Asegúrate de revisar tu carpeta de spam o correo no deseado si no recibes el correo de registro en unos minutos.
+:::info
+Si intenta iniciar sesión con un correo electrónico que aún no está registrado, será automáticamente dirigido a la pantalla de registro para que pueda crear una cuenta.
 :::
 
-## ¿Olvidaste tu Contraseña?
+:::warning
+Asegúrese de revisar su carpeta de spam o correo no deseado si no recibe el correo electrónico de registro dentro de unos pocos minutos.
+:::
 
-Si has olvidado tu contraseña, toca **¿Olvidaste tu contraseña?** en la pantalla de inicio de sesión. Esto abre una página en tu navegador donde puedes ingresar tu correo electrónico y solicitar un enlace para restablecer tu contraseña.
+## Contraseña Olvidada
 
-## Mantener la Sesión Iniciada
+Si ha olvidado su contraseña, toque **¿Olvidó su Contraseña?** en la pantalla de inicio de sesión. Esto abre una página en su navegador donde puede ingresar su dirección de correo electrónico y solicitar un enlace de restablecimiento de contraseña.
 
-B1 Mobile mantiene tu sesión iniciada entre sesiones. No necesitas iniciar sesión cada vez que abres la aplicación. Si se cierra tu sesión por cualquier motivo, simplemente inicia sesión nuevamente con tu correo electrónico y contraseña.
+## Mantenerse Conectado
 
-## Cerrar Sesión
+B1 Mobile lo mantiene conectado entre sesiones. No necesita iniciar sesión cada vez que abre la aplicación. Si se desconecta por algún motivo, simplemente inicie sesión nuevamente con su correo electrónico y contraseña.
 
-Para cerrar sesión en la aplicación:
+## Cierre de Sesión
 
-1. Abre el menú lateral tocando el **ícono de hamburguesa** (tres líneas horizontales) en la esquina superior izquierda.
-2. Desplázate hasta la parte inferior del menú lateral.
-3. Toca **Cerrar Sesión**.
+Para cerrar sesión de la aplicación:
 
-Tu sesión se cerrará y podrás iniciar sesión nuevamente en cualquier momento con tus credenciales.
+1. Abra el menú del cajón tocando el **icono de hamburguesa** (tres líneas horizontales) en la esquina superior izquierda.
+2. Desplácese hacia el final del menú del cajón.
+3. Toque **Cerrar Sesión**.
+
+Se cerrará la sesión y puede iniciar sesión nuevamente en cualquier momento con sus credenciales.
