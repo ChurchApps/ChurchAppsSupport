@@ -6,45 +6,53 @@ title: "Pagsisimula"
 
 <div class="article-intro">
 
-Ang B1.church ay ang online na tahanan ng iyong simbahan. Dito ka pumupunta para manatiling konektado sa iyong kongregasyon, tumingin ng mga update, mag-donate online, mag-check in para sa mga serbisyo, at marami pang iba. Gagabayan ka ng seksyong ito sa mga pangunahing kaalaman sa pag-access at paggamit ng portal ng miyembro.
+Ang B1.church ay ang online home ng inyong iglesia. Dito kayo pumupunta upang manatiling konektado sa inyong congregation, tingnan ang mga update, magbigay online, mag-check in para sa mga serbisyo, at marami pang iba. Ang seksyong ito ay naglalakbay sa inyo sa pamamagitan ng mga pangunahing kaalaman tungkol sa pag-access at paggamit ng member portal.
 
 </div>
 
-## Pag-access sa Site ng Iyong Simbahan
+## Pag-access sa Site ng Inyong Iglesia
 
-Ang iyong simbahan ay may sariling B1.church URL, karaniwang nasa format na `https://pangalanngsimbahan.b1.church`. Maaari mong bisitahin ang URL na ito sa anumang web browser sa iyong computer, tablet, o telepono. Ang pamunuan ng iyong simbahan o welcome team ang makapagbibigay sa iyo ng eksaktong address.
+Ang inyong iglesia ay may sariling B1.church URL, karaniwang nasa format na `https://yourchurchname.b1.church`. Maaari ninyong bisitahin ang URL na ito sa anumang web browser sa inyong computer, tablet, o telepono. Ang inyong church leadership o welcome team ay maaaring magbigay sa inyo ng eksaktong address.
 
-Kapag una mong binisita ang site, makikita mo ang pampublikong website ng iyong simbahan na may custom na branding, mga menu ng navigasyon, at mga pahina ng nilalaman.
+Kapag unang bumisita sa site, makikita ninyo ang pampublikong website ng inyong iglesia na may custom branding, navigation menus, at content pages.
 
-## Paggawa ng Account
+## Lumilikha ng Isang Account
 
-Para ma-access ang portal ng miyembro at mga feature nito, kailangan mo ng ChurchApps account.
+Upang ma-access ang member portal at ang mga feature nito, kailangan ninyo ng ChurchApps account.
 
-1. Bisitahin ang B1.church URL ng iyong simbahan.
-2. I-click ang **Login** na button sa kanang itaas ng pahina.
-3. Sa login screen, piliin ang opsyon na **Mag-register** ng bagong account.
-4. Ilagay ang iyong **pangalan**, **apelyido**, **email address**, at pumili ng **password**.
-5. Kumpletuhin ang registration form.
+1. Bisitahin ang B1.church URL ng inyong iglesia.
+2. Mag-click sa **Login** button sa tuktok-kanang sulok ng pahina.
+3. Sa login screen, piliin ang option upang **Register** ng isang bagong account.
+4. Ipasok ang inyong **unang pangalan**, **apelyido**, **email address**, at pumili ng **password**.
+5. Tapusin ang registration form.
 
-Pagkatapos mag-register, maaari ka nang mag-log in at i-access ang portal ng miyembro kasama ang lahat ng mga tool nito.
+Pagkatapos ng pag-register, maaari kayong mag-log in at ma-access ang member portal na may lahat ng tools nito.
 
 :::tip
-Kung naidagdag ka na ng iyong simbahan sa kanilang sistema, gamitin ang parehong email address na nakarehistro sa kanila. Ito ay magkokonekta ng iyong account sa iyong kasalukuyang church profile.
+Kung ang inyong iglesia ay nag-add na sa inyo sa kanilang sistema, gamitin ang parehong email address na mayroon sila sa file. Ito ay magko-link ng inyong account sa inyong umiiral na church profile.
 :::
 
-## Ano ang Magagawa Mo
+## Ano Ang Maaari Ninyong Gawin
 
-Kapag naka-log in ka na, ang portal ng miyembro ay nagbibigay ng access sa:
+Kapag na-log in na kayo, ang member portal ay nagbibigay sa inyo ng access sa:
 
-- Ang iyong personal na **Timeline** na may mga update mula sa iyong mga grupo at simbahan
-- **Mga Grupo** na kinabibilangan mo, kasama ang mga pag-uusap at kaganapan
-- Online na **Pagbibigay** para sa mga donasyon
-- **Mga Plano** na nagpapakita ng iyong schedule bilang boluntaryo at mga detalye ng serbisyo
-- **Check-In** para sa mga serbisyo at kaganapan
-- Ang **Direktoryo** ng komunidad para hanapin at kumonekta sa ibang mga miyembro
-- **Mga Leksyon** para sa Bible study at curriculum
+- Ang inyong personal na **Timeline** na may mga update mula sa inyong mga grupo at iglesia
+- **Mga Grupo** na kayo ay miyembro, kasama ang conversations at events
+- Online **Giving** para sa mga donasyon
+- **Mga Plano** na nagpapakita ng inyong volunteer schedule at detalye ng serbisyo
+- **Check-In** para sa mga serbisyo at events
+- Ang **Community** directory upang mahanap at makipag-ugnayan sa ibang mga miyembro
+- **Mga Leksyon** para sa Bible studies at curriculum
 
-## Susunod na mga Hakbang
+## Pag-access sa Inyong Telepono
 
-- [Pag-log In](./logging-in.md) -- Alamin kung paano mag-sign in at pamahalaan ang iyong session.
-- [Pag-navigate sa B1App](./navigating.md) -- Alamin ang paraan sa loob ng portal ng miyembro.
+Ang B1.church ay gumagana sa anumang mobile browser, ngunit maaari din kayong makakuha ng mas app-like na karanasan sa dalawang paraan:
+
+- **Mag-install bilang PWA** -- Idagdag ang member portal ng inyong iglesia sa inyong home screen direkta mula sa inyong browser. Walang kailangan ng app store. Tingnan ang [Pag-install bilang Isang App (PWA)](./installing-pwa.md) para sa mga tagubilin.
+- **I-download ang B1 Mobile** -- Mag-install ng native app mula sa App Store o Google Play para sa buong mobile experience, kabilang ang push notifications. Tingnan ang [B1 Mobile](/docs/b1-mobile/).
+
+## Susunod na Mga Hakbang
+
+- [Pag-log In](./logging-in.md) -- Matuto kung paano mag-sign in at pamahalaan ang inyong session.
+- [Pag-navigate sa B1App](./navigating.md) -- Hanapin ang inyong daan sa paligid ng member portal.
+- [Pag-install bilang Isang App (PWA)](./installing-pwa.md) -- Idagdag ang B1.church sa home screen ng inyong telepono.

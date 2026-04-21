@@ -25,6 +25,10 @@ Service plans organize who is serving and when. Each plan is tied to a specific 
 3. Click on a **plan type** to see the list of plans for that type.
 4. Click on a specific plan to open it.
 
+:::info
+Full admin access is not required to view plans. Ministry members who are part of a ministry can navigate to Serving and view plans for their ministry without needing admin permissions.
+:::
+
 ## Creating a Plan
 
 1. From the plan type view, click **New Plan**.

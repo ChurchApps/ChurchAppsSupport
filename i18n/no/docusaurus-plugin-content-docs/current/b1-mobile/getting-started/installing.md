@@ -1,40 +1,46 @@
 ---
-title: "Installere Appen"
+title: "Installer appen"
 ---
 
-# Installere Appen
+# Installer appen
 
 <div class="article-intro">
 
-B1 Mobile er tilgjengelig for bade iOS- og Android-enheter. Appen er gratis a laste ned og tar bare et oyeblikk a installere slik at du kan begynne a koble deg til kirken din.
+B1 Mobile er tilgjengelig for både iOS- og Android-enheter. Appen er gratis å laste ned og tar bare et øyeblikk å installere slik at du kan begynne å få kontakt med menigheten din.
 
 </div>
 
-## Nedlasting
+## Last ned
 
-- **iOS** -- Apne **App Store** pa din iPhone eller iPad og sok etter **B1.church**. Trykk pa **Hent** for a laste ned og installere.
-- **Android** -- Apne **Google Play Store** pa Android-enheten din og sok etter **B1.church**. Trykk pa **Installer** for a laste ned og installere.
+- **iOS** -- Åpne **App Store** på iPhone eller iPad og søk etter **B1.church**. Trykk **Hent** for å laste ned og installere.
+- **Android** -- Åpne **Google Play Store** på Android-enheten din og søk etter **B1.church**. Trykk **Installer** for å laste ned og installere.
 
-Du kan ogsa soke etter "B1 Mobile" hvis det forste soket ikke gir resultater.
+Du kan også søke etter "B1 Mobile" hvis det første søket ikke gir resultater.
 
-## Etter Installasjon
+## Etter installering
 
-Nar appen er installert, apne den fra startskjermen. Du vil se kirkesok-skjermen der du kan finne og velge kirken din. Hvis du allerede har en ChurchApps-konto, kan du [logge inn](./logging-in) med en gang. Hvis ikke, kan du opprette en konto fra innloggingsskjermen.
+Når appen er installert, åpner du den fra startskjermen. Du vil se søkeskjermen for kirke hvor du kan finne og velge menigheten din. Hvis du allerede har en ChurchApps-konto, kan du [logge inn](./logging-in) med en gang. Hvis ikke, kan du opprett en konto fra påloggingsskjermen.
 
-Appen vil be om tillatelse til a sende push-varsler. Vi anbefaler a tillate varsler slik at du kan motta oppdateringer fra kirken og gruppene dine.
+Appen vil be om tillatelse til å sende push-varsler. Vi anbefaler at du tillater varsler slik at du kan motta oppdateringer fra menigheten og gruppene dine.
 
 :::tip
-Tillat push-varsler nar du blir bedt om det under oppsettet. Dette sikrer at du mottar rettidige oppdateringer om [gruppeaktivitet](../groups/group-timeline.md), [meldinger](../community/messaging.md) og [tjenesteoppgaver](../serving/viewing-plans.md).
+Tillat push-varsler når du blir spurt under oppsettet. Dette sikrer at du mottar retningslinjer oppdateringer om [gruppaktivitet](../groups/group-timeline.md), [meldinger](../community/messaging.md) og [tjenesteoppgaver](../serving/viewing-plans.md).
 :::
 
-## Oppdatere Appen
+## Oppdater appen
 
-B1 Mobile mottar regelmessige oppdateringer med nye funksjoner og forbedringer. Enheten din bor oppdatere appen automatisk, men du kan ogsa se etter oppdateringer manuelt:
+B1 Mobile mottar vanlige oppdateringer med nye funksjoner og forbedringer. Enheten din skal oppdatere appen automatisk, men du kan også se etter oppdateringer manuelt:
 
-1. Apne **App Store** (iOS) eller **Google Play Store** (Android).
-2. Sok etter **B1.church**.
-3. Hvis en oppdatering er tilgjengelig, trykk pa **Oppdater**.
+1. Åpne **App Store** (iOS) eller **Google Play Store** (Android).
+2. Søk etter **B1.church**.
+3. Hvis en oppdatering er tilgjengelig, trykk **Oppdater**.
 
 :::info
-B1 Mobile krever iOS 14 eller nyere for Apple-enheter og Android 6.0 eller nyere for Android-enheter.
+B1 Mobile krever iOS 14 eller senere for Apple-enheter og Android 6.0 eller senere for Android-enheter.
 :::
+
+## Foretrekker du ikke å installere en innfødt app?
+
+Hvis du heller ikke vil installere en app fra App Store eller Google Play, kan du få tilgang til B1.church-medlemsportalen direkte fra nettleseren på telefonen. B1.church støtter installasjon som en **Progressive Web App (PWA)**, som legger medlemsportalen til startskjermen din fra Safari eller Chrome -- ingen nedlasting nødvendig. Se [Installer som en app (PWA)](/docs/b1-church/getting-started/installing-pwa) for instruksjoner.
+
+Den innfødte B1 Mobile-appen og PWA tilbyr lignende medlemsportalfunksjoner, men push-varsler er bare tilgjengelige i den innfødte appen.

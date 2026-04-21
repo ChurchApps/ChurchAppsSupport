@@ -6,35 +6,41 @@ title: "App installieren"
 
 <div class="article-intro">
 
-B1 Mobile ist sowohl fuer iOS- als auch fuer Android-Geraete verfuegbar. Die App ist kostenlos und laesst sich in wenigen Augenblicken installieren, damit Sie sich mit Ihrer Gemeinde verbinden koennen.
+B1 Mobile ist für iOS und Android Geräte verfügbar. Die App kann kostenlos heruntergeladen werden und ist in wenigen Augenblicken installiert, damit Sie mit der Verbindung zu Ihrer Gemeinde beginnen können.
 
 </div>
 
 ## Herunterladen
 
-- **iOS** -- Oeffnen Sie den **App Store** auf Ihrem iPhone oder iPad und suchen Sie nach **B1.church**. Tippen Sie auf **Laden**, um die App herunterzuladen und zu installieren.
-- **Android** -- Oeffnen Sie den **Google Play Store** auf Ihrem Android-Geraet und suchen Sie nach **B1.church**. Tippen Sie auf **Installieren**, um die App herunterzuladen und zu installieren.
+- **iOS** -- Öffnen Sie den **App Store** auf Ihrem iPhone oder iPad und suchen Sie nach **B1.church**. Tippen Sie auf **Laden**, um herunterzuladen und zu installieren.
+- **Android** -- Öffnen Sie den **Google Play Store** auf Ihrem Android-Gerät und suchen Sie nach **B1.church**. Tippen Sie auf **Installieren**, um herunterzuladen und zu installieren.
 
-Sie koennen auch nach "B1 Mobile" suchen, falls die erste Suche keine Ergebnisse liefert.
+Sie können auch nach "B1 Mobile" suchen, wenn die erste Suche keine Ergebnisse liefert.
 
 ## Nach der Installation
 
-Sobald die App installiert ist, oeffnen Sie sie von Ihrem Startbildschirm. Sie sehen den Gemeinde-Suchbildschirm, auf dem Sie Ihre Gemeinde finden und auswaehlen koennen. Wenn Sie bereits ein ChurchApps-Konto haben, koennen Sie sich sofort [anmelden](./logging-in). Falls nicht, koennen Sie ein Konto auf dem Anmeldebildschirm erstellen.
+Nachdem die App installiert ist, öffnen Sie sie von Ihrem Startbildschirm. Sie sehen den Bildschirm zur Kirchensuche, auf dem Sie Ihre Gemeinde finden und auswählen können. Wenn Sie bereits ein ChurchApps-Konto haben, können Sie sich [sofort anmelden](./logging-in). Wenn nicht, können Sie ein Konto auf dem Anmeldebildschirm erstellen.
 
-Die App wird Sie um Erlaubnis bitten, Push-Benachrichtigungen zu senden. Wir empfehlen, Benachrichtigungen zu erlauben, damit Sie Neuigkeiten von Ihrer Gemeinde und Ihren Gruppen erhalten.
+Die App fordert Berechtigung an, um Push-Benachrichtigungen zu senden. Wir empfehlen, Benachrichtigungen zuzulassen, um Updates von Ihrer Gemeinde und Gruppen zu erhalten.
 
 :::tip
-Erlauben Sie Push-Benachrichtigungen, wenn Sie waehrend der Einrichtung danach gefragt werden. So stellen Sie sicher, dass Sie rechtzeitig ueber [Gruppenaktivitaeten](../groups/group-timeline.md), [Nachrichten](../community/messaging.md) und [Dienstzuweisungen](../serving/viewing-plans.md) informiert werden.
+Lassen Sie Push-Benachrichtigungen zu, wenn Sie während der Einrichtung dazu aufgefordert werden. Dies stellt sicher, dass Sie rechtzeitig Updates über [Gruppenaktivitäten](../groups/group-timeline.md), [Nachrichten](../community/messaging.md) und [Servicezuordnungen](../serving/viewing-plans.md) erhalten.
 :::
 
 ## App aktualisieren
 
-B1 Mobile erhaelt regelmaessig Updates mit neuen Funktionen und Verbesserungen. Ihr Geraet sollte die App automatisch aktualisieren, aber Sie koennen auch manuell nach Updates suchen:
+B1 Mobile erhält regelmäßige Updates mit neuen Funktionen und Verbesserungen. Ihr Gerät sollte die App automatisch aktualisieren, aber Sie können auch manuell nach Updates suchen:
 
-1. Oeffnen Sie den **App Store** (iOS) oder **Google Play Store** (Android).
+1. Öffnen Sie den **App Store** (iOS) oder **Google Play Store** (Android).
 2. Suchen Sie nach **B1.church**.
-3. Wenn ein Update verfuegbar ist, tippen Sie auf **Aktualisieren**.
+3. Wenn ein Update verfügbar ist, tippen Sie auf **Aktualisieren**.
 
 :::info
-B1 Mobile erfordert iOS 14 oder hoeher fuer Apple-Geraete und Android 6.0 oder hoeher fuer Android-Geraete.
+B1 Mobile erfordert iOS 14 oder später für Apple-Geräte und Android 6.0 oder später für Android-Geräte.
 :::
+
+## Möchten Sie keine native App installieren?
+
+Wenn Sie lieber keine App aus dem App Store oder Google Play installieren möchten, können Sie auf das B1.church-Mitgliederportal direkt vom Browser Ihres Telefons aus zugreifen. B1.church unterstützt die Installation als **Progressive Web App (PWA)**, die das Mitgliederportal von Safari oder Chrome auf Ihren Startbildschirm bringt – ohne Download erforderlich. Siehe [Als App installieren (PWA)](/docs/b1-church/getting-started/installing-pwa) für Anweisungen.
+
+Die native B1 Mobile App und die PWA bieten ähnliche Mitgliederportal-Funktionen, aber Push-Benachrichtigungen sind nur in der nativen App verfügbar.

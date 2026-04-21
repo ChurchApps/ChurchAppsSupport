@@ -6,45 +6,53 @@ title: "Per Iniziare"
 
 <div class="article-intro">
 
-B1.church è la casa online della tua chiesa. È il luogo dove andare per rimanere connesso con la tua congregazione, visualizzare aggiornamenti, donare online, effettuare il check-in per i servizi e molto altro. Questa sezione ti guida attraverso le basi per accedere e utilizzare il portale membri.
+B1.church è la casa online della vostra chiesa. È il luogo dove andare per rimanere connessi alla vostra congregazione, visualizzare gli aggiornamenti, dare online, fare il check-in per i servizi e molto altro. Questa sezione vi guida attraverso le basi dell'accesso e dell'uso del portale dei membri.
 
 </div>
 
-## Accedere al Sito della Tua Chiesa
+## Accesso al Sito della Vostra Chiesa
 
-La tua chiesa ha il proprio URL B1.church, tipicamente nel formato `https://nometuachiesa.b1.church`. Puoi visitare questo URL con qualsiasi browser web sul tuo computer, tablet o telefono. La dirigenza della tua chiesa o il team di accoglienza possono fornirti l'indirizzo esatto.
+La vostra chiesa ha il suo proprio URL B1.church, in genere nel formato `https://nomedellavostrachiesa.b1.church`. Potete visitare questo URL in qualsiasi browser web sul vostro computer, tablet o telefono. La leadership della chiesa o il team di benvenuto può fornirvi l'indirizzo esatto.
 
-Quando visiti il sito per la prima volta, vedrai il sito web pubblico della tua chiesa con il suo marchio personalizzato, i menu di navigazione e le pagine dei contenuti.
+Quando visitate il sito per la prima volta, vedrete il sito web pubblico della vostra chiesa con il suo branding personalizzato, menu di navigazione e pagine di contenuto.
 
-## Creare un Account
+## Creazione di un Account
 
-Per accedere al portale membri e alle sue funzionalità, hai bisogno di un account ChurchApps.
+Per accedere al portale dei membri e alle sue funzionalità, avete bisogno di un account ChurchApps.
 
-1. Visita l'URL B1.church della tua chiesa.
-2. Clicca il pulsante **Accedi** nell'angolo in alto a destra della pagina.
-3. Nella schermata di accesso, seleziona l'opzione per **Registrarti** con un nuovo account.
-4. Inserisci il tuo **nome**, **cognome**, **indirizzo email** e scegli una **password**.
-5. Completa il modulo di registrazione.
+1. Visitate l'URL B1.church della vostra chiesa.
+2. Fate clic sul pulsante **Accedi** nell'angolo in alto a destra della pagina.
+3. Sulla schermata di accesso, selezionate l'opzione per **Registrare** un nuovo account.
+4. Inserite il vostro **nome**, **cognome**, **indirizzo email** e scegliete una **password**.
+5. Completate il modulo di registrazione.
 
-Dopo la registrazione, puoi effettuare l'accesso e accedere al portale membri con tutti i suoi strumenti.
+Dopo la registrazione, potete accedere e accedere al portale dei membri con tutti i suoi strumenti.
 
 :::tip
-Se la tua chiesa ti ha già aggiunto al proprio sistema, usa lo stesso indirizzo email che hanno in archivio. Questo collegherà il tuo account al tuo profilo chiesa esistente.
+Se la vostra chiesa vi ha già aggiunto al loro sistema, utilizzate lo stesso indirizzo email che hanno in file. Questo collegherà il vostro account al vostro profilo di chiesa esistente.
 :::
 
-## Cosa Puoi Fare
+## Cosa Potete Fare
 
-Una volta effettuato l'accesso, il portale membri ti dà accesso a:
+Una volta effettuato l'accesso, il portale dei membri vi dà accesso a:
 
-- La tua **Cronologia** personale con aggiornamenti dai tuoi gruppi e dalla chiesa
-- I **Gruppi** a cui appartieni, incluse conversazioni ed eventi
-- Le **Donazioni** online per le offerte
-- I **Piani** che mostrano il tuo programma di volontariato e i dettagli del servizio
-- Il **Check-In** per servizi ed eventi
-- La **Comunità** rubrica per trovare e connetterti con altri membri
-- Le **Lezioni** per studi biblici e programmi didattici
+- La vostra **Timeline** personale con aggiornamenti dai vostri gruppi e chiesa
+- **Gruppi** a cui appartiene, incluse conversazioni ed eventi
+- **Offerte** online per le donazioni
+- **Piani** che mostrano il vostro programma di volontariato e i dettagli del servizio
+- **Check-In** per servizi ed eventi
+- La directory **Comunità** per trovare e connettersi con altri membri
+- **Lezioni** per studi biblici e curriculum
 
-## Prossimi Passi
+## Accesso sul Vostro Telefono
 
-- [Effettuare l'Accesso](./logging-in.md) -- Scopri come accedere e gestire la tua sessione.
-- [Navigare B1App](./navigating.md) -- Orientati nel portale membri.
+B1.church funziona in qualsiasi browser mobile, ma potete anche ottenere un'esperienza più simile a un'app in due modi:
+
+- **Installa come PWA** -- Aggiungete il portale dei membri della vostra chiesa alla schermata home direttamente dal vostro browser. Nessun app store richiesto. Consultate [Installazione come App (PWA)](./installing-pwa.md) per le istruzioni.
+- **Scarica B1 Mobile** -- Installate l'app nativa dall'App Store o Google Play per l'esperienza mobile completa, incluse le notifiche push. Consultate [B1 Mobile](/docs/b1-mobile/).
+
+## Passaggi Successivi
+
+- [Accesso](./logging-in.md) -- Imparate come accedere e gestire la vostra sessione.
+- [Navigazione B1App](./navigating.md) -- Trovate la vostra strada intorno al portale dei membri.
+- [Installazione come App (PWA)](./installing-pwa.md) -- Aggiungete B1.church alla schermata home del vostro telefono.

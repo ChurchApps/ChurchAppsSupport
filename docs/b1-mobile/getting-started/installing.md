@@ -38,3 +38,9 @@ B1 Mobile receives regular updates with new features and improvements. Your devi
 :::info
 B1 Mobile requires iOS 14 or later for Apple devices and Android 6.0 or later for Android devices.
 :::
+
+## Prefer Not to Install a Native App?
+
+If you would rather not install an app from the App Store or Google Play, you can access the B1.church member portal directly from your phone's browser. B1.church supports installation as a **Progressive Web App (PWA)**, which adds the member portal to your home screen from Safari or Chrome — no download required. See [Installing as an App (PWA)](/docs/b1-church/getting-started/installing-pwa) for instructions.
+
+The native B1 Mobile app and the PWA offer similar member portal features, but push notifications are only available in the native app.

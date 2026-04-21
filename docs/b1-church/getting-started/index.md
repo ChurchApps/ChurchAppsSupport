@@ -44,7 +44,15 @@ Once you are logged in, the member portal gives you access to:
 - The **Community** directory to find and connect with other members
 - **Lessons** for Bible studies and curriculum
 
+## Accessing on Your Phone
+
+B1.church works in any mobile browser, but you can also get a more app-like experience in two ways:
+
+- **Install as a PWA** -- Add your church's member portal to your home screen directly from your browser. No app store required. See [Installing as an App (PWA)](./installing-pwa.md) for instructions.
+- **Download B1 Mobile** -- Install the native app from the App Store or Google Play for the full mobile experience, including push notifications. See [B1 Mobile](/docs/b1-mobile/).
+
 ## Next Steps
 
 - [Logging In](./logging-in.md) -- Learn how to sign in and manage your session.
 - [Navigating B1App](./navigating.md) -- Find your way around the member portal.
+- [Installing as an App (PWA)](./installing-pwa.md) -- Add B1.church to your phone's home screen.

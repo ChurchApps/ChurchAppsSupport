@@ -186,6 +186,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'b1-church/getting-started/logging-in',
             'b1-church/getting-started/navigating',
+            'b1-church/getting-started/installing-pwa',
           ],
         },
         {

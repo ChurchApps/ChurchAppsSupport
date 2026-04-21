@@ -1,50 +1,58 @@
 ---
-title: "Primeros Pasos"
+title: "Introducción"
 ---
 
-# Primeros Pasos con B1.church
+# Introducción a B1.church
 
 <div class="article-intro">
 
-B1.church es el hogar en linea de tu iglesia. Es donde acudes para mantenerte conectado con tu congregacion, ver actualizaciones, donar en linea, registrar tu asistencia en servicios y mucho mas. Esta seccion te guia a traves de los conceptos basicos para acceder y usar el portal de miembros.
+B1.church es el hogar en línea de tu iglesia. Es donde vas para mantenerte conectado con tu congregación, ver actualizaciones, hacer donaciones en línea, registrarte para servicios y mucho más. Esta sección te guía a través de lo básico de acceder y usar el portal de miembros.
 
 </div>
 
-## Acceder al Sitio de tu Iglesia
+## Accediendo al Sitio de Tu Iglesia
 
-Tu iglesia tiene su propia URL de B1.church, generalmente en el formato `https://nombredetuilglesia.b1.church`. Puedes visitar esta URL en cualquier navegador web en tu computadora, tableta o telefono. El liderazgo de tu iglesia o el equipo de bienvenida pueden proporcionarte la direccion exacta.
+Tu iglesia tiene su propia URL de B1.church, típicamente en el formato `https://tuiglesia.b1.church`. Puedes visitar esta URL en cualquier navegador web en tu computadora, tableta o teléfono. Tu liderazgo de iglesia o equipo de bienvenida puede proporcionarte la dirección exacta.
 
-Cuando visites el sitio por primera vez, veras el sitio web publico de tu iglesia con su marca personalizada, menus de navegacion y paginas de contenido.
+Cuando visites el sitio por primera vez, verás el sitio web público de tu iglesia con su marca personalizada, menús de navegación y páginas de contenido.
 
-## Crear una Cuenta
+## Creando una Cuenta
 
-Para acceder al portal de miembros y sus funciones, necesitas una cuenta de ChurchApps.
+Para acceder al portal de miembros y sus características, necesitas una cuenta de ChurchApps.
 
 1. Visita la URL de B1.church de tu iglesia.
-2. Haz clic en el boton **Iniciar Sesion** en la esquina superior derecha de la pagina.
-3. En la pantalla de inicio de sesion, selecciona la opcion de **Registrarse** para crear una nueva cuenta.
-4. Ingresa tu **nombre**, **apellido**, **direccion de correo electronico** y elige una **contrasena**.
+2. Haz clic en el botón **Iniciar Sesión** en la esquina superior derecha de la página.
+3. En la pantalla de inicio de sesión, selecciona la opción para **Registrar** una nueva cuenta.
+4. Ingresa tu **nombre**, **apellido**, **correo electrónico** y elige una **contraseña**.
 5. Completa el formulario de registro.
 
-Despues de registrarte, puedes iniciar sesion y acceder al portal de miembros con todas sus herramientas.
+Después de registrarte, puedes iniciar sesión y acceder al portal de miembros con todas sus herramientas.
 
 :::tip
-Si tu iglesia ya te ha agregado a su sistema, usa la misma direccion de correo electronico que tienen en sus registros. Esto vinculara tu cuenta con tu perfil existente en la iglesia.
+Si tu iglesia ya te ha añadido a su sistema, usa la misma dirección de correo electrónico que tienen registrada. Esto vinculará tu cuenta a tu perfil de iglesia existente.
 :::
 
-## Lo que Puedes Hacer
+## Lo Que Puedes Hacer
 
-Una vez que hayas iniciado sesion, el portal de miembros te da acceso a:
+Una vez que has iniciado sesión, el portal de miembros te da acceso a:
 
-- Tu **Linea de Tiempo** personal con actualizaciones de tus grupos e iglesia
-- Los **Grupos** a los que perteneces, incluyendo conversaciones y eventos
-- **Donaciones** en linea para ofrendas
-- **Planes** que muestran tu horario de voluntariado y los detalles de los servicios
-- **Registro de Asistencia** para servicios y eventos
-- El directorio de la **Comunidad** para encontrar y conectarte con otros miembros
-- **Lecciones** para estudios biblicos y curriculo
+- Tu **Cronología** personal con actualizaciones de tus grupos e iglesia
+- **Grupos** a los que perteneces, incluyendo conversaciones y eventos
+- **Donaciones** en línea para contribuciones
+- **Planes** mostrando tu cronograma de voluntariado y detalles del servicio
+- **Registro** para servicios y eventos
+- El directorio de **Comunidad** para encontrar y conectar con otros miembros
+- **Lecciones** para estudios bíblicos y plan de estudios
 
-## Siguientes Pasos
+## Accediendo en Tu Teléfono
 
-- [Iniciar Sesion](./logging-in.md) -- Aprende como iniciar sesion y administrar tu sesion.
-- [Navegar en B1App](./navigating.md) -- Encuentra tu camino en el portal de miembros.
+B1.church funciona en cualquier navegador móvil, pero también puedes obtener una experiencia más similar a una aplicación de dos maneras:
+
+- **Instalar como PWA** -- Añade el portal de miembros de tu iglesia a la pantalla de inicio directamente desde tu navegador. No se requiere tienda de aplicaciones. Ver [Instalación como Aplicación (PWA)](./installing-pwa.md) para instrucciones.
+- **Descargar B1 Mobile** -- Instala la aplicación nativa desde la App Store o Google Play para la experiencia móvil completa, incluyendo notificaciones push. Ver [B1 Mobile](/docs/b1-mobile/).
+
+## Próximos Pasos
+
+- [Iniciar Sesión](./logging-in.md) -- Aprende cómo iniciar sesión y gestionar tu sesión.
+- [Navegando por B1App](./navigating.md) -- Encuentra tu camino alrededor del portal de miembros.
+- [Instalación como Aplicación (PWA)](./installing-pwa.md) -- Añade B1.church a la pantalla de inicio de tu teléfono.
