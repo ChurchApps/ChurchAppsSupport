@@ -1,0 +1,226 @@
+{
+  "version.label": {
+    "message": "Næste",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.getting-started": {
+    "message": "Kom i gang",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.B1 - Admin": {
+    "message": "B1 - Admin",
+    "description": "The label for category 'B1 - Admin' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.People": {
+    "message": "Personer",
+    "description": "The label for category 'People' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.admin-groups": {
+    "message": "Grupper",
+    "description": "The label for category 'Groups' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Attendance": {
+    "message": "Fremmøde",
+    "description": "The label for category 'Attendance' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Donations": {
+    "message": "Donationer",
+    "description": "The label for category 'Donations' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.admin-serving": {
+    "message": "Tjeneste",
+    "description": "The label for category 'Serving' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Forms": {
+    "message": "Formularer",
+    "description": "The label for category 'Forms' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Reports": {
+    "message": "Rapporter",
+    "description": "The label for category 'Reports' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Website": {
+    "message": "Websted",
+    "description": "The label for category 'Website' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Sermons": {
+    "message": "Prædikener",
+    "description": "The label for category 'Sermons' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Calendars": {
+    "message": "Kalendere",
+    "description": "The label for category 'Calendars' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Settings": {
+    "message": "Indstillinger",
+    "description": "The label for category 'Settings' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.admin-profile": {
+    "message": "Profil",
+    "description": "The label for category 'Profile' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Guides": {
+    "message": "Vejledninger",
+    "description": "The label for category 'Guides' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.B1 - Website": {
+    "message": "B1 - Website",
+    "description": "The label for category 'B1 - Website' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-getting-started": {
+    "message": "Kom i gang",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-groups": {
+    "message": "Grupper",
+    "description": "The label for category 'Groups' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-giving": {
+    "message": "Gaver",
+    "description": "The label for category 'Giving' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Plans": {
+    "message": "Planer",
+    "description": "The label for category 'Plans' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-checkin": {
+    "message": "Ind- og udchecking",
+    "description": "The label for category 'Check-In' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-community": {
+    "message": "Fællesskab",
+    "description": "The label for category 'Community' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-content": {
+    "message": "Indhold",
+    "description": "The label for category 'Content' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.B1 - Mobile": {
+    "message": "B1 - Mobil",
+    "description": "The label for category 'B1 - Mobile' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-getting-started": {
+    "message": "Kom i gang",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-groups": {
+    "message": "Grupper",
+    "description": "The label for category 'Groups' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-giving": {
+    "message": "Gaver",
+    "description": "The label for category 'Giving' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-checkin": {
+    "message": "Ind- og udchecking",
+    "description": "The label for category 'Check-In' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-serving": {
+    "message": "Tjeneste",
+    "description": "The label for category 'Serving' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-community": {
+    "message": "Fællesskab",
+    "description": "The label for category 'Community' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-content": {
+    "message": "Indhold",
+    "description": "The label for category 'Content' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-profile": {
+    "message": "Profil",
+    "description": "The label for category 'Profile' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.B1 - Checkin": {
+    "message": "B1 - Ind- og udchecking",
+    "description": "The label for category 'B1 - Checkin' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.checkin-getting-started": {
+    "message": "Kom i gang",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.checkin-checkin": {
+    "message": "Ind- og udchecking",
+    "description": "The label for category 'Check-In' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Lessons.church": {
+    "message": "Lessons.church",
+    "description": "The label for category 'Lessons.church' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.lessons-getting-started": {
+    "message": "Kom i gang",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Browsing Content": {
+    "message": "Gennemse indhold",
+    "description": "The label for category 'Browsing Content' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Classrooms": {
+    "message": "Klasseværelser",
+    "description": "The label for category 'Classrooms' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Customization": {
+    "message": "Tilpasning",
+    "description": "The label for category 'Customization' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Presenting": {
+    "message": "Præsentation",
+    "description": "The label for category 'Presenting' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Administration": {
+    "message": "Administration",
+    "description": "The label for category 'Administration' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.FreePlay": {
+    "message": "FreePlay",
+    "description": "The label for category 'FreePlay' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.freeplay-getting-started": {
+    "message": "Kom i gang",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Classroom Mode": {
+    "message": "Klassetilstand",
+    "description": "The label for category 'Classroom Mode' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Plan Mode": {
+    "message": "Plantilstand",
+    "description": "The label for category 'Plan Mode' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Content Providers": {
+    "message": "Indholdsudbydere",
+    "description": "The label for category 'Content Providers' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Browsing Lessons": {
+    "message": "Gennemse lektioner",
+    "description": "The label for category 'Browsing Lessons' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Developer": {
+    "message": "Udvikler",
+    "description": "The label for category 'Developer' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Setup": {
+    "message": "Opsætning",
+    "description": "The label for category 'Setup' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.API": {
+    "message": "API",
+    "description": "The label for category 'API' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Web Apps": {
+    "message": "Webapplikationer",
+    "description": "The label for category 'Web Apps' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Mobile Apps": {
+    "message": "Mobilapplikationer",
+    "description": "The label for category 'Mobile Apps' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Shared Libraries": {
+    "message": "Delte biblioteker",
+    "description": "The label for category 'Shared Libraries' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Deployment": {
+    "message": "Implementering",
+    "description": "The label for category 'Deployment' in sidebar 'docsSidebar'"
+  }
+}

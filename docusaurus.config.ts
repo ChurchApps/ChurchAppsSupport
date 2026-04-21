@@ -24,7 +24,7 @@ const config: Config = {
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'es', 'fr', 'ko', 'de', 'hi', 'it', 'no', 'pt', 'ru', 'tl', 'zh'],
+    locales: ['en', 'es', 'fr', 'ko', 'de', 'hi', 'it', 'no', 'pt', 'ru', 'tl', 'zh', 'nl', 'da'],
     localeConfigs: {
       en: { label: 'English', htmlLang: 'en-US' },
       es: { label: 'Español', htmlLang: 'es' },
@@ -38,6 +38,8 @@ const config: Config = {
       ru: { label: 'Русский', htmlLang: 'ru' },
       tl: { label: 'Tagalog', htmlLang: 'tl' },
       zh: { label: '中文', htmlLang: 'zh' },
+      nl: { label: 'Nederlands', htmlLang: 'nl' },
+      da: { label: 'Dansk', htmlLang: 'da' },
     },
   },
 
