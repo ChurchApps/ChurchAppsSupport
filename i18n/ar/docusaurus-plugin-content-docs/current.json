@@ -1,0 +1,226 @@
+{
+  "version.label": {
+    "message": "التالي",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.getting-started": {
+    "message": "البدء",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.B1 - Admin": {
+    "message": "B1 - Admin",
+    "description": "The label for category 'B1 - Admin' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.People": {
+    "message": "الناس",
+    "description": "The label for category 'People' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.admin-groups": {
+    "message": "المجموعات",
+    "description": "The label for category 'Groups' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Attendance": {
+    "message": "الحضور",
+    "description": "The label for category 'Attendance' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Donations": {
+    "message": "التبرعات",
+    "description": "The label for category 'Donations' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.admin-serving": {
+    "message": "الخدمة",
+    "description": "The label for category 'Serving' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Forms": {
+    "message": "النماذج",
+    "description": "The label for category 'Forms' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Reports": {
+    "message": "التقارير",
+    "description": "The label for category 'Reports' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Website": {
+    "message": "الموقع الإلكتروني",
+    "description": "The label for category 'Website' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Sermons": {
+    "message": "الوعظ",
+    "description": "The label for category 'Sermons' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Calendars": {
+    "message": "التقاويم",
+    "description": "The label for category 'Calendars' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Settings": {
+    "message": "الإعدادات",
+    "description": "The label for category 'Settings' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.admin-profile": {
+    "message": "الملف الشخصي",
+    "description": "The label for category 'Profile' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Guides": {
+    "message": "الأدلة",
+    "description": "The label for category 'Guides' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.B1 - Website": {
+    "message": "B1 - الموقع",
+    "description": "The label for category 'B1 - Website' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-getting-started": {
+    "message": "البدء",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-groups": {
+    "message": "المجموعات",
+    "description": "The label for category 'Groups' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-giving": {
+    "message": "العطاء",
+    "description": "The label for category 'Giving' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Plans": {
+    "message": "الخطط",
+    "description": "The label for category 'Plans' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-checkin": {
+    "message": "تسجيل الوصول",
+    "description": "The label for category 'Check-In' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-community": {
+    "message": "المجتمع",
+    "description": "The label for category 'Community' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-content": {
+    "message": "المحتوى",
+    "description": "The label for category 'Content' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.B1 - Mobile": {
+    "message": "B1 - الهاتف المحمول",
+    "description": "The label for category 'B1 - Mobile' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-getting-started": {
+    "message": "البدء",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-groups": {
+    "message": "المجموعات",
+    "description": "The label for category 'Groups' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-giving": {
+    "message": "العطاء",
+    "description": "The label for category 'Giving' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-checkin": {
+    "message": "تسجيل الوصول",
+    "description": "The label for category 'Check-In' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-serving": {
+    "message": "الخدمة",
+    "description": "The label for category 'Serving' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-community": {
+    "message": "المجتمع",
+    "description": "The label for category 'Community' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-content": {
+    "message": "المحتوى",
+    "description": "The label for category 'Content' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-profile": {
+    "message": "الملف الشخصي",
+    "description": "The label for category 'Profile' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.B1 - Checkin": {
+    "message": "B1 - تسجيل الوصول",
+    "description": "The label for category 'B1 - Checkin' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.checkin-getting-started": {
+    "message": "البدء",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.checkin-checkin": {
+    "message": "تسجيل الوصول",
+    "description": "The label for category 'Check-In' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Lessons.church": {
+    "message": "Lessons.church",
+    "description": "The label for category 'Lessons.church' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.lessons-getting-started": {
+    "message": "البدء",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Browsing Content": {
+    "message": "استعراض المحتوى",
+    "description": "The label for category 'Browsing Content' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Classrooms": {
+    "message": "الفصول الدراسية",
+    "description": "The label for category 'Classrooms' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Customization": {
+    "message": "التخصيص",
+    "description": "The label for category 'Customization' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Presenting": {
+    "message": "تقديم",
+    "description": "The label for category 'Presenting' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Administration": {
+    "message": "الإدارة",
+    "description": "The label for category 'Administration' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.FreePlay": {
+    "message": "FreePlay",
+    "description": "The label for category 'FreePlay' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.freeplay-getting-started": {
+    "message": "البدء",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Classroom Mode": {
+    "message": "وضع الفصل",
+    "description": "The label for category 'Classroom Mode' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Plan Mode": {
+    "message": "وضع الخطة",
+    "description": "The label for category 'Plan Mode' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Content Providers": {
+    "message": "مزودو المحتوى",
+    "description": "The label for category 'Content Providers' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Browsing Lessons": {
+    "message": "استعراض الدروس",
+    "description": "The label for category 'Browsing Lessons' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Developer": {
+    "message": "المطور",
+    "description": "The label for category 'Developer' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Setup": {
+    "message": "الإعداد",
+    "description": "The label for category 'Setup' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.API": {
+    "message": "API",
+    "description": "The label for category 'API' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Web Apps": {
+    "message": "تطبيقات الويب",
+    "description": "The label for category 'Web Apps' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Mobile Apps": {
+    "message": "تطبيقات الهاتف المحمول",
+    "description": "The label for category 'Mobile Apps' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Shared Libraries": {
+    "message": "المكتبات المشتركة",
+    "description": "The label for category 'Shared Libraries' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Deployment": {
+    "message": "النشر",
+    "description": "The label for category 'Deployment' in sidebar 'docsSidebar'"
+  }
+}

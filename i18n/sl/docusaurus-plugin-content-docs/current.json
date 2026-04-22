@@ -1,0 +1,226 @@
+{
+  "version.label": {
+    "message": "Naslednja",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.getting-started": {
+    "message": "Začeti",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.B1 - Admin": {
+    "message": "B1 - Admin",
+    "description": "The label for category 'B1 - Admin' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.People": {
+    "message": "Ljudje",
+    "description": "The label for category 'People' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.admin-groups": {
+    "message": "Skupine",
+    "description": "The label for category 'Groups' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Attendance": {
+    "message": "Obisk",
+    "description": "The label for category 'Attendance' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Donations": {
+    "message": "Donacije",
+    "description": "The label for category 'Donations' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.admin-serving": {
+    "message": "Služenje",
+    "description": "The label for category 'Serving' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Forms": {
+    "message": "Obrazci",
+    "description": "The label for category 'Forms' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Reports": {
+    "message": "Poročila",
+    "description": "The label for category 'Reports' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Website": {
+    "message": "Spletno mesto",
+    "description": "The label for category 'Website' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Sermons": {
+    "message": "Pridigе",
+    "description": "The label for category 'Sermons' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Calendars": {
+    "message": "Koledarji",
+    "description": "The label for category 'Calendars' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Settings": {
+    "message": "Nastavitve",
+    "description": "The label for category 'Settings' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.admin-profile": {
+    "message": "Profil",
+    "description": "The label for category 'Profile' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Guides": {
+    "message": "Navodila",
+    "description": "The label for category 'Guides' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.B1 - Website": {
+    "message": "B1 - Spletno mesto",
+    "description": "The label for category 'B1 - Website' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-getting-started": {
+    "message": "Začeti",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-groups": {
+    "message": "Skupine",
+    "description": "The label for category 'Groups' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-giving": {
+    "message": "Dajanje",
+    "description": "The label for category 'Giving' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Plans": {
+    "message": "Načrti",
+    "description": "The label for category 'Plans' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-checkin": {
+    "message": "Prijava",
+    "description": "The label for category 'Check-In' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-community": {
+    "message": "Skupnost",
+    "description": "The label for category 'Community' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.church-content": {
+    "message": "Vsebina",
+    "description": "The label for category 'Content' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.B1 - Mobile": {
+    "message": "B1 - Mobilni",
+    "description": "The label for category 'B1 - Mobile' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-getting-started": {
+    "message": "Začeti",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-groups": {
+    "message": "Skupine",
+    "description": "The label for category 'Groups' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-giving": {
+    "message": "Dajanje",
+    "description": "The label for category 'Giving' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-checkin": {
+    "message": "Prijava",
+    "description": "The label for category 'Check-In' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-serving": {
+    "message": "Služenje",
+    "description": "The label for category 'Serving' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-community": {
+    "message": "Skupnost",
+    "description": "The label for category 'Community' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-content": {
+    "message": "Vsebina",
+    "description": "The label for category 'Content' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.mobile-profile": {
+    "message": "Profil",
+    "description": "The label for category 'Profile' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.B1 - Checkin": {
+    "message": "B1 - Prijava",
+    "description": "The label for category 'B1 - Checkin' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.checkin-getting-started": {
+    "message": "Začeti",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.checkin-checkin": {
+    "message": "Prijava",
+    "description": "The label for category 'Check-In' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Lessons.church": {
+    "message": "Lessons.church",
+    "description": "The label for category 'Lessons.church' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.lessons-getting-started": {
+    "message": "Začeti",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Browsing Content": {
+    "message": "Pregledovanje vsebine",
+    "description": "The label for category 'Browsing Content' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Classrooms": {
+    "message": "Učilnice",
+    "description": "The label for category 'Classrooms' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Customization": {
+    "message": "Prilagoditev",
+    "description": "The label for category 'Customization' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Presenting": {
+    "message": "Predstavljanje",
+    "description": "The label for category 'Presenting' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Administration": {
+    "message": "Administracija",
+    "description": "The label for category 'Administration' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.FreePlay": {
+    "message": "FreePlay",
+    "description": "The label for category 'FreePlay' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.freeplay-getting-started": {
+    "message": "Začeti",
+    "description": "The label for category 'Getting Started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Classroom Mode": {
+    "message": "Način učilnice",
+    "description": "The label for category 'Classroom Mode' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Plan Mode": {
+    "message": "Način načrta",
+    "description": "The label for category 'Plan Mode' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Content Providers": {
+    "message": "Ponudniki vsebine",
+    "description": "The label for category 'Content Providers' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Browsing Lessons": {
+    "message": "Pregledovanje lekcij",
+    "description": "The label for category 'Browsing Lessons' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Developer": {
+    "message": "Razvijalec",
+    "description": "The label for category 'Developer' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Setup": {
+    "message": "Nastavitev",
+    "description": "The label for category 'Setup' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.API": {
+    "message": "API",
+    "description": "The label for category 'API' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Web Apps": {
+    "message": "Spletne aplikacije",
+    "description": "The label for category 'Web Apps' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Mobile Apps": {
+    "message": "Mobilne aplikacije",
+    "description": "The label for category 'Mobile Apps' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Shared Libraries": {
+    "message": "Deljene knjižnice",
+    "description": "The label for category 'Shared Libraries' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Deployment": {
+    "message": "Razdelitev",
+    "description": "The label for category 'Deployment' in sidebar 'docsSidebar'"
+  }
+}
