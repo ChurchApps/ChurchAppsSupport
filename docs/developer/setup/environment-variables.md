@@ -92,21 +92,16 @@ The core **Api** project (`.env.sample`) has the most configuration. Here are th
 | `FILE_STORE` | Where to store uploaded files (`disk` or `s3`) | `disk` |
 | `CORS_ORIGIN` | Allowed CORS origins (`*` for local dev) | `*` |
 
-### Database Connections
+### Database Connection
 
-Each API module has its own MySQL database and connection string:
+A single base URL points the API at MySQL. The API derives one database per module (`/membership`, `/attendance`, `/content`, `/giving`, `/messaging`, `/doing`, `/reporting`) from this base.
 
-| Variable | Database |
-|----------|----------|
-| `MEMBERSHIP_CONNECTION_STRING` | `mysql://root:password@localhost:3306/membership` |
-| `ATTENDANCE_CONNECTION_STRING` | `mysql://root:password@localhost:3306/attendance` |
-| `CONTENT_CONNECTION_STRING` | `mysql://root:password@localhost:3306/content` |
-| `GIVING_CONNECTION_STRING` | `mysql://root:password@localhost:3306/giving` |
-| `MESSAGING_CONNECTION_STRING` | `mysql://root:password@localhost:3306/messaging` |
-| `DOING_CONNECTION_STRING` | `mysql://root:password@localhost:3306/doing` |
+| Variable | Example |
+|----------|---------|
+| `API_DATABASE_URL` | `mysql://root:password@localhost:3306` |
 
 :::tip
-Update `root:password` with your actual MySQL credentials. Each database must be created before running the API. Use `npm run initdb` to create the schema for all modules, or `npm run initdb:membership` for a single module.
+Update `root:password` with your actual MySQL credentials. Each per-module database must exist before running the API. Use `npm run initdb` to create the schema for all modules, or `npm run initdb:membership` for a single module.
 :::
 
 ### WebSocket Settings
@@ -128,21 +123,14 @@ Sample file: `.env.sample`
 |----------|-------------|-------------------|
 | `REACT_APP_STAGE` | Environment name | `demo` |
 | `PORT` | Dev server port | `3101` |
-| `REACT_APP_MEMBERSHIP_API` | Membership API URL | `https://api.staging.churchapps.org/membership` |
-| `REACT_APP_ATTENDANCE_API` | Attendance API URL | `https://api.staging.churchapps.org/attendance` |
-| `REACT_APP_GIVING_API` | Giving API URL | `https://api.staging.churchapps.org/giving` |
+| `REACT_APP_API_BASE` | Single base URL for all ChurchApps APIs (`/membership`, `/attendance`, `/content`, `/giving`, `/messaging`, `/doing`, `/reporting` are appended automatically) | `https://api.staging.churchapps.org` |
 | `REACT_APP_CONTENT_ROOT` | Content delivery URL | `https://content.staging.churchapps.org` |
 | `REACT_APP_GOOGLE_ANALYTICS` | Google Analytics ID (optional) | `UA-123456789-1` |
 
-For local API development, uncomment and use the `localhost` variants:
+For local API development, point the base URL at your local stack:
 
 ```bash
-REACT_APP_MEMBERSHIP_API=http://localhost:8084/membership
-REACT_APP_ATTENDANCE_API=http://localhost:8084/attendance
-REACT_APP_GIVING_API=http://localhost:8084/giving
-REACT_APP_CONTENT_API=http://localhost:8084/content
-REACT_APP_DOING_API=http://localhost:8084/doing
-REACT_APP_MESSAGING_API=http://localhost:8084/messaging
+REACT_APP_API_BASE=http://localhost:8084
 ```
 
 ### B1App (Next.js)
@@ -151,11 +139,7 @@ Sample file: `.env.sample`
 
 | Variable | Description | Example (Staging) |
 |----------|-------------|-------------------|
-| `NEXT_PUBLIC_MEMBERSHIP_API` | Membership API URL | `https://api.staging.churchapps.org/membership` |
-| `NEXT_PUBLIC_ATTENDANCE_API` | Attendance API URL | `https://api.staging.churchapps.org/attendance` |
-| `NEXT_PUBLIC_GIVING_API` | Giving API URL | `https://api.staging.churchapps.org/giving` |
-| `NEXT_PUBLIC_MESSAGING_API` | Messaging API URL | `https://api.staging.churchapps.org/messaging` |
-| `NEXT_PUBLIC_CONTENT_API` | Content API URL | `https://api.staging.churchapps.org/content` |
+| `NEXT_PUBLIC_API_BASE` | Single base URL for all ChurchApps APIs (`/membership`, `/attendance`, `/content`, `/giving`, `/messaging`, `/doing`, `/reporting` are appended automatically) | `https://api.staging.churchapps.org` |
 | `NEXT_PUBLIC_CONTENT_ROOT` | Content delivery URL | `https://staging.churchapps.org/content` |
 | `NEXT_PUBLIC_CHURCH_APPS_URL` | ChurchApps base URL | `https://staging.churchapps.org` |
 | `NEXT_PUBLIC_GOOGLE_ANALYTICS` | Google Analytics ID (optional) | `UA-123456789-1` |
@@ -186,12 +170,8 @@ Sample file: `dotenv.sample.txt`
 | Variable | Description | Example (Staging) |
 |----------|-------------|-------------------|
 | `STAGE` | Environment name | `dev` |
-| `MEMBERSHIP_API` | Membership API URL | `https://api.staging.churchapps.org/membership` |
-| `MESSAGING_API` | Messaging API URL | `https://api.staging.churchapps.org/messaging` |
-| `ATTENDANCE_API` | Attendance API URL | `https://api.staging.churchapps.org/attendance` |
-| `GIVING_API` | Giving API URL | `https://api.staging.churchapps.org/giving` |
-| `DOING_API` | Doing API URL | `https://api.staging.churchapps.org/doing` |
-| `CONTENT_API` | Content API URL | `https://api.churchapps.org/content` |
+| `API_BASE` | Single base URL for all ChurchApps APIs (`/membership`, `/attendance`, `/content`, `/giving`, `/messaging`, `/doing` are appended automatically) | `https://api.staging.churchapps.org` |
+| `LESSONS_API` | Lessons API (separate host) | `https://api.staging.lessons.church` |
 | `CONTENT_ROOT` | Content delivery URL | `https://content.staging.churchapps.org` |
 | `LESSONS_ROOT` | Lessons site URL | `https://staging.lessons.church` |
 
