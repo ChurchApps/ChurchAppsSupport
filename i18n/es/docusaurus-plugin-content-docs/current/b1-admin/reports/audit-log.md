@@ -80,4 +80,4 @@ Revise el registro de auditoría regularmente, especialmente después de incorpo
 
 - [Roles & Permissions](../settings/roles-permissions) -- Administrar quién tiene acceso a qué
 - [Data Security](../settings/data-security) -- Entender cómo están protegidos sus datos
-- [Reports Overview](./index) -- Ver todos los reportes disponibles
+- [Reports Overview](./index.md) -- Ver todos los reportes disponibles

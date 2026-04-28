@@ -44,5 +44,6 @@ Start with [Initial Setup](initial-setup) if you are configuring your website fo
 
 - [Initial Setup](initial-setup) -- Get your website up and running for the first time
 - [Managing Pages](managing-pages) -- Learn how to create and organize your pages
+- [Using the Page Editor](page-editor) -- Build and style your page content with the visual editor
 - [Appearance](appearance) -- Customize your site's look and feel
 - [Files](files) -- Upload and manage media files

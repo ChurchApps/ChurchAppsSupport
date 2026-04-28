@@ -1,5 +1,5 @@
 ---
-title: `"Conexión de TV de Aula a sus Lecciones de B1 Admin`"
+title: "Conexión de TV de Aula a sus Lecciones de B1 Admin"
 ---
 
 # Conexión de TV de Aula a sus Lecciones de B1 Admin

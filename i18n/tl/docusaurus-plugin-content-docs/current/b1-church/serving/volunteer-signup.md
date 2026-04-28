@@ -72,5 +72,5 @@ Tuklasin ang pahina ng volunteer nang regular, lalo na sa simula ng linggo. Ang 
 
 ## Mga Kaugnay na Artikulo
 
-- [Serving Overview](./index) -- Pangkalahatang pagtingin ng mga feature ng paglilingkod sa B1.church
+- [Serving Overview](./index.md) -- Pangkalahatang pagtingin ng mga feature ng paglilingkod sa B1.church
 - [Viewing Plans](../plans/viewing-plans) -- Tuklasin ang iyong mga assigned na mga plano at mga order ng serbisyo

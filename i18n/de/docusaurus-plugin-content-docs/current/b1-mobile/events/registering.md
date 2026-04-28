@@ -49,5 +49,5 @@ Wenn Sie absagen müssen, kontaktieren Sie Ihren Kirchen-Administrator. Sie kön
 
 ## Verwandte Artikel
 
-- [Ereignisse-Übersicht](./index) -- Durchsuchen Sie Ereignisse mit Registrierung auf Mobil
+- [Ereignisse-Übersicht](./index.md) -- Durchsuchen Sie Ereignisse mit Registrierung auf Mobil
 - [Pläne anzeigen](../serving/viewing-plans) -- Sehen Sie Ihren Dienst-Plan

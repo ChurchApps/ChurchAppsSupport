@@ -54,5 +54,5 @@ Si vous devez annuler votre enregistrement, contactez l'administrateur de votre 
 
 ## Articles connexes
 
-- [Aperçu des événements](./index) — Parcourez les événements à venir avec enregistrement
+- [Aperçu des événements](./index.md) — Parcourez les événements à venir avec enregistrement
 - [Faire des donations](../giving/making-donations) — Faire une donation aux côtés de la participation aux événements

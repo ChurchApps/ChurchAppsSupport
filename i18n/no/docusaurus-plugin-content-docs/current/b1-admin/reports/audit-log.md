@@ -80,4 +80,4 @@ Gjennomgå revisjonloggen regelmessig, spesielt etter å ha innført nye teammed
 
 - [Roller & Tillatelser](../settings/roles-permissions) -- Administrer hvem som har tilgang til hva
 - [Datasikkerhet](../settings/data-security) -- Forstå hvordan dataene dine er beskyttet
-- [Rapporteroversikt](./index) -- Se alle tilgjengelige rapporter
+- [Rapporteroversikt](./index.md) -- Se alle tilgjengelige rapporter

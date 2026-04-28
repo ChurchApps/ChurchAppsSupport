@@ -1,5 +1,5 @@
 ---
-title: `"Programación de Lecciones`"
+title: "Programación de Lecciones"
 ---
 
 # Programación de Lecciones desde Lessons.church

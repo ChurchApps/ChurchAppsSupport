@@ -80,4 +80,4 @@ Revise o log de auditoria regularmente, especialmente depois de integrar novos m
 
 - [Roles & Permissions](../settings/roles-permissions) -- Gerencie quem tem acesso ao quê
 - [Data Security](../settings/data-security) -- Entenda como seus dados são protegidos
-- [Reports Overview](./index) -- Veja todos os relatórios disponíveis
+- [Reports Overview](./index.md) -- Veja todos os relatórios disponíveis

@@ -72,5 +72,5 @@ Tjek frivilligsiden regelmæssigt, især tidligt på ugen. Populære positioner 
 
 ## Relaterede artikler
 
-- [Oversigtover tjening](./index) -- Oversigt over tjeneste funktioner på B1.church
+- [Oversigtover tjening](./index.md) -- Oversigt over tjeneste funktioner på B1.church
 - [Se planer](../plans/viewing-plans) -- Se dine tildelte planer og serviceordrer

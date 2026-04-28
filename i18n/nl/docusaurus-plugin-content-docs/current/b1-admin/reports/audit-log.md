@@ -80,4 +80,4 @@ Controleer het auditlogboek regelmatig, vooral na het onboarden van nieuwe teaml
 
 - [Rollen & Machtigingen](../settings/roles-permissions) -- Beheer wie toegang tot wat heeft
 - [Gegevensbeveiliging](../settings/data-security) -- Begrijp hoe uw gegevens worden beschermd
-- [Rapportoverzicht](./index) -- Zie alle beschikbare rapporten
+- [Rapportoverzicht](./index.md) -- Zie alle beschikbare rapporten

@@ -49,5 +49,5 @@ Hvis du må avbryte, kontakt kirkens administrator. De kan avbryte registreringe
 
 ## Relaterte artikler
 
-- [Hendelseoversikt](./index) -- Bla gjennom hendelser med registrering på mobil
+- [Hendelseoversikt](./index.md) -- Bla gjennom hendelser med registrering på mobil
 - [Visning av planer](../serving/viewing-plans) -- Se serviceschematet ditt

@@ -49,5 +49,5 @@ Si necesita cancelar, póngase en contacto con su administrador de iglesia. Pued
 
 ## Artículos Relacionados
 
-- [Descripción General de Eventos](./index) -- Explore eventos con registro en dispositivo móvil
+- [Descripción General de Eventos](./index.md) -- Explore eventos con registro en dispositivo móvil
 - [Visualización de Planes](../serving/viewing-plans) -- Vea su horario de servicio

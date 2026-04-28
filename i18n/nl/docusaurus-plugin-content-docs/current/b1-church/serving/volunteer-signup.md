@@ -72,5 +72,5 @@ Controleer regelmatig de vrijwilliger pagina, vooral vroeg in de week. Populaire
 
 ## Gerelateerde Artikelen
 
-- [Dienen Overzicht](./index) -- Overzicht van dienst functies op B1.church
+- [Dienen Overzicht](./index.md) -- Overzicht van dienst functies op B1.church
 - [Plannen Bekijken](../plans/viewing-plans) -- Bekijk je toegewezen plannen en service orders

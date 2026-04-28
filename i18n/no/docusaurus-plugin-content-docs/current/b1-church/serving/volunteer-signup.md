@@ -72,5 +72,5 @@ Sjekk frivolligsiden regelmessig, spesielt tidlig i uken. Populære posisjoner f
 
 ## Relaterte artikler
 
-- [Tjenesteoversikt](./index) -- Oversikt over tjenestfunksjoner på B1.church
+- [Tjenesteoversikt](./index.md) -- Oversikt over tjenestfunksjoner på B1.church
 - [Visning av planer](../plans/viewing-plans) -- Se dine tildelte planer og serviceordrer

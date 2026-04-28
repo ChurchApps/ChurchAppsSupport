@@ -41,5 +41,5 @@ Consultez vos plans de service assignés sur B1 Mobile pour voir vos positions, 
 
 ## Articles connexes
 
-- [Aperçu du service](./index) — Vue d'ensemble de la section Service
+- [Aperçu du service](./index.md) — Vue d'ensemble de la section Service
 - [Inscription des bénévoles](./volunteer-signup) — Vous inscrire aux positions ouvertes

@@ -80,4 +80,4 @@ Rivedi il registro di controllo regolarmente, soprattutto dopo l'onboarding di n
 
 - [Ruoli e Autorizzazioni](../settings/roles-permissions) -- Gestisci chi ha accesso a cosa
 - [Sicurezza dei Dati](../settings/data-security) -- Comprendi come i tuoi dati sono protetti
-- [Panoramica dei Rapporti](./index) -- Vedi tutti i rapporti disponibili
+- [Panoramica dei Rapporti](./index.md) -- Vedi tutti i rapporti disponibili

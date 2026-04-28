@@ -72,5 +72,5 @@ title: "志愿者报名"
 
 ## 相关文章
 
-- [服侍概览](./index) -- B1.church上服侍功能的概览
+- [服侍概览](./index.md) -- B1.church上服侍功能的概览
 - [查看计划](../plans/viewing-plans) -- 查看您分配的计划和服侍安排

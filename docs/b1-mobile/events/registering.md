@@ -49,5 +49,5 @@ If you need to cancel, contact your church administrator. They can cancel your r
 
 ## Related Articles
 
-- [Events Overview](./index) -- Browse events with registration on mobile
+- [Events Overview](./index.md) -- Browse events with registration on mobile
 - [Viewing Plans](../serving/viewing-plans) -- See your serving schedule

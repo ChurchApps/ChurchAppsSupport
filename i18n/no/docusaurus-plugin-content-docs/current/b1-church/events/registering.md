@@ -54,5 +54,5 @@ Hvis du må avbryte registreringen, kontakt kirkens administrator. De kan avbryt
 
 ## Relaterte artikler
 
-- [Hendelseoversikt](./index) -- Bla gjennom kommende hendelser med registrering
+- [Hendelseoversikt](./index.md) -- Bla gjennom kommende hendelser med registrering
 - [Donasjon](../giving/making-donations) -- Gjør en donasjon sammen med hendelsesdeltakelse

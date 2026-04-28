@@ -80,4 +80,4 @@ Suriin ang audit log nang regular, lalo na pagkatapos onboarding ng mga bagong t
 
 - [Roles & Permissions](../settings/roles-permissions) -- Pamahalaan kung sino ang may access sa ano
 - [Data Security](../settings/data-security) -- Maunawaan kung paano protektado ang inyong data
-- [Reports Overview](./index) -- Tingnan ang lahat ng available reports
+- [Reports Overview](./index.md) -- Tingnan ang lahat ng available reports

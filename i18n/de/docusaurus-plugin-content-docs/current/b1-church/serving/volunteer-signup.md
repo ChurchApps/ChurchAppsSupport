@@ -72,5 +72,5 @@ Jede Position hat eine begrenzte Anzahl von Plätzen. Wenn alle Plätze besetzt 
 
 ## Verwandte Artikel
 
-- [Dienst-Übersicht](./index) -- Übersicht der Dienst-Funktionen auf B1.church
+- [Dienst-Übersicht](./index.md) -- Übersicht der Dienst-Funktionen auf B1.church
 - [Pläne anzeigen](../plans/viewing-plans) -- Sehen Sie Ihre zugewiesenen Pläne und Dienst-Reihenfolgen

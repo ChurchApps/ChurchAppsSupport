@@ -54,5 +54,5 @@ Si necesita cancelar su registro, póngase en contacto con su administrador de i
 
 ## Artículos Relacionados
 
-- [Descripción General de Eventos](./index) -- Explore próximos eventos con registro
+- [Descripción General de Eventos](./index.md) -- Explore próximos eventos con registro
 - [Hacer Donaciones](../giving/making-donations) -- Haga una donación junto con la participación en eventos

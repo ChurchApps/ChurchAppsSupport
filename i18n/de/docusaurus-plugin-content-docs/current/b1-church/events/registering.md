@@ -54,5 +54,5 @@ Wenn Sie Ihre Registrierung absagen müssen, kontaktieren Sie Ihren Kirchen-Admi
 
 ## Verwandte Artikel
 
-- [Ereignisse-Übersicht](./index) -- Durchsuchen Sie kommende Ereignisse mit Registrierung
+- [Ereignisse-Übersicht](./index.md) -- Durchsuchen Sie kommende Ereignisse mit Registrierung
 - [Spenden tätigen](../giving/making-donations) -- Tätigen Sie eine Spende zusammen mit der Ereignisteilnahme

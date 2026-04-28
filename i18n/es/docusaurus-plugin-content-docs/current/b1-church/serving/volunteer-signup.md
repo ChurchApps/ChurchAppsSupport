@@ -72,5 +72,5 @@ Revise la página de voluntarios regularmente, especialmente a principios de sem
 
 ## Artículos Relacionados
 
-- [Descripción General de Serving](./index) -- Descripción general de características de serving en B1.church
+- [Descripción General de Serving](./index.md) -- Descripción general de características de serving en B1.church
 - [Visualización de Planes](../plans/viewing-plans) -- Vea sus planes asignados y órdenes de servicio

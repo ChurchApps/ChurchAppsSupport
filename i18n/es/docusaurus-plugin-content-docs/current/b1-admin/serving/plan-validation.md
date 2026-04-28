@@ -1,5 +1,5 @@
 ---
-title: `"Validación de Planes y Notificaciones de Voluntarios`"
+title: "Validación de Planes y Notificaciones de Voluntarios"
 ---
 
 # Validación de Planes y Notificaciones de Voluntarios

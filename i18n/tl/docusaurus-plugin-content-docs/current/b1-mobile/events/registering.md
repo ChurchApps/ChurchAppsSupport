@@ -49,5 +49,5 @@ Kung kailangan mong bawiin, makipag-ugnayan sa iyong administrator ng simbahan. 
 
 ## Mga Kaugnay na Artikulo
 
-- [Events Overview](./index) -- Mag-browse ng mga kaganapan na may pagpaparehistro sa mobile
+- [Events Overview](./index.md) -- Mag-browse ng mga kaganapan na may pagpaparehistro sa mobile
 - [Viewing Plans](../serving/viewing-plans) -- Tuklasin ang iyong schedule ng paglilingkod

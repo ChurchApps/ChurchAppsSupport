@@ -1,5 +1,5 @@
 ---
-title: `"Descripción General de Planes`"
+title: "Descripción General de Planes"
 ---
 
 # Descripción General de Planes

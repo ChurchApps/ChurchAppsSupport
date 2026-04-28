@@ -80,4 +80,4 @@ title: "审计日志"
 
 - [角色和权限](../settings/roles-permissions) — 管理谁有权访问什么
 - [数据安全](../settings/data-security) — 了解您的数据如何受到保护
-- [报告概览](./index) — 查看所有可用的报告
+- [报告概览](./index.md) — 查看所有可用的报告

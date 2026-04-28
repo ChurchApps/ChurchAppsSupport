@@ -49,5 +49,5 @@ Hvis du har brug for at aflyst, kontakt din kirkes administrator. De kan aflyst 
 
 ## Relaterede artikler
 
-- [Arrangementsoversigt](./index) -- Gennemse arrangementer med registrering på mobil
+- [Arrangementsoversigt](./index.md) -- Gennemse arrangementer med registrering på mobil
 - [Se planer](../serving/viewing-plans) -- Se dit tjeneseskema

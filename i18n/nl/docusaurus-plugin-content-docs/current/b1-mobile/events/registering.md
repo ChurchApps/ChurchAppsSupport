@@ -49,5 +49,5 @@ Als u moet annuleren, neem contact op met uw kerkbeheerder. Ze kunnen uw registr
 
 ## Gerelateerde artikelen
 
-- [Overzicht van evenementen](./index) -- Blader evenementen met registratie op mobiel
+- [Overzicht van evenementen](./index.md) -- Blader evenementen met registratie op mobiel
 - [Plannen bekijken](../serving/viewing-plans) -- Zie uw serviceschema

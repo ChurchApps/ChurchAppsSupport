@@ -1,5 +1,5 @@
 ---
-title: `"Evaluación de Riesgo de Transferencia`"
+title: "Evaluación de Riesgo de Transferencia"
 ---
 
 # Evaluación de Riesgo de Transferencia

@@ -54,5 +54,5 @@ Se hai bisogno di annullare la tua registrazione, contatta l'amministratore dell
 
 ## Articoli Correlati
 
-- [Panoramica degli Eventi](./index) -- Sfoglia gli eventi imminenti con registrazione
+- [Panoramica degli Eventi](./index.md) -- Sfoglia gli eventi imminenti con registrazione
 - [Effettuazione di Donazioni](../giving/making-donations) -- Effettua una donazione insieme alla partecipazione agli eventi

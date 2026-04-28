@@ -54,5 +54,5 @@ If you need to cancel your registration, contact your church administrator. They
 
 ## Related Articles
 
-- [Events Overview](./index) -- Browse upcoming events with registration
+- [Events Overview](./index.md) -- Browse upcoming events with registration
 - [Making Donations](../giving/making-donations) -- Make a donation alongside event participation

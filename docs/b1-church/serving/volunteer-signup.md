@@ -72,5 +72,5 @@ Check the volunteer page regularly, especially early in the week. Popular positi
 
 ## Related Articles
 
-- [Serving Overview](./index) -- Overview of serving features on B1.church
+- [Serving Overview](./index.md) -- Overview of serving features on B1.church
 - [Viewing Plans](../plans/viewing-plans) -- View your assigned plans and service orders

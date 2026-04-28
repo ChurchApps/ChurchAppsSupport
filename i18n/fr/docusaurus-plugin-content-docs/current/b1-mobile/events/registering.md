@@ -31,5 +31,5 @@ Vous recevrez une confirmation par e-mail que votre enregistrement a été annul
 
 ## Articles connexes
 
-- [Aperçu des événements](./index) — Voir tous les événements disponibles
+- [Aperçu des événements](./index.md) — Voir tous les événements disponibles
 - [Enregistrement aux événements (Web)](../../b1-church/events/registering) — Guide d'enregistrement Web complet

@@ -72,5 +72,5 @@ Controlla la pagina dei volontari regolarmente, soprattutto all'inizio della set
 
 ## Articoli Correlati
 
-- [Panoramica del Serving](./index) -- Panoramica delle funzioni di serving su B1.church
+- [Panoramica del Serving](./index.md) -- Panoramica delle funzioni di serving su B1.church
 - [Visualizzazione dei Piani](../plans/viewing-plans) -- Visualizza i tuoi piani assegnati e gli ordini di servizio

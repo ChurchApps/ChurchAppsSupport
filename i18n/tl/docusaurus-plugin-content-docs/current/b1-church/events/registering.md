@@ -54,5 +54,5 @@ Kung kailangan mong bawiin ang iyong pagpaparehistro, makipag-ugnayan sa iyong a
 
 ## Mga Kaugnay na Artikulo
 
-- [Events Overview](./index) -- Mag-browse ng mga darating na kaganapan na may pagpaparehistro
+- [Events Overview](./index.md) -- Mag-browse ng mga darating na kaganapan na may pagpaparehistro
 - [Making Donations](../giving/making-donations) -- Magbigay ng donation kasama ang pakikibahagi sa kaganapan

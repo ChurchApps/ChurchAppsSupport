@@ -54,5 +54,5 @@ Als je je aanmelding wilt annuleren, neem je contact op met je kerkbeheerder. Ze
 
 ## Gerelateerde artikelen
 
-- [Overzicht evenementen](./index) -- Blader aankomende evenementen met registratie
+- [Overzicht evenementen](./index.md) -- Blader aankomende evenementen met registratie
 - [Donaties maken](../giving/making-donations) -- Maak een donatie naast deelname aan evenementen

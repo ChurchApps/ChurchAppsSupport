@@ -49,5 +49,5 @@ Se hai bisogno di annullare, contatta l'amministratore della tua chiesa. Può an
 
 ## Articoli Correlati
 
-- [Panoramica degli Eventi](./index) -- Sfoglia gli eventi con registrazione su mobile
+- [Panoramica degli Eventi](./index.md) -- Sfoglia gli eventi con registrazione su mobile
 - [Visualizzazione dei Piani](../serving/viewing-plans) -- Visualizza il tuo programma di servizio

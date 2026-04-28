@@ -80,4 +80,4 @@ title: "감사 로그"
 
 - [역할 및 권한](../settings/roles-permissions) -- 액세스할 수 있는 사람 관리
 - [데이터 보안](../settings/data-security) -- 데이터 보호 방법 이해
-- [보고서 개요](./index) -- 모든 사용 가능한 보고서 보기
+- [보고서 개요](./index.md) -- 모든 사용 가능한 보고서 보기

@@ -54,5 +54,5 @@ Hvis du skal annullere din registrering, skal du kontakte din kirkeavslutning. D
 
 ## Relaterede artikler
 
-- [Begivenhedssoversigt](./index) -- Gennemse kommende begivenheder med registrering
+- [Begivenhedssoversigt](./index.md) -- Gennemse kommende begivenheder med registrering
 - [Foretag donationer](../giving/making-donations) -- Foretag en donation sammen med begivenhedsdeltagen

@@ -43,4 +43,4 @@ Vous pouvez aussi voir vos plans assignés et vos inscriptions d'auto-signup au 
 ## Articles connexes
 
 - [Affichage des plans](./viewing-plans) — Voir vos affectations assignées
-- [Aperçu du service](./index) — Voir toutes les opportunités
+- [Aperçu du service](./index.md) — Voir toutes les opportunités

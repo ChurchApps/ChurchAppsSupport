@@ -38,4 +38,4 @@ Les notifications push vous alertent des nouveaux messages du groupe. Vous pouve
 
 ## Articles connexes
 
-- [Vue d'ensemble des groupes](./index) — Voir tous vos groupes
+- [Vue d'ensemble des groupes](./index.md) — Voir tous vos groupes

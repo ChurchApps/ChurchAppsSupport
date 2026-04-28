@@ -45,7 +45,7 @@ If you do not see the Settings option, ask the person who set up your church acc
 6. After adding a section, click **Add Content** again to insert text, images, videos, cards, forms, and more by dragging them into your section.
 
 :::info
-For detailed instructions on working with pages, navigation, and page types, see [Managing Pages](managing-pages).
+For detailed instructions on working with pages and navigation, see [Managing Pages](managing-pages). For a full guide to the visual editor, see [Using the Page Editor](page-editor).
 :::
 
 ## Configuring Site Appearance

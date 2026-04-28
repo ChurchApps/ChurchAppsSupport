@@ -80,4 +80,4 @@ Review the audit log regularly, especially after onboarding new team members or 
 
 - [Roles & Permissions](../settings/roles-permissions) -- Manage who has access to what
 - [Data Security](../settings/data-security) -- Understand how your data is protected
-- [Reports Overview](./index) -- See all available reports
+- [Reports Overview](./index.md) -- See all available reports

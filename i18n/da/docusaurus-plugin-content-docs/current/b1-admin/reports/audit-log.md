@@ -80,4 +80,4 @@ Gennemgå revision loggen regelmæssigt, især efter onboarding nye holmedlemmer
 
 - [roller og tilladelser](../settings/roles-permissions) -- Administrer hvem der har adgang til hvad
 - [datasikkerhed](../settings/data-security) -- Forstå hvordan dine data er beskyttet
-- [rapporter oversigt](./index) -- Se alle tilgængelige rapporter
+- [rapporter oversigt](./index.md) -- Se alle tilgængelige rapporter

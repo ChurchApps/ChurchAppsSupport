@@ -80,4 +80,4 @@ Examiné le journal d'audit régulièrement, en particulier après l'intégratio
 
 - [Rôles et permissions](../settings/roles-permissions) — Gérez qui a accès à quoi
 - [Sécurité des données](../settings/data-security) — Comprendre comment vos données sont protégées
-- [Aperçu des rapports](./index) — Voir tous les rapports disponibles
+- [Aperçu des rapports](./index.md) — Voir tous les rapports disponibles

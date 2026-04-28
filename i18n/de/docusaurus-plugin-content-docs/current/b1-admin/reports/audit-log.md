@@ -80,4 +80,4 @@ Audit-Protokoll-Einträge werden automatisch ein Jahr lang aufbewahrt. Einträge
 
 - [Rollen & Berechtigungen](../settings/roles-permissions) -- Verwalten Sie, wer Zugriff auf was hat
 - [Datensicherheit](../settings/data-security) -- Verstehen Sie, wie Ihre Daten geschützt werden
-- [Berichte-Übersicht](./index) -- Siehe alle verfügbaren Berichte
+- [Berichte-Übersicht](./index.md) -- Siehe alle verfügbaren Berichte

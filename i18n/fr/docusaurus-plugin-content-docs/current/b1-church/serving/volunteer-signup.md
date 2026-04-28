@@ -41,5 +41,5 @@ Vous ne pouvez annuler une inscription que avant la date limite définie par vot
 
 ## Articles connexes
 
-- [Aperçu du service](./index) — Voir toutes les opportunités de bénévolat
+- [Aperçu du service](./index.md) — Voir toutes les opportunités de bénévolat
 - [Affichage des plans](../plans/viewing-plans) — Voir vos affectations assignées
