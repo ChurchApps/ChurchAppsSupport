@@ -604,6 +604,7 @@ const sidebars: SidebarsConfig = {
             'developer/deployment/mobile',
           ],
         },
+        'developer/freeplay-content-provider',
       ],
     },
   ],
