@@ -6,7 +6,7 @@ title: "Importing Data"
 
 <div class="article-intro">
 
-The B1 Transfer tool makes it easy to bring your existing data into B1, whether you are starting fresh from a spreadsheet or migrating from another church management platform like Breeze or Planning Center. It can also be used to export or back up your data at any time.
+The B1 Transfer tool makes it easy to bring your existing data into B1, whether you are starting fresh from a spreadsheet, migrating from another church management platform, or importing giving records. It can also be used to export or back up your data at any time.
 
 </div>
 
@@ -14,7 +14,7 @@ The B1 Transfer tool makes it easy to bring your existing data into B1, whether 
 <h4>Before You Begin</h4>
 
 - You need an active B1 Admin account with access to **Settings**.
-- Have your data ready in the appropriate format for your import source (see the sections below).
+- Have your data exported and ready from your previous system before starting.
 - This tool is intended for initial data migration. If you have already been using B1 for a while, importing again may create duplicate records.
 
 </div>
@@ -32,14 +32,39 @@ The transfer tool walks you through four steps: Source, Preview, Destination, an
 
 ## Step 1 - Choose Your Source
 
-Select where your data is coming from. There are four options:
+Select where your data is coming from. There are seven options:
 
 - **B1 Database** — Pulls data directly from your existing B1 church. Useful for making a backup or converting your data to another format. You must be logged in to use this option.
-- **B1 Import Zip** — A zip file containing CSV files in B1's format. Use this if you are loading data from a spreadsheet or a system not listed below.
+- **B1 Import Zip** — A zip file in B1's own format. This is primarily used to restore a previous B1 export.
 - **Breeze Import Zip** — A zip file containing exported files from Breeze ChMS.
 - **Planning Center Zip** — A zip or CSV file exported from Planning Center.
+- **Custom CSV / Excel** — Any CSV or Excel file containing people data. After uploading, you will map your columns to B1 fields before the import proceeds.
+- **Tithe.ly CSV** — A people or giving export file from Tithe.ly (CSV or Excel format accepted).
+- **CCB / Pushpay CSV** — A people or giving export CSV from Church Community Builder or Pushpay.
 
-If you select a file-based option, you will be prompted to upload your zip file after choosing the source.
+You can drag and drop your file onto the upload area, or click to browse for it.
+
+---
+
+## Step 1b - Map Your Fields (Custom CSV / Excel only)
+
+If you selected **Custom CSV / Excel**, after uploading your file the tool will show a field mapping screen before moving to the preview.
+
+Each column from your file is listed alongside a sample value. For each column, use the dropdown to choose the matching B1 field. The tool will auto-detect common column names like "First Name," "Email," or "Zip Code," but you should review every row and correct anything it missed.
+
+Available B1 fields include:
+
+- First Name, Last Name, Middle Name, Nickname, Display Name, Title/Prefix, Suffix
+- Email, Home Phone, Mobile Phone, Work Phone
+- Address Line 1, Address Line 2, City, State, Zip Code
+- Birth Date, Gender, Marital Status, Membership Status
+- Household/Family Name
+- Group Name — assigns the person to a group by name
+- **Form Answer (custom field)** — saves that column's value as a custom field attached to the person's record. If you use this option, you will be asked to give the form a name.
+
+Columns you do not want to import can be set to **(Skip)**. At least one name field (First Name or Last Name) must be mapped before you can continue.
+
+Click **Confirm Mapping & Import** to proceed to the preview.
 
 ---
 
@@ -53,7 +78,7 @@ After uploading, the tool displays a preview of everything that will be imported
 - **Donations** — Batches, funds, donors, and amounts.
 - **Forms** — Form names and content types.
 
-Review this carefully before proceeding. If something looks wrong, start over and correct your source file.
+Review this carefully before proceeding. If something looks wrong, click **Start Over** and correct your source file.
 
 ---
 
@@ -91,33 +116,6 @@ Do not close your browser while the transfer is running. Wait until all steps sh
 
 ---
 
-## Preparing a B1 Import Zip
-
-If you are importing from a spreadsheet or a system other than Breeze or Planning Center, use the B1 Import Zip format.
-
-1. On the **Step 1** screen, select **B1 Import Zip** as your source.
-2. Click the link to **download sample files** to see the required column format.
-3. Edit the CSV files with your data, keeping the header rows intact. Only `people.csv` is required. All other files are optional.
-4. If you have member photos, include them in the zip file and reference their filenames in the `photo` column of `people.csv`.
-5. Compress everything into a single zip file and upload it.
-
-The zip file may contain any combination of these files:
-
-| File | Contents |
-|------|----------|
-| `people.csv` | Names, contact info, and household assignments |
-| `services.csv` | Campuses, services, and service times |
-| `groups.csv` | Group names, categories, and settings |
-| `groupmembers.csv` | Which people belong to which groups |
-| `attendance.csv` | Attendance records by person, group, and date |
-| `donations.csv` | Giving records by person, fund, batch, and date |
-| `forms.csv` | Form definitions |
-| `questions.csv` | Questions for each form |
-| `formSubmissions.csv` | Submissions linked to people and forms |
-| `answers.csv` | Answers to form questions |
-
----
-
 ## Preparing a Breeze Import Zip
 
 1. In Breeze, go to **Settings** and click **Export** in the left sidebar.
@@ -136,7 +134,25 @@ The Breeze import transfers people, groups (tags), and donation records automati
 1. In Planning Center, export your people data as a CSV or zip file.
 2. Upload it using the **Planning Center Zip** option in Step 1.
 
-The Planning Center import transfers people and contact information.
+---
+
+## Preparing a Tithe.ly Export
+
+1. In Tithe.ly, export your **People** data as a CSV or Excel file. You can also export a separate **Giving** file if you want to bring in donation records.
+2. The tool will automatically detect whether the file contains people or giving data based on the column names.
+3. Upload the file using the **Tithe.ly CSV** option in Step 1.
+
+:::info
+Tithe.ly exports can be imported one file at a time. Run the process twice if you need to import both people and giving records separately.
+:::
+
+---
+
+## Preparing a CCB or Pushpay Export
+
+1. In Church Community Builder or Pushpay, export your **People** data as a CSV file. You can also export a separate giving/contributions file.
+2. The tool will automatically detect whether the file contains people or giving data based on the column names.
+3. Upload the file using the **CCB / Pushpay CSV** option in Step 1.
 
 ---
 
