@@ -6,65 +6,147 @@ title: "Importing Data"
 
 <div class="article-intro">
 
-B1 Admin makes it easy to bring your existing member data into the system. Whether you are migrating from another church management platform or loading records from a spreadsheet, the import tools save you from manually entering every person. You can import from a CSV file or migrate directly from Breeze ChMS.
+The B1 Transfer tool makes it easy to bring your existing data into B1, whether you are starting fresh from a spreadsheet or migrating from another church management platform like Breeze or Planning Center. It can also be used to export or back up your data at any time.
 
 </div>
 
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- You need an active B1 Admin account with access to **Settings**. See [Roles & Permissions](roles-permissions.md) if you're unsure about your access level.
-- Have your member data ready in a spreadsheet or exported from your previous system.
-- If you are migrating from Breeze, make sure you have exported your People, Tags, and Contributions files from Breeze first.
+- You need an active B1 Admin account with access to **Settings**.
+- Have your data ready in the appropriate format for your import source (see the sections below).
+- This tool is intended for initial data migration. If you have already been using B1 for a while, importing again may create duplicate records.
 
 </div>
 
-## Importing from CSV
+## Accessing the Transfer Tool
 
-If you have member data in a spreadsheet or another system, you can import it using a CSV (comma-separated values) file.
+1. Log in to **B1 Admin**.
+2. Go to **Settings** in the left sidebar.
+3. Click the **Import/Export** button in the top right of the page header.
+4. This will open the **B1 Transfer** tool in a new tab at [transfer.b1.church](https://transfer.b1.church).
 
-1. Go to **Settings** in the left sidebar.
-2. Click **Import/Export** in the top navigation.
-3. Select **B1 Import Zip** from the **Data Source** dropdown.
-4. Click the link to **download sample files** so you can see the expected format.
-5. Open the sample `people.csv` file and replace the sample data with your own. Keep the header row intact.
-6. If you have member photos, add them to the folder using 400x300px images, naming them to match the `importKey` numbers in your CSV.
-7. Compress your edited files into a zip file.
-8. Back in B1 Admin, click **Upload** and select your zip file.
-9. Review the data preview and click **Continue to Destination**.
-10. Verify **B1 Database** is selected, review the import summary, and click **Start Transfer**.
-11. Wait for the import to complete, then click **Go to B1** to return to your dashboard.
+The transfer tool walks you through four steps: Source, Preview, Destination, and Run.
 
-:::tip
-Always download and review the sample files first. Matching the expected column format will prevent import errors.
-:::
+---
+
+## Step 1 - Choose Your Source
+
+Select where your data is coming from. There are four options:
+
+- **B1 Database** — Pulls data directly from your existing B1 church. Useful for making a backup or converting your data to another format. You must be logged in to use this option.
+- **B1 Import Zip** — A zip file containing CSV files in B1's format. Use this if you are loading data from a spreadsheet or a system not listed below.
+- **Breeze Import Zip** — A zip file containing exported files from Breeze ChMS.
+- **Planning Center Zip** — A zip or CSV file exported from Planning Center.
+
+If you select a file-based option, you will be prompted to upload your zip file after choosing the source.
+
+---
+
+## Step 2 - Preview Your Data
+
+After uploading, the tool displays a preview of everything that will be imported. Use the tabs to review each data type:
+
+- **People** — Listed by household, with photos if included.
+- **Groups** — Organized by campus, service, time, and category.
+- **Attendance** — Session dates, groups, and visit counts.
+- **Donations** — Batches, funds, donors, and amounts.
+- **Forms** — Form names and content types.
+
+Review this carefully before proceeding. If something looks wrong, start over and correct your source file.
+
+---
+
+## Step 3 - Choose Your Destination
+
+Select where you want the data to go:
+
+- **B1 Database** — Imports directly into your church's B1 database. After selecting this, the tool will show a final count of records to be added. Click **Start Transfer** to confirm.
+- **B1 Export Zip** — Downloads your data as a B1-format zip file. Good for backups.
+- **Breeze Export Zip** — Converts your data to Breeze format.
+- **Planning Center Zip** — Converts your data to Planning Center format.
 
 :::warning
-Importing data will add new records to your database. If you import the same file twice, you may end up with duplicate entries. Double-check your file before starting the transfer.
+The source and destination cannot be the same format. If they match, the tool will warn you to prevent accidental duplication.
 :::
 
-## Importing from Breeze ChMS
+---
 
-If you are migrating from Breeze, B1 has a dedicated import option that handles the conversion automatically.
+## Step 4 - Run
+
+The tool processes the transfer and shows progress for each step:
+
+- Campuses, Services, and Times
+- People
+- Photos
+- Groups and Group Members
+- Donations
+- Attendance
+- Forms, Questions, Answers, and Form Submissions
+- Compressing (for zip file destinations only)
+
+:::warning
+Do not close your browser while the transfer is running. Wait until all steps show as complete.
+:::
+
+---
+
+## Preparing a B1 Import Zip
+
+If you are importing from a spreadsheet or a system other than Breeze or Planning Center, use the B1 Import Zip format.
+
+1. On the **Step 1** screen, select **B1 Import Zip** as your source.
+2. Click the link to **download sample files** to see the required column format.
+3. Edit the CSV files with your data, keeping the header rows intact. Only `people.csv` is required. All other files are optional.
+4. If you have member photos, include them in the zip file and reference their filenames in the `photo` column of `people.csv`.
+5. Compress everything into a single zip file and upload it.
+
+The zip file may contain any combination of these files:
+
+| File | Contents |
+|------|----------|
+| `people.csv` | Names, contact info, and household assignments |
+| `services.csv` | Campuses, services, and service times |
+| `groups.csv` | Group names, categories, and settings |
+| `groupmembers.csv` | Which people belong to which groups |
+| `attendance.csv` | Attendance records by person, group, and date |
+| `donations.csv` | Giving records by person, fund, batch, and date |
+| `forms.csv` | Form definitions |
+| `questions.csv` | Questions for each form |
+| `formSubmissions.csv` | Submissions linked to people and forms |
+| `answers.csv` | Answers to form questions |
+
+---
+
+## Preparing a Breeze Import Zip
 
 1. In Breeze, go to **Settings** and click **Export** in the left sidebar.
-2. Export three files: **People**, **Tags**, and **Contributions**.
-3. Select all three exported files, right-click, and compress them into a single zip file.
-4. In B1 Admin, go to **Settings** then **Import/Export**.
-5. Select **Breeze Import Zip** from the **Data Source** dropdown.
-6. Upload your zip file and follow the on-screen steps to review and complete the import.
+2. Export three separate files: **People**, **Tags**, and **Contributions**.
+3. Select all three files, right-click, and compress them into a single zip file.
+   - On a Mac: select the files, right-click, and choose **Compress**.
+   - On a PC: select the files, right-click, choose **Send to**, then **Compressed (zipped) folder**.
+4. Upload the zip file using the **Breeze Import Zip** option in Step 1.
 
-:::info
-The Breeze import transfers people, photos, groups, donations, attendance, forms, and more -- giving you a complete migration in one step.
-:::
+The Breeze import transfers people, groups (tags), and donation records automatically.
+
+---
+
+## Preparing a Planning Center Export
+
+1. In Planning Center, export your people data as a CSV or zip file.
+2. Upload it using the **Planning Center Zip** option in Step 1.
+
+The Planning Center import transfers people and contact information.
+
+---
 
 ## After Importing
 
-Once your import is complete, take a few minutes to verify your data:
+Once the transfer is complete, take a few minutes to verify your data:
 
 1. Browse the [People](../people/adding-people.md) page and spot-check a few profiles.
 2. Confirm that names, emails, phone numbers, and addresses came through correctly.
 3. Check that household connections are intact.
-4. Review any [groups](../groups/creating-groups.md) or tags that were imported.
+4. Review any imported groups and giving records.
 
-If you notice any issues, you can edit individual profiles directly from the People page. You can also [export your data](exporting-data.md) at any time to create a backup.
+If you notice issues, you can edit individual profiles from the People page. You can also run the transfer tool again to [export your data](exporting-data.md) as a backup.
