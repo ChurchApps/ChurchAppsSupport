@@ -6,17 +6,34 @@ title: "Self-Hosting on Railway"
 
 <div class="article-intro">
 
-ChurchApps is published as a one-click [Railway](https://railway.com) template. Deploying it gives your church its own private instance of B1 Admin, the B1 member portal, the API, and a MySQL database — all running on infrastructure you own and pay for directly. This page walks through the deploy and the choices you'll be asked to make.
+ChurchApps publishes a one-click [Railway](https://railway.com) template that gives your church its own private instance of B1 Admin, the B1 member portal, the API, and a MySQL database — all running on infrastructure you own and pay for directly. This guide gets you live in about 15 minutes and then walks through the post-deploy configuration most churches eventually want.
 
 </div>
 
+## Quick Start
+
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/HCSGmZ?referralCode=QlwJ_E&utm_medium=integration&utm_source=template&utm_campaign=generic)
+
+1. Click the **Deploy on Railway** button above.
+2. Sign in to Railway (or create a free account) and add a payment method.
+3. Click **Deploy** without changing anything — every variable has a sensible default.
+4. Wait 5–10 minutes for the four services to turn green.
+5. Open the **B1Admin** service URL, click **Register**, and create your account. The first account is automatically a server admin.
+6. Follow the in-app prompts to create your first church.
+
+That's it. You now have a fully working ChurchApps instance. Everything below is optional polish.
+
+:::tip
+The deploy is currently in **beta**. If you hit something the docs don't cover, please open an issue at [github.com/ChurchApps/Api/issues](https://github.com/ChurchApps/Api/issues) with deploy logs attached.
+:::
+
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>What You Need</h4>
 
 - A free [Railway](https://railway.com) account
-- A credit card on file with Railway (the free trial runs out quickly; expect ~$5/month base + metered usage for a small congregation)
-- About 15 minutes for the initial deploy and verification
-- *Optional but recommended:* a sender email account and SMTP credentials (see [Email Configuration](#email-configuration))
+- A credit card on file with Railway (~$15–25/month for a small congregation; see [Costs](#costs))
+- About 15 minutes for the initial deploy
+- *Optional but strongly recommended later:* SMTP credentials and a custom domain
 
 </div>
 
@@ -31,151 +48,130 @@ The template provisions four services in a single Railway project:
 | **B1Admin** | Staff/admin web app | `https://b1admin-<id>.up.railway.app` |
 | **B1App** | Member-facing web app and church website | `https://b1app-<id>.up.railway.app` |
 
-All four start automatically. Database schemas are created on first launch by the Api's startup migration.
+Database schemas are created automatically on first launch by the API's startup migration.
 
-## Step 1 — Click Deploy
+## First-Time Configuration
 
-1. Open the published template page (your support team will provide the link)
-2. Click **Deploy on Railway**
-3. Sign in to Railway when prompted
-4. Railway will ask you to authorize the **Railway GitHub App** so it can pull the source code from `github.com/ChurchApps/{Api,B1Admin,B1App}`. Approve.
+Now that you're up, here are the things most churches set up next, roughly in priority order.
 
-## Step 2 — Fill in Variables
+### 1. Email (Highly Recommended)
 
-Railway will show a form asking for the template's variables. **All are optional** — you can leave everything blank and the system will still deploy and work for self-registration. The fields you'll see:
+Without email, members can still register and use the system, but **they can't reset forgotten passwords** — an admin has to do it for them. Setting up SMTP takes about 5 minutes.
 
-### Email (recommended but optional)
-
-| Variable | What to enter | Where to get it |
-|----------|---------------|------------------|
-| `MAIL_SYSTEM` | `SMTP` to enable email; leave blank to disable | — |
-| `SMTP_HOST` | e.g. `smtp.resend.com`, `smtp.gmail.com`, `email-smtp.us-east-2.amazonaws.com` | Your provider |
-| `SMTP_USER` | Provider username or API key name | Your provider |
-| `SMTP_PASS` | Provider password or API key secret | Your provider |
-| `SMTP_SECURE` | `false` for port 587 (most providers) or `true` for port 465 | Your provider's docs |
-| `SUPPORT_EMAIL` | Sender address that appears in "from" — e.g. `noreply@yourchurch.org` | You choose |
-
-If left blank, ChurchApps runs in **no-email mode**: members can self-register and use the system, but they cannot recover lost passwords through self-service. An admin must reset passwords via the user list in B1 Admin.
-
-See [Email Configuration](#email-configuration) below for provider-specific details.
-
-### Optional integrations
-
-These unlock specific features and can all be added later via the Railway dashboard.
-
-| Variable | Feature it enables |
-|----------|--------------------|
-| `OPENAI_API_KEY` *or* `OPENROUTER_API_KEY` | AI-assisted search and content suggestions |
-| `STRIPE_SECRET_KEY` | Online giving |
-| `GOOGLE_RECAPTCHA_SECRET_KEY` | Bot protection on public forms |
-| `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN` | Sermon and stock-image content selection |
-| `API_BIBLE_KEY`, `YOUVERSION_API_KEY` | Bible verse lookups in lessons and content |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Browser push notifications |
-
-### Generated for you
-
-These are filled in automatically by the template. You don't need to touch them:
-
-- `JWT_SECRET`, `ENCRYPTION_KEY` — random secure values
-- All `*_CONNECTION_STRING` variables — wired to the included MySQL service
-- All `*_PUBLIC_DOMAIN` references — wired between services
-
-## Step 3 — Wait for the First Deploy
-
-The first build takes about 5–10 minutes per service because Railway builds them in parallel from source. You'll see four cards in the project canvas turn green as they come online:
-
-1. **MySQL** comes up first (~30 seconds)
-2. **Api** builds, runs database migrations, then starts (~3–5 minutes)
-3. **B1Admin** builds and serves the static React app (~3–5 minutes)
-4. **B1App** builds the Next.js bundle and starts (~5–8 minutes)
-
-If any service shows red ("Failed"), click into it → **Deployments** → **View Logs** to see the build output.
-
-## Step 4 — Create Your First Account
-
-1. Open the **B1Admin** service URL (visible on the service card in the dashboard)
-2. Click **Register**
-3. Enter your name, email, and password
-4. The first account created is automatically granted **server admin** access
-
-If email is configured, you'll receive a verification code by email. If email is not configured, you'll be taken straight to the "set password" screen — no verification step.
-
-## Step 5 — Create Your Church
-
-After registering and signing in, B1 Admin walks you through creating your church record. This sets up the initial database rows for people, groups, services, and the website.
-
-See [Initial Setup](../../getting-started/initial-setup) for what to do next.
-
-## Email Configuration
-
-Three commonly-used providers and how to plug them in:
-
-### Resend (simplest free option — 100 emails/day)
-
-1. Sign up at [resend.com](https://resend.com)
-2. Verify a sending domain (or use the `onboarding@resend.dev` test sender)
-3. Create an API key
-4. In Railway, set:
+In the Railway dashboard, open the **Api** service → **Variables**, and add:
 
 ```
 MAIL_SYSTEM=SMTP
-SMTP_HOST=smtp.resend.com
-SMTP_USER=resend
-SMTP_PASS=re_xxxxxxxxx
+SMTP_HOST=<your provider host>
+SMTP_USER=<your username>
+SMTP_PASS=<your password or API key>
 SMTP_SECURE=false
-SUPPORT_EMAIL=noreply@yourdomain.org
+SUPPORT_EMAIL=noreply@yourchurch.org
 ```
 
-### Gmail (free for personal use, ~500/day)
+Three providers worth knowing about:
 
-1. Enable 2-factor auth on your Google account
-2. Create an [App Password](https://myaccount.google.com/apppasswords)
-3. In Railway, set:
+#### Resend — simplest free option (100 emails/day)
 
-```
-MAIL_SYSTEM=SMTP
-SMTP_HOST=smtp.gmail.com
-SMTP_USER=your-gmail-address@gmail.com
-SMTP_PASS=<the 16-character app password>
-SMTP_SECURE=false
-SUPPORT_EMAIL=your-gmail-address@gmail.com
-```
+1. Sign up at [resend.com](https://resend.com).
+2. Verify a sending domain (or use the `onboarding@resend.dev` test sender to start).
+3. Create an API key.
+4. Set `SMTP_HOST=smtp.resend.com`, `SMTP_USER=resend`, `SMTP_PASS=re_xxxxxxxxx`.
 
-### AWS SES (cheapest at scale)
+#### Gmail — free for personal use (~500/day)
 
-1. Verify a sending domain in your AWS account
-2. Move out of SES sandbox if needed
-3. Create SMTP credentials under **SES → SMTP Settings → Create credentials**
-4. In Railway, set:
+1. Enable 2-factor auth on the Google account.
+2. Create an [App Password](https://myaccount.google.com/apppasswords).
+3. Set `SMTP_HOST=smtp.gmail.com`, `SMTP_USER=your-address@gmail.com`, `SMTP_PASS=<the 16-character app password>`.
 
-```
-MAIL_SYSTEM=SMTP
-SMTP_HOST=email-smtp.us-east-2.amazonaws.com
-SMTP_USER=AKIA...
-SMTP_PASS=<SES SMTP password>
-SMTP_SECURE=false
-SUPPORT_EMAIL=noreply@yourdomain.org
-```
+#### AWS SES — cheapest at scale
 
-:::tip
-After changing email variables, the Api service redeploys automatically. Test by triggering a password reset on a test account.
+1. Verify a sending domain in AWS.
+2. Move out of SES sandbox if you'll send to non-verified addresses.
+3. Create SMTP credentials under **SES → SMTP Settings → Create credentials**.
+4. Set `SMTP_HOST=email-smtp.us-east-2.amazonaws.com`, `SMTP_USER=AKIA...`, `SMTP_PASS=<SES SMTP password>`.
+
+After saving the variables, the Api service redeploys automatically. Test it by triggering a password reset on a test account.
+
+:::warning
+If you set `MAIL_SYSTEM=SMTP` with bad credentials, registration will appear to succeed but the verification email never arrives. Either fix the credentials or unset `MAIL_SYSTEM` to fall back to no-email mode.
 :::
 
-## Custom Domains
+### 2. Custom Domains
 
-To use your own domain instead of `*.up.railway.app`:
+The default `*.up.railway.app` URLs work, but most churches want their own.
 
-1. In the Railway dashboard, open each web service → **Settings** → **Networking**
-2. Click **+ Custom Domain** and enter the hostname (e.g. `admin.yourchurch.org`)
-3. Add the CNAME record Railway shows you to your DNS
-4. Wait for the DNS to propagate (usually a few minutes)
-5. Update the **Api** service's `B1ADMIN_ROOT` variable to the new admin domain so verification emails point at the right place
+For each web service (B1Admin and B1App):
 
-## File Storage
+1. Open the service in Railway → **Settings** → **Networking**.
+2. Click **+ Custom Domain** and enter the hostname:
+   - `admin.yourchurch.org` for B1Admin
+   - `app.yourchurch.org` (or `www`) for B1App
+3. Add the CNAME record Railway shows you to your DNS provider.
+4. Wait a few minutes for DNS to propagate. Railway provisions the TLS certificate automatically.
 
-The template provisions a **1 GB persistent volume** mounted at `/app/content` on the Api service. Member photos, sermon files, and uploaded documents go there. To grow it, open the Api service → **Volumes** → adjust size.
+Then update the **Api** service variables so links in emails use the new domains:
 
-For larger deployments, configure S3 instead by setting:
+```
+B1ADMIN_ROOT=https://admin.yourchurch.org
+```
+
+And on the **B1Admin** service:
+
+```
+REACT_APP_API_BASE=https://api.yourchurch.org   (if you also set a custom API domain)
+REACT_APP_B1_WEBSITE_URL=https://{subdomain}.yourchurch.org
+```
+
+The `{subdomain}` token is literal — it's replaced at runtime with each church's subdomain (see Multi-Site below).
+
+### 3. Multi-Site (Multiple Churches on One Instance)
+
+ChurchApps is multi-tenant by design — one deployment can host any number of churches, each with its own people, groups, and website. New churches are added entirely through the admin UI; no infrastructure changes needed.
+
+#### Adding additional churches
+
+1. In **B1 Admin**, navigate to **Settings → Manage Church → Switch Church → Create New**.
+2. Each church has a unique **subdomain slug** (e.g. `firstchurch`, `gracecommunity`).
+3. The new church gets its own data, members, website, and giving setup, fully isolated from other churches on the same instance.
+
+#### Routing each church to its own URL
+
+Two ways to expose churches publicly:
+
+| Pattern | Example | Setup |
+|---------|---------|-------|
+| **Path-based** (works out of the box) | `app.yourchurch.org/firstchurch` | No extra setup |
+| **Subdomain-based** (cleaner URLs) | `firstchurch.yourchurch.org` | Wildcard DNS + wildcard custom domain |
+
+For **subdomain-based** routing on Railway:
+
+1. In your DNS provider, create a wildcard CNAME: `*.yourchurch.org → <b1app railway target>`.
+2. In Railway, on the B1App service → **Settings → Networking**, add `*.yourchurch.org` as a custom domain.
+3. On the **B1Admin** service, set `REACT_APP_B1_WEBSITE_URL=https://{subdomain}.yourchurch.org`.
+
+After redeploy, each church's site is served at `<their-subdomain>.yourchurch.org` automatically.
+
+:::info
+Wildcard custom domains require a paid Railway plan. Path-based routing works on every plan and is functionally identical — just less pretty in the URL bar.
+:::
+
+### 4. Online Giving (Stripe / PayPal)
+
+Giving is configured **per-church inside the admin UI**, not via environment variables — that way each church can use its own merchant account.
+
+1. Get developer credentials from [Stripe](https://dashboard.stripe.com/) (Developers → API keys) or [PayPal](https://developer.paypal.com/) (My Apps & Credentials).
+2. In B1 Admin, go to **Settings → Giving Settings**.
+3. Choose your provider, paste the Public and Secret keys, and configure fee handling.
+4. Optionally add `GOOGLE_RECAPTCHA_SECRET_KEY` to the **Api** service in Railway to protect public donation forms from bots.
+
+### 5. File Storage
+
+The template provisions a **1 GB persistent volume** mounted on the Api service for member photos, sermon files, and uploaded documents.
+
+To grow it: open the Api service → **Volumes** → adjust the size slider.
+
+For larger deployments (100+ GB or many concurrent uploads), switch to S3 by setting these on the **Api** service:
 
 ```
 FILE_STORE=S3
@@ -185,11 +181,28 @@ AWS_SECRET_ACCESS_KEY=<secret>
 AWS_REGION=us-east-2
 ```
 
+Existing files in the volume don't migrate automatically — copy them to the bucket before flipping the variable.
+
+### 6. Optional Feature Integrations
+
+These unlock specific features and can all be added later via the Railway dashboard. Set them on the **Api** service.
+
+| Variable | Feature it enables |
+|----------|--------------------|
+| `OPENAI_API_KEY` *or* `OPENROUTER_API_KEY` | AI-assisted search and content suggestions |
+| `YOUTUBE_API_KEY` | YouTube sermon search and embedding |
+| `PEXELS_KEY` | Stock-image picker for website builder |
+| `VIMEO_TOKEN` | Vimeo sermon support |
+| `API_BIBLE_KEY` | Bible verse lookups in lessons and content |
+| `YOUVERSION_API_KEY` | YouVersion Bible integration |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Browser push notifications (generate a VAPID keypair) |
+| `HUBSPOT_KEY` | Optional CRM sync for new registrations |
+
 ## Updating
 
-The services are linked to GitHub. Each push to `main` on `ChurchApps/Api`, `ChurchApps/B1Admin`, or `ChurchApps/B1App` triggers an automatic redeploy.
+Each service is linked to its respective GitHub repo. Pushes to `main` on `ChurchApps/Api`, `ChurchApps/B1Admin`, or `ChurchApps/B1App` trigger automatic redeploys.
 
-To pin a specific version, change the **Branch** setting on each service to a tag or release branch.
+To pin a specific version, change the **Branch** setting on each service to a tag or release branch. This is the recommended setup for production — auto-deploying from `main` means you inherit any in-progress work.
 
 ## Costs
 
@@ -203,22 +216,26 @@ Real-world ranges for a small church (under 200 members, light traffic):
 | 1 GB volume | $0.25 |
 | **Total** | **~$15–25/month** |
 
-Costs scale linearly with traffic, photo uploads, and database size. Railway shows live usage in the project's **Usage** tab.
+Costs scale linearly with traffic, photo uploads, and database size. Railway shows live usage in the project's **Usage** tab — set spending limits there to cap your exposure.
 
 ## Troubleshooting
 
 | Symptom | Likely cause | Fix |
 |---------|--------------|-----|
 | Build fails with `EBUSY: rmdir '/app/node_modules/.cache'` | Nixpacks cache mount conflict | Set `NIXPACKS_NO_CACHE=true` on the affected service |
-| Build fails on B1Admin with `Missing: @types/...` | Out-of-sync `package-lock.json` | Already addressed in main; pull the latest version |
-| Api deploy hangs at "Deploying" | Healthcheck failing — check `/health` returns 200 | View deploy logs; usually a missing required env var |
-| B1Admin shows "check your email" but no email sent | `MAIL_SYSTEM=SMTP` set but credentials missing or wrong | Either provide working SMTP creds or set `MAIL_SYSTEM=` (empty) |
-| Login redirects to `api.churchapps.org` | `REACT_APP_STAGE` set to `prod` | Set `REACT_APP_STAGE=custom` on the B1Admin service |
+| Build fails on B1Admin with `Missing: @types/...` | Out-of-sync `package-lock.json` | Pull the latest `main` |
+| Api deploy hangs at "Deploying" | Healthcheck failing — `/health` not returning 200 | View deploy logs; usually a missing required env var |
+| B1Admin shows "check your email" but no email arrives | `MAIL_SYSTEM=SMTP` set but credentials missing/wrong | Fix the credentials, or unset `MAIL_SYSTEM` to disable email |
+| Login redirects to `api.churchapps.org` | `REACT_APP_STAGE` is `prod` | Set `REACT_APP_STAGE=custom` on the B1Admin service |
+| Subdomain churches all show the same content | `REACT_APP_B1_WEBSITE_URL` doesn't include `{subdomain}` token | Set it to e.g. `https://{subdomain}.yourchurch.org` |
+| Custom domain shows "Application not found" | DNS not yet propagated, or Railway cert pending | Wait 5 minutes; check DNS with `dig admin.yourchurch.org` |
 
 If you hit something not on this list, open an issue at [github.com/ChurchApps/Api/issues](https://github.com/ChurchApps/Api/issues) with the deploy logs attached.
 
 ## Related Articles
 
 - **[Initial Setup](../../getting-started/initial-setup)** — First steps after your church is created
+- **[Website Initial Setup](../../b1-admin/website/initial-setup)** — Configure your church's public site
+- **[Giving Settings](../../b1-admin/donations/online-giving-setup)** — Wire up Stripe or PayPal
 - **[Local API Setup](../api/local-setup)** — Running the stack locally for development
 - **[API Deployment (AWS)](./apis)** — How the official ChurchApps SaaS is deployed

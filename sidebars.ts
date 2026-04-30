@@ -602,6 +602,7 @@ const sidebars: SidebarsConfig = {
             'developer/deployment/apis',
             'developer/deployment/web-apps',
             'developer/deployment/mobile',
+            'developer/deployment/railway-template',
           ],
         },
       ],
