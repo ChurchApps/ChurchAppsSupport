@@ -33,6 +33,7 @@ Key characteristics:
 - **[Mobile Apps](mobile/)** -- Building B1Mobile and other Expo apps
 - **[Shared Libraries](shared-libraries/)** -- Working with Helpers, ApiHelper, and AppHelper
 - **[Deployment](deployment/)** -- Deploying APIs, web apps, and mobile apps
+- **[FreePlay Content Provider](freeplay-content-provider)** -- Integrating your lesson library with FreePlay
 
 ## Community and Resources
 
