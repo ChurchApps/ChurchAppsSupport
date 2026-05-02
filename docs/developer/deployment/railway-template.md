@@ -12,7 +12,7 @@ ChurchApps publishes a one-click [Railway](https://railway.com) template that gi
 
 ## Quick Start
 
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/HCSGmZ?referralCode=QlwJ_E&utm_medium=integration&utm_source=template&utm_campaign=generic)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/b1-template)
 
 1. Click the **Deploy on Railway** button above.
 2. Sign in to Railway (or create a free account) and add a payment method.
