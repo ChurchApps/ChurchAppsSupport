@@ -26,7 +26,7 @@ Service plans organize who is serving and when. Each plan is tied to a specific 
 4. Click on a specific plan to open it.
 
 :::info
-Full admin access is not required to view plans. Ministry members who are part of a ministry can navigate to Serving and view plans for their ministry without needing admin permissions.
+Full admin access is not required to manage plans. Anyone who is a member of a ministry can navigate to Serving and create, edit, and schedule plans for their own ministry without needing the Plans Edit permission. Editors with the Plans Edit role can manage plans across every ministry.
 :::
 
 ## Creating a Plan
