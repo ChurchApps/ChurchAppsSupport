@@ -26,7 +26,7 @@ When you enter the member portal, you will see a vertical sidebar on the left si
 - **Community** -- Browse the church [member directory](../community/member-directory.md).
 - **Plans** -- See upcoming [service plans](../plans/) and your assigned volunteer positions.
 - **Check-in** -- [Check in](../checkin/) yourself and your household for services and events.
-- **Lessons** -- Access Bible study [lessons](../content/lessons.md) and curriculum.
+- **Lessons** *(deprecated)* -- The in-portal Lessons tab has been replaced by [FreePlay](/docs/freeplay/) for classroom playback. Browse curriculum directly at [Lessons.church](https://lessons.church) or see the [Lessons reference page](../content/lessons.md) for details.
 - **Donations** -- Make online [donations](../giving/) and view your giving history.
 
 Click any tab to switch to that section. The active tab is highlighted so you always know where you are.

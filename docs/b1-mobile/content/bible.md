@@ -48,4 +48,4 @@ The Bible screen is available when your church has enabled this feature. If you 
 
 - [Verse of the Day](./verse-of-the-day) -- See a daily Bible verse
 - [Sermons](./sermons) -- Watch sermons that complement your Bible reading
-- [Lessons](./lessons) -- Access structured curriculum and study materials
+- [FreePlay](/docs/freeplay/) -- Play structured curriculum on classroom TVs (replaces the deprecated in-app Lessons screen)

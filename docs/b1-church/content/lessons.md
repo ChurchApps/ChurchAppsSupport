@@ -1,12 +1,18 @@
 ---
-title: "Lessons"
+title: "Lessons (Deprecated)"
 ---
 
-# Lessons
+# Lessons (Deprecated)
+
+:::danger Lessons tab has been replaced by FreePlay
+The embedded **Lessons** tab on B1.church has been deprecated. Curriculum playback from Lessons.church is now delivered through **[FreePlay](/docs/freeplay/)** — ChurchApps' free TV app for classroom screens, Fire TV, Apple TV, and Android TV — which offers offline playback, classroom pairing, and a TV-remote experience the embedded tab could not provide.
+
+To browse, schedule, or edit curriculum directly, sign in to [Lessons.church](https://lessons.church) in your browser. To play lessons on a classroom TV, install [FreePlay](/docs/freeplay/getting-started/) on your TV device.
+:::
 
 <div class="article-intro">
 
-The **Lessons** tab gives you access to your church's curriculum and learning materials. Content is provided through the Lessons.church platform and is embedded directly within B1.church, so you do not need to navigate to a separate site.
+The **Lessons** tab gave you access to your church's curriculum and learning materials. Content was provided through the Lessons.church platform and embedded directly within B1.church, so you did not need to navigate to a separate site.
 
 </div>
 

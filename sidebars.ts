@@ -275,7 +275,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'B1 - Mobile',
+      label: 'B1 - Mobile (Deprecated)',
       link: { type: 'doc', id: 'b1-mobile/index' },
       items: [
         {

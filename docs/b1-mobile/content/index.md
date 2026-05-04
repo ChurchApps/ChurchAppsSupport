@@ -28,9 +28,9 @@ Read Scripture using the built-in Bible reader. Navigate through books, chapters
 
 View a beautifully formatted Bible verse image that changes every day. The image automatically adjusts to fit your device's screen orientation.
 
-### Lessons
+### Lessons (Deprecated)
 
-Access your church's curriculum and learning materials through the embedded Lessons.church platform. Browse and view scheduled lessons right inside B1 Mobile.
+The embedded Lessons screen has been replaced by **[FreePlay](/docs/freeplay/)** for classroom playback, and by visiting [Lessons.church](https://lessons.church) directly for browsing. See the [Lessons reference page](./lessons) for details.
 
 ## Finding Content
 
@@ -46,4 +46,4 @@ Content features are configured by your church administrator through [B1 Admin](
 - [Live Streaming](./live-streaming) -- Watch live broadcasts
 - [Bible](./bible) -- Read Scripture in the built-in reader
 - [Verse of the Day](./verse-of-the-day) -- See today's daily verse
-- [Lessons](./lessons) -- Access curriculum and learning materials
+- [FreePlay](/docs/freeplay/) -- Play lessons on classroom TVs (replaces the deprecated in-app Lessons screen)

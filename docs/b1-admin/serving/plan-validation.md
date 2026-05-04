@@ -53,11 +53,11 @@ Only volunteers who have not yet been notified will be included. If you add some
 :::
 
 :::warning
-Volunteers must have the B1 Mobile app installed and notifications enabled to receive the push notification. See the [Notifications guide](/docs/b1-mobile/community/notifications) for how volunteers can enable this on their device.
+Volunteers must have the B1.church mobile experience installed (PWA on their home screen, or the deprecated B1 Mobile native app for users who still have it) with notifications enabled to receive push notifications. See [Installing as an App (PWA)](/docs/b1-church/getting-started/installing-pwa) for setup instructions.
 :::
 
 ## Related Articles
 
 - [Service Plans](./plans.md)
 - [Automations](./automations.md)
-- [B1 Mobile Notifications](/docs/b1-mobile/community/notifications)
+- [Installing the B1.church PWA](/docs/b1-church/getting-started/installing-pwa)

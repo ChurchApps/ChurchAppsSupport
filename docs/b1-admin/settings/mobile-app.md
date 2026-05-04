@@ -6,9 +6,13 @@ title: "Mobile App Settings"
 
 <div class="article-intro">
 
-The Mobile App Settings page lets you configure the navigation tabs that appear in the B1 Mobile app for your church members. You control which tabs are visible, what they link to, and how they are displayed.
+The Mobile App Settings page lets you configure the navigation tabs that appear in the **B1.church mobile experience (PWA)** for your church members. You control which tabs are visible, what they link to, and how they are displayed.
 
 </div>
+
+:::info The native B1 Mobile app is deprecated
+Tabs configured here are delivered through the [B1.church Progressive Web App (PWA)](/docs/b1-church/getting-started/installing-pwa) at `https://yourchurchname.b1.church/mobile`, which has replaced the native B1 Mobile app. Members should install the PWA on their home screen instead of downloading the legacy app from the App Store or Google Play.
+:::
 
 <div class="prereqs">
 <h4>Before You Begin</h4>
@@ -55,7 +59,7 @@ Keep your tab count manageable. Three to five tabs works well for most churches.
 
 ## Where These Tabs Appear
 
-The tabs you configure here are displayed in the **B1 Mobile app** (B1.church app) that your church members download from the App Store or Google Play. Changes you make on this page are reflected in the app the next time a member opens it.
+The tabs you configure here are displayed in the **B1.church PWA** that your members install from their phone's browser at `https://yourchurchname.b1.church/mobile`. Changes you make on this page are reflected the next time a member opens the app. (Tabs are also rendered by the legacy [B1 Mobile native app](/docs/b1-mobile/) for any members still running it, but that app is deprecated and no longer being updated.)
 
 ## Next Steps
 

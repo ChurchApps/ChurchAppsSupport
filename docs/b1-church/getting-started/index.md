@@ -42,14 +42,14 @@ Once you are logged in, the member portal gives you access to:
 - **Plans** showing your volunteer schedule and service details
 - **Check-In** for services and events
 - The **Community** directory to find and connect with other members
-- **Lessons** for Bible studies and curriculum
 
 ## Accessing on Your Phone
 
-B1.church works in any mobile browser, but you can also get a more app-like experience in two ways:
+B1.church works in any mobile browser. For a more app-like experience, install your church's member portal as a **Progressive Web App (PWA)** — add it to your home screen directly from Safari or Chrome with no app store required. See [Installing as an App (PWA)](./installing-pwa.md) for instructions.
 
-- **Install as a PWA** -- Add your church's member portal to your home screen directly from your browser. No app store required. See [Installing as an App (PWA)](./installing-pwa.md) for instructions.
-- **Download B1 Mobile** -- Install the native app from the App Store or Google Play for the full mobile experience, including push notifications. See [B1 Mobile](/docs/b1-mobile/).
+:::info
+The legacy native B1 Mobile app has been deprecated. The PWA is the supported way to use B1.church on a phone going forward — see the [B1 Mobile reference page](/docs/b1-mobile/) for historical documentation.
+:::
 
 ## Next Steps
 

@@ -1,12 +1,18 @@
 ---
-title: "Lessons"
+title: "Lessons (Deprecated)"
 ---
 
-# Lessons
+# Lessons (Deprecated)
+
+:::danger Lessons screen has been replaced by FreePlay
+The in-app **Lessons** screen has been deprecated. Curriculum content from Lessons.church is now delivered through **[FreePlay](/docs/freeplay/)**, ChurchApps' free TV app for classroom screens, Fire TV, Apple TV, and Android TV. FreePlay offers offline playback, classroom pairing, and a TV-remote-friendly experience that the in-app Lessons screen could not provide.
+
+For volunteers and teachers who need to browse curriculum on a phone or tablet, sign in to [Lessons.church](https://lessons.church) directly in your browser.
+:::
 
 <div class="article-intro">
 
-The Lessons screen gives you access to your church's curriculum and learning materials. Content is provided through the Lessons.church platform and is embedded directly within B1 Mobile, so you can browse and view lessons without switching to another app.
+The Lessons screen gave you access to your church's curriculum and learning materials. Content was provided through the Lessons.church platform and embedded directly within B1 Mobile, so you could browse and view lessons without switching to another app.
 
 </div>
 
@@ -46,5 +52,7 @@ The Lessons screen appears when your church has configured curriculum through Le
 
 ## Related Articles
 
+- [FreePlay Overview](/docs/freeplay/) -- The replacement TV app for classroom lesson playback
+- [Lessons.church](/docs/lessons-church/) -- Browse and manage curriculum content directly
 - [Bible](./bible) -- Read Scripture alongside your lessons
 - [Sermons](./sermons) -- Watch sermons that complement your studies

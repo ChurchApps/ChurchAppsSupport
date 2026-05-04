@@ -22,7 +22,7 @@ When members visit your B1.church site, they see your church's public website wi
 - **Plans** -- See upcoming service plans, view your assigned positions, and access song details and service orders.
 - **Check-In** -- Check in yourself and your household members for services and events. Guests can register via QR code.
 - **Community Directory** -- Browse your church's member directory, view profiles, and send direct messages.
-- **Content** -- Access sermons, read the Bible, work through lessons, and watch live streams, all from your church's site.
+- **Content** -- Access sermons, read the Bible, watch live streams, and view the daily verse, all from your church's site. (Curriculum playback now lives in [FreePlay](/docs/freeplay/) — the in-portal Lessons tab is deprecated.)
 
 ## Learn More
 
@@ -34,7 +34,7 @@ When members visit your B1.church site, they see your church's public website wi
 - [Plans](./plans/) -- View service plans and your volunteer positions.
 - [Check-In](./checkin/) -- Check in for services, events, and guest registration.
 - [Community Directory](./community/) -- Find and connect with other members.
-- [Content](./content/) -- Sermons, Bible, lessons, and live streaming.
+- [Content](./content/) -- Sermons, Bible, daily verse, and live streaming. (Lessons playback has moved to [FreePlay](/docs/freeplay/).)
 
 :::info
 B1.church is completely free for churches and members. Your church administrator sets up and customizes the site through B1 Admin. As a member, you simply visit your church's B1.church URL to get started.

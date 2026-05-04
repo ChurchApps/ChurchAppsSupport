@@ -28,16 +28,16 @@ Read Scripture using the built-in Bible reader. You can navigate through books, 
 
 View a beautifully formatted Bible verse image that changes every day. The image automatically adjusts to fit your screen.
 
-### Lessons
+### Lessons (Deprecated)
 
-Access your church's curriculum and learning materials through the embedded Lessons.church platform. Your login carries over automatically, so you can jump straight into the content.
+The embedded **Lessons** tab has been deprecated. Curriculum playback now lives in **[FreePlay](/docs/freeplay/)**, ChurchApps' free TV app for classroom screens. To browse curriculum on a phone, tablet, or computer, sign in to [Lessons.church](https://lessons.church) directly. See the [Lessons reference page](./lessons.md) for details.
 
 ## Finding Content
 
 Content pages are available through your church's site navigation. Your church administrator decides which content features are enabled and how they appear in the menu. If you do not see a particular content feature listed above, it may not be configured for your church.
 
 :::info
-Some content features (like [Lessons](./lessons.md)) require you to be [logged in](../getting-started/logging-in.md), while others (like [Sermons](./sermons.md) and the [Bible](./bible.md)) are available publicly.
+[Sermons](./sermons.md) and the [Bible](./bible.md) are available publicly. Other features may require you to be [logged in](../getting-started/logging-in.md).
 :::
 
 ## Next Steps
@@ -46,4 +46,4 @@ Some content features (like [Lessons](./lessons.md)) require you to be [logged i
 - [Live Streaming](./live-streaming.md) -- Watch live broadcasts
 - [Bible](./bible.md) -- Read Scripture in the built-in reader
 - [Verse of the Day](./verse-of-the-day.md) -- See today's daily verse
-- [Lessons](./lessons.md) -- Access curriculum and learning materials
+- [FreePlay](/docs/freeplay/) -- Play lessons on classroom TVs (replaces the deprecated in-app Lessons tab)

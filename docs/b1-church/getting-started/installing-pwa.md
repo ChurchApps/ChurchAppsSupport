@@ -63,22 +63,12 @@ Once installed, the PWA works the same as visiting the mobile site in your brows
 The PWA requires an internet connection. Unlike some native apps, it does not cache all content for offline use.
 :::
 
-## PWA vs. Native App
+## What About the Old B1 Mobile App?
 
-Both options give you access to the B1.church member portal. The right choice depends on your preference:
+The legacy native **B1 Mobile** app on iOS and Android has been deprecated and is no longer being updated. The PWA is the supported way to access the B1.church member portal on a phone going forward, and it covers every member-facing feature the native app offered. If you previously installed the native app, switch to the PWA at your convenience.
 
-| | **PWA** | **B1 Mobile App** |
-|---|---|---|
-| Installation | Add to Home Screen from browser | Download from App Store / Google Play |
-| Updates | Automatic (no app store update needed) | Via App Store / Google Play |
-| Push Notifications | Not supported | Supported |
-| Platform | Any device with a browser | iOS and Android |
-
-:::tip
-If your church uses group conversations and you want push notifications for new messages and activity, use the [B1 Mobile app](/docs/b1-mobile/) instead. Push notifications are not currently supported in the PWA.
-:::
+See the [B1 Mobile reference page](/docs/b1-mobile/) for historical documentation on the deprecated app.
 
 ## Related Articles
 
 - [Logging In](./logging-in.md) — How to sign in to your B1.church account
-- [B1 Mobile — Installing the App](/docs/b1-mobile/getting-started/installing) — Download the native iOS/Android app
