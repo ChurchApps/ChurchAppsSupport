@@ -12,7 +12,7 @@ The Calendars section in B1 Admin lets you create and manage event calendars for
 
 ## Viewing Your Calendars
 
-1. In the B1 Admin, navigate to the **Calendars** section.
+1. In the B1 Admin, navigate to **Website**, then to the **Calendars** section.
 2. The Calendars page lists all your calendars with their name and status.
 3. Each calendar also shows the groups associated with it.
 
