@@ -6,7 +6,7 @@ title: "Creating Calendars"
 
 <div class="article-intro">
 
-Creating a calendar in B1 Admin gives you a central place to manage events for a ministry, department, or your entire church. Each calendar can pull in events from one or more groups, making it easy to keep everything organized.
+Creating a calendar in B1 Admin lets you build a curated view of events by connecting one or more groups. Events are managed by group leaders within their groups, and your calendar displays those events in one place. Even a domain admin cannot add or edit events directly in the calendar section unless they are a leader of the group the events belong to.
 
 </div>
 
@@ -20,7 +20,7 @@ Creating a calendar in B1 Admin gives you a central place to manage events for a
 
 ## Creating a New Calendar
 
-1. Navigate to the **Calendars** section in B1 Admin.
+1. In the B1 Admin, navigate to **Website**, then to the **Calendars** section.
 2. Click **Add Calendar**.
 3. Enter a **name** for your calendar (for example, "Youth Ministry Events" or "Main Church Calendar").
 4. Add an optional **description** to help your team understand what this calendar is for.
@@ -30,14 +30,8 @@ Creating a calendar in B1 Admin gives you a central place to manage events for a
 
 After creating a calendar, click on it to open the detail page. This page has two main areas:
 
-- **Left column** -- The calendar and events editor. Here you can view, add, and manage events on your calendar.
-- **Right column** -- The associated groups list. This shows which groups have events included in this calendar.
-
-## Adding Events
-
-1. On the calendar detail page, use the calendar editor on the left to add new events.
-2. Set the event name, date, time, and any other details.
-3. Events you add will appear on the calendar and can be published to your website.
+- **Left column** -- A view of the calendar showing events pulled in from connected groups.
+- **Right column** -- The associated groups list. This is where you manage which groups are included in this calendar.
 
 ## Connecting Groups
 
