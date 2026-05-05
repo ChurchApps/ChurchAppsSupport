@@ -6,65 +6,163 @@ title: "导入数据"
 
 <div class="article-intro">
 
-B1 Admin 使导入现有成员数据变得轻松。无论您是从其他教会管理平台迁移还是从电子表格加载记录，导入工具可以帮助您避免手动输入每个人员。您可以从 CSV 文件导入或直接从 Breeze ChMS 迁移。
+B1 Transfer 工具使您可以轻松将现有数据导入 B1,无论您是从电子表格全新开始、从另一个教会管理平台迁移,还是导入奉献记录。它还可以随时用于导出或备份您的数据。
 
 </div>
 
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- 您需要一个具有 **Settings** 访问权限的活跃 B1 Admin 账户。如果不确定您的访问级别，请参阅[角色与权限](roles-permissions.md)。
-- 准备好您的成员数据，可以在电子表格中或从之前的系统导出。
-- 如果您从 Breeze 迁移，请确保您已经从 Breeze 导出了 People、Tags 和 Contributions 文件。
+- 您需要一个有效的 B1 Admin 帐户,并有权访问 **Settings**。
+- 在开始之前,从您以前的系统导出并准备好数据。
+- 此工具适用于初始数据迁移。如果您已经使用 B1 一段时间,再次导入可能会创建重复记录。
 
 </div>
 
-## 从 CSV 导入
+## 访问传输工具
 
-如果您在电子表格或其他系统中有成员数据，可以使用 CSV（逗号分隔值）文件导入。
+1. 登录 **B1 Admin**。
+2. 在左侧边栏转到 **Settings**。
+3. 点击页面标题右上角的 **Import/Export** 按钮。
+4. 这将在新标签页中打开 **B1 Transfer** 工具,网址为 [transfer.b1.church](https://transfer.b1.church)。
 
-1. 转到左侧边栏中的 **Settings**。
-2. 点击顶部导航中的 **Import/Export**。
-3. 从 **Data Source** 下拉菜单中选择 **B1 Import Zip**。
-4. 点击链接**下载示例文件**以查看预期格式。
-5. 打开示例 `people.csv` 文件，将示例数据替换为您自己的数据。保留标题行不变。
-6. 如果您有成员照片，请使用 400x300 像素的图片添加到文件夹中，文件名与 CSV 中的 `importKey` 编号匹配。
-7. 将编辑后的文件压缩为 zip 文件。
-8. 返回 B1 Admin，点击 **Upload** 并选择您的 zip 文件。
-9. 查看数据预览并点击 **Continue to Destination**。
-10. 确认已选择 **B1 Database**，查看导入摘要，然后点击 **Start Transfer**。
-11. 等待导入完成，然后点击 **Go to B1** 返回仪表板。
+传输工具将引导您完成四个步骤:源、预览、目标和运行。
 
-:::tip
-务必先下载并查看示例文件。匹配预期的列格式将防止导入错误。
-:::
+---
+
+## 步骤 1 - 选择您的源
+
+选择您的数据来源。有七个选项:
+
+- **B1 Database** — 直接从您现有的 B1 教会提取数据。用于备份或将数据转换为另一种格式。您必须登录才能使用此选项。
+- **B1 Import Zip** — B1 自己格式的 zip 文件。这主要用于恢复以前的 B1 导出。
+- **Breeze Import Zip** — 包含从 Breeze ChMS 导出的文件的 zip 文件。
+- **Planning Center Zip** — 从 Planning Center 导出的 zip 或 CSV 文件。
+- **Custom CSV / Excel** — 包含人员数据的任何 CSV 或 Excel 文件。上传后,您将在导入继续之前将列映射到 B1 字段。
+- **Tithe.ly CSV** — 来自 Tithe.ly 的人员或奉献导出文件(接受 CSV 或 Excel 格式)。
+- **CCB / Pushpay CSV** — 来自 Church Community Builder 或 Pushpay 的人员或奉献导出 CSV。
+
+您可以将文件拖放到上传区域,或点击浏览文件。
+
+---
+
+## 步骤 1b - 映射您的字段(仅限 Custom CSV / Excel)
+
+如果您选择了 **Custom CSV / Excel**,在上传文件后,工具将在转到预览之前显示字段映射屏幕。
+
+列出您文件中的每一列以及示例值。对于每一列,使用下拉列表选择匹配的 B1 字段。该工具将自动检测常见的列名,如"First Name"、"Email"或"Zip Code",但您应该检查每一行并更正它遗漏的任何内容。
+
+可用的 B1 字段包括:
+
+- First Name、Last Name、Middle Name、Nickname、Display Name、Title/Prefix、Suffix
+- Email、Home Phone、Mobile Phone、Work Phone
+- Address Line 1、Address Line 2、City、State、Zip Code
+- Birth Date、Gender、Marital Status、Membership Status
+- Household/Family Name
+- Group Name — 按名称将人员分配到小组
+- **Form Answer (custom field)** — 将该列的值保存为附加到人员记录的自定义字段。如果使用此选项,系统会要求您为表单命名。
+
+不想导入的列可以设置为 **(Skip)**。在继续之前,必须映射至少一个名称字段(First Name 或 Last Name)。
+
+点击 **Confirm Mapping & Import** 继续预览。
+
+---
+
+## 步骤 2 - 预览您的数据
+
+上传后,该工具会显示将要导入的所有内容的预览。使用选项卡查看每种数据类型:
+
+- **People** — 按家庭列出,如果包含照片则显示照片。
+- **Groups** — 按校区、服务、时间和类别组织。
+- **Attendance** — 会议日期、小组和访问次数。
+- **Donations** — 批次、基金、捐赠者和金额。
+- **Forms** — 表单名称和内容类型。
+
+继续之前请仔细检查。如果有任何问题,请点击 **Start Over** 并更正源文件。
+
+---
+
+## 步骤 3 - 选择您的目标
+
+选择您希望数据去往的位置:
+
+- **B1 Database** — 直接导入到您教会的 B1 数据库。选择此项后,工具将显示要添加的记录的最终计数。点击 **Start Transfer** 确认。
+- **B1 Export Zip** — 将您的数据下载为 B1 格式的 zip 文件。适合备份。
+- **Breeze Export Zip** — 将您的数据转换为 Breeze 格式。
+- **Planning Center Zip** — 将您的数据转换为 Planning Center 格式。
 
 :::warning
-导入数据会向您的数据库添加新记录。如果您两次导入同一文件，可能会产生重复条目。在开始传输前仔细检查您的文件。
+源和目标不能是相同的格式。如果匹配,工具会警告您以防止意外重复。
 :::
 
-## 从 Breeze ChMS 导入
+---
 
-如果您从 Breeze 迁移，B1 有一个专门的导入选项可以自动处理转换。
+## 步骤 4 - 运行
 
-1. 在 Breeze 中，转到 **Settings** 并点击左侧边栏中的 **Export**。
-2. 导出三个文件：**People**、**Tags** 和 **Contributions**。
-3. 选择所有三个导出的文件，右键点击，将它们压缩为一个 zip 文件。
-4. 在 B1 Admin 中，转到 **Settings**，然后 **Import/Export**。
-5. 从 **Data Source** 下拉菜单中选择 **Breeze Import Zip**。
-6. 上传您的 zip 文件并按照屏幕上的步骤查看和完成导入。
+该工具处理传输并显示每个步骤的进度:
+
+- 校区、服务和时间
+- 人员
+- 照片
+- 小组和小组成员
+- 捐赠
+- 考勤
+- 表单、问题、答案和表单提交
+- 压缩(仅限 zip 文件目标)
+
+:::warning
+在传输运行时不要关闭浏览器。等待所有步骤显示为完成。
+:::
+
+---
+
+## 准备 Breeze 导入 Zip
+
+1. 在 Breeze 中,转到 **Settings** 并点击左侧边栏中的 **Export**。
+2. 导出三个单独的文件:**People**、**Tags** 和 **Contributions**。
+3. 选择所有三个文件,右键点击,然后将它们压缩成单个 zip 文件。
+   - 在 Mac 上:选择文件,右键点击,然后选择 **Compress**。
+   - 在 PC 上:选择文件,右键点击,选择 **Send to**,然后选择 **Compressed (zipped) folder**。
+4. 在步骤 1 中使用 **Breeze Import Zip** 选项上传 zip 文件。
+
+Breeze 导入会自动传输人员、小组(标签)和捐赠记录。
+
+---
+
+## 准备 Planning Center 导出
+
+1. 在 Planning Center 中,将您的人员数据导出为 CSV 或 zip 文件。
+2. 在步骤 1 中使用 **Planning Center Zip** 选项上传。
+
+---
+
+## 准备 Tithe.ly 导出
+
+1. 在 Tithe.ly 中,将您的 **People** 数据导出为 CSV 或 Excel 文件。如果您想导入捐赠记录,还可以导出单独的 **Giving** 文件。
+2. 该工具将根据列名自动检测文件是包含人员数据还是奉献数据。
+3. 在步骤 1 中使用 **Tithe.ly CSV** 选项上传文件。
 
 :::info
-Breeze 导入可以迁移人员、照片、小组、奉献、考勤、表单等——一步完成完整迁移。
+Tithe.ly 导出可以一次导入一个文件。如果您需要分别导入人员和奉献记录,请运行该过程两次。
 :::
+
+---
+
+## 准备 CCB 或 Pushpay 导出
+
+1. 在 Church Community Builder 或 Pushpay 中,将您的 **People** 数据导出为 CSV 文件。您还可以导出单独的奉献/捐款文件。
+2. 该工具将根据列名自动检测文件是包含人员数据还是奉献数据。
+3. 在步骤 1 中使用 **CCB / Pushpay CSV** 选项上传文件。
+
+---
 
 ## 导入后
 
-导入完成后，花几分钟验证您的数据：
+传输完成后,花几分钟时间验证您的数据:
 
-1. 浏览[人员](../people/adding-people.md)页面，抽查几个个人资料。
-2. 确认姓名、电子邮件、电话号码和地址已正确导入。
-3. 检查家庭关联是否完整。
-4. 查看已导入的任何[小组](../groups/creating-groups.md)或标签。
+1. 浏览[人员](../people/adding-people.md)页面并抽查一些个人资料。
+2. 确认姓名、电子邮件、电话号码和地址已正确传输。
+3. 检查家庭连接是否完整。
+4. 查看任何导入的小组和奉献记录。
 
-如果您发现任何问题，可以直接从人员页面编辑各个个人资料。您也可以随时[导出数据](exporting-data.md)以创建备份。
+如果您发现问题,可以从人员页面编辑单个个人资料。您还可以再次运行传输工具以[导出数据](exporting-data.md)作为备份。

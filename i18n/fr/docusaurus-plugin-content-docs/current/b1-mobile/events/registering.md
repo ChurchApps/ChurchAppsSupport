@@ -1,35 +1,11 @@
 ---
-title: "Enregistrement aux événements"
+title: "Inscription aux événements"
 ---
 
-# Enregistrement aux événements
+# Inscription aux événements
 
-<div class="article-intro">
+_[Traduction française en cours - French translation in progress]_
 
-Enregistrez-vous facilement aux événements de l'église depuis B1 Mobile en quelques appels.
+Cette page est actuellement en cours de traduction. Veuillez consulter la version anglaise pour le contenu complet.
 
-</div>
-
-## Étapes d'enregistrement
-
-1. Ouvrez B1 Mobile et appuyez sur **Événements**
-2. Trouvez l'événement pour lequel vous souhaitez vous inscrire
-3. Appuyez sur le bouton **S'inscrire**
-4. Confirmez votre enregistrement et ajoutez les membres de la famille si souhaité
-5. Appuyez sur **Confirmer**
-
-Un message de confirmation affichera votre enregistrement.
-
-## Annulation d'un enregistrement
-
-1. Allez à **Événements** > **Mes événements**
-2. Appuyez sur l'événement que vous souhaitez annuler
-3. Sélectionnez **Annuler l'enregistrement**
-4. Confirmez l'annulation
-
-Vous recevrez une confirmation par e-mail que votre enregistrement a été annulé.
-
-## Articles connexes
-
-- [Aperçu des événements](./index.md) — Voir tous les événements disponibles
-- [Enregistrement aux événements (Web)](../../b1-church/events/registering) — Guide d'enregistrement Web complet
+_This page is currently being translated. Please refer to the English version for complete content._

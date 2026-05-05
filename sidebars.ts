@@ -607,6 +607,7 @@ const sidebars: SidebarsConfig = {
         },
         'developer/realtime',
         'developer/web-push',
+        'developer/server-admin',
         'developer/freeplay-content-provider',
       ],
     },

@@ -1,52 +1,11 @@
 ---
-title: "Endpoints de messagerie"
+title: "Points de terminaison de messagerie"
 ---
 
-# Endpoints de messagerie
+# Points de terminaison de messagerie
 
-<div class="article-intro">
+_[Traduction française en cours - French translation in progress]_
 
-Les API ChurchApps fournissent l'accès par programme aux systèmes de messagerie, permettant aux intégrateurs d'envoyer et de recevoir des messages.
+Cette page est actuellement en cours de traduction. Veuillez consulter la version anglaise pour le contenu complet.
 
-</div>
-
-## Authentification
-
-Tous les endpoints d'API nécessitent une authentification via clé d'API. Incluez votre clé d'API dans l'en-tête `Authorization` :
-
-```
-Authorization: Bearer YOUR_API_KEY
-```
-
-## Endpoints principaux
-
-### Envoyer un message
-```
-POST /api/v1/messaging/messages
-```
-
-Envoie un message à un destinataire ou un groupe.
-
-### Obtenir les messages
-```
-GET /api/v1/messaging/messages
-```
-
-Récupère une liste des messages envoyés et reçus.
-
-### Obtenir les conversations
-```
-GET /api/v1/messaging/conversations
-```
-
-Récupère les conversations de messagerie.
-
-## Documentation complète
-
-Pour la documentation API complète, consultez [developer.churchapps.org](https://developer.churchapps.org).
-
-## Articles connexes
-
-- [Vue d'ensemble de l'API](../index.md)
-- [API d'assistance](./attendance.md)
-- [API de contenu](./content.md)
+_This page is currently being translated. Please refer to the English version for complete content._

@@ -46,3 +46,21 @@ Click on any plan in the list to open its details in the right panel. The detail
 :::tip
 If you have multiple assignments across different plans, the list is sorted by date so your upcoming commitments appear first. Check back regularly to stay on top of your schedule.
 :::
+
+## Teacher View for Lessons
+
+If your plan includes associated curriculum from a content provider (such as Lessons.church), you will see a toggle button in the **Order of Service** tab that lets you switch between **Summary** and **Teach** views.
+
+- **Summary view** -- Shows the service order with timing and basic lesson sections, ideal for quickly reviewing what will happen when
+- **Teach view** -- Opens an immersive, full-screen lesson presentation designed for teachers, with formatted instructions, embedded media, notes, and step-by-step guidance
+
+The Teach view organizes lesson content into navigable sections displayed as tabs at the top. You can:
+
+- Tap a section tab to jump directly to that part of the lesson
+- Scroll through the lesson content, and the active tab will update automatically to match your position
+- Click on media items (videos, images, activities) to view them in a modal dialog
+- See action types formatted distinctively: **Say** appears in conversation bubbles, **Do** in bold text, and **Note** in highlighted callouts
+
+:::tip
+The Teach view is especially helpful when leading a classroom or small group, as it presents all your lesson content in a clean, distraction-free format optimized for mobile and tablet use.
+:::

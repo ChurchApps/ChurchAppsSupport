@@ -1,94 +1,88 @@
 ---
-title: "Opprettelse av kalendere"
+title: "Opprette kalendere"
 ---
 
-# Opprettelse av kalendere
+# Opprette kalendere
 
 <div class="article-intro">
 
-Opprettelse av en kalender i B1 Admin gir deg et sentralisert sted for å administrere hendelser for et ministerium, avdeling eller hele kirken. Hver kalender kan hente hendelser fra en eller flere grupper, noe som gjør det enkelt å holde alt organisert.
+Å opprette en kalender i B1 Admin lar deg bygge en kurert visning av hendelser ved å koble til en eller flere grupper. Hendelser administreres av gruppeledere innenfor deres grupper, og kalenderen din viser disse hendelsene på ett sted. Selv en domeneadministrator kan ikke legge til eller redigere hendelser direkte i kalenderseksjonen med mindre de er leder for gruppen hendelsene tilhører.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Sett opp [gruppene](../groups/creating-groups.md) hvis hendelser du vil inkludere i kalenderen
-- Du trenger administrativ tilgang til Kalender-delen i B1 Admin
+- Sett opp [gruppene](../groups/creating-groups.md) hvis hendelser du vil inkludere i kalenderen din
+- Du trenger administrativ tilgang til Kalender-seksjonen i B1 Admin
 
 </div>
 
-## Opprettelse av en ny kalender
+## Opprette en ny kalender
 
-1. Gå til **Kalendere**-delen i B1 Admin.
+1. I B1 Admin, naviger til **Nettsted**, deretter til **Kalendere**-seksjonen.
 2. Klikk **Legg til kalender**.
-3. Skriv inn et **navn** for kalenderen (f.eks. "Ungdomsministeriets hendelser" eller "Hovedkirkens kalender").
-4. Legg til en valgfri **beskrivelse** for å hjelpe teamet ditt å forstå hva denne kalenderen er til for.
+3. Skriv inn et **navn** for kalenderen din (for eksempel "Ungdomsaktiviteter" eller "Hovedkalender").
+4. Legg til en valgfri **beskrivelse** for å hjelpe teamet ditt å forstå hva denne kalenderen er for.
 5. Klikk **Opprett** for å lagre den nye kalenderen.
 
-## Detaljsiden for kalender
+## Kalenderdetaljsiden
 
-Etter opprettelse av en kalender, klikk på den for å åpne detaljsiden. Denne siden har to hovedområder:
+Etter å ha opprettet en kalender, klikk på den for å åpne detaljsiden. Denne siden har to hovedområder:
 
-- **Venstre kolonne** -- Kalenderen og hendelsesredaktøren. Her kan du vise, legge til og administrere hendelser på kalenderen.
-- **Høyre kolonne** -- Listen over tilknyttede grupper. Dette viser hvilke grupper som har hendelser inkludert i denne kalenderen.
+- **Venstre kolonne** -- En visning av kalenderen som viser hendelser hentet fra tilkoblede grupper.
+- **Høyre kolonne** -- Listen over tilknyttede grupper. Her administrerer du hvilke grupper som er inkludert i denne kalenderen.
 
-## Legge til hendelser
-
-1. På kalenderdetaljsiden, bruk kalenderedaktøren på venstre side for å legge til nye hendelser.
-2. Angi hendelsesnavn, dato, tid og andre detaljer.
-3. Hendelser du legger til vises på kalenderen og kan publiseres på nettstedet ditt.
-
-## Tilkobling av grupper
+## Koble til grupper
 
 Grupper som har hendelser i kalenderen vises automatisk i gruppelisten på høyre side av detaljsiden.
 
-1. Klikk **Legg til** i gruppedelen for å knytte en gruppe til kalenderen.
-2. Velg gruppen fra nedtrekkslisten.
+1. Klikk **Legg til** i gruppeseksjonen for å knytte en gruppe til kalenderen din.
+2. Velg gruppen fra rullegardinmenyen.
 3. Velg om du vil inkludere **alle hendelser** fra den gruppen eller bare **spesifikke hendelser**.
 4. Klikk **Lagre**.
 
 :::tip
-Tilkobling av grupper til kalenderen er en kraftig måte å automatisk samle hendelser. Når en gruppeleder legger til en hendelse i sin [gruppe](../groups/creating-groups.md), kan den flyte inn i kirkens kalender uten ekstra arbeid fra deg.
+Å koble grupper til kalenderen din er en kraftig måte å automatisk samle hendelser på. Når en gruppeleder legger til en hendelse i sin [gruppe](../groups/creating-groups.md), kan den flyte inn i den kirkeomfattende kalenderen din uten ekstra arbeid fra deg.
 :::
 
 :::info
-Hvis du vil opprette en enkelt kalender som henter hendelser fra mange grupper på tvers av kirken, se [Kuratert kalender](curated-calendar) for en strømlinjeformet tilnærming.
+Hvis du vil opprette en enkelt kalender som henter hendelser fra mange grupper i kirken din, se [Kurert kalender](curated-calendar) for en strømlinjeformet tilnærming.
 :::
 
-## Aktivering av hendelsesregistrering
+## Aktivere påmelding til hendelser
 
-Du kan aktivere registrering for enhver kalenderhendelse slik at medlemmer kan melde seg på gjennom B1-nettstedet eller mobilappen.
+Du kan aktivere påmelding for enhver kalenderhendelse slik at medlemmer kan melde seg på gjennom B1-nettstedet eller mobilappen.
 
 1. Klikk på en eksisterende hendelse eller opprett en ny.
-2. I hendelsesredaktøren, slå **Registrering** på.
-3. Konfigurer registreringsinnstillingene:
-   - **Kapasitet** (valgfritt) -- Angi et maksimalt antall registreringer. La stå tomt for ubegrenset.
-   - **Registrering åpner** -- Dato og tid når registrering blir tilgjengelig.
-   - **Registrering lukker** -- Dato og tid når registrering lukkes.
-   - **Etiketter** -- Komma-separerte etiketter (f.eks. "ungdom, retirett, vbs") for å kategorisere registrerbare hendelser.
+2. I hendelsesredigereren, slå på **Påmelding** for å aktivere den.
+3. Konfigurer påmeldingsinnstillingene:
+   - **Kapasitet** (valgfritt) -- Sett et maksimalt antall påmeldinger. La stå tom for ubegrenset.
+   - **Påmelding åpner** -- Dato og klokkeslett når påmeldingen blir tilgjengelig.
+   - **Påmelding stenger** -- Dato og klokkeslett når påmeldingen stenger.
+   - **Tagger** -- Kommaseparerte etiketter (f.eks. "ungdom, leir, feriebibel") for å hjelpe med å kategorisere påmeldingsbare hendelser.
 4. Lagre hendelsen.
 
-Når registrering er aktivert, vil medlemmer se en **Registrer deg for denne hendelsen**-knapp når de viser hendelsen på [B1-nettstedet](../../b1-church/events/registering) eller [B1 Mobile-appen](../../b1-mobile/events/registering).
+Når påmelding er aktivert, vil medlemmer se en **Meld deg på denne hendelsen**-knapp når de ser hendelsen på [B1-nettstedet](../../b1-church/events/registering) eller [B1 Mobile-appen](../../b1-mobile/events/registering).
 
-### Håndtering av registreringer
+### Administrere påmeldinger
 
-For å vise og administrere registreringer for hendelsene dine:
+For å se og administrere påmeldinger til hendelsene dine:
 
-1. Gå til **Registreringer**-siden i B1 Admin.
-2. Du vil se en tabell over alle hendelser med registrering aktivert, som viser hendelsestittel, dato, gjeldende registreringsantall kontra kapasitet og etiketter.
-3. Klikk på en hendelse for å se den fullstendige listen over registreringer, inkludert navn, medlemstall, status og registreringsdato.
+1. Naviger til **Påmeldinger**-siden i B1 Admin.
+2. Du vil se en tabell over alle hendelser med påmelding aktivert, som viser hendelsestittelen, datoen, gjeldende påmeldingsantall vs. kapasitet og tagger.
+3. Klikk på en hendelse for å se hele listen over påmeldinger, inkludert navn, antall medlemmer, status og påmeldingsdato.
 4. Fra detaljsiden kan du:
-   - **Avbryt** individuelle registreringer
-   - **Slett** registreringer permanent
-   - **Eksporter** alle registreringer til CSV
+   - **Kansellere** individuelle påmeldinger
+   - **Slette** påmeldinger permanent
+   - **Eksportere** alle påmeldinger til CSV
 
 :::tip
-Bruk kapasitetsprosesslinjen for å overvåke hvor raskt hendelser fyller seg opp. Linjen blir rød når en hendelse er på eller over kapasitet.
+Bruk kapasitetsfremdriftslinjen til å overvåke hvor raskt hendelser fylles opp. Linjen blir rød når en hendelse er ved eller over kapasitet.
 :::
 
-## Neste trinn
+## Neste steg
 
-- [Kuratert kalender](curated-calendar) -- Opprett en kalender som henter fra flere grupper
-- [Veiledning for hendelsesregistrering](../guides/event-registration) -- Trinn-for-trinn-guide for oppsett av hendelsesregistrering
+- [Kurert kalender](curated-calendar) -- Opprett en kalender som henter fra flere grupper
+- [Veiledning for påmelding til hendelser](../guides/event-registration) -- Trinn-for-trinn-veiledning for å sette opp påmelding til hendelser
 - [Kalenderoversikt](./) -- Gå tilbake til kalenderoversikten

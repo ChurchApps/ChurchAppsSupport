@@ -1,83 +1,83 @@
 ---
-title: "Audit-Protokoll"
+title: "Prüfprotokoll"
 ---
 
-# Audit-Protokoll
+# Prüfprotokoll
 
 <div class="article-intro">
 
-Das Audit-Protokoll verfolgt alle wesentlichen Aktionen und Änderungen in Ihrem Kirchenmanagementsystem. Verwenden Sie es, um die Anmeldungs-Aktivität zu überprüfen, nachzuverfolgung, wer Änderungen an Personendatensätzen vorgenommen hat, Berechtigungs-Updates zu überwachen und Verantwortlichkeit über Ihr Team zu wahren.
+Das Prüfprotokoll verfolgt alle wichtigen Aktionen und Änderungen in Ihrem Kirchenverwaltungssystem. Verwenden Sie es, um Anmeldeaktivitäten zu überprüfen, nachzuverfolgen, wer Änderungen an Personendatensätzen vorgenommen hat, Berechtigungsaktualisierungen zu überwachen und die Rechenschaftspflicht in Ihrem Team aufrechtzuerhalten.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- B1 Admin-Konto mit Server-Admin-Zugriff
-- Navigieren Sie zu **Einstellungen**, um das Audit-Protokoll zu finden
+- B1 Admin-Konto mit Server-Administrator-Zugriff
+- Navigieren Sie zu **Settings**, um das Prüfprotokoll zu finden
 
 </div>
 
-## Das Audit-Protokoll anzeigen
+## Anzeigen des Prüfprotokolls
 
-1. Gehen Sie zu **Einstellungen** in B1 Admin.
-2. Wählen Sie **Audit-Protokoll**.
-3. Das Protokoll zeigt aktuelle Einträge in einer Tabelle mit den folgenden Spalten:
-   - **Datum** — Wann die Aktion vorkam.
-   - **Kategorie** — Die Art der Aktion (farbcodiert zum schnellen Scannen).
-   - **Aktion** — Was gemacht wurde (z.B. erstellen, aktualisieren, löschen, login_success).
-   - **Entity** — Der Typ und die ID des betroffenen Datensatzes.
-   - **IP-Adresse** — Die IP-Adresse des Benutzers, der die Aktion durchgeführt hat.
-   - **Details** — Eine Zusammenfassung der spezifischen Änderungen.
+1. Gehen Sie zu **Settings** in B1 Admin.
+2. Wählen Sie **Audit Log**.
+3. Das Protokoll zeigt aktuelle Einträge in einer Tabelle mit folgenden Spalten an:
+   - **Date** -- Wann die Aktion erfolgt ist.
+   - **Category** -- Die Art der Aktion (farbcodiert für schnelles Scannen).
+   - **Action** -- Was getan wurde (z. B. create, update, delete, login_success).
+   - **Entity** -- Der Typ und die ID des betroffenen Datensatzes.
+   - **IP Address** -- Die IP-Adresse des Benutzers, der die Aktion durchgeführt hat.
+   - **Details** -- Eine Zusammenfassung der spezifischen Änderungen.
 
-## Das Protokoll filtern
+## Filtern des Protokolls
 
-Verwenden Sie die Filter oben auf der Seite, um die Ergebnisse einzugrenzen:
+Verwenden Sie die Filter am oberen Rand der Seite, um die Ergebnisse einzugrenzen:
 
-- **Kategorie** — Nach Aktionstyp filtern:
-  - **Alle Kategorien** — Alles anzeigen.
-  - **Anmeldung** — Anmeldungs-Erfolge und Fehler.
-  - **Personen** — Erstellen, aktualisieren oder löschen von Personendatensätzen.
-  - **Berechtigungen** — Berechtigungs-Zuschüsse und Widerrufe.
-  - **Spenden** — Spenden-Datensatz-Änderungen.
-  - **Gruppen** — Gruppen-Verwaltungs-Aktionen.
-  - **Formulare** — Formular-Einreichungs-Aktivität.
-  - **Einstellungen** — Konfigurationsänderungen.
-- **Start-Datum** — Zeige Einträge von diesem Datum an.
-- **End-Datum** — Zeige Einträge bis zu diesem Datum.
+- **Category** -- Nach Aktionstyp filtern:
+  - **All Categories** -- Alles anzeigen.
+  - **Login** -- Erfolgreiche und fehlgeschlagene Anmeldungen.
+  - **People** -- Erstellen, Aktualisieren oder Löschen von Personendatensätzen.
+  - **Permissions** -- Gewährung und Widerruf von Berechtigungen.
+  - **Donations** -- Änderungen an Spendendatensätzen.
+  - **Groups** -- Gruppenverwaltungsaktionen.
+  - **Forms** -- Formularübermittlungsaktivität.
+  - **Settings** -- Konfigurationsänderungen.
+- **Start Date** -- Einträge ab diesem Datum anzeigen.
+- **End Date** -- Einträge bis zu diesem Datum anzeigen.
 
-Klicken Sie auf **Suche** nach dem Einstellen Ihrer Filter, um die Ergebnisse zu aktualisieren.
+Klicken Sie nach dem Festlegen Ihrer Filter auf **Search**, um die Ergebnisse zu aktualisieren.
 
 ## Kategorien verstehen
 
-Jede Kategorie ist farbcodiert zum schnellen Identifizierung:
+Jede Kategorie ist farbcodiert für schnelle Identifikation:
 
-- **Anmeldung** — Blauer Chip. Verfolgt erfolgreiche und fehlgeschlagene Anmeldungs-Versuche.
-- **Personen** — Lila Chip. Verfolgt Personendatensatz-Ersteller, Aktualisierungen und Löschungen.
-- **Berechtigungen** — Roter Chip. Verfolgt, wenn Zugangsrechte gewährt oder entzogen werden.
-- **Spenden** — Grüner Chip. Verfolgt Spenden-Datensatz-Änderungen.
-- **Gruppen** — Grauer Chip. Verfolgt Gruppen-Verwaltungs-Operationen.
-- **Formulare** — Orange Chip. Verfolgt Formular-Einreichungs-Aktivität.
-- **Einstellungen** — Gelber Chip. Verfolgt Konfigurationsänderungen.
+- **Login** -- Blauer Chip. Verfolgt erfolgreiche und fehlgeschlagene Anmeldeversuche.
+- **People** -- Violetter Chip. Verfolgt Erstellen, Aktualisieren und Löschen von Personendatensätzen.
+- **Permissions** -- Roter Chip. Verfolgt, wann Zugriffsrechte gewährt oder widerrufen werden.
+- **Donations** -- Grüner Chip. Verfolgt Änderungen an Spendendatensätzen.
+- **Groups** -- Grauer Chip. Verfolgt Gruppenverwaltungsoperationen.
+- **Forms** -- Oranger Chip. Verfolgt Formularübermittlungsaktivität.
+- **Settings** -- Gelber Chip. Verfolgt Konfigurationsänderungen.
 
-## Das Protokoll exportieren
+## Exportieren des Protokolls
 
-Wenn Protokoll-Einträge angezeigt werden, erscheint eine **CSV-Download**-Schaltfläche. Klicken Sie darauf, um die aktuellen gefilterten Ergebnisse in eine Tabellenkalkulation für die Offline-Überprüfung oder Aufzeichnungszwecke zu exportieren.
+Wenn Protokolleinträge angezeigt werden, erscheint eine **CSV download**-Schaltfläche. Klicken Sie darauf, um die aktuellen gefilterten Ergebnisse in eine Tabellenkalkulation für die Offline-Überprüfung oder Aufzeichnung zu exportieren.
 
-## Pagination
+## Paginierung
 
-Verwenden Sie die Paginierungs-Steuerungen am unteren Rand der Tabelle, um durch Ergebnisse zu navigieren. Sie können 25, 50 oder 100 Einträge pro Seite anzeigen.
+Verwenden Sie die Paginierungssteuerelemente am unteren Rand der Tabelle, um durch die Ergebnisse zu navigieren. Sie können 25, 50 oder 100 Einträge pro Seite anzeigen.
 
 :::info
-Audit-Protokoll-Einträge werden automatisch ein Jahr lang aufbewahrt. Einträge älter als 365 Tage werden entfernt, um die System-Performance zu erhalten.
+Prüfprotokolleinträge werden automatisch ein Jahr lang aufbewahrt. Einträge, die älter als 365 Tage sind, werden entfernt, um die Systemleistung aufrechtzuerhalten.
 :::
 
 :::tip
-Überprüfen Sie das Audit-Protokoll regelmäßig, besonders nach dem Onboarding neuer Team-Mitglieder oder nachdem bedeutende Konfigurationsänderungen vorgenommen wurden. Dies hilft, unerwartet Aktivität früh zu identifizieren.
+Überprüfen Sie das Prüfprotokoll regelmäßig, besonders nach dem Onboarding neuer Teammitglieder oder nach bedeutenden Konfigurationsänderungen. Es hilft, unerwartete Aktivitäten frühzeitig zu erkennen.
 :::
 
 ## Verwandte Artikel
 
-- [Rollen & Berechtigungen](../settings/roles-permissions) -- Verwalten Sie, wer Zugriff auf was hat
-- [Datensicherheit](../settings/data-security) -- Verstehen Sie, wie Ihre Daten geschützt werden
-- [Berichte-Übersicht](./index.md) -- Siehe alle verfügbaren Berichte
+- [Roles & Permissions](../settings/roles-permissions) -- Verwalten Sie, wer auf was zugreifen kann
+- [Data Security](../settings/data-security) -- Verstehen Sie, wie Ihre Daten geschützt werden
+- [Reports Overview](./index.md) -- Sehen Sie alle verfügbaren Berichte
