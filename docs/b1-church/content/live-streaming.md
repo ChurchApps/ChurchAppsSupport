@@ -30,8 +30,7 @@ When no live stream is currently active, you may see offline content or informat
 
 The live stream page can include interactive tabs alongside the video, depending on what your church has configured. These may include:
 
-- **Chat** -- Send messages and interact with other viewers during the broadcast. Chat is typically enabled a few minutes before the service starts and remains available for a period after it ends.
-- **Prayer** -- Submit a prayer request during the service. A streaming host on your church's team can respond privately.
+- **Chat** -- Send messages and interact with other viewers during the broadcast. Chat is typically enabled a few minutes before the service starts and remains available for a period after it ends. You can chat without logging in -- just pick a display name when prompted.
 - **Additional tabs** -- Your church may add custom tabs with links to bulletins, sermon notes, [giving pages](../giving/making-donations.md), or other resources.
 
 Click on the tab icons or labels to switch between the available features while watching.

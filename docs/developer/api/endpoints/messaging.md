@@ -69,7 +69,7 @@ Base path: `/messaging/messages`
 | GET | `/:churchId/:id` | Public | — | Load a single message by ID |
 | POST | `/` | JWT | — | Save messages (batch). Sends real-time updates and triggers notifications |
 | POST | `/send` | Public | — | Send messages (batch, public). Sends real-time updates via WebSocket and triggers notifications |
-| POST | `/setCallout` | JWT | — | Broadcast a callout message to a conversation in real time |
+| POST | `/setCallout` | JWT | — | (legacy) Broadcast a callout message in real time. No active client; live stream chat no longer renders callouts |
 | DELETE | `/:churchId/:id` | JWT | — | Delete a message and broadcast the deletion in real time |
 
 ### Example: Send a Message
@@ -163,13 +163,14 @@ Extends standard CRUD. The base class provides POST `/` (create or update, no pe
 
 Base path: `/messaging/connections`
 
-Manages WebSocket/real-time connections for live streaming chat.
+Manages WebSocket/real-time connections for chat, group conversations, private messages, and live streaming. See [Real-time Architecture](../../realtime) for the end-to-end protocol.
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
 | GET | `/:churchId/:conversationId` | Public | — | Load all connections for a conversation |
-| POST | `/` | Public | — | Register connections (batch). Auto-numbers anonymous users and sends attendance/blocked IP updates |
+| POST | `/` | Public | — | Register connections (batch). Triggers an attendance broadcast on the conversation. Body items: `{ churchId, conversationId, socketId, displayName?, personId? }` |
 | POST | `/setName` | Public | — | Update the display name for a connection by socket ID. Body: `{ socketId, name }` |
+| DELETE | `/:churchId/:conversationId/:socketId` | Public | — | Drop a connection from a conversation. Triggers an attendance broadcast |
 | POST | `/tmpSendAlert` | Public | — | Send a notification alert to a person's connections. Body: `{ churchId, personId }` |
 
 ## Devices
@@ -312,11 +313,11 @@ Authorization: Bearer <token>
 
 Base path: `/messaging/blockedips`
 
-Manages IP blocking for live streaming chat conversations.
+(legacy) IP-blocking for live streaming chat. The B1App client no longer calls `POST /` — IP blocking was removed in the unified-delivery migration. The `/clear` route is still invoked server-to-server by `StreamingServiceController` when streaming services are saved.
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| POST | `/` | JWT | — | Save blocked IPs (batch). Broadcasts updated block list to the conversation |
+| POST | `/` | JWT | — | (legacy) Save blocked IPs (batch). No active client |
 | POST | `/clear` | JWT | — | Clear all blocked IPs for specific services. Body: `[{ serviceId, churchId }]` |
 
 ## Delivery Logs
@@ -334,6 +335,8 @@ Tracks delivery status for sent messages (SMS, push notifications, email).
 
 ## Related Pages
 
+- [Real-time Architecture](../../realtime) -- WebSocket protocol, room subscriptions, and the unified delivery framework
+- [Web Push Notifications](../../web-push) -- Browser push enrollment and delivery
 - [Membership Endpoints](./membership) -- People, groups, roles, and core identity
 - [Attendance Endpoints](./attendance) -- Service and visit tracking
 - [Authentication & Permissions](./authentication) -- Login flow, JWT, OAuth, permission model

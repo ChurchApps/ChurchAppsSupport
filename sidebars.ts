@@ -605,6 +605,8 @@ const sidebars: SidebarsConfig = {
             'developer/deployment/railway-template',
           ],
         },
+        'developer/realtime',
+        'developer/web-push',
         'developer/freeplay-content-provider',
       ],
     },

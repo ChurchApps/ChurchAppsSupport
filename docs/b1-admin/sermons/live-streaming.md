@@ -52,8 +52,8 @@ Click the **Settings** tab to customize the tabs and links that appear alongside
 ### Adding Tabs
 
 1. Click the **Add** button to add a new tab to your live stream page.
-2. Choose from pre-designed tabs (**Chat** or **Prayer**) or add a custom tab with an external URL.
-3. For pre-designed tabs, just give it a name in the **Tab Text** box and the setup is complete.
+2. Choose the **Chat** pre-designed tab or add a custom tab with an external URL.
+3. For the Chat tab, just give it a name in the **Tab Text** box and the setup is complete.
 4. For a linked tab, enter the tab name, choose an icon by clicking the icon button, and enter the URL.
 5. Your configured tabs will appear on the live streaming page for viewers to access additional resources and interactive features.
 
@@ -86,7 +86,7 @@ To change these, go to **Website** then **Appearance** and update your [Color Pa
 
 ## Adding Streaming Hosts
 
-To give team members host capabilities (chat moderation, prayer request responses):
+To give team members access to the host-only chat alongside the public chat:
 
 1. Go to **Settings** in the left sidebar and click **Roles**.
 2. Click the plus button and select **Add Custom Role**.
@@ -94,7 +94,7 @@ To give team members host capabilities (chat moderation, prayer request response
 4. Click the new role, then click **Add** in the Members section to add people.
 5. Scroll down to **Edit Permissions**, expand the **Content** section, and check **Host Chat**.
 
-When hosts log into the live stream page, they will have special capabilities including chat moderation and prayer request management.
+When hosts log into the live stream page, a private **Host Chat** tab appears alongside the public chat for staff-only conversation during the broadcast.
 
 :::info
 For more details on creating roles and managing permissions, see [Roles & Permissions](../settings/roles-permissions.md).
