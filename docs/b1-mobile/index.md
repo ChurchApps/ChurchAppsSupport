@@ -5,11 +5,11 @@ title: "B1 Mobile (Deprecated)"
 # B1 Mobile (Deprecated)
 
 :::danger Deprecated — use B1.church instead
-The native B1 Mobile app for iOS and Android has been **deprecated** and is no longer being developed. Its features are now delivered through the **B1.church Progressive Web App (PWA)** at `https://yourchurchname.b1.church/mobile`, which can be added to any iPhone or Android home screen and provides the same member portal experience without an App Store download.
+The native B1 Mobile app for iOS and Android has been **deprecated** and is no longer being developed. Its features are now delivered through the **B1.church Progressive Web App (PWA)** at `https://yourchurchname.b1.church`, which can be added to any iPhone or Android home screen and provides the same member portal experience without an App Store download.
 
 **If you are a church member:** see [Installing as an App (PWA)](../b1-church/getting-started/installing-pwa.md) to set up the replacement on your phone.
 
-**If you are a church administrator:** point your members to your church's PWA URL (`https://yourchurchname.b1.church/mobile`) instead of the App Store / Google Play listings.
+**If you are a church administrator:** point your members to your church's site (`https://yourchurchname.b1.church`) instead of the App Store / Google Play listings — they can install the PWA from any page.
 
 The pages below are kept for reference for churches still running the legacy native app.
 :::

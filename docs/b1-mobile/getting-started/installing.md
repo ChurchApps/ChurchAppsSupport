@@ -5,7 +5,7 @@ title: "Installing the App"
 # Installing the App
 
 :::danger B1 Mobile is deprecated — install the PWA instead
-The native B1 Mobile app is no longer being updated. We recommend installing the **B1.church Progressive Web App (PWA)** from your church's mobile URL (`https://yourchurchname.b1.church/mobile`) instead. The PWA can be added to your home screen on iOS or Android in seconds and replaces every feature of the native app.
+The native B1 Mobile app is no longer being updated. We recommend installing the **B1.church Progressive Web App (PWA)** from your church's site (`https://yourchurchname.b1.church`) instead — it can be installed from any page. The PWA can be added to your home screen on iOS or Android in seconds and replaces every feature of the native app.
 
 See [Installing as an App (PWA)](../../b1-church/getting-started/installing-pwa.md) for step-by-step instructions.
 :::

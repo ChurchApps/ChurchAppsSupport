@@ -5,7 +5,7 @@ title: "Getting Started"
 # Getting Started
 
 :::danger B1 Mobile is deprecated
-The native B1 Mobile app has been replaced by the [B1.church Progressive Web App (PWA)](../../b1-church/getting-started/installing-pwa.md). New users should install the PWA from `https://yourchurchname.b1.church/mobile` instead of downloading B1 Mobile from the App Store or Google Play.
+The native B1 Mobile app has been replaced by the [B1.church Progressive Web App (PWA)](../../b1-church/getting-started/installing-pwa.md). New users should install the PWA from any page on `https://yourchurchname.b1.church` instead of downloading B1 Mobile from the App Store or Google Play.
 :::
 
 <div class="article-intro">
