@@ -49,7 +49,11 @@ Be sure to check your spam or junk folder if you do not receive the registration
 
 ## Forgot Your Password
 
-If you have forgotten your password, tap **Forgot Password?** on the login screen. This opens a page in your browser where you can enter your email address and request a password reset link.
+If you have forgotten your password, tap **Forgot Password?** on the login screen and enter your email address. You will receive an email with a **6-digit verification code** that is valid for 15 minutes. Enter the code on the verification screen to sign in, then update your password from your [profile settings](../profile/editing-profile.md).
+
+:::warning
+After five incorrect code attempts the code is locked. If that happens, return to the Forgot Password screen and request a fresh code.
+:::
 
 ## Staying Logged In
 

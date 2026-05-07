@@ -43,8 +43,18 @@ After logging in, your name appears as a chip in the top-right corner. Click it 
 
 If you are a church administrator with the appropriate permissions, you will also see an **Admin Portal** option in your user menu. Clicking it takes you to B1 Admin where you can manage your church's settings, people, groups, and content.
 
+## Forgot Your Password
+
+If you cannot remember your password:
+
+1. Click **Forgot Password** on the login page.
+2. Enter the email address tied to your ChurchApps account and submit.
+3. Check your email for a message containing a **6-digit verification code**. The code is valid for 15 minutes.
+4. Enter the code on the verification screen to sign in.
+5. Once you are signed in, visit your profile to choose a new password.
+
 :::tip
-If you have forgotten your password, use the **Forgot Password** link on the login page to reset it. You will receive an email with instructions to create a new password.
+If the code does not arrive within a couple of minutes, check your spam folder. After five incorrect attempts the code is locked — request a new one from the Forgot Password page if that happens.
 :::
 
 ## Logging Out

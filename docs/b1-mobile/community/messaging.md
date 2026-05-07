@@ -43,6 +43,10 @@ If you need to correct something after sending a message, you can edit it. Tap o
 
 All of your active conversations appear in a list on the main messaging screen. The list shows the other person's name and avatar, making it easy to find the conversation you are looking for. Tap on any conversation to open it and continue where you left off.
 
+## Deleting a Conversation
+
+If you want to remove a conversation from your list, tap the trash icon on the right side of the conversation row and confirm. The conversation is removed from your view; the other person can still see their copy of the thread on their side. To continue talking with the same person again later, just start a new conversation.
+
 :::tip
 Use messaging to coordinate with fellow volunteers, follow up with someone you met at church, or just check in on a friend. It keeps your church communications in one convenient place.
 :::

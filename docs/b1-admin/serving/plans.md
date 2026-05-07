@@ -56,6 +56,19 @@ When you open a plan, you will see two tabs:
 Set up your teams in the ministry settings before creating plans. This way, you will have a ready pool of volunteers to assign from.
 :::
 
+## Associating Groups with a Plan Type
+
+Below the plan list on the plan type page, the **Groups** section lets you decide which groups can see the plans for this plan type from their member portal. This is a quick way to surface upcoming services to the right teams without giving them admin access.
+
+1. On the plan type page, scroll down to the **Groups** section.
+2. Click **Add Group** and pick a group from the dropdown.
+3. In the **Shows** column, choose whether members of that group should see **Past**, **Future**, or **Both** plans for this plan type.
+4. Repeat to associate additional groups, or click the trash icon to remove a group.
+
+:::info
+Only groups tagged as **Standard** appear in the picker. Members of an associated group automatically see this plan type's plans on the [Plans](/docs/b1-church/plans/) tab in the B1 member portal — limited to the past/future/both window you selected.
+:::
+
 ## Printing Plans
 
 You can print a plan for distribution to your team. Open the plan, Open the service order tab and use the **Print** option to generate a printable version that includes assignments and the service order. This is useful for handing out at rehearsals or posting in a common area.

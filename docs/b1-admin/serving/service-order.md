@@ -60,6 +60,22 @@ Drag and drop items to rearrange the order. The sequence shown on screen is the 
 The service order is specific to each plan. Changes you make here only affect the selected plan and will not alter other plans or your song library.
 :::
 
+## Including Items in Specific Service Times
+
+If your plan has more than one service time (for example, an 8 a.m. and 10 a.m. service), you can choose which services each item should appear in. This is useful when an announcement is only relevant to one service, or when a song is sung in one service but not another.
+
+1. Open a plan that has two or more service times defined on the **Times** tab.
+2. On the **Service Order** tab, click an item to edit it.
+3. Under **Include in Services**, you will see a checkbox for each service time, labeled with the time.
+4. Uncheck any service where the item should be skipped.
+5. Click **Save**.
+
+By default, every item is included in every service. Excluded service times are hidden when you print the plan filtered to that service, so each service receives a clean run sheet with only the relevant items.
+
+:::tip
+The **Include in Services** section only appears when the plan has more than one service time. If you only see one service, edit the plan's **Times** tab to add additional services first.
+:::
+
 ## Sharing the Service Order
 
 Once your service order is complete, you can print the full plan (including the service order) from the plan detail page. This gives your team a complete rundown of the service.

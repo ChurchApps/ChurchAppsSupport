@@ -34,6 +34,15 @@ Notifications can cover a range of activity, including:
 
 Each notification includes a brief summary of the update. Tap on any notification to go directly to the relevant content -- for example, tapping a message notification opens the conversation, and tapping a serving notification takes you to the plan.
 
+## Removing Notifications
+
+You can clear notifications once you have read them so your list stays focused on what is new.
+
+- **Delete a single notification** -- Tap the trash icon on the right side of any notification row to remove just that item.
+- **Clear all notifications** -- Tap **Clear All** at the top of the notifications list to remove every notification at once. You will be asked to confirm before everything is cleared.
+
+Removing a notification only affects your view; it does not change the underlying activity (the message, plan, or group post is still there). If you have notifications enabled on multiple devices, clearing on one device will sync across the others.
+
 ## Push Notifications
 
 B1 Mobile sends push notifications to your device so you receive updates even when the app is not open. To receive push notifications, make sure you have allowed notifications for B1 Mobile in your device settings.
