@@ -1,52 +1,61 @@
----
-title: "Notificacoes"
+﻿---
+title: "Notificações"
 ---
 
-# Notificacoes
+# Notificações
 
 <div class="article-intro">
 
-B1 Mobile usa notificacoes push para mante-lo informado sobre o que esta acontecendo na sua igreja. Em vez de ter que abrir o aplicativo para verificar atualizacoes, informacoes importantes chegam ate voce automaticamente.
+B1 Mobile usa notificações push para mantê-lo informado sobre o que está acontecendo em sua igreja. Em vez de ter que abrir o aplicativo para verificar atualizações, informações importantes vêm até você automaticamente.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comecar</h4>
+<h4>Antes de Começar</h4>
 
-- [Instale o B1 Mobile](../getting-started/installing) e [faca login](../getting-started/logging-in) na sua conta
-- Permita notificacoes para o B1 Mobile nas configuracoes do dispositivo
+- [Instale B1 Mobile](../getting-started/installing) e [faça login](../getting-started/logging-in) em sua conta
+- Permita notificações para B1 Mobile nas configurações do seu dispositivo
 
 </div>
 
-## Sobre o Que Voce Sera Notificado
+## Sobre o Que Você Será Notificado
 
-As notificacoes podem cobrir uma variedade de atividades, incluindo:
+As notificações podem cobrir uma série de atividades, incluindo:
 
-- **Mensagens** -- Quando alguem envia uma [mensagem privada](./messaging).
-- **Atividade dos grupos** -- Atualizacoes, publicacoes e conversas dos [grupos](../groups/) aos quais voce pertence.
-- **Atribuicoes de servico** -- Quando voce e atribuido a um [plano](../serving/viewing-plans.md) ou quando o status da sua atribuicao muda.
-- **Outras atualizacoes** -- Anuncios gerais e atividades relevantes para voce.
+- **Mensagens** -- Quando alguém envia uma [mensagem privada](./messaging).
+- **Atividade de grupo** -- Atualizações, postagens e conversas dos [grupos](../groups/) aos quais você pertence.
+- **Atribuições de serviço** -- Quando você é atribuído a um [plano](../serving/viewing-plans.md) ou quando seu status de atribuição muda.
+- **Outras atualizações** -- Anúncios gerais e atividades relevantes para você.
 
-## Visualizando Suas Notificacoes
+## Visualizando Suas Notificações
 
-1. Toque no **icone de sino** no canto superior direito do aplicativo, ou toque na opcao **Notificacoes** na navegacao.
-2. A tela de notificacoes mostra todas as suas notificacoes recentes em uma visualizacao por abas, organizadas para que voce possa encontrar rapidamente o que procura.
+1. Toque no **ícone de sino** no canto superior direito do aplicativo, ou toque na opção **Notifications** na navegação.
+2. A tela de notificações mostra todas as suas notificações recentes em uma visualização com abas, organizada para que você possa encontrar rapidamente o que está procurando.
 
-Cada notificacao inclui um breve resumo da atualizacao. Toque em qualquer notificacao para ir diretamente ao conteudo relevante -- por exemplo, tocar em uma notificacao de mensagem abre a conversa, e tocar em uma notificacao de servico leva voce ao plano.
+Cada notificação inclui um breve resumo da atualização. Toque em qualquer notificação para ir diretamente para o conteúdo relevante -- por exemplo, tocar em uma notificação de mensagem abre a conversa, e tocar em uma notificação de serviço leva você ao plano.
 
-## Notificacoes Push
+## Removendo Notificações
 
-B1 Mobile envia notificacoes push para seu dispositivo para que voce receba atualizacoes mesmo quando o aplicativo nao esta aberto. Para receber notificacoes push, certifique-se de ter permitido notificacoes para o B1 Mobile nas configuracoes do dispositivo.
+Você pode limpar as notificações depois de lê-las para manter sua lista focada no que é novo.
 
-### Ativando Notificacoes Push
+- **Excluir uma única notificação** -- Toque no ícone de lixo no lado direito de qualquer linha de notificação para remover apenas esse item.
+- **Limpar todas as notificações** -- Toque em **Clear All** no topo da lista de notificações para remover todas as notificações de uma vez. Você será solicitado a confirmar antes de tudo ser limpo.
 
-- **iOS** -- Va em **Ajustes** > **Notificacoes** > **B1 Mobile** e ative **Permitir Notificacoes**.
-- **Android** -- Va em **Configuracoes** > **Aplicativos** > **B1 Mobile** > **Notificacoes** e certifique-se de que as notificacoes estao ativadas.
+Remover uma notificação afeta apenas sua visualização; não altera a atividade subjacente (a mensagem, plano ou postagem de grupo ainda está lá). Se você tiver notificações ativadas em vários dispositivos, limpar em um dispositivo será sincronizado com os outros.
+
+## Notificações Push
+
+B1 Mobile envia notificações push ao seu dispositivo para que você receba atualizações mesmo quando o aplicativo não está aberto. Para receber notificações push, certifique-se de ter permitido notificações para B1 Mobile nas configurações do seu dispositivo.
+
+### Ativando Notificações Push
+
+- **iOS** -- Vá para **Settings** > **Notifications** > **B1 Mobile** e alterne **Allow Notifications** para ligado.
+- **Android** -- Vá para **Settings** > **Apps** > **B1 Mobile** > **Notifications** e certifique-se de que as notificações estejam ativadas.
 
 :::warning
-Se voce nao esta recebendo notificacoes, verifique as configuracoes do dispositivo para garantir que estao ativadas. Confirme tambem que voce esta conectado ao aplicativo, pois as notificacoes estao vinculadas a sua conta.
+Se você não estiver recebendo notificações, verifique as configurações do seu dispositivo para certificar-se de que estão ativadas. Também confirme que você está conectado ao aplicativo, pois as notificações estão vinculadas à sua conta.
 :::
 
 :::tip
-Voce pode gerenciar preferencias de notificacao no nivel do dispositivo. Se achar as notificacoes muito frequentes, ajuste as configuracoes do dispositivo para controlar como e quando os alertas aparecem.
+Você pode gerenciar as preferências de notificação no nível do dispositivo. Se achar as notificações muito frequentes, ajuste as configurações do seu dispositivo para controlar como e quando os alertas aparecem.
 :::

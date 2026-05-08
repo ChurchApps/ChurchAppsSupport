@@ -1,4 +1,4 @@
----
+﻿---
 title: "Configuration des dons en ligne"
 ---
 
@@ -6,70 +6,84 @@ title: "Configuration des dons en ligne"
 
 <div class="article-intro">
 
-B1 Admin s'intègre avec **Stripe** et **PayPal** afin que vos membres puissent donner en ligne via votre site B1.church. Une fois configurés, les dons en ligne apparaissent automatiquement dans vos registres de dons aux côtés des dons saisis manuellement, gardant tout dans un seul système.
+B1 Admin s'intègre à **Stripe** et **PayPal** pour permettre à vos membres de faire des dons en ligne via votre site B1.church. Une fois configuré, les dons en ligne apparaissent automatiquement dans vos registres de dons aux côtés des dons entrés manuellement, en gardant tout dans un seul système.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Configurez vos [fonds de dons](funds.md) afin que les donateurs puissent désigner leurs dons
+- Configurez vos [fonds de dons](funds.md) pour que les donateurs puissent désigner leurs dons
 - Créez un compte Stripe sur [stripe.com](https://stripe.com) et activez-le (sortez-le du mode test)
-- Ayez vos identifiants de connexion B1 Admin à portée de main
+- Préparez vos identifiants de connexion à B1 Admin
 
 </div>
 
-## Configurer Stripe
+## Configuration de Stripe
 
-1. Créez un compte sur [stripe.com](https://stripe.com) si vous n'en avez pas encore. Assurez-vous d'**activer votre compte** et de le sortir du mode test.
-2. Dans Stripe, allez dans **Développeurs > Clés API**.
-3. Copiez votre **Clé publiable**.
+1. Créez un compte sur [stripe.com](https://stripe.com) si vous n'en avez pas déjà un. Assurez-vous **d'activer votre compte** et de le sortir du mode test.
+2. Dans Stripe, allez à **Developers > API Keys**.
+3. Copiez votre **Clé publique (Publishable Key)**.
 4. Connectez-vous à [B1 Admin](https://admin.b1.church/).
-5. Cliquez sur **Église** dans la navigation supérieure, puis cliquez sur **Modifier les paramètres de l'église**.
-6. Cliquez sur l'icône de modification à côté de **Paramètres de l'église**.
-7. Faites défiler jusqu'à la section **Dons**.
-8. Définissez le **Fournisseur** sur **Stripe**.
-9. Collez votre Clé publiable dans le champ **Clé publique**.
-10. Retournez dans Stripe et révélez votre **Clé secrète** (vous ne pouvez la voir qu'une seule fois, alors conservez une copie de sauvegarde).
-11. Collez la Clé secrète dans le champ **Clé secrète** et cliquez sur **Enregistrer**.
+5. Cliquez sur **Church** dans la navigation supérieure, puis cliquez sur **Edit Church Settings**.
+6. Cliquez sur l'icône de modification à côté de **Church Settings**.
+7. Faites défiler jusqu'à la section **Giving**.
+8. Définissez le **Provider** sur **Stripe**.
+9. Collez votre Clé publique dans le champ **Public Key**.
+10. Retournez à Stripe et révélez votre **Secret Key** (vous ne pouvez le voir qu'une seule fois, alors enregistrez une sauvegarde).
+11. Collez la Secret Key dans le champ **Secret Key** et cliquez sur **Save**.
 
 :::warning
-Votre Clé secrète Stripe n'est affichée qu'une seule fois. Copiez-la dans un emplacement sécurisé avant de quitter le tableau de bord Stripe. Si vous la perdez, vous devrez générer une nouvelle clé.
+Votre Stripe Secret Key n'est affichée qu'une seule fois. Copiez-la dans un endroit sûr avant de quitter le tableau de bord Stripe. Si vous la perdez, vous devrez générer une nouvelle clé.
 :::
 
-## Ajouter une page de dons à votre site B1.church
+## Choix de votre devise
+
+Après avoir sélectionné Stripe comme fournisseur, une liste déroulante **Currency** apparaît à côté de vos clés API. Choisissez la devise qui correspond à la devise de règlement de votre compte Stripe pour que les dons soient facturés correctement.
+
+Les devises prises en charge incluent USD, EUR, GBP, CAD, AUD, INR, JPY, SGD, HKD, SEK, NOK, DKK, CHF, MXN et BRL. Vous pouvez confirmer ou modifier la devise par défaut de votre compte dans votre [Tableau de bord Stripe](https://dashboard.stripe.com/settings/currencies).
+
+:::info
+La devise que vous sélectionnez ici est utilisée pour les dons ponctuels, les abonnements récurrents, les calculs de frais et les rapports de dons. Si vous changez de devise ultérieurement, seuls les nouveaux dons et abonnements utiliseront la nouvelle devise — les dons récurrents existants restent dans la devise avec laquelle ils ont été créés.
+:::
+
+:::warning
+Assurez-vous que votre compte Stripe est configuré pour accepter la devise que vous choisissez. Si votre compte Stripe ne supporte pas la devise sélectionnée, les dons échoueront au moment du paiement.
+:::
+
+## Ajout d'une page de dons à votre site B1.church
 
 1. Allez sur [b1.church](https://b1.church/) et connectez-vous.
-2. Cliquez sur l'icône **Paramètres**.
-3. Cliquez sur **Ajouter un onglet**.
-4. Choisissez **Don** comme type.
-5. Saisissez un nom pour l'onglet (par exemple, « Donner ») et cliquez sur **Enregistrer**.
-6. Facultativement, changez l'icône de l'onglet -- tapez « Giv » dans la recherche d'icônes pour une icône liée aux dons.
+2. Cliquez sur l'icône **Settings**.
+3. Cliquez sur **Add Tab**.
+4. Choisissez **Donation** comme type.
+5. Entrez un nom pour l'onglet (par exemple, "Give") et cliquez sur **Save**.
+6. Optionnellement, changez l'icône de l'onglet -- tapez "Giv" dans la recherche d'icône pour une icône liée au don.
 
-Votre page de dons est maintenant en ligne. Les membres peuvent la visiter à l'adresse `votresousdomaine.b1.church/donate`.
+Votre page de don est maintenant en ligne. Les membres peuvent la visiter à `yoursubdomain.b1.church/donate`.
 
-## Partager votre lien de don
+## Partage de votre lien de dons
 
-Pour trouver votre URL de don, allez dans **B1 Admin** et cliquez sur l'icône **Paramètres** pour voir votre sous-domaine. Votre lien de don suit le format :
+Pour trouver votre URL de dons, allez à **B1 Admin** et cliquez sur l'icône **Settings** pour voir votre sous-domaine. Votre lien de don suit le format :
 
-`https://votresousdomaine.b1.church/donate`
+`https://yoursubdomain.b1.church/donate`
 
-Partagez ce lien sur votre site web, dans vos e-mails ou dans votre bulletin afin que les membres sachent où donner en ligne.
+Partagez ce lien sur votre site Web, dans les e-mails ou dans votre bulletin pour que les membres sachent où faire des dons en ligne.
 
 ## Notifications de dons
 
-Stripe envoie une notification par e-mail chaque fois qu'un don est reçu. Pour changer l'adresse e-mail de notification, allez dans le tableau de bord Stripe, cliquez sur votre profil en haut à droite, choisissez **Profil** et mettez à jour votre adresse e-mail.
+Stripe envoie une notification par e-mail chaque fois qu'un don est reçu. Pour modifier l'adresse e-mail de notification, allez au tableau de bord Stripe, cliquez sur votre profil en haut à droite, choisissez **Profile**, et mettez à jour votre adresse e-mail.
 
 ## Options de frais de traitement
 
-Vous pouvez configurer votre page de dons pour permettre aux donateurs de couvrir optionnellement les frais de traitement afin que votre église reçoive le montant total du don. Ce paramètre est géré dans les paramètres de votre église dans B1 Admin.
+Vous pouvez configurer votre page de dons pour permettre aux donateurs de couvrir optionnellement les frais de traitement afin que votre église reçoive le montant complet du don. Ce paramètre est géré dans les paramètres de votre église au sein de B1 Admin.
 
 :::tip
-Après la configuration, effectuez un petit don test pour confirmer que tout fonctionne avant d'annoncer les dons en ligne à votre assemblée.
+Après la configuration, effectuez un petit don de test pour confirmer que tout fonctionne avant d'annoncer les dons en ligne à votre congrégation.
 :::
 
-## Prochaines étapes
+## Étapes suivantes
 
-- Utilisez l'[Import Stripe](stripe-import.md) pour importer les transactions en ligne dans B1 Admin si elles ne se synchronisent pas automatiquement
-- Vérifiez vos [Rapports de dons](donation-reports.md) pour confirmer que les dons en ligne apparaissent correctement
-- Générez des [Reçus fiscaux](giving-statements.md) incluant à la fois les dons en ligne et hors ligne
+- Utilisez [Stripe Import](stripe-import.md) pour extraire les transactions en ligne dans B1 Admin s'ils ne se synchronisent pas automatiquement
+- Vérifiez vos [Rapports de dons](donation-reports.md) pour vérifier que les dons en ligne apparaissent correctement
+- Générez des [Relevés de dons](giving-statements.md) qui incluent les dons en ligne et hors ligne

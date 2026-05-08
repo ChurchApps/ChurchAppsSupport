@@ -1,4 +1,4 @@
----
+﻿---
 title: "Configurações do Aplicativo Móvel"
 ---
 
@@ -6,58 +6,62 @@ title: "Configurações do Aplicativo Móvel"
 
 <div class="article-intro">
 
-A página de Configurações do Aplicativo Móvel permite que você configure as abas de navegação que aparecem no aplicativo B1 Mobile para os membros da sua igreja. Você controla quais abas são visíveis, para onde elas direcionam e como são exibidas.
+A página de Configurações do Aplicativo Móvel permite que você configure as abas de navegação que aparecem na **experiência móvel B1.church (PWA)** para seus membros da igreja. Você controla quais abas estão visíveis, para onde se vinculam e como são exibidas.
 
 </div>
+
+:::info O aplicativo nativo B1 Mobile é descontinuado
+As abas configuradas aqui são entregues através do [Aplicativo Web Progressivo B1.church (PWA)](/docs/b1-church/getting-started/installing-pwa), que substituiu o aplicativo nativo B1 Mobile. Os membros podem instalar o PWA na tela inicial a partir de qualquer página em `https://yourchurchname.b1.church` em vez de baixar o aplicativo legado da App Store ou Google Play.
+:::
 
 <div class="prereqs">
-<h4>Antes de começar</h4>
+<h4>Antes de Começar</h4>
 
-- Você precisa da permissão "Edit Church Settings". Veja [Funções e Permissões](./roles-permissions.md) se você não tem acesso.
-- Configure suas [Configurações da Igreja](./church-settings.md) primeiro, incluindo o nome da sua igreja e identidade visual
+- Você precisa da permissão "Edit Church Settings". Consulte [Roles & Permissions](./roles-permissions.md) se você não tiver acesso.
+- Configure suas [Configurações de Igreja](./church-settings.md) primeiro, incluindo o nome da sua igreja e branding
 
 </div>
 
-## Acessando as configurações do aplicativo móvel
+## Acessando as Configurações do Aplicativo Móvel
 
-1. Navegue até a página **Configurações** na barra lateral esquerda.
-2. Clique no botão **Aplicativos Móveis** no cabeçalho.
-3. A página de Configurações do Aplicativo Móvel exibe suas abas atuais do aplicativo.
+1. Navegue até a página **Settings** na barra lateral esquerda.
+2. Clique no botão **Mobile Apps** no cabeçalho.
+3. A página de Configurações do Aplicativo Móvel exibe suas abas de aplicativo atuais.
 
-## Adicionando uma nova aba
+## Adicionando uma Nova Aba
 
-1. Clique no botão **Adicionar Aba** no topo da página.
+1. Clique no botão **Add Tab** no topo da página.
 2. Preencha os detalhes da aba:
-   - **Nome** -- O rótulo que aparece na aba (por exemplo, "Sermões" ou "Doar").
-   - **Ícone** -- Clique no seletor de ícones para escolher um ícone para sua aba. Você também pode fazer upload de uma imagem personalizada.
-   - **Tipo de Aba** -- Selecione entre opções como Bible, Live Stream, Donation, Website e mais.
-   - **URL** -- Insira o endereço web para o qual a aba deve direcionar.
-   - **Visibilidade** -- Controle quem pode ver esta aba (todos, apenas membros, etc.).
-3. Clique em **Salvar Aba** para adicioná-la ao seu aplicativo.
+   - **Name** -- O rótulo que aparece na aba (por exemplo, "Sermons" ou "Give").
+   - **Icon** -- Clique no seletor de ícone para escolher um ícone para sua aba. Você também pode enviar uma imagem personalizada.
+   - **Tab Type** -- Selecione entre opções como Bible, Live Stream, Donation, Website e muito mais.
+   - **URL** -- Digite o endereço web para o qual a aba deve se vincular.
+   - **Visibility** -- Controle quem pode ver essa aba (todos, apenas membros, etc.).
+3. Clique em **Save Tab** para adicioná-la ao seu aplicativo.
 
-## Editando uma aba existente
+## Editando uma Aba Existente
 
-1. Clique em qualquer aba existente na lista de **Abas do Aplicativo**.
-2. Atualize o nome, ícone, URL, tipo ou configurações de visibilidade da aba.
-3. Clique em **Salvar Aba** para aplicar suas alterações.
+1. Clique em qualquer aba existente na lista **App Tabs**.
+2. Atualize o nome da aba, ícone, URL, tipo ou configurações de visibilidade.
+3. Clique em **Save Tab** para aplicar suas alterações.
 
-## Reordenando abas
+## Reordenando Abas
 
 Você pode alterar a ordem em que as abas aparecem no aplicativo móvel. Arraste e solte as abas na lista para reorganizá-las. A ordem mostrada nesta página corresponde à ordem que seus membros verão no aplicativo.
 
 :::info
-Algumas abas podem aparecer automaticamente quando certas condições são atendidas -- por exemplo, uma aba de Live Stream pode aparecer quando uma transmissão está ativa. Abas adicionadas manualmente dão a você controle total sobre o que seus membros veem o tempo todo.
+Algumas abas podem aparecer automaticamente quando certas condições forem atendidas -- por exemplo, uma aba de Live Stream pode aparecer quando um stream está ativo. As abas adicionadas manualmente oferecem controle total sobre o que seus membros veem o tempo todo.
 :::
 
 :::tip
-Mantenha a quantidade de abas gerenciável. De três a cinco abas funciona bem para a maioria das igrejas. Muitas abas podem tornar a navegação confusa para seus membros.
+Mantenha a contagem de abas administrável. Três a cinco abas funcionam bem para a maioria das igrejas. Muitas abas podem tornar a navegação confusa para seus membros.
 :::
 
-## Onde essas abas aparecem
+## Onde Essas Abas Aparecem
 
-As abas que você configura aqui são exibidas no **aplicativo B1 Mobile** (aplicativo B1.church) que os membros da sua igreja baixam na App Store ou Google Play. As alterações feitas nesta página são refletidas no aplicativo na próxima vez que um membro o abrir.
+As abas que você configura aqui são exibidas no **PWA B1.church** que seus membros instalam a partir de qualquer página em `https://yourchurchname.b1.church`. As alterações que você fizer nesta página serão refletidas na próxima vez que um membro abrir o aplicativo. (As abas também são renderizadas pelo [aplicativo nativo B1 Mobile](/docs/b1-mobile/) legado para qualquer membro que ainda esteja executando, mas esse aplicativo é descontinuado e não está mais sendo atualizado.)
 
-## Próximos passos
+## Próximos Passos
 
-- [Configurações da Igreja](./church-settings.md) -- Configure as informações e identidade visual da sua igreja
-- [Funções e Permissões](./roles-permissions.md) -- Gerencie o acesso para sua equipe
+- [Church Settings](./church-settings.md) -- Configure suas informações de igreja e branding
+- [Roles & Permissions](./roles-permissions.md) -- Gerencie o acesso para sua equipe

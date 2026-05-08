@@ -1,52 +1,62 @@
 ---
-title: "Anmelden"
+title: "Anmeldung"
 ---
 
-# Anmelden
+# Anmeldung
 
 <div class="article-intro">
 
-Durch die Anmeldung bei B1.church erhalten Sie Zugang zum Mitgliederportal, in dem Sie Ihre Chronik einsehen, Gruppen verwalten, online spenden und alle Werkzeuge nutzen können, die Ihre Gemeinde eingerichtet hat. Dieser Artikel beschreibt, wie Sie sich anmelden, Ihr Benutzermenü nutzen und sich abmelden.
+Die Anmeldung bei B1.church gibt Ihnen Zugriff auf das Mitglieder-Portal, in dem Sie Ihre Timeline anzeigen, Gruppen verwalten, online spenden und alle Tools nutzen können, die Ihre Kirche eingerichtet hat. Dieser Artikel behandelt die Anmeldung, die Navigation in Ihrem Benutzermenü und die Abmeldung.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor Sie Beginnen</h4>
 
 - Sie benötigen ein ChurchApps-Konto. Siehe [Erste Schritte](../getting-started/), um eines zu erstellen.
-- Sie benötigen die B1.church-URL Ihrer Gemeinde (zum Beispiel `https://ihrgemeidename.b1.church`).
+- Sie benötigen die B1.church-URL Ihrer Kirche (z. B. `https://yourchurchname.b1.church`).
 
 </div>
 
-## So melden Sie sich an
+## Wie Sie Sich Anmelden
 
-1. Rufen Sie die B1.church-URL Ihrer Gemeinde auf (zum Beispiel `https://ihrgemeidename.b1.church`).
-2. Klicken Sie oben rechts in der Kopfzeile auf die Schaltfläche **Login**.
+1. Gehen Sie zur B1.church-URL Ihrer Kirche (z. B. `https://yourchurchname.b1.church`).
+2. Klicken Sie auf die Schaltfläche **Login** in der oberen rechten Ecke der Kopfzeile.
 3. Geben Sie Ihre **E-Mail-Adresse** und Ihr **Passwort** ein.
-4. Klicken Sie auf **Anmelden**.
+4. Klicken Sie auf **Sign In**.
 
-Nach der Anmeldung werden Sie auf die Seite zurückgeleitet, auf der Sie sich vor dem Klick auf Login befanden. Wenn Sie direkt eine Seite des Mitgliederportals aufgerufen haben, während Sie abgemeldet waren, werden Sie nach der Anmeldung automatisch dorthin zurückgeleitet.
+Nach der Anmeldung werden Sie auf die Seite zurückgebracht, auf der Sie sich befunden haben, bevor Sie auf die Anmeldung geklickt haben. Wenn Sie direkt zu einer Mitglieder-Portal-Seite navigiert haben, während Sie abgemeldet waren, werden Sie nach der Anmeldung automatisch auf diese Seite zurückgebracht.
 
-## Zugriff auf das Mitgliederportal
+## Zugriff auf das Mitglieder-Portal
 
-Sobald Sie angemeldet sind, können Sie auf das Mitgliederportal zugreifen, indem Sie oben rechts auf der Seite auf Ihren **Namen** klicken und im Menü **Mitgliederportal** auswählen. Das Mitgliederportal ist der Ort, an dem sich alle Ihre persönlichen Gemeinde-Werkzeuge befinden, einschließlich Ihrer [Chronik](../community/timeline.md), [Gruppen](../groups/), [Spenden](../giving/) und mehr.
+Nachdem Sie angemeldet sind, können Sie auf das Mitglieder-Portal zugreifen, indem Sie auf Ihren **Namen** in der oberen rechten Ecke der Seite klicken und **Member Portal** aus dem Menü auswählen. Das Mitglieder-Portal ist der Ort, an dem sich alle Ihre persönlichen Kirchen-Tools befinden, einschließlich Ihrer [Timeline](../community/timeline.md), [Gruppen](../groups/), [Spenden](../giving/) und mehr.
 
 ## Ihr Benutzermenü
 
-Nach der Anmeldung erscheint Ihr Name als Chip oben rechts. Klicken Sie darauf, um ein Menü mit folgenden Optionen zu öffnen:
+Nach der Anmeldung wird Ihr Name als Chip in der oberen rechten Ecke angezeigt. Klicken Sie darauf, um ein Menü mit den folgenden Optionen zu öffnen:
 
-- **Mitgliederportal** -- Zum persönlichen Dashboard des Mitgliederportals wechseln.
-- **Profil bearbeiten** -- Kontoeinstellungen aktualisieren oder Ihr Gemeindeprofil bearbeiten.
-- **Abmelden** -- Von Ihrem Konto abmelden.
+- **Member Portal** – Gehen Sie zu Ihrem persönlichen Mitglieder-Portal-Dashboard.
+- **Edit Profile** – Aktualisieren Sie Ihre Kontoeinstellungen oder bearbeiten Sie Ihr Kirchenprofil.
+- **Logout** – Melden Sie sich von Ihrem Konto ab.
 
-## Admin-Zugang
+## Admin-Zugriff
 
-Wenn Sie Gemeindeadministrator mit den entsprechenden Berechtigungen sind, sehen Sie in Ihrem Benutzermenü zusätzlich die Option **Admin-Portal**. Ein Klick darauf führt Sie zum B1 Admin, wo Sie die Einstellungen, Personen, Gruppen und Inhalte Ihrer Gemeinde verwalten können.
+Wenn Sie ein Kirchen-Administrator mit den entsprechenden Berechtigungen sind, sehen Sie auch eine Option **Admin Portal** in Ihrem Benutzermenü. Wenn Sie darauf klicken, gelangen Sie zu B1 Admin, wo Sie die Einstellungen, Personen, Gruppen und Inhalte Ihrer Kirche verwalten können.
+
+## Vergessenes Passwort
+
+Wenn Sie Ihr Passwort vergessen haben:
+
+1. Klicken Sie auf der Anmelde-Seite auf **Forgot Password**.
+2. Geben Sie die E-Mail-Adresse ein, die mit Ihrem ChurchApps-Konto verknüpft ist, und machen Sie eine Eingabe.
+3. Überprüfen Sie Ihre E-Mail auf eine Nachricht mit einem **6-stelligen Verifikationscode**. Der Code ist 15 Minuten lang gültig.
+4. Geben Sie den Code auf dem Verifikations-Bildschirm ein, um sich anzumelden.
+5. Nachdem Sie angemeldet sind, besuchen Sie Ihr Profil, um ein neues Passwort zu wählen.
 
 :::tip
-Wenn Sie Ihr Passwort vergessen haben, verwenden Sie den Link **Passwort vergessen** auf der Anmeldeseite, um es zurückzusetzen. Sie erhalten eine E-Mail mit Anweisungen zur Erstellung eines neuen Passworts.
+Wenn der Code nicht innerhalb weniger Minuten eintrifft, überprüfen Sie Ihren Spam-Ordner. Nach fünf fehlgeschlagenen Versuchen wird der Code gesperrt – fordern Sie einen neuen Code von der Seite „Vergessenes Passwort" an, wenn dies passiert.
 :::
 
-## Abmelden
+## Abmeldung
 
-Um sich abzumelden, klicken Sie oben rechts auf Ihren **Namen** und wählen Sie **Abmelden**. Sie werden abgemeldet und zur öffentlichen Seite zurückgeleitet.
+Um sich abzumelden, klicken Sie auf Ihren **Namen** in der oberen rechten Ecke und wählen Sie **Logout**. Sie werden abgemeldet und zur öffentlichen Website zurückgebracht.

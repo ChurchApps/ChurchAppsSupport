@@ -1,75 +1,89 @@
 ---
-title: "Configuraci\u00f3n de ofrendas en l\u00ednea"
+title: "Configuración de Donaciones en Línea"
 ---
 
-# Configuraci\u00f3n de ofrendas en l\u00ednea
+# Configuración de Donaciones en Línea
 
 <div class="article-intro">
 
-B1 Admin se integra con **Stripe** y **PayPal** para que sus miembros puedan dar en l\u00ednea a trav\u00e9s de su sitio B1.church. Una vez configuradas, las donaciones en l\u00ednea aparecen autom\u00e1ticamente en sus registros de donaciones junto con las ofrendas ingresadas manualmente, manteniendo todo en un solo sistema.
+B1 Admin se integra con **Stripe** y **PayPal** para que tus miembros puedan donar en línea a través de tu sitio B1.church. Una vez configurado, las donaciones en línea aparecen automáticamente en tus registros de donaciones junto con los regalos ingresados manualmente, manteniendo todo en un sistema.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de comenzar</h4>
+<h4>Antes de Empezar</h4>
 
-- Configure sus [fondos de donaci\u00f3n](funds.md) para que los donantes puedan designar sus ofrendas
-- Cree una cuenta de Stripe en [stripe.com](https://stripe.com) y act\u00edvela (saque del modo de prueba)
-- Tenga listas sus credenciales de inicio de sesi\u00f3n de B1 Admin
+- Configura tus [fondos de donación](funds.md) para que los donantes puedan designar sus regalos
+- Crea una cuenta Stripe en [stripe.com](https://stripe.com) y actívala (sácala del modo de prueba)
+- Ten tus credenciales de inicio de sesión de B1 Admin listas
 
 </div>
 
 ## Configurar Stripe
 
-1. Cree una cuenta en [stripe.com](https://stripe.com) si a\u00fan no tiene una. Aseg\u00farese de **activar su cuenta** y sacarla del modo de prueba.
-2. En Stripe, vaya a **Desarrolladores > Claves API**.
-3. Copie su **Clave publicable**.
-4. Inicie sesi\u00f3n en [B1 Admin](https://admin.b1.church/).
-5. Haga clic en **Iglesia** en la navegaci\u00f3n superior, luego haga clic en **Editar configuraci\u00f3n de la iglesia**.
-6. Haga clic en el icono de edici\u00f3n junto a **Configuraci\u00f3n de la iglesia**.
-7. Despl\u00e1cese hacia abajo hasta la secci\u00f3n de **Ofrendas**.
-8. Establezca el **Proveedor** en **Stripe**.
-9. Pegue su Clave publicable en el campo de **Clave p\u00fablica**.
-10. Regrese a Stripe y revele su **Clave secreta** (solo puede verla una vez, as\u00ed que guarde una copia de respaldo).
-11. Pegue la Clave secreta en el campo de **Clave secreta** y haga clic en **Guardar**.
+1. Crea una cuenta en [stripe.com](https://stripe.com) si no tienes una. Asegúrate de **activar tu cuenta** y sacarla del modo de prueba.
+2. En Stripe, ve a **Developers > API Keys**.
+3. Copia tu **Clave Publicable**.
+4. Inicia sesión en [B1 Admin](https://admin.b1.church/).
+5. Haz clic en **Church** en la navegación superior, luego haz clic en **Edit Church Settings**.
+6. Haz clic en el icono de editar junto a **Church Settings**.
+7. Desplázate hacia abajo hasta la sección **Giving**.
+8. Establece el **Provider** en **Stripe**.
+9. Pega tu Clave Publicable en el campo **Public Key**.
+10. Vuelve a Stripe y revela tu **Clave Secreta** (solo puedes verla una vez, así que guarda una copia de seguridad).
+11. Pega la Clave Secreta en el campo **Secret Key** y haz clic en **Save**.
 
 :::warning
-Su Clave secreta de Stripe solo se muestra una vez. C\u00f3piela en una ubicaci\u00f3n segura antes de navegar fuera del panel de Stripe. Si la pierde, necesitar\u00e1 generar una nueva clave.
+Tu Clave Secreta de Stripe solo se muestra una vez. Cópiala en una ubicación segura antes de navegar fuera del panel de Stripe. Si la pierdes, necesitarás generar una nueva clave.
 :::
 
-## Agregar una p\u00e1gina de donaciones a su sitio B1.church
+## Elegir Tu Moneda
 
-1. Vaya a [b1.church](https://b1.church/) e inicie sesi\u00f3n.
-2. Haga clic en el icono de **Configuraci\u00f3n**.
-3. Haga clic en **Agregar pesta\u00f1a**.
-4. Elija **Donaci\u00f3n** como el tipo.
-5. Ingrese un nombre para la pesta\u00f1a (por ejemplo, "Ofrendar") y haga clic en **Guardar**.
-6. Opcionalmente, cambie el icono de la pesta\u00f1a -- escriba "Giv" en la b\u00fasqueda de iconos para encontrar un icono relacionado con ofrendas.
+Después de seleccionar Stripe como tu proveedor, aparece un menú desplegable de **Currency** junto a tus claves API. Elige la moneda que coincida con la moneda de liquidación de tu cuenta Stripe para que las donaciones se cobren correctamente.
 
-Su p\u00e1gina de donaciones ya est\u00e1 activa. Los miembros pueden visitarla en `susubdominio.b1.church/donate`.
+Las monedas soportadas incluyen USD, EUR, GBP, CAD, AUD, INR, JPY, SGD, HKD, SEK, NOK, DKK, CHF, MXN y BRL. Puedes confirmar o cambiar la moneda predeterminada de tu cuenta en tu [Panel de Stripe](https://dashboard.stripe.com/settings/currencies).
 
-## Compartir su enlace de ofrendas
+:::info
+La moneda que selecciones aquí se utiliza para donaciones únicas, suscripciones recurrentes, cálculos de tarifas e informes de donaciones. Si cambias monedas más adelante, solo las donaciones y suscripciones nuevas usarán la nueva moneda; los regalos recurrentes existentes continúan en la moneda en la que se crearon.
+:::
 
-Para encontrar su URL de ofrendas, vaya a **B1 Admin** y haga clic en el icono de **Configuraci\u00f3n** para ver su subdominio. Su enlace de donaciones sigue el formato:
+:::warning
+Asegúrate de que tu cuenta Stripe está configurada para aceptar la moneda que elijas. Si tu cuenta Stripe no admite la moneda seleccionada, las donaciones fallarán en el proceso de pago.
+:::
 
-`https://susubdominio.b1.church/donate`
+## Agregar una Página de Donación a Tu Sitio B1.church
 
-Comparta este enlace en su sitio web, en correos electr\u00f3nicos o en su bolet\u00edn para que los miembros sepan d\u00f3nde pueden dar en l\u00ednea.
+1. Ve a [b1.church](https://b1.church/) e inicia sesión.
+2. Haz clic en el icono de **Settings**.
+3. Haz clic en **Add Tab**.
+4. Elige **Donation** como el tipo.
+5. Ingresa un nombre para la pestaña (por ejemplo, "Give") y haz clic en **Save**.
+6. Opcionalmente, cambia el icono de la pestaña; escribe "Giv" en la búsqueda de iconos para encontrar un icono relacionado con donaciones.
 
-## Notificaciones de donaciones
+Tu página de donación ahora está activa. Los miembros pueden visitarla en `yoursubdomain.b1.church/donate`.
 
-Stripe env\u00eda una notificaci\u00f3n por correo electr\u00f3nico cada vez que se recibe una donaci\u00f3n. Para cambiar la direcci\u00f3n de correo electr\u00f3nico de notificaci\u00f3n, vaya al panel de Stripe, haga clic en su perfil en la esquina superior derecha, elija **Perfil** y actualice su direcci\u00f3n de correo electr\u00f3nico.
+## Compartir Tu Enlace de Donación
 
-## Opciones de comisi\u00f3n por procesamiento
+Para encontrar tu URL de donación, ve a **B1 Admin** y haz clic en el icono de **Settings** para ver tu subdominio. Tu enlace de donación sigue el formato:
 
-Puede configurar su p\u00e1gina de ofrendas para permitir que los donantes opcionalmente cubran las comisiones de procesamiento para que su iglesia reciba el monto completo de la donaci\u00f3n. Esta configuraci\u00f3n se administra en la configuraci\u00f3n de su iglesia dentro de B1 Admin.
+`https://yoursubdomain.b1.church/donate`
+
+Comparte este enlace en tu sitio web, en correos electrónicos o en tu boletín para que los miembros sepan dónde donar en línea.
+
+## Notificaciones de Donación
+
+Stripe envía una notificación por correo electrónico cada vez que se recibe una donación. Para cambiar la dirección de correo electrónico de notificación, ve al panel de Stripe, haz clic en tu perfil en la esquina superior derecha, elige **Profile** y actualiza tu dirección de correo electrónico.
+
+## Opciones de Tarifa de Procesamiento
+
+Puedes configurar tu página de donación para permitir que los donantes cubran opcionalmente las tarifas de procesamiento para que tu iglesia reciba el monto completo de la donación. Esta configuración se administra en la configuración de tu iglesia dentro de B1 Admin.
 
 :::tip
-Despu\u00e9s de la configuraci\u00f3n, haga una peque\u00f1a donaci\u00f3n de prueba para confirmar que todo funciona antes de anunciar las ofrendas en l\u00ednea a su congregaci\u00f3n.
+Después de la configuración, realiza una pequeña donación de prueba para confirmar que todo funciona antes de anunciar donaciones en línea a tu congregación.
 :::
 
-## Pr\u00f3ximos pasos
+## Próximos Pasos
 
-- Use la [Importaci\u00f3n de Stripe](stripe-import.md) para traer transacciones en l\u00ednea a B1 Admin si no se est\u00e1n sincronizando autom\u00e1ticamente
-- Revise sus [Reportes de donaciones](donation-reports.md) para verificar que las donaciones en l\u00ednea aparezcan correctamente
-- Genere [Estados de cuenta de ofrendas](giving-statements.md) que incluyan tanto las donaciones en l\u00ednea como las presenciales
+- Usa [Stripe Import](stripe-import.md) para extraer transacciones en línea a B1 Admin si no se sincronizan automáticamente
+- Revisa tus [Donation Reports](donation-reports.md) para verificar que las donaciones en línea estén apareciendo correctamente
+- Genera [Giving Statements](giving-statements.md) que incluyan donaciones en línea y fuera de línea

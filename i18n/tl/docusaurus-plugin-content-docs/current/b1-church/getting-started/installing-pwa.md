@@ -1,84 +1,80 @@
 ---
-title: "Pag-install bilang Isang App (PWA)"
+title: "Pag-install bilang App (PWA)"
 ---
 
-# Pag-install bilang Isang App (PWA)
+# Pag-install bilang App (PWA)
 
 <div class="article-intro">
 
-Ang B1.church ay sumusuporta sa pag-install bilang isang Progressive Web App (PWA), na nagbibigay-daan sa inyo na idagdag ang member portal ng inyong iglesia sa home screen ng inyong telepono tulad ng isang native app. Ito ay nagbibigay ng full-screen, app-like na karanasan nang walang pagkakaroon sa App Store o Google Play.
+Ang B1.church ay sumusuporta sa pag-install bilang isang Progressive Web App (PWA), na nagbibigay-daan sa iyo na magdagdag ng portal ng iyong simbahan sa home screen ng iyong telepono tulad ng isang native app. Ito ay nagbibigay sa iyo ng full-screen, app-like experience nang hindi dumadaan sa App Store o Google Play.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Kailangan ninyo ng B1.church mobile URL ng inyong iglesia: `https://yourchurchname.b1.church/mobile`
-- Gamitin ang isang suportadong browser: **Safari** sa iOS o **Chrome** sa Android
+- Kailangan mo ng URL ng iyong B1.church: `https://yourchurchname.b1.church`
+- Gumamit ng suportadong browser: **Safari** sa iOS o **Chrome** sa Android
 
 </div>
 
-## Ano Ang Isang PWA?
+## Ano ang PWA?
 
-Ang Progressive Web App (PWA) ay isang website na maaaring i-install sa inyong device at gumagana tulad ng isang native app. Kapag nag-install kayo ng B1.church bilang isang PWA, ito ay:
+Ang Progressive Web App (PWA) ay isang website na maaaring i-install sa iyong device at gumagana tulad ng isang native app. Kapag nag-install ka ng B1.church bilang isang PWA, ito:
 
-- Nagbubukas ng full-screen nang walang browser navigation bars
-- Lumalabas sa inyong home screen kasama ang icon at pangalan ng inyong iglesia
-- Gumagana nang maayos kasama ang branding at tema na kulay ng inyong iglesia
+- Bubukas full-screen nang walang browser navigation bars
+- Lilitaw sa iyong home screen kasama ang icon at pangalan ng iyong simbahan
+- Gumagana nang maayos kasama ang branding at theme colors ng iyong simbahan
 
 :::tip
-Ang PWA ay isang magandang pagpipilian kung mas gusto ninyong hindi mag-install ng isang hiwalay na app mula sa App Store o Google Play. Ito ay nagbibigay ng parehong member portal experience na nakukuha ninyo sa browser, sa mas convenient na package.
+Ang PWA ay isang mahusay na opsyon kung mas pinipili mong hindi mag-install ng isang hiwalay na app mula sa App Store o Google Play. Ito ay nagbibigay ng parehong karanasan ng member portal na makukuha mo sa browser, sa isang mas convenient na pakete.
 :::
+
+## Saan Mag-install
+
+Maaari kang mag-install ng PWA mula sa **anumang pahina** sa B1.church site ng iyong simbahan — ang public home page, isang sermon page, ang login screen, o kahit saan sa loob ng member portal. Walang hiwalay na "install URL" na dapat alalahanin; kung maaari mong bisitahin ang iyong simbahan sa web, maaari kang mag-install ng app mula doon.
+
+Kapag inilunsad mo ang naka-install na app, ito ay bubukas nang direkta sa iyong member dashboard, handa na para sa iyo na mag-log in.
 
 ## Pag-install sa iPhone (iOS — Safari)
 
-1. Buksan ang **Safari** sa inyong iPhone at pumunta sa `https://yourchurchname.b1.church/mobile` (palitan ang `yourchurchname` ng URL slug ng inyong iglesia).
+1. Buksan ang **Safari** sa iyong iPhone at pumunta sa `https://yourchurchname.b1.church` (palitan ang `yourchurchname` ng slug ng URL ng iyong simbahan).
 2. I-tap ang **Share** button (ang kahon na may arrow na tumuturo pataas) sa ibaba ng screen.
-3. Mag-scroll pababa sa share sheet at i-tap ang **Add to Home Screen**.
-4. Ang pangalan ay default sa pangalan ng inyong iglesia. I-tap ang **Add** sa tuktok-kanang sulok.
+3. I-scroll down sa share sheet at i-tap ang **Add to Home Screen**.
+4. Ang pangalan ay magiging default sa pangalan ng iyong simbahan. I-tap ang **Add** sa top-right corner.
 
-Ang app icon ay lilitaw sa inyong home screen. I-tap ito upang buksan ang member portal sa full-screen mode.
+Ang app icon ay lilitaw sa iyong home screen. I-tap ito upang buksan ang member portal sa full-screen mode.
 
 :::info
-Ang PWA installation sa iOS ay nangangailangan ng Safari. Kung gumagamit kayo ng Chrome o ibang browser sa iPhone, lumipat sa Safari muna.
+Ang pag-install ng PWA sa iOS ay nangangailangan ng Safari. Kung gumagamit ka ng Chrome o iba pang browser sa iPhone, lumipat sa Safari muna.
 :::
 
 ## Pag-install sa Android (Chrome)
 
-1. Buksan ang **Chrome** sa inyong Android device at pumunta sa `https://yourchurchname.b1.church/mobile`.
-2. Ang Chrome ay awtomatikong magpapakita ng isang **"Add to Home screen"** banner sa ibaba ng screen, o i-tap ang three-dot menu (⋮) sa tuktok-kanang sulok at piliin ang **Add to Home screen**.
+1. Buksan ang **Chrome** sa iyong Android device at pumunta sa `https://yourchurchname.b1.church`.
+2. Ang Chrome ay awtomatikong magpapakita ng isang **"Add to Home screen"** banner sa ibaba ng screen, o i-tap ang three-dot menu (⋮) sa top-right corner at pumili ng **Add to Home screen**.
 3. I-tap ang **Add** kapag hiniling.
 
-Ang app icon ay lilitaw sa inyong home screen. I-tap ito upang buksan ang member portal.
+Ang app icon ay lilitaw sa iyong home screen. I-tap ito upang buksan ang member portal.
 
-## Pagkatapos ng Pag-install
+## Pagkatapos Mag-install
 
-Kapag na-install na, ang PWA ay gumagana tulad ng pag-bisita sa mobile site sa inyong browser, ngunit sa isang dedicated full-screen window. Maaari ninyong:
+Kapag naka-install na, ang PWA ay bubukas nang direkta sa member portal sa isang dedicated full-screen window. Maaari mo:
 
-- Mag-log in gamit ang inyong umiiral na ChurchApps account
-- Ma-access ang lahat ng member features na pinagana ng inyong iglesia — mga grupo, pag-bigay, check-in, serving plans, at marami pang iba
-- Bumalik dito anumang oras sa pamamagitan ng pag-tap sa icon sa inyong home screen
+- Mag-log in gamit ang iyong umiiral na ChurchApps account
+- I-access ang lahat ng miyembro ng features na pina-enable ng iyong simbahan — groups, giving, check-in, serving plans, at marami pang iba
+- Bumalik dito anumang oras sa pamamagitan ng pag-tap ng icon sa iyong home screen
 
 :::info
-Ang PWA ay nangangailangan ng internet connection. Hindi tulad ng ilang native apps, ito ay hindi nag-cache ng lahat ng content para sa offline use.
+Ang PWA ay nangangailangan ng internet connection. Hindi tulad ng ilang native apps, hindi ito nag-cache ng lahat ng content para sa offline use.
 :::
 
-## PWA vs. Native App
+## Ano ang Tungkol sa Lumang B1 Mobile App?
 
-Ang parehong mga opsyon ay nagbibigay sa inyo ng access sa B1.church member portal. Ang tamang pagpipilian ay depende sa inyong kagustuhan:
+Ang legacy native **B1 Mobile** app sa iOS at Android ay na-deprecate at hindi na ina-update. Ang PWA ay ang suportadong paraan upang i-access ang B1.church member portal sa isang telepono, at sumasaklaw ito sa bawat member-facing feature na inaalok ng native app. Kung nag-install ka na ng native app, lumipat sa PWA sa iyong kaginhawahan.
 
-| | **PWA** | **B1 Mobile App** |
-|---|---|---|
-| Pag-install | Idagdag sa Home Screen mula sa browser | I-download mula sa App Store / Google Play |
-| Mga Update | Awtomatiko (walang kailangang app store update) | Sa pamamagitan ng App Store / Google Play |
-| Push Notifications | Hindi suportado | Suportado |
-| Platform | Anumang device na may browser | iOS at Android |
+Tingnan ang [B1 Mobile reference page](/docs/b1-mobile/) para sa historical documentation sa deprecated app.
 
-:::tip
-Kung ang inyong iglesia ay gumagamit ng group conversations at nais ninyo ang push notifications para sa mga bagong mensahe at activity, gamitin ang [B1 Mobile app](/docs/b1-mobile/) sa halip. Ang push notifications ay kasalukuyang hindi suportado sa PWA.
-:::
+## Kaugnay na Mga Artikulo
 
-## Mga Kaugnay na Artikulo
-
-- [Pag-log In](./logging-in.md) — Paano mag-sign in sa inyong B1.church account
-- [B1 Mobile — Pag-install ng App](/docs/b1-mobile/getting-started/installing) — I-download ang native iOS/Android app
+- [Logging In](./logging-in.md) — Paano mag-sign in sa iyong B1.church account

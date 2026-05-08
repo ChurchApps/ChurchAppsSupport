@@ -1,42 +1,70 @@
----
+﻿---
 title: "Connexion"
 ---
 
-# Connexion à B1 Mobile
+# Connexion
 
 <div class="article-intro">
 
-Connectez-vous à B1 Mobile avec votre compte ChurchApps pour accéder aux plans de service, événements, groupes et bien plus.
+B1 Mobile utilise le même compte ChurchApps que vous utilisez sur B1.church et d'autres produits ChurchApps. Si vous avez déjà un compte, vous pouvez vous connecter avec votre e-mail et mot de passe existants.
 
 </div>
 
-## Connexion
+<div class="prereqs">
+<h4>Avant de commencer</h4>
 
-1. Ouvrez l'application B1 Mobile
-2. Appuyez sur **Se connecter**
-3. Entrez votre **adresse e-mail** et votre **mot de passe** ChurchApps
-4. Appuyez sur **Se connecter**
+- [Installez B1 Mobile](./installing) sur votre appareil iOS ou Android
 
-Vous êtes maintenant connecté et pouvez voir le contenu de votre église.
+</div>
 
-:::tip
-Utilisez le même compte e-mail et mot de passe que pour B1 Admin et B1.church.
+## Comment se connecter
+
+1. Ouvrez l'application B1 Mobile.
+2. Appuyez sur l'option **Login** à partir du menu du tiroir ou de l'invite de connexion.
+3. Entrez votre **adresse e-mail** et **mot de passe**.
+4. Appuyez sur **Sign In**.
+
+Après la connexion, vous serez amené au [tableau de bord](../dashboard/). Si vous n'avez pas encore sélectionné une église, vous serez invité à en rechercher et en sélectionner une.
+
+## Création d'un nouveau compte
+
+Si vous n'avez pas encore de compte ChurchApps, vous pouvez en créer un directement dans l'application :
+
+1. Sur l'écran de connexion, appuyez sur le lien **Register** en bas.
+2. Entrez votre **prénom**, **nom de famille** et **adresse e-mail**.
+3. Le formulaire complètera automatiquement votre église si une correspondance est trouvée en fonction de vos informations.
+4. Appuyez sur **Register**.
+5. Vérifiez votre e-mail pour un message avec votre mot de passe temporaire.
+6. Retournez à l'application, appuyez sur **Login**, et connectez-vous avec votre e-mail et le mot de passe temporaire de l'e-mail.
+
+Après votre première connexion, vous pouvez modifier votre mot de passe à partir des [paramètres de profil](../profile/editing-profile.md).
+
+:::info
+Si vous essayez de vous connecter avec un e-mail qui n'est pas encore enregistré, vous serez automatiquement dirigé vers l'écran d'enregistrement pour créer un compte.
 :::
 
-## Sélection de votre église
+:::warning
+Assurez-vous de vérifier votre dossier de spam ou de courrier indésirable si vous ne recevez pas l'e-mail d'enregistrement dans quelques minutes.
+:::
 
-Si votre compte est lié à plusieurs églises :
+## Mot de passe oublié
 
-1. Après connexion, appuyez sur le **sélecteur d'église** en haut
-2. Choisissez votre église
-3. L'application charge le contenu de cette église
+Si vous avez oublié votre mot de passe, appuyez sur **Forgot Password?** sur l'écran de connexion et entrez votre adresse e-mail. Vous recevrez un e-mail avec un **code de vérification à 6 chiffres** valide pendant 15 minutes. Entrez le code sur l'écran de vérification pour vous connecter, puis mettez à jour votre mot de passe à partir des [paramètres de profil](../profile/editing-profile.md).
+
+:::warning
+Après cinq tentatives de code incorrect, le code est verrouillé. Si cela se produit, retournez à l'écran Mot de passe oublié et demandez un nouveau code.
+:::
+
+## Rester connecté
+
+B1 Mobile vous garde connecté entre les sessions. Vous n'avez pas besoin de vous connecter chaque fois que vous ouvrez l'application. Si vous êtes déconnecté pour une raison quelconque, connectez-vous simplement à nouveau avec votre e-mail et mot de passe.
 
 ## Déconnexion
 
-1. Allez à **Paramètres**
-2. Appuyez sur **Se déconnecter**
-3. Confirmez que vous souhaitez vous déconnecter
+Pour vous déconnecter de l'application :
 
-## Articles connexes
+1. Ouvrez le menu du tiroir en appuyant sur l'**icône du hamburger** (trois lignes horizontales) dans le coin supérieur gauche.
+2. Faites défiler vers le bas du menu du tiroir.
+3. Appuyez sur **Sign Out**.
 
-- [Vue d'ensemble](../index.md) — Voir ce que vous pouvez faire dans B1 Mobile
+Vous serez déconnecté et pourrez vous reconnecter à tout moment avec vos identifiants.

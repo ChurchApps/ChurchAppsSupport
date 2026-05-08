@@ -6,53 +6,57 @@ title: "Pagmemensahe"
 
 <div class="article-intro">
 
-Kasama sa B1 Mobile ang pribadong pagmemensahe para maaari kang magkaroon ng one-on-one na pag-uusap sa ibang miyembro ng simbahan nang direkta mula sa app. Ito ay isang simpleng paraan para manatiling konektado nang hindi kailangang ibahagi ang mga personal na numero ng telepono o email address.
+Ang B1 Mobile ay may kasamang private messaging upang maaari kang makipag-usap nang one-on-one sa ibang mga miyembro ng simbahan nang direkta mula sa app. Ito ay isang simpleng paraan upang manatiling konektado nang hindi kailangang ibahagi ang personal na phone numbers o email addresses.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- [I-install ang B1 Mobile](../getting-started/installing) at [mag-log in](../getting-started/logging-in) sa iyong account
+- [Mag-install ng B1 Mobile](../getting-started/installing) at [mag-log in](../getting-started/logging-in) sa iyong account
 
 </div>
 
-## Pag-access sa Iyong mga Mensahe
+## Pag-access sa Iyong Mga Mensahe
 
-1. I-tap ang **Messaging** sa navigation ng app.
-2. Ang iyong mga nakaraang pag-uusap ay nakalista para sa mabilis na access.
+1. I-tap ang **Messaging** sa app navigation.
+2. Ang iyong mga nakaraang pag-usap ay nalista para sa mabilis na access.
 
 ## Pagsisimula ng Bagong Pag-uusap
 
-1. Mula sa messaging screen, i-tap ang opsyon para magsimula ng bagong pag-uusap.
-2. Gamitin ang search field para hanapin ang miyembrong gusto mong mensahehin. Maaari mo ring hanapin ang mga miyembro sa pamamagitan ng [Direktoryo ng mga Miyembro](./member-directory).
-3. Piliin ang miyembro mula sa mga resulta ng paghahanap.
+1. Mula sa messaging screen, i-tap ang opsyon upang magsimula ng bagong pag-uusap.
+2. Gamitin ang search field upang hanapin ang miyembro na nais mong i-message. Maaari mo ring mahanap ang mga miyembro sa pamamagitan ng [Member Directory](./member-directory).
+3. Pumili ng miyembro mula sa mga resulta ng paghahanap.
 4. I-type ang iyong mensahe at i-tap ang **Send**.
 
-Ang iyong bagong pag-uusap ay lalabas na ngayon sa iyong listahan ng mga pag-uusap para madali mong mabalikan ito mamaya.
+Ang iyong bagong pag-uusap ay lalitaw na ngayon sa iyong listahan ng pag-uusap upang maaari mo itong madaling kunin mamaya.
 
-## Pagbabasa at Pagpapadala ng mga Mensahe
+## Pagbabasa at Pagpapadala ng Mga Mensahe
 
-Kapag binuksan mo ang isang pag-uusap, makikita mo ang buong thread ng mensahe. Ang bawat mensahe ay nagpapakita ng avatar at pangalan ng nagpadala, kaya madaling sundan ang daloy. Para sumagot, i-type ang iyong mensahe sa text field sa ibaba ng screen at i-tap ang **Send**.
+Kapag buksan mo ang isang pag-uusap, makikita mo ang buong message thread. Bawat mensahe ay nagpapakita ng avatar at pangalan ng nagpadala, upang madali itong sundan. Upang tumugon, i-type ang iyong mensahe sa text field sa ibaba ng screen at i-tap ang **Send**.
 
-## Pag-edit ng mga Mensahe
+## Pag-edit ng Mga Mensahe
 
-Kung kailangan mong itama ang isang bagay pagkatapos magpadala ng mensahe, maaari mo itong i-edit. I-tap ang mensaheng gusto mong baguhin, piliin ang opsyon na edit, gawin ang iyong pagwawasto, at i-save. Ang na-update na mensahe ay papalitan ang orihinal sa pag-uusap.
+Kung kailangan mong itama ang isang bagay pagkatapos magpadala ng isang mensahe, maaari mong i-edit ito. I-tap ang mensahe na nais mong baguhin, pumili ng edit option, gumawa ng iyong pagwawasto, at mag-save. Ang nag-update na mensahe ay papalitan ang orihinal sa pag-uusap.
 
-## Ang Iyong Listahan ng mga Pag-uusap
+## Ang Iyong Listahan ng Pag-uusap
 
-Ang lahat ng iyong aktibong pag-uusap ay lumalabas sa isang listahan sa pangunahing messaging screen. Ang listahan ay nagpapakita ng pangalan at avatar ng kausap mong tao, na nagpapadali sa paghahanap ng pag-uusap na hinahanap mo. I-tap ang anumang pag-uusap para buksan ito at magpatuloy kung saan ka huminto.
+Ang lahat ng iyong aktibong pag-uusap ay lumilitaw sa isang listahan sa pangunahing messaging screen. Ang listahan ay nagpapakita ng pangalan at avatar ng ibang tao, na ginagawang madali na mahanap ang pag-uusap na hinahanap mo. I-tap ang anumang pag-uusap upang buksan ito at magpatuloy kung saan ka huminto.
+
+## Pagtanggal ng Pag-uusap
+
+Kung nais mong alisin ang isang pag-uusap mula sa iyong listahan, i-tap ang trash icon sa kanan ng hilera ng pag-uusap at kumpirmahin. Ang pag-uusap ay inalis mula sa iyong view; ang ibang tao ay makikita pa rin ang kanilang kopya ng thread sa kanilang gilid. Upang magpatuloy na makipag-usap sa parehong tao mamaya, magsimula lamang ng bagong pag-uusap.
 
 :::tip
-Gamitin ang pagmemensahe para makipag-coordinate sa mga kapwa boluntaryo, mag-follow up sa isang taong nakilala mo sa simbahan, o kumustahin lang ang isang kaibigan. Pinapanatili nito ang iyong mga komunikasyon sa simbahan sa isang maginhawang lugar.
+Gamitin ang messaging upang mag-coordinate sa mga kasama mong volunteer, sumunod sa isang taong nakilala mo sa simbahan, o kumuha ng impormasyon sa isang kaibigan. Ito ay pinapanatili ang iyong mga komunikasyon ng simbahan sa isang convenient na lugar.
 :::
 
 :::info
-I-enable ang [mga push notification](./notifications) para ma-alert ka kapag may nagpadala sa iyo ng bagong mensahe, kahit na hindi bukas ang app.
+I-enable ang [push notifications](./notifications) upang mabigyan ng alert kapag nagpadala sa iyo ng bagong mensahe ang isang tao, kahit ang app ay hindi bukas.
 :::
 
-## Mga Kaugnay na Artikulo
+## Kaugnay na Mga Artikulo
 
-- [Direktoryo ng mga Miyembro](./member-directory) -- Maghanap ng mga miyembro na maaari mong mensahehin
-- [Mga Notification](./notifications) -- Makatanggap ng notification tungkol sa mga bagong mensahe
-- [Mga Grupo](../groups/) -- Lumahok sa mga pag-uusap ng grupo
+- [Member Directory](./member-directory) -- Maghanap ng mga miyembro upang i-message
+- [Notifications](./notifications) -- Maging alam tungkol sa mga bagong mensahe
+- [Groups](../groups/) -- Makipagtulungan sa mga pag-uusap ng grupo

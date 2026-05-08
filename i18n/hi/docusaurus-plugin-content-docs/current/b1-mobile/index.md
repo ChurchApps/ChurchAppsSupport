@@ -1,8 +1,8 @@
 ---
-title: "B1 Mobile"
+title: "B1 Mobile (Deprecated)"
 ---
 
-# B1 Mobile
+# B1 Mobile (Deprecated)
 
 <div class="article-intro">
 

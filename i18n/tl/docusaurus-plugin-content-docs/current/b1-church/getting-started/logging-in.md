@@ -6,47 +6,57 @@ title: "Pag-log In"
 
 <div class="article-intro">
 
-Ang pag-log in sa B1.church ay nagbibigay sa iyo ng access sa portal ng miyembro kung saan maaari mong tingnan ang iyong timeline, pamahalaan ang mga grupo, mag-donate online, at gamitin ang lahat ng mga tool na na-set up ng iyong simbahan. Sinasaklaw ng artikulong ito kung paano mag-sign in, mag-navigate sa iyong user menu, at mag-log out.
+Ang pag-log in sa B1.church ay nagbibigay sa iyo ng access sa member portal kung saan maaari mong tingnan ang iyong timeline, pamahalaan ang mga grupo, magbigay online, at gamitin ang lahat ng mga tool na itinakda ng iyong simbahan. Ang artikulong ito ay sumasaklaw sa kung paano mag-sign in, mag-navigate ng iyong user menu, at mag-log out.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Kailangan mo ng ChurchApps account. Tingnan ang [Pagsisimula](../getting-started/) para gumawa ng isa.
-- Kailangan mo ang B1.church URL ng iyong simbahan (halimbawa, `https://pangalanngsimbahan.b1.church`).
+- Kailangan mo ng ChurchApps account. Tingnan ang [Getting Started](../getting-started/) upang lumikha ng isa.
+- Kailangan mo ng B1.church URL ng iyong simbahan (halimbawa, `https://yourchurchname.b1.church`).
 
 </div>
 
-## Paano Mag-log In
+## Paano Mag-Log In
 
-1. Pumunta sa B1.church URL ng iyong simbahan (halimbawa, `https://pangalanngsimbahan.b1.church`).
-2. I-click ang **Login** na button sa kanang itaas ng header.
-3. Ilagay ang iyong **email address** at **password**.
+1. Pumunta sa B1.church URL ng iyong simbahan (halimbawa, `https://yourchurchname.b1.church`).
+2. I-click ang **Login** button sa top-right corner ng header.
+3. Magpasok ng iyong **email address** at **password**.
 4. I-click ang **Sign In**.
 
-Pagkatapos mag-sign in, ibabalik ka sa pahina kung saan ka naroon bago mo i-click ang login. Kung nag-navigate ka nang direkta sa isang pahina ng portal ng miyembro habang naka-log out, awtomatiko kang ibabalik sa pahinang iyon pagkatapos mag-sign in.
+Pagkatapos mag-sign in, ikaw ay ibabalikat sa pahina na iyong nasa dati bago nag-click ng login. Kung nag-navigate ka nang direkta sa isang member portal page habang naka-log out, ikaw ay awtomatikong ibabalik sa pahinang iyon pagkatapos mag-sign in.
 
-## Pag-access sa Portal ng Miyembro
+## Pag-access sa Member Portal
 
-Kapag naka-log in na, maa-access mo ang portal ng miyembro sa pamamagitan ng pag-click sa iyong **pangalan** sa kanang itaas ng pahina at pagpili ng **Portal ng Miyembro** mula sa menu. Ang portal ng miyembro ang lugar kung saan nakalagay ang lahat ng iyong personal na mga tool ng simbahan, kabilang ang iyong [timeline](../community/timeline.md), [mga grupo](../groups/), [pagbibigay](../giving/), at iba pa.
+Kapag naka-log in na, maaari mong i-access ang member portal sa pamamagitan ng pag-click sa iyong **name** sa top-right corner ng pahina at pagpili ng **Member Portal** mula sa menu. Ang member portal ay kung saan naroroon ang lahat ng iyong personal na church tools, kabilang ang iyong [timeline](../community/timeline.md), [groups](../groups/), [giving](../giving/), at marami pang iba.
 
 ## Ang Iyong User Menu
 
-Pagkatapos mag-log in, lalabas ang iyong pangalan bilang isang chip sa kanang itaas. I-click ito para buksan ang isang menu na may mga sumusunod na opsyon:
+Pagkatapos mag-sign in, ang iyong pangalan ay lilitaw bilang isang chip sa top-right corner. I-click ito upang magbukas ng menu na may mga sumusunod na opsyon:
 
-- **Portal ng Miyembro** -- Pumunta sa dashboard ng iyong personal na portal ng miyembro.
-- **I-edit ang Profile** -- I-update ang mga setting ng iyong account o i-edit ang iyong church profile.
-- **Mag-log Out** -- Mag-sign out sa iyong account.
+- **Member Portal** -- Pumunta sa iyong personal na member portal dashboard.
+- **Edit Profile** -- I-update ang iyong account settings o i-edit ang iyong church profile.
+- **Logout** -- Mag-sign out ng iyong account.
 
-## Access ng Administrator
+## Admin Access
 
-Kung ikaw ay isang church administrator na may tamang mga pahintulot, makikita mo rin ang opsyon na **Portal ng Administrator** sa iyong user menu. Ang pag-click dito ay magdadala sa iyo sa B1 Admin kung saan maaari mong pamahalaan ang mga setting, tao, grupo, at nilalaman ng iyong simbahan.
+Kung ikaw ay isang church administrator na may angkop na permissions, makikita mo rin ang isang **Admin Portal** option sa iyong user menu. Ang pag-click nito ay dadalhin ka sa B1 Admin kung saan maaari mong pamahalaan ang mga setting, tao, grupo, at nilalaman ng iyong simbahan.
+
+## Nakalimutan ang Iyong Password
+
+Kung hindi mo matandaan ang iyong password:
+
+1. I-click ang **Forgot Password** sa login page.
+2. Magpasok ng email address na nakatali sa iyong ChurchApps account at i-submit.
+3. Suriin ang iyong email para sa isang mensahe na naglalaman ng isang **6-digit verification code**. Ang code ay valid para sa loob ng 15 minuto.
+4. Magpasok ng code sa verification screen upang mag-sign in.
+5. Kapag naka-sign in na ikaw, bisitahin ang iyong profile upang pumili ng bagong password.
 
 :::tip
-Kung nakalimutan mo ang iyong password, gamitin ang **Nakalimutan ang Password** na link sa login page para i-reset ito. Makakatanggap ka ng email na may mga tagubilin para gumawa ng bagong password.
+Kung ang code ay hindi dumating sa loob ng ilang minuto, suriin ang iyong spam folder. Pagkatapos ng limang hindi tamang pagsubok ang code ay naka-lock — hiniling ang bagong isa mula sa Forgot Password page kung nangyari iyon.
 :::
 
 ## Pag-log Out
 
-Para mag-log out, i-click ang iyong **pangalan** sa kanang itaas at piliin ang **Mag-log Out**. Ilo-log out ka at ibabalik sa pampublikong site.
+Upang mag-log out, i-click ang iyong **name** sa top-right corner at pumili ng **Logout**. Ikaw ay mag-sign out at ibabalik sa public site.
