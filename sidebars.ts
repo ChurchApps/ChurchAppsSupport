@@ -62,6 +62,7 @@ const sidebars: SidebarsConfig = {
             'b1-admin/donations/funds',
             'b1-admin/donations/giving-statements',
             'b1-admin/donations/online-giving-setup',
+            'b1-admin/donations/multi-currency',
             'b1-admin/donations/stripe-import',
             'b1-admin/donations/donation-reports',
           ],

@@ -58,6 +58,17 @@ The Appearance page lets you customize the overall look and feel of your church 
 For best results, use a logo with a transparent background in PNG format. This ensures it looks great on both light and dark backgrounds across your website and [mobile app](../settings/mobile-app.md).
 :::
 
+## Navigation Styles
+
+Customize your website's navigation bar colors for both solid and transparent modes:
+
+1. Scroll to the **Navigation Styles** section
+2. Click **Edit Navigation Styles**
+3. Configure colors for solid navigation (with background) and transparent navigation (overlay mode)
+4. Click **Save** to apply your navigation colors
+
+For detailed instructions, see [Navigation Styles](./navigation-styles.md).
+
 ## Custom CSS and JavaScript
 
 1. Click **CSS and Javascript** in the Style Settings panel.

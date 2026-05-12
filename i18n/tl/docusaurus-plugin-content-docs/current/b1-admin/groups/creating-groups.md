@@ -1,57 +1,61 @@
 ---
-title: "Paglikha ng Mga Grupo"
+title: "Paggawa ng mga Grupo"
 ---
 
-# Paglikha ng Mga Grupo
+# Paggawa ng mga Grupo
 
 <div class="article-intro">
 
-Ang paglikha ng grupo sa B1 Admin ay simple. Mag-set up ka ng kategorya, pangalanan ang iyong grupo, at pagkatapos ay i-configure ang mga setting nito. Ang mga grupo ay tumutulong sa iyo na i-organisa ang iyong simbahan sa mga makabuluhang yunit tulad ng maliliit na grupo, ministry team, komite, at mga klase.
+Ang paggawa ng grupo sa B1 Admin ay simple. Magtatakda ka ng kategorya, pangalanan ang iyong grupo, at pagkatapos ay i-configure ang mga setting nito. Tumutulong ang mga grupo na ayusin ang iyong simbahan sa makabuluhang mga yunit tulad ng maliliit na grupo, komite, at mga klase.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Kailangan mo ng aktibong B1 Admin account na may pahintulot na pamahalaan ang mga grupo. Tingnan ang [Mga Role at Pahintulot](../people/roles-permissions.md) kung hindi ka sigurado sa iyong antas ng access.
-- Magpasya sa isang istruktura ng kategorya para sa iyong mga grupo (halimbawa, "Small Groups," "Ministries," "Committees"). Ang mga kategorya ay tumutulong na mapanatiling organisado ang mga magkakaugnay na grupo.
+- Kailangan mo ng aktibong B1 Admin account na may permiso sa pamamahala ng mga grupo. Tingnan ang [Roles & Permissions](../people/roles-permissions.md) kung hindi ka sigurado sa iyong access level.
+- Magpasya sa isang istruktura ng kategorya para sa iyong mga grupo (halimbawa, "Small Groups," "Ministries," "Committees"). Tumutulong ang mga kategorya na panatilihing organisado ang mga kaugnay na grupo.
 
 </div>
 
-## Pagdaragdag ng Bagong Grupo
+## Pagdagdag ng Bagong Grupo
 
-1. Mag-navigate sa **B1 Admin dashboard**.
-2. I-click ang tab na **Groups**.
-3. I-click ang **Add Group** at maglagay ng **Category Name**. Ang mga kategorya ay tumutulong sa iyo na i-organisa ang mga magkakaugnay na grupo (halimbawa, "Small Groups," "Ministries," o "Committees"). Kung mayroon nang kategorya, maaari mo itong piliin mula sa listahan.
+1. Pumunta sa **B1 Admin dashboard**.
+2. I-click ang **Groups** tab.
+3. I-click ang **Add Group** at maglagay ng **Category Name**. Tumutulong ang mga kategorya na pagsama-samahin ang mga kaugnay na grupo (halimbawa, "Small Groups," "Ministries," o "Committees"). Kung mayroon nang kategorya, maaari mo itong piliin mula sa listahan.
 4. Ilagay ang **Group Name**.
-5. I-click ang **Add**. Ang iyong bagong grupo ay lilitaw sa listahan sa ilalim ng napiling kategorya.
+5. I-click ang **Add**. Lalabas ang iyong bagong grupo sa listahan sa ilalim ng napilit kategorya.
 
-## Pag-configure ng mga Setting ng Grupo
+## Pag-configure ng Group Settings
 
-Kapag nalikha na ang iyong grupo, maaari kang magdagdag ng mga karagdagang detalye:
+Kapag nagawa mo na ang iyong grupo, maaari mong punan ang mga karagdagang detalye:
 
 1. I-click ang **pangalan ng grupo** sa listahan upang buksan ito.
 2. I-click ang **pencil icon** upang i-edit ang mga setting ng grupo.
 3. I-configure ang mga sumusunod na opsyon:
-   - **Description** -- Isang maikling buod kung tungkol saan ang grupo. Ito ay makikita ng mga miyembro.
-   - **Meeting Times** -- Kung kailan karaniwang nagpupulong ang grupo (halimbawa, "Miyerkules ng 7 PM").
-   - **Attendance Tracking** -- I-enable ito kung gusto mong mag-record ng [attendance](../attendance/tracking-attendance.md) para sa grupong ito.
+   - **Description** -- Maikling buod kung ano ang tungkol sa grupo. Ito ay makikita ng mga miyembro.
+   - **Meeting Times** -- Kailan karaniwang nagtitipon ang grupo (halimbawa, "Wednesdays at 7 PM").
+   - **Join Policy** -- Piliin kung sino ang maaaring sumali sa grupong ito:
+     - **Open** -- Kahit sino ay maaaring sumali kaagad nang walang pag-apruba
+     - **Request** -- Kailangan ng mga tao na magsumite ng kahilingan na sumali na nangangailangan ng pag-apruba (tingnan ang [Group Join Requests](./group-join-requests.md))
+     - **Closed** -- Ang mga miyembro ay dapat idagdag nang manu-mano ng mga lider o administrator
+   - **Attendance Tracking** -- Paganahin ito kung gusto mong magtala ng [attendance](../attendance/tracking-attendance.md) para sa grupong ito.
    - **Service Times** -- Iugnay ang grupo sa mga partikular na oras ng serbisyo ng simbahan kung naaangkop. Tingnan ang [Attendance Setup](../attendance/setup.md) para sa mga detalye tungkol sa mga oras ng serbisyo.
-4. I-click ang **Save** upang i-apply ang iyong mga pagbabago.
+4. I-click ang **Save** upang ilapat ang iyong mga pagbabago.
 
 :::tip
-Ang pagdaragdag ng malinaw na paglalarawan at oras ng pagpupulong ay tumutulong sa mga miyembro na malaman kung ano ang maaasahan kapag sumali sila sa grupo.
+Ang pagdagdag ng malinaw na paglalarawan at oras ng pagtitipon ay tumutulong sa mga miyembro na malaman kung ano ang inaasahan kapag sumali sila sa isang grupo.
 :::
 
 ## Mga Susunod na Hakbang
 
-Matapos likhain at i-configure ang iyong grupo, handa ka nang:
+Pagkatapos gumawa at mag-configure ng iyong grupo, handa ka nang:
 
-- **Magdagdag ng mga miyembro** -- Maghanap ng mga tao at idagdag sila sa grupo. Gamitin ang green key icon upang mag-designate ng mga lider ng grupo. Tingnan ang [Mga Miyembro ng Grupo](./group-members.md).
-- **Mag-set up ng kalendaryo** -- Lumikha ng mga event at umuulit na pagpupulong para sa grupo. Tingnan ang [Kalendaryo ng Grupo](./group-calendar.md).
+- **Magdagdag ng mga miyembro** -- Maghanap ng mga tao at idagdag sila sa grupo. Gamitin ang berdeng key icon upang italaga ang mga pinuno ng grupo. Tingnan ang [Group Members](./group-members.md).
+- **Mag-set up ng kalendaryo** -- Gumawa ng mga event at umuulit na mga pagtitipon para sa grupo. Tingnan ang [Group Calendar](./group-calendar.md).
 - **Makipag-ugnayan** -- Magpadala ng mga mensahe sa lahat ng miyembro ng grupo nang direkta mula sa pahina ng grupo.
-- **Mag-export ng datos** -- I-click ang download icon upang i-export ang listahan ng miyembro ng iyong grupo.
+- **Mag-export ng data** -- I-click ang download icon upang i-export ang listahan ng mga miyembro ng iyong grupo.
 
 :::info
-Lahat ng mga grupo ng iyong simbahan ay naka-organisa ayon sa mga kategorya sa pangunahing pahina ng Groups. Maaari mong palaging baguhin o palitan ang pangalan ng mga kategorya habang lumalaki ang iyong simbahan.
+Lahat ng mga grupo ng iyong simbahan ay nakaayos ayon sa mga kategorya sa pangunahing pahina ng Groups. Maaari mo palaging ayusin o palitan ang mga kategorya habang lumalaki ang iyong simbahan.
 :::
