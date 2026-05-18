@@ -551,6 +551,7 @@ const sidebars: SidebarsConfig = {
             'developer/api/local-setup',
             'developer/api/database',
             'developer/api/module-structure',
+            'developer/api/webhooks',
             {
               type: 'category',
               label: 'Endpoint Reference',
