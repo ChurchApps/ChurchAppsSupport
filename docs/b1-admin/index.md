@@ -22,7 +22,7 @@ New to B1 Admin? Start with the [Introduction](./introduction) for a video walkt
 
 ## Key Features
 
-- **[People](./people/)** - Manage your church directory, add members, track households
+- **[People](./people/)** - Manage your church directory, add members, bulk edit data, track households
 - **[Groups](./groups/)** - Create and organize church groups with join requests and member management
 - **[Attendance](./attendance/)** - Set up campuses, service times, and track attendance
 - **[Donations](./donations/)** - Record giving in multiple currencies, manage funds, generate statements

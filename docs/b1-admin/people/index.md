@@ -18,11 +18,13 @@ Here is an overview of the key features available in the People section:
 
 2. **Add new people** -- Quickly add individuals to your directory and fill in their profile details, contact information, and household connections. See [Adding People](./adding-people.md) for step-by-step instructions.
 
-3. **Import and export data** -- Bring in member data from a CSV file or migrate from another church management system like Breeze. You can also export your directory to CSV at any time. See [Importing Data](./importing-data.md) and [Exporting Data](./exporting-data.md).
+3. **Bulk edit people** -- Update multiple people at once by changing their membership status, marital status, gender, opt-out preferences, or group memberships. This saves time when making the same change to many individuals. See [Bulk Editing](./bulk-editing.md).
 
-4. **Manage profiles** -- View and edit detailed profiles for each person, including contact info, household members, [group memberships](../groups/group-members.md), [attendance history](../attendance/tracking-attendance.md), [donations](../donations/recording-donations.md), and [custom forms](../forms/creating-forms.md).
+4. **Import and export data** -- Bring in member data from a CSV file or migrate from another church management system like Breeze. You can also export your directory to CSV at any time. See [Importing Data](./importing-data.md) and [Exporting Data](./exporting-data.md).
 
-5. **Assign roles and permissions** -- Control who on your team can access different parts of B1 Admin by assigning roles. See [Assigning Roles](./roles-permissions.md).
+5. **Manage profiles** -- View and edit detailed profiles for each person, including contact info, household members, [group memberships](../groups/group-members.md), [attendance history](../attendance/tracking-attendance.md), [donations](../donations/recording-donations.md), and [custom forms](../forms/creating-forms.md).
+
+6. **Assign roles and permissions** -- Control who on your team can access different parts of B1 Admin by assigning roles. See [Assigning Roles](./roles-permissions.md).
 
 ## Getting Started
 

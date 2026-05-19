@@ -6,44 +6,49 @@ title: "Contenido"
 
 <div class="article-intro">
 
-B1.church ofrece a tu congregacion un lugar central para acceder al contenido que tu iglesia comparte. Dependiendo de lo que tu iglesia haya configurado, puedes tener acceso a sermones, transmision en vivo, lectura de la Biblia, un versiculo diario y materiales de lecciones -- todo desde el portal de miembros.
+B1.church le brinda a su congregación un lugar central para acceder al contenido que su iglesia comparte. Dependiendo de lo que su iglesia haya configurado, puede tener acceso a sermones, transmisión en vivo, lectura de la Biblia, un versículo del día y materiales de lecciones, todo desde el portal de miembros.
 
 </div>
 
-## Funciones de Contenido Disponibles
+## Características de contenido disponibles
 
 ### Sermones
 
-Explora y mira sermones grabados de tu iglesia. La biblioteca de sermones de tu iglesia esta organizada en listas de reproduccion y series, lo que facilita encontrar mensajes anteriores.
+Explore y vea sermones grabados de su iglesia. La biblioteca de sermones de su iglesia está organizada en listas de reproducción y series, lo que facilita encontrar mensajes anteriores.
 
-### Transmision en Vivo
+### Transmisión en vivo
 
-Mira la transmision en vivo de tu iglesia directamente en B1.church. Cuando un servicio esta en vivo, puedes unirte a la transmision e interactuar con otros espectadores a traves de funciones de chat y oracion.
+Vea la transmisión en vivo de su iglesia directamente en B1.church. Cuando un servicio está en vivo, puede unirse a la transmisión e interactuar con otros espectadores a través de funciones de chat y oración.
 
 ### Biblia
 
-Lee las Escrituras usando el lector de Biblia integrado. Puedes navegar por libros, capitulos y versiculos sin salir del sitio.
+Lea las Escrituras usando el lector de Biblia integrado. Puede navegar por libros, capítulos y versículos sin salir del sitio.
 
-### Versiculo del Dia
+### Versículo del día
 
-Visualiza un versiculo biblico bellamente formateado como imagen que cambia cada dia. La imagen se ajusta automaticamente para adaptarse a tu pantalla.
+Vea una imagen de versículo bíblico bellamente formateada que cambia todos los días. La imagen se ajusta automáticamente para adaptarse a su pantalla.
 
 ### Lecciones
 
-Accede al curriculo y materiales de aprendizaje de tu iglesia a traves de la plataforma integrada de Lessons.church. Tu sesion se transfiere automaticamente, para que puedas acceder directamente al contenido.
+Vea las lecciones programadas de los planes de su iglesia. Si es maestro o líder, puede usar la **Vista de maestro** para ver las lecciones en un formato de pantalla completa y fácil de navegar que es perfecto para enseñar o presentar.
 
-## Encontrar Contenido
+### Lecciones (Obsoleto - Pestaña integrada)
 
-Las paginas de contenido estan disponibles a traves de la navegacion del sitio de tu iglesia. El administrador de tu iglesia decide cuales funciones de contenido estan habilitadas y como aparecen en el menu. Si no ves una funcion de contenido en particular de las listadas arriba, es posible que no este configurada para tu iglesia.
+La pestaña integrada de **Lecciones** ha quedado obsoleta. La reproducción de currículos ahora está en **[FreePlay](/docs/freeplay/)**, la aplicación de TV gratuita de ChurchApps para pantallas de aula. Para explorar currículos en un teléfono, tableta o computadora, inicie sesión directamente en [Lessons.church](https://lessons.church). Consulte la [página de referencia de Lecciones](./lessons.md) para obtener detalles.
+
+## Encontrar contenido
+
+Las páginas de contenido están disponibles a través de la navegación del sitio de su iglesia. El administrador de su iglesia decide qué características de contenido están habilitadas y cómo aparecen en el menú. Si no ve una característica de contenido particular enumerada anteriormente, es posible que no esté configurada para su iglesia.
 
 :::info
-Algunas funciones de contenido (como las [Lecciones](./lessons.md)) requieren que hayas [iniciado sesion](../getting-started/logging-in.md), mientras que otras (como los [Sermones](./sermons.md) y la [Biblia](./bible.md)) estan disponibles publicamente.
+Los [Sermones](./sermons.md) y la [Biblia](./bible.md) están disponibles públicamente. Otras características pueden requerir que haya [iniciado sesión](../getting-started/logging-in.md).
 :::
 
-## Siguientes Pasos
+## Próximos pasos
 
-- [Sermones](./sermons.md) -- Explora y mira sermones grabados
-- [Transmision en Vivo](./live-streaming.md) -- Mira transmisiones en vivo
-- [Biblia](./bible.md) -- Lee las Escrituras en el lector integrado
-- [Versiculo del Dia](./verse-of-the-day.md) -- Consulta el versiculo diario de hoy
-- [Lecciones](./lessons.md) -- Accede a curriculo y materiales de aprendizaje
+- [Sermones](./sermons.md) -- Explore y vea sermones grabados
+- [Transmisión en vivo](./live-streaming.md) -- Vea transmisiones en vivo
+- [Biblia](./bible.md) -- Lea las Escrituras en el lector integrado
+- [Versículo del día](./verse-of-the-day.md) -- Vea el versículo diario de hoy
+- [Vista de maestro](./teacher-view.md) -- Use la interfaz ampliada de maestro para contenido de lecciones
+- [FreePlay](/docs/freeplay/) -- Reproduzca lecciones en televisores de aula (reemplaza la pestaña de Lecciones integrada obsoleta)

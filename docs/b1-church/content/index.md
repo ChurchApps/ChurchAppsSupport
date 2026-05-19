@@ -28,7 +28,11 @@ Read Scripture using the built-in Bible reader. You can navigate through books, 
 
 View a beautifully formatted Bible verse image that changes every day. The image automatically adjusts to fit your screen.
 
-### Lessons (Deprecated)
+### Lessons
+
+View scheduled lessons from your church's plans. If you are a teacher or leader, you can use the **Teacher View** to see lessons in a full-screen, easy-to-navigate format that's perfect for teaching or presenting.
+
+### Lessons (Deprecated - Embedded Tab)
 
 The embedded **Lessons** tab has been deprecated. Curriculum playback now lives in **[FreePlay](/docs/freeplay/)**, ChurchApps' free TV app for classroom screens. To browse curriculum on a phone, tablet, or computer, sign in to [Lessons.church](https://lessons.church) directly. See the [Lessons reference page](./lessons.md) for details.
 
@@ -46,4 +50,5 @@ Content pages are available through your church's site navigation. Your church a
 - [Live Streaming](./live-streaming.md) -- Watch live broadcasts
 - [Bible](./bible.md) -- Read Scripture in the built-in reader
 - [Verse of the Day](./verse-of-the-day.md) -- See today's daily verse
+- [Teacher View](./teacher-view.md) -- Use the expanded teacher interface for lesson content
 - [FreePlay](/docs/freeplay/) -- Play lessons on classroom TVs (replaces the deprecated in-app Lessons tab)
