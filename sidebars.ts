@@ -150,6 +150,17 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'category',
+          label: 'Integrations',
+          link: { type: 'doc', id: 'b1-admin/integrations/index' },
+          items: [
+            'b1-admin/integrations/slack-discord',
+            'b1-admin/integrations/zapier',
+            'b1-admin/integrations/make',
+            'b1-admin/integrations/google-sheets',
+          ],
+        },
+        {
+          type: 'category',
           label: 'Profile',
           key: 'admin-profile',
           link: { type: 'doc', id: 'b1-admin/profile/index' },
@@ -553,6 +564,8 @@ const sidebars: SidebarsConfig = {
             'developer/api/local-setup',
             'developer/api/database',
             'developer/api/module-structure',
+            'developer/api/api-keys',
+            'developer/api/connected-apps',
             'developer/api/webhooks',
             {
               type: 'category',
