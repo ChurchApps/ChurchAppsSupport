@@ -19,6 +19,7 @@ B1 plugs into the tools your team already uses. Connect Slack or Discord for sta
 | **[Zapier](./zapier)** | Use B1 events as triggers and B1 actions in any of Zapier's 7,000+ apps | Both | 5–10 min per Zap |
 | **[Make](./make)** | Same idea as Zapier, in Make's visual scenario builder | Both | 5–10 min per scenario |
 | **[Google Sheets](./google-sheets)** | Export People / Donations / Groups / Attendance to a spreadsheet on demand | B1 → Sheet | 5 minutes |
+| **[Connected services](./services/)** | Curated recipes for Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr | Varies | 5–10 min each |
 
 ## How to Pick
 
@@ -59,3 +60,4 @@ If none of the above fits, every B1 surface is open:
 - [Zapier](./zapier) — connect to 7,000+ apps
 - [Make](./make) — visual workflow automation
 - [Google Sheets](./google-sheets) — export to spreadsheets
+- [Connected services](./services/) — per-service recipes (Mailchimp, Donorbox, Clearstream, …)

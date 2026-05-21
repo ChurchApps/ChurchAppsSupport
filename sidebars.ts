@@ -157,6 +157,21 @@ const sidebars: SidebarsConfig = {
             'b1-admin/integrations/zapier',
             'b1-admin/integrations/make',
             'b1-admin/integrations/google-sheets',
+            {
+              type: 'category',
+              label: 'Connected services',
+              link: { type: 'doc', id: 'b1-admin/integrations/services/index' },
+              items: [
+                'b1-admin/integrations/services/mailchimp',
+                'b1-admin/integrations/services/donorbox',
+                'b1-admin/integrations/services/subsplash',
+                'b1-admin/integrations/services/vomo',
+                'b1-admin/integrations/services/clearstream',
+                'b1-admin/integrations/services/text-in-church',
+                'b1-admin/integrations/services/mobile-message',
+                'b1-admin/integrations/services/checkr',
+              ],
+            },
           ],
         },
         {
