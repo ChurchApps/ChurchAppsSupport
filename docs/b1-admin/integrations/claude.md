@@ -15,7 +15,7 @@ Connect Anthropic's Claude to your church's B1 data. With an API key and a few m
 
 - A church admin with the **Edit Settings** permission (to mint an API key)
 - One of: **Claude Code** (CLI / IDE extension), **Claude Desktop** (Mac/Windows), or a **Claude Pro/Max/Team** account
-- The full URL of your B1 API — usually `https://api.b1.church` for hosted churches, or your self-hosted Api host
+- The full URL of your B1 API — usually `https://api.churchapps.org` for hosted churches, or your self-hosted Api host
 
 </div>
 
@@ -51,7 +51,7 @@ Pick the Claude client you use:
 In a terminal:
 
 ```bash
-claude mcp add --transport http b1 https://api.b1.church/mcp \
+claude mcp add --transport http b1 https://api.churchapps.org/mcp \
   --header "Authorization: Bearer cak_<prefix>.<secret>"
 ```
 
@@ -70,7 +70,7 @@ Add a `b1` server entry. Newer versions of Claude Desktop speak HTTP MCP nativel
 {
   "mcpServers": {
     "b1": {
-      "url": "https://api.b1.church/mcp",
+      "url": "https://api.churchapps.org/mcp",
       "headers": {
         "Authorization": "Bearer cak_<prefix>.<secret>"
       }
@@ -88,7 +88,7 @@ If your Claude Desktop version only supports stdio servers, bridge through `mcp-
       "command": "npx",
       "args": [
         "-y", "mcp-remote",
-        "https://api.b1.church/mcp",
+        "https://api.churchapps.org/mcp",
         "--header", "Authorization:Bearer cak_<prefix>.<secret>"
       ]
     }
@@ -146,7 +146,7 @@ ChurchApps is free and open-source — the MCP server is part of the API your ch
 
 **Claude can't find an endpoint:** ask it to call `list_endpoints` with a filter, e.g. *"use list_endpoints with filter 'donations' to find the right path"*. The route inventory is generated from the live API, so anything you can hit with `curl` is there.
 
-**Local development:** swap `https://api.b1.church/mcp` for `http://localhost:8084/mcp` — same auth, same tools.
+**Local development:** swap `https://api.churchapps.org/mcp` for `http://localhost:8084/mcp` — same auth, same tools.
 
 ## Related
 

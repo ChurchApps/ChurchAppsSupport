@@ -74,7 +74,7 @@ If you'll use the key to register webhooks (e.g. for a Zapier or Make integratio
 Same as any bearer token — every authenticated endpoint accepts API keys exactly as it accepts JWTs:
 
 ```bash
-curl https://api.b1.church/membership/people \
+curl https://api.churchapps.org/membership/people \
   -H "Authorization: Bearer cak_a1b2c3d4.f0e1d2c3b4a5968778695a4b3c2d1e0f1a2b3c4d5e6f7"
 ```
 

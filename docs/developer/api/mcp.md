@@ -14,7 +14,7 @@ The B1 API ships an [MCP (Model Context Protocol)](https://modelcontextprotocol.
 <h4>Before You Begin</h4>
 
 - A [B1 API key](./api-keys) (`cak_…`) with the scopes the client should have
-- A reachable B1 API host — `https://api.b1.church` for hosted churches, or your own deployment
+- A reachable B1 API host — `https://api.churchapps.org` for hosted churches, or your own deployment
 - An MCP client. See [Claude](/docs/b1-admin/integrations/claude) and [ChatGPT](/docs/b1-admin/integrations/chatgpt) for end-user setup
 
 </div>

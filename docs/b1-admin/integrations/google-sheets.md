@@ -54,7 +54,7 @@ After installation, a **B1 Export** entry appears under the **Extensions** menu 
 ### 3. Connect the key
 
 1. **Extensions → B1 Export → Connect…** (or **B1 Export → Connect…** from the menu bar after the first open).
-2. Paste the API key into the sidebar, leave the Base URL as `https://api.b1.church` (unless you're testing against staging), and click **Save**.
+2. Paste the API key into the sidebar, leave the Base URL as `https://api.churchapps.org` (unless you're testing against staging), and click **Save**.
 3. Click **Test Connection** — a green "Connection OK" confirms the key works.
 
 The key is stored in **per-user properties** (`PropertiesService.getUserProperties()`) — it's tied to your Google account, never written into the sheet, and never visible to other editors of the spreadsheet.

@@ -15,7 +15,7 @@ Connect OpenAI's ChatGPT to your church's B1 data so you can ask questions like 
 
 - A church admin with the **Edit Settings** permission (to mint an API key)
 - A **ChatGPT Plus, Pro, Team, or Enterprise** account (the free tier cannot use Custom GPTs or Connectors)
-- The full URL of your B1 API — usually `https://api.b1.church` for hosted churches, or your self-hosted Api host
+- The full URL of your B1 API — usually `https://api.churchapps.org` for hosted churches, or your self-hosted Api host
 
 </div>
 
@@ -66,7 +66,7 @@ See [API Keys](/docs/developer/api/api-keys) for the full scope list.
      title: B1 API
      version: "1.0"
    servers:
-     - url: https://api.b1.church
+     - url: https://api.churchapps.org
    paths:
      /membership/people:
        get:

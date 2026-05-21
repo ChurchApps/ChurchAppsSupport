@@ -44,7 +44,7 @@ The instant trigger lets you pick which event to listen for — one trigger modu
 ### 2. Install the connection
 
 1. In Make, build a new scenario and drop the **B1.church** trigger module onto the canvas.
-2. When prompted, **Create a connection**. Paste the API key into the *API Key* field and leave *API Base URL* as `https://api.b1.church` (unless you're testing against staging).
+2. When prompted, **Create a connection**. Paste the API key into the *API Key* field and leave *API Base URL* as `https://api.churchapps.org` (unless you're testing against staging).
 3. Click **Save** — Make tests the key by reading your church profile.
 
 The connection is saved on your Make account and reused across scenarios.
