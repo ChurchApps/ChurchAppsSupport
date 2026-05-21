@@ -62,4 +62,8 @@ The API uses ES modules (`"type": "module"` in `package.json`). Make sure your i
 - **[Local Setup](./local-setup)** -- Clone, configure, and run the API locally
 - **[Database](./database)** -- Database-per-module architecture, schema scripts, and data access patterns
 - **[Module Structure](./module-structure)** -- Controllers, repositories, models, and authentication
+- **[API Keys](./api-keys)** -- Personal access tokens for scripts and connectors
+- **[Connected Apps (OAuth)](./connected-apps)** -- Multi-tenant OAuth flow for third-party apps
+- **[Webhooks](./webhooks)** -- Push event notifications to external systems
+- **[MCP Server](./mcp)** -- Model Context Protocol endpoint that exposes the API to AI assistants
 - **[Endpoint Reference](./endpoints/)** -- Complete REST API documentation for all modules

@@ -157,6 +157,8 @@ const sidebars: SidebarsConfig = {
             'b1-admin/integrations/zapier',
             'b1-admin/integrations/make',
             'b1-admin/integrations/google-sheets',
+            'b1-admin/integrations/claude',
+            'b1-admin/integrations/chatgpt',
             {
               type: 'category',
               label: 'Connected services',
@@ -582,6 +584,7 @@ const sidebars: SidebarsConfig = {
             'developer/api/api-keys',
             'developer/api/connected-apps',
             'developer/api/webhooks',
+            'developer/api/mcp',
             {
               type: 'category',
               label: 'Endpoint Reference',

@@ -19,6 +19,8 @@ B1 plugs into the tools your team already uses. Connect Slack or Discord for sta
 | **[Zapier](./zapier)** | Use B1 events as triggers and B1 actions in any of Zapier's 7,000+ apps | Both | 5–10 min per Zap |
 | **[Make](./make)** | Same idea as Zapier, in Make's visual scenario builder | Both | 5–10 min per scenario |
 | **[Google Sheets](./google-sheets)** | Export People / Donations / Groups / Attendance to a spreadsheet on demand | B1 → Sheet | 5 minutes |
+| **[Claude](./claude)** | Ask Anthropic's Claude questions about your church data, scoped to your permissions | Both | 5 minutes |
+| **[ChatGPT](./chatgpt)** | Same idea with OpenAI's ChatGPT, via a Custom GPT or MCP-aware OpenAI tooling | Both | 10 minutes |
 | **[Connected services](./services/)** | Curated recipes for Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr | Varies | 5–10 min each |
 
 ## How to Pick
@@ -26,6 +28,7 @@ B1 plugs into the tools your team already uses. Connect Slack or Discord for sta
 - **Just want a notification in chat?** Use **Slack** or **Discord** — no third-party account, no Zap to maintain. Configured entirely inside B1Admin.
 - **Want to automate something across apps** (e.g. "when someone gives, add them to my Mailchimp list and Slack #donations")? Use **Zapier** or **Make**. Zapier is friendlier; Make is cheaper at scale and has more flexible logic.
 - **Need a one-off data pull or a scheduled report**? Use **Google Sheets** — paste an API key into the add-on's sidebar and click Export.
+- **Want to ask questions in plain English** ("how many first-time visitors last Sunday?", "summarize giving this month")? Use **[Claude](./claude)** or **[ChatGPT](./chatgpt)** — both connect to B1 with a single API key.
 - **Building your own custom integration?** None of the above — talk to the [REST API](/docs/developer/api) directly with an [API key](/docs/developer/api/api-keys), or subscribe a server you control to [webhooks](/docs/developer/api/webhooks).
 
 ## What They Have In Common
@@ -60,4 +63,6 @@ If none of the above fits, every B1 surface is open:
 - [Zapier](./zapier) — connect to 7,000+ apps
 - [Make](./make) — visual workflow automation
 - [Google Sheets](./google-sheets) — export to spreadsheets
+- [Claude](./claude) — ask Anthropic's Claude about your church data
+- [ChatGPT](./chatgpt) — ask OpenAI's ChatGPT about your church data
 - [Connected services](./services/) — per-service recipes (Mailchimp, Donorbox, Clearstream, …)
