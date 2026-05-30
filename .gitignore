@@ -6,4 +6,4 @@ build
 .docusaurus
 scripts/output/
 .cache-loader
-config.bat
+.env
