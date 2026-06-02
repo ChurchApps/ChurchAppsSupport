@@ -1,58 +1,58 @@
 ---
-title: "Gast-Registrierung"
+title: "Gästeregistrierung"
 ---
 
-# Gast-Registrierung
+# Gästeregistrierung
 
 <div class="article-intro">
 
-Wenn Sie eine Kirche zum ersten Mal besuchen, können Sie sich selbst und Ihre Familie als Gäste mit der Gast-Registrierungsseite registrieren. Dies erstellt einen Datensatz im System der Kirche, damit Freiwillige Sie einchecken können, wenn Sie ankommen.
+Wenn Sie eine Kirche zum ersten Mal besuchen, können Sie sich und Ihre Familie als Gäste über die Gästeregistrierungsseite registrieren. Dies erstellt einen Datensatz im System der Kirche, damit Freiwillige Sie bei Ihrer Ankunft einchecken können.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Ihre Kirche muss QR-Gast-Registrierung aktiviert haben
-- Scannen Sie den QR-Code, der auf dem Check-In-Kiosk angezeigt wird, oder erhalten Sie einen Link von einem Kirchen-Freiwilligen
+- Ihre Kirche muss die QR-Gästeregistrierung aktiviert haben
+- Scannen Sie den QR-Code, der am Eincheckschalter der Kirche angezeigt wird, oder erhalten Sie einen Link von einem Kirchenfreiwilligen
 
 </div>
 
-## Wie Gast-Registrierung funktioniert
+## Wie die Gästeregistrierung funktioniert
 
-Gast-Registrierung ist für Besucher vorgesehen, die noch kein Konto haben. Ein QR-Code wird auf dem Check-In-Kiosk der Kirche angezeigt, der auf die Registrierungsseite verlinkt. Sie können auch den Link von einem Freiwilligen oder Begrüßer erhalten.
+Die Gästeregistrierung ist für Besucher konzipiert, die noch kein Konto haben. Ein QR-Code wird am Eincheckschalter der Kirche angezeigt, der mit der Registrierungsseite verlinkt ist. Sie können den Link auch von einem Freiwilligen oder Gastgeber erhalten.
 
-## Registrieren Sie Ihre Familie
+## Registrierung Ihrer Familie
 
-1. **Scannen Sie den QR-Code** auf dem Check-In-Kiosk oder öffnen Sie den Gast-Registrierungslink auf Ihrem Telefon.
-2. Das Gast-Registrierungsformular erscheint mit Feldern für den **Haupt-Kontakt**:
+1. **Scannen Sie den QR-Code** am Eincheckschalter oder öffnen Sie den Gästeregistrierungslink auf Ihrem Telefon.
+2. Das Gästeregistrierungsformular erscheint mit Feldern für den **Primärkontakt**:
    - **Vorname** (erforderlich)
    - **Nachname** (erforderlich)
    - **E-Mail** (optional)
    - **Telefon** (optional)
-3. Um **Familienmitglieder** hinzuzufügen, tippen Sie auf **Familienmitglied hinzufügen** und geben Sie deren Vor- und Nachname ein. Sie können bis zu 10 Familienmitglieder hinzufügen.
-4. Um ein Familienmitglied zu entfernen, tippen Sie auf die Entfernen-Schaltfläche neben ihrem Namen.
-5. Tippen Sie auf **Registrieren**, um einzureichen.
+3. Um **Familienmitglieder** hinzuzufügen, tippen Sie auf **Add Family Member** und geben Sie ihren Vor- und Nachnamen ein. Sie können bis zu 10 Familienmitglieder hinzufügen.
+4. Um ein Familienmitglied zu entfernen, tippen Sie auf die Schaltfläche „Entfernen" neben ihrem Namen.
+5. Tippen Sie auf **Register**, um die Registrierung einzureichen.
 
 ## Nach der Registrierung
 
-Sobald Sie das Formular absenden, erscheint ein Bestätigungsbildschirm mit der Nachricht: "Registrierung abgeschlossen — Sie sind einsatzbereit! Ein Mitarbeiter wird Sie in Kürze einchecken."
+Nachdem Sie das Formular eingereicht haben, erscheint ein Bestätigungsbildschirm mit der Nachricht: "Registration Complete -- You're all set! A staff member will check you in shortly."
 
 Ihre Registrierung erstellt Datensätze in der Kirchendatenbank:
 
-- Ein **Haushalt** wird unter Verwendung des Nachnamens des Haupt-Kontakts erstellt.
-- **Personendatensätze** werden für jedes Familienmitglied mit einem "Gast"-Mitgliedschaftsstatus erstellt.
-- Ein Kirchen-Freiwilliger oder Administrator kann Ihre Familie dann mit dem [B1 Checkin](../../b1-checkin/check-in/looking-up-members) Kiosk einchecken.
+- Ein **Haushalt** wird mit dem Nachnamen des Primärkontakts erstellt.
+- **Personendatensätze** werden für jedes Familienmitglied mit dem Mitgliedschaftsstatus „Guest" erstellt.
+- Ein Kirchenfreiwilliger oder Administrator kann dann Ihre Familie über den [B1 Checkin](../../b1-checkin/check-in/looking-up-members)-Schalter einchecken.
 
 :::info
-Wenn Ihre E-Mail mit einem vorhandenen Datensatz in der Kirchendatenbank übereinstimmt, verlinkt sich das System mit diesem Datensatz statt einen Duplikat zu erstellen. Dies hält die Daten der Kirche sauber.
+Wenn Ihre E-Mail mit einem vorhandenen Datensatz in der Kirchendatenbank übereinstimmt, verlinkt das System mit diesem Datensatz, anstatt ein Duplikat zu erstellen. Dies hält die Daten der Kirche sauber.
 :::
 
 :::tip
-Die Angabe Ihrer E-Mail-Adresse hilft der Kirche, sich nach Ihrem Besuch mit Ihnen in Kontakt zu setzen. Es ist optional, wird aber empfohlen.
+Das Angeben Ihrer E-Mail-Adresse hilft der Kirche, sich nach Ihrem Besuch mit Ihnen in Verbindung zu setzen. Es ist optional, aber empfohlen.
 :::
 
-## Verwandte Artikel
+## Zugehörige Artikel
 
-- [Selbst-Check-In](./self-checkin) -- Checken Sie sich selbst ein, nachdem Sie registriert sind
-- [Gäste hinzufügen (Kiosk)](../../b1-checkin/check-in/adding-guests) -- Wie Freiwillige Gäste am Kiosk hinzufügen
+- [Self Check-In](./self-checkin) – Checken Sie sich nach der Registrierung selbst ein
+- [Adding Guests (Kiosk)](../../b1-checkin/check-in/adding-guests) – Wie Freiwillige Gäste am Schalter hinzufügen

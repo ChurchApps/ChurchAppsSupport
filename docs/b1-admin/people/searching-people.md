@@ -61,6 +61,14 @@ Not every piece of information needs to be visible at once. You can choose which
 Your column choices affect what is included when you export to CSV. Customize columns before exporting to get exactly the data you need.
 :::
 
+## Pagination
+
+When your directory has many records, results are split across pages. Use the **pagination controls** at the bottom of the table to move between pages. The current page and total record count are displayed so you always know where you are in the list.
+
+:::tip
+If you want to see more results at once, refine your search to narrow down the list rather than paging through a large directory.
+:::
+
 ## Exporting Search Results
 
 You can download your current search results as a CSV file at any time:

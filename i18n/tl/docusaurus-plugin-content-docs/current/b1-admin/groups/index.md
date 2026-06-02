@@ -6,42 +6,44 @@ title: "Mga Grupo"
 
 <div class="article-intro">
 
-Ang seksyon ng **Mga Grupo** ay nagbibigay-daan sa iyo na i-organisa ang mga miyembro ng iyong simbahan sa mga team, ministeryo, maliliit na grupo, Bible study, komite, at marami pa. Ang mga grupo ang pundasyon ng buhay-komunidad sa iyong simbahan, at ang seksyong ito ay nagbibigay sa iyo ng mga kasangkapan upang lumikha, mamahala, at makipag-ugnayan sa bawat grupo sa isang lugar.
+Ang **Groups** section ay nagbibigay-daan sa inyo na i-organize ang inyong mga miyembro ng parokya sa mga ministries, small groups, Bible studies, committees, at iba pa. Ang mga grupo ay ang backbone ng community life sa inyong parokya, at ang section na ito ay nagbibigay sa inyo ng mga kagamitan upang lumikha, pamahalaan, at makipag-ugnayan sa bawat grupo sa isang lugar. Tandaan na ang **Teams** ay hiwalay mula sa Mga Grupo — Ang Teams ay ginagamit para sa paglilingkod at volunteer scheduling.
 
 </div>
 
-## Pangkalahatang-tanaw
+## Overview
 
-Ang mga grupo ay naka-organisa ayon sa **kategorya**. Ang kategorya ay isang top-level na label tulad ng "Small Groups," "Ministries," o "Committees." Ang bawat kategorya ay maaaring maglaman ng maraming grupo, na nagpapadali sa pag-aayos ng mga magkakaugnay na grupo.
+Ang mga grupo ay inorganisado ayon sa **kategorya**. Ang kategorya ay isang top-level label tulad ng "Small Groups," "Ministries," o "Committees." Bawat kategorya ay maaaring maglaman ng maraming grupo, na ginagawang simple na mapanatili ang mga kaugnay na grupo na magkasama.
 
-Kapag binuksan mo ang pahina ng Groups, makikita mo ang isang buod sa itaas na nagpapakita ng:
+Kapag bubuksan ninyo ang Mga Grupo page, makikita ninyo ang isang summary sa itaas na nagpapakita ng:
 
 - **Total Groups** -- ang bilang ng mga grupo sa lahat ng kategorya
-- **Categories** -- ang bilang ng mga kategorya ng grupo na iyong nilikha
-- **Total Members** -- ang pinagsama-samang bilang ng mga miyembro sa lahat ng grupo
+- **Categories** -- ang bilang ng mga kategorya ng grupo na inyong nilikha
+- **Total Members** -- ang pinagsama-samang bilang ng mga miyembro sa lahat ng mga grupo
 
-Sa ibaba ng buod, ang iyong mga grupo ay nakalista ayon sa kategorya na may bilang ng miyembro na ipinapakita para sa bawat grupo.
+Sa ilalim ng summary, ang inyong mga grupo ay nakalista ayon sa kategorya na may bilang ng miyembro na ipinakita para sa bawat grupo.
 
-## Ano ang Maaari Mong Gawin
+## Ano Ang Maaari Ninyong Gawin
 
-Narito ang maaari mong gawin sa seksyon ng Mga Grupo:
+Dito ang inyong makakamit sa Groups section:
 
-1. **Lumikha at mag-organisa ng mga grupo** -- Magdagdag ng mga bagong grupo sa loob ng mga kategorya upang ipakita kung paano naka-istruktura ang iyong simbahan. Tingnan ang [Paglikha ng Mga Grupo](./creating-groups.md).
+1. **Lumikha at i-organize ang mga grupo** -- Magdagdag ng mga bagong grupo sa loob ng mga kategorya upang magreflect kung paano ang inyong parokya ay istrukturado. Tingnan ang [Creating Groups](./creating-groups.md).
 
-2. **Pamahalaan ang mga miyembro ng grupo** -- Magdagdag at mag-alis ng mga miyembro, mag-designate ng mga lider, at makipag-ugnayan sa iyong mga grupo. Tingnan ang [Mga Miyembro ng Grupo](./group-members.md).
+2. **Pamahalaan ang mga miyembro ng grupo** -- Magdagdag at mag-alisin ng mga miyembro, tukuyin ang mga lider, at makipag-ugnayan sa inyong mga grupo. Tingnan ang [Group Members](./group-members.md).
 
-3. **Mag-iskedyul ng mga event** -- Ang bawat grupo ay maaaring magkaroon ng sariling kalendaryo para sa mga pagpupulong, event, at umuulit na aktibidad. Tingnan ang [Kalendaryo ng Grupo](./group-calendar.md).
+3. **I-schedule ang mga kaganapan** -- Bawat grupo ay maaaring magkaroon ng sariling calendar para sa mga pagpupulong, kaganapan, at paulit-ulit na mga aktibidad. Tingnan ang [Group Calendar](./group-calendar.md).
 
-4. **Mag-export ng datos ng grupo** -- Mag-download ng mga listahan ng miyembro para sa anumang grupo bilang CSV file para magamit sa mga spreadsheet o mailing. Tingnan ang [Mga Miyembro ng Grupo](./group-members.md) para sa mga tagubilin sa pag-export.
+4. **Pamahalaan ang join requests** -- Kapag ang isang grupo ay gumagamit ng **Request** join policy, suriin at aprubahan o pagsabihan ang mga papasok na membership requests mula sa mga taong gustong sumali. Tingnan ang [Group Join Requests](./group-join-requests.md).
 
-## Pagsisimula
+5. **I-export ang data ng grupo** -- I-download ang mga miyembro ng grupo bilang isang CSV file para sa paggamit sa mga spreadsheet o mailings. Tingnan ang [Group Members](./group-members.md) para sa mga instruksyon sa pag-export.
 
-Upang ma-access ang Mga Grupo, i-click ang **People** sa kaliwang sidebar ng iyong B1 Admin dashboard, pagkatapos ay piliin ang **Groups**. Makikita mo ang lahat ng iyong mga kasalukuyang grupo na naka-organisa ayon sa kategorya.
+## Magsimula
+
+Upang ma-access ang Mga Grupo, i-click ang **People** sa kaliwang sidebar ng inyong B1 Admin dashboard, pagkatapos piliin ang **Groups**. Makikita ninyo ang lahat ng inyong mga kasalukuyang grupo na inorganisado ayon sa kategorya.
 
 :::tip
-Kung nagsisimula ka pa lang, magsimula sa pamamagitan ng paglikha ng ilang mga kategorya na tumutugma sa istruktura ng iyong simbahan (halimbawa, "Ministries," "Small Groups," "Teams"). Pagkatapos ay magdagdag ng mga indibidwal na grupo sa loob ng bawat kategorya. Tingnan ang [Paglikha ng Mga Grupo](./creating-groups.md) para sa sunud-sunod na gabay.
+Kung kayo ay nagsisimula pa lamang, magsimula sa pamamagitan ng paglikha ng ilang mga kategorya na tumutugma sa inyong istruktura ng parokya (halimbawa, "Ministries," "Small Groups," "Committees"). Pagkatapos ay magdagdag ng mga indibidwal na grupo sa loob ng bawat kategorya. Tingnan ang [Creating Groups](./creating-groups.md) para sa isang step-by-step walkthrough.
 :::
 
 :::info
-Ang mga miyembro ng grupo ay kailangang una munang umiiral sa iyong direktoryo ng [People](../people/adding-people.md) bago sila maidagdag sa isang grupo. Kung nagse-set up ka ng B1 sa unang pagkakataon, [mag-import ng iyong datos ng miyembro](../people/importing-data.md) bago lumikha ng mga grupo.
+Ang mga miyembro ng grupo ay dapat munang umiiral sa inyong [People](../people/adding-people.md) directory bago sila maaaring idagdag sa isang grupo. Kung nagseset-up kayo ng B1 sa unang pagkakataon, [i-import ang inyong miyembro ng datos](../people/importing-data.md) bago lumikha ng mga grupo.
 :::

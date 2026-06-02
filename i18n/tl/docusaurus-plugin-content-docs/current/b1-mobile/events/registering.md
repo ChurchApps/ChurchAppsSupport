@@ -1,12 +1,12 @@
 ---
-title: "Pagpaparehistro para sa mga Kaganapan"
+title: "Pagrehistro para sa Mga Kaganapan"
 ---
 
-# Pagpaparehistro para sa mga Kaganapan
+# Pagrehistro para sa Mga Kaganapan
 
 <div class="article-intro">
 
-Magparehistro para sa mga kaganapan ng simbahan nang direkta mula sa B1 Mobile gamit ang isang simpleng tatlong-hakbang na proseso. Maaari kang mag-sign up ng iyong sarili at magdagdag ng mga miyembro ng pamilya nang direkta mula sa iyong telepono.
+Magrehistro para sa mga kaganapan ng simbahan direkta mula sa B1 Mobile gamit ang isang simpleng prosesong tatlong hakbang. Maaari kang mag-sign up para sa iyo at magdagdag ng mga miyembro ng pamilya kaagad mula sa iyong telepono.
 
 </div>
 
@@ -14,40 +14,40 @@ Magparehistro para sa mga kaganapan ng simbahan nang direkta mula sa B1 Mobile g
 <h4>Bago Magsimula</h4>
 
 - [I-install ang B1 Mobile](../getting-started/installing) at [mag-log in](../getting-started/logging-in) sa iyong account
-- Ang kaganapan ay dapat na may enabled na pagpaparehistro at ang registration window ay dapat na bukas
+- Ang kaganapan ay dapat may enabled na pagrehistro at ang panahon ng pagrehistro ay dapat bukas
 
 </div>
 
-## Hakbang 1: Ipasok ang Iyong Impormasyon
+## Hakbang 1: Magpasok ng Iyong Impormasyon
 
-1. Buksan ang isang kaganapan ng kalendaryo ng grupo na may enabled na pagpaparehistro at i-tap ang **Register**.
-2. Ang registration screen ay nagpapakita ng pamagat ng kaganapan, paglalarawan, at petsa.
-3. Dahil naka-log in ka, ang form ay nagkumpirma na ikaw ay nag-reregister sa ilalim ng iyong account.
+1. Magbukas ng kaganapan ng calendar ng grupo na may enabled na pagrehistro at i-tap ang **Register**.
+2. Ang screen ng pagrehistro ay nagpapakita ng pamagat ng kaganapan, paglalarawan, at petsa.
+3. Dahil logged in ka na, ang form ay nagpapatunay na nagrehistro ka sa ilalim ng iyong account.
 
 :::info
-Kung ang kaganapan ay may limitasyon sa kapasidad, isang progress bar ay nagpapakita kung gaano karaming mga lugar ang nananatili. Kung ang kaganapan ay puno, hindi ka makakapag-register.
+Kung ang kaganapan ay may limitasyon sa kapasidad, isang progress bar ay nagpapakita kung gaano karaming lugar ang natitira. Kung puno na ang kaganapan, hindi ka makakarehistro.
 :::
 
-## Hakbang 2: Magdagdag ng mga Miyembro ng Pamilya
+## Hakbang 2: Magdagdag ng Mga Miyembro ng Pamilya
 
-1. Upang magparehistro ng mga dagdag na miyembro ng pamilya, ipasok ang **First Name** at **Last Name** para sa bawat tao.
-2. I-tap ang **Add Member** upang magdagdag ng higit pang mga tao (hanggang 10 total).
-3. I-tap ang pindot sa pagtanggal sa tabi ng anumang miyembro upang bawiin sila sa pagpaparehistro.
-4. Kung nag-reregister ka lamang ng iyong sarili, laktawan ang hakbang na ito.
+1. Upang magrehistro ng mga karagdagang miyembro ng pamilya, magpasok ng **First Name** at **Last Name** para sa bawat tao.
+2. I-tap ang **Add Member** upang magdagdag ng maraming tao (hanggang 10 kabuuang).
+3. I-tap ang remove button na tabi ng anumang miyembro upang alisin sila mula sa pagrehistro.
+4. Kung mag-rehistro lamang ng iyo, laktawan ang hakbang na ito.
 
 ## Hakbang 3: Kumpirmahin
 
-1. Suriin ang mga detalye ng kaganapan at ang iyong impormasyon sa pagpaparehistro.
-2. Kumpirmahin ang iyong pagpaparehistro.
-3. Isang mensaheng pagkakumpirma ay lumilitaw na may mga detalye ng kaganapan at lahat ng mga taong iyong nag-register.
+1. Suriin ang mga detalye ng kaganapan at iyong impormasyon sa pagrehistro.
+2. Kumpirmahin ang iyong pagrehistro.
+3. Isang mensahe ng pagpapatunay ay lumalabas na may mga detalye ng kaganapan at lahat ng mga taong nag-rehistro mo.
 
-Makakatanggap ka rin ng **confirmation email** sa email address na nauugnay sa iyong account.
+Makakatanggap ka rin ng **confirmation email** sa address ng email na nauugnay sa iyong account.
 
-## Pagkakataon ng Pagpaparehistro
+## Pagkansela ng Pagrehistro
 
-Kung kailangan mong bawiin, makipag-ugnayan sa iyong administrator ng simbahan. Sila ay maaaring bawiin ang iyong pagpaparehistro mula sa B1 Admin registrations page.
+Kung kailangan mong kanselahin, makipag-ugnayan sa iyong administrator ng simbahan. Sila ay maaaring kanselahin ang iyong pagrehistro mula sa pahina ng pagrehistro sa B1 Admin.
 
 ## Mga Kaugnay na Artikulo
 
-- [Events Overview](./index.md) -- Mag-browse ng mga kaganapan na may pagpaparehistro sa mobile
-- [Viewing Plans](../serving/viewing-plans) -- Tuklasin ang iyong schedule ng paglilingkod
+- [Pangkalahatang Kaganapan](./index.md) -- Tuklasin ang mga kaganapan na may pagrehistro sa mobile
+- [Pagtingin sa Mga Plano](../serving/viewing-plans) -- Makita ang iyong iskedyul ng pagseserbisyo

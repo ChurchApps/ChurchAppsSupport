@@ -6,41 +6,27 @@ title: "Événements"
 
 <div class="article-intro">
 
-Consultez les événements à venir de votre église sur B1 Mobile et enregistrez-vous directement depuis votre téléphone.
+La fonctionnalité Événements dans B1 Mobile vous permet de consulter les événements de l'église à venir et de vous inscrire directement depuis votre téléphone. Lorsque votre église active l'inscription pour un événement, vous pouvez vous inscrire ainsi que vos proches en quelques clics.
 
 </div>
 
-## Parcourir les événements
+## Trouver les événements avec inscription
 
-1. Ouvrez B1 Mobile
-2. Appuyez sur l'icône **Événements** dans le menu inférieur
-3. Vous verrez les événements à venir de votre église
-4. Les événements affichent :
-   - **Titre de l'événement**
-   - **Date et heure**
-   - **Description**
-   - **Statut d'enregistrement** (Ouvert, Complet, Fermé, etc.)
+Les événements pour lesquels l'inscription est activée apparaissent dans vos calendriers de groupes. Lorsque vous appuyez sur un événement pour lequel l'inscription est disponible, vous verrez un bouton **S'inscrire** dans les détails de l'événement.
 
-## Enregistrement à un événement
+Les événements peuvent afficher différents statuts :
 
-1. Appuyez sur un événement pour ouvrir les détails
-2. Si l'enregistrement est ouvert, appuyez sur **S'inscrire**
-3. Vous pouvez ajouter des membres de la famille si vous le souhaitez
-4. Confirmez votre enregistrement
-5. Vous recevrez une confirmation par e-mail
+- **Ouvert** -- L'inscription est disponible et vous pouvez vous inscrire.
+- **Pas encore ouvert** -- La période d'inscription n'a pas encore commencé.
+- **Fermé** -- La date limite d'inscription est passée.
+- **Complet** -- Tous les places disponibles ont été prises.
 
-## Gérer vos enregistrements
+## Ce dont vous avez besoin
 
-1. Appuyez sur l'icône **Événements**
-2. Appuyez sur **Mes événements**
-3. Vous verrez tous les événements pour lesquels vous êtes inscrit
-4. Pour annuler, appuyez sur l'événement et sélectionnez **Annuler l'enregistrement**
+- [B1 Mobile installé](../getting-started/installing) et [connecté](../getting-started/logging-in)
+- Votre église doit avoir l'inscription aux événements activée pour l'événement
 
-:::info
-Certains événements peuvent avoir une limite de capacité. Si un événement est complet, vous ne pouvez pas vous inscrire jusqu'à ce qu'une place se libère.
-:::
+## En savoir plus
 
-## Articles connexes
-
-- [Enregistrement aux événements](../../b1-church/events/registering) — Guide d'enregistrement complet
-- [Aperçu des événements](../../b1-church/events/) — Voir tous les événements sur B1.church
+- [S'inscrire aux événements](./registering) -- Guide étape par étape pour vous inscrire à un événement sur mobile
+- [Enregistrement personnel](../checkin/self-checkin) -- Enregistrez-vous à votre arrivée à l'événement

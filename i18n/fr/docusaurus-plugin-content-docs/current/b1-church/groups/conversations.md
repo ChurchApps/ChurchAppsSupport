@@ -6,7 +6,7 @@ title: "Conversations de groupe"
 
 <div class="article-intro">
 
-L'onglet Conversations sur la page de votre groupe est un espace où les membres du groupe peuvent publier des messages et interagir entre eux. Utilisez les conversations pour discuter de sujets, partager des nouvelles et rester en contact avec votre groupe entre les réunions.
+L'onglet Conversations sur la page de votre groupe est un espace où les membres du groupe peuvent publier des messages et interagir les uns avec les autres. Utilisez les conversations pour discuter de sujets, partager des mises à jour et rester connecté avec votre groupe entre les réunions.
 
 </div>
 
@@ -18,9 +18,9 @@ L'onglet Conversations sur la page de votre groupe est un espace où les membres
 
 </div>
 
-## Accéder aux conversations
+## Accès aux conversations
 
-1. Accédez à la page de détails du groupe en cliquant sur un groupe depuis la [page des groupes](./browsing-groups.md).
+1. Accédez à la page de détails du groupe en cliquant sur un groupe dans la [page des groupes](./browsing-groups.md).
 2. Assurez-vous d'être connecté.
 3. Cliquez sur l'onglet **Conversations** dans la barre latérale.
 
@@ -28,30 +28,44 @@ L'onglet Conversations sur la page de votre groupe est un espace où les membres
 
 L'onglet Conversations peut afficher deux sous-onglets :
 
-- **Discussions** -- Un espace où tout membre du groupe peut publier des messages et répondre aux autres. C'est la vue par défaut et elle est toujours disponible.
-- **Annonces** -- Messages publiés par les responsables du groupe qui sont importants pour tous les membres. Les membres réguliers peuvent lire les annonces mais seuls les responsables peuvent en créer.
+- **Discussions** — Un espace où tout membre du groupe peut publier des messages et répondre à d'autres. C'est la vue par défaut et elle est toujours disponible.
+- **Annonces** — Messages publiés par les leaders du groupe qui sont importants pour tous les membres. Les membres ordinaires peuvent lire les annonces, mais seuls les leaders peuvent les créer.
 
-S'il n'y a pas d'annonces et que vous n'êtes pas responsable, vous verrez uniquement la vue Discussions sans la barre d'onglets.
+S'il n'y a pas d'annonces et vous n'êtes pas un leader, vous ne verrez que la vue Discussions sans la barre d'onglets.
 
-## Publier un message
+## Publication d'un message
 
 1. Ouvrez l'onglet **Conversations** sur la page de votre groupe.
 2. Assurez-vous d'être sur le sous-onglet **Discussions** (si la barre d'onglets est visible).
-3. Saisissez votre message dans le champ de texte.
+3. Tapez votre message dans le champ de texte.
 4. Soumettez votre message pour le partager avec le groupe.
 
-Votre message sera visible par tous les membres du groupe.
+Votre message sera visible pour tous les membres du groupe.
 
-:::tip
-Les conversations de groupe apparaissent également sur votre [Fil d'actualité](../community/timeline.md), vous pouvez donc suivre les discussions sans visiter chaque groupe individuellement.
+## Modification ou suppression de vos messages
+
+Vous pouvez modifier ou supprimer tout message que vous avez publié :
+
+1. Survolez votre message (ou appuyez dessus sur mobile) pour révéler le bouton **plus d'options** (⋮).
+2. Cliquez sur le bouton pour ouvrir le menu des messages.
+3. Choisissez **Modifier** pour modifier le texte du message, ou **Supprimer** pour le supprimer.
+   - Lors de la modification, le texte du message est rechargé dans le champ d'entrée. Apportez vos modifications et soumettez pour les enregistrer.
+   - Lors de la suppression, une boîte de dialogue de confirmation apparaît. Cliquez sur **Confirmer** pour supprimer définitivement le message.
+
+:::info
+Vous ne pouvez modifier ou supprimer que vos propres messages. Les messages publiés par d'autres membres n'affichent pas les options de modification/suppression.
 :::
 
-## Fonctionnalités des responsables
+:::tip
+Les conversations de groupe apparaissent également sur votre [Timeline](../community/timeline.md), afin que vous puissiez suivre les discussions sans visiter chaque groupe individuellement.
+:::
 
-Si vous êtes responsable d'un groupe, vous disposez de capacités supplémentaires dans l'onglet Conversations :
+## Fonctionnalités de leader
 
-- **Publier des annonces** -- Passez au sous-onglet **Annonces** et publiez des messages que tous les membres du groupe peuvent lire.
-- **Publier des discussions** -- Vous pouvez également participer aux discussions régulières comme tout autre membre.
+Si vous êtes un leader du groupe, vous avez des capacités supplémentaires dans l'onglet Conversations :
+
+- **Publier des annonces** — Passez au sous-onglet **Annonces** et publiez des messages que tous les membres du groupe peuvent lire.
+- **Publier des discussions** — Vous pouvez également participer aux discussions régulières comme tout autre membre.
 
 :::info
 Les conversations sont spécifiques à chaque groupe. Les messages que vous publiez dans un groupe n'apparaîtront pas dans les conversations d'un autre groupe.

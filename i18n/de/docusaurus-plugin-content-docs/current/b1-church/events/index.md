@@ -1,36 +1,36 @@
 ---
-title: "Ereignisse"
+title: "Veranstaltungen"
 ---
 
-# Ereignisse
+# Veranstaltungen
 
 <div class="article-intro">
 
-Der Ereignisse-Bereich auf B1.church ermöglicht es Ihnen, kommende Kirchenereignisse zu durchsuchen und sich direkt auf der Website dafür zu registrieren. Wenn Ihre Kirche die Registrierung für ein Ereignis aktiviert, können Sie sich selbst und Ihre Familienmitglieder in nur wenigen Schritten anmelden.
+Der Bereich „Events" auf B1.church ermöglicht es Ihnen, bevorstehende Kirchenveranstaltungen zu durchsuchen und sich direkt auf der Website für diese zu registrieren. Wenn Ihre Kirche die Registrierung für eine Veranstaltung aktiviert, können Sie sich selbst und Ihre Familienmitglieder in nur wenigen Schritten anmelden.
 
 </div>
 
-## Ereignisse durchsuchen
+## Veranstaltungen durchsuchen
 
-Ereignisse erscheinen im Kirchenkalender. Wenn Sie ein Ereignis öffnen, das die Registrierung aktiviert hat, wird eine Schaltfläche **Für dieses Ereignis registrieren** neben den Ereignisdetails angezeigt.
+Veranstaltungen erscheinen im Kirchenkalender. Wenn Sie eine Veranstaltung öffnen, die die Registrierung aktiviert hat, wird eine Schaltfläche **Register for this Event** neben den Veranstaltungsdetails angezeigt.
 
-Ereignisse mit aktivierter Registrierung zeigen:
+Veranstaltungen mit aktivierter Registrierung zeigen:
 
-- **Ereignistitel und Beschreibung** -- Worum es beim Ereignis geht.
-- **Datum und Uhrzeit** -- Wann das Ereignis stattfindet.
-- **Registrierungs-Schaltfläche** -- Eine blaue Schaltfläche, die Sie zum Registrierungsformular führt.
+- **Ereignistitel und Beschreibung** – Worum es bei der Veranstaltung geht.
+- **Datum und Uhrzeit** – Wann die Veranstaltung stattfindet.
+- **Registrierungsschaltfläche** – Eine blaue Schaltfläche, die Sie zum Registrierungsformular führt.
 
-## Registrierungs-Status
+## Registrierungsstatus
 
-Ereignisse können verschiedene Status je nach Zeitpunkt und Kapazität zeigen:
+Veranstaltungen können je nach Zeitpunkt und Kapazität unterschiedliche Status anzeigen:
 
-- **Offen** -- Registrierung ist verfügbar und Sie können sich anmelden.
-- **Noch nicht offen** -- Das Registrierungsfenster hat noch nicht begonnen. Kommen Sie nach dem Öffnungsdatum zurück.
-- **Geschlossen** -- Die Registrierungs-Frist ist abgelaufen.
-- **Voll** -- Alle verfügbaren Plätze wurden besetzt.
+- **Open** – Die Registrierung ist verfügbar und Sie können sich anmelden.
+- **Not Yet Open** – Das Registrierungsfenster hat nicht gestartet. Schauen Sie nach dem Öffnungsdatum vorbei.
+- **Closed** – Die Registrierungsfrist ist abgelaufen.
+- **Full** – Alle verfügbaren Plätze wurden belegt.
 
 :::tip
-Wenn ein Ereignis voll ist, kommen Sie später zurück — Plätze können sich öffnen, wenn sich jemand abmeldet.
+Wenn eine Veranstaltung voll ist, schauen Sie später vorbei – Plätze können frei werden, wenn sich jemand von seiner Registrierung abmeldet.
 :::
 
 ## Was Sie benötigen
@@ -40,5 +40,5 @@ Wenn ein Ereignis voll ist, kommen Sie später zurück — Plätze können sich 
 
 ## Weitere Informationen
 
-- [Registrierung für Ereignisse](./registering) -- Schritt-für-Schritt-Anleitung zum Anmelden für ein Ereignis
-- [Selbst-Check-In](../checkin/self-checkin) -- Checken Sie sich ein, wenn Sie zum Ereignis ankommen
+- [Registrierung für Veranstaltungen](./registering) – Schritt-für-Schritt-Anleitung zur Anmeldung für eine Veranstaltung
+- [Self Check-In](../checkin/self-checkin) – Checken Sie sich ein, wenn Sie die Veranstaltung erreichen

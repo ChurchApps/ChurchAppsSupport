@@ -1,4 +1,4 @@
----
+﻿---
 title: "Personas"
 ---
 
@@ -6,30 +6,32 @@ title: "Personas"
 
 <div class="article-intro">
 
-La sección de **Personas** es el corazón de la gestión de su iglesia en B1 Admin. Aquí es donde mantiene el directorio de su iglesia: buscar miembros, agregar nuevas personas, ver y editar perfiles, y realizar seguimiento de hogares. Ya sea que tenga una congregación pequeña o grande, mantener los registros de sus personas organizados es la base que impulsa todas las demás funciones de B1.
+La sección **Personas** es el corazón de tu gestión de iglesia en B1 Admin. Aquí es donde mantienes tu directorio de iglesia -- buscando miembros, agregando nuevas personas, viendo y editando perfiles, y rastreando hogares. Ya sea que tengas una congregación pequeña o grande, mantener tus registros de personas organizados es la base que impulsa cada otra característica en B1.
 
 </div>
 
-## Qué puede hacer
+## Lo que puedes hacer
 
-Esta es una descripción general de las características clave disponibles en la sección de Personas:
+Aquí está una descripción general de las características clave disponibles en la sección de Personas:
 
-1. **Buscar en su directorio** -- Use la barra de búsqueda rápida para encontrar a cualquier persona por nombre, o aproveche los filtros avanzados y la búsqueda en lenguaje natural impulsada por IA para localizar exactamente a quien necesita. Consulte [Búsqueda de personas](./searching-people.md) y [Búsqueda con IA](./ai-search.md) para obtener detalles.
+1. **Busca tu directorio** -- Usa la barra de búsqueda rápida para encontrar a cualquiera por nombre, o aprovecha filtros avanzados y búsqueda de lenguaje natural impulsada por IA para localizar exactamente a quién necesitas. Ver [Buscar personas](./searching-people.md) y [Búsqueda por IA](./ai-search.md) para detalles.
 
-2. **Agregar nuevas personas** -- Agregue rápidamente personas a su directorio y complete los detalles de su perfil, información de contacto y conexiones de hogar. Consulte [Agregar personas](./adding-people.md) para obtener instrucciones paso a paso.
+2. **Agrega nuevas personas** -- Agrega rápidamente individuos a tu directorio y completa sus detalles de perfil, información de contacto y conexiones familiares. Ver [Agregar personas](./adding-people.md) para instrucciones paso a paso.
 
-3. **Editar personas de forma masiva** -- Actualice varias personas a la vez cambiando su estado de membresía, estado civil, género, preferencias de exclusión o membresías de grupos. Esto ahorra tiempo al realizar el mismo cambio en muchas personas. Consulte [Edición masiva](./bulk-editing.md).
+3. **Edición masiva de personas** -- Actualiza múltiples personas a la vez cambiando su estado de membresía, estado civil, género, preferencias de exclusión o membresías de grupo. Esto ahorra tiempo al hacer el mismo cambio a muchos individuos. Ver [Edición masiva](./bulk-editing.md).
 
-4. **Importar y exportar datos** -- Traiga datos de miembros desde un archivo CSV o migre desde otro sistema de gestión de iglesias como Breeze. También puede exportar su directorio a CSV en cualquier momento. Consulte [Importar datos](./importing-data.md) y [Exportar datos](./exporting-data.md).
+4. **Imprime tu directorio** -- Genera un directorio de miembros formateado e imprimible agrupado por hogar, completo con fotos e información de contacto. Ver [Imprimir directorio](./print-directory.md).
 
-5. **Administrar perfiles** -- Vea y edite perfiles detallados de cada persona, incluida información de contacto, miembros del hogar, [membresías de grupos](../groups/group-members.md), [historial de asistencia](../attendance/tracking-attendance.md), [donaciones](../donations/recording-donations.md) y [formularios personalizados](../forms/creating-forms.md).
+5. **Importar y exportar datos** -- Trae datos de miembros de un archivo CSV o migra desde otro sistema de gestión de iglesia como Breeze. También puedes exportar tu directorio a CSV en cualquier momento. Ver [Importar datos](./importing-data.md) y [Exportar datos](./exporting-data.md).
 
-6. **Asignar roles y permisos** -- Controle quién en su equipo puede acceder a diferentes partes de B1 Admin asignando roles. Consulte [Asignación de roles](./roles-permissions.md).
+6. **Gestiona perfiles** -- Ve y edita perfiles detallados para cada persona, incluida información de contacto, miembros del hogar, [membresías de grupo](../groups/group-members.md), [historial de asistencia](../attendance/tracking-attendance.md), [donaciones](../donations/recording-donations.md) y [formularios personalizados](../forms/creating-forms.md).
 
-## Primeros pasos
+7. **Asigna roles y permisos** -- Controla quién en tu equipo puede acceder a diferentes partes de B1 Admin asignando roles. Ver [Asignación de roles](./roles-permissions.md).
 
-Para acceder a la sección de Personas, haga clic en **Personas** en la barra lateral izquierda de su panel de B1 Admin. Verá el directorio completo de su iglesia con una barra de búsqueda en la parte superior y una lista de miembros debajo.
+## Comenzar
+
+Para acceder a la sección de Personas, haz clic en **Personas** en la barra lateral izquierda de tu panel de B1 Admin. Verás tu directorio completo de iglesia con una barra de búsqueda en la parte superior y una lista de miembros debajo.
 
 :::tip
-Si está configurando B1 por primera vez, comience [importando los datos de miembros existentes](./importing-data.md). Luego revise y limpie los perfiles según sea necesario.
+Si estás configurando B1 por primera vez, comienza [importando tus datos de miembros existentes](./importing-data.md). Luego revisa y limpia perfiles según sea necesario.
 :::

@@ -1,100 +1,100 @@
 ---
-title: "Overføringsrisikovurdering"
+title: "Overføring av risikoevaluering"
 ---
 
-# Overføringsrisikovurdering
+# Overføring av risikoevaluering
 
 <div class="article-intro">
 
-Dette dokumentet registrerer ChurchApps sin vurdering av risikoer knyttet til internasjonale overføringer av personopplysninger fra Storbritannia/EØS til USA, slik som påkrevd under Storbritannia GDPR og EU GDPR. Dette er en internatrisikovurderingsdokument vedlikeholdt av ChurchApps som databehandler.
+Dette dokumentet registrerer ChurchApps' vurdering av risiko knyttet til internasjonale overføringer av personopplysninger fra Storbritannia/EØS til USA, som kreves under Storbritannias GDPR og EU GDPR. Dette er en intern samsvarpost som vedlikeholdes av ChurchApps som databehandler.
 
 </div>
 
-**Sist gjennomgått:** April 2026
+**Sist gjennomgått:** april 2026
 
 ## 1. Overføringsdetaljer
 
 | Element | Detalj |
 |---|---|
-| **Dataeksportør** | Kirker som bruker ChurchApps (datakontrollerer) lokalisert i Storbritannia/EØS |
-| **Dataimportør** | ChurchApps (databehandler), opererer fra USA |
-| **Kategorier av datasubjekter** | Kirkemedlemmer, deltakere, besøkende, givere, frivillige, barn (administrert av foreldre / administratorer) |
-| **Kategorier av personopplysninger** | Navn, e-postadresser, telefonnumre, postadresser, fødselsdatoer, kjønn, sivilstatus, profilfotos, donasjonshistorikk, oppmøtehistorikk, gruppetilhørighet, frivilligoppgaver, meldingshistorikk |
-| **Sensitiv data** | Ingen som er bevisst innsamlet. Ingen helsedata, biometrisk data eller straffeattest lagres. Finansiell kontoinformasjon (kredittkort, bankkontoer) lagres aldri av ChurchApps -- disse håndteres direkte av Stripe. |
-| **Formål for overføring** | Tilby kirkestyringstjeneste (medlemsadministrasjon, donasjoner, oppmøtesporing, kommunikasjon, frivilligplanlegging, hendelsesregistrering) |
+| **Dataeksportør** | Kirker som bruker ChurchApps (Datakontrollanter) som er lokalisert i Storbritannia/EØS |
+| **Dataimportør** | ChurchApps (Databehandler), som opererer fra USA |
+| **Kategorier av datasubjekter** | Kirkens medlemmer, deltakere, besøkende, givere, frivillige, barn (administrert av foreldre/administratorer) |
+| **Kategorier av personopplysninger** | Navn, e-postadresser, telefonnummere, postadresser, fødselsdato, kjønn, sivilstatus, profilbilder, donasjonsposter, oppmøteposter, gruppetedeelskaper, frivilligassignmenter, meldingshistorikk |
+| **Sensitive data** | Ingen med vilje samlet. Ingen helsedata, biometriske data eller straffeopplysninger lagres. Finansielle kontoopplysninger (kredittkort, bankkontoer) lagres aldri av ChurchApps -- disse håndteres direkte av Stripe. |
+| **Formål med overføring** | Levering av kirkestyrssoftwaretjenester (medlemsadministrasjon, donasjoner, oppmøtesporing, kommunikasjon, frivilligplanlegging, hendelsesregistrering) |
 | **Destinasjonsland** | USA |
-| **Overføringsmekanisme** | EU Standard Contractual Clauses (SCCs) og Storbritannia International Data Transfer Addendum (IDTA), innlemmet via AWS Data Processing Addendum |
+| **Overføringsmekanisme** | EU standard kontraktuelle klausuler (SCCs) og Storbritannias internasjonale dataoversendelsestillegg (IDTA), innlemmet via AWS dataprosesseringslisten |
 
 ## 2. Underbehandlere
 
-| Underbehandler | Rolle | Plassering | Overføringsmekanisme |
+| Underbehandler | Rolle | Sted | Overføringsmekanisme |
 |---|---|---|---|
-| **Amazon Web Services (AWS)** | Infrastruktur hosting, datalagring, innholdsleveranse (us-east-2 region) | USA | AWS DPA med SCCs (automatisk inkludert i AWS Service Terms) |
+| **Amazon Web Services (AWS)** | Infrastruktur-hosting, datalagring, innholdslevering (us-east-2-område) | USA | AWS DPA med SCCs (automatisk inkludert i AWS-vilkår) |
 | **Stripe** | Betalingsbehandling for donasjoner | USA | Stripe DPA med SCCs |
 
-Kredittkorting- og bankkontodata overføres direkte fra brukerens nettleser til Stripe og lagres aldri på eller overføres gjennom ChurchApps-serverne.
+Kredittkort- og bankkontodata overføres direkte fra brukerens nettleser til Stripe og lagres aldri på eller overføres gjennom ChurchApps-servere.
 
-## 3. Risikovurdering
+## 3. Risikoevaluering
 
 ### 3.1 Kryptering
 
-- **I transitt:** Alle data krypteres ved hjelp av TLS/HTTPS for all kommunikasjon mellom brukere og ChurchApps-serverne.
-- **I ro:** Data lagret på AWS krypteres i ro ved hjelp av AWS-administrert kryptering.
+- **Under transport:** All data er kryptert ved hjelp av TLS/HTTPS for all kommunikasjon mellom brukere og ChurchApps-servere.
+- **I hvile:** Data som lagres på AWS er kryptert i hvile ved hjelp av AWS-administrert kryptering.
 
 ### 3.2 Tilgangskontroller
 
-- Produksjonservertilgang er begrenset til to individer som er medlemmer av ChurchApps styre.
-- Utviklere, frivillige og andre styremedlemmer har ikke tilgang til produksjonservere eller databaser.
-- Databaseservere er bak en brannmur og er ikke direkte tilgjengelig fra internett.
-- Kirkdata er logisk atskilt -- hver kirke kan bare få tilgang til sine egne data gjennom applikasjonsnivå-tilgangskontroller.
+- Produksjonsservertilgang er begrenset til to individer som er medlemmer av ChurchApps-styret.
+- Utviklere, frivillige og andre styremedlemmer har ikke tilgang til produksjonsservere eller databaser.
+- Databasservere er bak en brannmur og er ikke direkte tilgjengelige fra internett.
+- Kirkens data er logisk atskilt -- hver kirke kan bare få tilgang til egne data gjennom tilgangskontroller på applikasjonsnivå.
 
-### 3.3 Datasegregering
+### 3.3 Dataaggregering
 
-Data distribueres på tvers av seks uavhengige databaser (Medlemskap, Giving, Oppmøte, Messaging, Doing, Innhold). Kompromittering av en database eksponerer ikke data fra de andre. For eksempel inneholder Giving-databasen donasjonsbeløp og datoer, men ikke navn eller kontaktinformasjon for givere (lagret i Medlemskap).
+Data distribueres over seks uavhengige databaser (medlemskap, giver, oppmøte, meldinger, gjøring, innhold). Kompromiss av en database utsetter ikke data fra de andre. For eksempel inneholder giverdatabasen donasjonbeløp og datoer, men ikke navn eller kontaktinformasjon for givere (lagret i medlemskap).
 
-### 3.4 Datasamling
+### 3.4 Dataminimalisering
 
-- Ingen kredittkorting- eller bankkontoopplysninger lagres (håndteres av Stripe).
-- Passord lagres ved hjelp av enveishashing og kan ikke hentes.
+- Ingen kredittkort- eller bankkontoopplysninger lagres (håndtert av Stripe).
+- Passord lagres ved hjelp av enveiskryptering og kan ikke hentes.
 - Kirker kontrollerer hvilke data de samler fra medlemmene sine.
 
-### 3.5 Dataeierrettigheter
+### 3.5 Rettighetene til datasubjekt
 
-ChurchApps tilbyr tekniske verktøy som muliggjør at kirker oppfyller dataeikerforespørsler:
+ChurchApps gir tekniske verktøy som gjør det mulig for kirker å oppfylle forespørsler fra datasubjekter:
 
-- **Innsyn & bærbarhet:** Full dataeksport i maskinlesbart JSON-format.
-- **Sletting:** Anonymisering på tvers av alle seks databaser, erstatter personopplysninger med generiske verdier mens du bevarer samlede poster som kreves for finansiell rapportering.
-- **Begrensning:** Inaktiv medlemsstatus ekskluderer individer fra søk, mappe, rapporter og meldinger mens du beholder posten.
+- **Tilgang og portabilitet:** Full dataeksport i maskinlesbart JSON-format.
+- **Sletting:** Anonymisering på tvers av alle seks databaser, og erstat personopplysninger med generiske verdier samtidig som du bevarer samleregister som kreves for finansiell rapportering.
+- **Restriksjon:** Inaktiv medlemskapsstatus ekskluderer individer fra søk, katalog, rapporter og meldinger mens du beholder deres post.
 - **Retting:** Medlemmer og administratorer kan redigere personopplysninger gjennom applikasjonen.
 
-### 3.6 Bruddvarsel
+### 3.6 Bruddarmelding
 
-ChurchApps forplikter seg til å varsle berørte kirker innen 72 timer etter å være blitt klar over et databrudd, som dokumentert i [servicevilkårene](https://churchapps.org/terms) (avsnitt 11.6).
+ChurchApps forplikter seg til å varsle berørte kirker innen 72 timer fra det blir klar over et brud på personopplysninger, som dokumentert i [vilkår for tjeneste](https://churchapps.org/terms) (avsnitt 11.6).
 
-### 3.7 USA-regjeringens tilgangsrisiko
+### 3.7 Risiko for tilgang fra US-regjering
 
-Den primære risikoen knyttet til USA-vertsdata er potensiell tilgang av USA-regjeringsmyndigheter under FISA Section 702 eller Executive Order 12333. Denne risikoen vurderes som **lav** av følgende årsaker:
+Den primære risikoen forbundet med data-hostet i USA er potensiell tilgang fra US-myndighetene under FISA seksjon 702 eller direktiv 12333. Denne risikoen vurderes som **lav** av følgende årsaker:
 
-- ChurchApps behandler kirkemedlemskaps- og oppmøtedata, ikke data med etterretningsverdi.
-- Datamottagere er kirkemedlemmer og deltakere -- ikke kategorier som vanligvis blir målrettet av overvåkingsprogrammer.
-- Ingen sensitiv personopplysning (helse, finansielle kontoer, politiske meninger) lagres.
-- AWS sin DPA inkluderer forpliktelser vedr. regjeringsadgangsforespørsler og transparensrapportering.
-- EU-US Data Privacy Framework (etablert 2023) gir ytterligere beskyttelse for dataoverføringer til sertifiserte USA-organisasjoner.
+- ChurchApps behandler kirkens medlemskaps- og oppmøtedata, ikke data av etterretningsverdi.
+- Datasubjekter er kirkens medlemmer og deltakere -- ikke kategorier som typisk blir målrettet av overvåkingsprogrammer.
+- Ingen sensitive personopplysninger (helse, finansielle kontoer, politiske meninger) lagres.
+- AWS DPA inkluderer forpliktelser angående tilgang til statlige forespørsler og transparensrapportering.
+- EU-USA dataprivatsframeworket (etablert 2023) gir ytterligere sikkerhetsmuligheter for dataoverføringer til sertifiserte US-organisasjoner.
 
-## 4. Overordnet risikokonklusjon
+## 4. Samlet risikokonclusjon
 
-Risikoen for datamottagere fra denne internasjonale overføringen vurderes som **lav**. Kombinasjonen av:
+Risikoen for datasubjekter fra denne internasjonale overføringen vurderes som **lav**. Kombinasjonen av:
 
-- Standard Contractual Clauses som juridisk overføringsmekanisme
-- Kryptering i transitt og i ro
+- Standardkontraktuelle klausuler som juridisk overføringsmekanisme
+- Kryptering under transport og i hvile
 - Strenge tilgangskontroller med bare to autoriserte individer
-- Datasegregering på tvers av uavhengige databaser
-- Ingen lagring av finansiell kontoinformasjon
-- Lav følsomhet og lav etterretningsverdi av dataene som behandles
-- Tekniske verktøy for å utøve alle dataeierrettigheter
+- Dataaggregering på tvers av uavhengige databaser
+- Ingen lagring av finansielle kontoopplysninger
+- Lav sensitivitet og lav etterretningsverdi av dataene som behandles
+- Tekniske verktøy for å utøve alle datasubjektsrettigheter
 
-gir tilstrekkelige tilleggstiltak for å sikre at de overførte dataene mottar et beskyttelsesnivå som i det vesentlige tilsvarer det som garanteres innenfor Storbritannia/EØS.
+gir tilstrekkelige tilleggsmanuskript for å sikre at de overførte dataene får et beskyttelsesnivå som er vesentlig tilsvarende det som er garantert innenfor Storbritannia/EØS.
 
-## 5. Gjennomgangstidsplan
+## 5. Gjennomgangsplan
 
-Denne vurderingen vil bli gjennomgått årlig eller når det er en vesentlig endring i databehandling, underbehandlere eller juridisk rammeverk som styrende internasjonale dataoverføringer.
+Denne evalueringen vil bli gjennomgått årlig eller når det er en vesentlig endring i databehandlingen, underbehandlere eller juridisk rammeverk som styrer internasjonale dataoverføringer.

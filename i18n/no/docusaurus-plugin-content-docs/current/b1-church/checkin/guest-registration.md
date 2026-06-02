@@ -1,58 +1,58 @@
----
-title: "Gjesteregistrering"
+﻿---
+title: "Gjestregistrering"
 ---
 
-# Gjesteregistrering
+# Gjestregistrering
 
 <div class="article-intro">
 
-Hvis du besøker en kirke for første gang, kan du registrere deg selv og familien som gjester ved hjelp av gjesteregistreringssiden. Dette oppretter en post i kirkens system slik at frivillige kan sjekke deg inn når du ankommer.
+Hvis du besøker en kirke for første gang, kan du registrere deg selv og familien din som gjester ved å bruke gjestregistreringssiden. Dette oppretter en post i kirkens system slik at frivillige kan sjekke deg inn når du kommer.
 
 </div>
 
 <div class="prereqs">
-<h4>Før du begynner</h4>
+<h4>Før Du Begynner</h4>
 
-- Kirken må ha QR-gjesteregistrering aktivert
-- Skann QR-koden som vises ved innsjekkingskiosk, eller motta en lenke fra en kirkefrivillig
+- Kirken din må ha QR-gjestregistrering aktivert
+- Skann QR-koden som vises ved innsjekking-kioskén, eller motta en lenke fra en kirkevoluntær
 
 </div>
 
-## Hvordan gjesteregistrering fungerer
+## Hvordan Gjestregistrering Fungerer
 
-Gjesteregistrering er utformet for besøkende som ikke ennå har en konto. En QR-kode vises ved kirkens innsjekkingskiosk som linker til registreringssiden. Du kan også motta lenken fra en frivillig eller greeter.
+Gjestregistrering er designet for besøkende som ikke ennå har en konto. En QR-kode vises ved kirkens innsjekking-kiosk som lenker til registreringssiden. Du kan også motta lenken fra en frivillig eller velsigner.
 
-## Registrering av familien
+## Registrer Familien Din
 
-1. **Skann QR-koden** ved innsjekkingskiosk eller åpne gjesteregistreringskoblingen på telefonen.
-2. Gjesteregistreringsskjemaet vises med feltene for **primærkontakten**:
-   - **Fornavn** (påkrevd)
-   - **Etternavn** (påkrevd)
+1. **Skann QR-koden** ved innsjekking-kioskén eller åpne gjestregistreringslenken på telefonen din.
+2. Gjestregistreringsskjemaet vises med felt for **primærkontakten**:
+   - **Fornavn** (obligatorisk)
+   - **Etternavn** (obligatorisk)
    - **E-post** (valgfritt)
    - **Telefon** (valgfritt)
-3. For å legge til **familiemedlemmer**, trykk **Legg til familiemedlem** og oppgi fornavn og etternavn. Du kan legge til opptil 10 familiemedlemmer.
-4. For å fjerne et familiemedlem, trykk på fjernknappen ved siden av navnet.
+3. For å legge til **familiemedlemmer**, trykk **Legg Til Familjemedlem** og skriv inn fornavn og etternavn deres. Du kan legge til opptil 10 familiemedlemmer.
+4. For å fjerne et familiemedlem, trykk sletteknappen ved siden av navnet deres.
 5. Trykk **Registrer** for å sende inn.
 
-## Etter registrering
+## Etter Registrering
 
-Når du sender inn skjemaet, vises en bekreftelsesskjerm med meldingen: "Registrering fullført -- Du er alt satt! En stab ansatte vil sjekke deg inn snart."
+Når du sender inn skjemaet, vises en bekreftelsesside med meldingen: "Registrering Fullført -- Alt er klart! En ansatt vil sjekke deg inn snart."
 
-Registreringen oppretter poster i kirkens database:
+Registreringen din oppretter poster i kirkens database:
 
-- Et **hushold** opprettes ved hjelp av primærkontaktens etternavn.
-- **Personposter** opprettes for hvert familiemedlem med medlemsstatus som "gjest".
-- En kirkefrivillig eller administrator kan deretter sjekke familien din inn ved hjelp av [B1 Checkin](../../b1-checkin/check-in/looking-up-members)-kioskene.
+- En **husstand** opprettes ved hjelp av primærkontaktens etternavn.
+- **Personposter** opprettes for hvert familjemedlem med medlemsstatus "Gjest".
+- En kirkevoluntær eller administrator kan deretter sjekke inn familien din ved hjelp av [B1 Innsjekking](../../b1-checkin/check-in/looking-up-members)-kioskén.
 
 :::info
-Hvis e-postadressen samsvarer med en eksisterende post i kirkens database, knytter systemet det til den posten i stedet for å opprette en duplika. Dette holder kirkens data ren.
+Hvis e-posten din samsvarer med en eksisterende post i kirkens database, lenker systemet til den posten i stedet for å opprette en duplikat. Dette holder kirkens data ren.
 :::
 
 :::tip
-Å oppgi e-postadressen hjelper kirken med å følge opp med deg etter besøket. Det er valgfritt, men anbefalt.
+Å gi e-postadressen din hjelper kirken å følge opp med deg etter besøket. Det er valgfritt, men anbefalt.
 :::
 
-## Relaterte artikler
+## Relaterte Artikler
 
-- [Selvbetjent innsjekking](./self-checkin) -- Sjekk deg selv inn etter registrering
-- [Legge til gjester (kiosk)](../../b1-checkin/check-in/adding-guests) -- Hvordan frivillige legger til gjester ved kioskene
+- [Selv innsjekking](./self-checkin) -- Sjekk deg selv inn etter registrering
+- [Legge Til Gjester (Kiosk)](../../b1-checkin/check-in/adding-guests) -- Hvordan frivillige legger til gjester ved kioskén

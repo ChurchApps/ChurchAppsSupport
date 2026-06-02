@@ -32,7 +32,9 @@ Here is what you can accomplish in the Groups section:
 
 3. **Schedule events** -- Each group can have its own calendar for meetings, events, and recurring activities. See [Group Calendar](./group-calendar.md).
 
-4. **Export group data** -- Download member lists for any group as a CSV file for use in spreadsheets or mailings. See [Group Members](./group-members.md) for export instructions.
+4. **Manage join requests** -- When a group uses the **Request** join policy, review and approve or decline incoming membership requests from people who want to join. See [Group Join Requests](./group-join-requests.md).
+
+5. **Export group data** -- Download member lists for any group as a CSV file for use in spreadsheets or mailings. See [Group Members](./group-members.md) for export instructions.
 
 ## Getting Started
 

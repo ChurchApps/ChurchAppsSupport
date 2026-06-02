@@ -1,4 +1,4 @@
----
+﻿---
 title: "Webhooks"
 ---
 
@@ -6,34 +6,34 @@ title: "Webhooks"
 
 <div class="article-intro">
 
-Webhooks lar en kirke sende sanntidsvarsler til tredjepartsverktøy -- automatiseringsplattformer (Zapier, Make, n8n), CRM-er, regnskapssystemer eller alt som aksepterer en HTTP POST. Når en person, gruppe eller husholdning endres i B1, sender B1 en signert JSON-nyttelast til hver URL som abonnerer på den hendelsen.
+Webhooks lar en kirke skyve sanntidsmeldinger til tredjeparts verktøy -- automasjonsplattformer (Zapier, Make, n8n), CRM-er, regnskapssystemer eller hva som helst som tar imot en HTTP POST. Når en person, gruppe eller husstand endres i B1, sender B1 en signert JSON-last til hver URL som er abonnert på den hendelsen.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- En kirkeadministrator med **Rediger kirkeinnstillinger**-tillatelse registrerer og administrerer webhooks
-- Mottakerendepunktet ditt må være tilgjengelig over **HTTPS** på en offentlig adresse
-- Ha en måte å lagre signeringshemmeligheten sikkert -- den vises bare én gang
+- En kirkeadmin med tillatelsen **Rediger kirkekonstruksjoner** registrerer og administrerer webhooks
+- Mottakersluttpunktet ditt må være nåbart over **HTTPS** på en offentlig adresse
+- Ha en måte å lagre signeringshemmeligheten på sikkert -- den vises bare en gang
 
 </div>
 
 ## Oversikt
 
-Webhooks er **bare utgående**: B1 kaller endepunktet ditt, du kaller ikke B1. Hver webhook er et per-kirke-abonnement bestående av en destinasjons-URL, en signeringshemmelighet og en liste over abonnerte hendelser.
+Webhooks er **kun utgående**: B1 kaller sluttpunktet ditt, du kaller ikke B1. Hver webhook er et per-kirke abonnement som består av en destinasjons-URL, en signeringshemmelighet og en liste over abonnerte hendelser.
 
-Levering bruker en **holdbar outbox**: når en abonnert hendelse inntreffer, registrerer B1 en leveringsrad, og en bakgrunnsarbeider POST-er den innen omtrent ett minutt. Mislykkede leveringer prøves på nytt med eksponentiell tilbakefall. Ingenting går tapt hvis en levering er treg eller endepunktet ditt er kort nede.
+Levering bruker en **holdbar utboks**: når en abonnert hendelse oppstår, registrerer B1 en leveringsrad og en bakgrunnsarbeider POSTer den innen omtrent ett minutt. Mislykkede leveringer blir forsøkt på nytt med eksponensiell backoff. Ingenting går tapt hvis en levering er langsom eller sluttpunktet ditt er kortvarig nede.
 
-## Registrere en webhook
+## Registrering av en webhook
 
 ### I B1Admin
 
-Gå til **Innstillinger → Webhooks → Ny webhook**. Skriv inn et navn, nyttelast-URL og velg hendelsene du vil abonnere på. Ved lagring vises **signeringshemmeligheten én gang** -- kopier den umiddelbart og lagre den med integrasjonen din. Den vises aldri igjen (du kan rotere den senere, men du kan ikke hente den opprinnelige).
+Gå til **Innstillinger → Webhooks → Ny Webhook**. Skriv inn et navn, nyttelast-URL og velg hendelsene du vil abonnere på. Ved lagring vises **signeringshemmeligheten en gang** -- kopier den umiddelbart og lagre den med integrasjonen. Den vises aldri igjen (du kan rotere den senere, men du kan ikke hente originalen).
 
-### Via API-et
+### Via API-en
 
-Alle endepunkter er under Membership-modulens basissti `/membership/webhooks` og krever en JWT fra en kirkeadministrator med `Settings / Edit`-tillatelse.
+Alle sluttpunkter er under medlemskapsmodulens basisvei `/membership/webhooks` og krever enten en JWT fra en kirkeadmin med tillatelsen `Innstillinger / Rediger`, **eller en [API-nøkkel](./api-keys) preget med `settings:write`-omfanget**. De samme rutene aksepterer begge. Dette er det som gjør at Zapier og Make kan registrere webhooks på kirkens vegne når en Zap eller scenario slås på.
 
 ```http
 POST /membership/webhooks
@@ -60,47 +60,55 @@ Opprettelsesresponsen -- og **bare** opprettelsesresponsen -- inkluderer `secret
 }
 ```
 
-| Metode og sti | Formål |
+| Metode og vei | Formål |
 |---|---|
-| `GET /membership/webhooks` | List kirkens webhooks (hemmelighet utelatt) |
+| `GET /membership/webhooks` | Vis kirkens webhooks (hemmelighet utelatt) |
 | `GET /membership/webhooks/events` | Katalogen over gyldige hendelsesnavn |
 | `GET /membership/webhooks/:id` | Last en webhook |
 | `POST /membership/webhooks` | Opprett (ingen `id`) eller oppdater (med `id`) |
-| `POST /membership/webhooks/:id/regenerate-secret` | Roter signeringshemmeligheten; returnerer den nye verdien én gang |
+| `POST /membership/webhooks/:id/regenerate-secret` | Roter signeringshemmeligheten; returnerer den nye verdien en gang |
 | `DELETE /membership/webhooks/:id` | Slett en webhook |
 | `GET /membership/webhooks/:id/deliveries` | Nylige leveringsforsøk for en webhook |
-| `GET /membership/webhooks/deliveries/:deliveryId` | Full nyttelast og respons for én levering |
-| `POST /membership/webhooks/deliveries/:deliveryId/redeliver` | Sett en levering i kø på nytt |
+| `GET /membership/webhooks/deliveries/:deliveryId` | Full last og respons for en levering |
+| `POST /membership/webhooks/deliveries/:deliveryId/redeliver` | Omstill en levering |
 
-## Hendelseskatalog
+## Hendelsesk katalog
 
-Hendelsesnavn følger mønsteret `{entitet}.{handling}`. Hent den live listen fra `GET /membership/webhooks/events`.
+Hendelsenavnet følger mønsteret `{entity}.{action}`. Hent den aktuelle listen fra `GET /membership/webhooks/events`.
 
 | Hendelse | Utløses når |
 |---|---|
-| `person.created` | En person legges til |
-| `person.updated` | En personpost endres |
-| `person.destroyed` | En person slettes |
-| `household.created` | En husholdning legges til |
-| `household.updated` | En husholdning endres |
-| `household.destroyed` | En husholdning slettes |
-| `group.created` | En gruppe legges til |
-| `group.updated` | En gruppe endres |
-| `group.destroyed` | En gruppe slettes |
-| `group.member.added` | En person legges til i en gruppe |
-| `group.member.removed` | En person fjernes fra en gruppe |
+| `person.created` | En person blir lagt til |
+| `person.updated` | En personpost er endret |
+| `person.destroyed` | En person blir slettet |
+| `household.created` | En husstand blir lagt til |
+| `household.updated` | En husstand blir endret |
+| `household.destroyed` | En husstand blir slettet |
+| `group.created` | En gruppe blir lagt til |
+| `group.updated` | En gruppe blir endret |
+| `group.destroyed` | En gruppe blir slettet |
+| `group.member.added` | En person blir lagt til en gruppe |
+| `group.member.removed` | En person blir fjernet fra en gruppe |
+| `donation.created` | En gave blir registrert -- manuell oppføring, nettbasert eller ventende → fullstending overgang |
+| `donation.updated` | En donasjonpost blir redigert |
+| `attendance.recorded` | Et besøk blir logget (manuell oppføring eller sjekk-inn) |
+| `session.created` | En ny frammøtesesjon blir opprettet (manuelt eller auto ved første sjekk-inn) |
+| `form.submission.created` | Et skjema blir sendt |
+| `event.created` | En kalenderhendelse blir lagt til |
+| `event.updated` | En kalenderhendelse blir redigert |
+| `event.destroyed` | En kalenderhendelse blir slettet |
 
-## Nyttelastformat
+## Lastnytteformat
 
-Hver levering er en HTTP `POST` med en JSON-kropp og disse overskriftene:
+Hver levering er en HTTP `POST` med en JSON-kropp og disse hodene:
 
-| Overskrift | Beskrivelse |
+| Hode | Beskrivelse |
 |---|---|
 | `Content-Type` | Alltid `application/json` |
-| `X-B1-Event` | Hendelsesnavnet, f.eks. `person.created` |
-| `X-B1-Delivery-Id` | Unik id for dette leveringsforsøket -- bruk den til å deduplisere |
-| `X-B1-Signature` | HMAC-SHA256 signatur av den rå kroppen (se nedenfor) |
-| `X-B1-Timestamp` | Unix-epoke sekunder når forespørselen ble sendt |
+| `X-B1-Event` | Hendelsenavnet, f.eks. `person.created` |
+| `X-B1-Delivery-Id` | Unik id for dette leveringsforsøket -- bruk det til deduplicering |
+| `X-B1-Signature` | HMAC-SHA256 signatur av raw body (se nedenfor) |
+| `X-B1-Timestamp` | Unix epoch sekunder når forespørselen ble sendt |
 | `User-Agent` | `B1-Webhooks/1.0` |
 
 Kroppen pakker den endrede ressursen i en liten konvolutt:
@@ -119,11 +127,27 @@ Kroppen pakker den endrede ressursen i en liten konvolutt:
 }
 ```
 
-For `*.destroyed`-hendelser inneholder `data` bare `id` og `churchId` til den slettede posten.
+For `*.destroyed`-hendelser inneholder `data` bare `id` og `churchId` for den slettede posten.
 
-## Verifisere signaturer
+## Koblingstyper
 
-Verifiser alltid `X-B1-Signature` før du stoler på en nyttelast. Signaturen er `sha256=` etterfulgt av heksa HMAC-SHA256 av **rå forespørselskropp** nøklet med signeringshemmeligheten din. Beregn den over bytene du mottok -- ikke re-serialiser den parsede JSON-en.
+Standardleveringsformatet er JSON-konvolutten ovenfor -- `connectorType: "standard"`. For [Slack og Discord](/docs/b1-admin/integrations/slack-discord) poster webhook-motoren i stedet en chat-formet melding som disse tjenestene godtar direkte:
+
+| `connectorType` | Kropp sendt | Bruk når |
+|---|---|---|
+| `"standard"` (standard) | `{event, churchId, occurredAt, data}` konvolutt, signert | Du skriver din egen integrasjon, eller peker på Zapier / Make / en egendefinert server |
+| `"slack"` | `{ "text": "💝 Ny donasjon: $50.00" }` | Du poster direkte til en Slack Incoming Webhook URL |
+| `"discord"` | `{ "content": "💝 Ny donasjon: $50.00" }` | Du poster direkte til en Discord kanal-webhook URL |
+
+Koblingstypen angis i rullegardinmenyen **Koblingtype** på webhook-editoren, eller via `connectorType` i `POST /membership/webhooks`-kroppen. Det signerte `X-B1-Signature`-hodet sendes fortsatt for Slack/Discord-leveringer (de ignorerer det harmløst), så hvis du bytter webhook tilbake til `standard` senere kreves ingen signering på nytt.
+
+## Testleveringer
+
+Hver webhook-editor har en **Send testegenskap**-knapp -- det tilsvarende API-kallet er `POST /membership/webhooks/:id/test`. Testruten bygger en syntetisk last for den første abonnerte hendelsen, dispatcher den synkront gjennom den virkelige signerte leveringsbanen (og gjennom `formatForConnector` for Slack/Discord) og returnerer den resulterende leveringsraden inkludert `responseStatus` og `responseBody`. Bruk den til å bekrefte tilkoblinger og signaturhåndtering før du slår integrasjonen på for reelt.
+
+## Verifisering av signaturer
+
+Bekreft alltid `X-B1-Signature` før du stoler på en last. Signaturen er `sha256=` fulgt av den hex HMAC-SHA256 av den **raw request body** tastet med signeringshemmeligheten din. Beregn det over bytene du mottok -- ikke serieller JSON på nytt.
 
 **Node.js**
 
@@ -157,32 +181,55 @@ function isValid(string $rawBody, string $signatureHeader, string $secret): bool
 }
 ```
 
-Avvis enhver forespørsel hvis signatur ikke stemmer. Valgfritt avvis også forespørsler hvis `X-B1-Timestamp` er mer enn noen få minutter gammel for å begrense reprise-vinduer.
+Avvis enhver forespørsel hvis signaturen ikke samsvarer. Du kan også eventuelt avvise forespørsler hvis `X-B1-Timestamp` er mer enn et par minutter gammel for å begrense gjenskrift av vinduer.
 
-## Levering og nye forsøk
+## SDK-støtte
 
-Endepunktet ditt bør svare med en `2xx`-status så raskt som mulig -- ideelt sett etter bare å ha satt arbeidet i kø, ikke etter å ha behandlet det. Enhver ikke-`2xx`-respons, en tilkoblingsfeil eller en respons langsommere enn **10 sekunder** teller som en mislykket levering.
+For Node.js leverer `@churchapps/integration-sdk` en typet bekrefter og en Express-melding som håndterer raw-body-oppdageringen, signaturkontroll og konvolutteanalyse for deg:
 
-Mislykkede leveringer prøves på nytt med eksponentiell tilbakefall -- **16 forsøk over omtrent 5 dager**. Intervallet vokser fra 1 minutt, gjennom timer, opp til 3-dagers gap for de siste forsøkene. Etter det 16. mislykkede forsøket markeres leveringen som `exhausted` og forlates.
+```ts
+import express from "express";
+import { b1WebhookMiddleware } from "@churchapps/integration-sdk";
 
-Levering er **minst én gang**: en levering kan ankomme mer enn én gang (for eksempel hvis endepunktet ditt lykkes, men responsen går tapt). Bruk `X-B1-Delivery-Id`-overskriften til å deduplisere -- behandle hver id bare én gang og behandle gjentagelser som no-ops.
+const app = express();
+// Fang raw body før JSON-analyse -- nødvendig slik at signaturen fortsatt bekrefter seg selv.
+app.use(express.json({ verify: (req, _res, buf) => { (req as any).rawBody = buf; } }));
 
-### Automatisk deaktivering
+app.post("/webhooks/b1", b1WebhookMiddleware({ secret: process.env.B1_WEBHOOK_SECRET! }), (req, res) => {
+  const env = req.b1Webhook!;
+  switch (env.event) {
+    case "donation.created": console.log("new gift", env.data.amount); break;
+  }
+  res.sendStatus(200);
+});
+```
 
-Hvis en webhook produserer **tre påfølgende exhausted-leveringer**, deaktiverer B1 den automatisk. Fiks endepunktet ditt, og reaktiver deretter webhooken i B1Admin (eller via `POST /membership/webhooks` med `"active": true`).
+SDK-en eksponerer også `WebhookVerifier.verify(secret, rawBody, signatureHeader)` for ikke-Express-kjøretider (serverløse funksjoner, Fastify, osv.). Se pakken på npm.
 
-## Inspisere og levere på nytt
+## Levering og omforsøk
 
-Webhook-editoren i B1Admin viser en **Nylige leveringer**-tabell -- hendelse, status, antall forsøk, svarkode og tidsstempel. Ved å velge en rad vises full nyttelast som ble sendt og responsen som kom tilbake.
+Sluttpunktet ditt bør svare med en `2xx`-status så raskt som mulig -- helst etter bare å ha stilt arbeidet i kø, ikke etter å ha behandlet det. Enhver ikke-`2xx`-respons, tilkoblingsfeil eller respons som er sakte enn **10 sekunder** regnes som en mislykket levering.
 
-Bruk **Lever på nytt** for å sette en tidligere levering i kø igjen med den opprinnelige nyttelasten -- nyttig etter å ha fikset en feil i endepunktet ditt, eller for å fylle tilbake hendelser som endepunktet ditt gikk glipp av mens det var nede.
+Mislykkede leveringer blir forsøkt på nytt med eksponensiell backoff -- **16 forsøk over omtrent 5 dager**. Intervallet vokser fra 1 minutt, gjennom timer, opp til 3-dagers avstander for de siste forsøkene. Etter det 16. mislykkede forsøket blir leveringen merket `exhausted` og oppgitt.
+
+Levering er **minst-en gang**: en levering kan komme mer enn en gang (for eksempel hvis sluttpunktet ditt lykkes men responsen er tapt). Bruk `X-B1-Delivery-Id`-hodet til deduplicering -- behandle hver id bare en gang og behandle repetisjoner som no-ops.
+
+### Auto-deaktivering
+
+Hvis en webhook produserer **tre påfølgende utslittete leveringer**, deaktiverer B1 den automatisk. Rett sluttpunktet, og reaktiver deretter webhook i B1Admin (eller via `POST /membership/webhooks` med `"active": true`).
+
+## Inspeksjon og omleveringer
+
+Webhook-editoren i B1Admin viser en **Nylige leveringer**-tabell -- hendelse, status, forsøkstall, svarskode og tidsstempel. Hvis du velger en rad vises den fullstendige lasten som ble sendt og svaret som kom tilbake.
+
+Bruk **Omlevering** til å omsignalere enhver tidligere levering med dens opprinnelige last -- nyttig etter å ha fikset en feil i sluttpunktet ditt, eller for å fylle ut hendelser som sluttpunktet ditt gikk glipp av mens det var nede.
 
 ## URL-krav
 
-Fordi webhook-URL-er er kirkelevererte, håndhever B1 vakter mot server-side request forgery. En webhook-URL avvises -- ved registrering og re-sjekket før hver levering -- hvis den:
+Fordi webhook-URLer leveres av kirken, håndhever B1 vakter mot server-side request forgery. En webhook-URL blir avvist -- ved registrering og sjekket på nytt før hver levering -- hvis den:
 
-- ikke bruker **`https`**
+- bruker ikke **`https`**
 - peker på `localhost`, et `.local` / `.internal` vertsnavn, eller
-- løses til en **privat, loopback, link-local eller cloud-metadata** IP-adresse
+- løses til en **privat, loopback, link-lokal eller cloud-metadata** IP-adresse
 
-Endepunktet ditt må være en offentlig tilgjengelig HTTPS-tjeneste.
+Sluttpunktet ditt må være en offentlig nåbar HTTPS-tjeneste.

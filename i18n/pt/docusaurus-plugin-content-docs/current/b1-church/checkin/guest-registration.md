@@ -1,58 +1,58 @@
 ---
-title: "Registro de Hóspedes"
+title: "Registro de Convidados"
 ---
 
-# Registro de Hóspedes
+# Registro de Convidados
 
 <div class="article-intro">
 
-Se você está visitando uma iglesia pela primeira vez, você pode se registrar a si mesmo e sua família como hóspedes usando a página de registro de hóspedes. Isso cria um registro no sistema da iglesia para que voluntários possam registrá-lo quando você chegar.
+Se você está visitando uma igreja pela primeira vez, pode se registrar a si mesmo e sua família como convidados usando a página de registro de convidados. Isso cria um registro no sistema da igreja para que os voluntários possam fazer seu check-in quando você chegar.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Sua iglesia deve ter registro de hóspede por código QR ativado
-- Escanei o código QR exibido no quiosque de check-in ou receba um link de um voluntário de iglesia
+- Sua igreja deve ter o registro de convidados por QR ativado
+- Escaneie o código QR exibido no quiosque de check-in ou receba um link de um voluntário da igreja
 
 </div>
 
-## Como Funciona o Registro de Hóspedes
+## Como Funciona o Registro de Convidados
 
-O registro de hóspedes é projetado para visitantes que ainda não têm uma conta. Um código QR é exibido no quiosque de check-in da iglesia que se vincula à página de registro. Você também pode receber o link de um voluntário ou recepcionista.
+O registro de convidados é projetado para visitantes que ainda não têm uma conta. Um código QR é exibido no quiosque de check-in da igreja que leva para a página de registro. Você também pode receber o link de um voluntário ou anfitrião.
 
 ## Registrando Sua Família
 
-1. **Escanei o código QR** no quiosque de check-in ou abra o link de registro de hóspedes em seu telefone.
-2. O formulário de registro de hóspedes aparece com campos para o **contato principal**:
-   - **First Name** (obrigatório)
-   - **Last Name** (obrigatório)
-   - **Email** (opcional)
-   - **Phone** (opcional)
-3. Para adicionar **membros da família**, toque em **Add Family Member** e insira seu primeiro e último nome. Você pode adicionar até 10 membros da família.
-4. Para remover um membro da família, toque no botão remover ao lado de seu nome.
-5. Toque em **Register** para enviar.
+1. **Escaneie o código QR** no quiosque de check-in ou abra o link de registro de convidados em seu telefone.
+2. O formulário de registro de convidados aparece com campos para o **contato principal**:
+   - **Nome** (obrigatório)
+   - **Sobrenome** (obrigatório)
+   - **E-mail** (opcional)
+   - **Telefone** (opcional)
+3. Para adicionar **membros da família**, toque em **Adicionar Membro da Família** e insira seu nome e sobrenome. Você pode adicionar até 10 membros da família.
+4. Para remover um membro da família, toque no botão de remover ao lado do seu nome.
+5. Toque em **Registrar** para enviar.
 
-## Após Registrar
+## Após o Registro
 
-Depois que você envia o formulário, uma tela de confirmação aparece com a mensagem: "Registration Complete -- You're all set! A staff member will check you in shortly."
+Após enviar o formulário, uma tela de confirmação aparece com a mensagem: "Registro Concluído -- Você está pronto! Um membro da equipe fará seu check-in em breve."
 
-Seu registro cria registros no banco de dados da iglesia:
+Seu registro cria registros no banco de dados da igreja:
 
-- Uma **família** é criada usando o sobrenome do contato principal.
-- **Registros de pessoa** são criados para cada membro da família com um status de membros "Guest".
-- Um voluntário ou administrador de iglesia pode então registrar sua família usando o quiosque [B1 Checkin](../../b1-checkin/check-in/looking-up-members).
+- Um **agregado familiar** é criado usando o sobrenome do contato principal.
+- **Registros de pessoa** são criados para cada membro da família com um status de associação "Convidado".
+- Um voluntário ou administrador da igreja pode então fazer o check-in de sua família usando o [quiosque B1 Checkin](../../b1-checkin/check-in/looking-up-members).
 
 :::info
-Se seu email corresponde a um registro existente no banco de dados da iglesia, o sistema vincula a aquele registro em vez de criar um duplicado. Isso mantém os dados da iglesia limpos.
+Se seu e-mail corresponder a um registro existente no banco de dados da igreja, o sistema vinculará a esse registro em vez de criar uma duplicata. Isso mantém os dados da igreja limpos.
 :::
 
 :::tip
-Fornecer seu endereço de email ajuda a iglesia a acompanhá-lo após sua visita. É opcional mas recomendado.
+Fornecer seu endereço de e-mail ajuda a igreja a acompanhá-lo após sua visita. É opcional, mas recomendado.
 :::
 
 ## Artigos Relacionados
 
-- [Self Check-In](./self-checkin) -- Registre-se depois de registrar
-- [Adding Guests (Kiosk)](../../b1-checkin/check-in/adding-guests) -- Como voluntários adicionam hóspedes no quiosque
+- [Auto Check-In](./self-checkin) -- Faça seu check-in após se registrar
+- [Adicionando Convidados (Quiosque)](../../b1-checkin/check-in/adding-guests) -- Como voluntários adicionam convidados no quiosque

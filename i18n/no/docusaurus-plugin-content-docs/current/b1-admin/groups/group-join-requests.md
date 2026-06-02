@@ -1,114 +1,114 @@
 ---
-title: "Forespørsler om å bli med i gruppe"
+title: "Gruppetilmeldingsforespørsler"
 ---
 
-# Forespørsler om å bli med i gruppe
+# Gruppetilmeldingsforespørsler
 
 <div class="article-intro">
 
-Når en gruppe er konfigurert med en godkjenningsbasert tilmeldingspolicy, kan folk sende forespørsler om å bli med. Gruppeledere og administratorer gjennomgår disse forespørslene og godkjenner eller avslår dem. Dette gir menigheten din kontroll over gruppemedlemskap samtidig som det gjør det enkelt for folk å uttrykke interesse for å bli med.
+Når en gruppe er konfigurert med en godkjenningsbasert tilmeldingspolicy, kan folk sende forespørsler om å bli medlem. Gruppledere og administratorer gjennomgår disse forespørslene og godkjenner eller avslår dem. Dette gir kirken din kontroll over gruppemedlemskap samtidig som det gjør det enkelt for folk å uttrykke interesse for å bli medlem.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du trenger tillatelse til å administrere grupper, eller du må være leder for den spesifikke gruppen. Se [Roller og tillatelser](../people/roles-permissions.md) for detaljer.
-- Gruppen må ha tilmeldingspolicyen satt til **Forespørsel** (godkjenning påkrevd). Se [Opprette grupper](./creating-groups.md) for hvordan du konfigurerer tilmeldingspolicyer.
+- Du må ha tillatelse til å håndtere grupper, eller du må være leder for den spesifikke gruppen. Se [Roller og tillatelser](../people/roles-permissions.md) for detaljer.
+- Gruppen må ha tilmeldingspolicyen satt til **Forespørsel** (godkjenning kreves). Se [Opprett grupper](./creating-groups.md) for hvordan du konfigurerer tilmeldingspolicyer.
 
 </div>
 
 ## Forstå tilmeldingspolicyer
 
-Grupper kan ha tre forskjellige tilmeldingspolicyer:
+Grupper kan ha tre ulike tilmeldingspolicyer:
 
-- **Åpen** -- Alle kan bli med umiddelbart uten godkjenning
-- **Forespørsel** -- Folk sender en forespørsel om å bli med som krever godkjenning
-- **Lukket** -- Ingen kan be om å bli med (medlemmer må legges til manuelt)
+- **Åpen** -- Alle kan bli medlem umiddelbart uten godkjenning
+- **Forespørsel** -- Folk sender en forespørsel om tilmelding som krever godkjenning
+- **Stengt** -- Ingen kan forespørre om å bli medlem (medlemmer må legges til manuelt)
 
-Når en gruppe bruker **Forespørsel**-policyen, går alle forsøk på å bli med gjennom godkjenningsarbeidsflyten beskrevet på denne siden.
+Når en gruppe bruker **Forespørsel**-policyen, går alle tilmeldingsforsøk gjennom godkjenningsarbeidsflyten beskrevet på denne siden.
 
-## Vise ventende forespørsler
+## Visning av ventende forespørsler
 
-### For gruppeledere
+### For gruppledere
 
-1. Naviger til **Grupper** i B1 Admin
-2. Klikk på gruppenavnet
-3. Klikk **Forespørsler om å bli med**-fanen
+1. Gå til **Grupper** i B1 Admin
+2. Klikk på gruppenavn
+3. Klikk på **Tilmeldingsforespørsler**-fanen
 4. Du vil se alle ventende forespørsler for denne gruppen
 
 ### For administratorer
 
-Administratorer med gruppehåndteringstillatelser kan se ventende forespørsler på tvers av alle grupper:
+Administratorer med tillatelse til gruppeadministrasjon kan se ventende forespørsler på tvers av alle grupper:
 
-1. Naviger til **Grupper** i B1 Admin
-2. Se etter et varselsmerke eller indikator for ventende forespørsler
-3. Klikk for å se alle ventende forespørsler på tvers av hele menigheten
+1. Gå til **Grupper** i B1 Admin
+2. Se etter et varselmerke eller indikator for ventende forespørsler
+3. Klikk for å se alle ventende forespørsler i hele kirken
 
-## Gjennomgå en forespørsel om å bli med
+## Gjennomgang av en tilmeldingsforespørsel
 
-Hver forespørsel om å bli med viser:
+Hver tilmeldingsforespørsel viser:
 
-- **Personens navn og bilde** -- Personen som ber om å bli med
-- **Valgfri melding** -- En personlig melding som forklarer hvorfor de vil bli med (hvis oppgitt)
-- **Forespørselsdato** -- Når forespørselen ble sendt
+- **Personens navn og foto** -- Personen som forespør om å bli medlem
+- **Valgfri melding** -- En personlig melding som forklarer hvorfor de vil bli medlem (hvis gitt)
+- **Forespørselsdato** -- Når forespørselen ble sendt inn
 
 For å gjennomgå en forespørsel:
 
-1. Les personens melding hvis de har oppgitt en
-2. Klikk på personens navn for å se profilen deres hvis nødvendig
-3. Bestem om du vil godkjenne eller avslå
+1. Les personens melding hvis de ga en
+2. Klikk på personens navn for å vise profilen deres hvis nødvendig
+3. Bestem deg for om du skal godkjenne eller avslå
 
-## Godkjenne en forespørsel
+## Godkjenning av en forespørsel
 
-1. Klikk **Godkjenn** på forespørselen om å bli med
-2. Personen legges umiddelbart til i gruppen som medlem
-3. Forespørreren mottar et varsel om at forespørselen ble godkjent
+1. Klikk **Godkjenn** på tilmeldingsforespørselen
+2. Personen blir umiddelbar lagt til i gruppen som medlem
+3. Den som forespurte mottar et varsel om at forespørselen deres ble godkjent
 4. Forespørselen er merket som godkjent i systemet
 
 :::tip
-Når du godkjenner en forespørsel, blir personen et vanlig gruppemedlem. Du kan senere forfremme dem til gruppeleder hvis nødvendig fra [Gruppemedlemmer](./group-members.md)-siden.
+Når du godkjenner en forespørsel, blir personen et vanlig gruppemedlem. Du kan senere oppgradere dem til gruppeleder hvis nødvendig fra siden [Gruppemedlemmer](./group-members.md).
 :::
 
 ## Avslå en forespørsel
 
-1. Klikk **Avslå** på forespørselen om å bli med
-2. Oppgi eventuelt en begrunnelse for avslaget (opptil 500 tegn)
+1. Klikk **Avslå** på tilmeldingsforespørselen
+2. Gi gjerne en grunn for avslå (opptil 500 tegn)
 3. Klikk **Bekreft**
-4. Forespørreren mottar et varsel med din begrunnelse for avslag (hvis oppgitt)
+4. Den som forespurte mottar et varsel med avslåningsgrunnen din (hvis gitt)
 5. Forespørselen er merket som avslått
 
 :::info
-Å oppgi en begrunnelse for avslag hjelper personen å forstå hvorfor forespørselen ikke ble godkjent og kan oppmuntre dem til å prøve igjen senere eller utforske andre grupper.
+Å gi en avslåningsgrunn hjelper personen med å forstå hvorfor forespørselen deres ikke ble godkjent, og kan oppfordre dem til å prøve igjen senere eller utforske andre grupper.
 :::
 
 ## Varsler
 
-Systemet for forespørsler om å bli med sender automatisk varsler:
+Tilmeldingsforespørselssystemet sender automatisk varsler:
 
-- **Når en forespørsel sendes inn** -- Alle gruppeledere mottar et varsel
-- **Når en forespørsel godkjennes** -- Forespørreren mottar en bekreftelse
-- **Når en forespørsel avslås** -- Forespørreren mottar et varsel med eventuell begrunnelse for avslag
+- **Når en forespørsel sendes inn** -- Alle gruppledere mottar et varsel
+- **Når en forespørsel godkjennes** -- Den som forespurte mottar en bekreftelse
+- **Når en forespørsel avslås** -- Den som forespurte mottar et varsel med eventuelle avslåningsgrunner
 
-Varsler vises i brukerens varselssenter på B1.church og i mobilappen.
+Varsler vises i varselsenteret på B1.church og i mobilappen.
 
-## Administrere forespørsler fra medlemssiden
+## Administrering av forespørsler fra medlemssiden
 
-Folk kan administrere sine egne forespørsler om å bli med fra B1.church:
+Folk kan administrere egne tilmeldingsforespørsler fra B1.church:
 
-- Se statusen til sine ventende forespørsler på gruppedetaljsiden
-- Avbryte en ventende forespørsel hvis de ombestemmer seg
+- Vis statusen for ventende forespørsler på gruppens detaljer
+- Avbryt en ventende forespørsel hvis de endrer mening
 - Se om forespørselen deres ble godkjent eller avslått
 
 ## Beste praksis
 
-- **Svar raskt** -- Prøv å gjennomgå forespørsler innen 24-48 timer slik at folk ikke sitter og venter
-- **Vær tydelig i begrunnelser for avslag** -- Hjelp folk å forstå neste steg eller alternative alternativer
-- **Sjekk profiler** -- Gjennomgå personens profil for å se om de passer godt i gruppen
-- **Kommuniser forventninger** -- Sørg for at gruppebeskrivelsen din tydelig angir hvem gruppen er for
+- **Svar raskt** -- Prøv å gjennomgå forespørsler innen 24-48 timer slik at folk ikke blir liggende og vente
+- **Vær tydelig i avslåningsgrunner** -- Hjelp folk med å forstå neste trinn eller alternative alternativer
+- **Sjekk profiler** -- Gjennomgå personens profil for å se om de passer bra for gruppen
+- **Kommuniser forventninger** -- Pass på at gruppebeskrivelsen din tydelig uttaler hvem gruppen er for
 
 ## Relaterte artikler
 
-- [Opprette grupper](./creating-groups.md) -- Lær hvordan du setter opp grupper og konfigurerer tilmeldingspolicyer
+- [Opprett grupper](./creating-groups.md) -- Lær hvordan du setter opp grupper og konfigurerer tilmeldingspolicyer
 - [Gruppemedlemmer](./group-members.md) -- Administrer eksisterende gruppemedlemmer
-- [Gruppekalender](./group-calendar.md) -- Planlegg gruppemøter og arrangementer
+- [Gruppekalender](./group-calendar.md) -- Planlegg gruppemøter og hendelser

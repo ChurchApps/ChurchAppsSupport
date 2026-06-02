@@ -42,6 +42,20 @@ If there are no announcements and you are not a leader, you will only see the Di
 
 Your message will be visible to all members of the group.
 
+## Editing or Deleting Your Messages
+
+You can edit or delete any message you have posted:
+
+1. Hover over your message (or tap it on mobile) to reveal the **more options** button (⋮).
+2. Click the button to open the message menu.
+3. Choose **Edit** to modify the message text, or **Delete** to remove it.
+   - When editing, the message text loads back into the input field. Make your changes and submit to save them.
+   - When deleting, a confirmation dialog appears. Click **Confirm** to permanently remove the message.
+
+:::info
+You can only edit or delete your own messages. Messages posted by other members do not show the edit/delete options.
+:::
+
 :::tip
 Group conversations also appear on your [Timeline](../community/timeline.md), so you can keep up with discussions without visiting each group individually.
 :::

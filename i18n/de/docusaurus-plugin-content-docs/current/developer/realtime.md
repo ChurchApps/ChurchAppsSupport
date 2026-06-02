@@ -6,31 +6,89 @@ title: "Echtzeit-Architektur"
 
 <div class="article-intro">
 
-ChurchApps verwendet ein einzelnes WebSocket-basiertes Delivery-Framework für jede Echtzeit-Oberfläche -- Gruppenchat, private Nachrichten, Inhaltsnotizen, den Livestream-Chat und Präsenz/Teilnahme. Diese Seite dokumentiert das Protokoll, den Server und die Client-Primitiven, die Consumer verwenden.
+ChurchApps verwendet ein einzelnes WebSocket-basiertes Zustellungs-Framework für jede Echtzeit-Oberfläche -- Gruppen-Chat, private Nachrichten, Inhaltsnotizen, Live-Stream-Chat und Präsenz/Teilnahme.
 
 </div>
 
-## Übersicht
+## Overview
 
-Das Protokoll besteht aus drei Teilen:
+```
+┌────────────────────┐                ┌────────────────────────────┐
+│ Browser / B1Admin  │                │  MessagingApi (Lambda)     │
+│ Browser / B1App    │ ─── WS ─────▶  │  ┌───────────────────────┐ │
+│  - SocketHelper    │                │  │ SocketHelper (server) │ │
+│  - SubscriptionMgr │   POST /msg ──▶│  │ MessageController     │ │
+│  - ConversationStore│  POST /conn ─▶│  │ ConnectionController  │ │
+│  - PresenceStore   │ ◀── action ──  │  │ DeliveryHelper        │ │
+└────────────────────┘                │  └───────────────────────┘ │
+                                      └────────────────────────────┘
+```
 
-1. **Ein persistenter WebSocket** pro Browser-Tab, geöffnet von SocketHelper.
-2. **Connection-Zeilen** (POST /messaging/connections) im connections-Table aufgezeichnet -- diese markieren ein (socketId, churchId, conversationId)-Tupel als Abonnent eines Raums.
-3. **Serverseitiges Fan-out** durch DeliveryHelper.sendConversationMessages() -- wenn eine Nachricht gespeichert wird (POST /messaging/messages/send), liest der Server die passenden Connection-Zeilen und schiebt eine typisierte Payload an jeden offenen Socket.
+Das Protokoll hat drei Teile:
 
-Es gibt kein Socket.IO, kein Long-Polling-Fallback und keinen separaten Microservice.
+1. **Ein persistenter WebSocket** pro Browser-Tab
+2. **Verbindungszeilen** (`POST /messaging/connections`)
+3. **Server-seitige Fan-Out** durch `DeliveryHelper.sendConversationMessages()`
 
-## Wire-Protokoll
+## Ports and transport
 
-Jeder Frame ist JSON mit der Form PayloadInterface mit churchId, conversationId, action und data.
+| Environment | HTTP | WebSocket |
+|-------------|------|-----------|
+| Local dev   | `8084` | `ws://localhost:8087` |
+| Railway | shared | shared |
+| AWS Lambda | API Gateway | API Gateway |
 
-Wichtige Actions: socketId, message, attendance, notification.
+## Wire protocol
 
-## Client-seitige Primitiven
+Jeder Frame ist JSON der Form `PayloadInterface`:
 
-Alle Primitiven sind statische Singletons in @churchapps/apphelper: SocketHelper, SubscriptionManager, ConversationStore, PresenceStore, NotificationService.
+```typescript
+interface PayloadInterface {
+  churchId: string;
+  conversationId: string;
+  action: PayloadAction;
+  data: unknown;
+}
+```
 
-## Verwandte Seiten
+## Server-side components
+
+| File | Role |
+|------|------|
+| `Api/src/modules/messaging/helpers/SocketHelper.ts` | Besitzt den `WebSocketServer` |
+| `Api/src/modules/messaging/helpers/DeliveryHelper.ts` | Leitet Frames an Sockets |
+| `Api/src/modules/messaging/controllers/ConnectionController.ts` | Joins/Leaves |
+| `Api/src/modules/messaging/controllers/MessageController.ts` | Speichert und Fan-Out |
+
+## Client-side primitives
+
+Alle fünf Primitiven sind statische Singletons.
+
+### `SocketHelper`
+
+Besitzt die einzelne WebSocket-Verbindung.
+
+### `SubscriptionManager`
+
+Ref-gezählte Raum-Mitgliedschaft.
+
+### `ConversationStore`
+
+In-Memory-Cache nach `conversationId`.
+
+### `PresenceStore`
+
+Spiegelt `ConversationStore`'s Muster für die `attendance`-Aktion.
+
+### `NotificationService`
+
+Top-Level-Boot für **authentifizierte** Aufrufer.
+
+## Live stream chat
+
+Der Live-Stream ist der größte anonyme Consumer des Frameworks.
+
+## Related Pages
 
 - [Messaging Endpoints](./api/endpoints/messaging)
 - [Web Push Notifications](./web-push)

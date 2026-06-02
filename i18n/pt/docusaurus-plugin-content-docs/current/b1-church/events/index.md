@@ -6,39 +6,39 @@ title: "Eventos"
 
 <div class="article-intro">
 
-A seção Events no B1.church permite que você procure eventos da iglesia próximos e se registre para eles diretamente do website. Quando sua iglesia ativa o registro para um evento, você pode se inscrever você e membros de sua família em apenas alguns passos.
+A seção Eventos no B1.church permite que você navegue pelos próximos eventos da igreja e se registre para eles diretamente do site. Quando sua igreja ativa o registro para um evento, você pode se inscrever a si mesmo e aos membros de sua família em apenas alguns passos.
 
 </div>
 
-## Procurando Eventos
+## Navegando Eventos
 
-Eventos aparecem no calendário da iglesia. Quando você abre um evento que tem registro ativado, um botão **Register for this Event** é exibido ao lado dos detalhes do evento.
+Os eventos aparecem no calendário da igreja. Quando você abre um evento que tem o registro ativado, um botão **Registre-se para este Evento** é exibido ao lado dos detalhes do evento.
 
 Eventos com registro ativado mostram:
 
-- **Título e descrição do evento** -- Do que o evento é sobre.
-- **Data e hora** -- Quando o evento ocorre.
-- **Botão de registro** -- Um botão azul que o leva ao formulário de registro.
+- **Título e descrição do evento** -- Do que se trata o evento.
+- **Data e hora** -- Quando o evento acontece.
+- **Botão de registro** -- Um botão azul que o leva para o formulário de registro.
 
 ## Status do Registro
 
-Eventos podem mostrar diferentes status dependendo de sincronização e capacidade:
+Os eventos podem mostrar diferentes status dependendo do tempo e capacidade:
 
-- **Open** -- O registro está disponível e você pode se inscrever.
-- **Not Yet Open** -- A janela de registro ainda não começou. Verifique novamente após a data de abertura.
-- **Closed** -- O prazo de registro expirou.
-- **Full** -- Todos os spots disponíveis foram ocupados.
+- **Aberto** -- O registro está disponível e você pode se inscrever.
+- **Ainda não aberto** -- A janela de registro ainda não começou. Verifique após a data de abertura.
+- **Fechado** -- O prazo de registro passou.
+- **Completo** -- Todos os lugares disponíveis foram preenchidos.
 
 :::tip
-Se um evento está cheio, verifique novamente depois -- spots podem abrir se alguém cancelar seu registro.
+Se um evento está completo, verifique mais tarde -- lugares podem abrir se alguém cancelar seu registro.
 :::
 
 ## O Que Você Precisa
 
-- Uma conta B1.church (ou você pode se registrar como hóspede)
-- Acesso ao website B1.church de sua iglesia
+- Uma conta B1.church (ou você pode se registrar como convidado)
+- Acesso ao site B1.church de sua igreja
 
 ## Saiba Mais
 
-- [Registering for Events](./registering) -- Guia passo a passo para se inscrever para um evento
-- [Self Check-In](../checkin/self-checkin) -- Registre-se quando você chegar ao evento
+- [Registrando-se para Eventos](./registering) -- Guia passo a passo para se inscrever em um evento
+- [Auto Check-In](../checkin/self-checkin) -- Faça check-in quando chegar ao evento

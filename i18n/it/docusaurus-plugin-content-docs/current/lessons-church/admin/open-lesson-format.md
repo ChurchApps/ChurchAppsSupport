@@ -1,60 +1,60 @@
 ---
-title: "Formato Open Lesson"
+title: "Formato lezione aperta"
 ---
 
-# Formato Open Lesson
+# Formato lezione aperta
 
 <div class="article-intro">
 
-Il Formato Open Lesson e uno schema JSON standardizzato che consente ai fornitori di contenuti di terze parti di pubblicare materiale didattico per Lessons.church. Qualsiasi organizzazione che ospita un feed in questo formato puo essere aggiunta come fornitore esterno, rendendo i suoi contenuti navigabili e riproducibili insieme alla libreria integrata.
+L'Open Lesson Format è uno schema JSON standardizzato che consente ai fornitori di contenuto di terze parti di pubblicare curriculum per Lessons.church. Qualsiasi organizzazione che ospita un feed in questo formato può essere aggiunta come provider esterno, rendendo il loro contenuto navigabile e riproducibile insieme alla libreria integrata.
 
 </div>
 
 ## Come funziona
 
-Un fornitore ospita due tipi di endpoint:
+Un provider ospita due tipi di endpoint:
 
-1. **Provider Tree** -- Un singolo URL che restituisce il catalogo completo di programmi, studi, lezioni e ambienti. Ogni ambiente include un URL di feed che punta al contenuto dettagliato della lezione.
-2. **Venue Feed** -- Un URL per ogni ambiente, che restituisce il contenuto completo della lezione (sezioni, azioni e file multimediali).
+1. **Provider Tree** -- Un singolo URL che restituisce il catalogo completo di programmi, studi, lezioni e sedi. Ogni sede include un URL di feed che punta al contenuto della lezione dettagliata.
+2. **Venue Feed** -- Un URL per sede, che restituisce il contenuto della lezione completo (sezioni, azioni e file multimediali).
 
-Quando una chiesa aggiunge l'URL del vostro fornitore in Lessons.church, la piattaforma recupera il vostro albero per scoprire i contenuti disponibili, quindi recupera i singoli feed dell'ambiente su richiesta.
+Quando una chiesa aggiunge l'URL del tuo provider in Lessons.church, la piattaforma recupera il tuo albero per scoprire il contenuto disponibile, quindi recupera i feed delle sedi individuali su richiesta.
 
 ## Provider Tree
 
-L'URL del vostro fornitore deve restituire un oggetto JSON con questa struttura:
+Il tuo URL provider deve restituire un oggetto JSON con questa struttura:
 
 ```json
 {
   "programs": [
     {
       "id": "program-1",
-      "name": "Vangelo di Marco",
+      "name": "Gospel of Mark",
       "slug": "gospel-of-mark",
       "image": "https://example.com/images/mark.jpg",
-      "about": "Uno studio di 12 settimane attraverso il Vangelo di Marco.",
+      "about": "A 12-week study through the Gospel of Mark.",
       "studies": [
         {
           "id": "study-1",
-          "name": "L'Inizio",
+          "name": "The Beginning",
           "slug": "the-beginning",
           "image": "https://example.com/images/study1.jpg",
           "lessons": [
             {
               "id": "lesson-1",
-              "name": "Il Battesimo di Gesu",
+              "name": "The Baptism of Jesus",
               "slug": "baptism-of-jesus",
-              "title": "Il Battesimo di Gesu",
+              "title": "The Baptism of Jesus",
               "image": "https://example.com/images/lesson1.jpg",
-              "description": "Un'introduzione al ministero di Gesu.",
+              "description": "An introduction to Jesus' ministry.",
               "venues": [
                 {
                   "id": "venue-1",
-                  "name": "Bambini",
+                  "name": "Kids",
                   "apiUrl": "https://example.com/feed/venues/venue-1"
                 },
                 {
                   "id": "venue-2",
-                  "name": "Adulti",
+                  "name": "Adults",
                   "apiUrl": "https://example.com/feed/venues/venue-2"
                 }
               ]
@@ -67,73 +67,73 @@ L'URL del vostro fornitore deve restituire un oggetto JSON con questa struttura:
 }
 ```
 
-### Campi del Provider Tree
+### Campi dell'albero
 
 | Campo | Tipo | Descrizione |
 |-------|------|-------------|
-| `programs[].id` | string | Identificatore univoco del programma |
-| `programs[].name` | string | Nome visualizzato |
-| `programs[].slug` | string | Nome adatto per URL |
-| `programs[].image` | string | URL dell'immagine del programma (opzionale) |
-| `programs[].about` | string | Descrizione (opzionale) |
-| `studies[].id` | string | Identificatore univoco dello studio |
-| `studies[].name` | string | Nome visualizzato |
-| `studies[].slug` | string | Nome adatto per URL |
-| `studies[].image` | string | URL dell'immagine dello studio (opzionale) |
-| `lessons[].id` | string | Identificatore univoco della lezione |
-| `lessons[].name` | string | Nome visualizzato |
-| `lessons[].slug` | string | Nome adatto per URL |
-| `lessons[].title` | string | Titolo completo |
-| `lessons[].image` | string | URL dell'immagine della lezione (opzionale) |
-| `lessons[].description` | string | Riassunto della lezione (opzionale) |
-| `venues[].id` | string | Identificatore univoco dell'ambiente |
-| `venues[].name` | string | Nome dell'ambiente (es. "Bambini", "Adulti", "Giovani") |
-| `venues[].apiUrl` | string | URL che restituisce il feed dell'ambiente (vedi sotto) |
+| `programs[].id` | stringa | Identificatore univoco del programma |
+| `programs[].name` | stringa | Nome visualizzato |
+| `programs[].slug` | stringa | Nome URL-friendly |
+| `programs[].image` | stringa | URL immagine del programma (facoltativo) |
+| `programs[].about` | stringa | Descrizione (facoltativo) |
+| `studies[].id` | stringa | Identificatore univoco dello studio |
+| `studies[].name` | stringa | Nome visualizzato |
+| `studies[].slug` | stringa | Nome URL-friendly |
+| `studies[].image` | stringa | URL immagine dello studio (facoltativo) |
+| `lessons[].id` | stringa | Identificatore univoco della lezione |
+| `lessons[].name` | stringa | Nome visualizzato |
+| `lessons[].slug` | stringa | Nome URL-friendly |
+| `lessons[].title` | stringa | Titolo completo |
+| `lessons[].image` | stringa | URL immagine della lezione (facoltativo) |
+| `lessons[].description` | stringa | Riepilogo della lezione (facoltativo) |
+| `venues[].id` | stringa | Identificatore univoco della sede |
+| `venues[].name` | stringa | Nome della sede (ad es. "Kids", "Adults", "Youth") |
+| `venues[].apiUrl` | stringa | URL che restituisce il feed della sede (vedi sotto) |
 
-**Gli ambienti** rappresentano diverse versioni della stessa lezione adattate per diversi tipi di pubblico (gruppi di eta, contesti, ecc.).
+**Le sedi** rappresentano diverse versioni della stessa lezione personalizzate per diversi pubblici (gruppi di età, ambienti, ecc.).
 
 ## Venue Feed
 
-L'URL `apiUrl` di ogni ambiente deve restituire un oggetto JSON che corrisponda a questo schema:
+L'`apiUrl` di ogni sede deve restituire un oggetto JSON che corrisponde a questo schema:
 
 ```json
 {
   "id": "venue-1",
-  "name": "Bambini",
+  "name": "Kids",
   "lessonId": "lesson-1",
-  "lessonName": "Il Battesimo di Gesu",
+  "lessonName": "The Baptism of Jesus",
   "lessonImage": "https://example.com/images/lesson1.jpg",
-  "lessonDescription": "Un'introduzione al ministero di Gesu.",
-  "studyName": "L'Inizio",
+  "lessonDescription": "An introduction to Jesus' ministry.",
+  "studyName": "The Beginning",
   "studySlug": "the-beginning",
-  "programName": "Vangelo di Marco",
+  "programName": "Gospel of Mark",
   "programSlug": "gospel-of-mark",
-  "programAbout": "Uno studio di 12 settimane attraverso il Vangelo di Marco.",
+  "programAbout": "A 12-week study through the Gospel of Mark.",
   "downloads": [],
   "sections": [
     {
       "id": "section-1",
-      "name": "Discussione iniziale",
+      "name": "Opening Discussion",
       "sort": 1,
-      "materials": "Lavagna e pennarelli",
+      "materials": "Whiteboard and markers",
       "actions": [
         {
           "id": "action-1",
           "actionType": "text",
-          "content": "**Versetto chiave:** Marco 1:9-11",
+          "content": "**Key Verse:** Mark 1:9-11",
           "sort": 1
         },
         {
           "id": "action-2",
           "actionType": "question",
-          "content": "Cosa sai del battesimo?",
+          "content": "What do you know about baptism?",
           "sort": 2,
           "role": "Leader"
         },
         {
           "id": "action-3",
           "actionType": "play",
-          "content": "Video introduttivo",
+          "content": "Intro Video",
           "sort": 3,
           "files": [
             {
@@ -155,79 +155,79 @@ L'URL `apiUrl` di ogni ambiente deve restituire un oggetto JSON che corrisponda 
 }
 ```
 
-### Campi del Venue Feed
+### Campi del feed della sede
 
 #### Oggetto radice
 
 | Campo | Tipo | Descrizione |
 |-------|------|-------------|
-| `id` | string | Identificatore dell'ambiente |
-| `name` | string | Nome dell'ambiente |
-| `lessonId` | string | Identificatore della lezione |
-| `lessonName` | string | Nome visualizzato della lezione |
-| `lessonImage` | string | URL dell'immagine della lezione |
-| `lessonDescription` | string | Riassunto della lezione |
-| `studyName` | string | Nome dello studio principale |
-| `studySlug` | string | Slug dello studio principale |
-| `programName` | string | Nome del programma principale |
-| `programSlug` | string | Slug del programma principale |
-| `programAbout` | string | Descrizione del programma |
-| `downloads` | array | Pacchetti di file scaricabili |
-| `sections` | array | Sezioni della lezione ordinate |
+| `id` | stringa | Identificatore della sede |
+| `name` | stringa | Nome della sede |
+| `lessonId` | stringa | Identificatore della lezione |
+| `lessonName` | stringa | Nome visualizzato della lezione |
+| `lessonImage` | stringa | URL immagine della lezione |
+| `lessonDescription` | stringa | Riepilogo della lezione |
+| `studyName` | stringa | Nome dello studio genitore |
+| `studySlug` | stringa | Slug dello studio genitore |
+| `programName` | stringa | Nome del programma genitore |
+| `programSlug` | stringa | Slug del programma genitore |
+| `programAbout` | stringa | Descrizione del programma |
+| `downloads` | array | Bundle di file scaricabili |
+| `sections` | array | Sezioni di lezione ordinate |
 
 #### Sezione
 
 | Campo | Tipo | Descrizione |
 |-------|------|-------------|
-| `id` | string | Identificatore della sezione |
-| `name` | string | Titolo della sezione |
-| `sort` | number | Ordine di visualizzazione |
-| `materials` | string | Materiali o note di preparazione (opzionale) |
-| `actions` | array | Azioni ordinate all'interno di questa sezione |
+| `id` | stringa | Identificatore della sezione |
+| `name` | stringa | Titolo della sezione |
+| `sort` | numero | Ordine di visualizzazione |
+| `materials` | stringa | Materiali o note di preparazione (facoltativo) |
+| `actions` | array | Azioni ordinate in questa sezione |
 
 #### Azione
 
 | Campo | Tipo | Descrizione |
 |-------|------|-------------|
-| `id` | string | Identificatore dell'azione |
-| `actionType` | string | Uno di: `play`, `text`, `question`, `quote`, `subhead` |
-| `content` | string | Contenuto testuale o etichetta del media |
-| `sort` | number | Ordine di visualizzazione |
-| `role` | string | Nome del ruolo, es. "Leader", "Bambini" (opzionale) |
-| `roleId` | string | Identificatore del ruolo (opzionale) |
-| `files` | array | File multimediali per azioni `play` (opzionale) |
+| `id` | stringa | Identificatore dell'azione |
+| `actionType` | stringa | Uno di: `play`, `text`, `question`, `quote`, `subhead` |
+| `content` | stringa | Contenuto di testo o etichetta multimediale |
+| `sort` | numero | Ordine di visualizzazione |
+| `role` | stringa | Nome del ruolo, ad es. "Leader", "Kids" (facoltativo) |
+| `roleId` | stringa | Identificatore del ruolo (facoltativo) |
+| `files` | array | File multimediali per azioni `play` (facoltativo) |
 
 #### File
 
 | Campo | Tipo | Descrizione |
 |-------|------|-------------|
-| `id` | string | Identificatore del file |
-| `name` | string | Nome del file |
-| `url` | string | URL di download diretto |
-| `streamUrl` | string | URL di streaming, es. collegamento Vimeo (opzionale) |
-| `fileType` | string | Tipo MIME (es. `video/mp4`, `image/jpeg`) |
-| `seconds` | number | Durata in secondi per audio/video (opzionale) |
-| `bytes` | number | Dimensione del file in byte (opzionale) |
-| `thumbnail` | string | URL dell'immagine in miniatura (opzionale) |
-| `loop` | boolean | Se il media deve ripetersi in loop (opzionale, predefinito false) |
+| `id` | stringa | Identificatore del file |
+| `name` | stringa | Nome del file |
+| `url` | stringa | URL di download diretto |
+| `streamUrl` | stringa | URL di streaming, ad es. link Vimeo (facoltativo) |
+| `fileType` | stringa | Tipo MIME (ad es. `video/mp4`, `image/jpeg`) |
+| `seconds` | numero | Durata in secondi per audio/video (facoltativo) |
+| `bytes` | numero | Dimensione del file in byte (facoltativo) |
+| `thumbnail` | stringa | URL immagine miniatura (facoltativo) |
+| `loop` | boolean | Se il supporto dovrebbe ripetersi (facoltativo, default false) |
 
-#### Download
+#### Scaricamento
 
 | Campo | Tipo | Descrizione |
 |-------|------|-------------|
-| `name` | string | Nome del pacchetto di download (es. "Materiali stampabili") |
-| `files` | array | File in questo pacchetto di download (stessi campi del File sopra) |
+| `name` | stringa | Nome del bundle di download (ad es. "Printable Materials") |
+| `files` | array | File in questo bundle di download (stessi campi del File sopra) |
 
 ## Tipi di azione
 
 | Tipo | Scopo |
 |------|---------|
-| `play` | Riproduzione di media -- video, audio o presentazione. Deve includere `files`. |
-| `text` | Contenuto testuale statico. Supporta grassetto nello stile markdown (`**text**`). |
+| `play` | Riproduzione multimediale -- video, audio o presentazione. Deve includere `files`. |
+| `text` | Contenuto di testo statico. Supporta testo in grassetto stile markdown (`**text**`). |
 | `question` | Domanda di discussione o riflessione per il pubblico. |
-| `quote` | Una citazione in evidenza o brano biblico. |
-| `subhead` | Un'intestazione o divisore all'interno di una sezione. |
+| `quote` | Una citazione in evidenza o passaggio delle Scritture. |
+| `subhead` | Un'intestazione o un divisore in una sezione. |
 
 :::tip
-Per vedere un esempio funzionante del feed in azione, potete visualizzare l'albero dei contenuti di Lessons.church integrato su `https://api.lessons.church/lessons/public/tree` e recuperare qualsiasi URL di feed dell'ambiente da esso.
+Per vedere un esempio funzionante del feed in azione, puoi visualizzare l'albero di contenuto Lessons.church integrato su `https://api.lessons.church/lessons/public/tree` e recuperare qualsiasi URL di feed della sede da esso.
 :::

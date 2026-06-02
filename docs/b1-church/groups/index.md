@@ -16,7 +16,7 @@ Here is what you can do with groups in B1App:
 
 - **Browse public groups** -- View all available groups organized by category. Each group shows a photo, name, meeting time, location, and a brief description.
 - **View group details** -- Click any group to see its full description, leaders, upcoming calendar events, and a contact form to reach out to the group's leaders.
-- **Join groups** -- Connect with a group to become a member and gain access to additional features.
+- **Join groups** -- Connect with a group to become a member. Open groups let you join immediately; groups with approval required let you submit a join request. See [Requesting to Join a Group](./join-requests.md).
 - **Participate in conversations** -- Once you are a member of a group, you can post messages and interact with other group members through the Conversations tab.
 - **Access calendars and resources** -- View upcoming events on the group calendar and download shared files or links from the Resources tab.
 
@@ -34,4 +34,5 @@ Groups also appear on your [Timeline](../community/timeline.md) -- conversations
 
 - [Browsing Groups](./browsing-groups.md) -- Learn how to find and explore groups
 - [Group Details](./group-details.md) -- Understand everything on the group detail page
+- [Requesting to Join a Group](./join-requests.md) -- Submit and manage join requests
 - [Group Conversations](./conversations.md) -- Post messages and interact with your group

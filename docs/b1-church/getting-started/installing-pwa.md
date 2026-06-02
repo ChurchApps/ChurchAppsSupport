@@ -65,6 +65,8 @@ Once installed, the PWA opens directly into the member portal in a dedicated ful
 - Access all the member features your church has enabled — groups, giving, check-in, serving plans, and more
 - Return to it at any time by tapping the icon on your home screen
 
+The app icon will show a **notification badge** (a small number badge) when you have unread messages, so you can see at a glance if there is something new waiting for you.
+
 :::info
 The PWA requires an internet connection. Unlike some native apps, it does not cache all content for offline use.
 :::

@@ -29,6 +29,7 @@ const sidebars: SidebarsConfig = {
             'b1-admin/people/bulk-editing',
             'b1-admin/people/importing-data',
             'b1-admin/people/exporting-data',
+            'b1-admin/people/print-directory',
             'b1-admin/people/roles-permissions',
           ],
         },
@@ -41,6 +42,7 @@ const sidebars: SidebarsConfig = {
             'b1-admin/groups/creating-groups',
             'b1-admin/groups/group-members',
             'b1-admin/groups/group-calendar',
+            'b1-admin/groups/group-join-requests',
           ],
         },
         {
@@ -228,6 +230,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'b1-church/groups/browsing-groups',
             'b1-church/groups/group-details',
+            'b1-church/groups/join-requests',
             'b1-church/groups/conversations',
           ],
         },

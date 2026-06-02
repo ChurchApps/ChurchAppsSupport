@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Eventos"
 ---
 
@@ -6,27 +6,27 @@ title: "Eventos"
 
 <div class="article-intro">
 
-La función de Eventos en B1 Mobile le permite explorar próximos eventos de iglesia y registrarse directamente desde su teléfono. Cuando su iglesia habilita el registro para un evento, puede registrarse a usted y a los miembros de su familia con solo unos pocos toques.
+La función de Eventos en B1 Mobile te permite explorar los próximos eventos de la iglesia y registrarte directamente desde tu teléfono. Cuando tu iglesia activa el registro para un evento, puedes inscribirte a ti mismo y a los miembros de tu familia con solo unos pocos toques.
 
 </div>
 
-## Búsqueda de Eventos con Registro
+## Encontrar Eventos con Registro
 
-Los eventos con registro habilitado aparecen en sus calendarios de grupo. Cuando toca un evento que tiene registro disponible, verá un botón **Registrar** en los detalles del evento.
+Los eventos con registro habilitado aparecen en tus calendarios de grupo. Cuando tocas un evento que tiene registro disponible, verás un botón **Registrarse** en los detalles del evento.
 
 Los eventos pueden mostrar diferentes estados:
 
-- **Abierto** -- El registro está disponible y puede registrarse.
-- **Aún no abierto** -- La ventana de registro aún no ha comenzado.
+- **Abierto** -- El registro está disponible y puedes inscribirte.
+- **No abierto aún** -- La ventana de registro aún no ha comenzado.
 - **Cerrado** -- Ha pasado la fecha límite de registro.
-- **Lleno** -- Se han tomado todos los espacios disponibles.
+- **Lleno** -- Todos los espacios disponibles han sido ocupados.
 
-## Lo Que Necesita
+## Lo que Necesitas
 
 - [B1 Mobile instalado](../getting-started/installing) e [iniciado sesión](../getting-started/logging-in)
-- Su iglesia debe tener el registro de eventos habilitado para el evento
+- Tu iglesia debe tener el registro de eventos habilitado para el evento
 
 ## Más Información
 
-- [Registro para Eventos](./registering) -- Guía paso a paso para registrarse en un evento en dispositivo móvil
-- [Auto-Registro de Entrada](../checkin/self-checkin) -- Regístrese cuando llegue al evento
+- [Registrarse para Eventos](./registering) -- Guía paso a paso para inscribirse en un evento en móvil
+- [Auto Registro de Asistencia](../checkin/self-checkin) -- Registra tu asistencia cuando llegas al evento

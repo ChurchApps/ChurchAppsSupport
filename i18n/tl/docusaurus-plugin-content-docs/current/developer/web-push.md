@@ -6,56 +6,61 @@ title: "Web Push Notifications"
 
 <div class="article-intro">
 
-Ang ChurchApps web apps ay naghahatid ng push notification sa pamamagitan ng W3C Web Push API — ang parehong mekanismo na ginagamit ng Firebase Cloud Messaging sa server side, ngunit ihinahatid sa pamamagitan ng native `PushManager` ng browser sa halip na FCM.
+Ang mga web apps ng ChurchApps ay naghahatid ng push notifications sa pamamagitan ng W3C Web Push API. Ang isang solong VAPID key pair sa MessagingApi ay sumasaklaw sa bawat consumer (B1Admin, B1App, future PWAs).
 
 </div>
 
-## Kailan Nag-fire ang Push
+## Kailan ang push ay sumusunod
 
-Ang MessagingApi ay naghahatid ng Web Push message sa tatlong sitwasyon:
+Ang MessagingApi ay naghahatid ng isang Web Push message sa tatlong sitwasyon:
 
-1. **Group / content notifications** — may sumagot sa thread
-2. **Private messages** — direktang mensahe sa recipient
-3. **Generic notifications** — direktang tawag sa notification endpoint
+1. **Mga notification ng grupo / content** -- may sumasagot sa isang thread na sinusubaybayan mo
+2. **Mga pribadong mensahe** -- `POST /messaging/privatemessages` ay nag-trigger ng isang push
+3. **Mga generic na notification** -- direktang mga tawag sa `POST /messaging/notifications/create`
 
-## Server Flow
+Ang push ay ang **last-resort tier**. Kung ang isang recipient ay may isang aktibong WebSocket connection, sila ay tumatanggap ng mensahe sa-app at ang push ay napiwalan.
+
+## Server flow
 
 ```
-NotificationHelper
-  ├─ in-page socket delivery
-  └─ WebPushHelper.sendBulkTypedMessages()
-       └─ web-push library → browser push service
+NotificationHelper.checkShouldNotify(...)
+  ├─ in-page socket delivery via DeliveryHelper (preferred)
+  └─ WebPushHelper.sendBulkTypedMessages(...)
+       └─ web-push library → VAPID-signed POST → browser push service
 ```
 
-### Kinakailangang Environment Variables
+### Kinakailangang environment variables
 
 | Variable | Paglalarawan |
 |----------|-------------|
-| `webPushPublicKey` | VAPID public key |
+| `webPushPublicKey` | VAPID public key (base64url) |
 | `webPushPrivateKey` | VAPID private key |
-| `webPushSubject` | `mailto:` URI |
+| `webPushSubject` | `mailto:` URI reported to push services |
 
-### Paggawa ng VAPID Key Pair
+### Lumilikha ng isang VAPID key pair
 
 ```bash
 npx web-push generate-vapid-keys
 ```
 
-## Storage Model
+## Storage model
 
-Ang Web Push subscription ay naka-store sa `devices` table na may `webpush:` prefix.
+Ang mga Web Push subscriptions ay nakaimbak sa `devices` table kasama ang FCM device records.
 
-## Endpoints
+## Mga Endpoint
 
 Base path: `/messaging/webpush`
 
 | Method | Path | Auth | Paglalarawan |
 |--------|------|------|-------------|
-| GET | `/publicKey` | Public | Nagbabalik ng public key |
-| POST | `/subscribe` | JWT | Nagrerehistro ng subscription |
-| POST | `/unsubscribe` | Public | Nag-delete ng subscription |
+| GET | `/publicKey` | Public | Ibabalik ang `{ publicKey, enabled }` |
+| POST | `/subscribe` | JWT | Nagrehistro ng subscription |
+| POST | `/unsubscribe` | Public | Binabura ang subscription |
+| DELETE | `/subscription/:id` | JWT | Binabura ang device row |
 
-## Client Primitive: WebPushHelper
+## Client primitive: `WebPushHelper`
+
+Ang `@churchapps/apphelper`'s `WebPushHelper` ay ang solong client-side entry point.
 
 ```typescript
 import { WebPushHelper } from "@churchapps/apphelper";
@@ -68,12 +73,13 @@ WebPushHelper.configure({
 await WebPushHelper.subscribe();
 ```
 
-## Service Worker Requirement
+## Service worker requirement
 
-Ang browser's `PushManager` ay nangangailangan ng registered service worker.
+Ang service worker ay dapat na may kasamang `push` event handler na tumatawag ng `self.registration.showNotification()`.
 
-## Mga Kaugnay na Pahina
+## Mga operational notes
 
-- [Real-time Architecture](./realtime)
-- [Messaging Endpoints](./api/endpoints/messaging)
-- [AppHelper](./shared-libraries/app-helper)
+- **`gone: true` results** -- push service responded `404` o `410` (permanently invalid)
+- **TTL** -- push messages ay ipinapadala na may `TTL: 86400` (24 oras)
+- **Walang retries** -- ang transient failure ay naka-log at hindi sinubukan muli
+- **Disabled environments** -- staging at dev ay maaaring iwanan ang VAPID keys na blangko

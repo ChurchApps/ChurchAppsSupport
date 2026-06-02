@@ -1,4 +1,4 @@
----
+﻿---
 title: "Innhold"
 ---
 
@@ -6,49 +6,49 @@ title: "Innhold"
 
 <div class="article-intro">
 
-B1.church gir menigheten din et sentralt sted for å få tilgang til innholdet kirken din deler. Avhengig av hva kirken din har konfigurert, kan du ha tilgang til prekener, direktestrømming, bibellesing, et daglig bibelvers og leksemateriale -- alt fra medlemsportalen.
+B1.church gir menigheten din et sentralt sted å få tilgang til innholdet kirken din deler. Avhengig av hva kirken din har konfigurert, kan du ha tilgang til prekener, live-streaming, bibellesing, et daglig vers og leksjonsmateriale -- alt fra innsiden av medlemsportalen.
 
 </div>
 
-## Tilgjengelige innholdsfunksjoner
+## Tilgjengelige Innholdsfunksjoner
 
 ### Prekener
 
-Bla gjennom og se innspilte prekener fra kirken din. Kirkens prekenbibliotek er organisert i spillelister og serier, noe som gjør det enkelt å finne tidligere budskap.
+Bla gjennom og se registrerte prekener fra kirken din. Kirkens prekenbibliotek er organisert i spillelister og serier, noe som gjør det enkelt å finne tidligere budskaper.
 
-### Direktestrømming
+### Live Streaming
 
-Se kirkens direktesending direkte i B1.church. Når en gudstjeneste er direkte, kan du delta i strømmen og samhandle med andre seere gjennom chat- og bønnefunksjoner.
+Se kirkens live-sending direkte i B1.church. Når en tjeneste er live, kan du bli med i strømmen og samhandle med andre seere gjennom chat- og bedefunksjoner.
 
-### Bibel
+### Bibelen
 
-Les Skriften ved å bruke den innebygde bibelleseren. Du kan navigere gjennom bøker, kapitler og vers uten å forlate nettstedet.
+Les Skriften ved hjelp av den innebygde bibelleseren. Du kan navigere gjennom bøker, kapitler og vers uten å forlate siden.
 
-### Dagens vers
+### Dagens Vers
 
-Se et vakkert formatert bibelverspbilde som endres hver dag. Bildet justeres automatisk for å passe skjermen din.
+Se et vakkert formatert bibelversus som endres hver dag. Bildet tilpasses automatisk til skjermen din.
 
-### Lekser
+### Leksjoner
 
-Se planlagte lekser fra kirkens planer. Hvis du er lærer eller leder, kan du bruke **Lærervisning** for å se lekser i et fullskjermformat som er lett å navigere, perfekt for undervisning eller presentasjon.
+Se planlagte leksjoner fra kirkens planer. Hvis du er lærer eller leder, kan du bruke **Lærervisningen** for å se leksjoner i fullskjerm, lett navigerbar format som er perfekt for undervisning eller presentasjon.
 
-### Lekser (Utdatert - Innebygd fane)
+### Leksjoner (Avviklet - Innebygd Fane)
 
-Den innebygde **Lekser**-fanen er utdatert. Pensulavspilling lever nå i **[FreePlay](/docs/freeplay/)**, ChurchApps' gratis TV-app for klasseromsskjermer. For å bla gjennom pensum på telefon, nettbrett eller datamaskin, logg inn på [Lessons.church](https://lessons.church) direkte. Se [Lekser referanseside](./lessons.md) for detaljer.
+Den innebygde **Leksjoner**-fanen har blitt avviklet. Læreplanen spilles nå av i **[FreePlay](/docs/freeplay/)**, ChurchApps' gratis TV-app for klasseromsskjermer. For å bla gjennom læreplanen på en telefon, nettbrett eller datamaskin, logg inn på [Lessons.church](https://lessons.church) direkte. Se [Leksjoner-referansesiden](./lessons.md) for detaljer.
 
-## Finne innhold
+## Finne Innhold
 
-Innholdssider er tilgjengelige gjennom kirkens nettstedsnavigasjon. Kirkeadministratoren din bestemmer hvilke innholdsfunksjoner som er aktivert og hvordan de vises i menyen. Hvis du ikke ser en bestemt innholdsfunksjon oppført ovenfor, kan det hende den ikke er konfigurert for kirken din.
+Innholdssider er tilgjengelige gjennom kirkens navigasjon. Kirkeadministratoren din bestemmer hvilke innholdsfunksjoner som er aktivert og hvordan de vises i menyen. Hvis du ikke ser en bestemt innholdsfunksjon oppført ovenfor, er den kanskje ikke konfigurert for kirken din.
 
 :::info
-[Prekener](./sermons.md) og [Bibelen](./bible.md) er tilgjengelige offentlig. Andre funksjoner kan kreve at du er [innlogget](../getting-started/logging-in.md).
+[Prekener](./sermons.md) og [Bibelen](./bible.md) er offentlig tilgjengelig. Andre funksjoner kan kreve at du er [logget inn](../getting-started/logging-in.md).
 :::
 
-## Neste steg
+## Neste Trinn
 
-- [Prekener](./sermons.md) -- Bla gjennom og se innspilte prekener
-- [Direktestrømming](./live-streaming.md) -- Se direktesendinger
-- [Bibel](./bible.md) -- Les Skriften i den innebygde leseren
-- [Dagens vers](./verse-of-the-day.md) -- Se dagens daglige vers
-- [Lærervisning](./teacher-view.md) -- Bruk det utvidede lærergrensesnittet for lekseinnhold
-- [FreePlay](/docs/freeplay/) -- Spill lekser på klasseroms-TV-er (erstatter den utdaterte lekse-fanen i appen)
+- [Prekener](./sermons.md) -- Bla gjennom og se registrerte prekener
+- [Live Streaming](./live-streaming.md) -- Se live-sendinger
+- [Bibelen](./bible.md) -- Les Skriften i den innebygde leseren
+- [Dagens Vers](./verse-of-the-day.md) -- Se dagens daglige vers
+- [Lærervisning](./teacher-view.md) -- Bruk det utvidede læregrensesnittet for leksjonsinnhold
+- [FreePlay](/docs/freeplay/) -- Spill av leksjoner på klasseromssamtv (erstatning for den avviklede innebygde Leksjoner-fanen)

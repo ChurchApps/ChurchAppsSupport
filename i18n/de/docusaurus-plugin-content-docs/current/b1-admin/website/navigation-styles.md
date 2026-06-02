@@ -1,161 +1,161 @@
 ---
-title: "Navigationsstile"
+title: "Navigations-Stile"
 ---
 
-# Navigationsstile
+# Navigations-Stile
 
 <div class="article-intro">
 
-Passen Sie die Farben der Navigationsleiste Ihrer Gemeinde-Website an, um sie Ihrem Branding anzupassen. Sie können Farben sowohl für solide Hintergründe als auch für transparente Overlays konfigurieren und haben so vollständige Kontrolle darüber, wie Ihre Navigation auf verschiedenen Seiten aussieht.
+Passen Sie die Navigationsleisten-Farben Ihrer Kirchengemeinde-Website an, um Ihre Markenbildung zu ergänzen. Sie können Farben für beide feste Hintergründe und transparente Überlagerungen konfigurieren, was Ihnen vollständige Kontrolle über das Erscheinungsbild Ihrer Navigation über verschiedene Seiten gibt.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Sie benötigen die Berechtigung zur Verwaltung Ihrer Gemeinde-Website. Siehe [Rollen & Berechtigungen](../people/roles-permissions.md) für Details.
+- Sie benötigen die Berechtigung zur Verwaltung Ihrer Kirchengemeinde-Website. Siehe [Rollen & Berechtigungen](../people/roles-permissions.md) für Details.
 - Halten Sie Ihre Markenfarben bereit, einschließlich Hex-Farbcodes (z.B. #03A9F4).
-- Verstehen Sie den Unterschied zwischen soliden und transparenten Navigationsstilen auf Ihrer Website.
+- Verstehen Sie den Unterschied zwischen festen und transparenten Navigations-Stilen auf Ihrer Website.
 
 </div>
 
 ## Navigationsmodi verstehen
 
-Ihre Website-Navigation kann je nach Seite in zwei verschiedenen Stilen erscheinen:
+Ihre Website-Navigation kann je nach Seite in zwei verschiedenen Stilen angezeigt werden:
 
-- **Solide Navigation** -- Navigationsleiste mit einer Hintergrundfarbe, typischerweise auf Inhaltsseiten verwendet
-- **Transparente Navigation** -- Navigation, die den Seiteninhalt überlagert, typischerweise auf Seiten mit Hero-Bildern oder Vollbild-Hintergründen verwendet
+- **Feste Navigation** -- Navigationsleiste mit einer Hintergrundfarbe, normalerweise auf Inhaltsseiten verwendet
+- **Transparente Navigation** -- Navigation, die Seiteninhalte überlagert, normalerweise auf Seiten mit Hero-Bildern oder Ganzseitenhintergründen verwendet
 
-Sie können Farben für beide Modi unabhängig voneinander anpassen.
+Sie können Farben für beide Modi unabhängig anpassen.
 
-## Zugriff auf Navigationsstile
+## Auf Navigations-Stile zugreifen
 
 1. Navigieren Sie zu **Website** in B1 Admin
-2. Klicken Sie in der Seitenleiste auf **Erscheinungsbild**
-3. Scrollen Sie zum Abschnitt **Navigationsstile**
-4. Klicken Sie auf **Navigationsstile bearbeiten**
+2. Klicken Sie auf **Erscheinungsbild** in der Seitenleiste
+3. Scrollen Sie zum Abschnitt **Navigations-Stile**
+4. Klicken Sie auf **Navigations-Stile bearbeiten**
 
-## Solide Navigation konfigurieren
+## Feste Navigation konfigurieren
 
-Solide Navigation erscheint mit einer Hintergrundfarbe hinter der Navigationsleiste. Sie können anpassen:
+Die feste Navigation wird mit einer Hintergrundfarbe hinter der Navigationsleiste angezeigt. Sie können folgende anpassen:
 
 ### Hintergrundfarbe
 
-1. Schalten Sie den **Überschreiben**-Schalter für **Hintergrundfarbe** um
-2. Klicken Sie auf den Farbwähler
-3. Wählen Sie Ihre gewünschte Hintergrundfarbe
-4. Der Standardwert ist Weiß (#FFFFFF)
+1. Aktivieren Sie den **Override**-Schalter für **Hintergrundfarbe**
+2. Klicken Sie auf die Farbwahl
+3. Wählen Sie Ihre gewünschte Hintergrundfarbe aus
+4. Die Standardeinstellung ist Weiß (#FFFFFF)
 
 ### Link-Farbe
 
-1. Schalten Sie den **Überschreiben**-Schalter für **Link-Farbe** um
-2. Wählen Sie die Farbe für den Text der Navigationslinks
-3. Dies betrifft Links in ihrem Standardzustand
-4. Der Standardwert ist Dunkelgrau (#555555)
+1. Aktivieren Sie den **Override**-Schalter für **Link-Farbe**
+2. Wählen Sie die Farbe für Navigationslink-Text aus
+3. Dies beeinflusst Links in ihrem Standardzustand
+4. Die Standardeinstellung ist Dunkelgrau (#555555)
 
 ### Link-Hover-Farbe
 
-1. Schalten Sie den **Überschreiben**-Schalter für **Link-Hover-Farbe** um
-2. Wählen Sie die Farbe, in die sich Links ändern, wenn Benutzer darüber fahren
+1. Aktivieren Sie den **Override**-Schalter für **Link-Hover-Farbe**
+2. Wählen Sie die Farbe aus, zu der Links wechseln, wenn Benutzer über sie fahren
 3. Dies bietet visuelles Feedback für anklickbare Links
-4. Der Standardwert ist Hellblau (#03A9F4)
+4. Die Standardeinstellung ist Hellblau (#03A9F4)
 
 ### Aktive Farbe
 
-1. Schalten Sie den **Überschreiben**-Schalter für **Aktive Farbe** um
-2. Wählen Sie die Farbe für den aktuell aktiven Seitenlink
-3. Dies hilft Benutzern zu wissen, auf welcher Seite sie sich befinden
-4. Der Standardwert ist Hellblau (#03A9F4)
+1. Aktivieren Sie den **Override**-Schalter für **Aktive Farbe**
+2. Wählen Sie die Farbe für den aktuell aktiven Seiten-Link aus
+3. Dies hilft Benutzern zu wissen, welche Seite sie gerade ansehen
+4. Die Standardeinstellung ist Hellblau (#03A9F4)
 
 ## Transparente Navigation konfigurieren
 
-Transparente Navigation überlagert Ihren Seiteninhalt ohne Hintergrund. Sie können anpassen:
+Die transparente Navigation überlagert Ihren Seiten-Inhalt ohne Hintergrund. Sie können folgende anpassen:
 
 ### Link-Farbe
 
-1. Schalten Sie den **Überschreiben**-Schalter für **Link-Farbe** um
-2. Wählen Sie eine Farbe, die gut mit Ihrem Seitenhintergrund kontrastiert
-3. Oft funktionieren weiße oder helle Farben am besten über dunklen Hintergründen
-4. Der Standardwert ist Dunkelgrau (#555555)
+1. Aktivieren Sie den **Override**-Schalter für **Link-Farbe**
+2. Wählen Sie eine Farbe aus, die sich gut von Ihrem Seiten-Hintergrund unterscheidet
+3. Oft funktionieren weiße oder helle Farben über dunklen Hintergründen am besten
+4. Die Standardeinstellung ist Dunkelgrau (#555555)
 
 ### Link-Hover-Farbe
 
-1. Schalten Sie den **Überschreiben**-Schalter für **Link-Hover-Farbe** um
-2. Wählen Sie die Hover-Zustand-Farbe
-3. Stellen Sie sicher, dass sie gegen Ihren Seitenhintergrund sichtbar ist
-4. Der Standardwert ist Hellblau (#03A9F4)
+1. Aktivieren Sie den **Override**-Schalter für **Link-Hover-Farbe**
+2. Wählen Sie die Hover-Zustand-Farbe aus
+3. Stellen Sie sicher, dass sie gegen Ihren Seiten-Hintergrund sichtbar ist
+4. Die Standardeinstellung ist Hellblau (#03A9F4)
 
 ### Aktive Farbe
 
-1. Schalten Sie den **Überschreiben**-Schalter für **Aktive Farbe** um
-2. Wählen Sie die Farbe für die aktive Seitenanzeige
-3. Sollte sich abheben und dennoch zu Ihrem Design passen
-4. Der Standardwert ist Hellblau (#03A9F4)
+1. Aktivieren Sie den **Override**-Schalter für **Aktive Farbe**
+2. Wählen Sie die Farbe des aktiven Seiten-Indikators aus
+3. Sollte herausstechen und gleichzeitig zu Ihrem Design passen
+4. Die Standardeinstellung ist Hellblau (#03A9F4)
 
 :::info
-Transparente Navigation hat keine Hintergrundfarben-Einstellung, da sie den Seiteninhalt direkt überlagert.
+Die transparente Navigation hat keine Hintergrundfarb-Einstellung, da sie den Seiten-Inhalt direkt überlagert.
 :::
 
-## Ihre Änderungen speichern
+## Änderungen speichern
 
-1. Klicken Sie nach der Konfiguration Ihrer Farben auf **Navigationsstile speichern**
-2. Ihre Änderungen werden sofort auf Ihrer Live-Website angewendet
+1. Nachdem Sie Ihre Farben konfiguriert haben, klicken Sie auf **Navigations-Stile speichern**
+2. Ihre Änderungen werden sofort auf Ihre Live-Website angewendet
 3. Besuchen Sie Ihre Website, um die Navigation in beiden Modi zu sehen
 
 ## Auf Standardwerte zurücksetzen
 
-Wenn Sie zu den Standardfarben zurückkehren möchten:
+Wenn Sie zur Standard-Farbgestaltung zurückgehen möchten:
 
-1. Schalten Sie die **Überschreiben**-Schalter für alle benutzerdefinierten Farben aus
-2. Klicken Sie auf **Navigationsstile speichern**
+1. Deaktivieren Sie die **Override**-Schalter für alle benutzerdefinierten Farben
+2. Klicken Sie auf **Navigations-Stile speichern**
 3. Die Navigation kehrt zum Standard-Farbschema zurück
 
-Oder klicken Sie auf **Abbrechen**, um alle Änderungen zu verwerfen, ohne zu speichern.
+Oder klicken Sie auf **Abbrechen**, um alle Änderungen ohne Speichern zu verwerfen.
 
 ## Best Practices
 
 ### Farbkontrast
 
 - **Lesbarkeit** -- Stellen Sie sicher, dass Link-Farben genügend Kontrast zum Hintergrund haben
-- **WCAG-Konformität** -- Streben Sie mindestens ein Kontrastverhältnis von 4,5:1 für Barrierefreiheit an
-- **Testen Sie beide Modi** -- Sehen Sie sich Ihre Website mit sowohl solider als auch transparenter Navigation in der Vorschau an
+- **WCAG-Konformität** -- Streben Sie ein Mindestverhältnis von 4,5:1 für Barrierefreiheit an
+- **Beide Modi testen** -- Zeigen Sie eine Vorschau Ihrer Website mit fester und transparenter Navigation
 
-### Markenkonsistenz
+### Marken-Konsistenz
 
-- **Verwenden Sie Ihre Markenfarben** -- Passen Sie zu Ihrem Logo und Website-Theme
-- **Begrenzen Sie Ihre Palette** -- Bleiben Sie bei 2-3 Farben für ein einheitliches Aussehen
-- **Berücksichtigen Sie Ihre Bilder** -- Wenn Sie transparente Navigation verwenden, testen Sie sie gegen typische Seitenhintergründe
+- **Verwenden Sie Ihre Markenfarben** -- Entsprechen Sie Ihrem Logo und Website-Theme
+- **Begrenzen Sie Ihre Palette** -- Bleiben Sie bei 2-3 Farben für ein zusammenhängendes Erscheinungsbild
+- **Berücksichtigen Sie Ihre Bilder** -- Bei Verwendung von transparenter Navigation testen Sie sie gegen typische Seiten-Hintergründe
 
-### Hover- und Aktiv-Zustände
+### Hover- und Active-Zustände
 
-- **Klares Feedback** -- Machen Sie Hover-Zustände offensichtlich anders als Standard-Links
-- **Aktive Seiten unterscheiden** -- Verwenden Sie eine deutliche Farbe, damit Benutzer wissen, wo sie sind
-- **Sanfte Übergänge** -- Das System animiert Farbänderungen automatisch
+- **Klares Feedback** -- Machen Sie Hover-Zustände offensichtlich unterschiedlich von Standard-Links
+- **Unterscheiden Sie aktive Seiten** -- Verwenden Sie eine unterschiedliche Farbe, damit Benutzer wissen, wo sie sich befinden
+- **Sanfte Übergänge** -- Das System animiert automatisch Farbänderungen
 
-## Fehlerbehebung
+## Problemlösung
 
-### Farben sehen nicht richtig aus
+### Farben sehen falsch aus
 
-- **Leeren Sie Ihren Cache** -- Browser-Caching könnte alte Farben anzeigen
-- **Überprüfen Sie Hex-Codes** -- Stellen Sie sicher, dass Sie gültige Hex-Farbcodes eingegeben haben
-- **Testen Sie auf verschiedenen Hintergründen** -- Farben können je nach Seite anders aussehen
+- **Cache löschen** -- Browser-Caching zeigt möglicherweise alte Farben
+- **Hex-Codes überprüfen** -- Stellen Sie sicher, dass Sie gültige Hex-Farbcodes eingegeben haben
+- **Auf verschiedenen Hintergründen testen** -- Farben können je nach Seite unterschiedlich aussehen
 
 ### Navigation nicht sichtbar
 
-- **Transparenter Modus** -- Wenn Sie transparente Navigation über hellen Bildern verwenden, könnte dunkler Text schwer zu sehen sein
-- **Lösung** -- Passen Sie Ihre Link-Farben an oder verwenden Sie dunklere Seitenhintergründe
-- **Alternative** -- Fügen Sie dem Navigationsbereich einen dezenten Schatten oder Hintergrund-Overlay hinzu
+- **Transparenter Modus** -- Bei Verwendung von transparenter Navigation über hellen Bildern kann dunkler Text schwer zu sehen sein
+- **Lösung** -- Passen Sie Ihre Link-Farben an oder verwenden Sie dunklere Seiten-Hintergründe
+- **Alternative** -- Fügen Sie einen feinen Schatten oder eine Hintergrund-Überlagerung zum Navigationsbereich hinzu
 
 ## Technische Details
 
-Navigationsstile werden als JSON gespeichert und mit CSS-Variablen angewendet:
+Navigations-Stile werden als JSON gespeichert und mit CSS-Variablen angewendet:
 
 - Änderungen werden sofort wirksam, ohne die Website neu zu erstellen
-- Farben vererben sich an alle Navigationselemente
-- Überschreibungen sind optional; nicht gesetzte Farben verwenden Theme-Standardwerte
+- Farben kaskaieren zu allen Navigations-Elementen
+- Overrides sind optional; nicht festgelegte Farben verwenden Theme-Standardwerte
 
 ## Verwandte Artikel
 
-- [Erscheinungsbild](./appearance.md) -- Passen Sie das Gesamterscheinungsbild Ihrer Website an
+- [Erscheinungsbild](./appearance.md) -- Passen Sie das Gesamterscheinungsbild und das Verhalten Ihrer Website an
 - [Seiten verwalten](./managing-pages.md) -- Erstellen und organisieren Sie Ihre Website-Seiten
-- [Seiten-Editor](./page-editor.md) -- Gestalten Sie Seitenlayouts und Inhalte
+- [Seiten-Editor](./page-editor.md) -- Entwerfen Sie Seiten-Layouts und -Inhalte

@@ -1,32 +1,32 @@
----
-title: "Hendelser"
+﻿---
+title: "Arrangement"
 ---
 
-# Hendelser
+# Arrangement
 
 <div class="article-intro">
 
-Hendelserfunksjonen i B1 Mobil lar deg bla gjennom kommende kirkebegivenheter og registrere deg direkt fra telefonen. Når kirken aktiverer registrering for en hendelse, kan du melde deg selv og familiemedlemmene med bare noen få trykk.
+Funksjonen for arrangement i B1 Mobile lar deg bla gjennom kommende kirkearrangement og registrere deg direkte fra telefonen. Når kirken din aktiverer registrering for et arrangement, kan du registrere deg selv og familiemedlemmer med bare noen få trykk.
 
 </div>
 
-## Finning av hendelser med registrering
+## Finne arrangement med registrering
 
-Hendelser med registrering aktivert vises i gruppekalenderene dine. Når du trykker på en hendelse som har registrering tilgjengelig, vil du se en **Registrer**-knapp i hendelsedetaljene.
+Arrangement med registrering aktivert vises i gruppekalaenderne dine. Når du trykker på et arrangement som har registrering tilgjengelig, vil du se en **Registrer**-knapp i arrangementdetaljer.
 
-Hendelser kan vise ulike statuser:
+Arrangement kan vise ulike statuser:
 
-- **Åpen** -- Registrering er tilgjengelig og du kan melde deg på.
+- **Åpent** -- Registrering er tilgjengelig og du kan registrere deg.
 - **Ikke åpnet ennå** -- Registreringsvinduet har ikke startet ennå.
-- **Lukket** -- Registreringsfristen har passert.
-- **Full** -- Alle tilgjengelige plasser har blitt tatt.
+- **Lukket** -- Registreringsfristen har gått ut.
+- **Fullt** -- Alle tilgjengelige plasser er tatt.
 
 ## Hva du trenger
 
-- [B1 Mobil installert](../getting-started/installing) og [logget på](../getting-started/logging-in)
-- Kirken må ha hendelsesregistrering aktivert for hendelsen
+- [B1 Mobile installert](../getting-started/installing) og [logget inn](../getting-started/logging-in)
+- Kirken din må ha arrangementregistrering aktivert for arrangementet
 
 ## Lær mer
 
-- [Registrering til hendelser](./registering) -- Trinn-for-trinn-guide til å melde deg på en hendelse på mobil
-- [Selvbetjent innsjekking](../checkin/self-checkin) -- Sjekk inn når du ankommer hendelsen
+- [Registrering for arrangement](./registering) -- Trinn-for-trinn guide for å registrere deg for et arrangement på mobil
+- [Selvsjekk](../checkin/self-checkin) -- Sjekk inn når du ankommer arrangementet

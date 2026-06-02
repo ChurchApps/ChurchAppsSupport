@@ -6,7 +6,7 @@ title: "API"
 
 <div class="article-intro">
 
-Ang ChurchApps API ay isang **modular monolith** -- isang codebase na nagsisilbi sa anim na magkakaibang module, bawat isa ay may sariling database. Ang arkitekturang ito ay nagbibigay sa iyo ng mga benepisyong pang-organisasyon ng mga microservice (malinaw na mga hangganan, independiyenteng mga data store) na may simplisidad ng operasyon ng isang deployment.
+Ang ChurchApps API ay isang **modular monolith** -- isang single codebase na nagsisilbi sa anim na natatanging module, bawat isa ay may sariling database. Ang architektura na ito ay nagbibigay sa iyo ng mga benepisyo ng organisasyon ng microservices (malinaw na hangganan, independyente na mga data store) na may operational simplicity ng isang deployment.
 
 </div>
 
@@ -14,12 +14,12 @@ Ang ChurchApps API ay isang **modular monolith** -- isang codebase na nagsisilbi
 
 | Module | Layunin |
 |--------|---------|
-| **Membership** | Mga tao, grupo, sambahayan, pahintulot |
-| **Attendance** | Mga serbisyo, sesyon, talaan ng check-in |
+| **Membership** | Mga tao, grupo, pamilya, mga pahintulot |
+| **Attendance** | Mga serbisyo, sesyon, mga record ng check-in |
 | **Content** | Mga pahina, seksyon, elemento, streaming |
-| **Giving** | Mga donasyon, pondo, pagpoproseso ng bayad |
-| **Messaging** | Mga pag-uusap, abiso, email |
-| **Doing** | Mga gawain, plano, takdang-aralin |
+| **Giving** | Mga donasyon, pundo, pagpoproseso ng bayad |
+| **Messaging** | Mga pag-usap, notification, email |
+| **Doing** | Mga gawain, mga plano, mga assignment |
 
 ## Tech Stack
 
@@ -27,39 +27,43 @@ Ang ChurchApps API ay isang **modular monolith** -- isang codebase na nagsisilbi
 - **Framework:** Express
 - **Dependency Injection:** Inversify (decorator-based routing)
 - **Database:** MySQL -- isang database bawat module, bawat isa ay may sariling connection pool
-- **Auth:** JWT-based na authentication sa pamamagitan ng `CustomAuthProvider`
-- **Deployment:** AWS Lambda sa pamamagitan ng Serverless Framework v3
+- **Auth:** JWT-based authentication via `CustomAuthProvider`
+- **Deployment:** AWS Lambda via Serverless Framework v3
 
 ## Mga Port
 
 | Protocol | Port | Paglalarawan |
 |----------|------|-------------|
-| HTTP | `8084` | Pangunahing REST API |
-| WebSocket | `8087` | Mga real-time na koneksyon ng socket |
+| HTTP | `8084` | Main REST API |
+| WebSocket | `8087` | Real-time socket connections |
 
-## Mga Lambda Function
+## Lambda Functions
 
-Kapag na-deploy sa AWS, ang API ay tumatakbo bilang apat na Lambda function:
+Kapag na-deploy sa AWS, ang API ay tumatakbo bilang apat na Lambda functions:
 
-- **`web`** -- Hina-handle ang lahat ng HTTP request
-- **`socket`** -- Pinapamahalaan ang mga koneksyon ng WebSocket
-- **`timer15Min`** -- Tumatakbo tuwing 15 minuto para sa mga abiso sa email
-- **`timerMidnight`** -- Tumatakbo araw-araw para sa mga digest email at gawain ng maintenance
+- **`web`** -- Humahawak ng lahat ng HTTP requests
+- **`socket`** -- Namamahal sa WebSocket connections
+- **`timer15Min`** -- Tumatakbo bawat 15 minuto para sa email notifications
+- **`timerMidnight`** -- Tumatakbo araw-araw para sa digest emails at maintenance tasks
 
-## Mga Shared Library
+## Mga Shared Libraries
 
-Ang API ay umaasa sa dalawang shared na ChurchApps package:
+Ang API ay umaasa sa dalawang shared ChurchApps packages:
 
-- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- Mga base utility (DateHelper, ApiHelper, atbp.)
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Mga utility ng Express server kasama ang auth, mga helper ng database, at mga integrasyon sa AWS
+- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- Base utilities (DateHelper, ApiHelper, etc.)
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Express server utilities kabilang ang auth, database helpers, at AWS integrations
 
 :::info
-Gumagamit ang API ng ES modules (`"type": "module"` sa `package.json`). Siguraduhing gumagamit ang iyong mga import ng ES module syntax.
+Ang API ay gumagamit ng ES modules (`"type": "module"` sa `package.json`). Siguraduhin na ang iyong imports ay gumagamit ng ES module syntax.
 :::
 
 ## Sa Seksyong Ito
 
-- **[Lokal na Pag-setup](./local-setup)** -- I-clone, i-configure, at patakbuhin ang API nang lokal
-- **[Database](./database)** -- Arkitekturang database-per-module, mga script ng schema, at mga pattern ng pag-access ng data
-- **[Istraktura ng Module](./module-structure)** -- Mga controller, repository, modelo, at authentication
-- **[Sanggunian ng Endpoint](./endpoints/)** -- Kumpletong dokumentasyon ng REST API para sa lahat ng module
+- **[Local Setup](./local-setup)** -- Clone, configure, at patakbuhin ang API locally
+- **[Database](./database)** -- Database-per-module architecture, schema scripts, at data access patterns
+- **[Module Structure](./module-structure)** -- Controllers, repositories, models, at authentication
+- **[API Keys](./api-keys)** -- Personal access tokens para sa scripts at connectors
+- **[Connected Apps (OAuth)](./connected-apps)** -- Multi-tenant OAuth flow para sa third-party apps
+- **[Webhooks](./webhooks)** -- Itulak ang event notifications sa external systems
+- **[MCP Server](./mcp)** -- Model Context Protocol endpoint na naglalantad ng API sa AI assistants
+- **[Endpoint Reference](./endpoints/)** -- Kumpleto REST API documentation para sa lahat ng module

@@ -1,58 +1,72 @@
----
-title: "Conversazioni del Gruppo"
+﻿---
+title: "Conversazioni di Gruppo"
 ---
 
-# Conversazioni del Gruppo
+# Conversazioni di Gruppo
 
 <div class="article-intro">
 
-La scheda Conversazioni nella pagina del tuo gruppo è uno spazio dove i membri del gruppo possono pubblicare messaggi e interagire tra loro. Usa le conversazioni per discutere argomenti, condividere aggiornamenti e rimanere connesso con il tuo gruppo tra un incontro e l'altro.
+La scheda Conversazioni sulla tua pagina del gruppo è uno spazio in cui i membri del gruppo possono postare messaggi e interagire l'uno con l'altro. Usa le conversazioni per discutere argomenti, condividere aggiornamenti e rimanere connesso con il tuo gruppo tra gli incontri.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Devi aver [effettuato l'accesso](../getting-started/logging-in.md) al tuo account B1.church.
-- Devi essere membro del gruppo per accedere alla scheda Conversazioni. Consulta [Dettagli del Gruppo](./group-details.md) per sapere come unirti a un gruppo.
+- Devi essere [registrato](../getting-started/logging-in.md) al tuo account B1.church.
+- Devi essere un membro del gruppo per accedere alla scheda Conversazioni. Vedi [Dettagli del Gruppo](./group-details.md) per come unirti a un gruppo.
 
 </div>
 
-## Accedere alle Conversazioni
+## Accesso alle Conversazioni
 
-1. Naviga alla pagina di dettaglio del gruppo cliccando su un gruppo dalla [pagina dei gruppi](./browsing-groups.md).
-2. Assicurati di aver effettuato l'accesso.
-3. Clicca la scheda **Conversazioni** nella barra laterale.
+1. Vai alla pagina dei dettagli del gruppo facendo clic su un gruppo dalla [pagina dei gruppi](./browsing-groups.md).
+2. Assicurati di essere registrato.
+3. Fai clic sulla scheda **Conversazioni** nella barra laterale.
 
 ## Discussioni e Annunci
 
-La scheda Conversazioni può mostrare due sotto-schede:
+La scheda Conversazioni potrebbe mostrare due sotto-schede:
 
-- **Discussioni** -- Uno spazio dove qualsiasi membro del gruppo può pubblicare messaggi e rispondere agli altri. Questa è la vista predefinita ed è sempre disponibile.
-- **Annunci** -- Messaggi pubblicati dai leader del gruppo che sono importanti per tutti i membri. I membri regolari possono leggere gli annunci ma solo i leader possono crearli.
+- **Discussioni** -- Uno spazio in cui qualsiasi membro del gruppo può postare messaggi e rispondere ad altri. Questa è la visualizzazione predefinita ed è sempre disponibile.
+- **Annunci** -- Messaggi postati dai leader del gruppo che sono importanti per tutti i membri da vedere. I membri normali possono leggere gli annunci ma solo i leader possono crearli.
 
-Se non ci sono annunci e non sei un leader, vedrai solo la vista Discussioni senza la barra delle schede.
+Se non ci sono annunci e non sei un leader, vedrai solo la visualizzazione Discussioni senza la barra delle schede.
 
-## Pubblicare un Messaggio
+## Postare un Messaggio
 
-1. Apri la scheda **Conversazioni** nella pagina del tuo gruppo.
+1. Apri la scheda **Conversazioni** sulla tua pagina del gruppo.
 2. Assicurati di essere nella sotto-scheda **Discussioni** (se la barra delle schede è visibile).
-3. Scrivi il tuo messaggio nel campo di testo.
+3. Digita il tuo messaggio nel campo di testo.
 4. Invia il tuo messaggio per condividerlo con il gruppo.
 
 Il tuo messaggio sarà visibile a tutti i membri del gruppo.
 
-:::tip
-Le conversazioni del gruppo appaiono anche nella tua [Cronologia](../community/timeline.md), così puoi seguire le discussioni senza visitare ogni gruppo singolarmente.
-:::
+## Modifica o Eliminazione dei Tuoi Messaggi
 
-## Funzionalità per i Leader
+Puoi modificare o eliminare qualsiasi messaggio che hai postato:
 
-Se sei un leader del gruppo, hai capacità aggiuntive nella scheda Conversazioni:
-
-- **Pubblicare annunci** -- Passa alla sotto-scheda **Annunci** e pubblica messaggi che tutti i membri del gruppo possono leggere.
-- **Pubblicare discussioni** -- Puoi anche partecipare alle discussioni regolari come qualsiasi altro membro.
+1. Passa il mouse sul tuo messaggio (o toccalo su mobile) per rivelare il pulsante **altre opzioni** (⋮).
+2. Fai clic sul pulsante per aprire il menu del messaggio.
+3. Scegli **Modifica** per modificare il testo del messaggio, o **Elimina** per rimuoverlo.
+   - Quando modifichi, il testo del messaggio viene caricato di nuovo nel campo di input. Fai le tue modifiche e invia per salvarle.
+   - Quando elimini, appare una finestra di dialogo di conferma. Fai clic su **Conferma** per rimuovere permanentemente il messaggio.
 
 :::info
-Le conversazioni sono specifiche per ogni gruppo. I messaggi che pubblichi in un gruppo non appariranno nelle conversazioni di un altro gruppo.
+Puoi modificare o eliminare solo i tuoi messaggi. I messaggi postati da altri membri non mostrano le opzioni di modifica/eliminazione.
+:::
+
+:::tip
+Le conversazioni di gruppo appaiono anche sulla tua [Timeline](../community/timeline.md), quindi puoi rimanere aggiornato sulle discussioni senza visitare ogni gruppo individualmente.
+:::
+
+## Funzioni del Leader
+
+Se sei un leader di un gruppo, hai capacità aggiuntive nella scheda Conversazioni:
+
+- **Posta annunci** -- Passa alla sotto-scheda **Annunci** e posta messaggi che tutti i membri del gruppo possono leggere.
+- **Posta discussioni** -- Puoi anche partecipare alle discussioni normali come qualsiasi altro membro.
+
+:::info
+Le conversazioni sono specifiche di ogni gruppo. I messaggi che posti in un gruppo non appariranno nelle conversazioni di un altro gruppo.
 :::

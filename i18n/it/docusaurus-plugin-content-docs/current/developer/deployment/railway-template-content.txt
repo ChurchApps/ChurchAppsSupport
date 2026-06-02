@@ -1,0 +1,51 @@
+---
+title: "Self-hosting su Railway"
+---
+
+# Self-hosting su Railway
+
+<div class="article-intro">
+
+ChurchApps pubblica un modello one-click [Railway](https://railway.com) che fornisce alla tua chiesa la sua istanza privata di B1 Admin, il portale dei membri B1, l'API e un database MySQL — tutto in esecuzione su un'infrastruttura che possiedi e per cui paghi direttamente. Questa guida ti mette online in circa 15 minuti e poi percorre la configurazione post-distribuzione che la maggior parte delle chiese alla fine vuole.
+
+</div>
+
+## Avvio rapido
+
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/b1-template)
+
+1. Fai clic sul pulsante **Deploy on Railway** sopra.
+2. Accedi a Railway (o crea un account gratuito) e aggiungi un metodo di pagamento.
+3. Fai clic su **Deploy** senza cambiare nulla — ogni variabile ha un valore predefinito sensato.
+4. Aspetta 5–10 minuti affinché i quattro servizi diventino verdi.
+5. Apri l'URL del servizio **B1Admin**, fai clic su **Registrati**, e crea il tuo account. Il primo account è automaticamente un amministratore del server.
+6. Segui i prompt in-app per creare la tua prima chiesa.
+
+È tutto. Ora hai un'istanza ChurchApps completamente funzionante. Tutto quanto segue è opzionale.
+
+:::tip
+Il deploy è attualmente in **beta**. Se riscontri qualcosa che i doc non coprono, apri un problema su [github.com/ChurchApps/Api/issues](https://github.com/ChurchApps/Api/issues) con i log di deploy allegati.
+:::
+
+<div class="prereqs">
+<h4>Quello che ti serve</h4>
+
+- Un account [Railway](https://railway.com) gratuito
+- Una carta di credito su file con Railway (~$15–25/mese per una piccola congregazione)
+- Circa 15 minuti per il deploy iniziale
+- *Consigliato ma facoltativo in seguito:* credenziali SMTP e un dominio personalizzato
+
+</div>
+
+## Cosa viene distribuito
+
+Il modello fornisce quattro servizi in un singolo progetto Railway:
+
+| Servizio | Scopo | URL dopo il deploy |
+|---------|---------|------------------|
+| **MySQL** | Archivia tutti i dati (un'istanza, più schemi) | solo interno |
+| **Api** | Backend per iscritti, contenuto, donazioni, presenza, ecc. | `https://api-<id>.up.railway.app` |
+| **B1Admin** | App web per staff/admin | `https://b1admin-<id>.up.railway.app` |
+| **B1App** | App web rivolta ai membri e sito della chiesa | `https://b1app-<id>.up.railway.app` |
+
+Gli schemi del database vengono creati automaticamente al primo avvio dalla migrazione di avvio dell'API.

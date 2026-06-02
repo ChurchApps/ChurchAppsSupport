@@ -1,64 +1,64 @@
-﻿---
-title: "Registro de Voluntarios"
+---
+title: "Inscripción para Voluntariado"
 ---
 
-# Registro de Voluntarios
+# Inscripción para Voluntariado
 
 <div class="article-intro">
 
-Explore posiciones de voluntarios disponibles y regístrese para próximos servicios directamente desde B1 Mobile. Vea qué posiciones necesitan ser llenadas, cuántos espacios están abiertos y únase a un equipo con solo unos pocos toques.
+Explora las posiciones de voluntariado disponibles e inscríbete para los próximos servicios directamente desde B1 Mobile. Ve qué posiciones necesitan ser ocupadas, cuántos espacios están abiertos, y únete a un equipo con solo unos pocos toques.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- [Instale B1 Mobile](../getting-started/installing) e [inicie sesión](../getting-started/logging-in) en su cuenta
-- Su administrador de iglesia debe haber habilitado auto-registro en al menos una posición
+- [Instala B1 Mobile](../getting-started/installing) e [inicia sesión](../getting-started/logging-in) en tu cuenta
+- Tu administrador de la iglesia debe haber habilitado la inscripción automática en al menos una posición
 
 </div>
 
-## Exploración de Oportunidades de Voluntarios
+## Explorando Oportunidades de Voluntariado
 
-1. Abra la sección **Voluntario** desde la navegación de la aplicación.
-2. Aparece una lista de próximos planes de servicio con posiciones abiertas.
-3. Cada tarjeta de plan muestra:
-   - **Nombre del plan** y **fecha de servicio**
-   - **Barra de progreso general** mostrando espacios totales llenados
-   - **Estado** -- número de espacios aún abiertos o "Lleno" si todos están ocupados
-   - **Fichas de posición** mostrando cada rol y su recuento de espacios abiertos
-4. Toque **Ver y Registrarse** para ver la lista completa de posiciones para un plan.
+1. Abre la sección **Voluntariado** desde la navegación de la aplicación.
+2. Aparece una lista de planes de servicio próximos con posiciones abiertas.
+3. Cada tarjeta del plan muestra:
+   - **Nombre del plan** y **fecha del servicio**
+   - **Barra de progreso general** que muestra espacios totales ocupados
+   - **Estado** -- número de espacios aún abiertos, o "Lleno" si todos los espacios están ocupados
+   - **Fichas de posición** que muestran cada rol y su cantidad de espacios abiertos
+4. Toca **Ver e Inscribirse** para ver la lista completa de posiciones de un plan.
 
-## Registro para una Posición
+## Inscribirse para una Posición
 
-1. Toque un plan para abrir sus detalles.
+1. Toca un plan para abrir sus detalles.
 2. Las posiciones se agrupan por categoría (por ejemplo, "Banda", "Hospitalidad", "Ministerio Infantil").
-3. Cada posición muestra el nombre del rol, descripción y espacios disponibles.
-4. Toque **Registrarse** junto a la posición para la que desea servir.
-5. Aparece una alerta de confirmación: "¡Estás registrado! Gracias por ser voluntario."
-6. La posición muestra un indicador verde confirmando su registro.
+3. Cada posición muestra el nombre del rol, la descripción y los espacios disponibles.
+4. Toca **Inscribirse** junto a la posición que deseas.
+5. Aparece una alerta de confirmación: "¡Te has inscrito! Gracias por ofrecerte como voluntario."
+6. La posición muestra un indicador verde confirmando tu inscripción.
 
 :::info
-Debe estar conectado para registrarse en posiciones. La aplicación le pedirá que inicie sesión si es necesario.
+Debes estar iniciado sesión para inscribirte en posiciones. La aplicación te pedirá que inicies sesión si es necesario.
 :::
 
-## Eliminación de un Registro
+## Eliminar una Inscripción
 
-1. Encuentre la posición para la que se registró -- muestra un indicador verde "Estás registrado".
-2. Toque **Eliminar**.
-3. Un diálogo de confirmación pregunta si está seguro.
-4. Confirme para eliminarse de la posición.
+1. Encuentra la posición en la que te inscribiste -- muestra un indicador verde "Te estás inscribiendo".
+2. Toca **Eliminar**.
+3. Un diálogo de confirmación pregunta si estás seguro.
+4. Confirma para quitarte a ti mismo de la posición.
 
 ## Fechas Límite y Capacidad
 
-- **Fechas Límite** -- Su iglesia puede establecer una hora de corte antes del servicio. Después de la fecha límite, no puede registrarse o eliminar registros. Un banner en la parte superior del plan indica cuándo ha pasado la fecha límite.
-- **Capacidad** -- Cada posición tiene un número limitado de espacios. Cuando está lleno, el botón de registro está deshabilitado. Los espacios se reabre si alguien cancela.
+- **Fechas Límite** -- Tu iglesia puede establecer una hora de cierre antes del servicio. Después de la fecha límite, no puedes inscribirte o eliminar inscripciones. Un banner en la parte superior del plan indica cuándo ha pasado la fecha límite.
+- **Capacidad** -- Cada posición tiene un número limitado de espacios. Cuando está llena, el botón de inscripción está deshabilitado. Los espacios se reabre si alguien cancela.
 
 :::tip
-Habilite [notificaciones push](../community/notifications.md) para mantenerse informado sobre nuevas oportunidades de voluntarios y cambios en sus asignaciones.
+Activa [notificaciones push](../community/notifications.md) para estar informado sobre nuevas oportunidades de voluntariado y cambios en tus asignaciones.
 :::
 
 ## Artículos Relacionados
 
-- [Visualización de Planes](./viewing-plans) -- Vea sus planes asignados y órdenes de servicio
-- [Notificaciones](../community/notifications.md) -- Manténgase actualizado sobre asignaciones de servicio
+- [Visualizar Planes](./viewing-plans) -- Ve tus planes asignados y órdenes de servicio
+- [Notificaciones](../community/notifications.md) -- Mantente actualizado sobre asignaciones de servicio

@@ -6,42 +6,44 @@ title: "Grupper"
 
 <div class="article-intro">
 
-Delen **Grupper** lar deg organisere kirkens medlemmer i ministerier, smågrupper, bibelstudier, utvalg og mer. Grupper er ryggraden i fellesskapslivet på kirken din, og denne delen gir deg verktøyene til å opprette, administrere og kommunisere med hver gruppe på ett sted. Merk at **Team** er atskilt fra Grupper -- Team brukes for tjeneste og frivilligplanlegging.
+**Grupper**-seksjonen lar deg organisere kirkens medlemmer i ministerier, smågrupper, bibelstudier, komiteer og mer. Grupper er grunnlaget for fellesskapsliv på kirken din, og denne seksjonen gir deg verktøy til å opprette, administrere og kommunisere med alle grupper på ett sted. Merk at **Lag** er atskilt fra grupper -- lag brukes til tjeneste og frivilliplanlegging.
 
 </div>
 
 ## Oversikt
 
-Grupper er organisert etter **kategori**. En kategori er en toppnivåetikett som "Smågrupper", "Ministerier" eller "Utvalg". Hver kategori kan inneholde flere grupper, noe som gjør det enkelt å holde beslektede grupper sammen.
+Grupper er organisert etter **kategori**. En kategori er en toppnivåetikett som "Smågrupper", "Ministerier" eller "Komiteer". Hver kategori kan inneholde flere grupper, noe som gjør det enkelt å holde relaterte grupper sammen.
 
-Når du åpner Grupper-siden, vil du se et sammendrag øverst som viser:
+Når du åpner gruppesiden, vil du se et sammendrag øverst som viser:
 
-- **Totale grupper** -- antallet grupper på tvers av alle kategorier
+- **Totalt antall grupper** -- antallet grupper på tvers av alle kategorier
 - **Kategorier** -- antallet gruppekategorier du har opprettet
-- **Totale medlemmer** -- det kombinerte antallet medlemmer på tvers av alle grupper
+- **Totalt antall medlemmer** -- det kombinerte antallet medlemmer på tvers av alle grupper
 
-Under sammendraget vises gruppene dine etter kategori med medlemsantallet vist for hver gruppe.
+Under sammendraget er gruppene dine opplistet etter kategori med medlemstallet vist for hver gruppe.
 
 ## Hva du kan gjøre
 
-Her er hva du kan oppnå i Grupper-delen:
+Her er hva du kan oppnå i seksjonen Grupper:
 
-1. **Opprett og organiser grupper** -- Legg til nye grupper innenfor kategorier for å gjenspeile hvordan kirken er strukturert. Se [Opprettelse av grupper](./creating-groups.md).
+1. **Opprett og organiser grupper** -- Legg til nye grupper innenfor kategorier for å gjenspeile hvordan kirken din er strukturert. Se [Opprett grupper](./creating-groups.md).
 
-2. **Administrer gruppemedlemmer** -- Legg til og fjern medlemmer, utpek ledere og kommuniser med gruppene dine. Se [Gruppemedlemmer](./group-members.md).
+2. **Administrer gruppemedlemmer** -- Legg til og fjern medlemmer, utpek ledere, og kommuniser med gruppene dine. Se [Gruppemedlemmer](./group-members.md).
 
 3. **Planlegg hendelser** -- Hver gruppe kan ha sin egen kalender for møter, hendelser og gjentakende aktiviteter. Se [Gruppekalender](./group-calendar.md).
 
-4. **Eksporter gruppedata** -- Last ned medlemslister for enhver gruppe som en CSV-fil for bruk i regneark eller e-postutsendelser. Se [Gruppemedlemmer](./group-members.md) for eksporteringsinstruksjoner.
+4. **Administrer tilmeldingsforespørsler** -- Når en gruppe bruker **Forespørsel**-tilmeldingspolicyen, gjennomgå og godkjenn eller avslå innkommende medlemskapsforespørsler fra folk som ønsker å bli medlem. Se [Gruppetilmeldingsforespørsler](./group-join-requests.md).
 
-## Kom i gang
+5. **Eksporter gruppdata** -- Last ned medlemslister for en gruppe som en CSV-fil for bruk i regneark eller utsendinger. Se [Gruppemedlemmer](./group-members.md) for eksportinstruksjoner.
 
-For å få tilgang til Grupper, klikk **Personer** i venstre sidefelt på B1 Admin-instrumentbordet, og velg deretter **Grupper**. Du vil se alle eksisterende grupper organisert etter kategori.
+## Komme i gang
+
+For å få tilgang til grupper, klikk **Folk** i venstre sidebar på B1 Admin-dashbordet ditt, og velg deretter **Grupper**. Du vil se alle eksisterende grupper organisert etter kategori.
 
 :::tip
-Hvis du nettopp begynner, start med å opprette noen få kategorier som samsvarer med kirkens struktur (f.eks. "Ministerier", "Smågrupper", "Utvalg"). Legg deretter til individuelle grupper innenfor hver kategori. Se [Opprettelse av grupper](./creating-groups.md) for en trinn-for-trinn-gjennomgang.
+Hvis du bare begynner, start med å opprette noen få kategorier som samsvarer med kirkens struktur (for eksempel "Ministerier", "Smågrupper", "Komiteer"). Legg deretter til individuelle grupper innenfor hver kategori. Se [Opprett grupper](./creating-groups.md) for en trinnvis gjennomgang.
 :::
 
 :::info
-Gruppemedlemmer må først eksistere i [Personer](../people/adding-people.md)-katalogen din før de kan legges til en gruppe. Hvis du setter opp B1 for første gang, [importer medlemsdataene dine](../people/importing-data.md) før opprettelse av grupper.
+Gruppemedlemmer må først finnes i [Folk](../people/adding-people.md)-katalogen din før de kan legges til i en gruppe. Hvis du setter opp B1 for første gang, [importer medlemsdataene dine](../people/importing-data.md) før du oppretter grupper.
 :::

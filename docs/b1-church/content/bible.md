@@ -24,7 +24,7 @@ B1.church includes a built-in Bible reader so you can read Scripture without lea
 2. The reader opens to Genesis 1:1 by default.
 3. Use the navigation controls within the reader to move to a different book, chapter, or verse.
 
-The Bible reader uses the NIRV (New International Reader's Version) translation by default.
+The Bible reader is powered by **YouVersion** and gives you access to a wide selection of Bible translations in many languages.
 
 ## Navigating Passages
 
@@ -33,8 +33,13 @@ The embedded reader provides controls for moving through Scripture. You can:
 - Browse to a specific book of the Bible
 - Jump to a particular chapter
 - Scroll through verses within a chapter
+- Switch to a different Bible translation using the version selector
 
 The reader fills the content area of the page, giving you plenty of space to read comfortably.
+
+:::tip
+Your selected book, chapter, and translation are remembered so the reader reopens where you left off.
+:::
 
 :::tip
 You can bookmark the Bible page in your browser to return to it quickly for your daily reading. Pair it with the [Verse of the Day](./verse-of-the-day.md) for daily Scripture inspiration.

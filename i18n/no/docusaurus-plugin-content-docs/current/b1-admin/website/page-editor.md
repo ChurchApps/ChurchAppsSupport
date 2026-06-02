@@ -1,119 +1,118 @@
 ---
-title: "Bruke sideredigereren"
+title: "Bruke sideeditoren"
 ---
 
-# Bruke sideredigereren
+# Bruke sideeditoren
 
 <div class="article-intro">
 
-B1-sideredigereren er en visuell dra-og-slipp-bygger som lar deg designe kirkenettstedssidene dine uten å skrive kode. Du kan legge til seksjoner og innholdsblokker, tilpasse stiler, forhåndsvise arbeidet ditt og angre endringer -- alt fra nettleseren din.
+B1-sideeditoren er en visuell dra-og-slipp-bygger som lar deg designe kirkens nettstedssider uten å skrive kode. Du kan legge til seksjoner og innholdsblokker, tilpasse stiler, forhåndsvis arbeidet ditt og angre endringer -- alt fra nettleseren din.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Fullfør [Innledende oppsett](initial-setup) for å få nettstedet ditt konfigurert
-- Opprett minst én side i [Administrere sider](managing-pages)
+- Fullfør [startoppsett](initial-setup) for å få nettstedet ditt konfigurert
+- Opprett minst én side i [Administrering av sider](managing-pages)
 - Du trenger **content.edit**-tillatelsen for å få tilgang til editoren
 
 </div>
 
-## Åpne editoren
+## Åpning av editoren
 
-1. I B1 Admin, klikk **Nettsted** i venstre meny.
-2. Finn siden du vil redigere i Sider-tabellen og klikk **Rediger**.
+1. I B1 Admin klikker du **Nettsted** i venstre meny.
+2. Finn siden du vil redigere i siden-tabellen og klikk **Rediger**.
 
-Editoren åpnes i fullskjermmodus. Venstre panel viser sidestrukturen og tilgjengelige innholdselementer; senterområdet viser en live forhåndsvisning av siden din.
+Editoren åpnes i fullskjermsmodus. Venstre panel viser sidestrukturen din og tilgjengelige innholdsélementene; midtområdet viser en live-forhåndsvisning av siden din.
 
 :::info
-Editoren vises alltid i lys modus, uavhengig av B1 Admin-temainnstillingen din. Dette sikrer at forhåndsvisningen nøyaktig matcher hvordan siden din vil se ut for nettstedbesøkende.
+Editoren vises alltid i lysmodus, uavhengig av B1 Admin-temainnstillingen. Dette sikrer at forhåndsvisningen nøyaktig samsvarer med hvordan siden vil se ut for nettstedsbesøkende.
 :::
 
-## Sidestruktur: Seksjoner og elementer
+## Sidestruktur: seksjoner og elementer
 
 Hver side er bygget fra to nivåer:
 
-- **Seksjoner** -- Toppnivåbeholderne som deler siden din inn i horisontale bånd (for eksempel en hero-seksjon, en innholdsblokk eller en bunntekststrimmel). Hver side må ha minst én seksjon før du kan legge til innhold.
-- **Elementer** -- De individuelle innholdsbitene plassert inne i en seksjon, som tekst, bilder, knapper, kort, skjemaer og kalendere.
+- **Seksjoner** -- Toppnivåbeholdere som deler siden i horisontale bånd (for eksempel en heltseksjon, en innholdsblokk eller en bunntripling). Hver side må ha minst én seksjon før du kan legge til innhold.
+- **Elementer** -- De individuelle innholdsdelpene plassert innenfor en seksjon, som tekst, bilder, knapper, kort, skjemaer og kalendere.
 
 ### Legge til en seksjon
 
 1. Klikk **Legg til seksjon** (eller **+**-knappen øverst i venstre panel).
-2. Velg en layout for seksjonen din -- alternativer inkluderer enkelt kolonne, to kolonner, tre kolonner og mer.
-3. Den nye seksjonen vises i forhåndsvisningen. Klikk på den for å velge den og konfigurere bakgrunnsfarge, padding og andre stilalternativer.
+2. Velg et oppsett for seksjonen -- alternativer inkluderer enkolonne, to kolonner, tre kolonner og mer.
+3. Den nye seksjonen vises i forhåndsvisningen. Klikk den for å velge den og konfigurer bakgrunnsfarge, polstring og andre stilalternativer.
 
 ### Legge til elementer i en seksjon
 
-1. Klikk inne i en seksjon i forhåndsvisningen for å velge den.
+1. Klikk innenfor en seksjon i forhåndsvisningen for å velge den.
 2. Klikk **Legg til innhold** og velg en elementtype fra listen:
    - **Tekst** -- Overskrifter, avsnitt og rik tekst
-   - **Bilde** -- Last opp eller lenke til et foto
-   - **Knapp** -- En klikkbar handlingsoppfordringslenke
+   - **Bilde** -- Last opp eller koble til et bilde
+   - **Knapp** -- En klikkbar oppfordring til handling-lenke
    - **Kort** -- Et bilde med tittel og beskrivelse
-   - **Skjema** -- Bygg inn et [skjema](../forms/creating-forms) direkte på siden
+   - **Skjema** -- Integrer et [skjema](../forms/creating-forms) direkte på siden
    - **Kalender** -- Vis en hendelseskalender
-   - **FAQ** -- Trekkspill-stil spørsmål og svar-blokker
-   - **Video** -- Bygg inn en video etter URL
+   - **FAQ** -- Akkordion-stilspørsmål og svarblokker
+   - **Video** -- Integrer en video ved URL
+   - **Gruppeleseren** -- En filtrerbar katalog over alle kirkgrupper med valgfri søk, kategorifilter og merketatfilter
 3. Konfigurer elementet ved hjelp av innstillingspanelet som vises.
 
-### Omorganisere innhold
+### Omsortering av innhold
 
-Dra seksjoner eller elementer ved hjelp av håndtaksikonet (seks prikker) på venstre side av hvert element for å omorganisere dem. Du kan dra elementer innenfor en seksjon eller flytte dem mellom seksjoner.
+Dra seksjoner eller elementer ved hjelp av håndtaksikonen (seks prikker) på venstre side av hvert element for å omorganisere dem. Du kan dra elementer innenfor en seksjon eller flytte dem mellom seksjoner.
 
-## Stile siden din
+## Styling av siden din
 
-### Seksjonsstiler
+### Seksjonstiler
 
-Klikk på en hvilken som helst seksjon for å åpne stilpanelet. Du kan sette:
+Klikk en seksjon for å åpne stilpanelet. Du kan angi:
 
-- **Bakgrunn** -- Ensfarget, gradient eller bilde
-- **Padding** -- Topp- og bunnav stand inne i seksjonen
-- **Bredde** -- Full bredde eller sentrert/inneholdt
+- **Bakgrunn** -- Solid farge, gradient eller bilde
+- **Polstring** -- Topp- og bundavstand inne i seksjonen
+- **Bredde** -- Helfull-bredde eller sentrert/inneholdt
 
 ### Elementstiler
 
-Klikk på et hvilket som helst element for å åpne stilpanelet. Vanlige alternativer inkluderer fontstørrelse, farge, justering, margin og padding. For bilder kan du sette alt-tekst og lenkemål.
+Klikk et element for å åpne stilpanelet. Vanlige alternativer inkluderer skriftstørrelse, farge, justering, margin og polstring. For bilder kan du sette alternativ tekst og koblemål.
 
-### Tilpasset CSS
+### Egendefinert CSS
 
-For avansert styling har hver seksjon og element et **Tilpasset CSS**-felt hvor du kan skrive dine egne CSS-regler. Disse er begrenset til det elementet, så de vil ikke utilsiktet påvirke resten av siden.
+For avansert styling, hver seksjon og element har et **egendefinert CSS**-felt hvor du kan skrive dine egne CSS-regler. Disse er avgrenset til det elementet, så de vil ikke utilsiktet påvirke resten av siden.
 
 :::tip
-Hvis du trenger å bruke stiler på tvers av hele nettstedet -- som en tilpasset font eller global farge -- bruk [Utseende](appearance)-innstillingene i stedet for tilpasset CSS på individuelle sider.
+Hvis du trenger å bruke stiler på hele nettstedet -- som en egendefinert skrift eller global farge -- bruk [Utseende](appearance)-innstillinger i stedet for egendefinert CSS på individuelle sider.
 :::
 
-## Forhåndsvise siden din
+## Forhåndsvisning av siden din
 
-Bruk forhåndsvisningskontrollene i verktøylinjen for å sjekke hvordan siden din ser ut ved forskjellige skjermstørrelser:
+Bruk forhåndsvisningskontrollene i verktøyslinja for å sjekke hvordan siden din ser ut i ulike skjermstørrelser:
 
-- **Desktop** -- Fullbredde nettleservisning
-- **Mobil** -- Smal telefonstørrelse visning
+- **Skrivebord** -- Full-bredde nettlesersyn
+- **Mobil** -- Smaltelefonstørrelses syn
 
-Klikk **Forhåndsvisning** for å åpne en live versjon av siden i en ny nettleserfane, nøyaktig som besøkende vil se den.
+Klikk **Forhåndsvisning** for å åpne en live-versjon av siden i en ny nettleserfane, nøyaktig som besøkende vil se det.
 
 ## Angre endringer
 
-Editoren sporer redigeringshistorikken din automatisk. Bruk verktøylinjeknappene eller tastatursnarveer for å navigere:
+Editoren sporer redigeringshistorikken automatisk. Bruk verktøylinjeknapperene eller tastaturgenveiene for å navigere:
 
-- **Angre** (Ctrl+Z / Cmd+Z) -- Reverser siste handling
-- **Gjør om** (Ctrl+Y / Cmd+Y) -- Bruk om igjen en angret handling
+- **Angre** (Ctrl+Z / Cmd+Z) -- Tilbakestill siste handling
+- **Gjenta** (Ctrl+Y / Cmd+Y) -- Bruk en angret handling på nytt
 
-Du kan også gjenopprette siden til et tidligere øyeblikksbilde. Klikk **Historikk** i verktøylinjen for å se en liste over lagrede øyeblikksbilder med beskrivelser, og klikk en hvilken som helst oppføring for å gjenopprette til det punktet.
+Du kan også gjenopprette siden til et tidligere øyeblikk. Klikk **Historikk** i verktøyslinja for å se en liste over lagrede øyeblikk med beskrivelser, og klikk en hvilken som helst post for å gjenopprette til det punktet.
 
 :::warning
-Å gjenopprette et øyeblikksbilde erstatter gjeldende sideinnhold med øyebl
-
-ikksbildeversjonen. Dette kan ikke angres med standard angre-knapp. Lagre et øyeblikksbilde av nåværende tilstand før du gjenoppretter et gammelt hvis du vil beholde muligheten til å returnere.
+Gjenoppretting av et øyeblikk erstattar gjeldende sideinnhold med øyeblikksversjonen. Dette kan ikke angres med standardangre-knappen. Lagre et øyeblikk av gjeldende tilstand før du gjenoppretter en gammel hvis du vil beholde muligheten til å vende tilbake.
 :::
 
-## Lagre arbeidet ditt
+## Lagring av arbeidet ditt
 
-Endringer lagres automatisk mens du arbeider. En statusindikator i verktøylinjen viser om endringene dine er lagret. Du kan også klikke **Lagre** når som helst for å tvinge en lagring.
+Endringer lagres automatisk mens du arbeider. En statusindikator i verktøyslinja viser om endringene er lagret. Du kan også klikke **Lagre** når som helst for å tvinge en lagring.
 
 ## Relaterte artikler
 
-- [Administrere sider](managing-pages) -- Opprett sider, sett URLer og administrer nettstednavigasjon
-- [Utseende](appearance) -- Sett nettstedsomfattende farger, fonter og merkevarebygging
+- [Administrering av sider](managing-pages) -- Opprett sider, angi URL-er og administrer nettstedsnavigasjon
+- [Utseende](appearance) -- Angi nettstedets farger, skrifter og merkvaringstil
 - [Filer](files) -- Last opp bilder og dokumenter for bruk i editoren
-- [Opprette skjemaer](../forms/creating-forms) -- Bygg skjemaer du kan bygge inn på sider
+- [Opprett skjemaer](../forms/creating-forms) -- Lag skjemaer du kan legge inn på sider

@@ -6,56 +6,79 @@ title: "Web-Push-Benachrichtigungen"
 
 <div class="article-intro">
 
-ChurchApps Web-Apps liefern Push-Benachrichtigungen über die W3C Web Push API -- denselben Mechanismus, der von Firebase Cloud Messaging auf der Serverseite verwendet wird, aber über den nativen PushManager des Browsers geliefert. Ein einzelnes VAPID-Schlüsselpaar auf der MessagingApi deckt jeden Consumer ab.
+ChurchApps Web-Apps liefern Push-Benachrichtigungen über die W3C Web Push API -- der gleiche Mechanismus, der von Firebase Cloud Messaging auf der Server-Seite verwendet wird, aber über den `PushManager` des Browsers statt FCM geliefert.
 
 </div>
 
-## Wann Push ausgelöst wird
+## When push fires
 
 Die MessagingApi liefert eine Web-Push-Nachricht in drei Situationen:
 
-1. **Gruppen-/Inhaltsbenachrichtigungen** -- jemand antwortet auf einen Thread
-2. **Private Nachrichten** -- POST /messaging/privatemessages löst einen Push aus
-3. **Generische Benachrichtigungen** -- direkte Aufrufe von POST /messaging/notifications/create
+1. **Gruppen-/Inhaltsbenachrichtigungen** -- jemand antwortet auf einen Thread, dem der Benutzer folgt
+2. **Private Nachrichten** -- `POST /messaging/privatemessages` triggert einen Push an die eingeschriebenen Geräte des Empfängers
+3. **Generische Benachrichtigungen** -- direkte Aufrufe zu `POST /messaging/notifications/create`
 
-Push ist die letzte-Resort-Stufe. Wenn ein Empfänger eine aktive WebSocket-Verbindung hat, erhält er die Nachricht in der App und Push wird unterdrückt.
+Push ist die **Notfallebene** in `NotificationHelper`'s Eskalationsleiter.
 
-## Server-Flow
+## Server flow
 
-NotificationHelper überprüft zuerst die In-Page-Socket-Zustellung, dann falls nötig WebPushHelper.sendBulkTypedMessages.
+```
+NotificationHelper.checkShouldNotify(...)
+  │
+  ├─ in-page socket delivery ← preferred
+  │
+  └─ NotificationHelper.<sendXxx>(...)
+       └─ WebPushHelper.sendBulkTypedMessages(...)
+            └─ web-push library → VAPID-signed POST
+```
 
-### Erforderliche Umgebungsvariablen
+## Required environment variables
 
-| Variable | Beschreibung |
+VAPID-Schlüssel müssen vorhanden sein, damit der Push aktiviert ist:
+
+| Variable | Description |
 |----------|-------------|
-| webPushPublicKey | VAPID Public Key (base64url) |
-| webPushPrivateKey | VAPID Private Key |
-| webPushSubject | mailto:-URI |
+| `webPushPublicKey` | VAPID-Öffentlicher Schlüssel |
+| `webPushPrivateKey` | VAPID-Privater Schlüssel |
+| `webPushSubject` | `mailto:` URI |
 
-### VAPID-Schlüsselpaar generieren
+## Generating a VAPID key pair
 
+```bash
+npx web-push generate-vapid-keys
+```
 
+## Storage model
 
-## Speichermodell
+Web-Push-Abonnements werden in der vorhandenen `devices`-Tabelle gespeichert.
 
-Web-Push-Subscriptions werden in der devices-Tabelle mit webpush:-Präfix gespeichert.
+## Endpoints
 
-## Endpunkte
+Base path: `/messaging/webpush`
 
-Basispfad: /messaging/webpush
+| Method | Path | Auth | Description |
+|--------|------|------|-------------|
+| GET | `/publicKey` | Public | Gibt `{ publicKey, enabled }` zurück |
+| POST | `/subscribe` | JWT | Registriert ein Abonnement |
+| POST | `/unsubscribe` | Public | Löscht ein Geräte-Zeile |
+| DELETE | `/subscription/:id` | JWT | Löscht eine spezifische Geräte-Zeile |
 
-- GET /publicKey -- Gibt publicKey zurück
-- POST /subscribe -- Registriert Subscription
-- POST /unsubscribe -- Löscht Subscription
-- DELETE /subscription/:id -- Löscht nach ID
+## Client primitive: `WebPushHelper`
 
-## Client-Primitive: WebPushHelper
+`@churchapps/apphelper`'s `WebPushHelper` ist der einzige Client-seitige Entry Point.
 
+## Service worker requirement
 
+Der Browser's `PushManager` benötigt einen registrierten Service Worker.
 
-Verhaltensweisen: Fähigkeitsprüfung, Cooldown, Opt-out, Standalone-PWA-Erkennung.
+## Operational notes
 
-## Verwandte Seiten
+- Eine `gone: true`-Antwort bedeutet, die Subscription ist permanent ungültig
+- TTL: Push-Nachrichten werden mit `TTL: 86400` (24 Stunden) gesendet
+- Keine Wiederholungen: Ein transienter Fehler wird protokolliert und nicht wiederholt
+- Deaktivierte Umgebungen: Staging- und Dev-Umgebungen können die VAPID-Schlüssel leer lassen
+
+## Related Pages
 
 - [Real-time Architecture](./realtime)
 - [Messaging Endpoints](./api/endpoints/messaging)

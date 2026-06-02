@@ -55,6 +55,7 @@ Every page is built from two levels:
    - **Calendar** -- Display an event calendar
    - **FAQ** -- Accordion-style question and answer blocks
    - **Video** -- Embed a video by URL
+   - **Groups Browser** -- A filterable directory of all church groups with optional search, category filter, and label filter
 3. Configure the element using the settings panel that appears.
 
 ### Reordering Content

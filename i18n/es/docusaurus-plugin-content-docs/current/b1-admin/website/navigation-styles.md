@@ -1,161 +1,161 @@
----
-title: "Estilos de Navegación"
+﻿---
+title: "Estilos de navegación"
 ---
 
-# Estilos de Navegación
+# Estilos de navegación
 
 <div class="article-intro">
 
-Personaliza los colores de la barra de navegación de tu sitio web de la iglesia para que coincidan con tu marca. Puedes configurar colores tanto para fondos sólidos como para superposiciones transparentes, dándote control completo sobre cómo se ve tu navegación en diferentes páginas.
+Personaliza los colores de la barra de navegación de tu sitio web de iglesia para que coincidan con tu marca. Puedes configurar colores para fondos sólidos y superposiciones transparentes, dándote control completo sobre cómo se ve tu navegación en todas las páginas.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- Necesitas permiso para gestionar el sitio web de tu iglesia. Consulta [Roles y Permisos](../people/roles-permissions.md) para detalles.
-- Ten listos los colores de tu marca, incluyendo códigos de color hexadecimales (ej., #03A9F4).
-- Comprende la diferencia entre estilos de navegación sólida y transparente en tu sitio web.
+- Necesitas permiso para gestionar tu sitio web de iglesia. Ver [Roles y permisos](../people/roles-permissions.md) para detalles.
+- Ten tus colores de marca listos, incluyendo códigos de color hexadecimales (p. ej., #03A9F4).
+- Entiende la diferencia entre estilos de navegación sólidos y transparentes en tu sitio web.
 
 </div>
 
-## Entender los Modos de Navegación
+## Entender modos de navegación
 
-La navegación de tu sitio web puede aparecer en dos estilos diferentes dependiendo de la página:
+Tu navegación de sitio web puede aparecer en dos estilos diferentes dependiendo de la página:
 
-- **Navegación sólida** -- Barra de navegación con un color de fondo, típicamente usada en páginas de contenido
+- **Navegación sólida** -- Barra de navegación con color de fondo, típicamente usada en páginas de contenido
 - **Navegación transparente** -- Navegación que se superpone al contenido de la página, típicamente usada en páginas con imágenes hero o fondos de pantalla completa
 
-Puedes personalizar los colores para ambos modos independientemente.
+Puedes personalizar colores para ambos modos independientemente.
 
-## Acceder a los Estilos de Navegación
+## Accediendo a estilos de navegación
 
-1. Navega a **Sitio Web** en B1 Admin
+1. Navega a **Sitio web** en B1 Admin
 2. Haz clic en **Apariencia** en la barra lateral
-3. Desplázate a la sección **Estilos de Navegación**
-4. Haz clic en **Editar Estilos de Navegación**
+3. Desplázate a la sección **Estilos de navegación**
+4. Haz clic en **Editar estilos de navegación**
 
-## Configurar Navegación Sólida
+## Configurar navegación sólida
 
 La navegación sólida aparece con un color de fondo detrás de la barra de navegación. Puedes personalizar:
 
-### Color de Fondo
+### Color de fondo
 
-1. Activa el interruptor **Anular** para **Color de Fondo**
+1. Activa el interruptor **Sobrescribir** para **Color de fondo**
 2. Haz clic en el selector de color
 3. Elige tu color de fondo deseado
 4. El predeterminado es blanco (#FFFFFF)
 
-### Color de Enlace
+### Color de enlace
 
-1. Activa el interruptor **Anular** para **Color de Enlace**
-2. Elige el color para el texto de los enlaces de navegación
+1. Activa el interruptor **Sobrescribir** para **Color de enlace**
+2. Elige el color para el texto del enlace de navegación
 3. Esto afecta los enlaces en su estado predeterminado
 4. El predeterminado es gris oscuro (#555555)
 
-### Color de Enlace al Pasar el Mouse
+### Color de hover de enlace
 
-1. Activa el interruptor **Anular** para **Color de Enlace al Pasar el Mouse**
-2. Elige el color al que cambian los enlaces cuando los usuarios pasan el mouse sobre ellos
-3. Esto proporciona retroalimentación visual para enlaces clicables
+1. Activa el interruptor **Sobrescribir** para **Color de hover de enlace**
+2. Elige el color que los enlaces cambian cuando los usuarios pasan el cursor sobre ellos
+3. Esto proporciona retroalimentación visual para enlaces hacibles
 4. El predeterminado es azul claro (#03A9F4)
 
-### Color Activo
+### Color activo
 
-1. Activa el interruptor **Anular** para **Color Activo**
-2. Elige el color para el enlace de la página actualmente activa
+1. Activa el interruptor **Sobrescribir** para **Color activo**
+2. Elige el color para el enlace de página actualmente activo
 3. Esto ayuda a los usuarios a saber en qué página están
 4. El predeterminado es azul claro (#03A9F4)
 
-## Configurar Navegación Transparente
+## Configurar navegación transparente
 
-La navegación transparente se superpone al contenido de tu página sin fondo. Puedes personalizar:
+La navegación transparente se superpone a tu contenido de página sin fondo. Puedes personalizar:
 
-### Color de Enlace
+### Color de enlace
 
-1. Activa el interruptor **Anular** para **Color de Enlace**
-2. Elige un color que contraste bien con el fondo de tu página
-3. A menudo los colores blancos o claros funcionan mejor sobre fondos oscuros
+1. Activa el interruptor **Sobrescribir** para **Color de enlace**
+2. Elige un color que contraste bien con tu fondo de página
+3. A menudo, los colores blancos o claros funcionan mejor sobre fondos oscuros
 4. El predeterminado es gris oscuro (#555555)
 
-### Color de Enlace al Pasar el Mouse
+### Color de hover de enlace
 
-1. Activa el interruptor **Anular** para **Color de Enlace al Pasar el Mouse**
-2. Elige el color del estado hover
-3. Asegúrate de que sea visible contra el fondo de tu página
+1. Activa el interruptor **Sobrescribir** para **Color de hover de enlace**
+2. Elige el color del estado de hover
+3. Asegúrate de que sea visible contra tu fondo de página
 4. El predeterminado es azul claro (#03A9F4)
 
-### Color Activo
+### Color activo
 
-1. Activa el interruptor **Anular** para **Color Activo**
-2. Elige el color del indicador de página activa
-3. Debe destacarse mientras sigue encajando con tu diseño
+1. Activa el interruptor **Sobrescribir** para **Color activo**
+2. Elige el color indicador de página activa
+3. Debe destacarse mientras sigue siendo apropiado para tu diseño
 4. El predeterminado es azul claro (#03A9F4)
 
 :::info
-La navegación transparente no tiene una configuración de color de fondo ya que se superpone directamente al contenido de la página.
+La navegación transparente no tiene configuración de color de fondo ya que se superpone directamente al contenido de la página.
 :::
 
-## Guardar tus Cambios
+## Guardar tus cambios
 
-1. Después de configurar tus colores, haz clic en **Guardar Estilos de Navegación**
-2. Tus cambios se aplican inmediatamente a tu sitio web en vivo
+1. Después de configurar tus colores, haz clic en **Guardar estilos de navegación**
+2. Tus cambios se aplican inmediatamente a tu sitio web activo
 3. Visita tu sitio web para ver la navegación en ambos modos
 
-## Restablecer a los Valores Predeterminados
+## Restableciendo a valores predeterminados
 
-Si deseas volver a los colores predeterminados:
+Si quieres volver a los colores predeterminados:
 
-1. Desactiva los interruptores **Anular** para cualquier color personalizado
-2. Haz clic en **Guardar Estilos de Navegación**
-3. La navegación vuelve al esquema de colores predeterminado
+1. Desactiva los interruptores **Sobrescribir** para cualquier color personalizado
+2. Haz clic en **Guardar estilos de navegación**
+3. La navegación vuelve al esquema de color predeterminado
 
 O haz clic en **Cancelar** para descartar todos los cambios sin guardar.
 
-## Mejores Prácticas
+## Mejores prácticas
 
-### Contraste de Color
+### Contraste de color
 
-- **Legibilidad** -- Asegúrate de que los colores de los enlaces tengan suficiente contraste con el fondo
-- **Cumplimiento WCAG** -- Apunta a al menos una relación de contraste 4.5:1 para accesibilidad
-- **Prueba ambos modos** -- Previsualiza tu sitio con navegación sólida y transparente
+- **Legibilidad** -- Asegúrate de que los colores de enlace tengan suficiente contraste con el fondo
+- **Cumplimiento de WCAG** -- Apunta a una relación de contraste de al menos 4.5:1 para accesibilidad
+- **Prueba ambos modos** -- Vista previa de tu sitio con navegación sólida y transparente
 
-### Consistencia de Marca
+### Consistencia de marca
 
-- **Usa tus colores de marca** -- Coincide con tu logotipo y tema del sitio web
-- **Limita tu paleta** -- Mantente con 2-3 colores para una apariencia cohesiva
+- **Usa tus colores de marca** -- Coincide con tu logo y tema del sitio web
+- **Limita tu paleta** -- Mantente con 2-3 colores para un aspecto cohesivo
 - **Considera tus imágenes** -- Si usas navegación transparente, pruébala contra fondos de página típicos
 
-### Estados Hover y Activo
+### Estados de hover y activo
 
-- **Retroalimentación clara** -- Haz que los estados hover sean obviamente diferentes de los enlaces predeterminados
-- **Distingue páginas activas** -- Usa un color distintivo para que los usuarios sepan dónde están
-- **Transiciones suaves** -- El sistema anima automáticamente los cambios de color
+- **Retroalimentación clara** -- Haz que los estados de hover sean obviamente diferentes de los enlaces predeterminados
+- **Distinguir páginas activas** -- Usa un color distinto para que los usuarios sepan dónde están
+- **Transiciones suaves** -- El sistema anima automáticamente cambios de color
 
-## Solución de Problemas
+## Solución de problemas
 
-### Los Colores No Se Ven Bien
+### Los colores no se ven bien
 
 - **Limpia tu caché** -- El almacenamiento en caché del navegador puede mostrar colores antiguos
-- **Verifica códigos hexadecimales** -- Asegúrate de haber ingresado códigos de color hexadecimales válidos
+- **Verifica códigos hexadecimales** -- Asegúrate de que ingresaste códigos de color hexadecimales válidos
 - **Prueba en diferentes fondos** -- Los colores pueden verse diferentes dependiendo de la página
 
-### Navegación No Visible
+### Navegación no visible
 
 - **Modo transparente** -- Si usas navegación transparente sobre imágenes claras, el texto oscuro puede ser difícil de ver
 - **Solución** -- Ajusta tus colores de enlace o usa fondos de página más oscuros
 - **Alternativa** -- Agrega una sombra sutil o superposición de fondo al área de navegación
 
-## Detalles Técnicos
+## Detalles técnicos
 
 Los estilos de navegación se almacenan como JSON y se aplican usando variables CSS:
 
-- Los cambios surten efecto inmediatamente sin necesidad de reconstruir el sitio
-- Los colores se aplican en cascada a todos los elementos de navegación
-- Las anulaciones son opcionales; los colores no configurados usan los predeterminados del tema
+- Los cambios tienen efecto inmediatamente sin reconstruir el sitio
+- Los colores se propagan a todos los elementos de navegación
+- Las sobrescrituras son opcionales; los colores no establecidos usan valores predeterminados del tema
 
-## Artículos Relacionados
+## Artículos relacionados
 
 - [Apariencia](./appearance.md) -- Personaliza la apariencia general de tu sitio web
-- [Gestión de Páginas](./managing-pages.md) -- Crea y organiza las páginas de tu sitio web
-- [Editor de Páginas](./page-editor.md) -- Diseña diseños y contenido de páginas
+- [Gestionar páginas](./managing-pages.md) -- Crea y organiza tus páginas de sitio web
+- [Editor de página](./page-editor.md) -- Diseña diseños de página y contenido

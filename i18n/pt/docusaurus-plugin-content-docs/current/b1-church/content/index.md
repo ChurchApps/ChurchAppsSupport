@@ -6,7 +6,7 @@ title: "Conteúdo"
 
 <div class="article-intro">
 
-B1.church oferece à sua congregação um local central para acessar o conteúdo que sua igreja compartilha. Dependendo do que sua igreja configurou, você pode ter acesso a sermões, transmissão ao vivo, leitura da Bíblia, um versículo diário e materiais de lições -- tudo dentro do portal de membros.
+B1.church oferece à sua congregação um lugar central para acessar o conteúdo que sua igreja compartilha. Dependendo do que sua igreja tem configurado, você pode ter acesso a sermões, transmissão ao vivo, leitura de Bíblia, um versículo diário e materiais de aula — tudo dentro do portal de membros.
 
 </div>
 
@@ -14,31 +14,31 @@ B1.church oferece à sua congregação um local central para acessar o conteúdo
 
 ### Sermões
 
-Navegue e assista a sermões gravados da sua igreja. A biblioteca de sermões da sua igreja é organizada em playlists e séries, facilitando encontrar mensagens anteriores.
+Procure e assista a sermões gravados de sua igreja. A biblioteca de sermões de sua igreja é organizada em playlists e séries, facilitando a localização de mensagens passadas.
 
 ### Transmissão ao Vivo
 
-Assista à transmissão ao vivo da sua igreja diretamente no B1.church. Quando um culto está ao vivo, você pode participar da transmissão e interagir com outros espectadores através de recursos de chat e oração.
+Assista à transmissão ao vivo de sua igreja diretamente no B1.church. Quando um serviço está ao vivo, você pode participar do stream e interagir com outros espectadores através de chat e recursos de oração.
 
 ### Bíblia
 
-Leia as Escrituras usando o leitor bíblico integrado. Você pode navegar por livros, capítulos e versículos sem sair do site.
+Leia a Escritura usando o leitor de Bíblia integrado. Você pode navegar através de livros, capítulos e versículos sem sair do site.
 
 ### Versículo do Dia
 
-Visualize uma imagem de versículo bíblico lindamente formatada que muda todos os dias. A imagem se ajusta automaticamente para caber na sua tela.
+Veja uma imagem de versículo de Bíblia lindamente formatada que muda todos os dias. A imagem se ajusta automaticamente para caber em sua tela.
 
-### Lições
+### Aulas
 
-Visualize lições programadas dos planos da sua igreja. Se você é professor ou líder, pode usar a **Visualização de Professor** para ver as lições em um formato de tela cheia e fácil de navegar, perfeito para ensinar ou apresentar.
+Veja aulas agendadas dos planos de sua igreja. Se você é professor ou líder, pode usar a **Visão do Professor** para ver as aulas em um formato tela inteira, fácil de navegar, perfeito para ensinar ou apresentar.
 
-### Lições (Descontinuado - Aba Incorporada)
+### Aulas (Descontinuado - Aba Incorporada)
 
-A aba **Lições** incorporada foi descontinuada. A reprodução de currículo agora está no **[FreePlay](/docs/freeplay/)**, o aplicativo de TV gratuito do ChurchApps para telas de sala de aula. Para navegar pelo currículo em um telefone, tablet ou computador, faça login diretamente em [Lessons.church](https://lessons.church). Consulte a [página de referência de Lições](./lessons.md) para detalhes.
+A aba **Aulas** incorporada foi descontinuada. A reprodução de currículo agora vive no **[FreePlay](/docs/freeplay/)**, o aplicativo de TV gratuito da ChurchApps para telas de sala de aula. Para navegar pelo currículo em telefone, tablet ou computador, entre em [Lessons.church](https://lessons.church) diretamente. Consulte a página de [referência de Aulas](./lessons.md) para detalhes.
 
 ## Encontrando Conteúdo
 
-As páginas de conteúdo estão disponíveis através da navegação do site da sua igreja. O administrador da sua igreja decide quais recursos de conteúdo estão habilitados e como eles aparecem no menu. Se você não vir um recurso de conteúdo específico listado acima, ele pode não estar configurado para sua igreja.
+Páginas de conteúdo estão disponíveis através da navegação do site de sua igreja. Seu administrador da igreja decide quais recursos de conteúdo estão ativados e como eles aparecem no menu. Se você não vir um recurso de conteúdo específico listado acima, pode não estar configurado para sua igreja.
 
 :::info
 [Sermões](./sermons.md) e a [Bíblia](./bible.md) estão disponíveis publicamente. Outros recursos podem exigir que você esteja [conectado](../getting-started/logging-in.md).
@@ -46,9 +46,9 @@ As páginas de conteúdo estão disponíveis através da navegação do site da 
 
 ## Próximos Passos
 
-- [Sermões](./sermons.md) -- Navegue e assista a sermões gravados
+- [Sermões](./sermons.md) -- Procure e assista a sermões gravados
 - [Transmissão ao Vivo](./live-streaming.md) -- Assista a transmissões ao vivo
-- [Bíblia](./bible.md) -- Leia as Escrituras no leitor integrado
+- [Bíblia](./bible.md) -- Leia a Escritura no leitor integrado
 - [Versículo do Dia](./verse-of-the-day.md) -- Veja o versículo diário de hoje
-- [Visualização de Professor](./teacher-view.md) -- Use a interface expandida de professor para conteúdo de lições
-- [FreePlay](/docs/freeplay/) -- Reproduza lições em TVs de sala de aula (substitui a aba de Lições descontinuada no aplicativo)
+- [Visão do Professor](./teacher-view.md) -- Use a interface expandida do professor para conteúdo de aula
+- [FreePlay](/docs/freeplay/) -- Reproduza aulas em TVs de sala de aula (substitui a aba de Aulas integrada descontinuada)

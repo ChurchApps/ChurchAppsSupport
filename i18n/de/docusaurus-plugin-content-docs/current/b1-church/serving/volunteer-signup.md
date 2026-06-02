@@ -1,76 +1,76 @@
 ---
-title: "Freiwilligs-Anmeldung"
+title: "Freiwilligenanmeldung"
 ---
 
-# Freiwilligs-Anmeldung
+# Freiwilligenanmeldung
 
 <div class="article-intro">
 
-Durchsuchen Sie verfügbare Freiwilligs-Positionen und melden Sie sich selbst für kommende Gottesdienste direkt auf B1.church an. Positionen sind nach Kategorie organisiert, sodass Sie schnell finden können, wo Hilfe benötigt wird, und einem Team beitreten können.
+Durchsuchen Sie verfügbare Freiwilligenpositionen und melden Sie sich direkt von B1.church für bevorstehende Dienste an. Positionen sind nach Kategorien organisiert, sodass Sie schnell finden können, wo Hilfe benötigt wird, und einem Team beitreten können.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Ein B1.church-Konto — Sie müssen angemeldet sein, um sich anmelden zu können
-- Ihr Kirchen-Administrator muss Selbstanmeldung für mindestens eine Position aktiviert haben
+- Ein B1.church-Konto – Sie müssen angemeldet sein, um sich anzumelden
+- Ihr Kirchenadministrator muss Selbstanmeldungen für mindestens eine Position aktiviert haben
 
 </div>
 
-## Verfügbare Positionen durchsuchen
+## Durchsuchen verfügbarer Positionen
 
-1. Navigieren Sie zur **Freiwilligs**-Seite auf der B1.church-Website Ihrer Kirche.
-2. Sie sehen eine Liste kommender Dienst-Pläne, die offene Freiwilligs-Positionen haben.
-3. Jeder Plan zeigt den **Plan-Namen**, das **Dienst-Datum** und die **Dienst-Zeiten**.
+1. Navigieren Sie zur Seite **Volunteer** auf der B1.church-Website Ihrer Kirche.
+2. Sie sehen eine Liste von bevorstehenden Dienst-Plänen mit offenen Freiwilligenpositionen.
+3. Jeder Plan zeigt den **Plannamen**, das **Servicedatum** und die **Servicezeiten**.
 
-Positionen sind nach Kategorie gruppiert (zum Beispiel "Band", "Gastlichkeit", "Kinderministerin"). Jede Position zeigt:
+Positionen sind nach Kategorien gruppiert (zum Beispiel „Band", „Hospitality", „Kids Ministry"). Jede Position zeigt:
 
-- **Positions-Name** — Die Rolle, die Sie ausfüllen würden (z.B. "Schlagzeuger", "Begrüßer", "Kaffee-Server").
-- **Beschreibung** — Details zur Rolle, falls vom Administrator bereitgestellt.
-- **Verfügbare Plätze** — Eine Fortschrittsleiste zeigt, wie viele Plätze gefüllt sind und wie viele verbleiben.
+- **Positionsname** – Die Rolle, die Sie ausfüllen würden (z. B. „Drummer", „Greeter", „Coffee Server").
+- **Beschreibung** – Details über die Rolle, falls vom Administrator bereitgestellt.
+- **Verfügbare Plätze** – Eine Fortschrittsleiste, die zeigt, wie viele Plätze belegt sind und wie viele verbleiben.
 
-## Anmelden
+## Anmeldung
 
-1. Finden Sie eine Position, zu der Sie freiwillig beitragen möchten.
-2. Klicken Sie auf die Schaltfläche **Anmelden** neben der Position.
-3. Eine Bestätigungsnachricht erscheint: "Sie sind angemeldet! Danke für Ihren Freiwilligendienst."
-4. Die Position zeigt nun einen grünen Indikator, der bestätigt, dass Sie angemeldet sind.
+1. Finden Sie eine Position, für die Sie freiwillig tätig sein möchten.
+2. Klicken Sie auf die Schaltfläche **Sign Up** neben der Position.
+3. Eine Bestätigungsmitteilung wird angezeigt: „You're signed up! Thank you for volunteering."
+4. Die Position zeigt jetzt einen grünen Indikator, der bestätigt, dass Sie angemeldet sind.
 
 :::info
-Sie müssen angemeldet sein, um sich anmelden zu können. Wenn Sie nicht angemeldet sind, werden Sie zunächst aufgefordert, sich anzumelden.
+Sie müssen angemeldet sein, um sich anzumelden. Wenn Sie nicht angemeldet sind, werden Sie zunächst aufgefordert, sich anzumelden.
 :::
 
-## Anmeldung entfernen
+## Entfernen einer Anmeldung
 
 Wenn sich Ihre Pläne ändern und Sie nicht mehr dienen können:
 
-1. Finden Sie die Position, für die Sie sich angemeldet haben — sie zeigt einen grünen "Sie sind angemeldet"-Indikator.
-2. Klicken Sie auf die Schaltfläche **Entfernen**.
+1. Finden Sie die Position, für die Sie sich angemeldet haben – sie zeigt einen grünen Indikator „You're signed up".
+2. Klicken Sie auf die Schaltfläche **Remove**.
 3. Bestätigen Sie, dass Sie sich von der Position entfernen möchten.
-4. Eine Nachricht bestätigt: "Sie wurden von dieser Position entfernt."
+4. Eine Nachricht bestätigt: „You have been removed from this position."
 
-## Fristen
+## Stichtage
 
-Ihr Kirchen-Administrator kann eine Anmeldungs-Frist für jeden Plan festlegen. Die Frist ist eine festgelegte Anzahl von Stunden vor dem Dienst-Datum. Sobald die Frist verstrichen ist:
+Ihr Kirchenadministrator kann für jeden Plan einen Anmeldungsstichtag festlegen. Der Stichtag ist eine festgelegte Anzahl von Stunden vor dem Servicedatum. Sobald der Stichtag verstrichen ist:
 
 - Sie können sich nicht für neue Positionen anmelden.
-- Sie können sich nicht von bestehenden Anmeldungen entfernen.
-- Eine Nachricht oben auf dem Plan zeigt an, dass die Anmeldungs-Frist abgelaufen ist.
+- Sie können vorhandene Anmeldungen nicht entfernen.
+- Eine Nachricht oben auf dem Plan zeigt an, dass der Anmeldungsstichtag verstrichen ist.
 
 ## Positions-Kapazität
 
-Jede Position hat eine begrenzte Anzahl von Plätzen. Wenn alle Plätze besetzt sind:
+Jede Position hat eine begrenzte Anzahl von Plätzen. Wenn alle Plätze belegt sind:
 
-- Die Position zeigt **Voll**.
-- Die Anmeldungs-Schaltfläche ist deaktiviert.
-- Wenn sich jemand abmeldet, öffnet sich der Platz wieder.
+- Die Position wird als **Full** angezeigt.
+- Die Anmeldungsschaltfläche ist deaktiviert.
+- Wenn sich jemand von seiner Anmeldung abmeldet, wird der Platz wieder frei.
 
 :::tip
-Überprüfen Sie die Freiwilligs-Seite regelmäßig, besonders früh in der Woche. Beliebte Positionen füllen sich schnell, daher ist eine frühzeitige Anmeldung die beste Auswahl.
+Schauen Sie regelmäßig auf der Freiwilligenseite vorbei, besonders Anfang der Woche. Beliebte Positionen werden schnell gefüllt, daher gibt es Ihnen die besten Auswahlmöglichkeiten, sich frühzeitig anzumelden.
 :::
 
-## Verwandte Artikel
+## Zugehörige Artikel
 
-- [Dienst-Übersicht](./index.md) -- Übersicht der Dienst-Funktionen auf B1.church
-- [Pläne anzeigen](../plans/viewing-plans) -- Sehen Sie Ihre zugewiesenen Pläne und Dienst-Reihenfolgen
+- [Serving Overview](./index.md) – Überblick über Freiwilligenfunktionen auf B1.church
+- [Viewing Plans](../plans/viewing-plans) – Sehen Sie Ihre zugewiesenen Pläne und Dienstreihenfolgen an

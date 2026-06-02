@@ -1,130 +1,130 @@
 ---
-title: "Støtte for flere valutaer"
+title: "Flytvalutastøtte"
 ---
 
-# Støtte for flere valutaer
+# Flytvalutastøtte
 
 <div class="article-intro">
 
-B1s funksjon for flere valutaer gjør det mulig for menigheten din å motta og spore donasjoner i forskjellige valutaer. Dette er spesielt nyttig for menigheter med internasjonale medlemmer, misjonærer eller flere lokasjoner i forskjellige land.
+B1s flytvalutafunksjon lar kirken din godta og spore donasjoner i ulike valutaer. Dette er spesielt nyttig for kirker med internasjonale medlemmer, missionærer eller flere avdelinger i ulike land.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du trenger tillatelse til å administrere donasjoner. Se [Roller og tillatelser](../people/roles-permissions.md) for detaljer.
-- Sett opp [nettbasert giving](./online-giving-setup.md) med Stripe, som støtter transaksjoner i flere valutaer.
-- Forstå menighetens regnskapsbehov for håndtering av flere valutaer.
+- Du må ha tillatelse til å håndtere donasjoner. Se [Roller og tillatelser](../people/roles-permissions.md) for detaljer.
+- Sett opp dine [nettdonasjoner](./online-giving-setup.md) med Stripe, som støtter flytvalutaransaksioner.
+- Forstå kirkens regnskapsbehov for håndtering av flere valutaer.
 
 </div>
 
-## Aktivere støtte for flere valutaer
+## Aktivering av flytvaluta
 
-Støtte for flere valutaer er nå aktivert som standard i B1. Når det er aktivert:
+Flytvalutastøtte er nå aktivert som standard i B1. Når det er aktivert:
 
-- Medlemmer kan gi i sin lokale valuta når de donerer på nett
-- Du kan manuelt registrere donasjoner i hvilken som helst valuta
-- Donasjonsrapporter viser beløp i deres opprinnelige valuta
-- Stripe håndterer valutaomregning automatisk for nettbasert giving
+- Medlemmer kan gi i deres lokale valuta når de donerer online
+- Du kan manuelt registrere donasjoner i enhver valuta
+- Donasjonerapporter viser beløp i deres opprinnelige valuta
+- Stripe håndterer valutakonvertering automatisk for nettdonasjoner
 
 ## Støttede valutaer
 
-Systemet støtter alle store verdensvalutaer, inkludert:
+Systemet støtter alle større verdensvalutaer, inkludert:
 
-- **USD** -- Amerikanske dollar
+- **USD** -- US-dollar
 - **EUR** -- Euro
 - **GBP** -- Britiske pund
 - **CAD** -- Kanadiske dollar
 - **AUD** -- Australske dollar
-- **MXN** -- Meksikanske peso
-- **BRL** -- Brasilianske real
-- **INR** -- Indiske rupier
-- **CNY** -- Kinesiske yuan
-- **JPY** -- Japanske yen
+- **MXN** -- Mexicansk peso
+- **BRL** -- Brasiliansk real
+- **INR** -- Indisk rupi
+- **CNY** -- Kinesisk yuan
+- **JPY** -- Japansk yen
 - Og mange flere...
 
-De tilgjengelige valutaene for nettbasert giving avhenger av Stripe-kontoens støttede valutaer.
+De tilgjengelige valutaene for nettdonasjoner avhenger av hvilke valutaer som støttes av Stripe-kontoen din.
 
-## Registrere donasjoner i forskjellige valutaer
+## Registrering av donasjoner i ulike valutaer
 
-### Nettbaserte donasjoner
+### Nettdonasjoner
 
-Når et medlem gir på nett gjennom Stripe:
+Når et medlem gir online via Stripe:
 
-1. De velger sin foretrukne valuta ved utsjekking
+1. De velger sin foretrukne valuta ved kassen
 2. Stripe behandler betalingen i den valutaen
 3. Donasjonen registreres i B1 med det opprinnelige valutabeløpet
-4. Stripe håndterer automatisk eventuell nødvendig valutaomregning til kontoens standardvaluta
+4. Stripe håndterer automatisk eventuell nødvendig valutakonvertering til standardvalutaen på kontoen din
 
-### Manuell registrering
+### Manuell oppføring
 
 For å registrere en kontant- eller sjekkdonasjon i en annen valuta:
 
-1. Naviger til **Donasjoner** i B1 Admin
+1. Gå til **Donasjoner** i B1 Admin
 2. Klikk **Legg til donasjon**
-3. Velg valutaen fra valutarullgardinmenyen
+3. Velg valutaen fra valutarullemenyen
 4. Skriv inn beløpet i den valutaen
-5. Fullfør resten av donasjonsdetaljene
+5. Fyll ut resten av donasjondetaljene
 6. Klikk **Lagre**
 
-## Vise donasjoner i flere valutaer
+## Visning av flytvalutadonasjoner
 
-### Donasjonsrapporter
+### Donasjonerapporter
 
-Donasjonsrapporter viser beløp i deres opprinnelige valuta:
+Donasjonerapporter viser beløp i deres opprinnelige valuta:
 
-- Individuelle donasjonsregistreringer viser valutakoden (f.eks. "$100.00 USD")
+- Individuelle donasjonsposter viser valutakoden (f.eks. "$100,00 USD")
 - Totaler beregnes per valuta
 - Du kan filtrere etter spesifikke valutaer
 
-### Givekvitteringer
+### Giveerklæringer
 
-Ved generering av givekvitteringer:
+Når du genererer giveerklæringer:
 
 - Hver donasjon vises med sin opprinnelige valuta
-- Totaler er delt ned etter valuta
+- Totaler er oppdeltt etter valuta
 - Medlemmer ser nøyaktig hva de ga i hver valuta
 
-## Stripe-integrasjon
+## Stripe-integrering
 
-For nettbasert giving håndterer Stripe transaksjoner i flere valutaer:
+For nettdonasjoner håndterer Stripe flytvalutaransaksioner:
 
-- **Automatisk omregning** -- Stripe konverterer valutaer til kontoens standardvaluta
+- **Automatisk konvertering** -- Stripe konverterer valutaer til standardvalutaen på kontoen din
 - **Valutakurser** -- Stripe bruker gjeldende markedskurser
-- **Avgifter** -- Valutaomregning kan medføre ekstra Stripe-avgifter
-- **Utbetalingsvaluta** -- Midler settes inn i kontoens standardvaluta
+- **Gebyrer** -- Valutakonvertering kan påløpe tilleggsgebyrer fra Stripe
+- **Utbetalingsvaluta** -- Midler settes inn i standardvalutaen på kontoen din
 
 :::info
-Sjekk Stripe-dashbordet ditt for å se gjeldende valutakurser og eventuelle avgifter knyttet til transaksjoner i flere valutaer.
+Sjekk Stripe-dashbordet ditt for å se gjeldende valutakurser og eventuelle gebyrer knyttet til flytvalutaransaksioner.
 :::
 
 ## Regnskapshensyn
 
 Når du arbeider med flere valutaer:
 
-- **Journalføring** -- Hold oversikt over opprinnelige donasjonsbeløp og valutaer for nøyaktig rapportering
-- **Valutakurser** -- Merk at Stripes omregningskurser kan avvike fra bankens kurser
-- **Skattekvitteringer** -- Konsulter regnskapsføreren din om hvordan du rapporterer donasjoner i forskjellige valutaer for skatteformål
+- **Registrering** -- Holds orden på originale donasjonbelop og valutaer for nøyaktig rapportering
+- **Valutakurser** -- Merk at Stripes konverteringskurser kan avvike fra bankens kurser
+- **Skattekvisninger** -- Konsulter regnskapsfører om hvordan du skal rapportere donasjoner i ulike valutaer for skatteformål
 - **Fondstildeling** -- Du kan tildele donasjoner til spesifikke fond uavhengig av valuta
 
 ## Beste praksis
 
-- **Standardvaluta** -- Sett menighetens hovedvaluta som standard for de fleste transaksjoner
-- **Tydelig kommunikasjon** -- Fortell givere hvilken valuta de gir i under utsjekkingsprosessen
-- **Konsekvent rapportering** -- Bestem om du vil rapportere i opprinnelige valutaer eller konvertere til en enkelt valuta for sammendrag
-- **Regelmessig avstemming** -- Avstem Stripe-utbetalinger med donasjonsregistreringene dine, med hensyn til valutaomregninger
+- **Standardvaluta** -- Sett kirkens primærvaluta som standard for de fleste transaksjonene
+- **Klar kommunikasjon** -- Fortell givere hvilken valuta de gir i under kasseprosessen
+- **Konsistent rapportering** -- Bestem om du skal rapportere i opprinnelige valutaer eller konvertere til en enkelt valuta for sammendrag
+- **Vanlig avstemming** -- Avstem Stripe-utbetalinger med donasjonsposter dine, med hensyn til valutakonverteringer
 
 ## Begrensninger
 
-- Valutaomregning håndteres av Stripe kun for nettbasert giving
-- Manuelle donasjoner registreres som inntastet uten automatisk omregning
+- Valutakonvertering håndteres av Stripe kun for nettdonasjoner
+- Manuelle donasjoner registreres som innført uten automatisk konvertering
 - Historiske rapporter viser donasjoner i deres opprinnelige valutaer
 - Totalberegninger gjøres per valuta, ikke på tvers av valutaer
 
 ## Relaterte artikler
 
-- [Oppsett av nettbasert giving](./online-giving-setup.md) -- Konfigurer Stripe for å motta donasjoner
-- [Registrere donasjoner](./recording-donations.md) -- Registrer donasjonsregistreringer manuelt
-- [Donasjonsrapporter](./donation-reports.md) -- Generer og vis donasjonssammendrag
-- [Givekvitteringer](./giving-statements.md) -- Opprett årsavslutningskvitteringer for giving
+- [Nettdonasjonsoppsett](./online-giving-setup.md) -- Konfigurer Stripe for å godta donasjoner
+- [Registrering av donasjoner](./recording-donations.md) -- Manuelt oppføring av donasjonsposter
+- [Donasjonerapporter](./donation-reports.md) -- Generer og vis donasjonsammendrag
+- [Giveerklæringer](./giving-statements.md) -- Opprett årsavslutningsgivererklæringer

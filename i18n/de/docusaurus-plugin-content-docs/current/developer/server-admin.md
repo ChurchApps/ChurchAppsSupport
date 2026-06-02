@@ -6,48 +6,50 @@ title: "Server-Administration"
 
 <div class="article-intro">
 
-Server-Administrationsfunktionen in ChurchApps sind nur für Benutzer mit der Berechtigung **Server.Admin** verfügbar. Diese Tools werden für Plattformoperationen, Support und Fehlerbehebung über alle Kirchen im System verwendet.
+Server-Administration-Funktionen in ChurchApps sind nur für Benutzer mit der **Server.Admin**-Berechtigung verfügbar.
 
 </div>
 
-:::warning Zugriff eingeschränkt
-Die auf dieser Seite beschriebenen Funktionen erfordern die Berechtigung **Server.Admin** und sind für reguläre Kirchenadministratoren nicht verfügbar. Sie sind nur für Plattformbetreiber und Support-Mitarbeiter bestimmt.
+:::warning Zugriff Eingeschränkt
+Die auf dieser Seite beschriebenen Funktionen erfordern die Berechtigung **Server.Admin** und sind für normale Kirchenadministratoren nicht verfügbar.
 :::
 
-## Zugriff auf Server Admin
+## Accessing Server Admin
 
-Benutzer mit Server.Admin-Berechtigung können auf das Server-Admin-Panel von B1 Admin aus zugreifen:
+Benutzer mit Server.Admin-Berechtigung können auf das Server-Admin-Panel von B1 Admin zugreifen:
 
 1. Melden Sie sich bei [admin.b1.church](https://admin.b1.church) an
-2. Klicken Sie auf den Tab **Admin** in der Hauptnavigation
-3. Das Server-Admin-Panel umfasst Tabs zur Verwaltung von Kirchen, Benutzern und Systemoperationen
+2. Klicken Sie auf die Registerkarte **Admin** in der Hauptnavigation
+3. Das Server-Admin-Panel enthält Registerkarten zur Verwaltung von Kirchen, Benutzern und Systemoperationen
 
-## Benutzer-Impersonation
+## User Impersonation
 
-Die Impersonation-Funktion ermöglicht es Server-Admins, sich als anderer Benutzer für Support- und Fehlerbehebungszwecke anzumelden.
+Die Impersonation-Funktion ermöglicht es Server-Admins, sich als anderer Benutzer anzumelden.
 
-### So imitieren Sie einen Benutzer
+### How to Impersonate a User
 
-1. Navigieren Sie zum Tab **Impersonate** im Server-Admin-Panel
-2. Geben Sie den Namen oder die E-Mail-Adresse des Benutzers in das Suchfeld ein
-3. Klicken Sie auf **Search** oder drücken Sie Enter
-4. Klicken Sie in den Suchergebnissen auf den Benutzer, den Sie imitieren möchten
+1. Navigieren Sie zur Registerkarte **Impersonate** im Server-Admin-Panel
+2. Geben Sie den Namen oder die E-Mail-Adresse des Benutzers ein
+3. Klicken Sie auf **Search**
+4. Klicken Sie auf den Benutzer, den Sie impersonieren möchten
 5. Bestätigen Sie die Impersonation im angezeigten Dialog
+6. Sie werden als dieser Benutzer angemeldet
 
-### Wichtige Hinweise
+### Wichtige Anmerkungen
 
-- Impersonation erstellt eine neue Sitzung mit den Berechtigungen des Zielbenutzers
-- Alle während der Impersonation durchgeführten Aktionen werden im Audit-Trail protokolliert
-- Verwenden Sie Impersonation nur bei Bedarf für Support-Zwecke
+- Die Impersonation erstellt eine neue Sitzung mit den Berechtigungen des Zielbenutzers
+- Ihre ursprüngliche Admin-Sitzung endet, wenn Sie einen anderen Benutzer impersonieren
+- Alle Aktionen werden im Audit-Trail protokolliert
+- Um zu Ihrem Admin-Konto zurückzukehren, melden Sie sich ab und melden Sie sich wieder mit Ihren Anmeldedaten an
 
-### Sicherheitsüberlegungen
+### Security Considerations
 
-- Impersonation erfordert Server.Admin-Berechtigung
-- Alle Impersonation-Ereignisse werden protokolliert
-- Kirchen werden nicht benachrichtigt, wenn Impersonation auftritt
+- Die Impersonation erfordert die Berechtigung Server.Admin
+- Alle Impersonation-Ereignisse werden mit der Admin-Benutzer-ID und der Zielbenutzer-ID protokolliert
+- Kirchen werden nicht benachrichtigt, wenn eine Impersonation auftritt
 
-## Verwandte Seiten
+## Related Pages
 
-- [Authentication & Permissions](/docs/developer/api/endpoints/authentication)
-- [Membership Endpoints](/docs/developer/api/endpoints/membership)
-- [Audit Log](/docs/b1-admin/reports/audit-log)
+- [Authentication & Permissions](./api/endpoints/authentication)
+- [Membership Endpoints](./api/endpoints/membership)
+- [Audit Log](./b1-admin/reports/audit-log)

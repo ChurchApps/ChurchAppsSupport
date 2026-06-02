@@ -1,58 +1,58 @@
----
-title: "Registrering til hendelser"
+﻿---
+title: "Registrering for Arrangementer"
 ---
 
-# Registrering til hendelser
+# Registrering for Arrangementer
 
 <div class="article-intro">
 
-Når kirken aktiverer registrering for en hendelse, kan du melde deg på gjennom en enkel tre-trinns prosess. Du kan registrere deg selv og legge til familiemedlemmer, uansett om du har en konto eller besøker som gjest.
+Når kirken din muliggjør registrering for et arrangement, kan du melde deg på gjennom en enkel tre-trinns prosess. Du kan registrere deg selv og legge til familiemedlemmer, enten du har en konto eller besøker som gjest.
 
 </div>
 
 <div class="prereqs">
-<h4>Før du begynner</h4>
+<h4>Før Du Begynner</h4>
 
-- Kirken må ha hendelsesregistrering aktivert for hendelsen
-- Registreringsvinduet må være åpent (mellom åpnings- og lukkedatoene satt av administratoren)
+- Kirken din må ha arrangementregistrering aktivert for arrangementet
+- Registreringsperioden må være åpen (mellom åpnings- og stengingsdatoene satt av administratoren)
 
 </div>
 
-## Trinn 1: Oppgi informasjonen din
+## Trinn 1: Skriv Inn Informasjonen Din
 
-1. Fra kirkekalenderen, åpne hendelsen du vil registrere deg for og klikk **Registrer deg for denne hendelsen**.
-2. Registreringssiden laster og viser hendelsestittel, beskrivelse og dato.
-3. Hvis du er **logget på**, viser skjemaet navnet ditt og bekrefter at du registrerer deg under kontoen din.
-4. Hvis du er en **gjest** (ikke logget på), fyll inn:
-   - **Fornavn** (påkrevd)
-   - **Etternavn** (påkrevd)
-   - **E-post** (påkrevd)
+1. Fra kirkens kalender, åpne arrangementet du vil registrere deg for og klikk **Registrer deg for dette arrangementet**.
+2. Registreringssiden lastes inn og viser arrangementstittelen, beskrivelsen og datoen.
+3. Hvis du er **logget inn**, viser skjemaet navnet ditt og bekrefter at du registrerer deg under kontoen din.
+4. Hvis du er en **gjest** (ikke logget inn), fyll inn:
+   - **Fornavn** (obligatorisk)
+   - **Etternavn** (obligatorisk)
+   - **E-post** (obligatorisk)
    - **Telefon** (valgfritt)
 
 :::info
-Hvis hendelsen har en kapasitetgrense, viser en progresjonsstolpe hvor mange plasser som gjenstår. Hvis hendelsen er full, vil du ikke kunne registrere deg.
+Hvis arrangementet har en kapasitetsbegrensning, viser en progresjonslinje hvor mange plasser som gjenstår. Hvis arrangementet er fullt, kan du ikke registrere deg.
 :::
 
-## Trinn 2: Legg til familjemedlemmer
+## Trinn 2: Legg Til Familjemedlemmer
 
-1. Hvis du vil registrere flere familiemedlemmer, oppgi **Fornavn** og **Etternavn** for hver person.
-2. Klikk **Legg til medlem** for å legge til flere personer (opptil 10 totalt).
-3. Klikk fjernknappen ved siden av ethvert medlem for å fjerne dem fra registreringen.
+1. Hvis du vil registrere flere familiemedlemmer, skriv inn deres **fornavn** og **etternavn** for hver person.
+2. Klikk **Legg Til Medlem** for å legge til flere personer (opptil 10 totalt).
+3. Klikk sletteknappen ved siden av ethvert medlem for å fjerne dem fra registreringen.
 4. Hvis du bare registrerer deg selv, kan du hoppe over dette trinnet.
 
 ## Trinn 3: Bekreft
 
-1. Gjennomgå hendelsesdetaljene og registreringsinformasjonen din.
+1. Gjennomgå arrangementdetaljene og registreringsinformasjonen din.
 2. Bekreft registreringen din.
-3. En bekreftelsemelding vises med hendelsesdetaljene og en liste over alle du registrerte.
+3. En bekreftelsesmelding vises med arrangementet detaljer og en liste over alle du registrerte.
 
-Du vil også motta en **bekreftelses-e-post** på e-postadressen som er knyttet til kontoen din (eller e-postadressen du oppga som gjest).
+Du vil også motta en **bekreftelsese-post** på e-postadressen som er knyttet til kontoen din (eller e-posten du ga som gjest).
 
-## Avbrudd av registrering
+## Avbestilling av Registrering
 
-Hvis du må avbryte registreringen, kontakt kirkens administrator. De kan avbryte registreringen din fra registreringssiden i B1 Admin.
+Hvis du trenger å avbestille registreringen din, kontakt kirkeadministratoren din. De kan avbestille registreringen din fra B1 Admin registreringssiden.
 
-## Relaterte artikler
+## Relaterte Artikler
 
-- [Hendelseoversikt](./index.md) -- Bla gjennom kommende hendelser med registrering
-- [Donasjon](../giving/making-donations) -- Gjør en donasjon sammen med hendelsesdeltakelse
+- [Arrangementsoversikt](./index.md) -- Bla gjennom kommende arrangementer med registrering
+- [Gi Donasjoner](../giving/making-donations) -- Gi donasjon sammen med deltakelse i arrangementer

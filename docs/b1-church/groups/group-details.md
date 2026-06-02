@@ -49,6 +49,15 @@ If you are a leader of the group, you have additional editing capabilities:
 - **Leader resources** -- Access a separate **Resources (Leaders)** tab with files and links visible only to group leaders.
 - **Track attendance** -- Record attendance for group sessions from the **Attendance** tab.
 
+## Joining a Group
+
+When you are logged in and not yet a member, a join button appears on the group detail page. The button label depends on the group's join policy:
+
+- **Join Group** -- The group is open. Clicking this immediately adds you as a member.
+- **Request to Join** -- The group requires approval. Clicking this opens a dialog where you can include an optional message to the group leader, then submit your request. See [Requesting to Join a Group](./join-requests.md) for details on managing your requests.
+
+If neither button appears, the group is closed and members must be added manually by a leader or administrator.
+
 :::info
-If you are not yet a member of a group, you can use the contact form on the visitor view to reach out to the group's leaders and ask about joining.
+If a group is closed and you want to join, use the contact form on the visitor view to reach out to the group's leaders.
 :::

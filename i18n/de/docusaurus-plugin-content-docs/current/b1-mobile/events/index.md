@@ -1,32 +1,32 @@
----
-title: "Ereignisse"
+﻿---
+title: "Veranstaltungen"
 ---
 
-# Ereignisse
+# Veranstaltungen
 
 <div class="article-intro">
 
-Die Ereignisse-Funktion in B1 Mobile ermöglicht es Ihnen, kommende Kirchenereignisse zu durchsuchen und sich direkt von Ihrem Telefon dafür zu registrieren. Wenn Ihre Kirche die Registrierung für ein Ereignis aktiviert, können Sie sich selbst und Ihre Familienmitglieder mit nur ein paar Taps anmelden.
+Mit der Veranstaltungsfunktion in B1 Mobile können Sie anstehende Kirchenveranstaltungen durchsuchen und sich direkt von Ihrem Telefon aus anmelden. Wenn Ihre Kirche die Registrierung für eine Veranstaltung aktiviert hat, können Sie sich selbst und Ihre Familienmitglieder mit nur wenigen Tipps anmelden.
 
 </div>
 
-## Finden Sie Ereignisse mit Registrierung
+## Veranstaltungen mit Registrierung suchen
 
-Ereignisse mit aktivierter Registrierung erscheinen in Ihren Gruppen-Kalendern. Wenn Sie auf ein Ereignis tippen, das Registrierung verfügbar hat, sehen Sie eine **Registrierungs**-Schaltfläche in den Ereignis-Detailseite.
+Veranstaltungen mit aktivierter Registrierung werden in Ihren Gruppenkalendern angezeigt. Wenn Sie auf eine Veranstaltung tippen, für die eine Registrierung verfügbar ist, sehen Sie in den Veranstaltungsdetails eine Schaltfläche **Registrieren**.
 
-Ereignisse können verschiedene Status zeigen:
+Veranstaltungen können verschiedene Status haben:
 
-- **Offen** — Registrierung ist verfügbar und Sie können sich anmelden.
-- **Noch nicht offen** — Das Registrierungsfenster hat noch nicht begonnen.
-- **Geschlossen** — Die Registrierungs-Frist ist abgelaufen.
-- **Voll** — Alle verfügbaren Plätze wurden besetzt.
+- **Offen** -- Die Registrierung ist verfügbar und Sie können sich anmelden.
+- **Noch nicht geöffnet** -- Das Registrierungsfenster hat noch nicht begonnen.
+- **Geschlossen** -- Die Registrierungsfrist ist abgelaufen.
+- **Voll** -- Alle verfügbaren Plätze sind belegt.
 
 ## Was Sie benötigen
 
 - [B1 Mobile installiert](../getting-started/installing) und [angemeldet](../getting-started/logging-in)
-- Ihre Kirche muss Ereignis-Registrierung für das Ereignis aktiviert haben
+- Ihre Kirche muss die Veranstaltungsregistrierung für die Veranstaltung aktiviert haben
 
 ## Weitere Informationen
 
-- [Registrierung für Ereignisse](./registering) -- Schritt-für-Schritt-Anleitung zum Anmelden für ein Ereignis auf Mobil
-- [Selbst-Check-In](../checkin/self-checkin) -- Checken Sie sich ein, wenn Sie zum Ereignis ankommen
+- [Registrierung für Veranstaltungen](./registering) -- Schritt-für-Schritt-Anleitung zur Anmeldung für eine Veranstaltung auf mobilen Geräten
+- [Self Check-In](../checkin/self-checkin) -- Melden Sie sich an, wenn Sie bei der Veranstaltung ankommen

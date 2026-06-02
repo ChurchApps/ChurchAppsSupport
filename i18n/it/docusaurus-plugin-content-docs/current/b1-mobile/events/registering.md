@@ -1,4 +1,4 @@
----
+﻿---
 title: "Registrazione agli Eventi"
 ---
 
@@ -6,7 +6,7 @@ title: "Registrazione agli Eventi"
 
 <div class="article-intro">
 
-Registrati agli eventi della chiesa direttamente da B1 Mobile utilizzando un semplice processo in tre passaggi. Puoi iscrivere te stesso e aggiungere familiari direttamente dal tuo telefono.
+Registrati agli eventi della chiesa direttamente da B1 Mobile utilizzando un semplice processo in tre passaggi. Puoi iscriverti a te stesso e aggiungere membri della famiglia direttamente dal tuo telefono.
 
 </div>
 
@@ -20,26 +20,26 @@ Registrati agli eventi della chiesa direttamente da B1 Mobile utilizzando un sem
 
 ## Passaggio 1: Inserisci le Tue Informazioni
 
-1. Apri un evento del calendario di gruppo che ha la registrazione abilitata e tocca **Registra**.
+1. Apri un evento del calendario del gruppo che ha la registrazione abilitata e tocca **Registrati**.
 2. La schermata di registrazione mostra il titolo dell'evento, la descrizione e la data.
-3. Poiché sei connesso, il modulo conferma che ti stai registrando con il tuo account.
+3. Poiché sei collegato, il modulo conferma che stai eseguendo la registrazione sotto il tuo account.
 
 :::info
-Se l'evento ha un limite di capacità, una barra di avanzamento mostra quanti posti rimangono. Se l'evento è pieno, non sarai in grado di registrarti.
+Se l'evento ha un limite di capacità, una barra di avanzamento mostra quanti posti rimangono. Se l'evento è pieno, non potrai registrarti.
 :::
 
 ## Passaggio 2: Aggiungi Membri della Famiglia
 
-1. Per registrare ulteriori membri della famiglia, inserisci un **Nome** e un **Cognome** per ogni persona.
-2. Tocca **Aggiungi Membro** per aggiungere più persone (fino a 10 in totale).
+1. Per registrare membri della famiglia aggiuntivi, inserisci un **Nome** e un **Cognome** per ogni persona.
+2. Tocca **Aggiungi Membro** per aggiungere altre persone (fino a 10 in totale).
 3. Tocca il pulsante di rimozione accanto a qualsiasi membro per rimuoverlo dalla registrazione.
 4. Se stai registrando solo te stesso, salta questo passaggio.
 
 ## Passaggio 3: Conferma
 
-1. Rivedi i dettagli dell'evento e le tue informazioni di registrazione.
+1. Esamina i dettagli dell'evento e le informazioni di registrazione.
 2. Conferma la tua registrazione.
-3. Un messaggio di conferma appare con i dettagli dell'evento e tutti quelli che hai registrato.
+3. Un messaggio di conferma appare con i dettagli dell'evento e tutti coloro che hai registrato.
 
 Riceverai anche un **email di conferma** all'indirizzo email associato al tuo account.
 
@@ -49,5 +49,5 @@ Se hai bisogno di annullare, contatta l'amministratore della tua chiesa. Può an
 
 ## Articoli Correlati
 
-- [Panoramica degli Eventi](./index.md) -- Sfoglia gli eventi con registrazione su mobile
-- [Visualizzazione dei Piani](../serving/viewing-plans) -- Visualizza il tuo programma di servizio
+- [Panoramica Eventi](./index.md) -- Sfoglia gli eventi con registrazione da mobile
+- [Visualizza Piani](../serving/viewing-plans) -- Vedi il tuo programma di servizio

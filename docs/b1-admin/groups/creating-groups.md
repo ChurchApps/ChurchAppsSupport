@@ -39,6 +39,7 @@ Once your group is created, you can fill in additional details:
      - **Open** -- Anyone can join immediately without approval
      - **Request** -- People must submit a join request that requires approval (see [Group Join Requests](./group-join-requests.md))
      - **Closed** -- Members must be added manually by leaders or administrators
+   - **Labels** -- Assign one or more descriptive labels to the group (for example, "In-Person", "Online", "New Members Welcome"). Labels are freeform tags you define; check all that apply. Labels can be used to filter groups in the Groups Browser website element.
    - **Attendance Tracking** -- Enable this if you want to record [attendance](../attendance/tracking-attendance.md) for this group.
    - **Service Times** -- Associate the group with specific church service times if applicable. See [Attendance Setup](../attendance/setup.md) for details on service times.
 4. Click **Save** to apply your changes.

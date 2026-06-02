@@ -1,4 +1,4 @@
----
+﻿---
 title: "Tjeneste"
 ---
 
@@ -6,26 +6,26 @@ title: "Tjeneste"
 
 <div class="article-intro">
 
-Tjenesteseksjonen på B1.church lar deg bla gjennom frivilligmuligheter og melde deg på posisjoner ved kirken din. I tillegg til å vise dine tildelte planer og serviceordrer, kan du nå velge posisjoner selv som trenger å fylles.
+Tjenesteseksjonen på B1.church lar deg bla gjennom frivillig muligheter og melde deg på stillingene på kirken din. I tillegg til å se de tildelte planene dine og tjenesteordene, kan du nå selv velge stillinger som må fylles.
 
 </div>
 
-## Hva du kan gjøre
+## Hva Du Kan Gjøre
 
-- **Bla gjennom frivilligmuligheter** -- Se kommende serviceplaner med åpne posisjoner som trenger frivillige.
-- **Meld deg på posisjoner** -- Velg en posisjon og meld deg selv på med ett klikk.
-- **Se planene dine** -- Se dine kommende og tidligere [servicetilordninger](../plans/viewing-plans).
-- **Fjern påmeldinger** -- Avbryt en selvpåmelding hvis planene dine endres (før fristen).
+- **Bla gjennom frivillig muligheter** -- Se kommende tjenesteplaner med åpne stillinger som trenger frivillige.
+- **Meld deg på stillinger** -- Velg en stilling og meld deg selv på med ett klikk.
+- **Se planene dine** -- Se dine kommende og tidligere [tjenesteoppgaver](../plans/viewing-plans).
+- **Fjern påmeldinger** -- Avbryt en selvregistrering hvis planene dine endres (før fristen).
 
-## Hvordan det fungerer
+## Hvordan Det Fungerer
 
-Kirkens administrator oppretter serviceplaner og markerer visse posisjoner som tilgjengelige for selvpåmelding. Disse posisjonene vises på frivilligpåmeldingssiden, organisert etter kategori (som "Band", "Gjestfrihet" eller "Barneministerie"). Du kan se hvor mange plasser som er åpne for hver posisjon og melde deg på de du er tilgjengelig for.
+Kirkeadministratoren din oppretter tjenesteplaner og merker visse stillinger som tilgjengelige for selvregistrering. Disse stillingene vises på frivillingsiden, organisert etter kategori (som "Band", "Gjestfrihet" eller "Barneministerie"). Du kan se hvor mange åpne plasser som er for hver stilling og melde deg på de du er tilgjengelig for.
 
 :::info
-Bare posisjoner som kirkens administrator har aktivert for selvpåmelding vises på frivilligsiden. Noen posisjoner kan bare fylles gjennom direkte tilordning.
+Bare stillinger som kirkeadministratoren din har aktivert for selvregistrering vises på frivillingsiden. Noen stillinger kan bare fylles gjennom direkte oppgave.
 :::
 
-## Lær mer
+## Les Mer
 
-- [Frivolligpåmelding](./volunteer-signup) -- Trinn-for-trinn-guide til å bla gjennom og melde deg på frivolligposisjoner
-- [Visning av planer](../plans/viewing-plans) -- Se dine tildelte serviceplaner og serviceordrer
+- [Frivillig Påmelding](./volunteer-signup) -- Trinn-for-trinn-guide for å bla gjennom og melde deg på frivillig stillinger
+- [Visning av Planer](../plans/viewing-plans) -- Se tildelte tjenesteplaner og tjenesteordre
