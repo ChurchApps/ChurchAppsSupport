@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "preinstall": "node -e \"if(!(process.env.npm_config_user_agent||'').startsWith('yarn')){console.error('\\n[ChurchAppsSupport] This project uses Yarn (Berry). Run \\'yarn install\\' instead of npm/pnpm.\\n');process.exit(1)}\"",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
@@ -21,6 +22,7 @@
     "@easyops-cn/docusaurus-search-local": "^0.54.1",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
+    "dotenv": "^16.4.7",
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
@@ -45,5 +47,28 @@
   },
   "engines": {
     "node": ">=20.0"
+  },
+  "packageManager": "yarn@4.15.0",
+  "resolutions": {
+    "@docusaurus/core": "3.9.2",
+    "@docusaurus/plugin-client-redirects": "3.9.2",
+    "@docusaurus/plugin-content-docs": "3.9.2",
+    "@docusaurus/plugin-content-blog": "3.9.2",
+    "@docusaurus/plugin-content-pages": "3.9.2",
+    "@docusaurus/theme-common": "3.9.2",
+    "@docusaurus/theme-classic": "3.9.2",
+    "@docusaurus/theme-search-algolia": "3.9.2",
+    "@docusaurus/bundler": "3.9.2",
+    "@docusaurus/babel": "3.9.2",
+    "@docusaurus/cssnano-preset": "3.9.2",
+    "@docusaurus/logger": "3.9.2",
+    "@docusaurus/mdx-loader": "3.9.2",
+    "@docusaurus/module-type-aliases": "3.9.2",
+    "@docusaurus/types": "3.9.2",
+    "@docusaurus/utils": "3.9.2",
+    "@docusaurus/utils-common": "3.9.2",
+    "@docusaurus/utils-validation": "3.9.2",
+    "@docusaurus/theme-translations": "3.9.2",
+    "webpack": "5.105.1"
   }
 }
