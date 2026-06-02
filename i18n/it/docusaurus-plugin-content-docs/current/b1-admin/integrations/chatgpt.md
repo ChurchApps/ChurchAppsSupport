@@ -53,7 +53,7 @@ Vedi [Chiavi API](/docs/developer/api/api-keys) per l'elenco completo degli scop
 
 3. Scorri fino a **Actions** → **Crea nuova action** → **Autenticazione**.
    - **Tipo di autenticazione:** Chiave API
-   - **Chiave API:** cak_<prefix>.<secret>
+   - **Chiave API:** `cak_<prefix>.<secret>`
    - **Tipo di Autenticazione:** Bearer
    - Salva.
 4. Nella casella **Schema**, incolla una specifica OpenAPI minima che descrive gli endpoint che desideri che il GPT utilizzi.
