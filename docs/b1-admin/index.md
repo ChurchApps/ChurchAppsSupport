@@ -26,7 +26,7 @@ New to B1 Admin? Start with the [Introduction](./introduction) for a video walkt
 - **[Groups](./groups/)** - Create and organize church groups with join requests and member management
 - **[Attendance](./attendance/)** - Set up campuses, service times, and track attendance
 - **[Donations](./donations/)** - Record giving in multiple currencies, manage funds, generate statements
-- **[Serving](./serving/)** - Coordinate volunteers, create service plans, manage tasks
+- **[Serving](./serving/)** - Coordinate volunteers, create service plans, manage tasks, and move people through step-by-step workflows
 - **[Forms](./forms/)** - Build custom forms for registrations and data collection
 - **[Reports](./reports/)** - View birthday, attendance, and donation reports
 - **[Website](./website/)** - Build and manage your church website with custom navigation styles

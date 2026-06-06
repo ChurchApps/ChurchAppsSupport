@@ -57,7 +57,12 @@ Click on any task to open its detail page. From here you can:
 You can automate recurring tasks so they are created on a schedule. See [Automations](./automations.md) for details on setting this up.
 :::
 
+:::tip
+When you need to move many people through the same set of stages -- such as new-visitor follow-up or a membership process -- use [Workflows](./workflows.md). Workflows turn tasks into cards on a drag-and-drop board with steps, due dates, and routing.
+:::
+
 ## Next Steps
 
+- Move people through a multi-step process with [Workflows](./workflows.md)
 - Set up [Automations](./automations.md) to create recurring tasks automatically
 - Use tasks alongside [Service Plans](./plans.md) to track service preparation action items
