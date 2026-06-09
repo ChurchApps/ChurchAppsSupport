@@ -1,4 +1,4 @@
----
+﻿---
 title: "Mga Gawain"
 ---
 
@@ -6,58 +6,63 @@ title: "Mga Gawain"
 
 <div class="article-intro">
 
-Nagbibigay-daan ang mga gawain na mag-assign ng mga action item sa mga tao o grupo sa inyong simbahan. Isa man itong isahang to-do o isang paulit-ulit na responsibilidad, tinutulungan kayo ng mga gawain na subaybayan kung ano ang kailangang gawin at kung sino ang responsable para walang makalimutan.
+Ang mga gawain ay nagpapahintulot sa iyo na magtalaga ng mga item ng aksyon sa mga tao o grupo sa iyong simbahan. Maging ito ay isang one-time na to-do o isang paulit-ulit na responsibilidad, ang mga gawain ay tumutulong sa iyo na subaybayan kung ano ang kailangang gawin at sino ang responsable upang walang makaligtaan.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Magsimula</h4>
 
-- Siguraduhing umiiral na sa B1 Admin ang mga tao o [grupo](../groups/creating-groups.md) na gusto ninyong bigyan ng gawain
-- Pumunta sa seksyon ng **Serving** para ma-access ang pahina ng Mga Gawain
+- Siguraduhing ang mga tao o [grupo](../groups/creating-groups.md) na gusto mong magtalaga ng mga gawain ay umiiral sa B1 Admin
+- Mag-navigate sa seksyon ng **Paglilingkod** upang ma-access ang pahina ng Mga Gawain
 
 </div>
 
-## Pagtingin ng mga Gawain
+## Pagtingin sa mga Gawain
 
-Pumunta sa **Serving** at buksan ang pahina ng **Tasks**. Makikita ninyo ang listahan ng inyong mga bukas na gawain. Ipinapakita ng bawat gawain ang pamagat, assignee, at status nito.
+Mag-navigate sa **Paglilingkod** at buksan ang pahina ng **Mga Gawain**. Makikita mo ang isang listahan ng iyong mga bukas na gawain. Bawat gawain ay nagpapakita ng kanyang pamagat, tao na na-assign, at status.
 
 :::tip
-Bilang default, ang mga bukas na gawain lamang ang ipinapakita. I-toggle ang **Show Closed** para makita rin ang mga nakumpletong gawain.
+Sa pamamagit ng default, ang mga bukas na gawain lamang ay ipinapakita. I-toggle ang **Ipakita ang Sarado** upang makita ang mga kumpleto na gawain din.
 :::
 
-## Paggawa ng Gawain
+## Paglikha ng isang Gawain
 
-1. Sa pahina ng Tasks, i-click ang **Add Task**.
-2. Ilagay ang **pamagat** para sa gawain.
-3. I-click ang **Assign To** box at i-type ang pangalan ng isang tao, o lumipat sa **Group** at i-type ang pangalan ng grupo.
-4. I-click ang **Search** at piliin ang tao o grupo mula sa mga resulta.
-5. Magdagdag ng **tala** na may anumang mga detalye o tagubilin para sa assignee.
-6. I-click ang **Save**.
+1. Sa pahina ng Mga Gawain, i-click ang **Magdagdag ng Gawain**.
+2. Magpasok ng isang **pamagat** para sa gawain.
+3. I-click ang kahon ng **Magtalaga sa** at i-type ang pangalan ng isang tao, o lumipat sa **Grupo** at i-type ang pangalan ng grupo.
+4. I-click ang **Maghanap** at pumili ng tao o grupo mula sa mga resulta.
+5. Magdagdag ng isang **nota** na may anumang detalye o mga tagubilin para sa taong na-assign.
+6. I-click ang **Mag-save**.
 
-Ang gawain ay lalabas na ngayon sa listahan ng gawain at makikita ng assignee sa kanilang dashboard at mobile app.
+Ang gawain ay makikita na ngayon sa listahan ng mga gawain at makikita ng taong na-assign sa kanilang dashboard at mobile app.
 
-## Pamamahala ng Gawain
+## Pamamahala ng isang Gawain
 
-I-click ang anumang gawain para buksan ang pahina ng detalye nito. Mula rito maaari ninyong:
+I-click ang anumang gawain upang buksan ang kanyang detalyadong pahina. Mula dito maaari mong:
 
-- **Baguhin ang status** -- Lumipat sa pagitan ng **Open** at **Closed** gamit ang status dropdown.
-- **Muling i-assign ang gawain** -- I-update ang assignee sa ibang tao o grupo.
-- **Magdagdag ng mga tala** -- Magsama ng karagdagang impormasyon o mga update para sa assignee.
+- **Baguhin ang status** -- Lumipat sa pagitan ng **Bukas** at **Sarado** gamit ang dropdown ng status.
+- **Muling magtalaga ng gawain** -- I-update ang tao na na-assign sa isang ibang tao o grupo.
+- **Magdagdag ng mga nota** -- Isama ang karagdagang impormasyon o mga update para sa taong na-assign.
 - **I-edit ang pamagat** -- I-update ang pamagat ng gawain kung kinakailangan.
 
-## Siklo ng Buhay ng Gawain
+## Lifecycle ng Gawain
 
-1. Ang isang bagong gawain ay nagsisimula na may status na **Open**.
-2. Nakakatanggap ng notification ang assignee at maaaring tingnan ang gawain mula sa kanilang dashboard, sa pahina ng Tasks, o sa mobile app.
-3. Kapag natapos na ang trabaho, binabago ng assignee (o ng admin) ang status sa **Closed**.
-4. Ang mga saradong gawain ay tinatanggal mula sa default na view ngunit maaari pa ring ma-access sa pamamagitan ng pag-enable ng **Show Closed**.
+1. Ang isang bagong gawain ay nagsisimula na may status na **Bukas**.
+2. Ang taong na-assign ay nakakatanggap ng isang notipikasyon at maaaring tingnan ang gawain mula sa kanilang dashboard, sa pahina ng Mga Gawain, o sa mobile app.
+3. Kapag kumpleto na ang trabaho, ang taong na-assign (o isang admin) ay nagbabago ng status sa **Sarado**.
+4. Ang mga saradong gawain ay inalis mula sa default view ngunit maaari pa ring ma-access sa pamamagat ng pagpapagana ng **Ipakita ang Sarado**.
 
 :::info
-Maaari ninyong i-automate ang mga paulit-ulit na gawain para awtomatikong magawa ayon sa iskedyul. Tingnan ang [Mga Automation](./automations.md) para sa mga detalye kung paano ito i-set up.
+Maaari mong i-automate ang mga paulit-ulit na gawain upang sila ay likhain ayon sa isang schedule. Tingnan ang [Automations](./automations.md) para sa detalye tungkol sa pag-setup nito.
+:::
+
+:::tip
+Kapag kailangan mong isulong ang maraming tao sa pamamagat ng parehong hanay ng mga yugto -- tulad ng bagong visitor follow-up o isang membership process -- gamitin ang [Mga Workflow](./workflows.md). Ang mga workflow ay nagiging mga card sa isang drag-and-drop board na may mga hakbang, due dates, at routing.
 :::
 
 ## Mga Susunod na Hakbang
 
-- Mag-set up ng [Mga Automation](./automations.md) para awtomatikong gumawa ng mga paulit-ulit na gawain
-- Gamitin ang mga gawain kasama ng [Mga Service Plan](./plans.md) para subaybayan ang mga action item sa paghahanda ng serbisyo
+- Isulong ang mga tao sa pamamagat ng isang multi-step process na may [Mga Workflow](./workflows.md)
+- I-setup ang [Automations](./automations.md) upang lumikha ng mga paulit-ulit na gawain nang awtomatiko
+- Gumamit ng mga gawain kasama ang [Service Plans](./plans.md) upang subaybayan ang mga item ng paghahanda ng serbisyo

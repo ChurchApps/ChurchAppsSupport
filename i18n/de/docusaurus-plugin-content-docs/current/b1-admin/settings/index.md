@@ -1,4 +1,4 @@
----
+﻿---
 title: "Einstellungen"
 ---
 
@@ -6,39 +6,41 @@ title: "Einstellungen"
 
 <div class="article-intro">
 
-Der Bereich Einstellungen ist der Ort, an dem Sie das Konto, das Branding und die administrativen Optionen Ihrer Gemeinde in B1 Admin konfigurieren. Von hier aus können Sie alles verwalten -- vom Gemeindenamen und der Subdomain bis hin zu Benutzerberechtigungen und der Konfiguration der mobilen App.
+Der Bereich Einstellungen ist der Ort, an dem Sie das Konto, das Branding und die Verwaltungsoptionen Ihrer Kirche in B1 Admin konfigurieren. Von hier aus können Sie alles verwalten, von Ihrem Kirchennamen und Subdomain bis zu Benutzerberechtigungen und Konfiguration der mobilen App.
 
 </div>
 
-## Was Sie hier finden
+## Was Sie hier finden werden
 
-Der Bereich Einstellungen ist in vier Unterbereiche gegliedert, die über die Seitenleiste zugänglich sind:
+Der Bereich Einstellungen ist in die folgenden Unterabschnitte unterteilt, auf die über die Seitenleiste zugegriffen werden kann:
 
-1. **Einstellungen** -- Konfigurieren Sie die grundlegenden Informationen, das Branding und die Subdomain Ihrer Gemeinde. Siehe [Gemeindeeinstellungen](./church-settings.md) für Details.
-2. **Mobile Apps** -- Richten Sie die Navigations-Tabs ein und passen Sie sie an, die in der B1 Mobile App für Ihre Mitglieder angezeigt werden. Siehe [Mobile-App-Einstellungen](./mobile-app.md) für Details.
-3. **Server Admin** -- Greifen Sie auf erweiterte Administrationstools zur Verwaltung der Server-Einstellungen Ihrer Gemeinde zu.
-4. **Formulare** -- Erstellen und verwalten Sie benutzerdefinierte Formulare zur Erfassung von Informationen Ihrer Gemeindeglieder.
+1. **Einstellungen** – Konfigurieren Sie die grundlegenden Informationen, das Branding und die Subdomain Ihrer Kirche. Weitere Details finden Sie unter [Kircheneinstellungen](./church-settings.md).
+2. **Standorte** – Fügen Sie mehrere physische Standorte für Ihre Kirche hinzu und verwalten Sie sie. Nach der Erstellung erscheinen Standorte in Personenprofilen, in der Anwesenheits-Einrichtung und im Demographics-Dashboard. Weitere Details finden Sie unter [Standorte](./campuses.md).
+3. **Mobile Apps** – Richten Sie die Navigationstabs ein und passen Sie sie an, die in der [B1.church PWA](/docs/b1-church/getting-started/installing-pwa) für Ihre Mitglieder angezeigt werden (die gleichen Tabs werden auch von der veralteten nativen B1-Mobile-App dargestellt). Weitere Details finden Sie unter [Mobile-App-Einstellungen](./mobile-app.md).
+4. **Server-Admin** – Greifen Sie auf erweiterte Verwaltungstools zur Verwaltung Ihrer Server-Ebenen-Einstellungen zu.
+5. **Formulare** – Erstellen und verwalten Sie benutzerdefinierte Formulare zum Sammeln von Informationen von Ihrer Gemeinde.
 
-## Die Hauptseite der Einstellungen
+## Die Hauptseite Einstellungen
 
-Wenn Sie die Einstellungsseite zum ersten Mal öffnen, sehen Sie oben Ihren **Gemeindenamen** und Ihre **Subdomain**. Die Kopfzeile bietet Schnellzugriffstasten für häufige Aufgaben:
+Wenn Sie die Seite Einstellungen zum ersten Mal öffnen, sehen Sie Ihren **Kirchennamen** und Ihre **Subdomain** oben angezeigt. Der Header bietet schnellen Zugriff auf häufig verwendete Aufgaben:
 
-- **Einstellungen bearbeiten** -- Aktualisieren Sie den Namen, die Adresse, die Kontaktdaten und das Branding Ihrer Gemeinde.
-- **Mobile Apps** -- Springen Sie direkt zur Konfiguration der mobilen App.
-- **Rollen** -- Verwalten Sie Benutzerrollen und Berechtigungen für Ihr Team.
-- **Import/Export** -- Übertragen Sie Daten zwischen Systemen mit dem Import/Export-Tool.
+- **Einstellungen bearbeiten** – Aktualisieren Sie Ihren Kirchennamen, die Adresse, Kontaktinformationen und das Branding.
+- **Mobile Apps** – Springen Sie direkt zur Konfiguration der mobilen App.
+- **Rollen** – Verwalten Sie Benutzerrollen und Berechtigungen für Ihr Team.
+- **Importieren/Exportieren** – Übertragen Sie Daten zwischen Systemen mit dem Import-/Export-Tool.
 
 :::tip
-Beginnen Sie damit, den Gemeindenamen und das Branding unter **Einstellungen bearbeiten** zu konfigurieren, und richten Sie dann [Rollen](./roles-permissions.md) ein, um Ihre Teammitglieder mit der richtigen Zugangsstufe einzuladen.
+Beginnen Sie mit der Konfiguration Ihres Kirchennamens und Brandings unter **Einstellungen bearbeiten**, richten Sie dann [Rollen](./roles-permissions.md) ein, um Ihre Teammitglieder mit der richtigen Zugriffsstufe einzuladen.
 :::
 
 :::info
-Informationen darüber, wie Ihre Daten geschützt werden, finden Sie unter [Datensicherheit](./data-security.md).
+Informationen zum Schutz Ihrer Daten finden Sie unter [Datensicherheit](./data-security.md).
 :::
 
 ## Nächste Schritte
 
-- [Gemeindeeinstellungen](./church-settings.md) -- Konfigurieren Sie die Informationen und das Branding Ihrer Gemeinde
-- [Rollen & Berechtigungen](./roles-permissions.md) -- Richten Sie Benutzerrollen und Zugangskontrolle ein
-- [Mobile-App-Einstellungen](./mobile-app.md) -- Passen Sie die Tabs Ihrer B1 Mobile App an
-- [Datensicherheit](./data-security.md) -- Erfahren Sie, wie Ihre Daten geschützt werden
+- [Kircheneinstellungen](./church-settings.md) – Konfigurieren Sie Ihre Kircheninformationen und das Branding
+- [Standorte](./campuses.md) – Fügen Sie Standorte für Mehr-Standort-Kirchen hinzu
+- [Rollen & Berechtigungen](./roles-permissions.md) – Richten Sie Benutzerrollen und Zugriffskontrolle ein
+- [Mobile-App-Einstellungen](./mobile-app.md) – Passen Sie die in der B1.church PWA angezeigten Navigationstabs an
+- [Datensicherheit](./data-security.md) – Erfahren Sie, wie Ihre Daten geschützt werden

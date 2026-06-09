@@ -1,41 +1,41 @@
 ﻿---
-title: "Vue d'Ensemble B1 Admin"
+title: "Aperçu de B1 Admin"
 ---
 
-# Vue d'Ensemble B1 Admin
+# Aperçu de B1 Admin
 
 <div class="article-intro">
 
-B1 Admin est votre tableau de bord de gestion d'église. Il fournit des outils pour gérer tous les aspects des opérations de votre église -- du répertoire des membres et des dons à la création de sites Web et à la diffusion en direct -- tout en un seul endroit.
+B1 Admin est votre tableau de bord de gestion d'église. Il fournit des outils pour gérer tous les aspects des opérations de votre église -- des annuaires de membres et des dons à la création de sites Web et à la diffusion en direct -- tout à partir d'un seul endroit.
 
 </div>
 
-## Démarrer
+## Premiers pas
 
-1. Ouvrez votre navigateur et allez à [admin.b1.church](https://admin.b1.church)
-2. Connectez-vous avec votre nom d'utilisateur et mot de passe
-3. Vous atterrirez sur le **Tableau de Bord**, qui fournit un aperçu des données de votre église ainsi que des **Actions Rapides** pour les tâches courantes comme ajouter des gens, créer des groupes, enregistrer des dons, etc.
+1. Ouvrez votre navigateur et accédez à [admin.b1.church](https://admin.b1.church)
+2. Connectez-vous avec votre nom d'utilisateur et votre mot de passe
+3. Vous arriverez au **Tableau de bord**, qui fournit un aperçu de vos données d'église avec des **Actions rapides** pour les tâches courantes comme ajouter des personnes, créer des groupes, enregistrer des dons, et bien plus
 
 :::tip
-Nouveau à B1 Admin ? Commencez par [Introduction](./introduction) pour une procédure vidéo, puis visitez [Paramètres](./settings/) pour configurer les informations de votre église et inviter votre équipe.
+Nouveau dans B1 Admin ? Commencez par l'[Introduction](./introduction) pour une visite vidéo, puis visitez [Paramètres](./settings/) pour configurer les informations de votre église et inviter votre équipe.
 :::
 
-## Fonctionnalités Clés
+## Fonctionnalités clés
 
-- **[Gens](./people/)** - Gérez votre répertoire d'église, ajoutez des membres, modifiez les données en masse, suivez les ménages
-- **[Groupes](./groups/)** - Créez et organisez les groupes d'église avec demandes d'adhésion et gestion des membres
-- **[Présence](./attendance/)** - Configurez les succursales, les heures de service et suivez la présence
-- **[Dons](./donations/)** - Enregistrez les dons dans plusieurs devises, gérez les fonds, générez les relevés
-- **[Service](./serving/)** - Coordonnez les bénévoles, créez des plans de service, gérez les tâches
-- **[Formulaires](./forms/)** - Créez des formulaires personnalisés pour les inscriptions et la collecte de données
-- **[Rapports](./reports/)** - Afficher les rapports d'anniversaire, de présence et de dons
-- **[Site Web](./website/)** - Créez et gérez votre site Web d'église avec des styles de navigation personnalisés
-- **[Sermons](./sermons/)** - Gérez votre bibliothèque de sermons et la diffusion en direct
-- **[Calendriers](./calendars/)** - Créez des calendriers organisés en connectant les événements du groupe
-- **[Paramètres](./settings/)** - Configurez les informations de l'église, les rôles et les permissions
+- **[Personnes](./people/)** - Gérez votre annuaire d'église, ajoutez des membres, modifiez en masse les données, suivez les ménages
+- **[Groupes](./groups/)** - Créez et organisez des groupes d'église avec demandes d'adhésion et gestion des membres
+- **[Présences](./attendance/)** - Configurer les campus, les heures de service et suivre la présence
+- **[Dons](./donations/)** - Enregistrer les dons en plusieurs devises, gérer les fonds, générer des relevés
+- **[Service](./serving/)** - Coordonner les bénévoles, créer des plans de service, gérer les tâches et faire avancer les personnes à travers des workflows étape par étape
+- **[Formulaires](./forms/)** - Créer des formulaires personnalisés pour les inscriptions et la collecte de données
+- **[Rapports](./reports/)** - Afficher les rapports d'anniversaire, de présence et de don
+- **[Site Web](./website/)** - Construire et gérer le site Web de votre église avec des styles de navigation personnalisés
+- **[Sermons](./sermons/)** - Gérer votre bibliothèque de sermons et la diffusion en direct
+- **[Calendriers](./calendars/)** - Créer des calendriers organisés en connectant les événements de groupe
+- **[Paramètres](./settings/)** - Configurez les informations d'église, les rôles et les autorisations
 
 :::info
-Cliquez sur l'icône de point d'interrogation en haut à droite de n'importe quelle page pour un accès rapide à l'aide et à la documentation.
+Cliquez sur l'icône de point d'interrogation dans le coin supérieur droit de n'importe quelle page pour accéder rapidement à l'aide et à la documentation.
 :::
 
-Pour l'assistance, envoyez un email à [support@churchapps.org](mailto:support@churchapps.org).
+Pour toute assistance, envoyez un email à [support@churchapps.org](mailto:support@churchapps.org).

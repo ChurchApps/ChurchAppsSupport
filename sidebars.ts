@@ -26,6 +26,8 @@ const sidebars: SidebarsConfig = {
             'b1-admin/people/adding-people',
             'b1-admin/people/searching-people',
             'b1-admin/people/ai-search',
+            'b1-admin/people/lists',
+            'b1-admin/people/demographics',
             'b1-admin/people/bulk-editing',
             'b1-admin/people/importing-data',
             'b1-admin/people/exporting-data',
@@ -146,6 +148,7 @@ const sidebars: SidebarsConfig = {
           link: { type: 'doc', id: 'b1-admin/settings/index' },
           items: [
             'b1-admin/settings/church-settings',
+            'b1-admin/settings/campuses',
             'b1-admin/settings/roles-permissions',
             'b1-admin/settings/mobile-app',
             'b1-admin/settings/data-security',

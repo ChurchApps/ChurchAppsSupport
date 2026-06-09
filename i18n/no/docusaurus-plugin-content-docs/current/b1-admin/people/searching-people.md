@@ -1,52 +1,52 @@
 ---
-title: "Søk etter folk"
+title: "Søk etter personer"
 ---
 
-# Søk etter folk
+# Søk etter personer
 
 <div class="article-intro">
 
-**Folk**-siden viser kirkekatalogen din i en søkbar, sorterbar tabell. Du kan raskt finne noen i menigheten din, tilpasse hvilken informasjon som vises, og eksporter resultatene. Effektivt søk er viktig for daglige kirkestyringsoppgaver som oppfølging av besøkende, forberedelse av kontaktlister og administrering av medlemsposter.
+**Personer**-siden viser kirkes medlemsregister i en søkbar, sorterbar tabell. Du kan raskt finne noen i menigheten din, tilpasse hvilken informasjon som vises, og eksportere resultatene. Effektivt søk er viktig for daglig administrasjon av kirken, for eksempel når du følger opp besøkende, forbereder kontaktlister og administrerer medlemsarkiver.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du trenger en aktiv B1 Admin-konto med tillatelse til å vise folk. Se [Roller og tillatelser](roles-permissions.md) hvis du er usikker på tilgangsnivået ditt.
-- Kirkekatalogen skal ha folk i seg. Hvis du ennå ikke har lagt til noen, se [Legg til personer](adding-people.md) eller [Importer data](importing-data.md).
+- Du trenger en aktiv B1 Admin-konto med tillatelse til å vise personer. Se [Roller og tillatelser](roles-permissions.md) hvis du er usikker på tilgangsnivået ditt.
+- Kirkes medlemsregister bør ha personer i det. Hvis du ikke har lagt til noen ennå, se [Legg til personer](adding-people.md) eller [Importering av data](importing-data.md).
 
 </div>
 
 ## Hurtigsøk
 
-Søkerlinjen øverst på folkesiden lar deg finne medlemmer i sanntid:
+Søkfeltet på toppen av Personer-siden lar deg finne medlemmer i sanntid:
 
-1. Klikk **søkeboksen** øverst på folkesiden.
-2. Begynn å skrive inn et navn, e-postadresse eller annet nøkkelord.
-3. Resultatene filtreres automatisk mens du skriver (det er en kort forsinkelse på ca. et halvt sekund slik at søket ikke kjøres på hver tastetilslag).
-4. Tabellen nedenfor oppdateres for å vise bare matchende resultater.
+1. Klikk **søkeboksen** på toppen av Personer-siden.
+2. Start med å skrive et navn, e-post eller annet nøkkelord.
+3. Resultatene filtreres automatisk etter hvert som du skriver (det er en kort forsinkelse på ca. et halvt sekund slik at søket ikke kjøres med hver tast).
+4. Tabellen nedenfor oppdateres for å vise bare samsvarende resultater.
 
 :::tip
-Du trenger ikke å trykke Enter. Søket kjøres automatisk etter at du slutter å skrive.
+Du trenger ikke å trykke Enter. Søket kjører automatisk etter at du har sluttet å skrive.
 :::
 
 ## Sortering av resultater
 
-Du kan sortere katalogen ved å klikke på en hvilken som helst kolonnepoverskrift i tabellen:
+Du kan sortere registeret ved å klikke en hvilken som helst kolonneoverskrift i tabellen:
 
-1. Klikk på en **kolonnepoverskrift** (for eksempel **Navn** eller **E-post**) for å sortere etter den kolonnen.
-2. Klikk på samme overskrift igjen for å reversere sorteringsrekkefølgen.
+1. Klikk en **kolonneoverskrift** (for eksempel **Navn** eller **E-post**) for å sortere etter den kolonnen.
+2. Klikk samme overskrift igjen for å reversere sorteringsrekkefølgen.
 
-Dette gjør det enkelt å finne folk alfabetisk, etter alder eller etter annen synlig kolonne.
+Dette gjør det enkelt å finne personer alfabetisk, etter alder eller etter en annen synlig kolonne.
 
-## Tilpassing av kolonner
+## Tilpasse kolonner
 
-Ikke all informasjon må være synlig på en gang. Du kan velge hvilke kolonner som vises i tabellen:
+Ikke all informasjon trenger å være synlig samtidig. Du kan velge hvilke kolonner som skal vises i tabellen:
 
-1. Finn **rullemenyen for kolonnevalg** nær toppen av tabellen.
+1. Se etter **kolonnerullgardinlisten** nær toppen av tabellen.
 2. Merk eller avmerk kolonner for å vise eller skjule dem. Tilgjengelige kolonner inkluderer:
-   - **Foto**
+   - **Bilde**
    - **Navn**
    - **E-post**
    - **Telefon**
@@ -54,32 +54,37 @@ Ikke all informasjon må være synlig på en gang. Du kan velge hvilke kolonner 
    - **Fødselsdato**
    - **Alder**
    - **Kjønn**
-   - **Medlemskapsstatus**
-3. Tabellen oppdateres umiddelbar for å gjenspeile valgene dine.
+   - **Medlemsstatus**
+   - **Campus**
+3. Tabellen oppdateres umiddelbart for å gjenspeile valgene dine.
 
 :::info
-Kolonnevalgene dine påvirker hva som er inkludert når du eksporterer til CSV. Tilpass kolonner før du eksporterer for å få nøyaktig de dataene du trenger.
+Kolonnevalgene dine påvirker hva som tas med når du eksporterer til CSV. Tilpass kolonner før du eksporterer for å få nøyaktig de dataene du trenger.
 :::
 
 ## Paginering
 
-Når katalogen har mange poster, blir resultatene delt på sider. Bruk **pagineringskontrollene** nederst i tabellen for å navigere mellom sider. Gjeldende side og totalt postantall vises slik at du alltid vet hvor du er i listen.
+Når registeret ditt har mange oppføringer, deles resultatene på tvers av sider. Bruk **pagineringskontrollene** på bunnen av tabellen for å bevege deg mellom sider. Gjeldende side og totalt antall oppføringer vises slik at du alltid vet hvor du er i listen.
 
 :::tip
-Hvis du vil se flere resultater på en gang, refiner søket ditt for å begrense listen i stedet for å bla gjennom en stor katalog.
+Hvis du vil se flere resultater samtidig, refiner søket for å begrense listen i stedet for å bla gjennom et stort register.
 :::
 
-## Eksport av søkeresultater
+## Eksporter søkeresultater
 
 Du kan laste ned gjeldende søkeresultater som en CSV-fil når som helst:
 
-1. Bruk søk eller filtre du ønsker.
-2. Tilpass kolonnene til å inkludere dataene du trenger.
-3. Klikk **Eksport**-knappen.
-4. En CSV-fil lastes ned på datamaskinen din, klar til å åpne i Excel, Google Sheets eller et hvilket som helst regnearkprogram.
+1. Bruk ethvert søk eller filtre du ønsker.
+2. Tilpass kolonnene dine for å inkludere dataene du trenger.
+3. Klikk **Eksporter**-knappen.
+4. En CSV-fil lastes ned til datamaskinen din, klar til å åpnes i Excel, Google Sheets eller et hvilket som helst regnearkprogram.
 
-For mer informasjon om eksport, se [Eksporter data](./exporting-data.md).
+For mer informasjon om eksportering, se [Eksportering av data](./exporting-data.md).
 
 :::tip
-For mer avanserte spørsmål -- som å finne alle som ikke har møtt opp på de siste tre månedene -- prøv [AI-søk](./ai-search.md)-funksjonen, som lar deg søke ved hjelp av vanlig språkspørsmål.
+For mer avanserte spørsmål – for eksempel for å finne alle som ikke har møtt opp de siste tre månedene – prøv [AI-søk](./ai-search.md)-funksjonen, som lar deg søke med naturlige språkspørsmål.
 :::
+
+## Lagre søk som lister
+
+Etter å ha kjørt et søk, vises en **Lagre som liste**-knapp (bokmerkeikon) i Personer-sidens header. Klikk den for å lagre gjeldende spørring under et navn og valgfritt kategori, slik at du kan laste det inn umiddelbart i fremtidige økter. Se [Lagrede lister](./lists.md) for fullstendige detaljer.

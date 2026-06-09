@@ -12,12 +12,13 @@ The Settings section is where you configure your church's account, branding, and
 
 ## What You Will Find Here
 
-The Settings area is organized into four sub-sections accessible from the sidebar:
+The Settings area is organized into the following sub-sections accessible from the sidebar:
 
 1. **Settings** -- Configure your church's basic information, branding, and subdomain. See [Church Settings](./church-settings.md) for details.
-2. **Mobile Apps** -- Set up and customize the navigation tabs that appear in the [B1.church PWA](/docs/b1-church/getting-started/installing-pwa) for your members (the same tabs are also rendered by the deprecated B1 Mobile native app). See [Mobile App Settings](./mobile-app.md) for details.
-3. **Server Admin** -- Access advanced administration tools for managing your church's server-level settings.
-4. **Forms** -- Create and manage custom forms for collecting information from your congregation.
+2. **Campuses** -- Add and manage multiple physical locations for your church. Once created, campuses appear on person profiles, in attendance setup, and in the Demographics dashboard. See [Campuses](./campuses.md) for details.
+3. **Mobile Apps** -- Set up and customize the navigation tabs that appear in the [B1.church PWA](/docs/b1-church/getting-started/installing-pwa) for your members (the same tabs are also rendered by the deprecated B1 Mobile native app). See [Mobile App Settings](./mobile-app.md) for details.
+4. **Server Admin** -- Access advanced administration tools for managing your church's server-level settings.
+5. **Forms** -- Create and manage custom forms for collecting information from your congregation.
 
 ## The Main Settings Page
 
@@ -39,6 +40,7 @@ For information about how your data is protected, see [Data Security](./data-sec
 ## Next Steps
 
 - [Church Settings](./church-settings.md) -- Configure your church information and branding
+- [Campuses](./campuses.md) -- Add locations for multi-site churches
 - [Roles & Permissions](./roles-permissions.md) -- Set up user roles and access control
 - [Mobile App Settings](./mobile-app.md) -- Customize the navigation tabs shown in the B1.church PWA
 - [Data Security](./data-security.md) -- Learn how your data is protected

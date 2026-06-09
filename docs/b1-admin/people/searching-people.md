@@ -55,6 +55,7 @@ Not every piece of information needs to be visible at once. You can choose which
    - **Age**
    - **Gender**
    - **Membership Status**
+   - **Campus**
 3. The table updates immediately to reflect your selections.
 
 :::info
@@ -83,3 +84,7 @@ For more details on exporting, see [Exporting Data](./exporting-data.md).
 :::tip
 For more advanced queries -- like finding everyone who hasn't attended in the last three months -- try the [AI Search](./ai-search.md) feature, which lets you search using plain language questions.
 :::
+
+## Saving Searches as Lists
+
+After running a search, a **Save as List** button (bookmark icon) appears in the People page header. Click it to store your current query under a name and optional category, so you can reload it instantly in future sessions. See [Saved Lists](./lists.md) for full details.

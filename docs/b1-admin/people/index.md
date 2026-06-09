@@ -16,17 +16,21 @@ Here is an overview of the key features available in the People section:
 
 1. **Search your directory** -- Use the quick search bar to find anyone by name, or take advantage of advanced filters and AI-powered natural language search to locate exactly who you need. See [Searching People](./searching-people.md) and [AI Search](./ai-search.md) for details.
 
-2. **Add new people** -- Quickly add individuals to your directory and fill in their profile details, contact information, and household connections. See [Adding People](./adding-people.md) for step-by-step instructions.
+2. **Save search queries as Lists** -- Save any search or filter as a named list so you can reload it with one click. See [Saved Lists](./lists.md).
 
-3. **Bulk edit people** -- Update multiple people at once by changing their membership status, marital status, gender, opt-out preferences, or group memberships. This saves time when making the same change to many individuals. See [Bulk Editing](./bulk-editing.md).
+3. **View Demographics** -- See a visual breakdown of your congregation by age, gender, marital status, membership status, and campus — and click any chart segment to drill into those people. See [Demographics](./demographics.md).
 
-4. **Print your directory** -- Generate a formatted, printable member directory grouped by household, complete with photos and contact information. See [Print Directory](./print-directory.md).
+4. **Add new people** -- Quickly add individuals to your directory and fill in their profile details, contact information, and household connections. See [Adding People](./adding-people.md) for step-by-step instructions.
 
-5. **Import and export data** -- Bring in member data from a CSV file or migrate from another church management system like Breeze. You can also export your directory to CSV at any time. See [Importing Data](./importing-data.md) and [Exporting Data](./exporting-data.md).
+5. **Bulk edit people** -- Update multiple people at once by changing their membership status, marital status, gender, opt-out preferences, or group memberships. This saves time when making the same change to many individuals. See [Bulk Editing](./bulk-editing.md).
 
-6. **Manage profiles** -- View and edit detailed profiles for each person, including contact info, household members, [group memberships](../groups/group-members.md), [attendance history](../attendance/tracking-attendance.md), [donations](../donations/recording-donations.md), and [custom forms](../forms/creating-forms.md).
+6. **Print your directory** -- Generate a formatted, printable member directory grouped by household, complete with photos and contact information. See [Print Directory](./print-directory.md).
 
-7. **Assign roles and permissions** -- Control who on your team can access different parts of B1 Admin by assigning roles. See [Assigning Roles](./roles-permissions.md).
+7. **Import and export data** -- Bring in member data from a CSV file or migrate from another church management system like Breeze. You can also export your directory to CSV at any time. See [Importing Data](./importing-data.md) and [Exporting Data](./exporting-data.md).
+
+8. **Manage profiles** -- View and edit detailed profiles for each person, including contact info, household members, [group memberships](../groups/group-members.md), [attendance history](../attendance/tracking-attendance.md), [donations](../donations/recording-donations.md), and [custom forms](../forms/creating-forms.md).
+
+9. **Assign roles and permissions** -- Control who on your team can access different parts of B1 Admin by assigning roles. See [Assigning Roles](./roles-permissions.md).
 
 ## Getting Started
 

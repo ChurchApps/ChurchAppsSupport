@@ -6,39 +6,41 @@ title: "Impostazioni"
 
 <div class="article-intro">
 
-La sezione Impostazioni è dove configuri l'account della tua chiesa, il branding e le opzioni amministrative in B1 Admin. Da qui puoi gestire tutto, dal nome della tua chiesa e sottodominio alle autorizzazioni degli utenti e alla configurazione dell'app mobile.
+La sezione Impostazioni è il luogo in cui configuri l'account della tua chiesa, il branding e le opzioni amministrative in B1 Admin. Da qui puoi gestire tutto, dal nome della tua chiesa e dal sottodominio alle autorizzazioni degli utenti e alla configurazione dell'app mobile.
 
 </div>
 
 ## Cosa troverai qui
 
-L'area Impostazioni è organizzata in quattro sotto-sezioni accessibili dalla barra laterale:
+L'area Impostazioni è organizzata nelle seguenti sottosezioni accessibili dalla barra laterale:
 
-1. **Impostazioni** -- Configura le informazioni di base della tua chiesa, il branding e il sottodominio. Vedi [Impostazioni della Chiesa](./church-settings.md) per i dettagli.
-2. **App Mobile** -- Configura e personalizza le schede di navigazione che appaiono nell'app B1 Mobile per i tuoi membri. Vedi [Impostazioni App Mobile](./mobile-app.md) per i dettagli.
-3. **Amministrazione Server** -- Accedi agli strumenti di amministrazione avanzata per gestire le impostazioni a livello di server della tua chiesa.
-4. **Moduli** -- Crea e gestisci moduli personalizzati per raccogliere informazioni dalla tua congregazione.
+1. **Impostazioni** -- Configura le informazioni di base della tua chiesa, il branding e il sottodominio. Vedi [Impostazioni della chiesa](./church-settings.md) per i dettagli.
+2. **Campus** -- Aggiungi e gestisci più sedi fisiche per la tua chiesa. Una volta creati, i campus compaiono nei profili delle persone, nella configurazione delle presenze e nella dashboard Demografia. Vedi [Campus](./campuses.md) per i dettagli.
+3. **App mobile** -- Configura e personalizza le schede di navigazione che appaiono in [B1.church PWA](/docs/b1-church/getting-started/installing-pwa) per i tuoi membri (le stesse schede sono anche rese dall'app mobile nativa B1 deprecata). Vedi [Impostazioni app mobile](./mobile-app.md) per i dettagli.
+4. **Server Admin** -- Accedi agli strumenti di amministrazione avanzati per gestire le impostazioni a livello di server della tua chiesa.
+5. **Moduli** -- Crea e gestisci moduli personalizzati per raccogliere informazioni dalla tua congregazione.
 
-## La pagina principale delle Impostazioni
+## La pagina Impostazioni principale
 
-Quando apri per la prima volta la pagina Impostazioni, vedrai il **nome della tua chiesa** e il **sottodominio** visualizzati in alto. L'intestazione fornisce pulsanti di accesso rapido per le attività comuni:
+Quando apri prima la pagina Impostazioni, vedrai il **nome della tua chiesa** e il **sottodominio** visualizzati in cima. L'intestazione fornisce pulsanti di accesso rapido per attività comuni:
 
-- **Modifica Impostazioni** -- Aggiorna il nome della tua chiesa, l'indirizzo, le informazioni di contatto e il branding.
-- **App Mobile** -- Vai direttamente alla configurazione dell'app mobile.
-- **Ruoli** -- Gestisci i ruoli utente e le autorizzazioni per il tuo team.
-- **Importa/Esporta** -- Trasferisci dati tra sistemi utilizzando lo strumento di importazione/esportazione.
+- **Modifica impostazioni** -- Aggiorna il nome, l'indirizzo, le informazioni di contatto e il branding della tua chiesa.
+- **App mobile** -- Passa direttamente alla configurazione dell'app mobile.
+- **Ruoli** -- Gestisci i ruoli e i permessi degli utenti per il tuo team.
+- **Importa/Esporta** -- Trasferisci i dati tra i sistemi utilizzando lo strumento di importazione/esportazione.
 
 :::tip
-Inizia configurando il nome della tua chiesa e il branding sotto **Modifica Impostazioni**, poi configura i [Ruoli](./roles-permissions.md) per invitare i membri del tuo team con il giusto livello di accesso.
+Inizia configurando il nome della tua chiesa e il branding in **Modifica impostazioni**, quindi configura [Ruoli](./roles-permissions.md) per invitare i tuoi membri del team con il giusto livello di accesso.
 :::
 
 :::info
-Per informazioni su come i tuoi dati sono protetti, vedi [Sicurezza dei Dati](./data-security.md).
+Per informazioni su come i tuoi dati sono protetti, vedi [Sicurezza dei dati](./data-security.md).
 :::
 
-## Prossimi passi
+## Passaggi successivi
 
-- [Impostazioni della Chiesa](./church-settings.md) -- Configura le informazioni e il branding della tua chiesa
-- [Ruoli e Autorizzazioni](./roles-permissions.md) -- Configura ruoli utente e controllo degli accessi
-- [Impostazioni App Mobile](./mobile-app.md) -- Personalizza le schede della tua app B1 Mobile
-- [Sicurezza dei Dati](./data-security.md) -- Scopri come i tuoi dati sono protetti
+- [Impostazioni della chiesa](./church-settings.md) -- Configura le informazioni della tua chiesa e il branding
+- [Campus](./campuses.md) -- Aggiungi sedi per le chiese multi-sito
+- [Ruoli e autorizzazioni](./roles-permissions.md) -- Configura i ruoli degli utenti e il controllo d'accesso
+- [Impostazioni app mobile](./mobile-app.md) -- Personalizza le schede di navigazione mostrate in B1.church PWA
+- [Sicurezza dei dati](./data-security.md) -- Scopri come i tuoi dati sono protetti

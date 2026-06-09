@@ -1,4 +1,4 @@
----
+﻿---
 title: "Mga Setting"
 ---
 
@@ -6,39 +6,41 @@ title: "Mga Setting"
 
 <div class="article-intro">
 
-Ang seksyon ng Mga Setting ay kung saan mo iko-configure ang account ng iyong simbahan, branding, at mga opsyon sa pangangasiwa sa B1 Admin. Mula rito, maaari mong pamahalaan ang lahat mula sa pangalan ng iyong simbahan at subdomain hanggang sa mga pahintulot ng user at configuration ng mobile app.
+Ang seksyon ng Settings ay kung saan mo ini-configure ang account ng iyong simbahan, branding, at mga pagpipilian sa administrasyon sa B1 Admin. Mula dito maaari mong pamahalaan ang lahat mula sa pangalan ng iyong simbahan at subdomain hanggang sa mga pahintulot ng user at pagsasaayos ng mobile app.
 
 </div>
 
-## Ano ang Matatagpuan Mo Rito
+## Ano ang Makikita Mo Dito
 
-Ang lugar ng Mga Setting ay nakaayos sa apat na sub-section na maa-access mula sa sidebar:
+Ang lugar ng Settings ay organisado sa mga sumusunod na sub-section na accessible mula sa sidebar:
 
-1. **Mga Setting** -- I-configure ang pangunahing impormasyon ng iyong simbahan, branding, at subdomain. Tingnan ang [Mga Setting ng Simbahan](./church-settings.md) para sa mga detalye.
-2. **Mga Mobile App** -- I-set up at i-customize ang mga navigation tab na lumalabas sa B1 Mobile app para sa iyong mga miyembro. Tingnan ang [Mga Setting ng Mobile App](./mobile-app.md) para sa mga detalye.
-3. **Server Admin** -- I-access ang mga advanced na tool sa pangangasiwa para sa pamamahala ng mga setting sa antas ng server ng iyong simbahan.
-4. **Mga Form** -- Gumawa at mamahala ng mga custom na form para sa pagkolekta ng impormasyon mula sa iyong kongregasyon.
+1. **Settings** -- I-configure ang pangunahing impormasyon, branding, at subdomain ng iyong simbahan. Tingnan ang [Mga Setting ng Simbahan](./church-settings.md) para sa detalye.
+2. **Mga Campus** -- Magdagdag at pamahalaan ang maraming pisikal na lokasyon para sa iyong simbahan. Kapag na-configure na, ang mga campus ay lumalabas bilang isang pagpipilian sa mga profile ng tao, sa attendance setup, at sa dashboard ng Demographics. Tingnan ang [Mga Campus](./campuses.md) para sa detalye.
+3. **Mobile Apps** -- I-setup at i-customize ang mga tab na navigation na lumalabas sa [B1.church PWA](/docs/b1-church/getting-started/installing-pwa) para sa iyong mga miyembro (ang parehong mga tab ay ire-render din ng deprecated B1 Mobile native app). Tingnan ang [Mga Setting ng Mobile App](./mobile-app.md) para sa detalye.
+4. **Server Admin** -- I-access ang mga advanced administration tools para sa pamamahala ng mga setting sa antas ng server ng iyong simbahan.
+5. **Forms** -- Lumikha at pamahalaan ang mga custom form para sa pagkolekta ng impormasyon mula sa iyong kongregasyon.
 
-## Ang Pangunahing Pahina ng Mga Setting
+## Ang Pangunahing Pahina ng Settings
 
-Kapag binuksan mo ang pahina ng Mga Setting sa unang pagkakataon, makikita mo ang **pangalan ng iyong simbahan** at **subdomain** na ipinapakita sa itaas. Ang header ay nagbibigay ng mga quick-access na button para sa mga karaniwang gawain:
+Kapag una mong binuksan ang pahina ng Settings, makikita mo ang **pangalan ng iyong simbahan** at **subdomain** na ipinakita sa itaas. Ang header ay nagbibigay ng mabilis na access button para sa mga karaniwang gawain:
 
-- **I-edit ang Mga Setting** -- I-update ang pangalan ng iyong simbahan, address, impormasyon sa pakikipag-ugnayan, at branding.
-- **Mga Mobile App** -- Dumiretso sa configuration ng mobile app.
-- **Mga Tungkulin** -- Pamahalaan ang mga tungkulin ng user at mga pahintulot para sa iyong team.
-- **Import/Export** -- Maglipat ng data sa pagitan ng mga sistema gamit ang import/export tool.
+- **I-edit ang Mga Setting** -- I-update ang pangalan, tirahan, impormasyon sa pakikipag-ugnayan, at branding ng iyong simbahan.
+- **Mobile Apps** -- Direktang mag-jump sa mobile app configuration.
+- **Mga Tungkulin** -- Pamahalaan ang mga tungkulin at pahintulot ng user para sa iyong team.
+- **I-import/I-export** -- Ilipat ang data sa pagitan ng mga system gamit ang import/export tool.
 
 :::tip
-Magsimula sa pag-configure ng pangalan ng iyong simbahan at branding sa ilalim ng **I-edit ang Mga Setting**, pagkatapos ay i-set up ang [Mga Tungkulin](./roles-permissions.md) para imbitahan ang mga miyembro ng iyong team na may tamang antas ng access.
+Magsimula sa pamamagat ng pag-configure ng pangalan at branding ng iyong simbahan sa ilalim ng **I-edit ang Mga Setting**, pagkatapos i-setup ang [Mga Tungkulin](./roles-permissions.md) upang imbitahan ang iyong mga miyembro ng team na may tamang antas ng access.
 :::
 
 :::info
-Para sa impormasyon tungkol sa kung paano protektado ang iyong data, tingnan ang [Seguridad ng Data](./data-security.md).
+Para sa impormasyon tungkol sa kung paano protektado ang iyong data, tingnan ang [Data Security](./data-security.md).
 :::
 
 ## Mga Susunod na Hakbang
 
 - [Mga Setting ng Simbahan](./church-settings.md) -- I-configure ang impormasyon at branding ng iyong simbahan
-- [Mga Tungkulin at Pahintulot](./roles-permissions.md) -- I-set up ang mga tungkulin ng user at kontrol sa access
-- [Mga Setting ng Mobile App](./mobile-app.md) -- I-customize ang mga tab ng iyong B1 Mobile app
-- [Seguridad ng Data](./data-security.md) -- Alamin kung paano protektado ang iyong data
+- [Mga Campus](./campuses.md) -- Magdagdag ng mga lokasyon para sa mga multi-site na simbahan
+- [Mga Tungkulin at Pahintulot](./roles-permissions.md) -- Mag-setup ng mga tungkulin ng user at control ng access
+- [Mga Setting ng Mobile App](./mobile-app.md) -- I-customize ang mga tab na navigation na ipinakita sa B1.church PWA
+- [Data Security](./data-security.md) -- Matuto kung paano protektado ang iyong data
