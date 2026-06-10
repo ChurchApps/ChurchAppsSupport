@@ -19,3 +19,5 @@ scripts/output/
 
 # npm is blocked (see preinstall guard); never commit an npm lockfile
 package-lock.json
+
+scripts/.yarn/
