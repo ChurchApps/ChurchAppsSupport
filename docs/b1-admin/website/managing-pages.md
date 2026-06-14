@@ -63,6 +63,21 @@ Removing a navigation link does not delete the page itself. The page still exist
 You can add [forms](../forms/creating-forms.md) to your pages to collect registrations, prayer requests, or other information from visitors.
 :::
 
+## Starting from a Site Template
+
+If you are building your site from scratch, you can bootstrap it using a **Site Template** instead of creating pages one at a time. A site template creates a set of pre-built pages — home, about, connect, give, and others — with placeholder content and navigation links already wired up.
+
+1. On the Pages screen, click the **Site Templates** button (beside the **Add Page** button).
+2. Browse the available templates and click one to preview its page structure.
+3. When you find one you like, click **Apply Template**.
+4. Pages that do not already exist are created and added to your navigation. Existing pages are left as-is.
+
+After applying a template, open each page in the [page editor](page-editor) to replace the placeholder text and images with your church's real content.
+
+:::info
+Site templates create page structure and navigation. They do not override your site's color scheme or fonts — those are controlled by [Appearance](appearance).
+:::
+
 ## Image Lightbox
 
 When visitors click on an image on your website, it opens in a full-screen lightbox overlay. This lets people view photos at a larger size without leaving the page. No configuration is required — the lightbox is enabled automatically for images in your page content.

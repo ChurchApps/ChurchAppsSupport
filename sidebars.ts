@@ -45,6 +45,7 @@ const sidebars: SidebarsConfig = {
             'b1-admin/groups/group-members',
             'b1-admin/groups/group-calendar',
             'b1-admin/groups/group-join-requests',
+            'b1-admin/groups/groups-health',
           ],
         },
         {
@@ -55,6 +56,7 @@ const sidebars: SidebarsConfig = {
             'b1-admin/attendance/setup',
             'b1-admin/attendance/tracking-attendance',
             'b1-admin/attendance/check-in',
+            'b1-admin/attendance/labels',
           ],
         },
         {
@@ -65,6 +67,7 @@ const sidebars: SidebarsConfig = {
             'b1-admin/donations/recording-donations',
             'b1-admin/donations/batches',
             'b1-admin/donations/funds',
+            'b1-admin/donations/campaigns',
             'b1-admin/donations/giving-statements',
             'b1-admin/donations/online-giving-setup',
             'b1-admin/donations/multi-currency',
@@ -140,6 +143,8 @@ const sidebars: SidebarsConfig = {
           items: [
             'b1-admin/calendars/creating-calendars',
             'b1-admin/calendars/curated-calendar',
+            'b1-admin/calendars/rooms-resources',
+            'b1-admin/calendars/approvals',
           ],
         },
         {

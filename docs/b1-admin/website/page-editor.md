@@ -40,7 +40,9 @@ Every page is built from two levels:
 ### Adding a Section
 
 1. Click **Add Section** (or the **+** button at the top of the left panel).
-2. Choose a layout for your section -- options include single column, two columns, three columns, and more.
+2. Choose how to start:
+   - **From a template** — browse the section template gallery organized by category (Hero, About, Services, Giving, etc.) and click one to insert it as a fully styled, pre-filled section. You can customize everything after it is added.
+   - **Blank section** — choose a column layout (single, two columns, three columns, etc.) and build from scratch.
 3. The new section appears in the preview. Click it to select it and configure its background color, padding, and other style options.
 
 ### Adding Elements to a Section
