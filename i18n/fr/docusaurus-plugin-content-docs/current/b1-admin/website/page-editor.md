@@ -1,118 +1,138 @@
 ﻿---
-title: "Utiliser l'Éditeur de Pages"
+title: "Utilisation de l'éditeur de page"
 ---
 
-# Utiliser l'Éditeur de Pages
+# Utilisation de l'éditeur de page
 
 <div class="article-intro">
 
-L'éditeur de pages B1 est un constructeur visuel par glisser-déposer qui vous permet de concevoir les pages de votre site Web d'église sans écrire de code. Vous pouvez ajouter des sections et des blocs de contenu, personnaliser les styles, prévisualiser votre travail et annuler les modifications -- tout à partir de votre navigateur.
+L'éditeur de page B1 est un constructeur visuel de glisser-déposer qui vous permet de concevoir les pages de votre site Web d'église sans écrire de code. Vous pouvez ajouter des sections et des blocs de contenu, personnaliser les styles, prévisualiser votre travail et annuler les modifications -- tout cela depuis votre navigateur.
 
 </div>
 
 <div class="prereqs">
-<h4>Avant de Commencer</h4>
+<h4>Avant de commencer</h4>
 
-- Complétez la [Configuration Initiale](initial-setup) pour obtenir votre site Web configuré
-- Créez au moins une page dans [Gérer les Pages](managing-pages)
-- Vous avez besoin de la permission **content.edit** pour accéder à l'éditeur
+- Complétez la [Configuration initiale](initial-setup) pour configurer votre site Web
+- Créez au moins une page dans [Gestion des pages](managing-pages)
+- Vous avez besoin de l'autorisation **content.edit** pour accéder à l'éditeur
 
 </div>
 
-## Ouvrir l'Éditeur
+## Ouverture de l'éditeur
 
 1. Dans B1 Admin, cliquez sur **Site Web** dans le menu de gauche.
-2. Trouvez la page que vous souhaitez éditer dans le tableau Pages et cliquez sur **Éditer**.
+2. Trouvez la page que vous souhaitez modifier dans le tableau Pages et cliquez sur **Modifier**.
 
-L'éditeur s'ouvre en mode plein écran. Le panneau de gauche affiche la structure de votre page et les éléments de contenu disponibles ; la zone centrale affiche un aperçu en direct de votre page.
+L'éditeur s'ouvre en mode plein écran. Le panneau de gauche affiche votre structure de page et les éléments de contenu disponibles ; la zone centrale affiche un aperçu en direct de votre page.
 
 :::info
-L'éditeur s'affiche toujours en mode clair, indépendamment de votre paramètre de thème B1 Admin. Cela garantit que l'aperçu correspond avec précision à l'apparence de votre page pour les visiteurs du site Web.
+L'éditeur s'affiche toujours en mode clair, quel que soit votre paramètre de thème B1 Admin. Cela garantit que l'aperçu correspond exactement à la façon dont votre page s'affichera pour les visiteurs du site Web.
 :::
 
-## Structure de Page : Sections et Éléments
+## Structure de la page : sections et éléments
 
 Chaque page est construite à partir de deux niveaux :
 
-- **Sections** -- Les conteneurs de haut niveau qui divisent votre page en bandes horizontales (par exemple, une section de héros, un bloc de contenu ou une bande de pied de page). Chaque page doit avoir au moins une section avant de pouvoir ajouter du contenu.
-- **Éléments** -- Les éléments de contenu individuels placés à l'intérieur d'une section, tels que le texte, les images, les boutons, les cartes, les formulaires et les calendriers.
+- **Sections** -- Les conteneurs de niveau supérieur qui divisent votre page en bandes horizontales (par exemple, une section héros, un bloc de contenu ou une bande de pied de page). Chaque page doit avoir au moins une section avant de pouvoir ajouter du contenu.
+- **Éléments** -- Les pièces de contenu individuelles placées à l'intérieur d'une section, telles que du texte, des images, des boutons, des cartes, des formulaires et des calendriers.
 
-### Ajouter une Section
+### Ajouter une section
 
-1. Cliquez sur **Ajouter une Section** (ou le bouton **+** en haut du panneau de gauche).
-2. Choisissez une mise en page pour votre section -- les options incluent une colonne unique, deux colonnes, trois colonnes, etc.
-3. La nouvelle section apparaît dans l'aperçu. Cliquez dessus pour la sélectionner et configurez sa couleur d'arrière-plan, son remplissage et autres options de style.
+1. Cliquez sur **Ajouter une section** (ou le bouton **+** en haut du panneau de gauche).
+2. Choisissez comment commencer :
+   - **À partir d'un modèle** — parcourez la galerie de modèles de section organisée par catégorie (Héros, À propos, Services, Contribution, etc.) et cliquez sur l'un pour l'insérer en tant que section entièrement stylisée et pré-remplie. Vous pouvez personnaliser tout après son ajout.
+   - **Section vierge** — choisissez une disposition en colonnes (une seule, deux colonnes, trois colonnes, etc.) et construisez à partir de zéro.
+3. La nouvelle section apparaît dans l'aperçu. Cliquez sur elle pour la sélectionner et configurez sa couleur de fond, son remplissage et d'autres options de style.
 
-### Ajouter des Éléments à une Section
+### Ajouter des éléments à une section
 
-1. Cliquez à l'intérieur d'une section dans l'aperçu pour la sélectionner.
-2. Cliquez sur **Ajouter du Contenu** et choisissez un type d'élément dans la liste :
-   - **Texte** -- En-têtes, paragraphes et texte riche
-   - **Image** -- Téléchargez ou liez à une photo
+1. Cliquez dans une section de l'aperçu pour la sélectionner.
+2. Cliquez sur **Ajouter du contenu** et choisissez un type d'élément dans la liste :
+   - **Texte** -- Titres, paragraphes et texte enrichi
+   - **Image** -- Téléchargez ou créez un lien vers une photo
    - **Bouton** -- Un lien d'appel à l'action cliquable
    - **Carte** -- Une image avec un titre et une description
-   - **Formulaire** -- Intégrez un [formulaire](../forms/creating-forms) directement sur la page
-   - **Calendrier** -- Afficher un calendrier d'événements
-   - **FAQ** -- Blocs de questions-réponses en style accordéon
-   - **Vidéo** -- Intégrer une vidéo par URL
-   - **Groups Browser** -- Un répertoire de tous les groupes d'église filtrable avec recherche optionnelle, filtre de catégorie et filtre d'étiquette
-3. Configurez l'élément en utilisant le panneau de paramètres qui apparaît.
+   - **Formulaire** -- Incorporez un [formulaire](../forms/creating-forms) directement sur la page
+   - **Calendrier** -- Affiche un calendrier d'événements
+   - **FAQ** -- Blocs de questions et réponses de style accordéon
+   - **Vidéo** -- Incorporez une vidéo par URL
+   - **Navigateur de groupes** -- Un répertoire filtrable de tous les groupes d'église avec recherche facultative, filtre de catégorie et filtre d'étiquette
+3. Configurez l'élément à l'aide du panneau de paramètres qui s'affiche.
 
-### Réorganiser le Contenu
+### Réorganisation du contenu
 
-Faites glisser les sections ou les éléments en utilisant l'icône de poignée (six points) sur le côté gauche de chaque élément pour les réorganiser. Vous pouvez faire glisser les éléments à l'intérieur d'une section ou les déplacer entre les sections.
+Faites glisser les sections ou les éléments à l'aide de l'icône de poignée (six points) sur le côté gauche de chaque élément pour les réorganiser. Vous pouvez faire glisser les éléments dans une section ou les déplacer entre les sections.
 
-## Styliser Votre Page
+## Style de votre page
 
-### Styles de Section
+### Styles de section
 
 Cliquez sur n'importe quelle section pour ouvrir son panneau de style. Vous pouvez définir :
 
-- **Arrière-plan** -- Couleur unie, gradient ou image
+- **Arrière-plan** -- Couleur unie, dégradé ou image
 - **Remplissage** -- Espacement haut et bas à l'intérieur de la section
-- **Largeur** -- Largeur complète ou centrée/contenue
+- **Largeur** -- Pleine largeur ou centrée/contenue
 
-### Styles d'Élément
+### Styles d'élément
 
-Cliquez sur n'importe quel élément pour ouvrir son panneau de style. Les options courantes incluent la taille de police, la couleur, l'alignement, la marge et le remplissage. Pour les images, vous pouvez définir le texte alt et les cibles de lien.
+Cliquez sur n'importe quel élément pour ouvrir son panneau de style. Les options courantes incluent la taille de police, la couleur, l'alignement, la marge et le remplissage. Pour les images, vous pouvez définir le texte alternatif et les cibles de lien.
 
-### CSS Personnalisé
+### CSS personnalisé
 
-Pour le style avancé, chaque section et élément a un champ **CSS Personnalisé** où vous pouvez écrire vos propres règles CSS. Ceux-ci sont délimités à cet élément, ils n'affecteront donc pas involontairement le reste de la page.
+Pour un style avancé, chaque section et élément a un champ **CSS personnalisé** où vous pouvez écrire vos propres règles CSS. Celles-ci sont délimitées à cet élément, elles n'affecteront donc pas involontairement le reste de la page.
 
 :::tip
-Si vous avez besoin d'appliquer des styles dans votre site entier -- comme une police personnalisée ou une couleur mondiale -- utilisez les paramètres [Apparence](appearance) à la place du CSS personnalisé sur les pages individuelles.
+Si vous devez appliquer des styles à l'ensemble de votre site -- par exemple, une police personnalisée ou une couleur globale -- utilisez plutôt les paramètres [Apparence](appearance) au lieu du CSS personnalisé sur des pages individuelles.
 :::
 
-## Prévisualiser Votre Page
+## Aperçu de votre page
 
 Utilisez les contrôles d'aperçu dans la barre d'outils pour vérifier comment votre page s'affiche à différentes tailles d'écran :
 
-- **Bureau** -- Vue navigateur plein écran
-- **Mobile** -- Vue à taille téléphone étroite
+- **Bureau** -- Vue de navigateur en pleine largeur
+- **Mobile** -- Vue en taille téléphone étroite
 
 Cliquez sur **Aperçu** pour ouvrir une version en direct de la page dans un nouvel onglet du navigateur, exactement comme les visiteurs la verront.
 
-## Annuler les Modifications
+## Annulation des modifications
 
 L'éditeur suit automatiquement votre historique d'édition. Utilisez les boutons de la barre d'outils ou les raccourcis clavier pour naviguer :
 
-- **Annuler** (Ctrl+Z / Cmd+Z) -- Rétablir votre dernière action
-- **Refaire** (Ctrl+Y / Cmd+Y) -- Réappliquer une action annulée
+- **Annuler** (Ctrl+Z / Cmd+Z) -- Revert votre dernière action
+- **Refaire** (Ctrl+Y / Cmd+Y) -- Réappliquez une action annulée
 
-Vous pouvez également restaurer la page à un instant antérieur. Cliquez sur **Historique** dans la barre d'outils pour afficher une liste des instantanés enregistrés avec des descriptions, et cliquez sur n'importe quelle entrée pour restaurer à ce point.
+Vous pouvez également restaurer la page à un instantané antérieur. Cliquez sur **Historique** dans la barre d'outils pour voir une liste des instantanés enregistrés avec des descriptions, et cliquez sur n'importe quelle entrée pour restaurer à ce point.
 
 :::warning
-La restauration d'un instantané remplace le contenu de votre page actuelle par la version de l'instantané. Cela ne peut pas être annulé avec le bouton d'annulation standard. Enregistrez un instantané de votre état actuel avant de restaurer un ancien si vous souhaitez garder la possibilité de revenir.
+La restauration d'un instantané remplace le contenu de votre page actuelle par la version de l'instantané. Cela ne peut pas être annulé avec le bouton d'annulation standard. Enregistrez un instantané de votre état actuel avant de restaurer un ancien si vous souhaitez conserver l'option de revenir.
 :::
 
-## Enregistrer Votre Travail
+## Enregistrement et publication
 
-Les modifications sont enregistrées automatiquement au fur et à mesure que vous travaillez. Un indicateur d'état dans la barre d'outils indique si vos modifications ont été enregistrées. Vous pouvez également cliquer sur **Enregistrer** à tout moment pour forcer une sauvegarde.
+Les modifications sont enregistrées automatiquement au fur et à mesure que vous travaillez. Un indicateur d'état dans la barre d'outils indique si vos modifications ont été enregistrées.
 
-## Articles Connexes
+### État brouillon et publié
 
-- [Gérer les Pages](managing-pages.md) -- Créez des pages, définissez les URL et gérez la navigation du site
-- [Apparence](appearance.md) -- Définissez les couleurs, polices et image de marque du site
-- [Fichiers](files) -- Téléchargez les ressources d'image et de documents à utiliser dans l'éditeur
-- [Créer des Formulaires](../forms/creating-forms.md) -- Créez des formulaires que vous pouvez intégrer sur des pages
+Les pages peuvent avoir un état **publié**, qui contrôle quand les visiteurs voient vos modifications. La barre d'outils affiche une puce d'état indiquant l'état actuel :
+
+- **En direct à l'enregistrement** -- La page n'utilise pas de flux de travail de publication. Chaque modification enregistrée devient en direct immédiatement. C'est la valeur par défaut pour les nouvelles pages.
+- **Modifications non publiées** -- La page a été publiée auparavant, mais vous avez effectué des modifications depuis la dernière publication. Les visiteurs voient toujours la version précédemment publiée.
+- **Publié** -- La page est en direct et votre contenu enregistré correspond à ce que les visiteurs voient.
+
+Pour publier vos modifications, cliquez sur le bouton **Publier** dans la barre d'outils. La page devient en direct immédiatement.
+
+Pour revenir à la dernière version publiée sans affecter ce que les visiteurs voient, ouvrez le menu de débordement (⋮) et cliquez sur **Annuler les modifications**.
+
+Pour mettre une page complètement hors ligne, ouvrez le menu de débordement et cliquez sur **Dépublier**. Les visiteurs ne verront plus cette page jusqu'à ce que vous la publiez à nouveau.
+
+:::tip
+Utilisez le flux de travail brouillon/publication quand vous voulez préparer une page -- par exemple, pour un événement à venir -- et la mettre en direct uniquement au bon moment. Créez et prévisualisez la page, puis cliquez sur Publier quand vous êtes prêt.
+:::
+
+## Articles connexes
+
+- [Gestion des pages](managing-pages) -- Créer des pages, définir des URL et gérer la navigation du site
+- [Apparence](appearance) -- Définissez les couleurs, les polices et la marque de l'ensemble du site
+- [Fichiers](files) -- Téléchargez les images et les documents à utiliser dans l'éditeur
+- [Création de formulaires](../forms/creating-forms) -- Construisez des formulaires que vous pouvez incorporer sur des pages

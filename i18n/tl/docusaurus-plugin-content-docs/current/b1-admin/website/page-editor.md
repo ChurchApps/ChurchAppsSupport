@@ -1,4 +1,4 @@
----
+﻿---
 title: "Paggamit ng Page Editor"
 ---
 
@@ -6,113 +6,133 @@ title: "Paggamit ng Page Editor"
 
 <div class="article-intro">
 
-Ang B1 page editor ay isang visual drag-and-drop builder na nagbibigay-daan sa inyo na i-disenyo ang inyong mga pahina ng website ng parokya nang hindi nagsusulat ng anumang code. Maaari kayong magdagdag ng mga section at content blocks, i-customize ang mga style, i-preview ang inyong trabaho, at i-undo ang mga pagbabago -- lahat mula sa loob ng inyong browser.
+Ang B1 page editor ay isang visual drag-and-drop na builder na nagbibigay-daan sa iyo na mag-design ng iyong mga pahina ng website ng simbahan nang hindi nagsusulat ng anumang code. Maaari kang magdagdag ng mga seksyon at content blocks, i-customize ang mga istilo, tingnan ang iyong gawa, at baguhin ang mga pagbabago -- lahat mula sa loob ng iyong browser.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Magsimula</h4>
 
-- Kumpletuhin ang [Initial Setup](initial-setup) upang makakonfigure ng inyong website
-- Lumikha ng hindi bababa sa isang pahina sa [Managing Pages](managing-pages)
-- Kailangan ninyo ng **content.edit** permission upang ma-access ang editor
+- Tapusin ang [Initial Setup](initial-setup) upang makuha ang iyong website na configured
+- Lumikha ng hindi bababa sa isang pahina sa [Pagmamanage ng mga Pahina](managing-pages)
+- Kailangan mo ng **content.edit** na pahintulot upang i-access ang editor
 
 </div>
 
 ## Pagbubukas ng Editor
 
-1. Sa B1 Admin, i-click ang **Website** sa kaliwang menu.
-2. Hanapin ang pahina na gusto ninyong baguhin sa Pages table at i-click ang **Edit**.
+1. Sa B1 Admin, mag-click **Website** sa kaliwang menu.
+2. Hanapin ang pahina na nais mong baguhin sa Mga Pahina na talahanayan at mag-click **Baguhin**.
 
-Ang editor ay bumubukas sa full-screen mode. Ang kaliwang panel ay nagpapakita ng inyong page structure at available content elements; ang center area ay nagpapakita ng isang live preview ng inyong pahina.
+Ang editor ay bumubukas sa full-screen mode. Ang kaliwang panel ay nagpapakita ng iyong page structure at available na content elements; ang center area ay nagpapakita ng live preview ng iyong pahina.
 
 :::info
-Ang editor ay palaging nagpapakita sa light mode, anuman ang inyong B1 Admin theme setting. Ito ay sinisiguro na ang preview ay tumpak na tumutugma sa paano ang inyong pahina ay magmumukhang sa mga bisita ng website.
+Ang editor ay palaging nagpapakita sa light mode, hindi alintana ang iyong B1 Admin theme setting. Ito ay nagsisiguro na ang preview ay tumpak na tumutugma sa kung paano makikita ang iyong pahina sa mga bisita ng website.
 :::
 
-## Page Structure: Sections at Elements
+## Page Structure: Mga Seksyon at Mga Elemento
 
-Bawat pahina ay itinayo mula sa dalawang antas:
+Ang bawat pahina ay itinayo mula sa dalawang antas:
 
-- **Sections** -- Ang top-level containers na naghahati ng inyong pahina sa horizontal bands (halimbawa, isang hero section, isang content block, o isang footer strip). Bawat pahina ay dapat magkaroon ng hindi bababa sa isang section bago kayo maaaring magdagdag ng nilalaman.
-- **Elements** -- Ang mga indibidwal na piraso ng nilalaman na inilagay sa loob ng isang section, tulad ng teksto, mga larawan, mga button, mga card, mga form, at mga kalendaryo.
+- **Mga Seksyon** -- Ang top-level containers na naghahati ng iyong pahina sa horizontal bands (halimbawa, isang hero section, isang content block, o isang footer strip). Ang bawat pahina ay dapat may hindi bababa sa isang seksyon bago ka maaaring magdagdag ng nilalaman.
+- **Mga Elemento** -- Ang indibidwal na mga piece ng nilalaman na inilagay sa loob ng isang seksyon, tulad ng teksto, mga imahe, mga pindot, mga card, mga form, at mga kalendaryo.
 
-### Pagdagdag ng Section
+### Pagdagdag ng isang Seksyon
 
-1. I-click ang **Add Section** (o ang **+** button sa itaas ng kaliwang panel).
-2. Pumili ng isang layout para sa inyong section -- ang mga opsyon ay kinabibilangan ng single column, dalawang kolumn, tatlong kolumn, at marami pa.
-3. Ang bagong section ay lilitaw sa preview. I-click ito upang piliin ito at makakonfigure ng background color, padding, at ibang mga opsyon ng istilo.
+1. Mag-click **Add Section** (o ang **+** button sa itaas ng kaliwang panel).
+2. Pumili kung paano magsimula:
+   - **Mula sa isang template** -- i-browse ang gallery ng section template na naka-organize ayon sa kategorya (Hero, Tungkol, Mga Serbisyo, Pagbibigay, atbp.) at mag-click ng isa upang isaksak ito bilang isang ganap na naka-style, pre-filled na seksyon. Maaari mong i-customize ang lahat pagkatapos itong idagdag.
+   - **Blank section** -- pumili ng isang layout ng column (single, dalawang column, tatlong column, atbp.) at bumuo mula sa simula.
+3. Ang bagong seksyon ay lumalabas sa preview. Mag-click nito upang piliin ito at i-configure ang kulay ng background, padding, at iba pang style options nito.
 
-### Pagdagdag ng Elements sa Section
+### Pagdagdag ng mga Elemento sa isang Seksyon
 
-1. I-click sa loob ng isang section sa preview upang piliin ito.
-2. I-click ang **Add Content** at pumili ng isang uri ng elemento mula sa listahan:
-   - **Text** -- Mga heading, paragraph, at rich text
-   - **Image** -- I-upload o mag-link sa isang larawan
-   - **Button** -- Isang clickable call-to-action link
-   - **Card** -- Isang larawan na may pamagat at paglalarawan
-   - **Form** -- I-embed ang isang [form](../forms/creating-forms) direkta sa pahina
-   - **Calendar** -- Magpakita ng isang event calendar
-   - **FAQ** -- Accordion-style question at answer blocks
-   - **Video** -- I-embed ang isang video sa pamamagat ng URL
-   - **Groups Browser** -- Isang filterable directory ng lahat ng mga grupo ng parokya na may opsyonal na search, category filter, at label filter
-3. Makakonfigure ng elemento gamit ang settings panel na lilitaw.
+1. Mag-click sa loob ng isang seksyon sa preview upang piliin ito.
+2. Mag-click **Add Content** at pumili ng uri ng elemento mula sa listahan:
+   - **Teksto** -- Mga Heading, paragrapho, at rich text
+   - **Imahe** -- Mag-upload o mag-link sa isang larawan
+   - **Pindot** -- Isang clickable call-to-action na link
+   - **Card** -- Isang imahe na may pamagat at paglalarawan
+   - **Form** -- Mag-embed ng [form](../forms/creating-forms) direkta sa pahina
+   - **Kalendaryo** -- Ipakita ang isang event calendar
+   - **FAQ** -- Accordion-style na mga tanong at sagot blocks
+   - **Video** -- Mag-embed ng isang video sa pamamagat ng URL
+   - **Groups Browser** -- Isang filterable na directory ng lahat ng mga grupo ng simbahan na may optional na paghahanap, kategoryang filter, at label filter
+3. I-configure ang elemento gamit ang settings panel na lumalabas.
 
 ### Pag-reorder ng Content
 
-I-drag ang mga section o elemento gamit ang handle icon (anim na dots) sa kaliwang bahagi ng bawat item upang i-reorder ang mga ito. Maaari ninyong i-drag ang mga elemento sa loob ng isang section o ilipat ang mga ito sa pagitan ng mga section.
+Drag sections o elements gamit ang handle icon (anim na tuldok) sa kaliwang bahagi ng bawat item upang i-reorder ang mga ito. Maaari mong i-drag ang mga elemento sa loob ng isang seksyon o ilipat ang mga ito sa pagitan ng mga seksyon.
 
-## Pag-style ng Inyong Pahina
+## Pag-style ng Iyong Pahina
 
-### Section Styles
+### Mga Istilo ng Seksyon
 
-I-click ang anumang section upang buksan ang style panel. Maaari ninyong itakda ang:
+Mag-click sa anumang seksyon upang buksan ang nito na panel ng istilo. Maaari mong itakda:
 
-- **Background** -- Solid color, gradient, o larawan
-- **Padding** -- Top at bottom spacing sa loob ng section
-- **Width** -- Full-width o centered/contained
+- **Background** -- Solid na kulay, gradient, o imahe
+- **Padding** -- Itaas at ibabang spacing sa loob ng seksyon
+- **Lapad** -- Full-width o centered/contained
 
-### Element Styles
+### Mga Istilo ng Elemento
 
-I-click ang anumang elemento upang buksan ang style panel. Ang mga karaniwang opsyon ay kinabibilangan ng font size, kulay, alignment, margin, at padding. Para sa mga larawan, maaari ninyong itakda ang alt text at link targets.
+Mag-click sa anumang elemento upang buksan ang nito na panel ng istilo. Ang mga karaniwang opsyon ay naglalaman ng sukat ng font, kulay, alignment, margin, at padding. Para sa mga imahe, maaari mong itakda ang alt text at mga target ng link.
 
 ### Custom CSS
 
-Para sa advanced styling, bawat section at elemento ay may **Custom CSS** field kung saan maaari kayong magsulat ng inyong mga CSS rules. Ang mga ito ay naka-scope sa elemento na iyon, kaya hindi sila hindi dapat makaapekto sa natitirang bahagi ng pahina.
+Para sa advanced na pag-style, ang bawat seksyon at elemento ay may **Custom CSS** field kung saan maaari kang sumulat ng iyong sariling mga CSS rules. Ang mga ito ay scoped sa element na iyon, kaya hindi nila hindi sinasadya na makakaapekto sa natitirang bahagi ng pahina.
 
 :::tip
-Kung kailangan ninyong ilapat ang mga istilo sa buong inyong site -- tulad ng isang customized font o global color -- gamitin ang [Appearance](appearance) settings sa halip na custom CSS sa mga indibidwal na pahina.
+Kung kailangan mong mag-apply ng mga istilo sa buong iyong site -- tulad ng isang custom font o pandaigdigang kulay -- gamitin ang [Appearance](appearance) settings sa halip na custom CSS sa indibidwal na mga pahina.
 :::
 
-## Pag-preview ng Inyong Pahina
+## Pagtingin ng Iyong Pahina
 
-Gamitin ang preview controls sa toolbar upang suriin kung paano ang inyong pahina ay magmumukhang sa iba't ibang screen sizes:
+Gamitin ang mga kontrol sa preview sa toolbar upang suriin kung paano makikita ang iyong pahina sa iba't ibang laki ng screen:
 
 - **Desktop** -- Full-width browser view
-- **Mobile** -- Narrow phone-sized view
+- **Mobile** -- Maliit na phone-sized view
 
-I-click ang **Preview** upang buksan ang isang live version ng pahina sa isang bagong browser tab, eksakto kung paano ito makikita ng mga bisita.
+Mag-click **Preview** upang magbukas ng isang live version ng pahina sa isang bagong browser tab, eksaktong tulad ng makikita ng mga bisita.
 
-## Pag-undo ng Mga Pagbabago
+## Pag-undo ng mga Pagbabago
 
-Ang editor ay awtomatikong sinusubaybayan ang inyong editing history. Gamitin ang toolbar buttons o keyboard shortcuts upang mag-navigate:
+Ang editor ay awtomatikong sumusubaybay sa iyong history ng pag-edit. Gamitin ang mga pindot sa toolbar o keyboard shortcuts upang mag-navigate:
 
-- **Undo** (Ctrl+Z / Cmd+Z) -- Ibalik ang inyong huling aksyon
-- **Redo** (Ctrl+Y / Cmd+Y) -- I-apply muli ang isang undone action
+- **Undo** (Ctrl+Z / Cmd+Z) -- Bawiin ang iyong huling aksyon
+- **Redo** (Ctrl+Y / Cmd+Y) -- Muling i-apply ang isang undone action
 
-Maaari din ninyong ibalik ang pahina sa isang mas lumang snapshot. I-click ang **History** sa toolbar upang makita ang isang listahan ng mga nakaimbak na snapshots na may mga paglalarawan, at i-click ang anumang entry upang ibalik sa puntong iyon.
+Maaari mo ring maibalik ang pahina sa isang mas maaga na snapshot. Mag-click **History** sa toolbar upang makita ang isang listahan ng mga naka-save na snapshot na may mga paglalarawan, at mag-click ng anumang entry upang maibalik ang papunta sa puntong iyon.
 
 :::warning
-Ang pag-restore ng isang snapshot ay nagsasalin ng inyong kasalukuyang nilalaman ng pahina gamit ang snapshot version. Ito ay hindi maaaring ma-undo gamit ang standard undo button. I-save ang isang snapshot ng inyong kasalukuyang estado bago mag-restore ng isang lumang kung gusto ninyong panatilihin ang opsyon na bumalik.
+Ang pagbabalik ng isang snapshot ay pinalitan ang iyong kasalukuyang content ng pahina na may snapshot version. Hindi ito maaaring baguhin gamit ang standard undo button. Mag-save ng isang snapshot ng iyong kasalukuyang estado bago magbalik ng lumang isa kung nais mong panatilihin ang opsyon na bumalik.
 :::
 
-## Pag-save ng Inyong Trabaho
+## Pag-save at Pag-publish
 
-Ang mga pagbabago ay awtomatikong nai-save habang kayo ay nagtatrabaho. Isang status indicator sa toolbar ay nagpapakita kung ang inyong mga pagbabago ay nai-save na. Maaari din ninyong i-click ang **Save** anumang oras upang pisilahin ang isang save.
+Ang mga pagbabago ay awtomatikong ini-save habang nagtratrabaho ka. Ang isang status indicator sa toolbar ay nagpapakita kung ang iyong mga pagbabago ay na-save na.
 
-## Related Articles
+### Draft at published state
 
-- [Managing Pages](managing-pages) -- Lumikha ng mga pahina, itakda ang URLs, at pamahalaan ang navigation ng site
-- [Appearance](appearance) -- Itakda ang site-wide na mga kulay, fonts, at branding
-- [Files](files) -- I-upload ang mga larawan at dokumento upang gamitin sa editor
-- [Creating Forms](../forms/creating-forms) -- Bumuo ng mga form na maaari ninyong i-embed sa mga pahina
+Ang mga pahina ay maaaring magkaroon ng **published** state, na kumokontrol kung kailan nakikita ng mga bisita ang iyong mga pagbabago. Ang toolbar ay nagpapakita ng isang status chip na nagpapakita ng kasalukuyang estado:
+
+- **Live on Save** -- Ang pahina ay hindi gumagamit ng isang publish workflow. Ang bawat naka-save na pagbabago ay direktang live. Ito ay ang default para sa mga bagong pahina.
+- **Unpublished Changes** -- Ang pahina ay naglathala na dati, ngunit gumawa ka ng mga pagbabago mula sa huling publish. Ang mga bisita ay nakakakita pa rin ng naglalathang bersyon.
+- **Published** -- Ang pahina ay live at ang iyong naka-save na nilalaman ay tumutugma sa kung ano ang nakikita ng mga bisita.
+
+Upang maglathala ng iyong mga pagbabago, mag-click sa **Publish** button sa toolbar. Ang pahina ay direktang live.
+
+Upang bumalik sa huling nailathalayang bersyon nang hindi nakakaapekto kung ano ang nakikita ng mga bisita, buksan ang overflow menu (⋮) at mag-click **Discard Changes**.
+
+Upang dalhin ang isang pahina offline sa kabuuan, buksan ang overflow menu at mag-click **Unpublish**. Ang mga bisita ay hindi na makikita ang pahina na iyon hanggang sa muling ilathala mo ito.
+
+:::tip
+Gamitin ang draft/publish workflow kung gusto mong maghanda ng isang pahina -- halimbawa, para sa isang paparating na kaganapan -- at gawin lamang itong live sa tamang sandali. Bumuo at tumingin ng preview ng pahina, pagkatapos mag-click Publish kapag handa ka na.
+:::
+
+## Mga Kaugnay na Artikulo
+
+- [Pagmamanage ng mga Pahina](managing-pages) -- Lumikha ng mga pahina, itakda ang mga URL, at pamahalaan ang site navigation
+- [Appearance](appearance) -- Itakda ang site-wide colors, fonts, at branding
+- [Files](files) -- Mag-upload ng mga imahe at dokumento upang gamitin sa editor
+- [Paglikha ng mga Form](../forms/creating-forms) -- Bumuo ng mga form na maaari mong i-embed sa mga pahina

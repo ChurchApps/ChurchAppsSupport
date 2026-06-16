@@ -79,6 +79,28 @@ To download the group member list as a file:
 
 This is useful for creating printed rosters, importing data into other tools, or keeping offline records. For more export options, see [Exporting Data](../people/exporting-data.md).
 
+## Sending Push Notifications to Group Members
+
+You can send a push notification directly to all group members who have the B1.church app installed on their device with push notifications enabled.
+
+1. From the group detail page, click the **bell icon** in the header toolbar (next to the email and SMS icons).
+2. A dialog opens showing how many of your group's members have push enabled.
+3. Fill in the notification details:
+   - **Title** *(required)* -- A short summary, up to 80 characters.
+   - **Message** *(required)* -- The notification body, up to 240 characters.
+   - **Open link or flyer URL** *(optional)* -- A relative app path (for example, `/mobile/groups`) or a full `https://` URL that the notification opens when tapped.
+   - **Image URL** *(optional)* -- An `https://` URL to an image that appears alongside the notification on supported devices.
+4. A live preview shows how the notification will appear on the device.
+5. Click **Send Notification**.
+
+:::info
+Push notifications are delivered only to group members who have the B1.church PWA installed and have not disabled push notifications. Members without a registered push device or with push turned off are counted as skipped, and the send summary shows how many were reached versus skipped.
+:::
+
+:::tip
+After sending, the dialog shows how many notifications were queued successfully. If most members are showing as skipped, remind them to visit their B1.church site, install it as a home-screen app, and allow notifications when prompted.
+:::
+
 ## Removing Members
 
 To remove someone from a group, locate their name in the member list and click the **remove** button next to their entry.

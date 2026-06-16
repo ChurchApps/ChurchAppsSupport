@@ -1,74 +1,90 @@
 ---
-title: "GestiÛn de P·ginas"
+title: "Gestionar P√°ginas"
 ---
 
-# GestiÛn de P·ginas
+# Gestionar P√°ginas
 
 <div class="article-intro">
 
-La vista de P·ginas del Sitio Web es su centro central para crear, editar y organizar todas las p·ginas en su sitio web de iglesia. Puede gestionar tanto el contenido de su p·gina como la navegaciÛn de su sitio desde esta ˙nica pantalla.
+La vista P√°ginas del Sitio Web es su centro central para crear, editar y organizar todas las p√°ginas de su sitio web de la iglesia. Puede administrar tanto el contenido de su p√°gina como la navegaci√≥n de su sitio desde una sola pantalla.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- Complete la [ConfiguraciÛn Inicial](initial-setup) para configurar su dominio y configuraciÛn b·sica del sitio
-- Tenga su contenido e im·genes listos. Use el [Administrador de Archivos](files) para cargar activos de medios primero.
+- Complete la [Configuraci√≥n Inicial](initial-setup) para configurar su dominio y configuraci√≥n b√°sica del sitio
+- Tenga su contenido e im√°genes listos. Use el administrador de [Archivos](files) para cargar primero activos multimedia.
 
 </div>
 
-## ComprensiÛn de Tipos de P·gina
+## Entender Tipos de P√°gina
 
-La tabla **P·ginas** lista cada p·gina en su sitio junto con su estado:
+La tabla **P√°ginas** enumera todas las p√°ginas de su sitio junto con su estado:
 
-- **Generada** -- P·ginas que fueron creadas autom·ticamente por el sistema basadas en los datos de su iglesia (por ejemplo, una p·gina de Grupos o p·gina de Sermones). Estas p·ginas se actualizan a sÌ mismas a medida que sus datos cambian.
-- **Personalizada** -- P·ginas que usted creÛ con su propio contenido y diseÒo.
+- **Generada** -- P√°ginas que fueron creadas autom√°ticamente por el sistema basadas en los datos de su iglesia (por ejemplo, una p√°gina de Grupos o una p√°gina de Sermones). Estas p√°ginas se actualizan autom√°ticamente a medida que sus datos cambian.
+- **Personalizada** -- P√°ginas que usted cre√≥ con su propio contenido y dise√±o.
 
-Puede convertir cualquier p·gina generada autom·ticamente en una p·gina personalizada si desea control total sobre su contenido y diseÒo.
+Puede convertir cualquier p√°gina generada autom√°ticamente en una p√°gina personalizada si desea control total sobre su contenido y dise√±o.
 
-## AdiciÛn y EdiciÛn de P·ginas
+## Agregar y Editar P√°ginas
 
-1. Haga clic en el botÛn **Agregar P·gina** en la esquina superior derecha de la tabla de P·ginas.
-2. Elija un tipo de p·gina (en blanco o una plantilla) y dÈ un nombre.
-3. Haga clic en **Editar** junto a cualquier p·gina para abrir el constructor de p·ginas, donde puede agregar secciones, texto, im·genes y otros elementos.
-4. Haga clic en **ConfiguraciÛn de P·gina** para actualizar el tÌtulo de la p·gina, ruta de URL y otros metadatos.
-5. Use el botÛn **Vista Previa** para abrir su p·gina en una nueva ventana y ver exactamente cÛmo se ver· para los visitantes.
+1. Haga clic en el bot√≥n **Agregar P√°gina** en la esquina superior derecha de la tabla P√°ginas.
+2. Elija un tipo de p√°gina (en blanco o una plantilla) y d√© un nombre.
+3. Haga clic en **Editar** junto a cualquier p√°gina para abrir el [editor de p√°ginas](page-editor), donde puede agregar secciones, texto, im√°genes y otros elementos.
+4. Haga clic en **Configuraci√≥n de P√°gina** para actualizar el t√≠tulo de la p√°gina, la ruta de URL y otros metadatos.
+5. Use el bot√≥n **Vista Previa** para abrir su p√°gina en una nueva ventana y ver exactamente c√≥mo se ver√° a los visitantes.
 
 :::tip
-Para su p·gina de inicio, establezca la ruta de URL en simplemente `/`. Para todas las otras p·ginas, use una ruta descriptiva como `/about` o `/contact`.
+Para su p√°gina de inicio, establezca la ruta de URL en solo `/`. Para todas las dem√°s p√°ginas, use una ruta descriptiva como `/about` o `/contact`.
 :::
 
-## GestiÛn de NavegaciÛn
+## Gestionar Navegaci√≥n
 
-La barra lateral izquierda de la vista de P·ginas del Sitio Web muestra sus enlaces de navegaciÛn. Estos enlaces controlan el men˙ que los visitantes ven en su sitio web.
+La barra lateral izquierda de la vista P√°ginas del Sitio Web muestra sus enlaces de navegaci√≥n. Estos enlaces controlan el men√∫ que ven los visitantes en su sitio web.
 
-1. Haga clic en **Agregar** para crear un nuevo enlace de navegaciÛn. Puede seÒalarlo a cualquier p·gina en su sitio o a una URL externa.
-2. Para reordenar enlaces, arrastre y suÈltelos en el orden que desea. TambiÈn puede anidar enlaces bajo un elemento padre para crear men˙s desplegables.
-3. Haga clic en el **icono de EdiciÛn** junto a cualquier enlace para cambiar su etiqueta, URL o posiciÛn.
-4. Para eliminar un enlace de la navegaciÛn, haga clic en el **icono de EliminaciÛn**.
+1. Haga clic en **Agregar** para crear un nuevo enlace de navegaci√≥n. Puede apuntarlo a cualquier p√°gina de su sitio o a una URL externa.
+2. Para reordenar enlaces, arrastre y suelte los para ordenarlos como desee. Tambi√©n puede anidar enlaces bajo un elemento principal para crear men√∫s desplegables.
+3. Haga clic en el icono **Editar** junto a cualquier enlace para cambiar su etiqueta, URL o posici√≥n.
+4. Para eliminar un enlace de la navegaci√≥n, haga clic en el icono **Eliminar**.
 
 :::info
-Eliminar un enlace de navegaciÛn no elimina la p·gina en sÌ. La p·gina a˙n existe y se puede acceder directamente por su URL -- simplemente no aparecer· en el men˙.
+Eliminar un enlace de navegaci√≥n no elimina la p√°gina misma. La p√°gina a√∫n existe y se puede acceder directamente por su URL, simplemente no aparecer√° en el men√∫.
 :::
 
-## Consejos para Organizar Su Sitio
+## Consejos para Organizar su Sitio
 
-- Mantenga su navegaciÛn de nivel superior a cinco o seis elementos para que los visitantes encuentren cosas r·pidamente.
-- Use enlaces anidados para sub-p·ginas relacionadas (por ejemplo, un desplegable "Acerca de" con "Nuestro Equipo", "Creencias" e "Historia").
-- Revise su navegaciÛn en dispositivos mÛviles haciendo clic en **Vista Previa MÛvil** para asegurarse de que funcione bien en pantallas m·s pequeÒas.
-- DÈ a las p·ginas nombres claros y descriptivos que ayuden a los visitantes a entender quÈ encontrar·n.
+- Mantenga su navegaci√≥n de nivel superior con cinco o seis elementos para que los visitantes encuentren las cosas r√°pidamente.
+- Use enlaces anidados para subp√°ginas relacionadas (por ejemplo, un men√∫ desplegable "Acerca de" con "Nuestro Equipo", "Creencias" e "Historial").
+- Revise su navegaci√≥n en dispositivo m√≥vil haciendo clic en **Vista Previa M√≥vil** para asegurarse de que funcione bien en pantallas m√°s peque√±as.
+- D√© a las p√°ginas nombres claros y descriptivos que ayuden a los visitantes a comprender qu√© encontrar√°n.
 
 :::tip
-Puede agregar [formularios](../forms/creating-forms.md) a sus p·ginas para recopilar registros, solicitudes de oraciÛn u otra informaciÛn de los visitantes.
+Puede agregar [formularios](../forms/creating-forms.md) a sus p√°ginas para recopilar registros, solicitudes de oraci√≥n u otra informaci√≥n de los visitantes.
 :::
 
-## Caja de Luz de Imagen
+## Comenzar desde una Plantilla de Sitio
 
-Cuando los visitantes hacen clic en una imagen en su sitio web, se abre en una superposiciÛn de caja de luz en pantalla completa. Esto permite a las personas ver fotos en un tamaÒo m·s grande sin dejar la p·gina. No se requiere configuraciÛn ó la caja de luz se habilita autom·ticamente para im·genes en su contenido de p·gina.
+Si est√° construyendo su sitio desde cero, puede iniciarlo usando una **Plantilla de Sitio** en lugar de crear p√°ginas una a una. Una plantilla de sitio crea un conjunto de p√°ginas pregeneradas (inicio, acerca de, conectar, donar y otros) con contenido de marcador de posici√≥n y enlaces de navegaci√≥n ya conectados.
 
-## PrÛximos Pasos
+1. En la pantalla P√°ginas, haga clic en el bot√≥n **Plantillas de Sitio** (junto al bot√≥n **Agregar P√°gina**).
+2. Explore las plantillas disponibles y haga clic en una para obtener una vista previa de su estructura de p√°gina.
+3. Cuando encuentre una que le guste, haga clic en **Aplicar Plantilla**.
+4. Las p√°ginas que a√∫n no existen se crean y se agregan a su navegaci√≥n. Las p√°ginas existentes se dejan como est√°n.
 
-- [ConfiguraciÛn Inicial](initial-setup) -- Instrucciones de configuraciÛn por primera vez
-- [Apariencia](appearance) -- Personalizar el tema visual de su sitio
-- [Archivos](files) -- Cargar y gestionar activos de medios para sus p·ginas
+Despu√©s de aplicar una plantilla, abra cada p√°gina en el [editor de p√°ginas](page-editor) para reemplazar el texto e im√°genes de marcador de posici√≥n con el contenido real de su iglesia.
+
+:::info
+Las plantillas de sitio crean estructura de p√°gina y navegaci√≥n. No anulan el esquema de colores o fuentes de su sitio: esos est√°n controlados por [Apariencia](appearance).
+:::
+
+## Galer√≠a de Im√°genes
+
+Cuando los visitantes hacen clic en una imagen en su sitio web, se abre en una superposici√≥n de galer√≠a a pantalla completa. Esto permite a las personas ver fotos en un tama√±o mayor sin salir de la p√°gina. No se requiere ninguna configuraci√≥n: la galer√≠a est√° habilitada autom√°ticamente para im√°genes en el contenido de su p√°gina.
+
+## Pr√≥ximos Pasos
+
+- [Configuraci√≥n Inicial](initial-setup) -- Instrucciones de configuraci√≥n de primera vez
+- [Usar el Editor de P√°ginas](page-editor) -- Aprenda c√≥mo construir y dise√±ar contenido de p√°gina
+- [Apariencia](appearance) -- Personalice el tema visual de su sitio
+- [Archivos](files) -- Cargue y administre activos multimedia para sus p√°ginas

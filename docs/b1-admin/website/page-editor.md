@@ -108,9 +108,27 @@ You can also restore the page to an earlier snapshot. Click **History** in the t
 Restoring a snapshot replaces your current page content with the snapshot version. This cannot be undone with the standard undo button. Save a snapshot of your current state before restoring an old one if you want to keep the option to return.
 :::
 
-## Saving Your Work
+## Saving and Publishing
 
-Changes are saved automatically as you work. A status indicator in the toolbar shows whether your changes have been saved. You can also click **Save** at any time to force a save.
+Changes are saved automatically as you work. A status indicator in the toolbar shows whether your changes have been saved.
+
+### Draft and published state
+
+Pages can have a **published** state, which controls when visitors see your changes. The toolbar displays a status chip showing the current state:
+
+- **Live on Save** -- The page does not use a publish workflow. Every saved change goes live immediately. This is the default for new pages.
+- **Unpublished Changes** -- The page has been published before, but you have made changes since the last publish. Visitors still see the previously published version.
+- **Published** -- The page is live and your saved content matches what visitors see.
+
+To publish your changes, click the **Publish** button in the toolbar. The page becomes live immediately.
+
+To revert to the last published version without affecting what visitors see, open the overflow menu (⋮) and click **Discard Changes**.
+
+To take a page offline entirely, open the overflow menu and click **Unpublish**. Visitors will no longer see that page until you publish it again.
+
+:::tip
+Use the draft/publish workflow when you want to prepare a page -- for example, for an upcoming event -- and only make it live at the right moment. Build and preview the page, then click Publish when you are ready.
+:::
 
 ## Related Articles
 
