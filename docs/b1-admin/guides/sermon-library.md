@@ -80,10 +80,10 @@ Follow the [Managing Pages](../website/managing-pages.md) guide to:
 Members can access sermons and live services from any device.
 
 1. Members can watch sermons in the [B1 Mobile app](../../b1-mobile/content/sermons.md) and on [B1.church](../../b1-church/content/sermons.md)
-2. Live streaming with chat and prayer requests works on both platforms
+2. Live streaming with chat works on both platforms
 
 :::info
-The live chat and prayer request features let your online congregation participate in real time, just like being in the room.
+The live chat feature lets your online congregation participate in real time, just like being in the room.
 :::
 
 ## You're Done!

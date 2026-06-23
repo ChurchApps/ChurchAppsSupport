@@ -31,7 +31,7 @@ New to B1 Admin? Start with the [Introduction](./introduction) for a video walkt
 - **[Reports](./reports/)** - View birthday, attendance, and donation reports
 - **[Website](./website/)** - Build and manage your church website with custom navigation styles
 - **[Sermons](./sermons/)** - Manage your sermon library and live streaming
-- **[Calendars](./calendars/)** - Create curated calendars by connecting group events
+- **[Calendars](./calendars/)** - Create curated calendars, manage room/resource bookings, and view availability
 - **[Settings](./settings/)** - Configure church info, roles, and permissions
 
 :::info

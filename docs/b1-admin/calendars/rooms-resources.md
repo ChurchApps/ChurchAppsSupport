@@ -76,6 +76,7 @@ When creating a new event, staff can choose an existing template to pre-fill the
 
 ## Related Articles
 
+- [Availability Calendar](availability) — view all bookings at a glance and book rooms or resources directly
 - [Calendar Approvals](approvals) — approve or reject room and resource booking requests
 - [Creating Calendars](creating-calendars) — set up event calendars
 - [Creating Groups](../groups/creating-groups) — set up groups that can book rooms and resources

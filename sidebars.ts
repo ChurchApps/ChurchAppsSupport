@@ -145,6 +145,7 @@ const sidebars: SidebarsConfig = {
             'b1-admin/calendars/curated-calendar',
             'b1-admin/calendars/rooms-resources',
             'b1-admin/calendars/approvals',
+            'b1-admin/calendars/availability',
           ],
         },
         {

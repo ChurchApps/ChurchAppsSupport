@@ -12,7 +12,7 @@ Der Kalenderbereich in B1 Admin ermöglicht es Ihnen, kuratierte Kalender für I
 
 ## Ihre Kalender anzeigen
 
-1. Navigieren Sie in B1 Admin zu **Website** und dann zum Bereich **Calendars**.
+1. Navigieren Sie in B1 Admin zu **Calendars** im Hauptmenü.
 2. Die Kalenderseite listet alle Ihre Kalender mit ihrem Namen und Status auf.
 3. Jeder Kalender zeigt auch die zugeordneten Gruppen an.
 

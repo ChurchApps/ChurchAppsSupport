@@ -70,7 +70,7 @@ Drag sections or elements using the handle icon (six dots) on the left side of e
 
 Click any section to open its style panel. You can set:
 
-- **Background** -- Solid color, gradient, or image
+- **Background** -- Solid color, gradient, or image. When using an image background, a **Focal Point** picker lets you click to set which part of the image stays centered as the section scales, and an **Overlay** color option lets you add a semi-transparent tint over the image to improve text legibility.
 - **Padding** -- Top and bottom spacing inside the section
 - **Width** -- Full-width or centered/contained
 

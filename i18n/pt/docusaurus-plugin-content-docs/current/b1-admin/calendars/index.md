@@ -12,7 +12,7 @@ A seção Calendários no B1 Admin permite criar calendários curados para sua i
 
 ## Visualizando Seus Calendários
 
-1. No B1 Admin, navegue até **Website** e depois até a seção **Calendars**.
+1. No B1 Admin, navegue até **Calendars** no menu principal.
 2. A página Calendários lista todos os seus calendários com seu nome e status.
 3. Cada calendário também mostra os grupos associados a ele.
 

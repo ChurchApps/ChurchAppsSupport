@@ -18,7 +18,7 @@ Browse and watch recorded sermons from your church. Your church's sermon library
 
 ### Live Streaming
 
-Watch your church's live broadcast directly in B1.church. When a service is live, you can join the stream and interact with other viewers through chat and prayer features.
+Watch your church's live broadcast directly in B1.church. When a service is live, you can join the stream and interact with other viewers through chat.
 
 ### Bible
 

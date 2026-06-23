@@ -45,6 +45,7 @@ If you are a leader of the group, you have additional editing capabilities:
 
 - **Edit group details** -- Update the group's name, description, meeting time, and other settings directly from the **Details** tab.
 - **Manage members** -- Add new members to the group or remove existing ones from the **Members** tab.
+- **Create and edit events** -- Add events to the group calendar. When creating an event, you can reserve rooms and resources alongside it — select from available rooms and resources, set optional setup and teardown times, and the booking request is automatically submitted for approval.
 - **Manage resources** -- Upload files (up to 100 MB of storage), add links, or delete existing resources.
 - **Leader resources** -- Access a separate **Resources (Leaders)** tab with files and links visible only to group leaders.
 - **Track attendance** -- Record attendance for group sessions from the **Attendance** tab.
