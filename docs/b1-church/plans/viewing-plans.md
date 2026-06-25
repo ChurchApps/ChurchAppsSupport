@@ -34,6 +34,10 @@ Your plans are listed in the left panel under **My Plans**. Each entry shows:
 
 At the top of the list, you will also see a **Blockout Dates** option. Click it to manage dates when you are unavailable for serving. You can add, edit, and remove blockout date ranges so your team leaders know when to schedule around you.
 
+:::info
+Your church may send **reminders** before the services you are scheduled for, by email and as an app notification. If you have not responded yet, you can **Accept** or **Decline** right from the reminder email — no sign-in needed.
+:::
+
 ## Viewing Plan Details
 
 Click on any plan in the list to open its details in the right panel. The detail view includes:

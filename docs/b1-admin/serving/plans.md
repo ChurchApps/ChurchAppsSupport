@@ -56,6 +56,29 @@ When you open a plan, you will see two tabs:
 Set up your teams in the ministry settings before creating plans. This way, you will have a ready pool of volunteers to assign from.
 :::
 
+## Volunteer Reminders
+
+B1 can automatically remind volunteers ahead of the services they are scheduled for, so you do not have to chase down your team each week. Reminders go to **everyone scheduled** — both those who have confirmed and those who have not yet responded — by email and as an in-app/push notification. Each reminder includes the volunteer's position(s), the service date, the plan notes, and your custom message.
+
+Reminder timing and content are set per **plan type**, so each kind of service can keep its own schedule.
+
+1. From the **Serving** area, select the ministry that contains the plan type.
+2. Click the **edit (pencil) icon** next to the plan type.
+3. In the **Reminders** section, set:
+   - **Reminder days before service** — a comma-separated list of how many days ahead to send, for example `7,1,0`. Use `0` to send a reminder on the day of the service. Leave this field blank to turn reminders off for this plan type.
+   - **Custom reminder message** *(optional)* — extra text added to the reminder, such as "Arrive 30 minutes early to rehearse."
+4. Save the plan type.
+
+New plan types remind volunteers **2 days before** each service by default until you change this.
+
+:::tip
+Volunteers who have not yet confirmed get **Accept** and **Decline** buttons right inside the reminder email, so they can respond without signing in.
+:::
+
+:::info
+Each reminder is sent once. Plans that are still penciled in (not yet sent to the team) do not trigger reminders.
+:::
+
 ## Associating Groups with a Plan Type
 
 Below the plan list on the plan type page, the **Groups** section lets you decide which groups can see the plans for this plan type from their member portal. This is a quick way to surface upcoming services to the right teams without giving them admin access.
