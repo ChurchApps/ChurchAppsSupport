@@ -1,40 +1,40 @@
 ﻿---
-title: "सेवा"
+title: "Serving"
 ---
 
-# सेवा
+# Serving
 
 <div class="article-intro">
 
-सेवा खंड स्वयंसेवकों को समन्वित करने और चर्च सेवाओं की योजना बनाने के लिए आपका केंद्र है। चाहे आप रविवार की पूजा, मध्य सप्ताह की सभाओं या विशेष कार्यक्रमों का आयोजन कर रहे हों, यह वह जगह है जहां आप सब कुछ एक साथ लाते हैं ताकि आपकी टीमें बिल्कुल जान सकें कि कौन सेवा कर रहा है और कब।
+Serving सेक्शन स्वयंसेवकों को coordinate करने और church services को plan करने के लिए आपका hub है। चाहे आप Sunday worship, midweek gatherings, या special events को organize कर रहे हों, यह वह जगह है जहां आप सब कुछ एक साथ लाते हैं ताकि आपकी teams को exactly पता हो कि कौन serving कर रहा है और कब।
 
 </div>
 
-## सेवा पृष्ठ कैसे काम करता है
+## Serving Page कैसे काम करता है
 
-जब आप **सेवा** पृष्ठ खोलते हैं, तो आप देखेंगे आपकी मंत्रियों को शीर्ष पर टैब के रूप में प्रदर्शित किया गया है। प्रत्येक मंत्री के पास अपनी योजना प्रकार और टीमें होती हैं, ताकि आप कई मंत्रियों को स्वतंत्र रूप से प्रबंधित कर सकें। उदाहरण के लिए, आपके पास पूजा, बाल मंत्री और आतिथ्य के लिए अलग-अलग टैब हो सकते हैं।
+जब आप **Serving** पृष्ठ खोलते हैं, तो आप देखेंगे कि आपकी ministries को ऊपर tabs के रूप में display किया गया है। प्रत्येक ministry के पास अपनी plan types और teams होती हैं, इसलिए आप multiple ministries को independently manage कर सकते हैं। उदाहरण के लिए, आपके पास Worship, Kids Ministry, और Hospitality के लिए अलग tabs हो सकते हैं।
 
-गैर-व्यवस्थापक कर्मचारी जो एक मंत्री के सदस्य हैं वे भी सेवा पृष्ठ तक पहुंच सकते हैं। वे केवल उन मंत्रियों को देखेंगे जिनसे वे संबंधित हैं और पूर्ण व्यवस्थापक अनुमतियों की आवश्यकता के बिना अपनी मंत्री के लिए योजनाएं, असाइनमेंट, योजना प्रकार और सेवा क्रम बना सकते हैं और संपादित कर सकते हैं।
+Non-admin staff जो किसी ministry के member हैं, वे भी Serving पृष्ठ को access कर सकते हैं। वे केवल उन ministries को देखेंगे जिनसे वे संबंधित हैं और full admin permissions की आवश्यकता के बिना अपनी ministry के लिए plans, assignments, plan types, और service order को create और edit कर सकते हैं।
 
 :::tip
-यदि आप व्यवस्थापक हैं, तो **सब दिखाएं** को टॉगल करें एक बार में सभी मंत्रियों को देखने के लिए। यह तब सहायक है जब आपको कई टीमों में असाइनमेंट की जांच करने की आवश्यकता हो।
+यदि आप एक admin हैं, तो **Show All** को toggle करके एक साथ सभी ministries को देखें। यह तब helpful है जब आपको multiple teams में assignments को check करने की आवश्यकता हो।
 :::
 
-## उप-खंड
+## Sub-Sections
 
-सेवा खंड में ये मुख्य क्षेत्र शामिल हैं:
+Serving सेक्शन में ये key areas शामिल हैं:
 
-- **[योजनाएं](./plans.md)** -- विशिष्ट तारीखों के लिए सेवा योजनाएं बनाएं और टीमों को स्वयंसेवकों को असाइन करें। योजनाएं आपको यह व्यवस्थित करने में मदद करती हैं कि कौन कब सेवा कर रहा है, ताकि सभी पहले से अपनी भूमिका जान सकें। कई हफ्तों में एक ग्रिड में सभी आयामों को देखने के लिए **[योजनाएं अवलोकन](./plans-overview.md)** का उपयोग करें।
-- **[गीत](./songs.md)** -- गीतों, व्यवस्थाओं और बाहरी लिंक के साथ अपनी पूजा गीत लाइब्रेरी प्रबंधित करें। आपकी पूजा टीम आगामी सेवाओं की तैयारी के लिए इसका उपयोग कर सकती है।
-- **[कार्य](./tasks.md)** -- अपनी टीम के सदस्यों के लिए कार्य असाइन करें और ट्रैक करें। [स्वचालन](./automations.md) सेटअप करें आवर्ती कार्यों को स्वचालित रूप से बनाने के लिए, ताकि कुछ भी न छूटे।
-- **[वर्कफ़्लोज़](./workflows.md)** -- लोगों को एक दृश्य कानबान बोर्ड पर चरणों की एक श्रृंखला के माध्यम से आगे बढ़ाएं, जैसे नए-आगंतुक अनुवर्ती या सदस्यता प्रक्रिया। चरण स्वचालित कार्यों को चला सकते हैं (एक ईमेल भेजें, कुछ दिन प्रतीक्षा करें, एक समूह में जोड़ें), और कार्ड परिणाम बटन, सशर्त रूटिंग या ईवेंट और शेड्यूल ट्रिगर द्वारा आगे बढ़ते हैं -- अंतर्निहित रिपोर्ट के साथ।
+- **[Plans](./plans.md)** -- Specific dates के लिए service plans create करें और volunteers को teams में assign करें। Plans आपको organize करने में help करते हैं कि कौन कब serving कर रहा है, ताकि हर कोई अपनी role को ahead of time जान सके। अपनी team को हर service से पहले notify करने के लिए automatic [volunteer reminders](./plans.md#volunteer-reminders) setup करें, और एक grid में multiple weeks में सभी upcoming assignments को देखने के लिए **[Plans Overview](./plans-overview.md)** का use करें।
+- **[Songs](./songs.md)** -- Lyrics, arrangements, और external links के साथ अपनी worship song library को manage करें। आपकी worship team इसका use upcoming services के लिए prepare करने के लिए कर सकती है।
+- **[Tasks](./tasks.md)** -- अपनी team members के लिए tasks को assign और track करें। Recurring tasks को automatically create करने के लिए [Automations](./automations.md) को setup करें, ताकि कुछ भी न छूटे।
+- **[Workflows](./workflows.md)** -- लोगों को एक visual Kanban board पर एक series of steps के माध्यम से move करें, जैसे new-visitor follow-up या एक membership process। Steps automated actions run कर सकते हैं (एक email भेजें, कुछ दिन wait करें, एक group में add करें), और cards outcome buttons, conditional routing, या event और schedule triggers द्वारा advance होते हैं - built-in reports के साथ।
 
-## शुरुआत कर रहे हैं
+## शुरुआत करना
 
-1. B1 Admin में मुख्य मेनू से **सेवा** पर नेविगेट करें।
-2. मंत्री जोड़ने के लिए बटन पर क्लिक करें एक नई मंत्री बनाने के लिए या "सब दिखाएं" को टॉगल करें मौजूदा मंत्री टैब को देखने के लिए। एक **मंत्री टैब** चुनें इसके योजना प्रकारों और टीमों को देखने के लिए।
-3. "योजना प्रकार बनाएं" चुनें या सेवा योजनाएं बनाना शुरू करने के लिए एक मौजूदा योजना प्रकार चुनें, या [गीत](./songs.md) और [कार्य](./tasks.md) उप-खंडों की खोज करें।
+1. B1 Admin में main menu से **Serving** पर navigate करें।
+2. एक नई ministry create करने के लिए add ministry button पर click करें या existing ministry tabs को देखने के लिए "show all" को toggle करें। एक **ministry tab** को select करें इसकी plan types और teams को view करने के लिए।
+3. "create a plan type" को choose करें या service plans create करना शुरू करने के लिए एक existing plan type को choose करें, या [Songs](./songs.md) और [Tasks](./tasks.md) sub-sections को explore करें।
 
 :::info
-योजनाएं बनाने से पहले, आपको सेवा क्षेत्र में मंत्रियां बनानी होंगी और प्रत्येक मंत्री के भीतर टीमें बनानी होंगी।
+आप plans create कर सकने से पहले, आपको Serving area में अपनी Ministries को create करना होगा और प्रत्येक Ministry के भीतर Teams को create करना होगा।
 :::

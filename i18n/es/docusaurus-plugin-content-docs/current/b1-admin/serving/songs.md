@@ -6,62 +6,68 @@ title: "Canciones"
 
 <div class="article-intro">
 
-La página de Canciones gestiona su biblioteca de canciones de adoración. Mantenga todos los detalles de sus canciones, letras y arreglos en un solo lugar para que su equipo de adoración pueda prepararse fácilmente para los próximos servicios y mantener un repertorio consistente.
+La página de Canciones gestiona tu biblioteca de canciones de adoración. Mantén todos los detalles, letras y arreglos de canciones en un solo lugar para que tu equipo de adoración pueda prepararse fácilmente para los próximos servicios y mantener un repertorio consistente.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- Navegue a la sección **Servicio Voluntario** en B1 Admin para acceder a la página de Canciones
-- Opcionalmente, tenga sus [planes de servicio](./plans.md) configurados para poder vincular canciones directamente al [orden del servicio](./service-order.md)
+- Navega a la sección de **Serving** en B1 Admin para acceder a la página de Canciones
+- Opcionalmente, ten tus [planes de servicio](./plans.md) configurados para que puedas vincular canciones directamente al [orden del servicio](./service-order.md)
 
 </div>
 
-## Explorar su Biblioteca de Canciones
+## Explorar tu Biblioteca de Canciones
 
-Cuando abra la página de **Canciones**, sus canciones se mostrarán como tarjetas. Cada tarjeta muestra la imagen en miniatura, el título, el artista y la duración de la canción. Desplácese por la biblioteca o use la búsqueda para encontrar lo que necesita.
+Cuando abres la página de **Songs**, tus canciones se muestran como tarjetas. Cada tarjeta muestra la imagen de miniatura de la canción, título, artista y duración. Desplázate por la biblioteca o usa la búsqueda para encontrar lo que necesitas.
 
 ## Buscar Canciones
 
-1. Haga clic en el botón **Buscar** en la página de Canciones.
-2. Escriba el **título** de una canción o el nombre del **artista**.
-3. Los resultados se filtrarán mientras escribe, mostrando las canciones coincidentes de su biblioteca.
+1. Haz clic en el botón **Search** en la página de Canciones.
+2. Escribe un **título** de canción o nombre de **artista**.
+3. Los resultados se filtrarán conforme escribes, mostrando canciones coincidentes de tu biblioteca.
 
 ## Agregar una Canción
 
-1. Haga clic en **Agregar Canción** en la página de Canciones.
-2. Busque en la base de datos externa de canciones por título o artista.
-3. Seleccione la canción que desea agregar.
-4. La canción se agregará a su biblioteca con sus detalles básicos completados automáticamente.
+1. Haz clic en **Add Song** en la página de Canciones.
+2. Busca la base de datos de canciones externa por título o artista.
+3. Selecciona la canción que deseas agregar.
+4. La canción será agregada a tu biblioteca con sus detalles básicos precargados.
 
 :::tip
-Después de agregar una canción, haga clic en ella para revisar y actualizar sus detalles, agregar arreglos o adjuntar enlaces externos como videos de YouTube o tablaturas de acordes.
+Después de agregar una canción, haz clic en ella para revisar y actualizar sus detalles, agregar arreglos, o adjuntar enlaces externos como videos de YouTube o cartas de acordes.
 :::
 
-## Ver y Editar una Canción
+## Visualizar y Editar una Canción
 
-Haga clic en cualquier tarjeta de canción para abrir su página de detalle. Desde aquí puede:
+Haz clic en cualquier tarjeta de canción para abrir su página de detalle. Desde aquí puedes:
 
-- **Editar detalles de la canción** -- Actualice el título, artista, duración y otros metadatos.
-- **Gestionar arreglos** -- Cada canción puede tener múltiples arreglos (por ejemplo, diferentes tonalidades o versiones). Agregue, edite o elimine arreglos según sea necesario.
-- **Agregar letras** -- Ingrese o actualice las letras de cada arreglo.
-- **Establecer la tonalidad** -- Especifique la tonalidad musical de cada arreglo para que su equipo sepa cómo prepararse.
-- **Agregar enlaces externos** -- Adjunte enlaces a recursos como videos de YouTube, tablaturas de acordes o partituras alojadas en otros sitios.
+- **Edit song details** -- Actualiza el título, artista, duración y otros metadatos.
+- **Manage arrangements** -- Cada canción puede tener múltiples arreglos (por ejemplo, diferentes tonalidades o versiones). Agrega, edita o elimina arreglos según sea necesario.
+- **Add lyrics** -- Ingresa o actualiza las letras de cada arreglo.
+- **Set the key** -- Especifica la tonalidad musical para cada arreglo para que tu equipo sepa cómo prepararse.
+- **Add external links** -- Adjunta enlaces a recursos como videos de YouTube, cartas de acordes o partituras alojadas en otro lugar.
 
 ## Arreglos
 
-Una sola canción puede tener múltiples arreglos para adaptarse a diferentes servicios o configuraciones de equipo. Cada arreglo incluye:
+Un arreglo representa una versión distinta de una canción — por ejemplo, una versión moderna más rápida versus una versión acústica más lenta, o la misma canción en una tonalidad diferente para un equipo diferente. Cada arreglo de la misma canción comparte el título de la canción y el artista pero tiene su propia configuración independiente:
 
-- **Letras** para visualización o proyección
-- Designación de **tonalidad**
-- **Enlaces externos** a recursos adicionales
+- **Key** — la tonalidad musical en la que se interpreta el arreglo
+- **BPM** — tempo en pulsaciones por minuto
+- **Length** — duración en segundos
+- **Meter** — firma de tiempo (p. ej., 4/4, 3/4, 6/8)
+- **Sequence** — la estructura de acordes/secciones (p. ej., Intro → Verso → Coro → Puente)
+- **Lyrics** — para visualización o proyección
+- **External links** — cartas de acordes, grabaciones de YouTube, partituras u otros recursos
+
+Cuando agregas una canción a un [Service Order](./service-order.md), puedes elegir qué arreglo usar para ese servicio específico, para que tu equipo siempre ensaye e interprete la versión correcta.
 
 :::info
-Las canciones de su biblioteca se pueden agregar directamente a un [Orden del Servicio](./service-order.md) dentro de un plan, vinculando los detalles y arreglos de la canción a ese servicio específico.
+Las canciones de tu biblioteca pueden ser agregadas directamente a un [Service Order](./service-order.md) dentro de un plan, vinculando los detalles de la canción y el arreglo elegido a ese servicio específico.
 :::
 
 ## Próximos Pasos
 
-- Agregue canciones a su [Orden del Servicio](./service-order.md) al construir un [plan de servicio](./plans.md)
-- Coordine con su equipo de adoración usando [Tareas](./tasks.md) para la preparación y ensayo de canciones
+- Agrega canciones a tu [Service Order](./service-order.md) cuando construyas un [plan de servicio](./plans.md)
+- Coordina con tu equipo de adoración usando [Tasks](./tasks.md) para preparación e práctica de canciones

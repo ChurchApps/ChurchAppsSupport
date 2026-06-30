@@ -6,60 +6,71 @@ title: "Panoramica dei Piani"
 
 <div class="article-intro">
 
-La Panoramica dei Piani ti dà una visione d'insieme di tutti i tuoi incarichi di volontari in più date di servizio contemporaneamente. Invece di aprire ogni piano singolarmente, puoi vedere chi sta servendo in ogni posizione nelle prossime settimane in una singola griglia — e individuare rapidamente eventuali lacune che ancora devono essere riempite.
+La Panoramica dei Piani ti offre una visione d'insieme di tutti gli incarichi dei volontari su più date di servizio contemporaneamente. Invece di aprire ogni piano singolarmente, puoi vedere chi sta servendo in ogni posizione su tutte le settimane imminenti in un'unica griglia e individuare rapidamente eventuali lacune che devono ancora essere colmate.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Crea almeno un Ministero e un Tipo di Piano nell'area Serving
+- Crea almeno un Ministero e un Tipo di Piano nell'area di Servizio
 - Crea [piani di servizio](./plans.md) con date e incarichi di volontari
-- Assicurati che i tuoi volontari siano stati aggiunti alla tua [directory delle persone](../people/adding-people.md)
+- Assicurati che i tuoi volontari siano stati aggiunti alla tua [directory di persone](../people/adding-people.md)
 
 </div>
 
 ## Accesso alla Panoramica
 
-1. Vai a **Serving** dal menu principale in B1 Admin.
+1. Naviga a **Serving** (Servizio) dal menu principale in B1 Admin.
 2. Seleziona una **scheda del ministero** nella parte superiore della pagina.
 3. Fai clic su un **tipo di piano** per aprire il suo elenco di piani.
-4. Fai clic sul pulsante **Panoramica** nella parte superiore della pagina.
+4. Fai clic sul pulsante **Overview** (Panoramica) vicino alla parte superiore della pagina.
 
-## Lettura della Griglia di Panoramica
+## Lettura della Griglia Panoramica
 
 La panoramica visualizza una griglia dove:
 
-- **Le righe** rappresentano ogni posizione (es. "Musica: Chitarra", "Tech: Proiezione") raggruppate per categoria
-- **Le colonne** rappresentano le prossime date di servizio (es. "14 apr", "21 apr")
-- **Le celle** mostrano il nome del volontario assegnato a quella posizione in quella data
+- **Rows** (Righe) rappresentano ogni posizione (ad es., "Music: Guitar" Musica: Chitarra, "Tech: Projection" Tech: Proiezione) raggruppate per categoria
+- **Columns** (Colonne) rappresentano le date di servizio imminenti (ad es., "Apr 14" 14 Apr, "Apr 21" 21 Apr)
+- **Cells** (Celle) mostrano il nome del volontario assegnato a quella posizione in quella data
 
-Le posizioni evidenziate in **rosso** sono vuote — nessun volontario è stato assegnato ancora. Questo rende facile vedere le lacune di personale a colpo d'occhio senza aprire ogni piano singolarmente.
+Le celle evidenziate in **rosso** sono vuote: nessun volontario è stato ancora assegnato. Questo rende facile vedere le lacune di personale a colpo d'occhio senza aprire ogni singolo piano.
 
 :::tip
-I nomi dei volontari sono mostrati in un formato abbreviato (nome e iniziale del cognome, es. "Giovanni M.") per mantenere la griglia compatta quando hai molte posizioni.
+I nomi dei volontari vengono mostrati in formato abbreviato (nome e cognome iniziale, ad es., "John D.") per mantenere la griglia compatta quando hai molte posizioni.
 :::
 
-## Filtraggio della Panoramica
+## Assegnazione di Volontari Direttamente dalla Panoramica
 
-Puoi regolare cosa mostra la panoramica usando i controlli di filtro nella parte superiore:
+Non hai bisogno di aprire singoli piani per riempire gli spazi vuoti. Fai clic su qualsiasi cella nella griglia per aprire un pannello di assegnazione per quella posizione e data. Da lì puoi:
 
-- **Data di Inizio / Data di Fine** — Per impostazione predefinita la panoramica mostra 12 settimane nel futuro. Inserisci date personalizzate per espandere o limitare l'intervallo.
-- **Ministero** — Passa a un ministero diverso senza lasciare la panoramica.
-- **Tipo di Piano** — Filtra per un tipo di piano specifico all'interno del ministero selezionato.
+- Selezionare una persona dal tuo team da assegnare alla posizione
+- Sostituire o rimuovere un incarico esistente
+- Salvare il cambiamento senza lasciare la panoramica
 
-Fai clic su **Filtro** dopo aver effettuato le modifiche per aggiornare la griglia.
+Questo rende possibile coprire un'intera pianificazione in un'unica fase. Lavora su settimane e posizioni senza navigare dentro e fuori da singoli piani.
+
+## Filtro della Panoramica
+
+Puoi regolare ciò che la panoramica mostra usando i controlli dei filtri nella parte superiore:
+
+- **Start Date / End Date** (Data Inizio / Data Fine) -- Per impostazione predefinita, la panoramica mostra 12 settimane nel futuro. Immetti date personalizzate per espandere o restringere l'intervallo.
+- **Ministry** (Ministero) -- Passa a un diverso ministero senza lasciare la panoramica.
+- **Plan Type** (Tipo di Piano) -- Filtra per un tipo di piano specifico all'interno del ministero selezionato.
+- **Gaps Only** (Solo Lacune) -- Attivalo per nascondere le righe dove ogni data è già compilata, in modo da poter concentrarti solo sulle posizioni che hanno ancora bisogno di un volontario.
+
+Fai clic su **Filter** (Filtro) dopo aver apportato i cambiamenti per aggiornare la griglia.
 
 ## Esportazione in CSV
 
-Fai clic su **Esporta CSV** per scaricare la griglia corrente come foglio di calcolo. L'esportazione include tutte le posizioni e gli incarichi dei volontari per l'intervallo di date filtrato, rendendo facile condividere con i leader del ministero o stampare per le riunioni di pianificazione.
+Fai clic su **Export CSV** (Esporta CSV) per scaricare la griglia corrente come foglio di calcolo. L'esportazione include tutte le posizioni e gli incarichi dei volontari per l'intervallo di date filtrato, rendendo facile la condivisione con i leader dei ministeri o la stampa per le riunioni di pianificazione.
 
 :::info
-L'esportazione CSV riflette tutti i filtri attualmente applicati — solo le date e il tipo di piano mostrati nella griglia sono inclusi nel download.
+L'esportazione CSV riflette i filtri attualmente applicati. Solo le date e il tipo di piano visualizzati nella griglia vengono inclusi nel download.
 :::
 
 ## Articoli Correlati
 
-- [Piani di Servizio](./plans.md) — Crea e gestisci i piani di servizio individuali
-- [Ordine di Servizio](./service-order.md) — Costruisci l'ordine di servizio all'interno di un piano
-- [Pianificazione delle Lezioni](./scheduling-lessons.md) — Pianifica le lezioni insieme ai tuoi piani di servizio
+- [Service Plans](./plans.md) (Piani di Servizio) -- Crea e gestisci singoli piani di servizio
+- [Service Order](./service-order.md) (Ordine di Servizio) -- Costruisci l'ordine di servizio all'interno di un piano
+- [Scheduling Lessons](./scheduling-lessons.md) (Pianificazione Lezioni) -- Pianifica le lezioni insieme ai tuoi piani di servizio

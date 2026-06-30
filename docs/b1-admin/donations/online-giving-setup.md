@@ -6,7 +6,7 @@ title: "Online Giving Setup"
 
 <div class="article-intro">
 
-B1 Admin integrates with **Stripe** and **PayPal** so your members can give online through your B1.church site. Once configured, online donations automatically appear in your donation records alongside manually entered gifts, keeping everything in one system.
+B1 Admin integrates with **Stripe**, **PayPal**, and **Kingdom Funding** so your members can give online through your B1.church site. Once configured, online donations automatically appear in your donation records alongside manually entered gifts, keeping everything in one system.
 
 </div>
 
@@ -81,6 +81,24 @@ You can configure your giving page to let donors optionally cover processing fee
 :::tip
 After setup, make a small test donation to confirm everything is working before announcing online giving to your congregation.
 :::
+
+## Setting Up Kingdom Funding
+
+Kingdom Funding is a Christian payment processor that supports credit/debit cards and ACH bank transfers. If your church is enrolled with Kingdom Funding, you can connect it as your giving gateway.
+
+:::info
+Kingdom Funding integration is currently in beta. Contact your B1 account representative to enable it for your church.
+:::
+
+1. Sign up or log in at [kingdomfunding.org](https://kingdomfunding.org).
+2. Obtain your **Security Key** (public) and **Private Key** from the Kingdom Funding merchant portal.
+3. In B1 Admin, go to **Settings** and open **Church Settings**.
+4. In the **Giving** section, set the **Provider** to **Kingdom Funding**.
+5. Paste your Security Key into the **Security Key** field and your Private Key into the **Private Key** field.
+6. Set the **Webhook Key** you received from Kingdom Funding, and copy the displayed webhook URL into your Kingdom Funding merchant settings so Kingdom Funding can notify B1 of completed transactions.
+7. Save.
+
+Once connected, members will see a card/bank toggle on the donation page and can give by credit card or ACH transfer.
 
 ## Next Steps
 

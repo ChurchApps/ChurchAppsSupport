@@ -1,66 +1,70 @@
----
-title: "Ansicht der Pläne"
+﻿---
+title: "Pläne anzeigen"
 ---
 
-# Ansicht der Pläne
+# Pläne anzeigen
 
 <div class="article-intro">
 
-Die Seite „Plans" zeigt Ihnen einen klaren Überblick über alle Dienst-Pläne, denen Sie zugewiesen sind. Sie verwendet ein Master-Detail-Layout, sodass Sie Ihre Pläne schnell durchsuchen und in die Details eines beliebigen Plans eintauchen können.
+Die Seite „Pläne" gibt Ihnen einen klaren Überblick über alle Dienstpläne, denen Sie zugewiesen sind. Sie verwendet ein Master-Detail-Layout, sodass Sie Ihre Pläne schnell durchsuchen und sich in die Details eines beliebigen Plans vertiefen können.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Sie müssen in Ihrem B1.church-Konto [angemeldet](../getting-started/logging-in.md) sein.
-- Sie müssen mindestens einem Dienst-Plan zugewiesen sein. Wenn Sie keine Pläne sehen, kontaktieren Sie Ihren Kirchenadministrator oder Ministeriumsleiter.
+- Sie müssen sich [anmelden](../getting-started/logging-in.md) bei Ihrem B1.church-Konto.
+- Sie müssen mindestens einem Dienstplan zugewiesen sein. Wenn Sie keine Pläne sehen, wenden Sie sich an Ihren Kirchenadministrator oder Dienstleiter.
 
 </div>
 
-## Zugang zu Ihren Plänen
+## Greifen Sie auf Ihre Pläne zu
 
-1. Klicken Sie auf **Plans** in der [Seitenleisten-Navigation](../getting-started/navigating.md).
-2. Sie sehen eine Liste Ihrer Pläne auf der linken Seite der Seite.
+1. Klicken Sie auf **Plans** in der [Navigationsleiste auf der Seite](../getting-started/navigating.md).
+2. Sie werden eine Liste Ihrer Pläne auf der linken Seite der Seite sehen.
 
-## Die Plan-Liste
+## Die Planliste
 
-Ihre Pläne werden in der linken Abteilung unter **My Plans** aufgelistet. Jeder Eintrag zeigt:
+Ihre Pläne werden im linken Bereich unter **My Plans** aufgelistet. Jeder Eintrag zeigt:
 
-- Den **Plannamen** (zum Beispiel „Sunday Worship" oder „Kids Ministry")
-- Das **Servicedatum**
+- Den **Plannamen** (z. B. „Sunday Worship" oder „Kids Ministry")
+- Das **Dienstdatum**
 - Ihre **Position** (die Rolle, die Sie ausfüllen)
-- Ihr **Status** – farblich codiert, sodass Sie auf einen Blick sehen können, ob Sie angenommen, abgelehnt oder noch nicht geantwortet haben
+- Ihren **Status** – farbcodiert, damit Sie auf einen Blick sehen können, ob Sie akzeptiert, abgelehnt oder noch nicht geantwortet haben
 
-Oben in der Liste sehen Sie auch eine Option **Blockout Dates**. Klicken Sie darauf, um Termine zu verwalten, an denen Sie nicht zum Dienen verfügbar sind. Sie können Blockout-Datumsbereiche hinzufügen, bearbeiten und entfernen, sodass Ihre Teamleiter um Sie herum planen können.
+Oben in der Liste sehen Sie auch eine Option **Blockout Dates**. Klicken Sie darauf, um Daten zu verwalten, an denen Sie nicht verfügbar zum Dienen sind. Sie können Blockierungsdatumsbereiche hinzufügen, bearbeiten und entfernen, sodass Ihre Teamleiter wissen, wann sie um Sie herum planen müssen.
 
-## Ansicht der Plan-Details
-
-Klicken Sie auf einen beliebigen Plan in der Liste, um seine Details im rechten Bereich zu öffnen. Die Detailansicht enthält:
-
-- **Position-Details** – Ihre zugewiesene Position mit den erforderlichen Zeiten und Ihrem aktuellen Status. Wenn Sie noch nicht geantwortet haben, können Sie direkt von dieser Ansicht aus auf **Accept** oder **Decline** klicken.
-- **Notizen** – Alle Notizen, die der Plan-Ersteller für das Team hinzugefügt hat.
-- **Order of Service** – Die vollständige Dienstreihenfolge mit Zeiten, Elementen und Beschreibungen. Weitere Informationen finden Sie in [Service Order](./service-order.md).
-- **Team-Zuweisungen** – Eine Zusammenfassung aller Teammitglieder und ihrer Positionen, sodass Sie sehen können, wer neben Ihnen dient.
-
-:::tip
-Wenn Sie mehrere Zuweisungen über verschiedene Pläne hinweg haben, wird die Liste nach Datum sortiert, sodass Ihre anstehenden Verpflichtungen zuerst angezeigt werden. Schauen Sie regelmäßig vorbei, um Ihren Zeitplan im Auge zu behalten.
+:::info
+Ihre Gemeinde kann Ihnen möglicherweise **Erinnerungen** per E-Mail und als App-Benachrichtigung vor den Diensten senden, zu denen Sie eingeplant sind. Wenn Sie noch nicht geantwortet haben, können Sie direkt aus der Erinnerungs-E-Mail **akzeptieren** oder **ablehnen** – keine Anmeldung erforderlich.
 :::
 
-## Lehrer-Ansicht für Unterricht
+## Plandetails anzeigen
 
-Wenn Ihr Plan zugehörige Lehrpläne von einem Inhaltsanbieter (wie Lessons.church) enthält, sehen Sie eine Toggle-Schaltfläche im Tab **Order of Service**, mit der Sie zwischen den Ansichten **Summary** und **Teach** wechseln können.
+Klicken Sie auf einen beliebigen Plan in der Liste, um seine Details im rechten Bereich zu öffnen. Die Detailansicht umfasst:
 
-- **Summary-Ansicht** – Zeigt die Dienstreihenfolge mit Zeiten und grundlegenden Unterrichtsabschnitten, ideal für einen schnellen Überblick über das, was wann passiert
-- **Teach-Ansicht** – Öffnet eine immersive, Vollbild-Lektionspräsentation, die für Lehrer konzipiert ist, mit formatierten Anweisungen, eingebetteten Medien, Notizen und schrittweisen Anleitungen
-
-Die Teach-Ansicht organisiert Unterrichtsinhalte in navigierbare Abschnitte, die als Tabs oben angezeigt werden. Sie können:
-
-- Auf einen Abschnitts-Tab tippen, um direkt zu diesem Teil des Unterrichts zu springen
-- Durch Unterrichtsinhalte scrollen, und der aktive Tab wird automatisch aktualisiert, um Ihrer Position zu entsprechen
-- Auf Media-Elemente (Videos, Bilder, Aktivitäten) klicken, um sie in einem Modal-Dialog anzuzeigen
-- Aktionstypen unterschiedlich formatiert sehen: **Say** wird in Sprechblasen angezeigt, **Do** in fettgedrucktem Text und **Note** in hervorgehobenen Hinweisen
+- **Position details** – Ihre zugewiesene Position mit erforderlichen Zeiten und Ihrem aktuellen Status. Wenn Sie noch nicht geantwortet haben, können Sie direkt aus dieser Ansicht auf **Accept** oder **Decline** klicken.
+- **Notes** – Alle Notizen, die der Plan-Ersteller für das Team hinzugefügt hat.
+- **Order of Service** – Die vollständige Dienstordnung mit Zeitpunkt, Elementen und Beschreibungen. Weitere Details finden Sie unter [Service Order](./service-order.md).
+- **Team assignments** – Eine Zusammenfassung aller Teammitglieder und ihrer Positionen, damit Sie sehen können, wer sonst noch neben Ihnen dient.
 
 :::tip
-Die Teach-Ansicht ist besonders hilfreich, wenn Sie ein Klassenzimmer oder eine Kleingruppe leiten, da sie alle Unterrichtsinhalte in einem sauberen, ablenkungsfreien Format darstellt, das für Mobil- und Tablet-Verwendung optimiert ist.
+Wenn Sie mehrere Aufträge über verschiedene Pläne hinweg haben, wird die Liste nach Datum sortiert, sodass Ihre bevorstehenden Verpflichtungen zuerst angezeigt werden. Überprüfen Sie regelmäßig, um über Ihren Zeitplan auf dem Laufenden zu bleiben.
+:::
+
+## Lehreransicht für Lektionen
+
+Wenn Ihr Plan zugehörige Lehrpläne von einem Inhaltsanbieter enthält (z. B. Lessons.church), werden Sie auf der Registerkarte **Order of Service** eine Umschalttaste sehen, mit der Sie zwischen den Ansichten **Summary** und **Teach** wechseln können.
+
+- **Summary view** – Zeigt die Dienstordnung mit Zeitpunkt und grundlegenden Lektionsabschnitten, ideal zum schnellen Überprüfen, was wann passiert
+- **Teach view** – Öffnet eine immersive Lektionspräsentation im Vollbildmodus, die für Lehrer konzipiert ist, mit formatierter Anleitung, eingebetteten Medien, Notizen und schrittweiser Anleitung
+
+Die Teach-Ansicht organisiert Lektionsinhalte in navigierbare Abschnitte, die als Registerkarten oben angezeigt werden. Sie können:
+
+- Auf eine Abschnittsregisterkarte klicken, um direkt zu diesem Teil der Lektion zu springen
+- Durch den Lektionsinhalt scrollen, und die aktive Registerkarte wird automatisch aktualisiert, um Ihrer Position zu entsprechen
+- Auf Medienelementen (Videos, Bilder, Aktivitäten) klicken, um sie in einem Modaldialog anzuzeigen
+- Aktionstypen sehen, die unterschiedlich formatiert sind: **Say** wird in Gesprächsblasen angezeigt, **Do** in Fettdruck und **Note** in hervorgehobenen Anmerkungen
+
+:::tip
+Die Teach-Ansicht ist besonders nützlich beim Leiten eines Klassenzimmers oder einer kleinen Gruppe, da sie alle Ihre Lektionsinhalte in einem sauberen, ablenkungsfreien Format darstellt, das für den Handy- und Tablet-Gebrauch optimiert ist.
 :::

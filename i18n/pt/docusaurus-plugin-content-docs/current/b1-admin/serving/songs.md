@@ -49,19 +49,25 @@ Clique em qualquer cartão de música para abrir sua página de detalhes. A part
 - **Definir o tom** -- Especifique o tom musical para cada arranjo para que sua equipe saiba como se preparar.
 - **Adicionar links externos** -- Anexe links para recursos como vídeos do YouTube, cifras ou partituras hospedadas em outro lugar.
 
-## Arranjos
+## Arrangements
 
-Uma única música pode ter múltiplos arranjos para acomodar diferentes cultos ou configurações de equipe. Cada arranjo inclui:
+An arrangement represents a distinct version of a song — for example, a faster modern version versus a slower acoustic take, or the same song in a different key for a different team. Each arrangement of the same song shares the song title and artist but has its own independent settings:
 
-- **Letras** para exibição ou projeção
-- Designação de **tom**
-- **Links externos** para recursos adicionais
+- **Key** — the musical key the arrangement is performed in
+- **BPM** — tempo in beats per minute
+- **Length** — duration in seconds
+- **Meter** — time signature (e.g., 4/4, 3/4, 6/8)
+- **Sequence** — the chord/section structure (e.g., Intro → Verse → Chorus → Bridge)
+- **Lyrics** — for display or projection
+- **External links** — chord charts, YouTube recordings, sheet music, or other resources
+
+When you add a song to a [Service Order](./service-order.md), you can choose which arrangement to use for that specific service, so your team always rehearses and plays the right version.
 
 :::info
-Músicas da sua biblioteca podem ser adicionadas diretamente a uma [Ordem do Culto](./service-order.md) dentro de um plano, vinculando os detalhes e arranjos da música àquele culto específico.
+Songs from your library can be added directly to a [Service Order](./service-order.md) within a plan, linking the song details and the chosen arrangement to that specific service.
 :::
 
-## Próximos Passos
+## Next Steps
 
-- Adicione músicas à sua [Ordem do Culto](./service-order.md) ao montar um [plano de culto](./plans.md)
-- Coordene com sua equipe de louvor usando [Tarefas](./tasks.md) para preparação e ensaio de músicas
+- Add songs to your [Service Order](./service-order.md) when building out a [service plan](./plans.md)
+- Coordinate with your worship team using [Tasks](./tasks.md) for song preparation and practice

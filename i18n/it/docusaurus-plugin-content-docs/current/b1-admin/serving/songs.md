@@ -1,67 +1,73 @@
 ---
-title: "Canti"
+title: "Canzoni"
 ---
 
-# Canti
+# Canzoni
 
 <div class="article-intro">
 
-La pagina Canti gestisce la tua libreria di canti di adorazione. Mantieni tutti i dettagli dei tuoi canti, testi e arrangiamenti in un unico posto così il tuo team di adorazione può facilmente prepararsi per i servizi imminenti e mantenere un repertorio coerente.
+La pagina Canzoni gestisce la tua libreria di canzoni di culto. Mantieni tutti i tuoi dettagli di canzoni, testi e arrangiamenti in un unico posto in modo che il tuo team di culto possa facilmente prepararsi per i servizi imminenti e mantenere un repertorio coerente.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di iniziare</h4>
+<h4>Prima di Iniziare</h4>
 
-- Naviga alla sezione **Serving** in B1 Admin per accedere alla pagina Canti
-- Opzionalmente, configura i tuoi [piani di servizio](./plans.md) così puoi collegare i canti direttamente nell'[ordine di servizio](./service-order.md)
+- Naviga alla sezione **Serving** (Servizio) in B1 Admin per accedere alla pagina Canzoni
+- Facoltativamente, disponi i tuoi [piani di servizio](./plans.md) configurati in modo da poter collegare le canzoni direttamente all'[ordine di servizio](./service-order.md)
 
 </div>
 
-## Navigare la tua libreria di canti
+## Sfoglia la Tua Libreria di Canzoni
 
-Quando apri la pagina **Songs**, i tuoi canti sono visualizzati come schede. Ogni scheda mostra l'immagine miniatura del canto, titolo, artista e durata. Scorri la libreria o usa la ricerca per trovare ciò di cui hai bisogno.
+Quando apri la pagina **Songs** (Canzoni), le tue canzoni vengono visualizzate come schede. Ogni scheda mostra l'immagine della miniatura della canzone, il titolo, l'artista e la durata. Scorri attraverso la libreria o usa la ricerca per trovare quello di cui hai bisogno.
 
-## Cercare canti
+## Ricerca di Canzoni
 
-1. Clicca il pulsante **Search** nella pagina Canti.
-2. Digita il **titolo** di un canto o il nome di un **artista**.
-3. I risultati si filtreranno mentre digiti, mostrando i canti corrispondenti dalla tua libreria.
+1. Fai clic sul pulsante **Search** (Ricerca) nella pagina Canzoni.
+2. Digita il **titolo** della canzone o il nome dell'**artista**.
+3. I risultati si filtreranno mentre digiti, mostrando le canzoni corrispondenti dalla tua libreria.
 
-## Aggiungere un canto
+## Aggiunta di una Canzone
 
-1. Clicca **Add Song** nella pagina Canti.
-2. Cerca nel database esterno dei canti per titolo o artista.
-3. Seleziona il canto che vuoi aggiungere.
-4. Il canto verrà aggiunto alla tua libreria con i suoi dettagli base già compilati.
+1. Fai clic su **Add Song** (Aggiungi Canzone) nella pagina Canzoni.
+2. Cerca nel database esterno di canzoni per titolo o artista.
+3. Seleziona la canzone che desideri aggiungere.
+4. La canzone verrà aggiunta alla tua libreria con i suoi dettagli di base pre-compilati.
 
 :::tip
-Dopo aver aggiunto un canto, cliccaci sopra per rivedere e aggiornare i suoi dettagli, aggiungere arrangiamenti o allegare link esterni come video YouTube o tabelle di accordi.
+Dopo aver aggiunto una canzone, fai clic su di essa per esaminare e aggiornare i suoi dettagli, aggiungere arrangiamenti o allegare link esterni come video di YouTube o fogli di accordi.
 :::
 
-## Visualizzare e modificare un canto
+## Visualizzazione e Modifica di una Canzone
 
-Clicca su qualsiasi scheda di un canto per aprire la sua pagina dei dettagli. Da qui puoi:
+Fai clic su una qualsiasi scheda di canzone per aprire la sua pagina di dettagli. Da qui puoi:
 
-- **Modificare i dettagli del canto** -- Aggiorna titolo, artista, durata e altri metadati.
-- **Gestire gli arrangiamenti** -- Ogni canto può avere più arrangiamenti (ad esempio, tonalità o versioni diverse). Aggiungi, modifica o rimuovi arrangiamenti secondo necessità.
-- **Aggiungere testi** -- Inserisci o aggiorna i testi per ogni arrangiamento.
-- **Impostare la tonalità** -- Specifica la tonalità musicale per ogni arrangiamento così il tuo team sa come prepararsi.
-- **Aggiungere link esterni** -- Allega link a risorse come video YouTube, tabelle di accordi o spartiti ospitati altrove.
+- **Modifica dettagli della canzone** -- Aggiorna il titolo, l'artista, la durata e altri metadati.
+- **Gestisci arrangiamenti** -- Ogni canzone può avere più arrangiamenti (ad esempio, chiavi diverse o versioni diverse). Aggiungi, modifica o rimuovi gli arrangiamenti secondo necessità.
+- **Aggiungi testi** -- Immetti o aggiorna i testi per ogni arrangiamento.
+- **Imposta la chiave** -- Specifica la chiave musicale per ogni arrangiamento in modo che il tuo team sappia come prepararsi.
+- **Aggiungi link esterni** -- Allega link a risorse come video di YouTube, fogli di accordi o spartiti musicali ospitati altrove.
 
 ## Arrangiamenti
 
-Un singolo canto può avere più arrangiamenti per adattarsi a diversi servizi o configurazioni del team. Ogni arrangiamento include:
+Un arrangiamento rappresenta una versione distinta di una canzone. Ad esempio, una versione moderna più veloce rispetto a una versione acustica più lenta, o la stessa canzone in una chiave diversa per un team diverso. Ogni arrangiamento della stessa canzone condivide il titolo della canzone e l'artista ma ha impostazioni indipendenti:
 
-- **Testi** per visualizzazione o proiezione
-- Indicazione della **tonalità**
-- **Link esterni** a risorse aggiuntive
+- **Key** (Chiave) -- la chiave musicale in cui viene eseguito l'arrangiamento
+- **BPM** -- tempo in battute al minuto
+- **Length** (Lunghezza) -- durata in secondi
+- **Meter** (Metro) -- firma temporale (ad es., 4/4, 3/4, 6/8)
+- **Sequence** (Sequenza) -- la struttura degli accordi/sezioni (ad es., Intro → Verse → Chorus → Bridge)
+- **Lyrics** (Testi) -- per la visualizzazione o la proiezione
+- **External links** (Link esterni) -- fogli di accordi, registrazioni di YouTube, spartiti musicali o altre risorse
+
+Quando aggiungi una canzone a un [Service Order](./service-order.md) (Ordine di Servizio), puoi scegliere quale arrangiamento usare per quel servizio specifico, in modo che il tuo team sempre provi e suoni la versione giusta.
 
 :::info
-I canti dalla tua libreria possono essere aggiunti direttamente a un [Ordine di servizio](./service-order.md) all'interno di un piano, collegando i dettagli del canto e gli arrangiamenti a quel servizio specifico.
+Le canzoni della tua libreria possono essere aggiunte direttamente a un [Service Order](./service-order.md) (Ordine di Servizio) all'interno di un piano, collegando i dettagli della canzone e l'arrangiamento scelto a quel servizio specifico.
 :::
 
-## Prossimi passi
+## Passaggi Successivi
 
-- Aggiungi canti al tuo [Ordine di servizio](./service-order.md) quando costruisci un [piano di servizio](./plans.md)
-- Coordinati con il tuo team di adorazione usando le [Attività](./tasks.md) per la preparazione e le prove dei canti
+- Aggiungi canzoni al tuo [Service Order](./service-order.md) (Ordine di Servizio) quando costruisci un [piano di servizio](./plans.md) (Service Plan)
+- Coordina con il tuo team di culto usando [Tasks](./tasks.md) (Compiti) per la preparazione delle canzoni e la pratica

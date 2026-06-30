@@ -1,66 +1,70 @@
 ---
-title: "Visualizando Planos"
+title: "Viewing Plans"
 ---
 
-# Visualizando Planos
+# Viewing Plans
 
 <div class="article-intro">
 
-A página Planos oferece uma visão clara de todos os planos de serviço atribuídos a você. Usa um layout master-detail para que você possa navegar rapidamente seus planos e mergulhar nos detalhes de qualquer um.
+The Plans page gives you a clear view of all the service plans you are assigned to. It uses a master-detail layout so you can quickly browse your plans and dive into the details of any one.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Before You Begin</h4>
 
-- Você deve estar [conectado](../getting-started/logging-in.md) em sua conta B1.church.
-- Você deve ser atribuído a pelo menos um plano de serviço. Se você não vir nenhum plano, entre em contato com seu administrador da igreja ou líder de ministério.
+- You must be [logged in](../getting-started/logging-in.md) to your B1.church account.
+- You must be assigned to at least one service plan. If you do not see any plans, contact your church administrator or ministry leader.
 
 </div>
 
-## Acessando Seus Planos
+## Accessing Your Plans
 
-1. Clique em **Planos** na [navegação da barra lateral](../getting-started/navigating.md).
-2. Você verá uma lista de seus planos no lado esquerdo da página.
+1. Click **Plans** in the [sidebar navigation](../getting-started/navigating.md).
+2. You will see a list of your plans on the left side of the page.
 
-## A Lista de Planos
+## The Plan List
 
-Seus planos estão listados no painel esquerdo sob **Meus Planos**. Cada entrada mostra:
+Your plans are listed in the left panel under **My Plans**. Each entry shows:
 
-- O **nome do plano** (por exemplo, "Adoração de Domingo" ou "Ministério Infantil")
-- A **data do serviço**
-- Sua **posição** (o papel que você está preenchendo)
-- Seu **status** -- codificado por cores para que você possa ver rapidamente se aceitou, recusou ou ainda não respondeu
+- The **plan name** (for example, "Sunday Worship" or "Kids Ministry")
+- The **service date**
+- Your **position** (the role you are filling)
+- Your **status** -- color-coded so you can see at a glance whether you have accepted, declined, or not yet responded
 
-No topo da lista, você também verá uma opção **Datas de Bloqueio**. Clique nela para gerenciar datas quando você não está disponível para servir. Você pode adicionar, editar e remover intervalos de datas de bloqueio para que seus líderes de equipe saibam quando agendar em torno de você.
+At the top of the list, you will also see a **Blockout Dates** option. Click it to manage dates when you are unavailable for serving. You can add, edit, and remove blockout date ranges so your team leaders know when to schedule around you.
 
-## Visualizando Detalhes do Plano
-
-Clique em qualquer plano na lista para abrir seus detalhes no painel direito. A visão de detalhes inclui:
-
-- **Detalhes da posição** -- Sua posição atribuída com os horários necessários e seu status atual. Se você ainda não respondeu, pode clicar em **Aceitar** ou **Recusar** diretamente desta visão.
-- **Notas** -- Qualquer nota que o criador do plano adicionou para a equipe.
-- **Ordem do Serviço** -- A ordem completa do serviço com tempo, itens e descrições. Consulte [Ordem do Serviço](./service-order.md) para mais detalhes.
-- **Atribuições de equipe** -- Um resumo de todos os membros da equipe e suas posições, para que você possa ver quem mais está servindo ao seu lado.
-
-:::tip
-Se você tiver múltiplas atribuições em diferentes planos, a lista é classificada por data para que seus compromissos próximos apareçam primeiro. Verifique regularmente para manter-se atualizado com seu calendário.
+:::info
+Your church may send **reminders** before the services you are scheduled for, by email and as an app notification. If you have not responded yet, you can **Accept** or **Decline** right from the reminder email — no sign-in needed.
 :::
 
-## Visão do Professor para Aulas
+## Viewing Plan Details
 
-Se seu plano inclui currículo associado de um fornecedor de conteúdo (como Lessons.church), você verá um botão de alternância na aba **Ordem do Serviço** que permite alternar entre as visões **Resumo** e **Ensinar**.
+Click on any plan in the list to open its details in the right panel. The detail view includes:
 
-- **Visão de resumo** -- Mostra a ordem do serviço com tempo e seções básicas de aula, ideal para revisar rapidamente o que acontecerá quando
-- **Visão de ensinar** -- Abre uma apresentação de aula imersiva, tela inteira, projetada para professores, com instruções formatadas, mídia incorporada, notas e orientação passo a passo
-
-A visão de ensinar organiza o conteúdo da aula em seções navegáveis exibidas como abas no topo. Você pode:
-
-- Tocar em uma aba de seção para pular diretamente para essa parte da aula
-- Deslizar pelo conteúdo da aula, e a aba ativa se atualizará automaticamente para corresponder à sua posição
-- Clicar em itens de mídia (vídeos, imagens, atividades) para visualizá-los em um diálogo modal
-- Ver tipos de ação formatados distintamente: **Dizer** aparece em bolhas de conversa, **Fazer** em texto em negrito e **Nota** em chamadas destacadas
+- **Position details** -- Your assigned position with the needed times and your current status. If you have not yet responded, you can click **Accept** or **Decline** directly from this view.
+- **Notes** -- Any notes the plan creator added for the team.
+- **Order of Service** -- The full service order with timing, items, and descriptions. See [Service Order](./service-order.md) for more details.
+- **Team assignments** -- A summary of all team members and their positions, so you can see who else is serving alongside you.
 
 :::tip
-A visão de ensinar é especialmente útil quando liderando uma sala de aula ou pequeno grupo, pois apresenta todo seu conteúdo de aula em um formato limpo, sem distrações, otimizado para uso móvel e tablet.
+If you have multiple assignments across different plans, the list is sorted by date so your upcoming commitments appear first. Check back regularly to stay on top of your schedule.
+:::
+
+## Teacher View for Lessons
+
+If your plan includes associated curriculum from a content provider (such as Lessons.church), you will see a toggle button in the **Order of Service** tab that lets you switch between **Summary** and **Teach** views.
+
+- **Summary view** -- Shows the service order with timing and basic lesson sections, ideal for quickly reviewing what will happen when
+- **Teach view** -- Opens an immersive, full-screen lesson presentation designed for teachers, with formatted instructions, embedded media, notes, and step-by-step guidance
+
+The Teach view organizes lesson content into navigable sections displayed as tabs at the top. You can:
+
+- Tap a section tab to jump directly to that part of the lesson
+- Scroll through the lesson content, and the active tab will update automatically to match your position
+- Click on media items (videos, images, activities) to view them in a modal dialog
+- See action types formatted distinctively: **Say** appears in conversation bubbles, **Do** in bold text, and **Note** in highlighted callouts
+
+:::tip
+The Teach view is especially helpful when leading a classroom or small group, as it presents all your lesson content in a clean, distraction-free format optimized for mobile and tablet use.
 :::

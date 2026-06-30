@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Paglilingkod"
 ---
 
@@ -6,35 +6,35 @@ title: "Paglilingkod"
 
 <div class="article-intro">
 
-Ang seksyon ng Paglilingkod ay iyong hub para sa pag-coordinate ng mga volunteer at pagpaplano ng mga serbisyo ng simbahan. Mula sa pag-oorganisa ng worship sa Linggo, mga pagtitipon sa gitna ng linggo, o mga special event, dito mo pinagsasama ang lahat upang ang iyong mga team ay alam kung sino ang naglilingkod at kailan.
+Ang Serving section ay iyong hub para sa pag-ugnay sa mga boluntaryo at pagpaplano ng mga serbisyo sa simbahan. Kung kayo ay nag-oorganisa ng Sunday worship, midweek gatherings, o mga espesyal na kaganapan, ito ang lugar kung saan pinagsasama ninyo ang lahat upang ang inyong mga team ay alam kung sino ang naglilingkod at kailan.
 
 </div>
 
-## Paano Gumagana ang Pahina ng Paglilingkod
+## Paano Gumagana ang Serving Page
 
-Kapag nag-open ka ng pahina ng **Paglilingkod**, makikita mo ang iyong mga ministry na ipinakita bilang mga tab sa buong tuktok. Bawat ministry ay may sariling uri ng plano at mga team, upang maaari mong pamahalaan ang maraming ministry nang hiwalay. Halimbawa, maaaring mayroon kang mga hiwalay na tab para sa Worship, Kids Ministry, at Hospitality.
+Kapag binuksan mo ang **Serving** page, makikita mo ang iyong ministries na ipinakita bilang tabs sa tuktok. Bawat ministry ay may sariling plan types at teams, kaya maaari mong pamahalaan ang mga maraming ministries nang independyente. Halimbawa, maaari kang magkaroon ng mga hiwalay na tabs para sa Worship, Kids Ministry, at Hospitality.
 
-Ang mga taong hindi admin na miyembro ng isang ministry ay maaari ring mag-access sa pahina ng Paglilingkod. Makikita lamang nila ang mga ministry na kabilang sila at maaaring lumikha at mag-edit ng mga plano, paglalaan, uri ng plano, at order ng serbisyo para sa kanilang ministry nang hindi kinakailangan ang buong admin na mga pahintulot.
+Ang mga non-admin staff na miyembro ng isang ministry ay maaari ring makapasok sa Serving page. Makikita lamang nila ang mga ministries kung saan sila kabilang at maaari nilang lumikha at baguhin ang mga plans, assignments, plan types, at service order para sa kanilang ministry nang hindi kailangan ng buong admin permissions.
 
 :::tip
-Kung ikaw ay isang admin, i-toggle ang **Show All** upang makita ang lahat ng ministry nang sabay-sabay. Ito ay nakakatulong kapag kailangan mong suriin ang mga paglalaan sa maraming team.
+Kung ikaw ay admin, i-toggle ang **Show All** upang makita ang lahat ng ministries nang sabay-sabay. Ito ay nakakatulong kung kailangan mong suriin ang mga assignments sa maraming teams.
 :::
 
-## Mga Sub-Section
+## Sub-Sections
 
-Ang seksyon ng Paglilingkod ay may kasamang mga pangunahing lugar:
+Ang Serving section ay kinabibilangan ng mga pangunahing area:
 
-- **[Mga Plano](./plans.md)** -- Lumikha ng mga plano sa serbisyo para sa mga partikular na petsa at magtalaga ng mga volunteer sa mga team. Ang mga plano ay tumutulong sa iyo na i-oorganisa kung sino ang naglilingkod kailan, upang lahat ay alam ang kanilang tungkulin nang maaga. Gamitin ang **[Pangkalahatang Paglalakbay ng mga Plano](./plans-overview.md)** upang makita ang lahat ng darating na paglalaan sa maraming linggo sa isang grid.
-- **[Mga Kanta](./songs.md)** -- Pamahalaan ang iyong worship song library na may lyrics, arrangements, at external links. Ang iyong worship team ay maaaring gamitin ito upang maghanda para sa mga paparating na serbisyo.
-- **[Mga Gawain](./tasks.md)** -- Magtalaga at subaybayan ang mga gawain para sa iyong mga miyembro ng team. I-setup ang [Automations](./automations.md) upang lumikha ng mga recurring task nang awtomatiko, upang walang mahulog sa pagitan.
-- **[Mga Workflow](./workflows.md)** -- Isulong ang mga tao sa pamamagat ng isang serye ng mga hakbang sa isang visual Kanban board, tulad ng bagong visitor follow-up o isang membership process. Ang mga hakbang ay maaaring magpatakbo ng mga automated action (magpadala ng email, maghintay ng ilang araw, magdagdag sa isang grupo), at ang mga card ay umuusad sa pamamagat ng mga outcome button, conditional routing, o event at schedule trigger -- na may built-in na mga ulat.
+- **[Plans](./plans.md)** -- Lumikha ng service plans para sa mga tukoy na petsa at italaga ang mga boluntaryo sa mga teams. Ang mga plans ay tumutulong sa iyo na ayusin kung sino ang naglilingkod kailan, upang lahat ay alam ang kanilang papel nang maaga. Magtakda ng awtomatikong [volunteer reminders](./plans.md#volunteer-reminders) upang ang iyong team ay makahingi ng notification bago ang bawat serbisyo, at gamitin ang **[Plans Overview](./plans-overview.md)** upang makita ang lahat ng darating na assignments sa maraming linggo sa isang grid.
+- **[Songs](./songs.md)** -- Pamahalaan ang iyong worship song library gamit ang mga lyrics, arrangements, at external links. Ang iyong worship team ay maaaring gamitin ito upang maghanda para sa mga darating na serbisyo.
+- **[Tasks](./tasks.md)** -- Italaga at subaybayan ang mga gawain para sa iyong mga miyembro ng team. Magtakda ng [Automations](./automations.md) upang lumikha ng mga umuulit na gawain nang awtomatiko, upang walang makaligtaan.
+- **[Workflows](./workflows.md)** -- Ilipat ang mga tao sa pamamagitan ng isang serye ng mga hakbang sa isang visual Kanban board, tulad ng bagong bisita na pagsunod-sunod o proseso ng pagiging miyembro. Ang mga hakbang ay maaaring magpatakbo ng mga awtomatikong aksyon (magpadala ng email, maghintay ng ilang araw, magdagdag sa isang grupo), at ang mga card ay umuusad batay sa mga pindutang resulta, conditional routing, o event at schedule triggers -- na may built-in na mga ulat.
 
 ## Pagsisimula
 
-1. Mag-navigate sa **Paglilingkod** mula sa pangunahing menu sa B1 Admin.
-2. I-click ang button ng pagdagdag ng ministry upang lumikha ng isang bagong ministry o i-toggle ang "show all" upang makita ang mga umiiral na tab ng ministry. Pumili ng **tab ng ministry** upang tingnan ang mga uri ng plano at mga team nito.
-3. Piliin ang "lumikha ng isang uri ng plano" o pumili ng isang umiiral na uri ng plano upang magsimulang [lumikha ng mga plano sa serbisyo](./plans.md), o tuklasin ang [Mga Kanta](./songs.md) at [Mga Gawain](./tasks.md) na mga sub-section.
+1. Mag-navigate sa **Serving** mula sa pangunahing menu sa B1 Admin.
+2. I-click ang button na magdagdag ng ministry upang lumikha ng bagong ministry o i-toggle ang "show all" upang makita ang mga umiiral na ministry tabs. Pumili ng **ministry tab** upang makita ang mga plan types at teams nito.
+3. Pumili ng "lumikha ng plan type" o pumili ng umiiral na plan type upang magsimulang [lumikha ng service plans](./plans.md), o tuklasin ang [Songs](./songs.md) at [Tasks](./tasks.md) sub-sections.
 
 :::info
-Bago ka makagawa ng mga plano, kakailanganin mong lumikha ng iyong Ministries sa lugar ng Paglilingkod at Teams sa loob ng bawat Ministry.
+Bago ka makapaglikha ng mga plans, kailangan mong lumikha ng iyong Ministries sa Serving area at Teams sa loob ng bawat Ministry.
 :::

@@ -1,40 +1,40 @@
 ---
-title: "Tjenestestillinger"
+title: "Tjeneste"
 ---
 
-# Tjenestestillinger
+# Tjeneste
 
 <div class="article-intro">
 
-Tjenestestillinger-seksjonen er ditt knutepunkt for å koordinere frivillige og planlegge kirketjenester. Enten du organiserer søndagsgudstjeneste, ukedagsamlinger eller spesielle arrangementer, er dette hvor du bringer alt sammen slik at teamene dine vet nøyaktig hvem som tjener og når.
+Serving-delen er ditt sentrum for koordinering av frivillige og planlegging av gudstjenester. Enten du organiserer søndags-gudstjenester, midtukesamlinger eller spesielle begivenheter, er det her du bringer alt sammen slik at lagene dine vet nøyaktig hvem som tjener og når.
 
 </div>
 
-## Hvordan Tjenestestillinger-siden fungerer
+## Hvordan tjenestesiden fungerer
 
-Når du åpner **Tjenestestillinger**-siden, vil du se ministermaterialene dine vises som faner over toppen. Hver minister har egne plantypes og team, slik at du kan administrere flere ministerer uavhengig. For eksempel kan du ha separate faner for Tilbedelse, Barneministeriet og Gjestfrihet.
+Når du åpner **Serving**-siden, ser du ministeriene dine vises som faner over toppen. Hvert ministerium har sine egne plantyper og lag, slik at du kan administrere flere ministerier uavhengig. Du kan for eksempel ha separate faner for Worship, Kids Ministry og Hospitality.
 
-Personell som ikke er admin og som er medlemmer av en minister, kan også få tilgang til Tjenestestillinger-siden. De vil bare se minerale de tilhører og kan opprette og redigere planer, oppgaver, plantypes og tjenesterekkefølgen for sitt ministerium uten å trenge fullstendige admin-tillatelser.
+Personalet som ikke er admin og som er medlemmer av et ministerium kan også få tilgang til Serving-siden. De vil bare se ministeriene de tilhører og kan opprette og redigere planer, oppgaver, plantyper og tjenesterekkefølgen for sitt ministerium uten å trenge full admin-tillatelse.
 
 :::tip
-Hvis du er admin, veksler du **Vis alle** for å vise alle ministerer samtidig. Dette er nyttig når du trenger å kontrollere oppgaver på tvers av flere team.
+Hvis du er admin, slå på **Show All** for å se alle ministerier på en gang. Dette er nyttig når du trenger å kontrollere oppgaver på tvers av flere lag.
 :::
 
-## Underseksjoner
+## Underavsnitt
 
-Tjenestestillinger-seksjonen inneholder disse viktige områdene:
+Serving-delen inkluderer disse nøkkelområdene:
 
-- **[Planer](./plans.md)** – Opprett serviceplaner for spesifikke datoer og tilordne frivillige til team. Planer hjelper deg å organisere hvem som tjener når, slik at alle vet hvilken rolle de har på forhånd. Bruk **[Planeroversikten](./plans-overview.md)** for å se alle kommende oppgaver på tvers av flere uker i ett rutenett.
-- **[Sanger](./songs.md)** – Administrer tilbedelsessangbiblioteket ditt med tekster, arrangementer og eksterne koblinger. Tilbedelsesteamet ditt kan bruke dette for å forberede seg til kommende tjenester.
-- **[Oppgaver](./tasks.md)** – Tilordne og spor oppgaver for teammedlemmer dine. Sett opp [Automationer](./automations.md) for å opprette gjentakende oppgaver automatisk, slik at ingenting blir glemt.
-- **[Arbeitsflyter](./workflows.md)** – Flytt personer gjennom en serie trinn på et visuelt Kanban-brett, for eksempel oppfølging av nye besøkende eller en medlemskapsprosess. Trinn kan kjøre automatiserte handlinger (send en e-post, vent noen dager, legg til i en gruppe), og kort fremgang gjennom knapper for resultat, betinget ruting eller event og tidsplanlagte utløsere – med innebygde rapporter.
+- **[Plans](./plans.md)** -- Opprett tjenesteplaner for spesifikke datoer og tildel frivillige til lag. Planer hjelper deg med å organisere hvem som tjener når, slik at alle vet sin rolle på forhånd. Sett opp automatiske [frivillig-påminnelser](./plans.md#volunteer-reminders) slik at teamet ditt varsles før hver tjeneste, og bruk **[Plans Overview](./plans-overview.md)** for å se alle kommende oppgaver på tvers av flere uker i ett rutenett.
+- **[Songs](./songs.md)** -- Administrer ditt tilbedelsessangs-bibliotek med sangtekster, arrangementer og eksterne lenker. Tilbedelseslaget ditt kan bruke dette til å forberede seg til kommende tjenester.
+- **[Tasks](./tasks.md)** -- Tildel og spor oppgaver for teammedlemmene dine. Sett opp [Automations](./automations.md) for å opprette gjentakende oppgaver automatisk, slik at ingenting faller gjennom maskene.
+- **[Workflows](./workflows.md)** -- Flytt personer gjennom en serie trinn på et visuelt Kanban-tavle, for eksempel oppfølging av nye besøkende eller en medlemskapsprosess. Trinn kan kjøre automatiserte handlinger (send en e-post, vent noen dager, legg til en gruppe), og kort går videre etter resultatknapper, betinget ruting, eller begivenhet- og planleggingsutløsere -- med innebygde rapporter.
 
 ## Komme i gang
 
-1. Gå til **Tjenestestillinger** fra hovedmenyen i B1 Admin.
-2. Klikk knappen for å legge til ministerium for å opprette et nytt ministerium, eller slå på "vis alle" for å vise eksisterende ministeriumfaner. Velg en **ministeriumfane** for å vise dens plantypes og team.
-3. Velg "opprett en plantype" eller velg en eksisterende plantype for å starte [oppretting av serviceplaner](./plans.md), eller utforsk [Sanger](./songs.md) og [Oppgaver](./tasks.md)-underseksjonene.
+1. Naviger til **Serving** fra hovedmenyen i B1 Admin.
+2. Klikk knappen for å legge til ministerium for å opprette et nytt ministerium, eller slå av "vis alle" for å se eksisterende ministeriefaner. Velg en **ministry tab** for å se dens plantyper og lag.
+3. Velg "opprett en plantype" eller velg en eksisterende plantype for å begynne [opprettelse av tjenesteplaner](./plans.md), eller utforsk [Songs](./songs.md) og [Tasks](./tasks.md) underdelene.
 
 :::info
-Før du kan opprette planer, må du opprette ministeriene dine i Tjenestestillinger-området og Team innenfor hvert ministerium.
+Før du kan opprette planer, må du opprette Ministeriene dine i Serving-området og Teams innenfor hvert ministerium.
 :::

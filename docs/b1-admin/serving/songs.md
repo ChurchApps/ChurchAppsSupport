@@ -51,14 +51,20 @@ Click on any song card to open its detail page. From here you can:
 
 ## Arrangements
 
-A single song can have multiple arrangements to accommodate different services or team configurations. Each arrangement includes:
+An arrangement represents a distinct version of a song — for example, a faster modern version versus a slower acoustic take, or the same song in a different key for a different team. Each arrangement of the same song shares the song title and artist but has its own independent settings:
 
-- **Lyrics** for display or projection
-- **Key** designation
-- **External links** to additional resources
+- **Key** — the musical key the arrangement is performed in
+- **BPM** — tempo in beats per minute
+- **Length** — duration in seconds
+- **Meter** — time signature (e.g., 4/4, 3/4, 6/8)
+- **Sequence** — the chord/section structure (e.g., Intro → Verse → Chorus → Bridge)
+- **Lyrics** — for display or projection
+- **External links** — chord charts, YouTube recordings, sheet music, or other resources
+
+When you add a song to a [Service Order](./service-order.md), you can choose which arrangement to use for that specific service, so your team always rehearses and plays the right version.
 
 :::info
-Songs from your library can be added directly to a [Service Order](./service-order.md) within a plan, linking the song details and arrangements to that specific service.
+Songs from your library can be added directly to a [Service Order](./service-order.md) within a plan, linking the song details and the chosen arrangement to that specific service.
 :::
 
 ## Next Steps

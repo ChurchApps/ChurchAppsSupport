@@ -102,7 +102,8 @@ Plans are organized by ministry. Make sure you are on the correct ministry tab b
 
 ## Next Steps
 
-- Use the [Plans Overview](./plans-overview.md) to see all upcoming assignments across multiple weeks in one grid and spot unfilled positions
+- Use the [Plans Overview](./plans-overview.md) to see all upcoming assignments across multiple weeks in one grid and spot unfilled positions — and assign volunteers directly from the grid
+- Save a plan's structure as a [Plan Template](./plan-templates.md) so you can stamp it onto future plans in one click
 - Build out your [Service Order](./service-order.md) with songs, readings, and other elements
 - Add [songs](./songs.md) from your library directly into the service order
 - Use [Tasks](./tasks.md) to assign follow-up action items to team members

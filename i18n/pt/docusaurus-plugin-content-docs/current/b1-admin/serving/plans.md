@@ -56,30 +56,54 @@ Quando você abre um plano, você verá duas abas:
 Configure suas equipes nas configurações do ministério antes de criar planos. Desta forma, você terá um pool pronto de voluntários para atribuir.
 :::
 
-## Associando Grupos a um Tipo de Plano
+## Volunteer Reminders
 
-Abaixo da lista de planos na página do tipo de plano, a seção **Groups** permite que você decida quais grupos podem ver os planos para este tipo de plano a partir de seu portal de membros. Esta é uma maneira rápida de disponibilizar os serviços próximos para as equipes certas sem dar acesso admin.
+B1 can automatically remind volunteers ahead of the services they are scheduled for, so you do not have to chase down your team each week. Reminders go to **everyone scheduled** — both those who have confirmed and those who have not yet responded — by email and as an in-app/push notification. Each reminder includes the volunteer's position(s), the service date, the plan notes, and your custom message.
 
-1. Na página do tipo de plano, desça até a seção **Groups**.
-2. Clique em **Add Group** e escolha um grupo no menu suspenso.
-3. Na coluna **Shows**, escolha se os membros desse grupo devem ver os planos **Past**, **Future** ou **Both** para este tipo de plano.
-4. Repita para associar grupos adicionais, ou clique no ícone de lixo para remover um grupo.
+Reminder timing and content are set per **plan type**, so each kind of service can keep its own schedule.
 
-:::info
-Apenas grupos marcados como **Standard** aparecem no seletor. Os membros de um grupo associado automaticamente veem os planos do tipo de plano na aba [Plans](/docs/b1-church/plans/) no portal de membros do B1 — limitado à janela passado/futuro/ambos que você selecionou.
+1. From the **Serving** area, select the ministry that contains the plan type.
+2. Click the **edit (pencil) icon** next to the plan type.
+3. In the **Reminders** section, set:
+   - **Reminder days before service** — a comma-separated list of how many days ahead to send, for example `7,1,0`. Use `0` to send a reminder on the day of the service. Leave this field blank to turn reminders off for this plan type.
+   - **Custom reminder message** *(optional)* — extra text added to the reminder, such as "Arrive 30 minutes early to rehearse."
+4. Save the plan type.
+
+New plan types remind volunteers **2 days before** each service by default until you change this.
+
+:::tip
+Volunteers who have not yet confirmed get **Accept** and **Decline** buttons right inside the reminder email, so they can respond without signing in.
 :::
 
-## Imprimindo Planos
-
-Você pode imprimir um plano para distribuição para sua equipe. Abra o plano, abra a aba de ordem do serviço e use a opção **Print** para gerar uma versão imprimível que inclua atribuições e a ordem do serviço. Isto é útil para distribuir em ensaios ou afixar em uma área comum.
-
 :::info
-Os planos são organizados por ministério. Certifique-se de estar na aba de ministério correta antes de criar ou visualizar planos.
+Each reminder is sent once. Plans that are still penciled in (not yet sent to the team) do not trigger reminders.
 :::
 
-## Próximos Passos
+## Associating Groups with a Plan Type
 
-- Use a [Visão Geral dos Planos](./plans-overview.md) para ver todas as atribuições próximas em várias semanas em uma grade e identificar posições não preenchidas
-- Construa sua [Ordem do Serviço](./service-order.md) com músicas, leituras e outros elementos
-- Adicione [canções](./songs.md) da sua biblioteca diretamente na ordem do serviço
-- Use [Tasks](./tasks.md) para atribuir itens de ação de acompanhamento aos membros da equipe
+Below the plan list on the plan type page, the **Groups** section lets you decide which groups can see the plans for this plan type from their member portal. This is a quick way to surface upcoming services to the right teams without giving them admin access.
+
+1. On the plan type page, scroll down to the **Groups** section.
+2. Click **Add Group** and pick a group from the dropdown.
+3. In the **Shows** column, choose whether members of that group should see **Past**, **Future**, or **Both** plans for this plan type.
+4. Repeat to associate additional groups, or click the trash icon to remove a group.
+
+:::info
+Only groups tagged as **Standard** appear in the picker. Members of an associated group automatically see this plan type's plans on the [Plans](/docs/b1-church/plans/) tab in the B1 member portal — limited to the past/future/both window you selected.
+:::
+
+## Printing Plans
+
+You can print a plan for distribution to your team. Open the plan, Open the service order tab and use the **Print** option to generate a printable version that includes assignments and the service order. This is useful for handing out at rehearsals or posting in a common area.
+
+:::info
+Plans are organized by ministry. Make sure you are on the correct ministry tab before creating or viewing plans.
+:::
+
+## Next Steps
+
+- Use the [Plans Overview](./plans-overview.md) to see all upcoming assignments across multiple weeks in one grid and spot unfilled positions — and assign volunteers directly from the grid
+- Save a plan's structure as a [Plan Template](./plan-templates.md) so you can stamp it onto future plans in one click
+- Build out your [Service Order](./service-order.md) with songs, readings, and other elements
+- Add [songs](./songs.md) from your library directly into the service order
+- Use [Tasks](./tasks.md) to assign follow-up action items to team members

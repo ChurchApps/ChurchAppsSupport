@@ -34,11 +34,21 @@ The overview displays a grid where:
 - **Columns** represent upcoming service dates (e.g., "Apr 14", "Apr 21")
 - **Cells** show the name of the volunteer assigned to that position on that date
 
-Positions highlighted in **red** are unfilled — no volunteer has been assigned yet. This makes it easy to see staffing gaps at a glance without opening each plan individually.
+Cells highlighted in **red** are unfilled — no volunteer has been assigned yet. This makes it easy to see staffing gaps at a glance without opening each plan individually.
 
 :::tip
 Volunteer names are shown in a shortened format (first name and last initial, e.g., "John D.") to keep the grid compact when you have many positions.
 :::
+
+## Assigning Volunteers Directly from the Overview
+
+You do not need to open individual plans to fill empty slots. Click any cell in the grid to open an assignment panel for that position and date. From there you can:
+
+- Select a person from your team to assign to the position
+- Replace or remove an existing assignment
+- Save the change without leaving the overview
+
+This makes it possible to staff an entire schedule in one pass — work across weeks and positions without navigating in and out of individual plans.
 
 ## Filtering the Overview
 
@@ -47,6 +57,7 @@ You can adjust what the overview shows using the filter controls at the top:
 - **Start Date / End Date** — By default the overview shows 12 weeks into the future. Enter custom dates to expand or narrow the range.
 - **Ministry** — Switch to a different ministry without leaving the overview.
 - **Plan Type** — Filter to a specific plan type within the selected ministry.
+- **Gaps Only** — Toggle this on to hide rows where every date is already filled, so you can focus only on positions that still need a volunteer.
 
 Click **Filter** after making changes to update the grid.
 
