@@ -144,6 +144,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'b1-admin/calendars/creating-calendars',
             'b1-admin/calendars/curated-calendar',
+            'b1-admin/calendars/event-reminders',
             'b1-admin/calendars/rooms-resources',
             'b1-admin/calendars/approvals',
             'b1-admin/calendars/availability',
@@ -231,6 +232,7 @@ const sidebars: SidebarsConfig = {
             'b1-church/getting-started/logging-in',
             'b1-church/getting-started/navigating',
             'b1-church/getting-started/installing-pwa',
+            'b1-church/getting-started/notification-preferences',
           ],
         },
         {
