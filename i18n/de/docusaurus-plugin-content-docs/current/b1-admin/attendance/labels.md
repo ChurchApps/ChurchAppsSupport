@@ -1,89 +1,89 @@
 ---
-title: "Check-In-Etikett-Designer"
+title: "Check-In-Etikettendesigner"
 ---
 
-# Check-In-Etikett-Designer
+# Check-In-Etikettendesigner
 
 <div class="article-intro">
 
-Der Etikett-Designer ermöglicht es Ihnen, die Namensschilder und Abholschein-Vorlagen zu erstellen und anzupassen, die beim Check-In von Kindern durch Familien gedruckt werden. Sie können genau steuern, welche Informationen auf jedem Etikett angezeigt werden, wo es positioniert ist und wie es aussieht.
+Der Etikettendesigner ermöglicht es Ihnen, die Namensschild- und Abholzettelvorlagen zu erstellen und anzupassen, die beim Check-in von Kindern gedruckt werden. Sie können genau kontrollieren, welche Informationen auf jedem Etikett angezeigt werden, wo es positioniert ist und wie es aussieht.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Richten Sie [Anwesenheit](setup) ein und konfigurieren Sie mindestens eine Servicezeit mit aktiviertem Check-In
-- Richten Sie [Check-In](check-in) ein, damit Etiketten gedruckt werden
-- Sie benötigen administrative Berechtigung für den Abschnitt „Anwesenheit"
+- Richten Sie [Attendance](setup) ein und konfigurieren Sie mindestens eine Servicezeit mit aktiviertem Check-in
+- Richten Sie [Check-In](check-in) so ein, dass Etiketten gedruckt werden
+- Sie benötigen Administratorzugriff auf den Attendance-Bereich
 
 </div>
 
-## Etikett-Designer öffnen
+## Öffnen des Etikettendesigners
 
-Gehen Sie in B1 Admin zu **Anwesenheit** in der linken Seitenleiste und wählen Sie **Etiketten**. Sie sehen eine Liste Ihrer gespeicherten Etikett-Vorlagen, getrennt nach Typ: **Namensschilder** und **Abholscheine**.
+In B1 Admin gehen Sie zu **Attendance** in der linken Seitenleiste und wählen Sie **Labels**. Sie sehen eine Liste Ihrer gespeicherten Etikettenvorlagen, getrennt nach Typ: **Nametag** und **Pickup Slip**.
 
-## Etikett-Typen
+## Etikettentypen
 
-- **Namensschilder** – werden gedruckt und am Kind angebracht. Normalerweise enthalten sie den Namen des Kindes, seinen Klassenzimmer/seine Sitzung und einen Sicherheitscode.
-- **Abholschein** – wird dem Elternteil oder Erziehungsberechtigten gegeben. Normalerweise enthält er den Sicherheitscode und eine Liste der Kinder, die sie eingecheckt haben.
+- **Nametag** — wird gedruckt und am Kind angebracht. Enthält normalerweise den Namen des Kindes, sein Klassenzimmer/seine Sitzung und einen Sicherheitscode.
+- **Pickup Slip** — wird dem Elternteil oder Vormund übergeben. Enthält normalerweise den Sicherheitscode und eine Liste der eingechecked Kinder.
 
-B1 startet Sie mit einer Standard-Namensschilds-Vorlage und einer Standard-Abholschein-Vorlage mit einer Größe von 3,5 × 1,1 Zoll für Standard-Thermoetiketten.
+B1 startet Sie mit einer Standard-Namensschild- und einer Standard-Abholzettelvorlage im Standardformat 3,5 × 1,1 Zoll für Thermaldrucker.
 
-## Etikett-Vorlage erstellen
+## Erstellen einer Etikettenvorlage
 
-1. Klicken Sie auf **Namensschilds hinzufügen** oder **Abholschein hinzufügen** (oder verwenden Sie das Dropdown-Menü zur Auswahl).
-2. Eine neue Vorlage wird im Etikett-Editor geöffnet.
+1. Klicken Sie auf **Add Nametag** oder **Add Pickup Slip** (oder verwenden Sie das Dropdown-Menü, um auszuwählen).
+2. Eine neue Vorlage wird im Etiketteneditor geöffnet.
 
-### Etikett-Editor
+### Etiketteneditor
 
 Der Editor zeigt eine skalierte Vorschau des Etiketts in der konfigurierten Größe. Im linken Bereich können Sie Folgendes konfigurieren:
 
-- **Name** – der Name der Vorlage (nur zu Ihrer Information)
-- **Etikett-Typ** – Namensschilds oder Abholschein
-- **Breite / Höhe** – Etikett-Größe in Zoll
+- **Name** — der Vorlagenname (nur als Referenz für Sie)
+- **Label Type** — Nametag oder Pickup Slip
+- **Width / Height** — Etiketengröße in Zoll
 
 ### Blöcke hinzufügen
 
-Ein Etikett wird aus Blöcken erstellt – einzelnen Inhaltsteilen, die auf der Etikett-Leinwand positioniert sind. Klicken Sie auf **Block hinzufügen**, um einen neuen Block einzufügen, und wählen Sie seinen Typ:
+Ein Etikett wird aus Blöcken aufgebaut — einzelne Inhaltsabschnitte, die auf der Etikettencanvas positioniert sind. Klicken Sie auf **Add Block**, um einen neuen Block einzufügen und wählen Sie seinen Typ:
 
-- **Feld** – zieht einen Datenwert zur Druckzeit:
-  - `person.displayName` – der vollständige Name der Person
-  - `sessions` – der Service/Klassenzimmer, in den sie eingecheckt haben
-  - `securityCode` – der zufällig generierte Abholsicherheitscode
-  - `children` – Liste der Kinder (für Abholscheine)
-  - `person.nametagNotes` – alle speziellen Notizen zur Personalakte
-  - `campus` – der Campus-Name
-- **Text** – statischer Text, den Sie eingeben (für Überschriften, Etiketten oder Anweisungen)
-- **Barcode** – ein Barcode, der den Sicherheitscode kodiert
+- **Field** — ruft einen Datenwert zum Zeitpunkt des Drucks ab:
+  - `person.displayName` — der vollständige Name der Person
+  - `sessions` — der Service/das Klassenzimmer, in dem sie eingecheckt ist
+  - `securityCode` — der zufällig generierte Abholsicherheitscode
+  - `children` — Liste der Kinder (für Abholzettel)
+  - `person.nametagNotes` — alle speziellen Notizen in der Personenakte
+  - `campus` — der Name des Campus
+- **Text** — statischer Text, den Sie eingeben (für Überschriften, Labels oder Anweisungen)
+- **Barcode** — ein Barcode, der den Sicherheitscode kodiert
 
 ### Blöcke positionieren
 
-Jeder Block hat **X**-, **Y**-, **Breite**- und **Höhe**-Felder, die in Prozentanteilen der Etikett-Leinwand ausgedrückt werden (0–100). Passen Sie diese an, um Inhalte genau zu positionieren. Sie können auch Folgendes einstellen:
+Jeder Block hat **X**, **Y**, **Width** und **Height**-Felder, ausgedrückt als Prozentsätze der Etikettencanvas (0–100). Passen Sie diese an, um Inhalte präzise zu positionieren. Sie können auch Folgendes einstellen:
 
-- **Schriftgröße** – Textgröße in Punkten
-- **Fett** – Fettdruck-Text umschalten
-- **Ausrichtung** – linke, mittlere oder rechte Textausrichtung
-- **Bedingung** – Block optional ausblenden, wenn ein Feld leer ist (zum Beispiel nametagNotes nur anzeigen, wenn es einen Wert hat)
+- **Font Size** — Textgröße in Punkten
+- **Bold** — fettgedruckten Text aktivieren
+- **Align** — Text-Ausrichtung: links, Mitte oder rechts
+- **Condition** — Block optional verbergen, wenn ein Feld leer ist (zum Beispiel nur nametagNotes anzeigen, wenn es einen Wert hat)
 
 ### Speichern
 
-Klicken Sie auf **Speichern**, um die Vorlage zu speichern. Die aktualisierte Vorlage wird beim nächsten Drucken von Etiketten in B1 Checkin verwendet.
+Klicken Sie auf **Save**, um die Vorlage zu speichern. Die aktualisierte Vorlage wird beim nächsten Drucken von Etiketten in B1 Checkin verwendet.
 
-## Vorlagen neu anordnen
+## Neuordnung von Vorlagen
 
-Wenn Sie mehrere Namensschilds- oder Abholschein-Vorlagen haben, verwendet B1 Checkin standardmäßig die erste Vorlage in der Liste. Ziehen Sie Vorlagen per Drag & Drop, um sie neu anzuordnen.
+Wenn Sie mehrere Namensschild- oder Abholzettelvorlagen haben, verwendet B1 Checkin standardmäßig die erste Vorlage in der Liste. Ziehen Sie Vorlagen neu an, um sie neu zu ordnen.
 
-## Vorlage löschen
+## Löschen einer Vorlage
 
-Klicken Sie auf das Löschen-Symbol in einer Vorlagenzeile und bestätigen Sie. Das Löschen der letzten Vorlage eines Typs stellt die standardmäßig integrierte Vorlage wieder her.
+Klicken Sie auf das Löschsymbol in einer Vorlagenzeile und bestätigen Sie. Wenn Sie die letzte Vorlage eines Typs löschen, wird die integrierte Standardvorlage wiederhergestellt.
 
 :::tip
-Machen Sie nach dem Bearbeiten einer Vorlage einen Testdruck, um zu bestätigen, dass das Layout korrekt aussieht, bevor Ihr nächster Service beginnt.
+Machen Sie einen Testdruck nach dem Bearbeiten einer Vorlage, um zu bestätigen, dass das Layout korrekt aussieht, bevor Ihr nächster Service beginnt.
 :::
 
 ## Verwandte Artikel
 
-- [Check-In-Einrichtung](setup) – konfigurieren Sie Services und Gruppen für Check-In
-- [Check-In durchführen](check-in) – der Check-In-Prozess für Familien
-- [B1 Checkin Erste Schritte](../../b1-checkin/getting-started/index) – die Checkin-Kiosk-App
+- [Check-In Setup](setup) — konfigurieren Sie Services und Gruppen für Check-in
+- [Completing Check-In](check-in) — der Check-in-Ablauf für Familien
+- [B1 Checkin Getting Started](../../b1-checkin/getting-started/) — die Checkin-Kiosk-App

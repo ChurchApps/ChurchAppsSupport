@@ -86,4 +86,4 @@ Make a test print after editing a template to confirm the layout looks right bef
 
 - [Check-In Setup](setup) — configure services and groups for check-in
 - [Completing Check-In](check-in) — the check-in flow for families
-- [B1 Checkin Getting Started](../../b1-checkin/getting-started/index) — the Checkin kiosk app
+- [B1 Checkin Getting Started](../../b1-checkin/getting-started/) — the Checkin kiosk app

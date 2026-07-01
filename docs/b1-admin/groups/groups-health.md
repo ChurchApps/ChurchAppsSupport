@@ -14,7 +14,7 @@ The Groups Health dashboard gives you a bird's-eye view of how all your groups a
 <h4>Before You Begin</h4>
 
 - You need at least a few groups with members to see meaningful data. See [Creating Groups](creating-groups).
-- Attendance data is pulled from recorded sessions. See the [Attendance](../attendance/index) section.
+- Attendance data is pulled from recorded sessions. See the [Attendance](../attendance/) section.
 
 </div>
 

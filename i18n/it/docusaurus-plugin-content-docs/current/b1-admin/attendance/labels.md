@@ -1,89 +1,89 @@
 ---
-title: "Progettista di Etichette di Check-In"
+title: "Progettista etichette check-in"
 ---
 
-# Progettista di Etichette di Check-In
+# Progettista etichette check-in
 
 <div class="article-intro">
 
-Il Progettista di Etichette ti consente di creare e personalizzare i modelli di etichette di identificazione e moduli di ritiro che vengono stampati quando le famiglie controllano l'ingresso dei loro bambini. Puoi controllare esattamente quali informazioni compaiono su ogni etichetta, dove è posizionata e come appare.
+Il Progettista etichette ti consente di creare e personalizzare i modelli di targhette nominative e buoni di ritiro che vengono stampati quando le famiglie accedono i loro figli. Puoi controllare esattamente quali informazioni vengono visualizzate su ogni etichetta, dove viene posizionata e come appare.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Configura [Frequenza](setup) e configura almeno un orario di servizio con il check-in abilitato
+- Configura [Partecipazione](setup) e abilita almeno un orario di servizio con accesso abilitato
 - Configura [Check-In](check-in) in modo che le etichette vengano stampate
-- Hai bisogno dell'accesso amministrativo alla sezione Frequenza
+- Hai bisogno dell'accesso amministrativo alla sezione Partecipazione
 
 </div>
 
-## Apertura del Progettista di Etichette
+## Apertura del Progettista etichette
 
-In B1 Admin, vai su **Frequenza** nella barra laterale sinistra e seleziona **Etichette**. Vedrai un elenco dei tuoi modelli di etichette salvati, separati per tipo: **Etichetta Identificativa** e **Modulo di Ritiro**.
+In B1 Admin, vai a **Partecipazione** nella barra laterale sinistra e seleziona **Etichette**. Vedrai un elenco dei tuoi modelli di etichette salvati, separati per tipo: **Targhetta nominativa** e **Buono di ritiro**.
 
-## Tipi di Etichette
+## Tipi di etichette
 
-- **Etichetta Identificativa** — stampata e attaccata al bambino. Tipicamente include il nome del bambino, la sua classe/sessione e un codice di sicurezza.
-- **Modulo di Ritiro** — consegnato al genitore o tutore. Tipicamente include il codice di sicurezza e un elenco dei bambini che hanno effettuato il check-in.
+- **Targhetta nominativa** — stampata e applicata al bambino. Tipicamente include il nome del bambino, la sua classe/sessione e un codice di sicurezza.
+- **Buono di ritiro** — consegnato al genitore o tutore. Tipicamente include il codice di sicurezza e un elenco dei bambini che hanno effettuato l'accesso.
 
-B1 ti avvia con un modello di etichetta identificativa predefinito e un modello di modulo di ritiro predefinito dimensionato per etichette termiche standard da 3,5 × 1,1 pollici.
+B1 ti inizia con una targhetta nominativa predefinita e un modello di buono di ritiro predefinito dimensionato per etichette termiche standard di 3,5 × 1,1 pollici.
 
-## Creazione di un Modello di Etichetta
+## Creazione di un modello di etichetta
 
-1. Fai clic su **Aggiungi Etichetta Identificativa** o **Aggiungi Modulo di Ritiro** (o usa il menu a discesa per scegliere).
-2. Un nuovo modello si apre nell'editor di etichette.
+1. Fai clic su **Aggiungi targhetta nominativa** o **Aggiungi buono di ritiro** (o usa il menu a discesa per scegliere).
+2. Un nuovo modello si apre nell'editor delle etichette.
 
-### Editor di Etichette
+### Editor etichette
 
 L'editor mostra un'anteprima in scala dell'etichetta alla dimensione configurata. Nel pannello sinistro puoi configurare:
 
 - **Nome** — il nome del modello (solo per tuo riferimento)
-- **Tipo di Etichetta** — Etichetta Identificativa o Modulo di Ritiro
+- **Tipo di etichetta** — Targhetta nominativa o Buono di ritiro
 - **Larghezza / Altezza** — dimensione dell'etichetta in pollici
 
-### Aggiunta di Blocchi
+### Aggiunta di blocchi
 
-Un'etichetta è costruita da blocchi — singoli pezzi di contenuto posizionati sulla tela dell'etichetta. Fai clic su **Aggiungi Blocco** per inserire un nuovo blocco e scegliere il suo tipo:
+Un'etichetta è costruita da blocchi — singoli pezzi di contenuto posizionati sul canvas dell'etichetta. Fai clic su **Aggiungi blocco** per inserire un nuovo blocco e scegli il suo tipo:
 
-- **Campo** — estrae un valore di dati al momento della stampa:
+- **Campo** — estrae un valore dati al momento della stampa:
   - `person.displayName` — il nome completo della persona
-  - `sessions` — il servizio/classe in cui hanno effettuato il check-in
-  - `securityCode` — il codice di sicurezza generato casualmente per il ritiro
-  - `children` — elenco dei bambini (per i moduli di ritiro)
-  - `person.nametagNotes` — eventuali note speciali sul record della persona
+  - `sessions` — il servizio/classe a cui hanno effettuato l'accesso
+  - `securityCode` — il codice di sicurezza per il ritiro generato casualmente
+  - `children` — elenco dei bambini (per i buoni di ritiro)
+  - `person.nametagNotes` — qualsiasi nota speciale sul record della persona
   - `campus` — il nome del campus
 - **Testo** — testo statico che digiti (per intestazioni, etichette o istruzioni)
-- **Codice a Barre** — un codice a barre che codifica il codice di sicurezza
+- **Codice a barre** — un codice a barre che codifica il codice di sicurezza
 
-### Posizionamento dei Blocchi
+### Posizionamento dei blocchi
 
-Ogni blocco ha campi **X**, **Y**, **Larghezza** e **Altezza** espressi come percentuali della tela dell'etichetta (0-100). Regola questi per posizionare il contenuto con precisione. Puoi anche impostare:
+Ogni blocco ha i campi **X**, **Y**, **Larghezza** e **Altezza** espressi come percentuali del canvas dell'etichetta (0–100). Regolali per posizionare il contenuto con precisione. Puoi anche impostare:
 
-- **Dimensione del Carattere** — dimensione del testo in punti
-- **Grassetto** -- abilita/disabilita il testo in grassetto
-- **Allineamento** -- allineamento del testo a sinistra, centro o destra
-- **Condizione** -- facoltativamente nascondi il blocco se un campo è vuoto (ad esempio, mostra solo nametagNotes se ha un valore)
+- **Dimensione del carattere** — dimensione del testo in punti
+- **Grassetto** — attiva/disattiva il testo in grassetto
+- **Allineamento** — allineamento del testo a sinistra, al centro o a destra
+- **Condizione** — nascondi facoltativamente il blocco se un campo è vuoto (ad esempio, mostra solo nametagNotes se ha un valore)
 
 ### Salvataggio
 
 Fai clic su **Salva** per salvare il modello. Il modello aggiornato verrà utilizzato la prossima volta che le etichette vengono stampate in B1 Checkin.
 
-## Riordino dei Modelli
+## Riordino dei modelli
 
-Se hai più modelli di etichette identificative o moduli di ritiro, B1 Checkin utilizzerà il primo modello nell'elenco per impostazione predefinita. Trascina i modelli per riordinarli.
+Se hai più modelli di targhette nominative o buoni di ritiro, B1 Checkin utilizzerà il primo modello nell'elenco per impostazione predefinita. Trascina i modelli per riordinarli.
 
-## Eliminazione di un Modello
+## Eliminazione di un modello
 
-Fai clic sull'icona di eliminazione su qualsiasi riga del modello e conferma. L'eliminazione dell'ultimo modello di un tipo ripristina il modello incorporato predefinito.
+Fai clic sull'icona di eliminazione su una riga del modello e conferma. L'eliminazione dell'ultimo modello di un tipo ripristina il modello incorporato predefinito.
 
 :::tip
-Effettua una stampa di prova dopo la modifica di un modello per confermare che il layout sia corretto prima del tuo prossimo servizio.
+Esegui una stampa di prova dopo aver modificato un modello per confermare che il layout appare corretto prima del tuo prossimo servizio.
 :::
 
-## Articoli Correlati
+## Articoli correlati
 
-- [Configurazione del Check-In](setup) — configura servizi e gruppi per il check-in
-- [Completamento del Check-In](check-in) — il flusso di check-in per le famiglie
-- [Guida Introduttiva a B1 Checkin](../../b1-checkin/getting-started/index) — l'app del chiosco Checkin
+- [Configurazione check-in](setup) — configura servizi e gruppi per il check-in
+- [Completamento check-in](check-in) — il flusso di check-in per le famiglie
+- [Guida introduttiva a B1 Checkin](../../b1-checkin/getting-started/) — l'app Checkin kiosk

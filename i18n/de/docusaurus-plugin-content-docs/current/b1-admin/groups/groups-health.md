@@ -1,53 +1,53 @@
 ---
-title: "Gruppen-Gesundheit"
+title: "Gruppengesundheit"
 ---
 
-# Gruppen-Gesundheit
+# Gruppengesundheit
 
 <div class="article-intro">
 
-Das Dashboard „Gruppen-Gesundheit" bietet Ihnen einen Überblick darüber, wie es all Ihren Gruppen geht – Mitgliedschaftstrends, Anwesenheitsdurchschnitte und Wachstum oder Verlust in den letzten 90 Tagen – alles in einer einzigen sortierbaren Tabelle.
+Das Dashboard „Gruppengesundheit" bietet einen Überblick über den Zustand aller Ihrer Gruppen — Mitgliedschaftstrends, Anwesenheitsdurchschnitte und Wachstum oder Abwanderung in den letzten 90 Tagen — alles in einer sortierbaren Tabelle.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Sie benötigen mindestens ein paar Gruppen mit Mitgliedern, um aussagekräftige Daten zu sehen. Siehe [Gruppen erstellen](creating-groups).
-- Anwesenheitsdaten werden aus aufgezeichneten Sitzungen gezogen. Siehe den Abschnitt [Anwesenheit](../attendance/index).
+- Sie benötigen mindestens ein paar Gruppen mit Mitgliedern, um aussagekräftige Daten zu sehen. Siehe [Creating Groups](creating-groups).
+- Anwesenheitsdaten werden aus aufgezeichneten Sitzungen abgerufen. Siehe den Bereich [Attendance](../attendance/).
 
 </div>
 
-## Gruppen-Gesundheit öffnen
+## Öffnen von Gruppengesundheit
 
-Gehen Sie in B1 Admin zu **Gruppen** in der linken Seitenleiste und wählen Sie **Gesundheit**. Das Dashboard lädt eine Tabelle mit einer Zeile pro Gruppe.
+In B1 Admin gehen Sie zu **Groups** in der linken Seitenleiste und wählen Sie **Health**. Das Dashboard lädt eine Tabelle mit einer Zeile pro Gruppe.
 
 ## Spalten
 
-| Spalte | Was sie zeigt |
-|--------|--------------|
-| **Name** | Der Gruppenname, verlinkt zur Gruppdetailseite |
-| **Kategorie** | Die Gruppenkategorie |
-| **Mitglieder** | Aktuelle aktive Mitgliederzahl |
-| **Beigetreten (90 Tage)** | Mitglieder, die in den letzten 90 Tagen beigetreten sind |
-| **Ausgetreten (90 Tage)** | Mitglieder, die in den letzten 90 Tagen ausgetreten sind |
-| **Abwanderung (90 Tage)** | Netto-Abwanderungsrate in Prozent über 90 Tage |
-| **Durchschn. Anwesenheit** | Durchschnittliche Kopfzahl pro Anwesenheitssitzung |
+| Spalte | Was sie anzeigt |
+|--------|-----------------|
+| **Name** | Der Gruppenname, verlinkt zur Detailseite der Gruppe |
+| **Category** | Die Kategorie der Gruppe |
+| **Members** | Aktuelle Anzahl aktiver Mitglieder |
+| **Joined (90d)** | Mitglieder, die in den letzten 90 Tagen beigetreten sind |
+| **Left (90d)** | Mitglieder, die in den letzten 90 Tagen gegangen sind |
+| **Churn (90d)** | Netto-Abwanderungsrate als Prozentsatz über 90 Tage |
+| **Avg Attendance** | Durchschnittliche Personenanzahl pro Anwesenheitssitzung |
 
-Klicken Sie auf einen beliebigen Spaltenkopf, um die Tabelle nach dieser Spalte zu sortieren. Klicken Sie erneut, um die Sortierrichtung umzukehren.
+Klicken Sie auf einen Spaltenkopf, um die Tabelle nach dieser Spalte zu sortieren. Klicken Sie erneut, um die Sortierrichtung umzukehren.
 
-## Gesundheitsdaten verwenden
+## Verwenden von Gesundheitsdaten
 
-- **Hohe Abwanderung + niedrige Beitritte** – eine Gruppe, die schrumpft und verlorene Mitglieder nicht ersetzt. Wert für ein Gespräch mit dem Gruppenleiter.
-- **Hohe Beitritte + niedrige Anwesenheit** – Personen melden sich an, aber erscheinen nicht. Erwägen Sie ein Engagement-Follow-up.
-- **Hohe durchschnittliche Anwesenheit** – eine gesunde, aktive Gruppe. Mögliches Vorbild für andere Gruppen.
+- **Hohe Abwanderung + wenig Neueinsteiger** — eine Gruppe, die schrumpft und verlorene Mitglieder nicht ersetzt. Wert eines Gesprächs mit dem Gruppenleiter.
+- **Hohe Neueinsteiger + niedrige Anwesenheit** — Menschen melden sich an, aber erscheinen nicht. Erwägen Sie eine Engagement-Nachverfolgung.
+- **Hohe durchschnittliche Anwesenheit** — eine gesunde, aktive Gruppe. Potentielles Modell für andere Gruppen.
 
 :::tip
-Wenn Sie auf einen Gruppennamen klicken, gelangen Sie direkt zur Detailseite der Gruppe, auf der Sie einzelne Mitglieder, Anwesenheitsaufzeichnungen und Kalender-Ereignisse überprüfen können.
+Durch Klick auf einen Gruppennamen gelangen Sie direkt zur Detailseite der Gruppe, wo Sie einzelne Mitglieder, Anwesenheitsdatensätze und Kalenderereignisse überprüfen können.
 :::
 
 ## Verwandte Artikel
 
-- [Gruppen erstellen](creating-groups) – richten Sie Gruppen ein
-- [Gruppenmitglieder](group-members) – verwalten Sie die Gruppenmitgliedschaft
-- [Anwesenheit verfolgen](../attendance/tracking-attendance) – zeichnen Sie Anwesenheitssitzungen auf, die dieses Dashboard speisen
+- [Creating Groups](creating-groups) — Gruppen einrichten
+- [Group Members](group-members) — Gruppenmitgliedschaft verwalten
+- [Tracking Attendance](../attendance/tracking-attendance) — Anwesenheitssitzungen aufzeichnen, die dieses Dashboard speisen
