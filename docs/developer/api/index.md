@@ -6,7 +6,7 @@ title: "API"
 
 <div class="article-intro">
 
-The ChurchApps API is a **modular monolith** -- a single codebase that serves six distinct modules, each with its own database. This architecture gives you the organizational benefits of microservices (clear boundaries, independent data stores) with the operational simplicity of a single deployment.
+The ChurchApps API is a **modular monolith** -- a single codebase that serves six data modules, each with its own database. This architecture gives you the organizational benefits of microservices (clear boundaries, independent data stores) with the operational simplicity of a single deployment.
 
 </div>
 
@@ -39,12 +39,14 @@ The ChurchApps API is a **modular monolith** -- a single codebase that serves si
 
 ## Lambda Functions
 
-When deployed to AWS, the API runs as four Lambda functions:
+When deployed to AWS, the API runs as six Lambda functions:
 
 - **`web`** -- Handles all HTTP requests
 - **`socket`** -- Manages WebSocket connections
-- **`timer15Min`** -- Runs every 15 minutes for email notifications
+- **`timer15Min`** -- Runs every 30 minutes for email notifications (the name is historical)
 - **`timerMidnight`** -- Runs daily for digest emails and maintenance tasks
+- **`timerScheduledTasks`** -- Runs daily for due automations and overdue workflow processing
+- **`timerWebhooks`** -- Runs every minute to deliver queued outbound webhooks
 
 ## Shared Libraries
 

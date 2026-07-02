@@ -12,24 +12,27 @@ ChurchApps web apps deliver push notifications via the W3C Web Push API — the 
 
 ## When push fires
 
-The MessagingApi delivers a Web Push message in three situations, all routed through `Api/src/modules/messaging/helpers/NotificationHelper.ts`:
+Push is one tier in a single delivery escalation inside `NotificationHelper.attemptDeliveryWithEscalation()` (`Api/src/modules/messaging/helpers/NotificationHelper.ts`): an in-app preference gate, then socket delivery, then push, then email. A recipient who has muted the category never reaches push; a recipient with no active socket connection in the relevant room (see [Real-time Architecture](./realtime)) falls through to it. Direct messages are the one exception — they always attempt push alongside socket delivery, so an installed PWA sitting in the background still surfaces an OS-level notification. Scheduled reminders and staff-triggered broadcasts start directly at the push tier, skipping the socket step altogether.
 
-1. **Group / content notifications** — someone replies to a thread the user follows or is mentioned in.
-2. **Private messages** — `POST /messaging/privatemessages` triggers a push to the recipient's enrolled devices.
-3. **Generic notifications** — direct calls to `POST /messaging/notifications/create` or `/ping`.
+The most common paths that reach push:
 
-Push is the **last-resort tier** in `NotificationHelper`'s escalation ladder. If a recipient has an active WebSocket connection in the relevant room (see [Real-time Architecture](./realtime)), they receive the message in-app and push is suppressed for that delivery. Push only fires when the user is offline or hasn't been seen recently.
+1. **Content notifications** — a reply to a conversation the person follows, a mention, or another event routed through `NotificationHelper.createNotifications()`.
+2. **Private messages** — a direct message escalates through the same delivery function and always attempts push in addition to socket delivery.
+3. **Scheduled reminders** — event, task, and serving reminders expanded and dispatched by the reminder engine, which starts new occurrences directly at the push tier.
+4. **Staff-triggered pushes** — `POST /messaging/notifications/create`, `/ping`, and `/group/send` for one-off or group broadcasts.
 
 ## Server flow
 
 ```
-NotificationHelper.checkShouldNotify(...)
+NotificationHelper.createNotifications(...) / checkShouldNotify(...) / ReminderEngine.scan(...)
   │
-  ├─ in-page socket delivery via DeliveryHelper  ← preferred
-  │
-  └─ NotificationHelper.<sendXxx>(...)
-       └─ WebPushHelper.sendBulkTypedMessages(tokens, title, body, type, contentId)
-            └─ web-push library → VAPID-signed POST → browser push service
+  └─ NotificationHelper.attemptDeliveryWithEscalation(...)
+       ├─ in-app preference gate                  ← muted recipients stop here, no push
+       ├─ socket delivery via DeliveryHelper       ← preferred; skipped for reminders/broadcasts (they start at push)
+       ├─ push preference gate
+       │    └─ WebPushHelper.sendBulkTypedMessages(tokens, title, body, type, contentId)
+       │         └─ web-push library → VAPID-signed POST → browser push service
+       └─ email preference gate → digest or immediate send
 ```
 
 ### Required environment variables
@@ -132,6 +135,7 @@ self.addEventListener("notificationclick", (event) => {
 
 ## Related Pages
 
-- [Real-time Architecture](./realtime) -- WebSocket delivery; push is the offline-fallback for the same notifications
+- [Notifications Architecture](./architecture/notifications) -- The full in-app/push/email escalation funnel and the reminder engine
+- [Real-time Architecture](./realtime) -- WebSocket delivery; push escalates from the same in-app funnel when a socket delivery doesn't land
 - [Messaging Endpoints](./api/endpoints/messaging) -- Notifications, devices, and the rest of the messaging surface
 - [AppHelper](./shared-libraries/app-helper) -- The npm package that ships `WebPushHelper`

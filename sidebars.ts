@@ -591,6 +591,19 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'category',
+          label: 'Architecture',
+          link: { type: 'doc', id: 'developer/architecture/index' },
+          items: [
+            'developer/architecture/notifications',
+            'developer/realtime',
+            'developer/web-push',
+            'developer/architecture/giving',
+            'developer/architecture/check-ins',
+            'developer/architecture/integrations',
+          ],
+        },
+        {
+          type: 'category',
           label: 'API',
           link: { type: 'doc', id: 'developer/api/index' },
           items: [
@@ -656,8 +669,6 @@ const sidebars: SidebarsConfig = {
             'developer/deployment/railway-template',
           ],
         },
-        'developer/realtime',
-        'developer/web-push',
         'developer/server-admin',
         'developer/freeplay-content-provider',
       ],

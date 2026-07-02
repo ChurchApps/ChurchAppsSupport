@@ -29,9 +29,11 @@ git clone https://github.com/ChurchApps/Api.git
 
 ### 2. Install dependencies
 
+The project uses Yarn (a guard blocks `npm install`):
+
 ```bash
 cd Api
-npm install
+yarn install
 ```
 
 ### 3. Configure environment variables
@@ -57,7 +59,7 @@ npm run initdb
 This creates all six databases and their tables automatically.
 
 :::tip
-You can initialize a single module's database with `npm run initdb:membership` (or `attendance`, `content`, `giving`, `messaging`, `doing`).
+You can initialize a single module's database with `npm run initdb -- --module=membership` (or `attendance`, `content`, `giving`, `messaging`, `doing`).
 :::
 
 ### 5. Start the dev server
@@ -76,7 +78,7 @@ The API starts with hot reload at [http://localhost:8084](http://localhost:8084)
 | `npm run build` | Clean, compile TypeScript, and copy assets |
 | `npm run test` | Run tests with Jest (includes coverage) |
 | `npm run test:watch` | Run tests in watch mode |
-| `npm run lint` | Run Prettier and ESLint with auto-fix |
+| `npm run lint` | Run ESLint with auto-fix (ESLint is the sole formatter) |
 
 ## Staging Deployment
 
@@ -94,20 +96,19 @@ Make sure your AWS credentials are configured before running the deploy command.
 
 ## Local Library Development
 
-If you need to develop a shared library (`@churchapps/helpers` or `@churchapps/apihelper`) alongside the API, use `npm link`:
+If you need to develop a shared library (`@churchapps/helpers` or `@churchapps/apihelper`) alongside the API, build it in the [Packages](https://github.com/ChurchApps/Packages) workspace and add a temporary Yarn portal in the API:
 
 ```bash
-# In the library directory
-cd Helpers
-npm run build
-npm link
+# In the Packages workspace
+yarn build
 
 # In the API directory
-cd ../Api
-npm link @churchapps/helpers
+yarn link ../Packages/helpers
+# ... test ...
+yarn unlink ../Packages/helpers && yarn install
 ```
 
-This lets you test library changes against the API without publishing to npm.
+This lets you test library changes against the API without publishing to npm. See [Shared Libraries](../shared-libraries/#local-development-against-a-consuming-app) for details -- and never commit the portal resolution the link writes into `package.json`.
 
 ## Related Articles
 

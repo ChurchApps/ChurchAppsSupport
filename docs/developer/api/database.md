@@ -6,7 +6,7 @@ title: "Database"
 
 <div class="article-intro">
 
-The ChurchApps API uses a **database-per-module** architecture. Each of the six modules has its own MySQL database with an independent connection pool, providing clear data boundaries while keeping everything within a single deployment.
+The ChurchApps API uses a **database-per-module** architecture. Each of the six data modules has its own MySQL database with an independent connection pool, providing clear data boundaries while keeping everything within a single deployment.
 
 </div>
 
@@ -32,8 +32,9 @@ Api
 
 ### Key Design Decisions
 
-- **One database per module** -- Each module maintains its own MySQL database with a dedicated connection pool (`EnhancedPoolHelper`). This keeps modules decoupled and allows independent schema evolution.
-- **Repository pattern with direct SQL** -- There is no ORM. All data access goes through repository classes that execute SQL directly using `DB.query()`. This gives full control over query performance and behavior.
+- **One database per module** -- Each module maintains its own MySQL database with a dedicated connection pool (managed by `KyselyPool`). This keeps modules decoupled and allows independent schema evolution.
+- **Exclusive ownership** -- A module's tables are read and written only by that module's own code. When another module needs the data, it calls the owning module's gateway rather than querying the tables itself -- see [Cross-Module Communication](./module-structure#cross-module-communication).
+- **Repository pattern without an ORM** -- All data access goes through repository classes that build typed SQL with the Kysely query builder against the module's schema. This gives full control over query performance and behavior.
 - **Multi-tenant by design** -- Every query is scoped by `churchId`. All tables include a `churchId` column, and the repository layer enforces tenant isolation automatically.
 
 ## Connection Strings
@@ -46,13 +47,15 @@ mysql://user:password@host:port/database
 
 For example, a local development setup might look like:
 
+Each module reads its connection from an environment variable named `<MODULE>_CONNECTION_STRING`:
+
 ```env
-MEMBERSHIP_DB=mysql://root:password@localhost:3306/churchapps_membership
-ATTENDANCE_DB=mysql://root:password@localhost:3306/churchapps_attendance
-CONTENT_DB=mysql://root:password@localhost:3306/churchapps_content
-GIVING_DB=mysql://root:password@localhost:3306/churchapps_giving
-MESSAGING_DB=mysql://root:password@localhost:3306/churchapps_messaging
-DOING_DB=mysql://root:password@localhost:3306/churchapps_doing
+MEMBERSHIP_CONNECTION_STRING=mysql://root:password@localhost:3306/churchapps_membership
+ATTENDANCE_CONNECTION_STRING=mysql://root:password@localhost:3306/churchapps_attendance
+CONTENT_CONNECTION_STRING=mysql://root:password@localhost:3306/churchapps_content
+GIVING_CONNECTION_STRING=mysql://root:password@localhost:3306/churchapps_giving
+MESSAGING_CONNECTION_STRING=mysql://root:password@localhost:3306/churchapps_messaging
+DOING_CONNECTION_STRING=mysql://root:password@localhost:3306/churchapps_doing
 ```
 
 :::info
@@ -61,10 +64,10 @@ In production, connection strings are stored in AWS SSM Parameter Store and read
 
 ## Schema Scripts
 
-Database schema scripts are located in the `tools/dbScripts/` directory, organized by module:
+Table schemas are defined as Kysely migrations in the `tools/migrations/` directory, organized by module:
 
 ```
-tools/dbScripts/
+tools/migrations/
 ├── membership/
 ├── attendance/
 ├── content/
@@ -73,7 +76,7 @@ tools/dbScripts/
 └── doing/
 ```
 
-These scripts define table creation, indexes, and any necessary seed data.
+Migrations define table creation, indexes, and schema changes. The `tools/dbScripts/` directory holds demo and seed data that can be loaded on top of the schema.
 
 ## Database Initialization
 
@@ -83,17 +86,12 @@ These scripts define table creation, indexes, and any necessary seed data.
 npm run initdb
 ```
 
-This creates all six databases and runs the schema scripts for each one.
+This creates all six databases and runs the migrations for each one.
 
 ### Initialize a single module
 
 ```bash
-npm run initdb:membership
-npm run initdb:attendance
-npm run initdb:content
-npm run initdb:giving
-npm run initdb:messaging
-npm run initdb:doing
+npm run initdb -- --module=membership
 ```
 
 :::tip
@@ -102,24 +100,32 @@ When working on a specific module, you can re-initialize just that module's data
 
 ## Data Access Pattern
 
-Repositories access data through the `DB.query()` method. A typical repository method looks like this:
+Repositories build queries with the Kysely query builder against the module's typed database schema, obtained through the module's `getDb()` function. A typical repository method looks like this:
 
 ```typescript
-public async loadByChurchId(churchId: string) {
-  return DB.query("SELECT * FROM people WHERE churchId=?", [churchId]);
+public async loadAll(churchId: string) {
+  return getDb().selectFrom("people").selectAll()
+    .where("churchId", "=", churchId)
+    .execute();
 }
 ```
 
-Repositories are obtained via `RepositoryManager`:
+Repositories are obtained via `RepoManager`:
 
 ```typescript
-const repos = RepositoryManager.getRepositories<MembershipRepositories>("membership");
-const people = await repos.person.loadByChurchId(churchId);
+const repos = await RepoManager.getRepos<Repos>("membership");
+const people = await repos.person.loadAll(churchId);
 ```
 
 :::warning
 Always include `churchId` in your queries to maintain multi-tenant isolation. Never query across tenants unless you have a specific, authorized reason to do so.
 :::
+
+## Cross-Module References
+
+Because each module's data lives in a separate database, there are no foreign keys or SQL joins across module boundaries. A record that relates to another module's data stores that record's id -- for example, a donation in the giving database carries the `personId` of a person in the membership database -- and any cross-module composition happens in application code.
+
+This constraint is what makes the module boundaries real: each schema can evolve independently, a module's database can be moved to its own server, and a module could even be extracted into a standalone service without untangling shared tables or cross-database queries.
 
 ## Related Articles
 

@@ -63,7 +63,7 @@ type PayloadAction =
   | "socketId"            // server → client, after connect, carries the socketId to use for room joins
   | "message"             // server → client, new message
   | "deleteMessage"       // server → client, message removed
-  | "privateMessage"      // server → client, new message in a private conversation
+  | "privateMessage"      // server → client, badge-count ping to the recipient's "alerts" room when a direct message escalates; the message body itself arrives via the ordinary "message" action inside the open conversation
   | "conversationActivity"// server → client, secondary "something happened" signal for content-room subscribers
   | "attendance"          // server → client, viewer list / presence snapshot
   | "notification"        // server → client, generic notification (counts, etc.)
@@ -220,6 +220,7 @@ The live stream is the largest anonymous consumer of the framework. It uses two 
 
 ## Related Pages
 
+- [Notifications Architecture](./architecture/notifications) -- The in-app/push/email escalation funnel this transport feeds into
 - [Messaging Endpoints](./api/endpoints/messaging) -- Full REST surface for messages, conversations, connections, devices
 - [Web Push Notifications](./web-push) -- Browser push, separate from in-page socket delivery
 - [AppHelper](./shared-libraries/app-helper) -- The npm package that ships the client primitives
