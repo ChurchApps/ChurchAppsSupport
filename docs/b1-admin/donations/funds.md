@@ -27,17 +27,22 @@ Navigate to **Donations > Funds** to see a list of all your funds. Each row show
 1. Click **Add Fund** at the top of the page.
 2. Enter a name for the fund (e.g., "Building Fund").
 3. Check the **Tax Deductible** box if donations to this fund should be included on giving statements.
-4. Click **Save**.
+4. Leave **Visible to Donors** checked to show the fund on the public and member donation forms, or uncheck it to hide the fund from donors while still using it for manually recorded donations.
+5. Click **Save**.
 
 The new fund immediately appears in your list and is available when entering donations.
 
 ## Editing and Deleting Funds
 
-- To edit a fund, click the **Edit** button next to it. You can change the name or toggle the tax-deductible setting.
+- To edit a fund, click the **Edit** button next to it. You can change the name, toggle the tax-deductible setting, or toggle **Visible to Donors** to show or hide it from donation forms.
 - To delete a fund, open the edit form and click **Delete**.
 
 :::warning
 Deleting a fund does not remove donations that were previously assigned to it. Those donation records remain in the system, but the fund will no longer be available for new donations.
+:::
+
+:::info
+Funds hidden from donors show a **Hidden** chip next to their name in this list. Hidden funds still work for donations recorded manually in B1 Admin -- they just don't appear as an option on the public or member donation forms.
 :::
 
 ## Viewing Fund Details

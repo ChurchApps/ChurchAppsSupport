@@ -61,9 +61,14 @@ You can enable registration for any calendar event so members can sign up throug
    - **Registration Opens** -- The date and time when registration becomes available.
    - **Registration Closes** -- The date and time when registration closes.
    - **Tags** -- Comma-separated labels (e.g., "youth, retreat, vbs") to help categorize registerable events.
+   - **Registration Questions** -- Optionally attach a [form](../forms/creating-forms.md) so registrants answer extra questions (dietary restrictions, T-shirt size, emergency contact, etc.) as part of signing up. Choose **None** to skip questions.
 4. Save the event.
 
-Once registration is enabled, members will see a **Register for this Event** button when they view the event on the [B1 website](../../b1-church/events/registering) or [B1 Mobile app](../../b1-mobile/events/registering).
+Once registration is enabled, members will see a **Register for this Event** button when they view the event on the [B1 website](../../b1-church/events/registering) or [B1 Mobile app](../../b1-mobile/events/registering). If you attached a form, registrants see a **Questions** step during registration and their answers are saved with their registration.
+
+:::info
+Registration Questions only works with forms that are **not** marked Restricted. A restricted form is skipped automatically during registration rather than shown, so use an unrestricted form when attaching questions to an event.
+:::
 
 ### Managing Registrations
 
@@ -73,12 +78,19 @@ To view and manage registrations for your events:
 2. You will see a table of all events with registration enabled, showing the event title, date, current registration count vs. capacity, and tags.
 3. Click on an event to see the full list of registrations, including names, member count, status, and registration date.
 4. From the detail page, you can:
+   - **Add Attendee** -- Manually register someone who signed up offline or over the phone.
    - **Cancel** individual registrations
    - **Delete** registrations permanently
    - **Export** all registrations to CSV
 
+If the event has Registration Questions attached, the detail page also shows an **Unanswered questions only** filter to quickly find registrants who haven't submitted answers yet, and a **View Answers** button on each answered registration to see their responses.
+
 :::tip
 Use the capacity progress bar to monitor how quickly events are filling up. The bar turns red when an event is at or over capacity.
+:::
+
+:::info
+CSV export does not yet include question/answer columns -- use **View Answers** to check individual responses.
 :::
 
 ## Next Steps

@@ -6,7 +6,7 @@ title: "Registering for Events"
 
 <div class="article-intro">
 
-When your church enables registration for an event, you can sign up through a simple three-step process. You can register yourself and add family members, whether you have an account or are visiting as a guest.
+When your church enables registration for an event, you can sign up through a simple step-by-step process. You can register yourself and add family members, whether you have an account or are visiting as a guest.
 
 </div>
 
@@ -40,7 +40,16 @@ If the event has a capacity limit, a progress bar shows how many spots remain. I
 3. Click the remove button next to any member to take them off the registration.
 4. If you are only registering yourself, you can skip this step.
 
-## Step 3: Confirm
+## Step 3: Answer Questions (If Asked)
+
+Some events ask registrants to answer a few extra questions -- dietary restrictions, T-shirt size, emergency contact, and similar details.
+
+1. If the event has questions attached, a **Questions** step appears next.
+2. Fill in your answers and continue.
+
+If the event has no questions attached, this step is skipped automatically and you go straight to confirming your registration.
+
+## Step 4: Confirm
 
 1. Review the event details and your registration information.
 2. Confirm your registration.

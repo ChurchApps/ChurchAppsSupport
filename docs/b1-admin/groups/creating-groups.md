@@ -48,6 +48,28 @@ Once your group is created, you can fill in additional details:
 Adding a clear description and meeting time helps members know what to expect when they join a group.
 :::
 
+## Duplicating a Group
+
+Starting a new session of a recurring class or ministry? Instead of re-entering all the settings, duplicate an existing group:
+
+1. Open the group and click the **duplicate** icon in the group banner (next to Edit).
+2. Confirm the duplication.
+
+The copy carries over the original's settings -- category, description, meeting time/location, join policy, labels, and campus -- but **not** its members. The new group is named after the original with " (Copy)" appended; rename it from the group settings.
+
+## Archiving a Group
+
+When a group is no longer active but you want to keep its history instead of deleting it:
+
+1. Open the group and click the **pencil icon** to edit its settings.
+2. Click **Archive** and confirm.
+
+Archived groups drop off the main Groups list. To find one again, turn on the **Show archived** toggle at the top of the Groups page, then click **Restore** next to the group to bring it back.
+
+:::info
+Archiving a group does not delete its members, attendance history, or calendar events -- it only hides the group from the default list until you restore it.
+:::
+
 ## Next Steps
 
 After creating and configuring your group, you are ready to:

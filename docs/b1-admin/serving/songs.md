@@ -46,7 +46,7 @@ Click on any song card to open its detail page. From here you can:
 - **Edit song details** -- Update the title, artist, duration, and other metadata.
 - **Manage arrangements** -- Each song can have multiple arrangements (for example, different keys or versions). Add, edit, or remove arrangements as needed.
 - **Add lyrics** -- Enter or update the lyrics for each arrangement.
-- **Set the key** -- Specify the musical key for each arrangement so your team knows how to prepare.
+- **Set the key** -- Specify the musical key for each arrangement using the key picker next to the lyrics. Changing the key transposes the displayed chords immediately, both on the arrangement page and when opening the song from a service plan, so your team always sees chords in the key they're actually playing.
 - **Add external links** -- Attach links to resources like YouTube videos, chord charts, or sheet music hosted elsewhere.
 
 ## Arrangements

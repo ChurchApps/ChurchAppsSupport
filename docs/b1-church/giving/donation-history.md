@@ -52,6 +52,8 @@ Print your previous year's giving statement early in the new year so you have it
 
 From the **Donate** section, you can also click **Recurring Donations** to manage any scheduled giving you have set up. This section lets you view, update, or cancel recurring donations and manage your saved payment methods.
 
+If a recurring donation is charged through **Stripe**, you can also **pause** it instead of canceling -- click the pause icon next to the donation and confirm. Giving stops until you click the same icon to **resume**; a paused donation is marked **Paused** in the list. Recurring donations through other payment providers can still be edited or canceled, but not paused.
+
 ## Next Steps
 
 - [Making a Donation](./making-donations.md) -- Learn how to make a one-time or recurring gift

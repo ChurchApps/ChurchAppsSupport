@@ -50,8 +50,12 @@ Use the **Filter** dropdown at the top left to narrow the calendar to a single r
    - **Rooms** — select one or more rooms to reserve
    - **Resources** — select one or more resources to reserve
 3. Optionally set **Setup** and **Teardown** times (in minutes). These pad the booking on both ends so the space is reserved for setup and cleanup, even though the event start/end times stay the same.
-4. To specify a custom booking window (different from the event start/end), toggle **Custom Booking Window** and enter the window start and end times. Use this when a room needs to be accessible outside the event's listed hours.
-5. Click **Save** to submit the booking.
+4. To repeat the booking, check **Repeats** and configure the recurrence:
+   - **Repeat every** -- set the interval (for example, every 2 weeks).
+   - **Frequency** -- Daily, Weekly, or Monthly. Weekly lets you pick specific day(s) of the week; Monthly lets you pick a fixed day of the month or a relative pattern like "the second Tuesday."
+   - **Ends** -- Never, on a specific date, or after a set number of occurrences.
+5. To specify a custom booking window (different from the event start/end), toggle **Custom Booking Window** and enter the window start and end times. Use this when a room needs to be accessible outside the event's listed hours.
+6. Click **Save** to submit the booking.
 
 :::info
 If the room or resource has an **Approval Group** configured, the booking will appear as **Pending** until a leader of that group approves it. See [Calendar Approvals](approvals) for the approval workflow.
