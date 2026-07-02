@@ -157,6 +157,7 @@ Extends `GenericCrudController` with CRUD routes: `getById`, `getAll`, `post`, `
 | GET | `/` | JWT | — | List all funds |
 | GET | `/:id` | JWT | — | Get a fund by ID |
 | GET | `/churchId/:churchId` | Public | — | Get all funds for a specific church (public) |
+| GET | `/public/:churchId/:fundId/total?startDate=&endDate=` | Public | — | Get a fund's donation total: `{ fundId, totalAmount, donationCount }`. Powers the website builder's `campaignProgress` element |
 | POST | `/` | JWT | Donations.Edit | Create or update funds |
 | DELETE | `/:id` | JWT | Donations.Edit | Delete a fund |
 

@@ -599,6 +599,7 @@ const sidebars: SidebarsConfig = {
             'developer/web-push',
             'developer/architecture/giving',
             'developer/architecture/check-ins',
+            'developer/architecture/website-builder',
             'developer/architecture/integrations',
           ],
         },

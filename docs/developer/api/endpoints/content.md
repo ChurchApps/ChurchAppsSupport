@@ -6,7 +6,7 @@ title: "Content Endpoints"
 
 <div class="article-intro">
 
-The Content module manages website pages, sections, elements, blocks, sermons, playlists, streaming services, events, curated calendars, files, galleries, Bible translations and verse lookups, songs, arrangements, global styles, stock photos, and settings. It is the largest module in the API and powers the CMS, media/streaming, worship planning, and Bible features across all ChurchApps applications.
+The Content module manages website pages, sections, elements, blocks, blog posts, redirects, sermons, playlists, streaming services, events, curated calendars, files, galleries, Bible translations and verse lookups, songs, arrangements, global styles, stock photos, and settings. It is the largest module in the API and powers the CMS, media/streaming, worship planning, and Bible features across all ChurchApps applications.
 
 </div>
 
@@ -18,7 +18,8 @@ Base path: `/content/pages`
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| GET | `/:churchId/tree?url=&id=` | Public | — | Load full page tree (sections, elements, blocks) by URL or ID. Strips internal IDs when fetched by URL |
+| GET | `/:churchId/tree?url=&id=` | Public | — | Load full page tree (sections, elements, blocks) by URL or ID. Strips internal IDs when fetched by URL. URL-based fetches enforce `pages.visibility` — a gated page returns `{ restricted: true, visibility }` unless the (optional) JWT satisfies the gate |
+| GET | `/public/:churchId` | Public | — | List public pages (`url`, `title`, `metaDescription`); only `visibility = everyone` |
 | GET | `/:id` | JWT | — | Get a page by ID |
 | GET | `/` | JWT | — | List all pages for the church |
 | POST | `/duplicate/:id` | JWT | Content.Edit | Duplicate a page with all sections and elements |
@@ -126,6 +127,36 @@ Base path: `/content/pageHistory`
 | POST | `/` | JWT | Content.Edit | Save a page/block snapshot. Periodically cleans up entries older than 30 days |
 | POST | `/restore/:id` | JWT | Content.Edit | Restore a page/block from a history snapshot (deletes current content and recreates from snapshot) |
 | POST | `/restoreSnapshot` | JWT | Content.Edit | Restore from an inline snapshot object. Body: `{ pageId, blockId, snapshot }` |
+
+## Posts (Blog)
+
+Base path: `/content/posts`
+
+Blog posts are metadata over regular pages: each post's `pageId` references the page that holds the body, and the post row adds `title`, `slug` (unique per church), `excerpt`, `authorId`, `photoUrl`, `publishDate`, `category`, and `tags`. A post is published once `publishDate` is set and in the past. See [Website Builder Architecture](../../architecture/website-builder#blog-posts-over-pages).
+
+| Method | Path | Auth | Permission | Description |
+|--------|------|------|------------|-------------|
+| GET | `/public/:churchId?category=&tag=&page=&pageSize=` | Public | — | List published posts, paginated (max 50 per page) |
+| GET | `/public/:churchId/slug/:slug` | Public | — | Get a published post's metadata by slug |
+| GET | `/rss/:churchId?siteUrl=` | Public | — | RSS 2.0 feed of published posts (links built as `{siteUrl}/blog/{slug}`) |
+| GET | `/:id` | JWT | — | Get a post by ID |
+| GET | `/` | JWT | — | List all posts for the church |
+| POST | `/` | JWT | Content.Edit | Create or update posts (batch) |
+| DELETE | `/:id` | JWT | Content.Edit | Delete a post |
+
+## Redirects
+
+Base path: `/content/redirects`
+
+Per-church URL redirects (`fromPath` → `toPath`), capped at 200 per church. Paths are normalized (lowercased, leading slash, no trailing slash) and `fromPath` is unique per church. B1App resolves these on would-be 404s and issues an HTTP 308.
+
+| Method | Path | Auth | Permission | Description |
+|--------|------|------|------------|-------------|
+| GET | `/public/:churchId?path=` | Public | — | Resolve a path (or list all redirects when `path` is omitted) |
+| GET | `/:id` | JWT | — | Get a redirect by ID |
+| GET | `/` | JWT | — | List all redirects for the church |
+| POST | `/` | JWT | Content.Edit | Create or update redirects. Rejects `fromPath = toPath` and enforces the 200-row cap |
+| DELETE | `/:id` | JWT | Content.Edit | Delete a redirect |
 
 ## Sermons
 
@@ -421,6 +452,7 @@ Base path: `/content/support`
 
 ## Related Pages
 
+- [Website Builder Architecture](../../architecture/website-builder) -- How pages, sections, elements, posts, and redirects fit together across the apps
 - [Membership Endpoints](./membership) -- People, churches, groups, roles, permissions
 - [Attendance Endpoints](./attendance) -- Service and visit tracking
 - [Authentication & Permissions](./authentication) -- Login flow, JWT, permission model

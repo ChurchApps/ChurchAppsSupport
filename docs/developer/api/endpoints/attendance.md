@@ -68,6 +68,7 @@ Extends GenericCrudController with CRUD routes `getById`, `post`, and `delete`. 
 | GET | `/` | JWT | — | List all service times. Filter by `?serviceId=`. Add `?include=groups` to append group data |
 | GET | `/:id` | JWT | — | Get a service time by ID |
 | GET | `/search?campusId=&serviceId=` | JWT | — | Search service times by campus and service |
+| GET | `/public/:churchId` | Public | — | Get the campus → service → time tree for a church. Powers the website builder's `serviceTimes` element |
 | POST | `/` | JWT | Services.Edit | Create or update service times |
 | DELETE | `/:id` | JWT | Services.Edit | Delete a service time |
 

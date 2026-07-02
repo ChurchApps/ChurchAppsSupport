@@ -45,6 +45,7 @@ Two structural rules shape everything documented in this section:
 | [Web Push Notifications](../web-push) | The browser push channel: VAPID keys, subscription storage, delivery | Api (messaging), all web apps |
 | [Giving](./giving) | Payment providers and gateways, donation flows, funds/batches, gateway webhooks | Api (giving), apphelper, B1App, B1Admin |
 | [Check-Ins](./check-ins) | Kiosk and self check-in, the attendance data model, room routing, label printing | B1Checkin, B1App, Api (attendance) |
+| [Website Builder](./website-builder) | The page/section/element tree, the element-type contract and renderers, blog, access-gated pages, SEO, and AI generation | Api (content), AskApi, helpers/apphelper, B1Admin, B1App |
 | [Integrations](./integrations) | The extension surface: OAuth, API keys, webhooks, content providers, MCP | Api, shared libraries, external apps |
 
 :::tip

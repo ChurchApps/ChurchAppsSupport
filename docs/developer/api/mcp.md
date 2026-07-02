@@ -6,7 +6,7 @@ title: "MCP Server"
 
 <div class="article-intro">
 
-The B1 API ships an [MCP (Model Context Protocol)](https://modelcontextprotocol.io) server at `/mcp`. Any MCP-aware AI client — Claude Code, Claude Desktop, the OpenAI Agents SDK, Cursor, or your own — can connect to it and call the underlying REST API on behalf of an authenticated church user. It's a thin, generic wrapper: there are three tools, and they expose the whole API surface dynamically rather than hand-modeling each endpoint.
+The B1 API ships an [MCP (Model Context Protocol)](https://modelcontextprotocol.io) server at `/mcp`. Any MCP-aware AI client — Claude Code, Claude Desktop, the OpenAI Agents SDK, Cursor, or your own — can connect to it and call the underlying REST API on behalf of an authenticated church user. It's a thin, generic wrapper: three generic tools expose the whole API surface dynamically rather than hand-modeling each endpoint, plus one domain guide tool for the website builder.
 
 </div>
 
@@ -46,7 +46,7 @@ with HTTP 401.
 
 ## Tools
 
-Three tools, all generic. The model uses `list_endpoints` for discovery, `describe_endpoint` to learn a payload shape, and `api_call` to actually invoke the API.
+Three generic tools plus one guide. The model uses `list_endpoints` for discovery, `describe_endpoint` to learn a payload shape, `api_call` to actually invoke the API, and `describe_page_builder` when the task involves website content.
 
 ### `list_endpoints`
 
@@ -115,6 +115,10 @@ Invokes the chosen REST endpoint, in-process, through the same Express middlewar
 
 Tool result is marked `isError: true` for any response with status ≥ 400.
 
+### `describe_page_builder`
+
+The one non-generic tool: a static, self-contained guide to building website pages through the `/content/*` endpoints — the Page → Section → Element data model, the create workflow, each `elementType` with its `answersJSON` shape, section-level settings such as the `dividerTop`/`dividerBottom` shape dividers, and a worked end-to-end example. It takes no input and mirrors the element catalog maintained in the B1Admin editor (see [Website Builder Architecture](../architecture/website-builder)). Agents are expected to call it once before creating or editing page content, then act via `api_call`.
+
 ## Auth Model
 
 The MCP request itself runs through `CustomAuthProvider.getUser()` — the same path every authenticated B1 endpoint uses. A `cak_…` bearer resolves to a `Principal` whose permissions are the issuing person's current RBAC, **intersected** with the key's granted scopes. This intersection is recomputed on every request, so:
@@ -178,10 +182,10 @@ The MCP server lives at `src/modules/mcp/` in the Api repo. Notable files:
 | File | Purpose |
 |---|---|
 | `McpController.ts` | `@controller("/mcp")`; wires `StreamableHTTPServerTransport` per request |
-| `McpServer.ts` | Builds an MCP `Server`, registers the three tools |
+| `McpServer.ts` | Builds an MCP `Server`, registers the four tools |
 | `RouteInventory.ts` | Walks inversify-express-utils metadata at startup to enumerate routes |
 | `internalDispatch.ts` | Synthetic `req`/`res` that re-enters the Express app in-process |
-| `tools/` | `listEndpoints.ts`, `describeEndpoint.ts`, `apiCall.ts` |
+| `tools/` | `listEndpoints.ts`, `describeEndpoint.ts`, `apiCall.ts`, `describePageBuilder.ts` |
 | `examples.ts` | Curated request/response samples for high-traffic endpoints |
 
 ## Related

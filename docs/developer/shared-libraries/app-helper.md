@@ -47,8 +47,8 @@ Before changing a shared export, check which apps import it:
 | `./login` | `LoginPage`, `LogoutPage` | B1Admin, B1App, B1Transfer, LessonsApp |
 | `./markdown` | `MarkdownEditor`, `MarkdownPreviewLight` (shared); `MarkdownPreview`, `HtmlEditor` (admin content editing) | B1Admin, B1App, LessonsApp |
 | `./donations` | `MultiGatewayDonationForm`, `RecurringDonations`, `PaymentMethods`, `StripePaymentMethod`, `DonationHelper`/`getPaymentProvider` (shared); `FundDonations` (admin only) | B1Admin, B1App |
-| `./forms` | `FormSubmissionEdit` | B1Admin, B1App |
-| `./website` | Page-rendering core shared by the editor and renderer (`Element`, `StyleHelper`, `DroppableArea`, `DraggableWrapper`, `Theme`, `YoutubeBackground`); `Animate`, `ElementBlock`, `NonAuthDonationWrapper`, `SermonElement` used only by the public-facing renderer | B1Admin (editor), B1App (editor components + renderer) |
+| `./forms` | `FormSubmissionEdit` (renders `ConversationalForm` when the form's `displayMode` is `conversational`) | B1Admin, B1App |
+| `./website` | Page-rendering core shared by the editor and renderer (`Element` + the per-type renderers resolved via `ElementRegistry`, `StyleHelper`, `DroppableArea`, `DraggableWrapper`, `Theme`, `YoutubeBackground`, `SectionDivider`/`parseDividerConfig`); site-wide widgets (`AnnouncementBanner`, `Launcher` + their `parse*Config` helpers); `Animate`, `ElementBlock`, `NonAuthDonationWrapper`, `SermonElement` used only by the public-facing renderer | B1Admin (editor), B1App (editor components + renderer) |
 
 B1Transfer and LessonsApp use only the root and `login` entry points -- the `donations`, `forms`, and `website` subpaths are consumed exclusively by B1Admin and B1App today.
 

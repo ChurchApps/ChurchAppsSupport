@@ -55,7 +55,7 @@ Releases go through changesets rather than manual version bumps:
 1. Run `yarn changeset` at the workspace root and select `@churchapps/helpers` with the appropriate bump type; commit the generated changeset file with your change.
 2. When ready to release, run `yarn publish-all` at the root -- it bumps versions, writes CHANGELOGs, builds in dependency order, and publishes to npm.
 
-New shared interfaces go in `helpers/src/interfaces/` and are re-exported through the package barrel.
+New shared interfaces go in `helpers/src/interfaces/` and are re-exported through the package barrel. The website builder's element-type catalog (`ElementTypes.ts` — 35 types with their answers schemas) also lives here; it is the contract shared by the apphelper renderers, the B1Admin editor forms, and the AI generation prompts (see [Website Builder Architecture](../architecture/website-builder)).
 
 :::warning
 Since this package is used by every ChurchApps project, changes here have a wide impact. A release of `helpers` automatically bumps `apihelper` and `apphelper` so their dependency ranges stay current. Test with a Yarn portal in at least one consuming API and one consuming web app before publishing.

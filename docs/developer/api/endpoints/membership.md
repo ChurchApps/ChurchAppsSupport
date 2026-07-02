@@ -143,6 +143,7 @@ Extends standard CRUD (GET `/:id`, DELETE `/:id` from base class).
 | GET | `/my` | JWT | — | Get current user's group memberships |
 | GET | `/basic/:groupId` | JWT | — | Get basic member list for a group |
 | GET | `/public/leaders/:churchId/:groupId` | Public | — | Get group leaders (public) |
+| GET | `/public/:churchId/:groupId` | Public | — | Get a group's public roster (minimal fields: `personId`, `displayName`, `leader`, photo). Only when the group opts in via `publicRoster`; powers the website builder's `staffGrid` element |
 | POST | `/` | JWT | GroupMembers.Edit | Add or update group members |
 | DELETE | `/:id` | JWT | GroupMembers.View | Remove a group member |
 
@@ -221,7 +222,7 @@ Base path: `/membership/formsubmissions`
 | GET | `/` | JWT | Forms.Admin or Forms.Edit | List submissions. Filter by `?personId=` or `?formId=` |
 | GET | `/:id` | JWT | Forms.Admin or Forms.Edit | Get submission by ID. Add `?include=form,questions,answers` |
 | GET | `/formId/:formId` | JWT | Form access | Get all submissions for a form (includes form, questions, answers) |
-| POST | `/` | JWT | — | Submit form answers (handles restricted/unrestricted forms, sends email notifications) |
+| POST | `/` | JWT | — | Submit form answers (handles restricted/unrestricted forms, sends email notifications). When the form has `autoCreatePerson`, finds-or-creates a Guest person by email and links the submission; when `followUpSubject`/`followUpBody` are set, sends a templated follow-up email to the submitter |
 | DELETE | `/:id` | JWT | Forms.Admin or Forms.Edit | Delete a submission and its answers |
 
 ## Questions

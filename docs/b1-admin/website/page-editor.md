@@ -58,6 +58,16 @@ Every page is built from two levels:
    - **FAQ** -- Accordion-style question and answer blocks
    - **Video** -- Embed a video by URL
    - **Groups Browser** -- A filterable directory of all church groups with optional search, category filter, and label filter
+   - **Icon Feature** -- An icon with a title and short description, for feature or ministry highlights
+   - **Gallery** -- A multi-photo grid or masonry layout
+   - **Testimonial** -- One or more quotes with author name, role, and photo
+   - **Social Icons** -- Linked icons for your church's social media profiles
+   - **Countdown** -- A timer counting down to a date or a weekly service time
+   - **Stats** -- A row of large numbers with labels (members, years, campuses)
+   - **Campaign Progress** -- A live progress bar for a giving campaign, showing the total raised toward a fund goal
+   - **Staff Grid** -- Photo cards for the members of a group; the group must have its **public roster** option turned on
+   - **Service Times** -- Your campuses' service schedule, pulled automatically from attendance setup
+   - **Sermons** -- Your sermon library, as a full browser or a grid, list, or featured-latest layout
 3. Configure the element using the settings panel that appears.
 
 ### Reordering Content
@@ -73,6 +83,7 @@ Click any section to open its style panel. You can set:
 - **Background** -- Solid color, gradient, or image. When using an image background, a **Focal Point** picker lets you click to set which part of the image stays centered as the section scales, and an **Overlay** color option lets you add a semi-transparent tint over the image to improve text legibility.
 - **Padding** -- Top and bottom spacing inside the section
 - **Width** -- Full-width or centered/contained
+- **Dividers** -- Decorative shape dividers (wave, slant, curve, triangle, and more) on the top or bottom edge of the section, with color, height, and flip options
 
 ### Element Styles
 
