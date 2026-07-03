@@ -6,26 +6,32 @@ title: "Website Routing & Multi-Site"
 
 <div class="article-intro">
 
-A single church can now serve more than one distinct website, and each one can live on a `*.b1.church` subdomain or on a fully custom, church-owned domain. This page maps the routing layer that sits *underneath* the builder: how an incoming request resolves to a church **and** to a specific site, the multi-site data model (the `siteId` sentinel that keeps every pre-existing site rendering unchanged), and the in-progress migration of custom-domain hosting from a self-managed Caddy proxy onto Vercel-managed domains. For what actually renders once a request has resolved — the page/section/element tree — see [Website Builder](./website-builder).
+A single church can now serve more than one distinct website, and each one can live on a `*.b1.church` subdomain or on a fully custom, church-owned domain. This page maps the routing layer that sits *underneath* the builder: how an incoming request resolves to a church **and** to a specific site, the multi-site data model (the `siteId` sentinel that keeps every pre-existing site rendering unchanged), and the custom-domain edge — a self-managed Caddy proxy on EC2 that terminates TLS and rewrites each church domain onto its `*.b1.church` upstream. For what actually renders once a request has resolved — the page/section/element tree — see [Website Builder](./website-builder).
 
 </div>
 
 ## Overview
 
 ```
-   grace.b1.church                         www.gracechurch.org  (custom)
-   (b1.church subdomain)                            │
-          │                                         │  Vercel edge — TLS
-          │                        ┌────────────────▼──────────────────┐
-          │                        │ B1App src/middleware.ts (ext only) │
-          │                        │  • delete any client x-site        │
-          │                        │  • GET /membership/domains/        │
-          │                        │      public/lookup/{host}          │
-          │                        │  • set x-site: {sub}.b1.church     │
-          │                        └────────────────┬──────────────────┘
-          │   host first-label             x-site first-label
-          └───────────────┬──────────────────────────┘
-                          ▼   next.config.mjs rewrites → /[sdSlug]/…
+   grace.b1.church              www.gracechurch.org  (custom domain)
+   (b1.church subdomain)                  │
+          │                               ▼
+          │             ┌──────────────────────────────────────────┐
+          │             │ Caddy edge — EC2 3.23.251.61              │
+          │             │             (proxy.b1.church)             │
+          │             │  • terminates TLS (per-domain LE cert)    │
+          │             │  • rewrites Host → {sub}.b1.church        │
+          │             │  • reverse-proxies to B1App               │
+          │             └────────────────────┬─────────────────────┘
+          │                  Host = {sub}.b1.church
+          ▼                                  ▼
+   ┌────────────────────────────────────────────────────────────┐
+   │ B1App src/middleware.ts                                     │
+   │  • always: delete any client-supplied x-site (anti-spoof)   │
+   │  • internal *.b1.church Host ⇒ domains lookup stays inert   │
+   │  • raw custom Host (bypassing Caddy) ⇒ lookup → set x-site  │
+   └───────────────────────────┬────────────────────────────────┘
+                               ▼  next.config.mjs → host first-label → /[sdSlug]/…
               ┌─────────────────────────────────────────────────┐
               │ [sdSlug] · ConfigHelper.load(sdSlug)             │
               │   GET /membership/churches/lookup/?subDomain=…   │
@@ -35,16 +41,18 @@ A single church can now serve more than one distinct website, and each one can l
               │   /blocks/public/footer · /links · sitemap       │
               └─────────────────────────────────────────────────┘
 
-  domain registration (B1Admin Settings→Domains → POST /membership/domains)
-        ├─ CaddyHelper.updateCaddy()   legacy proxy      ─┐ both best-effort,
-        └─ VercelHelper.addDomain()    managed domains   ─┘ domains table wins
+  domain save/delete (B1Admin Settings→Domains → POST /membership/domains)
+        └─ best-effort CaddyHelper.updateCaddy()  (wrapped, non-fatal, 10s timeout)
+  Caddy reads the domains table itself via two anonymous endpoints:
+        GET /membership/domains/authorize  — on-demand-TLS `ask` (200 known / 404 unknown)
+        GET /membership/domains/hostmap    — host→{sub}.b1.church map (5-min refresh)
 ```
 
 Three rules hold across this layer:
 
 1. **A sentinel keeps everything backward compatible.** `siteId = ''` is the primary site. Every page, block, link, global-style, and domain row that existed before this feature carries `''` and renders exactly as it did. A *second* website is simply a set of rows with a non-empty `siteId`, and any content endpoint called without `?siteId=` returns the primary site — byte-for-byte the old request.
-2. **Resolution is two-legged but converges.** `*.b1.church` subdomains route by host label; custom domains route by a middleware DB lookup that stamps an `x-site` header. Both legs land on the same `[sdSlug]` route and the same `churches/lookup` call, so downstream rendering is identical.
-3. **Custom-domain hosting is mid-migration.** Caddy (self-managed EC2 proxy) and Vercel (managed domains) are *both* wired on every domain save/delete, both best-effort. Neither is authoritative — the `domains` table is.
+2. **Resolution is host-label-based and converges.** A `*.b1.church` subdomain routes by its host label directly; a custom domain is rewritten to its `{sub}.b1.church` label at the Caddy edge before B1App sees it (with a middleware DB lookup that stamps an `x-site` header as the fallback for any raw custom `Host`). Both legs land on the same `[sdSlug]` route and the same `churches/lookup` call, so downstream rendering is identical.
+3. **The Caddy edge is stateless over one source of truth.** Custom domains terminate at a self-managed Caddy proxy on EC2 that rewrites each domain onto its `{sub}.b1.church` upstream. A domain save fires a single best-effort `CaddyHelper.updateCaddy()`, and Caddy also reads the `domains` table directly (the `authorize` and `hostmap` endpoints below). The table is authoritative — an unreachable Caddy can never fail a save.
 
 ## Site resolution
 
@@ -63,11 +71,10 @@ That extra `siteId` is the only thing that distinguishes a secondary-site reques
 
 ### Custom domains
 
-For a church-owned domain, Vercel's edge terminates TLS and forwards to B1App, where `src/middleware.ts` runs first:
+A church-owned domain terminates at the **Caddy edge** (detailed below), which rewrites the `Host` header to the site's `{sub}.b1.church` before proxying to B1App. So on the normal path B1App receives an *internal* `*.b1.church` host and resolves it by host label exactly like a native subdomain — the middleware's DB lookup never fires. `src/middleware.ts` still runs on every request, but with one always-on job and one fallback:
 
-1. It **deletes any client-supplied `x-site` header** — that header is spoofable rewrite input and is only ever trusted when the middleware itself sets it.
-2. For **non-internal** hosts it calls `GET /membership/domains/public/lookup/{host}`.
-3. If the lookup returns a `subDomain`, it sets `x-site: {subDomain}.b1.church`.
+1. **Always** — it **deletes any client-supplied `x-site` header**. That header is spoofable rewrite input and is only ever trusted when the middleware itself sets it; stripping it is the middleware's real job behind Caddy.
+2. **Fallback, non-internal `Host` only** — for a raw custom-domain `Host` that reaches B1App *without* Caddy's rewrite, it calls `GET /membership/domains/public/lookup/{host}` and, if that returns a `subDomain`, sets `x-site: {subDomain}.b1.church`. Behind Caddy this branch is inert because the `Host` is already `*.b1.church`.
 
 Internal hosts — `localhost`, `b1.church`, and the suffixes `.b1.church`, `.localtest.me`, `.localhost`, `.up.railway.app`, `.vercel.app` — skip the lookup entirely (they are already resolved by the host-label rewrite, or are preview/deploy hosts).
 
@@ -146,42 +153,47 @@ Two resolution chains do the interesting work:
 **What stays church-wide in v1 (a deliberate scoping choice, not a data-model limit):** the **blog** (`BlogPage` has no switcher and loads `/posts` with no `siteId`), the **site widgets** (announcement banner + launcher), **redirects**, the **logo / GA4 / church settings**, and the **member portal** (B1App mobile). Note this is *not* "all of Appearance" — a secondary site's global styles (palette, fonts, typography, spacing, nav, custom CSS) **are** per-site via the copy-on-write path above; only the banner/launcher/redirects/logo sub-panels of the Appearance page remain church-wide.
 :::
 
-## Custom domains: Caddy → Vercel transition
+## Custom domains: Caddy edge (static-config plan)
 
-:::warning
-**Transition state.** Both the legacy Caddy path and the new Vercel path are live in the codebase *at the same time*. Every domain save/delete calls both, best-effort. This is an in-progress migration: enabling Vercel is a configuration action (set its SSM params), not a code deploy, and the Caddy code has not yet been removed.
+:::info
+**Direction revised 2026-07-02.** An earlier plan to move custom-domain hosting onto Vercel-managed domains was **cancelled**, and all Vercel domain-registration code (`VercelHelper`, its `vercelToken`/`vercelProjectId`/`vercelTeamId` env vars, SSM params, and health entries) was removed from the Api. The self-managed **Caddy proxy on EC2 stays** as the permanent custom-domain edge. The only remaining work is internal: swapping Caddy's *runtime* admin-API configuration for a *static* config that survives restarts.
 :::
 
-### Both edges, best-effort
+### The edge
 
-`DomainController.save` writes the `domains` row and then calls **both** `CaddyHelper.updateCaddy()` and `VercelHelper.addDomain()`, each wrapped in its own `try/catch` that logs and swallows. `delete` mirrors it with `updateCaddy()` + `VercelHelper.removeDomain()`. Because both are best-effort, a **stopped Caddy** (post-cutover) or an **unconfigured Vercel** can never `500` a domain save — the `domains` table is the source of truth and a bulk-sync script reconciles the edges.
+Every custom church domain points DNS at one EC2 box — `3.23.251.61`, also reachable as `proxy.b1.church`. B1Admin's Settings→Domains screen instructs churches to add an apex `A → 3.23.251.61` or a `CNAME → proxy.b1.church`. Caddy terminates TLS with a per-domain Let's Encrypt cert, rewrites the `Host` header to the domain's `{sub}.b1.church` upstream, and reverse-proxies to B1App — which then routes it by host label like any native subdomain (see [Custom domains](#custom-domains) above).
 
-### Legacy — Caddy
-
-`CaddyHelper` (membership module) pushes a full routes array to the Caddy admin API on the standalone proxy host (`caddyHost:caddyPort`, sourced from the `caddyHost`/`caddyPort` SSM parameters → `CADDY_HOST`/`CADDY_PORT`; the production `caddyHost` is the Caddy EC2 instance, `3.23.251.61`). It is a no-op when those are unset, and the rollback endpoints `/membership/domains/caddy` and `/caddy/init` remain.
-
-The route source is `DomainRepo.loadPairs`, whose dial now **COALESCEs the assigned site's subdomain**:
+The upstream mapping comes from `DomainRepo.loadPairs`, whose dial **COALESCEs the assigned site's subdomain** so a domain proxies to the correct *secondary* site, falling back to the church's primary:
 
 ```sql
 CONCAT(COALESCE(NULLIF(s.subDomain,''), c.subDomain), '.b1.church:443')  AS dial
 WHERE d.domainName NOT LIKE '%www.%'
 ```
 
-So a custom domain proxies to the correct *secondary* site (falling back to the church) rather than always to the church's primary. Rows whose `domainName` contains `www.` are excluded; Caddy instead auto-adds a `www.{host}` → apex `302` redirect route per host.
+`www.*` rows are excluded from the map; Caddy serves `www.{host}` via a `302` redirect to the apex instead.
 
-### New — Vercel
+### Two anonymous endpoints feed the edge
 
-`VercelHelper` (membership module) registers the **apex** domain plus a `www.{apex}` → apex **redirect** on the B1App Vercel project (`POST /v10/projects/{projectId}/domains`, `DELETE /v9/...`), optionally scoped by team. Key properties:
+`DomainController` exposes two unauthenticated, read-only endpoints the box consumes directly — anonymous by necessity, since the edge queries them before any church context exists:
 
-- **No-op unless configured.** It runs only when *both* `vercelToken` and `vercelProjectId` are set (SSM `vercelToken`/`vercelProjectId`/`vercelTeamId` → `VERCEL_TOKEN`/`VERCEL_PROJECT_ID`/`VERCEL_TEAM_ID`; these secrets are environment-only, with no config-file fallback).
-- **`www.*` rows skipped** — parity with Caddy's `loadPairs` www exclusion; www is served via the apex redirect.
-- **Idempotent** — `409` on add and `404` on remove are treated as success.
+| Endpoint | Returns | Role |
+|----------|---------|------|
+| `GET /membership/domains/authorize?domain=` | `200` if the domain — or, for a `www.` miss, its bare apex — exists in `domains`; `404` otherwise (including an empty `domain`) | Caddy's **on-demand-TLS `ask`**: the abuse control deciding whether to issue a cert for an incoming SNI |
+| `GET /membership/domains/hostmap` | `text/plain`, one sorted `{domain} {sub}.b1.church` line per routable domain | The host→upstream map file the box refreshes on a timer |
 
-`ServerHealthController` reports the configured/not-configured state of each of `caddyHost`, `caddyPort`, `vercelToken`, `vercelProjectId`, and `vercelTeamId`, so operators can confirm which edge is live.
+`authorize` reuses `DomainRepo.loadByName` (exact host, then a single `www.`→apex retry); `hostmap` reuses `loadPairs` — so it is site-aware and `www.*`-excluded, identical to the proxy routes — and just strips the `:443` suffix.
 
-### What's left
+### Domain save/delete — one best-effort push
 
-Because Vercel is a no-op until its params are set, production still routes custom domains through Caddy today; the cutover is a config flip. Removing `CaddyHelper` and the `/caddy` endpoints is planned for after the cutover but is **not done** — both remain for rollback. The executable cutover runbook lives outside this repo, in the workspace notes at `.notes/fableTodo/caddyCutover/`.
+`DomainController.save` writes the `domains` rows and then makes a **single best-effort** `CaddyHelper.updateCaddy()` call, wrapped in a `try/catch` that logs (`console.error`) and swallows; `delete` does the same (which also fixed a prior stale-route-on-delete bug), as does secondary-site deletion (`SiteController.delete`). `updateCaddy` is itself bounded by a **10s** Axios timeout, so an unreachable or stopped Caddy can never `500` a domain save — the `domains` table is the source of truth.
+
+### Current state — runtime admin-API config
+
+`CaddyHelper` (membership module) drives Caddy through its **admin API** at `caddyHost:caddyPort` (SSM `caddyHost`/`caddyPort` → `CADDY_HOST`/`CADDY_PORT`; the production `caddyHost` is `3.23.251.61`; a no-op when unset, and surfaced under `ServerHealthController`'s Integrations group). `updateCaddy()` PATCHes the whole routes array on every save; `initializeCaddy()` (re-)creates the S3 cert storage, the ACME/TLS policy, and the `:443` proxy / `:80` redirect servers. The catch: that config lives only in Caddy's memory, so **after a restart the box must be re-primed** — hit `GET /membership/domains/caddy/init` then `GET /membership/domains/caddy` to rebuild storage/servers and re-sync routes. Those two endpoints exist for exactly this dance.
+
+### Planned swap — static config, no runtime state
+
+The planned change (ops runbook lives in the workspace notes at `.notes/fableTodo/caddy.md`, not this repo) drops the admin-API push for a **static Caddyfile**: on-demand TLS whose `ask` points at `/membership/domains/authorize`, plus a host→upstream map file refreshed every 5 minutes from `/membership/domains/hostmap` by a systemd timer that ends in a graceful `caddy reload`. Config then survives restarts with zero runtime state, the init/re-sync dance disappears, and the `updateCaddy()` push — and `CaddyHelper` itself — becomes deletable.
 
 ## Related Pages
 
