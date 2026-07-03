@@ -121,7 +121,6 @@ export async function translationStatus(locale?: string) {
     console.log("No snapshot found. Run 'translation-snapshot' after completing translations.\n");
   }
 
-  // Check missing translations per locale
   const locales = discoverLocales();
   if (locales.length === 0) {
     console.log("No locale directories found in i18n/.");
@@ -129,7 +128,6 @@ export async function translationStatus(locale?: string) {
   }
 
   if (locale) {
-    // Detailed view for a specific language
     if (!locales.includes(locale)) {
       console.log(`Locale '${locale}' not found. Available: ${locales.join(", ")}`);
       return;
@@ -142,7 +140,6 @@ export async function translationStatus(locale?: string) {
       for (const f of missing) console.log(`  ${f}`);
     }
   } else {
-    // Summary view for all languages
     console.log("Missing translations by language:");
     for (const loc of locales) {
       const missing = getMissingTranslations(loc, currentFiles);

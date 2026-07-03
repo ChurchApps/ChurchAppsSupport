@@ -24,7 +24,6 @@ const steps: Step[] = [
   { text: 'When the download finishes, the Start button appears. Press Select on your remote and you\'re playing.', img: SS + '13.png' },
 ];
 
-// ── Lightbox ──────────────────────────────────────────────────────────────────
 function Lightbox({ src, onClose }: { src: string; onClose: () => void }) {
   return (
     <div className={styles.lightboxOverlay} onClick={onClose}>
@@ -39,7 +38,6 @@ function Lightbox({ src, onClose }: { src: string; onClose: () => void }) {
   );
 }
 
-// ── Steps list ────────────────────────────────────────────────────────────────
 function StepsList({ onImage }: { onImage: (src: string) => void }) {
   const [open, setOpen] = useState(false);
   const [checked, setChecked] = useState<boolean[]>(() => steps.map(() => false));
@@ -75,7 +73,6 @@ function StepsList({ onImage }: { onImage: (src: string) => void }) {
   );
 }
 
-// ── Page ──────────────────────────────────────────────────────────────────────
 export default function ArkFreeplay(): ReactNode {
   const [lightboxSrc, setLightboxSrc] = useState<string | null>(null);
 
@@ -86,7 +83,6 @@ export default function ArkFreeplay(): ReactNode {
     >
       {lightboxSrc && <Lightbox src={lightboxSrc} onClose={() => setLightboxSrc(null)} />}
 
-      {/* Hero */}
       <div className={styles.hero}>
         <img
           src="/img/guides/ark-curriculum-hero.jpg"
@@ -108,7 +104,6 @@ export default function ArkFreeplay(): ReactNode {
 
       <main className={styles.main}>
 
-        {/* Video */}
         <section id="video" className={styles.part}>
           <div className={styles.videoWrapper}>
             <iframe
@@ -122,7 +117,6 @@ export default function ArkFreeplay(): ReactNode {
           <StepsList onImage={setLightboxSrc} />
         </section>
 
-        {/* Teaser / next step */}
         <section className={styles.teaser}>
           <div className={styles.teaserCard}>
             <div className={styles.teaserIcon}>🚀</div>

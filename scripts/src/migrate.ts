@@ -7,7 +7,6 @@ import matter from "gray-matter";
 const JEKYLL_DIR = resolve(process.cwd(), "..", "b1Admin");
 const DOCS_DIR = resolve(process.cwd(), "..", "docs", "b1-admin");
 
-// Map Jekyll section names to Docusaurus folder paths
 const SECTION_TO_FOLDER: Record<string, string> = {
   "01 Getting Started": "",
   "02 Admin": "settings",
@@ -25,7 +24,6 @@ const SECTION_TO_FOLDER: Record<string, string> = {
   "12 Data": "settings",
 };
 
-// Map Jekyll filenames to Docusaurus slugs
 const FILE_SLUG_MAP: Record<string, string> = {
   "intro": "index",
   "adding-people": "people/adding-people",
@@ -61,7 +59,6 @@ const FILE_SLUG_MAP: Record<string, string> = {
 
 function extractStepText(content: string): string[] {
   const steps: string[] = [];
-  // Match step-text spans in the accordion markup
   const stepRegex = /<span class="step-text">([^<]+)<\/span>/g;
   let match;
   while ((match = stepRegex.exec(content)) !== null) {
@@ -71,17 +68,11 @@ function extractStepText(content: string): string[] {
 }
 
 function stripHtmlMarkup(content: string): string {
-  // Remove style blocks
   let clean = content.replace(/<style>[\s\S]*?<\/style>/g, "");
-  // Remove script blocks
   clean = clean.replace(/<script>[\s\S]*?<\/script>/g, "");
-  // Remove video container divs
   clean = clean.replace(/<div id="videoContainer">[\s\S]*?<\/div>\s*<\/div>/g, "");
-  // Remove step accordion divs
   clean = clean.replace(/<div id="[^"]*-steps"[\s\S]*?<\/div>\s*<\/div>\s*<\/div>/g, "");
-  // Remove remaining HTML tags but keep text
   clean = clean.replace(/<[^>]+>/g, "");
-  // Clean up extra whitespace
   clean = clean.replace(/\n{3,}/g, "\n\n").trim();
   return clean;
 }
@@ -104,7 +95,6 @@ export async function migrateJekyllDocs(): Promise<MigrationResult[]> {
 
   const files = await glob("*.md", { cwd: JEKYLL_DIR });
 
-  // Track which target slugs we've already written to (for merging)
   const writtenSlugs = new Set<string>();
 
   for (const file of files) {
@@ -128,13 +118,9 @@ export async function migrateJekyllDocs(): Promise<MigrationResult[]> {
       continue;
     }
 
-    // Extract step instructions from accordion markup
     const steps = extractStepText(content);
-
-    // Also extract any plain text content
     const plainText = stripHtmlMarkup(content);
 
-    // Build the migrated markdown content
     const title = frontMatter.title || basename;
     let mdContent = "";
 
@@ -146,7 +132,6 @@ export async function migrateJekyllDocs(): Promise<MigrationResult[]> {
       mdContent += "\n";
     }
 
-    // Add any remaining plain text that isn't just whitespace
     const cleanPlain = plainText
       .replace(/^#.*$/gm, "") // Remove headings (they'll be in front matter)
       .replace(/## Related Tutorials[\s\S]*$/m, "") // Remove related tutorials (handled by sidebar)

@@ -33,11 +33,9 @@ export async function scanExistingDocs(): Promise<ExistingDoc[]> {
     const { data, content: body } = matter(content);
     const slug = file.replace(/\.md$/, "").replace(/\\/g, "/");
 
-    // Count words in body (excluding front matter)
     const words = body.trim().split(/\s+/).filter(Boolean);
     const wordCount = words.length;
 
-    // A doc is a placeholder if it has fewer than 50 words of actual content
     const isPlaceholder = wordCount < 50;
 
     docs.push({

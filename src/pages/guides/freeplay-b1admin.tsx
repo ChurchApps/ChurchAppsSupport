@@ -85,7 +85,6 @@ const parts = [
   },
 ];
 
-// ── Lightbox ─────────────────────────────────────────────────────────────────
 function Lightbox({ src, onClose }: { src: string; onClose: () => void }) {
   return (
     <div className={styles.lightboxOverlay} onClick={onClose}>
@@ -100,7 +99,6 @@ function Lightbox({ src, onClose }: { src: string; onClose: () => void }) {
   );
 }
 
-// ── Steps accordion ───────────────────────────────────────────────────────────
 function StepsAccordion({ steps, onImage }: { steps: Step[]; onImage: (src: string) => void }) {
   const [open, setOpen] = useState(false);
   const [checked, setChecked] = useState<boolean[]>(() => steps.map(() => false));
@@ -139,7 +137,6 @@ function StepsAccordion({ steps, onImage }: { steps: Step[]; onImage: (src: stri
   );
 }
 
-// ── Video part ────────────────────────────────────────────────────────────────
 function VideoPart({ part, onImage }: { part: typeof parts[0]; onImage: (src: string) => void }) {
   return (
     <section id={part.anchor} className={styles.part}>
@@ -191,7 +188,6 @@ function VideoPart({ part, onImage }: { part: typeof parts[0]; onImage: (src: st
   );
 }
 
-// ── Page ──────────────────────────────────────────────────────────────────────
 export default function FreePlayB1Admin(): ReactNode {
   const [lightboxSrc, setLightboxSrc] = useState<string | null>(null);
 
@@ -202,7 +198,6 @@ export default function FreePlayB1Admin(): ReactNode {
     >
       {lightboxSrc && <Lightbox src={lightboxSrc} onClose={() => setLightboxSrc(null)} />}
 
-      {/* Hero */}
       <div className={styles.hero}>
         <img
           src="/img/guides/freeplay-classroom-hero.jpg"
@@ -222,7 +217,6 @@ export default function FreePlayB1Admin(): ReactNode {
         </div>
       </div>
 
-      {/* Progress bar */}
       <div className={styles.progressBar}>
         {parts.map((p) => (
           <a key={p.anchor} href={`#${p.anchor}`} className={styles.progressStep}>
@@ -232,7 +226,6 @@ export default function FreePlayB1Admin(): ReactNode {
         ))}
       </div>
 
-      {/* Video sections */}
       <main className={styles.main}>
         {parts.map((part) => (
           <VideoPart key={part.id} part={part} onImage={setLightboxSrc} />

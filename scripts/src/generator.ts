@@ -16,7 +16,6 @@ interface DocArticle {
   relatedSlugs: string[];
 }
 
-// Map routes to their documentation article slugs
 const ROUTE_TO_DOC: Record<string, { slug: string; title: string; section: string }> = {
   "/": { slug: "index", title: "B1 Admin Overview", section: "" },
   "/people": { slug: "people/index", title: "People", section: "people" },
@@ -45,7 +44,6 @@ const ROUTE_TO_DOC: Record<string, { slug: string; title: string; section: strin
   "/site/*": { slug: "website/index", title: "Website", section: "website" },
 };
 
-// Related articles mapping by section
 const SECTION_RELATED: Record<string, string[]> = {
   people: ["groups/index", "attendance/index"],
   groups: ["people/index", "attendance/index"],
@@ -138,7 +136,6 @@ export async function generateArticle(
   article: DocArticle,
   apiKey: string
 ): Promise<string> {
-  // Read the component source
   const b1AdminSrc = resolve(process.cwd(), "..", "..", "B1Admin", "src");
   let componentSource = "";
 
@@ -156,7 +153,6 @@ export async function generateArticle(
     }
   }
 
-  // Truncate if too long (keep first 4000 chars)
   if (componentSource.length > 6000) {
     componentSource = componentSource.substring(0, 6000) + "\n// ... (truncated)";
   }
