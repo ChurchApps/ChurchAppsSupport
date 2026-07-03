@@ -193,7 +193,7 @@ WHERE d.domainName NOT LIKE '%www.%'
 
 ### Planned swap — static config, no runtime state
 
-The planned change (ops runbook lives in the workspace notes at `.notes/fableTodo/caddy.md`, not this repo) drops the admin-API push for a **static Caddyfile**: on-demand TLS whose `ask` points at `/membership/domains/authorize`, plus a host→upstream map file refreshed every 5 minutes from `/membership/domains/hostmap` by a systemd timer that ends in a graceful `caddy reload`. Config then survives restarts with zero runtime state, the init/re-sync dance disappears, and the `updateCaddy()` push — and `CaddyHelper` itself — becomes deletable.
+The planned change (ops runbook lives in the workspace notes at `.notes/fableTodo/caddy.md`, not this repo) drops the admin-API push for a **static Caddyfile**: on-demand TLS whose `ask` points at `/membership/domains/authorize`, plus a host→upstream map file refreshed every 5 minutes from `/membership/domains/hostmap` by a scheduled task (the box runs Windows) that ends in a graceful `caddy reload`. Config then survives restarts with zero runtime state, the init/re-sync dance disappears, and the `updateCaddy()` push — and `CaddyHelper` itself — becomes deletable.
 
 ## Related Pages
 
