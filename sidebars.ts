@@ -56,6 +56,7 @@ const sidebars: SidebarsConfig = {
             'b1-admin/attendance/setup',
             'b1-admin/attendance/tracking-attendance',
             'b1-admin/attendance/check-in',
+            'b1-admin/attendance/checkin-safety',
             'b1-admin/attendance/labels',
           ],
         },
@@ -143,6 +144,7 @@ const sidebars: SidebarsConfig = {
           link: { type: 'doc', id: 'b1-admin/calendars/index' },
           items: [
             'b1-admin/calendars/creating-calendars',
+            'b1-admin/calendars/paid-registrations',
             'b1-admin/calendars/curated-calendar',
             'b1-admin/calendars/event-reminders',
             'b1-admin/calendars/rooms-resources',
@@ -231,6 +233,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'b1-church/getting-started/logging-in',
             'b1-church/getting-started/navigating',
+            'b1-church/getting-started/me-page',
             'b1-church/getting-started/installing-pwa',
             'b1-church/getting-started/notification-preferences',
           ],
@@ -245,6 +248,7 @@ const sidebars: SidebarsConfig = {
             'b1-church/groups/group-details',
             'b1-church/groups/join-requests',
             'b1-church/groups/conversations',
+            'b1-church/groups/event-rsvps',
           ],
         },
         {
@@ -273,6 +277,8 @@ const sidebars: SidebarsConfig = {
           link: { type: 'doc', id: 'b1-church/events/index' },
           items: [
             'b1-church/events/registering',
+            'b1-church/events/my-registrations',
+            'b1-church/events/requesting-events',
           ],
         },
         {
@@ -450,6 +456,7 @@ const sidebars: SidebarsConfig = {
             'b1-checkin/check-in/group-assignment',
             'b1-checkin/check-in/adding-guests',
             'b1-checkin/check-in/completing-checkin',
+            'b1-checkin/check-in/checking-out',
           ],
         },
       ],
@@ -598,6 +605,7 @@ const sidebars: SidebarsConfig = {
             'developer/realtime',
             'developer/web-push',
             'developer/architecture/giving',
+            'developer/architecture/registrations',
             'developer/architecture/check-ins',
             'developer/architecture/website-builder',
             'developer/architecture/websites',

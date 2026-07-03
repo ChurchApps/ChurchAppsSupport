@@ -22,6 +22,7 @@ The member portal in B1.church uses a sidebar navigation layout that makes it ea
 When you enter the member portal, you will see a vertical sidebar on the left side of the screen. This sidebar contains tabs for each section of the portal:
 
 - **Timeline** -- Your personalized feed of updates and conversations from your groups and church. This is the default tab that loads when you open the member portal.
+- **Me** -- Your personal dashboard of upcoming serving assignments, registrations, group events, and recent notifications. See [The Me Page](./me-page).
 - **Groups** -- View and interact with the [groups](../groups/) you belong to.
 - **Community** -- Browse the church [member directory](../community/member-directory.md).
 - **Plans** -- See upcoming [service plans](../plans/) and your assigned volunteer positions.

@@ -6,7 +6,7 @@ title: "Mailchimp"
 
 <div class="article-intro">
 
-Pipe new B1 people, givers, or group members into a Mailchimp audience so the next welcome series, year-end appeal, or volunteer newsletter pulls from a list that's always up to date. The wiring lives entirely in Zapier (or Make) — B1 fires the event, Mailchimp ingests the subscriber.
+Pipe new B1 people, givers, or group members into a Mailchimp audience so the next welcome series, year-end appeal, or volunteer newsletter pulls from a list that's always up to date. B1 has no built-in Mailchimp sync — the wiring lives entirely in Zapier (or Make): B1 fires the event, Mailchimp ingests the subscriber.
 
 </div>
 

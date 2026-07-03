@@ -55,6 +55,27 @@ If your group meets on a regular schedule, you can set events to repeat automati
 For a group that meets every Saturday, set the frequency to "week" and choose Saturday. The event will automatically populate on the calendar going forward.
 :::
 
+## Bulk-Creating Events in B1 Admin
+
+The group's page in B1 Admin also has a **Calendar** tab where staff can schedule a whole season of meetings at once:
+
+1. Open the group in B1 Admin and select the **Calendar** tab.
+2. Click **Add Events** to open the **Add Recurring Events** dialog.
+3. Choose the schedule (weekly, every 2 weeks, monthly, or one time), the **First Meeting** and **Last Meeting** dates, and optionally **Skip holidays**.
+4. Review the preview of meeting dates and uncheck any to skip.
+5. Leave **Allow RSVPs** checked if you want members to be able to respond to these events (see below), then save.
+
+## Event RSVPs
+
+Group events can collect RSVPs — a **Yes**, **No**, or **Maybe** for each occurrence of the event.
+
+- **Allow RSVPs** is on by default for events created through the bulk-add dialog; uncheck it to turn responses off for those events. Events with RSVPs turned off show as **Disabled** on the calendar tab.
+- On the B1 Admin group calendar tab, each event shows a response summary (for example, "5 yes · 2 maybe · 1 no"). Click through to open the **RSVP Responses** roster, which lists who answered yes, maybe, and no for that occurrence.
+
+:::tip
+RSVPs give leaders a head count without the formality of full event registration. For paid signups or capacity-managed events, use [event registration](../calendars/creating-calendars.md#enabling-event-registration) instead.
+:::
+
 ## Viewing the Calendar
 
 The group calendar offers multiple view options:

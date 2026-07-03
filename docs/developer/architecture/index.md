@@ -44,7 +44,8 @@ Two structural rules shape everything documented in this section:
 | [Real-time Architecture](../realtime) | The WebSocket delivery framework behind chat, presence, and in-app delivery | Api (messaging), all web apps |
 | [Web Push Notifications](../web-push) | The browser push channel: VAPID keys, subscription storage, delivery | Api (messaging), all web apps |
 | [Giving](./giving) | Payment providers and gateways, donation flows, funds/batches, gateway webhooks | Api (giving), apphelper, B1App, B1Admin |
-| [Check-Ins](./check-ins) | Kiosk and self check-in, the attendance data model, room routing, label printing | B1Checkin, B1App, Api (attendance) |
+| [Event Registrations](./registrations) | The registration commerce model: attendee types, selections, discount codes, payments through the giving gateway, and the waitlist | Api (content + giving), B1App, B1Admin |
+| [Check-Ins](./check-ins) | Kiosk and self check-in, the attendance data model, room routing, the child-safety layer, label printing | B1Checkin, B1App, B1Admin, Api (attendance + membership) |
 | [Website Builder](./website-builder) | The page/section/element tree, the element-type contract and renderers, blog, access-gated pages, SEO, and AI generation | Api (content), AskApi, helpers/apphelper, B1Admin, B1App |
 | [Website Routing & Multi-Site](./websites) | How a request resolves to a church and a specific site, the multi-site `siteId` data model, and the Caddy custom-domain edge | B1App, Api (membership + content), B1Admin |
 | [Integrations](./integrations) | The extension surface: OAuth, API keys, webhooks, content providers, MCP | Api, shared libraries, external apps |

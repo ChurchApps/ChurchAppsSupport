@@ -6,7 +6,7 @@ title: "Checkr"
 
 <div class="article-intro">
 
-[Checkr](https://checkr.com) runs background screening for staff and volunteers — a near-universal need for any church running a children's or youth program. Checkr doesn't have a Zapier app, but [Make.com's Checkr integration](https://www.make.com/en/integrations/checkr) is verified and exposes the actions you need to kick off a check from a B1 event.
+[Checkr](https://checkr.com) runs background screening for staff and volunteers — a near-universal need for any church running a children's or youth program. B1 has **no built-in background-check feature** — ordering checks, tracking results, and screening compliance all live in Checkr; the recipe below only wires B1 events to it. Checkr doesn't have a Zapier app, but [Make.com's Checkr integration](https://www.make.com/en/integrations/checkr) is verified and exposes the actions you need to kick off a check from a B1 event.
 
 </div>
 

@@ -36,6 +36,8 @@ Tap a member's card to expand it. When expanded, you will see a row for each **s
 
 Tap the group button to go to the [group selection screen](./group-assignment) where you can choose or change the group for that person and service time.
 
+The expanded card also shows **Member**, **Guest**, and **Volunteer** chips. Tap one to set how this person is checking in — Member is the default. The type matters for children's rooms: volunteers count toward the room's volunteer-to-child ratio, and guests count against any guest capacity your church has set.
+
 Tap the member's card again to collapse it.
 
 :::tip

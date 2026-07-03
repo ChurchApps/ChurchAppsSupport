@@ -36,6 +36,10 @@ Tap a category card to expand it and see the individual groups inside. Tap it ag
 
 The app saves your selection and returns you to the [household review screen](./household-review). The service time button for that member will now show the name of the group you selected.
 
+## Age and Grade Guidance
+
+If your church has set age or grade ranges on its rooms, the list guides you to the right one: rooms the person qualifies for are **highlighted**, and rooms outside their age or grade are **dimmed**. A dimmed room can still be selected, but a staff member must confirm the choice. Ages and grades are figured from your church's grade promotion date, so rooms stay accurate across the school-year rollover.
+
 ## Choosing "None"
 
 If you decide that a family member should not be assigned to any group for this service time, tap the **None** button at the bottom of the screen. This clears any existing group assignment for that service time and returns you to the household review screen.

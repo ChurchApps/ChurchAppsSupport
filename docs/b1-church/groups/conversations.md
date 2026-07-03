@@ -56,6 +56,15 @@ You can edit or delete any message you have posted:
 You can only edit or delete your own messages. Messages posted by other members do not show the edit/delete options.
 :::
 
+## Reacting to Messages
+
+In the group chat, you can react to any message with an emoji:
+
+1. Tap or hover over a message and choose **Add reaction**.
+2. Pick one of the six emoji: 👍 ❤️ 😂 🎉 🙏 😮.
+
+Reactions appear as small chips under the message with a count of how many people used each one. Your own reaction is highlighted — tap the chip (or pick the same emoji again) to remove it, or pick a different emoji to add another. Reactions show up live for everyone in the chat.
+
 :::tip
 Group conversations also appear on your [Timeline](../community/timeline.md), so you can keep up with discussions without visiting each group individually.
 :::

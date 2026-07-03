@@ -18,6 +18,7 @@ The check-in process in B1 Church Checkin follows a simple, step-by-step flow. A
 4. **[Assign groups](./group-assignment)** -- Choose which class or group each family member should attend for each service time.
 5. **[Add guests](./adding-guests)** (optional) -- Add a visitor to your household if they are joining you.
 6. **[Complete check-in](./completing-checkin)** -- Tap the check-in button to submit attendance and print labels.
+7. **[Check out](./checking-out)** (manned stations) -- At pickup time, verify the security code and pickup person, with trusted-pickup lists, page-a-parent, and label reprints.
 
 After check-in is complete, the app displays a success screen and automatically returns to the lookup screen, ready for the next family.
 

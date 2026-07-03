@@ -41,6 +41,7 @@ The **Groups** tab breaks attendance down by individual group. This is helpful w
 - [Recording Attendance](recording-attendance.md) -- manually enter attendance for a group session
 - [Tracking Attendance](tracking-attendance.md) -- view trends and filter reports
 - [Check-In](check-in.md) -- set up self check-in for services
+- [Check-In Safety](checkin-safety.md) -- room capacities, volunteer ratios, pickup people, and paging
 
 :::tip
 If you are setting up attendance for the first time, start with the [Attendance Setup](setup.md) guide to define your campuses and service times. Once that is in place, you can begin [recording attendance](recording-attendance.md) manually or set up [self check-in](check-in.md).

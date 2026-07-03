@@ -6,7 +6,7 @@ title: "Events"
 
 <div class="article-intro">
 
-The Events section on B1.church lets you browse upcoming church events and register for them directly from the website. When your church enables registration for an event, you can sign up yourself and your family members in just a few steps.
+The Events section on B1.church lets you browse upcoming church events and register for them directly from the website. When your church enables registration for an event, you can sign up yourself and your family members in just a few steps — and for paid events, choose attendee types and options, apply discount codes, and pay securely as part of signing up.
 
 </div>
 
@@ -30,7 +30,7 @@ Events may show different statuses depending on timing and capacity:
 - **Full** -- All available spots have been taken.
 
 :::tip
-If an event is full, check back later -- spots may open up if someone cancels their registration.
+If an event is full, you may still be able to join the **waitlist** when your church has enabled it -- you'll be emailed automatically if a spot opens. Otherwise, check back later; spots may open up if someone cancels.
 :::
 
 ## What You Need
@@ -41,4 +41,6 @@ If an event is full, check back later -- spots may open up if someone cancels th
 ## Learn More
 
 - [Registering for Events](./registering) -- Step-by-step guide to signing up for an event
+- [My Registrations](./my-registrations) -- View your registrations, pay balances, edit, or cancel
+- [Requesting Events & Rooms](./requesting-events) -- Request an event with the rooms and resources it needs
 - [Self Check-In](../checkin/self-checkin) -- Check in when you arrive at the event

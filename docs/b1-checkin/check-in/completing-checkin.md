@@ -26,6 +26,13 @@ Once you have reviewed your household and made any needed group assignments, you
 
 That is all it takes. Your family's attendance has been recorded.
 
+## Full Rooms and Volunteer Ratios
+
+If your church has configured [safety limits](../../b1-admin/attendance/checkin-safety) on its rooms, the server checks them before saving:
+
+- If a selected room is **full or closed**, check-in does not go through and the app names the room so you can pick a different one.
+- If a children's room is **short on volunteers** for its ratio, the app either shows a warning that a staff member can confirm to proceed, or blocks the check-in entirely — depending on how your church configured ratio enforcement.
+
 ## Label Printing
 
 If a network printer is configured, the app automatically prints labels after check-in:

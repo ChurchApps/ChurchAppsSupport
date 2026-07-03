@@ -35,4 +35,5 @@ Groups also appear on your [Timeline](../community/timeline.md) -- conversations
 - [Browsing Groups](./browsing-groups.md) -- Learn how to find and explore groups
 - [Group Details](./group-details.md) -- Understand everything on the group detail page
 - [Requesting to Join a Group](./join-requests.md) -- Submit and manage join requests
-- [Group Conversations](./conversations.md) -- Post messages and interact with your group
+- [Group Conversations](./conversations.md) -- Post messages, react with emoji, and interact with your group
+- [Event RSVPs](./event-rsvps.md) -- Respond to group events and see who is coming

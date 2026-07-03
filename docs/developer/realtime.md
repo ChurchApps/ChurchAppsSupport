@@ -64,6 +64,7 @@ type PayloadAction =
   | "message"             // server → client, new message
   | "deleteMessage"       // server → client, message removed
   | "privateMessage"      // server → client, badge-count ping to the recipient's "alerts" room when a direct message escalates; the message body itself arrives via the ordinary "message" action inside the open conversation
+  | "reaction"            // server → client, emoji reaction toggled on a message; data is { messageId, conversationId, personId, emoji, added } (added=false means removed). Broadcast to the conversation room by POST /messaging/messages/:messageId/reactions
   | "conversationActivity"// server → client, secondary "something happened" signal for content-room subscribers
   | "attendance"          // server → client, viewer list / presence snapshot
   | "notification"        // server → client, generic notification (counts, etc.)
