@@ -600,6 +600,7 @@ const sidebars: SidebarsConfig = {
             'developer/architecture/giving',
             'developer/architecture/check-ins',
             'developer/architecture/website-builder',
+            'developer/architecture/websites',
             'developer/architecture/integrations',
           ],
         },

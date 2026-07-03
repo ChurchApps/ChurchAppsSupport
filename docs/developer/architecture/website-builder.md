@@ -169,6 +169,7 @@ The four fields are set via the API today; the B1Admin form editor does not expo
 
 ## Related Pages
 
+- [Website Routing & Multi-Site](./websites) — how a request resolves to a church/site and how custom domains route
 - [Content Endpoints](../api/endpoints/content) — full REST surface for pages, sections, elements, blocks, posts, redirects, and settings
 - [AppHelper](../shared-libraries/app-helper) — the npm package that ships the renderers, registry, dividers, and widgets
 - [MCP Server](../api/mcp) — including the `describe_page_builder` guide tool
