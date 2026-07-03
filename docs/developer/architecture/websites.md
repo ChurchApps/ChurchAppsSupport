@@ -187,16 +187,17 @@ WHERE d.domainName NOT LIKE '%www.%'
 
 `DomainController.save` writes the `domains` rows and then makes a **single best-effort** `CaddyHelper.updateCaddy()` call, wrapped in a `try/catch` that logs (`console.error`) and swallows; `delete` does the same (which also fixed a prior stale-route-on-delete bug), as does secondary-site deletion (`SiteController.delete`). `updateCaddy` is itself bounded by a **10s** Axios timeout, so an unreachable or stopped Caddy can never `500` a domain save — the `domains` table is the source of truth.
 
-### Current state — runtime admin-API config
+### Current state — static config, no runtime state
 
-`CaddyHelper` (membership module) drives Caddy through its **admin API** at `caddyHost:caddyPort` (SSM `caddyHost`/`caddyPort` → `CADDY_HOST`/`CADDY_PORT`; the production `caddyHost` is `3.23.251.61`; a no-op when unset, and surfaced under `ServerHealthController`'s Integrations group). `updateCaddy()` PATCHes the whole routes array on every save; `initializeCaddy()` (re-)creates the S3 cert storage, the ACME/TLS policy, and the `:443` proxy / `:80` redirect servers. The catch: that config lives only in Caddy's memory, so **after a restart the box must be re-primed** — hit `GET /membership/domains/caddy/init` then `GET /membership/domains/caddy` to rebuild storage/servers and re-sync routes. Those two endpoints exist for exactly this dance.
+The box (Windows EC2 behind the permanent Elastic IP) runs Caddy from a **static Caddyfile**: on-demand TLS whose `ask` points at `/membership/domains/authorize`, plus a host→upstream map file refreshed every 5 minutes from `/membership/domains/hostmap` by a scheduled task that ends in a graceful `caddy reload`. Config survives restarts with zero runtime state — no re-priming dance — and an unknown SNI is **TLS-refused** (no cert is minted for a host `authorize` rejects), while an authorized-but-not-yet-mapped host (a brand-new domain inside the sync window) gets a clean 404. New domains become routable within ~5 minutes of a save; their certificates are minted on first hit. Build/setup, operations, and field-tested gotchas: [Caddy Custom-Domain Proxy](../deployment/caddy-proxy).
 
-### Planned swap — static config, no runtime state
+### Legacy runtime push — rollback path, pending deletion
 
-The planned change (ops runbook lives in the workspace notes at `.notes/fableTodo/caddy.md`, not this repo) drops the admin-API push for a **static Caddyfile**: on-demand TLS whose `ask` points at `/membership/domains/authorize`, plus a host→upstream map file refreshed every 5 minutes from `/membership/domains/hostmap` by a scheduled task (the box runs Windows) that ends in a graceful `caddy reload`. Config then survives restarts with zero runtime state, the init/re-sync dance disappears, and the `updateCaddy()` push — and `CaddyHelper` itself — becomes deletable.
+`CaddyHelper` (membership module) can still drive Caddy through its **admin API** at `caddyHost:caddyPort` (SSM `caddyHost`/`caddyPort`; no-op when unset; surfaced under `ServerHealthController`'s Integrations group): `updateCaddy()` PATCHes a full routes array, and `initializeCaddy()` + the `GET /membership/domains/caddy/init` / `GET /membership/domains/caddy` endpoints rebuild a runtime-configured server from scratch. That mode's config lived only in Caddy's memory — the restart-amnesia this architecture replaced. The machinery remains solely as the rollback path and is scheduled for deletion once the static box has been stable; the best-effort `updateCaddy()` push on domain save/delete is a harmless no-op against the static box (its admin API is localhost-only).
 
 ## Related Pages
 
+- [Caddy Custom-Domain Proxy](../deployment/caddy-proxy) — the edge box itself: fresh-box setup, WinSW service, map sync task, and operational gotchas
 - [Website Builder](./website-builder) — the page/section/element tree, renderers, blog, SEO, and AI generation (what renders once a request has resolved to a church/site)
 - [Content Endpoints](../api/endpoints/content) — the REST surface for pages, blocks, links, and global styles, all now `?siteId=`-aware
 - [B1App](../web-apps/b1-app) — the Next.js app that hosts the middleware and `[sdSlug]` routing

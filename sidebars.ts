@@ -669,6 +669,7 @@ const sidebars: SidebarsConfig = {
             'developer/deployment/web-apps',
             'developer/deployment/mobile',
             'developer/deployment/railway-template',
+            'developer/deployment/caddy-proxy',
           ],
         },
         'developer/server-admin',
