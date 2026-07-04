@@ -32,7 +32,7 @@ New to B1 Admin? Start with the [Introduction](./introduction) for a video walkt
 - **[Website](./website/)** - Build and manage your church website with custom navigation styles
 - **[Sermons](./sermons/)** - Manage your sermon library and live streaming
 - **[Calendars](./calendars/)** - Create curated calendars, manage room/resource bookings, and view availability
-- **[Settings](./settings/)** - Configure church info, roles, and permissions
+- **[Settings](./settings/)** - Configure church info, roles, permissions, and custom person fields
 
 :::info
 Click the question mark icon in the top-right corner of any page for quick access to help and documentation.

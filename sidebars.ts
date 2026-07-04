@@ -159,6 +159,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'b1-admin/settings/church-settings',
             'b1-admin/settings/campuses',
+            'b1-admin/settings/custom-fields',
             'b1-admin/settings/roles-permissions',
             'b1-admin/settings/mobile-app',
             'b1-admin/settings/data-security',

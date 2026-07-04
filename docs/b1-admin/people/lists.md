@@ -56,11 +56,13 @@ Staff with manage permission can rename or delete any list directly from the Sav
 | All visitors | Advanced search: Membership Status = Visitor |
 | Members at a specific campus | Advanced search: Campus = [your campus] |
 | People without an email address | Advanced search: Email is empty |
+| Volunteers with an expired background check | Advanced search: [Custom Field](../settings/custom-fields.md) "Background check expires" is before today |
 | Results from an AI question | Ask a question in AI Search, then save |
 
 ## Related Articles
 
 - [Searching People](./searching-people.md) — quick search and column customization
 - [AI Search](./ai-search.md) — natural-language queries you can save as lists
+- [Custom Fields](../settings/custom-fields.md) — define your own person fields, then filter and save lists on them
 - [Demographics](./demographics.md) — drill a demographic chart into a People filter, then save it as a list
 - [Bulk Editing](./bulk-editing.md) — after loading a list, bulk-update all its members at once

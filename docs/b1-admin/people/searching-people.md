@@ -85,6 +85,12 @@ For more details on exporting, see [Exporting Data](./exporting-data.md).
 For more advanced queries -- like finding everyone who hasn't attended in the last three months -- try the [AI Search](./ai-search.md) feature, which lets you search using plain language questions.
 :::
 
+## Advanced Search
+
+Advanced Search lets you build precise filters by combining conditions. Open it from the People page, then expand a category and check the fields you want to filter on, choosing an operator and value for each. Categories include **Names**, **Demographics**, **Contact**, **Membership**, **Activity** (donations and attendance), and **Custom Fields**.
+
+The **Custom Fields** category lists your church's [Custom Fields](../settings/custom-fields.md) — the fields you define in Settings to track your own information (such as a background-check expiration date). The operators offered match each field's type: text fields support *contains / equals / starts with / ends with*, number fields support the comparison operators, date fields support *equals / after / before*, and Yes/No and Multiple Choice fields let you pick a value. Any field you can filter on here can be saved as a live [List](./lists.md).
+
 ## Saving Searches as Lists
 
 After running a search, a **Save as List** button (bookmark icon) appears in the People page header. Click it to store your current query under a name and optional category, so you can reload it instantly in future sessions. See [Saved Lists](./lists.md) for full details.
