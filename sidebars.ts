@@ -611,6 +611,7 @@ const sidebars: SidebarsConfig = {
             'developer/architecture/website-builder',
             'developer/architecture/websites',
             'developer/architecture/integrations',
+            'developer/architecture/audit-log',
           ],
         },
         {
