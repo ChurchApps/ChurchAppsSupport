@@ -68,7 +68,7 @@ type PayloadAction =
   | "conversationActivity"// server → client, secondary "something happened" signal for content-room subscribers
   | "attendance"          // server → client, viewer list / presence snapshot
   | "notification"        // server → client, generic notification (counts, etc.)
-  | "reconnect"           // client-internal, fired by SocketHelper when a fresh socket replaces a dropped one
+  | "reconnect"           // client-internal, dispatched locally by SocketHelper after a new socketId handshake completes following a drop — either an exponential-backoff reconnect after an unexpected close, or an immediate reconnect triggered by the resume probe (tab focus/visibility/online); never sent by the server
   | "alert" | "callout";  // legacy, see Connections endpoint reference
 ```
 
@@ -123,7 +123,7 @@ Clears the connection row and triggers a final attendance broadcast.
 
 | File | Role |
 |------|------|
-| `Api/src/modules/messaging/helpers/SocketHelper.ts` | Owns the `WebSocketServer`. Assigns `socketId` on connect. Cleans up dead sockets and triggers an attendance rebroadcast on disconnect |
+| `Api/src/modules/messaging/helpers/SocketHelper.ts` | Owns the `WebSocketServer`. Assigns `socketId` on connect. Runs a 30s ping/pong heartbeat (`startHeartbeat`) that `terminate()`s and cleans up any connection that misses a pong. Cleans up dead sockets and triggers an attendance rebroadcast on disconnect. Exposes `getLiveSocketIds()` and `reapStaleConnections()`, used by the 30-minute timer job to delete stale `connections` rows — locally by checking which socketIds are still live in-process, on AWS as a 24h-TTL backstop for missed `$disconnect` events (API Gateway caps connections at ~2h, so this can't reap a live one) |
 | `Api/src/modules/messaging/helpers/DeliveryHelper.ts` | `sendConversationMessages(payload)` reads connections for the room and routes each frame to the local socket or the AWS API Gateway connection. `sendAttendance(churchId, conversationId)` builds and broadcasts the viewer snapshot |
 | `Api/src/modules/messaging/controllers/ConnectionController.ts` | `POST /` joins, `DELETE /:churchId/:conversationId/:socketId` leaves, `POST /setName` updates display name |
 | `Api/src/modules/messaging/controllers/MessageController.ts` | `POST /send` (anonymous) and `POST /` (authed) save then fan out |
@@ -137,10 +137,13 @@ All five primitives are static singletons in `apphelper/src/helpers/`. They coop
 
 Owns the single WebSocket connection. Re-entrant `init()` is idempotent — multiple components can call it without opening duplicate sockets. Exposes:
 
-- `init()` — open (or re-use) the socket and complete the `getId` handshake.
+- `init()` — open (or re-use) the socket and complete the `getId` handshake. Resolves once the handshake completes or, after a 5s timeout, once the background retry loop has taken over; it never rejects, so callers don't need to special-case a failed first connect.
 - `addHandler(action, id, fn)` / `removeHandler(id)` — register/unregister listeners by `action`. Multiple handlers can listen to the same action.
 - `setPersonChurch({ personId, churchId })` — for authenticated callers; triggers an `"alerts"` room subscription so push notifications arrive on this socket.
-- `onSocketIdReady(fn)` — fires once when the handshake completes; used by `SubscriptionManager` to flush pending joins.
+- `onSocketIdReady(fn)` — fires on every new socketId, not just the first — the initial handshake and every subsequent reconnect. Used by `SubscriptionManager` to flush pending joins.
+- `checkConnection()` — invoked by the resume listeners below; reconnects immediately if the socket is already closed, or sends a liveness probe if it looks open.
+
+**Reconnect lifecycle.** An unexpected close schedules a reconnect with exponential backoff (1s, doubling up to a 30s cap). `SocketHelper` also listens for `online`, `focus`, `pageshow`, and `visibilitychange` on `window`/`document` to detect a resumed tab: if the socket is already closed it reconnects immediately and resets the backoff; if it looks open, it sends a `"getId"` liveness probe and forces a reconnect if no frame arrives within 3s — this catches half-open sockets left behind after a mobile OS suspends the app. On a successful re-handshake, `SocketHelper` dispatches the local `"reconnect"` action (see [Wire protocol](#wire-protocol)) to every registered handler for that action.
 
 ### `SubscriptionManager`
 
@@ -156,8 +159,8 @@ await SubscriptionManager.leaveRoom(conversationId, churchId);
 
 Three behaviors that consumers get for free:
 
-- **Debounced leave (300 ms)** — survives React StrictMode's double mount/unmount and short remount cycles without dropping the server-side subscription.
-- **Reconnect rejoin** — listens for `SocketHelper`'s `"reconnect"` event and re-issues every active connection row.
+- **Debounced leave (300 ms)** — survives React StrictMode's double mount/unmount and short remount cycles without dropping the server-side subscription; `reset()` also cancels any pending debounced leaves.
+- **Reconnect rejoin** — `SubscriptionManager` remembers the `personId`/`displayName` used to join each room, so on `SocketHelper`'s `"reconnect"` event (and on every `onSocketIdReady` call) it re-posts every active connection row with identity intact. Rejoins are deduped per socketId so the same reconnect doesn't re-post a room twice.
 - **Late-binding socketId** — `joinRoom` records intent before the socket finishes its handshake; the actual `POST /connections` fires on `onSocketIdReady`.
 
 ### `ConversationStore`
@@ -180,6 +183,8 @@ ConversationStore.forget(conversationId);  // optional explicit cleanup
 
 Authenticated callers also get **people hydration** — `personId`s on incoming messages are resolved to `PersonInterface` objects via a cached `GET /people/ids` lookup. Anonymous callers skip this.
 
+On `SocketHelper`'s `"reconnect"` event, `ConversationStore` refetches every conversation that currently has active `subscribe` listeners, recovering messages missed while the socket was down. Anonymous conversations skip this catch-up if their `churchId` was never recorded (the catch-up endpoint requires one).
+
 ### `PresenceStore`
 
 Mirrors `ConversationStore`'s pattern for the `attendance` action. Subscribers receive a `PresenceSnapshot { conversationId, totalViewers, viewers }` whenever the server rebroadcasts presence. Identical snapshots are deduped before notify, so reconnect storms don't trigger unnecessary re-renders.
@@ -194,7 +199,7 @@ const unsubscribe = PresenceStore.subscribe(conversationId, (snapshot) => {
 
 ### `NotificationService`
 
-Top-level boot for **authenticated** callers. Wraps `SocketHelper.init()`, sets the person/church context (which auto-joins the `"alerts"` room), and calls `ConversationStore.ensureHandlers()` / `PresenceStore.ensureHandlers()` / `SubscriptionManager.setupRejoin()` exactly once.
+Top-level boot for **authenticated** callers. Wraps `SocketHelper.init()`, sets the person/church context (which auto-joins the `"alerts"` room), and calls `ConversationStore.ensureHandlers()` / `PresenceStore.ensureHandlers()` / `SubscriptionManager.setupRejoin()` exactly once. It also registers its own `"reconnect"` handler that reloads notification/PM counts, so badges recover after a dropped connection.
 
 ```typescript
 await NotificationService.getInstance().initialize(userContext);

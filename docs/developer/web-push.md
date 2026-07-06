@@ -12,12 +12,12 @@ ChurchApps web apps deliver push notifications via the W3C Web Push API — the 
 
 ## When push fires
 
-Push is one tier in a single delivery escalation inside `NotificationHelper.attemptDeliveryWithEscalation()` (`Api/src/modules/messaging/helpers/NotificationHelper.ts`): an in-app preference gate, then socket delivery, then push, then email. A recipient who has muted the category never reaches push; a recipient with no active socket connection in the relevant room (see [Real-time Architecture](./realtime)) falls through to it. Direct messages are the one exception — they always attempt push alongside socket delivery, so an installed PWA sitting in the background still surfaces an OS-level notification. Scheduled reminders and staff-triggered broadcasts start directly at the push tier, skipping the socket step altogether.
+Push is one tier in a single delivery pass inside `NotificationHelper.attemptDeliveryWithEscalation()` (`Api/src/modules/messaging/helpers/NotificationHelper.ts`): an in-app preference gate, then socket delivery and push attempted in the same pass (each behind its own preference gate), then email. A recipient who has muted the category never reaches push. Socket delivery succeeding no longer stops push — every notification type now behaves the way private messages always did, so an installed PWA sitting in the background still surfaces an OS-level notification even when a socket delivery already landed; duplicate banners are suppressed client-side by the service worker instead (see [Service worker requirement](#service-worker-requirement)). Scheduled reminders and staff-triggered broadcasts start directly at the push tier, skipping the socket step altogether. Email remains timer-driven, escalating unread rows on its own schedule rather than as part of this pass.
 
 The most common paths that reach push:
 
 1. **Content notifications** — a reply to a conversation the person follows, a mention, or another event routed through `NotificationHelper.createNotifications()`.
-2. **Private messages** — a direct message escalates through the same delivery function and always attempts push in addition to socket delivery.
+2. **Private messages** — a direct message goes through the same delivery function and always attempts push alongside socket delivery.
 3. **Scheduled reminders** — event, task, and serving reminders expanded and dispatched by the reminder engine, which starts new occurrences directly at the push tier.
 4. **Staff-triggered pushes** — `POST /messaging/notifications/create`, `/ping`, and `/group/send` for one-off or group broadcasts.
 
@@ -28,11 +28,12 @@ NotificationHelper.createNotifications(...) / checkShouldNotify(...) / ReminderE
   │
   └─ NotificationHelper.attemptDeliveryWithEscalation(...)
        ├─ in-app preference gate                  ← muted recipients stop here, no push
-       ├─ socket delivery via DeliveryHelper       ← preferred; skipped for reminders/broadcasts (they start at push)
-       ├─ push preference gate
-       │    └─ WebPushHelper.sendBulkTypedMessages(tokens, title, body, type, contentId)
-       │         └─ web-push library → VAPID-signed POST → browser push service
-       └─ email preference gate → digest or immediate send
+       ├─ same pass, both attempted (neither gates the other):
+       │    ├─ socket delivery via DeliveryHelper  ← skipped for reminders/broadcasts (they start at push)
+       │    └─ push preference gate
+       │         └─ WebPushHelper.sendBulkTypedMessages(tokens, title, body, type, contentId)
+       │              └─ web-push library → VAPID-signed POST → browser push service
+       └─ email preference gate → timer-driven, escalates unread rows separately
 ```
 
 ### Required environment variables
@@ -103,28 +104,52 @@ Behaviors that consumers get for free:
 
 ### Service worker requirement
 
-The browser's `PushManager` only resolves a subscription when a service worker is registered at the configured scope. ChurchApps PWAs use [Serwist](https://serwist.dev/) (Next.js apps) or workbox for service worker generation. The service worker must include a `push` event handler that calls `self.registration.showNotification(title, options)` to render the OS-level notification when the push arrives:
+The browser's `PushManager` only resolves a subscription when a service worker is registered at the configured scope. ChurchApps PWAs use [Serwist](https://serwist.dev/) (Next.js apps) or workbox for service worker generation. Because the server now always attempts push alongside socket delivery (see [When push fires](#when-push-fires)), the service worker is the dedup point: its `push` handler must suppress `showNotification` when a focused/visible client is already on the notification's deep-link target, but should always update the app badge regardless of whether the banner was shown:
 
 ```javascript
 // public/sw.js (or whatever Serwist/workbox emits)
 self.addEventListener("push", (event) => {
   const data = event.data?.json() ?? {};
   const title = data.title || "ChurchApps";
-  event.waitUntil(self.registration.showNotification(title, {
-    body: data.body,
-    data: { type: data.type, contentId: data.contentId },
-    icon: "/icons/icon-192.png"
-  }));
+  const target = deepLinkFor(data.type, data.contentId, data);
+
+  event.waitUntil((async () => {
+    if (typeof data.badgeCount === "number") await updateAppBadge(data.badgeCount); // always runs, even if the banner is suppressed
+
+    const clients = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
+    // Same pathname; for private messages, also same conversationId.
+    const alreadyViewing = clients.some((client) => (client.focused || client.visibilityState === "visible") && clientMatchesTarget(client.url, target));
+    if (alreadyViewing) return;
+
+    await self.registration.showNotification(title, {
+      body: data.body,
+      data: { type: data.type, contentId: data.contentId, url: target },
+      icon: "/icons/icon-192.png"
+    });
+  })());
 });
 
 self.addEventListener("notificationclick", (event) => {
   event.notification.close();
-  const { type, contentId } = event.notification.data || {};
-  event.waitUntil(self.clients.openWindow(deepLinkFor(type, contentId)));
+  const { url: target } = event.notification.data || {};
+  event.waitUntil((async () => {
+    const clients = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
+
+    const exact = clients.find((client) => clientMatchesTarget(client.url, target));
+    if (exact) return exact.focus(); // already on the target: focus, don't navigate
+
+    const mobileClient = clients.find((client) => new URL(client.url).pathname.startsWith("/mobile"));
+    if (mobileClient) {
+      await mobileClient.focus();
+      return mobileClient.navigate(target);
+    }
+
+    return self.clients.openWindow(target);
+  })());
 });
 ```
 
-`deepLinkFor` is consumer-specific — B1App routes `privateMessage` to `/mobile/messages/:id`, B1Admin routes `notification` to its alerts panel, etc.
+`deepLinkFor` / `clientMatchesTarget` are consumer-specific — see `B1App/src/app/sw.ts` for the reference implementation. B1App routes `privateMessage` to `/mobile/messages/:personId`, B1Admin routes `notification` to its alerts panel, etc.
 
 ## Operational notes
 
@@ -136,6 +161,6 @@ self.addEventListener("notificationclick", (event) => {
 ## Related Pages
 
 - [Notifications Architecture](./architecture/notifications) -- The full in-app/push/email escalation funnel and the reminder engine
-- [Real-time Architecture](./realtime) -- WebSocket delivery; push escalates from the same in-app funnel when a socket delivery doesn't land
+- [Real-time Architecture](./realtime) -- WebSocket delivery; push now fires from the same in-app funnel alongside socket delivery in the same pass, not only as a fallback when a socket delivery doesn't land
 - [Messaging Endpoints](./api/endpoints/messaging) -- Notifications, devices, and the rest of the messaging surface
 - [AppHelper](./shared-libraries/app-helper) -- The npm package that ships `WebPushHelper`
