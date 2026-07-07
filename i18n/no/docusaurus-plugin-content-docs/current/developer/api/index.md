@@ -1,4 +1,4 @@
-﻿---
+---
 title: "API"
 ---
 
@@ -6,64 +6,66 @@ title: "API"
 
 <div class="article-intro">
 
-ChurchApps API er en **modulær monolitt** -- en enkelt kodebase som betjener seks distinkte moduler, hver med sin egen database. Denne arkitekturen gir deg organisasjonsfordelene ved mikrotjenester (klare grenser, uavhengige datalagreinger) med operasjonell enkelthet fra en enkelt distribusjon.
+ChurchApps API er en **modulær monolitt** -- en enkelt kodebasis som betjener seks datamoduler, hver med sin egen database. Denne arkitekturen gir deg organisatoriske fordeler av mikrotjenester (klare grenser, uavhengige datalagre) med operativ enkelhet ved en enkelt distribusjon.
 
 </div>
 
 ## Moduler
 
 | Modul | Formål |
-|-------|--------|
+|--------|---------|
 | **Medlemskap** | Personer, grupper, husstander, tillatelser |
-| **Frammøte** | Tjenester, sesjoner, sjekk-inn poster |
+| **Oppmøte** | Tjenester, økter, sjekkinnposter |
 | **Innhold** | Sider, seksjoner, elementer, streaming |
-| **Gaver** | Donasjoner, fond, betalingsbehandling |
+| **Giver** | Donasjoner, midler, betalingsbehandling |
 | **Meldinger** | Samtaler, varsler, e-post |
-| **Oppgaver** | Oppgaver, planer, oppgaver |
+| **Gjøremål** | Oppgaver, planer, oppgaver |
 
-## Teknologistokk
+## Teknologistabel
 
 - **Runtime:** Node.js 22.x med TypeScript (ES-moduler)
 - **Rammeverk:** Express
-- **Avhengighetsinjeksjon:** Inversify (dekorator-basert ruting)
+- **Avhengighetsinjeksjon:** Inversify (dekoratørbasert ruting)
 - **Database:** MySQL -- en database per modul, hver med sin egen tilkoblingspulje
-- **Auth:** JWT-basert godkjenning via `CustomAuthProvider`
+- **Auth:** JWT-basert autentisering via `CustomAuthProvider`
 - **Distribusjon:** AWS Lambda via Serverless Framework v3
 
 ## Porter
 
 | Protokoll | Port | Beskrivelse |
-|-----------|------|-------------|
+|----------|------|-------------|
 | HTTP | `8084` | Hoved-REST API |
-| WebSocket | `8087` | Sanntids socket-tilkoblinger |
+| WebSocket | `8087` | Sanntids-socketforbindelser |
 
 ## Lambda-funksjoner
 
-Når det blir distribuert til AWS, kjører API-en som fire Lambda-funksjoner:
+Når de distribueres til AWS, kjører API-en som seks Lambda-funksjoner:
 
 - **`web`** -- Håndterer alle HTTP-forespørsler
-- **`socket`** -- Administrerer WebSocket-tilkoblinger
-- **`timer15Min`** -- Kjøres hver 15. minutt for e-postvarsler
-- **`timerMidnight`** -- Kjøres daglig for sammendrag og vedlikeholdsoppgaver
+- **`socket`** -- Administrerer WebSocket-forbindelser
+- **`timer15Min`** -- Kjøres hver 30. minutt for e-postvarslinger (navnet er historisk)
+- **`timerMidnight`** -- Kjøres daglig for digesteposte og vedlikeholdsoppgaver
+- **`timerScheduledTasks`** -- Kjøres daglig for forfallne automatiseringer og overdue arbeidsflytbehandling
+- **`timerWebhooks`** -- Kjøres hvert minutt for å levere køede utgående webhooks
 
 ## Delte biblioteker
 
-API-en avhenger av to delte ChurchApps-pakker:
+API-en er avhengig av to delte ChurchApps-pakker:
 
 - **[`@churchapps/helpers`](../shared-libraries/helpers)** -- Grunnleggende verktøy (DateHelper, ApiHelper, osv.)
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Express-serververktøy inkludert godkjenning, databasehjelpere og AWS-integrasjoner
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Express-serververktøy inkludert auth, databasehjelpere og AWS-integrasjoner
 
 :::info
-API-en bruker ES-moduler (`"type": "module"` i `package.json`). Sørg for at importer bruker ES-modulsyntaksen.
+API-en bruker ES-moduler (`"type": "module"` i `package.json`). Sørg for at importene dine bruker ES-modulsyntaksen.
 :::
 
 ## I denne seksjonen
 
-- **[Lokalt oppsett](./local-setup)** -- Klone, konfigurer og kjør API-en lokalt
-- **[Database](./database)** -- Database-per-modul arkitektur, skjemaskript og dataaccessmønstre
-- **[Modulstruktur](./module-structure)** -- Kontrollanter, lagre, modeller og godkjenning
-- **[API-nøkler](./api-keys)** -- Personlige tilgangstoken for skript og koblinger
-- **[Tilkoblede apper (OAuth)](./connected-apps)** -- Multi-leier OAuth-flyt for tredjepartsapper
-- **[Webhooks](./webhooks)** -- Push-hendelsesmeldinger til eksterne systemer
+- **[Lokal oppsett](./local-setup)** -- Klon, konfigurer og kjør API-en lokalt
+- **[Database](./database)** -- Database-per-modul-arkitektur, schemaskript og dataaccessmønstre
+- **[Modulstruktur](./module-structure)** -- Kontrollere, repositorier, modeller og autentisering
+- **[API-nøkler](./api-keys)** -- Personlige tilgangstokens for skript og koblinger
+- **[Tilkoblede apper (OAuth)](./connected-apps)** -- Fleirtenants OAuth-flyt for tredjeparts-apper
+- **[Webhooks](./webhooks)** -- Skyv hendelsesvarslinger til eksterne systemer
 - **[MCP-server](./mcp)** -- Model Context Protocol-endepunkt som eksponerer API-en til AI-assistenter
-- **[Sluttpunktreferanse](./endpoints/)** -- Komplett REST API-dokumentasjon for alle moduler
+- **[Sluttendepunkt-referanse](./endpoints/)** -- Komplett REST API-dokumentasjon for alle moduler

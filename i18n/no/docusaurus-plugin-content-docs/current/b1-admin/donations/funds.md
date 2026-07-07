@@ -1,64 +1,69 @@
 ---
-title: "Administrere fond"
+title: "Administrasjon av fond"
 ---
 
-# Administrere fond
+# Administrasjon av fond
 
 <div class="article-intro">
 
-Fond lar deg kategorisere donasjoner etter formål slik at du kan spore hvor mye menigheten din mottar for hvert tjenesteområde. Vanlige fond inkluderer Generelt fond, Bygningsfond, Misjoner og Ungdomstjeneste, men du kan opprette så mange du trenger.
+Fond lar deg kategorisere donasjoner etter formål slik at du kan spore hvor mye kirken din mottar for hvert ministeriumsområde. Vanlige fond inkluderer Generelt fond, Byggeprosjektfond, Misjoner og Ungdomministerium, men du kan opprette så mange som du trenger.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du trenger tilgang til **Donasjoner**-seksjonen i B1 Admin
-- Bestem hvilke giverkategorier menigheten din trenger og om hver av dem skal være skattefradragsberettiget
+- Du vil trenge tilgang til seksjonen **Donasjoner** i B1 Admin
+- Bestem hvilke gavekategorier kirken din trenger og om hver skal være skattegrunnlag
 
 </div>
 
-## Fondsiden
+## Siden for fond
 
-Naviger til **Donasjoner > Fond** for å se en liste over alle fondene dine. Hver rad viser fondnavnet og dets **skattefradragsberettiget**-status, som bestemmer om donasjoner til det fondet vises på årlige [giveroppgaver](giving-statements.md).
+Naviger til **Donasjoner > Fond** for å se en liste over alle fondene dine. Hver rad viser fondets navn og **skattefradragsstatus**, som bestemmer om donasjoner til det fondet vises på årets slutt [gaveerklæringer](giving-statements.md).
 
-## Opprette et nytt fond
+## Opprett et nytt fond
 
 1. Klikk **Legg til fond** øverst på siden.
-2. Skriv inn et navn for fondet (f.eks. "Bygningsfond").
-3. Merk av for **Skattefradragsberettiget** hvis donasjoner til dette fondet skal inkluderes i giveroppgaver.
-4. Klikk **Lagre**.
+2. Skriv inn et navn for fondet (f.eks. "Byggeprosjektfond").
+3. Merk av for **Skattefradrag** hvis donasjoner til dette fondet skal inkluderes på gaveerklæringer.
+4. La **Synlig for givere** være avmerket for å vise fondet på offentlige og medlemmers donasjonsformularer, eller avmerk det for å skjule fondet fra givere mens du fortsatt bruker det for manuelt registrerte donasjoner.
+5. Klikk **Lagre**.
 
-Det nye fondet vises umiddelbart i listen din og er tilgjengelig når du registrerer donasjoner.
+Det nye fondet vises umiddelbart i listen og er tilgjengelig når du registrerer donasjoner.
 
-## Redigere og slette fond
+## Redigering og sletting av fond
 
-- For å redigere et fond, klikk **Rediger**-knappen ved siden av det. Du kan endre navnet eller veksle innstillingen for skattefradrag.
+- For å redigere et fond, klikk **Rediger**-knappen ved siden av det. Du kan endre navnet, veksle skattefradraget, eller veksle **Synlig for givere** for å vise eller skjule det fra donasjonsformularer.
 - For å slette et fond, åpne redigeringsskjemaet og klikk **Slett**.
 
 :::warning
-Å slette et fond fjerner ikke donasjoner som tidligere var tilordnet det. Disse donasjonspostene forblir i systemet, men fondet vil ikke lenger være tilgjengelig for nye donasjoner.
+Sletting av et fond fjerner ikke donasjoner som tidligere ble tildelt det. Disse donasjonpostene forblir i systemet, men fondet vil ikke lenger være tilgjengelig for nye donasjoner.
 :::
 
-## Vise fonddetaljer
+:::info
+Fond skjult fra givere viser en **Skjult**-chip ved siden av navnet sitt i denne listen. Skjulte fond fungerer fortsatt for donasjoner registrert manuelt i B1 Admin -- de vises bare ikke som et alternativ på offentlige eller medlemmers donasjonsformularer.
+:::
 
-Klikk på et **fondnavn** for å åpne detaljsiden. Denne siden viser:
+## Visning av fonddetaljer
 
-- **Donasjonshistorikk** -- en liste over alle donasjoner til dette fondet
-- **Datoperiode-filter** -- begrens resultatene til en bestemt tidsperiode
-- **Sammendragsstatistikk** -- totale donasjoner, unike givere og totalt beløp
+Klikk på et **fondsavn** for å åpne detaljsiden. Denne siden viser:
 
-Denne visningen er nyttig når du trenger å rapportere om et spesifikt giverinitiativ eller sjekke fremgang mot et innsamlingsmål.
+- **Donasjonhistorikk** -- en liste over alle donasjoner til dette fondet
+- **Datointervallfilter** -- begrens resultatene til en bestemt tidsperiode
+- **Sammenfattende statistikk** -- totale donasjoner, unike givere og totalt beløp i dollar
+
+Denne visningen er nyttig når du må rapportere om en bestemt giveinitativ eller sjekke framgang mot et innsamlingsmål.
 
 ## Sortering og eksport
 
-- Bruk kolonneoverskriftene for å sortere fond etter navn.
-- Klikk **Eksporter til CSV** for å laste ned fondlisten din som et regneark.
+- Bruk kolonneoverskriftene til å sortere fond etter navn.
+- Klikk **Eksporter til CSV** for å laste ned fondslisten din som et regneark.
 
 :::tip
-Sett opp fondene dine før du begynner å [registrere donasjoner](recording-donations.md). Å ha alle fond på plass sikrer at donasjoner kategoriseres riktig fra starten.
+Sett opp fondene dine før du begynner å [registrere donasjoner](recording-donations.md). Å ha alle fond på plass sikrer at donasjoner blir kategorisert riktig fra start.
 :::
 
 ## Neste steg
 
-Når fondene dine er satt opp, kan du tilordne dem til donasjoner når du [registrerer donasjoner](recording-donations.md) i en gruppe. Sørg for å merke de riktige fondene som skattefradragsberettiget før du genererer [giveroppgaver](giving-statements.md).
+Når fondene dine er satt opp, kan du tildele dem til donasjoner når du [registrerer donasjoner](recording-donations.md) i en batch. Husk å merke de aktuelle fondene som skattefradrag før du genererer [gaveerklæringer](giving-statements.md).

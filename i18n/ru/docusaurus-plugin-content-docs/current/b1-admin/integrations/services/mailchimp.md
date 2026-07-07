@@ -6,16 +6,16 @@ title: "Mailchimp"
 
 <div class="article-intro">
 
-Направляйте новых людей B1, дающих или членов группы в аудиторию Mailchimp, чтобы следующая серия приветствия, обращение в конце года или информационный бюллетень волонтеров извлекали из списка, который всегда актуален. Подключение полностью находится в Zapier (или Make) — B1 срабатывает событие, Mailchimp поглощает подписчика.
+Передавайте новых людей B1, доноров или участников групп в аудиторию Mailchimp, так чтобы следующая приветственная серия, призыв в конце года или информационный бюллетень волонтеров извлекали из списка, который всегда актуален. B1 не имеет встроенной синхронизации Mailchimp -- проводка полностью находится в Zapier (или Make): B1 запускает событие, Mailchimp принимает подписчика.
 
 </div>
 
 <div class="prereqs">
-<h4>Перед началом</h4>
+<h4>Перед тем как начать</h4>
 
-- Аккаунт [Mailchimp](https://mailchimp.com) с по крайней мере одной аудиторией, в которую вы хотите, чтобы люди B1 были отправлены
-- Аккаунт [Zapier](https://zapier.com) (бесплатный уровень охватывает небольшие церкви)
-- Пользователь B1Admin с разрешением **Edit Settings**, чтобы вы могли создать API-ключ
+- Аккаунт [Mailchimp](https://mailchimp.com) с по крайней мере одной аудиторией, в которую вы хотите отправлять людей B1
+- Аккаунт [Zapier](https://zapier.com) (бесплатный уровень охватывает малые церкви)
+- Пользователь B1Admin с разрешением **Edit Settings**, чтобы вы могли создать ключ API
 
 </div>
 
@@ -24,72 +24,72 @@ title: "Mailchimp"
 | Направление | Триггер B1 | Действие Mailchimp |
 |---|---|---|
 | B1 → Mailchimp | `person.created` | Add/Update Subscriber |
-| B1 → Mailchimp | `donation.created` | Add Subscriber to Tag (например "Gave in 2026") |
-| B1 → Mailchimp | `group.member.added` | Add Subscriber to Tag scoped на эту группу |
+| B1 → Mailchimp | `donation.created` | Add Subscriber to Tag (например, "Gave in 2026") |
+| B1 → Mailchimp | `group.member.added` | Add Subscriber to Tag с областью этой группы |
 | Mailchimp → B1 | New Subscriber | B1 *Create Person* |
 
-Сторона Mailchimp предоставляет много больше (кампании, сегменты, автоматизации) — см. [триггеры Zapier Mailchimp](https://zapier.com/apps/mailchimp/integrations) для полного списка. Все отображаемое из конверта B1 это справедливо.
+Сторона Mailchimp предоставляет намного больше (кампании, сегменты, автоматизация) -- см. [триггеры Zapier Mailchimp](https://zapier.com/apps/mailchimp/integrations) для полного списка. Все, что сопоставимо из конверта B1, справедливо.
 
-## Настройка
+## Установка
 
-### 1. Создайте B1 API-ключ
+### 1. Создайте ключ API B1
 
-В B1Admin перейдите в **Settings → Developer → API Keys → New API Key**. Дайте ему области, которые требует Zap:
+В B1Admin перейдите на **Settings → Developer → API Keys → New API Key**. Дайте ему области, которые нужны Zap:
 
-- `settings:write` — требуется для регистрации вебхука триггера
-- `people:read` — чтобы Zap мог прочитать имя, фамилию, электронную почту и т. д.
-- (Опционально) `people:write`, если вы также планируете направление Mailchimp → B1
+- `settings:write` -- требуется для того, чтобы триггер зарегистрировал свой webhook
+- `people:read` -- так что Zap может читать имя/фамилию, электронную почту и т.д.
+- (Необязательно) `people:write` если вы также планируете направление Mailchimp → B1
 
-Сохраните и скопируйте строку `cak_…` — она показывается только один раз.
+Сохраните и скопируйте строку `cak_…` -- она отображается только один раз.
 
 ### 2. Создайте Zap
 
-1. **Trigger:** `B1.church — New Person`. При первом использовании Zapier просит вас *Sign in to B1.church*; вставьте API-ключ.
-2. **Action:** `Mailchimp — Add/Update Subscriber`. Отобразите выход триггера:
+1. **Триггер:** `B1.church — New Person`. При первом использовании Zapier просит вас *Sign in to B1.church*; вставьте ключ API.
+2. **Действие:** `Mailchimp — Add/Update Subscriber`. Сопоставьте результат триггера:
    - `data.contactInfo.email` → Email Address
    - `data.name.first` → First Name
    - `data.name.last` → Last Name
-   - (Опционально) `data.id` → поле слияния Mailchimp, если вы хотите сохранить id человека B1 рядом.
-3. Включите Zap. Zapier регистрирует вебхук `person.created` на B1 — проверьте в **Settings → Developer → Webhooks**, что строка с именем "Zapier — person.created" появляется.
+   - (Необязательно) `data.id` → поле слияния Mailchimp, если вы хотите сохранить идентификатор человека B1 рядом.
+3. Включите Zap. Zapier регистрирует webhook `person.created` на B1 -- проверьте в **Settings → Developer → Webhooks**, что появляется строка с названием "Zapier — person.created".
 
-Вот и все. Добавьте человека в B1Admin для подтверждения — новый подписчик появляется в Mailchimp в течение секунд.
+Вот и все. Добавьте человека в B1Admin для подтверждения -- новый подписчик появится в Mailchimp в течение секунд.
 
-## Обычные рецепты
+## Общие рецепты
 
-### Автоматически помечайте дающих
+### Тегируйте доноров автоматически
 
-- **Trigger** — B1: New Donation
-- **Action** — B1: Find Person (поиск по `personId`) для получения электронной почты
-- **Action** — Mailchimp: Add Subscriber to Tag (tag `Gave-2026`)
+- **Триггер** -- B1: New Donation
+- **Действие** -- B1: Find Person (поиск по `personId`) для получения электронной почты
+- **Действие** -- Mailchimp: Add Subscriber to Tag (тег `Gave-2026`)
 
-### Отправляйте группе-специфическую серию приветствия
+### Запустите приветственную серию для конкретной группы
 
-- **Trigger** — B1: New Group Member, отфильтровано по `data.groupId`
-- **Action** — Mailchimp: Add Subscriber to Tag названной в честь группы; запустите вашу существующую автоматизацию с этого tag
+- **Триггер** -- B1: New Group Member, отфильтровано по `data.groupId`
+- **Действие** -- Mailchimp: Add Subscriber to Tag с названием группы; запустите существующую автоматизацию от этого тега
 
-### Двусторонний: новые подписчики Mailchimp становятся контактами B1
+### Двусторонний: новые подписки Mailchimp становятся контактами B1
 
-- **Trigger** — Mailchimp: New Subscriber
-- **Action** — B1: Create Person (отобразите First/Last/Email)
+- **Триггер** -- Mailchimp: New Subscriber
+- **Действие** -- B1: Create Person (сопоставьте First/Last/Email)
 
 ## Альтернатива Make
 
-Приложение [Mailchimp Make](https://www.make.com/en/integrations/mailchimp) охватывает 44 модуля — подключение идентично, с триггером B1 *Watch Events* заменяя Zapier's. См. документ [обзор Make](../make) для стороны B1.
+[Приложение Mailchimp на Make](https://www.make.com/en/integrations/mailchimp) охватывает 44 модуля -- проводка идентична, с триггером B1 *Watch Events*, заменяющим Zapier. См. [документ обзора Make](../make) для стороны B1.
 
 ## Ограничения и примечания
 
-- **Бесплатный уровень Mailchimp ограничивает контакты и аудитории** — Zap, который наводняет свободную аудиторию сверх лимита, начнет выдавать ошибки с `4xx Member limit reached`. Журналы Mailchimp делают это очевидным.
-- **Mailchimp дедуплицирует по электронной почте**, так что повторное выполнение Zap на том же человеке B1 обновляет их на месте; это не создает дубликатов.
-- **Отписки из Mailchimp не текут обратно в B1.** Если вы хотите, чтобы отписки Mailchimp очистили предпочтение "Send Mail" B1, явно создайте обратный Zap.
+- **Бесплатный уровень Mailchimp ограничивает контакты и аудитории** -- Zap, который переполняет бесплатную аудиторию сверх лимита, начнет выходить с ошибкой `4xx Member limit reached`. Журналы Mailchimp делают это очевидным.
+- **Mailchimp выполняет дедупликацию по электронной почте**, поэтому повторное запуск Zap на том же человеке B1 обновляет его на месте; это не создает дубликаты.
+- **Отписи от Mailchimp не возвращаются в B1.** Если вы хотите, чтобы отписи Mailchimp очищали предпочтение "Send Mail" B1, явно создайте обратный Zap.
 
 ## Устранение неполадок
 
-- **Zap никогда не срабатывает** — проверьте `Settings → Developer → Webhooks` для строки `Zapier — person.created`. Если отсутствует, API-ключ отсутствовал `settings:write`, когда Zap включился. Пересоздайте, подключите заново, переключите Zap выключено и включено.
-- **`Member exists` предупреждение на Add/Update** — переключитесь с действия *Add Subscriber* на *Add/Update Subscriber* (глагол имеет значение). Вариант upsert идемпотентный.
-- **Имя/фамилия пришли пусты** — B1's `data.name.first` и `data.name.last` заполняются только если эти поля установлены на человека. Отобразите `data.name.display` как fallback.
+- **Zap никогда не срабатывает** -- проверьте `Settings → Developer → Webhooks` на строке `Zapier — person.created`. Если отсутствует, ключ API не имел `settings:write`, когда Zap включился. Переиздайте, переподключитесь, переключите Zap выключено и включено.
+- **Предупреждение `Member exists` на Add/Update** -- измените действие с *Add Subscriber* на *Add/Update Subscriber* (глагол имеет значение). Вариант upsert идемпотентен.
+- **Имя / фамилия появляются пусто** -- `data.name.first` и `data.name.last` B1 заполняются только если эти поля установлены для человека. Сопоставьте `data.name.display` как резервный вариант.
 
 ## См. также
 
-- [Zapier (обзор)](../zapier) — B1 сторона каждого рецепта Zapier
-- [Make (обзор)](../make) — то же самое, визуальный конструктор
-- [Webhooks (справка разработчика)](/docs/developer/api/webhooks#event-catalog)
+- [Zapier (overview)](../zapier) -- сторона B1 каждого рецепта Zapier
+- [Make (overview)](../make) -- то же самое, визуальный конструктор
+- [Webhooks (developer reference)](/docs/developer/api/webhooks#event-catalog)

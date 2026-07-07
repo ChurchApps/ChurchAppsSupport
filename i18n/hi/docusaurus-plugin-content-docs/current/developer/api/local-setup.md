@@ -13,8 +13,8 @@ title: "स्थानीय API सेटअप"
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- **Node.js 22+**, **Git**, और **MySQL 8.0+** इंस्टॉल करें -- देखें [पूर्वापेक्षाएँ](../setup/prerequisites)
-- डेटाबेस निर्माण विशेषाधिकारों वाला एक MySQL उपयोगकर्ता बनाएँ
+- **Node.js 22+**, **Git**, और **MySQL 8.0+** इंस्टॉल करें -- देखें [पूर्वापेक्षाएं](../setup/prerequisites)
+- डेटाबेस निर्माण विशेषाधिकारों के साथ एक MySQL उपयोगकर्ता बनाएं
 - API कॉन्फ़िगरेशन के लिए [पर्यावरण चर](../setup/environment-variables) संदर्भ देखें
 
 </div>
@@ -29,9 +29,11 @@ git clone https://github.com/ChurchApps/Api.git
 
 ### 2. डिपेंडेंसी इंस्टॉल करें
 
+प्रोजेक्ट Yarn का उपयोग करता है (एक गार्ड `npm install` को ब्लॉक करता है):
+
 ```bash
 cd Api
-npm install
+yarn install
 ```
 
 ### 3. पर्यावरण चर कॉन्फ़िगर करें
@@ -54,10 +56,10 @@ mysql://root:password@localhost:3306/dbname
 npm run initdb
 ```
 
-यह स्वचालित रूप से सभी छह डेटाबेस और उनकी तालिकाएँ बनाता है।
+यह स्वचालित रूप से सभी छह डेटाबेस और उनकी तालिकाएं बनाता है।
 
 :::tip
-आप `npm run initdb:membership` (या `attendance`, `content`, `giving`, `messaging`, `doing`) के साथ एक मॉड्यूल का डेटाबेस इनिशियलाइज़ कर सकते हैं।
+आप `npm run initdb -- --module=membership` (या `attendance`, `content`, `giving`, `messaging`, `doing`) के साथ एक मॉड्यूल का डेटाबेस इनिशियलाइज़ कर सकते हैं।
 :::
 
 ### 5. डेव सर्वर शुरू करें
@@ -73,10 +75,10 @@ API हॉट रीलोड के साथ [http://localhost:8084](http://lo
 | कमांड | विवरण |
 |---------|-------------|
 | `npm run dev` | हॉट रीलोड के साथ डेव सर्वर शुरू करें (tsx watch) |
-| `npm run build` | क्लीन, TypeScript कंपाइल और एसेट कॉपी करें |
-| `npm run test` | Jest के साथ टेस्ट चलाएँ (कवरेज सहित) |
-| `npm run test:watch` | वॉच मोड में टेस्ट चलाएँ |
-| `npm run lint` | ऑटो-फिक्स के साथ Prettier और ESLint चलाएँ |
+| `npm run build` | क्लीन, TypeScript कंपाइल करें, और एसेट कॉपी करें |
+| `npm run test` | Jest के साथ परीक्षण चलाएं (कवरेज सहित) |
+| `npm run test:watch` | वॉच मोड में परीक्षण चलाएं |
+| `npm run lint` | ऑटो-फिक्स के साथ ESLint चलाएं (ESLint एकमात्र फॉर्मेटर है) |
 
 ## स्टेजिंग डिप्लॉयमेंट
 
@@ -94,23 +96,22 @@ npm run deploy-staging
 
 ## स्थानीय लाइब्रेरी विकास
 
-यदि आपको API के साथ-साथ एक साझा लाइब्रेरी (`@churchapps/helpers` या `@churchapps/apihelper`) विकसित करनी है, तो `npm link` का उपयोग करें:
+यदि आपको API के साथ-साथ एक साझा लाइब्रेरी (`@churchapps/helpers` या `@churchapps/apihelper`) विकसित करनी है, तो इसे [Packages](https://github.com/ChurchApps/Packages) वर्कस्पेस में बनाएं और API में एक अस्थायी Yarn पोर्टल जोड़ें:
 
 ```bash
-# लाइब्रेरी डायरेक्टरी में
-cd Helpers
-npm run build
-npm link
+# Packages वर्कस्पेस में
+yarn build
 
 # API डायरेक्टरी में
-cd ../Api
-npm link @churchapps/helpers
+yarn link ../Packages/helpers
+# ... परीक्षण ...
+yarn unlink ../Packages/helpers && yarn install
 ```
 
-यह आपको npm पर पब्लिश किए बिना API के विरुद्ध लाइब्रेरी परिवर्तनों का परीक्षण करने देता है।
+यह आपको npm पर प्रकाशित किए बिना API के विरुद्ध लाइब्रेरी परिवर्तनों का परीक्षण करने देता है। विवरण के लिए [साझा लाइब्रेरीज](../shared-libraries/#local-development-against-a-consuming-app) देखें -- और कभी भी पोर्टल रेजोल्यूशन को `package.json` में कमिट न करें।
 
 ## संबंधित लेख
 
-- **[डेटाबेस](./database)** -- डेटाबेस-प्रति-मॉड्यूल आर्किटेक्चर को समझना
-- **[मॉड्यूल संरचना](./module-structure)** -- कंट्रोलर, रिपॉज़िटरी और मॉडल कैसे व्यवस्थित हैं
-- **[साझा लाइब्रेरी](../shared-libraries/)** -- `@churchapps/helpers` और `@churchapps/apihelper` के साथ काम करना
+- **[Database](./database)** -- डेटाबेस-प्रति-मॉड्यूल आर्किटेक्चर को समझना
+- **[मॉड्यूल संरचना](./module-structure)** -- कंट्रोलर, भंडार, और मॉडल कैसे व्यवस्थित हैं
+- **[साझा लाइब्रेरीज](../shared-libraries/)** -- `@churchapps/helpers` और `@churchapps/apihelper` के साथ काम करना

@@ -1,138 +1,149 @@
-﻿---
-title: "Bruke sideeditoren"
+---
+title: "Bruk av sideredigeringsprogram"
 ---
 
-# Bruke sideeditoren
+# Bruk av sideredigeringsprogram
 
 <div class="article-intro">
 
-B1 sideeditor er en visuell dra-og-slipp-bygger som lar deg designe nettstedessidene dine uten å skrive noen kode. Du kan legge til seksjoner og innholdsblokker, tilpasse stiler, forhåndsvise arbeidet ditt og angre endringer – alt fra nettleseren din.
+The B1 page editor is a visual drag-and-drop builder that lets you design your church website pages without writing any code. You can add sections and content blocks, customize styles, preview your work, and undo changes -- all from within your browser.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Fullfør [Initialoppsett](initial-setup) for å få nettstedet ditt konfigurert
-- Opprett minst én side i [Administrere sider](managing-pages)
-- Du må ha tillatelsen **content.edit** for å få tilgang til editoren
+- Complete [Initial Setup](initial-setup) to get your website configured
+- Create at least one page in [Managing Pages](managing-pages)
+- You need the **content.edit** permission to access the editor
 
 </div>
 
-## Åpne editoren
+## Åpning av redigeringsprogrammet
 
-1. I B1 Admin klikker du **Nettsted** i venstremenyen.
-2. Finn siden du vil redigere i tabellen Sider og klikk **Rediger**.
+1. In B1 Admin, click **Website** in the left menu.
+2. Find the page you want to edit in the Pages table and click **Edit**.
 
-Editoren åpnes i fullskjermmodus. Venstre panel viser sidestrukturen og tilgjengelige innholdselementer; midtområdet viser en direktevisning av siden.
+The editor opens in full-screen mode. The left panel shows your page structure and available content elements; the center area shows a live preview of your page.
 
 :::info
-Editoren vises alltid i lysemodus, uavhengig av B1 Admin-temainnstillingen. Dette sikrer at forhåndsvisningen nøyaktig samsvarer med hvordan siden ser ut for besøkende.
+The editor always displays in light mode, regardless of your B1 Admin theme setting. This ensures the preview accurately matches how your page will look to website visitors.
 :::
 
-## Sidestruktur: Seksjoner og elementer
+## Sidestruktur: seksjoner og elementer
 
-Hver side er bygd fra to nivåer:
+Every page is built from two levels:
 
-- **Seksjoner** – De øverste beholderne som deler siden inn i horisontale bånd (for eksempel en heroseksjon, en innholdsblokk eller en bunntekstflis). Hver side må ha minst én seksjon før du kan legge til innhold.
-- **Elementer** – De enkelte innholdsstummene som er plassert i en seksjon, som tekst, bilder, knapper, kort, skjemaer og kalendere.
+- **Sections** -- The top-level containers that divide your page into horizontal bands (for example, a hero section, a content block, or a footer strip). Every page must have at least one section before you can add content.
+- **Elements** -- The individual content pieces placed inside a section, such as text, images, buttons, cards, forms, and calendars.
 
 ### Legge til en seksjon
 
-1. Klikk **Legg til seksjon** (eller **+**-knappen øverst i venstre panel).
-2. Velg hvordan du vil starte:
-   - **Fra mal** – bla gjennom seksjonsmalgalleriet organisert etter kategori (Hero, Om, Tjenester, Gi osv.) og klikk en for å sette inn den som en fullt stilisert, forhåndsutfylt seksjon. Du kan tilpasse alt etter at den er lagt til.
-   - **Tom seksjon** – velg et kolonneoppsett (enkelt, to kolonner, tre kolonner osv.) og bygg fra bunnen av.
-3. Den nye seksjonen vises i forhåndsvisningen. Klikk på den for å velge den og konfigurer bakgrunnsfarge, polstring og andre stilalternativer.
+1. Click **Add Section** (or the **+** button at the top of the left panel).
+2. Choose how to start:
+   - **From a template** — browse the section template gallery organized by category (Hero, About, Services, Giving, etc.) and click one to insert it as a fully styled, pre-filled section. You can customize everything after it is added.
+   - **Blank section** — choose a column layout (single, two columns, three columns, etc.) and build from scratch.
+3. The new section appears in the preview. Click it to select it and configure its background color, padding, and other style options.
 
 ### Legge til elementer i en seksjon
 
-1. Klikk inne i en seksjon i forhåndsvisningen for å velge den.
-2. Klikk **Legg til innhold** og velg en elementtype fra listen:
-   - **Tekst** – Overskrifter, avsnitt og rik tekst
-   - **Bilde** – Last opp eller lenk til et fotografi
-   - **Knapp** – En klikkbar handlingslenke
-   - **Kort** – Et bilde med tittel og beskrivelse
-   - **Skjema** – Bygd inn et [skjema](../forms/creating-forms) direkte på siden
-   - **Kalender** – Vis en arrangementskalender
-   - **Vanlige spørsmål** – Trekkspill-stilte spørsmål og svarblokker
-   - **Video** – Bygg inn en video etter nettadresse
-   - **Gruppekatalog** – En søkbar katalog over alle kirkens grupper med valgfritt søk, kategorifitering og etikett-filter
-3. Konfigurer elementet ved hjelp av innstillingspanelet som vises.
+1. Click inside a section in the preview to select it.
+2. Click **Add Content** and choose an element type from the list:
+   - **Text** -- Headings, paragraphs, and rich text
+   - **Image** -- Upload or link to a photo
+   - **Button** -- A clickable call-to-action link
+   - **Card** -- An image with a title and description
+   - **Form** -- Embed a [form](../forms/creating-forms) directly on the page
+   - **Calendar** -- Display an event calendar
+   - **FAQ** -- Accordion-style question and answer blocks
+   - **Video** -- Embed a video by URL
+   - **Grupper Browser** -- A filterable directory of all church groups with optional search, category filter, and label filter
+   - **Icon Feature** -- An icon with a title and short description, for feature or ministry highlights
+   - **Gallery** -- A multi-photo grid or masonry layout
+   - **Testimonial** -- One or more quotes with author name, role, and photo
+   - **Social Icons** -- Linked icons for your church's social media profiles
+   - **Countdown** -- A timer counting down to a date or a weekly service time
+   - **Stats** -- A row of large numbers with labels (members, years, campuses)
+   - **Campaign Progress** -- A live progress bar for a giving campaign, showing the total raised toward a fund goal
+   - **Staff Grid** -- Photo cards for the members of a group; the group must have its **public roster** option turned on
+   - **Service Times** -- Your campuses' service schedule, pulled automatically from attendance setup
+   - **Sermons** -- Your sermon library, as a full browser or a grid, list, or featured-latest layout
+3. Configure the element using the settings panel that appears.
 
-### Omorganisere innhold
+### Omorganisering av innhold
 
-Dra seksjoner eller elementer ved hjelp av håndtaksikonet (seks prikker) på venstre side av hvert element for å omorganisere dem. Du kan dra elementer innen en seksjon eller flytte dem mellom seksjoner.
+Drag sections or elements using the handle icon (six dots) on the left side of each item to reorder them. You can drag elements within a section or move them between sections.
 
-## Styling av siden
+## Styling av siden din
 
-### Seksjonsstiler
+### Seksjonstiler
 
-Klikk på en seksjon for å åpne stilpanelet. Du kan angi:
+Click any section to open its style panel. You can set:
 
-- **Bakgrunn** – Solid farge, gradient eller bilde
-- **Polstring** – Topp- og bunneavstand inne i seksjonen
-- **Bredde** – Fullbredde eller sentrert/begrenset
+- **Background** -- Solid color, gradient, or image. When using an image background, a **Focal Point** picker lets you click to set which part of the image stays centered as the section scales, and an **Overlay** color option lets you add a semi-transparent tint over the image to improve text legibility.
+- **Padding** -- Top and bottom spacing inside the section
+- **Width** -- Full-width or centered/contained
+- **Dividers** -- Decorative shape dividers (wave, slant, curve, triangle, and more) on the top or bottom edge of the section, with color, height, and flip options
 
 ### Elementstiler
 
-Klikk på et element for å åpne stilpanelet. Vanlige alternativer inkluderer skriftstørrelse, farge, justering, margin og polstring. For bilder kan du angi alt-tekst og lenkedetaljer.
+Click any element to open its style panel. Common options include font size, color, alignment, margin, and padding. For images, you can set alt text and link targets.
 
 ### Egendefinert CSS
 
-For avansert styling har hver seksjon og element et **Egendefinert CSS**-felt hvor du kan skrive dine egne CSS-regler. Disse er begrenset til det elementet, så de vil ikke utilsiktet påvirke resten av siden.
+For advanced styling, each section and element has a **Egendefinert CSS** field where you can write your own CSS rules. These are scoped to that element, so they will not unintentionally affect the rest of the page.
 
 :::tip
-Hvis du må bruke stiler på hele nettstedet – for eksempel en egendefinert skrift eller global farge – bruk [Utseende](appearance)-innstillingene i stedet for egendefinert CSS på enkelte sider.
+If you need to apply styles across your entire site -- such as a custom font or global color -- use the [Appearance](appearance) settings instead of custom CSS on individual pages.
 :::
 
-## Forhåndsvisning av siden
+## Forhåndsvisning av siden din
 
-Bruk forhåndsvisningskontrollene i verktøylisten for å sjekke hvordan siden ser ut på ulike skjermstørrelser:
+Use the preview controls in the toolbar to check how your page looks at different screen sizes:
 
-- **Stasjonær** – Fullbredde-nettleserview
-- **Mobil** – Smalere telefonformat
+- **Desktop** -- Full-width browser view
+- **Mobile** -- Narrow phone-sized view
 
-Klikk **Forhåndsvisning** for å åpne en direkteversjon av siden i en ny nettleserfane, nøyaktig som besøkende vil se den.
+Click **Preview** to open a live version of the page in a new browser tab, exactly as visitors will see it.
 
-## Angre endringer
+## Angring av endringer
 
-Editoren sporer redigeringshistorikken automatisk. Bruk verktøylinjens knapper eller tastatursnarvei for å navigere:
+The editor tracks your editing history automatically. Use the toolbar buttons or keyboard shortcuts to navigate:
 
-- **Angre** (Ctrl+Z / Cmd+Z) – Tilbakestill den siste handlingen
-- **Gjenta** (Ctrl+Y / Cmd+Y) – Bruk en angret handling på nytt
+- **Undo** (Ctrl+Z / Cmd+Z) -- Revert your last action
+- **Redo** (Ctrl+Y / Cmd+Y) -- Re-apply an undone action
 
-Du kan også gjenopprette siden til et tidligere øyeblikk. Klikk **Historikk** i verktøylinja for å se en liste over lagrede øyeblikksbilder med beskrivelser, og klikk en oppføring for å gjenopprette til det punktet.
+You can also restore the page to an earlier snapshot. Click **History** in the toolbar to see a list of saved snapshots with descriptions, and click any entry to restore to that point.
 
 :::warning
-Gjenoppretting av et øyeblikk erstatter gjeldende sideinnhold med øyeblikk-versjonen. Dette kan ikke angres med den vanlige angre-knappen. Lagre et øyeblikk av gjeldende tilstand før du gjenoppretter en gammel hvis du vil beholde muligheten til å returnere.
+Restoring a snapshot replaces your current page content with the snapshot version. This cannot be undone with the standard undo button. Save a snapshot of your current state before restoring an old one if you want to keep the option to return.
 :::
 
 ## Lagring og publisering
 
-Endringer blir lagret automatisk mens du arbeider. En statusindikator i verktøylinja viser om endringene er lagret.
+Changes are saved automatically as you work. A status indicator in the toolbar shows whether your changes have been saved.
 
-### Utkast og publisert tilstand
+### Draft and published state
 
-Sider kan ha en **publisert** tilstand som styrer når besøkende ser endringene dine. Verktøylinja viser en statusbrikke som viser gjeldende tilstand:
+Pages can have a **published** state, which controls when visitors see your changes. The toolbar displays a status chip showing the current state:
 
-- **Direkteavsluttet ved lagring** – Siden bruker ikke arbeitsflyt for publisering. Hver lagret endring blir direkteavsluttet. Dette er standard for nye sider.
-- **Ulagret endringer** – Siden har blitt publisert før, men du har gjort endringer siden sist publisering. Besøkende ser fortsatt den tidligere publiserte versjonen.
-- **Publisert** – Siden er direkteavsluttet og det lagrede innholdet ditt samsvarer med det besøkende ser.
+- **Live on Save** -- The page does not use a publish workflow. Every saved change goes live immediately. This is the default for new pages.
+- **Unpublished Changes** -- The page has been published before, but you have made changes since the last publish. Visitors still see the previously published version.
+- **Published** -- The page is live and your saved content matches what visitors see.
 
-For å publisere endringene dine klikker du **Publiser**-knappen i verktøylinja. Siden blir direkteavsluttet umiddelbart.
+To publish your changes, click the **Publish** button in the toolbar. The page becomes live immediately.
 
-For å tilbakestille til sist publiserte versjon uten å påvirke det besøkende ser, åpner du overflytmenyen (⋮) og klikker **Forkast endringer**.
+To revert to the last published version without affecting what visitors see, open the overflow menu (⋮) and click **Discard Changes**.
 
-For å ta en side offline helt åpner du overflytmenyen og klikker **Avpubliser**. Besøkende vil ikke lenger se siden til du publiserer den igjen.
+To take a page offline entirely, open the overflow menu and click **Unpublish**. Visitors will no longer see that page until you publish it again.
 
 :::tip
-Bruk utkastvarslingsarbeidsflyt når du vil forberede en side – for eksempel for et kommende arrangement – og bare gjøre den direkteavsluttet på riktig tid. Bygg og forhåndsvis siden, deretter klikker du Publiser når du er klar.
+Use the draft/publish workflow when you want to prepare a page -- for example, for an upcoming event -- and only make it live at the right moment. Build and preview the page, then click Publish when you are ready.
 :::
 
 ## Relaterte artikler
 
-- [Administrere sider](managing-pages) – Opprett sider, angi nettadresser og administrer nettstednavigasjon
-- [Utseende](appearance) – Angi nettstedsfargene, skriftene og merkevaren
-- [Filer](files) – Last opp bilder og dokumenter for bruk i editoren
-- [Opprette skjemaer](../forms/creating-forms) – Bygg skjemaer som du kan bygge inn på sider
+- [Managing Pages](managing-pages) -- Create pages, set URLs, and manage site navigation
+- [Appearance](appearance) -- Set site-wide colors, fonts, and branding
+- [Files](files) -- Upload images and documents to use in the editor
+- [Creating Forms](../forms/creating-forms) -- Build forms you can embed on pages

@@ -6,36 +6,36 @@ title: "Visão Geral do B1 Admin"
 
 <div class="article-intro">
 
-O B1 Admin é seu painel de gerenciamento da igreja. Fornece ferramentas para gerenciar todos os aspectos das operações da sua igreja -- desde diretórios de membros e doações até construção de sites e transmissão ao vivo -- tudo em um único lugar.
+B1 Admin é seu painel de controle de gerenciamento de igreja. Fornece ferramentas para gerenciar todos os aspectos das operações da sua igreja -- desde diretórios de membros e doações até construção de sites e transmissão ao vivo -- tudo de um único lugar.
 
 </div>
 
-## Iniciando
+## Começando
 
-1. Abra seu navegador e acesse [admin.b1.church](https://admin.b1.church)
+1. Abra seu navegador e vá para [admin.b1.church](https://admin.b1.church)
 2. Faça login com seu nome de usuário e senha
-3. Você chegará ao **Dashboard**, que fornece uma visão geral dos dados da sua igreja junto com **Ações Rápidas** para tarefas comuns como adicionar pessoas, criar grupos, registrar doações e muito mais
+3. Você chegará ao **Painel de Controle**, que fornece uma visão geral dos dados da sua igreja junto com **Ações Rápidas** para tarefas comuns como adicionar pessoas, criar grupos, registrar doações e muito mais
 
 :::tip
-Novo no B1 Admin? Comece com a [Introdução](./introduction) para um vídeo de orientação, depois visite [Configurações](./settings/) para configurar as informações da sua igreja e convidar sua equipe.
+Novo no B1 Admin? Comece com [Introdução](./introduction) para um passo a passo em vídeo, depois visite [Configurações](./settings/) para configurar as informações da sua igreja e convidar sua equipe.
 :::
 
 ## Recursos Principais
 
-- **[Pessoas](./people/)** - Gerencie seu diretório da igreja, adicione membros, edite dados em lote, acompanhe famílias
-- **[Grupos](./groups/)** - Crie e organize grupos da igreja com solicitações de adesão e gerenciamento de membros
-- **[Frequência](./attendance/)** - Configure campi, horários de culto e acompanhe a frequência
-- **[Doações](./donations/)** - Registre doações em múltiplas moedas, gerencie fundos, gere extratos
-- **[Servindo](./serving/)** - Coordene voluntários, crie planos de serviço, gerencie tarefas e mova pessoas por fluxos de trabalho passo a passo
+- **[Pessoas](./people/)** - Gerencie seu diretório de igreja, adicione membros, edite dados em lote, rastreie famílias
+- **[Grupos](./groups/)** - Crie e organize grupos de igreja com solicitações de adesão e gerenciamento de membros
+- **[Presença](./attendance/)** - Configure campi, horários de serviço e rastreie a presença
+- **[Doações](./donations/)** - Registre doações em múltiplas moedas, gerencie fundos, gere declarações
+- **[Servindo](./serving/)** - Coordene voluntários, crie planos de serviço, gerencie tarefas e mova pessoas através de fluxos de trabalho passo a passo
 - **[Formulários](./forms/)** - Crie formulários personalizados para registros e coleta de dados
-- **[Relatórios](./reports/)** - Visualize relatórios de aniversários, frequência e doações
-- **[Website](./website/)** - Crie e gerencie seu site de igreja com estilos de navegação personalizados
+- **[Relatórios](./reports/)** - Veja relatórios de aniversários, presença e doações
+- **[Site](./website/)** - Construa e gerencie seu site de igreja com estilos de navegação personalizados
 - **[Sermões](./sermons/)** - Gerencie sua biblioteca de sermões e transmissão ao vivo
-- **[Calendários](./calendars/)** - Crie calendários selecionados conectando eventos de grupos
-- **[Configurações](./settings/)** - Configure informações da igreja, funções e permissões
+- **[Calendários](./calendars/)** - Crie calendários selecionados, gerencie reservas de salas/recursos e visualize disponibilidade
+- **[Configurações](./settings/)** - Configure informações da igreja, funções, permissões e campos de pessoa personalizados
 
 :::info
 Clique no ícone de interrogação no canto superior direito de qualquer página para acesso rápido à ajuda e documentação.
 :::
 
-Para suporte, envie um e-mail para [support@churchapps.org](mailto:support@churchapps.org).
+Para obter suporte, envie um e-mail para [support@churchapps.org](mailto:support@churchapps.org).

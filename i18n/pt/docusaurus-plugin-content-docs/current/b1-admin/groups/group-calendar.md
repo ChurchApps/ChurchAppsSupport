@@ -1,89 +1,110 @@
 ---
-title: "Calendario do grupo"
+title: "Calendário do Grupo"
 ---
 
-# Calendario do grupo
+# Calendário do Grupo
 
 <div class="article-intro">
 
-Cada grupo no B1 pode ter seu proprio calendario de eventos. Os lideres do grupo usam-no para agendar reunioes, atividades e eventos recorrentes, enquanto todos os membros do grupo podem visualizar eventos futuros e participar de conversas sobre eles. O calendario mantem seu grupo organizado e garante que todos estejam informados sobre o que esta por vir.
+Cada grupo no B1 pode ter seu próprio calendário de eventos. Líderes de grupos o usam para agendar reuniões, atividades e eventos recorrentes, enquanto todos os membros do grupo podem visualizar eventos futuros e participar de conversas sobre eles. O calendário mantém seu grupo organizado e garante que todos permaneçam informados sobre o que está por vir.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de comecar</h4>
+<h4>Antes de Começar</h4>
 
-- Voce precisa de um grupo criado no B1 Admin com pelo menos um membro. Veja [Criando grupos](creating-groups.md) e [Membros do grupo](group-members.md).
-- Para adicionar ou editar eventos do calendario, voce deve ser designado como lider do grupo. Veja [Designando lideres do grupo](group-members.md) para instrucoes.
+- Você precisa de um grupo criado no B1 Admin com pelo menos um membro. Consulte [Criando Grupos](creating-groups.md) e [Membros do Grupo](group-members.md).
+- Para adicionar ou editar eventos de calendário, você deve ser designado como líder do grupo. Consulte [Designando Líderes de Grupo](group-members.md) para instruções.
 
 </div>
 
-## Acessando o calendario do grupo
+## Acessando o Calendário do Grupo
 
-O calendario do grupo esta disponivel atraves do aplicativo B1.church voltado para membros:
+O calendário do grupo está disponível através do aplicativo voltado para membros B1.church:
 
-1. No B1 Admin, clique no **menu suspenso** no canto superior direito da tela.
-2. Selecione **Switch App**.
+1. No B1 Admin, clique no **menu suspenso** no canto superior direito de sua tela.
+2. Selecione **Trocar App**.
 3. Escolha **B1.church**.
-4. Clique em **Groups** na barra lateral esquerda.
+4. Clique em **Grupos** na barra lateral esquerda.
 5. Selecione seu grupo na lista.
-6. Clique em **Calendar** no lado esquerdo da tela.
+6. Clique em **Calendário** no lado esquerdo da tela.
 
 :::info
-O calendario do grupo e gerenciado atraves do B1.church (o aplicativo para membros) em vez do B1 Admin. Os lideres do grupo acessam-no trocando de aplicativo a partir do painel de administracao.
+O calendário do grupo é gerenciado através do B1.church (o aplicativo de membros) em vez do B1 Admin. Líderes de grupos o acessam alternando aplicativos a partir do painel de controle do administrador.
 :::
 
-## Adicionando um evento
+## Adicionando um Evento
 
-1. No calendario do grupo, clique em **Add an Event**.
-2. Digite um **titulo** para o evento.
-3. Escreva uma breve **descricao** sobre o evento.
-4. Defina o **horario de inicio** e o **horario de termino**.
-5. Clique em **Save** para adicionar o evento ao calendario.
+1. A partir do calendário do grupo, clique em **Adicionar um Evento**.
+2. Digite um **título** para o evento.
+3. Escreva uma breve **descrição** sobre o que é o evento.
+4. Defina o **horário de início** e **horário de término**.
+5. Clique em **Salvar** para adicionar o evento ao calendário.
 
-## Configurando eventos recorrentes
+## Configurando Eventos Recorrentes
 
-Se seu grupo se reune em um cronograma regular, voce pode configurar eventos para se repetirem automaticamente:
+Se seu grupo se reúne em uma programação regular, você pode configurar eventos para repetir automaticamente:
 
-1. Ao criar ou editar um evento, marque a caixa **Recurring**.
-2. Escolha como o evento deve se repetir:
-   - **Intervalo** -- Defina um numero de dias entre as ocorrencias. Por exemplo, inserir "7" repete o evento a cada 7 dias.
-   - **Frequencia** -- Escolha repetir por **dia**, **semana** ou **mes**.
-3. Salve o evento. Ele agora aparecera no calendario em cada ocorrencia agendada.
+1. Ao criar ou editar um evento, marque a caixa **Recorrente**.
+2. Escolha como o evento deve repetir:
+   - **Intervalo** -- Defina um número de dias entre ocorrências. Por exemplo, inserir "7" repete o evento a cada 7 dias.
+   - **Frequência** -- Escolha repetir por **dia**, **semana** ou **mês**.
+3. Salve o evento. Agora ele aparecerá no calendário em cada ocorrência agendada.
 
 :::tip
-Para um grupo que se reune todo sabado, defina a frequencia como "semana" e escolha sabado. O evento sera preenchido automaticamente no calendario daqui para frente.
+Para um grupo que se reúne todos os sábados, defina a frequência como "semana" e escolha sábado. O evento será populado automaticamente no calendário em diante.
 :::
 
-## Visualizando o calendario
+## Criação em Massa de Eventos no B1 Admin
 
-O calendario do grupo oferece varias opcoes de visualizacao:
+A página do grupo no B1 Admin também tem uma aba **Calendário** onde a equipe pode agendar uma temporada inteira de reuniões de uma vez:
 
-- **Mes** -- Veja o mes inteiro de relance.
+1. Abra o grupo no B1 Admin e selecione a aba **Calendário**.
+2. Clique em **Adicionar Eventos** para abrir o diálogo **Adicionar Eventos Recorrentes**.
+3. Escolha a programação (semanal, a cada 2 semanas, mensal ou uma vez), as datas da **Primeira Reunião** e **Última Reunião** e, opcionalmente, **Pular feriados**.
+4. Revise a visualização das datas de reunião e desmarque qualquer uma para pular.
+5. Deixe **Permitir RSVPs** marcado se você quer que os membros possam responder a esses eventos (veja abaixo), depois salve.
+
+## RSVPs do Evento
+
+Os eventos do grupo podem coletar RSVPs — um **Sim**, **Não** ou **Talvez** para cada ocorrência do evento.
+
+- **Permitir RSVPs** está ligado por padrão para eventos criados através do diálogo de adição em massa; desmarque para desativar respostas para esses eventos. Eventos com RSVPs desativados aparecem como **Desabilitado** na aba de calendário.
+- Na aba de calendário de grupo do B1 Admin, cada evento mostra um resumo de respostas (por exemplo, "5 sim · 2 talvez · 1 não"). Clique para abrir a lista de **Respostas RSVP**, que lista quem respondeu sim, talvez e não para essa ocorrência.
+
+:::tip
+RSVPs dão aos líderes uma contagem de cabeças sem a formalidade do registro completo de eventos. Para inscrições pagas ou eventos gerenciados por capacidade, use [registro de eventos](../calendars/creating-calendars.md#enabling-event-registration) em vez disso.
+:::
+
+## Visualizando o Calendário
+
+O calendário do grupo oferece múltiplas opções de visualização:
+
+- **Mês** -- Veja o mês completo de relance.
 - **Semana** -- Concentre-se na semana atual.
-- **Dia** -- Visualize um unico dia em detalhe.
-- **Agenda** -- Veja uma lista de eventos futuros em ordem cronologica.
+- **Dia** -- Veja um único dia em detalhes.
+- **Agenda** -- Veja uma lista de eventos futuros em ordem cronológica.
 
-Alterne entre as visualizacoes usando os botoes no topo do calendario.
+Alterne entre visualizações usando os botões no topo do calendário.
 
-## Detalhes do evento e conversas
+## Detalhes do Evento e Conversas
 
-Clique em qualquer evento para ver seus detalhes. Na visualizacao de detalhes do evento:
+Clique em qualquer evento para visualizar seus detalhes. A partir da visualização de detalhe do evento:
 
-- **Membros e lideres** podem iniciar conversas e deixar comentarios sobre o evento.
-- **Lideres** podem editar detalhes do evento, alterar horarios ou excluir o evento.
+- **Membros e líderes** podem iniciar conversas e deixar comentários sobre o evento.
+- **Líderes** podem editar detalhes do evento, alterar horários ou deletar o evento.
 
 :::warning
-Excluir um evento o remove permanentemente. Se voce precisa cancelar uma unica ocorrencia de um evento recorrente, considere edita-lo em vez de exclui-lo.
+Deletar um evento o remove permanentemente. Se você precisar cancelar uma única ocorrência de um evento recorrente, considere editá-lo em vez disso.
 :::
 
-## Assinando o calendario
+## Inscrevendo-se no Calendário
 
-Voce pode sincronizar o calendario do grupo com seu calendario pessoal:
+Você pode sincronizar o calendário do grupo com seu calendário pessoal:
 
-1. Na pagina do calendario do grupo, clique em **Subscribe**.
-2. Siga as instrucoes para adicionar o calendario ao Google Calendar, Apple Calendar, Outlook ou qualquer outro aplicativo de calendario que suporte assinaturas.
+1. A partir da página do calendário do grupo, clique em **Inscrever-se**.
+2. Siga os prompts para adicionar o calendário ao Google Calendar, Apple Calendar, Outlook ou qualquer outro aplicativo de calendário que suporte inscrições.
 
 :::tip
-Assinar mantem sua agenda pessoal sincronizada com os eventos do seu grupo sem precisar verificar o B1 separadamente. Quaisquer alteracoes feitas pelos lideres do grupo aparecerao automaticamente no seu calendario sincronizado.
+Inscrever-se mantém seu cronograma pessoal em sincronização com os eventos do seu grupo sem precisar verificar o B1 separadamente. Qualquer mudança feita pelos líderes do grupo aparecerá automaticamente em seu calendário sincronizado.
 :::

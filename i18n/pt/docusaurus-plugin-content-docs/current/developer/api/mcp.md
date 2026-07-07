@@ -6,7 +6,7 @@ title: "Servidor MCP"
 
 <div class="article-intro">
 
-A API B1 envia um servidor [MCP (Model Context Protocol)](https://modelcontextprotocol.io) em `/mcp`. Qualquer cliente de IA ciente de MCP -- Claude Code, Claude Desktop, o OpenAI Agents SDK, Cursor, ou seu próprio -- pode se conectar a ele e chamar a API REST subjacente em nome de um usuário de igreja autenticado. É um invólucro fino e genérico: existem três ferramentas e elas expõem toda a superfície da API dinamicamente em vez de modelar manualmente cada endpoint.
+A API B1 envia um servidor [MCP (Model Context Protocol)](https://modelcontextprotocol.io) em `/mcp`. Qualquer cliente de IA ciente de MCP -- Claude Code, Claude Desktop, o OpenAI Agents SDK, Cursor, ou seu próprio -- pode se conectar a ele e chamar a API REST subjacente em nome de um usuário de igreja autenticado. É um invólucro fino e genérico: três ferramentas genéricas expõem toda a superfície da API dinamicamente em vez de modelar manualmente cada endpoint, mais uma ferramenta de guia de domínio para o construtor de website.
 
 </div>
 
@@ -46,7 +46,7 @@ com HTTP 401.
 
 ## Ferramentas
 
-Três ferramentas, todas genéricas. O modelo usa `list_endpoints` para descoberta, `describe_endpoint` para aprender uma forma de payload, e `api_call` para realmente invocar a API.
+Três ferramentas genéricas mais uma de guia. O modelo usa `list_endpoints` para descoberta, `describe_endpoint` para aprender uma forma de payload, `api_call` para realmente invocar a API, e `describe_page_builder` quando a tarefa envolve conteúdo de website.
 
 ### `list_endpoints`
 
@@ -115,6 +115,10 @@ Invoca o endpoint REST escolhido, em processo, através da mesma pilha de middle
 
 O resultado da ferramenta é marcado `isError: true` para qualquer resposta com status ≥ 400.
 
+### `describe_page_builder`
+
+A ferramenta única não-genérica: um guia estático e independente para construir páginas de website através dos endpoints `/content/*` -- o modelo de dados Page → Section → Element, o fluxo de criação, cada `elementType` com sua forma `answersJSON`, configurações no nível de seção como a forma dos divisores `dividerTop`/`dividerBottom`, e um exemplo de ponta a ponta trabalhado. Não recebe entrada e espelha o catálogo de elementos mantido no editor B1Admin (veja [Website Builder Architecture](../architecture/website-builder)). Espera-se que agentes o chamem uma vez antes de criar ou editar conteúdo de página, depois atuem via `api_call`.
+
 ## Modelo de Autenticação
 
 A solicitação MCP em si é executada através de `CustomAuthProvider.getUser()` -- o mesmo caminho que todo endpoint B1 autenticado usa. Um portador `cak_…` resolve para um `Principal` cujas permissões são o RBAC atual da pessoa emissora, **intersectado** com os escopos concedidos da chave. Essa intersecção é recomputada em cada solicitação, portanto:
@@ -178,10 +182,10 @@ O servidor MCP vive em `src/modules/mcp/` no repo Api. Arquivos notáveis:
 | Arquivo | Propósito |
 |---|---|
 | `McpController.ts` | `@controller("/mcp")`; fiação `StreamableHTTPServerTransport` por solicitação |
-| `McpServer.ts` | Constrói um MCP `Server`, registra as três ferramentas |
+| `McpServer.ts` | Constrói um MCP `Server`, registra as quatro ferramentas |
 | `RouteInventory.ts` | Caminha pelos metadados de inversify-express-utils na inicialização para enumerar rotas |
 | `internalDispatch.ts` | `req`/`res` sintético que re-entra no app Express em processo |
-| `tools/` | `listEndpoints.ts`, `describeEndpoint.ts`, `apiCall.ts` |
+| `tools/` | `listEndpoints.ts`, `describeEndpoint.ts`, `apiCall.ts`, `describePageBuilder.ts` |
 | `examples.ts` | Amostras de request/response curadas para endpoints de alto tráfego |
 
 ## Relacionado

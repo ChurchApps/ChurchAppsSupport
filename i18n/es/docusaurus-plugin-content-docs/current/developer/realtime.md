@@ -1,29 +1,32 @@
 ---
-title: "Arquitectura en Tiempo Real"
+title: "Arquitectura en tiempo real"
 ---
 
-# Arquitectura en Tiempo Real
+# Arquitectura en tiempo real
 
 <div class="article-intro">
 
-ChurchApps usa un único marco de entrega basado en WebSocket para cada superficie en tiempo real -- chat de grupo, mensajes privados, notas de contenido, chat de transmisión en vivo y presencia/asistencia.
+ChurchApps utiliza un único marco de entrega basado en WebSocket para cada superficie en tiempo real -- chat de grupo, mensajes privados, notas de contenido y presencia.
 
 </div>
 
-## Descripción General
+## Descripción general
 
-El protocolo tiene tres piezas:
+El protocolo tiene tres partes:
 
-1. **Un WebSocket persistente** por pestaña del navegador.
-2. **Filas de conexión** registradas en la tabla `connections`.
-3. **Fan-out del lado del servidor** por `DeliveryHelper.sendConversationMessages()`.
+1. **Un WebSocket persistente** por pestaña del navegador
+2. **Filas de conexión** que marcan quién está suscrito a una sala
+3. **Distribución del lado del servidor** que envía mensajes a los suscriptores
 
-## Primitivas del Cliente
+## Puertos y transporte
 
-Todos los primitivos son singletons estáticos. Cooperan para que cada pestaña abra un único WebSocket.
+| Entorno | HTTP | WebSocket |
+|-------------|------|-----------|
+| Desarrollo local | `8084` | `ws://localhost:8087` |
+| AWS Lambda | API Gateway | API Gateway WebSocket |
 
-- **SocketHelper** -- Posee la conexión WebSocket
-- **SubscriptionManager** -- Membresía de sala
-- **ConversationStore** -- Caché en memoria
-- **PresenceStore** -- Espeja el patrón de ConversationStore
-- **NotificationService** -- Arranque para llamantes autenticados
+## Páginas relacionadas
+
+- [Arquitectura de notificaciones](./architecture/notifications)
+- [Puntos finales de mensajería](./api/endpoints/messaging)
+- [AppHelper](./shared-libraries/app-helper)

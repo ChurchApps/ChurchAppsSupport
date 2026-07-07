@@ -1,23 +1,20 @@
+﻿---
+title: "Bereitstellung"
 ---
-title: "Deployment"
----
 
-# Deployment
+# Bereitstellung
 
-<div class="article-intro">
+ChurchApps verwendet verschiedene Bereitstellungsstrategien je nach Projekttyp. APIs werden auf AWS Lambda bereitgestellt, Web-Apps werden als statische Seiten auf S3 mit CloudFront bereitgestellt, und Mobile-Apps werden über Expo EAS und die App-Stores erstellt und verteilt.
 
-ChurchApps nutzt verschiedene Deployment-Strategien je nach Projekttyp. APIs deployen zu AWS Lambda, Web-Apps als statische Seiten zu S3 mit CloudFront, und Mobile-Apps werden durch Expo EAS und die App-Stores gebaut und verteilt.
+## Bereitstellung nach Projekttyp
 
-</div>
-
-## Deployment nach Projekttyp
-
-| Projekttyp | Deployment-Ziel | Tooling |
+| Projekttyp | Bereitstellungs-Ziel | Tools |
 |-------------|-------------------|---------|
-| [APIs](./apis) | AWS Lambda | Serverless Framework v3 (Node.js 22.x Runtime) |
-| [Web-Apps](./web-apps) | S3 + CloudFront | Statischer Build, S3-Sync, CloudFront-Invalidation |
-| [Mobile-Apps](./mobile) | App-Stores | Expo EAS Build + OTA-Updates |
-| FreeShow | Direkter Download | Electron Builder (Cross-Plattform-Binärdateien) |
+| APIs | AWS Lambda | Serverless Framework v3 (Node.js 22.x Runtime) |
+| Web-Apps | S3 + CloudFront | Statischer Build, S3-Sync, CloudFront-Invalidierung |
+| Mobile-Apps | App Stores | Expo EAS Build + OTA-Updates |
+| Caddy Custom-Domain Proxy | Windows EC2 | Static Caddyfile + WinSW-Service |
+| FreeShow | Direkter Download | Electron Builder |
 
 ## Umgebungen
 
@@ -29,5 +26,5 @@ ChurchApps nutzt verschiedene Deployment-Strategien je nach Projekttyp. APIs dep
 | `prod` | Production |
 
 :::info
-Jede Umgebung hat ihre eigenen API-Endpoints, Datenbanken und Konfiguration. Umgebungsspezifische Einstellungen werden lokal über `.env`-Dateien und in bereitgestellten Umgebungen über AWS SSM Parameter Store verwaltet.
+Jede Umgebung hat ihre eigenen API-Endpunkte, Datenbanken und Konfiguration. Umgebungsspezifische Einstellungen werden lokal über `.env`-Dateien und in bereitgestellten Umgebungen über AWS SSM Parameter Store verwaltet.
 :::

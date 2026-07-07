@@ -6,68 +6,30 @@ title: "ApiHelper"
 
 <div class="article-intro">
 
-El paquete `@churchapps/apihelper` proporciona utilidades del lado del servidor para todas las APIs de Express.js de ChurchApps. Incluye la clase controlador base, middleware de autenticación JWT, utilidades de base de datos e integraciones de AWS que cada proyecto de API depende.
+El paquete `@churchapps/apihelper` proporciona utilidades del lado del servidor para todas las APIs de Express de ChurchApps. Incluye la clase controladora base, autenticación JWT, utilidades de base de datos e integraciones de AWS.
 
 </div>
 
-<div class="prereqs">
-<h4>Antes de Comenzar</h4>
-
-- Instalar **Node.js** y **Git** -- ver [Requisitos Previos](../setup/prerequisites)
-- Familiarizarse con el flujo de trabajo [npm link](./index.md) para desarrollo local
-- Este paquete depende de [`@churchapps/helpers`](./helpers)
-
-</div>
-
-## Lo Que Está Incluido
+## Lo que se incluye
 
 - **CustomBaseController** -- clase base para controladores de API
-- **Middleware de autenticación** -- autenticación JWT a través de `CustomAuthProvider`
-- **Utilidades de base de datos** -- `DB.query`, `EnhancedPoolHelper` para gestión de conexiones MySQL
-- **Integraciones de AWS** -- ayudantes para S3, AWS SSM Parameter Store y otros servicios de AWS
-- **Configuración de inyección de dependencias Inversify** -- configuración del contenedor de inyección de dependencias
+- **Auth** -- autenticación JWT vía `CustomAuthProvider`
+- **Utilidades de base de datos** -- ayudantes de MySQL
+- **Integraciones de AWS** -- `AwsHelper` para S3 y SSM Parameter Store
+- **Email** -- `EmailHelper` con soporte SES y SMTP
+- **Carga de configuración** -- `EnvironmentBase`
 
-## Configuración para Desarrollo Local
+## Configuración para desarrollo local
 
-1. Clonar el repositorio:
+Este paquete vive en el espacio de trabajo [Packages](https://github.com/ChurchApps/Packages):
 
-   ```bash
-   git clone https://github.com/ChurchApps/ApiHelper.git
-   ```
+```bash
+git clone https://github.com/ChurchApps/Packages.git
+cd Packages && yarn install
+yarn workspace @churchapps/apihelper build
+```
 
-2. Instalar dependencias:
+## Artículos relacionados
 
-   ```bash
-   cd ApiHelper && npm install
-   ```
-
-3. Compilar el paquete (compila TypeScript a `dist/`):
-
-   ```bash
-   npm run build
-   ```
-
-4. Ponerlo disponible para vinculación local:
-
-   ```bash
-   npm link
-   ```
-
-## Comandos Clave
-
-| Comando | Descripción |
-|---------|-------------|
-| `npm run build` | Compilar TypeScript a `dist/` |
-| `npm run lint` | Ejecutar ESLint |
-| `npm run lint:fix` | Ejecutar ESLint con auto-corrección |
-| `npm run format` | Formatear código con Prettier |
-
-:::info
-Este paquete es una dependencia de cada API de ChurchApps. Cuando hace cambios, use `npm link` para probar contra una API localmente antes de publicar.
-:::
-
-## Artículos Relacionados
-
-- **[Helpers](./helpers)** -- El paquete de utilidades base del que depende este paquete
-- **[Estructura de Módulo](../api/module-structure)** -- Cómo se utilizan los controladores y middleware de autenticación en módulos de API
-- **[Configuración Local de API](../api/local-setup)** -- Configuración de la API para desarrollo local
+- **[Helpers](./helpers)** -- Paquete de utilidades base
+- **[Configuración local de API](../api/local-setup)**

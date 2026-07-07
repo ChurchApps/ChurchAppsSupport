@@ -6,7 +6,7 @@ title: "API"
 
 <div class="article-intro">
 
-L'API di ChurchApps è un **monolite modulare** -- una singola codebase che serve sei moduli distinti, ognuno con il suo database. Questa architettura ti offre i vantaggi organizzativi dei microservizi (confini chiari, archivi dati indipendenti) con la semplicità operativa di un singolo deployment.
+L'API ChurchApps è una **monolite modulare** -- una singola codebase che serve sei moduli dati, ciascuno con il proprio database. Questa architettura ti offre i vantaggi organizzativi dei microservizi (limiti chiari, archivi dati indipendenti) con la semplicità operativa di una singola distribuzione.
 
 </div>
 
@@ -14,19 +14,19 @@ L'API di ChurchApps è un **monolite modulare** -- una singola codebase che serv
 
 | Modulo | Scopo |
 |--------|---------|
-| **Membership** | Persone, gruppi, nuclei familiari, permessi |
-| **Attendance** | Servizi, sessioni, registri di check-in |
+| **Membership** | Persone, gruppi, famiglie, permessi |
+| **Attendance** | Servizi, sessioni, record di check-in |
 | **Content** | Pagine, sezioni, elementi, streaming |
 | **Giving** | Donazioni, fondi, elaborazione pagamenti |
 | **Messaging** | Conversazioni, notifiche, email |
-| **Doing** | Attività, piani, incarichi |
+| **Doing** | Attività, piani, assegnazioni |
 
 ## Stack Tecnologico
 
 - **Runtime:** Node.js 22.x con TypeScript (moduli ES)
 - **Framework:** Express
-- **Dependency Injection:** Inversify (routing basato su decoratori)
-- **Database:** MySQL -- un database per modulo, ognuno con il suo pool di connessioni
+- **Dependency Injection:** Inversify (routing basato su decorator)
+- **Database:** MySQL -- un database per modulo, ciascuno con il proprio pool di connessioni
 - **Auth:** Autenticazione basata su JWT tramite `CustomAuthProvider`
 - **Deployment:** AWS Lambda tramite Serverless Framework v3
 
@@ -39,31 +39,33 @@ L'API di ChurchApps è un **monolite modulare** -- una singola codebase che serv
 
 ## Funzioni Lambda
 
-Quando distribuito su AWS, l'API viene eseguito come quattro funzioni Lambda:
+Quando distribuito su AWS, l'API viene eseguito come sei funzioni Lambda:
 
 - **`web`** -- Gestisce tutte le richieste HTTP
 - **`socket`** -- Gestisce le connessioni WebSocket
-- **`timer15Min`** -- Eseguito ogni 15 minuti per le notifiche email
-- **`timerMidnight`** -- Eseguito giornalmente per email digest e attività di manutenzione
+- **`timer15Min`** -- Viene eseguito ogni 30 minuti per le notifiche email (il nome è storico)
+- **`timerMidnight`** -- Viene eseguito giornalmente per email di riepilogo e attività di manutenzione
+- **`timerScheduledTasks`** -- Viene eseguito giornalmente per le automazioni dovute e l'elaborazione del flusso di lavoro in ritardo
+- **`timerWebhooks`** -- Viene eseguito ogni minuto per consegnare i webhook in uscita in coda
 
 ## Librerie Condivise
 
 L'API dipende da due pacchetti ChurchApps condivisi:
 
 - **[`@churchapps/helpers`](../shared-libraries/helpers)** -- Utilità di base (DateHelper, ApiHelper, ecc.)
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Utilità di server Express incluse autenticazione, helper di database e integrazioni AWS
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Utilità del server Express incluse auth, aiutanti di database e integrazioni AWS
 
 :::info
-L'API utilizza moduli ES (`"type": "module"` in `package.json`). Assicurati che i tuoi import utilizzino la sintassi del modulo ES.
+L'API utilizza moduli ES (`"type": "module"` in `package.json`). Assicurati che le tue importazioni utilizzino la sintassi dei moduli ES.
 :::
 
-## In questa Sezione
+## In questa sezione
 
-- **[Setup Locale](./local-setup)** -- Clona, configura ed esegui l'API localmente
+- **[Configurazione locale](./local-setup)** -- Clona, configura ed esegui l'API localmente
 - **[Database](./database)** -- Architettura database-per-modulo, script di schema e pattern di accesso ai dati
-- **[Struttura Modulo](./module-structure)** -- Controller, repository, modelli e autenticazione
-- **[Chiavi API](./api-keys)** -- Token di accesso personale per script e connettori
-- **[App Connesse (OAuth)](./connected-apps)** -- Flusso OAuth multi-tenant per app di terze parti
-- **[Webhooks](./webhooks)** -- Notifiche di eventi push a sistemi esterni
+- **[Struttura dei moduli](./module-structure)** -- Controller, repository, modelli e autenticazione
+- **[Chiavi API](./api-keys)** -- Token di accesso personali per script e connettori
+- **[App connesse (OAuth)](./connected-apps)** -- Flusso OAuth multi-tenant per app di terze parti
+- **[Webhook](./webhooks)** -- Notifiche di evento push a sistemi esterni
 - **[Server MCP](./mcp)** -- Endpoint Model Context Protocol che espone l'API agli assistenti IA
-- **[Riferimento Endpoint](./endpoints/)** -- Documentazione API REST completa per tutti i moduli
+- **[Riferimento degli endpoint](./endpoints/)** -- Documentazione completa dell'API REST per tutti i moduli

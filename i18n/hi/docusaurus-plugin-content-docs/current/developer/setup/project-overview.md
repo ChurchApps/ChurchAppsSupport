@@ -35,7 +35,7 @@ ChurchApps में लगभग 20 स्वतंत्र रिपॉज़
 
 | प्रोजेक्ट | फ्रेमवर्क | डेव पोर्ट | उद्देश्य |
 |---------|-----------|----------|---------|
-| **[B1Admin](https://github.com/ChurchApps/B1Admin)** | React 19 + Vite + MUI 7 | 5173 | चर्च प्रशासन डैशबोर्ड |
+| **[B1Admin](https://github.com/ChurchApps/B1Admin)** | React 19 + Vite + MUI 7 | 3101 | चर्च प्रशासन डैशबोर्ड |
 | **[B1App](https://github.com/ChurchApps/B1App)** | Next.js 16 + React 19 + MUI 7 | 3301 | सार्वजनिक चर्च सदस्य ऐप |
 | **[LessonsApp](https://github.com/ChurchApps/LessonsApp)** | Next.js 16 | 3501 | Lessons.church फ्रंटएंड |
 | **[B1Transfer](https://github.com/ChurchApps/B1Transfer)** | React + Vite | -- | डेटा आयात/निर्यात उपयोगिता |
@@ -61,27 +61,18 @@ ChurchApps में लगभग 20 स्वतंत्र रिपॉज़
 
 ## साझा लाइब्रेरीज़
 
-साझा कोड npm पर `@churchapps` स्कोप के तहत प्रकाशित किया जाता है। इन्हें ऊपर के प्रोजेक्ट्स द्वारा नियमित npm डिपेंडेंसीज़ के रूप में उपयोग किया जाता है।
+साझा कोड npm पर `@churchapps` scope के तहत प्रकाशित किया जाता है और ऊपर दिए गए प्रोजेक्ट्स द्वारा नियमित npm dependencies के रूप में उपभोग किया जाता है। सभी साझा पैकेज एक एकल repository -- [Packages](https://github.com/ChurchApps/Packages) -- में रहते हैं, जिसे Yarn workspace के रूप में प्रबंधित किया जाता है और changesets के साथ released किया जाता है।
 
-| पैकेज | npm नाम | उद्देश्य | उपयोगकर्ता |
-|---------|----------|---------|---------|
-| **[Helpers](https://github.com/ChurchApps/Helpers)** | `@churchapps/helpers` | आधार उपयोगिताएँ (DateHelper, ApiHelper, CurrencyHelper, आदि) | सभी प्रोजेक्ट्स |
-| **[ApiHelper](https://github.com/ChurchApps/ApiHelper)** | `@churchapps/apihelper` | Express सर्वर उपयोगिताएँ (auth middleware, DB helpers, AWS इंटीग्रेशन) | सभी API |
-| **[AppHelper](https://github.com/ChurchApps/AppHelper)** | 6 पैकेज के साथ Workspace | React कंपोनेंट लाइब्रेरी | सभी वेब ऐप्स |
-| **[ContentProviderHelper](https://github.com/ChurchApps/ContentProviderHelper)** | `@churchapps/content-provider-helper` | YouTube, Vimeo, और स्थानीय सामग्री प्रदाता | FreeShow, FreePlay, Api |
+| पैकेज | उद्देश्य | उपयोग किए गए |
+|---------|---------|---------|
+| `@churchapps/helpers` | आधार उपयोगिताएं और साझा TypeScript इंटरफेस (DateHelper, ApiHelper, CurrencyHelper, आदि) | सभी प्रोजेक्ट्स |
+| `@churchapps/apihelper` | Express सर्वर उपयोगिताएं (auth, base controllers, database access, AWS integrations) | सभी API |
+| `@churchapps/apphelper` | लॉगिन, दान, फॉर्म, markdown, और website building के लिए subpath modules वाली React component library | सभी web apps |
+| `@churchapps/content-providers` | तीसरे पक्ष की सामग्री प्रदाता abstraction (Lessons.church, Planning Center, Dropbox, और अन्य) | Api, B1Admin, B1App, FreePlay |
+| `@churchapps/integration-sdk` | B1.church integration toolkit: webhooks, REST client, OAuth | बाहरी integration developers |
+| `@churchapps/texting` | SMS provider abstraction | Api |
 
-### AppHelper उप-पैकेज
-
-AppHelper प्रोजेक्ट एक मोनोरेपो workspace है जो छह पैकेज प्रकाशित करता है:
-
-| पैकेज | npm नाम |
-|---------|----------|
-| Core | `@churchapps/apphelper` |
-| Login | `@churchapps/apphelper-login` |
-| Donations | `@churchapps/apphelper-donations` |
-| Forms | `@churchapps/apphelper-forms` |
-| Markdown | `@churchapps/apphelper-markdown` |
-| Website | `@churchapps/apphelper-website` |
+[साझा लाइब्रेरीज़](../shared-libraries/) देखें workspace setup और release workflow के लिए।
 
 ## प्रोजेक्ट संबंध
 

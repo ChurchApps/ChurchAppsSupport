@@ -1,85 +1,129 @@
----
+﻿---
 title: "Web-Push-Benachrichtigungen"
 ---
 
 # Web-Push-Benachrichtigungen
 
-<div class="article-intro">
+ChurchApps-Web-Apps liefern Push-Benachrichtigungen über die W3C Web Push API -- der gleiche Mechanismus, der von Firebase Cloud Messaging auf der Server-Seite verwendet wird, aber über den Browser-nativen `PushManager` liefert.
 
-ChurchApps Web-Apps liefern Push-Benachrichtigungen über die W3C Web Push API -- der gleiche Mechanismus, der von Firebase Cloud Messaging auf der Server-Seite verwendet wird, aber über den `PushManager` des Browsers statt FCM geliefert.
+## Wann Push feuert
 
-</div>
+Push ist eine Stufe bei einer einzelnen Zustellungs-Pass in `NotificationHelper.attemptDeliveryWithEscalation()`: ein In-App-Präferenz-Gate, dann Socket-Zustellung und Push-Versuch in der gleichen Pass (jeweils hinter seinem eigenen Präferenz-Gate), dann E-Mail.
 
-## When push fires
+Die häufigsten Pfade, die Push erreichen:
 
-Die MessagingApi liefert eine Web-Push-Nachricht in drei Situationen:
+1. **Content-Benachrichtigungen** -- eine Antwort auf ein Gespräch, das die Person folgt
+2. **Private Nachrichten** -- eine direkte Nachricht geht durch die gleiche Zustellungsfunktion
+3. **Geplante Erinnerungen** -- Event-, Aufgaben- und Service-Erinnerungen
+4. **Von Staff ausgelöste Pushes** -- einmalige oder Gruppen-Broadcasts
 
-1. **Gruppen-/Inhaltsbenachrichtigungen** -- jemand antwortet auf einen Thread, dem der Benutzer folgt
-2. **Private Nachrichten** -- `POST /messaging/privatemessages` triggert einen Push an die eingeschriebenen Geräte des Empfängers
-3. **Generische Benachrichtigungen** -- direkte Aufrufe zu `POST /messaging/notifications/create`
-
-Push ist die **Notfallebene** in `NotificationHelper`'s Eskalationsleiter.
-
-## Server flow
+## Server-Fluss
 
 ```
-NotificationHelper.checkShouldNotify(...)
+NotificationHelper.createNotifications(...) / ReminderEngine.scan(...)
   │
-  ├─ in-page socket delivery ← preferred
-  │
-  └─ NotificationHelper.<sendXxx>(...)
-       └─ WebPushHelper.sendBulkTypedMessages(...)
-            └─ web-push library → VAPID-signed POST
+  └─ NotificationHelper.attemptDeliveryWithEscalation(...)
+       ├─ in-App Präferenz-Gate
+       ├─ beide versucht (weder gates den anderen):
+       │    ├─ Socket-Zustellung via DeliveryHelper
+       │    └─ Push Präferenz-Gate
+       │         └─ WebPushHelper.sendBulkTypedMessages(...)
+       └─ E-Mail Präferenz-Gate
 ```
 
-## Required environment variables
+## Erforderliche Umgebungsvariablen
 
-VAPID-Schlüssel müssen vorhanden sein, damit der Push aktiviert ist:
+VAPID-Schlüssel werden in `Environment` gespeichert:
 
-| Variable | Description |
+| Variable | Beschreibung |
 |----------|-------------|
-| `webPushPublicKey` | VAPID-Öffentlicher Schlüssel |
-| `webPushPrivateKey` | VAPID-Privater Schlüssel |
-| `webPushSubject` | `mailto:` URI |
+| `webPushPublicKey` | VAPID-Public-Schlüssel (base64url) |
+| `webPushPrivateKey` | VAPID-Private-Schlüssel |
+| `webPushSubject` | `mailto:` URI für Push-Services |
 
-## Generating a VAPID key pair
+`WebPushHelper.isEnabled()` gibt `false` zurück, wenn ein Schlüssel fehlt.
+
+## Generieren Sie ein VAPID-Schlüsselpaar
 
 ```bash
 npx web-push generate-vapid-keys
 ```
 
-## Storage model
+Fügen Sie die Ausgabe zu Ihrer `.env` (lokal) oder AWS SSM Parameter Store (bereitgestellt) hinzu.
 
-Web-Push-Abonnements werden in der vorhandenen `devices`-Tabelle gespeichert.
+## Speichermodell
 
-## Endpoints
+Web-Push-Abos werden in der bestehenden `devices`-Tabelle neben FCM-Geräte-Datensätzen gespeichert. Sie werden durch ein `webpush:` Präfix auf der `fcmToken`-Spalte unterschieden:
 
-Base path: `/messaging/webpush`
+```
+fcmToken = "webpush:" + JSON.stringify({ endpoint, keys: { p256dh, auth } })
+```
 
-| Method | Path | Auth | Description |
+## Endpunkte
+
+Basispfad: `/messaging/webpush`
+
+| Method | Path | Auth | Beschreibung |
 |--------|------|------|-------------|
 | GET | `/publicKey` | Public | Gibt `{ publicKey, enabled }` zurück |
-| POST | `/subscribe` | JWT | Registriert ein Abonnement |
-| POST | `/unsubscribe` | Public | Löscht ein Geräte-Zeile |
+| POST | `/subscribe` | JWT | Registriert (oder upserts) ein Abo |
+| POST | `/unsubscribe` | Public | Löscht eine Geräte-Zeile |
 | DELETE | `/subscription/:id` | JWT | Löscht eine spezifische Geräte-Zeile |
 
-## Client primitive: `WebPushHelper`
+## Client-Primitiv: `WebPushHelper`
 
-`@churchapps/apphelper`'s `WebPushHelper` ist der einzige Client-seitige Entry Point.
+`WebPushHelper` ist der einzelne Client-seitige Einstiegspunkt:
 
-## Service worker requirement
+```typescript
+import { WebPushHelper } from "@churchapps/apphelper";
 
-Der Browser's `PushManager` benötigt einen registrierten Service Worker.
+WebPushHelper.configure({
+  scope: "/",
+  appName: "B1AppPwa"
+});
 
-## Operational notes
+await WebPushHelper.subscribe();
+```
 
-- Eine `gone: true`-Antwort bedeutet, die Subscription ist permanent ungültig
-- TTL: Push-Nachrichten werden mit `TTL: 86400` (24 Stunden) gesendet
-- Keine Wiederholungen: Ein transienter Fehler wird protokolliert und nicht wiederholt
-- Deaktivierte Umgebungen: Staging- und Dev-Umgebungen können die VAPID-Schlüssel leer lassen
+Verbraucher erhalten kostenlos:
 
-## Related Pages
+- **Fähigkeits-Prüfung** -- `isSupported()` gibt false auf Browsern ohne Service Worker zurück
+- **Cooldown** -- `canPromptNow()` erzwingt einen 7-Tage-Cooldown zwischen Prompts
+- **Opt-Out** -- `setOptedOut(true)` blockiert Re-Prompting
+- **Standalone-PWA-Erkennung** -- `isStandalone()` erkennt iOS PWA-Installation
+- **Erneutes Enrollen beim Kirchenwechsel** -- `refreshEnrollment()` repostet das bestehende Browser-Abo
 
-- [Real-time Architecture](./realtime)
-- [Messaging Endpoints](./api/endpoints/messaging)
-- [AppHelper](./shared-libraries/app-helper)
+## Service-Worker-Anforderung
+
+Der Browser-`PushManager` löst ein Abo nur auf, wenn ein Service Worker am konfigurierten Scope registriert ist. ChurchApps PWAs verwenden Serwist (Next.js-Apps) oder Workbox für Service-Worker-Generierung.
+
+Der Service Worker muss Benachrichtigungen unterdrücken, wenn ein fokussierter/sichtbarer Client bereits auf dem Deep-Link-Ziel der Benachrichtigung ist:
+
+```javascript
+self.addEventListener("push", (event) => {
+  const data = event.data?.json() ?? {};
+  const title = data.title || "ChurchApps";
+  const target = deepLinkFor(data.type, data.contentId, data);
+
+  event.waitUntil((async () => {
+    if (typeof data.badgeCount === "number") await updateAppBadge(data.badgeCount);
+
+    const clients = await self.clients.matchAll({ type: "window" });
+    const alreadyViewing = clients.some((client) => client.focused && clientMatchesTarget(client.url, target));
+    if (alreadyViewing) return;
+
+    await self.registration.showNotification(title, {
+      body: data.body,
+      data: { type: data.type, contentId: data.contentId, url: target },
+      icon: "/icons/icon-192.png"
+    });
+  })());
+});
+```
+
+## Operationeile Anmerkungen
+
+- **`gone: true` Ergebnisse** -- Ein `gone: true`-Ergebnis (Push-Service antwortet 404 oder 410) bedeutet, dass das Abo permanent ungültig ist
+- **TTL** -- Push-Nachrichten werden mit `TTL: 86400` (24 Stunden) gesendet
+- **Keine Wiederholungen** -- ein transienter Fehler wird protokolliert und nicht wiederholt
+- **Deaktivierte Umgebungen** -- Staging- und Dev-Umgebungen können die VAPID-Schlüssel leer lassen

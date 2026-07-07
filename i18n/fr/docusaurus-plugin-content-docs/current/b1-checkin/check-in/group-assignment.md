@@ -1,66 +1,70 @@
----
-title: "Affectation des groupes"
+﻿---
+title: "Attribution de groupes"
 ---
 
-# Affectation des groupes
+# Attribution de groupes
 
 <div class="article-intro">
 
-Lorsque vous appuyez sur un bouton d'horaire de culte sur l'écran de vérification du foyer, l'application ouvre l'écran de sélection de groupe. Ici, vous choisissez le groupe ou la classe auquel un membre de la famille doit participer pour cet horaire de culte spécifique.
+Lorsque vous appuyez sur un bouton d'heure de service sur l'écran d'examen du ménage, l'application ouvre l'écran de sélection du groupe. Ici, vous choisissez le groupe ou la classe auquel un membre de la famille doit assister pour cette heure de service spécifique.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- [Vérifiez votre foyer](./household-review) sur l'écran de vérification du foyer
-- Déployez la fiche du membre que vous souhaitez assigner et appuyez sur un bouton d'horaire de culte
-- Assurez-vous que l'administrateur de votre église a [créé des groupes](../../b1-admin/groups/creating-groups.md) et les a associés aux horaires de culte dans B1 Admin
+- [Examinez votre ménage](./household-review) sur l'écran d'examen du ménage
+- Développez le membre que vous souhaitez assigner et appuyez sur un bouton d'heure de service
+- Assurez-vous que l'administrateur de votre église a [créé des groupes](../../b1-admin/groups/creating-groups.md) et les a liés aux heures de service dans B1 Admin
 
 </div>
 
-## Organisation des groupes
+## Comment les groupes sont organisés
 
-Les groupes sont affichés par **catégories**. Chaque catégorie apparaît sous forme de carte montrant :
+Les groupes sont affichés dans des **catégories**. Chaque catégorie apparaît sous la forme d'une carte montrant :
 
 - Le **nom de la catégorie** (par exemple, « Enfants », « Jeunes », « Adultes »)
 - Le **nombre de groupes** dans cette catégorie
 
-Appuyez sur une carte de catégorie pour la déployer et voir les groupes individuels qu'elle contient. Appuyez à nouveau pour la réduire.
+Appuyez sur une carte de catégorie pour l'étendre et voir les groupes individuels à l'intérieur. Appuyez à nouveau pour la réduire.
 
 ## Sélection d'un groupe
 
-1. Appuyez sur une **catégorie** pour la déployer.
-2. Consultez la liste des groupes au sein de cette catégorie. Chaque groupe affiche son nom avec une icône de sélection sur la droite.
+1. Appuyez sur une **catégorie** pour l'étendre.
+2. Examinez la liste des groupes au sein de cette catégorie. Chaque groupe affiche son nom avec une icône de sélection sur la droite.
 3. Appuyez sur le **nom du groupe** que vous souhaitez assigner.
 
-L'application enregistre votre sélection et vous ramène à l'[écran de vérification du foyer](./household-review). Le bouton d'horaire de culte de ce membre affichera désormais le nom du groupe que vous avez sélectionné.
+L'application enregistre votre sélection et vous ramène à l'[écran d'examen du ménage](./household-review). Le bouton d'heure de service pour ce membre affichera maintenant le nom du groupe que vous avez sélectionné.
 
-## Choisir « None »
+## Conseils d'âge et de niveau
 
-Si vous décidez qu'un membre de la famille ne doit être assigné à aucun groupe pour cet horaire de culte, appuyez sur le bouton **None** en bas de l'écran. Cela efface toute affectation de groupe existante pour cet horaire de culte et vous ramène à l'écran de vérification du foyer.
+Si votre église a défini des plages d'âge ou de niveau sur ses salles, la liste vous guide vers la bonne : les salles pour lesquelles la personne se qualifie sont **surlignées** et les salles en dehors de son âge ou de son niveau sont **assombries**. Une salle assombrie peut toujours être sélectionnée, mais un membre du personnel doit confirmer le choix. Les âges et les niveaux sont calculés à partir de la date de promotion de niveau de votre église, de sorte que les salles restent précises lors du changement d'année scolaire.
+
+## Choisir « Aucun »
+
+Si vous décidez qu'un membre de la famille ne doit pas être assigné à un groupe pour cette heure de service, appuyez sur le bouton **None** au bas de l'écran. Cela efface toute attribution de groupe existante pour cette heure de service et vous ramène à l'écran d'examen du ménage.
 
 :::tip
-Utilisez l'option **None** pour les adultes qui assistent au culte principal et n'ont pas besoin de s'enregistrer dans un groupe ou une classe spécifique.
+Utilisez l'option **None** pour les adultes qui assistent au service de culte principal et n'ont pas besoin de s'enregistrer dans un groupe ou une classe spécifique.
 :::
 
-## Modifier une affectation de groupe
+## Modification d'une attribution de groupe
 
-Pour modifier une affectation de groupe déjà effectuée :
+Pour modifier une attribution de groupe qui a déjà été effectuée :
 
-1. Retournez à l'[écran de vérification du foyer](./household-review).
-2. Déployez la fiche du membre dont vous souhaitez modifier le groupe.
-3. Appuyez sur le bouton d'horaire de culte (qui affiche maintenant le nom du groupe actuellement assigné).
-4. Sélectionnez un autre groupe ou appuyez sur **None**.
+1. Retournez à l'[écran d'examen du ménage](./household-review).
+2. Développez le membre dont vous souhaitez modifier le groupe.
+3. Appuyez sur le bouton d'heure de service (qui affiche maintenant le nom du groupe actuellement assigné).
+4. Sélectionnez un groupe différent ou appuyez sur **None**.
 
 :::info
 Les groupes et les catégories sont configurés par l'administrateur de votre église dans B1 Admin. Si un groupe est manquant ou dans la mauvaise catégorie, demandez à votre administrateur de mettre à jour les [paramètres de groupe](../../b1-admin/groups/creating-groups.md).
 :::
 
-## Prochaines étapes
+## Étapes suivantes
 
-Après avoir assigné les groupes, retournez à l'[écran de vérification du foyer](./household-review) pour :
+Après l'attribution de groupes, retournez à l'[écran d'examen du ménage](./household-review) pour :
 
-- Assigner des groupes à d'autres membres de la famille
-- [Ajouter un visiteur](./adding-guests) si quelqu'un accompagne votre famille en visite
-- [Finaliser l'enregistrement](./completing-checkin) lorsque toutes les affectations sont prêtes
+- Attribuer des groupes à des membres de la famille supplémentaires
+- [Ajouter un invité](./adding-guests) si quelqu'un visite votre famille
+- [Finaliser l'enregistrement](./completing-checkin) quand toutes les attributions sont prêtes

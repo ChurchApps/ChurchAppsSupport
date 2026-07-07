@@ -1,73 +1,37 @@
----
+﻿---
 title: "ApiHelper"
 ---
 
 # ApiHelper
 
-<div class="article-intro">
-
-Das `@churchapps/apihelper`-Package bietet Server-seitige Utilities für alle ChurchApps Express.js-APIs. Es enthält die Basis-Controller-Klasse, JWT-Authentifizierungs-Middleware, Datenbankus- hilfen und AWS-Integrationen, die jedes API-Projekt benötigt.
-
-</div>
-
-<div class="prereqs">
-<h4>Vor dem Start</h4>
-
-- Installieren Sie **Node.js** und **Git** — siehe [Voraussetzungen](../setup/prerequisites)
-- Machen Sie sich mit dem [`npm link`-Workflow](./index.md) für lokale Entwicklung vertraut
-- Dieses Package hängt von [`@churchapps/helpers`](./helpers) ab
-
-</div>
+Das Paket `@churchapps/apihelper` bietet Server-seitige Hilfsfunktionen für alle ChurchApps Express.js APIs. Es umfasst die Basis-Controller-Klasse, JWT-Authentifizierung, Datenbank-Hilfsfunktionen und AWS-Integrationen, auf die jedes API-Projekt angewiesen ist.
 
 ## Was ist enthalten
 
-- **CustomBaseController** — Basis-Klasse für API-Controller
-- **Auth-Middleware** — JWT-Authentifizierung via `CustomAuthProvider`
-- **Datenbankus- hilfen** — `DB.query`, `EnhancedPoolHelper` für MySQL-Connection-Management
-- **AWS-Integrationen** — Helfer für S3, SSM Parameter Store und andere AWS-Services
-- **Inversify DI-Setup** — Dependency-Injection-Container-Konfiguration
+- **CustomBaseController** -- Basis-Klasse für API-Controller
+- **Auth** -- JWT-Authentifizierung über `CustomAuthProvider`
+- **Datenbank-Hilfsfunktionen** -- `DB.query` / `DB.queryOne` und die `Pool`-Klasse
+- **AWS-Integrationen** -- `AwsHelper` für S3-Dateispeicherung
+- **E-Mail** -- `EmailHelper` mit SES- und SMTP-Transporten
+- **Config-Laden** -- `EnvironmentBase` liest Verbindungszeichenfolgen und Geheimnisse
+- **Sonstiges** -- `EncryptionHelper`, `FileStorageHelper`, `LoggingHelper`
 
-## Setup für lokale Entwicklung
+## Lokale Entwicklung
 
-1. Repository klonen:
+Dieses Paket lebt im Arbeitsbereich [Packages](https://github.com/ChurchApps/Packages):
 
-   ```bash
-   git clone https://github.com/ChurchApps/ApiHelper.git
-   ```
+```bash
+git clone https://github.com/ChurchApps/Packages.git
+cd Packages && yarn install
+yarn workspace @churchapps/apihelper build
+```
 
-2. Abhängigkeiten installieren:
+Um Änderungen in einer verbrauchenden API zu testen, verwenden Sie ein temporäres Yarn-Portal.
 
-   ```bash
-   cd ApiHelper && npm install
-   ```
+## Veröffentlichung
 
-3. Package bauen (kompiliert TypeScript zu `dist/`):
-
-   ```bash
-   npm run build
-   ```
-
-4. Verfügbar machen für lokales Linking:
-
-   ```bash
-   npm link
-   ```
-
-## Wichtige Befehle
-
-| Befehl | Beschreibung |
-|---------|-------------|
-| `npm run build` | TypeScript zu `dist/` kompilieren |
-| `npm run lint` | ESLint ausführen |
-| `npm run lint:fix` | ESLint mit Auto-Fix ausführen |
-| `npm run format` | Code mit Prettier formatieren |
+Releases verwenden Changesets: Führen Sie `yarn changeset` aus, wenn Sie bereit zum Veröffentlichen sind. Lesen Sie die Übersicht [Freigegebene Bibliotheken](./index.md) für den vollständigen Fluss.
 
 :::info
-Dieses Package ist eine Abhängigkeit jeder ChurchApps-API. Bei Änderungen, nutzen Sie `npm link`, um gegen eine API lokal zu testen, bevor Sie veröffentlichen.
+Dieses Paket ist eine Abhängigkeit jeder ChurchApps API -- testen Sie gegen eine API lokal, bevor Sie veröffentlichen.
 :::
-
-## Verwandte Artikel
-
-- **[Helpers](./helpers)** — Das Basis-Utility-Package, das dieses Package benötigt
-- **[Modulstruktur](../api/module-structure)** — Wie Controller und Auth-Middleware in API-Modulen genutzt werden
-- **[Lokales API-Setup](../api/local-setup)** — API für lokale Entwicklung einrichten

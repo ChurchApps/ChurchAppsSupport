@@ -1,33 +1,34 @@
----
-title: "Pag-deploy"
+﻿---
+title: "Deployment"
 ---
 
-# Pag-deploy
+# Deployment
 
 <div class="article-intro">
 
-Gumagamit ang ChurchApps ng iba't ibang estratehiya sa pag-deploy depende sa uri ng proyekto. Ang mga API ay dine-deploy sa AWS Lambda, ang mga web app ay dine-deploy bilang mga static site sa S3 na may CloudFront, at ang mga mobile app ay binubuo at ipinamamahagi sa pamamagitan ng Expo EAS at mga app store.
+Ang ChurchApps ay gumagamit ng iba't ibang deployment strategies depende sa project type. Ang APIs ay nag-deploy sa AWS Lambda, ang web apps ay nag-deploy bilang static sites sa S3 na may CloudFront, at ang mobile apps ay binubuo at distributed sa pamamagitan ng Expo EAS at ang app stores.
 
 </div>
 
-## Pag-deploy ayon sa Uri ng Proyekto
+## Deployment by Project Type
 
-| Uri ng Proyekto | Target ng Pag-deploy | Kasangkapan |
+| Project Type | Deployment Target | Tooling |
 |-------------|-------------------|---------|
-| [Mga API](./apis) | AWS Lambda | Serverless Framework v3 (Node.js 22.x runtime) |
-| [Mga Web App](./web-apps) | S3 + CloudFront | Static build, S3 sync, CloudFront invalidation |
-| [Mga Mobile App](./mobile) | Mga App Store | Expo EAS Build + OTA Updates |
-| FreeShow | Direktang pag-download | Electron Builder (cross-platform na mga binary) |
+| [APIs](./apis) | AWS Lambda | Serverless Framework v3 (Node.js 22.x runtime) |
+| [Web Apps](./web-apps) | S3 + CloudFront | Static build, S3 sync, CloudFront invalidation |
+| [Mobile Apps](./mobile) | App Stores | Expo EAS Build + OTA Updates |
+| [Caddy Custom-Domain Proxy](./caddy-proxy) | Windows EC2 (Elastic IP `3.23.251.61`) | Static Caddyfile + WinSW service + scheduled map sync |
+| FreeShow | Direct download | Electron Builder (cross-platform binaries) |
 
-## Mga Kapaligiran
+## Environments
 
-| Kapaligiran | Layunin |
+| Environment | Purpose |
 |-------------|---------|
-| `dev` | Lokal na development |
-| `demo` | Pampublikong demo instance |
-| `staging` | Pre-production na pagsubok |
+| `dev` | Local development |
+| `demo` | Public demo instance |
+| `staging` | Pre-production testing |
 | `prod` | Production |
 
 :::info
-Ang bawat kapaligiran ay may sariling hanay ng mga API endpoint, database, at configuration. Ang mga setting na partikular sa kapaligiran ay pinapamahalaan sa pamamagitan ng mga `.env` file nang lokal at AWS SSM Parameter Store sa mga na-deploy na kapaligiran.
+Bawat environment ay may sarili nitong set ng API endpoints, databases, at configuration. Ang environment-specific settings ay pinamamahalaan sa pamamagitan ng `.env` files nang lokal at AWS SSM Parameter Store sa deployed environments.
 :::

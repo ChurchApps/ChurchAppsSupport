@@ -1,73 +1,73 @@
 ---
-title: "Songs"
+title: "गीत"
 ---
 
-# Songs
+# गीत
 
 <div class="article-intro">
 
-Songs page आपकी worship song library को manage करता है। अपने song details, lyrics, और arrangements को एक जगह में रखें ताकि आपकी worship team आसानी से upcoming services के लिए prepare कर सके और एक consistent repertoire को maintain कर सके।
+गीत पृष्ठ आपकी पूजा गीत लाइब्रेरी को प्रबंधित करता है। अपने गीत विवरण, लिरिक्स, और व्यवस्थाओं को एक जगह रखें ताकि आपकी पूजा टीम आगामी सेवाओं के लिए आसानी से तैयार कर सकें और एक सुसंगत प्रदर्शनी बनाए रखें।
 
 </div>
 
 <div class="prereqs">
-<h4>शुरुआत से पहले</h4>
+<h4>शुरू करने से पहले</h4>
 
-- B1 Admin में **Serving** सेक्शन को navigate करके Songs page को access करें
-- वैकल्पिक रूप से, अपने [service plans](./plans.md) को setup करें ताकि आप songs को directly [service order](./service-order.md) में link कर सकें
+- गीत पृष्ठ तक पहुंचने के लिए B1 Admin में **सेवा** अनुभाग पर नेविगेट करें
+- वैकल्पिक रूप से, अपनी [सेवा योजनाएं](./plans.md) सेट अप करें ताकि आप गीतों को सीधे [सेवा क्रम](./service-order.md) में जोड़ सकें
 
 </div>
 
-## अपनी Song Library को Browse करना
+## अपनी गीत लाइब्रेरी को ब्राउज़ करना
 
-जब आप **Songs** page को खोलते हैं, तो आपके songs cards के रूप में display होते हैं। प्रत्येक card song की thumbnail image, title, artist, और duration को दिखाता है। Library को scroll करें या search को use करके आवश्यकता को find करें।
+जब आप **गीत** पृष्ठ खोलते हैं, तो आपके गीत कार्ड के रूप में प्रदर्शित होते हैं। प्रत्येक कार्ड गीत की थंबनेल छवि, शीर्षक, कलाकार, और अवधि दिखाता है। लाइब्रेरी में स्क्रॉल करें या आपको जो चाहिए उसे खोजने के लिए खोज का उपयोग करें।
 
-## Songs के लिए Search करना
+## गीतों के लिए खोजना
 
-1. Songs page पर **Search** button को click करें।
-2. एक song **title** या **artist** name को type करें।
-3. Results filter होंगे जैसे-जैसे आप type करते हैं, आपकी library से matching songs को show करते हुए।
+1. गीत पृष्ठ पर **खोज** बटन पर क्लिक करें।
+2. एक गीत **शीर्षक** या **कलाकार** नाम टाइप करें।
+3. जैसे ही आप टाइप करते हैं परिणाम फ़िल्टर होंगे, आपकी लाइब्रेरी से मिलान करने वाले गीत दिखाते हुए।
 
-## एक Song Add करना
+## एक गीत जोड़ना
 
-1. Songs page पर **Add Song** पर click करें।
-2. External song database को title या artist द्वारा search करें।
-3. उस song को select करें जिसे आप add करना चाहते हैं।
-4. Song आपकी library में add होगा इसके basic details को pre-filled के साथ।
+1. गीत पृष्ठ पर **गीत जोड़ें** पर क्लिक करें।
+2. शीर्षक या कलाकार द्वारा बाहरी गीत डेटाबेस में खोजें।
+3. जिस गीत को आप जोड़ना चाहते हैं उसे चुनें।
+4. गीत को आपकी लाइब्रेरी में जोड़ा जाएगा और इसके बुनियादी विवरण पूर्व-भरे होंगे।
 
 :::tip
-एक song को add करने के बाद, इसके details को review और update करने के लिए उस पर click करें, arrangements को add करें, या external links को जैसे YouTube videos या chord charts को attach करें।
+एक गीत जोड़ने के बाद, इसके विवरण की समीक्षा और अपडेट करने के लिए इस पर क्लिक करें, व्यवस्थाओं को जोड़ें, या बाहरी लिंक संलग्न करें जैसे YouTube वीडियो या कॉर्ड चार्ट।
 :::
 
-## एक Song को View और Edit करना
+## एक गीत को देखना और संपादित करना
 
-इसके detail page को खोलने के लिए किसी भी song card पर click करें। यहां से आप:
+किसी भी गीत कार्ड पर क्लिक करें इसके विवरण पृष्ठ को खोलने के लिए। यहां से आप कर सकते हैं:
 
-- **Edit song details** -- Title, artist, duration, और अन्य metadata को update करें।
-- **Manage arrangements** -- प्रत्येक song में multiple arrangements हो सकते हैं (उदाहरण के लिए, अलग keys या versions)। आवश्यकता के अनुसार arrangements को add, edit, या remove करें।
-- **Add lyrics** -- प्रत्येक arrangement के लिए lyrics को enter या update करें।
-- **Set the key** -- प्रत्येक arrangement के लिए musical key को specify करें ताकि आपकी team जानता हो कि कैसे prepare करें।
-- **Add external links** -- YouTube videos, chord charts, या elsewhere hosted sheet music जैसे resources के links को attach करें।
+- **गीत विवरण संपादित करें** -- शीर्षक, कलाकार, अवधि, और अन्य मेटाडेटा अपडेट करें।
+- **व्यवस्थाओं को प्रबंधित करें** -- प्रत्येक गीत में कई व्यवस्थाएं हो सकती हैं (उदाहरण के लिए, विभिन्न कुंजियां या संस्करण)। आवश्यक रूप से व्यवस्थाओं को जोड़ें, संपादित करें, या हटाएं।
+- **लिरिक्स जोड़ें** -- प्रत्येक व्यवस्था के लिए लिरिक्स दर्ज करें या अपडेट करें।
+- **कुंजी सेट करें** -- लिरिक्स के आगे कुंजी पिकर का उपयोग करके प्रत्येक व्यवस्था के लिए संगीतात्मक कुंजी निर्दिष्ट करें। कुंजी बदलने से तुरंत प्रदर्शित कॉर्ड को स्थानांतरित किया जाता है, व्यवस्था पृष्ठ पर और सेवा योजना से गीत खोलते समय दोनों पर, ताकि आपकी टीम हमेशा कॉर्ड को देखे जो वह वास्तव में खेल रहे हैं।
+- **बाहरी लिंक जोड़ें** -- कहीं और होस्ट की गई संसाधनों के लिंक संलग्न करें जैसे YouTube वीडियो, कॉर्ड चार्ट, या शीट संगीत।
 
-## Arrangements
+## व्यवस्थाएं
 
-एक arrangement एक song का एक distinct version represent करता है - उदाहरण के लिए, एक faster modern version versus एक slower acoustic take, या एक अलग key में एक अलग team के लिए same song। Same song के प्रत्येक arrangement song title और artist को share करते हैं लेकिन इसके अपने independent settings हैं:
+एक व्यवस्था एक गीत का एक अलग संस्करण दर्शाता है -- उदाहरण के लिए, एक तेजी से आधुनिक संस्करण बनाम एक धीमा ध्वनिक ले, या एक अलग टीम के लिए एक अलग कुंजी में एक ही गीत। एक ही गीत की प्रत्येक व्यवस्था गीत शीर्षक और कलाकार साझा करती है लेकिन इसकी अपनी स्वतंत्र सेटिंग है:
 
-- **Key** — musical key जो arrangement में perform होता है
-- **BPM** — tempo beats per minute में
-- **Length** — duration seconds में
-- **Meter** — time signature (उदा। 4/4, 3/4, 6/8)
-- **Sequence** — chord/section structure (उदा। Intro → Verse → Chorus → Bridge)
-- **Lyrics** — display या projection के लिए
-- **External links** — chord charts, YouTube recordings, sheet music, या अन्य resources
+- **कुंजी** -- संगीतात्मक कुंजी जिसमें व्यवस्था की जाती है
+- **BPM** -- प्रति मिनट बीट में टेम्पो
+- **लंबाई** -- सेकंड में अवधि
+- **मीटर** -- समय हस्ताक्षर (जैसे, 4/4, 3/4, 6/8)
+- **अनुक्रम** -- कॉर्ड/अनुभाग संरचना (जैसे, परिचय → श्लोक → कोरस → पुल)
+- **लिरिक्स** -- प्रदर्शन या प्रक्षेपण के लिए
+- **बाहरी लिंक** -- कॉर्ड चार्ट, YouTube रिकॉर्डिंग, शीट संगीत, या अन्य संसाधन
 
-जब आप एक song को [Service Order](./service-order.md) में add करते हैं, तो आप चुन सकते हैं कि उस specific service के लिए कौन सी arrangement को use करें, इसलिए आपकी team हमेशा सही version को rehearse और play करती है।
+जब आप [सेवा क्रम](./service-order.md) में एक गीत जोड़ते हैं, तो आप चुन सकते हैं कि उस विशिष्ट सेवा के लिए कौन सी व्यवस्था का उपयोग करना है, ताकि आपकी टीम हमेशा सही संस्करण का अभ्यास करे और खेले।
 
 :::info
-आपकी library से Songs को directly एक plan के भीतर एक [Service Order](./service-order.md) में add किया जा सकता है, उस specific service के लिए song details और chosen arrangement को link करते हुए।
+आपकी लाइब्रेरी से गीतों को सीधे एक [सेवा क्रम](./service-order.md) में एक योजना के भीतर जोड़ा जा सकता है, गीत विवरण और चुनी गई व्यवस्था को उस विशिष्ट सेवा से जोड़ते हुए।
 :::
 
 ## अगले कदम
 
-- एक [service plan](./plans.md) को build करते समय अपने [Service Order](./service-order.md) में songs को add करें
-- Song preparation और practice के लिए [Tasks](./tasks.md) को use करके अपनी worship team के साथ coordinate करें
+- [सेवा क्रम](./service-order.md) को जोड़ें जब [सेवा योजना](./plans.md) का निर्माण करते हुए
+- [कार्य](./tasks.md) का उपयोग करके गीत तैयारी और अभ्यास के लिए अपनी पूजा टीम के साथ समन्वय करें

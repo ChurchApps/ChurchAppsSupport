@@ -6,26 +6,26 @@ title: "Структура модулей"
 
 <div class="article-intro">
 
-Каждый модуль API следует единообразной внутренней структуре с контроллерами, репозиториями, моделями и хелперами. Понимание этой компоновки позволяет легко ориентироваться в кодовой базе и добавлять новую функциональность в любой модуль.
+Каждый модуль API следует единообразной внутренней структуре с контроллерами, репозиториями, моделями и помощниками. Понимание этой компоновки позволяет легко ориентироваться в кодовой базе и добавлять новую функциональность в любой модуль.
 
 </div>
 
 <div class="prereqs">
 <h4>Перед началом работы</h4>
 
-- Настройте API локально -- см. [Локальная настройка API](./local-setup)
+- Настройте API локально — см. [Локальная установка](./local-setup)
 - Ознакомьтесь с архитектурой [базы данных](./database), чтобы понять уровень доступа к данным
 
 </div>
 
 ## Структура каталогов
 
-Каждый модуль располагается в `src/modules/{name}/` и содержит четыре каталога:
+Модули находятся в `src/modules/{name}/`. Типичный модуль содержит четыре каталога:
 
 ```
 src/modules/{name}/
 ├── controllers/    ← Обработчики маршрутов (эндпоинты Express)
-├── repositories/   ← Уровень доступа к данным (прямой SQL)
+├── repositories/   ← Уровень доступа к данным (типизированные SQL-запросы)
 ├── models/         ← Интерфейсы и типы TypeScript
 └── helpers/        ← Бизнес-логика модуля
 ```
@@ -39,8 +39,8 @@ src/modules/membership/
 │   ├── GroupController.ts
 │   └── ...
 ├── repositories/
-│   ├── PersonRepository.ts
-│   ├── GroupRepository.ts
+│   ├── PersonRepo.ts
+│   ├── GroupRepo.ts
 │   └── ...
 ├── models/
 │   ├── Person.ts
@@ -50,37 +50,46 @@ src/modules/membership/
     └── ...
 ```
 
+Шесть основных модулей данных — membership, attendance, content, giving, messaging и doing — все следуют этой структуре. Несколько специализированных модулей (таких как reporting, который служит кросс-модульным отчётам и не владеет собственными данными) располагаются рядом с ними в `src/modules/`.
+
+## Одно приложение, много модулей
+
+API — это **модульный монолит**: модули обозначают границы организации кода и владения данными, а не отдельные сервисы. При запуске контроллеры каждого модуля регистрируются в единый контейнер внедрения зависимостей позади одного приложения Express, поэтому весь API создаётся, работает и развёртывается как единое целое — развёртываемые функции, описанные ниже, — это всё точки входа в одно и то же приложение.
+
+Маршруты каждого модуля находятся под префиксом URL, соответствующим имени модуля:
+
+```
+/membership/*    /attendance/*    /content/*
+/giving/*        /messaging/*     /doing/*
+```
+
+Это держит поверхность API каждого модуля самостоятельной, пока клиенты всё ещё разговаривают с одним хостом.
+
 ## Контроллеры
 
-Контроллеры определяют API-маршруты модуля. Они наследуют `CustomBaseController` из `@churchapps/apihelper` и используют декораторы Inversify для регистрации маршрутов.
+Контроллеры определяют маршруты API для модуля. Каждый модуль имеет свой базовый контроллер (например `MembershipBaseController`), который расширяет общий `BaseController` — сам построенный на `CustomBaseController` из `@churchapps/apihelper`. Маршруты регистрируются с декораторами Inversify.
 
 ```typescript
-import { controller, httpGet, httpPost } from "inversify-express-utils";
-import { CustomBaseController } from "@churchapps/apihelper";
+import express from "express";
+import { controller, httpGet } from "inversify-express-utils";
+import { MembershipBaseController } from "./MembershipBaseController.js";
+import { Permissions } from "../helpers/index.js";
 
-@controller("/people")
-export class PersonController extends CustomBaseController {
+@controller("/membership/people")
+export class PersonController extends MembershipBaseController {
 
-  @httpGet("/")
-  public async loadAll() {
-    return this.actionWrapper(async (au) => {
+  @httpGet("/recent")
+  public async getRecent(req: express.Request, res: express.Response): Promise<any> {
+    return this.actionWrapper(req, res, async (au) => {
       // au = контекст аутентифицированного пользователя
-      au.checkAccess("People", "View");
-      const repos = RepositoryManager.getRepositories<MembershipRepositories>("membership");
-      return repos.person.loadByChurchId(au.churchId);
-    });
-  }
-
-  @httpPost("/")
-  public async save() {
-    return this.actionWrapper(async (au) => {
-      au.checkAccess("People", "Edit");
-      const data = this.request.body;
-      // ... логика сохранения
+      if (!au.checkAccess(Permissions.people.view)) return this.json({}, 401);
+      return this.repos.person.loadRecent(au.churchId);
     });
   }
 }
 ```
+
+`actionWrapper` аутентифицирует запрос и гидрирует `this.repos` репозиториями модуля перед выполнением вашего действия.
 
 ### Декораторы маршрутов
 
@@ -92,30 +101,49 @@ export class PersonController extends CustomBaseController {
 | `@httpPatch("/path")` | PATCH |
 | `@httpDelete("/path")` | DELETE |
 
-Декоратор `@controller("/base")` задаёт базовый путь для всех маршрутов контроллера.
+Декоратор `@controller("/base")` задаёт базовый путь для всех маршрутов в контроллере.
 
 ## Репозитории
 
-Репозитории выполняют все операции с базой данных, используя прямой SQL через `DB.query()`. ORM не используется -- SQL пишется напрямую.
+Репозитории обрабатывают все операции с базой данных. ORM не используется — запросы пишутся с помощью построителя запросов Kysely, типизированного против схемы базы данных модуля. `db/index.ts` каждого модуля открывает функцию `getDb()`, которая возвращает типизированный экземпляр Kysely модуля.
 
 ```typescript
-export class PersonRepository {
-  public async loadByChurchId(churchId: string) {
-    return DB.query("SELECT * FROM people WHERE churchId=?", [churchId]);
-  }
+import { injectable } from "inversify";
+import { getDb } from "../db/index.js";
 
-  public async save(person: Person) {
-    // Логика INSERT или UPDATE
+@injectable()
+export class PersonRepo {
+  public async load(churchId: string, id: string) {
+    return getDb().selectFrom("people").selectAll()
+      .where("id", "=", id)
+      .where("churchId", "=", churchId)
+      .executeTakeFirst();
   }
 }
 ```
 
-Доступ к репозиториям осуществляется через `RepositoryManager`:
+Внутри контроллера репозитории модуля доступны как `this.repos`. Вне контроллеров получайте их через `RepoManager`:
 
 ```typescript
-const repos = RepositoryManager.getRepositories<MembershipRepositories>("membership");
-const people = await repos.person.loadByChurchId(churchId);
+const repos = await RepoManager.getRepos<Repos>("membership");
+const people = await repos.person.loadAll(churchId);
 ```
+
+## Кросс-модульная коммуникация
+
+Каждый модуль владеет своей базой данных (см. [База данных](./database)), и модуль никогда не запрашивает таблицы другого модуля напрямую. Когда одному модулю нужны данные, принадлежащие другому — например, модуль doing разрешает людей из membership — он проходит через **gateway** владельца модуля в `src/shared/modules/`:
+
+```typescript
+import { getMembershipModuleGateway } from "../../../shared/modules/index.js";
+
+const people = await getMembershipModuleGateway().loadPeople(churchId, personIds);
+```
+
+Каждый gateway (`MembershipModuleGateway`, `GivingModuleGateway` и так далее) — это интерфейс TypeScript, определяющий ровно какие операции владельца модуля открыта для остального API. Интерфейс — это контракт: текущие реализации читают базу данных владельца модуля в процессе, но поскольку вызывающие зависят только от интерфейса, реализация может быть заменена — например, на ту, которая делает HTTP-вызовы — если модуль когда-либо будет извлечён в отдельный сервис.
+
+:::info
+Если данные, которые вам нужны, находятся в другом модуле и его gateway не открывает операцию для них, расширьте интерфейс gateway вместо того чтобы лезть в репозитории или базу данных другого модуля.
+:::
 
 ## Аутентификация и авторизация
 
@@ -125,51 +153,53 @@ const people = await repos.person.loadByChurchId(churchId);
 
 ### Проверка разрешений
 
-Используйте `au.checkAccess()` для проверки наличия необходимого разрешения у текущего пользователя:
+Используйте `au.checkAccess()` для проверки наличия необходимого разрешения у текущего пользователя. Разрешения — это предопределённые константы, объединяющие тип содержимого и действие:
 
 ```typescript
-au.checkAccess("People", "View");    // Доступ на чтение
-au.checkAccess("People", "Edit");    // Доступ на запись
+au.checkAccess(Permissions.people.view);    // Доступ на чтение
+au.checkAccess(Permissions.people.edit);    // Доступ на запись
 ```
 
-Если у пользователя нет необходимого разрешения, ответ с ошибкой возвращается автоматически.
+Если пользователю не хватает необходимого разрешения, ответ об ошибке возвращается автоматически.
 
 :::warning
-Всегда вызывайте `au.checkAccess()` перед выполнением операций с данными. Никогда не пропускайте проверку разрешений, даже для эндпоинтов, работающих только на чтение.
+Всегда вызывайте `au.checkAccess()` перед выполнением операций с данными. Никогда не пропускайте проверку разрешений, даже для кажущихся только для чтения эндпоинтов.
 :::
 
 ## Конфигурация окружения
 
-Класс `Environment` управляет конфигурацией в разных средах:
+Класс `Environment` обрабатывает конфигурацию в разных окружениях:
 
 - **Локальная разработка:** Чтение из файла `.env` в корне проекта
 - **Развёрнутые окружения:** Чтение из AWS SSM Parameter Store
 
 ```typescript
 // Доступ к переменным окружения
-const dbConnection = Environment.membershipDb;
 const jwtSecret = Environment.jwtSecret;
+const corsOrigin = Environment.corsOrigin;
 ```
 
 Эта абстракция означает, что вашему коду не нужно знать, откуда берётся конфигурация.
 
 ## Lambda-функции
 
-При развёртывании в AWS API работает как четыре Lambda-функции:
+При развёртывании в AWS API работает как шесть Lambda-функций:
 
 | Функция | Назначение |
 |----------|---------|
 | `web` | Обрабатывает все HTTP REST API-запросы |
-| `socket` | Управляет WebSocket-соединениями для функций реального времени |
-| `timer15Min` | Запускается каждые 15 минут для уведомлений по электронной почте |
-| `timerMidnight` | Запускается ежедневно для дайджестов и задач обслуживания |
+| `socket` | Управляет подключениями WebSocket для функций реального времени |
+| `timer15Min` | Запланирована каждые 30 минут для уведомлений по электронной почте (имя имеет историческое значение) |
+| `timerMidnight` | Запланирована ежедневно для дайджестов электронной почты и обслуживания |
+| `timerScheduledTasks` | Запланирована ежедневно для выполнения автоматизаций и обработки просроченных рабочих процессов |
+| `timerWebhooks` | Запланирована каждую минуту для доставки очередных исходящих вебхуков |
 
 :::info
-Локально функция `web` работает на порту 8084, а функция `socket` -- на порту 8087. Функции таймеров можно запускать вручную во время разработки.
+Локально функция `web` работает на порту 8084, а функция `socket` — на порту 8087. Функции таймеров можно запускать вручную во время разработки.
 :::
 
 ## Связанные статьи
 
-- **[База данных](./database)** -- Строки подключения, скрипты схемы и паттерны доступа к данным
-- **[Локальная настройка API](./local-setup)** -- Полное пошаговое руководство по настройке
-- **[ApiHelper](../shared-libraries/api-helper)** -- Общая библиотека, предоставляющая `CustomBaseController` и middleware аутентификации
+- **[База данных](./database)** — строки подключения, скрипты схем и паттерны доступа к данным
+- **[Локальная установка](./local-setup)** — полное пошаговое руководство по настройке
+- **[ApiHelper](../shared-libraries/api-helper)** — общая библиотека, которая предоставляет `CustomBaseController` и middleware аутентификации

@@ -1,12 +1,12 @@
----
-title: "Historique des dons"
+﻿---
+title: "Historique des donations"
 ---
 
-# Historique des dons
+# Historique des donations
 
 <div class="article-intro">
 
-Lorsque vous êtes connecté, vous pouvez consulter un relevé complet de vos dons passés et générer des relevés de dons à des fins fiscales. Votre historique de dons est accessible depuis la section **Donner** de votre compte B1.church.
+Lorsque vous êtes connecté, vous pouvez consulter un enregistrement complet de vos donations passées et générer des relevés de dons à des fins fiscales. Votre historique de donations est disponible à partir de la section **Donate** de votre compte B1.church.
 
 </div>
 
@@ -14,44 +14,46 @@ Lorsque vous êtes connecté, vous pouvez consulter un relevé complet de vos do
 <h4>Avant de commencer</h4>
 
 - Vous devez être [connecté](../getting-started/logging-in.md) à votre compte B1.church.
-- Vous devez avoir effectué au moins un don. Consultez [Faire un don](./making-donations.md) pour commencer.
+- Vous devez avoir effectué au moins un don. Consultez [Faire une donation](./making-donations.md) pour commencer.
 
 </div>
 
-## Consulter votre historique
+## Affichage de votre historique
 
 1. Connectez-vous à votre compte B1.church.
-2. Accédez à la section **Donner**.
-3. Cliquez sur **Historique** dans le panneau de gauche pour voir vos dons passés.
+2. Accédez à la section **Donate**.
+3. Cliquez sur **History** dans le panneau de gauche pour afficher vos donations passées.
 
-Votre historique de dons est affiché sous forme de tableau avec les colonnes suivantes :
+Votre historique de donations s'affiche sous la forme d'un tableau avec les colonnes suivantes :
 
 - **Date** -- Quand le don a été effectué.
-- **Mode de paiement** -- Comment vous avez payé (par exemple, « Carte - Visa » ou « Banque - ACH »).
-- **Fonds** -- Vers quel fonds le don a été dirigé (par exemple, Fonds général, Fonds de construction).
-- **Montant** -- Le montant du don.
+- **Method** -- Comment vous avez payé (par exemple, « Card - Visa » ou « Bank - ACH »).
+- **Fund** -- Quel fonds le don a été orienté (par exemple, Fonds général, Fonds de construction).
+- **Amount** -- Le montant en dollars du don.
 
 :::info
-Les dons en cours de traitement apparaîtront avec une mention « En attente » à côté du nom du fonds et le montant affiché dans une couleur différente.
+Les donations qui sont encore en cours de traitement apparaîtront avec une étiquette « Pending » à côté du nom du fonds et du montant affiché dans une couleur différente.
 :::
 
-## Exporter et imprimer des relevés
+## Export et impression de relevés
 
-Cliquez sur le bouton **télécharger** dans l'en-tête de l'Historique des dons pour accéder aux options d'exportation :
+Cliquez sur le bouton **download** dans l'en-tête de l'historique des donations pour accéder aux options d'export :
 
-- **Année en cours (CSV)** -- Téléchargez un fichier CSV de tous vos dons de l'année en cours. Vous pouvez l'ouvrir dans un tableur.
-- **Année en cours (Imprimer)** -- Ouvrez un relevé de dons imprimable pour l'année en cours.
-- **Année précédente (CSV)** -- Téléchargez un fichier CSV de tous vos dons de l'année précédente.
-- **Année précédente (Imprimer)** -- Ouvrez un relevé de dons imprimable pour l'année précédente.
+- **Current Year (CSV)** -- Téléchargez un fichier CSV de tous vos dons de l'année en cours. Vous pouvez l'ouvrir dans une application de feuille de calcul.
+- **Current Year (Print)** -- Ouvrez un relevé de dons imprimable pour l'année en cours.
+- **Last Year (CSV)** -- Téléchargez un fichier CSV de tous vos dons de l'année précédente.
+- **Last Year (Print)** -- Ouvrez un relevé de dons imprimable pour l'année précédente.
 
 :::tip
-Imprimez le relevé de dons de l'année précédente en début de nouvelle année afin de l'avoir prêt pour la période fiscale. Le relevé imprimable inclut tous les détails dont vous avez besoin pour vos dossiers.
+Imprimez le relevé de dons de l'année précédente au début de la nouvelle année pour l'avoir prêt pour la saison fiscale. Le relevé imprimable inclut tous les détails dont vous avez besoin pour vos dossiers.
 :::
 
-## Dons récurrents
+## Donations récurrentes
 
-Depuis la section **Donner**, vous pouvez également cliquer sur **Dons récurrents** pour gérer les dons programmés que vous avez configurés. Cette section vous permet de consulter, mettre à jour ou annuler des dons récurrents et de gérer vos moyens de paiement enregistrés.
+À partir de la section **Donate**, vous pouvez également cliquer sur **Recurring Donations** pour gérer tout don planifié que vous avez configuré. Cette section vous permet d'afficher, de mettre à jour ou d'annuler les donations récurrentes et de gérer vos moyens de paiement enregistrés.
 
-## Prochaines étapes
+Si un don récurrent est facturé via **Stripe**, vous pouvez également le **pause** au lieu de l'annuler : cliquez sur l'icône pause à côté du don et confirmez. Les dons s'arrêtent jusqu'à ce que vous cliquiez sur la même icône pour **reprendre** ; un don en pause est marqué comme **Paused** dans la liste. Les donations récurrentes via d'autres fournisseurs de paiement peuvent toujours être modifiées ou annulées, mais pas mises en pause.
 
-- [Faire un don](./making-donations.md) -- Apprenez à faire un don ponctuel ou récurrent
+## Étapes suivantes
+
+- [Faire une donation](./making-donations.md) -- Découvrez comment faire un don unique ou récurrent

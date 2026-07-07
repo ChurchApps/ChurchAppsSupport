@@ -1,12 +1,12 @@
-﻿---
-title: "Puntos Finales de Contenido"
+---
+title: "Puntos finales de contenido"
 ---
 
-# Puntos Finales de Contenido
+# Puntos finales de contenido
 
 <div class="article-intro">
 
-El módulo de Contenido gestiona páginas de sitio web, secciones, elementos, bloques, sermones, listas de reproducción, servicios de transmisión, eventos, calendarios curados, archivos, galerías, traducciones de Biblia y búsquedas de versículos, canciones, arreglos, estilos globales, fotos de stock y configuración. Es el módulo más grande en la API y alimenta el CMS, medios/transmisión, planificación de adoración y características de Biblia en todas las aplicaciones ChurchApps.
+El módulo de contenido gestiona páginas del sitio web, secciones, elementos, bloques, publicaciones de blog, redireccionamientos, sermones, listas de reproducción, servicios de transmisión, eventos, calendarios curados, archivos, galerías, traducciones bíblicas y búsquedas de versículos, canciones, arreglos, estilos globales, fotos de stock y configuración. Es el módulo más grande en la API y alimenta el CMS, características de medios/transmisión, planificación de adoración y características bíblicas en todas las aplicaciones de ChurchApps.
 
 </div>
 
@@ -16,57 +16,43 @@ El módulo de Contenido gestiona páginas de sitio web, secciones, elementos, bl
 
 Ruta base: `/content/pages`
 
-| Método | Ruta | Auth | Permiso | Descripción |
-|--------|------|------|---------|-------------|
-| GET | `/:churchId/tree?url=&id=` | Public | — | Cargar árbol de página completo por URL o ID |
+| Método | Ruta | Autenticación | Permiso | Descripción |
+|--------|------|-------|---------|-------------|
+| GET | `/:churchId/tree?url=&id=` | Público | — | Cargar árbol completo de página (secciones, elementos, bloques) por URL o ID. Quita IDs internos cuando se obtienen por URL. Las búsquedas basadas en URL aplican `pages.visibility`: una página cerrada devuelve `{ restricted: true, visibility }` a menos que el JWT (opcional) satisfaga la puerta |
+| GET | `/public/:churchId` | Público | — | Enumera páginas públicas (`url`, `title`, `metaDescription`); solo `visibility = everyone` |
 | GET | `/:id` | JWT | — | Obtener una página por ID |
-| GET | `/` | JWT | — | Listar todas las páginas para la iglesia |
+| GET | `/` | JWT | — | Enumera todas las páginas de la iglesia |
 | POST | `/duplicate/:id` | JWT | Content.Edit | Duplicar una página con todas las secciones y elementos |
-| POST | `/temp/ai` | JWT | Content.Edit | Guardar una página generada por IA |
+| POST | `/temp/ai` | JWT | Content.Edit | Guardar una página generada por IA (página, secciones y elementos en una llamada) |
 | POST | `/` | JWT | Content.Edit | Crear o actualizar páginas (lote) |
 | DELETE | `/:id` | JWT | Content.Edit | Eliminar una página |
 
-## Sermones
+### Ejemplo: Cargar árbol de página
 
-Ruta base: `/content/sermons`
+```
+GET /content/pages/abc-church-id/tree?url=/about
+```
 
-| Método | Ruta | Auth | Permiso | Descripción |
-|--------|------|------|---------|-------------|
-| GET | `/public/:churchId` | Public | — | Listar todos los sermones públicos para una iglesia |
-| GET | `/:id` | JWT | — | Obtener un sermón por ID |
-| GET | `/` | JWT | — | Listar todos los sermones |
-| GET | `/lookup?videoType=&videoData=` | Public | — | Buscar metadatos de sermón desde YouTube o Vimeo |
-| POST | `/` | JWT | StreamingServices.Edit | Crear o actualizar sermones (lote) |
-| DELETE | `/:id` | JWT | StreamingServices.Edit | Eliminar un sermón |
+```json
+{
+  "name": "About",
+  "url": "/about",
+  "sections": [
+    {
+      "background": "#FFFFFF",
+      "textColor": "dark",
+      "elements": [
+        { "elementType": "textWithPhoto", "answers": { "text": "Welcome" } }
+      ]
+    }
+  ]
+}
+```
 
-## Eventos
+## Página relacionada
 
-Ruta base: `/content/events`
-
-| Método | Ruta | Auth | Permiso | Descripción |
-|--------|------|------|---------|-------------|
-| GET | `/group/:groupId` | JWT | — | Obtener eventos para un grupo |
-| GET | `/public/group/:churchId/:groupId` | Public | — | Obtener eventos públicos para un grupo |
-| GET | `/:id` | JWT | — | Obtener un evento por ID |
-| POST | `/` | JWT | — | Crear o actualizar eventos (lote) |
-| DELETE | `/:id` | JWT | Content.Edit | Eliminar un evento |
-
-## Archivos
-
-Ruta base: `/content/files`
-
-| Método | Ruta | Auth | Permiso | Descripción |
-|--------|------|------|---------|-------------|
-| GET | `/:contentType/:contentId` | JWT | — | Obtener archivos por tipo de contenido e ID de contenido |
-| GET | `/` | JWT | — | Listar todos los archivos para el sitio web de la iglesia |
-| GET | `/:id` | JWT | — | Obtener un archivo por ID |
-| POST | `/` | JWT | Content.Edit | Cargar archivos (base64) |
-| POST | `/postUrl` | JWT | Content.Edit | Obtener URL de carga S3 preeimpresa |
-| DELETE | `/:id` | JWT | Content.Edit | Eliminar un archivo |
-
-## Páginas Relacionadas
-
-- [Puntos Finales de Membresía](./membership) -- Personas, iglesias, grupos, roles, permisos
-- [Puntos Finales de Asistencia](./attendance) -- Seguimiento de servicio y visita
-- [Autenticación y Permisos](./authentication) -- Flujo de inicio de sesión, JWT, modelo de permisos
-- [Estructura de Módulo](../module-structure) -- Patrones de organización de código
+- [Arquitectura del generador de sitios web](../../architecture/website-builder) -- Cómo se encajan páginas, secciones, elementos, publicaciones y redireccionamientos en toda la aplicación
+- [Puntos finales de membresía](./membership) — Personas, iglesias, grupos, roles, permisos
+- [Puntos finales de asistencia](./attendance) — Servicio y rastreo de visitas
+- [Autenticación y permisos](./authentication) — Flujo de inicio de sesión, JWT, modelo de permiso
+- [Estructura del módulo](../module-structure) — Patrones de organización del código

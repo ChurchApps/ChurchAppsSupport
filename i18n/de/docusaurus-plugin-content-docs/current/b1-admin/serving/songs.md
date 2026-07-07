@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Lieder"
 ---
 
@@ -6,68 +6,68 @@ title: "Lieder"
 
 <div class="article-intro">
 
-Die Seite „Lieder" verwaltet Ihre Lobpreisliederbibliothek. Halten Sie alle Ihre Lieddetails, Liedtexte und Arrangements an einem Ort, damit Ihr Lobpreisteam sich leicht auf bevorstehende Dienste vorbereiten und ein konsistentes Repertoire pflegen kann.
+Die Seite "Lieder" verwaltet Ihre Anbetungs-Lied-Bibliothek. Halten Sie alle Ihre Lied-Details, Texte und Arrangements an einem Ort, damit Ihr Anbetungs-Team sich leicht für bevorstehende Gottesdienste vorbereiten und ein konsistentes Repertoire aufrechterhalten kann.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor Sie anfangen</h4>
 
-- Navigieren Sie zum Bereich **Dienste** in B1 Admin, um auf die Seite „Lieder" zuzugreifen
-- Optionalerweise richten Sie Ihre [Dienstpläne](./plans.md) ein, sodass Sie Lieder direkt in die [Dienstordnung](./service-order.md) verlinken können
+- Navigieren Sie zu dem Bereich **Dienst** in B1 Admin, um auf die Seite "Lieder" zuzugreifen
+- Optional haben Sie Ihre [Servicepläne](./plans.md) so eingerichtet, dass Sie Lieder direkt in die [Servicefolge](./service-order.md) verknüpfen können
 
 </div>
 
-## Durchsuchen Sie Ihre Liederbibliothek
+## Durchsuchen Ihrer Lied-Bibliothek
 
-Wenn Sie die Seite **Lieder** öffnen, werden Ihre Lieder als Karten angezeigt. Jede Karte zeigt das Liedminiaturbild, den Titel, den Künstler und die Dauer. Scrollen Sie durch die Bibliothek oder verwenden Sie die Suche, um das zu finden, was Sie benötigen.
+Wenn Sie die Seite **Lieder** öffnen, werden Ihre Lieder als Karten angezeigt. Jede Karte zeigt das Miniaturbild des Lieds, den Titel, den Künstler und die Dauer. Scrollen Sie durch die Bibliothek oder verwenden Sie die Suche, um zu finden, was Sie benötigen.
 
-## Nach Liedern suchen
+## Suchen nach Liedern
 
-1. Klicken Sie auf der Seite „Lieder" auf die Schaltfläche **Search**.
-2. Geben Sie einen Lied-**Titel** oder einen **Künstlernamen** ein.
-3. Die Ergebnisse werden gefiltert, während Sie tippen, und zeigen Ihre Lieder aus Ihrer Bibliothek.
+1. Klicken Sie auf die Schaltfläche **Suchen** auf der Seite "Lieder".
+2. Geben Sie einen Lied-**Titel** oder **Künstler**-Namen ein.
+3. Die Ergebnisse werden gefiltert, wenn Sie eingeben und zeigen übereinstimmende Lieder aus Ihrer Bibliothek.
 
-## Fügen Sie ein Lied hinzu
+## Lied hinzufügen
 
-1. Klicken Sie auf der Seite „Lieder" auf **Add Song**.
-2. Suchen Sie die externe Liederdatenbank nach Titel oder Künstler.
+1. Klicken Sie auf **Lied hinzufügen** auf der Seite "Lieder".
+2. Suchen Sie die externe Lied-Datenbank nach Titel oder Künstler.
 3. Wählen Sie das Lied aus, das Sie hinzufügen möchten.
-4. Das Lied wird Ihrer Bibliothek mit vorausgefüllten Basisdetails hinzugefügt.
+4. Das Lied wird zu Ihrer Bibliothek mit seinen vorausgefüllten grundlegenden Details hinzugefügt.
 
 :::tip
-Klicken Sie nach dem Hinzufügen eines Liedes darauf, um seine Details zu überprüfen und zu aktualisieren, Arrangements hinzuzufügen oder externe Links wie YouTube-Videos oder Akkorddiagramme anzuhängen.
+Nachdem Sie ein Lied hinzugefügt haben, klicken Sie darauf, um seine Details zu überprüfen und zu aktualisieren, Arrangements hinzuzufügen oder externe Links wie YouTube-Videos oder Akkord-Diagramme anzuhängen.
 :::
 
-## Zeigen Sie ein Lied an und bearbeiten Sie es
+## Anzeigen und Bearbeiten eines Lieds
 
-Klicken Sie auf eine beliebige Liedkarte, um ihre Detailseite zu öffnen. Von hier aus können Sie:
+Klicken Sie auf eine beliebige Lied-Karte, um seine Detailseite zu öffnen. Von hier aus können Sie:
 
-- **Edit song details** – Aktualisieren Sie den Titel, den Künstler, die Dauer und andere Metadaten.
-- **Manage arrangements** – Jedes Lied kann mehrere Arrangements haben (z. B. verschiedene Tonarten oder Versionen). Fügen Sie Arrangements nach Bedarf hinzu, bearbeiten Sie sie oder entfernen Sie sie.
-- **Add lyrics** – Geben Sie Liedtexte für jedes Arrangement ein oder aktualisieren Sie sie.
-- **Set the key** – Geben Sie die musikalische Tonart für jedes Arrangement an, damit Ihr Team weiß, wie es sich vorbereiten soll.
-- **Add external links** – Fügen Sie Links zu Ressourcen wie YouTube-Videos, Akkorddiagrammen oder Noten an, die an anderer Stelle gehostet werden.
+- **Lied-Details bearbeiten** -- Aktualisieren Sie den Titel, Künstler, Dauer und andere Metadaten.
+- **Arrangements verwalten** -- Jedes Lied kann mehrere Arrangements haben (z.B. unterschiedliche Tonarten oder Versionen). Fügen Sie Arrangements bei Bedarf hinzu, bearbeiten Sie oder entfernen Sie sie.
+- **Lyrics hinzufügen** -- Geben Sie ein oder aktualisieren Sie die Lyrics für jedes Arrangement.
+- **Legen Sie die Tonart fest** -- Geben Sie die musikalische Tonart für jedes Arrangement mit der Tonart-Auswahl neben den Lyrics an. Das Ändern der Tonart transponiert die angezeigten Akkorde sofort, sowohl auf der Arrangement-Seite als auch beim Öffnen des Lieds aus einem Serviceplan, damit Ihr Team immer Akkorde in der Tonart sieht, die sie tatsächlich spielen.
+- **Externe Links hinzufügen** -- Hängen Sie Links zu Ressourcen wie YouTube-Videos, Akkord-Diagrammen oder Partituren an anderer Stelle an.
 
 ## Arrangements
 
-Ein Arrangement stellt eine eigene Version eines Liedes dar – zum Beispiel eine schnellere moderne Version im Vergleich zu einer langsameren akustischen Fassung, oder das gleiche Lied in einer anderen Tonart für ein anderes Team. Jedes Arrangement des gleichen Liedes teilt sich den Liedtitel und den Künstler, hat aber seine eigenen unabhängigen Einstellungen:
+Ein Arrangement stellt eine unterschiedliche Version eines Lieds dar -- zum Beispiel eine schnellere moderne Version versus ein langsameres akustisches Arrangement, oder dasselbe Lied in einer anderen Tonart für ein anderes Team. Jedes Arrangement desselben Lieds teilt den Lied-Titel und Künstler, hat aber seine eigenen unabhängigen Einstellungen:
 
-- **Key** – die musikalische Tonart, in der das Arrangement aufgeführt wird
-- **BPM** – Tempo in Schlägen pro Minute
-- **Length** – Dauer in Sekunden
-- **Meter** – Taktart (z. B. 4/4, 3/4, 6/8)
-- **Sequence** – die Akkord-/Abschnittstruktur (z. B. Intro → Vers → Refrain → Bridge)
-- **Lyrics** – zum Anzeigen oder Projizieren
-- **External links** – Akkorddiagramme, YouTube-Aufnahmen, Noten oder andere Ressourcen
+- **Tonart** — die musikalische Tonart, in der das Arrangement aufgeführt wird
+- **BPM** — Tempo in Schlägen pro Minute
+- **Länge** — Dauer in Sekunden
+- **Taktart** — Taktart (z.B. 4/4, 3/4, 6/8)
+- **Reihenfolge** — die Akkord-/Abschnittsstruktur (z.B. Intro → Vers → Refrain → Bridge)
+- **Lyrics** — zur Anzeige oder Projektion
+- **Externe Links** — Akkord-Diagramme, YouTube-Aufnahmen, Partituren oder andere Ressourcen
 
-Wenn Sie ein Lied zu einer [Service Order](./service-order.md) hinzufügen, können Sie wählen, welches Arrangement Sie für diesen speziellen Dienst verwenden möchten, sodass Ihr Team immer die richtige Version übt und spielt.
+Wenn Sie ein Lied zu einer [Servicefolge](./service-order.md) hinzufügen, können Sie auswählen, welches Arrangement für diesen bestimmten Gottesdienst verwendet werden soll, sodass Ihr Team immer die richtige Version trainiert und spielt.
 
 :::info
-Lieder aus Ihrer Bibliothek können direkt zu einer [Service Order](./service-order.md) innerhalb eines Plans hinzugefügt werden, was die Lieddetails und das ausgewählte Arrangement mit diesem speziellen Dienst verlinkt.
+Lieder aus Ihrer Bibliothek können direkt zu einer [Servicefolge](./service-order.md) innerhalb eines Plans hinzugefügt werden, wobei die Lied-Details und das gewählte Arrangement mit diesem bestimmten Gottesdienst verknüpft werden.
 :::
 
 ## Nächste Schritte
 
-- Fügen Sie Lieder zu Ihrer [Service Order](./service-order.md) hinzu, wenn Sie einen [Dienstplan](./plans.md) erstellen
-- Koordinieren Sie mit Ihrem Lobpreisteam mit Hilfe von [Aufgaben](./tasks.md) zur Liedvorbereitung und zum Üben
+- Fügen Sie Lieder zu Ihrer [Servicefolge](./service-order.md) hinzu, wenn Sie einen [Serviceplan](./plans.md) aufbauen
+- Arbeiten Sie mit Ihrem Anbetungs-Team zusammen mit [Aufgaben](./tasks.md) für Lied-Vorbereitung und Training

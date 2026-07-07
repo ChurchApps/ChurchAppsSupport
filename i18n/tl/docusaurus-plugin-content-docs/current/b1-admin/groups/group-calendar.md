@@ -30,7 +30,7 @@ Ang kalendaryo ng grupo ay available sa pamamagitan ng B1.church member-facing a
 6. I-click ang **Calendar** sa kaliwang bahagi ng screen.
 
 :::info
-Ang kalendaryo ng grupo ay pinamamahalaan sa pamamagitan ng B1.church (ang member app) at hindi sa pamamagitan ng B1 Admin. Ina-access ito ng mga lider ng grupo sa pamamagitan ng pag-switch ng app mula sa admin dashboard.
+Ang kalendaryo ng grupo ay pinamamahalaan sa pamamagitan ng B1.church (ang member app) at hindi sa pamamagit ng B1 Admin. Ina-access ito ng mga lider ng grupo sa pamamagitan ng pag-switch ng app mula sa admin dashboard.
 :::
 
 ## Pagdaragdag ng Event
@@ -55,6 +55,27 @@ Kung ang iyong grupo ay nagpupulong sa regular na iskedyul, maaari mong i-set an
 Para sa isang grupo na nagpupulong tuwing Sabado, i-set ang frequency sa "week" at piliin ang Sabado. Ang event ay awtomatikong mapupuno sa kalendaryo sa hinaharap.
 :::
 
+## Bulk-Creating ng Mga Event sa B1 Admin
+
+Ang pahina ng grupo sa B1 Admin ay may isang **Calendar** tab kung saan ang staff ay maaaring mag-iskedyul ng isang buong season ng mga pagpupulong nang sabay-sabay:
+
+1. Buksan ang grupo sa B1 Admin at piliin ang **Calendar** tab.
+2. I-click ang **Add Events** upang buksan ang **Add Recurring Events** dialog.
+3. Piliin ang iskedyul (weekly, bawat 2 linggo, monthly, o isang beses), ang **First Meeting** at **Last Meeting** dates, at opsyonal na **Skip holidays**.
+4. Suriin ang preview ng mga petsa ng pagpupulong at i-uncheck ang kahit ilan upang palampasan.
+5. Panatilihing checked ang **Allow RSVPs** kung gusto mong ang mga miyembro ay makapagsagot sa mga event na ito (tingnan sa ibaba), pagkatapos ay i-save.
+
+## Event RSVPs
+
+Ang mga event ng grupo ay maaaring magkolekta ng RSVPs -- isang **Yes**, **No**, o **Maybe** para sa bawat pagkakataon ng event.
+
+- Ang **Allow RSVPs** ay on bilang default para sa mga event na nilikhang sa pamamagit ng bulk-add dialog; i-uncheck ito upang i-turn off ang mga tugon para sa mga event na iyon. Ang mga event na may RSVPs turned off ay nagpapakita bilang **Disabled** sa calendar tab.
+- Sa B1 Admin group calendar tab, ang bawat event ay nagpapakita ng response summary (halimbawa, "5 yes · 2 maybe · 1 no"). I-click sa pamamagitan upang buksan ang **RSVP Responses** roster, na naglilista kung sino ang sumagot na yes, maybe, at no para sa pagkakataong iyon.
+
+:::tip
+Ang RSVPs ay nagbibigay sa mga lider ng isang head count nang walang formality ng buong event registration. Para sa bayad na signups o capacity-managed na mga event, gamitin ang [event registration](../calendars/creating-calendars.md#enabling-event-registration) sa halip.
+:::
+
 ## Pagtingin sa Kalendaryo
 
 Ang kalendaryo ng grupo ay nag-aalok ng maraming opsyon sa pagtingin:
@@ -75,15 +96,4 @@ I-click ang anumang event upang tingnan ang mga detalye nito. Mula sa event deta
 
 :::warning
 Ang pag-delete ng event ay permanenteng nag-aalis nito. Kung kailangan mong kanselahin ang isang pagkakataon ng umuulit na event, isaalang-alang ang pag-edit nito sa halip.
-:::
-
-## Pag-subscribe sa Kalendaryo
-
-Maaari mong i-sync ang kalendaryo ng grupo sa iyong personal na kalendaryo:
-
-1. Mula sa pahina ng kalendaryo ng grupo, i-click ang **Subscribe**.
-2. Sundin ang mga prompt upang idagdag ang kalendaryo sa Google Calendar, Apple Calendar, Outlook, o anumang iba pang calendar application na sumusuporta sa mga subscription.
-
-:::tip
-Ang pag-subscribe ay nagpapanatiling naka-sync ang iyong personal na iskedyul sa mga event ng iyong grupo nang hindi na kailangang suriin ang B1 nang hiwalay. Anumang pagbabago na ginawa ng mga lider ng grupo ay awtomatikong lalabas sa iyong naka-sync na kalendaryo.
 :::

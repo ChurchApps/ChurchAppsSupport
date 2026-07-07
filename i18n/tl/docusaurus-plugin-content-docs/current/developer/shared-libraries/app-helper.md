@@ -1,4 +1,4 @@
----
+﻿---
 title: "AppHelper"
 ---
 
@@ -6,75 +6,92 @@ title: "AppHelper"
 
 <div class="article-intro">
 
-Ang mga `@churchapps/apphelper*` package ay nagbibigay ng mga shared React component at utility para sa lahat ng ChurchApps web application. Ang AppHelper ay nakabalangkas bilang isang monorepo workspace na naglalaman ng anim na package na sumasaklaw sa mga core component, authentication, donasyon, form, markdown, at website/CMS functionality.
+Ang `@churchapps/apphelper` package ay nagbibigay ng shared React components at utilities para sa lahat ng ChurchApps web applications. Ito ay isang single published package na nag-expose ng feature modules sa pamamagitan ng subpath entry points -- login, donations, forms, markdown, at website/CMS functionality -- kasama ang isang core set ng shared components at helpers.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Mag-install ng **Node.js** at **Git** -- tingnan ang [Mga Pangangailangan](../setup/prerequisites)
-- Pamilyarisahin ang sarili sa [daloy ng trabaho ng npm link](./index.md) para sa lokal na development
+- I-install ang **Node.js** at **Git** -- tingnan ang [Prerequisites](../setup/prerequisites)
+- Pamilyarin mo ang sarili mo sa [Packages workspace](./index.md) setup at release flow
 
 </div>
 
-## Mga Package
+## Entry Points
 
-| Package | Paglalarawan |
-|---------|-------------|
-| `@churchapps/apphelper` | Mga core component at utility |
-| `@churchapps/apphelper-login` | UI ng pag-login at pagpaparehistro |
-| `@churchapps/apphelper-donations` | Mga component ng pagbibigay at donasyon |
-| `@churchapps/apphelper-forms` | Mga component ng form builder |
-| `@churchapps/apphelper-markdown` | Markdown editor at renderer |
-| `@churchapps/apphelper-website` | Mga component ng website at CMS |
+Ang package ay tumutukoy ng subpath exports sa `package.json`, kaya bawat feature module ay importable sa sarili nito:
 
-## Pag-setup para sa Lokal na Development
+| Entry point | Contents |
+|-------------|----------|
+| `@churchapps/apphelper` | Core components, helpers, at hooks |
+| `@churchapps/apphelper/login` | Login at registration UI |
+| `@churchapps/apphelper/donations` | Giving at donation components |
+| `@churchapps/apphelper/forms` | Form submission components |
+| `@churchapps/apphelper/markdown` | Markdown at HTML editors at renderers |
+| `@churchapps/apphelper/website` | Website builder at CMS components |
 
-1. I-clone ang repository:
+## Sino ang Gumagamit ng Ano
+
+Bago baguhin ang isang shared export, suriin kung aling apps ang nag-import nito:
+
+| Export area | What it provides | Consumed by |
+|---|---|---|
+| Root -- core components & hooks | `DisplayBox`, `InputBox`, `Loading`, `PageHeader`, `PersonAvatar`, `SmallButton`, `ErrorMessages`, `ExportLink`, `useMountedState`, kasama ang re-exported `@churchapps/helpers` utilities (`ApiHelper`, `DateHelper`, `Locale`, `UserHelper`, atbp.) | B1Admin, B1App, B1Transfer, LessonsApp |
+| Root -- site chrome | `SiteHeader` (nav, user menu, notifications) | B1Admin, B1Transfer, LessonsApp |
+| Root -- admin content editors | `ImageEditor`, `HelpIcon` | B1Admin |
+| Root -- realtime plumbing | `SocketHelper`, `SubscriptionManager`, `NotificationService` | B1Admin, B1App |
+| Root -- chat/presence stores | `ConversationStore`, `PresenceStore` | B1App |
+| Root -- notes & messaging UI | `Notes` (staff notes sa people/tasks); `AddNote`, `SubscriptionToggle` (member messaging) | B1Admin (`Notes`), B1App (`AddNote`, `SubscriptionToggle`) |
+| Root -- Lessons-specific | `AnalyticsHelper`, `FloatingSupport`, `SupportModal` | LessonsApp |
+| `./login` | `LoginPage`, `LogoutPage` | B1Admin, B1App, B1Transfer, LessonsApp |
+| `./markdown` | `MarkdownEditor`, `MarkdownPreviewLight` (shared); `MarkdownPreview`, `HtmlEditor` (admin content editing) | B1Admin, B1App, LessonsApp |
+| `./donations` | `MultiGatewayDonationForm`, `RecurringDonations`, `PaymentMethods`, `StripePaymentMethod`, `DonationHelper`/`getPaymentProvider` (shared); `FundDonations` (admin only) | B1Admin, B1App |
+| `./forms` | `FormSubmissionEdit` (renders `ConversationalForm` kapag ang `displayMode` ng form ay `conversational`) | B1Admin, B1App |
+| `./website` | Page-rendering core na shared ng editor at renderer (`Element` + ang per-type renderers na nire-resolve sa pamamagitan ng `ElementRegistry`, `StyleHelper`, `DroppableArea`, `DraggableWrapper`, `Theme`, `YoutubeBackground`, `SectionDivider`/`parseDividerConfig`); site-wide widgets (`AnnouncementBanner`, `Launcher` + ang kanilang `parse*Config` helpers); `Animate`, `ElementBlock`, `NonAuthDonationWrapper`, `SermonElement` na ginagamit lamang ng public-facing renderer | B1Admin (editor), B1App (editor components + renderer) |
+
+Ang B1Transfer at LessonsApp ay gumagamit lamang ng root at `login` entry points -- ang `donations`, `forms`, at `website` subpaths ay consumed eksklusibo ng B1Admin at B1App ngayon.
+
+## Setup para sa Local Development
+
+Ang package na ito ay nakatira sa [Packages](https://github.com/ChurchApps/Packages) workspace kasama ang iba pang shared libraries:
+
+1. I-clone ang workspace:
 
    ```bash
-   git clone https://github.com/ChurchApps/AppHelper.git
+   git clone https://github.com/ChurchApps/Packages.git
    ```
 
-2. Mag-install ng mga dependency:
+2. I-install ang dependencies sa workspace root:
 
    ```bash
-   cd AppHelper && npm install
+   cd Packages && yarn install
    ```
 
-3. Buuin ang lahat ng package at ilunsad ang Vite playground:
+3. Ilunsad ang Vite playground mula sa package directory:
 
    ```bash
-   npm run playground:reload
+   cd apphelper && yarn dev
    ```
 
-   Binubuo nito ang bawat package sa workspace, pagkatapos ay sinisimulan ang playground dev server sa **http://localhost:3001**.
+   Ang playground dev server ay nagsisimula sa **http://localhost:3001**. I-copy ang `playground/dotenv.sample` sa `playground/.env` at punan ang kinakailangang values muna.
+
+Upang i-build ang package para sa consumption (nag-compile sa `dist/` at nag-copy ng locale/CSS assets), patakbuhin ang `yarn workspace @churchapps/apphelper build` -- o `yarn build` sa root upang i-build ang bawat package sa dependency order. Upang subukan ang isang unpublished build sa loob ng isang consuming app, gamitin ang isang temporary Yarn portal -- tingnan ang [Local Development Against a Consuming App](./index.md#local-development-against-a-consuming-app).
 
 :::tip
-Ang playground ang pinakamabilis na paraan upang mag-develop at mag-test ng mga AppHelper component. Nag-ho-hot-reload ito ng Vite dev server upang makita mo ang mga pagbabago nang real time.
+Ang playground ay ang pinakamabilis na paraan upang bumuo at subukan ang AppHelper components. Ito ay hot-reloads ang Vite dev server kaya makikita mo ang changes sa real time.
 :::
 
-## Pag-publish
+## Publishing
 
-Mag-publish ng isang package:
-
-```bash
-npm run publish:apphelper
-```
-
-Mag-publish ng lahat ng package:
-
-```bash
-npm run publish:all
-```
+Ang mga releases ay napupunta sa pamamagitan ng changesets: patakbuhin ang `yarn changeset` sa workspace root sa bawat change, pagkatapos ay `yarn publish-all` kapag handa na mag-release. Tingnan ang [Shared Libraries Overview](./index.md#releasing-with-changesets) para sa buong flow.
 
 :::warning
-Kapag nagpu-publish, siguraduhing i-update ang numero ng bersyon sa kaugnay na (mga) `package.json` file bago patakbuhin ang publish command. Lahat ng package na umaasa sa isang binagong package ay kailangan ding i-update.
+Hindi kailanman alisin o baguhin ang pangalan ng isang export hanggang sa ang replacement ay nai-publish at ang bawat consumer ay na-migrate na -- grep ang lahat ng consuming repos bago magsama ng isang removal.
 :::
 
-## Mga Kaugnay na Artikulo
+## Related Articles
 
-- **[Helpers](./helpers)** -- Ang base utility package na ginagamit kasabay ng AppHelper
-- **[Mga Web App](../web-apps/)** -- Ang mga web application na gumagamit ng mga package na ito
-- **[Pangkalahatang-tanaw ng Mga Shared Library](./index.md)** -- Daloy ng trabaho ng `npm link` at pangkalahatang-tanaw ng package
+- **[Helpers](./helpers)** -- Ang base utility package na ginagamit kasama ng AppHelper
+- **[Web Apps](../web-apps/)** -- Ang web applications na gumagamit ng package na ito
+- **[Shared Libraries Overview](./index.md)** -- Workspace setup, release flow, at local-link workflow

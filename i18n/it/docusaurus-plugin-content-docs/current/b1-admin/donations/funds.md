@@ -1,12 +1,12 @@
 ---
-title: "Gestione fondi"
+title: "Gestione dei fondi"
 ---
 
-# Gestione fondi
+# Gestione dei fondi
 
 <div class="article-intro">
 
-I fondi ti permettono di categorizzare le donazioni per scopo in modo da poter tracciare quanto la tua chiesa riceve per ogni area di ministero. I fondi comuni includono Fondo Generale, Fondo Edificio, Missioni e Ministero Giovanile, ma puoi crearne quanti ne hai bisogno.
+I fondi ti permettono di categorizzare le donazioni per scopo in modo da poter tracciare quanto la tua chiesa riceve per ogni area di ministero. I fondi comuni includono Fondo generale, Fondo per la costruzione, Missioni e Ministero giovanile, ma puoi crearne quanti ne hai bisogno.
 
 </div>
 
@@ -14,51 +14,56 @@ I fondi ti permettono di categorizzare le donazioni per scopo in modo da poter t
 <h4>Prima di iniziare</h4>
 
 - Avrai bisogno dell'accesso alla sezione **Donazioni** in B1 Admin
-- Decidi quali categorie di donazione sono necessarie per la tua chiesa e se ciascuna debba essere deducibile fiscalmente
+- Decidi quali categorie di donazione ha bisogno la tua chiesa e se ciascuna dovrebbe essere deducibile dalle tasse
 
 </div>
 
-## La pagina Fondi
+## La pagina dei fondi
 
-Naviga su **Donazioni > Fondi** per vedere un elenco di tutti i tuoi fondi. Ogni riga mostra il nome del fondo e il suo stato di **deducibilità fiscale**, che determina se le donazioni a quel fondo appaiono nelle [dichiarazioni di donazione](giving-statements.md) di fine anno.
+Accedi a **Donazioni > Fondi** per visualizzare un elenco di tutti i tuoi fondi. Ogni riga mostra il nome del fondo e il suo stato **deducibile dalle tasse**, che determina se le donazioni a quel fondo appaiono nei [rendiconti delle donazioni](giving-statements.md) di fine anno.
 
-## Creare un nuovo fondo
+## Creazione di un nuovo fondo
 
-1. Clicca **Aggiungi fondo** in cima alla pagina.
-2. Inserisci un nome per il fondo (ad es., "Fondo Edificio").
-3. Seleziona la casella **Deducibile fiscalmente** se le donazioni a questo fondo devono essere incluse nelle dichiarazioni di donazione.
-4. Clicca **Salva**.
+1. Fai clic su **Aggiungi fondo** in alto nella pagina.
+2. Inserisci un nome per il fondo (ad es. "Fondo per la costruzione").
+3. Seleziona la casella **Deducibile dalle tasse** se le donazioni a questo fondo devono essere incluse nei rendiconti delle donazioni.
+4. Lascia **Visibile ai donatori** selezionato per mostrare il fondo nei moduli di donazione pubblici e per membri, o deselezionalo per nascondere il fondo dai donatori mentre lo utilizzi ancora per le donazioni registrate manualmente.
+5. Fai clic su **Salva**.
 
-Il nuovo fondo appare immediatamente nel tuo elenco ed è disponibile quando inserisci le donazioni.
+Il nuovo fondo appare immediatamente nel tuo elenco e è disponibile quando inserisci donazioni.
 
-## Modificare ed eliminare fondi
+## Modifica ed eliminazione di fondi
 
-- Per modificare un fondo, clicca il pulsante **Modifica** accanto ad esso. Puoi cambiare il nome o attivare/disattivare l'impostazione di deducibilità fiscale.
-- Per eliminare un fondo, apri il modulo di modifica e clicca **Elimina**.
+- Per modificare un fondo, fai clic sul pulsante **Modifica** accanto ad esso. Puoi cambiare il nome, attivare/disattivare l'impostazione deducibile dalle tasse o attivare/disattivare **Visibile ai donatori** per mostrarlo o nasconderlo dai moduli di donazione.
+- Per eliminare un fondo, apri il modulo di modifica e fai clic su **Elimina**.
 
 :::warning
-L'eliminazione di un fondo non rimuove le donazioni precedentemente assegnate ad esso. Quei record di donazione rimangono nel sistema, ma il fondo non sarà più disponibile per nuove donazioni.
+L'eliminazione di un fondo non rimuove le donazioni precedentemente assegnate ad esso. Quei record di donazione rimangono nel sistema, ma il fondo non sarà più disponibile per le nuove donazioni.
 :::
 
-## Visualizzare i dettagli del fondo
+:::info
+I fondi nascosti ai donatori mostrano un chip **Nascosto** accanto al loro nome in questo elenco. I fondi nascosti funzionano comunque per le donazioni registrate manualmente in B1 Admin -- semplicemente non appaiono come opzione nei moduli di donazione pubblici o per membri.
+:::
 
-Clicca sul **nome di un fondo** per aprire la sua pagina di dettaglio. Questa pagina mostra:
+## Visualizzazione dei dettagli del fondo
 
-- **Storico donazioni** -- un elenco di tutte le donazioni a questo fondo
+Fai clic su un **nome del fondo** per aprire la sua pagina dei dettagli. Questa pagina mostra:
+
+- **Storico delle donazioni** -- un elenco di tutte le donazioni a questo fondo
 - **Filtro per intervallo di date** -- restringi i risultati a un periodo specifico
-- **Statistiche di riepilogo** -- totale donazioni, donatori unici e importo totale in dollari
+- **Statistiche di riepilogo** -- donazioni totali, donatori unici e importo totale in dollari
 
-Questa visualizzazione è utile quando devi fare un report su una specifica iniziativa di donazione o verificare i progressi verso un obiettivo di raccolta fondi.
+Questa visualizzazione è utile quando hai bisogno di riferire su un'iniziativa di donazione specifica o controllare il progresso verso un obiettivo di raccolta fondi.
 
 ## Ordinamento ed esportazione
 
-- Usa le intestazioni delle colonne per ordinare i fondi per nome.
-- Clicca **Esporta in CSV** per scaricare il tuo elenco di fondi come foglio di calcolo.
+- Utilizza le intestazioni delle colonne per ordinare i fondi per nome.
+- Fai clic su **Esporta in CSV** per scaricare il tuo elenco di fondi come foglio di calcolo.
 
 :::tip
-Configura i tuoi fondi prima di iniziare a [registrare le donazioni](recording-donations.md). Avere tutti i fondi predisposti assicura che le donazioni siano categorizzate correttamente fin dall'inizio.
+Configura i tuoi fondi prima di iniziare a [registrare le donazioni](recording-donations.md). Avere tutti i fondi in posizione garantisce che le donazioni siano categorizzate correttamente da subito.
 :::
 
-## Prossimi passi
+## Passaggi successivi
 
-Una volta configurati i tuoi fondi, puoi assegnarli alle donazioni quando [registri le donazioni](recording-donations.md) in un lotto. Assicurati di contrassegnare i fondi appropriati come deducibili fiscalmente prima di generare le [dichiarazioni di donazione](giving-statements.md).
+Una volta che i tuoi fondi sono configurati, puoi assegnarli alle donazioni quando [registri le donazioni](recording-donations.md) in batch. Assicurati di contrassegnare i fondi appropriati come deducibili dalle tasse prima di generare i [rendiconti delle donazioni](giving-statements.md).

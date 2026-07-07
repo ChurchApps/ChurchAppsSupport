@@ -35,7 +35,7 @@ Le projet **Api** core est un monolithe modulaire. Chaque module (membership, at
 
 | Projet | Framework | Port de développement | Objectif |
 |---------|-----------|----------|---------|
-| **[B1Admin](https://github.com/ChurchApps/B1Admin)** | React 19 + Vite + MUI 7 | 5173 | Tableau de bord d'administration d'église |
+| **[B1Admin](https://github.com/ChurchApps/B1Admin)** | React 19 + Vite + MUI 7 | 3101 | Tableau de bord d'administration d'église |
 | **[B1App](https://github.com/ChurchApps/B1App)** | Next.js 16 + React 19 + MUI 7 | 3301 | Application publique des membres de l'église |
 | **[LessonsApp](https://github.com/ChurchApps/LessonsApp)** | Next.js 16 | 3501 | Frontend Lessons.church |
 | **[B1Transfer](https://github.com/ChurchApps/B1Transfer)** | React + Vite | -- | Utilitaire d'importation/exportation de données |
@@ -61,27 +61,18 @@ Toutes les applications mobiles utilisent React Native avec Expo.
 
 ## Bibliothèques partagées
 
-Le code partagé est publié sur npm sous le scope `@churchapps`. Ceux-ci sont consommés en tant que dépendances npm régulières par les projets ci-dessus.
+Le code partagé est publié sur npm sous le scope `@churchapps` et consommé en tant que dépendances npm régulières par les projets ci-dessus. Tous les packages partagés vivent dans un seul référentiel -- [Packages](https://github.com/ChurchApps/Packages) -- géré en tant qu'espace de travail Yarn et publié avec changesets.
 
-| Paquet | Nom npm | Objectif | Utilisé par |
-|---------|----------|---------|---------|
-| **[Helpers](https://github.com/ChurchApps/Helpers)** | `@churchapps/helpers` | Utilitaires de base (DateHelper, ApiHelper, CurrencyHelper, etc.) | Tous les projets |
-| **[ApiHelper](https://github.com/ChurchApps/ApiHelper)** | `@churchapps/apihelper` | Utilitaires du serveur Express (middleware d'authentification, helpers de DB, intégration AWS) | Toutes les APIs |
-| **[AppHelper](https://github.com/ChurchApps/AppHelper)** | Espace de travail avec 6 paquets | Bibliothèque de composants React | Toutes les applications web |
-| **[ContentProviderHelper](https://github.com/ChurchApps/ContentProviderHelper)** | `@churchapps/content-provider-helper` | Fournisseurs de contenu YouTube, Vimeo et locaux | FreeShow, FreePlay, Api |
+| Paquet | Objectif | Utilisé par |
+|---------|---------|---------|
+| `@churchapps/helpers` | Utilitaires de base et interfaces TypeScript partagées (DateHelper, ApiHelper, CurrencyHelper, etc.) | Tous les projets |
+| `@churchapps/apihelper` | Utilitaires du serveur Express (authentification, contrôleurs de base, accès à la base de données, intégrations AWS) | Toutes les APIs |
+| `@churchapps/apphelper` | Bibliothèque de composants React avec modules de sous-chemins pour connexion, donations, formulaires, markdown et création de sites web | Toutes les applications web |
+| `@churchapps/content-providers` | Abstraction de fournisseur de contenu tiers (Lessons.church, Planning Center, Dropbox, et autres) | Api, B1Admin, B1App, FreePlay |
+| `@churchapps/integration-sdk` | Ensemble d'outils d'intégration B1.church : webhooks, client REST, OAuth | Développeurs d'intégration externes |
+| `@churchapps/texting` | Abstraction de fournisseur SMS | Api |
 
-### Sous-paquets AppHelper
-
-Le projet AppHelper est un espace de travail monorepo qui publie six paquets :
-
-| Paquet | Nom npm |
-|---------|----------|
-| Core | `@churchapps/apphelper` |
-| Login | `@churchapps/apphelper-login` |
-| Donations | `@churchapps/apphelper-donations` |
-| Forms | `@churchapps/apphelper-forms` |
-| Markdown | `@churchapps/apphelper-markdown` |
-| Website | `@churchapps/apphelper-website` |
+Voir [Bibliothèques partagées](../shared-libraries/) pour la configuration de l'espace de travail et le flux de publication.
 
 ## Relations des projets
 

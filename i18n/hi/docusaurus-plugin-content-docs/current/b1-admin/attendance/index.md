@@ -1,47 +1,48 @@
 ---
-title: "Attendance"
+title: "उपस्थिति"
 ---
 
-# Attendance
+# उपस्थिति
 
 <div class="article-intro">
 
-B1 Admin में Attendance section आपको अपने चर्च में कौन आ रहा है इसका एक complete view देता है और आपके groups समय के साथ कैसे बढ़ रहे हैं। Campuses और service times को कॉन्फ़िगर करने से लेकर trends को review करने और self check-in को setup करने तक, attendance को track करने और समझने के लिए जो कुछ भी आपको चाहिए वह इस page से manage होता है।
+B1 Admin में उपस्थिति अनुभाग आपको अपनी चर्च में कौन उपस्थित हो रहा है और आपके समूह समय के साथ कैसे बढ़ रहे हैं, इसका एक पूर्ण दृश्य देता है। कैंपस और सेवा समय को कॉन्फ़िगर करने से लेकर ट्रेंड की समीक्षा करने और स्व-चेक-इन सेट करने तक, उपस्थिति को ट्रैक करने और समझने के लिए आपको जो कुछ भी चाहिए वह इस पृष्ठ से प्रबंधित होता है।
 
 </div>
 
-## Page Overview
+## पृष्ठ अवलोकन
 
-जब आप Attendance page को खोलते हैं, तो आप एक header देखेंगे जिसमें आपके चर्च के attendance setup के बारे में key statistics हैं:
+जब आप उपस्थिति पृष्ठ खोलते हैं, तो आप अपनी चर्च की उपस्थिति सेटअप के बारे में मुख्य आँकड़ों के साथ एक हेडर देखेंगे:
 
-- **Campuses** -- आपके द्वारा कॉन्फ़िगर किए गए physical locations की संख्या
-- **Service Times** -- सभी campuses में services की total संख्या
-- **Scheduled Groups** -- groups जो एक specific service time को assign किए गए हैं
-- **Unscheduled Groups** -- groups जो एक service time से independently attendance को track करते हैं
+- **कैंपस** -- भौतिक स्थानों की संख्या जो आपने कॉन्फ़िगर की है
+- **सेवा समय** -- सभी कैंपस में सेवाओं की कुल संख्या
+- **शेड्यूल किए गए समूह** -- समूह जो एक विशिष्ट सेवा समय को असाइन किए गए हैं
+- **अनशेड्यूल किए गए समूह** -- समूह जो एक सेवा समय से स्वतंत्र रूप से उपस्थिति को ट्रैक करते हैं
 
-Header के नीचे, तीन tabs आपके attendance tools को organize करते हैं।
+हेडर के नीचे, तीन टैब आपके उपस्थिति उपकरण को व्यवस्थित करते हैं।
 
-## Tabs
+## टैब
 
-### Setup
+### सेटअप
 
-**Setup** tab वह जगह है जहां आप attendance tracking के building blocks को कॉन्फ़िगर करते हैं। यहां आप अपने campuses को define करते हैं, प्रत्येक campus में service times add करते हैं, और [groups](../groups/creating-groups.md) को उन service times से assign करते हैं। आपको यह केवल एक बार करना होगा, हालांकि आप इसे अपडेट कर सकते हैं जब भी आपकी schedule बदलती है। एक complete walkthrough के लिए [Attendance Setup](setup.md) देखें।
+**सेटअप** टैब वह जगह है जहां आप उपस्थिति ट्रैकिंग के निर्माण खंडों को कॉन्फ़िगर करते हैं। यहां आप अपने कैंपस को परिभाषित करते हैं, प्रत्येक कैंपस में सेवा समय जोड़ते हैं, और उन सेवा समय को [समूह](../groups/creating-groups.md) असाइन करते हैं। आपको इसे केवल एक बार करना है, हालांकि आप इसे अपडेट कर सकते हैं जब भी आपका शेड्यूल बदले। पूर्ण विस्तृत विवरण के लिए [उपस्थिति सेटअप](setup.md) देखें।
 
-### Attendance
+### उपस्थिति
 
-**Attendance** tab समय के साथ attendance trends को display करता है। Results को narrow करने के लिए filters का उपयोग करें date range, campus, या service time के आधार पर और अपने डेटा में patterns को quickly spot करें। [Tracking Attendance](tracking-attendance.md) में उपयोग करने के लिए reports और filters के विवरण देखें।
+**उपस्थिति** टैब समय के साथ उपस्थिति प्रवृत्तियों को प्रदर्शित करता है। तारीख की सीमा, कैंपस, या सेवा समय के आधार पर परिणामों को सीमित करने के लिए फ़िल्टर का उपयोग करें और अपने डेटा में पैटर्न को जल्दी से देखें। रिपोर्ट और फ़िल्टर का उपयोग करने के विवरण के लिए [उपस्थिति को ट्रैक करना](tracking-attendance.md) देखें।
 
-### Groups
+### समूह
 
-**Groups** tab attendance को individual group से break down करता है। यह helpful है जब आप church-wide numbers के बजाय एक specific small group, class, या ministry team को कैसे perform करते हैं यह देखना चाहते हैं।
+**समूह** टैब उपस्थिति को व्यक्तिगत समूह द्वारा विभाजित करता है। यह तब सहायक है जब आप यह देखना चाहते हैं कि एक विशिष्ट छोटा समूह, कक्षा, या मंत्रालय टीम कैसा कर रही है, बजाय चर्च-व्यापी संख्याओं को देखने के।
 
-## Next Steps
+## अगले कदम
 
-- [Attendance Setup](setup.md) -- campuses, service times, और groups को कॉन्फ़िगर करें
-- [Recording Attendance](recording-attendance.md) -- एक group session के लिए manually attendance enter करें
-- [Tracking Attendance](tracking-attendance.md) -- trends को view करें और reports को filter करें
-- [Check-In](check-in.md) -- services के लिए self check-in को setup करें
+- [उपस्थिति सेटअप](setup.md) -- कैंपस, सेवा समय, और समूहों को कॉन्फ़िगर करें
+- [उपस्थिति रिकॉर्ड करना](recording-attendance.md) -- एक समूह सत्र के लिए उपस्थिति को मैन्युअल रूप से दर्ज करें
+- [उपस्थिति को ट्रैक करना](tracking-attendance.md) -- ट्रेंड देखें और रिपोर्ट को फ़िल्टर करें
+- [चेक-इन](check-in.md) -- सेवाओं के लिए स्व-चेक-इन सेटअप करें
+- [चेक-इन सुरक्षा](checkin-safety.md) -- कक्ष क्षमताएं, स्वयंसेवक अनुपात, पिकअप लोग, और पेजिंग
 
 :::tip
-यदि आप पहली बार attendance को setup कर रहे हैं, तो अपने campuses और service times को define करने के लिए [Attendance Setup](setup.md) guide से शुरू करें। एक बार जब यह जगह पर हो, तो आप [manually recording attendance](recording-attendance.md) को शुरू कर सकते हैं या [self check-in](check-in.md) को setup कर सकते हैं।
+यदि आप पहली बार उपस्थिति सेटअप कर रहे हैं, तो अपने कैंपस और सेवा समय को परिभाषित करने के लिए [उपस्थिति सेटअप](setup.md) गाइड से शुरू करें। एक बार जब वह सेटअप हो जाए, तो आप [उपस्थिति रिकॉर्ड करना](recording-attendance.md) शुरू कर सकते हैं या [स्व-चेक-इन](check-in.md) सेटअप कर सकते हैं।
 :::

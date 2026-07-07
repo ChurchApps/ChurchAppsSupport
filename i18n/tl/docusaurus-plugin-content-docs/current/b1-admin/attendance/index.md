@@ -1,47 +1,48 @@
 ---
-title: "Attendance"
+title: "Pagdalo"
 ---
 
-# Attendance
+# Pagdalo
 
 <div class="article-intro">
 
-Ang seksyon ng Attendance sa B1 Admin ay nagbibigay sa inyo ng kompletong pagtingin kung sino ang pumupunta sa inyong simbahan at kung paano lumalaki ang inyong mga grupo sa paglipas ng panahon. Mula sa pag-configure ng mga campus at oras ng serbisyo hanggang sa pagsusuri ng mga trend at pag-set up ng self check-in, lahat ng kailangan ninyo para subaybayan at maunawaan ang attendance ay pinamamahalaan mula sa pahinang ito.
+Ang seksyon ng Pagdalo sa B1 Admin ay nagbibigay sa iyo ng kumpletong pananaw kung sino ang dumadalo sa iyong simbahan at kung paano lumalaki ang iyong mga grupo sa paglipas ng panahon. Mula sa pag-configure ng mga kampus at oras ng serbisyo hanggang sa pagsusuri ng mga uso at pag-set up ng self check-in, lahat ng kailangan mo upang subaybayan at maunawaan ang pagdalo ay pinamamahalaan mula sa pahinang ito.
 
 </div>
 
 ## Pangkalahatang-tanaw ng Pahina
 
-Kapag binuksan ninyo ang pahina ng Attendance, makikita ninyo ang header na may mga pangunahing istatistika tungkol sa attendance setup ng inyong simbahan:
+Kapag binuksan mo ang pahina ng Pagdalo, makikita mo ang header na may mga pangunahing istatistika tungkol sa setup ng pagdalo ng iyong simbahan:
 
-- **Mga Campus** -- ang bilang ng mga pisikal na lokasyon na na-configure ninyo
-- **Mga Oras ng Serbisyo** -- ang kabuuang bilang ng mga serbisyo sa lahat ng campus
-- **Mga Naka-schedule na Grupo** -- mga grupong naka-assign sa isang partikular na oras ng serbisyo
-- **Mga Hindi Naka-schedule na Grupo** -- mga grupong nagsusubaybay ng attendance nang hiwalay sa oras ng serbisyo
+- **Mga Kampus** -- ang bilang ng mga pisikal na lokasyon na na-configure mo
+- **Mga Oras ng Serbisyo** -- ang kabuuang bilang ng mga serbisyo sa lahat ng mga kampus
+- **Mga Naka-schedule na Grupo** -- mga grupo na nakatalagang sa isang partikular na oras ng serbisyo
+- **Mga Hindi Naka-schedule na Grupo** -- mga grupo na sumusubaybay ng pagdalo nang hiwalay sa isang oras ng serbisyo
 
-Sa ibaba ng header, tatlong tab ang nag-oorganisa ng inyong mga tool sa attendance.
+Sa ibaba ng header, tatlong tab ay nag-oorganisa ng iyong mga tool sa pagdalo.
 
 ## Mga Tab
 
 ### Setup
 
-Ang **Setup** tab ang pinag-co-configure ninyo ng mga pundasyon ng attendance tracking. Dito ninyo tinutukoy ang inyong mga campus, nagdadagdag ng mga oras ng serbisyo sa bawat campus, at nag-a-assign ng [mga grupo](../groups/creating-groups.md) sa mga oras ng serbisyo na iyon. Isang beses lang kailangan itong gawin, bagama't maaari ninyong i-update ito kapag nagbago ang inyong iskedyul. Tingnan ang [Pag-set Up ng Attendance](setup.md) para sa kumpletong gabay.
+Ang **Setup** tab ay kung saan mo ini-configure ang mga batayan ng pagsubaybay sa pagdalo. Dito mo tinutukoy ang iyong mga kampus, nagdadagdag ng mga oras ng serbisyo sa bawat kampus, at nagtatalaga ng mga [grupo](../groups/creating-groups.md) sa mga oras ng serbisyo na iyon. Isang beses lamang kailangan mong gawin ito, bagaman maaari mo itong i-update kapag nagbago ang iyong iskedyul. Tingnan ang [Pag-set Up ng Pagdalo](setup.md) para sa kumpletong gabay.
 
-### Attendance
+### Pagdalo
 
-Ang **Attendance** tab ay nagpapakita ng mga trend sa attendance sa paglipas ng panahon. Gamitin ang mga filter para paliitin ang mga resulta ayon sa saklaw ng petsa, campus, o oras ng serbisyo at mabilis na makita ang mga pattern sa inyong data. Tingnan ang [Pagsubaybay ng Attendance](tracking-attendance.md) para sa mga detalye sa paggamit ng mga ulat at filter.
+Ang **Pagdalo** tab ay nagpapakita ng mga uso sa pagdalo sa paglipas ng panahon. Gamitin ang mga filter upang paliitin ang mga resulta ayon sa saklaw ng petsa, kampus, o oras ng serbisyo at mabilis na makita ang mga pattern sa iyong data. Tingnan ang [Pagsubaybay ng Pagdalo](tracking-attendance.md) para sa mga detalye sa paggamit ng mga ulat at filter.
 
 ### Mga Grupo
 
-Ang **Groups** tab ay hinahati ang attendance ayon sa indibidwal na grupo. Nakakatulong ito kapag gusto ninyong makita kung paano ang takbo ng isang partikular na small group, klase, o ministry team sa halip na tingnan ang mga bilang ng buong simbahan.
+Ang **Mga Grupo** tab ay naghahati ng pagdalo ayon sa indibidwal na grupo. Kapaki-pakinabang ito kapag nais mong makita kung paano ang takbo ng isang partikular na maliit na grupo, klase, o koponan ng ministeryo sa halip na tingnan ang mga numero ng buong simbahan.
 
 ## Mga Susunod na Hakbang
 
-- [Pag-set Up ng Attendance](setup.md) -- i-configure ang mga campus, oras ng serbisyo, at mga grupo
-- [Pagtatala ng Attendance](recording-attendance.md) -- manu-manong mag-enter ng attendance para sa isang sesyon ng grupo
-- [Pagsubaybay ng Attendance](tracking-attendance.md) -- tingnan ang mga trend at i-filter ang mga ulat
+- [Pag-set Up ng Pagdalo](setup.md) -- i-configure ang mga kampus, oras ng serbisyo, at mga grupo
+- [Pagtatala ng Pagdalo](recording-attendance.md) -- manu-manong mag-enter ng pagdalo para sa isang sesyon ng grupo
+- [Pagsubaybay ng Pagdalo](tracking-attendance.md) -- tingnan ang mga uso at i-filter ang mga ulat
 - [Check-In](check-in.md) -- mag-set up ng self check-in para sa mga serbisyo
+- [Kaligtasan sa Check-In](checkin-safety.md) -- kapasidad ng silid, dami ng boluntaryo, mga tao sa pagkuha, at paging
 
 :::tip
-Kung kauna-unahang beses ninyong sine-set up ang attendance, magsimula sa gabay na [Pag-set Up ng Attendance](setup.md) para tukuyin ang inyong mga campus at oras ng serbisyo. Kapag naka-set up na iyon, maaari na kayong magsimulang [magtala ng attendance](recording-attendance.md) nang manu-mano o mag-set up ng [self check-in](check-in.md).
+Kung kauna-unahang beses mong sine-set up ang pagdalo, magsimula sa gabay na [Pag-set Up ng Pagdalo](setup.md) para tukuyin ang iyong mga kampus at oras ng serbisyo. Kapag naka-set up na iyon, maaari ka na magsimulang [magtala ng pagdalo](recording-attendance.md) nang manu-mano o mag-set up ng [self check-in](check-in.md).
 :::

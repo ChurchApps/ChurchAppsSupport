@@ -1,61 +1,63 @@
 ---
-title: "Gjennomgå Husstanden Din"
+title: "Gjennomgang av husstanden"
 ---
 
-# Gjennomgå Husstanden Din
+# Gjennomgang av husstanden
 
 <div class="article-intro">
 
-Etter at du velger en person fra søkeresultatene, laster appen inn hele husstanden din og viser den på husstandsgjennomgangsskjermen. Dette er det sentrale knutepunktet i innsjekkingsprosessen der du kan se alle i familien og administrere gruppetildelingene deres før du sjekker inn.
+After you select a person from the search results, the app loads your entire household and displays it on the household review screen. This is the central hub of the check-in process where you can see everyone in your family and manage their group assignments before checking in.
 
 </div>
 
 <div class="prereqs">
-<h4>Før Du Begynner</h4>
+<h4>Før du begynner</h4>
 
-- [Velg en gudstjeneste](./selecting-service) fra gudstjenesteskjermen
-- [Søk opp et medlem](./looking-up-members) og velg dem fra søkeresultatene
+- [Select a service](./selecting-service) from the services screen
+- [Look up a member](./looking-up-members) and select them from the search results
 
 </div>
 
-## Se Husstandsmedlemmer
+## Visning av husstandsmedlemmer
 
-Hvert husstandsmedlem vises som et kort med:
+Each household member appears as a card with:
 
-- **Bildet** deres (eller et plassholdersikon hvis det ikke er noe bilde registrert)
-- **Visningsnavnet** deres
-- Et **sammendrag av gjeldende gruppetildelinger** (vist som små brikker under navnet når kortet er lukket)
-- En **utvid/lukk-pil** på høyre side
+- Their **photo** (or a placeholder icon if no photo is on file)
+- Their **display name**
+- A **summary of their current group assignments** (shown as small chips below the name when the card is collapsed)
+- An **expand/collapse arrow** on the right side
 
-## Utvide et Medlem
+## Utvidelse av medlem
 
-Trykk på et medlems kort for å utvide det. Når det er utvidet, vil du se en rad for hver **gudstjenestetid** innenfor den valgte gudstjenesten. Hver rad viser:
+Tap a member's card to expand it. When expanded, you will see a row for each **service time** within the selected service. Each row shows:
 
-- **Gudstjenestetid-navnet** (for eksempel "9:00 AM" eller "11:00 AM")
-- En **knapp** som viser den nåværende tildelte gruppen, eller "Select Group" hvis ingen gruppe er tildelt ennå
+- The **service time name** (for example, "9:00 AM" or "11:00 AM")
+- A **button** showing the currently assigned group, or "Select Group" if no group has been assigned yet
 
-Trykk på gruppeknappen for å gå til [gruppevalgsskjermen](./group-assignment) der du kan velge eller endre gruppen for den personen og gudstjenestetiden.
+Tap the group button to go to the [group selection screen](./group-assignment) where you can choose or change the group for that person and service time.
 
-Trykk på medlemmets kort igjen for å lukke det.
+The expanded card also shows **Member**, **Guest**, and **Volunteer** chips. Tap one to set how this person is checking in — Member is the default. The type matters for children's rooms: volunteers count toward the room's volunteer-to-child ratio, and guests count against any guest capacity your church has set.
+
+Tap the member's card again to collapse it.
 
 :::tip
-Du trenger ikke å tildele hvert familiemedlem til en gruppe. Voksne som deltar på hovedgudstjenesten kan stå uten gruppetildeling. Tildel bare grupper til medlemmer som trenger å sjekke inn i en bestemt klasse eller program.
+You do not need to assign every family member to a group. Adults who are attending the main worship service can be left without a group assignment. Only assign groups for members who need to be checked into a specific class or program.
 :::
 
-## Navigere fra Denne Skjermen
+## Navigering fra denne skjermen
 
-Fra husstandsgjennomgangsskjermen har du tre alternativer:
+From the household review screen, you have three options:
 
-- **Utvid et medlem** og trykk på en gudstjenestetid-knapp for å [tildele eller endre en gruppe](./group-assignment).
-- **Trykk på Add Guest-knappen** under medlemslisten for å [legge til en gjest](./adding-guests) i husstanden din.
-- **Trykk på Check-in-knappen** nederst på skjermen for å [fullføre innsjekkingen](./completing-checkin) for alle i husstanden.
+- **Expand a member** and tap a service time button to [assign or change a group](./group-assignment).
+- **Tap the Add Guest button** below the member list to [add a guest](./adding-guests) to your household.
+- **Tap the Check-in button** at the bottom of the screen to [complete the check-in](./completing-checkin) for everyone in the household.
 
 :::info
-Eventuelle gruppetildelinger fra en tidligere innsjekking til den samme gudstjenesten er forhåndslastet automatisk. Hvis barna dine deltar i de samme gruppene hver uke, trenger du kanskje ikke å endre noe -- bare gjennomgå og sjekk inn.
+Any group assignments from a previous check-in to the same service are pre-loaded automatically. If your children attend the same groups each week, you may not need to change anything -- just review and check in.
 :::
 
-## Neste Trinn
+## Neste steg
 
-- [Tildel grupper](./group-assignment) til familiemedlemmer som trenger å sjekke inn i en bestemt klasse eller program.
-- [Legg til en gjest](./adding-guests) hvis noen besøker familien din.
-- [Fullfør innsjekkingen](./completing-checkin) når alles tildelinger ser riktige ut.
+- [Assign groups](./group-assignment) to family members who need to check into a specific class or program.
+- [Add a guest](./adding-guests) if someone is visiting with your family.
+- [Complete check-in](./completing-checkin) when everyone's assignments look correct.

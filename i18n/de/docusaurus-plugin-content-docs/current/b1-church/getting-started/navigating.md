@@ -6,43 +6,44 @@ title: "Navigation in B1App"
 
 <div class="article-intro">
 
-Das Mitgliederportal in B1.church verwendet ein Seitenleisten-Navigationslayout, mit dem Sie bequem zwischen den verschiedenen verfügbaren Werkzeugen wechseln können. Diese Seite erklärt, wie die Navigation sowohl auf Desktop- als auch auf Mobilgeräten funktioniert.
+Das Mitglieder-Portal in B1.church verwendet ein Seitenleisten-Navigationslayout, das es einfach macht, zwischen den verschiedenen Ihnen verfügbaren Tools zu wechseln. Diese Seite erklärt, wie die Navigation auf Desktop- und Mobilgeräten funktioniert.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Sie müssen [angemeldet](./logging-in.md) sein, um auf das Mitgliederportal zuzugreifen.
+- Sie müssen [angemeldet](./logging-in.md) sein, um auf das Mitglieder-Portal zuzugreifen.
 
 </div>
 
 ## Seitenleisten-Navigation
 
-Wenn Sie das Mitgliederportal aufrufen, sehen Sie eine vertikale Seitenleiste auf der linken Seite des Bildschirms. Diese Seitenleiste enthält Tabs für jeden Bereich des Portals:
+Wenn Sie das Mitglieder-Portal öffnen, sehen Sie eine vertikale Seitenleiste auf der linken Seite des Bildschirms. Diese Seitenleiste enthält Registerkarten für jeden Bereich des Portals:
 
-- **Chronik** -- Ihr personalisierter Feed mit Neuigkeiten und Unterhaltungen aus Ihren Gruppen und Ihrer Gemeinde. Dies ist der Standard-Tab, der beim Öffnen des Mitgliederportals geladen wird.
-- **Gruppen** -- Anzeigen und Interagieren mit den [Gruppen](../groups/), denen Sie angehören.
-- **Gemeinschaft** -- Das [Mitgliederverzeichnis](../community/member-directory.md) der Gemeinde durchsuchen.
-- **Pläne** -- Bevorstehende [Gottesdienstpläne](../plans/) und Ihre zugewiesenen Ehrenamtlichen-Positionen einsehen.
-- **Check-in** -- Sich selbst und Ihren Haushalt für Gottesdienste und Veranstaltungen [einchecken](../checkin/).
-- **Lektionen** -- Auf Bibelstudien-[Lektionen](../content/lessons.md) und Lehrpläne zugreifen.
-- **Spenden** -- Online-[Spenden](../giving/) tätigen und Ihre Spendenhistorie einsehen.
+- **Timeline** — Ihr personalisierter Aktivitätsfeed mit Aktualisierungen und Unterhaltungen aus Ihren Gruppen und Kirche. Dies ist die Standard-Registerkarte, die sich öffnet, wenn Sie das Mitglieder-Portal öffnen.
+- **Me** — Ihr persönliches Dashboard mit kommenden Diensteinsätzen, Anmeldungen, Gruppenereignissen und aktuellen Benachrichtigungen. Siehe [Me-Seite](./me-page).
+- **Groups** — Zeigen Sie die [Gruppen](../groups/), denen Sie angehören, an und interagieren Sie mit ihnen.
+- **Community** — Durchsuchen Sie das Kirchen-[Mitglieder-Verzeichnis](../community/member-directory.md).
+- **Plans** — Sehen Sie bevorstehende [Servicepläne](../plans/) und Ihre zugewiesenen Freiwilligen-Positionen.
+- **Check-in** — [Checken Sie](../checkin/) sich selbst und Ihren Haushalt für Dienste und Veranstaltungen ein.
+- **Lessons** *(veraltet)* — Die Lessons-Registerkarte im Portal wurde durch [FreePlay](/docs/freeplay/) für Klassenzimmer-Wiedergabe ersetzt. Durchsuchen Sie Lehrplan direkt unter [Lessons.church](https://lessons.church) oder siehe die [Lessons-Referenzseite](../content/lessons.md) für Details.
+- **Donations** — Tätigen Sie Online-[Spenden](../giving/) und sehen Sie Ihre Spendenliste.
 
-Klicken Sie auf einen beliebigen Tab, um zu diesem Bereich zu wechseln. Der aktive Tab ist hervorgehoben, sodass Sie immer wissen, wo Sie sich befinden.
+Klicken Sie auf eine Registerkarte, um zu diesem Bereich zu wechseln. Die aktive Registerkarte ist hervorgehoben, sodass Sie immer wissen, wo Sie sind.
 
 :::info
-Welche Tabs Sie sehen, kann je nachdem variieren, was Ihre Gemeinde aktiviert hat. Gemeindeadministratoren steuern über B1 Admin, welche Bereiche für Mitglieder sichtbar sind. Wenn Sie einen bestimmten Tab nicht sehen, hat Ihre Gemeinde diese Funktion möglicherweise nicht aktiviert.
+Die Registerkarten, die Sie sehen, können je nachdem, was Ihre Kirche aktiviert hat, unterschiedlich sein. Kirchen-Administratoren kontrollieren, welche Bereiche für Mitglieder durch B1 Admin sichtbar sind. Wenn Sie eine bestimmte Registerkarte nicht sehen, hat Ihre Kirche diese Funktion möglicherweise nicht aktiviert.
 :::
 
 ## Mobile Navigation
 
-Auf kleineren Bildschirmen wie Smartphones und Tablets wird die Seitenleiste eingeklappt, um Platz zu sparen. Stattdessen sehen Sie eine **Menü**-Schaltfläche oben im Mitgliederportal. Tippen Sie darauf, um eine Liste aller verfügbaren Tabs zu öffnen. Wählen Sie einen Tab aus, um zu diesem Bereich zu navigieren -- das Menü schließt sich automatisch.
+Auf kleineren Bildschirmen wie Telefonen und Tablets wird die Seitenleiste zusammengeklappt, um Platz zu sparen. Stattdessen sehen Sie eine **Menü**-Schaltfläche oben im Mitglieder-Portal. Tippen Sie auf sie, um eine Liste aller verfügbaren Registerkarten zu öffnen. Wählen Sie eine Registerkarte aus, um zu diesem Bereich zu navigieren, und das Menü wird automatisch geschlossen.
 
-## Admin-Tab
+## Admin-Registerkarte
 
-Wenn Sie Administratorberechtigungen für Ihre Gemeinde haben, sehen Sie einen zusätzlichen **Admin**-Tab am unteren Ende der Seitenleiste. Ein Klick darauf führt Sie zum B1 Admin, wo Sie die Einstellungen und Daten Ihrer Gemeinde verwalten können.
+Wenn Sie Administratorberechtigungen in Ihrer Kirche haben, sehen Sie eine zusätzliche **Admin**-Registerkarte am unteren Ende der Seitenleiste. Klicken Sie auf sie, um zu B1 Admin zu gehen, wo Sie die Einstellungen und Daten Ihrer Kirche verwalten können.
 
-## Kopfzeilen-Navigation
+## Top-Header-Navigation
 
-Außerhalb des Mitgliederportals enthält die Hauptkopfzeile die individuellen Navigationslinks Ihrer Gemeinde. Diese werden von den Administratoren Ihrer Gemeinde konfiguriert und können Links zu Seiten wie [Predigten](../content/sermons.md), der [Bibel](../content/bible.md), [Livestreaming](../content/live-streaming.md) und anderen Inhalten enthalten. Auf Mobilgeräten sind diese Links über ein Hamburger-Menü-Symbol oben rechts in der Kopfzeile zugänglich.
+Außerhalb des Mitglieder-Portals enthält die Haupt-Website-Kopfzeile die benutzerdefinierten Navigationslinks Ihrer Kirche. Diese werden von den Administratoren Ihrer Kirche konfiguriert und können Links zu Seiten wie [Predigten](../content/sermons.md), [Bibel](../content/bible.md), [Live-Streaming](../content/live-streaming.md) und anderen Inhalten enthalten. Auf Mobilgeräten können auf diese Links über ein Hamburger-Menü-Symbol in der oberen rechten Ecke der Kopfzeile zugegriffen werden.

@@ -6,84 +6,105 @@ title: "Gruppekalender"
 
 <div class="article-intro">
 
-Hver gruppe i B1 kan ha sin egen arrangementskalender. Gruppeledere bruker den til a planlegge moter, aktiviteter og gjentakende arrangementer, mens alle gruppemedlemmer kan se kommende arrangementer og delta i samtaler om dem. Kalenderen holder gruppen din organisert og sorger for at alle er informert om hva som kommer.
+Hver gruppe i B1 kan ha sin egen begivenheterskalender. Gruppeledere bruker den til å planlegge møter, aktiviteter og gjentakende begivenheter, mens alle gruppemedlemmer kan se kommende begivenheter og delta i samtaler om dem. Kalenderen holder gruppen organisert og sikrer at alle er oppdatert på hva som kommer.
 
 </div>
 
 <div class="prereqs">
-<h4>For du begynner</h4>
+<h4>Før du begynner</h4>
 
-- Du trenger en gruppe opprettet i B1 Admin med minst ett medlem. Se [Opprette grupper](creating-groups.md) og [Gruppemedlemmer](group-members.md).
-- For a legge til eller redigere kalenderarrangementer, ma du vare utpekt som gruppeleder. Se [Utpeke gruppeledere](group-members.md) for instruksjoner.
+- Du trenger en gruppe som er opprettet i B1 Admin med minst ett medlem. Se [Oppretting av grupper](creating-groups.md) og [Gruppemedlemmer](group-members.md).
+- For å legge til eller redigere kalenderbegivenheter, må du være utnevnt som gruppeleder. Se [Utnevning av gruppeledere](group-members.md) for instruksjoner.
 
 </div>
 
-## Fa tilgang til gruppekalenderen
+## Tilgang til gruppekalenderen
 
 Gruppekalenderen er tilgjengelig gjennom B1.church-appen for medlemmer:
 
-1. Fra B1 Admin, klikk pa **rullegardinmenyen** ovre hoyre hjorne av skjermen.
-2. Velg **Switch App**.
+1. Fra B1 Admin, klikk **rullegardinmenyen** øverst til høyre på skjermen.
+2. Velg **Bytt app**.
 3. Velg **B1.church**.
-4. Klikk pa **Groups** i venstre sidefelt.
+4. Klikk **Grupper** i venstre sidepanel.
 5. Velg gruppen din fra listen.
-6. Klikk pa **Calendar** pa venstre side av skjermen.
+6. Klikk **Kalender** på venstre side av skjermen.
 
 :::info
-Gruppekalenderen administreres gjennom B1.church (medlemsappen) i stedet for B1 Admin. Gruppeledere far tilgang til den ved a bytte app fra admin-dashbordet.
+Gruppekalenderen administreres gjennom B1.church (medlemmesappen) i stedet for B1 Admin. Gruppeledere får tilgang til den ved å bytte apper fra adminministrasjonsbordet.
 :::
 
-## Legge til et arrangement
+## Legge til en begivenhet
 
-1. Fra gruppekalenderen, klikk pa **Add an Event**.
-2. Skriv inn en **tittel** for arrangementet.
-3. Skriv en kort **beskrivelse** av hva arrangementet handler om.
-4. Angi **starttid** og **sluttid**.
-5. Klikk pa **Save** for a legge til arrangementet i kalenderen.
+1. Fra gruppekalenderen, klikk **Legg til en begivenhet**.
+2. Skriv inn en **tittel** for begivenheten.
+3. Skriv en kort **beskrivelse** av hva begivenheten handler om.
+4. Sett **starttiden** og **sluttiden**.
+5. Klikk **Lagre** for å legge begivenheten til kalenderen.
 
-## Sette opp gjentakende arrangementer
+## Oppsett av gjentakende begivenheter
 
-Hvis gruppen din moter pa en fast tidsplan, kan du sette arrangementer til a gjentas automatisk:
+Hvis gruppen møtes på en regelmessig plan, kan du sette begivenheter til å gjentas automatisk:
 
-1. Nar du oppretter eller redigerer et arrangement, kryss av for **Recurring**-boksen.
-2. Velg hvordan arrangementet skal gjentas:
-   - **Intervall** -- Angi antall dager mellom forekomster. For eksempel, a skrive "7" gjentar arrangementet hver 7. dag.
-   - **Frekvens** -- Velg a gjenta etter **dag**, **uke** eller **maned**.
-3. Lagre arrangementet. Det vil na vises i kalenderen ved hver planlagte forekomst.
+1. Når du oppretter eller redigerer en begivenhet, merk av for **Gjentakende**.
+2. Velg hvordan begivenheten skal gjentas:
+   - **Intervall** -- Sett et antall dager mellom forekomster. For eksempel, å angi "7" gjentar begivenheten hver 7. dag.
+   - **Frekvens** -- Velg å gjentas etter **dag**, **uke**, eller **måned**.
+3. Lagre begivenheten. Den vil nå vises på kalenderen ved hver planlagte forekomst.
 
 :::tip
-For en gruppe som moter hver lordag, sett frekvensen til "uke" og velg lordag. Arrangementet vil automatisk fylles ut i kalenderen fremover.
+For en gruppe som møtes hver lørdag, sett frekvensen til "uke" og velg lørdag. Begivenheten vil automatisk fylles på kalenderen framover.
 :::
 
-## Se kalenderen
+## Masseopprettelse av begivenheter i B1 Admin
+
+Gruppens side i B1 Admin har også en **Kalender**-fane der personalet kan planlegge en hel sesong med møter på en gang:
+
+1. Åpne gruppen i B1 Admin og velg **Kalender**-fanen.
+2. Klikk **Legg til begivenheter** for å åpne **Legg til gjentakende begivenheter**-dialogen.
+3. Velg planen (ukentlig, hver 2. uke, månedlig, eller en gang), **Første møte** og **Siste møte**-datoer, og eventuelt **Hopp over helligdager**.
+4. Gjennomgå forhåndsvisningen av møtedatoer og avmerk alle du vil hoppe over.
+5. La **Tillat RSVP**-boxen være avmerket hvis du vil at medlemmer skal kunne svare på disse begivenhetene (se nedenfor), deretter lagre.
+
+## Begivenhet RSVP-er
+
+Gruppebegivenheter kan samle RSVP-er -- en **Ja**, **Nei**, eller **Kanskje** for hver forekomst av begivenheten.
+
+- **Tillat RSVP** er på som standard for begivenheter som oppstår gjennom masselagg-dialogen; avmerk den for å slå av svar for disse begivenhetene. Begivenheter med RSVP-er slått av vises som **Deaktivert** på kalenderfanen.
+- På B1 Admin-gruppens kalenderfane viser hver begivenhet et svarsammendrag (for eksempel "5 ja · 2 kanskje · 1 nei"). Klikk gjennom for å åpne **RSVP-svar**-listen, som lister hvem som svarte ja, kanskje og nei for denne forekomsten.
+
+:::tip
+RSVP-er gir ledere et medlemsantall uten formaliteten med full begivenhetersregistrering. For betalt påmelding eller kapasitetsstyrte begivenheter, bruk [begivenhetersregistrering](../calendars/creating-calendars.md#enabling-event-registration) i stedet.
+:::
+
+## Visning av kalenderen
 
 Gruppekalenderen tilbyr flere visningsalternativer:
 
-- **Maned** -- Se hele maneden i ett overblikk.
-- **Uke** -- Fokuser pa den navaerende uken.
-- **Dag** -- Se en enkelt dag i detalj.
-- **Agenda** -- Se en liste over kommende arrangementer i kronologisk rekkefolge.
+- **Måned** -- Se hele måneden på en øyeblikk.
+- **Uke** -- Fokuser på gjeldende uke.
+- **Dag** -- Vis en enkelt dag i detalj.
+- **Agenda** -- Se en liste over kommende begivenheter i kronologisk rekkefølge.
 
-Bytt mellom visninger ved a bruke knappene overst i kalenderen.
+Bytt mellom visninger ved hjelp av knappene øverst på kalenderen.
 
-## Arrangementsdetaljer og samtaler
+## Begivenhetdetaljer og samtaler
 
-Klikk pa et arrangement for a se detaljene. Fra arrangementsdetaljvisningen:
+Klikk på en begivenhet for å se detaljene. Fra begivenhetens detaljvisning:
 
-- **Medlemmer og ledere** kan starte samtaler og legge igjen kommentarer om arrangementet.
-- **Ledere** kan redigere arrangementsdetaljer, endre tider eller slette arrangementet.
+- **Medlemmer og ledere** kan starte samtaler og legge igjen kommentarer om begivenheten.
+- **Ledere** kan redigere begivenhetens detaljer, endre tider eller slette begivenheten.
 
 :::warning
-A slette et arrangement fjerner det permanent. Hvis du trenger a avlyse en enkelt forekomst av et gjentakende arrangement, vurder a redigere det i stedet.
+Sletting av en begivenhet fjerner den permanent. Hvis du trenger å avlyse en enkelt forekomst av en gjentakende begivenhet, vurder å redigere den i stedet.
 :::
 
-## Abonnere pa kalenderen
+## Abonnering på kalenderen
 
-Du kan synkronisere gruppekalenderen med din personlige kalender:
+Du kan synkronisere gruppekalenderen med den personlige kalenderen:
 
-1. Fra gruppekalendersiden, klikk pa **Subscribe**.
-2. Folg instruksjonene for a legge til kalenderen i Google Calendar, Apple Calendar, Outlook eller en annen kalenderapplikasjon som stotter abonnementer.
+1. Fra gruppekalendersiden, klikk **Abonner**.
+2. Følg instruksjonene for å legge til kalenderen i Google Kalender, Apple Kalender, Outlook eller enhver annen kalenderapplikasjon som støtter abonnementer.
 
 :::tip
-A abonnere holder din personlige timeplan synkronisert med gruppens arrangementer uten a matte sjekke B1 separat. Eventuelle endringer gjort av gruppeledere vil automatisk vises i den synkroniserte kalenderen din.
+Abonnement holder den personlige planen din synkronisert med gruppens begivenheter uten å måtte sjekke B1 separat. Eventuelle endringer gjort av gruppeledere vises automatisk i den synkroniserte kalenderen din.
 :::

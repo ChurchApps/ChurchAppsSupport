@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Paghahanap ng Mga Tao"
 ---
 
@@ -11,9 +11,9 @@ Ang pahina ng **Mga Tao** ay nagpapakita ng direktoryo ng iyong simbahan sa isan
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- Kailangan mo ng aktibong B1 Admin account na may pahintulot na tingnan ang mga tao. Tingnan ang [Mga Tungkulin at Pahintulot](roles-permissions.md) kung hindi ka sigurado sa iyong antas ng access.
+- Kailangan mo ng aktibong B1 Admin account na may pahintulot na tingnan ang mga tao. Tingnan ang [Mga Papel at Pahintulot](roles-permissions.md) kung hindi ka sigurado sa iyong antas ng access.
 - Ang direktoryo ng iyong simbahan ay dapat may mga taong nasa loob. Kung hindi ka pa nagdagdag ng sinuman, tingnan ang [Pagdadagdag ng Mga Tao](adding-people.md) o [Pag-import ng Data](importing-data.md).
 
 </div>
@@ -33,7 +33,7 @@ Hindi mo kailangang mag-press ng Enter. Ang paghahanap ay tumatakbo nang awtomat
 
 ## Pag-sort ng mga Resulta
 
-Maaari mong i-sort ang direktoryo sa pamamagat ng pag-click sa anumang column header sa table:
+Maaari mong i-sort ang direktoryo sa pamamagit ng pag-click sa anumang column header sa table:
 
 1. I-click ang **column header** (halimbawa, **Pangalan** o **Email**) upang mag-sort ayon sa column na iyon.
 2. I-click ang parehong header muli upang baguhin ang order ng pag-sort.
@@ -67,7 +67,7 @@ Ang iyong mga pagpipilian sa column ay nakakaapekto sa kung ano ang kasama kapag
 Kapag ang iyong direktoryo ay may maraming mga record, ang mga resulta ay nahahati sa mga pahina. Gamitin ang **pagination controls** sa ilalim ng table upang lumipat sa pagitan ng mga pahina. Ang kasalukuyang pahina at kabuuang bilang ng mga record ay ipinapakita upang lagi mong alam kung nasaan ka sa listahan.
 
 :::tip
-Kung nais mong makita ang higit pang mga resulta nang sabay-sabay, palakasin ang iyong paghahanap upang bawasan ang listahan kaysa sa paging sa pamamagat ng isang malaking direktoryo.
+Kung nais mong makita ang higit pang mga resulta nang sabay-sabay, palakasin ang iyong paghahanap upang bawasan ang listahan kaysa sa paging sa pamamagit ng isang malaking direktoryo.
 :::
 
 ## Pag-export ng mga Resulta sa Paghahanap
@@ -84,6 +84,12 @@ Para sa mas maraming detalye tungkol sa pag-export, tingnan ang [Pag-export ng D
 :::tip
 Para sa mas advanced na mga query -- tulad ng paghahanap ng lahat ng taong hindi dumalo sa nakaraang tatlong buwan -- subukan ang feature na [AI Search](./ai-search.md), na nagpapahintulot sa iyo na maghanap gamit ang mga tanong sa plain language.
 :::
+
+## Advanced Search
+
+Ang Advanced Search ay nagpapahintulot sa iyo na bumuo ng precise filters sa pamamagit ng pagsasama ng mga kondisyon. Buksan ito mula sa pahina ng Mga Tao, pagkatapos palawakin ang isang kategorya at i-check ang mga field na gusto mong mag-filter, na pipili ng isang operator at value para sa bawat isa. Ang mga kategorya ay kinabibilangan ng **Names**, **Demographics**, **Contact**, **Membership**, **Activity** (donations at attendance), at **Custom Fields**.
+
+Ang kategorya ng **Custom Fields** ay naglilista ng [Custom Fields](../settings/custom-fields.md) ng iyong simbahan — ang mga field na iyong tinukoy sa Settings upang subaybayan ang iyong sariling impormasyon (tulad ng isang background-check expiration date). Ang mga operator na inaalok ay tumutugma sa uri ng bawat field: ang mga text field ay sumusuporta sa *contains / equals / starts with / ends with*, ang mga number field ay sumusuporta sa mga comparison operators, ang mga date field ay sumusuporta sa *equals / after / before*, at ang Yes/No at Multiple Choice fields ay nagpapahintulot sa iyo na pumili ng isang value. Anumang field na maaari mong mag-filter dito ay maaaring i-save bilang isang live [List](./lists.md).
 
 ## Pag-save ng mga Paghahanap bilang mga Lista
 

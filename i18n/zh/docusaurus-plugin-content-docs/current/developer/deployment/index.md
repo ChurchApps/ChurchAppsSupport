@@ -17,6 +17,7 @@ ChurchApps 根据项目类型使用不同的部署策略。API 部署到 AWS Lam
 | [API](./apis) | AWS Lambda | Serverless Framework v3（Node.js 22.x 运行时） |
 | [Web 应用](./web-apps) | S3 + CloudFront | 静态构建、S3 同步、CloudFront 失效 |
 | [移动应用](./mobile) | 应用商店 | Expo EAS Build + OTA 更新 |
+| [Caddy 自定义域代理](./caddy-proxy) | Windows EC2（弹性 IP `3.23.251.61`） | 静态 Caddyfile + WinSW 服务 + 定时地图同步 |
 | FreeShow | 直接下载 | Electron Builder（跨平台二进制文件） |
 
 ## 环境
@@ -26,8 +27,8 @@ ChurchApps 根据项目类型使用不同的部署策略。API 部署到 AWS Lam
 | `dev` | 本地开发 |
 | `demo` | 公开演示实例 |
 | `staging` | 预生产测试 |
-| `prod` | 生产环境 |
+| `prod` | 生产 |
 
 :::info
-每个环境都有自己的一套 API 端点、数据库和配置。环境特定的设置在本地通过 `.env` 文件管理，在部署环境中通过 AWS SSM Parameter Store 管理。
+每个环境都有自己的一套 API 端点、数据库和配置。环境特定的设置在本地通过 `.env` 文件管理，在已部署环境中通过 AWS SSM Parameter Store 管理。
 :::

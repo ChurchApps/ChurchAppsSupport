@@ -6,7 +6,7 @@ title: "Serveur MCP"
 
 <div class="article-intro">
 
-L'API B1 expédie un serveur [MCP (Model Context Protocol)](https://modelcontextprotocol.io) à `/mcp`. Tout client MCP-aware -- Claude Code, Claude Desktop, le SDK Agents OpenAI, Cursor, ou le vôtre -- peut s'y connecter et appeler l'API REST sous-jacente au nom d'un utilisateur d'église authentifié. C'est un wrapper fin et générique : il y a trois outils, et ils exposent toute la surface de l'API dynamiquement plutôt que de modéliser manuellement chaque point de terminaison.
+L'API B1 envoie un serveur [MCP (Model Context Protocol)](https://modelcontextprotocol.io) à `/mcp`. N'importe quel client compatible avec MCP -- Claude Code, Claude Desktop, le SDK Agents OpenAI, Cursor, ou le vôtre -- peut s'y connecter et appeler l'API REST sous-jacente au nom d'un utilisateur d'église authentifié. C'est un wrapper fin et générique : trois outils génériques exposent toute la surface de l'API dynamiquement plutôt que de modéliser manuellement chaque point de terminaison, plus un outil de guide de domaine pour le créateur de sites web.
 
 </div>
 
@@ -46,7 +46,7 @@ avec HTTP 401.
 
 ## Outils
 
-Trois outils, tous génériques. Le modèle utilise `list_endpoints` pour la découverte, `describe_endpoint` pour apprendre une forme de charge utile, et `api_call` pour invoquer réellement l'API.
+Trois outils génériques plus un guide. Le modèle utilise `list_endpoints` pour la découverte, `describe_endpoint` pour apprendre une forme de charge utile, `api_call` pour invoquer réellement l'API, et `describe_page_builder` quand la tâche implique du contenu web.
 
 ### `list_endpoints`
 
@@ -115,6 +115,10 @@ Invoque le point de terminaison REST choisi, dans le processus, à travers la m�
 
 Le résultat de l'outil est marqué `isError: true` pour toute réponse avec un statut ≥ 400.
 
+### `describe_page_builder`
+
+L'un des outils non-génériques : un guide statique et autonome pour construire des pages de site web via les points de terminaison `/content/*` -- le modèle de données Page → Section → Element, le flux de création, chaque `elementType` avec sa forme `answersJSON`, les paramètres au niveau de la section tels que la forme des séparateurs `dividerTop`/`dividerBottom`, et un exemple complet de bout en bout. Il ne prend aucune entrée et reflète le catalogue d'éléments entretenu dans l'éditeur B1Admin (voir [Architecture du créateur de sites web](../architecture/website-builder)). Les agents sont censés l'appeler une fois avant de créer ou modifier du contenu de page, puis agir via `api_call`.
+
 ## Modèle d'authentification
 
 La requête MCP elle-même s'exécute via `CustomAuthProvider.getUser()` -- le même chemin que chaque point de terminaison B1 authentifié utilise. Un porteur `cak_…` se résout en un `Principal` dont les permissions sont le RBAC actuel de la personne émettrice, **intersectées** avec les portées accordées de la clé. Cette intersection est recalculée à chaque requête, donc :
@@ -149,7 +153,7 @@ Il n'y a pas de limite de débit au niveau de l'application sur `/mcp`. La limit
 
 Le serveur MCP n'annonce **pas** les métadonnées OAuth 2.1 (`/.well-known/oauth-authorization-server`, enregistrement de client dynamique, flux PKCE). Les clients qui nécessitent des serveurs MCP découverts OAuth -- notamment l'IU « Ajouter un connecteur personnalisé » de Claude.ai et la fonctionnalité « Connecteurs » de ChatGPT -- ne peuvent pas se connecter sans cette surface.
 
-Les clients qui acceptent un jeton porteur statique dans leur configuration -- Claude Code, Claude Desktop, SDK Agents OpenAI, Cursor, code personnalisé -- fonctionnent aujourd'hui. Le `OAuthController` existant déjà [/docs/developer/api/connected-apps] émet des jetons via code d'autorisation + PKCE pour les applications tierces ; une couche de découverte conforme à la spec MCP par-dessus celle-ci comblerait le gap.
+Les clients qui acceptent un jeton porteur statique dans leur configuration -- Claude Code, Claude Desktop, SDK Agents OpenAI, Cursor, code personnalisé -- fonctionnent aujourd'hui. Le [OAuthController](/docs/developer/api/connected-apps) existant émet déjà des jetons via code d'autorisation + PKCE pour les applications tierces ; une couche de découverte conforme à la spec MCP par-dessus celle-ci comblerait le gap.
 
 ## Développement local
 
@@ -178,10 +182,10 @@ Le serveur MCP vit à `src/modules/mcp/` dans le repo Api. Fichiers notables :
 | Fichier | Objectif |
 |---|---|
 | `McpController.ts` | `@controller("/mcp")`; câble `StreamableHTTPServerTransport` par requête |
-| `McpServer.ts` | Construis un MCP `Server`, enregistre les trois outils |
+| `McpServer.ts` | Construit un MCP `Server`, enregistre les quatre outils |
 | `RouteInventory.ts` | Marche les métadonnées inversify-express-utils au démarrage pour énumérer les routes |
 | `internalDispatch.ts` | Synthétique `req`/`res` qui re-entre dans l'application Express dans le processus |
-| `tools/` | `listEndpoints.ts`, `describeEndpoint.ts`, `apiCall.ts` |
+| `tools/` | `listEndpoints.ts`, `describeEndpoint.ts`, `apiCall.ts`, `describePageBuilder.ts` |
 | `examples.ts` | Exemples de requête/réponse curés pour les points de terminaison à fort trafic |
 
 ## Connexes

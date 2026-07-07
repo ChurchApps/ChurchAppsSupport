@@ -6,60 +6,67 @@ title: "Fullføring av innsjekking"
 
 <div class="article-intro">
 
-Når du har gjennomgått husholdet og gjort nødvendige gruppetilordninger, er du klar til å sluttføre innsjekkingen. Dette er det siste trinnet i kioskarbeidsflytene -- appen sender inn oppmøte, skriver ut etiketter og tilbakestiller for neste familie.
+Once you have reviewed your household and made any needed group assignments, you are ready to finalize the check-in. This is the last step in the kiosk workflow -- the app submits attendance, prints labels, and resets for the next family.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- [Gjennomgå husholdet ditt](./household-review) på husholdsgjennomgangsens skjerm
-- [Tilordne grupper](./group-assignment) til familiemedlemmer som må sjekke inn i en bestemt klasse eller program
-- Valgfritt [legg til gjester](./adding-guests) som besøker familien
+- [Review your household](./household-review) on the household review screen
+- [Assign groups](./group-assignment) to any family members who need to check into a specific class or program
+- Optionally [add any guests](./adding-guests) who are visiting with your family
 
 </div>
 
-## Hvordan sjekke inn
+## How to Check In
 
-1. Fra **husholdsgjennomgangsenskjermen**, trykk på **Innsjekk**-knappen nederst på skjermen.
-2. Appen sender oppmøtedataene til serveren og viser en **suksessskjerm** med en grønn hake og en velkomstmelding.
+1. From the **household review screen**, tap the **Check-in** button at the bottom of the screen.
+2. The app submits the attendance data to the server and shows a **success screen** with a green checkmark and a welcome message.
 
-Det er alt som kreves. Familiens oppmøte har blitt registrert.
+That is all it takes. Your family's attendance has been recorded.
 
-## Etikettutskrift
+## Full Rooms and Volunteer Ratios
 
-Hvis en nettverksskriver er konfigurert, skriver appen automatisk ut etiketter etter innsjekking:
+If your church has configured [safety limits](../../b1-admin/attendance/checkin-safety) on its rooms, the server checks them before saving:
 
-- **Navn-etiketter** skrives ut for hver person som er tilordnet en gruppe som har **Print Nametag**-innstillingen aktivert. Navn-etiketter inkluderer personens navn, gruppetilordning og allergi / merknader hvis de er på fil.
-- **Foreldreplukkslips** skrives ut når noen som sjekket inn er i en gruppe som har **Foreldreplukkinnstillingen** aktivert. Plukkslipet viser barna, gruppetilordningene og en unik **4-tegn sikkerhetskode**.
+- If a selected room is **full or closed**, check-in does not go through and the app names the room so you can pick a different one.
+- If a children's room is **short on volunteers** for its ratio, the app either shows a warning that a staff member can confirm to proceed, or blocks the check-in entirely — depending on how your church configured ratio enforcement.
+
+## Label Printing
+
+If a network printer is configured, the app automatically prints labels after check-in:
+
+- **Name labels** are printed for each person who is assigned to a group that has the **Print Nametag** setting enabled. Name labels include the person's name, their group assignment, and allergy/notes information if any is on file.
+- **Parent pickup slips** are printed when any checked-in person is in a group that has the **Parent Pickup** setting enabled. The pickup slip lists the children, their group assignments, and a unique **4-character security code**.
 
 :::info
-Samme sikkerhetskode vises på både barnets navn-etikett og foreldrens plukkslip. Ved plukk-tid, samsvarer frivillige kodene for å bekrefte at riktig voksen plukker opp hvert barn.
+The same security code appears on both the child's name label and the parent's pickup slip. At pickup time, volunteers match the codes to verify that the right adult is picking up each child.
 :::
 
-Sikkerhetskoden genereres frisk for hver innsjekking og bruker kun konsonanter og sifre (vokaler utelukkes for å unngå å danne upassende ord).
+The security code is generated fresh for each check-in and uses only consonants and digits (vowels are excluded to avoid forming inappropriate words).
 
 :::warning
-Hvis etiketter ikke skrives ut, åpne Admin Settings ved å trykke på **kirkens logo** sju ganger, og trykk deretter **Endre skriver** for å bekrefte skriverforbindelsen. Se [Skriverppsett](../getting-started/printer-setup) for feilsøkingstrinn.
+If labels do not print, open the Admin Settings by tapping the **church logo** seven times, then tap **Change Printer** to verify the printer connection. See [Printer Setup](../getting-started/printer-setup) for troubleshooting steps.
 :::
 
-## Hva skjer etter innsjekking
+## What Happens After Check-In
 
-- Hvis en skriver er konfigurert, skriver appen ut alle etiketter og blir deretter automatisk tilbake til **søkeskjermen**, klar for neste familie.
-- Hvis ingen skriver er konfigurert, vises suksessskjermen i noen sekunder og blir deretter automatisk tilbake til **søkeskjermen**.
+- If a printer is configured, the app prints all labels and then automatically returns to the **lookup screen**, ready for the next family.
+- If no printer is configured, the success screen displays for a few seconds and then automatically returns to the **lookup screen**.
 
-Du trenger ikke å trykke på noe for å komme tilbake til søkeskjermen -- appen håndterer overgangen automatisk.
+You do not need to tap anything to get back to the lookup screen -- the app handles the transition automatically.
 
 :::tip
-Appen tilbakestilles fullstendig etter hver innsjekking, slik at det ikke er noen risiko for at en familie ser en annen families informasjon.
+The app resets completely after each check-in, so there is no risk of one family seeing another family's information.
 :::
 
-## Hva som blir registrert
+## What Gets Recorded
 
-Når du trykker på **Innsjekk**, sender appen følgende til serveren for hvert husholdsmedlem som har en gruppetilordning:
+When you tap **Check-in**, the app sends the following to the server for each household member who has a group assignment:
 
-- **Personen** som sjekker inn
-- **Servicen** de deltar på
-- **Servicetiden** og **gruppen** de er tilordnet
+- The **person** being checked in
+- The **service** they are attending
+- The **service time** and **group** they are assigned to
 
-Disse dataene vises i B1 Admin under Oppmøte-delen, hvor kirkens administratorer kan vise og administrere oppmøteposter. Se [innsjekkingsadministrasjonsveiledningen](../../b1-admin/attendance/check-in.md) for detaljer.
+This data appears in B1 Admin under the Attendance section, where your church administrators can view and manage attendance records. See the [check-in administration guide](../../b1-admin/attendance/check-in.md) for details.

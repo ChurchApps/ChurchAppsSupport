@@ -6,90 +6,90 @@ title: "Mailchimp"
 
 <div class="article-intro">
 
-नए B1 लोगों, givers, या group members को एक Mailchimp audience में pipe करें ताकि अगली welcome series, year-end appeal, या volunteer newsletter एक list से pull हो जो हमेशा up to date होता है। wiring पूरी तरह से Zapier (या Make) में रहता है — B1 event को fire करता है, Mailchimp subscriber को ingests करता है।
+नए B1 लोगों, दाताओं, या समूह सदस्यों को एक Mailchimp दर्शकों में पाइप करें ताकि अगली स्वागत श्रृंखला, वर्ष के अंत की अपील, या स्वयंसेवक समाचार पत्र एक सूची से खींचे जो हमेशा अद्यतन है। B1 के पास कोई निर्मित Mailchimp सिंक नहीं है -- वायरिंग पूरी तरह से Zapier (या Make) में रहता है: B1 घटना को फायर करता है, Mailchimp ग्राहक को ग्रहण करता है।
 
 </div>
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- कम से कम एक audience के साथ एक [Mailchimp](https://mailchimp.com) खाता जिसमें आप B1 लोगों को push करना चाहते हैं
-- एक [Zapier](https://zapier.com) खाता (free tier छोटे churches को cover करता है)
-- **Edit Settings** अनुमति वाला एक B1Admin user ताकि आप एक API कुंजी को mint कर सकें
+- कम से कम एक दर्शक के साथ एक [Mailchimp](https://mailchimp.com) खाता जिसमें आप B1 लोगों को धकेलना चाहते हैं
+- एक [Zapier](https://zapier.com) खाता (मुक्त टीयर छोटी चर्चों को कवर करता है)
+- **सेटिंग्स संपादित करें** अनुमति के साथ एक B1Admin उपयोगकर्ता ताकि आप एक API कुंजी बना सकें
 
 </div>
 
-## आप क्या Wire Up कर सकते हैं
+## आप क्या वायर कर सकते हैं
 
-| Direction | B1 trigger | Mailchimp action |
+| दिशा | B1 ट्रिगर | Mailchimp कार्रवाई |
 |---|---|---|
-| B1 → Mailchimp | `person.created` | Add/Update Subscriber |
-| B1 → Mailchimp | `donation.created` | Add Subscriber to Tag (उदाहरण के लिए "Gave in 2026") |
-| B1 → Mailchimp | `group.member.added` | Add Subscriber to Tag scoped to that group |
-| Mailchimp → B1 | New Subscriber | B1 *Create Person* |
+| B1 → Mailchimp | `person.created` | ग्राहक जोड़ें/अपडेट करें |
+| B1 → Mailchimp | `donation.created` | टैग में ग्राहक जोड़ें (जैसे "2026 में दिया") |
+| B1 → Mailchimp | `group.member.added` | उस समूह के लिए स्कोप किए गए टैग में ग्राहक जोड़ें |
+| Mailchimp → B1 | नया ग्राहक | B1 *व्यक्ति बनाएं* |
 
-Mailchimp side बहुत अधिक expose करता है (campaigns, segments, automations) — [Mailchimp की Zapier triggers](https://zapier.com/apps/mailchimp/integrations) को पूर्ण list के लिए देखें। कुछ भी B1 envelope से mappable है fair game है।
+Mailchimp पक्ष बहुत कुछ उजागर करता है (अभियान, खंड, स्वचालन) -- पूरी सूची के लिए [Mailchimp के Zapier ट्रिगर](https://zapier.com/apps/mailchimp/integrations) देखें। B1 लिफाफे से कुछ भी मैपेबल उचित खेल है।
 
 ## सेटअप
 
-### 1. एक B1 API कुंजी Mint करें
+### 1. एक B1 API कुंजी बनाएं
 
-B1Admin में **Settings → Developer → API Keys → New API Key** पर जाएं। Zap को जरूरत वाले scopes दें:
+B1Admin में **सेटिंग्स → डेवलपर → API कुंजियां → नई API कुंजी** पर जाएं। इसे Zap की आवश्यक दायरे दें:
 
-- `settings:write` — trigger को अपने webhook को register करने के लिए आवश्यक
-- `people:read` — ताकि Zap first/last name, email, आदि को पढ़ सके
-- (Optional) `people:write` यदि आप भी एक Mailchimp → B1 direction की योजना बनाते हैं
+- `settings:write` -- ट्रिगर को अपना वेबहुक पंजीकृत करने के लिए आवश्यक
+- `people:read` -- ताकि Zap पहला/अंतिम नाम, ईमेल आदि पढ़ सकता है।
+- (वैकल्पिक) `people:write` यदि आप Mailchimp → B1 दिशा की भी योजना बनाते हैं
 
-सहेजें और `cak_…` string को copy करें — यह केवल एक बार दिखाया जाता है।
+सहेजें और `cak_…` स्ट्रिंग की प्रतिलिपि करें -- यह केवल एक बार दिखाया जाता है।
 
 ### 2. Zap बनाएं
 
-1. **Trigger:** `B1.church — New Person`। पहले use पर Zapier आपको *Sign in to B1.church* के लिए ask करता है; API कुंजी को paste करें।
-2. **Action:** `Mailchimp — Add/Update Subscriber`। trigger output को map करें:
-   - `data.contactInfo.email` → Email Address
-   - `data.name.first` → First Name
-   - `data.name.last` → Last Name
-   - (Optional) `data.id` → एक Mailchimp merge field यदि आप B1 के person id को साथ रखना चाहते हैं।
-3. Zap को चालू करें। Zapier एक `person.created` webhook को B1 पर register करता है — verify करें कि **Settings → Developer → Webhooks** में "Zapier — person.created" नाम की एक row दिखाई दे।
+1. **ट्रिगर:** `B1.church -- नया व्यक्ति`। पहली बार उपयोग पर Zapier आपको *B1.church में साइन इन करने* के लिए कहता है; API कुंजी को पेस्ट करें।
+2. **कार्रवाई:** `Mailchimp -- ग्राहक जोड़ें/अपडेट करें`। ट्रिगर आउटपुट को मैप करें:
+   - `data.contactInfo.email` → ईमेल पता
+   - `data.name.first` → पहला नाम
+   - `data.name.last` → अंतिम नाम
+   - (वैकल्पिक) `data.id` → एक Mailchimp मर्ज फ़ील्ड यदि आप B1 के व्यक्ति id को साथ रखना चाहते हैं।
+3. Zap को चालू करें। Zapier B1 पर एक `person.created` वेबहुक पंजीकृत करता है -- **सेटिंग्स → डेवलपर → वेबहुक** में सत्यापित करें कि "Zapier -- person.created" नामक एक पंक्ति दिखाई देती है।
 
-बस। B1Admin में एक person को add करें confirm करने के लिए — नया subscriber Zapier के अंदर seconds के अंदर दिखाई देता है।
+बस इतना ही। पुष्टि करने के लिए B1Admin में एक व्यक्ति जोड़ें -- नया ग्राहक कुछ सेकंड में Mailchimp में दिखाई देता है।
 
-## सामान्य Recipes
+## सामान्य नुस्खे
 
-### Tag givers automatically
+### दाताओं को स्वचालित रूप से टैग करें
 
-- **Trigger** — B1: New Donation
-- **Action** — B1: Find Person (lookup by `personId`) email को प्राप्त करने के लिए
-- **Action** — Mailchimp: Add Subscriber to Tag (tag `Gave-2026`)
+- **ट्रिगर** -- B1: नया दान
+- **कार्रवाई** -- B1: व्यक्ति खोजें (`personId` द्वारा लुकअप) ईमेल प्राप्त करने के लिए
+- **कार्रवाई** -- Mailchimp: टैग में ग्राहक जोड़ें (टैग `Gave-2026`)
 
-### Drop a group-specific welcome series
+### एक समूह-विशिष्ट स्वागत श्रृंखला जारी करें
 
-- **Trigger** — B1: New Group Member, filtered by `data.groupId`
-- **Action** — Mailchimp: Add Subscriber to Tag named after group; अपने existing automation को उस tag से trigger करें
+- **ट्रिगर** -- B1: नया समूह सदस्य, `data.groupId` द्वारा फ़िल्टर किया गया
+- **कार्रवाई** -- Mailchimp: समूह के नाम पर टैग में ग्राहक जोड़ें; उस टैग से अपने मौजूदा स्वचालन को ट्रिगर करें
 
-### Two-way: नए Mailchimp signups B1 contacts बन जाते हैं
+### दोतरफा: नए Mailchimp साइन-अप B1 संपर्क बन जाते हैं
 
-- **Trigger** — Mailchimp: New Subscriber
-- **Action** — B1: Create Person (map First/Last/Email)
+- **ट्रिगर** -- Mailchimp: नया ग्राहक
+- **कार्रवाई** -- B1: व्यक्ति बनाएं (पहला/अंतिम/ईमेल मैप करें)
 
-## Make Alternative
+## विकल्प बनाएं
 
-Make का [Mailchimp app](https://www.make.com/en/integrations/mailchimp) 44 modules को cover करता है — wiring identical है, B1 *Watch Events* trigger को Zapier के जगह replace करते हैं। B1 side के लिए [Make overview doc](../make) देखें।
+Make का [Mailchimp ऐप](https://www.make.com/en/integrations/mailchimp) 44 मॉड्यूल को कवर करता है -- वायरिंग समान है, B1 *घटनाओं को देखें* ट्रिगर Zapier के स्थान पर। B1 पक्ष के लिए [Make अवलोकन दस्तावेज़](../make) देखें।
 
-## Limits & Notes
+## सीमाएं और नोट्स
 
-- **Mailchimp का free tier contacts और audiences को cap करता है** — एक Zap जो एक free audience को अपनी limit के past flood करता है वह `4xx Member limit reached` के साथ error करना start करेगा। Mailchimp logs यह obvious बनाता है।
-- **Mailchimp deduplicates by email**, तो same B1 person पर एक Zap को फिर से run करने से उन्हें in place update किया जाता है; यह duplicates नहीं बनाता।
-- **Mailchimp से Unsubscribes B1 में वापस flow नहीं होते।** यदि आप Mailchimp unsubscribes को B1 के "Send Mail" preference को clear करना चाहते हैं, तो explicitly reverse Zap को बनाएं।
+- **Mailchimp का मुक्त टीयर संपर्क और दर्शकों को कैप करता है** -- एक Zap जो एक मुक्त दर्शक को इसकी सीमा से अधिक बाढ़ भर देता है तो `4xx Member limit reached` के साथ त्रुटि शुरू कर देगा। Mailchimp के लॉग यह स्पष्ट करते हैं।
+- **Mailchimp ईमेल द्वारा डेडुप्लिकेट करता है**, इसलिए एक ही B1 व्यक्ति पर Zap को फिर से चलाना उन्हें जगह में अपडेट करता है; यह डुप्लिकेट नहीं बनाता है।
+- **Mailchimp से अनसदस्य न करें B1 में वापस प्रवाहित न हों।** यदि आप Mailchimp अनसदस्य को B1 के "मेल भेजें" प्राथमिकता को स्पष्ट करना चाहते हैं, तो रिवर्स Zap को स्पष्ट रूप से बनाएं।
 
 ## समस्या निवारण
 
-- **Zap कभी fire नहीं होता** — `Settings → Developer → Webhooks` को `Zapier — person.created` row के लिए check करें। यदि absent, तो Zap को चालू करते समय API कुंजी में `settings:write` गायब था। Re-mint, फिर से connect, Zap को toggle off और on करें।
-- **Add/Update पर `Member exists` warning** — action को *Add Subscriber* से *Add/Update Subscriber* में switch करें (verb महत्वपूर्ण है)। upsert variant idempotent है।
-- **First name / last name blank के माध्यम से आते हैं** — B1 का `data.name.first` और `data.name.last` केवल populate होता है यदि उन fields को person पर set किया जाता है। `data.name.display` को fallback के रूप में map करें।
+- **Zap कभी फायर नहीं होता** -- `Zapier -- person.created` पंक्ति के लिए `सेटिंग्स → डेवलपर → वेबहुक` की जांच करें। यदि अनुपस्थित है, तो Zap चालू होने पर API कुंजी में `settings:write` की कमी थी। फिर से बनाएं, फिर से कनेक्ट करें, Zap को बंद और चालू करें।
+- **Add/Update पर `Member exists` चेतावनी** -- कार्रवाई को *ग्राहक जोड़ें* से *ग्राहक जोड़ें/अपडेट करें* में स्विच करें (क्रिया मायने रखता है)। upsert वेरिएंट idempotent है।
+- **पहला नाम / अंतिम नाम खाली आता है** -- B1 के `data.name.first` और `data.name.last` केवल तभी भरे जाते हैं यदि उन फ़ील्ड को व्यक्ति पर सेट किया जाता है। फ़ॉलबैक के रूप में `data.name.display` को मैप करें।
 
 ## यह भी देखें
 
-- [Zapier (overview)](../zapier) — हर Zapier recipe का B1 side
-- [Make (overview)](../make) — समान विचार, visual builder
-- [Webhooks (developer reference)](/docs/developer/api/webhooks#event-catalog)
+- [Zapier (अवलोकन)](../zapier) -- प्रत्येक Zapier नुस्खे का B1 पक्ष
+- [Make (अवलोकन)](../make) -- समान विचार, दृश्य बिल्डर
+- [वेबहुक (डेवलपर संदर्भ)](/docs/developer/api/webhooks#event-catalog)

@@ -6,67 +6,76 @@ title: "Gruppengespräche"
 
 <div class="article-intro">
 
-Der Tab „Conversations" auf Ihrer Gruppenseite ist ein Raum, in dem Gruppenmitglieder Nachrichten posten und miteinander interagieren können. Verwenden Sie Gespräche, um Themen zu diskutieren, Aktualisierungen zu teilen und zwischen Treffen mit Ihrer Gruppe verbunden zu bleiben.
+Die Registerkarte Gespräche auf Ihrer Gruppenseite ist ein Raum, in dem Gruppenmitglieder Nachrichten posten und miteinander interagieren können. Nutzen Sie Gespräche, um Themen zu diskutieren, Aktualisierungen zu teilen und zwischen den Treffen mit Ihrer Gruppe verbunden zu bleiben.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Sie müssen in Ihrem B1.church-Konto [angemeldet](../getting-started/logging-in.md) sein.
-- Sie müssen Mitglied der Gruppe sein, um auf den Tab „Conversations" zuzugreifen. Weitere Informationen zum Beitritt zu einer Gruppe finden Sie in den [Gruppendetails](./group-details.md).
+- Sie müssen [angemeldet](../getting-started/logging-in.md) sein in Ihrem B1.church-Konto.
+- Sie müssen ein Mitglied der Gruppe sein, um auf die Registerkarte Gespräche zuzugreifen. Siehe [Gruppendetails](./group-details.md), um einer Gruppe beizutreten.
 
 </div>
 
 ## Auf Gespräche zugreifen
 
-1. Navigieren Sie zur Seite mit Gruppendetails, indem Sie auf eine Gruppe von der [Gruppenseite](./browsing-groups.md) klicken.
+1. Navigieren Sie zur Detailseite der Gruppe, indem Sie auf eine Gruppe auf der [Gruppenseite](./browsing-groups.md) klicken.
 2. Stellen Sie sicher, dass Sie angemeldet sind.
-3. Klicken Sie auf den Tab **Conversations** in der Seitenleiste.
+3. Klicken Sie auf die Registerkarte **Gespräche** in der Seitenleiste.
 
 ## Diskussionen und Ankündigungen
 
-Der Tab „Conversations" kann zwei Sub-Tabs anzeigen:
+Die Registerkarte Gespräche kann zwei Unter-Registerkarten anzeigen:
 
-- **Discussions** – Ein Raum, in dem jedes Gruppenmitglied Nachrichten posten und auf andere antworten kann. Dies ist die Standardansicht und ist immer verfügbar.
-- **Announcements** – Nachrichten, die von Gruppenleiter gepostet werden und wichtig für alle Mitglieder sind. Reguläre Mitglieder können Ankündigungen lesen, aber nur Leiter können sie erstellen.
+- **Diskussionen** — Ein Raum, in dem jedes Gruppenmitglied Nachrichten posten und auf andere antworten kann. Dies ist die Standardansicht und ist immer verfügbar.
+- **Ankündigungen** — Nachrichten, die von Gruppenführern gepostet werden und wichtig für alle Mitglieder sind. Normale Mitglieder können Ankündigungen lesen, aber nur Führungspersonen können diese erstellen.
 
-Wenn es keine Ankündigungen gibt und Sie kein Leiter sind, sehen Sie nur die Ansicht „Discussions" ohne die Tab-Leiste.
+Wenn keine Ankündigungen vorhanden sind und Sie kein Führungsmensch sind, sehen Sie nur die Diskussionsansicht ohne die Registerkarten-Leiste.
 
-## Nachricht posten
+## Eine Nachricht posten
 
-1. Öffnen Sie den Tab **Conversations** auf Ihrer Gruppenseite.
-2. Stellen Sie sicher, dass Sie auf dem Sub-Tab **Discussions** sind (wenn die Tab-Leiste sichtbar ist).
+1. Öffnen Sie die Registerkarte **Gespräche** auf Ihrer Gruppenseite.
+2. Stellen Sie sicher, dass Sie auf der Unter-Registerkarte **Diskussionen** sind (falls die Registerkarten-Leiste sichtbar ist).
 3. Geben Sie Ihre Nachricht in das Textfeld ein.
-4. Senden Sie Ihre Nachricht, um sie mit der Gruppe zu teilen.
+4. Reichen Sie Ihre Nachricht ein, um sie mit der Gruppe zu teilen.
 
-Ihre Nachricht ist für alle Mitglieder der Gruppe sichtbar.
+Ihre Nachricht wird für alle Mitglieder der Gruppe sichtbar sein.
 
-## Bearbeitung oder Löschung Ihrer Nachrichten
+## Ihre Nachrichten bearbeiten oder löschen
 
-Sie können jede von Ihnen gepostete Nachricht bearbeiten oder löschen:
+Sie können jede Nachricht, die Sie gepostet haben, bearbeiten oder löschen:
 
-1. Bewegen Sie den Mauszeiger über Ihre Nachricht (oder tippen Sie sie auf Mobilgeräten an), um die Schaltfläche **more options** (⋮) anzuzeigen.
+1. Bewegen Sie die Maus über Ihre Nachricht (oder tippen Sie sie auf Mobilgeräten an), um die Schaltfläche **Weitere Optionen** (⋮) anzuzeigen.
 2. Klicken Sie auf die Schaltfläche, um das Nachrichtenmenü zu öffnen.
-3. Wählen Sie **Edit**, um den Nachrichtentext zu ändern, oder **Delete**, um ihn zu entfernen.
-   - Beim Bearbeiten wird der Nachrichtentext in das Eingabefeld zurück geladen. Nehmen Sie Ihre Änderungen vor und senden Sie sie ab.
-   - Beim Löschen erscheint ein Bestätigungsdialog. Klicken Sie auf **Confirm**, um die Nachricht dauerhaft zu entfernen.
+3. Wählen Sie **Bearbeiten**, um den Nachrichtentext zu ändern, oder **Löschen**, um ihn zu entfernen.
+   - Beim Bearbeiten wird der Nachrichtentext in das Eingabefeld geladen. Nehmen Sie Ihre Änderungen vor und senden Sie sie, um sie zu speichern.
+   - Beim Löschen wird ein Bestätigungsdialog angezeigt. Klicken Sie auf **Bestätigen**, um die Nachricht dauerhaft zu entfernen.
 
 :::info
-Sie können nur Ihre eigenen Nachrichten bearbeiten oder löschen. Nachrichten, die von anderen Mitgliedern gepostet wurden, zeigen nicht die Bearbeitungs-/Löschoptionen an.
+Sie können nur Ihre eigenen Nachrichten bearbeiten oder löschen. Nachrichten, die von anderen Mitgliedern gepostet werden, zeigen nicht die Bearbeitungs-/Löschoptionen.
 :::
+
+## Auf Nachrichten reagieren
+
+Im Gruppenchat können Sie auf jede Nachricht mit einem Emoji reagieren:
+
+1. Tippen Sie auf eine Nachricht oder bewegen Sie die Maus darüber und wählen Sie **Reaktion hinzufügen**.
+2. Wählen Sie eines der sechs Emojis: 👍 ❤️ 😂 🎉 🙏 😮.
+
+Reaktionen werden als kleine Chips unter der Nachricht mit einer Anzahl angezeigt, wie viele Personen jede verwendet haben. Ihre eigene Reaktion ist hervorgehoben — tippen Sie auf den Chip (oder wählen Sie das gleiche Emoji erneut), um ihn zu entfernen, oder wählen Sie ein anderes Emoji, um eine weitere hinzuzufügen. Reaktionen werden live für alle im Chat angezeigt.
 
 :::tip
-Gruppengespräche erscheinen auch auf Ihrer [Timeline](../community/timeline.md), sodass Sie sich mit Diskussionen auf dem Laufenden halten können, ohne jede Gruppe einzeln zu besuchen.
+Gruppengespräche werden auch auf Ihrer [Timeline](../community/timeline.md) angezeigt, sodass Sie Diskussionen verfolgen können, ohne jede Gruppe einzeln zu besuchen.
 :::
 
-## Leiter-Funktionen
+## Führungs-Funktionen
 
-Wenn Sie ein Gruppenleiter sind, haben Sie zusätzliche Funktionen im Tab „Conversations":
+Wenn Sie ein Gruppenführer sind, haben Sie zusätzliche Möglichkeiten in der Registerkarte Gespräche:
 
-- **Ankündigungen posten** – Wechseln Sie zum Sub-Tab **Announcements** und posten Sie Nachrichten, die alle Gruppenmitglieder lesen können.
-- **In Diskussionen teilnehmen** – Sie können auch an normalen Diskussionen wie jedes andere Mitglied teilnehmen.
+- **Ankündigungen posten** — Wechseln Sie zur Unter-Registerkarte **Ankündigungen** und posten Sie Nachrichten, die alle Gruppenmitglieder lesen können.
+- **Diskussionen posten** — Sie können auch an normalen Diskussionen wie jedes andere Mitglied teilnehmen.
 
 :::info
-Gespräche sind spezifisch für jede Gruppe. Nachrichten, die Sie in einer Gruppe posten, erscheinen nicht in den Gesprächen einer anderen Gruppe.
+Gespräche sind spezifisch für jede Gruppe. Nachrichten, die Sie in einer Gruppe posten, werden nicht in Gesprächen einer anderen Gruppe angezeigt.
 :::

@@ -1,44 +1,46 @@
----
-title: "Veranstaltungen"
+﻿---
+title: "Ereignisse"
 ---
 
-# Veranstaltungen
+# Ereignisse
 
 <div class="article-intro">
 
-Der Bereich „Events" auf B1.church ermöglicht es Ihnen, bevorstehende Kirchenveranstaltungen zu durchsuchen und sich direkt auf der Website für diese zu registrieren. Wenn Ihre Kirche die Registrierung für eine Veranstaltung aktiviert, können Sie sich selbst und Ihre Familienmitglieder in nur wenigen Schritten anmelden.
+Der Bereich "Ereignisse" auf B1.church ermöglicht es Ihnen, bevorstehende Kirchenereignisse zu durchsuchen und sich direkt von der Website dafür anzumelden. Wenn Ihre Kirche die Registrierung für ein Ereignis aktiviert, können Sie sich selbst und Ihre Familienmitglieder in nur wenigen Schritten anmelden -- und bei bezahlten Ereignissen können Sie Teilnehmer-Typen und Optionen auswählen, Rabattcodes anwenden und sicher als Teil der Anmeldung bezahlen.
 
 </div>
 
-## Veranstaltungen durchsuchen
+## Durchsuchen von Ereignissen
 
-Veranstaltungen erscheinen im Kirchenkalender. Wenn Sie eine Veranstaltung öffnen, die die Registrierung aktiviert hat, wird eine Schaltfläche **Register for this Event** neben den Veranstaltungsdetails angezeigt.
+Ereignisse erscheinen im Kirchenkalender. Wenn Sie ein Ereignis mit aktivierter Registrierung öffnen, wird eine Schaltfläche **Für dieses Ereignis registrieren** zusammen mit den Ereignisdetails angezeigt.
 
-Veranstaltungen mit aktivierter Registrierung zeigen:
+Ereignisse mit aktivierter Registrierung zeigen:
 
-- **Ereignistitel und Beschreibung** – Worum es bei der Veranstaltung geht.
-- **Datum und Uhrzeit** – Wann die Veranstaltung stattfindet.
-- **Registrierungsschaltfläche** – Eine blaue Schaltfläche, die Sie zum Registrierungsformular führt.
+- **Ereignistitel und Beschreibung** -- Worum es bei dem Ereignis geht.
+- **Datum und Uhrzeit** -- Wann das Ereignis stattfindet.
+- **Registrierungs-Schaltfläche** -- Eine blaue Schaltfläche, die Sie zum Registrierungsformular führt.
 
 ## Registrierungsstatus
 
-Veranstaltungen können je nach Zeitpunkt und Kapazität unterschiedliche Status anzeigen:
+Ereignisse können je nach Timing und Kapazität unterschiedliche Status anzeigen:
 
-- **Open** – Die Registrierung ist verfügbar und Sie können sich anmelden.
-- **Not Yet Open** – Das Registrierungsfenster hat nicht gestartet. Schauen Sie nach dem Öffnungsdatum vorbei.
-- **Closed** – Die Registrierungsfrist ist abgelaufen.
-- **Full** – Alle verfügbaren Plätze wurden belegt.
+- **Offen** -- Die Registrierung ist verfügbar und Sie können sich anmelden.
+- **Noch nicht offen** -- Das Registrierungsfenster hat nicht begonnen. Überprüfen Sie nach dem Öffnungsdatum.
+- **Geschlossen** -- Die Registrierungsfrist ist abgelaufen.
+- **Voll** -- Alle verfügbaren Stellen wurden belegt.
 
 :::tip
-Wenn eine Veranstaltung voll ist, schauen Sie später vorbei – Plätze können frei werden, wenn sich jemand von seiner Registrierung abmeldet.
+Wenn ein Ereignis voll ist, können Sie möglicherweise trotzdem die **Warteliste** beitreten, wenn Ihre Kirche sie aktiviert hat -- Sie werden automatisch per E-Mail benachrichtigt, wenn ein Platz frei wird. Andernfalls überprüfen Sie später; Stellen können frei werden, wenn jemand storniert.
 :::
 
-## Was Sie benötigen
+## Was Sie brauchen
 
-- Ein B1.church-Konto (oder Sie können sich als Gast registrieren)
+- Ein B1.church-Konto (oder Sie können sich als Gast anmelden)
 - Zugang zur B1.church-Website Ihrer Kirche
 
 ## Weitere Informationen
 
-- [Registrierung für Veranstaltungen](./registering) – Schritt-für-Schritt-Anleitung zur Anmeldung für eine Veranstaltung
-- [Self Check-In](../checkin/self-checkin) – Checken Sie sich ein, wenn Sie die Veranstaltung erreichen
+- [Registrierung für Ereignisse](./registering) -- Schritt-für-Schritt-Anleitung zur Anmeldung für ein Ereignis
+- [Meine Registrierungen](./my-registrations) -- Sehen Sie Ihre Registrierungen, zahlen Sie Guthaben, bearbeiten Sie oder stornieren Sie
+- [Ereignisse & Räume anfordern](./requesting-events) -- Fordern Sie ein Ereignis mit den Räumen und Ressourcen an, die es benötigt
+- [Selbsteinchecken](../checkin/self-checkin) -- Loggen Sie sich ein, wenn Sie beim Ereignis ankommen

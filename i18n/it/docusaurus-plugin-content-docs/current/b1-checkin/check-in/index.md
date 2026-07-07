@@ -1,39 +1,40 @@
 ---
-title: "Flusso di Check-In"
+title: "Flusso di Lavoro della Registrazione"
 ---
 
-# Flusso di Check-In
+# Flusso di Lavoro della Registrazione
 
 <div class="article-intro">
 
-Il processo di check-in in B1 Church Checkin segue un flusso semplice, passo dopo passo. Un membro della chiesa si avvicina al kiosk, trova la propria famiglia, conferma le assegnazioni di gruppo e fa il check-in -- il tutto in meno di un minuto. Questa sezione copre ogni passaggio dell'esperienza di check-in al kiosk.
+Il processo di registrazione in B1 Church Checkin segue un flusso semplice passo dopo passo. Un membro della chiesa si avvicina al chiosco, trova la sua famiglia, conferma gli assegnamenti di gruppo e si registra -- tutto in meno di un minuto. Questa sezione copre ogni passaggio dell'esperienza di registrazione del chiosco.
 
 </div>
 
-## Il Flusso di Check-In in Sintesi
+## Il Flusso di Registrazione in Breve
 
-1. **[Seleziona un servizio](./selecting-service)** -- Scegli a quale servizio stai partecipando (es. Domenica AM, Domenica PM, Infrasettimanale).
+1. **[Seleziona un servizio](./selecting-service)** -- Scegli quale servizio stai frequentando (ad es. domenica AM, domenica PM, infrasettimanale).
 2. **[Cerca la tua famiglia](./looking-up-members)** -- Cerca per numero di telefono o cognome per trovarti nel sistema.
-3. **[Rivedi il tuo nucleo familiare](./household-review)** -- Visualizza tutti i membri della famiglia e le loro assegnazioni di gruppo correnti.
-4. **[Assegna i gruppi](./group-assignment)** -- Scegli a quale classe o gruppo ogni membro della famiglia deve partecipare per ogni orario di servizio.
-5. **[Aggiungi ospiti](./adding-guests)** (opzionale) -- Aggiungi un visitatore al tuo nucleo familiare se ti accompagna.
-6. **[Completa il check-in](./completing-checkin)** -- Tocca il pulsante di check-in per inviare le presenze e stampare le etichette.
+3. **[Rivedi la tua famiglia](./household-review)** -- Visualizza tutti i membri della famiglia e i loro attuali assegnamenti di gruppo.
+4. **[Assegna i gruppi](./group-assignment)** -- Scegli quale classe o gruppo ogni membro della famiglia dovrebbe frequentare per ogni ora di servizio.
+5. **[Aggiungi ospiti](./adding-guests)** (opzionale) -- Aggiungi un visitatore alla tua famiglia se si sta unendo a te.
+6. **[Completa la registrazione](./completing-checkin)** -- Tocca il pulsante di registrazione per inviare la partecipazione e stampare le etichette.
+7. **[Ritiro](./checking-out)** (stazioni presidiate) -- Al momento del ritiro, verifica il codice di sicurezza e la persona che ritira, con elenchi di ritiro affidabili, pagina-un-genitore e ristampe di etichette.
 
-Dopo il completamento del check-in, l'app mostra una schermata di successo e torna automaticamente alla schermata di ricerca, pronta per la famiglia successiva.
+Dopo il completamento della registrazione, l'app visualizza una schermata di successo e ritorna automaticamente alla schermata di ricerca, pronta per la famiglia successiva.
 
 :::tip
-L'intero flusso è progettato per essere utilizzato in modo indipendente dai membri della chiesa. I volontari non devono operare il kiosk, anche se avere qualcuno nelle vicinanze per aiutare i visitatori alla prima visita è sempre una buona idea.
+L'intero flusso è progettato per essere utilizzato in modo indipendente dai membri della chiesa. I volontari non hanno bisogno di far funzionare il chiosco, anche se avere qualcuno vicino per aiutare i visitatori per la prima volta è sempre una buona idea.
 :::
 
 ## Prima di Iniziare
 
-Assicurati che quanto segue sia configurato in B1 Admin prima di utilizzare il kiosk di check-in:
+Assicurati che quanto segue sia configurato in B1 Admin prima di utilizzare il chiosco di registrazione:
 
-- **Servizi e orari dei servizi** sono configurati nelle impostazioni delle Presenze. Consulta la [guida alla configurazione delle presenze](../../b1-admin/attendance/setup.md).
-- **Gruppi** sono creati e collegati agli orari di servizio appropriati. Consulta [creazione dei gruppi](../../b1-admin/groups/creating-groups.md).
-- **Impostazioni dei gruppi** sono configurate per la stampa delle etichette: abilita **Print Nametag** per i gruppi che necessitano di etichette con il nome, e **Parent Pickup** per i gruppi dei bambini che necessitano di ricevute di ritiro.
-- **Persone** sono aggiunte al sistema con le associazioni familiari. Consulta [aggiunta di persone](../../b1-admin/people/adding-people.md).
+- I **servizi e gli orari di servizio** sono impostati nelle impostazioni di Attendance. Consulta la [guida alla configurazione della partecipazione](../../b1-admin/attendance/setup.md).
+- I **gruppi** sono creati e collegati agli orari di servizio appropriati. Vedi [creazione di gruppi](../../b1-admin/groups/creating-groups.md).
+- Le **impostazioni del gruppo** sono configurate per la stampa di etichette: abilita **Print Nametag** per i gruppi che hanno bisogno di etichette con nome e **Parent Pickup** per i gruppi di bambini che hanno bisogno di biglietti di ritiro.
+- Le **persone** vengono aggiunte al sistema con associazioni di famiglia. Vedi [aggiunta di persone](../../b1-admin/people/adding-people.md).
 
 :::info
-Se non hai ancora configurato il kiosk stesso, consulta [Per Iniziare](../getting-started/) per le istruzioni su installazione, accesso e configurazione della stampante.
+Se non hai ancora configurato il chiosco stesso, vedi [Getting Started](../getting-started/) per le istruzioni di installazione, accesso e configurazione della stampante.
 :::

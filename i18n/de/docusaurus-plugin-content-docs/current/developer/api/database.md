@@ -6,15 +6,15 @@ title: "Datenbank"
 
 <div class="article-intro">
 
-Die ChurchApps API verwendet eine **Datenbank-pro-Modul**-Architektur. Jedes der sechs Module hat seine eigene MySQL-Datenbank mit einem unabhängigen Connection Pool, was klare Datengrenzen bietet, während alles in einer einzigen Bereitstellung bleibt.
+Die ChurchApps-API verwendet eine **Datenbank-pro-Modul**-Architektur. Jedes der sechs Datenmodule hat seine eigene MySQL-Datenbank mit einem unabhängigen Verbindungspool, was klare Datengrenzen bietet, während alles innerhalb einer einzelnen Bereitstellung bleibt.
 
 </div>
 
 <div class="prereqs">
-<h4>Vor dem Start</h4>
+<h4>Bevor Sie beginnen</h4>
 
 - Installieren Sie **MySQL 8.0+** — siehe [Voraussetzungen](../setup/prerequisites)
-- Konfigurieren Sie Datenbank-Verbindungszeichenfolgen in Ihrer `.env`-Datei — siehe [Umgebungsvariablen](../setup/environment-variables)
+- Konfigurieren Sie Datenbankverbindungszeichenfolgen in Ihrer `.env`-Datei — siehe [Umgebungsvariablen](../setup/environment-variables)
 
 </div>
 
@@ -23,48 +23,51 @@ Die ChurchApps API verwendet eine **Datenbank-pro-Modul**-Architektur. Jedes der
 ```
 Api
 ├── membership_db   ← Personen, Gruppen, Berechtigungen
-├── attendance_db   ← Dienste, Sessions, Aufzeichnungen
+├── attendance_db   ← Dienste, Sitzungen, Aufzeichnungen
 ├── content_db      ← Seiten, Abschnitte, Elemente
 ├── giving_db       ← Spenden, Fonds, Zahlungen
-├── messaging_db    ← Unterhaltungen, Benachrichtigungen
+├── messaging_db    ← Gespräche, Benachrichtigungen
 └── doing_db        ← Aufgaben, Pläne, Zuweisungen
 ```
 
-### Wichtige Designentscheidungen
+### Wichtige Entwurfsentscheidungen
 
-- **Eine Datenbank pro Modul** — Jedes Modul verwaltet seine eigene MySQL-Datenbank mit einem dedizierten Connection Pool (`EnhancedPoolHelper`). Dies hält Module entkoppelt und ermöglicht unabhängige Schemaentwicklung.
-- **Repository-Muster mit direktem SQL** — Es gibt kein ORM. Alle Datenzugriffe erfolgen über Repository-Klassen, die SQL direkt mit `DB.query()` ausführen. Dies gibt volle Kontrolle über Query-Performance und Verhalten.
-- **Multi-Tenant nach Design** — Jede Query wird durch `churchId` begrenzt. Alle Tabellen enthalten eine `churchId`-Spalte, und die Repository-Schicht erzwingt Tenant-Isolation automatisch.
+- **Eine Datenbank pro Modul** — Jedes Modul verwaltet seine eigene MySQL-Datenbank mit einem dedizierten Verbindungspool (verwaltet durch `KyselyPool`). Dies hält Module entkoppelt und ermöglicht eine unabhängige Schemaentwicklung.
+- **Ausschließliches Eigentum** — Die Tabellen eines Moduls werden nur vom eigenen Code dieses Moduls gelesen und geschrieben. Wenn ein anderes Modul die Daten benötigt, ruft es das Gateway des besitzenden Moduls auf, anstatt die Tabellen selbst abzufragen — siehe [Modulübergreifende Kommunikation](./module-structure#cross-module-communication).
+- **Repository-Muster ohne ORM** — Alle Datenzugriffe laufen durch Repository-Klassen, die typisierte SQL mit dem Kysely-Abfragegenerator gegen das Schema des Moduls erstellen. Dies gibt vollständige Kontrolle über Abfrageleistung und -verhalten.
+- **Multi-Tenant nach Design** — Jede Abfrage ist auf `churchId` begrenzt. Alle Tabellen enthalten eine `churchId`-Spalte, und die Repository-Ebene erzwingt Mandantenisolation automatisch.
 
 ## Verbindungszeichenfolgen
 
-Jede Datenbankverbindung des Moduls wird in `.env` unter Verwendung von Standard-MySQL-Verbindungszeichenfolgen-Format konfiguriert:
+Jede Datenbankverbindung eines Moduls wird in `.env` mit dem standardmäßigen MySQL-Verbindungszeichenfolgen-Format konfiguriert:
 
 ```
 mysql://user:password@host:port/database
 ```
 
-Zum Beispiel könnte eine lokale Entwicklung so aussehen:
+Ein lokales Entwicklungssetup könnte zum Beispiel so aussehen:
+
+Jedes Modul liest seine Verbindung aus einer Umgebungsvariablen mit dem Namen `<MODULE>_CONNECTION_STRING`:
 
 ```env
-MEMBERSHIP_DB=mysql://root:password@localhost:3306/churchapps_membership
-ATTENDANCE_DB=mysql://root:password@localhost:3306/churchapps_attendance
-CONTENT_DB=mysql://root:password@localhost:3306/churchapps_content
-GIVING_DB=mysql://root:password@localhost:3306/churchapps_giving
-MESSAGING_DB=mysql://root:password@localhost:3306/churchapps_messaging
-DOING_DB=mysql://root:password@localhost:3306/churchapps_doing
+MEMBERSHIP_CONNECTION_STRING=mysql://root:password@localhost:3306/churchapps_membership
+ATTENDANCE_CONNECTION_STRING=mysql://root:password@localhost:3306/churchapps_attendance
+CONTENT_CONNECTION_STRING=mysql://root:password@localhost:3306/churchapps_content
+GIVING_CONNECTION_STRING=mysql://root:password@localhost:3306/churchapps_giving
+MESSAGING_CONNECTION_STRING=mysql://root:password@localhost:3306/churchapps_messaging
+DOING_CONNECTION_STRING=mysql://root:password@localhost:3306/churchapps_doing
 ```
 
 :::info
-In Produktion werden Verbindungszeichenfolgen im AWS SSM Parameter Store gespeichert und von der `Environment`-Klasse beim Start gelesen.
+In der Produktion werden Verbindungszeichenfolgen im AWS SSM Parameter Store gespeichert und von der `Environment`-Klasse beim Start gelesen.
 :::
 
 ## Schema-Skripte
 
-Datenbank-Schema-Skripte befinden sich im Verzeichnis `tools/dbScripts/`, organisiert nach Modul:
+Tabellenschemata werden als Kysely-Migrationen im Verzeichnis `tools/migrations/` definiert, organisiert nach Modul:
 
 ```
-tools/dbScripts/
+tools/migrations/
 ├── membership/
 ├── attendance/
 ├── content/
@@ -73,7 +76,7 @@ tools/dbScripts/
 └── doing/
 ```
 
-Diese Skripte definieren Tabellenerstellung, Indizes und alle erforderlichen Seed-Daten.
+Migrationen definieren Tabellenerstellung, Indizes und Schemaänderungen. Das Verzeichnis `tools/dbScripts/` enthält Demo- und Seed-Daten, die oben auf dem Schema geladen werden können.
 
 ## Datenbankinitialisierung
 
@@ -83,45 +86,48 @@ Diese Skripte definieren Tabellenerstellung, Indizes und alle erforderlichen See
 npm run initdb
 ```
 
-Dies erstellt alle sechs Datenbanken und führt die Schema-Skripte für jede aus.
+Dies erstellt alle sechs Datenbanken und führt die Migrationen für jede aus.
 
 ### Ein einzelnes Modul initialisieren
 
 ```bash
-npm run initdb:membership
-npm run initdb:attendance
-npm run initdb:content
-npm run initdb:giving
-npm run initdb:messaging
-npm run initdb:doing
+npm run initdb -- --module=membership
 ```
 
 :::tip
-Beim Arbeiten mit einem bestimmten Modul können Sie nur die Datenbank dieses Moduls neu initialisieren, ohne andere zu beeinflussen.
+Wenn Sie an einem bestimmten Modul arbeiten, können Sie die Datenbank dieses Moduls neu initialisieren, ohne die anderen zu beeinflussen.
 :::
 
 ## Datenzugriffsmuster
 
-Repositories greifen auf Daten über die `DB.query()`-Methode zu. Eine typische Repository-Methode sieht so aus:
+Repositories erstellen Abfragen mit dem Kysely-Abfragegenerator gegen das typisierte Datenbankschema des Moduls, das über die `getDb()`-Funktion des Moduls erhalten wird. Eine typische Repository-Methode sieht wie folgt aus:
 
 ```typescript
-public async loadByChurchId(churchId: string) {
-  return DB.query("SELECT * FROM people WHERE churchId=?", [churchId]);
+public async loadAll(churchId: string) {
+  return getDb().selectFrom("people").selectAll()
+    .where("churchId", "=", churchId)
+    .execute();
 }
 ```
 
-Repositories werden über `RepositoryManager` erhalten:
+Repositories werden über `RepoManager` erhalten:
 
 ```typescript
-const repos = RepositoryManager.getRepositories<MembershipRepositories>("membership");
-const people = await repos.person.loadByChurchId(churchId);
+const repos = await RepoManager.getRepos<Repos>("membership");
+const people = await repos.person.loadAll(churchId);
 ```
 
 :::warning
-Beziehen Sie immer `churchId` in Ihre Queries ein, um Multi-Tenant-Isolation zu wahren. Fragen Sie nie über Tenants hinweg ab, es sei denn, Sie haben einen spezifischen, autorisierten Grund dafür.
+Fügen Sie immer `churchId` in Ihre Abfragen ein, um die Multi-Tenant-Isolation zu erhalten. Fragen Sie nie Mandanten übergreifend ab, es sei denn, Sie haben einen bestimmten, autorisierten Grund dafür.
 :::
+
+## Modulübergreifende Verweise
+
+Da die Daten jedes Moduls in einer separaten Datenbank vorhanden sind, gibt es keine Fremdschlüssel oder SQL-Joins über Modulgrenzen hinweg. Ein Datensatz, der sich auf Daten eines anderen Moduls bezieht, speichert die ID dieses Datensatzes — beispielsweise trägt eine Spende in der Spendendatenbank die `personId` einer Person in der Mitgliedschaftsdatenbank — und jede modulübergreifende Zusammensetzung erfolgt in Anwendungscode.
+
+Diese Einschränkung ist es, was die Modulgrenzen real macht: Jedes Schema kann sich unabhängig entwickeln, die Datenbank eines Moduls kann auf seinen eigenen Server verschoben werden, und ein Modul könnte sogar in einen eigenständigen Service extrahiert werden, ohne freigegebene Tabellen oder Datenbanken übergreifende Abfragen zu entwirren.
 
 ## Verwandte Artikel
 
 - **[Modulstruktur](./module-structure)** — Wie Controller und Repositories in jedem Modul organisiert sind
-- **[Lokales API-Setup](./local-setup)** — Vollständiger Schritt-für-Schritt-Setup-Leitfaden
+- **[Lokales API-Setup](./local-setup)** — Vollständige Schritt-für-Schritt-Anleitung zum Einrichten

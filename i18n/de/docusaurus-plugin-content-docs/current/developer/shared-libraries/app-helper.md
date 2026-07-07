@@ -1,80 +1,52 @@
----
+﻿---
 title: "AppHelper"
 ---
 
 # AppHelper
 
-<div class="article-intro">
+Das Paket `@churchapps/apphelper` bietet freigegebene React-Komponenten und Hilfsfunktionen für alle ChurchApps-Web-Anwendungen. Es ist ein einzelnes veröffentlichtes Paket, das Feature-Module durch Subpath-Einstiegspunkte verfügbar macht.
 
-Die `@churchapps/apphelper*`-Packages bieten gemeinsame React-Komponenten und Utilities für alle ChurchApps-Web-Anwendungen. AppHelper ist als Monorepo-Workspace mit sechs Packages strukturiert, die Core-Komponenten, Authentifizierung, Spenden, Formulare, Markdown und Website/CMS-Funktionalität abdecken.
+## Einstiegspunkte
 
-</div>
+Das Paket definiert Subpath-Exporte in `package.json`:
 
-<div class="prereqs">
-<h4>Vor dem Start</h4>
+| Einstiegspunkt | Inhalt |
+|-------------|----------|
+| `@churchapps/apphelper` | Kern-Komponenten, Helfer und Hooks |
+| `@churchapps/apphelper/login` | Login- und Registrierungs-UI |
+| `@churchapps/apphelper/donations` | Spenden- und Spendendkomponenten |
+| `@churchapps/apphelper/forms` | Formulareinreichungskomponenten |
+| `@churchapps/apphelper/markdown` | Markdown- und HTML-Editoren |
+| `@churchapps/apphelper/website` | Website-Builder und CMS-Komponenten |
 
-- Installieren Sie **Node.js** und **Git** — siehe [Voraussetzungen](../setup/prerequisites)
-- Machen Sie sich mit dem [`npm link`-Workflow](./index.md) für lokale Entwicklung vertraut
+## Wer nutzt was
 
-</div>
+| Export-Bereich | Was es bietet | Verwendet von |
+|---|---|---|
+| Root -- Kern | `DisplayBox`, `InputBox`, `Loading`, `PageHeader` | B1Admin, B1App, B1Transfer, LessonsApp |
+| Root -- Site-Chrome | `SiteHeader` (Nav, Benutzermenü, Benachrichtigungen) | B1Admin, B1Transfer, LessonsApp |
+| Root -- Admin-Editoren | `ImageEditor`, `HelpIcon` | B1Admin |
+| Root -- Echtzeit | `SocketHelper`, `SubscriptionManager` | B1Admin, B1App |
+| `./login` | `LoginPage`, `LogoutPage` | B1Admin, B1App, B1Transfer |
+| `./markdown` | `MarkdownEditor`, `MarkdownPreview` | B1Admin, B1App, LessonsApp |
+| `./donations` | `MultiGatewayDonationForm`, `RecurringDonations` | B1Admin, B1App |
+| `./forms` | `FormSubmissionEdit` | B1Admin, B1App |
+| `./website` | Page-Rendering-Kern, Elemente, Widgets | B1Admin, B1App |
 
-## Packages
+## Lokale Entwicklung
 
-| Package | Beschreibung |
-|---------|-------------|
-| `@churchapps/apphelper` | Core-Komponenten und Utilities |
-| `@churchapps/apphelper-login` | Login- und Registrierungs-UI |
-| `@churchapps/apphelper-donations` | Spenden- und Donations-Komponenten |
-| `@churchapps/apphelper-forms` | Form-Builder-Komponenten |
-| `@churchapps/apphelper-markdown` | Markdown-Editor und -Renderer |
-| `@churchapps/apphelper-website` | Website- und CMS-Komponenten |
+```bash
+git clone https://github.com/ChurchApps/Packages.git
+cd Packages && yarn install
+cd apphelper && yarn dev
+```
 
-## Setup für lokale Entwicklung
-
-1. Repository klonen:
-
-   ```bash
-   git clone https://github.com/ChurchApps/AppHelper.git
-   ```
-
-2. Abhängigkeiten installieren:
-
-   ```bash
-   cd AppHelper && npm install
-   ```
-
-3. Alle Packages bauen und Vite-Playground starten:
-
-   ```bash
-   npm run playground:reload
-   ```
-
-   Dies baut jedes Package im Workspace und startet dann den Playground-Dev-Server bei **http://localhost:3001**.
-
-:::tip
-Der Playground ist der schnellste Weg zur Entwicklung und zum Testen von AppHelper-Komponenten. Er hot-reloaded den Vite-Dev-Server, sodass Sie Änderungen in Echtzeit sehen können.
-:::
+Der Playground-Dev-Server startet auf http://localhost:3001.
 
 ## Veröffentlichung
 
-Ein einzelnes Package veröffentlichen:
-
-```bash
-npm run publish:apphelper
-```
-
-Alle Packages veröffentlichen:
-
-```bash
-npm run publish:all
-```
+Releases verwenden Changesets. Lesen Sie die Übersicht [Freigegebene Bibliotheken](./index.md) für den vollständigen Fluss.
 
 :::warning
-Beim Veröffentlichen, stellen Sie sicher, die Versionsnummer in der relevanten `package.json`-Datei(en) vor dem Ausführen des Publish-Befehls zu aktualisieren. Alle Packages, die ein geändertes Package abhängen, sollten auch aktualisiert werden.
+Entfernen Sie keinen Export, bis der Replacement veröffentlicht und alle Verbraucher migriert wurden.
 :::
-
-## Verwandte Artikel
-
-- **[Helpers](./helpers)** — Das Basis-Utility-Package, das zusammen mit AppHelper genutzt wird
-- **[Web-Apps](../web-apps/)** — Die Web-Anwendungen, die diese Packages konsumieren
-- **[Gemeinsame Biblioteken-Übersicht](./index.md)** — `npm link`-Workflow und Package-Übersicht

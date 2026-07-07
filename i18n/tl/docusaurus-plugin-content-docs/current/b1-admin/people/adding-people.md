@@ -6,14 +6,14 @@ title: "Pagdaragdag ng mga Tao"
 
 <div class="article-intro">
 
-Ang seksyon ng People ang pundasyon ng B1 Admin — ito ang database ng miyembro ng iyong simbahan. Lahat ng iba pang feature (mga grupo, attendance, donasyon, form) ay nakatali sa mga record ng tao. Iginagabay ka ng guide na ito sa pagdaragdag ng isang tao sa iyong database, pag-edit ng kanilang mga detalye, at pag-link ng mga miyembro ng pamilya sa mga sambahayan.
+Ang seksyon ng People ang pundasyon ng B1 Admin — ito ang database ng miyembro ng iyong simbahan. Lahat ng iba pang feature (mga grupo, attendance, donasyon, form) ay nakatali sa mga record ng tao. Iginagabay ka ng gabay na ito sa pagdaragdag ng isang tao sa iyong database, pag-edit ng kanilang mga detalye, at pag-link ng mga miyembro ng pamilya sa mga sambahayan.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Kailangan mo ng aktibong B1 Admin account na may pahintulot na pamahalaan ang mga tao. Tingnan ang [Mga Role at Pahintulot](roles-permissions.md) kung hindi ka sigurado sa iyong antas ng access.
+- Kailangan mo ng aktibong B1 Admin account na may pahintulot na pamahalaan ang mga tao. Tingnan ang [Mga Papel at Pahintulot](roles-permissions.md) kung hindi ka sigurado sa iyong antas ng access.
 - Kung nagdaragdag ka ng higit sa ilang tao, isaalang-alang ang paggamit ng tool na [CSV Import](importing-data.md) sa halip.
 
 </div>
@@ -39,14 +39,14 @@ Kung nagmi-migrate ka mula sa ibang church management system, ang feature na [Im
 
 Kasama rin sa profile ang ilang mga tab para sa kaugnay na impormasyon:
 
-- **Notes** — Magdagdag ng mga tala tungkol sa tao (pastoral care, follow-up, atbp.)
+- **Notes** — Magdagdag ng mga tala tungkol sa tao (pastoral care, follow-ups, atbp.)
 - **Groups** — Tingnan at pamahalaan ang [membership sa grupo](../groups/group-members.md)
 - **Attendance** — Tingnan ang [mga record ng attendance](../attendance/tracking-attendance.md)
 - **Donations** — Tingnan ang [kasaysayan ng donasyon](../donations/recording-donations.md)
 
 ## Pagtatrabaho sa mga Form
 
-Maaari kang punan ng mga custom form nang direkta mula sa profile ng tao. Ito ay mga user-defined na form na maaari mong buuin sa pamamagitan ng pagsunod sa gabay na [Paglikha ng Mga Form](../forms/creating-forms.md).
+Maaari kang punan ng mga custom form nang direkta mula sa profile ng tao. Ito ay mga user-defined na form na maaari mong buuin sa pamamagit ng pagsunod sa gabay na [Paglikha ng Mga Form](../forms/creating-forms.md).
 
 1. Sa profile ng tao, i-click ang dropdown na **Forms** upang pumili ng form.
 2. I-click ang **Add Form** upang buksan ito.
@@ -54,6 +54,10 @@ Maaari kang punan ng mga custom form nang direkta mula sa profile ng tao. Ito ay
 
 :::info
 Ang mga form na naka-link sa profile ng tao ay gumagamit ng uri ng form na **People**. Kung kailangan mo ng standalone na form (tulad ng event registration), tingnan ang [opsyon na Stand Alone](../forms/creating-forms.md) sa gabay ng mga form.
+:::
+
+:::tip
+Kung kailangan mo lamang na subaybayan ang isa o dalawang dagdag na piraso ng impormasyon sa mga tao — isang petsa, isang numero, isang yes/no na sagot — gumamit ng [Custom Fields](../settings/custom-fields.md) sa halip ng form. Mas mabilis na punan at mahahanap nang direkta sa Advanced Search.
 :::
 
 ## Pamamahala ng mga Sambahayan

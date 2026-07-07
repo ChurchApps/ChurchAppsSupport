@@ -6,7 +6,7 @@ title: "Gerenciando Fundos"
 
 <div class="article-intro">
 
-Os fundos permitem categorizar doações por finalidade para que você possa acompanhar quanto sua igreja recebe para cada área de ministério. Fundos comuns incluem Fundo Geral, Fundo de Construção, Missões e Ministério de Jovens, mas você pode criar quantos precisar.
+Fundos permitem que você categorize doações por finalidade para que possa rastrear quanto sua igreja recebe para cada área de ministério. Fundos comuns incluem Fundo Geral, Fundo de Construção, Missões e Ministério da Juventude, mas você pode criar quantos precisar.
 
 </div>
 
@@ -14,51 +14,56 @@ Os fundos permitem categorizar doações por finalidade para que você possa aco
 <h4>Antes de Começar</h4>
 
 - Você precisará de acesso à seção **Doações** no B1 Admin
-- Decida quais categorias de contribuição sua igreja precisa e se cada uma deve ser dedutível de impostos
+- Decida quais categorias de doações sua igreja precisa e se cada uma deve ser dedutível do imposto
 
 </div>
 
 ## A Página de Fundos
 
-Navegue até **Doações > Fundos** para ver uma lista de todos os seus fundos. Cada linha mostra o nome do fundo e seu status de **dedutibilidade fiscal**, que determina se as doações para esse fundo aparecem nas [declarações de contribuições](giving-statements.md) de fim de ano.
+Navegue até **Doações > Fundos** para ver uma lista de todos os seus fundos. Cada linha mostra o nome do fundo e seu status **dedutível de imposto**, que determina se as doações para esse fundo aparecem nas [declarações de doações](giving-statements.md) de final de ano.
 
 ## Criando um Novo Fundo
 
 1. Clique em **Adicionar Fundo** no topo da página.
-2. Insira um nome para o fundo (por exemplo, "Fundo de Construção").
-3. Marque a caixa **Dedutível de Impostos** se as doações para este fundo devem ser incluídas nas declarações de contribuições.
-4. Clique em **Salvar**.
+2. Digite um nome para o fundo (por exemplo, "Fundo de Construção").
+3. Marque a caixa **Dedutível de Imposto** se as doações para este fundo devem ser incluídas nas declarações de doações.
+4. Deixe **Visível para Doadores** marcado para mostrar o fundo nos formulários de doação públicos e de membros, ou desmarque para ocultar o fundo dos doadores enquanto ainda o usa para doações registradas manualmente.
+5. Clique em **Salvar**.
 
-O novo fundo aparece imediatamente na sua lista e fica disponível ao inserir doações.
+O novo fundo aparece imediatamente em sua lista e fica disponível ao inserir doações.
 
-## Editando e Excluindo Fundos
+## Editando e Deletando Fundos
 
-- Para editar um fundo, clique no botão **Editar** ao lado dele. Você pode alterar o nome ou alternar a configuração de dedutibilidade fiscal.
-- Para excluir um fundo, abra o formulário de edição e clique em **Excluir**.
+- Para editar um fundo, clique no botão **Editar** ao lado dele. Você pode alterar o nome, alternar a configuração dedutível de imposto ou alternar **Visível para Doadores** para mostrar ou ocultar dos formulários de doação.
+- Para deletar um fundo, abra o formulário de edição e clique em **Deletar**.
 
 :::warning
-Excluir um fundo não remove as doações que foram anteriormente atribuídas a ele. Esses registros de doação permanecem no sistema, mas o fundo não estará mais disponível para novas doações.
+Deletar um fundo não remove doações que foram previamente atribuídas a ele. Esses registros de doação permanecem no sistema, mas o fundo não estará mais disponível para novas doações.
+:::
+
+:::info
+Fundos ocultos de doadores mostram uma etiqueta **Oculto** ao lado de seu nome nesta lista. Fundos ocultos ainda funcionam para doações registradas manualmente no B1 Admin -- eles simplesmente não aparecem como uma opção nos formulários de doação públicos ou de membros.
 :::
 
 ## Visualizando Detalhes do Fundo
 
-Clique no **nome de um fundo** para abrir sua página de detalhes. Esta página mostra:
+Clique em um **nome de fundo** para abrir sua página de detalhe. Esta página mostra:
 
 - **Histórico de doações** -- uma lista de todas as doações para este fundo
 - **Filtro de intervalo de datas** -- restrinja os resultados a um período específico
-- **Estatísticas resumidas** -- total de doações, doadores únicos e valor total em dólares
+- **Estatísticas de resumo** -- doações totais, doadores únicos e valor em dólares total
 
-Esta visualização é útil quando você precisa relatar uma iniciativa específica de doação ou verificar o progresso em direção a uma meta de arrecadação de fundos.
+Esta visualização é útil quando você precisa relatar uma iniciativa de doação específica ou verificar o progresso em direção a uma meta de arrecadação de fundos.
 
-## Ordenação e Exportação
+## Classificando e Exportando
 
-- Use os cabeçalhos das colunas para ordenar fundos por nome.
+- Use os cabeçalhos das colunas para classificar fundos por nome.
 - Clique em **Exportar para CSV** para baixar sua lista de fundos como uma planilha.
 
 :::tip
-Configure seus fundos antes de começar a [registrar doações](recording-donations.md). Ter todos os fundos prontos garante que as doações sejam categorizadas corretamente desde o início.
+Configure seus fundos antes de começar a [registrar doações](recording-donations.md). Ter todos os fundos em vigor garante que as doações sejam categorizadas corretamente desde o início.
 :::
 
 ## Próximos Passos
 
-Depois de configurar seus fundos, você pode atribuí-los às doações ao [registrar doações](recording-donations.md) em um lote. Certifique-se de marcar os fundos apropriados como dedutíveis de impostos antes de gerar [declarações de contribuições](giving-statements.md).
+Depois que seus fundos estiverem configurados, você poderá atribuí-los a doações ao [registrar doações](recording-donations.md) em lote. Certifique-se de marcar os fundos apropriados como dedutíveis de imposto antes de gerar [declarações de doações](giving-statements.md).

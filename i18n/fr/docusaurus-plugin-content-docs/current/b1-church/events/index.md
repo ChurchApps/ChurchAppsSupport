@@ -1,4 +1,4 @@
----
+﻿---
 title: "Événements"
 ---
 
@@ -6,39 +6,41 @@ title: "Événements"
 
 <div class="article-intro">
 
-La section Événements sur B1.church vous permet de parcourir les événements de l'église à venir et de vous y inscrire directement à partir du site Web. Quand votre église active l'enregistrement pour un événement, vous pouvez vous inscrire vous-même et vos membres de la famille en quelques étapes.
+La section Événements sur B1.church vous permet de parcourir les événements d'église à venir et de vous y inscrire directement à partir du site web. Lorsque votre église active l'enregistrement pour un événement, vous pouvez vous inscrire ainsi que vos membres de la famille en quelques étapes seulement, et pour les événements payants, choisissez les types d'assistants et les options, appliquez des codes de réduction et payez de façon sécurisée dans le cadre de votre inscription.
 
 </div>
 
-## Parcourir les événements
+## Parcours des événements
 
-Les événements apparaissent sur le calendrier de l'église. Quand vous ouvrez un événement pour lequel l'enregistrement est activé, un bouton **S'inscrire à cet événement** est affiché aux côtés des détails de l'événement.
+Les événements apparaissent sur le calendrier de l'église. Lorsque vous ouvrez un événement pour lequel l'enregistrement est activé, un bouton **Register for this Event** s'affiche à côté des détails de l'événement.
 
-Les événements avec enregistrement activé montrent :
+Les événements pour lesquels l'enregistrement est activé affichent :
 
-- **Titre et description de l'événement** — Ce que l'événement concerne.
-- **Date et heure** — Quand l'événement aura lieu.
-- **Bouton d'enregistrement** — Un bouton bleu qui vous amène au formulaire d'enregistrement.
+- **Titre et description de l'événement** -- Ce que concerne l'événement.
+- **Date et heure** -- Quand l'événement a lieu.
+- **Bouton d'enregistrement** -- Un bouton bleu qui vous amène au formulaire d'enregistrement.
 
-## Statut d'enregistrement
+## État de l'enregistrement
 
-Les événements peuvent afficher différents statuts selon le moment et la capacité :
+Les événements peuvent afficher différents états en fonction du calendrier et de la capacité :
 
-- **Ouvert** — L'enregistrement est disponible et vous pouvez vous inscrire.
-- **Pas encore ouvert** — La fenêtre d'enregistrement n'a pas commencé. Revenez après la date d'ouverture.
-- **Fermé** — La date limite d'enregistrement a dépassé.
-- **Complet** — Tous les spots disponibles ont été pris.
+- **Open** -- L'enregistrement est disponible et vous pouvez vous inscrire.
+- **Not Yet Open** -- La fenêtre d'enregistrement n'a pas commencé. Revérifiez après la date d'ouverture.
+- **Closed** -- La date limite d'enregistrement a dépassé.
+- **Full** -- Toutes les places disponibles ont été prises.
 
 :::tip
-Si un événement est complet, revenez plus tard — les spots peuvent se libérer si quelqu'un annule son enregistrement.
+Si un événement est complet, vous pourriez toujours être en mesure de rejoindre la **waitlist** quand votre église l'a activée : vous recevrez un e-mail automatiquement si une place se libère. Sinon, revérifiez plus tard ; des places peuvent se libérer si quelqu'un annule.
 :::
 
 ## Ce dont vous avez besoin
 
-- Un compte B1.church (ou vous pouvez vous enregistrer en tant qu'invité)
-- Accès au site Web B1.church de votre église
+- Un compte B1.church (ou vous pouvez vous inscrire en tant qu'invité)
+- Accès au site web B1.church de votre église
 
 ## En savoir plus
 
-- [S'inscrire aux événements](./registering) — Guide étape par étape pour s'inscrire à un événement
-- [Auto-enregistrement](../checkin/self-checkin) — Enregistrez-vous à votre arrivée à l'événement
+- [S'inscrire pour les événements](./registering) -- Guide étape par étape pour s'inscrire à un événement
+- [Mes inscriptions](./my-registrations) -- Consultez vos inscriptions, payez les soldes, modifiez ou annulez
+- [Demande d'événements et de salles](./requesting-events) -- Demande d'un événement avec les salles et les ressources dont il a besoin
+- [Auto-vérification](../checkin/self-checkin) -- Enregistrez-vous à votre arrivée à l'événement

@@ -6,67 +6,63 @@ title: "Helpers"
 
 <div class="article-intro">
 
-`@churchapps/helpers` पैकेज सभी ChurchApps प्रोजेक्ट, फ्रंटएंड और बैकएंड दोनों द्वारा उपयोग की जाने वाली आधार उपयोगिताएँ प्रदान करता है। यह फ्रेमवर्क-अज्ञेय है और इसमें `DateHelper`, `ApiHelper`, `CurrencyHelper` जैसे सामान्य हेल्पर्स और अन्य साझा उपयोगिताएँ शामिल हैं।
+`@churchapps/helpers` पैकेज आधार utilities प्रदान करता है जो सभी ChurchApps projects, frontend और backend दोनों द्वारा उपयोग की जाती हैं। यह framework-agnostic है और `DateHelper`, `ApiHelper`, `CurrencyHelper` जैसे सामान्य helpers के साथ-साथ shared TypeScript interfaces को शामिल करता है जो apps और APIs के बीच data contract बनाते हैं।
 
 </div>
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- **Node.js** और **Git** इंस्टॉल करें -- देखें [पूर्वापेक्षाएँ](../setup/prerequisites)
-- स्थानीय विकास के लिए [npm link वर्कफ़्लो](./index.md) से परिचित हों
+- **Node.js** और **Git** इंस्टॉल करें -- देखें [Prerequisites](../setup/prerequisites)
+- [Packages workspace](./index.md) setup और release flow से परिचित हों
 
 </div>
 
-## स्थानीय विकास के लिए सेटअप
+## कौन इसे उपभोग करता है
 
-1. रिपॉज़िटरी क्लोन करें:
+हर ChurchApps API (core Api, AskApi, और LessonsApi) और हर web frontend (B1Admin, B1App, B1Transfer, LessonsApp) इस package पर directly निर्भर करते हैं। Frontends इसके कई exports (`ApiHelper`, `DateHelper`, `UserHelper`, और अन्य interfaces) को [`@churchapps/apphelper`](./app-helper) के माध्यम से re-export किए गए के रूप में भी प्राप्त करते हैं। अन्य shared packages इसे peer dependency के रूप में declare करते हैं ताकि प्रत्येक app बिल्कुल एक copy को resolve करे।
 
-   ```bash
-   git clone https://github.com/ChurchApps/Helpers.git
-   ```
+## स्थानीय विकास के लिए Setup
 
-2. डिपेंडेंसी इंस्टॉल करें:
+यह package अन्य shared libraries के साथ [Packages](https://github.com/ChurchApps/Packages) workspace में रहता है:
 
-   ```bash
-   cd Helpers && npm install
-   ```
-
-3. पैकेज बिल्ड करें (TypeScript को `dist/` में कंपाइल करता है):
+1. Workspace को क्लोन करें:
 
    ```bash
-   npm run build
+   git clone https://github.com/ChurchApps/Packages.git
    ```
 
-4. स्थानीय लिंकिंग के लिए उपलब्ध करें:
+2. Workspace root पर dependencies install करें:
 
    ```bash
-   npm link
+   cd Packages && yarn install
    ```
 
-फिर इसे किसी भी उपभोक्ता प्रोजेक्ट में लिंक कर सकते हैं:
+3. बिल्ड करें (TypeScript को `dist/` में compile करता है):
 
-```bash
-cd ../YourProject && npm link @churchapps/helpers
-```
+   ```bash
+   yarn workspace @churchapps/helpers build
+   ```
+
+   या dependency order में प्रत्येक package को build करने के लिए root पर `yarn build` चलाएं।
+
+उपभोग करने वाली project में changes का परीक्षण करने के लिए, एक अस्थायी Yarn portal का उपयोग करें -- [Consuming App के विरुद्ध स्थानीय विकास](./index.md#local-development-against-a-consuming-app) देखें।
 
 ## प्रकाशन
 
-npm पर नया संस्करण प्रकाशित करने के लिए:
+Releases changesets के माध्यम से जाते हैं manual version bumps के बजाय:
 
-1. `package.json` में वर्शन अपडेट करें
-2. प्रकाशित करें:
+1. Workspace root पर `yarn changeset` चलाएं और appropriate bump type के साथ `@churchapps/helpers` चुनें; generated changeset file को अपने change के साथ commit करें।
+2. Release के लिए तैयार होने पर, root पर `yarn publish-all` चलाएं -- यह versions को bump करता है, CHANGELOGs लिखता है, dependency order में build करता है, और npm पर publish करता है।
 
-   ```bash
-   npm publish --access=public
-   ```
+नए shared interfaces `helpers/src/interfaces/` में जाते हैं और package barrel के माध्यम से re-exported होते हैं। Website builder का element-type catalog (`ElementTypes.ts` — 35 types उनके answers schemas के साथ) भी यहां रहता है; यह apphelper renderers, B1Admin editor forms, और AI generation prompts द्वारा साझा किया गया contract है (देखें [Website Builder Architecture](../architecture/website-builder))।
 
 :::warning
-चूँकि यह पैकेज प्रत्येक ChurchApps प्रोजेक्ट द्वारा उपयोग किया जाता है, यहाँ के परिवर्तनों का व्यापक प्रभाव होता है। प्रकाशित करने से पहले कम से कम एक उपभोक्ता API और एक उपभोक्ता वेब ऐप में `npm link` के साथ अच्छी तरह परीक्षण करें।
+चूँकि यह package प्रत्येक ChurchApps project द्वारा उपयोग किया जाता है, यहां के changes का व्यापक प्रभाव होता है। `helpers` का एक release स्वचालित रूप से `apihelper` और `apphelper` को bump करता है ताकि उनके dependency ranges current रहें। Publishing से पहले कम से कम एक consuming API और एक consuming web app में Yarn portal के साथ परीक्षण करें।
 :::
 
 ## संबंधित लेख
 
-- **[ApiHelper](./api-helper)** -- सर्वर-साइड उपयोगिताएँ जो इस पैकेज पर निर्भर करती हैं
-- **[AppHelper](./app-helper)** -- React कंपोनेंट जो इस पैकेज पर निर्भर करते हैं
-- **[साझा लाइब्रेरी अवलोकन](./index.md)** -- `npm link` वर्कफ़्लो और पैकेज अवलोकन
+- **[ApiHelper](./api-helper)** -- Server-side utilities जो इस package पर निर्भर करती हैं
+- **[AppHelper](./app-helper)** -- React components जो इस package पर निर्भर करते हैं
+- **[साझा लाइब्रेरीज़ अवलोकन](./index.md)** -- Workspace setup, release flow, और local-link workflow

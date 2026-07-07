@@ -1,4 +1,4 @@
----
+﻿---
 title: "ApiHelper"
 ---
 
@@ -6,68 +6,65 @@ title: "ApiHelper"
 
 <div class="article-intro">
 
-Ang `@churchapps/apihelper` package ay nagbibigay ng mga server-side na utility para sa lahat ng ChurchApps Express.js API. Kasama dito ang base controller class, JWT authentication middleware, mga utility ng database, at mga integrasyon sa AWS na pinag-aaralan ng bawat proyekto ng API.
+Ang `@churchapps/apihelper` package ay nagbibigay ng server-side utilities para sa lahat ng ChurchApps Express.js APIs. Ito ay may kasamang base controller class, JWT authentication, database utilities, at AWS integrations na bawat API project ay nakadepende sa.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Mag-install ng **Node.js** at **Git** -- tingnan ang [Mga Pangangailangan](../setup/prerequisites)
-- Pamilyarisahin ang sarili sa [daloy ng trabaho ng npm link](./index.md) para sa lokal na development
-- Ang package na ito ay umaasa sa [`@churchapps/helpers`](./helpers)
+- I-install ang **Node.js** at **Git** -- tingnan ang [Prerequisites](../setup/prerequisites)
+- Pamilyarin mo ang sarili mo sa [Packages workspace](./index.md) setup at release flow
+- Ang package na ito ay nakadepende sa [`@churchapps/helpers`](./helpers) (bilang peer dependency) at muling nag-export nito
 
 </div>
 
-## Mga Kasama
+## What's Included
 
-- **CustomBaseController** -- base class para sa mga API controller
-- **Auth middleware** -- JWT authentication sa pamamagitan ng `CustomAuthProvider`
-- **Mga utility ng database** -- `DB.query`, `EnhancedPoolHelper` para sa pamamahala ng koneksyon sa MySQL
-- **Mga integrasyon sa AWS** -- mga helper para sa S3, SSM Parameter Store, at iba pang mga serbisyo ng AWS
-- **Pag-setup ng Inversify DI** -- configuration ng dependency injection container
+- **CustomBaseController** -- base class para sa API controllers, itinayo sa `inversify-express-utils`
+- **Auth** -- JWT authentication sa pamamagitan ng `CustomAuthProvider`, `AuthenticatedUser`, at `Principal`
+- **Database utilities** -- `DB.query` / `DB.queryOne` at ang `Pool` class para sa MySQL connection management, at `MySqlHelper` at `DBCreator` para sa schema setup
+- **AWS integrations** -- `AwsHelper` para sa S3 file storage at SSM Parameter Store reads
+- **Email** -- `EmailHelper` na sumusuporta sa SES at SMTP transports
+- **Config loading** -- `EnvironmentBase` ay nagsasaad ng connection strings at secrets mula sa environment variables o Parameter Store
+- **Misc** -- `EncryptionHelper`, `FileStorageHelper`, `LoggingHelper`, `BasePermissions`, `SlugHelper`
 
-## Pag-setup para sa Lokal na Development
+## Setup para sa Local Development
 
-1. I-clone ang repository:
+Ang package na ito ay nakatira sa [Packages](https://github.com/ChurchApps/Packages) workspace kasama ang iba pang shared libraries:
 
-   ```bash
-   git clone https://github.com/ChurchApps/ApiHelper.git
-   ```
-
-2. Mag-install ng mga dependency:
+1. I-clone ang workspace:
 
    ```bash
-   cd ApiHelper && npm install
+   git clone https://github.com/ChurchApps/Packages.git
    ```
 
-3. Buuin ang package (nag-co-compile ng TypeScript sa `dist/`):
+2. I-install ang dependencies sa workspace root:
 
    ```bash
-   npm run build
+   cd Packages && yarn install
    ```
 
-4. Gawing magagamit para sa lokal na pag-link:
+3. I-build (nag-compile ng TypeScript sa `dist/`):
 
    ```bash
-   npm link
+   yarn workspace @churchapps/apihelper build
    ```
 
-## Mga Pangunahing Utos
+   O patakbuhin ang `yarn build` sa root upang i-build ang bawat package sa dependency order.
 
-| Utos | Paglalarawan |
-|---------|-------------|
-| `npm run build` | I-compile ang TypeScript sa `dist/` |
-| `npm run lint` | Patakbuhin ang ESLint |
-| `npm run lint:fix` | Patakbuhin ang ESLint na may auto-fix |
-| `npm run format` | I-format ang code gamit ang Prettier |
+Upang subukan ang changes sa loob ng isang consuming API, gamitin ang isang temporary Yarn portal -- tingnan ang [Local Development Against a Consuming App](./index.md#local-development-against-a-consuming-app).
+
+## Publishing
+
+Ang mga releases ay napupunta sa pamamagitan ng changesets: patakbuhin ang `yarn changeset` sa workspace root sa bawat change, pagkatapos ay `yarn publish-all` kapag handa na mag-release. Tingnan ang [Shared Libraries Overview](./index.md#releasing-with-changesets) para sa buong flow.
 
 :::info
-Ang package na ito ay dependency ng bawat ChurchApps API. Kapag gumagawa ng mga pagbabago, gamitin ang `npm link` upang subukan laban sa isang API nang lokal bago mag-publish.
+Ang package na ito ay isang dependency ng bawat ChurchApps API -- ang core Api, AskApi, at LessonsApi. Kapag gumagawa ng changes, subukan laban sa isang API nang lokal bago mag-publish.
 :::
 
-## Mga Kaugnay na Artikulo
+## Related Articles
 
-- **[Helpers](./helpers)** -- Ang base utility package na pinag-aaralan ng package na ito
-- **[Istraktura ng Module](../api/module-structure)** -- Kung paano ginagamit ang mga controller at auth middleware sa mga API module
-- **[Lokal na Pag-setup ng API](../api/local-setup)** -- Pag-setup ng API para sa lokal na development
+- **[Helpers](./helpers)** -- Ang base utility package na ang package na ito ay nakadepende sa
+- **[Module Structure](../api/module-structure)** -- Paano ginagamit ang controllers at auth middleware sa API modules
+- **[Local API Setup](../api/local-setup)** -- Pag-setup ng API para sa local development

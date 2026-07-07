@@ -1,48 +1,49 @@
 ---
-title: "Navegar en B1App"
+title: "Navegar por B1App"
 ---
 
-# Navegar en B1App
+# Navegar por B1App
 
 <div class="article-intro">
 
-El portal de miembros en B1.church utiliza un diseno de navegacion lateral que facilita el movimiento entre las diferentes herramientas disponibles para ti. Esta pagina explica como funciona la navegacion tanto en dispositivos de escritorio como en dispositivos moviles.
+El portal de miembros en B1.church utiliza un diseño de navegación de barra lateral que facilita moverse entre las diferentes herramientas disponibles para ti. Esta página explica cómo funciona la navegación en dispositivos de escritorio y móviles.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- Necesitas haber [iniciado sesion](./logging-in.md) para acceder al portal de miembros.
+- Necesitas estar [conectado](./logging-in.md) para acceder al portal de miembros.
 
 </div>
 
-## Navegacion Lateral
+## Navegación de barra lateral
 
-Cuando ingreses al portal de miembros, veras una barra lateral vertical en el lado izquierdo de la pantalla. Esta barra lateral contiene pestanas para cada seccion del portal:
+Cuando entras al portal de miembros, verás una barra lateral vertical en el lado izquierdo de la pantalla. Esta barra lateral contiene fichas para cada sección del portal:
 
-- **Linea de Tiempo** -- Tu feed personalizado de actualizaciones y conversaciones de tus grupos e iglesia. Esta es la pestana predeterminada que se carga cuando abres el portal de miembros.
-- **Grupos** -- Consulta e interactua con los [grupos](../groups/) a los que perteneces.
+- **Cronología** -- Tu feed personalizado de actualizaciones y conversaciones de tus grupos e iglesia. Esta es la ficha predeterminada que se carga cuando abres el portal de miembros.
+- **Yo** -- Tu panel personal de asignaciones de servicio próximas, registros, eventos de grupos y notificaciones recientes. Ve [La página Yo](./me-page).
+- **Grupos** -- Ver e interactuar con los [grupos](../groups/) a los que perteneces.
 - **Comunidad** -- Explora el [directorio de miembros](../community/member-directory.md) de la iglesia.
-- **Planes** -- Consulta los proximos [planes de servicio](../plans/) y tus posiciones de voluntariado asignadas.
-- **Registro de Asistencia** -- [Registra tu asistencia](../checkin/) y la de tu hogar para servicios y eventos.
-- **Lecciones** -- Accede a [lecciones](../content/lessons.md) de estudio biblico y curriculo.
-- **Donaciones** -- Realiza [donaciones](../giving/) en linea y consulta tu historial de ofrendas.
+- **Planes** -- Ve [planes de servicio](../plans/) próximos y tus posiciones de voluntario asignadas.
+- **Registro** -- [Regístrate](../checkin/) a ti mismo y a tu hogar para servicios y eventos.
+- **Lecciones** *(descontinuado)* -- La ficha Lecciones en el portal ha sido reemplazada por [FreePlay](/docs/freeplay/) para reproducción en el aula. Explora el currículum directamente en [Lessons.church](https://lessons.church) o ve la [página de referencia de Lecciones](../content/lessons.md) para más detalles.
+- **Donaciones** -- Realiza [donaciones](../giving/) en línea y ve tu historial de donaciones.
 
-Haz clic en cualquier pestana para cambiar a esa seccion. La pestana activa se resalta para que siempre sepas donde te encuentras.
+Haz clic en cualquier ficha para cambiar a esa sección. La ficha activa se resalta para que siempre sepas dónde estás.
 
 :::info
-Las pestanas que ves pueden variar segun lo que tu iglesia haya habilitado. Los administradores de la iglesia controlan que secciones son visibles para los miembros a traves de B1 Admin. Si no ves una pestana en particular, es posible que tu iglesia no haya activado esa funcion.
+Las fichas que ves pueden variar dependiendo de lo que tu iglesia haya habilitado. Los administradores de la iglesia controlan qué secciones son visibles para los miembros a través de B1 Admin. Si no ves una ficha en particular, es posible que tu iglesia no haya activado esa característica.
 :::
 
-## Navegacion en Dispositivos Moviles
+## Navegación móvil
 
-En pantallas mas pequenas como telefonos y tabletas, la barra lateral se colapsa para ahorrar espacio. En su lugar, veras un boton de **Menu** en la parte superior del portal de miembros. Toca el boton para abrir una lista de todas las pestanas disponibles. Selecciona una pestana para navegar a esa seccion y el menu se cerrara automaticamente.
+En pantallas más pequeñas como teléfonos y tabletas, la barra lateral se colapsa para ahorrar espacio. En su lugar, verás un botón **Menú** en la parte superior del portal de miembros. Tócalo para abrir una lista de todas las fichas disponibles. Selecciona una ficha para navegar a esa sección, y el menú se cerrará automáticamente.
 
-## Pestana de Administracion
+## Ficha de administrador
 
-Si tienes permisos de administrador en tu iglesia, veras una pestana adicional de **Administracion** en la parte inferior de la barra lateral. Al hacer clic en ella, accederas a B1 Admin donde puedes gestionar la configuracion y los datos de tu iglesia.
+Si tienes permisos de administrador en tu iglesia, verás una ficha **Administrador** adicional en la parte inferior de la barra lateral. Hacer clic en ella te lleva a B1 Admin donde puedes gestionar la configuración y los datos de tu iglesia.
 
-## Navegacion del Encabezado Superior
+## Navegación de encabezado superior
 
-Fuera del portal de miembros, el encabezado principal del sitio contiene los enlaces de navegacion personalizados de tu iglesia. Estos son configurados por los administradores de tu iglesia y pueden incluir enlaces a paginas como [sermones](../content/sermons.md), la [Biblia](../content/bible.md), [transmision en vivo](../content/live-streaming.md) y otro contenido. En dispositivos moviles, estos enlaces estan accesibles a traves de un icono de menu hamburguesa en la esquina superior derecha del encabezado.
+Fuera del portal de miembros, el encabezado del sitio principal contiene enlaces de navegación personalizados de tu iglesia. Estos son configurados por los administradores de tu iglesia y pueden incluir enlaces a páginas como [sermones](../content/sermons.md), la [Biblia](../content/bible.md), [transmisión en vivo](../content/live-streaming.md) y otro contenido. En móvil, estos enlaces son accesibles a través de un ícono de menú de hamburguesa en la esquina superior derecha del encabezado.

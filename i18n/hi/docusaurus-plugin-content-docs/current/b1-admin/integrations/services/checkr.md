@@ -6,90 +6,90 @@ title: "Checkr"
 
 <div class="article-intro">
 
-[Checkr](https://checkr.com) staff और volunteers के लिए background screening चलाता है — children या youth program चलाने वाले किसी भी चर्च के लिए एक near-universal need। Checkr के पास एक Zapier app नहीं है, लेकिन [Make.com का Checkr integration](https://www.make.com/en/integrations/checkr) verified है और आपको एक B1 event से एक check को kick off करने के लिए आवश्यक actions को expose करता है।
+[Checkr](https://checkr.com) कर्मचारियों और स्वयंसेवकों के लिए पृष्ठभूमि स्क्रीनिंग चलाता है -- बच्चों या युवा कार्यक्रम चलाने वाली किसी भी चर्च के लिए एक लगभग सार्वभौमिक आवश्यकता। B1 के पास **कोई बनाया हुआ पृष्ठभूमि-जांच विशेषता नहीं है** -- जांच का आदेश देना, परिणामों को ट्रैक करना, और स्क्रीनिंग अनुपालन सभी Checkr में रहते हैं; नीचे दिया गया नुस्खा केवल B1 घटनाओं को इससे जोड़ता है। Checkr के पास Zapier ऐप नहीं है, लेकिन [Make.com की Checkr एकीकरण](https://www.make.com/en/integrations/checkr) सत्यापित है और आपको B1 घटना से जांच शुरू करने के लिए आवश्यक कार्रवाई को उजागर करता है।
 
 </div>
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- API access और कम से कम एक screening package configured के साथ एक [Checkr](https://checkr.com) खाता
+- API पहुंच और कम से कम एक स्क्रीनिंग पैकेज कॉन्फ़िगर किए गए के साथ एक [Checkr](https://checkr.com) खाता
 - एक [Make](https://www.make.com) खाता
-- **Edit Settings** अनुमति वाला एक B1Admin user
+- **सेटिंग्स संपादित करें** अनुमति के साथ एक B1Admin उपयोगकर्ता
 
 </div>
 
-## आप क्या Wire Up कर सकते हैं
+## आप क्या वायर कर सकते हैं
 
-Make का Checkr app 1 trigger और 6 actions को expose करता है:
+Make का Checkr ऐप 1 ट्रिगर और 6 कार्रवाई को उजागर करता है:
 
-| Direction | B1 / Make trigger | Action |
+| दिशा | B1 / Make ट्रिगर | कार्रवाई |
 |---|---|---|
-| B1 → Checkr | B1 `group.member.added` (एक volunteer group को filtered) | Checkr: Create Candidate → Create Background Check Invitation |
-| Checkr → B1 | Checkr webhook (invitation / report event) | B1: person के record को अपडेट करें (उदाहरण के लिए tag "Checkr cleared") |
+| B1 → Checkr | B1 `group.member.added` (एक स्वयंसेवक समूह के लिए फ़िल्टर किया गया) | Checkr: उम्मीदवार बनाएं → पृष्ठभूमि जांच आमंत्रण बनाएं |
+| Checkr → B1 | Checkr वेबहुक (आमंत्रण / रिपोर्ट घटना) | B1: व्यक्ति के रिकॉर्ड को अपडेट करें (जैसे टैग "Checkr स्पष्ट") |
 
-Make के Checkr actions: Create Candidate, Create Background Check Invitation, Get Candidate, Get Report, Get Report का ETA, Get एक Invitation। Plus 4 search modules।
+Make की Checkr कार्रवाई: उम्मीदवार बनाएं, पृष्ठभूमि जांच आमंत्रण बनाएं, उम्मीदवार प्राप्त करें, रिपोर्ट प्राप्त करें, रिपोर्ट का ETA प्राप्त करें, आमंत्रण प्राप्त करें। साथ ही 4 खोज मॉड्यूल।
 
 ## सेटअप
 
-### 1. एक B1 API कुंजी Mint करें
+### 1. एक B1 API कुंजी बनाएं
 
-**Settings → Developer → API Keys → New API Key**:
+**सेटिंग्स → डेवलपर → API कुंजियां → नई API कुंजी**:
 
-- `settings:write` — trigger webhook के लिए
-- `people:read` — एक check को start करते समय person का नाम/email देखने के लिए
-- (Optional) `people:write` यदि आप report status को एक custom field या tag के रूप में लिखना चाहते हैं
+- `settings:write` -- ट्रिगर वेबहुक के लिए
+- `people:read` -- जांच शुरू करते समय व्यक्ति का नाम/ईमेल खोजने के लिए
+- (वैकल्पिक) `people:write` यदि आप रिपोर्ट स्थिति को कस्टम फ़ील्ड या टैग के रूप में वापस लिखना चाहते हैं
 
-### 2. Make में "volunteer signup पर एक check को kick off करें" scenario बनाएं
+### 2. Make में "स्वयंसेवक साइन-अप पर जांच शुरू करें" परिदृश्य बनाएं
 
-1. **Trigger** — B1.church: Watch Events (`group.member.added`)।
-2. **Filter** — केवल continue यदि `data.groupId` आपके "Children's Volunteers" (या equivalent) group से मेल खाता है।
-3. **Action** — B1.church: Find Person (द्वारा `data.personId`) email + first/last name प्राप्त करने के लिए।
-4. **Action** — Checkr: Create Candidate। step 3 से first/last/email को map करें।
-5. **Action** — Checkr: Create Background Check Invitation। step 4 से नई candidate id को *candidate_id* field में map करें। screening package को pick करें (उदाहरण के लिए `tasker_standard` या जो कुछ आपका खाता expose करता है)।
-6. (Optional) **Action** — Slack: आपके safe-ministry coordinator को notify करें कि एक check initiate किया गया है।
+1. **ट्रिगर** -- B1.church: घटनाओं को देखें (`group.member.added`)।
+2. **फ़िल्टर** -- केवल तभी जारी रखें यदि `data.groupId` आपके "बच्चों के स्वयंसेवक" (या समकक्ष) समूह से मेल खाता है।
+3. **कार्रवाई** -- B1.church: व्यक्ति खोजें (`data.personId` द्वारा) ईमेल + पहला/आखिरी नाम प्राप्त करने के लिए।
+4. **कार्रवाई** -- Checkr: उम्मीदवार बनाएं। चरण 3 से पहले/अंतिम/ईमेल मैप करें।
+5. **कार्रवाई** -- Checkr: पृष्ठभूमि जांच आमंत्रण बनाएं। चरण 4 से नई उम्मीदवार id को *candidate_id* फ़ील्ड में मैप करें। स्क्रीनिंग पैकेज चुनें (जैसे `tasker_standard` या जो भी आपका खाता उजागर करता है)।
+6. (वैकल्पिक) **कार्रवाई** -- Slack: अपने सुरक्षित-मंत्रालय समन्वयक को सूचित करें कि एक जांच शुरू की गई है।
 
-scenario को चालू करें। targeted group में नए volunteers को automatic Checkr invitation by email मिलता है; वे अपने phone या laptop पर इसे पूरा करते हैं; Checkr screen चलाता है।
+परिदृश्य चालू करें। लक्षित समूह में नए स्वयंसेवकों को ईमेल द्वारा एक स्वचालित Checkr आमंत्रण मिलता है; वे इसे अपने फोन या लैपटॉप पर पूरा करते हैं; Checkr स्क्रीन चलाता है।
 
-### 3. (Optional) report को वापस प्राप्त करें
+### 3. (वैकल्पिक) रिपोर्ट वापस प्राप्त करें
 
-1. **Trigger** — Checkr: Watch Events (webhook)। Make activation पर एक Checkr webhook registers करता है।
-2. **Filter** — केवल continue यदि `event_type = report.completed`।
-3. **Action** — Checkr: Get Report (webhook से report id का उपयोग करें)।
-4. **Action** — B1.church: Find Person (candidate email द्वारा)।
-5. **Action** — Conditional Slack / Email: coordinator को `clear` / `consider` / `suspended` status के साथ notify करें।
+1. **ट्रिगर** -- Checkr: घटनाओं को देखें (वेबहुक)। Make सक्रियण पर एक Checkr वेबहुक पंजीकृत करता है।
+2. **फ़िल्टर** -- केवल तभी जारी रखें यदि `event_type = report.completed`।
+3. **कार्रवाई** -- Checkr: रिपोर्ट प्राप्त करें (वेबहुक से रिपोर्ट id का उपयोग करें)।
+4. **कार्रवाई** -- B1.church: व्यक्ति खोजें (उम्मीदवार ईमेल द्वारा)।
+5. **कार्रवाई** -- सशर्त Slack / ईमेल: समन्वयक को `स्पष्ट` / `विचार करें` / `निलंबित` स्थिति के साथ सूचित करें।
 
-Note: B1 के पास आज एक built-in "background-check status" field नहीं है। pragmatic options हैं (a) result को एक private Slack channel में post करें for review, (b) इसे audit के लिए एक Google Sheet में लिखें, या (c) person को `clear` पर एक "Cleared volunteers" B1 group में जोड़ें।
+नोट: B1 के पास आज एक निर्मित "पृष्ठभूमि-जांच स्थिति" फ़ील्ड नहीं है। व्यावहारिक विकल्प हैं (a) परिणाम को समीक्षा के लिए एक निजी Slack चैनल में पोस्ट करें, (b) इसे ऑडिट के लिए Google शीट में लिखें, या (c) व्यक्ति को `स्पष्ट` पर एक "स्पष्ट स्वयंसेवक" B1 समूह में जोड़ें।
 
-## सामान्य Recipes
+## सामान्य नुस्खे
 
-### हर 2 साल में volunteers को फिर से screen करें
+### हर 2 साल में स्वयंसेवकों को फिर से स्क्रीन करें
 
-उपरोक्त को एक Make schedule trigger के साथ pair करें:
+ऊपर दिए गए को Make शेड्यूल ट्रिगर के साथ जोड़ी करें:
 
-- **Trigger** — Make: Schedule (monthly)
-- **Action** — B1.church: List Group Members for "Cleared volunteers"
-- **Action** — Filter by Make: cleared date older than 22 months
-- **Action** — Checkr: Create Background Check Invitation (initial flow के समान)
+- **ट्रिगर** -- Make: शेड्यूल (मासिक)
+- **कार्रवाई** -- B1.church: "स्पष्ट स्वयंसेवकों" के लिए समूह सदस्यों की सूची बनाएं
+- **कार्रवाई** -- Make द्वारा फ़िल्टर करें: 22 महीने से पुरानी तारीख को स्पष्ट करें
+- **कार्रवाई** -- Checkr: पृष्ठभूमि जांच आमंत्रण बनाएं (प्रारंभिक प्रवाह के समान)
 
-### Stage 1 access को check के पूरा होने तक block करें
+### जांच पूरी होने तक स्टेज 1 पहुंच को ब्लॉक करें
 
-यदि आपका चर्च B1 group membership का उपयोग करता है access को gate करने के लिए (उदाहरण के लिए केवल "Cleared" group members serving schedules में दिखाई देते हैं), नए volunteers को एक holding group में रखें जब तक Checkr `report.completed` event उन्हें flip नहीं करता।
+यदि आपकी चर्च B1 समूह सदस्यता का उपयोग करके पहुंच को गेट करती है (जैसे केवल "स्पष्ट" समूह सदस्य सेवा अनुसूचियों में दिखाई देते हैं), तो नए स्वयंसेवकों को एक होल्डिंग समूह में रखें जब तक कि Checkr `report.completed` घटना उन्हें पलट न दे।
 
-## Limits & Notes
+## सीमाएं और नोट्स
 
-- **Checkr is US-only** अधिकांश screening packages के लिए। Australian, UK, और Canadian churches को एक alternative की आवश्यकता होगी।
-- **Pricing** per check — हर Create Invitation Make में एक real check को burn करता है। Checkr के sandbox / staging account में पहले test करें (Make का Checkr app आप pass करने वाले credentials को respect करता है, तो creds को swap करने से sandbox/live को switch किया जाता है)।
-- **Checkr API access is plan-gated.** छोटे Checkr accounts एक UI-only tier पर हो सकते हैं; Checkr को API को enable करने के लिए contact करें।
+- **Checkr केवल US है** अधिकांश स्क्रीनिंग पैकेज के लिए। ऑस्ट्रेलियाई, यूके, और कनाडाई चर्चों को एक विकल्प की आवश्यकता होगी।
+- **मूल्य निर्धारण** प्रति जांच है -- Make में हर Create आमंत्रण एक वास्तविक जांच को जला देता है। पहले Checkr के सैंडबॉक्स / स्टेजिंग खाते में परीक्षण करें (Make का Checkr ऐप आपके द्वारा कनेक्शन में पास किए गए क्रेडेंशियल का सम्मान करता है, इसलिए creds को स्विप करने से सैंडबॉक्स/लाइव स्विच होता है)।
+- **Checkr API पहुंच योजना-गेट है।** छोटे Checkr खातों का UI-only टीयर पर हो सकते हैं; API सक्षम करने के लिए Checkr से संपर्क करें।
 
 ## समस्या निवारण
 
-- **Create Candidate fails with `403`** — Checkr API token read-only है या सही account permissions नहीं है। Checkr dashboard से write scope के साथ re-issue करें।
-- **Invitation कभी arrive नहीं होता** — step 3 में candidate के email को check करें; B1 के पास उस person के लिए एक empty email field हो सकता है। Checkr step से पहले एक email-required filter जोड़ें।
-- **Webhook trigger fire नहीं होता** — Checkr का webhook registration कभी-कभी silently fail होता है यदि आपका Make account एक paid tier पर नहीं है जो outbound webhooks को support करता है। Checkr के dashboard *Webhooks* page में verify करें कि Make का URL listed है।
+- **उम्मीदवार बनाना `403` के साथ विफल रहता है** -- Checkr API टोकन केवल-पढ़ने वाला है या सही खाता अनुमतियों की कमी है। इसे Checkr डैशबोर्ड से लिखने के दायरे के साथ फिर से जारी करें।
+- **आमंत्रण कभी नहीं पहुंचता** -- चरण 3 में उम्मीदवार के ईमेल की जांच करें; B1 उस व्यक्ति के लिए एक खाली ईमेल फ़ील्ड हो सकता है। Checkr चरण से पहले एक ईमेल-आवश्यक फ़िल्टर जोड़ें।
+- **वेबहुक ट्रिगर फायर नहीं होता** -- Checkr की वेबहुक पंजीकरण कभी-कभी चुप रहकर विफल रहती है यदि आपका Make खाता एक भुगतान किए गए टीयर पर नहीं है जो आउटबाउंड वेबहुक का समर्थन करता है। Checkr के डैशबोर्ड *वेबहुक* पृष्ठ में सत्यापित करें कि Make का URL सूचीबद्ध है।
 
 ## यह भी देखें
 
-- [Make (overview)](../make) — हर Make scenario का B1 side
-- [Mobile Message](./mobile-message) — SMS-providers-without-Zapier-apps के लिए, Checkr Make wiring के समान Webhooks/HTTP pattern
-- [Checkr API docs](https://docs.checkr.com/)
+- [Make (अवलोकन)](../make) -- प्रत्येक Make परिदृश्य का B1 पक्ष
+- [मोबाइल संदेश](./mobile-message) -- SMS-प्रदाताओं-बिना-Zapier-ऐप्स के लिए, Checkr Make वायरिंग के समान Webhooks/HTTP पैटर्न
+- [Checkr API दस्तावेज़](https://docs.checkr.com/)

@@ -1,33 +1,21 @@
----
+﻿---
 title: "Modulstruktur"
 ---
 
 # Modulstruktur
 
-<div class="article-intro">
+Jedes API-Modul folgt einer konsistenten internen Struktur mit Controllern, Repositories, Modellen und Helfern. Das Verständnis dieses Layouts macht es einfach, in der Codebasis zu navigieren und neue Funktionalität zu jedem Modul hinzuzufügen.
 
-Jedes API-Modul folgt einer konsistenten internen Struktur mit Controllern, Repositories, Modellen und Helfern. Das Verständnis dieses Layouts macht es einfach, den Codebase zu navigieren und neue Funktionalität zu einem beliebigen Modul hinzuzufügen.
+## Verzeichnis-Layout
 
-</div>
-
-<div class="prereqs">
-<h4>Vor dem Start</h4>
-
-- Richten Sie die API lokal ein — siehe [Lokales API-Setup](./local-setup)
-- Überprüfen Sie die [Datenbankarchitektur](./database), um die Datenzugriffschicht zu verstehen
-
-</div>
-
-## Verzeichnislayout
-
-Jedes Modul lebt unter `src/modules/{name}/` und enthält vier Verzeichnisse:
+Module leben unter `src/modules/{name}/`. Ein typisches Modul enthält vier Verzeichnisse:
 
 ```
 src/modules/{name}/
-├── controllers/    ← Route Handler (Express Endpoints)
-├── repositories/   ← Datenzugriffschicht (direktes SQL)
-├── models/         ← TypeScript-Interfaces und Typen
-└── helpers/        ← Modul-spezifische Business-Logik
+├── controllers/    ← Route-Handler (Express-Endpunkte)
+├── repositories/   ← Datenzugriffs-Ebene (typisierte SQL-Queries)
+├── models/         ← TypeScript-Schnittstellen und Typen
+└── helpers/        ← Modulspezifische Geschäftslogik
 ```
 
 Zum Beispiel das Membership-Modul:
@@ -39,8 +27,8 @@ src/modules/membership/
 │   ├── GroupController.ts
 │   └── ...
 ├── repositories/
-│   ├── PersonRepository.ts
-│   ├── GroupRepository.ts
+│   ├── PersonRepo.ts
+│   ├── GroupRepo.ts
 │   └── ...
 ├── models/
 │   ├── Person.ts
@@ -50,126 +38,99 @@ src/modules/membership/
     └── ...
 ```
 
+Die sechs Kern-Datenmodule folgen alle dieser Anordnung.
+
+## Eine Anwendung, viele Module
+
+Die API ist ein **modulares Monolith**: Module markieren Grenzen der Code-Organisation und Dateneigentum, nicht separate Services. Beim Start werden die Controller jedes Moduls in einem einzelnen Dependency-Injection-Container hinter einer Express-Anwendung registriert.
+
+Alle Module-Routen leben unter einem URL-Präfix, der dem Modulnamen entspricht:
+
+```
+/membership/*    /attendance/*    /content/*
+/giving/*        /messaging/*     /doing/*
+```
+
 ## Controller
 
-Controller definieren die API-Routen für ein Modul. Sie erweitern `CustomBaseController` von `@churchapps/apihelper` und nutzen Inversify-Dekoratoren für Route-Registrierung.
+Controller definieren die API-Routen für ein Modul. Jedes Modul hat seinen eigenen Basis-Controller (zum Beispiel `MembershipBaseController`), der den gemeinsamen `BaseController` erweitert.
 
 ```typescript
-import { controller, httpGet, httpPost } from "inversify-express-utils";
-import { CustomBaseController } from "@churchapps/apihelper";
+import express from "express";
+import { controller, httpGet } from "inversify-express-utils";
+import { MembershipBaseController } from "./MembershipBaseController.js";
+import { Permissions } from "../helpers/index.js";
 
-@controller("/people")
-export class PersonController extends CustomBaseController {
+@controller("/membership/people")
+export class PersonController extends MembershipBaseController {
 
-  @httpGet("/")
-  public async loadAll() {
-    return this.actionWrapper(async (au) => {
-      // au = authentifizierter Benutzer-Kontext
-      au.checkAccess("People", "View");
-      const repos = RepositoryManager.getRepositories<MembershipRepositories>("membership");
-      return repos.person.loadByChurchId(au.churchId);
-    });
-  }
-
-  @httpPost("/")
-  public async save() {
-    return this.actionWrapper(async (au) => {
-      au.checkAccess("People", "Edit");
-      const data = this.request.body;
-      // ... Speicherlogik
+  @httpGet("/recent")
+  public async getRecent(req: express.Request, res: express.Response): Promise<any> {
+    return this.actionWrapper(req, res, async (au) => {
+      if (!au.checkAccess(Permissions.people.view)) return this.json({}, 401);
+      return this.repos.person.loadRecent(au.churchId);
     });
   }
 }
 ```
-
-### Route-Dekoratoren
-
-| Dekorator | HTTP-Methode |
-|-----------|-------------|
-| `@httpGet("/path")` | GET |
-| `@httpPost("/path")` | POST |
-| `@httpPut("/path")` | PUT |
-| `@httpPatch("/path")` | PATCH |
-| `@httpDelete("/path")` | DELETE |
-
-Der `@controller("/base")`-Dekorator setzt den Basispfad für alle Routen im Controller.
 
 ## Repositories
 
-Repositories verarbeiten alle Datenbankoperationen mit direktem SQL via `DB.query()`. Es gibt kein ORM — Sie schreiben SQL direkt.
+Repositories behandeln alle Datenbankoperationen. Es gibt kein ORM -- Abfragen werden mit dem Kysely Query Builder geschrieben, typisiert gegen das Modul-Datenbankschema.
 
 ```typescript
-export class PersonRepository {
-  public async loadByChurchId(churchId: string) {
-    return DB.query("SELECT * FROM people WHERE churchId=?", [churchId]);
-  }
+import { injectable } from "inversify";
+import { getDb } from "../db/index.js";
 
-  public async save(person: Person) {
-    // INSERT oder UPDATE Logik
+@injectable()
+export class PersonRepo {
+  public async load(churchId: string, id: string) {
+    return getDb().selectFrom("people").selectAll()
+      .where("id", "=", id)
+      .where("churchId", "=", churchId)
+      .executeTakeFirst();
   }
 }
 ```
 
-Greifen Sie auf Repositories über `RepositoryManager` zu:
+## Modulübergreifende Kommunikation
+
+Jedes Modul besitzt seine eigene Datenbank, und ein Modul fragt niemals die Tabellen eines anderen Moduls direkt ab. Wenn ein Modul Daten benötigt, die einem anderen gehören, geht es durch das Besitzer-Modul-**Gateway**:
 
 ```typescript
-const repos = RepositoryManager.getRepositories<MembershipRepositories>("membership");
-const people = await repos.person.loadByChurchId(churchId);
+import { getMembershipModuleGateway } from "../../../shared/modules/index.js";
+
+const people = await getMembershipModuleGateway().loadPeople(churchId, personIds);
 ```
 
 ## Authentifizierung und Autorisierung
 
 ### JWT-Authentifizierung
 
-Alle Anfragen werden über JWT-Tokens verarbeitet, die von `CustomAuthProvider` behandelt werden. Der Token wird automatisch validiert und der authentifizierte Benutzer-Kontext (`au`) ist in jeder Controller-Aktion verfügbar.
+Alle Anfragen werden über JWT-Tokens von `CustomAuthProvider` authentifiziert.
 
-### Berechtigungsprüfungen
+### Berechtigung-Prüfungen
 
-Nutzen Sie `au.checkAccess()`, um zu überprüfen, dass der aktuelle Benutzer die erforderliche Berechtigung hat:
+Verwenden Sie `au.checkAccess()` zum Überprüfen der erforderlichen Berechtigung:
 
 ```typescript
-au.checkAccess("People", "View");    // Lesezugriff
-au.checkAccess("People", "Edit");    // Schreibzugriff
+au.checkAccess(Permissions.people.view);    // Lesezugriff
+au.checkAccess(Permissions.people.edit);    // Schreibzugriff
 ```
-
-Wenn der Benutzer die erforderliche Berechtigung nicht hat, wird automatisch eine Fehlerantwort zurückgegeben.
 
 :::warning
-Rufen Sie immer `au.checkAccess()` auf, bevor Sie Datenvorgänge durchführen. Überspringen Sie Berechtigungsprüfungen nicht, auch nicht bei scheinbar schreibgeschützten Endpoints.
+Rufen Sie immer `au.checkAccess()` vor Datenvorgängen auf. Überspringen Sie niemals Berechtigung-Prüfungen.
 :::
-
-## Umgebungskonfiguration
-
-Die `Environment`-Klasse verarbeitet die Konfiguration über Umgebungen:
-
-- **Lokale Entwicklung:** Liest aus der `.env`-Datei im Projektroot
-- **Bereitgestellte Umgebungen:** Liest aus AWS SSM Parameter Store
-
-```typescript
-// Zugriff auf Umgebungsvariablen
-const dbConnection = Environment.membershipDb;
-const jwtSecret = Environment.jwtSecret;
-```
-
-Diese Abstraktion bedeutet, dass Ihr Code nicht wissen muss, woher die Konfiguration kommt.
 
 ## Lambda-Funktionen
 
-Bei Deployment zu AWS läuft die API als vier Lambda-Funktionen:
+Beim Deployment auf AWS läuft die API als sechs Lambda-Funktionen:
 
 | Funktion | Zweck |
 |----------|---------|
-| `web` | Verarbeitet alle HTTP REST-API-Anfragen |
-| `socket` | Verwaltet WebSocket-Verbindungen für Real-Time-Features |
-| `timer15Min` | Läuft alle 15 Minuten für E-Mail-Benachrichtigungen |
-| `timerMidnight` | Läuft täglich für Digest-E-Mails und Wartung |
-
-:::info
-Lokal läuft die `web`-Funktion auf Port 8084 und die `socket`-Funktion auf Port 8087. Timer-Funktionen können während der Entwicklung manuell ausgelöst werden.
-:::
-
-## Verwandte Artikel
-
-- **[Datenbank](./database)** — Verbindungszeichenfolgen, Schema-Skripte und Datenzugriffsmuster
-- **[Lokales API-Setup](./local-setup)** — Vollständiger Schritt-für-Schritt-Setup-Leitfaden
-- **[ApiHelper](../shared-libraries/api-helper)** — Die gemeinsame Bibliothek, die `CustomBaseController` und Auth-Middleware bereitstellt
+| `web` | Verarbeitet alle HTTP REST API-Anfragen |
+| `socket` | Verwaltet WebSocket-Verbindungen |
+| `timer15Min` | Läuft alle 30 Minuten |
+| `timerMidnight` | Läuft täglich |
+| `timerScheduledTasks` | Läuft täglich |
+| `timerWebhooks` | Läuft jede Minute |

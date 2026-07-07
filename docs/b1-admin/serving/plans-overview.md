@@ -45,10 +45,26 @@ Volunteer names are shown in a shortened format (first name and last initial, e.
 You do not need to open individual plans to fill empty slots. Click any cell in the grid to open an assignment panel for that position and date. From there you can:
 
 - Select a person from your team to assign to the position
-- Replace or remove an existing assignment
+- Click **Remove** next to anyone already assigned to pull them off that slot
 - Save the change without leaving the overview
 
 This makes it possible to staff an entire schedule in one pass — work across weeks and positions without navigating in and out of individual plans.
+
+## Auto-Scheduling from the Overview
+
+Click **Auto-Schedule** to have B1 fill every open, unfilled slot in the current grid at once. For each plan in view, it pulls candidates from the group linked to each position and fills empty slots automatically, reporting how many of the visible plans it was able to fill. Plans are filled one at a time so the same volunteer isn't double-booked across two dates in the same pass.
+
+:::info
+Auto-Schedule only fills slots that are already empty — it never replaces an existing assignment.
+:::
+
+## Emailing Everyone Scheduled
+
+Click **Email Volunteers** to send a notification to every volunteer assigned anywhere in the currently filtered date range and ministry, in one action, rather than emailing plan-by-plan. B1 reports how many emails were sent and how many failed.
+
+## Highlighting a Volunteer's Schedule
+
+Use the **Highlight** dropdown to pick a person from your team — every cell where they're assigned is called out in the grid, so you can see everywhere they're already serving before adding them to another slot. Choose **Everyone** to turn the highlight off.
 
 ## Filtering the Overview
 
@@ -57,7 +73,7 @@ You can adjust what the overview shows using the filter controls at the top:
 - **Start Date / End Date** — By default the overview shows 12 weeks into the future. Enter custom dates to expand or narrow the range.
 - **Ministry** — Switch to a different ministry without leaving the overview.
 - **Plan Type** — Filter to a specific plan type within the selected ministry.
-- **Gaps Only** — Toggle this on to hide rows where every date is already filled, so you can focus only on positions that still need a volunteer.
+- **Unfilled only** — Toggle this on to hide rows where every date is already filled, so you can focus only on positions that still need a volunteer.
 
 Click **Filter** after making changes to update the grid.
 

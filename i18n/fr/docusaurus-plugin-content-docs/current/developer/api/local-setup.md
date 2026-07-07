@@ -29,9 +29,11 @@ git clone https://github.com/ChurchApps/Api.git
 
 ### 2. Installer les dépendances
 
+Le projet utilise Yarn (un garde bloque `npm install`) :
+
 ```bash
 cd Api
-npm install
+yarn install
 ```
 
 ### 3. Configurer les variables d'environnement
@@ -57,7 +59,7 @@ npm run initdb
 Cela crée automatiquement les six bases de données et leurs tables.
 
 :::tip
-Vous pouvez initialiser la base de données d'un seul module avec `npm run initdb:membership` (ou `attendance`, `content`, `giving`, `messaging`, `doing`).
+Vous pouvez initialiser la base de données d'un seul module avec `npm run initdb -- --module=membership` (ou `attendance`, `content`, `giving`, `messaging`, `doing`).
 :::
 
 ### 5. Démarrer le serveur de développement
@@ -76,7 +78,7 @@ L'API démarre avec le rechargement automatique à [http://localhost:8084](http:
 | `npm run build` | Nettoyer, compiler TypeScript et copier les actifs |
 | `npm run test` | Exécuter les tests avec Jest (inclut la couverture) |
 | `npm run test:watch` | Exécuter les tests en mode montre |
-| `npm run lint` | Exécuter Prettier et ESLint avec correction automatique |
+| `npm run lint` | Exécuter ESLint avec correction automatique (ESLint est le seul formateur) |
 
 ## Déploiement en staging
 
@@ -94,23 +96,22 @@ Assurez-vous que vos credentials AWS sont configurés avant d'exécuter la comma
 
 ## Développement local de la bibliothèque
 
-Si vous avez besoin de développer une bibliothèque partagée (`@churchapps/helpers` ou `@churchapps/apihelper`) aux côtés de l'API, utilisez `npm link` :
+Si vous avez besoin de développer une bibliothèque partagée (`@churchapps/helpers` ou `@churchapps/apihelper`) aux côtés de l'API, compilez-la dans l'espace de travail [Packages](https://github.com/ChurchApps/Packages) et ajoutez un portail Yarn temporaire dans l'API :
 
 ```bash
-# Dans le répertoire de la bibliothèque
-cd Helpers
-npm run build
-npm link
+# Dans l'espace de travail Packages
+yarn build
 
 # Dans le répertoire de l'API
-cd ../Api
-npm link @churchapps/helpers
+yarn link ../Packages/helpers
+# ... test ...
+yarn unlink ../Packages/helpers && yarn install
 ```
 
-Cela vous permet de tester les modifications de la bibliothèque par rapport à l'API sans publier sur npm.
+Cela vous permet de tester les modifications de la bibliothèque par rapport à l'API sans publier sur npm. Voir [Bibliothèques partagées](../shared-libraries/#local-development-against-a-consuming-app) pour les détails -- et ne committez jamais la résolution du portail que le lien écrit dans `package.json`.
 
 ## Articles connexes
 
-- **[Base de données](./database)** -- Comprendre l'architecture une base de données par module
-- **[Structure du module](./module-structure)** -- Comment les contrôleurs, repositories et modèles sont organisés
+- **[Base de données](./database)** -- Comprendre l'architecture base de données par module
+- **[Structure du module](./module-structure)** -- Comment les contrôleurs, référentiels et modèles sont organisés
 - **[Bibliothèques partagées](../shared-libraries/)** -- Travailler avec `@churchapps/helpers` et `@churchapps/apihelper`

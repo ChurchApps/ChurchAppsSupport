@@ -17,6 +17,7 @@ ChurchApps utilise des stratégies de déploiement différentes selon le type de
 | [APIs](./apis) | AWS Lambda | Serverless Framework v3 (runtime Node.js 22.x) |
 | [Applications web](./web-apps) | S3 + CloudFront | Construction statique, synchronisation S3, invalidation CloudFront |
 | [Applications mobiles](./mobile) | App Stores | Expo EAS Build + Mises à jour OTA |
+| [Proxy de domaine personnalisé Caddy](./caddy-proxy) | Windows EC2 (Elastic IP `3.23.251.61`) | Caddyfile statique + service WinSW + synchronisation de carte programmée |
 | FreeShow | Téléchargement direct | Electron Builder (binaires multiplateforme) |
 
 ## Environnements

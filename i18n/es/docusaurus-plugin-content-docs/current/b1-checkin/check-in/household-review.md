@@ -1,20 +1,20 @@
 ---
-title: "Revisar su hogar"
+title: "Revisar tu hogar"
 ---
 
-# Revisar su hogar
+# Revisar tu hogar
 
 <div class="article-intro">
 
-Despues de seleccionar una persona de los resultados de busqueda, la aplicacion carga todo su hogar y lo muestra en la pantalla de revision del hogar. Este es el centro principal del proceso de registro donde puede ver a todos en su familia y gestionar sus asignaciones de grupo antes de registrarse.
+Después de seleccionar a una persona de los resultados de búsqueda, la aplicación carga tu hogar completo y lo muestra en la pantalla de revisión del hogar. Este es el centro neurálgico del proceso de registro donde puedes ver a todos en tu familia y gestionar sus asignaciones de grupo antes de registrarte.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- [Seleccione un servicio](./selecting-service) desde la pantalla de servicios
-- [Busque un miembro](./looking-up-members) y seleccionelo de los resultados de busqueda
+- [Selecciona un servicio](./selecting-service) de la pantalla de servicios
+- [Busca un miembro](./looking-up-members) y selecciona a uno de los resultados de búsqueda
 
 </div>
 
@@ -22,40 +22,42 @@ Despues de seleccionar una persona de los resultados de busqueda, la aplicacion 
 
 Cada miembro del hogar aparece como una tarjeta con:
 
-- Su **foto** (o un icono de marcador de posicion si no hay foto registrada)
-- Su **nombre para mostrar**
-- Un **resumen de sus asignaciones de grupo actuales** (mostrado como pequenas etiquetas debajo del nombre cuando la tarjeta esta contraida)
-- Una **flecha de expandir/contraer** en el lado derecho
+- Su **foto** (o un ícono de marcador de posición si no hay foto en archivo)
+- Su **nombre de visualización**
+- Un **resumen de sus asignaciones de grupo actuales** (mostradas como fichas pequeñas debajo del nombre cuando la tarjeta está colapsada)
+- Una **flecha de expandir/colapsar** en el lado derecho
 
 ## Expandir un miembro
 
-Toque la tarjeta de un miembro para expandirla. Cuando este expandida, vera una fila por cada **horario de servicio** dentro del servicio seleccionado. Cada fila muestra:
+Toca la tarjeta de un miembro para expandirla. Cuando se expande, verás una fila para cada **hora de servicio** dentro del servicio seleccionado. Cada fila muestra:
 
-- El **nombre del horario de servicio** (por ejemplo, "9:00 AM" u "11:00 AM")
-- Un **boton** que muestra el grupo actualmente asignado, o "Seleccionar grupo" si aun no se ha asignado ningun grupo
+- El **nombre de la hora del servicio** (por ejemplo, "9:00 AM" u "11:00 AM")
+- Un **botón** que muestra el grupo actualmente asignado, o "Seleccionar grupo" si aún no se ha asignado ningún grupo
 
-Toque el boton de grupo para ir a la [pantalla de seleccion de grupo](./group-assignment) donde puede elegir o cambiar el grupo para esa persona y horario de servicio.
+Toca el botón de grupo para ir a la [pantalla de selección de grupo](./group-assignment) donde puedes elegir o cambiar el grupo para esa persona y hora de servicio.
 
-Toque la tarjeta del miembro nuevamente para contraerla.
+La tarjeta expandida también muestra fichas **Miembro**, **Invitado** y **Voluntario**. Toca una para establecer cómo esta persona se registra: Miembro es el valor predeterminado. El tipo importa para salas infantiles: los voluntarios cuentan hacia la proporción de voluntario a niño de la sala, e los invitados cuentan contra cualquier capacidad de invitado que tu iglesia haya establecido.
+
+Toca la tarjeta del miembro de nuevo para colapsarla.
 
 :::tip
-No necesita asignar a cada miembro de la familia a un grupo. Los adultos que asisten al servicio principal de adoracion pueden dejarse sin asignacion de grupo. Solo asigne grupos para los miembros que necesitan registrarse en una clase o programa especifico.
+No necesitas asignar a cada miembro de la familia a un grupo. Los adultos que asisten al servicio de adoración principal pueden dejarse sin asignación de grupo. Solo asigna grupos para miembros que necesiten registrarse en una clase o programa específico.
 :::
 
-## Navegacion desde esta pantalla
+## Navegar desde esta pantalla
 
-Desde la pantalla de revision del hogar, tiene tres opciones:
+Desde la pantalla de revisión del hogar, tienes tres opciones:
 
-- **Expandir un miembro** y tocar un boton de horario de servicio para [asignar o cambiar un grupo](./group-assignment).
-- **Tocar el boton Agregar invitado** debajo de la lista de miembros para [agregar un invitado](./adding-guests) a su hogar.
-- **Tocar el boton Registrar** en la parte inferior de la pantalla para [completar el registro](./completing-checkin) de todos en el hogar.
+- **Expande un miembro** y toca un botón de hora de servicio para [asignar o cambiar un grupo](./group-assignment).
+- **Toca el botón Agregar invitado** debajo de la lista de miembros para [agregar un invitado](./adding-guests) a tu hogar.
+- **Toca el botón Registrarse** en la parte inferior de la pantalla para [completar el registro](./completing-checkin) para todos en el hogar.
 
 :::info
-Cualquier asignacion de grupo de un registro anterior al mismo servicio se precarga automaticamente. Si sus hijos asisten a los mismos grupos cada semana, es posible que no necesite cambiar nada -- solo revise y registrese.
+Cualquier asignación de grupo de un registro anterior al mismo servicio se precarga automáticamente. Si tus hijos asisten a los mismos grupos cada semana, es posible que no necesites cambiar nada: solo revisa y regístrate.
 :::
 
-## Siguientes pasos
+## Próximos pasos
 
-- [Asignar grupos](./group-assignment) a los miembros de la familia que necesitan registrarse en una clase o programa especifico.
-- [Agregar un invitado](./adding-guests) si alguien esta de visita con su familia.
-- [Completar el registro](./completing-checkin) cuando todas las asignaciones se vean correctas.
+- [Asigna grupos](./group-assignment) a miembros de la familia que necesiten registrarse en una clase o programa específico.
+- [Agrega un invitado](./adding-guests) si alguien está visitando con tu familia.
+- [Completar el registro](./completing-checkin) cuando las asignaciones de todos se vean correctas.

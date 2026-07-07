@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Arrangementer"
 ---
 
@@ -6,39 +6,41 @@ title: "Arrangementer"
 
 <div class="article-intro">
 
-Arrangementsseksjonen på B1.church lar deg bla gjennom kommende kirkearrangementer og registrere deg for dem direkte fra nettstedet. Når kirken din muliggjør registrering for et arrangement, kan du melde deg på deg selv og familiemedlemmene dine i bare noen få trinn.
+The Arrangementer section on B1.church lets you browse upcoming church events and register for them directly from the website. When your church enables registration for an event, you can sign up yourself and your family members in just a few steps — and for paid events, choose attendee types and options, apply discount codes, and pay securely as part of signing up.
 
 </div>
 
-## Bla Gjennom Arrangementer
+## Browsing Arrangementer
 
-Arrangementer vises på kirkens kalender. Når du åpner et arrangement som har registrering aktivert, vises en **Registrer deg for dette arrangementet**-knapp ved siden av arrangementet detaljer.
+Arrangementer appear on the church calendar. When you open an event that has registration enabled, a **Register for this Event** button is displayed alongside the event details.
 
-Arrangementer med aktivert registrering viser:
+Arrangementer with registration enabled show:
 
-- **Arrangementstitle og beskrivelse** -- Hva arrangementet handler om.
-- **Dato og klokkeslett** -- Når arrangementet finner sted.
-- **Registreringsknapp** -- En blå knapp som tar deg til registreringsskjemaet.
+- **Event title and description** -- What the event is about.
+- **Date and time** -- When the event takes place.
+- **Registration button** -- A blue button that takes you to the registration form.
 
-## Registreringsstatus
+## Registration Status
 
-Arrangementer kan vise ulike statuser avhengig av timing og kapasitet:
+Arrangementer may show different statuses depending on timing and capacity:
 
-- **Åpen** -- Registrering er tilgjengelig og du kan melde deg på.
-- **Ikke Åpen Ennå** -- Registreringsperioden har ikke startet. Kom tilbake etter åpningsdatoen.
-- **Lukket** -- Registreringsfristen har gått ut.
-- **Full** -- Alle tilgjengelige plasser er fylt.
+- **Open** -- Registration is available and you can sign up.
+- **Not Yet Open** -- The registration window has not started. Check back after the opening date.
+- **Closed** -- The registration deadline has passed.
+- **Full** -- All available spots have been taken.
 
 :::tip
-Hvis et arrangement er fullt, sjekk igjen senere -- plasser kan åpne seg hvis noen avbestiller registreringen.
+If an event is full, you may still be able to join the **waitlist** when your church has enabled it -- you'll be emailed automatically if a spot opens. Otherwise, check back later; spots may open up if someone cancels.
 :::
 
-## Hva Du Trenger
+## What You Need
 
-- En B1.church-konto (eller du kan registrere deg som gjest)
-- Tilgang til kirkens B1.church-nettsted
+- A B1.church account (or you can register as a guest)
+- Access to your church's B1.church website
 
-## Les Mer
+## Learn More
 
-- [Registrering for Arrangementer](./registering) -- Trinn-for-trinn-guide for å melde deg på et arrangement
-- [Selv innsjekking](../checkin/self-checkin) -- Sjekk deg inn når du ankommer arrangementet
+- [Registrering for arrangementer](./registering) -- Step-by-step guide to signing up for an event
+- [My Registrations](./my-registrations) -- View your registrations, pay balances, edit, or cancel
+- [Requesting Arrangementer & Rooms](./requesting-events) -- Request an event with the rooms and resources it needs
+- [Self Check-In](../checkin/self-checkin) -- Check in when you arrive at the event

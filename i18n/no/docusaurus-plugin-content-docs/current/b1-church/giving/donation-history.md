@@ -1,57 +1,59 @@
 ---
-title: "Donasjonshistorikk"
+title: "Gavehistorikk"
 ---
 
-# Donasjonshistorikk
+# Gavehistorikk
 
 <div class="article-intro">
 
-Når du er logget inn, kan du se en fullstendig oversikt over dine tidligere donasjoner og generere giveroppgaver for skatteformål. Donasjonshistorikken din er tilgjengelig fra **Doner**-seksjonen i B1.church-kontoen din.
+When you are logged in, you can view a complete record of your past donations and generate giving statements for tax purposes. Your donation history is available from the **Donate** section of your B1.church account.
 
 </div>
 
 <div class="prereqs">
-<h4>Før Du Begynner</h4>
+<h4>Før du begynner</h4>
 
-- Du må være [logget inn](../getting-started/logging-in.md) på B1.church-kontoen din.
-- Du må ha gitt minst én donasjon. Se [Gi en Donasjon](./making-donations.md) for å komme i gang.
+- You must be [logged in](../getting-started/logging-in.md) to your B1.church account.
+- You need to have made at least one donation. See [Making a Donation](./making-donations.md) to get started.
 
 </div>
 
-## Se Historikken Din
+## Viewing Your History
 
-1. Logg inn på B1.church-kontoen din.
-2. Naviger til **Doner**-seksjonen.
-3. Klikk **Historikk** i venstre panel for å se dine tidligere donasjoner.
+1. Log in to your B1.church account.
+2. Navigate to the **Donate** section.
+3. Click **History** in the left panel to view your past donations.
 
-Donasjonshistorikken din vises som en tabell med følgende kolonner:
+Your donation history is displayed as a table with the following columns:
 
-- **Dato** -- Når donasjonen ble gitt.
-- **Metode** -- Hvordan du betalte (for eksempel "Kort - Visa" eller "Bank - ACH").
-- **Fond** -- Hvilket fond donasjonen ble rettet til (for eksempel Generelt Fond, Bygningsfond).
-- **Beløp** -- Donasjonsbeløpet.
+- **Date** -- When the donation was made.
+- **Method** -- How you paid (for example, "Card - Visa" or "Bank - ACH").
+- **Fund** -- Which fund the donation was directed to (for example, General Fund, Building Fund).
+- **Amount** -- The dollar amount of the donation.
 
 :::info
-Donasjoner som fortsatt behandles vil vises med en "Venter"-etikett ved siden av fondnavnet og beløpet vist i en annen farge.
+Donations that are still being processed will appear with a "Pending" label next to the fund name and the amount shown in a different color.
 :::
 
-## Eksportering og Utskrift av Oppgaver
+## Exporting and Printing Statements
 
-Klikk på **last ned**-knappen i overskriften for donasjonshistorikk for å få tilgang til eksportalternativer:
+Click the **download** button in the Gavehistorikk header to access export options:
 
-- **Inneværende år (CSV)** -- Last ned en CSV-fil med alle dine donasjoner fra inneværende år. Du kan åpne denne i et regnearkprogram.
-- **Inneværende år (Utskrift)** -- Åpne en utskrivbar giveroppgave for inneværende år.
-- **Forrige år (CSV)** -- Last ned en CSV-fil med alle dine donasjoner fra forrige år.
-- **Forrige år (Utskrift)** -- Åpne en utskrivbar giveroppgave for forrige år.
+- **Current Year (CSV)** -- Download a CSV file of all your donations from the current year. You can open this in a spreadsheet application.
+- **Current Year (Print)** -- Open a printable giving statement for the current year.
+- **Last Year (CSV)** -- Download a CSV file of all your donations from the previous year.
+- **Last Year (Print)** -- Open a printable giving statement for the previous year.
 
 :::tip
-Skriv ut forrige års giveroppgave tidlig på det nye året slik at du har den klar for skattesesongen. Den utskrivbare oppgaven inkluderer alle detaljene du trenger for dine registre.
+Print your previous year's giving statement early in the new year so you have it ready for tax season. The printable statement includes all the details you need for your records.
 :::
 
-## Faste Gaver
+## Recurring Donations
 
-Fra **Doner**-seksjonen kan du også klikke **Faste Gaver** for å administrere planlagte donasjoner du har satt opp. Denne seksjonen lar deg se, oppdatere eller avbryte faste gaver og administrere dine lagrede betalingsmetoder.
+From the **Donate** section, you can also click **Recurring Donations** to manage any scheduled giving you have set up. This section lets you view, update, or cancel recurring donations and manage your saved payment methods.
 
-## Neste Steg
+If a recurring donation is charged through **Stripe**, you can also **pause** it instead of canceling -- click the pause icon next to the donation and confirm. Giving stops until you click the same icon to **resume**; a paused donation is marked **Paused** in the list. Recurring donations through other payment providers can still be edited or canceled, but not paused.
 
-- [Gi en Donasjon](./making-donations.md) -- Lær hvordan du gir en engangsgave eller fast gave
+## Neste steg
+
+- [Making a Donation](./making-donations.md) -- Learn how to make a one-time or recurring gift

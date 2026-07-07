@@ -1,33 +1,33 @@
----
-title: "Istraktura ng Module"
+﻿---
+title: "Module Structure"
 ---
 
-# Istraktura ng Module
+# Module Structure
 
 <div class="article-intro">
 
-Ang bawat API module ay sumusunod sa isang pare-parehong panloob na istraktura na may mga controller, repository, modelo, at helper. Ang pag-unawa sa layout na ito ay nagpapadali sa pag-navigate sa codebase at pagdagdag ng bagong functionality sa anumang module.
+Bawat API module ay sumusunod sa isang consistent internal structure na may controllers, repositories, models, at helpers. Ang pag-unawa sa layout na ito ay ginagawang straightforward na mag-navigate sa codebase at magdagdag ng bagong functionality sa anumang module.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- I-setup ang API nang lokal -- tingnan ang [Lokal na Pag-setup ng API](./local-setup)
-- Suriin ang arkitektura ng [Database](./database) upang maunawaan ang layer ng pag-access ng data
+- I-setup ang API nang lokal -- tingnan ang [Local API Setup](./local-setup)
+- Suriin ang [Database](./database) architecture upang maunawaan ang data access layer
 
 </div>
 
-## Layout ng Direktoryo
+## Directory Layout
 
-Ang bawat module ay nabubuhay sa ilalim ng `src/modules/{name}/` at naglalaman ng apat na direktoryo:
+Ang modules ay nakatira sa `src/modules/{name}/`. Isang typical module ay naglalaman ng apat na directories:
 
 ```
 src/modules/{name}/
-├── controllers/    ← Mga route handler (mga Express endpoint)
-├── repositories/   ← Layer ng pag-access ng data (direktang SQL)
-├── models/         ← Mga TypeScript interface at uri
-└── helpers/        ← Business logic na partikular sa module
+├── controllers/    ← Route handlers (Express endpoints)
+├── repositories/   ← Data access layer (typed SQL queries)
+├── models/         ← TypeScript interfaces at types
+└── helpers/        ← Module-specific business logic
 ```
 
 Halimbawa, ang membership module:
@@ -39,8 +39,8 @@ src/modules/membership/
 │   ├── GroupController.ts
 │   └── ...
 ├── repositories/
-│   ├── PersonRepository.ts
-│   ├── GroupRepository.ts
+│   ├── PersonRepo.ts
+│   ├── GroupRepo.ts
 │   └── ...
 ├── models/
 │   ├── Person.ts
@@ -50,39 +50,48 @@ src/modules/membership/
     └── ...
 ```
 
-## Mga Controller
+Ang anim na core data modules -- membership, attendance, content, giving, messaging, at doing -- ay lahat ay sumusunod sa layout na ito. Ilang specialized modules (tulad ng reporting, na nagsisilbi ng cross-module reports at walang sariling data) ay umuupo sa kanilang panig sa `src/modules/`.
 
-Tinutukoy ng mga controller ang mga API route para sa isang module. Nag-eextend sila ng `CustomBaseController` mula sa `@churchapps/apihelper` at gumagamit ng mga Inversify decorator para sa pagpaparehistro ng ruta.
+## One Application, Many Modules
+
+Ang API ay isang **modular monolith**: ang modules ay nagtutukoy ng boundaries ng code organization at data ownership, hindi separate services. Sa startup, ang bawat module's controllers ay naka-register sa isang single dependency-injection container sa likod ng isang Express application, kaya ang buong API ay bumubuo, tumatakbo, at nag-deploy bilang isang unit -- ang deployed functions na inilarawan sa ibaba ay lahat ng entry points sa parehong application.
+
+Ang bawat module's routes ay nakatira sa ilalim ng isang URL prefix na tumutugma sa module name:
+
+```
+/membership/*    /attendance/*    /content/*
+/giving/*        /messaging/*     /doing/*
+```
+
+Ito ay nagpapanatili sa bawat module's API surface na self-contained habang ang clients ay nag-uusap pa rin sa isang single host.
+
+## Controllers
+
+Ang controllers ay tumutukoy ng API routes para sa isang module. Bawat module ay may sarili nitong base controller (halimbawa `MembershipBaseController`), na nag-extend ng shared `BaseController` -- mismo itong itinayo sa `CustomBaseController` mula sa `@churchapps/apihelper`. Ang routes ay naka-register sa Inversify decorators.
 
 ```typescript
-import { controller, httpGet, httpPost } from "inversify-express-utils";
-import { CustomBaseController } from "@churchapps/apihelper";
+import express from "express";
+import { controller, httpGet } from "inversify-express-utils";
+import { MembershipBaseController } from "./MembershipBaseController.js";
+import { Permissions } from "../helpers/index.js";
 
-@controller("/people")
-export class PersonController extends CustomBaseController {
+@controller("/membership/people")
+export class PersonController extends MembershipBaseController {
 
-  @httpGet("/")
-  public async loadAll() {
-    return this.actionWrapper(async (au) => {
-      // au = konteksto ng naka-authenticate na gumagamit
-      au.checkAccess("People", "View");
-      const repos = RepositoryManager.getRepositories<MembershipRepositories>("membership");
-      return repos.person.loadByChurchId(au.churchId);
-    });
-  }
-
-  @httpPost("/")
-  public async save() {
-    return this.actionWrapper(async (au) => {
-      au.checkAccess("People", "Edit");
-      const data = this.request.body;
-      // ... lohika ng pag-save
+  @httpGet("/recent")
+  public async getRecent(req: express.Request, res: express.Response): Promise<any> {
+    return this.actionWrapper(req, res, async (au) => {
+      // au = authenticated user context
+      if (!au.checkAccess(Permissions.people.view)) return this.json({}, 401);
+      return this.repos.person.loadRecent(au.churchId);
     });
   }
 }
 ```
 
-### Mga Route Decorator
+Ang `actionWrapper` ay nag-authenticate ng request at nag-hydrate ng `this.repos` na may module's repositories bago patakbuhin ang iyong action.
+
+### Route Decorators
 
 | Decorator | HTTP Method |
 |-----------|-------------|
@@ -92,84 +101,105 @@ export class PersonController extends CustomBaseController {
 | `@httpPatch("/path")` | PATCH |
 | `@httpDelete("/path")` | DELETE |
 
-Ang `@controller("/base")` decorator ay nagtatakda ng base path para sa lahat ng ruta sa controller.
+Ang `@controller("/base")` decorator ay nagtakda ng base path para sa lahat ng routes sa controller.
 
-## Mga Repository
+## Repositories
 
-Hina-handle ng mga repository ang lahat ng operasyon sa database gamit ang direktang SQL sa pamamagitan ng `DB.query()`. Walang ORM -- direkta kang nagsusulat ng SQL.
+Ang repositories ay humawak ng lahat ng database operations. Walang ORM -- ang queries ay isinusulat gamit ang Kysely query builder, typed laban sa module's database schema. Bawat module's `db/index.ts` ay nagha-expose ng `getDb()` function na nagbabalik ng module's typed Kysely instance.
 
 ```typescript
-export class PersonRepository {
-  public async loadByChurchId(churchId: string) {
-    return DB.query("SELECT * FROM people WHERE churchId=?", [churchId]);
-  }
+import { injectable } from "inversify";
+import { getDb } from "../db/index.js";
 
-  public async save(person: Person) {
-    // INSERT o UPDATE lohika
+@injectable()
+export class PersonRepo {
+  public async load(churchId: string, id: string) {
+    return getDb().selectFrom("people").selectAll()
+      .where("id", "=", id)
+      .where("churchId", "=", churchId)
+      .executeTakeFirst();
   }
 }
 ```
 
-I-access ang mga repository sa pamamagitan ng `RepositoryManager`:
+Sa loob ng isang controller, ang module's repositories ay available bilang `this.repos`. Sa labas ng controllers, makuha ang mga ito sa pamamagitan ng `RepoManager`:
 
 ```typescript
-const repos = RepositoryManager.getRepositories<MembershipRepositories>("membership");
-const people = await repos.person.loadByChurchId(churchId);
+const repos = await RepoManager.getRepos<Repos>("membership");
+const people = await repos.person.loadAll(churchId);
 ```
 
-## Authentication at Awtorisasyon
+## Cross-Module Communication
+
+Bawat module ay may-ari ng sarili nitong database (tingnan ang [Database](./database)), at isang module ay hindi kailanman nag-query ng iba pang module's tables nang direkta. Kapag isang module ay kailangan ng data na-own ng iba -- halimbawa, ang doing module na nag-resolve ng people mula sa membership -- ito ay napupunta sa pamamagitan ng owning module's **gateway** sa `src/shared/modules/`:
+
+```typescript
+import { getMembershipModuleGateway } from "../../../shared/modules/index.js";
+
+const people = await getMembershipModuleGateway().loadPeople(churchId, personIds);
+```
+
+Bawat gateway (`MembershipModuleGateway`, `GivingModuleGateway`, at iba pa) ay isang TypeScript interface na tumutukoy kung aling operations ang nag-expose ng owning module sa natitirang API. Ang interface ay ang contract: ang current implementations ay nagsasaad ng owning module's database in-process, ngunit dahil ang callers ay nakadepende lamang sa interface, isang implementation ay maaaring baguhin -- halimbawa, para sa isa na gumagawa ng HTTP calls -- kung isang module ay kailanman mai-extract sa isang separate service.
+
+:::info
+Kung ang data na kailangan mo ay nakatira sa iba pang module at ang gateway nito ay hindi nag-expose ng operation para dito, palawakin ang gateway interface sa halip na umaabot sa iba pang module's repositories o database.
+:::
+
+## Authentication at Authorization
 
 ### JWT Authentication
 
-Lahat ng kahilingan ay naka-authenticate sa pamamagitan ng mga JWT token na hina-handle ng `CustomAuthProvider`. Awtomatikong vina-validate ang token at ang konteksto ng naka-authenticate na gumagamit (`au`) ay magagamit sa bawat aksyon ng controller.
+Lahat ng requests ay naka-authenticate sa pamamagitan ng JWT tokens na hinahawakan ng `CustomAuthProvider`. Ang token ay automatically na-validate at ang authenticated user context (`au`) ay available sa bawat controller action.
 
-### Mga Pagsusuri ng Pahintulot
+### Permission Checks
 
-Gamitin ang `au.checkAccess()` upang i-verify na ang kasalukuyang gumagamit ay may kinakailangang pahintulot:
+Gamitin ang `au.checkAccess()` upang i-verify na ang current user ay may required permission. Ang permissions ay predefined constants na pinagsasama ang content type at isang action:
 
 ```typescript
-au.checkAccess("People", "View");    // Access sa pagbabasa
-au.checkAccess("People", "Edit");    // Access sa pagsusulat
+au.checkAccess(Permissions.people.view);    // Read access
+au.checkAccess(Permissions.people.edit);    // Write access
 ```
 
-Kung ang gumagamit ay walang kinakailangang pahintulot, awtomatikong ibinabalik ang isang tugon na error.
+Kung ang user ay nag-lack ng required permission, isang error response ay automatically na ibinabalik.
 
 :::warning
-Palaging tawagan ang `au.checkAccess()` bago magsagawa ng anumang mga operasyon sa data. Huwag kailanman laktawan ang mga pagsusuri ng pahintulot, kahit para sa mga endpoint na tila read-only lang.
+Laging tawakin ang `au.checkAccess()` bago magsagawa ng anumang data operations. Hindi kailanman i-skip ang permission checks, kahit para sa seemingly read-only endpoints.
 :::
 
-## Configuration ng Kapaligiran
+## Environment Configuration
 
-Hina-handle ng `Environment` class ang configuration sa iba't ibang kapaligiran:
+Ang `Environment` class ay humawak ng configuration sa buong environments:
 
-- **Lokal na development:** Nagbabasa mula sa `.env` file sa root ng proyekto
-- **Mga na-deploy na kapaligiran:** Nagbabasa mula sa AWS SSM Parameter Store
+- **Local development:** Nagsasaad mula sa `.env` file sa project root
+- **Deployed environments:** Nagsasaad mula sa AWS SSM Parameter Store
 
 ```typescript
-// I-access ang mga variable ng kapaligiran
-const dbConnection = Environment.membershipDb;
+// Access environment variables
 const jwtSecret = Environment.jwtSecret;
+const corsOrigin = Environment.corsOrigin;
 ```
 
-Ang abstraction na ito ay nangangahulugang hindi kailangang malaman ng iyong code kung saan nanggagaling ang configuration.
+Ang abstraction na ito ay nangangahulugan na ang iyong code ay hindi kailangang malaman kung saan nanggagaling ang configuration.
 
-## Mga Lambda Function
+## Lambda Functions
 
-Kapag na-deploy sa AWS, ang API ay tumatakbo bilang apat na Lambda function:
+Kapag na-deploy sa AWS, ang API ay tumatakbo bilang anim na Lambda functions:
 
-| Function | Layunin |
+| Function | Purpose |
 |----------|---------|
-| `web` | Hina-handle ang lahat ng HTTP REST API request |
-| `socket` | Pinapamahalaan ang mga koneksyon ng WebSocket para sa mga real-time na tampok |
-| `timer15Min` | Naka-schedule tuwing 15 minuto para sa mga abiso sa email |
-| `timerMidnight` | Naka-schedule araw-araw para sa mga digest email at maintenance |
+| `web` | Humawak ng lahat ng HTTP REST API requests |
+| `socket` | Namamahala sa WebSocket connections para sa real-time features |
+| `timer15Min` | Scheduled bawat 30 minuto para sa email notifications (ang pangalan ay historical) |
+| `timerMidnight` | Scheduled araw-araw para sa digest emails at maintenance |
+| `timerScheduledTasks` | Scheduled araw-araw para sa due automations at overdue workflow processing |
+| `timerWebhooks` | Scheduled bawat minuto upang maghatid ng queued outbound webhooks |
 
 :::info
-Sa lokal, ang `web` function ay tumatakbo sa port 8084 at ang `socket` function ay tumatakbo sa port 8087. Ang mga timer function ay maaaring ma-trigger nang mano-mano sa panahon ng development.
+Nang lokal, ang `web` function ay tumatakbo sa port 8084 at ang `socket` function ay tumatakbo sa port 8087. Ang timer functions ay maaaring i-trigger nang manu-mano sa development.
 :::
 
-## Mga Kaugnay na Artikulo
+## Related Articles
 
-- **[Database](./database)** -- Mga connection string, script ng schema, at mga pattern ng pag-access ng data
-- **[Lokal na Pag-setup ng API](./local-setup)** -- Kumpletong gabay sa pag-setup nang sunud-sunod
+- **[Database](./database)** -- Connection strings, schema scripts, at data access patterns
+- **[Local API Setup](./local-setup)** -- Full step-by-step setup guide
 - **[ApiHelper](../shared-libraries/api-helper)** -- Ang shared library na nagbibigay ng `CustomBaseController` at auth middleware

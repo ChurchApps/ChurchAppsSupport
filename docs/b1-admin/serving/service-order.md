@@ -49,7 +49,16 @@ You can add songs directly from your [Songs](./songs.md) library. This links the
 
 ## Reordering Items
 
-Drag and drop items to rearrange the order. The sequence shown on screen is the order your team will follow during the service.
+Drag items by the handle on the left of each row to rearrange the order — drop onto the blue line where you want the item to land, or onto a section header to move it into that section. The sequence shown on screen is the order your team will follow during the service.
+
+## Timing and Media
+
+Each item and section shows how long it runs and when it starts:
+
+- If the plan has a single service time selected, the left rail shows the actual **clock time** each item starts (for example, 9:14 AM). Otherwise it shows elapsed time from the start of the service.
+- Section headers total up the running time of everything inside them.
+- Songs and custom items count toward this schedule once you enter **Minutes**/**Seconds** on the item's edit screen.
+- Items you add from your media library (images or video clips) show a **thumbnail** and are timed automatically — a video's duration is measured from the file itself, while an image contributes a ~5:00 planning estimate (shown in italics) since it stays on screen until an operator advances it. You can still edit either one to a specific duration.
 
 ## Editing and Removing Items
 

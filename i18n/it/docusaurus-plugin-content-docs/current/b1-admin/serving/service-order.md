@@ -1,12 +1,12 @@
 ---
-title: "Ordine del servizio"
+title: "Ordine di servizio"
 ---
 
-# Ordine del servizio
+# Ordine di servizio
 
 <div class="article-intro">
 
-L'ordine del servizio definisce la sequenza degli elementi nel tuo servizio di adorazione. Usalo per definire tutto dalla canzone d'apertura alla preghiera di chiusura, in modo che l'intero tuo team conosca il flusso del servizio in anticipo.
+L'ordine di servizio definisce la sequenza di elementi nel tuo servizio di adorazione. Usalo per disporre tutto, dall'apertura del canto alla preghiera di chiusura, in modo che il tuo intero team conosca il flusso del servizio in anticipo.
 
 </div>
 
@@ -14,74 +14,83 @@ L'ordine del servizio definisce la sequenza degli elementi nel tuo servizio di a
 <h4>Prima di iniziare</h4>
 
 - [Crea un piano di servizio](./plans.md) per la data per cui desideri costruire un ordine di servizio
-- Facoltativamente, aggiungi [canzoni](./songs.md) alla tua libreria in modo da poterle collegare direttamente all'ordine del servizio
+- Facoltativamente, aggiungi [canzoni](./songs.md) alla tua libreria in modo da poter collegare direttamente nell'ordine di servizio
 
 </div>
 
-## Accesso all'ordine del servizio
+## Accesso all'ordine di servizio
 
-1. Naviga a **Serving** e seleziona il tuo ministero.
+1. Accedi a **Servizio** e seleziona il tuo ministero.
 2. Fai clic su un **tipo di piano**, quindi apri un **piano** specifico.
-3. Fai clic sulla scheda **Service Order** nella pagina dei dettagli del piano.
+3. Fai clic sulla scheda **Ordine di servizio** nella pagina dei dettagli del piano.
 
-## Costruzione del tuo ordine del servizio
+## Costruzione del tuo ordine di servizio
 
-L'ordine del servizio è un elenco di elementi disposti nella sequenza in cui si verificheranno durante il servizio. Gli elementi comuni includono:
+L'ordine di servizio è un elenco di articoli disposti nella sequenza in cui si verificheranno durante il servizio. Gli elementi comuni includono:
 
 - Canzoni di adorazione
 - Preghiere
-- Letture delle Scritture
+- Letture scritturali
 - Annunci
 - Sermone o messaggio
 - Offerta
 - Chiusura
 
-## Aggiunta di elementi all'ordine del servizio
+## Aggiunta di articoli all'ordine di servizio
 
-1. Nella scheda **Service Order**, fai clic su **Add Item**.
-2. Scegli il tipo di elemento che desideri aggiungere (ad esempio, una canzone dalla tua libreria, un elemento personalizzato o un titolo).
-3. Inserisci i dettagli dell'elemento, come il titolo e qualsiasi nota.
-4. Fai clic su **Save**.
+1. Nella scheda **Ordine di servizio**, fai clic su **Aggiungi articolo**.
+2. Scegli il tipo di elemento che desideri aggiungere (ad esempio, una canzone dalla tua libreria, un articolo personalizzato o un'intestazione).
+3. Inserisci i dettagli dell'articolo, come il titolo e eventuali note.
+4. Fai clic su **Salva**.
 
 :::tip
-Puoi aggiungere canzoni direttamente dalla tua libreria [Songs](./songs.md). Questo collega i dettagli della canzone, inclusi i testi e gli arrangiamenti, al tuo piano di servizio in modo che il tuo team di adorazione abbia tutto ciò di cui ha bisogno.
+Puoi aggiungere canzoni direttamente dalla tua libreria [Canzoni](./songs.md). Questo collega i dettagli della canzone, inclusi testi e arrangiamenti, al tuo piano di servizio in modo che il tuo team di adorazione abbia tutto ciò di cui ha bisogno.
 :::
 
-## Riordinamento degli elementi
+## Riordinamento degli articoli
 
-Trascina e rilascia gli elementi per riordinare l'ordine. La sequenza mostrata sullo schermo è l'ordine che il tuo team seguirà durante il servizio.
+Trascina gli articoli dalla maniglia a sinistra di ogni riga per riordinare -- rilascia sulla linea blu dove desideri che l'articolo atterri, o su un'intestazione di sezione per spostarlo in quella sezione. La sequenza mostrata sullo schermo è l'ordine che il tuo team seguirà durante il servizio.
 
-## Modifica e rimozione di elementi
+## Tempi e media
 
-- Fai clic su qualsiasi elemento nell'ordine del servizio per **modificare** i suoi dettagli.
-- Usa l'opzione **delete** per rimuovere un elemento dall'ordine.
+Ogni articolo e sezione mostra quanto tempo dura e quando inizia:
+
+- Se il piano ha un singolo orario di servizio selezionato, la guida sinistra mostra l'ora effettiva del **orologio** in cui inizia ogni articolo (ad esempio, 9:14 AM). Altrimenti mostra il tempo trascorso dall'inizio del servizio.
+- Le intestazioni di sezione totalizzano il tempo di esecuzione di tutto ciò che contengono.
+- Le canzoni e gli articoli personalizzati contano verso questo programma una volta che inserisci **Minuti**/**Secondi** nella schermata di modifica dell'articolo.
+- Gli articoli che aggiungi dalla tua libreria multimediale (immagini o clip video) mostrano una **miniatura** e sono tempizzati automaticamente -- la durata di un video è misurata dal file stesso, mentre un'immagine contribuisce a una stima di pianificazione di circa 5:00 (mostrata in italico) poiché rimane sullo schermo fino a quando un operatore non lo avanza. Puoi comunque modificare uno dei due a una durata specifica.
+
+## Modifica e rimozione di articoli
+
+- Fai clic su qualsiasi articolo nell'ordine di servizio per **modificare** i suoi dettagli.
+- Usa l'opzione **elimina** per rimuovere un articolo dall'ordine.
 
 :::info
-L'ordine del servizio è specifico per ogni piano. Le modifiche che fai qui interessano solo il piano selezionato e non altereranno altri piani o la tua libreria di canzoni.
+L'ordine di servizio è specifico di ogni piano. Le modifiche che apportate qui influiscono solo sul piano selezionato e non altera altri piani o la tua libreria di canzoni.
 :::
 
-## Inclusione di elementi in orari di servizio specifici
+## Inclusione di articoli in orari di servizio specifici
 
-Se il tuo piano ha più di un orario di servizio (ad esempio, un servizio alle 8 e alle 10), puoi scegliere in quali servizi ogni elemento deve apparire. Questo è utile quando un annuncio è rilevante solo per un servizio o quando una canzone viene cantata in un servizio ma non in un altro.
+Se il tuo piano ha più di un orario di servizio (ad esempio, un servizio alle 8:00 e alle 10:00), puoi scegliere in quali servizi dovrebbe apparire ogni articolo. Questo è utile quando un annuncio è rilevante solo per un servizio, o quando una canzone è cantata in un servizio ma non in un altro.
 
-1. Apri un piano che ha due o più orari di servizio definiti sulla scheda **Times**.
-2. Nella scheda **Service Order**, fai clic su un elemento per modificarlo.
-3. In **Include in Services**, vedrai una casella di controllo per ogni orario di servizio, etichettato con l'ora.
-4. Deseleziona qualsiasi servizio in cui l'elemento deve essere saltato.
-5. Fai clic su **Save**.
+1. Apri un piano che ha due o più orari di servizio definiti nella scheda **Orari**.
+2. Nella scheda **Ordine di servizio**, fai clic su un articolo per modificarlo.
+3. Sotto **Includi nei servizi**, vedrai una casella di controllo per ogni orario di servizio, etichettata con l'ora.
+4. Deseleziona qualsiasi servizio in cui l'articolo dovrebbe essere saltato.
+5. Fai clic su **Salva**.
 
-Per impostazione predefinita, ogni elemento è incluso in ogni servizio. Gli orari di servizio esclusi sono nascosti quando stampi il piano filtrato per quel servizio, in modo che ogni servizio riceva un foglio di corsa pulito con solo gli elementi rilevanti.
+Per impostazione predefinita, ogni articolo è incluso in ogni servizio. Gli orari di servizio esclusi sono nascosti quando stampi il piano filtrato a quel servizio, in modo che ogni servizio riceva un foglio di corsa pulito con solo gli articoli rilevanti.
 
 :::tip
-La sezione **Include in Services** appare solo quando il piano ha più di un orario di servizio. Se vedi un solo servizio, modifica la scheda **Times** del piano per aggiungere prima servizi aggiuntivi.
+La sezione **Includi nei servizi** appare solo quando il piano ha più di un orario di servizio. Se vedi solo un servizio, modifica la scheda **Orari** del piano per aggiungere servizi aggiuntivi per primo.
 :::
 
-## Condivisione dell'ordine del servizio
+## Condivisione dell'ordine di servizio
 
-Una volta completato l'ordine del servizio, puoi stampare il piano completo (incluso l'ordine del servizio) dalla pagina dei dettagli del piano. Questo dà al tuo team una panoramica completa del servizio.
+Una volta completato l'ordine di servizio, puoi stampare il piano completo (incluso l'ordine di servizio) dalla pagina dei dettagli del piano. Questo dà al tuo team un resoconto completo del servizio.
 
 ## Passaggi successivi
 
-- Gestisci il tuo repertorio di adorazione nella pagina [Songs](./songs.md)
-- Assegna volontari al servizio nella scheda [Plans](./plans.md) Assignments
-- Crea [Tasks](./tasks.md) per qualsiasi elemento di follow-up relativo al servizio
+- Gestisci il tuo repertorio di adorazione nella pagina [Canzoni](./songs.md)
+- Assegna i volontari al servizio nella scheda [Piani](./plans.md) Assegnazioni
+- Crea [Attività](./tasks.md) per qualsiasi elemento di follow-up correlato al servizio

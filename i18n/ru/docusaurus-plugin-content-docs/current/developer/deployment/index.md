@@ -14,10 +14,11 @@ ChurchApps использует различные стратегии развё
 
 | Тип проекта | Цель развёртывания | Инструментарий |
 |-------------|-------------------|---------|
-| [API](./apis) | AWS Lambda | Serverless Framework v3 (среда выполнения Node.js 22.x) |
-| [Веб-приложения](./web-apps) | S3 + CloudFront | Статическая сборка, синхронизация с S3, инвалидация CloudFront |
+| [APIs](./apis) | AWS Lambda | Serverless Framework v3 (Node.js 22.x runtime) |
+| [Веб-приложения](./web-apps) | S3 + CloudFront | Статическая сборка, синхронизация S3, инвалидация CloudFront |
 | [Мобильные приложения](./mobile) | Магазины приложений | Expo EAS Build + OTA-обновления |
-| FreeShow | Прямое скачивание | Electron Builder (кросс-платформенные бинарники) |
+| [Caddy Custom-Domain Proxy](./caddy-proxy) | Windows EC2 (Elastic IP `3.23.251.61`) | Статический Caddyfile + WinSW сервис + запланированная синхронизация карты |
+| FreeShow | Прямая загрузка | Electron Builder (кросс-платформенные бинарники) |
 
 ## Окружения
 

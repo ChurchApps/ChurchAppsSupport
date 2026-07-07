@@ -29,9 +29,11 @@ git clone https://github.com/ChurchApps/Api.git
 
 ### 2. Instale as dependências
 
+O projeto usa Yarn (uma proteção bloqueia `npm install`):
+
 ```bash
 cd Api
-npm install
+yarn install
 ```
 
 ### 3. Configure as variáveis de ambiente
@@ -57,7 +59,7 @@ npm run initdb
 Isso cria todos os seis bancos de dados e suas tabelas automaticamente.
 
 :::tip
-Você pode inicializar o banco de dados de um único módulo com `npm run initdb:membership` (ou `attendance`, `content`, `giving`, `messaging`, `doing`).
+Você pode inicializar o banco de dados de um único módulo com `npm run initdb -- --module=membership` (ou `attendance`, `content`, `giving`, `messaging`, `doing`).
 :::
 
 ### 5. Inicie o servidor de desenvolvimento
@@ -76,7 +78,7 @@ A API inicia com hot reload em [http://localhost:8084](http://localhost:8084).
 | `npm run build` | Limpar, compilar TypeScript e copiar assets |
 | `npm run test` | Executar testes com Jest (inclui cobertura) |
 | `npm run test:watch` | Executar testes em modo de observação |
-| `npm run lint` | Executar Prettier e ESLint com auto-correção |
+| `npm run lint` | Executar ESLint com auto-fix (ESLint é o único formatador) |
 
 ## Implantação em Staging
 
@@ -94,20 +96,19 @@ Certifique-se de que suas credenciais AWS estejam configuradas antes de executar
 
 ## Desenvolvimento Local de Bibliotecas
 
-Se você precisar desenvolver uma biblioteca compartilhada (`@churchapps/helpers` ou `@churchapps/apihelper`) junto com a API, use `npm link`:
+Se você precisar desenvolver uma biblioteca compartilhada (`@churchapps/helpers` ou `@churchapps/apihelper`) junto com a API, construa-a no workspace [Packages](https://github.com/ChurchApps/Packages) e adicione um portal Yarn temporário na API:
 
 ```bash
-# No diretório da biblioteca
-cd Helpers
-npm run build
-npm link
+# No workspace do Packages
+yarn build
 
 # No diretório da API
-cd ../Api
-npm link @churchapps/helpers
+yarn link ../Packages/helpers
+# ... teste ...
+yarn unlink ../Packages/helpers && yarn install
 ```
 
-Isso permite testar alterações na biblioteca contra a API sem publicar no npm.
+Isso permite testar alterações na biblioteca contra a API sem publicar no npm. Veja [Bibliotecas Compartilhadas](../shared-libraries/#local-development-against-a-consuming-app) para detalhes -- e nunca faça commit da resolução do portal que o link escreve em `package.json`.
 
 ## Artigos Relacionados
 

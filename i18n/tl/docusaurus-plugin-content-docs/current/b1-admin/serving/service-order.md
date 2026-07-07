@@ -49,7 +49,16 @@ Maaari kang magdagdag ng mga kanta nang direkta mula sa iyong [Songs](./songs.md
 
 ## Pag-reorder ng Mga Item
 
-I-drag at i-drop ang mga item upang ayusin ang order. Ang pagkakasunod-sunod na ipinapakita sa screen ay ang order na susundin ng iyong team sa panahon ng serbisyo.
+Mag-drag ng mga item sa pamamagit ng handle sa kaliwa ng bawat row upang iayos ang order — magtakda sa blue line kung saan nais mong makabuo ang item, o sa section header upang i-move ito sa section na iyon. Ang pagkakasunod-sunod na ipinakikita sa screen ay ang order na susundin ng iyong team sa panahon ng serbisyo.
+
+## Timing at Media
+
+Bawat item at section ay nagpapakita kung gaano katagal ito tumatakbo at kailan ito nagsisimula:
+
+- Kung ang plano ay may isang service time na napili, ang left rail ay nagpapakita ng actual na **clock time** na nagsisimula ang bawat item (halimbawa, 9:14 AM). Kung hindi, ito ay nagpapakita ng elapsed time mula sa simula ng serbisyo.
+- Ang mga section headers ay nag-total sa running time ng lahat ng loob.
+- Ang mga kanta at custom items ay nag-count tungo sa schedule na ito sa sandaling magpasok ka ng **Minutes**/**Seconds** sa edit screen ng item.
+- Ang mga item na idadagdag mo mula sa iyong media library (mga imahe o video clips) ay nagpapakita ng **thumbnail** at timed automatically — ang duration ng video ay sinusukat mula sa file mismo, habang ang isang imahe ay nag-ambag ng ~5:00 planning estimate (ipinapakita sa italics) dahil ito ay nananatili sa screen hanggang sa mag-advance ang isang operator. Maaari mo pa ring i-edit kahit alin sa isang specific na duration.
 
 ## Pag-edit at Pag-aalis ng Mga Item
 
@@ -73,7 +82,7 @@ Kung ang iyong plano ay may higit sa isang service time (halimbawa, isang 8 a.m.
 Sa default, bawat item ay kasama sa bawat serbisyo. Ang mga excluded service times ay nakatagpo kapag nag-print ka ng plano na nakafilter sa serbisyong iyon, kaya bawat serbisyo ay makakatanggap ng isang malinis na run sheet na may kasamang mga relevant items lamang.
 
 :::tip
-Ang **Include in Services** section ay lumilitaw lamang kapag ang plano ay may higit sa isang service time. Kung makikita mo lamang ang isang serbisyo, i-edit ang **Times** tab ng plano upang magdagdag ng karagdagang mga serbisyo muna.
+Ang **Include in Services** section ay lumilitap lamang kapag ang plano ay may higit sa isang service time. Kung makikita mo lamang ang isang serbisyo, i-edit ang **Times** tab ng plano upang magdagdag ng karagdagang mga serbisyo muna.
 :::
 
 ## Pagbabahagi ng Service Order

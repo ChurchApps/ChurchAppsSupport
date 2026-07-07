@@ -1,4 +1,4 @@
----
+﻿---
 title: "Mga Kaganapan"
 ---
 
@@ -6,39 +6,41 @@ title: "Mga Kaganapan"
 
 <div class="article-intro">
 
-Ang seksyon ng Mga Kaganapan sa B1.church ay nagpapahintulot sa iyo na mag-browse sa mga darating na kaganapan ng simbahan at magparehistro para sa mga ito nang direkta mula sa website. Kapag ang iyong simbahan ay nagpagana ng pagpaparehistro para sa isang kaganapan, maaari kang mag-sign up ng iyong sarili at ng mga miyembro ng iyong pamilya sa loob lamang ng iilan na hakbang.
+Ang Events section sa B1.church ay nagbibigay-daan sa iyo na tingnan ang mga darating na kaganapan ng simbahan at mag-register para sa kanila direkta mula sa website. Kapag pinagana ng iyong simbahan ang registration para sa isang kaganapan, maaari kang mag-sign up ng iyong sarili at ng mga miyembro ng pamilya sa loob lamang ng ilang hakbang -- at para sa mga bayad na kaganapan, pumili ng attendee type at opsyon, mag-apply ng discount code, at magbayad nang secure bilang bahagi ng pag-sign up.
 
 </div>
 
-## Pag-browse ng mga Kaganapan
+## Pagbrowse ng Mga Kaganapan
 
-Ang mga kaganapan ay lumilitaw sa kalendaryo ng simbahan. Kapag bumubukas ka ng isang kaganapan na may enabled na pagpaparehistro, isang **Register for this Event** na pindot ay ipinakita sa tabi ng mga detalye ng kaganapan.
+Ang mga kaganapan ay lumilitaw sa church calendar. Kapag bukas mo ang isang kaganapan na may naka-enable na registration, ang isang **Register for this Event** button ay ipapakita sa tabi ng event detail.
 
-Ang mga kaganapan na may enabled na pagpaparehistro ay nagpapakita ng:
+Ang mga kaganapan na may naka-enable na registration ay nagpapakita ng:
 
-- **Event title and description** -- Ano ang tungkol sa kaganapan.
-- **Date and time** -- Kailan ang kaganapan.
-- **Registration button** -- Isang asul na pindot na nagdadala sa iyo sa registration form.
+- **Event title at description** -- Ano ang tungkol ng kaganapan.
+- **Date at time** -- Kailan mangyayari ang kaganapan.
+- **Registration button** -- Isang asul na button na magdadala sa iyo sa registration form.
 
-## Kalagayan ng Pagpaparehistro
+## Registration Status
 
-Ang mga kaganapan ay maaaring magpakita ng iba't ibang mga status depende sa oras at kapasidad:
+Ang mga kaganapan ay maaaring magpakita ng iba't ibang status depende sa oras at kapasidad:
 
-- **Open** -- Ang pagpaparehistro ay available at maaari kang mag-sign up.
-- **Not Yet Open** -- Ang window ng pagpaparehistro ay hindi pa nagsimula. Bumalik pagkatapos ng petsa ng pagbubukas.
-- **Closed** -- Ang deadline ng pagpaparehistro ay lumipas na.
-- **Full** -- Lahat ng available na mga lugar ay napuno na.
+- **Open** -- Ang registration ay available at maaari kang mag-sign up.
+- **Not Yet Open** -- Ang registration window ay hindi pa nagsimula. Bumalik pagkatapos ng opening date.
+- **Closed** -- Ang registration deadline ay lumipas na.
+- **Full** -- Lahat ng available na spot ay nakunan na.
 
 :::tip
-Kung ang isang kaganapan ay puno, bumalik sa ibang oras -- ang mga lugar ay maaaring mag-bukas kung may gumagawa ng pagkakataon na bawiin ang kanilang pagpaparehistro.
+Kung ang isang kaganapan ay puno, maaari pa rin kang sumali sa **waitlist** kapag nag-enable ang iyong simbahan -- ikaw ay ipapadala ng email nang awtomatiko kung bumukas ang isang spot. Kung hindi, bumalik mamaya; maaaring magbukas ng spot kung may mag-cancel ang isang tao.
 :::
 
-## Ano ang Kailangan mo
+## Ano Ang Kailangan Mo
 
-- Isang B1.church account (o maaari kang magparehistro bilang isang bisita)
-- Access sa website ng iyong simbahan sa B1.church
+- Isang B1.church account (o maaari kang mag-register bilang guest)
+- Access sa B1.church website ng iyong simbahan
 
 ## Matuto ng Higit Pa
 
-- [Registering for Events](./registering) -- Hakbang-sa-hakbang na gabay upang mag-sign up para sa isang kaganapan
+- [Pag-register para sa Mga Kaganapan](./registering) -- Step-by-step guide sa pag-sign up para sa isang kaganapan
+- [Ang Aking Mga Registration](./my-registrations) -- Tingnan ang iyong mga registration, magbayad ng balanse, mag-edit, o mag-cancel
+- [Mga Kahilingan para sa Mga Kaganapan at Kuwarto](./requesting-events) -- Humiling ng isang kaganapan na may mga kuwarto at recursos na kailangan nito
 - [Self Check-In](../checkin/self-checkin) -- Mag-check in kapag dumating ka sa kaganapan

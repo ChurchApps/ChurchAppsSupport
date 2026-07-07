@@ -1,65 +1,72 @@
 ---
-title: "Completamento del Check-In"
+title: "Completamento della Registrazione"
 ---
 
-# Completamento del Check-In
+# Completamento della Registrazione
 
 <div class="article-intro">
 
-Una volta che hai rivisto il tuo nucleo familiare e fatto le assegnazioni di gruppo necessarie, sei pronto per finalizzare il check-in. Questo è l'ultimo passaggio del flusso di lavoro del kiosk -- l'app invia le presenze, stampa le etichette e si resetta per la famiglia successiva.
+Una volta che hai rivisto la tua famiglia e fatto i necessari assegnamenti di gruppo, sei pronto a finalizzare la registrazione. Questo è l'ultimo passaggio nel flusso di lavoro del chiosco -- l'app invia la partecipazione, stampa le etichette e si ripristina per la famiglia successiva.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- [Rivedi il tuo nucleo familiare](./household-review) sulla schermata di revisione del nucleo familiare
-- [Assegna i gruppi](./group-assignment) ai familiari che devono fare il check-in per una classe o programma specifico
-- Opzionalmente [aggiungi eventuali ospiti](./adding-guests) che stanno visitando con la tua famiglia
+- [Rivedi la tua famiglia](./household-review) sulla schermata di revisione della famiglia
+- [Assegna i gruppi](./group-assignment) ai membri della famiglia che hanno bisogno di registrarsi in una classe o programma specifico
+- Facoltativamente [aggiungi ospiti](./adding-guests) che stanno visitando con la tua famiglia
 
 </div>
 
-## Come Fare il Check-In
+## Come Registrarsi
 
-1. Dalla **schermata di revisione del nucleo familiare**, tocca il pulsante **Check-in** nella parte inferiore dello schermo.
-2. L'app invia i dati di presenza al server e mostra una **schermata di successo** con un segno di spunta verde e un messaggio di benvenuto.
+1. Dalla **schermata di revisione della famiglia**, tocca il pulsante **Check-in** nella parte inferiore dello schermo.
+2. L'app invia i dati di partecipazione al server e mostra una **schermata di successo** con un segno di spunta verde e un messaggio di benvenuto.
 
-Questo è tutto. La presenza della tua famiglia è stata registrata.
+È tutto ciò che serve. La partecipazione della tua famiglia è stata registrata.
+
+## Stanze Piene e Rapporti di Volontari
+
+Se la tua chiesa ha configurato [limiti di sicurezza](../../b1-admin/attendance/checkin-safety) sulle sue stanze, il server le controlla prima di salvare:
+
+- Se una stanza selezionata è **piena o chiusa**, la registrazione non va a buon fine e l'app nomina la stanza in modo da poterne scegliere un'altra.
+- Se una stanza per bambini è **a corto di volontari** per il suo rapporto, l'app mostra un avviso che un membro dello staff può confermare per procedere, oppure blocca completamente la registrazione -- a seconda di come la tua chiesa ha configurato l'applicazione del rapporto.
 
 ## Stampa delle Etichette
 
-Se è configurata una stampante di rete, l'app stampa automaticamente le etichette dopo il check-in:
+Se è configurata una stampante di rete, l'app stampa automaticamente le etichette dopo la registrazione:
 
-- Le **etichette con il nome** vengono stampate per ogni persona assegnata a un gruppo che ha l'impostazione **Print Nametag** abilitata. Le etichette con il nome includono il nome della persona, la sua assegnazione di gruppo e le informazioni su allergie/note se presenti nel file.
-- Le **ricevute di ritiro per i genitori** vengono stampate quando qualsiasi persona registrata si trova in un gruppo che ha l'impostazione **Parent Pickup** abilitata. La ricevuta di ritiro elenca i bambini, le loro assegnazioni di gruppo e un **codice di sicurezza univoco di 4 caratteri**.
+- **Etichette con nome** vengono stampate per ogni persona assegnata a un gruppo che ha l'impostazione **Print Nametag** abilitata. Le etichette con nome includono il nome della persona, la sua assegnazione di gruppo e le informazioni su allergie/note se presenti nel sistema.
+- **Biglietti di ritiro per i genitori** vengono stampati quando una persona registrata si trova in un gruppo che ha l'impostazione **Parent Pickup** abilitata. Il biglietto di ritiro elenca i bambini, i loro assegnamenti di gruppo e un **codice di sicurezza a 4 caratteri** univoco.
 
 :::info
-Lo stesso codice di sicurezza appare sia sull'etichetta con il nome del bambino che sulla ricevuta di ritiro del genitore. Al momento del ritiro, i volontari confrontano i codici per verificare che il giusto adulto stia ritirando ogni bambino.
+Lo stesso codice di sicurezza appare sia sull'etichetta del nome del bambino che sul biglietto di ritiro dei genitori. Al momento del ritiro, i volontari abbinano i codici per verificare che l'adulto giusto stia ritirando ogni bambino.
 :::
 
-Il codice di sicurezza viene generato nuovo per ogni check-in e utilizza solo consonanti e cifre (le vocali sono escluse per evitare la formazione di parole inappropriate).
+Il codice di sicurezza viene generato di nuovo per ogni registrazione e utilizza solo consonanti e cifre (le vocali vengono escluse per evitare di formare parole inappropriate).
 
 :::warning
-Se le etichette non vengono stampate, controlla la barra di stato della stampante nella parte superiore dello schermo. Puoi toccarla per accedere alle impostazioni della stampante e verificare la connessione. Consulta [Configurazione Stampante](../getting-started/printer-setup) per i passaggi di risoluzione dei problemi.
+Se le etichette non vengono stampate, apri le Impostazioni di Admin toccando il **logo della chiesa** sette volte, quindi tocca **Change Printer** per verificare la connessione della stampante. Vedi [Printer Setup](../getting-started/printer-setup) per i passaggi di risoluzione dei problemi.
 :::
 
-## Cosa Succede Dopo il Check-In
+## Cosa Succede Dopo la Registrazione
 
-- Se è configurata una stampante, l'app stampa tutte le etichette e poi torna automaticamente alla **schermata di ricerca**, pronta per la famiglia successiva.
-- Se nessuna stampante è configurata, la schermata di successo viene visualizzata per alcuni secondi e poi torna automaticamente alla **schermata di ricerca**.
+- Se è configurata una stampante, l'app stampa tutte le etichette e quindi ritorna automaticamente alla **schermata di ricerca**, pronta per la famiglia successiva.
+- Se non è configurata una stampante, la schermata di successo viene visualizzata per alcuni secondi e quindi ritorna automaticamente alla **schermata di ricerca**.
 
 Non è necessario toccare nulla per tornare alla schermata di ricerca -- l'app gestisce la transizione automaticamente.
 
 :::tip
-L'app si resetta completamente dopo ogni check-in, quindi non c'è rischio che una famiglia veda le informazioni di un'altra famiglia.
+L'app si ripristina completamente dopo ogni registrazione, quindi non c'è rischio che una famiglia veda le informazioni di un'altra famiglia.
 :::
 
 ## Cosa Viene Registrato
 
-Quando tocchi **Check-in**, l'app invia al server le seguenti informazioni per ogni membro del nucleo familiare che ha un'assegnazione di gruppo:
+Quando tocchi **Check-in**, l'app invia quanto segue al server per ogni membro della famiglia che ha un assegnamento di gruppo:
 
-- La **persona** che sta facendo il check-in
-- Il **servizio** a cui sta partecipando
-- L'**orario del servizio** e il **gruppo** a cui è assegnata
+- La **persona** che si sta registrando
+- Il **servizio** che stanno frequentando
+- L'**ora del servizio** e il **gruppo** a cui sono assegnati
 
-Questi dati appaiono in B1 Admin nella sezione Presenze, dove gli amministratori della tua chiesa possono visualizzare e gestire i registri delle presenze. Consulta la [guida all'amministrazione del check-in](../../b1-admin/attendance/check-in.md) per i dettagli.
+Questi dati appaiono in B1 Admin nella sezione Attendance, dove gli amministratori della chiesa possono visualizzare e gestire i record di partecipazione. Consulta la [guida all'amministrazione della registrazione](../../b1-admin/attendance/check-in.md) per i dettagli.

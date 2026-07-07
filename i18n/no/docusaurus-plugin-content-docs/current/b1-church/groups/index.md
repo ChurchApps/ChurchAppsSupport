@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Grupper"
 ---
 
@@ -6,33 +6,34 @@ title: "Grupper"
 
 <div class="article-intro">
 
-Grupper er en flott måte å komme i kontakt med andre på kirken din. Enten du leter etter en liten gruppe, et ministeriumsteam, en bibelstudie, eller en frivillig mulighet, kan du bla gjennom og bli med i grupper direkte fra kirkens B1.church-nettsted.
+Grupper are a great way to get connected with others at your church. Whether you are looking for a small group, a ministry team, a Bible study, or a volunteer opportunity, you can browse and join groups directly from your church's B1.church site.
 
 </div>
 
-## Hva Du Kan Gjøre
+## What You Can Do
 
-Her er hva du kan gjøre med grupper i B1App:
+Here is what you can do with groups in B1App:
 
-- **Bla gjennom offentlige grupper** -- Se alle tilgjengelige grupper organisert etter kategori. Hver gruppe viser et foto, navn, møtetid, sted og en kort beskrivelse.
-- **Se gruppdetaljer** -- Klikk en hvilken som helst gruppe for å se den fullstendige beskrivelsen, ledere, kommende kalenderhendelser og et kontaktskjema for å komme i kontakt med gruppens ledere.
-- **Bli med i grupper** -- Koble til en gruppe for å bli medlem. Åpne grupper lar deg bli medlem umiddelbart; grupper som krever godkjenning lar deg sende en join-forespørsel. Se [Be om å bli med i en gruppe](./join-requests.md).
-- **Delta i samtaler** -- Når du er medlem av en gruppe, kan du legge ut meldinger og samhandle med andre gruppemedlemmer gjennom Samtalerfanen.
-- **Tilgang til kalendere og ressurser** -- Se kommende arrangementer i gruppens kalender og last ned delte filer eller lenker fra Ressurser-fanen.
+- **Browse public groups** -- View all available groups organized by category. Each group shows a photo, name, meeting time, location, and a brief description.
+- **View group details** -- Click any group to see its full description, leaders, upcoming calendar events, and a contact form to reach out to the group's leaders.
+- **Join groups** -- Connect with a group to become a member. Open groups let you join immediately; groups with approval required let you submit a join request. See [Requesting to Join a Group](./join-requests.md).
+- **Participate in conversations** -- Once you are a member of a group, you can post messages and interact with other group members through the Conversations tab.
+- **Access calendars and resources** -- View upcoming events on the group calendar and download shared files or links from the Resources tab.
 
-## Offentlig Versus Innlogget Opplevelse
+## Public vs. Logged-In Experience
 
-Hvem som helst kan besøke kirkens gruppeside og bla gjennom tilgjengelige grupper. Besøkende som ikke er logget inn, kan se gruppbeskrivelser, se hvem lederne er, sjekke kommende kalenderhendelser og sende en melding til leder ved hjelp av kontaktskjemaet.
+Anyone can visit your church's groups page and browse the available groups. Visitors who are not logged in can view group descriptions, see who the leaders are, check upcoming calendar events, and send a message to a leader using the contact form.
 
-Når du [logger inn](../getting-started/logging-in.md), låser du opp ekstra faner på gruppesiden, inkludert **Gruppdetaljer**, **Kalender**, **Samtaler**, **Ressurser**, **Medlemmer** og **Oppmøte**. Gruppledere har ekstra redigeringsfunksjoner på hver av disse fanene.
+When you [log in](../getting-started/logging-in.md), you unlock additional tabs on the group detail page, including **Group Details**, **Calendar**, **Conversations**, **Resources**, **Members**, and **Attendance**. Group leaders have extra editing capabilities on each of these tabs.
 
 :::tip
-Grupper vises også på [Tidslinjen](../community/timeline.md) din -- samtaler og oppdateringer fra gruppene dine vises i aktivitetsfeedet automatisk.
+Grupper also appear on your [Timeline](../community/timeline.md) -- conversations and updates from your groups will show up in your activity feed automatically.
 :::
 
-## Neste Trinn
+## Neste steg
 
-- [Bla Gjennom Grupper](./browsing-groups.md) -- Lær hvordan du finner og utforsker grupper
-- [Gruppdetaljer](./group-details.md) -- Forstå alt på gruppesiden
-- [Be Om å Bli Med i en Gruppe](./join-requests.md) -- Send og administrer join-forespørsler
-- [Gruppesamt](./conversations.md) -- Legg ut meldinger og samhandle med gruppen din
+- [Browsing Grupper](./browsing-groups.md) -- Learn how to find and explore groups
+- [Group Details](./group-details.md) -- Understand everything on the group detail page
+- [Requesting to Join a Group](./join-requests.md) -- Submit and manage join requests
+- [Gruppesamtaler](./conversations.md) -- Post messages, react with emoji, and interact with your group
+- [Event RSVPs](./event-rsvps.md) -- Respond to group events and see who is coming

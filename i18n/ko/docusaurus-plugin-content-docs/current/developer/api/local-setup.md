@@ -13,9 +13,9 @@ title: "로컬 API 설정"
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- **Node.js 22+**, **Git**, **MySQL 8.0+** 설치 -- [필수 조건](../setup/prerequisites) 참조
-- 데이터베이스 생성 권한을 가진 MySQL 사용자 생성
-- API 구성을 위해 [환경 변수](../setup/environment-variables) 참조 검토
+- **Node.js 22+**, **Git**, 그리고 **MySQL 8.0+** 설치 -- [전제 조건](../setup/prerequisites) 참조
+- 데이터베이스 생성 권한이 있는 MySQL 사용자 생성
+- API 구성을 위해 [환경 변수](../setup/environment-variables) 참고서 검토
 
 </div>
 
@@ -29,9 +29,11 @@ git clone https://github.com/ChurchApps/Api.git
 
 ### 2. 의존성 설치
 
+프로젝트는 Yarn을 사용합니다 (`npm install` 차단):
+
 ```bash
 cd Api
-npm install
+yarn install
 ```
 
 ### 3. 환경 변수 구성
@@ -40,13 +42,13 @@ npm install
 cp .env.sample .env
 ```
 
-`.env`를 열고 MySQL 연결 문자열을 구성하세요. 각 모듈은 다음 형식의 자신의 데이터베이스 연결이 필요합니다:
+`.env`를 열고 MySQL 연결 문자열을 구성합니다. 각 모듈은 다음 형식의 자신의 데이터베이스 연결이 필요합니다:
 
 ```
 mysql://root:password@localhost:3306/dbname
 ```
 
-6개 모듈 데이터베이스(membership, attendance, content, giving, messaging, doing) 모두의 연결 문자열이 필요합니다.
+여섯 개의 모듈 데이터베이스 모두에 대한 연결 문자열이 필요합니다 (회원 관리, 참석, 콘텐츠, 기부, 메시징, 작업).
 
 ### 4. 데이터베이스 초기화
 
@@ -54,10 +56,10 @@ mysql://root:password@localhost:3306/dbname
 npm run initdb
 ```
 
-이는 6개의 데이터베이스를 모두 자동으로 생성하고 테이블을 만듭니다.
+이는 모든 여섯 개의 데이터베이스와 해당 테이블을 자동으로 생성합니다.
 
 :::tip
-`npm run initdb:membership` (또는 `attendance`, `content`, `giving`, `messaging`, `doing`)을 사용하여 단일 모듈의 데이터베이스를 초기화할 수 있습니다.
+`npm run initdb -- --module=membership` (또는 `attendance`, `content`, `giving`, `messaging`, `doing`)을 사용하여 단일 모듈의 데이터베이스를 초기화할 수 있습니다.
 :::
 
 ### 5. 개발 서버 시작
@@ -66,17 +68,17 @@ npm run initdb
 npm run dev
 ```
 
-API는 [http://localhost:8084](http://localhost:8084)에서 핫 리로드를 사용하여 시작됩니다.
+API는 [http://localhost:8084](http://localhost:8084)에서 핫 리로드와 함께 시작됩니다.
 
-## 주요 명령
+## 주요 명령어
 
-| 명령 | 설명 |
+| 명령어 | 설명 |
 |---------|-------------|
 | `npm run dev` | 핫 리로드를 사용하여 개발 서버 시작 (tsx watch) |
-| `npm run build` | TypeScript를 정리하고 컴파일하고 자산 복사 |
+| `npm run build` | TypeScript 정리, 컴파일 및 자산 복사 |
 | `npm run test` | Jest를 사용하여 테스트 실행 (커버리지 포함) |
 | `npm run test:watch` | 감시 모드에서 테스트 실행 |
-| `npm run lint` | Prettier와 ESLint를 자동 수정과 함께 실행 |
+| `npm run lint` | 자동 수정으로 ESLint 실행 (ESLint는 유일한 포맷터) |
 
 ## 스테이징 배포
 
@@ -94,23 +96,22 @@ npm run deploy-staging
 
 ## 로컬 라이브러리 개발
 
-API와 함께 공유 라이브러리(`@churchapps/helpers` 또는 `@churchapps/apihelper`)를 개발해야 하는 경우 `npm link`를 사용하세요:
+API와 함께 공유 라이브러리 (`@churchapps/helpers` 또는 `@churchapps/apihelper`)를 개발해야 하는 경우, [Packages](https://github.com/ChurchApps/Packages) 작업 공간에서 빌드하고 API에 임시 Yarn 포털을 추가합니다:
 
 ```bash
-# 라이브러리 디렉토리에서
-cd Helpers
-npm run build
-npm link
+# Packages 작업 공간에서
+yarn build
 
 # API 디렉토리에서
-cd ../Api
-npm link @churchapps/helpers
+yarn link ../Packages/helpers
+# ... 테스트 ...
+yarn unlink ../Packages/helpers && yarn install
 ```
 
-이를 통해 npm에 게시하지 않고도 라이브러리 변경을 API에 대해 테스트할 수 있습니다.
+이를 통해 npm에 발행하지 않고 API에 대한 라이브러리 변경사항을 테스트할 수 있습니다. [공유 라이브러리](../shared-libraries/#local-development-against-a-consuming-app)를 참조하세요 -- 그리고 `package.json`에 링크가 작성하는 포털 해결을 커밋하지 않습니다.
 
 ## 관련 문서
 
-- **[데이터베이스](./database)** -- 모듈별 데이터베이스 아키텍처 이해
-- **[모듈 구조](./module-structure)** -- 컨트롤러, 저장소, 모델이 어떻게 구성되는지
+- **[데이터베이스](./database)** -- 모듈당 데이터베이스 아키텍처 이해
+- **[모듈 구조](./module-structure)** -- 컨트롤러, 저장소 및 모델이 어떻게 구성되는지
 - **[공유 라이브러리](../shared-libraries/)** -- `@churchapps/helpers` 및 `@churchapps/apihelper` 작업

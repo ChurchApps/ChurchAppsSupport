@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Eventos"
 ---
 
@@ -6,39 +6,41 @@ title: "Eventos"
 
 <div class="article-intro">
 
-La sección de Eventos en B1.church te permite explorar eventos de iglesia próximos e inscribirte en ellos directamente desde el sitio web. Cuando tu iglesia habilita el registro para un evento, puedes registrarte a ti mismo y a tus miembros de la familia en solo unos pocos pasos.
+La sección de Eventos en B1.church te permite explorar eventos iglesia próximos e inscribirte en ellos directamente desde el sitio web. Cuando tu iglesia habilita el registro para un evento, puedes registrarte a ti mismo y a miembros de tu familia en solo unos pasos, y para eventos pagos, elige tipos de asistentes y opciones, aplica códigos de descuento y paga de forma segura como parte del registro.
 
 </div>
 
-## Explorando Eventos
+## Explorar eventos
 
-Los eventos aparecen en el calendario de la iglesia. Cuando abres un evento que tiene el registro habilitado, se muestra un botón **Registrarse en este Evento** junto con los detalles del evento.
+Los eventos aparecen en el calendario de la iglesia. Cuando abres un evento que tiene el registro habilitado, se muestra un botón **Registrarse en este evento** junto a los detalles del evento.
 
 Los eventos con registro habilitado muestran:
 
-- **Título y descripción del evento** -- De qué se trata el evento.
-- **Fecha y hora** -- Cuándo sucede el evento.
+- **Título y descripción del evento** -- De qué trata el evento.
+- **Fecha y hora** -- Cuándo tiene lugar el evento.
 - **Botón de registro** -- Un botón azul que te lleva al formulario de registro.
 
-## Estado del Registro
+## Estado del registro
 
 Los eventos pueden mostrar diferentes estados dependiendo del tiempo y la capacidad:
 
-- **Abierto** -- El registro está disponible y puedes registrarte.
-- **No Aún Abierto** -- La ventana de registro aún no ha comenzado. Vuelve a comprobar después de la fecha de apertura.
-- **Cerrado** -- El plazo de registro ha pasado.
-- **Lleno** -- Todos los lugares disponibles han sido tomados.
+- **Abierto** -- El registro está disponible y puedes inscribirte.
+- **Aún no abierto** -- La ventana de registro aún no ha comenzado. Vuelve después de la fecha de apertura.
+- **Cerrado** -- La fecha límite de registro ha pasado.
+- **Lleno** -- Se han tomado todos los lugares disponibles.
 
 :::tip
-Si un evento está lleno, vuelve a comprobar más tarde -- los lugares pueden abrirse si alguien cancela su registro.
+Si un evento está lleno, aún puedes unirte a la **lista de espera** cuando tu iglesia la ha habilitado: recibirás un correo electrónico automáticamente si se abre un lugar. De lo contrario, vuelve más tarde; los lugares pueden abrirse si alguien cancela.
 :::
 
-## Lo Que Necesitas
+## Qué necesitas
 
-- Una cuenta en B1.church (o puedes registrarte como invitado)
-- Acceso al sitio web de B1.church de tu iglesia
+- Una cuenta B1.church (o puedes registrarte como invitado)
+- Acceso al sitio web B1.church de tu iglesia
 
-## Aprende Más
+## Aprende más
 
-- [Registrarse en Eventos](./registering) -- Guía paso a paso para registrarse en un evento
-- [Auto Registro](../checkin/self-checkin) -- Regístrate cuando llegues al evento
+- [Registrarse en eventos](./registering) -- Guía paso a paso para inscribirse en un evento
+- [Mis registros](./my-registrations) -- Ver tus registros, pagar saldos, editar o cancelar
+- [Solicitar eventos y salas](./requesting-events) -- Solicitar un evento con las salas y recursos que necesita
+- [Auto registro](../checkin/self-checkin) -- Regístrate cuando llegues al evento

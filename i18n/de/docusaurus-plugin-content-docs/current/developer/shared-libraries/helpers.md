@@ -1,72 +1,33 @@
----
+﻿---
 title: "Helpers"
 ---
 
 # Helpers
 
-<div class="article-intro">
+Das Paket `@churchapps/helpers` bietet Basis-Hilfsfunktionen, die von allen ChurchApps-Projekten verwendet werden, sowohl Frontend als auch Backend. Es ist Framework-agnostisch und umfasst gängige Helfer wie `DateHelper`, `ApiHelper`, `CurrencyHelper`, sowie die freigegebenen TypeScript-Schnittstellen, die den Datenvertrag zwischen Apps und APIs bilden.
 
-Das `@churchapps/helpers`-Package bietet Basis-Utilities, die von allen ChurchApps-Projekten genutzt werden, sowohl Frontend als auch Backend. Es ist Framework-agnostisch und enthält allgemeine Helfer wie `DateHelper`, `ApiHelper`, `CurrencyHelper` und andere gemeinsame Utilities.
+## Wer nutzt dies
 
-</div>
+Jede ChurchApps-API (die Kern-Api, AskApi und LessonsApi) und jedes Web-Frontend (B1Admin, B1App, B1Transfer, LessonsApp) hängt direkt von diesem Paket ab. Frontends erhalten auch viele seiner Exporte (über `@churchapps/apphelper` erneut exportiert).
 
-<div class="prereqs">
-<h4>Vor dem Start</h4>
-
-- Installieren Sie **Node.js** und **Git** — siehe [Voraussetzungen](../setup/prerequisites)
-- Machen Sie sich mit dem [`npm link`-Workflow](./index.md) für lokale Entwicklung vertraut
-
-</div>
-
-## Setup für lokale Entwicklung
-
-1. Repository klonen:
-
-   ```bash
-   git clone https://github.com/ChurchApps/Helpers.git
-   ```
-
-2. Abhängigkeiten installieren:
-
-   ```bash
-   cd Helpers && npm install
-   ```
-
-3. Package bauen (kompiliert TypeScript zu `dist/`):
-
-   ```bash
-   npm run build
-   ```
-
-4. Verfügbar machen für lokales Linking:
-
-   ```bash
-   npm link
-   ```
-
-Sie können es dann in ein beliebiges konsumierendes Projekt verlinken:
+## Lokale Entwicklung
 
 ```bash
-cd ../YourProject && npm link @churchapps/helpers
+git clone https://github.com/ChurchApps/Packages.git
+cd Packages && yarn install
+yarn workspace @churchapps/helpers build
 ```
+
+Oder führen Sie `yarn build` in der Root aus, um jedes Paket in Abhängigkeitsreihenfolge zu erstellen.
+
+Um Änderungen in einem verbrauchenden Projekt zu testen, verwenden Sie ein temporäres Yarn-Portal.
 
 ## Veröffentlichung
 
-Um eine neue Version zu npm zu veröffentlichen:
+Releases verwenden Changesets anstelle von manuellen Versionsbumps. Lesen Sie die Übersicht [Freigegebene Bibliotheken](./index.md) für den vollständigen Fluss.
 
-1. Version in `package.json` aktualisieren
-2. Veröffentlichen:
-
-   ```bash
-   npm publish --access=public
-   ```
+Neue freigegebene Schnittstellen gehen in `helpers/src/interfaces/` und werden durch die Paket-Barrel erneut exportiert. Der Website-Builder Element-Typ-Katalog (`ElementTypes.ts` -- 35 Typen mit ihren Answer-Schemas) lebt auch hier.
 
 :::warning
-Da dieses Package von jedem ChurchApps-Projekt genutzt wird, haben Änderungen hier eine breite Auswirkung. Testen Sie gründlich mit `npm link` in mindestens einer konsumierenden API und einer konsumierenden Web-App vor der Veröffentlichung.
+Da dieses Paket von jedem ChurchApps-Projekt verwendet wird, haben Änderungen hier eine breite Auswirkung. Testen Sie mit einem Yarn-Portal in mindestens einer verbrauchenden API und einer verbrauchenden Web-App, bevor Sie veröffentlichen.
 :::
-
-## Verwandte Artikel
-
-- **[ApiHelper](./api-helper)** — Server-seitige Utilities, die dieses Package abhängen
-- **[AppHelper](./app-helper)** — React-Komponenten, die dieses Package abhängen
-- **[Gemeinsame Biblioteken-Übersicht](./index.md)** — `npm link`-Workflow und Package-Übersicht

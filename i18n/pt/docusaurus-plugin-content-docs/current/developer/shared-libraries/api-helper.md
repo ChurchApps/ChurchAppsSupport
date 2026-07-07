@@ -6,7 +6,7 @@ title: "ApiHelper"
 
 <div class="article-intro">
 
-O pacote `@churchapps/apihelper` fornece utilitários do lado do servidor para todas as APIs Express.js do ChurchApps. Ele inclui a classe base de controller, middleware de autenticação JWT, utilitários de banco de dados e integrações AWS das quais todo projeto de API depende.
+O pacote `@churchapps/apihelper` fornece utilitários do lado do servidor para todas as APIs Express.js do ChurchApps. Ele inclui a classe base de controller, autenticação JWT, utilitários de banco de dados e integrações AWS dos quais todo projeto de API depende.
 
 </div>
 
@@ -14,56 +14,53 @@ O pacote `@churchapps/apihelper` fornece utilitários do lado do servidor para t
 <h4>Antes de Começar</h4>
 
 - Instale **Node.js** e **Git** -- veja [Pré-requisitos](../setup/prerequisites)
-- Familiarize-se com o [fluxo de trabalho npm link](./index.md) para desenvolvimento local
-- Este pacote depende do [`@churchapps/helpers`](./helpers)
+- Familiarize-se com a configuração do [workspace Packages](./index.md) e fluxo de lançamento
+- Este pacote depende de [`@churchapps/helpers`](./helpers) (como uma dependência de pares) e o re-exporta
 
 </div>
 
 ## O Que Está Incluído
 
-- **CustomBaseController** -- classe base para controllers de API
-- **Middleware de autenticação** -- autenticação JWT via `CustomAuthProvider`
-- **Utilitários de banco de dados** -- `DB.query`, `EnhancedPoolHelper` para gerenciamento de conexões MySQL
-- **Integrações AWS** -- helpers para S3, SSM Parameter Store e outros serviços AWS
-- **Configuração DI Inversify** -- configuração do container de injeção de dependências
+- **CustomBaseController** -- classe base para controllers de API, construída em `inversify-express-utils`
+- **Auth** -- autenticação JWT via `CustomAuthProvider`, `AuthenticatedUser` e `Principal`
+- **Utilitários de banco de dados** -- `DB.query` / `DB.queryOne` e a classe `Pool` para gerenciamento de conexões MySQL, mais `MySqlHelper` e `DBCreator` para configuração de schema
+- **Integrações AWS** -- `AwsHelper` para armazenamento de arquivos S3 e leituras do Parameter Store
+- **Email** -- `EmailHelper` suportando transportes SES e SMTP
+- **Carregamento de configuração** -- `EnvironmentBase` lê strings de conexão e segredos de variáveis de ambiente ou Parameter Store
+- **Misc** -- `EncryptionHelper`, `FileStorageHelper`, `LoggingHelper`, `BasePermissions`, `SlugHelper`
 
 ## Configuração para Desenvolvimento Local
 
-1. Clone o repositório:
+Este pacote vive no workspace [Packages](https://github.com/ChurchApps/Packages) ao lado das outras bibliotecas compartilhadas:
+
+1. Clone o workspace:
 
    ```bash
-   git clone https://github.com/ChurchApps/ApiHelper.git
+   git clone https://github.com/ChurchApps/Packages.git
    ```
 
-2. Instale as dependências:
+2. Instale as dependências na raiz do workspace:
 
    ```bash
-   cd ApiHelper && npm install
+   cd Packages && yarn install
    ```
 
-3. Compile o pacote (compila TypeScript para `dist/`):
+3. Construa (compila TypeScript para `dist/`):
 
    ```bash
-   npm run build
+   yarn workspace @churchapps/apihelper build
    ```
 
-4. Disponibilize para vinculação local:
+   Ou execute `yarn build` na raiz para construir cada pacote em ordem de dependência.
 
-   ```bash
-   npm link
-   ```
+Para testar mudanças dentro de uma API consumidora, use um portal Yarn temporário -- veja [Desenvolvimento Local Contra uma Aplicação Consumidora](./index.md#local-development-against-a-consuming-app).
 
-## Comandos Principais
+## Publicando
 
-| Comando | Descrição |
-|---------|-----------|
-| `npm run build` | Compilar TypeScript para `dist/` |
-| `npm run lint` | Executar ESLint |
-| `npm run lint:fix` | Executar ESLint com auto-correção |
-| `npm run format` | Formatar código com Prettier |
+Lançamentos vão através de changesets: execute `yarn changeset` na raiz do workspace com cada mudança, depois `yarn publish-all` quando pronto para lançar. Veja [Visão Geral de Bibliotecas Compartilhadas](./index.md#releasing-with-changesets) para o fluxo completo.
 
 :::info
-Este pacote é uma dependência de toda API do ChurchApps. Ao fazer alterações, use `npm link` para testar contra uma API localmente antes de publicar.
+Este pacote é uma dependência de toda API ChurchApps -- a API principal, AskApi e LessonsApi. Ao fazer alterações, teste contra uma API localmente antes de publicar.
 :::
 
 ## Artigos Relacionados

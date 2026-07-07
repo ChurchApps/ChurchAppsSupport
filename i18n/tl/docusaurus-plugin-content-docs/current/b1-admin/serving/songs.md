@@ -11,7 +11,7 @@ Ang pahina ng Songs ay nag-manage ng iyong worship song library. Panatilihin ang
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
 - Mag-navigate sa **Serving** section sa B1 Admin upang ma-access ang Songs page
 - Opsyonal, magkaroon ng iyong [service plans](./plans.md) na nakaset up upang maaari mong ikonekta ang mga kanta nang direkta sa [service order](./service-order.md)
@@ -20,7 +20,7 @@ Ang pahina ng Songs ay nag-manage ng iyong worship song library. Panatilihin ang
 
 ## Pag-browse sa Iyong Song Library
 
-Kapag buksan mo ang **Songs** page, ang iyong mga kanta ay ipinakita bilang mga card. Bawat card ay nagpapakita ng thumbnail image ng kanta, titulo, artist, at tumatagal. I-scroll sa pamamagitan ng library o gamitin ang search upang mahanap kung ano ang kailangan mo.
+Kapag buksan mo ang **Songs** page, ang iyong mga kanta ay ipinakita bilang mga card. Bawat card ay nagpapakita ng thumbnail image ng kanta, titulo, artist, at tumatagal. I-scroll sa pamamagit ng library o gamitin ang search upang mahanap kung ano ang kailangan mo.
 
 ## Paghahanap ng Mga Kanta
 
@@ -33,7 +33,7 @@ Kapag buksan mo ang **Songs** page, ang iyong mga kanta ay ipinakita bilang mga 
 1. I-click ang **Add Song** sa Songs page.
 2. Maghanap sa panlabas na database ng kanta ayon sa titulo o artist.
 3. Pumili ng kanta na gusto mong idagdag.
-4. Ang kanta ay maidadagdag sa iyong library na may pangunahing detalye na preload na.
+4. Ang kanta ay maidadagdag sa iyong library na may pangunahing detalye na pila na.
 
 :::tip
 Pagkatapos magdagdag ng isang kanta, i-click ito upang suriin at i-update ang mga detalye nito, magdagdag ng mga arrangements, o mag-attach ng mga panlabas na links tulad ng YouTube videos o chord charts.
@@ -44,9 +44,9 @@ Pagkatapos magdagdag ng isang kanta, i-click ito upang suriin at i-update ang mg
 I-click ang anumang song card upang buksan ang detalye ng pahina nito. Mula dito maaari mong:
 
 - **I-edit ang song details** -- I-update ang titulo, artist, tumatagal, at iba pang metadata.
-- **Pamahalaan ang mga arrangements** -- Bawat kanta ay maaaring magkaroon ng mga maraming arrangements (halimbawa, iba't ibang susi o mga bersyon). Magdagdag, baguhin, o alisin ang mga arrangements kung kinakailangan.
+- **Pamahalaan ang mga arrangements** -- Bawat kanta ay maaaring magkaroon ng maraming arrangements (halimbawa, iba't ibang susi o mga bersyon). Magdagdag, baguhin, o alisin ang mga arrangements kung kinakailangan.
 - **Magdagdag ng lyrics** -- Magpasok o i-update ang lyrics para sa bawat arrangement.
-- **Itakda ang susi** -- Tukuyin ang musical key para sa bawat arrangement upang ang iyong team ay alam kung paano maghanda.
+- **Itakda ang susi** -- Tukuyin ang musical key para sa bawat arrangement gamit ang key picker sa tabi ng lyrics. Ang pagbabago ng susi ay nag-transpose ng ipinakitang chords kaagad, parehong sa pahina ng arrangement at kapag bumubukas ang kanta mula sa isang service plan, upang ang iyong team ay palaging nakikita ang chords sa susi na talagang ginagamit nila.
 - **Magdagdag ng panlabas na links** -- Mag-attach ng links sa mga mapagkukunan tulad ng YouTube videos, chord charts, o sheet music na naka-host sa ibang lugar.
 
 ## Mga Arrangements

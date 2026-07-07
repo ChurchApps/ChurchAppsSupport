@@ -1,4 +1,4 @@
----
+﻿---
 title: "MCP-server"
 ---
 
@@ -6,7 +6,7 @@ title: "MCP-server"
 
 <div class="article-intro">
 
-B1 API leverer en [MCP (Model Context Protocol)](https://modelcontextprotocol.io)-server på `/mcp`. Enhver MCP-klar AI-klient -- Claude Code, Claude Desktop, OpenAI Agents SDK, Cursor, eller dine egne -- kan koble til den og kalle den underliggende REST API på vegne av en autentisert kirkebruker. Det er et tynt, generisk innpakning: det er tre verktøy, og de eksponerer hele API-overflaten dynamisk i stedet for å håndmodellere hvert sluttpunkt.
+B1 API leverer en [MCP (Model Context Protocol)](https://modelcontextprotocol.io)-server på `/mcp`. Enhver MCP-klar AI-klient -- Claude Code, Claude Desktop, OpenAI Agents SDK, Cursor eller din egen -- kan koble til den og kalle den underliggende REST API-en på vegne av en autentisert kirkbruker. Det er en tynnvegg, generisk wrapper: tre generiske verktøy eksponerer hele API-overflaten dynamisk i stedet for å håndmodelere hvert endepunkt, pluss ett domenevedleggverktøy for nettstedsbyggeren.
 
 </div>
 
@@ -14,12 +14,12 @@ B1 API leverer en [MCP (Model Context Protocol)](https://modelcontextprotocol.io
 <h4>Før du begynner</h4>
 
 - En [B1 API-nøkkel](./api-keys) (`cak_…`) med omfangene klienten skal ha
-- Et nåbart B1 API-vertsnavn -- `https://api.churchapps.org` for vertskirker, eller din egen distribusjon
-- En MCP-klient. Se [Claude](/docs/b1-admin/integrations/claude) og [ChatGPT](/docs/b1-admin/integrations/chatgpt) for sluttbruker-oppsett
+- En nåbar B1 API-vert -- `https://api.churchapps.org` for vertsede kirker, eller din egen distribusjon
+- En MCP-klient. Se [Claude](/docs/b1-admin/integrations/claude) og [ChatGPT](/docs/b1-admin/integrations/chatgpt) for sluttbrukeroppsett
 
 </div>
 
-## Sluttpunkt
+## Endepunkt
 
 ```
 POST /mcp
@@ -30,13 +30,13 @@ Authorization: Bearer cak_<prefix>.<secret>
 
 | Aspekt | Verdi |
 |---|---|
-| **Vei** | `/mcp` (relativt til API-verten) |
-| **Metode** | `POST` bare -- forespørsel/respons og SSE streaming skjer begge på samme sluttpunkt |
+| **Sti** | `/mcp` (relativ til API-verten) |
+| **Metode** | `POST` bare -- request/response og SSE-streaming skjer begge på samme endepunkt |
 | **Transport** | [MCP Streamable HTTP](https://modelcontextprotocol.io/specification/2025-11-25/basic/transports) |
-| **Sesjon-modell** | Tilstandsløs. En frisk MCP-server-instans bygges per forespørsel -- ingen sesjon-id, ingen gjenopptakelse |
-| **Auth** | Bærer token. `cak_…` API-nøkler og B1 JWTs begge fungerer; oppløsning er det samme som noe annet autentisert sluttpunkt |
+| **Øktsmodell** | Stateless. En frisk MCP-serverinstans bygges per forespørsel -- ingen økts-id, ingen gjenopptakelse |
+| **Auth** | Bærertoken. `cak_…` API-nøkler og B1 JWT-er fungerer begge; oppløsning er det samme som ethvert annet autentisert endepunkt |
 
-En forespørsel hvis `Authorization`-hode mangler eller er ugyldig returnerer:
+En forespørsel hvis `Authorization`-header mangler eller er ugyldig returnerer:
 
 ```json
 { "error": "Unauthorized — MCP requires a valid bearer token (cak_* API key or JWT)." }
@@ -46,20 +46,20 @@ med HTTP 401.
 
 ## Verktøy
 
-Tre verktøy, alle generiske. Modellen bruker `list_endpoints` for oppdagelse, `describe_endpoint` for å lære nyttelast-form, og `api_call` for å faktisk påkalle API-en.
+Tre generiske verktøy pluss en veileder. Modellen bruker `list_endpoints` for oppdagelse, `describe_endpoint` for å lære en nyttelastform, `api_call` for å faktisk påkalle API-en, og `describe_page_builder` når oppgaven innebærer nettstedinnhold.
 
 ### `list_endpoints`
 
-Returnerer hele beholdningen av registrerte REST-ruter, filtrert etter et valgfritt understreng og/eller HTTP-verb. Hver oppføring inkluderer kontroller-navn og API-nøkkelomfang mest sannsynlig trengt.
+Returnerer hele lageret med registrerte REST-ruter, filtrert etter en valgfritt delstreng og/eller HTTP-verb. Hver oppføring inkluderer kontroller-navnet og API-nøkkelomfangene som mest sannsynlig er nødvendige.
 
 **Inndata:**
 
 | Felt | Type | Beskrivelse |
 |---|---|---|
-| `filter` | streng (valgfritt) | Case-insensitive understreng samsvart mot banen, f.eks. `"people"` |
+| `filter` | string (valgfritt) | Skille-uavhengig delsrengtilpasset mot stien, f.eks. `"people"` |
 | `method` | enum (valgfritt) | `GET` / `POST` / `PUT` / `DELETE` / `PATCH` |
 
-**Utdata:** et JSON-dokument av formen
+**Utdata:** et JSON-dokument i form
 
 ```json
 {
@@ -75,33 +75,33 @@ Returnerer hele beholdningen av registrerte REST-ruter, filtrert etter et valgfr
 }
 ```
 
-Beholdningen bygges en gang ved API-oppstart fra direkte-ruttetabellen -- noe du kan treffe med `curl` vises her.
+Lageret bygges en gang ved API-oppstart fra live-rutetabellen -- alt du kan treffe med `curl` vises her.
 
 ### `describe_endpoint`
 
-Returnerer en kort sammenfatning pluss, hvor tilgjengelig, et håndkurert forespørselsformat og responseksempel for ett sluttpunkt.
+Returnerer et kort sammendrag pluss, der tilgjengelig, en håndkurert forespørselskropp og responseksempel for ett endepunkt.
 
 **Inndata:**
 
 | Felt | Type | Beskrivelse |
 |---|---|---|
-| `method` | streng | HTTP-verb |
-| `path` | streng | Full vei som returnert av `list_endpoints` |
+| `method` | string | HTTP-verb |
+| `path` | string | Full sti som returnert av `list_endpoints` |
 
-**Utdata:** for kuraterte sluttpunkter, et eksempel med `summary`, `requestBody`, og `responseSample`. For ikke-kuraterte sluttpunkter, en fallback-melding som instruerer modellen å kalle `GET` først for å se formen. Omtrent ett dusin høytrafikkruter (mennesker, grupper, donasjoner, frammøte, fond) er kuraterte.
+**Utdata:** for kuraterte endepunkter, et eksempel med `summary`, `requestBody` og `responseSample`. For ikke-kuraterte endepunkter, en fallback-melding som instruerer modellen til å kalle `GET` først for å se formen. Omtrent et dusin høy-trafikk-ruter (mennesker, grupper, donasjoner, oppmøte, midler) er kuratert.
 
 ### `api_call`
 
-Påkaller det valgte REST-sluttpunktet, in-prosess, gjennom samme Express-meldings-stabel som en normal HTTP-forespørsel -- auth, kropp-analyse, revisjonslogging og per-kirke-omfang alle gjør alle.
+Påkaller det valgte REST-endepunktet, in-process, gjennom samme Express middleware-stakk som en normal HTTP-forespørsel -- auth, body parsing, revisjonslogging og per-kirke-omfang gjelder alle.
 
 **Inndata:**
 
 | Felt | Type | Beskrivelse |
 |---|---|---|
 | `method` | enum | `GET` / `POST` / `PUT` / `DELETE` / `PATCH` |
-| `path` | streng | Vei inkludert enhver modulprefikks, f.eks. `/membership/people` |
-| `query` | objekt (valgfritt) | Flatt objekt av strengeparametere |
-| `body` | noe (valgfritt) | JSON forespørsel-kropp -- typisk en matrise av modellobjekter for `POST` |
+| `path` | string | Sti inkludert enhver modulprefieks, f.eks. `/membership/people` |
+| `query` | object (valgfritt) | Flat objekt med spørringsstringparametere |
+| `body` | any (valgfritt) | JSON forespørselskropp -- typisk en array av modelobjekter for `POST` |
 
 **Utdata:**
 
@@ -113,41 +113,51 @@ Påkaller det valgte REST-sluttpunktet, in-prosess, gjennom samme Express-meldin
 }
 ```
 
-Verktøy-resultat er merket `isError: true` for enhver respons med status >= 400.
+Verktøyresultat er merket `isError: true` for enhver respons med status ≥ 400.
+
+### `describe_page_builder`
+
+Det ene ikke-generiske verktøyet: en statisk, selvstendig veileder til bygging av nettstedssider gjennom `/content/*`-endepunktene -- side → seksjon → element-datamodellen, opprettingsarbeidsflyten, hvert `elementType` med sin `answersJSON`-form, seksjonnivåinnstillinger som `dividerTop`/`dividerBottom`-form-deler, og et arbeids-end-to-end-eksempel. Det tar ingen inndata og speiler elementkatalogen som vedlikeholdes i B1Admin-redigeringsprogrammet (se [Nettstedsbyggerarkitektur](../architecture/website-builder)). Agenter forventes å kalle den en gang før opprettelse eller redigering av sidinnhold, deretter handle via `api_call`.
 
 ## Auth-modell
 
-MCP-forespørselen selv kjøres gjennom `CustomAuthProvider.getUser()` -- samme vei hver autentisert B1-sluttpunkt bruker. En `cak_…` bærer løses til en `Principal` hvis tillatelser er utstedelsespersonens gjeldende RBAC, **krysset** med nøkkels innvilgede omfang. Dette krysset blir omberegnet på hver forespørsel, så:
+MCP-forespørselen selv kjøres gjennom `CustomAuthProvider.getUser()` -- samme sti hver autentisert B1-endepunkt bruker. En `cak_…` bærer oppløst til en `Principal` hvis tillatelser er det utstedende personen sin nåværende RBAC, **krysset** med nøkkelen tildelte omfang. Dette krysset beregnes på nytt på hver forespørsel, så:
 
-- Å fjerne et omfang fra en nøkkel (ved å slette og gjenopprett den) kutter tilgangen på neste kall.
-- Å fjerne en tillatelse fra den underliggende personen i B1Admin kutter tilgangen på neste kall, selv om nøkkelen fortsatt eksisterer.
+- Fjerning av et omfang fra en nøkkel (ved sletting og gjenoppretting) kutter tilgang på neste anrop.
+- Fjerning av en tillatelse fra den underliggende personen i B1Admin kutter tilgang på neste anrop, selv om nøkkelen fortsatt eksisterer.
 
-For nestede `api_call`-påkallinger kopieres den opprinnelige `Authorization`-hodet til den syntetiske forespørselen, så `CustomAuthProvider` kjøres igjen og omfang-krysset re-brukes per kall. Det er ingen tokencaching.
+For nestede `api_call`-påkallinger, kopieres den opprinnelige `Authorization`-headeren til den syntetiske forespørselen, så `CustomAuthProvider` kjøres igjen og omfangsersatsen gjentas per anrop. Det finnes ingen tokencaching.
 
-## Vei-blokkering
+## Stiblokkering
 
-Et lite sett av ruter er ikke nåbare via `api_call`, selv med en gyldig nøkkel:
+Et lite sett med ruter er ikke nåbar via `api_call`, selv med en gyldig nøkkel:
 
 | Mønster | Hvorfor |
 |---|---|
-| `/giving/donate/webhook/*` | Leverandør-webhook-sluttpunkter forventer rå, signatur-verifiserte kropper fra Stripe/PayPal -- ikke generelle anropere |
-| `/membership/oauth/clients*` | OAuth-klient-registrering er operatør-bare |
-| `/membership/people/apiEmails` | Utesperret av operatøren `jwtSecret`, ikke bruker-tillatelser |
-| Enhver rute som forventer `multipart/form-data` | Filast-opp er ikke JSON-RPC-venlig |
+| `/giving/donate/webhook/*` | Leverandør-webhook-endepunkter forventer rå, signatur-verifiserte kropper fra Stripe/PayPal -- ikke generelle oppringere |
+| `/membership/oauth/clients*` | OAuth-klientregistrering er kun for operatør |
+| `/membership/people/apiEmails` | Gated av operatør `jwtSecret`, ikke brukerrettighetene |
+| Enhver rute som forventer `multipart/form-data` | Filopplastinger er ikke JSON-RPC-vennlige |
 
-En blokkert vei returnerer et `isError: true` verktøy-resultat med en beskrivende melding; den underliggende ruten blir aldri påkalt.
+En blokkert sti returnerer en `isError: true`-verktøyresultat med en beskrivende melding; den underliggende ruten påkalles aldri.
 
-## Respons-størrelse-begrenset
+## Responsestørrelsesbegrensning
 
-Hver `api_call` respons-kropp er begrenset til **64 KB** av tatt utgang. Hvis en spørring overskrider grensen, bærer responsen `"truncated": true` og modellen forventes å prøve igjen med smalere spørring-parametre. Dette holder en enkelt verktøy-respons fra å blåse ut klientens kontekstvindu.
+Hvert `api_call`-responskropp begrenses til **64 KB** med fanget utdata. Hvis en spørring overskrider grensen, inneholder responsen `"truncated": true` og modellen forventes å prøve på nytt med smalere spørringsparametere. Dette hindrer en enkelt verktøyrespons fra å sprenge klientens kontekstvindu.
 
-## Hastighetsbegrensning
+## Hastighetsgrensing
 
-Det er ingen applikasjons-nivå hastighetsbegrensning på `/mcp`. Dremling utsettes til API Gateway / Lambda-samtidighet i produksjon, og til hva som helst din omvendte fullmakt håndhever i selvvert-distribusjoner.
+Det er ingen applikasjonnivå-hastighetsgrense på `/mcp`. Gassdempingen utsettes til API Gateway / Lambda-samtidighet i produksjon, og til det som din omvendtproxy håndhever i selvvertede distribusjonene.
+
+## OAuth-oppdagelse
+
+MCP-serveren annonserer **ikke** OAuth 2.1-metadata (`/.well-known/oauth-authorization-server`, dynamisk klientregistrering, PKCE-flyt). Klienter som krever OAuth-oppdaget MCP-servere -- spesielt Claude.ai's "Legg til egendefinert kobling"-brukergrensesnitt og ChatGPT's "Connectors"-funksjon -- kan ikke koble til uten denne overflaten.
+
+Klienter som aksepterer en statisk bærertoken i konfigurasjonen sin -- Claude Code, Claude Desktop, OpenAI Agents SDK, Cursor, egendefinert kode -- fungerer i dag. Den eksisterende [OAuthController](/docs/developer/api/connected-apps) utsteder allerede tokens via autorisasjonskode + PKCE for tredjepart-apper; en MCP-spec-samsvarende oppdagingslag på toppen av den ville lukke gapet.
 
 ## Lokal utvikling
 
-MCP-sluttpunktet monteres sammen med alt annet når API-en kjøres lokalt:
+MCP-endepunktet monteres sammen med alt annet når API-en kjøres lokalt:
 
 ```bash
 cd Api
@@ -155,12 +165,33 @@ npm run dev
 # Server listening on http://localhost:8084
 ```
 
-Ved oppstart bekrefter log-linja `📡 MCP server ready at /mcp — N routes in inventory` at beholdningen ble bygget.
+Ved oppstart bekrefter logglinja `📡 MCP server ready at /mcp — N routes in inventory` at lageret ble bygget.
 
-Prøv det med MCP Inspector:
+Teste det med MCP Inspector:
 
 ```bash
 npx @modelcontextprotocol/inspector
 ```
 
-I Inspector UI peker du den på `http://localhost:8084/mcp` og setter `Authorization`-hodet til `Bearer cak_<prefix>.<secret>`. Kall `list_endpoints` først; du burde se full rutelist. Så `api_call({ method: "GET", path: "/membership/people" })` burde returnere dine lokale frø-mennesker.
+I Inspector-brukergrensesnittet, pek det på `http://localhost:8084/mcp` og sett `Authorization`-headeren til `Bearer cak_<prefix>.<secret>`. Kall `list_endpoints` først; du bør se hele rutelista. Deretter `api_call({ method: "GET", path: "/membership/people" })` bør returnere dine lokale frølitt personer.
+
+## Kodelayout
+
+MCP-serveren bor på `src/modules/mcp/` i Api-depotet. Merkbare filer:
+
+| Fil | Formål |
+|---|---|
+| `McpController.ts` | `@controller("/mcp")`; wirer `StreamableHTTPServerTransport` per forespørsel |
+| `McpServer.ts` | Bygger en MCP `Server`, registrerer de fire verktøyene |
+| `RouteInventory.ts` | Går inversify-express-utils-metadata ved oppstart for å telle opp ruter |
+| `internalDispatch.ts` | Syntetisk `req`/`res` som gjenenter Express-appen in-process |
+| `tools/` | `listEndpoints.ts`, `describeEndpoint.ts`, `apiCall.ts`, `describePageBuilder.ts` |
+| `examples.ts` | Kuraterte forespørsel/response-prøver for høy-trafikk-endepunkter |
+
+## Relatert
+
+- [API-nøkler](./api-keys)
+- [Webhooks](./webhooks)
+- [Tilkoblede apper (OAuth)](./connected-apps)
+- [Claude -- sluttbrukeroppsett](/docs/b1-admin/integrations/claude)
+- [ChatGPT -- sluttbrukeroppsett](/docs/b1-admin/integrations/chatgpt)

@@ -6,68 +6,68 @@ title: "Músicas"
 
 <div class="article-intro">
 
-A página de Músicas gerencia sua biblioteca de músicas de louvor. Mantenha todos os detalhes das músicas, letras e arranjos em um só lugar para que sua equipe de louvor possa se preparar facilmente para os próximos cultos e manter um repertório consistente.
+A página Músicas gerencia sua biblioteca de músicas de adoração. Mantenha todos os detalhes da sua música, letras e arranjos em um único lugar para que sua equipe de adoração possa se preparar facilmente para os próximos serviços e manter um repertório consistente.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Navegue até a seção **Servir** no B1 Admin para acessar a página de Músicas
-- Opcionalmente, tenha seus [planos de culto](./plans.md) configurados para poder vincular músicas diretamente à [ordem do culto](./service-order.md)
+- Navegue até a seção **Servindo** no B1 Admin para acessar a página Músicas
+- Opcionalmente, tenha seus [planos de serviço](./plans.md) configurados para que você possa vincular músicas diretamente à [ordem de serviço](./service-order.md)
 
 </div>
 
-## Navegando pela Sua Biblioteca de Músicas
+## Navegando sua Biblioteca de Músicas
 
-Quando você abre a página de **Músicas**, suas músicas são exibidas como cartões. Cada cartão mostra a imagem de miniatura da música, título, artista e duração. Percorra a biblioteca ou use a pesquisa para encontrar o que precisa.
+Quando você abre a página **Músicas**, suas músicas são exibidas como cartões. Cada cartão mostra a imagem em miniatura da música, título, artista e duração. Role pela biblioteca ou use a pesquisa para encontrar o que você precisa.
 
 ## Pesquisando Músicas
 
-1. Clique no botão **Pesquisar** na página de Músicas.
-2. Digite o **título** ou nome do **artista** da música.
-3. Os resultados serão filtrados conforme você digita, mostrando músicas correspondentes da sua biblioteca.
+1. Clique no botão **Pesquisar** na página Músicas.
+2. Digite um **título** de música ou nome de **artista**.
+3. Os resultados serão filtrados enquanto você digita, mostrando músicas correspondentes de sua biblioteca.
 
 ## Adicionando uma Música
 
-1. Clique em **Adicionar Música** na página de Músicas.
-2. Pesquise no banco de dados externo de músicas por título ou artista.
-3. Selecione a música que deseja adicionar.
+1. Clique em **Adicionar Música** na página Músicas.
+2. Pesquise o banco de dados de músicas externo por título ou artista.
+3. Selecione a música que você deseja adicionar.
 4. A música será adicionada à sua biblioteca com seus detalhes básicos pré-preenchidos.
 
 :::tip
-Após adicionar uma música, clique nela para revisar e atualizar seus detalhes, adicionar arranjos ou anexar links externos como vídeos do YouTube ou cifras.
+Depois de adicionar uma música, clique nela para revisar e atualizar seus detalhes, adicionar arranjos ou anexar links externos como vídeos do YouTube ou cifras.
 :::
 
 ## Visualizando e Editando uma Música
 
-Clique em qualquer cartão de música para abrir sua página de detalhes. A partir daqui você pode:
+Clique em qualquer cartão de música para abrir sua página de detalhe. De lá você pode:
 
-- **Editar detalhes da música** -- Atualizar o título, artista, duração e outros metadados.
-- **Gerenciar arranjos** -- Cada música pode ter múltiplos arranjos (por exemplo, diferentes tons ou versões). Adicione, edite ou remova arranjos conforme necessário.
-- **Adicionar letras** -- Insira ou atualize as letras para cada arranjo.
-- **Definir o tom** -- Especifique o tom musical para cada arranjo para que sua equipe saiba como se preparar.
-- **Adicionar links externos** -- Anexe links para recursos como vídeos do YouTube, cifras ou partituras hospedadas em outro lugar.
+- **Editar detalhes da música** -- Atualize o título, artista, duração e outros metadados.
+- **Gerencie arranjos** -- Cada música pode ter múltiplos arranjos (por exemplo, diferentes tonalidades ou versões). Adicione, edite ou remova arranjos conforme necessário.
+- **Adicione letras** -- Digite ou atualize as letras para cada arranjo.
+- **Defina a tonalidade** -- Especifique a tonalidade musical para cada arranjo usando o seletor de tonalidade ao lado das letras. Alterar a tonalidade transpõe os acordes exibidos imediatamente, tanto na página de arranjo quanto ao abrir a música a partir de um plano de serviço, para que sua equipe sempre veja acordes na tonalidade que estão realmente tocando.
+- **Adicione links externos** -- Anexe links para recursos como vídeos do YouTube, cifras ou partituras hospedadas em outro lugar.
 
-## Arrangements
+## Arranjos
 
-An arrangement represents a distinct version of a song — for example, a faster modern version versus a slower acoustic take, or the same song in a different key for a different team. Each arrangement of the same song shares the song title and artist but has its own independent settings:
+Um arranjo representa uma versão distinta de uma música — por exemplo, uma versão moderna mais rápida versus uma versão acústica mais lenta, ou a mesma música em uma tonalidade diferente para uma equipe diferente. Cada arranjo da mesma música compartilha o título e artista da música, mas tem suas próprias configurações independentes:
 
-- **Key** — the musical key the arrangement is performed in
-- **BPM** — tempo in beats per minute
-- **Length** — duration in seconds
-- **Meter** — time signature (e.g., 4/4, 3/4, 6/8)
-- **Sequence** — the chord/section structure (e.g., Intro → Verse → Chorus → Bridge)
-- **Lyrics** — for display or projection
-- **External links** — chord charts, YouTube recordings, sheet music, or other resources
+- **Tonalidade** — a tonalidade musical em que o arranjo é executado
+- **BPM** — tempo em batidas por minuto
+- **Comprimento** — duração em segundos
+- **Compasso** — assinatura de tempo (por exemplo, 4/4, 3/4, 6/8)
+- **Sequência** — a estrutura de acorde/seção (por exemplo, Intro → Verso → Refrão → Ponte)
+- **Letras** — para exibição ou projeção
+- **Links externos** — cifras, gravações do YouTube, partituras ou outros recursos
 
-When you add a song to a [Service Order](./service-order.md), you can choose which arrangement to use for that specific service, so your team always rehearses and plays the right version.
+Quando você adiciona uma música a uma [Ordem de Serviço](./service-order.md), você pode escolher qual arranjo usar para esse serviço específico, para que sua equipe sempre ensaie e toque a versão correta.
 
 :::info
-Songs from your library can be added directly to a [Service Order](./service-order.md) within a plan, linking the song details and the chosen arrangement to that specific service.
+Músicas da sua biblioteca podem ser adicionadas diretamente a uma [Ordem de Serviço](./service-order.md) dentro de um plano, vinculando os detalhes da música e o arranjo escolhido a esse serviço específico.
 :::
 
-## Next Steps
+## Próximos Passos
 
-- Add songs to your [Service Order](./service-order.md) when building out a [service plan](./plans.md)
-- Coordinate with your worship team using [Tasks](./tasks.md) for song preparation and practice
+- Adicione músicas ao seu [Ordem de Serviço](./service-order.md) ao construir um [plano de serviço](./plans.md)
+- Coordene com sua equipe de adoração usando [Tarefas](./tasks.md) para preparação e prática de músicas

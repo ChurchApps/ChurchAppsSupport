@@ -147,6 +147,10 @@ All of this is B1App-side rendering over ContentApi data — the API stores, the
 
 Page and site generation runs in **AskApi**, a separate service, under the `/website` controller. It authenticates with the same `CustomAuthProvider` JWT as everything else and is **stateless with respect to content**: every endpoint returns JSON and the caller (B1Admin) persists the result through ContentApi (`POST /content/pages/temp/ai` saves a generated page-sections-elements bundle in one call).
 
+:::info
+As of 2026-07-03, B1Admin's entry points to this pipeline — the site "AI" template in `AddPageModal`, the `SectionToolbar` rewrite button, and the pages-list "Generate Site" button — are commented out client-side while the feature is reworked. The AskApi endpoints below are unaffected and still respond; only the B1Admin UI is hidden.
+:::
+
 | Endpoint | Purpose |
 |----------|---------|
 | `POST /website/generatePageOutline` → `generateSection` | The original two-step page flow: outline first, then one call per section. B1Admin's "AI" page template in `AddPageModal` drives this — outline, then parallel section generation, then preview |
