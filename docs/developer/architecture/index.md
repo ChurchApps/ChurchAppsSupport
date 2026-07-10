@@ -50,6 +50,7 @@ Two structural rules shape everything documented in this section:
 | [Website Routing & Multi-Site](./websites) | How a request resolves to a church and a specific site, the multi-site `siteId` data model, and the Caddy custom-domain edge | B1App, Api (membership + content), B1Admin |
 | [Integrations](./integrations) | The extension surface: OAuth, API keys, webhooks, content providers, MCP | Api, shared libraries, external apps |
 | [Audit Log & Undoable Batches](./audit-log) | Default-on auditing of every mutation at the controller choke point, and the batch layer that makes imports and bulk actions undoable | Api (all modules), B1Admin, B1Transfer |
+| [MinistryStuff](./ministrystuff) | The paid storage & texting-credit service: shared-JWT identity, service-key S2S, the texting and storage provider seams, Stripe billing | MinistryStuffApi, MinistryStuffWeb, Api (content + messaging), texting/apihelper packages, B1Admin |
 
 :::tip
 When a change alters how one of these systems works — not just a page inside one app — the matching system map here should be updated in the same effort. That keeps this section trustworthy as the first stop for new contributors.
