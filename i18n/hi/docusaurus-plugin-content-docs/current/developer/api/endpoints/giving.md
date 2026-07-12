@@ -28,12 +28,12 @@ title: "दान एंडपॉइंट"
 
 ### उदाहरण: बैच द्वारा दान सूचीबद्ध करें
 
-\\\
+```
 GET /giving/donations?batchId=abc-123
 Authorization: Bearer <token>
-\\\
+```
 
-\\\json
+```json
 [
   {
     "id": "don-456",
@@ -44,16 +44,16 @@ Authorization: Bearer <token>
     "method": "card"
   }
 ]
-\\\
+```
 
 ### उदाहरण: दान सारांश प्राप्त करें
 
-\\\
+```
 GET /giving/donations/summary?startDate=2025-01-01&endDate=2025-12-31
 Authorization: Bearer <token>
-\\\
+```
 
-\\\json
+```json
 [
   {
     "week": "2025-01-06",
@@ -62,7 +62,7 @@ Authorization: Bearer <token>
     "count": 15
   }
 ]
-\\\
+```
 
 ## दान बैच
 

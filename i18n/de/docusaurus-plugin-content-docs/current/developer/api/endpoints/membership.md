@@ -42,12 +42,12 @@ Basispfad: /membership/people
 
 ### Beispiel: Suchen Sie nach Personen
 
-\\\
+```
 GET /membership/people/search?term=John
 Authorization: Bearer <token>
-\\\
+```
 
-\\\json
+```json
 [
   {
     "id": "abc-123",
@@ -56,16 +56,16 @@ Authorization: Bearer <token>
     "membershipStatus": "Member"
   }
 ]
-\\\
+```
 
 ### Beispiel: Erstellen Sie eine Person
 
-\\\
+```
 POST /membership/people
 Authorization: Bearer <token>
 
 [{ "firstName": "Jane", "lastName": "Doe", "contactInfo": { "email": "jane@example.com" } }]
-\\\
+```
 
 ## Benutzer
 

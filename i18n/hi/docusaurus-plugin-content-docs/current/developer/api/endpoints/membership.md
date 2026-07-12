@@ -42,12 +42,12 @@ title: "सदस्यता एंडपॉइंट"
 
 ### उदाहरण: लोगों की खोज करें
 
-\\\
+```
 GET /membership/people/search?term=John
 Authorization: Bearer <token>
-\\\
+```
 
-\\\json
+```json
 [
   {
     "id": "abc-123",
@@ -56,16 +56,16 @@ Authorization: Bearer <token>
     "membershipStatus": "Member"
   }
 ]
-\\\
+```
 
 ### उदाहरण: व्यक्ति बनाएं
 
-\\\
+```
 POST /membership/people
 Authorization: Bearer <token>
 
 [{ "firstName": "Jane", "lastName": "Doe", "contactInfo": { "email": "jane@example.com" } }]
-\\\
+```
 
 ## उपयोगकर्ता
 

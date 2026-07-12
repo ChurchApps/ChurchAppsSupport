@@ -29,11 +29,11 @@ title: "सामग्री एंडपॉइंट"
 
 ### उदाहरण: पृष्ठ पेड़ लोड करें
 
-\\\
+```
 GET /content/pages/abc-church-id/tree?url=/about
-\\\
+```
 
-\\\json
+```json
 {
   "name": "बारे में",
   "url": "/about",
@@ -47,7 +47,7 @@ GET /content/pages/abc-church-id/tree?url=/about
     }
   ]
 }
-\\\
+```
 
 ## अनुभाग
 

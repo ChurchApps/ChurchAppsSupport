@@ -28,12 +28,12 @@ Basispfad: /giving/donations
 
 ### Beispiel: Auflisten von Spenden nach Batch
 
-\\\
+```
 GET /giving/donations?batchId=abc-123
 Authorization: Bearer <token>
-\\\
+```
 
-\\\json
+```json
 [
   {
     "id": "don-456",
@@ -44,16 +44,16 @@ Authorization: Bearer <token>
     "method": "card"
   }
 ]
-\\\
+```
 
 ### Beispiel: Spendenzusammenfassung abrufen
 
-\\\
+```
 GET /giving/donations/summary?startDate=2025-01-01&endDate=2025-12-31
 Authorization: Bearer <token>
-\\\
+```
 
-\\\json
+```json
 [
   {
     "week": "2025-01-06",
@@ -62,7 +62,7 @@ Authorization: Bearer <token>
     "count": 15
   }
 ]
-\\\
+```
 
 ## Spendenbatches
 
@@ -98,7 +98,7 @@ Verwaltet den öffentlich zugänglichen Spendendfluss einschließlich Gebühren,
 
 ### Beispiel: Verarbeiten Sie eine Spendenzahlung
 
-\\\
+```
 POST /giving/donate/charge
 Authorization: Bearer <token>
 
@@ -110,19 +110,19 @@ Authorization: Bearer <token>
   "funds": [{ "id": "fund-001", "name": "General Fund", "amount": 50.00 }],
   "church": { "name": "First Church", "subDomain": "firstchurch" }
 }
-\\\
+```
 
-\\\json
+```json
 {
   "id": "ch_abc123",
   "status": "succeeded",
   "provider": "stripe"
 }
-\\\
+```
 
 ### Beispiel: Erstellen Sie ein wiederkehrendes Abonnement
 
-\\\
+```
 POST /giving/donate/subscribe
 Authorization: Bearer <token>
 
@@ -136,15 +136,15 @@ Authorization: Bearer <token>
   "funds": [{ "id": "fund-001", "name": "General Fund", "amount": 100.00 }],
   "church": { "name": "First Church", "subDomain": "firstchurch" }
 }
-\\\
+```
 
-\\\json
+```json
 {
   "id": "sub_xyz789",
   "status": "active",
   "provider": "stripe"
 }
-\\\
+```
 
 ## Fonds
 
@@ -194,15 +194,15 @@ Verwaltet Zahlungs-Gateway-Konfigurationen (Stripe, PayPal, etc.). Keine Standar
 
 ### Beispiel: Gateway-Konfiguration überprüfen
 
-\\\
+```
 GET /giving/gateways/configured/church-123
-\\\
+```
 
-\\\json
+```json
 {
   "configured": true
 }
-\\\
+```
 
 ## Kunden
 

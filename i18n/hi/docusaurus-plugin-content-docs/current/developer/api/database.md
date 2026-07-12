@@ -20,7 +20,7 @@ ChurchApps API एक **मॉड्यूल-प्रति-डेटाबे
 
 ## आर्किटेक्चर अवलोकन
 
-\\\
+```
 Api
 ├── membership_db   ← लोग, समूह, अनुमतियां
 ├── attendance_db   ← सेवाएं, सत्र, रिकॉर्ड
@@ -28,7 +28,7 @@ Api
 ├── giving_db       ← दान, निधि, भुगतान
 ├── messaging_db    ← बातचीत, सूचनाएं
 └── doing_db        ← कार्य, योजनाएं, असाइनमेंट
-\\\
+```
 
 ### मुख्य डिज़ाइन निर्णय
 
@@ -41,22 +41,22 @@ Api
 
 प्रत्येक मॉड्यूल का डेटाबेस कनेक्शन .env में मानक MySQL कनेक्शन स्ट्रिंग प्रारूप का उपयोग करके कॉन्फ़िगर किया गया है:
 
-\\\
+```
 mysql://user:password@host:port/database
-\\\
+```
 
 उदाहरण के लिए, स्थानीय विकास सेटअप इस तरह दिख सकता है:
 
 प्रत्येक मॉड्यूल अपने कनेक्शन को \<MODULE>_CONNECTION_STRING\ नामित एक पर्यावरण चर से पढ़ता है:
 
-\\\env
+```env
 MEMBERSHIP_CONNECTION_STRING=mysql://root:password@localhost:3306/churchapps_membership
 ATTENDANCE_CONNECTION_STRING=mysql://root:password@localhost:3306/churchapps_attendance
 CONTENT_CONNECTION_STRING=mysql://root:password@localhost:3306/churchapps_content
 GIVING_CONNECTION_STRING=mysql://root:password@localhost:3306/churchapps_giving
 MESSAGING_CONNECTION_STRING=mysql://root:password@localhost:3306/churchapps_messaging
 DOING_CONNECTION_STRING=mysql://root:password@localhost:3306/churchapps_doing
-\\\
+```
 
 :::info
 उत्पादन में, कनेक्शन स्ट्रिंग AWS SSM पैरामीटर स्टोर में संग्रहीत होती हैं और स्टार्टअप पर \Environment\ वर्ग द्वारा पढ़ी जाती हैं।
@@ -66,7 +66,7 @@ DOING_CONNECTION_STRING=mysql://root:password@localhost:3306/churchapps_doing
 
 तालिका स्कीमा \	ools/migrations/\ निर्देशिका में Kysely माइग्रेशन के रूप में परिभाषित किए गए हैं, मॉड्यूल द्वारा व्यवस्थित:
 
-\\\
+```
 tools/migrations/
 ├── membership/
 ├── attendance/
@@ -74,7 +74,7 @@ tools/migrations/
 ├── giving/
 ├── messaging/
 └── doing/
-\\\
+```
 
 माइग्रेशन तालिका निर्माण, सूचकांक, और स्कीमा परिवर्तन को परिभाषित करते हैं। \	ools/dbScripts/\ निर्देशिका में डेमो और बीज डेटा होता है जो स्कीमा के शीर्ष पर लोड किया जा सकता है।
 
@@ -82,17 +82,17 @@ tools/migrations/
 
 ### सभी डेटाबेस को प्रारंभ करें
 
-\\\ash
+```ash
 npm run initdb
-\\\
+```
 
 यह सभी छः डेटाबेस बनाता है और प्रत्येक के लिए माइग्रेशन चलाता है।
 
 ### एक ही मॉड्यूल को प्रारंभ करें
 
-\\\ash
+```ash
 npm run initdb -- --module=membership
-\\\
+```
 
 :::tip
 किसी विशिष्ट मॉड्यूल पर काम करते समय, आप केवल उस मॉड्यूल के डेटाबेस को पुनः प्रारंभ कर सकते हैं अन्य को प्रभावित किए बिना।

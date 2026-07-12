@@ -29,11 +29,11 @@ Basispfad: /content/pages
 
 ### Beispiel: Seitenbaum laden
 
-\\\
+```
 GET /content/pages/abc-church-id/tree?url=/about
-\\\
+```
 
-\\\json
+```json
 {
   "name": "About",
   "url": "/about",
@@ -47,7 +47,7 @@ GET /content/pages/abc-church-id/tree?url=/about
     }
   ]
 }
-\\\
+```
 
 ## Abschnitte
 
@@ -182,11 +182,11 @@ Basispfad: /content/sermons
 
 ### Beispiel: Suchen Sie eine YouTube-Predigt
 
-\\\
+```
 GET /content/sermons/lookup?videoType=youtube&videoData=dQw4w9WgXcQ
-\\\
+```
 
-\\\json
+```json
 {
   "title": "Sunday Service - Faith in Action",
   "description": "Pastor John speaks about faith...",
@@ -194,7 +194,7 @@ GET /content/sermons/lookup?videoType=youtube&videoData=dQw4w9WgXcQ
   "duration": 2400,
   "publishDate": "2025-01-15T10:00:00Z"
 }
-\\\
+```
 
 ## Playlisten
 
@@ -319,17 +319,17 @@ Alle Bibelendpunkte sind öffentlich (keine Authentifizierung erforderlich). Dat
 
 ### Beispiel: Verstetext abrufen
 
-\\\
+```
 GET /content/bibles/de4e12af7f28f599-02/verses/GEN.1.1-GEN.1.3
-\\\
+```
 
-\\\json
+```json
 [
   { "verseKey": "GEN.1.1", "content": "In the beginning God created the heavens and the earth.", "bookKey": "GEN", "chapterNumber": 1, "verseNumber": 1 },
   { "verseKey": "GEN.1.2", "content": "Now the earth was formless and empty...", "bookKey": "GEN", "chapterNumber": 1, "verseNumber": 2 },
   { "verseKey": "GEN.1.3", "content": "And God said, \"Let there be light,\" and there was light.", "bookKey": "GEN", "chapterNumber": 1, "verseNumber": 3 }
 ]
-\\\
+```
 
 ## Lieder
 
