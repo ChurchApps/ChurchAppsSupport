@@ -234,6 +234,7 @@ If you hit something not on this list, open an issue at [github.com/ChurchApps/A
 
 ## Related Articles
 
+- **[Self-Hosting with Docker](./docker)** — Same stack on your own hardware or VPS
 - **[Initial Setup](../../getting-started/initial-setup)** — First steps after your church is created
 - **[Website Initial Setup](../../b1-admin/website/initial-setup)** — Configure your church's public site
 - **[Giving Settings](../../b1-admin/donations/online-giving-setup)** — Wire up Stripe or PayPal
