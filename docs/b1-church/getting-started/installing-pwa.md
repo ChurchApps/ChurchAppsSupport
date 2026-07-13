@@ -30,15 +30,37 @@ A Progressive Web App (PWA) is a website that can be installed on your device an
 The PWA is a great option if you prefer not to install a separate app from the App Store or Google Play. It provides the same member portal experience you get in the browser, in a more convenient package.
 :::
 
-## Where to Install From
+## The Install Page
 
-You can install the PWA from **any page** on your church's B1.church site — the public home page, a sermon page, the login screen, or anywhere inside the member portal. There is no separate "install URL" to remember; if you can visit your church on the web, you can install the app from there.
+The easiest way to install is your church's dedicated install page:
+
+```
+https://yourchurchname.b1.church/mobile/install
+```
+
+The page detects your device and shows the right instructions automatically:
+
+- **iPhone** — step-by-step Safari "Add to Home Screen" instructions
+- **Android** — a one-tap **Install on Home Screen** button in Chrome
+- **Desktop** — a QR code you can scan with your phone to open the install page there
+
+You can get to the install page in several ways:
+
+- Open the menu (☰) in the member portal and tap **Install App** (the item is hidden once the app is already installed)
+- Follow a link your church shares by text, email, or from the Sunday screen
+- Type the URL directly into your browser
+
+:::tip For church staff
+Share the install page link with your congregation — put it in your bulletin, newsletter, or on a slide. It walks each member through the exact steps for their device. You can also reach it from the **Download the App** quick action on your B1Admin dashboard.
+:::
+
+You can also install the PWA manually from **any page** on your church's B1.church site using the browser steps below — the install page is just the guided way to do it.
 
 When you launch the installed app, it opens directly to your member dashboard, ready for you to log in.
 
 ## Installing on iPhone (iOS — Safari)
 
-1. Open **Safari** on your iPhone and go to `https://yourchurchname.b1.church` (replace `yourchurchname` with your church's URL slug).
+1. Open **Safari** on your iPhone and go to `https://yourchurchname.b1.church/mobile/install` (replace `yourchurchname` with your church's URL slug).
 2. Tap the **Share** button (the box with an arrow pointing up) at the bottom of the screen.
 3. Scroll down in the share sheet and tap **Add to Home Screen**.
 4. The name will default to your church's name. Tap **Add** in the top-right corner.
@@ -51,8 +73,8 @@ PWA installation on iOS requires Safari. If you are using Chrome or another brow
 
 ## Installing on Android (Chrome)
 
-1. Open **Chrome** on your Android device and go to `https://yourchurchname.b1.church`.
-2. Chrome will automatically show an **"Add to Home screen"** banner at the bottom of the screen, or tap the three-dot menu (⋮) in the top-right corner and select **Add to Home screen**.
+1. Open **Chrome** on your Android device and go to `https://yourchurchname.b1.church/mobile/install`.
+2. Tap the **Install on Home Screen** button. (If the button isn't available, tap the three-dot menu (⋮) in the top-right corner and select **Add to Home screen**.)
 3. Tap **Add** when prompted.
 
 The app icon will appear on your home screen. Tap it to open the member portal.

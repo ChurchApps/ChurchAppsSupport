@@ -45,7 +45,7 @@ Once you are logged in, the member portal gives you access to:
 
 ## Accessing on Your Phone
 
-B1.church works in any mobile browser. For a more app-like experience, install your church's member portal as a **Progressive Web App (PWA)** — add it to your home screen directly from Safari or Chrome with no app store required. See [Installing as an App (PWA)](./installing-pwa.md) for instructions.
+B1.church works in any mobile browser. For a more app-like experience, install your church's member portal as a **Progressive Web App (PWA)** — visit `https://yourchurchname.b1.church/mobile/install` for guided, device-specific steps, or add it to your home screen directly from Safari or Chrome. No app store required. See [Installing as an App (PWA)](./installing-pwa.md) for instructions.
 
 :::info
 The legacy native B1 Mobile app has been deprecated. The PWA is the supported way to use B1.church on a phone going forward — see the [B1 Mobile reference page](/docs/b1-mobile/) for historical documentation.
