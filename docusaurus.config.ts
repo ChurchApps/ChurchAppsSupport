@@ -26,7 +26,7 @@ const config: Config = {
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ar', 'cs', 'da', 'de', 'es', 'fi', 'fr', 'hi', 'hu', 'id', 'it', 'ja', 'ko', 'lt', 'nl', 'no', 'pl', 'pt', 'ro', 'ru', 'sk', 'sl', 'sr', 'sv', 'tl', 'tr', 'uk', 'vi', 'zh'],
+    locales: ['en', 'ar', 'cs', 'da', 'de', 'es', 'fi', 'fr', 'hi', 'hu', 'id', 'it', 'ja', 'ko', 'lt', 'nl', 'no', 'pl', 'pt', 'ro', 'ru', 'sk', 'sl', 'sr', 'ss', 'sv', 'tl', 'tr', 'uk', 'vi', 'zh'],
     localeConfigs: {
       en: { label: 'English', htmlLang: 'en-US' },
       ar: { label: 'العربية', htmlLang: 'ar', direction: 'rtl' },
@@ -52,6 +52,7 @@ const config: Config = {
       sk: { label: 'Slovenčina', htmlLang: 'sk' },
       sl: { label: 'Slovenščina', htmlLang: 'sl' },
       sr: { label: 'Српски', htmlLang: 'sr' },
+      ss: { label: 'siSwati', htmlLang: 'ss' },
       sv: { label: 'Svenska', htmlLang: 'sv' },
       tl: { label: 'Tagalog', htmlLang: 'tl' },
       tr: { label: 'Türkçe', htmlLang: 'tr' },
