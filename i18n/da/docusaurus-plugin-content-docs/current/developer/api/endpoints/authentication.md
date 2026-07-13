@@ -6,7 +6,7 @@ title: "Godkendelse & Tilladelser"
 
 <div class="article-intro">
 
-ChurchApps API'en bruger JWT-baseret godkendelse. Brugere logger ind for at modtage et token, der koder deres identitet, kirkegodkendelse og tilladelser. Denne side dækker auth-flow, tilladels model og OAuth-understøttelse.
+ChurchApps API'en bruger JWT-baseret godkendelse. Brugere logger ind for at modtage et `token`, der koder deres identitet, kirkegodkendelse og tilladelser. Denne side dækker auth-flow, tilladels model og OAuth-understøttelse.
 
 </div>
 

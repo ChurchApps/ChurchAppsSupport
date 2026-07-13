@@ -27,36 +27,36 @@ Die ChurchApps API ist ein **modulares Monolith** -- eine einzelne Codebasis, di
 - **Framework:** Express
 - **Dependency Injection:** Inversify (dekorator-basiertes Routing)
 - **Datenbank:** MySQL -- eine Datenbank pro Modul, jede mit ihrem eigenen Verbindungspool
-- **Auth:** JWT-basierte Authentifizierung über CustomAuthProvider
+- **Auth:** JWT-basierte Authentifizierung über `CustomAuthProvider`
 - **Bereitstellung:** AWS Lambda über Serverless Framework v3
 
 ## Ports
 
 | Protocol | Port | Beschreibung |
 |----------|------|-------------|
-| HTTP | 8084 | Haupt-REST-API |
-| WebSocket | 8087 | Echtzeitocket-Verbindungen |
+| HTTP | `8084` | Haupt-REST-API |
+| WebSocket | `8087` | Echtzeitocket-Verbindungen |
 
 ## Lambda-Funktionen
 
 Bei der Bereitstellung auf AWS läuft die API als sechs Lambda-Funktionen:
 
-- **web** -- Verarbeitet alle HTTP-Anfragen
-- **socket** -- Verwaltet WebSocket-Verbindungen
-- **	imer15Min** -- Läuft alle 30 Minuten für E-Mail-Benachrichtigungen (der Name ist historisch)
-- **	imerMidnight** -- Läuft täglich für Verdauungs-E-Mails und Wartungsaufgaben
-- **	imerScheduledTasks** -- Läuft täglich für Automationen und übergeordnete Workflow-Verarbeitung
-- **	imerWebhooks** -- Läuft jede Minute, um ausstehende ausgehende Webhooks zu liefern
+- **`web`** -- Verarbeitet alle HTTP-Anfragen
+- **`socket`** -- Verwaltet WebSocket-Verbindungen
+- **`timer15Min`** -- Läuft alle 30 Minuten für E-Mail-Benachrichtigungen (der Name ist historisch)
+- **`timerMidnight`** -- Läuft täglich für Verdauungs-E-Mails und Wartungsaufgaben
+- **`timerScheduledTasks`** -- Läuft täglich für Automationen und übergeordnete Workflow-Verarbeitung
+- **`timerWebhooks`** -- Läuft jede Minute, um ausstehende ausgehende Webhooks zu liefern
 
 ## Freigegebene Bibliotheken
 
 Die API hängt von zwei freigegebenen ChurchApps-Paketen ab:
 
-- **[@churchapps/helpers](../shared-libraries/helpers)** -- Basis-Hilfsfunktionen (DateHelper, ApiHelper, etc.)
-- **[@churchapps/apihelper](../shared-libraries/api-helper)** -- Express-Server-Hilfsfunktionen einschließlich Auth, Datenbank-Helfer und AWS-Integrationen
+- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- Basis-Hilfsfunktionen (DateHelper, ApiHelper, etc.)
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Express-Server-Hilfsfunktionen einschließlich Auth, Datenbank-Helfer und AWS-Integrationen
 
 :::info
-Die API verwendet ES-Module (\"type\": \"module\" in package.json). Stellen Sie sicher, dass Ihre Importe die ES-Modul-Syntax verwenden.
+Die API verwendet ES-Module (\"type\": \"module\" in `package.json`). Stellen Sie sicher, dass Ihre Importe die ES-Modul-Syntax verwenden.
 :::
 
 ## In diesem Abschnitt

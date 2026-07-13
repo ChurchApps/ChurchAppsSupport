@@ -43,7 +43,7 @@ Anbieter tokenisieren unterschiedlich, aber alle halten die Karte aus B1:
 
 | Anbieter | Eintrag | Token |
 |---|---|---|
-| Stripe | Elements CardElement | payment-method id (pm_…) |
+| Stripe | `Elements` `CardElement` | payment-`method` id (`pm_…`) |
 | Kingdom Funding | Gehosteter Tokenizer | Single-use Nonce |
 | PayPal | Gehostete Felder | erfasstes Order-ID |
 
@@ -58,8 +58,8 @@ Anbieter tokenisieren unterschiedlich, aber alle halten die Karte aus B1:
 | Stripe | Immer ein |
 | PayPal | Immer ein |
 | Kingdom Funding | Immer ein |
-| Square | Opt-in via ENABLE_SQUARE |
-| ePayMints | Opt-in via ENABLE_EPAYMINTS |
+| Square | Opt-in via `ENABLE_SQUARE` |
+| ePayMints | Opt-in via `ENABLE_EPAYMINTS` |
 
 ## Datenmodell
 
@@ -67,6 +67,6 @@ Die Spenden-Schema mit Tabellen wie `gateways`, `funds`, `donations`, `fundDonat
 
 ## Verwandte Artikel
 
-- [Spenden-Endpoints](../api/endpoints/giving) — Vollständige REST-Oberfläche
+- [Spenden-Endpoints](../api/endpoints`/giving`) — Vollständige REST-Oberfläche
 - [AppHelper](../shared-libraries/app-helper) — Das npm-Paket mit Provider-Registry
 - [Modul-Struktur](../api/module-structure) — Wie GivingApi organisiert ist

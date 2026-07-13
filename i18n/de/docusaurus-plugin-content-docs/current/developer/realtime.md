@@ -36,12 +36,12 @@ interface PayloadInterface {
 ```
 
 Aktionen umfassen:
-- `socketId` -- Server → Client, trägt die socketId für Raum-Joins
+- `socketId` -- Server → Client, trägt die `socketId` für Raum-Joins
 - `message` -- Server → Client, neue Nachricht
 - `deleteMessage` -- Server → Client, Nachricht entfernt
 - `attendance` -- Server → Client, Zuschauer-Liste / Präsenz-Snapshot
 - `notification` -- Server → Client, generische Benachrichtigung
-- `reconnect` -- Client-intern, nach einem neuen socketId-Handshake
+- `reconnect` -- Client-intern, nach einem neuen `socketId`-Handshake
 
 ## Server-seitige Komponenten
 
@@ -53,14 +53,14 @@ Aktionen umfassen:
 | `MessageController.ts` | Nachrichten speichern und fan-out |
 | `ConnectionRepo.ts` | Abonnenten-Quelle |
 
-## Client-seitige Primitives (@churchapps/apphelper)
+## Client-seitige Primitives (`@churchapps/apphelper`)
 
 Alle fünf Primitives sind statische Singletons:
 
 - `SocketHelper` -- Besitzt die einzelne WebSocket-Verbindung
 - `SubscriptionManager` -- Ref-gezählte Raum-Mitgliedschaft
 - `ConversationStore` -- In-Memory-Cache
-- `PresenceStore` -- Spiegelt ConversationStore für Zuschauer
+- `PresenceStore` -- Spiegelt `ConversationStore` für Zuschauer
 - `NotificationService` -- Boot für authentifizierte Anrufer
 
 ## Live-Stream-Chat

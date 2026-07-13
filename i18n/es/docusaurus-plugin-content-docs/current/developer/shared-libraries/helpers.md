@@ -35,5 +35,5 @@ yarn publish-all
 
 ## Artículos relacionados
 
-- **[ApiHelper](./api-helper)** -- Utilidades del lado del servidor
+- **[`ApiHelper`](./api-helper)** -- Utilidades del lado del servidor
 - **[AppHelper](./app-helper)** -- Componentes React

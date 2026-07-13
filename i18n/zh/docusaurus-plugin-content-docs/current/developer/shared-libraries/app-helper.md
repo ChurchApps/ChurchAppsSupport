@@ -74,7 +74,7 @@ B1Transfer 和 LessonsApp 只使用根和 `login` 入口点——`donations`、`
    cd apphelper && yarn dev
    ```
 
-   游乐场开发服务器启动在 **http://localhost:3001**。首先复制 `playground/dotenv.sample` 到 `playground/.env` 并填入所需的值。
+   游乐场开发服务器启动在 `http://localhost:3001`。首先复制 `playground/dotenv.sample` 到 `playground/.env` 并填入所需的值。
 
 要构建供使用的包（编译到 `dist/` 并复制 locale/CSS 资源），运行 `yarn workspace @churchapps/apphelper build` ——或在根目录运行 `yarn build` 以按依赖顺序构建工作区中的每个包。要在消费应用内测试未发布的构建，请使用临时 Yarn 链接——参阅 [针对消费应用的本地开发](./index.md#local-development-against-a-consuming-app)。
 

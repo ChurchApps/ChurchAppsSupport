@@ -22,7 +22,7 @@ Ang ChurchApps ay naglalathala ng isang one-click Railway template na nagbibigay
 Iyan na. Mayroon kang isang ganap na gumagana na ChurchApps instance.
 
 :::tip
-Ang deploy ay kasalukuyang sa **beta**. Kung makakuha ka ng isang bagay na hindi sumasaklaw ang mga docs, mangyaring magbukas ng isang isyu sa github.com/ChurchApps/Api/issues na may mga deploy logs.
+Ang deploy ay kasalukuyang sa **beta**. Kung makakuha ka ng isang bagay na hindi sumasaklaw ang mga docs, mangyaring magbukas ng isang isyu sa github.com/`ChurchApps/Api`/issues na may mga deploy logs.
 :::
 
 <div class="prereqs">

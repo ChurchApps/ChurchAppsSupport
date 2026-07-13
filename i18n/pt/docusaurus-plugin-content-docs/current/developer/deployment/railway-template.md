@@ -24,7 +24,7 @@ ChurchApps publica um modelo de um clique do [Railway](https://railway.com) que 
 Isso é tudo. Você agora tem uma instância ChurchApps totalmente funcional. Tudo abaixo é polimento opcional.
 
 :::tip
-A implantação está atualmente em **beta**. Se você encontrar algo que os documentos não cobrem, abra um problema em [github.com/ChurchApps/Api/issues](https://github.com/ChurchApps/Api/issues) com logs de implantação anexados.
+A implantação está atualmente em **beta**. Se você encontrar algo que os documentos não cobrem, abra um problema em [github.com/`ChurchApps/Api`/issues](https://github.com/`ChurchApps/Api`/issues) com logs de implantação anexados.
 :::
 
 <div class="prereqs">

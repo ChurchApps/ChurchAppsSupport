@@ -24,7 +24,7 @@ ChurchApps publica una plantilla de un clic en [Railway](https://railway.com) qu
 Eso es. Ahora tienes una instancia de ChurchApps completamente funcional. Todo lo que sigue es opcional.
 
 :::tip
-El despliegue está actualmente en **beta**. Si encuentras algo que los documentos no cubren, abre una incidencia en [github.com/ChurchApps/Api/issues](https://github.com/ChurchApps/Api/issues) con registros de despliegue adjuntos.
+El despliegue está actualmente en **beta**. Si encuentras algo que los documentos no cubren, abre una incidencia en [github.com/`ChurchApps/Api`/issues](https://github.com/`ChurchApps/Api`/issues) con registros de despliegue adjuntos.
 :::
 
 ## Qué Se Despliega

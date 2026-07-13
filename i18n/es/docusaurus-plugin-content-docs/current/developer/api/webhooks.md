@@ -6,7 +6,7 @@ title: "Webhooks"
 
 <div class="article-intro">
 
-Los webhooks permiten a una iglesia enviar notificaciones en tiempo real a herramientas de terceros -- plataformas de automatización (Zapier, Make, n8n), CRM, sistemas contables, o cualquier cosa que acepte un POST HTTP. Cuando una persona, grupo u hogar cambia en B1, B1 envía un payload JSON firmado a cada URL suscrita a ese evento.
+Los webhooks permiten a una iglesia enviar notificaciones en tiempo real a herramientas de terceros -- plataformas de automatización (Zapier, Make, n8n), CRM, sistemas contables, o cualquier cosa que acepte un `POST` HTTP. Cuando una persona, grupo u hogar cambia en B1, B1 envía un payload JSON firmado a cada URL suscrita a ese evento.
 
 </div>
 
@@ -23,7 +23,7 @@ Los webhooks permiten a una iglesia enviar notificaciones en tiempo real a herra
 
 Los webhooks son **solo salientes**: B1 llama a tu punto final, no al revés. Cada webhook es una suscripción por iglesia que consiste en una URL de destino, un secreto de firma y una lista de eventos suscritos.
 
-La entrega utiliza un **buzón duradero**: cuando ocurre un evento suscrito, B1 registra una fila de entrega y un trabajador de fondo hace POST dentro de aproximadamente un minuto. Las entregas fallidas se reintentan con retroceso exponencial. Nada se pierde si una entrega es lenta o tu punto final está brevemente inactivo.
+La entrega utiliza un **buzón duradero**: cuando ocurre un evento suscrito, B1 registra una fila de entrega y un trabajador de fondo hace `POST` dentro de aproximadamente un minuto. Las entregas fallidas se reintentan con retroceso exponencial. Nada se pierde si una entrega es lenta o tu punto final está brevemente inactivo.
 
 ## Registrando un Webhook
 

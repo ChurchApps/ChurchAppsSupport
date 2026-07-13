@@ -6,7 +6,7 @@ title: "AppHelper"
 
 <div class="article-intro">
 
-De `@churchapps/apphelper*`-pakketten bieden gedeelde React-onderdelen en utilities voor alle ChurchApps web-applicaties. AppHelper is gestructureerd als een monorepo-werkruimte met zes pakketten die kernonderdelen, verificatie, donaties, formulieren, markdown en website/CMS-functionaliteit omvatten.
+De `@churchapps/apphelper*`-pakketten bieden gedeelde React-onderdelen en utilities voor alle ChurchApps web-applicaties. AppHelper is gestructureerd als een monorepo-werkruimte met zes pakketten die kernonderdelen, verificatie, donaties, formulieren, markdown en `website`/CMS-functionaliteit omvatten.
 
 </div>
 

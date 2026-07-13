@@ -43,5 +43,5 @@ Ruta base: `/membership/people`
 ## Páginas relacionadas
 
 - [Autenticación y permisos](./authentication) — Flujo de inicio de sesión, JWT, OAuth, modelo de permisos
-- [Puntos finales de asistencia](./attendance) — Seguimiento de servicio y visita
+- [Puntos finales de asistencia](.`/attendance`) — Seguimiento de servicio y visita
 - [Estructura del módulo](../module-structure) — Patrones de organización del código

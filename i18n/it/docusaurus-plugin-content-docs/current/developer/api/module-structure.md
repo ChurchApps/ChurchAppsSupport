@@ -30,4 +30,4 @@ src/modules/{name}/
 
 - **[Database](./database)** -- Stringhe di connessione, script di schema e pattern di accesso ai dati
 - **[Configurazione locale dell'API](./local-setup)** -- Guida completa passo dopo passo
-- **[ApiHelper](../shared-libraries/api-helper)** -- La libreria condivisa che fornisce CustomBaseController e middleware di autenticazione
+- **[ApiHelper](../shared-libraries/api-helper)** -- La libreria condivisa che fornisce `CustomBaseController` e middleware di autenticazione

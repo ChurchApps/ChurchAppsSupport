@@ -33,8 +33,8 @@ Benutzerdefinierte Kirchen-Domains (`mychurch.org` → Website der Gemeinde B1) 
 ## Anfrage-Flow
 
 1. Browser löst `mychurch.org` → `3.23.251.61` auf
-2. Caddy beendete TLS; Cert im S3 → servieren; unbekannter SNI → `authorize` fragen; 200 → ausgeben; 404 → TLS-abgelehnt
-3. `map` löst Host → `{sub}.b1.church` auf; `www.` → 302 redirect; unbekannter Host → sauberer 404
+2. Caddy beendete TLS; Cert im S3 → servieren; unbekannter SNI → `authorize` fragen; 200 → ausgeben; `404` → TLS-abgelehnt
+3. `map` löst Host → `{sub}.b1.church` auf; `www.` → 302 redirect; unbekannter Host → sauberer `404`
 4. `reverse_proxy` dials `{sub}.b1.church:443` mit Upstream Host umgeschrieben
 5. Port 80 leitet ACME-Herausforderungen und 308-alles-andere zu https weiter
 
@@ -66,7 +66,7 @@ Kondensiert aus dem Feld-getesteten Verfahren:
 
 - **Logs**: WinSW rolling logs in `C:\caddy\`
 - **Karte erzwingen zu aktualisieren**: `Start-ScheduledTask -TaskName CaddyHostmapSync`
-- **Config-Änderung**: Edit Caddyfile, dann `caddy reload`
+- **Config-Änderung**: Edit `Caddyfile`, dann `caddy reload`
 - **DNS-Anweisungen** unveränderlich: apex `A 3.23.251.61` oder `CNAME proxy.b1.church`
 
 ## Verwandte Artikel

@@ -22,11 +22,11 @@ Drei Regeln gelten über den Stack:
 
 | Tabelle | Bedeutung | Schlüssel-Felder |
 |---|---|---|
-| `registrations` | Eine Registrierung | eventId, personId, **status** (pending/confirmed/waitlisted/cancelled), totalAmount |
-| `registrationMembers` | Ein Teilnehmer auf einer Registrierung | registrationId, personId, **registrationTypeId** |
+| `registrations` | Eine Registrierung | eventId, `personId`, **status** (`pending`/`confirmed`/`waitlisted`/`cancelled`), `totalAmount` |
+| `registrationMembers` | Ein Teilnehmer auf einer Registrierung | registrationId, `personId`, **registrationTypeId** |
 | `registrationTypes` | Teilnehmer-Typen pro Event | eventId, name, **price**, **capacity** |
 | `registrationSelections` | Benannte Add-On-Optionen | eventId, name, **price**, **capacity**, **maxQuantity** |
-| `registrationCoupons` | Rabatt-Codes | eventId, code, **discountType** (percent/amount), **value** |
+| `registrationCoupons` | Rabatt-Codes | eventId, code, **discountType** (`percent`/`amount`), **`value`** |
 
 ## Zahlungs-Flow
 
@@ -40,4 +40,4 @@ Wenn das Ereignis voll ist und die `waitlistEnabled` Flag ein ist, speichert `re
 
 - [Spenden](./giving) — Die Gateway-Abstraktion und Tokenisierungs-Modell
 - [Inhalts-Endpoints](../api/endpoints/content) — Vollständige REST-Oberfläche
-- [Webhooks](../api/webhooks) — Das registration.created Ereignis
+- [Webhooks](../api/webhooks) — Das `registration.created` Ereignis

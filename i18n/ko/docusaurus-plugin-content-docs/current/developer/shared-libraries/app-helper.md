@@ -37,15 +37,15 @@ title: "AppHelper"
 
 | 내보내기 영역 | 제공 항목 | 소비처 |
 |---|---|---|
-| 루트 -- 핵심 컴포넌트 및 훅 | DisplayBox, InputBox, Loading, PageHeader 등 | B1Admin, B1App, B1Transfer, LessonsApp |
-| 루트 -- 사이트 크롬 | SiteHeader (네비게이션, 사용자 메뉴, 알림) | B1Admin, B1Transfer, LessonsApp |
-| 루트 -- 관리 콘텐츠 편집기 | ImageEditor, HelpIcon | B1Admin |
-| 루트 -- 실시간 배관 | SocketHelper, SubscriptionManager, NotificationService | B1Admin, B1App |
-| 루트 -- 채팅/프레젠스 저장소 | ConversationStore, PresenceStore | B1App |
-| `./login` | LoginPage, LogoutPage | B1Admin, B1App, B1Transfer, LessonsApp |
-| `./markdown` | MarkdownEditor, MarkdownPreviewLight | B1Admin, B1App, LessonsApp |
-| `./donations` | MultiGatewayDonationForm, RecurringDonations, PaymentMethods 등 | B1Admin, B1App |
-| `./forms` | FormSubmissionEdit | B1Admin, B1App |
+| 루트 -- 핵심 컴포넌트 및 훅 | `DisplayBox`, `InputBox`, `Loading`, `PageHeader` 등 | B1Admin, B1App, B1Transfer, LessonsApp |
+| 루트 -- 사이트 크롬 | `SiteHeader` (네비게이션, 사용자 메뉴, 알림) | B1Admin, B1Transfer, LessonsApp |
+| 루트 -- 관리 콘텐츠 편집기 | `ImageEditor`, `HelpIcon` | B1Admin |
+| 루트 -- 실시간 배관 | `SocketHelper`, `SubscriptionManager`, `NotificationService` | B1Admin, B1App |
+| 루트 -- 채팅/프레젠스 저장소 | `ConversationStore`, `PresenceStore` | B1App |
+| `./login` | `LoginPage`, `LogoutPage` | B1Admin, B1App, B1Transfer, LessonsApp |
+| `./markdown` | `MarkdownEditor`, `MarkdownPreviewLight` | B1Admin, B1App, LessonsApp |
+| `./donations` | `MultiGatewayDonationForm`, `RecurringDonations`, `PaymentMethods` 등 | B1Admin, B1App |
+| `./forms` | `FormSubmissionEdit` | B1Admin, B1App |
 | `./website` | 페이지 렌더링 핵심 및 요소 렌더러 | B1Admin, B1App |
 
 B1Transfer 및 LessonsApp은 루트 및 `login` 진입점만 사용합니다.
@@ -72,7 +72,7 @@ B1Transfer 및 LessonsApp은 루트 및 `login` 진입점만 사용합니다.
    cd apphelper && yarn dev
    ```
 
-   재생 공간 개발 서버는 **http://localhost:3001**에서 시작됩니다. `playground/dotenv.sample`을 `playground/.env`로 복사하고 먼저 필요한 값을 채웁니다.
+   재생 공간 개발 서버는 `http://localhost:3001`에서 시작됩니다. `playground/dotenv.sample`을 `playground/.env`로 복사하고 먼저 필요한 값을 채웁니다.
 
 소비 앱에서 테스트하려면 임시 Yarn 포털을 사용합니다 -- [소비 앱에 대한 로컬 개발](./index.md#local-development-against-a-consuming-app)을 참조합니다.
 

@@ -22,7 +22,7 @@ ChurchApps publiserer en enkelt-klikk Railway-mal som gir kirken din sin egen pr
 Det er det. Du har nå en fullt fungerende ChurchApps-instans.
 
 :::tip
-Implementeringen er for tiden i beta. Hvis du treffer noe dokumentasjonen ikke dekker, åpne et problem på [github.com/ChurchApps/Api/issues](https://github.com/ChurchApps/Api/issues) med implementerings-logger vedlagt.
+Implementeringen er for tiden i beta. Hvis du treffer noe dokumentasjonen ikke dekker, åpne et problem på [github.com/`ChurchApps/Api`/issues](https://github.com/`ChurchApps/Api`/issues) med implementerings-logger vedlagt.
 :::
 
 ## Hva som blir implementert
@@ -74,7 +74,7 @@ Gaver er konfigurert per-kirke inne i admin-grensesnittet.
 
 ## Oppdatering
 
-Pushes til main på ChurchApps-repoene utløser automatiske gjenimplementeringer.
+Pushes til `main` på ChurchApps-repoene utløser automatiske gjenimplementeringer.
 
 ## Relaterte artikler
 

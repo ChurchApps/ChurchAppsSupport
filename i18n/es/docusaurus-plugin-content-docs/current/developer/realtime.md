@@ -22,7 +22,7 @@ El protocolo tiene tres partes:
 
 | Entorno | HTTP | WebSocket |
 |-------------|------|-----------|
-| Desarrollo local | `8084` | `ws://localhost:8087` |
+| Desarrollo `local` | `8084` | `ws://localhost:8087` |
 | AWS Lambda | API Gateway | API Gateway WebSocket |
 
 ## Páginas relacionadas

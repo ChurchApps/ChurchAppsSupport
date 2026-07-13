@@ -6,7 +6,7 @@ title: "Website Routing और Multi-Site"
 
 <div class="article-intro">
 
-एक single church अब एक से अधिक distinct website को serve कर सकता है, और हर एक एक `*.b1.church` subdomain पर या एक fully custom, church-owned domain पर रह सकता है। यह पृष्ठ routing layer को map करता है जो builder के *नीचे* बैठता है: कैसे एक incoming request एक church **और** एक specific site को resolve करता है, multi-site data model (वह `siteId` sentinel जो हर pre-existing site को unchanged rendering रखता है), और custom-domain edge — एक self-managed Caddy proxy EC2 पर जो TLS को terminate करता है और हर church domain को अपने `*.b1.church` upstream पर rewrite करता है। जो actually render होता है एक बार request resolve हो जाता है — page/section/element tree — देखें [Website Builder](./website-builder)।
+एक single church अब एक से अधिक distinct website को serve कर सकता है, और हर एक एक `*.b1.church` subdomain पर या एक fully custom, church-owned `domain` पर रह सकता है। यह पृष्ठ routing layer को map करता है जो builder के *नीचे* बैठता है: कैसे एक incoming request एक church **और** एक specific site को resolve करता है, multi-site data model (वह `siteId` sentinel जो हर pre-existing site को unchanged rendering रखता है), और custom-`domain` edge — एक self-managed Caddy proxy EC2 पर जो TLS को terminate करता है और हर church `domain` को अपने `*.b1.church` upstream पर rewrite करता है। जो actually render होता है एक बार request resolve हो जाता है — page/section/element tree — देखें [Website Builder](./website-builder)।
 
 </div>
 
@@ -50,9 +50,9 @@ title: "Website Routing और Multi-Site"
 
 तीन rules इस layer में रखे गए हैं:
 
-1. **एक sentinel सब कुछ को backward compatible रखता है।** `siteId = ''` primary site है। हर page, block, link, global-style, और domain row जो इस feature से पहले exist किया था `''` को carry करता है और बिल्कुल जैसे यह था render होता है। एक *दूसरा* website बस एक set of rows एक non-empty `siteId` के साथ है, और कोई भी content endpoint बिना `?siteId=` के call किया गया primary site return करता है — byte-for-byte old request।
-2. **Resolution host-label-based है और converge करता है।** एक `*.b1.church` subdomain अपने host label से directly route करता है; एक custom domain Caddy edge पर अपने `{sub}.b1.church` label में rewrite किया जाता है इससे पहले कि B1App इसे see करे (middleware DB lookup के साथ जो एक fallback के रूप में `x-site` header को stamp करता है किसी भी raw custom `Host` के लिए)। दोनों legs same `[sdSlug]` route और same `churches/lookup` call पर land करते हैं, तो downstream rendering identical है।
-3. **Caddy edge stateless है one source of truth पर।** Custom domains एक self-managed Caddy proxy EC2 पर terminate होते हैं जो हर domain को अपने `{sub}.b1.church` upstream पर rewrite करता है। एक domain save एक single best-effort `CaddyHelper.updateCaddy()` को fire करता है, और Caddy भी `domains` table को directly read करता है (नीचे `authorize` और `hostmap` endpoints)। table authoritative है — एक unreachable Caddy कभी भी save को fail नहीं कर सकता।
+1. **एक sentinel सब कुछ को backward compatible रखता है।** `siteId = ''` primary site है। हर page, block, link, global-style, और `domain` row जो इस feature से पहले exist किया था `''` को carry करता है और बिल्कुल जैसे यह था render होता है। एक *दूसरा* website बस एक set of rows एक non-empty `siteId` के साथ है, और कोई भी content endpoint बिना `?siteId=` के call किया गया primary site return करता है — byte-for-byte old request।
+2. **Resolution host-label-based है और converge करता है।** एक `*.b1.church` subdomain अपने host label से directly route करता है; एक custom `domain` Caddy edge पर अपने `{sub}.b1.church` label में rewrite किया जाता है इससे पहले कि B1App इसे see करे (middleware DB lookup के साथ जो एक fallback के रूप में `x-site` header को stamp करता है किसी भी raw custom `Host` के लिए)। दोनों legs same `[sdSlug]` route और same `churches/lookup` call पर land करते हैं, तो downstream rendering identical है।
+3. **Caddy edge stateless है one source of truth पर।** Custom `domains` एक self-managed Caddy proxy EC2 पर terminate होते हैं जो हर `domain` को अपने `{sub}.b1.church` upstream पर rewrite करता है। एक `domain` save एक single best-effort `CaddyHelper.updateCaddy()` को fire करता है, और Caddy भी `domains` table को directly read करता है (नीचे `authorize` और `hostmap` endpoints)। table authoritative है — एक unreachable Caddy कभी भी save को fail नहीं कर सकता।
 
 ## Site resolution
 
@@ -60,9 +60,9 @@ title: "Website Routing और Multi-Site"
 
 `B1App/next.config.mjs` incoming requests को host द्वारा rewrite करता है। `(?<subdomain>.*?)\..*` pattern वाला host rule host के **first label** को capture करता है और `/` और `/:path*` को `/{subdomain}` में rewrite करता है — `[sdSlug]` App-Router segment। तो `grace.b1.church/about` `/grace/about` हो जाता है।
 
-### Custom domains
+### Custom `domains`
 
-एक church-owned domain **Caddy edge** पर terminate होता है (नीचे detailed), जो site के `{sub}.b1.church` में `Host` header को rewrite करता है B1App को proxy करने से पहले।
+एक church-owned `domain` **Caddy edge** पर terminate होता है (नीचे detailed), जो site के `{sub}.b1.church` में `Host` header को rewrite करता है B1App को proxy करने से पहले।
 
 ### `siteId` threading
 
@@ -84,23 +84,23 @@ title: "Website Routing और Multi-Site"
 
 ### B1Admin surface
 
-Site switcher, sites create/delete, per-domain site assignment, और copy-on-write styles।
+Site switcher, `sites` create/`delete`, per-`domain` site assignment, और copy-on-write styles।
 
-## Custom domains: Caddy edge (static-config plan)
+## Custom `domains`: Caddy edge (static-config plan)
 
 :::info
-**Direction revised 2026-07-02.** Vercel-managed domains पर custom-domain hosting move करने की एक पहली plan **cancelled** की गई थी, और सभी Vercel domain-registration code को Api से removed किया गया था। self-managed **Caddy proxy EC2 पर stays** permanent custom-domain edge के रूप में।
+**Direction revised 2026-07-02.** Vercel-managed `domains` पर custom-`domain` hosting move करने की एक पहली plan **cancelled** की गई थी, और सभी Vercel `domain`-registration code को Api से removed किया गया था। self-managed **Caddy proxy EC2 पर stays** permanent custom-`domain` edge के रूप में।
 :::
 
 ### The edge
 
-हर custom church domain एक EC2 box पर DNS करता है — `3.23.251.61`।
+हर custom church `domain` एक EC2 box पर DNS करता है — `3.23.251.61`।
 
 ### Two anonymous endpoints feed the edge
 
 `DomainController` दो unauthenticated, read-only endpoints expose करता है box सीधे consume करता है।
 
-### Domain save/delete — one best-effort push
+### Domain save/`delete` — one best-effort push
 
 `DomainController.save` `domains` rows write करता है और फिर एक **single best-effort** `CaddyHelper.updateCaddy()` call बनाता है।
 

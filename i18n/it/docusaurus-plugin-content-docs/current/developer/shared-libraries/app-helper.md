@@ -23,13 +23,13 @@ I pacchetti `@churchapps/apphelper*` forniscono componenti React condivisi e uti
 | Pacchetto | Descrizione |
 |-----------|-------------|
 | `@churchapps/apphelper` | Componenti e utilità core |
-| `@churchapps/apphelper-login` | Interfaccia utente per login e registrazione |
+| `@churchapps/apphelper-login` | Interfaccia utente per `login` e registrazione |
 | `@churchapps/apphelper-donations` | Componenti per donazioni e offerte |
 | `@churchapps/apphelper-forms` | Componenti per la creazione di moduli |
 | `@churchapps/apphelper-markdown` | Editor e renderer markdown |
 | `@churchapps/apphelper-website` | Componenti sito web e CMS |
 
-## Configurazione per lo Sviluppo Locale
+## Configurazione per lo Sviluppo `Locale`
 
 1. Clona il repository:
 

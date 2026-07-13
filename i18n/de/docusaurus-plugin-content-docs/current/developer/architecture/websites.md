@@ -42,7 +42,7 @@ grace.b1.church          www.gracechurch.org (benutzerdef. Domain)
 Drei Regeln gelten über diesen Layer:
 
 1. **Ein Sentinel hält alles rückwärts kompatibel.** `siteId = ''` ist die primäre Site. Jede Seite, jeder Block, jeder Link, jede globale Stil und jede Domain-Zeile, die vor diesem Feature bestand, trägt `''` und rendert genau wie zuvor.
-2. **Auflösung ist Host-Label-basiert und konvergiert.** Ein `*.b1.church` Subdomain leitet von seinem Host-Label direkt auf; eine benutzerdefinierte Domain wird bei dem Caddy-Edge auf ihr `{sub}.b1.church` Label umgeschrieben.
+2. **Auflösung ist `Host`-Label-basiert und konvergiert.** Ein `*.b1.church` Subdomain leitet von seinem `Host`-Label direkt auf; eine benutzerdefinierte Domain wird bei dem Caddy-Edge auf ihr `{sub}.b1.church` Label umgeschrieben.
 3. **Der Caddy-Edge ist statelos über eine Wahrheit.** Eine Domänen-Sicherung stößt eine einzelne beste-Anstrengung `CaddyHelper.updateCaddy()` auf, und Caddy liest auch die `domains` Tabelle direkt.
 
 ## Multi-Site-Datenmodell

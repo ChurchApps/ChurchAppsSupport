@@ -69,9 +69,9 @@ Jede Veranstaltungs-URL muss ein JSON-Objekt mit diesem Schema zurückgeben.
 | Type | Purpose |
 |------|---------|
 | `play` | Media playback |
-| `text` | Static text content |
-| `question` | Discussion question |
-| `quote` | Highlighted quote |
+| `text` | Static `text` `content` |
+| `question` | Discussion `question` |
+| `quote` | Highlighted `quote` |
 | `subhead` | Heading or divider |
 
 :::tip

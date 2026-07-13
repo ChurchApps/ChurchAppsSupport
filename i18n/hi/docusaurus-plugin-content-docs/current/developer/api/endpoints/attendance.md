@@ -10,34 +10,34 @@ title: "उपस्थिति एंडपॉइंट"
 
 </div>
 
-**आधार पथ:** /attendance
+**आधार पथ:** `/attendance`
 
 ## कैंपस
 
-आधार पथ: /attendance/campuses
+आधार पथ: `/attendance/campuses`
 
-मानक CRUD नियंत्रक (GenericCrudController विस्तृत करता है)। CRUD आधार वर्ग के माध्यम से \getById\, \getAll\, \post\, और \delete\ मार्ग प्रदान करता है।
+मानक CRUD नियंत्रक (GenericCrudController विस्तृत करता है)। CRUD आधार वर्ग के माध्यम से `getById`, `getAll`, `post`, और `delete` मार्ग प्रदान करता है।
 
 | विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
 |--------|------|------|------------|-------------|
 | GET | \/\ | JWT | — | चर्च के लिए सभी कैंपस की सूची बनाएं |
-| GET | \/:id\ | JWT | — | ID द्वारा एक कैंपस प्राप्त करें |
+| GET | `/:id` | JWT | — | ID द्वारा एक कैंपस प्राप्त करें |
 | POST | \/\ | JWT | Services.Edit | कैंपस बनाएं या अपडेट करें |
-| DELETE | \/:id\ | JWT | Services.Edit | कैंपस को हटाएं |
+| DELETE | `/:id` | JWT | Services.Edit | कैंपस को हटाएं |
 
 ## सेवाएं
 
-आधार पथ: /attendance/services
+आधार पथ: `/attendance/services`
 
-CRUD मार्ग \getById\, \getAll\, \post\, और \delete\ के साथ GenericCrudController को विस्तृत करता है। \getAll\ (\GET /\) और \search\ एंडपॉइंट कस्टम कार्यान्वयन के साथ ओवरराइड किए गए हैं।
+CRUD मार्ग `getById`, `getAll`, `post`, और `delete` के साथ GenericCrudController को विस्तृत करता है। `getAll` (`GET /`) और `search` एंडपॉइंट कस्टम कार्यान्वयन के साथ ओवरराइड किए गए हैं।
 
 | विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
 |--------|------|------|------------|-------------|
 | GET | \/\ | JWT | — | सभी सेवाओं की सूची बनाएं (कैंपस जानकारी शामिल) |
-| GET | \/:id\ | JWT | — | ID द्वारा एक सेवा प्राप्त करें |
-| GET | \/search?campusId=\ | JWT | — | कैंपस ID द्वारा सेवाओं की खोज करें |
+| GET | `/:id` | JWT | — | ID द्वारा एक सेवा प्राप्त करें |
+| GET | `/search?campusId=` | JWT | — | कैंपस ID द्वारा सेवाओं की खोज करें |
 | POST | \/\ | JWT | Services.Edit | सेवाएं बनाएं या अपडेट करें |
-| DELETE | \/:id\ | JWT | Services.Edit | सेवा को हटाएं |
+| DELETE | `/:id` | JWT | Services.Edit | सेवा को हटाएं |
 
 ### उदाहरण: कैंपस द्वारा सेवाओं की खोज करें
 
@@ -59,42 +59,42 @@ Authorization: Bearer <token>
 
 ## सेवा समय
 
-आधार पथ: /attendance/servicetimes
+आधार पथ: `/attendance/servicetimes`
 
-CRUD मार्ग \getById\, \post\, और \delete\ के साथ GenericCrudController को विस्तृत करता है। \getAll\ और \search\ एंडपॉइंट कस्टम कार्यान्वयन हैं।
+CRUD मार्ग `getById`, `post`, और `delete` के साथ GenericCrudController को विस्तृत करता है। `getAll` और `search` एंडपॉइंट कस्टम कार्यान्वयन हैं।
 
 | विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
 |--------|------|------|------------|-------------|
-| GET | \/\ | JWT | — | सभी सेवा समय की सूची बनाएं। \?serviceId=\ द्वारा फ़िल्टर करें। समूह डेटा जोड़ने के लिए \?include=groups\ जोड़ें |
-| GET | \/:id\ | JWT | — | ID द्वारा सेवा समय प्राप्त करें |
-| GET | \/search?campusId=&serviceId=\ | JWT | — | कैंपस और सेवा द्वारा सेवा समय की खोज करें |
-| GET | \/public/:churchId\ | सार्वजनिक | — | एक चर्च के लिए कैंपस → सेवा → समय पेड़ प्राप्त करें। वेबसाइट बिल्डर के \serviceTimes\ तत्व को शक्ति देता है |
+| GET | \/\ | JWT | — | सभी सेवा समय की सूची बनाएं। `?serviceId=` द्वारा फ़िल्टर करें। समूह डेटा जोड़ने के लिए `?include=groups` जोड़ें |
+| GET | `/:id` | JWT | — | ID द्वारा सेवा समय प्राप्त करें |
+| GET | `/search?campusId=&serviceId=` | JWT | — | कैंपस और सेवा द्वारा सेवा समय की खोज करें |
+| GET | `/public/:churchId` | सार्वजनिक | — | एक चर्च के लिए कैंपस → सेवा → समय पेड़ प्राप्त करें। वेबसाइट बिल्डर के `serviceTimes` तत्व को शक्ति देता है |
 | POST | \/\ | JWT | Services.Edit | सेवा समय बनाएं या अपडेट करें |
-| DELETE | \/:id\ | JWT | Services.Edit | सेवा समय को हटाएं |
+| DELETE | `/:id` | JWT | Services.Edit | सेवा समय को हटाएं |
 
 ## समूह सेवा समय
 
-आधार पथ: /attendance/groupservicetimes
+आधार पथ: `/attendance/groupservicetimes`
 
 समूहों को विशिष्ट सेवा समय से जोड़ता है।
 
 | विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
 |--------|------|------|------------|-------------|
-| GET | \/\ | JWT | — | सभी समूह-सेवा-समय संगठन सूची बनाएं। सेवा नामों के साथ संगठन प्राप्त करने के लिए \?groupId=\ द्वारा फ़िल्टर करें |
-| GET | \/:id\ | JWT | — | ID द्वारा एक समूह-सेवा-समय संगठन प्राप्त करें |
+| GET | \/\ | JWT | — | सभी समूह-सेवा-समय संगठन सूची बनाएं। सेवा नामों के साथ संगठन प्राप्त करने के लिए `?groupId=` द्वारा फ़िल्टर करें |
+| GET | `/:id` | JWT | — | ID द्वारा एक समूह-सेवा-समय संगठन प्राप्त करें |
 | POST | \/\ | JWT | Services.Edit | समूह-सेवा-समय संगठन बनाएं या अपडेट करें |
-| DELETE | \/:id\ | JWT | Services.Edit | समूह-सेवा-समय संगठन को हटाएं |
+| DELETE | `/:id` | JWT | Services.Edit | समूह-सेवा-समय संगठन को हटाएं |
 
 ## उपस्थिति रिकॉर्ड
 
-आधार पथ: /attendance/attendancerecords
+आधार पथ: `/attendance/attendancerecords`
 
 रिपोर्टिंग और प्रदर्शन के लिए उपस्थिति डेटा के केवल-पढ़ने वाले एकत्रित दृश्य प्रदान करता है।
 
 | विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
 |--------|------|------|------------|-------------|
-| GET | \/\ | JWT | Attendance.View | किसी व्यक्ति के लिए उपस्थिति रिकॉर्ड लोड करें। \?personId=\ आवश्यक है |
-| GET | \/tree\ | JWT | — | पूर्ण उपस्थिति पेड़ (कैंपस, सेवाएं, सेवा समय, समूह) लोड करें |
-| GET | \/trend?campusId=&serviceId=&serviceTimeId=&groupId=\ | JWT | Attendance.View Summary | वैकल्पिक फ़िल्टर के साथ उपस्थिति प्रवृत्ति डेटा लोड करें |
-| GET | \/groups?serviceId=&week=\ | JWT | Attendance.View | किसी दिए गए सप्ताह पर एक सेवा के लिए समूह उपस्थिति लोड करें |
-| GET | \/search?campusId=&serviceId=&serviceTimeId=&groupId=&startDate=&endDate=\ | JWT | Attendance.View | फ़िल्टर (कैंपस, सेवा, सेवा समय, समूह, तारीख सीमा) के साथ उपस्थिति रिकॉर्ड की खोज करें |
+| GET | \/\ | JWT | Attendance.View | किसी व्यक्ति के लिए उपस्थिति रिकॉर्ड लोड करें। `?personId=` आवश्यक है |
+| GET | `/tree` | JWT | — | पूर्ण उपस्थिति पेड़ (कैंपस, सेवाएं, सेवा समय, समूह) लोड करें |
+| GET | `/trend?campusId=&serviceId=&serviceTimeId=&groupId=` | JWT | Attendance.View Summary | वैकल्पिक फ़िल्टर के साथ उपस्थिति प्रवृत्ति डेटा लोड करें |
+| GET | `/groups?serviceId=&week=` | JWT | Attendance.View | किसी दिए गए सप्ताह पर एक सेवा के लिए समूह उपस्थिति लोड करें |
+| GET | `/search?campusId=&serviceId=&serviceTimeId=&groupId=&startDate=&endDate=` | JWT | Attendance.View | फ़िल्टर (कैंपस, सेवा, सेवा समय, समूह, तारीख सीमा) के साथ उपस्थिति रिकॉर्ड की खोज करें |

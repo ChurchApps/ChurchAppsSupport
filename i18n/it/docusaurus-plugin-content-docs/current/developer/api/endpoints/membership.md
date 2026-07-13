@@ -42,4 +42,4 @@ Percorso di base: `/membership/churches`
 ## Articoli Correlati
 
 - [Authentication & Permissions](./authentication)
-- [Attendance Endpoints](./attendance)
+- [Attendance Endpoints](.`/attendance`)
