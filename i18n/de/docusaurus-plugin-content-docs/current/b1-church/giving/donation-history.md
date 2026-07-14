@@ -6,54 +6,54 @@ title: "Spendenverlauf"
 
 <div class="article-intro">
 
-Wenn Sie angemeldet sind, können Sie eine vollständige Aufzeichnung Ihrer vergangenen Spenden einsehen und Spendenübersichten für Steuerzwecke erstellen. Ihr Spendenverlauf ist im Bereich **Spenden** Ihres B1.church-Kontos verfügbar.
+Wenn Sie angemeldet sind, können Sie einen vollständigen Nachweis Ihrer bisherigen Spenden einsehen und Spendenbescheinigungen für steuerliche Zwecke erstellen. Ihr Spendenverlauf ist im Bereich „Spenden" Ihres B1.church-Kontos verfügbar.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Sie müssen [angemeldet](../getting-started/logging-in.md) sein in Ihrem B1.church-Konto.
-- Sie müssen mindestens eine Spende getätigt haben. Siehe [Eine Spende tätigen](./making-donations.md), um zu beginnen.
+- Sie müssen bei Ihrem B1.church-Konto angemeldet sein.
+- Sie müssen mindestens eine Spende geleistet haben. Siehe „Eine Spende leisten", um loszulegen.
 
 </div>
 
 ## Ihren Verlauf anzeigen
 
 1. Melden Sie sich bei Ihrem B1.church-Konto an.
-2. Navigieren Sie zum Bereich **Spenden**.
-3. Klicken Sie auf **Verlauf** im linken Fenster, um Ihre vergangenen Spenden anzuzeigen.
+2. Navigieren Sie zum Bereich „Spenden".
+3. Klicken Sie im linken Panel auf „Verlauf", um Ihre bisherigen Spenden anzuzeigen.
 
-Ihr Spendenverlauf wird als Tabelle mit den folgenden Spalten angezeigt:
+Ihr Spendenverlauf wird als Tabelle mit folgenden Spalten angezeigt:
 
-- **Datum** — Wann die Spende gemacht wurde.
-- **Methode** — Wie Sie bezahlt haben (zum Beispiel „Karte - Visa" oder „Bank - ACH").
-- **Fond** — In welchen Fond die Spende gerichtet wurde (zum Beispiel Allgemeiner Fond, Gebäudefond).
-- **Betrag** — Der Dollarbetrag der Spende.
+- Datum -- Wann die Spende geleistet wurde.
+- Methode -- Wie Sie bezahlt haben (zum Beispiel „Karte - Visa" oder „Bank - ACH").
+- Fonds -- An welchen Fonds die Spende gerichtet war (zum Beispiel Allgemeiner Fonds, Baufonds).
+- Betrag -- Der Dollarbetrag der Spende.
 
 :::info
-Spenden, die noch verarbeitet werden, werden mit einer „Ausstehend"-Bezeichnung neben dem Fondnamen und dem Betrag in einer anderen Farbe angezeigt.
+Spenden, die noch verarbeitet werden, erscheinen mit dem Vermerk „Ausstehend" neben dem Fondsnamen, und der angezeigte Betrag hat eine andere Farbe.
 :::
 
-## Übersichten exportieren und drucken
+## Bescheinigungen exportieren und drucken
 
-Klicken Sie auf die Schaltfläche **Download** in der Kopfzeile des Spendenverlaufs, um auf Exportoptionen zuzugreifen:
+Klicken Sie auf die Download-Schaltfläche in der Kopfzeile des Spendenverlaufs, um auf Exportoptionen zuzugreifen:
 
-- **Laufendes Jahr (CSV)** — Laden Sie eine CSV-Datei aller Ihrer Spenden aus dem laufenden Jahr herunter. Sie können diese in einer Tabellenkalkulationsanwendung öffnen.
-- **Laufendes Jahr (Drucken)** — Öffnen Sie eine druckbare Spendenübersicht für das laufende Jahr.
-- **Vorheriges Jahr (CSV)** — Laden Sie eine CSV-Datei aller Ihrer Spenden aus dem Vorjahr herunter.
-- **Vorheriges Jahr (Drucken)** — Öffnen Sie eine druckbare Spendenübersicht für das Vorjahr.
+- Aktuelles Jahr (CSV) -- Eine CSV-Datei aller Ihrer Spenden des aktuellen Jahres herunterladen. Sie können diese in einer Tabellenkalkulationsanwendung öffnen.
+- Aktuelles Jahr (Drucken) -- Eine druckbare Spendenbescheinigung für das aktuelle Jahr öffnen.
+- Letztes Jahr (CSV) -- Eine CSV-Datei aller Ihrer Spenden des vorherigen Jahres herunterladen.
+- Letztes Jahr (Drucken) -- Eine druckbare Spendenbescheinigung für das vorherige Jahr öffnen.
 
 :::tip
-Drucken Sie Ihre Spendenübersicht des Vorjahres früh im neuen Jahr aus, damit Sie sie zur Steuersaison bereit haben. Die druckbare Übersicht enthält alle Details, die Sie für Ihre Unterlagen benötigen.
+Drucken Sie Ihre Spendenbescheinigung des Vorjahres früh im neuen Jahr aus, damit Sie sie zur Steuersaison bereit haben. Die druckbare Bescheinigung enthält alle Details, die Sie für Ihre Unterlagen benötigen.
 :::
 
 ## Wiederkehrende Spenden
 
-Aus dem Bereich **Spenden** können Sie auch auf **Wiederkehrende Spenden** klicken, um regelmäßiges Geben, das Sie eingerichtet haben, zu verwalten. Mit diesem Bereich können Sie wiederkehrende Spenden anzeigen, aktualisieren oder stornieren und Ihre gespeicherten Zahlungsmethoden verwalten.
+Im Bereich „Spenden" können Sie auch auf „Wiederkehrende Spenden" klicken, um jede von Ihnen eingerichtete geplante Spende zu verwalten. In diesem Bereich können Sie wiederkehrende Spenden anzeigen, aktualisieren oder stornieren und Ihre gespeicherten Zahlungsmethoden verwalten.
 
-Wenn eine wiederkehrende Spende über **Stripe** eingezogen wird, können Sie sie auch **pausieren**, anstatt sie zu stornieren — klicken Sie auf das Pause-Symbol neben der Spende und bestätigen Sie. Die Spenden werden gestoppt, bis Sie auf das gleiche Symbol klicken, um **fortzufahren**; eine pausierte Spende ist in der Liste mit **Pausiert** gekennzeichnet. Wiederkehrende Spenden über andere Zahlungsanbieter können immer noch bearbeitet oder storniert werden, aber nicht pausiert.
+Wenn eine wiederkehrende Spende über Stripe abgerechnet wird, können Sie sie auch pausieren, statt sie zu stornieren -- klicken Sie auf das Pause-Symbol neben der Spende und bestätigen Sie. Die Spende stoppt, bis Sie auf dasselbe Symbol klicken, um sie fortzusetzen; eine pausierte Spende wird in der Liste als „Pausiert" markiert. Wiederkehrende Spenden über andere Zahlungsanbieter können weiterhin bearbeitet oder storniert, aber nicht pausiert werden.
 
 ## Nächste Schritte
 
-- [Eine Spende tätigen](./making-donations.md) — Erfahren Sie, wie Sie eine einmalige oder wiederkehrende Gabe tätigen
+- Eine Spende leisten -- Erfahren Sie, wie Sie eine einmalige oder wiederkehrende Gabe leisten

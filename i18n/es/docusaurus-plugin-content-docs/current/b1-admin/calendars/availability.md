@@ -1,24 +1,24 @@
 ---
-title: "Calendario de disponibilidad"
+title: "Calendario de Disponibilidad"
 ---
 
-# Calendario de disponibilidad
+# Calendario de Disponibilidad
 
 <div class="article-intro">
 
-El Calendario de disponibilidad te ofrece una vista general de todas las reservas de salas y recursos en tu iglesia. Desde aquí puedes ver qué está programado, detectar conflictos antes de que ocurran y reservar una sala o recurso para cualquier evento directamente.
+El Calendario de Disponibilidad te proporciona una vista general de todas las reservas de salas y recursos en tu iglesia. Desde aquí puedes ver qué está programado, detectar conflictos antes de que ocurran y reservar una sala o recurso para cualquier evento directamente.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Configura al menos una [sala o recurso](rooms-resources) en la sección Salas y recursos
+- Configura al menos una [sala o recurso](rooms-resources) en la sección Salas y Recursos
 - Necesitas acceso de edición a la sección Calendarios en B1 Admin
 
 </div>
 
-## Abriendo el Calendario de disponibilidad
+## Abriendo el Calendario de Disponibilidad
 
 En B1 Admin, ve a **Calendarios** y selecciona **Disponibilidad** en la barra lateral.
 
@@ -67,6 +67,6 @@ El calendario resaltará cualquier conflicto antes de que guardes. Si ves una ad
 
 ## Artículos relacionados
 
-- [Salas, recursos y programación](rooms-resources) — configura espacios y equipos reservables
-- [Aprobaciones de calendario](approvals) — aprueba o rechaza solicitudes de reserva
-- [Crear calendarios](creating-calendars) — gestiona calendarios de eventos
+- [Salas, Recursos y Programación](rooms-resources) — configura espacios y equipos reservables
+- [Aprobaciones de Calendario](approvals) — aprueba o rechaza solicitudes de reserva
+- [Crear Calendarios](creating-calendars) — gestiona calendarios de eventos

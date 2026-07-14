@@ -15,7 +15,7 @@ title: "Checkr"
 
 - Una cuenta de [Checkr](https://checkr.com) con acceso API y al menos un paquete de verificación configurado
 - Una cuenta de [Make](https://www.make.com)
-- Un usuario de B1 Admin con permiso **Editar configuración**
+- Un usuario de B1 Admin con permiso **Editar Configuración**
 
 </div>
 
@@ -25,16 +25,16 @@ La aplicación Checkr de Make expone 1 disparador y 6 acciones:
 
 | Dirección | Disparador de B1 / Make | Acción |
 |---|---|---|
-| B1 → Checkr | B1 `group.member.added` (filtrado a un grupo de voluntarios) | Checkr: Crear candidato → Crear invitación de verificación de antecedentes |
-| Checkr → B1 | Webhook de Checkr (evento de invitación / informe) | B1: Actualizar el registro de la persona (p. ej. etiquetar "Checkr autorizado") |
+| B1 → Checkr | B1 `group.member.added` (filtrado a un grupo de voluntarios) | Checkr: Crear Candidato → Crear Invitación de Verificación de Antecedentes |
+| Checkr → B1 | Webhook de Checkr (evento de invitación / informe) | B1: Actualizar el registro de la persona (p. ej. etiquetar "Checkr Autorizado") |
 
-Acciones de Checkr de Make: Crear candidato, Crear invitación de verificación de antecedentes, Obtener candidato, Obtener informe, Obtener ETA de informe, Obtener una invitación. Más 4 módulos de búsqueda.
+Acciones de Checkr de Make: Crear Candidato, Crear Invitación de Verificación de Antecedentes, Obtener Candidato, Obtener Informe, Obtener ETA de Informe, Obtener una Invitación. Más 4 módulos de búsqueda.
 
 ## Configuración
 
 ### 1. Acuña una clave API de B1
 
-**Configuración → Desarrollador → Claves API → Nueva clave API**:
+**Configuración → Desarrollador → Claves API → Nueva Clave API**:
 
 - `settings:write` — para el webhook del disparador
 - `people:read` — para buscar el nombre/correo de la persona al iniciar una verificación
@@ -42,24 +42,24 @@ Acciones de Checkr de Make: Crear candidato, Crear invitación de verificación 
 
 ### 2. Construye el escenario "iniciar una verificación al inscribirse un voluntario" en Make
 
-1. **Disparador** — B1.church: Ver eventos (`group.member.added`).
-2. **Filtro** — continúa solo si `data.groupId` coincide con tu grupo "Voluntarios de niños" (o equivalente).
-3. **Acción** — B1.church: Buscar persona (por `data.personId`) para obtener correo + nombre/apellido.
-4. **Acción** — Checkr: Crear candidato. Mapea nombre/apellido/correo del paso 3.
-5. **Acción** — Checkr: Crear invitación de verificación de antecedentes. Mapea el nuevo id de candidato del paso 4 al campo *candidate_id*. Elige el paquete de verificación (p. ej. `tasker_standard` o lo que tu cuenta exponga).
+1. **Disparador** — B1 Church: Ver Eventos (`group.member.added`).
+2. **Filtro** — continúa solo si `data.groupId` coincide con tu grupo "Voluntarios de Niños" (o equivalente).
+3. **Acción** — B1 Church: Buscar Persona (por `data.personId`) para obtener correo + nombre/apellido.
+4. **Acción** — Checkr: Crear Candidato. Mapea nombre/apellido/correo del paso 3.
+5. **Acción** — Checkr: Crear Invitación de Verificación de Antecedentes. Mapea el nuevo id de candidato del paso 4 al campo *candidate_id*. Elige el paquete de verificación (p. ej. `tasker_standard` o lo que tu cuenta exponga).
 6. (Opcional) **Acción** — Slack: notifica a tu coordinador de seguridad ministerial que se ha iniciado una verificación.
 
 Activa el escenario. Los nuevos voluntarios en el grupo objetivo reciben automáticamente una invitación de Checkr por correo; la completan en su teléfono o portátil; Checkr ejecuta la verificación.
 
 ### 3. (Opcional) Recibe el informe de vuelta
 
-1. **Disparador** — Checkr: Ver eventos (webhook). Make registra un webhook de Checkr al activarse.
+1. **Disparador** — Checkr: Ver Eventos (webhook). Make registra un webhook de Checkr al activarse.
 2. **Filtro** — continúa solo si `event_type = report.completed`.
-3. **Acción** — Checkr: Obtener informe (usa el id de informe del webhook).
-4. **Acción** — B1.church: Buscar persona (por correo del candidato).
-5. **Acción** — Slack / Correo condicional: notifica al coordinador con estado `clear` / `consider` / `suspended`.
+3. **Acción** — Checkr: Obtener Informe (usa el id de informe del webhook).
+4. **Acción** — B1 Church: Buscar Persona (por correo del candidato).
+5. **Acción** — Slack / Correo Condicional: notifica al coordinador con estado `clear` / `consider` / `suspended`.
 
-Nota: B1 no tiene un campo "estado de verificación de antecedentes" integrado hoy. Las opciones prácticas son (a) publicar el resultado en un canal privado de Slack para revisión, (b) escribirlo en una hoja de Google para auditoría, o (c) agregar la persona a un grupo de B1 "Voluntarios autorizados" en `clear`.
+Nota: B1 no tiene un campo "estado de verificación de antecedentes" integrado hoy. Las opciones prácticas son (a) publicar el resultado en un canal privado de Slack para revisión, (b) escribirlo en una hoja de Google para auditoría, o (c) agregar la persona a un grupo de B1 "Voluntarios Autorizados" en `clear`.
 
 ## Recetas comunes
 
@@ -68,9 +68,9 @@ Nota: B1 no tiene un campo "estado de verificación de antecedentes" integrado h
 Empareja lo anterior con un disparador de programación de Make:
 
 - **Disparador** — Make: Programación (mensual)
-- **Acción** — B1.church: Listar miembros del grupo para "Voluntarios autorizados"
+- **Acción** — B1 Church: Listar Miembros del Grupo para "Voluntarios Autorizados"
 - **Acción** — Filtro por Make: fecha autorizada más antigua que 22 meses
-- **Acción** — Checkr: Crear invitación de verificación de antecedentes (igual que el flujo inicial)
+- **Acción** — Checkr: Crear Invitación de Verificación de Antecedentes (igual que el flujo inicial)
 
 ### Bloquea el acceso de etapa 1 hasta que se complete la verificación
 
@@ -90,6 +90,6 @@ Si tu iglesia usa membresía de grupo B1 para controlar acceso (p. ej. solo los 
 
 ## Ver también
 
-- [Make (descripción general)](../make) — Lado de B1 de cada escenario de Make
-- [Mensaje móvil](./mobile-message) — para proveedores de SMS sin aplicaciones de Zapier, el mismo patrón Webhooks/HTTP que el cableado de Checkr de Make
+- [Make (Descripción General)](../make) — Lado de B1 de cada escenario de Make
+- [Mensaje Móvil](./mobile-message) — para proveedores de SMS sin aplicaciones de Zapier, el mismo patrón Webhooks/HTTP que el cableado de Checkr de Make
 - [Documentos API de Checkr](https://docs.checkr.com/)

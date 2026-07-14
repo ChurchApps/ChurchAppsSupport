@@ -6,96 +6,96 @@ title: "Kalender erstellen"
 
 <div class="article-intro">
 
-Das Erstellen eines Kalenders in B1 Admin ermöglicht es Ihnen, eine kuratierte Ansicht von Ereignissen zu erstellen, indem Sie eine oder mehrere Gruppen verbinden. Ereignisse werden von Gruppenleitern innerhalb ihrer Gruppen verwaltet, und Ihr Kalender zeigt diese Ereignisse an einem Ort an. Selbst ein Domain-Admin kann Ereignisse nicht direkt im Kalenderbereich hinzufügen oder bearbeiten, es sei denn, sie sind Leiter der Gruppe, zu der die Ereignisse gehören.
+Das Erstellen eines Kalenders in B1 Admin ermöglicht es Ihnen, eine kuratierte Ansicht von Veranstaltungen zu erstellen, indem Sie eine oder mehrere Gruppen verbinden. Veranstaltungen werden von Gruppenleitern innerhalb ihrer Gruppen verwaltet, und Ihr Kalender zeigt diese Veranstaltungen an einem Ort an. Selbst ein Domain-Administrator kann Veranstaltungen im Kalenderbereich nicht direkt hinzufügen oder bearbeiten, es sei denn, er ist Leiter der Gruppe, zu der die Veranstaltungen gehören.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie anfangen</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Richten Sie die [Gruppen](../groups/creating-groups.md) ein, deren Ereignisse Sie in Ihren Kalender aufnehmen möchten
+- Richten Sie die [Gruppen](../groups/creating-groups.md) ein, deren Veranstaltungen Sie in Ihren Kalender aufnehmen möchten
 - Sie benötigen administrativen Zugriff auf den Bereich Kalender in B1 Admin
 
 </div>
 
-## Neuen Kalender erstellen
+## Einen neuen Kalender erstellen
 
 1. Navigieren Sie in B1 Admin zu **Website** und dann zum Bereich **Kalender**.
 2. Klicken Sie auf **Kalender hinzufügen**.
-3. Geben Sie einen **Namen** für Ihren Kalender ein (z.B. "Youth Ministry Events" oder "Main Church Calendar").
-4. Fügen Sie optional eine **Beschreibung** hinzu, um Ihrem Team zu helfen zu verstehen, wofür dieser Kalender bestimmt ist.
+3. Geben Sie einen **Namen** für Ihren Kalender ein (zum Beispiel „Jugendveranstaltungen" oder „Hauptkirchenkalender").
+4. Fügen Sie optional eine **Beschreibung** hinzu, damit Ihr Team versteht, wofür dieser Kalender gedacht ist.
 5. Klicken Sie auf **Erstellen**, um Ihren neuen Kalender zu speichern.
 
 ## Die Kalenderdetailseite
 
-Nach dem Erstellen eines Kalenders klicken Sie darauf, um die Detailseite zu öffnen. Diese Seite hat zwei Hauptbereiche:
+Nachdem Sie einen Kalender erstellt haben, klicken Sie darauf, um die Detailseite zu öffnen. Diese Seite hat zwei Hauptbereiche:
 
-- **Linke Spalte** -- Eine Ansicht des Kalenders mit Ereignissen, die von verbundenen Gruppen eingezogen werden.
-- **Rechte Spalte** -- Die zugehörige Gruppenliste. Hier können Sie verwalten, welche Gruppen in diesem Kalender enthalten sind.
+- **Linke Spalte** -- Eine Kalenderansicht mit Veranstaltungen aus verbundenen Gruppen.
+- **Rechte Spalte** -- Die Liste der zugehörigen Gruppen. Hier verwalten Sie, welche Gruppen in diesem Kalender enthalten sind.
 
 ## Gruppen verbinden
 
-Gruppen mit Ereignissen im Kalender erscheinen automatisch in der Gruppenliste auf der rechten Seite der Detailseite.
+Gruppen mit Veranstaltungen im Kalender erscheinen automatisch in der Gruppenliste auf der rechten Seite der Detailseite.
 
-1. Klicken Sie auf **Hinzufügen** im Bereich Gruppen, um eine Gruppe mit Ihrem Kalender zu verknüpfen.
-2. Wählen Sie die Gruppe aus dem Dropdown aus.
-3. Wählen Sie, ob Sie **alle Ereignisse** dieser Gruppe oder nur **spezifische Ereignisse** einbeziehen möchten.
+1. Klicken Sie im Gruppenbereich auf **Hinzufügen**, um eine Gruppe mit Ihrem Kalender zu verknüpfen.
+2. Wählen Sie die Gruppe aus dem Dropdown-Menü.
+3. Wählen Sie, ob **alle Veranstaltungen** dieser Gruppe oder nur **bestimmte Veranstaltungen** eingeschlossen werden sollen.
 4. Klicken Sie auf **Speichern**.
 
 :::tip
-Das Verbinden von Gruppen mit Ihrem Kalender ist eine leistungsstarke Möglichkeit, Ereignisse automatisch zu aggregieren. Wenn ein Gruppenleiter ein Ereignis in seiner [Gruppe](../groups/creating-groups.md) hinzufügt, kann es ohne zusätzliche Arbeit in Ihren Kirchen-Kalender fließen.
+Das Verbinden von Gruppen mit Ihrem Kalender ist eine leistungsstarke Möglichkeit, Veranstaltungen automatisch zu sammeln. Wenn ein Gruppenleiter eine Veranstaltung zu seiner [Gruppe](../groups/creating-groups.md) hinzufügt, kann sie ohne zusätzlichen Aufwand Ihrerseits in Ihren kirchenweiten Kalender einfließen.
 :::
 
 :::info
-Wenn Sie einen einzelnen Kalender erstellen möchten, der Ereignisse aus vielen Gruppen in Ihrer Kirche zusammenführt, siehe [Kuratierter Kalender](curated-calendar) für einen vereinfachten Ansatz.
+Wenn Sie einen einzigen Kalender erstellen möchten, der Veranstaltungen aus vielen Gruppen in Ihrer Kirche zusammenführt, finden Sie unter [Kuratierter Kalender](curated-calendar) einen optimierten Ansatz.
 :::
 
 ## Ereignisregistrierung aktivieren
 
-Sie können die Registrierung für alle Kalenderereignisse aktivieren, damit Mitglieder sich über die B1-Website oder die mobile App anmelden können.
+Sie können die Registrierung für jede Kalenderveranstaltung aktivieren, damit Mitglieder sich über die B1-Website oder die mobile App anmelden können.
 
-1. Klicken Sie auf ein vorhandenes Ereignis oder erstellen Sie ein neues.
-2. Schalten Sie im Ereigniseditor **Registrierung** ein.
+1. Klicken Sie auf eine vorhandene Veranstaltung oder erstellen Sie eine neue.
+2. Aktivieren Sie im Veranstaltungseditor die **Registrierung**, um sie zu aktivieren.
 3. Konfigurieren Sie die Registrierungseinstellungen:
-   - **Kapazität** (optional) -- Legen Sie eine maximale Anzahl von Registrierungen fest. Lassen Sie blank für unbegrenzt.
-   - **Registrierung öffnet** -- Das Datum und die Uhrzeit, zu der die Registrierung verfügbar wird.
-   - **Registrierung schließt** -- Das Datum und die Uhrzeit, zu der die Registrierung schließt.
-   - **Tags** -- Komma-getrennte Bezeichnungen (z.B. "youth, retreat, vbs"), um registrierbare Ereignisse zu kategorisieren.
-   - **Registrierungsfragen** -- Fügen Sie optional ein [Formular](../forms/creating-forms.md) an, damit Registranten zusätzliche Fragen beantworten (Ernährungseinschränkungen, T-Shirt-Größe, Notfallkontakt usw.) als Teil der Anmeldung. Wählen Sie **Keine**, um Fragen zu überspringen.
-   - **Warteliste aktivieren** -- Wenn das Ereignis voll ist, lassen Sie zusätzliche Registranten sich stattdessen auf eine Warteliste anmelden. Siehe [Kostenpflichtige Registrierungen](paid-registrations#warteliste).
-4. Speichern Sie das Ereignis.
+   - **Kapazität** (optional) -- Legen Sie eine maximale Anzahl von Anmeldungen fest. Leer lassen für unbegrenzt.
+   - **Registrierung öffnet** -- Datum und Uhrzeit, zu dem die Registrierung verfügbar wird.
+   - **Registrierung schließt** -- Datum und Uhrzeit, zu dem die Registrierung endet.
+   - **Tags** -- Durch Kommas getrennte Bezeichnungen (z. B. „Jugend, Freizeit, VBS"), um registrierbare Veranstaltungen zu kategorisieren.
+   - **Registrierungsfragen** -- Fügen Sie optional ein [Formular](../forms/creating-forms.md) an, damit Teilnehmer bei der Anmeldung zusätzliche Fragen beantworten (Ernährungseinschränkungen, T-Shirt-Größe, Notfallkontakt usw.). Wählen Sie **Keine**, um Fragen zu überspringen.
+   - **Warteliste aktivieren** -- Wenn die Veranstaltung ausgebucht ist, können weitere Teilnehmer einer Warteliste beitreten, anstatt abgewiesen zu werden. Siehe [Bezahlte Registrierungen](paid-registrations#waitlist).
+4. Speichern Sie die Veranstaltung.
 
-Für bezahlte Ereignisse können Sie auf derselben Einstellungsseite Preis **Teilnehmertypen**, optionale **Auswahlmöglichkeiten** (Add-Ons) und **Rabattcodes** definieren, wobei die Zahlung über den Spendendienstanbieter Ihrer Kirche erfolgt. Siehe [Kostenpflichtige Registrierungen](paid-registrations) für die vollständige Anleitung.
+Für kostenpflichtige Veranstaltungen können Sie auf derselben Einstellungsseite bepreiste **Teilnehmertypen**, optionale **Auswahlmöglichkeiten** (Zusatzoptionen) und **Rabattcodes** definieren, wobei die Zahlung über den Spendenanbieter Ihrer Kirche eingezogen wird. Die vollständige Anleitung finden Sie unter [Bezahlte Registrierungen](paid-registrations).
 
-Nachdem die Registrierung aktiviert wurde, werden die Mitglieder eine Schaltfläche **Für dieses Ereignis registrieren** sehen, wenn sie das Ereignis auf der [B1-Website](../../b1-church/events/registering) oder der [B1 Mobile App](../../b1-mobile/events/registering) anzeigen. Wenn Sie ein Formular angehängt haben, sehen Registranten während der Registrierung einen **Fragen**-Schritt und ihre Antworten werden in ihrer Registrierung gespeichert.
+Sobald die Registrierung aktiviert ist, sehen Mitglieder eine Schaltfläche **Für diese Veranstaltung registrieren**, wenn sie die Veranstaltung auf der [B1-Website](../../b1-church/events/registering) oder in der [B1-Mobile-App](../../b1-mobile/events/registering) ansehen. Wenn Sie ein Formular angehängt haben, sehen Teilnehmer während der Registrierung einen Schritt **Fragen**, und ihre Antworten werden mit ihrer Registrierung gespeichert.
 
 :::info
-Registrierungsfragen funktionieren nur mit Formularen, die **nicht** als Eingeschränkt markiert sind. Ein eingeschränktes Formular wird während der Registrierung automatisch übersprungen, anstatt angezeigt zu werden. Verwenden Sie daher ein nicht eingeschränktes Formular, wenn Sie Fragen an ein Ereignis anhängen.
+Registrierungsfragen funktionieren nur mit Formularen, die **nicht** als eingeschränkt markiert sind. Ein eingeschränktes Formular wird während der Registrierung automatisch übersprungen statt angezeigt. Verwenden Sie daher ein nicht eingeschränktes Formular, wenn Sie Fragen an eine Veranstaltung anhängen.
 :::
 
 ### Registrierungen verwalten
 
-So zeigen Sie Registrierungen für Ihre Ereignisse an und verwalten sie:
+So zeigen und verwalten Sie Registrierungen für Ihre Veranstaltungen:
 
 1. Navigieren Sie zur Seite **Registrierungen** in B1 Admin.
-2. Sie sehen eine Tabelle mit allen Ereignissen mit aktivierter Registrierung, die den Ereignistitel, das Datum, die aktuelle Registrierungsanzahl gegenüber der Kapazität und die Tags anzeigt.
-3. Klicken Sie auf ein Ereignis, um die vollständige Liste der Registrierungen zu sehen, einschließlich Namen, Mitgliederzahl, Teilnehmertypen, Zahlungsstatus und Registrierungsdatum.
-4. Auf der Detailseite können Sie:
+2. Sie sehen eine Tabelle aller Veranstaltungen mit aktivierter Registrierung, mit Veranstaltungstitel, Datum, aktueller Anzahl der Registrierungen im Vergleich zur Kapazität und Tags.
+3. Klicken Sie auf eine Veranstaltung, um die vollständige Liste der Registrierungen zu sehen, einschließlich Namen, Mitgliederzahl, Teilnehmertypen, Zahlungsstatus und Registrierungsdatum.
+4. Von der Detailseite aus können Sie:
    - **Teilnehmer hinzufügen** -- Registrieren Sie manuell jemanden, der sich offline oder telefonisch angemeldet hat.
-   - **Stornieren** einzelne Registrierungen
-   - **Löschen** Registrierungen dauerhaft
-   - **Befördern** Wartelisten-Registrierungen, wenn ein Platz frei wird
-   - **CSV exportieren** -- Laden Sie alle Registrierungen herunter, einschließlich Teilnehmertypen, Auswahlmöglichkeiten, Zahlungsbeträge und Antworten auf Fragen
+   - Einzelne Registrierungen **stornieren**
+   - Registrierungen dauerhaft **löschen**
+   - Wartelisten-Registrierungen **befördern**, wenn ein Platz frei wird
+   - **CSV exportieren** -- Alle Registrierungen herunterladen, einschließlich Teilnehmertypen, Auswahlmöglichkeiten, Zahlungsbeträgen und Antworten auf Fragen
 
-Wenn das Ereignis angehängte Registrierungsfragen hat, zeigt die Detailseite auch einen Filter **Nur unbeantwortete Fragen** an, um Registranten schnell zu finden, die noch keine Antworten eingereicht haben, und eine Schaltfläche **Antworten anzeigen** für jede beantwortete Registrierung, um ihre Antworten zu sehen. Bezahlte Ereignisse fügen eine Spalte **Typ** hinzu, eine Spalte **Bezahlt / Gesamt**, Pro-Typ-Zähler und einen Dialog mit Zahlungsdetails -- siehe [Kostenpflichtige Registrierungen](paid-registrations#das-registrierungsroster).
+Wenn die Veranstaltung Registrierungsfragen angehängt hat, zeigt die Detailseite außerdem einen Filter **Nur unbeantwortete Fragen** an, um schnell Teilnehmer zu finden, die noch keine Antworten übermittelt haben, sowie eine Schaltfläche **Antworten anzeigen** bei jeder beantworteten Registrierung, um deren Antworten zu sehen. Bei kostenpflichtigen Veranstaltungen kommen eine Spalte **Typ**, eine Spalte **Bezahlt / Gesamt**, Zählungen pro Typ und ein Zahlungsdetail-Dialog hinzu -- siehe [Bezahlte Registrierungen](paid-registrations#the-registration-roster).
 
 :::tip
-Verwenden Sie die Kapazitätsfortschrittsleiste, um zu überwachen, wie schnell Ereignisse voll werden. Die Leiste wird rot, wenn ein Ereignis bei oder über der Kapazität liegt.
+Verwenden Sie die Kapazitäts-Fortschrittsanzeige, um zu überwachen, wie schnell sich Veranstaltungen füllen. Die Anzeige wird rot, wenn eine Veranstaltung die Kapazität erreicht oder überschreitet.
 :::
 
 ## Nächste Schritte
 
-- [Kuratierter Kalender](curated-calendar) -- Erstellen Sie einen Kalender, der von mehreren Gruppen zieht
-- [Kostenpflichtige Registrierungen](paid-registrations) -- Teilnehmertypen, Add-On-Auswahlmöglichkeiten, Rabattcodes, Zahlungen und Wartelisten
-- [Ereignisregistrierungs-Anleitung](../guides/event-registration) -- Schritt-für-Schritt-Anleitung zum Einrichten der Ereignisregistrierung
+- [Kuratierter Kalender](curated-calendar) -- Einen Kalender erstellen, der aus mehreren Gruppen zusammenführt
+- [Bezahlte Registrierungen](paid-registrations) -- Teilnehmertypen, Zusatzauswahlen, Rabattcodes, Zahlungen und Wartelisten
+- [Leitfaden zur Ereignisregistrierung](../guides/event-registration) -- Schritt-für-Schritt-Anleitung zur Einrichtung der Ereignisregistrierung
 - [Kalenderübersicht](./) -- Zurück zur Kalenderübersicht

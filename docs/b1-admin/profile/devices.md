@@ -6,7 +6,7 @@ title: "Managing Devices"
 
 <div class="article-intro">
 
-The Devices page lets you manage ChurchAppsPlayer devices connected to your account. These devices are used for streaming content and displaying church media on screens at your location.
+The Devices page lets you manage ChurchAppsPlayer and FreePlay devices connected to your account. These devices are used for streaming content and displaying church media on screens at your location.
 
 </div>
 
@@ -31,12 +31,12 @@ When you open the Devices page, you will see a table listing all registered devi
 
 1. Click the **Add Device** button at the top of the Devices page.
 2. You will be prompted to enter a **pairing code**.
-3. Find the pairing code displayed on the ChurchAppsPlayer device you want to connect.
-4. Enter the code and confirm.
-5. The device will appear in your devices table once successfully paired.
+3. Find the pairing code displayed on the ChurchAppsPlayer or FreePlay device you want to connect.
+4. Enter the code. If it's a FreePlay TV, a **Show Plans For** dropdown lets you pick the plan type the screen should follow — leave it on **None** to use the device for browsing and notifications only.
+5. Confirm. The device will appear in your devices table once successfully paired.
 
 :::tip
-Make sure the ChurchAppsPlayer device is powered on and connected to the internet before attempting to pair it. The pairing code is displayed on the device's screen.
+Make sure the device is powered on and connected to the internet before attempting to pair it. The pairing code is displayed on the device's screen.
 :::
 
 ## Editing a Device Label

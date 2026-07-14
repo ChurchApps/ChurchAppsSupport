@@ -1,8 +1,8 @@
 ---
-title: "Calendario del grupo"
+title: "Calendario del Grupo"
 ---
 
-# Calendario del grupo
+# Calendario del Grupo
 
 <div class="article-intro">
 
@@ -13,29 +13,29 @@ Cada grupo en B1 puede tener su propio calendario de eventos. Los líderes de gr
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Necesitas un grupo creado en B1 Admin con al menos un miembro. Consulta [Crear grupos](creating-groups.md) y [Miembros del grupo](group-members.md).
-- Para agregar o editar eventos de calendario, debes ser designado como líder de grupo. Consulta [Designar líderes de grupo](group-members.md) para instrucciones.
+- Necesitas un grupo creado en B1 Admin con al menos un miembro. Consulta [Crear Grupos](creating-groups.md) y [Miembros del Grupo](group-members.md).
+- Para agregar o editar eventos de calendario, debes ser designado como líder de grupo. Consulta [Designar Líderes de Grupo](group-members.md) para instrucciones.
 
 </div>
 
 ## Acceder al calendario del grupo
 
-El calendario del grupo está disponible a través de la aplicación B1.church para miembros:
+El calendario del grupo está disponible a través de la aplicación B1 Church para miembros:
 
 1. Desde B1 Admin, haz clic en el **menú desplegable** en la esquina superior derecha de tu pantalla.
-2. Selecciona **Cambiar aplicación**.
-3. Elige **B1.church**.
+2. Selecciona **Cambiar Aplicación**.
+3. Elige **B1 Church**.
 4. Haz clic en **Grupos** en la barra lateral izquierda.
 5. Selecciona tu grupo de la lista.
 6. Haz clic en **Calendario** en el lado izquierdo de la pantalla.
 
 :::info
-El calendario del grupo se gestiona a través de B1.church (la aplicación de miembros) en lugar de B1 Admin. Los líderes de grupo acceden a él cambiando de aplicaciones desde el panel de administración.
+El calendario del grupo se gestiona a través de B1 Church (la aplicación de miembros) en lugar de B1 Admin. Los líderes de grupo acceden a él cambiando de aplicaciones desde el panel de administración.
 :::
 
 ## Agregar un evento
 
-1. Desde el calendario del grupo, haz clic en **Agregar un evento**.
+1. Desde el calendario del grupo, haz clic en **Agregar un Evento**.
 2. Ingresa un **título** para el evento.
 3. Escribe una breve **descripción** de qué se trata el evento.
 4. Establece la **hora de inicio** y **hora de fin**.
@@ -60,8 +60,8 @@ Para un grupo que se reúne cada sábado, establece la frecuencia a "semana" y e
 La página del grupo en B1 Admin también tiene una pestaña **Calendario** donde el personal puede programar toda una temporada de reuniones a la vez:
 
 1. Abre el grupo en B1 Admin y selecciona la pestaña **Calendario**.
-2. Haz clic en **Agregar eventos** para abrir el diálogo **Agregar eventos recurrentes**.
-3. Elige la programación (semanal, cada 2 semanas, mensual, o una sola vez), las fechas de **Primera reunión** y **Última reunión**, y opcionalmente **Omitir días feriados**.
+2. Haz clic en **Agregar Eventos** para abrir el diálogo **Agregar Eventos Recurrentes**.
+3. Elige la programación (semanal, cada 2 semanas, mensual, o una sola vez), las fechas de **Primera Reunión** y **Última Reunión**, y opcionalmente **Omitir Días Feriados**.
 4. Revisa la vista previa de fechas de reunión y desmarca cualquiera para omitir.
 5. Deja **Permitir RSVP** marcado si deseas que los miembros puedan responder a estos eventos (ver abajo), luego guarda.
 

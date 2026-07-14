@@ -1,55 +1,55 @@
 ---
-title: "Elegir un modo de vinculacion"
+title: "Elegir un Modo de Vinculación"
 ---
 
-# Elegir un modo de vinculacion
+# Elegir un Modo de Vinculación
 
 <div class="article-intro">
 
-FreePlay ofrece dos modos de vinculacion para conectar su TV a su iglesia, ademas de la posibilidad de explorar proveedores de contenido directamente. La pantalla **Seleccionar modo de vinculacion** presenta estas opciones como tarjetas grandes que puede navegar con su control remoto de TV.
+FreePlay ofrece dos modos de vinculación para conectar tu TV a tu iglesia, además de la posibilidad de explorar proveedores de contenido directamente. La pantalla **Select Pairing Mode** presenta estas opciones como tarjetas grandes que puedes navegar con tu control remoto de TV.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Instale FreePlay e iniciela por primera vez -- consulte [Primeros pasos](./index.md)
-- Tenga su control remoto de TV listo para la navegacion
+- Instala FreePlay e inícialo por primera vez -- consulta [Primeros Pasos](./index.md)
+- Ten tu control remoto de TV listo para la navegación
 
 </div>
 
-## Vincular a un aula
+## Pair to Classroom
 
-Elija **Vincular a un aula** cuando desee que un TV especifico siempre muestre la leccion programada para una sala en particular. Esta es la mejor opcion para aulas del ministerio infantil donde las lecciones se asignan segun un calendario semanal.
+Elige **Pair to Classroom** cuando desees que un TV específico siempre muestre la lección programada para una sala en particular. Esta es la mejor opción para aulas del ministerio infantil donde las lecciones se asignan según un calendario semanal.
 
-**Como funciona:** Busca su iglesia por nombre, selecciona un aula y FreePlay obtiene automaticamente la leccion programada para esa sala en el dia de hoy. Cada domingo por la manana, solo encienda el TV y la leccion correcta estara lista.
+**Cómo funciona:** Buscas tu iglesia por nombre, eliges un aula, y FreePlay obtiene automáticamente la lección que esté programada para esa sala hoy. Cada domingo por la mañana, solo enciendes el TV y la lección correcta está lista.
 
-**Ideal para:** TVs dedicados en aulas que siempre deben mostrar el contenido programado para esa sala.
+**Ideal para:** TVs dedicados de aula que siempre deben mostrar el contenido programado para esa sala.
 
 :::tip
-Configure sus aulas en [freeplay.church](https://freeplay.church) antes de vincular su TV. Esto garantiza que sus salas aparezcan cuando busque su iglesia.
+Configura tus aulas en [freeplay.church](https://freeplay.church) antes de vincular tu TV. Esto garantiza que tus salas aparezcan cuando busques tu iglesia.
 :::
 
-## Vincular a un plan
+## Pair to Plan
 
-Elija **Vincular a un plan** cuando desee seguir un plan de servicio de la iglesia. Este modo genera un codigo de vinculacion que ingresa en **B1 Admin** para enlazar el TV a un tipo de plan especifico. El TV luego descarga y reproduce el contenido asignado al plan actual.
+Elige **Pair to Plan** cuando desees seguir un plan de servicio de la iglesia. Este modo genera un código de vinculación que ingresas en **B1 Admin** para enlazar el TV a un tipo de plan específico. El TV luego descarga y reproduce el contenido asignado al plan actual.
 
-**Como funciona:** FreePlay muestra un codigo de vinculacion en pantalla. Un administrador ingresa ese codigo en la configuracion de **Tipo de plan** dentro de **B1 Admin**. Una vez vinculado, el TV carga automaticamente el contenido del plan actual.
+**Cómo funciona:** FreePlay muestra un código de vinculación y un código QR en pantalla. Un administrador abre la página vinculada en **B1 Admin**, ingresa el código, y elige el tipo de plan que la pantalla debe seguir desde un menú desplegable **Show Plans For**. Una vez aprobado, el TV carga automáticamente el contenido del plan actual.
 
-**Ideal para:** TVs que muestran contenido vinculado a su plan de servicio semanal, como letras de alabanza o diapositivas de anuncios.
+**Ideal para:** TVs que muestran contenido vinculado a tu plan de servicio semanal, como letras de adoración o diapositivas de anuncios.
 
-## Proveedores de contenido
+## Content Providers
 
-Si no necesita vincularse a un aula o plan, puede explorar proveedores de contenido directamente. Proveedores como [Lessons.church](../../lessons-church/) y Bible Project ofrecen contenido que puede descargar y reproducir bajo demanda.
+Si no necesitas vincularte a un aula o plan, puedes explorar proveedores de contenido directamente. Proveedores como [Lessons.church](../../lessons-church/) y Bible Project ofrecen contenido que puedes descargar y reproducir bajo demanda.
 
-**Ideal para:** TVs donde los voluntarios eligen manualmente que reproducir cada semana, o cuando desea explorar el contenido disponible.
+**Ideal para:** TVs donde los voluntarios eligen manualmente qué reproducir cada semana, o cuando deseas explorar el contenido disponible.
 
 :::info
-Puede acceder a la pantalla de **Proveedores** en cualquier momento desde la barra lateral en la parte inferior de la navegacion. No necesita usar un modo de vinculacion para explorar y reproducir contenido.
+Puedes acceder a la pantalla de **Providers** en cualquier momento desde la barra lateral en la parte inferior de la navegación. No necesitas usar un modo de vinculación para explorar y reproducir contenido.
 :::
 
-## Articulos relacionados
+## Artículos Relacionados
 
-- **[Modo Aula](../classroom-mode/)** - Guia completa para vincular con un aula
-- **[Modo Plan](../plan-mode/)** - Guia completa para vincular con un plan de servicio
-- **[Proveedores de contenido](../content-providers/)** - Explore y descargue contenido de fuentes externas
+- **[Classroom Mode](../classroom-mode/)** - Guía completa para vincular con un aula
+- **[Plan Mode](../plan-mode/)** - Guía completa para vincular con un plan de servicio
+- **[Content Providers](../content-providers/)** - Explora y descarga contenido de fuentes externas

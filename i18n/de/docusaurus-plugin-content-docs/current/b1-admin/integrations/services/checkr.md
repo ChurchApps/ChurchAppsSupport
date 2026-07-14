@@ -6,90 +6,90 @@ title: "Checkr"
 
 <div class="article-intro">
 
-[Checkr](https://checkr.com) führt Hintergrundüberprüfungen für Mitarbeiter und Freiwillige durch -- eine nahezu universelle Anforderung für jede Kirche, die ein Kinder- oder Jugendprogramm durchführt. B1 hat **keine integrierte Hintergrundüberprüfungsfunktion** -- das Bestellen von Überprüfungen, das Verfolgen von Ergebnissen und die Überprüfung der Einhaltung existieren alle in Checkr; das folgende Rezept verdrahtet nur B1-Ereignisse darin. Checkr hat keine Zapier-App, aber [Make.coms Checkr-Integration](https://www.make.com/en/integrations/checkr) ist verifiziert und legt die Aktionen dar, die Sie benötigen, um eine Überprüfung von einem B1-Ereignis auszulösen.
+[Checkr](https://checkr.com) führt Background-Checks für Mitarbeiter und Freiwillige durch -- ein nahezu universelles Bedürfnis für jede Kirche mit einem Kinder- oder Jugendprogramm. B1 hat **keine integrierte Background-Check-Funktion** -- das Bestellen von Prüfungen, das Verfolgen von Ergebnissen und die Einhaltung von Screening-Vorgaben finden alle in Checkr statt; das folgende Rezept verbindet lediglich B1-Ereignisse damit. Checkr hat keine Zapier-App, aber [Make.coms Checkr-Integration](https://www.make.com/en/integrations/checkr) ist verifiziert und stellt die Aktionen bereit, die Sie benötigen, um eine Prüfung von einem B1-Ereignis aus zu starten.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie anfangen</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Ein [Checkr](https://checkr.com)-Konto mit API-Zugriff und mindestens einem konfigurierten Screening-Paket
+- Ein [Checkr](https://checkr.com)-Konto mit API-Zugang und mindestens einem konfigurierten Screening-Paket
 - Ein [Make](https://www.make.com)-Konto
 - Ein B1Admin-Benutzer mit der Berechtigung **Einstellungen bearbeiten**
 
 </div>
 
-## Was Sie verdrahten können
+## Was Sie verbinden können
 
-Make's Checkr-App legt 1 Trigger und 6 Aktionen dar:
+Die Checkr-App von Make bietet 1 Trigger und 6 Aktionen:
 
-| Richtung | B1 / Make Trigger | Aktion |
+| Richtung | B1-/Make-Trigger | Aktion |
 |---|---|---|
-| B1 → Checkr | B1 `group.member.added` (gefiltert zu einer Freiwilligengruppe) | Checkr: Kandidaten erstellen → Hintergrund-Check-Einladung erstellen |
-| Checkr → B1 | Checkr Webhook (Einladung / Bericht-Ereignis) | B1: Die Personenakte aktualisieren (z.B. Tag "Checkr freigegeben") |
+| B1 → Checkr | B1 `group.member.added` (gefiltert auf eine Freiwilligengruppe) | Checkr: Kandidat erstellen → Einladung zur Background-Prüfung erstellen |
+| Checkr → B1 | Checkr-Webhook (Einladungs-/Berichtsereignis) | B1: Den Datensatz der Person aktualisieren (z. B. Tag „Checkr freigegeben") |
 
-Make's Checkr-Aktionen: Kandidaten erstellen, Hintergrund-Check-Einladung erstellen, Kandidaten abrufen, Bericht abrufen, ETA des Berichts abrufen, eine Einladung abrufen. Plus 4 Suchmodule.
+Checkr-Aktionen von Make: Kandidat erstellen, Einladung zur Background-Prüfung erstellen, Kandidat abrufen, Bericht abrufen, geschätzte Ankunftszeit des Berichts abrufen, Einladung abrufen. Plus 4 Suchmodule.
 
 ## Einrichtung
 
-### 1. Prägen Sie einen B1 API-Schlüssel
+### 1. Einen B1-API-Schlüssel erstellen
 
 **Einstellungen → Entwickler → API-Schlüssel → Neuer API-Schlüssel**:
 
-- `settings:write` — für den Trigger-Webhook
-- `people:read` — zum Nachschlagen des Namens/der E-Mail der Person beim Starten einer Überprüfung
-- (Optional) `people:write`, wenn Sie den Berichtstatus als benutzerdefiniertes Feld oder Tag zurückschreiben möchten
+- `settings:write` -- für den Trigger-Webhook
+- `people:read` -- um beim Starten einer Prüfung Name/E-Mail der Person nachzuschlagen
+- (Optional) `people:write`, wenn Sie den Berichtsstatus als benutzerdefiniertes Feld oder Tag zurückschreiben möchten
 
-### 2. Erstellen Sie das Szenario "Überprüfung beim Freiwilligen-Signup starten" in Make
+### 2. Das Szenario „Prüfung bei Freiwilligenanmeldung starten" in Make erstellen
 
-1. **Trigger** — B1.church: Watch Events (`group.member.added`).
-2. **Filter** — Fahren Sie nur fort, wenn `data.groupId` Ihrer "Kinder-Freiwilligen" (oder ähnlich) Gruppe entspricht.
-3. **Aktion** — B1.church: Person suchen (nach `data.personId`), um E-Mail + Vor-/Nachname zu erhalten.
-4. **Aktion** — Checkr: Kandidaten erstellen. Ordnen Sie Vor-/Nach-/E-Mail von Schritt 3 zu.
-5. **Aktion** — Checkr: Hintergrund-Check-Einladung erstellen. Ordnen Sie die neue Kandidaten-ID von Schritt 4 dem Feld *candidate_id* zu. Wählen Sie das Screening-Paket (z.B. `tasker_standard` oder was auch immer Ihr Konto legt dar).
-6. (Optional) **Aktion** — Slack: Benachrichtigen Sie Ihren Koordinator für sichere Ministerien, dass eine Überprüfung eingeleitet wurde.
+1. **Trigger** -- B1.church: Ereignisse überwachen (`group.member.added`).
+2. **Filter** -- nur fortfahren, wenn `data.groupId` mit Ihrer Gruppe „Kinderdienst-Freiwillige" (oder Äquivalent) übereinstimmt.
+3. **Aktion** -- B1.church: Person suchen (nach `data.personId`), um E-Mail sowie Vor-/Nachname zu erhalten.
+4. **Aktion** -- Checkr: Kandidat erstellen. Vor-/Nachname/E-Mail aus Schritt 3 zuordnen.
+5. **Aktion** -- Checkr: Einladung zur Background-Prüfung erstellen. Die neue Kandidaten-ID aus Schritt 4 dem Feld *candidate_id* zuordnen. Wählen Sie das Screening-Paket (z. B. `tasker_standard` oder was Ihr Konto sonst bietet).
+6. (Optional) **Aktion** -- Slack: Ihren Koordinator für sichere Dienste benachrichtigen, dass eine Prüfung eingeleitet wurde.
 
-Schalten Sie das Szenario ein. Neue Freiwillige in der Zielgruppe erhalten eine automatische Checkr-Einladung per E-Mail; sie erledigen sie auf ihrem Telefon oder Laptop; Checkr führt die Überprüfung aus.
+Aktivieren Sie das Szenario. Neue Freiwillige in der Zielgruppe erhalten automatisch eine Checkr-Einladung per E-Mail; sie schließen diese auf ihrem Telefon oder Laptop ab; Checkr führt die Prüfung durch.
 
-### 3. (Optional) Empfangen Sie den Bericht zurück
+### 3. (Optional) Den Bericht zurückerhalten
 
-1. **Trigger** — Checkr: Watch Events (Webhook). Make registriert einen Checkr-Webhook bei Aktivierung.
-2. **Filter** — Fahren Sie nur fort, wenn `event_type = report.completed`.
-3. **Aktion** — Checkr: Bericht abrufen (verwenden Sie die Bericht-ID aus dem Webhook).
-4. **Aktion** — B1.church: Person suchen (nach Kandidaten-E-Mail).
-5. **Aktion** — Bedingter Slack / E-Mail: Benachrichtigen Sie den Koordinator mit dem Status `clear` / `consider` / `suspended`.
+1. **Trigger** -- Checkr: Ereignisse überwachen (Webhook). Make registriert bei Aktivierung einen Checkr-Webhook.
+2. **Filter** -- nur fortfahren, wenn `event_type = report.completed`.
+3. **Aktion** -- Checkr: Bericht abrufen (mit der Berichts-ID aus dem Webhook).
+4. **Aktion** -- B1.church: Person suchen (nach Kandidaten-E-Mail).
+5. **Aktion** -- Bedingtes Slack / E-Mail: Den Koordinator mit dem Status `clear` / `consider` / `suspended` benachrichtigen.
 
-Hinweis: B1 hat heute kein integriertes Feld "Hintergrund-Check-Status". Die pragmatischen Optionen sind (a) das Ergebnis in einen privaten Slack-Kanal zur Überprüfung posten, (b) es in ein Google Sheet für Audit schreiben oder (c) die Person bei `clear` zu einer "Freigegebene Freiwillige" B1-Gruppe hinzufügen.
+Hinweis: B1 hat heute kein integriertes Feld für den „Background-Check-Status". Die pragmatischen Optionen sind (a) das Ergebnis zur Überprüfung in einen privaten Slack-Kanal posten, (b) es zur Prüfung in ein Google Sheet schreiben oder (c) die Person bei `clear` zu einer B1-Gruppe „Freigegebene Freiwillige" hinzufügen.
 
-## Allgemeine Rezepte
+## Gängige Rezepte
 
-### Re-Screen-Freiwillige alle 2 Jahre
+### Freiwillige alle 2 Jahre erneut prüfen
 
-Kombinieren Sie das Obige mit einem Make-Schedule-Trigger:
+Kombinieren Sie das Obige mit einem Make-Zeitplan-Trigger:
 
-- **Trigger** — Make: Schedule (monatlich)
-- **Aktion** — B1.church: Gruppenmitglieder für "Freigegebene Freiwillige" auflisten
-- **Aktion** — Filtern Sie nach Make: Freigabe-Datum älter als 22 Monate
-- **Aktion** — Checkr: Hintergrund-Check-Einladung erstellen (wie beim ursprünglichen Fluss)
+- **Trigger** -- Make: Zeitplan (monatlich)
+- **Aktion** -- B1.church: Gruppenmitglieder für „Freigegebene Freiwillige" auflisten
+- **Aktion** -- Nach Make filtern: freigegebenes Datum älter als 22 Monate
+- **Aktion** -- Checkr: Einladung zur Background-Prüfung erstellen (wie im ursprünglichen Ablauf)
 
-### Block Stage 1 Zugriff, bis die Überprüfung abgeschlossen ist
+### Zugang zu Stufe 1 bis zum Abschluss der Prüfung blockieren
 
-Wenn Ihre Kirche die B1-Gruppenmitgliedschaft zum Gating-Zugriff verwendet (z.B. erscheinen nur "Freigegebene" Gruppenmitglieder in Serving-Zeitplänen), halten Sie neue Freiwillige in einer Holding-Gruppe, bis das Checkr `report.completed`-Ereignis sie umschaltet.
+Wenn Ihre Kirche die B1-Gruppenmitgliedschaft nutzt, um den Zugang zu steuern (z. B. erscheinen nur Mitglieder der Gruppe „Freigegeben" in Dienstplänen), halten Sie neue Freiwillige in einer Warteschlangengruppe, bis das Checkr-Ereignis `report.completed` sie umschaltet.
 
-## Grenzen & Hinweise
+## Einschränkungen & Hinweise
 
-- **Checkr ist nur USA-weit** für die meisten Screening-Pakete. Australische, UK und kanadische Kirchen benötigen eine Alternative.
-- **Preisgestaltung** ist pro Überprüfung — jedes Create Invitation in Make verbrennt eine echte Überprüfung. Testen Sie zuerst im Checkr-Sandbox-/Staging-Konto (Make's Checkr-App respektiert die Anmeldeinformationen, die Sie in der Verbindung übergeben, so dass das Austauschen von Anmeldeinformationen Sandbox/Live umschaltet).
-- **Checkr API-Zugriff ist plan-gated.** Kleinere Checkr-Konten können auf einer UI-Only-Stufe sein; wenden Sie sich an Checkr, um API zu aktivieren.
+- **Checkr ist US-only** für die meisten Screening-Pakete. Kirchen in Australien, Großbritannien und Kanada benötigen eine Alternative.
+- **Die Preisgestaltung erfolgt pro Prüfung** -- jede „Einladung erstellen"-Aktion in Make verbraucht eine echte Prüfung. Testen Sie zunächst im Sandbox-/Staging-Konto von Checkr (Makes Checkr-App respektiert die im Verbindungsformular übergebenen Anmeldedaten, sodass ein Wechsel der Anmeldedaten zwischen Sandbox und Live umschaltet).
+- **Der API-Zugang von Checkr ist tarifabhängig.** Kleinere Checkr-Konten befinden sich möglicherweise auf einer reinen UI-Stufe; kontaktieren Sie Checkr, um API-Zugang zu aktivieren.
 
 ## Fehlerbehebung
 
-- **Create Candidate schlägt mit `403` fehl** — das Checkr API-Token ist schreibgeschützt oder hat nicht die richtigen Kontoberechtigungen. Geben Sie es aus dem Checkr-Dashboard mit Schreibbereich aus.
-- **Einladung kommt nie an** — Überprüfen Sie die E-Mail des Kandidaten in Schritt 3; B1 kann ein leeres E-Mail-Feld für diese Person haben. Fügen Sie einen erforderlichen E-Mail-Filter vor dem Checkr-Schritt hinzu.
-- **Webhook-Trigger wird nicht ausgelöst** — Checkr's Webhook-Registrierung schlägt manchmal still fehl, wenn Ihr Make-Konto nicht auf einem bezahlten Tier ist, der ausgehende Webhooks unterstützt. Überprüfen Sie auf der Seite Checkr's Dashboard *Webhooks*, dass die URL von Make aufgelistet ist.
+- **„Kandidat erstellen" schlägt mit `403` fehl** -- das Checkr-API-Token ist schreibgeschützt oder hat nicht die richtigen Kontoberechtigungen. Erstellen Sie es im Checkr-Dashboard mit Schreibrechten neu.
+- **Einladung kommt nie an** -- überprüfen Sie die E-Mail des Kandidaten in Schritt 3; B1 hat möglicherweise ein leeres E-Mail-Feld für diese Person. Fügen Sie vor dem Checkr-Schritt einen Filter für erforderliche E-Mail hinzu.
+- **Webhook-Trigger löst nicht aus** -- Checkrs Webhook-Registrierung schlägt manchmal stillschweigend fehl, wenn Ihr Make-Konto nicht auf einer kostenpflichtigen Stufe ist, die ausgehende Webhooks unterstützt. Überprüfen Sie im Dashboard von Checkr unter *Webhooks*, ob die URL von Make aufgeführt ist.
 
 ## Siehe auch
 
-- [Make (Überblick)](../make) -- B1-Seite jeden Make-Szenarios
-- [Mobile-Nachricht](./mobile-message) -- für SMS-Anbieter-ohne-Zapier-Apps, gleiches Webhooks/HTTP-Muster wie Checkr Make-Verdrahtung
-- [Checkr API-Dokumentation](https://docs.checkr.com/)
+- [Make (Übersicht)](../make) -- die B1-Seite jedes Make-Szenarios
+- [Mobile Message](./mobile-message) -- für SMS-Anbieter ohne Zapier-App, dasselbe Webhooks-/HTTP-Muster wie die Checkr-Make-Verbindung
+- [Checkr-API-Dokumentation](https://docs.checkr.com/)

@@ -1,12 +1,12 @@
----
-title: "Geraet koppeln"
+﻿---
+title: "Gerät koppeln"
 ---
 
-# Geraet koppeln
+# Gerät koppeln
 
 <div class="article-intro">
 
-Um den Plan-Modus zu verwenden, muessen Sie Ihren Fernseher mit einem Plantyp in B1 Admin koppeln. FreePlay generiert einen einzigartigen Kopplungscode, der das Geraet mit dem Plan Ihrer Gemeinde verknuepft und so jede Woche eine automatische Inhaltsbereitstellung ermoeglicht.
+Um den Plan-Modus zu verwenden, müssen Sie Ihren Fernseher mit einem Plantyp in B1 Admin koppeln. FreePlay generiert einen eindeutigen Kopplungscode, der das Gerät mit dem Kirchenplan verbindet und die automatische Inhaltsbereitstellung jede Woche ermöglicht.
 
 </div>
 
@@ -14,56 +14,60 @@ Um den Plan-Modus zu verwenden, muessen Sie Ihren Fernseher mit einem Plantyp in
 <h4>Bevor Sie beginnen</h4>
 
 - Installieren und starten Sie FreePlay -- siehe [Erste Schritte](../getting-started/)
-- Waehlen Sie **Pair to Plan** auf dem [Kopplungsmodus-Bildschirm](../getting-started/pairing-modes.md)
-- Haben Sie Zugang zu **B1 Admin** auf einem Computer oder Telefon, um die Kopplung abzuschliessen
+- Wählen Sie **Mit Plan verbinden** auf dem [Pairing-Modus-Bildschirm](../getting-started/pairing-modes.md)
+- Haben Sie Zugriff auf **B1 Admin** auf einem Computer oder Telefon, um die Kopplung abzuschließen
 
 </div>
 
-## Den Kopplungscode generieren
+## Generieren des Kopplungscodes
 
-1. Waehlen Sie auf dem Bildschirm **Select Pairing Mode** die Option **Pair to Plan**
+1. Wählen Sie auf dem Bildschirm **Pairing-Modus auswählen** die Option **Mit Plan verbinden**
 2. FreePlay kontaktiert den Server und generiert einen kurzen Kopplungscode
-3. Der Code erscheint in grossen Zeichen in der Mitte des Bildschirms
-4. Unterhalb des Codes zeigt eine pulsierende Anzeige **Waiting for connection**
+3. Der Code wird in großen Zeichen in der Bildschirmmitte angezeigt
+4. Unter dem Code zeigt ein pulsierender Indikator **Auf Verbindung warten** an
 
-Der Code wird als einzelne Zeichen dargestellt, damit er leicht von der anderen Seite des Raumes gelesen werden kann.
+Der Code wird als einzelne Zeichen angezeigt, um das Lesen aus der Ferne zu erleichtern.
 
-## Den Code in B1 Admin eingeben
+## Code in B1 Admin eingeben
 
-1. Oeffnen Sie auf einem Computer oder Telefon **B1 Admin** fuer Ihre Gemeinde
-2. Navigieren Sie zu den **Plan Type**-Einstellungen fuer den Plan, den Sie zuweisen moechten
-3. Geben Sie den auf dem Fernseher angezeigten Kopplungscode ein
-4. Speichern Sie die Einstellungen
+1. Gehen Sie auf einem Computer oder Telefon zu der unter dem Code auf dem Fernseher angezeigten Adresse (oder scannen Sie den QR-Code auf dem Bildschirm) – dies öffnet die Seite **Gerät autorisieren** in B1 Admin
+2. Geben Sie den Kopplungscode ein, falls er nicht bereits vom QR-Code ausgefüllt wurde
+3. Wählen Sie unter **Pläne anzeigen für** den Plantyp aus, dem dieser Bildschirm folgen soll (z.B. "Sonntagsgottesdienst"). Lassen Sie ihn auf **Keine** eingestellt, wenn Sie möchten, dass der Bildschirm nur zum Durchsuchen von Inhalten oder Benachrichtigungen verfügbar ist, ohne dass ein Plan damit verknüpft ist
+4. Genehmigen Sie das Gerät
 
-FreePlay fragt den Server alle paar Sekunden ab, ob die Kopplung abgeschlossen ist. Sobald **B1 Admin** die Verbindung bestaetigt, wechselt der Fernseher automatisch zum Plan-Download-Bildschirm.
-
-## Plan-Inhalte herunterladen
-
-Nach der Kopplung laedt FreePlay den aktuellen Plan fuer diesen Plantyp. Angezeigt werden:
-
-- Der Planname und das Gottesdienstdatum
-- Der zugehoerige Lektionsname (wenn der Plan Lektionsinhalte enthaelt)
-- Eine Fortschrittsanzeige mit **Downloading item X of Y**
-
-Wenn alle Mediendateien heruntergeladen sind, erscheint die Schaltflaeche **Start Plan**. Druecken Sie **Select** auf Ihrer Fernbedienung, um die Wiedergabe zu starten.
+FreePlay fragt den Server alle paar Sekunden ab und überprüft, ob die Kopplung abgeschlossen ist. Sobald **B1 Admin** die Verbindung bestätigt, wird der Fernseher automatisch zum Plan-Download-Bildschirm verschoben.
 
 :::tip
-Der Plan wird automatisch stuendlich aktualisiert. Wenn der Plan im Laufe des Tages geaendert wird, uebernimmt FreePlay die Aenderungen ohne manuelles Eingreifen.
+Geräte können auch über **Profil → Geräte → Gerät hinzufügen** in B1 Admin mit dem gleichen Code gekoppelt werden – es bietet die gleiche Auswahl **Pläne anzeigen für** Plantyp.
 :::
 
-## Alternative: Nach Gemeindename suchen
+## Plan-Inhalt herunterladen
 
-Wenn Sie den Kopplungscode-Ablauf nicht verwenden moechten, koennen Sie am unteren Rand des Kopplungsbildschirms **or search by church name** auswaehlen. Dies fuehrt Sie zum Gemeinde-Suchbildschirm, wo Sie Ihre Gemeinde finden und sich stattdessen mit einem Klassenraum verbinden koennen.
+Nach der Kopplung lädt FreePlay den aktuellen Plan für diesen Plantyp. Es werden angezeigt:
 
-## Wenn die Kopplung fehlschlaegt
+- Der Plan-Name und das Servicedatum
+- Der Name der zugehörigen Lektion (falls der Plan Unterrichtsinhalte enthält)
+- Ein Fortschrittsindikator mit **Download Element X von Y**
 
-Wenn der Kopplungscode nicht generiert werden kann (z. B. aufgrund eines Netzwerkproblems), sehen Sie eine Fehlermeldung mit einer **Try Again**-Schaltflaeche. Stellen Sie sicher, dass Ihr Fernseher mit dem Internet verbunden ist, und versuchen Sie es erneut.
+Wenn alle Mediendateien heruntergeladen sind, wird die Schaltfläche **Plan starten** angezeigt. Drücken Sie **Auswählen** auf Ihrer Fernbedienung, um die Wiedergabe zu starten.
+
+:::tip
+Der Plan wird automatisch jede Stunde aktualisiert. Wenn der Plan während des Tages aktualisiert wird, erfasst FreePlay die Änderungen ohne manuelle Eingriffe.
+:::
+
+## Alternative: Nach Kirchennamen suchen
+
+Wenn Sie den Kopplungscode-Flow nicht verwenden möchten, können Sie unten auf dem Pairing-Bildschirm **oder nach Kirchennamen suchen** auswählen. Dies führt Sie zum Kirchensuchbildschirm, auf dem Sie Ihre Kirche suchen und sich stattdessen mit einem Klassenzimmer verbinden können.
+
+## Falls die Kopplung fehlschlägt
+
+Wenn der Kopplungscode nicht generiert werden kann (z.B. aufgrund eines Netzwerkproblems), wird eine Fehlermeldung mit einer Schaltfläche **Erneut versuchen** angezeigt. Stellen Sie sicher, dass Ihr Fernseher mit dem Internet verbunden ist, und versuchen Sie es erneut.
 
 :::warning
-Kopplungscodes laufen nach einer bestimmten Zeit ab. Wenn Sie zu lange warten, generieren Sie einen neuen Code, indem Sie zum Kopplungsbildschirm zurueckkehren.
+Kopplungscodes verfallen nach einem bestimmten Zeitraum. Falls Sie zu lange warten, generieren Sie einen neuen Code, indem Sie zum Pairing-Bildschirm zurückkehren.
 :::
 
 ## Verwandte Artikel
 
-- **[Plan-Modus -- Uebersicht](./index.md)** - Verstehen, wie sich der Plan-Modus vom Klassenraum-Modus unterscheidet
-- **[Lektionen abspielen](../classroom-mode/playing-lessons)** - Die Player-Steuerungen sind in beiden Modi identisch
+- **[Übersicht des Plan-Modus](./index.md)** - Verstehen Sie, wie sich der Plan-Modus vom Klassenzimmer-Modus unterscheidet
+- **[Unterrichtslektionen abspielen](../classroom-mode/playing-lessons)** - Player-Steuerelemente sind in beiden Modi gleich

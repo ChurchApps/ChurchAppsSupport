@@ -1,12 +1,12 @@
 ---
-title: "Installation als App (PWA)"
+title: "Als App installieren (PWA)"
 ---
 
-# Installation als App (PWA)
+# Als App installieren (PWA)
 
 <div class="article-intro">
 
-B1.church unterstützt die Installation als Progressive Web App (PWA), mit der Sie das Mitgliederkonto Ihrer Kirche just wie eine native App zum Startbildschirm Ihres Telefons hinzufügen können. Dies bietet Ihnen eine Vollbild-, App-ähnliche Erfahrung, ohne den App Store oder Google Play zu durchlaufen.
+B1.church unterstützt die Installation als Progressive Web App (PWA), mit der Sie das Mitgliederportal Ihrer Kirche wie eine native App zu Ihrem Startbildschirm hinzufügen können. Dies bietet Ihnen ein vollbildschirmartiges, app-ähnliches Erlebnis, ohne den App Store oder Google Play durchlaufen zu müssen.
 
 </div>
 
@@ -14,7 +14,7 @@ B1.church unterstützt die Installation als Progressive Web App (PWA), mit der S
 <h4>Bevor Sie beginnen</h4>
 
 - Sie benötigen die B1.church-URL Ihrer Kirche: `https://yourchurchname.b1.church`
-- Verwenden Sie einen unterstützten Browser: **Safari** auf iOS oder **Chrome** auf Android
+- Verwenden Sie einen unterstützten Browser: Safari unter iOS oder Chrome unter Android
 
 </div>
 
@@ -22,61 +22,83 @@ B1.church unterstützt die Installation als Progressive Web App (PWA), mit der S
 
 Eine Progressive Web App (PWA) ist eine Website, die auf Ihrem Gerät installiert werden kann und sich wie eine native App verhält. Wenn Sie B1.church als PWA installieren:
 
-- Wird es im Vollbildmodus ohne Browser-Navigationsleisten geöffnet
-- Erscheint auf Ihrem Startbildschirm mit dem Symbol und Namen Ihrer Kirche
-- Funktioniert nahtlos mit dem Branding und den Designfarben Ihrer Kirche
+- Öffnet sie sich im Vollbildmodus ohne Browser-Navigationsleisten
+- Erscheint sie auf Ihrem Startbildschirm mit dem Symbol und Namen Ihrer Kirche
+- Funktioniert sie nahtlos mit der Markenidentität und den Themenfarben Ihrer Kirche
 
 :::tip
-Die PWA ist eine großartige Option, wenn Sie es vorziehen, keine separate App aus dem App Store oder Google Play zu installieren. Sie bietet die gleiche Erfahrung mit dem Mitgliederkonto, die Sie im Browser erhalten, in einem praktischeren Paket.
+Die PWA ist eine gute Option, wenn Sie keine separate App aus dem App Store oder Google Play installieren möchten. Sie bietet dasselbe Mitgliederportal-Erlebnis, das Sie im Browser erhalten, in einem bequemeren Paket.
 :::
 
-## Von wo aus können Sie installieren
+## Die Installationsseite
 
-Sie können die PWA von **jeder Seite** auf der B1.church-Website Ihrer Kirche aus installieren – von der öffentlichen Homepage, einer Predigtseite, dem Login-Bildschirm oder überall im Mitgliederkonto. Es gibt keine separate „Install-URL" zum Merken; wenn Sie Ihre Kirche im Web besuchen können, können Sie die App von dort aus installieren.
+Der einfachste Weg zur Installation ist die dedizierte Installationsseite Ihrer Kirche:
 
-Wenn Sie die installierte App starten, wird sie direkt auf Ihrem Mitgliederdashboard geöffnet, bereit zum Anmelden.
+```
+https://yourchurchname.b1.church/mobile/install
+```
 
-## Installation auf iPhone (iOS – Safari)
+Die Seite erkennt Ihr Gerät und zeigt automatisch die richtigen Anweisungen an:
 
-1. Öffnen Sie **Safari** auf Ihrem iPhone und gehen Sie zu `https://yourchurchname.b1.church` (ersetzen Sie `yourchurchname` durch den URL-Slug Ihrer Kirche).
-2. Tippen Sie auf die Schaltfläche **Share** (das Feld mit einem Pfeil nach oben) am unteren Rand des Bildschirms.
-3. Scrollen Sie in der Share-Seite nach unten und tippen Sie auf **Add to Home Screen**.
-4. Der Name wird standardmäßig auf den Namen Ihrer Kirche eingestellt. Tippen Sie auf **Add** in der oberen rechten Ecke.
+- iPhone -- schrittweise Anweisungen für Safari „Zum Home-Bildschirm"
+- Android -- eine Ein-Tipp-Schaltfläche „Auf Startbildschirm installieren" in Chrome
+- Desktop -- ein QR-Code, den Sie mit Ihrem Telefon scannen können, um die Installationsseite dort zu öffnen
 
-Das App-Symbol wird auf Ihrem Startbildschirm angezeigt. Tippen Sie darauf, um das Mitgliederkonto im Vollbildmodus zu öffnen.
+Sie können auf verschiedene Weise zur Installationsseite gelangen:
+
+- Öffnen Sie das Menü (☰) im Mitgliederportal und tippen Sie auf „App installieren" (der Eintrag wird ausgeblendet, sobald die App bereits installiert ist)
+- Folgen Sie einem Link, den Ihre Kirche per SMS, E-Mail oder vom Sonntagsbildschirm teilt
+- Geben Sie die URL direkt in Ihren Browser ein
+
+:::tip Für Kirchenmitarbeiter
+Teilen Sie den Link zur Installationsseite mit Ihrer Gemeinde -- setzen Sie ihn in Ihr Gemeindeblatt, den Newsletter oder auf eine Folie. Er führt jedes Mitglied durch die genauen Schritte für sein Gerät. Sie können sie auch über die Schnellaktion „App herunterladen" auf Ihrem B1Admin-Dashboard erreichen.
+:::
+
+Sie können die PWA auch manuell von jeder Seite auf der B1.church-Website Ihrer Kirche mit den untenstehenden Browser-Schritten installieren -- die Installationsseite ist nur der geführte Weg, dies zu tun.
+
+Wenn Sie die installierte App starten, öffnet sie sich direkt zu Ihrem Mitglieder-Dashboard, bereit für die Anmeldung.
+
+## Installation auf dem iPhone (iOS -- Safari)
+
+1. Öffnen Sie Safari auf Ihrem iPhone und gehen Sie zu `https://yourchurchname.b1.church/mobile/install` (ersetzen Sie `yourchurchname` durch den URL-Slug Ihrer Kirche).
+2. Tippen Sie unten auf dem Bildschirm auf die Schaltfläche „Teilen" (das Kästchen mit einem nach oben zeigenden Pfeil).
+3. Scrollen Sie im Teilen-Menü nach unten und tippen Sie auf „Zum Home-Bildschirm".
+4. Der Name wird standardmäßig auf den Namen Ihrer Kirche gesetzt. Tippen Sie oben rechts auf „Hinzufügen".
+
+Das App-Symbol erscheint auf Ihrem Startbildschirm. Tippen Sie darauf, um das Mitgliederportal im Vollbildmodus zu öffnen.
 
 :::info
-Die Installation von PWA auf iOS erfordert Safari. Wenn Sie auf dem iPhone einen anderen Browser als Chrome verwenden, wechseln Sie zuerst zu Safari.
+Die PWA-Installation unter iOS erfordert Safari. Wenn Sie Chrome oder einen anderen Browser auf dem iPhone verwenden, wechseln Sie zuerst zu Safari.
 :::
 
 ## Installation auf Android (Chrome)
 
-1. Öffnen Sie **Chrome** auf Ihrem Android-Gerät und gehen Sie zu `https://yourchurchname.b1.church`.
-2. Chrome zeigt automatisch ein Banner **„Add to Home screen"** am unteren Rand des Bildschirms an, oder tippen Sie auf das Drei-Punkte-Menü (⋮) in der oberen rechten Ecke und wählen Sie **Add to Home screen**.
-3. Tippen Sie auf **Add**, wenn Sie dazu aufgefordert werden.
+1. Öffnen Sie Chrome auf Ihrem Android-Gerät und gehen Sie zu `https://yourchurchname.b1.church/mobile/install`.
+2. Tippen Sie auf die Schaltfläche „Auf Startbildschirm installieren". (Falls die Schaltfläche nicht verfügbar ist, tippen Sie oben rechts auf das Dreipunkt-Menü (⋮) und wählen Sie „Zum Startbildschirm hinzufügen".)
+3. Tippen Sie bei Aufforderung auf „Hinzufügen".
 
-Das App-Symbol wird auf Ihrem Startbildschirm angezeigt. Tippen Sie darauf, um das Mitgliederkonto zu öffnen.
+Das App-Symbol erscheint auf Ihrem Startbildschirm. Tippen Sie darauf, um das Mitgliederportal zu öffnen.
 
 ## Nach der Installation
 
-Nach der Installation wird die PWA direkt im Mitgliederkonto in einem dedizierten Vollbildfenster geöffnet. Sie können:
+Nach der Installation öffnet sich die PWA direkt in das Mitgliederportal in einem eigenen Vollbildfenster. Sie können:
 
-- Sich mit Ihrem vorhandenen ChurchApps-Konto anmelden
-- Auf alle Mitgliederfunktionen zugreifen, die Ihre Kirche aktiviert hat – Gruppen, Spenden, Check-in, Dienst-Pläne und mehr
-- Jederzeit darauf zugreifen, indem Sie das Symbol auf Ihrem Startbildschirm tippen
+- Sich mit Ihrem bestehenden ChurchApps-Konto anmelden
+- Auf alle von Ihrer Kirche aktivierten Mitgliederfunktionen zugreifen -- Gruppen, Spenden, Check-in, Dienstpläne und mehr
+- Jederzeit dorthin zurückkehren, indem Sie auf das Symbol auf Ihrem Startbildschirm tippen
 
-Das App-Symbol zeigt ein **Benachrichtigungsabzeichen** (ein kleines Nummernabzeichen) an, wenn Sie ungelesene Nachrichten haben, sodass Sie auf einen Blick sehen können, ob etwas Neues auf Sie wartet.
+Das App-Symbol zeigt ein Benachrichtigungsabzeichen (eine kleine Zahlmarke) an, wenn Sie ungelesene Nachrichten haben, sodass Sie auf einen Blick sehen können, ob etwas Neues auf Sie wartet.
 
 :::info
-Die PWA erfordert eine Internetverbindung. Im Gegensatz zu einigen nativen Apps werden nicht alle Inhalte für die Offline-Verwendung zwischengespeichert.
+Die PWA erfordert eine Internetverbindung. Im Gegensatz zu manchen nativen Apps speichert sie nicht alle Inhalte für die Offline-Nutzung zwischen.
 :::
 
-## Was ist mit der alten B1 Mobile App?
+## Was ist mit der alten B1-Mobile-App?
 
-Die ältere native **B1 Mobile**-App auf iOS und Android wurde eingestellt und wird nicht mehr aktualisiert. Die PWA ist die unterstützte Möglichkeit, um auf das B1.church-Mitgliederkonto auf einem Telefon zuzugreifen, und sie umfasst jede Mitgliederfunktion, die die native App angeboten hat. Wenn Sie die native App zuvor installiert haben, wechseln Sie zu Ihrer Bequemlichkeit zur PWA.
+Die veraltete native B1-Mobile-App auf iOS und Android wurde eingestellt und wird nicht mehr aktualisiert. Die PWA ist der unterstützte Weg, um künftig auf das B1.church-Mitgliederportal auf einem Telefon zuzugreifen, und deckt jede mitgliederorientierte Funktion ab, die die native App bot. Wenn Sie zuvor die native App installiert haben, wechseln Sie bei Gelegenheit zur PWA.
 
-Weitere Informationen finden Sie auf der [B1 Mobile-Referenzseite](/docs/b1-mobile/).
+Siehe die B1-Mobile-Referenzseite für historische Dokumentation zur eingestellten App.
 
-## Zugehörige Artikel
+## Verwandte Artikel
 
-- [Logging In](./logging-in.md) – So melden Sie sich bei Ihrem B1.church-Konto an
+- Anmelden -- Wie Sie sich bei Ihrem B1.church-Konto anmelden

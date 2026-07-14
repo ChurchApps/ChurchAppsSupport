@@ -1,69 +1,69 @@
----
-title: "Auschecken & Kindersicherheit"
+﻿---
+title: "Abholen & Kindersicherheit"
 ---
 
-# Auschecken & Kindersicherheit
+# Abholen & Kindersicherheit
 
 <div class="article-intro">
 
-Der Auschecken schließt den Kreis beim Kindergarten-Check-in: Ein Elternteil präsentiert den Sicherheitscode auf ihrem Abholungs-Etikett, der Kiosk überprüft wer abholt, und die Kinder werden ausgecheckt. Bemannte Stationen erhalten auch Sicherheitstools — Überprüfung vertrauenswürdiger Abhol-Personen, Text-Benachrichtigungen für Eltern, Neudrucke von Sicherheitsetiketten und Notfall-Broadcast.
+Check-out schließt die Schleife beim Kinder-Check-in: Ein Elternteil präsentiert den Sicherheitscode auf seinem Abhol-Label, der Kiosk überprüft, wer abholt, und die Kinder werden ausgecheckt. Bemannte Stationen erhalten auch Sicherheitstools -- Überprüfung vertrauenswürdiger Abholpersonen, Page-a-Parent-Texte, Sicherheits-Label-Neudrucke und Notfall-Broadcast.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Der Auschecken ist auf Stationen verfügbar, die in den Kiosk-Admin-Einstellungen auf **bemannt** eingestellt sind
-- Kinder müssen [eingecheckt werden](./completing-checkin) mit einem gedruckten Abholungs-Etikett, das den Sicherheitscode trägt
-- Benachrichtigungen und Notfall-Broadcast erfordern, dass Ihre Gemeinde einen Texting-Anbieter mit B1 Admin verbunden hat
+- Check-out ist auf Stationen verfügbar, die in den Kiosk-Admin-Einstellungen auf den **bemannten** Modus eingestellt sind
+- Kinder müssen mit einem gedruckten Abhol-Label mit dem Sicherheitscode [eingecheckt](./completing-checkin) worden sein
+- Paging und Notfall-Broadcasts erfordern, dass Ihre Kirche einen Texting-Anbieter in B1 Admin verbunden hat
 
 </div>
 
-## Auschecken starten
+## Einen Check-Out starten
 
-1. Tippen Sie auf einer bemannten Station auf **Auschecken** auf dem Recherche-Bildschirm.
-2. Geben Sie den 4-stelligen **Sicherheitscode** von dem Abholungs-Etikett der Familie ein. Sie können ihn eingeben, die Tastatur auf dem Bildschirm verwenden oder den Barcode des Etiketts mit einem USB- oder Bluetooth-Scanner scannen — der Code wird automatisch übermittelt, sobald alle 4 Zeichen eingegeben sind.
-3. Der Kiosk zeigt die Kinder, die unter diesem Code eingecheckt sind.
+1. Tippen Sie auf einer bemannten Station auf dem Lookup-Bildschirm auf **Abholen**.
+2. Geben Sie den **Sicherheitscode** (4 Zeichen) vom Abholp-Label der Familie ein. Sie können ihn eingeben, die auf dem Bildschirm angezeigte Tastatur verwenden oder das Barcode-Label des Labels mit einem USB- oder Bluetooth-Scanner scannen – der Code wird automatisch übermittelt, sobald alle 4 Zeichen eingegeben sind.
+3. Der Kiosk zeigt die unter diesem Code eingecheckten Kinder an.
 
-## Überprüfung wer abholt
+## Überprüfung, wer abholt
 
-Der Auschecken-Bildschirm fragt, wer die Kinder abholt:
+Der Check-out-Bildschirm fragt, wer die Kinder abholt:
 
-- **Vertrauenswürdige Abhol-Personen** für den Haushalt erscheinen als tippbare Karten mit ihrem Foto und ihrer Beziehung — tippen Sie auf die Person, die vor Ihnen steht.
-- **Haushalts-Erwachsene** erscheinen auch in einem Foto-Raster.
+- **Vertrauenswürdige Abholpersonen** für den Haushalt erscheinen als anklickbare Karten mit ihrem Foto und ihrer Beziehung – tippen Sie auf die Person vor Ihnen.
+- **Haushaltserwachsene** erscheinen auch in einem Fotogitter.
 - **Andere** ermöglicht es Ihnen, einen Namen für jemanden einzugeben, der nicht auf der Liste steht.
 
-Wenn ein eingegebener Name jemanden entspricht, der als **Nicht autorisiert** für diesen Haushalt markiert ist, blockiert der Kiosk den Auschecken mit einer Warnung. Ein Mitarbeiter kann **Überschreiben** auswählen, um trotzdem fortzufahren — die Überschreibung wird im Anwesenheitsdatensatz mit dem Namen der Person aufgezeichnet.
+Falls ein eingegebener Name mit jemandem übereinstimmt, der für diesen Haushalt als **Nicht autorisiert** markiert ist, blockiert der Kiosk den Check-out mit einer Warnung. Ein Mitarbeiter kann **Außerkraft setzen** wählen, um trotzdem fortzufahren – die Außerkraftsetzung wird im Anwesenheitsdatensatz mit dem Namen der Person vermerkt.
 
-Sobald die Abhol-Person bestätigt ist, tippen Sie auf Auschecken. Der Name der Abhol-Person wird im Anwesenheitsdatensatz gespeichert.
+Sobald die abholende Person bestätigt ist, tippen Sie auf abholen. Der Name der Abholperson wird mit dem Anwesenheitsdatensatz gespeichert.
 
 :::info
-Vertrauenswürdige und nicht autorisierte Abhol-Personen werden von Kirchenmitarbeitern auf der Seite jeder Person in B1 Admin verwaltet — siehe [Check-In-Sicherheit](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+Vertrauenswürdige und nicht autorisierte Abholpersonen werden von Kirchenmitarbeitern auf der Seite jeder Person in B1 Admin verwaltet – siehe [Check-in-Sicherheit](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
 :::
 
-## Benachrichtigung für Eltern
+## Ein Elternteil anrufen
 
-Brauchen Sie einen Elternteil während des Gottesdienstes — eine Windelwechsel, ein weinendes Kind? Von dem Auschecken-Bildschirm einer bemannten Station können Mitarbeiter eine **Benachrichtigung** senden: Eine Textnachricht an die Eltern oder Erziehungsberechtigten des Kindes über den Texting-Anbieter der Gemeinde. Eltern, die sich von Texten abgemeldet haben oder keine Mobiltelefonnummer haben, werden übersprungen, und der Kiosk zeigt, wie viele Nachrichten gesendet wurden.
+Benötigen Sie einen Elternteil während des Gottesdienstes – eine Windelwechsel, ein weinendes Kind? Von der Check-out-Bildschirm auf einer bemannten Station können Mitarbeiter einen **Page** senden: eine Textnachricht an die Eltern oder Erziehungsberechtigten eines eingecheckten Kindes über den Texting-Anbieter der Kirche. Eltern, die sich von Texten abgemeldet haben oder keine Mobilnummer haben, werden übersprungen, und der Kiosk zeigt, wie viele Nachrichten gesendet wurden.
 
-## Neudrucken von Etiketten
+## Labels erneut drucken
 
-Wenn ein Namensschild oder Abholungs-Etikett verloren geht oder beschädigt wird, können Mitarbeiter auf einer bemannten Station die Etiketten der Familie vom Auschecken-Bildschirm nach Eingabe des Sicherheitscodes **neu drucken**. Der Neudruck verwendet dieselbe Drucker und Etikett-Vorlagen wie der ursprüngliche Check-in.
+Falls ein Namensschildabels oder Abhol-Label verloren oder beschädigt ist, können Mitarbeiter auf einer bemannten Station die **Neudruck**-Labels der Familie vom Check-out-Bildschirm nach Eingabe des Sicherheitscodes.  Der Neudruck verwendet die gleiche Drucker und Label-Vorlagen wie das ursprüngliche Check-in.
 
 ## Notfall-Broadcast
 
-In einem Notfall können Mitarbeiter die Erziehungsberechtigten von **jedem eingecheckten Kind** zum aktuellen Gottesdienst auf einmal benachrichtigen:
+Im Notfall können Mitarbeiter die Erziehungsberechtigten von **jedem eingecheckten Kind** für den aktuellen Dienst auf einmal per SMS kontaktieren:
 
 1. Öffnen Sie die Kiosk-**Admin-Einstellungen** (7 schnelle Taps auf das Header-Logo, plus die PIN, falls eine eingestellt ist).
 2. Tippen Sie auf **Notfall-Broadcast**.
-3. Geben Sie die Nachricht ein, dann geben Sie **EMERGENCY** in das Bestätigungs-Feld ein — die **Broadcast senden**-Schaltfläche bleibt deaktiviert, bis Sie das tun.
-4. Der Kiosk zeigt, wie viele Telefone die Nachricht empfangen haben und wie viele Personen übersprungen wurden (abgemeldet oder keine Mobiltelefonnummer).
+3. Geben Sie die Nachricht ein, dann geben Sie **NOTFALL** im Bestätigungsfeld ein – die Schaltfläche **Broadcast senden** bleibt deaktiviert, bis Sie dies tun.
+4. Der Kiosk meldet, wie viele Telefone die Nachricht erhielten und wie viele Personen übersprungen wurden (abgemeldet oder keine Mobilnummer).
 
 :::warning
-Der Broadcast geht an jeden eingecheckten Haushalt zum ausgewählten Gottesdienst. Verwenden Sie ihn für echte Notfälle — Evakuierungen, Sperrungen, starkes Wetter.
+Der Broadcast geht an jeden eingecheckten Haushalt für den ausgewählten Dienst. Verwenden Sie ihn für echte Notfälle – Evakuierungen, Lockdowns, schweres Wetter.
 :::
 
 ## Verwandte Artikel
 
-- [Check-In abschließen](./completing-checkin) — woher Sicherheitscodes und Abholungs-Etiketten kommen
-- [Check-In-Sicherheit](../../b1-admin/attendance/checkin-safety) — Kapazität, Quote, Abhol-Personen und die Texting-Anbieter-Anforderung konfigurieren
-- [Drucker-Einrichtung](../getting-started/printer-setup) — Etiketten-Drucker-Konfiguration
+- [Check-In abschließen](./completing-checkin) -- wo Sicherheitscodes und Abhol-Labels herkommen
+- [Check-in-Sicherheit](../../b1-admin/attendance/checkin-safety) -- Konfiguration von Kapazitäten, Verhältnissen, Abholpersonen und der Texting-Anbieter-Anforderung
+- [Drucker-Setup](../getting-started/printer-setup) -- Drucker-Konfiguration für Drucker

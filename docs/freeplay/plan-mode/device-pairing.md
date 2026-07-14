@@ -30,12 +30,16 @@ The code is displayed as individual characters for easy reading from across the 
 
 ## Entering the Code in B1 Admin
 
-1. On a computer or phone, open **B1 Admin** for your church
-2. Navigate to the **Plan Type** settings for the plan you want to assign
-3. Enter the pairing code shown on the TV
-4. Save the settings
+1. On a computer or phone, go to the address shown below the code on the TV (or scan the on-screen QR code) — this opens the **Authorize Device** page in B1 Admin
+2. Enter the pairing code if it wasn't already filled in from the QR code
+3. Under **Show Plans For**, choose the plan type you want this screen to follow (for example, "Sunday Service"). Leave it set to **None** if you only want the screen available for browsing content or notifications, with no plan tied to it
+4. Approve the device
 
 FreePlay polls the server every few seconds, checking whether the pairing is complete. Once **B1 Admin** confirms the connection, the TV automatically moves to the plan download screen.
+
+:::tip
+Devices can also be paired from **Profile → Devices → Add Device** in B1 Admin using the same code — it offers the same **Show Plans For** plan type picker.
+:::
 
 ## Downloading Plan Content
 

@@ -1,8 +1,8 @@
 ---
-title: "Búsqueda de personas"
+title: "Búsqueda de Personas"
 ---
 
-# Búsqueda de personas
+# Búsqueda de Personas
 
 <div class="article-intro">
 
@@ -13,12 +13,12 @@ La página **Personas** muestra tu directorio de iglesia en una tabla buscable y
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Necesitas una cuenta activa de B1 Admin con permiso para ver personas. Consulta [Roles y permisos](roles-permissions.md) si no estás seguro sobre tu nivel de acceso.
-- Tu directorio de iglesia debe tener personas. Si no has agregado a nadie todavía, consulta [Agregar personas](adding-people.md) o [Importar datos](importing-data.md).
+- Necesitas una cuenta activa de B1 Admin con permiso para ver personas. Consulta [Roles y Permisos](roles-permissions.md) si no estás seguro sobre tu nivel de acceso.
+- Tu directorio de iglesia debe tener personas. Si no has agregado a nadie todavía, consulta [Agregar Personas](adding-people.md) o [Importar Datos](importing-data.md).
 
 </div>
 
-## Búsqueda rápida
+## Búsqueda Rápida
 
 El cuadro de búsqueda en la parte superior de la página Personas te permite encontrar miembros en tiempo real:
 
@@ -51,10 +51,10 @@ No todas las piezas de información necesitan ser visibles a la vez. Puedes eleg
    - **Correo**
    - **Teléfono**
    - **Dirección**
-   - **Fecha de nacimiento**
+   - **Fecha de Nacimiento**
    - **Edad**
    - **Género**
-   - **Estado de membresía**
+   - **Estado de Membresía**
    - **Sede**
 3. La tabla se actualiza inmediatamente para reflejar tus selecciones.
 
@@ -79,18 +79,18 @@ Puedes descargar tus resultados de búsqueda actuales como un archivo CSV en cua
 3. Haz clic en el botón **Exportar**.
 4. Un archivo CSV se descargará a tu computadora, listo para abrir en Excel, Google Sheets, o cualquier aplicación de hoja de cálculo.
 
-Para más detalles sobre exportación, consulta [Exportar datos](./exporting-data.md).
+Para más detalles sobre exportación, consulta [Exportar Datos](./exporting-data.md).
 
 :::tip
-Para consultas más avanzadas -- como encontrar a todos los que no han asistido en los últimos tres meses -- prueba la característica [Búsqueda AI](./ai-search.md), que te permite buscar usando preguntas en lenguaje natural.
+Para consultas más avanzadas -- como encontrar a todos los que no han asistido en los últimos tres meses -- prueba la característica [Búsqueda IA](./ai-search.md), que te permite buscar usando preguntas en lenguaje natural.
 :::
 
-## Búsqueda avanzada
+## Búsqueda Avanzada
 
-Búsqueda avanzada te permite construir filtros precisos combinando condiciones. Ábrela desde la página Personas, luego expande una categoría y marca los campos sobre los que deseas filtrar, eligiendo un operador y valor para cada uno. Las categorías incluyen **Nombres**, **Demografía**, **Contacto**, **Membresía**, **Actividad** (donaciones y asistencia), y **Campos personalizados**.
+Búsqueda Avanzada te permite construir filtros precisos combinando condiciones. Ábrela desde la página Personas, luego expande una categoría y marca los campos sobre los que deseas filtrar, eligiendo un operador y valor para cada uno. Las categorías incluyen **Nombres**, **Demografía**, **Contacto**, **Membresía**, **Actividad** (donaciones y asistencia), y **Campos Personalizados**.
 
-La categoría **Campos personalizados** lista los [Campos personalizados](../settings/custom-fields.md) de tu iglesia -- los campos que defines en Configuración para rastrear tu propia información (como una fecha de expiración de verificación de antecedentes). Los operadores ofrecidos coinciden con el tipo de cada campo: campos de texto soportan *contiene / es igual a / comienza con / termina con*, campos de número soportan los operadores de comparación, campos de fecha soportan *es igual a / después / antes*, y campos Sí/No y opción múltiple te permiten elegir un valor. Cualquier campo sobre el que puedas filtrar aquí puede ser guardado como una [Lista](./lists.md) en vivo.
+La categoría **Campos Personalizados** lista los [Campos Personalizados](../settings/custom-fields.md) de tu iglesia -- los campos que defines en Configuración para rastrear tu propia información (como una fecha de expiración de verificación de antecedentes). Los operadores ofrecidos coinciden con el tipo de cada campo: campos de texto soportan *contiene / es igual a / comienza con / termina con*, campos de número soportan los operadores de comparación, campos de fecha soportan *es igual a / después / antes*, y campos Sí/No y opción múltiple te permiten elegir un valor. Cualquier campo sobre el que puedas filtrar aquí puede ser guardado como una [Lista](./lists.md) en vivo.
 
 ## Guardar búsquedas como listas
 
-Después de ejecutar una búsqueda, aparece un botón **Guardar como lista** (icono de marcador) en el encabezado de la página Personas. Haz clic en él para guardar tu consulta actual bajo un nombre y categoría opcional, para que puedas recargarlo instantáneamente en futuras sesiones. Consulta [Listas guardadas](./lists.md) para detalles completos.
+Después de ejecutar una búsqueda, aparece un botón **Guardar como Lista** (icono de marcador) en el encabezado de la página Personas. Haz clic en él para guardar tu consulta actual bajo un nombre y categoría opcional, para que puedas recargarlo instantáneamente en futuras sesiones. Consulta [Listas Guardadas](./lists.md) para detalles completos.

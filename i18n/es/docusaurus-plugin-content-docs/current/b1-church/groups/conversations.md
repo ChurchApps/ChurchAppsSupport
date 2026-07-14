@@ -1,12 +1,12 @@
 ---
-title: "Conversaciones de grupos"
+title: "Conversaciones de Grupos"
 ---
 
-# Conversaciones de grupos
+# Conversaciones de Grupos
 
 <div class="article-intro">
 
-La ficha Conversaciones en tu página de grupo es un espacio donde los miembros del grupo pueden publicar mensajes e interactuar entre sí. Usa conversaciones para discutir temas, compartir actualizaciones y mantener la conexión con tu grupo entre reuniones.
+La pestaña Conversations en tu página de grupo es un espacio donde los miembros del grupo pueden publicar mensajes e interactuar entre sí. Usa conversaciones para discutir temas, compartir actualizaciones, y mantener la conexión con tu grupo entre reuniones.
 
 </div>
 
@@ -14,66 +14,66 @@ La ficha Conversaciones en tu página de grupo es un espacio donde los miembros 
 <h4>Antes de comenzar</h4>
 
 - Debes estar [conectado](../getting-started/logging-in.md) en tu cuenta B1.church.
-- Debes ser miembro del grupo para acceder a la ficha Conversaciones. Ve [Detalles del grupo](./group-details.md) para cómo unirse a un grupo.
+- Debes ser miembro del grupo para acceder a la pestaña Conversations. Consulta [Detalles del Grupo](./group-details.md) para cómo unirse a un grupo.
 
 </div>
 
-## Acceder a conversaciones
+## Acceder a Conversaciones
 
 1. Navega a la página de detalles del grupo haciendo clic en un grupo desde la [página de grupos](./browsing-groups.md).
 2. Asegúrate de estar conectado.
-3. Haz clic en la ficha **Conversaciones** en la barra lateral.
+3. Haz clic en la pestaña **Conversations** en la barra lateral.
 
-## Discusiones y anuncios
+## Discusiones y Anuncios
 
-La ficha Conversaciones puede mostrar dos subfichas:
+La pestaña Conversations puede mostrar dos subpestañas:
 
-- **Discusiones** -- Un espacio donde cualquier miembro del grupo puede publicar mensajes y responder a otros. Esta es la vista predeterminada y siempre está disponible.
-- **Anuncios** -- Mensajes publicados por líderes de grupo que son importantes para que todos los miembros los vean. Los miembros regulares pueden leer anuncios pero solo los líderes pueden crearlos.
+- **Discussions** -- Un espacio donde cualquier miembro del grupo puede publicar mensajes y responder a otros. Esta es la vista predeterminada y siempre está disponible.
+- **Announcements** -- Mensajes publicados por líderes de grupo que son importantes para que todos los miembros los vean. Los miembros regulares pueden leer anuncios pero solo los líderes pueden crearlos.
 
-Si no hay anuncios y no eres un líder, solo verás la vista de Discusiones sin la barra de pestañas.
+Si no hay anuncios y no eres un líder, solo verás la vista de Discussions sin la barra de pestañas.
 
-## Publicar un mensaje
+## Publicar un Mensaje
 
-1. Abre la ficha **Conversaciones** en tu página de grupo.
-2. Asegúrate de estar en la subficha **Discusiones** (si la barra de pestañas es visible).
+1. Abre la pestaña **Conversations** en tu página de grupo.
+2. Asegúrate de estar en la subpestaña **Discussions** (si la barra de pestañas es visible).
 3. Escribe tu mensaje en el campo de texto.
 4. Envía tu mensaje para compartirlo con el grupo.
 
 Tu mensaje será visible para todos los miembros del grupo.
 
-## Editar o eliminar tus mensajes
+## Editar o Eliminar tus Mensajes
 
 Puedes editar o eliminar cualquier mensaje que hayas publicado:
 
 1. Pasa el cursor sobre tu mensaje (o tócalo en móvil) para revelar el botón **más opciones** (⋮).
 2. Haz clic en el botón para abrir el menú de mensajes.
-3. Elige **Editar** para modificar el texto del mensaje, o **Eliminar** para quitarlo.
+3. Elige **Edit** para modificar el texto del mensaje, o **Delete** para quitarlo.
    - Al editar, el texto del mensaje se carga de nuevo en el campo de entrada. Realiza tus cambios y envía para guardarlos.
-   - Al eliminar, aparece un diálogo de confirmación. Haz clic en **Confirmar** para eliminar permanentemente el mensaje.
+   - Al eliminar, aparece un diálogo de confirmación. Haz clic en **Confirm** para eliminar permanentemente el mensaje.
 
 :::info
 Solo puedes editar o eliminar tus propios mensajes. Los mensajes publicados por otros miembros no muestran las opciones de editar/eliminar.
 :::
 
-## Reaccionar a mensajes
+## Reaccionar a Mensajes
 
 En el chat grupal, puedes reaccionar a cualquier mensaje con un emoji:
 
-1. Toca o pasa el cursor sobre un mensaje y elige **Agregar reacción**.
+1. Toca o pasa el cursor sobre un mensaje y elige **Add reaction**.
 2. Elige uno de los seis emojis: 👍 ❤️ 😂 🎉 🙏 😮.
 
-Las reacciones aparecen como fichas pequeñas debajo del mensaje con un recuento de cuántas personas usaron cada una. Tu propia reacción se resalta: toca la ficha (o elige el mismo emoji de nuevo) para quitarla, o elige un emoji diferente para agregar otro. Las reacciones se muestran en vivo para todos en el chat.
+Las reacciones aparecen como fichas pequeñas debajo del mensaje con un recuento de cuántas personas usaron cada una. Tu propia reacción se resalta -- toca la ficha (o elige el mismo emoji de nuevo) para quitarla, o elige un emoji diferente para agregar otro. Las reacciones se muestran en vivo para todos en el chat.
 
 :::tip
-Las conversaciones de grupo también aparecen en tu [Cronología](../community/timeline.md), por lo que puedes mantenerte actualizado con las discusiones sin visitar cada grupo individualmente.
+Las conversaciones de grupo también aparecen en tu [Timeline](../community/timeline.md), por lo que puedes mantenerte actualizado con las discusiones sin visitar cada grupo individualmente.
 :::
 
-## Características de líder
+## Características de Líder
 
-Si eres un líder de grupo, tienes capacidades adicionales en la ficha Conversaciones:
+Si eres un líder de grupo, tienes capacidades adicionales en la pestaña Conversations:
 
-- **Publicar anuncios** -- Cambia a la subficha **Anuncios** y publica mensajes que todos los miembros del grupo puedan leer.
+- **Publicar anuncios** -- Cambia a la subpestaña **Announcements** y publica mensajes que todos los miembros del grupo puedan leer.
 - **Publicar discusiones** -- También puedes participar en discusiones regulares como cualquier otro miembro.
 
 :::info

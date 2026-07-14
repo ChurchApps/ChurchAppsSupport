@@ -1,109 +1,90 @@
----
-title: "Self-Hosting auf Railway"
+﻿---
+title: "Selbst-Hosting auf Railway"
 ---
 
-# Self-Hosting auf Railway
+# Selbst-Hosting auf Railway
 
 <div class="article-intro">
 
-ChurchApps veröffentlicht eine Ein-Klick-[Railway](https://railway.com)-Vorlage, die Ihrer Kirche ihre eigene private Instanz von B1 Admin, dem B1-Mitgliederportal, der API und einer MySQL-Datenbank gibt -- alles auf einer Infrastruktur, die Sie besitzen und direkt bezahlen.
+ChurchApps veröffentlicht ein Ein-Klick-[Railway](https://railway.com)-Template, das Ihrer Kirche ihre eigene private Instanz von B1 Admin, das B1 Mitglied-Portal, die API und eine MySQL-Datenbank gibt — alles läuft auf einer Infrastruktur, die Sie besitzen und direkt bezahlen. Dieser Guide bringt Sie in etwa 15 Minuten ans Netz und führt Sie dann durch die Post-Deploy-Konfiguration, die die meisten Kirchen eventuell möchten.
 
 </div>
 
 ## Quick Start
 
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/b1-template)
+1. Klicken Sie auf die Deploy on Railway Schaltfläche.
+2. Melden Sie sich bei Railway an (oder erstellen Sie ein kostenloses Konto) und fügen Sie eine Zahlungsweise hinzu.
+3. Klicken Sie auf Deploy ohne etwas zu ändern — jede Variable hat einen vernünftigen Standard.
+4. Warten Sie 5–10 Minuten, bis alle vier Services grün werden.
+5. Öffnen Sie die B1Admin Service-URL, klicken Sie auf Register und erstellen Sie Ihr Konto.
+6. Folgen Sie den In-App-Eingabeaufforderungen, um Ihre erste Kirche zu erstellen.
 
-1. Klicken Sie auf die **Deploy on Railway**-Schaltfläche oben.
-2. Melden Sie sich bei Railway an (oder erstellen Sie ein kostenloses Konto) und fügen Sie eine Zahlungsmethode hinzu.
-3. Klicken Sie auf **Deploy**, ohne etwas zu ändern.
-4. Warten Sie 5–10 Minuten, bis die vier Services grün werden.
-5. Öffnen Sie die **B1Admin**-Service-URL, klicken Sie auf **Registrieren** und erstellen Sie Ihr Konto.
-6. Folgen Sie den In-App-Aufforderungen, um Ihre erste Kirche zu erstellen.
+Das ist alles. Sie haben nun eine vollständig funktionsfähige ChurchApps-Instanz.
 
-Das ist es. Sie haben jetzt eine vollständig funktionierende ChurchApps-Instanz.
+:::tip
+Die Bereitstellung ist derzeit in Beta. Wenn Sie etwas treffen, das die Docs nicht abdecken, öffnen Sie bitte einen Issue unter github.com/ChurchApps/Api/issues
+:::
 
 <div class="prereqs">
-<h4>Was Sie benötigen</h4>
+<h4>Was Sie brauchen</h4>
 
-- Ein kostenlos [Railway](https://railway.com)-Konto
-- Eine Kreditkarte bei Railway (~$15–25/Monat)
-- Etwa 15 Minuten für die erste Bereitstellung
+- Ein kostenloses Railway-Konto
+- Eine Kreditkarte bei Railway (etwa 15-25 USD/Monat für eine kleine Gemeinde)
+- Etwa 15 Minuten für die anfängliche Bereitstellung
 
 </div>
 
-## What Gets Deployed
+## Was wird bereitgestellt
 
-Die Vorlage stellt vier Services in einem einzigen Railway-Projekt bereit:
+Das Template stellt vier Services in einem Railway-Projekt bereit.
 
-| Service | Zweck |
-|---------|-------|
-| **MySQL** | Speichert alle Daten |
-| **Api** | Backend für Mitgliedschaft, Inhalte, Geben, Teilnahme |
-| **B1Admin** | Personal-/Admin-Web-App |
-| **B1App** | Mitgliedsorientiierte Web-App |
+## Erste-Zeit-Konfiguration
 
-## Erstkonfiguration
+Jetzt, da Sie oben sind, hier sind die Dinge, die die meisten Kirchen dann einrichten.
 
-### 1. E-Mail (Sehr empfohlen)
+### 1. E-Mail (Empfohlen)
 
-Ohne E-Mail können sich Mitglieder nicht vergessene Passwörter zurücksetzen.
+Ohne E-Mail können Mitglieder sich registrieren, aber keine Passwörter zurücksetzen.
 
-Im Railway-Dashboard, öffnen Sie die **Api**-Service → **Variables**, und fügen Sie hinzu:
+### 2. Benutzerdefinierte Domänen
 
-```
-MAIL_SYSTEM=SMTP
-SMTP_HOST=<your provider host>
-SMTP_USER=<your username>
-SMTP_PASS=<your password>
-SMTP_SECURE=false
-SUPPORT_EMAIL=noreply@yourchurch.org
-```
+Die Standard-URLs funktionieren, aber die meisten Kirchen möchten ihre eigenen.
 
-### 2. Benutzerdefinierte Domains
+### 3. Multi-Site (Mehrere Kirchen)
 
-Für jeden Web-Service (B1Admin und B1App):
+ChurchApps ist Multi-Tenant nach Design.
 
-1. Öffnen Sie den Service in Railway → **Settings** → **Networking**.
-2. Klicken Sie auf **+ Custom Domain**.
+### 4. Online-Spenden
 
-### 3. Multi-Site (Multiple Kirchen auf einer Instanz)
-
-ChurchApps ist Multi-Tenant von Design.
-
-### 4. Online-Geben (Stripe / PayPal)
-
-Geben ist per-Kirche innerhalb der Admin-UI konfiguriert.
+Spenden werden pro-Kirche in der Admin UI konfiguriert.
 
 ### 5. Dateispeicherung
 
-Die Vorlage stellt ein **1 GB persistentes Volumen** bereit.
+Das Template stellt 1 GB persistentes Volume bereit.
 
-### 6. Optionale Feature-Integrationen
+### 6. Optionale Funktions-Integrationen
 
-Diese entsperren spezifische Features.
+Diese entsperren spezifische Funktionen.
 
-## Updating
+## Kosten
 
-Jeder Service ist mit seinem jeweiligen GitHub-Repo verlinkt.
+Real-World-Bereiche für eine kleine Kirche:
 
-## Costs
+- Railway Base: $5
+- MySQL Plugin: $5 + $1 Speicher
+- 3 Web-Services: $3-10
+- 1 GB Volume: $0.25
+- Total: $15-25/Monat
 
-Realistische Bereiche für eine kleine Kirche:
+## Problembehandlung
 
-| Komponente | Ungefähre monatliche Kosten |
-|-----------|--------|
-| Railway-Basis | $5 |
-| MySQL-Plugin | $5 |
-| 3 Web-Services | $3–10 |
-| 1 GB Volume | $0.25 |
-| **Gesamt** | **~$15–25/Monat** |
+Verschiedene Probleme und Lösungen sind verfügbar.
 
-## Troubleshooting
+## Verwandte Artikel
 
-| Symptom | Wahrscheinliche Ursache |
-|---------|--------|
-| Build schlägt mit `EBUSY` fehl | Nixpacks-Cache-Konflikt |
-| Build schlägt auf B1Admin fehl | Nicht synchronisierte `package-lock.json` |
-| Api-Deploy hängt fest | Healthcheck schlägt fehl |
-| B1Admin zeigt "überprüfen Sie Ihre E-Mail" | `MAIL_SYSTEM=SMTP` mit falschen Anmeldedaten |
+- Selbst-Hosting mit Docker
+- Anfängliches Setup
+- Website Setup
+- Spenden-Einstellungen
+- Lokales API Setup
+- API Bereitstellung (AWS)

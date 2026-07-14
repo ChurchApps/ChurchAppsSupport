@@ -31,7 +31,7 @@ The official B1.church app on Zapier lets a Zap react to events in your church (
 | **Action** | Create Person | adds a new person |
 | **Action** | Add Donation | records a donation |
 | **Action** | Add Group Member | adds a person to a group |
-| **Search** | Find Person | looks up a person by name or email |
+| **Search** | Find Person | looks up a person by id, email, or name |
 
 Combine these freely with any of Zapier's 7,000+ supported apps.
 

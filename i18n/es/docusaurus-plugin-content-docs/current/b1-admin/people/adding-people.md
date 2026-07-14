@@ -1,8 +1,8 @@
 ---
-title: "Agregar personas"
+title: "Agregar Personas"
 ---
 
-# Agregar personas
+# Agregar Personas
 
 <div class="article-intro">
 
@@ -13,7 +13,7 @@ La sección de Personas es la base de B1 Admin -- es la base de datos de miembro
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Necesitas una cuenta activa de B1 Admin con permiso para gestionar personas. Consulta [Roles y permisos](roles-permissions.md) si no estás seguro sobre tu nivel de acceso.
+- Necesitas una cuenta activa de B1 Admin con permiso para gestionar personas. Consulta [Roles y Permisos](roles-permissions.md) si no estás seguro sobre tu nivel de acceso.
 - Si estás agregando más que un puñado de personas, considera usar la herramienta [Importación CSV](importing-data.md) en lugar.
 
 </div>
@@ -22,13 +22,13 @@ La sección de Personas es la base de B1 Admin -- es la base de datos de miembro
 
 1. Navega al panel de B1 Admin.
 2. Haz clic en **Personas** en la barra lateral izquierda.
-3. Haz clic en el botón **Agregar persona** en la esquina superior derecha.
+3. Haz clic en el botón **Agregar Persona** en la esquina superior derecha.
 4. Completa el nombre, apellido y dirección de correo de la persona, luego haz clic en **Agregar**.
 
 Se abrirá la página de perfil de la persona, lista para que agregues más detalles.
 
 :::tip
-Si estás migrando desde otro sistema de gestión de iglesia, la característica [Importar datos](importing-data.md) te permite traer todo tu directorio desde un archivo CSV -- mucho más rápido que agregar personas una por una.
+Si estás migrando desde otro sistema de gestión de iglesia, la característica [Importar Datos](importing-data.md) te permite traer todo tu directorio desde un archivo CSV -- mucho más rápido que agregar personas una por una.
 :::
 
 ## Editar detalles
@@ -46,18 +46,18 @@ El perfil también incluye varias pestañas para información relacionada:
 
 ## Trabajar con formularios
 
-Puedes rellenar formularios personalizados directamente desde el perfil de una persona. Estos son formularios definidos por el usuario que puedes construir siguiendo la guía [Crear formularios](../forms/creating-forms.md).
+Puedes rellenar formularios personalizados directamente desde el perfil de una persona. Estos son formularios definidos por el usuario que puedes construir siguiendo la guía [Crear Formularios](../forms/creating-forms.md).
 
 1. En el perfil de la persona, haz clic en el menú desplegable **Formularios** para seleccionar un formulario.
-2. Haz clic en **Agregar formulario** para abrirlo.
+2. Haz clic en **Agregar Formulario** para abrirlo.
 3. Completa los detalles del formulario y haz clic en **Guardar**.
 
 :::info
-Los formularios vinculados al perfil de una persona usan el tipo de formulario **Personas**. Si necesitas un formulario independiente (como un registro de evento), consulta la opción [Formulario independiente](../forms/creating-forms.md) en la guía de formularios.
+Los formularios vinculados al perfil de una persona usan el tipo de formulario **Personas**. Si necesitas un formulario independiente (como un registro de evento), consulta la opción [Formulario Independiente](../forms/creating-forms.md) en la guía de formularios.
 :::
 
 :::tip
-Si solo necesitas rastrear una o dos piezas adicionales de información en personas -- una fecha, un número, una respuesta sí/no -- usa [Campos personalizados](../settings/custom-fields.md) en lugar de un formulario. Son más rápidos de rellenar y se pueden buscar directamente en Búsqueda avanzada.
+Si solo necesitas rastrear una o dos piezas adicionales de información en personas -- una fecha, un número, una respuesta sí/no -- usa [Campos Personalizados](../settings/custom-fields.md) en lugar de un formulario. Son más rápidos de rellenar y se pueden buscar directamente en Búsqueda Avanzada.
 :::
 
 ## Gestionar hogares

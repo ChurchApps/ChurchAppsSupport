@@ -6,7 +6,7 @@ title: "Zapier"
 
 <div class="article-intro">
 
-La aplicación oficial de B1.church en Zapier te permite que un Zap reaccione a eventos en tu iglesia (nueva persona, nueva donación, nuevo miembro del grupo, ...) y escriba registros de vuelta a B1. Sin codificación, sin infraestructura — simplemente conéctalo en el editor de arrastrar y soltar de Zapier, pega una clave API, y activa el Zap.
+La aplicación oficial de B1 Church en Zapier te permite que un Zap reaccione a eventos en tu iglesia (nueva persona, nueva donación, nuevo miembro del grupo, ...) y escriba registros de vuelta a B1. Sin codificación, sin infraestructura — simplemente conéctalo en el editor de arrastrar y soltar de Zapier, pega una clave API, y activa el Zap.
 
 </div>
 
@@ -14,14 +14,14 @@ La aplicación oficial de B1.church en Zapier te permite que un Zap reaccione a 
 <h4>Antes de Comenzar</h4>
 
 - Una cuenta en [Zapier](https://zapier.com) (la versión gratuita es suficiente para algunos Zaps)
-- Un administrador de iglesia con permiso de **Editar Configuración** en B1Admin (crearás una clave API)
+- Un administrador de iglesia con permiso de **Editar Configuración** en B1 Admin (crearás una clave API)
 - Una idea de lo que quieres hacer — p. ej. "cuando se agregue una persona en B1, agrégala a mi lista de Mailchimp"
 
 </div>
 
 ## Disparadores y Acciones
 
-| Tipo | Qué | Evento / endpoint de B1 |
+| Tipo | Qué | Evento / Endpoint de B1 |
 |---|---|---|
 | **Disparador** | Nueva Persona | `person.created` |
 | **Disparador** | Persona Actualizada | `person.updated` |
@@ -31,7 +31,7 @@ La aplicación oficial de B1.church en Zapier te permite que un Zap reaccione a 
 | **Acción** | Crear Persona | agrega una nueva persona |
 | **Acción** | Agregar Donación | registra una donación |
 | **Acción** | Agregar Miembro del Grupo | agrega una persona a un grupo |
-| **Búsqueda** | Encontrar Persona | busca una persona por nombre o correo electrónico |
+| **Búsqueda** | Encontrar Persona | busca una persona por id, correo, o nombre |
 
 Combina estos libremente con cualquiera de las 7,000+ aplicaciones compatibles de Zapier.
 
@@ -39,7 +39,7 @@ Combina estos libremente con cualquiera de las 7,000+ aplicaciones compatibles d
 
 ### 1. Crear una clave API de B1
 
-1. En B1Admin ve a **Configuración → Desarrollador → Claves API**.
+1. En B1 Admin ve a **Configuración → Desarrollador → Claves API**.
 2. Haz clic en **Nueva Clave API**, dale un nombre como "Zapier", y selecciona los alcances que el Zap necesita.
 3. **Importante:** Los disparadores de Zapier registran un webhook en tu nombre cuando el Zap se activa, lo cual requiere el alcance **`settings:write`**. Siempre incluye `settings:write` si alguno de tus Zaps usa un disparador de B1.
 4. También otorga los alcances que las acciones necesitan — por ejemplo, una acción "Agregar Donación" necesita `donations:write`, "Crear Persona" necesita `people:write`.
@@ -48,7 +48,7 @@ Combina estos libremente con cualquiera de las 7,000+ aplicaciones compatibles d
 ### 2. Conectar Zapier a B1
 
 1. En Zapier, crea un nuevo Zap.
-2. Cuando elijas un disparador o acción de B1 por primera vez, Zapier te pide que **Inicies sesión en B1.church**.
+2. Cuando elijas un disparador o acción de B1 por primera vez, Zapier te pide que **Inicies Sesión en B1 Church**.
 3. Pega la clave API del paso 1 y haz clic en **Sí, Continuar**. Zapier la valida contra tu iglesia.
 
 La conexión se guarda en Zapier y se reutiliza por cada Zap en tu cuenta.
@@ -79,7 +79,7 @@ Elige un disparador, luego agrega uno o más pasos de acción. Ejemplos abajo.
 ### Reenviar envíos de formularios a un rastreador de proyectos
 
 - **Disparador** — B1: Nuevo Envío de Formulario
-- **Acción** — Notion / Linear / Asana / Trello: Crear página / issue / tarea
+- **Acción** — Notion / Linear / Asana / Trello: Crear Página / Issue / Tarea
 
 ## Cómo Funcionan los Disparadores Bajo el Capó
 
@@ -96,12 +96,12 @@ Esto significa que el disparador solo se activa para eventos que suceden **despu
 
 ## Solución de Problemas
 
-- **"Falló la autenticación"** al conectar — la clave API es incorrecta, fue revocada, o le faltan los alcances que el Zap necesita. Regenera la clave en B1Admin con al menos `settings:write` más cualesquiera alcances de recursos que el Zap toque, luego actualiza la conexión.
-- **El disparador nunca se activa** — confirma que el webhook realmente se registró: en B1Admin, **Configuración → Desarrollador → Webhooks** ahora debería mostrar una fila llamada "Zapier — &lt;event&gt;". Si no está ahí, la clave API probablemente carecía de `settings:write` cuando activaste el Zap. Arregla la clave, apaga y enciende el Zap de nuevo.
+- **"Falló la autenticación"** al conectar — la clave API es incorrecta, fue revocada, o le faltan los alcances que el Zap necesita. Regenera la clave en B1 Admin con al menos `settings:write` más cualesquiera alcances de recursos que el Zap toque, luego actualiza la conexión.
+- **El disparador nunca se activa** — confirma que el webhook realmente se registró: en B1 Admin, **Configuración → Desarrollador → Webhooks** ahora debería mostrar una fila llamada "Zapier — <event>". Si no está ahí, la clave API probablemente carecía de `settings:write` cuando activaste el Zap. Arregla la clave, apaga y enciende el Zap de nuevo.
 - **El disparador se activa dos veces** — Zapier ocasionalmente reentrega si su confirmación se perdió. Usa un paso "Filtrar por Zapier" en una id única (p. ej. la `id` de la persona) si necesitas deduplicación estricta.
 
 ## Ver También
 
 - [Make](./make) — el mismo patrón, diferente plataforma
 - [Slack & Discord](./slack-discord) — notificaciones de chat más simples sin Zapier
-- [Webhooks (referencia de desarrollador)](/docs/developer/api/webhooks)
+- [Webhooks (Referencia de Desarrollador)](/docs/developer/api/webhooks)

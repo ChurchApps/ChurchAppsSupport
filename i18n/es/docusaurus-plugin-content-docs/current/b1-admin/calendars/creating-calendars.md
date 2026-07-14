@@ -1,8 +1,8 @@
 ---
-title: "Crear calendarios"
+title: "Crear Calendarios"
 ---
 
-# Crear calendarios
+# Crear Calendarios
 
 <div class="article-intro">
 
@@ -47,7 +47,7 @@ Conectar grupos a tu calendario es una forma poderosa de agregar eventos automá
 :::
 
 :::info
-Si deseas crear un único calendario que extraiga eventos de muchos grupos en tu iglesia, consulta [Calendario curado](curated-calendar) para un enfoque simplificado.
+Si deseas crear un único calendario que extraiga eventos de muchos grupos en tu iglesia, consulta [Calendario Curado](curated-calendar) para un enfoque simplificado.
 :::
 
 ## Habilitar registro de eventos
@@ -62,10 +62,10 @@ Puedes habilitar el registro para cualquier evento de calendario para que los mi
    - **Registro cierra** -- La fecha y hora cuando se cierra el registro.
    - **Etiquetas** -- Etiquetas separadas por comas (p. ej., "jóvenes, retiro, vbs") para ayudar a categorizar eventos registrables.
    - **Preguntas de registro** -- Opcionalmente adjunta un [formulario](../forms/creating-forms.md) para que los inscritos respondan preguntas adicionales (restricciones dietéticas, talla de camiseta, contacto de emergencia, etc.) como parte de la inscripción. Elige **Ninguno** para omitir preguntas.
-   - **Habilitar lista de espera** -- Cuando el evento se llena, deja que inscritos adicionales se unan a una lista de espera en lugar de ser rechazados. Consulta [Registros pagados](paid-registrations#waitlist).
+   - **Habilitar lista de espera** -- Cuando el evento se llena, deja que inscritos adicionales se unan a una lista de espera en lugar de ser rechazados. Consulta [Registros Pagados](paid-registrations#waitlist).
 4. Guarda el evento.
 
-Para eventos pagados, la misma página de configuración te permite definir **Tipos de asistentes** con precio, **Selecciones** opcionales (complementos), y **Códigos de descuento**, con el pago recopilado a través del proveedor de donaciones de tu iglesia. Consulta [Registros pagados](paid-registrations) para el paso a paso completo.
+Para eventos pagados, la misma página de configuración te permite definir **Tipos de asistentes** con precio, **Selecciones** opcionales (complementos), y **Códigos de descuento**, con el pago recopilado a través del proveedor de donaciones de tu iglesia. Consulta [Registros Pagados](paid-registrations) para el paso a paso completo.
 
 Una vez que el registro esté habilitado, los miembros verán un botón **Registrarse para este evento** cuando vean el evento en el [sitio web de B1](../../b1-church/events/registering) o [aplicación B1 Mobile](../../b1-mobile/events/registering). Si adjuntaste un formulario, los inscritos verán un paso **Preguntas** durante el registro y sus respuestas se guardan con su registro.
 
@@ -87,7 +87,7 @@ Para ver y gestionar registros para tus eventos:
    - **Promover** registros en lista de espera cuando se abre un lugar
    - **Exportar CSV** -- Descarga todos los registros, incluyendo tipos de asistentes, selecciones, montos de pago, y respuestas a preguntas
 
-Si el evento tiene preguntas de registro adjuntas, la página de detalle también muestra un filtro **Solo preguntas sin respuesta** para encontrar rápidamente inscritos que no han enviado respuestas, y un botón **Ver respuestas** en cada registro respondido para ver sus respuestas. Los eventos pagados agregan una columna **Tipo**, una columna **Pagado / Total**, recuentos por tipo, y un diálogo de detalle de pagos -- consulta [Registros pagados](paid-registrations#the-registration-roster).
+Si el evento tiene preguntas de registro adjuntas, la página de detalle también muestra un filtro **Solo preguntas sin respuesta** para encontrar rápidamente inscritos que no han enviado respuestas, y un botón **Ver respuestas** en cada registro respondido para ver sus respuestas. Los eventos pagados agregan una columna **Tipo**, una columna **Pagado / Total**, recuentos por tipo, y un diálogo de detalle de pagos -- consulta [Registros Pagados](paid-registrations#the-registration-roster).
 
 :::tip
 Usa la barra de progreso de capacidad para monitorear qué tan rápido se están llenando los eventos. La barra se vuelve roja cuando un evento está en o sobre capacidad.
@@ -95,7 +95,7 @@ Usa la barra de progreso de capacidad para monitorear qué tan rápido se están
 
 ## Próximos pasos
 
-- [Calendario curado](curated-calendar) -- Crea un calendario que extraiga de múltiples grupos
-- [Registros pagados](paid-registrations) -- Tipos de asistentes, selecciones de complementos, códigos de descuento, pagos, y listas de espera
-- [Guía de registro de eventos](../guides/event-registration) -- Guía paso a paso para configurar registro de eventos
-- [Descripción general de calendarios](./) -- Vuelve a la descripción general de calendarios
+- [Calendario Curado](curated-calendar) -- Crea un calendario que extraiga de múltiples grupos
+- [Registros Pagados](paid-registrations) -- Tipos de asistentes, selecciones de complementos, códigos de descuento, pagos, y listas de espera
+- [Guía de Registro de Eventos](../guides/event-registration) -- Guía paso a paso para configurar registro de eventos
+- [Descripción General de Calendarios](./) -- Vuelve a la descripción general de calendarios

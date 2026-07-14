@@ -34,7 +34,7 @@ Set up your classrooms at [freeplay.church](https://freeplay.church) before pair
 
 Choose **Pair to Plan** when you want to follow a church service plan. This mode generates a pairing code that you enter in **B1 Admin** to link the TV to a specific plan type. The TV then downloads and plays the content assigned to the current plan.
 
-**How it works:** FreePlay displays a pairing code on screen. An administrator enters that code in the **Plan Type** settings within **B1 Admin**. Once paired, the TV automatically loads the current plan's content.
+**How it works:** FreePlay displays a pairing code and a QR code on screen. An administrator opens the linked page in **B1 Admin**, enters the code, and picks the plan type the screen should follow from a **Show Plans For** dropdown. Once approved, the TV automatically loads the current plan's content.
 
 **Best for:** TVs that display content tied to your weekly service plan, such as worship lyrics or announcement slides.
 

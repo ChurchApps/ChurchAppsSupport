@@ -1,12 +1,12 @@
 ---
-title: "Gestionar fondos"
+title: "Gestionar Fondos"
 ---
 
-# Gestionar fondos
+# Gestionar Fondos
 
 <div class="article-intro">
 
-Los fondos te permiten categorizar donaciones por propósito para que puedas rastrear cuánto recibe tu iglesia para cada área de ministerio. Los fondos comunes incluyen Fondo general, Fondo de construcción, Misiones y Ministerio de jóvenes, pero puedes crear tantos como necesites.
+Los fondos te permiten categorizar donaciones por propósito para que puedas rastrear cuánto recibe tu iglesia para cada área de ministerio. Los fondos comunes incluyen Fondo General, Fondo de Construcción, Misiones y Ministerio de Jóvenes, pero puedes crear tantos como necesites.
 
 </div>
 
@@ -24,13 +24,13 @@ Navega a **Donaciones > Fondos** para ver una lista de todos tus fondos. Cada fi
 
 ## Crear un nuevo fondo
 
-1. Haz clic en **Agregar fondo** en la parte superior de la página.
+1. Haz clic en **Agregar Fondo** en la parte superior de la página.
 2. Ingresa un nombre para el fondo (p. ej., "Fondo de construcción").
 3. Marca la casilla **Deducible de impuestos** si las donaciones a este fondo deben incluirse en los extractos de donaciones.
 4. Deja **Visible para donantes** marcado para mostrar el fondo en los formularios de donación públicos y de miembros, o desmárcalo para ocultar el fondo de los donantes mientras lo usas para donaciones registradas manualmente.
 5. Haz clic en **Guardar**.
 
-El nuevo fondo aparece inmediatamente en tu lista y está disponible cuando ingresadas donaciones.
+El nuevo fondo aparece inmediatamente en tu lista y está disponible cuando ingresas donaciones.
 
 ## Editar y eliminar fondos
 

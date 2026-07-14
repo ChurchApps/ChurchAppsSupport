@@ -104,7 +104,7 @@ A **Connected App** is the church-admin-facing view of a granted token, listed a
 
 ### Webhooks
 
-The only outbound surface. A church subscribes a public HTTPS endpoint to events; when a matching change occurs, `WebhookDispatcher.emit(churchId, event, payload)` records a delivery and a background worker POSTs a signed JSON envelope with retry/backoff and redelivery. Engine at `Api/src/shared/webhooks/`, per-church CRUD under `/membership/webhooks` (`WebhookController.ts`). A `connectorType` field reshapes the body for Slack / Discord. → **[Webhooks](../api/webhooks)**
+The only outbound surface. A church subscribes a public HTTPS endpoint to events; when a matching change occurs, `WebhookDispatcher.emit(churchId, event, payload)` enriches id-only payloads with display names (`personName`, `groupName`, `formName` — lookups run only once a subscription matches), records a delivery, and a background worker POSTs a signed JSON envelope with retry/backoff and redelivery. Engine at `Api/src/shared/webhooks/`, per-church CRUD under `/membership/webhooks` (`WebhookController.ts`). A `connectorType` field reshapes the body for Slack / Discord. → **[Webhooks](../api/webhooks)**
 
 ### MCP server
 
@@ -130,7 +130,7 @@ The inbound-content path, in the separate package `Packages/content-providers` (
 Rather than everyone building from scratch, ChurchApps ships connectors on top of the surfaces above:
 
 - **[Slack & Discord](/docs/b1-admin/integrations/slack-discord)** — a webhook `connectorType` reshapes the standard envelope into a chat message; configured entirely in B1Admin, no third-party account.
-- **[Zapier](/docs/b1-admin/integrations/zapier)** and **[Make](/docs/b1-admin/integrations/make)** — trigger on webhook events and act via the REST API; they register their own webhook when a Zap/scenario turns on (needs a key with `settings:write`).
+- **[Zapier](/docs/b1-admin/integrations/zapier)** and **[Make](/docs/b1-admin/integrations/make)** — trigger on webhook events and act via the REST API; they register their own webhook when a Zap/scenario turns on (needs a key with `settings:write`). The Zapier app's source lives in the `Integrations` repo under `zapier/` (Zapier CLI, deployed with `zapier push`).
 - **[Google Sheets](/docs/b1-admin/integrations/google-sheets)** — an API-key-authenticated add-on that exports People / Donations / Groups / Attendance on demand.
 - **[Claude](/docs/b1-admin/integrations/claude)** and **[ChatGPT](/docs/b1-admin/integrations/chatgpt)** — MCP clients pointed at `/mcp`.
 

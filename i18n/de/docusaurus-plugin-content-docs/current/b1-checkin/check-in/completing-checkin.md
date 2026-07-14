@@ -1,72 +1,72 @@
-﻿---
-title: "Einchecken abschließen"
+---
+title: "Check-in abschliessen"
 ---
 
-# Einchecken abschließen
+# Check-in abschliessen
 
 <div class="article-intro">
 
-Nachdem Sie Ihren Haushalt überprüft und alle notwendigen Gruppenzuweisungen vorgenommen haben, sind Sie bereit, das Einchecken zu finalisieren. Dies ist der letzte Schritt im Kiosk-Workflow -- die App sendet Anwesenheit, druckt Etiketten und setzt für die nächste Familie zurück.
+Sobald Sie Ihren Haushalt ueberprueft und alle notwendigen Gruppenzuweisungen vorgenommen haben, sind Sie bereit, den Check-in abzuschliessen. Dies ist der letzte Schritt im Kiosk-Workflow -- die App uebermittelt die Anwesenheit, druckt Etiketten und setzt sich fuer die naechste Familie zurueck.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie anfangen</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- [Überprüfen Sie Ihren Haushalt](./household-review) auf der Haushalts-Überprüfungsseite
-- [Weisen Sie Gruppen zu](./group-assignment) zu Familienmitgliedern, die sich in eine bestimmte Klasse oder ein bestimmtes Programm einchecken müssen
-- Optional [fügen Sie alle Gäste hinzu](./adding-guests), die Ihre Familie besuchen
+- Ueberpruefen Sie Ihren Haushalt auf dem Haushaltsuebersicht-Bildschirm
+- Weisen Sie allen Familienmitgliedern, die sich in eine bestimmte Klasse oder ein Programm einchecken muessen, Gruppen zu
+- Fuegen Sie optional Gaeste hinzu, die mit Ihrer Familie zu Besuch sind
 
 </div>
 
-## Wie man sich einloggt
+## So checken Sie ein
 
-1. Tippen Sie von der **Haushalts-Überprüfungsseite** auf die Schaltfläche **Einchecken** am unteren Ende des Bildschirms.
-2. Die App sendet die Anwesenheitsdaten an den Server und zeigt einen **Erfolgreiches-Bildschirm** mit einem grünen Häkchen und einer Willkommensnachricht.
+1. Tippen Sie auf dem Haushaltsuebersicht-Bildschirm unten auf die Schaltflaeche Check-in.
+2. Die App uebermittelt die Anwesenheitsdaten an den Server und zeigt einen Erfolgsbildschirm mit einem gruenen Haekchen und einer Willkommensnachricht an.
 
-Das ist alles, was nötig ist. Die Anwesenheit Ihrer Familie wurde aufgezeichnet.
+Das ist alles, was noetig ist. Die Anwesenheit Ihrer Familie wurde erfasst.
 
-## Volle Räume und Freiwilligenquoten
+## Volle Raeume und Freiwilligenverhaeltnisse
 
-Wenn Ihre Kirche [Sicherheitsgrenzen](../../b1-admin/attendance/checkin-safety) für ihre Räume konfiguriert hat, überprüft der Server sie vor dem Speichern:
+Wenn Ihre Kirche Sicherheitsgrenzen fuer ihre Raeume konfiguriert hat, prueft der Server diese vor dem Speichern:
 
-- Wenn ein gewählter Raum **voll oder geschlossen** ist, wird das Einchecken nicht durchgeführt und die App nennt den Raum, damit Sie einen anderen wählen können.
-- Wenn ein Kinderraum **wenig Freiwillige** für sein Verhältnis hat, zeigt die App entweder eine Warnung an, die ein Mitarbeiter bestätigen kann, um fortzufahren, oder blockiert das Einchecken vollständig -- je nachdem, wie Ihre Kirche die Verhältnisverordnung konfiguriert hat.
+- Wenn ein ausgewaehlter Raum voll oder geschlossen ist, geht der Check-in nicht durch, und die App nennt den Raum, damit Sie einen anderen waehlen koennen.
+- Wenn einem Kinderraum Freiwillige fuer sein Verhaeltnis fehlen, zeigt die App entweder eine Warnung an, die ein Mitarbeiter bestaetigen kann, um fortzufahren, oder blockiert den Check-in vollstaendig -- abhaengig davon, wie Ihre Kirche die Durchsetzung des Verhaeltnisses konfiguriert hat.
 
-## Etikett-Druck
+## Etikettendruck
 
-Wenn ein Netzwerkdrucker konfiguriert ist, druckt die App nach dem Einchecken automatisch Etiketten:
+Wenn ein Netzwerkdrucker konfiguriert ist, druckt die App nach dem Check-in automatisch Etiketten:
 
-- **Namensetiketten** werden für jede Person gedruckt, die einer Gruppe zugewiesen ist, die die Einstellung **Namensschilddruck** aktiviert hat. Namensetiketten enthalten den Namen der Person, die Gruppenzuweisung und Allergie-/Notiz-Informationen, falls vorhanden.
-- **Abholscheine für Eltern** werden gedruckt, wenn eine eingecheckte Person in einer Gruppe ist, die die Einstellung **Elterliche Abholung** aktiviert hat. Der Abholschein listet die Kinder, ihre Gruppenzuweisungen und einen eindeutigen **4-stelligen Sicherheitscode** auf.
+- Namensetiketten werden fuer jede Person gedruckt, die einer Gruppe zugewiesen ist, bei der die Einstellung Namensschild drucken aktiviert ist. Namensetiketten enthalten den Namen der Person, ihre Gruppenzuweisung und Allergie-/Hinweisinformationen, falls vorhanden.
+- Abholzettel fuer Eltern werden gedruckt, wenn eine eingecheckte Person in einer Gruppe ist, bei der die Einstellung Elternabholung aktiviert ist. Der Abholzettel listet die Kinder, ihre Gruppenzuweisungen und einen eindeutigen 4-stelligen Sicherheitscode auf.
 
 :::info
-Derselbe Sicherheitscode wird sowohl auf dem Namensschildetikett des Kindes als auch auf dem Abholschein des Elternteils angezeigt. Zum Zeitpunkt der Abholung passen Freiwillige die Codes ab, um zu überprüfen, dass der richtige Erwachsene jedes Kind abholt.
+Derselbe Sicherheitscode erscheint sowohl auf dem Namensetikett des Kindes als auch auf dem Abholzettel der Eltern. Bei der Abholung gleichen Freiwillige die Codes ab, um zu bestaetigen, dass die richtige erwachsene Person das jeweilige Kind abholt.
 :::
 
-Der Sicherheitscode wird bei jedem Einchecken neu generiert und verwendet nur Konsonanten und Ziffern (Vokale werden ausgeschlossen, um unangemessene Wörter zu vermeiden).
+Der Sicherheitscode wird fuer jeden Check-in neu generiert und verwendet nur Konsonanten und Ziffern (Vokale sind ausgeschlossen, um die Bildung unangemessener Woerter zu vermeiden).
 
 :::warning
-Wenn die Etiketten nicht gedruckt werden, öffnen Sie die Admin-Einstellungen, indem Sie siebenmal auf das **Kirchenlogo** tippen, und tippen Sie auf **Drucker ändern**, um die Druckerverbindung zu überprüfen. Siehe [Drucker-Einrichtung](../getting-started/printer-setup) für Fehlerbehebungsschritte.
+Wenn Etiketten nicht gedruckt werden, oeffnen Sie die Admin-Einstellungen, indem Sie siebenmal auf das Kirchenlogo tippen, und tippen Sie dann auf Drucker aendern, um die Druckerverbindung zu ueberpruefen. Siehe Druckereinrichtung fuer Schritte zur Fehlerbehebung.
 :::
 
-## Was nach dem Einchecken passiert
+## Was nach dem Check-in passiert
 
-- Wenn ein Drucker konfiguriert ist, druckt die App alle Etiketten und kehrt dann automatisch zum **Suchbildschirm** zurück, bereit für die nächste Familie.
-- Wenn kein Drucker konfiguriert ist, wird der Erfolgreiches-Bildschirm einige Sekunden lang angezeigt und kehrt dann automatisch zum **Suchbildschirm** zurück.
+- Wenn ein Drucker konfiguriert ist, druckt die App alle Etiketten und kehrt dann automatisch zum Suchbildschirm zurueck, bereit fuer die naechste Familie.
+- Wenn kein Drucker konfiguriert ist, wird der Erfolgsbildschirm einige Sekunden lang angezeigt und kehrt dann automatisch zum Suchbildschirm zurueck.
 
-Sie müssen nichts tippen, um zum Suchbildschirm zurückzukehren -- die App handhabt den Übergang automatisch.
+Sie muessen nichts antippen, um zum Suchbildschirm zurueckzukehren -- die App uebernimmt den Uebergang automatisch.
 
 :::tip
-Die App setzt sich nach jedem Einchecken vollständig zurück, daher besteht kein Risiko, dass eine Familie die Informationen einer anderen Familie sieht.
+Die App setzt sich nach jedem Check-in vollstaendig zurueck, sodass keine Gefahr besteht, dass eine Familie die Informationen einer anderen Familie sieht.
 :::
 
-## Was aufgezeichnet wird
+## Was erfasst wird
 
-Wenn Sie auf **Einchecken** tippen, sendet die App den folgenden Inhalt an den Server für jedes Haushalts-Mitglied, das eine Gruppenzuweisung hat:
+Wenn Sie auf Check-in tippen, sendet die App fuer jedes Haushaltsmitglied mit einer Gruppenzuweisung Folgendes an den Server:
 
-- Die **Person**, die eingecheckt wird
-- Der **Gottesdienst**, an dem sie teilnehmen
-- Die **Servicezeit** und **Gruppe**, der sie zugewiesen sind
+- Die Person, die eingecheckt wird
+- Den Gottesdienst, den sie besucht
+- Die Gottesdienstzeit und Gruppe, der sie zugewiesen ist
 
-Diese Daten werden in B1 Admin unter dem Anwesenheitsbereich angezeigt, wo Ihre Kirchenadministratoren Anwesenheitsdatensätze anzeigen und verwalten können. Siehe den [Einchecken-Verwaltungsleitfaden](../../b1-admin/attendance/check-in.md) für Details.
+Diese Daten erscheinen in B1 Admin im Bereich Anwesenheit, wo die Administratoren Ihrer Kirche Anwesenheitsdatensaetze anzeigen und verwalten koennen. Details finden Sie in der Anleitung zur Verwaltung des Check-ins.

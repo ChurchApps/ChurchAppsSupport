@@ -29,7 +29,7 @@ Delivery uses a **durable outbox**: when a subscribed event occurs, B1 records a
 
 ### In B1Admin
 
-Go to **Settings → Webhooks → New Webhook**. Enter a name, the payload URL, and select the events to subscribe to. On save, the **signing secret is displayed once** — copy it immediately and store it with your integration. It is never shown again (you can rotate it later, but you cannot retrieve the original).
+Go to **Settings → Developer → Webhooks → New Webhook**. Enter a name, the payload URL, and select the events to subscribe to. On save, the **signing secret is displayed once** — copy it immediately and store it with your integration. It is never shown again (you can rotate it later, but you cannot retrieve the original).
 
 ### Via the API
 
@@ -128,6 +128,8 @@ The body wraps the changed resource in a small envelope:
 ```
 
 For `*.destroyed` events, `data` contains only the `id` and `churchId` of the deleted record.
+
+Events whose payloads reference other records by id also carry human-readable names, resolved at delivery time: `personName` and `groupName` on the group membership events, `personName` on attendance, donation, and list membership events, `groupName` on `session.created`, and `formName` (plus `personName` when the submission is tied to a person) on `form.submission.created`.
 
 ## Connector Types
 

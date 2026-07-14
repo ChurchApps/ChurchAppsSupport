@@ -6,42 +6,42 @@ title: "Einstellungen"
 
 <div class="article-intro">
 
-Der Bereich "Einstellungen" ist der Ort, an dem Sie das Konto Ihrer Kirche, die Branding und die administrativen Optionen in B1 Admin konfigurieren. Von hier aus können Sie alles von Ihrem Kirchennamen und Subdomain bis zu Benutzerkermittlungen und Konfiguration der mobilen App verwalten.
+Im Bereich Einstellungen konfigurieren Sie das Konto, die Markenidentität und die Verwaltungsoptionen Ihrer Kirche in B1 Admin. Von hier aus können Sie alles verwalten, vom Kirchennamen und der Subdomain bis zu Benutzerberechtigungen und der Konfiguration der mobilen App.
 
 </div>
 
 ## Was Sie hier finden
 
-Der Bereich "Einstellungen" ist in die folgenden Unterbereiche unterteilt, auf die in der Seitenleiste zugegriffen werden kann:
+Der Bereich Einstellungen ist in die folgenden Unterbereiche gegliedert, die über die Seitenleiste zugänglich sind:
 
-1. **Einstellungen** -- Konfigurieren Sie die grundlegenden Informationen, das Branding und die Subdomain Ihrer Kirche. Siehe [Kircheneinstellungen](./church-settings.md) für Details.
-2. **Campi** -- Fügen Sie mehrere physische Orte für Ihre Kirche hinzu und verwalten Sie sie. Nachdem sie erstellt wurden, werden Campi auf Personenprofilen, in der Anwesenheits-Setup und im Demografika-Dashboard angezeigt. Siehe [Campi](./campuses.md) für Details.
-3. **Benutzerdefinierte Felder** -- Definieren Sie Ihre eigenen Felder zur Verfolgung von Personen (ein Datum, eine Nummer, Ja/Nein-Antwort oder Pick-Liste), füllen Sie sie dann auf Profilen aus und durchsuchen Sie sie. Siehe [Benutzerdefinierte Felder](./custom-fields.md) für Details.
-3. **Mobile Apps** -- Richten Sie die Navigations-Registerkarten ein und passen Sie sie an, die in der [B1.church PWA](/docs/b1-church/getting-started/installing-pwa) für Ihre Mitglieder angezeigt werden (die gleichen Registerkarten werden auch von der veralteten B1 Mobile-native App gerendert). Siehe [Mobile App Einstellungen](./mobile-app.md) für Details.
-4. **Server Admin** -- Zugriff auf erweiterte Verwaltungs-Tools zur Verwaltung der Server-Level-Einstellungen Ihrer Kirche.
-5. **Formulare** -- Erstellen und Verwalten benutzerdefinierter Formulare zum Sammeln von Informationen aus Ihrer Gemeinde.
+1. **Einstellungen** -- Konfigurieren Sie die grundlegenden Informationen, die Markenidentität und die Subdomain Ihrer Kirche. Details finden Sie unter [Kircheneinstellungen](./church-settings.md).
+2. **Campusse** -- Fügen Sie mehrere physische Standorte für Ihre Kirche hinzu und verwalten Sie sie. Nach der Erstellung erscheinen Campusse auf Personenprofilen, in der Anwesenheitseinrichtung und im Demografie-Dashboard. Details finden Sie unter [Campusse](./campuses.md).
+3. **Benutzerdefinierte Felder** -- Definieren Sie eigene Felder, die bei Personen erfasst werden sollen (ein Datum, eine Zahl, eine Ja/Nein-Antwort oder eine Auswahlliste), füllen Sie sie dann in Profilen aus und suchen Sie danach. Details finden Sie unter [Benutzerdefinierte Felder](./custom-fields.md).
+3. **Mobile Apps** -- Richten Sie die Navigations-Registerkarten ein, die in der [B1.church-PWA](/docs/b1-church/getting-started/installing-pwa) für Ihre Mitglieder erscheinen (dieselben Registerkarten werden auch von der veralteten nativen B1-Mobile-App dargestellt), und passen Sie sie an. Details finden Sie unter [Einstellungen der mobilen App](./mobile-app.md).
+4. **Serveradministration** -- Greifen Sie auf erweiterte Verwaltungswerkzeuge zur Verwaltung der Servereinstellungen Ihrer Kirche zu.
+5. **Formulare** -- Erstellen und verwalten Sie benutzerdefinierte Formulare zur Erfassung von Informationen von Ihrer Gemeinde.
 
-## Die Hauptseite Einstellungen
+## Die Haupteinstellungsseite
 
-Wenn Sie die Seite "Einstellungen" zum ersten Mal öffnen, sehen Sie **Ihren Kirchennamen** und **Subdomain** oben angezeigt. Die Header bietet Schnellzugriffs-Schaltflächen für häufige Aufgaben:
+Wenn Sie die Einstellungsseite zum ersten Mal öffnen, sehen Sie oben den **Namen Ihrer Kirche** und die **Subdomain**. Die Kopfzeile bietet Schnellzugriffs-Schaltflächen für häufige Aufgaben:
 
-- **Einstellungen bearbeiten** -- Aktualisieren Sie den Namen, die Adresse, die Kontaktinformationen und das Branding Ihrer Kirche.
-- **Mobile Apps** -- Springen Sie direkt zur Konfiguration der mobilen App.
-- **Rollen** -- Verwalten Sie Benutzer-Rollen und Berechtigungen für Ihr Team.
-- **Importieren/Exportieren** -- Übertragen Sie Daten zwischen Systemen mit dem Import-/Exporttool.
+- **Einstellungen bearbeiten** -- Name, Adresse, Kontaktinformationen und Markenidentität Ihrer Kirche aktualisieren.
+- **Mobile Apps** -- Direkt zur Konfiguration der mobilen App springen.
+- **Rollen** -- Benutzerrollen und Berechtigungen für Ihr Team verwalten.
+- **Import/Export** -- Daten mit dem Import-/Export-Tool zwischen Systemen übertragen.
 
 :::tip
-Beginnen Sie mit der Konfiguration Ihres Kirchennamens und des Brandings unter **Einstellungen bearbeiten**, richten Sie dann [Rollen](./roles-permissions.md) ein, um Ihre Teamkollegen mit der richtigen Zugriffsstufe einzuladen.
+Beginnen Sie mit der Konfiguration des Kirchennamens und der Markenidentität unter **Einstellungen bearbeiten** und richten Sie dann [Rollen](./roles-permissions.md) ein, um Ihre Teammitglieder mit der richtigen Zugriffsebene einzuladen.
 :::
 
 :::info
-Für Informationen zum Schutz Ihrer Daten siehe [Datensicherheit](./data-security.md).
+Informationen zum Schutz Ihrer Daten finden Sie unter [Datensicherheit](./data-security.md).
 :::
 
 ## Nächste Schritte
 
-- [Kircheneinstellungen](./church-settings.md) -- Konfigurieren Sie Ihre Kircheninformationen und das Branding
-- [Campi](./campuses.md) -- Fügen Sie Orte für Multi-Site-Kirchen hinzu
-- [Rollen & Berechtigungen](./roles-permissions.md) -- Richten Sie Benutzer-Rollen und Zugriffskontrolle ein
-- [Mobile App Einstellungen](./mobile-app.md) -- Passen Sie die Navigations-Registerkarten an, die in der B1.church PWA angezeigt werden
+- [Kircheneinstellungen](./church-settings.md) -- Kircheninformationen und Markenidentität konfigurieren
+- [Campusse](./campuses.md) -- Standorte für Kirchen mit mehreren Standorten hinzufügen
+- [Rollen & Berechtigungen](./roles-permissions.md) -- Benutzerrollen und Zugriffskontrolle einrichten
+- [Einstellungen der mobilen App](./mobile-app.md) -- Die in der B1.church-PWA angezeigten Navigations-Registerkarten anpassen
 - [Datensicherheit](./data-security.md) -- Erfahren Sie, wie Ihre Daten geschützt werden

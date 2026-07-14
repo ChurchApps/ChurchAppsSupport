@@ -1,12 +1,12 @@
----
-title: "Kopplungsmodus waehlen"
+﻿---
+title: "Pairing-Modus auswählen"
 ---
 
-# Kopplungsmodus waehlen
+# Pairing-Modus auswählen
 
 <div class="article-intro">
 
-FreePlay bietet zwei Kopplungsmodi, um Ihren Fernseher mit Ihrer Gemeinde zu verbinden, sowie die Moeglichkeit, Inhaltsanbieter direkt zu durchsuchen. Der Bildschirm **Select Pairing Mode** praesentiert diese Optionen als grosse Karten, die Sie mit Ihrer TV-Fernbedienung navigieren koennen.
+FreePlay bietet zwei Pairing-Modi zum Verbinden Ihres Fernsehers mit Ihrer Kirche, plus die Möglichkeit, direkt auf Inhaltsanbieter zuzugreifen. Der Bildschirm **Pairing-Modus auswählen** präsentiert diese Optionen als große Karten, die Sie mit Ihrer TV-Fernbedienung navigieren können.
 
 </div>
 
@@ -18,38 +18,38 @@ FreePlay bietet zwei Kopplungsmodi, um Ihren Fernseher mit Ihrer Gemeinde zu ver
 
 </div>
 
-## Mit Klassenraum koppeln
+## Mit Klassenzimmer verbinden
 
-Waehlen Sie **Pair to Classroom**, wenn ein bestimmter Fernseher immer die fuer einen bestimmten Raum geplante Lektion anzeigen soll. Dies ist die beste Option fuer Kinderdienst-Klassenraeume, in denen Lektionen woechentlich zugewiesen werden.
+Wählen Sie **Mit Klassenzimmer verbinden**, wenn Sie möchten, dass ein bestimmter Fernseher immer die für einen bestimmten Raum geplante Lektion anzeigt. Dies ist die beste Option für Kinderbetreuungsklassenzimmer, in denen Unterrichtsstunden nach einem wöchentlichen Plan zugewiesen werden.
 
-**So funktioniert es:** Sie suchen nach Ihrer Gemeinde anhand des Namens, waehlen einen Klassenraum, und FreePlay ruft automatisch die fuer diesen Raum heute geplante Lektion ab. An jedem Sonntagmorgen schalten Sie einfach den Fernseher ein und die richtige Lektion ist bereit.
+**So funktioniert es:** Sie suchen nach Ihrer Kirche nach Name, wählen ein Klassenzimmer aus, und FreePlay ruft automatisch die für diesen Raum heute geplante Lektion ab. Jeden Sonntagmorgen schalten Sie einfach den Fernseher ein und die richtige Lektion ist bereit.
 
-**Am besten geeignet fuer:** Fest installierte Klassenraum-Fernseher, die immer den geplanten Inhalt fuer diesen Raum anzeigen sollen.
+**Am besten für:** Dedizierte Klassenzimmer-Fernseher, die immer den geplanten Inhalt für diesen Raum anzeigen sollten.
 
 :::tip
-Richten Sie Ihre Klassenraeume auf [freeplay.church](https://freeplay.church) ein, bevor Sie Ihren Fernseher koppeln. So wird sichergestellt, dass Ihre Raeume erscheinen, wenn Sie nach Ihrer Gemeinde suchen.
+Richten Sie Ihre Klassenzimmer unter [freeplay.church](https://freeplay.church) ein, bevor Sie Ihren Fernseher verbinden. Dies stellt sicher, dass Ihre Räume angezeigt werden, wenn Sie nach Ihrer Kirche suchen.
 :::
 
-## Mit Plan koppeln
+## Mit Plan verbinden
 
-Waehlen Sie **Pair to Plan**, wenn Sie einem Gottesdienstplan folgen moechten. Dieser Modus generiert einen Kopplungscode, den Sie in **B1 Admin** eingeben, um den Fernseher mit einem bestimmten Plantyp zu verknuepfen. Der Fernseher laedt dann die dem aktuellen Plan zugewiesenen Inhalte herunter und spielt sie ab.
+Wählen Sie **Mit Plan verbinden**, wenn Sie einem Kirchengottesdienst-Plan folgen möchten. Dieser Modus generiert einen Pairing-Code, den Sie in **B1 Admin** eingeben, um den Fernseher mit einem bestimmten Plantyp zu verbinden. Der Fernseher lädt und spielt dann den dem aktuellen Plan zugewiesenen Inhalt ab.
 
-**So funktioniert es:** FreePlay zeigt einen Kopplungscode auf dem Bildschirm an. Ein Administrator gibt diesen Code in den **Plan Type**-Einstellungen in **B1 Admin** ein. Nach der Kopplung laedt der Fernseher automatisch die Inhalte des aktuellen Plans.
+**So funktioniert es:** FreePlay zeigt einen Pairing-Code und einen QR-Code auf dem Bildschirm an. Ein Administrator öffnet die verknüpfte Seite in **B1 Admin**, gibt den Code ein und wählt aus einem Dropdown **Pläne anzeigen für** den Plantyp aus, dem der Bildschirm folgen soll. Nach Genehmigung lädt der Fernseher automatisch den Inhalt des aktuellen Plans.
 
-**Am besten geeignet fuer:** Fernseher, die Inhalte anzeigen, die an Ihren woechentlichen Gottesdienstplan gebunden sind, wie Liedtexte oder Ankuendigungsfolien.
+**Am besten für:** Fernseher, die Inhalte anzeigen, die an Ihren wöchentlichen Gottesdienst-Plan gebunden sind, wie z.B. Lobpreis-Liedtexte oder Ankündigungsfolien.
 
 ## Inhaltsanbieter
 
-Wenn Sie sich nicht mit einem Klassenraum oder Plan koppeln muessen, koennen Sie Inhaltsanbieter direkt durchsuchen. Anbieter wie [Lessons.church](../../lessons-church/) und Bible Project bieten Inhalte, die Sie auf Abruf herunterladen und abspielen koennen.
+Falls Sie nicht mit einem Klassenzimmer oder Plan verbinden müssen, können Sie direkt auf Inhaltsanbieter zugreifen. Anbieter wie [Lessons.church](../../lessons-church/) und Bible Project bieten Inhalte an, die Sie bei Bedarf herunterladen und abspielen können.
 
-**Am besten geeignet fuer:** Fernseher, bei denen Ehrenamtliche jede Woche manuell auswaehlen, was abgespielt werden soll, oder wenn Sie verfuegbare Inhalte erkunden moechten.
+**Am besten für:** Fernseher, bei denen Freiwillige manuell wählen, was jede Woche abgespielt werden soll, oder wenn Sie verfügbare Inhalte erkunden möchten.
 
 :::info
-Sie koennen jederzeit ueber die Seitenleiste am unteren Rand der Navigation auf den **Providers**-Bildschirm zugreifen. Sie muessen keinen Kopplungsmodus verwenden, um Inhalte zu durchsuchen und abzuspielen.
+Sie können auf den Bildschirm **Provider** jederzeit über die Seitenleiste am unteren Rand der Navigation zugreifen. Sie müssen keinen Pairing-Modus verwenden, um Inhalte zu durchsuchen und abzuspielen.
 :::
 
 ## Verwandte Artikel
 
-- **[Klassenraum-Modus](../classroom-mode/)** - Vollstaendige Anleitung zur Kopplung mit einem Klassenraum
-- **[Plan-Modus](../plan-mode/)** - Vollstaendige Anleitung zur Kopplung mit einem Gottesdienstplan
-- **[Inhaltsanbieter](../content-providers/)** - Inhalte aus externen Quellen durchsuchen und herunterladen
+- **[Klassenzimmer-Modus](../classroom-mode/)** - Vollständige Anleitung zum Verbinden mit einem Klassenzimmer
+- **[Plan-Modus](../plan-mode/)** - Vollständige Anleitung zum Verbinden mit einem Gottesdienst-Plan
+- **[Inhaltsanbieter](../content-providers/)** - Durchsuchen und laden Sie Inhalte von externen Quellen herunter
