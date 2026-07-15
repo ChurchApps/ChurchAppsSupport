@@ -52,7 +52,7 @@ The content module (`Api/src/modules/content`) owns the builder's data:
 | `sections` | Horizontal bands on a page (or in a block): background, text color, and an `answersJSON` that carries styling plus the `dividerTop`/`dividerBottom` shape-divider configs |
 | `elements` | Content pieces inside a section: `elementType` + `answersJSON`, nestable for layout types (row/column, carousel) |
 | `blocks` | Reusable section/element groups (footer blocks, element blocks) shared across pages |
-| `posts` | Blog metadata over a regular page (see [Blog](#blog-posts-over-pages)) |
+| `posts` | Standalone blog posts (see [Blog](#blog)) |
 | `redirects` | Per-church `fromPath → toPath` pairs, capped at 200 (see [SEO](#seo-and-discoverability)) |
 | `settings` | Key-value church settings; rows flagged `public` are served anonymously and carry the widget/analytics config |
 
@@ -104,17 +104,18 @@ Three element types render live church data rather than authored content. Module
 
 Two widgets render on every public page rather than inside the tree: **AnnouncementBanner** (dismissible top-of-page bar) and **Launcher** (floating action hub for give/visit/watch-style links). Both components and their `parse*Config()` helpers ship in apphelper. Configuration is two public settings rows — keys `announcementBanner` and `launcher` — written by B1Admin's `SiteWidgetsEdit` (on the Appearance page) and read by B1App's public layout via `GET /content/settings/public/:churchId`. The API treats these as opaque key-value pairs; the key names are a convention between the two apps.
 
-## Blog: posts over pages
+## Blog
 
-The blog is a thin metadata layer, not a second content system. A `posts` row (`title`, `slug`, `excerpt`, `authorId`, `photoUrl`, `publishDate`, `category`, `tags`) points at a regular builder page via `pageId`; the page holds the body and is edited in the normal page editor. Public surface (all anonymous, `PostController`):
+The blog is a standalone content type, not a layer over builder pages. A `posts` row holds the whole post: `title`, `slug`, `excerpt`, `content` (markdown body), `authorId`, `photoUrl`, `publishDate`, `category`, `tags`. Public surface (all anonymous, `PostController`):
 
 | Route | Purpose |
 |-------|---------|
 | `GET /content/posts/public/:churchId` | Published posts, filterable by `?category=&tag=`, paginated |
-| `GET /content/posts/public/:churchId/slug/:slug` | One post's metadata |
-| `GET /content/posts/rss/:churchId?siteUrl=` | RSS 2.0 feed |
+| `GET /content/posts/public/:churchId/categories` | Distinct categories across published posts |
+| `GET /content/posts/public/:churchId/slug/:slug` | One published post |
+| `GET /content/posts/rss/:churchId?siteUrl=` | RSS 2.0 feed, titled with the church name, with per-item category and excerpt-or-content description |
 
-A post is "published" once `publishDate` is set and past. B1App serves `/{sdSlug}/blog` (listing, with the RSS feed advertised as an alternate link) and `/{sdSlug}/blog/[postSlug]`, which fetches the backing page tree at `/blog/{slug}` and renders it through the same Zone/Section pipeline as any other page, adding `BlogPosting` JSON-LD. Blog URLs are included in the per-church sitemap. B1Admin's authoring UI (**Site → Blog**) creates the backing page at `/blog/{slug}` and the `posts` row together.
+A post is "published" once `publishDate` is set and past; a future `publishDate` is a scheduled post (hidden publicly, shown with a Scheduled chip in admin). Read endpoints enrich each post with `authorName`, resolved from `authorId` through the membership module gateway. Missing excerpts fall back to stripped-markdown content (~160 chars) in listing cards, meta descriptions, and RSS. B1App serves `/{sdSlug}/blog` — a card grid with a category-chip filter row, bylines, and the RSS feed advertised as an alternate link — and `/{sdSlug}/blog/[postSlug]`, a dedicated route (not the Zone/Section pipeline) with a 16:9 hero image, byline, clickable category/tag chips linking back to the filtered listing, the markdown body, a "More in {category}" related-posts strip, and `BlogPosting` JSON-LD including the author. Blog URLs are included in the per-church sitemap. B1Admin's authoring UI (**Site → Blog**) edits posts in a dialog: markdown editor with preview toggle, 16:9-cropped gallery image picker, author person-picker (defaults to the editing user), category autocomplete seeded from existing categories, duplicate-slug validation, and a publish toggle; published rows link out to the live post, and the page nudges admins to add a `/blog` navigation link.
 
 ## Members-only pages
 

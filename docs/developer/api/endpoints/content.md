@@ -132,12 +132,13 @@ Base path: `/content/pageHistory`
 
 Base path: `/content/posts`
 
-Blog posts are metadata over regular pages: each post's `pageId` references the page that holds the body, and the post row adds `title`, `slug` (unique per church), `excerpt`, `authorId`, `photoUrl`, `publishDate`, `category`, and `tags`. A post is published once `publishDate` is set and in the past. See [Website Builder Architecture](../../architecture/website-builder#blog-posts-over-pages).
+Blog posts are standalone rows: `title`, `slug` (unique per church), `excerpt`, `content` (markdown body), `authorId`, `photoUrl`, `publishDate`, `category`, and `tags`. A post is published once `publishDate` is set and in the past. Read endpoints enrich each post with `authorName` resolved from `authorId`. See [Website Builder Architecture](../../architecture/website-builder#blog).
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
 | GET | `/public/:churchId?category=&tag=&page=&pageSize=` | Public | — | List published posts, paginated (max 50 per page) |
-| GET | `/public/:churchId/slug/:slug` | Public | — | Get a published post's metadata by slug |
+| GET | `/public/:churchId/categories` | Public | — | Distinct categories across published posts |
+| GET | `/public/:churchId/slug/:slug` | Public | — | Get a published post by slug |
 | GET | `/rss/:churchId?siteUrl=` | Public | — | RSS 2.0 feed of published posts (links built as `{siteUrl}/blog/{slug}`) |
 | GET | `/:id` | JWT | — | Get a post by ID |
 | GET | `/` | JWT | — | List all posts for the church |
