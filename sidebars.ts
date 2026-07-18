@@ -123,6 +123,7 @@ const sidebars: SidebarsConfig = {
             'b1-admin/website/initial-setup',
             'b1-admin/website/managing-pages',
             'b1-admin/website/page-editor',
+            'b1-admin/website/blog',
             'b1-admin/website/appearance',
             'b1-admin/website/files',
           ],
