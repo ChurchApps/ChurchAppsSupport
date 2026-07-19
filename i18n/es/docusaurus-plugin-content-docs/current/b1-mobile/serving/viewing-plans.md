@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Visualización de Planes"
 ---
 

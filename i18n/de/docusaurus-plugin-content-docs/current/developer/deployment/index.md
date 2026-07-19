@@ -1,26 +1,26 @@
-﻿---
-title: "Bereitstellung"
+---
+title: "Deployment"
 ---
 
-# Bereitstellung
+# Deployment
 
 <div class="article-intro">
 
-ChurchApps nutzt verschiedene Bereitstellungsstrategien je nach Projekttyp. APIs werden auf AWS Lambda bereitgestellt, Web-Apps als statische Seiten auf S3 mit CloudFront, und mobile Apps werden durch Expo EAS und die App Stores gebaut und verteilt.
+ChurchApps verwendet verschiedene Deployment-Strategien abhängig vom Projekttyp. APIs werden zu AWS Lambda deployed, Web-Apps werden als statische Sites zu S3 mit CloudFront deployed, und Mobile-Apps werden durch Expo EAS und App Stores gebaut und verteilt.
 
 </div>
 
-## Bereitstellung nach Projekttyp
+## Deployment nach Projekttyp
 
-| Projekttyp | Bereitstellungsziel | Werkzeuge |
+| Projekttyp | Deployment-Ziel | Werkzeug |
 |-------------|-------------------|---------|
 | [APIs](./apis) | AWS Lambda | Serverless Framework v3 (Node.js 22.x runtime) |
-| [Web-Apps](./web-apps) | S3 + CloudFront | Statischer Build, S3 Sync, CloudFront Invalidation |
+| [Web Apps](./web-apps) | S3 + CloudFront | Statischer Build, S3 Sync, CloudFront Invalidierung |
 | [Mobile Apps](./mobile) | App Stores | Expo EAS Build + OTA Updates |
-| [Selbst-Hosting (Railway)](./railway-template) | Railway | Ein-Klick-Template: MySQL + Api + B1Admin + B1App |
-| [Selbst-Hosting (Docker)](./docker) | Beliebiger Docker Host | `docker compose up` aus dem B1Admin Repo |
-| [Caddy Custom-Domain Proxy](./caddy-proxy) | Windows EC2 (Elastic IP `3.23.251.61`) | Statischer Caddyfile + WinSW Service + geplante Map-Synchronisation |
-| FreeShow | Direkter Download | Electron Builder (Cross-Platform Binärdateien) |
+| [Self-Hosting (Railway)](./railway-template) | Railway | One-Click-Vorlage |
+| [Self-Hosting (Docker)](./docker) | Jeder Docker-Host | `docker compose up` |
+| [Caddy Custom-Domain-Proxy](./caddy-proxy) | Windows EC2 | Statische Caddyfile |
+| FreeShow | Direkter Download | Electron Builder |
 
 ## Umgebungen
 
@@ -28,9 +28,9 @@ ChurchApps nutzt verschiedene Bereitstellungsstrategien je nach Projekttyp. APIs
 |-------------|---------|
 | `dev` | Lokale Entwicklung |
 | `demo` | Öffentliche Demo-Instanz |
-| `staging` | Pre-Production Testing |
+| `staging` | Vor-Produktions-Test |
 | `prod` | Produktion |
 
 :::info
-Jede Umgebung hat ihren eigenen Satz von API-Endpunkten, Datenbanken und Konfiguration. Umgebungsspezifische Einstellungen werden lokal über `.env`-Dateien und in bereitgestellten Umgebungen über AWS SSM Parameter Store verwaltet.
+Jede Umgebung hat ihre eigenen API-Endpunkte, Datenbanken und Konfiguration. Umgebungsspezifische Einstellungen werden durch `.env`-Dateien lokal und AWS SSM Parameter Store in bereitgestellten Umgebungen verwaltet.
 :::

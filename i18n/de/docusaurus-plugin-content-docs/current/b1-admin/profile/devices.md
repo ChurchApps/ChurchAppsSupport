@@ -6,57 +6,57 @@ title: "Geräte verwalten"
 
 <div class="article-intro">
 
-Auf der Geräteseite können Sie ChurchAppsPlayer- und FreePlay-Geräte verwalten, die mit Ihrem Konto verbunden sind. Diese Geräte werden verwendet, um Inhalte zu streamen und Kirchenmedien auf Bildschirmen an Ihrem Standort anzuzeigen.
+Die Seite "Geräte" ermöglicht es dir, ChurchAppsPlayer und FreePlay-Geräte zu verwalten, die mit deinem Konto verbunden sind. Diese Geräte werden verwendet, um Inhalte zu streamen und Kirchenmedien auf Bildschirmen an deinem Standort anzuzeigen.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du beginnst</h4>
 
-- Haben Sie ein ChurchAppsPlayer-Gerät eingeschaltet und mit dem Internet verbunden
-- Notieren Sie sich den auf dem Bildschirm des Geräts angezeigten Kopplungscode
-- Überprüfen Sie Ihre [Profileinstellungen](./managing-profile.md), falls noch nicht geschehen
+- Ein ChurchAppsPlayer-Gerät eingeschaltet und mit dem Internet verbunden
+- Notiere dir den Kopplungscode, der auf dem Gerätbildschirm angezeigt wird
+- Überprüfe deine [Profileinstellungen](./managing-profile.md), wenn du dies noch nicht getan hast
 
 </div>
 
-## Ihre Geräte anzeigen
+## Anzeigen deiner Geräte
 
-Wenn Sie die Geräteseite öffnen, sehen Sie eine Tabelle mit allen registrierten Geräten und folgenden Informationen:
+Wenn du die Seite "Geräte" öffnest, siehst du eine Tabelle, die alle registrierten Geräte mit den folgenden Informationen auflistet:
 
-- **Bezeichnung** -- Der Name, den Sie dem Gerät zugewiesen haben.
-- **Registrierungsdatum** -- Wann das Gerät zum ersten Mal mit Ihrem Konto gekoppelt wurde.
-- **Letztes Aktivitätsdatum** -- Der letzte Zeitpunkt, zu dem sich das Gerät mit Ihrem Konto verbunden hat.
+- **Label** – Der Name, den du dem Gerät zugewiesen hast.
+- **Registrierungsdatum** – Wann das Gerät zum ersten Mal mit deinem Konto gekoppelt wurde.
+- **Letztes aktives Datum** – Die letzten Zeit, die das Gerät sich mit deinem Konto verbunden hat.
 
-## Ein neues Gerät hinzufügen
+## Hinzufügen eines neuen Geräts
 
-1. Klicken Sie oben auf der Geräteseite auf die Schaltfläche **Gerät hinzufügen**.
-2. Sie werden aufgefordert, einen **Kopplungscode** einzugeben.
-3. Suchen Sie den auf dem ChurchAppsPlayer- oder FreePlay-Gerät angezeigten Kopplungscode, das Sie verbinden möchten.
-4. Geben Sie den Code ein. Handelt es sich um einen FreePlay-Fernseher, können Sie mit dem Dropdown **Pläne anzeigen für** den Plan-Typ auswählen, dem der Bildschirm folgen soll -- lassen Sie es auf **Keiner**, um das Gerät nur zum Durchsuchen von Inhalten und für Benachrichtigungen zu verwenden.
-5. Bestätigen. Das Gerät erscheint in Ihrer Gerätetabelle, sobald es erfolgreich gekoppelt wurde.
-
-:::tip
-Stellen Sie sicher, dass das Gerät eingeschaltet und mit dem Internet verbunden ist, bevor Sie versuchen, es zu koppeln. Der Kopplungscode wird auf dem Bildschirm des Geräts angezeigt.
-:::
-
-## Eine Gerätebezeichnung bearbeiten
-
-1. Klicken Sie in der Gerätetabelle auf den **Gerätenamen**.
-2. Aktualisieren Sie die Bezeichnung mit etwas Aussagekräftigem (zum Beispiel „Hauptbildschirm Gottesdienstraum" oder „Foyer-Anzeige").
-3. Speichern Sie Ihre Änderungen.
+1. Klicke auf die Schaltfläche **Gerät hinzufügen** oben auf der Seite "Geräte".
+2. Du wirst aufgefordert, einen **Kopplungscode** einzugeben.
+3. Finde den Kopplungscode, der auf dem ChurchAppsPlayer- oder FreePlay-Gerät angezeigt wird, das du verbinden möchtest.
+4. Gib den Code ein. Wenn es ein FreePlay TV ist, ermöglicht ein Dropdown-Menü **Pläne anzeigen für** dir, den Plantyp auszuwählen, dem der Bildschirm folgen soll – lasse ihn auf **Keine** um das Gerät nur zum Durchsuchen und Benachrichtigungen zu verwenden.
+5. Bestätige. Das Gerät wird in deiner Gerätetabelle angezeigt, sobald es erfolgreich gekoppelt ist.
 
 :::tip
-Die Verwendung klarer, aussagekräftiger Bezeichnungen erleichtert die Identifizierung, welches Gerät welches ist, besonders wenn Sie mehrere Bildschirme in Ihrer Kirche eingerichtet haben.
+Stelle sicher, dass das Gerät eingeschaltet und mit dem Internet verbunden ist, bevor du versuchst, es zu koppeln. Der Kopplungscode wird auf dem Gerätbildschirm angezeigt.
 :::
 
-## Gerätezugriff verwalten
+## Bearbeiten einer Gerätebezeichnung
 
-Verwenden Sie die Geräteseite, um zu verfolgen, welche Geräte Zugriff auf den Streaming- und Content-Bereich Ihrer Kirche haben. Wenn ein Gerät nicht mehr verwendet wird, können Sie es aus Ihrem Konto entfernen, um Ihre Geräteliste übersichtlich und sicher zu halten.
+1. Klicke auf den **Gerätenamen** in der Gerätetabelle.
+2. Aktualisiere das Label zu etwas Beschreibendem (z. B. "Sanctuary Main Screen" oder "Lobby Display").
+3. Speichere deine Änderungen.
+
+:::tip
+Die Verwendung von klaren, beschreibenden Bezeichnungen macht es einfach zu erkennen, welches Gerät welches ist, besonders wenn du mehrere Bildschirme in deiner Kirche eingerichtet hast.
+:::
+
+## Verwalten des Gerätezugriffs
+
+Verwende die Seite "Geräte", um zu verfolgen, welche Geräte Zugriff auf das Streaming und die Inhalte deiner Kirche haben. Wenn ein Gerät nicht mehr verwendet wird, kannst du es von deinem Konto entfernen, um deine Geräteliste sauber und sicher zu halten.
 
 :::warning
-Überprüfen Sie regelmäßig Ihre verbundenen Geräte, um sicherzustellen, dass nur aktive, autorisierte Geräte mit Ihrem Konto verknüpft sind. Entfernen Sie alle Geräte, die nicht mehr verwendet werden, um die Sicherheit zu gewährleisten.
+Überprüfe regelmäßig deine verbundenen Geräte, um sicherzustellen, dass nur aktive, autorisierte Geräte mit deinem Konto verknüpft sind. Entferne alle Geräte, die nicht mehr verwendet werden, um die Sicherheit zu gewährleisten.
 :::
 
 ## Nächste Schritte
 
-- [Ihr Profil verwalten](./managing-profile.md) -- Ihre persönlichen Kontoeinstellungen bearbeiten
+- [Profil verwalten](./managing-profile.md) – Bearbeite deine persönlichen Kontoeinstellungen

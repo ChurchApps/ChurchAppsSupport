@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Online-Spendenverwaltung einrichten"
 ---
 

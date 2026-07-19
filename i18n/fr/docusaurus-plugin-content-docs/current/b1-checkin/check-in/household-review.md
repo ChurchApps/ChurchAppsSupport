@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Examen de votre ménage"
 ---
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Banco de Dados"
 ---
 

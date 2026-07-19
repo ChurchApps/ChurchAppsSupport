@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Finaliser l'enregistrement"
 ---
 

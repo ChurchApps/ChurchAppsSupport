@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Registrazione Ospiti"
 ---
 

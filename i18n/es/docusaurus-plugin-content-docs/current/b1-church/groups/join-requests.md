@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Solicitando Unirse a un Grupo"
 ---
 

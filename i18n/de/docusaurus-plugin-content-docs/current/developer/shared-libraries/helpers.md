@@ -6,33 +6,33 @@ title: "Helpers"
 
 <div class="article-intro">
 
-Das `@churchapps/helpers`-Paket bietet Basisdienstprogramme, die von allen ChurchApps-Projekten verwendet werden, sowohl Frontend als auch Backend. Es ist Framework-agnostisch und enthält allgemeine Helfer wie `DateHelper`, `ApiHelper`, `CurrencyHelper`, plus die gemeinsamen TypeScript-Schnittstellen, die den Datenvertrag zwischen Apps und APIs bilden.
+Das `@churchapps/helpers`-Paket bietet Basis-Utilities, die von allen ChurchApps-Projekten verwendet werden, sowohl Frontend als auch Backend. Es ist Framework-agnostisch und enthält häufige Helfer wie `DateHelper`, `ApiHelper`, `CurrencyHelper`, plus die gemeinsamen TypeScript-Schnittstellen, die den Datenvertrag zwischen Apps und APIs bilden.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Installieren Sie **Node.js** und **Git** -- siehe [Voraussetzungen](../setup/prerequisites)
-- Machen Sie sich mit dem [Packages-Arbeitsbereich](./index.md)-Setup und Release-Flow vertraut
+- Installieren Sie **Node.js** und **Git** — siehe [Voraussetzungen](../setup/prerequisites)
+- Machen Sie sich mit dem [Packages Workspace](./index.md) Setup und Release-Workflow vertraut
 
 </div>
 
-## Wer verbraucht das
+## Wer konsumiert dies
 
-Jede ChurchApps-API (die Core-Api, AskApi und LessonsApi) und jedes Web-Frontend (B1Admin, B1App, B1Transfer, LessonsApp) ist direkt von diesem Paket abhängig. Frontends erhalten viele seiner Exporte (`ApiHelper`, `DateHelper`, `UserHelper` und andere Schnittstellen) auch wieder exportiert durch [`@churchapps/apphelper`](./app-helper). Die anderen gemeinsamen Pakete deklarieren es als Peer-Abhängigkeit, daher löst jede App genau eine Kopie auf.
+Jede ChurchApps-API (die Kern-Api, AskApi und LessonsApi) und jedes Web-Frontend (B1Admin, B1App, B1Transfer, LessonsApp) hängt direkt von diesem Paket ab. Frontends erhalten auch viele seiner Exporte (`ApiHelper`, `DateHelper`, `UserHelper` und andere Schnittstellen), die durch [`@churchapps/apphelper`](./app-helper) neu exportiert werden. Die anderen gemeinsamen Pakete deklarieren es als eine Peer-Abhängigkeit, daher jede App löst sich genau eine Kopie auf.
 
 ## Setup für lokale Entwicklung
 
-Dieses Paket befindet sich im [Packages](https://github.com/ChurchApps/Packages)-Arbeitsbereich neben den anderen gemeinsamen Bibliotheken:
+Dieses Paket lebt im [Packages](https://github.com/ChurchApps/Packages) Workspace neben den anderen gemeinsamen Bibliotheken:
 
-1. Klonen Sie den Arbeitsbereich:
+1. Klonen Sie den Workspace:
 
    ```bash
    git clone https://github.com/ChurchApps/Packages.git
    ```
 
-2. Installieren Sie Abhängigkeiten im Arbeitsbereich-Root:
+2. Installieren Sie Abhängigkeiten im Workspace-Root:
 
    ```bash
    cd Packages && yarn install
@@ -44,25 +44,16 @@ Dieses Paket befindet sich im [Packages](https://github.com/ChurchApps/Packages)
    yarn workspace @churchapps/helpers build
    ```
 
-   Oder führen Sie `yarn build` im Root aus, um jedes Paket in Abhängigkeitsreihenfolge zu bauen.
+## Publishing
 
-Um Änderungen in einem verbrauchenden Projekt zu testen, verwenden Sie ein temporäres Yarn-Portal -- siehe [Lokale Entwicklung gegen eine verbrauchende App](./index.md#local-development-against-a-consuming-app).
-
-## Veröffentlichung
-
-Releases erfolgen durch Changesets statt manueller Versionsstöße:
-
-1. Führen Sie `yarn changeset` im Arbeitsbereich-Root aus und wählen Sie `@churchapps/helpers` mit dem entsprechenden Bump-Typ; committen Sie die generierte Changeset-Datei mit Ihrer Änderung.
-2. Wenn Sie bereit sind zu veröffentlichen, führen Sie `yarn publish-all` im Root aus -- es stößt Versionen an, schreibt CHANGELOGs, bauen in Abhängigkeitsreihenfolge und veröffentlicht zu npm.
-
-Neue gemeinsame Schnittstellen werden in `helpers/src/interfaces/` abgelegt und durch das Paketfass wieder exportiert. Der Katalog der Website-Builder-Element-Typen (`ElementTypes.ts` -- 35 Typen mit ihren Antwort-Schemas) befindet sich auch hier; es ist der Vertrag, der von den AppHelper-Renderern, den B1Admin-Editor-Formularen und den KI-Generierungs-Prompts gemeinsam genutzt wird (siehe [Website-Builder-Architektur](../architecture/website-builder)).
+Releases gehen durch Changesets: Führen Sie `yarn changeset` im Workspace-Root aus, dann `yarn publish-all` wenn Sie bereit sind, zu veröffentlichen. Siehe die [Shared Libraries Overview](./index.md#releasing-with-changesets) für den vollständigen Flow.
 
 :::warning
-Da dieses Paket von jedem ChurchApps-Projekt verwendet wird, haben Änderungen eine breite Auswirkung. Eine Veröffentlichung von `helpers` stößt automatisch `apihelper` und `apphelper` an, damit ihre Abhängigkeitsbereiche aktuell bleiben. Testen Sie mit einem Yarn-Portal in mindestens einer verbrauchenden API und einer verbrauchenden Web-App, bevor Sie veröffentlichen.
+Da dieses Paket von jedem ChurchApps-Projekt verwendet wird, haben Änderungen hier eine breite Auswirkung. Testen Sie mit einem Yarn-Portal in mindestens einer konsumierenden API und einer konsumierenden Web-App vor der Veröffentlichung.
 :::
 
 ## Verwandte Artikel
 
-- **[ApiHelper](./api-helper)** -- Serverseitige Dienstprogramme, die von diesem Paket abhängen
-- **[AppHelper](./app-helper)** -- React-Komponenten, die von diesem Paket abhängen
-- **[Übersicht der gemeinsamen Bibliotheken](./index.md)** -- Arbeitsbereich-Setup, Release-Flow und Local-Link-Workflow
+- **[ApiHelper](./api-helper)** — Server-seitige Utilities, die von diesem Paket abhängen
+- **[AppHelper](./app-helper)** — React-Komponenten, die von diesem Paket abhängen
+- **[Shared Libraries Overview](./index.md)** — Workspace-Setup, Release-Flow und Local-Link-Workflow

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Pag-register para sa Mga Kaganapan"
 ---
 

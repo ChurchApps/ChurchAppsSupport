@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Iscrizione dei Volontari"
 ---
 

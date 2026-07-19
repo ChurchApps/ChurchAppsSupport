@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Delte biblioteker"
 ---
 

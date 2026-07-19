@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Utiliser l'éditeur de page"
 ---
 

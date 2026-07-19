@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Registrierung für Veranstaltungen"
 ---
 

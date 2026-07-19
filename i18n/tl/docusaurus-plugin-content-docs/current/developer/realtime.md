@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Real-time Architecture"
 ---
 

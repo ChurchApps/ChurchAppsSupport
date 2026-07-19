@@ -1,0 +1,15 @@
+{
+  "status": "in_progress",
+  "files_translated": 50,
+  "total_files": 74,
+  "percent_complete": 67.57,
+  "remaining_files": 24,
+  "last_translated": [
+    "b1-church/getting-started/navigating.md",
+    "b1-church/getting-started/me-page.md",
+    "b1-church/getting-started/installing-pwa.md",
+    "b1-church/events/requesting-events.md",
+    "b1-church/events/my-registrations.md"
+  ],
+  "note": "Remaining files include: group conversations, event RSVPs, developer API endpoints (attendance, content, giving, membership), architecture docs, deployment docs, realtime, web-push, and freeplay docs"
+}

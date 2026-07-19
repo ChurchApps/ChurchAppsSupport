@@ -6,22 +6,22 @@ title: "Zapier"
 
 <div class="article-intro">
 
-Die offizielle B1.church-App auf Zapier lässt einen Zap auf Ereignisse in Ihrer Kirche reagieren (neue Person, neue Spende, neues Gruppenmitglied, …) und Datensätze zurück in B1 schreiben. Keine Programmierung, keine Infrastruktur -- Sie verbinden alles im Drag-and-Drop-Editor von Zapier, fügen einen API-Schlüssel ein und aktivieren den Zap.
+Die offizielle B1.church-App auf Zapier ermöglicht es einem Zap, auf Events in deiner Kirche zu reagieren (neue Person, neue Spende, neues Gruppenmitglied, …) und Records zu B1 zurückzuschreiben. Keine Kodierung, keine Infrastruktur – du verbindest es im Drag-and-Drop-Editor von Zapier, fügst einen API-Schlüssel ein und schaltests den Zap ein.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du beginnst</h4>
 
-- Ein [Zapier](https://zapier.com)-Konto (die kostenlose Stufe reicht für eine Handvoll Zaps)
-- Ein Kirchenadministrator mit der Berechtigung **Einstellungen bearbeiten** in B1Admin (Sie erstellen einen API-Schlüssel)
-- Eine Vorstellung davon, was Sie tun möchten -- z. B. „wenn eine Person in B1 hinzugefügt wird, sie zu meiner Mailchimp-Liste hinzufügen"
+- Ein [Zapier](https://zapier.com)-Konto (die kostenlose Version reicht für ein Dutzend Zaps)
+- Ein Kirchenadmin mit der Berechtigung **Bearbeite Einstellungen** in B1Admin (du wirst einen API-Schlüssel erstellen)
+- Eine Idee, was du tun möchtest – z. B. "wenn eine Person in B1 hinzugefügt wird, füge sie meiner Mailchimp-Liste hinzu"
 
 </div>
 
 ## Trigger und Aktionen
 
-| Typ | Was | B1-Ereignis/Endpunkt |
+| Typ | Was | B1-Event / Endpunkt |
 |---|---|---|
 | **Trigger** | Neue Person | `person.created` |
 | **Trigger** | Aktualisierte Person | `person.updated` |
@@ -29,79 +29,79 @@ Die offizielle B1.church-App auf Zapier lässt einen Zap auf Ereignisse in Ihrer
 | **Trigger** | Neues Gruppenmitglied | `group.member.added` |
 | **Trigger** | Neue Formulareinreichung | `form.submission.created` |
 | **Aktion** | Person erstellen | fügt eine neue Person hinzu |
-| **Aktion** | Spende hinzufügen | erfasst eine Spende |
-| **Aktion** | Gruppenmitglied hinzufügen | fügt einer Gruppe eine Person hinzu |
-| **Suche** | Person suchen | sucht eine Person nach ID, E-Mail oder Name |
+| **Aktion** | Spende hinzufügen | zeichnet eine Spende auf |
+| **Aktion** | Gruppenmitglied hinzufügen | fügt eine Person zu einer Gruppe hinzu |
+| **Aktion** | Person finden | sucht eine Person nach ID, E-Mail oder Name; schlägt die Aufgabe fehl, wenn niemand übereinstimmt |
 
-Kombinieren Sie diese frei mit jeder der über 7.000 unterstützten Apps von Zapier.
+Kombiniere diese frei mit jedem der 7.000+ unterstützten Apps von Zapier.
 
 ## Einrichtung
 
-### 1. Einen B1-API-Schlüssel erstellen
+### 1. Erstelle einen B1 API-Schlüssel
 
-1. Gehen Sie in B1Admin zu **Einstellungen → Entwickler → API-Schlüssel**.
-2. Klicken Sie auf **Neuer API-Schlüssel**, geben Sie ihm einen Namen wie „Zapier" und wählen Sie die Bereiche, die der Zap benötigt.
-3. **Wichtig:** Zapier-Trigger registrieren beim Aktivieren des Zaps in Ihrem Namen einen Webhook, was den Bereich **`settings:write`** erfordert. Fügen Sie immer `settings:write` hinzu, wenn einer Ihrer Zaps einen B1-Trigger verwendet.
-4. Gewähren Sie auch die Bereiche, die die Aktionen benötigen -- zum Beispiel benötigt eine Aktion „Spende hinzufügen" `donations:write`, „Person erstellen" benötigt `people:write`.
-5. Speichern. Der vollständige `cak_…`-Schlüssel wird **einmal** angezeigt -- kopieren Sie ihn.
+1. Gehe in B1Admin zu **Einstellungen → Entwickler → API-Schlüssel**.
+2. Klicke auf **Neuer API-Schlüssel**, gib ihm einen Namen wie "Zapier" und wähle die Scopes, die der Zap benötigt.
+3. **Wichtig:** Zapier registriert bei deinem Namen einen Webhook, wenn sich der Zap anschaltet, was den Scope **`settings:write`** erfordert. Beziehe immer `settings:write` ein, wenn einer deiner Zaps einen B1-Trigger verwendet.
+4. Gewähre auch die Scopes, die Aktionen benötigen – beispielsweise benötigt eine "Spende hinzufügen"-Aktion `donations:write`, "Person erstellen" benötigt `people:write`.
+5. Speichern. Der volle `cak_…`-Schlüssel wird **nur einmal** angezeigt – kopiere ihn.
 
-### 2. Zapier mit B1 verbinden
+### 2. Verbinde Zapier mit B1
 
-1. Erstellen Sie in Zapier einen neuen Zap.
-2. Wenn Sie zum ersten Mal einen B1-Trigger oder eine B1-Aktion auswählen, fordert Zapier Sie auf, sich **bei B1.church anzumelden**.
-3. Fügen Sie den API-Schlüssel aus Schritt 1 ein und klicken Sie auf **Ja, weiter**. Zapier überprüft ihn gegen Ihre Kirche.
+1. Erstelle in Zapier einen neuen Zap.
+2. Wenn du zum ersten Mal einen B1-Trigger oder eine Aktion auswählst, fragt dich Zapier, dich **bei B1.church anzumelden**.
+3. Füge den API-Schlüssel aus Schritt 1 ein und klicke auf **Ja, weiterfahren**. Zapier validiert es gegen deine Kirche.
 
-Die Verbindung wird in Zapier gespeichert und von jedem Zap in Ihrem Konto wiederverwendet.
+Die Verbindung wird in Zapier gespeichert und von jedem Zap auf deinem Konto wiederverwendet.
 
-### 3. Den Zap erstellen
+### 3. Baue den Zap
 
-Wählen Sie einen Trigger und fügen Sie dann einen oder mehrere Aktionsschritte hinzu. Beispiele unten.
+Wähle einen Trigger und füge dann einen oder mehrere Aktionsschritte hinzu. Beispiele unten.
 
-## Gängige Rezepte
+## Häufige Rezepte
 
-### Neue B1-Personen zu Mailchimp hinzufügen
+### Füge neue B1-Personen zu Mailchimp hinzu
 
-- **Trigger** -- B1: Neue Person
-- **Aktion** -- Mailchimp: Abonnent hinzufügen/aktualisieren. Ordnen Sie B1s `name__first`, `name__last`, `contactInfo__email` den Feldern Vorname/Nachname/E-Mail von Mailchimp zu.
+- **Trigger** – B1: Neue Person
+- **Aktion** – Mailchimp: Abonnent hinzufügen/aktualisieren. Ordne B1's `name__first`, `name__last`, `contactInfo__email` in Mailchimps Felder "Vorname / Nachname / E-Mail" zu.
 
-### Spenden mit einer reichhaltigeren Karte als der integrierte Connector in einen Slack-Kanal posten
+### Sende Spenden auf einen Slack-Kanal mit einer reichhaltigeren Karte als der integrierte Connector
 
-- **Trigger** -- B1: Neue Spende
-- **Aktion** -- Slack: Kanalnachricht senden. Erstellen Sie ein beliebiges Layout -- Schaltflächen, Anhänge usw. --, das der integrierte [Slack-Connector](./slack-discord) nicht kann.
+- **Trigger** – B1: Neue Spende
+- **Aktion** – Slack: Sende Kanalnachricht. Komponiere ein beliebiges Layout – Buttons, Anhänge usw. – das der integrierte [Slack-Connector](./slack-discord) nicht kann.
 
-### Neue Gruppenmitglieder zu einer Google-Gruppe hinzufügen
+### Füge neue Gruppenmitglieder zu einer Google-Gruppe hinzu
 
-- **Trigger** -- B1: Neues Gruppenmitglied (gefiltert auf eine bestimmte `groupId`)
-- **Aktion** -- Nach Zapier filtern: nur fortfahren, wenn die B1-Gruppe die ist, die Sie interessiert
-- **Aktion** -- B1: Person suchen (mit der `personId` des Triggers, um die E-Mail zu erhalten)
-- **Aktion** -- Google Groups: Mitglied hinzufügen
+- **Trigger** – B1: Neues Gruppenmitglied (gefiltert zu einer bestimmten `groupId`)
+- **Aktion** – Filtere nach Zapier: fahre nur fort, wenn die B1-Gruppe diejenige ist, die dich interessiert
+- **Aktion** – B1: Finde Person (verwende die Trigger-`personId` um die E-Mail zu abrufen)
+- **Aktion** – Google-Gruppen: Mitglied hinzufügen
 
-### Formulareinreichungen an einen Projekt-Tracker weiterleiten
+### Leite Formulareinreichungen an einen Project-Tracker weiter
 
-- **Trigger** -- B1: Neue Formulareinreichung
-- **Aktion** -- Notion / Linear / Asana / Trello: Seite / Vorgang / Aufgabe erstellen
+- **Trigger** – B1: Neue Formulareinreichung
+- **Aktion** – Notion / Linear / Asana / Trello: Seite / Problem / Aufgabe erstellen
 
 ## Wie Trigger unter der Haube funktionieren
 
-Trigger sind **REST-Hooks**, kein Polling -- Zapier fragt B1 nicht alle 15 Minuten an. Wenn Sie den Zap aktivieren, bittet Zapier B1, einen Webhook zu registrieren, der auf eine private Zapier-URL zeigt; wenn das Ereignis eintritt, sendet B1 den Umschlag per POST an Zapier, und Ihr Zap startet **innerhalb von Sekunden**. Schalten Sie den Zap aus, bittet Zapier B1, den Webhook zu löschen -- keine verwaisten Abonnements.
+Trigger sind **REST-Hooks**, kein Polling – Zapier pingt B1 nicht alle 15 Minuten an. Wenn du den Zap anschaltests, fragt Zapier B1, einen Webhook zu registrieren, der auf eine private Zapier-URL verweist; wenn das Event feuert, POSTet B1 die Envelope zu Zapier und dein Zap beginnt **innerhalb von Sekunden**. Schalte den Zap aus und Zapier fragt B1, den Webhook zu löschen – keine verwaisten Abos.
 
-Das bedeutet, dass der Trigger nur für Ereignisse ausgelöst wird, die eintreten, **nachdem** der Zap aktiviert wurde. Es gibt kein Backfill -- das Aktivieren eines Zaps spielt nicht die Spenden von gestern erneut ab.
+Dies bedeutet, dass der Trigger nur für Events auslöst, die **nach** dem Anschalten des Zaps auftreten. Es gibt keine Rückfüllung – das Anschalten eines Zaps spielt nicht die Spenden von gestern ab.
 
-## Einschränkungen & Hinweise
+## Limits & Anmerkungen
 
-- **Mehrere Zaps mit demselben Trigger** registrieren jeweils ihren eigenen B1-Webhook -- es gibt keinen Konflikt, aber es ist gut zu wissen, wenn Sie **Einstellungen → Entwickler → Webhooks** untersuchen und sich fragen, warum dort drei identische Zeilen `Zapier — donation.created` stehen.
-- **Testdaten beim Einrichten des Zaps** -- beim Erstellen eines Zaps fragt Zapier nach Beispieldaten für die Feldzuordnung. Es holt das aktuellste passende Ereignis von B1, falls vorhanden; andernfalls verwendet es ein synthetisches Beispiel aus der App-Definition.
-- **Aktionsfehler erscheinen als Zap-Fehler** im Aufgabenverlauf von Zapier. Häufige Ursache: ein API-Schlüssel ohne den richtigen Bereich (z. B. benötigt eine Aktion „Spende hinzufügen" `donations:write`). Erstellen Sie den Schlüssel mit den richtigen Bereichen neu und verbinden Sie ihn in Zapier erneut.
-- **Kontingente für ausgehende API-Aufrufe** -- jeder B1-API-Aufruf aus einer Aktion zählt zu Ihrem Zapier-Aufgabenkontingent, nicht zu irgendetwas auf der B1-Seite.
+- **Mehrere Zaps mit dem gleichen Trigger** registrieren jeweils ihren eigenen B1-Webhook – es gibt keinen Konflikt, aber es ist erwähnenswert, wenn du **Einstellungen → Entwickler → Webhooks** überprüfst und dich wunderst, warum dort drei identische Zeilen "Zapier — donation.created" sind.
+- **Testdaten im Zap-Setup** – Wenn du einen Zap erstellst, fragt dich Zapier nach Musterdaten, um Felder zuordnen zu können. Es zieht das neueste übereinstimmende Event von B1, falls vorhanden; andernfalls verwendet es ein synthetisches Sample aus der App-Definition.
+- **Aktionsfehler erscheinen als Zap-Fehler** in der Task-Verlauf von Zapier. Häufige Ursache: Ein API-Schlüssel ohne den richtigen Scope (z. B. benötigt eine "Spende hinzufügen"-Aktion `donations:write`). Präge den Schlüssel erneut mit den korrekten Scopes und verbinde ihn erneut in Zapier.
+- **Quoten für ausgehende API-Aufrufe** – jeder B1 API-Aufruf von einer Aktion zählt zu deiner Zapier-Task-Quote, nicht zu irgendwas auf B1-Seite.
 
 ## Fehlerbehebung
 
-- **„Authentifizierung fehlgeschlagen"** beim Verbinden -- der API-Schlüssel ist falsch, widerrufen oder es fehlen die Bereiche, die der Zap benötigt. Erstellen Sie ihn in B1Admin mit mindestens `settings:write` plus allen benötigten Ressourcenbereichen neu und aktualisieren Sie die Verbindung.
-- **Trigger löst nie aus** -- bestätigen Sie, dass der Webhook tatsächlich registriert wurde: in B1Admin sollte unter **Einstellungen → Entwickler → Webhooks** nun eine Zeile namens „Zapier — &lt;Ereignis&gt;" erscheinen. Falls nicht, fehlte dem API-Schlüssel wahrscheinlich `settings:write`, als Sie den Zap aktivierten. Korrigieren Sie den Schlüssel und schalten Sie den Zap aus und wieder ein.
-- **Trigger löst zweimal aus** -- Zapier liefert gelegentlich erneut zu, wenn seine Bestätigung verloren ging. Verwenden Sie bei Bedarf strikter Deduplizierung einen Schritt „Nach Zapier filtern" auf einer eindeutigen ID (z. B. der `id` der Person).
+- **"Authentifizierung fehlgeschlagen"** beim Verbinden – Der API-Schlüssel ist falsch, widerrufen oder es fehlen die Scopes, die der Zap benötigt. Präge ihn erneut in B1Admin mit mindestens `settings:write` plus den Ressourcen-Scopes, die der Zap berührt, neu, dann aktualisiere die Verbindung.
+- **Trigger feuert nie** – Bestätige, dass der Webhook tatsächlich registriert wurde: In B1Admin sollte **Einstellungen → Entwickler → Webhooks** nun eine Zeile mit dem Namen "Zapier – &lt;event&gt;" anzeigen. Wenn es nicht dort ist, fehlte dem API-Schlüssel wahrscheinlich `settings:write`, als du den Zap anschaltests. Behebe den Schlüssel, schalte den Zap aus und wieder an.
+- **Trigger feuert zweimal** – Zapier liefert gelegentlich neu aus, wenn die Bestätigung verloren ging. Verwende einen "Zapier-Filter"-Schritt auf einer eindeutigen ID (z. B. der Personen-`id`), wenn du strikte Deduplizierung benötigst.
 
 ## Siehe auch
 
-- [Make](./make) -- dasselbe Muster, andere Plattform
-- [Slack & Discord](./slack-discord) -- einfachere Chat-Benachrichtigungen ohne Zapier
-- [Webhooks (Entwicklerreferenz)](/docs/developer/api/webhooks)
+- [Make](./make) – gleiches Muster, andere Plattform
+- [Slack & Discord](./slack-discord) – einfachere Chat-Benachrichtigungen ohne Zapier
+- [Webhooks (Developer-Referenz)](/docs/developer/api/webhooks)

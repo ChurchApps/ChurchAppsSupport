@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Modulstruktur"
 ---
 
@@ -11,22 +11,22 @@ Jedes API-Modul folgt einer konsistenten internen Struktur mit Controllern, Repo
 </div>
 
 <div class="prereqs">
-<h4>Vor dem Start</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Richten Sie die API lokal ein — siehe [Lokales API-Setup](./local-setup)
-- Überprüfen Sie die [Datenbank](./database)-Architektur um die Datenzugriffschicht zu verstehen
+- Richten Sie die API lokal ein -- siehe [Lokale API-Einrichtung](./local-setup)
+- Sehen Sie sich die [Datenbank](./database)-Architektur an, um die Datenzugriffsschicht zu verstehen
 
 </div>
 
-## Verzeichnislayout
+## Verzeichnis-Layout
 
-Module befinden sich unter `src/modules/{name}/`. Ein typisches Modul enthält vier Verzeichnisse:
+Module liegen unter `src/modules/{name}/`. Ein typisches Modul enthält vier Verzeichnisse:
 
 ```
 src/modules/{name}/
-├── controllers/    ← Route Handler (Express Endpunkte)
-├── repositories/   ← Datenzugriffschicht (typisierte SQL Queries)
-├── models/         ← TypeScript Interfaces und Typen
+├── controllers/    ← Routen-Handler (Express-Endpunkte)
+├── repositories/   ← Datenzugriffsschicht (typisierte SQL-Abfragen)
+├── models/         ← TypeScript-Schnittstellen und Typen
 └── helpers/        ← Modulspezifische Geschäftslogik
 ```
 
@@ -50,24 +50,24 @@ src/modules/membership/
     └── ...
 ```
 
-Die sechs Kern-Datenmodule — membership, attendance, content, giving, messaging und doing — folgen alle diesem Layout. Ein paar spezialisierte Module (wie reporting, das Berichte über Module hinweg bereitstellt und keine eigenen Daten besitzt) befinden sich neben ihnen unter `src/modules/`.
+Die sechs Kern-Datenmodule -- membership, attendance, content, giving, messaging und doing -- folgen alle diesem Layout. Ein paar spezialisierte Module (etwa reporting, das modulübergreifende Berichte bedient und keine eigenen Daten besitzt) sitzen daneben unter `src/modules/`.
 
 ## Eine Anwendung, viele Module
 
-Die API ist ein **modulares Monolith**: Module kennzeichnen Grenzen der Code-Organisation und Datenverantwortung, keine separaten Dienste. Bei Start werden alle Module-Controller in einen einzelnen Dependency-Injection-Container hinter einer Express-Anwendung registriert, so wird die gesamte API gebaut, läuft und deployiert als eine Einheit — die bereitgestellten Funktionen werden alle zu Einstiegspunkten dieser gleichen Anwendung.
+Die API ist ein **modularer Monolith**: Module markieren Grenzen der Code-Organisation und des Datenbesitzes, nicht separate Services. Beim Start werden die Controller jedes Moduls in einem einzigen Dependency-Injection-Container hinter einer Express-Anwendung registriert, sodass die gesamte API als eine Einheit gebaut, ausgeführt und deployt wird -- die unten beschriebenen deployten Funktionen sind alle Einstiegspunkte in dieselbe Anwendung.
 
-Alle Routes eines Moduls befinden sich unter einem URL-Präfix, der dem Modulnamen entspricht:
+Die Routen jedes Moduls liegen unter einem URL-Präfix, das dem Modulnamen entspricht:
 
 ```
 /membership/*    /attendance/*    /content/*
 /giving/*        /messaging/*     /doing/*
 ```
 
-Dies hält jedes Modul der API-Oberfläche in sich geschlossen, während Clients immer noch mit einem einzelnen Host sprechen.
+Das hält die API-Oberfläche jedes Moduls eigenständig, während Clients weiterhin mit einem einzigen Host sprechen.
 
 ## Controller
 
-Controller definieren die API-Routes für ein Modul. Jedes Modul hat seinen eigenen Base-Controller (zum Beispiel `MembershipBaseController`), der den gemeinsamen `BaseController` erweitert — selbst auf `CustomBaseController` aus `@churchapps/apihelper` gebaut. Routes werden mit Inversify Decorators registriert.
+Controller definieren die API-Routen für ein Modul. Jedes Modul hat seinen eigenen Basis-Controller (zum Beispiel `MembershipBaseController`), der den gemeinsamen `BaseController` erweitert -- der selbst auf `CustomBaseController` aus `@churchapps/apihelper` aufbaut. Routen werden mit Inversify-Dekoratoren registriert.
 
 ```typescript
 import express from "express";
@@ -81,7 +81,7 @@ export class PersonController extends MembershipBaseController {
   @httpGet("/recent")
   public async getRecent(req: express.Request, res: express.Response): Promise<any> {
     return this.actionWrapper(req, res, async (au) => {
-      // au = authenticated user context
+      // au = authentifizierter Benutzerkontext
       if (!au.checkAccess(Permissions.people.view)) return this.json({}, 401);
       return this.repos.person.loadRecent(au.churchId);
     });
@@ -89,11 +89,11 @@ export class PersonController extends MembershipBaseController {
 }
 ```
 
-Der `actionWrapper` authentifiziert den Request und hydratisiert `this.repos` mit den Repositories des Moduls, bevor Ihre Action läuft.
+Der `actionWrapper` authentifiziert die Anfrage und hydratisiert `this.repos` mit den Repositories des Moduls, bevor Ihre Aktion ausgeführt wird.
 
-### Route Decorators
+### Routen-Dekoratoren
 
-| Decorator | HTTP-Methode |
+| Dekorator | HTTP-Methode |
 |-----------|-------------|
 | `@httpGet("/path")` | GET |
 | `@httpPost("/path")` | POST |
@@ -101,11 +101,11 @@ Der `actionWrapper` authentifiziert den Request und hydratisiert `this.repos` mi
 | `@httpPatch("/path")` | PATCH |
 | `@httpDelete("/path")` | DELETE |
 
-Der `@controller("/base")` Decorator setzt den Basispfad für alle Routes im Controller.
+Der Dekorator `@controller("/base")` legt den Basispfad für alle Routen im Controller fest.
 
 ## Repositories
 
-Repositories handhaben alle Datenbankoperationen. Es gibt kein ORM — Queries sind mit dem Kysely Query Builder geschrieben, typisiert gegen das Datenbankschema des Moduls. Jedes Modul's `db/index.ts` exponiert eine `getDb()`-Funktion, die eine typisierte Kysely-Instanz des Moduls zurückgibt.
+Repositories übernehmen alle Datenbankoperationen. Es gibt kein ORM -- Abfragen werden mit dem Kysely-Query-Builder geschrieben, typisiert gegen das Datenbankschema des Moduls. Die `db/index.ts` jedes Moduls stellt eine `getDb()`-Funktion bereit, die die typisierte Kysely-Instanz des Moduls zurückgibt.
 
 ```typescript
 import { injectable } from "inversify";
@@ -122,16 +122,16 @@ export class PersonRepo {
 }
 ```
 
-Innerhalb eines Controllers sind die Repositories des Moduls als `this.repos` verfügbar. Außerhalb von Controllern, erhalten Sie sie durch `RepoManager`:
+Innerhalb eines Controllers sind die Repositories des Moduls als `this.repos` verfügbar. Außerhalb von Controllern erhält man sie über `RepoManager`:
 
 ```typescript
 const repos = await RepoManager.getRepos<Repos>("membership");
 const people = await repos.person.loadAll(churchId);
 ```
 
-## Cross-Modul Kommunikation
+## Modulübergreifende Kommunikation
 
-Jedes Modul besitzt seine eigene Datenbank (siehe [Datenbank](./database)), und ein Modul fragt nie direkt eine andere Modultabelle ab. Wenn ein Modul Daten benötigt, die von einem anderen Modul besessen werden — zum Beispiel das doing-Modul, das Menschen aus membership auflöst — geht es durch das besitzende Modul's **Gateway** in `src/shared/modules/`:
+Jedes Modul besitzt seine eigene Datenbank (siehe [Datenbank](./database)), und ein Modul fragt niemals direkt die Tabellen eines anderen Moduls ab. Wenn ein Modul Daten benötigt, die einem anderen gehören -- zum Beispiel das doing-Modul, das Personen aus membership auflöst --, geschieht das über das **Gateway** des besitzenden Moduls in `src/shared/modules/`:
 
 ```typescript
 import { getMembershipModuleGateway } from "../../../shared/modules/index.js";
@@ -139,39 +139,39 @@ import { getMembershipModuleGateway } from "../../../shared/modules/index.js";
 const people = await getMembershipModuleGateway().loadPeople(churchId, personIds);
 ```
 
-Jedes Gateway (`MembershipModuleGateway`, `GivingModuleGateway` usw.) ist ein TypeScript Interface, das genau definiert, welche Operationen das besitzende Modul dem Rest der API exponiert. Das Interface ist der Vertrag: Die aktuellen Implementierungen lesen die besitzende Moduldatenbank in-process, aber da Aufrufer nur vom Interface abhängen, könnte eine Implementierung ausgetauscht werden — zum Beispiel für eine, die HTTP Aufrufe macht — wenn ein Modul je in einen separaten Service extrahiert werden würde.
+Jedes Gateway (`MembershipModuleGateway`, `GivingModuleGateway` und so weiter) ist eine TypeScript-Schnittstelle, die genau definiert, welche Operationen das besitzende Modul dem Rest der API zur Verfügung stellt. Die Schnittstelle ist der Vertrag: Die aktuellen Implementierungen lesen die Datenbank des besitzenden Moduls im selben Prozess, aber da sich Aufrufer nur auf die Schnittstelle verlassen, könnte eine Implementierung ausgetauscht werden -- zum Beispiel gegen eine, die HTTP-Aufrufe macht --, falls ein Modul jemals in einen separaten Service extrahiert würde.
 
 :::info
-Wenn die Daten, die Sie benötigen, in einem anderen Modul leben und sein Gateway keine Operation dafür exponiert, erweitern Sie das Gateway-Interface anstelle von Reaching in die anderen Modul-Repositories oder Datenbank.
+Wenn die Daten, die Sie benötigen, in einem anderen Modul liegen und dessen Gateway keine Operation dafür bereitstellt, erweitern Sie die Gateway-Schnittstelle, statt in die Repositories oder die Datenbank des anderen Moduls hineinzugreifen.
 :::
 
 ## Authentifizierung und Autorisierung
 
 ### JWT-Authentifizierung
 
-Alle Requests werden durch JWT-Tokens authentifiziert, die von `CustomAuthProvider` behandelt werden. Das Token ist automatisch validiert und der authentifizierte Benutzer-Context (`au`) ist in jedem Controller-Action verfügbar.
+Alle Anfragen werden über JWT-Tokens authentifiziert, verarbeitet von `CustomAuthProvider`. Das Token wird automatisch validiert, und der authentifizierte Benutzerkontext (`au`) ist in jeder Controller-Aktion verfügbar.
 
 ### Berechtigungsprüfungen
 
-Nutzen Sie `au.checkAccess()` um zu überprüfen, dass der aktuelle Benutzer die erforderliche Berechtigung hat. Berechtigungen sind vordefinierte Konstanten, die einen Inhaltstyp und eine Action kombinieren:
+Verwenden Sie `au.checkAccess()`, um zu prüfen, ob der aktuelle Benutzer die erforderliche Berechtigung besitzt. Berechtigungen sind vordefinierte Konstanten, die einen Content-Typ und eine Aktion kombinieren:
 
 ```typescript
 au.checkAccess(Permissions.people.view);    // Lesezugriff
 au.checkAccess(Permissions.people.edit);    // Schreibzugriff
 ```
 
-Wenn der Benutzer die erforderliche Berechtigung nicht hat, wird automatisch eine Fehlerantwort zurückgegeben.
+Fehlt dem Benutzer die erforderliche Berechtigung, wird automatisch eine Fehlerantwort zurückgegeben.
 
 :::warning
-Rufen Sie immer `au.checkAccess()` auf, bevor Sie Datenoperationen durchführen. Überspringen Sie nie Berechtigungsprüfungen, auch nicht bei scheinbar schreibgeschützten Endpunkten.
+Rufen Sie immer `au.checkAccess()` auf, bevor Sie Datenoperationen ausführen. Überspringen Sie niemals Berechtigungsprüfungen, auch nicht bei scheinbar nur lesenden Endpunkten.
 :::
 
-## Umgebungs-Konfiguration
+## Umgebungskonfiguration
 
-Die `Environment`-Klasse behandelt Konfiguration über Umgebungen hinweg:
+Die `Environment`-Klasse übernimmt die Konfiguration über Umgebungen hinweg:
 
-- **Lokale Entwicklung:** Liest aus der `.env`-Datei im Projektstammverzeichnis
-- **Bereitgestellte Umgebungen:** Liest aus AWS SSM Parameter Store
+- **Lokale Entwicklung:** Liest aus der `.env`-Datei im Projekt-Root
+- **Deployte Umgebungen:** Liest aus dem AWS SSM Parameter Store
 
 ```typescript
 // Zugriff auf Umgebungsvariablen
@@ -187,12 +187,12 @@ Bei der Bereitstellung auf AWS läuft die API als sechs Lambda-Funktionen:
 
 | Funktion | Zweck |
 |----------|---------|
-| `web` | Behandelt alle HTTP REST API Requests |
-| `socket` | Verwaltet WebSocket-Verbindungen für Echtzeit-Features |
-| `timer15Min` | Alle 30 Minuten geplant für E-Mail-Benachrichtigungen (Name ist historisch) |
+| `web` | Verarbeitet alle HTTP-REST-API-Anfragen |
+| `socket` | Verwaltet WebSocket-Verbindungen für Echtzeit-Funktionen |
+| `timer15Min` | Alle 30 Minuten geplant für E-Mail-Benachrichtigungen (der Name ist historisch bedingt) |
 | `timerMidnight` | Täglich geplant für Digest-E-Mails und Wartung |
-| `timerScheduledTasks` | Täglich geplant für fällige Automationen und überfällige Workflow-Verarbeitung |
-| `timerWebhooks` | Jede Minute geplant, um in der Warteschlange stehende ausgehende Webhooks zuzustellen |
+| `timerScheduledTasks` | Täglich geplant für fällige Automatisierungen und überfällige Workflow-Verarbeitung |
+| `timerWebhooks` | Jede Minute geplant, um in der Warteschlange befindliche ausgehende Webhooks zuzustellen |
 
 :::info
 Lokal läuft die `web`-Funktion auf Port 8084 und die `socket`-Funktion auf Port 8087. Die Timer-Funktionen können während der Entwicklung manuell ausgelöst werden.
@@ -200,6 +200,6 @@ Lokal läuft die `web`-Funktion auf Port 8084 und die `socket`-Funktion auf Port
 
 ## Verwandte Artikel
 
-- **[Datenbank](./database)** — Verbindungszeichenfolgen, Schema-Skripte und Datenzugriffsmuster
-- **[Lokales API-Setup](./local-setup)** — Vollständiger Schritt-für-Schritt-Setup-Guide
-- **[ApiHelper](../shared-libraries/api-helper)** — Die Shared Library, die `CustomBaseController` und Auth Middleware bereitstellt
+- **[Datenbank](./database)** -- Verbindungszeichenfolgen, Schema-Skripte und Datenzugriffsmuster
+- **[Lokale API-Einrichtung](./local-setup)** -- Vollständige Schritt-für-Schritt-Einrichtungsanleitung
+- **[ApiHelper](../shared-libraries/api-helper)** -- Die gemeinsame Bibliothek, die `CustomBaseController` und Auth-Middleware bereitstellt

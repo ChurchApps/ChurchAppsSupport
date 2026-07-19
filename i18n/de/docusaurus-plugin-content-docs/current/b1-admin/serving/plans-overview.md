@@ -1,92 +1,92 @@
 ---
-title: "Planübersicht"
+title: "Pläne-Übersicht"
 ---
 
-# Planübersicht
+# Pläne-Übersicht
 
 <div class="article-intro">
 
-Die Planübersicht gibt Ihnen einen Überblick über alle Freiwilligeneinsätze über mehrere Gottesdiensttermine hinweg auf einmal. Statt jeden Plan einzeln zu öffnen, können Sie sehen, wer in jeder Position in den kommenden Wochen dient -- in einem einzigen Raster -- und schnell erkennen, wo noch Lücken zu füllen sind.
+Die Pläne-Übersicht gibt dir einen Überblick über alle deine Freiwilligen-Zuweisungen über mehrere Servicedate gleichzeitig. Anstatt jeden Plan einzeln zu öffnen, kannst du sehen, wer in jeder Position über kommende Wochen in einem einzigen Grid serving – und schnell alle Lücken erkennen, die noch gefüllt werden müssen.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du beginnst</h4>
 
-- Erstellen Sie mindestens einen Dienst und Plantyp im Bereich Dienst
-- Erstellen Sie [Serviceplan](./plans.md) mit Terminen und Freiwilligenzuweisungen
-- Stellen Sie sicher, dass Ihre Freiwilligen zu Ihrem [Personenverzeichnis](../people/adding-people.md) hinzugefügt wurden
+- Erstelle mindestens ein Ministerium und einen Plan-Typ im Bereich "Dienste"
+- Erstelle [Servicepläne](./plans.md) mit Daten und Freiwilligen-Zuweisungen
+- Stelle sicher, dass deine Freiwilligen zu deinem [Personenverzeichnis](../people/adding-people.md) hinzugefügt wurden
 
 </div>
 
-## Auf die Übersicht zugreifen
+## Zugriff auf die Übersicht
 
-1. Navigieren Sie im Hauptmenü von B1 Admin zu **Dienst**.
-2. Wählen Sie oben auf der Seite eine **Dienst-Registerkarte**.
-3. Klicken Sie auf einen **Plantyp**, um dessen Planliste zu öffnen.
-4. Klicken Sie oben auf der Seite auf die Schaltfläche **Übersicht**.
+1. Navigiere von der Hauptmenü in B1 Admin zu **Dienste**.
+2. Wähle einen **Ministerium-Reiter** oben auf der Seite.
+3. Klicke auf einen **Plan-Typ**, um seine Plan-Liste zu öffnen.
+4. Klicke oben auf der Seite auf die Schaltfläche **Übersicht**.
 
-## Das Übersichtsraster lesen
+## Lesen des Übersichts-Grids
 
-Die Übersicht zeigt ein Raster, in dem:
+Die Übersicht zeigt ein Grid an, in dem:
 
-- **Zeilen** jede Position darstellen (z. B. „Musik: Gitarre", „Technik: Projektion"), gruppiert nach Kategorie
-- **Spalten** bevorstehende Gottesdiensttermine darstellen (z. B. „14. Apr", „21. Apr")
-- **Zellen** den Namen des Freiwilligen anzeigen, der dieser Position an diesem Termin zugewiesen ist
+- **Zeilen** stellen jede Position dar (z. B. "Musik: Gitarre", "Tech: Projektion"), gruppiert nach Kategorie
+- **Spalten** stellen kommende Servicedaten dar (z. B. "14. Apr", "21. Apr")
+- **Zellen** zeigen den Namen des Freiwilligen, der an diesem Datum dieser Position zugewiesen ist
 
-Rot hervorgehobene Zellen sind unbesetzt -- es wurde noch kein Freiwilliger zugewiesen. Dies erleichtert es, Personalengpässe auf einen Blick zu erkennen, ohne jeden Plan einzeln zu öffnen.
+Zellen, die in **Rot** hervorgehoben sind, sind unfilled – kein Freiwilliger wurde noch zugewiesen. Dies macht es einfach, Personalausfallstellen auf einen Blick zu sehen, ohne jeden Plan einzeln zu öffnen.
 
 :::tip
-Freiwilligennamen werden in verkürzter Form angezeigt (Vorname und Anfangsbuchstabe des Nachnamens, z. B. „John D."), um das Raster kompakt zu halten, wenn Sie viele Positionen haben.
+Freiwilligen-Namen werden in einem verkürzten Format angezeigt (Vorname und Nachname-Initial, z. B. "John D."), um das Grid kompakt zu halten, wenn du viele Positionen hast.
 :::
 
-## Freiwillige direkt aus der Übersicht zuweisen
+## Zuweisen von Freiwilligen direkt von der Übersicht
 
-Sie müssen keine einzelnen Pläne öffnen, um leere Plätze zu füllen. Klicken Sie auf eine beliebige Zelle im Raster, um ein Zuweisungspanel für diese Position und dieses Datum zu öffnen. Von dort aus können Sie:
+Du brauchst individuelle Pläne nicht zu öffnen, um leere Plätze zu füllen. Klicke auf eine beliebige Zelle im Grid, um ein Zuweisungs-Panel für diese Position und Datum zu öffnen. Von dort kannst du:
 
-- Eine Person aus Ihrem Team auswählen, die der Position zugewiesen werden soll
-- Auf **Entfernen** neben jedem bereits Zugewiesenen klicken, um sie von diesem Platz zu nehmen
-- Die Änderung speichern, ohne die Übersicht zu verlassen
+- Wähle eine Person von deinem Team aus, um sie zur Position zuzuweisen
+- Klicke auf **Entfernen** neben jemandem, der bereits zugewiesen ist, um ihn von diesem Platz zu entfernen
+- Speichere die Änderung, ohne die Übersicht zu verlassen
 
-Dies ermöglicht es, einen gesamten Zeitplan in einem Durchgang zu besetzen -- arbeiten Sie über Wochen und Positionen hinweg, ohne in einzelne Pläne hinein- und herauszunavigieren.
+Dies macht es möglich, einen ganzen Zeitplan in einem Pass zu staffieren – Arbeite über Wochen und Positionen, ohne in und aus einzelnen Plänen zu navigieren.
 
-## Automatische Planung aus der Übersicht
+## Auto-Planung von der Übersicht
 
-Klicken Sie auf **Automatisch planen**, damit B1 jeden offenen, unbesetzten Platz im aktuellen Raster auf einmal füllt. Für jeden angezeigten Plan werden Kandidaten aus der mit jeder Position verknüpften Gruppe herangezogen, leere Plätze automatisch gefüllt und gemeldet, wie viele der sichtbaren Pläne besetzt werden konnten. Pläne werden nacheinander gefüllt, damit derselbe Freiwillige nicht in einem Durchgang doppelt an zwei Terminen gebucht wird.
+Klicke auf **Auto-Zeitplan**, damit B1 jeden offenen, unfilled-Platz im aktuellen Grid auf einmal füllt. Für jeden Plan in der Ansicht zieht es Kandidaten aus der Gruppe, die an jede Position verknüpft ist, und füllt leere Plätze automatisch aus, berichtend, wie viele der sichtbaren Pläne es füllen konnte. Pläne werden einzeln gefüllt, sodass der gleiche Freiwillige nicht über zwei Daten im gleichen Pass doppelt gebucht wird.
 
 :::info
-Automatisch planen füllt nur bereits leere Plätze -- es ersetzt niemals eine bestehende Zuweisung.
+Auto-Zeitplan füllt nur Plätze, die bereits leer sind – es ersetzt eine bestehende Zuweisungen nie.
 :::
 
-## An alle Geplanten eine E-Mail senden
+## E-Mail an alle geplanten Freiwilligen
 
-Klicken Sie auf **Freiwillige per E-Mail benachrichtigen**, um in einer Aktion eine Benachrichtigung an jeden Freiwilligen zu senden, der im aktuell gefilterten Datumsbereich und Dienst irgendwo eingeplant ist, statt Plan für Plan vorzugehen. B1 meldet, wie viele E-Mails gesendet wurden und wie viele fehlgeschlagen sind.
+Klicke auf **E-Mail Freiwillige**, um eine Benachrichtigung an jeden Freiwilligen zu senden, der irgendwo im aktuell gefilterten Datumsbereich und Ministerium zugewiesen ist, in einer Aktion, anstatt E-Mail-von-Plan-zu-Plan zu senden. B1 berichtet, wie viele E-Mails gesendet wurden und wie viele fehlgeschlagen sind.
 
-## Den Zeitplan eines Freiwilligen hervorheben
+## Hervorheben des Zeitplans eines Freiwilligen
 
-Verwenden Sie das Dropdown **Hervorheben**, um eine Person aus Ihrem Team auszuwählen -- jede Zelle, in der sie eingeplant ist, wird im Raster hervorgehoben, sodass Sie sehen können, wo sie bereits dient, bevor Sie sie einem weiteren Platz zuweisen. Wählen Sie **Alle**, um die Hervorhebung auszuschalten.
+Verwende das Dropdown-Menü **Hervorheben**, um eine Person von deinem Team auszuwählen – jede Zelle, in der sie zugewiesen ist, wird im Grid aufgerufen, sodass du überall siehst, wo sie bereits serving, bevor du sie zu einem anderen Platz hinzufügst. Wähle **Alle**, um die Hervorhebung auszuschalten.
 
-## Die Übersicht filtern
+## Filterung der Übersicht
 
-Sie können anpassen, was die Übersicht anzeigt, mit den Filtersteuerungen oben:
+Du kannst anpassen, was die Übersicht mit den Filter-Steuerelementen oben zeigt:
 
-- **Startdatum / Enddatum** -- Standardmäßig zeigt die Übersicht 12 Wochen in die Zukunft. Geben Sie benutzerdefinierte Daten ein, um den Bereich zu erweitern oder einzugrenzen.
-- **Dienst** -- Wechseln Sie zu einem anderen Dienst, ohne die Übersicht zu verlassen.
-- **Plantyp** -- Filtern Sie auf einen bestimmten Plantyp innerhalb des gewählten Dienstes.
-- **Nur unbesetzt** -- Schalten Sie dies ein, um Zeilen auszublenden, in denen bereits jeder Termin besetzt ist, damit Sie sich nur auf Positionen konzentrieren können, die noch einen Freiwilligen benötigen.
+- **Startdatum / Enddatum** – Standardmäßig zeigt die Übersicht 12 Wochen in die Zukunft. Gib benutzerdefinierte Daten ein, um den Bereich zu erweitern oder einzuengen.
+- **Ministerium** – Wechsle zu einem anderen Ministerium, ohne die Übersicht zu verlassen.
+- **Plan-Typ** – Filtere auf einen bestimmten Plan-Typ im ausgewählten Ministerium.
+- **Nur unfilled** – Schalte dies ein, um Zeilen zu verbergen, in denen jedes Datum bereits gefüllt ist, sodass du dich nur auf Positionen konzentrieren kannst, die immer noch einen Freiwilligen benötigen.
 
-Klicken Sie nach Änderungen auf **Filtern**, um das Raster zu aktualisieren.
+Klicke auf **Filter**, nachdem du Änderungen vornimmst, um das Grid zu aktualisieren.
 
-## Als CSV exportieren
+## Exportieren zu CSV
 
-Klicken Sie auf **CSV exportieren**, um das aktuelle Raster als Tabellenkalkulation herunterzuladen. Der Export enthält alle Positionen und Freiwilligenzuweisungen für den gefilterten Datumsbereich, was das Teilen mit Dienstleitern oder das Ausdrucken für Planungssitzungen erleichtert.
+Klicke auf **CSV exportieren**, um das aktuelle Grid als Tabelle herunterzuladen. Der Export enthält alle Positionen und Freiwilligen-Zuweisungen für den gefilterten Datumsbereich, was es einfach macht, mit Ministeriums-Leitern zu teilen oder für Planungstreffen zu drucken.
 
 :::info
-Der CSV-Export spiegelt die aktuell angewendeten Filter wider -- nur die im Raster angezeigten Termine und der Plantyp sind im Download enthalten.
+Der CSV-Export spiegelt alle aktuell angewendeten Filter wider – nur die Daten und der Plan-Typ, die im Grid angezeigt werden, sind im Download enthalten.
 :::
 
 ## Verwandte Artikel
 
-- [Serviceplan](./plans.md) -- Einzelne Servicepläne erstellen und verwalten
-- [Serviceablauf](./service-order.md) -- Den Ablauf eines Gottesdienstes innerhalb eines Plans erstellen
-- [Lektionen planen](./scheduling-lessons.md) -- Lektionen zusammen mit Ihren Serviceplänen einplanen
+- [Servicepläne](./plans.md) – Erstelle und verwalte individuelle Servicepläne
+- [Serviceordnung](./service-order.md) – Erstelle die Reihenfolge des Services in einem Plan
+- [Lektionen Scheduling](./scheduling-lessons.md) – Zeitplan Lektionen neben deinen Serviceplänen

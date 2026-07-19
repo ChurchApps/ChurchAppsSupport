@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Soporte de múltiples monedas"
 ---
 

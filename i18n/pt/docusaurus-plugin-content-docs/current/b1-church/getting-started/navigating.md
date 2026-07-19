@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Navegando B1App"
 ---
 

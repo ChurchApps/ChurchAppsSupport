@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Richiesta di Adesione a un Gruppo"
 ---
 

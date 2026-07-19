@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Registro de Invitados"
 ---
 

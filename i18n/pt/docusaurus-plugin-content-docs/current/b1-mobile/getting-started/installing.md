@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Instalando o Aplicativo"
 ---
 

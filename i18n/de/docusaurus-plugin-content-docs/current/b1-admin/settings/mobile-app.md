@@ -1,67 +1,67 @@
 ---
-title: "Einstellungen der mobilen App"
+title: "Einstellungen für Mobile Apps"
 ---
 
-# Einstellungen der mobilen App
+# Einstellungen für Mobile Apps
 
 <div class="article-intro">
 
-Auf der Seite Einstellungen der mobilen App konfigurieren Sie die Navigations-Registerkarten, die in der **mobilen Erfahrung von B1.church (PWA)** für die Mitglieder Ihrer Kirche erscheinen. Sie steuern, welche Registerkarten sichtbar sind, worauf sie verlinken und wie sie angezeigt werden.
+Die Seite "Einstellungen für Mobile Apps" ermöglicht es dir, die Navigations-Reiter zu konfigurieren, die in der **B1.church-Mobile-Erfahrung (PWA)** für deine Kirchenmitglieder angezeigt werden. Du kontrollierst, welche Reiter sichtbar sind, worauf sie verlinken und wie sie angezeigt werden.
 
 </div>
 
-:::info Die native B1-Mobile-App ist veraltet
-Hier konfigurierte Registerkarten werden über die [B1.church-Progressive-Web-App (PWA)](/docs/b1-church/getting-started/installing-pwa) bereitgestellt, die die native B1-Mobile-App ersetzt hat. Teilen Sie die Installationsseite Ihrer Kirche -- `https://yourchurchname.b1.church/mobile/install` -- mit Mitgliedern; sie führt sie durch die Installation der App auf ihrem Gerät, ohne dass ein Download über App Store oder Google Play erforderlich ist.
+:::info Die native B1 Mobile-App ist veraltet
+Reiter, die hier konfiguriert sind, werden über [B1.church Progressive Web App (PWA)](/docs/b1-church/getting-started/installing-pwa) geliefert, die die native B1 Mobile-App ersetzt hat. Teile deine Installationsseite der Kirche – `https://yourchurchname.b1.church/mobile/install` – mit Mitgliedern; sie leitet sie durch die Installation der App auf ihrem Gerät, ohne App Store- oder Google Play-Download erforderlich.
 :::
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du beginnst</h4>
 
-- Sie benötigen die Berechtigung „Kircheneinstellungen bearbeiten". Siehe [Rollen & Berechtigungen](./roles-permissions.md), falls Sie keinen Zugriff haben.
-- Konfigurieren Sie zuerst Ihre [Kircheneinstellungen](./church-settings.md), einschließlich Kirchenname und Markenidentität
+- Du benötigst die Berechtigung "Kircheneinstellungen bearbeiten". Siehe [Rollen & Berechtigungen](./roles-permissions.md), wenn du keinen Zugriff hast.
+- Konfiguriere zuerst deine [Kircheneinstellungen](./church-settings.md), einschließlich deines Kirchennamens und Brandings
 
 </div>
 
-## Auf die Einstellungen der mobilen App zugreifen
+## Zugriff auf Mobile App-Einstellungen
 
-1. Navigieren Sie in der linken Seitenleiste zur Seite **Einstellungen**.
-2. Klicken Sie in der Kopfzeile auf die Schaltfläche **Mobile Apps**.
-3. Die Seite Einstellungen der mobilen App zeigt Ihre aktuellen App-Registerkarten an.
+1. Navigiere zur Seite **Einstellungen** in der linken Seitenleiste.
+2. Klicke auf die Schaltfläche **Mobile Apps** in der Kopfzeile.
+3. Die Seite "Einstellungen für Mobile Apps" zeigt deine aktuellen App-Reiter.
 
-## Eine neue Registerkarte hinzufügen
+## Hinzufügen eines neuen Reiters
 
-1. Klicken Sie oben auf der Seite auf die Schaltfläche **Registerkarte hinzufügen**.
-2. Füllen Sie die Details der Registerkarte aus:
-   - **Name** -- Die Beschriftung, die auf der Registerkarte erscheint (zum Beispiel „Predigten" oder „Spenden").
-   - **Symbol** -- Klicken Sie auf die Symbolauswahl, um ein Symbol für Ihre Registerkarte zu wählen. Sie können auch ein benutzerdefiniertes Bild hochladen.
-   - **Registerkartentyp** -- Wählen Sie aus Optionen wie Bibel, Live-Stream, Spende, Website und mehr.
-   - **URL** -- Geben Sie die Webadresse ein, auf die die Registerkarte verlinken soll.
-   - **Sichtbarkeit** -- Steuern Sie, wer diese Registerkarte sehen kann (alle, nur Mitglieder usw.).
-3. Klicken Sie auf **Registerkarte speichern**, um sie zu Ihrer App hinzuzufügen.
+1. Klicke auf die Schaltfläche **Reiter hinzufügen** oben auf der Seite.
+2. Fülle die Reiter-Details aus:
+   - **Name** – Das Label, das auf dem Reiter erscheint (z. B. "Predigten" oder "Geben").
+   - **Symbol** – Klicke auf den Symbol-Selektor, um ein Symbol für deinen Reiter zu wählen. Du kannst auch ein benutzerdefiniertes Bild hochladen.
+   - **Reiter-Typ** – Wähle aus Optionen wie Bible, Live Stream, Donation, Website und mehr.
+   - **URL** – Gib die Webadresse ein, auf die der Reiter verlinken soll.
+   - **Sichtbarkeit** – Kontrolliere, wer diesen Reiter sehen kann (Alle, nur Mitglieder usw.).
+3. Klicke auf **Reiter speichern**, um ihn zu deiner App hinzuzufügen.
 
-## Eine bestehende Registerkarte bearbeiten
+## Bearbeiten eines vorhandenen Reiters
 
-1. Klicken Sie in der Liste **App-Registerkarten** auf eine beliebige bestehende Registerkarte.
-2. Aktualisieren Sie Name, Symbol, URL, Typ oder Sichtbarkeitseinstellungen der Registerkarte.
-3. Klicken Sie auf **Registerkarte speichern**, um Ihre Änderungen zu übernehmen.
+1. Klicke auf einen vorhandenen Reiter in der Liste **App-Reiter**.
+2. Aktualisiere den Namen, das Symbol, die URL, den Typ oder die Sichtbarkeitseinstellungen des Reiters.
+3. Klicke auf **Reiter speichern**, um deine Änderungen anzuwenden.
 
-## Registerkarten neu anordnen
+## Neuordnung von Reitern
 
-Sie können die Reihenfolge ändern, in der Registerkarten in der mobilen App erscheinen. Ziehen Sie Registerkarten in der Liste per Drag-and-Drop, um sie neu anzuordnen. Die auf dieser Seite angezeigte Reihenfolge entspricht der Reihenfolge, die Ihre Mitglieder in der App sehen.
+Du kannst die Reihenfolge ändern, in der Reiter in der mobilen App erscheinen. Ziehe und verschiebe Reiter in der Liste, um sie neu anzuordnen. Die auf dieser Seite gezeigte Reihenfolge entspricht der Reihenfolge, die deine Mitglieder in der App sehen.
 
 :::info
-Einige Registerkarten können automatisch erscheinen, wenn bestimmte Bedingungen erfüllt sind -- zum Beispiel kann eine Live-Stream-Registerkarte erscheinen, wenn ein Stream aktiv ist. Manuell hinzugefügte Registerkarten geben Ihnen die volle Kontrolle darüber, was Ihre Mitglieder jederzeit sehen.
+Einige Reiter können automatisch erscheinen, wenn bestimmte Bedingungen erfüllt sind – beispielsweise kann ein Live Stream-Reiter angezeigt werden, wenn ein Stream aktiv ist. Manuell hinzugefügte Reiter geben dir volle Kontrolle über das, was deine Mitglieder immer sehen.
 :::
 
 :::tip
-Halten Sie die Anzahl Ihrer Registerkarten überschaubar. Drei bis fünf Registerkarten funktionieren für die meisten Kirchen gut. Zu viele Registerkarten können die Navigation für Ihre Mitglieder verwirrend machen.
+Halten deine Reiter-Anzahl handhabbar. Drei bis fünf Reiter funktionieren gut für die meisten Kirchen. Zu viele Reiter können die Navigation verwirrend für deine Mitglieder machen.
 :::
 
-## Wo diese Registerkarten erscheinen
+## Wo diese Reiter erscheinen
 
-Die hier konfigurierten Registerkarten werden in der **B1.church-PWA** angezeigt, die Ihre Mitglieder von jeder Seite auf `https://yourchurchname.b1.church` installieren. Änderungen, die Sie auf dieser Seite vornehmen, werden beim nächsten Öffnen der App durch ein Mitglied übernommen. (Registerkarten werden auch von der veralteten [nativen B1-Mobile-App](/docs/b1-mobile/) für alle Mitglieder dargestellt, die diese noch verwenden, aber diese App ist veraltet und wird nicht mehr aktualisiert.)
+Die Reiter, die du hier konfigurierst, werden in der **B1.church PWA** angezeigt, die deine Mitglieder von einer beliebigen Seite auf `https://yourchurchname.b1.church` installieren. Änderungen, die du auf dieser Seite vornimmst, werden beim nächsten Öffnen der App durch ein Mitglied reflektiert. (Reiter werden auch von der legacy [B1 Mobile Native-App](/docs/b1-mobile/) für alle Mitglieder, die sie immer noch laufen, gerendert, aber diese App ist veraltet und wird nicht mehr aktualisiert.)
 
 ## Nächste Schritte
 
-- [Kircheneinstellungen](./church-settings.md) -- Kircheninformationen und Markenidentität konfigurieren
-- [Rollen & Berechtigungen](./roles-permissions.md) -- Zugriff für Ihr Team verwalten
+- [Kircheneinstellungen](./church-settings.md) – Konfiguriere deine Kircheninformationen und dein Branding
+- [Rollen & Berechtigungen](./roles-permissions.md) – Verwalte den Zugriff für dein Team

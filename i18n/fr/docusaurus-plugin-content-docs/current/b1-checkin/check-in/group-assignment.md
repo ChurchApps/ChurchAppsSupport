@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Attribution de groupes"
 ---
 

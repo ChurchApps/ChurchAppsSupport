@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Designer de Rótulos de Check-In"
 ---
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Paramètres de l'application mobile"
 ---
 

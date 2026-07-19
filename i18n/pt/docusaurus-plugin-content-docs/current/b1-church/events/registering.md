@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Registrando-se para Eventos"
 ---
 

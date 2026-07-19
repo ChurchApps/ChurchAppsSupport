@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Saúde dos Grupos"
 ---
 

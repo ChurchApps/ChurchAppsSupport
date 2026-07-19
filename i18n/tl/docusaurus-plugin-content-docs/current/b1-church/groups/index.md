@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Mga Grupo"
 ---
 

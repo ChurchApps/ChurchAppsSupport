@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Events & Räume anfordern"
 ---
 
@@ -6,47 +6,47 @@ title: "Events & Räume anfordern"
 
 <div class="article-intro">
 
-Wenn Ihre Kirche buchbare Räume und Ressourcen verfolgt, können Sie ein Event anfordern – mit den benötigten Räumen und Ausrüstungen – direkt vom Mitgliederportal aus. Konflikte mit bestehenden Buchungen werden gekennzeichnet, während Sie auswählen, Ihre Anfrage geht zur Kirche zur Genehmigung, und Sie können sie aus Meine Anfragen verfolgen oder stornieren.
+Wenn deine Kirche buchbare Räume und Ressourcen verfolgt, kannst du einen Event anfordern – mit den Räumen und Geräten, die er benötigt – direkt vom Mitglieder-Portal. Konflikte mit bestehenden Buchungen werden hervorgehoben, wenn du auswählst, deine Anfrage geht zur Kirche zur Genehmigung und du kannst sie von "Meine Anfragen" aus verfolgen oder stornieren.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du beginnst</h4>
 
-- Sie müssen [angemeldet sein](../getting-started/logging-in.md) im Mitgliederportal
-- Ihre Kirche muss Räume oder Ressourcen in B1 Admin einrichten – die Anfrage-Verknüpfungen werden nur angezeigt, wenn dies geschieht
+- Du musst [angemeldet](../getting-started/logging-in.md) sein im Mitglieder-Portal
+- Deine Kirche muss Räume oder Ressourcen in B1 Admin eingerichtet haben – die Anfrage-Verknüpfungen erscheinen nur, wenn sie es tut
 
 </div>
 
-## Senden einer Anfrage
+## Einreichen einer Anfrage
 
-1. Öffnen Sie die Seite **Ich** im Mitgliederportal und tippen Sie auf **Event anfordern** unter Verknüpfungen.
-2. Füllen Sie die Event-Grundlagen aus: **Event-Titel**, eine optionale **Beschreibung**, die **Start**- und **Endzeiten** (oder **Ganztägig**), und ob es **Wiederholungen** gibt.
-3. Wählen Sie die **Räume** und **Ressourcen** aus, die Sie benötigen. Für Ressourcen können Sie eine **Menge** festlegen.
-4. Achten Sie auf Konflikt-Warnungen – wenn Ihre Zeit eine bestehende Buchung für einen Raum oder eine Ressource überlappt, sehen Sie *"Diese Zeit verursacht einen Konflikt mit einer bestehenden Buchung."* Sie können Ihre Zeit anpassen oder etwas anderes wählen.
-5. Tippen Sie auf **Anfrage senden**.
+1. Öffne die Seite **Ich** im Mitglieder-Portal und tippe unter Verknüpfungen auf **Fordere einen Event an**.
+2. Fülle die Event-Grundlagen aus: **Event-Titel**, eine optionale **Beschreibung**, die **Start**- und **End**-Zeiten (oder **Ganztägig**) und ob es **Wiederholungen**.
+3. Wähle die **Räume** und **Ressourcen**, die du brauchst. Für Ressourcen kannst du eine **Menge** einstellen.
+4. Achte auf Konflikt-Warnungen – wenn deine Zeit mit einer bestehenden Buchung für einen Raum oder eine Ressource überlappt, siehst du *"Diese Zeit kollidiert mit einer bestehenden Buchung."* Du kannst deine Zeit anpassen oder etwas anderes wählen.
+5. Tippe **Anfrage einreichen**.
 
-Nach dem Senden zeigt eine **Anfrage eingereicht**-Zusammenfassung den Status jedes Raums und jeder Ressource an, den Sie angefordert haben:
+Nach der Einreichung zeigt eine **Anfrage eingereicht** Zusammenfassung den Status jedes Raums und jeder Ressource, die du angefordert hast:
 
-- **Genehmigt** -- Sofort gebucht (der Raum oder die Ressource hat keine Genehmigungsgruppe).
-- **Genehmigung ausstehend** -- Jemand aus der Kirche muss zuerst unterschreiben.
+- **Genehmigt** – Sofort gebucht (der Raum oder die Ressource hat keine Genehmigungsgruppe).
+- **Genehmigung ausstehend** – Jemand von der Kirche muss zuerst zustimmen.
 
-## Verfolgung Ihrer Anfragen
+## Verfolgung deiner Anfragen
 
-Öffnen Sie **Meine Anfragen** von der Seite "Ich". Jede Anfrage zeigt das Event, wann Sie es angefordert haben, und einen Status-Chip:
+Öffne **Meine Anfragen** von der Seite "Ich". Jede Anfrage zeigt den Event, wann du ihn angefordert hast und einen Status-Chip:
 
-- **Ausstehend** -- Warten auf eine Entscheidung
-- **Genehmigt** -- Ihre Buchung ist bestätigt
-- **Abgelehnt** -- Die Anfrage wurde abgelehnt
+- **Ausstehend** – Warten auf eine Entscheidung
+- **Genehmigt** – Deine Buchung ist bestätigt
+- **Abgelehnt** – Die Anfrage wurde abgelehnt
 
-Während eine Anfrage noch ausstehend ist, können Sie sie mit **Anfrage stornieren** zurückziehen (Sie werden gebeten zu bestätigen – Stornierung kann nicht rückgängig gemacht werden).
+Während eine Anfrage noch ausstehend ist, kannst du sie mit **Anfrage abbrechen** zurückziehen (du wirst aufgefordert zu bestätigen – die Stornierung kann nicht rückgängig gemacht werden).
 
 :::info
-Anfragen werden von Kirchenmitarbeitern auf der [Seite Genehmigungen](../../b1-admin/calendars/approvals) von B1 Admin überprüft. Welche Räume und Ressourcen eine Genehmigung benötigen, bestimmt Ihre Kirche – siehe [Räume & Ressourcen](../../b1-admin/calendars/rooms-resources).
+Anfragen werden vom Kirchenpersonal auf der B1 Admin-Seite [Genehmigungen](../../b1-admin/calendars/approvals) überprüft. Welche Räume und Ressourcen Genehmigung benötigen, ist Sache deiner Kirche – siehe [Räume & Ressourcen](../../b1-admin/calendars/rooms-resources).
 :::
 
 ## Verwandte Artikel
 
-- [Die Seite "Ich"](../getting-started/me-page) -- Wo die Anfrage-Verknüpfungen leben
-- [Kalender-Genehmigungen (B1 Admin)](../../b1-admin/calendars/approvals) -- Wie Mitarbeiter Anfragen überprüfen
-- [Räume & Ressourcen (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- Wie Kirchen buchbare Räume konfigurieren
+- [Die Seite "Ich"](../getting-started/me-page) – Wo die Anfrage-Verknüpfungen sich befinden
+- [Kalender-Genehmigungen (B1 Admin)](../../b1-admin/calendars/approvals) – Wie das Personal Anfragen überprüft
+- [Räume & Ressourcen (B1 Admin)](../../b1-admin/calendars/rooms-resources) – Wie Kirchen buchbare Räume konfigurieren

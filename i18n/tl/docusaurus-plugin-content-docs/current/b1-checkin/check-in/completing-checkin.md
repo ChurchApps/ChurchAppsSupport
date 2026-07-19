@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Kumpleto ang Check-In"
 ---
 

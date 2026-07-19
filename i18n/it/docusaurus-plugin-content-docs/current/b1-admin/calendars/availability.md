@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Calendario della disponibilità"
 ---
 

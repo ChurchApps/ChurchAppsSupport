@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Installering som App (PWA)"
 ---
 

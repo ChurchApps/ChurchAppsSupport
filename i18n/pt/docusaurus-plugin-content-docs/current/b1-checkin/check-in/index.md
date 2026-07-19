@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Fluxo de Trabalho de Check-In"
 ---
 

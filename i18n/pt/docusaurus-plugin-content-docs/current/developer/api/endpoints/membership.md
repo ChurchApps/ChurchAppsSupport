@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Endpoints de Membros"
 ---
 

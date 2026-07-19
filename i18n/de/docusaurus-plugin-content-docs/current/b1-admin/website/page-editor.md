@@ -1,143 +1,149 @@
 ---
-title: "Den Seiteneditor verwenden"
+title: "Verwendung des Seiten-Editors"
 ---
 
-# Den Seiteneditor verwenden
+# Verwendung des Seiten-Editors
 
 <div class="article-intro">
 
-Der B1-Seiteneditor ist ein visueller Drag-and-Drop-Builder, mit dem Sie Ihre Kirchenwebsite-Seiten gestalten koennen, ohne Code zu schreiben. Sie koennen Abschnitte und Inhaltsbloecke hinzufuegen, Stile anpassen, Ihre Arbeit in der Vorschau ansehen und Aenderungen rueckgaengig machen -- alles direkt in Ihrem Browser.
+Der B1-Seiten-Editor ist ein visueller Drag-and-Drop-Builder, mit dem Sie Ihre Kirchen-Website-Seiten ohne Code-Schreiben entwerfen können. Sie können Abschnitte und Inhaltsblöcke hinzufügen, Stile anpassen, Ihre Arbeit in der Vorschau anzeigen und Änderungen rückgängig machen – alles in Ihrem Browser.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor Sie anfangen</h4>
 
-- Schliessen Sie die Ersteinrichtung ab, um Ihre Website zu konfigurieren
-- Erstellen Sie mindestens eine Seite unter Seiten verwalten
-- Sie benoetigen die Berechtigung content.edit, um auf den Editor zuzugreifen
+- Führen Sie [Initial Setup](initial-setup) durch, um Ihre Website zu konfigurieren
+- Erstellen Sie mindestens eine Seite in [Managing Pages](managing-pages)
+- Sie benötigen die Berechtigung **content.edit**, um auf den Editor zuzugreifen
 
 </div>
 
-## Den Editor oeffnen
+## Öffnen des Editors
 
-1. Klicken Sie in B1 Admin im linken Menue auf Website.
-2. Suchen Sie die zu bearbeitende Seite in der Seitentabelle und klicken Sie auf Bearbeiten.
+1. Klicken Sie in B1 Admin auf **Website** im linken Menü.
+2. Suchen Sie die Seite, die Sie bearbeiten möchten, in der Tabelle Seiten und klicken Sie auf **Edit**.
 
-Der Editor oeffnet sich im Vollbildmodus.
+Der Editor öffnet sich im Vollbildmodus. Das linke Panel zeigt Ihre Seitenstruktur und verfügbare Inhaltselemente; der mittlere Bereich zeigt eine Live-Vorschau Ihrer Seite.
 
 :::info
-Der Editor wird unabhaengig von Ihrer B1-Admin-Designeinstellung immer im hellen Modus angezeigt.
+Der Editor wird immer im hellen Modus angezeigt, unabhängig von Ihrer B1-Admin-Thema-Einstellung. Dies stellt sicher, dass die Vorschau genau widerspiegelt, wie Ihre Seite für Website-Besucher aussieht.
 :::
 
 ## Seitenstruktur: Abschnitte und Elemente
 
-Jede Seite wird aus zwei Ebenen aufgebaut:
+Jede Seite besteht aus zwei Ebenen:
 
-- Abschnitte -- Die uebergeordneten Container, die Ihre Seite in horizontale Baender unterteilen.
-- Elemente -- Die einzelnen Inhaltsteile, die innerhalb eines Abschnitts platziert werden.
+- **Abschnitte** – Die obersten Container, die Ihre Seite in horizontale Bänder unterteilen (z. B. ein Hero-Abschnitt, ein Inhaltsblock oder ein Fußzeilenstreifen). Jede Seite muss mindestens einen Abschnitt haben, bevor Sie Inhalte hinzufügen können.
+- **Elemente** – Die einzelnen Inhaltsteile, die in einem Abschnitt platziert sind, wie Text, Bilder, Schaltflächen, Karten, Formulare und Kalender.
 
-### Einen Abschnitt hinzufuegen
+### Abschnitt hinzufügen
 
-1. Klicken Sie auf Abschnitt hinzufuegen.
-2. Waehlen Sie, wie Sie beginnen moechten.
-3. Der neue Abschnitt erscheint in der Vorschau.
+1. Klicken Sie auf **Add Section** (oder die Schaltfläche **+** oben im linken Panel).
+2. Wählen Sie, wie Sie beginnen möchten:
+   - **Aus einer Vorlage** – Durchsuchen Sie die Vorlagengalerie für Abschnitte, die nach Kategorie organisiert ist (Hero, About, Services, Giving usw.), und klicken Sie auf eine, um sie als vollständig gestalteten, vorab ausgefüllten Abschnitt einzufügen. Sie können alles nach dem Hinzufügen anpassen.
+   - **Leerer Abschnitt** – Wählen Sie ein Spaltenlayout (einzelne Spalte, zwei Spalten, drei Spalten usw.) und bauen Sie von Grund auf auf.
+3. Der neue Abschnitt wird in der Vorschau angezeigt. Klicken Sie darauf, um ihn auszuwählen und seine Hintergrundfarbe, das Padding und andere Stiloptionen zu konfigurieren.
 
-### Elemente zu einem Abschnitt hinzufuegen
+### Elemente zu einem Abschnitt hinzufügen
 
-1. Klicken Sie in der Vorschau in einen Abschnitt.
-2. Klicken Sie auf Inhalt hinzufuegen und waehlen Sie einen Elementtyp aus der Liste:
-   - Text -- Ueberschriften, Absaetze und Rich-Text
-   - Bild -- Ein Foto hochladen oder verlinken
-   - Schaltflaeche -- Ein klickbarer Call-to-Action-Link
-   - Karte -- Ein Bild mit Titel und Beschreibung
-   - Formular -- Ein Formular direkt auf der Seite einbetten
-   - Kalender -- Einen Ereigniskalender anzeigen
-   - FAQ -- Akkordeon-Bloecke mit Fragen und Antworten
-   - Video -- Ein Video per URL einbetten
-   - Gruppen-Browser -- Ein filterbares Verzeichnis aller Kirchengruppen
-   - Symbol-Feature -- Ein Symbol mit Titel und kurzer Beschreibung
-   - Galerie -- Ein Mehrfachfoto-Raster oder Mauerwerk-Layout
-   - Testimonial -- Ein oder mehrere Zitate mit Name des Autors, Rolle und Foto
-   - Social-Media-Symbole -- Verlinkte Symbole fuer die Social-Media-Profile Ihrer Kirche
-   - Countdown -- Ein Timer, der bis zu einem Datum herunterzaehlt
-   - Statistiken -- Eine Reihe grosser Zahlen mit Beschriftungen
-   - Kampagnenfortschritt -- Eine Live-Fortschrittsanzeige fuer eine Spendenkampagne
-   - Mitarbeiterraster -- Foto-Karten fuer die Mitglieder einer Gruppe
-   - Gottesdienstzeiten -- Der Gottesdienstplan Ihrer Campusse
-   - Predigten -- Ihre Predigtbibliothek
-3. Konfigurieren Sie das Element mit dem erscheinenden Einstellungspanel.
+1. Klicken Sie in der Vorschau in einen Abschnitt, um ihn auszuwählen.
+2. Klicken Sie auf **Add Content** und wählen Sie einen Elementtyp aus der Liste:
+   - **Text** – Überschriften, Absätze und Rich Text
+   - **Image** – Laden Sie ein Foto hoch oder verlinken Sie auf eines
+   - **Button** – Ein anklickbarer Call-to-Action-Link
+   - **Card** – Ein Bild mit Titel und Beschreibung
+   - **Form** – Bettet ein [Formular](../forms/creating-forms) direkt auf der Seite ein
+   - **Calendar** – Zeigen Sie einen Ereigniskalender an
+   - **FAQ** – Akkordeon-artige Frage-und-Antwort-Blöcke
+   - **Video** – Bettet ein Video per URL ein
+   - **Groups Browser** – Ein filterbares Verzeichnis aller Kirchen-Gruppen mit optionaler Suche, Kategoriefilter und Labelfilter
+   - **Icon Feature** – Ein Symbol mit Titel und kurzer Beschreibung für Funktions- oder Dienstehervorhebungen
+   - **Gallery** – Ein Multi-Foto-Raster oder Masonry-Layout
+   - **Testimonial** – Ein oder mehrere Angebote mit Autorname, Rolle und Foto
+   - **Social Icons** – Verlinkte Symbole für die Social-Media-Profile Ihrer Kirche
+   - **Countdown** – Ein Timer, der bis zu einem Datum oder einer wöchentlichen Servicezeit rückwärts zählt
+   - **Stats** – Eine Reihe großer Zahlen mit Bezeichnungen (Mitglieder, Jahre, Campus)
+   - **Campaign Progress** – Ein Live-Fortschrittsbalken für eine Spendenkampagne mit dem Gesamtbetrag gegenüber einem Fonds-Ziel
+   - **Staff Grid** – Fotokarten für die Mitglieder einer Gruppe; die Gruppe muss ihre Option **public roster** aktiviert haben
+   - **Service Times** – Der Serviceplan Ihrer Campus, automatisch aus dem Anwesenheits-Setup gezogen
+   - **Sermons** – Ihre Predigibliothek als vollständiger Browser oder Raster-, Listen- oder Featured-Latest-Layout
+3. Konfigurieren Sie das Element mit dem angezeigten Einstellungsfeld.
 
 ### Inhalte neu anordnen
 
-Ziehen Sie Abschnitte oder Elemente mit dem Griffsymbol, um sie neu anzuordnen.
+Ziehen Sie Abschnitte oder Elemente mit dem Handle-Symbol (sechs Punkte) auf der linken Seite jedes Elements, um sie neu anzuordnen. Sie können Elemente innerhalb eines Abschnitts ziehen oder zwischen Abschnitten verschieben.
 
-## Ihre Seite gestalten
+## Formatieren Sie Ihre Seite
 
 ### Abschnittsstile
 
-Klicken Sie auf einen beliebigen Abschnitt, um sein Stilpanel zu oeffnen. Sie koennen festlegen:
+Klicken Sie auf einen beliebigen Abschnitt, um sein Stilfeld zu öffnen. Sie können Folgendes festlegen:
 
-- Hintergrund -- Einfarbig, Verlauf oder Bild.
-- Abstand -- Oberer und unterer Abstand innerhalb des Abschnitts
-- Breite -- Vollbreite oder zentriert/begrenzt
-- Trenner -- Dekorative Formtrenner am oberen oder unteren Rand des Abschnitts
+- **Background** – Einfarbig, Farbverlauf oder Bild. Bei Verwendung eines Bildhintergrunds können Sie mit einer **Focal Point**-Auswahl anklicken, welcher Teil des Bildes zentriert bleibt, wenn sich der Abschnitt skaliert, und mit einer **Overlay**-Farboption können Sie einen halbtransparenten Farbton über dem Bild hinzufügen, um die Textlesbarkeit zu verbessern.
+- **Padding** – Oben und unten Abstand im Abschnitt
+- **Width** – Vollbreite oder zentriert/eingeengt
+- **Dividers** – Dekorative Formtrennzeichen (Welle, Schrägstrich, Kurve, Dreieck und mehr) oben oder unten am Rand des Abschnitts mit Farb-, Höhen- und Flip-Optionen
 
 ### Elementstile
 
-Klicken Sie auf ein beliebiges Element, um sein Stilpanel zu oeffnen. Gaengige Optionen umfassen Schriftgroesse, Farbe, Ausrichtung, Rand und Abstand.
+Klicken Sie auf ein beliebiges Element, um sein Stilfeld zu öffnen. Häufige Optionen sind Schriftgröße, Farbe, Ausrichtung, Rand und Padding. Bei Bildern können Sie Alt-Text und Link-Ziele festlegen.
 
 ### Benutzerdefiniertes CSS
 
-Fuer erweiterte Gestaltung hat jeder Abschnitt und jedes Element ein Feld Benutzerdefiniertes CSS.
+Für erweiterte Formatierung hat jeder Abschnitt und jedes Element ein Feld **Custom CSS**, in das Sie Ihre eigenen CSS-Regeln schreiben können. Diese sind auf dieses Element begrenzt, sodass sie den Rest der Seite nicht unbeabsichtlich beeinflussen.
 
 :::tip
-Wenn Sie Stile auf Ihrer gesamten Website anwenden muessen, verwenden Sie stattdessen die Einstellungen unter Erscheinungsbild.
+Wenn Sie Stile auf Ihrer gesamten Website anwenden müssen – z. B. eine benutzerdefinierte Schriftart oder eine globale Farbe – verwenden Sie stattdessen die [Appearance](appearance)-Einstellungen anstelle von benutzerdefiniertem CSS auf einzelnen Seiten.
 :::
 
-## Ihre Seite in der Vorschau ansehen
+## Vorschau Ihrer Seite
 
-Verwenden Sie die Vorschausteuerung in der Symbolleiste:
+Verwenden Sie die Vorschau-Steuerelemente in der Symbolleiste, um zu überprüfen, wie Ihre Seite in verschiedenen Bildschirmgrößen aussieht:
 
-- Desktop -- Vollbreite Browseransicht
-- Mobil -- Schmale, telefongrosse Ansicht
+- **Desktop** – Vollbreite-Browser-Ansicht
+- **Mobile** – Schmale Telefongröße
 
-Klicken Sie auf Vorschau, um eine Live-Version der Seite in einem neuen Browser-Tab zu oeffnen.
+Klicken Sie auf **Preview**, um eine Live-Version der Seite in einer neuen Browser-Registerkarte zu öffnen, genau wie Besucher sie sehen werden.
 
-## Aenderungen rueckgaengig machen
+## Änderungen rückgängig machen
 
-Der Editor verfolgt Ihren Bearbeitungsverlauf automatisch.
+Der Editor verfolgt Ihren Bearbeitungsverlauf automatisch. Verwenden Sie die Schaltflächen in der Symbolleiste oder Tastenkombinationen zum Navigieren:
 
-- Rueckgaengig (Strg+Z / Cmd+Z) -- Ihre letzte Aktion rueckgaengig machen
-- Wiederholen (Strg+Y / Cmd+Y) -- Eine rueckgaengig gemachte Aktion erneut anwenden
+- **Undo** (Strg+Z / Cmd+Z) – Machen Sie Ihre letzte Aktion rückgängig
+- **Redo** (Strg+Y / Cmd+Y) – Wenden Sie eine rückgängig gemachte Aktion erneut an
 
-Sie koennen die Seite auch auf einen frueheren Zustand zuruecksetzen.
+Sie können die Seite auch auf einen früheren Snapshot wiederherstellen. Klicken Sie in der Symbolleiste auf **History**, um eine Liste gespeicherter Snapshots mit Beschreibungen zu sehen, und klicken Sie auf einen Eintrag, um zu diesem Punkt wiederherzustellen.
 
 :::warning
-Das Wiederherstellen einer Momentaufnahme ersetzt Ihren aktuellen Seiteninhalt. Dies kann nicht rueckgaengig gemacht werden.
+Das Wiederherstellen eines Snapshots ersetzt Ihren aktuellen Seiteninhalt durch die Snapshot-Version. Dies kann nicht mit der Standardschaltfläche zum Rückgängigmachen rückgängig gemacht werden. Speichern Sie einen Snapshot Ihres aktuellen Zustands, bevor Sie einen alten wiederherstellen, wenn Sie die Option behalten möchten, zurückzukehren.
 :::
 
-## Speichern und Veroeffentlichen
+## Speichern und Veröffentlichen
 
-Aenderungen werden waehrend der Arbeit automatisch gespeichert.
+Änderungen werden beim Arbeiten automatisch gespeichert. Ein Statusanzeiger in der Symbolleiste zeigt, ob Ihre Änderungen gespeichert wurden.
 
-### Entwurfs- und Veroeffentlichungsstatus
+### Entwurf und veröffentlichter Status
 
-Seiten koennen einen veroeffentlichten Status haben:
+Seiten können einen **veröffentlichten** Status haben, der kontrolliert, wann Besucher Ihre Änderungen sehen. Die Symbolleiste zeigt einen Statuschip mit dem aktuellen Status:
 
-- Live beim Speichern -- Jede gespeicherte Aenderung geht sofort live.
-- Unveroeffentlichte Aenderungen -- Besucher sehen weiterhin die zuvor veroeffentlichte Version.
-- Veroeffentlicht -- Die Seite ist live.
+- **Live on Save** – Die Seite verwendet keinen Veröffentlichungs-Workflow. Jede gespeicherte Änderung wird sofort live geschalten. Dies ist der Standard für neue Seiten.
+- **Unpublished Changes** – Die Seite wurde zuvor veröffentlicht, aber Sie haben seit der letzten Veröffentlichung Änderungen vorgenommen. Besucher sehen weiterhin die zuvor veröffentlichte Version.
+- **Published** – Die Seite ist live und Ihr gespeicherter Inhalt entspricht dem, was Besucher sehen.
 
-Um Ihre Aenderungen zu veroeffentlichen, klicken Sie auf Veroeffentlichen.
+Um Ihre Änderungen zu veröffentlichen, klicken Sie auf die Schaltfläche **Publish** in der Symbolleiste. Die Seite wird sofort live geschalten.
+
+Um auf die letzte veröffentlichte Version zurückzukehren, ohne zu beeinflussen, was Besucher sehen, öffnen Sie das Overflow-Menü (⋮) und klicken Sie auf **Discard Changes**.
+
+Um eine Seite vollständig offline zu nehmen, öffnen Sie das Overflow-Menü und klicken Sie auf **Unpublish**. Besucher sehen diese Seite nicht mehr, bis Sie sie erneut veröffentlichen.
 
 :::tip
-Verwenden Sie den Entwurfs-/Veroeffentlichungsworkflow, wenn Sie eine Seite vorbereiten moechten.
+Verwenden Sie den Entwurf-/Veröffentlichungs-Workflow, wenn Sie eine Seite vorbereiten möchten – z. B. für ein bevorstehendes Ereignis – und sie nur zum richtigen Zeitpunkt live schalten möchten. Erstellen Sie eine Vorschau der Seite, dann klicken Sie auf Publish, wenn Sie bereit sind.
 :::
 
 ## Verwandte Artikel
 
-- Seiten verwalten -- Seiten erstellen, URLs festlegen und die Website-Navigation verwalten
-- Erscheinungsbild -- Website-weite Farben, Schriftarten und Markenidentitaet festlegen
-- Dateien -- Bilder und Dokumente zur Verwendung im Editor hochladen
-- Formulare erstellen -- Formulare erstellen, die Sie auf Seiten einbetten koennen
+- [Managing Pages](managing-pages) – Erstellen Sie Seiten, legen Sie URLs fest und verwalten Sie die Site-Navigation
+- [Appearance](appearance) – Legen Sie site-weite Farben, Schriftarten und Branding fest
+- [Files](files) – Laden Sie Bilder und Dokumente hoch, um sie im Editor zu verwenden
+- [Creating Forms](../forms/creating-forms) – Erstellen Sie Formulare, die Sie auf Seiten einbetten können

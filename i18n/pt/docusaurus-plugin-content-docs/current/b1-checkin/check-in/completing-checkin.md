@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Completando o Check-In"
 ---
 

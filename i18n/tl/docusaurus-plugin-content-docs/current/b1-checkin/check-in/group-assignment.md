@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Paglalaan ng Mga Grupo"
 ---
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Línea de Tiempo del Grupo"
 ---
 

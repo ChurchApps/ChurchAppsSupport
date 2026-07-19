@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Sinusuri ang Iyong Household"
 ---
 

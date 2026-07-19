@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Recherche de personnes"
 ---
 

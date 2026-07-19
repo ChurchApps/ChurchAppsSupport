@@ -1,4 +1,4 @@
-﻿---
+---
 title: "App connesse e OAuth"
 ---
 

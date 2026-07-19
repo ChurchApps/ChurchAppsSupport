@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Giving Endpoints"
 ---
 

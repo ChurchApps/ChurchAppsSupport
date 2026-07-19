@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Terminaisons de dons"
 ---
 

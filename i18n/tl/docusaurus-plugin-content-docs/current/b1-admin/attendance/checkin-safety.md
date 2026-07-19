@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Check-In Safety"
 ---
 

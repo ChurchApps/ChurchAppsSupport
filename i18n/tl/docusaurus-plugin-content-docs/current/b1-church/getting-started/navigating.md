@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Pag-navigate ng B1App"
 ---
 

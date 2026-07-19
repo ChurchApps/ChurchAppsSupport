@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Configuração de Doações Online"
 ---
 

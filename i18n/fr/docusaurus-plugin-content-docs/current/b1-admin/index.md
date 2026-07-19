@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Aperçu de B1 Admin"
 ---
 

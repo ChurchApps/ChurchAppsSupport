@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Descripción General de FreePlay"
 ---
 

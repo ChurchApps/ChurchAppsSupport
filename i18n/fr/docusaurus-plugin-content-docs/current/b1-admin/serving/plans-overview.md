@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Aperçu des plans"
 ---
 

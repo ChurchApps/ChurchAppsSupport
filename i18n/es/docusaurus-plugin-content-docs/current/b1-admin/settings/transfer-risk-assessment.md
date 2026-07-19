@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Evaluación de riesgo de transferencia"
 ---
 

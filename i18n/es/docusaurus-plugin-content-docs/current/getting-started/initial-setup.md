@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Configuración Inicial"
 ---
 

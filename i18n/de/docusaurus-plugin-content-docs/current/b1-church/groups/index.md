@@ -6,34 +6,34 @@ title: "Gruppen"
 
 <div class="article-intro">
 
-Gruppen sind eine großartige Möglichkeit, sich mit anderen in Ihrer Kirche zu vernetzen. Egal, ob Sie eine Kleingruppe, ein Dienstteam, eine Bibelstudiengruppe oder eine Freiwilligenmöglichkeit suchen, Sie können Gruppen direkt auf der B1.church-Website Ihrer Kirche durchsuchen und beitreten.
+Gruppen sind eine großartige Möglichkeit, um mit anderen in deiner Kirche verbunden zu werden. Egal ob du nach einer Kleingruppe, einem Ministeriums-Team, einer Bibelstude oder einer Freiwilligen-Gelegenheit suchst, du kannst Gruppen direkt von der B1.church-Website deiner Kirche durchsuchen und beitreten.
 
 </div>
 
-## Was Sie tun können
+## Was du tun kannst
 
-Hier ist, was Sie mit Gruppen in B1App tun können:
+Hier ist, was du mit Gruppen in B1App tun kannst:
 
-- Öffentliche Gruppen durchsuchen -- Alle verfügbaren Gruppen nach Kategorie organisiert anzeigen. Jede Gruppe zeigt ein Foto, einen Namen, eine Treffzeit, einen Ort und eine kurze Beschreibung.
-- Gruppendetails anzeigen -- Klicken Sie auf eine Gruppe, um ihre vollständige Beschreibung, Leiter, bevorstehende Kalenderereignisse und ein Kontaktformular zu sehen, um die Leiter der Gruppe zu erreichen.
-- Gruppen beitreten -- Treten Sie einer Gruppe bei, um Mitglied zu werden. Bei offenen Gruppen können Sie sofort beitreten; bei Gruppen mit erforderlicher Genehmigung können Sie eine Beitrittsanfrage einreichen. Siehe „Einer Gruppe beizutreten anfragen".
-- An Gesprächen teilnehmen -- Sobald Sie Mitglied einer Gruppe sind, können Sie Nachrichten posten und über die Registerkarte Gespräche mit anderen Gruppenmitgliedern interagieren.
-- Auf Kalender und Ressourcen zugreifen -- Bevorstehende Ereignisse im Gruppenkalender anzeigen oder freigegebene Dateien oder Links über die Registerkarte Ressourcen herunterladen.
+- **Durchsuche öffentliche Gruppen** – Zeige alle verfügbaren Gruppen, die nach Kategorie organisiert sind. Jede Gruppe zeigt ein Foto, Namen, Treffenzeit, Ort und eine kurze Beschreibung.
+- **Zeige Grup​pendetails an** – Klicke auf eine beliebige Gruppe, um ihre vollständige Beschreibung, Leiter, kommende Kalender-Events und ein Kontaktformular anzuzeigen, um die Leiter der Gruppe zu erreichen.
+- **Tritt Gruppen bei** – Verbinde dich mit einer Gruppe, um ein Mitglied zu werden. Offene Gruppen lassen dich sofort beitreten; Gruppen, die Genehmigung erfordern, lassen dich eine Beitrittanfrage einreichen. Siehe [Anfrage zum Beitritt zu einer Gruppe](./join-requests.md).
+- **Nehme an Unterhaltungen teil** – Sobald du ein Mitglied einer Gruppe bist, kannst du Nachrichten posten und mit anderen Gruppenmitgliedern durch den Reiter Unterhaltungen interagieren.
+- **Greifen auf Kalender und Ressourcen zu** – Zeige kommende Events auf dem Gruppenkalender an und lade gemeinsame Dateien oder Links vom Reiter Ressourcen herunter.
 
-## Öffentliches vs. angemeldetes Erlebnis
+## Öffentlich vs. Angemeldete Erfahrung
 
-Jeder kann die Gruppenseite Ihrer Kirche besuchen und die verfügbaren Gruppen durchsuchen. Besucher, die nicht angemeldet sind, können Gruppenbeschreibungen anzeigen, sehen, wer die Leiter sind, bevorstehende Kalenderereignisse prüfen und über das Kontaktformular eine Nachricht an einen Leiter senden.
+Jeder kann die Seite "Gruppen" deiner Kirche besuchen und die verfügbaren Gruppen durchsuchen. Besucher, die nicht angemeldet sind, können Gruppenbeschreibungen ansehen, sehen, wer die Leiter sind, bevorstehende Kalender-Events überprüfen und eine Nachricht an einen Leiter mit dem Kontaktformular senden.
 
-Wenn Sie sich anmelden, schalten Sie zusätzliche Registerkarten auf der Gruppendetailseite frei, darunter Gruppendetails, Kalender, Gespräche, Ressourcen, Mitglieder und Anwesenheit. Gruppenleiter haben zusätzliche Bearbeitungsmöglichkeiten auf jeder dieser Registerkarten.
+Wenn du [dich anmeldest](../getting-started/logging-in.md), schaltest du zusätzliche Reiter auf der Grup​pen-Detail-Seite frei, einschließlich **Grup​pendetails**, **Kalender**, **Unterhaltungen**, **Ressourcen**, **Mitglieder** und **Anwesenheit**. Grup​penleiter haben zusätzliche Bearbeitungsmöglichkeiten auf jedem dieser Reiter.
 
 :::tip
-Gruppen erscheinen auch auf Ihrer Timeline -- Gespräche und Neuigkeiten aus Ihren Gruppen erscheinen automatisch in Ihrem Aktivitäts-Feed.
+Gruppen erscheinen auch auf deiner [Zeitleiste](../community/timeline.md) – Unterhaltungen und Updates aus deinen Gruppen werden automatisch in deinem Aktivitäts-Feed angezeigt.
 :::
 
 ## Nächste Schritte
 
-- Gruppen durchsuchen -- Erfahren Sie, wie Sie Gruppen finden und erkunden
-- Gruppendetails -- Verstehen Sie alles auf der Gruppendetailseite
-- Einer Gruppe beizutreten anfragen -- Beitrittsanfragen einreichen und verwalten
-- Gruppengespräche -- Nachrichten posten, mit Emoji reagieren und mit Ihrer Gruppe interagieren
-- Ereignis-RSVPs -- Auf Gruppenereignisse antworten und sehen, wer kommt
+- [Durchsuchen von Gruppen](./browsing-groups.md) – Erfahre, wie du Gruppen findest und erkundest
+- [Gruppendetails](./group-details.md) – Verstehe alles auf der Grup​pen-Detail-Seite
+- [Anfrage zum Beitritt zu einer Gruppe](./join-requests.md) – Reiche Beitrittanfragen ein und verwalte sie
+- [Grup​penunte​rhaltungen](./conversations.md) – Poste Nachrichten, reagiere mit Emoji und interagiere mit deiner Gruppe
+- [Event RSVPs](./event-rsvps.md) – Reagiere auf Gruppen-Events und sehe, wer kommt

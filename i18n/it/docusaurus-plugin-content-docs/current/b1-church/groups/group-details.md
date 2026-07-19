@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Dettagli del Gruppo"
 ---
 

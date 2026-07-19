@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Revisando Sua Família"
 ---
 

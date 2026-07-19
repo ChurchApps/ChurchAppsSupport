@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Meine Registrierungen"
 ---
 
@@ -6,63 +6,63 @@ title: "Meine Registrierungen"
 
 <div class="article-intro">
 
-Die Seite **Registrierungen** im Mitgliederportal ist Ihre Basisheimat für jedes Event, bei dem Sie sich angemeldet haben. Hier können Sie Ihren Status überprüfen, einen ausstehenden Restbetrag bezahlen, bearbeiten, wer kommt und was Sie bestellt haben, oder eine Registrierung komplett stornieren.
+Die Seite **Registrierungen** im Mitglieder-Portal ist deine Basis für jeden Event, für den du dich angemeldet hast. Von hier aus kannst du deinen Status überprüfen, einen ausstehenden Kontostand bezahlen, bearbeiten, wer kommt und was du bestellt hast, oder eine Registrierung ganz stornieren.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du beginnst</h4>
 
-- Sie müssen [angemeldet sein](../getting-started/logging-in.md) – Gastregistrierungen erscheinen hier nicht
-- Sie benötigen mindestens eine Event-Registrierung. Siehe [Registrierung für Events](./registering).
+- Du musst [angemeldet](../getting-started/logging-in.md) sein – Gast-Registrierungen erscheinen hier nicht
+- Du brauchst mindestens eine Event-Registrierung. Siehe [Registrierung für Events](./registering).
 
 </div>
 
-## Ihre Registrierungen anzeigen
+## Anzeigen deiner Registrierungen
 
-Öffnen Sie **Registrierungen** im Mitgliederportal. Jede Registrierung wird als Karte angezeigt, die zeigt:
+Öffne **Registrierungen** im Mitglieder-Portal. Jede Registrierung erscheint als Karte, die Folgendes zeigt:
 
-- Der **Event-Titel und -Datum**
-- Ein **Status**-Chip – **bestätigt**, **ausstehend**, **auf Warteliste**, oder **storniert**
-- Die **Mitglieder**, die Sie registriert haben
-- Die Zahlungszeile – entweder die bezahlte Gesamtsumme, oder **Restbetrag fällig**, wenn noch Geld ausstehend ist
+- Den **Event-Titel und das Datum**
+- Ein **Status**-Chip – **bestätigt**, **ausstehend**, **auf Warteliste** oder **storniert**
+- Die **Mitglieder**, die du registriert hast
+- Die Zahlungszeile – entweder die bezahlte Summe oder **Saldo fällig**, wenn Geld noch geschuldet ist
 
-Wenn Sie sich noch nicht für etwas angemeldet haben, sehen Sie "Noch keine Registrierungen".
+Wenn du dich noch nicht für etwas angemeldet hast, siehst du "Noch keine Registrierungen".
 
-## Eine Zahlung abschließen
+## Zahlung abschließen
 
-Eine Schaltfläche **Zahlung abschließen** wird auf jeder Registrierung mit einem ausstehenden Restbetrag angezeigt – häufig, nachdem Sie von einer Warteliste befördert werden, oder wenn eine Staffbearbeitung Ihren Gesamtbetrag änderte.
+Eine Schaltfläche **Zahlung abschließen** erscheint auf jeder Registrierung mit ausstehenden Kontostand – am häufigsten, nachdem du von einer Warteliste befördert wurdest oder wenn eine Mitarbeiterbearbeitung deine Summe änderte.
 
-1. Klicken Sie **Zahlung abschließen**.
-2. Überprüfen Sie die Bestellzusammenfassung, wählen Sie eine gespeicherte Karte oder geben Sie eine neue ein, und zahlen Sie.
-3. Sobald der Restbetrag bezahlt ist, wird die Registrierung **bestätigt**.
+1. Klicke auf **Zahlung abschließen**.
+2. Überprüfe die Bestellzusammenfassung, wähle eine gespeicherte Karte oder gib eine neue ein und zahle.
+3. Sobald der Saldo bezahlt ist, wird die Registrierung **bestätigt**.
 
 :::tip
-Wenn ein Wartelistenplatz für Sie frei wird, enthält die E-Mail, die Ihre Kirche sendet, einen direkten Link zu diesem Zahlungsschritt.
+Wenn sich ein Wartelistenplatz für dich öffnet, enthält die E-Mail, die deine Kirche sendet, einen direkten Link zu diesem Zahlungsschritt.
 :::
 
-## Eine Registrierung bearbeiten
+## Bearbeiten einer Registrierung
 
-Pläne ändern sich. Klicken Sie auf einer Registrierung auf **Bearbeiten**, um das Dialogfeld **Registrierung bearbeiten** zu öffnen, wo Sie können:
+Pläne ändern. Klicke auf **Bearbeiten** für eine Registrierung, um das Dialogfeld **Registrierung bearbeiten** zu öffnen, in dem du:
 
-- Ihre **Kontaktdetails** aktualisieren
-- Den **Namen** und **Teilnehmertyp** jedes Mitglieds ändern
-- **Auswahlmengen** anpassen (Add-ons wie T-Shirts oder Mahlzeiten)
+- Deine **Kontaktdetails** aktualisieren kannst
+- Den **Namen** und **Teilnehmertyp** jedes Mitglieds ändern kannst
+- **Auswahlmengen** anpassen kannst (Add-Ons wie T-Shirts oder Mahlzeiten)
 
-Kapazität gilt immer noch, wenn Sie bearbeiten – wenn ein Teilnehmertyp oder eine Option seitdem ausverkauft ist, werden Sie gebeten, einen anderen zu wählen. Das Speichern berechnet Ihren Gesamtbetrag neu; wenn die Änderung einen Restbetrag hinterlässt, wird eine Schaltfläche **Zahlung abschließen** auf der Karte angezeigt.
+Die Kapazität gilt immer noch, wenn du bearbeitest – wenn ein Teilnehmertyp oder eine Option seit damals ausverkauft ist, wirst du aufgefordert, einen anderen zu wählen. Speichern berechnet deine Summe neu; wenn die Änderung einen fälligen Saldo hinterlässt, erscheint eine Schaltfläche **Zahlung abschließen** auf der Karte.
 
 :::info
-Bearbeiten lädt Ihre Karte nie automatisch. Wenn Ihr neuer Gesamtbetrag höher ist, zahlen Sie die Differenz mit **Zahlung abschließen**; wenn er niedriger ist, kontaktieren Sie Ihre Kirche wegen einer Rückerstattung – Rückerstattungen werden von Kirchenmitarbeitern über ihren Zahlungsanbieter verarbeitet.
+Das Bearbeiten lädt deine Karte nie automatisch auf. Wenn deine neue Summe höher ist, zahle die Differenz mit **Zahlung abschließen**; wenn sie niedriger ist, wende dich an deine Kirche über eine Rückerstattung – Rückerstattungen werden vom Kirchenpersonal über ihren Zahlungsanbieter bearbeitet.
 :::
 
-## Eine Registrierung stornieren
+## Stornieren einer Registrierung
 
-1. Klicken Sie auf der Karte auf **Registrierung stornieren**.
-2. Bestätigen Sie im Dialogfeld – Stornierung kann nicht rückgängig gemacht werden.
+1. Klicke auf **Registrierung stornieren** auf der Karte.
+2. Bestätige im Dialogfeld – die Stornierung kann nicht rückgängig gemacht werden.
 
-Ihr Platz wird sofort freigegeben. Wenn das Event eine Warteliste hat, wird die nächste Person in der Warteschlange automatisch befördert. Jede Zahlung, die Sie geleistet haben, wird nicht automatisch erstattet – kontaktieren Sie Ihre Kirchenoffice wegen Rückerstattungen.
+Dein Platz wird sofort freigegeben. Wenn der Event eine Warteliste hat, wird die nächste Person in der Reihe automatisch befördert. Jede Zahlung, die du gemacht hast, wird nicht automatisch erstattet – wende dich an dein Kirchenbüro über Rückerstattungen.
 
 ## Verwandte Artikel
 
-- [Registrierung für Events](./registering) -- Der Anmeldungsprozess, einschließlich Zahlung und Wartelisten
-- [Events-Übersicht](./index.md) -- Durchsuchen Sie bevorstehende Events
+- [Registrierung für Events](./registering) – Der Anmeldeprozess, einschließlich Zahlung und Wartelisten
+- [Events-Übersicht](./index.md) – Durchsuche kommende Events

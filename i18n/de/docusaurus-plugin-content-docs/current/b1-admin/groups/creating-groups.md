@@ -6,80 +6,80 @@ title: "Gruppen erstellen"
 
 <div class="article-intro">
 
-Das Erstellen einer Gruppe in B1 Admin ist unkompliziert. Sie richten eine Kategorie ein, benennen Ihre Gruppe und konfigurieren dann ihre Einstellungen. Gruppen helfen Ihnen, Ihre Kirche in sinnvolle Einheiten wie Kleingruppen, Ausschüsse und Klassen zu organisieren.
+Das Erstellen einer Gruppe in B1 Admin ist unkompliziert. Du richtst eine Kategorie ein, benennst deine Gruppe und konfigurierst dann ihre Einstellungen. Gruppen helfen dir, deine Kirche in bedeutungsvolle Einheiten wie Kleingruppen, Komitees und Klassen zu organisieren.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du beginnst</h4>
 
-- Sie benötigen ein aktives B1-Admin-Konto mit Berechtigung zur Verwaltung von Gruppen. Siehe [Rollen & Berechtigungen](../people/roles-permissions.md), wenn Sie sich über Ihre Zugriffsebene nicht sicher sind.
-- Entscheiden Sie sich für eine Kategoriestruktur für Ihre Gruppen (zum Beispiel „Kleingruppen", „Dienste", „Ausschüsse"). Kategorien helfen, verwandte Gruppen organisiert zu halten.
+- Du benötigst ein aktives B1 Admin-Konto mit Berechtigung zur Verwaltung von Gruppen. Siehe [Rollen & Berechtigungen](../people/roles-permissions.md), wenn du dir über deine Zugriffsebene nicht sicher bist.
+- Entscheide dich für eine Kategoriestruktur für deine Gruppen (z. B. "Kleingruppen", "Ministerien", "Komitees"). Kategorien helfen, verwandte Gruppen organisiert zu halten.
 
 </div>
 
 ## Eine neue Gruppe hinzufügen
 
-1. Navigieren Sie zum **B1-Admin-Dashboard**.
-2. Klicken Sie auf die Registerkarte **Gruppen**.
-3. Klicken Sie auf **Gruppe hinzufügen** und geben Sie einen **Kategorienamen** ein. Kategorien helfen Ihnen, verwandte Gruppen zusammenzufassen (zum Beispiel „Kleingruppen", „Dienste" oder „Ausschüsse"). Wenn bereits eine Kategorie existiert, können Sie sie aus der Liste auswählen.
-4. Geben Sie den **Gruppennamen** ein.
-5. Klicken Sie auf **Hinzufügen**. Ihre neue Gruppe erscheint in der Liste unter der gewählten Kategorie.
+1. Navigiere zum **B1 Admin-Dashboard**.
+2. Klicke auf den Reiter **Gruppen**.
+3. Klicke auf **Gruppe hinzufügen** und gib einen **Kategorienamen** ein. Kategorien helfen dir, verwandte Gruppen zusammenzuhalten (z. B. "Kleingruppen", "Ministerien" oder "Komitees"). Wenn eine Kategorie bereits existiert, kannst du sie aus der Liste auswählen.
+4. Gib den **Gruppennamen** ein.
+5. Klicke auf **Hinzufügen**. Deine neue Gruppe wird in der Liste unter der ausgewählten Kategorie angezeigt.
 
-## Gruppeneinstellungen konfigurieren
+## Konfigurieren von Gruppeneinstellungen
 
-Sobald Ihre Gruppe erstellt ist, können Sie weitere Details ausfüllen:
+Sobald deine Gruppe erstellt ist, kannst du zusätzliche Details ausfüllen:
 
-1. Klicken Sie in der Liste auf den **Gruppennamen**, um sie zu öffnen.
-2. Klicken Sie auf das **Stiftsymbol**, um die Gruppeneinstellungen zu bearbeiten.
-3. Konfigurieren Sie die folgenden Optionen:
-   - **Beschreibung** -- Eine kurze Zusammenfassung, worum es in der Gruppe geht. Diese ist für Mitglieder sichtbar.
-   - **Treffzeiten** -- Wann sich die Gruppe normalerweise trifft (zum Beispiel „Mittwochs um 19 Uhr").
-   - **Beitrittsrichtlinie** -- Legen Sie fest, wer dieser Gruppe beitreten kann:
-     - **Offen** -- Jeder kann sofort ohne Genehmigung beitreten
-     - **Anfrage** -- Personen müssen eine Beitrittsanfrage stellen, die genehmigt werden muss (siehe [Gruppenbeitrittsanfragen](./group-join-requests.md))
-     - **Geschlossen** -- Mitglieder müssen manuell von Leitern oder Administratoren hinzugefügt werden
-   - **Etiketten** -- Weisen Sie der Gruppe ein oder mehrere beschreibende Etiketten zu (zum Beispiel „Vor Ort", „Online", „Neue Mitglieder willkommen"). Etiketten sind von Ihnen definierte freie Tags; wählen Sie alle zutreffenden aus. Etiketten können verwendet werden, um Gruppen im Website-Element „Gruppen-Browser" zu filtern.
-   - **Vertrauliche Gruppe** -- Verbergen Sie diese Gruppe und ihr Verzeichnis vor öffentlichen Seiten, dem Gruppenfinder und Nicht-Mitgliedern. Verwenden Sie dies für sensible Gruppen wie Genesungs- oder Beratungsdienste; nur die Mitglieder der Gruppe und die Kirchenmitarbeiter können sie sehen.
-   - **Anwesenheitsverfolgung** -- Aktivieren Sie dies, wenn Sie die [Anwesenheit](../attendance/tracking-attendance.md) für diese Gruppe erfassen möchten.
-   - **Gottesdienstzeiten** -- Ordnen Sie die Gruppe gegebenenfalls bestimmten Gottesdienstzeiten der Kirche zu. Details zu Gottesdienstzeiten finden Sie unter [Anwesenheit einrichten](../attendance/setup.md).
-4. Klicken Sie auf **Speichern**, um Ihre Änderungen zu übernehmen.
+1. Klicke auf den **Gruppennamen** in der Liste, um ihn zu öffnen.
+2. Klicke auf das **Stift-Symbol**, um die Gruppeneinstellungen zu bearbeiten.
+3. Konfiguriere die folgenden Optionen:
+   - **Beschreibung** – Eine kurze Zusammenfassung, worum es bei der Gruppe geht. Dies ist für Mitglieder sichtbar.
+   - **Treffen Zeitpunkte** – Wann die Gruppe normalerweise zusammenkommt (z. B. "Mittwochs um 19 Uhr").
+   - **Beitrittrichtlinie** – Wähle, wer dieser Gruppe beitreten kann:
+     - **Offen** – Jeder kann sofort ohne Genehmigung beitreten
+     - **Anfordern** – Personen müssen eine Beitrittanfrage einreichen, die Genehmigung erfordert (siehe [Gruppenbieterungsanfragen](./group-join-requests.md))
+     - **Geschlossen** – Mitglieder müssen manuell von Leitern oder Administratoren hinzugefügt werden
+   - **Etiketten** – Weise der Gruppe eine oder mehrere beschreibende Etiketten zu (z. B. "persönlich", "online", "Neue Mitglieder willkommen"). Etiketten sind freiformige Tags, die du definierst; aktiviere alle, die zutreffen. Etiketten können verwendet werden, um Gruppen im Website-Element "Gruppenbrowser" zu filtern.
+   - **Vertrauliche Gruppe** – Verberge diese Gruppe und ihr Roster vor öffentlichen Seiten, der Gruppenfinder und Nicht-Mitgliedern. Verwende dies für sensible Gruppen wie Genesungs- oder Beratungsministerien; nur die Mitglieder der Gruppe und das Kirchenpersonal können sie sehen.
+   - **Anwesenheitsverfolgung** – Aktiviere dies, wenn du die [Anwesenheit](../attendance/tracking-attendance.md) für diese Gruppe aufzeichnen möchtest.
+   - **Gottesdienste** – Verknüpfe die Gruppe mit bestimmten Kirchengottesdiensten, falls zutreffend. Siehe [Anwesenheitseinrichtung](../attendance/setup.md) für Details zu Gottesdiensten.
+4. Klicke auf **Speichern**, um deine Änderungen anzuwenden.
 
 :::tip
-Eine klare Beschreibung und Treffzeit hilft Mitgliedern zu wissen, was sie beim Beitritt zu einer Gruppe erwartet.
+Das Hinzufügen einer klaren Beschreibung und Besprechungszeit hilft Mitgliedern zu verstehen, was sie erwartet, wenn sie einer Gruppe beitreten.
 :::
 
-## Eine Gruppe duplizieren
+## Duplizieren einer Gruppe
 
-Beginnen Sie eine neue Sitzung einer wiederkehrenden Klasse oder eines Dienstes? Duplizieren Sie eine vorhandene Gruppe, statt alle Einstellungen erneut einzugeben:
+Startest du eine neue Sitzung einer wiederkehrenden Klasse oder eines Ministeriums? Anstatt alle Einstellungen erneut einzugeben, dupliziere eine vorhandene Gruppe:
 
-1. Öffnen Sie die Gruppe und klicken Sie im Gruppenbanner (neben Bearbeiten) auf das Symbol **Duplizieren**.
-2. Bestätigen Sie die Duplizierung.
+1. Öffne die Gruppe und klicke auf das **Duplikat**-Symbol im Gruppenbanner (neben Bearbeiten).
+2. Bestätige die Duplizierung.
 
-Die Kopie übernimmt die Einstellungen des Originals -- Kategorie, Beschreibung, Treffzeit/Ort, Beitrittsrichtlinie, Etiketten und Campus -- **jedoch nicht** ihre Mitglieder. Die neue Gruppe wird nach dem Original mit dem Zusatz „ (Kopie)" benannt; benennen Sie sie in den Gruppeneinstellungen um.
+Die Kopie übernimmt die Einstellungen des Originals – Kategorie, Beschreibung, Treffen Zeit/Ort, Beitrittrichtlinie, Etiketten und Campus – aber **nicht** seine Mitglieder. Die neue Gruppe heißt nach dem Original mit " (Kopie)" angefügt; benenne es in den Gruppeneinstellungen um.
 
 ## Eine Gruppe archivieren
 
-Wenn eine Gruppe nicht mehr aktiv ist, Sie aber ihre Historie behalten möchten, anstatt sie zu löschen:
+Wenn eine Gruppe nicht mehr aktiv ist, aber du möchtest ihre Geschichte behalten, anstatt sie zu löschen:
 
-1. Öffnen Sie die Gruppe und klicken Sie auf das **Stiftsymbol**, um ihre Einstellungen zu bearbeiten.
-2. Klicken Sie auf **Archivieren** und bestätigen Sie.
+1. Öffne die Gruppe und klicke auf das **Stift-Symbol**, um ihre Einstellungen zu bearbeiten.
+2. Klicke auf **Archivieren** und bestätige.
 
-Archivierte Gruppen verschwinden aus der Hauptgruppenliste. Um eine wiederzufinden, aktivieren Sie oben auf der Gruppenseite den Schalter **Archivierte anzeigen** und klicken Sie dann neben der Gruppe auf **Wiederherstellen**, um sie zurückzuholen.
+Archivierte Gruppen verschwinden aus der Hauptliste "Gruppen". Um eine Gruppe wiederzufinden, aktiviere den Umschalter **Archiviert anzeigen** oben auf der Seite "Gruppen" und klicke dann auf **Wiederherstellen** neben der Gruppe, um sie zurückzubringen.
 
 :::info
-Das Archivieren einer Gruppe löscht weder ihre Mitglieder, ihren Anwesenheitsverlauf noch ihre Kalendertermine -- es blendet die Gruppe nur aus der Standardliste aus, bis Sie sie wiederherstellen.
+Das Archivieren einer Gruppe löscht ihre Mitglieder, Anwesenheitshistorie oder Kalender-Events nicht – es verbirgt die Gruppe einfach aus der Standard-Liste, bis du sie wiederherstellst.
 :::
 
 ## Nächste Schritte
 
-Nach dem Erstellen und Konfigurieren Ihrer Gruppe können Sie:
+Nach dem Erstellen und Konfigurieren deiner Gruppe bist du bereit:
 
-- **Mitglieder hinzufügen** -- Suchen Sie nach Personen und fügen Sie sie der Gruppe hinzu. Verwenden Sie das grüne Schlüsselsymbol, um Gruppenleiter zu benennen. Siehe [Gruppenmitglieder](./group-members.md).
-- **Einen Kalender einrichten** -- Erstellen Sie Veranstaltungen und wiederkehrende Treffen für die Gruppe. Siehe [Gruppenkalender](./group-calendar.md).
-- **Kommunizieren** -- Senden Sie direkt von der Gruppenseite aus Nachrichten an alle Gruppenmitglieder.
-- **Daten exportieren** -- Klicken Sie auf das Download-Symbol, um die Mitgliederliste Ihrer Gruppe zu exportieren.
+- **Mitglieder hinzufügen** – Suche nach Personen und füge sie zur Gruppe hinzu. Verwende das grüne Schlüsselsymbol, um Gruppeleiter zu bestimmen. Siehe [Gruppenmitglieder](./group-members.md).
+- **Einen Kalender einrichten** – Erstelle Events und wiederkehrende Treffen für die Gruppe. Siehe [Gruppenkalender](./group-calendar.md).
+- **Kommunizieren** – Sende Nachrichten an alle Gruppenmitglieder direkt von der Gruppenseite.
+- **Daten exportieren** – Klicke auf das Download-Symbol, um die Liste der Gruppenmitglieder zu exportieren.
 
 :::info
-Alle Ihre Kirchengruppen werden auf der Hauptgruppenseite nach Kategorien organisiert. Sie können Kategorien jederzeit umordnen oder umbenennen, während Ihre Kirche wächst.
+Alle deine Kirchengruppen sind nach Kategorien auf der Hauptseite "Gruppen" organisiert. Du kannst Kategorien jederzeit umgestalten oder umbenennen, wenn deine Kirche wächst.
 :::

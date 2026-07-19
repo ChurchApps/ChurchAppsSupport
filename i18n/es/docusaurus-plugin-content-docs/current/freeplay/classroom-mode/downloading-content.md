@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Descarga de Contenido de Lecciones"
 ---
 

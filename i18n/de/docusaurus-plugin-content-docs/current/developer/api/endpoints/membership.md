@@ -1,12 +1,12 @@
-﻿---
-title: "Membership-Endpunkte"
+---
+title: "Mitgliedschafts-Endpunkte"
 ---
 
-# Membership-Endpunkte
+# Mitgliedschafts-Endpunkte
 
 <div class="article-intro">
 
-Das Membership-Modul verwaltet Personen, Kirchen, Gruppen, Haushalte, Rollen, Berechtigungen, Formulare und Einstellungen. Es ist das größte Modul und bietet die Kern-Identitäts- und Autorisierungsebene für alle anderen Module.
+Das Membership-Modul verwaltet Personen, Kirchen, Gruppen, Haushalte, Rollen, Berechtigungen, Formulare und Einstellungen. Es ist das größte Modul und bildet die zentrale Identitäts- und Autorisierungsschicht für alle anderen Module.
 
 </div>
 
@@ -16,31 +16,31 @@ Das Membership-Modul verwaltet Personen, Kirchen, Gruppen, Haushalte, Rollen, Be
 
 Basispfad: `/membership/people`
 
-| Method | Path | Auth | Permission | Beschreibung |
+| Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | / | JWT | People.View oder Member | Auflisten aller Personen für die Kirche |
-| GET | `/:id` | JWT | People.View oder eigener Datensatz | Eine Person nach ID abrufen (einschließlich Formulareinreichungen) |
-| GET | `/ids?ids=` | JWT | People.View oder Member | Abrufen mehrerer Personen nach komma-getrennten IDs |
-| GET | `/basic?ids=` | JWT | — | Abrufen von Basisinformationen (nur Name) für mehrere Personen |
-| GET | `/recent` | JWT | People.View oder Member | Kürzlich hinzugefügte Personen |
-| GET | `/search?term=&email=` | JWT | People.View oder Member | Suchen Sie Personen nach Name oder E-Mail |
-| GET | `/search/phone?number=` | JWT | People.View oder Member | Suchen nach Telefonnummer |
-| GET | `/search/group?groupId=` | JWT | People.View oder Member | Abrufen von Personen in einer bestimmten Gruppe |
-| GET | `/household/:householdId` | JWT | — | Abrufen aller Personen in einem Haushalt |
-| GET | `/attendance` | JWT | People.Edit | Laden Sie Anwesende mit Filtern (campusId, serviceId, serviceTimeId, groupId, categoryName, startDate, endDate) |
-| GET | `/timeline?personIds=&groupIds=` | JWT | — | Laden Sie Zeitdaten für Personen und Gruppen |
-| GET | `/directory/:id` | JWT | — | Abrufen einer Person für die Verzeichnisansicht (respektiert Sichtbarkeitspräferenzen) |
-| GET | `/claim/:churchId` | JWT | — | Beanspruchen Sie einen Personendatensatz für den aktuellen Benutzer in einer Kirche |
-| POST | / | JWT | People.Edit oder EditSelf | Erstellen oder aktualisieren Sie Personen (Batch) |
-| POST | `/search` | JWT | People.View oder Member | Suchen Sie Personen (POST-Variante) |
-| POST | `/advancedSearch` | JWT | People.View oder Member | Suche mit mehreren Bedingungen (Alter, Geburtsmonat, Mitgliedschaftsstatus, etc.) |
-| POST | `/loadOrCreate` | Public | — | Finden oder erstellen Sie eine Person nach E-Mail. Body: `{ churchId, email, firstName, lastName }` |
-| POST | `/household/:householdId` | JWT | People.Edit | Aktualisieren Sie Haushaltsmitglied-Zuweisungen |
-| POST | `/public/email` | Public | — | Senden Sie eine E-Mail an eine Person. Body: `{ churchId, personId, subject, body, appName }` |
-| POST | `/apiEmails` | Internal | — | Laden Sie Personen-E-Mails nach IDs (Server-zu-Server, erfordert jwtSecret) |
-| DELETE | `/:id` | JWT | People.Edit | Löschen Sie eine Person |
+| GET | `/` | JWT | People.View oder Mitglied | Alle Personen der Kirche auflisten |
+| GET | `/:id` | JWT | People.View oder eigener Datensatz | Eine Person anhand der ID abrufen (inklusive Formulareinreichungen) |
+| GET | `/ids?ids=` | JWT | People.View oder Mitglied | Mehrere Personen anhand kommagetrennter IDs abrufen |
+| GET | `/basic?ids=` | JWT | — | Basisinformationen (nur Name) für mehrere Personen abrufen |
+| GET | `/recent` | JWT | People.View oder Mitglied | Kürzlich hinzugefügte Personen |
+| GET | `/search?term=&email=` | JWT | People.View oder Mitglied | Personen nach Name oder E-Mail suchen |
+| GET | `/search/phone?number=` | JWT | People.View oder Mitglied | Nach Telefonnummer suchen |
+| GET | `/search/group?groupId=` | JWT | People.View oder Mitglied | Personen in einer bestimmten Gruppe abrufen |
+| GET | `/household/:householdId` | JWT | — | Alle Personen eines Haushalts abrufen |
+| GET | `/attendance` | JWT | People.Edit | Teilnehmer mit Filtern laden (campusId, serviceId, serviceTimeId, groupId, categoryName, startDate, endDate) |
+| GET | `/timeline?personIds=&groupIds=` | JWT | — | Zeitachsendaten für Personen und Gruppen laden |
+| GET | `/directory/:id` | JWT | — | Eine Person für die Verzeichnisansicht abrufen (berücksichtigt Sichtbarkeitseinstellungen) |
+| GET | `/claim/:churchId` | JWT | — | Einen Personendatensatz für den aktuellen Benutzer bei einer Kirche beanspruchen |
+| POST | `/` | JWT | People.Edit oder EditSelf | Personen erstellen oder aktualisieren (Batch) |
+| POST | `/search` | JWT | People.View oder Mitglied | Personen suchen (POST-Variante) |
+| POST | `/advancedSearch` | JWT | People.View oder Mitglied | Mehrfache Suchbedingungen (Alter, birthMonth, membershipStatus usw.) |
+| POST | `/loadOrCreate` | Öffentlich | — | Eine Person anhand der E-Mail finden oder erstellen. Body: `{ churchId, email, firstName, lastName }` |
+| POST | `/household/:householdId` | JWT | People.Edit | Haushaltsmitgliedschaftszuordnungen aktualisieren |
+| POST | `/public/email` | Öffentlich | — | Eine E-Mail an eine Person senden. Body: `{ churchId, personId, subject, body, appName }` |
+| POST | `/apiEmails` | Intern | — | E-Mail-Adressen von Personen anhand von IDs laden (Server-zu-Server, erfordert jwtSecret) |
+| DELETE | `/:id` | JWT | People.Edit | Eine Person löschen |
 
-### Beispiel: Suchen Sie nach Personen
+### Beispiel: Personen suchen
 
 ```
 GET /membership/people/search?term=John
@@ -58,7 +58,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-### Beispiel: Erstellen Sie eine Person
+### Beispiel: Eine Person erstellen
 
 ```
 POST /membership/people
@@ -71,81 +71,81 @@ Authorization: Bearer <token>
 
 Basispfad: `/membership/users`
 
-Siehe [Authentifizierung & Berechtigungen](./authentication) für Anmeldung-, Registrierungs- und Passwortverwaltungsendpunkte.
+Siehe [Authentifizierung & Berechtigungen](./authentication) für die Endpunkte zu Login, Registrierung und Passwortverwaltung.
 
-| Method | Path | Auth | Permission | Beschreibung |
+| Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| POST | `/login` | Public | — | Anmelden (E-Mail/Passwort, JWT-Aktualisierung oder authGuid) |
-| POST | `/register` | Public | — | Neuen Benutzer registrieren |
-| POST | `/forgot` | Public | — | E-Mail zum Zurücksetzen des Passworts senden |
-| POST | `/setPasswordGuid` | Public | — | Passwort mit Auth-GUID aus E-Mail-Link festlegen |
-| POST | `/verifyCredentials` | Public | — | Überprüfen Sie E-Mail/Passwort und geben Sie verknüpfte Kirchen zurück |
-| POST | `/loadOrCreate` | JWT | — | Finden oder erstellen Sie einen Benutzer nach E-Mail/userId |
-| POST | `/setDisplayName` | JWT | — | Aktualisieren Sie den Vor- und Nachnamen des Benutzers |
-| POST | `/updateEmail` | JWT | — | Ändern Sie die E-Mail-Adresse des Benutzers |
-| POST | `/updatePassword` | JWT | — | Ändern Sie das Passwort des Benutzers (min. 6 Zeichen) |
-| POST | `/updateOptedOut` | JWT | — | Legen Sie den Opt-Out-Status einer Person fest |
-| GET | `/search?term=` | JWT | Server.Admin | Suchen Sie alle Benutzer nach Name/E-Mail |
-| DELETE | / | JWT | — | Löschen Sie das Konto des aktuellen Benutzers |
+| POST | `/login` | Öffentlich | — | Anmelden (E-Mail/Passwort, JWT-Refresh oder authGuid) |
+| POST | `/register` | Öffentlich | — | Einen neuen Benutzer registrieren |
+| POST | `/forgot` | Öffentlich | — | E-Mail zum Zurücksetzen des Passworts senden |
+| POST | `/setPasswordGuid` | Öffentlich | — | Passwort mit Auth-GUID aus dem E-Mail-Link setzen |
+| POST | `/verifyCredentials` | Öffentlich | — | E-Mail/Passwort überprüfen und zugehörige Kirchen zurückgeben |
+| POST | `/loadOrCreate` | JWT | — | Einen Benutzer anhand von E-Mail/userId finden oder erstellen |
+| POST | `/setDisplayName` | JWT | — | Vor- und Nachnamen des Benutzers aktualisieren |
+| POST | `/updateEmail` | JWT | — | E-Mail-Adresse des Benutzers ändern |
+| POST | `/updatePassword` | JWT | — | Passwort des Benutzers ändern (mind. 6 Zeichen) |
+| POST | `/updateOptedOut` | JWT | — | Den Opt-out-Status einer Person setzen |
+| GET | `/search?term=` | JWT | Server.Admin | Alle Benutzer nach Name/E-Mail suchen |
+| DELETE | `/` | JWT | — | Das aktuelle Benutzerkonto löschen |
 
 ## Kirchen
 
 Basispfad: `/membership/churches`
 
-| Method | Path | Auth | Permission | Beschreibung |
+| Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | / | JWT | — | Laden Sie alle Kirchen für den aktuellen Benutzer |
-| GET | `/:id` | JWT | — | Kirche nach ID abrufen |
-| GET | `/:id/getDomainAdmin` | JWT | — | Abrufen des Domain-Admin-Benutzers für eine Kirche |
-| GET | `/:id/impersonate` | JWT | Server.Admin | Annehmen Sie eine Kirche an (nur Server-Admin) |
-| GET | `/all?term=` | JWT | Server.Admin | Suchen Sie alle Kirchen (Admin) |
-| GET | `/search/?name=` | Public | — | Suchen Sie Kirchen nach Name |
-| GET | `/lookup/?subDomain=&id=` | Public | — | Suchen Sie eine Kirche nach Subdomain oder ID |
-| POST | / | JWT | Settings.Edit | Aktualisieren Sie Kirchendetails |
-| POST | `/add` | JWT | — | Registrieren Sie eine neue Kirche. Erforderliche Felder: Name, Adresse1, Stadt, Bundesland, PLZ, Land |
-| POST | `/search` | Public | — | Suchen Sie Kirchen nach Name (POST-Variante) |
-| POST | `/select` | JWT | — | Wählen/wechseln Sie zu einer Kirche. Body: `{ churchId }` oder `{ subDomain }` |
-| POST | `/:id/archive` | JWT | Server.Admin | Archivieren oder enfernen Sie das Archiv aus einer Kirche |
-| POST | `/byIds` | Public | — | Laden Sie mehrere Kirchen nach IDs |
-| DELETE | `/deleteAbandoned` | JWT | Server.Admin | Löschen Sie Kirchen, die 7+ Tage verlassen wurden |
+| GET | `/` | JWT | — | Alle Kirchen des aktuellen Benutzers laden |
+| GET | `/:id` | JWT | — | Kirche anhand der ID abrufen |
+| GET | `/:id/getDomainAdmin` | JWT | — | Den Domain-Admin-Benutzer einer Kirche abrufen |
+| GET | `/:id/impersonate` | JWT | Server.Admin | Eine Kirche imitieren (nur Server-Admin) |
+| GET | `/all?term=` | JWT | Server.Admin | Alle Kirchen durchsuchen (Admin) |
+| GET | `/search/?name=` | Öffentlich | — | Kirchen nach Name suchen |
+| GET | `/lookup/?subDomain=&id=` | Öffentlich | — | Eine Kirche anhand der Subdomain oder ID nachschlagen |
+| POST | `/` | JWT | Settings.Edit | Kirchendetails aktualisieren |
+| POST | `/add` | JWT | — | Eine neue Kirche registrieren. Pflichtfelder: name, address1, city, state, zip, country |
+| POST | `/search` | Öffentlich | — | Kirchen nach Name suchen (POST-Variante) |
+| POST | `/select` | JWT | — | Zu einer Kirche wechseln/auswählen. Body: `{ churchId }` oder `{ subDomain }` |
+| POST | `/:id/archive` | JWT | Server.Admin | Eine Kirche archivieren oder die Archivierung aufheben |
+| POST | `/byIds` | Öffentlich | — | Mehrere Kirchen anhand von IDs laden |
+| DELETE | `/deleteAbandoned` | JWT | Server.Admin | Seit 7+ Tagen verwaiste Kirchen löschen |
 
 ## Gruppen
 
 Basispfad: `/membership/groups`
 
-Erweitert Standard-CRUD (GET /, GET `/:id` aus der Basisklasse).
+Erweitert das Standard-CRUD (GET `/`, GET `/:id` aus der Basisklasse).
 
-| Method | Path | Auth | Permission | Beschreibung |
+| Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | / | JWT | — | Auflisten aller Gruppen |
-| GET | `/:id` | JWT | — | Gruppe nach ID abrufen |
-| GET | `/search?campusId=&serviceId=&serviceTimeId=` | JWT | — | Suchen Sie Gruppen nach Servicefiltern |
-| GET | `/my` | JWT | — | Abrufen von Gruppen für den aktuellen Benutzer |
-| GET | `/my/:tag` | JWT | — | Abrufen der Gruppen des aktuellen Benutzers gefiltert nach Tag |
-| GET | `/tag/:tag` | JWT | — | Abrufen aller Gruppen mit einem bestimmten Tag |
-| GET | `/public/:churchId/:id` | Public | — | Abrufen einer öffentlichen Gruppe nach Kirche und ID |
-| GET | `/public/:churchId/tag/:tag` | Public | — | Abrufen öffentlicher Gruppen nach Tag |
-| GET | `/public/:churchId/label?label=` | Public | — | Abrufen öffentlicher Gruppen nach Label |
-| GET | `/public/:churchId/slug/:slug` | Public | — | Abrufen einer öffentlichen Gruppe nach Slug |
-| POST | / | JWT | Groups.Edit | Erstellen oder aktualisieren Sie Gruppen (auto-generiert Slug) |
-| DELETE | `/:id` | JWT | Groups.Edit | Löschen Sie eine Gruppe (löscht auch untergeordnete Teams für Ministeriums-Gruppen) |
+| GET | `/` | JWT | — | Alle Gruppen auflisten |
+| GET | `/:id` | JWT | — | Gruppe anhand der ID abrufen |
+| GET | `/search?campusId=&serviceId=&serviceTimeId=` | JWT | — | Gruppen nach Gottesdienst-Filtern suchen |
+| GET | `/my` | JWT | — | Gruppen des aktuellen Benutzers abrufen |
+| GET | `/my/:tag` | JWT | — | Gruppen des aktuellen Benutzers gefiltert nach Tag abrufen |
+| GET | `/tag/:tag` | JWT | — | Alle Gruppen mit einem bestimmten Tag abrufen |
+| GET | `/public/:churchId/:id` | Öffentlich | — | Eine öffentliche Gruppe anhand von Kirche und ID abrufen |
+| GET | `/public/:churchId/tag/:tag` | Öffentlich | — | Öffentliche Gruppen nach Tag abrufen |
+| GET | `/public/:churchId/label?label=` | Öffentlich | — | Öffentliche Gruppen nach Label abrufen |
+| GET | `/public/:churchId/slug/:slug` | Öffentlich | — | Eine öffentliche Gruppe anhand des Slugs abrufen |
+| POST | `/` | JWT | Groups.Edit | Gruppen erstellen oder aktualisieren (generiert den Slug automatisch) |
+| DELETE | `/:id` | JWT | Groups.Edit | Eine Gruppe löschen (löscht bei Dienstgruppen auch untergeordnete Teams) |
 
 ## Gruppenmitglieder
 
 Basispfad: `/membership/groupmembers`
 
-Erweitert Standard-CRUD (GET `/:id`, DELETE `/:id` aus der Basisklasse).
+Erweitert das Standard-CRUD (GET `/:id`, DELETE `/:id` aus der Basisklasse).
 
-| Method | Path | Auth | Permission | Beschreibung |
+| Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | GroupMembers.View | Gruppenmitglied nach ID abrufen |
-| GET | / | JWT | GroupMembers.View* | Auflisten von Gruppenmitgliedern. Filter nach `?groupId=`, `?groupIds=` oder `?personId=`. *Auch zulässig, wenn der Benutzer in der Gruppe ist oder eigene `personId` abfragt |
-| GET | `/my` | JWT | — | Abrufen der Gruppenmitgliedschaften des aktuellen Benutzers |
-| GET | `/basic/:groupId` | JWT | — | Abrufen der Basismitgliederliste für eine Gruppe |
-| GET | `/public/leaders/:churchId/:groupId` | Public | — | Abrufen von Gruppenführern (öffentlich) |
-| GET | `/public/:churchId/:groupId` | Public | — | Abrufen einer öffentlichen Gruppen-Rostertabelle (minimale Felder: `personId`, `displayName`, `leader`, Photo). Nur wenn die Gruppe sich über `publicRoster` anmeldet; betreibt das Element `staffGrid` des Website-Builders |
-| POST | / | JWT | GroupMembers.Edit | Hinzufügen oder Aktualisieren von Gruppenmitgliedern |
-| DELETE | `/:id` | JWT | GroupMembers.View | Entfernen Sie ein Gruppenmitglied |
+| GET | `/:id` | JWT | GroupMembers.View | Gruppenmitglied anhand der ID abrufen |
+| GET | `/` | JWT | GroupMembers.View* | Gruppenmitglieder auflisten. Mit `?groupId=`, `?groupIds=` oder `?personId=` filtern. *Auch erlaubt, wenn der Benutzer in der Gruppe ist oder die eigene personId abfragt |
+| GET | `/my` | JWT | — | Gruppenmitgliedschaften des aktuellen Benutzers abrufen |
+| GET | `/basic/:groupId` | JWT | — | Einfache Mitgliederliste für eine Gruppe abrufen |
+| GET | `/public/leaders/:churchId/:groupId` | Öffentlich | — | Gruppenleiter abrufen (öffentlich) |
+| GET | `/public/:churchId/:groupId` | Öffentlich | — | Das öffentliche Verzeichnis einer Gruppe abrufen (minimale Felder: `personId`, `displayName`, `leader`, Foto). Nur, wenn die Gruppe über `publicRoster` zustimmt; treibt das `staffGrid`-Element des Website-Builders an |
+| POST | `/` | JWT | GroupMembers.Edit | Gruppenmitglieder hinzufügen oder aktualisieren |
+| DELETE | `/:id` | JWT | GroupMembers.View | Ein Gruppenmitglied entfernen |
 
 ## Haushalte
 
@@ -153,186 +153,185 @@ Basispfad: `/membership/households`
 
 Standard-CRUD-Controller.
 
-| Method | Path | Auth | Permission | Beschreibung |
+| Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | / | JWT | — | Auflisten aller Haushalte |
-| GET | `/:id` | JWT | — | Haushalt nach ID abrufen |
-| POST | / | JWT | People.Edit | Erstellen oder aktualisieren Sie Haushalte |
-| DELETE | `/:id` | JWT | People.Edit | Löschen Sie einen Haushalt |
+| GET | `/` | JWT | — | Alle Haushalte auflisten |
+| GET | `/:id` | JWT | — | Haushalt anhand der ID abrufen |
+| POST | `/` | JWT | People.Edit | Haushalte erstellen oder aktualisieren |
+| DELETE | `/:id` | JWT | People.Edit | Einen Haushalt löschen |
 
 ## Rollen
 
 Basispfad: `/membership/roles`
 
-| Method | Path | Auth | Permission | Beschreibung |
+| Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | Roles.View | Rolle nach ID abrufen |
-| GET | `/church/:churchId` | JWT | Roles.View | Abrufen aller Rollen für eine Kirche |
-| POST | / | JWT | Roles.Edit | Erstellen oder aktualisieren Sie Rollen |
-| DELETE | `/:id` | JWT | Roles.Edit | Löschen Sie eine Rolle (entfernt auch ihre Berechtigungen und Mitglieder) |
+| GET | `/:id` | JWT | Roles.View | Rolle anhand der ID abrufen |
+| GET | `/church/:churchId` | JWT | Roles.View | Alle Rollen einer Kirche abrufen |
+| POST | `/` | JWT | Roles.Edit | Rollen erstellen oder aktualisieren |
+| DELETE | `/:id` | JWT | Roles.Edit | Eine Rolle löschen (entfernt auch deren Berechtigungen und Mitglieder) |
 
 ## Rollenmitglieder
 
 Basispfad: `/membership/rolemembers`
 
-| Method | Path | Auth | Permission | Beschreibung |
+| Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/roles/:id` | JWT | Roles.View | Abrufen von Mitgliedern für eine Rolle. Hinzufügen `?include=users` um Benutzerdetails einzuschließen |
-| POST | / | JWT | Roles.Edit | Hinzufügen von Mitgliedern zu einer Rolle (erstellt Benutzer, wenn E-Mail nicht existiert) |
-| DELETE | `/:id` | JWT | Roles.View | Entfernen Sie ein Rollenmitglied |
-| DELETE | `/self/:churchId/:userId` | JWT | — | Entfernen Sie sich selbst aus einer Kirche |
+| GET | `/roles/:id` | JWT | Roles.View | Mitglieder einer Rolle abrufen. `?include=users` hinzufügen, um Benutzerdetails einzuschließen |
+| POST | `/` | JWT | Roles.Edit | Mitglieder zu einer Rolle hinzufügen (erstellt einen Benutzer, falls die E-Mail nicht existiert) |
+| DELETE | `/:id` | JWT | Roles.View | Ein Rollenmitglied entfernen |
+| DELETE | `/self/:churchId/:userId` | JWT | — | Sich selbst aus einer Kirche entfernen |
 
-## Rollen-Berechtigungen
+## Rollenberechtigungen
 
 Basispfad: `/membership/rolepermissions`
 
-| Method | Path | Auth | Permission | Beschreibung |
+| Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/roles/:id` | JWT | Roles.View | Abrufen von Berechtigungen für eine Rolle (verwenden Sie 
-ull als ID für die Rolle \"Everyone\") |
-| POST | / | JWT | Roles.Edit | Erstellen oder aktualisieren Sie Rollen-Berechtigungen |
-| DELETE | `/:id` | JWT | Roles.Edit | Löschen Sie eine Rollen-Berechtigung |
+| GET | `/roles/:id` | JWT | Roles.View | Berechtigungen einer Rolle abrufen (`null` als ID für die Rolle "Everyone" verwenden) |
+| POST | `/` | JWT | Roles.Edit | Rollenberechtigungen erstellen oder aktualisieren |
+| DELETE | `/:id` | JWT | Roles.Edit | Eine Rollenberechtigung löschen |
 
 ## Berechtigungen
 
 Basispfad: `/membership/permissions`
 
-| Method | Path | Auth | Permission | Beschreibung |
+| Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | / | JWT | — | Abrufen der vollständigen Liste verfügbarer Berechtigungen |
+| GET | `/` | JWT | — | Die vollständige Liste der verfügbaren Berechtigungen abrufen |
 
 ## Formulare
 
 Basispfad: `/membership/forms`
 
-| Method | Path | Auth | Permission | Beschreibung |
+| Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | / | JWT | Forms.Admin oder Forms.Edit | Auflisten aller Formulare (Admin sieht alle; Editoren sehen zugewiesen + nicht-Mitgliederformulare) |
-| GET | `/:id` | JWT | Formular-Zugriff | Formular nach ID abrufen |
-| GET | `/archived` | JWT | Forms.Admin oder Forms.Edit | Auflisten archivierter Formulare |
-| GET | `/standalone/:id?churchId=` | JWT | — | Abrufen eines Standalone-Formulars (begrenzte Formulare erfordern Authentifizierung) |
-| POST | / | JWT | Forms.Admin oder Forms.Edit | Erstellen oder aktualisieren Sie Formulare |
-| DELETE | `/:id` | JWT | Formular-Zugriff | Löschen Sie ein Formular |
+| GET | `/` | JWT | Forms.Admin oder Forms.Edit | Alle Formulare auflisten (Admins sehen alle; Bearbeiter sehen zugewiesene sowie Nicht-Mitglieder-Formulare) |
+| GET | `/:id` | JWT | Formularzugriff | Ein Formular anhand der ID abrufen |
+| GET | `/archived` | JWT | Forms.Admin oder Forms.Edit | Archivierte Formulare auflisten |
+| GET | `/standalone/:id?churchId=` | JWT | — | Ein eigenständiges Formular abrufen (eingeschränkte Formulare erfordern Authentifizierung) |
+| POST | `/` | JWT | Forms.Admin oder Forms.Edit | Formulare erstellen oder aktualisieren |
+| DELETE | `/:id` | JWT | Formularzugriff | Ein Formular löschen |
 
 ## Formulareinreichungen
 
 Basispfad: `/membership/formsubmissions`
 
-| Method | Path | Auth | Permission | Beschreibung |
+| Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | / | JWT | Forms.Admin oder Forms.Edit | Auflisten von Einreichungen. Filter nach `?personId=` oder `?formId=` |
-| GET | `/:id` | JWT | Forms.Admin oder Forms.Edit | Einreichung nach ID abrufen. Hinzufügen `?include=form,questions,answers` |
-| GET | `/formId/:formId` | JWT | Formular-Zugriff | Abrufen aller Einreichungen für ein Formular (einschließlich Formular, Fragen, Antworten) |
-| POST | / | JWT | — | Formularantworten einreichen (verarbeitet begrenzte/unbegrenzte Formulare, sendet E-Mail-Benachrichtigungen). Wenn das Formular `autoCreatePerson` hat, findet oder erstellt einen Gasteintrag nach E-Mail und verknüpft die Einreichung; wenn `followUpSubject`/`followUpBody` gesetzt sind, sendet eine vorlagengesteuerte Nachfolge-E-Mail an die einreichende Person |
-| DELETE | `/:id` | JWT | Forms.Admin oder Forms.Edit | Löschen Sie eine Einreichung und ihre Antworten |
+| GET | `/` | JWT | Forms.Admin oder Forms.Edit | Einreichungen auflisten. Mit `?personId=` oder `?formId=` filtern |
+| GET | `/:id` | JWT | Forms.Admin oder Forms.Edit | Einreichung anhand der ID abrufen. `?include=form,questions,answers` hinzufügen |
+| GET | `/formId/:formId` | JWT | Formularzugriff | Alle Einreichungen für ein Formular abrufen (inklusive Formular, Fragen, Antworten) |
+| POST | `/` | JWT | — | Formularantworten einreichen (behandelt eingeschränkte/uneingeschränkte Formulare, sendet E-Mail-Benachrichtigungen). Wenn das Formular `autoCreatePerson` gesetzt hat, wird anhand der E-Mail eine Gastperson gefunden oder erstellt und mit der Einreichung verknüpft; wenn `followUpSubject`/`followUpBody` gesetzt sind, wird eine vorlagenbasierte Folge-E-Mail an den Einreichenden gesendet |
+| DELETE | `/:id` | JWT | Forms.Admin oder Forms.Edit | Eine Einreichung und ihre Antworten löschen |
 
 ## Fragen
 
 Basispfad: `/membership/questions`
 
-| Method | Path | Auth | Permission | Beschreibung |
+| Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | / | JWT | Formular-Zugriff | Auflisten von Fragen für ein Formular. Erfordert `?formId=` |
-| GET | `/:id` | JWT | Formular-Zugriff | Frage nach ID abrufen |
-| GET | `/unrestricted?formId=` | JWT | — | Abrufen von Fragen für ein uneingeschränktes Formular |
-| GET | `/sort/:id/up` | JWT | — | Verschieben Sie eine Frage in der Sortierreihenfolge nach oben |
-| GET | `/sort/:id/down` | JWT | — | Verschieben Sie eine Frage in der Sortierreihenfolge nach unten |
-| POST | / | JWT | Formular-Zugriff | Erstellen oder aktualisieren Sie Fragen (auto-weist Sortierreihenfolge zu) |
-| DELETE | `/:id?formId=` | JWT | Formular-Zugriff | Löschen Sie eine Frage |
+| GET | `/` | JWT | Formularzugriff | Fragen eines Formulars auflisten. Erfordert `?formId=` |
+| GET | `/:id` | JWT | Formularzugriff | Eine Frage anhand der ID abrufen |
+| GET | `/unrestricted?formId=` | JWT | — | Fragen für ein uneingeschränktes Formular abrufen |
+| GET | `/sort/:id/up` | JWT | — | Eine Frage in der Sortierreihenfolge nach oben verschieben |
+| GET | `/sort/:id/down` | JWT | — | Eine Frage in der Sortierreihenfolge nach unten verschieben |
+| POST | `/` | JWT | Formularzugriff | Fragen erstellen oder aktualisieren (weist die Sortierreihenfolge automatisch zu) |
+| DELETE | `/:id?formId=` | JWT | Formularzugriff | Eine Frage löschen |
 
 ## Antworten
 
 Basispfad: `/membership/answers`
 
-| Method | Path | Auth | Permission | Beschreibung |
+| Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | / | JWT | Forms.Admin oder Forms.Edit | Auflisten von Antworten. Filter nach `?formSubmissionId=` |
-| POST | / | JWT | Forms.Admin oder Forms.Edit | Erstellen oder aktualisieren Sie Antworten |
+| GET | `/` | JWT | Forms.Admin oder Forms.Edit | Antworten auflisten. Mit `?formSubmissionId=` filtern |
+| POST | `/` | JWT | Forms.Admin oder Forms.Edit | Antworten erstellen oder aktualisieren |
 
-## Mitglied-Berechtigungen
+## Mitgliederberechtigungen
 
 Basispfad: `/membership/memberpermissions`
 
-Kontrolliert den Pro-Mitglied-Zugriff auf bestimmte Formulare.
+Steuert den Zugriff einzelner Mitglieder auf bestimmte Formulare.
 
-| Method | Path | Auth | Permission | Beschreibung |
+| Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | Formular-Zugriff | Mitglied-Berechtigung nach ID abrufen |
-| GET | `/member/:id` | JWT | Formular-Zugriff | Abrufen aller Formular-Berechtigungen für ein Mitglied |
-| GET | `/form/:id` | JWT | Formular-Zugriff | Abrufen aller Mitglied-Berechtigungen für ein Formular |
-| GET | `/form/:id/my` | JWT | Formular-Zugriff | Abrufen Ihrer Berechtigung für ein Formular |
-| POST | / | JWT | Formular-Zugriff | Erstellen oder aktualisieren Sie Mitglied-Berechtigungen |
-| DELETE | `/:id?formId=` | JWT | Formular-Zugriff | Löschen Sie eine Mitglied-Berechtigung |
-| DELETE | `/member/:id?formId=` | JWT | Formular-Zugriff | Löschen Sie alle Berechtigungen für ein Mitglied auf einem Formular |
+| GET | `/:id` | JWT | Formularzugriff | Eine Mitgliederberechtigung anhand der ID abrufen |
+| GET | `/member/:id` | JWT | Formularzugriff | Alle Formularberechtigungen eines Mitglieds abrufen |
+| GET | `/form/:id` | JWT | Formularzugriff | Alle Mitgliederberechtigungen für ein Formular abrufen |
+| GET | `/form/:id/my` | JWT | Formularzugriff | Die Berechtigung des aktuellen Benutzers für ein Formular abrufen |
+| POST | `/` | JWT | Formularzugriff | Mitgliederberechtigungen erstellen oder aktualisieren |
+| DELETE | `/:id?formId=` | JWT | Formularzugriff | Eine Mitgliederberechtigung löschen |
+| DELETE | `/member/:id?formId=` | JWT | Formularzugriff | Alle Berechtigungen eines Mitglieds für ein Formular löschen |
 
 ## Einstellungen
 
 Basispfad: `/membership/settings`
 
-| Method | Path | Auth | Permission | Beschreibung |
+| Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | / | JWT | Settings.Edit | Abrufen aller Einstellungen für die Kirche |
-| GET | `/public/:churchId` | Public | — | Abrufen öffentlicher Einstellungen für eine Kirche |
-| POST | / | JWT | Settings.Edit | Speichern Sie Einstellungen (unterstützt Base64-Bild-Upload) |
+| GET | `/` | JWT | Settings.Edit | Alle Einstellungen der Kirche abrufen |
+| GET | `/public/:churchId` | Öffentlich | — | Öffentliche Einstellungen einer Kirche abrufen |
+| POST | `/` | JWT | Settings.Edit | Einstellungen speichern (unterstützt Base64-Bild-Upload) |
 
-## Domänen
+## Domains
 
 Basispfad: `/membership/domains`
 
-Erweitert Standard-CRUD (GET `/:id`, GET /, DELETE `/:id` aus der Basisklasse).
+Erweitert das Standard-CRUD (GET `/:id`, GET `/`, DELETE `/:id` aus der Basisklasse).
 
-| Method | Path | Auth | Permission | Beschreibung |
+| Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | / | JWT | — | Auflisten aller Domänen |
-| GET | `/:id` | JWT | — | Domäne nach ID abrufen |
-| GET | `/lookup/:domainName` | JWT | — | Suchen Sie eine Domäne nach Name |
-| GET | `/public/lookup/:domainName` | Public | — | Öffentliche Domänen-Suche nach Name |
-| GET | `/health/check` | Public | — | Führen Sie eine Integritätsprüfung auf nicht überprüften Domänen durch |
-| POST | / | JWT | Settings.Edit | Erstellen oder aktualisieren Sie Domänen (löst Caddy-Update aus) |
-| DELETE | `/:id` | JWT | Settings.Edit | Löschen Sie eine Domäne |
+| GET | `/` | JWT | — | Alle Domains auflisten |
+| GET | `/:id` | JWT | — | Domain anhand der ID abrufen |
+| GET | `/lookup/:domainName` | JWT | — | Eine Domain anhand des Namens nachschlagen |
+| GET | `/public/lookup/:domainName` | Öffentlich | — | Öffentliche Domain-Suche nach Namen |
+| GET | `/health/check` | Öffentlich | — | Gesundheitsprüfung für ungeprüfte Domains durchführen |
+| POST | `/` | JWT | Settings.Edit | Domains erstellen oder aktualisieren (löst eine Caddy-Aktualisierung aus) |
+| DELETE | `/:id` | JWT | Settings.Edit | Eine Domain löschen |
 
 ## Benutzer-Kirche
 
 Basispfad: `/membership/userchurch`
 
-Verwaltet die Verbindung zwischen Benutzern und Kirchen.
+Verwaltet die Zuordnung zwischen Benutzern und Kirchen.
 
-| Method | Path | Auth | Permission | Beschreibung |
+| Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/userid/:userId` | JWT | — | Abrufen des Benutzer-Kirchen-Datensatzes nach Benutzer-ID |
-| GET | `/personid/:personId` | JWT | — | Abrufen der E-Mail für den verknüpften Benutzer einer Person |
-| GET | `/user/:userId` | JWT | Server.Admin | Laden Sie alle Kirchen für einen Benutzer |
-| POST | / | JWT | — | Erstellen Sie eine Benutzer-Kirchen-Verbindung |
-| PATCH | `/:userId` | JWT | — | Aktualisieren Sie die zuletzt besuchte Zeit und protokollieren Sie den Zugriff |
-| DELETE | `/record/:userId/:churchId/:personId` | JWT | — | Löschen Sie einen Benutzer-Kirchen-Datensatz |
+| GET | `/userid/:userId` | JWT | — | Benutzer-Kirche-Datensatz anhand der Benutzer-ID abrufen |
+| GET | `/personid/:personId` | JWT | — | E-Mail-Adresse des verknüpften Benutzers einer Person abrufen |
+| GET | `/user/:userId` | JWT | Server.Admin | Alle Kirchen eines Benutzers laden |
+| POST | `/` | JWT | — | Eine Benutzer-Kirche-Zuordnung erstellen |
+| PATCH | `/:userId` | JWT | — | Letzten Zugriffszeitpunkt aktualisieren und Zugriff protokollieren |
+| DELETE | `/record/:userId/:churchId/:personId` | JWT | — | Einen Benutzer-Kirche-Datensatz löschen |
 
-## Sichtbarkeitspräferenzen
+## Sichtbarkeitseinstellungen
 
 Basispfad: `/membership/visibilityPreferences`
 
-| Method | Path | Auth | Permission | Beschreibung |
+| Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/my` | JWT | — | Abrufen Ihrer Sichtbarkeitspräferenzen |
-| POST | / | JWT | — | Speichern Sie Sichtbarkeitspräferenzen (Sichtbarkeit von Adresse, Telefon, E-Mail) |
+| GET | `/my` | JWT | — | Sichtbarkeitseinstellungen des aktuellen Benutzers abrufen |
+| POST | `/` | JWT | — | Sichtbarkeitseinstellungen speichern (Adress-, Telefon-, E-Mail-Sichtbarkeit) |
 
 ## Abfrage
 
 Basispfad: `/membership/query`
 
-| Method | Path | Auth | Permission | Beschreibung |
+| Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| POST | `/members` | JWT | — | Natürlichsprachige Mitgliedersuche mit KI. Body: `{ text, subDomain, siteUrl }` |
+| POST | `/members` | JWT | — | Natürlichsprachliche Mitgliedersuche mittels KI. Body: `{ text, subDomain, siteUrl }` |
 
 ## Client-Fehler
 
 Basispfad: `/membership/clientErrors`
 
-| Method | Path | Auth | Permission | Beschreibung |
+| Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| POST | / | JWT | — | Protokollieren Sie einen clientseitigen Fehler |
+| POST | `/` | JWT | — | Einen clientseitigen Fehler protokollieren |
 
 ## Verwandte Seiten
 
-- [Authentifizierung & Berechtigungen](./authentication) — Anmeldefluss, JWT, OAuth, Berechtigungsmodell
-- [Attendance-Endpunkte](.`/attendance`) — Dienst- und Besuchsverfolgung
-- [Modulstruktur](../module-structure) — Codeorganisationsmuster
+- [Authentifizierung & Berechtigungen](./authentication) — Anmeldeablauf, JWT, OAuth, Berechtigungsmodell
+- [Anwesenheits-Endpunkte](./attendance) — Gottesdienst- und Besuchsverfolgung
+- [Modulstruktur](../module-structure) — Code-Organisationsmuster

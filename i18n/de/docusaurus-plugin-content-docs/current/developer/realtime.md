@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Echtzeit-Architektur"
 ---
 
@@ -6,11 +6,11 @@ title: "Echtzeit-Architektur"
 
 <div class="article-intro">
 
-ChurchApps nutzt ein einziges WebSocket-basiertes Liefersystem für jede Echtzeit-Oberfläche — Gruppenchat, private Nachrichten, Inhalts-Notizen, Live-Stream-Chat und Präsenz/Anwesenheit. Diese Seite dokumentiert das Protokoll, den Server und die Client-Primitive, die Konsumenten nutzen.
+ChurchApps verwendet ein einziges WebSocket-basiertes Zustellungs-Framework für jede Echtzeit-Oberfläche — Gruppen-Chat, private Nachrichten, Content-Notizen, den Live-Stream-Chat und Präsenz/Anwesenheit. Diese Seite dokumentiert das Protokoll, den Server und die Client-Primitive, die Konsumenten verwenden.
 
 </div>
 
-## Übersicht
+## Überblick
 
 ```
 ┌────────────────────┐                ┌────────────────────────────┐
@@ -24,28 +24,28 @@ ChurchApps nutzt ein einziges WebSocket-basiertes Liefersystem für jede Echtzei
                                       └────────────────────────────┘
 ```
 
-Das Protokoll hat drei Teile:
+Das Protokoll besteht aus drei Teilen:
 
-1. **Ein persistenter WebSocket** pro Browser-Tab, geöffnet von `SocketHelper`.
-2. **Verbindungs-Zeilen** (`POST /messaging/connections`) in der `connections`-Tabelle aufgezeichnet — diese kennzeichnen ein `(socketId, churchId, conversationId)` Tupel als Abonnent eines Raums.
-3. **Server-seitige Fan-Out** von `DeliveryHelper.sendConversationMessages()` — wenn eine Nachricht gespeichert wird (`POST /messaging/messages/send`) liest der Server die passenden Verbindungs-Zeilen und schiebt eine typisierte Payload an jeden offenen Socket.
+1. **Ein persistentes WebSocket** pro Browser-Tab, geöffnet von `SocketHelper`.
+2. **Connection-Zeilen** (`POST /messaging/connections`), aufgezeichnet in der `connections`-Tabelle — diese markieren ein `(socketId, churchId, conversationId)`-Tupel als Abonnenten eines Raums.
+3. **Serverseitiger Fan-out** durch `DeliveryHelper.sendConversationMessages()` — wenn eine Nachricht gespeichert wird (`POST /messaging/messages/send`), liest der Server die passenden Connection-Zeilen und pusht ein typisiertes Payload an jedes offene Socket.
 
-Es gibt kein Socket.IO, kein Long-Polling Fallback und keinen separaten Microservice. Der WebSocket läuft im gleichen Prozess wie die REST API (`web` Lambda für HTTP, `socket` Lambda für WebSocket im AWS; ein kombinierter Prozess lokal und auf Railway).
+Es gibt kein Socket.IO, kein Long-Polling-Fallback und keinen separaten Microservice. Das WebSocket läuft im selben Prozess wie die REST-API (`web`-Lambda für HTTP, `socket`-Lambda für WebSocket in AWS; ein kombinierter Prozess lokal und auf Railway).
 
 ## Ports und Transport
 
 | Umgebung | HTTP | WebSocket |
 |-------------|------|-----------|
-| Lokale Entwicklung | `8084` | `ws://localhost:8087` (separater `WebSocketServer`) |
-| Railway / Docker / Single-Port-Hosts (`RAILWAY_ENVIRONMENT` oder `SELF_HOSTED` gesetzt) | geteilt | geteilt HTTP Server (`SocketHelper.attachToServer()`) |
-| AWS Lambda | API Gateway HTTP | API Gateway WebSocket (`$connect` / `$disconnect` / `$default` Routes) |
+| Lokale Entwicklung   | `8084` | `ws://localhost:8087` (separater `WebSocketServer`) |
+| Railway / Docker / Single-Port-Hosts (`RAILWAY_ENVIRONMENT` oder `SELF_HOSTED` gesetzt) | gemeinsam | gemeinsamer HTTP-Server (`SocketHelper.attachToServer()`) |
+| AWS Lambda  | API-Gateway-HTTP | API-Gateway-WebSocket (`$connect`-/`$disconnect`-/`$default`-Routen) |
 
-Der Transport-Selector ist die `deliveryProvider` Konfiguration:
+Der Transport-Selektor ist die `deliveryProvider`-Konfiguration:
 
-- `local` → Rohe `ws` Library; Clients verbinden sich zu `MessagingApiSocket` von `CommonEnvironmentHelper`.
-- `aws` → API Gateway WebSocket; der Server postet Payloads zu aktiven Verbindungen über `@aws-sdk/client-apigatewaymanagementapi`.
+- `local` → rohe `ws`-Bibliothek; Clients verbinden sich mit `MessagingApiSocket` aus `CommonEnvironmentHelper`.
+- `aws` → API-Gateway-WebSocket; der Server sendet Payloads über `@aws-sdk/client-apigatewaymanagementapi` an aktive Verbindungen.
 
-Der Client muss nie wissen, welcher in Nutzung ist — er spricht das gleiche JSON-Protokoll entweder so.
+Der Client muss nie wissen, welches im Einsatz ist — er spricht in beiden Fällen dasselbe JSON-Protokoll.
 
 ## Wire-Protokoll
 
@@ -54,33 +54,33 @@ Jeder Frame ist JSON der Form `PayloadInterface`:
 ```typescript
 interface PayloadInterface {
   churchId: string;
-  conversationId: string;  // der "Raum" — üblicherweise eine UUID, manchmal "alerts" oder "content-{type}-{id}"
+  conversationId: string;  // der "Raum" — meist eine UUID, manchmal "alerts" oder "content-{type}-{id}"
   action: PayloadAction;
   data: unknown;
 }
 
 type PayloadAction =
-  | "socketId"            // server → client, nach Verbindung, trägt die socketId um für Room-Joins zu nutzen
+  | "socketId"            // server → client, nach dem Connect, trägt die socketId für Raum-Beitritte
   | "message"             // server → client, neue Nachricht
   | "deleteMessage"       // server → client, Nachricht entfernt
-  | "privateMessage"      // server → client, Badge-Count Ping zum Empfänger's "alerts" Raum wenn eine direkte Nachricht eskaliert; der Nachrichtentext selbst kommt über die ordinäre "message" Action innen der offenen Konversation
-  | "reaction"            // server → client, Emoji Reaktion umgeschaltet auf einer Nachricht; Daten sind { messageId, conversationId, personId, emoji, added } (added=false bedeutet entfernt). Broadcast zum Konversations-Raum von POST /messaging/messages/:messageId/reactions
-  | "conversationActivity"// server → client, sekundäres "etwas passiert" Signal für Content-Room Abonnenten
-  | "attendance"          // server → client, Zuschauer-Liste / Präsenz-Snapshot
-  | "notification"        // server → client, generische Benachrichtigung (Zähler usw.)
-  | "reconnect"           // client-intern, lokal dispatched durch SocketHelper nach einer neuen socketId Handshake vollständig nach einem Drop — entweder eine exponential-backoff Wiederverbindung nach einem unerwarteten Close oder eine unmittelbare Wiederverbindung triggered durch die Resume-Prüfung (Tab-Fokus/Sichtbarkeit/Online); wird nie vom Server gesendet
-  | "alert" | "callout";  // Legacy, siehe Connections Endpunkt Referenz
+  | "privateMessage"      // server → client, Badge-Zähl-Ping an den "alerts"-Raum des Empfängers, wenn eine Direktnachricht eskaliert; der Nachrichtentext selbst kommt über die normale "message"-Aktion innerhalb der offenen Konversation an
+  | "reaction"            // server → client, Emoji-Reaktion an einer Nachricht umgeschaltet; data ist { messageId, conversationId, personId, emoji, added } (added=false bedeutet entfernt). Wird an den Konversationsraum gesendet über POST /messaging/messages/:messageId/reactions
+  | "conversationActivity"// server → client, sekundäres "etwas ist passiert"-Signal für Content-Raum-Abonnenten
+  | "attendance"          // server → client, Betrachterliste / Präsenz-Snapshot
+  | "notification"        // server → client, generische Benachrichtigung (Zählungen usw.)
+  | "reconnect"           // client-intern, lokal von SocketHelper ausgelöst, nachdem ein neuer socketId-Handshake nach einem Abbruch abgeschlossen ist — entweder ein Reconnect mit exponentiellem Backoff nach einem unerwarteten Schließen, oder ein sofortiger Reconnect, ausgelöst durch die Resume-Probe (Tab-Fokus/Sichtbarkeit/online); nie vom Server gesendet
+  | "alert" | "callout";  // Legacy, siehe Connections-Endpunkt-Referenz
 ```
 
 ### Handshake
 
-1. Client öffnet den Socket und sendet die wörtliche Zeichenkette `"getId"`.
-2. Server antwortet mit `{ action: "socketId", data: "<id>" }`.
-3. Client speichert die `socketId` und nutzt sie als dritte Koordinate jeder Room-Abonnement.
+1. Der Client öffnet das Socket und sendet den Literal-String `"getId"`.
+2. Der Server antwortet mit `{ action: "socketId", data: "<id>" }`.
+3. Der Client speichert die `socketId` und verwendet sie als dritte Koordinate für jedes Raum-Abonnement.
 
-### Einen Raum beitreten
+### Einem Raum beitreten
 
-Ein "Raum" ist nur ein `(churchId, conversationId)` Tupel. Um zu abonnieren, postet der Client eine `Connection` Zeile:
+Ein "Raum" ist einfach ein `(churchId, conversationId)`-Tupel. Um zu abonnieren, postet der Client eine `Connection`-Zeile:
 
 ```http
 POST /messaging/connections
@@ -89,17 +89,17 @@ POST /messaging/connections
     "churchId": "CHU00000001",
     "conversationId": "CON123…",
     "socketId": "abc123",
-    "personId": null,            // optional; null für anonym Live-Stream Zuschauer
+    "personId": null,            // optional; null für anonyme Live-Stream-Betrachter
     "displayName": "Anonymous4823"
   }
 ]
 ```
 
-Posting triggert auch einen `attendance` Broadcast auf der Konversation so existierende Abonnenten lernen, dass ein neuer Zuschauer beigetreten ist.
+Das Posten löst außerdem einen `attendance`-Broadcast an die Konversation aus, sodass bestehende Abonnenten erfahren, dass ein neuer Betrachter beigetreten ist.
 
 ### Eine Nachricht senden
 
-`POST /messaging/messages/send` (anonym-erlaubt) oder `POST /messaging/messages/` (auth-erforderlich):
+`POST /messaging/messages/send` (anonym erlaubt) oder `POST /messaging/messages/` (Auth erforderlich):
 
 ```json
 [
@@ -107,9 +107,9 @@ Posting triggert auch einen `attendance` Broadcast auf der Konversation so exist
 ]
 ```
 
-Der Server speichert die Nachricht, dann `DeliveryHelper.sendConversationMessages()` sucht jede Verbindungs-Zeile für diesen `conversationId` und sendet jeden Socket ein `{ action: "message", data: <message> }` Frame.
+Der Server speichert die Nachricht, dann sucht `DeliveryHelper.sendConversationMessages()` jede Connection-Zeile für diese `conversationId` heraus und sendet jedem Socket einen `{ action: "message", data: <message> }`-Frame.
 
-Für Inhalts-gebundene Konversationen (z.B. Notizen an eine Person gebunden) ein zweiter Broadcast mit `action: "conversationActivity"` schießt im synthetischen `"content-{type}-{id}"` Raum so List-View Konsumenten wissen, dass sie ohne die darunterliegende Konversation offen zu halten erfrischen können.
+Für Content-gebundene Konversationen (z. B. Notizen, die an eine Person angehängt sind) feuert ein zweiter Broadcast mit `action: "conversationActivity"` im synthetischen `"content-{type}-{id}"`-Raum, sodass Listenansicht-Konsumenten wissen, dass sie aktualisieren sollen, ohne die zugrunde liegende Konversation offen zu halten.
 
 ### Einen Raum verlassen
 
@@ -117,77 +117,77 @@ Für Inhalts-gebundene Konversationen (z.B. Notizen an eine Person gebunden) ein
 DELETE /messaging/connections/:churchId/:conversationId/:socketId
 ```
 
-Löscht die Verbindungs-Zeile und triggert einen abschließenden Attendance-Broadcast.
+Löscht die Connection-Zeile und löst einen finalen Attendance-Broadcast aus.
 
-## Server-seitige Komponenten
+## Serverseitige Komponenten
 
 | Datei | Rolle |
 |------|------|
-| `Api/src/modules/messaging/helpers/SocketHelper.ts` | Besitzt den `WebSocketServer`. Weist `socketId` auf Verbindung zu. Läuft einen 30s Ping/Pong Heartbeat (`startHeartbeat`), der jeden Socket der einen Pong vermisst `terminate()` und bereinigt. Bereinigt Dead Sockets und triggert einen Attendance-Rebroadcast bei Trennung. Exponiert `getLiveSocketIds()` und `reapStaleConnections()`, nutzt vom 30-Minuten-Timer-Job um stale `connections` Zeilen zu löschen — lokal durch Checking welche socketIds noch in-process lebendig sind, auf AWS als 24h-TTL Backstop für verpasste `$disconnect` Events (API Gateway caps Verbindungen bei ~2h, daher kann das nie eine lebendige ein reapen) |
-| `Api/src/modules/messaging/helpers/DeliveryHelper.ts` | `sendConversationMessages(payload)` liest Verbindungen für den Raum und routet jeden Frame zum lokalen Socket oder der AWS API Gateway Verbindung. `sendAttendance(churchId, conversationId)` baut und broadcastet den Zuschauer-Snapshot |
-| `Api/src/modules/messaging/controllers/ConnectionController.ts` | `POST /` beitreten, `DELETE /:churchId/:conversationId/:socketId` verlassen, `POST /setName` Anzeigenamens aktualisieren |
-| `Api/src/modules/messaging/controllers/MessageController.ts` | `POST /send` (anonym) und `POST /` (authed) speichern dann fan out |
-| `Api/src/modules/messaging/repositories/ConnectionRepo.ts` | `loadForConversation(churchId, conversationId)` ist die Quelle der Wahrheit für wer abonniert |
+| `Api/src/modules/messaging/helpers/SocketHelper.ts` | Besitzt den `WebSocketServer`. Weist beim Connect eine `socketId` zu. Führt einen 30-Sekunden-Ping/Pong-Heartbeat aus (`startHeartbeat`), der jede Verbindung, die einen Pong verpasst, `terminate()`t und aufräumt. Räumt tote Sockets auf und löst beim Disconnect einen Attendance-Rebroadcast aus. Stellt `getLiveSocketIds()` und `reapStaleConnections()` bereit, verwendet vom 30-Minuten-Timer-Job zum Löschen veralteter `connections`-Zeilen — lokal durch Prüfen, welche socketIds noch im Prozess live sind, auf AWS als 24h-TTL-Backstop für verpasste `$disconnect`-Events (API Gateway deckelt Verbindungen bei ~2h, sodass dies eine lebendige Verbindung nicht reapen kann) |
+| `Api/src/modules/messaging/helpers/DeliveryHelper.ts` | `sendConversationMessages(payload)` liest Verbindungen für den Raum und routet jeden Frame zum lokalen Socket oder zur AWS-API-Gateway-Verbindung. `sendAttendance(churchId, conversationId)` baut den Betrachter-Snapshot und broadcastet ihn |
+| `Api/src/modules/messaging/controllers/ConnectionController.ts` | `POST /` tritt bei, `DELETE /:churchId/:conversationId/:socketId` verlässt, `POST /setName` aktualisiert den Anzeigenamen |
+| `Api/src/modules/messaging/controllers/MessageController.ts` | `POST /send` (anonym) und `POST /` (authentifiziert) speichern und leiten dann weiter |
+| `Api/src/modules/messaging/repositories/ConnectionRepo.ts` | `loadForConversation(churchId, conversationId)` ist die Quelle der Wahrheit dafür, wer abonniert ist |
 
-## Client-seitige Primitive (`@churchapps/apphelper`)
+## Clientseitige Primitive (`@churchapps/apphelper`)
 
-Alle fünf Primitive sind statische Singletons in `apphelper/src/helpers/`. Sie kooperieren so dass jeder Tab **einen** WebSocket öffnet unabhängig davon wie viele Komponenten auf der Seite mounten.
+Alle fünf Primitive sind statische Singletons in `apphelper/src/helpers/`. Sie arbeiten so zusammen, dass jeder Tab **ein** WebSocket öffnet, egal wie viele Komponenten auf der Seite mounten.
 
 ### `SocketHelper`
 
-Besitzt die einzelne WebSocket-Verbindung. Re-entrant `init()` ist idempotent — mehrere Komponenten können es aufrufen ohne doppelte Sockets zu öffnen. Exponiert:
+Besitzt die einzelne WebSocket-Verbindung. Ein reentrantes `init()` ist idempotent — mehrere Komponenten können es aufrufen, ohne doppelte Sockets zu öffnen. Stellt bereit:
 
-- `init()` — öffnen (oder re-nutzen) den Socket und den `getId` Handshake vollständig. Resolved einmal der Handshake vollständig oder, nach einem 5s Timeout, einmal die Background Retry-Loop übernommen hat; es lehnt nie ab, daher Aufrufer müssen keinen Failed First Connect Spezialfall.
-- `addHandler(action, id, fn)` / `removeHandler(id)` — registrieren/abmelden Listener nach `action`. Mehrere Handler können zum gleichen Action hören.
-- `setPersonChurch({ personId, churchId })` — für authentifizierte Aufrufer; triggert einen `"alerts"` Raum-Abonnement so Push-Benachrichtigungen auf diesen Socket kommen.
-- `onSocketIdReady(fn)` — schießt auf jeder neuen socketId, nicht nur der ersten — das anfängliche Handshake und jeden späteren Reconnect. Nutzt von `SubscriptionManager` um ausstehende Joins zu leeren.
-- `checkConnection()` — invoked durch die Resume Listener unten; reconnectiert unmittelbar wenn der Socket bereits geschlossen ist, oder sendet eine Liveness-Probe wenn es offen aussieht.
+- `init()` — öffnet (oder nutzt wieder) das Socket und schließt den `getId`-Handshake ab. Löst sich auf, sobald der Handshake abgeschlossen ist, oder — nach einem 5s-Timeout — sobald die Hintergrund-Retry-Schleife übernommen hat; es lehnt nie ab, sodass Aufrufer einen fehlgeschlagenen ersten Connect nicht speziell behandeln müssen.
+- `addHandler(action, id, fn)` / `removeHandler(id)` — Listener nach `action` registrieren/deregistrieren. Mehrere Handler können auf dieselbe Aktion hören.
+- `setPersonChurch({ personId, churchId })` — für authentifizierte Aufrufer; löst ein `"alerts"`-Raum-Abonnement aus, sodass Push-Benachrichtigungen auf diesem Socket ankommen.
+- `onSocketIdReady(fn)` — feuert bei jeder neuen socketId, nicht nur beim ersten Mal — beim initialen Handshake und bei jedem nachfolgenden Reconnect. Wird von `SubscriptionManager` genutzt, um ausstehende Beitritte zu leeren.
+- `checkConnection()` — wird von den unten stehenden Resume-Listenern aufgerufen; verbindet sofort neu, wenn das Socket bereits geschlossen ist, oder sendet eine Liveness-Probe, wenn es offen aussieht.
 
-**Reconnect Lebensdauer.** Ein unerwarteter Close terminiert einen Reconnect mit exponentieller Backoff (1s, verdopplung bis zu einer 30s Kappe). `SocketHelper` hört auch auf `online`, `focus`, `pageshow` und `visibilitychange` auf `window`/`document` um einen Resumed Tab zu erkennen: wenn der Socket bereits geschlossen ist reconnectiert er unmittelbar und setzt Backoff zurück; wenn es offen aussieht sendet er eine `"getId"` Liveness-Probe und erzwingt einen Reconnect wenn kein Frame innerhalb von 3s kommt — dies fängt halb-offene Sockets nach auf, die ein Mobile OS die App suspendiert hinterlässt. Auf einem erfolgreich Re-Handshake dispatched `SocketHelper` die lokale `"reconnect"` Action (siehe [Wire protocol](#wire-protocol)) an jeden registrierten Handler für diese Action.
+**Reconnect-Lebenszyklus.** Ein unerwartetes Schließen plant einen Reconnect mit exponentiellem Backoff (1s, verdoppelnd bis zu einem 30s-Deckel). `SocketHelper` hört außerdem auf `online`, `focus`, `pageshow` und `visibilitychange` an `window`/`document`, um einen wiederaufgenommenen Tab zu erkennen: Ist das Socket bereits geschlossen, verbindet es sofort neu und setzt den Backoff zurück; sieht es offen aus, sendet es eine `"getId"`-Liveness-Probe und erzwingt einen Reconnect, falls innerhalb von 3s kein Frame ankommt — das fängt halb-offene Sockets ab, die zurückbleiben, nachdem ein mobiles Betriebssystem die App suspendiert hat. Bei einem erfolgreichen erneuten Handshake versendet `SocketHelper` die lokale `"reconnect"`-Aktion (siehe [Wire-Protokoll](#wire-protokoll)) an jeden registrierten Handler für diese Aktion.
 
 ### `SubscriptionManager`
 
-Ref-gezählter Room-Membership. Mehrere Komponenten zum gleichen Konversation abonnieren registrieren nur eine Server-seitige Verbindungs-Zeile.
+Referenzgezählte Raum-Mitgliedschaft. Mehrere Komponenten, die dieselbe Konversation abonnieren, registrieren nur eine serverseitige Connection-Zeile.
 
 ```typescript
 import { SubscriptionManager } from "@churchapps/apphelper";
 
 await SubscriptionManager.joinRoom(conversationId, churchId, personId, displayName);
-// ... Komponente rendert, erhält Socket Frames über ConversationStore.subscribe ...
+// ... Komponente rendert, empfängt Socket-Frames über ConversationStore.subscribe ...
 await SubscriptionManager.leaveRoom(conversationId, churchId);
 ```
 
-Drei Verhalten die Konsumenten kostenlos bekommen:
+Drei Verhaltensweisen, die Konsumenten kostenlos erhalten:
 
-- **Debounced Leave (300 ms)** — überlebt React StrictMode's Double Mount/Unmount und kurze Remount Zyklen ohne die Server-seitige Abonnement zu fallen; `reset()` bricht auch alle ausstehenden debounced Verlasse ab.
-- **Reconnect Rejoin** — `SubscriptionManager` merkt sich die `personId`/`displayName` nutzt um jeden Raum beizutreten, daher auf `SocketHelper`'s `"reconnect"` Event (und auf jedem `onSocketIdReady` Anruf) postet es jede aktive Verbindungs-Zeile erneut mit Identität intakt. Rejoins sind dedupliziert pro socketId daher der gleiche Reconnect postet keinen Raum zweimal.
-- **Late-Binding socketId** — `joinRoom` Records Intent vor den Socket finisht sein Handshake; das tatsächliche `POST /connections` schießt auf `onSocketIdReady`.
+- **Entprelltes Verlassen (300 ms)** — übersteht die doppelte Mount-/Unmount-Zyklen und kurzen Remount-Zyklen des React-StrictMode, ohne das serverseitige Abonnement zu verlieren; `reset()` bricht außerdem alle ausstehenden entprellten Verlassen-Vorgänge ab.
+- **Reconnect-Rejoin** — `SubscriptionManager` merkt sich die `personId`/`displayName`, die zum Beitritt in jeden Raum verwendet wurden, sodass es beim `"reconnect"`-Event von `SocketHelper` (und bei jedem `onSocketIdReady`-Aufruf) jede aktive Connection-Zeile mit intakter Identität erneut postet. Rejoins werden pro socketId dedupliziert, sodass derselbe Reconnect einen Raum nicht doppelt postet.
+- **Spätes Binden der socketId** — `joinRoom` zeichnet die Absicht auf, bevor das Socket seinen Handshake abschließt; das eigentliche `POST /connections` feuert bei `onSocketIdReady`.
 
 ### `ConversationStore`
 
-In-Speicher Cache gerangiert nach `conversationId`. Registriert `message` / `deleteMessage` / `privateMessage` Socket Handler genau einmal und wende inbound Frames auf welche Konversationen gerade offen an.
+In-Memory-Cache, gekeyt nach `conversationId`. Registriert `message`-/`deleteMessage`-/`privateMessage`-Socket-Handler genau einmal und wendet eingehende Frames auf alle aktuell offenen Konversationen an.
 
 ```typescript
 import { ConversationStore } from "@churchapps/apphelper";
 
 const conv = await ConversationStore.loadByConversationId(conversationId, churchId);
-// ↑ nutzt /messages/conversation/:id wenn authentifiziert, /messages/catchup/:churchId/:id wenn anonym
+// ↑ verwendet /messages/conversation/:id, wenn authentifiziert, /messages/catchup/:churchId/:id, wenn anonym
 
 const unsubscribe = ConversationStore.subscribe(conversationId, (conv) => {
-  setMessages(conv.messages);  // re-render mit dem letzten Snapshot
+  setMessages(conv.messages);  // mit dem neuesten Snapshot neu rendern
 });
 // ...
 unsubscribe();
-ConversationStore.forget(conversationId);  // optional explizite Bereinigung
+ConversationStore.forget(conversationId);  // optionale explizite Bereinigung
 ```
 
-Authentifizierte Aufrufer bekommen auch **Personen-Hydration** — `personId`s auf inbound Nachrichten werden zu `PersonInterface` Objekten über einen gecachten `GET /people/ids` Lookup aufgelöst. Anonym-Aufrufer Skip dies.
+Authentifizierte Aufrufer erhalten außerdem **Personen-Hydrierung** — `personId`s auf eingehenden Nachrichten werden über einen gecachten `GET /people/ids`-Lookup zu `PersonInterface`-Objekten aufgelöst. Anonyme Aufrufer überspringen dies.
 
-Auf `SocketHelper`'s `"reconnect"` Event, `ConversationStore` refetches jede Konversation die gerade aktive `subscribe` Listener hat, erholt sich Nachrichten die verpasst wurden während der Socket unten war. Anonym-Konversationen skip dies Catch-Up wenn ihr `churchId` nie aufgezeichnet wurde (der Catch-Up-Endpunkt erfordert einen).
+Beim `"reconnect"`-Event von `SocketHelper` ruft `ConversationStore` jede Konversation mit aktuell aktiven `subscribe`-Listenern erneut ab und stellt so Nachrichten wieder her, die verpasst wurden, während das Socket down war. Anonyme Konversationen überspringen dieses Catch-up, wenn ihre `churchId` nie aufgezeichnet wurde (der Catch-up-Endpunkt benötigt eine).
 
 ### `PresenceStore`
 
-Spiegelt `ConversationStore`'s Muster für die `attendance` Action. Abonnenten empfangen einen `PresenceSnapshot { conversationId, totalViewers, viewers }` immer wenn der Server die Präsenz rebroadcasted. Identische Snapshots sind dedupliziert vor Benachrichtigung, daher Reconnect Stürme triggern nicht unn ötige Re-Renders.
+Spiegelt das Muster von `ConversationStore` für die `attendance`-Aktion. Abonnenten erhalten einen `PresenceSnapshot { conversationId, totalViewers, viewers }`, wann immer der Server die Präsenz erneut broadcastet. Identische Snapshots werden vor der Benachrichtigung dedupliziert, sodass Reconnect-Stürme keine unnötigen Re-Renders auslösen.
 
 ```typescript
 import { PresenceStore } from "@churchapps/apphelper";
@@ -199,35 +199,35 @@ const unsubscribe = PresenceStore.subscribe(conversationId, (snapshot) => {
 
 ### `NotificationService`
 
-Top-Level Boot für **authentifizierte** Aufrufer. Wrappt `SocketHelper.init()`, setzt den Person/Kirchen-Context (die Auto-beitritte den `"alerts"` Raum), und ruft `ConversationStore.ensureHandlers()` / `PresenceStore.ensureHandlers()` / `SubscriptionManager.setupRejoin()` genau einmal. Sie registriert auch ihren eigenen `"reconnect"` Handler, der Benachrichtigungs/PM Zähler neu lädt, daher Badges erholen sich nach einer fallen Verbindung.
+Top-Level-Boot für **authentifizierte** Aufrufer. Umschließt `SocketHelper.init()`, setzt den Personen-/Kirchenkontext (der automatisch dem `"alerts"`-Raum beitritt) und ruft `ConversationStore.ensureHandlers()` / `PresenceStore.ensureHandlers()` / `SubscriptionManager.setupRejoin()` genau einmal auf. Es registriert außerdem seinen eigenen `"reconnect"`-Handler, der Benachrichtigungs-/PM-Zählungen neu lädt, sodass Badges sich nach einer abgebrochenen Verbindung erholen.
 
 ```typescript
 await NotificationService.getInstance().initialize(userContext);
 ```
 
-Anonym-Flows (der Live-Stream-Chat ist das kanonische Beispiel) skip `NotificationService` und rufen die Primitive direkt auf — siehe `B1App/src/helpers/StreamChatManager.ts` für eine Referenz-Implementierung.
+Anonyme Abläufe (der Live-Stream-Chat ist das kanonische Beispiel) überspringen `NotificationService` und rufen die Primitive direkt auf — siehe `B1App/src/helpers/StreamChatManager.ts` als Referenzimplementierung.
 
 ## Live-Stream-Chat
 
-Der Live-Stream ist der größte anonym Konsument des Frameworks. Sie nutzt zwei `contentType`s für Room-Geltungsbereich:
+Der Live-Stream ist der größte anonyme Konsument des Frameworks. Er verwendet zwei `contentType`s für das Raum-Scoping:
 
 - `streamingLive` — der öffentliche Chat-Tab auf `/stream` (ein Raum pro `streamingService`).
-- `streamingLiveHost` — ein privater Raum sichtbar nur für Staff mit der `contentApi.chat.host` Berechtigung. Die Raum-ID ist verschlüsselt auf dem Server (`GET /streamingServices/:id/hostChat`) daher beiläufiges Scraping enthüllt es nicht.
+- `streamingLiveHost` — ein privater Raum, sichtbar nur für Mitarbeiter mit der Berechtigung `contentApi.chat.host`. Die Raum-ID ist serverseitig verschlüsselt (`GET /streamingServices/:id/hostChat`), sodass beiläufiges Scraping sie nicht enthüllt.
 
-`B1App/src/helpers/StreamChatManager.ts` boots beide Räume über die einheitlichen Primitive — es gibt keine Live-Stream-spezifischen Socket-Code mehr.
+`B1App/src/helpers/StreamChatManager.ts` bootet beide Räume über die vereinheitlichten Primitive — es gibt keinen live-stream-spezifischen Socket-Code mehr.
 
 ## Muster und Fallstricke
 
-- **Öffnen Sie keinen eigenen WebSocket.** `SocketHelper` ist ein Singleton dafür. Wenn Sie eine benutzer-definierte Action hören müssen, registrieren Sie einen Handler auf dem existierenden Socket über `SocketHelper.addHandler`.
-- **Umgehen Sie nicht `SubscriptionManager`.** Direkte `POST /connections` Aufrufe funktionieren aber verlieren Ref Zählung, debounced Leave und Reconnect Rejoin. Gruppen-Chat und PM Konsumenten gehen alle durch `SubscriptionManager`.
-- **Handler IDs müssen eindeutig pro Action sein.** `SocketHelper.addHandler(action, id, fn)` Schlüssel nach `(action, id)`; Wiedernutzen der gleichen id für zwei Listener ersetzt den ersten. Die einheitlichen Stores nutzen IDs wie `"ConversationStore-Message"` und `"PresenceStore-Attendance"` um klarer der Konsumenten IDs zu bleiben.
-- **Room IDs sind opake Zeichenketten.** Die meisten sind Konversation UUIDs aber das System unterstützt auch `"alerts"` (Pro-Person Benachrichtigungen), `"content-{type}-{id}"` (synthetische Activity-Räume) und die verschlüsselten `streamingLiveHost` IDs.
-- **Authentifizierung ist bei der REST-Grenze überprüft, nicht dem Socket.** Einen Raum über `POST /connections` beizutreten ist anonym-erlaubt; Zugriffskontrolle geschieht bei Nachricht-Sende-Zeit (der Nachrichtencontroller entscheidet welche `messageType`s ein anonym Aufrufer senden kann).
+- **Öffnen Sie kein eigenes WebSocket.** `SocketHelper` ist aus gutem Grund ein Singleton. Wenn Sie auf eine benutzerdefinierte Aktion hören müssen, registrieren Sie einen Handler am bestehenden Socket über `SocketHelper.addHandler`.
+- **Umgehen Sie nicht `SubscriptionManager`.** Direkte `POST /connections`-Aufrufe funktionieren, verlieren aber Referenzzählung, entprelltes Verlassen und Reconnect-Rejoin. Gruppen-Chat- und PM-Konsumenten gehen alle über `SubscriptionManager`.
+- **Handler-IDs müssen pro Aktion eindeutig sein.** `SocketHelper.addHandler(action, id, fn)` keyt nach `(action, id)`; die Wiederverwendung derselben ID für zwei Listener ersetzt den ersten. Die vereinheitlichten Stores verwenden IDs wie `"ConversationStore-Message"` und `"PresenceStore-Attendance"`, um sich klar von Konsumenten-IDs abzugrenzen.
+- **Raum-IDs sind opake Strings.** Die meisten sind Konversations-UUIDs, aber das System unterstützt auch `"alerts"` (per-Person-Benachrichtigungen), `"content-{type}-{id}"` (synthetische Activity-Räume) und die verschlüsselten `streamingLiveHost`-IDs.
+- **Authentifizierung wird an der REST-Grenze geprüft, nicht am Socket.** Einem Raum über `POST /connections` beizutreten ist anonym erlaubt; Zugriffskontrolle passiert zum Zeitpunkt des Nachrichtenversands (der Message-Controller entscheidet, welche `messageType`s ein anonymer Aufrufer senden darf).
 
 ## Verwandte Seiten
 
-- [Benachrichtigungen Architektur](./architecture/notifications) — Die In-App/Push/E-Mail Escalation Trichter dieser Transport speist in
-- [Messaging Endpunkte](./api/endpoints/messaging) — Vollständige REST-Oberfläche für Nachrichten, Konversationen, Verbindungen, Geräte
-- [Web Push-Benachrichtigungen](./web-push) — Browser Push, getrennt von In-Page Socket-Lieferung
-- [AppHelper](./shared-libraries/app-helper) — Das npm Paket das den Client Primitive versendet
-- [Modulstruktur](./api/module-structure) — Wie das Messaging-Modul Server-seitig organisiert ist
+- [Benachrichtigungs-Architektur](./architecture/notifications) -- Der In-App-/Push-/E-Mail-Eskalationstrichter, den dieser Transport speist
+- [Messaging-Endpunkte](./api/endpoints/messaging) -- Vollständige REST-Oberfläche für Nachrichten, Konversationen, Verbindungen, Geräte
+- [Web-Push-Benachrichtigungen](./web-push) -- Browser-Push, getrennt von der In-Page-Socket-Zustellung
+- [AppHelper](./shared-libraries/app-helper) -- Das npm-Paket, das die Client-Primitive ausliefert
+- [Modulstruktur](./api/module-structure) -- Wie das Messaging-Modul serverseitig organisiert ist

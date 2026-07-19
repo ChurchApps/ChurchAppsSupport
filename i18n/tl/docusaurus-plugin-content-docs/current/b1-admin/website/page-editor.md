@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Paggamit ng Page Editor"
 ---
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Configurações do Aplicativo Móvel"
 ---
 

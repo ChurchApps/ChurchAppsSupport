@@ -6,65 +6,59 @@ title: "ApiHelper"
 
 <div class="article-intro">
 
-Das `@churchapps/apihelper`-Paket bietet serverseitige Dienstprogramme für alle ChurchApps Express.js-APIs. Es umfasst die Basis-Controller-Klasse, JWT-Authentifizierung, Datenbankdienstprogramme und AWS-Integrationen, auf die jedes API-Projekt angewiesen ist.
+Das `@churchapps/apihelper`-Paket bietet Server-seitige Utilities für alle ChurchApps Express.js APIs. Es umfasst die Base-Controller-Klasse, JWT-Authentifizierung, Datenbank-Utilities und AWS-Integrationen, auf die jedes API-Projekt angewiesen ist.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Installieren Sie **Node.js** und **Git** -- siehe [Voraussetzungen](../setup/prerequisites)
-- Machen Sie sich mit dem [Packages-Arbeitsbereich](./index.md)-Setup und Release-Flow vertraut
-- Dieses Paket ist abhängig von [`@churchapps/helpers`](./helpers) (als Peer-Abhängigkeit) und gibt es wieder aus
+- Installieren Sie **Node.js** und **Git** — siehe [Voraussetzungen](../setup/prerequisites)
+- Machen Sie sich mit dem [Packages Workspace](./index.md) Setup vertraut
+- Dieses Paket hängt von [`@churchapps/helpers`](./helpers) ab und exportiert es wieder
 
 </div>
 
 ## Was enthalten ist
 
-- **CustomBaseController** -- Basis-Klasse für API-Controller, aufgebaut auf `inversify-express-utils`
-- **Auth** -- JWT-Authentifizierung über `CustomAuthProvider`, `AuthenticatedUser` und `Principal`
-- **Datenbankdienstprogramme** -- `DB.query` / `DB.queryOne` und die `Pool`-Klasse für MySQL-Verbindungsverwaltung, plus `MySqlHelper` und `DBCreator` für Schema-Setup
-- **AWS-Integrationen** -- `AwsHelper` für S3-Dateispeicherung und SSM Parameter Store-Lesevorgänge
-- **E-Mail** -- `EmailHelper`, der SES- und SMTP-Transporte unterstützt
-- **Config-Laden** -- `EnvironmentBase` liest Verbindungszeichenfolgen und Geheimnisse aus Umgebungsvariablen oder Parameter Store
-- **Sonstiges** -- `EncryptionHelper`, `FileStorageHelper`, `LoggingHelper`, `BasePermissions`, `SlugHelper`
+- **CustomBaseController** — Base-Klasse für API-Controller
+- **Auth** — JWT-Authentifizierung via `CustomAuthProvider`
+- **Database utilities** — `DB.query` / `DB.queryOne` und die `Pool`-Klasse für MySQL-Verbindungsverwaltung
+- **AWS integrations** — `AwsHelper` für S3-Dateispeicher
+- **Email** — `EmailHelper` unterstützt SES und SMTP Transporte
+- **Config loading** — `EnvironmentBase` liest Verbindungszeichenfolgen und Geheimnisse
 
 ## Setup für lokale Entwicklung
 
-Dieses Paket befindet sich im [Packages](https://github.com/ChurchApps/Packages)-Arbeitsbereich neben den anderen gemeinsamen Bibliotheken:
+Dieses Paket lebt im [Packages](https://github.com/ChurchApps/Packages) Workspace:
 
-1. Klonen Sie den Arbeitsbereich:
+1. Klonen Sie den Workspace:
 
    ```bash
    git clone https://github.com/ChurchApps/Packages.git
    ```
 
-2. Installieren Sie Abhängigkeiten im Arbeitsbereich-Root:
+2. Installieren Sie Abhängigkeiten:
 
    ```bash
    cd Packages && yarn install
    ```
 
-3. Bauen Sie (kompiliert TypeScript zu `dist/`):
+3. Bauen Sie:
 
    ```bash
    yarn workspace @churchapps/apihelper build
    ```
 
-   Oder führen Sie `yarn build` im Root aus, um jedes Paket in Abhängigkeitsreihenfolge zu bauen.
+## Publishing
 
-Um Änderungen in einer verbrauchenden API zu testen, verwenden Sie ein temporäres Yarn-Portal -- siehe [Lokale Entwicklung gegen eine verbrauchende App](./index.md#local-development-against-a-consuming-app).
-
-## Veröffentlichung
-
-Releases erfolgen durch Changesets: Führen Sie `yarn changeset` im Arbeitsbereich-Root mit jeder Änderung aus, dann `yarn publish-all`, wenn Sie bereit sind zu veröffentlichen. Siehe die [Übersicht der gemeinsamen Bibliotheken](./index.md#releasing-with-changesets) für den vollständigen Flow.
+Releases gehen durch Changesets: Führen Sie `yarn changeset` aus, dann `yarn publish-all` wenn Sie bereit sind. Siehe die [Shared Libraries Overview](./index.md#releasing-with-changesets).
 
 :::info
-Dieses Paket ist eine Abhängigkeit jeder ChurchApps-API -- der Core-Api, AskApi und LessonsApi. Testen Sie Änderungen vor der Veröffentlichung lokal gegen eine API.
+Dieses Paket ist eine Abhängigkeit jeder ChurchApps-API. Testen Sie gegen eine API lokal, bevor Sie veröffentlichen.
 :::
 
 ## Verwandte Artikel
 
-- **[Helpers](./helpers)** -- Das Basisdienstprogramm-Paket, von dem dieses Paket abhängt
-- **[Modulstruktur](../api/module-structure)** -- Wie Controller und Auth-Middleware in API-Modulen verwendet werden
-- **[Lokales API-Setup](../api/local-setup)** -- Richten Sie die API für lokale Entwicklung ein
+- **[Helpers](./helpers)** — Das Basis-Utility-Paket, von dem dieses Paket abhängt
+- **[Local API Setup](../api/local-setup)** — Einrichtung der API für lokale Entwicklung

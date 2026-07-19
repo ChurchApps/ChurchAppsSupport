@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Webhooks"
 ---
 
@@ -6,34 +6,34 @@ title: "Webhooks"
 
 <div class="article-intro">
 
-Webhooks lassen eine Kirche Echtzeit-Benachrichtigungen an Tools von Drittanbietern senden — Automatisierungsplattformen (Zapier, Make, n8n), CRMs, Buchhaltungssysteme oder alles, das einen HTTP POST akzeptiert. Wenn eine Person, Gruppe oder ein Haushalt sich in B1 ändert, sendet B1 eine signierte JSON-Payload an jede URL, die für diesen Event abonniert ist.
+Webhooks erlauben es einer Kirche, Echtzeit-Benachrichtigungen an Tools von Drittanbietern zu senden — Automatisierungsplattformen (Zapier, Make, n8n), CRMs, Buchhaltungssysteme oder alles, was einen HTTP-POST akzeptiert. Wenn sich eine Person, Gruppe oder ein Haushalt in B1 ändert, sendet B1 an jede für dieses Ereignis abonnierte URL eine signierte JSON-Payload.
 
 </div>
 
 <div class="prereqs">
-<h4>Vor dem Start</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Ein Kirchen-Admin mit der **Bearbeite Kirchen-Einstellungen**-Berechtigung registriert und verwaltet Webhooks
-- Ihr Empfänger-Endpunkt muss über **HTTPS** unter einer öffentlichen Adresse erreichbar sein
-- Haben Sie eine Möglichkeit, das Signing-Secret sicher zu speichern — es wird nur einmal angezeigt
+- Ein Kirchenadministrator mit der Berechtigung **Kirchen-Einstellungen bearbeiten** registriert und verwaltet Webhooks
+- Ihr empfangender Endpunkt muss über **HTTPS** unter einer öffentlichen Adresse erreichbar sein
+- Sie benötigen eine Möglichkeit, das Signing-Secret sicher zu speichern — es wird nur einmal angezeigt
 
 </div>
 
 ## Übersicht
 
-Webhooks sind **nur ausgehend**: B1 ruft Ihren Endpunkt auf, Sie rufen nicht B1 auf. Jeder Webhook ist ein pro-Kirchen-Abonnement, bestehend aus einer Ziel-URL, einem Signing-Secret und einer Liste abonnierter Events.
+Webhooks sind ausschließlich **ausgehend**: B1 ruft Ihren Endpunkt auf, nicht umgekehrt. Jeder Webhook ist ein Abonnement pro Kirche, bestehend aus einer Ziel-URL, einem Signing-Secret und einer Liste abonnierter Ereignisse.
 
-Die Lieferung nutzt einen **dauerhaften Outbox**: Wenn ein abonnierter Event auftritt, verzeichnet B1 eine Lieferungszeile und ein Background Worker POSTet sie innerhalb etwa einer Minute. Fehlgeschlagene Lieferungen werden mit exponentieller Backoff erneut versucht. Nichts geht verloren, wenn eine Lieferung langsam ist oder Ihr Endpunkt kurzzeitig ausfällt.
+Die Zustellung nutzt eine **dauerhafte Outbox**: Tritt ein abonniertes Ereignis ein, verzeichnet B1 eine Zustellungszeile, und ein Hintergrund-Worker sendet innerhalb von etwa einer Minute einen POST. Fehlgeschlagene Zustellungen werden mit exponentiellem Backoff erneut versucht. Es geht nichts verloren, wenn eine Zustellung langsam ist oder Ihr Endpunkt kurzzeitig nicht erreichbar ist.
 
-## Webhook registrieren
+## Einen Webhook registrieren
 
 ### In B1Admin
 
-Gehen Sie zu **Einstellungen → Entwickler → Webhooks → Neuer Webhook**. Geben Sie einen Namen, die Payload-URL und wählen Sie die Events aus, die Sie abonnieren möchten. Bei Save wird das **Signing-Secret genau einmal angezeigt** — kopieren Sie es sofort und speichern Sie es mit Ihrer Integration. Es wird nie wieder angezeigt (Sie können es später drehen, aber Sie können das Original nicht abrufen).
+Gehen Sie zu **Einstellungen → Entwickler → Webhooks → Neuer Webhook**. Geben Sie einen Namen und die Payload-URL ein und wählen Sie die zu abonnierenden Ereignisse aus. Beim Speichern wird das **Signing-Secret einmalig angezeigt** — kopieren Sie es sofort und speichern Sie es zusammen mit Ihrer Integration. Es wird nie wieder angezeigt (Sie können es später rotieren, aber das Original lässt sich nicht erneut abrufen).
 
 ### Über die API
 
-Alle Endpunkte befinden sich unter dem Membership-Modul Basispfad `/membership/webhooks` und erfordern entweder ein JWT von einem Kirchen-Admin mit der `Settings / Edit`-Berechtigung, **oder einen [API-Schlüssel](./api-keys), der mit dem `settings:write`-Scope geprägt wurde**. Die gleichen Routes akzeptieren beide. Dies ist es, was Zapier und Make ermöglicht, Webhooks im Namen der Kirche zu registrieren, wenn ein Zap oder Szenario eingeschaltet wird.
+Alle Endpunkte liegen unter dem Basispfad `/membership/webhooks` des Membership-Moduls und erfordern entweder ein JWT eines Kirchenadministrators mit der Berechtigung `Settings / Edit`, **oder einen [API-Schlüssel](./api-keys), der mit dem Scope `settings:write` ausgestellt wurde**. Dieselben Routen akzeptieren beides. Das ist es, was Zapier und Make erlaubt, im Namen der Kirche Webhooks zu registrieren, sobald ein Zap oder Szenario aktiviert wird.
 
 ```http
 POST /membership/webhooks
@@ -47,7 +47,7 @@ Content-Type: application/json
 }
 ```
 
-Die Create-Antwort — und **nur** die Create-Antwort — enthält das `secret`:
+Die Antwort auf die Erstellung — und **nur** diese — enthält das `secret`:
 
 ```json
 {
@@ -62,56 +62,56 @@ Die Create-Antwort — und **nur** die Create-Antwort — enthält das `secret`:
 
 | Methode & Pfad | Zweck |
 |---|---|
-| `GET /membership/webhooks` | Die Webhooks der Kirche auflisten (Secret weggelassen) |
-| `GET /membership/webhooks/events` | Der Katalog gültiger Event-Namen |
+| `GET /membership/webhooks` | Die Webhooks der Kirche auflisten (Secret ausgelassen) |
+| `GET /membership/webhooks/events` | Der Katalog gültiger Ereignisnamen |
 | `GET /membership/webhooks/:id` | Einen Webhook laden |
-| `POST /membership/webhooks` | Erstellen (keine `id`) oder aktualisieren (mit `id`) |
-| `POST /membership/webhooks/:id/regenerate-secret` | Das Signing-Secret drehen; gibt den neuen Wert einmal zurück |
+| `POST /membership/webhooks` | Erstellen (ohne `id`) oder aktualisieren (mit `id`) |
+| `POST /membership/webhooks/:id/regenerate-secret` | Das Signing-Secret rotieren; liefert den neuen Wert einmalig zurück |
 | `DELETE /membership/webhooks/:id` | Einen Webhook löschen |
-| `GET /membership/webhooks/:id/deliveries` | Kürzliche Lieferungsversuche für einen Webhook |
-| `GET /membership/webhooks/deliveries/:deliveryId` | Vollständige Payload und Response für eine Lieferung |
-| `POST /membership/webhooks/deliveries/:deliveryId/redeliver` | Eine Lieferung erneut in die Warteschlange |
+| `GET /membership/webhooks/:id/deliveries` | Letzte Zustellungsversuche für einen Webhook |
+| `GET /membership/webhooks/deliveries/:deliveryId` | Vollständige Payload und Antwort für eine Zustellung |
+| `POST /membership/webhooks/deliveries/:deliveryId/redeliver` | Eine Zustellung erneut einreihen |
 
-## Event-Katalog
+## Ereigniskatalog
 
-Event-Namen folgen dem Muster `{entity}.{action}`. Rufen Sie die Live-Liste von `GET /membership/webhooks/events` auf.
+Ereignisnamen folgen dem Muster `{entity}.{action}`. Die aktuelle Liste erhalten Sie über `GET /membership/webhooks/events`.
 
-| Event | Schießt wenn |
+| Ereignis | Löst aus, wenn |
 |---|---|
-| `person.created` | Eine Person wird hinzugefügt |
-| `person.updated` | Ein Personendatensatz wird geändert |
-| `person.destroyed` | Eine Person wird gelöscht |
-| `household.created` | Ein Haushalt wird hinzugefügt |
-| `household.updated` | Ein Haushalt wird geändert |
-| `household.destroyed` | Ein Haushalt wird gelöscht |
-| `group.created` | Eine Gruppe wird hinzugefügt |
-| `group.updated` | Eine Gruppe wird geändert |
-| `group.destroyed` | Eine Gruppe wird gelöscht |
-| `group.member.added` | Eine Person wird zu einer Gruppe hinzugefügt |
-| `group.member.removed` | Eine Person wird aus einer Gruppe entfernt |
-| `donation.created` | Ein Geschenk wird aufgezeichnet — manuelle Eintrag, Online oder die ausstehende → vollständige Umwandlung |
-| `donation.updated` | Ein Spendendatensatz wird bearbeitet |
-| `attendance.recorded` | Ein Besuch wird protokolliert (manuelle Eintrag oder Check-in) |
-| `session.created` | Eine neue Anwesenheitssitzung wird erstellt (manuell oder automatisch beim ersten Check-in) |
-| `form.submission.created` | Ein Formular wird eingereicht |
-| `event.created` | Ein Kalender-Event wird hinzugefügt |
-| `event.updated` | Ein Kalender-Event wird bearbeitet |
-| `event.destroyed` | Ein Kalender-Event wird gelöscht |
+| `person.created` | Eine Person hinzugefügt wird |
+| `person.updated` | Ein Personendatensatz geändert wird |
+| `person.destroyed` | Eine Person gelöscht wird |
+| `household.created` | Ein Haushalt hinzugefügt wird |
+| `household.updated` | Ein Haushalt geändert wird |
+| `household.destroyed` | Ein Haushalt gelöscht wird |
+| `group.created` | Eine Gruppe hinzugefügt wird |
+| `group.updated` | Eine Gruppe geändert wird |
+| `group.destroyed` | Eine Gruppe gelöscht wird |
+| `group.member.added` | Eine Person zu einer Gruppe hinzugefügt wird |
+| `group.member.removed` | Eine Person aus einer Gruppe entfernt wird |
+| `donation.created` | Eine Gabe erfasst wird — manuelle Eingabe, online oder der Übergang von ausstehend zu abgeschlossen |
+| `donation.updated` | Ein Spendendatensatz bearbeitet wird |
+| `attendance.recorded` | Ein Besuch protokolliert wird (manuelle Eingabe oder Check-in) |
+| `session.created` | Eine neue Anwesenheits-Session erstellt wird (manuell oder automatisch beim ersten Check-in) |
+| `form.submission.created` | Ein Formular übermittelt wird |
+| `event.created` | Ein Kalendertermin hinzugefügt wird |
+| `event.updated` | Ein Kalendertermin bearbeitet wird |
+| `event.destroyed` | Ein Kalendertermin gelöscht wird |
 
 ## Payload-Format
 
-Jede Lieferung ist ein HTTP `POST` mit JSON-Body und diesen Headern:
+Jede Zustellung ist ein HTTP-`POST` mit einem JSON-Body und folgenden Headern:
 
 | Header | Beschreibung |
 |---|---|
 | `Content-Type` | Immer `application/json` |
-| `X-B1-Event` | Der Event-Name, z.B. `person.created` |
-| `X-B1-Delivery-Id` | Eindeutige ID für diesen Lieferungsversuch — nutzen Sie sie zum Deduplizieren |
-| `X-B1-Signature` | HMAC-SHA256-Signatur des Rohdaten-Body (siehe unten) |
-| `X-B1-Timestamp` | Unix-Epoche Sekunden, wenn der Request gesendet wurde |
+| `X-B1-Event` | Der Ereignisname, z. B. `person.created` |
+| `X-B1-Delivery-Id` | Eindeutige ID für diesen Zustellungsversuch — zum Deduplizieren verwenden |
+| `X-B1-Signature` | HMAC-SHA256-Signatur des rohen Body (siehe unten) |
+| `X-B1-Timestamp` | Unix-Epoch-Sekunden zum Zeitpunkt des Sendens der Anfrage |
 | `User-Agent` | `B1-Webhooks/1.0` |
 
-Der Body umhüllt die geänderte Ressource in einer kleinen Umhüllung:
+Der Body umhüllt die geänderte Ressource in einer kleinen Umschlagstruktur:
 
 ```json
 {
@@ -127,29 +127,29 @@ Der Body umhüllt die geänderte Ressource in einer kleinen Umhüllung:
 }
 ```
 
-Für `*.destroyed` Events enthält `data` nur die `id` und `churchId` des gelöschten Datensatzes.
+Bei `*.destroyed`-Ereignissen enthält `data` nur die `id` und `churchId` des gelöschten Datensatzes.
 
-Events, deren Payloads andere Datensätze nach ID referenzieren, enthalten auch lesbare Namen, die zur Lieferungszeit aufgelöst werden: `personName` und `groupName` bei Group-Membership-Events, `personName` bei Attendance, Donation und List-Membership-Events, `groupName` bei `session.created` und `formName` (plus `personName`, wenn die Einreichung an eine Person gebunden ist) bei `form.submission.created`.
+Ereignisse, deren Payloads andere Datensätze per ID referenzieren, tragen zusätzlich lesbare Namen, die zum Zustellungszeitpunkt aufgelöst werden: `personName` und `groupName` bei den Gruppenmitgliedschafts-Ereignissen, `personName` bei Anwesenheits-, Spenden- und Listenmitgliedschafts-Ereignissen, `groupName` bei `session.created` sowie `formName` (plus `personName`, wenn die Übermittlung an eine Person gebunden ist) bei `form.submission.created`.
 
 ## Connector-Typen
 
-Das Standard-Lieferungsformat ist die oben beschriebene JSON-Umhüllung — `connectorType: "standard"`. Für [Slack und Discord](/docs/b1-admin/integrations/slack-discord) postet die gleiche Webhook-Engine stattdessen eine Chat-geformte Nachricht, die diese Services direkt akzeptieren:
+Das Standard-Zustellformat ist die obige JSON-Umschlagstruktur — `connectorType: "standard"`. Für [Slack und Discord](/docs/b1-admin/integrations/slack-discord) postet dieselbe Webhook-Engine stattdessen eine chat-förmige Nachricht, die diese Dienste direkt akzeptieren:
 
-| `connectorType` | Body gesendet | Nutzen wenn |
+| `connectorType` | Gesendeter Body | Verwenden, wenn |
 |---|---|---|
-| `"standard"` (standard) | `{event, churchId, occurredAt, data}` Umhüllung, signiert | Sie schreiben Ihre eigene Integration, oder zeigen auf Zapier / Make / einen benutzerdefinierten Server |
-| `"slack"` | `{ "text": "💝 New donation: $50.00" }` | Sie postet direkt zu einer Slack Incoming Webhook URL |
-| `"discord"` | `{ "content": "💝 New donation: $50.00" }` | Sie postet direkt zu einer Discord Kanal Webhook URL |
+| `"standard"` (Standard) | Signierte Umschlagstruktur `{event, churchId, occurredAt, data}` | Sie Ihre eigene Integration schreiben oder auf Zapier / Make / einen eigenen Server zeigen |
+| `"slack"` | `{ "text": "💝 New donation: $50.00" }` | Sie direkt an eine Slack-Incoming-Webhook-URL posten |
+| `"discord"` | `{ "content": "💝 New donation: $50.00" }` | Sie direkt an eine Discord-Kanal-Webhook-URL posten |
 
-Der Connector-Typ wird im **Connector Type** Dropdown im Webhook-Editor oder über `connectorType` im `POST /membership/webhooks` Body gesetzt. Der signierte `X-B1-Signature`-Header wird immer noch für Slack/Discord-Lieferungen gesendet (sie ignorieren ihn harmlos), so dass das Umschalten eines Webhooks zurück zu `standard` später keine Neuzeichnung erfordert.
+Der Connector-Typ wird im Dropdown **Connector Type** im Webhook-Editor gesetzt, oder über `connectorType` im Body von `POST /membership/webhooks`. Der signierte `X-B1-Signature`-Header wird bei Slack-/Discord-Zustellungen weiterhin gesendet (sie ignorieren ihn folgenlos), sodass das spätere Zurückschalten eines Webhooks auf `standard` kein erneutes Signieren erfordert.
 
-## Test-Lieferungen
+## Testzustellungen
 
-Jeder Webhook-Editor hat einen **Test-Event senden**-Button — der entsprechende API-Aufruf ist `POST /membership/webhooks/:id/test`. Die Test-Route erstellt eine synthetische Payload für den ersten abonnierten Event, versendet ihn synchron durch den echten signierten-Lieferung-Pfad (und durch `formatForConnector` für Slack/Discord) und gibt die resultierende Lieferungszeile einschließlich `responseStatus` und `responseBody` zurück. Nutzen Sie es um Konnektivität und Signatur-Handling zu bestätigen, bevor Sie die Integration für echt einschalten.
+Jeder Webhook-Editor besitzt eine Schaltfläche **Send Test Event** — der entsprechende API-Aufruf ist `POST /membership/webhooks/:id/test`. Die Test-Route baut eine synthetische Payload für das erste abonnierte Ereignis, versendet sie synchron über den echten signierten Zustellpfad (und über `formatForConnector` bei Slack/Discord) und liefert die resultierende Zustellungszeile inklusive `responseStatus` und `responseBody` zurück. Nutzen Sie sie, um Konnektivität und Signaturprüfung zu bestätigen, bevor Sie die Integration produktiv schalten.
 
-## Signaturen verifizieren
+## Signaturen prüfen
 
-Verifizieren Sie immer `X-B1-Signature`, bevor Sie eine Payload vertrauen. Die Signatur ist `sha256=` gefolgt vom Hex HMAC-SHA256 des **Rohdaten-Request-Body** mit Ihrem Signing-Secret verschlüsselt. Berechnen Sie es über die Bytes, die Sie erhalten haben — serialisieren Sie das geparste JSON nicht erneut.
+Verifizieren Sie `X-B1-Signature` immer, bevor Sie einer Payload vertrauen. Die Signatur ist `sha256=` gefolgt vom hexadezimalen HMAC-SHA256 des **rohen Anfrage-Body**, geschlüsselt mit Ihrem Signing-Secret. Berechnen Sie sie über die empfangenen Bytes — serialisieren Sie das geparste JSON nicht neu.
 
 **Node.js**
 
@@ -183,18 +183,18 @@ function isValid(string $rawBody, string $signatureHeader, string $secret): bool
 }
 ```
 
-Lehnen Sie jeden Request ab, dessen Signatur nicht passt. Optional lehnen Sie auch Requests ab, deren `X-B1-Timestamp` älter als ein paar Minuten ist, um Replay-Fenster zu begrenzen.
+Lehnen Sie jede Anfrage ab, deren Signatur nicht übereinstimmt. Optional können Sie auch Anfragen ablehnen, deren `X-B1-Timestamp` älter als wenige Minuten ist, um das Replay-Zeitfenster zu begrenzen.
 
 ## SDK-Unterstützung
 
-Für Node.js, `@churchapps/integration-sdk` versendet einen typisierten Verifier und eine Express Middleware, die die Rohdaten-Erfassung, Signaturprüfung und Umhüllungs-Parsing für Sie handhabt:
+Für Node.js liefert `@churchapps/integration-sdk` einen typisierten Verifier sowie eine Express-Middleware, die die Erfassung des rohen Body, die Signaturprüfung und das Parsen der Umschlagstruktur für Sie übernimmt:
 
 ```ts
 import express from "express";
 import { b1WebhookMiddleware } from "@churchapps/integration-sdk";
 
 const app = express();
-// Erfassen Sie den Rohdaten-Body, bevor JSON-Parsing — erforderlich, damit die Signatur immer noch verifiziert.
+// Capture the raw body before JSON parsing — required so the signature still verifies.
 app.use(express.json({ verify: (req, _res, buf) => { (req as any).rawBody = buf; } }));
 
 app.post("/webhooks/b1", b1WebhookMiddleware({ secret: process.env.B1_WEBHOOK_SECRET! }), (req, res) => {
@@ -206,32 +206,32 @@ app.post("/webhooks/b1", b1WebhookMiddleware({ secret: process.env.B1_WEBHOOK_SE
 });
 ```
 
-Das SDK exponiert auch `WebhookVerifier.verify(secret, rawBody, signatureHeader)` für nicht-Express-Runtimes (Serverless-Funktionen, Fastify, etc.). Siehe das Paket auf npm.
+Das SDK stellt außerdem `WebhookVerifier.verify(secret, rawBody, signatureHeader)` für Nicht-Express-Laufzeitumgebungen bereit (Serverless-Funktionen, Fastify usw.). Siehe das Paket auf npm.
 
-## Lieferung & Wiederholungen
+## Zustellung & Wiederholungen
 
-Ihr Endpunkt sollte so schnell wie möglich mit einem `2xx`-Status antworten — idealerweise nur nach dem Einreihen der Arbeit, nicht nach dem Verarbeiten davon. Jede nicht-`2xx`-Antwort, ein Verbindungsfehler oder eine Antwort langsamer als **10 Sekunden** zählt als fehlgeschlagene Lieferung.
+Ihr Endpunkt sollte so schnell wie möglich mit einem `2xx`-Status antworten — idealerweise nachdem die Arbeit nur eingereiht, nicht bereits verarbeitet wurde. Jede Nicht-`2xx`-Antwort, ein Verbindungsfehler oder eine Antwort langsamer als **10 Sekunden** zählt als fehlgeschlagene Zustellung.
 
-Fehlgeschlagene Lieferungen werden mit exponentieller Backoff erneut versucht — **16 Versuche über grob 5 Tage**. Das Intervall wächst von 1 Minute, durch Stunden, bis zu 3-Tages-Lücken für die letzten Versuche. Nach dem 16. fehlgeschlagenen Versuch wird die Lieferung als `exhausted` gekennzeichnet und aufgegeben.
+Fehlgeschlagene Zustellungen werden mit exponentiellem Backoff erneut versucht — **16 Versuche über rund 5 Tage**. Das Intervall wächst von 1 Minute über Stunden bis hin zu 3-Tage-Lücken bei den letzten Versuchen. Nach dem 16. fehlgeschlagenen Versuch wird die Zustellung als `exhausted` markiert und aufgegeben.
 
-Lieferung ist **mindestens einmalig**: Eine Lieferung kann mehr als einmal ankommen (zum Beispiel, wenn Ihr Endpunkt erfolgreich ist, aber die Antwort verloren geht). Nutzen Sie den `X-B1-Delivery-Id`-Header zum Deduplizieren — verarbeiten Sie jede ID nur einmal und behandeln Sie Wiederholungen als Nulloperationen.
+Die Zustellung erfolgt **mindestens einmal**: Eine Zustellung kann mehr als einmal ankommen (zum Beispiel, wenn Ihr Endpunkt erfolgreich verarbeitet, die Antwort aber verloren geht). Nutzen Sie den Header `X-B1-Delivery-Id` zum Deduplizieren — verarbeiten Sie jede ID nur einmal und behandeln Sie Wiederholungen als No-ops.
 
-### Automatisches Deaktivieren
+### Automatische Deaktivierung
 
-Wenn ein Webhook **drei aufeinanderfolgende erschöpfte Lieferungen** erzeugt, deaktiviert B1 ihn automatisch. Reparieren Sie Ihren Endpunkt, dann re-aktivieren Sie den Webhook in B1Admin (oder über `POST /membership/webhooks` mit `"active": true`).
+Erzeugt ein Webhook **drei aufeinanderfolgende erschöpfte Zustellungen**, deaktiviert B1 ihn automatisch. Beheben Sie das Problem an Ihrem Endpunkt und aktivieren Sie den Webhook anschließend in B1Admin erneut (oder über `POST /membership/webhooks` mit `"active": true`).
 
-## Inspizieren & Neu-Liefern
+## Prüfen & erneut zustellen
 
-Der Webhook-Editor in B1Admin zeigt eine **Recent Deliveries**-Tabelle — Event, Status, Versuchsanzahl, Response-Code und Zeitstempel. Die Auswahl einer Zeile enthüllt die vollständige Payload, die gesendet wurde und die Antwort, die zurückkam.
+Der Webhook-Editor in B1Admin zeigt eine Tabelle **Recent Deliveries** — Ereignis, Status, Versuchsanzahl, Antwortcode und Zeitstempel. Die Auswahl einer Zeile zeigt die vollständige gesendete Payload sowie die zurückgekommene Antwort.
 
-Nutzen Sie **Redeliver**, um jede frühere Lieferung mit ihrer ursprünglichen Payload erneut in die Warteschlange zu stellen — hilfreich nach dem Reparieren eines Bugs in Ihrem Endpunkt, oder um Events zu backfüllen, die Ihr Endpunkt verpasst hat, während es außer Betrieb war.
+Nutzen Sie **Redeliver**, um jede vergangene Zustellung mit ihrer ursprünglichen Payload erneut einzureihen — hilfreich, nachdem ein Fehler in Ihrem Endpunkt behoben wurde, oder um Ereignisse nachzuliefern, die Ihr Endpunkt während einer Ausfallzeit verpasst hat.
 
-## URL-Anforderungen
+## Anforderungen an die URL
 
-Da Webhook-URLs Kirchen-versorgend sind, erzwingt B1 Schutzmaßnahmen gegen Server-seitige Request-Fälschung. Eine Webhook-URL wird abgelehnt — bei Registrierung und erneut geprüft vor jeder Lieferung — wenn sie:
+Da Webhook-URLs von der Kirche bereitgestellt werden, setzt B1 Schutzmaßnahmen gegen Server-Side Request Forgery durch. Eine Webhook-URL wird abgelehnt — bei der Registrierung und erneut vor jeder Zustellung geprüft —, wenn sie:
 
-- nicht **`https`** nutzt
-- auf `localhost`, einen `.local` / `.internal`-Hostnamen zeigt, oder
-- zu einer **privaten, Loopback-, Link-lokalen oder Cloud-Metadata** IP-Adresse auflöst
+- kein **`https`** verwendet
+- auf `localhost`, einen `.local`-/`.internal`-Hostnamen zeigt, oder
+- zu einer **privaten, Loopback-, Link-Local- oder Cloud-Metadaten**-IP-Adresse auflöst
 
 Ihr Endpunkt muss ein öffentlich erreichbarer HTTPS-Dienst sein.

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Usando o Editor de Página"
 ---
 
