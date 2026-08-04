@@ -52,7 +52,7 @@ El módulo de contenido (`Api/src/modules/content`) posee los datos del construc
 | `sections` | Bandas horizontales en una página (o en un bloque): fondo, color del texto, y un `answersJSON` que lleva el estilo más las configuraciones de forma de divisor `dividerTop`/`dividerBottom` |
 | `elements` | Piezas de contenido dentro de una sección: `elementType` + `answersJSON`, anidables para tipos de disposición (fila/columna, carrusel) |
 | `blocks` | Grupos de sección/elemento reutilizables (bloques de pie, bloques de elemento) compartidos entre páginas |
-| `posts` | Metadatos de blog sobre una página normal de constructor (ver [Blog](#blog-posts-over-pages)) |
+| `posts` | Publicaciones de blog independientes (ver [Blog](#blog)) |
 | `redirects` | Pares por iglesia `fromPath → toPath`, limitado a 200 (ver [SEO](#seo-and-discoverability)) |
 | `settings` | Configuración de clave-valor de iglesia; filas marcadas `public` se sirven anónimamente y llevan la configuración de widget/análisis |
 
@@ -104,17 +104,18 @@ Tres tipos de elemento renderizan datos vivos de la iglesia en lugar de contenid
 
 Dos widgets se renderizan en cada página pública en lugar de dentro del árbol: **AnnouncementBanner** (barra de despido de la parte superior de la página) y **Launcher** (centro de acción flotante para enlaces de estilo dar/visitar/ver). Tanto componentes como sus ayudantes `parse*Config()` se envían en apphelper. La configuración son dos filas de configuración públicas — claves `announcementBanner` y `launcher` — escritas por `SiteWidgetsEdit` de B1Admin (en la página Apariencia) y leídas por el diseño público de B1App a través de `GET /content/settings/public/:churchId`. La API trata estos como pares clave-valor opacos; los nombres de clave son una convención entre las dos aplicaciones.
 
-## Blog: publicaciones sobre páginas
+## Blog
 
-El blog es una capa de metadatos delgada, no un segundo sistema de contenido. Una fila `posts` (`title`, `slug`, `excerpt`, `authorId`, `photoUrl`, `publishDate`, `category`, `tags`) apunta a una página de constructor normal vía `pageId`; la página sostiene el cuerpo y se edita en el editor de página normal. Superficie pública (todos anónimos, `PostController`):
+El blog es un tipo de contenido independiente, no una capa sobre las páginas del constructor. Una fila `posts` contiene toda la publicación: `title`, `slug`, `excerpt`, `content` (cuerpo en markdown), `authorId`, `photoUrl`, `publishDate`, `category`, `tags`. Superficie pública (todo anónimo, `PostController`):
 
 | Ruta | Propósito |
 |-------|---------|
 | `GET /content/posts/public/:churchId` | Publicaciones publicadas, filtrables por `?category=&tag=`, paginadas |
-| `GET /content/posts/public/:churchId/slug/:slug` | Metadatos de una publicación |
-| `GET /content/posts/rss/:churchId?siteUrl=` | Alimentación RSS 2.0 |
+| `GET /content/posts/public/:churchId/categories` | Categorías distintas entre las publicaciones publicadas |
+| `GET /content/posts/public/:churchId/slug/:slug` | Una publicación publicada |
+| `GET /content/posts/rss/:churchId?siteUrl=` | Feed RSS 2.0, titulado con el nombre de la iglesia, con categoría y descripción de extracto-o-contenido por elemento |
 
-Una publicación es "publicada" una vez que `publishDate` está establecido y pasado. B1App sirve `/{sdSlug}/blog` (listado, con la alimentación RSS anunciada como enlace alternativo) y `/{sdSlug}/blog/[postSlug]`, que obtiene el árbol de respaldo en `/blog/{slug}` y lo renderiza a través de la misma canalización Zone/Section que cualquier otra página, agregando JSON-LD `BlogPosting`. Las URLs de blog se incluyen en el mapa del sitio por iglesia. La interfaz de usuario de autoría de B1Admin (**Sitio → Blog**) crea la página de respaldo en `/blog/{slug}` y la fila `posts` juntas.
+Una publicación está "publicada" una vez que `publishDate` está establecido y ha pasado; un `publishDate` futuro es una publicación programada (oculta públicamente, mostrada con una insignia Programada en el administrador). Los extremos de lectura enriquecen cada publicación con `authorName`, resuelto desde `authorId` a través de la puerta de manera del módulo de membresía. Los extractos faltantes recurren al contenido markdown despojado (~160 caracteres) en las tarjetas de listado, descripciones meta, y RSS. B1App sirve `/{sdSlug}/blog` — un listado editorial (encabezado centrado que se convierte en el nombre de la categoría/etiqueta activa cuando se filtra, fila de filtro de chips de categoría, filas de publicación con miniatura a la izquierda con bylines y extractos) con el feed RSS anunciado como enlace alternativo — y `/{sdSlug}/blog/[postSlug]`, una ruta dedicada (no la canalización Zone/Section) con un encabezado centrado (kicker de categoría, título, byline, regla de acento de color primario), un héroe 16:9 al ancho del contenedor, el cuerpo markdown en una columna de lectura de ~720px, chips de etiqueta en el pie del artículo, una franja de publicaciones relacionadas `"Más en {category}"`, y JSON-LD `BlogPosting` incluyendo al autor. Ambas páginas se estilizan enteramente desde los tokens del tema para que hereden la paleta de cada iglesia. Las URLs de blog se incluyen en el mapa del sitio por iglesia. La interfaz de usuario de autoría de B1Admin (**Sitio → Blog**) edita publicaciones en un diálogo: editor markdown con alternancia de vista previa, selector de imagen de galería recortado 16:9, selector de persona autor (predeterminado al usuario editor), autocompletado de categoría sembrado desde categorías existentes, validación de slug duplicado, y una alternancia de publicación; las filas publicadas enlazan a la publicación en vivo, y la página anima a los administradores a agregar un enlace de navegación `/blog`.
 
 ## Páginas solo para miembros
 

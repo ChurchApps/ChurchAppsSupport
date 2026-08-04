@@ -29,7 +29,7 @@ La consegna utilizza un **outbox durevole**: quando si verifica un evento sottos
 
 ### In B1Admin
 
-Vai a **Impostazioni → Webhook → Nuovo Webhook**. Immetti un nome, l'URL del payload, e seleziona gli eventi a cui sottoscriversi. Al salvataggio, il **segreto di firma viene visualizzato una volta** — copialo immediatamente e archivialo con la tua integrazione. Non viene mai più mostrato (puoi ruotarlo in seguito, ma non puoi recuperare l'originale).
+Vai a **Impostazioni → Sviluppatore → Webhook → Nuovo Webhook**. Immetti un nome, l'URL del payload, e seleziona gli eventi a cui sottoscriversi. Al salvataggio, il **segreto di firma viene visualizzato una volta** — copialo immediatamente e archivialo con la tua integrazione. Non viene mai più mostrato (puoi ruotarlo in seguito, ma non puoi recuperare l'originale).
 
 ### Tramite API
 

@@ -1,63 +1,63 @@
 ---
-title: "Deinen Haushalt überprüfen"
+title: "Ihren Haushalt überprüfen"
 ---
 
-# Deinen Haushalt überprüfen
+# Ihren Haushalt überprüfen
 
 <div class="article-intro">
 
-Nachdem du eine Person aus den Suchergebnissen auswählst, lädt die App deinen gesamten Haushalt und zeigt ihn auf dem Haushalts-Überprüfungs-Bildschirm an. Dies ist der zentrale Knotenpunkt des Check-In-Prozesses, in dem du jeden in deiner Familie sehen und ihre Gruppenzuweisungen verwalten kannst, bevor du eincheckt.
+Nachdem Sie eine Person aus den Suchergebnissen ausgewählt haben, lädt die App Ihren gesamten Haushalt und zeigt ihn auf dem Bildschirm zur Haushaltsübersicht an. Dies ist der zentrale Anlaufpunkt des Check-in-Prozesses, an dem Sie alle Mitglieder Ihrer Familie sehen und deren Gruppenzuweisungen verwalten können, bevor Sie einchecken.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor du beginnst</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- [Wähle einen Gottesdienst](./selecting-service) vom Bildschirm "Services"
-- [Suche nach einem Mitglied](./looking-up-members) und wähle es aus den Suchergebnissen
+- [Wählen Sie einen Gottesdienst](./selecting-service) auf dem Bildschirm zur Gottesdienstauswahl
+- [Suchen Sie ein Mitglied](./looking-up-members) und wählen Sie es aus den Suchergebnissen aus
 
 </div>
 
-## Ansicht von Haushaltsmitgliedern
+## Haushaltsmitglieder anzeigen
 
 Jedes Haushaltsmitglied erscheint als Karte mit:
 
-- Ihrem **Foto** (oder ein Platzhalter-Symbol, wenn kein Foto in der Datei vorhanden ist)
-- Ihrem **Anzeigenamen**
-- Einer **Zusammenfassung ihrer aktuellen Gruppenzuweisungen** (angezeigt als kleine Chips unterhalb des Namens, wenn die Karte zusammengeklappt ist)
-- Einem **Erweiterungs-/Zusammenklapp-Pfeil** auf der rechten Seite
+- Seinem **Foto** (oder einem Platzhaltersymbol, falls kein Foto hinterlegt ist)
+- Seinem **Anzeigenamen**
+- Einer **Zusammenfassung der aktuellen Gruppenzuweisungen** (als kleine Chips unter dem Namen angezeigt, wenn die Karte eingeklappt ist)
+- Einem **Erweitern/Einklappen-Pfeil** auf der rechten Seite
 
-## Erweitern eines Mitglieds
+## Ein Mitglied erweitern
 
-Tippe die Karte eines Mitglieds an, um sie zu erweitern. Wenn erweitert, siehst du eine Zeile für jede **Servicezeit** innerhalb des ausgewählten Services. Jede Zeile zeigt:
+Tippen Sie auf die Karte eines Mitglieds, um sie zu erweitern. Im erweiterten Zustand sehen Sie eine Zeile für jede **Gottesdienstzeit** innerhalb des ausgewählten Gottesdienstes. Jede Zeile zeigt:
 
-- Den **Servicezeit-Namen** (z. B. "9:00 Uhr" oder "11:00 Uhr")
-- Eine **Schaltfläche**, die die aktuell zugewiesene Gruppe zeigt, oder "Gruppe wählen", wenn noch keine Gruppe zugewiesen wurde
+- Den **Namen der Gottesdienstzeit** (zum Beispiel „9:00 Uhr" oder „11:00 Uhr")
+- Eine **Schaltfläche**, die die aktuell zugewiesene Gruppe anzeigt, oder „Gruppe auswählen", wenn noch keine Gruppe zugewiesen wurde
 
-Tippe die Gruppenschaltfläche an, um zum [Gruppenselek​tions-Bildschirm](./group-assignment) zu gehen, wo du die Gruppe für diese Person und Servicezeit wählen oder ändern kannst.
+Tippen Sie auf die Gruppenschaltfläche, um zum [Bildschirm zur Gruppenauswahl](./group-assignment) zu gelangen, auf dem Sie die Gruppe für diese Person und Gottesdienstzeit auswählen oder ändern können.
 
-Die erweiterte Karte zeigt auch **Mitglied**, **Gast** und **Freiwilliger** Chips. Tippe einen an, um festzulegen, wie diese Person eincheckt – Mitglied ist der Standard. Der Typ ist wichtig für Kinderräume: Freiwillige zählen zum Freiwilligen-zu-Kind-Verhältnis des Raums, und Gäste zählen gegen jede Gästekapazität, die deine Kirche festgelegt hat.
+Die erweiterte Karte zeigt außerdem die Chips **Mitglied**, **Gast** und **Freiwilliger**. Tippen Sie auf einen davon, um festzulegen, wie diese Person eincheckt -- Mitglied ist die Standardeinstellung. Der Typ ist für Kinderräume wichtig: Freiwillige zählen zum Verhältnis von Betreuern zu Kindern im Raum, und Gäste werden auf eine von Ihrer Kirche festgelegte Gästekapazität angerechnet.
 
-Tippe die Karte des Mitglieds erneut an, um sie zusammenzufalten.
+Tippen Sie erneut auf die Karte des Mitglieds, um sie einzuklappen.
 
 :::tip
-Du brauchst nicht jedem Familienmitglied eine Gruppe zuzuweisen. Erwachsene, die den Hauptgottesdienst besuchen, können ohne Gruppenzuweisung gelassen werden. Weise Gruppen nur für Mitglieder zu, die in eine bestimmte Klasse oder ein Programm einchecken müssen.
+Sie müssen nicht jedes Familienmitglied einer Gruppe zuweisen. Erwachsene, die den Hauptgottesdienst besuchen, können ohne Gruppenzuweisung bleiben. Weisen Sie nur den Mitgliedern Gruppen zu, die sich in eine bestimmte Klasse oder ein bestimmtes Programm einchecken müssen.
 :::
 
-## Navigation von diesem Bildschirm
+## Navigation von diesem Bildschirm aus
 
-Vom Haushalts-Überprüfungs-Bildschirm hast du drei Optionen:
+Auf dem Bildschirm zur Haushaltsübersicht haben Sie drei Möglichkeiten:
 
-- **Erweitere ein Mitglied** und tippe eine Servicezeit-Schaltfläche an, um [eine Gruppe zuzuweisen oder zu ändern](./group-assignment).
-- **Tippe die Schaltfläche "Gast hinzufügen"** unterhalb der Mitgliederliste an, um [einen Gast zu deinem Haushalt hinzuzufügen](./adding-guests).
-- **Tippe die Schaltfläche "Check-In"** unten auf dem Bildschirm an, um [das Check-In zu vervollständigen](./completing-checkin) für jeden in dem Haushalt.
+- **Ein Mitglied erweitern** und auf eine Schaltfläche für eine Gottesdienstzeit tippen, um [eine Gruppe zuzuweisen oder zu ändern](./group-assignment).
+- **Auf die Schaltfläche Gast hinzufügen** unter der Mitgliederliste tippen, um [einen Gast](./adding-guests) zu Ihrem Haushalt hinzuzufügen.
+- **Auf die Schaltfläche Check-in** unten auf dem Bildschirm tippen, um [den Check-in](./completing-checkin) für alle im Haushalt abzuschließen.
 
 :::info
-Alle Gruppenzuweisungen aus einem vorherigen Check-In zum gleichen Service werden automatisch vorgeladen. Wenn deine Kinder die gleichen Gruppen jede Woche besuchen, brauchst du möglicherweise nichts zu ändern – überprüfe einfach und checke ein.
+Alle Gruppenzuweisungen aus einem vorherigen Check-in für denselben Gottesdienst werden automatisch vorab geladen. Wenn Ihre Kinder jede Woche dieselben Gruppen besuchen, müssen Sie möglicherweise nichts ändern -- einfach überprüfen und einchecken.
 :::
 
 ## Nächste Schritte
 
-- [Weise Gruppen zu](./group-assignment) zu Familienmitgliedern, die in eine bestimmte Klasse oder ein Programm einchecken müssen.
-- [Füge einen Gast hinzu](./adding-guests), wenn jemand deine Familie besucht.
-- [Vervollständige das Check-In](./completing-checkin), wenn die Zuweisungen aller Personen korrekt aussehen.
+- [Weisen Sie Gruppen zu](./group-assignment) für Familienmitglieder, die sich in eine bestimmte Klasse oder ein bestimmtes Programm einchecken müssen.
+- [Fügen Sie einen Gast hinzu](./adding-guests), falls jemand Ihre Familie begleitet.
+- [Schließen Sie den Check-in ab](./completing-checkin), sobald die Zuweisungen aller korrekt aussehen.

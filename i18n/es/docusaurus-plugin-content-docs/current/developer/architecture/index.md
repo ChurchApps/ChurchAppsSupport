@@ -50,6 +50,7 @@ Dos reglas estructurales moldean todo lo documentado en esta sección:
 | [Enrutamiento de Sitios Web y Multi-Sitio](./websites) | Cómo una solicitud se resuelve a una iglesia y un sitio específico, el modelo de datos `siteId` de multi-sitio, y el borde de dominio personalizado de Caddy | B1App, Api (membership + content), B1Admin |
 | [Integraciones](./integrations) | La superficie de extensión: OAuth, claves API, webhooks, proveedores de contenido, MCP | Api, bibliotecas compartidas, aplicaciones externas |
 | [Registro de Auditoría y Lotes Reversibles](./audit-log) | Auditoría activada de forma predeterminada de cada mutación en el punto de estrangulamiento del controlador, y la capa de lote que hace importaciones y acciones en masa reversibles | Api (all modules), B1Admin, B1Transfer |
+| [MinistryStuff](./ministrystuff) | El servicio de pago de almacenamiento y créditos de mensajería de texto: identidad de JWT compartido, S2S de clave de servicio, las interfaces de proveedor de mensajería de texto y almacenamiento, facturación de Stripe | MinistryStuffApi, MinistryStuffWeb, Api (content + messaging), paquetes texting/apihelper, B1Admin |
 
 :::tip
 Cuando un cambio altera cómo funciona uno de estos sistemas — no solo una página dentro de una aplicación — el mapa de sistema correspondiente aquí debe actualizarse en el mismo esfuerzo. Eso mantiene esta sección confiable como la primera parada para nuevos contribuyentes.

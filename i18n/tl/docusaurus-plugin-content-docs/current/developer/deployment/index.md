@@ -17,6 +17,8 @@ Ang ChurchApps ay gumagamit ng iba't ibang deployment strategies depende sa proj
 | [APIs](./apis) | AWS Lambda | Serverless Framework v3 (Node.js 22.x runtime) |
 | [Web Apps](./web-apps) | S3 + CloudFront | Static build, S3 sync, CloudFront invalidation |
 | [Mobile Apps](./mobile) | App Stores | Expo EAS Build + OTA Updates |
+| [Self-Hosting (Railway)](./railway-template) | Railway | One-click na template: MySQL + Api + B1Admin + B1App |
+| [Self-Hosting (Docker)](./docker) | Anumang Docker host | `docker compose up` mula sa B1Admin repo |
 | [Caddy Custom-Domain Proxy](./caddy-proxy) | Windows EC2 (Elastic IP `3.23.251.61`) | Static Caddyfile + WinSW service + scheduled map sync |
 | FreeShow | Direct download | Electron Builder (cross-platform binaries) |
 

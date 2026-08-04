@@ -123,7 +123,7 @@ DELETE /messaging/connections/:churchId/:conversationId/:socketId
 
 | Файл | Роль |
 |------|------|
-| `Api/src/modules/messaging/helpers/SocketHelper.ts` | Владеет `WebSocketServer`. Назначает `socketId` при подключении. Запускает 30-секундное ping/pong сердцебиение (`startHeartbeat`), которое `terminate()`ит и очищает любое соединение, которое пропустит pong. Очищает мёртвые сокеты и запускает трансляние присутствия при отключении. Открывает `getLiveSocketIds()` и `reapStaleConnections()`, используемые работой таймера на 30 минут для удаления стаклых строк `connections` — локально путём проверки того, какие socketIds всё ещё живы в процессе, на AWS как 24h-TTL подстраховка для пропущенных `$disconnect` событий |
+| `Api/src/modules/messaging/helpers/SocketHelper.ts` | Владеет `WebSocketServer`. Назначает `socketId` при подключении. Запускает 30-секундное ping/pong сердцебиение (`startHeartbeat`), которое `terminate()`ит и очищает любое соединение, которое пропустит pong. Очищает мёртвые сокеты и запускает трансляние присутствия при отключении. Открывает `getLiveSocketIds()` и `reapStaleConnections()`, используемые 30-минутной задачей таймера для удаления устаревших строк `connections` — локально путём проверки того, какие socketId всё ещё живы в процессе, на AWS как подстраховка с 24-часовым TTL для пропущенных событий `$disconnect` (API Gateway ограничивает соединения примерно 2 часами, поэтому это не может «собрать» живое соединение) |
 | `Api/src/modules/messaging/helpers/DeliveryHelper.ts` | `sendConversationMessages(payload)` читает соединения для комнаты и маршрутизирует каждый кадр на локальный сокет или AWS API Gateway соединение. `sendAttendance(churchId, conversationId)` создаёт и передаёт снимок зрителя |
 | `Api/src/modules/messaging/controllers/ConnectionController.ts` | `POST /` присоединяет, `DELETE /:churchId/:conversationId/:socketId` выходит, `POST /setName` обновляет показываемое имя |
 | `Api/src/modules/messaging/controllers/MessageController.ts` | `POST /send` (анонимно) и `POST /` (аутентифицировано) сохраняют затем разбрасывают |
@@ -135,7 +135,7 @@ DELETE /messaging/connections/:churchId/:conversationId/:socketId
 
 ### `SocketHelper`
 
-Владеет единственным WebSocket соединением. Ре-входящее `init()` идемпотентно — несколько компонентов могут вызвать его без открытия дубликатных сокетов. Открывает:
+Владеет единственным WebSocket-соединением. Повторно вызываемый `init()` идемпотентен — несколько компонентов могут вызывать его без открытия дублирующих сокетов. Предоставляет:
 
 - `init()` — открывает (или переиспользует) сокет и завершает handshake `getId`. Решает, когда handshake завершится или, после 5-секундного timeout, когда фоновой цикл повтора взял на себя; никогда не отклоняет, поэтому вызывающим не нужно специально обрабатывать неудачное первое подключение.
 - `addHandler(action, id, fn)` / `removeHandler(id)` — регистрируют/отменяют регистрацию слушателей по `action`. Несколько обработчиков могут слушать одно и то же действие.
@@ -160,7 +160,7 @@ await SubscriptionManager.leaveRoom(conversationId, churchId);
 Три поведения, которые потребители получают бесплатно:
 
 - **Отложенный выход (300 мс)** — выживает в React StrictMode двойной монтаж/демонтаж и короткие циклы переустановки без отказа подписки на стороне сервера; `reset()` также отменяет любые ожидающие отложенные выходы.
-- **Переподключение присоединение** — `SubscriptionManager` запоминает `personId`/`displayName` использованные для присоединения каждой комнаты, поэтому на событии `SocketHelper`'s `"reconnect"` (и на каждом вызове `onSocketIdReady`) она переотправляет каждую активную строку соединения с целостной идентичностью. Присоединения дедуплируются за socketId так что же переподключение не переотправляет комнату дважды.
+- **Повторное присоединение при переподключении** — `SubscriptionManager` запоминает `personId`/`displayName`, использованные для входа в каждую комнату, поэтому при событии `"reconnect"` от `SocketHelper` (и при каждом вызове `onSocketIdReady`) он заново отправляет каждую активную строку соединения с сохранённой идентичностью. Повторные входы дедуплицируются по socketId, поэтому одно и то же переподключение не отправляет заявку на комнату дважды.
 - **Позднее связывание socketId** — `joinRoom` записывает намерение перед окончанием sockets handshake; фактический `POST /connections` запускается на `onSocketIdReady`.
 
 ### `ConversationStore`
@@ -187,7 +187,7 @@ ConversationStore.forget(conversationId);  // опциональная явна�
 
 ### `PresenceStore`
 
-Зеркала паттерна `ConversationStore`'s для действия `attendance`. Подписчики получают `PresenceSnapshot { conversationId, totalViewers, viewers }` всякий раз, когда сервер переплан присутствие. Идентичные снимки дедуплируются перед уведомлением, поэтому штормы переподключения не запускают ненужные переотображения.
+Отражает паттерн `ConversationStore` для действия `attendance`. Подписчики получают `PresenceSnapshot { conversationId, totalViewers, viewers }` всякий раз, когда сервер повторно транслирует присутствие. Идентичные снимки дедуплируются перед уведомлением, поэтому штормы переподключений не вызывают лишних перерисовок.
 
 ```typescript
 import { PresenceStore } from "@churchapps/apphelper";
@@ -212,7 +212,7 @@ await NotificationService.getInstance().initialize(userContext);
 Трансляция — это крупнейший анонимный потребитель платформы. Она использует два `contentType`'s для области комнаты:
 
 - `streamingLive` — открытая вкладка чата на `/stream` (одна комната на `streamingService`).
-- `streamingLiveHost` — приватная комната видна только для сотрудников с разрешением `contentApi.chat.host`. ID комнаты зашифрован на сервере (`GET /streamingServices/:id/hostChat`) так, чтобы невежественный скрейпинг не раскрыл это.
+- `streamingLiveHost` — приватная комната, видимая только сотрудникам с разрешением `contentApi.chat.host`. ID комнаты зашифрован на сервере (`GET /streamingServices/:id/hostChat`), чтобы случайный скрапинг не раскрыл его.
 
 `B1App/src/helpers/StreamChatManager.ts` загружает обе комнаты через объединённые примитивы — больше нет трансляции-специфического кода сокетов.
 
@@ -226,7 +226,7 @@ await NotificationService.getInstance().initialize(userContext);
 
 ## Связанные страницы
 
-- [Архитектура уведомлений](./architecture/notifications) — funnel эскалации in-app/push/email, который питает этот транспорт
+- [Архитектура уведомлений](./architecture/notifications) — воронка эскалации in-app/push/email, которую питает этот транспорт
 - [Конечные точки сообщений](./api/endpoints/messaging) — полная REST поверхность для сообщений, бесед, соединений, устройств
 - [Web Push уведомления](./web-push) — браузер push, отдельный от доставки сокетов в странице
 - [AppHelper](./shared-libraries/app-helper) — npm пакет, который поставляет примитивы клиента

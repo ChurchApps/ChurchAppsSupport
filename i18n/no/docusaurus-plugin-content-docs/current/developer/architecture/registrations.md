@@ -1,12 +1,12 @@
 ---
-title: "Arrangementregistreringer"
+title: "Arrangementspåmeldinger"
 ---
 
-# Arrangementregistreringer
+# Arrangementspåmeldinger
 
 <div class="article-intro">
 
-Innebygd arrangementregistrering lever i innhold modulen og, siden de betalt-registreringer bølge, bærer full handel modellen: prisatte deltager typer, prisatte tillegg-valg, rabatt koder, betalinger gjennom kirken sin eksisterende donerings gateway, og status-drevet venteliste. Pengene sti bevisst gjenbruk donerings stabel — registrerings kontroller ladet gjennom samme `GatewayService` / `IGatewayProvider` abstraksjon dokumentert i [Donering](./giving), så nei kort data eller gateway SDK kunnskap lever i innhold modulen. Denne siden kartlegger data modellen, prissetting og kapasitet regler, og registrering, betaling, og venteliste flyter.
+Native arrangementspåmelding ligger i content-modulen og bærer, siden bølgen med betalte påmeldinger, en full handelsmodell: prissatte deltakertyper, prissatte tilleggsvalg, rabattkoder, betalinger gjennom kirkens eksisterende givertjeneste-gateway, og en statusdrevet venteliste. Pengestien gjenbruker bevisst givertjeneste-stabelen — påmeldingscontrolleren belaster gjennom den samme `GatewayService` / `IGatewayProvider`-abstraksjonen dokumentert i [Givertjeneste](./giving), slik at ingen kortdata- eller gateway-SDK-kunnskap ligger i content-modulen. Denne siden kartlegger datamodellen, prissettings- og kapasitetsreglene, og flytene for påmelding, betaling og venteliste.
 
 </div>
 
@@ -14,80 +14,80 @@ Innebygd arrangementregistrering lever i innhold modulen og, siden de betalt-reg
 
 ```
 ┌──────────────────────────────┐            ┌─────────────────────────────────────────────┐
-│ B1App (medlem portal)        │            │ Api — innhold modul                         │
-│  registrering tryllstav ·    │   HTTPS    │  RegistrationController                     │
-│  Mine registreringer         │ ─────────▶ │   /content/registrations                    │
-├──────────────────────────────┤            │  RegistrationPricingHelper (server prissetting) │
-│ B1Admin (stab)               │            │  RegistrationHelper (e-poster)              │
-│  arrangement registrering innstillinger │  └───────────────┬─────────────────────────────┘
-│  · list · CSV eksport        │                            │ processCharge
-└──────────────────────────────┘                            ▼
-                                            ┌─────────────────────────────────────────────┐
-                                            │ delt gateway abstraksjon (donering)         │
+│ B1App (medlemsportal)        │            │ Api — content-modul                         │
+│  påmeldingsveiviser ·        │   HTTPS    │  RegistrationController                     │
+│  Mine påmeldinger            │ ─────────▶ │   /content/registrations                    │
+├──────────────────────────────┤            │  RegistrationPricingHelper (serverprising)  │
+│ B1Admin (ansatte)            │            │  RegistrationHelper (e-poster)              │
+│  arrangementspåmelding-      │            └───────────────┬─────────────────────────────┘
+│  innstillinger · liste ·     │                            │ processCharge
+│  CSV-eksport                 │                            ▼
+└──────────────────────────────┘            ┌─────────────────────────────────────────────┐
+                                            │ delt gateway-abstraksjon (givertjeneste)    │
                                             │  GatewayService → IGatewayProvider          │
                                             │  Stripe · PayPal · Kingdom Funding          │
                                             └─────────────────────────────────────────────┘
 ```
 
-Tre regler holder på tvers av stabelen:
+Tre regler gjelder for hele stabelen:
 
-1. **Serveren eier prisen.** Klienter leverer type ids, valg ids, og mengder; `RegistrationPricingHelper.computeTotal()` beregner totalen server-side og kupongene blir re-validert på charge tid. En klient-levert beløp er aldri tiltrodd.
-2. **Kapasitet blir gjennomtvunget atomisk på innsettings tid.** Hver kapasitets-begrenset innsetting bruk ein `INSERT … SELECT … FROM dual WHERE (antall av aktive rader) < kapasitet` utsagn, så to samtidig registreringer kan ikke begge ta siste spot. Antall blir utledet fra status (`pending`/`confirmed`), aldri lagret.
-3. **Betalinger rir donerings skinner.** `RegistrationController` kaller delt `GatewayService.processCharge` med kirken sin konfigurert gateway — samme leverandør abstraksjon, tokenisering modell, og SCA håndtering som donasjoner.
+1. **Serveren eier prisen.** Klienter sender inn type-id-er, valg-id-er, og antall; `RegistrationPricingHelper.computeTotal()` beregner totalen server-side, og kuponger revalideres ved belastningstidspunktet. Et klientlevert beløp stoles aldri på.
+2. **Kapasitet håndheves atomisk ved innsettingstidspunktet.** Hver kapasitetsbegrenset innsetting bruker en `INSERT … SELECT … FROM dual WHERE (antall aktive rader) < kapasitet`-setning, slik at to samtidige påmeldinger ikke begge kan ta den siste plassen. Antall utledes fra status (`pending`/`confirmed`), aldri lagret.
+3. **Betalinger rir på givertjeneste-skinnene.** `RegistrationController` kaller den delte `GatewayService.processCharge` med kirkens konfigurerte gateway — samme leverandørabstraksjon, tokeniseringsmodell, og SCA-håndtering som donasjoner.
 
 ## Datamodell (`Api/src/modules/content`)
 
-Modeller er i `models/Registration.ts`; tabell kartlegginger i `db/DatabaseTypes.ts`; ein repo per tabell under `repositories/`.
+Modeller finnes i `models/Registration.ts`; tabellmappinger i `db/DatabaseTypes.ts`; ett repo per tabell under `repositories/`.
 
-| Tabell | Betydning | Nøkkel felt |
+| Tabell | Betydning | Nøkkelfelt |
 |-------|---------|-----------|
-| `registrations` | Ein registrering (ein husholdning/party for ein arrangement) | eventId, personId, householdId, **status** (`pending` / `confirmed` / `waitlisted` / `cancelled`), totalAmount, amountPaid, couponId, waitlistNotifiedDate, registeredDate, cancelledDate |
-| `registrationMembers` | Ein deltager på ein registrering | registrationId, personId, firstName, lastName, **registrationTypeId** |
-| `registrationTypes` | Deltager typer per arrangement (f.eks. Voksen / Barn) | eventId, name, description, **price**, **capacity**, minAgeYears, maxAgeYears, formId, sort, active |
-| `registrationSelections` | Navngitt tillegg-alternativ med ein pris (f.eks. T-skjorte) | eventId, name, description, **price**, **capacity**, **maxQuantity** (per-registrering tak), sort, active |
-| `registrationSelectionChoices` | Mengde av ein valg valgt av ein registrering/medlem | registrationId, registrationMemberId, selectionId, **quantity** |
-| `registrationPayments` | Ein vellykket lading mot ein registrering | registrationId, gatewayId, provider, transactionId, method, amount, currency, kind (`charge`), status (`succeeded`), personId |
-| `registrationCoupons` | Rabatt koder per arrangement | eventId, code, **discountType** (`percent` / `amount`), **value**, startDate, endDate, **minMembers**, **maxUses**, active |
+| `registrations` | Én påmelding (én husholdning/gruppe for ett arrangement) | eventId, personId, householdId, **status** (`pending` / `confirmed` / `waitlisted` / `cancelled`), totalAmount, amountPaid, couponId, waitlistNotifiedDate, registeredDate, cancelledDate |
+| `registrationMembers` | Én deltaker på en påmelding | registrationId, personId, firstName, lastName, **registrationTypeId** |
+| `registrationTypes` | Deltakertyper per arrangement (f.eks. Voksen / Barn) | eventId, name, description, **price**, **capacity**, minAgeYears, maxAgeYears, formId, sort, active |
+| `registrationSelections` | Navngitte tilleggsalternativer med en pris (f.eks. T-skjorte) | eventId, name, description, **price**, **capacity**, **maxQuantity** (per-påmeldingstak), sort, active |
+| `registrationSelectionChoices` | Antall av et valg valgt av en påmelding/deltaker | registrationId, registrationMemberId, selectionId, **quantity** |
+| `registrationPayments` | Én vellykket belastning mot en påmelding | registrationId, gatewayId, provider, transactionId, method, amount, currency, kind (`charge`), status (`succeeded`), personId |
+| `registrationCoupons` | Rabattkoder per arrangement | eventId, code, **discountType** (`percent` / `amount`), **value**, startDate, endDate, **minMembers**, **maxUses**, active |
 
-Noter:
+Merknader:
 
-- **Det er nei venteliste tabell.** Venteliste parties er `registrations` rader med `status = 'waitlisted'`; hele venteliste livssyklus er status overganger på den ein tabell.
-- **Nei lagret tellere.** "Solgt" / "brukt" antall (arrangement kapasitet, per-type kapasitet, per-valg kapasitet, kupong bruk) blir beregnet med korrelert underforespørsel over rader hvis status er i `('pending','confirmed')` (`RegistrationTypeRepo.loadActiveWithUsage`, `RegistrationRepo.countActiveForEvent` / `countActiveForCoupon`). Avbrytelse ein registrering derfor frigjør kapasitet med nei bokholding.
-- Priser er MySQL DECIMAL kolonner (strenger over tråden) tvunget med `Number()` innsiden prissetting hjelper.
+- **Det finnes ingen ventelistetabell.** Ventelistede grupper er `registrations`-rader med `status = 'waitlisted'`; hele ventelistens livssyklus er statusoverganger på den ene tabellen.
+- **Ingen lagrede tellere.** "Solgt"-/"brukt"-antall (arrangementskapasitet, per-type-kapasitet, per-valg-kapasitet, kupongbruk) beregnes med korrelerte underspørringer over rader der status er i `('pending','confirmed')` (`RegistrationTypeRepo.loadActiveWithUsage`, `RegistrationRepo.countActiveForEvent` / `countActiveForCoupon`). Å kansellere en påmelding frigjør derfor kapasitet uten noe bokføring.
+- Priser er MySQL DECIMAL-kolonner (strenger over ledningen) tvunget om med `Number()` inne i prissettingshjelperen.
 
-## REST flate
+## REST-flate
 
-Alt er under `/content/registrations` (`controllers/RegistrationController.ts`), port av `Permissions.registrations` (`view` / `edit`):
+Alt ligger under `/content/registrations` (`controllers/RegistrationController.ts`), sperret av `Permissions.registrations` (`view` / `edit`):
 
 | Rute | Tilgang | Formål |
 |-------|--------|---------|
-| `POST /register` | anonym | Full innsending: gjest eller medlem, server prissetting, kapasitets sjekk, valgfri lading |
-| `GET /types/event/:eventId`, `GET /selections/event/:eventId` | offentlig | Typer/valg med utledet `used` / `remainingCapacity` for tryllstaven |
-| `POST /types`, `DELETE /types/:id` (samme for `/selections`, `/coupons`) | `registrations.edit` | Stab innstillinger CRUD |
-| `POST /coupons/validate` | offentlig | Inline rabatt-kode validering under tryllstaven |
-| `GET /coupons/event/:eventId` | stab | Kupongene med bruk antall |
-| `GET /event/:eventId` · `GET /event/:eventId/count` | stab · offentlig | List; aktivt-antall for kapasitets display |
-| `GET /person/:personId` · `GET /:id` · `GET /payments/:registrationId` | autentisert | Mine registreringer, detalj, betalings historie |
-| `PUT /:id` | eier/stab | Etter-innsending redigering — erstat medlemmer og valg valg med frisk atomisk kapasitets sjekk, beregne `totalAmount`; aldri auto-ladet eller refunder |
-| `POST /:id/pay` | eier | "Fullfør betaling": ladet `totalAmount − amountPaid`, flip `waitlisted`/`pending` → `confirmed` |
-| `POST /:id/promote` | stab | Manuell venteliste promotering |
-| `POST /:id/cancel` · `DELETE /:id` | eier · stab | Avbryt / slett; begge trigger venteliste auto-promotering |
+| `POST /register` | anonym | Full innsending: gjest eller medlem, serverprising, kapasitetssjekker, valgfri belastning |
+| `GET /types/event/:eventId`, `GET /selections/event/:eventId` | offentlig | Typer/valg med utledet `used` / `remainingCapacity` for veiviseren |
+| `POST /types`, `DELETE /types/:id` (samme for `/selections`, `/coupons`) | `registrations.edit` | CRUD for ansattinnstillinger |
+| `POST /coupons/validate` | offentlig | Innebygd rabattkode-validering under veiviseren |
+| `GET /coupons/event/:eventId` | ansatt | Kuponger med bruksantall |
+| `GET /event/:eventId` · `GET /event/:eventId/count` | ansatt · offentlig | Deltakerliste; aktivt antall for kapasitetsvisning |
+| `GET /person/:personId` · `GET /:id` · `GET /payments/:registrationId` | autentisert | Mine påmeldinger, detaljer, betalingshistorikk |
+| `PUT /:id` | eier/ansatt | Redigering etter innsending — erstatter medlemmer og valg med ferske atomiske kapasitetssjekker, beregner `totalAmount` på nytt; belaster eller refunderer aldri automatisk |
+| `POST /:id/pay` | eier | "Fullfør betaling": belaster `totalAmount − amountPaid`, vipper `waitlisted`/`pending` → `confirmed` |
+| `POST /:id/promote` | ansatt | Manuell forfremmelse fra venteliste |
+| `POST /:id/cancel` · `DELETE /:id` | eier · ansatt | Kanseller / slett; begge utløser automatisk forfremmelse fra venteliste |
 
-En ikke-avbrutt eksisterende registrering for samme `personId` på samme arrangement blir avvist med ein 409, og hver opprettet registrering sender ein `registration.created` webhook via `WebhookDispatcher`.
+En ikke-kansellert eksisterende påmelding for samme `personId` på samme arrangement avvises med en 409, og hver opprettet påmelding sender ut en `registration.created`-webhook via `WebhookDispatcher`.
 
-## Prissetting og rabatt koder
+## Prissetting og rabattkoder
 
-`helpers/RegistrationPricingHelper.ts` er den eneste penge-matte autority:
+`helpers/RegistrationPricingHelper.ts` er den eneste autoriteten for pengeregning:
 
-- `computeTotal()` summerer hver medlem sin type pris pluss hver valg valg sin `price × quantity`.
-- `validateCoupon()` håndhever aktiv flagg, dato vindu (`startDate`/`endDate`), `minMembers` mot det sendt party størrelse, og `maxUses` mot status-utledet innløsning antall.
-- `applyDiscount()` — `percent` trekk `total × value/100`; `amount` trekk `value`; begge gulv på null.
+- `computeTotal()` summerer hver deltakers typepris pluss hvert valgs `price × quantity`.
+- `validateCoupon()` håndhever aktiv-flagg, datovindu (`startDate`/`endDate`), `minMembers` mot den innsendte gruppestørrelsen, og `maxUses` mot det statusutledede innløsningsantallet.
+- `applyDiscount()` — `percent` trekker fra `total × value/100`; `amount` trekker fra `value`; begge har null som gulv.
 
-Tryllstaven kaller `POST /coupons/validate` for inline tilbakemelding, men `register` re-validerer og re-påfør kupongen server-side — klienten displayert total er bare rådgivende.
+Veiviseren kaller `POST /coupons/validate` for øyeblikkelig tilbakemelding, men `register` revaliderer og reapplikerer kupongen server-side — klientens viste totalsum er kun veiledende.
 
-## Det atomiske kapasitets idiom
+## Det atomiske kapasitetsidiomet
 
-Hver kapasitets-begrenset innsetting løp sikkert uten transaksjoner eller låser ved å gjøre kapasitets sjekk del av `INSERT` selv. Arrangement-nivå (`RegistrationRepo.atomicInsertWithCapacityCheck`):
+Hver kapasitetsbegrenset innsetting kappes trygt uten transaksjoner eller låser ved å gjøre kapasitetssjekken til en del av selve `INSERT`-en. På arrangementsnivå (`RegistrationRepo.atomicInsertWithCapacityCheck`):
 
 ```sql
 INSERT INTO registrations (id, churchId, eventId, ...)
@@ -97,11 +97,11 @@ INSERT INTO registrations (id, churchId, eventId, ...)
          WHERE eventId=? AND churchId=? AND status IN ('pending','confirmed')) < ?
 ```
 
-Null påvirket rader betyr "på kapasitet". Samme idiom vakt per-type innsettinger (`RegistrationMemberRepo.atomicInsertWithTypeCapacity`, antall medlemmer koblet til aktive registreringer) og per-valg mengder (`RegistrationSelectionChoiceRepo.atomicInsertWithCapacityCheck`, bruker `COALESCE(SUM(quantity),0) + ? <= capacity`). Når noe som helst medlem eller valg innsetting mislykkes midt-registrering, kontrolleren rulle den delvis registrering tilbake med `deleteCascade()` og rapport som type eller valg solgt ut.
+Null påvirkede rader betyr "ved kapasitet". Det samme idiomet beskytter per-type-innsettinger (`RegistrationMemberRepo.atomicInsertWithTypeCapacity`, som teller medlemmer koblet til aktive påmeldinger) og per-valg-antall (`RegistrationSelectionChoiceRepo.atomicInsertWithCapacityCheck`, som bruker `COALESCE(SUM(quantity),0) + ? <= capacity`). Når en medlems- eller valginnsetting mislykkes midt i en påmelding, ruller controlleren den delvise påmeldingen tilbake med `deleteCascade()` og rapporterer hvilken type eller hvilket valg som ble utsolgt.
 
-## Betalings flyt
+## Betalingsflyt
 
-`processRegistrationCharge` i kontrolleren er det eneste stedet registreringer berør penger, og det er en tynt klient av donerings stabelen:
+`processRegistrationCharge` i controlleren er det eneste stedet påmeldinger berører penger, og det er en tynn klient av givertjeneste-stabelen:
 
 ```
 RegistrationController ─▶ RepoManager.getRepos("giving").gateway
@@ -110,37 +110,37 @@ RegistrationController ─▶ RepoManager.getRepos("giving").gateway
                              └▶ IGatewayProvider.processCharge  (Stripe / PayPal / Kingdom Funding)
 ```
 
-Tokenisering skjer i nettleseren nøyaktig som for donasjoner (se [Donering](./giving)) — tryllstaven gjenbruk apphelper betalings leverandør registeret, så innloggede medlemmer kan betale med lagret kort og gjester tokeniserer ett nytt kort. Kontrolleren speiler `DonateController`'s leverandør særheter (Kingdom Funding `pm-{id}` betalings-metode ids, Stripe SCA `requires_action` respons returnert til klienten uten å registrere ein betaling). Ein vellykket lading skriv ein `registrationPayments` rad, bump `amountPaid`, og bekrefter registreringen. **Refunsjoner er ikke implementert** — en avbrutt betalt registrering holder sin betalings rader og noe som helst refusjon blir håndtert ut-av-bånd i gateway instrumentbrettet.
+Tokenisering skjer i nettleseren nøyaktig som for donasjoner (se [Givertjeneste](./giving)) — veiviseren gjenbruker apphelpers betalingsleverandørregister, slik at innloggede medlemmer kan betale med lagrede kort og gjester tokeniserer et nytt kort. Controlleren speiler `DonateController`s leverandøregenheter (Kingdom Fundings `pm-{id}`-betalingsmetode-id-er, Stripe SCA `requires_action`-svar returnert til klienten uten å registrere en betaling). En vellykket belastning skriver en `registrationPayments`-rad, øker `amountPaid`, og bekrefter påmeldingen. **Refusjoner er ikke implementert** — en kansellert betalt påmelding beholder sine betalingsrader, og eventuell refusjon håndteres utenfor systemet i gateway-dashbordet.
 
-Begge innsettepunkter rute gjennom samme kode sti: `register` (betaling på påmelding) og `pay` (saldo betaling / venteliste fullføring).
+Begge inngangspunktene ruter gjennom samme kodesti: `register` (betal ved påmelding) og `pay` (saldobetaling / fullføring av venteliste).
 
-## Venteliste livssyklus
+## Ventelistens livssyklus
 
-Når arrangement er fullt og arrangement sin `waitlistEnabled` flagg er på, `register` lagrer partiet som `waitlisted` (hoppes kapasitets sjekk) og sender normal bekreftelse e-post merket som ein venteliste spot. Promotering skjer tre måter — `cancel`, `delete`, og stab `promote` endepunkt — alle trakt inn i `RegistrationRepo.promoteFromWaitlist`, som plukker eldste venteliste rad og flip det atomisk:
+Når arrangementet er fullt og arrangementets `waitlistEnabled`-flagg er på, lagrer `register` gruppen som `waitlisted` (og hopper over kapasitetssjekker), og sender den vanlige bekreftelses-e-posten merket som en ventelisteplass. Forfremmelse skjer på tre måter — `cancel`, `delete`, og ansattendepunktet `promote` — som alle sendes videre til `RegistrationRepo.promoteFromWaitlist`, som velger den eldste ventelisterowen og vipper den atomisk:
 
 ```sql
 UPDATE registrations SET status='pending', waitlistNotifiedDate=NOW()
   WHERE id=? AND status='waitlisted'
-    AND (…aktiv antall for arrangement…) < ?
+    AND (…aktivt antall for arrangementet…) < ?
 ```
 
-Den `status='waitlisted'` vakt betyr samtidig promoterering kan ikke dobbel-promot ein rad, og kapasitets underforespørsel betyr en promotering kan ikke oversalg. Promoverte rader lande på `pending` — ikke `confirmed` — fordi ein saldo kanskje fortsatt skyldes; `RegistrationHelper.sendWaitlistAvailabilityEmail` forteller registrant deres spot åpne og, når `totalAmount − amountPaid > 0`, lenke til kompletter-betaling side. Betaling (eller å ha keine saldo) bekrefter dem.
+`status='waitlisted'`-vakten betyr at samtidige forfremmelser ikke kan dobbeltforfremme en rad, og kapasitetsunderspørringen betyr at en forfremmelse ikke kan overselge. Forfremmede rader lander på `pending` — ikke `confirmed` — fordi det kan gjenstå en saldo; `RegistrationHelper.sendWaitlistAvailabilityEmail` forteller den påmeldte at plassen deres åpnet seg, og lenker til fullfør-betaling-siden når `totalAmount − amountPaid > 0`. Å betale (eller å ikke ha noen saldo) bekrefter dem.
 
 :::info
-Ein kapasitets raising gjør ikke auto-promot av seg selv — stab bruk roster promotering handling etter å heve kapasitet. Avbrytelse og sletting promot automatisk.
+En kapasitetsøkning forfremmer ikke automatisk av seg selv — ansatte bruker deltakerlistens Forfrem-handling etter å ha økt kapasiteten. Kanselleringer og slettinger forfremmer automatisk.
 :::
 
-## Klient flater
+## Klientflater
 
-- **B1App tryllstav** — en delt krok, `B1App/src/components/registration/useEventRegistration.ts`, kjør begge nettsted komponent (`components/registration/EventRegister.tsx`) og mobil portal skjerm (`app/[sdSlug]/mobile/components/screens/EventRegisterPage.tsx`) gjennom trinn `info → members → selections → questions → payment → confirm` (midten trinn gjengivelse bare når arrangement har valg, ein vedlagt forma, eller ein nonzero total). Info/medlemmer trinn vise per-deltager-type velgere med live gjenværende-kapasitet og solgt-ut tilstand; betaling (`RegistrationPaymentForm.tsx`) vise orden oppsummering, rabatt-kode innsetting, og — for innloggede medlemmer — lagret betalings metoder via apphelper leverandør registrering, med gjester tokenisering ein nytt kort. Den **registreringer** mobil skjerm (`screens/RegistrationsPage.tsx`) er mine registreringer: status, saldo skyldig, Fullfør betaling (`POST /:id/pay`), Redigering (`PUT /:id` — kontakt, medlem typer, valg mengder), og Avbryt.
-- **B1Admin innstillinger** — `B1Admin/src/registrations/components/RegistrationSettingsEdit.tsx` legger til Aktiver venteliste bryter pluss akkordioner for deltager typer, valg, og rabatt koder (`RegistrationTypesEdit.tsx` / `RegistrationSelectionsEdit.tsx` / `RegistrationCouponsEdit.tsx`), alle CRUD mot `/types`, `/selections`, `/coupons` rutene.
-- **B1Admin liste** — `B1Admin/src/registrations/RegistrationDetailsPage.tsx`: per-deltager type kolonne, betalt/totalt kolonne med saldo chip, per-type antall chip, ein betalings detalj dialog (`RegistrationDetailDialog.tsx`, fra `GET /payments/:registrationId`), venteliste promot rad handling, og CSV eksport inkludert deltager typer, valg, betalt/totalt/saldo, og spørsmål svar.
+- **B1App-veiviser** — én delt hook, `B1App/src/components/registration/useEventRegistration.ts`, driver både nettstedskomponenten (`components/registration/EventRegister.tsx`) og mobilportal-skjermen (`app/[sdSlug]/mobile/components/screens/EventRegisterPage.tsx`) gjennom stegene `info → members → selections → questions → payment → confirm` (de midterste stegene gjengis bare når arrangementet har valg, et tilknyttet skjema, eller en totalsum som ikke er null). Info-/medlemssteg viser velgere per deltakertype med sanntids gjenværende kapasitet og utsolgt-tilstander; betaling (`RegistrationPaymentForm.tsx`) viser ordresammendrag, rabattkode-inntasting, og — for innloggede medlemmer — lagrede betalingsmetoder via apphelper-leverandørregisteret, med gjester som tokeniserer et nytt kort. Mobilskjermen **Påmeldinger** (`screens/RegistrationsPage.tsx`) er Mine påmeldinger: status, utestående saldo, Fullfør betaling (`POST /:id/pay`), Rediger (`PUT /:id` — kontakt, medlemstyper, valgantall), og Kanseller.
+- **B1Admin-innstillinger** — `B1Admin/src/registrations/components/RegistrationSettingsEdit.tsx` legger til bryteren Aktiver venteliste pluss trekkspill for Deltakertyper, Valg, og Rabattkoder (`RegistrationTypesEdit.tsx` / `RegistrationSelectionsEdit.tsx` / `RegistrationCouponsEdit.tsx`), alle med CRUD mot rutene `/types`, `/selections`, `/coupons`.
+- **B1Admin-deltakerliste** — `B1Admin/src/registrations/RegistrationDetailsPage.tsx`: kolonne for type per deltaker, kolonne Betalt/Totalt med saldo-chip, antallschip per type, en betalingsdetalj-dialog (`RegistrationDetailDialog.tsx`, fra `GET /payments/:registrationId`), radhandlingen Forfrem for venteliste, og CSV-eksport inkludert deltakertyper, valg, betalt/totalt/saldo, og spørsmålssvar.
 
-Kors-modul oppslag (løsning eller opprettelse gjest person, lasting kirke for e-poster) går gjennom `getMembershipModuleGateway()` — innhold modulen aldri leser medlemskaps tabeller direkte.
+Oppslag på tvers av moduler (å løse eller opprette gjesteperson, laste kirken for e-poster) går gjennom `getMembershipModuleGateway()` — content-modulen leser aldri medlemskapstabeller direkte.
 
 ## Relaterte sider
 
-- [Donering](./giving) — gateway abstraksjon, leverandør registrering, og tokenisering modell denne funksjon gjenbruk
-- [Innhold endepunkter](../api/endpoints/content) — innhold modulen REST flate
-- [Webhooks](../api/webhooks) — `registration.created` hendelsen
-- [Modul struktur](../api/module-structure) — hvordan innhold modulen er organisert server-side
+- [Givertjeneste](./giving) — gateway-abstraksjonen, leverandørregisteret, og tokeniseringsmodellen denne funksjonen gjenbruker
+- [Content-endepunkter](../api/endpoints/content) — content-modulens REST-flate
+- [Webhooker](../api/webhooks) — hendelsen `registration.created`
+- [Modulstruktur](../api/module-structure) — hvordan content-modulen er organisert server-side

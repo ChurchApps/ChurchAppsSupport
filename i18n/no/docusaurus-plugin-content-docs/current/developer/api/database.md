@@ -6,48 +6,48 @@ title: "Database"
 
 <div class="article-intro">
 
-The ChurchApps API uses a **database-per-module** architecture. Each of the six data modules has its own MySQL database with an independent connection pool, providing clear data boundaries while keeping everything within a single deployment.
+ChurchApps API-et bruker en **database-per-modul**-arkitektur. Hver av de seks datamodulene har sin egen MySQL-database med en uavhengig tilkoblingspool, noe som gir tydelige datagrenser samtidig som alt holdes innenfor én enkelt distribusjon.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Install **MySQL 8.0+** -- see [Prerequisites](../setup/prerequisites)
-- Configure database connection strings in your `.env` file -- see [Environment Variables](../setup/environment-variables)
+- Installer **MySQL 8.0+** -- se [Forutsetninger](../setup/prerequisites)
+- Konfigurer databasetilkoblingsstrenger i `.env`-filen din -- se [Miljøvariabler](../setup/environment-variables)
 
 </div>
 
-## Architecture Overview
+## Arkitekturoversikt
 
 ```
 Api
-├── membership_db   ← People, groups, permissions
-├── attendance_db   ← Services, sessions, records
-├── content_db      ← Pages, sections, elements
-├── giving_db       ← Donations, funds, payments
-├── messaging_db    ← Conversations, notifications
-└── doing_db        ← Tasks, plans, assignments
+├── membership_db   ← Personer, grupper, tillatelser
+├── attendance_db   ← Gudstjenester, sesjoner, oppføringer
+├── content_db      ← Sider, seksjoner, elementer
+├── giving_db       ← Donasjoner, fond, betalinger
+├── messaging_db    ← Samtaler, varsler
+└── doing_db        ← Oppgaver, planer, tildelinger
 ```
 
-### Key Design Decisions
+### Sentrale designvalg
 
-- **One database per module** -- Each module maintains its own MySQL database with a dedicated connection pool (managed by `KyselyPool`). This keeps modules decoupled and allows independent schema evolution.
-- **Exclusive ownership** -- A module's tables are read and written only by that module's own code. When another module needs the data, it calls the owning module's gateway rather than querying the tables itself -- see [Cross-Module Communication](./module-structure#cross-module-communication).
-- **Repository pattern without an ORM** -- All data access goes through repository classes that build typed SQL with the Kysely query builder against the module's schema. This gives full control over query performance and behavior.
-- **Multi-tenant by design** -- Every query is scoped by `churchId`. All tables include a `churchId` column, and the repository layer enforces tenant isolation automatically.
+- **Én database per modul** -- Hver modul opprettholder sin egen MySQL-database med en dedikert tilkoblingspool (administrert av `KyselyPool`). Dette holder modulene frikoblet og muliggjør uavhengig skjemautvikling.
+- **Eksklusivt eierskap** -- En moduls tabeller leses og skrives kun av modulens egen kode. Når en annen modul trenger dataene, kaller den den eiende modulens gateway i stedet for å spørre tabellene direkte -- se [Kommunikasjon på tvers av moduler](./module-structure#cross-module-communication).
+- **Repository-mønster uten ORM** -- All datatilgang går gjennom repository-klasser som bygger typet SQL med Kysely-spørringsbyggeren mot modulens skjema. Dette gir full kontroll over spørringsytelse og -atferd.
+- **Multi-tenant per design** -- Hver spørring er avgrenset av `churchId`. Alle tabeller inkluderer en `churchId`-kolonne, og repository-laget håndhever tenant-isolasjon automatisk.
 
-## Connection Strings
+## Tilkoblingsstrenger
 
-Each module's database connection is configured in `.env` using standard MySQL connection string format:
+Hver moduls databasetilkobling konfigureres i `.env` ved hjelp av standard MySQL-tilkoblingsstrengformat:
 
 ```
 mysql://user:password@host:port/database
 ```
 
-For example, a local development setup might look like:
+For eksempel kan et lokalt utviklingsoppsett se slik ut:
 
-Each module reads its connection from an environment variable named `<MODULE>_CONNECTION_STRING`:
+Hver modul leser tilkoblingen sin fra en miljøvariabel kalt `<MODULE>_CONNECTION_STRING`:
 
 ```env
 MEMBERSHIP_CONNECTION_STRING=mysql://root:password@localhost:3306/churchapps_membership
@@ -59,12 +59,12 @@ DOING_CONNECTION_STRING=mysql://root:password@localhost:3306/churchapps_doing
 ```
 
 :::info
-In production, connection strings are stored in AWS SSM Parameter Store and read by the `Environment` class at startup.
+I produksjon lagres tilkoblingsstrenger i AWS SSM Parameter Store og leses av `Environment`-klassen ved oppstart.
 :::
 
-## Schema Scripts
+## Skjemaskript
 
-Table schemas are defined as Kysely migrations in the `tools/migrations/` directory, organized by module:
+Tabellskjemaer defineres som Kysely-migrasjoner i `tools/migrations/`-katalogen, organisert etter modul:
 
 ```
 tools/migrations/
@@ -76,31 +76,31 @@ tools/migrations/
 └── doing/
 ```
 
-Migrations define table creation, indexes, and schema changes. The `tools/dbScripts/` directory holds demo and seed data that can be loaded on top of the schema.
+Migrasjoner definerer tabellopprettelse, indekser og skjemaendringer. `tools/dbScripts/`-katalogen inneholder demo- og frødata som kan lastes oppå skjemaet.
 
-## Database Initialization
+## Databaseinitialisering
 
-### Initialize all databases
+### Initialiser alle databaser
 
 ```bash
 npm run initdb
 ```
 
-This creates all six databases and runs the migrations for each one.
+Dette oppretter alle seks databasene og kjører migrasjonene for hver av dem.
 
-### Initialize a single module
+### Initialiser en enkelt modul
 
 ```bash
 npm run initdb -- --module=membership
 ```
 
 :::tip
-When working on a specific module, you can re-initialize just that module's database without affecting the others.
+Når du jobber med en spesifikk modul, kan du re-initialisere bare den modulens database uten å påvirke de andre.
 :::
 
-## Data Access Pattern
+## Datatilgangsmønster
 
-Repositories build queries with the Kysely query builder against the module's typed database schema, obtained through the module's `getDb()` function. A typical repository method looks like this:
+Repositories bygger spørringer med Kysely-spørringsbyggeren mot modulens typede databaseskjema, hentet gjennom modulens `getDb()`-funksjon. En typisk repository-metode ser slik ut:
 
 ```typescript
 public async loadAll(churchId: string) {
@@ -110,7 +110,7 @@ public async loadAll(churchId: string) {
 }
 ```
 
-Repositories are obtained via `RepoManager`:
+Repositories hentes via `RepoManager`:
 
 ```typescript
 const repos = await RepoManager.getRepos<Repos>("membership");
@@ -118,16 +118,16 @@ const people = await repos.person.loadAll(churchId);
 ```
 
 :::warning
-Always include `churchId` in your queries to maintain multi-tenant isolation. Never query across tenants unless you have a specific, authorized reason to do so.
+Inkluder alltid `churchId` i spørringene dine for å opprettholde multi-tenant-isolasjon. Aldri spør på tvers av tenanter med mindre du har en spesifikk, autorisert grunn til å gjøre det.
 :::
 
-## Cross-Module References
+## Referanser på tvers av moduler
 
-Because each module's data lives in a separate database, there are no foreign keys or SQL joins across module boundaries. A record that relates to another module's data stores that record's id -- for example, a donation in the giving database carries the `personId` of a person in the membership database -- and any cross-module composition happens in application code.
+Fordi hver moduls data ligger i en separat database, finnes det ingen fremmednøkler eller SQL-joins på tvers av modulgrenser. En oppføring som relaterer seg til en annen moduls data, lagrer den oppføringens id -- for eksempel har en donasjon i giving-databasen `personId` til en person i membership-databasen -- og all sammensetning på tvers av moduler skjer i applikasjonskoden.
 
-This constraint is what makes the module boundaries real: each schema can evolve independently, a module's database can be moved to its own server, and a module could even be extracted into a standalone service without untangling shared tables or cross-database queries.
+Denne begrensningen er det som gjør modulgrensene reelle: hvert skjema kan utvikle seg uavhengig, en moduls database kan flyttes til sin egen server, og en modul kan til og med skilles ut som en frittstående tjeneste uten å måtte løse opp delte tabeller eller spørringer på tvers av databaser.
 
 ## Relaterte artikler
 
-- **[Module Structure](./module-structure)** -- How controllers and repositories are organized within each module
-- **[Local API Setup](./local-setup)** -- Full step-by-step setup guide
+- **[Modulstruktur](./module-structure)** -- Hvordan kontrollere og repositories er organisert innenfor hver modul
+- **[Lokalt API-oppsett](./local-setup)** -- Full trinnvis oppsettsveiledning

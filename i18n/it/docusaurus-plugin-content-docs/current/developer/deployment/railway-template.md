@@ -234,6 +234,7 @@ Se riscontri qualcosa non in questo elenco, apri un problema su [github.com/Chur
 
 ## Articoli correlati
 
+- **[Self-Hosting with Docker](./docker)** — Lo stesso stack sul tuo hardware o VPS
 - **[Initial Setup](../../getting-started/initial-setup)** — Primi passi dopo la creazione della tua chiesa
 - **[Website Initial Setup](../../b1-admin/website/initial-setup)** — Configura il sito pubblico della tua chiesa
 - **[Giving Settings](../../b1-admin/donations/online-giving-setup)** — Collega Stripe o PayPal

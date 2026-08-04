@@ -18,11 +18,15 @@ The Website Pages view is your central hub for creating, editing, and organizing
 
 </div>
 
+:::info
+If your church has more than one website (for example, separate sites per campus), use the site switcher at the top of the Website Pages view to jump between them. Each site has its own pages, navigation, and [appearance](appearance) settings.
+:::
+
 ## Understanding Page Types
 
 The **Pages** table lists every page on your site along with its status:
 
-- **Generated** -- Pages that were automatically created by the system based on your church's data (for example, a Groups page or Sermons page). These pages update themselves as your data changes.
+- **Generated** -- Pages that were automatically created by the system based on your church's data (for example, a Groups page, a Sermons page, or an individual page for each sermon in your library). These pages update themselves as your data changes.
 - **Custom** -- Pages that you created yourself with your own content and layout.
 
 You can convert any auto-generated page into a custom page if you want full control over its content and design.
@@ -38,6 +42,15 @@ You can convert any auto-generated page into a custom page if you want full cont
 :::tip
 For your home page, set the URL path to just `/`. For all other pages, use a descriptive path like `/about` or `/contact`.
 :::
+
+### Page Settings
+
+Open **Page Settings** on any page to configure:
+
+- **Title and URL Path** -- The page name and its address on your site.
+- **Visibility** -- Choose who can see the page: everyone, members only, staff only, or members of specific groups. This is a quick way to gate a private page (like a staff resource page) without a separate password.
+- **Meta Description** -- A short summary shown in search engine results and social media link previews.
+- **Redirects** -- Point an old URL path to this page, so links and bookmarks to a retired page keep working.
 
 ## Managing Navigation
 

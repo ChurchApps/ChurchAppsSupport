@@ -132,12 +132,13 @@ GET /content/pages/abc-church-id/tree?url=/about
 
 Базовый путь: `/content/posts`
 
-Сообщения блога — это метаданные над обычными страницами: `pageId` каждого сообщения ссылается на страницу, содержащую тело, и строка сообщения добавляет `title`, `slug` (уникально на церковь), `excerpt`, `authorId`, `photoUrl`, `publishDate`, `category` и `tags`. Сообщение опубликовано, когда `publishDate` установлена и находится в прошлом. См. [Архитектура конструктора веб-сайта](../../architecture/website-builder#blog-posts-over-pages).
+Сообщения блога — самостоятельные строки: `title`, `slug` (уникален в пределах церкви), `excerpt`, `content` (тело в формате markdown), `authorId`, `photoUrl`, `publishDate`, `category` и `tags`. Сообщение считается опубликованным, когда `publishDate` установлена и находится в прошлом. Конечные точки чтения дополняют каждое сообщение полем `authorName`, определённым по `authorId`. См. [Архитектура конструктора веб-сайта](../../architecture/website-builder#blog).
 
 | Метод | Путь | Аут. | Разрешение | Описание |
 |--------|------|------|------------|-------------|
 | GET | `/public/:churchId?category=&tag=&page=&pageSize=` | Public | — | Список опубликованных сообщений, разбит на страницы (макс. 50 на странице) |
-| GET | `/public/:churchId/slug/:slug` | Public | — | Получить метаданные опубликованного сообщения по slug |
+| GET | `/public/:churchId/categories` | Public | — | Уникальные категории среди опубликованных сообщений |
+| GET | `/public/:churchId/slug/:slug` | Public | — | Получить опубликованное сообщение по slug |
 | GET | `/rss/:churchId?siteUrl=` | Public | — | RSS 2.0 лента опубликованных сообщений (ссылки построены как `{siteUrl}/blog/{slug}`) |
 | GET | `/:id` | JWT | — | Получить сообщение по ID |
 | GET | `/` | JWT | — | Список всех сообщений для церкви |

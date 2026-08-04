@@ -12,7 +12,7 @@ El módulo de Membership gestiona personas, iglesias, grupos, hogares, roles, pe
 
 **Ruta base:** `/membership`
 
-## People
+## Personas
 
 Ruta base: `/membership/people`
 
@@ -67,7 +67,7 @@ Authorization: Bearer <token>
 [{ "firstName": "Jane", "lastName": "Doe", "contactInfo": { "email": "jane@example.com" } }]
 ```
 
-## Users
+## Usuarios
 
 Ruta base: `/membership/users`
 
@@ -88,7 +88,7 @@ Consulta [Autenticación y Permisos](./authentication) para puntos finales de in
 | GET | `/search?term=` | JWT | Server.Admin | Buscar todos los usuarios por nombre/correo |
 | DELETE | `/` | JWT | — | Eliminar la cuenta del usuario actual |
 
-## Churches
+## Iglesias
 
 Ruta base: `/membership/churches`
 
@@ -109,7 +109,7 @@ Ruta base: `/membership/churches`
 | POST | `/byIds` | Público | — | Cargar múltiples iglesias por IDs |
 | DELETE | `/deleteAbandoned` | JWT | Server.Admin | Eliminar iglesias abandonadas por 7+ días |
 
-## Groups
+## Grupos
 
 Ruta base: `/membership/groups`
 
@@ -130,7 +130,7 @@ Extiende CRUD estándar (GET `/`, GET `/:id` de la clase base).
 | POST | `/` | JWT | Groups.Edit | Crear o actualizar grupos (genera slug automáticamente) |
 | DELETE | `/:id` | JWT | Groups.Edit | Eliminar un grupo (también elimina equipos hijos para grupos de ministerio) |
 
-## Group Members
+## Miembros de Grupo
 
 Ruta base: `/membership/groupmembers`
 
@@ -147,7 +147,7 @@ Extiende CRUD estándar (GET `/:id`, DELETE `/:id` de la clase base).
 | POST | `/` | JWT | GroupMembers.Edit | Agregar o actualizar miembros de grupo |
 | DELETE | `/:id` | JWT | GroupMembers.View | Quitar un miembro de grupo |
 
-## Households
+## Hogares
 
 Ruta base: `/membership/households`
 
@@ -171,7 +171,7 @@ Ruta base: `/membership/roles`
 | POST | `/` | JWT | Roles.Edit | Crear o actualizar roles |
 | DELETE | `/:id` | JWT | Roles.Edit | Eliminar un rol (también elimina sus permisos y miembros) |
 
-## Role Members
+## Miembros de Rol
 
 Ruta base: `/membership/rolemembers`
 
@@ -182,7 +182,7 @@ Ruta base: `/membership/rolemembers`
 | DELETE | `/:id` | JWT | Roles.View | Quitar un miembro de rol |
 | DELETE | `/self/:churchId/:userId` | JWT | — | Quitarte a ti mismo de una iglesia |
 
-## Role Permissions
+## Permisos de Rol
 
 Ruta base: `/membership/rolepermissions`
 
@@ -192,7 +192,7 @@ Ruta base: `/membership/rolepermissions`
 | POST | `/` | JWT | Roles.Edit | Crear o actualizar permisos de rol |
 | DELETE | `/:id` | JWT | Roles.Edit | Eliminar un permiso de rol |
 
-## Permissions
+## Permisos
 
 Ruta base: `/membership/permissions`
 
@@ -200,7 +200,7 @@ Ruta base: `/membership/permissions`
 |--------|------|------|---------|-------------|
 | GET | `/` | JWT | — | Obtener la lista completa de permisos disponibles |
 
-## Forms
+## Formularios
 
 Ruta base: `/membership/forms`
 
@@ -213,7 +213,7 @@ Ruta base: `/membership/forms`
 | POST | `/` | JWT | Forms.Admin o Forms.Edit | Crear o actualizar formularios |
 | DELETE | `/:id` | JWT | Acceso al formulario | Eliminar un formulario |
 
-## Form Submissions
+## Envíos de Formulario
 
 Ruta base: `/membership/formsubmissions`
 
@@ -225,7 +225,7 @@ Ruta base: `/membership/formsubmissions`
 | POST | `/` | JWT | — | Enviar respuestas de formulario (maneja formularios restringidos/no restringidos, envía notificaciones por correo). Cuando el formulario tiene `autoCreatePerson`, encuentra o crea una persona Guest por correo y vincula el envío; cuando `followUpSubject`/`followUpBody` están establecidos, envía un correo de seguimiento con plantilla al remitente |
 | DELETE | `/:id` | JWT | Forms.Admin o Forms.Edit | Eliminar un envío y sus respuestas |
 
-## Questions
+## Preguntas
 
 Ruta base: `/membership/questions`
 
@@ -239,7 +239,7 @@ Ruta base: `/membership/questions`
 | POST | `/` | JWT | Acceso al formulario | Crear o actualizar preguntas (asigna orden de clasificación automáticamente) |
 | DELETE | `/:id?formId=` | JWT | Acceso al formulario | Eliminar una pregunta |
 
-## Answers
+## Respuestas
 
 Ruta base: `/membership/answers`
 
@@ -248,7 +248,7 @@ Ruta base: `/membership/answers`
 | GET | `/` | JWT | Forms.Admin o Forms.Edit | Enumera respuestas. Filtra por `?formSubmissionId=` |
 | POST | `/` | JWT | Forms.Admin o Forms.Edit | Crear o actualizar respuestas |
 
-## Member Permissions
+## Permisos de Miembro
 
 Ruta base: `/membership/memberpermissions`
 
@@ -264,7 +264,7 @@ Controla el acceso por miembro a formularios específicos.
 | DELETE | `/:id?formId=` | JWT | Acceso al formulario | Eliminar un permiso de miembro |
 | DELETE | `/member/:id?formId=` | JWT | Acceso al formulario | Eliminar todos los permisos para un miembro en un formulario |
 
-## Settings
+## Configuración
 
 Ruta base: `/membership/settings`
 
@@ -274,7 +274,7 @@ Ruta base: `/membership/settings`
 | GET | `/public/:churchId` | Público | — | Obtener configuración pública de una iglesia |
 | POST | `/` | JWT | Settings.Edit | Guardar configuración (admite carga de imagen en base64) |
 
-## Domains
+## Dominios
 
 Ruta base: `/membership/domains`
 
@@ -290,7 +290,7 @@ Extiende CRUD estándar (GET `/:id`, GET `/`, DELETE `/:id` de la clase base).
 | POST | `/` | JWT | Settings.Edit | Crear o actualizar dominios (activa la actualización de Caddy) |
 | DELETE | `/:id` | JWT | Settings.Edit | Eliminar un dominio |
 
-## User Church
+## Usuario-Iglesia
 
 Ruta base: `/membership/userchurch`
 
@@ -305,7 +305,7 @@ Gestiona la asociación entre usuarios e iglesias.
 | PATCH | `/:userId` | JWT | — | Actualizar la hora del último acceso y registrar el acceso |
 | DELETE | `/record/:userId/:churchId/:personId` | JWT | — | Eliminar un registro usuario-iglesia |
 
-## Visibility Preferences
+## Preferencias de Visibilidad
 
 Ruta base: `/membership/visibilityPreferences`
 
@@ -314,7 +314,7 @@ Ruta base: `/membership/visibilityPreferences`
 | GET | `/my` | JWT | — | Obtener las preferencias de visibilidad del usuario actual |
 | POST | `/` | JWT | — | Guardar preferencias de visibilidad (visibilidad de dirección, teléfono, correo) |
 
-## Query
+## Consulta
 
 Ruta base: `/membership/query`
 
@@ -322,7 +322,7 @@ Ruta base: `/membership/query`
 |--------|------|------|---------|-------------|
 | POST | `/members` | JWT | — | Búsqueda de miembros en lenguaje natural usando IA. Cuerpo: `{ text, subDomain, siteUrl }` |
 
-## Client Errors
+## Errores de Cliente
 
 Ruta base: `/membership/clientErrors`
 

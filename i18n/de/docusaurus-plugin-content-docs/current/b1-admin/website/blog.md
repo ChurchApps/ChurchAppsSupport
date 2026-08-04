@@ -6,63 +6,63 @@ title: "Blog"
 
 <div class="article-intro">
 
-Die Seite "Blog" ermöglicht es dir, Nachrichten, Updates und Andachten auf deiner Kirchenwebsite zu veröffentlichen. Posts erscheinen in einer Kartenliste bei `/blog`, auf ihrer eigenen URL und in einem RSS-Feed, dem andere Tools (wie Zapier) neue Posts Überwachen können.
+Auf der Blog-Seite können Sie Neuigkeiten, Updates und Andachten auf der Website Ihrer Gemeinde veröffentlichen. Beiträge erscheinen in einer Kartenliste unter `/blog`, unter ihrer eigenen URL und in einem RSS-Feed, den andere Tools (wie Zapier) auf neue Beiträge überwachen können.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor du beginnst</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Vollführe die [Anfangseinrichtung](initial-setup) für deine Website
-- Füge einen Navigations-Link zu `/blog` von [Seiten verwalten](managing-pages) hinzu, wenn du möchtest, dass Besucher deinen Blog vom Menü aus finden
+- Schließen Sie die [Ersteinrichtung](initial-setup) Ihrer Website ab
+- Fügen Sie über [Seiten verwalten](managing-pages) einen Navigationslink zu `/blog` hinzu, wenn Besucher Ihren Blog über das Menü finden sollen
 
 </div>
 
-## Zugriff auf den Blog
+## Auf den Blog zugreifen
 
-1. Klicke in B1 Admin auf **Website** im linken Menü.
-2. Klicke auf den Reiter **Blog** oben in der Ansicht "Website-Seiten".
-3. Die Seite "Blog" listet jeden Post zusammen mit seinem Zustand und Veröffentlichungsdatum auf.
+1. Klicken Sie in B1 Admin im linken Menü auf **Website**.
+2. Klicken Sie oben in der Ansicht der Website-Seiten auf den Tab **Blog**.
+3. Die Blog-Seite listet jeden Beitrag zusammen mit seinem Status und Veröffentlichungsdatum auf.
 
-## Hinzufügen eines Posts
+## Einen Beitrag hinzufügen
 
-1. Klicke auf **Post hinzufügen** in der oberen rechten Ecke.
-2. Gib einen **Titel** ein. Ein URL-freundlicher Slug wird dir automatisch generiert, während du gibst – du kannst ihn direkt bearbeiten, wenn du eine andere Adresse möchtest.
-3. Füge einen **Excerpt** hinzu – eine kurze Zusammenfassung, die in der Post-Listing, Meta-Beschreibungen und RSS-Feed angezeigt wird. Wenn du ihn blank lässt, wird einer automatisch aus dem Anfang deines Post-Inhalts generiert.
-4. Schreibe den Post-Body im **Inhalts**-Editor mit Markdown. Klicke auf **Vorschau**, um zu sehen, wie der formatierte Post aussieht.
-5. Wähle eine **Kategorie** (wähle eine bestehende aus oder gib eine neue ein) und optionale kommagetrennte **Tags**.
-6. Klicke auf **Bild auswählen**, um ein Foto aus deiner [Dateien](files)-Galerie auszuwählen. Verwende ein 16:9-Bild für die beste Anpassung in der Post-Kopfzeile und Listing-Karten.
-7. Stelle den **Autor** ein – es ist standardmäßig dich, aber du kannst nach einer beliebigen Person in deiner Datenbank suchen und auswählen.
-8. Schalte **Veröffentlicht** ein und stelle ein **Veröffentlichungsdatum** ein, wenn du den Post öffentlich machen möchtest. Lasse ihn aus, um den Post als Entwurf zu speichern.
+1. Klicken Sie oben rechts auf **Beitrag hinzufügen**.
+2. Geben Sie einen **Titel** ein. Ein URL-freundlicher Slug wird beim Tippen automatisch für Sie generiert — Sie können ihn direkt bearbeiten, wenn Sie eine andere Adresse möchten.
+3. Fügen Sie einen **Auszug** hinzu -- eine kurze Zusammenfassung, die in der Beitragsliste, in Meta-Beschreibungen und im RSS-Feed angezeigt wird. Wenn Sie ihn leer lassen, wird automatisch einer aus dem Anfang Ihres Beitragsinhalts generiert.
+4. Verfassen Sie den Beitragstext im **Inhalt**-Editor mit Markdown. Klicken Sie auf **Vorschau**, um zu sehen, wie der formatierte Beitrag aussehen wird.
+5. Wählen Sie eine **Kategorie** (eine vorhandene auswählen oder eine neue eingeben) und optionale, kommagetrennte **Tags**.
+6. Klicken Sie auf **Bild auswählen**, um ein Foto aus Ihrer [Dateien](files)-Galerie auszuwählen, oder laden Sie ein neues hoch. Hochgeladene Fotos öffnen sich in einem integrierten Zuschneide-Werkzeug, das auf ein Verhältnis von 16:9 fixiert ist, sodass Sie jedes Foto passend für den Beitragskopf und die Listenkarten zuschneiden können.
+7. Legen Sie den **Autor** fest -- standardmäßig sind Sie es, aber Sie können nach jeder Person in Ihrer Datenbank suchen und sie auswählen.
+8. Aktivieren Sie **Veröffentlicht** und legen Sie ein **Veröffentlichungsdatum** fest, wenn Sie bereit sind, den Beitrag öffentlich zu machen. Lassen Sie es deaktiviert, um den Beitrag als Entwurf zu speichern.
 
 :::tip
-Stelle ein **Veröffentlichungsdatum** in der Zukunft ein, um einen Post zu planen. Er bleibt vor Besuchern verborgen und zeigt ein **Geplant**-Chip in der Blog-Liste, bis dieses Datum eintrifft.
+Legen Sie ein **Veröffentlichungsdatum** in der Zukunft fest, um einen Beitrag zu planen. Er bleibt für Besucher verborgen und zeigt in der Blog-Liste einen **Geplant**-Chip an, bis dieses Datum erreicht ist.
 :::
 
-## Post-Zustände
+## Beitragsstatus
 
-Jeder Post in der Liste zeigt einen von drei Zuständen:
+Jeder Beitrag in der Liste zeigt einen von drei Zuständen:
 
-- **Entwurf** – Nicht veröffentlicht. Nur im Admin sichtbar.
-- **Geplant** – Veröffentlicht ist an, aber das Veröffentlichungsdatum ist in der Zukunft.
-- **Veröffentlicht** – Live auf deiner Website und enthalten im RSS-Feed.
+- **Entwurf** -- Nicht veröffentlicht. Nur im Admin sichtbar.
+- **Geplant** -- Veröffentlicht ist aktiviert, aber das Veröffentlichungsdatum liegt in der Zukunft.
+- **Veröffentlicht** -- Live auf Ihrer Website und im RSS-Feed enthalten.
 
-## Bearbeiten, Vorschau und Löschen von Posts
+## Beiträge bearbeiten, in der Vorschau ansehen und löschen
 
-- Klicke auf das Symbol **Bearbeiten** neben einem Post, um Änderungen vorzunehmen.
-- Klicke auf das Symbol **Anzeigen** (sichtbar auf veröffentlichten Posts), um den Live-Post auf deiner Website in einem neuen Tab zu öffnen.
-- Klicke auf das Symbol **Löschen**, um einen Post dauerhaft zu entfernen.
+- Klicken Sie neben einem Beitrag auf das Symbol **Bearbeiten**, um Änderungen vorzunehmen.
+- Klicken Sie auf das Symbol **Ansehen** (bei veröffentlichten Beiträgen sichtbar), um den Live-Beitrag auf Ihrer Website in einem neuen Tab zu öffnen.
+- Klicken Sie auf das Symbol **Löschen**, um einen Beitrag dauerhaft zu entfernen.
 
-## Wie Besucher deinen Blog sehen
+## Wie Besucher Ihren Blog sehen
 
-Veröffentlichte Posts erscheinen bei `{yoursite}/blog`, mit einem Kategoriefilter und jedem Posts Byline und Foto. Individuelle Posts leben bei `{yoursite}/blog/{slug}` und enthalten verwandte Posts aus der gleichen Kategorie. Die Blog-Seite veröffentlicht auch einen RSS-Feed, der von Feed-Readern und Automatisierungstools wie Zapier automatisch erkannt wird.
+Veröffentlichte Beiträge erscheinen unter `{ihresite}/blog`, 10 pro Seite mit Links **Älter**/**Neuer** zum Durchblättern Ihres Archivs, zusammen mit einem Kategoriefilter sowie Autorenzeile und Foto jedes Beitrags. Tags werden ebenfalls als anklickbare Chips dargestellt, sodass Besucher die Liste auf dieselbe Weise nach Tag filtern können. Einzelne Beiträge befinden sich unter `{ihresite}/blog/{slug}` und enthalten verwandte Beiträge aus derselben Kategorie. Die Blog-Seite veröffentlicht außerdem einen RSS-Feed, der von Feed-Readern und Automatisierungstools wie Zapier automatisch erkannt wird.
 
 :::info
-Blog-Posts sind ein separater Inhaltstyp von regulären Website-Seiten – sie werden nicht im [Page-Editor](page-editor) erstellt und erscheinen nicht in der Liste "Seiten". Dies hält das Blog-Schreiben schnell und konzentriert auf das Schreiben.
+Blog-Beiträge sind ein eigener Inhaltstyp, getrennt von regulären Website-Seiten -- sie werden nicht im [Seiten-Editor](page-editor) erstellt und erscheinen nicht in der Seitenliste. So bleibt das Verfassen von Blog-Beiträgen schnell und auf das Schreiben konzentriert.
 :::
 
 ## Nächste Schritte
 
-- [Seiten verwalten](managing-pages) – Füge einen Navigations-Link zu deinem Blog hinzu
-- [Dateien](files) – Lade Fotos hoch, um sie in deinen Posts zu verwenden
-- [Zapier-Integration](../integrations/zapier.md) – Triggere Automatisierungen, wenn neue Posts veröffentlicht werden
+- [Seiten verwalten](managing-pages) -- Einen Navigationslink zu Ihrem Blog hinzufügen
+- [Dateien](files) -- Fotos hochladen, um sie in Ihren Beiträgen zu verwenden
+- [Zapier-Integration](../integrations/zapier.md) -- Automatisierungen auslösen, wenn neue Beiträge veröffentlicht werden

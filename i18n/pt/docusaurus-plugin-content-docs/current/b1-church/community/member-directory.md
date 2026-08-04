@@ -6,14 +6,15 @@ title: "Diretório de Membros"
 
 <div class="article-intro">
 
-O diretório de membros permite navegar e pesquisar pessoas na sua igreja. Seja para procurar um companheiro de grupo ou encontrar alguém novo, o diretório facilita a conexão com a família da sua igreja.
+O diretório de membros permite navegar e pesquisar pessoas da sua igreja. Seja para procurar um colega de grupo ou encontrar alguém novo, o diretório facilita a conexão com a sua família na igreja.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Você deve estar [logado](../getting-started/logging-in.md) na sua conta B1.church.
+- Você precisa estar [conectado](../getting-started/logging-in.md) à sua conta B1.church.
+- O diretório está disponível apenas para **membros e equipe**. Visitantes e frequentadores que ainda não se tornaram membros verão uma mensagem "Somente Membros" em vez disso.
 
 </div>
 
@@ -24,15 +25,15 @@ O diretório de membros permite navegar e pesquisar pessoas na sua igreja. Seja 
 
 ## Pesquisando Membros
 
-A página usa um layout master-detail. No lado esquerdo, você tem duas maneiras de encontrar pessoas:
+A página usa um layout mestre-detalhe. No lado esquerdo, você tem duas formas de encontrar pessoas:
 
 ### Pesquisar por Nome
 
-1. Certifique-se de que o filtro **Pessoas** está selecionado no topo da área de pesquisa.
+1. Certifique-se de que o filtro **Pessoas** esteja selecionado no topo da área de pesquisa.
 2. Digite um nome na caixa de pesquisa.
 3. Clique em **Pesquisar** ou pressione **Enter** para ver os resultados.
 
-Se você deixar a caixa de pesquisa vazia e clicar em **Pesquisar**, a lista completa do diretório é exibida.
+Se você deixar a caixa de pesquisa vazia e clicar em **Pesquisar**, a listagem completa do diretório é exibida.
 
 ### Pesquisar por Grupo
 
@@ -41,19 +42,19 @@ Se você deixar a caixa de pesquisa vazia e clicar em **Pesquisar**, a lista com
 3. Clique em **Pesquisar** para ver todos os membros daquele grupo.
 
 :::tip
-Pesquisar por grupo é uma maneira rápida de encontrar alguém que você conheceu em um [encontro de grupo](../groups/browsing-groups.md) mas cujo nome não lembra muito bem.
+Pesquisar por grupo é uma forma rápida de encontrar alguém que você conheceu em uma [reunião de grupo](../groups/browsing-groups.md), mas cujo nome você não consegue se lembrar direito.
 :::
 
 ## Navegando pelo Diretório
 
-Membros são listados em ordem alfabética por sobrenome e agrupados sob cabeçalhos de letras (A, B, C e assim por diante). Cada entrada mostra a foto do membro, nome de exibição e nome da família, facilitando a navegação pela lista.
+Os membros são listados em ordem alfabética por sobrenome e agrupados sob cabeçalhos de letra (A, B, C, e assim por diante). Cada entrada mostra a foto do membro, o nome de exibição e o nome da família, facilitando a navegação pela lista.
 
 ## Visualizando o Perfil de um Membro
 
-Clique em qualquer membro na lista para abrir o perfil dele no painel de detalhes à direita. O perfil mostra as informações do membro conforme configurado pela sua igreja, que podem incluir detalhes de contato, membros da família e participação em grupos.
+Clique em qualquer membro da lista para abrir seu perfil no painel de detalhes à direita. O perfil mostra as informações do membro conforme configuradas pela sua igreja, que podem incluir detalhes de contato, membros da família e associações a grupos.
 
-Você pode clicar nos membros da família dentro de um perfil para navegar até os perfis deles também.
+Você também pode clicar nos membros da família dentro de um perfil para navegar até seus respectivos perfis.
 
 :::info
-As informações visíveis em cada perfil dependem das configurações de privacidade e do diretório da sua igreja. Nem todos os campos podem ser exibidos para cada membro.
+As informações visíveis em cada perfil dependem das configurações de privacidade e diretório da sua igreja. Nem todos os campos podem ser exibidos para cada membro.
 :::

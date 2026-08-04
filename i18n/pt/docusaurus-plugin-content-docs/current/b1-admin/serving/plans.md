@@ -1,109 +1,111 @@
 ---
-title: "Planos de Serviço"
+title: "Planos de Culto"
 ---
 
-# Planos de Serviço
+# Planos de Culto
 
 <div class="article-intro">
 
-Planos de serviço organizam quem está servindo e quando. Cada plano está vinculado a uma data e ministério específicos, facilitando a coordenação de suas equipes de voluntários semana após semana e garantindo que cada serviço seja totalmente coberto.
+Os planos de culto organizam quem está servindo e quando. Cada plano está vinculado a uma data e ministério específicos, facilitando a coordenação das suas equipes de voluntários semana a semana e garantindo que cada culto esteja totalmente escalado.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Configure seus ministérios e equipes na área Serving
-- Certifique-se de que os voluntários foram adicionados ao seu [diretório de pessoas](../people/adding-people.md) e atribuídos a equipes
+- Configure seus ministérios e equipes na área de Serviço
+- Certifique-se de que os voluntários foram adicionados ao seu [diretório de pessoas](../people/adding-people.md) e designados a equipes
 
 </div>
 
-## Acessando Planos
+## Acessando os Planos
 
-1. Navegue até **Serving** no menu principal.
-2. Selecione uma **aba de ministério** no topo da página.
-3. Clique em um **tipo de plano** para ver a lista de planos para esse tipo.
+1. Navegue até **Serviço** no menu principal.
+2. Selecione uma **aba de ministério** na parte superior da página.
+3. Clique em um **tipo de plano** para ver a lista de planos daquele tipo.
 4. Clique em um plano específico para abri-lo.
 
 :::info
-Acesso admin completo não é necessário para gerenciar planos. Qualquer pessoa que seja membro de um ministério pode navegar até Serving e criar, editar e agendar planos para seu próprio ministério sem precisar da permissão Plans Edit. Editores com a função Plans Edit podem gerenciar planos em todos os ministérios.
+Não é necessário acesso total de administrador para gerenciar planos. Qualquer pessoa que seja membro de um ministério pode navegar até Serviço e criar, editar e escalar planos para seu próprio ministério sem precisar da permissão de Edição de Planos. Editores com a função de Edição de Planos podem gerenciar planos em todos os ministérios.
 :::
 
 ## Criando um Plano
 
-1. Da visualização do tipo de plano, clique em **New Plan**.
-2. Dê um nome ao plano ou use a data como nome. Selecione a **data** do serviço.
-3. Se você gostaria de copiar de um plano anterior, escolha apenas posições ou posições e atribuições. Se você não deseja copiar, apenas escolha nada. Você também pode copiar a ordem do serviço do meu plano anterior.
-4. Salve o plano. Agora você pode começar a atribuir membros da equipe e construir a [ordem do serviço](./service-order.md).
+1. Na visualização do tipo de plano, clique em **Novo Plano**.
+2. Dê um nome ao plano ou use a data como nome. Selecione a **data** do culto.
+3. Se você quiser copiar de um plano anterior, escolha apenas posições ou posições e designações. Se não quiser copiar, apenas escolha nenhum. Você também pode copiar a ordem do culto do plano anterior.
+4. Salve o plano. Agora você pode começar a designar membros da equipe e montar a [ordem do culto](./service-order.md).
 
 ## A Página de Detalhes do Plano
 
-Quando você abre um plano, você verá duas abas:
+Ao abrir um plano, você verá duas abas:
 
-- **Assignments** -- Gerencie quais membros da equipe são atribuídos a este plano. Você pode adicionar pessoas de suas equipes existentes e ver quem confirmou ou ainda está pendente.
-- **[Service Order](./service-order.md)** -- Construa a ordem do serviço com elementos como músicas de adoração, orações, anúncios e o sermão.
+- **Designações** -- Gerencie quais membros da equipe estão designados a este plano. Você pode adicionar pessoas das suas equipes existentes e ver quem confirmou ou ainda está pendente.
+- **[Ordem do Culto](./service-order.md)** -- Monte a ordem do culto com elementos como músicas de louvor, orações, avisos e a mensagem.
 
-## Atribuindo Membros da Equipe
+## Designando Membros da Equipe
 
-1. Abra um plano e vá para a aba **Assignments**.
-2. Clique em **add Position** para expandi-lo. Preencha as informações no formulário de adição de uma posição. Para o nome da categoria, adicione qualquer categoria que desejar.
-3. Clique em **People Needed** e escolha voluntários para preencher essa posição.
-4. Adicione membros da sua lista de equipe clicando em **Add**.
-5. Os membros atribuídos aparecerão sob sua equipe com seu status de atribuição.
+1. Abra um plano e vá para a aba **Designações**.
+2. Clique em **adicionar Posição** para expandi-la. Preencha as informações no formulário de adição de posição. Para o nome da categoria, adicione a que você preferir.
+3. Clique em **Pessoas Necessárias** e escolha voluntários para preencher aquela posição.
+4. Adicione membros da sua lista de equipe clicando em **Adicionar**.
+5. Os membros designados aparecerão sob sua equipe com o status de designação.
 6. Clique em notificar voluntários para notificá-los dentro do aplicativo B1 ou por e-mail.
 
-:::tip
-Configure suas equipes nas configurações do ministério antes de criar planos. Desta forma, você terá um pool pronto de voluntários para atribuir.
-:::
-
-## Volunteer Reminders
-
-B1 can automatically remind volunteers ahead of the services they are scheduled for, so you do not have to chase down your team each week. Reminders go to **everyone scheduled** — both those who have confirmed and those who have not yet responded — by email and as an in-app/push notification. Each reminder includes the volunteer's position(s), the service date, the plan notes, and your custom message.
-
-Reminder timing and content are set per **plan type**, so each kind of service can keep its own schedule.
-
-1. From the **Serving** area, select the ministry that contains the plan type.
-2. Click the **edit (pencil) icon** next to the plan type.
-3. In the **Reminders** section, set:
-   - **Reminder days before service** — a comma-separated list of how many days ahead to send, for example `7,1,0`. Use `0` to send a reminder on the day of the service. Leave this field blank to turn reminders off for this plan type.
-   - **Custom reminder message** *(optional)* — extra text added to the reminder, such as "Arrive 30 minutes early to rehearse."
-4. Save the plan type.
-
-New plan types remind volunteers **2 days before** each service by default until you change this.
+Cada posição mostra um chip de contagem (por exemplo, "2/3") para que você possa ver rapidamente quantas vagas estão preenchidas. No topo da aba Designações, uma barra de progresso e um chip de resumo ("X de Y posições preenchidas") mostram a escala geral do plano, mudando para **Totalmente escalado** assim que todas as posições estiverem cobertas.
 
 :::tip
-Volunteers who have not yet confirmed get **Accept** and **Decline** buttons right inside the reminder email, so they can respond without signing in.
+Configure suas equipes nas configurações do ministério antes de criar planos. Assim, você terá um grupo de voluntários pronto para designar.
+:::
+
+## Lembretes aos Voluntários
+
+O B1 pode lembrar automaticamente os voluntários antes dos cultos em que estão escalados, para que você não precise cobrar sua equipe toda semana. Os lembretes são enviados a **todos os escalados** — tanto aos que confirmaram quanto aos que ainda não responderam — por e-mail e como notificação no aplicativo/push. Cada lembrete inclui a(s) posição(ões) do voluntário, a data do culto, as notas do plano e sua mensagem personalizada.
+
+O horário e o conteúdo do lembrete são definidos por **tipo de plano**, para que cada tipo de culto possa manter sua própria programação.
+
+1. Na área **Serviço**, selecione o ministério que contém o tipo de plano.
+2. Clique no **ícone de edição (lápis)** ao lado do tipo de plano.
+3. Na seção **Lembretes**, defina:
+   - **Dias de antecedência do lembrete** — uma lista separada por vírgulas de quantos dias de antecedência enviar, por exemplo `7,1,0`. Use `0` para enviar um lembrete no dia do culto. Deixe este campo em branco para desativar os lembretes deste tipo de plano.
+   - **Mensagem personalizada do lembrete** *(opcional)* — texto extra adicionado ao lembrete, como "Chegue 30 minutos antes para o ensaio."
+4. Salve o tipo de plano.
+
+Novos tipos de plano lembram os voluntários **2 dias antes** de cada culto por padrão, até que você altere isso.
+
+:::tip
+Voluntários que ainda não confirmaram recebem botões de **Aceitar** e **Recusar** diretamente no e-mail de lembrete, para que possam responder sem precisar fazer login.
 :::
 
 :::info
-Each reminder is sent once. Plans that are still penciled in (not yet sent to the team) do not trigger reminders.
+Cada lembrete é enviado uma única vez. Planos que ainda estão em rascunho (não enviados à equipe) não disparam lembretes.
 :::
 
-## Associating Groups with a Plan Type
+## Associando Grupos a um Tipo de Plano
 
-Below the plan list on the plan type page, the **Groups** section lets you decide which groups can see the plans for this plan type from their member portal. This is a quick way to surface upcoming services to the right teams without giving them admin access.
+Abaixo da lista de planos na página do tipo de plano, a seção **Grupos** permite decidir quais grupos podem ver os planos deste tipo de plano a partir do portal do membro. Essa é uma forma rápida de divulgar os próximos cultos para as equipes certas sem conceder acesso de administrador.
 
-1. On the plan type page, scroll down to the **Groups** section.
-2. Click **Add Group** and pick a group from the dropdown.
-3. In the **Shows** column, choose whether members of that group should see **Past**, **Future**, or **Both** plans for this plan type.
-4. Repeat to associate additional groups, or click the trash icon to remove a group.
+1. Na página do tipo de plano, role até a seção **Grupos**.
+2. Clique em **Adicionar Grupo** e escolha um grupo no menu suspenso.
+3. Na coluna **Mostra**, escolha se os membros daquele grupo devem ver os planos **Passados**, **Futuros** ou **Ambos** para este tipo de plano.
+4. Repita para associar grupos adicionais, ou clique no ícone de lixeira para remover um grupo.
 
 :::info
-Only groups tagged as **Standard** appear in the picker. Members of an associated group automatically see this plan type's plans on the [Plans](/docs/b1-church/plans/) tab in the B1 member portal — limited to the past/future/both window you selected.
+Apenas grupos marcados como **Padrão** aparecem no seletor. Membros de um grupo associado veem automaticamente os planos deste tipo de plano na aba [Planos](/docs/b1-church/plans/) no portal do membro do B1 — limitado à janela passado/futuro/ambos que você selecionou.
 :::
 
-## Printing Plans
+## Imprimindo Planos
 
-You can print a plan for distribution to your team. Open the plan, Open the service order tab and use the **Print** option to generate a printable version that includes assignments and the service order. This is useful for handing out at rehearsals or posting in a common area.
+Você pode imprimir um plano para distribuição à sua equipe. Abra o plano, abra a aba de ordem do culto e use a opção **Imprimir** para gerar uma versão imprimível que inclui as designações e a ordem do culto. Isso é útil para distribuir em ensaios ou afixar em uma área comum.
 
 :::info
-Plans are organized by ministry. Make sure you are on the correct ministry tab before creating or viewing plans.
+Os planos são organizados por ministério. Certifique-se de estar na aba de ministério correta antes de criar ou visualizar planos.
 :::
 
-## Next Steps
+## Próximos Passos
 
-- Use the [Plans Overview](./plans-overview.md) to see all upcoming assignments across multiple weeks in one grid and spot unfilled positions — and assign volunteers directly from the grid
-- Save a plan's structure as a [Plan Template](./plan-templates.md) so you can stamp it onto future plans in one click
-- Build out your [Service Order](./service-order.md) with songs, readings, and other elements
-- Add [songs](./songs.md) from your library directly into the service order
-- Use [Tasks](./tasks.md) to assign follow-up action items to team members
+- Use a [Visão Geral dos Planos](./plans-overview.md) para ver todas as próximas designações em várias semanas em uma única grade e identificar posições não preenchidas — e designe voluntários diretamente pela grade
+- Salve a estrutura de um plano como um [Modelo de Plano](./plan-templates.md) para poder aplicá-la a planos futuros com um único clique
+- Monte sua [Ordem do Culto](./service-order.md) com músicas, leituras e outros elementos
+- Adicione [músicas](./songs.md) da sua biblioteca diretamente na ordem do culto
+- Use [Tarefas](./tasks.md) para designar itens de ação de acompanhamento aos membros da equipe

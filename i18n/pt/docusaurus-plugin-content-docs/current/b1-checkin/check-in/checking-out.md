@@ -1,69 +1,69 @@
 ---
-title: "Retirada de Crianças e Segurança Infantil"
+title: "Fazendo Check-Out e Segurança Infantil"
 ---
 
-# Retirada de Crianças e Segurança Infantil
+# Fazendo Check-Out e Segurança Infantil
 
 <div class="article-intro">
 
-A retirada completa o processo de entrada da criança: um responsável apresenta o código de segurança do seu rótulo de retirada, o quiosque verifica quem está pegando a criança, e as crianças são retiradas. Estações com atendentes também recebem ferramentas de segurança — verificação de retirada confiável, mensagens de página de responsável, reimpressão de rótulos de segurança e transmissão de emergência.
+O check-out fecha o ciclo do check-in infantil: um responsável apresenta o código de segurança da etiqueta de retirada, o quiosque verifica quem está fazendo a retirada e as crianças são liberadas. As estações com equipe também recebem ferramentas de segurança — verificação de retirada confiável, mensagens de chamada ao responsável, reimpressão de etiquetas de segurança e transmissão de emergência.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- A retirada está disponível em estações definidas no modo **manned** (atendidas) nas configurações de administração do quiosque
-- As crianças devem ter sido [registradas](./completing-checkin) com um rótulo de retirada impresso contendo o código de segurança
-- Páginas e transmissões de emergência exigem que sua igreja tenha um provedor de mensagens de texto conectado no B1 Admin
+- O check-out está disponível em estações definidas para o modo **manned** (com equipe) nas configurações administrativas do quiosque
+- As crianças precisam ter feito [check-in](./completing-checkin) com uma etiqueta de retirada impressa contendo o código de segurança
+- A chamada de responsáveis e as transmissões de emergência exigem que sua igreja tenha um provedor de mensagens de texto conectado no B1 Admin
 
 </div>
 
-## Iniciando uma Retirada
+## Iniciando um Check-Out
 
-1. Em uma estação atendida, toque em **Check Out** na tela de busca.
-2. Digite o **código de segurança** de 4 caracteres do rótulo de retirada da família. Você pode digitá-lo, usar o teclado na tela ou escanear o código de barras do rótulo com um scanner USB ou Bluetooth — o código é enviado automaticamente assim que todos os 4 caracteres são inseridos.
-3. O quiosque mostra as crianças registradas sob esse código.
+1. Em uma estação com equipe, toque em **Check Out** na tela de busca.
+2. Digite o **código de segurança** de 4 caracteres da etiqueta de retirada da família. Você pode digitá-lo, usar o teclado numérico na tela ou escanear o código de barras da etiqueta com um leitor USB ou Bluetooth — o código é enviado automaticamente assim que todos os 4 caracteres forem inseridos.
+3. O quiosque mostra as crianças registradas sob aquele código.
 
-## Verificando Quem Está Pegando a Criança
+## Verificando Quem Está Fazendo a Retirada
 
-A tela de retirada pergunta quem está pegando as crianças:
+A tela de check-out pergunta quem está retirando as crianças:
 
-- **Pessoas autorizadas para retirada** da família aparecem como cards tocáveis com sua foto e relacionamento — toque na pessoa na sua frente.
+- **Pessoas de retirada confiável** da família aparecem como cartões clicáveis com sua foto e relação — toque na pessoa que está à sua frente.
 - **Adultos da família** também aparecem em uma grade de fotos.
-- **Outro** permite digitar um nome para alguém que não está na lista.
+- **Other** permite que você digite um nome para alguém que não está na lista.
 
-Se um nome digitado corresponder a alguém marcado como **Não Autorizado** para essa família, o quiosque bloqueia a retirada com um aviso. Um membro da equipe pode escolher **Substituir** para prosseguir mesmo assim — a substituição é registrada no registro de presença com o nome da pessoa.
+Se um nome digitado corresponder a alguém marcado como **Not Authorized** para aquela família, o quiosque bloqueia o check-out com um aviso. Um membro da equipe pode escolher **Override** para prosseguir mesmo assim — a substituição é registrada no registro de frequência com o nome da pessoa.
 
-Após o responsável pela retirada ser confirmado, toque em retirada. O nome da pessoa que faz a retirada é armazenado com o registro de presença.
+Depois que a pessoa que faz a retirada é confirmada, toque em check-out. O nome da pessoa que fez a retirada é armazenado no registro de frequência.
 
 :::info
-Pessoas autorizadas e não autorizadas para retirada são gerenciadas pela equipe da igreja na página de cada pessoa no B1 Admin — veja [Segurança de Entrada](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+As pessoas de retirada confiável e não autorizada são gerenciadas pela equipe da igreja na página de cada pessoa no B1 Admin — veja [Segurança no Check-In](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
 :::
 
 ## Chamando um Responsável
 
-Precisa de um responsável durante o serviço — uma troca de fralda, uma criança chorando? Na tela de retirada em uma estação atendida, a equipe pode enviar uma **página**: uma mensagem de texto para os pais ou responsáveis da criança através do provedor de mensagens de texto da igreja. Pais que optaram por não receber textos ou não têm número de celular são pulados, e o quiosque mostra quantas mensagens foram enviadas.
+Precisa de um responsável durante o culto — uma troca de fralda, uma criança chorando? Na tela de check-out de uma estação com equipe, a equipe pode enviar uma **chamada**: uma mensagem de texto para os pais ou responsáveis da criança por meio do provedor de mensagens de texto da igreja. Os pais que optaram por não receber mensagens de texto ou que não têm número de celular registrado são ignorados, e o quiosque mostra quantas mensagens foram enviadas.
 
-## Reimprimir Rótulos
+## Reimprimindo Etiquetas
 
-Se um crachá ou rótulo de retirada for perdido ou danificado, a equipe em uma estação atendida pode **reimprimir** os rótulos da família na tela de retirada depois de inserir o código de segurança. A reimpressão usa a mesma impressora e modelos de rótulos do registro original.
+Se uma etiqueta de identificação ou de retirada for perdida ou danificada, a equipe em uma estação com equipe pode **reimprimir** as etiquetas da família na tela de check-out, após digitar o código de segurança. A reimpressão usa a mesma impressora e os mesmos modelos de etiqueta do check-in original.
 
 ## Transmissão de Emergência
 
-Em uma emergência, a equipe pode enviar uma mensagem de texto para os responsáveis de **todas as crianças registradas** para o serviço atual de uma vez:
+Em uma emergência, a equipe pode enviar mensagem de texto de uma vez para os responsáveis de **todas as crianças registradas** no culto atual:
 
-1. Abra as **configurações de administração** do quiosque (7 toques rápidos no logotipo do cabeçalho, mais o PIN se um estiver definido).
+1. Abra as **configurações administrativas** do quiosque (7 toques rápidos no logotipo do cabeçalho, mais o PIN, se houver um definido).
 2. Toque em **Emergency broadcast**.
-3. Digite a mensagem e digite **EMERGENCY** no campo de confirmação — o botão **Send broadcast** permanece desativado até você fazer isso.
-4. O quiosque relata quantos telefones receberam a mensagem e quantas pessoas foram puladas (optaram por não receber ou não têm número de celular).
+3. Digite a mensagem e, em seguida, digite **EMERGENCY** no campo de confirmação — o botão **Send broadcast** permanece desativado até que você faça isso.
+4. O quiosque informa quantos celulares receberam a mensagem e quantas pessoas foram ignoradas (que optaram por não receber ou não têm número de celular).
 
 :::warning
-A transmissão vai para todas as famílias registradas para o serviço selecionado. Use-a para emergências genuínas — evacuações, bloqueios, condições climáticas severas.
+A transmissão vai para todas as famílias registradas no culto selecionado. Use-a apenas para emergências genuínas — evacuações, bloqueios (lockdowns), clima severo.
 :::
 
 ## Artigos Relacionados
 
-- [Completando o Registro](./completing-checkin) — de onde vêm os códigos de segurança e rótulos de retirada
-- [Segurança de Entrada](../../b1-admin/attendance/checkin-safety) — configurando capacidades, proporções, pessoas autorizadas para retirada e o requisito do provedor de mensagens de texto
-- [Configuração da Impressora](../getting-started/printer-setup) — configuração da impressora de rótulos
+- [Concluindo o Check-In](./completing-checkin) — de onde vêm os códigos de segurança e as etiquetas de retirada
+- [Segurança no Check-In](../../b1-admin/attendance/checkin-safety) — configuração de capacidades, proporções, pessoas de retirada e o requisito de provedor de mensagens de texto
+- [Configuração da Impressora](../getting-started/printer-setup) — configuração da impressora de etiquetas

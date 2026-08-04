@@ -50,6 +50,7 @@ ChurchApps는 약 20개의 독립적인 저장소입니다 (모노레포가 아�
 | [웹사이트 라우팅 및 멀티 사이트](./websites) | 요청이 교회 및 특정 사이트로 어떻게 해결되는지, 멀티 사이트 `siteId` 데이터 모델, Caddy 사용자 정의 도메인 에지 | B1App, Api (membership + content), B1Admin |
 | [통합](./integrations) | 확장 표면: OAuth, API 키, 웹훅, 콘텐츠 제공자, MCP | Api, shared libraries, external apps |
 | [감사 로그 및 실행 취소 가능한 배치](./audit-log) | 컨트롤러 제한점에서 모든 변이의 기본 켜짐 감사, 가져오기 및 대량 작업을 실행 취소할 수 있게 하는 배치 계층 | Api (all modules), B1Admin, B1Transfer |
+| [MinistryStuff](./ministrystuff) | 유료 저장소 및 문자 크레딧 서비스: 공유 JWT 신원, 서비스 키 S2S, 문자 및 저장소 제공자 심, Stripe 청구 | MinistryStuffApi, MinistryStuffWeb, Api (content + messaging), texting/apihelper packages, B1Admin |
 
 :::tip
 변경이 이 시스템 중 하나의 동작을 변경할 때 — 한 앱 내 페이지만이 아니라 — 여기 일치하는 시스템 맵을 같은 노력에서 업데이트해야 합니다. 이는 이 섹션을 새로운 기여자의 첫 번째 중지점으로 신뢰할 수 있도록 유지합니다.

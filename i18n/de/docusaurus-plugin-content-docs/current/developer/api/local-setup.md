@@ -1,102 +1,102 @@
 ---
-title: "Lokales API-Setup"
+title: "Lokale API-Einrichtung"
 ---
 
-# Lokales API-Setup
+# Lokale API-Einrichtung
 
 <div class="article-intro">
 
-Dieser Leitfaden führt dich durch die Einrichtung der ChurchApps API für die lokale Entwicklung. Du wirst das Repository klonen, deine Datenbankverbindungen konfigurieren, das Schema initialisieren und den Dev-Server mit Hot-Reload starten.
+Diese Anleitung führt Sie durch die Einrichtung der ChurchApps-API für die lokale Entwicklung. Sie klonen das Repository, konfigurieren Ihre Datenbankverbindungen, initialisieren das Schema und starten den Entwicklungsserver mit Hot Reload.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor du beginnst</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Installiere **Node.js 22+**, **Git** und **MySQL 8.0+** – siehe [Voraussetzungen](../setup/prerequisites)
-- Erstelle einen MySQL-Benutzer mit Datenerstellungsberechtigungen
-- Überprüfe die Referenz [Umgebungsvariablen](../setup/environment-variables) für die API-Konfiguration
+- Installieren Sie **Node.js 22+**, **Git** und **MySQL 8.0+** -- siehe [Voraussetzungen](../setup/prerequisites)
+- Erstellen Sie einen MySQL-Benutzer mit Berechtigungen zum Anlegen von Datenbanken
+- Lesen Sie die Referenz [Umgebungsvariablen](../setup/environment-variables) für die API-Konfiguration
 
 </div>
 
-## Schritt-für-Schritt-Setup
+## Schrittweise Einrichtung
 
-### 1. Klone das Repository
+### 1. Repository klonen
 
 ```bash
 git clone https://github.com/ChurchApps/Api.git
 ```
 
-### 2. Installiere Abhängigkeiten
+### 2. Abhängigkeiten installieren
 
-Das Projekt verwendet Yarn (ein Guard blockiert `npm install`):
+Das Projekt verwendet Yarn (eine Schutzmaßnahme blockiert `npm install`):
 
 ```bash
 cd Api
 yarn install
 ```
 
-### 3. Konfiguriere Umgebungsvariablen
+### 3. Umgebungsvariablen konfigurieren
 
 ```bash
 cp .env.sample .env
 ```
 
-Öffne `.env` und konfiguriere deine MySQL-Verbindungsstrings. Jedes Modul benötigt seine eigene Datenbankverbindung im folgenden Format:
+Öffnen Sie `.env` und konfigurieren Sie Ihre MySQL-Verbindungszeichenfolgen. Jedes Modul benötigt seine eigene Datenbankverbindung im folgenden Format:
 
 ```
 mysql://root:password@localhost:3306/dbname
 ```
 
-Du brauchst Verbindungsstrings für alle sechs Moduldatenbanken (Mitgliedschaft, Anwesenheit, Inhalt, Spenden, Messaging, Tun).
+Sie benötigen Verbindungszeichenfolgen für alle sechs Modul-Datenbanken (membership, attendance, content, giving, messaging, doing).
 
-### 4. Initialisiere die Datenbanken
+### 4. Datenbanken initialisieren
 
 ```bash
 npm run initdb
 ```
 
-Dies erstellt automatisch alle sechs Datenbanken und ihre Tabellen.
+Dadurch werden alle sechs Datenbanken und ihre Tabellen automatisch erstellt.
 
 :::tip
-Du kannst die Datenbank eines einzelnen Moduls mit `npm run initdb -- --module=membership` (oder `attendance`, `content`, `giving`, `messaging`, `doing`) initialisieren.
+Sie können die Datenbank eines einzelnen Moduls mit `npm run initdb -- --module=membership` initialisieren (oder `attendance`, `content`, `giving`, `messaging`, `doing`).
 :::
 
-### 5. Starte den Dev-Server
+### 5. Entwicklungsserver starten
 
 ```bash
 npm run dev
 ```
 
-Die API startet mit Hot-Reload bei [http://localhost:8084](http://localhost:8084).
+Die API startet mit Hot Reload unter [http://localhost:8084](http://localhost:8084).
 
-## Wichtigste Befehle
+## Wichtige Befehle
 
 | Befehl | Beschreibung |
 |---------|-------------|
-| `npm run dev` | Starte Dev-Server mit Hot-Reload (tsx watch) |
-| `npm run build` | Bereinige, kompiliere TypeScript und kopiere Assets |
-| `npm run test` | Führe Tests mit Jest aus (enthält Abdeckung) |
-| `npm run test:watch` | Führe Tests im Watch-Modus aus |
-| `npm run lint` | Führe ESLint mit Auto-Fix aus (ESLint ist der alleinige Formatter) |
+| `npm run dev` | Entwicklungsserver mit Hot Reload starten (tsx watch) |
+| `npm run build` | Bereinigen, TypeScript kompilieren und Assets kopieren |
+| `npm run test` | Tests mit Jest ausführen (inklusive Coverage) |
+| `npm run test:watch` | Tests im Watch-Modus ausführen |
+| `npm run lint` | ESLint mit automatischer Korrektur ausführen (ESLint ist der einzige Formatierer) |
 
-## Staging-Bereitstellung
+## Staging-Deployment
 
-Um in der Staging-Umgebung bereitzustellen:
+Um in die Staging-Umgebung zu deployen:
 
 ```bash
 npm run deploy-staging
 ```
 
-Dies führt einen Produktions-Build durch und stellt dann über Serverless Framework bereit.
+Dies führt einen Produktions-Build durch und deployt anschließend über das Serverless Framework.
 
 :::warning
-Stelle sicher, dass deine AWS-Anmeldedaten konfiguriert sind, bevor du den Deploy-Befehl ausführst.
+Stellen Sie sicher, dass Ihre AWS-Zugangsdaten konfiguriert sind, bevor Sie den Deploy-Befehl ausführen.
 :::
 
-## Lokale Bibliotheks-Entwicklung
+## Lokale Bibliotheksentwicklung
 
-Wenn du eine gemeinsame Bibliothek (`@churchapps/helpers` oder `@churchapps/apihelper`) zusammen mit der API entwickeln musst, baue sie im [Packages](https://github.com/ChurchApps/Packages)-Workspace auf und füge ein temporäres Yarn-Portal in der API hinzu:
+Wenn Sie eine gemeinsam genutzte Bibliothek (`@churchapps/helpers` oder `@churchapps/apihelper`) parallel zur API entwickeln müssen, erstellen Sie sie im [Packages](https://github.com/ChurchApps/Packages)-Workspace und fügen Sie in der API ein temporäres Yarn-Portal hinzu:
 
 ```bash
 # Im Packages-Workspace
@@ -108,10 +108,10 @@ yarn link ../Packages/helpers
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-Dies ermöglicht dir, Bibliotheksänderungen gegen die API zu testen, ohne sie auf npm zu veröffentlichen. Siehe [Gemeinsame Bibliotheken](../shared-libraries/#local-development-against-a-consuming-app) für Details – und committe niemals die Portal-Auflösung, die der Link in `package.json` schreibt.
+So können Sie Bibliotheksänderungen gegen die API testen, ohne sie auf npm zu veröffentlichen. Details finden Sie unter [Gemeinsam genutzte Bibliotheken](../shared-libraries/#local-development-against-a-consuming-app) -- und committen Sie niemals die Portal-Auflösung, die der Link in `package.json` schreibt.
 
 ## Verwandte Artikel
 
-- **[Datenbank](./database)** – Verständnis der Datenbank-pro-Modul-Architektur
-- **[Modul-Struktur](./module-structure)** – Wie Controller, Repositories und Modelle organisiert sind
-- **[Gemeinsame Bibliotheken](../shared-libraries/)** – Arbeiten mit `@churchapps/helpers` und `@churchapps/apihelper`
+- **[Datenbank](./database)** -- Die Architektur einer Datenbank pro Modul verstehen
+- **[Modulstruktur](./module-structure)** -- Wie Controller, Repositories und Modelle organisiert sind
+- **[Gemeinsam genutzte Bibliotheken](../shared-libraries/)** -- Arbeiten mit `@churchapps/helpers` und `@churchapps/apihelper`

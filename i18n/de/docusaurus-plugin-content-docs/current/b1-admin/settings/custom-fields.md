@@ -6,90 +6,90 @@ title: "Benutzerdefinierte Felder"
 
 <div class="article-intro">
 
-**Benutzerdefinierte Felder** ermöglichen es dir, deine eigenen Informationen auf jedem Personenrecord zu verfolgen – Dinge, die B1 nicht als eingebautes Feld hat, wie ein Hintergrundscheck-Ablaufdatum, eine T-Shirt-Größe oder ein Taufklasse-Status. Du definierst ein Feld einmal in den Einstellungen, füllst dann auf jedem Personenprofil einen Wert aus und kannst darauf suchen oder Listen erstellen. Dies ersetzt den älteren Workaround, eine Personen-Formular nur zu erstellen, um ein einzelnes Stück benutzerdefinierter Daten zu speichern.
+Mit **Benutzerdefinierten Feldern** können Sie eigene Informationen zu jedem Personendatensatz erfassen — Dinge, für die B1 kein eingebautes Feld hat, wie ein Ablaufdatum für eine Hintergrundüberprüfung, eine T-Shirt-Größe oder den Status eines Taufkurses. Sie definieren ein Feld einmal in den Einstellungen, füllen dann im Profil jeder Person einen Wert aus und können danach suchen oder Listen darauf aufbauen. Dies ersetzt den älteren Behelf, ein Personen-Formular nur zu erstellen, um ein einzelnes benutzerdefiniertes Datenelement zu speichern.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor du beginnst</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Du benötigst die Berechtigung **Personen** bearbeiten, um Felder zu definieren und Werte auszufüllen, sowie Zugriff auf den Bereich **Einstellungen**. Jeder mit Berechtigung "Personen" anzeigen kann die Werte sehen. Siehe [Rollen & Berechtigungen](./roles-permissions.md).
-- Entscheide, was du verfolgen möchtest und welcher Typ am besten passt (Text, eine Zahl, ein Datum, eine Ja/Nein-Antwort oder eine Pickliste), bevor du beginnst.
+- Sie benötigen die Bearbeitungsberechtigung für **Personen**, um Felder zu definieren und Werte auszufüllen, sowie Zugriff auf den Bereich **Einstellungen**. Jeder mit Anzeigeberechtigung für Personen kann die Werte sehen. Siehe [Rollen & Berechtigungen](./roles-permissions.md).
+- Entscheiden Sie vor dem Start, was Sie erfassen möchten und welcher Typ am besten passt (Text, eine Zahl, ein Datum, eine Ja/Nein-Antwort oder eine Auswahlliste).
 
 </div>
 
-## Öffnen von benutzerdefinierten Feldern
+## Benutzerdefinierte Felder öffnen
 
-Gehe in B1 Admin zu **Einstellungen** in der linken Seitenleiste und wähle die Karte **Benutzerdefinierte Felder**. Du kannst auch direkt dort hingehen at **/settings/custom-fields**. Du siehst eine Liste jedes Feldes, das du definiert hast, mit seinem **Namen** und **Feldtyp**. Wenn du noch keine erstellt hast, liest das Panel *"Keine benutzerdefinierten Felder wurden noch hinzugefügt."*
+Gehen Sie in B1 Admin in der linken Seitenleiste zu **Einstellungen** und wählen Sie die Karte **Benutzerdefinierte Felder**. Sie können auch direkt unter **/settings/custom-fields** dorthin gelangen. Sie sehen eine Liste aller von Ihnen definierten Felder mit **Name** und **Feldtyp**. Falls Sie noch keine erstellt haben, zeigt das Panel „Es wurden noch keine benutzerdefinierten Felder hinzugefügt."
 
-## Hinzufügen eines Feldes
+## Ein Feld hinzufügen
 
-1. Klicke auf **Feld hinzufügen**.
-2. Gib im rechts öffnenden Editor einen **Namen** ein – dies ist das Label, das das Personal auf Personenprofilen und in der Suche sieht (z. B. *Hintergrundscheck läuft ab*).
-3. Wähle einen **Feldtyp**:
-   - **Textbox** – freier Form-Kurztext.
-   - **Ganze Zahl** – Zahlen ohne Dezimalzahlen (z. B. eine Zählung).
-   - **Dezimal** – Zahlen, die Dezimalzahlen enthalten können.
-   - **Datum** – ein Kalenderdatum.
-   - **Ja/Nein** – eine einfache Ja-oder-Nein-Antwort.
-   - **Mehrfachauswahl** – eine Pickliste. Wenn du diesen Typ wählst, erscheint ein **Auswahls-Editor**, damit du jede Option hinzufügen kannst, die Personen auswählen können.
-4. Klicke auf **Speichern**.
+1. Klicken Sie auf **Feld hinzufügen**.
+2. Geben Sie im rechts geöffneten Editor einen **Namen** ein — dies ist die Bezeichnung, die Mitarbeiter in Personenprofilen und in der Suche sehen (zum Beispiel *Hintergrundüberprüfung läuft ab*).
+3. Wählen Sie einen **Feldtyp**:
+   - **Textfeld** — frei formulierbarer Kurztext.
+   - **Ganze Zahl** — Zahlen ohne Dezimalstellen (zum Beispiel eine Anzahl).
+   - **Dezimalzahl** — Zahlen, die Dezimalstellen enthalten können.
+   - **Datum** — ein Kalenderdatum.
+   - **Ja/Nein** — eine einfache Ja-oder-Nein-Antwort.
+   - **Mehrfachauswahl** — eine Auswahlliste. Wenn Sie diesen Typ wählen, erscheint ein **Auswahl-Editor**, in dem Sie jede Option hinzufügen können, aus der Personen wählen können.
+4. Klicken Sie auf **Speichern**.
 
-Das Feld ist jetzt auf dem Profil jeder Person verfügbar.
+Das Feld ist jetzt in jedem Personenprofil verfügbar.
 
 :::info
-Die Feldtypen sind der gleiche Satz, der für [Formularfragen](../forms/creating-forms.md) verwendet wird, sodass Werte konsistent über B1 hinweg verhalten.
+Die Feldtypen sind dieselben, die auch bei [Formularfragen](../forms/creating-forms.md) verwendet werden, sodass sich Werte in ganz B1 einheitlich verhalten.
 :::
 
-## Bearbeiten eines Feldes
+## Ein Feld bearbeiten
 
-Klicke auf eine beliebige Feldzeile in der Liste, um sie im Editor erneut zu öffnen. Ändere den Namen, Typ oder Auswahlen und klicke auf **Speichern**.
+Klicken Sie auf eine beliebige Feldzeile in der Liste, um sie erneut im Editor zu öffnen. Ändern Sie Name, Typ oder Auswahlmöglichkeiten und klicken Sie auf **Speichern**.
 
 :::warning
-Das Ändern des **Feldtyps** eines Feldes, das bereits Werte hat (z. B. von Textbox zu Datum), kann dazu führen, dass zuvor eingegebene Werte in einem Format verbleiben, das nicht mehr zum neuen Typ passt. Ändere Typen mit Vorsicht, sobald das Personal begonnen hat, das Feld auszufüllen.
+Das Ändern des **Feldtyps** eines Feldes, das bereits Werte enthält (zum Beispiel von Textfeld zu Datum), kann dazu führen, dass zuvor eingegebene Werte in einem Format vorliegen, das nicht mehr zum neuen Typ passt. Ändern Sie Typen mit Vorsicht, sobald Mitarbeiter begonnen haben, das Feld auszufüllen.
 :::
 
-## Löschen eines Feldes
+## Ein Feld löschen
 
-Öffne ein Feld zum Bearbeiten und klicke auf **Löschen**. Du wirst aufgefordert zu bestätigen: *"Bist du sicher, dass du dieses benutzerdefinierte Feld löschen möchtest? Die gespeicherten Werte werden auch entfernt."* Das Löschen eines Feldes entfernt es dauerhaft **und jeden darauf gespeicherten Wert** auf allen Personen – dies kann nicht rückgängig gemacht werden.
+Öffnen Sie ein Feld zum Bearbeiten und klicken Sie auf **Löschen**. Sie werden um Bestätigung gebeten: „Möchten Sie dieses benutzerdefinierte Feld wirklich löschen? Die gespeicherten Werte werden ebenfalls entfernt." Das Löschen eines Feldes entfernt es dauerhaft **und jeden dafür bei allen Personen gespeicherten Wert** — dies kann nicht rückgängig gemacht werden.
 
-## Füllen von Werten in einer Person
+## Werte bei einer Person ausfüllen
 
-Sobald mindestens ein benutzerdefiniertes Feld existiert, sind seine Werte direkt neben den eingebauten Details auf jedem Personenrecord – du sehst sie in **Persönliche Details** und bearbeitest sie auf der gleichen Form, die du für den Rest der Personensdaten verwendest. Nichts Zusätzliches erscheint, bis du dein erstes Feld definiert hast.
+Sobald mindestens ein benutzerdefiniertes Feld existiert, befinden sich seine Werte direkt neben den eingebauten Details im Datensatz jeder Person — Sie sehen sie unter **Persönliche Details** und bearbeiten sie im selben Formular, das Sie für die übrigen Informationen der Person verwenden. Es erscheint nichts Zusätzliches, bis Sie Ihr erstes Feld definiert haben.
 
-1. Öffne einen Personenrecord in **Personen**.
-2. Klicke im Bereich **Persönliche Details** auf den Button **Bearbeiten** (Stift).
-3. Scrolle zum Bereich **Benutzerdefinierte Felder** am unteren Ende des Bearbeitungsformulars und fülle einen Wert für jedes Feld ein. Jedes Feld zeigt die Eingabe, die seinem Typ entspricht – eine Datumsauswahl für Datumsfelder, ein Ja/Nein-Dropdown für Ja/Nein-Felder, eine Pickliste für Mehrfachauswahl, usw.
-4. Klicke auf **Speichern**. Deine Werte für benutzerdefinierte Felder werden zusammen mit dem Rest der Personensdaten gespeichert.
+1. Öffnen Sie den Datensatz einer Person unter **Personen**.
+2. Klicken Sie im Bereich **Persönliche Details** auf die Schaltfläche **Bearbeiten** (Stift).
+3. Scrollen Sie zum Bereich **Benutzerdefinierte Felder** am Ende des Bearbeitungsformulars und füllen Sie für jedes Feld einen Wert aus. Jedes Feld zeigt die zu seinem Typ passende Eingabe — einen Datumswähler für Datumsfelder, ein Ja/Nein-Dropdown für Ja/Nein-Felder, eine Auswahlliste für Mehrfachauswahl usw.
+4. Klicken Sie auf **Speichern**. Ihre benutzerdefinierten Feldwerte werden zusammen mit den übrigen Details der Person gespeichert.
 
-Auf dem Profil zeigt jedes Feld, das einen Wert hat, jetzt in der Sektion **Persönliche Details** (Ja/Nein-Antworten werden als *Ja* oder *Nein* gelesen, und Mehrfachauswahl zeigt das Label der Option). Felder, die leer gelassen werden, sind einfach verborgen. Um einen Wert zu entfernen, bearbeite die Person, lösche das Feld und speichere – ein leerer Wert wird gelöscht aus dem Record statt als blank gespeichert.
+Zurück im Profil wird jedes Feld mit einem Wert nun im Bereich **Persönliche Details** angezeigt (Ja/Nein-Antworten werden als *Ja* oder *Nein* dargestellt, und Mehrfachauswahl zeigt die Bezeichnung der Option). Leer gelassene Felder sind einfach ausgeblendet. Um einen Wert zu entfernen, bearbeiten Sie die Person, leeren Sie das Feld und speichern Sie — ein leerer Wert wird aus dem Datensatz gelöscht, statt als leer gespeichert zu werden.
 
 :::tip
-Der klassische Use Case ist Freiwilligen-Sicherheit: erstelle ein **Datum**-Feld namens *Hintergrundscheck läuft ab*, speichere das Ablaufdatum jedes Freiwilligen, dann erstelle eine [Gespeicherte Liste](../people/lists.md), die jeden flaggt, dessen Datum vorbei ist.
+Der klassische Anwendungsfall ist die Sicherheit von ehrenamtlichen Helfern: Erstellen Sie ein **Datum**-Feld namens *Hintergrundüberprüfung läuft ab*, erfassen Sie das Datum jedes Helfers, und erstellen Sie dann eine [Gespeicherte Liste](../people/lists.md), die jeden markiert, dessen Datum verstrichen ist.
 :::
 
-## Suchen und Listen auf benutzerdefinierten Feldern erstellen
+## Suchen und Listen auf Basis benutzerdefinierter Felder erstellen
 
 Benutzerdefinierte Felder sind vollständig durchsuchbar:
 
-1. Öffne auf der Seite **Personen** die [Erweiterte Suche](../people/searching-people.md).
-2. Erweitere die Kategorie **Benutzerdefinierte Felder**.
-3. Aktiviere das Feld, auf dem du filtern möchtest, wähle einen Operator und gib einen Wert ein. Die angebotenen Operatoren passen zum Typ des Feldes:
-   - **Textbox** – enthält, gleich, beginnt mit, endet mit.
-   - **Ganze Zahl / Dezimal** – gleich, größer als, größer als oder gleich, kleiner als, kleiner als oder gleich.
-   - **Datum** – gleich, nach (größer als), vor (kleiner als).
-   - **Ja/Nein** – gleich Ja oder Nein.
-   - **Mehrfachauswahl** – gleich oder enthält eine der Auswahlen.
+1. Öffnen Sie auf der Seite **Personen** die [Erweiterte Suche](../people/searching-people.md).
+2. Erweitern Sie die Kategorie **Benutzerdefinierte Felder**.
+3. Aktivieren Sie das Feld, nach dem Sie filtern möchten, wählen Sie einen Operator und geben Sie einen Wert ein. Die angebotenen Operatoren richten sich nach dem Feldtyp:
+   - **Textfeld** — enthält, entspricht, beginnt mit, endet mit.
+   - **Ganze Zahl / Dezimalzahl** — entspricht, größer als, größer als oder gleich, kleiner als, kleiner als oder gleich.
+   - **Datum** — entspricht, nach (größer als), vor (kleiner als).
+   - **Ja/Nein** — entspricht Ja oder Nein.
+   - **Mehrfachauswahl** — entspricht oder enthält eine der Optionen.
 
-Speichere eine benutzerdefinierte Feldsuche als [Liste](../people/lists.md). Listen sind Live-Abfragen, daher eine Liste auf *Hintergrundscheck läuft ab ist vor heute* re-checks jede Person jedes Mal, wenn du sie öffnest – kein manueller Aufwand.
+Speichern Sie jede Suche nach benutzerdefinierten Feldern als [Liste](../people/lists.md). Listen sind Live-Abfragen, sodass eine Liste, die auf *Hintergrundüberprüfung läuft vor heute ab* aufbaut, jedes Mal beim Öffnen erneut jede Person prüft — ohne manuellen Pflegeaufwand.
 
-## Was bei der Zusammenführung passiert
+## Was beim Zusammenführen passiert
 
-Wenn du [zwei Personenrecords zusammenführst](../people/adding-people.md), werden Werte für benutzerdefinierte Felder automatisch übertragen. Die Person, die du bewahrst, behält ihre eigenen Werte; für jedes Feld, in dem nur die entfernte Person einen Wert hatte, wird dieser Wert kopiert, sodass nichts verloren geht.
+Wenn Sie [zwei Personendatensätze zusammenführen](../people/adding-people.md), werden die Werte benutzerdefinierter Felder automatisch übernommen. Die Person, die Sie behalten, behält ihre eigenen Werte; für jedes Feld, bei dem nur die entfernte Person einen Wert hatte, wird dieser Wert übernommen, sodass nichts verloren geht.
 
 ## Verwandte Artikel
 
-- [Personen suchen](../people/searching-people.md) – erweiterte Suche, einschließlich der Kategorie "Benutzerdefinierte Felder"
-- [Gespeicherte Listen](../people/lists.md) – speichere eine Suche für benutzerdefinierte Felder und führe sie live erneut aus
-- [Rollen & Berechtigungen](./roles-permissions.md) – wer kann Felder definieren und Werte bearbeiten
-- [Formulare erstellen](../forms/creating-forms.md) – für Datenerfassung mit mehreren Fragen, wo eine vollständige Form besser passt als einzelne Felder
+- [Personen suchen](../people/searching-people.md) — erweiterte Suche, einschließlich der Kategorie Benutzerdefinierte Felder
+- [Gespeicherte Listen](../people/lists.md) — eine Suche nach benutzerdefinierten Feldern speichern und live erneut ausführen
+- [Rollen & Berechtigungen](./roles-permissions.md) — wer Felder definieren und Werte bearbeiten kann
+- [Formulare erstellen](../forms/creating-forms.md) — für die Erfassung mehrerer Fragen, wenn ein vollständiges Formular besser passt als einzelne Felder

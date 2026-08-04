@@ -1,73 +1,73 @@
 ---
-title: "Chansons"
+title: "Chants"
 ---
 
-# Chansons
+# Chants
 
 <div class="article-intro">
 
-La page Chansons gère votre bibliothèque de chansons d'adoration. Gardez tous les détails, paroles et arrangements de votre chanson au même endroit afin que votre équipe d'adoration puisse se préparer facilement pour les services à venir et maintenir un répertoire cohérent.
+La page Chants gère votre bibliothèque de chants de louange. Conservez tous les détails de vos chants, paroles et arrangements au même endroit afin que votre équipe de louange puisse facilement préparer les services à venir et maintenir un répertoire cohérent.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Allez à la section **Service** dans B1 Admin pour accéder à la page Chansons
-- Optionnellement, ayez votre [plans de service](./plans.md) configurer afin que vous puissiez lier des chansons directement dans l'[ordre de service](./service-order.md)
+- Accédez à la section **Service** dans B1 Admin pour accéder à la page Chants
+- Facultativement, ayez vos [plans de service](./plans.md) configurés afin de pouvoir lier des chants directement dans l'[ordre du service](./service-order.md)
 
 </div>
 
-## Navigation dans votre bibliothèque de chansons
+## Parcourir votre bibliothèque de chants
 
-Quand vous ouvrez la page **Chansons**, vos chansons sont affichées sous forme de cartes. Chaque carte affiche l'image miniature, le titre, l'artiste et la durée de la chanson. Faites défiler la bibliothèque ou utilisez la recherche pour trouver ce dont vous avez besoin.
+Lorsque vous ouvrez la page **Chants**, vos chants sont affichés sous forme de cartes. Chaque carte affiche l'image miniature du chant, son titre, son artiste et sa durée. Faites défiler la bibliothèque ou utilisez la recherche pour trouver ce dont vous avez besoin.
 
-## Recherche de chansons
+## Rechercher des chants
 
-1. Cliquez sur le bouton **Rechercher** sur la page Chansons.
-2. Tapez un **titre** de chanson ou un nom d'**artiste**.
-3. Les résultats se filtreront à mesure que vous tapez, affichant les chansons correspondantes de votre bibliothèque.
+1. Cliquez sur le bouton **Rechercher** sur la page Chants.
+2. Saisissez un **titre** de chant ou un nom d'**artiste**.
+3. Les résultats se filtrent au fur et à mesure de votre saisie, affichant les chants correspondants de votre bibliothèque.
 
-## Ajout d'une chanson
+## Ajouter un chant
 
-1. Cliquez sur **Ajouter une chanson** sur la page Chansons.
-2. Recherchez dans la base de données de chansons externe par titre ou artiste.
-3. Sélectionnez la chanson que vous souhaitez ajouter.
-4. La chanson sera ajoutée à votre bibliothèque avec ses détails de base pré-remplis.
+1. Cliquez sur **Ajouter un chant** sur la page Chants.
+2. Effectuez une recherche dans la base de données externe de chants par titre ou par artiste.
+3. Sélectionnez le chant que vous souhaitez ajouter.
+4. Le chant sera ajouté à votre bibliothèque avec ses détails de base pré-remplis.
 
 :::tip
-Après avoir ajouté une chanson, cliquez dessus pour vérifier et mettre à jour ses détails, ajouter des arrangements ou joindre des liens externes comme des vidéos YouTube ou des graphiques d'accords.
+Après avoir ajouté un chant, cliquez dessus pour vérifier et mettre à jour ses détails, ajouter des arrangements, ou joindre des liens externes tels que des vidéos YouTube ou des grilles d'accords.
 :::
 
-## Affichage et modification d'une chanson
+## Consulter et modifier un chant
 
-Cliquez sur n'importe quelle carte de chanson pour ouvrir sa page de détail. De là, vous pouvez :
+Cliquez sur n'importe quelle carte de chant pour ouvrir sa page de détail. De là, vous pouvez :
 
-- **Modifier les détails de la chanson** -- Mettre à jour le titre, l'artiste, la durée et autres métadonnées.
-- **Gérer les arrangements** -- Chaque chanson peut avoir plusieurs arrangements (par exemple, différentes clés ou versions). Ajoutez, modifiez ou supprimez des arrangements selon vos besoins.
-- **Ajouter les paroles** -- Entrez ou mettez à jour les paroles pour chaque arrangement.
-- **Définir la clé** -- Spécifiez la clé musicale pour chaque arrangement à l'aide du sélecteur de clé à côté des paroles. Le changement de clé transpose les accords affichés immédiatement, à la fois sur la page d'arrangement et lors de l'ouverture de la chanson à partir d'un plan de service, afin que votre équipe voie toujours les accords dans la clé qu'ils jouent réellement.
-- **Ajouter des liens externes** -- Joignez des liens vers des ressources comme des vidéos YouTube, des graphiques d'accords ou des partitions hébergées ailleurs.
+- **Modifier les détails du chant** -- Mettre à jour le titre, l'artiste, la durée et autres métadonnées.
+- **Gérer les arrangements** -- Chaque chant peut avoir plusieurs arrangements (par exemple, différentes tonalités ou versions). Ajoutez, modifiez ou supprimez des arrangements selon vos besoins.
+- **Ajouter des paroles** -- Saisissez ou mettez à jour les paroles de chaque arrangement.
+- **Définir la tonalité** -- Spécifiez la tonalité musicale de chaque arrangement à l'aide du sélecteur de tonalité situé à côté des paroles. Changer la tonalité transpose immédiatement les accords affichés, à la fois sur la page de l'arrangement et lors de l'ouverture du chant depuis un plan de service, afin que votre équipe voie toujours les accords dans la tonalité qu'elle joue réellement.
+- **Ajouter des liens externes** -- Joignez des liens vers des ressources telles que des vidéos YouTube, des grilles d'accords ou des partitions hébergées ailleurs.
 
 ## Arrangements
 
-Un arrangement représente une version distincte d'une chanson -- par exemple, une version moderne plus rapide par rapport à une version acoustique plus lente, ou la même chanson dans une clé différente pour une équipe différente. Chaque arrangement de la même chanson partage le titre et l'artiste de la chanson, mais a ses propres paramètres indépendants :
+Un arrangement représente une version distincte d'un chant — par exemple, une version moderne plus rapide par rapport à une version acoustique plus lente, ou le même chant dans une tonalité différente pour une équipe différente. Chaque arrangement d'un même chant partage le titre et l'artiste du chant, mais possède ses propres paramètres indépendants :
 
-- **Clé** -- la clé musicale dans laquelle l'arrangement est exécuté
-- **BPM** -- tempo en battements par minute
-- **Longueur** -- durée en secondes
-- **Mesure** -- signature temporelle (par exemple, 4/4, 3/4, 6/8)
-- **Séquence** -- la structure d'accord/section (par exemple, Intro → Couplet → Refrain → Pont)
-- **Paroles** -- pour l'affichage ou la projection
-- **Liens externes** -- graphiques d'accords, enregistrements YouTube, partitions ou autres ressources
+- **Tonalité** — la tonalité musicale dans laquelle l'arrangement est joué
+- **BPM** — le tempo en battements par minute
+- **Durée** — la durée en secondes
+- **Mesure** — la signature rythmique (par exemple, 4/4, 3/4, 6/8)
+- **Séquence** — la structure des accords/sections (par exemple, Intro → Couplet → Refrain → Pont)
+- **Paroles** — pour l'affichage ou la projection
+- **Liens externes** — grilles d'accords, enregistrements YouTube, partitions, ou autres ressources
 
-Quand vous ajoutez une chanson à un [Ordre de service](./service-order.md), vous pouvez choisir quel arrangement utiliser pour ce service spécifique, afin que votre équipe répète et joue toujours la bonne version.
+Lorsque vous ajoutez un chant à un [Ordre du service](./service-order.md), vous pouvez choisir l'arrangement à utiliser pour ce service spécifique, afin que votre équipe répète et joue toujours la bonne version.
 
 :::info
-Les chansons de votre bibliothèque peuvent être ajoutées directement à un [Ordre de service](./service-order.md) au sein d'un plan, reliant les détails de la chanson et l'arrangement choisi à ce service spécifique.
+Les chants de votre bibliothèque peuvent être ajoutés directement à un [Ordre du service](./service-order.md) au sein d'un plan, ce qui relie les détails du chant et l'arrangement choisi à ce service spécifique.
 :::
 
-## Prochaines étapes
+## Étapes suivantes
 
-- Ajoutez des chansons à votre [Ordre de service](./service-order.md) lors de la construction d'un [plan de service](./plans.md)
-- Coordonnez avec votre équipe d'adoration en utilisant [des tâches](./tasks.md) pour la préparation et la pratique des chansons
+- Ajoutez des chants à votre [Ordre du service](./service-order.md) lors de la construction d'un [plan de service](./plans.md)
+- Coordonnez-vous avec votre équipe de louange à l'aide des [Tâches](./tasks.md) pour la préparation et la répétition des chants

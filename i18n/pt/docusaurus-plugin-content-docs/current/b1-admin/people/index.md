@@ -18,9 +18,9 @@ Aqui está uma visão geral dos recursos principais disponíveis na seção Pess
 
 2. **Salve consultas de pesquisa como Listas** -- Salve qualquer pesquisa ou filtro com um nome e reutilize-a com um clique. Veja [Listas Salvas](./lists.md).
 
-3. **Visualize Demografia** -- Veja uma divisão visual da sua congregação por idade, gênero, estado civil, status de membro e campus -- e clique em qualquer segmento do gráfico para aprofundar nesses pessoas. Veja [Demografia](./demographics.md).
+3. **Visualize Demografia** -- Veja uma divisão visual da sua congregação por idade, gênero, estado civil, status de membro e campus -- e clique em qualquer segmento do gráfico para aprofundar nessas pessoas. Veja [Demografia](./demographics.md).
 
-4. **Adicione novas pessoas** -- Adicione rapidamente indivíduos ao seu diretório e preenchim detalhes de perfil, informações de contato e conexões familiares. Veja [Adicionando Pessoas](./adding-people.md) para instruções passo a passo.
+4. **Adicione novas pessoas** -- Adicione rapidamente indivíduos ao seu diretório e preencha detalhes de perfil, informações de contato e conexões familiares. Veja [Adicionando Pessoas](./adding-people.md) para instruções passo a passo.
 
 5. **Editar pessoas em lote** -- Atualize múltiplas pessoas de uma vez alterando seu status de membro, estado civil, gênero, preferências de exclusão ou associações de grupo. Isso economiza tempo ao fazer a mesma alteração em muitos indivíduos. Veja [Edição em Lote](./bulk-editing.md).
 

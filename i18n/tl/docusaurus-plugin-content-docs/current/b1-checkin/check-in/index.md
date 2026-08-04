@@ -1,40 +1,40 @@
 ---
-title: "Check-In Workflow"
+title: "Daloy ng Check-In"
 ---
 
-# Check-In Workflow
+# Daloy ng Check-In
 
 <div class="article-intro">
 
-Ang check-in process sa B1 Church Checkin ay sumusunod sa isang simpleng, step-by-step na daloy. Ang isang miyembro ng simbahan ay lumalakad papunta sa kiosk, hahanapin ang kanilang pamilya, papakita ng group assignment, at mag-check in -- lahat sa loob ng ilang segundo. Ang seksyong ito ay sumasaklaw sa bawat hakbang ng kiosk check-in experience.
+Sinusunod ng proseso ng check-in sa B1 Church Checkin ang isang simpleng, hakbang-hakbang na daloy. Lumalapit ang isang miyembro ng simbahan sa kiosk, hinahanap ang kanilang pamilya, kinukumpirma ang mga pagtatalaga ng grupo, at nagche-check in -- lahat sa loob ng isang minuto. Sinasaklaw ng seksyong ito ang bawat hakbang ng karanasan sa check-in sa kiosk.
 
 </div>
 
-## Ang Check-In Flow sa Pagtingin
+## Ang Daloy ng Check-In sa Isang Tingin
 
-1. **[Pumili ng isang serbisyo](./selecting-service)** -- Pumili kung aling serbisyo ang iyong dadaluhan (e.g., Sunday AM, Sunday PM, Midweek).
-2. **[Hanapin ang iyong pamilya](./looking-up-members)** -- Mag-search sa pamamagitan ng telepono number o huling pangalan upang mahanap ang iyong sarili sa sistema.
-3. **[Suriin ang iyong household](./household-review)** -- Makita ang lahat ng miyembro ng pamilya at ang kanilang kasalukuyang group assignment.
-4. **[Italag ang mga grupo](./group-assignment)** -- Pumili kung aling klase o grupo ang dapat dayuhan ng bawat miyembro ng pamilya para sa bawat service time.
-5. **[Magdagdag ng mga bisita](./adding-guests)** (opsyonal) -- Magdagdag ng isang bisita sa iyong household kung sila ay sumasali sa iyo.
-6. **[Kumpletuhin ang check-in](./completing-checkin)** -- I-tap ang check-in button upang magpadala ng attendance at mag-print ng label.
-7. **[Mag-check out](./checking-out)** (manned station) -- Sa oras ng pickup, i-verify ang security code at pickup person, na may trusted-pickup list, page-a-parent, at label reprint.
+1. **[Pumili ng serbisyo](./selecting-service)** -- Piliin kung aling serbisyo ang iyong dinadaluhan (hal., Sunday AM, Sunday PM, Midweek).
+2. **[Hanapin ang iyong pamilya](./looking-up-members)** -- Maghanap gamit ang numero ng telepono o apelyido upang mahanap ang iyong sarili sa sistema.
+3. **[Suriin ang iyong sambahayan](./household-review)** -- Makita ang lahat ng miyembro ng pamilya at ang kanilang kasalukuyang mga pagtatalaga ng grupo.
+4. **[Magtalaga ng mga grupo](./group-assignment)** -- Piliin kung aling klase o grupo ang dapat daluhan ng bawat miyembro ng pamilya para sa bawat oras ng serbisyo.
+5. **[Magdagdag ng mga bisita](./adding-guests)** (opsyonal) -- Magdagdag ng isang bisita sa iyong sambahayan kung kasali sila sa iyo.
+6. **[Kumpletuhin ang check-in](./completing-checkin)** -- I-tap ang pindutang check-in upang isumite ang attendance at mag-print ng mga label.
+7. **[Mag-check out](./checking-out)** (mga istasyong may tauhan) -- Sa oras ng pagkuha, i-verify ang security code at ang taong kukuha, na may mga listahan ng pinagkakatiwalaang tagakuha, page-a-parent, at muling pag-print ng label.
 
-Pagkatapos na kumpleto ang check-in, ang app ay nagpapakita ng success screen at awtomatikong bumabalik sa lookup screen, handa para sa susunod na pamilya.
+Matapos makumpleto ang check-in, ipinapakita ng app ang isang success screen at awtomatikong bumabalik sa screen ng lookup, handa para sa susunod na pamilya.
 
 :::tip
-Ang buong daloy ay idinisenyo para sa mga miyembro ng simbahan na gumamit nang independyente. Ang mga volunteer ay hindi kailangang mag-operate ng kiosk, bagaman magkaroon ng isang tao malapit na tumulong sa mga first-time visitor ay palaging magandang ideya.
+Idinisenyo ang buong daloy upang magamit nang mag-isa ng mga miyembro ng simbahan. Hindi kailangang mag-operate ng kiosk ang mga boluntaryo, bagaman laging magandang ideya ang pagkakaroon ng isang taong malapit upang tumulong sa mga unang beses na bumibisita.
 :::
 
-## Bago Ka Magsimula
+## Bago Magsimula
 
-Siguraduhin na ang mga sumusunod ay naka-configure sa B1 Admin bago gamitin ang check-in kiosk:
+Tiyaking nakonpigura ang mga sumusunod sa B1 Admin bago gamitin ang kiosk ng check-in:
 
-- Ang **Services at service time** ay naka-setup sa ilalim ng Attendance setting. Tingnan ang [attendance setup guide](../../b1-admin/attendance/setup.md).
-- Ang **Mga grupo** ay likha at naka-link sa angkop na service time. Tingnan ang [creating group](../../b1-admin/groups/creating-groups.md).
-- Ang **Group setting** ay naka-configure para sa label printing: i-enable ang **Print Nametag** para sa mga grupo na kailangan ng name label, at **Parent Pickup** para sa mga bata na grupo na kailangan ng pickup slip.
-- Ang **Mga tao** ay naidagdag sa sistema na may household association. Tingnan ang [adding people](../../b1-admin/people/adding-people.md).
+- Naka-set up ang **mga serbisyo at oras ng serbisyo** sa ilalim ng mga setting ng Attendance. Tingnan ang [gabay sa pag-set up ng attendance](../../b1-admin/attendance/setup.md).
+- Ginawa ang **mga grupo** at naka-link sa naaangkop na mga oras ng serbisyo. Tingnan ang [paggawa ng mga grupo](../../b1-admin/groups/creating-groups.md).
+- Nakonpigura ang **mga setting ng grupo** para sa pag-print ng label: i-enable ang **Print Nametag** para sa mga grupong kailangan ng mga label ng pangalan, at ang **Parent Pickup** para sa mga grupo ng bata na kailangan ng mga pickup slip.
+- Naidagdag ang **mga tao** sa sistema na may mga asosasyon sa sambahayan. Tingnan ang [pagdaragdag ng mga tao](../../b1-admin/people/adding-people.md).
 
 :::info
-Kung hindi mo pa naka-setup ang kiosk mismo, tingnan ang [Getting Started](../getting-started/) para sa installation, login, at printer configuration instruction.
+Kung hindi mo pa nase-set up ang kiosk mismo, tingnan ang [Getting Started](../getting-started/) para sa mga tagubilin sa pag-install, pag-log in, at pagkonpigura ng printer.
 :::

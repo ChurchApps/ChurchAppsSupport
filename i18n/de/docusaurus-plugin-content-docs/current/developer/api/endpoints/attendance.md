@@ -6,30 +6,30 @@ title: "Anwesenheits-Endpunkte"
 
 <div class="article-intro">
 
-Das Anwesenheitsmodul verwaltet Campus-Standorte, Gottesdienste, Gottesdienstzeiten, Anwesenheits-Sitzungen, Besuche und Besuchssitzungen. Es stellt die Infrastruktur bereit, um nachzuverfolgen, wer an welchem Gottesdienst oder welcher Gruppenveranstaltung teilgenommen hat, unterstützt Check-in-Abläufe und bietet Anwesenheitstrend- und Zusammenfassungsberichte.
+Das Attendance-Modul verwaltet Standorte (Campuses), Gottesdienste, Gottesdienstzeiten, Anwesenheitssitzungen, Besuche und Besuchssitzungen. Es stellt die Infrastruktur bereit, um zu verfolgen, wer an welchem Gottesdienst oder Gruppentreffen teilgenommen hat, unterstützt Check-in-Workflows und bietet Berichte zu Anwesenheitstrends und -zusammenfassungen.
 
 </div>
 
 **Basispfad:** `/attendance`
 
-## Campusse
+## Campuses
 
 Basispfad: `/attendance/campuses`
 
-Standard-CRUD-Controller (erweitert GenericCrudController). Stellt die Routen `getById`, `getAll`, `post` und `delete` über die CRUD-Basisklasse bereit.
+Standard-CRUD-Controller (erweitert GenericCrudController). Bietet die Routen `getById`, `getAll`, `post` und `delete` über die CRUD-Basisklasse.
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Alle Campusse der Kirche auflisten |
+| GET | `/` | JWT | — | Alle Campuses der Kirche auflisten |
 | GET | `/:id` | JWT | — | Einen Campus anhand der ID abrufen |
-| POST | `/` | JWT | Services.Edit | Campusse erstellen oder aktualisieren |
+| POST | `/` | JWT | Services.Edit | Campuses erstellen oder aktualisieren |
 | DELETE | `/:id` | JWT | Services.Edit | Einen Campus löschen |
 
-## Gottesdienste
+## Gottesdienste (Services)
 
 Basispfad: `/attendance/services`
 
-Erweitert GenericCrudController um die CRUD-Routen `getById`, `getAll`, `post` und `delete`. Die Endpunkte `getAll` (`GET /`) und `search` sind mit eigenen Implementierungen überschrieben.
+Erweitert GenericCrudController um die CRUD-Routen `getById`, `getAll`, `post` und `delete`. Die Endpunkte `getAll` (`GET /`) und `search` werden durch benutzerdefinierte Implementierungen überschrieben.
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
@@ -57,18 +57,18 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Gottesdienstzeiten
+## Gottesdienstzeiten (Service Times)
 
 Basispfad: `/attendance/servicetimes`
 
-Erweitert GenericCrudController um die CRUD-Routen `getById`, `post` und `delete`. Die Endpunkte `getAll` und `search` sind eigene Implementierungen.
+Erweitert GenericCrudController um die CRUD-Routen `getById`, `post` und `delete`. Die Endpunkte `getAll` und `search` sind benutzerdefinierte Implementierungen.
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Alle Gottesdienstzeiten auflisten. Filterbar mit `?serviceId=`. `?include=groups` hinzufügen, um Gruppendaten anzuhängen |
+| GET | `/` | JWT | — | Alle Gottesdienstzeiten auflisten. Filterbar über `?serviceId=`. Mit `?include=groups` werden zusätzlich Gruppendaten angehängt |
 | GET | `/:id` | JWT | — | Eine Gottesdienstzeit anhand der ID abrufen |
 | GET | `/search?campusId=&serviceId=` | JWT | — | Gottesdienstzeiten nach Campus und Gottesdienst suchen |
-| GET | `/public/:churchId` | Öffentlich | — | Den Baum Campus → Gottesdienst → Zeit für eine Kirche abrufen. Treibt das `serviceTimes`-Element des Website-Builders an |
+| GET | `/public/:churchId` | Öffentlich | — | Den Campus-→-Gottesdienst-→-Zeit-Baum einer Kirche abrufen. Treibt das `serviceTimes`-Element des Website-Builders an |
 | POST | `/` | JWT | Services.Edit | Gottesdienstzeiten erstellen oder aktualisieren |
 | DELETE | `/:id` | JWT | Services.Edit | Eine Gottesdienstzeit löschen |
 
@@ -80,12 +80,12 @@ Verknüpft Gruppen mit bestimmten Gottesdienstzeiten.
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Alle Gruppen-Gottesdienstzeit-Zuordnungen auflisten. Mit `?groupId=` filtern, um Zuordnungen mit Gottesdienstnamen zu erhalten |
-| GET | `/:id` | JWT | — | Eine Gruppen-Gottesdienstzeit-Zuordnung anhand der ID abrufen |
-| POST | `/` | JWT | Services.Edit | Gruppen-Gottesdienstzeit-Zuordnungen erstellen oder aktualisieren |
-| DELETE | `/:id` | JWT | Services.Edit | Eine Gruppen-Gottesdienstzeit-Zuordnung löschen |
+| GET | `/` | JWT | — | Alle Gruppe-Gottesdienstzeit-Zuordnungen auflisten. Filterbar über `?groupId=`, um Zuordnungen inklusive Gottesdienstnamen zu erhalten |
+| GET | `/:id` | JWT | — | Eine Gruppe-Gottesdienstzeit-Zuordnung anhand der ID abrufen |
+| POST | `/` | JWT | Services.Edit | Gruppe-Gottesdienstzeit-Zuordnungen erstellen oder aktualisieren |
+| DELETE | `/:id` | JWT | Services.Edit | Eine Gruppe-Gottesdienstzeit-Zuordnung löschen |
 
-## Anwesenheitsdatensätze
+## Anwesenheitsdatensätze (Attendance Records)
 
 Basispfad: `/attendance/attendancerecords`
 
@@ -94,7 +94,7 @@ Bietet schreibgeschützte Aggregatansichten von Anwesenheitsdaten für Berichte 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
 | GET | `/` | JWT | Attendance.View | Anwesenheitsdatensätze für eine Person laden. Erfordert `?personId=` |
-| GET | `/tree` | JWT | — | Den vollständigen Anwesenheitsbaum laden (Campusse, Gottesdienste, Gottesdienstzeiten, Gruppen) |
+| GET | `/tree` | JWT | — | Den vollständigen Anwesenheitsbaum laden (Campuses, Gottesdienste, Gottesdienstzeiten, Gruppen) |
 | GET | `/trend?campusId=&serviceId=&serviceTimeId=&groupId=` | JWT | Attendance.View Summary | Anwesenheitstrenddaten mit optionalen Filtern laden |
 | GET | `/groups?serviceId=&week=` | JWT | Attendance.View | Gruppenanwesenheit für einen Gottesdienst in einer bestimmten Woche laden |
 | GET | `/search?campusId=&serviceId=&serviceTimeId=&groupId=&startDate=&endDate=` | JWT | Attendance.View | Anwesenheitsdatensätze mit Filtern durchsuchen (Campus, Gottesdienst, Gottesdienstzeit, Gruppe, Datumsbereich) |
@@ -114,30 +114,30 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Sitzungen
+## Sitzungen (Sessions)
 
 Basispfad: `/attendance/sessions`
 
-Erweitert GenericCrudController um die CRUD-Routen `getById` und `delete`. Die Endpunkte `getAll` und `save` sind eigene Implementierungen, die es auch Gruppenleitern erlauben, Sitzungen für ihre Gruppen zu verwalten.
+Erweitert GenericCrudController um die CRUD-Routen `getById` und `delete`. Die Endpunkte `getAll` und `save` sind benutzerdefinierte Implementierungen, die es auch Gruppenleitern erlauben, Sitzungen für ihre Gruppen zu verwalten.
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Attendance.View oder Gruppenleiter | Alle Sitzungen auflisten. Mit `?groupId=` filtern (inklusive Namen). Gruppenleiter können Sitzungen für ihre eigenen Gruppen einsehen |
+| GET | `/` | JWT | Attendance.View oder Gruppenleiter | Alle Sitzungen auflisten. Filterbar über `?groupId=` (inklusive Namen). Gruppenleiter können Sitzungen für ihre eigenen Gruppen einsehen |
 | GET | `/:id` | JWT | Attendance.View | Eine Sitzung anhand der ID abrufen |
 | POST | `/` | JWT | Attendance.Edit oder Gruppenleiter | Sitzungen erstellen oder aktualisieren. Gruppenleiter können Sitzungen für ihre eigenen Gruppen speichern |
 | DELETE | `/:id` | JWT | Attendance.Edit | Eine Sitzung löschen |
 
-## Besuche
+## Besuche (Visits)
 
 Basispfad: `/attendance/visits`
 
-Verwaltet einzelne Besuchsdatensätze (eine Person, die an einem bestimmten Datum teilnimmt) und stellt den Check-in-Ablauf bereit.
+Verwaltet einzelne Besuchsdatensätze (eine Person, die an einem bestimmten Datum teilnimmt) und stellt den Check-in-Workflow bereit.
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Attendance.View | Alle Besuche auflisten. Mit `?personId=` filtern |
+| GET | `/` | JWT | Attendance.View | Alle Besuche auflisten. Filterbar über `?personId=` |
 | GET | `/:id` | JWT | Attendance.View | Einen Besuch anhand der ID abrufen |
-| GET | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.View oder Attendance.Checkin | Check-in-Daten für Personen bei einem Gottesdienst laden. Gibt Besuche mit Besuchssitzungen des zuletzt erfassten Datums zurück |
+| GET | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.View oder Attendance.Checkin | Check-in-Daten für Personen bei einem Gottesdienst laden. Liefert Besuche mit Besuchssitzungen seit dem letzten protokollierten Datum |
 | POST | `/` | JWT | Attendance.Edit | Besuche erstellen oder aktualisieren |
 | POST | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.Edit oder Attendance.Checkin | Check-in-Daten übermitteln. Erstellt/aktualisiert Besuche und Besuchssitzungen, entfernt veraltete Datensätze |
 | DELETE | `/:id` | JWT | Attendance.Edit | Einen Besuch löschen |
@@ -192,21 +192,21 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Besuchssitzungen
+## Besuchssitzungen (Visit Sessions)
 
 Basispfad: `/attendance/visitsessions`
 
-Verwaltet die Zuordnung zwischen Besuchen und Sitzungen (an welcher konkreten Sitzung eine Person während eines Besuchs teilgenommen hat). Bietet außerdem einen Schnellprotokoll-Endpunkt und einen Download-/Export-Endpunkt.
+Verwaltet die Zuordnung zwischen Besuchen und Sitzungen (an welcher konkreten Sitzung eine Person während eines Besuchs teilgenommen hat). Bietet außerdem einen Schnellprotokollierungs-Endpunkt sowie einen Download-/Export-Endpunkt.
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Attendance.View oder Gruppenleiter | Besuchssitzungen auflisten. Mit `?sessionId=` filtern. Gruppenleiter können Besuchssitzungen für ihre eigenen Gruppen einsehen |
+| GET | `/` | JWT | Attendance.View oder Gruppenleiter | Besuchssitzungen auflisten. Filterbar über `?sessionId=`. Gruppenleiter können Besuchssitzungen für ihre eigenen Gruppen einsehen |
 | GET | `/:id` | JWT | Attendance.View | Eine Besuchssitzung anhand der ID abrufen |
-| GET | `/download/:sessionId` | JWT | Attendance.View | Anwesenheit für eine Sitzung herunterladen (gibt Personennamen mit Anwesend-/Abwesend-Status zurück) |
+| GET | `/download/:sessionId` | JWT | Attendance.View | Anwesenheit für eine Sitzung herunterladen (liefert Personennamen mit Anwesend/Abwesend-Status) |
 | POST | `/` | JWT | Attendance.Edit | Besuchssitzungen erstellen oder aktualisieren |
-| POST | `/log` | JWT | Attendance.Edit oder Gruppenleiter | Die Anwesenheit einer Person schnell in einer Sitzung protokollieren. Erstellt bei Bedarf automatisch einen Besuch. Gruppenleiter können die Anwesenheit für ihre eigenen Gruppen protokollieren |
+| POST | `/log` | JWT | Attendance.Edit oder Gruppenleiter | Anwesenheit einer Person für eine Sitzung schnell protokollieren. Erstellt bei Bedarf automatisch einen Besuch. Gruppenleiter können Anwesenheit für ihre eigenen Gruppen protokollieren |
 | DELETE | `/:id` | JWT | Attendance.Edit | Eine Besuchssitzung anhand der ID löschen |
-| DELETE | `/?personId=&sessionId=` | JWT | Attendance.Edit oder Gruppenleiter | Eine Person aus einer Sitzung entfernen. Löscht die Besuchssitzung sowie den übergeordneten Besuch, falls keine Sitzungen mehr übrig sind. Gruppenleiter können die Anwesenheit für ihre eigenen Gruppen entfernen |
+| DELETE | `/?personId=&sessionId=` | JWT | Attendance.Edit oder Gruppenleiter | Eine Person aus einer Sitzung entfernen. Löscht die Besuchssitzung sowie den übergeordneten Besuch, falls keine Sitzungen mehr verbleiben. Gruppenleiter können Anwesenheit für ihre eigenen Gruppen entfernen |
 
 ### Beispiel: Anwesenheit schnell protokollieren
 
@@ -254,11 +254,11 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Serien
+## Serien (Streaks)
 
 Basispfad: `/attendance/streaks`
 
-Verfolgt Anwesenheitsserien für Einzelpersonen -- aufeinanderfolgende Wochen, in denen eine Person anwesend war. Nützlich für Engagement-Kennzahlen und Gamification.
+Verfolgt Anwesenheitsserien für Einzelpersonen -- aufeinanderfolgende Wochen, in denen eine Person teilgenommen hat. Nützlich für Engagement-Kennzahlen und Gamification.
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
@@ -266,6 +266,6 @@ Verfolgt Anwesenheitsserien für Einzelpersonen -- aufeinanderfolgende Wochen, i
 
 ## Verwandte Seiten
 
-- [Mitgliedschafts-Endpunkte](./membership) — Personen, Gruppen, Rollen und Kirchenverwaltung
+- [Membership-Endpunkte](./membership) — Personen, Gruppen, Rollen und Kirchenverwaltung
 - [Authentifizierung & Berechtigungen](./authentication) — Anmeldeablauf, JWT, Berechtigungsmodell
 - [Modulstruktur](../module-structure) — Code-Organisationsmuster

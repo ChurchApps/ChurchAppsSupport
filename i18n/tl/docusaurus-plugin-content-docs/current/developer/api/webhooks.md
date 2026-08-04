@@ -33,7 +33,7 @@ Pumunta sa **Settings → Webhooks → New Webhook**. Maglagay ng pangalan, ang 
 
 ### Sa Pamamagitan ng API
 
-Ang lahat ng endpoint ay nasa ilalim ng Membership module base path `/membership/webhooks` at nangangailangan ng JWT mula sa isang church admin na may pahintulot na `Settings / Edit`.
+Ang lahat ng endpoint ay nasa ilalim ng Membership module base path `/membership/webhooks` at nangangailangan alinman ng JWT mula sa isang church admin na may pahintulot na `Settings / Edit`, **o isang [API key](./api-keys) na ginawa na may `settings:write` scope**. Ang parehong mga route ay tumatanggap ng pareho. Ito ang nagbibigay-daan sa Zapier at Make na magrehistro ng mga webhook sa ngalan ng simbahan kapag ang isang Zap o scenario ay pinaganda.
 
 ```http
 POST /membership/webhooks
@@ -89,6 +89,14 @@ Ang mga pangalan ng kaganapan ay sumusunod sa pattern na `{entity}.{action}`. Ku
 | `group.destroyed` | Ang grupo ay binura |
 | `group.member.added` | Isang tao ay idinagdag sa grupo |
 | `group.member.removed` | Isang tao ay inalis sa grupo |
+| `donation.created` | Isang kaloob ay naitala — manual entry, online, o ang paglipat mula pending → complete |
+| `donation.updated` | Isang tala ng donasyon ay na-edit |
+| `attendance.recorded` | Isang pagbisita ay naitala (manual entry o check-in) |
+| `session.created` | Isang bagong attendance session ay nalikha (manu-mano o awtomatiko sa unang check-in) |
+| `form.submission.created` | Isang form ay naisumite |
+| `event.created` | Isang kalendaryong kaganapan ay idinagdag |
+| `event.updated` | Isang kalendaryong kaganapan ay na-edit |
+| `event.destroyed` | Isang kalendaryong kaganapan ay binura |
 
 ## Format ng Payload
 
@@ -120,6 +128,24 @@ Ang body ay nakabalot sa nabagong resource sa isang maliit na envelope:
 ```
 
 Para sa mga kaganapan ng `*.destroyed`, ang `data` ay naglalaman lamang ng `id` at `churchId` ng binurang rekord.
+
+Ang mga kaganapan na ang payload ay tumutukoy sa ibang mga rekord sa pamamagitan ng id ay nagdadala rin ng mga pangalang madaling basahin ng tao, na na-resolve sa oras ng paghahatid: `personName` at `groupName` sa mga kaganapan ng group membership, `personName` sa mga kaganapan ng attendance, donation, at list membership, `groupName` sa `session.created`, at `formName` (kasama ang `personName` kapag ang submission ay nakatali sa isang tao) sa `form.submission.created`.
+
+## Mga Uri ng Connector
+
+Ang default na format ng paghahatid ay ang JSON envelope sa itaas — `connectorType: "standard"`. Para sa [Slack at Discord](/docs/b1-admin/integrations/slack-discord) ang parehong webhook engine ay sa halip ay nag-po-post ng isang chat-shaped na mensahe na direktang tinatanggap ng mga serbisyong iyon:
+
+| `connectorType` | Body na ipinapadala | Gamitin kapag |
+|---|---|---|
+| `"standard"` (default) | Envelope na `{event, churchId, occurredAt, data}`, naka-sign | Gumagawa kayo ng sariling integration, o tumuturo sa Zapier / Make / isang custom server |
+| `"slack"` | `{ "text": "💝 New donation: $50.00" }` | Direktang nagpo-post kayo sa isang Slack Incoming Webhook URL |
+| `"discord"` | `{ "content": "💝 New donation: $50.00" }` | Direktang nagpo-post kayo sa isang Discord channel webhook URL |
+
+Ang connector type ay itinatakda sa **Connector Type** dropdown sa webhook editor, o sa pamamagitan ng `connectorType` sa `POST /membership/webhooks` body. Ang naka-sign na `X-B1-Signature` header ay ipinapadala pa rin para sa mga paghahatid sa Slack/Discord (binabalewala nila ito nang hindi nakakasama), kaya ang paglipat ng isang webhook pabalik sa `standard` mamaya ay hindi na nangangailangan ng muling pag-sign.
+
+## Mga Test na Paghahatid
+
+Bawat webhook editor ay may **Send Test Event** button — ang katumbas na API call ay `POST /membership/webhooks/:id/test`. Ang test route ay bumubuo ng isang synthetic na payload para sa unang naka-subscribe na kaganapan, ipinapadala ito nang synchronous sa pamamagitan ng aktwal na signed-delivery path (at sa pamamagitan ng `formatForConnector` para sa Slack/Discord), at ibinabalik ang resultang delivery row kabilang ang `responseStatus` at `responseBody`. Gamitin ito upang kumpirmahin ang konektibidad at ang paghawak ng signature bago buksan ang integration para sa totoong paggamit.
 
 ## Pag-verify ng mga Signature
 
@@ -158,6 +184,29 @@ function isValid(string $rawBody, string $signatureHeader, string $secret): bool
 ```
 
 Tanggihan ang anumang request na ang signature ay hindi tumutugma. Opsyonal ding tanggihan ang mga request na ang `X-B1-Timestamp` ay higit sa ilang minuto ang tanda upang limitahan ang mga replay window.
+
+## SDK Support
+
+Para sa Node.js, ang `@churchapps/integration-sdk` ay may kasamang typed verifier at isang Express middleware na humahawak ng raw-body capture, signature check, at envelope parsing para sa inyo:
+
+```ts
+import express from "express";
+import { b1WebhookMiddleware } from "@churchapps/integration-sdk";
+
+const app = express();
+// Kunin ang raw body bago ang JSON parsing — kinakailangan upang mag-verify pa rin ang signature.
+app.use(express.json({ verify: (req, _res, buf) => { (req as any).rawBody = buf; } }));
+
+app.post("/webhooks/b1", b1WebhookMiddleware({ secret: process.env.B1_WEBHOOK_SECRET! }), (req, res) => {
+  const env = req.b1Webhook!;
+  switch (env.event) {
+    case "donation.created": console.log("new gift", env.data.amount); break;
+  }
+  res.sendStatus(200);
+});
+```
+
+Ang SDK ay nagpapakita rin ng `WebhookVerifier.verify(secret, rawBody, signatureHeader)` para sa mga non-Express runtime (serverless functions, Fastify, atbp.). Tingnan ang package sa npm.
 
 ## Paghahatid at Mga Retry
 

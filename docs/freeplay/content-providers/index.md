@@ -18,6 +18,7 @@ FreePlay currently includes the following providers:
 - **Bible Project** - Videos and resources exploring the Bible
 - **SignPresenter** - Presentation and signage content for churches
 - **B1.church** - Content from your own B1 church setup
+- **Go Curriculum** - Curriculum from gocurriculum.com, organized by collection and lesson
 
 :::info
 Some providers are still being added. If a provider card shows "Coming Soon," it is not yet available for connection.

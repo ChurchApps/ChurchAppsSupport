@@ -130,7 +130,7 @@ Ang inbound-content path, sa hiwalay na package `Packages/content-providers` (`@
 Sa halip na ang lahat ay bumubuo mula sa simula, ang ChurchApps ay nagpadala ng mga connector sa taas ng mga surfaces sa itaas:
 
 - **[Slack & Discord](/docs/b1-admin/integrations/slack-discord)** — isang webhook `connectorType` ay muling bumubuo ng standard envelope sa chat message; na-configure nang kumpleto sa B1Admin, walang third-party account.
-- **[Zapier](/docs/b1-admin/integrations/zapier)** at **[Make](/docs/b1-admin/integrations/make)** — trigger sa webhook events at kumilos sa pamamagit ng REST API; sila ay nag-register ng kanilang sariling webhook kapag isang Zap/scenario ay nagiging on (kailangan ang key na may `settings:write`).
+- **[Zapier](/docs/b1-admin/integrations/zapier)** at **[Make](/docs/b1-admin/integrations/make)** — trigger sa webhook events at kumilos sa pamamagit ng REST API; sila ay nag-register ng kanilang sariling webhook kapag isang Zap/scenario ay nagiging on (kailangan ang key na may `settings:write`). Nakatira ang source code ng Zapier app sa `Integrations` repo sa ilalim ng `zapier/` (Zapier CLI, na dine-deploy gamit ang `zapier push`).
 - **[Google Sheets](/docs/b1-admin/integrations/google-sheets)** — isang API-key-authenticated add-on na nag-export ng People / Donations / Groups / Attendance on demand.
 - **[Claude](/docs/b1-admin/integrations/claude)** at **[ChatGPT](/docs/b1-admin/integrations/chatgpt)** — ang mga MCP clients na tumuturo sa `/mcp`.
 

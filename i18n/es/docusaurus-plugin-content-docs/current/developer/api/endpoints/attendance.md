@@ -12,7 +12,7 @@ El módulo de Asistencia gestiona ubicaciones de campus, servicios, horas de ser
 
 **Ruta base:** `/attendance`
 
-## Campuses
+## Campus
 
 Ruta base: `/attendance/campuses`
 
@@ -25,7 +25,7 @@ Controlador CRUD estándar (extiende GenericCrudController). Proporciona rutas `
 | POST | `/` | JWT | Services.Edit | Crear o actualizar campuses |
 | DELETE | `/:id` | JWT | Services.Edit | Eliminar un campus |
 
-## Services
+## Servicios
 
 Ruta base: `/attendance/services`
 
@@ -57,7 +57,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Service Times
+## Horas de Servicio
 
 Ruta base: `/attendance/servicetimes`
 
@@ -72,7 +72,7 @@ Extiende GenericCrudController con rutas CRUD `getById`, `post`, y `delete`. Los
 | POST | `/` | JWT | Services.Edit | Crear o actualizar horas de servicio |
 | DELETE | `/:id` | JWT | Services.Edit | Eliminar una hora de servicio |
 
-## Group Service Times
+## Horas de Servicio de Grupo
 
 Ruta base: `/attendance/groupservicetimes`
 
@@ -85,7 +85,7 @@ Vincula grupos a horas de servicio específicas.
 | POST | `/` | JWT | Services.Edit | Crear o actualizar asociaciones grupo-hora de servicio |
 | DELETE | `/:id` | JWT | Services.Edit | Eliminar una asociación grupo-hora de servicio |
 
-## Attendance Records
+## Registros de Asistencia
 
 Ruta base: `/attendance/attendancerecords`
 
@@ -114,7 +114,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Sessions
+## Sesiones
 
 Ruta base: `/attendance/sessions`
 
@@ -127,7 +127,7 @@ Extiende GenericCrudController con rutas CRUD `getById` y `delete`. Los puntos f
 | POST | `/` | JWT | Attendance.Edit o Líder de Grupo | Crear o actualizar sesiones. Los líderes de grupo pueden guardar sesiones para sus propios grupos |
 | DELETE | `/:id` | JWT | Attendance.Edit | Eliminar una sesión |
 
-## Visits
+## Visitas
 
 Ruta base: `/attendance/visits`
 
@@ -192,7 +192,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Visit Sessions
+## Sesiones de Visita
 
 Ruta base: `/attendance/visitsessions`
 
@@ -254,7 +254,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Streaks
+## Rachas
 
 Ruta base: `/attendance/streaks`
 

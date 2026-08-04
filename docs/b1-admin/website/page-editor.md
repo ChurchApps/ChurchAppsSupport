@@ -45,6 +45,10 @@ Every page is built from two levels:
    - **Blank section** — choose a column layout (single, two columns, three columns, etc.) and build from scratch.
 3. The new section appears in the preview. Click it to select it and configure its background color, padding, and other style options.
 
+### Switching a Section's Layout
+
+Already built out a section but want a different structure? Use the layout switcher on that section to swap its column arrangement for a different one from the gallery while keeping your existing content and elements in place.
+
 ### Adding Elements to a Section
 
 1. Click inside a section in the preview to select it.
@@ -68,6 +72,14 @@ Every page is built from two levels:
    - **Staff Grid** -- Photo cards for the members of a group; the group must have its **public roster** option turned on
    - **Service Times** -- Your campuses' service schedule, pulled automatically from attendance setup
    - **Sermons** -- Your sermon library, as a full browser or a grid, list, or featured-latest layout
+   - **Map** -- An embedded map centered on your church's address
+   - **Table** -- A simple grid of rows and columns for tabular content
+   - **Text with Photo** -- Text and an image side by side
+   - **Logo** -- Your church logo, pulled from [Appearance](appearance)
+   - **Live Stream** -- Your live stream player, embedded directly on the page
+   - **Donation** -- A giving button or embedded donation form
+   - **Raw HTML** -- Custom HTML markup for advanced use cases
+   - **iFrame** -- Embed external content by URL
 3. Configure the element using the settings panel that appears.
 
 ### Reordering Content
@@ -105,6 +117,10 @@ Use the preview controls in the toolbar to check how your page looks at differen
 - **Mobile** -- Narrow phone-sized view
 
 Click **Preview** to open a live version of the page in a new browser tab, exactly as visitors will see it.
+
+## Checking Accessibility
+
+Click the **Accessibility** icon in the toolbar to run a quick check for common issues -- images missing alt text, low color contrast, or headings out of order. Each issue links directly to the element that needs attention so you can fix it in place.
 
 ## Undoing Changes
 

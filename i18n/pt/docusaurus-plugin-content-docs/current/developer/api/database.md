@@ -6,15 +6,15 @@ title: "Banco de Dados"
 
 <div class="article-intro">
 
-A API do ChurchApps usa uma arquitetura de **banco de dados por módulo**. Cada um dos seis módulos de dados tem seu próprio banco de dados MySQL com um pool de conexões independente, fornecendo limites de dados claros enquanto mantém tudo em uma única implantação.
+A API do ChurchApps usa uma arquitetura de **banco de dados por módulo**. Cada um dos seis módulos de dados tem seu próprio banco de dados MySQL com um pool de conexões independente, proporcionando limites de dados claros mantendo tudo dentro de uma única implantação.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Instale **MySQL 8.0+** -- veja [Pré-requisitos](../setup/prerequisites)
-- Configure strings de conexão de banco de dados em seu arquivo `.env` -- veja [Variáveis de Ambiente](../setup/environment-variables)
+- Instale o **MySQL 8.0+** -- veja [Pré-requisitos](../setup/prerequisites)
+- Configure as strings de conexão de banco de dados no seu arquivo `.env` -- veja [Variáveis de Ambiente](../setup/environment-variables)
 
 </div>
 
@@ -32,14 +32,14 @@ Api
 
 ### Principais Decisões de Design
 
-- **Um banco de dados por módulo** -- Cada módulo mantém seu próprio banco de dados MySQL com um pool de conexões dedicado (gerenciado por `KyselyPool`). Isso mantém os módulos desacoplados e permite a evolução de esquema independente.
+- **Um banco de dados por módulo** -- Cada módulo mantém seu próprio banco de dados MySQL com um pool de conexões dedicado (gerenciado por `KyselyPool`). Isso mantém os módulos desacoplados e permite a evolução independente do esquema.
 - **Propriedade exclusiva** -- As tabelas de um módulo são lidas e escritas apenas pelo código do próprio módulo. Quando outro módulo precisa dos dados, ele chama o gateway do módulo proprietário em vez de consultar as tabelas diretamente -- veja [Comunicação Entre Módulos](./module-structure#cross-module-communication).
-- **Padrão de repositório sem ORM** -- Todo acesso a dados passa por classes de repositório que constroem SQL digitado com o construtor de consultas Kysely contra o esquema do módulo. Isso fornece controle total sobre o desempenho e o comportamento da consulta.
-- **Multi-inquilino por design** -- Toda consulta é escopo por `churchId`. Todas as tabelas incluem uma coluna `churchId`, e a camada de repositório aplica isolamento de inquilino automaticamente.
+- **Padrão de repositório sem ORM** -- Todo acesso a dados passa por classes de repositório que constroem SQL tipado com o construtor de consultas Kysely sobre o esquema do módulo. Isso proporciona controle total sobre o desempenho e o comportamento das consultas.
+- **Multi-inquilino por design** -- Toda consulta é restrita por `churchId`. Todas as tabelas incluem uma coluna `churchId`, e a camada de repositório aplica o isolamento entre inquilinos automaticamente.
 
 ## Strings de Conexão
 
-A conexão de banco de dados de cada módulo é configurada em `.env` usando o formato padrão de string de conexão MySQL:
+A conexão de banco de dados de cada módulo é configurada no `.env` usando o formato padrão de string de conexão MySQL:
 
 ```
 mysql://user:password@host:port/database
@@ -47,7 +47,7 @@ mysql://user:password@host:port/database
 
 Por exemplo, uma configuração de desenvolvimento local pode ser assim:
 
-Cada módulo lê sua conexão de uma variável de ambiente chamada `<MODULE>_CONNECTION_STRING`:
+Cada módulo lê sua conexão a partir de uma variável de ambiente chamada `<MODULE>_CONNECTION_STRING`:
 
 ```env
 MEMBERSHIP_CONNECTION_STRING=mysql://root:password@localhost:3306/churchapps_membership
@@ -76,9 +76,9 @@ tools/migrations/
 └── doing/
 ```
 
-As migrações definem criação de tabela, índices e alterações de esquema. O diretório `tools/dbScripts/` contém dados de demonstração e seed que podem ser carregados no topo do esquema.
+As migrações definem a criação de tabelas, índices e alterações de esquema. O diretório `tools/dbScripts/` contém dados de demonstração e de seed que podem ser carregados sobre o esquema.
 
-## Inicialização de Banco de Dados
+## Inicialização do Banco de Dados
 
 ### Inicializar todos os bancos de dados
 
@@ -95,12 +95,12 @@ npm run initdb -- --module=membership
 ```
 
 :::tip
-Ao trabalhar em um módulo específico, você pode reinicializar apenas o banco de dados desse módulo sem afetar os outros.
+Ao trabalhar em um módulo específico, você pode reinicializar apenas o banco de dados desse módulo sem afetar os demais.
 :::
 
 ## Padrão de Acesso a Dados
 
-Os repositórios constroem consultas com o construtor de consultas Kysely contra o esquema de banco de dados digitado do módulo, obtido através da função `getDb()` do módulo. Um método típico de repositório fica assim:
+Os repositórios constroem consultas com o construtor de consultas Kysely sobre o esquema de banco de dados tipado do módulo, obtido por meio da função `getDb()` do módulo. Um método típico de repositório se parece com isto:
 
 ```typescript
 public async loadAll(churchId: string) {
@@ -118,16 +118,16 @@ const people = await repos.person.loadAll(churchId);
 ```
 
 :::warning
-Sempre inclua `churchId` em suas consultas para manter isolamento multi-inquilino. Nunca consulte entre inquilinos a menos que você tenha uma razão específica e autorizada para fazer isso.
+Sempre inclua `churchId` em suas consultas para manter o isolamento multi-inquilino. Nunca consulte entre inquilinos a menos que tenha uma razão específica e autorizada para fazê-lo.
 :::
 
 ## Referências Entre Módulos
 
-Como os dados de cada módulo vivem em um banco de dados separado, não há chaves estrangeiras ou junções SQL através de limites de módulo. Um registro que se relaciona com dados de outro módulo armazena o id desse registro -- por exemplo, uma doação no banco de dados de doações carrega o `personId` de uma pessoa no banco de dados de membros -- e qualquer composição entre módulos acontece no código da aplicação.
+Como os dados de cada módulo residem em um banco de dados separado, não há chaves estrangeiras nem junções SQL entre limites de módulo. Um registro que se relaciona com dados de outro módulo armazena o id desse registro -- por exemplo, uma doação no banco de dados de doações carrega o `personId` de uma pessoa no banco de dados de membros -- e qualquer composição entre módulos acontece no código da aplicação.
 
-Essa restrição é o que torna os limites de módulo reais: cada esquema pode evoluir independentemente, o banco de dados de um módulo pode ser movido para seu próprio servidor, e um módulo poderia até ser extraído em um serviço independente sem desemaranhar tabelas compartilhadas ou consultas entre bancos de dados.
+Essa restrição é o que torna os limites de módulo reais: cada esquema pode evoluir independentemente, o banco de dados de um módulo pode ser movido para seu próprio servidor, e um módulo poderia até ser extraído para um serviço independente sem desemaranhar tabelas compartilhadas ou consultas entre bancos de dados.
 
 ## Artigos Relacionados
 
-- **[Estrutura de Módulo](./module-structure)** -- Como controladores e repositórios são organizados dentro de cada módulo
-- **[Configuração Local da API](./local-setup)** -- Guia de configuração completo passo a passo
+- **[Estrutura do Módulo](./module-structure)** -- Como controladores e repositórios são organizados dentro de cada módulo
+- **[Configuração Local da API](./local-setup)** -- Guia de configuração completo, passo a passo

@@ -39,7 +39,7 @@ Depois que seu grupo é criado, você pode preencher detalhes adicionais:
      - **Aberto** -- Qualquer pessoa pode ingressar imediatamente sem aprovação
      - **Solicitação** -- As pessoas devem enviar uma solicitação de adesão que requer aprovação (consulte [Solicitações de Adesão ao Grupo](./group-join-requests.md))
      - **Fechado** -- Os membros devem ser adicionados manualmente pelos líderes ou administradores
-   - **Rótulos** -- Atribua um ou mais rótulos descritivos ao grupo (por exemplo, "Presencial", "Online", "Bem-vindos Novos Membros"). Rótulos são tags de forma livre que você define; marque tudo que se aplicar. Os rótulos podem ser usados ​​para filtrar grupos no elemento do site do Navegador de Grupos.
+   - **Rótulos** -- Atribua um ou mais rótulos descritivos ao grupo (por exemplo, "Presencial", "Online", "Bem-vindos Novos Membros"). Rótulos são tags de forma livre que você define; marque tudo que se aplicar. Os rótulos podem ser usados para filtrar grupos no elemento do site do Navegador de Grupos.
    - **Grupo confidencial** -- Oculte este grupo e sua lista de membros de páginas públicas, localizador de grupos e não-membros. Use isso para grupos sensíveis como ministérios de recuperação ou aconselhamento; apenas os membros do grupo e funcionários da igreja podem vê-lo.
    - **Rastreamento de Presença** -- Habilite isso se você deseja registrar [presença](../attendance/tracking-attendance.md) para este grupo.
    - **Horários de Serviço** -- Associe o grupo aos horários de serviço da igreja específicos, se aplicável. Consulte [Configuração de Presença](../attendance/setup.md) para detalhes sobre horários de serviço.

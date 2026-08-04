@@ -51,6 +51,14 @@ Customize how your church appears across all ChurchApps tools:
 For best results, use a logo with a transparent background in PNG format. This ensures it looks great on both light and dark backgrounds.
 :::
 
+## Grade Promotion
+
+If you track **Grade** on children and students, B1 can automatically bump everyone up a grade on a date you choose (for example, August 1st) rather than requiring you to edit each profile by hand.
+
+1. On the Settings page, find the **Grade Promotion** option.
+2. Turn it on and choose the **month and day** to promote grades each year.
+3. Save your changes.
+
 ## Import and Export
 
 The **Import/Export** button in the Settings header opens a dedicated tool in a new browser window. Use this to:

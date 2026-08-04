@@ -6,76 +6,76 @@ title: "Gruppesamtaler"
 
 <div class="article-intro">
 
-The Conversations tab on your group page is a space where group members can post messages and interact with each other. Use conversations to discuss topics, share updates, and stay connected with your group between meetings.
+Samtaler-fanen på gruppesiden din er et sted der gruppemedlemmer kan legge ut meldinger og samhandle med hverandre. Bruk samtaler til å diskutere temaer, dele oppdateringer og holde kontakten med gruppen din mellom møter.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- You must be [logged in](../getting-started/logging-in.md) to your B1.church account.
-- You must be a member of the group to access the Conversations tab. See [Group Details](./group-details.md) for how to join a group.
+- Du må være [logget inn](../getting-started/logging-in.md) på B1.church-kontoen din.
+- Du må være medlem av gruppen for å få tilgang til Samtaler-fanen. Se [Gruppedetaljer](./group-details.md) for hvordan du blir med i en gruppe.
 
 </div>
 
-## Accessing Conversations
+## Få tilgang til samtaler
 
-1. Navigate to the group detail page by clicking on a group from the [groups page](./browsing-groups.md).
-2. Make sure you are logged in.
-3. Click the **Conversations** tab in the sidebar.
+1. Naviger til gruppedetaljsiden ved å klikke på en gruppe fra [gruppesiden](./browsing-groups.md).
+2. Kontroller at du er logget inn.
+3. Klikk **Samtaler**-fanen i sidemenyen.
 
-## Discussions and Announcements
+## Diskusjoner og kunngjøringer
 
-The Conversations tab may show two sub-tabs:
+Samtaler-fanen kan vise to underfaner:
 
-- **Discussions** -- A space where any group member can post messages and reply to others. This is the default view and is always available.
-- **Announcements** -- Messages posted by group leaders that are important for all members to see. Regular members can read announcements but only leaders can create them.
+- **Diskusjoner** -- Et sted der ethvert gruppemedlem kan legge ut meldinger og svare andre. Dette er standardvisningen og alltid tilgjengelig.
+- **Kunngjøringer** -- Meldinger lagt ut av gruppeledere som er viktige for alle medlemmer å se. Vanlige medlemmer kan lese kunngjøringer, men bare ledere kan opprette dem.
 
-If there are no announcements and you are not a leader, you will only see the Discussions view without the tab bar.
+Hvis det ikke finnes kunngjøringer og du ikke er en leder, ser du bare Diskusjoner-visningen uten fanelinjen.
 
-## Posting a Message
+## Legge ut en melding
 
-1. Open the **Conversations** tab on your group page.
-2. Make sure you are on the **Discussions** sub-tab (if the tab bar is visible).
-3. Type your message in the text field.
-4. Submit your message to share it with the group.
+1. Åpne **Samtaler**-fanen på gruppesiden din.
+2. Kontroller at du er på **Diskusjoner**-underfanen (hvis fanelinjen er synlig).
+3. Skriv meldingen din i tekstfeltet.
+4. Send meldingen din for å dele den med gruppen.
 
-Your message will be visible to all members of the group.
+Meldingen din vil være synlig for alle medlemmer av gruppen.
 
-## Editing or Deleting Your Messages
+## Redigere eller slette meldingene dine
 
-You can edit or delete any message you have posted:
+Du kan redigere eller slette enhver melding du har lagt ut:
 
-1. Hover over your message (or tap it on mobile) to reveal the **more options** button (⋮).
-2. Click the button to open the message menu.
-3. Choose **Edit** to modify the message text, or **Delete** to remove it.
-   - When editing, the message text loads back into the input field. Make your changes and submit to save them.
-   - When deleting, a confirmation dialog appears. Click **Confirm** to permanently remove the message.
+1. Hold musepekeren over meldingen din (eller trykk på den på mobil) for å vise **flere alternativer**-knappen (⋮).
+2. Klikk knappen for å åpne meldingsmenyen.
+3. Velg **Rediger** for å endre meldingsteksten, eller **Slett** for å fjerne den.
+   - Ved redigering lastes meldingsteksten tilbake inn i inndatafeltet. Gjør endringene dine og send inn for å lagre dem.
+   - Ved sletting vises en bekreftelsesdialog. Klikk **Bekreft** for å permanent fjerne meldingen.
 
 :::info
-You can only edit or delete your own messages. Messages posted by other members do not show the edit/delete options.
+Du kan bare redigere eller slette dine egne meldinger. Meldinger lagt ut av andre medlemmer viser ikke rediger/slett-alternativene.
 :::
 
-## Reacting to Messages
+## Reagere på meldinger
 
-In the group chat, you can react to any message with an emoji:
+I gruppechatten kan du reagere på enhver melding med en emoji:
 
-1. Tap or hover over a message and choose **Add reaction**.
-2. Pick one of the six emoji: 👍 ❤️ 😂 🎉 🙏 😮.
+1. Trykk på eller hold musepekeren over en melding og velg **Legg til reaksjon**.
+2. Velg en av de seks emojiene: 👍 ❤️ 😂 🎉 🙏 😮.
 
-Reactions appear as small chips under the message with a count of how many people used each one. Your own reaction is highlighted — tap the chip (or pick the same emoji again) to remove it, or pick a different emoji to add another. Reactions show up live for everyone in the chat.
+Reaksjoner vises som små brikker under meldingen med en telling av hvor mange personer som brukte hver av dem. Din egen reaksjon er uthevet — trykk på brikken (eller velg samme emoji igjen) for å fjerne den, eller velg en annen emoji for å legge til en ny. Reaksjoner vises direkte for alle i chatten.
 
 :::tip
-Group conversations also appear on your [Timeline](../community/timeline.md), so you can keep up with discussions without visiting each group individually.
+Gruppesamtaler vises også på [tidslinjen](../community/timeline.md) din, slik at du kan følge med på diskusjoner uten å besøke hver gruppe individuelt.
 :::
 
-## Leader Features
+## Lederfunksjoner
 
-If you are a group leader, you have additional capabilities in the Conversations tab:
+Hvis du er en gruppeleder, har du ekstra muligheter i Samtaler-fanen:
 
-- **Post announcements** -- Switch to the **Announcements** sub-tab and post messages that all group members can read.
-- **Post discussions** -- You can also participate in regular discussions just like any other member.
+- **Legg ut kunngjøringer** -- Bytt til **Kunngjøringer**-underfanen og legg ut meldinger som alle gruppemedlemmer kan lese.
+- **Legg ut diskusjoner** -- Du kan også delta i vanlige diskusjoner akkurat som ethvert annet medlem.
 
 :::info
-Conversations are specific to each group. Messages you post in one group will not appear in another group's conversations.
+Samtaler er spesifikke for hver gruppe. Meldinger du legger ut i én gruppe vil ikke vises i en annen gruppes samtaler.
 :::

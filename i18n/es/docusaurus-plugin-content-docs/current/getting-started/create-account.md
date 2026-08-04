@@ -1,68 +1,68 @@
 ---
-title: "Creación de su Cuenta"
+title: "Crear tu cuenta"
 ---
 
-# Creación de su Cuenta
+# Crear tu cuenta
 
 <div class="article-intro">
 
-Empezar con ChurchApps comienza con crear su cuenta. El proceso toma solo unos minutos y le da acceso a todas las herramientas ChurchApps, incluyendo B1 Admin, B1.church y Lessons.church.
+Comenzar con ChurchApps empieza por crear tu cuenta. El proceso solo toma unos minutos y te da acceso a todas las herramientas de ChurchApps, incluidas B1 Admin, B1.church y Lessons.church.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- Tenga una dirección de correo electrónico válida lista para verificación de cuenta
-- Revise la descripción general de [Primeros Pasos](./index.md) para entender qué ChurchApps ofrece
+- Ten a mano una dirección de correo electrónico válida para la verificación de la cuenta
+- Revisa la [descripción general de primeros pasos](./index.md) para entender qué ofrece ChurchApps
 
 </div>
 
-## Registro Paso a Paso
+## Registro paso a paso
 
-1. Vaya a [B1.church](https://b1.church) en su navegador web.
-2. Haga clic en el botón **Registrar**.
-3. Ingrese su **nombre**, **apellido** y **dirección de correo electrónico**.
-4. Cree una contraseña para su cuenta.
-5. Envíe el formulario de registro.
+1. Ve a [B1.church](https://b1.church) en tu navegador web.
+2. Haz clic en el botón **Register**.
+3. Ingresa tu **nombre**, **apellido** y **dirección de correo electrónico** -- o, si tu iglesia tiene el inicio de sesión único habilitado, haz clic en **Continue with Google** o **Continue with Microsoft** para pasar directamente al paso 5 usando tu cuenta existente.
+4. Crea una contraseña para tu cuenta.
+5. Envía el formulario de registro.
 
-## Confirmación de su Correo Electrónico
+## Confirmar tu correo electrónico
 
-Después de registrarse, recibirá un correo electrónico de confirmación en la dirección que proporcionó.
+Después de registrarte, recibirás un correo electrónico de confirmación en la dirección que proporcionaste.
 
-1. Revise su bandeja de entrada para el correo electrónico de confirmación de ChurchApps.
-2. Haga clic en el enlace de confirmación en el correo electrónico.
-3. Su cuenta ahora está verificada y lista para usar.
+1. Revisa tu bandeja de entrada para ver el correo de confirmación de ChurchApps.
+2. Haz clic en el enlace de confirmación del correo.
+3. Tu cuenta ahora está verificada y lista para usar.
 
 :::tip
-Si no ve el correo electrónico de confirmación, revise su carpeta de spam o correo no deseado. El correo electrónico viene de ChurchApps y puede tomar un minuto o dos en llegar.
+Si no ves el correo de confirmación, revisa tu carpeta de correo no deseado o spam. El correo proviene de ChurchApps y puede tardar uno o dos minutos en llegar.
 :::
 
-## Configuración de Su Iglesia
+## Configurar tu iglesia
 
-Después de confirmar su correo electrónico e iniciar sesión, tendrá la opción de crear una nueva iglesia o unirse a una existente.
+Después de confirmar tu correo electrónico e iniciar sesión, tendrás la opción de crear una nueva iglesia o unirte a una existente.
 
 **Para crear una nueva iglesia:**
 
-1. Seleccione la opción para **crear una nueva iglesia**.
-2. Ingrese el **nombre de su iglesia** e información básica. El formulario de registro rellenará automáticamente los detalles de su iglesia si se encuentra una coincidencia.
-3. Complete el proceso de configuración.
-4. Será llevado al **panel de control de B1 Admin** donde puede comenzar a configurar su iglesia.
+1. Selecciona la opción para **crear una nueva iglesia**.
+2. Ingresa el **nombre de tu iglesia** y la información básica. El formulario de registro completará automáticamente los detalles de tu iglesia si se encuentra una coincidencia.
+3. Completa el proceso de configuración.
+4. Serás llevado al **panel de B1 Admin**, donde puedes comenzar a configurar tu iglesia.
 
-**Para unirse a una iglesia existente:**
+**Para unirte a una iglesia existente:**
 
-1. Seleccione la opción para **unirse a una iglesia existente**.
-2. Busque su iglesia por nombre.
-3. Solicite unirse. Un administrador en su iglesia necesitará aprobar su solicitud.
+1. Selecciona la opción para **unirte a una iglesia existente**.
+2. Busca tu iglesia por nombre.
+3. Solicita unirte. Un administrador de tu iglesia deberá aprobar tu solicitud.
 
 :::info
-Si intenta iniciar sesión con un correo electrónico que aún no está registrado, será automáticamente dirigido al flujo de registro para que pueda crear una cuenta.
+Si intentas iniciar sesión con un correo electrónico que aún no está registrado, se te dirigirá automáticamente al flujo de registro para que puedas crear una cuenta.
 :::
 
 :::info
-La persona que crea una nueva iglesia es automáticamente asignada el rol de **Admin de Dominio**, que otorga acceso completo a toda la configuración y características. Puede agregar administradores adicionales más tarde desde la página de **Roles**.
+La persona que crea una nueva iglesia recibe automáticamente el rol de **Domain Admin**, que otorga acceso completo a todas las configuraciones y funciones. Puedes agregar administradores adicionales más tarde desde la página **Roles**.
 :::
 
-## Lo Que Viene Después
+## Qué sigue
 
-Una vez que su iglesia esté configurada, diríjase a la guía de [Configuración Inicial](./initial-setup.md) para configurar la información, marca y acceso del equipo de su iglesia.
+Una vez que tu iglesia esté configurada, dirígete a la guía de [Configuración inicial](./initial-setup.md) para configurar los ajustes, la marca y el acceso del equipo de tu iglesia.

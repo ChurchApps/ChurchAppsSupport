@@ -6,7 +6,7 @@ title: "Database"
 
 <div class="article-intro">
 
-Ang ChurchApps API ay gumagamit ng isang **database-per-module** na arkitektura. Bawat isa sa anim na data module ay may sariling MySQL database na may independent na connection pool, na nagbibigay ng malinaw na data boundary habang pinapanatili ang lahat sa loob ng isang deployment.
+Gumagamit ang ChurchApps API ng arkitekturang **database-per-module**. Ang bawat isa sa anim na data module ay may sariling MySQL database na may independiyenteng connection pool, na nagbibigay ng malinaw na hangganan ng data habang pinapanatili ang lahat sa loob ng iisang deployment.
 
 </div>
 
@@ -14,11 +14,11 @@ Ang ChurchApps API ay gumagamit ng isang **database-per-module** na arkitektura.
 <h4>Bago Ka Magsimula</h4>
 
 - I-install ang **MySQL 8.0+** -- tingnan ang [Prerequisites](../setup/prerequisites)
-- I-configure ang database connection string sa iyong `.env` file -- tingnan ang [Environment Variable](../setup/environment-variables)
+- I-configure ang mga connection string ng database sa iyong `.env` file -- tingnan ang [Environment Variables](../setup/environment-variables)
 
 </div>
 
-## Architecture Overview
+## Pangkalahatang-ideya ng Arkitektura
 
 ```
 Api
@@ -30,24 +30,24 @@ Api
 └── doing_db        ← Tasks, plans, assignments
 ```
 
-### Key Design Decision
+### Mga Pangunahing Desisyon sa Disenyo
 
-- **Isang database bawat module** -- Bawat module ay may sariling MySQL database na may dedicated na connection pool (pinamamahalaan ng `KyselyPool`). Ito ay pinapanatili ang mga module na naka-decouple at nagbibigay-daan sa independent schema evolution.
-- **Eksklusibong pagmamay-ari** -- Ang mga talahanayan ng isang module ay basahin at isulat lamang ng code ng sariling module. Kapag kailangan ng ibang module ang data, tumawag ito sa gateway ng module na may-ari sa halip na ang sarili nitong mag-query sa mga talahanayan -- tingnan ang [Cross-Module Communication](./module-structure#cross-module-communication).
-- **Repository pattern na walang ORM** -- Lahat ng data access ay napupunta sa pamamagitan ng repository class na bumubuo ng typed SQL gamit ang Kysely query builder laban sa schema ng module. Ito ay nagbibigay ng buong kontrol sa query performance at behavior.
-- **Multi-tenant by design** -- Bawat query ay scoped ng `churchId`. Lahat ng talahanayan ay may kasamang `churchId` column, at ang repository layer ay nag-enforce ng tenant isolation nang awtomatiko.
+- **Isang database bawat module** -- Nagpapanatili ang bawat module ng sarili nitong MySQL database na may dedicated na connection pool (pinamamahalaan ng `KyselyPool`). Pinapanatili nitong hiwalay ang mga module at pinapayagan ang independiyenteng ebolusyon ng schema.
+- **Eksklusibong pagmamay-ari** -- Binabasa at isinusulat lamang ang mga table ng isang module ng sariling code ng module na iyon. Kapag kailangan ng ibang module ang data, tinatawagan nito ang gateway ng module na may-ari sa halip na direktang mag-query sa mga table nito -- tingnan ang [Cross-Module Communication](./module-structure#cross-module-communication).
+- **Repository pattern nang walang ORM** -- Dumadaan ang lahat ng data access sa mga repository class na bumubuo ng typed SQL gamit ang Kysely query builder laban sa schema ng module. Nagbibigay ito ng buong kontrol sa performance at asal ng query.
+- **Multi-tenant sa disenyo** -- Naka-scope ang bawat query sa pamamagitan ng `churchId`. May kasamang column na `churchId` ang lahat ng table, at awtomatikong ipinapatupad ng repository layer ang tenant isolation.
 
-## Connection String
+## Mga Connection String
 
-Ang database connection ng bawat module ay naka-configure sa `.env` gamit ang standard MySQL connection string format:
+Naka-configure ang koneksyon ng database ng bawat module sa `.env` gamit ang standard na format ng MySQL connection string:
 
 ```
 mysql://user:password@host:port/database
 ```
 
-Halimbawa, ang isang local development setup ay maaaring magmukhang ganito:
+Halimbawa, maaaring ganito ang itsura ng isang local development setup:
 
-Bawat module ay basahin ang connection nito mula sa environment variable na pinangalanang `<MODULE>_CONNECTION_STRING`:
+Binabasa ng bawat module ang koneksyon nito mula sa isang environment variable na pinangalanang `<MODULE>_CONNECTION_STRING`:
 
 ```env
 MEMBERSHIP_CONNECTION_STRING=mysql://root:password@localhost:3306/churchapps_membership
@@ -59,12 +59,12 @@ DOING_CONNECTION_STRING=mysql://root:password@localhost:3306/churchapps_doing
 ```
 
 :::info
-Sa production, ang mga connection string ay nakaimbak sa AWS SSM Parameter Store at binasa ng `Environment` class sa startup.
+Sa production, iniimbak ang mga connection string sa AWS SSM Parameter Store at binabasa ng `Environment` class sa startup.
 :::
 
-## Schema Script
+## Mga Schema Script
 
-Ang mga schema ng talahanayan ay tinukoy bilang Kysely migration sa `tools/migrations/` directory, inayos ng module:
+Ang mga schema ng table ay tinutukoy bilang mga Kysely migration sa `tools/migrations/` directory, na naayos ayon sa module:
 
 ```
 tools/migrations/
@@ -76,9 +76,9 @@ tools/migrations/
 └── doing/
 ```
 
-Ang migration ay tumutukoy ng table creation, index, at schema change. Ang `tools/dbScripts/` directory ay may demo at seed data na maaaring i-load sa tuktok ng schema.
+Tinutukoy ng mga migration ang paglikha ng table, mga index, at pagbabago sa schema. Naglalaman ang `tools/dbScripts/` directory ng demo at seed data na maaaring i-load sa ibabaw ng schema.
 
-## Database Initialization
+## Pag-initialize ng Database
 
 ### I-initialize ang lahat ng database
 
@@ -86,21 +86,21 @@ Ang migration ay tumutukoy ng table creation, index, at schema change. Ang `tool
 npm run initdb
 ```
 
-Ito ay lumilikha ng lahat ng anim na database at tumatakbo sa migration para sa bawat isa.
+Lumilikha ito ng lahat ng anim na database at nagpapatakbo ng mga migration para sa bawat isa.
 
-### I-initialize ang isang single module
+### I-initialize ang iisang module
 
 ```bash
 npm run initdb -- --module=membership
 ```
 
 :::tip
-Kapag nagtatrabaho sa isang specific na module, maaari mong i-re-initialize ang database lamang ng module na iyon nang hindi nakakaapekto sa iba.
+Kapag nagtatrabaho sa isang partikular na module, maaari mong i-reinitialize ang database lamang ng module na iyon nang hindi naaapektuhan ang iba.
 :::
 
-## Data Access Pattern
+## Pattern ng Data Access
 
-Ang repository ay bumubuo ng query gamit ang Kysely query builder laban sa typed database schema ng module, na nakuha sa pamamagitan ng `getDb()` function ng module. Ang isang typical na repository method ay ganito:
+Bumubuo ang mga repository ng mga query gamit ang Kysely query builder laban sa typed database schema ng module, na kinukuha sa pamamagitan ng function na `getDb()` ng module. Ganito ang hitsura ng isang tipikal na repository method:
 
 ```typescript
 public async loadAll(churchId: string) {
@@ -110,7 +110,7 @@ public async loadAll(churchId: string) {
 }
 ```
 
-Ang repository ay nakukuha sa pamamagitan ng `RepoManager`:
+Kinukuha ang mga repository sa pamamagitan ng `RepoManager`:
 
 ```typescript
 const repos = await RepoManager.getRepos<Repos>("membership");
@@ -118,16 +118,16 @@ const people = await repos.person.loadAll(churchId);
 ```
 
 :::warning
-Palaging isama ang `churchId` sa iyong query upang mapanatili ang multi-tenant isolation. Huwag mag-query sa buong tenant maliban kung mayroon kang specific, authorized na dahilan upang gawin ito.
+Palaging isama ang `churchId` sa iyong mga query upang mapanatili ang multi-tenant isolation. Huwag kailanman mag-query sa buong tenant maliban kung mayroon kang partikular at awtorisadong dahilan upang gawin ito.
 :::
 
-## Cross-Module Reference
+## Mga Cross-Module Reference
 
-Dahil ang data ng bawat module ay nabubuhay sa isang hiwalay na database, walang foreign key o SQL join sa buong module boundary. Ang isang record na may kaugnayan sa data ng ibang module ay nag-store ng id ng record na iyon -- halimbawa, ang isang donation sa giving database ay may dala ang `personId` ng isang tao sa membership database -- at ang anumang cross-module composition ay nangyayari sa application code.
+Dahil ang data ng bawat module ay nasa hiwalay na database, walang foreign key o SQL join sa kabuuan ng mga hangganan ng module. Ang isang record na may kaugnayan sa data ng ibang module ay nag-iimbak ng id ng record na iyon -- halimbawa, may dalang `personId` ng isang tao sa membership database ang isang donasyon sa giving database -- at ang anumang cross-module na komposisyon ay nangyayari sa application code.
 
-Ang constraint na ito ay kung ano ang gumagawa ng module boundary na totoo: bawat schema ay maaaring mag-evolve nang independyente, ang database ng isang module ay maaaring ilipat sa sarili nitong server, at ang isang module ay maaaring maging extracted sa isang standalone service nang walang pagbubuklod ng shared table o cross-database query.
+Ito ang constraint na gumagawa sa mga hangganan ng module na totoo: maaaring mag-evolve ang bawat schema nang independiyente, maaaring ilipat ang database ng isang module sa sarili nitong server, at maaari pang ma-extract ang isang module bilang standalone na serbisyo nang hindi kinakailangang tanggalin ang mga shared table o cross-database query.
 
 ## Mga Kaugnay na Artikulo
 
-- **[Module Structure](./module-structure)** -- Kung paano ang mga controller at repository ay inayos sa loob ng bawat module
-- **[Local API Setup](./local-setup)** -- Kompletong step-by-step setup guide
+- **[Module Structure](./module-structure)** -- Kung paano nakaayos ang mga controller at repository sa loob ng bawat module
+- **[Local API Setup](./local-setup)** -- Kumpletong hakbang-hakbang na gabay sa setup

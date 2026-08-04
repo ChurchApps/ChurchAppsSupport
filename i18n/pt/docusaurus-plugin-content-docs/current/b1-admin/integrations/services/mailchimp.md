@@ -79,12 +79,12 @@ O [aplicativo Mailchimp](https://www.make.com/en/integrations/mailchimp) do Make
 ## Limites e Notas
 
 - **O nível gratuito do Mailchimp limita contatos e públicos** — um Zap que inunda um público gratuito além de seu limite começará a errar com `4xx Member limit reached`. Os logs do Mailchimp tornam isso óbvio.
-- **Mailchimp desidentifica por email**, então executar um Zap novamente na mesma pessoa B1 a atualiza no lugar; não cria duplicatas.
+- **O Mailchimp deduplica por email**, então executar um Zap novamente na mesma pessoa B1 a atualiza no lugar; não cria duplicatas.
 - **Cancelamentos de inscrição do Mailchimp não fluem de volta para B1.** Se você quiser que cancelamentos de inscrição do Mailchimp limpem a preferência "Enviar Email" de B1, construa o Zap reverso explicitamente.
 
 ## Solução de Problemas
 
-- **Zap nunca dispara** — verifique `Configurações → Desenvolvedor → Webhooks` para a linha `Zapier — person.created`. Se ausente, a chave API estava faltando `settings:write` quando o Zap ligou. Regerine, reconecte, alterne o Zap desligado e ligado.
+- **Zap nunca dispara** — verifique `Configurações → Desenvolvedor → Webhooks` para a linha `Zapier — person.created`. Se ausente, a chave API estava faltando `settings:write` quando o Zap ligou. Gere a chave novamente, reconecte e alterne o Zap desligado e ligado.
 - **Aviso `Member exists` em Adicionar/Atualizar** — mude a ação de *Adicionar Inscrito* para *Adicionar/Atualizar Inscrito* (o verbo importa). A variante de upsert é idempotente.
 - **Primeiro nome / sobrenome aparecem em branco** — `data.name.first` e `data.name.last` de B1 são preenchidos apenas se esses campos forem definidos na pessoa. Mapeie `data.name.display` como fallback.
 

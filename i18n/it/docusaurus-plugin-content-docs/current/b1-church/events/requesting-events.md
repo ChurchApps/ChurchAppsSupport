@@ -1,52 +1,52 @@
 ---
-title: "Richiesta di eventi e stanze"
+title: "Richiedere Eventi e Stanze"
 ---
 
-# Richiesta di eventi e stanze
+# Richiedere Eventi e Stanze
 
 <div class="article-intro">
 
-Se la tua chiesa tiene traccia di stanze e risorse prenotabili, puoi richiedere un evento — con le stanze e le attrezzature di cui ha bisogno — direttamente dal portale dei membri. I conflitti con le prenotazioni esistenti vengono segnalati mentre fai la selezione, la tua richiesta va alla chiesa per l'approvazione, e puoi monitorarla o annullarla da Le mie richieste.
+Se la tua chiesa tiene traccia di stanze e risorse prenotabili, puoi richiedere un evento -- con le stanze e le attrezzature di cui ha bisogno -- direttamente dal portale membri. I conflitti con prenotazioni esistenti vengono segnalati mentre scegli, la tua richiesta viene inviata alla chiesa per l'approvazione, e puoi tenerne traccia o annullarla da My Requests.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di iniziare</h4>
+<h4>Prima di Iniziare</h4>
 
-- Devi essere [connesso](../getting-started/logging-in.md) al portale dei membri
-- La tua chiesa deve avere stanze o risorse configurate in B1 Admin — i scorciatoie di richiesta appaiono solo quando le ha
+- Devi aver effettuato l'[accesso](../getting-started/logging-in.md) al portale membri
+- La tua chiesa deve avere stanze o risorse configurate in B1 Admin -- le scorciatoie per la richiesta appaiono solo quando è così
 
 </div>
 
-## Invio di una richiesta
+## Inviare una Richiesta
 
-1. Apri la pagina **Me** nel portale dei membri e tocca **Richiedi un evento** sotto Scorciatoie.
-2. Compila le informazioni di base sull'evento: **Titolo dell'evento**, una **Descrizione** opzionale, i tempi **Inizio** e **Fine** (o **Tutto il giorno**), e se **Ripete**.
-3. Seleziona le **Stanze** e le **Risorse** di cui hai bisogno. Per le risorse puoi impostare una **Quantità**.
-4. Fai attenzione agli avvisi di conflitto — se il tuo orario si sovrappone a una prenotazione esistente per una stanza o una risorsa, vedrai *"Questo orario è in conflitto con una prenotazione esistente."* Puoi regolare il tuo orario o sceglierne qualcosa di diverso.
-5. Tocca **Invia richiesta**.
+1. Apri la pagina **Me** nel portale membri e tocca **Request an Event** sotto Shortcuts.
+2. Compila le informazioni di base dell'evento: **Event title**, una **Description** facoltativa, gli orari di **Start** e **End** (oppure **All day**), e se **Repeats**.
+3. Scegli le **Rooms** e le **Resources** di cui hai bisogno. Per le risorse puoi impostare una **Qty**.
+4. Fai attenzione agli avvisi di conflitto -- se il tuo orario si sovrappone a una prenotazione esistente per una stanza o risorsa, vedrai *"This time conflicts with an existing booking."* Puoi modificare il tuo orario o scegliere qualcos'altro.
+5. Tocca **Submit Request**.
 
-Dopo l'invio, un riepilogo **Richiesta inviata** mostra lo stato di ogni stanza e risorsa che hai richiesto:
+Dopo l'invio, un riepilogo **Request submitted** mostra lo stato di ogni stanza e risorsa che hai richiesto:
 
-- **Approvato** -- Prenotato immediatamente (la stanza o la risorsa non ha un gruppo di approvazione).
-- **In attesa di approvazione** -- Qualcuno della chiesa deve prima approvare.
+- **Approved** -- Prenotata immediatamente (la stanza o risorsa non ha un gruppo di approvazione).
+- **Pending approval** -- Qualcuno della chiesa deve prima dare l'approvazione.
 
-## Monitoraggio delle tue richieste
+## Tenere Traccia delle Tue Richieste
 
-Apri **Le mie richieste** dalla pagina Me. Ogni richiesta mostra l'evento, quando l'hai richiesto, e un pill di stato:
+Apri **My Requests** dalla pagina Me. Ogni richiesta mostra l'evento, quando l'hai richiesto, e una pillola di stato:
 
-- **In sospeso** -- In attesa di una decisione
-- **Approvato** -- La tua prenotazione è confermata
-- **Rifiutato** -- La richiesta è stata declinata
+- **Pending** -- In attesa di una decisione
+- **Approved** -- La tua prenotazione è confermata
+- **Rejected** -- La richiesta è stata rifiutata
 
-Mentre una richiesta è ancora in sospeso, puoi ritirarla con **Annulla richiesta** (ti verrà chiesto di confermare — l'annullamento non può essere annullato).
+Mentre una richiesta è ancora in sospeso, puoi ritirarla con **Cancel request** (ti verrà chiesto di confermare -- l'annullamento non può essere annullato).
 
 :::info
-Le richieste sono revisionate dal personale della chiesa sulla pagina [Approvazioni](../../b1-admin/calendars/approvals) di B1 Admin. Quali stanze e risorse richiedono approvazione dipende dalla tua chiesa — vedi [Stanze e risorse](../../b1-admin/calendars/rooms-resources).
+Le richieste vengono esaminate dallo staff della chiesa nella pagina [Approvals](../../b1-admin/calendars/approvals) di B1 Admin. Quali stanze e risorse necessitano di approvazione dipende dalla tua chiesa -- vedi [Stanze e Risorse](../../b1-admin/calendars/rooms-resources).
 :::
 
-## Articoli correlati
+## Articoli Correlati
 
-- [La pagina Me](../getting-started/me-page) -- Dove vivono i scorciatoie di richiesta
-- [Approvazioni del calendario (B1 Admin)](../../b1-admin/calendars/approvals) -- Come il personale rivede le richieste
-- [Stanze e risorse (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- Come le chiese configurano gli spazi prenotabili
+- [La Pagina Me](../getting-started/me-page) -- Dove si trovano le scorciatoie per le richieste
+- [Approvazioni del Calendario (B1 Admin)](../../b1-admin/calendars/approvals) -- Come lo staff esamina le richieste
+- [Stanze e Risorse (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- Come le chiese configurano gli spazi prenotabili

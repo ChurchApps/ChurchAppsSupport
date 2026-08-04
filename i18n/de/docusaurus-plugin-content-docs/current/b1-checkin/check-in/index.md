@@ -1,40 +1,40 @@
 ---
-title: "Einchecken-Workflow"
+title: "Check-In-Workflow"
 ---
 
-# Einchecken-Workflow
+# Check-In-Workflow
 
 <div class="article-intro">
 
-Der Einchecken-Prozess in B1 Church Checkin folgt einem einfachen, schrittweisen Ablauf. Ein Gemeindepräsident geht zum Kiosk, findet seine Familie, bestätigt Gruppenzuweisungen und checkt ein – alles in unter einer Minute. Dieser Abschnitt behandelt jeden Schritt des Kiosk-Einchecken-Prozesses.
+Der Check-In-Prozess in B1 Church Checkin folgt einem einfachen, schrittweisen Ablauf. Ein Kirchenmitglied geht zum Kiosk, findet seine Familie, bestätigt Gruppenzuordnungen und meldet sich an – alles in weniger als einer Minute. Dieser Abschnitt behandelt jeden Schritt der Kiosk-Check-In-Erfahrung.
 
 </div>
 
-## Der Einchecken-Ablauf auf einen Blick
+## Der Check-In-Fluss auf einen Blick
 
-1. **[Wählen Sie einen Dienst](./selecting-service)** – Wählen Sie, an welchem Dienst Sie teilnehmen (z. B. Sonntag AM, Sonntag PM, Wochenmitte).
-2. **[Suchen Sie Ihre Familie](./looking-up-members)** – Suchen Sie nach Telefonnummer oder Nachname, um sich im System zu finden.
-3. **[Überprüfen Sie Ihren Haushalt](./household-review)** – Sehen Sie alle Familienmitglieder und ihre aktuellen Gruppenzuweisungen.
-4. **[Weisen Sie Gruppen zu](./group-assignment)** – Wählen Sie, welche Klasse oder Gruppe jedes Familienmitglied für jede Servicezeit besuchen soll.
-5. **[Fügen Sie Gäste hinzu](./adding-guests)** (optional) – Fügen Sie einen Besucher zu Ihrem Haushalt hinzu, falls er sich Ihnen anschließt.
-6. **[Schließen Sie das Einchecken ab](./completing-checkin)** – Tippen Sie auf die Einchecken-Schaltfläche, um die Anwesenheit zu senden und Etiketten zu drucken.
-7. **[Checken Sie aus](./checking-out)** (bemannte Stationen) – Beim Abholen überprüfen Sie den Sicherheitscode und die Abholperson mit vertrauenswürdigen Abholisten, Pager-Eltern und Etiketten-Nachdrucken.
+1. **[Wählen Sie einen Service aus](./selecting-service)** – Wählen Sie, welchen Service Sie besuchen (z. B. Sonntag morgens, Sonntag nachmittags, Wochenmitte).
+2. **[Suchen Sie Ihre Familie auf](./looking-up-members)** – Suchen Sie nach Telefonnummer oder Nachname, um sich selbst im System zu finden.
+3. **[Überprüfen Sie Ihren Haushalt](./household-review)** – Sehen Sie alle Familienmitglieder und ihre aktuellen Gruppenzuordnungen.
+4. **[Weisen Sie Gruppen zu](./group-assignment)** – Wählen Sie, welche Klasse oder Gruppe jedes Familienmitglied für jede Service-Zeit besuchen soll.
+5. **[Fügen Sie Gäste hinzu](./adding-guests)** (optional) – Fügen Sie einen Besucher zu Ihrem Haushalt hinzu, wenn er sich Ihnen anschließt.
+6. **[Schließen Sie das Check-In ab](./completing-checkin)** – Tippen Sie auf die Check-In-Schaltfläche, um die Anwesenheit zu senden und Etiketten zu drucken.
+7. **[Melden Sie sich ab](./checking-out)** (bemannte Stationen) – Zur Abholvzeit überprüfen Sie den Sicherheitscode und die Abholperson mit vertrauenswürdigen Abholer-Listen, Eltern-Rufseite und Etiketten-Nachdrucke.
 
-Nach Abschluss des Einchecks zeigt die App einen Erfolgs-Bildschirm an und kehrt automatisch zum Suchseite-Bildschirm zurück, bereit für die nächste Familie.
+Nach Abschluss des Check-Ins zeigt die App einen Erfolgsbildschirm an und kehrt automatisch zum Suchbildschirm zurück, bereit für die nächste Familie.
 
 :::tip
-Der gesamte Ablauf wurde für unabhängige Nutzung durch Gemeindepräsidenten konzipiert. Freiwillige müssen den Kiosk nicht bedienen, obwohl es immer eine gute Idee ist, jemanden in der Nähe zu haben, der Erstbesucher hilft.
+Der gesamte Ablauf ist für Kirchenmitglieder zur unabhängigen Nutzung konzipiert. Freiwillige müssen den Kiosk nicht betreiben, obwohl es immer eine gute Idee ist, jemanden in der Nähe zu haben, um Erstbesucher zu helfen.
 :::
 
-## Bevor Sie anfangen
+## Bevor Sie beginnen
 
-Stellen Sie sicher, dass folgende Konfigurationen in B1 Admin durchgeführt werden, bevor Sie den Einchecken-Kiosk verwenden:
+Stellen Sie sicher, dass folgende Punkte in B1 Admin konfiguriert sind, bevor Sie den Check-In-Kiosk verwenden:
 
-- **Dienste und Servicezeiten** werden unter den Anwesenheitseinstellungen eingerichtet. Siehe den [Anwesenheitssetup-Leitfaden](../../b1-admin/attendance/setup.md).
-- **Gruppen** werden erstellt und mit den entsprechenden Servicezeiten verlinkt. Siehe [Gruppen erstellen](../../b1-admin/groups/creating-groups.md).
-- **Gruppeneinstellungen** werden für Etikett-Druck konfiguriert: Aktivieren Sie **Print Nametag** für Gruppen, die Namensetiketten benötigen, und **Parent Pickup** für Kinderzimmer, die Abholetickets benötigen.
-- **Personen** werden dem System mit Haushaltszuordnungen hinzugefügt. Siehe [Personen hinzufügen](../../b1-admin/people/adding-people.md).
+- **Services und Service-Zeiten** sind unter Anwesenheits-Einstellungen eingerichtet. Siehe [Anwesenheits-Einrichtungshandbuch](../../b1-admin/attendance/setup.md).
+- **Gruppen** sind erstellt und mit den entsprechenden Service-Zeiten verknüpft. Siehe [Gruppen erstellen](../../b1-admin/groups/creating-groups.md).
+- **Gruppeneinstellungen** sind für den Etikettendruck konfiguriert: Aktivieren Sie **Namensschilddruck** für Gruppen, die Namensetiketten benötigen, und **Eltern-Abholen** für Kinderzimmer, die Abholbelege benötigen.
+- **Personen** sind mit Haushaltszuordnungen zum System hinzugefügt. Siehe [Personen hinzufügen](../../b1-admin/people/adding-people.md).
 
 :::info
-Wenn Sie den Kiosk selbst noch nicht eingerichtet haben, siehe [Getting Started](../getting-started/) für Installations-, Anmeldungs- und Drucker-Konfigurationsanweisungen.
+Wenn Sie den Kiosk selbst noch nicht eingerichtet haben, siehe [Erste Schritte](../getting-started/) für Installations-, Login- und Druckerkonfigurationsanweisungen.
 :::

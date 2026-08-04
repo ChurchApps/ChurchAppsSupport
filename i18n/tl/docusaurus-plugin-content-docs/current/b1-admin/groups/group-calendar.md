@@ -1,26 +1,26 @@
 ---
-title: "Kalendaryo ng Grupo"
+title: "Group Calendar"
 ---
 
-# Kalendaryo ng Grupo
+# Group Calendar
 
 <div class="article-intro">
 
-Ang bawat grupo sa B1 ay maaaring magkaroon ng sariling kalendaryo ng event. Ginagamit ito ng mga lider ng grupo upang mag-iskedyul ng mga pagpupulong, aktibidad, at umuulit na event, habang ang lahat ng miyembro ng grupo ay maaaring tingnan ang mga paparating na event at sumali sa mga usapan tungkol dito. Pinapanatili ng kalendaryo ang iyong grupo na organisado at tinitiyak na alam ng lahat ang mga paparating na aktibidad.
+Bawat grupo sa B1 ay puwedeng magkaroon ng sariling event calendar. Ginagamit ito ng mga leader ng grupo para mag-iskedyul ng mga miting, aktibidad, at paulit-ulit na event, habang lahat ng miyembro ng grupo ay puwedeng tumingin sa mga paparating na event at sumali sa mga usapan tungkol dito. Pinapanatili ng calendar ang organisasyon ng iyong grupo at tinitiyak na alam ng lahat kung ano ang darating.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Kailangan mo ng grupo na nalikha sa B1 Admin na may kahit isang miyembro. Tingnan ang [Paglikha ng Mga Grupo](creating-groups.md) at [Mga Miyembro ng Grupo](group-members.md).
-- Upang magdagdag o mag-edit ng mga event sa kalendaryo, kailangan mong maging itinalaga bilang lider ng grupo. Tingnan ang [Pag-designate ng mga Lider ng Grupo](group-members.md) para sa mga tagubilin.
+- Kailangan mo ng grupong ginawa sa B1 Admin na may kahit isang miyembro. Tingnan ang [Creating Groups](creating-groups.md) at [Group Members](group-members.md).
+- Para magdagdag o mag-edit ng calendar event, dapat itakda ka bilang leader ng grupo. Tingnan ang [Designating Group Leaders](group-members.md) para sa mga instruksyon.
 
 </div>
 
-## Pag-access sa Kalendaryo ng Grupo
+## Pag-access sa Group Calendar
 
-Ang kalendaryo ng grupo ay available sa pamamagitan ng B1.church member-facing app:
+Available ang group calendar sa pamamagitan ng member-facing app na B1.church:
 
 1. Mula sa B1 Admin, i-click ang **dropdown menu** sa kanang itaas na sulok ng iyong screen.
 2. Piliin ang **Switch App**.
@@ -30,70 +30,81 @@ Ang kalendaryo ng grupo ay available sa pamamagitan ng B1.church member-facing a
 6. I-click ang **Calendar** sa kaliwang bahagi ng screen.
 
 :::info
-Ang kalendaryo ng grupo ay pinamamahalaan sa pamamagitan ng B1.church (ang member app) at hindi sa pamamagit ng B1 Admin. Ina-access ito ng mga lider ng grupo sa pamamagitan ng pag-switch ng app mula sa admin dashboard.
+Pinamamahalaan ang group calendar sa pamamagitan ng B1.church (ang member app) sa halip na B1 Admin. Ini-access ito ng mga leader ng grupo sa pamamagitan ng paglipat ng app mula sa admin dashboard.
 :::
 
 ## Pagdaragdag ng Event
 
-1. Mula sa kalendaryo ng grupo, i-click ang **Add an Event**.
-2. Maglagay ng **titulo** para sa event.
-3. Sumulat ng maikling **paglalarawan** kung tungkol saan ang event.
-4. I-set ang **oras ng simula** at **oras ng pagtapos**.
-5. I-click ang **Save** upang idagdag ang event sa kalendaryo.
+1. Mula sa group calendar, i-click ang **Add an Event**.
+2. Ilagay ang **title** ng event.
+3. Sumulat ng maikling **description** kung ano ang tungkol sa event.
+4. Itakda ang **start time** at **end time**.
+5. I-click ang **Save** para idagdag ang event sa calendar.
 
-## Pag-set Up ng mga Umuulit na Event
+## Pag-set Up ng mga Paulit-ulit na Event
 
-Kung ang iyong grupo ay nagpupulong sa regular na iskedyul, maaari mong i-set ang mga event na awtomatikong mag-uulit:
+Kung ang iyong grupo ay regular na nagmimiting, puwede mong itakdang paulit-ulit ang mga event nang awtomatiko:
 
-1. Kapag lumilikha o nag-e-edit ng event, i-check ang kahon na **Recurring**.
-2. Piliin kung paano dapat mag-ulit ang event:
-   - **Interval** -- Magtakda ng bilang ng mga araw sa pagitan ng mga pag-uulit. Halimbawa, ang paglagay ng "7" ay nag-uulit ng event tuwing 7 araw.
-   - **Frequency** -- Piliin kung mag-uulit ayon sa **araw**, **linggo**, o **buwan**.
-3. I-save ang event. Ito ay lalabas na sa kalendaryo sa bawat naka-iskedyul na pagkakataon.
-
-:::tip
-Para sa isang grupo na nagpupulong tuwing Sabado, i-set ang frequency sa "week" at piliin ang Sabado. Ang event ay awtomatikong mapupuno sa kalendaryo sa hinaharap.
-:::
-
-## Bulk-Creating ng Mga Event sa B1 Admin
-
-Ang pahina ng grupo sa B1 Admin ay may isang **Calendar** tab kung saan ang staff ay maaaring mag-iskedyul ng isang buong season ng mga pagpupulong nang sabay-sabay:
-
-1. Buksan ang grupo sa B1 Admin at piliin ang **Calendar** tab.
-2. I-click ang **Add Events** upang buksan ang **Add Recurring Events** dialog.
-3. Piliin ang iskedyul (weekly, bawat 2 linggo, monthly, o isang beses), ang **First Meeting** at **Last Meeting** dates, at opsyonal na **Skip holidays**.
-4. Suriin ang preview ng mga petsa ng pagpupulong at i-uncheck ang kahit ilan upang palampasan.
-5. Panatilihing checked ang **Allow RSVPs** kung gusto mong ang mga miyembro ay makapagsagot sa mga event na ito (tingnan sa ibaba), pagkatapos ay i-save.
-
-## Event RSVPs
-
-Ang mga event ng grupo ay maaaring magkolekta ng RSVPs -- isang **Yes**, **No**, o **Maybe** para sa bawat pagkakataon ng event.
-
-- Ang **Allow RSVPs** ay on bilang default para sa mga event na nilikhang sa pamamagit ng bulk-add dialog; i-uncheck ito upang i-turn off ang mga tugon para sa mga event na iyon. Ang mga event na may RSVPs turned off ay nagpapakita bilang **Disabled** sa calendar tab.
-- Sa B1 Admin group calendar tab, ang bawat event ay nagpapakita ng response summary (halimbawa, "5 yes · 2 maybe · 1 no"). I-click sa pamamagitan upang buksan ang **RSVP Responses** roster, na naglilista kung sino ang sumagot na yes, maybe, at no para sa pagkakataong iyon.
+1. Kapag gumagawa o nag-e-edit ng event, i-check ang kahong **Recurring**.
+2. Piliin kung paano dapat ulitin ang event:
+   - **Interval** -- Magtakda ng bilang ng araw sa pagitan ng bawat pagkakataon. Halimbawa, kapag inilagay ang "7," inuulit ang event tuwing 7 araw.
+   - **Frequency** -- Piliin kung uulitin ito bawat **araw**, **linggo**, o **buwan**.
+3. I-save ang event. Lalabas na ito ngayon sa calendar sa bawat naka-iskedyul na pagkakataon.
 
 :::tip
-Ang RSVPs ay nagbibigay sa mga lider ng isang head count nang walang formality ng buong event registration. Para sa bayad na signups o capacity-managed na mga event, gamitin ang [event registration](../calendars/creating-calendars.md#enabling-event-registration) sa halip.
+Para sa isang grupong nagmimiting tuwing Sabado, itakda ang frequency sa "week" at piliin ang Sabado. Awtomatikong lalabas ang event sa calendar papunta sa hinaharap.
 :::
 
-## Pagtingin sa Kalendaryo
+## Bulk-Creating ng mga Event sa B1 Admin
 
-Ang kalendaryo ng grupo ay nag-aalok ng maraming opsyon sa pagtingin:
+Ang page ng grupo sa B1 Admin ay may tab na **Calendar** din kung saan puwedeng mag-iskedyul ang staff ng buong season ng miting nang sabay-sabay:
 
-- **Month** -- Makita ang buong buwan sa isang sulyap.
-- **Week** -- Mag-focus sa kasalukuyang linggo.
+1. Buksan ang grupo sa B1 Admin at piliin ang tab na **Calendar**.
+2. I-click ang **Add Events** para buksan ang dialog na **Add Recurring Events**.
+3. Piliin ang iskedyul (weekly, every 2 weeks, monthly, o one time), ang petsa ng **First Meeting** at **Last Meeting**, at opsyonal na **Skip holidays**.
+4. Suriin ang preview ng mga petsa ng miting at i-uncheck ang anumang gustong laktawan.
+5. Iwanang naka-check ang **Allow RSVPs** kung gusto mong makasagot ang mga miyembro sa mga event na ito (tingnan sa ibaba), pagkatapos ay i-save.
+
+## Mga RSVP ng Event
+
+Puwedeng mangolekta ng RSVP ang mga event ng grupo — isang **Yes**, **No**, o **Maybe** para sa bawat pagkakataon ng event.
+
+- Naka-on bilang default ang **Allow RSVPs** para sa mga event na ginawa sa pamamagitan ng bulk-add dialog; i-uncheck ito para patayin ang mga sagot para sa mga event na iyon. Ang mga event na naka-off ang RSVP ay lumalabas bilang **Disabled** sa calendar tab.
+- Sa B1 Admin group calendar tab, ipinapakita ng bawat event ang buod ng sagot (halimbawa, "5 yes · 2 maybe · 1 no"). I-click ito para buksan ang roster na **RSVP Responses**, na naglilista kung sino ang sumagot ng yes, maybe, at no para sa pagkakataong iyon.
+
+:::tip
+Nagbibigay ang mga RSVP sa mga leader ng bilang ng tao nang walang pormalidad ng buong event registration. Para sa mga bayad na sign-up o mga event na may capacity management, gamitin ang [event registration](../calendars/creating-calendars.md#enabling-event-registration) sa halip.
+:::
+
+## Pagtingin sa Calendar
+
+Nagbibigay ang group calendar ng maraming opsyon sa view:
+
+- **Month** -- Makita ang buong buwan sa isang tingin.
+- **Week** -- I-focus sa kasalukuyang linggo.
 - **Day** -- Tingnan ang isang araw nang detalyado.
-- **Agenda** -- Makita ang listahan ng mga paparating na event sa kronolohikal na pagkasunud-sunod.
+- **Agenda** -- Makita ang listahan ng mga paparating na event nang sunud-sunod.
 
-Mag-switch sa pagitan ng mga view gamit ang mga button sa itaas ng kalendaryo.
+Lumipat sa pagitan ng mga view gamit ang mga button sa itaas ng calendar.
 
-## Mga Detalye ng Event at mga Usapan
+## Mga Detalye at Usapan ng Event
 
-I-click ang anumang event upang tingnan ang mga detalye nito. Mula sa event detail view:
+I-click ang anumang event para makita ang mga detalye nito. Mula sa event detail view:
 
-- Ang **mga miyembro at lider** ay maaaring magsimula ng mga usapan at mag-iwan ng mga komento tungkol sa event.
-- Ang **mga lider** ay maaaring mag-edit ng mga detalye ng event, magbago ng oras, o mag-delete ng event.
+- Puwedeng magsimula ng usapan at mag-iwan ng komento tungkol sa event ang **mga miyembro at leader**.
+- Puwedeng i-edit ng **mga leader** ang mga detalye ng event, palitan ang oras, o tanggalin ang event.
 
 :::warning
-Ang pag-delete ng event ay permanenteng nag-aalis nito. Kung kailangan mong kanselahin ang isang pagkakataon ng umuulit na event, isaalang-alang ang pag-edit nito sa halip.
+Permanenteng inaalis ng pagtanggal ng isang event. Kung kailangan mong kanselahin ang isang pagkakataon lamang ng isang paulit-ulit na event, i-edit na lang ito sa halip.
+:::
+
+## Pag-subscribe sa Calendar
+
+Puwede mong i-sync ang group calendar sa iyong personal na calendar:
+
+1. Mula sa page ng group calendar, i-click ang **Subscribe**.
+2. Sundin ang mga prompt para idagdag ang calendar sa Google Calendar, Apple Calendar, Outlook, o anumang ibang calendar application na sumusuporta sa mga subscription.
+
+:::tip
+Pinapanatili ng pag-subscribe na naka-sync ang iyong personal na iskedyul sa mga event ng iyong grupo nang hindi na kailangang tingnan ang B1 nang hiwalay. Anumang pagbabago ng mga leader ng grupo ay awtomatikong lalabas sa iyong naka-sync na calendar.
 :::

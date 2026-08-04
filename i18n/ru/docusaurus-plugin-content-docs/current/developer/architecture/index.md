@@ -6,51 +6,52 @@ title: "Архитектура"
 
 <div class="article-intro">
 
-Эти страницы это cross-repo системные карты: они документируют как core ChurchApps система works end-to-end — across приложения, API модули и shared libraries — rather чем как any одиночный проект установлен. Прочитайте их перед изменением системы's поведение; прочитайте [Setup](../setup/) к get проект running и [API раздел](../api/) для endpoint-level справочник.
+Эти страницы — системные карты уровня всего репозитория: они документируют, как работает та или иная ключевая система ChurchApps от начала до конца — через приложения, модули API и общие библиотеки — а не то, как настроен отдельный проект. Читайте их перед изменением поведения системы; читайте [Настройка](../setup/), чтобы запустить проект, и раздел [API](../api/) для справочника уровня конечных точек.
 
 </div>
 
-## Экосистема с первого взгляда
+## Экосистема с высоты птичьего полёта
 
-ChurchApps это ~20 независимых репозиториев (не monorepo). Клиент приложения talk к small set backend APIs through HTTPS и WebSocket и share код through npm packages published under `@churchapps` scope.
+ChurchApps — это около 20 независимых репозиториев (не монорепозиторий). Клиентские приложения общаются с небольшим набором бэкенд-API через HTTPS и WebSocket и делятся кодом через npm-пакеты, публикуемые под областью видимости `@churchapps`.
 
 ```
 ┌────────────────────────────────┐            ┌──────────────────────────────────────────────┐
-│  Клиенты                       │            │  Api — core модульный монолит (AWS Lambda)    │
+│  Clients                       │            │  Api — core modular monolith (AWS Lambda)    │
 │                                │            │                                              │
 │  B1Admin    staff dashboard    │   HTTPS    │   membership    attendance    content        │
 │  B1App      member portal +    │ ─────────▶ │   giving        messaging     doing          │
 │             church websites    │            │                                              │
-│  B1Checkin  check-in kiosk     │ ◀───WS───▶ │   одна MySQL база данных per модуль (6 всего) │
+│  B1Checkin  check-in kiosk     │ ◀───WS───▶ │   one MySQL database per module (6 total)    │
 │  B1Mobile   (maintenance-only) │            └──────────────────────────────────────────────┘
 │  FreePlay   TV content player  │            ┌──────────────────────────────────────────────┐
 └───────────────┬────────────────┘            │  LessonsApi — Lessons.church backend         │
                 │                             └──────────────────────────────────────────────┘
-                │  shared код через npm (@churchapps/*)
+                │  shared code via npm (@churchapps/*)
                 ▼
-   helpers (cross-app interfaces) · apphelper (React компоненты) · apihelper (Express/server utilities)
+   helpers (cross-app interfaces) · apphelper (React components) · apihelper (Express/server utilities)
 ```
 
-Два структурных правила shape все документированное в этом раздела:
+Два структурных правила формируют всё, что описано в этом разделе:
 
-1. **Модули это isolated.** Каждый Api модуль owns его база данных и его таблицы; other модули и apps reach его данные только через его REST конечные точки. See [Module Structure](../api/module-structure).
-2. **Shared код ships как npm packages.** Apps никогда не import каждого other's source; anything переиспользованное crosses repo границы через `@churchapps/helpers`, `@churchapps/apphelper` или `@churchapps/apihelper`. See [Shared Libraries](../shared-libraries/).
+1. **Модули изолированы.** Каждый модуль Api владеет своей базой данных и своими таблицами; другие модули и приложения обращаются к его данным только через его REST-конечные точки. См. [Структура модулей](../api/module-structure).
+2. **Общий код поставляется как npm-пакеты.** Приложения никогда не импортируют исходный код друг друга; всё переиспользуемое пересекает границы репозиториев через `@churchapps/helpers`, `@churchapps/apphelper` или `@churchapps/apihelper`. См. [Общие библиотеки](../shared-libraries/).
 
 ## Системные карты
 
-| Страница | Что это covers | Spans |
+| Страница | Что охватывает | Затрагивает |
 |------|----------------|-------|
-| [Notifications & Reminders](./notifications) | Как anything tells person something: two dispatch двери channel escalation цепь и reminder движок | Api (messaging) B1Admin B1App |
-| [Real-time Architecture](../realtime) | WebSocket delivery framework behind чат presence и in-app доставка | Api (messaging) все web apps |
-| [Web Push Notifications](../web-push) | Browser push канал: VAPID ключи subscription storage доставка | Api (messaging) все web apps |
-| [Giving](./giving) | Payment providers и gateways donation потоки funds/batches gateway webhooks | Api (giving) apphelper B1App B1Admin |
-| [Event Registrations](./registrations) | Registration commerce модель: attendee типы selections discount коды платежи через giving gateway и waitlist | Api (content + giving) B1App B1Admin |
-| [Check-Ins](./check-ins) | Киоск и self check-in attendance модель данных room routing child-safety слой label printing | B1Checkin B1App B1Admin Api (attendance + membership) |
-| [Website Builder](./website-builder) | Page/section/element дерево element-type contract и renderers blog access-gated страницы SEO и AI generation | Api (content) AskApi helpers/apphelper B1Admin B1App |
-| [Website Routing & Multi-Site](./websites) | Как request разрешает к church и specific сайт multi-site `siteId` модель данных и Caddy custom-domain edge | B1App Api (membership + content) B1Admin |
-| [Integrations](./integrations) | Extension поверхность: OAuth API ключи webhooks content providers MCP | Api shared libraries external apps |
-| [Audit Log & Undoable Batches](./audit-log) | Default-on auditing каждого mutation в контроллер choke point и batch слой это makes imports и bulk действия undoable | Api (все модули) B1Admin B1Transfer |
+| [Уведомления и напоминания](./notifications) | Как что-либо сообщает человеку информацию: две двери отправки, цепочка эскалации по каналам и движок напоминаний | Api (messaging), B1Admin, B1App |
+| [Архитектура реального времени](../realtime) | Каркас доставки через WebSocket, лежащий в основе чата, присутствия и доставки внутри приложения | Api (messaging), все веб-приложения |
+| [Веб-push-уведомления](../web-push) | Канал браузерного push: ключи VAPID, хранение подписок, доставка | Api (messaging), все веб-приложения |
+| [Пожертвования](./giving) | Платёжные провайдеры и шлюзы, потоки пожертвований, фонды/пакеты, вебхуки шлюзов | Api (giving), apphelper, B1App, B1Admin |
+| [Регистрация на мероприятия](./registrations) | Коммерческая модель регистрации: типы участников, выборы, промокоды, платежи через шлюз пожертвований и список ожидания | Api (content + giving), B1App, B1Admin |
+| [Регистрация при прибытии](./check-ins) | Регистрация в киоске и самостоятельная, модель данных посещаемости, маршрутизация по комнатам, слой детской безопасности, печать наклеек | B1Checkin, B1App, B1Admin, Api (attendance + membership) |
+| [Конструктор веб-сайтов](./website-builder) | Дерево страница/раздел/элемент, контракт типов элементов и рендереры, блог, страницы с ограниченным доступом, SEO и генерация ИИ | Api (content), AskApi, helpers/apphelper, B1Admin, B1App |
+| [Маршрутизация веб-сайтов и мульти-сайт](./websites) | Как запрос разрешается в церковь и конкретный сайт, модель данных `siteId` для мульти-сайта и граница Caddy для пользовательских доменов | B1App, Api (membership + content), B1Admin |
+| [Интеграции](./integrations) | Поверхность расширения: OAuth, API-ключи, вебхуки, провайдеры контента, MCP | Api, общие библиотеки, внешние приложения |
+| [Журнал аудита и отменяемые пакеты](./audit-log) | Аудит по умолчанию каждой мутации в контрольной точке контроллера и слой пакетов, который делает импорты и массовые действия отменяемыми | Api (все модули), B1Admin, B1Transfer |
+| [MinistryStuff](./ministrystuff) | Платный сервис хранения и SMS-кредитов: общая JWT-идентификация, S2S по служебному ключу, точки сопряжения провайдеров SMS и хранения, биллинг Stripe | MinistryStuffApi, MinistryStuffWeb, Api (content + messaging), пакеты texting/apihelper, B1Admin |
 
 :::tip
-Когда изменение alters как один из этих систем works — не только page внутри one приложение — matching система карта здесь должна быть обновлена в same effort. This keeps этот раздел trustworthy как первый stop для new contributors.
+Когда изменение меняет то, как работает одна из этих систем — а не просто страницу внутри одного приложения — соответствующая системная карта здесь должна быть обновлена в рамках той же работы. Это сохраняет доверие к разделу как к первой остановке для новых участников.
 :::

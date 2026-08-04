@@ -1,40 +1,40 @@
 ---
-title: "Innsjekking-arbeidsflyt"
+title: "Innsjekkingsflyt"
 ---
 
-# Innsjekking-arbeidsflyt
+# Innsjekkingsflyt
 
 <div class="article-intro">
 
-The check-in process in B1 Church Checkin follows a simple, step-by-step flow. A church member walks up to the kiosk, finds their family, confirms group assignments, and checks in -- all in under a minute. This section covers each step of the kiosk check-in experience.
+Innsjekkingsprosessen i B1 Church Checkin følger en enkel, trinnvis flyt. Et kirkemedlem går bort til kiosken, finner familien sin, bekrefter gruppetildelinger og sjekker inn -- alt på under et minutt. Denne seksjonen dekker hvert trinn i kiosk-innsjekkingsopplevelsen.
 
 </div>
 
-## Innsjekkingsflyt på et øyeblikk
+## Innsjekkingsflyten i et raskt overblikk
 
-1. **[Select a service](./selecting-service)** -- Choose which service you are attending (e.g., Sunday AM, Sunday PM, Midweek).
-2. **[Look up your family](./looking-up-members)** -- Search by phone number or last name to find yourself in the system.
-3. **[Review your household](./household-review)** -- See all family members and their current group assignments.
-4. **[Assign groups](./group-assignment)** -- Choose which class or group each family member should attend for each service time.
-5. **[Add guests](./adding-guests)** (optional) -- Add a visitor to your household if they are joining you.
-6. **[Complete check-in](./completing-checkin)** -- Tap the check-in button to submit attendance and print labels.
-7. **[Check out](./checking-out)** (manned stations) -- At pickup time, verify the security code and pickup person, with trusted-pickup lists, page-a-parent, and label reprints.
+1. **[Velg en gudstjeneste](./selecting-service)** -- Velg hvilken gudstjeneste du deltar på (f.eks. søndag formiddag, søndag kveld, midtukes).
+2. **[Slå opp familien din](./looking-up-members)** -- Søk etter telefonnummer eller etternavn for å finne deg selv i systemet.
+3. **[Gjennomgå husstanden din](./household-review)** -- Se alle familiemedlemmer og deres nåværende gruppetildelinger.
+4. **[Tildel grupper](./group-assignment)** -- Velg hvilken klasse eller gruppe hvert familiemedlem skal delta i for hvert gudstjenestetidspunkt.
+5. **[Legg til gjester](./adding-guests)** (valgfritt) -- Legg til en besøkende i husstanden din hvis de blir med deg.
+6. **[Fullfør innsjekking](./completing-checkin)** -- Trykk på innsjekkingsknappen for å sende inn oppmøte og skrive ut etiketter.
+7. **[Sjekk ut](./checking-out)** (bemannede stasjoner) -- Ved henting bekreftes sikkerhetskoden og hentepersonen, med lister over godkjente hentepersoner, tilkalling av foreldre og reutskrift av etiketter.
 
-After check-in is complete, the app displays a success screen and automatically returns to the lookup screen, ready for the next family.
+Når innsjekkingen er fullført, viser appen en suksesskjerm og returnerer automatisk til oppslagsskjermen, klar for neste familie.
 
 :::tip
-The entire flow is designed for church members to use independently. Volunteers do not need to operate the kiosk, though having someone nearby to help first-time visitors is always a good idea.
+Hele flyten er designet for at kirkemedlemmer skal kunne bruke den selvstendig. Frivillige trenger ikke å betjene kiosken, selv om det alltid er en god idé å ha noen i nærheten for å hjelpe førstegangsbesøkende.
 :::
 
 ## Før du begynner
 
-Make sure the following are configured in B1 Admin before using the check-in kiosk:
+Sørg for at følgende er konfigurert i B1 Admin før du bruker innsjekkingskiosken:
 
-- **Services and service times** are set up under Attendance settings. See the [attendance setup guide](../../b1-admin/attendance/setup.md).
-- **Grupper** are created and linked to the appropriate service times. See [creating groups](../../b1-admin/groups/creating-groups.md).
-- **Group settings** are configured for label printing: enable **Print Nametag** for groups that need name labels, and **Parent Pickup** for children's groups that need pickup slips.
-- **People** are added to the system with household associations. See [adding people](../../b1-admin/people/adding-people.md).
+- **Gudstjenester og gudstjenestetidspunkter** er satt opp under Oppmøte-innstillinger. Se [veiledningen for oppmøteoppsett](../../b1-admin/attendance/setup.md).
+- **Grupper** er opprettet og koblet til de riktige gudstjenestetidspunktene. Se [opprette grupper](../../b1-admin/groups/creating-groups.md).
+- **Gruppeinnstillinger** er konfigurert for etikettutskrift: aktiver **Skriv ut navneskilt** for grupper som trenger navneetiketter, og **Foreldrehenting** for barnegrupper som trenger hentelapper.
+- **Personer** er lagt til i systemet med husstandstilknytninger. Se [legge til personer](../../b1-admin/people/adding-people.md).
 
 :::info
-If you have not yet set up the kiosk itself, see [Getting Started](../getting-started/) for installation, login, and printer configuration instructions.
+Hvis du ikke har satt opp selve kiosken ennå, se [Komme i gang](../getting-started/) for instruksjoner om installasjon, innlogging og skriverkonfigurasjon.
 :::

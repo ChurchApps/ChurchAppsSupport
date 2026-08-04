@@ -6,7 +6,7 @@ title: "Audit Log at Undoable Batches"
 
 <div class="article-intro">
 
-Bawat user-initiated mutation sa Api ay nire-record — sino, ano, kailan, at saan — sa lahat ng modules, nang walang per-controller na wiring. Sa kabuuang ledger ay nakaupo ang batch layer: isang import o bulk action ay maaaring i-tag bilang batch at mamaya na bawiin row-by-row, Planning-Center-style. Pareho ay nabubuhay sa isang iisang `auditLogs` table sa membership database at lubos na hinihimok mula sa iisang choke point, `BaseController.actionWrapper`. Ang pahinang ito ay nagsasaad kung ano ang ina-audit, kung saan nabubuhay ang data, ang performance trade-offs na bumubuo dito, at kung paano ang undo ay nag-reverse ng batch nang ligtas nang walang cross-database transactions.
+Bawat user-initiated na mutation sa Api ay itinatala — sino, ano, kailan, at saan — sa lahat ng modules, nang walang per-controller na wiring. Sa ibabaw ng ledger na ito ay may batch layer: ang isang import o bulk action ay maaaring i-tag bilang batch at mamaya ay **maibalik (undo)** row-by-row, sa istilong Planning Center. Pareho itong nabubuhay sa iisang `auditLogs` table sa membership database at hinihimok mismo mula sa iisang choke point, ang `BaseController.actionWrapper`. Ipinapakita ng pahinang ito kung ano ang ina-audit, kung saan nakatira ang data, ang mga performance trade-off na humuhubog dito, at kung paano ligtas na binabaligtad ng undo ang isang batch nang walang cross-database transaction.
 
 </div>
 
@@ -31,130 +31,130 @@ BaseController.actionWrapper ──▶ derive {module, entityType, category, act
                                           conflict guard → restore / delete / re-insert
 ```
 
-Dalawang structural na mga katotohanan ay hinihimok ang lahat ng nasa ibaba:
+May dalawang structural na katotohanan na humuhubog sa lahat ng nasa ibaba:
 
-1. **Ang controller layer ay ang tanging lugar na nakakaalam ng actor.** Ang mga Repositories ay hindi kailanman nakakita ng `AuthenticatedUser`; tanging ang mga controller lamang ang nagtataglay ng `au`. Ang controller ng bawat module ay dumaan na sa `BaseController.actionWrapper`, kaya doon ang pag-hook ng auditing — walang pagbabago ng repo signatures kahit saan.
-2. **Isang table ang nagsisilbi sa lahat ng modules.** Ang mga audit row para sa giving, attendance, content, atbp. ay lahat ay nasusulat sa membership DB's `auditLogs` sa pamamagitan ng `RepoManager.getRepos("membership")`, kahit mula sa non-membership controller. Ang "Lahat ng binago ni Jane ngayon" ay nanatiling isang query.
+1. **Ang controller layer lang ang nakakaalam sa actor.** Hindi kailanman nakikita ng mga repository ang `AuthenticatedUser`; ang mga controller lang ang may hawak ng `au`. Dumadaan na sa `BaseController.actionWrapper` ang mga controller ng bawat module, kaya doon isinasabit ang auditing — walang pagbabagong kinakailangan sa signature ng anumang repo.
+2. **Iisang table ang naglilingkod sa lahat ng modules.** Ang mga audit row para sa giving, attendance, content, atbp. ay lahat isinusulat sa `auditLogs` ng membership DB sa pamamagitan ng `RepoManager.getRepos("membership")`, kahit mula sa isang controller na hindi sa membership. Nananatiling iisang query lang ang "Lahat ng binago ni Jane ngayon."
 
 ## Ano ang ina-audit
 
-Ang auditing ay default-on para sa bawat mutating verb sa bawat route. Ang `actionWrapper` ay nakakakuha ng audit fields mula sa request na may zero per-route config:
+Default-on ang auditing para sa **bawat mutating verb sa bawat route**. Nakukuha ng `actionWrapper` ang mga audit field mula sa request nang walang per-route na config:
 
-| Larangan | Galing sa |
+| Larangan | Pinagkunan |
 |-------|--------------|
-| `module` | `this.moduleName` (ang owning module) |
-| `entityType` | singularized na huling segment ng `req.baseUrl` (e.g. `/membership/people` → `person`) |
+| `module` | `this.moduleName` (ang nagmamay-ari na module) |
+| `entityType` | ang singularized na huling segment ng `req.baseUrl` (hal. `/membership/people` → `person`) |
 | `category` | default sa `entityType` |
-| `action` | `${entityType}_saved` para sa `POST /`, `${entityType}_deleted` para sa `DELETE /:id`, kung hindi ay `${entityType}_${method}:${routePath}` kaya ang non-CRUD na sub-routes (e.g. `task_post:/:id/move`) ay kumukuha awtomatiko |
+| `action` | `${entityType}_saved` para sa `POST /`, `${entityType}_deleted` para sa `DELETE /:id`, kung hindi ay `${entityType}_${method}:${routePath}` para awtomatikong makuha ang mga non-CRUD na sub-route (hal. `task_post:/:id/move`) |
 
-Ang `BaseController.AUDIT_REGISTRY` ay lamang para sa overrides at opt-outs — ito ay hindi isang allowlist. Isang route ay lumalitaw doon upang pangalinin ang category/entityType nito, upang ipahayag ang `{ dbModule, table }` (na ginagawang batch- at undo-capable ito), upang markahan itong `sensitive` (i-audit ang anonymous mutations), o upang i-off ito na may `optOut: true`.
+**Para lang sa overrides at opt-out** ang `BaseController.AUDIT_REGISTRY` — hindi ito allowlist. Lumalabas dito ang isang route para palitan ang category/entityType nito, para ideklara ang `{ dbModule, table }` (na siyang gumagawa nitong batch- at undo-capable), para markahan itong `sensitive` (i-audit ang anonymous mutations), o para i-off ito gamit ang `optOut: true`.
 
-**Opt-out list** (firehose write paths na lulunugin ang ledger): attendance `visits` / `visitsessions` / `sessions` / `checkin` (ang Sunday check-in storm) at messaging `messages` / `connections` / `devices` (chat at presence). Lahat ng iba ay nag-log.
+**Opt-out list** (mga firehose write path na kung hindi ay lulunod sa ledger): attendance `visits` / `visitsessions` / `sessions` / `checkin` (ang Sunday check-in storm) at messaging `messages` / `connections` / `devices` (chat at presence). Nag-log ang lahat ng iba pa.
 
-**Bulk endpoints** (`people/bulk-delete`, `people/bulk-update`, `groupmembers/bulk-add`, `groupmembers/bulk-remove`) ay naka-register sa `BULK_ROUTES` at naglalabas ng **isang audit row bawat touched id**, kaya ang 10k-person import ay gumagawa ng 10k rows — ang per-entity granularity na ito ay eksakto kung ano ang gumagawa ng batch na undoable.
+**Ang mga bulk endpoint** (`people/bulk-delete`, `people/bulk-update`, `groupmembers/bulk-add`, `groupmembers/bulk-remove`) ay nakarehistro sa `BULK_ROUTES` at naglalabas ng **isang audit row bawat naapektuhang id**, kaya ang isang 10k-katao na import ay gumagawa ng 10,000 row — ang per-entity na granularity na ito mismo ang dahilan kung bakit maaaring i-undo ang batch.
 
-**Anonymous mutations** (`actionWrapperAnon` — guest giving, guest registration, form submissions) ay ina-audit lamang para sa registry-flagged na `sensitive` routes, na isinulat na may `userId="anonymous"` kasama ang client IP. Ang mga donasyon ay nangunguna sa lista; ang path na iyon ay may tunay na regression history.
+**Ang mga anonymous mutation** (`actionWrapperAnon` — guest giving, guest registration, form submission) ay ina-audit lang para sa mga route na naka-flag na `sensitive` sa registry, isinusulat gamit ang `userId="anonymous"` kasama ang IP ng client. Nangunguna rito ang mga donasyon; may tunay na regression history ang path na iyon.
 
-### Ang redaction ng Secret at mga size caps
+### Pag-redact ng lihim (secret) at mga size cap
 
-Bago ang anumang `details` payload ay ina-store, ang `AuditLogHelper.capDetails()` ay tumatakbo ng `sanitizeValue()` sa loob nito:
+Bago i-store ang anumang `details` payload, pinapatakbo ng `AuditLogHelper.capDetails()` ang `sanitizeValue()` dito:
 
-- **Ang mga secret key ay nire-redact.** Anumang larangan na ang lowercased name nito ay nasa `SENSITIVE_KEYS` (`password`, `token`, `cvv`, `cardnumber`, `routing_number`, `accesstoken`, `clientsecret`, …) ay pinalitan ng `"[redacted]"`.
-- **Ang malalaking scalars ay nabubura.** Anumang `data:` URI o string na higit sa 4 KB (base64 photos, blobs) ay nagiging `"[stripped]"`.
-- **Ang mga oversized rows ay naka-cap.** Kung ang serialized JSON ay lumalampas ~64 KB ang buong payload ay pinalitan ng `{ truncated: true }`. Ang mga truncated rows ay maaaring pa ring tingnan — ngunit **hindi undoable** (walang before/after image upang ibalik mula).
+- **Nire-redact ang mga secret key.** Anumang larangan na nasa `SENSITIVE_KEYS` ang lowercased na pangalan (`password`, `token`, `cvv`, `cardnumber`, `routing_number`, `accesstoken`, `clientsecret`, …) ay pinapalitan ng `"[redacted]"`.
+- **Tinatanggal ang malalaking scalar.** Anumang `data:` URI o string na mahigit 4 KB (base64 na litrato, blobs) ay nagiging `"[stripped]"`.
+- **Naka-cap ang sobrang laking row.** Kung lumampas ang serialized JSON sa ~64 KB, pinapalitan ang buong payload ng `{ truncated: true }`. Nananatiling matitingnan ang mga truncated na row — pero **hindi na ito ma-u-undo** (walang before/after image na maibabalik).
 
-## Kung saan nabubuhay ang data
+## Kung saan nakatira ang data
 
-Isang `auditLogs` table sa **membership** database ay sumusuporta sa bawat module. Mga haligi: `id, churchId, userId, category, action, entityType, entityId, details (MEDIUMTEXT JSON string), ipAddress, module, batchId, created`. Ang migration `tools/migrations/membership/2026-07-04_audit_universal.ts` ay nagdadagdag ng `module` + `batchId`, pinalalalaki ang `details` mula sa `TEXT` hanggang `MEDIUMTEXT`, nagdadagdag ng mga indexes `ix_auditLogs_batch (batchId)` at `ix_auditLogs_entity (churchId, module, entityType, entityId, created)`, at lumilikha ng `batches` table. Ang `module` column ay umiiral eksaktong upang ang `entityType` collisions sa lahat ng modules (`note`, `setting` ay umiiral sa marami) ay manatiling filterable, at ang entity index ay kung ano ang nagbibigay kapangyarihan sa parehong per-entity history at ang undo conflict guard.
+Isang iisang `auditLogs` table sa **membership** database ang sumusuporta sa bawat module. Mga column: `id, churchId, userId, category, action, entityType, entityId, details (MEDIUMTEXT JSON string), ipAddress, module, batchId, created`. Idinaragdag ng migration na `tools/migrations/membership/2026-07-04_audit_universal.ts` ang `module` + `batchId`, pinapalawak ang `details` mula sa `TEXT` patungong `MEDIUMTEXT`, nagdaragdag ng mga index na `ix_auditLogs_batch (batchId)` at `ix_auditLogs_entity (churchId, module, entityType, entityId, created)`, at gumagawa ng `batches` table. Umiiral ang `module` column mismo para manatiling na-filter ang mga banggaan ng `entityType` sa iba't ibang module (may `note`, `setting` sa marami sa kanila), at ang entity index ang siyang nagpapagana kapwa sa per-entity history at sa undo conflict guard.
 
-Ang mga cross-module writes ay pumupunta sa `RepoManager.getRepos("membership")` mula sa loob ng wrapper. Ang pagkakasunod-sunod ay sinandig: **ang pangunahing write ay nag-commit sa module DB muna, ang audit insert pangalawa.** Sa normal mode ang audit-insert failure ay nilunok (`console.error`, ang Sentry ay pumupukaw dito) — ang audit ay advisory at dapat na hindi kailanman mabigo ang kahilingan ng user. Sa **batch mode ito ay mahigpit** (tingnan sa ibaba).
+Dumadaan sa `RepoManager.getRepos("membership")` mula sa loob ng wrapper ang mga cross-module na sulat. Sinasadya ang pagkakasunod-sunod: **una nagko-commit ang pangunahing sulat sa module DB, pangalawa ang audit insert.** Sa normal mode, nilulunok ang kabiguan ng audit-insert (`console.error`, kinukuha ito ni Sentry) — advisory lang ang audit at hindi dapat kailanman ito ang dahilan ng pagkabigo ng kahilingan ng user. Sa **batch mode, mahigpit ito** (tingnan sa ibaba).
 
-:::info Bakit hindi ang triggers, CDC, o per-module tables?
-- Ang **MySQL triggers** ay hindi alam ang acting user (ang connection ay walang `au`), at magiging kahulugan ng pag-maintain ng trigger sets sa buong schema.
-- Ang **binlog / CDC** ay isang buong infrastructure project na may parehong actor-identity problem.
-- Ang **Threading ng userId sa buong repo** ay abot sa daan-daang file upang ilipat ang impormasyon na ang controller layer ay mayroon na.
-- Ang **Per-module audit tables** ay magiging kahulugan ng 7× ang plumbing at fan-out queries para sa anumang cross-module question. Isang table sa controller choke point ay ang least-code design na nag-capture pa rin ng actor.
+:::info Bakit hindi triggers, CDC, o per-module tables?
+- Hindi alam ng **mga MySQL trigger** kung sino ang acting user (walang `au` ang koneksyon), at magiging pagpapanatili ng mga trigger set sa lahat ng schema.
+- Isang buong infrastructure project na may parehong problema sa pagkakakilanlan ng actor ang **binlog / CDC**.
+- Ang **pag-thread ng userId sa bawat repo** ay makakaapekto sa daan-daang file para ilipat ang impormasyong nasa controller layer na.
+- Ang **per-module na audit table** ay nangangahulugan ng 7× na plumbing at fan-out na query para sa anumang tanong na cross-module. Ang iisang table sa controller choke point ang least-code na disenyo na nagkukuha pa rin ng actor.
 :::
 
-## Performance stance
+## Paninindigan sa performance
 
-Ang mainit na daan ay sinandig na murang-mura; ang gastos ay binabayaran lamang kung saan ito bumibili ng something.
+Sinadyang murang-mura ang hot path; babayaran lang ang gastos kung saan may kapalit ito.
 
-- **Walang read-before-write sa normal updates.** Isang regular save ay **hindi** nag-load ng lumang record. Ang **naisumiteng after-values** ay naka-imbak sa `details.after`; ang UI ay muling binubuo ang old→new sa *view* time sa pamamagit ng pag-diff laban sa nakaraang audit row ng entity. Isang query sa view time, zero cost sa write time. Ang mga larangan na hindi pinindot mula sa launch ay simpleng magpapakita ng walang "lumang" halaga — katanggap-tanggap.
-- **Ang mga delete ay nakakakuha ng before-image.** `DELETE /:id` sa isang registry route na may `{ dbModule, table }` ay nag-load ng row nang pangkalahatang muna at nagsisiguro ito sa `details.before`. Ang mga delete ay bihira at ang before-image ay ang buong forensic value.
-- **Ang batch mode ay ang tanging systematic read-before-write**, at ito ay opt-in — isang bulk/import operation ay mahal na, kaya ang N snapshot reads ay ang presyo ng undo.
-- **Ang mga audit inserts ay inaasahan.** Ang `actionWrapper` ay nagsasangkot ng mga log promises at `await Promise.allSettled(...)` bago magbalik. Ito ay ang tunay na pinakamahalagang invariant: sa Lambda ang container ay **nangingig ang instant ng pagbabalik ng response**, kaya isang un-awaited insert ay tahimik na tinapon. Ang "Fire and forget" dito ay nangangahulugang ang mga error ay hindi kailanman mabigo ang kahilingan, hindi don't await — isang insert sa already-warm membership pool ay ~1–3 ms.
+- **Walang read-before-write sa normal na update.** Hindi **nag-lo-load** ang regular na save ng lumang record. Ang **isinumiteng after-values** ang naka-imbak sa `details.after`; muling binubuo ng UI ang old→new sa oras ng *view* sa pamamagitan ng pag-diff laban sa nakaraang audit row ng entity. Isang query sa oras ng view, zero gastos sa oras ng write. Ang mga field na hindi pa nagalaw mula nang mailunsad ay basta magpapakita lang ng walang "lumang" halaga — katanggap-tanggap.
+- **May before-image ang mga delete.** Nagla-load muna nang pangkalahatan ang `DELETE /:id` sa isang registry route na may `{ dbModule, table }` at itinatago ito sa `details.before`. Bihira ang mga delete at ang before-image mismo ang buong forensic na halaga.
+- **Ang batch mode lang ang sistematikong read-before-write**, at opt-in ito — mahal na nga ang isang bulk/import operation, kaya ang N na snapshot read ang presyo ng undo.
+- **Inaasahan (awaited) ang mga audit insert.** Kinokolekta ng `actionWrapper` ang mga log promise at `await Promise.allSettled(...)` bago bumalik. Ito ang pinakamahalagang invariant: sa Lambda, **kaagad na nagfi-freeze ang container** sa sandaling bumalik ang response, kaya tahimik na natatapon ang un-awaited na insert. Ibig sabihin ng "fire and forget" dito ay hindi kailanman dapat mabigo ang kahilingan dahil sa error, hindi ibig sabihing "huwag mag-await" — ang isang insert sa already-warm na membership pool ay ~1–3 ms lang.
 
-## Ang Batches at undo
+## Mga batch at undo
 
-Isang **batch** ay nagsasama ng isang hanay ng mutations upang sila ay maaaring suriin at bawiin nang magkasama. May dalawang paraan upang buksan ito:
+Pinagsasama-sama ng isang **batch** ang isang set ng mutations para masuri at maibalik ang mga ito nang sama-sama. May dalawang paraan para magbukas nito:
 
-- **Malinaw:** `POST /membership/batches { label, source }` ay nagbabalik ng `batchId`. Ang client (B1Transfer, isang B1Admin import UI) ay pagkatapos ay nagpadala ng `X-Batch-Id: <id>` sa bawat susunod na save/delete. `POST /membership/batches/:id/complete` ay tinatara ito at timbre ang `itemCount`.
-- **Implicit:** ang apat na bulk endpoints ay bukas, popuin, at tapusin ang kanilang sariling batch sa loob ng iisang kahilingan, nagbabalik ng `batchId` sa tugon.
+- **Malinaw (explicit):** Nagbabalik ng `batchId` ang `POST /membership/batches { label, source }`. Ipinapadala pagkatapos ng client (B1Transfer, isang import UI ng B1Admin) ang `X-Batch-Id: <id>` sa bawat kasunod na save/delete. Sinasara ito ng `POST /membership/batches/:id/complete` at itinitimbre ang `itemCount`.
+- **Di-tuwiran (implicit):** Binubuksan, pinupunan, at tinatapos ng apat na bulk endpoint ang sarili nilang batch sa loob ng iisang kahilingan, na ibinabalik ang `batchId` sa tugon.
 
 Ang `batches` table (membership DB): `id, churchId, userId, label, source, status (open|completed|undone|partial|failed), itemCount, created, completedAt, undoneAt`.
 
-### Ang batch mode ay mahigpit
+### Mahigpit ang batch mode
 
-Kapag `X-Batch-Id` ay naroroon, ang `actionWrapper` ay pinipigilan ang bawat guard (`writeBatchAuditRows`):
+Kapag naroroon ang `X-Batch-Id`, pinapahigpit ng `actionWrapper` ang bawat guard (`writeBatchAuditRows`):
 
-1. Ang batch ay dapat na umiiral, ay bukas, at kabilang sa `au.churchId` — kung hindi ay **403**.
-2. Ang route ay dapat na batch-capable (`{ dbModule, table }` sa registry) — kung hindi ay **400**.
-3. Bago patakbuhin ang aksyon, ang before-images para sa lahat ng affected ids ay naka-load sa **isa** `WHERE id IN (...) AND churchId = ?` query. Kung ang snapshot read na iyon ay nabigo, ang kahilingan ay **nabigo ng 500 at ang aksyon ay hindi nagsasagawa** — ang batch mode ay dapat na hindi kailanman gumawa ng un-undoable ledger tahimik. (Ang normal mode, sa halip, ay best-effort at nilunok ang snapshot failures.)
-4. Pagkatapos ang aksyon ay tagumpay, isang audit row bawat entity ay isinulat na may `batchId`, `details.before`, at `details.after`, kasama ang malinaw na **create marker** para sa mga row na gawa ng batch.
+1. Dapat umiral ang batch, bukas ito, at kabilang sa `au.churchId` — kung hindi, **403**.
+2. Dapat batch-capable ang route (`{ dbModule, table }` sa registry) — kung hindi, **400**.
+3. Bago tumakbo ang aksyon, naka-load ang mga before-image para sa lahat ng apektadong id sa **isang** query na `WHERE id IN (...) AND churchId = ?`. Kung mabigo ang snapshot read na iyon, **mabibigo nang 500 ang kahilingan at hindi isasagawa ang aksyon** — hindi dapat kailanman tahimik na gumawa ng un-undoable na ledger ang batch mode. (Ang normal mode, sa kabaligtaran, ay best-effort at nilulunok ang mga kabiguan sa snapshot.)
+4. Kapag matagumpay ang aksyon, isinusulat ang isang audit row bawat entity kasama ang `batchId`, `details.before`, at `details.after`, dagdag pa ang tahasang **create marker** para sa mga row na ginawa ng batch.
 
-### Bawiin
+### Pagbabalik (Undo)
 
-`POST /membership/batches/:id/undo` (permission: batch creator o `Permissions.server.admin`). Itinanggi nito kung ang batch ay hindi `completed` o ay mas luma kaysa sa **30-day undo window**. Ang `BatchUndoHelper.undo()` ay pagkatapos:
+`POST /membership/batches/:id/undo` (pahintulot: batch creator o `Permissions.server.admin`). Tumatanggi ito kung hindi `completed` ang batch o kung mas matanda ito sa **30-araw na undo window**. Pagkatapos, ang `BatchUndoHelper.undo()`:
 
-1. Nag-load ng batch's audit rows at **nagsama-sama sila ayon sa `(module, entityType, entityId)`.** Isang entity na tumutulong ng maraming beses sa loob ng isang batch ay bawiin **nang minsan**, bumalik sa tunay na pre-batch state nito — ang pinakamaagang before-image, o isang delete kung ang batch ay gumawa nito. Ito ang dahilan kung bakit ang undo ay hindi naively replay ang bawat row: ang pag-restore ng isang intermediate mid-batch snapshot ay magiging mali.
-2. Para sa bawat entity, patakbuhin ang **conflict guard muna**: `auditLog.hasLaterModification()` ay nagtanong kung ang anumang later audit entry ay umiiral para sa parehong `(module, entityType, entityId)` sa labas ng batch na ito. Kung ganoon, ang entity ay nae-edit pagkatapos ng import — ito ay **naka-skip at nir-report**, hindi kailanman na-clobbered. Ito ay muling gumagamit ng audit log mismo bilang ang modification detector; walang kailangang `modifiedAt` columns sa anumang table.
-3. Bawiin ayon sa naka-record na op, na nilulutas ang `{ dbModule, table }` mula sa registry at gamit ang generic Kysely writes:
-   - **likha** → hard-delete ang row.
-   - **na-update** → isulat ang `details.before` pabalik.
-   - **tinanggal** → muling i-insert ang `details.before` (update-or-insert kung isang row na may id na iyon ay muling lumitaw).
-4. Bawat pagbabawi ay ito mismo ay ina-audit (`action: "<entityType>_undone"`, walang `batchId` — ang undo-of-undo ay out of scope).
+1. Nagla-load ng mga audit row ng batch at **pinagsasama-sama ang mga ito ayon sa `(module, entityType, entityId)`.** Ang isang entity na nagalaw nang ilang beses sa loob ng isang batch ay maibabalik **nang minsan lang**, pabalik sa tunay na pre-batch na estado nito — ang pinakaunang before-image, o isang delete kung ang batch ang gumawa nito. Ito ang dahilan kung bakit hindi basta-basta i-replay ng undo ang bawat row: mali ang pag-restore sa isang intermediate na snapshot sa gitna ng batch.
+2. Para sa bawat entity, pinapatakbo muna ang **conflict guard**: tinatanong ng `auditLog.hasLaterModification()` kung may umiiral na *mas huling* audit entry para sa parehong `(module, entityType, entityId)` sa labas ng batch na ito. Kung gayon, na-edit ang entity pagkatapos ng import — ito ay **nila-skip at iniuulat**, hindi kailanman nabu-bura. Muling ginagamit nito ang audit log mismo bilang modification detector; hindi kailangan ng anumang `modifiedAt` na column sa anumang table.
+3. Binabaliktad ayon sa naitalang op, na nire-resolve ang `{ dbModule, table }` mula sa registry gamit ang generic na Kysely write:
+   - **create** → hard-delete ang row.
+   - **update** → isulat pabalik ang `details.before`.
+   - **delete** → muling i-insert ang `details.before` (update-or-insert kung muling lumitaw ang isang row na may id na iyon).
+4. Ina-audit din ang bawat pagbabalik (`action: "<entityType>_undone"`, walang `batchId` — wala sa saklaw ang undo-of-undo).
 
-Ang op ay pinili mula sa malinaw na **create marker**, hindi inferred mula sa missing before-image — isang legitimately empty before-image o isang truncated row ay dapat na hindi ma-mistaken para sa isang create.
+Pinipili ang op mula sa tahasang **create marker**, hindi ito hinuhulaan mula sa nawawalang before-image — hindi dapat ikamali ang isang legitimong walang-lamang before-image o isang truncated na row bilang create.
 
-Ang result payload ay `{ restored, skippedConflicts: [...], failed: [...], status }`; ang batch ay lilipat sa `undone` (clean) o `partial`. **Walang cross-DB transaction** — ang undo ay best-effort bawat row, ang parehong limitasyon na idine-document ng Planning Center para sa merged profiles.
+Ang result payload ay `{ restored, skippedConflicts: [...], failed: [...], status }`; lumilipat ang batch sa `undone` (malinis) o `partial`. **Walang cross-DB transaction** — best-effort per row ang undo, kaparehong limitasyon na idinodokumento ng Planning Center para sa mga pinagsamang profile.
 
-:::warning Ang side-effect entities ay kailangan ng `onUndo` hook
-Ang pag-reverse ng `groupMember` create ay dapat ding isulat ang `groupMemberHistory` ("left"), o ang churn analytics ay tahimik na masira — isang standing workspace invariant. Ang ganitong entities ay nag-register ng `onUndo` callback sa `AUDIT_REGISTRY` na nagbabalik ng `true` kapag ito ay ganap na nakonsumo ang pagbabawi, na lumalampas sa generic path. Ang `groupMembers` ay ang canonical case (naka-key sa row id sa malinaw na daan ngunit ng personId sa bulk endpoints, at history-tracked sa bawat add/remove).
+:::warning Kailangan ng `onUndo` hook ang mga entity na may side effect
+Dapat ding isulat ng pagbabalik ng paggawa ng `groupMember` ang `groupMemberHistory` ("left"), kung hindi ay tahimik na masisira ang churn analytics — isang nakatayong invariant sa workspace. Nagpaparehistro ang mga ganitong entity ng `onUndo` callback sa `AUDIT_REGISTRY` na nagbabalik ng `true` kapag ganap na nito nahawakan ang pagbabalik, na lumalampas sa generic na landas. Ang `groupMembers` ang canonical na halimbawa (naka-key sa row id sa explicit na landas pero sa `personId` naman sa bulk endpoints, at history-tracked sa bawat add/remove).
 :::
 
-## Ang consumer surfaces
+## Mga consumer surface
 
-Ang parehong admin surfaces ay **nagpapatuloy**; ang layunin:
+Parehong **isinasagawa pa** ang dalawang admin surface; ito ang layunin:
 
-| Ibabaw | Repo | Layunin |
+| Surface | Repo | Layunin |
 |---------|------|---------|
-| **Audit Log page** | B1Admin (ManageChurch → Audit Log) | I-filter ayon sa module/category/user/entity at i-render ang old→new diffs — para sa edits sa pamamagit ng pag-diff laban sa nakaraang entry ng entity, para sa deletes mula sa `details.before`. Sinusuportahan ng `GET /membership/auditlogs`, gated ng `Permissions.server.admin`. |
-| **Batches page** | B1Admin (parehong Settings hub) | I-list ang mga batches na may status at counts, **View Results** (ang batch's audit rows sa pamamagit ng `GET /membership/batches/:id/results`), at isang **Undo** button na nagdadala ng skipped-conflict / failed report. |
-| **Import batches** | B1Transfer | Buksan ang batch, magpadala ng `X-Batch-Id` sa normal save calls nito, tapusin sa dulo — ang mga imports ay nagiging undoable na walang bagong import endpoints. Ang legacy `importKey` ay nanatili bilang creates-only lineage marker, na-supersede para sa undo. |
+| **Audit Log page** | B1Admin (ManageChurch → Audit Log) | I-filter ayon sa module/category/user/entity at i-render ang old→new na diffs — para sa edits sa pamamagitan ng pag-diff laban sa nakaraang entry ng entity, para sa deletes mula sa `details.before`. Sinusuportahan ng `GET /membership/auditlogs`, gated ng `Permissions.server.admin`. |
+| **Batches page** | B1Admin (parehong Settings hub) | Ilista ang mga batch kasama ang status at bilang, **View Results** (ang mga audit row ng batch sa pamamagitan ng `GET /membership/batches/:id/results`), at isang **Undo** button na nagpapalabas ng ulat ng skipped-conflict / failed. |
+| **Import batches** | B1Transfer | Buksan ang batch, ipadala ang `X-Batch-Id` sa mga normal na save call nito, tapusin sa dulo — nagiging undoable ang mga import nang walang bagong import endpoint. Nananatili ang legacy na `importKey` bilang creates-only na lineage marker, napalitan na para sa undo. |
 
-## Ang mga gotchas na ang hinaharap na pagbabago ay hindi dapat mag-regress
+## Mga gotcha na hindi dapat balikan (regress) ng susunod na pagbabago
 
-- **Ang mga audit inserts ay dapat na manatiling inaasahan.** Ang un-awaited `AuditLogHelper.log(...)` ay itinapon ng Lambda freeze. Kolektahin ang mga promises at `await Promise.allSettled` bago magbalik.
-- **Ang Kysely ay bumabagal undefined mula sa `.set()`/`.values()`** Sa pag-restore, isang cleared column ay makakaligtas na walang putol. Ang `BatchUndoHelper` ay nag-convert ng bawat absent field sa explicit `null` (`nullify`) — huwag kailanman i-bypass ito para sa "mas mabilis" na direct write.
-- **Ang retention ay dapat na manatiling mataas na higit sa undo window.** Ang `AuditLogRepo.deleteOld()` ay tumatakbo sa nightly timer (default 365-day retention); ang undo window ay 30 days. Kung ang retention ay bumababa patungo sa window, ang undo ledgers ay matutukso palabas mula sa ilalim ng bukas na mga batches.
-- **Ang mga truncated rows ay hindi undoable.** Isang `{ truncated: true }` payload ay walang before/after image; ang undo ay nag-report nito bilang nabigo, hindi kailanman hula.
-- **Ang ordering ay module-write-then-audit.** Huwag kailanman ilipat ang audit insert nangunguna sa tunay na write, at panatilihin ito strict-in-batch / advisory-in-normal.
+- **Dapat manatiling awaited ang mga audit insert.** Itinatapon ng Lambda freeze ang un-awaited na `AuditLogHelper.log(...)`. Kolektahin ang mga promise at `await Promise.allSettled` bago bumalik.
+- **Tinatanggal ng Kysely ang `undefined` mula sa `.set()`/`.values()`.** Sa pag-restore, hindi magagalaw ang isang na-clear na column. Kino-convert ng `BatchUndoHelper` ang bawat nawawalang field sa tahasang `null` (`nullify`) — huwag ito kailanman i-bypass para lang sa "mas mabilis" na direktang sulat.
+- **Dapat manatiling mataas nang malayo ang retention kaysa sa undo window.** Tumatakbo ang `AuditLogRepo.deleteOld()` sa nightly timer (365-araw na default retention); 30 araw ang undo window. Kung bumaba man ang retention papalapit sa window, mabubura ang mga undo ledger mula sa ilalim ng mga bukas na batch.
+- **Hindi ma-u-undo ang mga truncated na row.** Walang before/after image ang isang `{ truncated: true }` na payload; iniuulat ito ng undo bilang `failed`, hindi kailanman ito hinuhulaan.
+- **Module-write-then-audit ang pagkakasunod-sunod.** Huwag kailanman ilipat ang audit insert nang mauna sa tunay na sulat, at panatilihin itong strict sa batch / advisory sa normal.
 
-## Inventory ng file
+## Talaan ng file
 
 | Lugar | Mga file |
 |------|-------|
 | Wrapper / registry | `Api/src/shared/infrastructure/BaseController.ts` (`AUDIT_REGISTRY`, `BULK_ROUTES`, `actionWrapper`, `actionWrapperAnon`, snapshot + write-rows) |
-| Engine ng undo | `Api/src/shared/infrastructure/BatchUndoHelper.ts` |
-| Helper ng audit | `Api/src/modules/membership/helpers/AuditLogHelper.ts` (`log`, `capDetails`/`sanitizeValue`, `diffFields`, `getClientIp`) |
+| Undo engine | `Api/src/shared/infrastructure/BatchUndoHelper.ts` |
+| Audit helper | `Api/src/modules/membership/helpers/AuditLogHelper.ts` (`log`, `capDetails`/`sanitizeValue`, `diffFields`, `getClientIp`) |
 | Mga controller | `Api/src/modules/membership/controllers/AuditLogController.ts`, `BatchController.ts` |
-| Mga modelo / repos | `Api/src/modules/membership/models/AuditLog.ts`, `Batch.ts`; `repositories/AuditLogRepo.ts` (`loadFiltered`, `loadForBatch`, `hasLaterModification`, `deleteOld`), `BatchRepo.ts` |
+| Mga model / repo | `Api/src/modules/membership/models/AuditLog.ts`, `Batch.ts`; `repositories/AuditLogRepo.ts` (`loadFiltered`, `loadForBatch`, `hasLaterModification`, `deleteOld`), `BatchRepo.ts` |
 | Migrasyon | `Api/tools/migrations/membership/2026-07-04_audit_universal.ts` |
-| Admin UI (patuloy) | B1Admin Audit Log + Batches pages; B1Transfer import-batch header |
+| Admin UI (isinasagawa pa) | mga pahina ng B1Admin Audit Log + Batches; header ng import-batch ng B1Transfer |
 
-## Mga Kaugnay na Pahina
+## Kaugnay na mga Pahina
 
-- [Module Structure](../api/module-structure) — paano ang non-membership controller ay umaabot sa membership repos sa pamamagit ng `RepoManager`
-- [Giving](./giving) — ang donation write paths na ina-audit bilang `sensitive` kahit kelan anonymous
-- [Membership Endpoints](../api/endpoints/membership) — ang REST surface na may dalang `X-Batch-Id` at nag-expose ng `/auditlogs` at `/batches`
+- [Module Structure](../api/module-structure) — kung paano naaabot ng isang controller na hindi sa membership ang mga repo ng membership sa pamamagitan ng `RepoManager`
+- [Giving](./giving) — ang mga write path ng donasyon na ina-audit bilang `sensitive` kahit anonymous
+- [Membership Endpoints](../api/endpoints/membership) — ang REST surface na may dalang `X-Batch-Id` at naglalantad ng `/auditlogs` at `/batches`

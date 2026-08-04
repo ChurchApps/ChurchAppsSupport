@@ -1,12 +1,12 @@
 ---
-title: "Atribuindo Grupos"
+title: "Designando Grupos"
 ---
 
-# Atribuindo Grupos
+# Designando Grupos
 
 <div class="article-intro">
 
-Quando você toca em um botão de horário de serviço na tela de revisão da família, o aplicativo abre a tela de seleção de grupos. Aqui você escolhe qual grupo ou classe um membro da família deve frequentar para esse horário de serviço específico.
+Quando você toca no botão de um horário de culto na tela de revisão da família, o aplicativo abre a tela de seleção de grupo. Aqui você escolhe qual grupo ou classe um membro da família deve frequentar naquele horário de culto específico.
 
 </div>
 
@@ -14,57 +14,57 @@ Quando você toca em um botão de horário de serviço na tela de revisão da fa
 <h4>Antes de Começar</h4>
 
 - [Revise sua família](./household-review) na tela de revisão da família
-- Expanda o membro que deseja atribuir e toque em um botão de horário de serviço
-- Certifique-se de que o administrador da sua igreja [criou grupos](../../b1-admin/groups/creating-groups.md) e os vinculou aos horários de serviço no B1 Admin
+- Expanda o membro que deseja designar e toque em um botão de horário de culto
+- Certifique-se de que o administrador da sua igreja tenha [criado grupos](../../b1-admin/groups/creating-groups.md) e os vinculado aos horários de culto no B1 Admin
 
 </div>
 
-## Como os Grupos São Organizados
+## Como os Grupos Estão Organizados
 
-Os grupos são exibidos em **categorias**. Cada categoria aparece como um card mostrando:
+Os grupos são exibidos em **categorias**. Cada categoria aparece como um cartão mostrando:
 
-- O **nome da categoria** (por exemplo, "Crianças", "Juventude", "Adultos")
-- O **número de grupos** nessa categoria
+- O **nome da categoria** (por exemplo, "Crianças", "Jovens", "Adultos")
+- O **número de grupos** naquela categoria
 
-Toque em um card de categoria para expandi-lo e ver os grupos individuais dentro. Toque novamente para fechá-lo.
+Toque em um cartão de categoria para expandi-lo e ver os grupos individuais dentro dele. Toque novamente para recolhê-lo.
 
 ## Selecionando um Grupo
 
 1. Toque em uma **categoria** para expandi-la.
-2. Revise a lista de grupos dentro dessa categoria. Cada grupo mostra seu nome com um ícone de seleção à direita.
-3. Toque no **nome do grupo** que deseja atribuir.
+2. Revise a lista de grupos dentro daquela categoria. Cada grupo mostra seu nome com um ícone de seleção à direita.
+3. Toque no **nome do grupo** que deseja designar.
 
-O aplicativo salva sua seleção e o retorna à [tela de revisão da família](./household-review). O botão de horário de serviço para esse membro agora mostrará o nome do grupo que você selecionou.
+O aplicativo salva sua seleção e retorna à [tela de revisão da família](./household-review). O botão do horário de culto para aquele membro agora mostrará o nome do grupo que você selecionou.
 
-## Orientação de Idade e Série
+## Orientação por Idade e Série
 
-Se sua igreja definiu faixas etárias ou de série em suas salas, a lista o guia para a correta: salas para as quais a pessoa se qualifica estão **destacadas**, e salas fora de sua idade ou série estão **atenuadas**. Uma sala atenuada ainda pode ser selecionada, mas um membro da equipe deve confirmar a escolha. As idades e séries são calculadas a partir da data de promoção de série da sua igreja, portanto as salas permanecem precisas durante a transição do ano letivo.
+Se sua igreja definiu faixas de idade ou série para suas salas, a lista o orienta para a mais adequada: as salas para as quais a pessoa se qualifica são **destacadas**, e as salas fora de sua idade ou série ficam **esmaecidas**. Uma sala esmaecida ainda pode ser selecionada, mas um membro da equipe deve confirmar a escolha. As idades e séries são calculadas a partir da data de promoção de série da sua igreja, para que as salas permaneçam corretas durante a virada do ano letivo.
 
 ## Escolhendo "Nenhum"
 
-Se você decidir que um membro da família não deve ser atribuído a nenhum grupo para esse horário de serviço, toque no botão **Nenhum** na parte inferior da tela. Isso limpa qualquer atribuição de grupo existente para esse horário de serviço e o retorna à tela de revisão da família.
+Se você decidir que um membro da família não deve ser designado a nenhum grupo neste horário de culto, toque no botão **Nenhum** na parte inferior da tela. Isso limpa qualquer designação de grupo existente para aquele horário de culto e retorna à tela de revisão da família.
 
 :::tip
-Use a opção **Nenhum** para adultos que frequentam o serviço de adoração principal e não precisam fazer check-in em um grupo ou classe específico.
+Use a opção **Nenhum** para adultos que frequentam o culto principal e não precisam fazer check-in em um grupo ou classe específico.
 :::
 
-## Alterando uma Atribuição de Grupo
+## Alterando uma Designação de Grupo
 
-Para alterar uma atribuição de grupo que já foi feita:
+Para alterar uma designação de grupo já feita:
 
-1. Volte à [tela de revisão da família](./household-review).
-2. Expanda o membro cuja atribuição de grupo deseja alterar.
-3. Toque no botão de horário de serviço (que agora mostra o nome do grupo atribuído atualmente).
+1. Volte para a [tela de revisão da família](./household-review).
+2. Expanda o membro cujo grupo deseja alterar.
+3. Toque no botão do horário de culto (que agora mostra o nome do grupo atualmente designado).
 4. Selecione um grupo diferente ou toque em **Nenhum**.
 
 :::info
-Os grupos e categorias são configurados pelo administrador da sua igreja no B1 Admin. Se um grupo estiver faltando ou na categoria errada, peça ao seu administrador para atualizar as [configurações de grupo](../../b1-admin/groups/creating-groups.md).
+Grupos e categorias são configurados pelo administrador da sua igreja no B1 Admin. Se um grupo estiver ausente ou na categoria errada, peça ao seu administrador para atualizar as [configurações de grupo](../../b1-admin/groups/creating-groups.md).
 :::
 
-## Próximas Etapas
+## Próximos Passos
 
-Depois de atribuir grupos, retorne à [tela de revisão da família](./household-review) para:
+Depois de designar grupos, volte para a [tela de revisão da família](./household-review) para:
 
-- Atribuir grupos a membros adicionais da família
-- [Adicionar um hóspede](./adding-guests) se alguém estiver visitando com sua família
-- [Completar o check-in](./completing-checkin) quando todas as atribuições estiverem prontas
+- Designar grupos a membros adicionais da família
+- [Adicionar um convidado](./adding-guests) se alguém estiver visitando com sua família
+- [Concluir o check-in](./completing-checkin) quando todas as designações estiverem prontas

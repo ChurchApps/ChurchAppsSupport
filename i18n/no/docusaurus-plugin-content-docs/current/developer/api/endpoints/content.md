@@ -6,28 +6,28 @@ title: "Innholds-endepunkter"
 
 <div class="article-intro">
 
-The Content module manages website pages, sections, elements, blocks, blog posts, redirects, sermons, playlists, streaming services, events, curated calendars, files, galleries, Bible translations and verse lookups, songs, arrangements, global styles, stock photos, and settings. It is the largest module in the API and powers the CMS, media/streaming, worship planning, and Bible features across all ChurchApps applications.
+Content-modulen administrerer nettstedsider, seksjoner, elementer, blokker, blogginnlegg, omdirigeringer, prekener, spillelister, strømmetjenester, arrangementer, kuraterte kalendere, filer, gallerier, bibeloversettelser og versoppslag, sanger, arrangementer (musikk), globale stiler, arkivbilder og innstillinger. Det er den største modulen i API-et og driver CMS-en, media-/strømmefunksjoner, gudstjenesteplanlegging og bibelfunksjoner på tvers av alle ChurchApps-applikasjoner.
 
 </div>
 
-**Base path:** `/content`
+**Basissti:** `/content`
 
-## Pages
+## Sider
 
-Base path: `/content/pages`
+Basissti: `/content/pages`
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/:churchId/tree?url=&id=` | Public | — | Load full page tree (sections, elements, blocks) by URL or ID. Strips internal IDs when fetched by URL. URL-based fetches enforce `pages.visibility` — a gated page returns `{ restricted: true, visibility }` unless the (optional) JWT satisfies the gate |
-| GET | `/public/:churchId` | Public | — | List public pages (`url`, `title`, `metaDescription`); only `visibility = everyone` |
-| GET | `/:id` | JWT | — | Get a page by ID |
-| GET | `/` | JWT | — | List all pages for the church |
-| POST | `/duplicate/:id` | JWT | Content.Edit | Duplicate a page with all sections and elements |
-| POST | `/temp/ai` | JWT | Content.Edit | Save an AI-generated page (page, sections, and elements in one call) |
-| POST | `/` | JWT | Content.Edit | Create or update pages (batch) |
-| DELETE | `/:id` | JWT | Content.Edit | Delete a page |
+| GET | `/:churchId/tree?url=&id=` | Public | — | Last hele sidetreet (seksjoner, elementer, blokker) etter URL eller ID. Fjerner interne ID-er ved henting via URL. URL-baserte hentinger håndhever `pages.visibility` — en beskyttet side returnerer `{ restricted: true, visibility }` med mindre den (valgfrie) JWT-en oppfyller sperren |
+| GET | `/public/:churchId` | Public | — | List offentlige sider (`url`, `title`, `metaDescription`); kun `visibility = everyone` |
+| GET | `/:id` | JWT | — | Hent en side etter ID |
+| GET | `/` | JWT | — | List alle sider for kirken |
+| POST | `/duplicate/:id` | JWT | Content.Edit | Dupliser en side med alle seksjoner og elementer |
+| POST | `/temp/ai` | JWT | Content.Edit | Lagre en AI-generert side (side, seksjoner og elementer i ett kall) |
+| POST | `/` | JWT | Content.Edit | Opprett eller oppdater sider (batch) |
+| DELETE | `/:id` | JWT | Content.Edit | Slett en side |
 
-### Example: Load Page Tree
+### Eksempel: Last sidetre
 
 ```
 GET /content/pages/abc-church-id/tree?url=/about
@@ -49,138 +49,139 @@ GET /content/pages/abc-church-id/tree?url=/about
 }
 ```
 
-## Sections
+## Seksjoner
 
-Base path: `/content/sections`
+Basissti: `/content/sections`
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Get a section by ID |
-| POST | `/duplicate/:id?convertToBlock=` | JWT | Content.Edit | Duplicate a section or convert it to a reusable block |
-| POST | `/` | JWT | Content.Edit | Create or update sections (batch). Auto-updates sort order |
-| DELETE | `/:id` | JWT | Content.Edit | Delete a section (auto-updates sort order) |
+| GET | `/:id` | JWT | — | Hent en seksjon etter ID |
+| POST | `/duplicate/:id?convertToBlock=` | JWT | Content.Edit | Dupliser en seksjon, eller konverter den til en gjenbrukbar blokk |
+| POST | `/` | JWT | Content.Edit | Opprett eller oppdater seksjoner (batch). Oppdaterer sorteringsrekkefølge automatisk |
+| DELETE | `/:id` | JWT | Content.Edit | Slett en seksjon (oppdaterer sorteringsrekkefølge automatisk) |
 
-## Elements
+## Elementer
 
-Base path: `/content/elements`
+Basissti: `/content/elements`
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Get an element by ID |
-| POST | `/duplicate/:id` | JWT | Content.Edit | Duplicate an element with all children |
-| POST | `/` | JWT | Content.Edit | Create or update elements (batch). Auto-manages row columns and carousel slides |
-| DELETE | `/:id` | JWT | Content.Edit | Delete an element |
+| GET | `/:id` | JWT | — | Hent et element etter ID |
+| POST | `/duplicate/:id` | JWT | Content.Edit | Dupliser et element med alle underelementer |
+| POST | `/` | JWT | Content.Edit | Opprett eller oppdater elementer (batch). Administrerer automatisk radkolonner og karusell-lysbilder |
+| DELETE | `/:id` | JWT | Content.Edit | Slett et element |
 
-## Blocks
+## Blokker
 
-Base path: `/content/blocks`
+Basissti: `/content/blocks`
 
-Extends standard CRUD (GET `/:id`, GET `/`, POST `/`, DELETE `/:id` from base class with Content.Edit permission for writes).
+Utvider standard CRUD (GET `/:id`, GET `/`, POST `/`, DELETE `/:id` fra basisklassen med Content.Edit-tillatelse for skriving).
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Get a block by ID |
-| GET | `/` | JWT | — | List all blocks |
-| GET | `/:churchId/tree/:id` | Public | — | Load full block tree with sections and elements |
-| GET | `/blockType/:blockType` | JWT | — | Load blocks by type (e.g. footerBlock, elementBlock) |
-| GET | `/public/footer/:churchId` | Public | — | Load footer block tree for a church |
-| POST | `/` | JWT | Content.Edit | Create or update blocks |
-| DELETE | `/:id` | JWT | Content.Edit | Delete a block |
+| GET | `/:id` | JWT | — | Hent en blokk etter ID |
+| GET | `/` | JWT | — | List alle blokker |
+| GET | `/:churchId/tree/:id` | Public | — | Last hele blokktreet med seksjoner og elementer |
+| GET | `/blockType/:blockType` | JWT | — | Last blokker etter type (f.eks. footerBlock, elementBlock) |
+| GET | `/public/footer/:churchId` | Public | — | Last footer-blokktreet for en kirke |
+| POST | `/` | JWT | Content.Edit | Opprett eller oppdater blokker |
+| DELETE | `/:id` | JWT | Content.Edit | Slett en blokk |
 
-## Links
+## Lenker
 
-Base path: `/content/links`
+Basissti: `/content/links`
 
-Extends standard CRUD (GET `/:id`, GET `/`, POST `/`, DELETE `/:id` from base class with Content.Edit permission for writes).
+Utvider standard CRUD (GET `/:id`, GET `/`, POST `/`, DELETE `/:id` fra basisklassen med Content.Edit-tillatelse for skriving).
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Get a link by ID |
-| GET | `/` | JWT | — | List all links. Optional `?category=` filter. Auto-sorts after save |
-| GET | `/church/:churchId/filtered?category=` | JWT | — | Load links filtered by visibility (everyone, visitors, members, staff, groups) |
-| GET | `/church/:churchId?category=` | Public | — | Load links for a church by category (public) |
-| POST | `/` | JWT | Content.Edit | Create or update links (batch). Auto-sorts by category |
-| DELETE | `/:id` | JWT | Content.Edit | Delete a link |
+| GET | `/:id` | JWT | — | Hent en lenke etter ID |
+| GET | `/` | JWT | — | List alle lenker. Valgfritt `?category=`-filter. Sorterer automatisk etter lagring |
+| GET | `/church/:churchId/filtered?category=` | JWT | — | Last lenker filtrert etter synlighet (alle, besøkende, medlemmer, stab, grupper) |
+| GET | `/church/:churchId?category=` | Public | — | Last lenker for en kirke etter kategori (offentlig) |
+| POST | `/` | JWT | Content.Edit | Opprett eller oppdater lenker (batch). Sorterer automatisk etter kategori |
+| DELETE | `/:id` | JWT | Content.Edit | Slett en lenke |
 
-## Global Styles
+## Globale stiler
 
-Base path: `/content/globalStyles`
+Basissti: `/content/globalStyles`
 
-Extends standard CRUD (POST `/`, DELETE `/:id` from base class with Content.Edit permission for writes).
+Utvider standard CRUD (POST `/`, DELETE `/:id` fra basisklassen med Content.Edit-tillatelse for skriving).
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/church/:churchId` | Public | — | Load global styles for a church (returns defaults if none set) |
-| GET | `/` | JWT | — | Load global styles for the authenticated church |
-| POST | `/` | JWT | Content.Edit | Create or update global styles |
-| DELETE | `/:id` | JWT | Content.Edit | Delete global styles |
+| GET | `/church/:churchId` | Public | — | Last globale stiler for en kirke (returnerer standardverdier hvis ingen er satt) |
+| GET | `/` | JWT | — | Last globale stiler for den autentiserte kirken |
+| POST | `/` | JWT | Content.Edit | Opprett eller oppdater globale stiler |
+| DELETE | `/:id` | JWT | Content.Edit | Slett globale stiler |
 
-## Page History
+## Sidehistorikk
 
-Base path: `/content/pageHistory`
+Basissti: `/content/pageHistory`
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/page/:pageId` | JWT | Content.Edit | List history entries for a page |
-| GET | `/block/:blockId` | JWT | Content.Edit | List history entries for a block |
-| GET | `/:id` | JWT | Content.Edit | Get a history entry by ID |
-| POST | `/` | JWT | Content.Edit | Save a page/block snapshot. Periodically cleans up entries older than 30 days |
-| POST | `/restore/:id` | JWT | Content.Edit | Restore a page/block from a history snapshot (deletes current content and recreates from snapshot) |
-| POST | `/restoreSnapshot` | JWT | Content.Edit | Restore from an inline snapshot object. Body: `{ pageId, blockId, snapshot }` |
+| GET | `/page/:pageId` | JWT | Content.Edit | List historikkoppføringer for en side |
+| GET | `/block/:blockId` | JWT | Content.Edit | List historikkoppføringer for en blokk |
+| GET | `/:id` | JWT | Content.Edit | Hent en historikkoppføring etter ID |
+| POST | `/` | JWT | Content.Edit | Lagre et side-/blokk-øyeblikksbilde. Rydder periodisk opp oppføringer eldre enn 30 dager |
+| POST | `/restore/:id` | JWT | Content.Edit | Gjenopprett en side/blokk fra et historikk-øyeblikksbilde (sletter gjeldende innhold og gjenskaper fra øyeblikksbildet) |
+| POST | `/restoreSnapshot` | JWT | Content.Edit | Gjenopprett fra et innebygd øyeblikksbilde-objekt. Body: `{ pageId, blockId, snapshot }` |
 
-## Posts (Blog)
+## Innlegg (blogg)
 
-Base path: `/content/posts`
+Basissti: `/content/posts`
 
-Blog posts are metadata over regular pages: each post's `pageId` references the page that holds the body, and the post row adds `title`, `slug` (unique per church), `excerpt`, `authorId`, `photoUrl`, `publishDate`, `category`, and `tags`. A post is published once `publishDate` is set and in the past. See [Website Builder Architecture](../../architecture/website-builder#blog-posts-over-pages).
+Blogginnlegg er frittstående rader: `title`, `slug` (unik per kirke), `excerpt`, `content` (markdown-brødtekst), `authorId`, `photoUrl`, `publishDate`, `category`, og `tags`. Et innlegg publiseres når `publishDate` er satt og ligger i fortiden. Lese-endepunkter beriker hvert innlegg med `authorName` løst fra `authorId`. Se [Nettstedbyggerens arkitektur](../../architecture/website-builder#blog).
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/public/:churchId?category=&tag=&page=&pageSize=` | Public | — | List published posts, paginated (max 50 per page) |
-| GET | `/public/:churchId/slug/:slug` | Public | — | Get a published post's metadata by slug |
-| GET | `/rss/:churchId?siteUrl=` | Public | — | RSS 2.0 feed of published posts (links built as `{siteUrl}/blog/{slug}`) |
-| GET | `/:id` | JWT | — | Get a post by ID |
-| GET | `/` | JWT | — | List all posts for the church |
-| POST | `/` | JWT | Content.Edit | Create or update posts (batch) |
-| DELETE | `/:id` | JWT | Content.Edit | Delete a post |
+| GET | `/public/:churchId?category=&tag=&page=&pageSize=` | Public | — | List publiserte innlegg, paginert (maks 50 per side) |
+| GET | `/public/:churchId/categories` | Public | — | Distinkte kategorier på tvers av publiserte innlegg |
+| GET | `/public/:churchId/slug/:slug` | Public | — | Hent et publisert innlegg etter slug |
+| GET | `/rss/:churchId?siteUrl=` | Public | — | RSS 2.0-feed av publiserte innlegg (lenker bygget som `{siteUrl}/blog/{slug}`) |
+| GET | `/:id` | JWT | — | Hent et innlegg etter ID |
+| GET | `/` | JWT | — | List alle innlegg for kirken |
+| POST | `/` | JWT | Content.Edit | Opprett eller oppdater innlegg (batch) |
+| DELETE | `/:id` | JWT | Content.Edit | Slett et innlegg |
 
-## Redirects
+## Omdirigeringer
 
-Base path: `/content/redirects`
+Basissti: `/content/redirects`
 
-Per-church URL redirects (`fromPath` → `toPath`), capped at 200 per church. Paths are normalized (lowercased, leading slash, no trailing slash) and `fromPath` is unique per church. B1App resolves these on would-be 404s and issues an HTTP 308.
+Kirke-spesifikke URL-omdirigeringer (`fromPath` → `toPath`), begrenset til 200 per kirke. Stier normaliseres (små bokstaver, innledende skråstrek, ingen avsluttende skråstrek), og `fromPath` er unik per kirke. B1App løser disse på det som ellers ville vært 404-er, og utsteder en HTTP 308.
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/public/:churchId?path=` | Public | — | Resolve a path (or list all redirects when `path` is omitted) |
-| GET | `/:id` | JWT | — | Get a redirect by ID |
-| GET | `/` | JWT | — | List all redirects for the church |
-| POST | `/` | JWT | Content.Edit | Create or update redirects. Rejects `fromPath = toPath` and enforces the 200-row cap |
-| DELETE | `/:id` | JWT | Content.Edit | Delete a redirect |
+| GET | `/public/:churchId?path=` | Public | — | Løs opp en sti (eller list alle omdirigeringer når `path` utelates) |
+| GET | `/:id` | JWT | — | Hent en omdirigering etter ID |
+| GET | `/` | JWT | — | List alle omdirigeringer for kirken |
+| POST | `/` | JWT | Content.Edit | Opprett eller oppdater omdirigeringer. Avviser `fromPath = toPath` og håndhever 200-rads-grensen |
+| DELETE | `/:id` | JWT | Content.Edit | Slett en omdirigering |
 
-## Sermons
+## Prekener
 
-Base path: `/content/sermons`
+Basissti: `/content/sermons`
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/public/freeshowSample` | JWT | — | Get a sample FreeShow playlist structure |
-| GET | `/public/tvWrapper/:churchId` | JWT | — | Get TV app wrapper with sermon, lesson, and FreeShow sources |
-| GET | `/public/tvFeed/:churchId/:sermonId` | Public | — | Get a single sermon as a TV feed playlist |
-| GET | `/public/tvFeed/:churchId` | Public | — | Get all public playlists/sermons as a TV feed |
-| GET | `/public/:churchId` | Public | — | List all public sermons for a church |
-| GET | `/timeline?sermonIds=` | JWT | — | Load timeline data for sermons |
-| GET | `/lookup?videoType=&videoData=` | Public | — | Look up sermon metadata from YouTube or Vimeo |
-| GET | `/socialSuggestions?youtubeVideoId=` | JWT | — | Generate AI social media post suggestions from sermon subtitles |
-| GET | `/outline?url=&title=&author=` | JWT | — | Generate AI lesson outline from a URL |
-| GET | `/youtubeImport/:channelId` | JWT | — | Import videos from a YouTube channel |
-| GET | `/vimeoImport/:channelId` | JWT | — | Import videos from a Vimeo channel |
-| GET | `/:id` | JWT | — | Get a sermon by ID |
-| GET | `/` | JWT | — | List all sermons |
-| POST | `/` | JWT | StreamingServices.Edit | Create or update sermons (batch, supports base64 thumbnail upload) |
-| DELETE | `/:id` | JWT | StreamingServices.Edit | Delete a sermon |
+| GET | `/public/freeshowSample` | JWT | — | Hent en eksempel-FreeShow-spilleliste-struktur |
+| GET | `/public/tvWrapper/:churchId` | JWT | — | Hent TV-app-innpakning med preken-, leksjons- og FreeShow-kilder |
+| GET | `/public/tvFeed/:churchId/:sermonId` | Public | — | Hent en enkelt preken som en TV-feed-spilleliste |
+| GET | `/public/tvFeed/:churchId` | Public | — | Hent alle offentlige spillelister/prekener som en TV-feed |
+| GET | `/public/:churchId` | Public | — | List alle offentlige prekener for en kirke |
+| GET | `/timeline?sermonIds=` | JWT | — | Last tidslinjedata for prekener |
+| GET | `/lookup?videoType=&videoData=` | Public | — | Slå opp prekenmetadata fra YouTube eller Vimeo |
+| GET | `/socialSuggestions?youtubeVideoId=` | JWT | — | Generer AI-forslag til innlegg for sosiale medier fra prekenens undertekster |
+| GET | `/outline?url=&title=&author=` | JWT | — | Generer AI-leksjonsdisposisjon fra en URL |
+| GET | `/youtubeImport/:channelId` | JWT | — | Importer videoer fra en YouTube-kanal |
+| GET | `/vimeoImport/:channelId` | JWT | — | Importer videoer fra en Vimeo-kanal |
+| GET | `/:id` | JWT | — | Hent en preken etter ID |
+| GET | `/` | JWT | — | List alle prekener |
+| POST | `/` | JWT | StreamingServices.Edit | Opprett eller oppdater prekener (batch, støtter base64-miniatyrbildeopplasting) |
+| DELETE | `/:id` | JWT | StreamingServices.Edit | Slett en preken |
 
-### Example: Look Up a YouTube Sermon
+### Eksempel: Slå opp en YouTube-preken
 
 ```
 GET /content/sermons/lookup?videoType=youtube&videoData=dQw4w9WgXcQ
@@ -196,128 +197,128 @@ GET /content/sermons/lookup?videoType=youtube&videoData=dQw4w9WgXcQ
 }
 ```
 
-## Playlists
+## Spillelister
 
-Base path: `/content/playlists`
+Basissti: `/content/playlists`
 
-Extends standard CRUD (GET `/:id`, GET `/`, DELETE `/:id` from base class with StreamingServices.Edit permission for writes).
+Utvider standard CRUD (GET `/:id`, GET `/`, DELETE `/:id` fra basisklassen med StreamingServices.Edit-tillatelse for skriving).
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Get a playlist by ID |
-| GET | `/` | JWT | — | List all playlists |
-| GET | `/public/:churchId` | Public | — | List all public playlists for a church |
-| POST | `/` | JWT | StreamingServices.Edit | Create or update playlists (batch, supports base64 thumbnail upload) |
-| DELETE | `/:id` | JWT | StreamingServices.Edit | Delete a playlist |
+| GET | `/:id` | JWT | — | Hent en spilleliste etter ID |
+| GET | `/` | JWT | — | List alle spillelister |
+| GET | `/public/:churchId` | Public | — | List alle offentlige spillelister for en kirke |
+| POST | `/` | JWT | StreamingServices.Edit | Opprett eller oppdater spillelister (batch, støtter base64-miniatyrbildeopplasting) |
+| DELETE | `/:id` | JWT | StreamingServices.Edit | Slett en spilleliste |
 
-## Streaming Services
+## Strømmetjenester
 
-Base path: `/content/streamingServices`
+Basissti: `/content/streamingServices`
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/:id/hostChat` | JWT | Chat.Host | Get encrypted host chat room ID for a service |
-| GET | `/` | JWT | — | List all streaming services. Auto-cleans expired non-recurring services and advances recurring ones |
-| POST | `/` | JWT | StreamingServices.Edit | Create or update streaming services (batch) |
-| DELETE | `/:id` | JWT | StreamingServices.Edit | Delete a streaming service (also clears blocked IPs) |
+| GET | `/:id/hostChat` | JWT | Chat.Host | Hent kryptert vertschat-rom-ID for en tjeneste |
+| GET | `/` | JWT | — | List alle strømmetjenester. Rydder automatisk opp utløpte, ikke-gjentakende tjenester og fremskrider gjentakende |
+| POST | `/` | JWT | StreamingServices.Edit | Opprett eller oppdater strømmetjenester (batch) |
+| DELETE | `/:id` | JWT | StreamingServices.Edit | Slett en strømmetjeneste (fjerner også blokkerte IP-er) |
 
 ## Arrangementer
 
-Base path: `/content/events`
+Basissti: `/content/events`
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/timeline/group/:groupId?eventIds=` | JWT | — | Load timeline events for a group |
-| GET | `/timeline?eventIds=` | JWT | — | Load timeline events for the current user's groups |
-| GET | `/subscribe?churchId=&groupId=&curatedCalendarId=` | Public | — | Subscribe to events as ICS calendar feed |
-| GET | `/group/:groupId` | JWT | — | Get events for a group (includes exception dates) |
-| GET | `/public/group/:churchId/:groupId` | Public | — | Get public events for a group |
-| GET | `/:id` | JWT | — | Get an event by ID |
-| POST | `/` | JWT | — | Create or update events (batch) |
-| DELETE | `/:id` | JWT | Content.Edit | Delete an event |
+| GET | `/timeline/group/:groupId?eventIds=` | JWT | — | Last tidslinjearrangementer for en gruppe |
+| GET | `/timeline?eventIds=` | JWT | — | Last tidslinjearrangementer for gjeldende brukers grupper |
+| GET | `/subscribe?churchId=&groupId=&curatedCalendarId=` | Public | — | Abonner på arrangementer som en ICS-kalenderfeed |
+| GET | `/group/:groupId` | JWT | — | Hent arrangementer for en gruppe (inkluderer unntaksdatoer) |
+| GET | `/public/group/:churchId/:groupId` | Public | — | Hent offentlige arrangementer for en gruppe |
+| GET | `/:id` | JWT | — | Hent et arrangement etter ID |
+| POST | `/` | JWT | — | Opprett eller oppdater arrangementer (batch) |
+| DELETE | `/:id` | JWT | Content.Edit | Slett et arrangement |
 
-## Event Exceptions
+## Arrangements-unntak
 
-Base path: `/content/eventExceptions`
+Basissti: `/content/eventExceptions`
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Get an event exception by ID |
-| POST | `/` | JWT | Content.Edit | Create or update event exceptions (batch) |
-| DELETE | `/:id` | JWT | Content.Edit | Delete an event exception |
+| GET | `/:id` | JWT | — | Hent et arrangementsunntak etter ID |
+| POST | `/` | JWT | Content.Edit | Opprett eller oppdater arrangementsunntak (batch) |
+| DELETE | `/:id` | JWT | Content.Edit | Slett et arrangementsunntak |
 
-## Curated Calendars
+## Kuraterte kalendere
 
-Base path: `/content/curatedCalendars`
+Basissti: `/content/curatedCalendars`
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Get a curated calendar by ID |
-| GET | `/` | JWT | — | List all curated calendars |
-| POST | `/` | JWT | Content.Edit | Create or update curated calendars (batch) |
-| DELETE | `/:id` | JWT | Content.Edit | Delete a curated calendar |
+| GET | `/:id` | JWT | — | Hent en kuratert kalender etter ID |
+| GET | `/` | JWT | — | List alle kuraterte kalendere |
+| POST | `/` | JWT | Content.Edit | Opprett eller oppdater kuraterte kalendere (batch) |
+| DELETE | `/:id` | JWT | Content.Edit | Slett en kuratert kalender |
 
-## Curated Arrangementer
+## Kuraterte arrangementer
 
-Base path: `/content/curatedArrangementer`
+Basissti: `/content/curatedEvents`
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/calendar/:curatedCalendarId?withoutArrangementer` | JWT | — | Get curated events for a calendar (includes event details and exception dates unless `?withoutArrangementer` is set) |
-| GET | `/public/calendar/:churchId/:curatedCalendarId` | Public | — | Get public curated events for a calendar |
-| GET | `/:id` | JWT | — | Get a curated event by ID |
-| GET | `/` | JWT | — | List all curated events |
-| POST | `/` | JWT | Content.Edit | Create or update curated events. Supports `eventIds` array to add specific group events |
-| DELETE | `/:id` | JWT | Content.Edit | Delete a curated event |
-| DELETE | `/calendar/:curatedCalendarId/event/:eventId` | JWT | Content.Edit | Remove a specific event from a curated calendar |
-| DELETE | `/calendar/:curatedCalendarId/group/:groupId` | JWT | Content.Edit | Remove all events for a group from a curated calendar |
+| GET | `/calendar/:curatedCalendarId?withoutEvents` | JWT | — | Hent kuraterte arrangementer for en kalender (inkluderer arrangementsdetaljer og unntaksdatoer med mindre `?withoutEvents` er satt) |
+| GET | `/public/calendar/:churchId/:curatedCalendarId` | Public | — | Hent offentlige kuraterte arrangementer for en kalender |
+| GET | `/:id` | JWT | — | Hent et kuratert arrangement etter ID |
+| GET | `/` | JWT | — | List alle kuraterte arrangementer |
+| POST | `/` | JWT | Content.Edit | Opprett eller oppdater kuraterte arrangementer. Støtter `eventIds`-array for å legge til spesifikke gruppearrangementer |
+| DELETE | `/:id` | JWT | Content.Edit | Slett et kuratert arrangement |
+| DELETE | `/calendar/:curatedCalendarId/event/:eventId` | JWT | Content.Edit | Fjern et bestemt arrangement fra en kuratert kalender |
+| DELETE | `/calendar/:curatedCalendarId/group/:groupId` | JWT | Content.Edit | Fjern alle arrangementer for en gruppe fra en kuratert kalender |
 
-## Files
+## Filer
 
-Base path: `/content/files`
+Basissti: `/content/files`
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/:contentType/:contentId` | JWT | — | Get files by content type and content ID |
-| GET | `/` | JWT | — | List all files for the church website |
-| GET | `/:id` | JWT | — | Get a file by ID |
-| POST | `/` | JWT | Content.Edit* | Upload files (base64). *Also allowed if user is a member of the group matching `contentId` |
-| POST | `/postUrl` | JWT | Content.Edit* | Get a pre-signed S3 upload URL. *Also allowed for group members. Max 100MB per content item |
-| DELETE | `/:id` | JWT | Content.Edit* | Delete a file and remove from storage. *Also allowed for group members |
+| GET | `/:contentType/:contentId` | JWT | — | Hent filer etter innholdstype og innholds-ID |
+| GET | `/` | JWT | — | List alle filer for kirkens nettsted |
+| GET | `/:id` | JWT | — | Hent en fil etter ID |
+| POST | `/` | JWT | Content.Edit* | Last opp filer (base64). *Også tillatt hvis brukeren er medlem av gruppen som samsvarer med `contentId` |
+| POST | `/postUrl` | JWT | Content.Edit* | Hent en forhåndssignert S3-opplastings-URL. *Også tillatt for gruppemedlemmer. Maks 100 MB per innholdselement |
+| DELETE | `/:id` | JWT | Content.Edit* | Slett en fil og fjern den fra lagring. *Også tillatt for gruppemedlemmer |
 
-## Gallery
+## Galleri
 
-Base path: `/content/gallery`
+Basissti: `/content/gallery`
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/stock/:folder` | Public | — | List stock photos in a folder |
-| GET | `/:folder` | JWT | Content.Edit | List gallery images in a folder |
-| POST | `/requestUpload` | JWT | Content.Edit | Get a pre-signed S3 upload URL for a gallery image |
-| DELETE | `/:folder/:image` | JWT | Content.Edit | Delete a gallery image |
+| GET | `/stock/:folder` | Public | — | List arkivbilder i en mappe |
+| GET | `/:folder` | JWT | Content.Edit | List galleribilder i en mappe |
+| POST | `/requestUpload` | JWT | Content.Edit | Hent en forhåndssignert S3-opplastings-URL for et galleribilde |
+| DELETE | `/:folder/:image` | JWT | Content.Edit | Slett et galleribilde |
 
-## Bibles
+## Bibler
 
-Base path: `/content/bibles`
+Basissti: `/content/bibles`
 
-All Bible endpoints are public (no authentication required). Data is fetched from external sources and cached locally.
+Alle bibel-endepunkter er offentlige (ingen autentisering kreves). Data hentes fra eksterne kilder og caches lokalt.
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/` | Public | — | List all Bible translations (fetches from source if cache is empty) |
-| GET | `/stats?startDate=&endDate=` | Public | — | Get Bible lookup statistics for a date range |
-| GET | `/availableTranslations/:source` | Public | — | List available translations from a source (e.g. api.bible) |
-| GET | `/updateTranslations` | Public | — | Sync all translations from all sources |
-| GET | `/updateTranslations/:source` | Public | — | Sync translations from a specific source |
-| GET | `/updateCopyrights` | Public | — | Update copyright info for translations missing it |
-| GET | `/:translationKey/updateCopyright` | Public | — | Update copyright for a specific translation |
-| GET | `/:translationKey/search?query=&limit=` | Public | — | Search verses in a translation |
-| GET | `/:translationKey/books` | Public | — | Get books for a translation (caches locally) |
-| GET | `/:translationKey/:bookKey/chapters` | Public | — | Get chapters for a book (caches locally) |
-| GET | `/:translationKey/chapters/:chapterKey/verses` | Public | — | Get verses for a chapter (caches locally) |
-| GET | `/:translationKey/verses/:startVerseKey-:endVerseKey` | Public | — | Get verse text for a range. Logs lookups. Some translations bypass caching for licensing |
+| GET | `/` | Public | — | List alle bibeloversettelser (henter fra kilde hvis cachen er tom) |
+| GET | `/stats?startDate=&endDate=` | Public | — | Hent statistikk over bibeloppslag for et datointervall |
+| GET | `/availableTranslations/:source` | Public | — | List tilgjengelige oversettelser fra en kilde (f.eks. api.bible) |
+| GET | `/updateTranslations` | Public | — | Synkroniser alle oversettelser fra alle kilder |
+| GET | `/updateTranslations/:source` | Public | — | Synkroniser oversettelser fra en bestemt kilde |
+| GET | `/updateCopyrights` | Public | — | Oppdater opphavsrettsinformasjon for oversettelser som mangler det |
+| GET | `/:translationKey/updateCopyright` | Public | — | Oppdater opphavsrett for en bestemt oversettelse |
+| GET | `/:translationKey/search?query=&limit=` | Public | — | Søk i vers i en oversettelse |
+| GET | `/:translationKey/books` | Public | — | Hent bøker for en oversettelse (caches lokalt) |
+| GET | `/:translationKey/:bookKey/chapters` | Public | — | Hent kapitler for en bok (caches lokalt) |
+| GET | `/:translationKey/chapters/:chapterKey/verses` | Public | — | Hent vers for et kapittel (caches lokalt) |
+| GET | `/:translationKey/verses/:startVerseKey-:endVerseKey` | Public | — | Hent verstekst for et intervall. Logger oppslag. Enkelte oversettelser omgår caching av lisensårsaker |
 
-### Example: Get Verse Text
+### Eksempel: Hent verstekst
 
 ```
 GET /content/bibles/de4e12af7f28f599-02/verses/GEN.1.1-GEN.1.3
@@ -331,129 +332,129 @@ GET /content/bibles/de4e12af7f28f599-02/verses/GEN.1.1-GEN.1.3
 ]
 ```
 
-## Songs
+## Sanger
 
-Base path: `/content/songs`
+Basissti: `/content/songs`
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/search?q=` | JWT | — | Search songs by query |
-| GET | `/:id` | JWT | — | Get a song by ID |
-| GET | `/` | JWT | Content.Edit | List all songs |
-| POST | `/` | JWT | Content.Edit | Create or update songs (batch) |
-| POST | `/import` | JWT | — | Import songs from FreeShow (batch) |
-| DELETE | `/:id` | JWT | Content.Edit | Delete a song |
+| GET | `/search?q=` | JWT | — | Søk sanger etter spørring |
+| GET | `/:id` | JWT | — | Hent en sang etter ID |
+| GET | `/` | JWT | Content.Edit | List alle sanger |
+| POST | `/` | JWT | Content.Edit | Opprett eller oppdater sanger (batch) |
+| POST | `/import` | JWT | — | Importer sanger fra FreeShow (batch) |
+| DELETE | `/:id` | JWT | Content.Edit | Slett en sang |
 
-## Song Details
+## Sangdetaljer
 
-Base path: `/content/songDetails`
+Basissti: `/content/songDetails`
 
-Song details are global (not church-scoped). These represent canonical song metadata shared across churches.
+Sangdetaljer er globale (ikke kirkespesifikke). Disse representerer kanonisk sangmetadata delt på tvers av kirker.
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Get a song detail by ID (global) |
-| GET | `/` | JWT | — | List song details for the church |
-| POST | `/create` | JWT | — | Create a song detail from PraiseCharts ID (returns existing if already created). Auto-fetches metadata from PraiseCharts and MusicBrainz |
-| POST | `/` | JWT | — | Create or update song details (batch) |
+| GET | `/:id` | JWT | — | Hent en sangdetalj etter ID (global) |
+| GET | `/` | JWT | — | List sangdetaljer for kirken |
+| POST | `/create` | JWT | — | Opprett en sangdetalj fra en PraiseCharts-ID (returnerer eksisterende hvis allerede opprettet). Henter automatisk metadata fra PraiseCharts og MusicBrainz |
+| POST | `/` | JWT | — | Opprett eller oppdater sangdetaljer (batch) |
 
-## Song Detail Links
+## Sangdetalj-lenker
 
-Base path: `/content/songDetailLinks`
+Basissti: `/content/songDetailLinks`
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Get a song detail link by ID |
-| GET | `/songDetail/:songDetailId` | JWT | — | Get all links for a song detail |
-| POST | `/` | JWT | — | Create or update song detail links (batch). Auto-fetches MusicBrainz data if linked |
-| DELETE | `/:id` | JWT | — | Delete a song detail link |
+| GET | `/:id` | JWT | — | Hent en sangdetalj-lenke etter ID |
+| GET | `/songDetail/:songDetailId` | JWT | — | Hent alle lenker for en sangdetalj |
+| POST | `/` | JWT | — | Opprett eller oppdater sangdetalj-lenker (batch). Henter automatisk MusicBrainz-data hvis lenket |
+| DELETE | `/:id` | JWT | — | Slett en sangdetalj-lenke |
 
-## Arrangements
+## Arrangementer (musikk)
 
-Base path: `/content/arrangements`
+Basissti: `/content/arrangements`
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Get an arrangement by ID |
-| GET | `/song/:songId` | JWT | Content.Edit | Get arrangements for a song |
-| GET | `/songDetail/:songDetailId` | JWT | Content.Edit | Get arrangements for a song detail |
-| GET | `/` | JWT | Content.Edit | List all arrangements |
-| POST | `/` | JWT | Content.Edit | Create or update arrangements (batch) |
-| POST | `/freeShow/missing` | JWT | — | Find FreeShow IDs that don't exist in the church. Body: `{ freeShowIds: string[] }` |
-| DELETE | `/:id` | JWT | Content.Edit | Delete an arrangement (also deletes keys; deletes the song if no arrangements remain) |
+| GET | `/:id` | JWT | — | Hent et arrangement etter ID |
+| GET | `/song/:songId` | JWT | Content.Edit | Hent arrangementer for en sang |
+| GET | `/songDetail/:songDetailId` | JWT | Content.Edit | Hent arrangementer for en sangdetalj |
+| GET | `/` | JWT | Content.Edit | List alle arrangementer |
+| POST | `/` | JWT | Content.Edit | Opprett eller oppdater arrangementer (batch) |
+| POST | `/freeShow/missing` | JWT | — | Finn FreeShow-ID-er som ikke finnes i kirken. Body: `{ freeShowIds: string[] }` |
+| DELETE | `/:id` | JWT | Content.Edit | Slett et arrangement (sletter også toneart-nøkler; sletter sangen hvis ingen arrangementer gjenstår) |
 
-## Arrangement Keys
+## Arrangement-tonearter
 
-Base path: `/content/arrangementKeys`
+Basissti: `/content/arrangementKeys`
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/presenter/:churchId/:id` | Public | — | Get arrangement key with full song data for presenter view |
-| GET | `/:id` | JWT | — | Get an arrangement key by ID |
-| GET | `/arrangement/:arrangementId` | JWT | Content.Edit | Get keys for an arrangement |
-| GET | `/` | JWT | Content.Edit | List all arrangement keys |
-| POST | `/` | JWT | Content.Edit | Create or update arrangement keys (batch) |
-| DELETE | `/:id` | JWT | Content.Edit | Delete an arrangement key |
+| GET | `/presenter/:churchId/:id` | Public | — | Hent en arrangement-toneart med fullstendige sangdata for presentasjonsvisning |
+| GET | `/:id` | JWT | — | Hent en arrangement-toneart etter ID |
+| GET | `/arrangement/:arrangementId` | JWT | Content.Edit | Hent tonearter for et arrangement |
+| GET | `/` | JWT | Content.Edit | List alle arrangement-tonearter |
+| POST | `/` | JWT | Content.Edit | Opprett eller oppdater arrangement-tonearter (batch) |
+| DELETE | `/:id` | JWT | Content.Edit | Slett en arrangement-toneart |
 
-## Settings
+## Innstillinger
 
-Base path: `/content/settings`
+Basissti: `/content/settings`
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/my` | JWT | — | Get current user's settings |
-| GET | `/` | JWT | Settings.Edit | Get all settings for the church |
-| GET | `/public/:churchId` | Public | — | Get public settings for a church (returned as key-value pairs) |
-| POST | `/my` | JWT | — | Save user-level settings (supports base64 image upload) |
-| POST | `/` | JWT | Settings.Edit | Save church-level settings (supports base64 image upload) |
-| DELETE | `/my/:id` | JWT | — | Delete a user setting |
+| GET | `/my` | JWT | — | Hent gjeldende brukers innstillinger |
+| GET | `/` | JWT | Settings.Edit | Hent alle innstillinger for kirken |
+| GET | `/public/:churchId` | Public | — | Hent offentlige innstillinger for en kirke (returneres som nøkkel-verdi-par) |
+| POST | `/my` | JWT | — | Lagre brukerspesifikke innstillinger (støtter base64-bildeopplasting) |
+| POST | `/` | JWT | Settings.Edit | Lagre kirkespesifikke innstillinger (støtter base64-bildeopplasting) |
+| DELETE | `/my/:id` | JWT | — | Slett en brukerinnstilling |
 
-## Preview
+## Forhåndsvisning
 
-Base path: `/content/preview`
+Basissti: `/content/preview`
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/data/:key` | Public | — | Load streaming preview data for a church by subdomain key (tabs, links, services, sermons) |
+| GET | `/data/:key` | Public | — | Last strømme-forhåndsvisningsdata for en kirke etter underdomene-nøkkel (faner, lenker, tjenester, prekener) |
 
-## Gallery (Stock Photos)
+## Galleri (arkivbilder)
 
-Base path: `/content/stock`
+Basissti: `/content/stock`
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| POST | `/search` | Public | — | Search Pexels stock photos. Body: `{ term: "church" }` |
+| POST | `/search` | Public | — | Søk Pexels arkivbilder. Body: `{ term: "church" }` |
 
 ## PraiseCharts
 
-Base path: `/content/praiseCharts`
+Basissti: `/content/praiseCharts`
 
-Integration with PraiseCharts for worship song discovery and sheet music downloads.
+Integrasjon med PraiseCharts for oppdagelse av lovsanger og nedlasting av noter.
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/raw/:id` | JWT | — | Get raw PraiseCharts data for a song |
-| GET | `/hasAccount` | JWT | — | Check if the user has a linked PraiseCharts account |
-| GET | `/search?q=` | JWT | — | Search the PraiseCharts catalog |
-| GET | `/products/:id?keys=` | JWT | — | Get products for a song (from library if authenticated, otherwise catalog) |
-| GET | `/arrangement/raw/:id?keys=` | JWT | — | Get raw arrangement data from library |
-| GET | `/download?skus=&keys=&file_name=` | JWT | — | Download a file from PraiseCharts (PDF or ZIP). Returns `{ redirectUrl }` |
-| GET | `/authUrl?returnUrl=` | Public | — | Get OAuth authorization URL for PraiseCharts |
-| GET | `/access?verifier=&token=&secret=` | JWT | — | Exchange OAuth verifier for access token and save to user settings |
-| GET | `/library` | JWT | — | Browse the user's PraiseCharts library |
+| GET | `/raw/:id` | JWT | — | Hent rå PraiseCharts-data for en sang |
+| GET | `/hasAccount` | JWT | — | Sjekk om brukeren har en koblet PraiseCharts-konto |
+| GET | `/search?q=` | JWT | — | Søk i PraiseCharts-katalogen |
+| GET | `/products/:id?keys=` | JWT | — | Hent produkter for en sang (fra bibliotek hvis autentisert, ellers katalog) |
+| GET | `/arrangement/raw/:id?keys=` | JWT | — | Hent rå arrangementdata fra bibliotek |
+| GET | `/download?skus=&keys=&file_name=` | JWT | — | Last ned en fil fra PraiseCharts (PDF eller ZIP). Returnerer `{ redirectUrl }` |
+| GET | `/authUrl?returnUrl=` | Public | — | Hent OAuth-autorisasjons-URL for PraiseCharts |
+| GET | `/access?verifier=&token=&secret=` | JWT | — | Bytt OAuth-verifikator mot tilgangstoken og lagre til brukerinnstillinger |
+| GET | `/library` | JWT | — | Bla gjennom brukerens PraiseCharts-bibliotek |
 
 ## Support
 
-Base path: `/content/support`
+Basissti: `/content/support`
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| POST | `/createAudio` | Public | — | Convert SSML to MP3 audio using AWS Polly. Body: `{ ssml: "<speak>...</speak>" }` |
+| POST | `/createAudio` | Public | — | Konverter SSML til MP3-lyd ved hjelp av AWS Polly. Body: `{ ssml: "<speak>...</speak>" }` |
 
-## Related Pages
+## Relaterte sider
 
-- [Website Builder Architecture](../../architecture/website-builder) -- How pages, sections, elements, posts, and redirects fit together across the apps
-- [Medlemskaps-endepunkter](./membership) -- People, churches, groups, roles, permissions
-- [Oppmøte-endepunkter](./attendance) -- Service and visit tracking
-- [Authentication & Permissions](./authentication) -- Login flow, JWT, permission model
-- [Module Structure](../module-structure) -- Code organization patterns
+- [Nettstedbyggerens arkitektur](../../architecture/website-builder) -- Hvordan sider, seksjoner, elementer, innlegg og omdirigeringer henger sammen på tvers av appene
+- [Medlemskaps-endepunkter](./membership) -- Personer, kirker, grupper, roller, tillatelser
+- [Oppmøte-endepunkter](./attendance) -- Gudstjeneste- og besøkssporing
+- [Autentisering og tillatelser](./authentication) -- Innloggingsflyt, JWT, tillatelsesmodell
+- [Modulstruktur](../module-structure) -- Kodeorganiseringsmønstre

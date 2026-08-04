@@ -177,4 +177,3 @@ Kommen Sie nicht weiter? Öffnen Sie ein Issue unter [github.com/ChurchApps/Chur
 - **[Self-Hosting auf Railway](./railway-template)** — verwaltete Hosting-Alternative, plus die gemeinsamen Nachkonfigurationsanleitungen
 - **[Ersteinrichtung](../../getting-started/initial-setup)** — erste Schritte, nachdem Ihre Kirche angelegt wurde
 - **[Lokale API-Einrichtung](../api/local-setup)** — den Stack direkt für die Entwicklung ausführen
-</content>

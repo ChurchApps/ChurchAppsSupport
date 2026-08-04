@@ -34,7 +34,7 @@ If you're migrating from another church management system, the [Import Data](imp
 ## Editing Details
 
 1. On the person's profile page, click the **edit pencil** next to their name.
-2. Fill in additional information such as middle name, membership status, dates, address, and phone numbers.
+2. Fill in additional information such as middle name, membership status, dates, address, phone numbers, and (for children and students) grade and school.
 3. Click **Save** to store the personal information.
 
 The profile also includes several tabs for related information:

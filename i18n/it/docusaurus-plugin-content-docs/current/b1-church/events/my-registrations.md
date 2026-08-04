@@ -1,68 +1,68 @@
 ---
-title: "Le mie registrazioni"
+title: "Le Mie Registrazioni"
 ---
 
-# Le mie registrazioni
+# Le Mie Registrazioni
 
 <div class="article-intro">
 
-La pagina **Registrazioni** nel portale dei membri è il tuo centro operativo per ogni evento a cui ti sei iscritto. Da qui puoi controllare il tuo stato, pagare un saldo in sospeso, modificare chi sta venendo e cosa hai ordinato, o annullare completamente una registrazione.
+La pagina **Registrations** nel portale membri è la tua base di riferimento per ogni evento a cui ti sei iscritto. Da qui puoi controllare il tuo stato, pagare un saldo in sospeso, modificare chi partecipa e cosa hai ordinato, oppure annullare completamente una registrazione.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di iniziare</h4>
+<h4>Prima di Iniziare</h4>
 
-- Devi essere [connesso](../getting-started/logging-in.md) — le registrazioni come ospite non appaiono qui
-- Hai bisogno di almeno una registrazione a un evento. Vedi [Registrazione agli eventi](./registering).
+- Devi aver effettuato l'[accesso](../getting-started/logging-in.md) — le registrazioni come ospite non appaiono qui
+- Hai bisogno di almeno una registrazione a un evento. Vedi [Registrarsi agli Eventi](./registering).
 
 </div>
 
-## Visualizzazione delle tue registrazioni
+## Visualizzare le Tue Registrazioni
 
-Apri **Registrazioni** nel portale dei membri. Ogni registrazione appare come una scheda che mostra:
+Apri **Registrations** nel portale membri. Ogni registrazione appare come una scheda che mostra:
 
 - Il **titolo e la data dell'evento**
-- Un pill di **stato** — **confermato**, **in sospeso**, **in lista d'attesa**, o **annullato**
+- Una pillola di **stato** — **confirmed**, **pending**, **waitlisted** o **cancelled**
 - I **membri** che hai registrato
-- La riga di pagamento — sia il totale pagato, che **Saldo dovuto** se denaro è ancora dovuto
+- La riga del pagamento — il totale pagato, oppure **Balance due** se è ancora dovuto del denaro
 
-Se non ti sei ancora registrato per niente, vedrai "Nessuna registrazione ancora."
+Se non ti sei ancora registrato a nulla, vedrai "No registrations yet."
 
-## Completamento di un pagamento
+## Completare un Pagamento
 
-Un pulsante **Completa pagamento** appare su qualsiasi registrazione con un saldo in sospeso — il più delle volte dopo che sei stato promosso da una lista d'attesa, o quando una modifica dello staff ha cambiato il tuo totale.
+Un pulsante **Complete payment** appare su qualsiasi registrazione con un saldo in sospeso -- più comunemente dopo essere stato promosso da una lista d'attesa, oppure quando una modifica dello staff ha cambiato il tuo totale.
 
-1. Fai clic su **Completa pagamento**.
+1. Clicca su **Complete payment**.
 2. Rivedi il riepilogo dell'ordine, scegli una carta salvata o inseriscine una nuova, e paga.
-3. Una volta pagato il saldo, la registrazione diventa **confermata**.
+3. Una volta pagato il saldo, la registrazione diventa **confirmed**.
 
 :::tip
-Quando un posto in lista d'attesa si apre per te, l'email che la tua chiesa invia include un collegamento diretto a questo passaggio di pagamento.
+Quando si libera un posto in lista d'attesa per te, l'email che la tua chiesa invia include un link diretto a questo passaggio di pagamento.
 :::
 
-## Modifica di una registrazione
+## Modificare una Registrazione
 
-I piani cambiano. Fai clic su **Modifica** su una registrazione per aprire la finestra di dialogo **Modifica registrazione**, dove puoi:
+I piani cambiano. Clicca su **Edit** su una registrazione per aprire la finestra di dialogo **Edit Registration**, dove puoi:
 
 - Aggiornare i tuoi **dati di contatto**
-- Modificare il **nome** e il **tipo di partecipante** di ogni membro
-- Regolare le **quantità di selezione** (componenti aggiuntivi come magliette o pasti)
+- Cambiare il **nome** e il **tipo di partecipante** di ciascun membro
+- Regolare le **quantità delle selezioni** (componenti aggiuntivi come magliette o pasti)
 
-La capacità si applica ancora quando modifichi — se un tipo di partecipante o un'opzione è sold out nel frattempo, ti verrà chiesto di sceglierne un'altra. Il salvataggio ricalcola il tuo totale; se la modifica lascia un saldo dovuto, un pulsante **Completa pagamento** appare sulla scheda.
+La capienza si applica ancora quando modifichi -- se un tipo di partecipante o un'opzione nel frattempo è esaurita, ti verrà chiesto di sceglierne un'altra. Il salvataggio ricalcola il tuo totale; se la modifica lascia un saldo dovuto, un pulsante **Complete payment** appare sulla scheda.
 
 :::info
-La modifica non addebita mai automaticamente la tua carta. Se il tuo nuovo totale è più alto, paga la differenza con **Completa pagamento**; se è più basso, contatta la tua chiesa per un rimborso — i rimborsi sono gestiti dal personale della chiesa tramite il loro provider di pagamento.
+La modifica non addebita mai automaticamente la tua carta. Se il tuo nuovo totale è più alto, paga la differenza con **Complete payment**; se è più basso, contatta la tua chiesa per un rimborso -- i rimborsi sono gestiti dallo staff della chiesa tramite il proprio provider di pagamento.
 :::
 
-## Annullamento di una registrazione
+## Annullare una Registrazione
 
-1. Fai clic su **Annulla registrazione** sulla scheda.
-2. Conferma nella finestra di dialogo — l'annullamento non può essere annullato.
+1. Clicca su **Cancel Registration** sulla scheda.
+2. Conferma nella finestra di dialogo -- l'annullamento non può essere annullato.
 
-Il tuo posto è liberato immediatamente. Se l'evento ha una lista d'attesa, la prossima persona in fila viene promossa automaticamente. Qualsiasi pagamento che hai effettuato non viene automaticamente rimborsato — contatta l'ufficio della tua chiesa per i rimborsi.
+Il tuo posto viene liberato immediatamente. Se l'evento ha una lista d'attesa, la persona successiva in coda viene promossa automaticamente. Qualsiasi pagamento effettuato non viene rimborsato automaticamente -- contatta l'ufficio della tua chiesa per i rimborsi.
 
-## Articoli correlati
+## Articoli Correlati
 
-- [Registrazione agli eventi](./registering) -- Il processo di iscrizione, incluso pagamento e liste d'attesa
-- [Panoramica degli eventi](./index.md) -- Sfoglia gli eventi imminenti
+- [Registrarsi agli Eventi](./registering) -- Il processo di iscrizione, incluso il pagamento e le liste d'attesa
+- [Panoramica degli Eventi](./index.md) -- Sfoglia gli eventi in arrivo

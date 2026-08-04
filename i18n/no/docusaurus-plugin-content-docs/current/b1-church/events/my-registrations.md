@@ -1,68 +1,68 @@
 ---
-title: "Mine registreringer"
+title: "Mine påmeldinger"
 ---
 
-# Mine registreringer
+# Mine påmeldinger
 
 <div class="article-intro">
 
-Siden **Registreringer** i medlemsportalen er din hjemmebasis for alle arrangementer du har meldt deg på. Herfra kan du sjekke statusen din, betale en utestående saldo, redigere hvem som kommer og hva du bestilte, eller avbryte en registrering helt og holdent.
+**Påmeldinger**-siden i medlemsportalen er hjemmebasen din for hvert arrangement du har meldt deg på. Herfra kan du sjekke statusen din, betale en utestående saldo, redigere hvem som kommer og hva du har bestilt, eller avbestille en påmelding helt.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du må være [innlogget](../getting-started/logging-in.md) — gjestregistreringer vises ikke her
-- Du trenger minst én arrangementsregistrering. Se [Registrering for arrangement](./registering).
+- Du må være [logget inn](../getting-started/logging-in.md) — gjestepåmeldinger vises ikke her
+- Du trenger minst én arrangementspåmelding. Se [Melde seg på arrangementer](./registering).
 
 </div>
 
-## Visning av dine registreringer
+## Se påmeldingene dine
 
-Åpne **Registreringer** i medlemsportalen. Hver registrering vises som et kort som viser:
+Åpne **Påmeldinger** i medlemsportalen. Hver påmelding vises som et kort som viser:
 
-- **Arrangement tittel og dato**
-- En **status** pille — **bekreftet**, **venter**, **på venteliste**, eller **avbrutt**
-- **Medlemmene** du registrerte
-- Betalingslinjen — enten den betalte totalen, eller **Skyldig beløp** hvis penger fortsatt skyldtes
+- **Arrangementets tittel og dato**
+- En **status**-pille — **bekreftet**, **ventende**, **venteliste**, eller **avbestilt**
+- **Medlemmene** du meldte på
+- Betalingslinjen — enten det betalte beløpet, eller **Utestående saldo** hvis det fortsatt skyldes penger
 
-Hvis du ikke har registrert deg for noe ennå, vil du se "Ingen registreringer ennå."
+Hvis du ikke har meldt deg på noe ennå, ser du "Ingen påmeldinger ennå."
 
-## Fullføring av betaling
+## Fullføre en betaling
 
-En **Fullfør betaling** knapp vises på en registrering med en utestående saldo — mest vanlig etter at du blir forfremmet fra en venteliste, eller når en stab redigering endret totalen din.
+En **Fullfør betaling**-knapp vises på enhver påmelding med en utestående saldo -- oftest etter at du er forfremmet fra en venteliste, eller når en ansattredigering endret totalsummen din.
 
 1. Klikk **Fullfør betaling**.
-2. Gå gjennom ordreoversikten, velg et lagret kort eller oppgi et nytt, og betal.
-3. Når saldoen er betalt, blir registreringen **bekreftet**.
+2. Se gjennom ordresammendraget, velg et lagret kort eller skriv inn et nytt, og betal.
+3. Når saldoen er betalt, blir påmeldingen **bekreftet**.
 
 :::tip
-Når et venteliste punkt åpner seg for deg, inkluderer e-posten fra kirken din en direkte lenke til dette betalingstrinn.
+Når en ventelisteplass åpner seg for deg, inkluderer e-posten menigheten din sender en lenke rett til dette betalingstrinnet.
 :::
 
-## Redigering av registrering
+## Redigere en påmelding
 
-Planer endres. Klikk **Rediger** på en registrering for å åpne dialogboksen **Rediger registrering**, der du kan:
+Planer endrer seg. Klikk **Rediger** på en påmelding for å åpne dialogen **Rediger påmelding**, hvor du kan:
 
-- Oppdater **kontaktdetaljer**
-- Endre hver medlems **navn** og **deltagertype**
-- Juster **valg mengder** (add-ons som T-skjorter eller måltider)
+- Oppdatere **kontaktopplysningene** dine
+- Endre hvert medlems **navn** og **deltakertype**
+- Justere **valgantall** (tilleggsprodukter som T-skjorter eller måltider)
 
-Kapasitet gjelder fortsatt når du redigerer — hvis en deltagertype eller alternativ har utgått, vil du bli bedt om å velge et annet. Lagring omberegner totalprisen din; hvis endringen etterlater en skyldig saldo, vises en **Fullfør betaling** knapp på kortet.
+Kapasitet gjelder fortsatt når du redigerer -- hvis en deltakertype eller et alternativ i mellomtiden er utsolgt, blir du bedt om å velge et annet. Lagring beregner totalsummen din på nytt; hvis endringen etterlater en utestående saldo, vises en **Fullfør betaling**-knapp på kortet.
 
 :::info
-Redigering belaster aldri kortet ditt automatisk. Hvis den nye totalen er høyere, betal differansen med **Fullfør betaling**; hvis den er lavere, kontakt kirken din om refusjon — refusjoner håndteres av kirkestaben gjennom betalingsleverandøren.
+Redigering belaster aldri kortet ditt automatisk. Hvis din nye totalsum er høyere, betal differansen med **Fullfør betaling**; hvis den er lavere, kontakt menigheten din om en refusjon — refusjoner håndteres av menighetens ansatte gjennom deres betalingsleverandør.
 :::
 
-## Avbrytelse av registrering
+## Avbestille en påmelding
 
-1. Klikk **Avbryt registrering** på kortet.
-2. Bekreft i dialogen — avbrytelse kan ikke angres.
+1. Klikk **Avbestill påmelding** på kortet.
+2. Bekreft i dialogen — avbestilling kan ikke angres.
 
-Plassen din frigjøres umiddelbar. Hvis arrangementet har en venteliste, blir neste person i køen forfremmet automatisk. En eventuell betaling du gjorde blir ikke automatisk refundert — kontakt kirkekontoret ditt om refusjoner.
+Plassen din frigjøres umiddelbart. Hvis arrangementet har en venteliste, forfremmes den neste personen i køen automatisk. Eventuell betaling du har gjort, refunderes ikke automatisk — kontakt menighetskontoret om refusjoner.
 
 ## Relaterte artikler
 
-- [Registrering for arrangement](./registering) -- Påmeldingsprosessen, inkludert betaling og ventelister
-- [Arrangementoversikt](./index.md) -- Bla gjennom kommende arrangementer
+- [Melde seg på arrangementer](./registering) -- Påmeldingsprosessen, inkludert betaling og ventelister
+- [Oversikt over arrangementer](./index.md) -- Bla gjennom kommende arrangementer

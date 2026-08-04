@@ -28,6 +28,10 @@ The service order is displayed as a list of items in the order they will occur d
 
 Items are organized under **headers** that group related elements together (for example, "Worship Set" or "Message"). This makes it easy to scan the overall structure of the service.
 
+## Viewing Song Lyrics and Chords
+
+Click a song in the service order to open its lyrics and chords. Use the **Key Signature** dropdown at the top to transpose the chords on the fly -- handy if your instrument or vocal range needs a different key than the one the worship leader planned for.
+
 ## Curriculum and Lesson Content
 
 If the plan has associated curriculum or lesson content from a provider like [Lessons.church](../content/lessons.md), you will see a preview of that content within the service order. This can include lesson sections, presentation materials, and other resources your team needs for the service.

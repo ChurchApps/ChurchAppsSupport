@@ -6,41 +6,41 @@ title: "Arrangementer"
 
 <div class="article-intro">
 
-The Arrangementer section on B1.church lets you browse upcoming church events and register for them directly from the website. When your church enables registration for an event, you can sign up yourself and your family members in just a few steps — and for paid events, choose attendee types and options, apply discount codes, and pay securely as part of signing up.
+Arrangementer-delen på B1.church lar deg bla gjennom kommende kirkearrangementer og melde deg på dem direkte fra nettstedet. Når kirken din aktiverer påmelding for et arrangement, kan du melde på deg selv og familiemedlemmene dine på bare noen få trinn — og for betalte arrangementer kan du velge deltakertyper og alternativer, bruke rabattkoder og betale sikkert som en del av påmeldingen.
 
 </div>
 
-## Browsing Arrangementer
+## Bla gjennom arrangementer
 
-Arrangementer appear on the church calendar. When you open an event that has registration enabled, a **Register for this Event** button is displayed alongside the event details.
+Arrangementer vises på kirkekalenderen. Når du åpner et arrangement som har påmelding aktivert, vises en **Meld deg på dette arrangementet**-knapp sammen med arrangementsdetaljene.
 
-Arrangementer with registration enabled show:
+Arrangementer med påmelding aktivert viser:
 
-- **Event title and description** -- What the event is about.
-- **Date and time** -- When the event takes place.
-- **Registration button** -- A blue button that takes you to the registration form.
+- **Arrangementstittel og beskrivelse** -- Hva arrangementet handler om.
+- **Dato og klokkeslett** -- Når arrangementet finner sted.
+- **Påmeldingsknapp** -- En blå knapp som tar deg til påmeldingsskjemaet.
 
-## Registration Status
+## Påmeldingsstatus
 
-Arrangementer may show different statuses depending on timing and capacity:
+Arrangementer kan vise forskjellige statuser avhengig av tidspunkt og kapasitet:
 
-- **Open** -- Registration is available and you can sign up.
-- **Not Yet Open** -- The registration window has not started. Check back after the opening date.
-- **Closed** -- The registration deadline has passed.
-- **Full** -- All available spots have been taken.
+- **Åpen** -- Påmelding er tilgjengelig, og du kan melde deg på.
+- **Ikke åpnet ennå** -- Påmeldingsvinduet har ikke startet. Sjekk tilbake etter åpningsdatoen.
+- **Stengt** -- Påmeldingsfristen er utløpt.
+- **Fullt** -- Alle tilgjengelige plasser er tatt.
 
 :::tip
-If an event is full, you may still be able to join the **waitlist** when your church has enabled it -- you'll be emailed automatically if a spot opens. Otherwise, check back later; spots may open up if someone cancels.
+Hvis et arrangement er fullt, kan du fortsatt ha mulighet til å bli med på **ventelisten** hvis kirken din har aktivert dette -- du vil bli varslet automatisk på e-post hvis en plass blir ledig. Ellers kan du sjekke tilbake senere; plasser kan bli ledige hvis noen avbestiller.
 :::
 
-## What You Need
+## Hva du trenger
 
-- A B1.church account (or you can register as a guest)
-- Access to your church's B1.church website
+- En B1.church-konto (eller du kan melde deg på som gjest)
+- Tilgang til kirkens B1.church-nettsted
 
-## Learn More
+## Lær mer
 
-- [Registrering for arrangementer](./registering) -- Step-by-step guide to signing up for an event
-- [My Registrations](./my-registrations) -- View your registrations, pay balances, edit, or cancel
-- [Requesting Arrangementer & Rooms](./requesting-events) -- Request an event with the rooms and resources it needs
-- [Self Check-In](../checkin/self-checkin) -- Check in when you arrive at the event
+- [Påmelding til arrangementer](./registering) -- Trinnvis veiledning for å melde deg på et arrangement
+- [Mine påmeldinger](./my-registrations) -- Se påmeldingene dine, betal utestående beløp, rediger eller avbestill
+- [Forespørre arrangementer og rom](./requesting-events) -- Be om et arrangement med rommene og ressursene det trenger
+- [Selvinnsjekking](../checkin/self-checkin) -- Sjekk inn når du kommer til arrangementet

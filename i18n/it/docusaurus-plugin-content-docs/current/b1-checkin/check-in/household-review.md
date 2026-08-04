@@ -6,7 +6,7 @@ title: "Revisione della Tua Famiglia"
 
 <div class="article-intro">
 
-Dopo aver selezionato una persona dai risultati della ricerca, l'app carica l'intera famiglia e la visualizza sulla schermata di revisione della famiglia. Questo è l'hub centrale del processo di registrazione dove puoi visualizzare tutti i membri della tua famiglia e gestire i loro assegnamenti di gruppo prima della registrazione.
+Dopo aver selezionato una persona dai risultati della ricerca, l'app carica l'intera famiglia e la mostra nella schermata di revisione della famiglia. Questo è il fulcro centrale del processo di check-in, dove puoi vedere tutti i membri della tua famiglia e gestire le loro assegnazioni di gruppo prima di effettuare il check-in.
 
 </div>
 
@@ -18,46 +18,46 @@ Dopo aver selezionato una persona dai risultati della ricerca, l'app carica l'in
 
 </div>
 
-## Visualizzazione dei Membri della Famiglia
+## Visualizzare i Membri della Famiglia
 
-Ogni membro della famiglia appare come una scheda con:
+Ogni membro della famiglia compare come una scheda con:
 
-- La loro **foto** (o un'icona segnaposto se non è presente una foto)
-- Il loro **nome visualizzato**
-- Un **riepilogo dei loro attuali assegnamenti di gruppo** (mostrato come piccoli chip sotto il nome quando la scheda è compressa)
+- La sua **foto** (o un'icona segnaposto se non è disponibile alcuna foto)
+- Il suo **nome visualizzato**
+- Un **riepilogo delle sue attuali assegnazioni di gruppo** (mostrato come piccoli chip sotto il nome quando la scheda è compressa)
 - Una **freccia di espansione/compressione** sul lato destro
 
-## Espansione di un Membro
+## Espandere un Membro
 
-Tocca la scheda di un membro per espanderla. Quando espansa, vedrai una riga per ogni **ora di servizio** all'interno del servizio selezionato. Ogni riga mostra:
+Tocca la scheda di un membro per espanderla. Una volta espansa, vedrai una riga per ogni **orario di servizio** all'interno del servizio selezionato. Ogni riga mostra:
 
-- Il **nome dell'ora di servizio** (ad esempio, "09:00" o "11:00")
-- Un **pulsante** che mostra il gruppo attualmente assegnato, o "Seleziona Gruppo" se non è stato ancora assegnato alcun gruppo
+- Il **nome dell'orario di servizio** (ad esempio, "9:00" o "11:00")
+- Un **pulsante** che mostra il gruppo attualmente assegnato, oppure "Seleziona Gruppo" se non è stato ancora assegnato alcun gruppo
 
-Tocca il pulsante del gruppo per andare alla [schermata di selezione del gruppo](./group-assignment) dove puoi scegliere o modificare il gruppo per quella persona e quell'ora di servizio.
+Tocca il pulsante del gruppo per andare alla [schermata di selezione del gruppo](./group-assignment), dove puoi scegliere o cambiare il gruppo per quella persona e quell'orario di servizio.
 
-La scheda espansa mostra anche i chip **Member**, **Guest** e **Volunteer**. Tocca uno per impostare come questa persona si sta registrando -- Member è l'impostazione predefinita. Il tipo è importante per le stanze dei bambini: i volontari contano verso il rapporto volontario-bambino della stanza e gli ospiti contano contro qualsiasi capacità di ospiti che la tua chiesa ha impostato.
+La scheda espansa mostra anche i chip **Membro**, **Ospite** e **Volontario**. Toccane uno per impostare come questa persona sta effettuando il check-in -- Membro è l'impostazione predefinita. Il tipo è importante per le stanze dei bambini: i volontari contano ai fini del rapporto volontari-bambini della stanza, mentre gli ospiti contano ai fini di eventuali capacità per ospiti impostate dalla tua chiesa.
 
-Tocca la scheda del membro di nuovo per comprimerla.
+Tocca di nuovo la scheda del membro per comprimerla.
 
 :::tip
-Non è necessario assegnare ogni membro della famiglia a un gruppo. Gli adulti che frequentano il servizio di culto principale possono rimanere senza assegnamento di gruppo. Assegna i gruppi solo per i membri che hanno bisogno di registrarsi in una classe o programma specifico.
+Non è necessario assegnare ogni membro della famiglia a un gruppo. Gli adulti che partecipano al servizio di culto principale possono restare senza un'assegnazione di gruppo. Assegna i gruppi solo per i membri che devono registrarsi in una classe o un programma specifico.
 :::
 
-## Navigazione da Questa Schermata
+## Navigare da Questa Schermata
 
-Da questa schermata di revisione della famiglia, hai tre opzioni:
+Dalla schermata di revisione della famiglia hai tre opzioni:
 
-- **Espandi un membro** e tocca un pulsante di ora del servizio per [assegnare o modificare un gruppo](./group-assignment).
+- **Espandi un membro** e tocca il pulsante di un orario di servizio per [assegnare o cambiare un gruppo](./group-assignment).
 - **Tocca il pulsante Aggiungi Ospite** sotto l'elenco dei membri per [aggiungere un ospite](./adding-guests) alla tua famiglia.
-- **Tocca il pulsante Check-in** nella parte inferiore dello schermo per [completare la registrazione](./completing-checkin) per tutti i membri della famiglia.
+- **Tocca il pulsante Check-in** in fondo allo schermo per [completare il check-in](./completing-checkin) di tutti i membri della famiglia.
 
 :::info
-Qualsiasi assegnamento di gruppo da una precedente registrazione allo stesso servizio viene precaricato automaticamente. Se i tuoi bambini frequentano gli stessi gruppi ogni settimana, potrebbe non essere necessario cambiare nulla -- semplicemente rivedi e registrati.
+Eventuali assegnazioni di gruppo da un check-in precedente allo stesso servizio vengono precaricate automaticamente. Se i tuoi bambini frequentano gli stessi gruppi ogni settimana, potresti non dover cambiare nulla -- basta rivedere ed effettuare il check-in.
 :::
 
-## Passaggi Successivi
+## Prossimi Passi
 
-- [Assegna i gruppi](./group-assignment) ai membri della famiglia che hanno bisogno di registrarsi in una classe o programma specifico.
-- [Aggiungi un ospite](./adding-guests) se qualcuno sta visitando con la tua famiglia.
-- [Completa la registrazione](./completing-checkin) quando gli assegnamenti di tutti sembrano corretti.
+- [Assegna i gruppi](./group-assignment) ai membri della famiglia che devono registrarsi in una classe o un programma specifico.
+- [Aggiungi un ospite](./adding-guests) se qualcuno sta visitando insieme alla tua famiglia.
+- [Completa il check-in](./completing-checkin) quando le assegnazioni di tutti risultano corrette.

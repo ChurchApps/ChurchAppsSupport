@@ -1,12 +1,12 @@
 ---
-title: "Регистрация на события"
+title: "Регистрация на мероприятия"
 ---
 
-# Регистрация на события
+# Регистрация на мероприятия
 
 <div class="article-intro">
 
-Native регистрация на события lives в content модулю и since paid-registrations wave carries full commerce модель: priced attendee типы priced add-on selections discount коды платежи через church's existing giving gateway и status-driven waitlist. Money путь deliberately reuses giving стек — registration контроллер charges через same `GatewayService` / `IGatewayProvider` abstraction documented в [Giving](./giving) поэтому no карта данные или gateway SDK знание lives в content модулю. На этой странице описывается модель данных pricing и capacity правила и registration платеж и waitlist потоки.
+Собственная регистрация на мероприятия живёт в модуле content и, начиная с волны платных регистраций, несёт полноценную коммерческую модель: платные типы участников, платные дополнительные выборы, промокоды, платежи через существующий платёжный шлюз церкви и управляемый статусом список ожидания. Денежный путь намеренно переиспользует стек пожертвований — контроллер регистрации списывает средства через ту же абстракцию `GatewayService` / `IGatewayProvider`, описанную в [Пожертвованиях](./giving), поэтому в модуле content не хранится никаких знаний о данных карт или SDK шлюза. На этой странице описаны модель данных, правила ценообразования и вместимости, а также потоки регистрации, оплаты и списка ожидания.
 
 </div>
 
@@ -29,65 +29,65 @@ Native регистрация на события lives в content модулю 
                                             └─────────────────────────────────────────────┘
 ```
 
-Три правила hold across стек:
+Три правила действуют во всём стеке:
 
-1. **Сервер owns цена.** Клиенты submit тип ids selection ids и quantities; `RegistrationPricingHelper.computeTotal()` computes total server-side и coupons это re-validated на charge time. Client-supplied amount это никогда не trusted.
-2. **Capacity это enforced atomically на insert time.** Каждый capacity-limited insert uses `INSERT … SELECT … FROM dual WHERE (count из active строки) < capacity` statement поэтому two simultaneous регистрации не могут both take last spot. Counts это derived из status (`pending`/`confirmed`) никогда не stored.
-3. **Платежи ride giving rails.** `RegistrationController` calls shared `GatewayService.processCharge` с church's configured gateway — same provider abstraction tokenization модель и SCA handling как donations.
+1. **Сервер владеет ценой.** Клиенты отправляют id типов, id выборов и количества; `RegistrationPricingHelper.computeTotal()` вычисляет итог на стороне сервера, а купоны заново проверяются в момент списания. Сумма, предоставленная клиентом, никогда не является доверенной.
+2. **Вместимость обеспечивается атомарно в момент вставки.** Каждая вставка с ограничением по вместимости использует оператор `INSERT … SELECT … FROM dual WHERE (count of active rows) < capacity`, так что две одновременные регистрации не могут занять одно последнее место. Счётчики выводятся из статуса (`pending`/`confirmed`), а не хранятся.
+3. **Платежи используют рельсы пожертвований.** `RegistrationController` вызывает общий `GatewayService.processCharge` с настроенным шлюзом церкви — та же абстракция провайдеров, модель токенизации и обработка SCA, что и у пожертвований.
 
 ## Модель данных (`Api/src/modules/content`)
 
-Models это в `models/Registration.ts`; table mappings в `db/DatabaseTypes.ts`; one репо per таблица under `repositories/`.
+Модели находятся в `models/Registration.ts`; сопоставления таблиц в `db/DatabaseTypes.ts`; один репозиторий на таблицу в `repositories/`.
 
 | Таблица | Значение | Ключевые поля |
 |-------|---------|-----------|
-| `registrations` | One регистрация (one домашнее хозяйство/party для one event) | eventId, personId, householdId, **status** (`pending` / `confirmed` / `waitlisted` / `cancelled`), totalAmount, amountPaid, couponId, waitlistNotifiedDate, registeredDate, cancelledDate |
-| `registrationMembers` | One attendee на регистрация | registrationId, personId, firstName, lastName, **registrationTypeId** |
-| `registrationTypes` | Attendee типы per event (например Adult / Child) | eventId, name, description, **price**, **capacity**, minAgeYears, maxAgeYears, formId, sort, active |
-| `registrationSelections` | Named add-on опции с price (например T-shirt) | eventId, name, description, **price**, **capacity**, **maxQuantity** (per-registration cap), sort, active |
-| `registrationSelectionChoices` | Quantity из selection выбран by регистрация/member | registrationId, registrationMemberId, selectionId, **quantity** |
-| `registrationPayments` | One успешный charge против регистрация | registrationId, gatewayId, provider, transactionId, method, amount, currency, kind (`charge`), status (`succeeded`), personId |
-| `registrationCoupons` | Discount коды per event | eventId, code, **discountType** (`percent` / `amount`), **value**, startDate, endDate, **minMembers**, **maxUses**, active |
+| `registrations` | Одна регистрация (одно домохозяйство/группа на одно мероприятие) | eventId, personId, householdId, **status** (`pending` / `confirmed` / `waitlisted` / `cancelled`), totalAmount, amountPaid, couponId, waitlistNotifiedDate, registeredDate, cancelledDate |
+| `registrationMembers` | Один участник в регистрации | registrationId, personId, firstName, lastName, **registrationTypeId** |
+| `registrationTypes` | Типы участников на мероприятие (например, Взрослый / Ребёнок) | eventId, name, description, **price**, **capacity**, minAgeYears, maxAgeYears, formId, sort, active |
+| `registrationSelections` | Именованные платные дополнительные опции (например, футболка) | eventId, name, description, **price**, **capacity**, **maxQuantity** (ограничение на регистрацию), sort, active |
+| `registrationSelectionChoices` | Количество выбора, отмеченное регистрацией/участником | registrationId, registrationMemberId, selectionId, **quantity** |
+| `registrationPayments` | Одно успешное списание по регистрации | registrationId, gatewayId, provider, transactionId, method, amount, currency, kind (`charge`), status (`succeeded`), personId |
+| `registrationCoupons` | Промокоды на мероприятие | eventId, code, **discountType** (`percent` / `amount`), **value**, startDate, endDate, **minMembers**, **maxUses**, active |
 
 Примечания:
 
-- **Нет waitlist таблица.** Waitlisted parties это `registrations` строки с `status = 'waitlisted'`; целый waitlist lifecycle это status переходы на это one таблица.
-- **No stored счетчики.** "Sold" / "used" count (event capacity, per-type capacity, per-selection capacity, coupon uses) это computed с correlated subqueries over строки whose status это в `('pending','confirmed')` (`RegistrationTypeRepo.loadActiveWithUsage`, `RegistrationRepo.countActiveForEvent` / `countActiveForCoupon`). Cancelling регистрация поэтому frees capacity с no bookkeeping.
-- Prices это MySQL DECIMAL columns (strings over wire) coerced с `Number()` внутри pricing helper.
+- **Отдельной таблицы для списка ожидания нет.** Записи в списке ожидания — это строки `registrations` со `status = 'waitlisted'`; весь жизненный цикл списка ожидания — это переходы статуса в этой единственной таблице.
+- **Нет хранимых счётчиков.** Счётчики «продано» / «использовано» (вместимость мероприятия, вместимость по типу, вместимость по выбору, использования купона) вычисляются коррелированными подзапросами по строкам, чей статус входит в `('pending','confirmed')` (`RegistrationTypeRepo.loadActiveWithUsage`, `RegistrationRepo.countActiveForEvent` / `countActiveForCoupon`). Отмена регистрации, таким образом, освобождает вместимость без какого-либо учёта.
+- Цены — это столбцы MySQL DECIMAL (строки при передаче), приводимые через `Number()` внутри помощника ценообразования.
 
-## REST поверхность
+## REST-поверхность
 
-Всё это under `/content/registrations` (`controllers/RegistrationController.ts`) gated by `Permissions.registrations` (`view` / `edit`):
+Всё находится под `/content/registrations` (`controllers/RegistrationController.ts`), доступ ограничен `Permissions.registrations` (`view` / `edit`):
 
-| Маршрут | Доступ | Цель |
+| Маршрут | Доступ | Назначение |
 |-------|--------|---------|
-| `POST /register` | anonymous | Full submission: guest или member server pricing capacity checks optional charge |
-| `GET /types/event/:eventId`, `GET /selections/event/:eventId` | public | Types/selections с derived `used` / `remainingCapacity` для wizard |
-| `POST /types`, `DELETE /types/:id` (same для `/selections`, `/coupons`) | `registrations.edit` | Staff настройки CRUD |
-| `POST /coupons/validate` | public | Inline discount-code validation во время wizard |
-| `GET /coupons/event/:eventId` | staff | Coupons с uses counts |
-| `GET /event/:eventId` · `GET /event/:eventId/count` | staff · public | Roster; active-count для capacity дисплей |
-| `GET /person/:personId` · `GET /:id` · `GET /payments/:registrationId` | authed | My Registrations detail payment история |
-| `PUT /:id` | owner/staff | Post-submission edit — replaces members и selection choices с fresh atomic capacity checks recomputes `totalAmount`; никогда не auto-charges или refunds |
-| `POST /:id/pay` | owner | "Complete payment": charges `totalAmount − amountPaid` flips `waitlisted`/`pending` → `confirmed` |
-| `POST /:id/promote` | staff | Manual waitlist promotion |
-| `POST /:id/cancel` · `DELETE /:id` | owner · staff | Cancel / delete; both trigger waitlist auto-promotion |
+| `POST /register` | анонимный | Полная отправка: гость или участник, серверное ценообразование, проверки вместимости, опциональное списание |
+| `GET /types/event/:eventId`, `GET /selections/event/:eventId` | публичный | Типы/выборы с вычисленными `used` / `remainingCapacity` для мастера |
+| `POST /types`, `DELETE /types/:id` (аналогично для `/selections`, `/coupons`) | `registrations.edit` | CRUD настроек персонала |
+| `POST /coupons/validate` | публичный | Встроенная проверка промокода во время работы мастера |
+| `GET /coupons/event/:eventId` | персонал | Купоны со счётчиками использований |
+| `GET /event/:eventId` · `GET /event/:eventId/count` | персонал · публичный | Список участников; активный счётчик для отображения вместимости |
+| `GET /person/:personId` · `GET /:id` · `GET /payments/:registrationId` | авторизованный | Мои регистрации, детали, история платежей |
+| `PUT /:id` | владелец/персонал | Правка после отправки — заменяет участников и выборы с новыми атомарными проверками вместимости, пересчитывает `totalAmount`; никогда не списывает и не возвращает средства автоматически |
+| `POST /:id/pay` | владелец | «Завершить платёж»: списывает `totalAmount − amountPaid`, переводит `waitlisted`/`pending` → `confirmed` |
+| `POST /:id/promote` | персонал | Ручное продвижение из списка ожидания |
+| `POST /:id/cancel` · `DELETE /:id` | владелец · персонал | Отмена / удаление; оба вызывают автоматическое продвижение списка ожидания |
 
-Non-cancelled existing регистрация для same `personId` на same event это rejected с 409 и каждый created регистрация emits `registration.created` webhook через `WebhookDispatcher`.
+Незавершённая существующая регистрация того же `personId` на то же мероприятие отклоняется с кодом 409, и каждая созданная регистрация порождает вебхук `registration.created` через `WebhookDispatcher`.
 
-## Pricing и discount коды
+## Ценообразование и промокоды
 
-`helpers/RegistrationPricingHelper.ts` это single money-math authority:
+`helpers/RegistrationPricingHelper.ts` — единственный авторитетный источник в вопросах денежной арифметики:
 
-- `computeTotal()` sums каждый member's type price плюс каждый selection choice's `price × quantity`.
-- `validateCoupon()` enforces active flag date window (`startDate`/`endDate`) `minMembers` против submitted party size и `maxUses` против status-derived redemption count.
-- `applyDiscount()` — `percent` subtracts `total × value/100`; `amount` subtracts `value`; both floor на zero.
+- `computeTotal()` суммирует цену типа каждого участника плюс `цена × количество` каждого выбора.
+- `validateCoupon()` проверяет флаг активности, временное окно (`startDate`/`endDate`), `minMembers` относительно размера отправленной группы и `maxUses` относительно вычисленного из статуса числа использований.
+- `applyDiscount()` — `percent` вычитает `total × value/100`; `amount` вычитает `value`; оба ограничены снизу нулём.
 
-Wizard calls `POST /coupons/validate` для inline feedback но `register` re-validates и re-applies coupon server-side — client's displayed total это advisory only.
+Мастер вызывает `POST /coupons/validate` для встроенной обратной связи, но `register` заново проверяет и применяет купон на стороне сервера — отображаемый клиентом итог носит лишь рекомендательный характер.
 
-## Atomic capacity idiom
+## Идиома атомарной вместимости
 
-Каждый capacity-limited insert races безопасно без transactions или locks by making capacity check часть `INSERT` самый. Event-level (`RegistrationRepo.atomicInsertWithCapacityCheck`):
+Каждая вставка с ограничением по вместимости безопасно участвует в гонке без транзакций или блокировок, делая проверку вместимости частью самого `INSERT`. На уровне мероприятия (`RegistrationRepo.atomicInsertWithCapacityCheck`):
 
 ```sql
 INSERT INTO registrations (id, churchId, eventId, ...)
@@ -97,11 +97,11 @@ INSERT INTO registrations (id, churchId, eventId, ...)
          WHERE eventId=? AND churchId=? AND status IN ('pending','confirmed')) < ?
 ```
 
-Zero affected строки means "на capacity". Same idiom guards per-type inserts (`RegistrationMemberRepo.atomicInsertWithTypeCapacity` counting members joined к active регистрации) и per-selection quantities (`RegistrationSelectionChoiceRepo.atomicInsertWithCapacityCheck` using `COALESCE(SUM(quantity),0) + ? <= capacity`). Когда any member или selection insert fails mid-регистрация контроллер rolls partial регистрация back с `deleteCascade()` и reports који type или selection sold out.
+Ноль затронутых строк означает «вместимость исчерпана». Та же идиома охраняет вставки по типу (`RegistrationMemberRepo.atomicInsertWithTypeCapacity`, подсчитывающая участников, присоединённых к активным регистрациям) и количества по выборам (`RegistrationSelectionChoiceRepo.atomicInsertWithCapacityCheck`, использующая `COALESCE(SUM(quantity),0) + ? <= capacity`). Когда любая вставка участника или выбора не удаётся в середине регистрации, контроллер откатывает частичную регистрацию через `deleteCascade()` и сообщает, какой тип или выбор распродан.
 
-## Платеж поток
+## Поток платежа
 
-`processRegistrationCharge` в контроллер это only место регистрации touch money и это thin client из giving стек:
+`processRegistrationCharge` в контроллере — единственное место, где регистрации касаются денег, и это тонкий клиент стека пожертвований:
 
 ```
 RegistrationController ─▶ RepoManager.getRepos("giving").gateway
@@ -110,37 +110,37 @@ RegistrationController ─▶ RepoManager.getRepos("giving").gateway
                              └▶ IGatewayProvider.processCharge  (Stripe / PayPal / Kingdom Funding)
 ```
 
-Tokenization happens в браузер exactly як для donations (see [Giving](./giving)) — wizard reuses apphelper payment provider registry поэтому logged-in members могут pay с saved карт и guests токенизе new карта. Контроллер mirrors `DonateController`'s provider quirks (Kingdom Funding `pm-{id}` payment-method ids Stripe SCA `requires_action` ответы returned к client без recording payment). Успешный charge writes `registrationPayments` строка bumps `amountPaid` и confirms регистрация. **Refunds это не implemented** — cancelled paid регистрация keeps его payment строки и any refund это handled out-of-band в gateway dashboard.
+Токенизация происходит в браузере точно так же, как для пожертвований (см. [Пожертвования](./giving)) — мастер переиспользует реестр платёжных провайдеров apphelper, поэтому авторизованные участники могут платить сохранёнными картами, а гости токенизируют новую карту. Контроллер повторяет особенности провайдеров `DonateController` (id способов оплаты Kingdom Funding вида `pm-{id}`, ответы Stripe SCA `requires_action`, возвращаемые клиенту без фиксации платежа). Успешное списание записывает строку `registrationPayments`, увеличивает `amountPaid` и подтверждает регистрацию. **Возвраты не реализованы** — отменённая оплаченная регистрация сохраняет свои строки платежей, а любой возврат обрабатывается вне системы, в панели шлюза.
 
-Обе entry точки route через same код путь: `register` (pay на signup) и `pay` (balance платеж / waitlist completion).
+Обе точки входа проходят через один и тот же код: `register` (оплата при регистрации) и `pay` (доплата баланса / завершение из списка ожидания).
 
-## Waitlist lifecycle
+## Жизненный цикл списка ожидания
 
-Когда event это full и event's `waitlistEnabled` flag это on `register` saves party як `waitlisted` (skipping capacity checks) и sends normal confirmation email marked як waitlist spot. Promotion happens three способи — `cancel` `delete` и staff `promote` endpoint — все funneling в `RegistrationRepo.promoteFromWaitlist` який picks oldest waitlisted строка и flips його atomically:
+Когда мероприятие заполнено и включён флаг `waitlistEnabled` мероприятия, `register` сохраняет группу как `waitlisted` (пропуская проверки вместимости) и отправляет обычное письмо-подтверждение, помеченное как место в списке ожидания. Продвижение происходит тремя способами — `cancel`, `delete` и конечная точка персонала `promote` — все они направляются в `RegistrationRepo.promoteFromWaitlist`, который выбирает самую старую строку в списке ожидания и атомарно переключает её:
 
 ```sql
 UPDATE registrations SET status='pending', waitlistNotifiedDate=NOW()
   WHERE id=? AND status='waitlisted'
-    AND (…active count для event…) < ?
+    AND (…active count for the event…) < ?
 ```
 
-`status='waitlisted'` guard means concurrent promotions не могут double-promote строка и capacity subquery means promotion не может oversell. Promoted строки land на `pending` — не `confirmed` — потому balance may все еще be owed; `RegistrationHelper.sendWaitlistAvailabilityEmail` tells registrant їхня spot opened и когда `totalAmount − amountPaid > 0` links к complete-payment page. Paying (або having no balance) confirms їх.
+Условие `status='waitlisted'` означает, что параллельные продвижения не могут дважды продвинуть одну строку, а подзапрос вместимости означает, что продвижение не может привести к перепродаже. Продвинутые строки попадают в статус `pending` — не `confirmed` — потому что может оставаться задолженность; `RegistrationHelper.sendWaitlistAvailabilityEmail` сообщает зарегистрированному, что его место освободилось, и, когда `totalAmount − amountPaid > 0`, даёт ссылку на страницу завершения платежа. Оплата (или отсутствие задолженности) подтверждает их.
 
 :::info
-Capacity raise это не auto-promote by себя — staff use roster's Promote action after raising capacity. Cancels і deletes promote автоматично.
+Повышение вместимости само по себе не вызывает автоматическое продвижение — персонал использует действие «Продвинуть» в списке участников после повышения вместимости. Отмены и удаления продвигают автоматически.
 :::
 
-## Client поверхні
+## Клиентские поверхности
 
-- **B1App wizard** — one shared hook `B1App/src/components/registration/useEventRegistration.ts` drives обоє website компонент (`components/registration/EventRegister.tsx`) та мобільний portal екран (`app/[sdSlug]/mobile/components/screens/EventRegisterPage.tsx`) через steps `info → members → selections → questions → payment → confirm` (середні steps render only коли event has selections attached форма або nonzero total). Info/members steps show per-attendee-type pickers с live remaining-capacity та sold-out стани; payment (`RegistrationPaymentForm.tsx`) shows order summary discount-code entry та — для logged-in members — saved платежні методи via apphelper provider registry з guests tokenizing new карта. **Registrations** мобільний екран (`screens/RegistrationsPage.tsx`) це My Registrations: статус balance due Complete payment (`POST /:id/pay`) Edit (`PUT /:id` — contact member types selection quantities) та Cancel.
-- **B1Admin налаштування** — `B1Admin/src/registrations/components/RegistrationSettingsEdit.tsx` додає Enable Waitlist switch плюс accordions для Attendee Types Selections та Discount Codes (`RegistrationTypesEdit.tsx` / `RegistrationSelectionsEdit.tsx` / `RegistrationCouponsEdit.tsx`) все CRUD проти `/types` `/selections` `/coupons` маршрути.
-- **B1Admin roster** — `B1Admin/src/registrations/RegistrationDetailsPage.tsx`: per-attendee Type стовпець Paid/Total стовпець з balance chip per-type count chips платежі detail діалог (`RegistrationDetailDialog.tsx` з `GET /payments/:registrationId`) waitlist Promote row action та CSV export включаючи attendee типи selections paid/total/balance та question відповіді.
+- **Мастер B1App** — один общий хук, `B1App/src/components/registration/useEventRegistration.ts`, управляет как компонентом веб-сайта (`components/registration/EventRegister.tsx`), так и экраном мобильного портала (`app/[sdSlug]/mobile/components/screens/EventRegisterPage.tsx`) через шаги `info → members → selections → questions → payment → confirm` (средние шаги рендерятся только когда у мероприятия есть выборы, прикреплённая форма или ненулевой итог). Шаги info/members показывают выборщики по типам участников с живой оставшейся вместимостью и состояниями «распродано»; оплата (`RegistrationPaymentForm.tsx`) показывает сводку заказа, ввод промокода и — для авторизованных участников — сохранённые способы оплаты через реестр провайдеров apphelper, а гости токенизируют новую карту. Мобильный экран **Registrations** (`screens/RegistrationsPage.tsx`) — это «Мои регистрации»: статус, задолженность, завершение платежа (`POST /:id/pay`), правка (`PUT /:id` — контакт, типы участников, количества выборов) и отмена.
+- **Настройки B1Admin** — `B1Admin/src/registrations/components/RegistrationSettingsEdit.tsx` добавляет переключатель «Включить список ожидания» плюс раскрывающиеся блоки для типов участников, выборов и промокодов (`RegistrationTypesEdit.tsx` / `RegistrationSelectionsEdit.tsx` / `RegistrationCouponsEdit.tsx`), все с CRUD против маршрутов `/types`, `/selections`, `/coupons`.
+- **Список участников B1Admin** — `B1Admin/src/registrations/RegistrationDetailsPage.tsx`: столбец типа для каждого участника, столбец «Оплачено/Итого» с чипом задолженности, чипы количества по типу, диалог деталей платежей (`RegistrationDetailDialog.tsx`, из `GET /payments/:registrationId`), действие строки «Продвинуть» для списка ожидания и экспорт в CSV, включающий типы участников, выборы, оплачено/итого/задолженность и ответы на вопросы.
 
-Cross-module lookups (розв'язування або creating guest person loading church для emails) go через `getMembershipModuleGateway()` — content модуль ніколи не reads membership таблиці directly.
+Межмодульные обращения (разрешение или создание гостя-человека, загрузка церкви для писем) проходят через `getMembershipModuleGateway()` — модуль content никогда не читает таблицы членства напрямую.
 
-## Пов'язані сторінки
+## Связанные страницы
 
-- [Giving](./giving) — gateway abstraction provider registry та tokenization модель це feature reuses
-- [Content Endpoints](../api/endpoints/content) — content модулю's REST поверхня
-- [Webhooks](../api/webhooks) — `registration.created` подія
-- [Module Structure](../api/module-structure) — як content модуль це organized server-side
+- [Пожертвования](./giving) — абстракция шлюза, реестр провайдеров и модель токенизации, которые переиспользует эта функция
+- [Конечные точки Content](../api/endpoints/content) — REST-поверхность модуля content
+- [Вебхуки](../api/webhooks) — событие `registration.created`
+- [Структура модулей](../api/module-structure) — как модуль content организован на стороне сервера

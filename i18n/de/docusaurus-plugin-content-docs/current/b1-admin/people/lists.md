@@ -6,63 +6,63 @@ title: "Gespeicherte Listen"
 
 <div class="article-intro">
 
-**Gespeicherte Listen** ermöglichen es dir, eine Suchanfrage unter einem Namen zu speichern und sie jederzeit mit einem Klick erneut auszuführen. Erstelle eine Liste einmal – "Aktive Mitglieder auf Campus Nord", "Besucher in den letzten 90 Tagen" oder jeder erweiterte Filter – und sie bleibt in deiner Seitenleiste, sodass du die Anfrage nie wieder neu erstellen musst.
+**Gespeicherte Listen** ermöglichen dir, eine Suchabfrage unter einem Namen zu speichern und sie jederzeit mit einem Klick erneut auszuführen. Erstelle eine Liste einmal - "Aktive Mitglieder in Campus Nord", "Besucher in den letzten 90 Tagen" oder einen beliebigen erweiterten Filter - und sie bleibt in deiner Seitenleiste, sodass du die Abfrage nie wieder neu erstellen musst.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor du beginnst</h4>
 
-- Führe mindestens eine Suche im Bereich Personen durch, sodass du Ergebnisse zum Speichern hast. Siehe [Personen suchen](./searching-people.md) oder [AI-Suche](./ai-search.md).
+- Führe mindestens eine Suche im Bereich Personen durch, damit du Ergebnisse zum Speichern hast. Siehe [Personen suchen](./searching-people.md) oder [KI-Suche](./ai-search.md).
 
 </div>
 
-## Speichern einer Suche als Liste
+## Eine Suche als Liste speichern
 
-1. Führe eine Suche auf der Seite **Personen** durch – eine schnelle Suche, eine AI-Suche oder eine erweiterte Filtersuche.
-2. Wenn Ergebnisse erscheinen, wird eine Schaltfläche **Als Liste speichern** (Lesezeichen-Symbol) in der Kopfzeile der Seite "Personen" angezeigt.
+1. Führe eine Suche auf der Seite **Personen** aus - eine Quick-Search, eine KI-Suche oder eine erweiterte Filtersuche.
+2. Wenn Ergebnisse angezeigt werden, wird eine Schaltfläche **Als Liste speichern** (Lesezeichensymbol) in der Kopfzeile der Seite Personen angezeigt.
 3. Klicke auf **Als Liste speichern**.
 4. Gib einen **Namen** für die Liste ein (erforderlich).
-5. Geben optional eine **Kategorie** ein, um verwandte Listen zusammenzuhalten in der Seitenleiste (z. B. "Outreach" oder "Mitgliedschaft").
+5. Gib optional eine **Kategorie** ein, um verwandte Listen in der Seitenleiste zusammenzufassen (z. B. "Outreach" oder "Mitgliedschaft").
 6. Klicke auf **Speichern**.
 
-Die Liste wird jetzt im Konto deiner Kirche gespeichert und wird im Bereich **Gespeicherte Listen** auf der linken Seite der Seite "Personen" angezeigt.
+Die Liste wird nun auf dem Konto deiner Kirche gespeichert und erscheint im Panel **Gespeicherte Listen** auf der linken Seite der Seite Personen.
 
 :::info
-Listen werden in deiner Kirche geteilt – jeder mit Personenzugriff kann sie sehen und laden. Nur Personal mit der geeigneten Berechtigung kann Listen umbenennen oder löschen.
+Listen werden über deine Kirche hinweg geteilt - jeder mit Zugriff auf Personen kann sie sehen und laden. Nur Mitarbeiter mit der entsprechenden Berechtigung können Listen umbenennen oder löschen.
 :::
 
-## Laden einer gespeicherten Liste
+## Eine gespeicherte Liste laden
 
-Klicke im Bereich **Gespeicherte Listen** auf der linken Seite der Seite "Personen" auf einen Listennamen. Die Suche wird sofort mit der gespeicherten Abfrage erneut ausgeführt und die Ergebnistabelle aktualisiert.
+Klicke im Panel **Gespeicherte Listen** auf der linken Seite der Seite Personen auf einen beliebigen Listennamen. Die Suche wird sofort mit der gespeicherten Abfrage ausgeführt und aktualisiert die Ergebnistabelle.
 
-Listen werden nach Kategorie gruppiert (falls du eine zugewiesen hast), mit unkategorisierten Listen zuletzt erscheinend.
+Listen werden nach Kategorie gruppiert (falls du eine zugewiesen hast), wobei unkategorisierte Listen zuletzt erscheinen.
 
 :::tip
-Listen sind **Live-Abfragen**, keine Snapshots. Jedes Mal, wenn du eine Liste lädst, wird die Suche neu gegen deine aktuellen Daten ausgeführt, sodass neue Personen, die nun die Kriterien erfüllen, erscheinen.
+Listen sind **Live-Abfragen**, nicht Snapshots. Jedes Mal, wenn du eine Liste lädst, wird die Suche neu gegen deine aktuellen Daten ausgeführt, sodass neue Personen, die jetzt die Kriterien erfüllen, erscheinen.
 :::
 
 ## Umbenennen und Löschen von Listen
 
-Personal mit Verwaltungsberechtigung kann Listen direkt aus dem Bereich Gespeicherte Listen umbenennen oder löschen.
+Mitarbeiter mit Verwaltungsberechtigung können Lassenlisten direkt im Panel Gespeicherte Listen umbenennen oder löschen.
 
-- Klicke auf das **Stift-Symbol** neben einem Listennamen, um ihn umzubenennen.
-- Klicke auf das **Mülleimer-Symbol**, um ihn zu löschen (du wirst aufgefordert, zu bestätigen).
+- Klicke auf das **Stiftsymbol** neben einem Listennamen, um es umzubenennen.
+- Klicke auf das **Trashsymbol**, um es zu löschen (du wirst aufgefordert, zu bestätigen).
 
 ## Anwendungsfälle
 
-| Szenario | Wie man die Liste erstellt |
+| Szenario | So erstellst du die Liste |
 |---|---|
-| Alle Besucher | Erweiterte Suche: Mitgliederstatus = Besucher |
+| Alle Besucher | Erweiterte Suche: Mitgliedschaftsstatus = Besucher |
 | Mitglieder an einem bestimmten Campus | Erweiterte Suche: Campus = [dein Campus] |
 | Personen ohne E-Mail-Adresse | Erweiterte Suche: E-Mail ist leer |
-| Freiwillige mit abgelaufenem Hintergrundscheck | Erweiterte Suche: [Benutzerdefiniertes Feld](../settings/custom-fields.md) "Hintergrundscheck läuft ab" ist vor heute |
-| Ergebnisse einer AI-Frage | Stelle eine Frage in der AI-Suche, dann speichere |
+| Freiwillige mit abgelaufenem Hintergrund-Check | Erweiterte Suche: [Benutzerdefiniertes Feld](../settings/custom-fields.md) "Hintergrund-Check läuft ab" ist vor heute |
+| Ergebnisse aus einer KI-Frage | Stelle eine Frage in der KI-Suche und speichere sie |
 
 ## Verwandte Artikel
 
-- [Personen suchen](./searching-people.md) – schnelle Suche und Spalten-Anpassung
-- [AI-Suche](./ai-search.md) – Fragen in natürlicher Sprache, die du als Listen speichern kannst
-- [Benutzerdefinierte Felder](../settings/custom-fields.md) – definiere deine eigenen Personenfelder, filtere dann und speichere Listen auf ihnen
-- [Demografie](./demographics.md) – Drill-Down-Diagramm einer Demografie in einen Personen-Filter, speichere es dann als Liste
-- [Massenbearbeitung](./bulk-editing.md) – nach dem Laden einer Liste, Massenaktualisierung aller ihrer Mitglieder auf einmal
+- [Personen suchen](./searching-people.md) -- Quick-Search und Spaltenanpassung
+- [KI-Suche](./ai-search.md) -- Natursprachigabfragen, die du als Listen speichern kannst
+- [Benutzerdefinierte Felder](../settings/custom-fields.md) -- Definiere deine eigenen Personenfelder und filtere dann Listen
+- [Demografische Daten](./demographics.md) -- Bohre ein demografisches Diagramm in einen Personenfilter und speichere es als Liste
+- [Massenbearbeitung](./bulk-editing.md) -- Nachdem du eine Liste geladen hast, aktualisiere alle ihre Mitglieder auf einmal

@@ -104,17 +104,18 @@ B1App에서 제공되는 모든 교회 웹사이트는 ContentApi에 저장되�
 
 두 위젯은 트리 내부가 아니라 모든 공개 페이지에 렌더링됩니다: **AnnouncementBanner** (해제 가능한 페이지 상단 막대) 및 **Launcher** (기부/방문/시청 스타일 링크를 위한 부동 작업 허브). 두 컴포넌트와 그 `parse*Config()` 도우미는 apphelper에서 제공됩니다. 구성은 두 공개 설정 행입니다. 키 `announcementBanner` 및 `launcher`. B1Admin의 `SiteWidgetsEdit` (모양 페이지)에서 기록되고 `GET /content/settings/public/:churchId`를 통해 B1App의 공개 레이아웃에서 읽습니다. API는 이를 불투명 키-값 쌍으로 취급합니다. 키 이름은 두 앱 간의 규칙입니다.
 
-## 블로그: 페이지 위의 게시물
+## 블로그
 
-블로그는 두 번째 콘텐츠 시스템이 아니라 얇은 메타데이터 계층입니다. `posts` 행 (`title`, `slug`, `excerpt`, `authorId`, `photoUrl`, `publishDate`, `category`, `tags`)은 `pageId`를 통해 정규 빌더 페이지를 가리킵니다. 페이지는 본문을 보유하고 정규 페이지 편집기에서 편집됩니다. 공개 표면 (모두 익명, `PostController`):
+블로그는 독립형 콘텐츠 유형이지, 빌더 페이지 위의 계층이 아닙니다. `posts` 행이 게시물 전체를 보유합니다: `title`, `slug`, `excerpt`, `content` (마크다운 본문), `authorId`, `photoUrl`, `publishDate`, `category`, `tags`. 공개 표면 (모두 익명, `PostController`):
 
 | 경로 | 목적 |
 |------|------|
 | `GET /content/posts/public/:churchId` | 게시된 게시물, `?category=&tag=`로 필터링 가능, 페이지 매김됨 |
-| `GET /content/posts/public/:churchId/slug/:slug` | 한 게시물의 메타데이터 |
-| `GET /content/posts/rss/:churchId?siteUrl=` | RSS 2.0 피드 |
+| `GET /content/posts/public/:churchId/categories` | 게시된 게시물 전체의 고유 카테고리 |
+| `GET /content/posts/public/:churchId/slug/:slug` | 한 게시된 게시물 |
+| `GET /content/posts/rss/:churchId?siteUrl=` | RSS 2.0 피드. 교회 이름이 제목이고 항목별 카테고리 및 발췌/본문 설명 포함 |
 
-게시물은 `publishDate`가 설정되고 지난 후 "게시됨"입니다. B1App은 `/{sdSlug}/blog` (목록, RSS 피드는 대체 링크로 광고됨)과 `/{sdSlug}/blog/[postSlug]`을 제공하고 이는 `/blog/{slug}`에서 지원 페이지 트리를 가져오고 BlogPosting JSON-LD를 추가하며 다른 모든 페이지와 같은 Zone/Section 파이프라인을 통해 렌더링합니다. 블로그 URL은 교회별 사이트맵에 포함됩니다. B1Admin의 작성 UI (**사이트 → 블로그**)는 `/blog/{slug}`에서 지원 페이지와 `posts` 행을 함께 생성합니다.
+게시물은 `publishDate`가 설정되고 지났을 때 "게시됨"입니다. 미래의 `publishDate`는 예약된 게시물입니다 (공개적으로 숨겨지고 관리자에서는 예약됨 칩과 함께 표시됨). 읽기 엔드포인트는 각 게시물을 멤버십 모듈 게이트웨이를 통해 `authorId`에서 해결된 `authorName`으로 보강합니다. 누락된 발췌는 목록 카드, 메타 설명, RSS에서 축약된 마크다운 콘텐츠 (~160자)로 대체됩니다. B1App은 `/{sdSlug}/blog`를 제공합니다 — 필터링될 때 활성 카테고리/태그 이름이 되는 중앙 정렬 헤더, 카테고리 칩 필터 행, 바이라인과 발췌가 있는 썸네일 왼쪽 게시물 행이 있는 편집 스타일 목록 — RSS 피드가 대체 링크로 광고됩니다 — 그리고 `/{sdSlug}/blog/[postSlug]`, Zone/Section 파이프라인이 아닌 전용 경로로, 중앙 정렬 헤더 (카테고리 키커, 제목, 바이라인, 기본 색상 강조 선), 컨테이너 너비의 16:9 히어로, ~720px 읽기 컬럼의 마크다운 본문, 기사 바닥글의 태그 칩, `"{category}에서 더 보기"` 관련 게시물 스트립, 저자를 포함한 `BlogPosting` JSON-LD가 있습니다. 두 페이지 모두 완전히 테마 토큰에서 스타일링되므로 각 교회의 팔레트를 상속합니다. 블로그 URL은 교회별 사이트맵에 포함됩니다. B1Admin의 작성 UI (**사이트 → 블로그**)는 대화 상자에서 게시물을 편집합니다: 미리보기 토글이 있는 마크다운 편집기, 16:9로 자른 갤러리 이미지 선택기, 저자 사람 선택기 (편집 중인 사용자를 기본값으로), 기존 카테고리에서 시드된 카테고리 자동완성, 중복 슬러그 검증, 게시 토글. 게시된 행은 라이브 게시물로 연결되고 페이지는 관리자에게 `/blog` 네비게이션 링크를 추가하도록 유도합니다.
 
 ## 회원 전용 페이지
 

@@ -31,7 +31,7 @@ The Blog page lets you publish news, updates, and devotionals to your church web
 3. Add an **Excerpt** -- a short summary shown in the post listing, meta descriptions, and RSS feed. If you leave it blank, one is generated automatically from the start of your post content.
 4. Write the post body in the **Content** editor using Markdown. Click **Preview** to see how the formatted post will look.
 5. Choose a **Category** (pick an existing one or type a new one) and optional comma-separated **Tags**.
-6. Click **Select Image** to choose a photo from your [Files](files) gallery. Use a 16:9 image for the best fit in the post header and listing cards.
+6. Click **Select Image** to choose a photo from your [Files](files) gallery, or upload a new one. Uploaded photos open in a built-in crop tool locked to a 16:9 ratio, so you can frame any photo to fit the post header and listing cards.
 7. Set the **Author** -- it defaults to you, but you can search for and select any person in your database.
 8. Turn on **Published** and set a **Publish Date** when you are ready to make the post public. Leave it off to save the post as a draft.
 
@@ -55,7 +55,7 @@ Each post in the list shows one of three states:
 
 ## How Visitors See Your Blog
 
-Published posts appear at `{yoursite}/blog`, with a category filter and each post's byline and photo. Individual posts live at `{yoursite}/blog/{slug}` and include related posts from the same category. The blog page also publishes an RSS feed, auto-discoverable by feed readers and automation tools like Zapier.
+Published posts appear at `{yoursite}/blog`, 10 per page with **Older**/**Newer** links to page through your archive, along with a category filter and each post's byline and photo. Tags render as clickable chips too, letting visitors filter the list by tag the same way. Individual posts live at `{yoursite}/blog/{slug}` and include related posts from the same category. The blog page also publishes an RSS feed, auto-discoverable by feed readers and automation tools like Zapier.
 
 :::info
 Blog posts are a separate content type from regular website pages -- they are not built in the [page editor](page-editor) and do not appear in the Pages list. This keeps blog authoring fast and focused on writing.

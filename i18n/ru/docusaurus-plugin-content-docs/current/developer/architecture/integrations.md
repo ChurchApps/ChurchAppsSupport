@@ -6,24 +6,24 @@ title: "Поверхность интеграции и расширения"
 
 <div class="article-intro">
 
-Всё, что third party может plug into, runs через one API и one авторизацион модель. Эта страница это карта: она names каждую интеграцион поверхность, shows как они connect и links к detailed справочник для each. Если вы building против B1, start здесь к pick right дверь затем follow link к странице это documents это в depth.
+Всё, что может подключить сторонняя сторона, проходит через один API и одну модель авторизации. Эта страница — карта: она называет каждую поверхность интеграции, показывает, как они соединяются, и ссылается на подробный справочник по каждой из них. Если вы разрабатываете под B1, начните здесь, чтобы выбрать правильную дверь, затем перейдите по ссылке на страницу, которая описывает её подробно.
 
 </div>
 
-## Поверхности с первого взгляда
+## Поверхности с высоты птичьего полёта
 
-Есть six способы в или out и они all share same auth слой:
+Есть шесть способов войти или выйти, и все они используют один и тот же уровень аутентификации:
 
-- **[REST API](../api/api-keys)** — целая product поверхность callable с bearer токеном из any язык.
-- **[API ключи](../api/api-keys)** — simplest credential: `cak_…` токен bound к one person в one church.
-- **[OAuth 2.0 & Connected Apps](../api/connected-apps)** — per-church consent для multi-tenant приложения; issues same JWT person получает.
-- **[Webhooks](../api/webhooks)** — подписано durably-delivered outbound события.
-- **[MCP server](../api/mcp)** — AI-facing обертка over REST API на `/mcp`.
-- **[Content providers](../freeplay-content-provider)** — inbound путь для external media библиотеки в FreePlay и B1 приложения.
+- **[REST API](../api/api-keys)** — вся поверхность продукта, вызываемая с bearer-токеном из любого языка.
+- **[API-ключи](../api/api-keys)** — самые простые учётные данные: токен `cak_…`, привязанный к одному человеку в одной церкви.
+- **[OAuth 2.0 и подключённые приложения](../api/connected-apps)** — согласие на уровне церкви для мультитенантных приложений; выдаёт тот же JWT, что получает пользователь.
+- **[Вебхуки](../api/webhooks)** — подписанные, надёжно доставляемые исходящие события.
+- **[MCP-сервер](../api/mcp)** — обёртка над REST API, ориентированная на ИИ, по адресу `/mcp`.
+- **[Провайдеры контента](../freeplay-content-provider)** — входящий путь внешних медиабиблиотек в FreePlay и приложения B1.
 
-Всё except content providers это served by single монолитный API (the [Api](https://github.com/ChurchApps/Api) репо) чья модули mount under stable base пути — `/membership`, `/giving`, `/attendance`, `/content`, `/messaging`, `/doing`, `/reporting` и `/mcp`.
+Всё, кроме провайдеров контента, обслуживается одним монолитным API (репозиторий [Api](https://github.com/ChurchApps/Api)), чьи модули монтируются под стабильными базовыми путями — `/membership`, `/giving`, `/attendance`, `/content`, `/messaging`, `/doing`, `/reporting` и `/mcp`.
 
-## Как это Fits Together
+## Как это всё сочетается
 
 ```
    ┌─────────────────────┐                          ┌───────────────────────────────────────┐
@@ -42,105 +42,105 @@ title: "Поверхность интеграции и расширения"
                      (durable, HMAC-SHA256 signed)     └───────────────────────────────────────┘
 
    External content sources (Planning Center, Dropbox, Life.Church, CBN, …)
-             │   OAuth PKCE / device flow / none   ──  B1 это OAuth *client* здесь  ──▶
+             │   OAuth PKCE / device flow / none   ──  B1 is the OAuth *client* here  ──▶
              ▼
-   Packages/content-providers   ──▶   FreePlay / B1 apps        (inbound content путь)
+   Packages/content-providers   ──▶   FreePlay / B1 apps        (inbound content path)
 ```
 
-Three стрелки tell целый история: third party **calls в** с bearer токеном (API ключ или OAuth JWT включая via `/mcp`); API **calls back out** через signed webhooks; и content providers это one **inbound-content** путь где B1 самая это OAuth *client* pulling медиа из external source.
+Три стрелки рассказывают всю историю: сторонняя сторона **звонит внутрь** с bearer-токеном (API-ключ или OAuth JWT, включая через `/mcp`); API **звонит наружу** через подписанные вебхуки; а провайдеры контента — единственный путь **входящего контента**, где сам B1 выступает OAuth-*клиентом*, забирающим медиа из внешнего источника.
 
-## Shared Auth Model
+## Общая модель аутентификации
 
-Каждый credential — person's login JWT OAuth access токен или API ключ — resolves к **same `Principal`** и это checked same способ. Нет separate "integration auth" путь; scoped credential это просто indistinguishable из lower-privileged user.
+Каждый учётный данный — JWT входа пользователя, токен доступа OAuth или API-ключ — разрешается в **один и тот же `Principal`** и проверяется одинаково. Отдельного пути «интеграционной аутентификации» не существует; ограниченный по правам учётный данный просто неотличим от пользователя с более низкими привилегиями.
 
-### JWT структура
+### Структура JWT
 
-B1 access токены это HS256 JWTs minted в `Api/src/modules/membership/auth/AuthenticatedUser.ts`. Claim set:
+Токены доступа B1 — это HS256 JWT, выпускаемые в `Api/src/modules/membership/auth/AuthenticatedUser.ts`. Набор claim'ов:
 
 | Claim | Значение |
 |---|---|
-| `id`, `email`, `firstName`, `lastName` | Person позади токена |
-| `churchId` | Single church это токен acts в — anchor для all data scoping |
-| `personId` | Person record внутри этого church |
-| `permissions` | Flat array RBAC perm-strings (`[apiName_]contentType_contentId_action`) |
-| `groupIds`, `leaderGroupIds` | Group членство / leadership для group-scoped checks |
-| `membershipStatus` | Guest vs. member для self-service gating |
+| `id`, `email`, `firstName`, `lastName` | Человек за токеном |
+| `churchId` | Единственная церковь, в рамках которой действует этот токен — якорь для всей области видимости данных |
+| `personId` | Запись человека внутри этой церкви |
+| `permissions` | Плоский массив строк разрешений RBAC (`[apiName_]contentType_contentId_action`) |
+| `groupIds`, `leaderGroupIds` | Членство в группах / лидерство, для проверок с областью видимости группы |
+| `membershipStatus` | Гость против участника, для самообслуживаемого ограничения доступа |
 
-OAuth access токен это byte-for-byte same форма как login JWT — only разница это что его `permissions` массив был **filtered через granted scopes перед signing** (`getCombinedApiJwt(...)`).
+Токен доступа OAuth — это байт в байт та же форма, что и JWT входа — единственное отличие в том, что его массив `permissions` был **отфильтрован через выданные области (scopes) перед подписанием** (`getCombinedApiJwt(...)`).
 
-### Per-church scoping
+### Область видимости по церкви
 
-`churchId` это token claim не request параметр поэтому credential может никогда reach across churches. Каждый репо query filters на caller's `churchId`; API ключ или OAuth токен это bound к exactly one church на mint time.
+`churchId` — это claim токена, а не параметр запроса, поэтому учётный данный никогда не может пересечь границы церквей. Каждый запрос репозитория фильтрует по `churchId` вызывающей стороны; API-ключ или токен OAuth привязан ровно к одной церкви в момент выпуска.
 
-### Role-based разрешения на boundary
+### Ролевые разрешения на границе
 
-Controllers gate действия с `au.checkAccess(contentType, action)` против token's `permissions` массив. Scopes это **filter никогда grant** (`Api/src/shared/auth/Scopes.ts`): `SCOPE_CATALOG` maps каждый scope (например `people:read`, `donations:write`) к RBAC пары это permits и `filterPermissionsByScopes()` intersects это с person's *current* разрешения на каждый resolve. Последствия:
+Контроллеры ограничивают действия через `au.checkAccess(contentType, action)` относительно массива `permissions` токена. Области (scopes) — это **фильтр, никогда не предоставление прав** (`Api/src/shared/auth/Scopes.ts`): `SCOPE_CATALOG` сопоставляет каждую область (например, `people:read`, `donations:write`) с парами RBAC, которые она разрешает, а `filterPermissionsByScopes()` пересекает это с *текущими* разрешениями человека при каждом разрешении. Последствия:
 
-- Revoking разрешение в B1Admin cuts credential's доступ на next request — tokens никогда не drift из role.
-- Scope может только *remove* разрешения поэтому scoped credential может никогда elevate к server / domain администрацион (those разрешения это deliberately unmapped к any scope).
-- API ключи carry `cak_` префикс; `CustomAuthProvider.getUser()` branches на это hashes secret и re-resolves owning person's live RBAC на каждый call.
+- Отзыв разрешения в B1Admin отрезает доступ учётного данного при следующем запросе — токены никогда не расходятся с ролью.
+- Область может только *убирать* разрешения, поэтому ограниченный по правам учётный данный никогда не может повысить привилегии до администрирования сервера / домена (эти разрешения намеренно не сопоставлены ни с одной областью).
+- API-ключи несут префикс `cak_`; `CustomAuthProvider.getUser()` определяет это по префиксу, хеширует секрет и заново разрешает актуальные права RBAC владеющего человека при каждом вызове.
 
-See [API Keys → Scopes](../api/api-keys#scopes) для полный каталог.
+См. [API-ключи → Области](../api/api-keys#scopes) для полного каталога.
 
-## Surface Reference
+## Справочник поверхностей
 
 ### REST API
 
-Complete product поверхность. Any authenticated конечная точка принимает либо JWT или `cak_…` API ключ в `Authorization: Bearer` заголовок — нет separate key-only или OAuth-only маршрут таблица. Модули и их base пути live under `Api/src/modules/*`.
+Полная поверхность продукта. Любая аутентифицированная конечная точка принимает либо JWT, либо API-ключ `cak_…` в заголовке `Authorization: Bearer` — отдельной таблицы маршрутов только для ключей или только для OAuth не существует. Модули и их базовые пути живут в `Api/src/modules/*`.
 
-### API ключи
+### API-ключи
 
-`cak_<prefix>.<secret>` personal access токен created в **B1Admin → Settings → Developer → API Keys**. Только SHA-256 хеш это stored; raw ключ это shown один раз. Managed на `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Best для single church's собственный скрипты и для connectors как Zapier Make и Google Sheets. → **[API Keys](../api/api-keys)**
+Персональный токен доступа `cak_<prefix>.<secret>`, создаваемый в **B1Admin → Settings → Developer → API Keys**. Хранится только хеш SHA-256; необработанный ключ показывается один раз. Управляется по адресу `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Лучше всего подходит для собственных скриптов одной церкви и для коннекторов вроде Zapier, Make и Google Sheets. → **[API-ключи](../api/api-keys)**
 
-### OAuth 2.0 & Connected Apps
+### OAuth 2.0 и подключённые приложения
 
-Для multi-tenant приложения что need каждый church к consent. Implemented в `Api/src/modules/membership/controllers/OAuthController.ts` under `/membership/oauth`. Сервер поддерживает три grants:
+Для мультитенантных приложений, которым нужно согласие каждой церкви. Реализовано в `Api/src/modules/membership/controllers/OAuthController.ts` под `/membership/oauth`. Сервер поддерживает три вида грантов:
 
-- **Authorization Code** — `POST /oauth/authorize` (authenticated) возвращает short-lived код; `POST /oauth/token` с `grant_type=authorization_code` exchanges это за access JWT (≈ 7 дней) плюс refresh токен (≈ 90 дней).
-- **Device Code** (RFC 8628) — `POST /oauth/device/authorize` issues `user_code`; user approves это в B1Admin (`/oauth/device/approve`); device polls `/oauth/token` с device-code grant. Для TVs киоски и CLIs с no браузер.
-- **Refresh Token** — `grant_type=refresh_token` mints new access токен; public (secret-less) клиенты may omit secret.
+- **Authorization Code** — `POST /oauth/authorize` (аутентифицированный) возвращает краткоживущий код; `POST /oauth/token` с `grant_type=authorization_code` обменивает его на JWT доступа (≈ 7 дней) плюс токен обновления (≈ 90 дней).
+- **Device Code** (RFC 8628) — `POST /oauth/device/authorize` выдаёт `user_code`; пользователь одобряет его в B1Admin (`/oauth/device/approve`); устройство опрашивает `/oauth/token` с грантом device-code. Для телевизоров, киосков и CLI без браузера.
+- **Refresh Token** — `grant_type=refresh_token` выпускает новый токен доступа; публичные (без секрета) клиенты могут опустить секрет.
 
-**Connected App** это church-admin-facing вид granted токена listed и revocable в `/membership/oauth/connections`. Контроллер также hosts OAuth **relay-session** bridge (`/oauth/relay/*`) это lets browserless device complete sign-in против *external* provider. → **[Connected Apps & OAuth](../api/connected-apps)**
+**Подключённое приложение** — это представление выданного токена, ориентированное на администратора церкви, перечисляемое и отзываемое по адресу `/membership/oauth/connections`. Контроллер также размещает мост OAuth **relay-session** (`/oauth/relay/*`), который позволяет устройству без браузера завершить вход у *внешнего* провайдера. → **[Подключённые приложения и OAuth](../api/connected-apps)**
 
-### Webhooks
+### Вебхуки
 
-Only outbound поверхность. Church подписывает public HTTPS конечная точка к события; когда matching изменение occurs `WebhookDispatcher.emit(churchId, event, payload)` records delivery и background worker POSTs подписано JSON envelope с retry/backoff и redelivery. Engine на `Api/src/shared/webhooks/` per-church CRUD under `/membership/webhooks` (`WebhookController.ts`). `connectorType` поле reshapes тело для Slack / Discord. → **[Webhooks](../api/webhooks)**
+Единственная исходящая поверхность. Церковь подписывает публичную конечную точку HTTPS на события; когда происходит подходящее изменение, `WebhookDispatcher.emit(churchId, event, payload)` обогащает полезные нагрузки, содержащие только id, отображаемыми именами (`personName`, `groupName`, `formName` — поиск выполняется только когда подписка совпадает), фиксирует доставку, а фоновый воркер отправляет подписанный JSON-конверт с повторными попытками/задержкой и повторной доставкой. Движок в `Api/src/shared/webhooks/`, CRUD по каждой церкви под `/membership/webhooks` (`WebhookController.ts`). Поле `connectorType` перестраивает тело для Slack / Discord. → **[Вебхуки](../api/webhooks)**
 
-### MCP server
+### MCP-сервер
 
-AI-facing обертка на `/mcp` (`Api/src/modules/mcp/`). Three генерик tools — `list_endpoints`, `describe_endpoint`, `api_call` — expose целый REST поверхность dynamically к any MCP клиент. Auth это same bearer токен как всё else и `api_call` re-enters Express стек in-process поэтому каждый разрешение и church-scoping правило all еще applies. → **[MCP Server](../api/mcp)**
+Обёртка, ориентированная на ИИ, по адресу `/mcp` (`Api/src/modules/mcp/`). Три общих инструмента — `list_endpoints`, `describe_endpoint`, `api_call` — динамически раскрывают всю REST-поверхность любому клиенту MCP. Аутентификация та же bearer-токен, что и везде, а `api_call` заново входит в стек Express внутри процесса, поэтому каждое правило разрешений и области видимости по церкви всё ещё применяется. → **[MCP-сервер](../api/mcp)**
 
-### Content providers
+### Провайдеры контента
 
-Inbound-content путь в separate package `Packages/content-providers` (`@churchapps/content-providers`) rather чем API. Каждый provider implements `IProvider` interface (`src/interfaces.ts`) — `browse`, `getPlaylist`, `getInstructions` плюс auth hooks — и self-registers в `Map` registry (`src/providers/registry.ts`). Здесь **B1 это OAuth client**: provider объявляет `AuthType` из `none`, `oauth_pkce`, `device_flow` или `form_login` и shared helpers (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) run client-side PKCE / device flow против external source. Одиннадцать providers ship сегодня — включая Planning Center Dropbox Life.Church CBN BibleProject Jesus Film Lessons.church и B1.church — feeding FreePlay и B1 приложения. → **[FreePlay Content Provider](../freeplay-content-provider)**
+Входящий путь контента, в отдельном пакете `Packages/content-providers` (`@churchapps/content-providers`), а не в API. Каждый провайдер реализует интерфейс `IProvider` (`src/interfaces.ts`) — `browse`, `getPlaylist`, `getInstructions`, плюс хуки аутентификации — и самостоятельно регистрируется в реестре `Map` (`src/providers/registry.ts`). Здесь **B1 выступает клиентом OAuth**: провайдер объявляет `AuthType` — `none`, `oauth_pkce`, `device_flow` или `form_login`, — а общие вспомогательные функции (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) выполняют клиентский PKCE / device flow против внешнего источника. Сегодня поставляется одиннадцать провайдеров — включая Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church и B1.church — питая FreePlay и приложения B1. → **[Провайдер контента FreePlay](../freeplay-content-provider)**
 
-## Резюме
+## Сводка
 
-| Поверхность | Auth механизм | Направление | Где implemented | Справочник |
+| Поверхность | Механизм аутентификации | Направление | Где реализовано | Справочник |
 |---|---|---|---|---|
-| REST API | `Bearer` JWT или `cak_…` ключ | Inbound | `Api/src/modules/*` | [API Keys](../api/api-keys) |
-| API ключи | SHA-256-хеш `cak_` токен | Credential | `Api/.../membership/controllers/ApiKeyController.ts` | [API Keys](../api/api-keys) |
-| OAuth 2.0 / Connected Apps | Auth код · device · refresh → JWT | Inbound | `Api/.../membership/controllers/OAuthController.ts` | [Connected Apps](../api/connected-apps) |
-| Webhooks | Per-hook secret HMAC-SHA256 signature | Outbound | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhooks](../api/webhooks) |
-| MCP server | `Bearer` JWT или `cak_…` ключ | Inbound (AI) | `Api/src/modules/mcp/` | [MCP Server](../api/mcp) |
-| Content providers | Per-provider: none / OAuth PKCE / device / form | Inbound content | `Packages/content-providers/` | [Content Provider](../freeplay-content-provider) |
+| REST API | JWT `Bearer` или ключ `cak_…` | Входящее | `Api/src/modules/*` | [API-ключи](../api/api-keys) |
+| API-ключи | Токен `cak_`, хешированный SHA-256 | Учётные данные | `Api/.../membership/controllers/ApiKeyController.ts` | [API-ключи](../api/api-keys) |
+| OAuth 2.0 / Подключённые приложения | Код авторизации · устройство · обновление → JWT | Входящее | `Api/.../membership/controllers/OAuthController.ts` | [Подключённые приложения](../api/connected-apps) |
+| Вебхуки | Секрет на каждый хук, подпись HMAC-SHA256 | Исходящее | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Вебхуки](../api/webhooks) |
+| MCP-сервер | JWT `Bearer` или ключ `cak_…` | Входящее (ИИ) | `Api/src/modules/mcp/` | [MCP-сервер](../api/mcp) |
+| Провайдеры контента | По провайдеру: none / OAuth PKCE / device / form | Входящий контент | `Packages/content-providers/` | [Провайдер контента](../freeplay-content-provider) |
 
-## Prebuilt Connectors
+## Готовые коннекторы
 
-Rather чем everyone building из scratch ChurchApps ships connectors on top of поверхности above:
+Вместо того чтобы каждый строил всё с нуля, ChurchApps поставляет коннекторы поверх описанных выше поверхностей:
 
-- **[Slack & Discord](/docs/b1-admin/integrations/slack-discord)** — webhook `connectorType` reshapes standard envelope в chat message; configured entire в B1Admin no third-party account.
-- **[Zapier](/docs/b1-admin/integrations/zapier)** и **[Make](/docs/b1-admin/integrations/make)** — trigger на webhook события и act via REST API; они register их собственный webhook когда Zap/scenario turns на (needs ключ с `settings:write`).
-- **[Google Sheets](/docs/b1-admin/integrations/google-sheets)** — API-key-authenticated add-on это exports People / Donations / Groups / Attendance по требованию.
-- **[Claude](/docs/b1-admin/integrations/claude)** и **[ChatGPT](/docs/b1-admin/integrations/chatgpt)** — MCP клиенты pointed на `/mcp`.
+- **[Slack и Discord](/docs/b1-admin/integrations/slack-discord)** — тип вебхука `connectorType` перестраивает стандартный конверт в сообщение чата; настраивается полностью в B1Admin, сторонний аккаунт не нужен.
+- **[Zapier](/docs/b1-admin/integrations/zapier)** и **[Make](/docs/b1-admin/integrations/make)** — срабатывают на события вебхука и действуют через REST API; они регистрируют собственный вебхук, когда Zap/сценарий включается (нужен ключ с `settings:write`).
+- **[Google Sheets](/docs/b1-admin/integrations/google-sheets)** — надстройка с аутентификацией по API-ключу, экспортирующая людей / пожертвования / группы / посещаемость по требованию.
+- **[Claude](/docs/b1-admin/integrations/claude)** и **[ChatGPT](/docs/b1-admin/integrations/chatgpt)** — клиенты MCP, направленные на `/mcp`.
 
-Для your собственный код **[`@churchapps/integration-sdk`](https://www.npmjs.com/package/@churchapps/integration-sdk)** (`Packages/integration-sdk`) wraps всё: типизированный REST клиент OAuth клиент (auth-code / refresh / device flow) и HMAC webhook verifier с Express middleware.
+Для собственного кода **[`@churchapps/integration-sdk`](https://www.npmjs.com/package/@churchapps/integration-sdk)** (`Packages/integration-sdk`) оборачивает всё это: типизированный REST-клиент, клиент OAuth (код авторизации / обновление / device flow) и верификатор HMAC-вебхуков с промежуточным ПО Express.
 
 ## Связанные страницы
 
-- [API Keys](../api/api-keys) — simplest credential и scope каталог
-- [Connected Apps & OAuth](../api/connected-apps) — multi-tenant consent потоки
-- [Webhooks](../api/webhooks) — outbound событие система
-- [MCP Server](../api/mcp) — AI интеграцион обертка
-- [FreePlay Content Provider](../freeplay-content-provider) — becoming inbound content source
-- [Integrations (end-user)](/docs/b1-admin/integrations/) — prebuilt connector setup guides
+- [API-ключи](../api/api-keys) — самые простые учётные данные и каталог областей
+- [Подключённые приложения и OAuth](../api/connected-apps) — потоки согласия для мультитенантных приложений
+- [Вебхуки](../api/webhooks) — исходящая система событий
+- [MCP-сервер](../api/mcp) — обёртка интеграции с ИИ
+- [Провайдер контента FreePlay](../freeplay-content-provider) — становясь входящим источником контента
+- [Интеграции (для конечного пользователя)](/docs/b1-admin/integrations/) — руководства по настройке готовых коннекторов

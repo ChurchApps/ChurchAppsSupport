@@ -1,48 +1,48 @@
 ---
-title: "Teilnahme"
+title: "Anwesenheit"
 ---
 
-# Teilnahme
+# Anwesenheit
 
 <div class="article-intro">
 
-Der Bereich „Teilnahme" in B1 Admin bietet Ihnen einen vollständigen Überblick über die Anwesenheit in Ihrer Kirche und zeigt, wie Ihre Gruppen im Laufe der Zeit wachsen. Von der Konfiguration von Standorten und Gottesdiensten über die Überwachung von Trends bis zur Einrichtung der Selbsteintragung – alle notwendigen Werkzeuge zur Verfolgung und zum Verständnis der Teilnahme werden von dieser Seite aus verwaltet.
+Der Bereich Anwesenheit in B1 Admin bietet dir einen vollständigen Überblick darüber, wer an deiner Kirche teilnimmt und wie deine Gruppen im Laufe der Zeit wachsen. Von der Konfiguration von Standorten und Gottesdienstzeiten bis zur Überprüfung von Trends und der Einrichtung der Selbstregistrierung - alles, was du brauchst, um die Anwesenheit zu verfolgen und zu verstehen, wird auf dieser Seite verwaltet.
 
 </div>
 
 ## Seitenübersicht
 
-Wenn Sie die Seite „Teilnahme" öffnen, wird im Header eine Zusammenfassung mit wichtigen Statistiken zu Ihrer Teilnahmestruktur angezeigt:
+Wenn du die Anwesenheitsseite öffnest, siehst du einen Header mit wichtigen Statistiken zur Anwesenheitseinrichtung deiner Kirche:
 
-- **Standorte** – Die Anzahl der physischen Orte, die Sie konfiguriert haben
-- **Gottesdienste** – Die Gesamtzahl der Gottesdienste an allen Standorten
-- **Geplante Gruppen** – Gruppen, die einem bestimmten Gottesdienst zugeordnet sind
-- **Ungeplante Gruppen** – Gruppen, die die Teilnahme unabhängig von einem Gottesdienst verfolgen
+- **Standorte** -- die Anzahl der physischen Orte, die du konfiguriert hast
+- **Gottesdienstzeiten** -- die Gesamtzahl der Gottesdienste über alle Standorte hinweg
+- **Geplante Gruppen** -- Gruppen, die einer bestimmten Gottesdienstzeit zugeordnet sind
+- **Ungeplante Gruppen** -- Gruppen, die die Anwesenheit unabhängig von einer Gottesdienstzeit verfolgen
 
-Unterhalb des Headers sind die Teilnahme-Tools in drei Registerkarten organisiert.
+Unter dem Header organisieren drei Registerkarten deine Anwesenheitswerkzeuge.
 
 ## Registerkarten
 
 ### Einrichtung
 
-Die Registerkarte **Einrichtung** ist der Ort, an dem Sie die Grundlagen der Teilnahmeverfolgung konfigurieren. Hier definieren Sie Ihre Standorte, fügen Gottesdienste zu jedem Standort hinzu und weisen [Gruppen](../groups/creating-groups.md) diesen Gottesdiensten zu. Sie müssen dies nur einmal durchführen, können die Einstellungen aber aktualisieren, wenn sich Ihr Zeitplan ändert. Siehe [Teilnahme-Einrichtung](setup.md) für eine vollständige Anleitung.
+Die Registerkarte **Einrichtung** ist der Ort, an dem du die Bausteine der Anwesenheitsverfolgung konfigurierst. Hier definierst du deine Standorte, fügst Gottesdienstzeiten zu jedem Standort hinzu und weist [Gruppen](../groups/creating-groups.md) diesen Gottesdienstzeiten zu. Du brauchst dies nur einmal zu tun, obwohl du es jederzeit aktualisieren kannst, wenn sich dein Zeitplan ändert. Siehe [Anwesenheitseinrichtung](setup.md) für eine vollständige Anleitung.
 
-### Teilnahme
+### Anwesenheit
 
-Die Registerkarte **Teilnahme** zeigt Teilnahmeergebnisse im Zeitverlauf an. Verwenden Sie die Filter, um die Ergebnisse nach Datumsbereich, Standort oder Gottesdienst einzuschränken, und erkennen Sie schnell Muster in Ihren Daten. Siehe [Teilnahme verfolgen](tracking-attendance.md) für Details zur Verwendung von Berichten und Filtern.
+Die Registerkarte **Anwesenheit** zeigt Anwesenheitstrends im Laufe der Zeit an. Verwende die Filter, um die Ergebnisse nach Datumsbereich, Standort oder Gottesdienstzeit einzugrenzen und erkenne schnell Muster in deinen Daten. Siehe [Anwesenheit verfolgen](tracking-attendance.md) für Details zur Verwendung von Berichten und Filtern.
 
 ### Gruppen
 
-Die Registerkarte **Gruppen** unterteilt die Teilnahme nach einzelnen Gruppen. Dies ist hilfreich, wenn Sie die Leistung einer bestimmten Kleingruppe, einer Klasse oder eines Ministerieteams analysieren möchten, anstatt kirchenweite Zahlen zu betrachten.
+Die Registerkarte **Gruppen** schlüsselt die Anwesenheit nach einzelnen Gruppen auf. Dies ist hilfreich, wenn du sehen möchtest, wie es einer bestimmten Kleingruppe, Klasse oder einem Ministerieteam geht, anstatt auf kirchenweite Zahlen zu schauen.
 
 ## Nächste Schritte
 
-- [Teilnahme-Einrichtung](setup.md) – Konfigurieren Sie Standorte, Gottesdienste und Gruppen
-- [Teilnahme aufzeichnen](recording-attendance.md) – Manuelles Eingeben der Teilnahme für eine Gruppensitzung
-- [Teilnahme verfolgen](tracking-attendance.md) – Trends anzeigen und Berichte filtern
-- [Check-In](check-in.md) – Richten Sie die Selbsteintragung für Gottesdienste ein
-- [Check-In-Sicherheit](checkin-safety.md) – Raumkapazitäten, Freiwilligenverhältnisse, Abholpersonen und Durchsagen
+- [Anwesenheitseinrichtung](setup.md) -- Konfiguriere Standorte, Gottesdienstzeiten und Gruppen
+- [Anwesenheit erfassen](recording-attendance.md) -- Erfasse manuell die Anwesenheit für eine Gruppensitzung
+- [Anwesenheit verfolgen](tracking-attendance.md) -- Zeige Trends an und filtere Berichte
+- [Check-in](check-in.md) -- Richte Selbstregistrierung für Gottesdienste ein
+- [Check-In-Sicherheit](checkin-safety.md) -- Raumkapazitäten, Freiwilligenquoten, Abholpersonen und Paging
 
 :::tip
-Wenn Sie die Teilnahme zum ersten Mal einrichten, beginnen Sie mit der Anleitung [Teilnahme-Einrichtung](setup.md), um Ihre Standorte und Gottesdienste zu definieren. Sobald diese eingerichtet sind, können Sie mit der [Aufzeichnung der Teilnahme](recording-attendance.md) manuell beginnen oder die [Selbsteintragung](check-in.md) einrichten.
+Wenn du die Anwesenheit zum ersten Mal einrichtest, beginne mit dem [Anwesenheitseinrichtungs-Handbuch](setup.md), um deine Standorte und Gottesdienstzeiten zu definieren. Sobald das erledigt ist, kannst du damit beginnen, [die Anwesenheit manuell zu erfassen](recording-attendance.md) oder [Selbstregistrierung einzurichten](check-in.md).
 :::

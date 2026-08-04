@@ -6,7 +6,7 @@ title: "Annuaire des membres"
 
 <div class="article-intro">
 
-L'annuaire des membres vous permet de parcourir et de rechercher des personnes dans votre église. Que vous ayez besoin de trouver un membre de votre groupe ou de découvrir quelqu'un de nouveau, l'annuaire facilite la connexion avec votre famille d'église.
+L'annuaire des membres vous permet de parcourir et de rechercher des personnes de votre église. Que vous ayez besoin de retrouver un membre de votre groupe ou de découvrir quelqu'un de nouveau, l'annuaire facilite la connexion avec votre famille d'église.
 
 </div>
 
@@ -14,6 +14,7 @@ L'annuaire des membres vous permet de parcourir et de rechercher des personnes d
 <h4>Avant de commencer</h4>
 
 - Vous devez être [connecté](../getting-started/logging-in.md) à votre compte B1.church.
+- L'annuaire est réservé aux **membres et au personnel**. Les visiteurs et participants qui ne sont pas encore devenus membres verront à la place un message « Réservé aux membres ».
 
 </div>
 
@@ -24,7 +25,7 @@ L'annuaire des membres vous permet de parcourir et de rechercher des personnes d
 
 ## Rechercher des membres
 
-La page utilise une mise en page maître-détail. Sur le côté gauche, vous avez deux façons de trouver des personnes :
+La page utilise une mise en page maître-détail. Sur le côté gauche, vous disposez de deux façons de trouver des personnes :
 
 ### Recherche par nom
 
@@ -32,7 +33,7 @@ La page utilise une mise en page maître-détail. Sur le côté gauche, vous ave
 2. Saisissez un nom dans le champ de recherche.
 3. Cliquez sur **Rechercher** ou appuyez sur **Entrée** pour voir les résultats.
 
-Si vous laissez le champ de recherche vide et cliquez sur **Rechercher**, la liste complète de l'annuaire s'affiche.
+Si vous laissez le champ de recherche vide et cliquez sur **Rechercher**, l'annuaire complet s'affiche.
 
 ### Recherche par groupe
 
@@ -41,19 +42,19 @@ Si vous laissez le champ de recherche vide et cliquez sur **Rechercher**, la lis
 3. Cliquez sur **Rechercher** pour voir tous les membres de ce groupe.
 
 :::tip
-La recherche par groupe est un moyen rapide de trouver quelqu'un que vous avez rencontré lors d'une [réunion de groupe](../groups/browsing-groups.md) mais dont vous ne vous souvenez pas tout à fait du nom.
+Rechercher par groupe est un moyen rapide de retrouver quelqu'un que vous avez rencontré lors d'une [réunion de groupe](../groups/browsing-groups.md) mais dont vous ne vous souvenez plus tout à fait le nom.
 :::
 
 ## Parcourir l'annuaire
 
-Les membres sont listés par ordre alphabétique de nom de famille et regroupés sous des en-têtes de lettres (A, B, C, et ainsi de suite). Chaque entrée affiche la photo du membre, son nom d'affichage et le nom de son foyer, ce qui facilite la consultation de la liste.
+Les membres sont listés par ordre alphabétique de nom de famille et regroupés sous des en-têtes de lettres (A, B, C, et ainsi de suite). Chaque entrée affiche la photo du membre, son nom d'affichage et le nom de son foyer, ce qui facilite le parcours de la liste.
 
 ## Consulter le profil d'un membre
 
-Cliquez sur n'importe quel membre dans la liste pour ouvrir son profil dans le panneau de détails à droite. Le profil affiche les informations du membre telles que configurées par votre église, pouvant inclure les coordonnées, les membres du foyer et les appartenances aux groupes.
+Cliquez sur n'importe quel membre de la liste pour ouvrir son profil dans le panneau de détails à droite. Le profil affiche les informations du membre telles que configurées par votre église, ce qui peut inclure les coordonnées, les membres du foyer et les appartenances à des groupes.
 
-Vous pouvez cliquer sur les membres du foyer dans un profil pour accéder à leurs profils également.
+Vous pouvez également cliquer sur les membres du foyer au sein d'un profil pour accéder à leurs profils.
 
 :::info
-Les informations visibles dans chaque profil dépendent des paramètres de confidentialité et d'annuaire de votre église. Tous les champs ne sont pas forcément affichés pour chaque membre.
+Les informations visibles dans chaque profil dépendent des paramètres de confidentialité et d'annuaire de votre église. Tous les champs ne sont pas nécessairement affichés pour chaque membre.
 :::

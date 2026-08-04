@@ -1,109 +1,99 @@
 ---
-title: "Dienstpläne"
+title: "Servicepläne"
 ---
 
-# Dienstpläne
+# Servicepläne
 
 <div class="article-intro">
 
-Dienstpläne organisieren wer dient und wann. Jeder Plan ist an ein bestimmtes Datum und einen bestimmten Dienst gebunden, was es einfach macht, Ihre Freiwilligteams Woche für Woche zu koordinieren und sicherzustellen, dass jeder Dienst vollständig besetzt ist.
+Servicepläne organisieren, wer und wann dient. Jeder Plan ist an ein bestimmtes Datum und Ministerium gebunden, was es einfach macht, deine Freiwilligenteams Woche für Woche zu koordinieren und sicherzustellen, dass jeder Dienst vollständig besetzt ist.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du beginnst</h4>
 
-- Richten Sie Ihre Dienste und Teams im Bereich „Dienste" ein
-- Stellen Sie sicher, dass Freiwillige zu Ihrem [Verzeichnis hinzugefügt wurden](../people/adding-people.md) und Teams zugewiesen wurden
+- Richte deine Ministerien und Teams im Bereich Dienst ein
+- Stelle sicher, dass Freiwillige zu deinem [Personenverzeichnis](../people/adding-people.md) hinzugefügt und Teams zugewiesen wurden
 
 </div>
 
-## Pläne zugreifen
+## Zugriff auf Pläne
 
-1. Gehen Sie zu **Dienste** aus dem Hauptmenü.
-2. Wählen Sie eine **Dienst-Registerkarte** oben auf der Seite.
-3. Klicken Sie auf einen **Plantyp**, um die Liste der Pläne für diesen Typ anzuzeigen.
-4. Klicken Sie auf einen bestimmten Plan, um ihn zu öffnen.
+1. Navigiere zu **Dienst** aus dem Hauptmenü.
+2. Wähle eine **Ministeriumsregisterkarte** oben auf der Seite.
+3. Klicke auf einen **Plantyp**, um die Planliste für diesen Typ anzuzeigen.
+4. Klicke auf einen bestimmten Plan, um ihn zu öffnen.
 
 :::info
-Vollständiger Admin-Zugriff ist nicht erforderlich, um Pläne zu verwalten. Jeder, der Mitglied eines Dienstes ist, kann zu Dienste navigieren und Pläne für seinen eigenen Dienst erstellen, bearbeiten und planen, ohne die Berechtigung "Plans Edit" zu benötigen. Redaktoren mit der Rolle „Plans Edit" können Pläne über jeden Dienst hinweg verwalten.
+Vollständiger Admin-Zugriff ist nicht erforderlich, um Pläne zu verwalten. Jeder, der Mitglied eines Ministeriums ist, kann zu Dienst navigieren und Pläne für sein eigenes Ministerium erstellen, bearbeiten und planen, ohne die Berechtigung Pläne bearbeiten zu benötigen. Editoren mit der Rolle Pläne bearbeiten können Pläne über alle Ministerien hinweg verwalten.
 :::
 
-## Erstellen Sie einen Plan
+## Erstelle einen Plan
 
-1. Klicken Sie in der Plantyp-Ansicht auf **New Plan**.
-2. Geben Sie dem Plan einen Namen oder verwenden Sie das Datum als Namen. Wählen Sie das **Datum** für den Dienst.
-3. Wenn Sie aus einem vorherigen Plan kopieren möchten, wählen Sie nur Positionen oder Positionen und Aufträge. Wenn Sie nicht kopieren möchten, wählen Sie nichts aus. Sie können auch die Dienstordnung aus meinem vorherigen Plan kopieren.
-4. Speichern Sie den Plan. Sie können jetzt mit der Zuweisung von Teammitgliedern beginnen und die [Dienstordnung](./service-order.md) erstellen.
+1. Klicke in der Plantyp-Ansicht auf **Neuer Plan**.
+2. Gib dem Plan einen Namen oder verwende das Datum als Namen. Wähle das **Datum** für den Dienst.
+3. Wenn du einen vorherigen Plan kopieren möchtest, wähle nur Positionen oder Positionen und Zuordnungen. Wenn du nicht kopieren möchtest, wähle einfach nichts. Du kannst auch die Reihenfolge der Dienste meines vorherigen Plans kopieren.
+4. Speichere den Plan. Du kannst jetzt damit beginnen, Teammeister zuzuweisen und die [Servicebestellung](./service-order.md) zu erstellen.
 
-## Die Seite „Plan Details"
+## Die Plandetail-Seite
 
-Wenn Sie einen Plan öffnen, werden zwei Registerkarten angezeigt:
+Wenn du einen Plan öffnest, siehst du zwei Registerkarten:
 
-- **Assignments** – Verwalten Sie, welche Teammitglieder diesem Plan zugewiesen sind. Sie können Personen aus Ihren bestehenden Teams hinzufügen und sehen, wer bestätigt hat oder noch ausstehend ist.
-- **[Service Order](./service-order.md)** – Erstellen Sie die Dienstordnung mit Elementen wie Lobpreisliedern, Gebeten, Ankündigungen und der Predigt.
+- **Zuordnungen** -- Verwalte, welche Teammeister diesem Plan zugewiesen sind. Du kannst Personen aus deinen vorhandenen Teams hinzufügen und sehen, wer bestätigt hat oder noch ausstehend ist.
+- **[Servicebestellung](./service-order.md)** -- Erstelle die Reihenfolge der Dienste mit Elementen wie Anbetungsliedern, Gebeten, Ankündigungen und der Predigt.
 
-## Weisen Sie Teammitglieder zu
+## Zuweisen von Teammeistern
 
-1. Öffnen Sie einen Plan und gehen Sie zur Registerkarte **Assignments**.
-2. Klicken Sie auf **add Position**, um es zu erweitern. Füllen Sie die Informationen im Formular „Position hinzufügen" aus. Fügen Sie für den Kategorienamen eine beliebige Kategorie hinzu.
-3. Klicken Sie auf **People Needed** und wählen Sie Freiwillige aus, um diese Position zu besetzen.
-4. Fügen Sie Mitglieder aus Ihrem Team-Roster hinzu, indem Sie auf **Add** klicken.
+1. Öffne einen Plan und gehe zur Registerkarte **Zuordnungen**.
+2. Klicke auf **Position hinzufügen**, um es zu erweitern. Fülle die Informationen im Formular "Position hinzufügen" aus. Für den Kategorienamen füge einen beliebigen Namen hinzu.
+3. Klicke auf **Benötigte Personen** und wähle Freiwillige aus, um diese Position zu füllen.
+4. Füge Mitglieder aus deiner Teamliste hinzu, indem du auf **Hinzufügen** klickst.
 5. Zugewiesene Mitglieder werden unter ihrem Team mit ihrem Zuweisungsstatus angezeigt.
-6. Klicken Sie auf „Freiwillige benachrichtigen", um sie in der B1-App oder per E-Mail zu benachrichtigen.
+6. Klicke auf Benachrichtige Freiwillige, um sie in der B1-App oder per E-Mail zu benachrichtigen.
+
+Jede Position zeigt einen Count-Chip an (z. B. "2/3"), damit du auf einen Blick sehen kannst, wie viele Plätze belegt sind. Oben auf der Registerkarte Zuordnungen zeigen eine Fortschrittsleiste und einen Zusammenfassungs-Chip ("X of Y Positionen gefüllt") deine Gesamtbesetzung für den Plan an und wechseln zu **Vollständig besetzt**, sobald jede Position abgedeckt ist.
 
 :::tip
-Richten Sie Ihre Teams in den Diensteinstellungen ein, bevor Sie Pläne erstellen. Auf diese Weise haben Sie einen bereiten Pool von Freiwilligen zur Auswahl.
+Richte deine Teams in den Ministeriumseinstellungen ein, bevor du Pläne erstellst. Auf diese Weise hast du einen einsatzbereiten Pool von Freiwilligen zu wählen.
 :::
 
-## Freiwilligenbenachrichtigungen
+## Freiwilligenremindern
 
-B1 kann Freiwillige automatisch vor den Diensten benachrichtigen, zu denen sie eingeplant sind, sodass Sie Ihre Teams nicht jede Woche nachjagen müssen. Benachrichtigungen gehen an **alle Geplanten** – sowohl an diejenigen, die bestätigt haben, als auch an diejenigen, die noch nicht geantwortet haben – per E-Mail und als In-App-/Push-Benachrichtigung. Jede Benachrichtigung enthält die Position(en) des Freiwilligen, das Dienstdatum, die Plannotizen und Ihre benutzerdefinierte Nachricht.
+B1 kann automatisch Freiwillige an die Dienste erinnern, für die sie geplant sind, sodass du dein Team nicht jede Woche verfolgen musst. Erinnerungen gehen an **alle geplant** - sowohl diejenigen, die bestätigt haben, als auch diejenigen, die noch nicht geantwortet haben - per E-Mail und als In-App-/Push-Benachrichtigung. Jede Erinnerung enthält die Position(en) des Freiwilligen, das Dienstdatum, die Plannotizen und deine benutzerdefinierte Nachricht.
 
-Die Benachrichtigungszeitpunkt und der Inhalt werden pro **Plantyp** festgelegt, sodass jede Art von Dienst seinen eigenen Zeitplan beibehalten kann.
+Erinnerungstiming und -inhalt werden pro **Plantyp** festgelegt, sodass jede Art von Dienst einen eigenen Zeitplan behalten kann.
 
-1. Wählen Sie im Bereich **Dienste** den Dienst aus, der den Plantyp enthält.
-2. Klicken Sie auf das **Bearbeitungssymbol (Stift)** neben dem Plantyp.
-3. Im Abschnitt **Reminders** legen Sie Folgendes fest:
-   - **Reminder days before service** – eine kommagetrennte Liste der Tage im Voraus zum Senden, zum Beispiel 7,1,0. Verwenden Sie `0`, um eine Benachrichtigung am Tag des Dienstes zu senden. Lassen Sie dieses Feld leer, um Benachrichtigungen für diesen Plantyp auszuschalten.
-   - **Custom reminder message** *(optional)* – zusätzlicher Text, der zur Benachrichtigung hinzugefügt wird, z. B. „Kommen Sie 30 Minuten früher an, um zu üben."
-4. Speichern Sie den Plantyp.
+1. Wähle aus dem Bereich **Dienst** das Ministerium, das den Plantyp enthält.
+2. Klicke auf das Symbol **Bearbeiten (Stift)** neben dem Plantyp.
+3. Im Bereich **Erinnerungen** lege fest:
+   - **Remidern Tage vor dem Dienst** -- Eine kommagetrennte Liste davon, wie viele Tage davor gesendet werden, z. B. `7,1,0`. Verwende `0`, um eine Erinnerung am Servicetag zu senden. Lasse dieses Feld leer, um Erinnerungen für diesen Plantyp auszuschalten.
+   - **Benutzerdefinierte Erinnerungsnachricht** *(optional)* -- Extra-Text hinzugefügt zur Erinnerung, z. B. "Kommen Sie 30 Minuten früher zum Üben."
+4. Speichere den Plantyp.
 
-Neue Plantypen erinnern Freiwillige **2 Tage vor** jedem Dienst standardmäßig, bis Sie dies ändern.
+Neue Plantypen erinnern Freiwillige **2 Tage vor** jedem Dienst standardmäßig, bis du dies änderst.
 
 :::tip
-Freiwillige, die noch nicht bestätigt haben, erhalten die Schaltflächen **Accept** und **Decline** direkt in der Erinnerungs-E-Mail, sodass sie antworten können, ohne sich anzumelden.
+Freiwillige, die noch nicht bestätigt haben, erhalten **Accept** und **Decline** Schaltflächen direkt in der Erinnerungs-E-Mail, damit sie antworten können, ohne sich anzumelden.
 :::
 
 :::info
-Jede Benachrichtigung wird einmal gesendet. Pläne, die noch in Bleistift sind (noch nicht an das Team gesendet), lösen keine Benachrichtigungen aus.
+Jede Erinnerung wird einmal gesendet. Pläne, die noch Bleistift sind (noch nicht an das Team gesendet), triggern keine Erinnerungen.
 :::
 
-## Ordnen Sie Gruppen einem Plantyp zu
+## Verknüpfung von Gruppen mit einem Plantyp
 
-Unterhalb der Planliste auf der Seite „Plantyp" können Sie im Abschnitt **Groups** festlegen, welche Gruppen die Pläne für diesen Plantyp in ihrem Mitgliederportal sehen können. Dies ist eine schnelle Möglichkeit, bevorstehende Dienste an die richtigen Teams zu vermitteln, ohne ihnen Admin-Zugriff zu geben.
+Unter der Planliste auf der Plantyp-Seite können Sie im Bereich **Gruppen** entscheiden, welche Gruppen die Pläne für diesen Plantyp von ihrem Mitglieder-Portal aus sehen können. Dies ist eine schnelle Möglichkeit, anstehende Dienste den richtigen Teams anzuzeigen, ohne ihnen Admin-Zugriff zu gewähren.
 
-1. Scrollen Sie auf der Seite „Plantyp" nach unten zum Abschnitt **Groups**.
-2. Klicken Sie auf **Add Group** und wählen Sie eine Gruppe aus dem Dropdown.
-3. Wählen Sie in der Spalte **Shows** aus, ob Mitglieder dieser Gruppe **Past**, **Future** oder **Both** Pläne für diesen Plantyp sehen sollen.
-4. Wiederholen Sie den Vorgang, um zusätzliche Gruppen zuzuordnen, oder klicken Sie auf das Papierkorbsymbol, um eine Gruppe zu entfernen.
+1. Scrolle auf der Plantyp-Seite nach unten zum Bereich **Gruppen**.
+2. Klicke auf **Gruppe hinzufügen** und wähle eine Gruppe aus dem Dropdown.
+3. Wähle in der Spalte **Zeigt** aus, ob Mitglieder dieser Gruppe **Vergangene**, **Zukünftige** oder **Beide** Pläne für diesen Plantyp sehen sollten.
+4. Wiederhole, um zusätzliche Gruppen zu verknüpfen, oder klicke auf das Trashsymbol, um eine Gruppe zu entfernen.
 
 :::info
-Nur Gruppen, die als **Standard** gekennzeichnet sind, werden in der Auswahl angezeigt. Mitglieder einer zugeordneten Gruppe sehen automatisch die Pläne dieses Plantyps auf der Registerkarte [Plans](/docs/b1-church/plans/) im B1-Mitgliederportal – begrenzt auf das Fenster Vergangenheit/Zukunft/Beides, das Sie ausgewählt haben.
+Im Picker erscheinen nur als **Standard** gekennzeichnete Gruppen. Mitglieder einer verknüpften Gruppe sehen diese Pläne vom Plantyp automatisch auf der Registerkarte [Pläne](/docs/b1-church/plans/) im B1-Mitglieder-Portal - auf das Fenster beschränkt, das du auswählst.
 :::
 
-## Drucken Sie Pläne
+## Pläne drucken
 
-Sie können einen Plan zur Weitergabe an Ihr Team ausdrucken. Öffnen Sie den Plan, öffnen Sie die Registerkarte „Service Order" und verwenden Sie die Option **Print**, um eine druckbare Version zu generieren, die Aufträge und die Dienstordnung enthält. Dies ist nützlich, um bei Durchlaufproben auszuteilen oder in einem gemeinsamen Bereich zu posten.
-
-:::info
-Pläne sind nach Dienst organisiert. Stellen Sie sicher, dass Sie sich auf der korrekten Dienst-Registerkarte befinden, bevor Sie Pläne erstellen oder ansehen.
-:::
-
-## Nächste Schritte
-
-- Verwenden Sie die [Planübersicht](./plans-overview.md), um alle bevorstehenden Aufträge über mehrere Wochen in einem Raster anzuzeigen und ungefüllte Positionen zu identifizieren – und weisen Sie Freiwillige direkt aus dem Raster zu
-- Speichern Sie die Struktur eines Plans als [Plan Template](./plan-templates.md), damit Sie ihn in einem Klick auf zukünftige Pläne einstempeln können
-- Erstellen Sie Ihre [Dienstordnung](./service-order.md) mit Liedern, Lesungen und anderen Elementen
-- Fügen Sie [Lieder](./songs.md) aus Ihrer Bibliothek direkt in die Dienstordnung ein
-- Verwenden Sie [Aufgaben](./tasks.md), um Follow-up-Aktionselemente Teammitgliedern zuzuweisen
+Du kannst einen Plan zum Verteilen an dein Team ausdrucken. Öffne den Plan, öffne die Registerkarte Servicebestellung und verwende die Option **Drucken**, um eine druckbare Version zu generieren, die Aufträge und die Servicebestellung enthält. Dies ist nützlich zum Verteilen bei Proben oder zum Posten in einem gemeinsamen Bereich.

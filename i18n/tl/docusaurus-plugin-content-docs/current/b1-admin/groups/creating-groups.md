@@ -1,85 +1,85 @@
 ---
-title: "Paglikha ng Mga Grupo"
+title: "Creating Groups"
 ---
 
-# Paglikha ng Mga Grupo
+# Creating Groups
 
 <div class="article-intro">
 
-Ang paglikha ng grupo sa B1 Admin ay straightforward. Magseset-up ka ng kategorya, magbibigay ng pangalan ng iyong grupo, at pagkatapos ay makakakonfigure ng mga setting. Ang mga grupo ay tumutulong sa iyo na i-organize ang iyong simbahan sa mga makabuluhang yunit tulad ng small groups, committees, at classes.
+Simple lang ang paggawa ng grupo sa B1 Admin. Magse-set up ka ng kategorya, papangalanan ang iyong grupo, at pagkatapos ay i-configure ang mga setting nito. Tinutulungan ka ng mga grupo na i-organisa ang iyong simbahan sa makabuluhang mga yunit tulad ng maliliit na grupo, komite, at klase.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Kailangan mo ng aktibong B1 Admin account na may pahintulot upang pamahalaan ang mga grupo. Tingnan ang [Mga Papel at Pahintulot](../people/roles-permissions.md) kung hindi ka sigurado tungkol sa iyong access level.
-- Magpasya ng kategorya structure para sa iyong mga grupo (halimbawa, "Small Groups," "Ministries," "Committees"). Ang mga kategorya ay tumutulong na mapanatili ang may kaugnayan na mga grupo na organisado.
+- Kailangan mo ng aktibong B1 Admin account na may permiso na pamahalaan ang mga grupo. Tingnan ang [Roles & Permissions](../people/roles-permissions.md) kung hindi ka sigurado sa iyong access level.
+- Magpasya sa isang estruktura ng kategorya para sa iyong mga grupo (halimbawa, "Small Groups," "Ministries," "Committees"). Tinutulungan ng mga kategorya na maayos ang pagkakaorganisa ng magkakaugnay na grupo.
 
 </div>
 
-## Pagdagdag ng Bagong Grupo
+## Pagdaragdag ng Bagong Grupo
 
-1. Mag-navigate sa **B1 Admin dashboard**.
-2. I-click ang **Groups** tab.
-3. I-click ang **Add Group** at isulat ang **Category Name**. Ang mga kategorya ay tumutulong sa iyo na i-organize ang mga kaugnay na grupo (halimbawa, "Small Groups," "Ministries," o "Committees"). Kung may kategoryang umiiral na, maaari mo itong piliin mula sa list.
-4. Isulat ang **Group Name**.
-5. I-click ang **Add**. Ang iyong bagong grupo ay lilitaw sa list sa ilalim ng napiling kategorya.
+1. Pumunta sa **B1 Admin dashboard**.
+2. I-click ang tab na **Groups**.
+3. I-click ang **Add Group** at ilagay ang **Category Name**. Tinutulungan ka ng mga kategorya na pagsama-samahin ang magkakaugnay na grupo (halimbawa, "Small Groups," "Ministries," o "Committees"). Kung mayroon nang umiiral na kategorya, puwede mo itong piliin mula sa listahan.
+4. Ilagay ang **Group Name**.
+5. I-click ang **Add**. Lalabas ang iyong bagong grupo sa listahan sa ilalim ng piniling kategorya.
 
-## Pagkakakonfigure ng Mga Group Settings
+## Pag-configure ng mga Setting ng Grupo
 
-Kapag nilikha na ang iyong grupo, maaari mong punan ang karagdagang mga detalye:
+Kapag nagawa na ang iyong grupo, puwede kang maglagay ng karagdagang detalye:
 
-1. I-click ang **group name** sa list upang buksan ito.
-2. I-click ang **pencil icon** upang baguhin ang group settings.
-3. Makakonfigure ng mga susunod na opsyon:
-   - **Description** -- Maikling paglalarawan kung ano ang tungkol ng grupo. Ito ay makikita ng mga miyembro.
-   - **Meeting Times** -- Kailan ang grupo ay karaniwang nagtitipun (halimbawa, "Wednesdays at 7 PM").
-   - **Join Policy** -- Pumili kung sino ang maaaring sumali sa grupong ito:
-     - **Open** -- Ang sinuman ay maaaring sumali kaagad nang walang aprubasyón
-     - **Request** -- Dapat magpadala ng join request ang mga tao na nangangailangan ng aprubasyón (tingnan ang [Group Join Requests](./group-join-requests.md))
-     - **Closed** -- Ang mga miyembro ay dapat idagdag nang manu-mano ng mga lider o administrators
-   - **Labels** -- Magtalok ng isa o higit pang descriptive labels sa grupo (halimbawa, "In-Person", "Online", "New Members Welcome"). Ang labels ay freeform tags na ikaw ang nagbibigay; suriin ang lahat ng naaayon. Ang labels ay maaaring gamitin upang mag-filter ng mga grupo sa Groups Browser website element.
-   - **Confidential group** -- Itago ang grupong ito at ang roster nito mula sa pampublikong mga pahina, ang group finder, at hindi mga miyembro. Gamitin ito para sa sensitibong mga grupo tulad ng recovery o counseling ministries; lamang ang mga miyembro ng grupo at church staff ang makikita nito.
-   - **Attendance Tracking** -- I-enable ito kung gusto mong mag-record ng [attendance](../attendance/tracking-attendance.md) para sa grupong ito.
-   - **Service Times** -- Ikonekta ang grupo sa mga tiyak na service times ng simbahan kung applicable. Tingnan ang [Attendance Setup](../attendance/setup.md) para sa mga detalye tungkol sa service times.
-4. I-click ang **Save** upang mailapat ang iyong mga pagbabago.
+1. I-click ang **pangalan ng grupo** sa listahan para buksan ito.
+2. I-click ang **pencil icon** para i-edit ang mga setting ng grupo.
+3. I-configure ang mga sumusunod na opsyon:
+   - **Description** -- Maikling buod kung ano ang tungkol sa grupo. Makikita ito ng mga miyembro.
+   - **Meeting Times** -- Kung kailan karaniwang nagmimiting ang grupo (halimbawa, "Miyerkules ng 7 PM").
+   - **Join Policy** -- Piliin kung sino ang puwedeng sumali sa grupong ito:
+     - **Open** -- Kahit sino ay puwedeng sumali agad nang walang approval
+     - **Request** -- Kailangang magsumite ng join request na nangangailangan ng approval (tingnan ang [Group Join Requests](./group-join-requests.md))
+     - **Closed** -- Kailangang idagdag ng mga miyembro nang manu-mano ng mga leader o administrator
+   - **Labels** -- Magtakda ng isa o higit pang naglalarawang label sa grupo (halimbawa, "In-Person", "Online", "New Members Welcome"). Ang mga label ay malayang tag na iyong tinutukoy; i-check lahat ng naaangkop. Puwedeng gamitin ang mga label para i-filter ang mga grupo sa Groups Browser website element.
+   - **Confidential group** -- Itago ang grupong ito at ang roster nito mula sa mga pampublikong page, group finder, at mga hindi miyembro. Gamitin ito para sa mga sensitibong grupo tulad ng recovery o counseling ministries; ang mga miyembro lang ng grupo at staff ng simbahan ang makakakita nito.
+   - **Attendance Tracking** -- I-enable ito kung gusto mong irecord ang [attendance](../attendance/tracking-attendance.md) para sa grupong ito.
+   - **Service Times** -- Iugnay ang grupo sa mga partikular na service time ng simbahan kung naaangkop. Tingnan ang [Attendance Setup](../attendance/setup.md) para sa mga detalye tungkol sa service times.
+4. I-click ang **Save** para ilapat ang iyong mga pagbabago.
 
 :::tip
-Ang pagdagdag ng malinaw na paglalarawan at oras ng pagpupulong ay tumutulong sa mga miyembro na malaman kung ano ang inaasahan nila kapag sumasali sa isang grupo.
+Ang pagdaragdag ng malinaw na description at meeting time ay tumutulong sa mga miyembro na malaman kung ano ang aasahan kapag sumali sila sa isang grupo.
 :::
 
-## Pagduplicate ng Isang Grupo
+## Pagduplicate ng Grupo
 
-Nagsisimula ng isang bagong session ng isang recurring class o ministry? Sa halip na muling ilagay ang lahat ng settings, mag-duplicate ng isang umiiral na grupo:
+Magsisimula ba ng bagong session ng isang paulit-ulit na klase o ministeryo? Sa halip na muling ilagay ang lahat ng setting, i-duplicate na lang ang isang umiiral na grupo:
 
-1. Buksan ang grupo at i-click ang **duplicate** icon sa group banner (sa tabi ng Edit).
-2. Kumpirmahin ang duplication.
+1. Buksan ang grupo at i-click ang **duplicate** icon sa banner ng grupo (sa tabi ng Edit).
+2. Kumpirmahin ang pagduplicate.
 
-Ang kopya ay dadalhin ang mga setting ng original -- kategorya, paglalarawan, oras/lokasyon ng pagpupulong, join policy, labels, at campus -- ngunit **hindi** ang mga miyembro nito. Ang bagong grupo ay pinangalan pagkatapos ng original na may " (Copy)" na idagdag; baguhin ang pangalan nito mula sa group settings.
+Dadalhin ng kopya ang mga setting ng orihinal -- kategorya, description, meeting time/location, join policy, labels, at campus -- ngunit **hindi** ang mga miyembro nito. Ang bagong grupo ay pinangalanang katulad ng orihinal na may " (Copy)" na idinagdag; palitan ang pangalan mula sa mga setting ng grupo.
 
-## Archiving ng Isang Grupo
+## Pag-archive ng Grupo
 
-Kapag ang isang grupo ay hindi na aktibo ngunit gusto mong panatilihin ang history nito sa halip na burahin ito:
+Kapag hindi na aktibo ang isang grupo ngunit gusto mong panatilihin ang kasaysayan nito sa halip na tanggalin ito:
 
-1. Buksan ang grupo at i-click ang **pencil icon** upang baguhin ang mga setting nito.
+1. Buksan ang grupo at i-click ang **pencil icon** para i-edit ang mga setting nito.
 2. I-click ang **Archive** at kumpirmahin.
 
-Ang mga archived groups ay bumagsak sa pangunahing Groups list. Upang mahanap ang isa pang pagkakataon, i-turn on ang **Show archived** toggle sa tuktok ng Groups page, pagkatapos ay i-click ang **Restore** sa tabi ng grupo upang dalhin ito pabalik.
+Aalisin ang mga na-archive na grupo sa pangunahing listahan ng Groups. Para mahanap ito ulit, i-on ang toggle na **Show archived** sa itaas ng Groups page, pagkatapos ay i-click ang **Restore** sa tabi ng grupo para ibalik ito.
 
 :::info
-Ang archiving ng isang grupo ay hindi nag-aalis ng mga miyembro nito, attendance history, o calendar events -- ito ay nagtitago lamang ng grupo mula sa default na list hanggang ibalik mo ito.
+Ang pag-archive ng isang grupo ay hindi nagtatanggal ng mga miyembro nito, kasaysayan ng attendance, o mga calendar event -- itinatago lamang nito ang grupo mula sa default na listahan hanggang sa i-restore mo ito.
 :::
 
 ## Mga Susunod na Hakbang
 
-Pagkatapos lumikha at makakonfigure ng iyong grupo, ikaw ay handa na sa:
+Pagkatapos gumawa at i-configure ang iyong grupo, handa ka nang:
 
-- **Magdagdag ng mga miyembro** -- Maghanap ng mga tao at idagdag sa grupo. Gamitin ang berdeng key icon upang tukuyin ang mga group leaders. Tingnan ang [Group Members](./group-members.md).
-- **I-setup ang isang kalendaryo** -- Lumikha ng mga event at paulit-ulit na mga pagpupulong para sa grupo. Tingnan ang [Group Calendar](./group-calendar.md).
-- **Makipag-ugnayan** -- Magpadala ng mga mensahe sa lahat ng miyembro ng grupo direkta mula sa pahina ng grupo.
-- **Mag-export ng data** -- I-click ang download icon upang mag-export ng iyong miyembro ng grupo.
+- **Magdagdag ng miyembro** -- Maghanap ng tao at idagdag sila sa grupo. Gamitin ang berdeng key icon para itakda ang mga leader ng grupo. Tingnan ang [Group Members](./group-members.md).
+- **Mag-set up ng calendar** -- Gumawa ng mga event at paulit-ulit na miting para sa grupo. Tingnan ang [Group Calendar](./group-calendar.md).
+- **Makipag-ugnayan** -- Magpadala ng mensahe sa lahat ng miyembro ng grupo direkta mula sa page ng grupo.
+- **I-export ang data** -- I-click ang download icon para i-export ang listahan ng miyembro ng iyong grupo.
 
 :::info
-Ang lahat ng iyong simbahan groups ay inorganisado ayon sa mga kategorya sa pangunahing Groups page. Maaari mong palaging muling ayusin o baguhin ang pangalan ng mga kategorya habang lumalaki ang iyong simbahan.
+Lahat ng grupo ng iyong simbahan ay naka-organisa ayon sa kategorya sa pangunahing page ng Groups. Puwede mo palaging ayusin muli o palitan ang pangalan ng mga kategorya habang lumalaki ang iyong simbahan.
 :::

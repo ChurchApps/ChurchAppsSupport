@@ -6,7 +6,7 @@ title: "Innsjekking"
 
 <div class="article-intro">
 
-Innsjekking er ett system med tre forøvelser: B1Checkin kiosk appen for bemanned og selvbetjente stasjoner, selvinnsjekking innsiden B1App medlemsportalen, og admin-side oppmøte i B1Admin. Alle tre skriver til samme oppmøtemodul i kjernens Api, og klasserom ruting drives helt av grupper — det er ingen separat "steder" eller "rom" entitet. Et barnesikkerhets lag sitter på toppen: per-besøk innsjekkings typer, server-side kapasitet og frivillighets forhold porter, kiosk-side alder/klasse berettigelse, betrodd hentet verifisering ved sjekking ut, og forelder sending over kirkens tekstmeldings leverandør. Denne siden kartlegger data modellen, innsjekkings flyten, sikkerhets laget, og etikett utskrifts rørledningen.
+Innsjekking er ett system med tre inngangsdører: B1Checkin-kioskappen for bemannede og selvbetjente stasjoner, selvinnsjekking inne i B1App-medlemsportalen, og admin-side oppmøte i B1Admin. Alle tre skriver til samme oppmøtemodul i kjerne-Apiet, og klasseromsruting drives helt av grupper — det finnes ingen separat "steder"- eller "rom"-entitet. Et barnesikkerhetslag ligger oppå: per-besøk innsjekkingstyper, server-side kapasitet- og frivillig-forholdssperrer, kiosk-side alder-/klassetrinnsberettigelse, betrodd hente-verifisering ved utsjekking, og foreldervarsling over kirkens tekstmeldingsleverandør. Denne siden kartlegger datamodellen, innsjekkingsflytene, sikkerhetslaget og etikettutskriftspipelinen.
 
 </div>
 
@@ -14,184 +14,188 @@ Innsjekking er ett system med tre forøvelser: B1Checkin kiosk appen for bemanne
 
 ```
 ┌──────────────────────────┐
-│ B1Checkin (Expo kiosk)   │──┐         ┌──────────────────────────────────────────────┐
-│  lookup → household →    │  │         │ Api                                          │
-│  groups → complete/print │  │  HTTPS  │  ┌─ membership modul ─────────────────────┐ │
+│ B1Checkin (Expo-kiosk)   │──┐         ┌──────────────────────────────────────────────┐
+│  oppslag → husholdning → │  │         │ Api                                          │
+│  grupper → fullfør/skriv │  │  HTTPS  │  ┌─ membership-modul ──────────────────────┐ │
 ├──────────────────────────┤  ├───────▶ │  │ people · households · groups            │ │
-│ B1App (self check-in)    │──┤         │  └─────────────────────────────────────────┘ │
-│  /mobile/checkin screen  │  │         │  ┌─ attendance modul ──────────────────────┐ │
+│ B1App (selvinnsjekking)  │──┤         │  └─────────────────────────────────────────┘ │
+│  /mobile/checkin-skjerm  │  │         │  ┌─ attendance-modul ──────────────────────┐ │
 ├──────────────────────────┤  │         │  │ campuses → services → serviceTimes      │ │
-│ B1Admin (staff)          │──┘         │  │ groupServiceTimes  (romruting)          │ │
-│  setup · reports ·       │            │  │ sessions ← visitSessions → visits       │ │
-│  label designer          │            │  │ labelTemplates                          │ │
+│ B1Admin (ansatte)        │──┘         │  │ groupServiceTimes  (romruting)          │ │
+│  oppsett · rapporter ·   │            │  │ sessions ← visitSessions → visits       │ │
+│  etikettdesigner         │            │  │ labelTemplates                          │ │
 └──────────────────────────┘            │  └─────────────────────────────────────────┘ │
                                         └──────────────────────────────────────────────┘
 
-Etikett utskrifts sti (kun kiosk):
+Etikettutskriftssti (kun kiosk):
 POST /attendance/visits/checkin ──▶ { securityCode, streaks }
-  └▶ LabelHelper (etikett maler, eller samlet HTML tilbakefall)
-       └▶ LabelRenderer → HTML dokument + inline SVG strekkoder
-            └▶ PrintUI: WebView gjengivelse → ViewShot JPG fangst
-                 └▶ printer-helper innfødt modul → Brother QL / Zebra
+  └▶ LabelHelper (etikettmaler, eller pakket HTML-fallback)
+       └▶ LabelRenderer → HTML-dokument + inline SVG-strekkoder
+            └▶ PrintUI: WebView-rendering → ViewShot JPG-fangst
+                 └▶ printer-helper nativ modul → Brother QL / Zebra
 ```
 
-| Flate | Depo | Stabel | Rolle |
+| Flate | Repo | Stabel | Rolle |
 |---------|------|-------|------|
-| Kiosk | `B1Checkin` | Expo / React Native, expo-router fil ruting; EAS bygger for Android, Amazon Fire, og iOS; OTA oppdateringer via `expo-updates` | Bemanned eller selvbetjent stasjon med etikett utskrift og verifisert sjekking ut |
-| Selvinnsjekking | `B1App` | Next.js (b1.church medlemsportal) | Innloggede medlemmer sjekker husholdningen sin fra en telefon; ingen utskrift |
-| Admin | `B1Admin` | React SPA | Konfigurerer tjenestestrukturen, tildeler grupper til tjeneste tider, designer etiketter, registrerer manuelt oppmøte, kjører rapporter |
+| Kiosk | `B1Checkin` | Expo / React Native, expo-router filruting; EAS-bygg for Android, Amazon Fire og iOS; OTA-oppdateringer via `expo-updates` | Bemannet eller selvbetjent stasjon med etikettutskrift og verifisert utsjekking |
+| Selvinnsjekking | `B1App` | Next.js (b1.church-medlemsportalen) | Innloggede medlemmer sjekker inn husholdningen sin fra en telefon; ingen utskrift |
+| Admin | `B1Admin` | React SPA | Konfigurerer tjenestestrukturen, tildeler grupper til tjenestetider, designer etiketter, registrerer manuelt oppmøte, kjører rapporter |
 
-Alle tre kaller samme to API moduler gjennom `ApiHelper`: **MembershipApi** (`/membership`) for personer, husholdninger, og grupper; **AttendanceApi** (`/attendance`) for alt nedenfor.
+Alle tre kaller de samme to API-modulene gjennom `ApiHelper`: **MembershipApi** (`/membership`) for personer, husholdninger og grupper; **AttendanceApi** (`/attendance`) for alt nedenfor.
 
 ## Datamodell (`Api/src/modules/attendance`)
 
-| Entitet / tabell | Nøkkel felt | Betydning |
+| Entitet / tabell | Nøkkelfelt | Betydning |
 |----------------|-----------|---------|
-| `campuses` | name, address | Avskrevet her — campuser er mastered i medlemskaps modulen (`/membership/campuses`); kopien av oppmøte er frosset skrivebeskyttet for eldre lesere (`models/Campus.ts`) |
-| `services` | campusId, name | En gjentakende samling, f.eks. "Søndag morgen" (`models/Service.ts`) |
-| `serviceTimes` | serviceId, name | En tidsslot innsiden en tjeneste, f.eks. "09:00" (`models/ServiceTime.ts`) |
-| `groupServiceTimes` | groupId, serviceTimeId | Join tabell: hvilke grupper (klasserom) møtes på hvilke tjeneste tider (`models/GroupServiceTime.ts`) |
-| `sessions` | groupId, serviceTimeId, sessionDate | Ett møte av en gruppe på en dato — opprettet lat ved innsjekkings tid (`models/Session.ts`) |
-| `visits` | personId, serviceId, visitDate, checkinTime, securityCode, checkinType, checkedInById, checkoutTime, checkedOutBy, checkedOutById | En person som deltar på en dato (`models/Visit.ts`). `checkinType` er `member` / `guest` / `volunteer` (NULL = eldre medlem), satt av kiosken og konsumert av kapasitets/forhold porta |
-| `visitSessions` | visitId, sessionId | Hvilken sesjon(er) et besøk dekker — et barn innsjekket til to tjeneste tider får to rader (`models/VisitSession.ts`) |
-| `labelTemplates` | name, labelType (`nametag`/`pickup`), width, height, isDefault, content (JSON blokker) | Designbare etikett layout (`models/LabelTemplate.ts`) |
+| `campuses` | name, address | Avviklet her — campuser mastres i medlemskapsmodulen (`/membership/campuses`); oppmøte-kopien er fryst skrivebeskyttet for eldre lesere (`models/Campus.ts`) |
+| `services` | campusId, name | En tilbakevendende samling, f.eks. "Søndag morgen" (`models/Service.ts`) |
+| `serviceTimes` | serviceId, name | Et tidspunkt innenfor en tjeneste, f.eks. "09:00" (`models/ServiceTime.ts`) |
+| `groupServiceTimes` | groupId, serviceTimeId | Koblingstabell: hvilke grupper (klasserom) møtes på hvilke tjenestetider (`models/GroupServiceTime.ts`) |
+| `sessions` | groupId, serviceTimeId, sessionDate | Ett møte for én gruppe på én dato — opprettet lat ved innsjekkingstidspunktet (`models/Session.ts`) |
+| `visits` | personId, serviceId, visitDate, checkinTime, securityCode, checkinType, checkedInById, checkoutTime, checkedOutBy, checkedOutById | Én person som deltar på én dato (`models/Visit.ts`). `checkinType` er `member` / `guest` / `volunteer` (NULL = eldre medlem), satt av kiosken og konsumert av kapasitets-/forholdssperrene |
+| `visitSessions` | visitId, sessionId | Hvilken(e) sesjon(er) et besøk dekker — et barn innsjekket til to tjenestetider får to rader (`models/VisitSession.ts`) |
+| `labelTemplates` | name, labelType (`nametag`/`pickup`), width, height, isDefault, content (JSON-blokker) | Designbare etikett-oppsett (`models/LabelTemplate.ts`) |
 
-### Hvordan en fullført innsjekking vedvarer
+### Hvordan en fullført innsjekking lagres
 
-`VisitController.postCheckin` (`Api/src/modules/attendance/controllers/VisitController.ts`) håndterer `POST /attendance/visits/checkin?serviceId=&peopleIds=`. Kroppen er en rekke av `Visit` objekter, som hver bærer `visitSessions` hvis innebygde `session` bare navngir en `(serviceTimeId, groupId)` par. Serveren så:
+`VisitController.postCheckin` (`Api/src/modules/attendance/controllers/VisitController.ts`) håndterer `POST /attendance/visits/checkin?serviceId=&peopleIds=`. Kroppen er en array av `Visit`-objekter, som hver bærer `visitSessions` hvis innebygde `session` bare navngir et `(serviceTimeId, groupId)`-par. Serveren gjør så følgende:
 
-1. **Porter kapasitet og forhold før noen skriving.** `evaluateGates()` → `CheckinGateHelper.evaluate()` sjekker hver målrettet roms kapasitet, gjest kapasitet, lukket flagg, og frivillighets forhold mot nåværende okkupasjon. postCheckin er **ikke transaksjonell**, så porta må kjøre før første lagring — en hard brudd returnerer en 409 navngir offending rom(er) og ingenting er vedvarende. Se [Kapasitet og frivillighets forhold porta](#capacity-and-volunteer-ratio-gates).
-2. **Løser sesjoner lat.** `getSessionId()` finner eller oppretter `sessions` raden for `(groupId, serviceTimeId, i dag)` — sesjon ids er bufret i-prosess per dato. Nye sesjoner sender en `session.created` webhook. Løkken er en avventet `for..of` — en tidligere ild-og-glemme `forEach(async …)` løp skriving og skrev NULL sessionIds på første-sesjon opprettelse (fast; notert i en kode kommentar på løkken).
-3. **Erstatter dagens poster.** Ethvert eksisterende besøk for disse personene ved denne tjenesten i dag blir slettet sammen med visitSessions, så det sendte settet lagres. Re-sjekking-i en familie er derfor en idempotent "Dette er nåværende tilstand" operasjon, ikke en tillegg. Passering `?checkDuplicates=true` i stedet returnerer `{ duplicates: [personId…] }` uten skriving, som er hvordan kiosken advarer før overskriving.
-4. **Genererer en sikkerhetskode per parti.** `SecurityCodeHelper.generate()` produserer en 4-tegns kode fra alfabetet `23456789BCDFGHJKLMNPQRSTVWXYZ` (ingen vokaler eller tvetydige tegn, så kodene kan ikke stave ord eller mislest). Serveren prøver igjen på kollisjon mot samme kirkes samme-dag åpne besøk og stempel kode på hver besøk i partiet.
-5. **Returnerer `{ streaks, securityCode }`.** `streaks` maps personId til påfølgende-uke oppmøte telling; kiosken feirer milepeler (hver 5. uke) med konfetti.
+1. **Sperrer kapasitet og forhold før noen skriving.** `evaluateGates()` → `CheckinGateHelper.evaluate()` sjekker hvert målrettede roms kapasitet, gjestekapasitet, lukket-flagg og frivillig-forhold mot nåværende belegg. postCheckin er **ikke transaksjonell**, så sperren må kjøre før den første lagringen — et hardt brudd returnerer en 409 som navngir det/de aktuelle rommet/rommene, og ingenting lagres. Se [Kapasitets- og frivillig-forholdssperrer](#capacity-and-volunteer-ratio-gates).
+2. **Løser sesjoner lat.** `getSessionId()` finner eller oppretter `sessions`-raden for `(groupId, serviceTimeId, i dag)` — sesjons-id-er caches in-process per dato. Nye sesjoner sender ut en `session.created`-webhook. Løkken er en avventet `for..of` — en tidligere ild-og-glem `forEach(async …)` løp om kapp med lagringen og skrev NULL-sessionId-er ved opprettelse av første sesjon (fikset; notert i en kodekommentar ved løkken).
+3. **Erstatter dagens poster.** Eventuelle eksisterende besøk for de personene ved den tjenesten i dag slettes sammen med deres visitSessions, og det innsendte settet lagres deretter. Å sjekke inn en familie på nytt er derfor en idempotent "dette er nåværende tilstand"-operasjon, ikke en tilføyelse. Å sende `?checkDuplicates=true` i stedet returnerer `{ duplicates: [personId…] }` uten å skrive, og det er slik kiosken advarer før overskriving.
+4. **Genererer én sikkerhetskode per parti.** `SecurityCodeHelper.generate()` produserer en 4-tegns kode fra alfabetet `23456789BCDFGHJKLMNPQRSTVWXYZ` (ingen vokaler eller tvetydige tegn, slik at koder ikke kan stave ord eller mislesses). Serveren prøver på nytt ved kollisjon mot samme kirkes samme-dags åpne besøk og stempler koden på hvert besøk i partiet.
+5. **Returnerer `{ streaks, securityCode }`.** `streaks` mapper personId til antall sammenhengende uker med oppmøte; kiosken feirer milepæler (hver 5. uke) med konfetti.
 
-Hver lagret besøk sender også en `attendance.recorded` webhook. Les siden, `GET /attendance/visits/checkin`, returnerer personenes besøk fra deres **siste loggede dato** — hvis det var en tidligere uke ids blir fjernet, så klienten mottar en før-utfylt kopi av forrige ukes rom valg som vil lagre som nye poster.
+Hvert lagrede besøk sender også ut en `attendance.recorded`-webhook. Lesesiden, `GET /attendance/visits/checkin`, returnerer personenes besøk fra deres **siste loggede dato** — hvis det var en tidligere uke, fjernes id-ene, slik at klienten mottar en forhåndsutfylt kopi av forrige ukes romvalg som vil lagres som nye poster.
 
-### Sjekking ut
+### Utsjekking
 
 To endepunkter fullfører løkken (`VisitController`):
 
-- `GET /attendance/visits/code/:code` — dagens ikke-ennå-sjekket-ut besøk som bærer denne sikkerhetskoden, med sesjoner populert.
-- `POST /attendance/visits/checkout` — kropp `{ visitIds, checkedOutBy?, checkedOutById? }`; stempel `checkoutTime` og hvem som plukket opp, og sender en `attendance.checkout` webhook per besøk.
+- `GET /attendance/visits/code/:code` — dagens ikke-ennå-utsjekkede besøk som bærer denne sikkerhetskoden, med sesjoner fylt inn.
+- `POST /attendance/visits/checkout` — kropp `{ visitIds, checkedOutBy?, checkedOutById? }`; stempler `checkoutTime` og hvem som hentet, og sender ut en `attendance.checkout`-webhook per besøk.
 
-Tillatelser: kiosker autentiserer med `attendance.checkin`, som gir nøyaktig innsjekkings/sjekking ut/etikett-template overflaten; `attendance.view`/`attendance.edit` dekker rapportering og manuell innsetting; strukturen (tjenester, tjeneste tider, gruppe tildeling) krever `services.edit`.
+Tillatelser: kiosker autentiserer med `attendance.checkin`, som gir nøyaktig innsjekkings-/utsjekkings-/etikettmalflaten; `attendance.view`/`attendance.edit` dekker rapportering og manuell registrering; strukturen (tjenester, tjenestetider, gruppetildelinger) krever `services.edit`.
 
 ## Grupper driver romruting
 
-Det er ingen rom eller klasserom entitet noe sted i systemet. Et "rom" er et medlemskaps **gruppe** med `trackAttendance` aktivert, koblet til en eller flere tjeneste tider gjennom `groupServiceTimes`. Gruppe feltene (på `Api/src/modules/membership/models/Group.ts`) som former kiosk oppførsel:
+Det finnes ingen rom- eller klasseromsentitet noe sted i systemet. Et "rom" er en medlemskaps**gruppe** med `trackAttendance` aktivert, koblet til én eller flere tjenestetider gjennom `groupServiceTimes`. Gruppefeltene (på `Api/src/modules/membership/models/Group.ts`) som former kioskatferd:
 
-| Felt | Virkning |
+| Felt | Effekt |
 |------|--------|
-| `trackAttendance` | Gruppe deltar i oppmøte i det hele tatt; B1Admin oppsett tre flagg `trackAttendance` grupper med nei `groupServiceTimes` rad som utildelt |
-| `parentPickup` | Markerer et barn rom: innsjekking til det gjør besøket et "barn" besøk, som skriver en familie hentelabel og legger sikkerhetskoden på navnakken |
-| `printNametag` | Hvorvidt innsjekkinger til denne gruppen skriver en navnetikett i det hele tatt |
-| `capacity` / `guestCapacity` / `checkinClosed` | Rom kapasitets grenser og en hard "lukket" bryter, gjennomtvunget server-side av innsjekkings porta (redigert i B1Admin gruppe innstillinger under "Innsjekkings kapasitet") |
-| `volunteerRatio` / `minVolunteers` | Barn-per-frivillighets forhold og minimum frivillighets antall, gjennomtvunget per kirkens hele `ratioEnforcement` innstilling |
-| `minAgeMonths` / `maxAgeMonths` / `minGrade` / `maxGrade` | Alder/klasse berettigelse grenser evaluert kiosk-side til å fremheve eller dusj rom |
+| `trackAttendance` | Om gruppen i det hele tatt deltar i oppmøte; B1Admins oppsett-tre flagger `trackAttendance`-grupper uten noen `groupServiceTimes`-rad som utildelt |
+| `parentPickup` | Markerer et barnerom: innsjekking til det gjør besøket til et "barn"-besøk, som skriver ut en familiehentelapp og legger sikkerhetskoden på navnelappen |
+| `printNametag` | Om innsjekkinger til denne gruppen i det hele tatt skriver ut en navnelapp |
+| `capacity` / `guestCapacity` / `checkinClosed` | Romkapasitetsgrenser og en hard "lukket"-bryter, håndhevet server-side av innsjekkingssperren (redigeres i B1Admins gruppeinnstillinger under "Innsjekkingskapasitet") |
+| `volunteerRatio` / `minVolunteers` | Forhold barn per frivillig og minimum antall frivillige, håndhevet i henhold til kirkens overordnede innstilling `ratioEnforcement` |
+| `minAgeMonths` / `maxAgeMonths` / `minGrade` / `maxGrade` | Alders-/klassetrinnsberettigelse-grenser evaluert på kiosk-siden for å fremheve eller nedtone rom |
 
-Hver klient denormaliserer på samme måte (f.eks. `B1Checkin/app/services.tsx`, `B1App/src/app/[sdSlug]/mobile/components/screens/CheckinPage.tsx`): laste `GET /attendance/servicetimes?serviceId=`, `GET /attendance/groupservicetimes`, og `GET /membership/groups` i parallell, så for hver tjeneste tid samle gruppene hvis `groupServiceTimes` rad peker på det inn i `serviceTime.groups`. At array er hva som romvelger viser, organisert etter gruppe `categoryName`.
+Hver klient denormaliserer på samme måte (f.eks. `B1Checkin/app/services.tsx`, `B1App/src/app/[sdSlug]/mobile/components/screens/CheckinPage.tsx`): last `GET /attendance/servicetimes?serviceId=`, `GET /attendance/groupservicetimes`, og `GET /membership/groups` parallelt, og for hver tjenestetid samle så gruppene hvis `groupServiceTimes`-rad peker på den, inn i `serviceTime.groups`. Det arrayet er det romvelgeren viser, organisert etter gruppens `categoryName`.
 
-Oppgaver blir redigert fra gruppens side i B1Admin (`B1Admin/src/groups/components/ServiceTimesEdit.tsx` — `POST`/`DELETE /attendance/groupservicetimes`), og hele Campus → Tjeneste → Tjeneste tid → Gruppe tre blir visualisert i `B1Admin/src/attendance/components/AttendanceSetup.tsx` via `GET /attendance/attendancerecords/tree`.
+Tildelinger redigeres fra gruppens side i B1Admin (`B1Admin/src/groups/components/ServiceTimesEdit.tsx` — `POST`/`DELETE /attendance/groupservicetimes`), og hele treet Campus → Tjeneste → Tjenestetid → Gruppe visualiseres i `B1Admin/src/attendance/components/AttendanceSetup.tsx` via `GET /attendance/attendancerecords/tree`.
 
 :::info
-Fordi grupper er den eneste kilden til sannhet, samme gruppe medlemskap krefter kiosk ruting, liste-stil oppmøte i B1Admin gruppe sider, og oppmøte rapportering — tildeling av en gruppe til en tjeneste tid er den eneste trinn som trengs for å gjøre det en innsjekking destinasjon.
+Fordi grupper er den eneste kilden til sannhet, driver det samme gruppemedlemskapet kioskruting, listestil-oppmøte i B1Admins gruppesider, og oppmøterapportering — å tildele en gruppe til en tjenestetid er det eneste steget som trengs for å gjøre den til et innsjekkingsmål.
 :::
 
 ## Barnesikkerhet
 
-### Innsjekkings typer
+### Innsjekkingstyper
 
-Ethvert besøk bærer en `checkinType` — `member`, `guest`, eller `volunteer` (NULL betyr eldre/medlem; migrasjon `tools/migrations/attendance/2026-07-03_checkin_type.ts`). Typen velges **kiosk-side**: Medlem / Gjest / Frivillighets sjetonger på den utvidete medlem rad (`B1Checkin/src/components/MemberServiceTimes.tsx`), stempel på hver ventende besøk ved fullføring (`app/checkinComplete.tsx`, standard til `member`). Serveren konsumerer det i porta — frivillige teller mot forhold dekning i stedet for mot kapasitet, og gjester teller mot `guestCapacity`.
+Hvert besøk bærer en `checkinType` — `member`, `guest`, eller `volunteer` (NULL betyr eldre/medlem; migrasjon `tools/migrations/attendance/2026-07-03_checkin_type.ts`). Typen velges **på kiosk-siden**: Medlem-/Gjest-/Frivillig-chips på den utvidede medlemsraden (`B1Checkin/src/components/MemberServiceTimes.tsx`), stemplet på hvert ventende besøk ved fullføring (`app/checkinComplete.tsx`, med `member` som standard). Serveren konsumerer den i sperren — frivillige teller mot forholdsdekning i stedet for mot kapasitet, og gjester teller mot `guestCapacity`.
 
-### Kapasitet og frivillighets forhold porta
+### Kapasitets- og frivillig-forholdssperrer
 
-`CheckinGateHelper.evaluate()` (`Api/src/modules/attendance/helpers/CheckinGateHelper.ts`) kjører innsiden `postCheckin` før noen lagring (endepunktet er ikke-transaksjonell, så porta-før-lagring er korrekthets mekanisme). Det laster nåværende okkupasjon per målrettet gruppe (`VisitRepo.countActiveByGroupToday`) og gruppe konfig gjennom medlemskaps modul gateway, så klassifiserer brudd:
+`CheckinGateHelper.evaluate()` (`Api/src/modules/attendance/helpers/CheckinGateHelper.ts`) kjører inne i `postCheckin` før noen lagring (endepunktet er ikke-transaksjonelt, så sperring-før-lagring er korrekthetsmekanismen). Den laster nåværende belegg per målrettet gruppe (`VisitRepo.countActiveByGroupToday`) og gruppekonfigurasjonen gjennom medlemskapsmodulens gateway, og klassifiserer deretter brudd:
 
-- **Hard (alltid blokk):** `checkinClosed`, `current + incoming > capacity`, gjest tell over `guestCapacity`. Partiet blir avvist med `409 { error: "capacity", groups: [{ groupId, groupName, reason }] }` — kiosken viser det navngitte rom.
-- **Forhold (advarsler eller blokk):** innkommende ikke-frivillige inn i et rom hvor `volunteers < minVolunteers`, ingen frivillige i det hele tatt, eller `children > volunteers × volunteerRatio`. Alvorlighet følger per-kirke innstillingen `ratioEnforcement` (`"warn"` standard / `"block"`, redigert i B1Admin Administrer kirke → Innsjekking, `CheckinSettingsEdit.tsx`). Advarsel-modus returnerer `409 { warning: true, error: "ratio", … }` med mindre klienten gjeninnleverer med `acknowledgeWarnings=true` — at gjeninnlevert er kiosk stab-bekreft overstyring.
+- **Harde (alltid blokk):** `checkinClosed`, `current + incoming > capacity`, gjesteantall over `guestCapacity`. Partiet avvises med `409 { error: "capacity", groups: [{ groupId, groupName, reason }] }` — kiosken viser det navngitte rommet.
+- **Forhold (advarsel eller blokk):** innkommende ikke-frivillige inn i et rom der `volunteers < minVolunteers`, ingen frivillige i det hele tatt, eller `children > volunteers × volunteerRatio`. Alvorlighetsgraden følger kirkens innstilling `ratioEnforcement` (`"warn"` som standard / `"block"`, redigeres i B1Admin Administrer kirke → Innsjekking, `CheckinSettingsEdit.tsx`). Advarselsmodus returnerer `409 { warning: true, error: "ratio", … }` med mindre klienten sender inn på nytt med `acknowledgeWarnings=true` — det gjensendte er kioskens ansattbekreftelses-overstyring.
 
-### Alder/klasse berettigelse (kiosk-side)
+### Alders-/klassetrinnsberettigelse (kiosk-side)
 
-Rom berettigelse er rådgivende UI, evaluert på kiosken, ikke gjennomtvunget av serveren. `B1Checkin/src/helpers/EligibilityHelper.ts` sammenligner en persons fødselsdato/klasse mot gruppens `minAgeMonths`/`maxAgeMonths`/`minGrade`/`maxGrade` (klasse rekkefølge: PreK, K, 1–12, Graduated) og returnerer `eligible` / `ineligible` / `unknown` — manglende data gir `unknown` og aldri skjuler et rom. Aldre og klasser blir beregnet som av kirkens **klasse promosjonsdato** (`gradePromotionDate` innstilling, `"MM-DD"`, redigert i `B1Admin/src/settings/components/GradePromotionSettingsEdit.tsx`); kiosken henter det fra `GET /attendance/checkin/settings`, og `resolveAsOfDate` plukker den mest nylige forekomst på eller før i dag. Rom velgeren fremhever berettigede rom og dunster uberettigede; plukking av dunst rom krever en stab bekreftelse.
+Romberettigelse er rådgivende UI, evaluert på kiosken, ikke håndhevet av serveren. `B1Checkin/src/helpers/EligibilityHelper.ts` sammenligner en persons fødselsdato/klassetrinn mot gruppens `minAgeMonths`/`maxAgeMonths`/`minGrade`/`maxGrade` (klassetrinnsrekkefølge: PreK, K, 1–12, Graduated) og returnerer `eligible` / `ineligible` / `unknown` — manglende data gir `unknown` og skjuler aldri et rom. Alder og klassetrinn beregnes per kirkens **klassetrinns-forfremmelsesdato** (innstillingen `gradePromotionDate`, `"MM-DD"`, redigeres i `B1Admin/src/settings/components/GradePromotionSettingsEdit.tsx`); kiosken henter den fra `GET /attendance/checkin/settings`, og `resolveAsOfDate` velger den nyeste forekomsten på eller før i dag. Romvelgeren fremhever berettigede rom og nedtoner ikke-berettigede; å velge et nedtonet rom krever en ansattbekreftelse.
 
-### Betrodd og ikke-autorisert hentet
+### Betrodd og ikke-autorisert henting
 
-Hentet personer er en medlemskaps entitet, per husholdning: `householdPickupPeople` (`Api/src/modules/membership/models/HouseholdPickupPerson.ts` — householdId, valgfri personId, name, photoUrl, relationship, `status` `trusted` / `notAuthorized`, notes). CRUD er `GET /membership/householdpickup/:householdId` (noen som helst autentisert kirke bruker, så kiosker kan lese det) pluss `POST` / `DELETE` gated av `people.edit`. Stab administrer listen på person siden **Hentet** kort (`B1Admin/src/people/components/PickupPeople.tsx`) — foto, forhold, og en Betrodd/Ikke autorisert status sjeton.
+Hentepersoner er en medlemskapsentitet, per husholdning: `householdPickupPeople` (`Api/src/modules/membership/models/HouseholdPickupPerson.ts` — householdId, valgfri personId, name, photoUrl, relationship, `status` `trusted` / `notAuthorized`, notes). CRUD er `GET /membership/householdpickup/:householdId` (enhver autentisert kirkebruker, så kiosker kan lese den) pluss `POST` / `DELETE` sperret av `people.edit`. Ansatte administrerer listen på personsidens **Henting**-kort (`B1Admin/src/people/components/PickupPeople.tsx`) — foto, relasjon, og en Betrodd/Ikke autorisert-statuschip.
 
-Ved sjekking ut (`B1Checkin/app/checkout.tsx`) kiosken laster husholdningen hentet liste: `trusted` poster gjengivelse som trykbar hentet kort sammen husholdning-voksen foto grid, og en fri-skrevet "Annen" navn er fuzzy-matchet (Levenshtein, `src/helpers/PickupMatchHelper.ts`) mot `notAuthorized` poster — en match blokker sjekking ut med en advarsel ark og en stab **Overstyring** knapp. Overstyringen blir loggett på besøket selv: det poster `checkedOutBy` som `"OVERRIDE: {name}"` gjennom normal `POST /attendance/visits/checkout`, så det lander i oppmøte post og `attendance.checkout` webhook snarere enn en separat revisjon tabell.
+Ved utsjekking (`B1Checkin/app/checkout.tsx`) laster kiosken husholdningens henteliste: `trusted`-oppføringer gjengis som trykkbare hentekort ved siden av bildenettet med husholdningens voksne, og et fritt skrevet "Annet"-navn fuzzy-matches (Levenshtein, `src/helpers/PickupMatchHelper.ts`) mot `notAuthorized`-oppføringer — et treff blokkerer utsjekking med et advarselsark og en **Overstyr**-knapp for ansatte. Overstyringen logges på selve besøket: den poster `checkedOutBy` som `"OVERRIDE: {name}"` gjennom den vanlige `POST /attendance/visits/checkout`, slik at den havner i oppmøteposten og `attendance.checkout`-webhooken i stedet for en separat revisjonstabell.
 
-### Send forelder og nødkringkasting
+### Varsle en forelder og nødvarsling
 
-`CheckinController` (`Api/src/modules/attendance/controllers/CheckinController.ts`, `/attendance/checkin`) avslører to SMS endepunkter:
+`CheckinController` (`Api/src/modules/attendance/controllers/CheckinController.ts`, `/attendance/checkin`) eksponerer to SMS-endepunkter:
 
-- `POST /page` — `{ visitId, message }`: sender foresatte av en innsjekket barn (kiosk sjekking ut skjerm, bemande modus).
-- `POST /broadcast` — `{ serviceId, message }`: tekster hver innsjekket husholdnings voksne for en tjeneste (kiosk admin innstillinger, bak en type-`EMERGENCY`-til-bekreft ark i `B1Checkin/app/adminSettings.tsx`).
+- `POST /page` — `{ visitId, message }`: varsler foresatte til ett innsjekket barn (kioskens utsjekkingsskjerm, bemannet modus).
+- `POST /broadcast` — `{ serviceId, message }`: sender SMS til alle voksne i alle innsjekkede husholdninger for en tjeneste (kioskens admininnstillinger, bak et bekreftelsesark der man skriver typen `EMERGENCY` for å bekrefte, i `B1Checkin/app/adminSettings.tsx`).
 
-Begge løse husholdning voksne gjennom medlemskaps gateway, så hand levering til **`MessagingModuleGateway.sendBulkText`** (`Api/src/shared/modules/MessagingModuleGateway.ts`) — kors-modul dør inn i kirkens konfigurerte tekstmeldings leverandør (`@churchapps/texting`: TextInChurch, Clearstream, eller MutualMinistry; det er ingen innebygd SMS sender). Gateway logger en `sentText` rad pluss per-mottaker `deliveryLog` poster og tak et parti på 500 mottakere; uten leverandør konfigurert det returnerer `no_provider`, som kiosken flate som "Ingen SMS leverandør konfigurert". Controlleren `dispatch()` dedupes telefon nummer og hopper personer med ingen mobile eller `optedOut` satt, returnerer `{ sent, failed, skippedOptedOut, skippedNoPhone }` så kiosken kan vise hva ble hoppet over.
+Begge løser husholdningens voksne gjennom medlemskapsmodulens gateway, og overlater deretter levering til **`MessagingModuleGateway.sendBulkText`** (`Api/src/shared/modules/MessagingModuleGateway.ts`) — den kryss-modulære døren inn til kirkens konfigurerte tekstmeldingsleverandør (`@churchapps/texting`: TextInChurch, Clearstream, eller MutualMinistry; det finnes ingen innebygd SMS-avsender). Gatewayen logger en `sentText`-rad pluss per-mottaker `deliveryLog`-oppføringer og setter et tak på 500 mottakere per parti; uten en konfigurert leverandør returnerer den `no_provider`, som kiosken viser som "Ingen SMS-leverandør konfigurert". Controllerens `dispatch()` fjerner duplikate telefonnumre og hopper over personer uten mobilnummer eller med `optedOut` satt, og returnerer `{ sent, failed, skippedOptedOut, skippedNoPhone }` slik at kiosken kan vise hva som ble hoppet over.
 
 ## Kiosken (B1Checkin)
 
-Skjermer er expo-router filer under `B1Checkin/app/`; kors-skjerm tilstand lever i en statisk `CachedData` klasse (`src/helpers/CachedData.ts`), ikke React tilstand.
+Skjermer er expo-router-filer under `B1Checkin/app/`; tilstand på tvers av skjermer lever i en statisk `CachedData`-klasse (`src/helpers/CachedData.ts`), ikke React-tilstand.
 
 ```
-index (boot/auto-login) → selectChurch → services ──▶ lookup ──▶ household ──▶ checkinComplete
+index (oppstart/auto-innlogging) → selectChurch → services ──▶ lookup ──▶ household ──▶ checkinComplete
                                           │             │  ▲         │ │            │
-             laster serviceTimes, groups,  │             │  └─────────┘ └▶ addGuest  └▶ print labels,
-             groupServiceTimes,           │             └▶ checkout (bemanne)          auto-return
+             laster serviceTimes, groups,  │             │  └─────────┘ └▶ addGuest  └▶ skriv ut etiketter,
+             groupServiceTimes,           │             └▶ checkout (bemannet)          auto-retur
              labelTemplates               │                                            til lookup
 ```
 
-1. **Lookup** (`app/lookup.tsx`) — søk etter telefon (`GET /membership/people/search/phone?number=`, siste-4 eller full) eller etter navn (`GET /membership/people/search?term=`). Velging av et samsvar laster husholdningen (`GET /membership/people/household/{householdId}`) og eksisterende besøk (`GET /attendance/visits/checkin`), frøing `pendingVisits` med forrige ukes valg.
-2. **Husholdnings gjennomgang** (`app/household.tsx`, `src/components/MemberList.tsx`) — hver medlem rad viser en allerede-innsjekket badge, allergi/`nametagNotes` badge, og deres nåværende rom sjetonger. Utvidelse av medlem lister hver tjeneste tid med en rom knapp pluss medlem / gjest / frivillighets innsjekkings-type sjetonger (`MemberServiceTimes.tsx`).
-3. **Gruppe tildeling** (`app/selectGroup.tsx`) — en kategori tre bygget fra `serviceTime.groups`, med alder/klasse-berettigete rom fremhevet og uberettigede dunst bak en stab bekreftelse (se [Alder/klasse berettigelse](#agegrade-eligibility-kiosk-side)); plukking av et rom skriver en `{ session: { serviceTimeId, groupId } }` visitSession inn i den persons ventende besøk (`src/helpers/VisitSessionHelper.ts`). "Ingen" sletter det.
-4. **Kompletter** (`app/checkinComplete.tsx`) — `POST /attendance/visits/checkin` med `pendingVisits` (hver stemplet med sin `checkinType`), så utskrifter etikett hvis en skriver er konfigurert og auto-returnerer til lookup. En `409` kapasitets respons viser det navngitte fulle/lukkete rom; et forhold advarsel tilbyr en stab bekreftelse som gjeninnleverer med `acknowledgeWarnings=true`.
+1. **Oppslag** (`app/lookup.tsx`) — søk etter telefon (`GET /membership/people/search/phone?number=`, siste 4 sifre eller fullt nummer) eller etter navn (`GET /membership/people/search?term=`). Å velge et treff laster husholdningen (`GET /membership/people/household/{householdId}`) og eksisterende besøk (`GET /attendance/visits/checkin`), og forhåndsutfyller `pendingVisits` med forrige ukes valg.
+2. **Husholdningsgjennomgang** (`app/household.tsx`, `src/components/MemberList.tsx`) — hver medlemsrad viser en allerede-innsjekket-merking, allergi-/`nametagNotes`-merking, og deres nåværende romchips. Å utvide et medlem lister hver tjenestetid med en romknapp pluss Medlem-/Gjest-/Frivillig-innsjekkingstype-chips (`MemberServiceTimes.tsx`).
+3. **Gruppetildeling** (`app/selectGroup.tsx`) — et kategoritre bygget fra `serviceTime.groups`, med alders-/klassetrinnsberettigede rom fremhevet og ikke-berettigede nedtonet bak en ansattbekreftelse (se [Alders-/klassetrinnsberettigelse](#agegrade-eligibility-kiosk-side)); å velge et rom skriver en `{ session: { serviceTimeId, groupId } }`-visitSession inn i den personens ventende besøk (`src/helpers/VisitSessionHelper.ts`). "Ingen" fjerner den.
+4. **Fullfør** (`app/checkinComplete.tsx`) — `POST /attendance/visits/checkin` med `pendingVisits` (hver stemplet med sin `checkinType`), skriver deretter ut etiketter hvis en skriver er konfigurert, og går automatisk tilbake til oppslag. Et `409`-kapasitetssvar viser det navngitte fulle/lukkede rommet; en forholdsadvarsel tilbyr en ansattbekreftelse som sender inn på nytt med `acknowledgeWarnings=true`.
 
-**Sjekking ut** skjermen (`app/checkout.tsx`) godtar 4-tegns sikkerhetskoden gjennom en auto-fokusert innsetting — så USB/Bluetooth tastatur-kile strekkode skannere fungerer uten kamera — eller en on-skjerm tastatur bruker samme alfabet, auto-innlegge på 4 tegn. Det slår opp koden, viser barna som blir plukket opp, og presenterer husholdningen **betrodde hentet personer** som trykbar kort sammen husholdning voksne foto grid (pluss en "Annen" fri-tekst alternativ som er fuzzy-sjekket mot ikke-autorisert navn — se [Betrodd og ikke-autorisert hentet](#trusted-and-not-authorized-pickup)), så poster `POST /attendance/visits/checkout` med hentet persons navn/id. I bemanne modus skjermen også tilbyr **Send forelder** (`POST /attendance/checkin/page`) og en **sikkerhetsetikett omutskrift** — `reprint()` gjenoppbygger familiens etikett med `LabelHelper.getAllLabelsFor(...)` og fôr dem gjennom samme `PrintUI` rørledning som innsjekking.
+**Utsjekkings**-skjermen (`app/checkout.tsx`) godtar den 4-tegns sikkerhetskoden gjennom et auto-fokusert innfelt — slik at USB-/Bluetooth-tastatur-emulerende strekkodelesere fungerer uten kamera — eller et skjermtastatur som bruker samme alfabet, og sender automatisk inn ved 4 tegn. Den slår opp koden, viser barna som hentes, og presenterer husholdningens **betrodde hentepersoner** som trykkbare kort ved siden av et bildenett av husholdningens voksne (pluss et "Annet"-fritekstalternativ som fuzzy-sjekkes mot ikke-autoriserte navn — se [Betrodd og ikke-autorisert henting](#trusted-and-not-authorized-pickup)), og poster deretter `POST /attendance/visits/checkout` med henterens navn/id. I bemannet modus tilbyr skjermen også **Varsle en forelder** (`POST /attendance/checkin/page`) og en **sikkerhetsetikett-omutskrift** — `reprint()` bygger familiens etiketter på nytt med `LabelHelper.getAllLabelsFor(...)` og mater dem gjennom den samme `PrintUI`-pipelinen som innsjekking.
 
-Stasjon personlighet er en AsyncStorage flagg `@StationMode` (`"self"` | `"manned"`, slått i `app/adminSettings.tsx`). Bemanne modus legger til sjekking ut innsetting på lookup skjermen og per-medlem profil redigering (`POST /membership/people`) fra husholdnings skjermen. Kiosk herding er innebygd: en valgfri PIN (`app/setPin.tsx`, `src/components/PinEntryModal.tsx`) porter admin og skriver skjermer, admin skjermen åpner bare via 7 raske trykk på header logo, og en lat attraksjon skjerm (`src/hooks/useInactivityTimer.ts`) tar over mellom familier.
+Stasjonens personlighet er et AsyncStorage-flagg `@StationMode` (`"self"` | `"manned"`, byttes i `app/adminSettings.tsx`). Bemannet modus legger til utsjekkingsinngangen på oppslagsskjermen og redigering av per-medlem-profil (`POST /membership/people`) fra husholdningsskjermen. Kioskherding er innebygd: en valgfri PIN-kode (`app/setPin.tsx`, `src/components/PinEntryModal.tsx`) sperrer admin- og skriverskjermene, adminskjermen åpnes kun via 7 raske trykk på header-logoen, og en inaktiv fangeskjerm (`src/hooks/useInactivityTimer.ts`) tar over mellom familier.
 
 ## Selvinnsjekking (B1App)
 
-Medlemmer sjekk i fra b1.church portalen på `/mobile/checkin` skjermen (rutert av `B1App/src/app/[sdSlug]/mobile/components/ScreenRouter.tsx` til `screens/CheckinPage.tsx`). Det krever en innlogget bruker og går samme fire trinn som kiosken — tjenester → husholdning → grupper → kompletter — mot identiske endepunkter, med tilstand som holdes i `B1App/src/helpers/CheckinHelper.ts`. Forskjellene fra kiosken: husholdningen kommer fra den innloggede brukeren egen `householdId` (ingen søk trinn), og flyten ender på en bekreftelse skjerm — ingen sikkerhetskode display og ingen etikett utskrift. Typer og `ApiHelper`/`ArrayHelper` kommer fra `@churchapps/helpers` og `@churchapps/apphelper`; ingen React komponenter blir delt med B1Admin.
+Medlemmer sjekker inn fra b1.church-portalen på `/mobile/checkin`-skjermen (rutet av `B1App/src/app/[sdSlug]/mobile/components/ScreenRouter.tsx` til `screens/CheckinPage.tsx`). Det krever en innlogget bruker og går gjennom de samme fire stegene som kiosken — tjenester → husholdning → grupper → fullfør — mot identiske endepunkter, med tilstand holdt i `B1App/src/helpers/CheckinHelper.ts`. Forskjellene fra kiosken: husholdningen kommer fra den innloggede brukerens egen `householdId` (ikke noe søketrinn), og det finnes ingen etikettutskrift — i stedet viser fullføringsskjermen partiets sikkerhetskode som en QR-kode (`qrcode.react`) med en hint om å "vise dette på en innsjekkingsstasjon". Hvis husholdningen allerede er sjekket inn når siden lastes, viser en "Vis innsjekkingskode"-knapp QR-koden på nytt fra det eksisterende besøkets `securityCode`. Innsjekkingen registreres umiddelbart ved innsending (det finnes ingen ventende tilstand); QR-koden driver kun etikettutskrift på kiosken.
+
+**Telefon-til-kiosk-etikettutskrift** (`B1Checkin/app/scan.tsx`, nås fra "Skann kode"-knappen på oppslagsskjermen): kiosken åpner en `expo-camera` `CameraView` (frontkamera som standard, kan snus) som skanner etter QR-koder. En skannet nyttelast godtas når den er en ren 4-tegns kode i sikkerhetskode-alfabetet, slik at både B1App-QR-koden og en utskrevet etiketts QR-blokk fungerer. Skjermen følger deretter samme sti som utsjekkings-omutskrift — `GET /attendance/visits/code/{code}` → `GET /membership/people/ids` → `LabelHelper.getAllLabelsFor(visits, people, code)` → `PrintUI` — og går tilbake til oppslag. Ingen oppmøteskriving skjer ved skanningstidspunktet; kun etiketter. Koder uten aktive besøk, stasjoner uten skriver, og grupper uten etiketter viser hver en toast og går tilbake til oppslag.
+
+Typer og `ApiHelper`/`ArrayHelper` kommer fra `@churchapps/helpers` og `@churchapps/apphelper`; ingen React-komponenter deles med B1Admin.
 
 ## Admin-side oppmøte (B1Admin)
 
-- **Oppsett** — `/attendance` (`B1Admin/src/attendance/AttendancePage.tsx`) gjengivelse strukturen tre og oppretter tjenester (`ServiceEdit.tsx`) og tjeneste tider (`ServiceTimeEdit.tsx`). Campus data kommer fra medlemskap via `useCampuses()` krok.
-- **Manuelt oppmøte** lever på gruppenes side, ikke oppmøte seksjonen: `B1Admin/src/groups/components/GroupSessionsTab.tsx` oppretter sesjoner (`POST /attendance/sessions`) og markerer personer til stede via `POST /attendance/visitsessions/log`, som finner-eller-oppretter besøket for den persons sesjon. Gruppe ledere kan registrere oppmøte for deres egne grupper uten `attendance.edit` tillatelse — kontrollere sjekk `au.leaderGroupIds`.
-- **Rapportering** — oppmøte trend og gruppe oppmøte er server-definert rapporter (`B1Admin/src/components/reporting/ReportWithFilter.tsx` mot ReportingApi); per-persons historie er `GET /attendance/attendancerecords?personId=` (`B1Admin/src/people/components/PersonAttendance.tsx`).
+- **Oppsett** — `/attendance` (`B1Admin/src/attendance/AttendancePage.tsx`) gjengir strukturtreet og oppretter tjenester (`ServiceEdit.tsx`) og tjenestetider (`ServiceTimeEdit.tsx`). Campus-data kommer fra medlemskap via `useCampuses()`-kroken.
+- **Manuelt oppmøte** ligger på Grupper-siden, ikke i oppmøteseksjonen: `B1Admin/src/groups/components/GroupSessionsTab.tsx` oppretter sesjoner (`POST /attendance/sessions`) og markerer personer som til stede via `POST /attendance/visitsessions/log`, som finner eller oppretter besøket for den personen og sesjonen. Gruppeledere kan registrere oppmøte for sine egne grupper uten `attendance.edit`-tillatelsen — controllerne sjekker `au.leaderGroupIds`.
+- **Rapportering** — oppmøtetrend og gruppeoppmøte er server-definerte rapporter (`B1Admin/src/components/reporting/ReportWithFilter.tsx` mot ReportingApi); per-persons historikk er `GET /attendance/attendancerecords?personId=` (`B1Admin/src/people/components/PersonAttendance.tsx`).
 
-## Etikett utskrift
+## Etikettutskrift
 
 ### Maler og designeren
 
-Kirker designer sine egne etiketter i B1Admin på `/mobile/checkin/labels` (`B1Admin/src/attendance/LabelsPage.tsx` + `components/LabelEditor.tsx`, nådd fra innsjekking innstillings siden). En mal er en `labelTemplates` rad hvis `content` er en JSON rekke av blokker — `text`, `field`, `barcode`, `qrcode`, eller `box` — hver plassert i prosent koordinater med skrift, justering, symbologi (`code39`/`code128`/`qr`), og valgfri synlighets betingelser (f.eks. bare gjengivelse allergi boksen når `person.nametagNotes` er ikke-tom). To `labelType`s eksisterer: `nametag` (en per innsjekket person; felt som `person.displayName`, `sessions`, `securityCode`) og `pickup` (en per familie; felt som `children`, `childrenAllergies`). Serveren håndhever en enkelt standard per type per kirke (`LabelTemplateController.save`). Designeren leveringer starter maler speilet kiosk samlet etiketter og forhåndsvisninger mot utvalg data.
+Kirker designer sine egne etiketter i B1Admin på `/mobile/checkin/labels` (`B1Admin/src/attendance/LabelsPage.tsx` + `components/LabelEditor.tsx`, nås fra innsjekkingsinnstillingssiden). En mal er en `labelTemplates`-rad hvis `content` er et JSON-array av blokker — `text`, `field`, `barcode`, `qrcode`, eller `box` — hver plassert i prosentkoordinater med skrift, justering, symbologi (`code39`/`code128`/`qr`), og valgfrie synlighetsbetingelser (f.eks. bare gjengi allergiboksen når `person.nametagNotes` er ikke-tom). To `labelType`-er finnes: `nametag` (én per innsjekket person; felt som `person.displayName`, `sessions`, `securityCode`) og `pickup` (én per familie; felt som `children`, `childrenAllergies`). Serveren håndhever én standard per type per kirke (`LabelTemplateController.save`). Designeren leveres med startmaler som speiler kioskens innebygde etiketter, og forhåndsviser mot eksempeldata.
 
-### Gjengivelse og utskrift på kiosken
+### Rendering og utskrift på kiosken
 
-Ved innsjekking fullføring, `B1Checkin/src/helpers/LabelHelper.ts` bestemmer hva som skal skrives ut fra gruppe flagg på hver ventende besøk: navnetiketter for `printNametag` grupper, pluss en familie hentelabel hvis noen besøk hit en `parentPickup` gruppe. Sikkerhetskoden fra innsjekkings respons går på barn navnetiketter og hentelabel; voksen navnetiketter skrive uten en kode. Hvis kirken har maler, `LabelRenderer` (`src/helpers/LabelRenderer.ts`) slår blokker + et felt kontekst inn i en frittstående HTML dokument; ellers samlet HTML etiketter i `B1Checkin/assets/labels/` blir brukt med placeholder erstatning.
+Ved fullført innsjekking bestemmer `B1Checkin/src/helpers/LabelHelper.ts` hva som skal skrives ut, basert på gruppeflaggene på hvert ventende besøk: navnelapper for `printNametag`-grupper, pluss én familiehentelapp hvis noen av besøkene traff en `parentPickup`-gruppe. Sikkerhetskoden fra innsjekkingssvaret havner på barns navnelapper og hentelappen; voksnes navnelapper skrives ut uten kode. Hvis kirken har maler, gjør `LabelRenderer` (`src/helpers/LabelRenderer.ts`) blokker + en feltkontekst om til et frittstående HTML-dokument; ellers brukes pakkede HTML-etiketter i `B1Checkin/assets/labels/` med plassholder-erstatning.
 
-Strekkoder blir generert som inline SVG av rent-TypeScript kodingtakere i `B1Checkin/src/helpers/barcode.ts` — Kode 39 mønstre tabeller og Kode 128 (kode sett B med mod-103 sjeksum) bredde tabeller, pluss QR via `qrcode` pakken. **Disse kodingtakerne blir bevisst duplisert i B1Admin** (`LabelEditor.tsx` inline samme tabeller, notert i en kode kommentar) så designer forhåndsvisninger er piksel-tro til kiosk utdata; en endring til en må spiegles i den andre.
+Strekkoder genereres som inline SVG av rene TypeScript-kodere i `B1Checkin/src/helpers/barcode.ts` — Code 39-mønstertabeller og Code 128 (kodesett B med mod-103-sjekksum) breddetabeller, pluss QR via `qrcode`-pakken. **Disse koderne er bevisst duplisert i B1Admin** (`LabelEditor.tsx` har de samme tabellene inline, notert i en kodekommentar) slik at designerens forhåndsvisninger er pikselnøyaktige mot kioskens utdata; en endring i én må speiles i den andre.
 
-Print rørledningen (`src/components/PrintUI.tsx`) gjengivelse hver HTML etikett i en `WebView`, fanger det til JPG via `react-native-view-shot`, og hender bilde URIs til den innfødt **printer-helper** Expo modul (`B1Checkin/modules/printer-helper/`). Modulen avslører `scan()`, `checkInit()`, `printUris()`, og status hendelser, med en leverandør per merke på begge plattformer:
+Utskriftspipelinen (`src/components/PrintUI.tsx`) gjengir hver HTML-etikett i en `WebView`, fanger den til JPG via `react-native-view-shot`, og gir bilde-URI-ene videre til den native **printer-helper**-Expo-modulen (`B1Checkin/modules/printer-helper/`). Modulen eksponerer `scan()`, `checkInit()`, `printUris()`, og statushendelser, med én leverandør per merke på begge plattformer:
 
-| Merke | Android | iOS | Noter |
+| Merke | Android | iOS | Notater |
 |-------|---------|-----|-------|
-| Brother | `BrotherProvider.kt` (Brother utskrift SDK) | `BrotherProvider.swift` (`BRLMPrinterKit.xcframework`) | QL-serier nettverks skrivere (QL-800/810W/820NWB/1100/1110NWB…), die-cut 29×90 etiketter, den anbefale standard |
-| Zebra | `ZebraProvider.kt` (Link-OS SDK) | `ZebraProvider.swift` + `ZebraBridge` | Nettverks oppdagelse + TCP/ZPL bilde utskrift |
+| Brother | `BrotherProvider.kt` (Brother-utskrifts-SDK) | `BrotherProvider.swift` (`BRLMPrinterKit.xcframework`) | QL-serie nettverksskrivere (QL-800/810W/820NWB/1100/1110NWB…), formkuttede 29×90-etiketter, den anbefalte standarden |
+| Zebra | `ZebraProvider.kt` (Link-OS-SDK) | `ZebraProvider.swift` + `ZebraBridge` | Nettverksoppdagelse + TCP/ZPL-bildeutskrift |
 
-Skriver valg lever på `app/printers.tsx` (nettverks skanning returnerer `brand~model~ip` poster; valget vedvarer til AsyncStorage), og `src/helpers/PrinterLog.ts` beholder en on-enhet diagnostisk log som vises gjennom en live status prikk i kiosk header.
+Skrivervalg ligger på `app/printers.tsx` (nettverksskanning returnerer oppføringer på formen `brand~model~ip`; valget lagres i AsyncStorage), og `src/helpers/PrinterLog.ts` holder en diagnostisk logg på enheten som vises gjennom en live statusprikk i kioskens header.
 
-## Gjestregistrering
+## Gjesteregistrering
 
-To stier oppretter en persons mid-innsjekking:
+To stier oppretter en person midt i innsjekkingen:
 
-- **På kiosken** — husholdning skjermen "Legg til gjest" åpner `B1Checkin/app/addGuest.tsx`, som først søker `GET /membership/people/search?term=` for en eksisterende ikke-medlem samsvar og ellers oppretter en med `POST /membership/people`, vedlagt nåværende husholdning. Gjesten så flyter gjennom gruppe tildeling som noen medlem.
-- **Selvbetjent via QR** — når kirkens innstilling `enableQRGuestRegistration` er på (konfigurert i B1Admin innsjekking innstillinger, lest fra `GET /membership/settings/public/{churchId}`), kiosk lookup skjermen viser en QR kode koblende til `https://{subdomain}.b1.church/guest-register?serviceId=`. At B1App side (`src/app/[sdSlug]/(public)/guest-register/page.tsx`) lar en besøk familie registrere seg selv på deres egen telefon gjennom anonym `POST /membership/people/guest-register` endepunkt, holde kiosk linjen bevegelse.
+- **På kiosken** — "Legg til gjest" på husholdningsskjermen åpner `B1Checkin/app/addGuest.tsx`, som først søker `GET /membership/people/search?term=` etter et eksisterende ikke-medlemstreff og ellers oppretter en med `POST /membership/people`, knyttet til gjeldende husholdning. Gjesten går deretter gjennom gruppetildeling som ethvert medlem.
+- **Selvbetjening via QR** — når kirkeinnstillingen `enableQRGuestRegistration` er på (konfigurert i B1Admins innsjekkingsinnstillinger, lest fra `GET /membership/settings/public/{churchId}`), viser kioskens oppslagsskjerm en QR-kode som lenker til `https://{subdomain}.b1.church/guest-register?serviceId=`. Den B1App-siden (`src/app/[sdSlug]/(public)/guest-register/page.tsx`) lar en besøkende familie registrere seg selv på sin egen telefon gjennom det anonyme `POST /membership/people/guest-register`-endepunktet, slik at kiosk-køen holder tritt.
 
 ## Relaterte sider
 
-- [Oppmøte endepunkter](../api/endpoints/attendance) -- Full REST flate for campuser, tjenester, sesjoner, besøk, og besøk sesjoner
-- [Medlemskaps endepunkter](../api/endpoints/membership) -- Personer, husholdninger, og grupper
-- [Webhooks](../api/webhooks) -- Den `session.created`, `attendance.recorded`, og `attendance.checkout` hendelser
-- [Modul struktur](../api/module-structure) -- Hvordan oppmøte modulen er organisert server-side
+- [Oppmøte-endepunkter](../api/endpoints/attendance) -- Full REST-flate for campuser, tjenester, sesjoner, besøk og besøkssesjoner
+- [Medlemskaps-endepunkter](../api/endpoints/membership) -- Personer, husholdninger og grupper
+- [Webhooks](../api/webhooks) -- Hendelsene `session.created`, `attendance.recorded` og `attendance.checkout`
+- [Modulstruktur](../api/module-structure) -- Hvordan oppmøtemodulen er organisert server-side

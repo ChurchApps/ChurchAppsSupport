@@ -1,41 +1,41 @@
 ---
-title: "Übersicht von B1 Admin"
+title: "B1 Admin Übersicht"
 ---
 
-# Übersicht von B1 Admin
+# B1 Admin Übersicht
 
 <div class="article-intro">
 
-B1 Admin ist Ihr Kirchenverwaltungs-Dashboard. Es bietet Tools zur Verwaltung aller Aspekte der Kirchenarbeit – von Mitgliederverzeichnissen und Spenden bis zur Website-Gestaltung und Live-Streaming – alles an einem Ort.
+B1 Admin ist dein Kirchenverwaltungs-Dashboard. Es bietet Tools zum Verwalten aller Aspekte deiner Kirchenvorgänge - vom Mitgliederverzeichnis und Spenden bis zum Website-Aufbau und Live-Streaming - alles an einem Ort.
 
 </div>
 
 ## Erste Schritte
 
-1. Öffnen Sie Ihren Browser und navigieren Sie zu [admin.b1.church](https://admin.b1.church)
-2. Melden Sie sich mit Ihrem Benutzernamen und Passwort an
-3. Sie landen auf dem **Dashboard**, das einen Überblick über Ihre Kirchendaten sowie **Schnellaktionen** für häufige Aufgaben wie Hinzufügen von Personen, Erstellen von Gruppen, Erfassung von Spenden und mehr bietet
+1. Öffne deinen Browser und gehe zu [admin.b1.church](https://admin.b1.church)
+2. Melden dich mit deinem Benutzernamen und Passwort an
+3. Du landest auf dem **Dashboard**, das einen Überblick über deine Kirchendaten bietet, zusammen mit **Schnellzugriffen** für häufige Aufgaben wie das Hinzufügen von Personen, das Erstellen von Gruppen, das Erfassen von Spenden und mehr
 
 :::tip
-Neu bei B1 Admin? Beginnen Sie mit der [Einführung](./introduction) für eine Video-Anleitung, und besuchen Sie dann [Einstellungen](./settings/), um Ihre Kircheninformationen zu konfigurieren und Ihr Team einzuladen.
+Neu in B1 Admin? Beginne mit der [Einführung](./introduction) für eine Videoanleitung und besuche dann [Einstellungen](./settings/), um deine Kircheninformationen zu konfigurieren und dein Team einzuladen.
 :::
 
-## Hauptfunktionen
+## Wichtige Funktionen
 
-- **[Personen](./people/)** – Verwalten Sie Ihr Kirchenverzeichnis, fügen Sie Mitglieder hinzu, bearbeiten Sie Daten in großen Mengen und verfolgen Sie Haushalte
-- **[Gruppen](./groups/)** – Erstellen und organisieren Sie Kirchengruppen mit Beitrittsanfragen und Mitgliederverwaltung
-- **[Teilnahme](./attendance/)** – Richten Sie Standorte, Gottesdienste und Teilnahmeverfolgung ein
-- **[Spenden](./donations/)** – Erfassen Sie Gaben in mehreren Währungen, verwalten Sie Fonds und erstellen Sie Spendenbescheinigungen
-- **[Dienste](./serving/)** – Koordinieren Sie Freiwillige, erstellen Sie Dienstpläne, verwalten Sie Aufgaben und führen Sie Personen durch schrittweise Workflows
-- **[Formulare](./forms/)** – Erstellen Sie benutzerdefinierte Formulare für Registrierungen und Datenerfassung
-- **[Berichte](./reports/)** – Sehen Sie Geburtstags-, Teilnahme- und Spendenberichte
-- **[Website](./website/)** – Erstellen und verwalten Sie Ihre Kirchenwebsite mit benutzerdefinierten Navigationsstilen
-- **[Predigten](./sermons/)** – Verwalten Sie Ihre Predigtensammlung und Live-Streaming
-- **[Kalender](./calendars/)** – Erstellen Sie kuratierte Kalender, verwalten Sie Raum- und Ressourcenbuchungen und zeigen Sie Verfügbarkeit an
-- **[Einstellungen](./settings/)** – Konfigurieren Sie Kircheninformationen, Rollen, Berechtigungen und benutzerdefinierte Personenfelder
+- **[Personen](./people/)** - Verwalte dein Kirchenverzeichnis, füge Mitglieder hinzu, bearbeite Daten in Masse, verfolge Haushalte
+- **[Gruppen](./groups/)** - Erstelle und organisiere Kirchengruppen mit Beitrittsbierungen und Mitgliederverwaltung
+- **[Anwesenheit](./attendance/)** - Richte Standorte, Gottesdienstzeiten ein und verfolge die Anwesenheit
+- **[Spenden](./donations/)** - Erfasse Spenden in mehreren Währungen, verwalte Fonds, generiere Aussagen
+- **[Dienst](./serving/)** - Koordiniere Freiwillige, erstelle Servicepläne, verwalte Aufgaben und bewege Menschen durch schrittweise Workflows
+- **[Formulare](./forms/)** - Erstelle benutzerdefinierte Formulare für Registrierungen und Datenerfassung
+- **[Berichte](./reports/)** - Sehen Sie Geburtstag-, Anwesenheits- und Spendenberichte
+- **[Website](./website/)** - Erstelle und verwalte deine Kirchenwebsite mit benutzerdefinierten Navigationsstilen
+- **[Predigten](./sermons/)** - Verwalte deine Predigten-Bibliothek und Live-Streaming
+- **[Kalender](./calendars/)** - Erstelle kuratierte Kalender, verwalte Raum-/Ressourcenbuchungen und sehe Verfügbarkeit
+- **[Einstellungen](./settings/)** - Konfiguriere Kircheninformationen, Rollen, Berechtigungen und benutzerdefinierte Personenfelder
 
 :::info
-Klicken Sie auf das Fragezeichen-Symbol in der oberen rechten Ecke einer beliebigen Seite, um schnell auf Hilfe und Dokumentation zuzugreifen.
+Klicke auf das Fragezeichensymbol in der oberen rechten Ecke einer beliebigen Seite, um schnellen Zugriff auf Hilfe und Dokumentation zu erhalten.
 :::
 
-Bei Fragen wenden Sie sich an [support@churchapps.org](mailto:support@churchapps.org).
+Für Unterstützung sende eine E-Mail an [support@churchapps.org](mailto:support@churchapps.org).

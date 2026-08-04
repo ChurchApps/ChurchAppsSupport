@@ -6,95 +6,95 @@ title: "चेक-इन सुरक्षा"
 
 <div class="article-intro">
 
-B1 में चेक-इन के लिए बाल-सुरक्षा नियंत्रणों का एक सेट शामिल है: कमरे की क्षमता की सीमाएं और स्वयंसेवक-से-बाल अनुपात, kiosk पर आयु और ग्रेड guidance, चेक-इन types जो सदस्यों, अतिथियों, और स्वयंसेवकों को distinguish करते हैं, और एक household के लिए trusted-pickup list जो check-out पर verified है। यह पृष्ठ covers करता है कि B1 Admin में प्रत्येक safety feature को कैसे configure करें।
+B1 में चेक-इन के लिए बाल-सुरक्षा नियंत्रणों का एक सेट शामिल है: कमरे की क्षमता सीमाएं और स्वयंसेवक-से-बच्चा अनुपात, कियोस्क पर आयु और ग्रेड मार्गदर्शन, सदस्यों, अतिथियों, और स्वयंसेवकों में अंतर करने वाले चेक-इन प्रकार, और प्रति परिवार एक विश्वसनीय-पिकअप सूची जिसे चेक-आउट पर सत्यापित किया जाता है। यह पेज B1 Admin में इनमें से हर सुरक्षा सुविधा को कॉन्फ़िगर करने का तरीका बताता है।
 
 </div>
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- अपनी [attendance structure](setup.md) और [check-in kiosks](check-in.md) को सेटअप करें
-- Rooms [groups](../groups/creating-groups.md) हैं जो service times से linked हैं -- नीचे दिए गए safety settings group पर रहती हैं
-- Page-a-parent और emergency broadcast को एक connected texting provider की आवश्यकता है ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream), या Mutual Ministry)
+- अपना [उपस्थिति ढांचा](setup.md) और [चेक-इन कियोस्क](check-in.md) सेट अप करें
+- कमरे सेवा समयों से जुड़े [समूह](../groups/creating-groups.md) होते हैं — नीचे दी गई सुरक्षा सेटिंग्स समूह पर रहती हैं
+- पेज-अ-पेरेंट और आपातकालीन प्रसारण के लिए एक कनेक्टेड टेक्स्टिंग प्रदाता आवश्यक है ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream), या Mutual Ministry)
 
 </div>
 
-## कमरे की क्षमता और एक कमरे को बंद करना
+## कमरे की क्षमता और कमरा बंद करना
 
-प्रत्येक check-in room (group) अपनी स्वयं की सीमाओं को enforce कर सकता है। Group को खोलें, सेटिंग्स को edit करने के लिए **pencil icon** को click करें, और **Check-In Capacity** section को खोजें:
+प्रत्येक चेक-इन रूम (समूह) अपनी स्वयं की सीमाएं लागू कर सकता है। समूह खोलें, इसकी सेटिंग्स संपादित करने के लिए **पेंसिल आइकन** पर क्लिक करें, और **Check-In Capacity** अनुभाग खोजें:
 
-- **Capacity** -- अधिकतम संख्या लोगों की जो एक बार इस कमरे में check in हो सकते हैं। जब कमरा भरा हो, इसे चेक-इन blocked है और kiosk भरे हुए कमरे को नाम देता है।
-- **Guest Capacity** -- कमरे कितने guests को रख सकता है इसकी एक optional अलग cap।
-- **Closed for Check-In** -- इस कमरे को सभी check-ins को तुरंत रोकने के लिए **Yes** पर सेट करें (उदाहरण के लिए, जब एक class cancel हो या कमरा unavailable हो)। Check-outs अभी भी काम करते हैं।
+- **Capacity** -- एक बार में इस कमरे में चेक-इन किए जा सकने वाले लोगों की अधिकतम संख्या। जब कमरा भर जाता है, तो उसमें चेक-इन अवरुद्ध हो जाता है और कियोस्क भरे हुए कमरे का नाम बताता है।
+- **Guest Capacity** -- कमरा कितने अतिथियों को समायोजित कर सकता है इस पर एक वैकल्पिक अलग सीमा।
+- **Closed for Check-In** -- इस कमरे में सभी चेक-इन तुरंत रोकने के लिए **Yes** पर सेट करें (उदाहरण के लिए, जब कोई कक्षा रद्द हो या कमरा उपलब्ध न हो)। चेक-आउट फिर भी काम करते रहते हैं।
 
 ## स्वयंसेवक अनुपात
 
-Group पर same **Check-In Capacity** section में staffing rules शामिल हैं:
+समूह पर वही **Check-In Capacity** अनुभाग स्टाफिंग नियम भी शामिल करता है:
 
-- **Children per Volunteer** -- अधिकतम संख्या बच्चों की कि प्रत्येक checked-in स्वयंसेवक cover कर सकता है (उदाहरण के लिए 5 का मतलब है एक स्वयंसेवक प्रति पाँच बच्चों के लिए)।
-- **Minimum Volunteers** -- smallest संख्या स्वयंसेवकों की जो check in होने चाहिए इससे पहले कि बच्चे कमरे में check in हो सकें।
+- **Children per Volunteer** -- प्रत्येक चेक-इन किए गए स्वयंसेवक द्वारा संभाले जा सकने वाले बच्चों की अधिकतम संख्या (उदाहरण के लिए, 5 का मतलब है पांच बच्चों पर एक स्वयंसेवक)।
+- **Minimum Volunteers** -- बच्चों के कमरे में चेक-इन करने से पहले चेक-इन होने वाले स्वयंसेवकों की सबसे छोटी संख्या।
 
-स्वयंसेवक इन नियमों की ओर count करते हैं जब वे kiosk पर **Volunteer** type के साथ check in करते हैं ([Check-In Types](#check-in-types) नीचे देखें)।
+जब स्वयंसेवक कियोस्क पर **Volunteer** प्रकार के साथ चेक-इन करते हैं तो वे इन नियमों में गिने जाते हैं (नीचे [चेक-इन प्रकार](#check-in-types) देखें)।
 
 ### Warn बनाम Block चुनना
 
-कितनी कड़ाई से अनुपातों को enforce किया जाता है यह एक church-wide सेटिंग है:
+अनुपातों को कितनी सख्ती से लागू किया जाता है यह एक चर्च-व्यापी सेटिंग है:
 
-1. B1 Admin में, **Settings > Manage Church** पर जाएं और **Check-In** tile को खोलें।
+1. B1 Admin में, **Settings > Manage Church** पर जाएं और **Check-In** टाइल खोलें।
 2. **Volunteer Ratio Enforcement** सेट करें:
-   - **Warn (allow with confirmation)** -- Kiosk एक warning दिखाता है जब एक कमरा ratio से ऊपर हो या अपने minimum volunteers से नीचे हो, और एक staff member anyway proceed करने की confirm कर सकते हैं। यह default है।
-   - **Block (prevent check-in)** -- कमरे को check-in refuse किया जाता है जब तक पर्याप्त स्वयंसेवक check in न हों।
+   - **Warn (allow with confirmation)** -- जब कोई कमरा अनुपात से अधिक हो या अपने न्यूनतम स्वयंसेवकों से कम हो तो कियोस्क एक चेतावनी दिखाता है, और स्टाफ सदस्य फिर भी आगे बढ़ने की पुष्टि कर सकता है। यह डिफ़ॉल्ट है।
+   - **Block (prevent check-in)** -- जब तक पर्याप्त स्वयंसेवक चेक-इन न हों, कमरे में चेक-इन से इनकार कर दिया जाता है।
 
 :::info
-Capacity और Closed for Check-In हमेशा hard limits हैं -- warn/block choice केवल स्वयंसेवक अनुपातों पर लागू होता है।
+Capacity और Closed for Check-In हमेशा हार्ड सीमाएं होती हैं — warn/block का चुनाव केवल स्वयंसेवक अनुपातों पर लागू होता है।
 :::
 
-## चेक-इन Types
+## चेक-इन प्रकार
 
-हर check-in records करता है कि व्यक्ति एक **Member**, **Guest**, या **Volunteer** है। Type को kiosk household screen पर chips के साथ चुना जाता है (Member default है)। Types safety rules को feed करते हैं -- स्वयंसेवक ratio coverage प्रदान करते हैं, और अतिथि कमरे के Guest Capacity के विरुद्ध count करते हैं।
+हर चेक-इन यह दर्ज करता है कि व्यक्ति **Member**, **Guest**, या **Volunteer** है। यह प्रकार कियोस्क के हाउसहोल्ड स्क्रीन पर चिप्स के साथ चुना जाता है (Member डिफ़ॉल्ट है)। प्रकार सुरक्षा नियमों में योगदान देते हैं — स्वयंसेवक अनुपात कवरेज प्रदान करते हैं, और अतिथि कमरे की Guest Capacity के खिलाफ गिने जाते हैं।
 
-## आयु और ग्रेड कमरे की Guidance
+## आयु और ग्रेड कमरा मार्गदर्शन
 
-आप प्रत्येक कमरे को आयु या ग्रेड bounds दे सकते हैं ताकि kiosk families को appropriate rooms की ओर guide करे:
+आप प्रत्येक कमरे को आयु या ग्रेड सीमाएं दे सकते हैं ताकि कियोस्क परिवारों को उपयुक्त कमरों तक मार्गदर्शन कर सके:
 
-- Group की सेटिंग्स पर, minimum/maximum age (years और months) और/या ग्रेड कमरे के लिए set करने के लिए **Age & Grade** section का उपयोग करें।
-- Kiosk पर, एक बाल के लिए qualify करने वाले कमरे को highlight किया जाता है और कमरे जो वह नहीं करते हैं dimmed हैं। एक dimmed कमरे को अभी भी एक staff confirmation के साथ choose किया जा सकता है -- guidance कभी नहीं hard-blocks।
+- समूह की सेटिंग्स पर, कमरे के लिए न्यूनतम/अधिकतम आयु (वर्ष और महीने) और/या ग्रेड सेट करने के लिए **Age & Grade** अनुभाग का उपयोग करें।
+- कियोस्क पर, जिन कमरों के लिए बच्चा योग्य है वे हाइलाइट किए जाते हैं और जिनके लिए वह योग्य नहीं है वे धुंधले किए जाते हैं। एक धुंधला कमरा फिर भी स्टाफ पुष्टि के साथ चुना जा सकता है — मार्गदर्शन कभी सख्ती से अवरुद्ध नहीं करता।
 
-Grades आपके church की **grade promotion date** पर roll over करते हैं:
+ग्रेड आपके चर्च की **ग्रेड प्रमोशन तिथि** पर आगे बढ़ते हैं:
 
-1. B1 Admin में, **Settings > Manage Church** पर जाएं और grade promotion tile को खोलें।
-2. महीना और दिन set करें जब आपका church students को promote करता है (उदाहरण के लिए, August 1)। Kiosk पर ages और grades most recent promotion date के रूप में computed हैं।
+1. B1 Admin में, **Settings > Manage Church** पर जाएं और ग्रेड प्रमोशन टाइल खोलें।
+2. वह महीना और दिन सेट करें जब आपका चर्च विद्यार्थियों को प्रमोट करता है (उदाहरण के लिए, 1 अगस्त)। कियोस्क पर आयु और ग्रेड की गणना सबसे हाल की प्रमोशन तिथि के अनुसार की जाती है।
 
-## Trusted और Not-Authorized Pickup लोग
+## विश्वसनीय और अनधिकृत पिकअप व्यक्ति
 
-प्रत्येक household उन लोगों की एक list carry कर सकता है जो -- या नहीं हैं -- अपने बच्चों को pick up करने की अनुमति दी गई है।
+प्रत्येक परिवार ऐसे लोगों की सूची रख सकता है जिन्हें उनके बच्चों को पिकअप करने की अनुमति है — या नहीं है।
 
-1. **People** में एक व्यक्ति के page को खोलें और **Pickup** card को खोजें।
-2. **Add** को click करें। एक existing व्यक्ति के लिए search करें, या **Name**, **Relationship**, और एक photo enter करके system में किसी को जोड़ें जो नहीं है।
+1. **People** में किसी व्यक्ति का पेज खोलें और **Pickup** कार्ड ढूंढें।
+2. **Add** पर क्लिक करें। किसी मौजूदा व्यक्ति को खोजें, या सिस्टम में न होने वाले किसी व्यक्ति को उनका **Name**, **Relationship**, और एक फोटो दर्ज करके जोड़ें।
 3. **Status** सेट करें:
-   - **Trusted** -- Check-out पर, यह व्यक्ति उनके photo के साथ एक tappable pickup card के रूप में दिखाई देता है, verified pickup को fast बनाते हुए।
-   - **Not Authorized** -- यदि कोई इस नाम के अंतर्गत pickup attempt करता है, kiosk एक warning के साथ check-out को block करता है। एक staff member override कर सकते हैं, और override को attendance record पर recorded किया जाता है।
+   - **Trusted** -- चेक-आउट पर, यह व्यक्ति अपनी फोटो के साथ एक टैप करने योग्य पिकअप कार्ड के रूप में दिखाई देता है, जिससे सत्यापित पिकअप तेज़ हो जाता है।
+   - **Not Authorized** -- यदि कोई इस नाम के तहत पिकअप का प्रयास करता है, तो कियोस्क एक चेतावनी के साथ चेक-आउट को अवरुद्ध कर देता है। एक स्टाफ सदस्य ओवरराइड कर सकता है, और ओवरराइड को उपस्थिति रिकॉर्ड पर दर्ज किया जाता है।
 
-Card पर एक व्यक्ति के status chip को Trusted और Not Authorized के बीच toggle करने के लिए click करें।
+Trusted और Not Authorized के बीच टॉगल करने के लिए कार्ड पर व्यक्ति की स्थिति चिप पर क्लिक करें।
 
 :::tip
-जब भी possible हो trusted pickup लोगों में photos जोड़ें -- check-out screen को photo दिखाता है ताकि स्वयंसेवक visually verify कर सकें कि person उनके सामने खड़ा है।
+जब भी संभव हो विश्वसनीय पिकअप लोगों में फोटो जोड़ें — चेक-आउट स्क्रीन फोटो दिखाती है ताकि स्वयंसेवक अपने सामने खड़े व्यक्ति को दृष्टिगत रूप से सत्यापित कर सकें।
 :::
 
-## Page-a-Parent और Emergency Broadcast
+## पेज-अ-पेरेंट और आपातकालीन प्रसारण
 
-दोनों features अपने church के connected texting provider के माध्यम से text messages भेजते हैं -- कोई built-in SMS service नहीं है, इसलिए supported providers में से एक को पहले configure किया जाना चाहिए।
+दोनों सुविधाएं आपके चर्च के कनेक्टेड टेक्स्टिंग प्रदाता के माध्यम से टेक्स्ट संदेश भेजती हैं — कोई अंतर्निहित SMS सेवा नहीं है, इसलिए समर्थित प्रदाताओं में से एक को पहले कॉन्फ़िगर किया जाना चाहिए।
 
-- **Page a parent** -- एक manned kiosk के check-out screen से, staff एक checked-in बाल के माता-पिता/guardians को text कर सकते हैं (उदाहरण के लिए, "कृपया nursery में आएं")।
-- **Emergency broadcast** -- Kiosk की admin settings से, staff selected service के लिए हर checked-in household के guardians को एक बार text कर सकते हैं। **EMERGENCY** type करके sending को confirm करने की आवश्यकता है।
+- **Page a parent** -- एक मानवयुक्त कियोस्क के चेक-आउट स्क्रीन से, स्टाफ किसी चेक-इन किए गए बच्चे के माता-पिता/अभिभावकों को टेक्स्ट कर सकता है (उदाहरण के लिए, "कृपया नर्सरी में आएं")।
+- **Emergency broadcast** -- कियोस्क की एडमिन सेटिंग्स से, स्टाफ एक साथ चयनित सेवा के लिए हर चेक-इन किए गए परिवार के अभिभावकों को टेक्स्ट कर सकता है। भेजने के लिए पुष्टि के लिए **EMERGENCY** टाइप करना आवश्यक है।
 
-लोग जिन्होंने texts को opt out किया है, या जिनके पास file पर कोई mobile number नहीं है, स्वचालित रूप से skipped हैं -- kiosk रिपोर्ट करता है कि कितने messages भेजे गए और कितने skipped किए गए।
+जिन लोगों ने टेक्स्ट से ऑप्ट-आउट किया है, या जिनके पास फ़ाइल पर कोई मोबाइल नंबर नहीं है, उन्हें स्वचालित रूप से छोड़ दिया जाता है — कियोस्क रिपोर्ट करता है कि कितने संदेश भेजे गए और कितने छोड़े गए।
 
-Kiosk-side walkthrough देखें [Check-Out & Child Safety](../../b1-checkin/check-in/checking-out) में।
+कियोस्क-साइड वॉकथ्रू [चेक-आउट और बाल सुरक्षा](../../b1-checkin/check-in/checking-out) में देखें।
 
 ## संबंधित लेख
 
-- [Check-In](check-in.md) -- kiosk setup और hardware
-- [Check-Out & Child Safety](../../b1-checkin/check-in/checking-out) -- kiosk check-out, pickup verification, और paging flows
-- [Creating Groups](../groups/creating-groups.md) -- जहां room settings रहती हैं
-- [Attendance Setup](setup.md) -- services, service times, और room assignments
+- [चेक-इन](check-in.md) — कियोस्क सेटअप और हार्डवेयर
+- [चेक-आउट और बाल सुरक्षा](../../b1-checkin/check-in/checking-out) — कियोस्क चेक-आउट, पिकअप सत्यापन, और पेजिंग फ्लो
+- [समूह बनाना](../groups/creating-groups.md) — जहां कमरे की सेटिंग्स रहती हैं
+- [उपस्थिति सेटअप](setup.md) — सेवाएं, सेवा समय, और कमरा असाइनमेंट

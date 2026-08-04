@@ -1,35 +1,36 @@
 ---
-title: "Inhaltsanbieter"
+title: "Content-Anbieter"
 ---
 
-# Inhaltsanbieter
+# Content-Anbieter
 
 <div class="article-intro">
 
-Inhaltsanbieter sind externe Dienste, die Lektionsmaterialien, Videos und Bilder fuer die Wiedergabe auf Ihrem Fernseher bereitstellen. FreePlay unterstuetzt mehrere Anbieter, sodass Sie Inhalte aus verschiedenen Quellen in einer einzigen App durchsuchen und herunterladen koennen.
+Content-Anbieter sind externe Dienste, die Lektionsmaterialien, Videos und Bilder zur Wiedergabe auf Ihrem Fernseher liefern. FreePlay unterstützt mehrere Anbieter, sodass Sie Inhalte aus verschiedenen Quellen alle in einer App durchsuchen und herunterladen können.
 
 </div>
 
-## Verfuegbare Anbieter
+## Verfügbare Anbieter
 
-FreePlay umfasst derzeit folgende Anbieter:
+FreePlay umfasst derzeit die folgenden Anbieter:
 
-- **[Lessons.church](../../lessons-church/)** - Kostenloses, quelloffenes Kinderdienst-Curriculum
-- **Bible Project** - Videos und Ressourcen zur Erforschung der Bibel
-- **SignPresenter** - Praesentations- und Beschilderungsinhalte fuer Gemeinden
-- **B1.church** - Inhalte aus Ihrer eigenen B1-Gemeindeeinrichtung
+- **[Lessons.church](../../lessons-church/)** - Kostenlose Open-Source-Lehrpläne für die Kinderarbeit
+- **Bible Project** - Videos und Materialien zur Erkundung der Bibel
+- **SignPresenter** - Präsentations- und Beschilderungsinhalte für Kirchen
+- **B1.church** - Inhalte aus Ihrer eigenen B1-Kircheneinrichtung
+- **Go Curriculum** - Lehrplan von gocurriculum.com, organisiert nach Sammlung und Lektion
 
 :::info
-Einige Anbieter werden noch hinzugefuegt. Wenn eine Anbieterkarte "Coming Soon" anzeigt, ist sie noch nicht fuer die Verbindung verfuegbar.
+Einige Anbieter werden noch hinzugefügt. Wenn eine Anbieterkarte „Demnächst verfügbar" anzeigt, ist sie noch nicht zur Verbindung verfügbar.
 :::
 
 ## Wie Anbieter funktionieren
 
-Jeder Anbieter hat seine eigene Inhaltsbibliothek, die in Ordner und Dateien organisiert ist. Sobald Sie sich mit einem Anbieter verbinden, erscheinen seine Inhalte in einem Ordnerbrowser, in dem Sie in Kategorien navigieren, Elemente auswaehlen und sie fuer die Wiedergabe herunterladen koennen.
+Jeder Anbieter hat seine eigene Content-Bibliothek, organisiert in Ordnern und Dateien. Sobald Sie sich mit einem Anbieter verbunden haben, erscheinen dessen Inhalte in einem Ordner-Browser, in dem Sie in Kategorien navigieren, Elemente auswählen und zur Wiedergabe herunterladen können.
 
-Verbundene Anbieter erscheinen in der Seitenleiste auf der linken Seite des Bildschirms. Sie koennen zwischen Anbietern wechseln, indem Sie sie in der Seitenleiste auswaehlen, was es einfach macht, waehrend der Einrichtung zwischen Inhaltsquellen zu wechseln.
+Verbundene Anbieter erscheinen in der Seitenleiste auf der linken Seite des Bildschirms. Sie können zwischen Anbietern wechseln, indem Sie sie in der Seitenleiste auswählen, was das Springen zwischen Content-Quellen während der Einrichtung erleichtert.
 
 ## In diesem Abschnitt
 
-- **[Mit Anbietern verbinden](./connecting-providers)** - Wie Sie sich authentifizieren und verbinden
-- **[Inhalte durchsuchen und herunterladen](./browsing-content)** - Ordner navigieren, Dateien herunterladen und Inhalte abspielen
+- **[Verbindung zu Anbietern herstellen](./connecting-providers)** - Wie man sich authentifiziert und verbindet
+- **[Inhalte durchsuchen und herunterladen](./browsing-content)** - Ordner navigieren, Dateien herunterladen und Inhalte wiedergeben

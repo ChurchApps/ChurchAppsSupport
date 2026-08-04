@@ -50,6 +50,8 @@ Certain providers use a device flow, similar to how you sign in to streaming app
 A pulsing **Waiting for authorization** indicator shows that FreePlay is checking for your login. The code expires after several minutes, so complete the process promptly.
 :::
 
+**Go Curriculum** uses this same QR-code sign-in pattern -- scan the code and log in with your gocurriculum.com account to connect.
+
 ## Form Login
 
 Other providers use a traditional email and password login:

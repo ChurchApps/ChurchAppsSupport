@@ -6,90 +6,90 @@ title: "Mailchimp"
 
 <div class="article-intro">
 
-I-pipe ang mga bagong B1 people, givers, o group members sa isang Mailchimp audience upang ang susunod na welcome series, year-end appeal, o volunteer newsletter ay kumukuha mula sa isang listang palaging up to date. Ang B1 ay walang built-in na Mailchimp sync — ang wiring ay nabubuhay nang buo sa Zapier (o Make): ang B1 ay nag-fire ng event, ang Mailchimp ay nauubos ang subscriber.
+I-pipe ang mga bagong tao, tagabigay, o miyembro ng grupo ng B1 papunta sa isang audience ng Mailchimp para ang susunod na welcome series, year-end appeal, o volunteer newsletter ay kukuha mula sa isang listahang laging updated. Walang built-in na Mailchimp sync ang B1 — ganap na nasa Zapier (o Make) ang koneksyon: pinapaputok ng B1 ang event, kinukuha ng Mailchimp ang subscriber.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Isang [Mailchimp](https://mailchimp.com) account na may hindi bababa sa isang audience na gusto mong itulak ang B1 people
-- Isang [Zapier](https://zapier.com) account (ang free tier ay sumasaklaw sa mga small churches)
-- Isang B1Admin user na may **Edit Settings** permission upang makapag-mint ng API key
+- Isang [Mailchimp](https://mailchimp.com) account na may kahit isang audience na gusto mong pagpasukin ng mga tao mula sa B1
+- Isang [Zapier](https://zapier.com) account (sapat na ang free tier para sa maliliit na simbahan)
+- Isang user ng B1Admin na may permisong **Edit Settings** para makagawa ka ng API key
 
 </div>
 
-## Ano ang Maaari Mong I-wire Up
+## Ano ang Puwede Mong Ikonekta
 
-| Direksyon | B1 trigger | Mailchimp action |
+| Direksyon | B1 trigger | Aksyon sa Mailchimp |
 |---|---|---|
 | B1 → Mailchimp | `person.created` | Add/Update Subscriber |
 | B1 → Mailchimp | `donation.created` | Add Subscriber to Tag (hal. "Gave in 2026") |
-| B1 → Mailchimp | `group.member.added` | Add Subscriber to Tag na scoped sa group na iyon |
+| B1 → Mailchimp | `group.member.added` | Add Subscriber to Tag na naka-scope sa grupong iyon |
 | Mailchimp → B1 | New Subscriber | B1 *Create Person* |
 
-Ang Mailchimp side ay nag-expose ng marami pang (campaigns, segments, automations) — tingnan ang [Mailchimp's Zapier triggers](https://zapier.com/apps/mailchimp/integrations) para sa buong listahan. Anumang mappable mula sa B1 envelope ay patas na laro.
+Marami pang inilalantad ang bahagi ng Mailchimp (campaigns, segments, automations) — tingnan ang [Zapier triggers ng Mailchimp](https://zapier.com/apps/mailchimp/integrations) para sa kumpletong listahan. Kahit ano na puwedeng i-map mula sa B1 envelope ay puwede.
 
 ## Setup
 
-### 1. Mag-mint ng isang B1 API key
+### 1. Gumawa ng B1 API key
 
-Sa B1Admin pumunta sa **Settings → Developer → API Keys → New API Key**. Bigyan ito ng mga scopes na kailangan ng Zap:
+Sa B1Admin, pumunta sa **Settings → Developer → API Keys → New API Key**. Bigyan ito ng mga scope na kailangan ng Zap:
 
-- `settings:write` — kinakailangan para sa trigger upang mag-register ng webhook
-- `people:read` — upang ang Zap ay maaaring magbasa ng first/last name, email, atbp.
-- (Opsyonal) `people:write` kung plano mo ring isa pang Mailchimp → B1 direksyon
+- `settings:write` — kailangan para makarehistro ng webhook ang trigger
+- `people:read` — para mabasa ng Zap ang unang/huling pangalan, email, atbp.
+- (Opsyonal) `people:write` kung planong gumawa rin ng direksyon na Mailchimp → B1
 
-I-save at kopyahin ang `cak_…` string — ipakita lamang minsan.
+I-save at kopyahin ang string na `cak_…` — ipapakita lang ito nang isang beses.
 
-### 2. Bumuo ng Zap
+### 2. Buuin ang Zap
 
-1. **Trigger:** `B1.church — New Person`. Sa unang paggamit, hinihiling ka ng Zapier na *Sign in to B1.church*; i-paste ang API key.
-2. **Action:** `Mailchimp — Add/Update Subscriber`. I-map ang trigger output:
+1. **Trigger:** `B1.church — New Person`. Sa unang paggamit, hihilingin ng Zapier na *Sign in to B1.church*; i-paste ang API key.
+2. **Action:** `Mailchimp — Add/Update Subscriber`. I-map ang output ng trigger:
    - `data.contactInfo.email` → Email Address
    - `data.name.first` → First Name
    - `data.name.last` → Last Name
-   - (Opsyonal) `data.id` → isang Mailchimp merge field kung gusto mong panatilihin ang B1's person id kasama.
-3. I-on ang Zap. Ang Zapier ay nag-register ng `person.created` webhook sa B1 — i-verify sa **Settings → Developer → Webhooks** na isang row na nagngangalang "Zapier — person.created" ay lumalabas.
+   - (Opsyonal) `data.id` → isang merge field ng Mailchimp kung gusto mong panatilihin ang person id ng B1 kasabay nito.
+3. I-on ang Zap. Nagrerehistro ang Zapier ng `person.created` webhook sa B1 — i-verify sa **Settings → Developer → Webhooks** na may lumalabas na row na "Zapier — person.created".
 
-Yan na. Magdagdag ng tao sa B1Admin upang kumpirmahin — ang bagong subscriber ay lumalabas sa Mailchimp sa loob ng ilang segundo.
+Iyon na. Magdagdag ng tao sa B1Admin para kumpirmahin — lalabas ang bagong subscriber sa Mailchimp sa loob ng ilang segundo.
 
-## Mga Karaniwang Recipes
+## Mga Karaniwang Recipe
 
-### I-tag ang mga givers nang awtomatiko
+### Awtomatikong i-tag ang mga tagabigay
 
 - **Trigger** — B1: New Donation
-- **Action** — B1: Find Person (lookup sa pamamagit ng `personId`) upang makuha ang email
-- **Action** — Mailchimp: Add Subscriber to Tag (tag `Gave-2026`)
+- **Action** — B1: Find Person (hanapin ayon sa `personId`) para makuha ang email
+- **Action** — Mailchimp: Add Subscriber to Tag (tag na `Gave-2026`)
 
-### Ilagay ang group-specific na welcome series
+### Magpadala ng welcome series na partikular sa isang grupo
 
-- **Trigger** — B1: New Group Member, filtered sa pamamagit ng `data.groupId`
-- **Action** — Mailchimp: Add Subscriber to Tag na may pangalan ng group; mag-trigger ng iyong kasalukuyang automation sa tag na iyon
+- **Trigger** — B1: New Group Member, naka-filter ayon sa `data.groupId`
+- **Action** — Mailchimp: Add Subscriber to Tag na pinangalanan ayon sa grupo; i-trigger ang iyong umiiral na automation base sa tag na iyon
 
-### Two-way: ang mga bagong Mailchimp signups ay nagiging B1 contacts
+### Dalawang-direksyon: ang mga bagong sign-up sa Mailchimp ay nagiging contact ng B1
 
 - **Trigger** — Mailchimp: New Subscriber
 - **Action** — B1: Create Person (i-map ang First/Last/Email)
 
-## Make Alternative
+## Alternatibong Make
 
-Ang Make's [Mailchimp app](https://www.make.com/en/integrations/mailchimp) ay sumasaklaw sa 44 modules — ang wiring ay pareho, na may B1 *Watch Events* trigger na nagpapalit sa Zapier. Tingnan ang [Make overview doc](../make) para sa B1 side.
+Sinasaklaw ng [Mailchimp app](https://www.make.com/en/integrations/mailchimp) ng Make ang 44 module — magkatulad ang koneksyon, kung saan papalitan ng *Watch Events* trigger ng B1 ang sa Zapier. Tingnan ang [Make overview doc](../make) para sa bahagi ng B1.
 
-## Mga Limitasyon at Mga Tala
+## Mga Limitasyon at Paalala
 
-- **Ang free tier ng Mailchimp ay nag-cap sa mga contacts at audiences** — isang Zap na nag-flood ng free audience na lumampas sa iyong limitasyon ay magsisimulang mag-error na may `4xx Member limit reached`. Ang Mailchimp's logs ay ginagawang halata ito.
-- **Ang Mailchimp ay nag-deduplicate ayon sa email**, kaya ang pag-run ng Zap sa parehong B1 person ay nag-update sa kanila sa lugar; hindi ito lumilikha ng duplicates.
-- **Ang unsubscribes mula sa Mailchimp ay hindi bumabalik sa B1.** Kung gusto mong ang Mailchimp unsubscribes ay malinisan ang B1's "Send Mail" preference, bumuo ng reverse Zap nang taos-puso.
+- **Ang free tier ng Mailchimp ay may limitasyon sa mga contact at audience** — ang isang Zap na magpapaapaw sa isang free audience nang lampas sa limitasyon nito ay magsisimulang mag-error nang `4xx Member limit reached`. Malinaw itong makikita sa logs ng Mailchimp.
+- **Ang Mailchimp ay nag-dededuplicate ayon sa email**, kaya ang muling pagpapatakbo ng Zap sa parehong tao mula sa B1 ay nag-a-update lamang dito; hindi ito gumagawa ng mga duplicate.
+- **Ang mga unsubscribe mula sa Mailchimp ay hindi bumabalik sa B1.** Kung gusto mong burahin ng mga unsubscribe sa Mailchimp ang preference na "Send Mail" sa B1, gumawa ng reverse Zap nang tahasan.
 
-## Troubleshooting
+## Pag-troubleshoot
 
-- **Zap ay hindi kailanman nag-fire** — suriin ang `Settings → Developer → Webhooks` para sa `Zapier — person.created` row. Kung wala, ang API key ay nawawalan ng `settings:write` kapag nag-on ang Zap. Muling mag-mint, muling kumonekta, i-toggle ang Zap off at on.
-- **`Member exists` warning sa Add/Update** — lumipat ang action mula sa *Add Subscriber* hanggang *Add/Update Subscriber* (ang verb ay mahalaga). Ang upsert variant ay idempotent.
-- **First name / last name ay dumarating nang walang laman** — ang B1's `data.name.first` at `data.name.last` ay napupuno lamang kung ang mga fields ay nakatakda sa tao. I-map ang `data.name.display` bilang fallback.
+- **Hindi kailanman pumuputok ang Zap** — tingnan ang `Settings → Developer → Webhooks` para sa row na `Zapier — person.created`. Kung wala, kulang ang API key ng `settings:write` noong in-on ang Zap. Muling gumawa, muling ikonekta, i-toggle ang Zap nang naka-off at pabalik sa on.
+- **Babala na `Member exists` sa Add/Update** — palitan ang action mula sa *Add Subscriber* papuntang *Add/Update Subscriber* (mahalaga ang verb). Idempotent ang upsert na variant.
+- **Blangko ang unang pangalan / huling pangalan** — ang `data.name.first` at `data.name.last` ng B1 ay napupunan lamang kung nakatakda ang mga field na iyon sa tao. I-map ang `data.name.display` bilang fallback.
 
-## Makita Din
+## Tingnan Din
 
-- [Zapier (overview)](../zapier) — ang B1 side ng bawat Zapier recipe
+- [Zapier (overview)](../zapier) — bahagi ng B1 sa bawat Zapier recipe
 - [Make (overview)](../make) — parehong ideya, visual builder
 - [Webhooks (developer reference)](/docs/developer/api/webhooks#event-catalog)

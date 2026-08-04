@@ -1,96 +1,96 @@
 ---
-title: "Ordem de Serviço"
+title: "Ordem do Culto"
 ---
 
-# Ordem de Serviço
+# Ordem do Culto
 
 <div class="article-intro">
 
-A ordem de serviço define a sequência de elementos em seu serviço de adoração. Use-a para organizar tudo, desde a canção de abertura até a oração de encerramento, para que toda sua equipe conheça o fluxo do serviço com antecedência.
+A ordem do culto define a sequência dos elementos do seu culto. Use-a para organizar tudo, desde a música de abertura até a oração final, para que toda a sua equipe conheça o fluxo do culto com antecedência.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- [Crie um plano de serviço](./plans.md) para a data para a qual você deseja construir uma ordem de serviço
-- Opcionalmente, adicione [músicas](./songs.md) à sua biblioteca para que você possa vinculá-las diretamente à ordem de serviço
+- [Crie um plano de culto](./plans.md) para a data para a qual deseja montar uma ordem do culto
+- Opcionalmente, adicione [músicas](./songs.md) à sua biblioteca para poder vinculá-las diretamente na ordem do culto
 
 </div>
 
-## Acessando a Ordem de Serviço
+## Acessando a Ordem do Culto
 
-1. Navegue até **Servindo** e selecione seu ministério.
-2. Clique em um **tipo de plano**, depois abra um **plano** específico.
-3. Clique na aba **Ordem de Serviço** na página de detalhe do plano.
+1. Navegue até **Serviço** e selecione seu ministério.
+2. Clique em um **tipo de plano** e depois abra um **plano** específico.
+3. Clique na aba **Ordem do Culto** na página de detalhes do plano.
 
-## Construindo sua Ordem de Serviço
+## Montando Sua Ordem do Culto
 
-A ordem de serviço é uma lista de itens organizados na sequência em que ocorrerão durante o serviço. Os elementos comuns incluem:
+A ordem do culto é uma lista de itens organizados na sequência em que ocorrerão durante o culto. Elementos comuns incluem:
 
-- Músicas de adoração
+- Músicas de louvor
 - Orações
-- Leituras de escritura
-- Anúncios
+- Leituras bíblicas
+- Avisos
 - Sermão ou mensagem
 - Oferta
 - Encerramento
 
-## Adicionando Itens à Ordem de Serviço
+## Adicionando Itens à Ordem do Culto
 
-1. Na aba **Ordem de Serviço**, clique em **Adicionar Item**.
-2. Escolha o tipo de elemento que deseja adicionar (por exemplo, uma música de sua biblioteca, um item personalizado ou um cabeçalho).
-3. Digite os detalhes do item, como o título e quaisquer notas.
+1. Na aba **Ordem do Culto**, clique em **Adicionar Item**.
+2. Escolha o tipo de elemento que deseja adicionar (por exemplo, uma música da sua biblioteca, um item personalizado ou um título).
+3. Insira os detalhes do item, como o título e quaisquer notas.
 4. Clique em **Salvar**.
 
 :::tip
-Você pode adicionar músicas diretamente de sua biblioteca [Músicas](./songs.md). Isso vincula os detalhes da música, incluindo letras e arranjos, ao seu plano de serviço para que sua equipe de adoração tenha tudo o que precisa.
+Você pode adicionar músicas diretamente da sua biblioteca de [Músicas](./songs.md). Isso vincula os detalhes da música, incluindo letras e arranjos, ao seu plano de culto, para que sua equipe de louvor tenha tudo o que precisa.
 :::
 
 ## Reordenando Itens
 
-Arraste itens pela alça no lado esquerdo de cada linha para reorganizar a ordem — solte na linha azul onde você deseja que o item seja colocado, ou em um cabeçalho de seção para movê-lo para essa seção. A sequência mostrada na tela é a ordem que sua equipe seguirá durante o serviço.
+Arraste os itens pela alça à esquerda de cada linha para reorganizar a ordem — solte na linha azul onde deseja que o item fique, ou sobre um cabeçalho de seção para movê-lo para aquela seção. A sequência exibida na tela é a ordem que sua equipe seguirá durante o culto.
 
 ## Tempo e Mídia
 
-Cada item e seção mostra quanto tempo é executado e quando é iniciado:
+Cada item e seção mostra quanto tempo dura e quando começa:
 
-- Se o plano tem um único horário de serviço selecionado, o painel esquerdo mostra o **horário do relógio** real em que cada item começa (por exemplo, 9:14 AM). Caso contrário, mostra o tempo decorrido desde o início do serviço.
-- Cabeçalhos de seção totalizam o tempo de execução de tudo dentro deles.
-- Músicas e itens personalizados contam para este cronograma uma vez que você insere **Minutos**/**Segundos** na tela de edição do item.
-- Itens que você adiciona de sua biblioteca de mídia (imagens ou clipes de vídeo) mostram uma **miniatura** e são cronometrados automaticamente — a duração de um vídeo é medida no arquivo em si, enquanto uma imagem contribui com uma estimativa de planejamento de ~5:00 (mostrada em itálico) já que permanece na tela até que um operador a avance. Você ainda pode editar qualquer uma para uma duração específica.
+- Se o plano tiver um único horário de culto selecionado, a coluna à esquerda mostra o **horário real do relógio** em que cada item começa (por exemplo, 9h14). Caso contrário, mostra o tempo decorrido desde o início do culto.
+- Os cabeçalhos de seção somam o tempo total de tudo o que está dentro deles.
+- Músicas e itens personalizados contam para essa programação depois que você insere **Minutos**/**Segundos** na tela de edição do item.
+- Itens adicionados da sua biblioteca de mídia (imagens ou clipes de vídeo) mostram uma **miniatura** e são cronometrados automaticamente — a duração de um vídeo é medida a partir do próprio arquivo, enquanto uma imagem contribui com uma estimativa de planejamento de ~5:00 (mostrada em itálico), já que ela permanece na tela até que um operador a avance. Você ainda pode editar qualquer um deles para uma duração específica.
 
 ## Editando e Removendo Itens
 
-- Clique em qualquer item da ordem de serviço para **editar** seus detalhes.
-- Use a opção **deletar** para remover um item da ordem.
+- Clique em qualquer item na ordem do culto para **editar** seus detalhes.
+- Use a opção **excluir** para remover um item da ordem.
 
 :::info
-A ordem de serviço é específica para cada plano. As alterações que você faz aqui afetam apenas o plano selecionado e não alterarão outros planos ou sua biblioteca de músicas.
+A ordem do culto é específica de cada plano. As alterações feitas aqui afetam apenas o plano selecionado e não alteram outros planos ou sua biblioteca de músicas.
 :::
 
-## Incluindo Itens em Horários de Serviço Específicos
+## Incluindo Itens em Horários de Culto Específicos
 
-Se seu plano tem mais de um horário de serviço (por exemplo, um serviço de 8 h da manhã e outro de 10 h), você pode escolher em quais serviços cada item deve aparecer. Isso é útil quando um anúncio é relevante apenas para um serviço ou quando uma música é cantada em um serviço, mas não em outro.
+Se o seu plano tiver mais de um horário de culto (por exemplo, um culto às 8h e outro às 10h), você pode escolher em quais cultos cada item deve aparecer. Isso é útil quando um aviso é relevante apenas para um culto, ou quando uma música é cantada em um culto, mas não em outro.
 
-1. Abra um plano que tenha dois ou mais horários de serviço definidos na aba **Horários**.
-2. Na aba **Ordem de Serviço**, clique em um item para editá-lo.
-3. Sob **Incluir em Serviços**, você verá uma caixa de seleção para cada horário de serviço, rotulada com o horário.
-4. Desmarque qualquer serviço onde o item deve ser pulado.
+1. Abra um plano que tenha dois ou mais horários de culto definidos na aba **Horários**.
+2. Na aba **Ordem do Culto**, clique em um item para editá-lo.
+3. Em **Incluir nos Cultos**, você verá uma caixa de seleção para cada horário de culto, identificada com o horário.
+4. Desmarque qualquer culto em que o item deva ser omitido.
 5. Clique em **Salvar**.
 
-Por padrão, cada item está incluído em cada serviço. Horários de serviço excluídos são ocultos quando você imprime o plano filtrado para esse serviço, para que cada serviço receba uma planilha de execução limpa apenas com os itens relevantes.
+Por padrão, cada item é incluído em todos os cultos. Os horários de culto excluídos ficam ocultos ao imprimir o plano filtrado para aquele culto, para que cada culto receba uma pauta limpa com apenas os itens relevantes.
 
 :::tip
-A seção **Incluir em Serviços** apenas aparece quando o plano tem mais de um horário de serviço. Se você vir apenas um serviço, edite a aba **Horários** do plano para adicionar serviços adicionais primeiro.
+A seção **Incluir nos Cultos** só aparece quando o plano tem mais de um horário de culto. Se você vir apenas um culto, edite a aba **Horários** do plano para adicionar cultos adicionais primeiro.
 :::
 
-## Compartilhando a Ordem de Serviço
+## Compartilhando a Ordem do Culto
 
-Depois que sua ordem de serviço estiver completa, você pode imprimir o plano completo (incluindo a ordem de serviço) da página de detalhe do plano. Isso oferece à sua equipe um resumo completo do serviço.
+Depois que sua ordem do culto estiver completa, você pode imprimir o plano completo (incluindo a ordem do culto) a partir da página de detalhes do plano. Isso dá à sua equipe um resumo completo do culto.
 
 ## Próximos Passos
 
-- Gerencie seu repertório de adoração na página [Músicas](./songs.md)
-- Atribua voluntários ao serviço na aba [Planos](./plans.md) Atribuições
-- Crie [Tarefas](./tasks.md) para qualquer item de acompanhamento relacionado ao serviço
+- Gerencie seu repertório de louvor na página [Músicas](./songs.md)
+- Designe voluntários para o culto na aba Designações de [Planos](./plans.md)
+- Crie [Tarefas](./tasks.md) para quaisquer itens de acompanhamento relacionados ao culto

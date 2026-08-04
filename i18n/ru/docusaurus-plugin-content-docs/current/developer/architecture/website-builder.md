@@ -6,7 +6,7 @@ title: "Архитектура конструктора веб-сайтов"
 
 <div class="article-intro">
 
-Каждый веб-сайт церкви served by B1App это rendered из content дерева — страницы sections elements — stored в ContentApi и edited визуально в B1Admin. One shared компонент библиотека renders both editor preview и live site one element-type каталог defines що может appear на page и separate AI сервис может generate или rewrite این дерево. На этой странице описывается целый стек: element контракт в `@churchapps/helpers` render pipeline church-data элементы site-wide widgets blog слой access-gated страницы SEO AI generation і conversational forms.
+Каждый церковный веб-сайт, обслуживаемый B1App, рендерится из дерева контента — страницы, разделы, элементы — хранимого в ContentApi и редактируемого визуально в B1Admin. Одна общая библиотека компонентов рендерит и предпросмотр редактора, и живой сайт, один каталог типов элементов определяет, что может появиться на странице, а отдельный сервис ИИ может генерировать или переписывать это дерево. На этой странице описан весь стек: контракт элементов в `@churchapps/helpers`, конвейер рендеринга, элементы церковных данных, общесайтовые виджеты, слой блога, страницы с ограниченным доступом, SEO, генерация ИИ и разговорные формы.
 
 </div>
 
@@ -14,7 +14,7 @@ title: "Архитектура конструктора веб-сайтов"
 
 ```
 ┌──────────────────────────────┐             ┌─────────────────────────────────────────┐
-│  B1Admin — editor            │             │  Api — /content модуль (ContentApi)     │
+│  B1Admin — editor            │             │  Api — /content module (ContentApi)     │
 │  ContentEditor · SectionEdit │  POST /…    │                                         │
 │  ElementEdit · PageLinkEdit  │ ──────────▶ │  pages ─ sections ─ elements   blocks   │
 │  SiteWidgetsEdit · Blog      │             │  posts   redirects   settings   styles  │
@@ -36,145 +36,146 @@ title: "Архитектура конструктора веб-сайтов"
 └──────────────────────────────┘             └─────────────────────────────────────────┘
 ```
 
-Три правила hold across стек:
+Три правила действуют во всём стеке:
 
-1. **One дерево two renderers.** Страница это `pages → sections → elements` дерево де every node carries його настройки як `answers` JSON blob. Same apphelper компоненти render drag-and-drop editor в B1Admin і server-rendered public site в B1App — нет separate "publish format".
-2. **Контракт lives в `@churchapps/helpers`.** `ElementTypes.ts` это single каталог element типи; renderers resolve через registry в apphelper; editor форми live в B1Admin. Adding element тип означає touching all три в этом order.
-3. **Public site reads anonymous endpoints.** Все що B1App needs — page дерево настройки blog посты redirects і church-data endpoints в других modules — это public. Auth это optional: JWT на anonymous дерево endpoint unlocks members-only страницы nothing else changes.
+1. **Одно дерево, два рендерера.** Страница — это дерево `pages → sections → elements`, где каждый узел несёт свои настройки как JSON-блок `answers`. Одни и те же компоненты apphelper рендерят и редактор drag-and-drop в B1Admin, и серверно-рендерённый публичный сайт в B1App — отдельного «формата публикации» не существует.
+2. **Контракт живёт в `@churchapps/helpers`.** `ElementTypes.ts` — единственный каталог типов элементов; рендереры разрешаются через реестр в apphelper; формы редактора живут в B1Admin. Добавление типа элемента означает изменения во всех трёх местах, именно в этом порядке.
+3. **Публичный сайт читает анонимные конечные точки.** Всё, что нужно B1App — дерево страниц, настройки, посты блога, редиректы и конечные точки церковных данных в других модулях — публично. Аутентификация опциональна: JWT на анонимной конечной точке дерева открывает страницы только для участников, ничего больше не меняется.
 
-## Content дерево
+## Дерево контента
 
-Content модуль (`Api/src/modules/content`) owns builder's дані:
+Модуль content (`Api/src/modules/content`) владеет данными конструктора:
 
-| Таблиця | Role |
+| Таблица | Роль |
 |-------|------|
-| `pages` | One сторінка per URL: `url`, `title`, `layout`, плюс `visibility`/`groupIds` (access gating) і `metaDescription` (SEO) |
-| `sections` | Горизонтальні смуги на сторінці (або в блоку): background text колір і `answersJSON` що carries styling плюс `dividerTop`/`dividerBottom` shape-divider конфіги |
-| `elements` | Content pieces внутрі section: `elementType` + `answersJSON` nestable для layout типи (row/column carousel) |
-| `blocks` | Переиспользуемые section/element групи (footer блоки element блоки) shared across сторінки |
-| `posts` | Blog метадані over regular builder сторінка (see [Blog](#blog-posts-over-pages)) |
-| `redirects` | Per-church `fromPath → toPath` пари capped на 200 (see [SEO](#seo-and-discoverability)) |
-| `settings` | Key-value church настройки; строки flagged `public` це served анонімно і carry widget/analytics конфіг |
+| `pages` | Одна страница на URL: `url`, `title`, `layout`, плюс `visibility`/`groupIds` (ограничение доступа) и `metaDescription` (SEO) |
+| `sections` | Горизонтальные полосы на странице (или в блоке): фон, цвет текста и `answersJSON`, несущий стилизацию плюс конфигурации разделителей формы `dividerTop`/`dividerBottom` |
+| `elements` | Элементы контента внутри раздела: `elementType` + `answersJSON`, вложены для типов компоновки (строка/колонка, карусель) |
+| `blocks` | Переиспользуемые группы разделов/элементов (блоки подвала, блоки элементов), общие для страниц |
+| `posts` | Отдельные посты блога (см. [Блог](#блог)) |
+| `redirects` | Пары `fromPath → toPath` на церковь, ограничены 200 записями (см. [SEO](#seo-и-обнаруживаемость)) |
+| `settings` | Настройки церкви в формате «ключ-значение»; строки, помеченные `public`, обслуживаются анонимно и несут конфигурацию виджетов/аналитики |
 
-Целе дерево для one URL comes back з single анонімного call — `GET /content/pages/:churchId/tree?url=/about` — який це что B1App server-renders від. Editor запросы fetch by id замість і keep внутрішні ids.
+Всё дерево для одного URL приходит одним анонимным вызовом — `GET /content/pages/:churchId/tree?url=/about` — именно из него B1App выполняет серверный рендеринг. Запросы редактора получают данные по id и сохраняют внутренние id.
 
-## Element контракт
+## Контракт элементов
 
 ### Каталог (`@churchapps/helpers`)
 
-`Packages/helpers/src/ElementTypes.ts` defines кожен element тип як `ElementTypeDefinition`: `elementType`, `label`, `category`, `schemaVersion`, `defaults` і JSON-schema-style `answersSchema` для його answers. `validateElementAnswers()` це deliberately lenient — unknown типи і extra ключи pass поэтому old content ніколи не breaks на catalog upgrade. **35 типи ship сегодня:**
+`Packages/helpers/src/ElementTypes.ts` определяет каждый тип элемента как `ElementTypeDefinition`: `elementType`, `label`, `category`, `schemaVersion`, `defaults` и JSON-schema-подобную `answersSchema` для его настроек. `validateElementAnswers()` намеренно снисходительна — неизвестные типы и лишние ключи проходят, поэтому старый контент никогда не ломается при обновлении каталога. **Сегодня поставляется 35 типов:**
 
-| Категорія | Element типи |
+| Категория | Типы элементов |
 |----------|---------------|
-| layout (6) | row, column, box, carousel, whiteSpace, block |
-| content (11) | text, textWithPhoto, card, faq, iconFeature, testimonial, socialIcons, countdown, stats, table, buttonLink |
-| media (4) | image, gallery, video, map |
-| church (12) | logo, sermons, stream, donation, donateLink, form, calendar, groupList, groups, campaignProgress, staffGrid, serviceTimes |
-| advanced (2) | rawHTML, iframe |
+| компоновка (6) | row, column, box, carousel, whiteSpace, block |
+| контент (11) | text, textWithPhoto, card, faq, iconFeature, testimonial, socialIcons, countdown, stats, table, buttonLink |
+| медиа (4) | image, gallery, video, map |
+| церковные (12) | logo, sermons, stream, donation, donateLink, form, calendar, groupList, groups, campaignProgress, staffGrid, serviceTimes |
+| расширенные (2) | rawHTML, iframe |
 
-`sermons` element це most configurable из church типи: `layout` ответ selects `browse` (legacy full browser) `grid` `list` або `featuredLatest` з `playlistId` `itemCount` `showTitles` і `showDates` refining non-browse layouts.
+Элемент `sermons` — самый настраиваемый из церковных типов: настройка `layout` выбирает `browse` (устаревший полный браузер), `grid`, `list` или `featuredLatest`, а `playlistId`, `itemCount`, `showTitles` и `showDates` уточняют не-browse раскладки.
 
-### Renderers (`@churchapps/apphelper`)
+### Рендереры (`@churchapps/apphelper`)
 
-Renderers live в `Packages/apphelper/src/website/components/elementTypes/` one компонент per тип resolved через `ElementRegistry.ts` — two-layer карта де `Element.tsx` registers default renderer для all 35 типи (`registerDefaultElementRenderer`) і host app може override any із них на runtime (`registerElementRenderer`) без forking package.
+Рендереры живут в `Packages/apphelper/src/website/components/elementTypes/`, по одному компоненту на тип, разрешаемые через `ElementRegistry.ts` — двухуровневую карту, где `Element.tsx` регистрирует рендерер по умолчанию для всех 35 типов (`registerDefaultElementRenderer`), а принимающее приложение может переопределить любой из них во время выполнения (`registerElementRenderer`) без форка пакета.
 
-### Editor форми (B1Admin)
+### Формы редактора (B1Admin)
 
-Editor's per-type настройки форми live в `B1Admin/src/site/admin/elements/` — `ElementEdit.tsx` dispatches до dedicated компонента (`GalleryEdit`, `TestimonialEdit`, `StatsEdit`, …) або inline field builder per тип. AI-facing дзеркало із цього каталогу це API's MCP `describe_page_builder` tool (see [MCP Server](../api/mcp)).
+Формы настроек редактора для каждого типа живут в `B1Admin/src/site/admin/elements/` — `ElementEdit.tsx` направляет к выделенному компоненту (`GalleryEdit`, `TestimonialEdit`, `StatsEdit`, …) либо к встроенному конструктору полей для каждого типа. Отражение этого каталога, ориентированное на ИИ, — инструмент MCP API `describe_page_builder` (см. [MCP-сервер](../api/mcp)).
 
-### Section shape dividers
+### Разделители формы разделов
 
-Sections можуть carry декоративне shape dividers на either край. Конфіг live в section's `answersJSON` як `dividerTop` / `dividerBottom` об'єкти — `{ shape, color, height, flip }` з `shape` one із `wave, waves, slant, curve, triangle, peaks`. Apphelper ships `SectionDivider` компонент і `parseDividerConfig()` helper; обе apps' Section renderers (`B1App/src/components/Section.tsx`, `B1Admin/src/site/admin/Section.tsx`) parse answers і mount divider і `SectionEdit.tsx` в B1Admin provides picker UI. Packages only ship building block — section-level wiring це consuming apps' job.
+Разделы могут нести декоративные разделители формы на любом краю. Конфигурация живёт в `answersJSON` раздела как объекты `dividerTop` / `dividerBottom` — `{ shape, color, height, flip }`, где `shape` — один из `wave, waves, slant, curve, triangle, peaks`. Apphelper поставляет компонент `SectionDivider` и вспомогательную функцию `parseDividerConfig()`; рендереры разделов обоих приложений (`B1App/src/components/Section.tsx`, `B1Admin/src/site/admin/Section.tsx`) разбирают настройки и монтируют разделитель, а `SectionEdit.tsx` в B1Admin предоставляет интерфейс выбора. Пакеты поставляют только строительный блок — привязка на уровне раздела — работа потребляющих приложений.
 
-## Church-data елементи
+## Элементы церковных данных
 
-Три element типи render live church дані rather чем authored content. Module isolation все ще applies — каждый один calls owning module's own public endpoint з браузера:
+Три типа элементов рендерят живые церковные данные, а не авторский контент. Изоляция модулей по-прежнему применяется — каждый вызывает публичную конечную точку своего собственного владеющего модуля из браузера:
 
-| Element | Endpoint | Примечания |
+| Элемент | Конечная точка | Примечания |
 |---------|----------|-------|
-| `campaignProgress` | `GET /giving/funds/public/:churchId/:fundId/total` | Returns `{ fundId, totalAmount, donationCount }` optional `?startDate=&endDate=` window; element compares це against його `goalAmount` ответ |
-| `staffGrid` | `GET /membership/groupmembers/public/:churchId/:groupId` | **Opt-in only**: group мусить have `publicRoster` set (default off). Проекція це deliberately minimal — `personId` `displayName` `leader` фото — no contact або demographic поля |
-| `serviceTimes` | `GET /attendance/servicetimes/public/:churchId` | Returns campus → service → time дерево; apphelper renderer emits best-effort schema.org `Event` JSON-LD від це (API возвращает plain дані) |
+| `campaignProgress` | `GET /giving/funds/public/:churchId/:fundId/total` | Возвращает `{ fundId, totalAmount, donationCount }`, опциональное окно `?startDate=&endDate=`; элемент сравнивает это со своей настройкой `goalAmount` |
+| `staffGrid` | `GET /membership/groupmembers/public/:churchId/:groupId` | **Только по подписке (opt-in)**: у группы должен быть установлен `publicRoster` (по умолчанию выключен). Проекция намеренно минимальна — `personId`, `displayName`, `leader`, фото — никаких контактных или демографических полей |
+| `serviceTimes` | `GET /attendance/servicetimes/public/:churchId` | Возвращает дерево кампус → служение → время; рендерер apphelper по возможности генерирует из него JSON-LD `Event` в формате schema.org (API возвращает обычные данные) |
 
 :::warning
-`publicRoster` это privacy gate для `staffGrid`. Never widen public group-member проекція або bypass flag — roster endpoint це анонимне by дизайн і minimal field список це safety property.
+`publicRoster` — это шлюз приватности для `staffGrid`. Никогда не расширяйте публичную проекцию членов группы и не обходите этот флаг — конечная точка списка участников анонимна по замыслу, и минимальный список полей — это её свойство безопасности.
 :::
 
-## Site-wide widgets
+## Общесайтовые виджеты
 
-Two widgets render на каждой public сторінці rather чем inside дерево: **AnnouncementBanner** (dismissible top-of-page bar) і **Launcher** (floating action hub для give/visit/watch-style ссылки). Both компоненти і їхні `parse*Config()` helpers ship в apphelper. Configuration це two public settings строки — keys `announcementBanner` і `launcher` — written by B1Admin's `SiteWidgetsEdit` (на Appearance page) і read by B1App's public layout via `GET /content/settings/public/:churchId`. API treats це як opaque key-value пари; key имена це convention между дві apps.
+Два виджета рендерятся на каждой публичной странице, а не внутри дерева: **AnnouncementBanner** (закрываемая полоса вверху страницы) и **Launcher** (плавающий центр действий для ссылок в стиле «пожертвовать/посетить/смотреть»). Оба компонента и их вспомогательные функции `parse*Config()` поставляются в apphelper. Конфигурация — это две публичные строки настроек — ключи `announcementBanner` и `launcher` — записываемые `SiteWidgetsEdit` B1Admin (на странице Appearance) и читаемые публичным макетом B1App через `GET /content/settings/public/:churchId`. API рассматривает их как непрозрачные пары «ключ-значение»; имена ключей — это соглашение между двумя приложениями.
 
-## Blog: посты over сторінки
+## Блог
 
-Blog це thin метадані слой не second content система. `posts` строка (`title`, `slug`, `excerpt`, `authorId`, `photoUrl`, `publishDate`, `category`, `tags`) points на regular builder сторінка via `pageId`; сторінка holds body і это edited в normal page editor. Public поверхность (all анонимне `PostController`):
+Блог — это отдельный тип контента, а не слой поверх страниц конструктора. Строка `posts` хранит весь пост: `title`, `slug`, `excerpt`, `content` (тело в markdown), `authorId`, `photoUrl`, `publishDate`, `category`, `tags`. Публичная поверхность (всё анонимно, `PostController`):
 
-| Маршрут | Цель |
+| Маршрут | Назначение |
 |-------|---------|
-| `GET /content/posts/public/:churchId` | Published посты filterable by `?category=&tag=` paginated |
-| `GET /content/posts/public/:churchId/slug/:slug` | One post's метадані |
-| `GET /content/posts/rss/:churchId?siteUrl=` | RSS 2.0 feed |
+| `GET /content/posts/public/:churchId` | Опубликованные посты, фильтруемые по `?category=&tag=`, с пагинацией |
+| `GET /content/posts/public/:churchId/categories` | Отдельные категории среди опубликованных постов |
+| `GET /content/posts/public/:churchId/slug/:slug` | Один опубликованный пост |
+| `GET /content/posts/rss/:churchId?siteUrl=` | RSS 2.0-фид, озаглавленный именем церкви, с категорией и описанием (выдержкой или контентом) для каждого элемента |
 
-Post это "published" один раз `publishDate` это set і past. B1App serves `/{sdSlug}/blog` (listing с RSS feed advertised як alternate link) і `/{sdSlug}/blog/[postSlug]` які fetches backing page дерево на `/blog/{slug}` і renders це через same Zone/Section pipeline як любой other сторінка adding `BlogPosting` JSON-LD. Blog URLs це included в per-church sitemap. B1Admin's authoring UI (**Site → Blog**) creates backing сторінка на `/blog/{slug}` і `posts` строка together.
+Пост считается «опубликованным», как только установлена и прошла дата `publishDate`; будущая `publishDate` означает запланированный пост (скрыт публично, показывается с чипом «Запланировано» в администрировании). Конечные точки чтения обогащают каждый пост полем `authorName`, разрешаемым из `authorId` через шлюз модуля членства. Отсутствующие выдержки заменяются урезанным markdown-контентом (~160 символов) в карточках списка, метаописаниях и RSS. B1App обслуживает `/{sdSlug}/blog` — редакционный список (центрированный заголовок, становящийся именем активной категории/тега при фильтрации, строка фильтра по категориям-чипам, строки постов с миниатюрой слева, подписями авторов и выдержками) с RSS-фидом, объявленным как альтернативная ссылка — и `/{sdSlug}/blog/[postSlug]`, отдельный маршрут (не конвейер Zone/Section) с центрированным заголовком (категория-плашка, заголовок, подпись автора, акцентная линия основного цвета), героем 16:9 по ширине контейнера, телом markdown в колонке чтения ~720px, чипами тегов в подвале статьи, полосой связанных постов «Больше в {category}» и JSON-LD `BlogPosting`, включающим автора. Обе страницы полностью стилизуются из токенов темы, поэтому наследуют палитру каждой церкви. URL блога включены в карту сайта для каждой церкви. Интерфейс написания B1Admin (**Site → Blog**) редактирует посты в диалоге: markdown-редактор с переключателем предпросмотра, выбор изображения галереи с обрезкой 16:9, выбор автора-человека (по умолчанию редактирующий пользователь), автодополнение категории, заполненное существующими категориями, проверка на дублирующийся slug и переключатель публикации; опубликованные строки ссылаются на живой пост, а страница подталкивает администраторов добавить навигационную ссылку `/blog`.
 
-## Members-only сторінки
+## Страницы только для участников
 
-`pages.visibility` reuses navigation-links enum — `everyone` (default) `visitors` `members` `staff` `team` `groups` (з `groupIds`) — але як **hard access gate** не nav filter (`PageVisibilityHelper.canViewPage`). Поток:
+`pages.visibility` переиспользует перечисление навигационных ссылок — `everyone` (по умолчанию), `visitors`, `members`, `staff`, `team`, `groups` (с `groupIds`) — но как **жёсткий шлюз доступа**, а не фильтр навигации (`PageVisibilityHelper.canViewPage`). Поток:
 
-1. Anonymous дерево endpoint checks visibility на URL-based fetches. Anonymous callers із gated сторінки get `{ restricted: true, visibility }` замість content — дерево никогда не leaks.
-2. Endpoint все ще honors JWT: `CustomAuthProvider` verifies `Authorization` заголовок на *каждый* запрос включаючи анонімне маршрути поэтому authenticated member's fetch из same URL resolves normально.
-3. B1App renders `RestrictedPage` на `restricted` ответе: це hydrates сеанс з stored credentials re-fetches дерево з JWT і renders це — або shows login gate з `returnUrl` когда нету сеансу.
+1. Анонимная конечная точка дерева проверяет видимость при запросах по URL. Анонимные вызывающие стороны для ограниченной страницы получают `{ restricted: true, visibility }` вместо контента — дерево никогда не утекает.
+2. Конечная точка по-прежнему учитывает JWT: `CustomAuthProvider` проверяет заголовок `Authorization` при *каждом* запросе, включая анонимные маршруты, так что запрос авторизованного участника к тому же URL разрешается нормально.
+3. B1App рендерит `RestrictedPage` при ответе `restricted`: он восстанавливает сессию из сохранённых учётных данных, заново запрашивает дерево с JWT и рендерит его — либо показывает шлюз входа с `returnUrl`, когда сессии нет.
 
 :::info
-Gate's granularity varies by level: `groups` checks token's `groupIds` против page's список і `staff` checks `membershipStatus` але `members` і `team` currently pass any authenticated user із church. Treat `groups` як strict опцію.
+Детализация шлюза различается по уровням: `groups` проверяет `groupIds` токена против списка страницы, а `staff` проверяет `membershipStatus`, но `members` и `team` в текущей реализации пропускают любого авторизованного пользователя церкви. Считайте `groups` строгим вариантом.
 :::
 
-## SEO і discoverability
+## SEO и обнаруживаемость
 
-All з this це B1App-side rendering over ContentApi дані — API stores app emits:
+Всё это — рендеринг на стороне B1App поверх данных ContentApi — API хранит, приложение выдаёт:
 
-| Concern | Как це works |
+| Аспект | Как это работает |
 |---------|--------------|
-| Meta описання | `pages.metaDescription` (≤300 chars) flows через `MetaHelper.getMetaData()` в Next.js `Metadata` (description + Open Graph) на каждом builder-rendered маршруте. B1Admin's сторінка настройки include AI "Generate" кнопка (see ниже) |
-| Redirects | Per-church `redirects` строки managed на `/content/redirects` (`content.edit` 200-row cap нормализовані paths). На would-be 404 B1App's page маршрут resolves path против `GET /content/redirects/public/:churchId` і issues HTTP 308 через Next's `permanentRedirect`; unmatched path fall через к `notFound()` |
-| Branded 404 | `not-found.tsx` renders `BrandedNotFound` з church's logo имя і theme замість generic error |
-| Structured дані | `BlogPosting` JSON-LD на blog посты; `VideoObject` на per-sermon сторінки (`/{sdSlug}/sermons/[sermonId]`) і на сторінке containing `sermons` element; `Event` із calendar/event елементи на builder сторінке; schema.org `Event` із `serviceTimes` element |
-| Sermon сторінке | Каждый public sermon gets crawlable сторінка на `/sermons/[sermonId]` з full метадані — серьёзные are больше не locked внутрі client-side browser element |
-| Analytics | Public настройки key `ga4MeasurementId` (managed next to redirects в B1Admin) injects per-church GA4 gtag через `next/script` |
-| Sitemap & feeds | Per-church `sitemap.xml` маршрут includes builder сторінке і blog URLs; blog listing advertises RSS feed |
-| Доступность | Public chrome renders skip link targeting `<main id="main-content">` landmark в каждом layout wrapper |
+| Метаописания | `pages.metaDescription` (≤300 символов) проходит через `MetaHelper.getMetaData()` в `Metadata` Next.js (описание + Open Graph) на каждом маршруте, рендерящемся конструктором. Настройки страницы B1Admin включают кнопку ИИ «Generate» (см. ниже) |
+| Редиректы | Строки `redirects` для каждой церкви, управляемые на `/content/redirects` (`content.edit`, лимит 200 строк, нормализованные пути). При потенциальной 404 маршрут страницы B1App разрешает путь против `GET /content/redirects/public/:churchId` и выдаёт HTTP 308 через `permanentRedirect` из Next; несовпавшие пути проваливаются к `notFound()` |
+| Брендированная 404 | `not-found.tsx` рендерит `BrandedNotFound` с логотипом церкви, именем и темой вместо обобщённой ошибки |
+| Структурированные данные | JSON-LD `BlogPosting` на постах блога; `VideoObject` на страницах отдельных проповедей (`/{sdSlug}/sermons/[sermonId]`) и на страницах, содержащих элемент `sermons`; `Event` из элементов календаря/мероприятия на страницах конструктора; schema.org `Event` из элемента `serviceTimes` |
+| Страницы проповедей | Каждая публичная проповедь получает индексируемую страницу на `/sermons/[sermonId]` с полными метаданными — проповеди больше не заперты внутри клиентского элемента-браузера |
+| Аналитика | Публичный ключ настроек `ga4MeasurementId` (управляется рядом с редиректами в B1Admin) внедряет тег GA4 gtag для каждой церкви через `next/script` |
+| Карта сайта и фиды | Маршрут `sitemap.xml` для каждой церкви включает страницы конструктора и URL блога; список блога объявляет RSS-фид |
+| Доступность | Публичное окружение рендерит ссылку пропуска, ведущую к ориентиру `<main id="main-content">` в каждой обёртке макета |
 
-## AI generation (AskApi)
+## Генерация ИИ (AskApi)
 
-Page і site generation runs в **AskApi** separate сервис under `/website` контроллер. Це authenticates з same `CustomAuthProvider` JWT як всё else і це **stateless относно content**: каждый endpoint returns JSON і caller (B1Admin) persists результат через ContentApi (`POST /content/pages/temp/ai` saves generated page-sections-elements bundle в one call).
+Генерация страниц и сайтов выполняется в **AskApi**, отдельном сервисе, под контроллером `/website`. Он аутентифицируется тем же JWT `CustomAuthProvider`, что и всё остальное, и **не хранит состояние контента**: каждая конечная точка возвращает JSON, а вызывающая сторона (B1Admin) сохраняет результат через ContentApi (`POST /content/pages/temp/ai` сохраняет сгенерированный пакет страница-разделы-элементы одним вызовом).
 
 :::info
-As із 2026-07-03 B1Admin's entry point к це pipeline — site "AI" template в `AddPageModal` `SectionToolbar` rewrite кнопка і pages-list "Generate Site" кнопка — це commented out client-side пока feature це reworked. AskApi endpoints ниже це unaffected і все ще respond; только B1Admin UI це hidden.
+По состоянию на 2026-07-03 точки входа B1Admin в этот конвейер — шаблон сайта «AI» в `AddPageModal`, кнопка перезаписи `SectionToolbar` и кнопка «Generate Site» в списке страниц — закомментированы на стороне клиента, пока функция перерабатывается. Конечные точки AskApi ниже не затронуты и по-прежнему отвечают; скрыт только интерфейс B1Admin.
 :::
 
-| Endpoint | Цель |
+| Конечная точка | Назначение |
 |----------|---------|
-| `POST /website/generatePageOutline` → `generateSection` | Original two-step page поток: outline сначала затем one call per section. B1Admin's "AI" page template в `AddPageModal` drives це — outline затем parallel section generation затем preview |
-| `POST /website/generateSite` | Whole-site generation. **Two-phase by дизайн**: `planOnly: true` call returns только multi-page plan (one fast модель call) затем client requests full content — keeping каждый request inside Lambda/API-Gateway timeout |
-| `POST /website/rewriteSection` | Structure-preserving rewrite: модель may только change text-bearing answers. Recursive structure signature (ids + типи + order) это compared before і after; any mismatch returns оригинальний section з `fallback: true` замість corrupted structure |
-| `POST /website/generateAltText` | Vision call over up к 20 image URLs; returns concise alt text (≤125 chars "photo of" префіксы stripped) |
-| `POST /website/generateMetaDescription` | One SEO meta описання (≤155 chars) з page's text content — wired к Generate кнопка на B1Admin's сторінка настройки |
+| `POST /website/generatePageOutline` → `generateSection` | Исходный двухшаговый поток страницы: сначала план, затем один вызов на раздел. Шаблон страницы «AI» в `AddPageModal` B1Admin управляет этим — план, затем параллельная генерация разделов, затем предпросмотр |
+| `POST /website/generateSite` | Генерация всего сайта. **Намеренно двухфазная**: вызов с `planOnly: true` возвращает только многостраничный план (один быстрый вызов модели), затем клиент запрашивает полный контент — удерживая каждый запрос в пределах тайм-аута Lambda/API Gateway |
+| `POST /website/rewriteSection` | Перезапись с сохранением структуры: модель может менять только текстонесущие ответы. Рекурсивная сигнатура структуры (id + типы + порядок) сравнивается до и после; любое несовпадение возвращает исходный раздел с `fallback: true` вместо повреждённой структуры |
+| `POST /website/generateAltText` | Вызов зрения над до 20 URL изображений; возвращает лаконичный alt-текст (≤125 символов, префиксы «photo of» удаляются) |
+| `POST /website/generateMetaDescription` | Одно SEO-метаописание (≤155 символов) из текстового содержимого страницы — подключено к кнопке Generate на настройках страницы B1Admin |
 
-Prompts це markdown файли under `AskApi/config/instructions/` включаючи element каталог модель generates з. Two дизайн точки keep каталог honest: client passes `availableElementTypes` на каждый request (prompt может only use типи із це список — сервер никогда не hardcodes повне set) і API's MCP `describe_page_builder` tool carries same guide для AI агентів working через [MCP](../api/mcp). Моделі це Anthropic Claude через OpenRouter — 3.5 Haiku для section content (latency) 3.5 Sonnet для outlines site плани і vision — з OpenAI fallback коли no OpenRouter ключ це configured.
+Подсказки — это markdown-файлы в `AskApi/config/instructions/`, включая каталог элементов, из которого генерирует модель. Два дизайн-решения удерживают каталог честным: клиент передаёт `availableElementTypes` при каждом запросе (подсказка может использовать только типы из этого списка — сервер никогда не зашивает полный набор в код), а инструмент MCP API `describe_page_builder` несёт тот же справочник для ИИ-агентов, работающих через [MCP](../api/mcp). Модели — это Anthropic Claude через OpenRouter — 3.5 Haiku для контента разделов (задержка), 3.5 Sonnet для планов, макетов сайта и зрения — с резервом на OpenAI, когда ключ OpenRouter не настроен.
 
-## Conversational forms
+## Разговорные формы
 
-Forms (membership модуль) gained conversational режим aimed на connect-card-style сторінке. Four стовпці на `forms` drive це: `displayMode` (`standard` | `conversational`) `autoCreatePerson` `followUpSubject` `followUpBody`.
+Формы (модуль membership) получили разговорный режим, ориентированный на страницы в стиле карточки контактов. Четыре столбца в `forms` управляют этим: `displayMode` (`standard` | `conversational`), `autoCreatePerson`, `followUpSubject`, `followUpBody`.
 
-- **Rendering** — apphelper's `FormSubmissionEdit` switches до `ConversationalForm` компонент (one question на раз) коли `displayMode` це `conversational`; B1App's form сторінка passes режим через. Same submission payload либо way.
-- **Auto-create person** — на submission з `autoCreatePerson` set `ConversationalFormHelper.findOrCreatePerson` dedups by email (case-insensitive) і otherwise creates домашнее хозяйство + person з `membershipStatus: "Guest"` затем links submission до這 person.
-- **Follow-up email** — коли subject і body це set submitter gets templated email (з `{firstName}` / `{churchName}` токены) через existing transactional path (`TransactionalEmailHelper`) никогда notification дайджест door. Both side-effects це non-fatal: failure никогда не loses submission.
+- **Рендеринг** — `FormSubmissionEdit` apphelper переключается на компонент `ConversationalForm` (по одному вопросу за раз), когда `displayMode` равен `conversational`; страница формы B1App передаёт режим дальше. Полезная нагрузка отправки одна и та же в обоих случаях.
+- **Автосоздание человека** — при отправке с установленным `autoCreatePerson` `ConversationalFormHelper.findOrCreatePerson` дедуплицирует по email (без учёта регистра) и иначе создаёт домохозяйство + человека со `membershipStatus: "Guest"`, затем связывает отправку с этим человеком.
+- **Письмо продолжения** — когда заданы тема и тело, отправитель получает шаблонное письмо (с токенами `{firstName}` / `{churchName}`) через существующий транзакционный путь (`TransactionalEmailHelper`), никогда не через дверь дайджеста уведомлений. Оба побочных эффекта не критичны: сбой никогда не приводит к потере отправки.
 
-Four поля це set через API сегодня; B1Admin форма editor не expose їх yet.
+Эти четыре поля сегодня устанавливаются через API; редактор форм B1Admin пока их не раскрывает.
 
-## Пов'язані сторінки
+## Связанные страницы
 
-- [Website Routing & Multi-Site](./websites) — як request resolves до church/site і як custom domains маршрут
-- [Content Endpoints](../api/endpoints/content) — full REST поверхність для pages sections elements blocks посты redirects і настройки
-- [AppHelper](../shared-libraries/app-helper) — npm package що ships renderers registry dividers і widgets
-- [MCP Server](../api/mcp) — включаючи `describe_page_builder` guide tool
-- [Page Editor (end-user)](/docs/b1-admin/website/page-editor) — staff-facing editor документація
+- [Маршрутизация веб-сайтов и мульти-сайт](./websites) — как запрос разрешается в церковь/сайт и как маршрутизируются пользовательские домены
+- [Конечные точки Content](../api/endpoints/content) — полная REST-поверхность для страниц, разделов, элементов, блоков, постов, редиректов и настроек
+- [AppHelper](../shared-libraries/app-helper) — npm-пакет, поставляющий рендереры, реестр, разделители и виджеты
+- [MCP-сервер](../api/mcp) — включая инструмент-справочник `describe_page_builder`
+- [Редактор страниц (для конечного пользователя)](/docs/b1-admin/website/page-editor) — документация редактора, ориентированная на персонал

@@ -1,35 +1,36 @@
 ---
-title: "Fornitori di contenuti"
+title: "Content Provider"
 ---
 
-# Fornitori di contenuti
+# Content Provider
 
 <div class="article-intro">
 
-I fornitori di contenuti sono servizi esterni che forniscono materiali per le lezioni, video e immagini per la riproduzione sul tuo TV. FreePlay supporta più fornitori, permettendoti di sfogliare e scaricare contenuti da diverse fonti in un'unica app.
+I content provider sono servizi esterni che forniscono materiali di lezione, video e immagini per la riproduzione sulla tua TV. FreePlay supporta più provider, permettendoti di sfogliare e scaricare contenuti da fonti diverse tutti in un'unica app.
 
 </div>
 
-## Fornitori disponibili
+## Provider Disponibili
 
-FreePlay include attualmente i seguenti fornitori:
+FreePlay include attualmente i seguenti provider:
 
 - **[Lessons.church](../../lessons-church/)** - Curriculum gratuito e open-source per il ministero dei bambini
-- **Bible Project** - Video e risorse per esplorare la Bibbia
-- **SignPresenter** - Contenuti per presentazioni e segnaletica per le chiese
-- **B1.church** - Contenuti dalla tua configurazione B1 della chiesa
+- **Bible Project** - Video e risorse che esplorano la Bibbia
+- **SignPresenter** - Contenuti di presentazione e segnaletica per le chiese
+- **B1.church** - Contenuti dalla tua configurazione B1 church
+- **Go Curriculum** - Curriculum da gocurriculum.com, organizzato per collezione e lezione
 
 :::info
-Alcuni fornitori sono ancora in fase di aggiunta. Se una scheda del fornitore mostra "In arrivo", non è ancora disponibile per la connessione.
+Alcuni provider sono ancora in fase di aggiunta. Se la scheda di un provider mostra "Coming Soon", non è ancora disponibile per la connessione.
 :::
 
-## Come funzionano i fornitori
+## Come Funzionano i Provider
 
-Ogni fornitore ha la propria libreria di contenuti organizzata in cartelle e file. Una volta connesso a un fornitore, il suo contenuto appare in un browser di cartelle dove puoi esplorare le categorie, selezionare gli elementi e scaricarli per la riproduzione.
+Ogni provider ha una propria libreria di contenuti organizzata in cartelle e file. Una volta connesso a un provider, i suoi contenuti appaiono in un browser di cartelle dove puoi entrare nelle categorie, selezionare elementi e scaricarli per la riproduzione.
 
-I fornitori connessi appaiono nella barra laterale sul lato sinistro dello schermo. Puoi passare da un fornitore all'altro selezionandoli nella barra laterale, rendendo facile spostarsi tra le fonti di contenuti durante la configurazione.
+I provider connessi appaiono nella barra laterale a sinistra dello schermo. Puoi passare da un provider all'altro selezionandoli nella barra laterale, rendendo facile spostarsi tra le fonti di contenuto durante la configurazione.
 
-## In questa sezione
+## In Questa Sezione
 
-- **[Connettersi ai fornitori](./connecting-providers)** - Come autenticarsi e connettersi
-- **[Sfogliare e scaricare contenuti](./browsing-content)** - Naviga nelle cartelle, scarica file e riproduci contenuti
+- **[Connessione ai Provider](./connecting-providers)** - Come autenticarsi e connettersi
+- **[Sfogliare e Scaricare Contenuti](./browsing-content)** - Naviga tra le cartelle, scarica file e riproduci contenuti

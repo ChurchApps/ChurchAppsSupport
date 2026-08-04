@@ -17,6 +17,8 @@ O ChurchApps usa diferentes estratégias de implantação dependendo do tipo de 
 | [APIs](./apis) | AWS Lambda | Serverless Framework v3 (runtime Node.js 22.x) |
 | [Aplicações Web](./web-apps) | S3 + CloudFront | Build estático, sincronização S3, invalidação CloudFront |
 | [Aplicações Móveis](./mobile) | Lojas de Aplicativos | Expo EAS Build + Atualizações OTA |
+| [Auto-Hospedagem (Railway)](./railway-template) | Railway | Modelo de um clique: MySQL + Api + B1Admin + B1App |
+| [Auto-Hospedagem (Docker)](./docker) | Qualquer host Docker | `docker compose up` a partir do repositório B1Admin |
 | [Proxy Caddy Custom-Domain](./caddy-proxy) | Windows EC2 (Elastic IP `3.23.251.61`) | Caddyfile estático + serviço WinSW + sincronização de mapa agendada |
 | FreeShow | Download direto | Electron Builder (binários multiplataforma) |
 

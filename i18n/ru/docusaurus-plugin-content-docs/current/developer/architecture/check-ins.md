@@ -6,7 +6,7 @@ title: "Регистрация при прибытии"
 
 <div class="article-intro">
 
-Регистрация при прибытии — это одна система с тремя входными дверями: приложение киоска B1Checkin для укомплектованных и самообслуживающихся станций, самостоятельная регистрация внутри портала участников B1App и управление посещаемостью на стороне администратора в B1Admin. Все три записывают в один модуль посещаемости в основной API, и маршрутизация классных комнат управляется полностью группами — нет отдельной сущности "местоположения" или "комнаты". Слой защиты детей находится сверху: типы регистрации при прибытии per-visit, server-side шлюзы вместимости и добровольческого соотношения, age/grade приемлемость на стороне киоска, проверка надежного забирающего лица при выезде и пейджинг родителей через поставщика SMS-сообщений церкви. На этой странице описывается модель данных, потоки регистрации при прибытии, слой защиты и конвейер печати этикеток.
+Регистрация при прибытии — это одна система с тремя входными дверями: приложение-киоск B1Checkin для укомплектованных персоналом и самообслуживаемых станций, самостоятельная регистрация внутри портала участников B1App и администрирование посещаемости на стороне персонала в B1Admin. Все три записывают в один и тот же модуль посещаемости основного Api, а маршрутизация по классам полностью управляется группами — отдельной сущности «локации» или «комнаты» не существует. Поверх этого лежит слой детской безопасности: типы регистрации для каждого посещения, серверные ограничения по вместимости и соотношению волонтёров, проверка возрастной/классовой пригодности на стороне киоска, проверка доверенных лиц при выдаче ребёнка и оповещение родителей через провайдера SMS-сообщений церкви. На этой странице описаны модель данных, потоки регистрации, слой безопасности и конвейер печати наклеек.
 
 </div>
 
@@ -27,112 +27,112 @@ title: "Регистрация при прибытии"
 └──────────────────────────┘            │  └─────────────────────────────────────────┘ │
                                         └──────────────────────────────────────────────┘
 
-Путь печати этикеток (только киоск):
+Путь печати наклеек (только киоск):
 POST /attendance/visits/checkin ──▶ { securityCode, streaks }
-  └▶ LabelHelper (label templates, или bundled HTML fallback)
-       └▶ LabelRenderer → HTML документ + inline SVG штрих-коды
-            └▶ PrintUI: WebView rendering → ViewShot JPG capture
-                 └▶ printer-helper native модуль → Brother QL / Zebra
+  └▶ LabelHelper (шаблоны наклеек либо встроенный HTML-резерв)
+       └▶ LabelRenderer → HTML-документ + встроенные SVG-штрихкоды
+            └▶ PrintUI: рендер в WebView → захват JPG через ViewShot
+                 └▶ нативный модуль printer-helper → Brother QL / Zebra
 ```
 
-| Поверхность | Репо | Стек | Роль |
+| Поверхность | Репозиторий | Стек | Роль |
 |---------|------|-------|------|
-| Киоск | `B1Checkin` | Expo / React Native, expo-router file routing; EAS builds для Android, Amazon Fire и iOS; OTA updates via `expo-updates` | Укомплектованная или самообслуживающаяся станция с печатью этикеток и проверенным выездом |
-| Самостоятельная регистрация | `B1App` | Next.js (b1.church member portal) | Авторизованные участники регистрируют свое домашнее хозяйство со своего телефона; без печати |
-| Управление | `B1Admin` | React SPA | Настраивает структуру служения, назначает группы на время служения, проектирует этикетки, записывает ручное посещение, запускает отчеты |
+| Киоск | `B1Checkin` | Expo / React Native, файловая маршрутизация expo-router; сборки EAS для Android, Amazon Fire и iOS; OTA-обновления через `expo-updates` | Укомплектованная персоналом или самообслуживаемая станция с печатью наклеек и проверенной выдачей |
+| Самостоятельная регистрация | `B1App` | Next.js (портал участников b1.church) | Авторизованные участники регистрируют своё домохозяйство с телефона; без печати |
+| Администрирование | `B1Admin` | React SPA | Настраивает структуру служений, назначает группы на время служения, разрабатывает наклейки, вручную вносит посещаемость, запускает отчёты |
 
-Все три вызывают одни и те же два API модули через `ApiHelper`: **MembershipApi** (`/membership`) для людей, домашних хозяйств и групп; **AttendanceApi** (`/attendance`) для всего ниже.
+Все три поверхности вызывают одни и те же два модуля Api через `ApiHelper`: **MembershipApi** (`/membership`) для людей, домохозяйств и групп; **AttendanceApi** (`/attendance`) для всего остального ниже.
 
 ## Модель данных (`Api/src/modules/attendance`)
 
 | Сущность / таблица | Ключевые поля | Значение |
 |----------------|-----------|---------|
-| `campuses` | name, address | Deprecated здесь — campuses mastered в membership module (`/membership/campuses`); копия посещаемости frozen read-only для legacy readers (`models/Campus.ts`) |
-| `services` | campusId, name | Повторяющееся собрание, например "Sunday Morning" (`models/Service.ts`) |
-| `serviceTimes` | serviceId, name | Временной слот в служении, например "9:00 AM" (`models/ServiceTime.ts`) |
-| `groupServiceTimes` | groupId, serviceTimeId | Join таблица: какие группы (классные комнаты) встречаются в каком время служения (`models/GroupServiceTime.ts`) |
-| `sessions` | groupId, serviceTimeId, sessionDate | Одна встреча одной группы на один день — создается лениво во время регистрации (`models/Session.ts`) |
-| `visits` | personId, serviceId, visitDate, checkinTime, securityCode, checkinType, checkedInById, checkoutTime, checkedOutBy, checkedOutById | Один человек участвует на один день (`models/Visit.ts`). `checkinType` это `member` / `guest` / `volunteer` (NULL = legacy member), установленный киоском и потребленный шлюзами вместимости/соотношения |
-| `visitSessions` | visitId, sessionId | Какую/какие сеансы покрывает посещение — ребенок, зарегистрированный на два момента служения, получает две строки (`models/VisitSession.ts`) |
-| `labelTemplates` | name, labelType (`nametag`/`pickup`), width, height, isDefault, content (JSON blocks) | Проектируемые расположения этикеток (`models/LabelTemplate.ts`) |
+| `campuses` | name, address | Здесь устарела — кампусы хранятся в модуле членства (`/membership/campuses`); копия в модуле посещаемости заморожена только для чтения ради устаревших читателей (`models/Campus.ts`) |
+| `services` | campusId, name | Периодическое собрание, например «Sunday Morning» (`models/Service.ts`) |
+| `serviceTimes` | serviceId, name | Временной слот внутри служения, например «9:00 AM» (`models/ServiceTime.ts`) |
+| `groupServiceTimes` | groupId, serviceTimeId | Связующая таблица: какие группы (классы) встречаются в какое время служения (`models/GroupServiceTime.ts`) |
+| `sessions` | groupId, serviceTimeId, sessionDate | Одна встреча одной группы в одну дату — создаётся лениво в момент регистрации (`models/Session.ts`) |
+| `visits` | personId, serviceId, visitDate, checkinTime, securityCode, checkinType, checkedInById, checkoutTime, checkedOutBy, checkedOutById | Присутствие одного человека в одну дату (`models/Visit.ts`). `checkinType` принимает значения `member` / `guest` / `volunteer` (NULL = устаревшее значение member), устанавливается киоском и используется шлюзами вместимости/соотношения |
+| `visitSessions` | visitId, sessionId | Какие сеансы охватывает посещение — ребёнок, зарегистрированный на два времени служения, получает две строки (`models/VisitSession.ts`) |
+| `labelTemplates` | name, labelType (`nametag`/`pickup`), width, height, isDefault, content (JSON-блоки) | Проектируемые макеты наклеек (`models/LabelTemplate.ts`) |
 
-### Как завершенная регистрация сохраняется
+### Как сохраняется завершённая регистрация
 
-`VisitController.postCheckin` (`Api/src/modules/attendance/controllers/VisitController.ts`) обрабатывает `POST /attendance/visits/checkin?serviceId=&peopleIds=`. Тело — это массив объектов `Visit`, каждый несущий `visitSessions` чьи встроенные `session` имена только пара `(serviceTimeId, groupId)`. Затем сервер:
+`VisitController.postCheckin` (`Api/src/modules/attendance/controllers/VisitController.ts`) обрабатывает `POST /attendance/visits/checkin?serviceId=&peopleIds=`. Тело запроса — массив объектов `Visit`, каждый из которых несёт `visitSessions`, чьи вложенные `session` называют только пару `(serviceTimeId, groupId)`. Далее сервер:
 
-1. **Шлюзы вместимости и соотношений перед любой записью.** `evaluateGates()` → `CheckinGateHelper.evaluate()` проверяет вместимость целевой комнаты, вместимость гостей, закрытый флаг и добровольческое соотношение против текущего занятия. postCheckin **не транзакционный**, поэтому shutter должен запуститься перед первым сохранением — hard нарушение возвращает 409, называя offending комнаты и ничего не сохраняется. See [Capacity and volunteer-ratio gates](#capacity-and-volunteer-ratio-gates).
-2. **Разрешает сеансы лениво.** `getSessionId()` находит или создает `sessions` строка для `(groupId, serviceTimeId, today)` — session ids кэшируются в-процессе на дату. Новые сеансы выдают webhook `session.created`. Цикл это awaited `for..of` — более ранний fire-and-forget `forEach(async …)` гонка сохранена и написаны NULL sessionIds при создании первого сеанса (fixed; noted в коментарии кода в цикле).
-3. **Заменяет записи дня.** Любые существующие посещения для этих людей в этом служении сегодня удаляются вместе с их visitSessions, затем отправленный набор сохраняется. Пересчет-в семьи поэтому idempotent "это текущее состояние" операция, не append. Передача `?checkDuplicates=true` вместо возвращает `{ duplicates: [personId…] }` без записи, это как киоск предупреждает перед перезаписью.
-4. **Генерирует один код безопасности на партию.** `SecurityCodeHelper.generate()` производит 4-значный код из алфавита `23456789BCDFGHJKLMNPQRSTVWXYZ` (без гласных или неоднозначных символов, поэтому коды не могут произносить слова или неправильно читать). Сервер повторяет попытку при столкновении против того же церковного, того же дня открытых посещений и штампует код на каждом посещении в партии.
-5. **Возвращает `{ streaks, securityCode }`.** `streaks` maps personId к consecutive-week посещаемость count; киоск celebrate milestones (каждую 5-ю неделю) с конфетти.
+1. **Проверяет вместимость и соотношения перед любой записью.** `evaluateGates()` → `CheckinGateHelper.evaluate()` проверяет вместимость каждой целевой комнаты, вместимость для гостей, флаг закрытия и соотношение волонтёров относительно текущей занятости. postCheckin **не транзакционен**, поэтому проверка должна выполняться до первой записи — жёсткое нарушение возвращает 409 с указанием проблемных комнат, и ничего не сохраняется. См. [Проверки вместимости и соотношения волонтёров](#проверки-вместимости-и-соотношения-волонтёров).
+2. **Разрешает сеансы лениво.** `getSessionId()` находит или создаёт строку `sessions` для `(groupId, serviceTimeId, today)` — id сеансов кэшируются в процессе на дату. Новые сеансы создают вебхук `session.created`. Цикл представляет собой ожидаемый `for..of` — более ранний вариант «выстрелил и забыл» с `forEach(async …)` вступал в гонку с сохранением и записывал NULL в sessionId при создании первого сеанса (исправлено; отмечено комментарием в коде у цикла).
+3. **Заменяет записи дня.** Любые существующие посещения этих людей на этом служении сегодня удаляются вместе с их visitSessions, затем сохраняется отправленный набор. Повторная регистрация семьи, таким образом, — идемпотентная операция «вот текущее состояние», а не добавление. Передача `?checkDuplicates=true` вместо этого возвращает `{ duplicates: [personId…] }` без записи — так киоск предупреждает перед перезаписью.
+4. **Генерирует один код безопасности на пакет.** `SecurityCodeHelper.generate()` создаёт 4-символьный код из алфавита `23456789BCDFGHJKLMNPQRSTVWXYZ` (без гласных и неоднозначных символов, чтобы коды не могли складываться в слова или неправильно читаться). Сервер повторяет попытку при коллизии с уже существующими открытыми посещениями той же церкви за тот же день и проставляет код на каждое посещение в пакете.
+5. **Возвращает `{ streaks, securityCode }`.** `streaks` сопоставляет personId с числом посещений подряд по неделям; киоск отмечает вехи (каждую 5-ю неделю) конфетти.
 
-Каждое сохраненное посещение также выдает webhook `attendance.recorded`. Сторона чтения, `GET /attendance/visits/checkin`, возвращает посещения людей из их **последней logged date** — если это была предыдущая неделя ids удаляются, поэтому клиент получает предзаполненную копию выборов комнаты последней недели, которые сохранит как новые записи.
+Каждое сохранённое посещение также создаёт вебхук `attendance.recorded`. Сторона чтения, `GET /attendance/visits/checkin`, возвращает посещения людей за их **последнюю зарегистрированную дату** — если это была предыдущая неделя, id удаляются, поэтому клиент получает предзаполненную копию выбора комнат прошлой недели, которая сохранится как новые записи.
 
-### Выезд
+### Выдача
 
-Два конечные точки завершают цикл (`VisitController`):
+Два конечных точки завершают цикл (`VisitController`):
 
-- `GET /attendance/visits/code/:code` — сегодняшние еще-не-checked-out посещения несущие этот код безопасности, с созданными сеансами.
-- `POST /attendance/visits/checkout` — тело `{ visitIds, checkedOutBy?, checkedOutById? }`; stamps `checkoutTime` и кто забрал, и выдает webhook `attendance.checkout` per посещение.
+- `GET /attendance/visits/code/:code` — сегодняшние ещё не выданные посещения с этим кодом безопасности, с заполненными сеансами.
+- `POST /attendance/visits/checkout` — тело `{ visitIds, checkedOutBy?, checkedOutById? }`; проставляет `checkoutTime` и того, кто забрал ребёнка, и создаёт вебхук `attendance.checkout` для каждого посещения.
 
-Разрешения: киоски authenticate с `attendance.checkin`, что дает ровно surface check-in/check-out/label-template; `attendance.view`/`attendance.edit` охватывают reporting и manual entry; структура (services, service times, group assignments) требует `services.edit`.
+Разрешения: киоски аутентифицируются через `attendance.checkin`, что даёт доступ ровно к поверхности регистрации/выдачи/шаблонов наклеек; `attendance.view`/`attendance.edit` покрывают отчётность и ручной ввод; структура (службы, времена служения, назначения групп) требует `services.edit`.
 
-## Группы управляют маршрутизацией комнаты
+## Группы управляют маршрутизацией по комнатам
 
-Нет комнаты или сущности классной комнаты нигде в системе. "Комната" это membership **группа** с `trackAttendance` включенной, связанной с одной или несколькими временами служения через `groupServiceTimes`. Поля группы (на `Api/src/modules/membership/models/Group.ts`) которые формируют поведение киоска:
+Нигде в системе нет сущности комнаты или класса. «Комната» — это **группа** членства с включённым `trackAttendance`, привязанная к одному или нескольким временам служения через `groupServiceTimes`. Поля группы (в `Api/src/modules/membership/models/Group.ts`), которые формируют поведение киоска:
 
 | Поле | Эффект |
 |------|--------|
-| `trackAttendance` | Группа участвует в посещаемости вообще; B1Admin setup tree flags `trackAttendance` группы с нет `groupServiceTimes` строка как unassigned |
-| `parentPickup` | Отмечает детскую комнату: регистрация в неё делает посещение "child" посещением, которое печатает этикетку семейного выезда и ставит код безопасности на бейдж |
-| `printNametag` | Печатают ли регистрации в этой группе бейдж вообще |
-| `capacity` / `guestCapacity` / `checkinClosed` | Ограничения вместимости комнаты и hard "closed" switch, enforced server-side by the check-in gate (edited в B1Admin группе settings под "Check-In Capacity") |
-| `volunteerRatio` / `minVolunteers` | Соотношение детей на добровольца и минимальное количество добровольцев, enforced per церковь-wide `ratioEnforcement` setting |
-| `minAgeMonths` / `maxAgeMonths` / `minGrade` / `maxGrade` | Границы приемлемости по возрасту/оценке оцененные киоском-side для highlight или dim комнаты |
+| `trackAttendance` | Группа вообще участвует в посещаемости; дерево настройки B1Admin помечает группы с `trackAttendance`, но без строки `groupServiceTimes`, как неназначенные |
+| `parentPickup` | Отмечает детскую комнату: регистрация в неё делает посещение «детским», что печатает семейную наклейку для выдачи и наносит код безопасности на бейдж |
+| `printNametag` | Печатается ли вообще бейдж при регистрации в эту группу |
+| `capacity` / `guestCapacity` / `checkinClosed` | Ограничения вместимости комнаты и жёсткий переключатель «закрыто», применяемые на стороне сервера шлюзом регистрации (редактируются в настройках группы B1Admin в разделе «Check-In Capacity») |
+| `volunteerRatio` / `minVolunteers` | Соотношение детей на волонтёра и минимальное число волонтёров, применяемые согласно церковной настройке `ratioEnforcement` |
+| `minAgeMonths` / `maxAgeMonths` / `minGrade` / `maxGrade` | Границы приемлемости по возрасту/классу, оцениваемые на стороне киоска для выделения или затемнения комнат |
 
-Каждый клиент denormalizes тот же способ (например `B1Checkin/app/services.tsx`, `B1App/src/app/[sdSlug]/mobile/components/screens/CheckinPage.tsx`): load `GET /attendance/servicetimes?serviceId=`, `GET /attendance/groupservicetimes` и `GET /membership/groups` в parallel, затем для каждого времени служения собрать группы чьи `groupServiceTimes` строка указывает это в `serviceTime.groups`. Этот массив это что room picker показывает, organized по группе `categoryName`.
+Каждый клиент денормализует данные одинаковым образом (например, `B1Checkin/app/services.tsx`, `B1App/src/app/[sdSlug]/mobile/components/screens/CheckinPage.tsx`): параллельно загружает `GET /attendance/servicetimes?serviceId=`, `GET /attendance/groupservicetimes` и `GET /membership/groups`, затем для каждого времени служения собирает группы, чья строка `groupServiceTimes` указывает на него, в `serviceTime.groups`. Именно этот массив отображает выбор комнаты, организованный по полю группы `categoryName`.
 
-Assignments редактируются из страницы группы в B1Admin (`B1Admin/src/groups/components/ServiceTimesEdit.tsx` — `POST`/`DELETE /attendance/groupservicetimes`), и целые Campus → Service → Service Time → Group дерево visualized в `B1Admin/src/attendance/components/AttendanceSetup.tsx` через `GET /attendance/attendancerecords/tree`.
+Назначения редактируются со страницы группы в B1Admin (`B1Admin/src/groups/components/ServiceTimesEdit.tsx` — `POST`/`DELETE /attendance/groupservicetimes`), а всё дерево «Кампус → Служение → Время служения → Группа» визуализируется в `B1Admin/src/attendance/components/AttendanceSetup.tsx` через `GET /attendance/attendancerecords/tree`.
 
 :::info
-Потому что группы это единственный источник истины, та же членство группы питает киоск routing, roster-style посещаемость в B1Admin группе pages и посещаемость reporting — assigning группу к time служения это единственный шаг нужный сделать это check-in destination.
+Поскольку группы — единственный источник истины, одно и то же членство в группе управляет маршрутизацией киоска, посещаемостью в стиле журнала на страницах групп B1Admin и отчётностью по посещаемости — назначение группы на время служения является единственным шагом, необходимым, чтобы сделать её пунктом регистрации.
 :::
 
-## Защита детей
+## Детская безопасность
 
-### Типы регистрации при прибытии
+### Типы регистрации
 
-Каждое посещение несет `checkinType` — `member`, `guest` или `volunteer` (NULL означает legacy/member; migration `tools/migrations/attendance/2026-07-03_checkin_type.ts`). Тип выбран **киоском-side**: Member / Guest / Volunteer chips на expanded member row (`B1Checkin/src/components/MemberServiceTimes.tsx`), stamped на каждого pending посещение на completion (`app/checkinComplete.tsx`, defaulting к `member`). Сервер потребляет его в шлюзе — добровольцы count toward ratio coverage вместо against capacity и гости count against `guestCapacity`.
+Каждое посещение несёт `checkinType` — `member`, `guest` или `volunteer` (NULL означает устаревшее значение/member; миграция `tools/migrations/attendance/2026-07-03_checkin_type.ts`). Тип выбирается **на стороне киоска**: чипы Member / Guest / Volunteer на развёрнутой строке участника (`B1Checkin/src/components/MemberServiceTimes.tsx`), проставляются на каждое ожидающее посещение при завершении (`app/checkinComplete.tsx`, по умолчанию `member`). Сервер использует это значение в шлюзе — волонтёры засчитываются в покрытие соотношения, а не против вместимости, а гости засчитываются против `guestCapacity`.
 
-### Шлюзы вместимости и добровольческого соотношения
+### Проверки вместимости и соотношения волонтёров
 
-`CheckinGateHelper.evaluate()` (`Api/src/modules/attendance/helpers/CheckinGateHelper.ts`) runs внутри `postCheckin` перед любым сохранением (конечная точка non-transactional, поэтому gating-before-save это correctness механизм). Он загружает текущее занятие per целевую группу (`VisitRepo.countActiveByGroupToday`) и конфиг группы через gateway membership модуля, затем classifies нарушения:
+`CheckinGateHelper.evaluate()` (`Api/src/modules/attendance/helpers/CheckinGateHelper.ts`) выполняется внутри `postCheckin` перед любой записью (конечная точка не транзакционна, поэтому проверка перед сохранением — это механизм обеспечения корректности). Он загружает текущую занятость по каждой целевой группе (`VisitRepo.countActiveByGroupToday`) и конфигурацию группы через шлюз модуля членства, затем классифицирует нарушения:
 
-- **Hard (always block):** `checkinClosed`, `current + incoming > capacity`, guest count over `guestCapacity`. Партия rejected с `409 { error: "capacity", groups: [{ groupId, groupName, reason }] }` — киоск shows названная комната.
-- **Ratio (warn или block):** incoming non-volunteers в комнату где `volunteers < minVolunteers`, no volunteers вообще или `children > volunteers × volunteerRatio`. Severity следует per-church setting `ratioEnforcement` (`"warn"` default / `"block"`, edited в B1Admin Manage Church → Check-In, `CheckinSettingsEdit.tsx`). Warn-mode возвращает `409 { warning: true, error: "ratio", … }` unless клиент resubmits с `acknowledgeWarnings=true` — этот resubmit это киоска staff-confirm override.
+- **Жёсткие (всегда блокируют):** `checkinClosed`, `current + incoming > capacity`, число гостей превышает `guestCapacity`. Пакет отклоняется с `409 { error: "capacity", groups: [{ groupId, groupName, reason }] }` — киоск показывает названную комнату.
+- **По соотношению (предупреждение или блокировка):** прибывающие не-волонтёры в комнату, где `volunteers < minVolunteers`, отсутствие волонтёров вовсе, или `children > volunteers × volunteerRatio`. Строгость определяется церковной настройкой `ratioEnforcement` (по умолчанию `"warn"` / `"block"`, редактируется в B1Admin в разделе «Manage Church → Check-In», `CheckinSettingsEdit.tsx`). Режим предупреждения возвращает `409 { warning: true, error: "ratio", … }`, если клиент не повторит отправку с `acknowledgeWarnings=true` — эта повторная отправка и есть подтверждающее переопределение персонала на киоске.
 
-### Age/grade приемлемость (киоск-side)
+### Приемлемость по возрасту/классу (на стороне киоска)
 
-Приемлемость комнаты это advisory UI, оцененная на киоске не enforced by the server. `B1Checkin/src/helpers/EligibilityHelper.ts` сравнивает день рождения человека/оценку против группы `minAgeMonths`/`maxAgeMonths`/`minGrade`/`maxGrade` (grade order: PreK, K, 1–12, Graduated) и возвращает `eligible` / `ineligible` / `unknown` — отсутствующие данные yields `unknown` и никогда не прячет комнату. Возраста и оценки вычислены as of церковь's **grade promotion date** (`gradePromotionDate` setting, `"MM-DD"`, edited в `B1Admin/src/settings/components/GradePromotionSettingsEdit.tsx`); киоск fetches это из `GET /attendance/checkin/settings` и `resolveAsOfDate` picks самое recent occurrence на или перед today. Room picker highlights eligible комнаты и dims ineligible ones; picking dimmed комната требует staff confirmation.
+Приемлемость комнаты — это рекомендательный интерфейс, оцениваемый на киоске, а не применяемый сервером. `B1Checkin/src/helpers/EligibilityHelper.ts` сравнивает дату рождения/класс человека с `minAgeMonths`/`maxAgeMonths`/`minGrade`/`maxGrade` группы (порядок классов: PreK, K, 1–12, Graduated) и возвращает `eligible` / `ineligible` / `unknown` — отсутствующие данные дают `unknown` и никогда не скрывают комнату. Возраста и классы вычисляются по состоянию на церковную **дату перехода в следующий класс** (настройка `gradePromotionDate`, формат `"MM-DD"`, редактируется в `B1Admin/src/settings/components/GradePromotionSettingsEdit.tsx`); киоск получает её из `GET /attendance/checkin/settings`, а `resolveAsOfDate` выбирает самое недавнее наступление даты на сегодня или ранее. Выбор комнаты выделяет подходящие комнаты и затемняет неподходящие; выбор затемнённой комнаты требует подтверждения персонала.
 
-### Доверенный и неавторизованный забирающий
+### Доверенные и неавторизованные лица для выдачи
 
-Забирающие люди это membership сущность, per домашнее хозяйство: `householdPickupPeople` (`Api/src/modules/membership/models/HouseholdPickupPerson.ts` — householdId, optional personId, name, photoUrl, relationship, `status` `trusted` / `notAuthorized`, notes). CRUD это `GET /membership/householdpickup/:householdId` (any authenticated церковь user, поэтому киоски могут читать это) плюс `POST` / `DELETE` gated by `people.edit`. Персонал manage список на person page's **Pickup** card (`B1Admin/src/people/components/PickupPeople.tsx`) — фото, relationship и Trusted/Not Authorized status chip.
+Лица для выдачи — это сущность членства, привязанная к домохозяйству: `householdPickupPeople` (`Api/src/modules/membership/models/HouseholdPickupPerson.ts` — householdId, необязательный personId, name, photoUrl, relationship, `status` `trusted` / `notAuthorized`, notes). CRUD выполняется через `GET /membership/householdpickup/:householdId` (любой аутентифицированный пользователь церкви, поэтому киоски могут это читать) плюс `POST` / `DELETE`, доступ к которым ограничен `people.edit`. Персонал управляет списком на карточке **Pickup** страницы человека (`B1Admin/src/people/components/PickupPeople.tsx`) — фото, отношение и чип статуса «Доверенный/Не авторизован».
 
-На check-out (`B1Checkin/app/checkout.tsx`) киоск loads домашнее хозяйство pickup список: `trusted` entries render как tappable pickup карточки alongside household-adult photo grid и free-typed "Other" имя is fuzzy-matched (Levenshtein, `src/helpers/PickupMatchHelper.ts`) against `notAuthorized` entries — match блокирует check-out с warning лист и staff **Override** кнопка. Override logged на посещение самое: оно posts `checkedOutBy` как `"OVERRIDE: {name}"` через normal `POST /attendance/visits/checkout` поэтому это lands в attendance record и `attendance.checkout` webhook вместо отдельная audit таблица.
+При выдаче (`B1Checkin/app/checkout.tsx`) киоск загружает список лиц для выдачи домохозяйства: записи `trusted` отображаются как нажимаемые карточки рядом с сеткой фото взрослых членов домохозяйства, а свободно введённое имя «Другое» сопоставляется нечётким совпадением (алгоритм Левенштейна, `src/helpers/PickupMatchHelper.ts`) с записями `notAuthorized` — совпадение блокирует выдачу с предупреждающей панелью и кнопкой персонала **Override**. Переопределение фиксируется прямо в самом посещении: оно отправляет `checkedOutBy` как `"OVERRIDE: {name}"` через обычный `POST /attendance/visits/checkout`, так что это попадает в запись посещаемости и вебхук `attendance.checkout`, а не в отдельную таблицу аудита.
 
-### Пейджинг родителя и экстренное вещание
+### Вызов родителя и экстренная рассылка
 
-`CheckinController` (`Api/src/modules/attendance/controllers/CheckinController.ts`, `/attendance/checkin`) выставляет два SMS конечные точки:
+`CheckinController` (`Api/src/modules/attendance/controllers/CheckinController.ts`, `/attendance/checkin`) предоставляет две SMS-конечные точки:
 
-- `POST /page` — `{ visitId, message }`: pages guardiansа one checked-in child (киоск check-out screen, manned mode).
-- `POST /broadcast` — `{ serviceId, message }`: texts все checked-in домашнее хозяйство's adults для serving (киоск admin settings, behind type-`EMERGENCY`-to-confirm sheet в `B1Checkin/app/adminSettings.tsx`).
+- `POST /page` — `{ visitId, message }`: вызывает опекунов одного зарегистрированного ребёнка (экран выдачи на киоске, режим с персоналом).
+- `POST /broadcast` — `{ serviceId, message }`: рассылает SMS взрослым всех зарегистрированных домохозяйств для служения (настройки администратора киоска, за панелью подтверждения набором слова `EMERGENCY` в `B1Checkin/app/adminSettings.tsx`).
 
-Оба resolve household adults через membership gateway, затем hand delivery к **`MessagingModuleGateway.sendBulkText`** (`Api/src/shared/modules/MessagingModuleGateway.ts`) — cross-module дверь в церковь's configured texting provider (`@churchapps/texting`: TextInChurch, Clearstream или MutualMinistry; нет built-in SMS sender). Gateway logs `sentText` row плюс per-recipient `deliveryLog` entries и caps batch на 500 recipients; с no provider configured это возвращает `no_provider` которая киоск surfaces как "No SMS provider configured". Dispatcher контроллера's `dispatch()` dedupes phone numbers и skips люди с no mobile или `optedOut` set, возвращая `{ sent, failed, skippedOptedOut, skippedNoPhone }` поэтому киоск может показать что было skipped.
+Оба разрешают взрослых домохозяйства через шлюз членства, а затем передают доставку **`MessagingModuleGateway.sendBulkText`** (`Api/src/shared/modules/MessagingModuleGateway.ts`) — межмодульной двери к настроенному провайдеру SMS-сообщений церкви (`@churchapps/texting`: TextInChurch, Clearstream или MutualMinistry; встроенного отправителя SMS нет). Шлюз логирует строку `sentText` плюс записи `deliveryLog` для каждого получателя и ограничивает пакет 500 получателями; если провайдер не настроен, возвращается `no_provider`, что киоск отображает как «No SMS provider configured». Метод `dispatch()` контроллера удаляет дубликаты номеров телефона и пропускает людей без мобильного номера или с установленным `optedOut`, возвращая `{ sent, failed, skippedOptedOut, skippedNoPhone }`, чтобы киоск мог показать, что было пропущено.
 
 ## Киоск (B1Checkin)
 
-Экраны это expo-router файлы under `B1Checkin/app/`; cross-screen state lives в static `CachedData` class (`src/helpers/CachedData.ts`), not React state.
+Экраны — это файлы expo-router в `B1Checkin/app/`; состояние между экранами живёт в статическом классе `CachedData` (`src/helpers/CachedData.ts`), а не в состоянии React.
 
 ```
 index (boot/auto-login) → selectChurch → services ──▶ lookup ──▶ household ──▶ checkinComplete
@@ -142,56 +142,60 @@ index (boot/auto-login) → selectChurch → services ──▶ lookup ──▶
              labelTemplates               │                                            to lookup
 ```
 
-1. **Lookup** (`app/lookup.tsx`) — search по phone (`GET /membership/people/search/phone?number=`, last-4 или full) или по name (`GET /membership/people/search?term=`). Selecting match loads домашнее хозяйство (`GET /membership/people/household/{householdId}`) и existing visits (`GET /attendance/visits/checkin`), seeding `pendingVisits` с last week's selections.
-2. **Household review** (`app/household.tsx`, `src/components/MemberList.tsx`) — каждая member row shows already-checked-in badge, allergy/`nametagNotes` badge и их current room chips. Expanding member lists каждый service time с room кнопка плюс Member / Guest / Volunteer check-in-type chips (`MemberServiceTimes.tsx`).
-3. **Group assignment** (`app/selectGroup.tsx`) — category tree built из `serviceTime.groups`, с age/grade-eligible комнаты highlighted и ineligible ones dimmed за staff confirm (see [Age/grade eligibility](#agegrade-eligibility-kiosk-side)); picking комната пишет `{ session: { serviceTimeId, groupId } }` visitSession into этого person's pending посещение (`src/helpers/VisitSessionHelper.ts`). "None" это clears это.
-4. **Complete** (`app/checkinComplete.tsx`) — `POST /attendance/visits/checkin` с `pendingVisits` (каждый stamped с его `checkinType`), затем prints labels если printer configured и auto-returns к lookup. `409` capacity response shows названная full/closed комната; ratio warning предлагает staff confirm который resubmits с `acknowledgeWarnings=true`.
+1. **Поиск** (`app/lookup.tsx`) — поиск по телефону (`GET /membership/people/search/phone?number=`, последние 4 цифры или полностью) или по имени (`GET /membership/people/search?term=`). Выбор совпадения загружает домохозяйство (`GET /membership/people/household/{householdId}`) и существующие посещения (`GET /attendance/visits/checkin`), заполняя `pendingVisits` выборами прошлой недели.
+2. **Обзор домохозяйства** (`app/household.tsx`, `src/components/MemberList.tsx`) — каждая строка участника показывает значок «уже зарегистрирован», значок аллергии/`nametagNotes` и текущие чипы комнат. Раскрытие участника показывает каждое время служения с кнопкой комнаты плюс чипы типа регистрации Member / Guest / Volunteer (`MemberServiceTimes.tsx`).
+3. **Назначение группы** (`app/selectGroup.tsx`) — дерево категорий, построенное из `serviceTime.groups`, с выделенными подходящими по возрасту/классу комнатами и затемнёнными неподходящими за подтверждением персонала (см. [Приемлемость по возрасту/классу](#приемлемость-по-возрастуклассу-на-стороне-киоска)); выбор комнаты записывает `{ session: { serviceTimeId, groupId } }` visitSession в ожидающее посещение этого человека (`src/helpers/VisitSessionHelper.ts`). «None» очищает выбор.
+4. **Завершение** (`app/checkinComplete.tsx`) — `POST /attendance/visits/checkin` с `pendingVisits` (каждое проштамповано своим `checkinType`), затем печатает наклейки, если настроен принтер, и автоматически возвращается к поиску. Ответ `409` о вместимости показывает названную полную/закрытую комнату; предупреждение о соотношении предлагает подтверждение персонала, которое повторяет отправку с `acknowledgeWarnings=true`.
 
-**Check-out** экран (`app/checkout.tsx`) принимает 4-значный код безопасности через auto-focused input — поэтому USB/Bluetooth keyboard-wedge barcode scanners work с no camera — или on-screen keypad используя то же самое алфавит, auto-submitting в 4 символов. Он looks up код, shows дети being picked up и presents домашнее хозяйство's **trusted pickup люди** как tappable карточки alongside photo grid household adults (плюс "Other" free-text опцией это is fuzzy-checked against not-authorized имена — see [Trusted and not-authorized pickup](#trusted-and-not-authorized-pickup)), затем posts `POST /attendance/visits/checkout` с picker's имя/id. В manned mode экран также предложения **Page parent** (`POST /attendance/checkin/page`) и **security-label reprint** — `reprint()` rebuilds семья's labels с `LabelHelper.getAllLabelsFor(...)` и feeds их through same `PrintUI` pipeline как check-in.
+Экран **выдачи** (`app/checkout.tsx`) принимает 4-символьный код безопасности через поле с автофокусом — так что USB/Bluetooth сканеры штрихкодов типа «клавиатурный клин» работают без камеры — или экранную клавиатуру с тем же алфавитом, автоматически отправляя при вводе 4 символов. Он ищет код, показывает детей, которых нужно забрать, и предлагает **доверенных лиц для выдачи** домохозяйства как нажимаемые карточки рядом с сеткой фото взрослых домохозяйства (плюс опция свободного ввода «Другое», которая проверяется нечётким сравнением с неавторизованными именами — см. [Доверенные и неавторизованные лица для выдачи](#доверенные-и-неавторизованные-лица-для-выдачи)), затем отправляет `POST /attendance/visits/checkout` с именем/id выбравшего. В режиме с персоналом экран также предлагает **Вызов родителя** (`POST /attendance/checkin/page`) и **повторную печать наклейки безопасности** — `reprint()` пересобирает наклейки семьи через `LabelHelper.getAllLabelsFor(...)` и пропускает их через тот же конвейер `PrintUI`, что и при регистрации.
 
-Station personality это AsyncStorage flag `@StationMode` (`"self"` | `"manned"`, toggled в `app/adminSettings.tsx`). Manned mode добавляет check-out entry point на lookup экран и per-member profile editing (`POST /membership/people`) из household экран. Киоск hardening это built in: optional PIN (`app/setPin.tsx`, `src/components/PinEntryModal.tsx`) gates the admin и printer экраны admin экран opens только через 7 rapid taps на header logo и idle attract экран (`src/hooks/useInactivityTimer.ts`) takes over between families.
+Личность станции — это флаг AsyncStorage `@StationMode` (`"self"` | `"manned"`, переключается в `app/adminSettings.tsx`). Режим с персоналом добавляет точку входа выдачи на экране поиска и редактирование профиля отдельного участника (`POST /membership/people`) с экрана домохозяйства. Защита киоска встроена: опциональный PIN-код (`app/setPin.tsx`, `src/components/PinEntryModal.tsx`) ограничивает доступ к экранам администратора и принтера, экран администратора открывается только через 7 быстрых нажатий на логотип в заголовке, а экран привлечения внимания в режиме простоя (`src/hooks/useInactivityTimer.ts`) перехватывает управление между семьями.
 
 ## Самостоятельная регистрация (B1App)
 
-Участники check в з b1.church портала at `/mobile/checkin` экран (routed by `B1App/src/app/[sdSlug]/mobile/components/ScreenRouter.tsx` к `screens/CheckinPage.tsx`). Это требует logged-in user и walks same четыре шаги as киоск — services → household → groups → complete — against identical конечные точки с state held в `B1App/src/helpers/CheckinHelper.ts`. Различия из киоска: домашнее хозяйство comes из logged-in user's собственный `householdId` (no search step) и flow ends на confirmation экран — no security code display и no label printing. Types и `ApiHelper`/`ArrayHelper` come из `@churchapps/helpers` и `@churchapps/apphelper`; no React компоненты это shared с B1Admin.
+Участники регистрируются из портала b1.church на экране `/mobile/checkin` (маршрутизируется `B1App/src/app/[sdSlug]/mobile/components/ScreenRouter.tsx` к `screens/CheckinPage.tsx`). Требует авторизованного пользователя и проходит те же четыре шага, что и киоск — службы → домохозяйство → группы → завершение — через идентичные конечные точки, с состоянием, хранящимся в `B1App/src/helpers/CheckinHelper.ts`. Отличия от киоска: домохозяйство берётся из собственного `householdId` авторизованного пользователя (шаг поиска отсутствует), и печати наклеек нет — вместо этого экран завершения показывает код безопасности пакета в виде QR-кода (`qrcode.react`) с подсказкой «покажите это на станции регистрации». Если домохозяйство уже зарегистрировано на момент загрузки страницы, кнопка «Показать код регистрации» повторно отображает QR-код из `securityCode` существующего посещения. Регистрация фиксируется немедленно в момент отправки (состояния ожидания нет); QR-код только управляет печатью наклеек на киоске.
 
-## Admin-side посещаемость (B1Admin)
+**Печать наклеек с телефона на киоске** (`B1Checkin/app/scan.tsx`, доступен по кнопке «Scan code» на экране поиска): киоск открывает `expo-camera` `CameraView` (по умолчанию фронтальная камера, можно переключить), сканирующую QR-коды. Отсканированные данные принимаются, если это простой 4-символьный код в алфавите кодов безопасности, так что подходят и QR-код из B1App, и QR-блок на печатной наклейке. Затем экран следует по тому же пути повторной печати, что и при выдаче — `GET /attendance/visits/code/{code}` → `GET /membership/people/ids` → `LabelHelper.getAllLabelsFor(visits, people, code)` → `PrintUI` — и возвращается к поиску. В момент сканирования запись о посещении не производится; только наклейки. Коды без активных посещений, станции без принтера и группы без наклеек каждый выводят всплывающее уведомление и возвращают к поиску.
 
-- **Setup** — `/attendance` (`B1Admin/src/attendance/AttendancePage.tsx`) renders структура tree и creates services (`ServiceEdit.tsx`) и service times (`ServiceTimeEdit.tsx`). Campus data comes из membership через `useCampuses()` hook.
-- **Manual attendance** lives на Groups side не attendance раздел: `B1Admin/src/groups/components/GroupSessionsTab.tsx` creates sessions (`POST /attendance/sessions`) и marks люди present via `POST /attendance/visitsessions/log` которая finds-или-creates посещение для этого person и session. Group лидеры могут record посещаемость для их собственный группы без `attendance.edit` разрешение — контроллеры check `au.leaderGroupIds`.
-- **Reporting** — attendance тренд и group посещаемость это server-defined отчеты (`B1Admin/src/components/reporting/ReportWithFilter.tsx` against ReportingApi); per-person история это `GET /attendance/attendancerecords?personId=` (`B1Admin/src/people/components/PersonAttendance.tsx`).
+Типы и `ApiHelper`/`ArrayHelper` берутся из `@churchapps/helpers` и `@churchapps/apphelper`; ни один React-компонент не является общим с B1Admin.
 
-## Печать этикеток
+## Посещаемость на стороне администрирования (B1Admin)
 
-### Шаблоны и дизайнер
+- **Настройка** — `/attendance` (`B1Admin/src/attendance/AttendancePage.tsx`) отображает дерево структуры и создаёт службы (`ServiceEdit.tsx`) и времена служения (`ServiceTimeEdit.tsx`). Данные кампуса приходят из членства через хук `useCampuses()`.
+- **Ручной ввод посещаемости** живёт на стороне групп, а не в разделе посещаемости: `B1Admin/src/groups/components/GroupSessionsTab.tsx` создаёт сеансы (`POST /attendance/sessions`) и отмечает присутствие через `POST /attendance/visitsessions/log`, который находит или создаёт посещение для этого человека и сеанса. Лидеры групп могут записывать посещаемость для собственных групп без разрешения `attendance.edit` — контроллеры проверяют `au.leaderGroupIds`.
+- **Отчётность** — тренд посещаемости и посещаемость по группам — это отчёты, определённые сервером (`B1Admin/src/components/reporting/ReportWithFilter.tsx` против ReportingApi); история по конкретному человеку — `GET /attendance/attendancerecords?personId=` (`B1Admin/src/people/components/PersonAttendance.tsx`).
 
-Церкви design их own этикетки в B1Admin в `/mobile/checkin/labels` (`B1Admin/src/attendance/LabelsPage.tsx` + `components/LabelEditor.tsx` reached из Check-In settings page). Template это `labelTemplates` строка чья `content` это JSON массив blocks — `text`, `field`, `barcode`, `qrcode` или `box` — каждая positioned в percent coordinates с font, alignment, symbology (`code39`/`code128`/`qr`) и optional visibility условия (например только render allergy box когда `person.nametagNotes` is non-empty). Два `labelType`s exist: `nametag` (one per checked-in person; fields как `person.displayName`, `sessions`, `securityCode`) и `pickup` (one per family; fields как `children`, `childrenAllergies`). Сервер enforces single default per type per church (`LabelTemplateController.save`). Дизайнер ships starter templates mirroring киоска's bundled labels и previews against sample данные.
+## Печать наклеек
 
-### Rendering и printing на киоске
+### Шаблоны и конструктор
 
-В check-in completion `B1Checkin/src/helpers/LabelHelper.ts` decides что to print из group flags на каждого pending visit: nametags для `printNametag` группы плюс one семья pickup label если any visit hit `parentPickup` группа. Security code из check-in response goes на child nametags и pickup label; adult nametags print без code. Если church has templates `LabelRenderer` (`src/helpers/LabelRenderer.ts`) turns blocks + field context в standalone HTML документ; иначе bundled HTML labels в `B1Checkin/assets/labels/` используются с placeholder substitution.
+Церкви разрабатывают собственные наклейки в B1Admin на `/mobile/checkin/labels` (`B1Admin/src/attendance/LabelsPage.tsx` + `components/LabelEditor.tsx`, доступен со страницы настроек Check-In). Шаблон — это строка `labelTemplates`, чьё поле `content` представляет собой JSON-массив блоков — `text`, `field`, `barcode`, `qrcode` или `box` — каждый расположен в процентных координатах со шрифтом, выравниванием, символикой (`code39`/`code128`/`qr`) и опциональными условиями видимости (например, отображать блок аллергии, только когда `person.nametagNotes` непусто). Существует два `labelType`: `nametag` (один на зарегистрированного человека; поля вроде `person.displayName`, `sessions`, `securityCode`) и `pickup` (один на семью; поля вроде `children`, `childrenAllergies`). Сервер обеспечивает единственный шаблон по умолчанию на тип для каждой церкви (`LabelTemplateController.save`). Конструктор поставляется со стартовыми шаблонами, повторяющими встроенные наклейки киоска, и предпросмотром на образцах данных.
 
-Barcodes это generated как inline SVG by pure-TypeScript encoders в `B1Checkin/src/helpers/barcode.ts` — Code 39 pattern таблицы и Code 128 (code set B с mod-103 checksum) width таблицы плюс QR через `qrcode` package. **These encoders это intentionally duplicated в B1Admin** (`LabelEditor.tsx` inlines same таблицы noted в code comment) поэтому designer previews это pixel-faithful к киоска output; change к one must быть mirrored в other.
+### Рендеринг и печать на киоске
 
-Print pipeline (`src/components/PrintUI.tsx`) renders каждый HTML label в `WebView` captures его к JPG via `react-native-view-shot` и hands image URIs к native **printer-helper** Expo модулю (`B1Checkin/modules/printer-helper/`). Модуль exposes `scan()`, `checkInit()`, `printUris()` и status события с provider per brand на обоих platforms:
+При завершении регистрации `B1Checkin/src/helpers/LabelHelper.ts` решает, что печатать, на основе флагов группы у каждого ожидающего посещения: бейджи для групп с `printNametag`, плюс одна семейная наклейка для выдачи, если хотя бы одно посещение попало в группу с `parentPickup`. Код безопасности из ответа регистрации наносится на детские бейджи и наклейку для выдачи; взрослые бейджи печатаются без кода. Если у церкви есть шаблоны, `LabelRenderer` (`src/helpers/LabelRenderer.ts`) превращает блоки и контекст полей в самостоятельный HTML-документ; в противном случае используются встроенные HTML-наклейки в `B1Checkin/assets/labels/` с подстановкой заполнителей.
+
+Штрихкоды генерируются как встроенный SVG чистыми TypeScript-кодировщиками в `B1Checkin/src/helpers/barcode.ts` — таблицы паттернов Code 39 и таблицы ширины Code 128 (набор символов B с контрольной суммой по модулю 103), плюс QR через пакет `qrcode`. **Эти кодировщики намеренно продублированы в B1Admin** (`LabelEditor.tsx` встраивает те же таблицы, что отмечено комментарием в коде), чтобы предпросмотры в конструкторе точно до пикселя соответствовали выводу киоска; изменение в одном месте нужно отразить в другом.
+
+Конвейер печати (`src/components/PrintUI.tsx`) отображает каждую HTML-наклейку в `WebView`, захватывает её в JPG через `react-native-view-shot` и передаёт URI изображений нативному Expo-модулю **printer-helper** (`B1Checkin/modules/printer-helper/`). Модуль предоставляет `scan()`, `checkInit()`, `printUris()` и события статуса, с провайдером для каждого бренда на обеих платформах:
 
 | Бренд | Android | iOS | Примечания |
 |-------|---------|-----|-------|
-| Brother | `BrotherProvider.kt` (Brother print SDK) | `BrotherProvider.swift` (`BRLMPrinterKit.xcframework`) | QL-series network принтеры (QL-800/810W/820NWB/1100/1110NWB…) die-cut 29×90 labels рекомендуемый default |
-| Zebra | `ZebraProvider.kt` (Link-OS SDK) | `ZebraProvider.swift` + `ZebraBridge` | Network discovery + TCP/ZPL image printing |
+| Brother | `BrotherProvider.kt` (Brother print SDK) | `BrotherProvider.swift` (`BRLMPrinterKit.xcframework`) | Сетевые принтеры серии QL (QL-800/810W/820NWB/1100/1110NWB…), высекаемые наклейки 29×90, рекомендуемый вариант по умолчанию |
+| Zebra | `ZebraProvider.kt` (Link-OS SDK) | `ZebraProvider.swift` + `ZebraBridge` | Сетевое обнаружение + печать изображений по TCP/ZPL |
 
-Printer selection lives в `app/printers.tsx` (network scan возвращает `brand~model~ip` entries; choice persists к AsyncStorage) и `src/helpers/PrinterLog.ts` keeps on-device diagnostic log surfaced через live status dot в киоска header.
+Выбор принтера живёт на `app/printers.tsx` (сетевое сканирование возвращает записи `brand~model~ip`; выбор сохраняется в AsyncStorage), а `src/helpers/PrinterLog.ts` ведёт диагностический журнал на устройстве, отображаемый через индикатор статуса в реальном времени в заголовке киоска.
 
-## Guest регистрация
+## Регистрация гостей
 
-Два пути create person mid-check-in:
+Два пути создают человека в процессе регистрации:
 
-- **На киоске** — household экран's "Add guest" opens `B1Checkin/app/addGuest.tsx` которая сначала searches `GET /membership/people/search?term=` для existing non-member match и иначе creates один с `POST /membership/people` attached к current домашнее хозяйство. Guest затем flows через group assignment как any member.
-- **Self-serve через QR** — когда church setting `enableQRGuestRegistration` это on (configured в B1Admin's Check-In settings read из `GET /membership/settings/public/{churchId}`) киоск lookup экран shows QR code linking к `https://{subdomain}.b1.church/guest-register?serviceId=`. Этот B1App page (`src/app/[sdSlug]/(public)/guest-register/page.tsx`) lets visiting семья register сами на их собственный phone через anonymous `POST /membership/people/guest-register` конечная точка keeping киоск line moving.
+- **На киоске** — кнопка «Add guest» на экране домохозяйства открывает `B1Checkin/app/addGuest.tsx`, который сначала ищет через `GET /membership/people/search?term=` существующее совпадение не-участника, а иначе создаёт нового через `POST /membership/people`, привязанного к текущему домохозяйству. Затем гость проходит через назначение группы, как и любой участник.
+- **Самообслуживание через QR-код** — когда включена церковная настройка `enableQRGuestRegistration` (настраивается в разделе Check-In в B1Admin, читается из `GET /membership/settings/public/{churchId}`), экран поиска на киоске показывает QR-код, ведущий на `https://{subdomain}.b1.church/guest-register?serviceId=`. Эта страница B1App (`src/app/[sdSlug]/(public)/guest-register/page.tsx`) позволяет посещающей семье зарегистрироваться самостоятельно на своём телефоне через анонимную конечную точку `POST /membership/people/guest-register`, сохраняя движение очереди на киоске.
 
 ## Связанные страницы
 
-- [Attendance Endpoints](../api/endpoints/attendance) — полный REST поверхность для campuses services sessions visits и visit sessions
-- [Membership Endpoints](../api/endpoints/membership) — люди домашние хозяйства и группы
-- [Webhooks](../api/webhooks) — события `session.created` `attendance.recorded` и `attendance.checkout`
-- [Module Structure](../api/module-structure) — как attendance модуль это organized server-side
+- [Конечные точки посещаемости](../api/endpoints/attendance) -- Полная REST-поверхность для кампусов, служб, сеансов, посещений и сеансов посещений
+- [Конечные точки членства](../api/endpoints/membership) -- Люди, домохозяйства и группы
+- [Вебхуки](../api/webhooks) -- События `session.created`, `attendance.recorded` и `attendance.checkout`
+- [Структура модулей](../api/module-structure) -- Как организован модуль посещаемости на стороне сервера

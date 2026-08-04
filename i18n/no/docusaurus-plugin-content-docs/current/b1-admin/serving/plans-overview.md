@@ -1,92 +1,92 @@
 ---
-title: "Planoversikt"
+title: "Oversikt over planer"
 ---
 
-# Planoversikt
+# Oversikt over planer
 
 <div class="article-intro">
 
-Planoversikten gir deg et fugleperspektiv over alle frivilliges tildelinger på tvers av flere tjenestesdatoer på en gang. I stedet for å åpne hver plan individuelt, kan du se hvem som tjener i hver stilling på tvers av kommende uker i et enkelt nett -- og raskt oppdage eventuelle hull som fortsatt trenger å fylles.
+Oversikten over planer gir deg et fugleperspektiv over alle frivillig-tildelingene dine på tvers av flere gudstjenestedatoer samtidig. I stedet for å åpne hver plan individuelt, kan du se hvem som tjenestegjør i hver posisjon på tvers av kommende uker i ett samlet rutenett — og raskt oppdage eventuelle hull som fortsatt må fylles.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Opprett minst ett ministerium og plantype på tjenesteområdet
-- Opprett [tjenestedplaner](./plans.md) med datoer og frivilligs tildelinger
-- Sikr at frivillige har blitt lagt til i [menneskekatalogen](../people/adding-people.md)
+- Opprett minst ett tjenesteområde (Ministry) og én plantype i Tjeneste-området
+- Opprett [gudstjenesteplaner](./plans.md) med datoer og frivillig-tildelinger
+- Sørg for at de frivillige er lagt til i [personkatalogen](../people/adding-people.md)
 
 </div>
 
-## Tilgang til oversikten
+## Åpne oversikten
 
-1. Naviger til **Tjener** fra hovedmenyen i B1 Admin.
-2. Velg en **ministeriets fane** øverst på siden.
-3. Klikk på en **plantype** for å åpne listen over planer.
-4. Klikk **Oversikt**-knappen nær toppen av siden.
+1. Naviger til **Tjeneste** fra hovedmenyen i B1 Admin.
+2. Velg en **tjenesteområde-fane** øverst på siden.
+3. Klikk på en **plantype** for å åpne planlisten.
+4. Klikk på **Oversikt**-knappen nær toppen av siden.
 
-## Lesing av oversiktnettet
+## Lese oversiktsrutenettet
 
-Oversikten viser et nett hvor:
+Oversikten viser et rutenett hvor:
 
-- **Rader** representerer hver stilling (f.eks. "Musikk: Gitar", "Tech: Projeksjon") gruppert etter kategori
-- **Kolonner** representerer kommende tjenestesdatoer (f.eks. "14. april", "21. april")
-- **Celler** viser navnet på frivilliges som er tildelt den stillingen på den datoen
+- **Rader** representerer hver posisjon (f.eks. «Musikk: Gitar», «Teknikk: Prosjeksjon») gruppert etter kategori
+- **Kolonner** representerer kommende gudstjenestedatoer (f.eks. «14. apr», «21. apr»)
+- **Celler** viser navnet på den frivillige som er tildelt den posisjonen på den datoen
 
-Celler fremhevet i **rødt** er uutstyrt -- ingen frivillige har blitt tildelt ennå. Dette gjør det enkelt å se bemanningshull på et øyeblikk uten å åpne hver plan individuelt.
+Celler som er markert i **rødt** er ubesatte — ingen frivillig er tildelt ennå. Dette gjør det enkelt å se bemanningshull med et raskt blikk uten å åpne hver plan individuelt.
 
 :::tip
-Frivilliges navn vises i et forkortet format (fornavn og etternavn initiale, f.eks. "John D.") for å holde nettet kompakt når du har mange posisjoner.
+Navn på frivillige vises i et forkortet format (fornavn og forbokstav i etternavn, f.eks. «John D.») for å holde rutenettet kompakt når du har mange posisjoner.
 :::
 
-## Tildeling av frivillige direkte fra oversikten
+## Tildele frivillige direkte fra oversikten
 
-Du trenger ikke å åpne individuelle planer for å fylle tomme plass. Klikk en celle i nettet for å åpne et tildelingspanel for den stillingen og datoen. Derfra kan du:
+Du trenger ikke å åpne individuelle planer for å fylle tomme plasser. Klikk på en hvilken som helst celle i rutenettet for å åpne et tildelingspanel for den posisjonen og datoen. Derfra kan du:
 
-- Velg en person fra teamet til å tildele stillingen
-- Klikk **Fjern** ved siden av alle som allerede er tildelt for å trekke dem ut av den plassen
+- Velge en person fra teamet ditt som skal tildeles posisjonen
+- Klikke **Fjern** ved siden av noen som allerede er tildelt for å fjerne dem fra den plassen
 - Lagre endringen uten å forlate oversikten
 
-Dette gjør det mulig å bemanne en helt timeplan på en gang -- arbeide på tvers av uker og posisjoner uten å navigere inn og ut av individuelle planer.
+Dette gjør det mulig å bemanne en hel timeplan i én omgang — arbeide på tvers av uker og posisjoner uten å navigere inn og ut av individuelle planer.
 
-## Auto-planlegging fra oversikten
+## Automatisk planlegging fra oversikten
 
-Klikk **Auto-planlegg** for å få B1 til å fylle hvert åpent, uutstyrt slot i det gjeldende nettet på en gang. For hver plan i visningen trekker den kandidater fra gruppen knyttet til hver stilling og fyller tomme plass automatisk, og rapporterer hvor mange av de synlige planene den kunne fylles. Planer fylles en av gangen slik at samme frivillige ikke er dobbeltbooket på tvers av to datoer i samme pass.
+Klikk **Automatisk planlegging** for å la B1 fylle alle åpne, ubesatte plasser i gjeldende rutenett på én gang. For hver plan som vises, henter den kandidater fra gruppen knyttet til hver posisjon og fyller tomme plasser automatisk, og rapporterer hvor mange av de synlige planene den klarte å fylle. Planer fylles én om gangen, slik at den samme frivillige ikke blir dobbeltbooket på to datoer i samme omgang.
 
 :::info
-Auto-planlegg fyller bare plass som allerede er tomme -- den erstatter aldri en eksisterende tildelelse.
+Automatisk planlegging fyller kun plasser som allerede er tomme — den erstatter aldri en eksisterende tildeling.
 :::
 
-## E-posting av alle planlagte
+## Send e-post til alle planlagte
 
-Klikk **E-post frivillige** for å sende en melding til hver frivillige som er tildelt hvor som helst i det gjeldende filtrerte datointervallet og ministeriet, i en handling, i stedet for e-post plan-for-plan. B1 rapporterer hvor mange e-poster som ble sendt og hvor mange som mislyktes.
+Klikk **E-post til frivillige** for å sende et varsel til hver frivillig som er tildelt et sted som helst innenfor det gjeldende filtrerte datoområdet og tjenesteområdet, i én handling, i stedet for å sende e-post plan for plan. B1 rapporterer hvor mange e-poster som ble sendt og hvor mange som feilet.
 
-## Markering av en frivilligs timeplan
+## Utheve en frivillig sin timeplan
 
-Bruk **Uthev**-rullegardinmenyen for å velge en person fra teamet -- hver celle hvor de er tildelt kalles ut i nettet, slik at du kan se hvor de allerede tjener før du legger dem til en annen slot. Velg **Alle** for å slå uthevingen av.
+Bruk **Uthev**-nedtrekksmenyen for å velge en person fra teamet ditt — hver celle der de er tildelt blir fremhevet i rutenettet, slik at du kan se alle stedene de allerede tjenestegjør før du legger dem til en annen plass. Velg **Alle** for å slå av utheving.
 
-## Filtrering av oversikten
+## Filtrere oversikten
 
 Du kan justere hva oversikten viser ved hjelp av filterkontrollene øverst:
 
-- **Startdato / sluttdato** -- Som standard viser oversikten 12 uker framover. Skriv inn egendefinerte datoer for å utvide eller begrense området.
-- **Ministerium** -- bytt til et annet ministerium uten å forlate oversikten.
-- **Plantype** -- filtrer til en bestemt plantype innen det valgte ministeriet.
-- **Bare uutstyrt** -- Slå dette på for å skjule rader der hver dato allerede er fyllt, slik at du kan fokusere bare på posisjoner som fortsatt trenger en frivillig.
+- **Startdato / Sluttdato** — Som standard viser oversikten 12 uker fremover i tid. Angi egendefinerte datoer for å utvide eller innsnevre perioden.
+- **Tjenesteområde** — Bytt til et annet tjenesteområde uten å forlate oversikten.
+- **Plantype** — Filtrer til en spesifikk plantype innenfor det valgte tjenesteområdet.
+- **Kun ubesatte** — Slå dette på for å skjule rader der alle datoer allerede er fylt, slik at du kan fokusere kun på posisjoner som fortsatt trenger en frivillig.
 
-Klikk **Filter** etter å gjøre endringer for å oppdatere nettet.
+Klikk **Filtrer** etter at du har gjort endringer for å oppdatere rutenettet.
 
-## Eksport til CSV
+## Eksportere til CSV
 
-Klikk **Eksport CSV** for å laste ned det gjeldende nettet som et regneark. Eksporten inkluderer alle posisjoner og frivilligs tildelinger for det filtrerte datointervallet, noe som gjør det enkelt å dele med ministeriledere eller skrive ut for planleggingsmøter.
+Klikk **Eksporter CSV** for å laste ned gjeldende rutenett som et regneark. Eksporten inkluderer alle posisjoner og frivillig-tildelinger for det filtrerte datoområdet, noe som gjør det enkelt å dele med tjenesteledere eller skrive ut til planleggingsmøter.
 
 :::info
-CSV-eksporten gjenspeiler uansett filtre som er for øyeblikket brukt -- bare datoene og plantypene som vises i nettet er inkludert i nedlastingen.
+CSV-eksporten reflekterer hvilke filtre som til enhver tid er brukt — bare datoene og plantypen som vises i rutenettet, inkluderes i nedlastingen.
 :::
 
 ## Relaterte artikler
 
-- [Tjenestedplaner](./plans.md) -- opprett og administrer individuelle tjenestedplaner
-- [Tjenesterekkefølge](./service-order.md) -- bygg sekvensen for tjenestene innen en plan
-- [Planlegging av leksjoner](./scheduling-lessons.md) -- planlegg leksjoner sammen med tjenestesplanene
+- [Gudstjenesteplaner](./plans.md) — Opprett og administrer individuelle gudstjenesteplaner
+- [Gudstjenesterekkefølge](./service-order.md) — Bygg gudstjenesterekkefølgen innenfor en plan
+- [Planlegging av leksjoner](./scheduling-lessons.md) — Planlegg leksjoner sammen med gudstjenesteplanene dine

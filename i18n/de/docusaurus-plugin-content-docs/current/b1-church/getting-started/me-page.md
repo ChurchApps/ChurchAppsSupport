@@ -1,52 +1,52 @@
 ---
-title: "Die Seite 'Ich'"
+title: "Die Seite Ich"
 ---
 
-# Die Seite "Ich"
+# Die Seite Ich
 
 <div class="article-intro">
 
-Die Seite **Ich** ist dein persönliches Dashboard im Mitglieder-Portal – eine chronologische Ansicht von allem, das vor dir kommt: Dienste-Zuweisungen, Event-Registrierungen und die kommenden Events deiner Gruppen, plus deine letzten Benachrichtigungen.
+Die Seite **Ich** ist Ihr persönliches Dashboard im Mitgliederportal — eine chronologische Übersicht über alles, was für Sie ansteht: Diensteinsätze, Veranstaltungsanmeldungen und bevorstehende Veranstaltungen Ihrer Gruppen, sowie Ihre neuesten Benachrichtigungen.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor du beginnst</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Du musst [angemeldet](./logging-in.md) sein – die Seite "Ich" erscheint nur für angemeldete Mitglieder
+- Sie müssen [angemeldet](./logging-in.md) sein — die Seite Ich erscheint nur für angemeldete Mitglieder
 
 </div>
 
-## Öffne die Seite "Ich"
+## Die Seite Ich öffnen
 
-Öffne das Portal-Menü und tippe auf **Ich**. Die Seite wird mit deinen persönlichen Informationen in Abschnitten organisiert geladen.
+Öffnen Sie das Portal-Menü und tippen Sie auf **Ich**. Die Seite lädt Ihre persönlichen Informationen, in Abschnitte gegliedert.
 
 ## Bevorstehend
 
-Der Abschnitt **Bevorstehend** listet alles vor dir in Datumsreihenfolge auf, jedes Element mit einem Typ-Chip gekennzeichnet:
+Der Abschnitt **Bevorstehend** listet alles, was vor Ihnen liegt, in Datumsreihenfolge auf, jeder Eintrag mit einem Typ-Chip versehen:
 
-- **Dienste** – Deine Freiwilligen-Positionen auf kommenden Dienste-Plänen. Tippe eine an, um den Plan zu öffnen.
-- **Registrierung** – Events, für die du [dich angemeldet hast](../events/registering). Tippe durch, um zu deinen [Registrierungen](../events/my-registrations).
-- **Event** – Kommende Events von Gruppen, zu denen du gehörst. Tippe eine an, um die Events der Gruppe zu öffnen.
+- **Dienst** -- Ihre ehrenamtlichen Positionen in bevorstehenden Dienstplänen. Tippen Sie auf einen Eintrag, um den Plan zu öffnen.
+- **Anmeldung** -- Veranstaltungen, für die Sie sich [angemeldet](../events/registering) haben. Tippen Sie sich durch zu Ihren [Anmeldungen](../events/my-registrations).
+- **Veranstaltung** -- Bevorstehende Veranstaltungen aus Gruppen, denen Sie angehören. Tippen Sie auf einen Eintrag, um die Veranstaltungen der Gruppe zu öffnen.
 
-Wenn nichts geplant ist, siehst du "Nichts Bevorstehendes" – deine Dienste Zeitpunkte, Events und Registrierungen erscheinen hier, wenn sie geplant sind.
+Falls nichts geplant ist, sehen Sie „Nichts Bevorstehendes" — Ihre Diensteinsätze, Veranstaltungen und Anmeldungen erscheinen hier, sobald sie geplant sind.
 
 ## Aktuelle Benachrichtigungen
 
-Unterhalb von "Bevorstehend" zeigt der Abschnitt **Aktuelle Benachrichtigungen** deine letzten Benachrichtigungen, damit du aufgeholt werden kannst, ohne jeden Bereich des Portals zu öffnen.
+Unterhalb von Bevorstehend zeigt der Abschnitt **Aktuelle Benachrichtigungen** Ihre neuesten Benachrichtigungen, damit Sie auf dem Laufenden bleiben können, ohne jeden Bereich des Portals öffnen zu müssen.
 
 ## Verknüpfungen
 
-Wenn deine Kirche buchbare Räume oder Ressourcen hat, zeigt die Seite "Ich" auch einen Bereich **Verknüpfungen**:
+Wenn Ihre Gemeinde buchbare Räume oder Ressourcen hat, zeigt die Seite Ich außerdem einen Abschnitt **Verknüpfungen**:
 
-- **Fordere einen Event an** – Fordere an, einen Event mit den Räumen und Geräten zu halten, die du brauchst. Siehe [Events & Räume anfordern](../events/requesting-events).
-- **Meine Anfragen** – Verfolgung des Status deiner Anfragen und Stornierung ausstehender Anfragen.
+- **Veranstaltung anfragen** -- Bitten Sie um die Reservierung einer Veranstaltung mit den benötigten Räumen und Ausrüstungen. Siehe [Veranstaltungen & Räume anfragen](../events/requesting-events).
+- **Meine Anfragen** -- Verfolgen Sie den Status Ihrer Anfragen und stornieren Sie ausstehende.
 
-Wenn deine Kirche keine Räume oder Ressourcen eingerichtet hat, sind diese Verknüpfungen verborgen.
+Wenn Ihre Gemeinde keine Räume oder Ressourcen eingerichtet hat, sind diese Verknüpfungen ausgeblendet.
 
 ## Verwandte Artikel
 
-- [Navigiere B1App](./navigating) – Das Mitglieder-Portal-Layout
-- [Events & Räume anfordern](../events/requesting-events) – Einreichen und Verfolgung von Raum-/Ressourcen-Anfragen
-- [Meine Registrierungen](../events/my-registrations) – Verwaltung deiner Event-Registrierungen
-- [Freiwilligen-Anmeldung](../serving/volunteer-signup) – Wie Dienste-Zuweisungen funktionieren
+- [Navigation in B1App](./navigating) -- Der Aufbau des Mitgliederportals
+- [Veranstaltungen & Räume anfragen](../events/requesting-events) -- Raum-/Ressourcenanfragen einreichen und verfolgen
+- [Meine Anmeldungen](../events/my-registrations) -- Ihre Veranstaltungsanmeldungen verwalten
+- [Anmeldung für Dienst](../serving/volunteer-signup) -- Wie Diensteinsätze funktionieren

@@ -17,6 +17,8 @@ ChurchApps использует различные стратегии развё
 | [APIs](./apis) | AWS Lambda | Serverless Framework v3 (Node.js 22.x runtime) |
 | [Веб-приложения](./web-apps) | S3 + CloudFront | Статическая сборка, синхронизация S3, инвалидация CloudFront |
 | [Мобильные приложения](./mobile) | Магазины приложений | Expo EAS Build + OTA-обновления |
+| [Самостоятельный хостинг (Railway)](./railway-template) | Railway | Шаблон в один клик: MySQL + Api + B1Admin + B1App |
+| [Самостоятельный хостинг (Docker)](./docker) | Любой Docker-хост | `docker compose up` из репозитория B1Admin |
 | [Caddy Custom-Domain Proxy](./caddy-proxy) | Windows EC2 (Elastic IP `3.23.251.61`) | Статический Caddyfile + WinSW сервис + запланированная синхронизация карты |
 | FreeShow | Прямая загрузка | Electron Builder (кросс-платформенные бинарники) |
 

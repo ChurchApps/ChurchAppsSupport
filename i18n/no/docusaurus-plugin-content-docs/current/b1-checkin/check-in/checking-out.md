@@ -1,69 +1,69 @@
 ---
-title: "Sjekking ut og barnesikkerhet"
+title: "Utsjekk og barnesikkerhet"
 ---
 
-# Sjekking ut og barnesikkerhet
+# Utsjekk og barnesikkerhet
 
 <div class="article-intro">
 
-Sjekking ut avslutter prosessen med innsjekking av barn: en forelder presenterer sikkerhetskoden fra etiketten deres, kiosken verifiserer hvem som skal hente, og barna sjekkes ut. Bemannte stasjoner får også sikkerhetsverktøy — verifisering av betrodd henting, tekster for å hente foreldre, omutskrift av sikkerhetsetiketter og nødkringkasting.
+Utsjekk lukker sløyfen for barneinnsjekk: en forelder viser frem sikkerhetskoden fra hentelappen sin, kiosken verifiserer hvem som henter, og barna sjekkes ut. Bemannede stasjoner får også sikkerhetsverktøy -- verifisering av betrodd henting, ring-en-forelder-meldinger, gjenutskrift av sikkerhetslapper, og en nødvarsling.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Sjekking ut er tilgjengelig på stasjoner satt til **bemanne**d modus i innstillingene for kiosk-admin
-- Barn må ha blitt [innsjekket](./completing-checkin) med en trykt henteetikett som inneholder sikkerhetskoden
-- Kalling og nødkringkasting krever at kirken din har en tekstleverandør tilkoblet i B1 Admin
+- Utsjekk er tilgjengelig på stasjoner satt til **bemannet**-modus i kioskens administrasjonsinnstillinger
+- Barn må ha blitt [sjekket inn](./completing-checkin) med en utskrevet hentelapp som bærer sikkerhetskoden
+- Varsling og nødvarslinger krever at menigheten din har en SMS-leverandør tilkoblet i B1 Admin
 
 </div>
 
-## Starte en sjekking ut
+## Starte en utsjekk
 
-1. På en bemannt stasjon, trykk **Sjekk ut** på søkeskjermen.
-2. Skriv inn 4-tegns **sikkerhetskode** fra familiens henteetikett. Du kan skrive den, bruke det elektroniske tastaturet på skjermen, eller skanne koden på etiketten med en USB- eller Bluetooth-skanner — koden sendes automatisk når alle 4 tegn er oppgitt.
-3. Kiosken viser barna som er innsjekket under denne koden.
+1. På en bemannet stasjon, trykk **Sjekk ut** på oppslagsskjermen.
+2. Skriv inn den 4-tegns **sikkerhetskoden** fra familiens hentelapp. Du kan skrive den, bruke tastaturet på skjermen, eller skanne lappens strekkode med en USB- eller Bluetooth-skanner -- koden sendes automatisk når alle 4 tegn er skrevet inn.
+3. Kiosken viser barna som er sjekket inn under den koden.
 
-## Verifisering av hvem som henter
+## Verifisere hvem som henter
 
-Sjekking ut-skjermen spør hvem som skal hente barna:
+Utsjekk-skjermen spør hvem som henter barna:
 
-- **Betrodde hentepersoner** for husholdningen vises som trykbare kort med foto og forhold — trykk på personen som står foran deg.
-- **Husholdningsadulter** vises også i et fotogalleri.
-- **Annen** lar deg skrive inn navn på noen som ikke er på listen.
+- **Betrodde hentepersoner** for husstanden vises som trykkbare kort med bildet og relasjonen deres -- trykk på personen som står foran deg.
+- **Voksne i husstanden** vises også i et bildegalleri.
+- **Annet** lar deg skrive inn et navn på noen som ikke står på listen.
 
-Hvis et skrevet navn stemmer overens med noen merket som **Ikke autorisert** for den husholdningen, blokkerer kiosken sjekking ut med en advarsel. En ansatt kan velge **Overstyring** for å fortsette likevel — overstyringen registreres på oppmøteposten med personens navn.
+Hvis et skrevet navn samsvarer med noen merket **Ikke godkjent** for den husstanden, blokkerer kiosken utsjekken med en advarsel. En ansatt kan velge **Overstyr** for å fortsette likevel -- overstyringen registreres på oppmøteposten med personens navn.
 
-Når henteren er bekreftet, trykk sjekk ut. Henteren sin navn lagres med oppmøteposten.
+Når hentepersonen er bekreftet, trykk sjekk ut. Hentepersonens navn lagres sammen med oppmøteposten.
 
 :::info
-Betrodde og ikke-autoriserte hentepersoner administreres av kirkestaben på hver persons side i B1 Admin — se [Sikkerhet ved innsjekking](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+Betrodde og ikke-godkjente hentepersoner administreres av menighetens ansatte på hver persons side i B1 Admin -- se [Innsjekk-sikkerhet](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
 :::
 
-## Ringing av forelder
+## Ringe en forelder
 
-Trenger en forelder under tjenesten — skifte bleie, et gretent barn? Fra sjekking ut-skjermen på en bemannt stasjon, kan staben sende en **ring**: en tekstmelding til barnets foreldre eller foresatte gjennom kirkens tekstleverandør. Foreldre som har meldt seg av tekster eller som ikke har mobilnummer, hoppes over, og kiosken viser hvor mange meldinger som ble sendt.
+Trenger man en forelder under gudstjenesten -- en bleieskift, et gråtende barn? Fra utsjekk-skjermen på en bemannet stasjon kan ansatte sende en **melding**: en tekstmelding til barnets foreldre eller foresatte gjennom menighetens SMS-leverandør. Foreldre som har reservert seg mot tekstmeldinger eller ikke har et mobilnummer, hoppes over, og kiosken viser hvor mange meldinger som ble sendt.
 
-## Omutskrift av etiketter
+## Skrive ut lapper på nytt
 
-Hvis en navneetikett eller henteetikett går tapt eller blir skadet, kan staben på en bemannt stasjon **omskrive** familiens etiketter fra sjekking ut-skjermen etter å ha tastet inn sikkerhetskoden. Omskriften bruker samme skriver og etikettemaler som den opprinnelige innsjekingen.
+Hvis en navnelapp eller hentelapp blir borte eller skadet, kan ansatte på en bemannet stasjon **skrive ut på nytt** familiens lapper fra utsjekk-skjermen etter å ha skrevet inn sikkerhetskoden. Gjenutskriften bruker samme skriver og lappmaler som den opprinnelige innsjekken.
 
-## Nødkringkasting
+## Nødvarsling
 
-I en nødsituasjon kan staben sende tekstmelding til formynder av **alle innsjekket barn** for gjeldende tjeneste på en gang:
+I en nødsituasjon kan ansatte sende SMS til foresatte for **alle innsjekkede barn** for gjeldende gudstjeneste samtidig:
 
-1. Åpne innstillingene for kiosk-**admin** (7 hurtige trykk på headerlogoen, pluss PIN-koden hvis en er satt).
-2. Trykk **Nødkringkasting**.
-3. Skriv inn meldingen, og skriv deretter **EMERGENCY** (NØDSITUATION) i bekreftelsesfeltet — knappen **Send broadcast** (Send kringkasting) forblir deaktivert til du gjør det.
-4. Kiosken rapporterer hvor mange telefoner mottok meldingen og hvor mange personer ble hoppet over (meldt seg av eller ingen mobilnummer).
+1. Åpne kioskens **administrasjonsinnstillinger** (7 raske trykk på hodelogoen, pluss PIN-koden hvis en er satt).
+2. Trykk **Nødvarsling**.
+3. Skriv inn meldingen, og skriv deretter **EMERGENCY** i bekreftelsesfeltet -- **Send varsling**-knappen forblir deaktivert til du gjør det.
+4. Kiosken rapporterer hvor mange telefoner som mottok meldingen og hvor mange personer som ble hoppet over (reservert seg eller intet mobilnummer).
 
 :::warning
-Kringkastingen sendes til alle innsjekket husholdninger for den valgte tjenesten. Bruk den til ekte nødsituasjoner — evakueringer, lockdowns, ekstremvær.
+Varslingen går til alle innsjekkede husstander for den valgte gudstjenesten. Bruk den for reelle nødsituasjoner -- evakueringer, nedstengninger, alvorlig vær.
 :::
 
 ## Relaterte artikler
 
-- [Fullføre innsjekking](./completing-checkin) — hvor sikkerhetskoder og hentetikett kommer fra
-- [Sikkerhet ved innsjekking](../../b1-admin/attendance/checkin-safety) — konfigurering av kapasiteter, forhold, hentepersoner og krav til tekstleverandør
-- [Skriveroppsett](../getting-started/printer-setup) — konfigurering av etikettskriver
+- [Fullføre innsjekk](./completing-checkin) — hvor sikkerhetskoder og hentelapper kommer fra
+- [Innsjekk-sikkerhet](../../b1-admin/attendance/checkin-safety) — konfigurere kapasiteter, forholdstall, hentepersoner, og kravet om SMS-leverandør
+- [Skriveroppsett](../getting-started/printer-setup) — konfigurasjon av lappskriver

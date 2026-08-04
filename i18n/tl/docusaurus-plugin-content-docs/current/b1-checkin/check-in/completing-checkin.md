@@ -1,72 +1,72 @@
 ---
-title: "Kumpleto ang Check-In"
+title: "Pagkumpleto ng Check-In"
 ---
 
-# Kumpleto ang Check-In
+# Pagkumpleto ng Check-In
 
 <div class="article-intro">
 
-Kapag na-review mo na ang iyong household at gumawa ng anumang kailangan na group assignment, handa ka nang tapusin ang check-in. Ito ang huling hakbang sa kiosk workflow -- ang app ay nagsasumite ng attendance, nag-print ng label, at nag-reset para sa susunod na pamilya.
+Kapag nasuri mo na ang iyong sambahayan at nagawa na ang anumang kinakailangang pagtatalaga ng grupo, handa ka nang tapusin ang check-in. Ito ang huling hakbang sa daloy ng gawain ng kiosk -- isinusumite ng app ang attendance, nagli-print ng mga label, at nagre-reset para sa susunod na pamilya.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Ka Magsimula</h4>
+<h4>Bago Magsimula</h4>
 
-- [Suriin ang iyong household](./household-review) sa household review screen
-- [Italag ang mga grupo](./group-assignment) sa anumang miyembro ng pamilya na kailangan mag-check in sa isang specific na klase o programa
-- Opsyonal na [magdagdag ng mga bisita](./adding-guests) na bumibisita sa iyong pamilya
+- [Suriin ang iyong sambahayan](./household-review) sa screen ng pagsusuri ng sambahayan
+- [Magtalaga ng mga grupo](./group-assignment) sa anumang miyembro ng pamilya na kailangang mag-check in sa isang partikular na klase o programa
+- Opsyonal na [magdagdag ng anumang bisita](./adding-guests) na dumadalaw kasama ang iyong pamilya
 
 </div>
 
 ## Paano Mag-Check In
 
-1. Mula sa **household review screen**, i-tap ang **Check-in** button sa ibaba ng screen.
-2. Ang app ay nagsasumite ng attendance data sa server at nagpapakita ng **success screen** na may berdeng checkmark at welcome message.
+1. Mula sa **screen ng pagsusuri ng sambahayan**, i-tap ang pindutang **Check-in** sa ibaba ng screen.
+2. Isinusumite ng app ang datos ng attendance sa server at nagpapakita ng **success screen** na may berdeng check mark at mensahe ng pagbati.
 
-Iyon na lang ang kailangan. Ang attendance ng iyong pamilya ay naitala na.
+Iyon lang ang kailangan. Naitala na ang attendance ng iyong pamilya.
 
-## Puno na Mga Kuwarto at Volunteer Ratio
+## Puno na mga Kuwarto at Ratio ng Boluntaryo
 
-Kung naka-configure ang iyong simbahan ng [safety limits](../../b1-admin/attendance/checkin-safety) sa mga kuwarto nito, sinusuri ng server ang mga ito bago magsave:
+Kung nakonpigura ng iyong simbahan ang [mga limitasyon sa kaligtasan](../../b1-admin/attendance/checkin-safety) sa mga kuwarto nito, sinusuri ito ng server bago mag-save:
 
-- Kung ang isang napiling kuwarto ay **puno o sarado**, ang check-in ay hindi napupunta at ang app ay tinatawag ang kuwarto para sa iyo na pumili ng iba.
-- Kung ang isang bata na kuwarto ay **kulang sa volunteer** para sa ratio nito, ang app ay nagpapakita ng warning na maaaring kumpirmahin ng staff member upang magpatuloy, o blokado ang check-in nang buo -- depende sa kung paano naka-configure ang iyong simbahan ng ratio enforcement.
+- Kung **puno o sarado** ang piniling kuwarto, hindi tuloy ang check-in at binabanggit ng app ang pangalan ng kuwarto upang makapili ka ng iba.
+- Kung **kulang sa boluntaryo** ang isang kuwarto ng bata para sa ratio nito, magpapakita ang app ng babala na maaaring kumpirmahin ng isang staff member upang magpatuloy, o buo na blinoblokan ang check-in -- depende sa kung paano nakonpigura ng iyong simbahan ang pagpapatupad ng ratio.
 
-## Label Printing
+## Pag-print ng Label
 
-Kung naka-configure ang network printer, ang app ay awtomatikong nag-print ng label pagkatapos ng check-in:
+Kung may nakonpigurang network printer, awtomatikong nagli-print ang app ng mga label pagkatapos mag-check in:
 
-- Ang **Name label** ay nai-print para sa bawat taong italag sa isang grupo na may **Print Nametag** setting na naka-enable. Ang Name label ay kinabibilangan ng pangalan ng tao, ang kanilang group assignment, at allergy/notes information kung may nakafile.
-- Ang **Parent pickup slip** ay nai-print kapag ang anumang naka-check in na tao ay nasa isang grupo na may **Parent Pickup** setting na naka-enable. Ang pickup slip ay naglilista ng mga bata, ang kanilang group assignment, at isang natatanging **4-character security code**.
+- Nagpi-print ang **mga label ng pangalan** para sa bawat taong itinalaga sa isang grupong may naka-enable na setting na **Print Nametag**. Kasama sa mga label ng pangalan ang pangalan ng tao, ang kanilang pagtatalaga ng grupo, at impormasyon ng allergy/tala kung mayroon.
+- Nagpi-print ang **mga pickup slip ng magulang** kapag ang sinumang naka-check-in ay nasa isang grupong may naka-enable na setting na **Parent Pickup**. Nakalista sa pickup slip ang mga bata, ang kanilang mga pagtatalaga ng grupo, at isang natatanging **4-karakter na security code**.
 
 :::info
-Ang parehong security code ay lumilitaw sa parehong name label ng bata at sa pickup slip ng magulang. Sa oras ng pickup, ang mga volunteer ay tumutugma sa mga code upang i-verify na ang tamang adult ay nangongolekta sa bawat bata.
+Lumilitaw ang parehong security code sa parehong label ng pangalan ng bata at pickup slip ng magulang. Sa oras ng pagkuha, itinutugma ng mga boluntaryo ang mga code upang tiyakin na ang tamang adulto ang kumukuha sa bawat bata.
 :::
 
-Ang security code ay nabuo nang sariwa para sa bawat check-in at gumagamit lamang ng consonant at digit (ang vowel ay inalis upang iwasan ang pagbuo ng hindi angkop na salita).
+Bagong binubuo ang security code para sa bawat check-in at gumagamit lamang ng mga katinig at digit (hindi kasama ang mga patinig upang maiwasan ang pagbuo ng mga hindi angkop na salita).
 
 :::warning
-Kung hindi nag-print ang label, buksan ang Admin Settings sa pamamagitan ng pag-tap ng **church logo** pitong beses, pagkatapos ay i-tap ang **Change Printer** upang i-verify ang printer connection. Tingnan ang [Printer Setup](../getting-started/printer-setup) para sa troubleshooting steps.
+Kung hindi nagli-print ang mga label, buksan ang Admin Settings sa pamamagitan ng pag-tap sa **logo ng simbahan** nang pitong beses, pagkatapos ay i-tap ang **Change Printer** upang i-verify ang koneksyon ng printer. Tingnan ang [Printer Setup](../getting-started/printer-setup) para sa mga hakbang sa pag-troubleshoot.
 :::
 
-## Ano Ang Nangyayari Pagkatapos ng Check-In
+## Ano ang Nangyayari Pagkatapos ng Check-In
 
-- Kung naka-configure ang printer, ang app ay nag-print ng lahat ng label at pagkatapos ay awtomatikong bumalik sa **lookup screen**, handa para sa susunod na pamilya.
-- Kung walang naka-configure na printer, ang success screen ay nagpapakita ng ilang segundo at pagkatapos ay awtomatikong bumalik sa **lookup screen**.
+- Kung may nakonpigurang printer, nagli-print ang app ng lahat ng label at pagkatapos ay awtomatikong bumabalik sa **screen ng lookup**, handa para sa susunod na pamilya.
+- Kung walang nakonpigurang printer, ipinapakita ang success screen sa loob ng ilang segundo at pagkatapos ay awtomatikong bumabalik sa **screen ng lookup**.
 
-Hindi mo kailangang i-tap ang kahit ano upang bumalik sa lookup screen -- ang app ay humahawak ng transition nang awtomatiko.
+Hindi mo na kailangang mag-tap ng kahit ano upang bumalik sa screen ng lookup -- hinahandle ng app ang paglipat nang awtomatiko.
 
 :::tip
-Ang app ay kumpleto na nag-reset pagkatapos ng bawat check-in, kaya walang risk na ang isang pamilya ay nakikita ang impormasyon ng ibang pamilya.
+Lubos na nagre-reset ang app pagkatapos ng bawat check-in, kaya walang panganib na makita ng isang pamilya ang impormasyon ng ibang pamilya.
 :::
 
-## Ano Ang Naitala
+## Ano ang Naitatala
 
-Kapag i-tap mo ang **Check-in**, ang app ay nagpapadala sa server ng sumusunod para sa bawat miyembro ng household na may group assignment:
+Kapag na-tap mo ang **Check-in**, ipinapadala ng app ang mga sumusunod sa server para sa bawat miyembro ng sambahayan na may pagtatalaga ng grupo:
 
-- Ang **person** na nag-check in
-- Ang **service** na dadalohan nila
-- Ang **service time** at **group** na italag sa kanila
+- Ang **taong** naka-check in
+- Ang **serbisyong** kanilang dinadaluhan
+- Ang **oras ng serbisyo** at **grupong** kung saan sila itinalaga
 
-Ang data na ito ay lumilitaw sa B1 Admin sa ilalim ng Attendance section, kung saan maaaring tingnan at pamahalaan ng iyong church administrator ang attendance record. Tingnan ang [check-in administration guide](../../b1-admin/attendance/check-in.md) para sa detalye.
+Lumilitaw ang datos na ito sa B1 Admin sa ilalim ng seksyong Attendance, kung saan maaaring tingnan at pamahalaan ng mga administrador ng iyong simbahan ang mga rekord ng attendance. Tingnan ang [gabay sa pangangasiwa ng check-in](../../b1-admin/attendance/check-in.md) para sa mga detalye.

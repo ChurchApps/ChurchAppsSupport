@@ -14,6 +14,7 @@ The member directory lets you browse and search for people in your church. Wheth
 <h4>Before You Begin</h4>
 
 - You must be [logged in](../getting-started/logging-in.md) to your B1.church account.
+- The directory is available to **members and staff** only. Visitors and attendees who have not yet become members will see a "Members Only" message instead.
 
 </div>
 

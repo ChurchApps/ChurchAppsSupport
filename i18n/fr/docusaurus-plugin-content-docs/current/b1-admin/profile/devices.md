@@ -1,62 +1,62 @@
 ---
-title: "Gérer les appareils"
+title: "Gestion des appareils"
 ---
 
-# Gérer les appareils
+# Gestion des appareils
 
 <div class="article-intro">
 
-La page Appareils vous permet de gérer les appareils ChurchAppsPlayer connectés à votre compte. Ces appareils sont utilisés pour diffuser du contenu et afficher les médias de l'église sur les écrans de votre lieu de culte.
+La page Appareils vous permet de gérer les appareils ChurchAppsPlayer et FreePlay connectés à votre compte. Ces appareils sont utilisés pour diffuser du contenu et afficher les médias de l'église sur des écrans à votre emplacement.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Disposez d'un appareil ChurchAppsPlayer allumé et connecté à Internet
+- Ayez un appareil ChurchAppsPlayer allumé et connecté à internet
 - Notez le code d'appairage affiché sur l'écran de l'appareil
-- Consultez vos [paramètres de profil](./managing-profile.md) si vous ne l'avez pas encore fait
+- Consultez vos [paramètres de profil](./managing-profile.md) si ce n'est pas déjà fait
 
 </div>
 
 ## Consulter vos appareils
 
-Lorsque vous ouvrez la page Appareils, vous verrez un tableau listant tous les appareils enregistrés avec les informations suivantes :
+Lorsque vous ouvrez la page Appareils, vous voyez un tableau répertoriant tous les appareils enregistrés avec les informations suivantes :
 
-- **Libellé** -- Le nom que vous avez attribué à l'appareil.
-- **Date d'enregistrement** -- La date à laquelle l'appareil a été associé à votre compte pour la première fois.
-- **Date de dernière activité** -- La dernière fois que l'appareil s'est connecté à votre compte.
+- **Étiquette** -- Le nom que vous avez attribué à l'appareil.
+- **Date d'enregistrement** -- Quand l'appareil a été appairé pour la première fois avec votre compte.
+- **Dernière activité** -- La dernière fois que l'appareil s'est connecté à votre compte.
 
 ## Ajouter un nouvel appareil
 
 1. Cliquez sur le bouton **Ajouter un appareil** en haut de la page Appareils.
-2. Vous serez invité à saisir un **code d'appairage**.
-3. Trouvez le code d'appairage affiché sur l'appareil ChurchAppsPlayer que vous souhaitez connecter.
-4. Saisissez le code et confirmez.
-5. L'appareil apparaîtra dans votre tableau d'appareils une fois l'appairage réussi.
+2. Il vous sera demandé de saisir un **code d'appairage**.
+3. Trouvez le code d'appairage affiché sur l'appareil ChurchAppsPlayer ou FreePlay que vous voulez connecter.
+4. Saisissez le code. S'il s'agit d'une TV FreePlay, un menu déroulant **Afficher les plans pour** vous permet de choisir le type de plan que l'écran doit suivre — laissez-le sur **Aucun** pour utiliser l'appareil uniquement pour la navigation et les notifications.
+5. Confirmez. L'appareil apparaîtra dans votre tableau d'appareils une fois l'appairage réussi.
 
 :::tip
-Assurez-vous que l'appareil ChurchAppsPlayer est allumé et connecté à Internet avant de tenter l'appairage. Le code d'appairage est affiché sur l'écran de l'appareil.
+Assurez-vous que l'appareil est allumé et connecté à internet avant de tenter de l'appairer. Le code d'appairage est affiché sur l'écran de l'appareil.
 :::
 
-## Modifier le libellé d'un appareil
+## Modifier l'étiquette d'un appareil
 
 1. Cliquez sur le **nom de l'appareil** dans le tableau des appareils.
-2. Mettez à jour le libellé avec un nom descriptif (par exemple, « Écran principal du sanctuaire » ou « Affichage du hall d'entrée »).
+2. Mettez à jour l'étiquette avec quelque chose de descriptif (par exemple, « Écran principal du sanctuaire » ou « Affichage du hall »).
 3. Enregistrez vos modifications.
 
 :::tip
-L'utilisation de libellés clairs et descriptifs permet d'identifier facilement chaque appareil, surtout lorsque vous avez plusieurs écrans installés dans votre église.
+Utiliser des étiquettes claires et descriptives facilite l'identification de chaque appareil, surtout lorsque vous avez plusieurs écrans configurés dans votre église.
 :::
 
-## Gestion de l'accès des appareils
+## Gérer l'accès aux appareils
 
 Utilisez la page Appareils pour suivre quels appareils ont accès à la diffusion et au contenu de votre église. Si un appareil n'est plus utilisé, vous pouvez le retirer de votre compte pour garder votre liste d'appareils propre et sécurisée.
 
 :::warning
-Vérifiez régulièrement vos appareils connectés pour vous assurer que seuls les appareils actifs et autorisés sont liés à votre compte. Retirez tout appareil qui n'est plus utilisé pour maintenir la sécurité.
+Examinez régulièrement vos appareils connectés pour vous assurer que seuls des appareils actifs et autorisés sont liés à votre compte. Supprimez tout appareil qui n'est plus utilisé pour maintenir la sécurité.
 :::
 
-## Prochaines étapes
+## Étapes suivantes
 
-- [Gérer votre profil](./managing-profile.md) -- Modifiez les paramètres de votre compte personnel
+- [Gérer votre profil](./managing-profile.md) -- Modifier les paramètres de votre compte personnel

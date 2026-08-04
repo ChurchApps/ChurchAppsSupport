@@ -158,4 +158,3 @@ Lokal kann dieselbe Logik mit `npm run timer:30min` und `npm run timer:midnight`
 - [Echtzeit-Architektur](../realtime) — das WebSocket-Protokoll und die Client-Primitive (`SocketHelper`, `SubscriptionManager`, `ConversationStore`), auf denen die In-App-Zustellstufe aufsetzt
 - [Web-Push-Benachrichtigungen](../web-push) — VAPID-Setup und der Browser-Push-API-Pfad, der von der Push-Eskalationsstufe genutzt wird
 - [Messaging-Endpunkte](../api/endpoints/messaging) — vollständige REST-Oberfläche für Nachrichten, Konversationen, Verbindungen und Benachrichtigungs-/Erinnerungsrouten
-</content>

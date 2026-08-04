@@ -1,93 +1,93 @@
 ---
-title: "Betalte registreringer"
+title: "Betalte påmeldinger"
 ---
 
-# Betalte registreringer
+# Betalte påmeldinger
 
 <div class="article-intro">
 
-Arrangementsregistrering kan gå utover en enkel antallstelling. Du kan definere prisede deltakelsestyper (som voksen og barn), tilby valgfrie tillegg med egne priser og mengder, opprett rabattkoder og samle inn betaling ved registrering gjennom din kirkes eksisterende giversystem. Når et arrangement fylles opp, en valgfritt venteliste holder interesserte medlemmer på linja og promoterer dem automatisk når plasser åpnes.
+Arrangementspåmelding kan være mer enn en enkel deltakertelling. Du kan definere prissatte deltakertyper (som Voksen og Barn), tilby valgfrie tilleggsprodukter med egne priser og antall, opprette rabattkoder, og samle inn betaling ved påmelding gjennom menighetens eksisterende givertjeneste. Når et arrangement blir fullt, holder en valgfri venteliste interesserte medlemmer i kø og forfremmer dem automatisk etter hvert som plasser åpner seg.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Aktiver registrering på arrangementet først -- se [Opprett kalendere](creating-calendars#enabling-event-registration)
-- For å samle inn betalinger, må din kirke [online giver konfigurert](../donations/online-giving-setup.md) (Stripe, PayPal eller Kingdom Funding). Gratis arrangementer trenger ingen giversetup.
+- Aktiver påmelding på arrangementet først -- se [Opprette kalendere](creating-calendars#enabling-event-registration)
+- For å samle inn betalinger må menigheten din ha [nettbasert givertjeneste konfigurert](../donations/online-giving-setup.md) (Stripe, PayPal, eller Kingdom Funding). Gratis arrangementer trenger ikke givertjeneste-oppsett.
 
 </div>
 
-## Åpne registreringsinnstillinger
+## Åpne påmeldingsinnstillinger
 
-1. I B1 Admin, gå til **Registreringer**-siden og åpne arrangementet ditt (eller åpne arrangementet fra sin kalender).
-2. **Registreringsinnstillinger**-kortet viser grunnene -- **Aktiver registrering**, **Kapasitet**, **Registrering åpnes/lukkes**, **Merker** og **registreringsspørsmål**.
-3. Nedenfor grunnene er tre harmonikaer: **Deltakelsestyper**, **Valg** og **Rabattkoder**.
+1. I B1 Admin, gå til **Påmeldinger**-siden og åpne arrangementet ditt (eller åpne arrangementet fra kalenderen).
+2. Kortet **Påmeldingsinnstillinger** viser det grunnleggende -- **Aktiver påmelding**, **Kapasitet**, **Påmelding åpner/stenger**, **Merkelapper**, og **Påmeldingsspørsmål**.
+3. Under det grunnleggende er tre nedtrekksfelt: **Deltakertyper**, **Valg**, og **Rabattkoder**.
 
-## Deltakelsestyper
+## Deltakertyper
 
-Deltakelsestyper lar deg belaste ulike priser for ulike slag deltakere -- og dølg hver enkelt separat.
+Deltakertyper lar deg ta ulik pris for ulike typer deltakere -- og sette et eget tak for hver.
 
-1. Ekspander **Deltakelsestyper**-harmonikaen og klikk **Legg til type**.
-2. Angi en **Navn** (f.eks. "Voksen", "barn", "Student").
+1. Utvid nedtrekksfeltet **Deltakertyper** og klikk **Legg til type**.
+2. Skriv inn et **Navn** (f.eks. "Voksen", "Barn", "Student").
 3. Sett en **Pris**. Bruk 0 for en gratis type.
-4. Eventuelle sett en **kapasitet** for bare denne typen (f.eks. bare 20 Barn flekker). La det stå tomt for ingen per-type grense.
+4. Valgfritt: sett en **Kapasitet** for bare denne typen (f.eks. bare 20 Barn-plasser). La stå tomt for ingen grense per type.
 5. Klikk **Lagre**.
 
-Under registrering velger hver deltaker en type; utsolgte typer vises som **Solgt ut** og kan ikke velges. Rosteret viser hver deltakers type og løpende per-type tellinger.
+Under påmelding velger hver deltaker en type; utsolgte typer vises som **Utsolgt** og kan ikke velges. Deltakerlisten viser hver deltakers type og løpende antall per type.
 
 ## Valg
 
-Valg er valgfrie prisede tillegg -- T-skjorter, måltidsplaner, aktivitet oppgraderinger.
+Valg er valgfrie prissatte tilleggsprodukter -- T-skjorter, måltidsplaner, aktivitetsoppgraderinger.
 
-1. Ekspander **Valg**-harmonikaen og klikk **Legg til valg**.
-2. Angi en **Navn**, valgfritt **Beskrivelse** og en **Pris** (0 vises som "Gratis").
-3. Eventuelle sett en **kapasitet** (totalt tilgjengelig på tvers av alle registreringer) og en **Maks antall** (det meste en registrering kan bestille).
+1. Utvid nedtrekksfeltet **Valg** og klikk **Legg til valg**.
+2. Skriv inn et **Navn**, valgfri **Beskrivelse**, og en **Pris** (0 vises som "Gratis").
+3. Valgfritt: sett en **Kapasitet** (totalt tilgjengelig på tvers av alle påmeldinger) og en **Maks. antall** (det høyeste én påmelding kan bestille).
 4. Klikk **Lagre**.
 
-Registranter velger mengder under registrering, og totalen teller mot kapasitet slik at du aldri overseljer.
+Deltakere velger antall under påmeldingen, og summene telles mot kapasiteten slik at du aldri overselger.
 
 ## Rabattkoder
 
-1. Ekspander **Rabattkoder**-harmonikaen og klikk **Legg til rabattkode**.
-2. Angi **Koden** registranter vil skrive.
-3. Velg **Type** -- **Prosent** eller **Beløp** -- og dets **Verdi**.
-4. Eventuelle begrens koden med en **Start dato** / **Sluttdato**, en **Min medlemmer** (minimum antall deltakere på registreringen) og **Maks bruk**.
+1. Utvid nedtrekksfeltet **Rabattkoder** og klikk **Legg til rabattkode**.
+2. Skriv inn **koden** deltakerne skal skrive inn.
+3. Velg **Type** -- **Prosent** eller **Beløp** -- og verdien dens.
+4. Valgfritt: begrens koden med en **Startdato** / **Sluttdato**, et **Min. antall medlemmer** (minste antall deltakere på påmeldingen), og **Maks. bruk**.
 5. Klikk **Lagre**.
 
-Hver kode viser en **Bruker**-telling slik at du kan se hvor ofte den har blitt løst inn. Registranter får umiddelbar tilbakemelding når de bruker en kode -- inkludert klare meldinger når en kode har gått ut, ikke har startet, eller trenger flere deltakere.
+Hver kode viser et **Bruk**-antall slik at du kan se hvor ofte den er brukt. Deltakere får umiddelbar tilbakemelding når de bruker en kode -- inkludert tydelige meldinger når en kode har utløpt, ikke har startet ennå, eller krever flere deltakere.
 
 ## Venteliste
 
-Slå på **Aktiver venteliste** i registreringsinnstillinger-kortet. Når arrangementet når kapasitet:
+Slå på **Aktiver venteliste** i kortet Påmeldingsinnstillinger. Når arrangementet når full kapasitet:
 
-- Nye registranter tilbys en venteliste plass i stedet for å bli avvist. De fullfører samme registrering (betaling hoppes over mens de står på ventelisten).
-- Når noen avbryter, den eldste venteliste registreringen er **automatisk forfremmelse** og mottar en e-post at en plass åpnet. Hvis de skylder en balanse, e-posten kobler dem for å fullføre betaling.
-- Du kan forfremme noen manuelt når som helst med **Fremme**-handlingen på en venteliste rad -- nyttig etter å ha økt arrangementets kapasitet.
+- Nye deltakere tilbys en ventelisteplass i stedet for å bli avvist. De fullfører den samme påmeldingen (betaling hoppes over mens de er på venteliste).
+- Når noen avbestiller, blir den eldste ventelistepåmeldingen **forfremmet automatisk** og mottar en e-post om at en plass har åpnet seg. Hvis de skylder et beløp, lenker e-posten dem til å fullføre betalingen.
+- Du kan forfremme noen manuelt når som helst med **Forfrem**-handlingen på en ventelisterad -- nyttig etter at du har hevet arrangementskapasiteten.
 
 :::info
-Forfremmede registreringer holder *pending* til eventuell balanse betales; betale (eller ikke ha noe å betale) bekrefter dem.
+Forfremmede påmeldinger forblir *ventende* inntil eventuell saldo er betalt; betaling (eller ingenting å betale) bekrefter dem.
 :::
 
-## Registreringsrosteret
+## Påmeldingslisten
 
-Åpne et arrangement fra Registreringer-siden for å se hver registrering. Tabellen viser **Navn**, **Medlemmer**, **Type** (hver deltakers type), **Betalt / Totalt** (med en balanse advarsel når penger fortsatt skyldest), **Status** og **Dato**, pluss per-type telle chips over tabellen.
+Åpne et arrangement fra Påmeldinger-siden for å se alle påmeldinger. Tabellen viser **Navn**, **Medlemmer**, **Type** (hver deltakers type), **Betalt / Totalt** (med en saldoadvarsel når det fortsatt skyldes penger), **Status**, og **Dato**, pluss antallsbrikker per type over tabellen.
 
-- Klikk en rads detaljer-ikon for å åpne **Registreringsdetaljene**-dialogen -- medlemmer, valg, betalt/balanse og en **Betalinger**-tabell som viser hver ladning (beløp, metode, dato).
-- **Eksport CSV** nedlaster det fulle rosteret med kolonner for medlemmer, deltakelsestyper, valg, betalt/totalt/balanse, status og en kolonne per registreringsspørsmål.
-- **Legg til deltaker** lar deg fortsatt registrere offline registreringer manuelt.
+- Klikk detaljikonet på en rad for å åpne dialogen **Påmeldingsdetaljer** -- medlemmer, valg, betalt/saldo, og en **Betalinger**-tabell som lister hver belastning (beløp, metode, dato).
+- **Eksporter CSV** laster ned hele deltakerlisten med kolonner for medlemmer, deltakertyper, valg, betalt/totalt/saldo, status, og én kolonne per påmeldingsspørsmål.
+- **Legg til deltaker** lar deg fortsatt registrere offline-påmeldinger manuelt.
 
 :::info
-Refusjoner behandles ikke inne i B1. Hvis du må refundere en kansellert betalt registrering, utsted refusjon fra din givers leverandørens dashbord (f.eks. Stripe).
+Refusjoner behandles ikke inne i B1. Hvis du trenger å refundere en avbestilt betalt påmelding, utsted refusjonen fra givertjenestens dashbord (f.eks. Stripe).
 :::
 
 ## Hvordan betaling fungerer
 
-Betalinger kjøres gjennom samme giversystem din kirke allerede bruker for donasjoner -- kortdetaljer går direkte til leverandøren og berører aldri B1s servere. Priser beregnes alltid på serveren fra dine konfigurerte typer, valg og rabattkoder, slik at en registrant ikke kan grible med totalen. Loggede medlemmer kan betale med et lagret kort; gjester skriver inn et kort ved kassen.
+Betalinger går gjennom den samme givertjenesten menigheten din allerede bruker for gaver -- kortopplysninger går rett til leverandøren og berører aldri B1s servere. Priser beregnes alltid på serveren ut fra dine konfigurerte typer, valg og rabattkoder, slik at en deltaker ikke kan manipulere totalsummen. Innloggede medlemmer kan betale med et lagret kort; gjester skriver inn et kort ved utsjekk.
 
 ## Relaterte artikler
 
-- [Opprett kalendere](creating-calendars#enabling-event-registration) -- aktiver registrering og de grunnleggende innstillingene
-- [Online giver oppsett](../donations/online-giving-setup.md) -- konfigurer betalings gateway brukt ved kassen
-- [Registrer for arrangementer](../../b1-church/events/registering) -- hva medlemmer ser når de registrerer seg
-- [Mine registreringer](../../b1-church/events/my-registrations) -- hvordan medlemmer betaler balanse og redigerer registreringer
+- [Opprette kalendere](creating-calendars#enabling-event-registration) — aktiver påmelding og de grunnleggende innstillingene
+- [Nettbasert givertjeneste-oppsett](../donations/online-giving-setup.md) — konfigurer betalingsleverandøren som brukes ved utsjekk
+- [Melde seg på arrangementer](../../b1-church/events/registering) — hva medlemmer ser når de melder seg på
+- [Mine påmeldinger](../../b1-church/events/my-registrations) — hvordan medlemmer betaler saldo og redigerer påmeldinger

@@ -1,12 +1,12 @@
 ---
-title: "Gestione Dispositivi"
+title: "Gestione dei dispositivi"
 ---
 
-# Gestione Dispositivi
+# Gestione dei dispositivi
 
 <div class="article-intro">
 
-La pagina Dispositivi ti consente di gestire i dispositivi ChurchAppsPlayer connessi al tuo account. Questi dispositivi vengono utilizzati per lo streaming di contenuti e la visualizzazione di media della chiesa sugli schermi nella tua sede.
+La pagina Dispositivi ti permette di gestire i dispositivi ChurchAppsPlayer e FreePlay collegati al tuo account. Questi dispositivi vengono usati per trasmettere contenuti in streaming e mostrare i media della chiesa su schermi presso la tua sede.
 
 </div>
 
@@ -14,49 +14,49 @@ La pagina Dispositivi ti consente di gestire i dispositivi ChurchAppsPlayer conn
 <h4>Prima di iniziare</h4>
 
 - Avere un dispositivo ChurchAppsPlayer acceso e connesso a internet
-- Annotare il codice di accoppiamento visualizzato sullo schermo del dispositivo
-- Controllare le [impostazioni del profilo](./managing-profile.md) se non lo hai già fatto
+- Prendere nota del codice di associazione mostrato sullo schermo del dispositivo
+- Rivedi le tue [impostazioni del profilo](./managing-profile.md) se non l'hai già fatto
 
 </div>
 
-## Visualizzare i tuoi dispositivi
+## Visualizzazione dei tuoi dispositivi
 
 Quando apri la pagina Dispositivi, vedrai una tabella che elenca tutti i dispositivi registrati con le seguenti informazioni:
 
 - **Etichetta** -- Il nome che hai assegnato al dispositivo.
-- **Data di registrazione** -- Quando il dispositivo è stato accoppiato per la prima volta al tuo account.
-- **Data ultimo accesso** -- L'ultima volta che il dispositivo si è connesso al tuo account.
+- **Data di registrazione** -- Quando il dispositivo è stato associato per la prima volta al tuo account.
+- **Data ultima attività** -- L'ultima volta che il dispositivo si è connesso al tuo account.
 
-## Aggiungere un nuovo dispositivo
+## Aggiunta di un nuovo dispositivo
 
-1. Fai clic sul pulsante **Add Device** nella parte superiore della pagina Dispositivi.
-2. Ti verrà chiesto di inserire un **codice di accoppiamento**.
-3. Trova il codice di accoppiamento visualizzato sul dispositivo ChurchAppsPlayer che desideri connettere.
-4. Inserisci il codice e conferma.
-5. Il dispositivo apparirà nella tabella dei dispositivi una volta accoppiato con successo.
+1. Fai clic sul pulsante **Aggiungi dispositivo** in cima alla pagina Dispositivi.
+2. Ti verrà chiesto di inserire un **codice di associazione**.
+3. Trova il codice di associazione mostrato sul dispositivo ChurchAppsPlayer o FreePlay che vuoi collegare.
+4. Inserisci il codice. Se si tratta di una TV FreePlay, un menu a tendina **Mostra piani per** ti permette di scegliere il tipo di piano che lo schermo deve seguire — lascialo su **Nessuno** per usare il dispositivo solo per navigazione e notifiche.
+5. Conferma. Il dispositivo apparirà nella tua tabella dei dispositivi una volta associato con successo.
 
 :::tip
-Assicurati che il dispositivo ChurchAppsPlayer sia acceso e connesso a internet prima di tentare l'accoppiamento. Il codice di accoppiamento è visualizzato sullo schermo del dispositivo.
+Assicurati che il dispositivo sia acceso e connesso a internet prima di provare ad associarlo. Il codice di associazione è mostrato sullo schermo del dispositivo.
 :::
 
-## Modificare l'etichetta di un dispositivo
+## Modifica dell'etichetta di un dispositivo
 
 1. Fai clic sul **nome del dispositivo** nella tabella dei dispositivi.
-2. Aggiorna l'etichetta con qualcosa di descrittivo (ad esempio, "Schermo Principale Santuario" o "Display Atrio").
-3. Salva le modifiche.
+2. Aggiorna l'etichetta con qualcosa di descrittivo (ad esempio, "Schermo Principale Santuario" o "Display Ingresso").
+3. Salva le tue modifiche.
 
 :::tip
-Utilizzare etichette chiare e descrittive rende facile identificare quale dispositivo è quale, specialmente quando hai più schermi configurati nella tua chiesa.
+Usare etichette chiare e descrittive rende facile identificare quale dispositivo è quale, specialmente quando hai più schermi configurati nella tua chiesa.
 :::
 
-## Gestione dell'accesso ai dispositivi
+## Gestione dell'accesso dei dispositivi
 
-Usa la pagina Dispositivi per tenere traccia di quali dispositivi hanno accesso allo streaming e ai contenuti della tua chiesa. Se un dispositivo non è più in uso, puoi rimuoverlo dal tuo account per mantenere la lista dei dispositivi pulita e sicura.
+Usa la pagina Dispositivi per tenere traccia di quali dispositivi hanno accesso allo streaming e ai contenuti della tua chiesa. Se un dispositivo non è più in uso, puoi rimuoverlo dal tuo account per mantenere il tuo elenco di dispositivi pulito e sicuro.
 
 :::warning
-Controlla regolarmente i tuoi dispositivi connessi per assicurarti che solo i dispositivi attivi e autorizzati siano collegati al tuo account. Rimuovi tutti i dispositivi che non sono più in uso per mantenere la sicurezza.
+Rivedi regolarmente i tuoi dispositivi collegati per assicurarti che solo dispositivi attivi e autorizzati siano collegati al tuo account. Rimuovi qualsiasi dispositivo non più in uso per mantenere la sicurezza.
 :::
 
 ## Prossimi passi
 
-- [Gestione del Profilo](./managing-profile.md) -- Modifica le impostazioni del tuo account personale
+- [Gestione del tuo profilo](./managing-profile.md) -- Modifica le impostazioni del tuo account personale

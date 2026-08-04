@@ -6,11 +6,11 @@ title: "Архитектура уведомлений и напоминаний"
 
 <div class="article-intro">
 
-Каждое сообщение member church видит outside страница они looking в — badge count push notification digest email — passes через one из two doors в MessagingApi. Эта страница documents funnel reminder engine это feeds это на schedule и preference модель это decides что actually reaches person.
+Каждое сообщение, которое участник церкви видит вне страницы, на которую он сейчас смотрит, — счётчик значка, push-уведомление, дайджест по email — проходит через одну из двух дверей в MessagingApi. Эта страница описывает воронку, движок напоминаний, который питает её по расписанию, и модель предпочтений, которая решает, что на самом деле доходит до человека.
 
 </div>
 
-## Обзор — two doors
+## Обзор — две двери
 
 ```
 scheduled anything ──▶ ReminderEngine (definitions → occurrences → scan) ─┐
@@ -19,17 +19,17 @@ chat / requests / workflow / bulk sends ─────────────�
 account/legal mail ──▶ TransactionalEmailHelper.sendTransactional()  [allowlisted, lint-enforced]
 ```
 
-1. **Anything это tells person something** goes через `NotificationHelper.createNotifications()` в messaging модуль. Это persists `notifications` строка и escalates socket → push → email evaluating `PreferenceGateHelper` per channel — включая `in_app` на level 0.
-2. **Anything scheduled** это `reminderDefinition` (entity-level или scope-level) expanded в `reminderOccurrences` и dispatched by `ReminderEngine.scan()` на recurring таймер. One expander one dispatcher one send ledger (`reminderSentLog`).
-3. **Direct email** exists только behind `TransactionalEmailHelper.sendTransactional()`. ESLint правило enforces это на compile time — see ниже.
+1. **Всё, что сообщает человеку что-либо**, проходит через `NotificationHelper.createNotifications()` в модуле messaging. Он сохраняет строку `notifications` и эскалирует по цепочке сокет → push → email, оценивая `PreferenceGateHelper` для каждого канала — включая `in_app` на уровне 0.
+2. **Всё запланированное** — это `reminderDefinition` (на уровне сущности или на уровне области), разворачиваемое в `reminderOccurrences` и отправляемое `ReminderEngine.scan()` по повторяющемуся таймеру. Один разворачиватель, один диспетчер, один журнал отправок (`reminderSentLog`).
+3. **Прямая отправка email** существует только за `TransactionalEmailHelper.sendTransactional()`. Правило ESLint обеспечивает это на этапе компиляции — см. ниже.
 
-:::tip Email дверь это lint-enforced не only convention
-`Api/tools/eslint-rules/email-door.cjs` defines `no-direct-email-helper`: любой call к `EmailHelper.sendTemplatedEmail()` или `EmailHelper.sendEmail()` outside `NotificationHelper.ts` или `TransactionalEmailHelper.ts` fails lint. Если вам need отправить email route это через funnel (`createNotifications` с `emailImmediate`) или через `TransactionalEmailHelper.sendTransactional()` — нет third путь это passes CI.
+:::tip Дверь email закреплена линтером, а не просто соглашением
+`Api/tools/eslint-rules/email-door.cjs` определяет `no-direct-email-helper`: любой вызов `EmailHelper.sendTemplatedEmail()` или `EmailHelper.sendEmail()` вне `NotificationHelper.ts` или `TransactionalEmailHelper.ts` проваливает линтинг. Если вам нужно отправить email, направьте его через воронку (`createNotifications` с `emailImmediate`) или через `TransactionalEmailHelper.sendTransactional()` — третьего пути, проходящего CI, не существует.
 :::
 
-## Notification funnel
+## Воронка уведомлений
 
-`NotificationHelper.createNotifications()` это single entry point для anything это не scheduled или transactional:
+`NotificationHelper.createNotifications()` — единая точка входа для всего, что не запланировано и не транзакционно:
 
 ```typescript
 createNotifications(
@@ -49,26 +49,26 @@ createNotifications(
 )
 ```
 
-Для каждого recipient это saves строка в `notifications` и calls `attemptDeliveryWithEscalation` который walks channel ladder ниже. Still-unread строка для same `(contentType, contentId)` suppresses re-creation — этот dedup guard это skipped для `emailImmediate` sends (reminder offsets staff "email all" workflow steps own их собственный dedup) и для direct messages які always ping socket.
+Для каждого получателя сохраняется строка в `notifications` и вызывается `attemptDeliveryWithEscalation`, который проходит по цепочке каналов ниже. Всё ещё непрочитанная строка для той же пары `(contentType, contentId)` подавляет повторное создание — эта защита от дублирования пропускается для отправок `emailImmediate` (сдвиги напоминаний, «отправить всем» персонала, шаги рабочего процесса имеют собственную дедупликацию) и для прямых сообщений, которые всегда пингуют сокет.
 
-`shared/helpers/NotificationService.ts` mirrors same signature (`NotificationServiceOptions`) для callers outside messaging модуль и это registered с messaging модулю на boot.
+`shared/helpers/NotificationService.ts` отражает ту же сигнатуру (`NotificationServiceOptions`) для вызывающих сторон вне модуля messaging и регистрируется вместе с модулем messaging при загрузке.
 
-## Channel escalation цепь
+## Цепочка эскалации по каналам
 
-Delivery starts в level (0 by default или higher для reminders/explicit sends) и only proceeds к next channel если previous один didn't succeed. Каждый level это gated by `PreferenceGateHelper` перед anything attempted.
+Доставка начинается с определённого уровня (0 по умолчанию, либо выше для напоминаний/явных отправок) и переходит к следующему каналу, только если предыдущий не удался. Каждый уровень проверяется `PreferenceGateHelper`, прежде чем что-либо предпринимается.
 
-| Level | Channel | Behavior |
+| Уровень | Канал | Поведение |
 |-------|---------|----------|
-| 0 | **in_app / socket** | `in_app` gate это checked сначала. Если suppressed (muted) строка это persisted с `isNew=false` и delivery stops entire — no socket ping no badge no further escalation. Otherwise сервер looks up open socket connections для person's `alerts` room и pushes `notification` (или `privateMessage`) frame. Для ordinary notifications successful socket delivery stops цепь здесь — 30-minute таймер re-checks unread items и escalates их позже. Direct messages никогда не stop у socket: installed PWA может hold alerts socket open в background что would otherwise suppress OS-level push. |
-| 1 | **push** | Gated на `allowPush` / category opt-out / quiet hours. Sends к both Expo push tokens и Web Push subscriptions found на person's `devices` строки deduplicating by endpoint и pruning stale tokens along the way. |
-| 2 | **email** | Gated на `emailFrequency` и category opt-out. Immediate sends (`emailImmediate`) render прямо away и write `deliveryLogs` строка; otherwise notification это left pending для batch digest described ниже. |
-| — | **sms** | Preference plumbing (`allowSms` per-category channel списки) уже accounts для SMS channel но no producer sends через это today — это stays зарезервировано для bulk SMS продукт які runs как separate siloed flow через `TextingController` / `@churchapps/texting`. |
+| 0 | **in_app / socket** | Сначала проверяется шлюз `in_app`. Если подавлено (заглушено), строка сохраняется с `isNew=false`, и доставка полностью останавливается — ни пинга сокета, ни значка, ни дальнейшей эскалации. В противном случае сервер ищет открытые сокет-соединения для комнаты `alerts` человека и отправляет фрейм `notification` (или `privateMessage`). Для обычных уведомлений успешная доставка через сокет останавливает цепочку здесь — 30-минутный таймер позже перепроверяет непрочитанные элементы и эскалирует их. Прямые сообщения никогда не останавливаются на сокете: установленное PWA может держать сокет alerts открытым в фоне, что иначе подавило бы push на уровне ОС. |
+| 1 | **push** | Ограничивается через `allowPush` / отказ от категории / тихие часы. Отправляется как на токены Expo push, так и на подписки Web Push, найденные в строках `devices` человека, с дедупликацией по конечной точке и удалением устаревших токенов по пути. |
+| 2 | **email** | Ограничивается через `emailFrequency` и отказ от категории. Немедленные отправки (`emailImmediate`) рендерятся сразу и записывают строку `deliveryLogs`; в противном случае уведомление остаётся в ожидании пакетного дайджеста, описанного ниже. |
+| — | **sms** | Инфраструктура предпочтений (`allowSms`, списки каналов по категориям) уже учитывает канал SMS, но сегодня ни один производитель не отправляет через него — он остаётся зарезервированным для продукта массовых SMS, который работает как отдельный, изолированный поток через `TextingController` / `@churchapps/texting`. |
 
-Unread notifications left на socket или push это escalated by 30-minute таймер (`NotificationHelper.escalateDelivery`). Batch email это sent by `NotificationHelper.sendEmailNotifications(frequency)` driven by каждого person's `emailFrequency` preference: `individual` runs на 30-minute таймер `daily` runs на nightly таймер. (`weekly` это valid preference value але has no dedicated batch run еще.)
+Непрочитанные уведомления, оставшиеся на уровне сокета или push, эскалируются 30-минутным таймером (`NotificationHelper.escalateDelivery`). Пакетная почта отправляется `NotificationHelper.sendEmailNotifications(frequency)`, управляемым предпочтением `emailFrequency` каждого человека: `individual` запускается 30-минутным таймером, `daily` — ночным таймером. (`weekly` — допустимое значение предпочтения, но выделенного пакетного запуска для него пока нет.)
 
-## Reminder Engine
+## Движок напоминаний
 
-Scheduled напоминания — event напоминания task due dates serving/plan assignment напоминания — все это go через one generalized движок rather чем bespoke per-feature cron логика.
+Запланированные напоминания — напоминания о мероприятиях, сроки задач, напоминания о назначениях на служение/план — все проходят через один обобщённый движок, а не через специальную cron-логику для каждой функции.
 
 ```
 reminderDefinitions ──expand──▶ reminderOccurrences ──scan (30 min)──▶ createNotifications()
@@ -78,83 +78,83 @@ reminderDefinitions ──expand──▶ reminderOccurrences ──scan (30 min
  offsets/channels/message        entity, occurrence, offset)           + reminderSentLog ledger
 ```
 
-**Definitions** (`reminderDefinitions`) это либо entity-level (`entityId` set — specific event task или plan) или scope-level (`entityId` null `scopeId` set — например every plan under serving plan type). Definition carries CSV это minute offsets (`offsets` например `"1440,60"` для one день и one hour перед) local send time (`sendLocalTime`) CSV это channels (`channels` — включая `email` triggers immediate rich email на send time) `recipientMode` и optional custom `message`.
+**Определения** (`reminderDefinitions`) бывают либо на уровне сущности (задан `entityId` — конкретное мероприятие, задача или план), либо на уровне области (`entityId` пуст, задан `scopeId` — например, каждый план под определённым типом плана служения). Определение несёт CSV минутных сдвигов (`offsets`, например `"1440,60"` для одного дня и одного часа заранее), локальное время отправки (`sendLocalTime`), CSV каналов (`channels` — включение `email` вызывает немедленное развёрнутое письмо в момент отправки), `recipientMode` и опциональное пользовательское `message`.
 
-**Expansion** materializes пожарные row для horizon ahead (rolling multi-day window). Это runs на nightly таймер и synchronously whenever definition это saved поэтому напоминание для last-minute event все еще fires. Scope definitions fan out через adapter's `loadScopeEntities` producing one occurrence set per concrete entity; entity-level occurrences использование ключ `definitionId:occurrenceISO:offset` в то время как scoped occurrences namespace by entity id поэтому они никогда не collide. Upserting occurrence **resurrects** previously-cancelled строка — cancel-then-re-expand это standard способ к re-sync напоминание после underlying entity изменения; строки уже `sent` `failed` или `processing` это left untouched.
+**Разворачивание** материализует строки срабатывания на предстоящий горизонт (скользящее многодневное окно). Оно запускается ночным таймером и синхронно при каждом сохранении определения, поэтому напоминание для мероприятия в последнюю минуту всё равно срабатывает. Определения на уровне области разворачиваются через `loadScopeEntities` адаптера, производя один набор срабатываний на каждую конкретную сущность; срабатывания на уровне сущности используют ключ `definitionId:occurrenceISO:offset`, а срабатывания на уровне области помечены пространством имён по id сущности, чтобы они никогда не сталкивались. Upsert срабатывания **воскрешает** ранее отменённую строку — «отменить, затем развернуть заново» является стандартным способом пересинхронизировать напоминание после изменения базовой сущности; строки, уже помеченные `sent`, `failed` или `processing`, остаются нетронутыми.
 
-**Dispatch** (`ReminderEngine.scan()`) runs на 30-minute таймер. Это claims due occurrences (lease prevents double-processing) loads recipients через entity's adapter filters out anyone уже recorded в `reminderSentLog` для этого occurrence и calls `createNotifications` с `deliveryStartLevel: 1` (skip straight к push) плюс `emailImmediate`/`emailByPerson` когда definition's channels включая email.
+**Отправка** (`ReminderEngine.scan()`) выполняется по 30-минутному таймеру. Она захватывает подошедшие срабатывания (аренда предотвращает двойную обработку), загружает получателей через адаптер сущности, отфильтровывает тех, кто уже зафиксирован в `reminderSentLog` для этого срабатывания, и вызывает `createNotifications` с `deliveryStartLevel: 1` (сразу к push) плюс `emailImmediate`/`emailByPerson`, когда каналы определения включают email.
 
-Internal event шина reacts к entity мутациям без waiting для nightly expansion: content события (через webhook dispatcher) и plan/task update события trigger immediate re-expansion или cancellation для affected entity и plan update также re-expands any scope definitions tied к its plan type.
+Внутренняя событийная шина реагирует на мутации сущностей, не дожидаясь ночного разворачивания: события контента (через диспетчер вебхуков) и события обновления планов/задач вызывают немедленное повторное разворачивание или отмену для затронутой сущности, а обновление плана также повторно разворачивает любые определения на уровне области, привязанные к его типу плана.
 
-### Adapters
+### Адаптеры
 
-Movement это entity-agnostic; каждый supported entity тип plugs в через adapter (`helpers/adapters/`):
+Движок не зависит от конкретной сущности; каждый поддерживаемый тип сущности подключается через адаптер (`helpers/adapters/`):
 
-| Entity тип | Adapter | Примечания |
+| Тип сущности | Адаптер | Примечания |
 |-------------|---------|-------|
-| `event` | `EventReminderAdapter` | Recipients scoped к registrants или group members в зависимости от event и `recipientMode`. |
-| `plan` | `PlanReminderAdapter` | Recipients это Accepted + Unconfirmed plan assignments. `buildEmails` calls в `DoingModuleGateway.buildPlanReminderEmails` які renders positions notes и custom message через `doing/helpers/PlanReminderEmailHelper` включая Accept/Decline кнопки signed by `ReminderTokenHelper` это post к public assignment-response endpoint. |
-| `task` | `TaskReminderAdapter` | Recipients это task's assignee(s). |
+| `event` | `EventReminderAdapter` | Получатели ограничены зарегистрированными участниками или членами группы в зависимости от мероприятия и `recipientMode`. |
+| `plan` | `PlanReminderAdapter` | Получатели — назначения на план со статусом «Принято» + «Не подтверждено». `buildEmails` обращается к `DoingModuleGateway.buildPlanReminderEmails`, который рендерит позиции, заметки и пользовательское сообщение через `doing/helpers/PlanReminderEmailHelper`, включая кнопки Принять/Отклонить, подписанные `ReminderTokenHelper`, которые отправляют запрос на публичную конечную точку ответа на назначение. |
+| `task` | `TaskReminderAdapter` | Получатели — исполнитель(и) задачи. |
 
-### Endpoints
+### Конечные точки
 
-| Method | Path | Цель |
+| Метод | Путь | Назначение |
 |--------|------|---------|
-| `GET` / `POST` | `/messaging/reminders/:entityType/:entityId` | Load или save reminder definition для one entity. |
-| `GET` / `POST` | `/messaging/reminders/scope/:entityType/:scopeId` | Load или save scope-level (inherited) reminder definition. |
-| `DELETE` | `/messaging/reminders/:defId` | Delete definition и cancel its pending occurrences. |
-| `GET` | `/messaging/reminders/event/:eventId/preview` | Preview recipient count и next fire times для event напоминание перед saving. |
-| `GET` | `/messaging/reminders/log` | Recent напоминание occurrence история для church. |
-| `POST` | `/messaging/reminders/mute` | Mute напоминания для specific entity. |
+| `GET` / `POST` | `/messaging/reminders/:entityType/:entityId` | Загрузить или сохранить определение напоминания для одной сущности. |
+| `GET` / `POST` | `/messaging/reminders/scope/:entityType/:scopeId` | Загрузить или сохранить определение напоминания на уровне области (наследуемое). |
+| `DELETE` | `/messaging/reminders/:defId` | Удалить определение и отменить его ожидающие срабатывания. |
+| `GET` | `/messaging/reminders/event/:eventId/preview` | Предпросмотр количества получателей и следующих времён срабатывания для напоминания о мероприятии перед сохранением. |
+| `GET` | `/messaging/reminders/log` | Недавняя история срабатываний напоминаний для церкви. |
+| `POST` | `/messaging/reminders/mute` | Заглушить напоминания для конкретной сущности. |
 
-Saving definition triggers synchronous re-expansion для это entity или scope поэтому editors видят up-to-date "next fires" без waiting для nightly job.
+Сохранение определения вызывает синхронное повторное разворачивание для этой сущности или области, поэтому редакторы видят актуальные «следующие срабатывания», не дожидаясь ночной задачи.
 
-## Direct messages
+## Прямые сообщения
 
-Direct messages ride same funnel как everything else rather чем separate escalation путь. Каждый unread conversation gets one **shadow строка** в `notifications` (`contentType='privateMessage'` `contentId` = private message id `category='direct_messages'`) это owns все delivery state — socket/push/email escalation read tracking everything. `privateMessages` таблица самая keeps message payload и `notifyPersonId` column які это source это unread badge и gets cleared когда recipient reads conversation.
+Прямые сообщения проходят через ту же воронку, что и всё остальное, а не через отдельный путь эскалации. Каждая непрочитанная беседа получает одну **теневую строку** в `notifications` (`contentType='privateMessage'`, `contentId` = id личного сообщения, `category='direct_messages'`), которая владеет всем состоянием доставки — эскалацией сокет/push/email, отслеживанием прочтения, всем. Сама таблица `privateMessages` хранит полезную нагрузку сообщения и столбец `notifyPersonId`, который является источником значка непрочитанного и очищается, когда получатель читает беседу.
 
-Shadow строки это invisible к notifications bell: они excluded из unread count query notification список query и mark-read/delete queries все из които filter `contentType <> 'privateMessage'`. Каждый DM ping hits socket regardless из unread state (live чат semantics — no dedup) и DMs никогда не stop на socket delivery как ordinary напоминания делать since backgrounded PWA может hold socket open у то время как все еще needing OS-level push. Если person mutes DM напоминания shadow строка это parked (`isNew=false` `notifyPersonId` cleared) — все еще visible внутри conversation самого только без badges или alerts.
+Теневые строки невидимы для колокольчика уведомлений: они исключены из запроса счётчика непрочитанных, запроса списка уведомлений и запросов отметки прочитанным/удаления, все из которых фильтруют `contentType <> 'privateMessage'`. Каждый пинг личного сообщения попадает в сокет независимо от состояния непрочитанности (семантика живого чата — без дедупликации), и личные сообщения никогда не останавливаются на доставке через сокет, как это делают обычные уведомления, поскольку свёрнутое в фон PWA может держать сокет открытым, всё ещё нуждаясь в push на уровне ОС. Если человек заглушает уведомления о личных сообщениях, теневая строка паркуется (`isNew=false`, `notifyPersonId` очищается) — всё ещё видна внутри самой беседы, просто без значков и оповещений.
 
-## Preferences & gating
+## Предпочтения и ограничения
 
-Каждый send passes через `PreferenceGateHelper.evaluate()` pure функцион (все state passed в no DB calls на hot путь) это returns `allow` `suppress` или `defer`. Layers run в order и first один это decides wins:
+Каждая отправка проходит через `PreferenceGateHelper.evaluate()`, чистую функцию (всё состояние передаётся снаружи, никаких обращений к БД на горячем пути), которая возвращает `allow`, `suppress` или `defer`. Уровни выполняются по порядку, и решение принимает первый, кто его принял:
 
-1. **Locked категория** — some категории это mandatory (tier 0) и bypass every другой layer.
-2. **Master mute / channel kill** — `masterMute` `allowPush` `allowSms` или `emailFrequency='never'` suppress outright.
-3. **Quiet hours** — push и SMS only (email это considered non-intrusive). Если current wall-clock time в person's timezone falls в их quiet window transactional категория все еще gets through; non-transactional one это deferred к end из quiet window computed как DST-correct UTC мгновение через `TimezoneHelper.wallClockToUtc`.
-4. **Per-category preference override** — explicit opt-out для one категория × channel пара; отсутствие means категория's default.
-5. **Per-entity mute** — mute recorded против specific entity (например one event one plan) restricts дальше чем категория-level setting але only applies когда caller supplies entity id/type alongside notification.
+1. **Заблокированная категория** — некоторые категории обязательны (уровень 0) и обходят все остальные уровни.
+2. **Общее отключение / отключение канала** — `masterMute`, `allowPush`, `allowSms` или `emailFrequency='never'` подавляют безоговорочно.
+3. **Тихие часы** — только push и SMS (email считается ненавязчивым). Если текущее время по настенным часам в часовом поясе человека попадает в его тихое окно, транзакционная категория всё равно проходит; нетранзакционная откладывается до конца тихого окна, вычисляемого как корректный по переходу на летнее время момент UTC через `TimezoneHelper.wallClockToUtc`.
+4. **Переопределение предпочтения по категории** — явный отказ для пары категория × канал; отсутствие означает значение категории по умолчанию.
+5. **Заглушение по конкретной сущности** — заглушение, зафиксированное для конкретной сущности (например, одного мероприятия, одного плана), ограничивает сильнее, чем настройка на уровне категории, но применяется только когда вызывающая сторона передаёт id/тип сущности вместе с уведомлением.
 
-Таблицы involved: `notificationPreferences` (global — `masterMute` `emailFrequency` из `individual|daily|weekly|never` `allowPush` quiet-hours window + timezone `allowSms`) `notificationPreferenceOverrides` (per категория × channel) и `notificationEntityMutes` (per entity).
+Задействованные таблицы: `notificationPreferences` (глобальные — `masterMute`, `emailFrequency` со значениями `individual|daily|weekly|never`, `allowPush`, окно тихих часов + часовой пояс, `allowSms`), `notificationPreferenceOverrides` (по категории × каналу) и `notificationEntityMutes` (по сущности).
 
-Это gate это enforced для in-app (level 0) push (level 1) и email (level 2) внутри funnel — включая immediate reminder/digest emails. Transactional email (auth коды password resets invites donation receipts) bypasses это by дизайн; это целый point из second дверь.
+Это ограничение применяется для in-app (уровень 0), push (уровень 1) и email (уровень 2) внутри воронки — включая немедленные письма-напоминания/дайджесты. Транзакционная почта (коды аутентификации, сброс пароля, приглашения, квитанции о пожертвованиях) обходит его по замыслу; в этом весь смысл второй двери.
 
-## Scheduling
+## Планирование
 
-Оба reminder движок и notification digest ride существующий scheduled таймеры rather чем introducing new инфраструктура:
+И движок напоминаний, и дайджест уведомлений используют существующие запланированные таймеры, а не вводят новую инфраструктуру:
 
-| Таймер | Schedule | Runs |
+| Таймер | Расписание | Выполняет |
 |-------|----------|------|
-| 30-minute таймер | every 30 minutes | Escalate unread напоминания; send `individual`-frequency digest emails; dispatch due напоминание occurrences (`ReminderEngine.scan`); одобрение digests; due automation executions |
-| Nightly таймер | 05:00 UTC | Group посещаемость напоминания; advance recurring streaming услуги; refresh auto-refresh lists; expand напоминание occurrences для next horizon (`ReminderEngine.expandAll`); send `daily`-frequency digest emails |
+| 30-минутный таймер | каждые 30 минут | Эскалация непрочитанных уведомлений; отправка дайджест-писем с частотой `individual`; отправка подошедших срабатываний напоминаний (`ReminderEngine.scan`); дайджесты одобрений; исполнения автоматизаций по расписанию |
+| Ночной таймер | 05:00 UTC | Напоминания о посещаемости групп; продвижение повторяющихся потоковых служений; обновление списков автообновления; разворачивание срабатываний напоминаний на следующий горизонт (`ReminderEngine.expandAll`); отправка дайджест-писем с частотой `daily` |
 
-Locally same логика может быть triggered на demand с `npm run timer:30min` и `npm run timer:midnight` из `Api` проект.
+Локально ту же логику можно запустить по требованию командами `npm run timer:30min` и `npm run timer:midnight` из проекта `Api`.
 
-## File inventory
+## Перечень файлов
 
-| Area | Files |
+| Область | Файлы |
 |------|-------|
-| Funnel | `Api/src/modules/messaging/helpers/NotificationHelper.ts`, `PreferenceGateHelper.ts`, `NotificationCategoryHelper.ts`, `WebPushHelper.ts`, `ExpoPushHelper.ts`, `SocketHelper.ts`, `DeliveryHelper.ts` |
-| Shared entry | `Api/src/shared/helpers/NotificationService.ts` |
-| Transactional door | `Api/src/shared/helpers/TransactionalEmailHelper.ts`, lint правило `Api/tools/eslint-rules/email-door.cjs` |
-| Reminder движок | `Api/src/modules/messaging/helpers/ReminderEngine.ts`, `ReminderBootstrap.ts`, `helpers/adapters/*`, `controllers/ReminderController.ts` |
-| Reminder repositories | `Api/src/modules/messaging/repositories/ReminderDefinitionRepo.ts`, `ReminderOccurrenceRepo.ts`, `ReminderSentLogRepo.ts` |
-| Serving/plan email | `Api/src/modules/doing/helpers/PlanReminderEmailHelper.ts`, `ReminderTokenHelper.ts`, `Api/src/shared/modules/DoingModuleGateway.ts` |
-| Reminder редакторы (B1Admin) | `serving/components/PlanTypeReminderEdit.tsx`, `calendars/components/EventReminderEdit.tsx`, `serving/tasks/components/TaskReminderEdit.tsx` |
-| Reminder редактор / preferences (B1App) | `EventReminderEdit.tsx`, `NotificationPrefsPage.tsx`, `useRealtimeNotifications.ts` |
+| Воронка | `Api/src/modules/messaging/helpers/NotificationHelper.ts`, `PreferenceGateHelper.ts`, `NotificationCategoryHelper.ts`, `WebPushHelper.ts`, `ExpoPushHelper.ts`, `SocketHelper.ts`, `DeliveryHelper.ts` |
+| Общая точка входа | `Api/src/shared/helpers/NotificationService.ts` |
+| Транзакционная дверь | `Api/src/shared/helpers/TransactionalEmailHelper.ts`, правило линтера `Api/tools/eslint-rules/email-door.cjs` |
+| Движок напоминаний | `Api/src/modules/messaging/helpers/ReminderEngine.ts`, `ReminderBootstrap.ts`, `helpers/adapters/*`, `controllers/ReminderController.ts` |
+| Репозитории напоминаний | `Api/src/modules/messaging/repositories/ReminderDefinitionRepo.ts`, `ReminderOccurrenceRepo.ts`, `ReminderSentLogRepo.ts` |
+| Email служения/плана | `Api/src/modules/doing/helpers/PlanReminderEmailHelper.ts`, `ReminderTokenHelper.ts`, `Api/src/shared/modules/DoingModuleGateway.ts` |
+| Редакторы напоминаний (B1Admin) | `serving/components/PlanTypeReminderEdit.tsx`, `calendars/components/EventReminderEdit.tsx`, `serving/tasks/components/TaskReminderEdit.tsx` |
+| Редактор напоминаний / предпочтения (B1App) | `EventReminderEdit.tsx`, `NotificationPrefsPage.tsx`, `useRealtimeNotifications.ts` |
 
 ## Связанные страницы
 
-- [Real-time Architecture](../realtime) — WebSocket протокол и client primitives (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) это in-app delivery level rides на
-- [Web Push Notifications](../web-push) — VAPID setup и browser Push API путь used by push escalation level
-- [Messaging Endpoints](../api/endpoints/messaging) — полный REST поверхность для messages conversations connections и notification/reminder маршруты
+- [Архитектура реального времени](../realtime) — протокол WebSocket и клиентские примитивы (`SocketHelper`, `SubscriptionManager`, `ConversationStore`), на которых держится уровень доставки внутри приложения
+- [Веб-push-уведомления](../web-push) — настройка VAPID и путь браузерного Push API, используемый уровнем эскалации push
+- [Конечные точки Messaging](../api/endpoints/messaging) — полная REST-поверхность для сообщений, бесед, соединений и маршрутов уведомлений/напоминаний

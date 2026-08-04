@@ -6,7 +6,7 @@ title: "Маршрутизация веб-сайтов и мульти-сайт"
 
 <div class="article-intro">
 
-Single церковь может теперь serve more чем one distinct веб-сайт и каждый один может live на `*.b1.church` subdomain или на fully custom church-owned доменною На этой странице описывается routing слой که sits *under* builder: как incoming запрос resolves к church **і** к specific сайт multi-site data модель (`siteId` sentinel это keeps every pre-existing сайт rendering unchanged) і custom-domain edge — self-managed Caddy proxy на EC2 که terminates TLS і rewrites каждый church domain onto його `*.b1.church` upstream. Для what actually renders один раз запрос has resolved — page/section/element дерево — see [Website Builder](./website-builder).
+Теперь одна церковь может обслуживать более одного отдельного веб-сайта, и каждый из них может жить либо на субдомене `*.b1.church`, либо на полностью пользовательском, принадлежащем церкви домене. На этой странице описан слой маршрутизации, который находится *под* конструктором: как входящий запрос разрешается в церковь **и** в конкретный сайт, модель данных мульти-сайта (сигнальное значение `siteId`, которое сохраняет неизменным рендеринг каждого уже существующего сайта) и граница пользовательских доменов — самоуправляемый прокси Caddy на EC2, который завершает TLS и переписывает домен каждой церкви на её вышестоящий сервер `*.b1.church`. О том, что именно рендерится после того, как запрос разрешён — дерево страница/раздел/элемент — см. [Конструктор веб-сайтов](./website-builder).
 
 </div>
 
@@ -48,157 +48,157 @@ Single церковь может теперь serve more чем one distinct в�
         GET /membership/domains/hostmap    — host→{sub}.b1.church map (5-min refresh)
 ```
 
-Три правила hold across это слой:
+Три правила действуют в этом слое:
 
-1. **Sentinel keeps все backward compatible.** `siteId = ''` это primary сайт. Каждый page block link global-style і domain строка که existed перед這 feature carries `''` і renders exactly як він did. *Second* веб-сайт это simply set із строк з non-empty `siteId` і any content endpoint called без `?siteId=` returns primary сайт — byte-for-byte old запрос.
-2. **Resolution это host-label-based і converges.** `*.b1.church` subdomain routes by його host label directly; custom домен это rewritten к його `{sub}.b1.church` label на Caddy edge перед B1App видит это (з middleware DB lookup که stamps `x-site` заголовок як fallback для any raw custom `Host`). Both ноги land на same `[sdSlug]` маршрут і same `churches/lookup` call поэтому downstream rendering это identical.
-3. **Caddy edge це stateless over one source істини.** Custom домени terminate на self-managed Caddy proxy на EC2 که rewrite каждый domain onto його `{sub}.b1.church` upstream. Domain save fires single best-effort `CaddyHelper.updateCaddy()` і Caddy також читає `domains` таблиця directly (`authorize` і `hostmap` endpoints ниже). Таблиця это authoritative — unreachable Caddy може никогда не fail save.
+1. **Сигнальное значение сохраняет обратную совместимость.** `siteId = ''` — это основной сайт. Каждая страница, блок, ссылка, глобальный стиль и строка домена, существовавшие до этой функции, несут `''` и рендерятся ровно так же, как и раньше. *Второй* веб-сайт — это просто набор строк с непустым `siteId`, а любая конечная точка контента, вызванная без `?siteId=`, возвращает основной сайт — байт в байт тот же запрос, что и раньше.
+2. **Разрешение основано на метке хоста и сходится к общему пути.** Субдомен `*.b1.church` маршрутизируется напрямую по метке хоста; пользовательский домен переписывается в свою метку `{sub}.b1.church` на границе Caddy до того, как его увидит B1App (с поиском в базе данных из middleware, ставящим заголовок `x-site` как резерв для любого сырого пользовательского `Host`). Обе ветки попадают на один и тот же маршрут `[sdSlug]` и один и тот же вызов `churches/lookup`, поэтому нижестоящий рендеринг идентичен.
+3. **Граница Caddy не хранит состояния поверх единого источника истины.** Пользовательские домены завершаются на самоуправляемом прокси Caddy на EC2, который переписывает каждый домен на вышестоящий сервер `{sub}.b1.church`. Сохранение домена вызывает единый лучший-по-возможности вызов `CaddyHelper.updateCaddy()`, а Caddy также напрямую читает таблицу `domains` (конечные точки `authorize` и `hostmap` ниже). Таблица является авторитетной — недоступный Caddy никогда не может сорвать сохранение.
 
-## Site resolution
+## Разрешение сайта
 
-### `*.b1.church` subdomains
+### Субдомены `*.b1.church`
 
-`B1App/next.config.mjs` rewrite incoming запросы by host. Host правило з pattern `(?<subdomain>.*?)\..*` captures **first label** із host і rewrite `/` і `/:path*` в `/{subdomain}` — `[sdSlug]` App-Router сегмент. Поэтому `grace.b1.church/about` becomes `/grace/about`.
+`B1App/next.config.mjs` переписывает входящие запросы по хосту. Правило хоста с шаблоном `(?<subdomain>.*?)\..*` захватывает **первую метку** хоста и переписывает `/` и `/:path*` в `/{subdomain}` — сегмент App Router `[sdSlug]`. Так `grace.b1.church/about` становится `/grace/about`.
 
-Внутри `src/app/[sdSlug]/` `ConfigHelper.load(sdSlug)` (`src/helpers/ConfigHelper.ts`) calls `GET /membership/churches/lookup/?subDomain={sdSlug}`. `ChurchController.getBySubDomain` ответ тепер has two гілки:
+Внутри `src/app/[sdSlug]/` `ConfigHelper.load(sdSlug)` (`src/helpers/ConfigHelper.ts`) вызывает `GET /membership/churches/lookup/?subDomain={sdSlug}`. Ответ `ChurchController.getBySubDomain` теперь имеет две ветви:
 
-| Slug matches | Ответ | Значение |
+| Совпадение slug | Ответ | Значение |
 |--------------|----------|---------|
-| `churches.subDomain` | `{ id, name, subDomain }` | Primary сайт із це church |
-| `sites.subDomain` | `{ id, name, subDomain, siteId }` | **Secondary сайт** — контроллер falls back к `sites` resolves owning church і echoes queried slug плюс extra `siteId` |
+| `churches.subDomain` | `{ id, name, subDomain }` | Основной сайт этой церкви |
+| `sites.subDomain` | `{ id, name, subDomain, siteId }` | **Дополнительный сайт** — контроллер откатывается к `sites`, разрешает владеющую церковь и отражает запрошенный slug плюс дополнительный `siteId` |
 
-Це extra `siteId` это only вещь که distinguishes secondary-site запрос із primary один; всё else в pipeline это shared.
+Именно этот дополнительный `siteId` — единственное, что отличает запрос к дополнительному сайту от запроса к основному; всё остальное в конвейере общее.
 
-### Custom домени
+### Пользовательские домены
 
-Church-owned домен terminates на **Caddy edge** (detailed ниже) які rewrite `Host` заголовок к site's `{sub}.b1.church` перед proxying к B1App. Поэтому на normal путь B1App receives *internal* `*.b1.church` host і resolve його by host label exactly як native subdomain — middleware's DB lookup никогда не fires. `src/middleware.ts` все ще runs на каждый запрос але з one always-on job і one fallback:
+Домен, принадлежащий церкви, завершается на **границе Caddy** (подробно ниже), которая переписывает заголовок `Host` в `{sub}.b1.church` сайта перед проксированием к B1App. Так что на обычном пути B1App получает *внутренний* хост `*.b1.church` и разрешает его по метке хоста ровно как обычный субдомен — поиск в базе данных из middleware никогда не срабатывает. `src/middleware.ts` всё же выполняется при каждом запросе, но с одной постоянной задачей и одним резервным вариантом:
 
-1. **Always** — це **delete any client-supplied `x-site` заголовок**. That заголовок это spoofable rewrite input і це only ever trusted коли middleware itself sets його; stripping його це middleware's real job за Caddy.
-2. **Fallback non-internal `Host` only** — для raw custom-domain `Host` که reaches B1App *without* Caddy's rewrite це calls `GET /membership/domains/public/lookup/{host}` і якщо це return `subDomain` sets `x-site: {subDomain}.b1.church`. За Caddy це branch це inert потому `Host` это вже `*.b1.church`.
+1. **Всегда** — он **удаляет любой заголовок `x-site`, предоставленный клиентом**. Этот заголовок — уязвимый для подмены вход перезаписи и является доверенным, только когда его устанавливает само middleware; удаление его — реальная задача middleware за Caddy.
+2. **Резерв, только для не-внутреннего `Host`** — для сырого `Host` пользовательского домена, который достигает B1App *без* переписывания Caddy, оно вызывает `GET /membership/domains/public/lookup/{host}`, и если это возвращает `subDomain`, устанавливает `x-site: {subDomain}.b1.church`. За Caddy эта ветвь неактивна, потому что `Host` уже `*.b1.church`.
 
-Internal hosts — `localhost`, `b1.church` і suffixes `.b1.church`, `.localtest.me`, `.localhost`, `.up.railway.app`, `.vercel.app` — skip lookup entirely (они already resolved by host-label rewrite або це preview/deploy hosts).
+Внутренние хосты — `localhost`, `b1.church` и суффиксы `.b1.church`, `.localtest.me`, `.localhost`, `.up.railway.app`, `.vercel.app` — полностью пропускают поиск (они уже разрешены переписыванием по метке хоста, либо это хосты предпросмотра/развёртывания).
 
-Lookup самий (`DomainRepo.loadByName`) left-joins `domains → churches` і `domains → sites` і returns `COALESCE(NULLIF(sites.subDomain,''), churches.subDomain)` — assigned secondary site's subdomain якщо domain points на один otherwise church's. Це matches exact host сначала; якщо це host почав з `www.` і missed це retries **один раз** против bare apex.
+Сам поиск (`DomainRepo.loadByName`) выполняет левое соединение `domains → churches` и `domains → sites` и возвращает `COALESCE(NULLIF(sites.subDomain,''), churches.subDomain)` — субдомен назначенного дополнительного сайта, если домен указывает на него, иначе субдомен церкви. Сначала совпадает точный хост; если этот хост начинался с `www.` и не найден, повторяется **один раз** против голого апекса.
 
-Back в `next.config.mjs` `x-site` rewrite правила це placed **ahead of** generic host правила поэтому they win. `x-site: grace.b1.church` → first label `grace` → `[sdSlug] = grace` і з there resolution это identical към subdomain путь (same `churches/lookup` same `siteId`).
+Обратно в `next.config.mjs` правила переписывания `x-site` размещены **раньше** общих правил хоста, поэтому они побеждают. `x-site: grace.b1.church` → первая метка `grace` → `[sdSlug] = grace`, и оттуда разрешение идентично пути субдомена (тот же `churches/lookup`, тот же `siteId`).
 
 :::info
-`x-site` заголовок это untrusted з outside. Middleware unconditionally strips any inbound `x-site` перед optionally setting його own і rewrite правила only ever see middleware-set value — клиент cannot force себя onto another church's content by sending заголовок.
+Заголовок `x-site` недоверен снаружи. Middleware безусловно удаляет любой входящий `x-site`, прежде чем опционально устанавливает свой собственный, а правила переписывания видят только значение, установленное middleware — клиент не может принудительно попасть на контент другой церкви, отправив заголовок.
 :::
 
-Two operational детали на middleware:
+Две операционные детали middleware:
 
-- **Cache.** Каждый host's result (hit *або* confirmed miss — никогда network error) это cached на **10 minutes** в in-memory `Map` per serverless isolate.
-- **Matcher.** Matcher deliberately re-includes `/sitemap.xml`, `/robots.txt` і `/manifest.webmanifest`. Its first pattern excludes dotted paths які would otherwise drop тех файли; they добавлены back поэтому custom domain's per-church SEO/PWA файли також receive `x-site` заголовок.
+- **Кэш.** Результат для каждого хоста (совпадение *или* подтверждённое отсутствие — никогда сетевая ошибка) кэшируется на **10 минут** в памяти, в `Map`, на каждый экземпляр serverless.
+- **Сопоставитель маршрутов.** Сопоставитель намеренно включает обратно `/sitemap.xml`, `/robots.txt` и `/manifest.webmanifest`. Его первый шаблон исключает пути с точками, которые иначе отбросили бы эти файлы; они добавлены обратно, чтобы SEO/PWA-файлы пользовательского домена для каждой церкви также получали заголовок `x-site`.
 
-### `siteId` threading
+### Протягивание `siteId`
 
-`ConfigHelper` stores resolved `siteId` на його per-request `ConfigurationInterface` (memoized з React `cache()`) і appends `?siteId=` к content calls це і page компоненти make — **conditionally**: empty `siteId` (primary-church subdomain) omits параметр altogether. Threaded endpoints це page дерево (`/content/pages/:id/tree`) public page список used by sitemap (`/content/pages/public/:id`) global стилі (`/content/globalStyles/church/:id`) nav ссылки (`/content/links/church/:id`) і standalone footer block (`/content/blocks/public/footer/:id`). На normal render путь footer arrives внутри page дерево (sections tagged `zone: "siteFooter"`) уже fetched з `siteId` поэтому нет un-scoped footer gap.
+`ConfigHelper` сохраняет разрешённый `siteId` в своём `ConfigurationInterface` на каждый запрос (мемоизирован через React `cache()`) и добавляет `?siteId=` к вызовам контента, которые делает он сам и компоненты страницы — **условно**: пустой `siteId` (субдомен основной церкви) полностью опускает параметр. Протянутые конечные точки — это дерево страниц (`/content/pages/:id/tree`), публичный список страниц, используемый картой сайта (`/content/pages/public/:id`), глобальные стили (`/content/globalStyles/church/:id`), навигационные ссылки (`/content/links/church/:id`) и отдельный блок подвала (`/content/blocks/public/footer/:id`). На обычном пути рендеринга подвал приходит внутри дерева страниц (разделы, помеченные `zone: "siteFooter"`), уже полученные с `siteId`, поэтому нет пробела с неограниченным по сайту подвалом.
 
-Member portal (B1App `mobile`) intentionally sits outside це: `loadChurchAppearance.ts` resolves church via `churches/lookup` але reads church-level `/settings/public/{id}` і никогда не threads `siteId` — portal это church-wide в v1 (see ниже).
+Портал участников (мобильный режим B1App) намеренно находится вне этого: `loadChurchAppearance.ts` разрешает церковь через `churches/lookup`, но читает `/settings/public/{id}` на уровне церкви и никогда не протягивает `siteId` — портал остаётся общецерковным в v1 (см. ниже).
 
-## Multiple веб-сайт per church
+## Несколько веб-сайтов на церковь
 
 ### Модель данных
 
-New `membership.sites` таблиця это deliberately tiny:
+Новая таблица `membership.sites` намеренно крошечная:
 
-| Column | Type | Примечания |
+| Столбец | Тип | Примечания |
 |--------|------|-------|
 | `id` | `char(11)` PK | |
-| `churchId` | `char(11)` | Owning church |
-| `name` | `varchar(255)` | Display имя (например "Español" "Youth") |
-| `subDomain` | `varchar(45)` | **Unique index** — global namespace (ниже) |
+| `churchId` | `char(11)` | Владеющая церковь |
+| `name` | `varchar(255)` | Отображаемое имя (например, «Español», «Youth») |
+| `subDomain` | `varchar(45)` | **Уникальный индекс** — глобальное пространство имён (ниже) |
 
-Site scoping это затем single nullable-free стовпец added к content і domain таблицы:
+Область видимости сайта — это затем единственный столбец без null-значений, добавленный в таблицы контента и доменов:
 
-| Таблиця (модуль) | Column | `''` means |
+| Таблица (модуль) | Столбец | Что означает `''` |
 |----------------|--------|-----------|
-| `domains` (membership) | `siteId char(11) NOT NULL DEFAULT ''` | Domain serves primary сайт |
-| `pages`, `links`, `globalStyles`, `blocks` (content) | `siteId char(11) NOT NULL DEFAULT ''` | Primary сайт — і на **`blocks`** `''` additionally means *shared across all sites* |
+| `domains` (membership) | `siteId char(11) NOT NULL DEFAULT ''` | Домен обслуживает основной сайт |
+| `pages`, `links`, `globalStyles`, `blocks` (content) | `siteId char(11) NOT NULL DEFAULT ''` | Основной сайт — а для **`blocks`** `''` дополнительно означает *общий для всех сайтов* |
 
-Two миграции add all із це (`tools/migrations/membership/2026-07-02_sites.ts`, `tools/migrations/content/2026-07-02_site_id.ts`). Потому стовпец defaults к `''` каждый existing строка keeps сегодня's поведение з no backfill.
+Две миграции добавляют всё это (`tools/migrations/membership/2026-07-02_sites.ts`, `tools/migrations/content/2026-07-02_site_id.ts`). Поскольку столбец по умолчанию равен `''`, каждая существующая строка сохраняет сегодняшнее поведение без пересчёта данных.
 
-**Global subdomain namespace.** `sites.subDomain` shares *one* namespace з `churches.subDomain` — site subdomain може never collide з church subdomain або another site's. Це enforced на **обе** save пути: `SiteController.save` rejects slug که hits либо `churches` або `sites` і `ChurchController.validateSave` does same в reverse. Unique index на `sites.subDomain` backs це на database level.
+**Глобальное пространство имён субдоменов.** `sites.subDomain` разделяет *одно* пространство имён с `churches.subDomain` — субдомен сайта никогда не может столкнуться с субдоменом церкви или другого сайта. Это обеспечивается на **обоих** путях сохранения: `SiteController.save` отклоняет slug, совпадающий либо с `churches`, либо с `sites`, а `ChurchController.validateSave` делает то же самое в обратную сторону. Уникальный индекс на `sites.subDomain` подкрепляет это на уровне базы данных.
 
-**Pages uniqueness** widened з `(churchId, url)` к `(churchId, siteId, url)` поэтому two сайт із one church може каждый own їхня собственный `/about`.
+**Уникальность страниц** расширена с `(churchId, url)` до `(churchId, siteId, url)`, так что два сайта одной церкви могут каждый владеть собственной `/about`.
 
-### Per-site content з fallbacks
+### Контент по сайту, с резервными вариантами
 
-Каждый site-scoped content **list/tree** endpoint takes optional `?siteId=` (absent ⇒ `''` = primary): pages дерево / список / public блоки список / by-type / footer ссылки (anon / filtered / all) і global стилі. Sections і elements це *not* scoped directly — they inherit через their parent page або block.
+Каждая конечная точка **списка/дерева** контента с областью видимости сайта принимает опциональный `?siteId=` (отсутствие ⇒ `''` = основной): дерево/список/публичный список страниц, список блоков / по типу / подвал, ссылки (анонимные / отфильтрованные / все) и глобальные стили. Разделы и элементы *не* имеют области видимости напрямую — они наследуют её через родительскую страницу или блок.
 
-Two resolution цепь do interesting работа:
+Две цепочки разрешения выполняют интересную работу:
 
-- **Global стилі — `site → primary → default`.** `GlobalStyleRepo.loadForChurch(churchId, siteId)` returns site's own строка; якщо secondary сайт has none це returns **primary (`''`) строка as-is** (keeping primary's `id`/`siteId` які клиент uses к copy-on-write); якщо нету primary either `GlobalStyleController` returns hard-coded default palette/fonts. 
-- **Footer block — site-specific wins shared falls back.** `BlockRepo.loadByBlockType(churchId, "footerBlock", siteId)` returns shared (`''`) *і* site-specific строки; resolver picks site's own footer якщо present else shared один. Same логика runs both в `TreeHelper.insertBlocks` (page дерево) і в standalone `/content/blocks/public/footer/:churchId` endpoint.
+- **Глобальные стили — `сайт → основной → по умолчанию`.** `GlobalStyleRepo.loadForChurch(churchId, siteId)` возвращает собственную строку сайта; если у дополнительного сайта её нет, возвращается **основная (`''`) строка как есть** (сохраняя `id`/`siteId` основной, которые клиент использует для copy-on-write); если основной тоже нет, `GlobalStyleController` возвращает жёстко заданную палитру/шрифты по умолчанию.
+- **Блок подвала — специфичный для сайта побеждает, общий служит резервом.** `BlockRepo.loadByBlockType(churchId, "footerBlock", siteId)` возвращает как общие (`''`), так и специфичные для сайта строки; резолвер выбирает собственный подвал сайта, если он есть, иначе общий. Та же логика выполняется как в `TreeHelper.insertBlocks` (дерево страниц), так и в отдельной конечной точке `/content/blocks/public/footer/:churchId`.
 
-### Site deletion cascade
+### Каскад удаления сайта
 
-`SiteController.delete` (gated на membership Settings→Edit разрешение) tears secondary сайт down в three шаги:
+`SiteController.delete` (доступ ограничен разрешением Settings→Edit модуля membership) сносит дополнительный сайт в три шага:
 
-1. `ContentModuleGateway.deleteSiteContent(churchId, siteId)` cascades all content site owns: його **pages** → their sections elements `pageHistory` і `posts`; його own **blocks** → їхня sections elements і `pageHistory`; його **links** і **globalStyles**. Guard refuses к run для `''` — primary/shared sentinel это никогда не cascaded.
-2. `DomainRepo.clearSiteId` **reassigns** site's домены back к primary (`siteId → ''`) rather чем deleting їх поэтому custom домен survives site deletion.
-3. `sites` строка это deleted і Caddy маршруты це re-synced (best-effort).
+1. `ContentModuleGateway.deleteSiteContent(churchId, siteId)` каскадно удаляет весь контент, которым владеет сайт: его **страницы** → их разделы, элементы, `pageHistory` и `posts`; его собственные **блоки** → их разделы, элементы и `pageHistory`; его **ссылки** и **globalStyles**. Защита отказывается выполняться для `''` — основной/общий сигнал никогда не каскадируется.
+2. `DomainRepo.clearSiteId` **переназначает** домены сайта обратно на основной (`siteId → ''`), а не удаляет их, так что пользовательский домен переживает удаление сайта.
+3. Строка `sites` удаляется, и маршруты Caddy пересинхронизируются (по возможности).
 
-### B1Admin поверхность
+### Поверхность B1Admin
 
-| Capability | Где | Механизм |
+| Возможность | Где | Механизм |
 |-----------|-------|-----------|
-| Site switcher | `useSiteSelection` + `SiteSwitcher` (empty = "Main Website") | Reads `?site=` URL параметр і threads його як `?siteId=` в ContentApi calls. Present на three Site **list** области — **Pages**, **Blocks**, **Appearance** — але *not* page/block редактори які carry `siteId` на record |
-| Sites create/delete | `SitesDialog` opened з switcher's "Manage websites…" entry | `POST /membership/sites` / `DELETE /membership/sites/:id` (name + subDomain). Gated на membership Settings→Edit разрешение (`Permissions.settings.edit` server-side; `Permissions.membershipApi.settings.edit` в B1Admin). **Create/delete only — there це no rename UI в v1** |
-| Per-domain site assignment | `DomainSettingsEdit` under Settings→Domains | Per-row site dropdown posts `siteId` per domain к `/membership/domains`. Стовпец hides якщо API returns no sites (older backend) |
-| Copy-on-write стилі | `StylesManager.prepareForSave` | Коли loaded global-style строка's `siteId` це not match selected сайт (example API returned inherited primary як fallback) це drops primary's `id` і stamps current `siteId` forcing **insert** із new site-specific строка замість overwriting primary. Same fork-on-mismatch applies к site footer block |
+| Переключатель сайта | `useSiteSelection` + `SiteSwitcher` (пусто = «Main Website») | Читает URL-параметр `?site=` и протягивает его как `?siteId=` в вызовы ContentApi. Присутствует на трёх областях **списка** Site — **Pages**, **Blocks**, **Appearance** — но *не* в редакторах страниц/блоков, которые несут `siteId` в самой записи |
+| Создание/удаление сайтов | `SitesDialog`, открывается из пункта «Manage websites…» переключателя | `POST /membership/sites` / `DELETE /membership/sites/:id` (имя + subDomain). Доступ ограничен разрешением Settings→Edit модуля membership (`Permissions.settings.edit` на сервере; `Permissions.membershipApi.settings.edit` в B1Admin). **Только создание/удаление — в v1 нет интерфейса переименования** |
+| Назначение сайта по домену | `DomainSettingsEdit` в разделе Settings→Domains | Выпадающий список сайта в каждой строке отправляет `siteId` для домена в `/membership/domains`. Столбец скрывается, если API не возвращает сайтов (более старый бэкенд) |
+| Стили copy-on-write | `StylesManager.prepareForSave` | Когда `siteId` загруженной строки глобального стиля не совпадает с выбранным сайтом (то есть API вернул унаследованный основной как резерв), это отбрасывает `id` основного и проставляет текущий `siteId`, вынуждая **вставку** новой специфичной для сайта строки вместо перезаписи основной. Та же логика fork-при-несовпадении применяется к блоку подвала сайта |
 
 :::info
-**Що stays church-wide в v1 (deliberate scoping вибір not data-model limit):** **blog** (`BlogPage` has no switcher і loads `/posts` з no `siteId`) **site widgets** (announcement banner + launcher) **redirects** **logo / GA4 / church настройки** і **member portal** (B1App mobile). Note це це *not* "all із Appearance" — secondary site's global стилі (palette fonts typography spacing nav custom CSS) **are** per-site через copy-on-write путь выше; only banner/launcher/redirects/logo sub-panels із Appearance page remain church-wide.
+**Что остаётся общецерковным в v1 (намеренный выбор области видимости, а не ограничение модели данных):** **блог** (у `BlogPage` нет переключателя, и он загружает `/posts` без `siteId`), **виджеты сайта** (баннер объявлений + лаунчер), **редиректы**, **логотип / GA4 / настройки церкви** и **портал участников** (мобильный режим B1App). Обратите внимание, что это *не* «весь раздел Appearance» — глобальные стили дополнительного сайта (палитра, шрифты, типографика, отступы, навигация, пользовательский CSS) **являются** посайтовыми через путь copy-on-write выше; общецерковными остаются только подпанели баннера/лаунчера/редиректов/логотипа страницы Appearance.
 :::
 
-## Custom домени: Caddy edge (static-config план)
+## Пользовательские домены: граница Caddy (план со статической конфигурацией)
 
 :::info
-**Направление revised 2026-07-02.** Ранні план к move custom-domain hosting onto Vercel-managed домени was **cancelled** і все Vercel domain-registration код (`VercelHelper` його `vercelToken`/`vercelProjectId`/`vercelTeamId` env vars SSM params і health entries) was removed із Api. Self-managed **Caddy proxy на EC2 stays** як permanent custom-domain edge. Только remaining работа це internal: swapping Caddy's *runtime* admin-API конфиграцион для *static* конфиг که survives restarts.
+**Направление пересмотрено 2026-07-02.** Более ранний план перенести хостинг пользовательских доменов на управляемые Vercel домены был **отменён**, и весь код регистрации доменов Vercel (`VercelHelper`, его переменные окружения `vercelToken`/`vercelProjectId`/`vercelTeamId`, параметры SSM и записи здоровья) был удалён из Api. Самоуправляемый **прокси Caddy на EC2 остаётся** постоянной границей пользовательских доменов. Единственная оставшаяся работа — внутренняя: замена *runtime*-конфигурации Caddy через admin API на *статическую* конфигурацию, переживающую перезапуски.
 :::
 
-### Edge
+### Граница
 
-Каждый custom church domain points DNS на one EC2 box — `3.23.251.61` також reachable як `proxy.b1.church`. B1Admin's Settings→Domains экран instructs церкви к add apex `A → 3.23.251.61` або `CNAME → proxy.b1.church`. Caddy terminates TLS з per-domain Let's Encrypt cert rewrites `Host` заголовок к domain's `{sub}.b1.church` upstream і reverse-proxies к B1App — който затем маршрут його by host label як any native subdomain (see [Custom domains](#custom-domains) выше).
+Каждый пользовательский домен церкви указывает DNS на один EC2-хост — `3.23.251.61`, также доступный как `proxy.b1.church`. Экран Settings→Domains в B1Admin инструктирует церкви добавить апекс `A → 3.23.251.61` либо `CNAME → proxy.b1.church`. Caddy завершает TLS сертификатом Let's Encrypt для каждого домена, переписывает заголовок `Host` на вышестоящий сервер `{sub}.b1.church` домена и реверс-проксирует к B1App — который затем маршрутизирует его по метке хоста как любой обычный субдомен (см. [Пользовательские домены](#пользовательские-домены) выше).
 
-Upstream mapping comes з `DomainRepo.loadPairs` whose dial **COALESCEs assigned site's subdomain** поэтому domain proxies к correct *secondary* site falling back к church's primary:
+Сопоставление вышестоящих серверов берётся из `DomainRepo.loadPairs`, чей набор для соединения **делает COALESCE субдомена назначенного сайта**, так что домен проксируется к правильному *дополнительному* сайту, откатываясь к основному сайту церкви:
 
 ```sql
 CONCAT(COALESCE(NULLIF(s.subDomain,''), c.subDomain), '.b1.church:443')  AS dial
 WHERE d.domainName NOT LIKE '%www.%'
 ```
 
-`www.*` строки это excluded із map; Caddy serves `www.{host}` via `302` redirect к apex instead.
+Строки `www.*` исключены из карты; Caddy обслуживает `www.{host}` через редирект `302` на апекс вместо этого.
 
-### Two anonymous endpoints feed edge
+### Две анонимные конечные точки питают границу
 
-`DomainController` exposes two unauthenticated read-only endpoints box consumes directly — anonymous by необходимость since edge queries їх перед any church context exists:
+`DomainController` предоставляет две неаутентифицированные, только для чтения конечные точки, которые хост потребляет напрямую — анонимные по необходимости, поскольку граница запрашивает их до того, как появляется какой-либо контекст церкви:
 
-| Endpoint | Returns | Role |
+| Конечная точка | Возвращает | Роль |
 |----------|---------|------|
-| `GET /membership/domains/authorize?domain=` | `200` якщо domain — або для `www.` miss його bare apex — exists в `domains`; `404` иначе (включая empty `domain`) | Caddy's **on-demand-TLS `ask`**: abuse контроль deciding чи к issue cert для incoming SNI |
-| `GET /membership/domains/hostmap` | `text/plain` one sorted `{domain} {sub}.b1.church` линия per routable domain | Host→upstream карта файл box refreshes на таймер |
+| `GET /membership/domains/authorize?domain=` | `200`, если домен — или, для промаха `www.`, его голый апекс — существует в `domains`; иначе `404` (включая пустой `domain`) | `ask` Caddy для **on-demand TLS**: контроль злоупотреблений, решающий, выдавать ли сертификат для входящего SNI |
+| `GET /membership/domains/hostmap` | `text/plain`, одна отсортированная строка `{domain} {sub}.b1.church` на маршрутизируемый домен | Файл карты хост→вышестоящий сервер, который хост обновляет по таймеру |
 
-`authorize` reuses `DomainRepo.loadByName` (exact host затем single `www.`→apex retry); `hostmap` reuses `loadPairs` — поэтому це site-aware і `www.*`-excluded identical к proxy маршрути — і just strips `:443` suffix.
+`authorize` переиспользует `DomainRepo.loadByName` (точный хост, затем одна повторная попытка `www.`→апекс); `hostmap` переиспользует `loadPairs` — поэтому он учитывает сайты и исключает `www.*`, идентично маршрутам прокси — и просто отбрасывает суффикс `:443`.
 
-### Domain save/delete — one best-effort push
+### Сохранение/удаление домена — один лучший-по-возможности пуш
 
-`DomainController.save` writes `domains` строки затем makes **single best-effort** `CaddyHelper.updateCaddy()` call wrapped в `try/catch` که logs (`console.error`) і swallows; `delete` does same (які също fixed prior stale-route-on-delete bug) як does secondary-site deletion (`SiteController.delete`). `updateCaddy` itself bounded by **10s** Axios timeout поэтому unreachable або stopped Caddy може никогда не `500` domain save — `domains` таблиця це source істины.
+`DomainController.save` записывает строки `domains`, а затем делает **единственный лучший-по-возможности** вызов `CaddyHelper.updateCaddy()`, обёрнутый в `try/catch`, который логирует (`console.error`) и проглатывает ошибку; `delete` делает то же самое (что также исправило прежнюю ошибку с устаревшим маршрутом при удалении), как и удаление дополнительного сайта (`SiteController.delete`). Сам `updateCaddy` ограничен тайм-аутом Axios в **10 секунд**, так что недоступный или остановленный Caddy никогда не может вызвать `500` при сохранении домена — таблица `domains` является источником истины.
 
-### Current state — static конфиг no runtime state
+### Текущее состояние — статическая конфигурация, без состояния на этапе выполнения
 
-Box (Windows EC2 за permanent Elastic IP) runs Caddy з **static Caddyfile**: on-demand TLS whose `ask` points на `/membership/domains/authorize` плюс host→upstream карта файл refreshed каждые 5 minutes з `/membership/domains/hostmap` by scheduled task що ends у graceful `caddy reload`. Config survives restarts з zero runtime state — no re-priming танец — і unknown SNI це **TLS-refused** (no cert це minted для host `authorize` rejects) в то время як authorized-but-not-yet-mapped host (brand-new domain внутри sync window) gets clean 404. New домени become маршрутизирован within ~5 minutes із save; їхня certificates це minted на first hit. Build/setup operations і field-tested gotchas: [Caddy Custom-Domain Proxy](../deployment/caddy-proxy).
+Хост (Windows EC2 за постоянным Elastic IP) запускает Caddy со **статическим Caddyfile**: on-demand TLS, чей `ask` указывает на `/membership/domains/authorize`, плюс файл карты хост→вышестоящий сервер, обновляемый каждые 5 минут из `/membership/domains/hostmap` запланированной задачей, завершающейся плавным `caddy reload`. Конфигурация переживает перезапуски с нулевым состоянием времени выполнения — никакого танца с повторной инициализацией — и неизвестный SNI получает **отказ на уровне TLS** (сертификат не выдаётся для хоста, который отклоняет `authorize`), в то время как авторизованный, но ещё не сопоставленный хост (совсем новый домен внутри окна синхронизации) получает чистую 404. Новые домены становятся маршрутизируемыми в течение ~5 минут после сохранения; их сертификаты выпускаются при первом обращении. Сборка/настройка, эксплуатация и проверенные на практике подводные камни: [Прокси Caddy для пользовательских доменов](../deployment/caddy-proxy).
 
-### Legacy runtime push — rollback путь pending deletion
+### Устаревший runtime-пуш — путь отката, ожидающий удаления
 
-`CaddyHelper` (membership модуль) може все ще drive Caddy через його **admin API** на `caddyHost:caddyPort` (SSM `caddyHost`/`caddyPort`; no-op коли unset; surfaced under `ServerHealthController`'s Integrations group): `updateCaddy()` PATCHes full маршруты array і `initializeCaddy()` + `GET /membership/domains/caddy/init` / `GET /membership/domains/caddy` endpoints rebuild runtime-configured сервер з scratch. Це mode's конфиг lived only в Caddy's memory — restart-amnesia це архітектура replaced. Machinery remains solely як rollback путь і scheduled для deletion один раз static box has been стабільна; best-effort `updateCaddy()` push на domain save/delete це harmless no-op проти static box (його admin API это localhost-only).
+`CaddyHelper` (модуль membership) всё ещё может управлять Caddy через его **admin API** на `caddyHost:caddyPort` (SSM `caddyHost`/`caddyPort`; не делает ничего, если не задано; отображается в группе интеграций `ServerHealthController`): `updateCaddy()` выполняет PATCH полного массива маршрутов, а `initializeCaddy()` + конечные точки `GET /membership/domains/caddy/init` / `GET /membership/domains/caddy` пересобирают сервер с runtime-конфигурацией с нуля. Конфигурация этого режима жила только в памяти Caddy — именно эту «амнезию при перезапуске» заменила данная архитектура. Механизм остаётся исключительно как путь отката и запланирован к удалению, как только статический хост докажет свою стабильность; лучший-по-возможности пуш `updateCaddy()` при сохранении/удалении домена — безобидная холостая операция против статического хоста (его admin API доступен только с localhost).
 
-## Пов'язані сторінки
+## Связанные страницы
 
-- [Caddy Custom-Domain Proxy](../deployment/caddy-proxy) — edge box самий: fresh-box setup WinSW служба map sync завдання і operational gotchas
-- [Website Builder](./website-builder) — page/section/element дерево renderers blog SEO і AI generation (що renders один раз запрос has resolved к church/site)
-- [Content Endpoints](../api/endpoints/content) — REST поверхність для pages blocks ссылки і global стилі все тепер `?siteId=`-aware
-- [B1App](../web-apps/b1-app) — Next.js приложение що hosts middleware і `[sdSlug]` маршрутизація
-- [Web App Deployment](../deployment/web-apps) — як B1App це deployed к Vercel
+- [Прокси Caddy для пользовательских доменов](../deployment/caddy-proxy) — сам граничный хост: настройка с нуля, служба WinSW, задача синхронизации карты и эксплуатационные подводные камни
+- [Конструктор веб-сайтов](./website-builder) — дерево страница/раздел/элемент, рендереры, блог, SEO и генерация ИИ (что рендерится после того, как запрос разрешён в церковь/сайт)
+- [Конечные точки Content](../api/endpoints/content) — REST-поверхность для страниц, блоков, ссылок и глобальных стилей, теперь все учитывают `?siteId=`
+- [B1App](../web-apps/b1-app) — приложение Next.js, размещающее middleware и маршрутизацию `[sdSlug]`
+- [Развёртывание веб-приложений](../deployment/web-apps) — как B1App развёртывается на Vercel

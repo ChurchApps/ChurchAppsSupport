@@ -153,7 +153,11 @@ index (boot/auto-login) → selectChurch → services ──▶ lookup ──▶
 
 ## 셀프 체크인 (B1App)
 
-회원은 b1.church 포털의 `/mobile/checkin` 화면에서 체크인합니다 (`B1App/src/app/[sdSlug]/mobile/components/ScreenRouter.tsx`로 라우트됨 그리고 `screens/CheckinPage.tsx`로). 로그인한 사용자가 필요하고 키오스크와 동일한 네 단계를 걷습니다. 서비스 → 가구 → 그룹 → 완료. 상태는 `B1App/src/helpers/CheckinHelper.ts`에 보유됩니다. 키오스크의 차이: 가구는 로그인한 사용자의 자신의 `householdId`에서 나옵니다 (검색 단계 없음), 흐름은 확인 화면에서 끝납니다. 보안 코드 표시 없고 라벨 인쇄 없음. 유형 및 `ApiHelper`/`ArrayHelper`는 `@churchapps/helpers` 및 `@churchapps/apphelper`에서 나옵니다. React 컴포넌트는 B1Admin과 공유되지 않습니다.
+회원은 b1.church 포털의 `/mobile/checkin` 화면에서 체크인합니다 (`B1App/src/app/[sdSlug]/mobile/components/ScreenRouter.tsx`로 라우트됨 그리고 `screens/CheckinPage.tsx`로). 로그인한 사용자가 필요하고 키오스크와 동일한 네 단계를 걷습니다. 서비스 → 가구 → 그룹 → 완료. 동일한 엔드포인트에 대해서이고 상태는 `B1App/src/helpers/CheckinHelper.ts`에 보유됩니다. 키오스크와의 차이점: 가구는 로그인한 사용자 자신의 `householdId`에서 나오고 (검색 단계 없음), 라벨 인쇄는 없습니다. 대신 완료 화면은 배치의 보안 코드를 QR (`qrcode.react`)로 "체크인 스테이션에서 이것을 보여주세요"라는 힌트와 함께 표시합니다. 페이지가 로드될 때 가구가 이미 체크인되어 있으면 "체크인 코드 표시" 버튼이 기존 방문의 `securityCode`에서 QR을 다시 표시합니다. 체크인은 제출 시점에 즉시 기록됩니다 (보류 상태 없음). QR은 오직 키오스크에서의 라벨 인쇄만을 구동합니다.
+
+**전화기에서 키오스크로 라벨 인쇄** (`B1Checkin/app/scan.tsx`, 조회 화면의 "코드 스캔" 버튼에서 도달): 키오스크는 `expo-camera` `CameraView` (기본적으로 전면 카메라, 뒤집기 가능)를 열고 QR 코드를 스캔합니다. 스캔된 페이로드는 보안 코드 알파벳의 순수 4자리 코드일 때 허용되므로 B1App QR과 인쇄된 라벨의 QR 블록 모두 작동합니다. 화면은 그 후 체크아웃 재인쇄 경로를 따릅니다 — `GET /attendance/visits/code/{code}` → `GET /membership/people/ids` → `LabelHelper.getAllLabelsFor(visits, people, code)` → `PrintUI` — 그 후 조회로 돌아갑니다. 스캔 시점에 참석 쓰기는 발생하지 않습니다. 라벨만입니다. 활성 방문이 없는 코드, 프린터가 없는 스테이션, 라벨이 없는 그룹은 각각 토스트를 표면하고 조회로 돌아갑니다.
+
+유형 및 `ApiHelper`/`ArrayHelper`는 `@churchapps/helpers` 및 `@churchapps/apphelper`에서 나옵니다. React 컴포넌트는 B1Admin과 공유되지 않습니다.
 
 ## 관리자 측 참석 (B1Admin)
 

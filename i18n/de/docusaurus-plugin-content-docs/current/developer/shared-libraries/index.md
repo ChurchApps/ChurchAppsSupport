@@ -1,29 +1,29 @@
 ---
-title: "Gemeinsame Bibliotheken"
+title: "Gemeinsam genutzte Bibliotheken"
 ---
 
-# Gemeinsame Bibliotheken
+# Gemeinsam genutzte Bibliotheken
 
 <div class="article-intro">
 
-ChurchApps gemeinsamer Code wird zu npm unter dem `@churchapps/*` Umfang veröffentlicht. Alle gemeinsamen Pakete leben in einem einzelnen Repository -- [Packages](https://github.com/ChurchApps/Packages) -- verwaltet als Yarn (Berry) Workspace und versioniert mit [changesets](https://github.com/changesets/changesets).
+Gemeinsam genutzter Code von ChurchApps wird unter dem Scope `@churchapps/*` auf npm veröffentlicht. Alle gemeinsam genutzten Pakete befinden sich in einem einzigen Repository -- [Packages](https://github.com/ChurchApps/Packages) -- das als Yarn-(Berry-)Workspace verwaltet und mit [Changesets](https://github.com/changesets/changesets) versioniert wird.
 
 </div>
 
 ## Pakete
 
-| Paket | Beschreibung | Verwendet von |
+| Paket | Beschreibung | Genutzt von |
 |---------|-------------|---------|
-| [`@churchapps/helpers`](./helpers) | Grundlagen-Schicht: Framework-freie Helferfunktionen und gemeinsame TypeScript-Schnittstellen | Alle Projekte |
-| [`@churchapps/apihelper`](./api-helper) | Server-seitige Express-Utilities | Alle APIs |
-| [`@churchapps/apphelper`](./app-helper) | Gemeinsame React-Komponenten und Feature-Module | Alle Web-Apps |
-| `@churchapps/content-providers` | Abstraktion über Drittanbieter-Content-Provider | Api, B1Admin, B1App, FreePlay |
-| `@churchapps/integration-sdk` | Toolkit für den Aufbau von B1.church Integrationen | Externe Integration Entwickler |
-| `@churchapps/texting` | SMS-Provider-Abstraktion | Api |
+| [`@churchapps/helpers`](./helpers) | Fundamentschicht: framework-freie Hilfsfunktionen und die gemeinsam genutzten TypeScript-Schnittstellen, die den app-übergreifenden Datenvertrag bilden | Alle Projekte |
+| [`@churchapps/apihelper`](./api-helper) | Serverseitige Express-Hilfsprogramme: Auth, Basis-Controller, Datenbankzugriff, AWS- und E-Mail-Integrationen | Alle APIs |
+| [`@churchapps/apphelper`](./app-helper) | Gemeinsam genutzte React-Komponenten und Feature-Module (Login, Spenden, Formulare, Markdown, Website) | Alle Web-Apps |
+| `@churchapps/content-providers` | Abstraktionsschicht über Drittanbieter-Content-Provider (Lessons.church, Planning Center, Dropbox und andere) | Api, B1Admin, B1App, FreePlay |
+| `@churchapps/integration-sdk` | Toolkit zum Erstellen von B1.church-Integrationen: Webhook-Verifizierung, typisierter REST-Client, OAuth-Hilfsprogramme | Externe Integrationsentwickler |
+| `@churchapps/texting` | SMS-Provider-Abstraktion (Text In Church, Clearstream, Mutual Ministry) | Api |
 
-Die Abhängigkeits-Richtung ist streng nach unten: Apps hängen von `apihelper` und `apphelper` ab, die `@churchapps/helpers` als **Peer-Abhängigkeit** deklarieren.
+Die Abhängigkeitsrichtung verläuft strikt abwärts: Apps hängen von `apihelper` und `apphelper` ab, die `@churchapps/helpers` als **Peer-Dependency** deklarieren, sodass jede App genau eine Kopie davon auflöst.
 
-## Workspace-Setup
+## Workspace-Einrichtung
 
 ```bash
 git clone https://github.com/ChurchApps/Packages.git
@@ -32,31 +32,33 @@ yarn install
 yarn build
 ```
 
-## Releasing mit Changesets
+Das Repository verwendet Yarn Berry (das `packageManager`-Feld im Root ist maßgeblich) mit einer einzigen Lockfile. `yarn build` baut alle Pakete in Abhängigkeitsreihenfolge; `yarn test` führt alle Paket-Tests aus.
 
-Jede Änderung an einem Paket wird mit einem Changeset versandt:
+## Veröffentlichen mit Changesets
 
-1. Führen Sie `yarn changeset` im Workspace-Root aus. Wählen Sie die Pakete aus, die Sie berührt haben, den Bump-Typ (patch = fix, minor = neue Exportierung oder Funktion, major = breaking) und schreiben Sie eine einzeilige Zusammenfassung.
-2. Committen Sie die generierte `.changeset/*.md`-Datei zusammen mit Ihrer Code-Änderung.
-3. Wenn Sie bereit sind zu veröffentlichen, führen Sie `yarn publish-all` im Root aus.
+Jede Änderung an einem Paket wird mit einem Changeset ausgeliefert:
+
+1. Führen Sie `yarn changeset` im Workspace-Root aus. Wählen Sie das/die betroffene(n) Paket(e), den Erhöhungstyp (patch = Fix, minor = neuer Export oder Feature, major = Breaking Change) und schreiben Sie eine einzeilige Zusammenfassung -- sie wird zum CHANGELOG-Eintrag.
+2. Committen Sie die erzeugte `.changeset/*.md`-Datei zusammen mit Ihrer Codeänderung. Ein Pre-Commit-Hook blockiert Commits, die den Quellcode eines Pakets ändern, ohne dass ein Changeset gestaged ist.
+3. Wenn Sie bereit zur Veröffentlichung sind, führen Sie `yarn publish-all` im Root aus. Dies verarbeitet ausstehende Changesets (erhöht Versionen, schreibt CHANGELOGs, synchronisiert interne Abhängigkeitsbereiche), baut alles in Abhängigkeitsreihenfolge und veröffentlicht die erhöhten Pakete auf npm. Committen und pushen Sie anschließend die Versionserhöhungen.
 
 :::warning
-Führen Sie niemals ein rohes `npm publish` in einem einzelnen Paket aus — es überspringt Build-Reihenfolge und Versions-Bookkeeping. Publishing erfordert ein npm-Konto mit Publikationsrechten zum `@churchapps`-Umfang.
+Führen Sie niemals ein rohes `npm publish` innerhalb eines einzelnen Pakets aus -- es überspringt die Build-Reihenfolge und die Versionsbuchhaltung, die das Release-Skript übernimmt. Die Veröffentlichung erfordert ein npm-Konto mit Veröffentlichungsrechten für den Scope `@churchapps`.
 :::
 
 ## Lokale Entwicklung gegen eine konsumierende App
 
-Fügen Sie ein temporäres Yarn-Portal in der Consumer hinzu:
+Innerhalb des Workspace bauen Pakete direkt gegen ihre Geschwisterpakete -- kein Verlinken nötig. Um einen unveröffentlichten Paket-Build innerhalb einer konsumierenden App (B1Admin, B1App usw.) zu testen, fügen Sie ein temporäres Yarn-Portal im Konsumenten hinzu:
 
 ```bash
-# in dem konsumierenden Projekt
+# im konsumierenden Projekt
 yarn link ../Packages/helpers
 # ... testen ...
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-Bauen Sie das Paket zuerst (`yarn build` im Workspace-Root) — der Consumer liest die kompilierten `dist/` Outputs, nicht die Quelle.
+Bauen Sie das Paket zuerst (`yarn build` im Workspace-Root) -- der Konsument liest die kompilierte `dist/`-Ausgabe, nicht den Quellcode.
 
 :::warning
-`yarn link` schreibt eine Portal-Auflösung in die `package.json` des Consumers. Commiten Sie dies niemals — immer `yarn unlink` und neu installieren, wenn fertig.
+`yarn link` schreibt eine Portal-Auflösung in die `package.json` des Konsumenten. Committen Sie dies niemals -- führen Sie nach Abschluss immer `yarn unlink` aus und installieren Sie neu.
 :::

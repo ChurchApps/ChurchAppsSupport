@@ -6,38 +6,38 @@ title: "Mga Event RSVP"
 
 <div class="article-intro">
 
-Ang mga group events ay maaaring magkolekta ng RSVPs upang malaman ng mga leader kung sino ang darating. Sa calendar ng iyong grupo, bawat darating na event ay nagtanong "Darating ka ba?" — sumagot sa pamamagit ng pag-tap, baguhin ang iyong isip anumang oras, at makita sa isang sulyap kung ilan ang iba na pupunta.
+Ang mga group event ay maaaring mangolekta ng RSVP para malaman ng mga leader kung sino ang darating. Sa calendar ng iyong grupo, bawat paparating na event ay nagtatanong ng "Darating ka ba?" — sumagot sa pamamagitan ng pag-tap, baguhin ang iyong isip anumang oras, at makita agad kung ilan sa iba ang pupunta.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- Dapat kang maging [naka-log in](../getting-started/logging-in.md) at miyembro ng grupo
-- Ang event ay dapat na may RSVP na pinapayagan (sila ay naka-on bilang default; ang mga leader ay maaaring i-off ito bawat event)
+- Kailangan mong maka-[log in](../getting-started/logging-in.md) at maging miyembro ng grupo
+- Dapat pinapayagan ang RSVP sa event (naka-on ito bilang default; puwedeng i-off ito ng mga leader kada event)
 
 </div>
 
-## Pagtugon sa isang Event
+## Pagsagot sa isang Event
 
 1. Buksan ang iyong grupo sa member portal at pumunta sa **Events** / calendar view nito.
-2. Bawat card ng darating na event ay nagpapakita ng **Will you attend?** kasama ang tatlong button: **Pupunta**, **Siguro**, at **Hindi makakadalo**.
-3. I-tap ang iyong sagot. Ang iyong pagpili ay nag-highlight, at bawat button ay nagpapakita ng live count kung ilan ang mga taong nagbigay ng response na iyon.
-4. I-tap muli ang iyong naka-highlight na sagot upang burahin ito, o i-tap ang ibang button upang baguhin ang iyong response.
+2. Bawat card ng paparating na event ay nagpapakita ng **Will you attend?** kasama ang tatlong button: **Going**, **Maybe**, at **Can't go**.
+3. I-tap ang iyong sagot. Nagha-highlight ang iyong napili, at ipinapakita ng bawat button ang live na bilang kung ilang tao ang nagbigay ng sagot na iyon.
+4. I-tap muli ang iyong naka-highlight na sagot para burahin ito, o i-tap ang ibang button para baguhin ang iyong sagot.
 
-Ang iyong RSVP ay nag-apply sa specific occurrence na iyon — para sa linggong meeting, ikaw ay sumasagot sa bawat linggong event nang hiwalay.
+Ang iyong RSVP ay para lang sa partikular na pagkakataong iyon — para sa lingguhang miting, sumasagot ka nang hiwalay sa event ng bawat linggo.
 
-## Para sa Mga Group Leader
+## Para sa mga Group Leader
 
-- **Pagtingin sa mga Tugon** -- Ang mga leader ay nakakakita ng **View responses** button sa bawat event card. Ito ay nagbubukas ng **Responses** sheet na naglalista ng lahat ayon sa sagot — Pupunta, Siguro, at Hindi makakadalo. Kung walang tumugon pa, ito ay nagpapakita ng "Walang tugon pa."
-- **Pag-on/off ng RSVPs** -- Kapag lumilikha o nag-edit ng event, gamitin ang **Allow RSVPs** switch. Ang mga events na may RSVP na naka-off ay walang response buttons. Ang staff na lumilikha ng events nang bulk mula sa B1 Admin ay may parehong opsyon — tingnan ang [Group Calendar](../../b1-admin/groups/group-calendar#event-rsvps).
+- **Pagtingin ng mga sagot** -- Nakikita ng mga leader ang button na **View responses** sa bawat event card. Binubuksan nito ang **Responses** sheet na naglilista ng lahat ayon sa sagot — Going, Maybe, at Can't go. Kung wala pang sumasagot, ipapakita ang "No responses yet."
+- **Pag-on o pag-off ng RSVP** -- Kapag gumagawa o nag-e-edit ng event, gamitin ang **Allow RSVPs** switch. Ang mga event na naka-off ang RSVP ay walang response button. Ang staff na gumagawa ng mga event nang bulk mula sa B1 Admin ay may parehong opsyon — tingnan ang [Group Calendar](../../b1-admin/groups/group-calendar#event-rsvps).
 
 :::tip
-Ang RSVPs ay isang lightweight head count. Kung ang iyong event ay nangangailangan ng mga detalye ng pag-sign up, capacity management, o pagbabayad, gamitin ang [event registration](../events/registering) sa halip.
+Ang RSVP ay isang magaan na paraan ng pagbilang ng dadalo. Kung kailangan ng iyong event ng mga detalye ng pagpaparehistro, pamamahala ng capacity, o bayad, gamitin na lang ang [event registration](../events/registering).
 :::
 
-## Mga Kaugnay na Artikulo
+## Kaugnay na mga Artikulo
 
-- [Group Details](./group-details.md) -- Lahat sa group detail page
-- [Group Calendar (B1 Admin)](../../b1-admin/groups/group-calendar) -- Paano ang staff at mga leader ay nag-manage ng group events at RSVPs
-- [Registering for Events](../events/registering) -- Buong event registration kasama ang capacity at payments
+- [Group Details](./group-details.md) -- Lahat ng nasa group detail page
+- [Group Calendar (B1 Admin)](../../b1-admin/groups/group-calendar) -- Kung paano pinamamahalaan ng staff at mga leader ang mga group event at RSVP
+- [Registering for Events](../events/registering) -- Buong event registration na may capacity at bayad

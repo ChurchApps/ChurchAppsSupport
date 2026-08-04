@@ -6,62 +6,62 @@ title: "Mga Setting ng Mobile App"
 
 <div class="article-intro">
 
-Ang Mobile App Settings page ay nagbibigay-daan sa iyo na i-configure ang navigation tabs na lumalitaw sa **B1.church mobile experience (PWA)** para sa iyong mga miyembro ng simbahan. Ikaw ay kumukontrol kung aling mga tabs ang makikita, ano ang kanilang link, at paano sila ipinapakita.
+Sa pahina ng Mobile App Settings mo ikinokonpigura ang mga tab ng navigation na lumilitaw sa **karanasan sa mobile ng B1.church (PWA)** para sa mga miyembro ng iyong simbahan. Kontrolado mo kung aling mga tab ang nakikita, saan sila nag-uugnay, at kung paano sila ipinapakita.
 
 </div>
 
-:::info Ang native B1 Mobile app ay deprecated
-Ang mga tabs na na-configure dito ay dine-deliver sa pamamagitan ng [B1.church Progressive Web App (PWA)](/docs/b1-church/getting-started/installing-pwa), na nagpalit sa native B1 Mobile app. Ang mga miyembro ay maaaring mag-install ng PWA sa kanilang home screen mula sa anumang pahina sa `https://yourchurchname.b1.church` sa halip na mag-download ng legacy app mula sa App Store o Google Play.
+:::info Deprecated na ang native na B1 Mobile app
+Ang mga tab na inikonpigura dito ay ipinapadala sa pamamagitan ng [B1.church Progressive Web App (PWA)](/docs/b1-church/getting-started/installing-pwa), na pumalit na sa native na B1 Mobile app. Ibahagi sa mga miyembro ang install page ng iyong simbahan — `https://yourchurchname.b1.church/mobile/install` — na gagabay sa kanila sa pag-install ng app sa kanilang device, nang hindi na kailangang mag-download mula sa App Store o Google Play.
 :::
 
 <div class="prereqs">
-<h4>Bago Ka Magsimula</h4>
+<h4>Bago Magsimula</h4>
 
-- Kailangan mo ng "Edit Church Settings" permission. Tignan ang [Roles & Permissions](./roles-permissions.md) kung wala kang access.
-- I-configure ang iyong [Church Settings](./church-settings.md) una, kabilang ang iyong pangalan ng simbahan at branding
+- Kailangan mo ng pahintulot na "Edit Church Settings". Tingnan ang [Roles & Permissions](./roles-permissions.md) kung wala kang access.
+- Ikonpigura muna ang iyong [Church Settings](./church-settings.md), kasama ang pangalan at branding ng iyong simbahan
 
 </div>
 
 ## Pag-access sa Mobile App Settings
 
-1. Mag-navigate sa **Settings** page sa left sidebar.
-2. I-click ang **Mobile Apps** button sa header.
-3. Ang Mobile App Settings page ay nagpapakita ng iyong kasalukuyang app tabs.
+1. Pumunta sa pahina ng **Settings** sa kaliwang sidebar.
+2. I-click ang pindutang **Mobile Apps** sa header.
+3. Ipapakita ng pahina ng Mobile App Settings ang iyong kasalukuyang mga tab ng app.
 
 ## Pagdaragdag ng Bagong Tab
 
-1. I-click ang **Add Tab** button sa tuktok ng pahina.
-2. Punan ang detalye ng tab:
+1. I-click ang pindutang **Add Tab** sa itaas ng pahina.
+2. Punan ang mga detalye ng tab:
    - **Name** -- Ang label na lumilitaw sa tab (halimbawa, "Sermons" o "Give").
-   - **Icon** -- I-click ang icon selector upang pumili ng isang icon para sa iyong tab. Maaari mo ring mag-upload ng custom na imahe.
+   - **Icon** -- I-click ang icon selector upang pumili ng icon para sa iyong tab. Maaari ka ring mag-upload ng custom na larawan.
    - **Tab Type** -- Pumili mula sa mga opsyon tulad ng Bible, Live Stream, Donation, Website, at marami pang iba.
-   - **URL** -- Magpasok ng web address na dapat i-link ng tab.
-   - **Visibility** -- Kontrolin kung sino ang makikita ang tab na ito (lahat, mga miyembro lamang, atbp.).
+   - **URL** -- Ilagay ang web address na dapat i-link ng tab.
+   - **Visibility** -- Kontrolin kung sino ang makakakita ng tab na ito (lahat, mga miyembro lamang, atbp.).
 3. I-click ang **Save Tab** upang idagdag ito sa iyong app.
 
 ## Pag-edit ng Umiiral na Tab
 
-1. I-click ang anumang umiiral na tab sa **App Tabs** list.
-2. I-update ang pangalan, icon, URL, uri, o visibility settings ng tab.
-3. I-click ang **Save Tab** upang ipatupad ang iyong mga pagbabago.
+1. I-click ang alinmang umiiral na tab sa listahan ng **App Tabs**.
+2. I-update ang pangalan, icon, URL, uri, o mga setting ng visibility ng tab.
+3. I-click ang **Save Tab** upang ilapat ang iyong mga pagbabago.
 
-## Pag-reorder ng Mga Tab
+## Pag-aayos Muli ng mga Tab
 
-Maaari mong baguhin ang order kung saan lumalitaw ang mga tabs sa mobile app. I-drag at i-drop ang mga tabs sa listahan upang ayusin ang mga ito. Ang order na ipinapakita sa pahina na ito ay tumutugma sa order na makikita ng iyong mga miyembro sa app.
+Maaari mong baguhin ang pagkakasunod-sunod ng mga tab sa mobile app. I-drag at i-drop ang mga tab sa listahan upang ayusin muli ang mga ito. Ang pagkakasunod-sunod na ipinapakita sa pahinang ito ay siya ring pagkakasunod-sunod na makikita ng iyong mga miyembro sa app.
 
 :::info
-Ang ilang mga tabs ay maaaring mag-display nang awtomatiko kapag natutugunan ang ilang mga kondisyon -- halimbawa, ang isang Live Stream tab ay maaaring lumitaw kapag aktibo ang isang stream. Ang mga manually added tabs ay nagbibigay sa iyo ng buong control sa kung ano ang makikita ng iyong mga miyembro sa lahat ng oras.
+Maaaring lumitaw ang ilang tab nang awtomatiko kapag natugunan ang ilang kundisyon -- halimbawa, maaaring lumitaw ang isang tab ng Live Stream kapag may aktibong stream. Ang mga tab na idinagdag nang manu-mano ay nagbibigay sa iyo ng buong kontrol sa kung ano ang laging makikita ng iyong mga miyembro.
 :::
 
 :::tip
-Panatilihing manageable ang bilang ng iyong tab. Tatlo hanggang limang tabs ang gumagana nang maayos para sa karamihan ng mga simbahan. Masyadong maraming tabs ay maaaring gawing nakakaaliw ang navigation para sa iyong mga miyembro.
+Panatilihing kaya ang bilang ng iyong tab. Ang tatlo hanggang limang tab ay maayos na gumagana para sa karamihan ng mga simbahan. Ang masyadong maraming tab ay maaaring makapagpalito sa navigation para sa iyong mga miyembro.
 :::
 
-## Saan Lumalitaw ang Mga Tab Na Ito
+## Kung Saan Lumilitaw ang mga Tab na Ito
 
-Ang mga tabs na iyong ini-configure dito ay ipinapakita sa **B1.church PWA** na iyong mga miyembro ay nag-install mula sa anumang pahina sa `https://yourchurchname.b1.church`. Ang mga pagbabagong ginagawa mo sa pahina na ito ay makikita sa susunod na pagbubukas ng isang miyembro sa app. (Ang mga tabs ay ire-render din ng legacy [B1 Mobile native app](/docs/b1-mobile/) para sa anumang miyembrong gumagamit pa rin nito, ngunit ang app na iyon ay deprecated at hindi na ina-update.)
+Ipinapakita ang mga tab na inikonpigura mo rito sa **B1.church PWA** na ini-install ng iyong mga miyembro mula sa anumang pahina sa `https://yourchurchname.b1.church`. Ang mga pagbabagong ginagawa mo sa pahinang ito ay makikita sa susunod na pagbukas ng miyembro sa app. (Ipinapakita rin ang mga tab ng legacy na [native na B1 Mobile app](/docs/b1-mobile/) para sa mga miyembrong gumagamit pa rin nito, ngunit deprecated na ang app na iyon at hindi na ina-update.)
 
-## Susunod na Hakbang
+## Susunod na mga Hakbang
 
-- [Church Settings](./church-settings.md) -- I-configure ang iyong impormasyon ng simbahan at branding
-- [Roles & Permissions](./roles-permissions.md) -- Pamahalaan ang access para sa iyong team
+- [Church Settings](./church-settings.md) -- Ikonpigura ang impormasyon at branding ng iyong simbahan
+- [Roles & Permissions](./roles-permissions.md) -- Pamahalaan ang access para sa iyong koponan

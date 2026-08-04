@@ -21,7 +21,7 @@ Ang isang simbahan ay maaaring maglingkod ng higit sa isang distinct website, at
           │             │             (proxy.b1.church)             │
           │             │  • terminates TLS (per-domain LE cert)    │
           │             │  • rewrites Host → {sub}.b1.church        │
-          │             │  • reverse-proxies sa B1App              │
+          │             │  • reverse-proxies to B1App               │
           │             └────────────────────┬─────────────────────┘
           │                  Host = {sub}.b1.church
           ▼                                  ▼
@@ -36,14 +36,14 @@ Ang isang simbahan ay maaaring maglingkod ng higit sa isang distinct website, at
               │ [sdSlug] · ConfigHelper.load(sdSlug)             │
               │   GET /membership/churches/lookup/?subDomain=…   │
               │   → { id, name, subDomain, siteId? }             │
-              │   threads ?siteId= sa bawat content call:      │
+              │   threads ?siteId= into every content call:      │
               │   /content/pages/:id/tree · /globalStyles ·      │
               │   /blocks/public/footer · /links · sitemap       │
               └─────────────────────────────────────────────────┘
 
   domain save/delete (B1Admin Settings→Domains → POST /membership/domains)
         └─ best-effort CaddyHelper.updateCaddy()  (wrapped, non-fatal, 10s timeout)
-  Caddy reads ang domains table mismo sa pamamagit ng dalawang anonymous endpoints:
+  Caddy reads the domains table itself via two anonymous endpoints:
         GET /membership/domains/authorize  — on-demand-TLS `ask` (200 known / 404 unknown)
         GET /membership/domains/hostmap    — host→{sub}.b1.church map (5-min refresh)
 ```
@@ -198,3 +198,7 @@ Ang `CaddyHelper` (membership module) ay maaaring pa ring mag-drive ng Caddy sa 
 ## Mga Kaugnay na Pahina
 
 - [Caddy Custom-Domain Proxy](../deployment/caddy-proxy) — ang edge box mismo: fresh-box setup, WinSW service, map sync task, at operational gotchas
+- [Website Builder](./website-builder) — ang page/section/element tree, mga renderer, blog, SEO, at AI generation (kung ano ang tunay na nag-render kapag naresolba na ang request sa isang church/site)
+- [Content Endpoints](../api/endpoints/content) — ang REST surface para sa pages, blocks, links, at global styles, lahat ngayon ay `?siteId=`-aware
+- [B1App](../web-apps/b1-app) — ang Next.js app na nag-host ng middleware at `[sdSlug]` routing
+- [Web App Deployment](../deployment/web-apps) — kung paano na-deploy ang B1App sa Vercel

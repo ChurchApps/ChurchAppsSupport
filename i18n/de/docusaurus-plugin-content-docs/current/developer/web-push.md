@@ -164,4 +164,3 @@ self.addEventListener("notificationclick", (event) => {
 - [Echtzeit-Architektur](./realtime) -- WebSocket-Zustellung; Push löst jetzt aus demselben In-App-Trichter neben der Socket-Zustellung im selben Durchgang aus, nicht mehr nur als Fallback, wenn eine Socket-Zustellung nicht ankommt
 - [Messaging-Endpunkte](./api/endpoints/messaging) -- Benachrichtigungen, Geräte und der Rest der Messaging-Oberfläche
 - [AppHelper](./shared-libraries/app-helper) -- Das npm-Paket, das `WebPushHelper` ausliefert
-</content>

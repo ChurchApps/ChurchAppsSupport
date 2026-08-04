@@ -1,204 +1,204 @@
 ---
-title: "Nettsted ruting og multi-nettsted"
+title: "Nettstedruting og multi-nettsted"
 ---
 
-# Nettsted ruting og multi-nettsted
+# Nettstedruting og multi-nettsted
 
 <div class="article-intro">
 
-Ein eneste kirke kan nå betjene mer enn ein distinkt nettsted, og hver ein kan lever på en `*.b1.church` subdomene eller på ein helt egne, kirke-eid domene. Denne siden kartlegger ruting lag som sitter *under* bygger: hvordan ein innkommende forespørsel løse til en kirke **og** til ein spesifikk nettsted, multi-nettsted data modellen (den `siteId` sentinel som holder hver allerede-eksisterende nettsted gjengivelse uendret), og egne-domene kant — ein selv-administrert Caddy proxy på EC2 som avslutter TLS og skrive hver kirke domene på sin `*.b1.church` oppstrøm. For hva som faktisk gjengive en gang ein forespørsel har løse — side/seksjonen/element tre — se [nettsted bygging](./website-builder).
+En enkelt kirke kan nå betjene mer enn ett distinkt nettsted, og hvert ett kan ligge på et `*.b1.church`-subdomene eller på et helt egendefinert, kirkeeid domene. Denne siden kartlegger rutingslaget som ligger *under* byggeren: hvordan en innkommende forespørsel løses til en kirke **og** til et spesifikt nettsted, multi-nettsted-datamodellen (`siteId`-vaktposten som holder hvert allerede eksisterende nettsted gjengitt uendret), og kanten for egendefinerte domener — en selvadministrert Caddy-proxy på EC2 som avslutter TLS og skriver om hvert kirkedomene til sin `*.b1.church`-oppstrøm. For hva som faktisk gjengis når en forespørsel har blitt løst — side-/seksjons-/elementtreet — se [Nettstedbygging](./website-builder).
 
 </div>
 
 ## Oversikt
 
 ```
-   grace.b1.church              www.gracechurch.org  (egne domene)
-   (b1.church subdomene)                  │
+   grace.b1.church              www.gracechurch.org  (egendefinert domene)
+   (b1.church-subdomene)                  │
           │                               ▼
           │             ┌──────────────────────────────────────────┐
-          │             │ Caddy kant — EC2 3.23.251.61              │
+          │             │ Caddy-kant — EC2 3.23.251.61              │
           │             │             (proxy.b1.church)             │
-          │             │  • avslutter TLS (per-domene LE sert)      │
-          │             │  • skrive Host → {sub}.b1.church           │
-          │             │  • omvendt-proxy til B1App                │
+          │             │  • avslutter TLS (per-domene LE-sertifikat)│
+          │             │  • skriver om Host → {sub}.b1.church       │
+          │             │  • reverse-proxyer til B1App               │
           │             └────────────────────┬─────────────────────┘
           │                  Host = {sub}.b1.church
           ▼                                  ▼
    ┌────────────────────────────────────────────────────────────┐
    │ B1App src/middleware.ts                                     │
-   │  • alltid: slett noe som helst klient-levert x-site (anti-spoof)│
-   │  • intern *.b1.church Host ⇒ domener oppslag blir inert      │
-   │  • rå egne Host (omgå Caddy) ⇒ oppslag → sett x-site         │
+   │  • alltid: slett enhver klientlevert x-site (anti-spoofing) │
+   │  • intern *.b1.church Host ⇒ domeneoppslaget forblir inert  │
+   │  • rå egendefinert Host (går utenom Caddy) ⇒ oppslag → setter x-site │
    └───────────────────────────┬────────────────────────────────┘
-                               ▼  next.config.mjs → host første-etikett → /[sdSlug]/…
+                               ▼  next.config.mjs → verts-førsteetikett → /[sdSlug]/…
               ┌─────────────────────────────────────────────────┐
               │ [sdSlug] · ConfigHelper.load(sdSlug)             │
               │   GET /membership/churches/lookup/?subDomain=…   │
               │   → { id, name, subDomain, siteId? }             │
-              │   thread ?siteId= inn i hver innhold kall:       │
+              │   sender ?siteId= inn i hvert innholdskall:      │
               │   /content/pages/:id/tree · /globalStyles ·      │
               │   /blocks/public/footer · /links · sitemap       │
               └─────────────────────────────────────────────────┘
 
-  domene lagring/sletting (B1Admin Innstillinger→domener → POST /membership/domains)
-        └─ beste-innsats CaddyHelper.updateCaddy()  (omviklet, ikke-fatal, 10s timeout)
-  Caddy leser domener tabellen selv via to anonym endepunkter:
-        GET /membership/domains/authorize  — etterspørsmål-TLS `spør` (200 kjent / 404 ukjent)
-        GET /membership/domains/hostmap    — host→{sub}.b1.church kart (5-min oppfrisk)
+  domenelagring/-sletting (B1Admin Innstillinger→Domener → POST /membership/domains)
+        └─ beste-innsats CaddyHelper.updateCaddy()  (innpakket, ikke-fatal, 10s tidsavbrudd)
+  Caddy leser domains-tabellen selv via to anonyme endepunkter:
+        GET /membership/domains/authorize  — on-demand-TLS `ask` (200 kjent / 404 ukjent)
+        GET /membership/domains/hostmap    — host→{sub}.b1.church-kart (5-min oppfrisking)
 ```
 
-Tre regler holder på tvers av dette laget:
+Tre regler gjelder for dette laget:
 
-1. **Ein sentinel holder alt bakover kompatibel.** `siteId = ''` er primær nettsted. Hver side, blokk, lenke, global-stil, og domene rad som eksisterte før denne funksjon bærer `''` og gjengive nøyaktig som det gjorde. Ein *andre* nettsted er ganske enkelt ein sett av rader med ein ikke-tom `siteId`, og noe som helst innhold endepunkt kalt uten `?siteId=` returnerer primær nettsted — byte-for-byte den gamle forespørsel.
-2. **Løsning er vert-etikett-basert og konvergerer.** Ein `*.b1.church` subdomene rute etter sin vert etikett direkte; ein egne domene blir skrevet til sin `{sub}.b1.church` etikett på Caddy kant før B1App ser det (med ein middleware DB oppslag som stempel ein `x-site` header som tilbakefallet for noe som helst rå egne `Host`). Begge ben lande på samme `[sdSlug]` rute og samme `churches/lookup` kall, så nedstrøm gjengivelse er identisk.
-3. **Caddy kant er stateless over ein kilde til sannhet.** Egne domener avslutter på ein selv-administrert Caddy proxy på EC2 som skrive hver domene på sin `{sub}.b1.church` oppstrøm. Ein domene lagring fyr en eneste beste-innsats `CaddyHelper.updateCaddy()`, og Caddy også leser `domains` tabellen direkte (den `authorize` og `hostmap` endepunkter nedenfor). Tabellen er autoritativ — ein uoppnåelig Caddy kan aldri mislykkes ein lagring.
+1. **En vaktpost holder alt bakoverkompatibelt.** `siteId = ''` er hovednettstedet. Hver side, blokk, lenke, globalstil, og domenerad som eksisterte før denne funksjonen bærer `''` og gjengis nøyaktig som før. Et *andre* nettsted er ganske enkelt et sett med rader med en ikke-tom `siteId`, og ethvert innholdsendepunkt kalt uten `?siteId=` returnerer hovednettstedet — byte-for-byte den gamle forespørselen.
+2. **Løsning er vertsetikett-basert og konvergerer.** Et `*.b1.church`-subdomene rutes etter sin vertsetikett direkte; et egendefinert domene skrives om til sin `{sub}.b1.church`-etikett ved Caddy-kanten før B1App ser det (med et middleware-DB-oppslag som stempler en `x-site`-header som fallback for enhver rå egendefinert `Host`). Begge ben lander på samme `[sdSlug]`-rute og samme `churches/lookup`-kall, så nedstrøms gjengivelse er identisk.
+3. **Caddy-kanten er stateless over én sannhetskilde.** Egendefinerte domener avsluttes ved en selvadministrert Caddy-proxy på EC2 som skriver om hvert domene til sin `{sub}.b1.church`-oppstrøm. En domenelagring utløser ett enkelt beste-innsats-kall til `CaddyHelper.updateCaddy()`, og Caddy leser også `domains`-tabellen direkte (`authorize`- og `hostmap`-endepunktene nedenfor). Tabellen er den autoritative kilden — en utilgjengelig Caddy kan aldri få en lagring til å feile.
 
-## Nettsted løsning
+## Nettstedløsning
 
-### `*.b1.church` subdomener
+### `*.b1.church`-subdomener
 
-`B1App/next.config.mjs` skrive innkommende forespørsel etter vert. Ein vert regel med mønstre `(?<subdomain>.*?)\..*` fanger **første etikett** av verten og skrive `/` og `/:path*` inn i `/{subdomain}` — den `[sdSlug]` app-Router segment. Så `grace.b1.church/about` blir `/grace/about`.
+`B1App/next.config.mjs` skriver om innkommende forespørsler etter vert. En vertsregel med mønsteret `(?<subdomain>.*?)\..*` fanger **første etikett** av verten og skriver om `/` og `/:path*` til `/{subdomain}` — App Router-segmentet `[sdSlug]`. Så `grace.b1.church/about` blir `/grace/about`.
 
-Innsiden `src/app/[sdSlug]/`, `ConfigHelper.load(sdSlug)` (`src/helpers/ConfigHelper.ts`) kall `GET /membership/churches/lookup/?subDomain={sdSlug}`. Den `ChurchController.getBySubDomain` respons nå har to grener:
+Inne i `src/app/[sdSlug]/` kaller `ConfigHelper.load(sdSlug)` (`src/helpers/ConfigHelper.ts`) `GET /membership/churches/lookup/?subDomain={sdSlug}`. `ChurchController.getBySubDomain`-svaret har nå to grener:
 
-| Slug kamerat | Respons | Betydning |
+| Slug matcher | Svar | Betydning |
 |--------------|----------|---------|
-| `churches.subDomain` | `{ id, name, subDomain }` | Primær nettsted av den kirken |
-| `sites.subDomain` | `{ id, name, subDomain, siteId }` | Ein **andre nettsted** — kontrollen fall tilbake til `sites`, løse eier kirken, og ekko spurt etikett pluss ekstra `siteId` |
+| `churches.subDomain` | `{ id, name, subDomain }` | Hovednettstedet til den kirken |
+| `sites.subDomain` | `{ id, name, subDomain, siteId }` | Et **andre nettsted** — controlleren faller tilbake til `sites`, løser den eiende kirken, og gjentar den spurte etiketten pluss den ekstra `siteId` |
 
-At ekstra `siteId` er det eneste som skille ein andre-nettsted forespørsel fra ein primær en; alt annet i rørledningen blir delt.
+Den ekstra `siteId`-en er det eneste som skiller en andre-nettsted-forespørsel fra en primær; alt annet i pipelinen er delt.
 
-### Egne domener
+### Egendefinerte domener
 
-Ein kirke-eid domene avslutter på **Caddy kant** (detalj nedenfor), som skrive `Host` header til nettsted `{sub}.b1.church` før proxy til B1App. Så på normal sti B1App mottar en *intern* `*.b1.church` vert og løse det etter vert etikett nøyaktig som ein innebygd subdomene — middleware DB oppslag aldri fyr. `src/middleware.ts` fortsatt kjør på hver forespørsel, men med en alltid-på jobb og en tilbakefallet:
+Et kirkeeid domene avsluttes ved **Caddy-kanten** (detaljert nedenfor), som skriver om `Host`-headeren til nettstedets `{sub}.b1.church` før den proxyer til B1App. Så på den normale stien mottar B1App en *intern* `*.b1.church`-vert og løser den etter vertsetikett akkurat som et innebygd subdomene — middlewarens DB-oppslag utløses aldri. `src/middleware.ts` kjører fortsatt på hver forespørsel, men med én alltid-på-jobb og én fallback:
 
-1. **Alltid** — det **slett noe som helst klient-levert `x-site` header**. Den header er spoofbar skrive inngang og blir bare aldri tiltrodd når middleware selv sett det; fjern det er middleware virkelig jobb bak Caddy.
-2. **Tilbakefallet, ikke-intern `Host` bare** — for ein rå egne-domene `Host` som når B1App *uten* Caddy skrive, det kall `GET /membership/domains/public/lookup/{host}` og, hvis det returnerer ein `subDomain`, sett `x-site: {subDomain}.b1.church`. Bak Caddy denne grenen er inert fordi `Host` er allerede `*.b1.church`.
+1. **Alltid** — den **sletter enhver klientlevert `x-site`-header**. Den headeren er en manipulerbar omskrivingsinngang og stoles bare på når middlewaren selv setter den; å fjerne den er middlewarens egentlige jobb bak Caddy.
+2. **Fallback, kun ikke-intern `Host`** — for en rå egendefinert-domene-`Host` som når B1App *uten* Caddys omskriving, kaller den `GET /membership/domains/public/lookup/{host}` og setter, hvis den returnerer en `subDomain`, `x-site: {subDomain}.b1.church`. Bak Caddy er denne grenen inert fordi `Host` allerede er `*.b1.church`.
 
-Intern vert — `localhost`, `b1.church`, og suffix `.b1.church`, `.localtest.me`, `.localhost`, `.up.railway.app`, `.vercel.app` — hopp oppslag helt (de er allerede løst etter vert-etikett skrive, eller er forhåndsvisning/deploy vert).
+Interne verter — `localhost`, `b1.church`, og suffiksene `.b1.church`, `.localtest.me`, `.localhost`, `.up.railway.app`, `.vercel.app` — hopper over oppslaget helt (de er allerede løst av vertsetikett-omskrivingen, eller er forhåndsvisnings-/utrullingsverter).
 
-Oppslaget selv (`DomainRepo.loadByName`) venstre-sammenføy `domains → churches` og `domains → sites` og returnerer `COALESCE(NULLIF(sites.subDomain,''), churches.subDomain)` — den tildelt andre nettsted subdomene hvis domenet peker på ein, ellers kirken. Det kamerat nøyaktig vert først; hvis den vert begynt med `www.` og mistet, det prøv **en gang** mot naken apex.
+Selve oppslaget (`DomainRepo.loadByName`) venstre-joiner `domains → churches` og `domains → sites` og returnerer `COALESCE(NULLIF(sites.subDomain,''), churches.subDomain)` — det tildelte andre-nettstedets subdomene hvis domenet peker på ett, ellers kirkens. Det matcher den eksakte verten først; hvis den verten begynte med `www.` og bommet, prøver den **én gang** mot den nakne apex.
 
-Tilbake i `next.config.mjs`, `x-site` skrive reglene blir plassert **foran** generisk vert reglene, så de vin. `x-site: grace.b1.church` → første etikett `grace` → `[sdSlug] = grace`, og fra der løsning er identisk til subdomene sti (samme `churches/lookup`, samme `siteId`).
+Tilbake i `next.config.mjs` er `x-site`-omskrivingsreglene plassert **foran** de generiske vertsreglene, så de vinner. `x-site: grace.b1.church` → første etikett `grace` → `[sdSlug] = grace`, og derfra er løsningen identisk med subdomene-stien (samme `churches/lookup`, samme `siteId`).
 
 :::info
-Den `x-site` header er mistrodd fra utsiden. Middleware ubetinget fjern noe som helst inngang `x-site` før valgfritt setter sin egen, og skrive regler bare aldri se middleware-sett verdi — ein klient kan ikke force seg selv på annens kirke innhold ved å sende ein header.
+`x-site`-headeren er ikke tiltrodd fra utsiden. Middlewaren fjerner ubetinget enhver innkommende `x-site` før den eventuelt setter sin egen, og omskrivingsreglene ser bare noensinne den middleware-satte verdien — en klient kan ikke tvinge seg selv inn på en annen kirkes innhold ved å sende en header.
 :::
 
-To operativ detalj på middleware:
+To driftsdetaljer om middlewaren:
 
-- **Buffer.** Hver vert resultat (ein treffer *eller* bekreftet miss — aldri ein nettverk feil) blir buffer for **10 minutter** i ein i-hukommelse `Map`, per serverless isolat.
-- **Matcher.** Matcher bevisst re-inkludert `/sitemap.xml`, `/robots.txt`, og `/manifest.webmanifest`. Sin første mønstre ekskludert prikket veier, som ellers ville dråpe de filer; de blir lagt tilbake så ein egne domene per-kirke SEO/PWA filer også mottar `x-site` header.
+- **Cache.** Hver verts resultat (et treff *eller* et bekreftet ikke-treff — aldri en nettverksfeil) caches i **10 minutter** i et in-memory `Map`, per serverløs isolat.
+- **Matcher.** Matcheren tar bevisst med `/sitemap.xml`, `/robots.txt`, og `/manifest.webmanifest` tilbake. Dens første mønster ekskluderer prikkede stier, noe som ellers ville droppet disse filene; de er lagt tilbake slik at et egendefinert domenes per-kirke SEO-/PWA-filer også mottar `x-site`-headeren.
 
-### `siteId` threading
+### `siteId`-innveving
 
-`ConfigHelper` lagrer den løst `siteId` på sin per-forespørsel `ConfigurationInterface` (memoisert med React `cache()`) og tilføy `?siteId=` til innhold kall det og side komponenter gjør — **betinget**: ein tom `siteId` (ein primær-kirke subdomene) utelate parameter helt. De thread endepunkter er siden tre (`/content/pages/:id/tree`), offentlig side liste brukt av sitemap (`/content/pages/public/:id`), global stil (`/content/globalStyles/church/:id`), nav lenker (`/content/links/church/:id`), og frittstå footer blokk (`/content/blocks/public/footer/:id`). På normal gjengivelse sti footer ankomst innsiden side tre (seksjonen merket `zone: "siteFooter"`), allerede hent med `siteId`, så der er nei un-scoped footer gap.
+`ConfigHelper` lagrer den løste `siteId`-en på sitt per-forespørsel `ConfigurationInterface` (memoisert med Reacts `cache()`) og legger til `?siteId=` på innholdskallene den og sidekomponentene gjør — **betinget**: en tom `siteId` (et hovedkirke-subdomene) utelater parameteren helt. De involverte endepunktene er sidetreet (`/content/pages/:id/tree`), den offentlige sidelisten brukt av sitemap (`/content/pages/public/:id`), globale stiler (`/content/globalStyles/church/:id`), navigasjonslenker (`/content/links/church/:id`), og den frittstående bunntekstblokken (`/content/blocks/public/footer/:id`). På den normale gjengivelsesstien ankommer bunnteksten inne i sidetreet (seksjoner merket `zone: "siteFooter"`), allerede hentet med `siteId`, så det finnes ikke noe uomfangsbestemt bunntekst-gap.
 
-Medlem portal (B1App `mobile`) bevisst sitter utsiden dette: `loadChurchAppearance.ts` løse kirken via `churches/lookup` men leser kirke-nivå `/settings/public/{id}` og aldri thread `siteId` — portalen er kirke-bredt i v1 (se nedenfor).
+Medlemsportalen (B1App `mobile`) sitter bevisst utenfor dette: `loadChurchAppearance.ts` løser kirken via `churches/lookup`, men leser kirkenivå-`/settings/public/{id}` og sender aldri `siteId` — portalen er kirkeomfattende i v1 (se nedenfor).
 
-## Flere nettsted per kirke
+## Flere nettsteder per kirke
 
 ### Datamodell
 
-Den nye `membership.sites` tabell er bevisst tiny:
+Den nye tabellen `membership.sites` er bevisst liten:
 
-| Kolonne | Type | Noter |
+| Kolonne | Type | Notater |
 |--------|------|-------|
 | `id` | `char(11)` PK | |
-| `churchId` | `char(11)` | Eier kirke |
-| `name` | `varchar(255)` | Display navn (f.eks. "Español", "Youth") |
-| `subDomain` | `varchar(45)` | **Unik indeks** — global omfang (nedenfor) |
+| `churchId` | `char(11)` | Eiende kirke |
+| `name` | `varchar(255)` | Visningsnavn (f.eks. "Español", "Ungdom") |
+| `subDomain` | `varchar(45)` | **Unik indeks** — globalt navnerom (nedenfor) |
 
-Nettsted omfang er så ein eneste nullable-fri kolonne lagt til innhold og domene tabeller:
+Nettstedomfang er deretter én enkelt nullable-fri kolonne lagt til innholds- og domenetabellene:
 
 | Tabell (modul) | Kolonne | `''` betyr |
 |----------------|--------|-----------|
-| `domains` (medlemskaps) | `siteId char(11) NOT NULL DEFAULT ''` | Domene betjener primær nettsted |
-| `pages`, `links`, `globalStyles`, `blocks` (innhold) | `siteId char(11) NOT NULL DEFAULT ''` | Primær nettsted — og på **`blocks`**, `''` tillegssvis betyr *delt på tvers av alle nettsted* |
+| `domains` (membership) | `siteId char(11) NOT NULL DEFAULT ''` | Domenet betjener hovednettstedet |
+| `pages`, `links`, `globalStyles`, `blocks` (content) | `siteId char(11) NOT NULL DEFAULT ''` | Hovednettstedet — og på **`blocks`** betyr `''` i tillegg *delt på tvers av alle nettsteder* |
 
-To migrasjoner legger til alt av dette (`tools/migrations/membership/2026-07-02_sites.ts`, `tools/migrations/content/2026-07-02_site_id.ts`). Fordi kolonne standard til `''`, hver eksisterende rad holder i dag oppførsel med nei backfill.
+To migrasjoner legger til alt dette (`tools/migrations/membership/2026-07-02_sites.ts`, `tools/migrations/content/2026-07-02_site_id.ts`). Fordi kolonnen har `''` som standard, beholder hver eksisterende rad dagens atferd uten noen etterfylling.
 
-**Global subdomene omfang.** `sites.subDomain` dele *en* omfang med `churches.subDomain` — ein nettsted subdomene kan aldri collide med ein kirke subdomene eller annens nettsted. Dette blir håndhevet på **begge** lagring sti: `SiteController.save` avvist ein slug som hit enten `churches` eller `sites`, og `ChurchController.validateSave` gjør samme i omvendt. Ein unik indeks på `sites.subDomain` bakk det på database nivå.
+**Globalt subdomene-navnerom.** `sites.subDomain` deler *ett* navnerom med `churches.subDomain` — et nettsted-subdomene kan aldri kollidere med et kirke-subdomene eller et annet nettsteds. Dette håndheves på **begge** lagringsstier: `SiteController.save` avviser en slug som treffer enten `churches` eller `sites`, og `ChurchController.validateSave` gjør det samme motsatt vei. En unik indeks på `sites.subDomain` sikrer det på databasenivå.
 
-**Side unikt** utvidet fra `(churchId, url)` til `(churchId, siteId, url)`, så to nettsted av en kirke kan hver eie sin egen `/about`.
+**Sideunikhet** utvidet fra `(churchId, url)` til `(churchId, siteId, url)`, slik at to nettsteder tilhørende én kirke hver kan eie sin egen `/about`.
 
-### Per-nettsted innhold, med tilbakefallet
+### Per-nettsted-innhold, med fallback-er
 
-Hver nettsted-omfang innhold **liste/tre** endepunkt tar en valgfri `?siteId=` (fraværelse ⇒ `''` = primær): siden tre / liste / offentlig, blokker liste / etter-type / footer, lenker (anon / filtrert / alle), og global stil. Seksjoner og elementer er *ikke* omfang direkte — de arv gjennom sin morside eller blokk.
+Hvert nettsted-omfangsbestemte innholds-**liste-/tre**-endepunkt tar en valgfri `?siteId=` (fravær ⇒ `''` = hoved): sidetre/-liste/-offentlig, blokker-liste/etter-type/bunntekst, lenker (anon/filtrert/alle), og globale stiler. Seksjoner og elementer er *ikke* omfangsbestemt direkte — de arver gjennom sin overordnede side eller blokk.
 
-To løsning kjeder gjør interessant arbeid:
+To løsningskjeder gjør det interessante arbeidet:
 
-- **Global stil — `nettsted → primær → standard`.** `GlobalStyleRepo.loadForChurch(churchId, siteId)` returnerer nettsted egen rad; hvis ein andre nettsted har ingen, det returnerer **primær (`''`) rad som-er** (holde primær `id`/`siteId`, som klient bruker til copy-på-skriving); hvis der er nei primær enten, `GlobalStyleController` returnerer hard-kodet standard palett/font.
-- **Footer blokk — nettsted-spesifikk vin, delt fall tilbake.** `BlockRepo.loadByBlockType(churchId, "footerBlock", siteId)` returnerer delt (`''`) *og* nettsted-spesifikk rader; løseren plukk nettsted egen footer hvis til stede, ellers delt en. Samme logikk kjør både i `TreeHelper.insertBlocks` (side tre) og i frittstå `/content/blocks/public/footer/:churchId` endepunkt.
+- **Globale stiler — `nettsted → hoved → standard`.** `GlobalStyleRepo.loadForChurch(churchId, siteId)` returnerer nettstedets egen rad; hvis et andre nettsted ikke har noen, returnerer den **hoved-raden (`''`) som den er** (og beholder hovedens `id`/`siteId`, som klienten bruker til kopier-ved-skriving); hvis det heller ikke finnes noen hoved, returnerer `GlobalStyleController` en hardkodet standardpalett/-font.
+- **Bunntekstblokk — nettstedspesifikk vinner, delt faller tilbake.** `BlockRepo.loadByBlockType(churchId, "footerBlock", siteId)` returnerer både den delte (`''`) *og* nettstedspesifikke radene; resolveren velger nettstedets egen bunntekst hvis den finnes, ellers den delte. Samme logikk kjører både i `TreeHelper.insertBlocks` (sidetreet) og i det frittstående `/content/blocks/public/footer/:churchId`-endepunktet.
 
-### Nettsted slettings kaskadering
+### Kaskadering ved sletting av nettsted
 
-`SiteController.delete` (port på medlemskaps innstillinger→Rediger tillatelse) river ein andre nettsted ned i tre trinn:
+`SiteController.delete` (sperret på medlemskapsmodulens Innstillinger→Rediger-tillatelse) river ned et andre nettsted i tre steg:
 
-1. `ContentModuleGateway.deleteSiteContent(churchId, siteId)` kaskad hele innhold nettsted eier: dets **sider** → deres seksjoner, elementer, `pageHistory`, og `posts`; dets eget **blokker** → deres seksjoner, elementer, og `pageHistory`; dets **lenker** og **globalStyles**. Ein vakt nekter å kjør for `''` — den primær/delt sentinel er aldri kaskadet.
-2. `DomainRepo.clearSiteId` **re-tildeling** nettsted domener tilbake til primær (`siteId → ''`) snarere enn sletting, så ein egne domene overleverer ein nettsted slettings.
-3. Den `sites` rad blir slettet og Caddy ruter blir re-synkronisert (beste-innsats).
+1. `ContentModuleGateway.deleteSiteContent(churchId, siteId)` kaskaderer alt innhold nettstedet eier: dets **sider** → deres seksjoner, elementer, `pageHistory`, og `posts`; dets egne **blokker** → deres seksjoner, elementer, og `pageHistory`; dets **lenker** og **globalStyles**. En vakt nekter å kjøre for `''` — hoved-/delt-vaktposten kaskaderes aldri.
+2. `DomainRepo.clearSiteId` **tildeler på nytt** nettstedets domener tilbake til hovedet (`siteId → ''`) i stedet for å slette dem, slik at et egendefinert domene overlever en nettstedsletting.
+3. `sites`-raden slettes og Caddy-rutene resynkroniseres (beste innsats).
 
-### B1Admin flate
+### B1Admin-flate
 
-| Evne | Hvor | Mekanisme |
+| Kapasitet | Hvor | Mekanisme |
 |-----------|-------|-----------|
-| Nettsted bytter | `useSiteSelection` + `SiteSwitcher` (tom = "hovednettsted") | Leser ein `?site=` URL param og thread den som `?siteId=` inn i ContentApi kall. Til stede på de tre nettsted **liste** områder — **sider**, **blokker**, **utseende** — men *ikke* side/blokk redaktørere, som bærer `siteId` på posten |
-| Nettsted opprett/slett | `SitesDialog`, åpnet fra bytter "Administrer nettsted…" innsettepunkt | `POST /membership/sites` / `DELETE /membership/sites/:id` (navn + subDomain). Port på medlemskaps innstillinger→Rediger tillatelse (`Permissions.settings.edit` server-side; `Permissions.membershipApi.settings.edit` i B1Admin). **Opprett/slett bare — der er nei omdøp UI i v1** |
-| Per-domene nettsted tildeling | `DomainSettingsEdit` under innstillinger→domener | Ein per-rad nettsted nedrulling poster `siteId` per domene til `/membership/domains`. Kolonne gjemme hvis API returnerer ingen nettsted (eldre backend) |
-| Copy-på-skriving stil | `StylesManager.prepareForSave` | Når laden global-stil rad `siteId` ikke kamerat valgt nettsted (i.e. API returnerte den arvet primær som tilbakefallet), det slipper primær `id` og stempel nåværende `siteId`, tvinge en **sett inn** av ein ny nettsted-spesifikk rad i stedet for overskriving primær. Samme gaffel-på-mismatch gjelder nettsted footer blokk |
+| Nettstedbytter | `useSiteSelection` + `SiteSwitcher` (tomt = "Hovednettsted") | Leser en `?site=`-URL-parameter og sender den videre som `?siteId=` inn i ContentApi-kall. Til stede på de tre nettsted-**liste**-områdene — **Sider**, **Blokker**, **Utseende** — men *ikke* side-/blokkredaktørene, som bærer `siteId` på posten |
+| Opprett/slett nettsteder | `SitesDialog`, åpnet fra bytterens "Administrer nettsteder…"-inngang | `POST /membership/sites` / `DELETE /membership/sites/:id` (navn + subDomain). Sperret på medlemskapsmodulens Innstillinger→Rediger-tillatelse (`Permissions.settings.edit` server-side; `Permissions.membershipApi.settings.edit` i B1Admin). **Kun opprett/slett — det finnes ingen omdøpings-UI i v1** |
+| Per-domene nettstedtildeling | `DomainSettingsEdit` under Innstillinger→Domener | En per-rad nettsted-nedtrekksliste poster `siteId` per domene til `/membership/domains`. Kolonnen skjules hvis APIet ikke returnerer noen nettsteder (eldre backend) |
+| Kopier-ved-skriving-stiler | `StylesManager.prepareForSave` | Når den lastede globalstil-radens `siteId` ikke matcher det valgte nettstedet (dvs. APIet returnerte det arvede hovedet som fallback), dropper den hovedets `id` og stempler gjeldende `siteId`, og tvinger frem en **innsetting** av en ny nettstedspesifikk rad i stedet for å overskrive hovedet. Samme forgreining-ved-uoverensstemmelse gjelder nettstedets bunntekstblokk |
 
 :::info
-**Hva blir kirke-bredt i v1 (ein bevisst omfang valg, ikke ein data-modell grense):** den **blogg** (`BlogPage` har nei bytter og last `/posts` med nei `siteId`), den **nettsted widgets** (meddelelse banner + launcher), **redirects**, den **logo / GA4 / kirke innstillinger**, og den **medlem portal** (B1App mobil). Merk dette er *ikke* "alle av utseende" — ein andre nettsted global stil (palett, font, typografi, mellomrom, nav, egne CSS) **er** per-nettsted via copy-på-skriving sti over; bare banner/launcher/redirects/logo sub-paneler av utseende side forblir kirke-bredt.
+**Hva som forblir kirkeomfattende i v1 (et bevisst omfangsvalg, ikke en datamodellbegrensning):** **bloggen** (`BlogPage` har ingen bytter og laster `/posts` uten `siteId`), **nettstedwidgetene** (kunngjøringsbanner + launcher), **redirects**, **logo-/GA4-/kirkeinnstillingene**, og **medlemsportalen** (B1App mobil). Merk at dette *ikke* er "hele Utseende" — et andre nettsteds globale stiler (palett, font, typografi, mellomrom, navigasjon, egendefinert CSS) **er** per-nettsted via kopier-ved-skriving-stien over; det er bare banner-/launcher-/redirects-/logo-underpanelene på Utseende-siden som forblir kirkeomfattende.
 :::
 
-## Egne domener: Caddy kant (statisk-konfig plan)
+## Egendefinerte domener: Caddy-kanten (plan for statisk konfigurasjon)
 
 :::info
-**Retning revidert 2026-07-02.** Ein tidligere plan til beveg egne-domene hosting på Vercel-administrert domener ble **avbrutt**, og alle Vercel domene-registrering kode (`VercelHelper`, dets `vercelToken`/`vercelProjectId`/`vercelTeamId` env var, SSM param, og helse poster) ble fjernet fra Api. Den selv-administrert **Caddy proxy på EC2 bli** som permanent egne-domene kant. Den eneste gjenværende arbeid er intern: bytte Caddy runtime admin-API konfig for ein *statisk* konfig som overleverer omstart.
+**Retning revidert 2026-07-02.** En tidligere plan om å flytte hosting av egendefinerte domener til Vercel-administrerte domener ble **kansellert**, og all Vercel-domeneregistreringskode (`VercelHelper`, dens `vercelToken`/`vercelProjectId`/`vercelTeamId`-miljøvariabler, SSM-parametere, og helseoppføringer) ble fjernet fra Api-et. Den selvadministrerte **Caddy-proxyen på EC2 blir værende** som den permanente kanten for egendefinerte domener. Det eneste gjenværende arbeidet er internt: å bytte Caddys *kjøretids*-admin-API-konfigurasjon med en *statisk* konfigurasjon som overlever omstarter.
 :::
 
 ### Kanten
 
-Hver egne kirke domene peker DNS på ein EC2 boks — `3.23.251.61`, også oppnåelig som `proxy.b1.church`. B1Admin innstillinger→domener skjerm instruer kirker til å legge til ein apex `A → 3.23.251.61` eller ein `CNAME → proxy.b1.church`. Caddy avslutter TLS med ein per-domene La oss krypter sert, skrive `Host` header til domene `{sub}.b1.church` oppstrøm, og omvendt-proxy til B1App — som så ruter det etter vert etikett som noe som helst innebygd subdomene (se [egne domener](#custom-domains) over).
+Hvert egendefinerte kirkedomene peker DNS-en sin mot én EC2-boks — `3.23.251.61`, også tilgjengelig som `proxy.b1.church`. B1Admins Innstillinger→Domener-skjerm instruerer kirker om å legge til en apex `A → 3.23.251.61` eller en `CNAME → proxy.b1.church`. Caddy avslutter TLS med et per-domene Let's Encrypt-sertifikat, skriver om `Host`-headeren til domenets `{sub}.b1.church`-oppstrøm, og reverse-proxyer til B1App — som deretter ruter det etter vertsetikett akkurat som ethvert innebygd subdomene (se [Egendefinerte domener](#custom-domains) over).
 
-Oppstrøm kartleggings kommer fra `DomainRepo.loadPairs`, hvis ring **COALESCEs den tildelt nettsted subdomene** så ein domene proxy til riktig *andre* nettsted, fall tilbake til kirken primær:
+Oppstrømskartleggingen kommer fra `DomainRepo.loadPairs`, hvis oppringing **COALESCEr det tildelte nettstedets subdomene** slik at et domene proxyer til det riktige *andre* nettstedet, med fallback til kirkens hovedsted:
 
 ```sql
 CONCAT(COALESCE(NULLIF(s.subDomain,''), c.subDomain), '.b1.church:443')  AS dial
 WHERE d.domainName NOT LIKE '%www.%'
 ```
 
-`www.*` rader blir ekskludert fra kartet; Caddy betjening `www.{host}` via ein `302` omdirigering til apex i stedet.
+`www.*`-rader ekskluderes fra kartet; Caddy betjener `www.{host}` via en `302`-omdirigering til apex i stedet.
 
-### To anonym endepunkter fôr kanten
+### To anonyme endepunkter mater kanten
 
-`DomainController` avslører to uautentisert, les-bare endepunkter kassa konsumer direkte — anonym av nødvendighet, siden kant spør dem før noe som helst kirke kontekst eksisterer:
+`DomainController` eksponerer to uautentiserte, skrivebeskyttede endepunkter boksen konsumerer direkte — anonyme av nødvendighet, siden kanten spør dem før noen kirkekontekst eksisterer:
 
 | Endepunkt | Returnerer | Rolle |
 |----------|---------|------|
-| `GET /membership/domains/authorize?domain=` | `200` hvis domene — eller, for ein `www.` miss, sin naken apex — eksisterer i `domains`; `404` ellers (inkludert ein tom `domain`) | Caddy **etterspørsmål-TLS `spør`**: overgrep kontroll bestem om til utsted ein sert for inn SNI |
-| `GET /membership/domains/hostmap` | `text/plain`, ein sortert `{domain} {sub}.b1.church` linje per rutbar domene | Verten→oppstrøm kart fil kassa oppfrisk på ein timer |
+| `GET /membership/domains/authorize?domain=` | `200` hvis domenet — eller, for et `www.`-ikke-treff, dets nakne apex — finnes i `domains`; `404` ellers (inkludert et tomt `domain`) | Caddys **on-demand-TLS `ask`**: misbrukskontrollen som avgjør om det skal utstedes et sertifikat for et innkommende SNI |
+| `GET /membership/domains/hostmap` | `text/plain`, én sortert `{domain} {sub}.b1.church`-linje per rutbart domene | Verts-til-oppstrøm-kartfilen boksen oppfrisker på en timer |
 
-`authorize` gjenbruk `DomainRepo.loadByName` (nøyaktig vert, så ein eneste `www.`→apex omprøving); `hostmap` gjenbruk `loadPairs` — så det er nettsted-medvitent og `www.*`-ekskludert, identisk til proxy ruter — og bare fjern `:443` suffix.
+`authorize` gjenbruker `DomainRepo.loadByName` (eksakt vert, deretter ett enkelt `www.`→apex-forsøk); `hostmap` gjenbruker `loadPairs` — så det er nettstedbevisst og `www.*`-ekskludert, identisk med proxy-rutene — og strømlinjer bare bort `:443`-suffikset.
 
-### Domene lagring/slett — ein beste-innsats push
+### Domenelagring/-sletting — ett beste-innsats-push
 
-`DomainController.save` skriv `domains` rader og så gjør ein **eneste beste-innsats** `CaddyHelper.updateCaddy()` kall, omviklet i ein `try/catch` som logger (`console.error`) og svelger; `delete` gjør samme (som også fiksert ein tidligere stale-rute-på-slett bug), som gjør andre-nettsted slettings (`SiteController.delete`). `updateCaddy` er selv bundet av ein **10s** Axios timeout, så ein uoppnåelig eller stoppet Caddy kan aldri `500` ein domene lagring — den `domains` tabell er kilden til sannhet.
+`DomainController.save` skriver `domains`-radene og gjør deretter ett **enkelt beste-innsats**-kall til `CaddyHelper.updateCaddy()`, innpakket i en `try/catch` som logger (`console.error`) og svelger; `delete` gjør det samme (som også fikset en tidligere feil med foreldede ruter ved sletting), det samme gjør sletting av andre nettsted (`SiteController.delete`). `updateCaddy` er selv begrenset av et **10s** Axios-tidsavbrudd, så en utilgjengelig eller stoppet Caddy kan aldri gi `500` for en domenelagring — `domains`-tabellen er sannhetskilden.
 
-### nåværende tilstand — statisk konfig, nei runtime tilstand
+### Nåværende tilstand — statisk konfigurasjon, ingen kjøretidstilstand
 
-Kassa (Windows EC2 bak permanent elast IP) kjør Caddy fra ein **statisk Caddyfile**: etterspørsmål TLS hvis `spør` peker på `/membership/domains/authorize`, pluss ein vert→oppstrøm kart fil oppfrisk hver 5 minutter fra `/membership/domains/hostmap` av ein planlagt oppgave som ender i ein vennlig `caddy reload`. Konfig overleverer omstart med null runtime tilstand — nei re-primer dans — og ein ukjent SNI er **TLS-avvist** (nei sert blir laget for ein vert `authorize` avvist), mens ein autorisert-men-ikke-ennå-kartlagt vert (ein helt-ny domene innsiden synk vindu) får ein ren 404. Nye domener blir rutbar innsiden ~5 minutter av ein lagring; deres sert blir laget på første hit. Bygge/oppsett, drift, og felt-testet fallgruver: [Caddy egne-domene proxy](../deployment/caddy-proxy).
+Boksen (Windows EC2 bak den permanente elastiske IP-en) kjører Caddy fra en **statisk Caddyfile**: on-demand TLS hvis `ask` peker på `/membership/domains/authorize`, pluss en verts-til-oppstrøm-kartfil oppfrisket hvert 5. minutt fra `/membership/domains/hostmap` av en planlagt oppgave som avsluttes med en skånsom `caddy reload`. Konfigurasjonen overlever omstarter med null kjøretidstilstand — ingen re-primings-dans — og en ukjent SNI blir **TLS-avvist** (ingen sertifikat lages for en vert `authorize` avviser), mens en autorisert-men-ennå-ikke-kartlagt vert (et helt nytt domene innenfor synkroniseringsvinduet) får en ren 404. Nye domener blir rutbare innen ~5 minutter etter en lagring; sertifikatene deres genereres ved første treff. Bygging/oppsett, drift, og feltestede fallgruver: [Caddy-proxy for egendefinerte domener](../deployment/caddy-proxy).
 
-### Eldre runtime push — tilbakefallet sti, ventende slettings
+### Eldre kjøretids-push — fallback-sti, planlagt for sletting
 
-`CaddyHelper` (medlemskaps modul) kan fortsatt kjør Caddy gjennom sin **admin API** på `caddyHost:caddyPort` (SSM `caddyHost`/`caddyPort`; no-op når usatt; avslør under `ServerHealthController`'s integrasjoner gruppe): `updateCaddy()` PATCH ein full ruter rekke, og `initializeCaddy()` + den `GET /membership/domains/caddy/init` / `GET /membership/domains/caddy` endepunkter gjenoppbygger ein runtime-konfigurert server fra bunnen av. Den modus konfig lever bare i Caddy hukommelse — den omstart-amnesia denne arkitektur erstattet. Maskineri forblir eneste som tilbakefallet sti og er planlagt for slettings en gang statisk boks har blitt stabil; den beste-innsats `updateCaddy()` push på domene lagring/slett er ein skadesløs no-op mot statisk boks (dets admin API er localhost-bare).
+`CaddyHelper` (membership-modulen) kan fortsatt styre Caddy gjennom dens **admin-API** på `caddyHost:caddyPort` (SSM `caddyHost`/`caddyPort`; no-op når usatt; eksponert under `ServerHealthController`s Integrasjoner-gruppe): `updateCaddy()` PATCHer et fullt rutearray, og `initializeCaddy()` + endepunktene `GET /membership/domains/caddy/init` / `GET /membership/domains/caddy` bygger opp igjen en kjøretidskonfigurert server fra bunnen av. Den modusens konfigurasjon lå bare i Caddys minne — restart-hukommelsestapet denne arkitekturen erstattet. Maskineriet forblir utelukkende som fallback-stien og er planlagt for sletting når den statiske boksen har vært stabil; det beste-innsats-`updateCaddy()`-pushet ved domenelagring/-sletting er en ufarlig no-op mot den statiske boksen (dens admin-API er kun localhost).
 
 ## Relaterte sider
 
-- [Caddy egne-domene proxy](../deployment/caddy-proxy) — kant boks selv: frisk-boks oppsett, WinSW tjeneste, kart synk oppgave, og drift fallgruver
-- [nettsted bygging](./website-builder) — side/seksjonen/element tre, gjengivere, blogg, SEO, og AI generering (hva gjengive en gang ein forespørsel har løse til kirke/nettsted)
-- [Innhold endepunkter](../api/endpoints/content) — REST flate for sider, blokker, lenker, og global stil, alle nå `?siteId=`-medvitent
-- [B1App](../web-apps/b1-app) — Next.js app som vert middleware og `[sdSlug]` ruting
-- [nettapp deployment](../deployment/web-apps) — hvordan B1App blir deploy til Vercel
+- [Caddy-proxy for egendefinerte domener](../deployment/caddy-proxy) — selve kant-boksen: oppsett av fersk boks, WinSW-tjeneste, kartsynkroniseringsoppgave, og driftsmessige fallgruver
+- [Nettstedbygging](./website-builder) — side-/seksjons-/elementtreet, gjengivere, blogg, SEO, og AI-generering (hva som gjengis når en forespørsel har blitt løst til en kirke/et nettsted)
+- [Content-endepunkter](../api/endpoints/content) — REST-flaten for sider, blokker, lenker, og globale stiler, alle nå `?siteId=`-bevisste
+- [B1App](../web-apps/b1-app) — Next.js-appen som er vert for middlewaren og `[sdSlug]`-rutingen
+- [Distribusjon av nettapper](../deployment/web-apps) — hvordan B1App distribueres til Vercel

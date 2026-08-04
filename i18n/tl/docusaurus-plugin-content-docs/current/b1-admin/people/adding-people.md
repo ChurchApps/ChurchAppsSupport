@@ -1,72 +1,72 @@
 ---
-title: "Pagdaragdag ng mga Tao"
+title: "Adding People"
 ---
 
-# Pagdaragdag ng mga Tao
+# Adding People
 
 <div class="article-intro">
 
-Ang seksyon ng People ang pundasyon ng B1 Admin — ito ang database ng miyembro ng iyong simbahan. Lahat ng iba pang feature (mga grupo, attendance, donasyon, form) ay nakatali sa mga record ng tao. Iginagabay ka ng gabay na ito sa pagdaragdag ng isang tao sa iyong database, pag-edit ng kanilang mga detalye, at pag-link ng mga miyembro ng pamilya sa mga sambahayan.
+Ang seksyong People ang pundasyon ng B1 Admin — ito ang database ng mga miyembro ng iyong simbahan. Bawat ibang tampok (mga grupo, attendance, donasyon, forms) ay konektado pabalik sa mga person record. Gagabayan ka ng gabay na ito sa pagdaragdag ng isang tao sa iyong database, pag-edit ng kanilang mga detalye, at pag-link ng mga kasapi ng pamilya sa mga sambahayan.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Kailangan mo ng aktibong B1 Admin account na may pahintulot na pamahalaan ang mga tao. Tingnan ang [Mga Papel at Pahintulot](roles-permissions.md) kung hindi ka sigurado sa iyong antas ng access.
+- Kailangan mo ng aktibong B1 Admin account na may permisong pamahalaan ang mga tao. Tingnan ang [Roles & Permissions](roles-permissions.md) kung hindi ka sigurado sa iyong access level.
 - Kung nagdaragdag ka ng higit sa ilang tao, isaalang-alang ang paggamit ng tool na [CSV Import](importing-data.md) sa halip.
 
 </div>
 
 ## Pagdaragdag ng Tao
 
-1. Mag-navigate sa B1.church Admin dashboard.
+1. Pumunta sa B1.church Admin dashboard.
 2. I-click ang **People** sa kaliwang sidebar.
 3. I-click ang button na **Add Person** sa kanang itaas na sulok.
-4. Punan ang first name, last name, at email address ng tao, pagkatapos ay i-click ang **Add**.
+4. Punan ang unang pangalan, huling pangalan, at email address ng tao, pagkatapos ay i-click ang **Add**.
 
-Magbubukas ang pahina ng profile ng tao, handa nang magdagdag ng higit pang mga detalye.
+Magbubukas ang profile page ng tao, handa ka nang magdagdag ng higit pang detalye.
 
 :::tip
-Kung nagmi-migrate ka mula sa ibang church management system, ang feature na [Import Data](importing-data.md) ay nagbibigay-daan sa iyo na dalhin ang buong direktoryo mula sa CSV file — mas mabilis kaysa sa pagdaragdag ng mga tao nang isa-isa.
+Kung lumilipat ka mula sa ibang sistema ng pamamahala ng simbahan, ang tampok na [Import Data](importing-data.md) ay nagbibigay-daan sa iyong dalhin ang iyong buong directory mula sa isang CSV file — mas mabilis kaysa sa pagdaragdag ng mga tao nang isa-isa.
 :::
 
 ## Pag-edit ng mga Detalye
 
-1. Sa pahina ng profile ng tao, i-click ang **edit pencil** sa tabi ng kanilang pangalan.
-2. Punan ang karagdagang impormasyon tulad ng middle name, membership status, mga petsa, address, at mga numero ng telepono.
-3. I-click ang **Save** upang i-save ang personal na impormasyon.
+1. Sa profile page ng tao, i-click ang **edit pencil** sa tabi ng kanilang pangalan.
+2. Punan ang karagdagang impormasyon tulad ng gitnang pangalan, membership status, mga petsa, address, numero ng telepono, at (para sa mga bata at estudyante) grade at paaralan.
+3. I-click ang **Save** para itago ang personal na impormasyon.
 
-Kasama rin sa profile ang ilang mga tab para sa kaugnay na impormasyon:
+Kasama rin sa profile ang ilang tab para sa kaugnay na impormasyon:
 
 - **Notes** — Magdagdag ng mga tala tungkol sa tao (pastoral care, follow-ups, atbp.)
-- **Groups** — Tingnan at pamahalaan ang [membership sa grupo](../groups/group-members.md)
+- **Groups** — Tingnan at pamahalaan ang [mga membership sa grupo](../groups/group-members.md)
 - **Attendance** — Tingnan ang [mga record ng attendance](../attendance/tracking-attendance.md)
 - **Donations** — Tingnan ang [kasaysayan ng donasyon](../donations/recording-donations.md)
 
-## Pagtatrabaho sa mga Form
+## Paggamit ng mga Form
 
-Maaari kang punan ng mga custom form nang direkta mula sa profile ng tao. Ito ay mga user-defined na form na maaari mong buuin sa pamamagit ng pagsunod sa gabay na [Paglikha ng Mga Form](../forms/creating-forms.md).
+Puwede kang magpuno ng custom forms direkta mula sa profile ng isang tao. Ito ay mga user-defined na form na puwede mong buuin sa pamamagitan ng pagsunod sa gabay na [Creating Forms](../forms/creating-forms.md).
 
-1. Sa profile ng tao, i-click ang dropdown na **Forms** upang pumili ng form.
-2. I-click ang **Add Form** upang buksan ito.
+1. Sa profile ng tao, i-click ang dropdown na **Forms** para pumili ng form.
+2. I-click ang **Add Form** para buksan ito.
 3. Punan ang mga detalye ng form at i-click ang **Save**.
 
 :::info
-Ang mga form na naka-link sa profile ng tao ay gumagamit ng uri ng form na **People**. Kung kailangan mo ng standalone na form (tulad ng event registration), tingnan ang [opsyon na Stand Alone](../forms/creating-forms.md) sa gabay ng mga form.
+Ang mga form na naka-link sa profile ng isang tao ay gumagamit ng form type na **People**. Kung kailangan mo ng standalone na form (tulad ng event registration), tingnan ang [Stand Alone form option](../forms/creating-forms.md) sa gabay ng forms.
 :::
 
 :::tip
-Kung kailangan mo lamang na subaybayan ang isa o dalawang dagdag na piraso ng impormasyon sa mga tao — isang petsa, isang numero, isang yes/no na sagot — gumamit ng [Custom Fields](../settings/custom-fields.md) sa halip ng form. Mas mabilis na punan at mahahanap nang direkta sa Advanced Search.
+Kung isa o dalawang karagdagang impormasyon lamang ang kailangan mong subaybayan tungkol sa mga tao — isang petsa, isang numero, isang sagot na oo/hindi — gamitin ang [Custom Fields](../settings/custom-fields.md) sa halip ng isang form. Mas mabilis itong punan at masasarch nang direkta sa Advanced Search.
 :::
 
 ## Pamamahala ng mga Sambahayan
 
-Ang mga sambahayan ay nagbibigay-daan sa iyo na i-link ang mga miyembro ng pamilya. Ito ay partikular na kapaki-pakinabang para sa [check-in](../attendance/check-in.md), kung saan ang isang magulang ay maaaring mag-check in ng lahat ng kanilang mga anak nang sabay-sabay.
+Ang mga sambahayan ay nagbibigay-daan sa iyong i-link ang mga kasapi ng pamilya. Kapaki-pakinabang ito lalo na para sa [check-in](../attendance/check-in.md), kung saan puwedeng i-check in ng isang magulang ang lahat ng kanilang mga anak nang sabay-sabay.
 
-1. Sa profile ng tao, i-click ang **edit pencil** sa tabi ng pangalan ng sambahayan.
+1. Sa profile ng isang tao, i-click ang **edit pencil** sa tabi ng pangalan ng sambahayan.
 2. Magbubukas ang household editor. Piliin ang **household role** para sa kasalukuyang tao (hal., Head, Spouse, Child).
-3. I-click ang **Add** upang magdagdag ng isa pang miyembro ng sambahayan.
+3. I-click ang **Add** para magdagdag ng isa pang kasapi ng sambahayan.
 4. I-type ang pangalan ng tao sa search box at i-click ang **Search**.
-5. Kapag lumitaw ang tao sa mga resulta ng paghahanap, i-click ang **Select**.
-6. Piliin ang kanilang household role at i-click ang **Save** upang kumpletuhin ang setup ng sambahayan.
+5. Kapag lumabas ang tao sa mga resulta ng search, i-click ang **Select**.
+6. Piliin ang kanilang household role at i-click ang **Save** para makumpleto ang pag-set up ng sambahayan.

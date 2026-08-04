@@ -1,52 +1,52 @@
 ---
-title: "Solicitar eventos y salas"
+title: "Solicitar eventos y salones"
 ---
 
-# Solicitar eventos y salas
+# Solicitar eventos y salones
 
 <div class="article-intro">
 
-Si su iglesia rastrea salas y recursos reservables, puede solicitar un evento -- con las salas y equipos que necesita -- directamente desde el portal de miembros. Los conflictos con reservas existentes se marcan a medida que elige, su solicitud va a la iglesia para aprobación, y puede rastrearla o cancelarla desde Mis solicitudes.
+Si tu iglesia lleva control de salones y recursos reservables, puedes solicitar un evento — con los salones y equipos que necesita — directamente desde el portal de miembros. Los conflictos con reservas existentes se marcan mientras eliges, tu solicitud se envía a la iglesia para su aprobación, y puedes hacer seguimiento o cancelarla desde My Requests.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Debe estar [conectado](../getting-started/logging-in.md) al portal de miembros
-- Su iglesia debe tener salas o recursos configurados en B1 Admin -- los atajos de solicitud solo aparecen cuando lo hace
+- Debes haber [iniciado sesión](../getting-started/logging-in.md) en el portal de miembros
+- Tu iglesia debe tener salones o recursos configurados en B1 Admin — los accesos directos de solicitud solo aparecen cuando eso es así
 
 </div>
 
-## Presentando una solicitud
+## Enviar una solicitud
 
-1. Abra la página **Me** en el portal de miembros y toque **Solicitar un evento** bajo Atajos.
-2. Complete los conceptos básicos del evento: **Título del evento**, una **Descripción** opcional, la **Hora de inicio** y **fin** (o **Todo el día**), y si **Se repite**.
-3. Elija las **Salas** y **Recursos** que necesita. Para los recursos puede establecer una **Cantidad**.
-4. Observe las advertencias de conflicto -- si su hora se superpone con una reserva existente para una sala o recurso, verá *"Esta hora se superpone con una reserva existente."* Puede ajustar su hora o elegir algo más.
-5. Toque **Enviar solicitud**.
+1. Abre la página **Me** en el portal de miembros y toca **Request an Event** en Shortcuts.
+2. Completa lo básico del evento: **Event title**, una **Description** opcional, las horas de **Start** y **End** (o **All day**), y si **Repeats**.
+3. Elige los **Rooms** y **Resources** que necesitas. Para los recursos puedes establecer una **Qty**.
+4. Presta atención a las advertencias de conflicto — si tu horario se superpone con una reserva existente para un salón o recurso, verás *"This time conflicts with an existing booking."* Puedes ajustar tu horario o elegir otra cosa.
+5. Toca **Submit Request**.
 
-Después de enviar, se muestra un resumen **Solicitud enviada** que muestra el estado de cada sala y recurso que pidió:
+Después de enviar, un resumen de **Request submitted** muestra el estado de cada salón y recurso que solicitaste:
 
-- **Aprobado** -- Reservado inmediatamente (la sala o recurso no tiene grupo de aprobación).
-- **Esperando aprobación** -- Alguien de la iglesia necesita dar el visto bueno primero.
+- **Approved** -- Reservado de inmediato (el salón o recurso no tiene grupo de aprobación).
+- **Pending approval** -- Alguien de la iglesia necesita dar su visto bueno primero.
 
-## Rastrear sus solicitudes
+## Hacer seguimiento de tus solicitudes
 
-Abra **Mis solicitudes** desde la página Me. Cada solicitud muestra el evento, cuándo la solicitó, y una píldora de estado:
+Abre **My Requests** desde la página Me. Cada solicitud muestra el evento, cuándo la solicitaste y una insignia de estado:
 
-- **Pendiente** -- Esperando una decisión
-- **Aprobado** -- Su reserva está confirmada
-- **Rechazado** -- La solicitud fue denegada
+- **Pending** -- En espera de una decisión
+- **Approved** -- Tu reserva está confirmada
+- **Rejected** -- La solicitud fue rechazada
 
-Mientras una solicitud aún esté pendiente, puede retirarla con **Cancelar solicitud** (se le pedirá que confirme -- la cancelación no se puede deshacer).
+Mientras una solicitud sigue pendiente, puedes retirarla con **Cancel request** (se te pedirá que confirmes — la cancelación no se puede deshacer).
 
 :::info
-El personal de la iglesia revisa las solicitudes en la página [Aprobaciones](../../b1-admin/calendars/approvals) de B1 Admin. Qué salas y recursos necesitan aprobación depende de su iglesia -- vea [Salas y recursos](../../b1-admin/calendars/rooms-resources).
+Las solicitudes son revisadas por el personal de la iglesia en la página de [Approvals](../../b1-admin/calendars/approvals) de B1 Admin. Qué salones y recursos necesitan aprobación depende de tu iglesia — consulta [Salones y recursos](../../b1-admin/calendars/rooms-resources).
 :::
 
 ## Artículos relacionados
 
-- [La página Me](../getting-started/me-page) -- Donde viven los atajos de solicitud
+- [La página Me](../getting-started/me-page) -- Dónde se encuentran los accesos directos de solicitud
 - [Aprobaciones de calendario (B1 Admin)](../../b1-admin/calendars/approvals) -- Cómo el personal revisa las solicitudes
-- [Salas y recursos (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- Cómo las iglesias configuran espacios reservables
+- [Salones y recursos (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- Cómo las iglesias configuran espacios reservables

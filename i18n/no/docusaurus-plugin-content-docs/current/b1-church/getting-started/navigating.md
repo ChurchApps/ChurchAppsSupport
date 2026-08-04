@@ -1,49 +1,49 @@
 ---
-title: "Navigering i B1App"
+title: "Navigere i B1App"
 ---
 
-# Navigering i B1App
+# Navigere i B1App
 
 <div class="article-intro">
 
-The member portal in B1.church uses a sidebar navigation layout that makes it easy to move between the different tools available to you. This page explains how the navigation works on both desktop and mobile devices.
+Medlemsportalen i B1.church bruker et sidemeny-oppsett som gjør det enkelt å bevege seg mellom de ulike verktøyene som er tilgjengelige for deg. Denne siden forklarer hvordan navigasjonen fungerer på både datamaskin og mobile enheter.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- You need to be [logged in](./logging-in.md) to access the member portal.
+- Du må være [logget inn](./logging-in.md) for å få tilgang til medlemsportalen.
 
 </div>
 
-## Sidebar Navigation
+## Sidemeny-navigasjon
 
-When you enter the member portal, you will see a vertical sidebar on the left side of the screen. This sidebar contains tabs for each section of the portal:
+Når du går inn i medlemsportalen, ser du en vertikal sidemeny på venstre side av skjermen. Denne sidemenyen inneholder faner for hver del av portalen:
 
-- **Timeline** -- Your personalized feed of updates and conversations from your groups and church. This is the default tab that loads when you open the member portal.
-- **Me** -- Your personal dashboard of upcoming serving assignments, registrations, group events, and recent notifications. See [The Me Page](./me-page).
-- **Grupper** -- View and interact with the [groups](../groups/) you belong to.
-- **Community** -- Browse the church [member directory](../community/member-directory.md).
-- **Plans** -- See upcoming [service plans](../plans/) and your assigned volunteer positions.
-- **Check-in** -- [Check in](../checkin/) yourself and your household for services and events.
-- **Lessons** *(deprecated)* -- The in-portal Lessons tab has been replaced by [FreePlay](/docs/freeplay/) for classroom playback. Browse curriculum directly at [Lessons.church](https://lessons.church) or see the [Lessons reference page](../content/lessons.md) for details.
-- **Donations** -- Make online [donations](../giving/) and view your giving history.
+- **Tidslinje** -- Din personlige strøm av oppdateringer og samtaler fra gruppene og kirken din. Dette er standardfanen som lastes når du åpner medlemsportalen.
+- **Meg** -- Ditt personlige dashbord med kommende tjenesteoppdrag, påmeldinger, gruppearrangementer og nylige varsler. Se [Meg-siden](./me-page).
+- **Grupper** -- Se og samhandle med [gruppene](../groups/) du tilhører.
+- **Fellesskap** -- Bla gjennom kirkens [medlemskatalog](../community/member-directory.md).
+- **Planer** -- Se kommende [tjenesteplaner](../plans/) og posisjonene du er tildelt som frivillig.
+- **Innsjekking** -- [Sjekk inn](../checkin/) deg selv og husstanden din til gudstjenester og arrangementer.
+- **Leksjoner** *(avviklet)* -- Leksjoner-fanen i portalen er erstattet av [FreePlay](/docs/freeplay/) for avspilling i klasserommet. Bla gjennom pensum direkte på [Lessons.church](https://lessons.church), eller se [Leksjoner-referansesiden](../content/lessons.md) for detaljer.
+- **Giving** -- Gi online [donasjoner](../giving/) og se givehistorikken din.
 
-Click any tab to switch to that section. The active tab is highlighted so you always know where you are.
+Klikk på en hvilken som helst fane for å bytte til den delen. Den aktive fanen er uthevet slik at du alltid vet hvor du er.
 
 :::info
-The tabs you see may vary depending on what your church has enabled. Church administrators control which sections are visible to members through B1 Admin. If you do not see a particular tab, your church may not have turned on that feature.
+Fanene du ser kan variere avhengig av hva kirken din har aktivert. Kirkeadministratorer styrer hvilke deler som er synlige for medlemmer gjennom B1 Admin. Hvis du ikke ser en bestemt fane, har kirken din kanskje ikke skrudd på den funksjonen.
 :::
 
-## Mobile Navigation
+## Mobilnavigasjon
 
-On smaller screens such as phones and tablets, the sidebar collapses to save space. Instead, you will see a **Menu** button at the top of the member portal. Tap it to open a list of all the available tabs. Select a tab to navigate to that section, and the menu will close automatically.
+På mindre skjermer, som telefoner og nettbrett, kollapser sidemenyen for å spare plass. I stedet ser du en **Meny**-knapp øverst i medlemsportalen. Trykk på den for å åpne en liste over alle tilgjengelige faner. Velg en fane for å navigere til den delen, og menyen lukkes automatisk.
 
-## Admin Tab
+## Administrasjonsfane
 
-If you have administrator permissions at your church, you will see an additional **Admin** tab at the bottom of the sidebar. Clicking it takes you to B1 Admin where you can manage your church's settings and data.
+Hvis du har administratortillatelser i kirken din, ser du en ekstra **Admin**-fane nederst i sidemenyen. Klikker du på den, tar det deg til B1 Admin, der du kan administrere kirkens innstillinger og data.
 
-## Top Header Navigation
+## Toppmeny-navigasjon
 
-Outside of the member portal, the main site header contains your church's custom navigation links. These are configured by your church's administrators and may include links to pages like [sermons](../content/sermons.md), the [Bible](../content/bible.md), [live streaming](../content/live-streaming.md), and other content. On mobile, these links are accessible through a hamburger menu icon in the top-right corner of the header.
+Utenfor medlemsportalen inneholder nettstedets hovedtopptekst kirkens egendefinerte navigasjonslenker. Disse konfigureres av kirkens administratorer og kan inkludere lenker til sider som [prekener](../content/sermons.md), [Bibelen](../content/bible.md), [direktesending](../content/live-streaming.md) og annet innhold. På mobil er disse lenkene tilgjengelige gjennom et hamburgermeny-ikon øverst til høyre i toppteksten.

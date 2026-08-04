@@ -6,7 +6,7 @@ title: "Provedores de Conteúdo"
 
 <div class="article-intro">
 
-Provedores de conteúdo são serviços externos que fornecem materiais de lição, vídeos e imagens para reprodução na sua TV. O FreePlay suporta múltiplos provedores, permitindo que você navegue e baixe conteúdo de diferentes fontes em um único aplicativo.
+Provedores de conteúdo são serviços externos que fornecem materiais de lição, vídeos e imagens para reprodução na sua TV. O FreePlay oferece suporte a vários provedores, permitindo que você navegue e baixe conteúdo de diferentes fontes em um único aplicativo.
 
 </div>
 
@@ -14,22 +14,23 @@ Provedores de conteúdo são serviços externos que fornecem materiais de liçã
 
 O FreePlay atualmente inclui os seguintes provedores:
 
-- **[Lessons.church](../../lessons-church/)** - Currículo gratuito e de código aberto para ministério infantil
-- **Bible Project** - Vídeos e recursos para explorar a Bíblia
+- **[Lessons.church](../../lessons-church/)** - Currículo gratuito e de código aberto para o ministério infantil
+- **Bible Project** - Vídeos e recursos que exploram a Bíblia
 - **SignPresenter** - Conteúdo de apresentação e sinalização para igrejas
-- **B1.church** - Conteúdo da sua própria configuração do B1
+- **B1.church** - Conteúdo da sua própria configuração de igreja no B1
+- **Go Curriculum** - Currículo do gocurriculum.com, organizado por coleção e lição
 
 :::info
-Alguns provedores ainda estão sendo adicionados. Se um cartão de provedor mostrar "Em Breve", ele ainda não está disponível para conexão.
+Alguns provedores ainda estão sendo adicionados. Se o cartão de um provedor mostrar "Coming Soon", ele ainda não está disponível para conexão.
 :::
 
-## Como os Provedores Funcionam
+## Como Funcionam os Provedores
 
-Cada provedor tem sua própria biblioteca de conteúdo organizada em pastas e arquivos. Depois de se conectar a um provedor, seu conteúdo aparece em um navegador de pastas onde você pode navegar por categorias, selecionar itens e baixá-los para reprodução.
+Cada provedor tem sua própria biblioteca de conteúdo organizada em pastas e arquivos. Depois de se conectar a um provedor, o conteúdo dele aparece em um navegador de pastas, onde você pode explorar categorias, selecionar itens e baixá-los para reprodução.
 
-Os provedores conectados aparecem na barra lateral no lado esquerdo da tela. Você pode alternar entre provedores selecionando-os na barra lateral, facilitando a troca entre fontes de conteúdo durante a configuração.
+Os provedores conectados aparecem na barra lateral no lado esquerdo da tela. Você pode alternar entre provedores selecionando-os na barra lateral, o que facilita alternar entre fontes de conteúdo durante a configuração.
 
 ## Nesta Seção
 
-- **[Conectando a Provedores](./connecting-providers)** - Como autenticar e se conectar
+- **[Conectando-se a Provedores](./connecting-providers)** - Como autenticar e se conectar
 - **[Navegando e Baixando Conteúdo](./browsing-content)** - Navegue por pastas, baixe arquivos e reproduza conteúdo

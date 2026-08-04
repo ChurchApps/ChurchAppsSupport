@@ -6,43 +6,43 @@ title: "Asistencia"
 
 <div class="article-intro">
 
-La sección de Asistencia en B1 Admin te proporciona una vista completa de quién está asistiendo a tu iglesia y cómo están creciendo tus grupos con el tiempo. Desde configurar campuses y horarios de servicio hasta revisar tendencias y configurar el check-in automático, todo lo que necesitas para rastrear y comprender la asistencia se gestiona desde esta página.
+La sección de Asistencia en B1 Admin le brinda una vista completa de quién está asistiendo a su iglesia y cómo están creciendo sus grupos con el tiempo. Desde la configuración de sedes y horarios de servicio hasta la revisión de tendencias y la configuración del registro de asistencia autónomo, todo lo que necesita para rastrear y comprender la asistencia se administra desde esta página.
 
 </div>
 
-## Descripción general de la página
+## Descripción General de la Página
 
-Cuando abras la página de Asistencia, verás un encabezado con estadísticas clave sobre la configuración de asistencia de tu iglesia:
+Cuando abre la página de Asistencia, verá un encabezado con estadísticas clave sobre la configuración de asistencia de su iglesia:
 
-- **Campuses** -- la cantidad de ubicaciones físicas que has configurado
-- **Horarios de servicio** -- el número total de servicios en todos los campuses
-- **Grupos programados** -- grupos que están asignados a un horario de servicio específico
-- **Grupos no programados** -- grupos que rastrean la asistencia independientemente de un horario de servicio
+- **Sedes** -- el número de ubicaciones físicas que ha configurado
+- **Horarios de Servicio** -- el número total de servicios en todas las sedes
+- **Grupos Programados** -- grupos que están asignados a un horario de servicio específico
+- **Grupos No Programados** -- grupos que registran asistencia de forma independiente a un horario de servicio
 
-Debajo del encabezado, tres pestañas organizan tus herramientas de asistencia.
+Debajo del encabezado, tres pestañas organizan sus herramientas de asistencia.
 
 ## Pestañas
 
 ### Configuración
 
-La pestaña **Configuración** es donde configuras los componentes básicos del rastreo de asistencia. Aquí defines tus campuses, añades horarios de servicio a cada campus y asignas [grupos](../groups/creating-groups.md) a esos horarios de servicio. Solo necesitas hacer esto una vez, aunque puedes actualizarlo siempre que tu horario cambie. Consulta [Configuración de Asistencia](setup.md) para un recorrido completo.
+La pestaña **Configuración** es donde configura los componentes básicos del seguimiento de asistencia. Aquí define sus sedes, agrega horarios de servicio a cada sede y asigna [grupos](../groups/creating-groups.md) a esos horarios de servicio. Solo necesita hacer esto una vez, aunque puede actualizarlo cuando cambie su horario. Consulte [Configuración de Asistencia](setup.md) para ver una guía completa.
 
 ### Asistencia
 
-La pestaña **Asistencia** muestra tendencias de asistencia con el tiempo. Usa los filtros para reducir los resultados por rango de fechas, campus o horario de servicio e identifica rápidamente patrones en tus datos. Consulta [Rastreo de Asistencia](tracking-attendance.md) para obtener detalles sobre el uso de informes y filtros.
+La pestaña **Asistencia** muestra las tendencias de asistencia a lo largo del tiempo. Use los filtros para acotar los resultados por rango de fechas, sede u horario de servicio y detecte rápidamente patrones en sus datos. Consulte [Seguimiento de Asistencia](tracking-attendance.md) para obtener detalles sobre el uso de informes y filtros.
 
 ### Grupos
 
-La pestaña **Grupos** desglosa la asistencia por grupo individual. Esto es útil cuando deseas ver cómo le está yendo a un pequeño grupo específico, clase o equipo de ministerio en lugar de observar números de toda la iglesia.
+La pestaña **Grupos** desglosa la asistencia por grupo individual. Esto es útil cuando desea ver cómo le está yendo a un grupo pequeño, clase o equipo ministerial específico, en lugar de observar las cifras de toda la iglesia.
 
-## Próximos pasos
+## Próximos Pasos
 
-- [Configuración de Asistencia](setup.md) -- configura campuses, horarios de servicio y grupos
-- [Registro de Asistencia](recording-attendance.md) -- introduce manualmente la asistencia para una sesión de grupo
-- [Rastreo de Asistencia](tracking-attendance.md) -- ver tendencias y filtrar informes
-- [Check-In](check-in.md) -- configura el check-in automático para servicios
-- [Seguridad de Check-In](checkin-safety.md) -- capacidades de sala, ratios de voluntarios, personas de recogida y paging
+- [Configuración de Asistencia](setup.md) -- configure sedes, horarios de servicio y grupos
+- [Registro de Asistencia](recording-attendance.md) -- ingrese manualmente la asistencia de una sesión de grupo
+- [Seguimiento de Asistencia](tracking-attendance.md) -- vea tendencias e informes con filtros
+- [Registro de Entrada](check-in.md) -- configure el registro de entrada autónomo para los servicios
+- [Seguridad del Registro de Entrada](checkin-safety.md) -- capacidades de las salas, proporciones de voluntarios, personas autorizadas para recoger niños y llamadas por altavoz
 
 :::tip
-Si estás configurando la asistencia por primera vez, comienza con la guía [Configuración de Asistencia](setup.md) para definir tus campuses y horarios de servicio. Una vez que esté en su lugar, puedes comenzar [registrando asistencia](recording-attendance.md) manualmente o configurar [check-in automático](check-in.md).
+Si está configurando la asistencia por primera vez, comience con la guía de [Configuración de Asistencia](setup.md) para definir sus sedes y horarios de servicio. Una vez que esté listo, puede comenzar a [registrar la asistencia](recording-attendance.md) manualmente o configurar el [registro de entrada autónomo](check-in.md).
 :::

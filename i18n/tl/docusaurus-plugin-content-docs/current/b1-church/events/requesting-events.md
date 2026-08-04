@@ -1,52 +1,52 @@
 ---
-title: "Naghihiling ng mga Event at Kuwarto"
+title: "Paghiling ng mga Event at Silid"
 ---
 
-# Naghihiling ng mga Event at Kuwarto
+# Paghiling ng mga Event at Silid
 
 <div class="article-intro">
 
-Kung ang iyong simbahan ay sumusubaybay sa mga bookable rooms at resources, maaari kang humiling ng isang event — kasama ang mga kuwarto at kagamitan na kailangan nito — direkta mula sa member portal. Ang mga alipusta sa existing bookings ay mineminarka habang pumipili ka, ang iyong hiling ay napupunta sa simbahan para sa pagsang-ayon, at maaari mong subaybayan o kanselahin ito mula sa My Requests.
+Kung sinusubaybayan ng iyong simbahan ang mga silid at resource na maaaring i-book, maaari kang humiling ng event — kasama ang mga silid at kagamitang kailangan nito — direkta mula sa member portal. Ang mga tunggalian sa mga umiiral nang booking ay binabandilaan habang pumipili ka, napupunta ang iyong kahilingan sa simbahan para sa pag-apruba, at maaari mo itong subaybayan o kanselahin mula sa My Requests.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- Dapat kang maging [naka-log in](../getting-started/logging-in.md) sa member portal
-- Ang iyong simbahan ay dapat na may mga kuwarto o resources na naka-set up sa B1 Admin — ang request shortcuts ay lumalitaw lamang kung mayroon ito
+- Dapat naka-[log in](../getting-started/logging-in.md) ka sa member portal
+- Dapat may naka-set up na mga silid o resource ang iyong simbahan sa B1 Admin — lumalabas lang ang mga shortcut ng kahilingan kapag mayroon
 
 </div>
 
 ## Pagsusumite ng Kahilingan
 
-1. Buksan ang **Me** page sa member portal at i-tap ang **Request an Event** sa ilalim ng Shortcuts.
-2. Punuin ang mga pangunahing detalye ng event: **Event title**, opsyonal na **Description**, ang **Start** at **End** times (o **All day**), at kung ito ay **Repeats**.
-3. Pumili ng **Rooms** at **Resources** na kailangan mo. Para sa resources ay maaari kang magtakda ng **Qty**.
-4. Bantayan ang mga babala tungkol sa alipusta — kung ang iyong oras ay umabot sa existing booking para sa isang kuwarto o resource, makikita mo ang *"This time conflicts with an existing booking."* Maaari mong i-adjust ang iyong oras o pumili ng iba.
+1. Buksan ang pahinang **Me** sa member portal at i-tap ang **Request an Event** sa ilalim ng Shortcuts.
+2. Punan ang mga pangunahing bagay ng event: **Event title**, opsyonal na **Description**, ang mga oras ng **Start** at **End** (o **All day**), at kung ito ay **Repeats**.
+3. Piliin ang mga **Rooms** at **Resources** na kailangan mo. Para sa mga resource maaari kang mag-set ng **Qty**.
+4. Bantayan ang mga babala ng tunggalian — kung nagsasapawan ang iyong oras sa isang umiiral nang booking para sa isang silid o resource, makikita mo ang *"This time conflicts with an existing booking."* Maaari mong ayusin ang iyong oras o pumili ng iba.
 5. I-tap ang **Submit Request**.
 
-Pagkatapos magsubmit, ang **Request submitted** summary ay nagpapakita ng status ng bawat kuwarto at resource na iyong hiniling:
+Pagkatapos magsumite, ipapakita ng buod na **Request submitted** ang status ng bawat silid at resource na hiniling mo:
 
-- **Approved** -- Na-book kaagad (walang approval group ang kuwarto o resource).
-- **Pending approval** -- May taong mula sa simbahan na kailangang mag-sign off muna.
+- **Approved** -- Agad na na-book (walang approval group ang silid o resource).
+- **Pending approval** -- Kailangan munang pumayag ng isang tao mula sa simbahan.
 
-## Subaybayan ang Iyong mga Hiling
+## Pagsubaybay sa Iyong mga Kahilingan
 
-Buksan ang **My Requests** mula sa Me page. Bawat hiling ay nagpapakita ng event, kung kailan mo ito hiniling, at isang status pill:
+Buksan ang **My Requests** mula sa pahinang Me. Ipinapakita ng bawat kahilingan ang event, kung kailan mo ito hiniling, at isang pill ng status:
 
 - **Pending** -- Naghihintay ng desisyon
-- **Approved** -- Ang iyong booking ay nakumpirma
-- **Rejected** -- Ang hiling ay tinanggihan
+- **Approved** -- Nakumpirma na ang iyong booking
+- **Rejected** -- Tinanggihan ang kahilingan
 
-Habang ang hiling ay patuloy na naghihintay, maaari mong bawiin ito gamit ang **Cancel request** (iyong itatanong na mag-confirm — ang pagkakansela ay hindi maaaring bawiin).
+Habang pending pa ang isang kahilingan, maaari mo itong bawiin gamit ang **Cancel request** (hihilingin sa iyong kumpirmahin — hindi na maibabalik ang pagkansela).
 
 :::info
-Ang mga hiling ay sinusuri ng church staff sa B1 Admin [Approvals page](../../b1-admin/calendars/approvals). Kung aling mga kuwarto at resources ang kailangan ng pagsang-ayon ay depende sa iyong simbahan — tingnan ang [Rooms & Resources](../../b1-admin/calendars/rooms-resources).
+Sinusuri ng church staff ang mga kahilingan sa pahinang [Approvals](../../b1-admin/calendars/approvals) ng B1 Admin. Nasa desisyon ng iyong simbahan kung aling mga silid at resource ang nangangailangan ng pag-apruba — tingnan ang [Rooms & Resources](../../b1-admin/calendars/rooms-resources).
 :::
 
-## Mga Kaugnay na Artikulo
+## Kaugnay na mga Artikulo
 
-- [The Me Page](../getting-started/me-page) -- Kung saan naroroon ang request shortcuts
-- [Calendar Approvals (B1 Admin)](../../b1-admin/calendars/approvals) -- Paano sinusuri ng staff ang mga hiling
-- [Rooms & Resources (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- Paano nag-configure ang mga simbahan ng mga bookable spaces
+- [The Me Page](../getting-started/me-page) -- Kung saan matatagpuan ang mga shortcut ng kahilingan
+- [Calendar Approvals (B1 Admin)](../../b1-admin/calendars/approvals) -- Kung paano sinusuri ng staff ang mga kahilingan
+- [Rooms & Resources (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- Kung paano nagko-configure ang mga simbahan ng mga silid na maaaring i-book

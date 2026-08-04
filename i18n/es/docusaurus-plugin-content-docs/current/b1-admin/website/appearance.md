@@ -6,85 +6,100 @@ title: "Apariencia"
 
 <div class="article-intro">
 
-La página de Apariencia te permite personalizar la apariencia y sensación general de tu sitio web de iglesia. Desde colores y fuentes hasta espaciado y CSS personalizado, puedes controlar cada aspecto visual de tu sitio desde un solo lugar.
+La página de Apariencia te permite personalizar el aspecto general de tu sitio web de la iglesia. Desde colores y fuentes hasta espaciado y CSS personalizado, puedes controlar cada aspecto visual de tu sitio desde un solo lugar.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de comenzar</h4>
+<h4>Antes de Comenzar</h4>
 
-- Completa la [Configuración inicial](initial-setup) para tu sitio web
-- Ten tu logo de iglesia listo en formato PNG con fondo transparente y relación de aspecto 4:1
+- Completa la [Configuración Inicial](initial-setup) de tu sitio web
+- Ten listo el logotipo de tu iglesia en formato PNG con fondo transparente y una relación de aspecto de 4:1
 - Conoce los colores de marca de tu iglesia (valores hexadecimales) si tienes una guía de estilo existente
 
 </div>
 
-## Accediendo a la configuración de apariencia
+## Acceder a la Configuración de Apariencia
 
-1. En B1 Admin, haz clic en **Sitio web** en el menú izquierdo.
-2. Haz clic en la pestaña **Apariencia** en la parte superior de la vista de páginas del sitio web.
-3. La página de estilos de sitio se carga con una vista previa en vivo de tu sitio web a la izquierda y opciones de **Configuración de estilos** a la derecha.
+1. En B1 Admin, haz clic en **Sitio Web** en el menú izquierdo.
+2. Haz clic en la pestaña **Apariencia** en la parte superior de la vista de Páginas del Sitio Web.
+3. La página de Estilos del Sitio se carga con una vista previa en vivo de tu sitio web a la izquierda y las opciones de **Configuración de Estilo** a la derecha.
 
-## Paleta de colores
+## Paleta de Colores
 
-1. Haz clic en **Paleta de colores** en el panel de Configuración de estilos.
-2. Verás **Colores base** (matices claro, acento y oscuro) y **Colores semánticos** (Primario, secundario, éxito, advertencia y error).
+1. Haz clic en **Paleta de Colores** en el panel de Configuración de Estilo.
+2. Verás **Colores Base** (tonos claro, de acento y oscuro) y **Colores Semánticos** (Primario, Secundario, Éxito, Advertencia y Error).
 3. Haz clic en cualquier muestra de color para abrir el selector de color. Arrastra el selector o ingresa un valor hexadecimal para elegir tu color.
-4. La **Vista previa de combinaciones de color** muestra cómo funcionan juntos tus colores seleccionados.
-5. Usa **Paletas sugeridas** para aplicar rápidamente un esquema de color prediseñado.
+4. La **Vista Previa de Combinaciones de Color** muestra cómo funcionan juntos tus colores seleccionados.
+5. Usa **Paletas Sugeridas** para aplicar rápidamente un esquema de color prediseñado.
 6. Haz clic en **Guardar** cuando estés satisfecho.
 
 ## Tipografía
 
-1. Haz clic en **Configuración de tipografía** en el panel de Configuración de estilos.
-2. Haz clic en **Seleccionar una fuente** para abrir el navegador de fuentes. Puedes buscar por nombre o explorar categorías como Serif, Sin serif, pantalla, escritura a mano y monoespaciado.
-3. Establece fuentes para títulos y texto del cuerpo.
-4. Haz clic en **Escala de tipografía** para ajustar la jerarquía de tamaño para títulos 1 a 4. Usa el multiplicador de escala y los campos de tamaño base para ajustar.
-5. Haz clic en **Guardar** para aplicar tus selecciones de fuente.
+1. Haz clic en **Configuración de Tipografía** en el panel de Configuración de Estilo.
+2. Haz clic en **Seleccionar una Fuente** para abrir el explorador de fuentes. Puedes buscar por nombre o explorar categorías como Serif, Sans Serif, Display, Manuscrita y Monoespaciada.
+3. Configura las fuentes tanto para encabezados como para el texto del cuerpo.
+4. Haz clic en **Escala Tipográfica** para ajustar la jerarquía de tamaños de Encabezado 1 a Encabezado 4. Usa los campos de multiplicador de escala y tamaño base para ajustar con precisión.
+5. Haz clic en **Guardar** para aplicar tus elecciones de fuente.
 
 ## Espaciado
 
-1. Haz clic en **Escala de espaciado** en el panel de Configuración de estilos.
-2. Ajusta los valores de espaciado para extra pequeño a extra grande. Los ejemplos prácticos muestran cómo cada valor afecta el diseño.
-3. Haz clic en **Guardar espaciado** para aplicar los valores en todo tu sitio.
+1. Haz clic en **Escala de Espaciado** en el panel de Configuración de Estilo.
+2. Ajusta los valores de espaciado desde Extra Pequeño hasta Extra Grande. Ejemplos prácticos muestran cómo cada valor afecta el diseño.
+3. Haz clic en **Guardar Espaciado** para aplicar los valores en todo tu sitio.
 
-## Logo y marca
+## Logotipo y Marca
 
-1. Haz clic en **Logo** en el panel de Configuración de estilos.
-2. Carga tu **Logo de fondo claro** y **Logo de fondo oscuro**. Usa imágenes con fondo transparente y relación de aspecto 4:1 para mejores resultados.
-3. Carga una **imagen de redes sociales** para vistas previas de enlaces y un **favicon** para el icono de la pestaña del navegador.
+1. Haz clic en **Logotipo** en el panel de Configuración de Estilo.
+2. Sube tu **Logotipo para Fondo Claro** y **Logotipo para Fondo Oscuro**. Usa imágenes con fondo transparente y una relación de aspecto de 4:1 para obtener mejores resultados.
+3. Sube una **Imagen para Redes Sociales** para las vistas previas de enlaces y un **Favicon** para el ícono de la pestaña del navegador.
 
 :::tip
-Para obtener los mejores resultados, usa un logo con fondo transparente en formato PNG. Esto asegura que se vea bien en fondos claros y oscuros en tu sitio web y [aplicación móvil](../settings/mobile-app.md).
+Para obtener mejores resultados, usa un logotipo con fondo transparente en formato PNG. Esto asegura que se vea muy bien tanto en fondos claros como oscuros en todo tu sitio web y en la [aplicación móvil](../settings/mobile-app.md).
 :::
 
-## Estilos de navegación
+## Estilos de Navegación
 
-Personaliza los colores de la barra de navegación de tu sitio web para modos sólidos y transparentes:
+Personaliza los colores de la barra de navegación de tu sitio web tanto para el modo sólido como para el transparente:
 
-1. Desplázate a la sección **Estilos de navegación**
-2. Haz clic en **Editar estilos de navegación**
-3. Configura colores para navegación sólida (con fondo) y navegación transparente (modo de superposición)
+1. Desplázate a la sección **Estilos de Navegación**
+2. Haz clic en **Editar Estilos de Navegación**
+3. Configura colores para la navegación sólida (con fondo) y la navegación transparente (modo superpuesto)
 4. Haz clic en **Guardar** para aplicar tus colores de navegación
 
-Para instrucciones detalladas, ver [Estilos de navegación](./navigation-styles.md).
+Para instrucciones detalladas, consulta [Estilos de Navegación](./navigation-styles.md).
 
-## CSS y JavaScript personalizados
+## Widgets del Sitio
 
-1. Haz clic en **CSS y Javascript** en el panel de Configuración de estilos.
-2. Agrega **CSS personalizado** para sobrescribir estilos predeterminados para personalización avanzada.
-3. Agrega **HTML personalizado** para códigos de seguimiento u otros scripts.
-4. Usa la sección **Ejemplos de Javascript comunes** para fragmentos como integración de Google Analytics.
+Los widgets del sitio aparecen en cada página de tu sitio, flotando sobre el contenido de la página:
+
+- **Banner de Anuncio** -- Una barra descartable en la parte superior de tu sitio para mensajes urgentes, como un próximo evento o un cambio de servicio.
+- **Lanzador** -- Un botón flotante que abre un menú de acceso rápido, por ejemplo enlaces para dar, registrarte o ver el boletín.
+
+1. Haz clic en **Widgets del Sitio** en el panel de Configuración de Estilo.
+2. Activa los widgets que quieras y configura su texto, enlaces y colores.
+3. Haz clic en **Guardar**.
+
+## Análisis
+
+Agrega tu **ID de Medición de Google Analytics 4** en el panel de Configuración de Estilo para rastrear el tráfico de visitantes en tu sitio web.
+
+## CSS y JavaScript Personalizados
+
+1. Haz clic en **CSS y Javascript** en el panel de Configuración de Estilo.
+2. Agrega **CSS Personalizado** para anular los estilos predeterminados para personalización avanzada.
+3. Agrega **HTML Personalizado** para códigos de rastreo u otros scripts.
+4. Usa la sección de **Ejemplos Comunes de Javascript** para fragmentos como la integración de Google Analytics.
 
 :::warning
-CSS personalizado es poderoso pero puede romper el diseño de tu sitio si se usa incorrectamente. La mayoría de las iglesias pueden lograr la apariencia que desean usando los controles de color, fuente y espaciado integrados. Solo usa CSS personalizado si te sientes cómodo con el desarrollo web.
+El CSS personalizado es poderoso, pero puede romper el diseño de tu sitio si se usa incorrectamente. La mayoría de las iglesias pueden lograr el aspecto que quieren usando los controles integrados de color, fuente y espaciado. Usa CSS personalizado solo si te sientes cómodo con el desarrollo web.
 :::
 
-## Temas de estilo
+## Temas de Estilo
 
-Si quieres un punto de partida rápido, las **Paletas sugeridas** en la sección de Paleta de colores ofrecen temas prediseñados que establecen colores coordinados en un clic. Siempre puedes ajustar configuraciones individuales después de aplicar un tema.
+Si quieres un punto de partida rápido, las **Paletas Sugeridas** en la sección de Paleta de Colores ofrecen temas prediseñados que establecen colores coordinados en un clic. Siempre puedes ajustar configuraciones individuales después de aplicar un tema.
 
-## Próximos pasos
+## Próximos Pasos
 
-- [Gestionar páginas](managing-pages) -- Construye y organiza tus páginas de sitio web
-- [Archivos](files) -- Carga recursos multimedia para tu sitio
+- [Administrar Páginas](managing-pages) -- Construye y organiza las páginas de tu sitio web
+- [Archivos](files) -- Sube recursos multimedia para tu sitio

@@ -96,7 +96,7 @@ Authorization: Bearer <token>
 | GET | `/` | JWT | Attendance.View | Загрузить записи посещаемости для человека. Требует `?personId=` |
 | GET | `/tree` | JWT | — | Загрузить полное дерево посещаемости (кампусы, служения, время служений, группы) |
 | GET | `/trend?campusId=&serviceId=&serviceTimeId=&groupId=` | JWT | Attendance.View Summary | Загрузить данные тренда посещаемости с опциональными фильтрами |
-| GET | `/groups?serviceId=&week=` | JWT | Attendance.View | Загрузить посещаемость группы для служения на дану неделю |
+| GET | `/groups?serviceId=&week=` | JWT | Attendance.View | Загрузить посещаемость группы для служения на указанную неделю |
 | GET | `/search?campusId=&serviceId=&serviceTimeId=&groupId=&startDate=&endDate=` | JWT | Attendance.View | Поиск записей посещаемости с фильтрами (кампус, служение, время служения, группа, диапазон дат) |
 
 ### Пример: тренд посещаемости

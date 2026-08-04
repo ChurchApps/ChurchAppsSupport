@@ -52,6 +52,8 @@ When you open a plan, you will see two tabs:
 5. Assigned members will appear under their team with their assignment status.
 6. Click notify volunteers to notify them within the B1 app or via email.
 
+Each position shows a count chip (for example, "2/3") so you can see how many spots are filled at a glance. At the top of the Assignments tab, a progress bar and a summary chip ("X of Y positions filled") show your overall staffing for the plan, switching to **Fully staffed** once every position is covered.
+
 :::tip
 Set up your teams in the ministry settings before creating plans. This way, you will have a ready pool of volunteers to assign from.
 :::

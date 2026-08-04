@@ -6,68 +6,68 @@ title: "Mga Kanta"
 
 <div class="article-intro">
 
-Ang pahina ng Songs ay nag-manage ng iyong worship song library. Panatilihin ang lahat ng iyong song details, lyrics, at arrangements sa isang lugar upang ang iyong worship team ay madaling makapaghanda para sa mga darating na serbisyo at mapanatili ang isang pare-parehong repertoire.
+Pinamamahalaan ng pahina ng Songs ang iyong library ng mga kanta ng pagsamba. Panatilihin ang lahat ng detalye ng iyong kanta, liriko, at mga arrangement sa isang lugar upang madali nang makapaghanda ang iyong koponan ng pagsamba para sa mga darating na serbisyo at mapanatili ang tuluy-tuloy na repertoire.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Ka Magsimula</h4>
+<h4>Bago Magsimula</h4>
 
-- Mag-navigate sa **Serving** section sa B1 Admin upang ma-access ang Songs page
-- Opsyonal, magkaroon ng iyong [service plans](./plans.md) na nakaset up upang maaari mong ikonekta ang mga kanta nang direkta sa [service order](./service-order.md)
+- Pumunta sa seksyong **Serving** sa B1 Admin upang ma-access ang pahina ng Songs
+- Opsyonal, magkaroon ng iyong [mga plano ng serbisyo](./plans.md) na naka-set up upang direkta mong ma-link ang mga kanta sa [ayos ng serbisyo](./service-order.md)
 
 </div>
 
-## Pag-browse sa Iyong Song Library
+## Pagba-browse sa Iyong Library ng Kanta
 
-Kapag buksan mo ang **Songs** page, ang iyong mga kanta ay ipinakita bilang mga card. Bawat card ay nagpapakita ng thumbnail image ng kanta, titulo, artist, at tumatagal. I-scroll sa pamamagit ng library o gamitin ang search upang mahanap kung ano ang kailangan mo.
+Kapag binuksan mo ang pahina ng **Songs**, ipinapakita ang iyong mga kanta bilang mga card. Ipinapakita ng bawat card ang thumbnail na larawan ng kanta, pamagat, artista, at tagal. Mag-scroll sa library o gamitin ang paghahanap upang mahanap ang kailangan mo.
 
-## Paghahanap ng Mga Kanta
+## Paghahanap ng mga Kanta
 
-1. I-click ang **Search** button sa Songs page.
-2. Mag-type ng isang kanta **titulo** o **artist** na pangalan.
-3. Ang mga resulta ay magsasala habang nag-type ka, na nagpapakita ng mga tumutugong kanta mula sa iyong library.
+1. I-click ang pindutang **Search** sa pahina ng Songs.
+2. I-type ang **pamagat** ng kanta o pangalan ng **artista**.
+3. Ma-filter ang mga resulta habang nagta-type ka, na nagpapakita ng mga kantang tumutugma mula sa iyong library.
 
-## Pagdagdag ng isang Kanta
+## Pagdaragdag ng Kanta
 
-1. I-click ang **Add Song** sa Songs page.
-2. Maghanap sa panlabas na database ng kanta ayon sa titulo o artist.
-3. Pumili ng kanta na gusto mong idagdag.
-4. Ang kanta ay maidadagdag sa iyong library na may pangunahing detalye na pila na.
+1. I-click ang **Add Song** sa pahina ng Songs.
+2. Hanapin sa external na database ng kanta ayon sa pamagat o artista.
+3. Piliin ang kantang nais mong idagdag.
+4. Maidaragdag ang kanta sa iyong library nang may naunang punuang mga pangunahing detalye.
 
 :::tip
-Pagkatapos magdagdag ng isang kanta, i-click ito upang suriin at i-update ang mga detalye nito, magdagdag ng mga arrangements, o mag-attach ng mga panlabas na links tulad ng YouTube videos o chord charts.
+Matapos magdagdag ng kanta, i-click ito upang suriin at i-update ang mga detalye nito, magdagdag ng mga arrangement, o mag-attach ng mga external na link tulad ng mga video sa YouTube o chord chart.
 :::
 
-## Pagtingin at Pag-edit ng isang Kanta
+## Pagtingin at Pag-edit ng Kanta
 
-I-click ang anumang song card upang buksan ang detalye ng pahina nito. Mula dito maaari mong:
+I-click ang anumang card ng kanta upang buksan ang pahina ng detalye nito. Mula dito, maaari mong:
 
-- **I-edit ang song details** -- I-update ang titulo, artist, tumatagal, at iba pang metadata.
-- **Pamahalaan ang mga arrangements** -- Bawat kanta ay maaaring magkaroon ng maraming arrangements (halimbawa, iba't ibang susi o mga bersyon). Magdagdag, baguhin, o alisin ang mga arrangements kung kinakailangan.
-- **Magdagdag ng lyrics** -- Magpasok o i-update ang lyrics para sa bawat arrangement.
-- **Itakda ang susi** -- Tukuyin ang musical key para sa bawat arrangement gamit ang key picker sa tabi ng lyrics. Ang pagbabago ng susi ay nag-transpose ng ipinakitang chords kaagad, parehong sa pahina ng arrangement at kapag bumubukas ang kanta mula sa isang service plan, upang ang iyong team ay palaging nakikita ang chords sa susi na talagang ginagamit nila.
-- **Magdagdag ng panlabas na links** -- Mag-attach ng links sa mga mapagkukunan tulad ng YouTube videos, chord charts, o sheet music na naka-host sa ibang lugar.
+- **I-edit ang mga detalye ng kanta** -- I-update ang pamagat, artista, tagal, at iba pang metadata.
+- **Pamahalaan ang mga arrangement** -- Maaaring magkaroon ang bawat kanta ng maraming arrangement (halimbawa, iba't ibang susi o bersyon). Magdagdag, mag-edit, o mag-alis ng mga arrangement kung kinakailangan.
+- **Magdagdag ng liriko** -- Maglagay o mag-update ng liriko para sa bawat arrangement.
+- **Itakda ang susi** -- Tukuyin ang musikal na susi para sa bawat arrangement gamit ang key picker sa tabi ng liriko. Ang pagbabago ng susi ay agad na nagta-transpose ng ipinapakitang mga chord, kapwa sa pahina ng arrangement at kapag binubuksan ang kanta mula sa isang plano ng serbisyo, kaya laging nakikita ng iyong koponan ang mga chord sa susi na talagang tinutugtog nila.
+- **Magdagdag ng mga external na link** -- Mag-attach ng mga link sa mga mapagkukunan tulad ng mga video sa YouTube, chord chart, o sheet music na naka-host sa ibang lugar.
 
-## Mga Arrangements
+## Mga Arrangement
 
-Ang isang arrangement ay kumakatawan sa isang natatanging bersyon ng isang kanta — halimbawa, isang mas mabilis na modernong bersyon versus isang mas mabagal na acoustic take, o ang parehong kanta sa ibang susi para sa ibang team. Bawat arrangement ng parehong kanta ay nagbabahagi ng song title at artist ngunit may sariling independyenteng mga setting:
+Ang isang arrangement ay kumakatawan sa isang natatanging bersyon ng isang kanta — halimbawa, isang mas mabilis na modernong bersyon kumpara sa isang mas mabagal na acoustic take, o ang parehong kanta sa ibang susi para sa ibang koponan. Ang bawat arrangement ng parehong kanta ay may parehong pamagat at artista ngunit may sariling independiyenteng mga setting:
 
-- **Susi** — ang musical key kung saan ginagawa ang arrangement
+- **Susi** — ang musikal na susi kung saan ginaganap ang arrangement
 - **BPM** — tempo sa beats bawat minuto
-- **Haba** — tumatagal sa mga segundo
-- **Meter** — time signature (halimbawa, 4/4, 3/4, 6/8)
-- **Sequence** — ang chord/section structure (halimbawa, Intro → Verse → Chorus → Bridge)
-- **Lyrics** — para sa display o projection
-- **Mga panlabas na links** — chord charts, YouTube recordings, sheet music, o iba pang mga mapagkukunan
+- **Haba** — tagal sa segundo
+- **Meter** — time signature (hal., 4/4, 3/4, 6/8)
+- **Sequence** — ang istraktura ng chord/seksyon (hal., Intro → Berso → Koro → Bridge)
+- **Liriko** — para sa pagpapakita o projection
+- **Mga external na link** — mga chord chart, recording sa YouTube, sheet music, o iba pang mapagkukunan
 
-Kapag nagdagdag ka ng isang kanta sa [Service Order](./service-order.md), maaari mong pumili kung aling arrangement ang gamitin para sa partikular na serbisyong iyon, upang ang iyong team ay laging sumasanay at tumutugtog ng tamang bersyon.
+Kapag nagdagdag ka ng kanta sa isang [Ayos ng Serbisyo](./service-order.md), maaari mong piliin kung aling arrangement ang gagamitin para sa partikular na serbisyong iyon, kaya laging nagsasanay at tumutugtog ang iyong koponan ng tamang bersyon.
 
 :::info
-Ang mga kanta mula sa iyong library ay maaaring idagdag nang direkta sa isang [Service Order](./service-order.md) sa loob ng isang plan, na nag-ugnay ng mga detalye ng kanta at ang napiling arrangement sa partikular na serbisyong iyon.
+Ang mga kanta mula sa iyong library ay maaaring idagdag nang direkta sa isang [Ayos ng Serbisyo](./service-order.md) sa loob ng isang plano, na nag-uugnay sa mga detalye ng kanta at sa piniling arrangement sa partikular na serbisyong iyon.
 :::
 
-## Susunod na Hakbang
+## Susunod na mga Hakbang
 
-- Magdagdag ng mga kanta sa iyong [Service Order](./service-order.md) kapag binubuo ang isang [service plan](./plans.md)
-- Mag-coordinate sa iyong worship team gamit ang [Tasks](./tasks.md) para sa paghahanda at pagsasanay ng kanta
+- Magdagdag ng mga kanta sa iyong [Ayos ng Serbisyo](./service-order.md) kapag bumubuo ng isang [plano ng serbisyo](./plans.md)
+- Makipag-coordinate sa iyong koponan ng pagsamba gamit ang [Tasks](./tasks.md) para sa paghahanda at pagsasanay ng kanta

@@ -1,17 +1,17 @@
 ---
-title: "Pamamahala ng mga Device"
+title: "Managing Devices"
 ---
 
-# Pamamahala ng mga Device
+# Managing Devices
 
 <div class="article-intro">
 
-Ang pahina ng mga Device ay nagbibigay-daan sa iyo na pamahalaan ang mga ChurchAppsPlayer device na nakakonekta sa iyong account. Ang mga device na ito ay ginagamit para sa pag-stream ng nilalaman at pagpapakita ng church media sa mga screen sa iyong lokasyon.
+Ang Devices page ay nagbibigay-daan sa iyong pamahalaan ang mga device na ChurchAppsPlayer at FreePlay na konektado sa iyong account. Ginagamit ang mga device na ito para sa streaming ng content at pagpapakita ng church media sa mga screen sa iyong lokasyon.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago ka Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
 - Magkaroon ng ChurchAppsPlayer device na naka-on at nakakonekta sa internet
 - Tandaan ang pairing code na ipinapakita sa screen ng device
@@ -19,44 +19,44 @@ Ang pahina ng mga Device ay nagbibigay-daan sa iyo na pamahalaan ang mga ChurchA
 
 </div>
 
-## Pagtingin sa Iyong mga Device
+## Pagtingin sa iyong mga Device
 
-Kapag binuksan mo ang pahina ng mga Device, makikita mo ang isang talahanayan na naglilista ng lahat ng nakarehistrong device na may sumusunod na impormasyon:
+Kapag binuksan mo ang Devices page, makikita mo ang isang talahanayan na naglilista ng lahat ng nakarehistrong device kasama ang sumusunod na impormasyon:
 
-- **Label** -- Ang pangalang itinalaga mo sa device.
-- **Petsa ng Pagpaparehistro** -- Kung kailan unang na-pair ang device sa iyong account.
-- **Petsa ng Huling Aktibidad** -- Ang pinakahuling oras na kumonekta ang device sa iyong account.
+- **Label** -- Ang pangalang itinakda mo sa device.
+- **Registration Date** -- Kung kailan unang na-pair ang device sa iyong account.
+- **Last Active Date** -- Ang pinakahuling oras na kumonekta ang device sa iyong account.
 
 ## Pagdaragdag ng Bagong Device
 
-1. I-click ang **Add Device** na button sa itaas ng pahina ng mga Device.
-2. Hihilingin sa iyo na maglagay ng **pairing code**.
-3. Hanapin ang pairing code na ipinapakita sa ChurchAppsPlayer device na gusto mong ikonekta.
-4. Ilagay ang code at kumpirmahin.
-5. Lalabas ang device sa iyong talahanayan ng mga device kapag matagumpay na na-pair.
+1. I-click ang button na **Add Device** sa itaas ng Devices page.
+2. Hihilingin sa iyong maglagay ng **pairing code**.
+3. Hanapin ang pairing code na ipinapakita sa ChurchAppsPlayer o FreePlay device na gusto mong ikonekta.
+4. Ilagay ang code. Kung ito ay isang FreePlay TV, ang dropdown na **Show Plans For** ay nagbibigay-daan sa iyong piliin ang uri ng plan na dapat sundin ng screen — iwanan itong nasa **None** para gamitin ang device para sa pag-browse at mga notification lamang.
+5. Kumpirmahin. Lalabas ang device sa iyong talahanayan ng mga device kapag matagumpay na na-pair.
 
 :::tip
-Tiyaking naka-on ang ChurchAppsPlayer device at nakakonekta sa internet bago subukang i-pair ito. Ang pairing code ay ipinapakita sa screen ng device.
+Siguraduhing naka-on at nakakonekta sa internet ang device bago subukang i-pair ito. Ipinapakita ang pairing code sa screen ng device.
 :::
 
 ## Pag-edit ng Label ng Device
 
 1. I-click ang **pangalan ng device** sa talahanayan ng mga device.
-2. I-update ang label sa isang bagay na naglalarawan (halimbawa, "Pangunahing Screen ng Sanctuary" o "Display sa Lobby").
+2. I-update ang label sa mas naglalarawang pangalan (halimbawa, "Sanctuary Main Screen" o "Lobby Display").
 3. I-save ang iyong mga pagbabago.
 
 :::tip
-Ang paggamit ng malinaw at naglalarawan na mga label ay nagpapadali sa pag-identify kung aling device ang alin, lalo na kapag marami kang screen na naka-set up sa iyong simbahan.
+Ang paggamit ng malinaw at naglalarawang label ay nagpapadali sa pagkilala kung aling device ang alin, lalo na kapag maraming screen kang naka-set up sa iyong simbahan.
 :::
 
-## Pamamahala ng Access sa Device
+## Pamamahala ng Access ng Device
 
-Gamitin ang pahina ng mga Device upang subaybayan kung aling mga device ang may access sa streaming at nilalaman ng iyong simbahan. Kung ang isang device ay hindi na ginagamit, maaari mo itong alisin sa iyong account upang mapanatiling malinis at ligtas ang iyong listahan ng mga device.
+Gamitin ang Devices page para masubaybayan kung aling mga device ang may access sa streaming at content ng iyong simbahan. Kung hindi na ginagamit ang isang device, puwede mo itong tanggalin sa iyong account para mapanatiling malinis at secure ang iyong listahan ng device.
 
 :::warning
-Regular na suriin ang iyong mga nakakonektang device upang tiyaking ang mga aktibo at awtorisadong device lamang ang naka-link sa iyong account. Alisin ang anumang device na hindi na ginagamit upang mapanatili ang seguridad.
+Regular na suriin ang iyong mga konektadong device para matiyak na aktibo at authorized na mga device lamang ang naka-link sa iyong account. Tanggalin ang anumang device na hindi na ginagamit para mapanatili ang seguridad.
 :::
 
 ## Mga Susunod na Hakbang
 
-- [Pamamahala ng Iyong Profile](./managing-profile.md) -- I-edit ang iyong mga personal na setting ng account
+- [Managing Your Profile](./managing-profile.md) -- I-edit ang mga setting ng iyong personal na account

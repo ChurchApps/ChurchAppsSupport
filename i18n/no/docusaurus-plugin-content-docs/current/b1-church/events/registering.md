@@ -1,90 +1,90 @@
 ---
-title: "Registrering for arrangementer"
+title: "Påmelding til arrangementer"
 ---
 
-# Registrering for arrangementer
+# Påmelding til arrangementer
 
 <div class="article-intro">
 
-When your church enables registration for an event, you can sign up through a simple step-by-step process. You can register yourself and add family members, whether you have an account or are visiting as a guest. For paid events, you choose an attendee type, add any optional extras, apply a discount code, and pay securely at the end.
+Når kirken din aktiverer påmelding for et arrangement, kan du melde deg på gjennom en enkel, trinnvis prosess. Du kan melde på deg selv og legge til familiemedlemmer, enten du har en konto eller besøker som gjest. For betalte arrangementer velger du en deltakertype, legger til eventuelle valgfrie tillegg, bruker en rabattkode og betaler sikkert til slutt.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Your church must have event registration enabled for the event
-- The registration window must be open (between the open and close dates set by the administrator)
+- Kirken din må ha påmelding aktivert for arrangementet
+- Påmeldingsvinduet må være åpent (mellom åpnings- og lukkedatoene satt av administratoren)
 
 </div>
 
-## Step 1: Enter Your Information
+## Trinn 1: Skriv inn informasjonen din
 
-1. From the church calendar, open the event you want to register for and click **Register for this Event**.
-2. The registration page loads showing the event title, description, and date.
-3. If you are **logged in**, the form shows your name and confirms you are registering under your account.
-4. If you are a **guest** (not logged in), fill in:
-   - **First Name** (required)
-   - **Last Name** (required)
-   - **Email** (required)
-   - **Phone** (optional)
-5. If the event has attendee types (for example, Adult and Child at different prices), choose **your registration type**. Each type shows its price, and types that have run out show as **Sold out**.
+1. Fra kirkekalenderen åpner du arrangementet du ønsker å melde deg på, og klikker **Meld deg på dette arrangementet**.
+2. Påmeldingssiden lastes inn og viser arrangementets tittel, beskrivelse og dato.
+3. Hvis du er **logget inn**, viser skjemaet navnet ditt og bekrefter at du melder deg på under kontoen din.
+4. Hvis du er en **gjest** (ikke logget inn), fyller du inn:
+   - **Fornavn** (obligatorisk)
+   - **Etternavn** (obligatorisk)
+   - **E-post** (obligatorisk)
+   - **Telefon** (valgfritt)
+5. Hvis arrangementet har deltakertyper (for eksempel voksen og barn til forskjellige priser), velger du **din påmeldingstype**. Hver type viser prisen sin, og typer som er utsolgt vises som **Utsolgt**.
 
 :::info
-If the event has a capacity limit, a progress bar shows how many spots remain. If the event is full and your church has enabled a waitlist, you can still complete the signup to join the waitlist — see [Joining a Waitlist](#joining-a-waitlist) below.
+Hvis arrangementet har en kapasitetsgrense, viser en fremdriftslinje hvor mange plasser som er igjen. Hvis arrangementet er fullt og kirken din har aktivert venteliste, kan du fortsatt fullføre påmeldingen for å bli med på ventelisten — se [Bli med på venteliste](#bli-med-på-venteliste) nedenfor.
 :::
 
-## Step 2: Add Family Members
+## Trinn 2: Legg til familiemedlemmer
 
-1. If you want to register additional family members, enter their **First Name** and **Last Name** for each person.
-2. If the event has attendee types, pick a type for each person you add.
-3. Click **Add Member** to add more people (up to 10 total).
-4. Click the remove button next to any member to take them off the registration.
-5. If you are only registering yourself, you can skip this step.
+1. Hvis du ønsker å melde på flere familiemedlemmer, skriver du inn **fornavn** og **etternavn** for hver person.
+2. Hvis arrangementet har deltakertyper, velger du en type for hver person du legger til.
+3. Klikk **Legg til medlem** for å legge til flere personer (opptil 10 totalt).
+4. Klikk fjern-knappen ved siden av et medlem for å ta dem av påmeldingen.
+5. Hvis du bare melder på deg selv, kan du hoppe over dette trinnet.
 
-## Step 3: Choose Options & Selections (If Offered)
+## Trinn 3: Velg alternativer og tillegg (hvis tilbudt)
 
-Some events offer optional priced add-ons — T-shirts, meals, activity upgrades.
+Noen arrangementer tilbyr valgfrie tillegg med pris — t-skjorter, måltider, aktivitetsoppgraderinger.
 
-1. If the event has selections, an **Options & Selections** step appears.
-2. Use the quantity steppers to choose how many of each you want. Free options show as **Free**, and limited options show how many are remaining.
-3. Click **Continue**.
+1. Hvis arrangementet har tillegg, vises et trinn kalt **Alternativer og tillegg**.
+2. Bruk antallsvelgerne for å velge hvor mange av hvert du ønsker. Gratis alternativer vises som **Gratis**, og begrensede alternativer viser hvor mange som er igjen.
+3. Klikk **Fortsett**.
 
-## Step 4: Answer Questions (If Asked)
+## Trinn 4: Svar på spørsmål (hvis stilt)
 
-Some events ask registrants to answer a few extra questions -- dietary restrictions, T-shirt size, emergency contact, and similar details.
+Noen arrangementer ber deltakerne svare på noen ekstra spørsmål -- kostholdsrestriksjoner, t-skjortestørrelse, nødkontakt og lignende detaljer.
 
-1. If the event has questions attached, a **Questions** step appears next.
-2. Fill in your answers and continue.
+1. Hvis arrangementet har spørsmål knyttet til seg, vises et **Spørsmål**-trinn deretter.
+2. Fyll inn svarene dine og fortsett.
 
-If the event has no questions attached, this step is skipped automatically.
+Hvis arrangementet ikke har noen spørsmål knyttet til seg, hoppes dette trinnet automatisk over.
 
-## Step 5: Pay (Paid Arrangementer)
+## Trinn 5: Betal (betalte arrangementer)
 
-If your registration has a cost, the **Payment** step shows an **Order Summary** listing each attendee, each selection, any discount, and the **Total**.
+Hvis påmeldingen din har en kostnad, viser **Betaling**-trinnet en **ordreoppsummering** som lister opp hver deltaker, hvert tillegg, eventuell rabatt og **totalbeløpet**.
 
-- **Discount code** -- If your church gave you a code, enter it and click **Apply**. The discount is reflected immediately, and you'll see a clear message if the code has expired, hasn't started yet, or requires more attendees.
-- **Logged-in members** can pay with a saved card or choose **Use a new card**.
-- **Guests** enter their card details directly.
+- **Rabattkode** -- Hvis kirken din har gitt deg en kode, skriver du den inn og klikker **Bruk**. Rabatten gjenspeiles umiddelbart, og du vil se en tydelig melding hvis koden er utløpt, ikke har startet ennå, eller krever flere deltakere.
+- **Innloggede medlemmer** kan betale med et lagret kort eller velge **Bruk et nytt kort**.
+- **Gjester** skriver inn kortdetaljene sine direkte.
 
-Click **Pay & Register** to complete the payment and registration in one step. Your card details go directly to the church's payment provider and are never stored by B1.
+Klikk **Betal og meld på** for å fullføre betalingen og påmeldingen i ett trinn. Kortdetaljene dine går direkte til kirkens betalingsleverandør og lagres aldri av B1.
 
-Free registrations skip this step and go straight to confirmation.
+Gratis påmeldinger hopper over dette trinnet og går rett til bekreftelse.
 
-## Step 6: Confirm
+## Trinn 6: Bekreft
 
-A confirmation message appears with the event details and a list of everyone you registered. You will also receive a **confirmation email** at the email address associated with your account (or the email you provided as a guest).
+En bekreftelsesmelding vises med arrangementsdetaljene og en liste over alle du meldte på. Du vil også motta en **bekreftelses-e-post** på e-postadressen tilknyttet kontoen din (eller e-posten du oppga som gjest).
 
-## Joining a Waitlist
+## Bli med på venteliste
 
-If the event is full and your church enabled the waitlist, the first step shows: *"This event is full. You can join the waitlist and we will notify you if a spot opens."* Complete the signup as normal — payment is skipped while you are waitlisted. When a spot opens, you receive an email; if a payment is due, it includes a link to complete it. You can also check your status and pay from [My Registrations](./my-registrations).
+Hvis arrangementet er fullt og kirken din har aktivert ventelisten, viser det første trinnet: *«Dette arrangementet er fullt. Du kan bli med på ventelisten, og vi varsler deg hvis en plass blir ledig.»* Fullfør påmeldingen som vanlig — betaling hoppes over mens du står på venteliste. Når en plass blir ledig, mottar du en e-post; hvis en betaling forfaller, inneholder den en lenke for å fullføre den. Du kan også sjekke status og betale fra [Mine påmeldinger](./my-registrations).
 
-## Changing or Canceling a Registration
+## Endre eller avbestille en påmelding
 
-If you are logged in, you can edit or cancel your registration yourself from the **Registrations** page in the member portal — see [My Registrations](./my-registrations). Guests should contact the church office, and staff can make the change from the B1 Admin registrations page.
+Hvis du er logget inn, kan du selv redigere eller avbestille påmeldingen din fra **Påmeldinger**-siden i medlemsportalen — se [Mine påmeldinger](./my-registrations). Gjester bør kontakte kirkekontoret, og staben kan gjøre endringen fra påmeldingssiden i B1 Admin.
 
 ## Relaterte artikler
 
-- [Arrangementer Overview](./index.md) -- Browse upcoming events with registration
-- [My Registrations](./my-registrations) -- View, edit, pay balances, and cancel your registrations
-- [Making Donations](../giving/making-donations) -- Make a donation alongside event participation
+- [Oversikt over arrangementer](./index.md) -- Bla gjennom kommende arrangementer med påmelding
+- [Mine påmeldinger](./my-registrations) -- Se, rediger, betal utestående beløp og avbestill påmeldingene dine
+- [Gi donasjoner](../giving/making-donations) -- Gi en donasjon i tillegg til arrangementsdeltakelse

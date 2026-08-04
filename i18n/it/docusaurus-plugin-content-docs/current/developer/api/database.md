@@ -6,19 +6,19 @@ title: "Database"
 
 <div class="article-intro">
 
-L'API di ChurchApps utilizza un'architettura **database-per-modulo**. Ognuno dei sei moduli di dati ha il suo proprio database MySQL con un pool di connessioni indipendente, fornendo confini di dati chiari mantenendo tutto all'interno di una singola distribuzione.
+L'API di ChurchApps utilizza un'architettura **database-per-modulo**. Ciascuno dei sei moduli dati ha il proprio database MySQL con un pool di connessioni indipendente, il che offre confini di dati chiari pur mantenendo tutto all'interno di un unico deployment.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Installa **MySQL 8.0+** -- vedi [Prerequisites](../setup/prerequisites)
-- Configura le stringhe di connessione del database nel tuo file `.env` -- vedi [Environment Variables](../setup/environment-variables)
+- Installa **MySQL 8.0+** -- vedi [Prerequisiti](../setup/prerequisites)
+- Configura le stringhe di connessione al database nel tuo file `.env` -- vedi [Variabili d'ambiente](../setup/environment-variables)
 
 </div>
 
-## Panoramica dell'Architettura
+## Panoramica dell'architettura
 
 ```
 Api
@@ -30,16 +30,16 @@ Api
 └── doing_db        ← Tasks, plans, assignments
 ```
 
-### Decisioni Chiave di Design
+### Decisioni chiave di progettazione
 
-- **Un database per modulo** -- Ogni modulo mantiene il suo proprio database MySQL con un pool di connessioni dedicato (gestito da `KyselyPool`). Questo mantiene i moduli disaccoppiati e consente l'evoluzione dello schema indipendente.
-- **Proprietà esclusiva** -- Le tabelle di un modulo sono lette e scritte solo dal codice di quel modulo. Quando un altro modulo ha bisogno dei dati, chiama il gateway del modulo proprietario piuttosto che interrogare direttamente le tabelle -- vedi [Cross-Module Communication](./module-structure#cross-module-communication).
-- **Modello di repository senza ORM** -- Tutti gli accessi ai dati passano attraverso classi di repository che costruiscono SQL digitato con il generatore di query Kysely rispetto allo schema del modulo. Questo fornisce pieno controllo sulle prestazioni e il comportamento delle query.
-- **Multi-tenant per progettazione** -- Ogni query è limitata da `churchId`. Tutte le tabelle includono una colonna `churchId` e il livello di repository applica automaticamente l'isolamento del tenant.
+- **Un database per modulo** -- Ogni modulo mantiene il proprio database MySQL con un pool di connessioni dedicato (gestito da `KyselyPool`). Questo mantiene i moduli disaccoppiati e consente un'evoluzione indipendente dello schema.
+- **Proprietà esclusiva** -- Le tabelle di un modulo vengono lette e scritte solo dal codice di quel modulo. Quando un altro modulo ha bisogno di quei dati, chiama il gateway del modulo proprietario invece di interrogare direttamente le tabelle -- vedi [Comunicazione tra moduli](./module-structure#cross-module-communication).
+- **Pattern repository senza ORM** -- Tutti gli accessi ai dati passano attraverso classi repository che costruiscono SQL tipizzato con il query builder Kysely a fronte dello schema del modulo. Questo garantisce pieno controllo sulle prestazioni e sul comportamento delle query.
+- **Multi-tenant per progettazione** -- Ogni query è ambitata per `churchId`. Tutte le tabelle includono una colonna `churchId`, e il livello repository applica automaticamente l'isolamento tra tenant.
 
-## Stringhe di Connessione
+## Stringhe di connessione
 
-Ogni connessione al database del modulo è configurata in `.env` utilizzando il formato della stringa di connessione MySQL standard:
+La connessione al database di ciascun modulo è configurata in `.env` usando il formato standard delle stringhe di connessione MySQL:
 
 ```
 mysql://user:password@host:port/database
@@ -47,7 +47,7 @@ mysql://user:password@host:port/database
 
 Ad esempio, una configurazione di sviluppo locale potrebbe assomigliare a:
 
-Ogni modulo legge la sua connessione da una variabile di ambiente denominata `<MODULE>_CONNECTION_STRING`:
+Ogni modulo legge la propria connessione da una variabile d'ambiente denominata `<MODULE>_CONNECTION_STRING`:
 
 ```env
 MEMBERSHIP_CONNECTION_STRING=mysql://root:password@localhost:3306/churchapps_membership
@@ -59,12 +59,12 @@ DOING_CONNECTION_STRING=mysql://root:password@localhost:3306/churchapps_doing
 ```
 
 :::info
-In produzione, le stringhe di connessione sono archiviate in AWS SSM Parameter Store e lette dalla classe `Environment` all'avvio.
+In produzione, le stringhe di connessione sono memorizzate in AWS SSM Parameter Store e lette dalla classe `Environment` all'avvio.
 :::
 
-## Script dello Schema
+## Script dello schema
 
-Gli schemi delle tabelle sono definiti come migrazioni Kysely nella directory `tools/migrations/`, organizzati per modulo:
+Gli schemi delle tabelle sono definiti come migrazioni Kysely nella directory `tools/migrations/`, organizzate per modulo:
 
 ```
 tools/migrations/
@@ -76,31 +76,31 @@ tools/migrations/
 └── doing/
 ```
 
-Le migrazioni definiscono la creazione della tabella, gli indici e i cambiamenti dello schema. La directory `tools/dbScripts/` contiene dati demo e seed che possono essere caricati in cima allo schema.
+Le migrazioni definiscono la creazione delle tabelle, gli indici e le modifiche allo schema. La directory `tools/dbScripts/` contiene dati demo e di seed che possono essere caricati sopra lo schema.
 
-## Inizializzazione del Database
+## Inizializzazione del database
 
-### Inizializza tutti i database
+### Inizializzare tutti i database
 
 ```bash
 npm run initdb
 ```
 
-Ciò crea tutti e sei i database ed esegue le migrazioni per ciascuno.
+Questo crea tutti e sei i database ed esegue le migrazioni per ciascuno.
 
-### Inizializza un singolo modulo
+### Inizializzare un singolo modulo
 
 ```bash
 npm run initdb -- --module=membership
 ```
 
 :::tip
-Quando lavori su un modulo specifico, puoi reinizializzare solo il database di quel modulo senza influenzare gli altri.
+Quando lavori su un modulo specifico, puoi reinizializzare solo il database di quel modulo senza influire sugli altri.
 :::
 
-## Modello di Accesso ai Dati
+## Modello di accesso ai dati
 
-I repository costruiscono query con il generatore di query Kysely rispetto allo schema del database tipizzato del modulo, ottenuto attraverso la funzione `getDb()` del modulo. Un metodo di repository tipico si presenta così:
+I repository costruiscono query con il query builder Kysely a fronte dello schema tipizzato del database del modulo, ottenuto tramite la funzione `getDb()` del modulo. Un tipico metodo repository si presenta così:
 
 ```typescript
 public async loadAll(churchId: string) {
@@ -118,16 +118,16 @@ const people = await repos.person.loadAll(churchId);
 ```
 
 :::warning
-Includi sempre `churchId` nelle tue query per mantenere l'isolamento multi-tenant. Non interrogare mai tra i tenant a meno che tu non abbia una ragione specifica e autorizzata per farlo.
+Includi sempre `churchId` nelle tue query per mantenere l'isolamento multi-tenant. Non interrogare mai tra tenant diversi a meno che tu non abbia una ragione specifica e autorizzata per farlo.
 :::
 
-## Riferimenti Incrociati tra Moduli
+## Riferimenti tra moduli
 
-Poiché i dati di ogni modulo risiedono in un database separato, non ci sono chiavi esterne o join SQL attraverso i confini del modulo. Un record che si relaziona ai dati di un altro modulo memorizza l'id di quel record -- ad esempio, una donazione nel database delle donazioni porta il `personId` di una persona nel database dei membri -- e qualsiasi composizione incrociata tra moduli avviene nel codice dell'applicazione.
+Poiché i dati di ciascun modulo risiedono in un database separato, non ci sono chiavi esterne né join SQL tra i confini dei moduli. Un record che si riferisce ai dati di un altro modulo memorizza l'id di quel record -- ad esempio, una donazione nel database giving porta il `personId` di una persona nel database membership -- e qualsiasi composizione tra moduli avviene nel codice dell'applicazione.
 
-Questo vincolo è ciò che rende reali i confini del modulo: ogni schema può evolversi indipendentemente, il database di un modulo può essere spostato sul suo server e un modulo potrebbe persino essere estratto in un servizio autonomo senza districare tabelle condivise o query incrociate tra database.
+Questo vincolo è ciò che rende reali i confini dei moduli: ogni schema può evolvere in modo indipendente, il database di un modulo può essere spostato su un proprio server, e un modulo potrebbe persino essere estratto come servizio autonomo senza dover districare tabelle condivise o query tra database.
 
-## Articoli Correlati
+## Articoli correlati
 
-- **[Module Structure](./module-structure)** -- Come sono organizzati i controller e i repository all'interno di ogni modulo
-- **[Local API Setup](./local-setup)** -- Guida completa passo dopo passo per l'installazione
+- **[Struttura dei moduli](./module-structure)** -- Come sono organizzati controller e repository all'interno di ogni modulo
+- **[Configurazione API locale](./local-setup)** -- Guida completa passo passo alla configurazione

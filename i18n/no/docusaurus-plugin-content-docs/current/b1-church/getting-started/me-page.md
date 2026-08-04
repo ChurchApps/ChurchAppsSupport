@@ -1,52 +1,52 @@
 ---
-title: "Siden Jeg"
+title: "Meg-siden"
 ---
 
-# Siden Jeg
+# Meg-siden
 
 <div class="article-intro">
 
-Siden **Jeg** er ditt personlige instrumentbrett i medlemsportalen — én kronologisk oversikt over alt som venter på deg: tjenesteoppdrag, arrangementregistreringer og dine gruppers kommende arrangementer, pluss dine nyeste varsler.
+**Meg**-siden er ditt personlige dashbord i medlemsportalen — én kronologisk oversikt over alt som venter deg: tjenesteoppdrag, arrangementspåmeldinger og kommende arrangementer i gruppene dine, samt dine nyeste varsler.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du må være [innlogget](./logging-in.md) — siden Jeg vises bare for innloggede medlemmer
+- Du må være [logget inn](./logging-in.md) — Meg-siden vises kun for innloggede medlemmer
 
 </div>
 
-## Åpning av siden Jeg
+## Åpne Meg-siden
 
-Åpne portalmenyen og trykk **Jeg**. Siden laster med personlig informasjon organisert i seksjoner.
+Åpne portalmenyen og trykk på **Meg**. Siden lastes med din personlige informasjon organisert i seksjoner.
 
 ## Kommende
 
-Seksjonen **Kommende** viser alt som venter på deg i datoer, hver gjenstand merket med en typechip:
+Seksjonen **Kommende** viser alt som ligger foran deg i datorekkefølge, hvert element merket med en type-chip:
 
-- **Tjeneste** -- Dine frivillighetsposisjoner på kommende serviceplan. Trykk på en for å åpne planen.
-- **Registrering** -- Arrangementer du har [registrert deg for](../events/registering). Trykk gjennom til dine [registreringer](../events/my-registrations).
-- **Arrangement** -- Kommende arrangementer fra grupper du tilhører. Trykk på en for å åpne gruppens arrangementer.
+- **Tjeneste** -- Dine frivillige stillinger på kommende tjenesteplaner. Trykk på en for å åpne planen.
+- **Påmelding** -- Arrangementer du har [meldt deg på](../events/registering). Trykk deg videre til dine [påmeldinger](../events/my-registrations).
+- **Arrangement** -- Kommende arrangementer fra grupper du er medlem av. Trykk på ett for å åpne gruppens arrangementer.
 
-Hvis ingenting er planlagt, vil du se "Ingenting kommende" — dine tjenester, arrangementer og registreringer vises her når de er planlagt.
+Hvis ingenting er planlagt, ser du "Ingenting i vente" — tjenestetidspunktene, arrangementene og påmeldingene dine vises her etter hvert som de blir planlagt.
 
 ## Nylige varsler
 
-Under Kommende viser seksjonen **Nylige varsler** dine siste varsler slik at du kan holde deg oppdatert uten å åpne hvert område av portalen.
+Under Kommende viser seksjonen **Nylige varsler** dine siste varsler, slik at du kan følge med uten å måtte åpne hvert enkelt område av portalen.
 
-## Genveier
+## Snarveier
 
-Når kirken din har reserverbare rom eller ressurser, viser siden Jeg også en **Genveier** seksjon:
+Når kirken din har rom eller ressurser som kan bestilles, viser Meg-siden også en **Snarveier**-seksjon:
 
-- **Forespørsel et arrangement** -- Be om å holde et arrangement med rommet og utstyret du trenger. Se [Forespørsel om arrangementer og rom](../events/requesting-events).
-- **Mine forespørsler** -- Spor statusen på forespørslene dine og avbryt ventende.
+- **Be om et arrangement** -- Be om å reservere et arrangement med rommene og utstyret du trenger. Se [Be om arrangementer og rom](../events/requesting-events).
+- **Mine forespørsler** -- Følg statusen på forespørslene dine og avbryt ventende forespørsler.
 
-Hvis kirken din ikke har satt opp rom eller ressurser, er disse genveiene skjulte.
+Hvis kirken din ikke har satt opp rom eller ressurser, er disse snarveiene skjult.
 
 ## Relaterte artikler
 
-- [Navigering i B1App](./navigating) -- Oppsettet av medlemsportalen
-- [Forespørsel om arrangementer og rom](../events/requesting-events) -- Send inn og spor rom-/ressursforespørsler
-- [Mine registreringer](../events/my-registrations) -- Administrer arrangementregistreringene dine
+- [Navigere i B1App](./navigating) -- Layouten til medlemsportalen
+- [Be om arrangementer og rom](../events/requesting-events) -- Send inn og følg forespørsler om rom/ressurser
+- [Mine påmeldinger](../events/my-registrations) -- Administrer arrangementspåmeldingene dine
 - [Frivillig påmelding](../serving/volunteer-signup) -- Hvordan tjenesteoppdrag fungerer

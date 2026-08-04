@@ -1,68 +1,68 @@
 ---
-title: "Mis registros"
+title: "Mis inscripciones"
 ---
 
-# Mis registros
+# Mis inscripciones
 
 <div class="article-intro">
 
-La página **Registros** en el portal de miembros es su base central para cada evento al que se ha registrado. Desde aquí puede verificar su estado, pagar un saldo pendiente, editar quién viene y qué pidió, o cancelar un registro completamente.
+La página **Registrations** en el portal de miembros es tu base central para cada evento al que te has inscrito. Desde aquí puedes verificar tu estado, pagar un saldo pendiente, editar quiénes vienen y qué pediste, o cancelar una inscripción por completo.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Debe estar [conectado](../getting-started/logging-in.md) -- los registros de invitados no aparecen aquí
-- Necesita al menos un registro de evento. Vea [Registro para eventos](./registering).
+- Debes haber [iniciado sesión](../getting-started/logging-in.md) — las inscripciones de invitados no aparecen aquí
+- Necesitas al menos una inscripción a un evento. Consulta [Inscribirse a eventos](./registering).
 
 </div>
 
-## Ver sus registros
+## Ver tus inscripciones
 
-Abra **Registros** en el portal de miembros. Cada registro aparece como una tarjeta que muestra:
+Abre **Registrations** en el portal de miembros. Cada inscripción aparece como una tarjeta que muestra:
 
-- El **título del evento y fecha**
-- Una píldora de **estado** -- **confirmado**, **pendiente**, **en lista de espera** o **cancelado**
-- Los **miembros** que registró
-- La línea de pago -- ya sea el total pagado, o **Saldo debido** si todavía se debe dinero
+- El **título y la fecha del evento**
+- Una insignia de **estado** — **confirmed**, **pending**, **waitlisted** o **cancelled**
+- Los **miembros** que inscribiste
+- La línea de pago — ya sea el total pagado, o **Balance due** si todavía se debe dinero
 
-Si no se ha registrado para nada aún, verá "Sin registros aún".
+Si aún no te has inscrito a nada, verás "No registrations yet."
 
 ## Completar un pago
 
-Un botón **Completar pago** aparece en cualquier registro con un saldo pendiente -- más comúnmente después de que sea promovido de una lista de espera, o cuando una edición del personal cambió su total.
+Aparece un botón **Complete payment** en cualquier inscripción con un saldo pendiente — más comúnmente después de que se te promueve desde una lista de espera, o cuando una edición del personal cambió tu total.
 
-1. Haga clic en **Completar pago**.
-2. Revise el resumen del pedido, elija una tarjeta guardada o ingrese una nueva, y pague.
-3. Una vez que se paga el saldo, el registro se vuelve **confirmado**.
+1. Haz clic en **Complete payment**.
+2. Revisa el resumen del pedido, elige una tarjeta guardada o ingresa una nueva, y paga.
+3. Una vez pagado el saldo, la inscripción pasa a estar **confirmed**.
 
 :::tip
-Cuando se abre un lugar de lista de espera para usted, el correo electrónico que su iglesia envía incluye un enlace directo a este paso de pago.
+Cuando se abre un cupo de lista de espera para ti, el correo electrónico que envía tu iglesia incluye un enlace directo a este paso de pago.
 :::
 
-## Editar un registro
+## Editar una inscripción
 
-Los planes cambian. Haga clic en **Editar** en un registro para abrir el diálogo **Editar registro**, donde puede:
+Los planes cambian. Haz clic en **Edit** en una inscripción para abrir el diálogo **Edit Registration**, donde puedes:
 
-- Actualizar sus **detalles de contacto**
-- Cambiar el **nombre** y **tipo de asistente** de cada miembro
-- Ajustar **cantidades de selección** (complementos como camisetas o comidas)
+- Actualizar tus **datos de contacto**
+- Cambiar el **nombre** y el **tipo de asistente** de cada miembro
+- Ajustar las **cantidades de selección** (complementos como camisetas o comidas)
 
-La capacidad aún se aplica cuando edita -- si un tipo de asistente u opción se ha agotado desde entonces, se le pedirá que elija otro. Guardar recalcula su total; si el cambio deja un saldo debido, aparece un botón **Completar pago** en la tarjeta.
+La capacidad sigue aplicándose cuando editas — si un tipo de asistente u opción se ha agotado desde entonces, se te pedirá que elijas otro. Guardar recalcula tu total; si el cambio deja un saldo pendiente, aparece un botón **Complete payment** en la tarjeta.
 
 :::info
-Editar nunca carga su tarjeta automáticamente. Si su nuevo total es más alto, pague la diferencia con **Completar pago**; si es más bajo, comuníquese con su iglesia sobre un reembolso -- el personal de la iglesia maneja los reembolsos a través de su proveedor de pago.
+Editar nunca cobra automáticamente a tu tarjeta. Si tu nuevo total es más alto, paga la diferencia con **Complete payment**; si es más bajo, contacta a tu iglesia sobre un reembolso — los reembolsos son gestionados por el personal de la iglesia a través de su proveedor de pagos.
 :::
 
-## Cancelar un registro
+## Cancelar una inscripción
 
-1. Haga clic en **Cancelar registro** en la tarjeta.
-2. Confirme en el diálogo -- la cancelación no se puede deshacer.
+1. Haz clic en **Cancel Registration** en la tarjeta.
+2. Confirma en el diálogo — la cancelación no se puede deshacer.
 
-Su lugar se libera inmediatamente. Si el evento tiene una lista de espera, la siguiente persona en la fila se promueve automáticamente. Cualquier pago que haya realizado no se reembolsa automáticamente -- comuníquese con la oficina de su iglesia sobre reembolsos.
+Tu cupo se libera de inmediato. Si el evento tiene lista de espera, la siguiente persona en la fila se promueve automáticamente. Cualquier pago que hayas realizado no se reembolsa automáticamente — contacta a la oficina de tu iglesia sobre los reembolsos.
 
 ## Artículos relacionados
 
-- [Registro para eventos](./registering) -- El proceso de registro, incluido pago y listas de espera
-- [Descripción general de eventos](./index.md) -- Explorar próximos eventos
+- [Inscribirse a eventos](./registering) -- El proceso de inscripción, incluidos el pago y las listas de espera
+- [Descripción general de eventos](./index.md) -- Explora los próximos eventos

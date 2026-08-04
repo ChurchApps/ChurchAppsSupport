@@ -31,7 +31,7 @@ O aplicativo oficial B1.church no Zapier permite que um Zap reaja aos eventos em
 | **Ação** | Criar Pessoa | adiciona uma nova pessoa |
 | **Ação** | Adicionar Doação | registra uma doação |
 | **Ação** | Adicionar Membro do Grupo | adiciona uma pessoa a um grupo |
-| **Pesquisa** | Encontrar Pessoa | procura uma pessoa por nome ou e-mail |
+| **Ação** | Encontrar Pessoa | procura uma pessoa por id, e-mail ou nome; falha a tarefa se ninguém corresponder |
 
 Combine livremente com qualquer um dos 7.000+ aplicativos suportados do Zapier.
 

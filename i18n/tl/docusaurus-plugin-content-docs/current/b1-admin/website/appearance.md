@@ -6,85 +6,100 @@ title: "Anyo"
 
 <div class="article-intro">
 
-Ang Appearance page ay nagbibigay-daan sa inyo na i-customize ang pangkalahatang hitsura at pakiramdam ng inyong website ng parokya. Mula sa mga kulay at fonts hanggang spacing at custom CSS, maaari ninyong kontrolin ang bawat visual aspect ng inyong site mula sa isang lugar.
+Sa pahina ng Appearance mo ikino-customize ang pangkalahatang anyo at pakiramdam ng website ng iyong simbahan. Mula sa mga kulay at font hanggang sa espasyo at custom na CSS, makokontrol mo ang bawat visual na aspeto ng iyong site mula sa isang lugar.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Magsimula</h4>
 
-- Kumpletuhin ang [Initial Setup](initial-setup) para sa inyong website
-- Magkaroon ng inyong logo ng parokya handa sa PNG format na may transparent background at 4:1 aspect ratio
-- Alamin ang mga brand colors ng inyong parokya (hex values) kung mayroon kayong umiiral na style guide
+- Tapusin ang [Initial Setup](initial-setup) para sa iyong website
+- Ihanda ang logo ng iyong simbahan sa PNG format na may transparent na background at 4:1 na aspect ratio
+- Alamin ang mga kulay ng brand ng iyong simbahan (hex values) kung mayroon kang umiiral na style guide
 
 </div>
 
-## Pag-access ng Appearance Settings
+## Pag-access sa mga Setting ng Appearance
 
 1. Sa B1 Admin, i-click ang **Website** sa kaliwang menu.
-2. I-click ang **Appearance** tab sa itaas ng Website Pages view.
-3. Ang Site Styles page ay nag-load na may live preview ng inyong website sa kaliwang bahagi at **Style Settings** options sa kanan.
+2. I-click ang tab na **Appearance** sa itaas ng view ng Website Pages.
+3. Mag-lo-load ang pahina ng Site Styles na may live na preview ng iyong website sa kaliwa at mga opsyon ng **Style Settings** sa kanan.
 
 ## Color Palette
 
-1. I-click ang **Color Palette** sa Style Settings panel.
-2. Makikita ninyo ang **Base Colors** (light, accent, at dark shades) at **Semantic Colors** (Primary, Secondary, Success, Warning, at Error).
-3. I-click ang anumang color swatch upang buksan ang color picker. I-drag ang selector o magsulat ng hex value upang pumili ng inyong kulay.
-4. Ang **Color Combinations Preview** ay nagpapakita kung paano ang inyong mga piniling kulay ay nagtutulungan.
-5. Gamitin ang **Suggested Palettes** upang mabilis na mag-apply ng isang pre-designed color scheme.
-6. I-click ang **Save** kapag nasiyahan na kayo.
+1. I-click ang **Color Palette** sa panel ng Style Settings.
+2. Makikita mo ang **Base Colors** (mga shade na maliwanag, accent, at madilim) at ang **Semantic Colors** (Primary, Secondary, Success, Warning, at Error).
+3. I-click ang anumang swatch ng kulay upang buksan ang color picker. I-drag ang selector o maglagay ng hex value upang piliin ang iyong kulay.
+4. Ipinapakita ng **Color Combinations Preview** kung paano nagtutugma ang iyong mga piniling kulay.
+5. Gamitin ang **Suggested Palettes** upang mabilis na maglapat ng isang naunang idinisenyong color scheme.
+6. I-click ang **Save** kapag nasiyahan ka na.
 
 ## Typography
 
-1. I-click ang **Typography Settings** sa Style Settings panel.
-2. I-click ang **Select a Font** upang buksan ang font browser. Maaari ninyong maghanap ayon sa pangalan o mag-browse ng mga kategorya tulad ng Serif, Sans Serif, Display, Handwriting, at Monospace.
-3. Itakda ang mga font para sa parehong headings at body text.
-4. I-click ang **Typography Scale** upang ayusin ang size hierarchy para sa Heading 1 hanggang Heading 4. Gamitin ang scale multiplier at base size fields upang fine-tune.
-5. I-click ang **Save** upang mailapat ang inyong mga pagpipilian ng font.
+1. I-click ang **Typography Settings** sa panel ng Style Settings.
+2. I-click ang **Select a Font** upang buksan ang font browser. Maaari kang maghanap ayon sa pangalan o mag-browse ng mga kategorya tulad ng Serif, Sans Serif, Display, Handwriting, at Monospace.
+3. Itakda ang mga font para sa kapwa mga heading at body text.
+4. I-click ang **Typography Scale** upang ayusin ang hierarchy ng laki para sa Heading 1 hanggang Heading 4. Gamitin ang scale multiplier at ang mga field ng base size upang i-fine-tune.
+5. I-click ang **Save** upang ilapat ang iyong mga napiling font.
 
 ## Spacing
 
-1. I-click ang **Spacing Scale** sa Style Settings panel.
-2. Ayusin ang spacing values para sa Extra Small hanggang Extra Large. Ang praktikal na mga halimbawa ay nagpapakita kung paano ang bawat halaga ay nakakaapekto sa layout.
-3. I-click ang **Save Spacing** upang ilapat ang mga halaga sa buong site.
+1. I-click ang **Spacing Scale** sa panel ng Style Settings.
+2. Ayusin ang mga value ng espasyo mula Extra Small hanggang Extra Large. Ipinapakita ng mga praktikal na halimbawa kung paano nakakaapekto ang bawat value sa layout.
+3. I-click ang **Save Spacing** upang ilapat ang mga value sa buong site mo.
 
-## Logo and Branding
+## Logo at Branding
 
-1. I-click ang **Logo** sa Style Settings panel.
-2. I-upload ang inyong **Light Background Logo** at **Dark Background Logo**. Gamitin ang mga imahe na may transparent background at 4:1 aspect ratio para sa pinakamahusay na mga resulta.
-3. I-upload ang isang **Social Media Image** para sa link previews at isang **Favicon** para sa browser tab icon.
+1. I-click ang **Logo** sa panel ng Style Settings.
+2. I-upload ang iyong **Light Background Logo** at **Dark Background Logo**. Gumamit ng mga larawang may transparent na background at 4:1 na aspect ratio para sa pinakamainam na resulta.
+3. Mag-upload ng **Social Media Image** para sa mga preview ng link at ng **Favicon** para sa icon ng tab ng browser.
 
 :::tip
-Para sa pinakamahusay na mga resulta, gamitin ang isang logo na may transparent background sa PNG format. Ito ay sinisiguro na ito ay magmumukhang maganda sa parehong light at dark backgrounds sa buong inyong website at [mobile app](../settings/mobile-app.md).
+Para sa pinakamainam na resulta, gumamit ng logo na may transparent na background sa PNG format. Tinitiyak nitong maganda itong titingnan sa parehong maliwanag at madilim na background sa buong website at [mobile app](../settings/mobile-app.md) mo.
 :::
 
-## Navigation Styles
+## Mga Estilo ng Navigation
 
-I-customize ang mga kulay ng navigation bar ng inyong website para sa parehong solid at transparent modes:
+I-customize ang mga kulay ng navigation bar ng iyong website para sa parehong solid at transparent na mga mode:
 
-1. I-scroll sa **Navigation Styles** section
+1. Mag-scroll sa seksyong **Navigation Styles**
 2. I-click ang **Edit Navigation Styles**
-3. Makakonfigure ng mga kulay para sa solid navigation (na may background) at transparent navigation (overlay mode)
-4. I-click ang **Save** upang ilapat ang inyong mga kulay ng navigation
+3. Ikonpigura ang mga kulay para sa solid navigation (na may background) at transparent navigation (overlay mode)
+4. I-click ang **Save** upang ilapat ang iyong mga kulay ng navigation
 
-Para sa mga detalyadong instruksyon, tingnan ang [Navigation Styles](./navigation-styles.md).
+Para sa detalyadong mga tagubilin, tingnan ang [Navigation Styles](./navigation-styles.md).
 
-## Custom CSS and JavaScript
+## Mga Widget ng Site
 
-1. I-click ang **CSS and Javascript** sa Style Settings panel.
-2. Magdagdag ng **Custom CSS** upang i-override ang mga default styles para sa advanced customization.
-3. Magdagdag ng **Custom HTML** para sa mga tracking codes o iba pang scripts.
-4. Gamitin ang **Common Javascript Examples** section para sa mga snippet tulad ng Google Analytics integration.
+Lumilitaw ang mga widget ng site sa bawat pahina ng iyong site, na lumulutang sa ibabaw ng nilalaman ng pahina:
+
+- **Announcement Banner** -- Isang bar na maaaring itanggal sa itaas ng iyong site para sa mga mensaheng may kinalaman sa oras, tulad ng isang paparating na kaganapan o pagbabago sa serbisyo.
+- **Launcher** -- Isang lumulutang na pindutan na nagbubukas ng menu ng mabilisang access, halimbawa mga link para magbigay, mag-check in, o tumingin sa bulletin.
+
+1. I-click ang **Site Widgets** sa panel ng Style Settings.
+2. I-on ang mga widget na nais mo at ikonpigura ang kanilang teksto, mga link, at mga kulay.
+3. I-click ang **Save**.
+
+## Analytics
+
+Idagdag ang iyong **Google Analytics 4 Measurement ID** sa panel ng Style Settings upang subaybayan ang trapiko ng bisita sa iyong website.
+
+## Custom CSS at JavaScript
+
+1. I-click ang **CSS and Javascript** sa panel ng Style Settings.
+2. Magdagdag ng **Custom CSS** upang i-override ang mga default na istilo para sa advanced na pag-customize.
+3. Magdagdag ng **Custom HTML** para sa mga tracking code o iba pang script.
+4. Gamitin ang seksyong **Common Javascript Examples** para sa mga snippet tulad ng integrasyon ng Google Analytics.
 
 :::warning
-Ang Custom CSS ay makapangyarihan ngunit maaaring masira ang layout ng inyong site kung hindi ginagamit nang tama. Ang karamihan ng mga parokya ay makakamit ang hitsura na gusto nila gamit ang built-in na mga kontrol ng kulay, font, at spacing. Lamang gamitin ang custom CSS kung kayo ay komportable sa web development.
+Makapangyarihan ang Custom CSS ngunit maaaring masira ang layout ng iyong site kung hindi tama ang paggamit. Karamihan ng mga simbahan ay makakamit ang hitsurang gusto nila gamit ang built-in na kontrol ng kulay, font, at espasyo. Gamitin lamang ang custom CSS kung komportable ka sa web development.
 :::
 
-## Style Themes
+## Mga Tema ng Estilo
 
-Kung gusto ninyo ng isang mabilis na starting point, ang **Suggested Palettes** sa Color Palette section ay nag-aalok ng pre-built themes na nagtatatag ng coordinated colors sa isang click. Maaari ninyong palaging fine-tune ang mga indibidwal na setting pagkatapos ng pag-apply ng isang theme.
+Kung gusto mo ng mabilisang panimulang punto, nag-aalok ang **Suggested Palettes** sa seksyong Color Palette ng mga naunang binuong tema na nagtatakda ng magkakatugmang kulay sa isang click. Maaari mo pa ring i-fine-tune ang mga indibidwal na setting matapos maglapat ng isang tema.
 
-## Mga Susunod na Hakbang
+## Susunod na mga Hakbang
 
-- [Managing Pages](managing-pages) -- Bumuo at i-organize ang inyong mga pahina ng website
-- [Files](files) -- I-upload ang media assets para sa inyong site
+- [Managing Pages](managing-pages) -- Bumuo at ayusin ang mga pahina ng iyong website
+- [Files](files) -- Mag-upload ng mga media asset para sa iyong site

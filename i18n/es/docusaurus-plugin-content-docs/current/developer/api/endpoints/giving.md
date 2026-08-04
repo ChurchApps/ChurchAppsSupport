@@ -12,7 +12,7 @@ El módulo de Donaciones gestiona donaciones, fondos, procesamiento de pagos, su
 
 **Ruta base:** `/giving`
 
-## Donations
+## Donaciones
 
 Ruta base: `/giving/donations`
 
@@ -64,7 +64,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Donation Batches
+## Lotes de Donaciones
 
 Ruta base: `/giving/donationbatches`
 
@@ -77,7 +77,7 @@ Extiende `GenericCrudController` con rutas CRUD: `getById`, `getAll`, `post`, `d
 | POST | `/` | JWT | Donations.Edit | Crear o actualizar lotes de donaciones |
 | DELETE | `/:id` | JWT | Donations.Edit | Eliminar un lote y todas sus donaciones |
 
-## Donate
+## Donar
 
 Ruta base: `/giving/donate`
 
@@ -146,7 +146,7 @@ Authorization: Bearer <token>
 }
 ```
 
-## Funds
+## Fondos
 
 Ruta base: `/giving/funds`
 
@@ -161,7 +161,7 @@ Extiende `GenericCrudController` con rutas CRUD: `getById`, `getAll`, `post`, `d
 | POST | `/` | JWT | Donations.Edit | Crear o actualizar fondos |
 | DELETE | `/:id` | JWT | Donations.Edit | Eliminar un fondo |
 
-## Fund Donations
+## Donaciones de Fondo
 
 Ruta base: `/giving/funddonations`
 
@@ -175,7 +175,7 @@ Rastrea cómo se asignan las donaciones individuales entre fondos. No se habilit
 | POST | `/` | JWT | Donations.Edit | Crear o actualizar donaciones de fondo (lote) |
 | DELETE | `/:id` | JWT | Donations.Edit | Eliminar una donación de fondo |
 
-## Gateways
+## Pasarelas
 
 Ruta base: `/giving/gateways`
 
@@ -203,7 +203,7 @@ GET /giving/gateways/configured/church-123
 }
 ```
 
-## Customers
+## Clientes
 
 Ruta base: `/giving/customers`
 
@@ -216,7 +216,7 @@ Extiende `GenericCrudController` con rutas CRUD: `getAll`, `delete`. Vincula per
 | GET | `/:id/subscriptions` | JWT | Donations.ViewSummary o registro propio | Obtener suscripciones de pasarela para un cliente |
 | DELETE | `/:id` | JWT | Donations.Edit | Eliminar un cliente |
 
-## Subscriptions
+## Suscripciones
 
 Ruta base: `/giving/subscriptions`
 
@@ -229,7 +229,7 @@ Gestiona suscripciones de donación recurrentes. No se habilitan rutas CRUD base
 | POST | `/` | JWT | Donations.Edit o suscripción propia | Actualizar suscripciones con la pasarela de pago |
 | DELETE | `/:id` | JWT | Donations.Edit o suscripción propia | Cancelar una suscripción y eliminar de la base de datos. Cuerpo: `{ provider, reason }` |
 
-## Subscription Funds
+## Fondos de Suscripción
 
 Ruta base: `/giving/subscriptionfunds`
 
@@ -242,7 +242,7 @@ Rastrea asignaciones de fondo para suscripciones recurrentes. No se habilitan ru
 | DELETE | `/:id` | JWT | Donations.Edit | Eliminar un fondo de suscripción |
 | DELETE | `/subscription/:id` | JWT | Donations.Edit o suscripción propia | Eliminar todos los fondos de una suscripción |
 
-## Payment Methods
+## Métodos de Pago
 
 Ruta base: `/giving/paymentmethods`
 
@@ -260,7 +260,7 @@ Gestiona métodos de pago almacenados (tarjetas, cuentas bancarias) a través de
 | POST | `/verifybank` | JWT | Donations.Edit o cliente propio | Verificar una cuenta bancaria con micro-depósitos. Cuerpo: `{ paymentMethodId, customerId, amountData }` |
 | DELETE | `/:id/:customerid` | JWT | Donations.Edit o cliente propio | Eliminar un método de pago (tarjeta o cuenta bancaria) |
 
-## Event Log
+## Registro de Eventos
 
 Ruta base: `/giving/eventLog`
 

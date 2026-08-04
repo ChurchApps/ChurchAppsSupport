@@ -1,52 +1,52 @@
 ---
-title: "Forespørsel om arrangementer og rom"
+title: "Be om arrangementer og rom"
 ---
 
-# Forespørsel om arrangementer og rom
+# Be om arrangementer og rom
 
 <div class="article-intro">
 
-Hvis kirken din sporer reserverbare rom og ressurser, kan du forespørre et arrangement — med rommet og utstyret det trenger — direkte fra medlemsportalen. Konflikter med eksisterende reserveringer blir flagget mens du velger, forespørselen din sendes til kirken for godkjenning, og du kan spore eller avbryte den fra Mine forespørsler.
+Hvis menigheten din sporer bestillbare rom og ressurser, kan du be om et arrangement -- med rommene og utstyret det trenger -- rett fra medlemsportalen. Konflikter med eksisterende bestillinger flagges mens du velger, forespørselen din går til menigheten for godkjenning, og du kan spore eller avbestille den fra Mine forespørsler.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du må være [innlogget](../getting-started/logging-in.md) på medlemsportalen
-- Kirken din må ha rom eller ressurser opprettet i B1 Admin — genveiene for forespørsel vises bare når den gjør det
+- Du må være [logget inn](../getting-started/logging-in.md) i medlemsportalen
+- Menigheten din må ha rom eller ressurser satt opp i B1 Admin -- forespørselssnarveiene vises bare når det er tilfellet
 
 </div>
 
-## Innsending av forespørsel
+## Sende inn en forespørsel
 
-1. Åpne siden **Jeg** i medlemsportalen og trykk **Forespørsel et arrangement** under Genveier.
-2. Fyll inn arrangementets grunnleggende opplysninger: **Arrangement tittel**, en valgfri **Beskrivelse**, **Start** og **Slutt** tider (eller **Hele dagen**), og hvorvidt det **Gjentar**.
-3. Velg **Romene** og **Ressurser** du trenger. For ressurser kan du sette en **Mengde**.
-4. Se etter konfliktadvarsler — hvis tiden din overlapper en eksisterende reservering for et rom eller en ressurs, vil du se *"Denne tiden er i konflikt med en eksisterende reservering."* Du kan justere tiden eller velge noe annet.
+1. Åpne **Meg**-siden i medlemsportalen og trykk **Be om et arrangement** under Snarveier.
+2. Fyll inn det grunnleggende for arrangementet: **Arrangementstittel**, en valgfri **Beskrivelse**, **Start**- og **Slutt**-tidspunkt (eller **Hele dagen**), og om det **Gjentas**.
+3. Velg **Rommene** og **Ressursene** du trenger. For ressurser kan du sette et **Antall**.
+4. Se etter konfliktvarsler -- hvis tiden din overlapper med en eksisterende bestilling for et rom eller en ressurs, ser du *"Dette tidspunktet er i konflikt med en eksisterende bestilling."* Du kan justere tiden din eller velge noe annet.
 5. Trykk **Send forespørsel**.
 
-Etter innsending vises en **Forespørsel sendt** oppsummering som viser statusen for hvert rom og hver ressurs du spurte om:
+Etter innsending viser et sammendrag med **Forespørsel sendt** statusen til hvert rom og hver ressurs du ba om:
 
-- **Godkjent** -- Reservert umiddelbar (rommet eller ressursen har ingen godkjenningsgruppe).
-- **Avventer godkjenning** -- Noen fra kirken må godkjenne først.
+- **Godkjent** -- Bestilt umiddelbart (rommet eller ressursen har ingen godkjenningsgruppe).
+- **Venter på godkjenning** -- Noen fra menigheten må godkjenne først.
 
-## Sporing av dine forespørsler
+## Spore forespørslene dine
 
-Åpne **Mine forespørsler** fra siden Jeg. Hver forespørsel viser arrangementet, når du forespurte det, og en statuspille:
+Åpne **Mine forespørsler** fra Meg-siden. Hver forespørsel viser arrangementet, når du ba om det, og en statuspille:
 
-- **Avventer** -- Avventer en beslutning
-- **Godkjent** -- Reserveringen din er bekreftet
-- **Avslått** -- Forespørselen ble avslått
+- **Venter** -- Avventer en avgjørelse
+- **Godkjent** -- Bestillingen din er bekreftet
+- **Avvist** -- Forespørselen ble avslått
 
-Mens en forespørsel fortsatt avventer, kan du trekke den tilbake med **Avbryt forespørsel** (du vil bli bedt om å bekrefte — avbrytelse kan ikke angres).
+Mens en forespørsel fortsatt venter, kan du trekke den tilbake med **Avbestill forespørsel** (du blir bedt om å bekrefte -- avbestilling kan ikke angres).
 
 :::info
-Forespørsler gjennomgås av kirkestaben på siden B1 Admin [Godkjenninger](../../b1-admin/calendars/approvals). Hvilke rom og ressurser som trenger godkjenning er opp til kirken din — se [Rom og ressurser](../../b1-admin/calendars/rooms-resources).
+Forespørsler gjennomgås av menighetens ansatte på B1 Admin-siden [Godkjenninger](../../b1-admin/calendars/approvals). Hvilke rom og ressurser som krever godkjenning, er opp til menigheten din -- se [Rom og ressurser](../../b1-admin/calendars/rooms-resources).
 :::
 
 ## Relaterte artikler
 
-- [Siden Jeg](../getting-started/me-page) -- Hvor forespørselgenveiene ligger
-- [Kalendergodkjenninger (B1 Admin)](../../b1-admin/calendars/approvals) -- Hvordan stab vurderer forespørsler
-- [Rom og ressurser (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- Hvordan kirker konfigurerer reserverbare områder
+- [Meg-siden](../getting-started/me-page) -- Hvor forespørselssnarveiene ligger
+- [Kalendergodkjenninger (B1 Admin)](../../b1-admin/calendars/approvals) -- Hvordan ansatte gjennomgår forespørsler
+- [Rom og ressurser (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- Hvordan menigheter konfigurerer bestillbare rom

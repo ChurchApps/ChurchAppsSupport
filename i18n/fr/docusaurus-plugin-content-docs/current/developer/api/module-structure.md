@@ -156,8 +156,8 @@ Toutes les requêtes sont authentifiées via les jetons JWT gérés par `CustomA
 Utilisez `au.checkAccess()` pour vérifier que l'utilisateur actuel dispose de la permission requise :
 
 ```typescript
-au.checkAccess("People", "View");    // Accès en lecture
-au.checkAccess("People", "Edit");    // Accès en écriture
+au.checkAccess(Permissions.people.view);    // Accès en lecture
+au.checkAccess(Permissions.people.edit);    // Accès en écriture
 ```
 
 Si l'utilisateur n'a pas la permission requise, une réponse d'erreur est retournée automatiquement.
@@ -175,8 +175,8 @@ La classe `Environment` gère la configuration dans les environnements :
 
 ```typescript
 // Accéder aux variables d'environnement
-const dbConnection = Environment.membershipDb;
 const jwtSecret = Environment.jwtSecret;
+const corsOrigin = Environment.corsOrigin;
 ```
 
 Cette abstraction signifie que votre code n'a pas besoin de savoir d'où provient la configuration.

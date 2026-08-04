@@ -6,85 +6,100 @@ title: "Apparence"
 
 <div class="article-intro">
 
-La page Apparence vous permet de personnaliser l'apparence générale et la convivialité de votre site Web d'église. À partir des couleurs et des polices jusqu'à l'espacement et aux CSS personnalisés, vous pouvez contrôler chaque aspect visuel de votre site à partir d'un seul endroit.
+La page Apparence vous permet de personnaliser l'aspect général de votre site web d'église. Des couleurs et polices à l'espacement et au CSS personnalisé, vous pouvez contrôler chaque aspect visuel de votre site depuis un seul endroit.
 
 </div>
 
 <div class="prereqs">
-<h4>Avant de Commencer</h4>
+<h4>Avant de commencer</h4>
 
-- Complétez la [Configuration Initiale](initial-setup) pour votre site Web
-- Ayez votre logo d'église prêt au format PNG avec un fond transparent et un rapport d'aspect 4:1
-- Connaissez les couleurs de votre marque d'église (valeurs hexadécimales) si vous avez un guide de style existant
+- Terminez la [Configuration initiale](initial-setup) de votre site web
+- Préparez le logo de votre église au format PNG avec un fond transparent et un rapport d'aspect 4:1
+- Connaissez les couleurs de marque de votre église (valeurs hexadécimales) si vous disposez déjà d'une charte graphique
 
 </div>
 
-## Accéder aux Paramètres d'Apparence
+## Accéder aux paramètres d'apparence
 
-1. Dans B1 Admin, cliquez sur **Site Web** dans le menu de gauche.
-2. Cliquez sur l'onglet **Apparence** en haut de la vue Pages du Site Web.
-3. La page Styles du Site se charge avec un aperçu en direct de votre site Web sur la gauche et les options **Paramètres de Style** sur la droite.
+1. Dans B1 Admin, cliquez sur **Site web** dans le menu de gauche.
+2. Cliquez sur l'onglet **Apparence** en haut de la vue Pages du site web.
+3. La page Styles du site se charge avec un aperçu en direct de votre site web à gauche et les options **Paramètres de style** à droite.
 
-## Palette de Couleurs
+## Palette de couleurs
 
-1. Cliquez sur **Palette de Couleurs** dans le panneau Paramètres de Style.
-2. Vous verrez **Couleurs de Base** (nuances claires, d'accent et sombres) et **Couleurs Sémantiques** (Primaire, Secondaire, Succès, Avertissement et Erreur).
-3. Cliquez sur n'importe quel carré de couleur pour ouvrir le sélecteur de couleur. Faites glisser le sélecteur ou entrez une valeur hexadécimale pour choisir votre couleur.
-4. L'**Aperçu des Combinaisons de Couleurs** montre comment vos couleurs sélectionnées fonctionnent ensemble.
-5. Utilisez les **Palettes Suggérées** pour appliquer rapidement un schéma de couleurs prédéfini.
+1. Cliquez sur **Palette de couleurs** dans le panneau Paramètres de style.
+2. Vous verrez les **Couleurs de base** (nuances claire, d'accent et foncée) et les **Couleurs sémantiques** (Primaire, Secondaire, Succès, Avertissement et Erreur).
+3. Cliquez sur n'importe quelle pastille de couleur pour ouvrir le sélecteur de couleur. Faites glisser le curseur ou saisissez une valeur hexadécimale pour choisir votre couleur.
+4. L'**Aperçu des combinaisons de couleurs** montre comment vos couleurs sélectionnées fonctionnent ensemble.
+5. Utilisez les **Palettes suggérées** pour appliquer rapidement un jeu de couleurs préconçu.
 6. Cliquez sur **Enregistrer** lorsque vous êtes satisfait.
 
 ## Typographie
 
-1. Cliquez sur **Paramètres de Typographie** dans le panneau Paramètres de Style.
-2. Cliquez sur **Sélectionner une Police** pour ouvrir le navigateur de polices. Vous pouvez rechercher par nom ou parcourir les catégories comme Serif, Sans Serif, Affichage, Écriture Manuscrite et Monospace.
-3. Définissez les polices pour les en-têtes et le texte du corps.
-4. Cliquez sur **Échelle de Typographie** pour ajuster la hiérarchie des tailles pour les En-têtes 1 à 4. Utilisez les champs du multiplicateur d'échelle et de la taille de base pour affiner.
+1. Cliquez sur **Paramètres de typographie** dans le panneau Paramètres de style.
+2. Cliquez sur **Sélectionner une police** pour ouvrir le navigateur de polices. Vous pouvez rechercher par nom ou parcourir des catégories telles que Serif, Sans Serif, Affichage, Manuscrite et Monospace.
+3. Définissez les polices pour les titres et le corps de texte.
+4. Cliquez sur **Échelle typographique** pour ajuster la hiérarchie des tailles des Titres 1 à 4. Utilisez les champs multiplicateur d'échelle et taille de base pour affiner.
 5. Cliquez sur **Enregistrer** pour appliquer vos choix de police.
 
 ## Espacement
 
-1. Cliquez sur **Échelle d'Espacement** dans le panneau Paramètres de Style.
-2. Ajustez les valeurs d'espacement pour Extra Petit jusqu'à Extra Grand. Les exemples pratiques montrent comment chaque valeur affecte la mise en page.
-3. Cliquez sur **Enregistrer l'Espacement** pour appliquer les valeurs dans votre site entier.
+1. Cliquez sur **Échelle d'espacement** dans le panneau Paramètres de style.
+2. Ajustez les valeurs d'espacement de Très petit à Très grand. Des exemples pratiques montrent comment chaque valeur affecte la mise en page.
+3. Cliquez sur **Enregistrer l'espacement** pour appliquer les valeurs à l'ensemble de votre site.
 
-## Logo et Image de Marque
+## Logo et image de marque
 
-1. Cliquez sur **Logo** dans le panneau Paramètres de Style.
-2. Téléchargez votre **Logo de Fond Clair** et **Logo de Fond Sombre**. Utilisez les images avec un fond transparent et un rapport d'aspect 4:1 pour les meilleurs résultats.
-3. Téléchargez une **Image de Médias Sociaux** pour les aperçus de lien et un **Favicon** pour l'icône de l'onglet du navigateur.
+1. Cliquez sur **Logo** dans le panneau Paramètres de style.
+2. Téléchargez votre **Logo pour fond clair** et votre **Logo pour fond sombre**. Utilisez des images avec un fond transparent et un rapport d'aspect 4:1 pour un résultat optimal.
+3. Téléchargez une **image pour les réseaux sociaux** pour les aperçus de liens et un **favicon** pour l'icône de l'onglet du navigateur.
 
 :::tip
-Pour les meilleurs résultats, utilisez un logo avec un fond transparent au format PNG. Cela garantit qu'il a l'air magnifique à la fois sur les fonds clairs et sombres dans votre site Web et dans [l'application mobile](../settings/mobile-app.md).
+Pour de meilleurs résultats, utilisez un logo avec un fond transparent au format PNG. Cela garantit un rendu optimal sur les fonds clairs comme sur les fonds sombres, sur votre site web comme dans l'[application mobile](../settings/mobile-app.md).
 :::
 
-## Styles de Navigation
+## Styles de navigation
 
-Personnalisez les couleurs de la barre de navigation de votre site Web pour les modes solides et transparents :
+Personnalisez les couleurs de la barre de navigation de votre site web pour les modes solide et transparent :
 
-1. Faites défiler jusqu'à la section **Styles de Navigation**
-2. Cliquez sur **Modifier les Styles de Navigation**
-3. Configurez les couleurs pour la navigation solide (avec arrière-plan) et la navigation transparente (mode superposition)
+1. Faites défiler jusqu'à la section **Styles de navigation**
+2. Cliquez sur **Modifier les styles de navigation**
+3. Configurez les couleurs de la navigation solide (avec fond) et de la navigation transparente (mode superposition)
 4. Cliquez sur **Enregistrer** pour appliquer vos couleurs de navigation
 
-Pour les instructions détaillées, voir [Styles de Navigation](./navigation-styles.md).
+Pour des instructions détaillées, consultez [Styles de navigation](./navigation-styles.md).
 
-## CSS et JavaScript Personnalisés
+## Widgets du site
 
-1. Cliquez sur **CSS et Javascript** dans le panneau Paramètres de Style.
-2. Ajoutez le **CSS Personnalisé** pour remplacer les styles par défaut pour la personnalisation avancée.
-3. Ajoutez l'**HTML Personnalisé** pour les codes de suivi ou autres scripts.
-4. Utilisez la section **Exemples Javascript Courants** pour les extraits comme l'intégration de Google Analytics.
+Les widgets du site apparaissent sur chaque page de votre site, flottant au-dessus du contenu de la page :
+
+- **Bannière d'annonce** -- Une barre pouvant être fermée en haut de votre site pour des messages urgents, comme un événement à venir ou un changement de service.
+- **Lanceur** -- Un bouton flottant qui ouvre un menu d'accès rapide, par exemple des liens pour donner, s'enregistrer, ou consulter le bulletin.
+
+1. Cliquez sur **Widgets du site** dans le panneau Paramètres de style.
+2. Activez les widgets que vous souhaitez et configurez leur texte, leurs liens et leurs couleurs.
+3. Cliquez sur **Enregistrer**.
+
+## Analytique
+
+Ajoutez votre **ID de mesure Google Analytics 4** dans le panneau Paramètres de style pour suivre le trafic des visiteurs sur votre site web.
+
+## CSS et JavaScript personnalisés
+
+1. Cliquez sur **CSS et JavaScript** dans le panneau Paramètres de style.
+2. Ajoutez du **CSS personnalisé** pour remplacer les styles par défaut pour une personnalisation avancée.
+3. Ajoutez du **HTML personnalisé** pour des codes de suivi ou d'autres scripts.
+4. Utilisez la section **Exemples JavaScript courants** pour des extraits comme l'intégration de Google Analytics.
 
 :::warning
-Le CSS personnalisé est puissant mais peut casser la mise en page de votre site s'il est utilisé incorrectement. La plupart des églises peuvent obtenir l'apparence qu'elles veulent en utilisant les contrôles de couleur, de police et d'espacement intégrés. Utilisez uniquement CSS personnalisé si vous êtes à l'aise avec le développement Web.
+Le CSS personnalisé est puissant mais peut casser la mise en page de votre site s'il est mal utilisé. La plupart des églises peuvent obtenir le rendu souhaité en utilisant les contrôles intégrés de couleur, de police et d'espacement. N'utilisez le CSS personnalisé que si vous êtes à l'aise avec le développement web.
 :::
 
-## Thèmes de Style
+## Thèmes de style
 
-Si vous souhaitez un point de départ rapide, les **Palettes Suggérées** dans la section Palette de Couleurs offrent des thèmes prédéfinis qui définissent les couleurs coordonnées en un clic. Vous pouvez toujours affiner les paramètres individuels après l'application d'un thème.
+Si vous souhaitez un point de départ rapide, les **Palettes suggérées** de la section Palette de couleurs proposent des thèmes préconçus qui définissent des couleurs coordonnées en un clic. Vous pouvez toujours affiner les paramètres individuels après avoir appliqué un thème.
 
-## Prochaines Étapes
+## Étapes suivantes
 
-- [Gérer les Pages](managing-pages) -- Créez et organisez les pages de votre site Web
-- [Fichiers](files) -- Téléchargez les ressources multimédias à utiliser dans l'éditeur
+- [Gestion des pages](managing-pages) -- Créez et organisez les pages de votre site web
+- [Fichiers](files) -- Téléchargez des ressources multimédias pour votre site

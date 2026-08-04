@@ -1,41 +1,41 @@
 ---
-title: "B1 Admin Pangkalahatang Paglalakbay"
+title: "B1 Admin Overview"
 ---
 
-# B1 Admin Pangkalahatang Paglalakbay
+# B1 Admin Overview
 
 <div class="article-intro">
 
-Ang B1 Admin ay ang iyong dashboard sa pamamahalan ng simbahan. Nagbibigay ito ng mga kasangkapan upang pamahalaan ang bawat aspeto ng operasyon ng iyong simbahan -- mula sa direktoryo ng mga miyembro at donasyon hanggang sa pagbuo ng website at live streaming -- lahat mula sa isang lugar.
+Ang B1 Admin ang iyong dashboard sa pamamahala ng simbahan. Nagbibigay ito ng mga tool para pamahalaan ang bawat aspeto ng operasyon ng iyong simbahan -- mula sa directory ng miyembro at mga donasyon hanggang sa pagbuo ng website at live streaming -- lahat mula sa isang lugar.
 
 </div>
 
 ## Pagsisimula
 
-1. Magbukas ng iyong browser at magpunta sa [admin.b1.church](https://admin.b1.church)
+1. Buksan ang iyong browser at pumunta sa [admin.b1.church](https://admin.b1.church)
 2. Mag-sign in gamit ang iyong username at password
-3. Mapapalibot ka sa **Dashboard**, na nagbibigay ng pangkalahatang kalagayan ng data ng iyong simbahan kasama ang **Quick Actions** para sa mga karaniwang gawain tulad ng pagdagdag ng mga tao, paglikha ng mga grupo, pagtatala ng donasyon, at marami pa
+3. Ma-la-land ka sa **Dashboard**, na nagbibigay ng overview ng data ng iyong simbahan kasama ang **Quick Actions** para sa mga karaniwang gawain tulad ng pagdaragdag ng tao, paggawa ng grupo, pagre-record ng donasyon, at marami pa
 
 :::tip
-Bago pa lamang sa B1 Admin? Magsimula sa [Introduction](./introduction) para sa isang video walkthrough, pagkatapos bisitahin ang [Settings](./settings/) upang i-configure ang impormasyon ng iyong simbahan at imbitahan ang iyong team.
+Bago sa B1 Admin? Magsimula sa [Introduction](./introduction) para sa video walkthrough, pagkatapos ay bisitahin ang [Settings](./settings/) para i-configure ang impormasyon ng iyong simbahan at anyayahan ang iyong team.
 :::
 
-## Mga Pangunahing Feature
+## Mga Pangunahing Tampok
 
-- **[People](./people/)** - Pamahalaan ang direktoryo ng iyong simbahan, magdagdag ng mga miyembro, bulk edit ng data, subaybayan ang mga tahanan
-- **[Groups](./groups/)** - Lumikha at ayusin ang mga grupo ng simbahan na may mga kahilingan sa pagsali at pamamahala ng miyembro
-- **[Attendance](./attendance/)** - Ilagay ang mga kampus, oras ng serbisyo, at subaybayan ang pagdalo
-- **[Donations](./donations/)** - Magtatala ng kontribusyon sa maraming pera, pamahalaan ang mga pondo, lumikha ng mga statement
-- **[Serving](./serving/)** - Koordinahin ang mga volunteer, lumikha ng mga plano sa serbisyo, pamahalaan ang mga gawain, at isulong ang mga tao sa pamamagitan ng mga yugto ng workflow
-- **[Forms](./forms/)** - Bumuo ng mga custom form para sa pagpaparehistro at pagkolekta ng data
-- **[Reports](./reports/)** - Tingnan ang mga ulat tungkol sa kaarawan, pagdalo, at donasyon
-- **[Website](./website/)** - Bumuo at pamahalaan ang website ng iyong simbahan na may custom na mga istilo sa navigation
+- **[People](./people/)** - Pamahalaan ang directory ng iyong simbahan, magdagdag ng miyembro, mag-bulk edit ng data, subaybayan ang mga sambahayan
+- **[Groups](./groups/)** - Gumawa at i-organisa ang mga grupo ng simbahan na may join requests at pamamahala ng miyembro
+- **[Attendance](./attendance/)** - Mag-set up ng mga campus, service times, at subaybayan ang attendance
+- **[Donations](./donations/)** - Magrecord ng mga donasyon sa maraming currency, pamahalaan ang mga fund, gumawa ng mga statement
+- **[Serving](./serving/)** - Ikoordina ang mga volunteer, gumawa ng mga service plan, pamahalaan ang mga gawain, at ilipat ang mga tao sa hakbang-hakbang na workflow
+- **[Forms](./forms/)** - Gumawa ng mga custom form para sa registration at pangongolekta ng data
+- **[Reports](./reports/)** - Tingnan ang mga report ng kaarawan, attendance, at donasyon
+- **[Website](./website/)** - Bumuo at pamahalaan ang website ng iyong simbahan gamit ang mga custom na estilo ng navigation
 - **[Sermons](./sermons/)** - Pamahalaan ang iyong sermon library at live streaming
-- **[Calendars](./calendars/)** - Lumikha ng mga curated calendar, pamahalaan ang room/resource bookings, at tingnan ang availability
-- **[Settings](./settings/)** - I-configure ang impormasyon ng simbahan, mga tungkulin, mga pahintulot, at mga custom person fields
+- **[Calendars](./calendars/)** - Gumawa ng mga piniling calendar, pamahalaan ang mga booking ng silid/resource, at tingnan ang availability
+- **[Settings](./settings/)** - I-configure ang impormasyon ng simbahan, roles, permissions, at custom na field ng tao
 
 :::info
-I-click ang icon ng tanong sa tuktok na kanang sulok ng anumang pahina para sa mabilis na access sa tulong at dokumentasyon.
+I-click ang icon na tandang-pananong sa kanang itaas na sulok ng anumang page para sa mabilisang access sa tulong at dokumentasyon.
 :::
 
-Para sa suporta, magpadala ng email sa [support@churchapps.org](mailto:support@churchapps.org).
+Para sa suporta, mag-email sa [support@churchapps.org](mailto:support@churchapps.org).

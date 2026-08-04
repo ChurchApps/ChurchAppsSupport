@@ -1,70 +1,70 @@
 ---
-title: "Paglalaan ng Mga Grupo"
+title: "Pagtatalaga ng mga Grupo"
 ---
 
-# Paglalaan ng Mga Grupo
+# Pagtatalaga ng mga Grupo
 
 <div class="article-intro">
 
-Kapag i-tap mo ang isang service time button sa household review screen, ang app ay bubuksan ang group selection screen. Dito ikaw ay pumipili kung aling grupo o klase ang dapat dayuhan ng miyembro ng pamilya para sa partikular na service time.
+Kapag na-tap mo ang isang pindutan ng oras ng serbisyo sa screen ng pagsusuri ng sambahayan, binubuksan ng app ang screen ng pagpili ng grupo. Dito mo pipiliin kung aling grupo o klase ang dapat daluhan ng isang miyembro ng pamilya para sa oras ng serbisyong iyon.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Ka Magsimula</h4>
+<h4>Bago Magsimula</h4>
 
-- [Suriin ang iyong household](./household-review) sa household review screen
-- Palawakin ang miyembro na nais mong italag at i-tap ang isang service time button
-- Siguraduhin na ang iyong church administrator ay [lumikha ng mga grupo](../../b1-admin/groups/creating-groups.md) at nag-link sa kanila sa service time sa B1 Admin
+- [Suriin ang iyong sambahayan](./household-review) sa screen ng pagsusuri ng sambahayan
+- Palawakin ang miyembrong nais mong italaga at i-tap ang isang pindutan ng oras ng serbisyo
+- Tiyaking [gumawa ng mga grupo](../../b1-admin/groups/creating-groups.md) ang iyong administrador ng simbahan at ini-link ang mga ito sa mga oras ng serbisyo sa B1 Admin
 
 </div>
 
-## Paano Inayos Ang Mga Grupo
+## Paano Naiaayos ang mga Grupo
 
-Ang mga grupo ay ipinapakita sa **categories**. Bawat kategorya ay lilitaw bilang isang card na nagpapakita ng:
+Ipinapakita ang mga grupo sa mga **kategorya**. Lumilitaw ang bawat kategorya bilang isang card na nagpapakita ng:
 
-- Ang **category name** (halimbawa, "Children", "Youth", "Adults")
-- Ang **number ng mga grupo** sa kategoryang iyon
+- Ang **pangalan ng kategorya** (halimbawa, "Children", "Youth", "Adults")
+- Ang **bilang ng mga grupo** sa kategoryang iyon
 
-I-tap ang isang category card upang palawakin ito at makita ang indibidwal na grupo sa loob. I-tap ito muli upang i-collapse ito.
+I-tap ang isang card ng kategorya upang palawakin ito at makita ang mga indibidwal na grupo sa loob. I-tap itong muli upang i-collapse ito.
 
 ## Pagpili ng Grupo
 
-1. I-tap ang isang **category** upang palawakin ito.
-2. Suriin ang listahan ng mga grupo sa loob ng kategoryang iyon. Bawat grupo ay nagpapakita ng kanyang pangalan na may selection icon sa kanan.
-3. I-tap ang **group name** na nais mong italag.
+1. I-tap ang isang **kategorya** upang palawakin ito.
+2. Suriin ang listahan ng mga grupo sa loob ng kategoryang iyon. Ipinapakita ng bawat grupo ang pangalan nito na may icon ng pagpili sa kanan.
+3. I-tap ang **pangalan ng grupong** nais mong italaga.
 
-Ang app ay nagsasave ng iyong pagpili at nagbabalik sa iyo sa [household review screen](./household-review). Ang service time button para sa miyembrong iyon ay magpapakita na ng pangalan ng grupo na iyong pinili.
+Sine-save ng app ang iyong pinili at ibinabalik ka sa [screen ng pagsusuri ng sambahayan](./household-review). Ipapakita na ngayon ng pindutan ng oras ng serbisyo para sa miyembrong iyon ang pangalan ng grupong pinili mo.
 
-## Age at Grade Guidance
+## Gabay sa Edad at Antas
 
-Kung ang iyong simbahan ay nagtakda ng age o grade range sa mga kuwarto nito, ang listahan ay gumagabay sa iyo sa tamang isa: ang mga kuwarto na kaya ng tao ay **highlighted**, at ang mga kuwarto sa labas ng kanilang age o grade ay **dimmed**. Ang dimmed na kuwarto ay maaaring pa rin piliin, ngunit kailangang kumpirmahin ng isang staff member ang pagpili. Ang age at grade ay kinakalkula mula sa grade promotion date ng iyong simbahan, kaya ang mga kuwarto ay manatiling tumpak sa buong school-year rollover.
+Kung nagtakda ang iyong simbahan ng mga saklaw ng edad o antas sa mga kuwarto nito, gagabayan ka ng listahan sa tamang isa: ang mga kuwartong kwalipikado ang tao ay **naka-highlight**, at ang mga kuwartong labas sa edad o antas nila ay **dimmed**. Maaari pa ring piliin ang isang dimmed na kuwarto, ngunit kailangang kumpirmahin ng isang staff member ang pagpili. Kinakalkula ang mga edad at antas batay sa petsa ng promosyon ng grado ng iyong simbahan, kaya nananatiling tumpak ang mga kuwarto sa buong pagpapalit ng taon ng paaralan.
 
 ## Pagpili ng "None"
 
-Kung magpasya ka na ang isang miyembro ng pamilya ay hindi dapat italag sa anumang grupo para sa service time na ito, i-tap ang **None** button sa ibaba ng screen. Ito ay nag-clear ng anumang umiiral na group assignment para sa service time na iyon at nagbabalik sa iyo sa household review screen.
+Kung magpasya kang hindi dapat italaga ang isang miyembro ng pamilya sa anumang grupo para sa oras ng serbisyong ito, i-tap ang pindutang **None** sa ibaba ng screen. Nilinis nito ang anumang umiiral na pagtatalaga ng grupo para sa oras ng serbisyong iyon at ibinabalik ka sa screen ng pagsusuri ng sambahayan.
 
 :::tip
-Gamitin ang **None** option para sa mga pang-adulto na dumadalo sa pangunahing worship service at hindi kailangang mag-check in sa isang specific na grupo o klase.
+Gamitin ang opsyong **None** para sa mga adultong dumadalo sa pangunahing serbisyong pagsamba at hindi kailangang mag-check in sa isang partikular na grupo o klase.
 :::
 
-## Pagbabago ng Group Assignment
+## Pagbabago ng Pagtatalaga ng Grupo
 
-Upang baguhin ang isang group assignment na ginawa na:
+Upang baguhin ang isang pagtatalaga ng grupo na nagawa na:
 
-1. Bumalik sa [household review screen](./household-review).
-2. Palawakin ang miyembro na ang grupo ay nais mong baguhin.
-3. I-tap ang service time button (na ngayon ay nagpapakita ng kasalukuyang naitalang group name).
+1. Bumalik sa [screen ng pagsusuri ng sambahayan](./household-review).
+2. Palawakin ang miyembrong nais mong baguhin ang grupo.
+3. I-tap ang pindutan ng oras ng serbisyo (na ngayon ay nagpapakita ng kasalukuyang itinalagang pangalan ng grupo).
 4. Pumili ng ibang grupo o i-tap ang **None**.
 
 :::info
-Ang mga grupo at kategorya ay kinokonfigura ng iyong church administrator sa B1 Admin. Kung ang isang grupo ay kulang o nasa maling kategorya, tanungin ang iyong admin na i-update ang [group setting](../../b1-admin/groups/creating-groups.md).
+Kinokonpigura ng iyong administrador ng simbahan ang mga grupo at kategorya sa B1 Admin. Kung nawawala ang isang grupo o nasa maling kategorya, hilingin sa iyong admin na i-update ang [mga setting ng grupo](../../b1-admin/groups/creating-groups.md).
 :::
 
-## Susunod na Hakbang
+## Susunod na mga Hakbang
 
-Pagkatapos ng paglalaan ng mga grupo, bumalik sa [household review screen](./household-review) upang:
+Matapos magtalaga ng mga grupo, bumalik sa [screen ng pagsusuri ng sambahayan](./household-review) upang:
 
-- Italag ang mga grupo sa karagdagang miyembro ng pamilya
-- [Magdagdag ng bisita](./adding-guests) kung may bumibisita sa iyong pamilya
-- [Kumpletuhin ang check-in](./completing-checkin) kapag lahat ng assignment ay handa na
+- Magtalaga ng mga grupo sa karagdagang mga miyembro ng pamilya
+- [Magdagdag ng bisita](./adding-guests) kung may dumadalaw kasama ang iyong pamilya
+- [Kumpletuhin ang check-in](./completing-checkin) kapag handa na ang lahat ng pagtatalaga

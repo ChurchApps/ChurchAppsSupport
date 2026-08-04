@@ -1,91 +1,91 @@
 ---
-title: "Caddy пользовательский прокси для домена"
+title: "Прокси Caddy для пользовательских доменов"
 ---
 
-# Caddy пользовательский прокси для домена
+# Прокси Caddy для пользовательских доменов
 
 <div class="article-intro">
 
-Пользовательские church домені (`mychurch.org` → church's B1 веб-сайт) terminate на single Windows EC2 box running Caddy. Box owns TLS сертификаты resolves каждый domain к його `{sub}.b1.church` сайт і reverse-proxies з rewritten Host заголовок. Його entire конфиг это two файли — static `Caddyfile` і `hosts.map` refreshed з Membership API — поэтому це survives restarts з zero runtime state. Ця сторінка covers як box это built з scratch як це operates і field-tested gotchas که bite anyone rebuilding це.
+Пользовательские церковные домены (`mychurch.org` → веб-сайт церкви на B1) завершаются на единственном Windows-сервере EC2, работающем под управлением Caddy. Этот сервер владеет TLS-сертификатами, разрешает каждый домен в его сайт `{sub}.b1.church` и выполняет реверс-проксирование с переписанным заголовком Host. Вся его конфигурация — это два файла: статический `Caddyfile` и `hosts.map`, обновляемый из Membership API, — так что он переживает перезапуски с нулевым состоянием времени выполнения. На этой странице описано, как этот сервер строится с нуля, как он работает, и подводные камни, проверенные на практике, о которые споткнётся любой, кто будет пересобирать его.
 
 </div>
 
-Для як request resolves к church/site один раз це reaches B1App see [Website Routing & Multi-Site](../architecture/websites).
+О том, как запрос разрешается в церковь/сайт после того, как он достигает B1App, см. [Маршрутизация веб-сайтов и мульти-сайт](../architecture/websites).
 
 ## Компоненты
 
-| Частина | Що це есть |
+| Часть | Что это такое |
 |---|---|
-| EC2 instance | Windows Server; Elastic IP **`3.23.251.61`** (baked в church DNS worldwide — IP это permanent instances это disposable) |
-| `C:\caddy\caddy.exe` | **Custom** Caddy build з `techknowlogick/certmagic-s3` storage модуль — stock Caddy не може read cert store |
-| `C:\caddy\Caddyfile` | Entire proxy конфиг: on-demand TLS host→upstream `map` www→apex redirects `:80`→https |
-| `C:\caddy\hosts.map` | One `{domain} {sub}.b1.church` line per routable domain imported в Caddyfile's `map` блок |
-| `sync-hostmap.ps1` + `CaddyHostmapSync` task | Scheduled task (every 5 min + на boot як SYSTEM) refreshes `hosts.map` з API і gracefully reloads Caddy только на change |
-| Windows service `caddy` (WinSW wrapper) | Runs `caddy.exe run --config C:\caddy\Caddyfile --adapter caddyfile`; auto-restart на failure. Caddy це не SCM-aware поэтому wrapper це required |
-| S3 bucket `churchapps-caddy-certs` | Shared certificate storage (`region us-east-2` prefix `certs`) — certs survive instance rebuilds |
-| IAM role `CaddyRole` | Grants instance S3 доступ; Caddy uses AWS default credential цепь (no keys в конфиг) |
+| Экземпляр EC2 | Windows Server; Elastic IP **`3.23.251.61`** (вшит в DNS церквей по всему миру — IP постоянен, экземпляры одноразовые) |
+| `C:\caddy\caddy.exe` | **Пользовательская** сборка Caddy с модулем хранилища `techknowlogick/certmagic-s3` — стандартный Caddy не может читать это хранилище сертификатов |
+| `C:\caddy\Caddyfile` | Вся конфигурация прокси: on-demand TLS, `map` хост→вышестоящий сервер, редиректы www→apex, `:80`→https |
+| `C:\caddy\hosts.map` | Строка `{domain} {sub}.b1.church` на каждый маршрутизируемый домен, импортируется в блок `map` Caddyfile |
+| `sync-hostmap.ps1` + задача `CaddyHostmapSync` | Запланированная задача (каждые 5 минут + при загрузке, от имени SYSTEM) обновляет `hosts.map` из API и плавно перезагружает Caddy только при изменении |
+| Служба Windows `caddy` (обёртка WinSW) | Запускает `caddy.exe run --config C:\caddy\Caddyfile --adapter caddyfile`; автоперезапуск при сбое. Caddy не осведомлён об SCM, поэтому нужна обёртка |
+| Бакет S3 `churchapps-caddy-certs` | Общее хранилище сертификатов (`region us-east-2`, префикс `certs`) — сертификаты переживают пересборку экземпляра |
+| Роль IAM `CaddyRole` | Даёт экземпляру доступ к S3; Caddy использует стандартную цепочку учётных данных AWS (без ключей в конфиге) |
 
-## Two API endpoints box depends на
+## Две конечные точки API, от которых зависит сервер
 
-Both це anonymous на Membership API:
+Обе анонимны, в Membership API:
 
-| Endpoint | Role |
+| Конечная точка | Роль |
 |---|---|
-| `GET /membership/domains/authorize?domain={host}` | Caddy's **on-demand TLS `ask` gate**: `200 {"authorized":true}` коли host (або для `www.` host його apex) це row в `domains`; `404` иначе. Це abuse контроль — Caddy не буде issue сертификат для host це endpoint rejects |
-| `GET /membership/domains/hostmap` | `text/plain` sorted deduplicated `{domain} {sub}.b1.church` lines (site-aware: domain assigned к secondary сайт dials це site's subdomain). Source із `map` |
+| `GET /membership/domains/authorize?domain={host}` | **Шлюз `ask` on-demand TLS** Caddy: `200 {"authorized":true}`, когда хост (или, для хоста `www.`, его апекс) является строкой в `domains`; иначе `404`. Это контроль злоупотреблений — Caddy не выдаст сертификат для хоста, который отклоняет эта конечная точка |
+| `GET /membership/domains/hostmap` | `text/plain`, отсортированные, дедуплицированные строки `{domain} {sub}.b1.church` (с учётом сайта: домен, назначенный дополнительному сайту, набирает субдомен этого сайта). Источник для `map` |
 
-## Request поток
+## Поток запроса
 
-1. Browser resolves `mychurch.org` → `3.23.251.61` (apex `A` record або `CNAME proxy.b1.church`).
-2. Caddy terminates TLS. Certificate на hand в S3 → serve; unknown SNI → `authorize` это asked; 200 → issue на demand via Let's Encrypt; 404 → **handshake это refused** (no сертификат no response — unknown host gets TLS-refused не HTTP error).
-3. `map` resolves Host к `{sub}.b1.church`; `www.{apex}` gets 302 к apex; authorized-but-unmapped host (brand-new domain внутри ≤5-minute sync window) gets clean 404.
-4. `reverse_proxy` dials `{sub}.b1.church:443` з SNI і Host rewritten к upstream поэтому Vercel's edge serves B1App сайт.
-5. Port 80 passes ACME HTTP-01 challenges і 308-redirects всё else к https.
+1. Браузер разрешает `mychurch.org` → `3.23.251.61` (запись apex `A`, либо `CNAME proxy.b1.church`).
+2. Caddy завершает TLS. Сертификат под рукой в S3 → обслуживание; неизвестный SNI → запрашивается `authorize`; 200 → выдача по требованию через Let's Encrypt; 404 → **рукопожатие отклоняется** (нет сертификата, нет ответа — неизвестный хост получает отказ на уровне TLS, а не HTTP-ошибку).
+3. `map` разрешает Host в `{sub}.b1.church`; `www.{apex}` получает 302 на апекс; авторизованный, но не сопоставленный хост (совсем новый домен внутри окна синхронизации ≤5 минут) получает чистую 404.
+4. `reverse_proxy` набирает `{sub}.b1.church:443` с переписанными SNI и Host на вышестоящий сервер, так что граница Vercel обслуживает сайт B1App.
+5. Порт 80 пропускает вызовы ACME HTTP-01 и делает редирект 308 на https для всего остального.
 
-New-domain propagation: domain saved в B1Admin becomes маршрутизирован within ~5 minutes (sync task); його certificate это minted на first HTTPS hit.
+Распространение нового домена: домен, сохранённый в B1Admin, становится маршрутизируемым в течение ~5 минут (задача синхронизации); его сертификат выпускается при первом обращении по HTTPS.
 
-## Building box з scratch
+## Сборка сервера с нуля
 
-Condensed з field-tested procedure (full step-by-step з copy-paste commands lives в ops workspace не цей repo). Prerequisites сначала — build это dead без них:
+Сокращённо из проверенной на практике процедуры (полная пошаговая инструкция с командами для копирования-вставки живёт в рабочем пространстве эксплуатации, не в этом репозитории). Сначала предпосылки — без них сборка мертва:
 
-1. **IAM**: attach `CaddyRole` (S3 доступ к cert bucket) к instance. Verify via IMDSv2 з box — note bare IMDS GET returning 401 just means IMDSv2 це enforced не "no role".
-2. **API здоровье**: `authorize` must return 404 для bogus domain і `hostmap` must return 200 перед anything else.
+1. **IAM**: прикрепите `CaddyRole` (доступ S3 к бакету сертификатов) к экземпляру. Проверьте через IMDSv2 с сервера — учтите, что голый GET к IMDS, возвращающий 401, просто означает, что принудительно включён IMDSv2, а не «нет роли».
+2. **Здоровье API**: `authorize` должен вернуть 404 для фиктивного домена, а `hostmap` должен вернуть 200, прежде чем делать что-либо ещё.
 
 Затем:
 
-3. **Binary**: download custom build з Caddy's build сервис — `https://caddyserver.com/api/download?os=windows&arch=amd64&p=github.com/techknowlogick/certmagic-s3` (~57 MB vs ~45 MB stock; v2.11.4 на time із writing). Module choice matters: `techknowlogick/certmagic-s3` uses `bucket`/`region`/`prefix` ключи matching existing cert layout; `ss098` fork uses `host`/`endpoint` і буде **not** find existing сертификаты.
-4. **Files**: `Caddyfile` + `sync-hostmap.ps1` в `C:\caddy\`; seed map один раз з `sync-hostmap.ps1 -NoReload`.
-5. **Gates перед first start**: `caddy list-modules` must show s3 storage модуль; `caddy adapt` must emit `"module":"s3","bucket":"churchapps-caddy-certs","region":"us-east-2","prefix":"certs"` в його storage блок; `caddy validate` must pass.
-6. **Service**: install via WinSW (service id `caddy` auto-restart на failure rolling logs). Runs як LocalSystem які reaches IMDS для role credentials.
-7. **Sync task**: register `CaddyHostmapSync` (SYSTEM every 5 min + на startup 4-minute execution limit).
-8. **Verify pre-cutover** by force-resolving домени к `127.0.0.1` з `curl --resolve` (box has no real traffic до EIP moves): existing domain must serve з valid carried-over cert; `www.` must 302; unknown host must це TLS-refused; і `Restart-Service caddy` must come back serving **з no manual re-priming** — це restart test це entire point із static дизайн.
-9. **Go-live**: reassociate Elastic IP `3.23.251.61` к new instance. Church DNS никогда не changes.
+3. **Бинарный файл**: скачайте пользовательскую сборку через сервис сборки Caddy — `https://caddyserver.com/api/download?os=windows&arch=amd64&p=github.com/techknowlogick/certmagic-s3` (~57 МБ против ~45 МБ у стандартной; v2.11.4 на момент написания). Выбор модуля важен: `techknowlogick/certmagic-s3` использует ключи `bucket`/`region`/`prefix`, соответствующие существующей раскладке сертификатов; форк `ss098` использует `host`/`endpoint` и **не** найдёт существующие сертификаты.
+4. **Файлы**: `Caddyfile` + `sync-hostmap.ps1` в `C:\caddy\`; заполните карту один раз через `sync-hostmap.ps1 -NoReload`.
+5. **Проверки перед первым запуском**: `caddy list-modules` должен показывать модуль хранилища s3; `caddy adapt` должен выдавать `"module":"s3","bucket":"churchapps-caddy-certs","region":"us-east-2","prefix":"certs"` в своём блоке хранилища; `caddy validate` должен проходить успешно.
+6. **Служба**: установите через WinSW (id службы `caddy`, автоперезапуск при сбое, вращающиеся логи). Запускается от LocalSystem, что даёт доступ к IMDS для учётных данных роли.
+7. **Задача синхронизации**: зарегистрируйте `CaddyHostmapSync` (SYSTEM, каждые 5 минут + при запуске, лимит выполнения 4 минуты).
+8. **Проверка перед переключением**: принудительно разрешите домены на `127.0.0.1` через `curl --resolve` (у сервера нет реального трафика, пока EIP не переехал): существующий домен должен обслуживаться с валидным перенесённым сертификатом; `www.` должен давать 302; неизвестный хост должен получать отказ на уровне TLS; и `Restart-Service caddy` должна вернуться к обслуживанию **без ручной повторной инициализации** — этот тест перезапуска и есть весь смысл статического дизайна.
+9. **Запуск в продакшн**: переассоциируйте Elastic IP `3.23.251.61` с новым экземпляром. DNS церквей никогда не меняется.
 
-## Field-tested gotchas (learned hard way — не regress)
+## Подводные камни, проверенные на практике (усвоено тяжёлым путём — не допускать регресса)
 
-| Gotcha | Symptom | Fix |
+| Подводный камень | Симптом | Исправление |
 |---|---|---|
-| `tls_server_name {vars.upstream}` в reverse_proxy transport | Каждый proxied domain 502s: map placeholders resolve **empty на TLS-dial time** ("либо ServerName або InsecureSkipVerify must це specified") | Use transport-native placeholder: `tls_server_name {http.reverse_proxy.upstream.host}` |
-| Duplicate ключі або junk lines в `hosts.map` | Caddy's `map` handler **hard-errors на duplicate input ключ** — one bad line може take whole конфиг down | Sync скрипт normalizes whitespace drops malformed lines (rejecting wholesale только якщо >20% це bad) dedupes first-wins і writes **BOM-free** UTF-8 (BOM corrupts first map ключ). API също filters empty/space-containing domain строки на source |
-| `Register-ScheduledTask -RepetitionDuration ([TimeSpan]::MaxValue)` | Task registration **silently fails** (out-of-range XML non-terminating error) | Build repetition як `MSFT_TaskRepetitionPattern` CIM instance з `Interval = "PT5M"` і no duration; add 4-minute `ExecutionTimeLimit` (first SYSTEM run може hang на cold TLS/CRL lookup) |
+| `tls_server_name {vars.upstream}` в транспорте reverse_proxy | Каждый проксируемый домен выдаёт 502: плейсхолдеры карты разрешаются **пустыми в момент TLS-набора** («либо ServerName, либо InsecureSkipVerify должны быть указаны») | Используйте нативный для транспорта плейсхолдер: `tls_server_name {http.reverse_proxy.upstream.host}` |
+| Дублирующиеся ключи или мусорные строки в `hosts.map` | Обработчик `map` Caddy **выдаёт жёсткую ошибку при дублирующемся входном ключе** — одна плохая строка может уронить всю конфигурацию | Скрипт синхронизации нормализует пробелы, отбрасывает некорректные строки (отклоняя всё целиком только если плохих строк >20%), дедуплицирует по принципу «первый побеждает» и записывает UTF-8 **без BOM** (BOM портит первый ключ карты). API также фильтрует пустые/содержащие пробелы строки доменов на источнике |
+| `Register-ScheduledTask -RepetitionDuration ([TimeSpan]::MaxValue)` | Регистрация задачи **молча завершается неудачей** (XML вне диапазона, нетерминирующая ошибка) | Постройте повторение как CIM-экземпляр `MSFT_TaskRepetitionPattern` с `Interval = "PT5M"` и без длительности; добавьте `ExecutionTimeLimit` в 4 минуты (первый запуск от SYSTEM может зависнуть на холодном поиске TLS/CRL) |
 
 :::warning
-Admin API binds к `localhost:2019` only. Legacy runtime режим exposed це remotely поэтому Membership API могла push route configs; static дизайн needs no remote pushes і smaller поверхность це deliberate. `caddy reload` (run locally by sync скрипт) це only admin-API consumer.
+Admin API привязан только к `localhost:2019`. Устаревший runtime-режим предоставлял его удалённо, чтобы Membership API мог отправлять конфигурации маршрутов; статический дизайн не требует удалённых пушей, и меньшая поверхность — намеренное решение. `caddy reload` (запускаемый локально скриптом синхронизации) — единственный потребитель admin API.
 :::
 
-:::info Legacy runtime push
-`CaddyHelper` в API (і `/membership/domains/caddy` + `/caddy/init` endpoints) все ще exist як rollback путь к old runtime-configured режим. They це scheduled для deletion один раз static box has been стабільна для couple weeks — after це `authorize` + `hostmap` це only integration points.
+:::info Устаревший runtime-пуш
+`CaddyHelper` в API (и конечные точки `/membership/domains/caddy` + `/caddy/init`) всё ещё существуют как путь отката к старому runtime-режиму конфигурации. Они запланированы к удалению, как только статический сервер докажет стабильность в течение пары недель — после этого `authorize` + `hostmap` останутся единственными точками интеграции.
 :::
 
-## Operations
+## Эксплуатация
 
-- **Logs**: WinSW rolling logs в `C:\caddy\` (service stdout/err — reverse-proxy errors land в `caddy-service.err.log`); sync історія в `C:\caddy\sync-hostmap.log`.
-- **Force map refresh**: `Start-ScheduledTask -TaskName CaddyHostmapSync`.
-- **Config change**: edit `C:\caddy\Caddyfile` затем `caddy validate` + `caddy reload` (або `Restart-Service caddy` — restarts це safe by дизайн).
-- **Mass домен deletion** trips sync скрипт's shrink guard by дизайн; move old `hosts.map` aside і re-run task к accept intentional large shrink.
-- **DNS інструкції для churches це unchanged forever**: apex `A 3.23.251.61` або `CNAME proxy.b1.church`.
+- **Логи**: вращающиеся логи WinSW в `C:\caddy\` (stdout/err службы — ошибки реверс-прокси попадают в `caddy-service.err.log`); история синхронизации в `C:\caddy\sync-hostmap.log`.
+- **Принудительное обновление карты**: `Start-ScheduledTask -TaskName CaddyHostmapSync`.
+- **Изменение конфигурации**: отредактируйте `C:\caddy\Caddyfile`, затем `caddy validate` + `caddy reload` (либо `Restart-Service caddy` — перезапуски безопасны по замыслу).
+- **Массовое удаление доменов** намеренно срабатывает защиту скрипта синхронизации от резкого сокращения; отложите старый `hosts.map` в сторону и перезапустите задачу, чтобы принять намеренное большое сокращение.
+- **Инструкции по DNS для церквей неизменны навсегда**: apex `A 3.23.251.61` либо `CNAME proxy.b1.church`.
 
-## Пов'язані сторінки
+## Связанные страницы
 
-- [Website Routing & Multi-Site](../architecture/websites) — як proxied запрос resolves к church/site в B1App
-- [API Deployment](./apis) — deploying Membership API це serves `authorize`/`hostmap`
+- [Маршрутизация веб-сайтов и мульти-сайт](../architecture/websites) — как проксируемый запрос разрешается в церковь/сайт в B1App
+- [Развёртывание API](./apis) — развёртывание Membership API, который обслуживает `authorize`/`hostmap`

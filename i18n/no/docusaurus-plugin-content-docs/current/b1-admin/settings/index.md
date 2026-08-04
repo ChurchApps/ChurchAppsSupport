@@ -6,42 +6,43 @@ title: "Innstillinger"
 
 <div class="article-intro">
 
-Innstillingsseksjonen er der du konfigurerer kirkens konto, merkebygging og administrative alternativer i B1 Admin. Herfra kan du administrere alt fra kirkens navn og underdomene til brukerens tillatelser og konfigurasjon av mobilapp.
+Innstillinger-seksjonen er der du konfigurerer kirkens konto, merkevareprofil og administrative alternativer i B1 Admin. Herfra kan du administrere alt fra kirkens navn og underdomene til brukertillatelser og konfigurasjon av mobilappen.
 
 </div>
 
-## Hva du vil finne her
+## Hva du finner her
 
-Innstillingsområdet er organisert i følgende underdelinger som er tilgjengelig fra sidepanelet:
+Innstillinger-området er organisert i følgende underseksjoner, tilgjengelig fra sidefeltet:
 
-1. **Innstillinger** -- Konfigurer kirkens grunnleggende informasjon, merkebygging og underdomene. Se [Kirkens innstillinger](./church-settings.md) for detaljer.
-2. **Avdelinger** -- Legg til og administrer flere fysiske steder for kirken. Når de er opprettet, vises avdelinger på personpostene, i oppsett av frammøte og på Demografika-instrumentbordet. Se [Avdelinger](./campuses.md) for detaljer.
-3. **Egendefinerte felt** -- Definer dine egne felt for å spore på mennesker (en dato, nummer, ja/nei-svar eller plukkliste), og fyll dem inn på profiler og søk på dem. Se [Egendefinerte felt](./custom-fields.md) for detaljer.
-3. **Mobilapper** -- Sett opp og tilpass navigasjonfanene som vises i [B1.church PWA](/docs/b1-church/getting-started/installing-pwa) for medlemmene (de samme fanene er også gjengitt av B1 Mobile native app som er utfaset). Se [innstillinger for mobilapp](./mobile-app.md) for detaljer.
-4. **Server Admin** -- Få tilgang til avanserte administrasjonsverktøy for administrasjon av kirkens server-nivå innstillinger.
-5. **Skjemaer** -- Opprett og administrer egendefinerte skjemaer for å samle informasjon fra forsamlingen.
+1. **Innstillinger** -- Konfigurer kirkens grunnleggende informasjon, merkevareprofil og underdomene. Se [Kirkeinnstillinger](./church-settings.md) for detaljer.
+2. **Lokasjoner** -- Legg til og administrer flere fysiske lokasjoner for kirken din. Når de er opprettet, vises lokasjoner på personprofiler, i oppmøteoppsett og i Demografi-dashbordet. Se [Lokasjoner](./campuses.md) for detaljer.
+3. **Egendefinerte felt** -- Definer dine egne felt for å spore på personer (en dato, et tall, et ja/nei-svar eller en valgliste), og fyll dem deretter ut på profiler og søk på dem. Se [Egendefinerte felt](./custom-fields.md) for detaljer.
+3. **Mobilapper** -- Sett opp og tilpass navigasjonsfanene som vises i [B1.church PWA-en](/docs/b1-church/getting-started/installing-pwa) for medlemmene dine (de samme fanene vises også av den utfasede native B1 Mobile-appen). Se [Innstillinger for mobilapp](./mobile-app.md) for detaljer.
+4. **E-postmaler** -- Lagre gjenbrukbart e-postinnhold for manuell utsending eller fra en arbeidsflyt. Se [E-postmaler](./email-templates.md) for detaljer.
+5. **Server-administrasjon** -- Få tilgang til avanserte administrasjonsverktøy for å administrere kirkens innstillinger på servernivå.
+6. **Skjemaer** -- Opprett og administrer egendefinerte skjemaer for å samle informasjon fra menigheten din.
 
-## Hovedinnstillingssiden
+## Hovedsiden for innstillinger
 
-Når du først åpner innstillingssiden, vil du se **kirkens navn** og **underdomene** som vises øverst. Toppteksten gir hurtigaksessknapper for vanlige oppgaver:
+Når du åpner Innstillinger-siden for første gang, ser du **kirkenavnet** og **underdomenet** ditt vist øverst. Toppteksten gir hurtigknapper for vanlige oppgaver:
 
-- **Rediger innstillinger** -- Oppdater kirkens navn, adresse, kontaktinformasjon og merking.
-- **Mobilapper** -- hopp direkte til mobil appkonfigurasjonen.
-- **Roller** -- Administrer brukerroller og tillatelser for teamet.
-- **Importerer/eksport** -- Overfør data mellom systemer ved hjelp av import/eksport-verktøyet.
+- **Rediger innstillinger** -- Oppdater kirkens navn, adresse, kontaktinformasjon og merkevareprofil.
+- **Mobilapper** -- Hopp direkte til konfigurasjon av mobilappen.
+- **Roller** -- Administrer brukerroller og tillatelser for teamet ditt.
+- **Import/eksport** -- Overfør data mellom systemer ved hjelp av import-/eksportverktøyet.
 
 :::tip
-Start med å konfigurere kirkens navn og merking under **Rediger innstillinger**, og sett deretter opp [roller](./roles-permissions.md) for å invitere teammedlemmene dine med riktig tilgangnivå.
+Start med å konfigurere kirkens navn og merkevareprofil under **Rediger innstillinger**, og sett deretter opp [Roller](./roles-permissions.md) for å invitere teammedlemmene dine med riktig tilgangsnivå.
 :::
 
 :::info
-For informasjon om hvordan dataene dine er beskyttet, se [datasikkerhet](./data-security.md).
+For informasjon om hvordan dataene dine beskyttes, se [Datasikkerhet](./data-security.md).
 :::
 
 ## Neste steg
 
-- [Kirkens innstillinger](./church-settings.md) -- Konfigurer kirkeinformasjon og merking
-- [Avdelinger](./campuses.md) -- Legg til steder for multi-site-kirker
-- [Roller & Tillatelser](./roles-permissions.md) -- Sett opp brukerroller og tilgangskontroll
-- [Innstillinger for mobilapp](./mobile-app.md) -- Tilpass navigasjonfanene som vises i B1.church PWA
-- [Datasikkerhet](./data-security.md) -- Lær hvordan dataene dine er beskyttet
+- [Kirkeinnstillinger](./church-settings.md) -- Konfigurer kirkeinformasjonen og merkevareprofilen din
+- [Lokasjoner](./campuses.md) -- Legg til lokasjoner for kirker med flere steder
+- [Roller og tillatelser](./roles-permissions.md) -- Sett opp brukerroller og tilgangskontroll
+- [Innstillinger for mobilapp](./mobile-app.md) -- Tilpass navigasjonsfanene som vises i B1.church PWA-en
+- [Datasikkerhet](./data-security.md) -- Lær hvordan dataene dine beskyttes

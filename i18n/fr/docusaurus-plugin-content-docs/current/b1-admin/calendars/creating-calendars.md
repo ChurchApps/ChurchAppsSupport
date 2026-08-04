@@ -1,12 +1,12 @@
 ---
-title: "Création de calendriers"
+title: "Créer des calendriers"
 ---
 
-# Création de calendriers
+# Créer des calendriers
 
 <div class="article-intro">
 
-La création d'un calendrier dans B1 Admin vous permet de construire une vue sélectionnée des événements en connectant un ou plusieurs groupes. Les événements sont gérés par les leaders des groupes au sein de leurs groupes, et votre calendrier affiche ces événements en un seul endroit. Même un administrateur de domaine ne peut pas ajouter ou modifier directement les événements dans la section calendrier à moins qu'il soit leader du groupe auquel les événements appartiennent.
+Créer un calendrier dans B1 Admin vous permet de construire une vue organisée des événements en connectant un ou plusieurs groupes. Les événements sont gérés par les responsables de groupe au sein de leurs groupes, et votre calendrier affiche ces événements en un seul endroit. Même un administrateur de domaine ne peut pas ajouter ou modifier directement des événements dans la section calendrier, sauf s'il est responsable du groupe auquel les événements appartiennent.
 
 </div>
 
@@ -20,82 +20,82 @@ La création d'un calendrier dans B1 Admin vous permet de construire une vue sé
 
 ## Créer un nouveau calendrier
 
-1. Dans B1 Admin, allez à **Site**, puis à la section **Calendriers**.
+1. Dans B1 Admin, allez dans **Site web**, puis dans la section **Calendriers**.
 2. Cliquez sur **Ajouter un calendrier**.
-3. Entrez un **nom** pour votre calendrier (par exemple, « Événements du ministère jeunesse » ou « Calendrier principal de l'église »).
-4. Ajoutez une **description** optionnelle pour aider votre équipe à comprendre à quoi sert ce calendrier.
+3. Saisissez un **nom** pour votre calendrier (par exemple, « Événements Ministère Jeunesse » ou « Calendrier principal de l'église »).
+4. Ajoutez une **description** facultative pour aider votre équipe à comprendre l'utilité de ce calendrier.
 5. Cliquez sur **Créer** pour enregistrer votre nouveau calendrier.
 
 ## La page de détail du calendrier
 
-Après la création d'un calendrier, cliquez dessus pour ouvrir la page de détail. Cette page a deux zones principales :
+Après avoir créé un calendrier, cliquez dessus pour ouvrir la page de détail. Cette page comporte deux zones principales :
 
-- **Colonne de gauche** -- Une vue du calendrier affichant les événements extraits des groupes connectés.
-- **Colonne de droite** -- La liste des groupes associés. C'est ici que vous gérez les groupes inclus dans ce calendrier.
+- **Colonne de gauche** -- Une vue du calendrier montrant les événements provenant des groupes connectés.
+- **Colonne de droite** -- La liste des groupes associés. C'est ici que vous gérez quels groupes sont inclus dans ce calendrier.
 
-## Connexion de groupes
+## Connecter des groupes
 
-Les groupes qui ont des événements dans le calendrier apparaissent automatiquement dans la liste des groupes sur le côté droit de la page de détail.
+Les groupes dont les événements figurent dans le calendrier apparaissent automatiquement dans la liste des groupes à droite de la page de détail.
 
 1. Cliquez sur **Ajouter** dans la section des groupes pour associer un groupe à votre calendrier.
-2. Sélectionnez le groupe dans la liste déroulante.
-3. Choisissez d'inclure **tous les événements** de ce groupe ou seulement **des événements spécifiques**.
+2. Sélectionnez le groupe dans le menu déroulant.
+3. Choisissez d'inclure **tous les événements** de ce groupe ou seulement des **événements spécifiques**.
 4. Cliquez sur **Enregistrer**.
 
 :::tip
-Connecter des groupes à votre calendrier est un moyen puissant d'agréger automatiquement les événements. Lorsqu'un leader de groupe ajoute un événement à son [groupe](../groups/creating-groups.md), il peut être intégré à votre calendrier global de l'église sans aucun effort supplémentaire.
+Connecter des groupes à votre calendrier est un moyen puissant d'agréger automatiquement les événements. Lorsqu'un responsable de groupe ajoute un événement à son [groupe](../groups/creating-groups.md), celui-ci peut être intégré à votre calendrier à l'échelle de l'église sans travail supplémentaire de votre part.
 :::
 
 :::info
-Si vous souhaitez créer un seul calendrier qui récupère les événements de nombreux groupes dans votre église, consultez [Calendrier curé](curated-calendar) pour une approche rationalisée.
+Si vous souhaitez créer un seul calendrier qui rassemble les événements de nombreux groupes de votre église, consultez [Calendrier organisé](curated-calendar) pour une approche simplifiée.
 :::
 
-## Activation de l'enregistrement aux événements
+## Activer l'inscription aux événements
 
-Vous pouvez activer l'enregistrement pour n'importe quel événement du calendrier afin que les membres puissent s'inscrire via le site B1 ou l'application mobile.
+Vous pouvez activer l'inscription pour n'importe quel événement de calendrier afin que les membres puissent s'inscrire via le site web B1 ou l'application mobile.
 
 1. Cliquez sur un événement existant ou créez-en un nouveau.
-2. Dans l'éditeur d'événement, basculez **Enregistrement** pour l'activer.
-3. Configurez les paramètres d'enregistrement :
-   - **Capacité** (optionnel) -- Définissez un nombre maximum d'enregistrements. Laissez vide pour illimité.
-   - **L'enregistrement s'ouvre** -- La date et l'heure auxquelles l'enregistrement devient disponible.
-   - **L'enregistrement se ferme** -- La date et l'heure auxquelles l'enregistrement se ferme.
-   - **Étiquettes** -- Étiquettes séparées par des virgules (par exemple, « jeunesse, retraite, vbs ») pour aider à catégoriser les événements enregistrables.
-   - **Questions d'enregistrement** -- Joignez éventuellement un [formulaire](../forms/creating-forms.md) afin que les personnes inscrites répondent à des questions supplémentaires (restrictions alimentaires, taille du t-shirt, contact d'urgence, etc.) dans le cadre de l'inscription. Choisissez **Aucun** pour ignorer les questions.
-   - **Activer la liste d'attente** -- Lorsque l'événement est complet, permettez aux personnes inscrites supplémentaires de rejoindre une liste d'attente au lieu d'être refusées. Consultez [Enregistrements payants](paid-registrations#waitlist).
+2. Dans l'éditeur d'événement, activez **Inscription**.
+3. Configurez les paramètres d'inscription :
+   - **Capacité** (facultatif) -- Définissez un nombre maximal d'inscriptions. Laissez vide pour illimité.
+   - **Ouverture des inscriptions** -- La date et l'heure à partir desquelles l'inscription devient disponible.
+   - **Fermeture des inscriptions** -- La date et l'heure de fermeture des inscriptions.
+   - **Étiquettes** -- Libellés séparés par des virgules (par ex. « jeunesse, retraite, vbs ») pour aider à catégoriser les événements ouverts à l'inscription.
+   - **Questions d'inscription** -- Vous pouvez éventuellement attacher un [formulaire](../forms/creating-forms.md) afin que les inscrits répondent à des questions supplémentaires (restrictions alimentaires, taille de t-shirt, contact d'urgence, etc.) lors de leur inscription. Choisissez **Aucun** pour ne pas poser de questions.
+   - **Activer la liste d'attente** -- Lorsque l'événement est complet, permettez aux inscrits supplémentaires de rejoindre une liste d'attente plutôt que d'être refusés. Consultez [Inscriptions payantes](paid-registrations#waitlist).
 4. Enregistrez l'événement.
 
-Pour les événements payants, la même page de paramètres vous permet de définir des **Types d'assistants** avec prix, des **Sélections** optionnelles (compléments), et des **Codes de réduction**, avec le paiement collecté via le prestataire de dons de votre église. Consultez [Enregistrements payants](paid-registrations) pour la procédure complète.
+Pour les événements payants, la même page de paramètres vous permet de définir des **Types de participants** tarifés, des **Sélections** facultatives (options supplémentaires), et des **Codes de réduction**, le paiement étant collecté via le fournisseur de dons de votre église. Consultez [Inscriptions payantes](paid-registrations) pour le guide complet.
 
-Une fois l'enregistrement activé, les membres verront un bouton **S'enregistrer pour cet événement** lorsqu'ils verront l'événement sur le [site B1](../../b1-church/events/registering) ou l'[application B1 Mobile](../../b1-mobile/events/registering). Si vous avez joint un formulaire, les personnes inscrites voient une étape **Questions** lors de l'enregistrement et leurs réponses sont enregistrées avec leur enregistrement.
+Une fois l'inscription activée, les membres verront un bouton **S'inscrire à cet événement** lorsqu'ils consultent l'événement sur le [site web B1](../../b1-church/events/registering) ou l'[application B1 Mobile](../../b1-mobile/events/registering). Si vous avez joint un formulaire, les inscrits voient une étape **Questions** pendant l'inscription et leurs réponses sont enregistrées avec leur inscription.
 
 :::info
-Les questions d'enregistrement ne fonctionnent que avec des formulaires qui ne sont **pas** marqués comme Restreints. Un formulaire restreint est ignoré automatiquement lors de l'enregistrement plutôt que d'être affiché, donc utilisez un formulaire non restreint lors de l'ajout de questions à un événement.
+Les Questions d'inscription ne fonctionnent qu'avec des formulaires qui ne sont **pas** marqués comme Restreints. Un formulaire restreint est automatiquement ignoré pendant l'inscription plutôt qu'affiché, donc utilisez un formulaire non restreint pour joindre des questions à un événement.
 :::
 
-### Gestion des enregistrements
+### Gérer les inscriptions
 
-Pour afficher et gérer les enregistrements de vos événements :
+Pour consulter et gérer les inscriptions à vos événements :
 
-1. Allez à la page **Enregistrements** dans B1 Admin.
-2. Vous verrez un tableau de tous les événements avec enregistrement activé, affichant le titre de l'événement, la date, le nombre d'enregistrements actuel par rapport à la capacité et les étiquettes.
-3. Cliquez sur un événement pour voir la liste complète des enregistrements, y compris les noms, le nombre de membres, les types d'assistants, le statut de paiement et la date d'enregistrement.
-4. À partir de la page de détail, vous pouvez :
-   - **Ajouter un assistant** -- Enregistrer manuellement quelqu'un qui s'est inscrit hors ligne ou par téléphone.
-   - **Annuler** les enregistrements individuels
-   - **Supprimer** les enregistrements définitivement
-   - **Promouvoir** les enregistrements en liste d'attente quand une place se libère
-   - **Exporter en CSV** -- Télécharger tous les enregistrements, y compris les types d'assistants, les sélections, les montants de paiement et les réponses aux questions
+1. Accédez à la page **Inscriptions** dans B1 Admin.
+2. Vous verrez un tableau de tous les événements avec inscription activée, indiquant le titre de l'événement, la date, le nombre actuel d'inscriptions par rapport à la capacité, et les étiquettes.
+3. Cliquez sur un événement pour voir la liste complète des inscriptions, incluant les noms, le nombre de participants, les types de participants, le statut de paiement, et la date d'inscription.
+4. Depuis la page de détail, vous pouvez :
+   - **Ajouter un participant** -- Inscrire manuellement une personne qui s'est inscrite hors ligne ou par téléphone.
+   - **Annuler** des inscriptions individuelles
+   - **Supprimer** des inscriptions définitivement
+   - **Promouvoir** des inscriptions en liste d'attente lorsqu'une place se libère
+   - **Exporter en CSV** -- Télécharger toutes les inscriptions, y compris les types de participants, les sélections, les montants payés et les réponses aux questions
 
-Si l'événement a des questions d'enregistrement attachées, la page de détail affiche également un filtre **Seules les questions sans réponse** pour trouver rapidement les personnes inscrites qui n'ont pas encore soumis de réponses, et un bouton **Afficher les réponses** sur chaque enregistrement avec réponse pour voir leurs réponses. Les événements payants ajoutent une colonne **Type**, une colonne **Payé / Total**, des comptages par type et une boîte de dialogue de détails des paiements -- consultez [Enregistrements payants](paid-registrations#the-registration-roster).
+Si l'événement comporte des Questions d'inscription, la page de détail affiche également un filtre **Questions sans réponse uniquement** pour trouver rapidement les inscrits qui n'ont pas encore soumis de réponses, ainsi qu'un bouton **Voir les réponses** sur chaque inscription ayant répondu pour consulter ses réponses. Les événements payants ajoutent une colonne **Type**, une colonne **Payé / Total**, des décomptes par type, et une boîte de dialogue de détail des paiements -- voir [Inscriptions payantes](paid-registrations#the-registration-roster).
 
 :::tip
-Utilisez la barre de progression de capacité pour surveiller la rapidité avec laquelle les événements se remplissent. La barre devient rouge lorsqu'un événement est à capacité ou au-dessus.
+Utilisez la barre de progression de capacité pour surveiller la vitesse à laquelle les événements se remplissent. La barre devient rouge lorsqu'un événement atteint ou dépasse sa capacité.
 :::
 
-## Prochaines étapes
+## Étapes suivantes
 
-- [Calendrier curé](curated-calendar) -- Créer un calendrier qui récupère à partir de plusieurs groupes
-- [Enregistrements payants](paid-registrations) -- Types d'assistants, sélections de compléments, codes de réduction, paiements et listes d'attente
-- [Guide d'enregistrement aux événements](../guides/event-registration) -- Guide étape par étape pour configurer l'enregistrement aux événements
-- [Aperçu des calendriers](./) -- Retour à l'aperçu des calendriers
+- [Calendrier organisé](curated-calendar) -- Créer un calendrier qui rassemble plusieurs groupes
+- [Inscriptions payantes](paid-registrations) -- Types de participants, sélections d'options, codes de réduction, paiements et listes d'attente
+- [Guide d'inscription aux événements](../guides/event-registration) -- Guide étape par étape pour configurer l'inscription aux événements
+- [Vue d'ensemble des calendriers](./) -- Retour à la vue d'ensemble des calendriers

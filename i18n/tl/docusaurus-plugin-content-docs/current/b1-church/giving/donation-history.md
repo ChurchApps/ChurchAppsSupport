@@ -1,59 +1,59 @@
 ---
-title: "Donation History"
+title: "Kasaysayan ng Donasyon"
 ---
 
-# Donation History
+# Kasaysayan ng Donasyon
 
 <div class="article-intro">
 
-Kapag logged in ka, maaari mong tingnan ang kompletong record ng iyong nakaraang donation at lumikha ng giving statement para sa tax purpose. Ang iyong donation history ay available mula sa **Donate** section ng iyong B1.church account.
+Kapag naka-login ka, matitingnan mo ang kumpletong tala ng iyong mga nakaraang donasyon at makakabuo ng mga giving statement para sa layuning pangbuwis. Available ang iyong kasaysayan ng donasyon mula sa seksyong **Donate** ng iyong B1.church account.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Kailangan mong maging [logged in](../getting-started/logging-in.md) sa iyong B1.church account.
-- Kailangan mong gumawa ng kahit isang donation. Tingnan ang [Paggawa ng Donation](./making-donations.md) upang magsimula.
+- Dapat kang [naka-login](../getting-started/logging-in.md) sa iyong B1.church account.
+- Kailangan mong nakagawa na ng kahit isang donasyon. Tingnan ang [Paggawa ng Donasyon](./making-donations.md) upang magsimula.
 
 </div>
 
-## Pagtingin ng Iyong History
+## Pagtingin sa Iyong Kasaysayan
 
 1. Mag-log in sa iyong B1.church account.
-2. Mag-navigate sa **Donate** section.
-3. I-click ang **History** sa kaliwang panel upang tingnan ang iyong nakaraang donation.
+2. Mag-navigate sa seksyong **Donate**.
+3. I-click ang **History** sa kaliwang panel upang tingnan ang iyong mga nakaraang donasyon.
 
-Ang iyong donation history ay ipapakita bilang isang tabel na may mga sumusunod na column:
+Ipinapakita ang iyong kasaysayan ng donasyon bilang isang table na may mga sumusunod na column:
 
-- **Date** -- Kailan ginawa ang donation.
+- **Date** -- Kung kailan ginawa ang donasyon.
 - **Method** -- Paano ka nagbayad (halimbawa, "Card - Visa" o "Bank - ACH").
-- **Fund** -- Aling fund ang donation ay direktang napunta (halimbawa, General Fund, Building Fund).
-- **Amount** -- Ang dollar amount ng donation.
+- **Fund** -- Kung aling fund napunta ang donasyon (halimbawa, General Fund, Building Fund).
+- **Amount** -- Ang halaga ng donasyon.
 
 :::info
-Ang mga donation na pa rin napoproseso ay makikita na may "Pending" label sa tabi ng fund name at ang amount na ipinapakita sa ibang kulay.
+Ang mga donasyong pinoproseso pa lang ay lalabas na may label na "Pending" sa tabi ng pangalan ng fund at ang halagang ipinapakita sa ibang kulay.
 :::
 
-## Pag-export at Pag-print ng Statement
+## Pag-export at Pag-print ng mga Statement
 
-I-click ang **download** button sa Donation History header upang makuha ang pag-export option:
+I-click ang buton na **download** sa header ng Donation History upang ma-access ang mga opsyon sa pag-export:
 
-- **Current Year (CSV)** -- I-download ang isang CSV file ng lahat ng iyong donation mula sa kasalukuyang taon. Maaari mong buksan ito sa isang spreadsheet application.
+- **Current Year (CSV)** -- I-download ang isang CSV file ng lahat ng iyong donasyon mula sa kasalukuyang taon. Mabubuksan mo ito sa isang spreadsheet application.
 - **Current Year (Print)** -- Buksan ang isang printable giving statement para sa kasalukuyang taon.
-- **Last Year (CSV)** -- I-download ang isang CSV file ng lahat ng iyong donation mula sa nakaraang taon.
+- **Last Year (CSV)** -- I-download ang isang CSV file ng lahat ng iyong donasyon mula sa nakaraang taon.
 - **Last Year (Print)** -- Buksan ang isang printable giving statement para sa nakaraang taon.
 
 :::tip
-I-print ang iyong nakaraang taong giving statement nang maaga sa bagong taon upang handa ka na para sa tax season. Ang printable statement ay nagsasama ng lahat ng detalye na kailangan mo para sa iyong record.
+I-print ang iyong giving statement para sa nakaraang taon nang maaga sa bagong taon upang handa ka na sa panahon ng buwis. Kasama sa printable statement ang lahat ng detalyeng kailangan mo para sa iyong mga tala.
 :::
 
-## Recurring Donation
+## Mga Recurring na Donasyon
 
-Mula sa **Donate** section, maaari mo rin i-click ang **Recurring Donations** upang pamahalaan ang anumang scheduled giving na naka-setup mo. Ang seksyong ito ay nagbibigay-daan sa iyo na tingnan, i-update, o mag-cancel ng recurring donation at pamahalaan ang iyong naka-save na payment method.
+Mula sa seksyong **Donate**, maaari mo ring i-click ang **Recurring Donations** upang pamahalaan ang anumang iskedyuladong giving na naitakda mo. Nagbibigay-daan sa iyo ang seksyong ito na tingnan, i-update, o kanselahin ang mga recurring na donasyon at pamahalaan ang iyong mga naka-save na paraan ng pagbabayad.
 
-Kung ang isang recurring donation ay sinisingil sa pamamagitan ng **Stripe**, maaari ka rin **pause** nito sa halip na mag-cancel -- i-click ang pause icon sa tabi ng donation at kumpirmahin. Ang giving ay tumitigil hanggang sa i-click mo ang parehong icon upang **resume**; ang paused na donation ay minarkahan ang **Paused** sa listahan. Ang mga recurring donation sa pamamagitan ng iba pang payment provider ay maaaring i-edit o i-cancel pa rin, ngunit hindi ma-pause.
+Kung sinisingil ang isang recurring na donasyon sa pamamagitan ng **Stripe**, maaari mo rin itong i-**pause** sa halip na kanselahin -- i-click ang pause icon sa tabi ng donasyon at kumpirmahin. Huminto ang giving hanggang sa i-click mo ang parehong icon upang i-**resume**; minamarkahan ang isang na-pause na donasyon bilang **Paused** sa listahan. Ang mga recurring na donasyon sa pamamagitan ng ibang mga payment provider ay maaari pa ring i-edit o kanselahin, ngunit hindi ma-pause.
 
-## Susunod na Hakbang
+## Susunod na mga Hakbang
 
-- [Paggawa ng Donation](./making-donations.md) -- Matuto kung paano gumawa ng isang one-time o recurring gift
+- [Paggawa ng Donasyon](./making-donations.md) -- Alamin kung paano gumawa ng isang beses o recurring na regalo

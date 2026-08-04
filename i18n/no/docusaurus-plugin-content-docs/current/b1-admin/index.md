@@ -1,41 +1,41 @@
 ---
-title: "B1 Admin Oversikt"
+title: "Oversikt over B1 Admin"
 ---
 
-# B1 Admin Oversikt
+# Oversikt over B1 Admin
 
 <div class="article-intro">
 
-B1 Admin er ditt kirkestyringsinstrumentbord. Det gir verktøy for å administrere alle aspekter av kirkens virksomhet -- fra medlemskataloger og donasjoner til nettstedbygging og direkte streaming -- alt fra ett sted.
+B1 Admin er menighetens administrasjonsdashbord. Det gir verktøy for å administrere alle sider av menighetens drift -- fra medlemsregistre og gaver til nettsidebygging og direktestrømming -- alt fra ett sted.
 
 </div>
 
 ## Komme i gang
 
-1. Åpne nettleseren og gå til [admin.b1.church](https://admin.b1.church)
+1. Åpne nettleseren din og gå til [admin.b1.church](https://admin.b1.church)
 2. Logg inn med brukernavn og passord
-3. Du vil lande på **Instrumentbordet**, som gir en oversikt over kirkens data sammen med **Hurtighandlinger** for vanlige oppgaver som å legge til mennesker, opprette grupper, registrere donasjoner og mer
+3. Du havner på **Dashbordet**, som gir en oversikt over menighetens data sammen med **Hurtighandlinger** for vanlige oppgaver som å legge til personer, opprette grupper, registrere gaver og mer
 
 :::tip
-Ny i B1 Admin? Start med [Introduksjonen](./introduction) for en videogennemgang, deretter besøk [Innstillinger](./settings/) for å konfigurere kirkeinformasjonen og invitere teamet ditt.
+Ny til B1 Admin? Start med [Introduksjonen](./introduction) for en videogjennomgang, og besøk deretter [Innstillinger](./settings/) for å konfigurere menighetsinformasjonen din og invitere teamet ditt.
 :::
 
 ## Nøkkelfunksjoner
 
-- **[Mennesker](./people/)** - Administrer kirkens katalog, legg til medlemmer, bulkredigeringer av data, spor husstander
-- **[Grupper](./groups/)** - Opprett og organiser kirkens grupper med meldingsforespørsler og medlemsadministrasjon
-- **[Frammøte](./attendance/)** - Sett opp avdelinger, tjenestestider og spor frammøte
-- **[Donasjoner](./donations/)** - Registrer gaver i flere valutaer, administrer fond, generer erklæringer
-- **[Tjener](./serving/)** - Koordiner frivillige, opprett tjenestedplaner, administrer oppgaver og flytt mennesker gjennom trinn-for-trinn-arbeidsflyter
+- **[Personer](./people/)** - Administrer menighetens register, legg til medlemmer, masserediger data, spor husstander
+- **[Grupper](./groups/)** - Opprett og organiser menighetsgrupper med forespørsler om å bli med og medlemsadministrasjon
+- **[Oppmøte](./attendance/)** - Sett opp kirkesteder, gudstjenestetider og spor oppmøte
+- **[Gaver](./donations/)** - Registrer giving i flere valutaer, administrer fond, generer erklæringer
+- **[Tjeneste](./serving/)** - Koordiner frivillige, opprett tjenesteplaner, administrer oppgaver, og før personer gjennom steg-for-steg-arbeidsflyter
 - **[Skjemaer](./forms/)** - Bygg egendefinerte skjemaer for påmeldinger og datainnsamling
-- **[Rapporter](./reports/)** - Vis bursdags-, frammøte- og donasjonsrapporter
-- **[Nettsted](./website/)** - Bygg og administrer kirkens nettsted med tilpasset navigasjonsstil
-- **[Preker](./sermons/)** - Administrer prekenbiblioteket og direkte streaming
-- **[Kalendere](./calendars/)** - Opprett kuraterte kalendere, administrer rom-/ressursbestillinger og se tilgjengelighet
-- **[Innstillinger](./settings/)** - Konfigurer kirkeinformasjon, roller, tillatelser og egendefinerte personfelter
+- **[Rapporter](./reports/)** - Vis rapporter for bursdager, oppmøte og gaver
+- **[Nettside](./website/)** - Bygg og administrer menighetens nettside med egendefinerte navigasjonsstiler
+- **[Prekener](./sermons/)** - Administrer prekenbiblioteket ditt og direktestrømming
+- **[Kalendere](./calendars/)** - Opprett kuraterte kalendere, administrer rom-/ressursbookinger, og se tilgjengelighet
+- **[Innstillinger](./settings/)** - Konfigurer menighetsinformasjon, roller, tillatelser og egendefinerte personfelt
 
 :::info
-Klikk spørsmålstegnsymbolet øverst til høyre på en hvilken som helst side for rask tilgang til hjelp og dokumentasjon.
+Klikk på spørsmålstegn-ikonet øverst til høyre på en hvilken som helst side for rask tilgang til hjelp og dokumentasjon.
 :::
 
-For støtte, eposten [support@churchapps.org](mailto:support@churchapps.org).
+For støtte, send e-post til [support@churchapps.org](mailto:support@churchapps.org).

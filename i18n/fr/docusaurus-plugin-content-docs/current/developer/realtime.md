@@ -37,7 +37,7 @@ Il n'y a pas de Socket.IO, pas de fallback long-polling, et pas de microservice 
 | Environnement | HTTP | WebSocket |
 |-------------|------|-----------|
 | Développement local   | `8084` | `ws://localhost:8087` (serveur WebSocket séparé) |
-| Railway / hôtes un seul port | partagé | serveur HTTP partagé (`SocketHelper.attachToServer()`) |
+| Railway / Docker / hôtes à port unique (`RAILWAY_ENVIRONMENT` ou `SELF_HOSTED` défini) | partagé | serveur HTTP partagé (`SocketHelper.attachToServer()`) |
 | AWS Lambda  | API Gateway HTTP | API Gateway WebSocket (routes `$connect` / `$disconnect` / `$default`) |
 
 Le sélecteur de transport est la configuration `deliveryProvider` :

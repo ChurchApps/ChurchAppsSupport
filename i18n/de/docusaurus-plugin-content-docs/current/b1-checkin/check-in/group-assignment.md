@@ -6,65 +6,65 @@ title: "Gruppen zuweisen"
 
 <div class="article-intro">
 
-Wenn du eine Servicezeit-Schaltfläche auf dem Haushalts-Überprüfungs-Bildschirm antippst, öffnet die App den Gruppenselek​tions-Bildschirm. Hier wählst du, welche Gruppe oder Klasse ein Familienmitglied für diese spezifische Servicezeit besuchen sollte.
+Wenn Sie auf dem Bildschirm zur Haushaltsübersicht auf eine Schaltfläche für eine Gottesdienstzeit tippen, öffnet die App den Bildschirm zur Gruppenauswahl. Hier wählen Sie aus, welche Gruppe oder Klasse ein Familienmitglied für diese bestimmte Gottesdienstzeit besuchen soll.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor du beginnst</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- [Überprüfe deinen Haushalt](./household-review) auf dem Haushalts-Überprüfungs-Bildschirm
-- Erweitere das Mitglied, das du zuweisen möchtest, und tippe eine Servicezeit-Schaltfläche
-- Stelle sicher, dass dein Kirchenverwalter [Gruppen erstellt](../../b1-admin/groups/creating-groups.md) und sie mit Servicezeiten in B1 Admin verknüpft hat
+- [Überprüfen Sie Ihren Haushalt](./household-review) auf dem Bildschirm zur Haushaltsübersicht
+- Erweitern Sie das Mitglied, das Sie zuweisen möchten, und tippen Sie auf eine Schaltfläche für eine Gottesdienstzeit
+- Stellen Sie sicher, dass Ihr Kirchenverwalter [Gruppen erstellt](../../b1-admin/groups/creating-groups.md) und sie in B1 Admin mit Gottesdienstzeiten verknüpft hat
 
 </div>
 
-## Wie Gruppen organisiert werden
+## Wie Gruppen organisiert sind
 
-Gruppen werden in **Kategorien** angezeigt. Jede Kategorie erscheint als Karte, die Folgendes zeigt:
+Gruppen werden in **Kategorien** angezeigt. Jede Kategorie erscheint als Karte mit:
 
-- Den **Kategorienamen** (z. B. "Kinder", "Jugend", "Erwachsene")
-- Die **Anzahl der Gruppen** in dieser Kategorie
+- Dem **Kategorienamen** (zum Beispiel „Kinder", „Jugend", „Erwachsene")
+- Der **Anzahl der Gruppen** in dieser Kategorie
 
-Tippe eine Kategoriekarte an, um sie zu erweitern und die einzelnen Gruppen darin zu sehen. Tippe sie erneut an, um sie zusammenzufalten.
+Tippen Sie auf eine Kategoriekarte, um sie zu erweitern und die einzelnen Gruppen darin zu sehen. Tippen Sie erneut, um sie einzuklappen.
 
-## Auswahl einer Gruppe
+## Eine Gruppe auswählen
 
-1. Tippe eine **Kategorie** an, um sie zu erweitern.
-2. Überprüfe die Liste der Gruppen in dieser Kategorie. Jede Gruppe zeigt ihren Namen mit einem Selections-Symbol auf der rechten Seite.
-3. Tippe den **Gruppennamen** an, den du zuweisen möchtest.
+1. Tippen Sie auf eine **Kategorie**, um sie zu erweitern.
+2. Überprüfen Sie die Liste der Gruppen innerhalb dieser Kategorie. Jede Gruppe zeigt ihren Namen mit einem Auswahlsymbol auf der rechten Seite.
+3. Tippen Sie auf den **Gruppennamen**, den Sie zuweisen möchten.
 
-Die App speichert deine Auswahl und kehrt dich zum [Haushalts-Überprüfungs-Bildschirm](./household-review) zurück. Die Servicezeit-Schaltfläche für dieses Mitglied zeigt jetzt den Namen der Gruppe, die du ausgewählt hast.
+Die App speichert Ihre Auswahl und bringt Sie zurück zum [Bildschirm zur Haushaltsübersicht](./household-review). Die Schaltfläche für die Gottesdienstzeit dieses Mitglieds zeigt nun den Namen der ausgewählten Gruppe an.
 
-## Alters- und Klassenleitfaden
+## Hinweise zu Alter und Klassenstufe
 
-Wenn deine Kirche Alters- oder Klassenbereiche auf ihren Räumen festgelegt hat, führt die Liste dich zum Richtigen: Räume, für die die Person berechtigt ist, sind **hervorgehoben** und Räume außerhalb ihres Alters oder ihrer Klasse sind **abgeblendet**. Ein abgeblendeter Raum kann immer noch ausgewählt werden, aber ein Mitarbeiter muss die Auswahl bestätigen. Altersangaben und Klassen werden anhand des Klassifizierungsdatums deiner Kirche berechnet, sodass Räume über den Schuljahr-Wechsel hinweg genau bleiben.
+Wenn Ihre Kirche Alters- oder Klassenstufenbereiche für ihre Räume festgelegt hat, führt Sie die Liste zum richtigen Raum: Räume, für die die Person infrage kommt, sind **hervorgehoben**, und Räume außerhalb ihres Alters oder ihrer Klassenstufe sind **abgeblendet**. Ein abgeblendeter Raum kann trotzdem ausgewählt werden, aber ein Mitarbeiter muss die Auswahl bestätigen. Alter und Klassenstufe werden anhand des Stichtags für die Klassenversetzung Ihrer Kirche berechnet, sodass die Räume über den Schuljahreswechsel hinweg korrekt bleiben.
 
-## Auswahl von "Keine"
+## „Keine" auswählen
 
-Wenn du entscheidest, dass ein Familienmitglied für diese Servicezeit keiner Gruppe zugewiesen werden sollte, tippe die Schaltfläche **Keine** unten auf dem Bildschirm an. Dies löscht jede bestehende Gruppenzuweisung für diese Servicezeit und kehrt dich zum Haushalts-Überprüfungs-Bildschirm zurück.
+Wenn Sie entscheiden, dass ein Familienmitglied für diese Gottesdienstzeit keiner Gruppe zugewiesen werden soll, tippen Sie unten auf dem Bildschirm auf die Schaltfläche **Keine**. Dies löscht jede bestehende Gruppenzuweisung für diese Gottesdienstzeit und bringt Sie zurück zum Bildschirm zur Haushaltsübersicht.
 
 :::tip
-Verwende die Option **Keine** für Erwachsene, die den Hauptgottesdienst besuchen und nicht in eine bestimmte Gruppe oder Klasse einchecken müssen.
+Verwenden Sie die Option **Keine** für Erwachsene, die den Hauptgottesdienst besuchen und sich nicht in eine bestimmte Gruppe oder Klasse einchecken müssen.
 :::
 
-## Ändern einer Gruppenzuweisung
+## Eine Gruppenzuweisung ändern
 
-Um eine bereits vorgenommene Gruppenzuweisung zu ändern:
+So ändern Sie eine bereits vorgenommene Gruppenzuweisung:
 
-1. Gehe zurück zum [Haushalts-Überprüfungs-Bildschirm](./household-review).
-2. Erweitere das Mitglied, dessen Gruppe du ändern möchtest.
-3. Tippe die Servicezeit-Schaltfläche an (die jetzt den aktuell zugewiesenen Gruppennamen zeigt).
-4. Wähle eine andere Gruppe oder tippe **Keine**.
+1. Gehen Sie zurück zum [Bildschirm zur Haushaltsübersicht](./household-review).
+2. Erweitern Sie das Mitglied, dessen Gruppe Sie ändern möchten.
+3. Tippen Sie auf die Schaltfläche für die Gottesdienstzeit (die nun den Namen der derzeit zugewiesenen Gruppe anzeigt).
+4. Wählen Sie eine andere Gruppe aus oder tippen Sie auf **Keine**.
 
 :::info
-Gruppen und Kategorien werden von deinem Kirchenverwalter in B1 Admin konfiguriert. Wenn eine Gruppe fehlt oder in der falschen Kategorie ist, frag deinen Admin, die [Gruppeneinstellungen](../../b1-admin/groups/creating-groups.md) zu aktualisieren.
+Gruppen und Kategorien werden von Ihrem Kirchenverwalter in B1 Admin konfiguriert. Wenn eine Gruppe fehlt oder in der falschen Kategorie ist, bitten Sie Ihren Verwalter, die [Gruppeneinstellungen](../../b1-admin/groups/creating-groups.md) zu aktualisieren.
 :::
 
 ## Nächste Schritte
 
-Nach der Zuweisung von Gruppen kehrst du zum [Haushalts-Überprüfungs-Bildschirm](./household-review) zurück, um:
+Kehren Sie nach der Gruppenzuweisung zum [Bildschirm zur Haushaltsübersicht](./household-review) zurück, um:
 
-- Gruppen zu zusätzlichen Familienmitgliedern zuzuweisen
-- [Einen Gast hinzuzufügen](./adding-guests), wenn jemand deine Familie besucht
-- [Check-In zu vervollständigen](./completing-checkin), wenn alle Zuweisungen bereit sind
+- Weiteren Familienmitgliedern Gruppen zuzuweisen
+- [Einen Gast hinzuzufügen](./adding-guests), falls jemand Ihre Familie begleitet
+- [Den Check-in abzuschließen](./completing-checkin), sobald alle Zuweisungen bereit sind

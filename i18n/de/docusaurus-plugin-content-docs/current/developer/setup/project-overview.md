@@ -92,4 +92,3 @@ Alle Frontend-Apps hängen von `@churchapps/helpers` ab. Webanwendungen hängen 
 
 - **[Umgebungsvariablen](./environment-variables)** -- Konfigurieren Sie Ihre `.env`-Dateien für die Verbindung zu APIs
 - **[Lokale API-Einrichtung](../api/local-setup)** -- Richten Sie die Backend-API lokal ein
-</content>

@@ -240,4 +240,3 @@ Wenn Sie auf etwas stoßen, das hier nicht aufgeführt ist, öffnen Sie ein Issu
 - **[Spendeneinstellungen](../../b1-admin/donations/online-giving-setup)** — Stripe oder PayPal einrichten
 - **[Lokale API-Einrichtung](../api/local-setup)** — Den Stack lokal für die Entwicklung ausführen
 - **[API-Deployment (AWS)](./apis)** — Wie das offizielle ChurchApps-SaaS bereitgestellt wird
-</content>

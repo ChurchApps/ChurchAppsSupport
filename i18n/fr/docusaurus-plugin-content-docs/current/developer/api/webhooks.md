@@ -21,19 +21,19 @@ Les webhooks permettent à une église d'envoyer des notifications en temps rée
 
 ## Vue d'ensemble
 
-Les webhooks sont **sortants** uniquement : B1 appelle votre point de terminaison, vous n'appelez pas B1. Chaque webhook est un abonnement par église composé d'une URL de destination, d'un secret de signature et d'une liste d'événements auxquels vous êtes abonné.
+Les webhooks sont **sortants** uniquement : B1 appelle votre point de terminaison, vous n'appelez pas B1. Chaque webhook est un abonnement par église composé d'une URL de destination, d'un secret de signature et d'une liste d'événements abonnés.
 
-La livraison utilise une **boîte d'envoi durable** : lorsqu'un événement auquel vous êtes abonné se produit, B1 enregistre une ligne de livraison et un worker en arrière-plan envoie un POST en environ une minute. Les livraisons échouées sont réessayées avec un backoff exponentiel. Rien n'est perdu si une livraison est lente ou si votre point de terminaison est brièvement hors service.
+La livraison utilise une **boîte d'envoi durable** : lorsqu'un événement abonné se produit, B1 enregistre une ligne de livraison et un worker en arrière-plan envoie un POST en environ une minute. Les livraisons échouées sont réessayées avec un backoff exponentiel. Rien n'est perdu si une livraison est lente ou si votre point de terminaison est brièvement hors service.
 
 ## Enregistrement d'un webhook
 
 ### Dans B1Admin
 
-Allez dans **Paramètres → Webhooks → Nouveau webhook**. Entrez un nom, l'URL de la charge et sélectionnez les événements auxquels vous abonner. Lors de l'enregistrement, le **secret de signature est affiché une fois** — copiez-le immédiatement et stockez-le avec votre intégration. Il n'est jamais affiché à nouveau (vous pouvez le faire pivoter plus tard, mais vous ne pouvez pas récupérer l'original).
+Allez dans **Paramètres → Développeur → Webhooks → Nouveau webhook**. Entrez un nom, l'URL de la charge et sélectionnez les événements auxquels vous abonner. Lors de l'enregistrement, le **secret de signature est affiché une fois** — copiez-le immédiatement et stockez-le avec votre intégration. Il n'est jamais affiché à nouveau (vous pouvez le faire pivoter plus tard, mais vous ne pouvez pas récupérer l'original).
 
 ### Via l'API
 
-Tous les points de terminaison sont sous le chemin de base du module Membership `/membership/webhooks` et nécessitent un JWT d'un administrateur d'église avec la permission `Settings / Edit`.
+Tous les points de terminaison sont sous le chemin de base du module Membership `/membership/webhooks` et requièrent soit un JWT d'un administrateur d'église avec la permission `Settings / Edit`, **soit une [clé API](./api-keys) émise avec la portée `settings:write`**. Les mêmes routes acceptent les deux. C'est ce qui permet à Zapier et Make d'enregistrer des webhooks au nom de l'église quand un Zap ou un scénario est activé.
 
 ```http
 POST /membership/webhooks
@@ -89,6 +89,14 @@ Les noms d'événements suivent le modèle `{entité}.{action}`. Récupérez la 
 | `group.destroyed` | Un groupe est supprimé |
 | `group.member.added` | Une personne est ajoutée à un groupe |
 | `group.member.removed` | Une personne est retirée d'un groupe |
+| `donation.created` | Un don est enregistré — saisie manuelle, en ligne, ou la transition en attente → complété |
+| `donation.updated` | Un enregistrement de don est modifié |
+| `attendance.recorded` | Une visite est consignée (saisie manuelle ou enregistrement à l'accueil) |
+| `session.created` | Une nouvelle session de présence est créée (manuellement ou automatiquement au premier enregistrement) |
+| `form.submission.created` | Un formulaire est soumis |
+| `event.created` | Un événement de calendrier est ajouté |
+| `event.updated` | Un événement de calendrier est modifié |
+| `event.destroyed` | Un événement de calendrier est supprimé |
 
 ## Format de la charge
 
@@ -100,7 +108,7 @@ Chaque livraison est un `POST` HTTP avec un corps JSON et ces en-têtes :
 | `X-B1-Event` | Le nom de l'événement, par exemple `person.created` |
 | `X-B1-Delivery-Id` | Id unique pour cette tentative de livraison — utilisez-le pour dédupliquer |
 | `X-B1-Signature` | Signature HMAC-SHA256 du corps brut (voir ci-dessous) |
-| `X-B1-Timestamp` | Secondes de l'époque Unix lorsque la demande a été envoyée |
+| `X-B1-Timestamp` | Secondes de l'époque Unix lorsque la requête a été envoyée |
 | `User-Agent` | `B1-Webhooks/1.0` |
 
 Le corps enveloppe la ressource modifiée dans une petite enveloppe :
@@ -120,6 +128,24 @@ Le corps enveloppe la ressource modifiée dans une petite enveloppe :
 ```
 
 Pour les événements `*.destroyed`, `data` contient uniquement l'`id` et le `churchId` de l'enregistrement supprimé.
+
+Les événements dont les charges référencent d'autres enregistrements par id portent aussi des noms lisibles par un humain, résolus au moment de la livraison : `personName` et `groupName` sur les événements d'adhésion à un groupe, `personName` sur les événements de présence, de don et d'adhésion à une liste, `groupName` sur `session.created`, et `formName` (plus `personName` quand la soumission est liée à une personne) sur `form.submission.created`.
+
+## Types de connecteur
+
+Le format de livraison par défaut est l'enveloppe JSON ci-dessus — `connectorType: "standard"`. Pour [Slack et Discord](/docs/b1-admin/integrations/slack-discord), le même moteur de webhook envoie à la place un message au format chat que ces services acceptent directement :
+
+| `connectorType` | Corps envoyé | À utiliser quand |
+|---|---|---|
+| `"standard"` (par défaut) | Enveloppe `{event, churchId, occurredAt, data}`, signée | Vous écrivez votre propre intégration, ou pointez vers Zapier / Make / un serveur personnalisé |
+| `"slack"` | `{ "text": "💝 New donation: $50.00" }` | Vous envoyez directement à une URL de webhook entrant Slack |
+| `"discord"` | `{ "content": "💝 New donation: $50.00" }` | Vous envoyez directement à une URL de webhook de canal Discord |
+
+Le type de connecteur est défini dans le menu déroulant **Connector Type** de l'éditeur de webhook, ou via `connectorType` dans le corps de `POST /membership/webhooks`. L'en-tête `X-B1-Signature` signé est toujours envoyé pour les livraisons Slack/Discord (elles l'ignorent sans problème), donc remettre un webhook sur `standard` plus tard ne nécessite pas de re-signature.
+
+## Livraisons de test
+
+Chaque éditeur de webhook dispose d'un bouton **Send Test Event** — l'appel API correspondant est `POST /membership/webhooks/:id/test`. La route de test construit une charge synthétique pour le premier événement abonné, la dispatche de manière synchrone via le vrai chemin de livraison signée (et via `formatForConnector` pour Slack/Discord), et retourne la ligne de livraison résultante incluant `responseStatus` et `responseBody`. Utilisez-la pour confirmer la connectivité et la gestion des signatures avant d'activer l'intégration pour de bon.
 
 ## Vérification des signatures
 
@@ -157,7 +183,30 @@ function isValid(string $rawBody, string $signatureHeader, string $secret): bool
 }
 ```
 
-Rejetez toute demande dont la signature ne correspond pas. Rejetez également facultativement les demandes dont le `X-B1-Timestamp` date de plus de quelques minutes pour limiter les fenêtres de rejeu.
+Rejetez toute requête dont la signature ne correspond pas. Rejetez également facultativement les requêtes dont le `X-B1-Timestamp` date de plus de quelques minutes pour limiter les fenêtres de rejeu.
+
+## Support SDK
+
+Pour Node.js, `@churchapps/integration-sdk` fournit un vérificateur typé et un middleware Express qui gère pour vous la capture du corps brut, la vérification de signature et l'analyse de l'enveloppe :
+
+```ts
+import express from "express";
+import { b1WebhookMiddleware } from "@churchapps/integration-sdk";
+
+const app = express();
+// Capturer le corps brut avant l'analyse JSON — requis pour que la signature vérifie toujours.
+app.use(express.json({ verify: (req, _res, buf) => { (req as any).rawBody = buf; } }));
+
+app.post("/webhooks/b1", b1WebhookMiddleware({ secret: process.env.B1_WEBHOOK_SECRET! }), (req, res) => {
+  const env = req.b1Webhook!;
+  switch (env.event) {
+    case "donation.created": console.log("new gift", env.data.amount); break;
+  }
+  res.sendStatus(200);
+});
+```
+
+Le SDK expose aussi `WebhookVerifier.verify(secret, rawBody, signatureHeader)` pour les runtimes non-Express (fonctions serverless, Fastify, etc.). Voir le package sur npm.
 
 ## Livraison et réessais
 
@@ -173,9 +222,9 @@ Si un webhook produit **trois livraisons épuisées consécutives**, B1 le désa
 
 ## Inspection et relivraison
 
-L'éditeur de webhook dans B1Admin affiche un tableau **Livraisons récentes** — événement, statut, nombre de tentatives, code de réponse et horodatage. La sélection d'une ligne révèle la charge complète qui a été envoyée et la réponse qui est revenue.
+L'éditeur de webhook dans B1Admin affiche un tableau **Recent Deliveries** — événement, statut, nombre de tentatives, code de réponse et horodatage. La sélection d'une ligne révèle la charge complète qui a été envoyée et la réponse qui est revenue.
 
-Utilisez **Relivrer** pour remettre en file d'attente toute livraison passée avec sa charge d'origine — utile après avoir corrigé un bug dans votre point de terminaison, ou pour remplir rétroactivement les événements que votre point de terminaison a manqués pendant qu'il était hors service.
+Utilisez **Redeliver** pour remettre en file d'attente toute livraison passée avec sa charge d'origine — utile après avoir corrigé un bug dans votre point de terminaison, ou pour remplir rétroactivement les événements que votre point de terminaison a manqués pendant qu'il était hors service.
 
 ## Exigences d'URL
 

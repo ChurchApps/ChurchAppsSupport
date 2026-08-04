@@ -1,91 +1,91 @@
 ---
-title: "Caddy egne-domene proxy"
+title: "Caddy-proxy for egendefinerte domener"
 ---
 
-# Caddy egne-domene proxy
+# Caddy-proxy for egendefinerte domener
 
 <div class="article-intro">
 
-Egne kirke domener (`mychurch.org` → kirken B1 nettsted) avslutter på en eneste Windows EC2 boks kjørende Caddy. Kassa eier TLS sertifikater, løse hver domene til sin `{sub}.b1.church` nettsted, og omvendt-proxy med ein reskriven vert header. Sin helt konfig er to filer — ein statisk `Caddyfile` og en `hosts.map` oppfrisk fra medlemskaps API — så den overlever omstart med null runtime tilstand. Denne siden dekker hvordan kassa er bygget fra bunnen av, hvordan den drift, og felt-testet fallgruver som vil bite noen som gjengir den.
+Egendefinerte kirkedomener (`mychurch.org` → kirkens B1-nettsted) avsluttes ved én enkelt Windows EC2-boks som kjører Caddy. Boksen eier TLS-sertifikatene, løser hvert domene til dets `{sub}.b1.church`-nettsted, og reverse-proxyer med en omskrevet Host-header. Hele konfigurasjonen er to filer — en statisk `Caddyfile` og en `hosts.map` oppfrisket fra Membership API-et — slik at den overlever omstarter med null kjøretidstilstand. Denne siden dekker hvordan boksen bygges fra bunnen av, hvordan den driftes, og de feltestede fallgruvene som vil bite alle som gjenskaper den.
 
 </div>
 
-For hvordan ein forespørsel løse til kirke/nettsted en gang det nå B1App, se [nettsted ruting og multi-nettsted](../architecture/websites).
+For hvordan en forespørsel løses til en kirke/et nettsted når den når B1App, se [Nettstedruting og multi-nettsted](../architecture/websites).
 
 ## Komponenter
 
-| Stykke | Hva det er |
+| Del | Hva det er |
 |---|---|
-| EC2 eksempel | Windows server; elast IP **`3.23.251.61`** (bakket inn i kirke DNS verden — IP er permanent, eksempler er disponibel) |
-| `C:\caddy\caddy.exe` | **Egne** Caddy bygge med `techknowlogick/certmagic-s3` lagring modul — lager Caddy kan ikke les sert lagre |
-| `C:\caddy\Caddyfile` | Hele proxy konfig: etterspørsmål TLS, vert→oppstrøm `map`, www→apex omdirigering, `:80`→https |
-| `C:\caddy\hosts.map` | En `{domain} {sub}.b1.church` linje per rutbar domene, importert inn i Caddyfile `map` blokk |
-| `sync-hostmap.ps1` + `CaddyHostmapSync` oppgave | Planlagt oppgave (hver 5 min + ved oppstart, som SYSTEM) oppfrisk `hosts.map` fra API og vennlig reload Caddy bare på endring |
-| Windows tjeneste `caddy` (WinSW omslag) | Kjør `caddy.exe run --config C:\caddy\Caddyfile --adapter caddyfile`; auto-omstart på feil. Caddy er ikke SCM-medvitent, så omslag trengs |
-| S3 sekk `churchapps-caddy-certs` | Delt sertifikat lagring (`region us-east-2`, prefiks `certs`) — sert overlev eksempel ombygging |
-| IAM rolle `CaddyRole` | Gir eksemplet S3 tilgang; Caddy bruk AWS standard kredensial kjede (nei nøkler i konfig) |
+| EC2-instans | Windows Server; elastisk IP **`3.23.251.61`** (bakt inn i kirke-DNS verden over — IP-en er permanent, instansene er forbruksvare) |
+| `C:\caddy\caddy.exe` | **Egendefinert** Caddy-bygg med lagringsmodulen `techknowlogick/certmagic-s3` — vanlig Caddy kan ikke lese sertifikatlageret |
+| `C:\caddy\Caddyfile` | Hele proxy-konfigurasjonen: on-demand TLS, verts-til-oppstrøms-`map`, www→apex-omdirigeringer, `:80`→https |
+| `C:\caddy\hosts.map` | Én `{domain} {sub}.b1.church`-linje per rutbart domene, importert inn i Caddyfile-ens `map`-blokk |
+| `sync-hostmap.ps1` + oppgaven `CaddyHostmapSync` | Planlagt oppgave (hvert 5. minutt + ved oppstart, som SYSTEM) oppfrisker `hosts.map` fra APIet og laster Caddy skånsomt på nytt bare ved endring |
+| Windows-tjenesten `caddy` (WinSW-wrapper) | Kjører `caddy.exe run --config C:\caddy\Caddyfile --adapter caddyfile`; auto-omstart ved feil. Caddy er ikke SCM-bevisst, så en wrapper er nødvendig |
+| S3-bøtte `churchapps-caddy-certs` | Delt sertifikatlagring (`region us-east-2`, prefiks `certs`) — sertifikater overlever instansombygginger |
+| IAM-rolle `CaddyRole` | Gir instansen S3-tilgang; Caddy bruker AWS' standard legitimasjonskjede (ingen nøkler i konfigurasjonen) |
 
-## De to API endepunkter kassa avhenger av
+## De to API-endepunktene boksen er avhengig av
 
-Begge er anonym, på medlemskaps API:
+Begge er anonyme, på Membership API-et:
 
 | Endepunkt | Rolle |
 |---|---|
-| `GET /membership/domains/authorize?domain={host}` | Caddy **etterspørsmål TLS `spør` port**: `200 {"authorized":true}` når vert (eller, for ein `www.` vert, dets apex) er en rad i `domains`; `404` ellers. Dette er overgrep kontroll — Caddy vil ikke utsted ein sert for ein vert denne endepunkt avvist |
-| `GET /membership/domains/hostmap` | `text/plain`, sortert, deduplisert `{domain} {sub}.b1.church` linjer (nettsted-medvitent: ein domene tildelt ein andre nettsted ring den nettsted subdomene). Kilde av `map` |
+| `GET /membership/domains/authorize?domain={host}` | Caddys **on-demand-TLS-`ask`-sperre**: `200 {"authorized":true}` når verten (eller, for en `www.`-vert, dens apex) er en rad i `domains`; `404` ellers. Dette er misbrukskontrollen — Caddy vil ikke utstede et sertifikat for en vert dette endepunktet avviser |
+| `GET /membership/domains/hostmap` | `text/plain`, sorterte, dedupliserte `{domain} {sub}.b1.church`-linjer (nettstedbevisst: et domene tildelt et andre nettsted ringer opp det nettstedets subdomene). Kilden til `map`-en |
 
-## Forespørsel flyt
+## Forespørselsflyt
 
-1. Nettleser løse `mychurch.org` → `3.23.251.61` (apex `A` posten, eller `CNAME proxy.b1.church`).
-2. Caddy avslutter TLS. Sertifikat på hånd i S3 → betjene; ukjent SNI → `authorize` blir spurt; 200 → utsted på etterspørsmål via La oss krypter; 404 → **handskingen blir avvist** (nei sert, nei respons — ein ukjent vert får TLS-avvist, ikke ein HTTP feil).
-3. Den `map` løse verten til `{sub}.b1.church`; `www.{apex}` få ein 302 til apex; ein autorisert-men-ukmappet vert (ein helt-ny domene innsiden ≤5-minutters synk vindu) få ein ren 404.
-4. `reverse_proxy` ring `{sub}.b1.church:443` med SNI og vert gjenskrive til oppstrøm, så Vercel kant betjener B1App nettsted.
-5. Port 80 passa ACME HTTP-01 utfordringer og 308-omdirigering alt annet til https.
+1. Nettleseren løser `mychurch.org` → `3.23.251.61` (apex `A`-post, eller `CNAME proxy.b1.church`).
+2. Caddy avslutter TLS. Sertifikat på hånden i S3 → betjener; ukjent SNI → `authorize` spørres; 200 → utstedes on-demand via Let's Encrypt; 404 → **håndtrykket avvises** (ikke noe sertifikat, ikke noe svar — en ukjent vert får TLS-avslag, ikke en HTTP-feil).
+3. `map`-en løser Host til `{sub}.b1.church`; `www.{apex}` får en 302 til apex; en autorisert-men-ukartlagt vert (et helt nytt domene innenfor det ≤5-minutters synkroniseringsvinduet) får en ren 404.
+4. `reverse_proxy` ringer opp `{sub}.b1.church:443` med SNI og Host omskrevet til oppstrømmen, slik at Vercels kant betjener B1App-nettstedet.
+5. Port 80 slipper gjennom ACME HTTP-01-utfordringer og 308-omdirigerer alt annet til https.
 
-Nye-domene propagering: ein domene lagret i B1Admin blir rutbar innsiden ~5 minutter (synk oppgave); dets sert blir laget på første HTTPS hit.
+Propagering av nytt domene: et domene lagret i B1Admin blir rutbart innen ~5 minutter (synkroniseringsoppgaven); sertifikatet dets genereres ved det første HTTPS-treffet.
 
-## Bygge kassa fra bunnen av
+## Å bygge boksen fra bunnen av
 
-Kondensert fra felt-testet prosedyre (full trinn-for-trinn med copy-paste kommandoer lever i drift arbeidsområde, ikke denne repo). Forutsetninger først — bygg er død uten dem:
+Kondensert fra den feltestede prosedyren (fullstendig trinn-for-trinn med kopier-og-lim-kommandoer ligger i driftsarbeidsområdet, ikke dette repoet). Forutsetninger først — bygget er dødt uten dem:
 
-1. **IAM**: feste `CaddyRole` (S3 tilgang til sert sekk) til eksempel. Bekreft via IMDSv2 fra kassa — merk ein naken IMDS GET returnering 401 bare betyr IMDSv2 er håndhevet, ikke "nei rolle".
-2. **API helse**: `authorize` må returnerer 404 for ein falsk domene og `hostmap` må returnerer 200 før noe som helst annet.
+1. **IAM**: fest `CaddyRole` (S3-tilgang til sertifikatbøtten) til instansen. Bekreft via IMDSv2 fra boksen — merk at en bar IMDS GET som returnerer 401 bare betyr at IMDSv2 er håndhevet, ikke "ingen rolle".
+2. **API-helse**: `authorize` må returnere 404 for et falskt domene, og `hostmap` må returnere 200 før noe annet.
 
-Så:
+Deretter:
 
-3. **Binær**: last ned ein egne bygge fra Caddy bygge tjeneste — `https://caddyserver.com/api/download?os=windows&arch=amd64&p=github.com/techknowlogick/certmagic-s3` (~57 MB mot ~45 MB lager; v2.11.4 på tids skriving). Modul valg betyr: `techknowlogick/certmagic-s3` bruker `bucket`/`region`/`prefix` nøkler som passer eksisterende sert layout; den `ss098` gaffel bruk `host`/`endpoint` og vil **ikke** finne eksisterende sert.
-4. **Filer**: `Caddyfile` + `sync-hostmap.ps1` inn i `C:\caddy\`; frø kartet en gang med `sync-hostmap.ps1 -NoReload`.
-5. **Porta før første start**: `caddy list-modules` må vise s3 lagring modul; `caddy adapt` må send `"module":"s3","bucket":"churchapps-caddy-certs","region":"us-east-2","prefix":"certs"` i dets lagring blokk; `caddy validate` må passa.
-6. **Tjeneste**: installerer via WinSW (tjeneste id `caddy`, auto-omstart på feil, rullende logger). Kjør som lokalSystem, som når IMDS for rolle kredensial.
-7. **Synk oppgave**: registrer `CaddyHostmapSync` (SYSTEM, hver 5 min + ved oppstart, 4-minutters utførelse grense).
-8. **Bekreft pre-cutover** av kraft-løs domener til `127.0.0.1` med `curl --resolve` (kassa har nei ekte trafikk til EIP beveg): ein eksisterende domene må betjene med ein gyldig båret-over sert; `www.` må 302; ein ukjent vert må bli TLS-avvist; og `Restart-Service caddy` må kommer tilbake betjening **med nei manuell re-primer** — den omstart test er hele punkt av statisk design.
-9. **Go-live**: re-assosiat elast IP `3.23.251.61` til ny eksempel. Kirke DNS aldri endringer.
+3. **Binær**: last ned et egendefinert bygg fra Caddys byggetjeneste — `https://caddyserver.com/api/download?os=windows&arch=amd64&p=github.com/techknowlogick/certmagic-s3` (~57 MB mot ~45 MB standard; v2.11.4 ved skrivetidspunktet). Modulvalget betyr noe: `techknowlogick/certmagic-s3` bruker nøklene `bucket`/`region`/`prefix` som matcher det eksisterende sertifikatoppsettet; `ss098`-forken bruker `host`/`endpoint` og vil **ikke** finne de eksisterende sertifikatene.
+4. **Filer**: `Caddyfile` + `sync-hostmap.ps1` inn i `C:\caddy\`; frø kartet én gang med `sync-hostmap.ps1 -NoReload`.
+5. **Sperrer før første oppstart**: `caddy list-modules` må vise s3-lagringsmodulen; `caddy adapt` må sende ut `"module":"s3","bucket":"churchapps-caddy-certs","region":"us-east-2","prefix":"certs"` i sin lagringsblokk; `caddy validate` må passere.
+6. **Tjeneste**: installer via WinSW (tjeneste-id `caddy`, auto-omstart ved feil, rullerende logger). Kjører som LocalSystem, som når IMDS for rolle-legitimasjonen.
+7. **Synkroniseringsoppgave**: registrer `CaddyHostmapSync` (SYSTEM, hvert 5. minutt + ved oppstart, 4-minutters kjøretidsgrense).
+8. **Verifiser før overgangen** ved å tvinge oppløsning av domener til `127.0.0.1` med `curl --resolve` (boksen har ingen ekte trafikk før den elastiske IP-en flyttes): et eksisterende domene må betjene med et gyldig medbrakt sertifikat; `www.` må gi 302; en ukjent vert må bli TLS-avvist; og `Restart-Service caddy` må komme tilbake og betjene **uten manuell re-priming** — den omstart-testen er hele poenget med den statiske designen.
+9. **Live-lansering**: reassosier den elastiske IP-en `3.23.251.61` til den nye instansen. Kirke-DNS endres aldri.
 
-## Felt-testet fallgruver (lært den harde måten — ikke regredert)
+## Feltestede fallgruver (lært den harde veien — må ikke gjeninnføres)
 
-| Fallgruv | Symptom | Fix |
+| Fallgruve | Symptom | Fiks |
 |---|---|---|
-| `tls_server_name {vars.upstream}` i omvendt_proxy transport | Hver proxied domene 502s: kart plassholder løse **tom på TLS-ring tid** ("enten ServerName eller InsecureSkipVerify må bli oppgitt") | Bruk transport-innfødt plassholder: `tls_server_name {http.reverse_proxy.upstream.host}` |
-| Duplisert nøkler eller søppel linjer i `hosts.map` | Caddy `map` handler **hard-feil på ein duplisert inngang nøkkel** — en dårlig linje kan ta hele konfig ned | Synk script normaliser mellomrom, droppe velformat linjer (avvis helt bare hvis >20% er dårlig), dedup først-vin, og skriv **BOM-fri** UTF-8 (en BOM korrupt første kart nøkkel). API også filter tom/plass-innehål domene rader på kilden |
-| `Register-ScheduledTask -RepetitionDuration ([TimeSpan]::MaxValue)` | Oppgave registrering **stille mislykkes** (ut-av-område XML, ikke-avsluttende feil) | Bygge repetisjon som en `MSFT_TaskRepetitionPattern` CIM eksempel med `Interval = "PT5M"` og nei varigheit; legge til 4-minutters `ExecutionTimeLimit` (den første SYSTEM kjør kan henge på kaldt TLS/CRL oppslag) |
+| `tls_server_name {vars.upstream}` i reverse_proxy-transporten | Hvert proxyet domene gir 502: kartets plassholdere løses **tomme ved TLS-oppringingstidspunktet** ("either ServerName or InsecureSkipVerify must be specified") | Bruk den transportnative plassholderen: `tls_server_name {http.reverse_proxy.upstream.host}` |
+| Dupliserte nøkler eller søppellinjer i `hosts.map` | Caddys `map`-håndterer **feiler hardt ved en duplisert inngangsnøkkel** — én dårlig linje kan ta ned hele konfigurasjonen | Synkroniseringsskriptet normaliserer mellomrom, dropper feilformede linjer (avviser bare i sin helhet hvis >20 % er dårlige), dedupliserer med først-vinner, og skriver **BOM-fri** UTF-8 (en BOM ødelegger den første kart-nøkkelen). APIet filtrerer også bort tomme/mellomrom-holdende domenerader ved kilden |
+| `Register-ScheduledTask -RepetitionDuration ([TimeSpan]::MaxValue)` | Oppgaveregistrering **feiler i stillhet** (XML utenfor gyldig område, ikke-avsluttende feil) | Bygg repetisjonen som en `MSFT_TaskRepetitionPattern`-CIM-instans med `Interval = "PT5M"` og ingen varighet; legg til en 4-minutters `ExecutionTimeLimit` (den første SYSTEM-kjøringen kan henge på et kaldt TLS-/CRL-oppslag) |
 
 :::warning
-Admin API bind til `localhost:2019` bare. Den eldre runtime modus avslørte det fjern så medlemskaps API kunne push rute konfig; statisk design trenger nei fjern push, og mindre overflate er bevisst. `caddy reload` (kjør lokalt av synk script) er den eneste admin-API forbruker.
+Admin-APIet binder seg kun til `localhost:2019`. Den eldre kjøretidsmodusen eksponerte det eksternt slik at Membership API-et kunne pushe rutekonfigurasjoner; den statiske designen trenger ingen eksterne push, og den mindre overflaten er bevisst. `caddy reload` (kjørt lokalt av synkroniseringsskriptet) er den eneste admin-API-konsumenten.
 :::
 
-:::info eldre runtime push
-`CaddyHelper` i API (og `/membership/domains/caddy` + `/caddy/init` endepunkter) fortsatt eksisterer som tilbakefallet sti til gamle runtime-konfigurert modus. De er planlagt for slettings en gang statisk boks har blitt stabil for et par uker — etter det, `authorize` + `hostmap` er den eneste integrasjon punkt.
+:::info Eldre kjøretids-push
+`CaddyHelper` i APIet (og endepunktene `/membership/domains/caddy` + `/caddy/init`) eksisterer fortsatt som fallback-stien til den gamle kjøretidskonfigurerte modusen. De er planlagt for sletting når den statiske boksen har vært stabil et par uker — etter det er `authorize` + `hostmap` de eneste integrasjonspunktene.
 :::
 
 ## Drift
 
-- **Logger**: WinSW rullende logger i `C:\caddy\` (tjeneste stdout/err — omvendt-proxy feil lande i `caddy-service.err.log`); synk historie i `C:\caddy\sync-hostmap.log`.
-- **Kraft ein kart oppfrisk**: `Start-ScheduledTask -TaskName CaddyHostmapSync`.
-- **Konfig endring**: redigering `C:\caddy\Caddyfile`, så `caddy validate` + `caddy reload` (eller `Restart-Service caddy` — omstart er sikker ved design).
-- **Masse domene slettings** tripp synk script krympe vakt ved design; beveg gamle `hosts.map` til siden og re-kjør oppgave for å godta ein bevisst stor krympe.
-- **DNS instruksjon for kirker er uendret på evig**: apex `A 3.23.251.61` eller `CNAME proxy.b1.church`.
+- **Logger**: WinSW rullerende logger i `C:\caddy\` (tjeneste-stdout/-err — reverse-proxy-feil havner i `caddy-service.err.log`); synkroniseringshistorikk i `C:\caddy\sync-hostmap.log`.
+- **Tving en kartoppfrisking**: `Start-ScheduledTask -TaskName CaddyHostmapSync`.
+- **Konfigurasjonsendring**: rediger `C:\caddy\Caddyfile`, deretter `caddy validate` + `caddy reload` (eller `Restart-Service caddy` — omstarter er trygge etter design).
+- **Masseslettinger av domener** utløser synkroniseringsskriptets krympevakt etter design; flytt den gamle `hosts.map` til side og kjør oppgaven på nytt for å godta en tilsiktet stor krymping.
+- **DNS-instruksjonene for kirker er uendret for alltid**: apex `A 3.23.251.61` eller `CNAME proxy.b1.church`.
 
 ## Relaterte sider
 
-- [nettsted ruting og multi-nettsted](../architecture/websites) — hvordan proxied forespørsel løse til kirke/nettsted i B1App
-- [API deployment](./apis) — deployment medlemskaps API som betjener `authorize`/`hostmap`
+- [Nettstedruting og multi-nettsted](../architecture/websites) — hvordan den proxyerte forespørselen løses til en kirke/et nettsted i B1App
+- [API-distribusjon](./apis) — distribuering av Membership API-et som betjener `authorize`/`hostmap`

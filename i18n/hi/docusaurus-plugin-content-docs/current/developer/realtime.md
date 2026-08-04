@@ -30,14 +30,14 @@ ChurchApps हर रीयल-टाइम सतह के लिए एक �
 2. **Connection rows** (`POST /messaging/connections`) `connections` तालिका में रिकॉर्ड किया गया -- ये एक `(socketId, churchId, conversationId)` tuple को एक कमरे के ग्राहक के रूप में चिह्नित करते हैं।
 3. **Server-side fan-out** `DeliveryHelper.sendConversationMessages()` द्वारा -- जब एक संदेश सहेजा जाता है (`POST /messaging/messages/send`), सर्वर मेल खाते हुए connection rows को पढ़ता है और प्रत्येक खुले socket को एक टाइप किया गया payload भेजता है।
 
-कोई Socket.IO नहीं है, कोई long-polling fallback नहीं है, और कोई अलग microservice नहीं है। WebSocket REST API के समान प्रक्रिया में चलता है (AWS में HTTP के लिए `web` Lambda, WebSocket के लिए `socket` Lambda; स्थानीय रूप से एक एकीकृत प्रक्रिया)।
+कोई Socket.IO नहीं है, कोई long-polling fallback नहीं है, और कोई अलग microservice नहीं है। WebSocket REST API के समान प्रक्रिया में चलता है (AWS में HTTP के लिए `web` Lambda, WebSocket के लिए `socket` Lambda; स्थानीय रूप से और Railway पर एक एकीकृत प्रक्रिया)।
 
 ## पोर्ट और परिवहन
 
 | एनवायरनमेंट | HTTP | WebSocket |
 |-------------|------|-----------|
 | स्थानीय विकास | `8084` | `ws://localhost:8087` (अलग `WebSocketServer`) |
-| Railway / single-port hosts | साझा | साझा HTTP सर्वर (`SocketHelper.attachToServer()`) |
+| Railway / Docker / single-port hosts (`RAILWAY_ENVIRONMENT` या `SELF_HOSTED` सेट) | साझा | साझा HTTP सर्वर (`SocketHelper.attachToServer()`) |
 | AWS Lambda | API Gateway HTTP | API Gateway WebSocket (`$connect` / `$disconnect` / `$default` routes) |
 
 परिवहन चयनकर्ता `deliveryProvider` कॉन्फ़िगरेशन है:

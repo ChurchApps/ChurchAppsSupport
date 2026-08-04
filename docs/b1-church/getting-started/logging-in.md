@@ -22,7 +22,7 @@ Logging in to B1.church gives you access to the member portal where you can view
 
 1. Go to your church's B1.church URL (for example, `https://yourchurchname.b1.church`).
 2. Click the **Login** button in the top-right corner of the header.
-3. Enter your **email address** and **password**.
+3. Enter your **email address** and **password**, or click **Continue with Google** or **Continue with Microsoft** if your church has single sign-on enabled.
 4. Click **Sign In**.
 
 After signing in, you will be taken back to the page you were on before you clicked login. If you navigated directly to a member portal page while logged out, you will be returned to that page automatically after signing in.

@@ -1,95 +1,95 @@
 ---
-title: "कस्टम फील्ड्स"
+title: "कस्टम फ़ील्ड"
 ---
 
-# कस्टम फील्ड्स
+# कस्टम फ़ील्ड
 
 <div class="article-intro">
 
-**कस्टम फील्ड्स** आपको हर person record पर अपनी स्वयं की जानकारी को track करने देते हैं -- चीजें जिनके लिए B1 के पास एक built-in field नहीं है, जैसे एक background-check expiration date, एक T-shirt size, या एक baptism class status। आप एक field को एक बार Settings में define करते हैं, फिर प्रत्येक person के profile पर एक value fill करते हैं और इस पर search करते हैं या lists बनाते हैं। यह एक single piece of custom data store करने के लिए केवल एक People form बनाने के पुराने workaround को replace करता है।
+**Custom Fields** आपको हर व्यक्ति रिकॉर्ड पर अपनी खुद की जानकारी ट्रैक करने देते हैं — ऐसी चीज़ें जिनके लिए B1 में कोई अंतर्निहित फ़ील्ड नहीं है, जैसे बैकग्राउंड-चेक समाप्ति तिथि, टी-शर्ट का आकार, या बपतिस्मा कक्षा की स्थिति। आप Settings में एक बार एक फ़ील्ड परिभाषित करते हैं, फिर हर व्यक्ति की प्रोफ़ाइल पर एक मान भरते हैं और उस पर खोजें या सूचियां बनाएं। यह केवल एक कस्टम डेटा टुकड़ा संग्रहीत करने के लिए People फॉर्म बनाने की पुरानी तरकीब की जगह लेता है।
 
 </div>
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- Fields को define करने के लिए और values fill करने के लिए आपको **People** edit permission की आवश्यकता है, और **Settings** area को access करने की। Anyone with People view permission values को देख सकते हैं। [Roles & Permissions](./roles-permissions.md) देखें।
-- Decide करें कि आप क्या track करना चाहते हैं और कौन सा type best fit करता है (text, एक number, एक date, एक yes/no answer, या एक pick-list) शुरू करने से पहले।
+- फ़ील्ड परिभाषित करने और मान भरने के लिए आपको **People** संपादन अनुमति की आवश्यकता है, साथ ही **Settings** क्षेत्र तक पहुंच भी। People देखने की अनुमति वाला कोई भी व्यक्ति मान देख सकता है। देखें [भूमिकाएं और अनुमतियां](./roles-permissions.md)।
+- शुरू करने से पहले तय करें कि आप क्या ट्रैक करना चाहते हैं और कौन सा प्रकार सबसे उपयुक्त है (टेक्स्ट, संख्या, तिथि, हां/नहीं उत्तर, या पिक-लिस्ट)।
 
 </div>
 
-## Custom Fields को खोलना
+## Custom Fields खोलना
 
-B1 Admin में, बाईं sidebar में **Settings** पर जाएं और **Custom Fields** card को select करें। आप सीधे **/settings/custom-fields** पर जा सकते हैं। आप हर field की एक list देखेंगे जिसे आपने define किया है, इसका **Name** और **Field Type** दिखाते हुए। यदि आपने अभी तक कोई create नहीं किया है, panel *"No custom fields have been added yet."* पढ़ता है।
+B1 Admin में, बाएं साइडबार में **Settings** पर जाएं और **Custom Fields** कार्ड चुनें। आप सीधे **/settings/custom-fields** पर भी जा सकते हैं। आपको हर उस फ़ील्ड की सूची दिखेगी जिसे आपने परिभाषित किया है, जिसमें उसका **Name** और **Field Type** दिखेगा। यदि आपने अभी तक कोई नहीं बनाया है, तो पैनल में *"No custom fields have been added yet."* दिखता है।
 
-## एक Field जोड़ना
+## एक फ़ील्ड जोड़ना
 
-1. **Add Field** को click करें।
-2. Editor में जो दाईं ओर खुलता है, एक **Name** enter करें -- यह label है जो staff को person profiles पर और search में दिखाई देगा (उदाहरण के लिए, *Background check expires*)।
+1. **Add Field** पर क्लिक करें।
+2. दाईं ओर खुलने वाले संपादक में, एक **Name** दर्ज करें — यह वह लेबल है जो स्टाफ को व्यक्ति प्रोफ़ाइलों और खोज में दिखाई देगा (उदाहरण के लिए, *Background check expires*)।
 3. एक **Field Type** चुनें:
-   - **Textbox** -- free-form short text।
-   - **Whole Number** -- numbers without decimals (उदाहरण के लिए, एक count)।
-   - **Decimal** -- numbers जो decimals को include कर सकते हैं।
-   - **Date** -- एक calendar date।
-   - **Yes/No** -- एक simple yes-or-no answer।
-   - **Multiple Choice** -- एक pick-list। जब आप इस type को choose करते हैं, एक **choices editor** दिखाई देता है ताकि आप प्रत्येक option को add कर सकें जो लोग select कर सकते हैं।
-4. **Save** को click करें।
+   - **Textbox** — स्वतंत्र-रूप लघु टेक्स्ट।
+   - **Whole Number** — बिना दशमलव के संख्याएं (उदाहरण के लिए, एक गणना)।
+   - **Decimal** — ऐसी संख्याएं जिनमें दशमलव शामिल हो सकते हैं।
+   - **Date** — एक कैलेंडर तिथि।
+   - **Yes/No** — एक सरल हां-या-नहीं उत्तर।
+   - **Multiple Choice** — एक पिक-लिस्ट। जब आप यह प्रकार चुनते हैं, तो एक **choices editor** दिखाई देता है ताकि आप हर विकल्प जोड़ सकें जिसे लोग चुन सकते हैं।
+4. **Save** पर क्लिक करें।
 
-Field अब हर person के profile पर उपलब्ध है।
+अब यह फ़ील्ड हर व्यक्ति की प्रोफ़ाइल पर उपलब्ध है।
 
 :::info
-Field types [form questions](../forms/creating-forms.md) के लिए उपयोग किए जाने वाले same set हैं, तो values B1 भर में consistently behave करते हैं।
+फ़ील्ड प्रकार [फॉर्म प्रश्नों](../forms/creating-forms.md) में उपयोग होने वाले उसी सेट के हैं, इसलिए मान पूरे B1 में एक जैसा व्यवहार करते हैं।
 :::
 
-## एक Field को Edit करना
+## एक फ़ील्ड संपादित करना
 
-List में किसी भी field row को click करें इसे editor में फिर से खोलने के लिए। Name, type, या choices change करें और **Save** को click करें।
+इसे संपादक में फिर से खोलने के लिए सूची में किसी भी फ़ील्ड पंक्ति पर क्लिक करें। नाम, प्रकार, या विकल्प बदलें और **Save** पर क्लिक करें।
 
 :::warning
-एक field के **Field Type** को change करना जिसके पास पहले से values हैं (उदाहरण के लिए, Textbox से Date तक) previously entered values को एक format में छोड़ सकता है जो अब नए type से match नहीं करता। एक बार staff ने field को fill करना शुरू कर दिया तो types को सावधानी से change करें।
+किसी ऐसी फ़ील्ड का **Field Type** बदलना जिसमें पहले से मान हैं (उदाहरण के लिए, Textbox से Date में) पहले दर्ज किए गए मानों को ऐसे फॉर्मेट में छोड़ सकता है जो अब नए प्रकार से मेल नहीं खाता। एक बार स्टाफ ने फ़ील्ड भरना शुरू कर दिया है, तो प्रकार सावधानी से बदलें।
 :::
 
-## एक Field को Delete करना
+## एक फ़ील्ड हटाना
 
-संपादन के लिए एक field को खोलें और **Delete** को click करें। आपको confirm करने के लिए पूछा जाएगा: *"Are you sure you wish to delete this custom field? Its stored values will also be removed."* एक field को delete करना permanently इसे **और इसके लिए stored हर value को** सभी लोगों पर remove करता है -- यह undo नहीं किया जा सकता।
+संपादन के लिए एक फ़ील्ड खोलें और **Delete** पर क्लिक करें। आपसे पुष्टि करने के लिए कहा जाएगा: *"Are you sure you wish to delete this custom field? Its stored values will also be removed."* किसी फ़ील्ड को हटाने से यह स्थायी रूप से हट जाता है **साथ ही सभी लोगों के लिए इसके लिए संग्रहीत हर मान** भी — इसे पूर्ववत नहीं किया जा सकता।
 
-## एक Person पर Values Fill करना
+## किसी व्यक्ति पर मान भरना
 
-एक बार कम से कम एक custom field exist करने के बाद, इसके values built-in details के साथ सही अगल-बगल रहते हैं प्रत्येक person के record पर -- आप उन्हें **Personal Details** में view करते हैं और same form पर edit करते हैं जो आप person की rest जानकारी के लिए use करते हैं। जब तक आप अपनी पहली field define नहीं करते तब तक कुछ भी extra appear नहीं होता।
+एक बार कम से कम एक कस्टम फ़ील्ड मौजूद हो जाने पर, इसके मान हर व्यक्ति के रिकॉर्ड पर अंतर्निहित विवरणों के साथ ही रहते हैं — आप उन्हें **Personal Details** में देखते हैं और उसी फॉर्म पर संपादित करते हैं जिसका उपयोग आप व्यक्ति की बाकी जानकारी के लिए करते हैं। जब तक आप अपना पहला फ़ील्ड परिभाषित नहीं करते, तब तक कुछ भी अतिरिक्त दिखाई नहीं देता।
 
-1. **People** में एक person के record को खोलें।
-2. **Personal Details** section में, **Edit** (pencil) button को click करें।
-3. Edit form के bottom पर **Custom Fields** area पर scroll करें और प्रत्येक field के लिए एक value fill करें। प्रत्येक field input दिखाता है जो इसके type से match करता है -- Date fields के लिए एक date picker, Yes/No fields के लिए एक yes/no dropdown, Multiple Choice के लिए एक pick-list, आदि।
-4. **Save** को click करें। आपके custom-field values person के बाकी details के साथ save होते हैं।
+1. **People** में किसी व्यक्ति का रिकॉर्ड खोलें।
+2. **Personal Details** अनुभाग में, **Edit** (पेंसिल) बटन पर क्लिक करें।
+3. संपादन फॉर्म के नीचे **Custom Fields** क्षेत्र तक स्क्रॉल करें और प्रत्येक फ़ील्ड के लिए एक मान भरें। प्रत्येक फ़ील्ड अपने प्रकार से मेल खाने वाला इनपुट दिखाता है — Date फ़ील्ड के लिए एक तिथि चयनकर्ता, Yes/No फ़ील्ड के लिए एक हां/नहीं ड्रॉपडाउन, Multiple Choice के लिए एक पिक-लिस्ट, इत्यादि।
+4. **Save** पर क्लिक करें। आपके कस्टम-फ़ील्ड मान व्यक्ति के बाकी विवरणों के साथ सहेजे जाते हैं।
 
-Profile पर वापस, कोई भी field जिसके पास एक value है अब **Personal Details** section में दिखाई देता है (Yes/No answers *Yes* या *No* के रूप में read करते हैं, और Multiple Choice option का label दिखाता है)। Blank किए गए fields simply hidden हैं। एक value को remove करने के लिए, person को edit करें, field को clear करें, और save करें -- एक empty value record से delete किया जाता है बजाय blank के रूप में stored होने के।
+प्रोफ़ाइल पर वापस, कोई भी मान वाली फ़ील्ड अब **Personal Details** अनुभाग में दिखाई देती है (Yes/No उत्तर *Yes* या *No* के रूप में पढ़े जाते हैं, और Multiple Choice विकल्प का लेबल दिखाता है)। खाली छोड़ी गई फ़ील्ड बस छिपी रहती हैं। किसी मान को हटाने के लिए, व्यक्ति को संपादित करें, फ़ील्ड साफ़ करें, और सहेजें — एक खाली मान को खाली के रूप में संग्रहीत करने के बजाय रिकॉर्ड से हटा दिया जाता है।
 
 :::tip
-Classic use case volunteer safety है: एक **Date** field create करें *Background check expires* कहा जाता है, प्रत्येक volunteer के date को record करें, फिर एक [Saved List](../people/lists.md) build करें जो कोई भी flag करता है जिसका date pass हो गया है।
+क्लासिक उपयोग मामला स्वयंसेवक सुरक्षा है: *Background check expires* नाम की एक **Date** फ़ील्ड बनाएं, प्रत्येक स्वयंसेवक की तिथि रिकॉर्ड करें, फिर एक [Saved List](../people/lists.md) बनाएं जो उन सभी को फ़्लैग करे जिनकी तिथि निकल चुकी है।
 :::
 
-## Custom Fields पर Searching और Building Lists
+## कस्टम फ़ील्ड पर खोजना और सूचियां बनाना
 
-कस्टम fields fully searchable हैं:
+कस्टम फ़ील्ड पूरी तरह से खोजने योग्य हैं:
 
-1. **People** page पर, [Advanced Search](../people/searching-people.md) को खोलें।
-2. **Custom Fields** category को expand करें।
-3. Field को check करें जिस पर आप filter करना चाहते हैं, एक operator choose करें, और एक value enter करें। Operators offered field के type से match करते हैं:
-   - **Textbox** -- contains, equals, starts with, ends with।
-   - **Whole Number / Decimal** -- equals, greater than, greater than or equal, less than, less than or equal।
-   - **Date** -- equals, after (greater than), before (less than)।
-   - **Yes/No** -- equals Yes या No।
-   - **Multiple Choice** -- equals या contains एक choices में से।
+1. **People** पेज पर, [Advanced Search](../people/searching-people.md) खोलें।
+2. **Custom Fields** श्रेणी खोलें।
+3. जिस फ़ील्ड पर फ़िल्टर करना है उसे चेक करें, एक ऑपरेटर चुनें, और एक मान दर्ज करें। पेश किए गए ऑपरेटर फ़ील्ड के प्रकार से मेल खाते हैं:
+   - **Textbox** — शामिल है, बराबर है, से शुरू होता है, पर समाप्त होता है।
+   - **Whole Number / Decimal** — बराबर है, से अधिक, से अधिक या बराबर, से कम, से कम या बराबर।
+   - **Date** — बराबर है, बाद (से अधिक), पहले (से कम)।
+   - **Yes/No** — Yes या No के बराबर है।
+   - **Multiple Choice** — बराबर है या विकल्पों में से किसी एक को शामिल करता है।
 
-कोई भी custom-field search को एक [List](../people/lists.md) के रूप में save करें। Lists live queries हैं, तो एक list *Background check expires is before today* पर built हर बार जब आप इसे खोलते हैं तो हर person को फिर से check करता है -- कोई manual upkeep नहीं।
+किसी भी कस्टम-फ़ील्ड खोज को [List](../people/lists.md) के रूप में सहेजें। सूचियां लाइव क्वेरी होती हैं, इसलिए *Background check expires is before today* पर बनी एक सूची हर बार जब आप इसे खोलते हैं तो हर व्यक्ति को फिर से जांचती है — कोई मैनुअल रखरखाव नहीं।
 
-## Merge पर क्या होता है
+## मर्ज करने पर क्या होता है
 
-जब आप [two person records को merge करते हैं](../people/adding-people.md), custom-field values स्वचालित रूप से carry over करते हैं। Person जिसे आप keep करते हैं अपने स्वयं के values को hold करता है; किसी भी field के लिए जहां केवल removed person के पास value था, वह value copy किया जाता है ताकि कुछ भी lost न हो।
+जब आप [दो व्यक्ति रिकॉर्ड मर्ज करते हैं](../people/adding-people.md), तो कस्टम-फ़ील्ड मान स्वचालित रूप से आगे बढ़ जाते हैं। जिस व्यक्ति को आप रखते हैं वह अपने स्वयं के मानों को बनाए रखता है; किसी भी फ़ील्ड के लिए जहां केवल हटाए गए व्यक्ति के पास एक मान था, उस मान को कॉपी कर लिया जाता है ताकि कुछ भी खो न जाए।
 
 ## संबंधित लेख
 
-- [Searching People](../people/searching-people.md) -- advanced search, including the Custom Fields category
-- [Saved Lists](../people/lists.md) -- एक custom-field search को save करें और इसे फिर से live करें
-- [Roles & Permissions](./roles-permissions.md) -- कौन fields को define कर सकते हैं और values को edit कर सकते हैं
-- [Creating Forms](../forms/creating-forms.md) -- multi-question data collection के लिए जहां एक full form single fields से बेहतर fit करता है
+- [लोगों को खोजना](../people/searching-people.md) — Custom Fields श्रेणी सहित एडवांस्ड सर्च
+- [सहेजी गई सूचियां](../people/lists.md) — एक कस्टम-फ़ील्ड खोज को सहेजें और इसे लाइव फिर से चलाएं
+- [भूमिकाएं और अनुमतियां](./roles-permissions.md) — कौन फ़ील्ड परिभाषित कर सकता है और मान संपादित कर सकता है
+- [फॉर्म बनाना](../forms/creating-forms.md) — बहु-प्रश्न डेटा संग्रह के लिए जहां एकल फ़ील्ड की तुलना में पूरा फॉर्म बेहतर फिट बैठता है

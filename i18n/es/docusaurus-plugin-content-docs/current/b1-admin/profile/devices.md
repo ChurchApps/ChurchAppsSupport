@@ -1,62 +1,62 @@
 ---
-title: "Gestionar Dispositivos"
+title: "Administración de Dispositivos"
 ---
 
-# Gestionar Dispositivos
+# Administración de Dispositivos
 
 <div class="article-intro">
 
-La página de Dispositivos te permite gestionar los dispositivos ChurchAppsPlayer y FreePlay conectados a tu cuenta. Estos dispositivos se utilizan para transmitir contenido y mostrar medios de la iglesia en pantallas en tu ubicación.
+La página Dispositivos le permite administrar los dispositivos ChurchAppsPlayer y FreePlay conectados a su cuenta. Estos dispositivos se usan para transmitir contenido y mostrar los medios de la iglesia en pantallas en su ubicación.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de comenzar</h4>
+<h4>Antes de Comenzar</h4>
 
-- Ten un dispositivo ChurchAppsPlayer o FreePlay encendido y conectado a Internet
-- Anota el código de emparejamiento que se muestra en la pantalla del dispositivo
-- Revisa la [configuración de tu perfil](./managing-profile.md) si aún no lo has hecho
+- Tenga un dispositivo ChurchAppsPlayer encendido y conectado a internet
+- Anote el código de emparejamiento que se muestra en la pantalla del dispositivo
+- Revise su [configuración de perfil](./managing-profile.md) si aún no lo ha hecho
 
 </div>
 
-## Ver tus dispositivos
+## Ver Sus Dispositivos
 
-Cuando abras la página de Dispositivos, verás una tabla con todos los dispositivos registrados con la siguiente información:
+Cuando abre la página Dispositivos, verá una tabla que enumera todos los dispositivos registrados con la siguiente información:
 
-- **Etiqueta** -- El nombre que has asignado al dispositivo.
-- **Fecha de Registro** -- Cuándo se emparejó el dispositivo por primera vez con tu cuenta.
-- **Última Fecha de Actividad** -- La vez más reciente que el dispositivo se conectó a tu cuenta.
+- **Etiqueta** -- El nombre que le ha asignado al dispositivo.
+- **Fecha de Registro** -- Cuándo se emparejó por primera vez el dispositivo con su cuenta.
+- **Fecha de Última Actividad** -- La vez más reciente en que el dispositivo se conectó a su cuenta.
 
-## Agregar un nuevo dispositivo
+## Agregar un Nuevo Dispositivo
 
-1. Haz clic en el botón **Agregar Dispositivo** en la parte superior de la página de Dispositivos.
-2. Se te pedirá que ingreses un **código de emparejamiento**.
-3. Busca el código de emparejamiento que se muestra en el dispositivo ChurchAppsPlayer o FreePlay que deseas conectar.
-4. Ingresa el código. Si es un FreePlay TV, un menú desplegable **Mostrar Planes Para** te permite elegir el tipo de plan que la pantalla debe seguir — déjalo en **Ninguno** para usar el dispositivo solo para exploración y notificaciones.
-5. Confirma. El dispositivo aparecerá en tu tabla de dispositivos una vez emparejado exitosamente.
-
-:::tip
-Asegúrate de que el dispositivo esté encendido y conectado a Internet antes de intentar emparejarlo. El código de emparejamiento se muestra en la pantalla del dispositivo.
-:::
-
-## Editar la etiqueta de un dispositivo
-
-1. Haz clic en el **nombre del dispositivo** en la tabla de dispositivos.
-2. Actualiza la etiqueta con algo descriptivo (por ejemplo, "Pantalla Principal del Santuario" o "Pantalla del Vestíbulo").
-3. Guarda tus cambios.
+1. Haga clic en el botón **Agregar Dispositivo** en la parte superior de la página Dispositivos.
+2. Se le pedirá que ingrese un **código de emparejamiento**.
+3. Encuentre el código de emparejamiento que se muestra en el dispositivo ChurchAppsPlayer o FreePlay que desea conectar.
+4. Ingrese el código. Si es un TV con FreePlay, un menú desplegable **Mostrar Planes Para** le permite elegir el tipo de plan que debe seguir la pantalla — déjelo en **Ninguno** para usar el dispositivo solo para navegación y notificaciones.
+5. Confirme. El dispositivo aparecerá en su tabla de dispositivos una vez emparejado exitosamente.
 
 :::tip
-Usar etiquetas claras y descriptivas facilita identificar cuál es cada dispositivo, especialmente cuando tienes múltiples pantallas configuradas en tu iglesia.
+Asegúrese de que el dispositivo esté encendido y conectado a internet antes de intentar emparejarlo. El código de emparejamiento se muestra en la pantalla del dispositivo.
 :::
 
-## Gestionar el acceso de dispositivos
+## Editar la Etiqueta de un Dispositivo
 
-Usa la página de Dispositivos para llevar un seguimiento de qué dispositivos tienen acceso a la transmisión y contenido de tu iglesia. Si un dispositivo ya no está en uso, puedes eliminarlo de tu cuenta para mantener tu lista de dispositivos limpia y segura.
+1. Haga clic en el **nombre del dispositivo** en la tabla de dispositivos.
+2. Actualice la etiqueta a algo descriptivo (por ejemplo, "Pantalla Principal del Santuario" o "Pantalla del Vestíbulo").
+3. Guarde sus cambios.
+
+:::tip
+Usar etiquetas claras y descriptivas facilita identificar qué dispositivo es cuál, especialmente cuando tiene varias pantallas configuradas en su iglesia.
+:::
+
+## Administrar el Acceso de Dispositivos
+
+Use la página Dispositivos para hacer seguimiento de qué dispositivos tienen acceso a la transmisión y contenido de su iglesia. Si un dispositivo ya no está en uso, puede eliminarlo de su cuenta para mantener su lista de dispositivos limpia y segura.
 
 :::warning
-Revisa periódicamente tus dispositivos conectados para asegurarte de que solo los dispositivos activos y autorizados estén vinculados a tu cuenta. Elimina cualquier dispositivo que ya no esté en uso para mantener la seguridad.
+Revise regularmente sus dispositivos conectados para asegurarse de que solo los dispositivos activos y autorizados estén vinculados a su cuenta. Elimine cualquier dispositivo que ya no esté en uso para mantener la seguridad.
 :::
 
-## Próximos pasos
+## Próximos Pasos
 
-- [Gestionar tu Perfil](./managing-profile.md) -- Edita la configuración de tu cuenta personal
+- [Administrar Su Perfil](./managing-profile.md) -- Edite la configuración de su cuenta personal

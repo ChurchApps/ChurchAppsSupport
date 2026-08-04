@@ -52,7 +52,7 @@ Ang content module (`Api/src/modules/content`) ay nagmamay-ari ng builder's data
 | `sections` | Mga horizontal bands sa page (o sa block): background, text color, at isang `answersJSON` na nagdadala ng styling kasama ang `dividerTop`/`dividerBottom` shape-divider configs |
 | `elements` | Mga content pieces sa loob ng section: `elementType` + `answersJSON`, nestable para sa layout types (row/column, carousel) |
 | `blocks` | Mga reusable section/element groups (footer blocks, element blocks) na ibinabahagi sa mga pages |
-| `posts` | Mga blog metadata sa regular builder page (tingnan ang [Blog](#blog-posts-over-pages)) |
+| `posts` | Mga standalone na blog post (tingnan ang [Blog](#blog)) |
 | `redirects` | Per-church `fromPath → toPath` pairs, na capped sa 200 (tingnan ang [SEO](#seo-and-discoverability)) |
 | `settings` | Key-value church settings; ang mga rows na minark na `public` ay nase-serve nang anonymous at nagdadala ng widget/analytics config |
 
@@ -104,17 +104,18 @@ Ang `publicRoster` ay ang privacy gate para sa `staffGrid`. Huwag kailanman pala
 
 Dalawang widgets ay nag-render sa bawat public page sa halip na sa loob ng tree: **AnnouncementBanner** (dismissible top-of-page bar) at **Launcher** (floating action hub para sa give/visit/watch-style links). Parehong components at `parse*Config()` helpers nila ay nagpadala sa apphelper. Ang configuration ay dalawang public settings rows — keys `announcementBanner` at `launcher` — na isinulat ng B1Admin's `SiteWidgetsEdit` (sa Appearance page) at basahin ng B1App's public layout sa pamamagit ng `GET /content/settings/public/:churchId`. Ang API ay nagtrato sa mga ito bilang opaque key-value pairs; ang mga key names ay isang convention sa pagitan ng dalawang apps.
 
-## Blog: posts over pages
+## Blog
 
-Ang blog ay isang manipis na metadata layer, hindi isang pangalawang content system. Ang `posts` row (`title`, `slug`, `excerpt`, `authorId`, `photoUrl`, `publishDate`, `category`, `tags`) ay tumuturo sa regular builder page sa pamamagit ng `pageId`; ang page ay nagtataglay ng body at na-edit sa normal page editor. Ang public surface (lahat ng anonymous, `PostController`):
+Ang blog ay isang standalone na content type, hindi isang layer sa ibabaw ng mga builder page. Ang isang `posts` row ang naghahawak ng buong post: `title`, `slug`, `excerpt`, `content` (markdown body), `authorId`, `photoUrl`, `publishDate`, `category`, `tags`. Public surface (lahat anonymous, `PostController`):
 
 | Route | Layunin |
 |-------|---------|
 | `GET /content/posts/public/:churchId` | Na-publish na posts, filterable ng `?category=&tag=`, paginated |
-| `GET /content/posts/public/:churchId/slug/:slug` | Metadata ng isang post |
-| `GET /content/posts/rss/:churchId?siteUrl=` | RSS 2.0 feed |
+| `GET /content/posts/public/:churchId/categories` | Natatanging mga kategorya sa buong na-publish na posts |
+| `GET /content/posts/public/:churchId/slug/:slug` | Isang na-publish na post |
+| `GET /content/posts/rss/:churchId?siteUrl=` | RSS 2.0 feed, may pamagat na pangalan ng simbahan, na may per-item na kategorya at excerpt-o-content na paglalarawan |
 
-Ang post ay "published" kapag ang `publishDate` ay set at dating nakaraang. Ang B1App ay nag-serve ng `/{sdSlug}/blog` (listing, na may RSS feed na na-advertise bilang alternate link) at `/{sdSlug}/blog/[postSlug]`, na nag-fetch ng backing page tree sa `/blog/{slug}` at nag-render dito sa pamamagit ng parehong Zone/Section pipeline tulad ng anumang ibang page, na nagdadagdag ng `BlogPosting` JSON-LD. Ang mga blog URLs ay kasama sa per-church sitemap. Ang B1Admin's authoring UI (**Site → Blog**) ay lumilikha ng backing page sa `/blog/{slug}` at ang `posts` row nang sabay-sabay.
+Ang isang post ay "published" kapag naitakda na ang `publishDate` at nakalipas na ito; ang isang hinaharap na `publishDate` ay isang scheduled na post (nakatago sa publiko, ipinapakita na may Scheduled chip sa admin). Pinapayaman ng mga read endpoint ang bawat post ng `authorName`, na nire-resolve mula sa `authorId` sa pamamagitan ng membership module gateway. Ang mga nawawalang excerpt ay bumabalik sa stripped-markdown na content (~160 characters) sa mga listing card, meta description, at RSS. Nag-se-serve ang B1App ng `/{sdSlug}/blog` — isang editoryal na listahan (nakasentrong header na nagiging pangalan ng aktibong kategorya/tag kapag na-filter, category-chip filter row, mga thumbnail-left na post row na may byline at excerpt) na may RSS feed na inaanunsyo bilang alternate link — at `/{sdSlug}/blog/[postSlug]`, isang dedikadong ruta (hindi ang Zone/Section pipeline) na may nakasentrong header (category kicker, title, byline, primary-color accent rule), isang 16:9 hero sa lapad ng container, ang markdown body sa humigit-kumulang 720px na reading column, tag chips sa footer ng artikulo, isang `"More in {category}"` na strip ng mga kaugnay na post, at `BlogPosting` JSON-LD kasama ang author. Parehong pahina ay ganap na nagsi-style mula sa theme tokens kaya nagmamana sila ng palette ng bawat simbahan. Kasama ang mga blog URL sa per-church sitemap. Ina-edit ng authoring UI ng B1Admin (**Site → Blog**) ang mga post sa isang dialog: markdown editor na may preview toggle, 16:9-cropped na gallery image picker, author person-picker (default sa naka-edit na user), category autocomplete na hinasik mula sa mga umiiral nang kategorya, duplicate-slug validation, at isang publish toggle; ang mga na-publish na row ay naka-link papunta sa live na post, at hinihimok ng page ang mga admin na magdagdag ng `/blog` navigation link.
 
 ## Members-only pages
 

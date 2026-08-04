@@ -89,4 +89,3 @@ Die Admin-API bindet nur an `localhost:2019`. Der alte Laufzeitmodus exponierte 
 
 - [Website-Routing & Multi-Site](../architecture/websites) — wie die geproxyte Anfrage zu einer Kirche/Site in B1App aufgelöst wird
 - [API-Deployment](./apis) — Deployment der Membership-API, die `authorize`/`hostmap` bereitstellt
-</content>

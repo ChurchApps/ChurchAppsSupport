@@ -6,90 +6,90 @@ title: "Mailchimp"
 
 <div class="article-intro">
 
-将新的 B1 人员、捐赠者或小组成员导入 Mailchimp 受众，以便下一个欢迎系列、年终募捐或志愿者新闻稿从始终最新的列表中提取。B1 没有内置的 Mailchimp 同步 -- 接线完全在 Zapier（或 Make）中：B1 触发事件，Mailchimp 摄取订阅者。
+将新的 B1 人员、捐赠者或小组成员导入 Mailchimp 受众列表，这样下一次欢迎邮件系列、年终募捐或志愿者简报都能从一份始终最新的名单中获取数据。B1 没有内置的 Mailchimp 同步功能——所有连接逻辑都在 Zapier（或 Make）中完成：B1 触发事件，Mailchimp 接收订阅者。
 
 </div>
 
 <div class="prereqs">
-<h4>开始前</h4>
+<h4>准备工作</h4>
 
-- 一个 [Mailchimp](https://mailchimp.com) 账户，至少有一个您想将 B1 人员推入的受众
-- 一个 [Zapier](https://zapier.com) 账户（免费层适合小教堂）
-- 一个具有**编辑设置**权限的 B1Admin 用户，以便您可以铸造 API 密钥
+- 一个 [Mailchimp](https://mailchimp.com) 账户，至少有一个您想让 B1 人员导入的受众列表
+- 一个 [Zapier](https://zapier.com) 账户（免费套餐即可满足小型教会需求）
+- 一个拥有**编辑设置**权限的 B1Admin 用户，以便生成 API 密钥
 
 </div>
 
-## 您可以连接的内容
+## 可以连接的内容
 
 | 方向 | B1 触发器 | Mailchimp 操作 |
 |---|---|---|
 | B1 → Mailchimp | `person.created` | 添加/更新订阅者 |
-| B1 → Mailchimp | `donation.created` | 将订阅者添加到标签（例如"2026 年有捐赠"） |
-| B1 → Mailchimp | `group.member.added` | 将订阅者添加到该小组的标签 |
+| B1 → Mailchimp | `donation.created` | 为订阅者添加标签（例如"2026 年已捐款"） |
+| B1 → Mailchimp | `group.member.added` | 为订阅者添加该小组对应的标签 |
 | Mailchimp → B1 | 新订阅者 | B1 *创建人员* |
 
-Mailchimp 端公开了更多内容（活动、分段、自动化）-- 请参阅 [Mailchimp 的 Zapier 触发器](https://zapier.com/apps/mailchimp/integrations)以获取完整列表。从 B1 信封可映射的任何内容都可以使用。
+Mailchimp 一侧还提供更多功能（营销活动、细分、自动化）——完整列表请参阅 [Mailchimp 的 Zapier 触发器](https://zapier.com/apps/mailchimp/integrations)。任何可从 B1 事件包中映射的内容都可以使用。
 
 ## 设置
 
-### 1. 铸造一个 B1 API 密钥
+### 1. 生成一个 B1 API 密钥
 
-在 B1Admin 中转到**设置 → 开发者 → API 密钥 → 新 API 密钥**。给它 Zap 需要的作用域：
+在 B1Admin 中前往**设置 → 开发者 → API 密钥 → 新建 API 密钥**。为其授予 Zap 所需的权限范围：
 
-- `settings:write` — 触发器注册其 webhook 所必需的
-- `people:read` — 以便 Zap 可以读取名字/姓氏、电子邮件等
-- （可选）`people:write` 如果您还计划 Mailchimp → B1 方向
+- `settings:write` — 触发器注册 Webhook 所必需
+- `people:read` — 以便 Zap 能读取名/姓、邮箱等信息
+- （可选）`people:write`，如果您还计划实现 Mailchimp → B1 方向的同步
 
-保存并复制 `cak_…` 字符串 -- 它仅显示一次。
+保存并复制 `cak_…` 字符串——它只会显示一次。
 
 ### 2. 构建 Zap
 
-1. **触发器：** `B1.church — 新人员`。首次使用时 Zapier 要求您*登录 B1.church*；粘贴 API 密钥。
-2. **操作：** `Mailchimp — 添加/更新订阅者`。映射触发器输出：
-   - `data.contactInfo.email` → 电子邮件地址
+1. **触发器：**`B1.church — New Person`（新人员）。首次使用时，Zapier 会要求您*登录 B1.church*；粘贴 API 密钥即可。
+2. **操作：**`Mailchimp — Add/Update Subscriber`（添加/更新订阅者）。映射触发器输出：
+   - `data.contactInfo.email` → 电子邮箱
    - `data.name.first` → 名字
    - `data.name.last` → 姓氏
-   - （可选）`data.id` → Mailchimp 合并字段，如果您想在旁边保留 B1 的人员 ID。
-3. 打开 Zap。Zapier 在 B1 上注册 `person.created` webhook -- 在**设置 → 开发者 → Webhooks**中验证显示名为"Zapier — person.created"的行。
+   - （可选）`data.id` → 如果您想同时保留 B1 的人员 id，可映射到 Mailchimp 的合并字段。
+3. 启用该 Zap。Zapier 会在 B1 上注册一个 `person.created` Webhook——请在**设置 → 开发者 → Webhooks** 中确认出现一行名为"Zapier — person.created"的记录。
 
-就是这样。在 B1Admin 中添加一个人员来确认 -- 新订阅者在几秒钟内出现在 Mailchimp 中。
+就这样。在 B1Admin 中添加一个人员来确认——几秒钟内新订阅者就会出现在 Mailchimp 中。
 
 ## 常见方案
 
-### 自动标记捐赠者
+### 自动为捐赠者打标签
 
-- **触发器** — B1：新捐赠
-- **操作** — B1：查找人员（按 `personId` 查找）以获取电子邮件
-- **操作** — Mailchimp：将订阅者添加到标签（标签 `Gave-2026`）
+- **触发器** — B1：新捐款
+- **操作** — B1：查找人员（按 `personId` 查询）以获取邮箱
+- **操作** — Mailchimp：为订阅者添加标签（标签为 `Gave-2026`）
 
-### 启动小组特定的欢迎系列
+### 推送特定小组的欢迎邮件系列
 
 - **触发器** — B1：新小组成员，按 `data.groupId` 筛选
-- **操作** — Mailchimp：将订阅者添加到以小组命名的标签；触发对该标签的现有自动化
+- **操作** — Mailchimp：为订阅者添加以该小组命名的标签；用该标签触发您已有的自动化流程
 
-### 双向：新的 Mailchimp 注册成为 B1 联系人
+### 双向同步：Mailchimp 的新订阅者成为 B1 联系人
 
 - **触发器** — Mailchimp：新订阅者
-- **操作** — B1：创建人员（映射名字/姓氏/电子邮件）
+- **操作** — B1：创建人员（映射名/姓/邮箱）
 
 ## Make 替代方案
 
-Make 的 [Mailchimp 应用](https://www.make.com/en/integrations/mailchimp)涵盖 44 个模块 -- 接线相同，B1 *监视事件*触发器替换 Zapier 的。有关 B1 端，请参阅 [Make 概览文档](../make)。
+Make 的 [Mailchimp 应用](https://www.make.com/en/integrations/mailchimp) 提供 44 个模块——接线方式相同，只是用 B1 的 *Watch Events*（监听事件）触发器取代了 Zapier 的触发器。B1 一侧的配置请参阅 [Make 概览文档](../make)。
 
-## 限制和注释
+## 限制与说明
 
-- **Mailchimp 的免费层限制联系人和受众** -- 将免费受众超过其限制的 Zap 会开始出现 `4xx 成员限制已达到` 错误。Mailchimp 的日志使这一点很明显。
-- **Mailchimp 按电子邮件去重**，因此在同一 B1 人员上重新运行 Zap 会更新他们的位置；它不会创建重复项。
-- **来自 Mailchimp 的退订不会流回 B1。** 如果您想让 Mailchimp 退订清除 B1 的"发送邮件"偏好，请显式构建反向 Zap。
+- **Mailchimp 免费套餐对联系人和受众数量有上限** — 如果 Zap 让免费受众列表超出上限，会开始报 `4xx Member limit reached`（成员数超限）错误。Mailchimp 的日志会清楚显示这一点。
+- **Mailchimp 按邮箱去重**，因此对同一个 B1 人员重复运行 Zap 只会更新其信息，不会产生重复记录。
+- **Mailchimp 的退订不会同步回 B1。**如果您希望 Mailchimp 的退订能清除 B1 中的"接收邮件"偏好，需要显式构建反向 Zap。
 
-## 故障排除
+## 故障排查
 
-- **Zap 从不触发** -- 检查 `设置 → 开发者 → Webhooks` 中的 `Zapier — person.created` 行。如果不存在，则 API 密钥在 Zap 打开时缺少 `settings:write`。重新铸造、重新连接、关闭并打开 Zap。
-- **添加/更新时显示 `成员存在` 警告** -- 将操作从*添加订阅者*更改为*添加/更新订阅者*（动词很重要）。upsert 变体是幂等的。
-- **名字/姓氏显示为空白** -- B1 的 `data.name.first` 和 `data.name.last` 仅在这些字段在人员上设置时填充。映射 `data.name.display` 作为备用。
+- **Zap 从不触发** — 检查`设置 → 开发者 → Webhooks`中是否有 `Zapier — person.created` 这一行。如果没有，说明启用 Zap 时 API 密钥缺少 `settings:write` 权限。重新生成密钥、重新连接，并将 Zap 关闭再重新开启。
+- **添加/更新时出现"Member exists"（成员已存在）警告** — 将操作从*添加订阅者*改为*添加/更新订阅者*（动词很重要）。upsert 变体是幂等的。
+- **名字/姓氏为空** — B1 的 `data.name.first` 和 `data.name.last` 只有在该人员设置了这些字段时才会有值。可将 `data.name.display` 映射为备用字段。
 
-## 另见
+## 另请参阅
 
-- [Zapier（概览）](../zapier) -- 每个 Zapier 方案的 B1 端
-- [Make（概览）](../make) -- 相同的想法，可视化构建器
+- [Zapier（概览）](../zapier) — 每个 Zapier 方案的 B1 侧配置
+- [Make（概览）](../make) — 相同思路，可视化构建器
 - [Webhooks（开发者参考）](/docs/developer/api/webhooks#event-catalog)

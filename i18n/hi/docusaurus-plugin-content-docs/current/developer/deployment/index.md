@@ -17,6 +17,8 @@ ChurchApps प्रोजेक्ट प्रकार के आधार �
 | [APIs](./apis) | AWS Lambda | Serverless Framework v3 (Node.js 22.x रनटाइम) |
 | [वेब ऐप](./web-apps) | S3 + CloudFront | स्टैटिक बिल्ड, S3 सिंक, CloudFront अमान्यकरण |
 | [मोबाइल ऐप](./mobile) | ऐप स्टोर | Expo EAS Build + OTA अपडेट |
+| [सेल्फ-होस्टिंग (Railway)](./railway-template) | Railway | वन-क्लिक टेम्पलेट: MySQL + Api + B1Admin + B1App |
+| [सेल्फ-होस्टिंग (Docker)](./docker) | कोई भी Docker होस्ट | B1Admin repo से `docker compose up` |
 | [Caddy कस्टम-डोमेन प्रॉक्सी](./caddy-proxy) | Windows EC2 (Elastic IP `3.23.251.61`) | स्टैटिक Caddyfile + WinSW सेवा + शेड्यूल किया गया मानचित्र सिंक |
 | FreeShow | प्रत्यक्ष डाउनलोड | Electron Builder (क्रॉस-प्लेटफ़ॉर्म बाइनरी) |
 

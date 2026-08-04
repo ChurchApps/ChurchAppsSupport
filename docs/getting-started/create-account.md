@@ -22,7 +22,7 @@ Getting started with ChurchApps begins with creating your account. The process t
 
 1. Go to [B1.church](https://b1.church) in your web browser.
 2. Click the **Register** button.
-3. Enter your **first name**, **last name**, and **email address**.
+3. Enter your **first name**, **last name**, and **email address** -- or, if your church has single sign-on enabled, click **Continue with Google** or **Continue with Microsoft** to skip straight to step 5 using your existing account.
 4. Create a password for your account.
 5. Submit the registration form.
 

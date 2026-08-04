@@ -135,9 +135,9 @@ Ambas as superfícies de admin estão **em progresso**; a intenção:
 
 ## Gotchas uma futura mudança não deve regredir
 
-- **Inserções de auditoria devem permanecer aguardadas.** Un-awaited `AuditLogHelper.log(...)` é descartado pelo congelamento Lambda. Coleta promessas e `await Promise.allSettled` antes de retornar.
-- **Kysely elimina `undefined` de `.set()`/`.values()`.** Na restauração, uma coluna apagada sobreviveria intocada. `BatchUndoHelper` converte cada campo ausente para `null` explícito (`nullify`) — nunca ignore por uma escrita "mais rápida" direta.
-- **A retenção deve permanecer bem acima da janela de desfazer.** `AuditLogRepo.deleteOld()` executa no temporizador noturno (retenção de 365 dias padrão); a janela de desfazer é de 30 dias. Se a retenção ever cair perto da janela, ledgers de desfazer ficam purgados de debaixo de lotes abertos.
+- **Inserções de auditoria devem permanecer aguardadas.** Uma chamada não aguardada a `AuditLogHelper.log(...)` é descartada pelo congelamento do Lambda. Colete as promessas e `await Promise.allSettled` antes de retornar.
+- **Kysely elimina `undefined` de `.set()`/`.values()`.** Na restauração, uma coluna apagada sobreviveria intocada. `BatchUndoHelper` converte cada campo ausente para `null` explícito (`nullify`) — nunca ignore isso por uma escrita "mais rápida" direta.
+- **A retenção deve permanecer bem acima da janela de desfazer.** `AuditLogRepo.deleteOld()` executa no temporizador noturno (retenção de 365 dias por padrão); a janela de desfazer é de 30 dias. Se a retenção algum dia cair perto da janela, os livros de desfazer ficam purgados sob lotes abertos.
 - **Linhas truncadas não são reversíveis.** Um payload `{ truncated: true }` não tem imagem antes/depois; desfazer a relata como `failed`, nunca adivinha.
 - **Ordenação é módulo-escrita-então-auditoria.** Nunca mova a inserção de auditoria à frente da escrita real, e mantenha-a rigorosa-em-lote / consultiva-em-normal.
 

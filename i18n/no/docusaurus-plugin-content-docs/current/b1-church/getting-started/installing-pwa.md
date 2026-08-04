@@ -1,82 +1,104 @@
 ---
-title: "Installering som App (PWA)"
+title: "Installering som app (PWA)"
 ---
 
-# Installering som App (PWA)
+# Installering som app (PWA)
 
 <div class="article-intro">
 
-B1.church støtter installering som Progressive Web App (PWA), som lar deg legge til kirkens medlemsportal på hjemskjermen din akkurat som en inneboende app. Dette gir deg en fullskjerm, app-lignende opplevelse uten å gå gjennom App Store eller Google Play.
+B1.church støtter installering som en Progressive Web App (PWA), som lar deg legge til kirkens medlemsportal på telefonens hjemskjerm akkurat som en nativ app. Dette gir deg en fullskjerms, app-lignende opplevelse uten å måtte gå via App Store eller Google Play.
 
 </div>
 
 <div class="prereqs">
-<h4>Før Du Begynner</h4>
+<h4>Før du begynner</h4>
 
 - Du trenger kirkens B1.church-URL: `https://yourchurchname.b1.church`
 - Bruk en støttet nettleser: **Safari** på iOS eller **Chrome** på Android
 
 </div>
 
-## Hva Er en PWA?
+## Hva er en PWA?
 
-En Progressive Web App (PWA) er et nettsted som kan installeres på enheten din og oppfører seg som en inneboende app. Når du installerer B1.church som en PWA, gjør den:
+En Progressive Web App (PWA) er et nettsted som kan installeres på enheten din og oppfører seg som en nativ app. Når du installerer B1.church som en PWA, gjør den følgende:
 
-- Åpner fullskjerm uten nettlesernavigasjonslister
+- Åpner i fullskjerm uten nettleserens navigasjonslinjer
 - Vises på hjemskjermen din med kirkens ikon og navn
-- Fungerer jevnt med kirkens merkevare og temafargene
+- Fungerer sømløst med kirkens farger og temafarger
 
 :::tip
-PWAen er et flott alternativ hvis du foretrekker å ikke installere en separat app fra App Store eller Google Play. Den gir deg den samme medlemsportalopplevelsen du får i nettleseren, i en mer praktisk pakke.
+PWA-en er et flott alternativ hvis du foretrekker å ikke installere en egen app fra App Store eller Google Play. Den gir deg den samme medlemsportal-opplevelsen du får i nettleseren, i en mer praktisk innpakning.
 :::
 
-## Hvor Skal Installeres Fra
+## Installasjonssiden
 
-Du kan installere PWAen fra **en hvilken som helst side** på kirkens B1.church-nettsted -- den offentlige hjemmesiden, en prekensside, påloggingsskjermen, eller hvor som helst inne i medlemsportalen. Det er ingen separat "installerings-URL" å huske; hvis du kan besøke kirken på nettet, kan du installere appen derfra.
+Den enkleste måten å installere på er kirkens dedikerte installasjonsside:
 
-Når du lanserer den installerte appen, åpnes den direkte til medlemsdashboardet ditt, klar til at du logger inn.
+```
+https://yourchurchname.b1.church/mobile/install
+```
 
-## Installering på iPhone (iOS -- Safari)
+Siden gjenkjenner enheten din og viser de riktige instruksjonene automatisk:
 
-1. Åpne **Safari** på iPhone-en din og gå til `https://yourchurchname.b1.church` (erstatt `yourchurchname` med kirkens URL-slug).
-2. Trykk på **Dele**-knappen (boksen med en pil som peker opp) nederst på skjermen.
-3. Bla ned på delingslisten og trykk **Legg til hjemskjermen**.
-4. Navnet vil som standard være kirkens navn. Trykk **Legg til** i øvre høyre hjørne.
+- **iPhone** — trinnvise instruksjoner for «Legg til på Hjem-skjerm» i Safari
+- **Android** — en ett-trykks **Installer på Hjem-skjerm**-knapp i Chrome
+- **Datamaskin** — en QR-kode du kan skanne med telefonen for å åpne installasjonssiden der
 
-Appikonen vises på hjemskjermen din. Trykk på den for å åpne medlemsportalen i fullskjermmodus.
+Du kan komme til installasjonssiden på flere måter:
+
+- Åpne menyen (☰) i medlemsportalen og trykk **Installer app** (elementet skjules når appen allerede er installert)
+- Følg en lenke som kirken din deler via sms, e-post, eller fra søndagsskjermen
+- Skriv inn nettadressen direkte i nettleseren din
+
+:::tip For kirkestaben
+Del lenken til installasjonssiden med menigheten din — sett den i bulletinen, nyhetsbrevet eller på en lysbildeskjerm. Den veileder hvert medlem gjennom de nøyaktige trinnene for enheten deres. Du kan også nå den fra hurtighandlingen **Last ned appen** på B1Admin-dashbordet ditt.
+:::
+
+Du kan også installere PWA-en manuelt fra **hvilken som helst side** på kirkens B1.church-nettsted ved å bruke nettleser-trinnene nedenfor — installasjonssiden er bare den veiledede måten å gjøre det på.
+
+Når du åpner den installerte appen, går den direkte til medlemsdashbordet ditt, klar for at du logger inn.
+
+## Installere på iPhone (iOS — Safari)
+
+1. Åpne **Safari** på iPhone-en din og gå til `https://yourchurchname.b1.church/mobile/install` (erstatt `yourchurchname` med kirkens URL-navn).
+2. Trykk på **Del**-knappen (boksen med en pil som peker opp) nederst på skjermen.
+3. Bla ned i delingsmenyen og trykk **Legg til på Hjem-skjerm**.
+4. Navnet vil som standard være kirkens navn. Trykk **Legg til** øverst til høyre.
+
+Appikonet vil vises på hjemskjermen din. Trykk på det for å åpne medlemsportalen i fullskjermmodus.
 
 :::info
 PWA-installering på iOS krever Safari. Hvis du bruker Chrome eller en annen nettleser på iPhone, bytt til Safari først.
 :::
 
-## Installering på Android (Chrome)
+## Installere på Android (Chrome)
 
-1. Åpne **Chrome** på Android-enheten din og gå til `https://yourchurchname.b1.church`.
-2. Chrome viser automatisk en **"Legg til hjemskjermen"**-banner nederst på skjermen, eller trykk på tre-prikk-menyen (⋮) i øvre høyre hjørne og velg **Legg til hjemskjermen**.
+1. Åpne **Chrome** på Android-enheten din og gå til `https://yourchurchname.b1.church/mobile/install`.
+2. Trykk på **Installer på Hjem-skjerm**-knappen. (Hvis knappen ikke er tilgjengelig, trykk på tre-punkts-menyen (⋮) øverst til høyre og velg **Legg til på Hjem-skjerm**.)
 3. Trykk **Legg til** når du blir spurt.
 
-Appikonen vises på hjemskjermen din. Trykk på den for å åpne medlemsportalen.
+Appikonet vil vises på hjemskjermen din. Trykk på det for å åpne medlemsportalen.
 
-## Etter Installering
+## Etter installering
 
-Når den er installert, åpnes PWAen direkte til medlemsportalen i et dedikert fullskjermvindu. Du kan:
+Når den er installert, åpner PWA-en seg direkte til medlemsportalen i et dedikert fullskjermvindu. Du kan:
 
-- Logg inn med din eksisterende ChurchApps-konto
-- Få tilgang til alle medlemsfunksjonene kirken din har aktivert -- grupper, givegivelser, innsjekking, tjenesteplan, og mer
-- Returner til den når som helst ved å trykke på ikonet på hjemskjermen din
+- Logge inn med din eksisterende ChurchApps-konto
+- Få tilgang til alle medlemsfunksjonene kirken din har aktivert — grupper, giving, innsjekking, tjenesteplaner og mer
+- Gå tilbake til den når som helst ved å trykke på ikonet på hjemskjermen din
 
-Appikonen viser et **varselmerke** (et lite tallmerke) når du har uleste meldinger, så du kan se med ett blikk om det er noe nytt som venter på deg.
+Appikonet vil vise et **varselmerke** (et lite tallmerke) når du har uleste meldinger, slik at du kan se med ett blikk om det er noe nytt som venter på deg.
 
 :::info
-PWAen krever en internetttilkobling. I motsetning til noen innebygde apper, cacher den ikke alt innhold for offlinbruk.
+PWA-en krever en internettforbindelse. I motsetning til enkelte native apper, mellomlagrer den ikke alt innhold for bruk uten nett.
 :::
 
-## Hva Med den Gamle B1 Mobile-Appen?
+## Hva med den gamle B1 Mobile-appen?
 
-Den gamle innebygde **B1 Mobile**-appen på iOS og Android har blitt avviklet og blir ikke lenger oppdatert. PWAen er den støttede måten å få tilgang til B1.church-medlemsportalen på en telefon fremover, og den dekker alle medlemsfunksjoner den innebygde appen tilbød. Hvis du tidligere installerte den innebygde appen, bytt til PWAen når det passer deg.
+Den gamle, native **B1 Mobile**-appen for iOS og Android er avviklet og oppdateres ikke lenger. PWA-en er den støttede måten å få tilgang til B1.church-medlemsportalen på en telefon fremover, og den dekker alle medlemsrettede funksjoner som den native appen tilbød. Hvis du tidligere installerte den native appen, kan du bytte til PWA-en når det passer deg.
 
-Se [B1 Mobile-referansesiden](/docs/b1-mobile/) for historisk dokumentasjon på den avviklede appen.
+Se [B1 Mobile-referansesiden](/docs/b1-mobile/) for historisk dokumentasjon om den avviklede appen.
 
-## Relaterte Artikler
+## Relaterte artikler
 
-- [Pålogging](./logging-in.md) -- Slik logger du inn på B1.church-kontoen din
+- [Logge inn](./logging-in.md) — Hvordan logge inn på B1.church-kontoen din

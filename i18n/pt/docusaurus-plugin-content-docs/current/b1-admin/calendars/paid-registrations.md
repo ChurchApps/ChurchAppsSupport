@@ -1,93 +1,93 @@
 ---
-title: "Registros Pagos"
+title: "Inscrições Pagas"
 ---
 
-# Registros Pagos
+# Inscrições Pagas
 
 <div class="article-intro">
 
-O registro de evento pode ir além de uma simples contagem de cabeças. Você pode definir tipos de participantes com preço (como Adulto e Criança), oferecer complementos opcionais com seus próprios preços e quantidades, criar códigos de desconto e coletar pagamento no registro através do provedor de ofertas existente da sua igreja. Quando um evento se enche, uma lista de espera opcional mantém membros interessados na fila e os promove automaticamente à medida que os spots abrem.
+A inscrição em eventos pode ir além de uma simples contagem de participantes. Você pode definir tipos de participante com preços (como Adulto e Criança), oferecer complementos opcionais com seus próprios preços e quantidades, criar códigos de desconto e coletar pagamento na inscrição por meio do provedor de doações já existente da sua igreja. Quando um evento lota, uma lista de espera opcional mantém os membros interessados na fila e os promove automaticamente conforme vagas se abrem.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Habilite o registro no evento primeiro -- veja [Criando Calendários](creating-calendars#enabling-event-registration)
-- Para coletar pagamentos, sua igreja precisa [online giving configurado](../donations/online-giving-setup.md) (Stripe, PayPal, ou Kingdom Funding). Eventos livres não precisam de configuração de ofertas.
+- Ative a inscrição no evento primeiro — veja [Criando Calendários](creating-calendars#enabling-event-registration)
+- Para coletar pagamentos, sua igreja precisa ter [as doações on-line configuradas](../donations/online-giving-setup.md) (Stripe, PayPal ou Kingdom Funding). Eventos gratuitos não precisam de configuração de doações.
 
 </div>
 
-## Abrindo Configurações de Registro
+## Abrindo as Configurações de Inscrição
 
-1. No B1 Admin, vá para a página **Registros** e abra seu evento (ou abra o evento a partir de seu calendário).
-2. O card **Configurações de Registro** mostra o básico -- **Habilitar Registro**, **Capacidade**, **Registro Abre/Fecha**, **Tags** e **Perguntas de Registro**.
-3. Abaixo do básico há três acordeões: **Tipos de Participantes**, **Seleções** e **Códigos de Desconto**.
+1. No B1 Admin, vá até a página **Registrations** e abra seu evento (ou abra o evento a partir do calendário).
+2. O card **Registration Settings** mostra o básico — **Enable Registration**, **Capacity**, **Registration Opens/Closes**, **Tags** e **Registration Questions**.
+3. Abaixo do básico há três acordeões: **Attendee Types**, **Selections** e **Discount Codes**.
 
-## Tipos de Participantes
+## Tipos de Participante
 
-Tipos de participantes deixam você cobrar preços diferentes para diferentes tipos de participantes -- e limitar cada um separadamente.
+Os tipos de participante permitem cobrar preços diferentes para diferentes tipos de participantes — e limitar cada um separadamente.
 
-1. Expanda o acordeão **Tipos de Participantes** e clique **Adicionar Tipo**.
-2. Digite um **Nome** (por exemplo, "Adulto", "Criança", "Estudante").
-3. Defina um **Preço**. Use 0 para um tipo gratuito.
-4. Opcionalmente defina uma **Capacidade** apenas para este tipo (por exemplo, apenas 20 spots de Criança). Deixe em branco para nenhum limite por tipo.
-5. Clique **Salvar**.
+1. Expanda o acordeão **Attendee Types** e clique em **Add Type**.
+2. Digite um **Name** (por exemplo, "Adult", "Child", "Student").
+3. Defina um **Price**. Use 0 para um tipo gratuito.
+4. Opcionalmente, defina uma **Capacity** apenas para esse tipo (por exemplo, apenas 20 vagas para Child). Deixe em branco para não haver limite por tipo.
+5. Clique em **Save**.
 
-Durante o registro, cada participante escolhe um tipo; tipos esgotados são mostrados como **Esgotado** e não podem ser selecionados. A lista de presença mostra o tipo de cada participante e contagens em execução por tipo.
+Durante a inscrição, cada participante escolhe um tipo; tipos esgotados são mostrados como **Sold out** e não podem ser selecionados. A lista de inscritos mostra o tipo de cada participante e as contagens correntes por tipo.
 
 ## Seleções
 
-Seleções são complementos com preço opcionais -- camisetas, planos de refeição, upgrades de atividade.
+As seleções são complementos pagos opcionais — camisetas, planos de refeição, upgrades de atividades.
 
-1. Expanda o acordeão **Seleções** e clique **Adicionar Seleção**.
-2. Digite um **Nome**, **Descrição** opcional e um **Preço** (0 mostra como "Livre").
-3. Opcionalmente defina uma **Capacidade** (total disponível em todos os registros) e **Qty Máx** (o máximo que um registro pode pedir).
-4. Clique **Salvar**.
+1. Expanda o acordeão **Selections** e clique em **Add Selection**.
+2. Digite um **Name**, uma **Description** opcional e um **Price** (0 aparece como "Free").
+3. Opcionalmente, defina uma **Capacity** (total disponível em todas as inscrições) e um **Max Qty** (o máximo que uma única inscrição pode pedir).
+4. Clique em **Save**.
 
-Os inscritos escolhem quantidades durante a inscrição e os totais contam contra capacidade para que você nunca oversell.
+Os inscritos escolhem as quantidades durante a inscrição, e os totais contam contra a capacidade para que você nunca venda em excesso.
 
 ## Códigos de Desconto
 
-1. Expanda o acordeão **Códigos de Desconto** e clique **Adicionar Código de Desconto**.
-2. Digite o **Código** que os inscritos digitarão.
-3. Escolha o **Tipo** -- **Percentual** ou **Valor** -- e seu **Valor**.
-4. Opcionalmente limite o código com uma **Data de Início** / **Data de Término**, um **Mín Membros** (número mínimo de participantes no registro) e **Máx Usos**.
-5. Clique **Salvar**.
+1. Expanda o acordeão **Discount Codes** e clique em **Add Discount Code**.
+2. Digite o **Code** que os inscritos vão digitar.
+3. Escolha o **Type** — **Percent** ou **Amount** — e seu **Value**.
+4. Opcionalmente, limite o código com uma **Start Date** / **End Date**, um **Min Members** (número mínimo de participantes na inscrição) e **Max Uses**.
+5. Clique em **Save**.
 
-Cada código mostra uma contagem de **Usos** para que você possa ver com que frequência foi resgatado. Os inscritos recebem feedback instantâneo quando aplicam um código -- incluindo mensagens claras quando um código expirou, não começou ou precisa de mais participantes.
+Cada código mostra uma contagem de **Uses** para que você possa ver com que frequência ele foi resgatado. Os inscritos recebem feedback instantâneo ao aplicar um código — incluindo mensagens claras quando um código expirou, ainda não começou a valer ou precisa de mais participantes.
 
 ## Lista de Espera
 
-Ative **Habilitar Lista de Espera** no card Configurações de Registro. Quando o evento atinge capacidade:
+Ative **Enable Waitlist** no card Registration Settings. Quando o evento atinge a capacidade:
 
-- Novos inscritos são oferecidos um spot na lista de espera em vez de serem rejeitados. Eles completam a mesma inscrição (pagamento é pulado enquanto na lista de espera).
-- Quando alguém cancela, o registro na lista de espera mais antigo é **promovido automaticamente** e recebe um email que um spot abriu. Se eles devem um saldo, o email os vincula para completar o pagamento.
-- Você pode promover alguém manualmente a qualquer momento com a ação **Promover** em uma linha na lista de espera -- útil após aumentar a capacidade do evento.
+- Novos inscritos recebem uma vaga na lista de espera em vez de serem recusados. Eles completam a mesma inscrição (o pagamento é ignorado enquanto estão na lista de espera).
+- Quando alguém cancela, a inscrição mais antiga na lista de espera é **promovida automaticamente** e recebe um e-mail informando que uma vaga se abriu. Se houver saldo devido, o e-mail contém um link para concluir o pagamento.
+- Você pode promover alguém manualmente a qualquer momento com a ação **Promote** em uma linha na lista de espera — útil depois de aumentar a capacidade do evento.
 
 :::info
-Registros promovidos permanecem *pendentes* até que qualquer saldo seja pago; pagar (ou não ter nada a pagar) confirma-os.
+As inscrições promovidas permanecem *pendentes* até que qualquer saldo seja pago; pagar (ou não ter nada a pagar) as confirma.
 :::
 
-## A Lista de Presença de Registro
+## A Lista de Inscritos
 
-Abra um evento na página de Registros para ver cada registro. A tabela mostra **Nome**, **Membros**, **Tipo** (tipo de cada participante), **Pago / Total** (com aviso de saldo quando dinheiro ainda é devido), **Status** e **Data**, mais chips de contagem por tipo acima da tabela.
+Abra um evento na página Registrations para ver todas as inscrições. A tabela mostra **Name**, **Members**, **Type** (o tipo de cada participante), **Paid / Total** (com um aviso de saldo quando ainda há dinheiro devido), **Status** e **Date**, além de chips de contagem por tipo acima da tabela.
 
-- Clique no ícone de detalhes de uma linha para abrir o diálogo **Detalhes de Registro** -- membros, seleções, pago/saldo e uma tabela **Pagamentos** listando cada cobrança (valor, método, data).
-- **Exportar CSV** baixa a lista de presença completa com colunas para membros, tipos de participantes, seleções, pago/total/saldo, status e uma coluna por pergunta de registro.
-- **Adicionar Participante** ainda deixa você registrar inscrições offline manualmente.
+- Clique no ícone de detalhes de uma linha para abrir a caixa de diálogo **Registration Details** — membros, seleções, pago/saldo e uma tabela de **Payments** listando cada cobrança (valor, método, data).
+- **Export CSV** baixa a lista completa com colunas para membros, tipos de participante, seleções, pago/total/saldo, status e uma coluna para cada pergunta de inscrição.
+- **Add Attendee** ainda permite registrar inscrições feitas fora do sistema manualmente.
 
 :::info
-Reembolsos não são processados dentro de B1. Se você precisar reembolsar um registro pago cancelado, emita o reembolso do dashboard do seu provedor de ofertas (por exemplo, Stripe).
+Reembolsos não são processados dentro do B1. Se você precisar reembolsar uma inscrição paga cancelada, faça o reembolso pelo painel do seu provedor de doações (por exemplo, Stripe).
 :::
 
 ## Como Funciona o Pagamento
 
-Os pagamentos passam pelo mesmo gateway de ofertas que sua igreja já usa para doações -- os detalhes do cartão vão direto para o provedor e nunca tocam os servidores de B1. Os preços são sempre computados no servidor a partir de seus tipos configurados, seleções e códigos de desconto, para que um inscrito não possa interferir no total. Membros conectados podem pagar com um cartão salvo; convidados inserem um cartão no checkout.
+Os pagamentos passam pelo mesmo gateway de doações que sua igreja já usa para doações — os dados do cartão vão diretamente para o provedor e nunca passam pelos servidores do B1. Os preços são sempre calculados no servidor com base nos tipos, seleções e códigos de desconto configurados, então um inscrito não pode adulterar o total. Membros logados podem pagar com um cartão salvo; visitantes inserem um cartão no momento do pagamento.
 
 ## Artigos Relacionados
 
-- [Criando Calendários](creating-calendars#enabling-event-registration) -- habilite registro e as configurações básicas
-- [Configuração de Ofertas Online](../donations/online-giving-setup.md) -- configure o gateway de pagamento usado no checkout
-- [Registrando para Eventos](../../b1-church/events/registering) -- o que os membros veem quando se inscrevem
-- [Meus Registros](../../b1-church/events/my-registrations) -- como os membros pagam saldos e editam registros
+- [Criando Calendários](creating-calendars#enabling-event-registration) — ative a inscrição e as configurações básicas
+- [Configuração de Doações On-line](../donations/online-giving-setup.md) — configure o gateway de pagamento usado no checkout
+- [Inscrevendo-se em Eventos](../../b1-church/events/registering) — o que os membros veem ao se inscrever
+- [Minhas Inscrições](../../b1-church/events/my-registrations) — como os membros pagam saldos e editam inscrições

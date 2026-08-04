@@ -12,7 +12,7 @@ El módulo de Contenido gestiona páginas del sitio web, secciones, elementos, b
 
 **Ruta base:** `/content`
 
-## Pages
+## Páginas
 
 Ruta base: `/content/pages`
 
@@ -49,7 +49,7 @@ GET /content/pages/abc-church-id/tree?url=/about
 }
 ```
 
-## Sections
+## Secciones
 
 Ruta base: `/content/sections`
 
@@ -60,7 +60,7 @@ Ruta base: `/content/sections`
 | POST | `/` | JWT | Content.Edit | Crear o actualizar secciones (lote). Actualiza automáticamente el orden de clasificación |
 | DELETE | `/:id` | JWT | Content.Edit | Eliminar una sección (actualiza automáticamente el orden de clasificación) |
 
-## Elements
+## Elementos
 
 Ruta base: `/content/elements`
 
@@ -71,7 +71,7 @@ Ruta base: `/content/elements`
 | POST | `/` | JWT | Content.Edit | Crear o actualizar elementos (lote). Gestiona automáticamente columnas de fila y diapositivas de carrusel |
 | DELETE | `/:id` | JWT | Content.Edit | Eliminar un elemento |
 
-## Blocks
+## Bloques
 
 Ruta base: `/content/blocks`
 
@@ -87,7 +87,7 @@ Extiende CRUD estándar (GET `/:id`, GET `/`, POST `/`, DELETE `/:id` de la clas
 | POST | `/` | JWT | Content.Edit | Crear o actualizar bloques |
 | DELETE | `/:id` | JWT | Content.Edit | Eliminar un bloque |
 
-## Links
+## Enlaces
 
 Ruta base: `/content/links`
 
@@ -102,7 +102,7 @@ Extiende CRUD estándar (GET `/:id`, GET `/`, POST `/`, DELETE `/:id` de la clas
 | POST | `/` | JWT | Content.Edit | Crear o actualizar enlaces (lote). Se ordena automáticamente por categoría |
 | DELETE | `/:id` | JWT | Content.Edit | Eliminar un enlace |
 
-## Global Styles
+## Estilos Globales
 
 Ruta base: `/content/globalStyles`
 
@@ -115,7 +115,7 @@ Extiende CRUD estándar (POST `/`, DELETE `/:id` de la clase base con permiso Co
 | POST | `/` | JWT | Content.Edit | Crear o actualizar estilos globales |
 | DELETE | `/:id` | JWT | Content.Edit | Eliminar estilos globales |
 
-## Page History
+## Historial de Página
 
 Ruta base: `/content/pageHistory`
 
@@ -128,23 +128,24 @@ Ruta base: `/content/pageHistory`
 | POST | `/restore/:id` | JWT | Content.Edit | Restaurar una página/bloque desde una instantánea de historial (elimina el contenido actual y lo recrea desde la instantánea) |
 | POST | `/restoreSnapshot` | JWT | Content.Edit | Restaurar desde un objeto de instantánea en línea. Cuerpo: `{ pageId, blockId, snapshot }` |
 
-## Posts (Blog)
+## Publicaciones (Blog)
 
 Ruta base: `/content/posts`
 
-Las publicaciones de blog son metadatos sobre páginas regulares: el `pageId` de cada publicación hace referencia a la página que contiene el cuerpo, y la fila de la publicación agrega `title`, `slug` (único por iglesia), `excerpt`, `authorId`, `photoUrl`, `publishDate`, `category`, y `tags`. Una publicación se publica una vez que `publishDate` está establecido y en el pasado. Consulta [Arquitectura del Generador de Sitios Web](../../architecture/website-builder#blog-posts-over-pages).
+Las publicaciones de blog son filas independientes: `title`, `slug` (único por iglesia), `excerpt`, `content` (cuerpo en markdown), `authorId`, `photoUrl`, `publishDate`, `category`, y `tags`. Una publicación se publica una vez que `publishDate` está establecido y en el pasado. Los puntos finales de lectura enriquecen cada publicación con `authorName` resuelto a partir de `authorId`. Consulta [Arquitectura del Generador de Sitios Web](../../architecture/website-builder#blog).
 
 | Método | Ruta | Auth | Permiso | Descripción |
 |--------|------|------|---------|-------------|
 | GET | `/public/:churchId?category=&tag=&page=&pageSize=` | Público | — | Enumera publicaciones publicadas, paginadas (máximo 50 por página) |
-| GET | `/public/:churchId/slug/:slug` | Público | — | Obtener los metadatos de una publicación publicada por slug |
+| GET | `/public/:churchId/categories` | Público | — | Categorías distintas entre las publicaciones publicadas |
+| GET | `/public/:churchId/slug/:slug` | Público | — | Obtener una publicación publicada por slug |
 | GET | `/rss/:churchId?siteUrl=` | Público | — | Feed RSS 2.0 de publicaciones publicadas (enlaces construidos como `{siteUrl}/blog/{slug}`) |
 | GET | `/:id` | JWT | — | Obtener una publicación por ID |
 | GET | `/` | JWT | — | Enumera todas las publicaciones de la iglesia |
 | POST | `/` | JWT | Content.Edit | Crear o actualizar publicaciones (lote) |
 | DELETE | `/:id` | JWT | Content.Edit | Eliminar una publicación |
 
-## Redirects
+## Redirecciones
 
 Ruta base: `/content/redirects`
 
@@ -158,7 +159,7 @@ Redirecciones de URL por iglesia (`fromPath` → `toPath`), limitadas a 200 por 
 | POST | `/` | JWT | Content.Edit | Crear o actualizar redirecciones. Rechaza `fromPath = toPath` y aplica el límite de 200 filas |
 | DELETE | `/:id` | JWT | Content.Edit | Eliminar una redirección |
 
-## Sermons
+## Sermones
 
 Ruta base: `/content/sermons`
 
@@ -196,7 +197,7 @@ GET /content/sermons/lookup?videoType=youtube&videoData=dQw4w9WgXcQ
 }
 ```
 
-## Playlists
+## Listas de Reproducción
 
 Ruta base: `/content/playlists`
 
@@ -210,7 +211,7 @@ Extiende CRUD estándar (GET `/:id`, GET `/`, DELETE `/:id` de la clase base con
 | POST | `/` | JWT | StreamingServices.Edit | Crear o actualizar listas de reproducción (lote, admite carga de miniatura en base64) |
 | DELETE | `/:id` | JWT | StreamingServices.Edit | Eliminar una lista de reproducción |
 
-## Streaming Services
+## Servicios de Transmisión
 
 Ruta base: `/content/streamingServices`
 
@@ -221,7 +222,7 @@ Ruta base: `/content/streamingServices`
 | POST | `/` | JWT | StreamingServices.Edit | Crear o actualizar servicios de transmisión (lote) |
 | DELETE | `/:id` | JWT | StreamingServices.Edit | Eliminar un servicio de transmisión (también limpia IPs bloqueadas) |
 
-## Events
+## Eventos
 
 Ruta base: `/content/events`
 
@@ -236,7 +237,7 @@ Ruta base: `/content/events`
 | POST | `/` | JWT | — | Crear o actualizar eventos (lote) |
 | DELETE | `/:id` | JWT | Content.Edit | Eliminar un evento |
 
-## Event Exceptions
+## Excepciones de Evento
 
 Ruta base: `/content/eventExceptions`
 
@@ -246,7 +247,7 @@ Ruta base: `/content/eventExceptions`
 | POST | `/` | JWT | Content.Edit | Crear o actualizar excepciones de evento (lote) |
 | DELETE | `/:id` | JWT | Content.Edit | Eliminar una excepción de evento |
 
-## Curated Calendars
+## Calendarios Curados
 
 Ruta base: `/content/curatedCalendars`
 
@@ -257,7 +258,7 @@ Ruta base: `/content/curatedCalendars`
 | POST | `/` | JWT | Content.Edit | Crear o actualizar calendarios curados (lote) |
 | DELETE | `/:id` | JWT | Content.Edit | Eliminar un calendario curado |
 
-## Curated Events
+## Eventos Curados
 
 Ruta base: `/content/curatedEvents`
 
@@ -272,7 +273,7 @@ Ruta base: `/content/curatedEvents`
 | DELETE | `/calendar/:curatedCalendarId/event/:eventId` | JWT | Content.Edit | Quitar un evento específico de un calendario curado |
 | DELETE | `/calendar/:curatedCalendarId/group/:groupId` | JWT | Content.Edit | Quitar todos los eventos de un grupo de un calendario curado |
 
-## Files
+## Archivos
 
 Ruta base: `/content/files`
 
@@ -285,7 +286,7 @@ Ruta base: `/content/files`
 | POST | `/postUrl` | JWT | Content.Edit* | Obtener una URL de carga S3 pre-firmada. *También permitido para miembros de grupo. Máximo 100MB por elemento de contenido |
 | DELETE | `/:id` | JWT | Content.Edit* | Eliminar un archivo y quitarlo del almacenamiento. *También permitido para miembros de grupo |
 
-## Gallery
+## Galería
 
 Ruta base: `/content/gallery`
 
@@ -296,7 +297,7 @@ Ruta base: `/content/gallery`
 | POST | `/requestUpload` | JWT | Content.Edit | Obtener una URL de carga S3 pre-firmada para una imagen de galería |
 | DELETE | `/:folder/:image` | JWT | Content.Edit | Eliminar una imagen de galería |
 
-## Bibles
+## Biblias
 
 Ruta base: `/content/bibles`
 
@@ -331,7 +332,7 @@ GET /content/bibles/de4e12af7f28f599-02/verses/GEN.1.1-GEN.1.3
 ]
 ```
 
-## Songs
+## Canciones
 
 Ruta base: `/content/songs`
 
@@ -344,7 +345,7 @@ Ruta base: `/content/songs`
 | POST | `/import` | JWT | — | Importar canciones desde FreeShow (lote) |
 | DELETE | `/:id` | JWT | Content.Edit | Eliminar una canción |
 
-## Song Details
+## Detalles de Canción
 
 Ruta base: `/content/songDetails`
 
@@ -357,7 +358,7 @@ Los detalles de canción son globales (no delimitados por iglesia). Estos repres
 | POST | `/create` | JWT | — | Crear un detalle de canción a partir de un ID de PraiseCharts (devuelve el existente si ya fue creado). Obtiene automáticamente metadatos de PraiseCharts y MusicBrainz |
 | POST | `/` | JWT | — | Crear o actualizar detalles de canción (lote) |
 
-## Song Detail Links
+## Enlaces de Detalle de Canción
 
 Ruta base: `/content/songDetailLinks`
 
@@ -368,7 +369,7 @@ Ruta base: `/content/songDetailLinks`
 | POST | `/` | JWT | — | Crear o actualizar enlaces de detalle de canción (lote). Obtiene automáticamente datos de MusicBrainz si está vinculado |
 | DELETE | `/:id` | JWT | — | Eliminar un enlace de detalle de canción |
 
-## Arrangements
+## Arreglos
 
 Ruta base: `/content/arrangements`
 
@@ -382,7 +383,7 @@ Ruta base: `/content/arrangements`
 | POST | `/freeShow/missing` | JWT | — | Encontrar IDs de FreeShow que no existen en la iglesia. Cuerpo: `{ freeShowIds: string[] }` |
 | DELETE | `/:id` | JWT | Content.Edit | Eliminar un arreglo (también elimina claves; elimina la canción si no quedan arreglos) |
 
-## Arrangement Keys
+## Claves de Arreglo
 
 Ruta base: `/content/arrangementKeys`
 
@@ -395,7 +396,7 @@ Ruta base: `/content/arrangementKeys`
 | POST | `/` | JWT | Content.Edit | Crear o actualizar claves de arreglo (lote) |
 | DELETE | `/:id` | JWT | Content.Edit | Eliminar una clave de arreglo |
 
-## Settings
+## Configuración
 
 Ruta base: `/content/settings`
 
@@ -408,7 +409,7 @@ Ruta base: `/content/settings`
 | POST | `/` | JWT | Settings.Edit | Guardar configuración a nivel de iglesia (admite carga de imagen en base64) |
 | DELETE | `/my/:id` | JWT | — | Eliminar una configuración de usuario |
 
-## Preview
+## Vista Previa
 
 Ruta base: `/content/preview`
 
@@ -416,7 +417,7 @@ Ruta base: `/content/preview`
 |--------|------|------|---------|-------------|
 | GET | `/data/:key` | Público | — | Cargar datos de vista previa de transmisión para una iglesia por clave de subdominio (pestañas, enlaces, servicios, sermones) |
 
-## Gallery (Stock Photos)
+## Galería (Fotos de Stock)
 
 Ruta base: `/content/stock`
 
@@ -442,7 +443,7 @@ Integración con PraiseCharts para descubrimiento de canciones de adoración y d
 | GET | `/access?verifier=&token=&secret=` | JWT | — | Intercambiar el verificador OAuth por un token de acceso y guardarlo en la configuración de usuario |
 | GET | `/library` | JWT | — | Explorar la biblioteca de PraiseCharts del usuario |
 
-## Support
+## Soporte
 
 Ruta base: `/content/support`
 

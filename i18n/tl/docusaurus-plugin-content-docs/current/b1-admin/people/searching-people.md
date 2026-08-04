@@ -1,96 +1,96 @@
 ---
-title: "Paghahanap ng Mga Tao"
+title: "Searching People"
 ---
 
-# Paghahanap ng Mga Tao
+# Searching People
 
 <div class="article-intro">
 
-Ang pahina ng **Mga Tao** ay nagpapakita ng direktoryo ng iyong simbahan sa isang searchable, sortable table. Mabilis mong mahanap ang sinumang nasa iyong kongregasyon, i-customize kung anong impormasyon ang ipapakita, at i-export ang iyong mga resulta. Ang mabisang paghahanap ay mahalaga para sa mga pang-araw-araw na gawain sa pamamahala ng simbahan tulad ng pagsunod sa mga bisita, paghahanda ng mga listahan ng pakikipag-ugnayan, at pamamahala ng mga rekord ng miyembro.
+Ipinapakita ng page na **People** ang directory ng iyong simbahan sa isang talahanayang mase-search at maisosort. Mabilis mong mahahanap ang kahit sino sa iyong kongregasyon, ico-customize kung anong impormasyon ang ipapakita, at ie-export ang iyong mga resulta. Mahalaga ang mahusay na paghahanap para sa mga pang-araw-araw na gawain sa pangangasiwa ng simbahan tulad ng pagsunod sa mga bisita, paghahanda ng mga listahan ng contact, at pamamahala ng mga record ng miyembro.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Kailangan mo ng aktibong B1 Admin account na may pahintulot na tingnan ang mga tao. Tingnan ang [Mga Papel at Pahintulot](roles-permissions.md) kung hindi ka sigurado sa iyong antas ng access.
-- Ang direktoryo ng iyong simbahan ay dapat may mga taong nasa loob. Kung hindi ka pa nagdagdag ng sinuman, tingnan ang [Pagdadagdag ng Mga Tao](adding-people.md) o [Pag-import ng Data](importing-data.md).
+- Kailangan mo ng aktibong B1 Admin account na may permisong tumingin ng mga tao. Tingnan ang [Roles & Permissions](roles-permissions.md) kung hindi ka sigurado sa iyong access level.
+- Dapat may mga tao na sa iyong directory ng simbahan. Kung wala ka pang idinagdag, tingnan ang [Adding People](adding-people.md) o [Importing Data](importing-data.md).
 
 </div>
 
-## Mabilis na Paghahanap
+## Quick Search
 
-Ang search bar sa itaas ng pahina ng Mga Tao ay nagpapahintulot sa iyo na mahanap ang mga miyembro sa real time:
+Ang search bar sa itaas ng People page ay nagbibigay-daan sa iyong mahanap ang mga miyembro nang real time:
 
-1. I-click ang **search box** sa itaas ng pahina ng Mga Tao.
-2. Magsimulang mag-type ng pangalan, email, o iba pang keyword.
-3. Ang mga resulta ay awtomatikong mag-filter habang nagta-type ka (may maikli lamang na pagkaantala ng tungkol sa kalahati ng segundo upang ang paghahanap ay hindi tumutupad sa bawat keystroke).
-4. Ang table sa ibaba ay nag-update upang ipakita lamang ang mga resulta na tumutugma.
+1. I-click ang **search box** sa itaas ng People page.
+2. Magsimulang mag-type ng pangalan, email, o ibang keyword.
+3. Awtomatikong mafi-filter ang mga resulta habang nagta-type ka (may maikling delay na humigit-kumulang kalahating segundo kaya hindi tumatakbo ang search sa bawat keystroke).
+4. Ma-a-update ang talahanayan sa ibaba para ipakita lamang ang mga resultang tumutugma.
 
 :::tip
-Hindi mo kailangang mag-press ng Enter. Ang paghahanap ay tumatakbo nang awtomatiko pagkatapos mong huminto ang pag-type.
+Hindi mo kailangang pindutin ang Enter. Awtomatikong tumatakbo ang search pagkatapos mong huminto sa pag-type.
 :::
 
 ## Pag-sort ng mga Resulta
 
-Maaari mong i-sort ang direktoryo sa pamamagit ng pag-click sa anumang column header sa table:
+Puwede mong i-sort ang directory sa pamamagitan ng pag-click sa anumang column header sa talahanayan:
 
-1. I-click ang **column header** (halimbawa, **Pangalan** o **Email**) upang mag-sort ayon sa column na iyon.
-2. I-click ang parehong header muli upang baguhin ang order ng pag-sort.
+1. I-click ang isang **column header** (halimbawa, **Name** o **Email**) para i-sort ayon sa column na iyon.
+2. I-click ulit ang parehong header para baligtarin ang pagkakasunud-sunod ng sort.
 
-Ginagawang madali ang paghahanap ng mga tao ayon sa alpabeto, ayon sa edad, o ayon sa anumang ibang makikitang column.
+Nagpapadali ito sa paghahanap ng mga tao alpabetikal, ayon sa edad, o sa anumang ibang nakikitang column.
 
 ## Pag-customize ng mga Column
 
-Hindi lahat ng impormasyon ay kailangang makita nang sabay-sabay. Maaari mong piliin kung aling mga column ang lilitaw sa table:
+Hindi lahat ng impormasyon ay kailangang makita nang sabay-sabay. Puwede mong piliin kung aling mga column ang lalabas sa talahanayan:
 
-1. Hanapin ang **column selector dropdown** malapit sa tuktok ng table.
-2. I-check o i-uncheck ang mga column upang ipakita o itago ang mga ito. Ang mga available na column ay kinabibilangan ng:
-   - **Larawan**
-   - **Pangalan**
+1. Hanapin ang **column selector dropdown** malapit sa itaas ng talahanayan.
+2. I-check o i-uncheck ang mga column para ipakita o itago ang mga ito. Kasama sa mga available na column ang:
+   - **Photo**
+   - **Name**
    - **Email**
-   - **Telepono**
-   - **Tirahan**
-   - **Araw ng Pagsilang**
-   - **Edad**
-   - **Kasarian**
-   - **Status ng Miyembro**
+   - **Phone**
+   - **Address**
+   - **Birth Date**
+   - **Age**
+   - **Gender**
+   - **Membership Status**
    - **Campus**
-3. Ang table ay nag-update kaagad upang magreflect sa iyong mga pagpipilian.
+3. Agad na na-a-update ang talahanayan para ipakita ang iyong mga napili.
 
 :::info
-Ang iyong mga pagpipilian sa column ay nakakaapekto sa kung ano ang kasama kapag nag-export ka sa CSV. I-customize ang mga column bago mag-export upang makuha ang eksaktong data na kailangan mo.
+Nakakaapekto ang iyong mga pinili na column sa kung ano ang isasama kapag nag-export ka sa CSV. I-customize ang mga column bago mag-export para makuha nang eksakto ang data na kailangan mo.
 :::
 
 ## Pagination
 
-Kapag ang iyong direktoryo ay may maraming mga record, ang mga resulta ay nahahati sa mga pahina. Gamitin ang **pagination controls** sa ilalim ng table upang lumipat sa pagitan ng mga pahina. Ang kasalukuyang pahina at kabuuang bilang ng mga record ay ipinapakita upang lagi mong alam kung nasaan ka sa listahan.
+Kapag maraming record ang iyong directory, nahahati ang mga resulta sa maraming page. Gamitin ang mga **pagination control** sa ibaba ng talahanayan para lumipat sa pagitan ng mga page. Ipinapakita ang kasalukuyang page at ang kabuuang bilang ng record kaya alam mo palagi kung nasaan ka sa listahan.
 
 :::tip
-Kung nais mong makita ang higit pang mga resulta nang sabay-sabay, palakasin ang iyong paghahanap upang bawasan ang listahan kaysa sa paging sa pamamagit ng isang malaking direktoryo.
+Kung gusto mong makita ang mas maraming resulta nang sabay-sabay, paliitin ang iyong search sa halip na mag-page sa isang malaking directory.
 :::
 
-## Pag-export ng mga Resulta sa Paghahanap
+## Pag-export ng mga Resulta ng Search
 
-Maaari mong i-download ang iyong kasalukuyang mga resulta sa paghahanap bilang isang CSV file anumang oras:
+Puwede mong i-download ang iyong kasalukuyang mga resulta ng search bilang CSV file kahit anong oras:
 
-1. Ilapat ang anumang paghahanap o filter na gusto mo.
-2. I-customize ang iyong mga column upang isama ang data na kailangan mo.
-3. I-click ang **Export** button.
-4. Isang CSV file ay i-download sa iyong computer, handa nang buksan sa Excel, Google Sheets, o anumang spreadsheet application.
+1. Ilapat ang anumang search o filter na gusto mo.
+2. I-customize ang iyong mga column para isama ang data na kailangan mo.
+3. I-click ang button na **Export**.
+4. Made-download ang isang CSV file sa iyong computer, handang buksan sa Excel, Google Sheets, o anumang spreadsheet application.
 
-Para sa mas maraming detalye tungkol sa pag-export, tingnan ang [Pag-export ng Data](./exporting-data.md).
+Para sa higit pang detalye tungkol sa pag-export, tingnan ang [Exporting Data](./exporting-data.md).
 
 :::tip
-Para sa mas advanced na mga query -- tulad ng paghahanap ng lahat ng taong hindi dumalo sa nakaraang tatlong buwan -- subukan ang feature na [AI Search](./ai-search.md), na nagpapahintulot sa iyo na maghanap gamit ang mga tanong sa plain language.
+Para sa mas advanced na mga query -- tulad ng paghahanap ng lahat ng hindi dumalo sa nakaraang tatlong buwan -- subukan ang tampok na [AI Search](./ai-search.md), na nagbibigay-daan sa iyong maghanap gamit ang mga tanong sa plain na wika.
 :::
 
 ## Advanced Search
 
-Ang Advanced Search ay nagpapahintulot sa iyo na bumuo ng precise filters sa pamamagit ng pagsasama ng mga kondisyon. Buksan ito mula sa pahina ng Mga Tao, pagkatapos palawakin ang isang kategorya at i-check ang mga field na gusto mong mag-filter, na pipili ng isang operator at value para sa bawat isa. Ang mga kategorya ay kinabibilangan ng **Names**, **Demographics**, **Contact**, **Membership**, **Activity** (donations at attendance), at **Custom Fields**.
+Ang Advanced Search ay nagbibigay-daan sa iyong bumuo ng eksaktong mga filter sa pamamagitan ng pagsasama-sama ng mga kondisyon. Buksan ito mula sa People page, pagkatapos ay i-expand ang isang kategorya at i-check ang mga field na gusto mong i-filter, pumili ng operator at value para sa bawat isa. Kasama sa mga kategorya ang **Names**, **Demographics**, **Contact**, **Membership**, **Activity** (mga donasyon at attendance), at **Custom Fields**.
 
-Ang kategorya ng **Custom Fields** ay naglilista ng [Custom Fields](../settings/custom-fields.md) ng iyong simbahan — ang mga field na iyong tinukoy sa Settings upang subaybayan ang iyong sariling impormasyon (tulad ng isang background-check expiration date). Ang mga operator na inaalok ay tumutugma sa uri ng bawat field: ang mga text field ay sumusuporta sa *contains / equals / starts with / ends with*, ang mga number field ay sumusuporta sa mga comparison operators, ang mga date field ay sumusuporta sa *equals / after / before*, at ang Yes/No at Multiple Choice fields ay nagpapahintulot sa iyo na pumili ng isang value. Anumang field na maaari mong mag-filter dito ay maaaring i-save bilang isang live [List](./lists.md).
+Nililista ng kategoryang **Custom Fields** ang [Custom Fields](../settings/custom-fields.md) ng iyong simbahan — ang mga field na itinutukoy mo sa Settings para subaybayan ang sarili mong impormasyon (tulad ng petsa ng pag-expire ng background check). Ang mga operator na inaalok ay tumutugma sa uri ng bawat field: sinusuportahan ng mga text field ang *contains / equals / starts with / ends with*, sinusuportahan ng mga number field ang mga comparison operator, sinusuportahan ng mga date field ang *equals / after / before*, at hinahayaan ka ng mga Yes/No at Multiple Choice field na pumili ng value. Anumang field na puwede mong i-filter dito ay puwedeng i-save bilang isang live na [List](./lists.md).
 
-## Pag-save ng mga Paghahanap bilang mga Lista
+## Pag-save ng mga Search bilang Listahan
 
-Pagkatapos na tumapos ang isang paghahanap, isang **Save as List** button (bookmark icon) ay lilitaw sa header ng pahina ng Mga Tao. I-click ito upang itipid ang iyong kasalukuyang query sa ilalim ng isang pangalan at opsyonal na kategorya, upang maaari mong i-reload ito kaagad sa mga susunod na session. Tingnan ang [Saved Lists](./lists.md) para sa buong detalye.
+Pagkatapos magpatakbo ng search, lalabas ang button na **Save as List** (bookmark icon) sa header ng People page. I-click ito para itago ang iyong kasalukuyang query sa ilalim ng isang pangalan at opsyonal na kategorya, kaya ma-reload mo ito agad sa mga susunod na session. Tingnan ang [Saved Lists](./lists.md) para sa buong detalye.

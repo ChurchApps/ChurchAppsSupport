@@ -6,90 +6,90 @@ title: "Checkr"
 
 <div class="article-intro">
 
-Ang [Checkr](https://checkr.com) ay nag-run ng background screening para sa staff at volunteers — isang halos unibersal na pangangailangan para sa kahit na anong simbahan na gumagawa ng isang children's o youth program. Ang B1 ay **walang built-in na background-check feature** -- ang pag-order ng mga check, pag-track ng mga resulta, at compliance sa screening ay lahat ay naninirahan sa Checkr; ang recipe sa ibaba ay nag-wire lamang ng B1 events dito. Ang Checkr ay walang Zapier app, ngunit ang [Make.com's Checkr integration](https://www.make.com/en/integrations/checkr) ay na-verify at nag-expose ng mga actions na kailangan mo upang simulan ang isang check mula sa isang B1 event.
+Nagsasagawa ang [Checkr](https://checkr.com) ng background screening para sa staff at volunteer — isang halos-unibersal na pangangailangan para sa anumang simbahang nagpapatakbo ng programa para sa mga bata o kabataan. Ang B1 ay **walang built-in na background-check feature** — ang pag-order ng mga check, pagsubaybay ng mga resulta, at pag-comply sa screening ay pawang nasa Checkr; ang recipe sa ibaba ay ikinokonekta lamang ang mga event ng B1 dito. Walang Zapier app ang Checkr, ngunit ang [Make.com integration ng Checkr](https://www.make.com/en/integrations/checkr) ay verified at inilalantad ang mga actions na kailangan mo para simulan ang isang check mula sa isang event ng B1.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Isang [Checkr](https://checkr.com) account na may API access at hindi bababa sa isang screening package na na-configure
+- Isang [Checkr](https://checkr.com) account na may API access at kahit isang na-configure na screening package
 - Isang [Make](https://www.make.com) account
-- Isang B1Admin user na may **Edit Settings** permission
+- Isang user ng B1Admin na may permisong **Edit Settings**
 
 </div>
 
-## Ano ang Maaari Mong I-wire Up
+## Ano ang Puwede Mong Ikonekta
 
-Ang Checkr app ng Make ay nag-expose ng 1 trigger at 6 actions:
+Inilalantad ng Checkr app ng Make ang 1 trigger at 6 na action:
 
 | Direksyon | B1 / Make trigger | Action |
 |---|---|---|
-| B1 → Checkr | B1 `group.member.added` (filtered sa isang volunteer group) | Checkr: Create Candidate → Create Background Check Invitation |
-| Checkr → B1 | Checkr webhook (invitation / report event) | B1: I-update ang record ng tao (hal. tag "Checkr cleared") |
+| B1 → Checkr | B1 `group.member.added` (naka-filter sa isang volunteer group) | Checkr: Create Candidate → Create Background Check Invitation |
+| Checkr → B1 | Checkr webhook (invitation / report event) | B1: I-update ang record ng tao (hal. tag na "Checkr cleared") |
 
-Ang mga actions ng Checkr: Create Candidate, Create Background Check Invitation, Get Candidate, Get Report, Get Report's ETA, Get an Invitation. Plus 4 search modules.
+Mga action ng Checkr sa Make: Create Candidate, Create Background Check Invitation, Get Candidate, Get Report, Get Report's ETA, Get an Invitation. Kasama pa ang 4 na search module.
 
 ## Setup
 
-### 1. Mag-mint ng isang B1 API key
+### 1. Gumawa ng B1 API key
 
 **Settings → Developer → API Keys → New API Key**:
 
 - `settings:write` — para sa trigger webhook
-- `people:read` — upang hanapin ang pangalan/email ng tao kapag nagsisimula ng isang check
-- (Opsyonal) `people:write` kung gusto mong isulat ang status ng report pabalik bilang custom field o tag
+- `people:read` — para hanapin ang pangalan/email ng tao kapag nagsisimula ng check
+- (Opsyonal) `people:write` kung gusto mong i-record ang status ng report bilang custom field o tag
 
-### 2. Bumuo ng "kick off a check on volunteer signup" scenario sa Make
+### 2. Buuin ang scenario na "simulan ang check kapag nag-sign up ang volunteer" sa Make
 
 1. **Trigger** — B1.church: Watch Events (`group.member.added`).
-2. **Filter** — magpatuloy lamang kung ang `data.groupId` ay tumutugma sa iyong "Children's Volunteers" (o equivalent) group.
-3. **Action** — B1.church: Find Person (sa pamamagit ng `data.personId`) upang makuha ang email + first/last name.
-4. **Action** — Checkr: Create Candidate. I-map ang first/last/email mula sa hakbang 3.
-5. **Action** — Checkr: Create Background Check Invitation. I-map ang bagong candidate id mula sa hakbang 4 sa *candidate_id* field. Piliin ang screening package (hal. `tasker_standard` o anumang nag-expose ang iyong account).
-6. (Opsyonal) **Action** — Slack: notipikahan ang iyong safe-ministry coordinator na ang isang check ay nasimulan.
+2. **Filter** — magpatuloy lamang kung ang `data.groupId` ay tumutugma sa iyong "Children's Volunteers" (o katumbas nito) na grupo.
+3. **Action** — B1.church: Find Person (ayon sa `data.personId`) para makuha ang email + unang/huling pangalan.
+4. **Action** — Checkr: Create Candidate. I-map ang unang/huling pangalan/email mula sa hakbang 3.
+5. **Action** — Checkr: Create Background Check Invitation. I-map ang bagong candidate id mula sa hakbang 4 sa field na *candidate_id*. Piliin ang screening package (hal. `tasker_standard` o kung ano ang inilalantad ng iyong account).
+6. (Opsyonal) **Action** — Slack: ipaalam sa iyong safe-ministry coordinator na may sinimulan nang check.
 
-I-on ang scenario. Ang mga bagong volunteers sa target group ay makakakuha ng isang awtomatikong Checkr invitation sa pamamagit ng email; kumpleto nila ito sa kanilang phone o laptop; tumatakbo ang Checkr ng screen.
+I-on ang scenario. Ang mga bagong volunteer sa target na grupo ay awtomatikong makakatanggap ng Checkr invitation sa pamamagitan ng email; kanilang kokompletuhin ito sa kanilang telepono o laptop; isasagawa ng Checkr ang screening.
 
-### 3. (Opsyonal) Tanggapin ang report pabalik
+### 3. (Opsyonal) Matanggap pabalik ang report
 
-1. **Trigger** — Checkr: Watch Events (webhook). Ang Make ay nag-register ng Checkr webhook sa activation.
+1. **Trigger** — Checkr: Watch Events (webhook). Nagrerehistro ang Make ng Checkr webhook sa oras ng activation.
 2. **Filter** — magpatuloy lamang kung ang `event_type = report.completed`.
 3. **Action** — Checkr: Get Report (gamitin ang report id mula sa webhook).
-4. **Action** — B1.church: Find Person (sa pamamagit ng candidate email).
-5. **Action** — Conditional Slack / Email: notipikahan ang coordinator na may `clear` / `consider` / `suspended` status.
+4. **Action** — B1.church: Find Person (ayon sa email ng candidate).
+5. **Action** — Conditional Slack / Email: ipaalam sa coordinator ang status na `clear` / `consider` / `suspended`.
 
-Tala: Ang B1 ay walang built-in na "background-check status" field ngayon. Ang pragmatic options ay (a) mag-post ng result sa isang private Slack channel para sa review, (b) isulat ito sa isang Google Sheet para sa audit, o (c) magdagdag ng tao sa isang "Cleared volunteers" B1 group sa `clear`.
+Paalala: Wala pang built-in na field ang B1 para sa "background-check status" sa ngayon. Ang mga praktikal na opsyon ay (a) i-post ang resulta sa isang pribadong Slack channel para sa pagsusuri, (b) isulat ito sa isang Google Sheet para sa audit, o (c) idagdag ang tao sa isang grupong "Cleared volunteers" sa B1 kapag `clear`.
 
-## Mga Karaniwang Recipes
+## Mga Karaniwang Recipe
 
-### Re-screen volunteers bawat 2 taon
+### Muling i-screen ang mga volunteer tuwing 2 taon
 
-I-pair ang itaas na may isang Make schedule trigger:
+Isamahan ang nasa itaas sa isang schedule trigger ng Make:
 
-- **Trigger** — Make: Schedule (monthly)
+- **Trigger** — Make: Schedule (buwanan)
 - **Action** — B1.church: List Group Members para sa "Cleared volunteers"
-- **Action** — Filter by Make: cleared date mas lumang kaysa 22 months
-- **Action** — Checkr: Create Background Check Invitation (pareho sa initial flow)
+- **Action** — I-filter sa pamamagitan ng Make: petsa ng pagiging cleared na mas matanda sa 22 buwan
+- **Action** — Checkr: Create Background Check Invitation (kapareho ng paunang flow)
 
-### I-block ang stage 1 access hanggang sa makumpleto ang check
+### I-block ang stage 1 access hanggang makumpleto ang check
 
-Kung ang iyong simbahan ay gumagamit ng B1 group membership upang i-gate ang access (hal. mga "Cleared" group members lamang ang lumilitaw sa serving schedules), panatilihin ang mga bagong volunteers sa isang holding group hanggang sa ang Checkr `report.completed` event ay i-flip sila.
+Kung ginagamit ng iyong simbahan ang membership sa grupo ng B1 para i-gate ang access (hal. mga miyembro lamang ng grupong "Cleared" ang lumalabas sa mga serving schedule), panatilihin ang mga bagong volunteer sa isang holding group hanggang baguhin sila ng event na `report.completed` ng Checkr.
 
-## Mga Limitasyon at Mga Tala
+## Mga Limitasyon at Paalala
 
-- **Ang Checkr ay US-only** para sa karamihan ng screening packages. Ang Australian, UK, at Canadian churches ay kailangang isang alternatibo.
-- **Pricing** ay per check — bawat Create Invitation sa Make ay sumusunod ng real check. I-test sa Checkr's sandbox / staging account una (ang Checkr app ng Make ay nirerespeto ang credentials na ipinasa mo sa connection, kaya ang pag-swap ng creds ay nag-switch ng sandbox/live).
-- **Ang Checkr API access ay plan-gated.** Ang mas maliit na Checkr accounts ay maaaring nasa isang UI-only tier; makipag-ugnayan sa Checkr upang i-enable ang API.
+- **Ang Checkr ay para lamang sa US** para sa karamihan ng mga screening package. Kailangan ng alternatibo ang mga simbahan sa Australia, UK, at Canada.
+- **Ang presyo** ay per check — bawat Create Invitation sa Make ay gumagamit ng aktwal na check. Subukan muna sa sandbox / staging account ng Checkr (iginagalang ng Checkr app ng Make ang mga credential na ipinapasa mo sa koneksyon, kaya ang pagpapalit ng credentials ay lumilipat sa pagitan ng sandbox/live).
+- **Ang Checkr API access ay plan-gated.** Ang mas maliliit na Checkr account ay maaaring nasa UI-only tier lamang; makipag-ugnayan sa Checkr para i-enable ang API.
 
-## Troubleshooting
+## Pag-troubleshoot
 
-- **Create Candidate fails na may `403`** — ang Checkr API token ay read-only o nawawalan ng tamang account permissions. Muling isyu ito mula sa Checkr dashboard na may write scope.
-- **Invitation ay hindi kailanman dumating** — suriin ang email ng candidate sa hakbang 3; ang B1 ay maaaring may isang walang laman na email field para sa taong iyon. Magdagdag ng email-required filter bago ang Checkr step.
-- **Webhook trigger ay hindi nag-fire** — ang Checkr's webhook registration ay silent na nabigo minsan kung ang iyong Make account ay hindi sa isang paid tier na sumusuporta sa outbound webhooks. I-verify sa Checkr's dashboard *Webhooks* page na ang URL ng Make ay nakalista.
+- **Nabigo ang Create Candidate na may `403`** — read-only ang Checkr API token o kulang ito ng tamang permisyon sa account. Muling i-issue ito mula sa Checkr dashboard na may write scope.
+- **Hindi dumadating ang invitation** — suriin ang email ng candidate sa hakbang 3; posibleng walang laman ang email field ng B1 para sa taong iyon. Magdagdag ng filter na kailangan ang email bago ang hakbang ng Checkr.
+- **Hindi umaandar ang webhook trigger** — minsan tahimik na nabibigo ang webhook registration ng Checkr kung ang iyong Make account ay wala sa paid tier na sumusuporta sa outbound webhooks. I-verify sa page na *Webhooks* ng Checkr dashboard na nakalista ang URL ng Make.
 
-## Makita Din
+## Tingnan Din
 
-- [Make (overview)](../make) — B1 side ng bawat Make scenario
-- [Mobile Message](./mobile-message) — para sa SMS-providers-without-Zapier-apps, parehong Webhooks/HTTP pattern tulad ng Checkr Make wiring
+- [Make (overview)](../make) — bahagi ng B1 sa bawat Make scenario
+- [Mobile Message](./mobile-message) — para sa mga SMS provider na walang Zapier app, kaparehong Webhooks/HTTP pattern gaya ng Checkr Make wiring
 - [Checkr API docs](https://docs.checkr.com/)

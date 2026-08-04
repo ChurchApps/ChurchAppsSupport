@@ -6,104 +6,106 @@ title: "Piani di Servizio"
 
 <div class="article-intro">
 
-I piani di servizio organizzano chi sta servendo e quando. Ogni piano è legato a una data e un ministero specifici, rendendo facile coordinare i tuoi team di volontari settimana per settimana e garantire che ogni servizio sia completamente coperto.
+I piani di servizio organizzano chi presta servizio e quando. Ogni piano è legato a una data e a un ministero specifici, rendendo facile coordinare i tuoi team di volontari settimana dopo settimana e garantire che ogni servizio sia completamente coperto.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Configura i tuoi ministeri e team nell'area di Servizio
-- Assicurati che i volontari siano stati aggiunti alla tua [directory di persone](../people/adding-people.md) e assegnati ai team
+- Configura i tuoi ministeri e team nell'area Servizio
+- Assicurati che i volontari siano stati aggiunti alla tua [directory delle persone](../people/adding-people.md) e assegnati ai team
 
 </div>
 
-## Accesso ai Piani
+## Accedere ai Piani
 
-1. Naviga a **Serving** (Servizio) dal menu principale.
-2. Seleziona una **scheda del ministero** nella parte superiore della pagina.
-3. Fai clic su un **tipo di piano** per vedere l'elenco dei piani per quel tipo.
-4. Fai clic su un piano specifico per aprirlo.
+1. Vai su **Servizio** dal menu principale.
+2. Seleziona una **scheda ministero** nella parte superiore della pagina.
+3. Clicca su un **tipo di piano** per vedere l'elenco dei piani di quel tipo.
+4. Clicca su un piano specifico per aprirlo.
 
 :::info
-L'accesso completo da amministratore non è necessario per gestire i piani. Chiunque sia membro di un ministero può navigare a Servizio e creare, modificare e programmare piani per il proprio ministero senza richiedere l'autorizzazione Plans Edit (Modifica Piani). Gli editor con il ruolo Plans Edit possono gestire piani su ogni ministero.
+Non è necessario l'accesso completo da amministratore per gestire i piani. Chiunque sia membro di un ministero può accedere a Servizio e creare, modificare e programmare piani per il proprio ministero senza bisogno del permesso Modifica Piani. Gli editor con il ruolo Modifica Piani possono gestire i piani in ogni ministero.
 :::
 
-## Creazione di un Piano
+## Creare un Piano
 
-1. Dalla vista del tipo di piano, fai clic su **New Plan** (Nuovo Piano).
-2. Dai al piano un nome o usa la data come nome. Seleziona la **data** del servizio.
-3. Se desideri copiare da un piano precedente, scegli solo le posizioni o le posizioni e gli incarichi. Se non vuoi copiare, non scegliere nulla. Puoi anche copiare l'ordine di servizio dal mio piano precedente.
-4. Salva il piano. Puoi ora iniziare ad assegnare i membri del team e creare l'[ordine di servizio](./service-order.md).
+1. Dalla vista del tipo di piano, clicca su **Nuovo Piano**.
+2. Dai un nome al piano oppure usa la data come nome. Seleziona la **data** del servizio.
+3. Se desideri copiare da un piano precedente, scegli se copiare solo le posizioni oppure le posizioni e le assegnazioni. Se non vuoi copiare nulla, non selezionare nulla. Puoi anche copiare l'ordine del servizio da un piano precedente.
+4. Salva il piano. Ora puoi iniziare ad assegnare i membri del team e costruire l'[ordine del servizio](./service-order.md).
 
-## La Pagina dei Dettagli del Piano
+## La Pagina di Dettaglio del Piano
 
 Quando apri un piano, vedrai due schede:
 
-- **Assignments** (Incarichi) -- Gestisci quali membri del team sono assegnati a questo piano. Puoi aggiungere persone dai tuoi team esistenti e vedere chi ha confermato o è ancora in sospeso.
-- **[Service Order](./service-order.md)** (Ordine di Servizio) -- Costruisci l'ordine di servizio con elementi come canzoni di culto, preghiere, annunci e il sermone.
+- **Assegnazioni** -- Gestisci quali membri del team sono assegnati a questo piano. Puoi aggiungere persone dai tuoi team esistenti e vedere chi ha confermato o è ancora in attesa.
+- **[Ordine del Servizio](./service-order.md)** -- Costruisci l'ordine del servizio con elementi come canti di lode, preghiere, annunci e la predicazione.
 
-## Assegnazione dei Membri del Team
+## Assegnare i Membri del Team
 
-1. Apri un piano e vai alla scheda **Assignments** (Incarichi).
-2. Fai clic su **add Position** (aggiungi Posizione) per espanderla. Compila le informazioni nel modulo aggiungi una posizione. Per il nome della categoria aggiungi la categoria che preferisci.
-3. Fai clic su **People Needed** (Persone Necessarie) e scegli i volontari per riempire quella posizione.
-4. Aggiungi membri dal tuo roster del team facendo clic su **Add** (Aggiungi).
-5. I membri assegnati compariranno sotto il loro team con il loro stato di incarico.
-6. Fai clic su notifica ai volontari per notificarli nell'app B1 o via e-mail.
+1. Apri un piano e vai alla scheda **Assegnazioni**.
+2. Clicca su **aggiungi Posizione** per espanderla. Compila le informazioni nel modulo di aggiunta posizione. Per il nome della categoria, aggiungi quella che preferisci.
+3. Clicca su **Persone Necessarie** e scegli i volontari per coprire quella posizione.
+4. Aggiungi membri dal roster del tuo team cliccando su **Aggiungi**.
+5. I membri assegnati appariranno sotto il proprio team con il loro stato di assegnazione.
+6. Clicca su notifica i volontari per notificarli all'interno dell'app B1 o via email.
+
+Ogni posizione mostra un chip con un conteggio (ad esempio, "2/3") per vedere a colpo d'occhio quanti posti sono coperti. Nella parte superiore della scheda Assegnazioni, una barra di avanzamento e un chip riepilogativo ("X di Y posizioni coperte") mostrano il livello complessivo di copertura del piano, passando a **Completamente coperto** una volta che ogni posizione è coperta.
 
 :::tip
-Configura i tuoi team nelle impostazioni del ministero prima di creare i piani. In questo modo, avrai un pool pronto di volontari da cui assegnare.
+Configura i tuoi team nelle impostazioni del ministero prima di creare i piani. In questo modo avrai un pool di volontari già pronto da cui attingere.
 :::
 
 ## Promemoria per i Volontari
 
-B1 può ricordare automaticamente ai volontari i servizi per i quali sono programmati, in modo che tu non debba inseguire il tuo team ogni settimana. I promemoria vanno a **tutti programmati** -- sia a coloro che hanno confermato sia a coloro che non hanno ancora risposto -- tramite e-mail e come notifica in-app/push. Ogni promemoria include le posizioni del volontario, la data del servizio, le note del piano e il tuo messaggio personalizzato.
+B1 può ricordare automaticamente ai volontari i servizi per cui sono programmati, così non devi rincorrere il tuo team ogni settimana. I promemoria vengono inviati a **tutti i programmati** -- sia a chi ha confermato sia a chi non ha ancora risposto -- via email e come notifica in-app/push. Ogni promemoria include la/le posizione/i del volontario, la data del servizio, le note del piano e il tuo messaggio personalizzato.
 
-La tempistica e il contenuto dei promemoria vengono impostati per **tipo di piano**, quindi ogni tipo di servizio può mantenere il suo programma.
+I tempi e i contenuti dei promemoria sono impostati per **tipo di piano**, così ogni tipo di servizio può mantenere il proprio calendario.
 
-1. Dall'area **Serving** (Servizio), seleziona il ministero che contiene il tipo di piano.
-2. Fai clic sull'icona **edit (pencil)** (modifica) accanto al tipo di piano.
-3. Nella sezione **Reminders** (Promemoria), imposta:
-   - **Reminder days before service** (Giorni di promemoria prima del servizio) -- un elenco separato da virgole di quanti giorni prima inviare, ad esempio `7,1,0`. Usa `0` per inviare un promemoria il giorno del servizio. Lascia questo campo vuoto per disattivare i promemoria per questo tipo di piano.
-   - **Custom reminder message** (Messaggio di promemoria personalizzato) *(facoltativo)* -- testo aggiuntivo aggiunto al promemoria, ad esempio "Arriva 30 minuti prima per provare."
+1. Dall'area **Servizio**, seleziona il ministero che contiene il tipo di piano.
+2. Clicca sull'**icona di modifica (matita)** accanto al tipo di piano.
+3. Nella sezione **Promemoria**, imposta:
+   - **Giorni di promemoria prima del servizio** -- un elenco separato da virgole di quanti giorni prima inviare il promemoria, ad esempio `7,1,0`. Usa `0` per inviare un promemoria il giorno stesso del servizio. Lascia questo campo vuoto per disattivare i promemoria per questo tipo di piano.
+   - **Messaggio di promemoria personalizzato** *(opzionale)* -- testo aggiuntivo incluso nel promemoria, come "Arriva 30 minuti prima per le prove."
 4. Salva il tipo di piano.
 
-Per impostazione predefinita, i nuovi tipi di piano ricordano ai volontari **2 giorni prima** di ogni servizio fino a quando non modifichi questo.
+I nuovi tipi di piano ricordano ai volontari **2 giorni prima** di ogni servizio per impostazione predefinita, finché non modifichi questa impostazione.
 
 :::tip
-I volontari che non hanno ancora confermato ottengono i pulsanti **Accept** (Accetta) e **Decline** (Rifiuta) direttamente all'interno dell'e-mail di promemoria, in modo che possano rispondere senza accedere.
+I volontari che non hanno ancora confermato trovano i pulsanti **Accetta** e **Rifiuta** direttamente nell'email di promemoria, così possono rispondere senza dover accedere.
 :::
 
 :::info
-Ogni promemoria viene inviato una volta. I piani che sono ancora in matita (non ancora inviati al team) non attivano promemoria.
+Ogni promemoria viene inviato una sola volta. I piani ancora in bozza (non ancora inviati al team) non attivano promemoria.
 :::
 
-## Associazione di Gruppi a un Tipo di Piano
+## Associare Gruppi a un Tipo di Piano
 
-Sotto l'elenco dei piani nella pagina del tipo di piano, la sezione **Groups** (Gruppi) ti consente di decidere quali gruppi possono visualizzare i piani per questo tipo di piano dal loro portale dei membri. Questo è un modo veloce per mostrare i servizi imminenti ai team giusti senza dare loro accesso amministrativo.
+Sotto l'elenco dei piani nella pagina del tipo di piano, la sezione **Gruppi** ti permette di decidere quali gruppi possono vedere i piani di questo tipo di piano dal proprio portale membri. Questo è un modo rapido per mostrare i prossimi servizi ai team giusti senza dare loro accesso da amministratore.
 
-1. Nella pagina del tipo di piano, scorri verso il basso fino alla sezione **Groups** (Gruppi).
-2. Fai clic su **Add Group** (Aggiungi Gruppo) e seleziona un gruppo dal menu a discesa.
-3. Nella colonna **Shows** (Mostra), scegli se i membri di quel gruppo dovrebbero vedere i piani **Past** (Passati), **Future** (Futuri) o **Both** (Entrambi) per questo tipo di piano.
-4. Ripeti per associare ulteriori gruppi, o fai clic sull'icona del cestino per rimuovere un gruppo.
+1. Nella pagina del tipo di piano, scorri fino alla sezione **Gruppi**.
+2. Clicca su **Aggiungi Gruppo** e scegli un gruppo dal menu a tendina.
+3. Nella colonna **Mostra**, scegli se i membri di quel gruppo devono vedere i piani **Passati**, **Futuri** o **Entrambi** per questo tipo di piano.
+4. Ripeti per associare altri gruppi, oppure clicca sull'icona del cestino per rimuovere un gruppo.
 
 :::info
-Nella selezione compaiono solo i gruppi contrassegnati come **Standard**. I membri di un gruppo associato vedono automaticamente i piani di questo tipo di piano nella scheda [Plans](/docs/b1-church/plans/) (Piani) nel portale dei membri di B1. Limitato alla finestra passata/futura/entrambi che hai selezionato.
+Nel selettore compaiono solo i gruppi contrassegnati come **Standard**. I membri di un gruppo associato vedono automaticamente i piani di questo tipo di piano nella scheda [Piani](/docs/b1-church/plans/) del portale membri di B1 -- limitatamente alla finestra passata/futura/entrambe che hai selezionato.
 :::
 
-## Stampa dei Piani
+## Stampare i Piani
 
-Puoi stampare un piano per la distribuzione al tuo team. Apri il piano, apri la scheda dell'ordine di servizio e usa l'opzione **Print** (Stampa) per generare una versione stampabile che include gli incarichi e l'ordine di servizio. Questo è utile per distribuire durante le prove o affiggere in un'area comune.
+Puoi stampare un piano per distribuirlo al tuo team. Apri il piano, vai alla scheda dell'ordine del servizio e usa l'opzione **Stampa** per generare una versione stampabile che include le assegnazioni e l'ordine del servizio. Utile da distribuire durante le prove o da affiggere in uno spazio comune.
 
 :::info
 I piani sono organizzati per ministero. Assicurati di essere sulla scheda del ministero corretto prima di creare o visualizzare i piani.
 :::
 
-## Passaggi Successivi
+## Prossimi Passi
 
-- Usa la [Plans Overview](./plans-overview.md) (Panoramica dei Piani) per vedere tutti gli incarichi imminenti su più settimane in un'unica griglia e individuare le posizioni non occupate. Assegna i volontari direttamente dalla griglia.
-- Salva la struttura di un piano come [Plan Template](./plan-templates.md) (Modello di Piano) in modo da poterlo applicare ai piani futuri in un solo clic
-- Crea il tuo [Service Order](./service-order.md) (Ordine di Servizio) con canzoni, letture e altri elementi
-- Aggiungi [canzoni](./songs.md) dalla tua libreria direttamente all'ordine di servizio
-- Usa [Tasks](./tasks.md) (Compiti) per assegnare elementi d'azione di follow-up ai membri del team
+- Usa la [Panoramica dei Piani](./plans-overview.md) per vedere tutte le assegnazioni imminenti su più settimane in un'unica griglia e individuare le posizioni non coperte -- e assegnare i volontari direttamente dalla griglia
+- Salva la struttura di un piano come [Modello di Piano](./plan-templates.md) così potrai applicarla ai piani futuri con un clic
+- Costruisci il tuo [Ordine del Servizio](./service-order.md) con canti, letture e altri elementi
+- Aggiungi [canti](./songs.md) dalla tua libreria direttamente nell'ordine del servizio
+- Usa le [Attività](./tasks.md) per assegnare compiti di follow-up ai membri del team

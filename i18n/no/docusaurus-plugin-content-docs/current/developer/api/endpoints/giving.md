@@ -6,27 +6,27 @@ title: "Gave-endepunkter"
 
 <div class="article-intro">
 
-The Giving module manages donations, funds, payment processing, subscriptions, and related financial operations. It supports multiple payment gateways (Stripe, PayPal), handles one-time and recurring donations, tracks donation batches, and provides webhook processing for asynchronous payment events.
+Giving-modulen administrerer donasjoner, fond, betalingsbehandling, abonnementer og relaterte finansielle operasjoner. Den støtter flere betalingsgatewayer (Stripe, PayPal), håndterer engangs- og gjentakende donasjoner, sporer donasjonsbatcher, og tilbyr webhook-behandling for asynkrone betalingshendelser.
 
 </div>
 
-**Base path:** `/giving`
+**Basissti:** `/giving`
 
-## Donations
+## Donasjoner
 
-Base path: `/giving/donations`
+Basissti: `/giving/donations`
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Donations.View or own personId | List all donations. Filter by `?batchId=` or `?personId=` |
-| GET | `/:id` | JWT | Donations.View | Get a donation by ID |
-| GET | `/my` | JWT | — | Get current user's donations |
-| GET | `/summary` | JWT | Donations.ViewSummary | Get donation summary. Filter by `?startDate=&endDate=&type=`. Use `type=person` for per-person breakdown |
-| GET | `/testEmail` | Public | — | Send a test email (development/debugging) |
-| POST | `/` | JWT | Donations.Edit | Create or update donations (batch) |
-| DELETE | `/:id` | JWT | Donations.Edit | Delete a donation |
+| GET | `/` | JWT | Donations.View eller egen personId | List alle donasjoner. Filtrer med `?batchId=` eller `?personId=` |
+| GET | `/:id` | JWT | Donations.View | Hent en donasjon etter ID |
+| GET | `/my` | JWT | — | Hent gjeldende brukers donasjoner |
+| GET | `/summary` | JWT | Donations.ViewSummary | Hent donasjonssammendrag. Filtrer med `?startDate=&endDate=&type=`. Bruk `type=person` for oppdeling per person |
+| GET | `/testEmail` | Public | — | Send en test-e-post (utvikling/feilsøking) |
+| POST | `/` | JWT | Donations.Edit | Opprett eller oppdater donasjoner (batch) |
+| DELETE | `/:id` | JWT | Donations.Edit | Slett en donasjon |
 
-### Example: List Donations by Batch
+### Eksempel: List donasjoner etter batch
 
 ```
 GET /giving/donations?batchId=abc-123
@@ -46,7 +46,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-### Example: Get Donation Summary
+### Eksempel: Hent donasjonssammendrag
 
 ```
 GET /giving/donations/summary?startDate=2025-01-01&endDate=2025-12-31
@@ -64,39 +64,39 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Donation Batches
+## Donasjonsbatcher
 
-Base path: `/giving/donationbatches`
+Basissti: `/giving/donationbatches`
 
-Extends `GenericCrudController` with CRUD routes: `getById`, `getAll`, `post`, `delete`. The delete operation also removes all donations within the batch.
+Utvider `GenericCrudController` med CRUD-rutene: `getById`, `getAll`, `post`, `delete`. Slette-operasjonen fjerner også alle donasjoner innenfor batchen.
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Donations.ViewSummary | List all donation batches |
-| GET | `/:id` | JWT | Donations.ViewSummary | Get a donation batch by ID |
-| POST | `/` | JWT | Donations.Edit | Create or update donation batches |
-| DELETE | `/:id` | JWT | Donations.Edit | Delete a batch and all its donations |
+| GET | `/` | JWT | Donations.ViewSummary | List alle donasjonsbatcher |
+| GET | `/:id` | JWT | Donations.ViewSummary | Hent en donasjonsbatch etter ID |
+| POST | `/` | JWT | Donations.Edit | Opprett eller oppdater donasjonsbatcher |
+| DELETE | `/:id` | JWT | Donations.Edit | Slett en batch og alle dens donasjoner |
 
-## Donate
+## Gi (Donate)
 
-Base path: `/giving/donate`
+Basissti: `/giving/donate`
 
-Handles the public-facing donation flow including charges, subscriptions, webhooks, and fee calculations. No base CRUD routes are enabled; all endpoints are custom.
+Håndterer den offentlige donasjonsflyten, inkludert belastninger, abonnementer, webhooks og avgiftsberegninger. Ingen grunnleggende CRUD-ruter er aktivert; alle endepunkter er egendefinerte.
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/gateways/:churchId` | Public | — | Get available payment gateways for a church (public keys only) |
-| POST | `/client-token` | JWT | — | Generate a client token for gateway initialization |
-| POST | `/create-order` | JWT | — | Create a payment order (PayPal-style checkout) |
-| POST | `/charge` | JWT | — | Process a one-time donation charge |
-| POST | `/subscribe` | JWT | — | Create a recurring donation subscription |
-| POST | `/log` | Public | — | Log a donation. Body: `{ donation, fundData }` |
-| POST | `/webhook/:provider` | Public | — | Receive payment webhook events (Stripe, PayPal). Requires `?churchId=` |
-| POST | `/replay-stripe-events` | JWT | Donations.Edit | Replay Stripe events for a date range. Body: `{ startDate, endDate, dryRun }` |
-| POST | `/fee` | Public | — | Calculate transaction fees. Body: `{ type, provider, gatewayId, amount, currency }`. Requires `?churchId=` |
-| POST | `/captcha-verify` | Public | — | Verify reCAPTCHA token. Body: `{ token }` |
+| GET | `/gateways/:churchId` | Public | — | Hent tilgjengelige betalingsgatewayer for en kirke (kun offentlige nøkler) |
+| POST | `/client-token` | JWT | — | Generer et klienttoken for gateway-initialisering |
+| POST | `/create-order` | JWT | — | Opprett en betalingsordre (PayPal-stil kasse) |
+| POST | `/charge` | JWT | — | Behandle en engangs-donasjonsbelastning |
+| POST | `/subscribe` | JWT | — | Opprett et gjentakende donasjonsabonnement |
+| POST | `/log` | Public | — | Logg en donasjon. Body: `{ donation, fundData }` |
+| POST | `/webhook/:provider` | Public | — | Motta betalings-webhook-hendelser (Stripe, PayPal). Krever `?churchId=` |
+| POST | `/replay-stripe-events` | JWT | Donations.Edit | Spill av Stripe-hendelser på nytt for et datointervall. Body: `{ startDate, endDate, dryRun }` |
+| POST | `/fee` | Public | — | Beregn transaksjonsavgifter. Body: `{ type, provider, gatewayId, amount, currency }`. Krever `?churchId=` |
+| POST | `/captcha-verify` | Public | — | Verifiser reCAPTCHA-token. Body: `{ token }` |
 
-### Example: Process a Donation Charge
+### Eksempel: Behandle en donasjonsbelastning
 
 ```
 POST /giving/donate/charge
@@ -120,7 +120,7 @@ Authorization: Bearer <token>
 }
 ```
 
-### Example: Create a Recurring Subscription
+### Eksempel: Opprett et gjentakende abonnement
 
 ```
 POST /giving/donate/subscribe
@@ -146,52 +146,52 @@ Authorization: Bearer <token>
 }
 ```
 
-## Funds
+## Fond
 
-Base path: `/giving/funds`
+Basissti: `/giving/funds`
 
-Extends `GenericCrudController` with CRUD routes: `getById`, `getAll`, `post`, `delete`. The `view` permission is `null` (no permission required for viewing funds).
+Utvider `GenericCrudController` med CRUD-rutene: `getById`, `getAll`, `post`, `delete`. `view`-tillatelsen er `null` (ingen tillatelse kreves for å se fond).
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | List all funds |
-| GET | `/:id` | JWT | — | Get a fund by ID |
-| GET | `/churchId/:churchId` | Public | — | Get all funds for a specific church (public) |
-| GET | `/public/:churchId/:fundId/total?startDate=&endDate=` | Public | — | Get a fund's donation total: `{ fundId, totalAmount, donationCount }`. Powers the website builder's `campaignProgress` element |
-| POST | `/` | JWT | Donations.Edit | Create or update funds |
-| DELETE | `/:id` | JWT | Donations.Edit | Delete a fund |
+| GET | `/` | JWT | — | List alle fond |
+| GET | `/:id` | JWT | — | Hent et fond etter ID |
+| GET | `/churchId/:churchId` | Public | — | Hent alle fond for en bestemt kirke (offentlig) |
+| GET | `/public/:churchId/:fundId/total?startDate=&endDate=` | Public | — | Hent et fonds donasjonssum: `{ fundId, totalAmount, donationCount }`. Driver nettstedbyggerens `campaignProgress`-element |
+| POST | `/` | JWT | Donations.Edit | Opprett eller oppdater fond |
+| DELETE | `/:id` | JWT | Donations.Edit | Slett et fond |
 
-## Fund Donations
+## Fond-donasjoner
 
-Base path: `/giving/funddonations`
+Basissti: `/giving/funddonations`
 
-Tracks how individual donations are allocated across funds. No base CRUD routes are enabled; all endpoints are custom.
+Sporer hvordan individuelle donasjoner fordeles på tvers av fond. Ingen grunnleggende CRUD-ruter er aktivert; alle endepunkter er egendefinerte.
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Donations.View | List fund donations. Filter by `?donationId=`, `?personId=`, `?fundId=`, or `?fundName=`. Optionally add `?startDate=&endDate=` for date filtering |
-| GET | `/:id` | JWT | Donations.View | Get a fund donation by ID |
-| GET | `/my` | JWT | — | Get current user's fund donations |
-| POST | `/` | JWT | Donations.Edit | Create or update fund donations (batch) |
-| DELETE | `/:id` | JWT | Donations.Edit | Delete a fund donation |
+| GET | `/` | JWT | Donations.View | List fond-donasjoner. Filtrer med `?donationId=`, `?personId=`, `?fundId=`, eller `?fundName=`. Legg eventuelt til `?startDate=&endDate=` for datofiltrering |
+| GET | `/:id` | JWT | Donations.View | Hent en fond-donasjon etter ID |
+| GET | `/my` | JWT | — | Hent gjeldende brukers fond-donasjoner |
+| POST | `/` | JWT | Donations.Edit | Opprett eller oppdater fond-donasjoner (batch) |
+| DELETE | `/:id` | JWT | Donations.Edit | Slett en fond-donasjon |
 
-## Gateways
+## Gatewayer
 
-Base path: `/giving/gateways`
+Basissti: `/giving/gateways`
 
-Manages payment gateway configurations (Stripe, PayPal, etc.). No base CRUD routes are enabled; all endpoints are custom. Gateway secrets are encrypted at rest.
+Administrerer konfigurasjoner for betalingsgatewayer (Stripe, PayPal osv.). Ingen grunnleggende CRUD-ruter er aktivert; alle endepunkter er egendefinerte. Gateway-hemmeligheter er kryptert ved lagring.
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | List all gateways for the church |
-| GET | `/:id` | JWT | Settings.Edit | Get a gateway by ID |
-| GET | `/churchId/:churchId` | Public | — | Get gateways for a church (public keys only) |
-| GET | `/configured/:churchId` | Public | — | Check if a church has a configured payment gateway |
-| POST | `/` | JWT | Settings.Edit | Create or update gateways (encrypts keys, provisions webhooks and products) |
-| PATCH | `/:id` | JWT | Settings.Edit | Partially update a gateway |
-| DELETE | `/:id` | JWT | Settings.Edit | Delete a gateway (also removes its webhooks) |
+| GET | `/` | JWT | — | List alle gatewayer for kirken |
+| GET | `/:id` | JWT | Settings.Edit | Hent en gateway etter ID |
+| GET | `/churchId/:churchId` | Public | — | Hent gatewayer for en kirke (kun offentlige nøkler) |
+| GET | `/configured/:churchId` | Public | — | Sjekk om en kirke har en konfigurert betalingsgateway |
+| POST | `/` | JWT | Settings.Edit | Opprett eller oppdater gatewayer (krypterer nøkler, tilrettelegger webhooks og produkter) |
+| PATCH | `/:id` | JWT | Settings.Edit | Delvis oppdater en gateway |
+| DELETE | `/:id` | JWT | Settings.Edit | Slett en gateway (fjerner også dens webhooks) |
 
-### Example: Check Gateway Configuration
+### Eksempel: Sjekk gateway-konfigurasjon
 
 ```
 GET /giving/gateways/configured/church-123
@@ -203,79 +203,79 @@ GET /giving/gateways/configured/church-123
 }
 ```
 
-## Customers
+## Kunder
 
-Base path: `/giving/customers`
+Basissti: `/giving/customers`
 
-Extends `GenericCrudController` with CRUD routes: `getAll`, `delete`. Links people to their payment gateway customer records.
+Utvider `GenericCrudController` med CRUD-rutene: `getAll`, `delete`. Kobler personer til deres betalingsgateway-kundeoppføringer.
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Donations.ViewSummary | List all customers |
-| GET | `/:id` | JWT | Donations.ViewSummary or own record | Get a customer by ID |
-| GET | `/:id/subscriptions` | JWT | Donations.ViewSummary or own record | Get gateway subscriptions for a customer |
-| DELETE | `/:id` | JWT | Donations.Edit | Delete a customer |
+| GET | `/` | JWT | Donations.ViewSummary | List alle kunder |
+| GET | `/:id` | JWT | Donations.ViewSummary eller egen oppføring | Hent en kunde etter ID |
+| GET | `/:id/subscriptions` | JWT | Donations.ViewSummary eller egen oppføring | Hent gateway-abonnementer for en kunde |
+| DELETE | `/:id` | JWT | Donations.Edit | Slett en kunde |
 
-## Subscriptions
+## Abonnementer
 
-Base path: `/giving/subscriptions`
+Basissti: `/giving/subscriptions`
 
-Manages recurring donation subscriptions. No base CRUD routes are enabled; all endpoints are custom.
+Administrerer gjentakende donasjonsabonnementer. Ingen grunnleggende CRUD-ruter er aktivert; alle endepunkter er egendefinerte.
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Donations.ViewSummary | List all subscriptions |
-| GET | `/:id` | JWT | Donations.ViewSummary | Get a subscription by ID |
-| POST | `/` | JWT | Donations.Edit or own subscription | Update subscriptions with the payment gateway |
-| DELETE | `/:id` | JWT | Donations.Edit or own subscription | Cancel a subscription and remove from database. Body: `{ provider, reason }` |
+| GET | `/` | JWT | Donations.ViewSummary | List alle abonnementer |
+| GET | `/:id` | JWT | Donations.ViewSummary | Hent et abonnement etter ID |
+| POST | `/` | JWT | Donations.Edit eller eget abonnement | Oppdater abonnementer med betalingsgatewayen |
+| DELETE | `/:id` | JWT | Donations.Edit eller eget abonnement | Kanseller et abonnement og fjern fra databasen. Body: `{ provider, reason }` |
 
-## Subscription Funds
+## Abonnementsfond
 
-Base path: `/giving/subscriptionfunds`
+Basissti: `/giving/subscriptionfunds`
 
-Tracks fund allocations for recurring subscriptions. No base CRUD routes are enabled; all endpoints are custom.
+Sporer fondsfordelinger for gjentakende abonnementer. Ingen grunnleggende CRUD-ruter er aktivert; alle endepunkter er egendefinerte.
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Donations.View or own subscription | List subscription funds. Filter by `?subscriptionId=` |
-| GET | `/:id` | JWT | Donations.ViewSummary | Get a subscription fund by ID |
-| DELETE | `/:id` | JWT | Donations.Edit | Delete a subscription fund |
-| DELETE | `/subscription/:id` | JWT | Donations.Edit or own subscription | Delete all funds for a subscription |
+| GET | `/` | JWT | Donations.View eller eget abonnement | List abonnementsfond. Filtrer med `?subscriptionId=` |
+| GET | `/:id` | JWT | Donations.ViewSummary | Hent et abonnementsfond etter ID |
+| DELETE | `/:id` | JWT | Donations.Edit | Slett et abonnementsfond |
+| DELETE | `/subscription/:id` | JWT | Donations.Edit eller eget abonnement | Slett alle fond for et abonnement |
 
-## Payment Methods
+## Betalingsmetoder
 
-Base path: `/giving/paymentmethods`
+Basissti: `/giving/paymentmethods`
 
-Manages stored payment methods (cards, bank accounts) via payment gateway APIs. No base CRUD routes are enabled; all endpoints are custom.
+Administrerer lagrede betalingsmetoder (kort, bankkontoer) via betalingsgateway-APIer. Ingen grunnleggende CRUD-ruter er aktivert; alle endepunkter er egendefinerte.
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/personid/:id` | JWT | Donations.View or own personId | Get all stored payment methods for a person (cards, bank accounts) |
-| POST | `/addcard` | JWT | — | Attach a card payment method. Body: `{ id, personId, customerId, email, name, churchId, provider }` |
-| POST | `/updatecard` | JWT | Donations.Edit or own personId | Update card details. Body: `{ personId, paymentMethodId, cardData, provider }` |
-| POST | `/ach-setup-intent` | JWT | Donations.Edit or own personId | Create a Stripe ACH SetupIntent for bank account linking. Body: `{ personId, customerId, email, name, churchId }` |
-| POST | `/ach-setup-intent-anon` | Public | — | Create an anonymous ACH SetupIntent for guest donations. Body: `{ email, name, churchId, gatewayId }` |
-| POST | `/addbankaccount` | JWT | Donations.Edit or own personId | Add a bank account via token (deprecated; use `ach-setup-intent`). Body: `{ id, personId, customerId, email, name }` |
-| POST | `/updatebank` | JWT | Donations.Edit or own personId | Update bank account details. Body: `{ paymentMethodId, personId, bankData, customerId }` |
-| POST | `/verifybank` | JWT | Donations.Edit or own customer | Verify a bank account with micro-deposits. Body: `{ paymentMethodId, customerId, amountData }` |
-| DELETE | `/:id/:customerid` | JWT | Donations.Edit or own customer | Delete a payment method (card or bank account) |
+| GET | `/personid/:id` | JWT | Donations.View eller egen personId | Hent alle lagrede betalingsmetoder for en person (kort, bankkontoer) |
+| POST | `/addcard` | JWT | — | Legg til en kortbetalingsmetode. Body: `{ id, personId, customerId, email, name, churchId, provider }` |
+| POST | `/updatecard` | JWT | Donations.Edit eller egen personId | Oppdater kortdetaljer. Body: `{ personId, paymentMethodId, cardData, provider }` |
+| POST | `/ach-setup-intent` | JWT | Donations.Edit eller egen personId | Opprett en Stripe ACH SetupIntent for banktilkobling. Body: `{ personId, customerId, email, name, churchId }` |
+| POST | `/ach-setup-intent-anon` | Public | — | Opprett en anonym ACH SetupIntent for gjestedonasjoner. Body: `{ email, name, churchId, gatewayId }` |
+| POST | `/addbankaccount` | JWT | Donations.Edit eller egen personId | Legg til en bankkonto via token (avviklet; bruk `ach-setup-intent`). Body: `{ id, personId, customerId, email, name }` |
+| POST | `/updatebank` | JWT | Donations.Edit eller egen personId | Oppdater bankkontodetaljer. Body: `{ paymentMethodId, personId, bankData, customerId }` |
+| POST | `/verifybank` | JWT | Donations.Edit eller egen kunde | Verifiser en bankkonto med mikroinnskudd. Body: `{ paymentMethodId, customerId, amountData }` |
+| DELETE | `/:id/:customerid` | JWT | Donations.Edit eller egen kunde | Slett en betalingsmetode (kort eller bankkonto) |
 
-## Event Log
+## Hendelseslogg
 
-Base path: `/giving/eventLog`
+Basissti: `/giving/eventLog`
 
-Extends `GenericCrudController` with CRUD routes: `getById`, `getAll`, `post`, `delete`. Tracks payment gateway webhook events for auditing and deduplication.
+Utvider `GenericCrudController` med CRUD-rutene: `getById`, `getAll`, `post`, `delete`. Sporer betalingsgateway-webhook-hendelser for revisjon og deduplisering.
 
-| Method | Path | Auth | Permission | Description |
+| Metode | Sti | Auth | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Donations.ViewSummary | List all event logs |
-| GET | `/:id` | JWT | Donations.ViewSummary | Get an event log by ID |
-| GET | `/type/:type` | JWT | Donations.ViewSummary | Get event logs filtered by event type |
-| POST | `/` | JWT | Donations.Edit | Create or update event logs |
-| DELETE | `/:id` | JWT | Donations.Edit | Delete an event log |
+| GET | `/` | JWT | Donations.ViewSummary | List alle hendelseslogger |
+| GET | `/:id` | JWT | Donations.ViewSummary | Hent en hendelseslogg etter ID |
+| GET | `/type/:type` | JWT | Donations.ViewSummary | Hent hendelseslogger filtrert etter hendelsestype |
+| POST | `/` | JWT | Donations.Edit | Opprett eller oppdater hendelseslogger |
+| DELETE | `/:id` | JWT | Donations.Edit | Slett en hendelseslogg |
 
-## Related Pages
+## Relaterte sider
 
-- [Medlemskaps-endepunkter](./membership) — People, churches, groups, roles, and permissions
-- [Authentication & Permissions](./authentication) — Login flow, JWT, OAuth, permission model
-- [Module Structure](../module-structure) — Code organization patterns
+- [Medlemskaps-endepunkter](./membership) — Personer, kirker, grupper, roller og tillatelser
+- [Autentisering og tillatelser](./authentication) — Innloggingsflyt, JWT, OAuth, tillatelsesmodell
+- [Modulstruktur](../module-structure) — Kodeorganiseringsmønstre

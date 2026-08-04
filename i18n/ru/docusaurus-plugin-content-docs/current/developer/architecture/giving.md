@@ -6,7 +6,7 @@ title: "Архитектура пожертвований"
 
 <div class="article-intro">
 
-ChurchApps запускает пожертвования на модели gateway-rail: церковь хранит свой собственный счет Stripe (или PayPal, или Kingdom Funding) и B1 никогда не сидит в пути денег как platform processor. Данные карты токенизированы в браузере и никогда не достигают сервера ChurchApps. На этой странице описана вся стек — registry provider на стороне клиента в `@churchapps/apphelper`, gateway abstraction GivingApi, модель данных пожертвований и как gateway webhooks согласовываются обратно в базу данных.
+ChurchApps проводит пожертвования по модели «платёжный шлюз-рельс»: церковь сохраняет собственный аккаунт Stripe (или PayPal, или Kingdom Funding), и B1 никогда не встаёт в путь денежных средств как процессор платформы. Данные карты токенизируются в браузере и никогда не достигают сервера ChurchApps. На этой странице описан весь стек — реестр провайдеров на стороне клиента в `@churchapps/apphelper`, абстракция шлюза GivingApi, модель данных пожертвований и то, как вебхуки шлюза согласовываются обратно с базой данных.
 
 </div>
 
@@ -38,44 +38,44 @@ ChurchApps запускает пожертвования на модели gatew
                 MySQL (giving schema)
 ```
 
-Три принципа держат всю стек:
+Три принципа действуют во всём стеке:
 
-1. **Gateway держит карту.** Каждый widget входа provider'а токенизирует в браузере; API только когда-либо получает token nonce или order id.
-2. **Одна abstraction много providers.** Браузер разрешает `PaymentProvider` из registry; сервер разрешает `IGatewayProvider` из factory. Обе ключи off same нормализованный provider имя сохраненный на gateway record.
-3. **Webhooks это источник истины для settlement.** Ответ charge записывается optimistically но gateway's подписано webhook это что confirms (или creates) the completed пожертвование с idempotency guards на обеих sides.
+1. **Шлюз хранит карту.** Виджет ввода каждого провайдера токенизирует данные в браузере; API получает только токен, nonce или id заказа.
+2. **Одна абстракция, много провайдеров.** Браузер разрешает `PaymentProvider` из реестра; сервер разрешает `IGatewayProvider` из фабрики. Оба привязываются к одному и тому же нормализованному имени провайдера, хранящемуся в записи шлюза.
+3. **Вебхуки — источник истины для расчётов.** Ответ на списание записывается оптимистично, но именно подписанный вебхук шлюза подтверждает (или создаёт) завершённое пожертвование, с защитой от повторной обработки с обеих сторон.
 
-## Клиент-side: payment provider registry (`@churchapps/apphelper`)
+## На стороне клиента: реестр платёжных провайдеров (`@churchapps/apphelper`)
 
-Registry lives в `Packages/apphelper/src/donations/providers/` с каждым provider's widgets и helpers под его собственный subfolder (`providers/stripe/`, `providers/paypal/`, `providers/kingdomfunding/`) — nothing outside `providers/` branches на provider имя. `PaymentProvider` (see `providers/types.ts`) bundles everything host app needs для one gateway: `descriptor` (admin labels supported currencies fee fields default fee rates dashboard/signup URLs) `capabilities` flag set (saved cards ACH recurring inline new-card entry implicit save-on-tokenize) React widgets для member entry (`MemberWrapper`/`MemberEntry`) guest giving (`GuestForm`) saved-method editing (`MethodEditForm`) и form-question платежи (`FormPayment`) плюс `buildChargeRequest(ctx, token)` — one место charge payload shape отличается per provider. Каждого provider's `MemberWrapper` загружает его собственный SDK из gateway record's public key поэтому host apps никогда не import gateway SDK (B1App и B1Admin имеют no `@stripe/*` dependency). `pickDefaultGateway(gateways, capability?)` centralizes который из church's gateways поверхность должна использовать.
+Реестр живёт в `Packages/apphelper/src/donations/providers/`, при этом виджеты и вспомогательные функции каждого провайдера находятся в собственной подпапке (`providers/stripe/`, `providers/paypal/`, `providers/kingdomfunding/`) — ничто вне `providers/` не ветвится по имени провайдера. `PaymentProvider` (см. `providers/types.ts`) объединяет всё, что нужно принимающему приложению для одного шлюза: `descriptor` (административные подписи, поддерживаемые валюты, поля комиссий, ставки комиссий по умолчанию, URL панели/регистрации), набор флагов `capabilities` (сохранённые карты, ACH, повторяющиеся платежи, встроенный ввод новой карты, неявное сохранение при токенизации), React-виджеты для ввода данных участника (`MemberWrapper`/`MemberEntry`), пожертвования гостя (`GuestForm`), редактирование сохранённого метода (`MethodEditForm`) и платежи по вопросам формы (`FormPayment`), плюс `buildChargeRequest(ctx, token)` — единственное место, где форма полезной нагрузки списания отличается у каждого провайдера. `MemberWrapper` каждого провайдера загружает собственный SDK из публичного ключа записи шлюза, поэтому принимающие приложения никогда не импортируют SDK шлюза (у B1App и B1Admin нет зависимости `@stripe/*`). `pickDefaultGateway(gateways, capability?)` централизует, какой из шлюзов церкви должна использовать та или иная поверхность.
 
-`providers/registry.ts` holds built-ins. Они это **referenced by value** не registered через module side-effect поэтому bundler's tree-shaking может никогда drop registration:
+`providers/registry.ts` хранит встроенные провайдеры. Они **указаны по значению**, а не регистрируются через побочный эффект модуля, поэтому tree-shaking сборщика никогда не сможет отбросить регистрацию:
 
 ```typescript
 for (const p of [StripeProvider, KingdomFundingProvider, PayPalProvider]) builtins.set(p.key, p);
 ```
 
-| Функция | Цель |
+| Функция | Назначение |
 |----------|---------|
-| `getPaymentProvider(name)` | Разрешить по нормализованному имени; falls back к Stripe поэтому misconfigured provider никогда hard-crashes доноре форма |
-| `registerPaymentProvider(p)` | Зарегистрировать extra provider во время runtime (для host app's custom gateway) |
-| `listPaymentProviders()` | Enumerate built-ins + custom — используется для построения admin gateway dropdown |
-| `hasPaymentProvider(name)` | Membership check |
+| `getPaymentProvider(name)` | Разрешает по нормализованному имени; при неудаче переключается на Stripe, чтобы неправильно настроенный провайдер никогда не приводил к жёсткому сбою формы донора |
+| `registerPaymentProvider(p)` | Регистрирует дополнительного провайдера во время выполнения (для собственного шлюза принимающего приложения) |
+| `listPaymentProviders()` | Перечисляет встроенные + пользовательские — используется для построения выпадающего списка шлюзов в администрировании |
+| `hasPaymentProvider(name)` | Проверка наличия |
 
-**Built-in клиент providers: Stripe, PayPal, Kingdom Funding.** B1App и B1Admin только *read* registry (`getPaymentProvider`, `listPaymentProviders`); neither calls `registerPaymentProvider` — registration stays внутри apphelper.
+**Встроенные клиентские провайдеры: Stripe, PayPal, Kingdom Funding.** B1App и B1Admin только *читают* реестр (`getPaymentProvider`, `listPaymentProviders`); ни один не вызывает `registerPaymentProvider` — регистрация остаётся внутри apphelper.
 
-Каждый provider токенизирует по-другому но все keep карта out of B1:
+Каждый провайдер токенизирует по-своему, но все не допускают попадания карты в B1:
 
-| Provider | Entry widget | Token returned to API |
+| Провайдер | Виджет ввода | Токен, возвращаемый API |
 |----------|--------------|-----------------------|
-| Stripe | Stripe `Elements` `CardElement` → `stripe.createPaymentMethod(...)` | payment-method id (`pm_…`); bank через Financial Connections / ACH SetupIntent |
-| Kingdom Funding | Hosted tokenizer форма keyed by gateway public key | single-use nonce |
-| PayPal | PayPal Hosted Fields; server order built via `/donate/client-token` + `/donate/create-order` | captured order id |
+| Stripe | Stripe `Elements` `CardElement` → `stripe.createPaymentMethod(...)` | id способа оплаты (`pm_…`); банк через Financial Connections / ACH SetupIntent |
+| Kingdom Funding | Хостируемая форма токенизации, привязанная к публичному ключу шлюза | одноразовый nonce |
+| PayPal | PayPal Hosted Fields; серверный заказ создаётся через `/donate/client-token` + `/donate/create-order` | захваченный id заказа |
 
-Stripe's `finalizeResult` runs 3-D Secure / SCA в браузере (`providers/stripe/stripe3DS.ts` → `stripe.confirmCardPayment`) перед пожертвование считается complete; shared форма просто calls `provider.finalizeResult(result)` с no knowledge что это does.
+`finalizeResult` Stripe выполняет 3-D Secure / SCA в браузере (`providers/stripe/stripe3DS.ts` → `stripe.confirmCardPayment`), прежде чем пожертвование считается завершённым; общая форма просто вызывает `provider.finalizeResult(result)`, не зная, что именно он делает.
 
-## Сервер-side: gateway abstraction (GivingApi)
+## На стороне сервера: абстракция шлюза (GivingApi)
 
-`/giving` модуль (`Api/src/modules/giving`) exposes REST поверхность; gateway plumbing lives в `Api/src/shared/helpers`. `DonateController` никогда не talks к gateway SDK directly — это goes через `GatewayService` который разрешает right `IGatewayProvider` из `GatewayFactory` и hands это decrypted `GatewayConfig`.
+Модуль `/giving` (`Api/src/modules/giving`) предоставляет REST-поверхность; сантехника шлюза живёт в `Api/src/shared/helpers`. `DonateController` никогда не общается напрямую с SDK шлюза — он проходит через `GatewayService`, который разрешает нужный `IGatewayProvider` из `GatewayFactory` и передаёт ему расшифрованную `GatewayConfig`.
 
 ```
 DonateController ─▶ GatewayService ─▶ GatewayFactory.getProvider(name) ─▶ IGatewayProvider
@@ -84,77 +84,77 @@ DonateController ─▶ GatewayService ─▶ GatewayFactory.getProvider(name) �
              StripeGatewayProvider · PayPalGatewayProvider · KingdomFundingGatewayProvider · …
 ```
 
-`IGatewayProvider` (`shared/helpers/gateways/IGatewayProvider.ts`) это contract каждый gateway implements — webhook lifecycle (`createWebhookEndpoint`, `verifyWebhookSignature`, `classifyWebhookEvent`) платеж (`prepareCharge`, `processCharge`, `prepareSubscription`, `createSubscription`, `finalizeSubscription`, `cancelSubscription`) fees (`calculateFees`) saved-method handling (`listNormalizedPaymentMethods`, `buildAttachOptions`, `buildLocalMethodRecord`, `deletePaymentMethod`, `verifyMethodOwnership`, `ownsPaymentMethodId`) и optional extras (customers orders SetupIntents event replay). Каждый provider класс declares его собственный `capabilities` matrix (supported currencies ACH refunds subscription requirements transaction limits) — `GatewayService.getProviderCapabilities(provider)` просто reads это — и flags как `logsDonationsImmediately` drive controller поведение без any provider-name conditionals в controllers.
+`IGatewayProvider` (`shared/helpers/gateways/IGatewayProvider.ts`) — контракт, который реализует каждый шлюз — жизненный цикл вебхуков (`createWebhookEndpoint`, `verifyWebhookSignature`, `classifyWebhookEvent`), платежи (`prepareCharge`, `processCharge`, `prepareSubscription`, `createSubscription`, `finalizeSubscription`, `cancelSubscription`), комиссии (`calculateFees`), обработку сохранённых методов (`listNormalizedPaymentMethods`, `buildAttachOptions`, `buildLocalMethodRecord`, `deletePaymentMethod`, `verifyMethodOwnership`, `ownsPaymentMethodId`) и опциональные дополнения (клиенты, заказы, SetupIntent, повтор событий). Каждый класс провайдера объявляет собственную матрицу `capabilities` (поддерживаемые валюты, ACH, возвраты, требования к подпискам, лимиты транзакций) — `GatewayService.getProviderCapabilities(provider)` просто её читает — а флаги вроде `logsDonationsImmediately` управляют поведением контроллера без каких-либо условий по имени провайдера в контроллерах.
 
-**Сервер providers registered в `GatewayFactory`:**
+**Серверные провайдеры, зарегистрированные в `GatewayFactory`:**
 
-| Provider | Доступность |
+| Провайдер | Доступность |
 |----------|-------------|
-| Stripe | Всегда on |
-| PayPal | Всегда on |
-| Kingdom Funding | Всегда on |
-| Square | Opt-in через `ENABLE_SQUARE` environment flag |
-| ePayMints | Opt-in через `ENABLE_EPAYMINTS` environment flag |
+| Stripe | Всегда включён |
+| PayPal | Всегда включён |
+| Kingdom Funding | Всегда включён |
+| Square | Опционально через флаг окружения `ENABLE_SQUARE` |
+| ePayMints | Опционально через флаг окружения `ENABLE_EPAYMINTS` |
 
-Custom providers могут быть зарегистрированы во время runtime когда `ENABLE_CUSTOM_GATEWAY_PROVIDERS` это set; `AbstractExperimentalGatewayProvider` это base класс для those. Provider имена это matched case-insensitively.
+Пользовательские провайдеры можно зарегистрировать во время выполнения, когда установлен `ENABLE_CUSTOM_GATEWAY_PROVIDERS`; `AbstractExperimentalGatewayProvider` — базовый класс для них. Имена провайдеров сравниваются без учёта регистра.
 
-### Gateway конфигурация & секреты
+### Конфигурация шлюза и секреты
 
-Admin сохраняет gateway credentials via `POST /giving/gateways` (`GatewayController`). На save контроллер encrypts private и webhook keys с `EncryptionHelper` перед persisting затем — на any non-localhost host — deletes church's существующий webhook и provisions fresh один pointed в `/giving/donate/webhook/{provider}?churchId=…`. Публичные reads (`GET /giving/gateways/churchId/:churchId`, `/configured/:churchId`) возвращают public keys только.
+Администратор сохраняет учётные данные шлюза через `POST /giving/gateways` (`GatewayController`). При сохранении контроллер шифрует приватный ключ и ключ вебхука с помощью `EncryptionHelper` перед сохранением, а затем — на любом хосте, кроме localhost — удаляет существующий вебхук церкви и создаёт новый, указывающий на `/giving/donate/webhook/{provider}?churchId=…`. Публичные операции чтения (`GET /giving/gateways/churchId/:churchId`, `/configured/:churchId`) возвращают только публичные ключи.
 
 ## Модель данных
 
-Giving schema (`Api/src/modules/giving/db/DatabaseTypes.ts` модели в `models/`) это MySQL schema accessed через Kysely:
+Схема пожертвований (`Api/src/modules/giving/db/DatabaseTypes.ts`, модели в `models/`) — это схема MySQL, доступ к которой осуществляется через Kysely:
 
 | Таблица | Роль |
 |-------|------|
-| `gateways` | Per-church provider конфиг: `provider`, `publicKey`, encrypted `privateKey`/`webhookKey`, `productId`, `payFees`, `currency`, `settings`, `environment` |
-| `funds` | Giving designations (`name`, `taxDeductible`, `productId`) |
-| `donationBatches` | Grouping для entry/reporting (`name`, `batchDate`) |
-| `donations` | One gift: `batchId`, `personId`, `donationDate`, `amount`, `currency`, `method`, `status` (`pending`/`complete`/`failed`) `transactionId` |
-| `fundDonations` | Allocation пожертвования across one или более funds (`donationId`, `fundId`, `amount`) |
-| `subscriptions` | Recurring gift; `id` это gateway's subscription id linked к `personId`, `customerId`, `gatewayId` |
-| `subscriptionFunds` | Fund split для recurring gift |
-| `customers` | Links `personId` к its gateway customer id per `provider` |
-| `gatewayPaymentMethods` | Saved cards/banks: `customerId`, `externalId`, `methodType`, `displayName`, `metadata` |
-| `eventLogs` | Webhook/event audit trail и dedup key (`provider`, `providerId`, `eventType`, `status`, `resolved`) |
-| `campaigns` / `pledges` | Pledge campaigns tied к fund и каждого person's pledged amount |
+| `gateways` | Конфигурация провайдера по церкви: `provider`, `publicKey`, зашифрованные `privateKey`/`webhookKey`, `productId`, `payFees`, `currency`, `settings`, `environment` |
+| `funds` | Направления пожертвований (`name`, `taxDeductible`, `productId`) |
+| `donationBatches` | Группировка для ввода/отчётности (`name`, `batchDate`) |
+| `donations` | Одно пожертвование: `batchId`, `personId`, `donationDate`, `amount`, `currency`, `method`, `status` (`pending`/`complete`/`failed`), `transactionId` |
+| `fundDonations` | Распределение пожертвования по одному или нескольким фондам (`donationId`, `fundId`, `amount`) |
+| `subscriptions` | Повторяющееся пожертвование; `id` — это id подписки шлюза, связан с `personId`, `customerId`, `gatewayId` |
+| `subscriptionFunds` | Разбивка по фондам для повторяющегося пожертвования |
+| `customers` | Связывает `personId` с id клиента в шлюзе для каждого `provider` |
+| `gatewayPaymentMethods` | Сохранённые карты/банковские счета: `customerId`, `externalId`, `methodType`, `displayName`, `metadata` |
+| `eventLogs` | Журнал аудита вебхуков/событий и ключ дедупликации (`provider`, `providerId`, `eventType`, `status`, `resolved`) |
+| `campaigns` / `pledges` | Кампании обещанных пожертвований, привязанные к фонду, и обещанная сумма каждого человека |
 
-Пожертвование это split across funds через `fundDonations` — пожертвование carries total каждый `fundDonation` carries slice. `donations.currency` и `gateways.currency` carry ISO currency; каждый provider advertises его `supportedCurrencies` и amounts это formatted с `CurrencyHelper.formatCurrencyWithLocale`.
+Пожертвование распределяется по фондам через `fundDonations` — пожертвование несёт общую сумму, каждый `fundDonation` — свою долю. `donations.currency` и `gateways.currency` содержат код валюты ISO; каждый провайдер объявляет свои `supportedCurrencies`, а суммы форматируются через `CurrencyHelper.formatCurrencyWithLocale`.
 
-## End-to-end потоки
+## Сквозные потоки
 
-### Member one-time и recurring (B1App)
+### Разовое и повторяющееся пожертвование участника (B1App)
 
-Authenticated donate экран (`B1App/src/app/[sdSlug]/mobile/components/screens/DonatePage.tsx`) composes три apphelper компоненты: `MultiGatewayDonationForm`, `PaymentMethods` и `RecurringDonations`. B1App does surrounding data-loading — `GET /donations/my`, `/gateways`, `/paymentmethods/personid/:id`, `/customers/:id/subscriptions` — и passes gateway список through; resolved provider загружает его собственный SDK из gateway's public key. Charge самое happens внутри apphelper: resolved provider токенизирует (new или saved) method затем posts к `/giving/donate/charge` для one-time gift или `/giving/donate/subscribe` для recurring один. Recurring gifts create `subscriptions` строка плюс `subscriptionFunds` и hand schedule к gateway (Stripe Subscriptions, PayPal Billing Plans или KF recurring schedule).
+Экран пожертвования для авторизованных пользователей (`B1App/src/app/[sdSlug]/mobile/components/screens/DonatePage.tsx`) собирает три компонента apphelper: `MultiGatewayDonationForm`, `PaymentMethods` и `RecurringDonations`. B1App выполняет сопутствующую загрузку данных — `GET /donations/my`, `/gateways`, `/paymentmethods/personid/:id`, `/customers/:id/subscriptions` — и передаёт список шлюзов дальше; разрешённый провайдер загружает собственный SDK из публичного ключа шлюза. Само списание происходит внутри apphelper: разрешённый провайдер токенизирует (новый или сохранённый) метод, затем отправляет запрос на `/giving/donate/charge` для разового пожертвования или `/giving/donate/subscribe` для повторяющегося. Повторяющиеся пожертвования создают строку `subscriptions` плюс `subscriptionFunds` и передают расписание шлюзу (Stripe Subscriptions, PayPal Billing Plans или повторяющееся расписание KF).
 
-### Guest / anonymous giving
+### Пожертвование гостя / анонимное
 
-Public donate страница (`B1App/src/app/[sdSlug]/(public)/[pageSlug]/components/DonatePage.tsx`) и "give now" панель render `NonAuthDonationWrapper` из `@churchapps/apphelper/website` который injects reCAPTCHA и gateway's Elements context around provider's `GuestForm`. Guests get no login no saved methods и no история. Flow fetches `GET /giving/funds/churchId/:id` и `GET /giving/donate/gateways/:churchId` (public keys только) verifies visitor с `POST /giving/donate/captcha-verify` токенизирует в браузере и posts к `/giving/donate/charge` (или `/subscribe`). Guest ACH uses anonymous `POST /giving/paymentmethods/ach-setup-intent-anon`.
+Публичная страница пожертвования (`B1App/src/app/[sdSlug]/(public)/[pageSlug]/components/DonatePage.tsx`) и панель «give now» отображают `NonAuthDonationWrapper` из `@churchapps/apphelper/website`, который встраивает reCAPTCHA и контекст Elements шлюза вокруг `GuestForm` провайдера. У гостей нет входа в систему, нет сохранённых методов и истории. Поток получает `GET /giving/funds/churchId/:id` и `GET /giving/donate/gateways/:churchId` (только публичные ключи), проверяет посетителя через `POST /giving/donate/captcha-verify`, токенизирует в браузере и отправляет запрос на `/giving/donate/charge` (или `/subscribe`). Гостевой ACH использует анонимную конечную точку `POST /giving/paymentmethods/ach-setup-intent-anon`.
 
-### Admin recording и Stripe import (B1Admin)
+### Внесение записей администратором и импорт из Stripe (B1Admin)
 
-B1Admin donations раздел (`B1Admin/src/donations/`) это где finance teams work. Batch entry (`components/BulkDonationEntry.tsx`) records cash/check/in-kind gifts by posting `/giving/donations` затем `/giving/funddonations` — no gateway involved. Funds batches campaigns и statements каждый map к their `/giving/*` CRUD маршруты. Member-style donate панель (`B1Admin/src/donationComponents/`) reuses same apphelper компоненты как B1App.
+Раздел пожертвований в B1Admin (`B1Admin/src/donations/`) — это то место, где работает финансовая команда. Пакетный ввод (`components/BulkDonationEntry.tsx`) фиксирует наличные/чековые/натуральные пожертвования, отправляя `/giving/donations`, затем `/giving/funddonations` — без участия шлюза. Фонды, пакеты, кампании и выписки сопоставляются каждый со своими CRUD-маршрутами `/giving/*`. Панель пожертвования в стиле участника (`B1Admin/src/donationComponents/`) переиспользует те же компоненты apphelper, что и B1App.
 
-Stripe import (`B1Admin/src/donations/StripeImportPage.tsx`) backfills gifts made outside B1: это calls `POST /giving/donate/replay-stripe-events` с `dryRun: true` для preview затем `dryRun: false` к import. Сервер lists Stripe события для date range и skips anything уже recorded — matched сначала by `eventLogs` provider id затем by `DonationRepo.findMatchingDonation` (amount + date + person) поэтому re-run никогда double-imports.
+Импорт из Stripe (`B1Admin/src/donations/StripeImportPage.tsx`) восполняет пожертвования, сделанные вне B1: он вызывает `POST /giving/donate/replay-stripe-events` с `dryRun: true` для предпросмотра, затем с `dryRun: false` для импорта. Сервер получает список событий Stripe за диапазон дат и пропускает всё, что уже записано — сначала сопоставляя по id провайдера в `eventLogs`, затем по `DonationRepo.findMatchingDonation` (сумма + дата + человек), так что повторный запуск никогда не дублирует импорт.
 
-## Webhooks и reconciliation
+## Вебхуки и сверка
 
-Settled платежи и subscription state изменения arrive в `POST /giving/donate/webhook/:provider?churchId=…` (`DonateController.webhook`). Processing это deliberately idempotent:
+Завершённые платежи и изменения состояния подписки поступают на `POST /giving/donate/webhook/:provider?churchId=…` (`DonateController.webhook`). Обработка намеренно идемпотентна:
 
-1. **Verify** — `GatewayService.verifyWebhook` delegates к provider's signature check; failed signature returns 401. События это не нужно processing short-circuit с 200.
-2. **Dedup событие** — `EventLogRepo.loadByProviderId` skips webhook уже recorded в `eventLogs`.
-3. **Dedup пожертвование** — перед creating anything `DonationRepo.loadByTransactionId` это checked against каждый candidate id payload might carry. Это absorbs duplicate deliveries multi-stage ACH события (pending → settled) и case где `/donate/charge` уже logged gift optimistically.
-4. **Apply** — provider's `classifyWebhookEvent(eventType)` says что события means (`donation` pending/complete `cancel-subscription` или `ignore`); completed платежи create `complete` пожертвование (или promote existing `pending` один) ACH-style события land как `pending` до settlement и cancellation события delete local `subscriptions` строка. Контроллер никогда не inspects provider-specific события имена.
+1. **Проверка** — `GatewayService.verifyWebhook` делегирует проверку подписи провайдеру; неудачная проверка подписи возвращает 401. События, не требующие обработки, немедленно завершаются с кодом 200.
+2. **Дедупликация события** — `EventLogRepo.loadByProviderId` пропускает вебхук, уже зарегистрированный в `eventLogs`.
+3. **Дедупликация пожертвования** — перед созданием чего-либо `DonationRepo.loadByTransactionId` проверяется на каждый id-кандидат, который может нести полезная нагрузка. Это поглощает повторные доставки, многоэтапные события ACH (ожидание → расчёт) и случай, когда `/donate/charge` уже оптимистично зафиксировал пожертвование.
+4. **Применение** — `classifyWebhookEvent(eventType)` провайдера определяет, что означает событие (`donation` ожидание/завершено, `cancel-subscription` или `ignore`); завершённые платежи создают пожертвование в статусе `complete` (или переводят существующее `pending` в этот статус), события в стиле ACH попадают как `pending` до расчёта, а события отмены удаляют локальную строку `subscriptions`. Контроллер никогда не анализирует специфичные для провайдера имена событий.
 
-Providers с `logsDonationsImmediately` (PayPal Kingdom Funding) имеют их charges logged из `/charge` ответ (no webhook round-trip required для happy путь) в то время как Stripe relies на `payment_intent.succeeded` / `invoice.paid` и ACH `payment_intent.processing`. Fee handling (`POST /giving/donate/fee` `payFees` gateway flag и каждый provider's `calculateFees`) computes "cover the fees" gross-up на donore side — B1 takes no platform cut поэтому no application fee это никогда added.
+Провайдеры с `logsDonationsImmediately` (PayPal, Kingdom Funding) фиксируют свои списания из ответа `/charge` (обратный цикл вебхука для основного сценария не требуется), тогда как Stripe полагается на `payment_intent.succeeded` / `invoice.paid` и ACH `payment_intent.processing`. Обработка комиссий (`POST /giving/donate/fee`, флаг шлюза `payFees` и `calculateFees` каждого провайдера) вычисляет надбавку «покрыть комиссию» на стороне донора — B1 не берёт долю платформы, поэтому комиссия за приложение никогда не добавляется.
 
 :::info
-Charge и webhook paths write same `donations` / `fundDonations` строки. `transactionId` это join key это keeps optimistic charge log и its позже webhook из producing two пожертвования для one gift.
+Пути списания и вебхука записывают одни и те же строки `donations` / `fundDonations`. `transactionId` — это ключ соединения, который не позволяет оптимистичной записи списания и её последующему вебхуку создать два пожертвования для одного подарка.
 :::
 
 ## Связанные страницы
 
-- [Giving Endpoints](../api/endpoints/giving) — полный REST поверхность для пожертвований funds batches gateways subscriptions платежные методы и webhooks
-- [AppHelper](../shared-libraries/app-helper) — npm package это ships payment provider registry и donation компоненты
-- [Module Structure](../api/module-structure) — как GivingApi модуль это organized server-side
+- [Конечные точки пожертвований](../api/endpoints/giving) — полная REST-поверхность для пожертвований, фондов, пакетов, шлюзов, подписок, способов оплаты и вебхуков
+- [AppHelper](../shared-libraries/app-helper) — npm-пакет, который поставляет реестр платёжных провайдеров и компоненты пожертвований
+- [Структура модулей](../api/module-structure) — как модуль GivingApi организован на стороне сервера
