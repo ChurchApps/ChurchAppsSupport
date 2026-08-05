@@ -75,7 +75,7 @@ Two endpoints complete the loop (`VisitController`):
 - `GET /attendance/visits/code/:code` — today's not-yet-checked-out visits carrying that security code, with sessions populated.
 - `POST /attendance/visits/checkout` — body `{ visitIds, checkedOutBy?, checkedOutById? }`; stamps `checkoutTime` and who picked up, and emits an `attendance.checkout` webhook per visit.
 
-Permissions: kiosks authenticate with `attendance.checkin`, which grants exactly the check-in/check-out/label-template surface; `attendance.view`/`attendance.edit` cover reporting and manual entry; the structure (services, service times, group assignments) requires `services.edit`.
+Permissions: kiosks authenticate with `attendance.checkin`, which grants exactly the check-in/check-out/label-template surface; `attendance.view`/`attendance.edit` cover reporting and manual entry; the structure (services, service times, group assignments) requires `services.edit`. Member self check-in (B1App) needs no permission at all: any authenticated user with a linked person in the church may call `GET`/`POST /attendance/visits/checkin`, and the server restricts the submitted `personId`s to the caller's own household (403 otherwise — this fence is what keeps other families' `securityCode`s unreadable). Membership is the grant; whether members *see* the feature is controlled by the church's B1App navigation tabs. The other check-in endpoints (`code/:code`, `checkout`, `guardians`, `CheckinController`) remain kiosk/staff-only.
 
 ## Groups drive room routing
 
