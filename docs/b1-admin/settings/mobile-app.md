@@ -57,6 +57,19 @@ Some tabs may appear automatically when certain conditions are met -- for exampl
 Keep your tab count manageable. Three to five tabs works well for most churches. Too many tabs can make navigation confusing for your members.
 :::
 
+## Member Directory & Messaging Settings
+
+The **B1 Mobile** tab in the same Mobile section holds the settings that govern the member directory and private messaging in the B1.church experience:
+
+- **Directory Approval Group** -- The group that reviews member directory updates before they are applied.
+- **Show in Directory** -- Who can appear in the member directory (Staff Only through Everyone).
+- **Visibility Preferences** -- Default visibility for member addresses, phone numbers, and email addresses.
+- **Minimum Age for Private Messages** -- A child-safety control. B1 will not open a **new** private-message conversation when either person is under this age, based on their birthdate (household role is used as a fallback when no birthdate is on file). People under the age remain fully visible in the directory -- only direct messaging is blocked, in **both directions**, for everyone including staff. Group conversations and messaging a child's parents still work. Options are Off, 13, 16, or 18; the default is **18**. Existing conversations are not affected.
+
+:::tip
+Because the minimum-age check relies on birthdates, make sure birthdates are filled in for children in your congregation. This setting belongs to the same child-safety family as the [check-in safety controls](../attendance/checkin-safety.md).
+:::
+
 ## Where These Tabs Appear
 
 The tabs you configure here are displayed in the **B1.church PWA** that your members install from any page on `https://yourchurchname.b1.church`. Changes you make on this page are reflected the next time a member opens the app. (Tabs are also rendered by the legacy [B1 Mobile native app](/docs/b1-mobile/) for any members still running it, but that app is deprecated and no longer being updated.)

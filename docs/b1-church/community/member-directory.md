@@ -58,3 +58,7 @@ You can click on household members within a profile to navigate to their profile
 :::info
 The information visible in each profile depends on your church's privacy and directory settings. Not all fields may be shown for every member.
 :::
+
+:::info
+Members under your church's [minimum age for private messages](/docs/b1-admin/settings/mobile-app#member-directory--messaging-settings) remain visible in the directory, but the option to send them a private message is unavailable.
+:::

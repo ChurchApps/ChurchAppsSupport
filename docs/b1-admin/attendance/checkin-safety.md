@@ -98,3 +98,4 @@ See the kiosk-side walkthrough in [Check-Out & Child Safety](../../b1-checkin/ch
 - [Check-Out & Child Safety](../../b1-checkin/check-in/checking-out) — the kiosk check-out, pickup verification, and paging flows
 - [Creating Groups](../groups/creating-groups.md) — where room settings live
 - [Attendance Setup](setup.md) — services, service times, and room assignments
+- [Minimum Age for Private Messages](../settings/mobile-app.md#member-directory--messaging-settings) — blocks new private-message conversations with children while keeping them in the directory
