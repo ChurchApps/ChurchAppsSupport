@@ -24,7 +24,7 @@ A role is a set of permissions that you assign to one or more users. For example
 
 Each role controls access to specific areas of B1 Admin, including:
 
-- **People** -- viewing and editing member profiles
+- **People** -- viewing and editing member profiles. The Notes tab on a person record requires **Edit People**, and a separate **View Confidential Notes** permission controls access to the Confidential Notes section (for pastoral care, personal history, and similar sensitive notes).
 - **Donations** -- managing contributions and financial reports
 - **Attendance** -- recording and viewing attendance data
 - **Forms** -- creating and managing [custom forms](../forms/creating-forms.md)

@@ -29,6 +29,10 @@ Base path: `/messaging/conversations`
 | POST | `/start` | JWT | — | Start a new conversation with an initial comment message |
 | DELETE | `/:churchId/:id` | JWT | — | Delete a conversation |
 
+### Person notes access control
+
+Conversations with `contentType: "person"` (the Notes tab on a person record) or `contentType: "personConfidential"` (the Confidential Notes section) are gated on every read and write path, including the otherwise-public routes above, which return `401` for these content types. `person` requires the MembershipApi **People / Edit** permission; `personConfidential` requires **People / View Confidential Notes**. For scoped API keys, `people:write` carries both actions (the key's user must still hold the underlying role permission).
+
 ### Example: Start a Conversation
 
 ```
