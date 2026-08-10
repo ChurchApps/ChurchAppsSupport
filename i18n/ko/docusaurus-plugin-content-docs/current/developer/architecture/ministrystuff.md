@@ -34,4 +34,3 @@ B1Admin 문자 보내기 → Api `TextingController` → `@churchapps/texting` `
 ## 개발 설정
 
 MinistryStuffApi를 실행합니다 (`yarn dev`, 8097; 공유 `JWT_SECRET` + `MINISTRYSTUFF_SERVICE_KEY`가 있는 `.env` 필요) 그리고 `Api/.env`에 동일한 서비스 키를 설정합니다. `Api/config/dev.json`은 이미 `ministryStuffApi`를 `localhost:8097`로 가리킵니다. MinistryStuffWeb은 `VITE_STAGE=dev`가 있는 `.env`가 필요합니다. 개발은 `smsMode: mock` 및 disk 저장소를 사용합니다 — AWS가 필요 없습니다.
-</content>

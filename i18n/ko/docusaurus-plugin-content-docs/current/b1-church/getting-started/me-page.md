@@ -50,4 +50,3 @@ title: "내 페이지"
 - [이벤트 및 룸 요청하기](../events/requesting-events) -- 방/자원 요청 제출 및 추적
 - [내 등록 내역](../events/my-registrations) -- 이벤트 등록 관리
 - [자원봉사 신청](../serving/volunteer-signup) -- 봉사 배정이 작동하는 방식
-</content>

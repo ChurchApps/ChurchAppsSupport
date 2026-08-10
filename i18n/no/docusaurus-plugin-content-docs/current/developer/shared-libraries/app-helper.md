@@ -74,7 +74,7 @@ Denne pakken bor i [Packages](https://github.com/ChurchApps/Packages)-arbeidsomr
    cd apphelper && yarn dev
    ```
 
-   Lekeplassens utviklingsserver starter på **http://localhost:3001**. Kopier `playground/dotenv.sample` til `playground/.env` og fyll inn de nødvendige verdiene først.
+   Lekeplassens utviklingsserver starter på `http://localhost:3001`. Kopier `playground/dotenv.sample` til `playground/.env` og fyll inn de nødvendige verdiene først.
 
 For å bygge pakken for konsum (kompilerer til `dist/` og kopierer locale-/CSS-ressurser), kjør `yarn workspace @churchapps/apphelper build` -- eller `yarn build` ved roten for å bygge hver pakke i avhengighetsrekkefølge. For å teste en upublisert bygg inne i en konsumerende app, bruk en midlertidig Yarn-portal -- se [Lokal utvikling mot en konsumerende app](./index.md#local-development-against-a-consuming-app).
 

@@ -74,7 +74,7 @@ Dieses Paket befindet sich im [Packages](https://github.com/ChurchApps/Packages)
    cd apphelper && yarn dev
    ```
 
-   Der Playground-Dev-Server startet unter **http://localhost:3001**. Kopieren Sie zunächst `playground/dotenv.sample` nach `playground/.env` und tragen Sie die erforderlichen Werte ein.
+   Der Playground-Dev-Server startet unter `http://localhost:3001`. Kopieren Sie zunächst `playground/dotenv.sample` nach `playground/.env` und tragen Sie die erforderlichen Werte ein.
 
 Um das Paket für den Verbrauch zu bauen (kompiliert nach `dist/` und kopiert Locale-/CSS-Assets), führen Sie `yarn workspace @churchapps/apphelper build` aus -- oder `yarn build` im Root, um alle Pakete in Abhängigkeitsreihenfolge zu bauen. Um einen unveröffentlichten Build innerhalb einer konsumierenden App zu testen, verwenden Sie ein temporäres Yarn-Portal -- siehe [Lokale Entwicklung gegen eine konsumierende App](./index.md#local-development-against-a-consuming-app).
 

@@ -74,7 +74,7 @@ B1Transfer와 LessonsApp은 루트와 `login` 진입점만 사용합니다 -- `d
    cd apphelper && yarn dev
    ```
 
-   플레이그라운드 개발 서버는 **http://localhost:3001**에서 시작됩니다. 먼저 `playground/dotenv.sample`을 `playground/.env`로 복사하고 필요한 값을 채우세요.
+   플레이그라운드 개발 서버는 `http://localhost:3001`에서 시작됩니다. 먼저 `playground/dotenv.sample`을 `playground/.env`로 복사하고 필요한 값을 채우세요.
 
 패키지를 소비용으로 빌드하려면(`dist/`로 컴파일하고 로케일/CSS 자산을 복사) `yarn workspace @churchapps/apphelper build`를 실행하세요 -- 또는 루트에서 `yarn build`를 실행하면 모든 패키지를 의존성 순서대로 빌드합니다. 게시되지 않은 빌드를 소비 앱 안에서 테스트하려면 임시 Yarn 포털을 사용하세요 -- [소비 앱을 대상으로 한 로컬 개발](./index.md#local-development-against-a-consuming-app) 참조.
 

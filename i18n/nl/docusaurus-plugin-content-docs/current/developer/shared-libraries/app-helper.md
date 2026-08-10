@@ -49,7 +49,7 @@ De `@churchapps/apphelper*`-pakketten bieden gedeelde React-onderdelen en utilit
    npm run playground:reload
    ```
 
-   Dit bouwt elk pakket in de werkruimte en start vervolgens de speeltuin-dev-server op **http://localhost:3001**.
+   Dit bouwt elk pakket in de werkruimte en start vervolgens de speeltuin-dev-server op `http://localhost:3001`.
 
 :::tip
 De speeltuin is de snelste manier om AppHelper-onderdelen te ontwikkelen en te testen. Het hot-reloadt de Vite-dev-server zodat u wijzigingen in real-time kunt zien.

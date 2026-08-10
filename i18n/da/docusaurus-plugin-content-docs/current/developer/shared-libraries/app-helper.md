@@ -49,7 +49,7 @@ title: "AppHelper"
    npm run playground:reload
    ```
 
-   Dette bygger hver pakke i arbejdsrummet, derefter starter legeldevelopmentserveren på **http://localhost:3001**.
+   Dette bygger hver pakke i arbejdsrummet, derefter starter legeldevelopmentserveren på `http://localhost:3001`.
 
 :::tip
 Legen er den hurtigste måde at udvikle og teste AppHelper-komponenter på. Det hot-genindlæser Vite dev-serveren, så du kan se ændringer i realtid.

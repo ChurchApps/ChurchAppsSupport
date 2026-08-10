@@ -74,7 +74,7 @@ Questo pacchetto risiede nel workspace [Packages](https://github.com/ChurchApps/
    cd apphelper && yarn dev
    ```
 
-   Il server di sviluppo del playground si avvia su **http://localhost:3001**. Copia prima `playground/dotenv.sample` in `playground/.env` e compila i valori richiesti.
+   Il server di sviluppo del playground si avvia su `http://localhost:3001`. Copia prima `playground/dotenv.sample` in `playground/.env` e compila i valori richiesti.
 
 Per compilare il pacchetto per il consumo (compila in `dist/` e copia gli asset locale/CSS), esegui `yarn workspace @churchapps/apphelper build` -- oppure `yarn build` alla root per compilare ogni pacchetto nell'ordine di dipendenza. Per testare una build non pubblicata all'interno di un'app consumatrice, usa un portale Yarn temporaneo -- vedi [Sviluppo Locale contro un'App Consumatrice](./index.md#local-development-against-a-consuming-app).
 

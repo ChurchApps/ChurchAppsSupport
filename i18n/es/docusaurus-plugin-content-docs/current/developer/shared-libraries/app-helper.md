@@ -74,7 +74,7 @@ Este paquete vive en el espacio de trabajo [Packages](https://github.com/ChurchA
    cd apphelper && yarn dev
    ```
 
-   El servidor de desarrollo del playground se inicia en **http://localhost:3001**. Copia `playground/dotenv.sample` a `playground/.env` y completa los valores requeridos primero.
+   El servidor de desarrollo del playground se inicia en `http://localhost:3001`. Copia `playground/dotenv.sample` a `playground/.env` y completa los valores requeridos primero.
 
 Para compilar el paquete para consumo (compila a `dist/` y copia recursos de locale/CSS), ejecuta `yarn workspace @churchapps/apphelper build` -- o `yarn build` en la raíz para compilar cada paquete en orden de dependencia. Para probar una compilación no publicada dentro de una aplicación consumidora, usa un portal Yarn temporal -- consulta [Desarrollo Local Contra una Aplicación Consumidora](./index.md#local-development-against-a-consuming-app).
 

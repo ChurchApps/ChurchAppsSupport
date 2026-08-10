@@ -177,4 +177,3 @@ B1APP_CONTEXT=https://github.com/ChurchApps/B1App.git#v1.2.3
 - **[Railway에서 셀프 호스팅](./railway-template)** — 관리형 호스팅 대안, 더하기 공유된 배포 후 구성 가이드
 - **[초기 설정](../../getting-started/initial-setup)** — 교회가 생성된 후 첫 단계
 - **[로컬 API 설정](../api/local-setup)** — 개발을 위해 스택을 직접 실행하기
-</content>

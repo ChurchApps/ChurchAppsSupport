@@ -74,7 +74,7 @@ B1Transfer и LessonsApp используют только корневые и `
    cd apphelper && yarn dev
    ```
 
-   Сервер разработки игровой площадки запускается на **http://localhost:3001**. Сначала скопируйте `playground/dotenv.sample` в `playground/.env` и заполните необходимые значения.
+   Сервер разработки игровой площадки запускается на `http://localhost:3001`. Сначала скопируйте `playground/dotenv.sample` в `playground/.env` и заполните необходимые значения.
 
 Для сборки пакета для потребления (компилирует в `dist/` и копирует активы локали/CSS) запустите `yarn workspace @churchapps/apphelper build` — или `yarn build` в корне для сборки каждого пакета в порядке зависимостей. Для тестирования несоциированной сборки в потребляющем приложении используйте временный Yarn portal — см. [Локальная разработка в потребляющем приложении](./index.md#local-development-against-a-consuming-app).
 

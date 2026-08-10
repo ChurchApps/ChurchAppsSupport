@@ -74,7 +74,7 @@ Leliphakheji lihlala endzaweni yekusebenta ye-[Packages](https://github.com/Chur
    cd apphelper && yarn dev
    ```
 
-   Iseva ye-playground yekutfuthukisa icala ku-**http://localhost:3001**. Kopisha `playground/dotenv.sample` uyifake ku-`playground/.env` bese ugcwalisa tintfo letidzingekako kucala.
+   Iseva ye-playground yekutfuthukisa icala ku-`http://localhost:3001`. Kopisha `playground/dotenv.sample` uyifake ku-`playground/.env` bese ugcwalisa tintfo letidzingekako kucala.
 
 Kwakhela liphakheji kutsi lisetjentiswe (kwakhela ku-`dist/` bese kukopisha tintfo te-locale ne-CSS), sebentisa `yarn workspace @churchapps/apphelper build` -- nome `yarn build` emsukeni kwakhe onkhe emaphakheji ngendlela lelandzelana ngayo kuncika. Kuze uhlole kwakhiwa lokungakashicilelwa ngekhatsi kwahlelo loludzinga, sebentisa i-Yarn portal yesikhashana -- bona [Kutfuthukisa Kwasekhaya Kumelene Nehlelo Loludzingako](./index.md#local-development-against-a-consuming-app).
 
