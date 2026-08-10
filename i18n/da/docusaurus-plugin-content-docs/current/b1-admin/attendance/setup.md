@@ -20,19 +20,21 @@ Før du kan spore fremmøde, skal du fortælle B1 Admin om din kirkes fysiske st
 
 ## Vigtige begreber
 
-- **Campus** -- et fysisk sted, hvor din kirke mødes (f.eks. "Hovedcampus", "Nordcampus").
-- **Servicetid** -- en tilbagevendende samling på en campus (f.eks. "Søndag 9:00", "Onsdag 19:00").
+- **Campus** -- et fysisk sted, hvor din kirke mødes (f.eks. "Hovedcampus", "Nordcampus"). Campusser administreres under **Indstillinger**.
+- **Tjeneste** -- en tilbagevendende samling på en campus (f.eks. "Søndagstjeneste", "Midtuge").
+- **Servicetid** -- et specifikt tidspunkt, hvor en tjeneste finder sted (f.eks. "9:00", "11:00").
 - **Planlagt gruppe** -- en gruppe, der er tildelt en specifik servicetid. Fremmøde spores i sammenhæng med den servicetid.
 - **Uplanlagt gruppe** -- en gruppe, der sporer fremmøde på egen hånd, uden at være knyttet til en servicetid.
 
 ## Opsætning af din fremmøde-struktur
 
-1. Åbn **B1 Admin** og klik **Fremmøde** i sidebjælken.
-2. Vælg fanen **Opsætning**.
-3. Klik **Tilføj campus** og angiv navnet på dit sted. Klik **Gem**.
-4. Med din campus valgt, klik **Tilføj servicetid**. Angiv et navn såsom "Søndag 9:00" og klik **Gem**.
-5. Gentag for hver servicetid på den campus.
-6. For at tildele en gruppe til en servicetid, skal du vælge servicetiden og klikke **Tilføj gruppe**. Vælg gruppen fra listen og klik **Gem**.
+1. Åbn **B1 Admin**, klik på **sektionsmenuen** i øverste venstre hjørne (sektionsnavnet med den lille pil), og vælg **Personer**.
+2. Klik på fanen **Fremmøde** i navigationsbjælken. Fanen **Opsætning** er valgt som standard.
+3. Klik **Administrer campusser** (øverst til højre i Opsætning-panelet). Dette fører dig til **Indstillinger → Campusser**. Klik **Tilføj campus**, angiv navnet på dit sted (adresse og tidszone er valgfrie), og klik **Gem**.
+4. Vend tilbage til **Personer → Fremmøde → Opsætning**. Din campus vises nu i opsætningstabellen.
+5. Klik på **+-knappen i kolonnen Tjeneste** under din campus. Angiv et tjenestenavn såsom "Søndagstjeneste" og klik **Gem**.
+6. Klik på **+-knappen i kolonnen Tid** under tjenesten. Angiv et tidspunkt såsom "9:00" og klik **Gem**. Gentag for hver servicetid.
+7. For at forbinde en gruppe med en servicetid skal du åbne gruppen fra fanen **Grupper**, klikke på **Rediger**-blyanten og bruge **Tilføj servicetid** — se næste afsnit.
 
 ### Aktivering af Spor fremmøde på en gruppe
 

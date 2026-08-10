@@ -6,13 +6,13 @@ title: "Pangkalahatang-tanaw ng B1 Church Checkin"
 
 <div class="article-intro">
 
-Ang B1 Church Checkin ay isang self-service kiosk app para sa mga Android tablet. Pinapayagan nito ang mga miyembro ng simbahan na hanapin ang kanilang pamilya, italaga ang mga bata sa mga grupo o klase, at mag-print ng mga name label at parent pickup slip -- lahat nang walang kailangang volunteer sa desk.
+Ang B1 Church Checkin ay isang self-service kiosk app para sa mga iPad at Android tablet. Pinapayagan nito ang mga miyembro ng simbahan na hanapin ang kanilang pamilya, italaga ang mga bata sa mga grupo o klase, at mag-print ng mga name label at parent pickup slip -- lahat nang walang kailangang volunteer sa desk.
 
 </div>
 
 ## Paano Ito Gumagana
 
-Maglagay ng Android tablet sa iyong lobby o welcome area. Ang mga miyembro ay lalapit, maghahanap ng kanilang household sa pamamagitan ng numero ng telepono o apelyido, susuriin ang kanilang pamilya, pipili kung aling mga grupo ang dapat daluhan ng bawat tao, at ita-tap ang **Check-in**. Awtomatikong magpi-print ang app ng mga name label at pickup slip, pagkatapos ay mare-reset para sa susunod na pamilya.
+Maglagay ng iPad o Android tablet sa iyong lobby o welcome area. Ang mga miyembro ay lalapit, maghahanap ng kanilang household sa pamamagitan ng numero ng telepono o apelyido, susuriin ang kanilang pamilya, pipili kung aling mga grupo ang dapat daluhan ng bawat tao, at ita-tap ang **Check-in**. Awtomatikong magpi-print ang app ng mga name label at pickup slip, pagkatapos ay mare-reset para sa susunod na pamilya.
 
 ## Mga Pangunahing Tampok
 
@@ -32,7 +32,7 @@ Maglagay ng Android tablet sa iyong lobby o welcome area. Ang mga miyembro ay la
 - **[Workflow ng Check-In](./check-in/)** -- Ang buong proseso ng check-in mula sa pagpili ng serbisyo hanggang sa pag-print ng mga label.
 
 :::tip
-Pinakamahusay na gumagana ang B1 Church Checkin sa isang 10-inch na Android tablet na naka-mount sa landscape orientation kung saan madaling maabot ng mga pamilya.
+Pinakamahusay na gumagana ang B1 Church Checkin sa isang 10-inch na tablet (iPad o Android) na naka-mount sa landscape orientation kung saan madaling maabot ng mga pamilya. Kunin ang app mula sa [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin), o [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/).
 :::
 
 :::info

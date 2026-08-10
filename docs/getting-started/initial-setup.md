@@ -20,7 +20,7 @@ After creating your account and church, there are a few important steps to confi
 
 ## Step 1: Configure Your Church Information
 
-1. Navigate to **Settings** in the left sidebar.
+1. Open the **section menu** in the top-left corner (the section name with the small arrow) and choose **Settings**.
 2. Click **Edit Settings**.
 3. Enter your church's **name**, **address**, and **contact details**.
 4. Click **Save** to apply your changes.

@@ -20,19 +20,21 @@ Bevor Sie Anwesenheit nachverfolgen können, müssen Sie B1 Admin über die phys
 
 ## Schlüsselkonzepte
 
-- **Standort** — ein physischer Ort, an dem sich Ihre Kirche trifft (z.B. "Hauptstandort", "Nordstandort").
-- **Gottesdienst** — eine regelmäßige Versammlung an einem Standort (z.B. "Sonntag 9:00 Uhr", "Mittwoch 19:00 Uhr").
+- **Standort** — ein physischer Ort, an dem sich Ihre Kirche trifft (z.B. "Hauptstandort", "Nordstandort"). Standorte werden unter **Einstellungen** verwaltet.
+- **Gottesdienst** — eine regelmäßige Versammlung an einem Standort (z.B. "Sonntagsgottesdienst", "Wochenmitte").
+- **Gottesdienstzeit** — eine bestimmte Uhrzeit, zu der ein Gottesdienst stattfindet (z.B. "9:00 Uhr", "11:00 Uhr").
 - **Geplante Gruppe** — eine Gruppe, die einem bestimmten Gottesdienst zugewiesen ist. Die Anwesenheit wird im Kontext dieses Gottesdiensts nachverfolgt.
 - **Ungeplante Gruppe** — eine Gruppe, die die Anwesenheit eigenständig nachverfolgt, ohne an einen Gottesdienst gebunden zu sein.
 
 ## Einrichten Ihrer Anwesenheitsstruktur
 
-1. Öffnen Sie **B1 Admin** und klicken Sie auf **Anwesenheit** in der Seitenleiste.
-2. Wählen Sie die Registerkarte **Setup**.
-3. Klicken Sie auf **Standort hinzufügen** und geben Sie den Namen Ihres Ortes ein. Klicken Sie auf **Speichern**.
-4. Klicken Sie bei ausgewähltem Standort auf **Gottesdienst hinzufügen**. Geben Sie einen Namen wie "Sonntag 9:00 Uhr" ein und klicken Sie auf **Speichern**.
-5. Wiederholen Sie dies für jeden Gottesdienst an diesem Standort.
-6. Um eine Gruppe einem Gottesdienst zuzuweisen, wählen Sie den Gottesdienst und klicken Sie auf **Gruppe hinzufügen**. Wählen Sie die Gruppe aus der Liste und klicken Sie auf **Speichern**.
+1. Öffnen Sie **B1 Admin**, klicken Sie auf das **Bereichsmenü** oben links (der Bereichsname mit dem kleinen Pfeil) und wählen Sie **Personen**.
+2. Klicken Sie in der Navigationsleiste auf die Registerkarte **Anwesenheit**. Die Registerkarte **Setup** ist standardmäßig ausgewählt.
+3. Klicken Sie auf **Standorte verwalten** (oben rechts im Setup-Bereich). Dies führt Sie zu **Einstellungen → Standorte**. Klicken Sie auf **Standort hinzufügen**, geben Sie den Namen Ihres Ortes ein (Adresse und Zeitzone sind optional) und klicken Sie auf **Speichern**.
+4. Kehren Sie zu **Personen → Anwesenheit → Setup** zurück. Ihr Standort erscheint jetzt in der Setup-Tabelle.
+5. Klicken Sie auf die **+-Schaltfläche in der Spalte Gottesdienst** unter Ihrem Standort. Geben Sie einen Gottesdienstnamen wie "Sonntagsgottesdienst" ein und klicken Sie auf **Speichern**.
+6. Klicken Sie auf die **+-Schaltfläche in der Spalte Zeit** unter dem Gottesdienst. Geben Sie eine Uhrzeit wie "9:00 Uhr" ein und klicken Sie auf **Speichern**. Wiederholen Sie dies für jede Gottesdienstzeit.
+7. Um eine Gruppe mit einer Gottesdienstzeit zu verbinden, öffnen Sie die Gruppe über die Registerkarte **Gruppen**, klicken Sie auf das **Bearbeiten**-Stiftsymbol und verwenden Sie **Gottesdienstzeit hinzufügen** — siehe den nächsten Abschnitt.
 
 ### Anwesenheitsverfolgung für eine Gruppe aktivieren
 

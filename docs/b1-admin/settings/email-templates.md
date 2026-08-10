@@ -19,7 +19,7 @@ Email Templates let you save reusable email content -- a welcome message, an eve
 
 ## Accessing Email Templates
 
-1. Navigate to **Settings** in the left sidebar.
+1. In B1 Admin, open the **section menu** in the top-left corner (the section name with the small arrow) and choose **Settings**.
 2. Click **Email Templates**.
 3. You will see a list of existing templates with their subject, category, and last modified date.
 

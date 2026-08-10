@@ -27,6 +27,7 @@ B1 Checkin 앱은 B1 Admin 출석 설정에 연결됩니다. 회원이 체크인
 
 1. **먼저 출석 구조를 구성합니다.** B1 Admin에서 **출석 > 설정**으로 이동하여 캠퍼스, 예배 시간 및 그룹이 준비되어 있는지 확인하세요. 체크인 앱은 이 구성에 따라 다릅니다. 자세한 내용은 [출석 설정](setup.md)을 참조하세요.
 2. **B1 Checkin 앱을 설치합니다.** 사용하려는 기기에 앱을 설치합니다. 앱은 다음 플랫폼에서 사용 가능합니다:
+   - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Android/Samsung 태블릿:** [Google Play 스토어](https://play.google.com/store/apps/details?id=church.b1.checkin)
    - **Amazon Fire 태블릿:** [Amazon 앱 스토어](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
 3. **B1 Checkin 앱에 로그인합니다.** 교회 계정 자격증명을 사용하여 로그인합니다.

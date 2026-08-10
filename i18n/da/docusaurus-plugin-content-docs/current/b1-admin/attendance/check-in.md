@@ -27,6 +27,7 @@ B1 Ind- og udchecking-appen forbinder til din B1 Admin fremmøde-opsætning. Nå
 
 1. **Konfigurer først din fremmøde-struktur.** I B1 Admin skal du gå til **Fremmøde > Opsætning** og sørge for, at dine campusser, servicetider og grupper er på plads. Ind- og udchecking-appen er afhængig af denne konfiguration. Se [Fremmøde-opsætning](setup.md) for detaljer.
 2. **Installer B1 Ind- og udchecking-appen** på de enheder, du planlægger at bruge. Appen er tilgængelig på følgende platforme:
+   - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Android/Samsung-tablets:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
    - **Amazon Fire-tablets:** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
 3. **Log ind i B1 Ind- og udchecking-appen** ved hjælp af din kirkes kontooplysninger.

@@ -20,19 +20,21 @@ Antes de poder rastrear la asistencia, necesita indicarle a B1 Admin las ubicaci
 
 ## Conceptos Clave
 
-- **Sede** -- una ubicación física donde se reúne su iglesia (por ejemplo, "Sede Principal", "Sede Norte").
-- **Horario de Servicio** -- una reunión recurrente en una sede (por ejemplo, "Domingo 9:00 AM", "Miércoles 7:00 PM").
+- **Sede** -- una ubicación física donde se reúne su iglesia (por ejemplo, "Sede Principal", "Sede Norte"). Las sedes se administran en **Ajustes**.
+- **Servicio** -- una reunión recurrente en una sede (por ejemplo, "Servicio Dominical", "Entre Semana").
+- **Horario de Servicio** -- una hora específica en la que se realiza un servicio (por ejemplo, "9:00 AM", "11:00 AM").
 - **Grupo Programado** -- un grupo asignado a un horario de servicio específico. La asistencia se rastrea en el contexto de ese servicio.
 - **Grupo No Programado** -- un grupo que rastrea la asistencia por su cuenta, sin estar vinculado a un horario de servicio.
 
 ## Configuración de su Estructura de Asistencia
 
-1. Abra **B1 Admin** y haga clic en **Asistencia** en la barra lateral.
-2. Seleccione la pestaña **Configuración**.
-3. Haga clic en **Agregar Sede** e ingrese el nombre de su ubicación. Haga clic en **Guardar**.
-4. Con su sede seleccionada, haga clic en **Agregar Horario de Servicio**. Ingrese un nombre como "Domingo 9:00 AM" y haga clic en **Guardar**.
-5. Repita para cada horario de servicio en esa sede.
-6. Para asignar un grupo a un horario de servicio, seleccione el horario de servicio y haga clic en **Agregar Grupo**. Elija el grupo de la lista y haga clic en **Guardar**.
+1. Abra **B1 Admin**, haga clic en el **menú de secciones** en la esquina superior izquierda (el nombre de la sección con la flecha pequeña) y elija **Personas**.
+2. En la barra de navegación, haga clic en la pestaña **Asistencia**. La pestaña **Configuración** está seleccionada de forma predeterminada.
+3. Haga clic en **Administrar Sedes** (en la parte superior derecha del panel de Configuración). Esto lo lleva a **Ajustes → Sedes**. Haga clic en **Agregar Sede**, ingrese el nombre de su ubicación (la dirección y la zona horaria son opcionales) y haga clic en **Guardar**.
+4. Regrese a **Personas → Asistencia → Configuración**. Su sede ahora aparece en la tabla de configuración.
+5. Haga clic en el **botón + en la columna Servicio** debajo de su sede. Ingrese un nombre de servicio como "Servicio Dominical" y haga clic en **Guardar**.
+6. Haga clic en el **botón + en la columna Horario** debajo del servicio. Ingrese una hora como "9:00 AM" y haga clic en **Guardar**. Repita para cada horario de servicio.
+7. Para conectar un grupo a un horario de servicio, abra el grupo desde la pestaña **Grupos**, haga clic en el lápiz de **Editar** y use **Agregar Horario de Servicio** — consulte la siguiente sección.
 
 ### Habilitar el Seguimiento de Asistencia en un Grupo
 

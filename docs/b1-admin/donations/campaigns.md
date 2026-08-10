@@ -20,7 +20,7 @@ Campaigns let you run a fundraising drive toward a specific goal — a building 
 
 ## Opening Campaigns
 
-In B1 Admin, go to **Donations** in the left sidebar and select **Campaigns**. You will see a list of all campaigns with their goal amount, total pledged, and total given so far.
+In B1 Admin, open the **section menu** in the top-left corner (the section name with the small arrow) and choose **Donations**, then select **Campaigns**. You will see a list of all campaigns with their goal amount, total pledged, and total given so far.
 
 ## Creating a Campaign
 

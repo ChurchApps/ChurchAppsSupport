@@ -24,7 +24,7 @@ Every B1 account comes with a website ready to go. This guide walks you through 
 Your church automatically receives a subdomain on B1.church (for example, `yourchurch.b1.church`). You can also point your own custom domain to your B1 site.
 
 1. Go to **B1.church Admin** by visiting admin.b1.church or clicking your profile dropdown and choosing **Switch App**.
-2. Click **Dashboard** in the left sidebar, then select **Settings** from the dropdown menu.
+2. Open the **section menu** in the top-left corner (the section name with the small arrow) and choose **Settings**.
 3. Click **Manage** to view your subdomain. Set it to something short and recognizable with no spaces.
 4. To use a custom domain, log into your DNS provider (such as GoDaddy, Cloudflare, or AWS) and add two records:
    - An **A record** for your root domain pointing to `3.23.251.61`
@@ -62,7 +62,7 @@ Changes you make in Appearance apply across your entire website. See the [Appear
 
 ## Setting Up Navigation
 
-Your navigation links appear in the left sidebar of the Website Pages view. To organize them:
+Your navigation links appear in the Website Pages view. To organize them:
 
 1. Click **Add** to create a new navigation link and point it to one of your pages.
 2. Drag and drop links to reorder them or nest them under parent items.

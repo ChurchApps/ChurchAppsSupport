@@ -21,7 +21,7 @@ The Sermons page displays your entire sermon library. From here you can add new 
 
 ## Viewing Your Sermon Library
 
-1. In the B1 Admin, click **Sermons** in the left sidebar.
+1. In B1 Admin, open the **section menu** in the top-left corner (the section name with the small arrow) and choose **Sermons**.
 2. The Sermons page shows all your sermon entries, organized by playlist. Each sermon displays its thumbnail, title, and date.
 3. Click on any sermon to view or edit its details.
 

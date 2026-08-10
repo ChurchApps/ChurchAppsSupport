@@ -20,19 +20,21 @@ Prima di poter monitorare le presenze, devi indicare a B1 Admin le sedi fisiche 
 
 ## Concetti chiave
 
-- **Sede** -- una sede fisica dove la tua chiesa si riunisce (es. "Sede principale", "Sede nord").
-- **Orario del servizio** -- un incontro ricorrente in una sede (es. "Domenica 9:00", "Mercoledì 19:00").
+- **Sede** -- una sede fisica dove la tua chiesa si riunisce (es. "Sede principale", "Sede nord"). Le sedi vengono gestite in **Impostazioni**.
+- **Servizio** -- un incontro ricorrente in una sede (es. "Servizio domenicale", "Infrasettimanale").
+- **Orario del servizio** -- un orario specifico in cui si svolge un servizio (es. "9:00", "11:00").
 - **Gruppo programmato** -- un gruppo assegnato a un orario di servizio specifico. Le presenze vengono monitorate nel contesto di quel servizio.
 - **Gruppo non programmato** -- un gruppo che monitora le presenze autonomamente, senza essere legato a un orario di servizio.
 
 ## Configurare la struttura delle presenze
 
-1. Apri **B1 Admin** e clicca su **Presenze** nella barra laterale.
-2. Seleziona la scheda **Configurazione**.
-3. Clicca **Aggiungi sede** e inserisci il nome della tua sede. Clicca **Salva**.
-4. Con la sede selezionata, clicca **Aggiungi orario servizio**. Inserisci un nome come "Domenica 9:00" e clicca **Salva**.
-5. Ripeti per ogni orario di servizio in quella sede.
-6. Per assegnare un gruppo a un orario di servizio, seleziona l'orario del servizio e clicca **Aggiungi gruppo**. Scegli il gruppo dall'elenco e clicca **Salva**.
+1. Apri **B1 Admin**, clicca sul **menu delle sezioni** nell'angolo in alto a sinistra (il nome della sezione con la piccola freccia) e scegli **Persone**.
+2. Nella barra di navigazione, clicca sulla scheda **Presenze**. La scheda **Configurazione** è selezionata per impostazione predefinita.
+3. Clicca **Gestisci sedi** (in alto a destra nel pannello Configurazione). Questo ti porta a **Impostazioni → Sedi**. Clicca **Aggiungi sede**, inserisci il nome della tua sede (indirizzo e fuso orario sono facoltativi) e clicca **Salva**.
+4. Torna a **Persone → Presenze → Configurazione**. La tua sede appare ora nella tabella di configurazione.
+5. Clicca il **pulsante + nella colonna Servizio** sotto la tua sede. Inserisci un nome di servizio come "Servizio domenicale" e clicca **Salva**.
+6. Clicca il **pulsante + nella colonna Orario** sotto il servizio. Inserisci un orario come "9:00" e clicca **Salva**. Ripeti per ogni orario di servizio.
+7. Per collegare un gruppo a un orario di servizio, apri il gruppo dalla scheda **Gruppi**, clicca la matita **Modifica** e usa **Aggiungi orario servizio** — vedi la sezione successiva.
 
 ### Abilitare il monitoraggio presenze su un gruppo
 

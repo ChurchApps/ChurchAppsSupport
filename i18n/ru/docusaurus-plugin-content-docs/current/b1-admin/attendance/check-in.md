@@ -27,6 +27,7 @@ B1 Admin поддерживает самостоятельную регистр�
 
 1. **Настройте структуру посещаемости.** В B1 Admin перейдите в **Посещаемость > Настройка**.
 2. **Установите приложение B1 Checkin** на планшеты:
+   - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Android:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
    - **Amazon Fire:** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
 3. **Войдите в приложение** с учетными данными вашей церкви

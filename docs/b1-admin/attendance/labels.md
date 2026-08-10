@@ -21,7 +21,7 @@ The Label Designer lets you create and customize the name tag and pickup slip te
 
 ## Opening the Label Designer
 
-In B1 Admin, go to **Attendance** in the left sidebar and select **Labels**. You will see a list of your saved label templates, separated by type: **Nametag** and **Pickup Slip**.
+In B1 Admin, click the **section menu** in the top-left corner (the current section name with the small arrow next to it) and choose **Mobile**. In the navigation bar, select **B1 CheckIn**, then click the **Design Labels** button on the Check-in Labels card. You will see a list of your saved label templates, separated by type: **Nametag** and **Pickup Slip**.
 
 ## Label Types
 

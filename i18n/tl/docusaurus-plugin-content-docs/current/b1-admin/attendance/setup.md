@@ -20,19 +20,21 @@ Bago ninyo masubaybayan ang attendance, kailangan ninyong sabihin sa B1 Admin an
 
 ## Mga Pangunahing Konsepto
 
-- **Campus** -- isang pisikal na lokasyon kung saan nagpupulong ang inyong simbahan (hal., "Main Campus," "North Campus").
-- **Oras ng Serbisyo** -- isang regular na pagtitipon sa isang campus (hal., "Linggo 9:00 AM," "Miyerkules 7:00 PM").
+- **Campus** -- isang pisikal na lokasyon kung saan nagpupulong ang inyong simbahan (hal., "Main Campus," "North Campus"). Ang mga campus ay pinamamahalaan sa ilalim ng **Settings**.
+- **Serbisyo** -- isang paulit-ulit na pagtitipon sa isang campus (hal., "Sunday Service," "Midweek").
+- **Oras ng Serbisyo** -- isang partikular na oras kung kailan nagaganap ang isang serbisyo (hal., "9:00 AM," "11:00 AM").
 - **Naka-schedule na Grupo** -- isang grupong naka-assign sa isang partikular na oras ng serbisyo. Sinusubaybayan ang attendance sa konteksto ng serbisyong iyon.
 - **Hindi Naka-schedule na Grupo** -- isang grupong nagsusubaybay ng attendance nang mag-isa, nang hindi nakatali sa isang oras ng serbisyo.
 
 ## Pag-set Up ng Inyong Attendance Structure
 
-1. Buksan ang **B1 Admin** at i-click ang **Attendance** sa sidebar.
-2. Piliin ang **Setup** tab.
-3. I-click ang **Add Campus** at ilagay ang pangalan ng inyong lokasyon. I-click ang **Save**.
-4. Kapag napili na ang inyong campus, i-click ang **Add Service Time**. Maglagay ng pangalan tulad ng "Linggo 9:00 AM" at i-click ang **Save**.
-5. Ulitin para sa bawat oras ng serbisyo sa campus na iyon.
-6. Para mag-assign ng grupo sa isang oras ng serbisyo, piliin ang oras ng serbisyo at i-click ang **Add Group**. Piliin ang grupo mula sa listahan at i-click ang **Save**.
+1. Buksan ang **B1 Admin**, i-click ang **section menu** sa kaliwang itaas na sulok (ang pangalan ng section na may maliit na arrow), at piliin ang **People**.
+2. Sa navigation bar, i-click ang **Attendance** tab. Ang **Setup** tab ang napipili bilang default.
+3. I-click ang **Manage Campuses** (kanang itaas ng Setup panel). Dadalhin kayo nito sa **Settings → Campuses**. I-click ang **Add Campus**, ilagay ang pangalan ng inyong lokasyon (opsyonal ang address at time zone), at i-click ang **Save**.
+4. Bumalik sa **People → Attendance → Setup**. Lalabas na ngayon ang inyong campus sa setup table.
+5. I-click ang **+ button sa Service column** sa ilalim ng inyong campus. Maglagay ng pangalan ng serbisyo tulad ng "Sunday Service" at i-click ang **Save**.
+6. I-click ang **+ button sa Time column** sa ilalim ng serbisyo. Maglagay ng oras tulad ng "9:00 AM" at i-click ang **Save**. Ulitin para sa bawat oras ng serbisyo.
+7. Para ikonekta ang isang grupo sa isang oras ng serbisyo, buksan ang grupo mula sa **Groups** tab, i-click ang **Edit** pencil, at gamitin ang **Add Service Time** — tingnan ang susunod na seksyon.
 
 ### Pag-enable ng Track Attendance sa isang Grupo
 

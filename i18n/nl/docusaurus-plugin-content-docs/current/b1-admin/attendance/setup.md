@@ -20,19 +20,21 @@ Voordat u aanwezigheid kunt bijhouden, moet u B1 Admin vertellen over de fysieke
 
 ## Sleutelconcepten
 
-- **Campus** -- een fysieke locatie waar uw kerk zich verwezenlijkt (bijvoorbeeld "Hoofdcampus", "Noordcampus").
-- **Servicetijd** -- een terugkerende bijeenkomst op een campus (bijvoorbeeld "Zondag 9:00 uur", "Woensdag 19:00 uur").
+- **Campus** -- een fysieke locatie waar uw kerk zich verwezenlijkt (bijvoorbeeld "Hoofdcampus", "Noordcampus"). Campussen worden beheerd onder **Instellingen**.
+- **Service** -- een terugkerende bijeenkomst op een campus (bijvoorbeeld "Zondagsdienst", "Midweek").
+- **Servicetijd** -- een specifieke tijd waarop een service plaatsvindt (bijvoorbeeld "9:00 uur", "11:00 uur").
 - **Geplande groep** -- een groep toegewezen aan een specifieke servicetijd. Aanwezigheid wordt in de context van die service bijgehouden.
 - **Ongeplande groep** -- een groep die aanwezigheid op zichzelf bijhouden, zonder aan een servicetijd gebonden te zijn.
 
 ## Uw aanwezigheidsstructuur instellen
 
-1. Open **B1 Admin** en klik op **Aanwezigheid** in de zijbalk.
-2. Selecteer het tabblad **Instellen**.
-3. Klik op **Campus toevoegen** en voer de naam van uw locatie in. Klik op **Opslaan**.
-4. Klik met uw campus geselecteerd op **Servicetijd toevoegen**. Voer een naam in zoals "Zondag 9:00 uur" en klik op **Opslaan**.
-5. Herhaal dit voor elke servicetijd op die campus.
-6. Selecteer de servicetijd en klik op **Groep toevoegen** om een groep aan een servicetijd toe te wijzen. Kies de groep uit de lijst en klik op **Opslaan**.
+1. Open **B1 Admin**, klik op het **sectiemenu** in de linkerbovenhoek (de sectienaam met het kleine pijltje) en kies **Personen**.
+2. Klik in de navigatiebalk op het tabblad **Aanwezigheid**. Het tabblad **Instellen** is standaard geselecteerd.
+3. Klik op **Campussen beheren** (rechtsboven in het paneel Instellen). Dit brengt u naar **Instellingen → Campussen**. Klik op **Campus toevoegen**, voer de naam van uw locatie in (adres en tijdzone zijn optioneel) en klik op **Opslaan**.
+4. Keer terug naar **Personen → Aanwezigheid → Instellen**. Uw campus verschijnt nu in de insteltabel.
+5. Klik op de **+ knop in de kolom Service** onder uw campus. Voer een servicenaam in zoals "Zondagsdienst" en klik op **Opslaan**.
+6. Klik op de **+ knop in de kolom Tijd** onder de service. Voer een tijd in zoals "9:00 uur" en klik op **Opslaan**. Herhaal dit voor elke servicetijd.
+7. Om een groep aan een servicetijd te koppelen, opent u de groep via het tabblad **Groepen**, klikt u op het potlood **Bewerken** en gebruikt u **Servicetijd toevoegen** — zie de volgende sectie.
 
 ### Aanwezigheid bijhouden inschakelen voor een groep
 

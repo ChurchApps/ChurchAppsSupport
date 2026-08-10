@@ -24,7 +24,7 @@ Tabs configured here are delivered through the [B1.church Progressive Web App (P
 
 ## Accessing Mobile App Settings
 
-1. Navigate to the **Settings** page in the left sidebar.
+1. In B1 Admin, open the **section menu** in the top-left corner (the section name with the small arrow) and choose **Settings**.
 2. Click the **Mobile Apps** button in the header.
 3. The Mobile App Settings page displays your current app tabs.
 

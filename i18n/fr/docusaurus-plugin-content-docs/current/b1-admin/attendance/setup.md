@@ -20,19 +20,21 @@ Avant de pouvoir suivre la présence, vous devez indiquer à B1 Admin les emplac
 
 ## Concepts clés
 
-- **Campus** -- un emplacement physique où votre église se réunit (par ex., « Campus principal », « Campus Nord »).
-- **Horaire de culte** -- un rassemblement récurrent dans un campus (par ex., « Dimanche 9h00 », « Mercredi 19h00 »).
+- **Campus** -- un emplacement physique où votre église se réunit (par ex., « Campus principal », « Campus Nord »). Les campus sont gérés sous **Paramètres**.
+- **Culte** -- un rassemblement récurrent dans un campus (par ex., « Culte du dimanche », « Milieu de semaine »).
+- **Horaire de culte** -- une heure précise à laquelle un culte a lieu (par ex., « 9h00 », « 11h00 »).
 - **Groupe planifié** -- un groupe assigné à un horaire de culte spécifique. La présence est suivie dans le contexte de ce culte.
 - **Groupe non planifié** -- un groupe qui suit la présence de manière autonome, sans être lié à un horaire de culte.
 
 ## Configurer votre structure de présence
 
-1. Ouvrez **B1 Admin** et cliquez sur **Présence** dans la barre latérale.
-2. Sélectionnez l'onglet **Configuration**.
-3. Cliquez sur **Ajouter un campus** et entrez le nom de votre emplacement. Cliquez sur **Enregistrer**.
-4. Avec votre campus sélectionné, cliquez sur **Ajouter un horaire de culte**. Entrez un nom tel que « Dimanche 9h00 » et cliquez sur **Enregistrer**.
-5. Répétez pour chaque horaire de culte de ce campus.
-6. Pour assigner un groupe à un horaire de culte, sélectionnez l'horaire de culte et cliquez sur **Ajouter un groupe**. Choisissez le groupe dans la liste et cliquez sur **Enregistrer**.
+1. Ouvrez **B1 Admin**, cliquez sur le **menu des sections** en haut à gauche (le nom de la section avec la petite flèche) et choisissez **Personnes**.
+2. Dans la barre de navigation, cliquez sur l'onglet **Présence**. L'onglet **Configuration** est sélectionné par défaut.
+3. Cliquez sur **Gérer les campus** (en haut à droite du panneau Configuration). Cela vous amène à **Paramètres → Campus**. Cliquez sur **Ajouter un campus**, entrez le nom de votre emplacement (l'adresse et le fuseau horaire sont facultatifs) et cliquez sur **Enregistrer**.
+4. Revenez à **Personnes → Présence → Configuration**. Votre campus apparaît maintenant dans le tableau de configuration.
+5. Cliquez sur le **bouton + dans la colonne Culte** sous votre campus. Entrez un nom de culte tel que « Culte du dimanche » et cliquez sur **Enregistrer**.
+6. Cliquez sur le **bouton + dans la colonne Horaire** sous le culte. Entrez un horaire tel que « 9h00 » et cliquez sur **Enregistrer**. Répétez pour chaque horaire de culte.
+7. Pour connecter un groupe à un horaire de culte, ouvrez le groupe depuis l'onglet **Groupes**, cliquez sur le crayon **Modifier** et utilisez **Ajouter un horaire de culte** — voir la section suivante.
 
 ### Activer le suivi de présence sur un groupe
 

@@ -27,6 +27,7 @@ De B1 Inchecking-app maakt verbinding met uw B1 Admin aanwezigheidsinstelling. W
 
 1. **Configureer eerst uw aanwezigheidsstructuur.** Ga in B1 Admin naar **Aanwezigheid > Instellen** en zorg ervoor dat uw campussen, servicetijden en groepen op hun plaats zijn. De incheckings-app is afhankelijk van deze configuratie. Zie [Aanwezigheid instellen](setup.md) voor details.
 2. **Installeer de B1 Inchecking-app** op de apparaten die u wilt gebruiken. De app is beschikbaar op de volgende platforms:
+   - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Android/Samsung-tablets:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
    - **Amazon Fire-tablets:** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
 3. **Meld u aan bij de B1 Inchecking-app** met de accountreferenties van uw kerk.

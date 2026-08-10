@@ -27,6 +27,7 @@ L'application B1 Checkin se connecte à votre configuration de présence B1 Admi
 
 1. **Configurez d'abord votre structure de présence.** Dans B1 Admin, allez à **Présence > Configuration** et assurez-vous que vos campus, heures de service et groupes sont en place. L'application d'accueil dépend de cette configuration. Voir [Configuration de la présence](setup.md) pour les détails.
 2. **Installez l'application B1 Checkin** sur les appareils que vous envisagez d'utiliser. L'application est disponible sur les plateformes suivantes :
+   - **iPad/iOS :** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Tablettes Android/Samsung :** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
    - **Tablettes Amazon Fire :** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
 3. **Connectez-vous à l'application B1 Checkin** en utilisant les identifiants de compte de votre église.

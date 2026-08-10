@@ -34,7 +34,7 @@ Here is an overview of the key features available in the People section:
 
 ## Getting Started
 
-To access the People section, click **People** in the left sidebar of your B1 Admin dashboard. You will see your full church directory with a search bar at the top and a list of members below.
+To access the People section, open the **section menu** in the top-left corner of B1 Admin (the section name with the small arrow) and choose **People**. You will see your full church directory with a search bar at the top and a list of members below.
 
 :::tip
 If you are setting up B1 for the first time, start by [importing your existing member data](./importing-data.md). Then review and clean up profiles as needed.

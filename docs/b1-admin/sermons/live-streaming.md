@@ -25,7 +25,7 @@ The page has two main tabs: **Services** for managing your live stream schedule 
 
 ### Adding a Service
 
-1. In the B1 Admin, click **Sermons** in the left sidebar, then click the **Live Stream Times** tab.
+1. In B1 Admin, open the **section menu** in the top-left corner (the section name with the small arrow) and choose **Sermons**, then click the **Live Stream Times** tab.
 2. Click the **Add Service** button to create a new scheduled service.
 3. Enter a **Service Name** (for example, "Sunday Morning").
 4. Set the **Service Time** -- choose the day and time your service begins.
@@ -88,7 +88,7 @@ To change these, go to **Website** then **Appearance** and update your [Color Pa
 
 To give team members access to the host-only chat alongside the public chat:
 
-1. Go to **Settings** in the left sidebar and click **Roles**.
+1. Open the **section menu** in the top-left corner (the section name with the small arrow), choose **Settings**, and click **Roles**.
 2. Click the plus button and select **Add Custom Role**.
 3. Name the role "Streaming Host" and click **Save**.
 4. Click the new role, then click **Add** in the Members section to add people.

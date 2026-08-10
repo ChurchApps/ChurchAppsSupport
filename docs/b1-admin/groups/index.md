@@ -38,7 +38,7 @@ Here is what you can accomplish in the Groups section:
 
 ## Getting Started
 
-To access Groups, click **People** in the left sidebar of your B1 Admin dashboard, then select **Groups**. You will see all of your existing groups organized by category.
+To access Groups, open the **section menu** in the top-left corner of your B1 Admin dashboard and choose **People**, then click the **Groups** tab in the navigation bar. You will see all of your existing groups organized by category.
 
 :::tip
 If you are just getting started, begin by creating a few categories that match your church structure (for example, "Ministries," "Small Groups," "Committees"). Then add individual groups within each category. See [Creating Groups](./creating-groups.md) for a step-by-step walkthrough.

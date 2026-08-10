@@ -20,19 +20,21 @@ Antes de poder rastrear a presença, você precisa informar ao B1 Admin sobre os
 
 ## Conceitos-Chave
 
-- **Campus** -- um local físico onde sua igreja se reúne (por exemplo, "Campus Principal", "Campus Norte").
-- **Horário de Serviço** -- uma reunião recorrente em um campus (por exemplo, "Domingo 9:00 AM", "Quarta-feira 7:00 PM").
+- **Campus** -- um local físico onde sua igreja se reúne (por exemplo, "Campus Principal", "Campus Norte"). Os campi são gerenciados em **Settings**.
+- **Serviço** -- uma reunião recorrente em um campus (por exemplo, "Culto de Domingo", "Meio da Semana").
+- **Horário de Serviço** -- um horário específico em que um serviço acontece (por exemplo, "9:00 AM", "11:00 AM").
 - **Grupo Programado** -- um grupo atribuído a um horário de serviço específico. A presença é rastreada no contexto desse serviço.
 - **Grupo Não Programado** -- um grupo que rastreia presença por conta própria, sem estar vinculado a um horário de serviço.
 
 ## Configurando Sua Estrutura de Presença
 
-1. Abra **B1 Admin** e clique em **Attendance** na barra lateral.
-2. Selecione a aba **Setup**.
-3. Clique em **Add Campus** e insira o nome de seu local. Clique em **Save**.
-4. Com seu campus selecionado, clique em **Add Service Time**. Insira um nome como "Sunday 9:00 AM" e clique em **Save**.
-5. Repita para cada horário de serviço naquele campus.
-6. Para atribuir um grupo a um horário de serviço, selecione o horário de serviço e clique em **Add Group**. Escolha o grupo da lista e clique em **Save**.
+1. Abra **B1 Admin**, clique no **menu de seções** no canto superior esquerdo (o nome da seção com a pequena seta) e escolha **People**.
+2. Na barra de navegação, clique na aba **Attendance**. A aba **Setup** é selecionada por padrão.
+3. Clique em **Manage Campuses** (no canto superior direito do painel Setup). Isso leva você para **Settings → Campuses**. Clique em **Add Campus**, insira o nome de seu local (endereço e fuso horário são opcionais) e clique em **Save**.
+4. Retorne para **People → Attendance → Setup**. Seu campus agora aparece na tabela de configuração.
+5. Clique no **botão + na coluna Service** abaixo de seu campus. Insira um nome de serviço como "Sunday Service" e clique em **Save**.
+6. Clique no **botão + na coluna Time** abaixo do serviço. Insira um horário como "9:00 AM" e clique em **Save**. Repita para cada horário de serviço.
+7. Para conectar um grupo a um horário de serviço, abra o grupo pela aba **Groups**, clique no lápis **Edit** e use **Add Service Time** — veja a próxima seção.
 
 ### Habilitando Rastreamento de Presença em um Grupo
 

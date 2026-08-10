@@ -6,13 +6,13 @@ title: "Overzicht B1 Church Inchecking"
 
 <div class="article-intro">
 
-B1 Church Inchecking is een zelfbedieningskiosk-app voor Android-tablets. Hiermee kunnen kerkleden hun familie opzoeken, kinderen aan groepen of klassen toewijzen en naamlabels en voogdijslips afdrukken -- allemaal zonder dat een vrijwilliger aan de balie nodig is.
+B1 Church Inchecking is een zelfbedieningskiosk-app voor iPads en Android-tablets. Hiermee kunnen kerkleden hun familie opzoeken, kinderen aan groepen of klassen toewijzen en naamlabels en voogdijslips afdrukken -- allemaal zonder dat een vrijwilliger aan de balie nodig is.
 
 </div>
 
 ## Hoe het werkt
 
-Plaats een Android-tablet in uw lobby of welkomstgebied. Leden komen opdagen, zoeken hun huishouden op via telefoonnummer of achternaam, controleren hun familie, kiezen welke groepen elke persoon moet volgen en tikken op **Incheckservice**. De app drukt naamlabels en ophaalslips automatisch af en stelt vervolgens in voor de volgende familie.
+Plaats een iPad of Android-tablet in uw lobby of welkomstgebied. Leden komen opdagen, zoeken hun huishouden op via telefoonnummer of achternaam, controleren hun familie, kiezen welke groepen elke persoon moet volgen en tikken op **Incheckservice**. De app drukt naamlabels en ophaalslips automatisch af en stelt vervolgens in voor de volgende familie.
 
 ## Belangrijkste functies
 
@@ -33,7 +33,7 @@ Plaats een Android-tablet in uw lobby of welkomstgebied. Leden komen opdagen, zo
 - **[Incheckingworkflow](./check-in/)** -- De volledige incheckflow van het selecteren van een service tot het afdrukken van etiketten.
 
 :::tip
-B1 Church Inchecking werkt het best op een 10-inch Android-tablet in liggend formaat, waarbij families deze gemakkelijk kunnen bereiken.
+B1 Church Inchecking werkt het best op een 10-inch tablet (iPad of Android) in liggend formaat, waarbij families deze gemakkelijk kunnen bereiken. Download de app via de [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin) of [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/).
 :::
 
 :::info

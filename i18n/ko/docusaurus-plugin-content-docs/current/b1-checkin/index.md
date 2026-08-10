@@ -6,13 +6,13 @@ title: "B1 Church Checkin 개요"
 
 <div class="article-intro">
 
-B1 Church Checkin은 Android 태블릿용 자체 서비스 키오스크 앱입니다. 교회 회원들이 가족을 찾고, 아이들을 그룹이나 클래스에 할당하고, 이름표와 부모 픽업 슬립을 인쇄할 수 있습니다 -- 자원봉사자가 책상에 있을 필요가 없습니다.
+B1 Church Checkin은 iPad와 Android 태블릿용 자체 서비스 키오스크 앱입니다. 교회 회원들이 가족을 찾고, 아이들을 그룹이나 클래스에 할당하고, 이름표와 부모 픽업 슬립을 인쇄할 수 있습니다 -- 자원봉사자가 책상에 있을 필요가 없습니다.
 
 </div>
 
 ## 작동 원리
 
-로비나 환영 공간에 Android 태블릿을 배치하세요. 회원들이 온 후 전화번호나 성으로 가구를 찾고, 가족을 검토하고, 각 사람이 참석할 그룹을 선택하고, **체크인**을 탭합니다. 앱이 이름표와 픽업 슬립을 자동으로 인쇄한 후 다음 가족을 위해 재설정합니다.
+로비나 환영 공간에 iPad 또는 Android 태블릿을 배치하세요. 회원들이 온 후 전화번호나 성으로 가구를 찾고, 가족을 검토하고, 각 사람이 참석할 그룹을 선택하고, **체크인**을 탭합니다. 앱이 이름표와 픽업 슬립을 자동으로 인쇄한 후 다음 가족을 위해 재설정합니다.
 
 ## 주요 기능
 
@@ -33,7 +33,7 @@ B1 Church Checkin은 Android 태블릿용 자체 서비스 키오스크 앱입�
 - **[체크인 워크플로우](./check-in/)** -- 예배 선택부터 라벨 인쇄까지의 전체 체크인 흐름.
 
 :::tip
-B1 Church Checkin은 가족들이 쉽게 접근할 수 있는 가로 방향으로 배치된 10인치 Android 태블릿에서 가장 잘 작동합니다.
+B1 Church Checkin은 가족들이 쉽게 접근할 수 있는 가로 방향으로 배치된 10인치 태블릿(iPad 또는 Android)에서 가장 잘 작동합니다. 앱은 [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin) 또는 [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)에서 받을 수 있습니다.
 :::
 
 :::info

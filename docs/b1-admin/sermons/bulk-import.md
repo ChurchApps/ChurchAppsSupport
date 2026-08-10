@@ -21,7 +21,7 @@ The Bulk Import page lets you quickly populate your sermon library by importing 
 
 ## Choosing Your Source
 
-1. In the B1 Admin, click **Sermons** in the left sidebar, then click the **Bulk Import** tab.
+1. In B1 Admin, open the **section menu** in the top-left corner (the section name with the small arrow) and choose **Sermons**, then click the **Bulk Import** tab.
 2. You will see two clickable cards:
    - **YouTube** (red) -- Import videos from a YouTube channel
    - **Vimeo** (blue) -- Import videos from a Vimeo account

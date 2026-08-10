@@ -27,6 +27,7 @@ B1 Checkin-appen kobles til oppsettet for B1 Admin-oppmøte. Når et medlem sjek
 
 1. **Konfigurer først oppmøtestrukturen din.** I B1 Admin går du til **Oppmøte > Oppsett** og sørger for at campuser, servicetider og grupper er på plass. Innsjekkingsappen er avhengig av denne konfigurasjonen. Se [Innsjekking-oppsett](setup.md) for detaljer.
 2. **Installer B1 Checkin-appen** på enhetene du planlegger å bruke. Appen er tilgjengelig på følgende plattformer:
+   - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Android/Samsung-nettbrett:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
    - **Amazon Fire-nettbrett:** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
 3. **Logg på B1 Checkin-appen** ved hjelp av kirken din kontolegitimering.

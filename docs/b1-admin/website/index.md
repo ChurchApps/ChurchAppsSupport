@@ -18,7 +18,7 @@ The Website builder is organized into five main areas:
 
 Create and manage all the pages on your church website. The **Pages** table shows each page along with its status -- either **Generated** (automatically created by the system) or **Custom** (created by you). You can add new custom pages, edit existing ones, or convert auto-generated pages into custom pages for full control over their content.
 
-The left sidebar displays your navigation links in a tree structure. You can reorder links using drag-and-drop to set the exact hierarchy and order you want visitors to see.
+Your navigation links are displayed in a tree structure. You can reorder links using drag-and-drop to set the exact hierarchy and order you want visitors to see.
 
 ### Blocks
 

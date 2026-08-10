@@ -6,13 +6,13 @@ title: "B1 Church Checkin-oversikt"
 
 <div class="article-intro">
 
-B1 Church Checkin er en selvbetjent kioskapp for Android-nettbrett. Det lar kirkens medlemmer slå opp familien, tilordne barn til grupper eller klasser, og skrive ut navn-etiketter og foreldreplukkslips -- alt uten å trenge en frivillig ved skranken.
+B1 Church Checkin er en selvbetjent kioskapp for iPader og Android-nettbrett. Det lar kirkens medlemmer slå opp familien, tilordne barn til grupper eller klasser, og skrive ut navn-etiketter og foreldreplukkslips -- alt uten å trenge en frivillig ved skranken.
 
 </div>
 
 ## Hvordan det fungerer
 
-Plasser et Android-nettbrett i lobbyen eller velkomstområdet. Medlemmer går opp, søk etter husholdet ved telefonnummer eller etternavn, gjennomgå familjen, velg hvilke grupper hver person skal delta i, og trykk på **Innsjekk**. Appen skriver ut navn-etiketter og plukkslips automatisk, og tilbakestilles for neste familie.
+Plasser en iPad eller et Android-nettbrett i lobbyen eller velkomstområdet. Medlemmer går opp, søk etter husholdet ved telefonnummer eller etternavn, gjennomgå familjen, velg hvilke grupper hver person skal delta i, og trykk på **Innsjekk**. Appen skriver ut navn-etiketter og plukkslips automatisk, og tilbakestilles for neste familie.
 
 ## Nøkkelfunksjoner
 
@@ -33,7 +33,7 @@ Plasser et Android-nettbrett i lobbyen eller velkomstområdet. Medlemmer går op
 - **[Innsjekkingsarbeidsflyt](./check-in/)** -- Den fullstendige innsjekkingsflyten fra valg av service til utskrift av etiketter.
 
 :::tip
-B1 Church Checkin fungerer best på et 10-tommers Android-nettbrett montert i landskapsorientering hvor familier lett kan nå det.
+B1 Church Checkin fungerer best på et 10-tommers nettbrett (iPad eller Android) montert i landskapsorientering hvor familier lett kan nå det. Få appen fra [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin) eller [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/).
 :::
 
 :::info

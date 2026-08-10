@@ -54,7 +54,7 @@ Open **Page Settings** on any page to configure:
 
 ## Managing Navigation
 
-The left sidebar of the Website Pages view displays your navigation links. These links control the menu that visitors see on your website.
+The Website Pages view displays your navigation links. These links control the menu that visitors see on your website.
 
 1. Click **Add** to create a new navigation link. You can point it to any page on your site or to an external URL.
 2. To reorder links, drag and drop them into the order you want. You can also nest links under a parent item to create dropdown menus.

@@ -6,13 +6,13 @@ title: "B1 Church Checkin 概述"
 
 <div class="article-intro">
 
-B1 Church Checkin 是一款适用于 Android 平板电脑的自助服务终端应用。它允许教会成员查找他们的家庭、将孩子分配到小组或班级，并打印姓名标签和家长接送凭条——所有这些都无需前台志愿者的帮助。
+B1 Church Checkin 是一款适用于 iPad 和 Android 平板电脑的自助服务终端应用。它允许教会成员查找他们的家庭、将孩子分配到小组或班级，并打印姓名标签和家长接送凭条——所有这些都无需前台志愿者的帮助。
 
 </div>
 
 ## 工作原理
 
-在您的大厅或欢迎区域放置一台 Android 平板电脑。成员走过来，通过电话号码或姓氏搜索他们的家庭，查看家庭成员，选择每个人应该参加的小组，然后点击 **Check-in**。应用会自动打印姓名标签和接送凭条，然后重置以迎接下一个家庭。
+在您的大厅或欢迎区域放置一台 iPad 或 Android 平板电脑。成员走过来，通过电话号码或姓氏搜索他们的家庭，查看家庭成员，选择每个人应该参加的小组，然后点击 **Check-in**。应用会自动打印姓名标签和接送凭条，然后重置以迎接下一个家庭。
 
 ## 主要功能
 
@@ -32,7 +32,7 @@ B1 Church Checkin 是一款适用于 Android 平板电脑的自助服务终端�
 - **[签到流程](./check-in/)** -- 从选择聚会到打印标签的完整签到流程。
 
 :::tip
-B1 Church Checkin 在横向放置的 10 英寸 Android 平板电脑上效果最佳，方便家庭成员轻松使用。
+B1 Church Checkin 在横向放置的 10 英寸平板电脑（iPad 或 Android）上效果最佳，方便家庭成员轻松使用。您可以从 [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)、[Google Play 商店](https://play.google.com/store/apps/details?id=church.b1.checkin)或 [Amazon 应用商店](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)获取该应用。
 :::
 
 :::info

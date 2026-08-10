@@ -20,19 +20,21 @@ Before you can track attendance, you need to tell B1 Admin about your church's p
 
 ## Key Concepts
 
-- **Campus** -- a physical location where your church meets (e.g., "Main Campus," "North Campus").
-- **Service Time** -- a recurring gathering at a campus (e.g., "Sunday 9:00 AM," "Wednesday 7:00 PM").
+- **Campus** -- a physical location where your church meets (e.g., "Main Campus," "North Campus"). Campuses are managed under **Settings**.
+- **Service** -- a recurring gathering at a campus (e.g., "Sunday Service," "Midweek").
+- **Service Time** -- a specific time a service happens (e.g., "9:00 AM," "11:00 AM").
 - **Scheduled Group** -- a group assigned to a specific service time. Attendance is tracked in the context of that service.
 - **Unscheduled Group** -- a group that tracks attendance on its own, without being tied to a service time.
 
 ## Setting Up Your Attendance Structure
 
-1. Open **B1 Admin** and click **Attendance** in the sidebar.
-2. Select the **Setup** tab.
-3. Click **Add Campus** and enter the name of your location. Click **Save**.
-4. With your campus selected, click **Add Service Time**. Enter a name such as "Sunday 9:00 AM" and click **Save**.
-5. Repeat for each service time at that campus.
-6. To assign a group to a service time, select the service time and click **Add Group**. Choose the group from the list and click **Save**.
+1. Open **B1 Admin**, click the **section menu** in the top-left corner (the section name with the small arrow), and choose **People**.
+2. In the navigation bar, click the **Attendance** tab. The **Setup** tab is selected by default.
+3. Click **Manage Campuses** (top right of the Setup panel). This takes you to **Settings → Campuses**. Click **Add Campus**, enter the name of your location (address and time zone are optional), and click **Save**.
+4. Return to **People → Attendance → Setup**. Your campus now appears in the setup table.
+5. Click the **+ button in the Service column** under your campus. Enter a service name such as "Sunday Service" and click **Save**.
+6. Click the **+ button in the Time column** under the service. Enter a time such as "9:00 AM" and click **Save**. Repeat for each service time.
+7. To connect a group to a service time, open the group from the **Groups** tab, click the **Edit** pencil, and use **Add Service Time** — see the next section.
 
 ### Enabling Track Attendance on a Group
 

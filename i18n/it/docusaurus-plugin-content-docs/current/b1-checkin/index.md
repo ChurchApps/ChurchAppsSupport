@@ -6,13 +6,13 @@ title: "Panoramica di B1 Church Checkin"
 
 <div class="article-intro">
 
-B1 Church Checkin è un'app kiosk self-service per tablet Android. Permette ai membri della chiesa di cercare la propria famiglia, assegnare i bambini a gruppi o classi e stampare etichette con il nome e ricevute di ritiro per i genitori -- il tutto senza bisogno di un volontario alla reception.
+B1 Church Checkin è un'app kiosk self-service per iPad e tablet Android. Permette ai membri della chiesa di cercare la propria famiglia, assegnare i bambini a gruppi o classi e stampare etichette con il nome e ricevute di ritiro per i genitori -- il tutto senza bisogno di un volontario alla reception.
 
 </div>
 
 ## Come Funziona
 
-Posiziona un tablet Android nella tua hall o area di accoglienza. I membri si avvicinano, cercano il proprio nucleo familiare tramite numero di telefono o cognome, verificano la propria famiglia, scelgono a quale gruppo ogni persona deve partecipare e toccano **Check-in**. L'app stampa automaticamente etichette con il nome e ricevute di ritiro, poi si resetta per la famiglia successiva.
+Posiziona un iPad o un tablet Android nella tua hall o area di accoglienza. I membri si avvicinano, cercano il proprio nucleo familiare tramite numero di telefono o cognome, verificano la propria famiglia, scelgono a quale gruppo ogni persona deve partecipare e toccano **Check-in**. L'app stampa automaticamente etichette con il nome e ricevute di ritiro, poi si resetta per la famiglia successiva.
 
 ## Funzionalità Principali
 
@@ -32,7 +32,7 @@ Posiziona un tablet Android nella tua hall o area di accoglienza. I membri si av
 - **[Flusso di Check-In](./check-in/)** -- Il flusso completo del check-in dalla selezione di un servizio alla stampa delle etichette.
 
 :::tip
-B1 Church Checkin funziona al meglio su un tablet Android da 10 pollici montato in orientamento orizzontale dove le famiglie possono raggiungerlo facilmente.
+B1 Church Checkin funziona al meglio su un tablet da 10 pollici (iPad o Android) montato in orientamento orizzontale dove le famiglie possono raggiungerlo facilmente. Scarica l'app dall'[Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), dal [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin) o dall'[Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/).
 :::
 
 :::info

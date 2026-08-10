@@ -27,6 +27,7 @@ L'app B1 Checkin si connette alla vostra configurazione di partecipazione di B1 
 
 1. **Configurate prima la vostra struttura di partecipazione.** In B1 Admin, andate su **Partecipazione > Impostazione** e assicuratevi che i vostri campus, orari di servizio e gruppi siano al loro posto. L'app di check-in dipende da questa configurazione. Consultate [Impostazione della partecipazione](setup.md) per i dettagli.
 2. **Installate l'app B1 Checkin** sui dispositivi che intendete utilizzare. L'app è disponibile sulle seguenti piattaforme:
+   - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Android/Samsung Tablets:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
    - **Amazon Fire Tablets:** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
 3. **Accedete all'app B1 Checkin** utilizzando le credenziali dell'account della vostra chiesa.

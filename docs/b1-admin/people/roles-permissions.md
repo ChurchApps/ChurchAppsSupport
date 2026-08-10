@@ -37,7 +37,7 @@ Each role controls access to specific areas of B1 Admin, including:
 
 ## Viewing and Managing Roles
 
-1. Click **Settings** in the left sidebar.
+1. Open the **section menu** in the top-left corner (the section name with the small arrow) and choose **Settings**.
 2. Click **Roles** in the top navigation.
 3. You will see a list of all roles configured for your church.
 4. Click on any role to view its members and permissions.

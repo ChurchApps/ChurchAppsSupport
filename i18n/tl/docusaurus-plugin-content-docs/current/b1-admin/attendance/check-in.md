@@ -27,6 +27,7 @@ Ang B1 Checkin app ay kumokonekta sa inyong B1 Admin attendance setup. Kapag nag
 
 1. **Ayusin muna ang inyong attendance structure.** Sa B1 Admin, pumunta sa **Attendance > Setup** at siguraduhin na ang inyong mga campus, oras ng serbisyo, at mga grupo ay naka-place. Ang check-in app ay umaasa sa configuration na ito. Tingnan ang [Attendance Setup](setup.md) para sa detalye.
 2. **I-install ang B1 Checkin app** sa mga device na plano ninyong gamitin. Ang app ay available sa mga sumusunod na platform:
+   - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Android/Samsung Tablets:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
    - **Amazon Fire Tablets:** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
 3. **Mag-sign in sa B1 Checkin app** gamit ang credentials ng inyong church account.

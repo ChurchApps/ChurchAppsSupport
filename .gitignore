@@ -21,3 +21,9 @@ scripts/output/
 package-lock.json
 
 scripts/.yarn/
+
+# Videos are no longer committed to the repo (old tutorials under videos/ remain
+# tracked for history; gitignore doesn't affect tracked files). All new video
+# work is local-only — for Mautic tutorials, support calls, or personal reference.
+.DS_Store
+videos/

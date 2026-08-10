@@ -27,6 +27,7 @@ The B1 Checkin app connects to your B1 Admin attendance setup. When a member che
 
 1. **Configure your attendance structure first.** In B1 Admin, go to **Attendance > Setup** and make sure your campuses, service times, and groups are in place. The check-in app relies on this configuration. See [Attendance Setup](setup.md) for details.
 2. **Install the B1 Checkin app** on the devices you plan to use. The app is available on the following platforms:
+   - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Android/Samsung Tablets:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
    - **Amazon Fire Tablets:** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
 3. **Sign in to the B1 Checkin app** using your church's account credentials.
@@ -104,12 +105,23 @@ When a guest scans the QR code, they are taken to a [guest registration page](..
 
 To turn on the QR code display:
 
-1. In B1 Admin, go to **Mobile** in the left sidebar (phone icon).
-2. Select the **Check-In** tab.
-3. Toggle **QR Guest Registration** on.
+1. In B1 Admin, open the **section menu** in the top-left corner (the section name with the small arrow) and choose **Mobile**.
+2. Select the **B1 CheckIn** tab.
+3. Toggle **QR Guest Registration** on and click **Save**.
 
 :::note
 This setting is under **Mobile**, not under Attendance > Kiosk Theme.
+:::
+
+### Sharing the Registration Link
+
+Once QR Guest Registration is enabled, a **Share registration QR code** section appears below the toggle. This gives you two ways to get guests to the registration form beyond the kiosk QR code:
+
+- **Copy link** — copies the registration URL so you can paste it on your church website, in emails, or anywhere online.
+- **Download PNG** — downloads the QR code as an image you can print on flyers, bulletins, or signage.
+
+:::tip
+Add the registration link to your church website's "Plan Your Visit" or "I'm New" page so guests can register before they even arrive.
 :::
 
 ## What Gets Recorded

@@ -27,6 +27,7 @@ B1 Checkin 应用连接到您的 B1 Admin 出席设置。当会众签到时，�
 
 1. **首先配置您的出席结构。** 在 B1 Admin 中，前往 **出席 > 设置**，确保您的校区、礼拜时间和小组已就位。签到应用依赖此配置。详见[出席设置](setup.md)。
 2. **在您计划使用的设备上安装 B1 Checkin 应用。** 该应用可在以下平台获取：
+   - **iPad/iOS：** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Android/Samsung 平板：** [Google Play 商店](https://play.google.com/store/apps/details?id=church.b1.checkin)
    - **Amazon Fire 平板：** [Amazon 应用商店](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
 3. **使用您教会的账户凭据登录 B1 Checkin 应用。**

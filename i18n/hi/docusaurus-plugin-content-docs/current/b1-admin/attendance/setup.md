@@ -20,19 +20,21 @@ title: "Attendance Setup"
 
 ## Key Concepts
 
-- **Campus** -- एक physical location जहां आपका चर्च meets (जैसे, "Main Campus," "North Campus")।
-- **Service Time** -- एक campus में एक recurring gathering (जैसे, "Sunday 9:00 AM," "Wednesday 7:00 PM")।
+- **Campus** -- एक physical location जहां आपका चर्च meets (जैसे, "Main Campus," "North Campus")। Campuses को **Settings** के तहत manage किया जाता है।
+- **Service** -- एक campus में एक recurring gathering (जैसे, "Sunday Service," "Midweek")।
+- **Service Time** -- एक specific time जब एक service होती है (जैसे, "9:00 AM," "11:00 AM")।
 - **Scheduled Group** -- एक group जो एक specific service time को assign किया जाता है। Attendance को उस service के context में track किया जाता है।
 - **Unscheduled Group** -- एक group जो एक service time से independently attendance को track करता है।
 
 ## अपनी Attendance Structure को Setup करना
 
-1. **B1 Admin** को खोलें और sidebar में **Attendance** को क्लिक करें।
-2. **Setup** tab को चुनें।
-3. **Add Campus** को क्लिक करें और अपनी location का नाम enter करें। **Save** को क्लिक करें।
-4. अपने campus को selected करके, **Add Service Time** को क्लिक करें। "Sunday 9:00 AM" जैसा नाम enter करें और **Save** को क्लिक करें।
-5. उस campus में प्रत्येक service time के लिए repeat करें।
-6. एक group को service time से assign करने के लिए, service time को चुनें और **Add Group** को क्लिक करें। List से group को चुनें और **Save** को क्लिक करें।
+1. **B1 Admin** को खोलें, top-left corner में **section menu** (छोटे arrow के साथ section का नाम) को क्लिक करें, और **People** को चुनें।
+2. Navigation bar में, **Attendance** tab को क्लिक करें। **Setup** tab default रूप से selected होता है।
+3. **Manage Campuses** (Setup panel के top right में) को क्लिक करें। यह आपको **Settings → Campuses** पर ले जाता है। **Add Campus** को क्लिक करें, अपनी location का नाम enter करें (address और time zone optional हैं), और **Save** को क्लिक करें।
+4. **People → Attendance → Setup** पर वापस लौटें। आपका campus अब setup table में appear होता है।
+5. अपने campus के नीचे **Service column में + button** को क्लिक करें। "Sunday Service" जैसा service नाम enter करें और **Save** को क्लिक करें।
+6. Service के नीचे **Time column में + button** को क्लिक करें। "9:00 AM" जैसा time enter करें और **Save** को क्लिक करें। प्रत्येक service time के लिए repeat करें।
+7. एक group को service time से connect करने के लिए, **Groups** tab से group को खोलें, **Edit** pencil को क्लिक करें, और **Add Service Time** का उपयोग करें — अगला section देखें।
 
 ### Group पर Track Attendance को Enable करना
 

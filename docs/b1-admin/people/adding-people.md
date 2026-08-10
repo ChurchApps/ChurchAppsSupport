@@ -21,7 +21,7 @@ The People section is the foundation of B1 Admin — it's your church's member d
 ## Adding a Person
 
 1. Navigate to the B1.church Admin dashboard.
-2. Click on **People** in the left sidebar.
+2. Open the **section menu** in the top-left corner and choose **People**.
 3. Click the **Add Person** button in the upper right corner.
 4. Fill in the person's first name, last name, and email address, then click **Add**.
 

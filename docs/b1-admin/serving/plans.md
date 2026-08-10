@@ -58,6 +58,15 @@ Each position shows a count chip (for example, "2/3") so you can see how many sp
 Set up your teams in the ministry settings before creating plans. This way, you will have a ready pool of volunteers to assign from.
 :::
 
+## Plan Settings
+
+Each plan has additional settings you can configure by clicking the edit (pencil) icon on the plan. These include:
+
+- **Signup Deadline** — the number of hours before the service when volunteer signups close. Enter a negative number to keep signups open past the service start time.
+- **Show volunteer names on signup page** — when checked, volunteers can see who else is already signed up for each position.
+- **Penciled in** — hides assignments from volunteers until you are ready to publish the schedule.
+- **Automatically schedule a replacement when a volunteer declines** — when checked, if an assigned volunteer declines their position B1 will automatically contact the next available person on the team roster and ask if they can serve. This continues down the list until someone accepts, keeping your positions filled without manual follow-up.
+
 ## Volunteer Reminders
 
 B1 can automatically remind volunteers ahead of the services they are scheduled for, so you do not have to chase down your team each week. Reminders go to **everyone scheduled** — both those who have confirmed and those who have not yet responded — by email and as an in-app/push notification. Each reminder includes the volunteer's position(s), the service date, the plan notes, and your custom message.

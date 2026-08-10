@@ -27,6 +27,7 @@ Die B1 Checkin-App stellt eine Verbindung zu Ihrer B1 Admin-Anmeldekonfiguration
 
 1. **Konfigurieren Sie zuerst Ihre Anwesenheitsstruktur.** Gehen Sie in B1 Admin zu **Anwesenheit > Setup** und stellen Sie sicher, dass Ihre Standorte, Gottesdienste und Gruppen vorhanden sind. Die Anmelde-App basiert auf dieser Konfiguration. Weitere Details finden Sie unter [Anmeldekonfiguration](setup.md).
 2. **Installieren Sie die B1 Checkin-App** auf den Geräten, die Sie verwenden möchten. Die App ist auf den folgenden Plattformen verfügbar:
+   - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Android/Samsung-Tablets:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
    - **Amazon Fire-Tablets:** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
 3. **Melden Sie sich bei der B1 Checkin-App an** mit den Anmeldedaten Ihrer Kirche.

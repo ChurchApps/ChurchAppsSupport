@@ -20,19 +20,21 @@ Før du kan spore oppmøte, må du fortelle B1 Admin om kirkens fysiske steder, 
 
 ## Nøkkelbegreper
 
-- **Campus** -- en fysisk lokasjon hvor kirken din møtes (f.eks. "Hovedcampus", "Nordcampus").
-- **Servicetid** -- et gjentakende møte på en campus (f.eks. "Søndag 09:00", "Onsdag 19:00").
+- **Campus** -- en fysisk lokasjon hvor kirken din møtes (f.eks. "Hovedcampus", "Nordcampus"). Campuser administreres under **Innstillinger**.
+- **Tjeneste** -- et gjentakende møte på en campus (f.eks. "Søndagstjeneste", "Midtuke").
+- **Servicetid** -- et bestemt tidspunkt en tjeneste finner sted (f.eks. "09:00", "11:00").
 - **Planlagt gruppe** -- en gruppe tilordnet en bestemt servicetid. Oppmøte blir sporet i sammenheng med denne tjenesten.
 - **Uplanlagt gruppe** -- en gruppe som sporer oppmøte på sin egen, uten å være knyttet til en servicetid.
 
 ## Oppsetning av oppmøtestrukturen
 
-1. Åpne **B1 Admin** og klikk på **Oppmøte** i sidestolpen.
-2. Velg **Oppsett**-fanen.
-3. Klikk **Legg til campus** og skriv inn navnet på stedet. Klikk **Lagre**.
-4. Med campusen valgt, klikk **Legg til servicetid**. Skriv inn et navn som "Søndag 09:00" og klikk **Lagre**.
-5. Gjenta for hver servicetid på denne campusen.
-6. For å tilordne en gruppe til en servicetid, velger du servicetiden og klikker **Legg til gruppe**. Velg gruppen fra listen og klikk **Lagre**.
+1. Åpne **B1 Admin**, klikk på **seksjonsmenyen** øverst til venstre (seksjonsnavnet med den lille pilen), og velg **Personer**.
+2. I navigasjonslinjen klikker du på **Oppmøte**-fanen. **Oppsett**-fanen er valgt som standard.
+3. Klikk **Administrer campuser** (øverst til høyre i Oppsett-panelet). Dette tar deg til **Innstillinger → Campuser**. Klikk **Legg til campus**, skriv inn navnet på stedet ditt (adresse og tidssone er valgfritt), og klikk **Lagre**.
+4. Gå tilbake til **Personer → Oppmøte → Oppsett**. Campusen din vises nå i oppsettstabellen.
+5. Klikk på **+-knappen i Tjeneste-kolonnen** under campusen din. Skriv inn et tjenestenavn som "Søndagstjeneste" og klikk **Lagre**.
+6. Klikk på **+-knappen i Tid-kolonnen** under tjenesten. Skriv inn en tid som "09:00" og klikk **Lagre**. Gjenta for hver servicetid.
+7. For å koble en gruppe til en servicetid, åpner du gruppen fra **Grupper**-fanen, klikker på **Rediger**-blyanten og bruker **Legg til servicetid** — se neste seksjon.
 
 ### Aktivering av sporing av oppmøte på en gruppe
 

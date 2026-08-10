@@ -6,13 +6,13 @@ title: "B1 Church Checkin Overview"
 
 <div class="article-intro">
 
-B1 Church Checkin is a self-service kiosk app for Android tablets. It lets church members look up their family, assign children to groups or classes, and print name labels and parent pickup slips -- all without needing a volunteer at the desk.
+B1 Church Checkin is a self-service kiosk app for iPads and Android tablets. It lets church members look up their family, assign children to groups or classes, and print name labels and parent pickup slips -- all without needing a volunteer at the desk.
 
 </div>
 
 ## How It Works
 
-Place an Android tablet in your lobby or welcome area. Members walk up, search for their household by phone number or last name, review their family, choose which groups each person should attend, and tap **Check-in**. The app prints name labels and pickup slips automatically, then resets for the next family.
+Place an iPad or Android tablet in your lobby or welcome area. Members walk up, search for their household by phone number or last name, review their family, choose which groups each person should attend, and tap **Check-in**. The app prints name labels and pickup slips automatically, then resets for the next family.
 
 ## Key Features
 
@@ -33,7 +33,7 @@ Place an Android tablet in your lobby or welcome area. Members walk up, search f
 - **[Check-In Workflow](./check-in/)** -- The full check-in flow from selecting a service to printing labels.
 
 :::tip
-B1 Church Checkin works best on a 10-inch Android tablet mounted in landscape orientation where families can easily reach it.
+B1 Church Checkin works best on a 10-inch tablet (iPad or Android) mounted in landscape orientation where families can easily reach it. Get the app from the [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin), or [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/).
 :::
 
 :::info

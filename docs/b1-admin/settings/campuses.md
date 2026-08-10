@@ -19,7 +19,7 @@ If your church meets at more than one location, **Campuses** let you track which
 
 ## Opening Campus Settings
 
-In B1 Admin, go to **Settings** in the left sidebar and select **Campuses** from the Settings navigation. You will see a list of all configured campuses with their name, location, and timezone.
+In B1 Admin, open the **section menu** in the top-left corner (the section name with the small arrow), choose **Settings**, and select **Campuses** from the Settings navigation. You will see a list of all configured campuses with their name, location, and timezone.
 
 ## Adding a Campus
 

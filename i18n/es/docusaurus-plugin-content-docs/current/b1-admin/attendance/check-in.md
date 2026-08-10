@@ -27,6 +27,7 @@ La aplicación B1 Checkin se conecta a la configuración de asistencia de B1 Adm
 
 1. **Configure primero su estructura de asistencia.** En B1 Admin, vaya a **Asistencia > Configuración** y asegúrese de que sus sedes, horarios de servicio y grupos estén en su lugar. La aplicación de registro de entrada depende de esta configuración. Consulte [Configuración de Asistencia](setup.md) para más detalles.
 2. **Instale la aplicación B1 Checkin** en los dispositivos que planea usar. La aplicación está disponible en las siguientes plataformas:
+   - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Tabletas Android/Samsung:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
    - **Tabletas Amazon Fire:** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
 3. **Inicie sesión en la aplicación B1 Checkin** usando las credenciales de la cuenta de su iglesia.

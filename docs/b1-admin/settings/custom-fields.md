@@ -20,7 +20,7 @@ title: "Custom Fields"
 
 ## Opening Custom Fields
 
-In B1 Admin, go to **Settings** in the left sidebar and select the **Custom Fields** card. You can also go straight there at **/settings/custom-fields**. You'll see a list of every field you've defined, showing its **Name** and **Field Type**. If you haven't created any yet, the panel reads *"No custom fields have been added yet."*
+In B1 Admin, open the **section menu** in the top-left corner (the section name with the small arrow), choose **Settings**, and select the **Custom Fields** card. You can also go straight there at **/settings/custom-fields**. You'll see a list of every field you've defined, showing its **Name** and **Field Type**. If you haven't created any yet, the panel reads *"No custom fields have been added yet."*
 
 ## Adding a Field
 
