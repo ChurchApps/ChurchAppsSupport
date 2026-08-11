@@ -6,70 +6,70 @@ title: "प्रारंभिक सेटअप"
 
 <div class="article-intro">
 
-प्रत्येक B1 खाते के साथ एक वेबसाइट तैयार आती है। यह गाइड आपको अपना चर्च डोमेन सेट करने, अपनी साइट की अपीयरेंस कॉन्फ़िगर करने, अपने पहले पृष्ठ बनाने और अपना नेविगेशन व्यवस्थित करने के बारे में बताता है।
+हर B1 account एक website के साथ आता है जो पहले से तैयार है। यह guide आपको अपनी चर्च domain को set up करने, अपनी site के appearance को configure करने, अपने पहले pages बनाने, और अपने navigation को organize करने के through चलाता है।
 
 </div>
 
 <div class="prereqs">
-<h4>शुरू करने से पहले</h4>
+<h4>शुरुआत करने से पहले</h4>
 
-- प्रशासनिक एक्सेस वाला B1.church खाता
-- यदि कस्टम डोमेन का उपयोग कर रहे हैं, तो अपने DNS प्रदाता लॉगिन क्रेडेंशियल तैयार रखें (जैसे, GoDaddy, Cloudflare, या AWS)
-- सर्वोत्तम परिणामों के लिए पारदर्शी पृष्ठभूमि के साथ PNG प्रारूप में अपना चर्च लोगो तैयार करें
+- आपको administrative access के साथ एक B1.church account की आवश्यकता है
+- यदि एक custom domain का उपयोग कर रहे हैं, तो अपने DNS provider login credentials तैयार रखें (उदाहरण के लिए, GoDaddy, Cloudflare, या AWS)
+- अपनी चर्च logo को PNG प्रारूप में तैयार करें transparent background के साथ सर्वोत्तम परिणामों के लिए
 
 </div>
 
-## अपना डोमेन सेट करना
+## अपने Domain को Set Up करना
 
-आपके चर्च को स्वचालित रूप से B1.church पर एक सबडोमेन मिलता है (उदाहरण के लिए, `yourchurch.b1.church`)। आप अपना स्वयं का कस्टम डोमेन भी अपनी B1 साइट की ओर इंगित कर सकते हैं।
+आपकी चर्च को B1.church पर स्वचालित रूप से एक subdomain प्राप्त होता है (उदाहरण के लिए, `yourchurch.b1.church`)। आप अपने B1 site के लिए अपने स्वयं के custom domain को भी point कर सकते हैं।
 
-1. admin.b1.church पर जाकर या अपने प्रोफ़ाइल ड्रॉपडाउन पर क्लिक करके और **Switch App** चुनकर **B1.church Admin** पर जाएं।
-2. बाएं साइडबार में **Dashboard** पर क्लिक करें, फिर ड्रॉपडाउन मेनू से **Settings** चुनें।
-3. अपना सबडोमेन देखने के लिए **Manage** पर क्लिक करें। इसे बिना रिक्त स्थान के कुछ छोटा और पहचानने योग्य सेट करें।
-4. कस्टम डोमेन का उपयोग करने के लिए, अपने DNS प्रदाता (जैसे GoDaddy, Cloudflare, या AWS) में लॉग इन करें और दो रिकॉर्ड जोड़ें:
-   - आपके रूट डोमेन के लिए `3.23.251.61` की ओर इंगित करने वाला एक **A record**
-   - `www` के लिए `proxy.b1.church` की ओर इंगित करने वाला एक **CNAME record**
-5. B1.church Admin पर वापस लौटें, सूची में अपना कस्टम डोमेन जोड़ें, और **Add** फिर **Save** पर क्लिक करें। कुछ ही मिनटों में आपकी साइट आपके कस्टम डोमेन से एक्सेस की जा सकेगी।
+1. **B1.church Admin** पर जाएं admin.b1.church को visit करके या अपने profile dropdown पर क्लिक करके और **Switch App** को चुनकर।
+2. शीर्ष-बाएं कोने में **section menu** खोलें (छोटे तीर के साथ section का नाम) और **Settings** चुनें।
+3. अपने subdomain को view करने के लिए **Manage** पर क्लिक करें। इसे कुछ छोटे और recognizable के लिए सेट करें बिना spaces के।
+4. एक custom domain का उपयोग करने के लिए, अपने DNS provider (जैसे GoDaddy, Cloudflare, या AWS) में लॉगिन करें और दो records जोड़ें:
+   - एक **A record** आपके root domain के लिए `3.23.251.61` को point करते हुए
+   - एक **CNAME record** `www` के लिए `proxy.b1.church` को point करते हुए
+5. B1.church Admin में वापस जाएं, अपने custom domain को list में जोड़ें, और **Add** फिर **Save** पर क्लिक करें। आपकी site आपके custom domain से कुछ मिनटों के अंदर accessible होगी।
 
 :::tip
-यदि आपको Settings विकल्प दिखाई नहीं देता, तो अपने चर्च खाते को सेट करने वाले व्यक्ति से आपको "Edit Church Settings" अनुमति प्रदान करने के लिए कहें। विवरण के लिए [भूमिकाएं और अनुमतियां](../settings/roles-permissions.md) देखें।
+यदि आप Settings विकल्प नहीं देखते हैं, तो जिस व्यक्ति ने आपके चर्च account को set up किया है उससे पूछें कि वह आपको "Edit Church Settings" permission दे। [Roles & Permissions](../settings/roles-permissions.md) के लिए विवरण देखें।
 :::
 
 ## अपना पहला पृष्ठ बनाना
 
-1. B1 Admin में, बाएं मेनू में **Website** पर क्लिक करके Website Pages दृश्य खोलें।
-2. ऊपरी दाएं कोने में **Add Page** पर क्लिक करें।
-3. पृष्ठ प्रकार के रूप में **Blank** चुनें और इसका नाम "Home" रखें।
-4. **Page Settings** पर क्लिक करें और अपने होम पृष्ठ के लिए URL पथ `/` (बिना टेक्स्ट के एक फ़ॉरवर्ड स्लैश) पर सेट करें। अन्य पृष्ठ `/page-name` का उपयोग करते हैं।
-5. निर्माण शुरू करने के लिए **Edit Content** पर क्लिक करें। प्रत्येक पृष्ठ एक **Section** से शुरू होना चाहिए -- यह अन्य सभी तत्वों के लिए कंटेनर है।
-6. सेक्शन जोड़ने के बाद, टेक्स्ट, छवियां, वीडियो, कार्ड, फ़ॉर्म, और अधिक को अपने सेक्शन में ड्रैग करके सम्मिलित करने के लिए फिर से **Add Content** पर क्लिक करें।
+1. B1 Admin में, left menu में **Website** पर क्लिक करें Website Pages view को खोलने के लिए।
+2. top right corner में **Add Page** पर क्लिक करें।
+3. पृष्ठ type के रूप में **Blank** चुनें और इसे "Home" नाम दें।
+4. **Page Settings** पर क्लिक करें और URL path को `/` के लिए सेट करें (कोई text के साथ एक forward slash) आपके home page के लिए। अन्य pages `/page-name` का उपयोग करते हैं।
+5. **Edit Content** पर क्लिक करें building शुरू करने के लिए। हर पृष्ठ एक **Section** से शुरू होना चाहिए -- यह सभी अन्य elements के लिए container है।
+6. एक section जोड़ने के बाद, सभी अन्य elements को drag करके insert करने के लिए **Add Content** फिर से पर क्लिक करें text, images, videos, cards, forms, और अधिक को।
 
 :::info
-पृष्ठों, नेविगेशन और पृष्ठ प्रकारों के साथ काम करने के विस्तृत निर्देशों के लिए, [पृष्ठ प्रबंधन](managing-pages) देखें।
+Pages और navigation के साथ काम करने के विस्तृत निर्देशों के लिए, [Managing Pages](managing-pages) देखें। Visual editor के लिए एक पूर्ण guide के लिए, [Using the Page Editor](page-editor) देखें।
 :::
 
-## साइट अपीयरेंस कॉन्फ़िगर करना
+## Site Appearance को Configure करना
 
-1. Website Pages दृश्य से, शीर्ष पर **Appearance** टैब पर क्लिक करें।
-2. primary, secondary और accent टोन के लिए अपने ब्रांड रंग सेट करने के लिए **Color Palette** का उपयोग करें।
-3. **Typography Settings** के तहत, फ़ॉन्ट ब्राउज़र से अपने शीर्षक और मुख्य फ़ॉन्ट चुनें।
-4. Style Settings में **Logo** के तहत अपना चर्च लोगो अपलोड करें। हल्के पृष्ठभूमि और गहरे पृष्ठभूमि दोनों का संस्करण प्रदान करें।
-5. अपने चर्च की संपर्क जानकारी और लिंक के साथ अपना **Site Footer** कॉन्फ़िगर करें।
+1. Website Pages view से, top पर **Appearance** tab पर क्लिक करें।
+2. अपने brand colors set करने के लिए **Color Palette** का उपयोग करें primary, secondary, और accent tones के लिए।
+3. **Typography Settings** के तहत, font browser से अपने heading और body fonts चुनें।
+4. **Logo** के तहत अपनी चर्च logo को upload करें Style Settings में। Light background और dark background दोनों versions provide करें।
+5. अपनी **Site Footer** को अपनी चर्च की contact information और links के साथ configure करें।
 
 :::info
-Appearance में आपके द्वारा किए गए परिवर्तन आपकी पूरी वेबसाइट पर लागू होते हैं। प्रत्येक सेटिंग के विस्तृत निर्देशों के लिए [अपीयरेंस](appearance) पृष्ठ देखें।
+Appearance में जो परिवर्तन आप करते हैं वे आपकी पूरी वेबसाइट पर लागू होते हैं। प्रत्येक setting पर विस्तृत निर्देशों के लिए [Appearance](appearance) page देखें।
 :::
 
-## नेविगेशन सेट करना
+## Navigation को Set Up करना
 
-आपके नेविगेशन लिंक Website Pages दृश्य के बाएं साइडबार में दिखाई देते हैं। उन्हें व्यवस्थित करने के लिए:
+आपके navigation links Website Pages view में दिखाई देते हैं। उन्हें organize करने के लिए:
 
-1. एक नया नेविगेशन लिंक बनाने के लिए **Add** पर क्लिक करें और इसे अपने किसी पृष्ठ पर इंगित करें।
-2. लिंक को पुनर्व्यवस्थित करने या उन्हें पैरेंट आइटम के नीचे नेस्ट करने के लिए ड्रैग और ड्रॉप करें।
-3. नेविगेशन सही दिखता है इसकी पुष्टि करने के लिए अपनी साइट का पूर्वावलोकन करें।
+1. एक नया navigation link बनाने के लिए **Add** पर क्लिक करें और इसे अपने एक pages के लिए point करें।
+2. उन्हें reorder करने के लिए links को drag और drop करें या उन्हें parent items के नीचे nest करें।
+3. Navigation सही लगता है यह confirm करने के लिए अपनी site का preview करें।
 
 ## अगले कदम
 
-- [पृष्ठ प्रबंधन](managing-pages) -- पृष्ठों और नेविगेशन के साथ विस्तार से काम करना सीखें
-- [अपीयरेंस](appearance) -- अपनी साइट के रंग, फ़ॉन्ट और लेआउट को फ़ाइन-ट्यून करें
-- [फ़ाइलें](files) -- अपनी वेबसाइट के लिए छवियां और दस्तावेज़ अपलोड करें
+- [Managing Pages](managing-pages) -- विस्तार से pages और navigation के साथ कैसे काम करें सीखें
+- [Appearance](appearance) -- अपनी site के colors, fonts, और layout को fine-tune करें
+- [Files](files) -- अपनी वेबसाइट के लिए images और documents को upload करें

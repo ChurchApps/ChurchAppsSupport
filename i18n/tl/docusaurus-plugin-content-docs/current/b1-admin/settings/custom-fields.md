@@ -1,95 +1,95 @@
 ---
-title: "Custom Fields"
+title: "Mga Customized na Field"
 ---
 
-# Custom Fields
+# Mga Customized na Field
 
 <div class="article-intro">
 
-Ang **Custom Fields** ay nagbibigay-daan sa iyong i-track ang sarili mong impormasyon sa bawat person record -- mga bagay na walang built-in na field ang B1, tulad ng petsa ng pag-expire ng background check, sukat ng T-shirt, o status ng baptism class. Idi-define mo ang isang field nang minsan sa Settings, pagkatapos ay punan ang isang value sa profile ng bawat tao at maghanap o gumawa ng listahan batay dito. Pinapalitan nito ang mas lumang paraan ng paggawa ng People form para lamang mag-imbak ng isang piraso ng custom na data.
+Ang **Mga Customized na Field** ay nagbibigay-daan sa iyo na subaybayan ang iyong sariling impormasyon sa bawat record ng tao -- mga bagay na B1 ay walang built-in field para, tulad ng petsa ng pag-expire ng background check, isang sukat ng T-shirt, o isang katayuan ng klase ng baptism. Tinukoy mo ang field minsan sa Mga Ayos, pagkatapos ay puno ng halaga sa profile ng bawat tao at maghanap o bumuo ng mga listahan dito. Ito ay gumagana sa lugar ng mas lumang solusyon ng paglikha ng isang Mga Tao form na lamang upang mag-imbak ng isang piraso ng customized na data.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Kailangan mo ng **People** edit permission para maka-define ng mga field at makapagpuno ng mga value, at access sa lugar ng **Settings**. Sinuman na may People view permission ay makakakita ng mga value. Tingnan ang [Roles & Permissions](./roles-permissions.md).
-- Magpasya kung ano ang gusto mong i-track at kung aling uri ang pinakabagay (text, numero, petsa, sagot na oo/hindi, o isang pick-list) bago ka magsimula.
+- Kailangan mo ng **Mga Tao** na may pahintulot sa pag-edit upang tukuyin ang mga field at punan ng mga halaga, at access sa lugar ng **Mga Ayos**. Sinuman na may pahintulot sa pagtingin ng Mga Tao ay makikita ang mga halaga. Tingnan ang [Mga Rol at Pahintulot](./roles-permissions.md).
+- Magdesisyon kung ano ang gusto mong subaybayan at aling uri ang umaangkop na mabuti (teksto, isang numero, isang petsa, isang oo/hindi na sagot, o isang listang mapipili) bago ka magsimula.
 
 </div>
 
-## Pagbubukas ng Custom Fields
+## Pagbubukas ng Mga Customized na Field
 
-Sa B1 Admin, pumunta sa **Settings** sa kaliwang sidebar at piliin ang **Custom Fields** card. Maaari ka ring diretsong pumunta doon sa **/settings/custom-fields**. Makikita mo ang isang listahan ng bawat field na na-define mo, na ipinapakita ang **Name** at **Field Type** nito. Kung wala ka pang nagawa, babasahin ng panel na *"No custom fields have been added yet."*
+Sa B1 Admin, buksan ang **menu ng seksyon** sa sulok sa itaas-kaliwa (ang pangalan ng seksyon na may maliit na arrow), pumili ng **Mga Ayos**, at piliin ang card ng **Mga Customized na Field**. Maaari mo ring direktang pumunta doon sa **/settings/custom-fields**. Makikita mo ang isang listahan ng bawat field na iyong tinukoy, na nagpapakita ng kanyang **Pangalan** at **Uri ng Field**. Kung hindi ka pa nakagawa ng anumang, ang panel ay nagbabasa ng *"Walang customized fields na naidagdag pa."*
 
 ## Pagdaragdag ng Field
 
 1. I-click ang **Add Field**.
-2. Sa editor na bubukas sa kanan, ilagay ang isang **Name** -- ito ang label na makikita ng staff sa mga person profile at sa paghahanap (halimbawa, *Background check expires*).
-3. Piliin ang isang **Field Type**:
-   - **Textbox** — malayang maikling text.
-   - **Whole Number** — mga numero na walang decimal (halimbawa, isang bilang).
-   - **Decimal** — mga numero na maaaring may decimal.
-   - **Date** — isang petsa sa kalendaryo.
-   - **Yes/No** — isang simpleng sagot na oo o hindi.
-   - **Multiple Choice** — isang pick-list. Kapag pinili mo ang uring ito, lalabas ang isang **choices editor** para makapagdagdag ka ng bawat opsyon na mapipili ng mga tao.
-4. I-click ang **Save**.
+2. Sa editor na bumubukas sa kanan, ipasok ang **Pangalan** -- ito ang label na makikita ng staff sa mga profile ng tao at sa paghahanap (halimbawa, *Pag-expire ng background check*).
+3. Pumili ng **Uri ng Field**:
+   - **Textbox** -- libreng-tuluran na maikling teksto.
+   - **Buong Numero** -- mga numero nang walang decimal (halimbawa, isang numero).
+   - **Decimal** -- mga numero na maaaring may kasamang decimal.
+   - **Petsa** -- isang petsa ng kalendaryo.
+   - **Oo/Hindi** -- isang simpleng oo-o-hindi na sagot.
+   - **Maraming Pagpipilian** -- isang listang mapipili. Kapag pumili ka ng uri na ito, lumilitaw ang isang **editor ng mga pagpipilian** upang maaari kang magdagdag ng bawat opsyon na maaaring piliin ng mga tao.
+4. I-click ang **Magsave**.
 
-Available na ngayon ang field sa profile ng bawat tao.
+Ang field ay available na ngayon sa profile ng bawat tao.
 
 :::info
-Ang mga field type ay parehong set na ginagamit para sa [mga tanong sa form](../forms/creating-forms.md), kaya't magkakatugma ang pag-uugali ng mga value sa buong B1.
+Ang mga uri ng field ay pareho ng set na ginagamit para sa [mga tanong sa form](../forms/creating-forms.md), kaya ang mga halaga ay kumikilos nang pare-pareho sa buong B1.
 :::
 
 ## Pag-edit ng Field
 
-I-click ang alinmang row ng field sa listahan para buksan ito ulit sa editor. Baguhin ang pangalan, uri, o mga choice at i-click ang **Save**.
+I-click ang anumang hanay ng field sa listahan upang muling buksan ito sa editor. Baguhin ang pangalan, uri, o mga pagpipilian at i-click ang **Magsave**.
 
 :::warning
-Ang pagbabago ng **Field Type** ng isang field na may mga value na sa kasalukuyan (halimbawa, mula sa Textbox tungo sa Date) ay maaaring iwan ang mga naunang nailagay na value sa format na hindi na tugma sa bagong uri. Mag-ingat sa pagpapalit ng uri kapag nagsimula nang punan ng staff ang field.
+Ang pagbabago ng **Uri ng Field** ng field na mayroon na ng mga halaga (halimbawa, mula Textbox hanggang Petsa) ay maaaring maiwanan ang dati nang ipinasok na mga halaga sa format na hindi na tumutugma sa bagong uri. Baguhin ang mga uri nang mabuti kapag nagsimula na ang staff na pumupon sa field.
 :::
 
-## Pagbura ng Field
+## Pagtanggal ng Field
 
-Buksan ang isang field para i-edit at i-click ang **Delete**. Hihilingin sa iyo na kumpirmahin: *"Are you sure you wish to delete this custom field? Its stored values will also be removed."* Ang pagbura ng isang field ay permanenteng nag-aalis nito **at ng bawat value na naka-imbak dito** sa lahat ng tao -- hindi ito maibabalik.
+Buksan ang field para sa pag-edit at i-click ang **Delete**. Tatanungin ka na kumpirmahin: *"Sigurado ka ba na nais mong tanggalin ang customized field na ito? Ang mga nakaimbak na halaga nito ay aalis na rin."* Ang pagtanggal ng field ay permanenteng tinatanggal ito **at bawat halaga na nakaimbak nito** sa lahat ng mga tao -- hindi ito maaaring bawiin.
 
-## Pagpuno ng mga Value sa Isang Tao
+## Pagpuno ng Mga Halaga sa isang Tao
 
-Kapag mayroon nang kahit isang custom field, ang mga value nito ay nasa tabi mismo ng mga built-in na detalye sa record ng bawat tao -- makikita mo ang mga ito sa **Personal Details** at ie-edit sa parehong form na ginagamit mo para sa iba pang impormasyon ng tao. Walang karagdagang lalabas hangga't hindi mo pa na-define ang iyong unang field.
+Kapag umiiral na ang hindi bababa sa isang customized field, ang mga halaga nito ay buhay na magkasama ng built-in na detalye sa bawat record ng tao -- tinitingnan mo ito sa **Mga Detalye ng Persen** at ine-edit ito sa parehong form na ginagamit mo para sa natitirang impormasyon ng tao. Walang dagdag na lilitaw hanggang sa iyong tinukoy ng iyong unang field.
 
-1. Buksan ang record ng isang tao sa **People**.
-2. Sa seksyong **Personal Details**, i-click ang button na **Edit** (pencil).
-3. Mag-scroll pababa sa lugar ng **Custom Fields** sa ilalim ng edit form at punan ang isang value para sa bawat field. Ang bawat field ay nagpapakita ng input na tumutugma sa uri nito -- isang date picker para sa mga Date field, isang oo/hindi dropdown para sa mga Yes/No field, isang pick-list para sa Multiple Choice, at iba pa.
-4. I-click ang **Save**. Ang iyong mga custom-field value ay naka-save kasama ng ibang detalye ng tao.
+1. Buksan ang record ng isang tao sa **Mga Tao**.
+2. Sa seksyon ng **Mga Detalye ng Persen**, i-click ang pindutan ng **Edit** (lapis).
+3. Mag-scroll sa lugar ng **Mga Customized na Field** sa ibaba ng form ng pag-edit at punan ng halaga para sa bawat field. Bawat field ay nagpapakita ng input na tumutugma sa kanyang uri -- isang date picker para sa Petsa fields, isang oo/hindi dropdown para sa Oo/Hindi fields, isang listang mapipili para sa Maraming Pagpipilian, at iba pa.
+4. I-click ang **Magsave**. Ang mga customized na halaga ng field ay sinasave na magkasama sa natitirang detalye ng tao.
 
-Balik sa profile, anumang field na may value ay lumalabas na ngayon sa seksyong **Personal Details** (ang mga sagot na Yes/No ay babasahin bilang *Yes* o *No*, at ang Multiple Choice ay ipapakita ang label ng opsyon). Ang mga field na iniwang blangko ay basta na lang itinatago. Para tanggalin ang isang value, i-edit ang tao, i-clear ang field, at i-save -- isang blangkong value ay binubura mula sa record sa halip na maimbak bilang blangko.
+Bumalik sa profile, ang anumang field na may halaga ay nagpapakita na sa seksyon ng **Mga Detalye ng Persen** (Ang mga sagot ng Oo/Hindi ay nagbabasa bilang *Oo* o *Hindi*, at Maraming Pagpipilian ay nagpapakita ng label ng opsyon). Ang mga field na naiwan na blangko ay simpleng nakatagong. Upang alisin ang halaga, i-edit ang tao, i-clear ang field, at magsave -- isang walang laman na halaga ay tinatanggal mula sa record sa halip na itala bilang blank.
 
 :::tip
-Ang klasikong use case ay kaligtasan ng volunteer: gumawa ng **Date** field na tinatawag na *Background check expires*, itala ang petsa ng bawat volunteer, pagkatapos ay gumawa ng [Saved List](../people/lists.md) na nagbabandila sa sinumang lumagpas na ang petsa.
+Ang klasikong use case ay kaligtasan ng volunteer: lumikha ng **Petsa** field na tinatawag *Pag-expire ng background check*, itala ang petsa ng bawat volunteer, pagkatapos ay bumuo ng [Saved List](../people/lists.md) na nag-flag ng sinumang ang petsa ay lumampas na.
 :::
 
-## Paghahanap at Paggawa ng Listahan Batay sa Custom Fields
+## Paghahanap at Pagbuo ng Mga Listahan sa Mga Customized na Field
 
-Ganap na masasaliksik ang mga custom field:
+Ang mga customized field ay lubos na nahanap:
 
-1. Sa pahinang **People**, buksan ang [Advanced Search](../people/searching-people.md).
-2. I-expand ang kategoryang **Custom Fields**.
-3. Markahan ang field na gusto mong i-filter, pumili ng operator, at maglagay ng value. Ang mga inaalok na operator ay tumutugma sa uri ng field:
-   - **Textbox** — naglalaman, katumbas, nagsisimula sa, nagtatapos sa.
-   - **Whole Number / Decimal** — katumbas, mas malaki kaysa, mas malaki kaysa o katumbas, mas maliit kaysa, mas maliit kaysa o katumbas.
-   - **Date** — katumbas, pagkatapos (mas malaki kaysa), bago (mas maliit kaysa).
-   - **Yes/No** — katumbas ng Yes o No.
-   - **Multiple Choice** — katumbas o naglalaman ng isa sa mga choice.
+1. Sa pahina ng **Mga Tao**, buksan ang [Pag-advanced Search](../people/searching-people.md).
+2. Palawakin ang kategorya ng **Mga Customized na Field**.
+3. Suriin ang field na gusto mong salahin, pumili ng operator, at ipasok ang halaga. Ang mga operator na inaalok ay tumutugma sa uri ng field:
+   - **Textbox** -- naglalaman, katumbas, nagsisimula sa, nagtatapos sa.
+   - **Buong Numero / Decimal** -- katumbas, mas malaki kaysa, mas malaki o katumbas, mas kaunti kaysa, mas kaunti o katumbas.
+   - **Petsa** -- katumbas, pagkatapos (mas malaki kaysa), bago (mas kaunti kaysa).
+   - **Oo/Hindi** -- katumbas sa Oo o Hindi.
+   - **Maraming Pagpipilian** -- katumbas o naglalaman ng isa sa mga pagpipilian.
 
-I-save ang anumang paghahanap sa custom field bilang isang [List](../people/lists.md). Ang mga listahan ay live na query, kaya't ang listahang ginawa batay sa *Background check expires is before today* ay muling che-check ang bawat tao tuwing bubuksan mo ito -- walang manu-manong pag-aalaga.
+I-save ang anumang customized-field search bilang isang [List](../people/lists.md). Ang mga listahan ay live queries, kaya ang isang listang itinayo sa *Pag-expire ng background check ay bago ang ngayon* ay muling sinusuri ang bawat tao bawat pagbubukas mo ito -- walang manu-manong pagpapanatili.
 
-## Ano ang Mangyayari sa Merge
+## Ano ang Nangyayari sa Pagsasama
 
-Kapag [pinagsama mo ang dalawang person record](../people/adding-people.md), awtomatikong lumilipat ang mga custom-field value. Ang taong pananatilihin mo ay hawak ang sarili nitong mga value; para sa anumang field na tanging ang tinanggal na tao lamang ang may value, kokopyahin ang value na iyon para walang mawala.
+Kapag [pinagsama mo ang dalawang record ng tao](../people/adding-people.md), ang mga customized na halaga ng field ay awtomatikong dadalhin. Ang taong iyong tinatanggap ay nanatiling may kanilang sariling mga halaga; para sa anumang field kung saan mayroon lamang ang tinatanggalang tao ng halaga, ang halaga ay kinokopya upang walang mawawala.
 
-## Kaugnay na mga Artikulo
+## Mga Kaugnay na Artikulo
 
-- [Searching People](../people/searching-people.md) — advanced search, kasama ang kategoryang Custom Fields
-- [Saved Lists](../people/lists.md) — i-save ang isang paghahanap sa custom field at patakbuhin itong live
-- [Roles & Permissions](./roles-permissions.md) — sino ang maaaring mag-define ng mga field at mag-edit ng mga value
-- [Creating Forms](../forms/creating-forms.md) — para sa multi-question na koleksyon ng data kung saan mas angkop ang buong form kaysa sa iisang field
+- [Paghahanap ng Mga Tao](../people/searching-people.md) -- advanced search, kasama ang kategorya ng Mga Customized na Field
+- [Mga Nakaligtas na Listahan](../people/lists.md) -- magsave ng customized-field search at muling tatakbo ito live
+- [Mga Rol at Pahintulot](./roles-permissions.md) -- sino ang maaaring tukuyin ang mga field at i-edit ang mga halaga
+- [Paglikha ng Mga Form](../forms/creating-forms.md) -- para sa multi-question data collection kung saan isang buong form ay umaangkop na higit sa iisang field

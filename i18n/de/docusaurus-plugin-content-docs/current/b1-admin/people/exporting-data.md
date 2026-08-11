@@ -6,53 +6,53 @@ title: "Daten exportieren"
 
 <div class="article-intro">
 
-B1 Admin ermöglicht es Ihnen, Ihre Gemeindedaten zu exportieren, damit Sie sie in Tabellenkalkulationen verwenden, mit Ihrem Team teilen oder eine Sicherungskopie erstellen können. Ob Sie eine schnelle Liste von Namen und E-Mails oder einen vollständigen Datenbankexport benötigen -- es gibt Optionen für Ihre Bedürfnisse.
+B1 Admin ermöglicht es Ihnen, Ihre Kirchendaten zu exportieren, sodass Sie sie in Tabellenkalkulation verwenden, mit Ihrem Team teilen oder sichern können. Ob Sie eine schnelle Liste von Namen und E-Mails oder einen vollständigen Datenbank-Export benötigen, es gibt Optionen für Ihre Anforderungen.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Voraussetzungen</h4>
 
-- Sie benötigen ein aktives B1 Admin-Konto mit Berechtigung zur Ansicht der Daten, die Sie exportieren möchten. Siehe [Rollen & Berechtigungen](roles-permissions.md), wenn Sie sich über Ihre Zugangsstufe unsicher sind.
-- Für einen vollständigen Datenbankexport benötigen Sie Zugang zum Bereich **Einstellungen**.
+- Sie benötigen ein aktives B1 Admin-Konto mit Berechtigung, die Daten anzuzeigen, die Sie exportieren möchten. Siehe [Rollen & Berechtigungen](roles-permissions.md), wenn Sie sich über Ihre Zugriffsstufe unsicher sind.
+- Für einen vollständigen Datenbankexport benötigen Sie Zugriff auf den **Einstellungen**-Bereich.
 
 </div>
 
-## Export von der Personenseite
+## Exportieren von der Seite "Personen"
 
-Der schnellste Weg, Ihr Verzeichnis zu exportieren, ist direkt von der Seite **Personen**:
+Die schnellste Weise zum Exportieren Ihres Verzeichnisses ist direkt von der **Personen**-Seite:
 
-1. Navigieren Sie in der linken Seitenleiste zu **Personen**.
-2. Verwenden Sie die Suchleiste oder Filter, um die gewünschten Ergebnisse einzugrenzen (oder lassen Sie sie ungefiltert, um alle zu exportieren). Siehe [Personen suchen](searching-people.md) für Tipps zum Filtern.
-3. Verwenden Sie die **Spaltenauswahl**, um zu wählen, welche Spalten im Export enthalten sein sollen (zum Beispiel Name, E-Mail, Telefon, Adresse).
+1. Öffnen Sie das **Bereichsmenü** in der oberen linken Ecke und wählen Sie **Personen**.
+2. Verwenden Sie die Suchleiste oder Filter, um die Ergebnisse einzugrenzen, die Sie exportieren möchten (oder lassen Sie sie ungefiltert, um alle zu exportieren). Siehe [Personen suchen](searching-people.md) für Tipps zum Filtern.
+3. Verwenden Sie den **Spalten-Selektor**, um zu wählen, welche Spalten Sie in den Export einbeziehen möchten (z.B. Name, E-Mail, Telefon, Adresse).
 4. Klicken Sie auf die Schaltfläche **Exportieren**.
-5. Eine CSV-Datei wird auf Ihren Computer heruntergeladen, mit den aktuell in der Tabelle angezeigten Daten.
+5. Eine CSV-Datei wird auf Ihren Computer mit den Daten heruntergeladen, die derzeit in der Tabelle angezeigt werden.
 
 :::tip
-Passen Sie Ihre Spalten vor dem Export an. Die CSV-Datei enthält genau die Spalten, die Sie sichtbar haben, sodass Sie den Export an Ihre Bedürfnisse anpassen können, ohne die Datei nachbearbeiten zu müssen.
+Passen Sie Ihre Spalten vor dem Exportieren an. Die CSV-Datei wird genau die Spalten enthalten, die Sie sichtbar haben, sodass Sie den Export an Ihre Anforderungen anpassen können, ohne die Datei danach zu bearbeiten.
 :::
 
-## Vollständiger Datenexport aus den Einstellungen
+## Vollständiger Datenexport von Einstellungen
 
-Für einen vollständigen Export aller Ihrer B1-Daten (nicht nur Personen) verwenden Sie das Export-Werkzeug in den Einstellungen:
+Für einen umfassenden Export aller Ihrer B1-Daten (nicht nur Personen) verwenden Sie das Exporttool in Einstellungen:
 
-1. Klicken Sie in der linken Seitenleiste auf **Einstellungen**.
-2. Klicken Sie in der oberen Navigation auf **Import/Export**.
-3. Wählen Sie **B1 Database** aus dem Dropdown-Menü **Datenquelle**.
-4. Überprüfen Sie die Datenvorschau und klicken Sie auf **Weiter zum Ziel**.
-5. Wählen Sie **B1 Export Zip** als Exportziel.
-6. Verfolgen Sie den Exportfortschritt, bis alle Elemente grüne Häkchen zeigen.
-7. Die Exportdatei wird automatisch heruntergeladen. Suchen Sie die `B1Export`-Datei in Ihrem Download-Ordner.
-8. Entpacken Sie die Datei, um auf einzelne CSV-Dateien (wie `people.csv`) zuzugreifen, die Sie in Excel, Google Sheets oder Numbers öffnen können.
+1. Öffnen Sie das **Bereichsmenü** in der oberen linken Ecke und wählen Sie **Einstellungen**.
+2. Klicken Sie auf **Importieren/Exportieren** in der oberen Navigation.
+3. Wählen Sie **B1 Datenbank** aus dem Dropdown **Datenquelle** aus.
+4. Überprüfen Sie die Datenvorschau und klicken Sie auf **Weitergabe zum Ziel**.
+5. Wählen Sie **B1 Export Zip** als Exportziel aus.
+6. Überwachen Sie den Exportfortschritt, bis alle Elemente grüne Haken anzeigen.
+7. Die Exportdatei wird automatisch heruntergeladen. Suchen Sie nach der Datei `B1Export` in Ihrem Downloads-Ordner.
+8. Entpacken Sie die Datei, um auf einzelne CSV-Dateien zuzugreifen (wie `people.csv`), die Sie in Excel, Google Sheets oder Numbers öffnen können.
 
 :::info
-Vollständige Datenexporte umfassen Personen, Gruppen, Spenden, Anwesenheit und mehr -- alles in Ihrer B1-Datenbank. Dies ist auch eine gute Möglichkeit, regelmäßig eine Sicherungskopie Ihrer Gemeindeaufzeichnungen zu erstellen.
+Vollständige Datenexporte enthalten Personen, Gruppen, Spenden, Anwesenheit und mehr -- alles in Ihrer B1-Datenbank. Dies ist auch eine großartige Möglichkeit, eine regelmäßige Sicherung Ihrer Kirchendatensätze zu erstellen.
 :::
 
-## Gruppendaten exportieren
+## Exportieren von Gruppendaten
 
-Sie können auch Mitgliederlisten für einzelne Gruppen exportieren. Öffnen Sie auf der Seite **Gruppen** eine Gruppe und klicken Sie auf das **Download-Symbol**, um die Mitgliederliste dieser Gruppe zu exportieren. Siehe [Gruppenmitglieder](../groups/group-members.md) für weitere Details.
+Sie können auch Mitgliederlisten für einzelne Gruppen exportieren. Öffnen Sie eine Gruppe auf der **Gruppen**-Seite und klicken Sie auf das **Download-Symbol**, um die Mitgliederliste dieser Gruppe zu exportieren. Siehe [Gruppenmitglieder](../groups/group-members.md) für weitere Details.
 
 :::info
-Exportierte CSV-Dateien funktionieren mit allen gängigen Tabellenkalkulationsanwendungen, einschließlich Microsoft Excel, Google Sheets und Apple Numbers.
+Exportierte CSV-Dateien funktionieren mit allen großen Tabellenkalkulationsanwendungen einschließlich Microsoft Excel, Google Sheets und Apple Numbers.
 :::

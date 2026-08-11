@@ -1,53 +1,53 @@
 ---
-title: "Kalusugan ng Grupo"
+title: "Groups Health"
 ---
 
-# Kalusugan ng Grupo
+# Groups Health
 
 <div class="article-intro">
 
-Ang Groups Health dashboard ay nagbibigay sa iyo ng bird's-eye view kung paano ang lahat ng iyong mga grupo ay gumagana — membership trends, attendance averages, at growth o attrition sa nakaraang 90 days — lahat sa isang solong sortable table.
+Ang Groups Health dashboard ay nagbibigay sa iyo ng bird's-eye view kung paano gumagana ang lahat ng iyong mga grupo — membership trend, average attendance, at growth o attrition sa nakaraang 90 araw — lahat sa iisang sortable table.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Magsimula</h4>
 
-- Kailangan mo ng hindi bababa sa ilang grupo na may mga miyembro upang makita ang kahulugang data. Tingnan ang [Paglikha ng Mga Grupo](creating-groups).
-- Ang attendance data ay kinukuha mula sa naka-record na sessions. Tingnan ang [Attendance](../attendance/) section.
+- Kailangan mo ng hindi bababa sa ilang grupo na may miyembro upang makita ang meaningful data. Tingnan ang [Creating Groups](creating-groups).
+- Ang attendance data ay hinihila mula sa recorded session. Tingnan ang [Attendance](../attendance/) section.
 
 </div>
 
 ## Pagbubukas ng Groups Health
 
-Sa B1 Admin, pumunta sa **Groups** sa kaliwang sidebar at piliin ang **Health**. Ang dashboard ay nag-load ng isang table na may isang row sa bawat grupo.
+Sa B1 Admin, buksan ang **section menu** sa top-left corner at piliin ang **People**, pagkatapos i-click ang **Groups** tab sa navigation bar at piliin ang **Health**. Ang dashboard ay nag-load ng table na may isang row bawat grupo.
 
-## Mga Haligi
+## Column
 
-| Haligi | Kung ano ang ipinapakita nito |
+| Column | Ano ang ipinakikita nito |
 |--------|--------------|
-| **Name** | Ang pangalan ng grupo, linked sa grupo detail page |
-| **Category** | Ang kategorya ng grupo |
-| **Members** | Bilang ng kasalukuyang active member |
-| **Joined (90d)** | Mga miyembro na sumali sa nakaraang 90 days |
-| **Left (90d)** | Mga miyembro na umalis sa nakaraang 90 days |
-| **Churn (90d)** | Net churn rate bilang isang percentage sa 90 days |
-| **Avg Attendance** | Average headcount sa bawat attendance session |
+| **Name** | Ang pangalan ng grupo, naka-link sa group detail page |
+| **Category** | Ang kategori ng grupo |
+| **Members** | Kasalukuyang active member count |
+| **Joined (90d)** | Miyembro na sumali sa nakaraang 90 araw |
+| **Left (90d)** | Miyembro na umalis sa nakaraang 90 araw |
+| **Churn (90d)** | Net churn rate bilang porsyento sa loob ng 90 araw |
+| **Avg Attendance** | Average headcount bawat attendance session |
 
-I-click anumang column header upang i-sort ang table ayon sa haligi na iyon. I-click muli upang baligtarin ang direksyon ng sort.
+I-click ang anumang column header upang i-sort ang table sa pamamagitan ng column na iyon. I-click muli upang i-reverse ang sort direction.
 
 ## Paggamit ng Health Data
 
-- **Mataas na churn + mababang joins** — isang grupo na nag-shrink at hindi nagpapalit ng mga nawalan ng miyembro. Karapat-dapat ng usapan sa group leader.
-- **Mataas na joins + mababang attendance** — ang mga tao ay nag-sign up ngunit hindi dumadalo. Isaalang-alang ang engagement follow-up.
-- **Mataas na average attendance** — isang malusog, aktibong grupo. Potensyal na modelo para sa iba pang mga grupo.
+- **High churn + low joins** — isang grupo na nagsishrink at hindi pinapalitan ang nawala na miyembro. Karapat-dapat ng usapan kasama ang group leader.
+- **High joins + low attendance** — ang mga tao ay nag-sign up ngunit hindi dumadalo. Isaalang-alang ang engagement follow-up.
+- **High average attendance** — isang healthy, aktibong grupo. Potensyal na modelo para sa ibang grupo.
 
 :::tip
-Ang pag-click sa pangalan ng grupo ay direktang dadalhin ka sa detalye ng grupo kung saan maaari mong suriin ang indibidwal na miyembro, mga tala ng attendance, at mga kaganapang calendar.
+Ang pag-click sa pangalan ng grupo ay direktang dadalhin ka sa detail page ng grupo kung saan maaari mong suriin ang individual na miyembro, attendance record, at calendar event.
 :::
 
 ## Mga Kaugnay na Artikulo
 
-- [Paglikha ng Mga Grupo](creating-groups) — mag-set up ng mga grupo
-- [Mga Miyembro ng Grupo](group-members) — pamahalaan ang pagiging miyembro sa grupo
-- [Pagsubaybay sa Attendance](../attendance/tracking-attendance) — magrekord ng mga sesyon ng attendance na nagpapasibol sa dashboard na ito
+- [Creating Groups](creating-groups) — i-set up ang mga grupo
+- [Group Members](group-members) — pamahalaan ang group membership
+- [Tracking Attendance](../attendance/tracking-attendance) — mag-record ng attendance session na nagpapakain sa dashboard na ito

@@ -1,56 +1,56 @@
 ---
-title: "Modelos de E-mail"
+title: "Modelos de Email"
 ---
 
-# Modelos de E-mail
+# Modelos de Email
 
 <div class="article-intro">
 
-Os Modelos de E-mail permitem que você salve conteúdo de e-mail reutilizável -- uma mensagem de boas-vindas, um lembrete de evento, um agradecimento por doação -- para que você (ou um [fluxo de trabalho](../serving/workflows.md)) possa enviá-lo com um clique, em vez de escrevê-lo do zero toda vez.
+Modelos de Email permitem que você salve conteúdo de email reutilizável -- uma mensagem de boas-vindas, um lembrete de evento, um agradecimento de doação -- para que você (ou um [fluxo de trabalho](../serving/workflows.md)) possa enviá-lo em um clique em vez de escrevê-lo do zero toda vez.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Você precisa de acesso à área Settings no B1 Admin.
+- Você precisa ter acesso à área de Configurações em B1 Admin.
 
 </div>
 
-## Acessando os Modelos de E-mail
+## Acessando Modelos de Email
 
-1. Navegue até **Settings** na barra lateral esquerda.
-2. Clique em **Email Templates**.
-3. Você verá uma lista dos modelos existentes com seu assunto, categoria e data da última modificação.
+1. Em B1 Admin, abra o **menu de seção** no canto superior esquerdo (o nome da seção com a pequena seta) e escolha **Configurações**.
+2. Clique em **Modelos de Email**.
+3. Você verá uma lista de modelos existentes com seu assunto, categoria e data da última modificação.
 
 ## Criando um Modelo
 
-1. Clique em **New Template**.
-2. Digite um **Template Name** para identificá-lo na lista e escolha uma **Category** (General, Events, Groups, Giving ou Welcome) para ajudar a organizar seus modelos.
-3. Digite a linha de **Subject**.
-4. Escreva o **Body** usando o editor de texto avançado.
-5. Clique em **Save**.
+1. Clique em **Novo Modelo**.
+2. Digite um **Nome do Modelo** para identificá-lo na lista e escolha uma **Categoria** (Geral, Eventos, Grupos, Doações ou Boas-vindas) para ajudar a organizar seus modelos.
+3. Digite a linha de **Assunto**.
+4. Escreva o **Corpo** usando o editor de texto enriquecido.
+5. Clique em **Salvar**.
 
 ## Campos de Mesclagem
 
-Clique em um chip de campo de mesclagem acima do Subject ou do Body para inseri-lo na posição do cursor. Quando o e-mail é enviado, cada campo de mesclagem é substituído pelas informações reais do destinatário:
+Clique em um chip de campo de mesclagem acima do Assunto ou Corpo para inseri-lo em seu cursor. Quando o email for enviado, cada campo de mesclagem é substituído pelas informações reais do destinatário:
 
 - `{{firstName}}`, `{{lastName}}`, `{{displayName}}` -- O nome do destinatário
-- `{{email}}` -- O endereço de e-mail do destinatário
-- `{{churchName}}` -- O nome da sua igreja
+- `{{email}}` -- O email do destinatário
+- `{{churchName}}` -- O nome de sua igreja
 
-## Pré-visualizando um Modelo
+## Visualizando um Modelo
 
-Clique em **Preview** para ver como o assunto e o corpo ficarão com dados de exemplo preenchidos nos campos de mesclagem, antes de salvar ou enviar.
+Clique em **Visualizar** para ver como o assunto e o corpo parecerão com dados de exemplo preenchidos para os campos de mesclagem, antes de salvar ou enviar.
 
 ## Usando um Modelo
 
-Os modelos salvos ficam disponíveis para seleção ao redigir um e-mail para pessoas ou um grupo, e como uma ação em [Fluxos de Trabalho](../serving/workflows.md).
+Modelos salvos estão disponíveis para seleção ao compor um email para pessoas ou um grupo, e como uma ação em [Fluxos de Trabalho](../serving/workflows.md).
 
-## Editando e Excluindo
+## Editando e Deletando
 
-Clique no ícone **Edit** ao lado de um modelo para atualizá-lo, ou no ícone **Delete** para removê-lo permanentemente.
+Clique no ícone **Editar** ao lado de um modelo para atualizá-lo, ou no ícone **Deletar** para removê-lo permanentemente.
 
-## Próximos Passos
+## Próximas Etapas
 
-- [Fluxos de Trabalho](../serving/workflows.md) -- Dispare um e-mail de modelo automaticamente com base em regras
+- [Fluxos de Trabalho](../serving/workflows.md) -- Dispare um email de modelo automaticamente com base em regras

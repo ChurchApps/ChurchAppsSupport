@@ -6,95 +6,96 @@ title: "Check-In-Sicherheit"
 
 <div class="article-intro">
 
-B1 enthält eine Reihe von Kindersicherheitskontrollen für das Check-In: Raumkapazitätsgrenzen und Betreuer-Kind-Verhältnisse, Alters- und Klassenstufenhinweise am Kiosk, Check-In-Typen, die zwischen Mitgliedern, Gästen und ehrenamtlichen Helfern unterscheiden, sowie eine vertrauenswürdige Abholliste pro Haushalt, die beim Check-Out überprüft wird. Diese Seite beschreibt, wie Sie jede Sicherheitsfunktion in B1 Admin konfigurieren.
+B1 umfasst eine Reihe von Kindsicherheitskontrollen für Check-ins: Raumkapazitätsgrenzen und Freiwilligenquoten, Alters- und Klassenstufen-Leitfaden am Kiosk, Check-in-Typen, die Mitglieder, Gäste und Freiwillige unterscheiden, und eine vertrauenswürdige Abholungsliste pro Haushalt, die beim Auschecken überprüft wird. Diese Seite behandelt die Konfiguration jeder Sicherheitsfunktion in B1 Admin.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Voraussetzungen</h4>
 
-- Richten Sie Ihre [Anwesenheitsstruktur](setup.md) und [Check-In-Kioske](check-in.md) ein
-- Räume sind [Gruppen](../groups/creating-groups.md), die mit Gottesdienstzeiten verknüpft sind — die unten beschriebenen Sicherheitseinstellungen befinden sich in der Gruppe
-- Eltern-Aufruf (Page-a-Parent) und Notfall-Rundruf erfordern einen verbundenen SMS-Anbieter ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream) oder Mutual Ministry)
+- Richten Sie Ihre [Anwesenheitsstruktur](setup.md) und [Check-in-Kioske](check-in.md) ein
+- Räume sind [Gruppen](../groups/creating-groups.md), die mit Gottesdienstzeiten verknüpft sind -- die Sicherheitseinstellungen unten befinden sich auf der Gruppe
+- Page-a-parent und Notfall-Rundfunk erfordern einen verbundenen SMS-Anbieter ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream) oder Mutual Ministry)
 
 </div>
 
 ## Raumkapazität und Schließen eines Raums
 
-Jeder Check-In-Raum (Gruppe) kann seine eigenen Grenzwerte durchsetzen. Öffnen Sie die Gruppe, klicken Sie auf das **Stift-Symbol**, um ihre Einstellungen zu bearbeiten, und suchen Sie den Bereich **Check-In-Kapazität**:
+Jeder Check-in-Raum (Gruppe) kann seine eigenen Grenzen durchsetzen. Öffnen Sie die Gruppe, klicken Sie auf das **Stift-Symbol**, um ihre Einstellungen zu bearbeiten, und finden Sie den Bereich **Check-In-Kapazität**:
 
-- **Kapazität** -- Die maximale Anzahl an Personen, die gleichzeitig in diesem Raum eingecheckt sein können. Wenn der Raum voll ist, wird das Einchecken blockiert und der Kiosk nennt den vollen Raum.
-- **Gästekapazität** -- Eine optionale separate Obergrenze dafür, wie viele Gäste der Raum aufnehmen kann.
-- **Für Check-In geschlossen** -- Auf **Ja** setzen, um alle Check-Ins in diesen Raum sofort zu stoppen (zum Beispiel, wenn eine Klasse ausfällt oder ein Raum nicht verfügbar ist). Check-Outs funktionieren weiterhin.
+- **Kapazität** -- Die maximale Anzahl von Personen, die gleichzeitig in diesem Raum einchecken können. Wenn der Raum voll ist, wird das Check-in darin blockiert und der Kiosk benennt den vollen Raum.
+- **Gast-Kapazität** -- Eine optionale separate Obergrenze für Gäste, die der Raum halten kann.
+- **Geschlossen für Check-In** -- Auf **Ja** setzen, um alle Check-ins in diesem Raum sofort zu stoppen (z.B. wenn eine Klasse abgesagt ist oder ein Raum nicht verfügbar ist). Auschecken funktioniert noch.
 
-## Betreuerverhältnisse
+## Freiwilligenquoten
 
-Derselbe Bereich **Check-In-Kapazität** in der Gruppe enthält auch Personalregeln:
+Der gleiche **Check-In-Kapazität**-Bereich auf der Gruppe beinhaltet Personalregeln:
 
-- **Kinder pro Betreuer** -- Die maximale Anzahl an Kindern, die jeder eingecheckte ehrenamtliche Helfer betreuen kann (z. B. bedeutet 5 einen Betreuer pro fünf Kinder).
-- **Mindestanzahl Betreuer** -- Die kleinste Anzahl an Betreuern, die eingecheckt sein müssen, bevor Kinder in den Raum eingecheckt werden können.
+- **Kinder pro Freiwilliger** -- Die maximale Anzahl von Kindern, die jeder eingecheckter Freiwilliger abdecken kann (z.B. 5 bedeutet ein Freiwilliger pro fünf Kinder).
+- **Mindestanzahl Freiwillige** -- Die kleinste Anzahl von Freiwilligen, die einchecken müssen, bevor Kinder in den Raum einchecken können.
 
-Ehrenamtliche Helfer zählen für diese Regeln, wenn sie am Kiosk mit dem Typ **Ehrenamtlicher Helfer** einchecken (siehe [Check-In-Typen](#check-in-typen) unten).
+Freiwillige zählen zu diesen Regeln, wenn sie mit dem Typ **Freiwilliger** am Kiosk einchecken (siehe [Check-in-Typen](#check-in-types) unten).
 
-### Warnen vs. Blockieren wählen
+### Wählen zwischen Warnung und Blockierung
 
-Wie streng die Verhältnisse durchgesetzt werden, ist eine gemeindeweite Einstellung:
+Wie streng Quoten durchgesetzt werden, ist eine kirchenweite Einstellung:
 
-1. Gehen Sie in B1 Admin zu **Einstellungen > Gemeinde verwalten** und öffnen Sie die Kachel **Check-In**.
-2. Legen Sie die **Durchsetzung des Betreuerverhältnisses** fest:
-   - **Warnen (mit Bestätigung zulassen)** -- Der Kiosk zeigt eine Warnung an, wenn ein Raum das Verhältnis überschreitet oder die Mindestanzahl an Betreuern unterschreitet, und ein Mitarbeiter kann bestätigen, um trotzdem fortzufahren. Dies ist die Standardeinstellung.
-   - **Blockieren (Check-In verhindern)** -- Das Einchecken in den Raum wird verweigert, bis genügend Betreuer eingecheckt sind.
+1. Gehen Sie in B1 Admin zu **Einstellungen > Kirche verwalten** und öffnen Sie die **Check-In**-Kachel.
+2. Stellen Sie **Freiwilligenquoten-Durchsetzung** ein:
+   - **Warnung (mit Bestätigung zulassen)** -- Der Kiosk zeigt eine Warnung an, wenn ein Raum über Quote oder unter seinen Mindestfreiwilligen ist, und ein Mitarbeiter kann bestätigen, um trotzdem fortzufahren. Dies ist die Standardeinstellung.
+   - **Blockieren (Check-in verhindern)** -- Check-in zum Raum wird verweigert, bis genug Freiwillige einchecken.
 
 :::info
-Kapazität und „Für Check-In geschlossen" sind immer feste Grenzwerte — die Wahl zwischen Warnen/Blockieren gilt nur für die Betreuerverhältnisse.
+Kapazität und Geschlossen für Check-In sind immer harte Grenzen -- die Wahl zwischen Warnung und Blockierung gilt nur für Freiwilligenquoten.
 :::
 
-## Check-In-Typen
+## Check-in-Typen
 
-Bei jedem Check-In wird erfasst, ob die Person ein **Mitglied**, ein **Gast** oder ein **Ehrenamtlicher Helfer** ist. Der Typ wird über Chips auf dem Haushalts-Bildschirm des Kiosks ausgewählt (Mitglied ist die Standardeinstellung). Die Typen fließen in die Sicherheitsregeln ein — ehrenamtliche Helfer decken das Verhältnis ab, und Gäste zählen gegen die Gästekapazität des Raums.
+Jedes Check-in zeichnet auf, ob die Person ein **Mitglied**, **Gast** oder **Freiwilliger** ist. Der Typ wird mit Chips auf dem Kiosk-Haushalt-Bildschirm gewählt (Mitglied ist die Standardeinstellung). Typen speisen die Sicherheitsregeln -- Freiwillige bieten Quotenabdeckung, und Gäste zählen gegen die Gast-Kapazität des Raums.
 
-## Alters- und Klassenstufen-Hinweise für Räume
+## Alters- und Klassenstufen-Raumleitfaden
 
-Sie können jedem Raum Alters- oder Klassenstufengrenzen zuweisen, damit der Kiosk Familien zu passenden Räumen leitet:
+Sie können jeder Raum Alters- oder Klassenstufengrenzen geben, damit der Kiosk Familien zu angemessenen Räumen leitet:
 
-- Legen Sie in den Gruppeneinstellungen im Bereich **Alter & Klassenstufe** das Mindest-/Höchstalter (Jahre und Monate) und/oder die Klassenstufe für den Raum fest.
-- Am Kiosk werden Räume, für die ein Kind qualifiziert ist, hervorgehoben, während nicht passende Räume abgeblendet dargestellt werden. Ein abgeblendeter Raum kann mit Mitarbeiterbestätigung trotzdem ausgewählt werden — der Hinweis blockiert niemals zwingend.
+- Verwenden Sie auf den Einstellungen der Gruppe den Abschnitt **Alter & Klassenstufe**, um das Mindestalter/Maximalalter (Jahre und Monate) und/oder die Klassenstufe für den Raum festzulegen.
+- Am Kiosk sind Räume, für die ein Kind qualifiziert ist, hervorgehoben, und Räume, für die nicht qualifiziert, sind abgeblendet. Ein abgeblendeter Raum kann mit einer Mitarbeiternbestätigung immer noch gewählt werden -- der Leitfaden blockiert niemals hart.
 
-Klassenstufen wechseln am **Klassenstufen-Aufstiegsdatum** Ihrer Gemeinde:
+Klassenstufen rollen über Ihrer Kirche am **Datum der Klassenstufen-Beförderung**:
 
-1. Gehen Sie in B1 Admin zu **Einstellungen > Gemeinde verwalten** und öffnen Sie die Kachel für den Klassenstufen-Aufstieg.
-2. Legen Sie Monat und Tag fest, an dem Ihre Gemeinde Schüler befördert (zum Beispiel 1. August). Alter und Klassenstufe am Kiosk werden zum jeweils letzten Aufstiegsdatum berechnet.
+1. Gehen Sie in B1 Admin zu **Einstellungen > Kirche verwalten** und öffnen Sie die Kachel zur Klassenstufen-Beförderung.
+2. Stellen Sie den Monat und Tag ein, an dem Ihre Kirche Schüler befördert (z.B. 1. August). Alter und Klassenstufen am Kiosk werden ab dem letzten Beförderungsdatum berechnet.
 
 ## Vertrauenswürdige und nicht autorisierte Abholpersonen
 
-Jeder Haushalt kann eine Liste von Personen führen, die zur Abholung ihrer Kinder berechtigt sind — oder nicht.
+Jeder Haushalt kann eine Liste von Personen führen, die -- oder nicht -- berechtigt sind, seine Kinder abzuholen.
 
-1. Öffnen Sie die Seite einer Person unter **Personen** und suchen Sie die Karte **Abholung**.
-2. Klicken Sie auf **Hinzufügen**. Suchen Sie nach einer vorhandenen Person, oder fügen Sie jemanden hinzu, der nicht im System ist, indem Sie **Name**, **Beziehung** und ein Foto eingeben.
-3. Legen Sie den **Status** fest:
-   - **Vertrauenswürdig** -- Beim Check-Out erscheint diese Person als antippbare Abholkarte mit Foto, was eine verifizierte Abholung beschleunigt.
-   - **Nicht autorisiert** -- Wenn jemand versucht, unter diesem Namen abzuholen, blockiert der Kiosk den Check-Out mit einer Warnung. Ein Mitarbeiter kann dies überschreiben, und die Überschreibung wird im Anwesenheitsdatensatz vermerkt.
+1. Öffnen Sie eine Personenseite unter **Personen** und suchen Sie die **Abhol**-Karte.
+2. Klicken Sie auf **Hinzufügen**. Suchen Sie eine bereits existierende Person, oder fügen Sie jemanden hinzu, der nicht im System ist, indem Sie seinen **Namen**, **Beziehung** und ein Foto eingeben.
+3. Stellen Sie den **Status** ein:
+   - **Vertrauenswürdig** -- Diese Person erscheint am Auschecken als tappbare Abholkarte mit Foto, was schnelles verifizielles Abholen ermöglicht.
+   - **Nicht autorisiert** -- Wenn jemand versucht, unter diesem Namen abzuholen, blockiert der Kiosk das Auschecken mit einer Warnung. Ein Mitarbeiter kann überschreiben, und die Überschreibung wird im Anwesenheitsdatensatz aufgezeichnet.
 
-Klicken Sie auf den Status-Chip einer Person auf der Karte, um zwischen Vertrauenswürdig und Nicht autorisiert zu wechseln.
+Klicken Sie auf den Status-Chip der Person auf der Karte, um zwischen Vertrauenswürdig und Nicht autorisiert zu wechseln.
 
 :::tip
-Fügen Sie vertrauenswürdigen Abholpersonen wann immer möglich Fotos hinzu — der Check-Out-Bildschirm zeigt das Foto, damit ehrenamtliche Helfer die Person vor ihnen visuell überprüfen können.
+Fügen Sie Fotos zu vertrauenswürdigen Abholpersonen hinzu, wenn möglich -- der Auschecken-Bildschirm zeigt das Foto an, damit Freiwillige die Person vor ihnen visuell überprüfen können.
 :::
 
-## Eltern-Aufruf und Notfall-Rundruf
+## Page-a-Parent und Notfall-Rundfunk
 
-Beide Funktionen senden Textnachrichten über den verbundenen SMS-Anbieter Ihrer Gemeinde — es gibt keinen eingebauten SMS-Dienst, daher muss zunächst einer der unterstützten Anbieter konfiguriert werden.
+Beide Features senden Textnachrichten über den SMS-Anbieter Ihrer Kirche -- es gibt keinen integrierten SMS-Service, daher muss zunächst einer der unterstützten Anbieter konfiguriert werden.
 
-- **Eltern aufrufen** -- Vom Check-Out-Bildschirm eines besetzten Kiosks aus können Mitarbeiter den Eltern/Erziehungsberechtigten eines eingecheckten Kindes eine SMS schicken (zum Beispiel „Bitte kommen Sie in den Kleinkindbereich").
-- **Notfall-Rundruf** -- Über die Admin-Einstellungen des Kiosks können Mitarbeiter allen Erziehungsberechtigten aller für den ausgewählten Gottesdienst eingecheckten Haushalte gleichzeitig eine SMS senden. Zum Senden muss zur Bestätigung **EMERGENCY** eingetippt werden.
+- **Page a parent** -- Aus dem Auschecken-Bildschirm eines bemannten Kiosks können Mitarbeiter die Eltern/Erziehungsberechtigten eines eingecheckten Kindes per SMS benachrichtigen (z.B. "Bitte kommen Sie zur Kinderbetreuung").
+- **Notfall-Rundfunk** -- Aus den Admin-Einstellungen des Kiosks können Mitarbeiter alle Haushalte der ausgewählten Veranstaltung gleichzeitig per SMS benachrichtigen. Das Senden erfordert die Eingabe von **NOTFALL**, um zu bestätigen.
 
-Personen, die SMS abbestellt haben oder für die keine Mobilnummer hinterlegt ist, werden automatisch übersprungen — der Kiosk meldet, wie viele Nachrichten gesendet und wie viele übersprungen wurden.
+Personen, die sich von SMS abgemeldet haben, oder die keine Mobilnummer auf Datei haben, werden automatisch übersprungen -- der Kiosk zeigt an, wie viele Nachrichten gesendet und wie viele übersprungen wurden.
 
-Siehe die Anleitung aus Kiosksicht in [Check-Out & Kindersicherheit](../../b1-checkin/check-in/checking-out).
+Siehe die Kiosk-seitige Anleitung in [Auschecken & Kindsicherheit](../../b1-checkin/check-in/checking-out).
 
 ## Verwandte Artikel
 
-- [Check-In](check-in.md) — Kiosk-Einrichtung und Hardware
-- [Check-Out & Kindersicherheit](../../b1-checkin/check-in/checking-out) — der Check-Out am Kiosk, Abholverifizierung und Aufruf-Abläufe
-- [Gruppen erstellen](../groups/creating-groups.md) — wo die Raumeinstellungen liegen
-- [Anwesenheits-Einrichtung](setup.md) — Gottesdienste, Gottesdienstzeiten und Raumzuweisungen
+- [Check-In](check-in.md) -- Kiosk-Setup und Hardware
+- [Auschecken & Kindsicherheit](../../b1-checkin/check-in/checking-out) -- Auschecken, Abholverifikation und Paging-Flows
+- [Gruppen erstellen](../groups/creating-groups.md) -- wo die Raumeinstellungen erfolgen
+- [Anwesenheit Einrichtung](setup.md) -- Dienstleistungen, Dienstzeiten und Raumzuordnungen
+- [Mindestalter für private Nachrichten](../settings/mobile-app.md#member-directory--messaging-settings) -- blockiert neue private Nachrichtenkonversationen mit Kindern, während sie im Verzeichnis bleiben

@@ -1,103 +1,103 @@
 ---
-title: "Pamamahala ng mga Pahina"
+title: "Pag-manage ng Mga Pahina"
 ---
 
-# Pamamahala ng mga Pahina
+# Pag-manage ng Mga Pahina
 
 <div class="article-intro">
 
-Ang view ng Website Pages ang iyong sentral na sentro para sa paggawa, pag-edit, at pag-oorganisa ng lahat ng pahina sa website ng iyong simbahan. Maaari mong pamahalaan ang kapwa nilalaman ng iyong pahina at navigation ng iyong site mula sa iisang screen na ito.
+Ang Website Pages view ay iyong sentral na hub para sa paglikha, pag-edit, at pag-ayos ng lahat ng mga pahina sa iyong website ng simbahan. Maaari mong pamahalaan ang parehong nilalaman ng pahina at navigation ng iyong site mula sa isang solong screen.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- Tapusin ang [Initial Setup](initial-setup) upang ikonpigura ang iyong domain at mga pangunahing setting ng site
-- Ihanda ang iyong nilalaman at mga larawan. Gamitin muna ang tagapamahala ng [Files](files) upang mag-upload ng mga media asset.
+- Kumpletuhin ang [Paunang Setup](initial-setup) upang i-configure ang iyong domain at mga pangunahing setting ng site
+- Handa na ang iyong nilalaman at mga larawan. Gamitin ang [Mga File](files) manager upang i-upload ang mga asset ng media muna.
 
 </div>
 
 :::info
-Kung ang iyong simbahan ay may higit sa isang website (halimbawa, magkakahiwalay na site kada campus), gamitin ang site switcher sa itaas ng view ng Website Pages upang lumipat sa pagitan ng mga ito. Bawat site ay may sarili nitong mga pahina, navigation, at mga setting ng [appearance](appearance).
+Kung ang iyong simbahan ay may mahigit isang website (halimbawa, mga hiwalay na site bawat campus), gamitin ang site switcher sa tuktok ng Website Pages view upang tumalon sa pagitan nila. Bawat site ay may sariling mga pahina, navigation, at [hitsura](appearance) settings.
 :::
 
-## Pag-unawa sa mga Uri ng Pahina
+## Pag-unawa sa Mga Uri ng Pahina
 
-Nakalista sa talahanayan ng **Pages** ang bawat pahina sa iyong site kasama ang katayuan nito:
+Ang **Mga Pahina** na talahanayan ay naglalista ng bawat pahina sa iyong site kasama ang kanyang status:
 
-- **Generated** -- Mga pahinang awtomatikong ginawa ng sistema batay sa datos ng iyong simbahan (halimbawa, isang pahina ng Groups, isang pahina ng Sermons, o isang indibidwal na pahina para sa bawat sermon sa iyong library). Awtomatikong nag-a-update ang mga pahinang ito habang nagbabago ang iyong datos.
-- **Custom** -- Mga pahinang ginawa mo mismo, may sariling nilalaman at layout.
+- **Nabuo** -- Mga pahina na awtomatikong ginawa ng system batay sa data ng iyong simbahan (halimbawa, isang Mga Grupo page, isang Mga Sermon page, o isang individual na pahina para sa bawat sermon sa iyong library). Ang mga pahina na ito ay nag-aaral-aral sa kanilang sarili habang nagbabago ang iyong data.
+- **Custom** -- Mga pahina na ikaw ay lumikha sa sarili mo na may iyong sariling nilalaman at layout.
 
-Maaari mong gawing custom na pahina ang anumang awtomatikong nabuong pahina kung nais mong may buong kontrol sa nilalaman at disenyo nito.
+Maaari mong ikonberta ang anumang auto-generated na pahina sa custom na pahina kung gusto mo ang buong kontrol sa kanyang nilalaman at disenyo.
 
-## Pagdaragdag at Pag-edit ng mga Pahina
+## Pagdaragdag at Pag-edit ng Mga Pahina
 
-1. I-click ang pindutang **Add Page** sa kanang bahagi sa itaas ng talahanayan ng Pages.
-2. Pumili ng uri ng pahina (blangko o isang template) at bigyan ito ng pangalan.
-3. I-click ang **Edit** sa tabi ng anumang pahina upang buksan ang [page editor](page-editor), kung saan maaari kang magdagdag ng mga seksyon, teksto, larawan, at iba pang elemento.
-4. I-click ang **Page Settings** upang i-update ang pamagat ng pahina, URL path, at iba pang metadata.
-5. Gamitin ang pindutang **Preview** upang buksan ang iyong pahina sa bagong window at makita nang eksakto kung paano ito titingnan ng mga bisita.
+1. I-click ang pindutan ng **Magdagdag ng Pahina** sa sulok sa itaas-kanan ng Mga Pahina talahanayan.
+2. Pumili ng uri ng pahina (blank o isang template) at bigyan ito ng pangalan.
+3. I-click ang **Edit** sa tabi ng anumang pahina upang buksan ang [page editor](page-editor), kung saan maaari kang magdagdag ng mga seksyon, teksto, mga larawan, at iba pang mga elemento.
+4. I-click ang **Mga Ayos ng Pahina** upang i-update ang pamagat ng pahina, URL path, at iba pang metadata.
+5. Gamitin ang pindutan ng **Preview** upang buksan ang iyong pahina sa isang bagong window at makita kung paano ito magmukhang sa mga bisita.
 
 :::tip
-Para sa iyong home page, itakda ang URL path bilang `/` lamang. Para sa lahat ng ibang pahina, gumamit ng deskriptibong path tulad ng `/about` o `/contact`.
+Para sa iyong home page, itakda ang URL path sa lamang `/`. Para sa lahat ng iba pang mga pahina, gumamit ng isang deskriptibong path tulad ng `/about` o `/contact`.
 :::
 
-### Mga Setting ng Pahina
+### Mga Ayos ng Pahina
 
-Buksan ang **Page Settings** sa anumang pahina upang ikonpigura ang:
+Buksan ang **Mga Ayos ng Pahina** sa anumang pahina upang i-configure ang:
 
-- **Title and URL Path** -- Ang pangalan ng pahina at ang address nito sa iyong site.
-- **Visibility** -- Piliin kung sino ang makakakita ng pahina: lahat, mga miyembro lamang, tauhan lamang, o mga miyembro ng partikular na mga grupo. Isa itong mabilisang paraan upang mag-gate ng pribadong pahina (tulad ng isang pahina ng mapagkukunan para sa tauhan) nang walang hiwalay na password.
-- **Meta Description** -- Isang maikling buod na ipinapakita sa mga resulta ng search engine at preview ng link sa social media.
-- **Redirects** -- Ituro ang isang lumang URL path patungo sa pahinang ito, kaya patuloy na gumagana ang mga link at bookmark sa isang retiradong pahina.
+- **Pamagat at URL Path** -- Ang pangalan ng pahina at ang kanyang address sa iyong site.
+- **Visibility** -- Pumili kung sino ang makakakita ng pahina: lahat, mga miyembro lamang, kawani lamang, o mga miyembro ng mga partikular na grupo. Ito ay isang mabilis na paraan upang i-gate ang isang pribadong pahina (tulad ng pahina ng mapagkukunang pangkawani) nang walang hiwalay na password.
+- **Paglalarawan ng Meta** -- Isang maikling buod na ipinakita sa mga resulta ng search engine at social media link previews.
+- **Mga Redirect** -- Ituro ang isang lumang URL path sa pahina na ito, upang ang mga link at bookmark sa isang retired na pahina ay patuloy na gumagana.
 
-## Pamamahala ng Navigation
+## Pag-manage ng Navigation
 
-Ipinapakita ng kaliwang sidebar ng view ng Website Pages ang iyong mga link ng navigation. Kinokontrol ng mga link na ito ang menu na nakikita ng mga bisita sa iyong website.
+Ang Website Pages view ay nagpapakita ng iyong mga link sa navigation. Ang mga link na ito ay kumokontrol sa menu na nakikita ng mga bisita sa iyong website.
 
-1. I-click ang **Add** upang gumawa ng bagong link ng navigation. Maaari mong ituro ito sa anumang pahina sa iyong site o sa isang external na URL.
-2. Upang muling ayusin ang mga link, i-drag at i-drop ang mga ito sa pagkakasunod-sunod na gusto mo. Maaari mo ring i-nest ang mga link sa ilalim ng isang parent item upang gumawa ng mga dropdown na menu.
-3. I-click ang icon na **Edit** sa tabi ng anumang link upang baguhin ang label, URL, o posisyon nito.
-4. Upang alisin ang isang link mula sa navigation, i-click ang icon na **Delete**.
+1. I-click ang **Add** upang lumikha ng isang bagong link sa navigation. Maaari mong ituro ito sa anumang pahina sa iyong site o sa isang panlabas na URL.
+2. Upang baguhin ang pagkakasunod-sunod ng mga link, drag at drop ang mga ito sa pagkakasunod-sunod na nais mo. Maaari mo rin nesting ang mga link sa ilalim ng item ng magulang upang lumikha ng mga dropdown menu.
+3. I-click ang icon ng **Edit** sa tabi ng anumang link upang baguhin ang kanyang label, URL, o posisyon.
+4. Upang alisin ang isang link mula sa navigation, i-click ang icon ng **Delete**.
 
 :::info
-Ang pag-alis ng isang link ng navigation ay hindi nagtatanggal ng pahina mismo. Patuloy pa ring umiiral ang pahina at maa-access nang direkta sa pamamagitan ng URL nito -- basta hindi na lamang ito lilitaw sa menu.
+Ang pag-aalis ng isang link sa navigation ay hindi nag-aalis ng pahina sa sarili nito. Ang pahina ay patuloy na umiiral at maaaring ma-access nang direkta sa kanyang URL -- ito ay simpleng hindi lalabas sa menu.
 :::
 
-## Mga Tip para sa Pag-oorganisa ng Iyong Site
+## Mga Tip para sa Pag-ayos ng Iyong Site
 
-- Panatilihin ang iyong top-level na navigation sa lima o anim na item upang mabilis na mahanap ng mga bisita ang mga bagay.
-- Gumamit ng nested na mga link para sa mga kaugnay na sub-page (halimbawa, isang dropdown na "About" na may "Our Team," "Beliefs," at "History").
-- Suriin ang iyong navigation sa mobile sa pamamagitan ng pag-click ng **Mobile Preview** upang tiyaking gumagana ito nang maayos sa mas maliliit na screen.
-- Bigyan ang mga pahina ng malinaw, deskriptibong mga pangalan na tumutulong sa mga bisita na maunawaan kung ano ang kanilang mahahanap.
+- Panatilihing ang iyong top-level navigation sa limang o anim na item upang ang mga bisita ay mabilis na makahanap ng mga bagay.
+- Gamitin ang nested links para sa mga kaugnay na sub-page (halimbawa, isang "Tungkol" dropdown na may "Ang Aming Koponan", "Mga Paniniwala", at "Kasaysayan").
+- Suriin ang iyong navigation sa mobile sa pamamagitan ng pag-click sa **Mobile Preview** upang siguraduhin na gumagana nito nang maayos sa mas maliliit na screen.
+- Bigyan ng mga pahina ang malinaw, deskriptibong mga pangalan na tumutulong sa mga bisita na maunawaan kung ano ang makikita nila.
 
 :::tip
-Maaari kang magdagdag ng [mga form](../forms/creating-forms.md) sa iyong mga pahina upang mangolekta ng mga rehistrasyon, kahilingang panalangin, o iba pang impormasyon mula sa mga bisita.
+Maaari kang magdagdag ng [mga form](../forms/creating-forms.md) sa iyong mga pahina upang makolekta ang mga pagpaparehistro, mga kahilingan sa panalangin, o iba pang impormasyon mula sa mga bisita.
 :::
 
-## Pagsisimula mula sa isang Site Template
+## Pagsisimula mula sa Isang Template ng Site
 
-Kung gumagawa ka ng site mula sa simula, maaari mo itong i-bootstrap gamit ang isang **Site Template** sa halip na gumawa ng mga pahina nang isa-isa. Ang isang site template ay gumagawa ng isang set ng handa nang mga pahina — home, about, connect, give, at iba pa — na may placeholder na nilalaman at mga link ng navigation na naka-wire na.
+Kung kayo ay gumagawa ng iyong site mula sa simula, maaari mong bootstrap ito gamit ang isang **Template ng Site** sa halip na lumikha ng mga pahina nang isa-isa. Ang template ng site ay lumilikha ng isang hanay ng pre-built na mga pahina -- home, tungkol, kumonekta, magbigay, at iba pa -- na may placeholder content at navigation links na naka-wire na.
 
-1. Sa screen ng Pages, i-click ang pindutang **Site Templates** (katabi ng pindutang **Add Page**).
-2. I-browse ang mga available na template at i-click ang isa upang mai-preview ang istraktura ng pahina nito.
-3. Kapag nakahanap ka ng gusto mo, i-click ang **Apply Template**.
-4. Ginagawa at idinaragdag sa iyong navigation ang mga pahinang hindi pa umiiral. Iniiwan lamang na tulad ng dati ang mga umiiral nang pahina.
+1. Sa screen ng Mga Pahina, i-click ang pindutan ng **Mga Template ng Site** (sa tabi ng **Magdagdag ng Pahina** pindutan).
+2. Tuklasin ang mga available na template at i-click ang isa upang i-preview ang kanyang page structure.
+3. Kapag nahanap mo ang isang nais mo, i-click ang **I-apply ang Template**.
+4. Ang mga pahina na hindi pa umaabot ay ginawa at naidagdag sa iyong navigation. Ang mga umiiral na pahina ay naiwan na tulad nito.
 
-Matapos maglapat ng template, buksan ang bawat pahina sa [page editor](page-editor) upang palitan ang placeholder na teksto at mga larawan ng aktwal na nilalaman ng iyong simbahan.
+Pagkatapos maglapat ng template, buksan ang bawat pahina sa [page editor](page-editor) upang palitan ang placeholder text at mga larawan ng tunay na nilalaman ng iyong simbahan.
 
 :::info
-Gumagawa ang mga site template ng istraktura ng pahina at navigation. Hindi nila ino-override ang color scheme o mga font ng iyong site -- kinokontrol ang mga iyon ng [Appearance](appearance).
+Ang mga template ng site ay lumilikha ng page structure at navigation. Hindi nila i-override ang color scheme o font ng iyong site -- ang mga ito ay kinokontrol ng [Hitsura](appearance).
 :::
 
-## Image Lightbox
+## Lightbox ng Larawan
 
-Kapag ni-click ng mga bisita ang isang larawan sa iyong website, magbubukas ito sa isang full-screen na lightbox overlay. Nagbibigay-daan ito sa mga tao na tingnan ang mga larawan sa mas malaking sukat nang hindi umaalis sa pahina. Walang kailangang i-configure -- awtomatikong naka-enable ang lightbox para sa mga larawan sa nilalaman ng iyong pahina.
+Kapag ang mga bisita ay nag-click sa isang larawan sa iyong website, ito ay bumubukas sa isang full-screen lightbox overlay. Ito ay nagbibigay-daan sa mga tao na tingnan ang mga larawan sa mas malaking sukat nang hindi iniwan ang pahina. Walang kinakailangang pag-configure -- ang lightbox ay naka-enable ng awtomatiko para sa mga larawan sa iyong nilalaman ng pahina.
 
-## Susunod na mga Hakbang
+## Mga Susunod na Hakbang
 
-- [Initial Setup](initial-setup) -- Mga tagubilin para sa unang beses na pag-set up
-- [Paggamit ng Page Editor](page-editor) -- Alamin kung paano bumuo at mag-style ng nilalaman ng pahina
-- [Appearance](appearance) -- I-customize ang visual na tema ng iyong site
-- [Files](files) -- Mag-upload at pamahalaan ang mga media asset para sa iyong mga pahina
+- [Paunang Setup](initial-setup) -- Mga tagubilin sa unang pagkakataon ng pag-setup
+- [Paggamit ng Page Editor](page-editor) -- Matuto kung paano bumuo at istilo ang nilalaman ng pahina
+- [Hitsura](appearance) -- I-customize ang visual theme ng iyong site
+- [Mga File](files) -- I-upload at pamahalaan ang mga asset ng media para sa iyong mga pahina

@@ -6,7 +6,7 @@ title: "Sécurité de l'enregistrement"
 
 <div class="article-intro">
 
-B1 inclut un ensemble de contrôles de sécurité pour enfants lors de l'enregistrement : des limites de capacité de salle et des ratios bénévole/enfant, des indications d'âge et de niveau scolaire au kiosque, des types d'enregistrement qui distinguent les membres, les invités et les bénévoles, et une liste de personnes autorisées à récupérer les enfants par foyer, vérifiée au moment du départ. Cette page explique comment configurer chaque fonctionnalité de sécurité dans B1 Admin.
+B1 inclut un ensemble de contrôles de sécurité des enfants pour l'enregistrement : les limites de capacité des salles et les ratios bénévoles-enfants, les conseils d'âge et de niveau au kiosque, les types d'enregistrement qui distinguent les membres, les invités et les bénévoles, et une liste de retrait de confiance par ménage qui est vérifiée au retrait. Cette page couvre la configuration de chaque fonction de sécurité dans B1 Admin.
 
 </div>
 
@@ -14,87 +14,88 @@ B1 inclut un ensemble de contrôles de sécurité pour enfants lors de l'enregis
 <h4>Avant de commencer</h4>
 
 - Configurez votre [structure de présence](setup.md) et vos [kiosques d'enregistrement](check-in.md)
-- Les salles sont des [groupes](../groups/creating-groups.md) liés à des horaires de service — les paramètres de sécurité ci-dessous se trouvent sur le groupe
-- L'appel des parents et la diffusion d'urgence nécessitent un fournisseur de messagerie texte connecté ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream), ou Mutual Ministry)
+- Les salles sont des [groupes](../groups/creating-groups.md) liés aux heures de service — les paramètres de sécurité ci-dessous se trouvent sur le groupe
+- L'appel aux parents et la diffusion d'urgence nécessitent un fournisseur de messages texte connecté ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream), ou Mutual Ministry)
 
 </div>
 
-## Capacité de salle et fermeture d'une salle
+## Capacité de la salle et fermeture d'une salle
 
 Chaque salle d'enregistrement (groupe) peut appliquer ses propres limites. Ouvrez le groupe, cliquez sur l'**icône crayon** pour modifier ses paramètres, et trouvez la section **Capacité d'enregistrement** :
 
-- **Capacité** -- Le nombre maximum de personnes pouvant être enregistrées dans cette salle en même temps. Lorsque la salle est pleine, l'enregistrement y est bloqué et le kiosque signale que la salle est complète.
-- **Capacité invités** -- Un plafond distinct facultatif sur le nombre d'invités que la salle peut accueillir.
-- **Fermée pour l'enregistrement** -- Réglez sur **Oui** pour arrêter immédiatement tous les enregistrements dans cette salle (par exemple, lorsqu'un cours est annulé ou qu'une salle est indisponible). Les départs continuent de fonctionner.
+- **Capacité** -- Le nombre maximal de personnes qui peuvent être enregistrées dans cette salle en même temps. Quand la salle est pleine, l'enregistrement y est bloqué et le kiosque nomme la salle comme étant pleine.
+- **Capacité des invités** -- Un plafond séparé optionnel sur le nombre d'invités que la salle peut accueillir.
+- **Fermée pour l'enregistrement** -- Définissez sur **Oui** pour arrêter tous les enregistrements dans cette salle immédiatement (par exemple, quand un cours est annulé ou une salle n'est pas disponible). Les sorties fonctionnent toujours.
 
-## Ratios de bénévoles
+## Ratios des bénévoles
 
-La même section **Capacité d'enregistrement** sur le groupe inclut des règles de personnel :
+La même section **Capacité d'enregistrement** sur le groupe inclut les règles d'staffing :
 
-- **Enfants par bénévole** -- Le nombre maximum d'enfants que chaque bénévole enregistré peut encadrer (par exemple, 5 signifie un bénévole pour cinq enfants).
-- **Bénévoles minimum** -- Le plus petit nombre de bénévoles devant être enregistrés avant que des enfants puissent être enregistrés dans la salle.
+- **Enfants par bénévole** -- Le nombre maximal d'enfants que chaque bénévole enregistré peut couvrir (par exemple, 5 signifie un bénévole pour cinq enfants).
+- **Bénévoles minimum** -- Le plus petit nombre de bénévoles qui doivent être enregistrés avant que les enfants puissent s'enregistrer dans la salle.
 
-Les bénévoles comptent pour ces règles lorsqu'ils s'enregistrent avec le type **Bénévole** au kiosque (voir [Types d'enregistrement](#check-in-types) ci-dessous).
+Les bénévoles comptent dans ces règles quand ils s'enregistrent avec le type **Bénévole** au kiosque (voir [Types d'enregistrement](#check-in-types) ci-dessous).
 
-### Choisir entre avertir et bloquer
+### Choix entre Avertissement et Blocage
 
-La rigueur de l'application des ratios est un paramètre à l'échelle de l'église :
+La rigueur avec laquelle les ratios sont appliqués est un paramètre d'église :
 
 1. Dans B1 Admin, allez à **Paramètres > Gérer l'église** et ouvrez la tuile **Enregistrement**.
-2. Réglez **Application du ratio de bénévoles** :
-   - **Avertir (autoriser avec confirmation)** -- Le kiosque affiche un avertissement lorsqu'une salle dépasse le ratio ou est en dessous de son minimum de bénévoles, et un membre du personnel peut confirmer pour continuer quand même. C'est l'option par défaut.
-   - **Bloquer (empêcher l'enregistrement)** -- L'enregistrement dans la salle est refusé jusqu'à ce que suffisamment de bénévoles soient enregistrés.
+2. Définissez **Application des ratios de bénévoles** :
+   - **Avertissement (autoriser avec confirmation)** -- Le kiosque affiche un avertissement quand une salle dépasse le ratio ou ne dispose pas de ses bénévoles minimum, et un membre du personnel peut confirmer pour continuer quand même. C'est la valeur par défaut.
+   - **Blocage (empêcher l'enregistrement)** -- L'enregistrement dans la salle est refusé jusqu'à ce qu'assez de bénévoles soient enregistrés.
 
 :::info
-La capacité et la fermeture pour l'enregistrement sont toujours des limites strictes — le choix avertir/bloquer s'applique uniquement aux ratios de bénévoles.
+La capacité et Fermée pour l'enregistrement sont toujours des limites strictes — le choix avertissement/blocage s'applique uniquement aux ratios de bénévoles.
 :::
 
 ## Types d'enregistrement
 
-Chaque enregistrement note si la personne est un **Membre**, un **Invité** ou un **Bénévole**. Le type est choisi à l'aide de puces sur l'écran du foyer au kiosque (Membre est la valeur par défaut). Les types alimentent les règles de sécurité — les bénévoles fournissent la couverture des ratios, et les invités comptent dans la capacité invités de la salle.
+Chaque enregistrement enregistre si la personne est un **Membre**, un **Invité** ou un **Bénévole**. Le type est choisi avec des puces sur l'écran du ménage du kiosque (Membre est la valeur par défaut). Les types alimentent les règles de sécurité — les bénévoles fournissent une couverture de ratio, et les invités comptent par rapport à la capacité des invités de la salle.
 
-## Indications d'âge et de niveau scolaire pour les salles
+## Conseils d'âge et de niveau pour la salle
 
-Vous pouvez donner à chaque salle des bornes d'âge ou de niveau scolaire afin que le kiosque guide les familles vers les salles appropriées :
+Vous pouvez donner à chaque salle des limites d'âge ou de niveau pour que le kiosque guide les familles vers les bonnes salles :
 
-- Dans les paramètres du groupe, utilisez la section **Âge et niveau scolaire** pour définir l'âge minimum/maximum (années et mois) et/ou le niveau scolaire de la salle.
-- Au kiosque, les salles auxquelles un enfant est admissible sont mises en évidence et celles auxquelles il ne l'est pas sont estompées. Une salle estompée peut tout de même être choisie avec la confirmation d'un membre du personnel — l'indication ne bloque jamais complètement.
+- Sur les paramètres du groupe, utilisez la section **Âge et niveau** pour définir l'âge minimum/maximum (années et mois) et/ou le niveau pour la salle.
+- Au kiosque, les salles dans lesquelles un enfant peut aller sont mises en évidence et les salles où il ne peut pas aller sont assombries. Une salle assombrie peut toujours être choisie avec la confirmation d'un membre du personnel — le conseil n'impose jamais un blocage dur.
 
-Les niveaux scolaires évoluent à la **date de passage de niveau** de votre église :
+Les niveaux passent à la date de promotion de niveau de votre église :
 
-1. Dans B1 Admin, allez à **Paramètres > Gérer l'église** et ouvrez la tuile de passage de niveau.
-2. Réglez le mois et le jour auxquels votre église fait passer les élèves au niveau supérieur (par exemple, le 1er août). Les âges et niveaux scolaires au kiosque sont calculés à partir de la date de passage la plus récente.
+1. Dans B1 Admin, allez à **Paramètres > Gérer l'église** et ouvrez la tuile de promotion de niveau.
+2. Définissez le mois et le jour où votre église promeut les étudiants (par exemple, 1er août). Les âges et les niveaux au kiosque sont calculés à partir de la date de promotion la plus récente.
 
-## Personnes autorisées et non autorisées à récupérer les enfants
+## Personnes de retrait de confiance et non autorisées
 
-Chaque foyer peut avoir une liste de personnes qui sont — ou ne sont pas — autorisées à récupérer ses enfants.
+Chaque ménage peut avoir une liste de personnes qui sont -- ou ne sont pas -- autorisées à retirer ses enfants.
 
-1. Ouvrez la page d'une personne dans **Personnes** et trouvez la carte **Récupération**.
-2. Cliquez sur **Ajouter**. Recherchez une personne existante, ou ajoutez quelqu'un qui n'est pas dans le système en saisissant son **Nom**, sa **Relation** et une photo.
-3. Réglez le **Statut** :
-   - **Autorisé** -- Au départ, cette personne apparaît comme une carte de récupération sélectionnable avec sa photo, ce qui rend la vérification de récupération rapide.
-   - **Non autorisé** -- Si quelqu'un tente une récupération sous ce nom, le kiosque bloque le départ avec un avertissement. Un membre du personnel peut passer outre, et cette dérogation est enregistrée sur le dossier de présence.
+1. Ouvrez la page d'une personne dans **Personnes** et trouvez la carte **Retrait**.
+2. Cliquez sur **Ajouter**. Recherchez une personne existante, ou ajoutez quelqu'un ne figurant pas dans le système en entrant son **Nom**, sa **Relation** et une photo.
+3. Définissez le **Statut** :
+   - **De confiance** -- Au retrait, cette personne apparaît comme une carte de retrait tapable avec sa photo, ce qui rend le retrait vérifié rapide.
+   - **Non autorisé** -- Si quelqu'un tente un retrait sous ce nom, le kiosque bloque le retrait avec un avertissement. Un membre du personnel peut remplacer, et le remplacement est enregistré sur le dossier de présence.
 
-Cliquez sur la puce de statut d'une personne sur la carte pour basculer entre Autorisé et Non autorisé.
+Cliquez sur la puce de statut d'une personne sur la carte pour basculer entre De confiance et Non autorisé.
 
 :::tip
-Ajoutez des photos aux personnes autorisées à récupérer les enfants dès que possible — l'écran de départ affiche la photo afin que les bénévoles puissent vérifier visuellement la personne se tenant devant eux.
+Ajoutez des photos aux personnes de retrait de confiance chaque fois que possible — l'écran de retrait affiche la photo pour que les bénévoles puissent vérifier visuellement la personne devant eux.
 :::
 
-## Appel des parents et diffusion d'urgence
+## Appel aux parents et diffusion d'urgence
 
-Les deux fonctionnalités envoient des messages texte via le fournisseur de messagerie texte connecté de votre église — il n'y a pas de service SMS intégré, donc l'un des fournisseurs pris en charge doit d'abord être configuré.
+Les deux fonctionnalités envoient des messages texte par le biais du fournisseur de messages texte connecté de votre église — il n'y a pas de service SMS intégré, donc l'un des fournisseurs pris en charge doit être configuré d'abord.
 
-- **Appeler un parent** -- Depuis l'écran de départ d'un kiosque encadré, le personnel peut envoyer un texto aux parents/tuteurs d'un enfant enregistré (par exemple, « Merci de venir à la nurserie »).
-- **Diffusion d'urgence** -- Depuis les paramètres d'administration du kiosque, le personnel peut envoyer un texto à tous les tuteurs des foyers enregistrés pour le service sélectionné en une seule fois. L'envoi nécessite de taper **EMERGENCY** pour confirmer.
+- **Appel aux parents** -- À partir de l'écran de retrait d'un kiosque avec personnel, le personnel peut envoyer un SMS aux parents/tuteurs d'un enfant enregistré (par exemple, "Veuillez venir à la pouponnière").
+- **Diffusion d'urgence** -- À partir des paramètres administrateur du kiosque, le personnel peut envoyer un SMS aux tuteurs de tous les ménages enregistrés pour le service sélectionné en même temps. L'envoi nécessite de taper **EMERGENCY** pour confirmer.
 
-Les personnes qui ont refusé les textos, ou qui n'ont pas de numéro de mobile enregistré, sont automatiquement ignorées — le kiosque indique combien de messages ont été envoyés et combien ont été ignorés.
+Les personnes qui se sont désabonnées des SMS, ou qui n'ont pas de numéro mobile en dossier, sont automatiquement ignorées — le kiosque rapporte combien de messages ont été envoyés et combien ont été ignorés.
 
-Consultez le déroulement côté kiosque dans [Départ et sécurité des enfants](../../b1-checkin/check-in/checking-out).
+Voir le guide du kiosque dans [Retrait et sécurité des enfants](../../b1-checkin/check-in/checking-out).
 
-## Articles associés
+## Articles connexes
 
-- [Enregistrement](check-in.md) — configuration du kiosque et du matériel
-- [Départ et sécurité des enfants](../../b1-checkin/check-in/checking-out) — le départ au kiosque, la vérification de récupération et les flux d'appel
-- [Créer des groupes](../groups/creating-groups.md) — où se trouvent les paramètres de salle
-- [Configuration de la présence](setup.md) — services, horaires de service et affectations de salle
+- [Enregistrement](check-in.md) — configuration du kiosque et matériel
+- [Retrait et sécurité des enfants](../../b1-checkin/check-in/checking-out) — le retrait du kiosque, la vérification du retrait et les flux d'appel
+- [Création de groupes](../groups/creating-groups.md) — où résident les paramètres de salle
+- [Configuration de la présence](setup.md) — services, heures de service et assignations de salles
+- [Âge minimum pour les messages privés](../settings/mobile-app.md#member-directory--messaging-settings) — bloque les nouvelles conversations de messages privés avec les enfants tout en les gardant dans le répertoire

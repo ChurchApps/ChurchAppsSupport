@@ -6,27 +6,28 @@ title: "Check-Ins"
 
 <div class="article-intro">
 
-Check-in ist ein System mit drei Eingangstüren: die B1Checkin-Kiosk-App für besetzte und Selbstbedienungsstationen, Selbst-Check-in innerhalb des B1App-Mitgliederportals und admin-seitige Anwesenheit in B1Admin. Alle drei schreiben in dasselbe Anwesenheitsmodul der Kern-Api, und das Klassenzimmer-Routing wird vollständig von Groups gesteuert — es gibt keine separate „Standorte"- oder „Räume"-Entität. Darüber liegt eine Kindersicherheitsschicht: Check-in-Typen pro Besuch, serverseitige Kapazitäts- und Betreuungsschlüssel-Gates, kiosk-seitige Alters-/Klassenstufen-Eignung, vertrauenswürdige Abholverifizierung beim Check-out und Elternbenachrichtigung über den SMS-Anbieter der Gemeinde. Diese Seite bildet das Datenmodell, die Check-in-Abläufe, die Sicherheitsschicht und die Etikettendruck-Pipeline ab.
+Check-In ist ein System mit drei Vordertüren: die B1Checkin Kiosk-App für bestückte und Self-Serve-Stationen, Self Check-In innerhalb des B1App-Mitglieder-Portals und Admin-seitige Anwesenheit in B1Admin. Alle drei schreiben in das gleiche Anwesenheits-Modul in der Core-Api, und Klassenzimmer-Routing wird vollständig von Gruppen angetrieben — es gibt keine separate "Orte" oder "Zimmer" Entität. Eine Kindersicherheits-Schicht sitzt oben auf: Pro-Besuchs-Check-In-Typen, Server-seitige Kapazitäts- und Freiwilligen-Verhältnis-Gates, Kiosk-seitige Alter-/Klassenstufen-Berechtigung, vertrauenswürdige Abholer-Überprüfung bei Abmeldung und Eltern-Paging über den SMS-Anbieter der Kirche. Diese Seite ordnet das Datenmodell, die Check-In-Flüsse, die Sicherheits-Schicht und die Label-Druck-Pipeline.
 
 </div>
 
-## Überblick
+## Übersicht
 
 ```
-┌──────────────────────────┐──┐         ┌──────────────────────────────────────────────┐
-│ B1Checkin (Expo kiosk)   │  │         │ Api                                          │
-│  lookup → household →    │  │  HTTPS  │  ┌─ membership module ─────────────────────┐ │
-│  groups → complete/print │  │         │  │ people · households · groups            │ │
-├──────────────────────────┤  ├───────▶ │  └─────────────────────────────────────────┘ │
-│ B1App (self check-in)    │──┤         │  ┌─ attendance module ─────────────────────┐ │
-│  /mobile/checkin screen  │  │         │  │ campuses → services → serviceTimes      │ │
-├──────────────────────────┤  │         │  │ groupServiceTimes  (room routing)       │ │
-│ B1Admin (staff)          │──┘         │  │ sessions ← visitSessions → visits       │ │
-│  setup · reports ·       │            │  │ labelTemplates                          │ │
-│  label designer          │            │  └─────────────────────────────────────────┘ │
-└──────────────────────────┘            └──────────────────────────────────────────────┘
+┌──────────────────────────┐
+│ B1Checkin (Expo kiosk)   │──┐         ┌──────────────────────────────────────────────┐
+│  lookup → household →    │  │         │ Api                                          │
+│  groups → complete/print │  │  HTTPS  │  ┌─ membership module ─────────────────────┐ │
+├──────────────────────────┤  ├───────▶ │  │ people · households · groups            │ │
+│ B1App (self check-in)    │──┤         │  └─────────────────────────────────────────┘ │
+│  /mobile/checkin screen  │  │         │  ┌─ attendance module ─────────────────────┐ │
+├──────────────────────────┤  │         │  │ campuses → services → serviceTimes      │ │
+│ B1Admin (staff)          │──┘         │  │ groupServiceTimes  (room routing)       │ │
+│  setup · reports ·       │            │  │ sessions ← visitSessions → visits       │ │
+│  label designer          │            │  │ labelTemplates                          │ │
+└──────────────────────────┘            │  └─────────────────────────────────────────┘ │
+                                        └──────────────────────────────────────────────┘
 
-Label print path (kiosk only):
+Label-Druck-Pfad (nur Kiosk):
 POST /attendance/visits/checkin ──▶ { securityCode, streaks }
   └▶ LabelHelper (label templates, or bundled HTML fallback)
        └▶ LabelRenderer → HTML doc + inline SVG barcodes
@@ -34,104 +35,104 @@ POST /attendance/visits/checkin ──▶ { securityCode, streaks }
                  └▶ printer-helper native module → Brother QL / Zebra
 ```
 
-| Oberfläche | Repo | Stack | Rolle |
-|---------|------|-------|------|
-| Kiosk | `B1Checkin` | Expo / React Native, expo-router-Datei-Routing; EAS-Builds für Android, Amazon Fire und iOS; OTA-Updates über `expo-updates` | Besetzte oder Selbstbedienungsstation mit Etikettendruck und verifiziertem Check-out |
-| Selbst-Check-in | `B1App` | Next.js (b1.church-Mitgliederportal) | Angemeldete Mitglieder checken ihren Haushalt vom Handy aus ein; kein Drucken |
-| Admin | `B1Admin` | React-SPA | Konfiguriert die Gottesdienststruktur, weist Gruppen Gottesdienstzeiten zu, gestaltet Etiketten, erfasst manuelle Anwesenheit, führt Berichte aus |
+| Oberfläche | Reposit | Stapel | Rolle |
+|---------|------|-------|-------|
+| Kiosk | `B1Checkin` | Expo / React Native, expo-router Datei-Routing; EAS baut für Android, Amazon Fire und iOS; OTA Updates über `expo-updates` | Bestückte oder Self-Serve-Station mit Label-Druck und verifytem Check-Out |
+| Self Check-In | `B1App` | Next.js (b1.church-Mitglieder-Portal) | Angemeldete Mitglieder checken ihren Haushalt von einem Telefon ein; kein Druck |
+| Admin | `B1Admin` | React SPA | Konfiguriert die Service-Struktur, weist Gruppen zu Service-Zeiten zu, gestaltet Labels, notiert manuelle Anwesenheit, führt Berichte aus |
 
-Alle drei rufen dieselben zwei API-Module über `ApiHelper` auf: **MembershipApi** (`/membership`) für Personen, Haushalte und Gruppen; **AttendanceApi** (`/attendance`) für alles Weitere.
+Alle drei rufen die gleichen zwei API-Module über `ApiHelper` auf: **MembershipApi** (`/membership`) für Personen, Haushalte und Gruppen; **AttendanceApi** (`/attendance`) für alles unten.
 
 ## Datenmodell (`Api/src/modules/attendance`)
 
 | Entität / Tabelle | Schlüsselfelder | Bedeutung |
 |----------------|-----------|---------|
-| `campuses` | name, address | Hier veraltet — Standorte werden im Membership-Modul (`/membership/campuses`) verwaltet; die Attendance-Kopie ist für Legacy-Leser eingefroren-schreibgeschützt (`models/Campus.ts`) |
-| `services` | campusId, name | Ein wiederkehrendes Zusammenkommen, z. B. „Sonntagvormittag" (`models/Service.ts`) |
-| `serviceTimes` | serviceId, name | Ein Zeitfenster innerhalb eines Gottesdienstes, z. B. „9:00 Uhr" (`models/ServiceTime.ts`) |
-| `groupServiceTimes` | groupId, serviceTimeId | Verknüpfungstabelle: welche Gruppen (Klassenzimmer) sich zu welchen Gottesdienstzeiten treffen (`models/GroupServiceTime.ts`) |
-| `sessions` | groupId, serviceTimeId, sessionDate | Ein Treffen einer Gruppe an einem Datum — wird zum Check-in-Zeitpunkt lazy erstellt (`models/Session.ts`) |
-| `visits` | personId, serviceId, visitDate, checkinTime, securityCode, checkinType, checkedInById, checkoutTime, checkedOutBy, checkedOutById | Eine Person, die an einem Datum teilnimmt (`models/Visit.ts`). `checkinType` ist `member` / `guest` / `volunteer` (NULL = Legacy-Mitglied), vom Kiosk gesetzt und von den Kapazitäts-/Verhältnis-Gates konsumiert |
-| `visitSessions` | visitId, sessionId | Welche Session(s) ein Besuch abdeckt — ein zu zwei Gottesdienstzeiten eingechecktes Kind erhält zwei Zeilen (`models/VisitSession.ts`) |
-| `labelTemplates` | name, labelType (`nametag`/`pickup`), width, height, isDefault, content (JSON-Blöcke) | Gestaltbare Etikettenlayouts (`models/LabelTemplate.ts`) |
+| `campuses` | name, address | Veraltet hier — Campus werden im Mitgliedschafts-Modul (`/membership/campuses`) registriert; die Anwesenheits-Kopie ist schreibgeschützt für Legacy-Leser (`models/Campus.ts`) |
+| `services` | campusId, name | Ein regelmäßiger Treffpunkt, z. B. "Sonntags-Morgen" (`models/Service.ts`) |
+| `serviceTimes` | serviceId, name | Ein Zeitpunkt innerhalb eines Services, z. B. "9:00 Uhr" (`models/ServiceTime.ts`) |
+| `groupServiceTimes` | groupId, serviceTimeId | Verknüpfungstabelle: welche Gruppen (Klassenzimmer) treffen sich zu welchen Service-Zeiten (`models/GroupServiceTime.ts`) |
+| `sessions` | groupId, serviceTimeId, sessionDate | Eines Treffens eine Gruppe an einem Datum — erstellt träge bei Check-In-Zeit (`models/Session.ts`) |
+| `visits` | personId, serviceId, visitDate, checkinTime, securityCode, checkinType, checkedInById, checkoutTime, checkedOutBy, checkedOutById | Ein Besuch einer Person an einem Datum (`models/Visit.ts`). `checkinType` ist `member` / `guest` / `volunteer` (NULL = Legacy-Mitglied), gesetzt durch den Kiosk und konsumiert durch die Kapazitäts-/Verhältnis-Gates |
+| `visitSessions` | visitId, sessionId | Welche Sitzung(en) ein Besuch abdeckt — ein Kind, das sich für zwei Service-Zeiten einloggt, bekommt zwei Reihen (`models/VisitSession.ts`) |
+| `labelTemplates` | name, labelType (`nametag`/`pickup`), width, height, isDefault, content (JSON blocks) | Gestaltbare Label-Layouts (`models/LabelTemplate.ts`) |
 
-### Wie ein abgeschlossener Check-in gespeichert wird
+### Wie ein abgeschlossenes Check-In gepuffert wird
 
-`VisitController.postCheckin` (`Api/src/modules/attendance/controllers/VisitController.ts`) behandelt `POST /attendance/visits/checkin?serviceId=&peopleIds=`. Der Body ist ein Array von `Visit`-Objekten, jedes mit eingebetteten `visitSessions`, deren eingebettete `session` nur ein `(serviceTimeId, groupId)`-Paar benennt. Der Server dann:
+`VisitController.postCheckin` (`Api/src/modules/attendance/controllers/VisitController.ts`) verarbeitet `POST /attendance/visits/checkin?serviceId=&peopleIds=`. Der Körper ist eine Anordnung von `Visit`-Objekten, jede tragend `visitSessions` deren eingebettete `session` nur ein `(serviceTimeId, groupId)`-Paar nennt. Der Server dann:
 
-1. **Prüft Kapazität und Verhältnisse vor jedem Schreibvorgang.** `evaluateGates()` → `CheckinGateHelper.evaluate()` prüft die Kapazität, Gastkapazität, das Geschlossen-Flag und das Betreuungsverhältnis jedes anvisierten Raums gegen die aktuelle Belegung. postCheckin ist **nicht transaktional**, daher muss das Gate vor dem ersten Speichern laufen — eine harte Verletzung liefert ein 409, das die betroffenen Räume benennt, und nichts wird persistiert. Siehe [Kapazitäts- und Betreuungsschlüssel-Gates](#kapazitats-und-betreuungsschlussel-gates).
-2. **Löst Sessions lazy auf.** `getSessionId()` findet oder erstellt die `sessions`-Zeile für `(groupId, serviceTimeId, heute)` — Session-IDs werden pro Datum im Prozess zwischengespeichert. Neue Sessions lösen einen `session.created`-Webhook aus. Die Schleife ist ein awaiteter `for..of` — ein früheres Fire-and-forget `forEach(async …)` lief dem Speichern davon und schrieb bei der ersten Session-Erstellung NULL-Session-IDs (behoben; vermerkt in einem Codekommentar an der Schleife).
-3. **Ersetzt die Datensätze des Tages.** Alle bestehenden Besuche dieser Personen bei diesem Gottesdienst heute werden zusammen mit ihren visitSessions gelöscht, dann wird der eingereichte Satz gespeichert. Das erneute Einchecken einer Familie ist daher eine idempotente „das ist der aktuelle Zustand"-Operation, kein Anhängen. Wird stattdessen `?checkDuplicates=true` übergeben, liefert dies `{ duplicates: [personId…] }` ohne zu schreiben — so warnt der Kiosk vor dem Überschreiben.
-4. **Erzeugt einen Sicherheitscode pro Batch.** `SecurityCodeHelper.generate()` erzeugt einen 4-stelligen Code aus dem Alphabet `23456789BCDFGHJKLMNPQRSTVWXYZ` (keine Vokale oder mehrdeutigen Zeichen, sodass Codes keine Wörter buchstabieren oder falsch gelesen werden können). Der Server wiederholt bei Kollision gegen die offenen Besuche derselben Gemeinde am selben Tag und stempelt den Code auf jeden Besuch im Batch.
-5. **Liefert `{ streaks, securityCode }`.** `streaks` ordnet der personId die Anzahl aufeinanderfolgender Wochen mit Anwesenheit zu; der Kiosk feiert Meilensteine (jede 5. Woche) mit Konfetti.
+1. **Gates-Kapazität und -Verhältnisse vor jeglichem Schreiben.** `evaluateGates()` → `CheckinGateHelper.evaluate()` überprüft jeden gezielten Raums Kapazität, Gast-Kapazität, geschlossenes Flagge und Freiwilligen-Verhältnis gegen aktuelle Auslastung. postCheckin ist **nicht transaktional**, daher muss das Gate vor der ersten Speicherung ausgeführt werden — ein harter Verstoß gibt 409 zurück, das beleidigende Zimmer nennend und nichts ist persistent. Siehe [Kapazitäts- und Freiwilligen-Verhältnis-Gates](#kapazitäts--und-freiwilligen-verhältnis-gates).
+2. **Löst Sitzungen träge auf.** `getSessionId()` findet oder erstellt die `sessions` Reihe für `(groupId, serviceTimeId, heute)` — Session-IDs sind in-Prozess pro Datum gepuffert. Neue Sitzungen senden ein `session.created` Webhook. Die Schleife ist ein erwartet `for..of` — ein früherer Fire-and-Forget `forEach(async …)` raste die Speicherung und schrieb NULL sessionIds bei der First-Session-Erstellung (behoben; notiert in einem Code-Kommentar bei der Schleife).
+3. **Ersetzt die Tages-Datensätze.** Jegliche bestehenden Besuche für diese Personen bei diesem Service heute werden gelöscht, zusammen mit ihren visitSessions, dann wird die eingereichte Menge gespeichert. Ein Familien-Neueinchecken ist daher eine idempotent "das ist der aktuell Zustand" Operation, nicht ein Anhängsel. Die Übergabe `?checkDuplicates=true` gibt stattdessen `{ duplicates: [personId…] }` zurück ohne zu schreiben, was, wie der Kiosk vorher warnt, bevor es überschreibt.
+4. **Generiert einen Sicherheitscode pro Batch.** `SecurityCodeHelper.generate()` erzeugt einen 4-stelligen Code aus dem Alphabet `23456789BCDFGHJKLMNPQRSTVWXYZ` (keine Vokale oder mehrdeutigen Zeichen, daher können Codes keine Wörter buchstabieren oder falsch lesen). Der Server versucht erneut bei Zusammenstoß gegen die gleiche Kirche's gleich-Tag offene Besuche und stempel den Code auf jeden Besuch im Batch.
+5. **Gibt `{ streaks, securityCode }` zurück.** `streaks` ordnet personId zu aufeinanderfolgend-Wochen Anwesenheitszählung; der Kiosk feiert Meilensteine (alle 5. Wochen) mit Konfetti.
 
-Jeder gespeicherte Besuch löst auch einen `attendance.recorded`-Webhook aus. Die Leseseite, `GET /attendance/visits/checkin`, liefert die Besuche der Personen von ihrem **letzten protokollierten Datum** — war das eine vorherige Woche, werden die IDs entfernt, sodass der Client eine vorausgefüllte Kopie der letztwöchigen Raumauswahlen erhält, die als neue Datensätze gespeichert werden.
+Jeder gespeicherte Besuch sendet auch ein `attendance.recorded` Webhook. Die Lesseite, `GET /attendance/visits/checkin`, gibt die Besuche der Menschen von ihrem **letztem protokollierten Datum** zurück — wenn das eine vorherige Woche war, werden die IDs gestreift, daher erhält der Client eine vorgefüllte Kopie der letzten Wochen-Raumwahlen, die als neue Datensätze speichern.
 
-### Check-out
+### Abmeldung
 
-Zwei Endpunkte schließen den Kreis (`VisitController`):
+Zwei Endpunkte vervollständigen die Schleife (`VisitController`):
 
-- `GET /attendance/visits/code/:code` — die heutigen, noch nicht ausgecheckten Besuche mit diesem Sicherheitscode, mit befüllten Sessions.
-- `POST /attendance/visits/checkout` — Body `{ visitIds, checkedOutBy?, checkedOutById? }`; stempelt `checkoutTime` und wer abgeholt hat, und löst einen `attendance.checkout`-Webhook pro Besuch aus.
+- `GET /attendance/visits/code/:code` — Besuche von heute nicht-noch-abgemeldet, die diesen Sicherheitscode tragen, mit Sitzungen bevölkert.
+- `POST /attendance/visits/checkout` — Body `{ visitIds, checkedOutBy?, checkedOutById? }`; Zeitstempel `checkoutTime` und wer abholt, und sendet ein `attendance.checkout` Webhook pro Besuch.
 
-Berechtigungen: Kiosks authentifizieren sich mit `attendance.checkin`, was genau die Check-in-/Check-out-/Etikettenvorlagen-Oberfläche gewährt; `attendance.view`/`attendance.edit` decken Berichte und manuelle Erfassung ab; die Struktur (Gottesdienste, Gottesdienstzeiten, Gruppenzuweisungen) erfordert `services.edit`.
+Berechtigungen: Kiosks authentifizieren mit `attendance.checkin`, das genau die Check-In/Check-Out/Label-Template-Oberfläche gewährt; `attendance.view`/`attendance.edit` decken Reporting und manuellen Eintrag; die Struktur (Dienstleistungen, Dienstzeiten, Gruppen-Zuordnungen) erfordert `services.edit`. Mitglied-Self-Check-In (B1App) benötigt überhaupt keine Berechtigung: jeder authentifizierte Benutzer mit einer verbundenen Person in der Kirche darf `GET`/`POST /attendance/visits/checkin` aufrufen, und der Server beschränkt die eingereichten `personId`s auf den Haushalt des Aufrufers (403 ansonsten — dieser Zaun ist, was andere Familien' `securityCode`s uneinsehbar hält). Mitgliedschaft ist der Zuschuss; ob Mitglieder *sehen* die Funktion ist durch die B1App-Navigations-Reiter der Kirche gesteuert. Die anderen Check-In-Endpunkte (`code/:code`, `checkout`, `guardians`, `CheckinController`) bleiben Kiosk/Personal-nur.
 
-## Groups steuern das Raum-Routing
+## Gruppen fahren Raumrouting
 
-Es gibt nirgendwo im System eine Raum- oder Klassenzimmer-Entität. Ein „Raum" ist eine Membership-**Gruppe** mit aktiviertem `trackAttendance`, verknüpft mit einer oder mehreren Gottesdienstzeiten über `groupServiceTimes`. Die Gruppenfelder (in `Api/src/modules/membership/models/Group.ts`), die das Kiosk-Verhalten prägen:
+Es gibt keine Raum- oder Klassenzimmer-Entität irgendwo im System. Ein "Raum" ist eine Mitgliedschafts-**Gruppe** mit `trackAttendance` aktiviert, verbunden zu einer oder mehreren Service-Zeiten über `groupServiceTimes`. Die Gruppen-Felder (auf `Api/src/modules/membership/models/Group.ts`) die Kiosk-Verhalten formen:
 
 | Feld | Wirkung |
 |------|--------|
-| `trackAttendance` | Gruppe nimmt überhaupt an der Anwesenheitserfassung teil; der Setup-Baum von B1Admin markiert `trackAttendance`-Gruppen ohne `groupServiceTimes`-Zeile als nicht zugewiesen |
-| `parentPickup` | Markiert einen Kinderraum: Das Einchecken dort macht den Besuch zu einem „Kind"-Besuch, was ein Familien-Abholetikett druckt und den Sicherheitscode auf das Namensschild setzt |
-| `printNametag` | Ob Check-ins in diese Gruppe überhaupt ein Namensschild drucken |
-| `capacity` / `guestCapacity` / `checkinClosed` | Raumkapazitätsgrenzen und ein harter „Geschlossen"-Schalter, serverseitig durch das Check-in-Gate durchgesetzt (bearbeitet in den Gruppeneinstellungen von B1Admin unter „Check-In-Kapazität") |
-| `volunteerRatio` / `minVolunteers` | Kinder-pro-Betreuer-Verhältnis und Mindest-Betreueranzahl, durchgesetzt gemäß der gemeindeweiten Einstellung `ratioEnforcement` |
-| `minAgeMonths` / `maxAgeMonths` / `minGrade` / `maxGrade` | Kiosk-seitig ausgewertete Alters-/Klassenstufen-Eignungsgrenzen, um Räume hervorzuheben oder abzudunkeln |
+| `trackAttendance` | Gruppe nimmt an Anwesenheit überhaupt teil; B1Admin's Setup-Baum kennzeichnet `trackAttendance` Gruppen mit keiner `groupServiceTimes` Reihe als nicht zugewiesen |
+| `parentPickup` | Kennzeichnet einen Kinder-Raum: Einchecken dazu macht den Besuch ein "Kind"-Besuch, der eine Familie-Abholerlabel druckt und den Sicherheitscode auf dem Namenss-Tag setzt |
+| `printNametag` | Ob Check-Ins zu dieser Gruppe über ein Namenss-Tag drucken |
+| `capacity` / `guestCapacity` / `checkinClosed` | Raumkapazitätsgrenzen und ein harter "Schließen"-Schalter, Server-seitig von das Check-In-Gate erzwungen (bearbeitet in B1Admin's Gruppen-Einstellungen unter "Check-In-Kapazität") |
+| `volunteerRatio` / `minVolunteers` | Kinder-pro-Freiwilligen-Verhältnis und minimale Freiwilligen-Kopfzahl, pro die Kirchen-weit `ratioEnforcement` Einstellung erzwungen |
+| `minAgeMonths` / `maxAgeMonths` / `minGrade` / `maxGrade` | Alter-/Klassenstufen-Berechtigung Grenzen Kiosk-seitig ausgewertet um Zimmer hervorzuheben oder zu blassen |
 
-Jeder Client denormalisiert auf dieselbe Weise (z. B. `B1Checkin/app/services.tsx`, `B1App/src/app/[sdSlug]/mobile/components/screens/CheckinPage.tsx`): Lädt `GET /attendance/servicetimes?serviceId=`, `GET /attendance/groupservicetimes` und `GET /membership/groups` parallel, dann sammelt es für jede Gottesdienstzeit die Gruppen, deren `groupServiceTimes`-Zeile darauf zeigt, in `serviceTime.groups`. Dieses Array ist es, was der Raumwähler zeigt, organisiert nach Gruppen-`categoryName`.
+Jeden Client denormalisiert der gleiche Weg (z. B. `B1Checkin/app/services.tsx`, `B1App/src/app/[sdSlug]/mobile/components/screens/CheckinPage.tsx`): Laden Sie `GET /attendance/servicetimes?serviceId=`, `GET /attendance/groupservicetimes` und `GET /membership/groups` parallel, dann für jede Service-Zeit sammel Sie die Gruppen deren `groupServiceTimes` Reihe zeigt darauf hinein `serviceTime.groups`. Dieses Anordnung ist das, was der Raum-Picker zeigt, organisiert nach Gruppen `categoryName`.
 
-Zuweisungen werden von der Seite der Gruppe in B1Admin bearbeitet (`B1Admin/src/groups/components/ServiceTimesEdit.tsx` — `POST`/`DELETE /attendance/groupservicetimes`), und der gesamte Baum Standort → Gottesdienst → Gottesdienstzeit → Gruppe wird in `B1Admin/src/attendance/components/AttendanceSetup.tsx` über `GET /attendance/attendancerecords/tree` visualisiert.
+Zuordnungen sind bearbeitet von der Gruppen-Seite in B1Admin (`B1Admin/src/groups/components/ServiceTimesEdit.tsx` — `POST`/`DELETE /attendance/groupservicetimes`), und der ganze Campus → Service → Service-Zeit → Gruppen-Baum ist visualisiert in `B1Admin/src/attendance/components/AttendanceSetup.tsx` über `GET /attendance/attendancerecords/tree`.
 
 :::info
-Da Gruppen die einzige Quelle der Wahrheit sind, treibt dieselbe Gruppenmitgliedschaft das Kiosk-Routing, die listenartige Anwesenheit in den Gruppenseiten von B1Admin und die Anwesenheitsberichterstattung an — eine Gruppe einer Gottesdienstzeit zuzuweisen ist der einzige Schritt, der nötig ist, um sie zu einem Check-in-Ziel zu machen.
+Da Gruppen die einzelne Wahrheit-Quelle sind, fährt die gleiche Gruppen-Mitgliedschaft Kiosk-Routing, Roster-Stil-Anwesenheit auf B1Admin's Gruppen-Seiten und Anwesenheit-Berichte — Zuweisung eine Gruppe zu einer Service-Zeit ist der einzige notwendige Schritt, damit es ein Check-In-Ziel ist.
 :::
 
-## Kindersicherheit
+## Kindesicherheit
 
-### Check-in-Typen
+### Check-In-Typen
 
-Jeder Besuch trägt einen `checkinType` — `member`, `guest` oder `volunteer` (NULL bedeutet Legacy/Mitglied; Migration `tools/migrations/attendance/2026-07-03_checkin_type.ts`). Der Typ wird **kiosk-seitig** gewählt: Mitglied-/Gast-/Betreuer-Chips auf der ausgeklappten Mitgliederzeile (`B1Checkin/src/components/MemberServiceTimes.tsx`), bei Abschluss auf jeden anstehenden Besuch gestempelt (`app/checkinComplete.tsx`, standardmäßig `member`). Der Server konsumiert ihn im Gate — Betreuer zählen zur Verhältnisabdeckung statt gegen die Kapazität, und Gäste zählen gegen `guestCapacity`.
+Jeder Besuch trägt einen `checkinType` — `member`, `guest` oder `volunteer` (NULL bedeutet Legacy/Mitglied; Migration `tools/migrations/attendance/2026-07-03_checkin_type.ts`). Der Typ ist **Kiosk-seitig** ausgewählt: Member / Guest / Volunteer-Chips auf der erweiterten Mitglied-Reihe (`B1Checkin/src/components/MemberServiceTimes.tsx`), gestempelt auf jeden einzige Besuch bei Fertigstellung (`app/checkinComplete.tsx`, Standard zu `member`). Der Server konsumiert es im Gate — Freiwillige zählen zu Verhältnis-Abdeckung anstatt gegen Kapazität, und Gäste zählen gegen `guestCapacity`.
 
-### Kapazitäts- und Betreuungsschlüssel-Gates
+### Kapazitäts- und Freiwilligen-Verhältnis-Gates
 
-`CheckinGateHelper.evaluate()` (`Api/src/modules/attendance/helpers/CheckinGateHelper.ts`) läuft innerhalb von `postCheckin` vor jedem Speichern (der Endpunkt ist nicht transaktional, daher ist Gating-vor-Speichern der Korrektheitsmechanismus). Er lädt die aktuelle Belegung pro anvisierter Gruppe (`VisitRepo.countActiveByGroupToday`) und die Gruppenkonfiguration über das Membership-Modul-Gateway und klassifiziert dann Verstöße:
+`CheckinGateHelper.evaluate()` (`Api/src/modules/attendance/helpers/CheckinGateHelper.ts`) läuft innerhalb `postCheckin` vor jedem Speicherung (der Endpunkt ist nicht transaktional, daher ist Gating-vor-Speicher der Richtigkeit-Mechanismus). Es lädt aktuelle Auslastung pro gezielter Gruppe (`VisitRepo.countActiveByGroupToday`) und die Gruppen-Konfiguration durch das Mitgliedschafts-Modul-Gateway, dann ordnet Verstöße ein:
 
-- **Hart (immer blockieren):** `checkinClosed`, `current + incoming > capacity`, Gästezahl über `guestCapacity`. Der Batch wird mit `409 { error: "capacity", groups: [{ groupId, groupName, reason }] }` abgelehnt — der Kiosk zeigt den benannten Raum.
-- **Verhältnis (warnen oder blockieren):** Eintreffende Nicht-Betreuer in einen Raum, in dem `volunteers < minVolunteers`, gar keine Betreuer, oder `children > volunteers × volunteerRatio`. Der Schweregrad folgt der Gemeinde-Einstellung `ratioEnforcement` (Standard `"warn"` / `"block"`, bearbeitet in B1Admin Gemeinde verwalten → Check-In, `CheckinSettingsEdit.tsx`). Der Warn-Modus liefert `409 { warning: true, error: "ratio", … }`, es sei denn, der Client reicht mit `acknowledgeWarnings=true` erneut ein — diese erneute Einreichung ist die Mitarbeiter-Bestätigungs-Übersteuerung des Kiosks.
+- **Hart (immer blockieren):** `checkinClosed`, `aktuelle + eingehend > Kapazität`, Gast-Zählung über `guestCapacity`. Das Batch wird mit `409 { error: "capacity", groups: [{ groupId, groupName, reason }] }` zurückgewiesen — der Kiosk zeigt das genannte Zimmer.
+- **Verhältnis (warnen oder blockieren):** Eingehender Nicht-Freiwilliger in einen Raum wo `Freiwillige < minVolunteers`, keine Freiwilligen überhaupt, oder `Kinder > Freiwillige × volunteerRatio`. Der Schweregrad folgt die pro-Kirche Einstellung `ratioEnforcement` (`"warn"` Standard / `"block"`, bearbeitet in B1Admin Manage Church → Check-In, `CheckinSettingsEdit.tsx`). Warn-Modus gibt `409 { warning: true, error: "ratio", … }` zurück wenn der Client nicht erneut einsendet mit `acknowledgeWarnings=true` — diesen erneuten Eingang ist die Kiosk's Personal-bestätigt Übersteuerung.
 
-### Alters-/Klassenstufen-Eignung (kiosk-seitig)
+### Alter-/Klassenstufen-Berechtigung (Kiosk-seitig)
 
-Raum-Eignung ist beratende UI, ausgewertet auf dem Kiosk, nicht vom Server durchgesetzt. `B1Checkin/src/helpers/EligibilityHelper.ts` vergleicht das Geburtsdatum/die Klassenstufe einer Person mit den `minAgeMonths`/`maxAgeMonths`/`minGrade`/`maxGrade` der Gruppe (Klassenstufen-Reihenfolge: PreK, K, 1–12, Absolviert) und liefert `eligible` / `ineligible` / `unknown` — fehlende Daten ergeben `unknown` und verbergen niemals einen Raum. Alter und Klassenstufen werden zum **Klassenstufen-Beförderungsdatum** der Gemeinde berechnet (Einstellung `gradePromotionDate`, `"MM-DD"`, bearbeitet in `B1Admin/src/settings/components/GradePromotionSettingsEdit.tsx`); der Kiosk ruft es von `GET /attendance/checkin/settings` ab, und `resolveAsOfDate` wählt das jüngste Vorkommen an oder vor heute. Der Raumwähler hebt geeignete Räume hervor und dunkelt ungeeignete ab; das Auswählen eines abgedunkelten Raums erfordert eine Mitarbeiterbestätigung.
+Raumberechtigungen sind beratende UI, Kiosk-seitig ausgewertet, nicht Server-seitig erzwungen. `B1Checkin/src/helpers/EligibilityHelper.ts` vergleicht eine Person's Geburtsdatum/Klassenstufe gegen die Gruppen `minAgeMonths`/`maxAgeMonths`/`minGrade`/`maxGrade` (Klassenstufen-Reihenfolge: PreK, K, 1–12, Graduated) und gibt `berechtigt` / `berechtigt` / `unbekannt` zurück — fehlende Daten gibt `unbekannt` zurück und versteckt nie einen Raum. Alter und Klassenstufen werden berechnet seit der Kirchen-**Klassenstufen-Förderungs-Datum** (`gradePromotionDate` Einstellung, `"MM-DD"`, bearbeitet in `B1Admin/src/settings/components/GradePromotionSettingsEdit.tsx`); der Kiosk holt es von `GET /attendance/checkin/settings`, und `resolveAsOfDate` nimmt die jüngste Vorkommenheit auf oder bevor heute. Der Raumauswahl hebt berechtigte Zimmer hervor und verwischt berechtigte; Wählung eines verwischten Raums erfordert eine Personal-Bestätigung.
 
-### Vertrauenswürdige und nicht autorisierte Abholung
+### Vertrauenswürdige und nicht-autorisierte Abholer
 
-Abholpersonen sind eine Membership-Entität, pro Haushalt: `householdPickupPeople` (`Api/src/modules/membership/models/HouseholdPickupPerson.ts` — householdId, optionale personId, name, photoUrl, relationship, `status` `trusted` / `notAuthorized`, notes). CRUD ist `GET /membership/householdpickup/:householdId` (jeder authentifizierte Gemeinde-Nutzer, sodass Kiosks das lesen können) plus `POST` / `DELETE`, abgesichert durch `people.edit`. Mitarbeiter verwalten die Liste auf der Personenseite in der **Abholung**-Karte (`B1Admin/src/people/components/PickupPeople.tsx`) — Foto, Beziehung und ein Status-Chip Vertrauenswürdig/Nicht autorisiert.
+Abholer-Personen sind eine Mitgliedschafts-Entität, pro Haushalt: `householdPickupPeople` (`Api/src/modules/membership/models/HouseholdPickupPerson.ts` — householdId, optional personId, name, photoUrl, relationship, `status` `trusted` / `notAuthorized`, notes). CRUD ist `GET /membership/householdpickup/:householdId` (jeder authentifizierte Kirchenbenutzer, daher Kiosks können es lesen) plus `POST` / `DELETE` Personal-nur (`people.edit`). Personal-Verwaltung der Liste auf der Personen-Seite's **Abholer**-Karte (`B1Admin/src/people/components/PickupPeople.tsx`) — Photo, Verhältnis, und ein Vertrauenswürdig/Nicht Autorisiert Status-Chip.
 
-Beim Check-out (`B1Checkin/app/checkout.tsx`) lädt der Kiosk die Abholliste des Haushalts: `trusted`-Einträge werden als tippbare Abhol-Karten neben dem Foto-Raster der Haushalts-Erwachsenen gerendert, und ein frei eingegebener „Andere"-Name wird unscharf abgeglichen (Levenshtein, `src/helpers/PickupMatchHelper.ts`) gegen `notAuthorized`-Einträge — eine Übereinstimmung blockiert den Check-out mit einem Warnblatt und einer Mitarbeiter-**Übersteuerung**-Schaltfläche. Die Übersteuerung wird auf dem Besuch selbst protokolliert: Sie sendet `checkedOutBy` als `"OVERRIDE: {name}"` über den normalen `POST /attendance/visits/checkout`, sodass sie im Anwesenheitsdatensatz und im `attendance.checkout`-Webhook landet, statt in einer separaten Audit-Tabelle.
+Bei Abmeldung (`B1Checkin/app/checkout.tsx`) der Kiosk lädt die Haushalt's Abholer-Liste: `vertrauenswürdig` Einträge rendern als Tippbar-Abholer-Karten neben der Haushalt-Erwachsenen-Photo-Gitter und ein frei-getippter "Anderer" Name ist Fuzzy-verglichen (Levenshtein, `src/helpers/PickupMatchHelper.ts`) gegen `notAuthorized` Einträge — ein Treffer blockiert Check-Out mit einer Warnblatt und eine Personal- **Übersteuerung**-Knopf. Die Übersteuerung wird auf dem Besuch selbst protokolliert: es postet `checkedOutBy` als `"OVERRIDE: {name}"` durch die normal `POST /attendance/visits/checkout`, daher landen es im Anwesenheits-Datensatz und das `attendance.checkout` Webhook anstatt eine separate Audittabelle.
 
-### Elternbenachrichtigung und Notfall-Rundruf
+### Eltern-Paging und Notfall-Übertragung
 
-`CheckinController` (`Api/src/modules/attendance/controllers/CheckinController.ts`, `/attendance/checkin`) stellt zwei SMS-Endpunkte bereit:
+`CheckinController` (`Api/src/modules/attendance/controllers/CheckinController.ts`, `/attendance/checkin`) legt zwei SMS-Endpunkte frei:
 
-- `POST /page` — `{ visitId, message }`: benachrichtigt die Erziehungsberechtigten eines eingecheckten Kindes (Check-out-Screen des Kiosks, besetzter Modus).
-- `POST /broadcast` — `{ serviceId, message }`: sendet eine SMS an die Erwachsenen jedes eingecheckten Haushalts für einen Gottesdienst (Kiosk-Admin-Einstellungen, hinter einem Bestätigungsblatt, das Tippen von `EMERGENCY` erfordert, in `B1Checkin/app/adminSettings.tsx`).
+- `POST /page` — `{ visitId, message }`: Seiten die Wächter eines eingecheckten Kindes (Kiosk-Abmeldungs-Bildschirm, mannierter Modus).
+- `POST /broadcast` — `{ serviceId, message }`: Texte jeden eingecheckten Haushalt's Erwachsenen für einen Service (Kiosk-Admin-Einstellungen, hinter einem Typ-`NOTFALL`-zu-bestätigen-Blatt in `B1Checkin/app/adminSettings.tsx`).
 
-Beide lösen die Haushalts-Erwachsenen über das Membership-Gateway auf und übergeben die Zustellung dann an **`MessagingModuleGateway.sendBulkText`** (`Api/src/shared/modules/MessagingModuleGateway.ts`) — die modulübergreifende Tür zum konfigurierten SMS-Anbieter der Gemeinde (`@churchapps/texting`: TextInChurch, Clearstream oder MutualMinistry; es gibt keinen eingebauten SMS-Versender). Das Gateway protokolliert eine `sentText`-Zeile plus `deliveryLog`-Einträge pro Empfänger und deckelt einen Batch bei 500 Empfängern; ohne konfigurierten Anbieter liefert es `no_provider`, was der Kiosk als „Kein SMS-Anbieter konfiguriert" darstellt. `dispatch()` des Controllers dedupliziert Telefonnummern und überspringt Personen ohne Mobilnummer oder mit gesetztem `optedOut`, und liefert `{ sent, failed, skippedOptedOut, skippedNoPhone }`, sodass der Kiosk zeigen kann, was übersprungen wurde.
+Beide lösen Haushalt-Erwachsene über das Mitgliedschafts-Gateway auf, dann Hand-Zustellung zu **`MessagingModuleGateway.sendBulkText`** (`Api/src/shared/modules/MessagingModuleGateway.ts`) — die Kreuz-Modul-Tür in der Kirche's konfigurierten SMS-Anbieter (`@churchapps/texting`: TextInChurch, Clearstream, oder MutualMinistry; es gibt keinen integrierten SMS-Sender). Das Gateway protokolliert einen `sentText` Reihe plus pro-Empfänger `deliveryLog` Einträge und deckelt einen Batch bei 500 Empfänger; mit keinem konfigurierten Anbieter gibt es `no_provider` zurück, das der Kiosk als "Kein SMS-Anbieter konfiguriert" umgestaltet. Der Controller's `dispatch()` entfernt Duplikat-Telefonnummern und überspringt Personen mit kein Mobil oder `optedOut` eingestellt, gebend `{ sent, failed, skippedOptedOut, skippedNoPhone }` damit der Kiosk zeigen kann, was übersprungen wurde.
 
 ## Der Kiosk (B1Checkin)
 
-Screens sind expo-router-Dateien unter `B1Checkin/app/`; screen-übergreifender Zustand lebt in einer statischen `CachedData`-Klasse (`src/helpers/CachedData.ts`), nicht in React-Zustand.
+Bildschirme sind Expo-Router-Dateien unter `B1Checkin/app/`; Kreuz-Bildschirm-Status lebt in einer statischen `CachedData` Klasse (`src/helpers/CachedData.ts`), nicht React-Zustand.
 
 ```
 index (boot/auto-login) → selectChurch → services ──▶ lookup ──▶ household ──▶ checkinComplete
@@ -141,60 +142,60 @@ index (boot/auto-login) → selectChurch → services ──▶ lookup ──▶
              labelTemplates               │                                            to lookup
 ```
 
-1. **Suche** (`app/lookup.tsx`) — Suche nach Telefonnummer (`GET /membership/people/search/phone?number=`, letzte 4 Ziffern oder vollständig) oder nach Name (`GET /membership/people/search?term=`). Die Auswahl einer Übereinstimmung lädt den Haushalt (`GET /membership/people/household/{householdId}`) und bestehende Besuche (`GET /attendance/visits/checkin`), wobei `pendingVisits` mit den letztwöchigen Auswahlen vorbelegt wird.
-2. **Haushaltsüberprüfung** (`app/household.tsx`, `src/components/MemberList.tsx`) — jede Mitgliederzeile zeigt ein Bereits-eingecheckt-Abzeichen, ein Allergie-/`nametagNotes`-Abzeichen und ihre aktuellen Raum-Chips. Das Ausklappen eines Mitglieds listet jede Gottesdienstzeit mit einer Raum-Schaltfläche plus den Mitglied-/Gast-/Betreuer-Check-in-Typ-Chips (`MemberServiceTimes.tsx`).
-3. **Gruppenzuweisung** (`app/selectGroup.tsx`) — ein aus `serviceTime.groups` aufgebauter Kategoriebaum, mit alters-/klassenstufengeeigneten Räumen hervorgehoben und ungeeigneten abgedunkelt hinter einer Mitarbeiterbestätigung (siehe [Alters-/Klassenstufen-Eignung](#alters-klassenstufen-eignung-kiosk-seitig)); das Auswählen eines Raums schreibt eine `{ session: { serviceTimeId, groupId } }`-visitSession in den anstehenden Besuch dieser Person (`src/helpers/VisitSessionHelper.ts`). „Keine" löscht es.
-4. **Abschluss** (`app/checkinComplete.tsx`) — `POST /attendance/visits/checkin` mit `pendingVisits` (jeder mit seinem `checkinType` gestempelt), druckt dann Etiketten, wenn ein Drucker konfiguriert ist, und kehrt automatisch zur Suche zurück. Eine `409`-Kapazitätsantwort zeigt den benannten vollen/geschlossenen Raum; eine Verhältnis-Warnung bietet eine Mitarbeiterbestätigung an, die mit `acknowledgeWarnings=true` erneut einreicht.
+1. **Suche** (`app/lookup.tsx`) — Nach Telefon suchen (`GET /membership/people/search/phone?number=`, letzte-4 oder vollständig) oder nach Name (`GET /membership/people/search?term=`). Ein Treffer auswählen lädt den Haushalt (`GET /membership/people/household/{householdId}`) und bestehende Besuche (`GET /attendance/visits/checkin`), Aussaat `pendingVisits` mit letzte Woche Auswahlen.
+2. **Haushalt-Überprüfung** (`app/household.tsx`, `src/components/MemberList.tsx`) — jede Mitglied-Reihe zeigt ein bereits-eingecheckt Badge, Allergie/`nametagNotes` Badge, und ihre aktuelle Raum-Chips. Erweiterung eine Mitglied listet auf jede Service-Zeit mit einen Knopf für einen Raum plus die Mitglied / Gast / Freiwilligen Check-In-Typ-Chips (`MemberServiceTimes.tsx`).
+3. **Gruppen-Zuordnung** (`app/selectGroup.tsx`) — ein Kategorien-Baum gebaut von `serviceTime.groups`, mit Alter-/Klassenstufen-berechtigte Zimmer hervorgehoben und berechtigte die hinter einer Personal-Bestätigung verwischt (siehe [Alter-/Klassenstufen-Berechtigung](#alterklassenstufen-berechtigung-kiosk-seitig)); Ein Raum auswählen schreibt einen `{ session: { serviceTimeId, groupId } }` visitSession zu dieser Person's einzige Besuch (`src/helpers/VisitSessionHelper.ts`). "Keiner" leert es.
+4. **Vollständig** (`app/checkinComplete.tsx`) — `POST /attendance/visits/checkin` mit `pendingVisits` (jeder gestempelt mit seinen `checkinType`), danach Druck-Labels wenn ein Drucker konfiguriert ist und Auto-Rückkehr zu Suche. Einen `409` Kapazitäts-Antwort zeigt das genannte voll/geschlossene Zimmer; ein Verhältnis-Warnung bietet eine Personal-Bestätigung, die erneut mit `acknowledgeWarnings=true` einsendet.
 
-Der **Check-out**-Screen (`app/checkout.tsx`) akzeptiert den 4-stelligen Sicherheitscode über ein automatisch fokussiertes Eingabefeld — sodass USB-/Bluetooth-Tastatur-Wedge-Barcode-Scanner ohne Kamera funktionieren — oder eine Bildschirmtastatur mit demselben Alphabet, die bei 4 Zeichen automatisch absendet. Er sucht den Code, zeigt die abzuholenden Kinder und präsentiert die **vertrauenswürdigen Abholpersonen** des Haushalts als tippbare Karten neben einem Fotoraster der Haushalts-Erwachsenen (plus eine „Andere"-Freitext-Option, die unscharf gegen nicht autorisierte Namen geprüft wird — siehe [Vertrauenswürdige und nicht autorisierte Abholung](#vertrauenswurdige-und-nicht-autorisierte-abholung)), dann sendet er `POST /attendance/visits/checkout` mit dem Namen/der ID der auswählenden Person. Im besetzten Modus bietet der Screen auch **Eltern benachrichtigen** (`POST /attendance/checkin/page`) und einen **Sicherheitsetikett-Nachdruck** — `reprint()` baut die Etiketten der Familie mit `LabelHelper.getAllLabelsFor(...)` neu auf und führt sie durch dieselbe `PrintUI`-Pipeline wie beim Check-in.
+Der **Abmeldungs**-Bildschirm (`app/checkout.tsx`) akzeptiert den 4-stelligen Sicherheitscode durch eine Auto-fokussierte Eingabe — so USB/Bluetooth Tastatur-Keil Barcode-Scanner funktionieren mit keinen Kamera — oder auf Seite Tastatur mit dem gleichen Alphabet, Auto-Absenden bei 4 Zeichen. Es schaut den Code auf, zeigt die Kinder Abholsituationen, und präsentiert die Haushalt's **Vertrauenswürdige Abholer-Personen** als Tippbar-Karten neben einem Photo-Gitter von Haushalt-Erwachsenen (plus ein "Anderer" frei-Text-Option das ist Fuzzy-überprüft gegen nicht-autorisiert Namen — siehe [Vertrauenswürdige und nicht-autorisierte Abholer](#vertrauenswürdige-und-nicht-autorisierte-abholer)), dann postet `POST /attendance/visits/checkout` mit der Abhol-Name/ID. Im mannierter Modus der Bildschirm bietet auch **Seite Eltern** (`POST /attendance/checkin/page`) und ein **Sicherheits-Label-Neudruck** — `reprint()` erneuert die Familie's Labels mit `LabelHelper.getAllLabelsFor(...)` und füttert sie über die gleiche `PrintUI` Pipeline als Check-In.
 
-Die Stationspersönlichkeit ist ein AsyncStorage-Flag `@StationMode` (`"self"` | `"manned"`, umgeschaltet in `app/adminSettings.tsx`). Der besetzte Modus fügt den Check-out-Einstiegspunkt auf dem Suchbildschirm und die Bearbeitung des Mitgliederprofils pro Person (`POST /membership/people`) vom Haushaltsbildschirm aus hinzu. Die Kiosk-Härtung ist eingebaut: eine optionale PIN (`app/setPin.tsx`, `src/components/PinEntryModal.tsx`) sichert die Admin- und Drucker-Bildschirme ab, der Admin-Bildschirm öffnet sich nur über 7 schnelle Tipps auf das Kopfzeilen-Logo, und ein Leerlauf-Werbebildschirm (`src/hooks/useInactivityTimer.ts`) übernimmt zwischen Familien.
+Stations-Persönlichkeit ist einen AsyncStorage-Flagge `@StationMode` (`"self"` | `"manned"`, ein- aus geschaltet in `app/adminSettings.tsx`). Mannierter Modus fügt den Check-Out-Einstiegspunkt auf der Suche-Bildschirm und pro-Mitglied-Profil-Bearbeitung (`POST /membership/people`) von der Haushalt-Bildschirm. Kiosk-Verstärkung ist gebaut: ein Optional-PIN (`app/setPin.tsx`, `src/components/PinEntryModal.tsx`) Gatter die Admin und Drucker-Bildschirme, die Admin-Bildschirm öffnet nur über 7 rasante Tappel auf die Kopfzeile-Logo und einen müßig-Anzug-Bildschirm (`src/hooks/useInactivityTimer.ts`) übernimmt zwischen Familien.
 
-## Selbst-Check-in (B1App)
+## Self Check-In (B1App)
 
-Mitglieder checken sich vom b1.church-Portal aus am Screen `/mobile/checkin` ein (geroutet von `B1App/src/app/[sdSlug]/mobile/components/ScreenRouter.tsx` zu `screens/CheckinPage.tsx`). Es erfordert einen angemeldeten Nutzer und durchläuft dieselben vier Schritte wie der Kiosk — Gottesdienste → Haushalt → Gruppen → Abschluss — gegen dieselben Endpunkte, mit Zustand gehalten in `B1App/src/helpers/CheckinHelper.ts`. Die Unterschiede zum Kiosk: Der Haushalt kommt von der eigenen `householdId` des angemeldeten Nutzers (kein Suchschritt), und es gibt kein Etikettendrucken — stattdessen zeigt der Abschlussbildschirm den Sicherheitscode des Batches als QR-Code (`qrcode.react`) mit dem Hinweis „Dies an einer Check-in-Station zeigen". Ist der Haushalt beim Laden der Seite bereits eingecheckt, zeigt eine Schaltfläche „Check-in-Code anzeigen" den QR-Code erneut aus dem `securityCode` des bestehenden Besuchs. Der Check-in wird sofort zum Zeitpunkt der Einreichung erfasst (es gibt keinen anstehenden Zustand); der QR-Code steuert nur das Etikettendrucken am Kiosk.
+Mitglieder checken ein von die b1.church Portal bei `/mobile/checkin` Bildschirm (engeführt durch `B1App/src/app/[sdSlug]/mobile/components/ScreenRouter.tsx` zu `screens/CheckinPage.tsx`). Es erfordert einen angemeldeten Benutzer und läuft die gleichen vier Schritte als der Kiosk — Dienstleistungen → Haushalt → Gruppen → Vollständig — gegen die identisch Endpunkte, mit Zustand, der sich `B1App/src/helpers/CheckinHelper.ts` hält. Die Unterschiede von Kiosk: den Haushalt kommt von des angemeldeten Benutzers eigener `householdId` (kein Suche Schritt), und es gibt kein Label-Druck — stattdessen die Fertig-Bildschirm zeigt des Batch's Sicherheitscode als ein QR (`qrcode.react`) mit einem "zeigen Sie das zu einer Check-In-Station" Hinweis. Wenn der Haushalt bereits eingecheckt ist, wenn die Seite lädt, eine "Zeigen Sie Check-In-Code"-Knopf zeige das QR von den bestehenden Besuch's `securityCode` erneut. Das Check-In wird sofort beim Absenden-Zeit notiert (es gibt keinen einzige Zustand); die QR nur fährt Label-Druck bei dem Kiosk.
 
-**Etikettendruck vom Handy zum Kiosk** (`B1Checkin/app/scan.tsx`, erreicht über die Schaltfläche „Code scannen" auf dem Suchbildschirm): Der Kiosk öffnet eine `expo-camera`-`CameraView` (standardmäßig frontseitig, umschaltbar), die nach QR-Codes scannt. Eine gescannte Payload wird akzeptiert, wenn sie ein reiner 4-stelliger Code im Sicherheitscode-Alphabet ist, sodass sowohl der B1App-QR-Code als auch der QR-Block eines gedruckten Etiketts funktionieren. Der Screen folgt dann dem Check-out-Nachdruck-Pfad — `GET /attendance/visits/code/{code}` → `GET /membership/people/ids` → `LabelHelper.getAllLabelsFor(visits, people, code)` → `PrintUI` — und kehrt zur Suche zurück. Beim Scannen erfolgt kein Anwesenheits-Schreibvorgang; nur Etiketten. Codes ohne aktive Besuche, Stationen ohne Drucker und Gruppen ohne Etiketten zeigen jeweils einen Toast und kehren zur Suche zurück.
+**Telefon-zu-Kiosk Label-Druck** (`B1Checkin/app/scan.tsx`, erreicht von die "Scan-Code"-Knopf auf der Suche-Bildschirm): der Kiosk öffnet ein `expo-camera` `CameraView` (Front-seitig Standard, schaltbar) Scann für QR-Codes. Ein gescannter Nutzlast wird akzeptiert, wenn es ein blotterer 4-stelliger Code in dem Sicherheitscode-Alphabet ist, daher beide die B1App QR und ein gedruckt-Label's QR-Block funktioniert. Der Bildschirm folgt danach die Check-Out-Neudruck-Pfad — `GET /attendance/visits/code/{code}` → `GET /membership/people/ids` → `LabelHelper.getAllLabelsFor(visits, people, code)` → `PrintUI` — und kehrt zu Suche zurück. Keine Anwesenheit-Schreiben geschieht zu Scann-Zeit; Labels-nur. Codes mit keine aktive Besuche, Stationen mit kein Drucker, und Label-lose Gruppen Jede Oberfläche ein Toast und zurück zu Suche.
 
-Typen und `ApiHelper`/`ArrayHelper` kommen aus `@churchapps/helpers` und `@churchapps/apphelper`; keine React-Komponenten werden mit B1Admin geteilt.
+Typen und `ApiHelper`/`ArrayHelper` kommen von `@churchapps/helpers` und `@churchapps/apphelper`; keine React-Komponenten sind geteilt mit B1Admin.
 
 ## Admin-seitige Anwesenheit (B1Admin)
 
-- **Setup** — `/attendance` (`B1Admin/src/attendance/AttendancePage.tsx`) rendert den Strukturbaum und erstellt Gottesdienste (`ServiceEdit.tsx`) und Gottesdienstzeiten (`ServiceTimeEdit.tsx`). Standortdaten kommen über den Hook `useCampuses()` aus Membership.
-- **Manuelle Anwesenheit** liegt auf der Groups-Seite, nicht im Anwesenheitsabschnitt: `B1Admin/src/groups/components/GroupSessionsTab.tsx` erstellt Sessions (`POST /attendance/sessions`) und markiert Personen als anwesend über `POST /attendance/visitsessions/log`, was den Besuch für diese Person und Session findet oder erstellt. Gruppenleiter können die Anwesenheit für ihre eigenen Gruppen erfassen, ohne die Berechtigung `attendance.edit` — die Controller prüfen `au.leaderGroupIds`.
-- **Berichte** — Anwesenheitstrend und Gruppenanwesenheit sind serverdefinierte Berichte (`B1Admin/src/components/reporting/ReportWithFilter.tsx` gegen ReportingApi); die Historie pro Person ist `GET /attendance/attendancerecords?personId=` (`B1Admin/src/people/components/PersonAttendance.tsx`).
+- **Setup** — `/attendance` (`B1Admin/src/attendance/AttendancePage.tsx`) rendert den Struktur-Baum und erstellt Dienstleistungen (`ServiceEdit.tsx`) und Service-Zeiten (`ServiceTimeEdit.tsx`). Campus-Daten kommen von Mitgliedschaft über das `useCampuses()` Haken.
+- **Manuelle Anwesenheit** lebt auf der Gruppen-Seite, nicht dem Anwesenheits-Bereich: `B1Admin/src/groups/components/GroupSessionsTab.tsx` erstellt Sitzungen (`POST /attendance/sessions`) und kennzeichnet Personen anwesend via `POST /attendance/visitsessions/log`, welche findet-oder-erstellt der Besuch für diese Person und Sitzung. Gruppen-Leiter können Anwesenheit für ihre eigenen Gruppen notieren ohne der `attendance.edit` Berechtigung — die Controller überprüfen `au.leaderGroupIds`.
+- **Berichte** — Anwesenheit-Strömung und Gruppen-Anwesenheit sind Server-definierten Berichte (`B1Admin/src/components/reporting/ReportWithFilter.tsx` gegen ReportingApi); pro-Personen-Historie ist `GET /attendance/attendancerecords?personId=` (`B1Admin/src/people/components/PersonAttendance.tsx`).
 
-## Etikettendruck
+## Label-Druck
 
 ### Vorlagen und der Designer
 
-Gemeinden gestalten ihre eigenen Etiketten in B1Admin unter `/mobile/checkin/labels` (`B1Admin/src/attendance/LabelsPage.tsx` + `components/LabelEditor.tsx`, erreicht von der Check-In-Einstellungsseite). Eine Vorlage ist eine `labelTemplates`-Zeile, deren `content` ein JSON-Array von Blöcken ist — `text`, `field`, `barcode`, `qrcode` oder `box` — jeder in Prozentkoordinaten positioniert mit Schriftart, Ausrichtung, Symbologie (`code39`/`code128`/`qr`) und optionalen Sichtbarkeitsbedingungen (z. B. die Allergie-Box nur rendern, wenn `person.nametagNotes` nicht leer ist). Es gibt zwei `labelType`s: `nametag` (eines pro eingecheckter Person; Felder wie `person.displayName`, `sessions`, `securityCode`) und `pickup` (eines pro Familie; Felder wie `children`, `childrenAllergies`). Der Server erzwingt eine einzelne Standardvorlage pro Typ pro Gemeinde (`LabelTemplateController.save`). Der Designer liefert Starter-Vorlagen aus, die die gebündelten Etiketten des Kiosks widerspiegeln, und Vorschauen gegen Beispieldaten.
+Kirchen gestalten ihre eigenen Labels in B1Admin unter `/mobile/checkin/labels` (`B1Admin/src/attendance/LabelsPage.tsx` + `components/LabelEditor.tsx`, erreicht von die Check-In-Einstellungen-Seite). Eine Vorlage ist eine `labelTemplates` Reihe deren `content` ist ein JSON Anordnung von Blöcken — `text`, `field`, `barcode`, `qrcode`, oder `box` — jede positioniert in Prozent-Koordinaten mit Schrift, Ausrichtung, Symbologie (`code39`/`code128`/`qr`), und Sichtbarkeits-Bedingungen (z.B. nur Render die Allergie-Box wenn `person.nametagNotes` ist nicht-leert). Zwei `labelType`s bestehen: `nametag` (eins pro eingecheckt Person; Felder wie `person.displayName`, `sessions`, `securityCode`) und `pickup` (eins pro Familie; Felder wie `children`, `childrenAllergies`). Der Server erzwingt einen einzelnen Grundeinstellung pro Typ pro Kirche (`LabelTemplateController.save`). Der Designer verschifft Anfangs-Vorlagen spiegelnd den Kiosk's gebündelten Labels und Vorschau gegen Probe-Daten.
 
-### Rendering und Drucken am Kiosk
+### Rendering und Druck auf dem Kiosk
 
-Beim Abschluss des Check-ins entscheidet `B1Checkin/src/helpers/LabelHelper.ts` anhand der Gruppenflags jedes anstehenden Besuchs, was gedruckt wird: Namensschilder für `printNametag`-Gruppen, plus ein Familien-Abholetikett, wenn ein Besuch eine `parentPickup`-Gruppe getroffen hat. Der Sicherheitscode aus der Check-in-Antwort gelangt auf Kinder-Namensschilder und das Abholetikett; Erwachsenen-Namensschilder werden ohne Code gedruckt. Wenn die Gemeinde Vorlagen hat, verwandelt `LabelRenderer` (`src/helpers/LabelRenderer.ts`) Blöcke + einen Feldkontext in ein eigenständiges HTML-Dokument; andernfalls werden gebündelte HTML-Etiketten in `B1Checkin/assets/labels/` mit Platzhalterersetzung verwendet.
+Bei Check-In-Fertig, `B1Checkin/src/helpers/LabelHelper.ts` trifft eine Wahl, was zu drucken von den Gruppen-Flaggen auf jeden einzige Besuch: Namenss-Tags für `printNametag` Gruppen, plus ein Familie-Abhol-Label wenn jeglicher Besuch ein `parentPickup` Gruppen traf. Der Sicherheitscode von der Check-In-Antwort geht zu Kind-Namenss-Tags und die Abhol-Label; Erwachsenen-Namenss-Tags drucken ohne einen Code. Wenn Kirche Vorlagen haben, `LabelRenderer` (`src/helpers/LabelRenderer.ts`) Wendungen Blöcke + eine Feld-Kontext zu einen eigenständig HTML-Dokument; ansonsten gebündelt HTML-Labels in `B1Checkin/assets/labels/` sind mit Platzhalter-Austausch. 
 
-Barcodes werden als Inline-SVG von reinen TypeScript-Encodern in `B1Checkin/src/helpers/barcode.ts` erzeugt — Code-39-Mustertabellen und Code-128-(Codesatz B mit Mod-103-Prüfsumme)-Breitentabellen, plus QR über das `qrcode`-Paket. **Diese Encoder sind bewusst in B1Admin dupliziert** (`LabelEditor.tsx` bindet dieselben Tabellen inline ein, vermerkt in einem Codekommentar), sodass Designer-Vorschauen pixelgenau der Kiosk-Ausgabe entsprechen; eine Änderung an einem muss im anderen gespiegelt werden.
+Strichkodes sind erzeugt als Inline-SVG durch rein-TypeScript Kodierer in `B1Checkin/src/helpers/barcode.ts` — Code 39 Muster-Tabellen und Code 128 (Code setzen B mit mod-103 Checksum) Breite-Tabellen, plus QR über die `qrcode` Paket. **Diese Kodierer sind absichtlich dupliziert in B1Admin** (`LabelEditor.tsx` inline die gleichen Tabellen, notiert in einem Code-Kommentar) daher Designer-Vorschau sind Pixel-treu zu Kiosk-Ausgang; eine Änderung zu einen muß in die ander spiegeln.
 
-Die Druck-Pipeline (`src/components/PrintUI.tsx`) rendert jedes HTML-Etikett in einer `WebView`, erfasst es über `react-native-view-shot` als JPG und übergibt die Bild-URIs an das native **printer-helper**-Expo-Modul (`B1Checkin/modules/printer-helper/`). Das Modul stellt `scan()`, `checkInit()`, `printUris()` und Status-Events bereit, mit einem Anbieter pro Marke auf beiden Plattformen:
+Die Druck-Pipeline (`src/components/PrintUI.tsx`) rendert jeden HTML-Label in einer `WebView`, erfasst es zu JPG über `react-native-view-shot`, und verhandelt die Bild-URIs zum nativ **Drucker-Helfer** Expo-Modul (`B1Checkin/modules/printer-helper/`). Der Modul legt `scan()`, `checkInit()`, `printUris()` und Status-Ereignisse frei, mit einem Anbieter pro Marke auf beide Plattformen:
 
-| Marke | Android | iOS | Anmerkungen |
+| Marke | Android | iOS | Notizen |
 |-------|---------|-----|-------|
-| Brother | `BrotherProvider.kt` (Brother-Print-SDK) | `BrotherProvider.swift` (`BRLMPrinterKit.xcframework`) | QL-Serie Netzwerkdrucker (QL-800/810W/820NWB/1100/1110NWB…), gestanzte 29×90-Etiketten, die empfohlene Standardeinstellung |
-| Zebra | `ZebraProvider.kt` (Link-OS-SDK) | `ZebraProvider.swift` + `ZebraBridge` | Netzwerkerkennung + TCP-/ZPL-Bilddruck |
+| Brother | `BrotherProvider.kt` (Brother-Druck-SDK) | `BrotherProvider.swift` (`BRLMPrinterKit.xcframework`) | QL-Serie Netzwerk-Drucker (QL-800/810W/820NWB/1100/1110NWB…), gestanzte 29×90 Labels, der empfohlene Grund |
+| Zebra | `ZebraProvider.kt` (Link-OS SDK) | `ZebraProvider.swift` + `ZebraBridge` | Netzwerk-Entdeckung + TCP/ZPL Bild-Druck |
 
-Die Druckerauswahl liegt bei `app/printers.tsx` (Netzwerk-Scan liefert `brand~model~ip`-Einträge; die Auswahl bleibt im AsyncStorage erhalten), und `src/helpers/PrinterLog.ts` führt ein geräteinternes Diagnoseprotokoll, das über einen Live-Status-Punkt in der Kiosk-Kopfzeile sichtbar ist.
+Drucker-Auswahl lebt bei `app/printers.tsx` (Netzwerk-Scan gibt `brand~model~ip` Einträge zurück; die Auswahl behält bis AsyncStorage), und `src/helpers/PrinterLog.ts` behält einen auf-Gerät diagnose-Log, der über einen leben Status-Punkt in die Kiosk-Kopfzeile gestellt.
 
-## Gastregistrierung
+## Gast-Registrierung
 
-Zwei Wege erstellen eine Person mitten im Check-in:
+Zwei Pfade erstellen eine Person Mitte-Check-In:
 
-- **Am Kiosk** — „Gast hinzufügen" im Haushaltsbildschirm öffnet `B1Checkin/app/addGuest.tsx`, was zunächst `GET /membership/people/search?term=` nach einer bestehenden Nicht-Mitglieds-Übereinstimmung durchsucht und andernfalls eine mit `POST /membership/people` erstellt, angehängt an den aktuellen Haushalt. Der Gast durchläuft dann die Gruppenzuweisung wie jedes Mitglied.
-- **Selbstbedienung via QR** — wenn die Gemeindeeinstellung `enableQRGuestRegistration` aktiv ist (konfiguriert in den Check-In-Einstellungen von B1Admin, gelesen aus `GET /membership/settings/public/{churchId}`), zeigt der Kiosk-Suchbildschirm einen QR-Code, der zu `https://{subdomain}.b1.church/guest-register?serviceId=` verlinkt. Diese B1App-Seite (`src/app/[sdSlug]/(public)/guest-register/page.tsx`) lässt eine besuchende Familie sich selbst auf ihrem eigenen Handy über den anonymen Endpunkt `POST /membership/people/guest-register` registrieren, wodurch die Kiosk-Schlange in Bewegung bleibt.
+- **Bei dem Kiosk** — die Haushalt-Bildschirm's "Gast hinzufügen" öffnet `B1Checkin/app/addGuest.tsx`, welche zuerst suchen `GET /membership/people/search?term=` für einen bestehend nicht-Mitglied Treffer und ansonsten erstellt eins mit `POST /membership/people`, beigefügt zum aktuelle Haushalt. Der Gast fließt danach durch Gruppen-Zuordnung wie jeglicher Mitglied.
+- **Self-Serve über QR** — wenn die Kirche-Einstellung `enableQRGuestRegistration` ist an (konfiguriert in B1Admin's Check-In-Einstellungen, lesen von `GET /membership/settings/public/{churchId}`), Kiosk Suche-Bildschirm zeigt einen QR-Code verlinkung zu `https://{subdomain}.b1.church/guest-register?serviceId=`. Diesen B1App Seite (`src/app/[sdSlug]/(public)/guest-register/page.tsx`) lässt ein Besuch-Familie sich selbst auf ihrem eigenen Telefon registrieren über die anonym `POST /membership/people/guest-register` Endpunkt, hält die Kiosk-Linie fahrend.
 
-## Verwandte Seiten
+## Zugehörige Seiten
 
-- [Attendance-Endpunkte](../api/endpoints/attendance) -- Vollständige REST-Oberfläche für Standorte, Gottesdienste, Sessions, Besuche und Besuchs-Sessions
-- [Membership-Endpunkte](../api/endpoints/membership) -- Personen, Haushalte und Gruppen
-- [Webhooks](../api/webhooks) -- Die Ereignisse `session.created`, `attendance.recorded` und `attendance.checkout`
-- [Modulstruktur](../api/module-structure) -- Wie das Attendance-Modul serverseitig organisiert ist
+- [Attendance-Endpunkte](../api/endpoints/attendance) — Vollständige REST-Oberfläche für Campus, Dienstleistungen, Sitzungen, Besuche und Besuch-Sitzungen
+- [Membership-Endpunkte](../api/endpoints/membership) — Personen, Haushalte und Gruppen
+- [Webhooks](../api/webhooks) — Die `session.created`, `attendance.recorded` und `attendance.checkout` Ereignisse
+- [Modulstruktur](../api/module-structure) — Wie das Anwesenheits-Modul Server-seitig organisiert ist

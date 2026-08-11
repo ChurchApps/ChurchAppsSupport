@@ -6,48 +6,48 @@ title: "Gruppehelse"
 
 <div class="article-intro">
 
-Gruppehelsedashbordet gir deg en fugleperspektiv over hvordan alle gruppene dine går — medlemstendens, gjennomsnittlig oppmøte og vekst eller reduksjon de siste 90 dagene — alt i en enkelt sorterbar tabell.
+Gruppehelse-instrumentpanelet gir deg et fugleperspektiv av hvordan alle gruppene dine går -- medlemskaps-trender, oppmøte-gjennomsnitt og vekst eller attrisjon over de siste 90 dagene -- alt i en enkelt sorterbar tabell.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du trenger minst noen få grupper med medlemmer for å se meningsfull data. Se [Opprette grupper](creating-groups).
-- Oppmøtedata er hentet fra registrerte økter. Se [Oppmøte](../attendance/)-seksjonen.
+- Du trenger minst noen få grupper med medlemmer for å se meningsfulle data. Se [Opprett grupper](creating-groups).
+- Oppmøtedata blir trukket fra registrerte økter. Se [Oppmøte](../attendance/)-seksjonen.
 
 </div>
 
 ## Åpning av gruppehelse
 
-I B1 Admin går du til **Grupper** i venstresidemeny og velger **Helse**. Dashbordet laster en tabell med en rad per gruppe.
+I B1 Admin, åpne **seksjonsmenyene** i det øvre venstre hjørnet og velg **Mennesker**, deretter klikker du **Grupper**-fanen i navigasjonslinjen og velger **Helse**. Instrumentpanelet laster en tabell med en rad per gruppe.
 
 ## Kolonner
 
 | Kolonne | Hva den viser |
 |--------|--------------|
-| **Navn** | Gruppenavnet, koblet til gruppens detaljerside |
+| **Navn** | Gruppenavnet, knyttet til gruppens detaljside |
 | **Kategori** | Gruppens kategori |
-| **Medlemmer** | Gjeldende antall aktive medlemmer |
-| **Ble medlem (90d)** | Medlemmer som ble med i løpet av de siste 90 dagene |
-| **Forlot (90d)** | Medlemmer som forlot i løpet av de siste 90 dagene |
+| **Medlemmer** | Gjeldende aktiv medlemsantal |
+| **Tiltrådt (90d)** | Medlemmer som tiltrådte de siste 90 dagene |
+| **Forlatt (90d)** | Medlemmer som forlot de siste 90 dagene |
 | **Churn (90d)** | Netto churn-rate som prosent over 90 dager |
-| **Gjennomsnittlig oppmøte** | Gjennomsnittlig hovedtall per oppmøtesesjon |
+| **Gjennomsnittlig oppmøte** | Gjennomsnittlig oppmøte per oppmøte-sesjon |
 
-Klikk en hvilken som helst kolonneoverskrift for å sortere tabellen etter den kolonnen. Klikk igjen for å reversere sorterings retningen.
+Klikk en hvilken som helst kolonnehode for å sortere tabellen etter den kolonnen. Klikk igjen for å snu sorterings-retningen.
 
-## Bruke helsdata
+## Bruk av helsedata
 
-- **Høy churn + lave sammenslutninger** — en gruppe som krymper og ikke erstatter tapte medlemmer. Verdt en samtale med gruppelederen.
-- **Høye sammenslutninger + lavt oppmøte** — mennesker registrerer seg men dukker ikke opp. Vurder engasjementoppfølging.
-- **Høyt gjennomsnittlig oppmøte** — en frisk, aktiv gruppe. Potensial modell for andre grupper.
+- **Høy churn + lav tiltredelse** -- en gruppe som krymper og ikke erstatter tapte medlemmer. Verdt en samtale med gruppeleder.
+- **Høy tiltredelse + lav oppmøte** -- mennesker melder seg på men møter ikke opp. Vurder engasjement-oppfølging.
+- **Høyt gjennomsnittlig oppmøte** -- en sunn, aktiv gruppe. Potensiell modell for andre grupper.
 
 :::tip
-Når du klikker på et gruppenavn, går du direkte til gruppens detaljerside hvor du kan gjennomgå individuelle medlemmer, oppmøtehistorikk og kalenderbegivenheter.
+Klikk et gruppenavn for å gå direkte til gruppens detaljside der du kan gjennomgå individuelle medlemmer, oppmøteregistreringer og kalender-hendelser.
 :::
 
 ## Relaterte artikler
 
-- [Opprette grupper](creating-groups) — sett opp grupper
-- [Gruppemedlemmer](group-members) — administrer gruppemedlemskap
-- [Sporing av oppmøte](../attendance/tracking-attendance) — registrer oppmøtesesjonene som fyller dette dashbordet
+- [Opprett grupper](creating-groups) -- sett opp grupper
+- [Gruppemedlemmer](group-members) -- administrer gruppedeltakelse
+- [Sporing av oppmøte](../attendance/tracking-attendance) -- registrer oppmøte-økter som mater dette instrumentpanelet

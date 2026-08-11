@@ -1,70 +1,70 @@
 ---
-title: "Pläne anzeigen"
+title: "Anzeigen von Plänen"
 ---
 
-# Pläne anzeigen
+# Anzeigen von Plänen
 
 <div class="article-intro">
 
-Die Seite „Pläne" gibt Ihnen einen klaren Überblick über alle Dienstpläne, denen Sie zugewiesen sind. Sie verwendet ein Master-Detail-Layout, sodass Sie Ihre Pläne schnell durchsuchen und sich in die Details eines beliebigen Plans vertiefen können.
+Die Pläne-Seite gibt Ihnen eine klare Ansicht aller Dienstpläne, denen Sie zugewiesen sind. Es verwendet ein Master-Detail-Layout, sodass Sie schnell Ihre Pläne durchsuchen und sich in die Details von jedem einzudringen können.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Voraussetzungen</h4>
 
-- Sie müssen sich [anmelden](../getting-started/logging-in.md) bei Ihrem B1.church-Konto.
-- Sie müssen mindestens einem Dienstplan zugewiesen sein. Wenn Sie keine Pläne sehen, wenden Sie sich an Ihren Kirchenadministrator oder Dienstleiter.
+- Sie müssen [angemeldet](../getting-started/logging-in.md) bei Ihrem B1.church-Konto sein.
+- Sie müssen mindestens einen Dienstplan zugewiesen sein. Wenn Sie keine Pläne sehen, kontaktieren Sie Ihren Kirchen-Administrator oder Ministerium-Leiter.
 
 </div>
 
-## Greifen Sie auf Ihre Pläne zu
+## Zugriff auf Ihre Pläne
 
-1. Klicken Sie auf **Plans** in der [Navigationsleiste auf der Seite](../getting-started/navigating.md).
-2. Sie werden eine Liste Ihrer Pläne auf der linken Seite der Seite sehen.
+1. Klicken Sie auf **Pläne** in der [Navigationsleiste](../getting-started/navigating.md).
+2. Sie sehen eine Liste Ihrer Pläne auf der linken Seite der Seite.
 
-## Die Planliste
+## Die Plan-Liste
 
-Ihre Pläne werden im linken Bereich unter **My Plans** aufgelistet. Jeder Eintrag zeigt:
+Ihre Pläne werden im linken Panel unter **Meine Pläne** aufgelistet. Jeder Eintrag zeigt:
 
-- Den **Plannamen** (z. B. „Sunday Worship" oder „Kids Ministry")
-- Das **Dienstdatum**
-- Ihre **Position** (die Rolle, die Sie ausfüllen)
-- Ihren **Status** – farbcodiert, damit Sie auf einen Blick sehen können, ob Sie akzeptiert, abgelehnt oder noch nicht geantwortet haben
+- Der **Plan-Name** (zum Beispiel, "Sonntagsgottesdienst" oder "Kinder-Ministerium")
+- Das **Service-Datum**
+- Deine **Position** (die Rolle, die du erfüllst)
+- Dein **Status** -- Farbe-kodiert, sodass Sie auf einen Blick sehen können, ob Sie akzeptiert, abgelehnt oder noch nicht reagiert haben
 
-Oben in der Liste sehen Sie auch eine Option **Blockout Dates**. Klicken Sie darauf, um Daten zu verwalten, an denen Sie nicht verfügbar zum Dienen sind. Sie können Blockierungsdatumsbereiche hinzufügen, bearbeiten und entfernen, sodass Ihre Teamleiter wissen, wann sie um Sie herum planen müssen.
+Oben auf der Liste sehen Sie auch eine Option **Blockout Dates**. Klicken Sie darauf, um Daten zu verwalten, wann Sie nicht verfügbar zum Dienen sind. Sie können Blockout-Datums-Bereiche hinzufügen, bearbeiten und entfernen, sodass Ihre Teamleiter wissen, wann sie um Sie herum planen müssen.
 
 :::info
-Ihre Gemeinde kann Ihnen möglicherweise **Erinnerungen** per E-Mail und als App-Benachrichtigung vor den Diensten senden, zu denen Sie eingeplant sind. Wenn Sie noch nicht geantwortet haben, können Sie direkt aus der Erinnerungs-E-Mail **akzeptieren** oder **ablehnen** – keine Anmeldung erforderlich.
+Ihre Kirche kann **Erinnerungen** vor den Dienstleistungen senden, die Sie eingeplant sind, per E-Mail und als App-Benachrichtigung. Wenn Sie noch nicht reagiert haben, können Sie **Annehmen** oder **Ablehnen** direkt aus der Erinnerungs-E-Mail -- ohne Anmeldung erforderlich.
 :::
 
-## Plandetails anzeigen
+## Anzeigen von Plan-Details
 
-Klicken Sie auf einen beliebigen Plan in der Liste, um seine Details im rechten Bereich zu öffnen. Die Detailansicht umfasst:
+Klicken Sie auf einen beliebigen Plan in der Liste, um seine Details im rechten Panel zu öffnen. Die Detailansicht umfasst:
 
-- **Position details** – Ihre zugewiesene Position mit erforderlichen Zeiten und Ihrem aktuellen Status. Wenn Sie noch nicht geantwortet haben, können Sie direkt aus dieser Ansicht auf **Accept** oder **Decline** klicken.
-- **Notes** – Alle Notizen, die der Plan-Ersteller für das Team hinzugefügt hat.
-- **Order of Service** – Die vollständige Dienstordnung mit Zeitpunkt, Elementen und Beschreibungen. Weitere Details finden Sie unter [Service Order](./service-order.md).
-- **Team assignments** – Eine Zusammenfassung aller Teammitglieder und ihrer Positionen, damit Sie sehen können, wer sonst noch neben Ihnen dient.
+- **Position-Details** -- Ihre zugewiesene Position mit den erforderlichen Zeiten und Ihrem aktuellen Status. Wenn Sie noch nicht reagiert haben, können Sie **Annehmen** oder **Ablehnen** direkt aus dieser Ansicht.
+- **Notizen** -- Alle Notizen, die der Plan-Ersteller für das Team hinzugefügt hat.
+- **Dienstleistungs-Reihenfolge** -- Die vollständige Dienstleistungs-Reihenfolge mit Zeitpunkt, Elementen und Beschreibungen. Siehe [Dienstleistungs-Reihenfolge](./service-order.md) für weitere Details.
+- **Team-Zuordnungen** -- Eine Zusammenfassung aller Teamitglieder und ihrer Positionen, sodass Sie sehen können, wer sonst neben Ihnen dient.
 
 :::tip
-Wenn Sie mehrere Aufträge über verschiedene Pläne hinweg haben, wird die Liste nach Datum sortiert, sodass Ihre bevorstehenden Verpflichtungen zuerst angezeigt werden. Überprüfen Sie regelmäßig, um über Ihren Zeitplan auf dem Laufenden zu bleiben.
+Wenn Sie mehrere Zuordnungen über verschiedene Pläne haben, wird die Liste nach Datum sortiert, sodass Ihre bevorstehenden Verpflichtungen zuerst angezeigt werden. Überprüfen Sie regelmäßig, um auf Ihrem Plan zu bleiben.
 :::
 
-## Lehreransicht für Lektionen
+## Teacher-Ansicht für Lektionen
 
-Wenn Ihr Plan zugehörige Lehrpläne von einem Inhaltsanbieter enthält (z. B. Lessons.church), werden Sie auf der Registerkarte **Order of Service** eine Umschalttaste sehen, mit der Sie zwischen den Ansichten **Summary** und **Teach** wechseln können.
+Wenn Ihr Plan zugehörige Lehrplan von einem Inhalts-Anbieter enthält (wie Lessons.church), sehen Sie eine Umschalt-Schaltfläche in der **Dienstleistungs-Reihenfolge**-Registerkarte, mit der Sie zwischen **Zusammenfassung** und **Lehre** Ansichten wechseln können.
 
-- **Summary view** – Zeigt die Dienstordnung mit Zeitpunkt und grundlegenden Lektionsabschnitten, ideal zum schnellen Überprüfen, was wann passiert
-- **Teach view** – Öffnet eine immersive Lektionspräsentation im Vollbildmodus, die für Lehrer konzipiert ist, mit formatierter Anleitung, eingebetteten Medien, Notizen und schrittweiser Anleitung
+- **Zusammenfassung-Ansicht** -- Zeigt die Dienstleistungs-Reihenfolge mit Zeitpunkt und grundlegenden Lektionsabschnitten, ideal zum schnellen Überprüfen, was geschieht und wann
+- **Lehre-Ansicht** -- Öffnet eine immersive, Vollbild-Lektions-Präsentation für Lehrer, mit formatierten Anweisungen, eingebetteten Medien, Notizen und Schritt-für-Schritt-Leitfaden
 
-Die Teach-Ansicht organisiert Lektionsinhalte in navigierbare Abschnitte, die als Registerkarten oben angezeigt werden. Sie können:
+Die Ansicht "Lehre" organisiert Lektions-Inhalte in navigierbare Abschnitte, die als Registerkarten oben angezeigt werden. Sie können:
 
-- Auf eine Abschnittsregisterkarte klicken, um direkt zu diesem Teil der Lektion zu springen
-- Durch den Lektionsinhalt scrollen, und die aktive Registerkarte wird automatisch aktualisiert, um Ihrer Position zu entsprechen
-- Auf Medienelementen (Videos, Bilder, Aktivitäten) klicken, um sie in einem Modaldialog anzuzeigen
-- Aktionstypen sehen, die unterschiedlich formatiert sind: **Say** wird in Gesprächsblasen angezeigt, **Do** in Fettdruck und **Note** in hervorgehobenen Anmerkungen
+- Tippen Sie auf eine Abschnitts-Registerkarte, um direkt zu diesem Teil der Lektion zu springen
+- Scrollen Sie durch den Lektions-Inhalt, und die aktive Registerkarte wird automatisch aktualisiert, um Ihre Position zu match
+- Klicken Sie auf Medien-Elemente (Videos, Bilder, Aktivitäten), um sie in einem Modal-Dialog anzuzeigen; Audio-Links (Lied-Aufnahmen, Predigten-Clips) spielen inline mit einem eingebauten Audio-Player
+- Sehen Sie Aktions-Typen unterschiedlich formatiert: **Sagen** erscheint in Gesprächs-Blasen, **Tun** in fett Text, und **Notiz** in hervorgehobenen Bestätigungen
 
 :::tip
-Die Teach-Ansicht ist besonders nützlich beim Leiten eines Klassenzimmers oder einer kleinen Gruppe, da sie alle Ihre Lektionsinhalte in einem sauberen, ablenkungsfreien Format darstellt, das für den Handy- und Tablet-Gebrauch optimiert ist.
+Die Ansicht "Lehre" ist besonders hilfreich, wenn Sie eine Klasse oder kleine Gruppe führen, da sie alle Ihre Lektions-Inhalte in einem sauberen, ablenkungsfreien Format präsentiert, das für mobil- und Tablet-Nutzung optimiert ist.
 :::

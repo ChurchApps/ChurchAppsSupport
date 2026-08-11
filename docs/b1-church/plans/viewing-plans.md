@@ -62,7 +62,7 @@ The Teach view organizes lesson content into navigable sections displayed as tab
 
 - Tap a section tab to jump directly to that part of the lesson
 - Scroll through the lesson content, and the active tab will update automatically to match your position
-- Click on media items (videos, images, activities) to view them in a modal dialog
+- Click on media items (videos, images, activities) to view them in a modal dialog; audio links (song recordings, sermon clips) play inline with a built-in audio player
 - See action types formatted distinctively: **Say** appears in conversation bubbles, **Do** in bold text, and **Note** in highlighted callouts
 
 :::tip

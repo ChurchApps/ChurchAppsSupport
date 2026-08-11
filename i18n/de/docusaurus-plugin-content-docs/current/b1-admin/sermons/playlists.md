@@ -1,59 +1,59 @@
 ---
-title: "Playlists"
+title: "Wiedergabelisten"
 ---
 
-# Playlists
+# Wiedergabelisten
 
 <div class="article-intro">
 
-Playlists ermöglichen es Ihnen, Ihre Predigten in Serien oder Sammlungen zu organisieren. Wenn Besucher Ihre Predigtbibliothek auf Ihrer B1.church-Website durchstöbern, helfen Playlists ihnen, eine vollständige Predigtserie in der richtigen Reihenfolge zu finden und zu verfolgen.
+Wiedergabelisten ermöglichen es Ihnen, Ihre Predigten in Reihen oder Sammlungen zu organisieren. Wenn Besucher Ihre Predigtbibliothek auf Ihrer B1.church-Website durchsuchen, helfen Wiedergabelisten ihnen, eine komplette Predigtenreihe zu finden und nachzufolgen in der richtigen Reihenfolge.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Voraussetzungen</h4>
 
-- Sie benötigen die Berechtigung **contentApi.streamingServices.edit**. Siehe [Rollen & Berechtigungen](../settings/roles-permissions.md), falls Sie keinen Zugang haben.
-- Halten Sie einen Namen, eine Beschreibung und ein Vorschaubild für Ihre Playlist bereit
+- Sie benötigen die Berechtigung **contentApi.streamingServices.edit**. Siehe [Rollen & Berechtigungen](../settings/roles-permissions.md), wenn Sie keinen Zugriff haben.
+- Bereiten Sie einen Namen, eine Beschreibung und ein Miniaturbild für Ihre Wiedergabeliste vor
 
 </div>
 
-## Playlists anzeigen
+## Anzeige von Wiedergabelisten
 
-1. Klicken Sie in B1 Admin in der linken Seitenleiste auf **Predigten**.
-2. Klicken Sie oben auf der Seite auf die Registerkarte **Playlists**.
-3. Sie sehen eine Liste aller Ihrer bestehenden Playlists mit Namen und Beschreibungen.
+1. Öffnen Sie in B1 Admin das **Bereichsmenü** in der oberen linken Ecke (der Bereichsname mit dem kleinen Pfeil) und wählen Sie **Predigten**.
+2. Klicken Sie auf die **Wiedergabelisten**-Registerkarte oben auf der Seite.
+3. Sie sehen eine Liste aller Ihrer vorhandenen Wiedergabelisten mit ihren Namen und Beschreibungen.
 
-## Eine Playlist erstellen
+## Erstellen einer Wiedergabeliste
 
-1. Klicken Sie auf die Schaltfläche **Erste Playlist erstellen** (wenn Sie noch keine Playlists haben) oder auf **Playlist hinzufügen**.
-2. Geben Sie einen **Namen** für die Playlist ein -- zum Beispiel den Titel der Predigtserie wie „Glaubensfundamente" oder „Sommer in den Psalmen".
-3. Fügen Sie eine **Beschreibung** hinzu, um Besuchern einen kurzen Überblick über die Serie zu geben.
-4. Legen Sie ein **Veröffentlichungsdatum** fest, um zu steuern, wann die Playlist sichtbar wird.
-5. Laden Sie ein **Vorschaubild** hoch, um die Serie visuell darzustellen.
-6. Klicken Sie auf **Speichern**, um Ihre Playlist zu erstellen.
+1. Klicken Sie auf die Schaltfläche **Erste Wiedergabeliste erstellen** (wenn Sie noch keine Wiedergabelisten haben) oder klicken Sie auf **Wiedergabeliste hinzufügen**.
+2. Geben Sie einen **Namen** für die Wiedergabeliste ein -- zum Beispiel den Titel der Predigtenreihe wie "Faith Foundations" oder "Summer in the Psalms".
+3. Fügen Sie eine **Beschreibung** hinzu, um Besuchern einen kurzen Überblick über die Reihe zu geben.
+4. Stellen Sie ein **Veröffentlichungsdatum** ein, um zu kontrollieren, wann die Wiedergabeliste sichtbar wird.
+5. Laden Sie ein **Miniaturbild** hoch, um die Reihe visuell darzustellen.
+6. Klicken Sie auf **Speichern**, um Ihre Wiedergabeliste zu erstellen.
 
 :::tip
-Erstellen Sie Ihre Playlists, bevor Sie Predigten hinzufügen. So können Sie jede Predigt beim Hinzufügen der richtigen Playlist zuordnen, anstatt später umzuorganisieren.
+Erstellen Sie zuerst Ihre Wiedergabelisten, bevor Sie Predigten hinzufügen. Auf diese Weise können Sie jede Predigt der richtigen Wiedergabeliste zuweisen, wenn Sie hinzufügen, anstatt später neu zu organisieren.
 :::
 
-## Predigten einer Playlist hinzufügen
+## Hinzufügen von Predigten zu einer Wiedergabeliste
 
-Wenn Sie eine [Predigt hinzufügen oder bearbeiten](managing-sermons), weisen Sie sie über das Dropdown-Menü **Playlist** einer Playlist zu. Alle Predigten, die derselben Playlist zugewiesen sind, werden auf Ihrer Website zusammen gruppiert und in der richtigen Reihenfolge angezeigt.
+Wenn Sie [eine Predigt hinzufügen oder bearbeiten](managing-sermons), weisen Sie sie einer Wiedergabeliste mit dem **Wiedergabelisten**-Dropdown zu. Alle Predigten, die der gleichen Wiedergabeliste zugewiesen sind, werden gruppiert und in Reihenfolge auf Ihrer Website angezeigt.
 
 :::info
-Sie können Predigten auch während des [Massenimports](bulk-import) Playlists zuweisen. Beim Import von YouTube oder Vimeo wählen Sie eine Playlist aus dem Dropdown-Menü **In Playlist importieren**, bevor Sie auf **Importieren** klicken.
+Sie können auch Predigten während des [Massenimports](bulk-import) Wiedergabelisten zuweisen. Beim Importieren von YouTube oder Vimeo wählen Sie eine Wiedergabeliste aus dem **In Wiedergabeliste importieren**-Dropdown, bevor Sie auf **Importieren** klicken.
 :::
 
-## Wie Playlists auf Ihrer Website erscheinen
+## Wie Wiedergabelisten auf Ihrer Website erscheinen
 
-Playlists werden auf Ihrer B1.church-Website als durchstöberbare Sammlungen angezeigt. Besucher können:
+Wiedergabelisten werden auf Ihrer B1.church-Website als durchsuchbare Sammlungen angezeigt. Besucher können:
 
-- Alle verfügbaren Predigtserien auf einen Blick sehen
-- In eine Playlist klicken, um alle Predigten in dieser Serie anzuzeigen
-- Predigten der Reihe nach ansehen oder anhören
+- Sehen Sie alle verfügbaren Predigtenreihen auf einen Blick
+- Klicken Sie in eine Wiedergabeliste, um alle Predigten in dieser Reihe anzuzeigen
+- Schauen Sie sich Predigten oder hören Sie sie in Reihenfolge an
 
 ## Nächste Schritte
 
-- [Predigten verwalten](managing-sermons) -- Einzelne Predigten zu Ihren Playlists hinzufügen
-- [Massenimport](bulk-import) -- Mehrere Predigten importieren und Playlists zuweisen
+- [Predigten verwalten](managing-sermons) -- Fügen Sie einzelne Predigten zu Ihren Wiedergabelisten hinzu
+- [Massenimport](bulk-import) -- Importieren Sie mehrere Predigten und weisen Sie sie Wiedergabelisten zu

@@ -6,66 +6,66 @@ title: "Kampanjer og løfter"
 
 <div class="article-intro">
 
-Kampanjer lar deg kjøre en innsamlingskampanje mot ett bestemt mål – et byggefond, en misjonsreise, et spesialprosjekt – og spore løfter fra medlemmer ved siden av faktiske donasjoner slik at du kan se progresjen din i sanntid.
+Kampanjer lar deg kjøre en innsamlingskampanje mot et spesifikt mål -- et byggekapital, en misjonsreise, et spesielt prosjekt -- og spore løfter fra medlemmer sammen med faktiske donasjoner slik at du kan se fremgangen din i sanntid.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Sett opp dine [donasjonsfond](funds) – hver kampanje er knyttet til ett fond
-- Du må ha tilgang til Donasjoner-delen av B1 Admin
+- Sett opp [donasjonsfondene](funds) dine -- hver kampanje er knyttet til et fond
+- Du trenger tilgang til donasjonsdelen av B1 Admin
 
 </div>
 
-## Åpne kampanjer
+## Åpning av kampanjer
 
-I B1 Admin går du til **Donasjoner** i venstre sidepanel og velger **Kampanjer**. Du ser en liste over alle kampanjer med målbeløpet, totalt lovete og totalt gitt hittil.
+I B1 Admin, åpne **seksjonsmenyene** i det øvre venstre hjørnet (seksjonsnavnet med den lille pilen) og velg **Donasjoner**, deretter velger du **Kampanjer**. Du vil se en liste over alle kampanjer med målbeløp, totalt løfte og totalt gitt så langt.
 
-## Opprette en kampanje
+## Opprett en kampanje
 
 1. Klikk **Legg til kampanje**.
-2. Fyll inn kampanjestdetaljene:
-   - **Navn** *(obligatorisk)* – visningsnavnet for denne kampanjen (for eksempel "Byggefond 2026").
-   - **Fond** – donasjonskfondet denne kampanjen er knyttet til.
-   - **Startdato** / **Sluttdato** – innsamlingsvinduet.
-   - **Mål** – målbeløpet for kampanjen.
+2. Fyll inn kampanjedetaljene:
+   - **Navn** *(påkrevd)* -- visningsnavnet for denne kampanjen (for eksempel, "Byggekapital 2026").
+   - **Fond** -- donasonsfonden denne kampanjen er knyttet til.
+   - **Startdato** / **Sluttdato** -- innsamlings-vinduet.
+   - **Mål** -- målbeløpet for kampanjen.
 3. Klikk **Lagre**.
 
-## Spore framdrift
+## Sporing av framgang
 
-Hver kampanjekort viser:
+Hvert kampanjekort viser:
 
-- **Mål** – målbeløpet ditt
-- **Lovete** – det totale beløpet medlemmer har lovete å gi
-- **Gitt** – det totale beløpet som faktisk er donert til dette kampanjefondet i kampanjevinduet
-- En **framdriftsøyeling** som viser hvor langt mot målet du har kommet
+- **Mål** -- målbeløpet ditt
+- **Løfte** -- det totale beløpet medlemmer har løftet å gi
+- **Gitt** -- det totale beløpet faktisk donert til denne kampanjens fond under kampanjen-vinduet
+- En **fremgangslinje** som viser hvor langt mot målet du har kommet
 
-Klikk en kampanje for å åpne detaljvisningen, som viser individuelle løfter og deres oppfyllelsestatus.
+Klikk en hvilken som helst kampanje for å åpne detaljvisningen, som viser individuelle løfter og oppfyllelsesstatus.
 
 ## Legge til løfter
 
-Løfter er løfter fra medlemmer om å gi mot en kampanje. For å registrere et løfte:
+Løfter er forpliktelser fra medlemmer om å gi til en kampanje. For å registrere et løfte:
 
 1. Åpne en kampanje.
 2. Klikk **Legg til løfte**.
 3. Velg **personen** som gir løftet.
-4. Skriv inn løftebeløpet.
-5. Angi eventuelt en **dato** for løftetilsagnet.
+4. Angi løftet **beløp**.
+5. Sett valgfritt en **dato** for løfte-forpliktelsen.
 6. Klikk **Lagre**.
 
-Løfter vises i kampanjedetaljene og bidrar til **Lovete**-totalet på kampanjekort.
+Løfter vises i kampanjedetaljene og bidrar til **Løfte**-totalen på kampanjekortene.
 
 :::tip
-Løfter er skilt fra faktiske donasjoner. Et løfte sporer et tilsagn; en donasjon registrerer den faktiske gaven. Begge vises på kampanjen slik at du kan se hvor godt løfter blir oppfylt.
+Løfter er atskilt fra faktiske donasjoner. Et løfte sporer en forpliktelse; en donasjon registrerer den faktiske gaven. Begge vises på kampanjen slik at du kan se hvor godt løfter oppfylles.
 :::
 
-## Redigere eller slette en kampanje
+## Redigering eller sletting av en kampanje
 
-Klikk redigeringsikonet på en kampanjekort for å oppdatere navn, mål, datoer eller fond. Klikk **Slett** for å permanentslette kampanjen og løftene. Sletting av en kampanje sletter ikke donasjoner som ble registrert til fondet.
+Klikk redigeringsikonet på en hvilken som helst kampanjekort for å oppdatere navn, mål, datoer eller fond. Klikk **Slett** for å permanent fjerne kampanjen og løftene. Sletting av en kampanje sletter ikke noen donasjoner som ble registrert til fondet.
 
 ## Relaterte artikler
 
-- [Registrere donasjoner](recording-donations) – registrer faktiske gaver som oppfyller løfter
-- [Fond](funds) – sett opp fondet som skal knyttes til en kampanje
-- [Donasjonrapporter](donation-reports) – rapportering av donasjoner etter fond
+- [Registrering av donasjoner](recording-donations) -- registrer de faktiske gavene som oppfyller løfter
+- [Fond](funds) -- sett opp fondet til å knytte til en kampanje
+- [Donasjon-rapporter](donation-reports) -- rapportering på donasjoner etter fond

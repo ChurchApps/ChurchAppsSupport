@@ -6,68 +6,68 @@ title: "Kircheneinstellungen"
 
 <div class="article-intro">
 
-Die Seite Kircheneinstellungen ist der Ort, an dem Sie die Basisinformationen, Kontaktdaten und das Branding Ihrer Kirche konfigurieren. Diese Details werden in allen ChurchApps-Tools verwendet, einschließlich Ihrer B1.church-Website und der B1 Mobile-App.
+Die Kircheneinstellungs-Seite ist der Ort, an dem Sie die grundlegenden Informationen Ihrer Kirche, Kontaktdetails und Branding konfigurieren. Diese Details werden über alle ChurchApps-Tools verwendet, einschließlich Ihrer B1.church-Website und der B1-Mobil-App.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Voraussetzungen</h4>
 
 - Sie benötigen die Berechtigung "Kircheneinstellungen bearbeiten". Siehe [Rollen & Berechtigungen](./roles-permissions.md), wenn Sie keinen Zugriff haben.
 - Halten Sie die Adresse, Kontaktinformationen und das Logo Ihrer Kirche bereit
 
 </div>
 
-## Bearbeiten Sie Ihre Kircheninformationen
+## Bearbeiten Ihrer Kircheninformationen
 
-1. Navigieren Sie zur Seite **Einstellungen** in der linken Seitenleiste.
+1. Öffnen Sie in B1 Admin das **Bereichsmenü** in der oberen linken Ecke (der Bereichsname mit dem kleinen Pfeil) und wählen Sie **Einstellungen**.
 2. Klicken Sie auf die Schaltfläche **Einstellungen bearbeiten** in der Kopfzeile.
 3. Aktualisieren Sie eines der folgenden Felder:
-   - **Kirchenname** – Der Name, der in allen ChurchApps-Produkten angezeigt wird.
-   - **Adresse** – Die physische Adresse Ihrer Kirche.
-   - **Kontaktinformationen** – Telefonnummer, E-Mail und andere Kontaktdaten.
+   - **Kirchenname** -- Der Name, der über alle ChurchApps-Produkte angezeigt wird.
+   - **Adresse** -- Die physische Adresse Ihrer Kirche.
+   - **Kontaktinformationen** -- Telefonnummer, E-Mail und andere Kontaktdetails.
 4. Klicken Sie auf **Speichern**, um Ihre Änderungen zu übernehmen.
 
 ## Einrichten Ihrer Subdomain
 
-Ihre Kirche erhält eine kostenlose Subdomain unter **yourchurch.b1.church**. Dies ist die Webadresse, unter der Mitglieder und Besucher auf die Online-Präsenz Ihrer Kirche zugreifen können.
+Ihre Kirche erhält eine kostenlose Subdomain auf **yourchurch.b1.church**. Dies ist die Webadresse, über die Mitglieder und Besucher auf die Online-Präsenz Ihrer Kirche zugreifen können.
 
-1. Suchen Sie auf der Seite Einstellungen das Feld **Subdomain**.
-2. Geben Sie Ihre bevorzugte Subdomain ein (z. B. "gracechurch" für gracechurch.b1.church).
+1. Auf der Seite "Einstellungen" finden Sie das Feld **Subdomain**.
+2. Geben Sie Ihre bevorzugte Subdomain ein (z.B. "gracechurch" für gracechurch.b1.church).
 3. Speichern Sie Ihre Änderungen.
 
 :::info
-Ihre Subdomain muss eindeutig sein in allen ChurchApps-Kirchen. Wenn Ihr bevorzugter Name bereits verwendet wird, versuchen Sie, Ihre Stadt oder Ihren Bundesstaat hinzuzufügen (z. B. "gracechurch-dallas").
+Ihre Subdomain muss in allen ChurchApps-Kirchen einzigartig sein. Wenn Ihr bevorzugter Name besetzt ist, versuchen Sie, Ihre Stadt oder Bundesstaat hinzuzufügen (z.B. "gracechurch-dallas").
 :::
 
-## Branding konfigurieren
+## Konfigurieren von Branding
 
-Passen Sie das Aussehen Ihrer Kirche in allen ChurchApps-Tools an:
+Passen Sie an, wie Ihre Kirche über alle ChurchApps-Tools angezeigt wird:
 
-1. Laden Sie Ihr **Kirchenlogo** hoch, indem Sie auf den Logo-Bereich klicken und eine Bilddatei auswählen.
-2. Fügen Sie weitere **Kirchenbilder** hinzu, die auf Ihrer Website und [mobilen App](./mobile-app.md) verwendet werden.
+1. Laden Sie Ihr **Kirchenlogo** hoch, indem Sie auf das Logobild klicken und eine Bilddatei auswählen.
+2. Fügen Sie beliebige zusätzliche **Kirchenbilder** hinzu, die auf Ihrer Website und [Mobil-App](./mobile-app.md) verwendet werden.
 
 :::tip
-Verwenden Sie für beste Ergebnisse ein Logo mit transparentem Hintergrund im PNG-Format. Dies stellt sicher, dass es auf hellen und dunklen Hintergründen gleich gut aussieht.
+Verwenden Sie für beste Ergebnisse ein Logo mit transparentem Hintergrund im PNG-Format. Dies stellt sicher, dass es sowohl auf helleren als auch auf dunklen Hintergründen gut aussieht.
 :::
 
-## Klassenstufe-Beförderung
+## Klassenstufen-Beförderung
 
-Wenn Sie **Klassenstufe** bei Kindern und Schülern verfolgten, kann B1 automatisch alle um eine Klassenstufe an einem von Ihnen gewählten Datum höher stufen (z. B. 1. August), anstatt dass Sie jedes Profil manuell bearbeiten müssen.
+Wenn Sie **Klassenstufe** auf Kindern und Studenten verfolgen, kann B1 automatisch alle an einem Datum, das Sie wählen, um eine Klassenstufe anheben (z.B. 1. August), anstatt jeden Profil von Hand zu bearbeiten.
 
-1. Suchen Sie auf der Seite Einstellungen die Option **Klassenstufe-Beförderung**.
-2. Aktivieren Sie sie und wählen Sie **Monat und Tag** für die Klassenstufen-Beförderung jedes Jahr.
+1. Suchen Sie auf der Seite "Einstellungen" nach der Option **Klassenstufen-Beförderung**.
+2. Aktivieren Sie sie und wählen Sie den **Monat und Tag**, um jeden Jahr Klassenstufen zu befördern.
 3. Speichern Sie Ihre Änderungen.
 
-## Import und Export
+## Importieren und Exportieren
 
-Die Schaltfläche **Import/Export** in der Kopfzeile der Einstellungen öffnet ein dediziertes Tool in einem neuen Browser-Fenster. Verwenden Sie dies für:
+Die Schaltfläche **Importieren/Exportieren** in der Kopfzeile "Einstellungen" öffnet ein dediziertes Tool in einem neuen Browser-Fenster. Verwenden Sie dies zum:
 
-- Importieren Sie Mitgliedsdaten aus einem anderen Gemeindeverwalter-System.
-- Exportieren Sie Ihre ChurchApps-Daten zur Sicherung oder Migration.
+- Importieren Sie Mitgliederdaten von einem anderen Kirchenverwaltungssystem.
+- Exportieren Sie Ihre ChurchApps-Daten zu Sicherung oder Migrationszwecken.
 
-Dies ist besonders hilfreich, wenn Sie Ihre Kirche zum ersten Mal einrichten und vorhandene Datensätze in ChurchApps übertragen müssen.
+Dies ist besonders hilfreich, wenn Sie Ihre Kirche zum ersten Mal einrichten und bestehende Datensätze in ChurchApps übertragen müssen.
 
 :::warning
-Sichern Sie beim Importieren von Daten immer zunächst Ihre vorhandenen Datensätze. Import-Vorgänge fügen Daten zu Ihrem System hinzu und können doppelte Einträge erstellen, wenn sie mehrmals ausgeführt werden.
+Wenn Sie Daten importieren, sichern Sie immer Ihre bestehenden Datensätze zuerst. Import-Operationen fügen Daten zu Ihrem System hinzu und können doppelte Einträge erstellen, wenn mehrfach ausgeführt.
 :::

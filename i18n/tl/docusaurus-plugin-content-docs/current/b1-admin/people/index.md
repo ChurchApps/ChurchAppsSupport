@@ -6,36 +6,36 @@ title: "People"
 
 <div class="article-intro">
 
-Ang seksyong **People** ang puso ng pamamahala ng simbahan mo sa B1 Admin. Dito mo pinapanatili ang directory ng iyong simbahan -- naghahanap ng mga miyembro, nagdaragdag ng mga bagong tao, tumitingin at nag-e-edit ng mga profile, at sumusubaybay ng mga sambahayan. Maging maliit man o malaki ang iyong kongregasyon, ang pagpapanatiling maayos ng mga record ng iyong mga tao ang pundasyon na nagpapatakbo ng bawat ibang tampok sa B1.
+Ang **People** section ay ang puso ng iyong church management sa B1 Admin. Dito mo pinapanatili ang iyong church directory -- naghahanap ng mga miyembro, pagdadagdag ng mga bagong tao, pagtingin at pag-edit ng profile, at pag-track ng household. Kung mayroon kang maliit na pagsasangpay o malaki, ang pagpapanatili ng iyong record ng mga tao ay organized ay ang pundasyon na nagpapalakas sa bawat ibang feature sa B1.
 
 </div>
 
-## Ano ang Puwede Mong Gawin
+## Ano ang Maaari Mong Gawin
 
-Narito ang overview ng mga pangunahing tampok na available sa seksyong People:
+Nandito ang isang overview ng pangunahing feature na available sa People section:
 
-1. **Hanapin ang iyong directory** -- Gamitin ang quick search bar para mahanap ang kahit sino ayon sa pangalan, o samantalahin ang advanced filters at AI-powered natural language search para mahanap nang eksakto kung sino ang kailangan mo. Tingnan ang [Searching People](./searching-people.md) at [AI Search](./ai-search.md) para sa mga detalye.
+1. **Hanapin ang iyong direktoryo** -- Gamitin ang quick search bar upang hanapin ang sinuman ayon sa pangalan, o samantalahin ang advanced filter at AI-powered natural language search upang mahanap ang eksakto kung kanino ang kailangan mo. Tingnan ang [Searching People](./searching-people.md) at [AI Search](./ai-search.md) para sa detalye.
 
-2. **Save search queries as Lists** -- I-save ang anumang search o filter bilang isang pinangalanang listahan para ma-reload ito sa isang click. Tingnan ang [Saved Lists](./lists.md).
+2. **I-save ang search query bilang List** -- I-save ang anumang search o filter bilang named list upang maaari mong i-reload ito gamit ang isang click. Tingnan ang [Saved Lists](./lists.md).
 
-3. **Tingnan ang Demographics** -- Makita ang visual na breakdown ng iyong kongregasyon ayon sa edad, kasarian, katayuang sibil, membership status, at campus — at i-click ang anumang chart segment para makapasok sa mga taong iyon. Tingnan ang [Demographics](./demographics.md).
+3. **Tukuyin ang Demographics** -- Makita ang visual breakdown ng iyong pagsasangpay ayon sa edad, kasarian, marital status, membership status, at campus — at i-click ang anumang chart segment upang mag-drill sa mga taong iyon. Tingnan ang [Demographics](./demographics.md).
 
-4. **Magdagdag ng mga bagong tao** -- Mabilis na magdagdag ng mga indibidwal sa iyong directory at punan ang mga detalye ng kanilang profile, contact information, at koneksyon sa sambahayan. Tingnan ang [Adding People](./adding-people.md) para sa hakbang-hakbang na instruksyon.
+4. **Magdagdag ng mga bagong tao** -- Mabilis na magdagdag ng indibidwal sa iyong direktoryo at puno ang kanilang profile detail, contact information, at household connection. Tingnan ang [Adding People](./adding-people.md) para sa step-by-step instruction.
 
-5. **Mag-bulk edit ng mga tao** -- I-update ang maraming tao nang sabay-sabay sa pamamagitan ng pagbabago ng kanilang membership status, katayuang sibil, kasarian, opt-out preferences, o mga membership sa grupo. Nakakatipid ito ng oras kapag gumagawa ng parehong pagbabago sa maraming indibidwal. Tingnan ang [Bulk Editing](./bulk-editing.md).
+5. **Bulk edit ang mga tao** -- I-update ang maraming tao nang sabay-sabay sa pamamagitan ng pagbabago ng kanilang membership status, marital status, kasarian, opt-out preference, o group membership. Nakakatipid ito ng oras kapag gumagawa ng parehong pagbabago sa maraming indibidwal. Tingnan ang [Bulk Editing](./bulk-editing.md).
 
-6. **I-print ang iyong directory** -- Gumawa ng nakaformat, naka-print na directory ng miyembro na naka-group ayon sa sambahayan, kumpleto ng mga larawan at contact information. Tingnan ang [Print Directory](./print-directory.md).
+6. **I-print ang iyong direktoryo** -- Lumikha ng formatted, printable member directory na grouped ng household, kumpleto sa larawan at contact information. Tingnan ang [Print Directory](./print-directory.md).
 
-7. **Mag-import at mag-export ng data** -- Dalhin ang data ng miyembro mula sa CSV file o lumipat mula sa ibang sistema ng pamamahala ng simbahan tulad ng Breeze. Puwede mo ring i-export ang iyong directory sa CSV kahit anong oras. Tingnan ang [Importing Data](./importing-data.md) at [Exporting Data](./exporting-data.md).
+7. **I-import at i-export ang data** -- Magdala ng member data mula sa CSV file o mag-migrate mula sa ibang church management system tulad ng Breeze. Maaari mo ring i-export ang iyong direktoryo sa CSV anumang oras. Tingnan ang [Importing Data](./importing-data.md) at [Exporting Data](./exporting-data.md).
 
-8. **Pamahalaan ang mga profile** -- Tingnan at i-edit ang detalyadong profile para sa bawat tao, kasama ang contact info, mga kasapi ng sambahayan, [mga membership sa grupo](../groups/group-members.md), [kasaysayan ng attendance](../attendance/tracking-attendance.md), [mga donasyon](../donations/recording-donations.md), at [mga custom form](../forms/creating-forms.md). I-hover sa isang email, address, o numero ng telepono sa asul na header ng profile para kopyahin ito sa isang click.
+8. **Pamahalaan ang profile** -- Tingnan at i-edit ang detalyadong profile para sa bawat tao, kasama ang contact info, household member, [group membership](../groups/group-members.md), [attendance history](../attendance/tracking-attendance.md), [donation](../donations/recording-donations.md), at [custom form](../forms/creating-forms.md). Mag-hover sa isang email, address, o numero ng telepono sa blue profile header upang gawin itong kumpiyansa gamit ang isang click.
 
-9. **Mag-assign ng mga role at permission** -- Kontrolin kung sino sa iyong team ang makaka-access sa iba't ibang bahagi ng B1 Admin sa pamamagitan ng pag-assign ng mga role. Tingnan ang [Assigning Roles](./roles-permissions.md).
+9. **Italagang mga function at pahintulot** -- Kontrolin kung sino sa iyong team ang maaaring mag-access ng iba't ibang bahagi ng B1 Admin sa pamamagitan ng pag-assign ng mga role. Tingnan ang [Assigning Roles](./roles-permissions.md).
 
-## Pagsisimula
+## Pag-umpisa
 
-Para ma-access ang seksyong People, i-click ang **People** sa kaliwang sidebar ng iyong B1 Admin dashboard. Makikita mo ang buong directory ng iyong simbahan na may search bar sa itaas at listahan ng mga miyembro sa ibaba.
+Upang ma-access ang People section, buksan ang **section menu** sa top-left corner ng B1 Admin (ang pangalan ng section na may maliit na arrow) at piliin ang **People**. Makikita mo ang buong church directory na may search bar sa itaas at isang listahan ng miyembro sa ibaba.
 
 :::tip
-Kung nagse-set up ka ng B1 sa unang pagkakataon, magsimula sa [pag-import ng iyong umiiral na data ng miyembro](./importing-data.md). Pagkatapos ay suriin at linisin ang mga profile kung kinakailangan.
+Kung nag-set up ka ng B1 sa unang pagkakataon, magsimula sa pamamagitan ng [pag-import ng iyong existing member data](./importing-data.md). Pagkatapos ay suriin at linisin ang mga profile kung kinakailangan.
 :::

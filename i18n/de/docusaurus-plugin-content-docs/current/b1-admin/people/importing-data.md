@@ -6,163 +6,163 @@ title: "Daten importieren"
 
 <div class="article-intro">
 
-Das B1 Transfer-Tool macht es einfach, Ihre vorhandenen Daten in B1 zu übertragen, egal ob Sie neu mit einer Tabellenkalkulation beginnen, von einer anderen Kirchenverwaltungsplattform migrieren oder Spendendatensätze importieren. Es kann auch verwendet werden, um Ihre Daten jederzeit zu exportieren oder zu sichern.
+Das B1 Transfer-Tool macht es einfach, Ihre vorhandenen Daten in B1 zu bringen, egal ob Sie neu von einer Tabellenkalkulation anfangen, von einem anderen Kirchenverwaltungssystem migrieren oder Spendendatensätze importieren. Es kann auch zum Exportieren oder Sichern Ihrer Daten jederzeit verwendet werden.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Voraussetzungen</h4>
 
-- Sie benötigen ein aktives B1 Admin-Konto mit Zugriff auf **Settings**.
-- Exportieren und bereiten Sie Ihre Daten aus Ihrem vorherigen System vor, bevor Sie beginnen.
-- Dieses Tool ist für die anfängliche Datenmigration gedacht. Wenn Sie B1 bereits eine Weile verwenden, kann ein erneuter Import doppelte Datensätze erstellen.
+- Sie benötigen ein aktives B1 Admin-Konto mit Zugriff auf **Einstellungen**.
+- Haben Sie Ihre Daten exportiert und bereit von Ihrem vorherigen System, bevor Sie beginnen.
+- Dieses Tool ist für die erste Datenmigration bestimmt. Wenn Sie B1 bereits eine Weile verwendet haben, kann das Importieren erneut doppelte Datensätze erstellen.
 
 </div>
 
 ## Zugriff auf das Transfer-Tool
 
 1. Melden Sie sich bei **B1 Admin** an.
-2. Gehen Sie zu **Settings** in der linken Seitenleiste.
-3. Klicken Sie auf die Schaltfläche **Import/Export** oben rechts im Seitenkopf.
-4. Dies öffnet das **B1 Transfer**-Tool in einem neuen Tab unter [transfer.b1.church](https://transfer.b1.church).
+2. Öffnen Sie das **Bereichsmenü** in der oberen linken Ecke (der Bereichsname mit dem kleinen Pfeil) und wählen Sie **Einstellungen**.
+3. Klicken Sie auf die Schaltfläche **Importieren/Exportieren** in der oberen rechten Ecke der Seiten-Kopfzeile.
+4. Dies öffnet das **B1 Transfer**-Tool in einem neuen Tab bei [transfer.b1.church](https://transfer.b1.church).
 
-Das Transfer-Tool führt Sie durch vier Schritte: Source, Preview, Destination und Run.
+Das Transfer-Tool führt Sie durch vier Schritte: Quelle, Vorschau, Ziel und Ausführung.
 
 ---
 
 ## Schritt 1 - Wählen Sie Ihre Quelle
 
-Wählen Sie aus, woher Ihre Daten kommen. Es gibt sieben Optionen:
+Wählen Sie, woher Ihre Daten kommen. Es gibt sieben Optionen:
 
-- **B1 Database** — Zieht Daten direkt aus Ihrer bestehenden B1-Kirche. Nützlich zum Erstellen einer Sicherung oder zum Konvertieren Ihrer Daten in ein anderes Format. Sie müssen angemeldet sein, um diese Option zu verwenden.
-- **B1 Import Zip** — Eine Zip-Datei im eigenen Format von B1. Dies wird hauptsächlich verwendet, um einen vorherigen B1-Export wiederherzustellen.
-- **Breeze Import Zip** — Eine Zip-Datei mit exportierten Dateien aus Breeze ChMS.
-- **Planning Center Zip** — Eine Zip- oder CSV-Datei, die aus Planning Center exportiert wurde.
-- **Custom CSV / Excel** — Jede CSV- oder Excel-Datei mit Personendaten. Nach dem Hochladen ordnen Sie Ihre Spalten den B1-Feldern zu, bevor der Import fortfährt.
-- **Tithe.ly CSV** — Eine Personen- oder Spenden-Exportdatei von Tithe.ly (CSV- oder Excel-Format akzeptiert).
-- **CCB / Pushpay CSV** — Eine Personen- oder Spenden-Export-CSV von Church Community Builder oder Pushpay.
+- **B1 Datenbank** -- Zieht Daten direkt aus Ihrer bestehenden B1 Kirche. Nützlich für das Erstellen einer Sicherung oder das Konvertieren Ihrer Daten in ein anderes Format. Sie müssen angemeldet sein, um diese Option zu verwenden.
+- **B1 Import Zip** -- Eine ZIP-Datei im eigenen B1-Format. Dies wird hauptsächlich verwendet, um einen vorherigen B1-Export wiederherzustellen.
+- **Breeze Import Zip** -- Eine ZIP-Datei mit exportierten Dateien von Breeze ChMS.
+- **Planning Center Zip** -- Eine ZIP- oder CSV-Datei, die aus Planning Center exportiert wurde.
+- **Benutzerdefinierte CSV / Excel** -- Jede CSV- oder Excel-Datei mit Personendaten. Nach dem Hochladen werden Sie Ihre Spalten den B1-Feldern zuordnen, bevor der Import fortgesetzt wird.
+- **Tithe.ly CSV** -- Eine Personen- oder Spendendatei-Export von Tithe.ly (CSV- oder Excel-Format akzeptiert).
+- **CCB / Pushpay CSV** -- Eine Personen- oder Spendendatei-CSV von Church Community Builder oder Pushpay.
 
-Sie können Ihre Datei per Drag & Drop in den Upload-Bereich ziehen oder klicken, um danach zu suchen.
+Sie können Ihre Datei auf den Upload-Bereich ziehen und ablegen, oder klicken Sie, um zu durchsuchen.
 
 ---
 
 ## Schritt 1b - Ordnen Sie Ihre Felder zu (nur Custom CSV / Excel)
 
-Wenn Sie **Custom CSV / Excel** ausgewählt haben, zeigt das Tool nach dem Hochladen Ihrer Datei einen Feldzuordnungsbildschirm an, bevor es zur Vorschau übergeht.
+Wenn Sie **Benutzerdefinierte CSV / Excel** ausgewählt haben, zeigt das Tool nach dem Hochladen Ihrer Datei einen Feldmappings-Bildschirm an, bevor es zur Vorschau geht.
 
-Jede Spalte Ihrer Datei wird zusammen mit einem Beispielwert aufgelistet. Verwenden Sie für jede Spalte das Dropdown-Menü, um das passende B1-Feld auszuwählen. Das Tool erkennt automatisch gängige Spaltennamen wie "First Name", "Email" oder "Zip Code", aber Sie sollten jede Zeile überprüfen und alles korrigieren, was übersehen wurde.
+Jede Spalte aus Ihrer Datei wird neben einem Beispielwert aufgelistet. Verwenden Sie für jede Spalte das Dropdown, um das übereinstimmende B1-Feld zu wählen. Das Tool wird versuchen, übliche Spaltennamen wie "Vorname", "E-Mail" oder "Postleitzahl" automatisch zu erkennen, aber Sie sollten jede Zeile überprüfen und alles korrigieren, das es verpasst hat.
 
 Verfügbare B1-Felder umfassen:
 
-- First Name, Last Name, Middle Name, Nickname, Display Name, Title/Prefix, Suffix
-- Email, Home Phone, Mobile Phone, Work Phone
-- Address Line 1, Address Line 2, City, State, Zip Code
-- Birth Date, Gender, Marital Status, Membership Status
-- Household/Family Name
-- Group Name — ordnet die Person einer Gruppe nach Namen zu
-- **Form Answer (custom field)** — speichert den Wert dieser Spalte als benutzerdefiniertes Feld, das an den Personendatensatz angehängt ist. Wenn Sie diese Option verwenden, werden Sie aufgefordert, dem Formular einen Namen zu geben.
+- Vorname, Nachname, Mittelname, Spitzname, Anzeigename, Titel/Präfix, Suffix
+- E-Mail, Telefon Privat, Telefon Mobil, Telefon Arbeit
+- Adresse Zeile 1, Adresse Zeile 2, Stadt, Bundesstaat, Postleitzahl
+- Geburtsdatum, Geschlecht, Familienstand, Mitgliedschaftsstatus
+- Haushalt/Familienname
+- Gruppenname -- weist die Person einer Gruppe nach Name zu
+- **Formular-Antwort (benutzerdef. Feld)** -- speichert den Wert dieser Spalte als benutzerdef. Feld, das an dem Personendatensatz angehängt ist. Wenn Sie diese Option verwenden, werden Sie aufgefordert, dem Formular einen Namen zu geben.
 
-Spalten, die Sie nicht importieren möchten, können auf **(Skip)** gesetzt werden. Mindestens ein Namensfeld (First Name oder Last Name) muss zugeordnet werden, bevor Sie fortfahren können.
+Spalten, die Sie nicht importieren möchten, können auf **(Überspringen)** eingestellt werden. Mindestens ein Namenfeld (Vorname oder Nachname) muss zugeordnet werden, bevor Sie fortfahren können.
 
-Klicken Sie auf **Confirm Mapping & Import**, um zur Vorschau zu gelangen.
+Klicken Sie auf **Mapping bestätigen & Importieren**, um zur Vorschau zu gehen.
 
 ---
 
 ## Schritt 2 - Vorschau Ihrer Daten
 
-Nach dem Hochladen zeigt das Tool eine Vorschau von allem, was importiert wird. Verwenden Sie die Tabs, um jeden Datentyp zu überprüfen:
+Nach dem Hochladen zeigt das Tool eine Vorschau von allem, das importiert wird. Verwenden Sie die Registerkarten, um jeden Datentyp zu überprüfen:
 
-- **People** — Nach Haushalt aufgelistet, mit Fotos, falls enthalten.
-- **Groups** — Organisiert nach Campus, Service, Zeit und Kategorie.
-- **Attendance** — Sitzungsdaten, Gruppen und Besuchszahlen.
-- **Donations** — Chargen, Fonds, Spender und Beträge.
-- **Forms** — Formularnamen und Inhaltstypen.
+- **Personen** -- Aufgelistet nach Haushalt, mit Fotos falls vorhanden.
+- **Gruppen** -- Organisiert nach Campus, Service, Zeit und Kategorie.
+- **Anwesenheit** -- Sitzungsdaten, Gruppen und Besuchszähler.
+- **Spenden** -- Batches, Fonds, Spender und Beträge.
+- **Formulare** -- Formularnamen und Inhaltstypen.
 
-Überprüfen Sie dies sorgfältig, bevor Sie fortfahren. Wenn etwas falsch aussieht, klicken Sie auf **Start Over** und korrigieren Sie Ihre Quelldatei.
+Überprüfen Sie dies sorgfältig, bevor Sie fortfahren. Wenn etwas falsch aussieht, klicken Sie auf **Neu starten** und korrigieren Sie Ihre Quelldatei.
 
 ---
 
 ## Schritt 3 - Wählen Sie Ihr Ziel
 
-Wählen Sie aus, wohin die Daten gehen sollen:
+Wählen Sie, wohin Sie Ihre Daten gehen soll:
 
-- **B1 Database** — Importiert direkt in die B1-Datenbank Ihrer Kirche. Nach der Auswahl zeigt das Tool eine endgültige Anzahl der hinzuzufügenden Datensätze an. Klicken Sie auf **Start Transfer**, um zu bestätigen.
-- **B1 Export Zip** — Lädt Ihre Daten als Zip-Datei im B1-Format herunter. Gut für Backups.
-- **Breeze Export Zip** — Konvertiert Ihre Daten in das Breeze-Format.
-- **Planning Center Zip** — Konvertiert Ihre Daten in das Planning Center-Format.
+- **B1 Datenbank** -- Importiert direkt in die B1-Datenbank Ihrer Kirche. Nach der Auswahl zeigt das Tool eine endgültige Zählung von Datensätzen, die hinzugefügt werden. Klicken Sie auf **Transfer starten**, um zu bestätigen.
+- **B1 Export Zip** -- Lädt Ihre Daten als B1-Format-ZIP-Datei herunter. Gut für Sicherungen.
+- **Breeze Export Zip** -- Konvertiert Ihre Daten ins Breeze-Format.
+- **Planning Center Zip** -- Konvertiert Ihre Daten ins Planning Center-Format.
 
 :::warning
-Quelle und Ziel können nicht im gleichen Format sein. Wenn sie übereinstimmen, warnt Sie das Tool, um versehentliche Duplizierung zu verhindern.
+Die Quelle und das Ziel können nicht das gleiche Format sein. Wenn sie übereinstimmen, warnt Sie das Tool, um eine versehentliche Duplizierung zu verhindern.
 :::
 
 ---
 
 ## Schritt 4 - Ausführen
 
-Das Tool verarbeitet die Übertragung und zeigt den Fortschritt für jeden Schritt an:
+Das Tool verarbeitet den Transfer und zeigt Fortschritt für jeden Schritt:
 
-- Campuses, Services, and Times
-- People
-- Photos
-- Groups and Group Members
-- Donations
-- Attendance
-- Forms, Questions, Answers, and Form Submissions
-- Compressing (nur für Zip-Dateiziele)
+- Standorte, Services und Zeiten
+- Personen
+- Fotos
+- Gruppen und Gruppenmitglieder
+- Spenden
+- Anwesenheit
+- Formulare, Fragen, Antworten und Formular-Einreichungen
+- Komprimieren (nur für ZIP-Datei-Ziele)
 
 :::warning
-Schließen Sie Ihren Browser nicht, während die Übertragung läuft. Warten Sie, bis alle Schritte als abgeschlossen angezeigt werden.
+Schließen Sie Ihren Browser nicht, während der Transfer läuft. Warten Sie, bis alle Schritte als abgeschlossen angezeigt werden.
 :::
 
 ---
 
-## Vorbereitung einer Breeze Import Zip
+## Vorbereitung eines Breeze Import Zip
 
-1. Gehen Sie in Breeze zu **Settings** und klicken Sie auf **Export** in der linken Seitenleiste.
-2. Exportieren Sie drei separate Dateien: **People**, **Tags** und **Contributions**.
-3. Wählen Sie alle drei Dateien aus, klicken Sie mit der rechten Maustaste und komprimieren Sie sie in eine einzelne Zip-Datei.
-   - Auf einem Mac: Wählen Sie die Dateien aus, klicken Sie mit der rechten Maustaste und wählen Sie **Compress**.
-   - Auf einem PC: Wählen Sie die Dateien aus, klicken Sie mit der rechten Maustaste, wählen Sie **Send to** und dann **Compressed (zipped) folder**.
-4. Laden Sie die Zip-Datei mit der Option **Breeze Import Zip** in Schritt 1 hoch.
+1. Gehen Sie in Breeze zu **Einstellungen** und klicken Sie auf **Exportieren** in der linken Seitenleiste.
+2. Exportieren Sie drei separate Dateien: **Personen**, **Tags** und **Beiträge**.
+3. Wählen Sie alle drei Dateien, klicken Sie mit der rechten Maustaste, und komprimieren Sie sie in eine ZIP-Datei.
+   - Auf einem Mac: Wählen Sie die Dateien, klicken Sie mit der rechten Maustaste und wählen Sie **Komprimieren**.
+   - Auf einem PC: Wählen Sie die Dateien, klicken Sie mit der rechten Maustaste, wählen Sie **Senden an**, dann **Komprimierter (gezippter) Ordner**.
+4. Laden Sie die ZIP-Datei mit der Option **Breeze Import Zip** in Schritt 1 hoch.
 
-Der Breeze-Import überträgt automatisch Personen, Gruppen (Tags) und Spendendatensätze.
+Der Breeze-Import überträgt Personen, Gruppen (Tags) und Spendendatensätze automatisch.
 
 ---
 
-## Vorbereitung eines Planning Center-Exports
+## Vorbereitung eines Planning Center Exports
 
-1. Exportieren Sie in Planning Center Ihre Personendaten als CSV- oder Zip-Datei.
+1. Exportieren Sie in Planning Center Ihre Personendaten als CSV- oder ZIP-Datei.
 2. Laden Sie sie mit der Option **Planning Center Zip** in Schritt 1 hoch.
 
 ---
 
-## Vorbereitung eines Tithe.ly-Exports
+## Vorbereitung eines Tithe.ly Exports
 
-1. Exportieren Sie in Tithe.ly Ihre **People**-Daten als CSV- oder Excel-Datei. Sie können auch eine separate **Giving**-Datei exportieren, wenn Sie Spendendatensätze übernehmen möchten.
-2. Das Tool erkennt automatisch anhand der Spaltennamen, ob die Datei Personen- oder Spendendaten enthält.
+1. Exportieren Sie in Tithe.ly Ihre **Personendaten** als CSV- oder Excel-Datei. Sie können auch eine separate **Spendendatei** exportieren, wenn Sie Spendendatensätze einfügen möchten.
+2. Das Tool wird automatisch erkennen, ob die Datei Personen- oder Spendendaten basierend auf den Spaltennamen enthält.
 3. Laden Sie die Datei mit der Option **Tithe.ly CSV** in Schritt 1 hoch.
 
 :::info
-Tithe.ly-Exporte können jeweils eine Datei gleichzeitig importiert werden. Führen Sie den Prozess zweimal aus, wenn Sie sowohl Personen- als auch Spendendatensätze separat importieren müssen.
+Tithe.ly-Exporte können nacheinander importiert werden. Führen Sie den Prozess zweimal aus, wenn Sie sowohl Personen- als auch Spendendatensätze separat importieren müssen.
 :::
 
 ---
 
-## Vorbereitung eines CCB- oder Pushpay-Exports
+## Vorbereitung eines CCB oder Pushpay Exports
 
-1. Exportieren Sie in Church Community Builder oder Pushpay Ihre **People**-Daten als CSV-Datei. Sie können auch eine separate Spenden-/Beitrags-Datei exportieren.
-2. Das Tool erkennt automatisch anhand der Spaltennamen, ob die Datei Personen- oder Spendendaten enthält.
+1. Exportieren Sie in Church Community Builder oder Pushpay Ihre **Personendaten** als CSV-Datei. Sie können auch eine separate Spenden-/Beitragsdatei exportieren.
+2. Das Tool wird automatisch erkennen, ob die Datei Personen- oder Spendendaten basierend auf den Spaltennamen enthält.
 3. Laden Sie die Datei mit der Option **CCB / Pushpay CSV** in Schritt 1 hoch.
 
 ---
 
-## Nach dem Import
+## Nach dem Importieren
 
-Sobald die Übertragung abgeschlossen ist, nehmen Sie sich ein paar Minuten Zeit, um Ihre Daten zu überprüfen:
+Nachdem der Transfer abgeschlossen ist, nehmen Sie sich ein paar Minuten Zeit, um Ihre Daten zu überprüfen:
 
-1. Durchsuchen Sie die Seite [People](../people/adding-people.md) und überprüfen Sie stichprobenartig einige Profile.
-2. Bestätigen Sie, dass Namen, E-Mails, Telefonnummern und Adressen korrekt übernommen wurden.
+1. Durchsuchen Sie die [Personen](../people/adding-people.md)-Seite und überprüfen Sie einige Profile stichprobenweise.
+2. Bestätigen Sie, dass Namen, E-Mails, Telefonnummern und Adressen korrekt durchgekommen sind.
 3. Überprüfen Sie, dass Haushaltsverbindungen intakt sind.
 4. Überprüfen Sie alle importierten Gruppen und Spendendatensätze.
 
-Wenn Sie Probleme bemerken, können Sie einzelne Profile von der Personenseite aus bearbeiten. Sie können das Transfer-Tool auch erneut ausführen, um [Ihre Daten zu exportieren](exporting-data.md) als Backup.
+Wenn Sie Probleme feststellen, können Sie individuelle Profile von der Seite "Personen" bearbeiten. Sie können auch das Transfer-Tool erneut ausführen, um [Ihre Daten zu exportieren](exporting-data.md) als Sicherung.

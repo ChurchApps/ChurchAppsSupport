@@ -6,7 +6,7 @@ title: "Configuration de la présence"
 
 <div class="article-intro">
 
-Avant de pouvoir suivre la présence, vous devez indiquer à B1 Admin les emplacements physiques de votre église, les horaires des cultes et les groupes qui se réunissent à chaque culte. Cette configuration unique crée la structure qui alimente tout le suivi et les rapports de présence de votre église.
+Avant de pouvoir suivre la présence, vous devez dire à B1 Admin les emplacements physiques de votre église, quand les services ont lieu et quels groupes se réunissent à chaque service. Cette configuration unique crée la structure qui alimente tous le suivi de la présence et les rapports dans toute votre église.
 
 </div>
 
@@ -14,53 +14,53 @@ Avant de pouvoir suivre la présence, vous devez indiquer à B1 Admin les emplac
 <h4>Avant de commencer</h4>
 
 - Vous avez besoin d'un compte B1 Admin actif avec la permission de gérer la présence. Voir [Rôles et permissions](../people/roles-permissions.md) si vous n'êtes pas sûr de votre niveau d'accès.
-- Si vous prévoyez d'assigner des groupes à des horaires de culte, assurez-vous que vos [groupes sont créés](../groups/creating-groups.md) au préalable.
+- Si vous prévoyez d'assigner des groupes aux heures de service, assurez-vous que vos [groupes sont créés](../groups/creating-groups.md) d'abord.
 
 </div>
 
 ## Concepts clés
 
-- **Campus** -- un emplacement physique où votre église se réunit (par ex., « Campus principal », « Campus Nord »). Les campus sont gérés sous **Paramètres**.
-- **Culte** -- un rassemblement récurrent dans un campus (par ex., « Culte du dimanche », « Milieu de semaine »).
-- **Horaire de culte** -- une heure précise à laquelle un culte a lieu (par ex., « 9h00 », « 11h00 »).
-- **Groupe planifié** -- un groupe assigné à un horaire de culte spécifique. La présence est suivie dans le contexte de ce culte.
-- **Groupe non planifié** -- un groupe qui suit la présence de manière autonome, sans être lié à un horaire de culte.
+- **Campus** -- un emplacement physique où votre église se réunit (par exemple, "Campus principal", "Campus nord"). Les campus sont gérés sous **Paramètres**.
+- **Service** -- un rassemblement récurrent à un campus (par exemple, "Service du dimanche", "Médias").
+- **Heure de service** -- une heure spécifique qu'un service a lieu (par exemple, "9h00", "11h00").
+- **Groupe planifié** -- un groupe assigné à une heure de service spécifique. La présence est suivie dans le contexte de ce service.
+- **Groupe non planifié** -- un groupe qui suit sa propre présence, sans être lié à une heure de service.
 
-## Configurer votre structure de présence
+## Configuration de votre structure de présence
 
-1. Ouvrez **B1 Admin**, cliquez sur le **menu des sections** en haut à gauche (le nom de la section avec la petite flèche) et choisissez **Personnes**.
+1. Ouvrez **B1 Admin**, cliquez sur le **menu de section** dans le coin supérieur gauche (le nom de la section avec la petite flèche) et choisissez **Personnes**.
 2. Dans la barre de navigation, cliquez sur l'onglet **Présence**. L'onglet **Configuration** est sélectionné par défaut.
-3. Cliquez sur **Gérer les campus** (en haut à droite du panneau Configuration). Cela vous amène à **Paramètres → Campus**. Cliquez sur **Ajouter un campus**, entrez le nom de votre emplacement (l'adresse et le fuseau horaire sont facultatifs) et cliquez sur **Enregistrer**.
-4. Revenez à **Personnes → Présence → Configuration**. Votre campus apparaît maintenant dans le tableau de configuration.
-5. Cliquez sur le **bouton + dans la colonne Culte** sous votre campus. Entrez un nom de culte tel que « Culte du dimanche » et cliquez sur **Enregistrer**.
-6. Cliquez sur le **bouton + dans la colonne Horaire** sous le culte. Entrez un horaire tel que « 9h00 » et cliquez sur **Enregistrer**. Répétez pour chaque horaire de culte.
-7. Pour connecter un groupe à un horaire de culte, ouvrez le groupe depuis l'onglet **Groupes**, cliquez sur le crayon **Modifier** et utilisez **Ajouter un horaire de culte** — voir la section suivante.
+3. Cliquez sur **Gérer les campus** (haut à droite du panneau Configuration). Cela vous amène à **Paramètres → Campus**. Cliquez sur **Ajouter un campus**, entrez le nom de votre emplacement (l'adresse et le fuseau horaire sont optionnels), et cliquez sur **Enregistrer**.
+4. Retournez à **Personnes → Présence → Configuration**. Votre campus apparaît maintenant dans le tableau de configuration.
+5. Cliquez sur le **bouton + dans la colonne Service** sous votre campus. Entrez un nom de service comme "Service du dimanche" et cliquez sur **Enregistrer**.
+6. Cliquez sur le **bouton + dans la colonne Heure** sous le service. Entrez une heure comme "9h00" et cliquez sur **Enregistrer**. Répétez pour chaque heure de service.
+7. Pour connecter un groupe à une heure de service, ouvrez le groupe à partir de l'onglet **Groupes**, cliquez sur le crayon **Modifier**, et utilisez **Ajouter une heure de service** — voir la section suivante.
 
-### Activer le suivi de présence sur un groupe
+### Activation de Suivi de la présence sur un groupe
 
-Avant qu'un groupe puisse avoir sa présence enregistrée, le suivi de présence doit être activé pour ce groupe.
+Avant qu'un groupe puisse avoir sa présence enregistrée, Suivi de la présence doit être activé pour ce groupe.
 
 1. Cliquez sur **Groupes** dans la barre latérale et sélectionnez le groupe.
-2. Cliquez sur l'icône **Modifier** (crayon).
-3. Réglez **Suivi de présence** sur **Oui**.
+2. Cliquez sur l'icône crayon **Modifier**.
+3. Définissez **Suivi de la présence** sur **Oui**.
 4. Cliquez sur **Enregistrer**.
 
 :::tip
-Si vous avez assigné le groupe à un horaire de culte à l'étape précédente, utilisez également l'option **Ajouter un horaire de culte** sur l'écran de modification du groupe pour le lier au bon culte. Cela garantit que les sessions sont connectées au bon campus et au bon horaire.
+Si vous avez assigné le groupe à une heure de service à l'étape précédente, utilisez aussi l'option **Ajouter une heure de service** sur l'écran de modification du groupe pour le lier au service correct. Cela garantit que les sessions sont connectées au bon campus et à la bonne heure.
 :::
 
 :::tip
-Si un groupe se réunit en dehors d'un culte régulier -- comme un petit groupe en milieu de semaine qui suit sa propre présence -- vous pouvez le laisser comme groupe non planifié. Il apparaîtra toujours dans l'onglet Groupes pour les rapports de présence.
+Si un groupe se réunit en dehors d'un service régulier -- comme un petit groupe en milieu de semaine qui suit sa propre présence -- vous pouvez le laisser comme un groupe non planifié. Il apparaîtra toujours sur l'onglet Groupes pour le rapport de présence.
 :::
 
-## Modifier votre configuration
+## Modification de votre configuration
 
-Vous pouvez mettre à jour votre configuration à tout moment. Sélectionnez un campus, un horaire de culte ou un groupe et cliquez sur **Modifier** pour changer ses détails, ou **Supprimer** pour le retirer.
+Vous pouvez mettre à jour votre configuration à tout moment. Sélectionnez un campus, une heure de service ou un groupe et cliquez sur **Modifier** pour changer ses détails, ou **Supprimer** pour le supprimer.
 
 :::info
-Supprimer un horaire de culte ne supprime pas les enregistrements de présence passés. Vos données historiques sont préservées même si vous modifiez votre planning.
+La suppression d'une heure de service ne supprime pas les dossiers de présence passés. Vos données historiques sont préservées même si vous changez votre horaire.
 :::
 
-## Et ensuite
+## Prochaines étapes
 
-Une fois vos campus, horaires de culte et groupes en place, vous êtes prêt à commencer à [enregistrer la présence](recording-attendance.md) manuellement ou à configurer [l'enregistrement en libre-service](check-in.md) pour vos cultes.
+Une fois vos campus, heures de service et groupes en place, vous êtes prêt à commencer à [enregistrer la présence](recording-attendance.md) manuellement ou à configurer l'[auto-enregistrement](check-in.md) pour vos services.

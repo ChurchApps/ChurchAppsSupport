@@ -1,111 +1,120 @@
 ---
-title: "Mga Plano ng Serbisyo"
+title: "Service Plans"
 ---
 
-# Mga Plano ng Serbisyo
+# Service Plans
 
 <div class="article-intro">
 
-Inaayos ng mga plano ng serbisyo kung sino ang naglilingkod at kung kailan. Ang bawat plano ay nakatali sa isang partikular na petsa at ministri, kaya madaling mai-coordinate ang iyong mga koponan ng boluntaryo linggo-linggo at masiguro na lubos na may tauhan ang bawat serbisyo.
+Ang Service plan ay nag-organize kung sino ang nagsisilbi at kailan. Bawat plan ay nakakabit sa isang tiyak na petsa at ministri, na ginagawang simple na i-coordinate ang iyong volunteer team linggo sa linggo at masiguro na ang bawat serbisyo ay buong staffed.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Magsimula</h4>
 
-- I-set up ang iyong mga ministri at koponan sa lugar ng Paglilingkod
-- Tiyaking naidagdag na ang mga boluntaryo sa iyong [direktoryo ng mga tao](../people/adding-people.md) at itinalaga sa mga koponan
+- I-set up ang iyong ministry at team sa Serving area
+- Siguraduhin na ang volunteer ay naidagdag sa iyong [people directory](../people/adding-people.md) at italang sa team
 
 </div>
 
-## Pagpunta sa mga Plano
+## Pag-access sa Plan
 
-1. Pumunta sa **Serving** mula sa pangunahing menu.
-2. Pumili ng **tab ng ministri** sa itaas ng pahina.
-3. I-click ang isang **uri ng plano** upang makita ang listahan ng mga plano para sa uring iyon.
-4. I-click ang isang partikular na plano upang buksan ito.
-
-:::info
-Hindi kinakailangan ang buong admin access upang pamahalaan ang mga plano. Ang sinumang kasapi ng isang ministri ay maaaring pumunta sa Serving at gumawa, mag-edit, at mag-iskedyul ng mga plano para sa kanilang sariling ministri nang hindi kailangan ng permisong Plans Edit. Ang mga editor na may tungkuling Plans Edit ay maaaring mamahala ng mga plano sa lahat ng ministri.
-:::
-
-## Paggawa ng Plano
-
-1. Mula sa view ng uri ng plano, i-click ang **New Plan**.
-2. Bigyan ng pangalan ang plano o gamitin ang petsa bilang pangalan. Piliin ang **petsa** ng serbisyo.
-3. Kung nais mong kopyahin mula sa isang nakaraang plano, piliin kung mga posisyon lamang o mga posisyon at takdang gawain. Kung ayaw mong kumopya, huwag na lang pumili ng anuman. Maaari mo ring kopyahin ang ayos ng serbisyo mula sa aking nakaraang plano.
-4. I-save ang plano. Maaari ka na ngayong magsimulang magtalaga ng mga miyembro ng koponan at bumuo ng [ayos ng serbisyo](./service-order.md).
-
-## Ang Pahina ng Detalye ng Plano
-
-Kapag binuksan mo ang isang plano, makikita mo ang dalawang tab:
-
-- **Assignments (Mga Takdang Gawain)** -- Pamahalaan kung sino sa mga miyembro ng koponan ang nakatalaga sa planong ito. Maaari kang magdagdag ng mga tao mula sa iyong umiiral na mga koponan at makita kung sino ang nagkumpirma o naghihintay pa rin.
-- **[Ayos ng Serbisyo](./service-order.md)** -- Bumuo ng ayos ng serbisyo na may mga elemento tulad ng mga awiting pagsamba, panalangin, anunsyo, at ang sermon.
-
-## Pagtatalaga ng mga Miyembro ng Koponan
-
-1. Buksan ang isang plano at pumunta sa tab na **Assignments**.
-2. I-click ang **add Position** upang palawakin ito. Punan ang impormasyon sa form ng pagdaragdag ng posisyon. Para sa pangalan ng kategorya, maglagay ng anumang kategoryang gusto mo.
-3. I-click ang **People Needed** at pumili ng mga boluntaryong pupuno sa posisyong iyon.
-4. Magdagdag ng mga miyembro mula sa roster ng iyong koponan sa pamamagitan ng pag-click ng **Add**.
-5. Ang mga itinalagang miyembro ay lilitaw sa ilalim ng kanilang koponan kasama ang katayuan ng kanilang takdang gawain.
-6. I-click ang notify volunteers upang abisuhan sila sa loob ng B1 app o sa pamamagitan ng email.
-
-Ang bawat posisyon ay nagpapakita ng isang chip na may bilang (halimbawa, "2/3") upang makita mo agad kung ilang puwang ang napunan. Sa itaas ng tab na Assignments, ang isang progress bar at chip na may buod ("X sa Y na posisyon ang napunan") ay nagpapakita ng kabuuang tauhan para sa plano, na nagiging **Fully staffed** kapag napunan na ang bawat posisyon.
-
-:::tip
-I-set up ang iyong mga koponan sa mga setting ng ministri bago gumawa ng mga plano. Sa ganitong paraan, magkakaroon ka na ng handang pool ng mga boluntaryong maaaring italaga.
-:::
-
-## Mga Paalala sa Boluntaryo
-
-Maaaring awtomatikong paalalahanan ng B1 ang mga boluntaryo bago ang mga serbisyong kanilang naka-iskedyul, kaya hindi mo na kailangang hanapin ang iyong koponan bawat linggo. Ang mga paalala ay ipinapadala sa **lahat ng naka-iskedyul** — kapwa sa mga nagkumpirma at sa mga hindi pa tumutugon — sa pamamagitan ng email at bilang isang in-app/push notification. Kasama sa bawat paalala ang posisyon(mga) ng boluntaryo, ang petsa ng serbisyo, ang mga tala ng plano, at ang iyong custom na mensahe.
-
-Ang oras at nilalaman ng paalala ay itinatakda kada **uri ng plano**, kaya mapapanatili ng bawat uri ng serbisyo ang sarili nitong iskedyul.
-
-1. Mula sa lugar na **Serving**, piliin ang ministring naglalaman ng uri ng plano.
-2. I-click ang **edit (icon na lapis)** sa tabi ng uri ng plano.
-3. Sa seksyong **Reminders**, itakda ang:
-   - **Reminder days before service** — isang listahang pinaghihiwalay ng kuwit ng kung ilang araw bago dapat ipadala, halimbawa `7,1,0`. Gamitin ang `0` upang magpadala ng paalala sa mismong araw ng serbisyo. Iwanang blangko ang field na ito upang i-off ang mga paalala para sa uri ng planong ito.
-   - **Custom reminder message** *(opsyonal)* — dagdag na teksto na idaragdag sa paalala, tulad ng "Dumating 30 minuto nang maaga para sa rehearsal."
-4. I-save ang uri ng plano.
-
-Ang mga bagong uri ng plano ay awtomatikong nagpapaalala sa mga boluntaryo **2 araw bago** ang bawat serbisyo hangga't hindi mo ito binabago.
-
-:::tip
-Ang mga boluntaryong hindi pa nagkukumpirma ay may mga pindutang **Accept** at **Decline** direkta sa loob ng email na paalala, kaya makakapagbigay sila ng tugon nang hindi na mag-sign in.
-:::
+1. Mag-navigate sa **Serving** mula sa main menu.
+2. Piliin ang **ministry tab** sa tuktok ng pahina.
+3. I-click ang **plan type** upang makita ang listahan ng plan para sa uri na iyon.
+4. I-click ang specific na plan upang buksan ito.
 
 :::info
-Ang bawat paalala ay ipinapadala nang isang beses lamang. Ang mga planong nasa borador pa lamang (hindi pa ipinadala sa koponan) ay hindi nagpapadala ng mga paalala.
+Ang full admin access ay hindi kinakailangan upang pamahalaan ang plan. Sinuman na miyembro ng isang ministri ay maaaring mag-navigate sa Serving at lumikha, mag-edit, at mag-schedule ng plan para sa kanilang sariling ministri nang hindi kinakailangang ang Plans Edit permission. Ang editor na may Plans Edit role ay maaaring pamahalaan ang plan sa bawat ministri.
 :::
 
-## Pag-uugnay ng mga Grupo sa isang Uri ng Plano
+## Lumilikha ng Plan
 
-Sa ibaba ng listahan ng mga plano sa pahina ng uri ng plano, ang seksyong **Groups** ay nagbibigay-daan sa iyong magpasya kung aling mga grupo ang makakakita ng mga plano para sa uri ng planong ito mula sa kanilang member portal. Ito ay isang mabilis na paraan upang ipakita ang mga darating na serbisyo sa tamang mga koponan nang hindi binibigyan sila ng admin access.
+1. Mula sa plan type view, i-click ang **New Plan**.
+2. Bigyan ng pangalan ang plan o gamitin ang petsa bilang pangalan. Piliin ang **date** para sa serbisyo.
+3. Kung nais mong gawin mula sa nakaraang plan, piliin ang position lang o position at assignment. Kung hindi mo gustong gawin, walang pipiliin. Maaari mo ring gawin ang kaayusan ng serbisyo mula sa nakaraang plan.
+4. I-save ang plan. Maaari ka nang magsimulang mag-assign ng team member at magtayo ng [service order](./service-order.md).
 
-1. Sa pahina ng uri ng plano, mag-scroll pababa hanggang sa seksyong **Groups**.
+## Ang Plan Detail Page
+
+Kapag bubuksan mo ang isang plan, makikita mo ang dalawang tab:
+
+- **Assignments** -- Pamahalaan kung aling team member ang italang sa plan na ito. Maaari kang magdagdag ng tao mula sa iyong existing na team at makita kung sino ang nag-confirm o pending pa.
+- **[Service Order](./service-order.md)** -- Itayo ang kaayusan ng serbisyo na may elemento tulad ng worship song, prayer, announcement, at sermon.
+
+## Pag-assign ng Team Member
+
+1. Buksan ang isang plan at pumunta sa **Assignments** tab.
+2. I-click ang **add Position** upang palawakin ito. Puno ang impormasyon sa add a position form. Para sa category name idagdag ang anumang kategori na gusto.
+3. I-click ang **People Needed** at pumili ng volunteer upang mapuno ang position na iyon.
+4. Magdagdag ng miyembro mula sa iyong team roster sa pamamagitan ng pag-click ng **Add**.
+5. Ang italang na miyembro ay lilitaw sa ilalim ng kanilang team na may assignment status.
+6. I-click ang notify volunteer upang ipaalam sa kanila sa loob ng B1 app o sa pamamagitan ng email.
+
+Bawat position ay nagpapakita ng count chip (halimbawa, "2/3") upang makita mo kung ilang spot ang napuno nang mabilis. Sa tuktok ng Assignments tab, ang progress bar at isang summary chip ("X of Y position filled") ay nagpapakita ng iyong overall staffing para sa plan, nagpapalit sa **Fully staffed** kapag subok ang bawat position.
+
+:::tip
+I-set up ang iyong team sa ministry setting bago lumikha ng plan. Sa ganitong paraan ay mayroon kang ready pool ng volunteer upang italang.
+:::
+
+## Plan Setting
+
+Bawat plan ay may karagdagang setting na maaari mong i-configure sa pamamagitan ng pag-click ng edit (pencil) icon sa plan. Kasama ang:
+
+- **Signup Deadline** — ang bilang ng oras bago ang serbisyo kung kailan ang volunteer signup ay magsasara. Ipasok ang negative na numero upang panatilihing bukas ang signup lampas sa service start time.
+- **Show volunteer name sa signup page** — kapag naka-check, ang volunteer ay maaaring makita kung sino pang nag-sign up na para sa bawat position.
+- **Penciled in** — naghihid ng assignment mula sa volunteer hanggang handa ka nang i-publish ang schedule.
+- **Automatically schedule a replacement kapag ang volunteer ay tumanggi** — kapag naka-check, kung ang italang volunteer ay tumanggi sa kanilang position ang B1 ay awtomatikong makipag-ugnayan sa susunod na available na tao sa team roster at itanong kung makakasama. Ito ay magpatuloy pababa sa listahan hanggang sa may sumusubok, na nagpapanatili ng iyong posisyon na puno nang walang manu-manong follow-up.
+
+## Volunteer Reminder
+
+Ang B1 ay maaaring awtomatikong ipaalala sa volunteer sa unahan ng mga serbisyo na sila ay naka-schedule, kaya hindi mo kailangang humabol sa iyong team bawat linggo. Ang reminder ay napupunta sa **lahat ng naka-schedule** — parehong mga na nag-confirm at ang hindi pa nagsagot — sa pamamagitan ng email at bilang in-app/push notification. Bawat reminder ay kasama ang position ng volunteer, ang service date, ang plan note, at ang iyong custom na mensahe.
+
+Ang reminder timing at content ay itakda bawat **plan type**, kaya ang bawat uri ng serbisyo ay maaaring panatilihin ang sarili nitong schedule.
+
+1. Mula sa **Serving** area, piliin ang ministry na naglalaman ng plan type.
+2. I-click ang **edit (pencil) icon** sa tabi ng plan type.
+3. Sa **Reminders** section, itakda ang:
+   - **Reminder day bago ang serbisyo** — isang comma-separated list kung gaano kalayo upang magpadala, halimbawa `7,1,0`. Gamitin ang `0` upang magpadala ng reminder sa araw ng serbisyo. Iwanan ang field na ito na blangko upang i-turn off ang reminder para sa plan type na ito.
+   - **Custom reminder message** *(optional)* — karagdagang teksto na idinagdag sa reminder, tulad ng "Dumating 30 minuto ng maaga upang mag-rehearse."
+4. I-save ang plan type.
+
+Ang mga bagong plan type ay nag-remind sa volunteer **2 day bago** ang bawat serbisyo bilang default hanggang sa baguhin mo ito.
+
+:::tip
+Ang volunteer na hindi pa nag-confirm ay nakakakuha ng **Accept** at **Decline** button sa tamang loob ng reminder email, kaya sila ay maaaring tumugon nang walang pag-sign in.
+:::
+
+:::info
+Bawat reminder ay ipinadala nang isang beses. Ang plan na hindi pa naka-pencil in (hindi pa ipinadala sa team) ay hindi nag-trigger ng reminder.
+:::
+
+## Pag-associate ng Group sa Plan Type
+
+Sa ibaba ng plan list sa plan type page, ang **Groups** section ay nagbibigay-daan sa iyo na magpasya kung aling grupo ang maaaring makita ang plan para sa plan type na ito mula sa kanilang member portal. Ito ay isang mabilis na paraan upang i-surface ang paparating na serbisyo sa tamang team nang hindi nagbibigay sa kanila ng admin access.
+
+1. Sa plan type page, mag-scroll pababa sa **Groups** section.
 2. I-click ang **Add Group** at pumili ng grupo mula sa dropdown.
-3. Sa column na **Shows**, piliin kung dapat makita ng mga miyembro ng grupong iyon ang **Past**, **Future**, o **Both** na plano para sa uri ng planong ito.
-4. Ulitin upang mag-ugnay ng karagdagang mga grupo, o i-click ang icon na basurahan upang alisin ang isang grupo.
+3. Sa **Shows** column, pumili kung ang miyembro ng grupo na iyon ay dapat makita ang **Past**, **Future**, o **Both** plan para sa plan type na ito.
+4. Ulitin upang mag-associate ng karagdagang grupo, o i-click ang trash icon upang alisin ang isang grupo.
 
 :::info
-Tanging ang mga grupong minarkahang **Standard** ang lumilitaw sa picker. Awtomatikong makikita ng mga miyembro ng isang naka-ugnay na grupo ang mga plano ng uri ng planong ito sa tab na [Plans](/docs/b1-church/plans/) sa B1 member portal — limitado sa window ng nakaraan/hinaharap/pareho na iyong pinili.
+Lamang ang grupo na may tag na **Standard** ang lumalabas sa picker. Ang miyembro ng isang associated na grupo ay awtomatikong makikita ang plan type na ito ay plano sa [Plans](/docs/b1-church/plans/) tab sa B1 member portal — limitado sa past/future/both window na iyong napili.
 :::
 
-## Pag-print ng mga Plano
+## Pag-print ng Plan
 
-Maaari mong i-print ang isang plano para ipamahagi sa iyong koponan. Buksan ang plano, buksan ang tab ng ayos ng serbisyo at gamitin ang opsyong **Print** upang gumawa ng isang printable na bersyon na may kasamang mga takdang gawain at ang ayos ng serbisyo. Kapaki-pakinabang ito para ipamigay sa mga rehearsal o idikit sa isang karaniwang lugar.
+Maaari kang mag-print ng isang plan para sa distribusyon sa iyong team. Buksan ang plan, Buksan ang service order tab at gamitin ang **Print** option upang lumikha ng printable na bersyon na kasama ang assignment at service order. Ito ay kapaki-pakinabang para sa pag-hand out sa rehearsal o posting sa isang common area.
 
 :::info
-Ang mga plano ay inaayos ayon sa ministri. Tiyaking nasa tamang tab ng ministri ka bago gumawa o tumingin ng mga plano.
+Ang plan ay organized ng ministry. Siguraduhin na nasa tamang ministry tab ka bago lumikha o tingnan ang plan.
 :::
 
-## Susunod na mga Hakbang
+## Susunod na Hakbang
 
-- Gamitin ang [Buod ng mga Plano](./plans-overview.md) upang makita ang lahat ng darating na takdang gawain sa maraming linggo sa iisang grid at matukoy ang mga hindi napupunang posisyon — at italaga ang mga boluntaryo nang direkta mula sa grid
-- I-save ang istraktura ng isang plano bilang isang [Plan Template](./plan-templates.md) upang maaari mo itong idikit sa mga darating na plano sa isang click lamang
-- Bumuo ng iyong [Ayos ng Serbisyo](./service-order.md) na may mga awit, pagbasa, at iba pang elemento
-- Magdagdag ng [mga kanta](./songs.md) mula sa iyong library nang direkta sa ayos ng serbisyo
-- Gumamit ng [Tasks](./tasks.md) upang magtalaga ng mga follow-up na aksyon sa mga miyembro ng koponan
+- Gamitin ang [Plans Overview](./plans-overview.md) upang makita ang lahat ng paparating na assignment sa ilang linggo sa iisang grid at tukuyin ang walang pilak na position — at italang ang volunteer direkta mula sa grid
+- Kumbento ang istraktura ng plan bilang [Plan Template](./plan-templates.md) upang makahingi ito sa hinaharap na plan sa isang click
+- Itayo ang iyong [Service Order](./service-order.md) na may kanta, pagbabasa, at ibang elemento
+- Magdagdag ng [kanta](./songs.md) mula sa iyong library direkta sa service order
+- Gamitin ang [Task](./tasks.md) upang italang ang follow-up action item sa team member

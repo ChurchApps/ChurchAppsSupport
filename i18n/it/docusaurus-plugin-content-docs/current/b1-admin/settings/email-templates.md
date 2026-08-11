@@ -6,34 +6,34 @@ title: "Modelli di Email"
 
 <div class="article-intro">
 
-I Modelli di Email ti permettono di salvare contenuti email riutilizzabili -- un messaggio di benvenuto, un promemoria di evento, un ringraziamento per una donazione -- così tu (o un [workflow](../serving/workflows.md)) potete inviarlo con un clic invece di scriverlo da zero ogni volta.
+I Modelli di Email ti permettono di salvare contenuti di email riutilizzabili -- un messaggio di benvenuto, un promemoria di evento, un ringraziamento per una donazione -- così che tu (o un [flusso di lavoro](../serving/workflows.md)) possa inviarlo con un clic invece di scriverlo da zero ogni volta.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Hai bisogno dell'accesso all'area Settings in B1 Admin.
+- Hai bisogno di accesso all'area Impostazioni in B1 Admin.
 
 </div>
 
-## Accedere ai Modelli di Email
+## Accesso ai Modelli di Email
 
-1. Vai su **Settings** nella barra laterale sinistra.
-2. Clicca su **Email Templates**.
-3. Vedrai un elenco dei modelli esistenti con oggetto, categoria e data dell'ultima modifica.
+1. In B1 Admin, apri il **menu sezione** nell'angolo in alto a sinistra (il nome della sezione con la piccola freccia) e scegli **Impostazioni**.
+2. Fai clic su **Modelli di Email**.
+3. Vedrai un elenco dei modelli esistenti con il loro soggetto, categoria e data dell'ultima modifica.
 
-## Creare un Modello
+## Creazione di un Modello
 
-1. Clicca su **New Template**.
-2. Inserisci un **Template Name** per identificarlo nell'elenco, e scegli una **Category** (General, Events, Groups, Giving o Welcome) per aiutarti a organizzare i tuoi modelli.
-3. Inserisci la riga **Subject**.
-4. Scrivi il **Body** utilizzando l'editor di testo formattato.
-5. Clicca su **Save**.
+1. Fai clic su **Nuovo Modello**.
+2. Inserisci un **Nome Modello** per identificarlo nell'elenco, e scegli una **Categoria** (Generale, Eventi, Gruppi, Donazioni, o Benvenuto) per aiutare a organizzare i tuoi modelli.
+3. Inserisci la riga di **Oggetto**.
+4. Scrivi il **Corpo** utilizzando l'editor di testo ricco.
+5. Fai clic su **Salva**.
 
-## Campi di Unione
+## Campi di Fusione
 
-Clicca su un chip di campo di unione sopra Subject o Body per inserirlo alla posizione del cursore. Quando l'email viene inviata, ogni campo di unione viene sostituito con le informazioni effettive del destinatario:
+Fai clic su un chip di campo di fusione sopra l'Oggetto o il Corpo per inserirlo nel tuo cursore. Quando l'email viene inviata, ogni campo di fusione viene sostituito con le informazioni effettive del destinatario:
 
 - `{{firstName}}`, `{{lastName}}`, `{{displayName}}` -- Il nome del destinatario
 - `{{email}}` -- L'indirizzo email del destinatario
@@ -41,16 +41,16 @@ Clicca su un chip di campo di unione sopra Subject o Body per inserirlo alla pos
 
 ## Anteprima di un Modello
 
-Clicca su **Preview** per vedere come appariranno l'oggetto e il corpo con dati di esempio inseriti per i campi di unione, prima di salvare o inviare.
+Fai clic su **Anteprima** per vedere come appariranno l'oggetto e il corpo con dati di esempio compilati per i campi di fusione, prima di salvare o inviare.
 
-## Utilizzare un Modello
+## Utilizzo di un Modello
 
-I modelli salvati sono disponibili da selezionare durante la composizione di un'email a persone o a un gruppo, e come azione nei [Workflow](../serving/workflows.md).
+I modelli salvati sono disponibili per essere selezionati quando componi un'email a persone o a un gruppo, e come azione nei [Flussi di Lavoro](../serving/workflows.md).
 
-## Modificare ed Eliminare
+## Modifica ed Eliminazione
 
-Clicca sull'icona **Edit** accanto a un modello per aggiornarlo, oppure sull'icona **Delete** per rimuoverlo definitivamente.
+Fai clic sull'icona **Modifica** accanto a un modello per aggiornarlo, o l'icona **Elimina** per rimuoverlo permanentemente.
 
-## Prossimi Passi
+## Passaggi Successivi
 
-- [Workflow](../serving/workflows.md) -- Attiva automaticamente l'invio di un'email modello in base a regole
+- [Flussi di Lavoro](../serving/workflows.md) -- Attiva automaticamente un'email di modello in base alle regole

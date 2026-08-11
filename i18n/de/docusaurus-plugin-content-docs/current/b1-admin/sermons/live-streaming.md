@@ -1,133 +1,133 @@
 ---
-title: "Live-Streaming"
+title: "Live-Übertragung"
 ---
 
-# Live-Streaming
+# Live-Übertragung
 
 <div class="article-intro">
 
-Die Seite Live Stream Times ermöglicht es Ihnen, den Streaming-Zeitplan Ihrer Kirche zu konfigurieren, Gottesdienstzeiten zu verwalten und das Zuschauererlebnis anzupassen. Richten Sie wiederkehrende wöchentliche Gottesdienste oder einmalige Veranstaltungen ein, konfigurieren Sie Chat- und Videoeinstellungen und steuern Sie, wann Ihr Stream live geht.
+Die Seite "Live Stream Times" ermöglicht es Ihnen, den Übertragungsplan Ihrer Kirche zu konfigurieren, Dienstleistungszeiten zu verwalten und die Zuschauererfahrung anzupassen. Richten Sie wöchentliche Dienstleistungen oder einmalige Veranstaltungen ein, konfigurieren Sie Chat- und Videoeinstellungen und steuern Sie, wann Ihr Stream live geht.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Voraussetzungen</h4>
 
-- Sie benötigen die Berechtigung **contentApi.streamingServices.edit**. Siehe [Roles & Permissions](../settings/roles-permissions.md), wenn Sie keinen Zugriff haben.
-- Halten Sie Ihre YouTube-Kanal-ID bereit, wenn Sie automatisches Live-Streaming verwenden möchten
+- Sie benötigen die Berechtigung **contentApi.streamingServices.edit**. Siehe [Rollen & Berechtigungen](../settings/roles-permissions.md), wenn Sie keinen Zugriff haben.
+- Halten Sie Ihre YouTube-Kanal-ID bereit, wenn Sie automatisierte Liveübertragung verwenden möchten
 - Fügen Sie mindestens eine [Predigt](managing-sermons) oder permanente Live-URL hinzu, um sie als Stream-Quelle zu verwenden
 
 </div>
 
-Die Seite hat zwei Haupttabs: **Services** zur Verwaltung Ihres Live-Stream-Zeitplans und **Settings** zur Konfiguration Ihrer Streaming-Seite.
+Die Seite hat zwei Hauptregisterkarten: **Dienstleistungen** zum Verwalten Ihres Liveübertragungsplans und **Einstellungen** zum Konfigurieren Ihrer Übertragungsseite.
 
-## Gottesdienste verwalten
+## Verwaltung von Dienstleistungen
 
-### Einen Gottesdienst hinzufügen
+### Hinzufügen einer Dienstleistung
 
-1. Klicken Sie in B1 Admin auf **Sermons** in der linken Seitenleiste und dann auf den Tab **Live Stream Times**.
-2. Klicken Sie auf die Schaltfläche **Add Service**, um einen neuen geplanten Gottesdienst zu erstellen.
-3. Geben Sie einen **Service Name** ein (z. B. "Sonntagmorgen").
-4. Legen Sie die **Service Time** fest -- wählen Sie den Tag und die Uhrzeit, zu der Ihr Gottesdienst beginnt.
-5. Setzen Sie **Recurs Weekly** auf **Yes** für regelmäßige wöchentliche Gottesdienste oder **No** für eine einmalige Veranstaltung.
+1. Öffnen Sie in B1 Admin das **Bereichsmenü** in der oberen linken Ecke (der Bereichsname mit dem kleinen Pfeil) und wählen Sie **Predigten**, dann klicken Sie auf die **Live-Übertragungszeiten**-Registerkarte.
+2. Klicken Sie auf die Schaltfläche **Dienstleistung hinzufügen**, um eine neue geplante Dienstleistung zu erstellen.
+3. Geben Sie einen **Dienstleistungsnamen** ein (z.B. "Sonntag Morgen").
+4. Stellen Sie die **Dienstleistungszeit** ein -- wählen Sie den Tag und die Zeit aus, zu der Ihre Dienstleistung beginnt.
+5. Stellen Sie **Wöchentlich wiederholen** auf **Ja** für regelmäßige wöchentliche Dienstleistungen oder **Nein** für ein einmaliges Ereignis ein.
 
-### Chat- und Videoeinstellungen konfigurieren
+### Konfigurieren von Chat- und Videoeinstellungen
 
-6. Legen Sie unter **Chat Settings** fest, wie viele Minuten vor und nach dem Gottesdienst der Chat aktiviert sein soll. So können Besucher vor Beginn des Gottesdienstes chatten und danach fortfahren.
-7. Legen Sie unter **Video Settings** fest, wie früh der Videostream für Countdown- oder Vor-Gottesdienst-Inhalte gestartet werden soll.
-8. Wählen Sie aus dem Dropdown-Menü, welche Predigt abgespielt werden soll:
-   - **Latest Sermon** -- Spielt automatisch Ihr zuletzt hinzugefügtes Video ab.
-   - **Current Live Service** -- Spielt Ihren aktuellen Livestream von YouTube mit Ihrer Kanal-ID ab.
-   - Sie können auch jede spezifische Predigt auswählen, die Sie bereits gespeichert haben.
-9. Klicken Sie auf **Save**, um Ihren Gottesdienst zu planen.
+6. Stellen Sie unter **Chat-Einstellungen** ein, wie viele Minuten vor und nach der Dienstleistung der Chat aktiviert sein sollte. Dies ermöglicht es Besuchern, vor Dienstleistungsbeginn zu chatten und danach fortzufahren.
+7. Stellen Sie unter **Videoeinstellungen** ein, wie früh der Videostream für Countdown- oder Vordienstinhalte starten sollte.
+8. Wählen Sie, welche Predigt aus dem Dropdown abgespielt werden soll:
+   - **Neueste Predigt** -- Spielt automatisch Ihr zuletzt hinzugefügtes Video.
+   - **Aktuelle Live-Dienstleistung** -- Spielt Ihren aktuellen Livestream von YouTube mit Ihrer Kanal-ID.
+   - Sie können auch eine beliebige Predigt wählen, die Sie bereits gespeichert haben.
+9. Klicken Sie auf **Speichern**, um Ihre Dienstleistung zu planen.
 
 :::info
-Ihr Gottesdienst wird automatisch jede Woche aktualisiert, wenn er auf wiederkehrend eingestellt ist. Sie können so viele Gottesdienste hinzufügen, wie Sie benötigen. Besucher sehen die nächste geplante Gottesdienstzeit, wenn sie Ihre Streaming-Seite besuchen.
+Ihre Dienstleistung wird sich jede Woche automatisch aktualisieren, wenn sie auf wiederkehrend eingestellt ist. Sie können so viele Dienstleistungen hinzufügen, wie Sie benötigen. Besucher sehen die nächste geplante Dienstleistungszeit, wenn sie Ihre Übertragungsseite besuchen.
 :::
 
-## Streaming-Seiteneinstellungen
+## Einstellungen der Übertragungsseite
 
-Klicken Sie auf den Tab **Settings**, um die Tabs und Links anzupassen, die neben Ihrem Livestream erscheinen.
+Klicken Sie auf die **Einstellungen**-Registerkarte, um die Registerkarten und Links anzupassen, die neben Ihrer Live-Übertragung angezeigt werden.
 
-### Tabs hinzufügen
+### Registerkarten hinzufügen
 
-1. Klicken Sie auf die Schaltfläche **Add**, um einen neuen Tab zu Ihrer Livestream-Seite hinzuzufügen.
-2. Wählen Sie den vordefinierten **Chat**-Tab oder fügen Sie einen benutzerdefinierten Tab mit einer externen URL hinzu.
-3. Für den Chat-Tab geben Sie einfach einen Namen im Feld **Tab Text** ein, und die Einrichtung ist abgeschlossen.
-4. Für einen verlinkten Tab geben Sie den Tab-Namen ein, wählen Sie ein Symbol aus, indem Sie auf die Symbol-Schaltfläche klicken, und geben Sie die URL ein.
-5. Ihre konfigurierten Tabs erscheinen auf der Livestreaming-Seite, damit Zuschauer auf zusätzliche Ressourcen und interaktive Funktionen zugreifen können.
+1. Klicken Sie auf die Schaltfläche **Hinzufügen**, um eine neue Registerkarte zu Ihrer Live-Übertragungsseite hinzuzufügen.
+2. Wählen Sie die vordefinierte **Chat**-Registerkarte oder fügen Sie eine benutzerdefinierte Registerkarte mit einer externen URL hinzu.
+3. Geben Sie für die Chat-Registerkarte einfach einen Namen im Feld **Registerkarte Text** ein, und das Setup ist komplett.
+4. Geben Sie für eine verlinkte Registerkarte den Registerkartennamen ein, wählen Sie ein Symbol, indem Sie auf die Symbol-Schaltfläche klicken, und geben Sie die URL ein.
+5. Ihre konfigurierten Registerkarten werden auf der Liveübertragungsseite für Zuschauer angezeigt, um auf zusätzliche Ressourcen und interaktive Funktionen zuzugreifen.
 
 ### Vorschau Ihres Streams
 
-Klicken Sie auf die Schaltfläche **View Your Stream**, um genau zu sehen, wie Ihre Livestreaming-Seite für Besucher aussehen wird, einschließlich Ihres Logos, der Gottesdienstzeiten und der konfigurierten Tabs.
+Klicken Sie auf die Schaltfläche **Ihren Stream anzeigen**, um genau zu sehen, wie Ihre Liveübertragungsseite für Besucher aussieht, einschließlich Ihres Logos, Dienstleistungszeiten und konfigurierter Registerkarten.
 
 ## Einrichten Ihres YouTube-Livestreams
 
-So verbinden Sie Ihren YouTube-Kanal für automatisches Live-Streaming:
+Zum Verbinden Ihres YouTube-Kanals für automatisierte Liveübertragung:
 
-1. Gehen Sie zu **Sermons** und klicken Sie auf **Add Sermon**, dann wählen Sie **Add Permanent Live URL**.
-2. Der Videoanbieter ist standardmäßig auf **Current YouTube Live Stream** eingestellt. Geben Sie Ihre **YouTube Channel ID** ein.
-3. Fügen Sie einen Titel und eine Beschreibung hinzu und klicken Sie dann auf **Save**.
-4. Erstellen Sie in **Live Stream Times** einen Gottesdienst und wählen Sie Ihre permanente Live-URL aus dem Predigt-Dropdown aus.
+1. Gehen Sie zu **Predigten** und klicken Sie auf **Predigt hinzufügen**, dann wählen Sie **Permanente Live-URL hinzufügen**.
+2. Der Videoanbieter wird standardmäßig auf **Aktueller YouTube-Livestream** eingestellt. Geben Sie Ihre **YouTube-Kanal-ID** ein.
+3. Fügen Sie einen Titel und eine Beschreibung hinzu und klicken Sie auf **Speichern**.
+4. Erstellen Sie in **Live-Übertragungszeiten** eine Dienstleistung und wählen Sie Ihre permanente Live-URL aus dem Predigtdropdown.
 
 :::tip
-Um Ihre YouTube-Kanal-ID zu finden, gehen Sie zu den erweiterten Einstellungen Ihres YouTube-Kanals und kopieren Sie den Wert der Kanal-ID.
+Um Ihre YouTube-Kanal-ID zu finden, gehen Sie zu den erweiterten Einstellungen Ihres YouTube-Kanals und kopieren Sie den Kanal-ID-Wert.
 :::
 
-## Farben und Logo anpassen
+## Anpassung von Farben und Logo
 
-Ihre Livestream-Seite verwendet die [Appearance](../website/appearance)-Einstellungen Ihrer Website:
+Ihre Liveübertragungsseite verwendet die [Erscheinung](../website/appearance)-Einstellungen Ihrer Website:
 
-- Die **helle Akzentfarbe** mit dunklem Text wird für die Kopfzeile verwendet.
-- Die **dunkle Akzentfarbe** mit hellem Text wird für die Seitenleiste verwendet.
-- Ihr **Light Background Logo** erscheint auf der Streaming-Seite. Verwenden Sie ein Bild mit transparentem Hintergrund und einem Seitenverhältnis von 4:1.
+- Die **Helle Akzentfarbe** mit dunklem Text wird für die Kopfzeile verwendet.
+- Die **Dunkle Akzentfarbe** mit hellem Text wird für die Seitenleiste verwendet.
+- Ihr **Helles Hintergrund-Logo** wird auf der Übertragungsseite angezeigt. Verwenden Sie ein Bild mit transparentem Hintergrund und einem Seitenverhältnis von 4:1.
 
-Um diese zu ändern, gehen Sie zu **Website**, dann **Appearance** und aktualisieren Sie Ihre [Color Palette](../website/appearance#color-palette)- und [Logo](../website/appearance#logo-and-branding)-Einstellungen.
+Um diese zu ändern, gehen Sie zu **Website** dann **Erscheinung** und aktualisieren Sie Ihre [Farbpaletten](../website/appearance#color-palette) und [Logo](../website/appearance#logo-and-branding)-Einstellungen.
 
-## Streaming-Hosts hinzufügen
+## Hinzufügen von Übertragungshosts
 
-Um Teammitgliedern Zugriff auf den nur für Hosts zugänglichen Chat neben dem öffentlichen Chat zu geben:
+Gewähren Sie Teammitgliedern Zugriff auf den Host-Chat neben dem öffentlichen Chat:
 
-1. Gehen Sie zu **Settings** in der linken Seitenleiste und klicken Sie auf **Roles**.
-2. Klicken Sie auf die Plus-Schaltfläche und wählen Sie **Add Custom Role**.
-3. Benennen Sie die Rolle "Streaming Host" und klicken Sie auf **Save**.
-4. Klicken Sie auf die neue Rolle und dann auf **Add** im Abschnitt Members, um Personen hinzuzufügen.
-5. Scrollen Sie nach unten zu **Edit Permissions**, erweitern Sie den Abschnitt **Content** und aktivieren Sie **Host Chat**.
+1. Öffnen Sie das **Bereichsmenü** in der oberen linken Ecke (der Bereichsname mit dem kleinen Pfeil), wählen Sie **Einstellungen** und klicken Sie auf **Rollen**.
+2. Klicken Sie auf die Plus-Schaltfläche und wählen Sie **Benutzerdefinierte Rolle hinzufügen**.
+3. Benennen Sie die Rolle "Übertragungshost" und klicken Sie auf **Speichern**.
+4. Klicken Sie auf die neue Rolle und klicken Sie auf **Hinzufügen** im Mitglieder-Bereich, um Personen hinzuzufügen.
+5. Scrollen Sie zu **Berechtigungen bearbeiten**, erweitern Sie den **Inhalts**-Bereich und aktivieren Sie **Host-Chat**.
 
-Wenn sich Hosts auf der Livestream-Seite anmelden, erscheint ein privater **Host Chat**-Tab neben dem öffentlichen Chat für mitarbeiterexklusive Gespräche während der Übertragung.
+Wenn Hosts sich auf der Liveübertragungsseite anmelden, wird eine private **Host-Chat**-Registerkarte neben dem öffentlichen Chat für Mitarbeitergespräche während der Übertragung angezeigt.
 
 :::info
-Weitere Details zum Erstellen von Rollen und Verwalten von Berechtigungen finden Sie unter [Roles & Permissions](../settings/roles-permissions.md).
+Für weitere Details zum Erstellen von Rollen und Verwalten von Berechtigungen siehe [Rollen & Berechtigungen](../settings/roles-permissions.md).
 :::
 
 ## Fehlerbehebung
 
-Wenn Ihr automatisierter YouTube-Livestream bei Verwendung der Option "Current YouTube Live Stream" mit Ihrer Kanal-ID nicht korrekt angezeigt wird, versuchen Sie Folgendes:
+Wenn Ihr automatisierter YouTube-Livestream nicht korrekt angezeigt wird, wenn Sie die Option "Aktueller YouTube-Livestream" mit Ihrer Kanal-ID verwenden, versuchen Sie Folgendes:
 
 **Symptome:**
-- Das Livestream-Embed zeigt "Video unavailable"
-- Die Seite wird geladen, aber kein Video erscheint
-- Direkte YouTube-Embeds funktionieren, aber der automatisierte Kanal-Livestream nicht
+- Die Liveübertragung zeigt "Video nicht verfügbar"
+- Die Seite lädt, aber es wird kein Video angezeigt
+- Direkte YouTube-Einbindungen funktionieren, aber der automatisierte Kanal-Livestream nicht
 
-**Lösung:**
-Überprüfen Sie Ihren YouTube-Kanal auf alte oder bevorstehende geplante Livestreams und löschen Sie diese:
+**Lösung**
+Überprüfen Sie Ihren YouTube-Kanal auf alte oder anstehende geplante Livestreams und löschen Sie sie:
 
 1. Gehen Sie zu Ihrem YouTube Studio.
-2. Navigieren Sie zu **Content**, dann **Live**.
-3. Suchen Sie nach alten geplanten Lives oder bevorstehenden geplanten Streams.
-4. Löschen Sie diese alten oder geplanten Livestream-Einträge.
-5. Testen Sie Ihre Livestream-Seite erneut.
+2. Navigieren Sie zu **Inhalte** dann **Live**.
+3. Suchen Sie nach alten geplanten Streams oder anstehenden geplanten Streams.
+4. Löschen Sie diese alten oder geplanten Liveübertragungen.
+5. Testen Sie Ihre Liveübertragungsseite erneut.
 
 :::warning
-Das automatisierte Kanal-Livestream-Embed von YouTube kann blockiert werden, wenn mehrere geplante oder vergangene Livestream-Einträge in Ihrem Kanal vorhanden sind. Durch Entfernen dieser kann YouTube Ihren aktuellen Livestream ordnungsgemäß identifizieren und bereitstellen.
+Der automatisierte Kanal-Livestream von YouTube kann blockiert werden, wenn es mehrere geplante oder frühere Liveübertragungseinträge in Ihrem Kanal gibt. Das Entfernen dieser ermöglicht YouTube, Ihren aktuellen Livestream richtig zu identifizieren und zu dienen.
 :::
 
 **Zusätzliche Anforderungen:**
-- Ihr Livestream muss auf **Public** eingestellt sein (nicht Unlisted oder Private).
-- Das Einbetten muss in Ihren YouTube-Stream-Einstellungen erlaubt sein.
-- Stellen Sie sicher, dass Sie den **Current YouTube Live Stream**-Anbieter (mit Kanal-ID) verwenden, nicht den **YouTube**-Anbieter (mit Video-ID).
+- Ihr Livestream muss auf **Öffentlich** eingestellt sein (nicht Nicht aufgelistet oder Privat).
+- Die Einbindung muss in den YouTube-Stream-Einstellungen zulässig sein.
+- Stellen Sie sicher, dass Sie den **Aktuellen YouTube-Livestream**-Anbieter (mit Kanal-ID) verwenden, nicht den **YouTube**-Anbieter (mit Video-ID).
 
 ## Nächste Schritte
 
-- [Managing Sermons](managing-sermons) -- Fügen Sie Predigten zu Ihrer Bibliothek hinzu
-- [Playlists](playlists) -- Organisieren Sie Predigten in Serien
+- [Predigten verwalten](managing-sermons) -- Fügen Sie Predigten zu Ihrer Bibliothek hinzu
+- [Wiedergabelisten](playlists) -- Organisieren Sie Predigten in Reihen

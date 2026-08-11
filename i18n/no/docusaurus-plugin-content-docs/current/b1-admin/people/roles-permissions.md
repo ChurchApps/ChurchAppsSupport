@@ -1,12 +1,12 @@
 ---
-title: "Tildele roller"
+title: "Tildeling av roller"
 ---
 
-# Tildele roller
+# Tildeling av roller
 
 <div class="article-intro">
 
-B1 Admin bruker et rollebasert tillatelsessystem for å kontrollere hva hver bruker i teamet ditt kan se og gjøre. Ved å tildele roller kan du gi ansatte og frivillige tilgang til nøyaktig de områdene de trenger -- og ingenting mer. God rolleadministrasjon holder kirkedataene dine sikre samtidig som teamet ditt kan jobbe effektivt.
+B1 Admin bruker et rolle-basert tillatelsessystem for å kontrollere hva hver bruker på laget ditt kan se og gjøre. Ved å tildele roller kan du gi ansatte og frivillige tilgang til nøyaktig områdene de trenger -- og ingenting mer. Riktig rollestyring holder kirkens data sikker mens du gir laget ditt mulighet til å arbeide effektivt.
 
 </div>
 
@@ -14,57 +14,57 @@ B1 Admin bruker et rollebasert tillatelsessystem for å kontrollere hva hver bru
 <h4>Før du begynner</h4>
 
 - Du trenger **Domeneadministrator**-tilgang eller en rolle med tillatelse til å administrere **Innstillinger** i B1 Admin.
-- Personene du vil tildele roller til må allerede finnes i registeret ditt. Se [Legge til personer](adding-people.md) hvis du trenger å legge dem til først.
+- Menneskene du vil tildele roller til må allerede eksistere i katalogen. Se [Legge til mennesker](adding-people.md) hvis du trenger å legge dem til først.
 
 </div>
 
-## Forstå roller
+## Forståelse av roller
 
-En rolle er et sett med tillatelser som du tildeler én eller flere brukere. Du kan for eksempel opprette en "Finansteam"-rolle som gir tilgang til [donasjonsregistre](../donations/recording-donations.md), eller en "Innsjekking-frivillig"-rolle som kun gir tilgang til [oppmøtefunksjoner](../attendance/check-in.md).
+En rolle er et sett med tillatelser som du tildeler en eller flere brukere. Du kan for eksempel opprette en "Finans-team"-rolle som gir tilgang til [donasjon-poster](../donations/recording-donations.md), eller en "Innsjekking-frivillig"-rolle som kun tillater tilgang til [oppmøte-funksjoner](../attendance/check-in.md).
 
-Hver rolle kontrollerer tilgangen til spesifikke områder av B1 Admin, inkludert:
+Hver rolle kontrollerer tilgang til spesifikke områder av B1 Admin, inkludert:
 
-- **Personer** -- visning og redigering av medlemsprofiler
-- **Donasjoner** -- administrasjon av bidrag og finansrapporter
+- **Mennesker** -- visning og redigering av medlemsprofiler. Notater-fanen på en persons registrering krever **Rediger mennesker**, og en separat **Vis fortrolige notater**-tillatelse kontrollerer tilgang til Fortrolige notater-seksjonen (for pastoral omsorg, personlig historie og lignende sensitive notater).
+- **Donasjoner** -- administrering av bidrag og finansielle rapporter
 - **Oppmøte** -- registrering og visning av oppmøtedata
-- **Skjemaer** -- oppretting og administrasjon av [egendefinerte skjemaer](../forms/creating-forms.md)
-- **Grupper** -- administrasjon av [gruppemedlemskap](../groups/group-members.md) og kalendere
-- **Innstillinger** -- konfigurasjon av menighetsbrede innstillinger
+- **Skjemaer** -- opprett og administrer [egendefinerte skjemaer](../forms/creating-forms.md)
+- **Grupper** -- administrering av [gruppedeltakelse](../groups/group-members.md) og kalendere
+- **Innstillinger** -- konfigurering av kirkeomfattende innstillinger
 
 :::warning
-**Domeneadministratorer** har full tilgang til alle områder av B1 Admin. Tillatelsene deres kan ikke redigeres eller begrenses. Bruk denne rollen kun for dine primære administratorer.
+**Domeneadministratorer** har full tilgang til alle områder av B1 Admin. Tillatelene kan ikke redigeres eller begrenses. Bruk denne rollen bare for primær-administratorene.
 :::
 
-## Vise og administrere roller
+## Visning og administrering av roller
 
-1. Klikk på **Innstillinger** i venstre sidefelt.
-2. Klikk på **Roller** i toppnavigasjonen.
-3. Du vil se en liste over alle roller konfigurert for menigheten din.
-4. Klikk på en rolle for å se medlemmene og tillatelsene.
+1. Åpne **seksjonsmenyene** i det øvre venstre hjørnet (seksjonsnavnet med den lille pilen) og velg **Innstillinger**.
+2. Klikk **Roller** i den øverste navigasjonen.
+3. Du vil se en liste over alle roller konfigurert for kirken.
+4. Klikk på en hvilken som helst rolle for å vise medlemmer og tillatelser.
 
-## Legge til brukere i en rolle
+## Legge til brukere til en rolle
 
-1. Naviger til **Innstillinger** og deretter **Roller**.
-2. Klikk på rollen du vil legge til en bruker i.
+1. Naviger til **Innstillinger** deretter **Roller**.
+2. Klikk rollen du vil legge til en bruker til.
 3. I **Medlemmer**-seksjonen, søk etter personen etter navn.
-4. Klikk **Legg til** for å tildele dem rollen.
+4. Klikk **Legg til** for å tildele dem til rollen.
 
-Brukeren vil ha alle tillatelsene knyttet til den rollen neste gang de logger inn.
+Brukeren vil nå ha alle tillatelser knyttet til den rollen neste gang de logger inn.
 
-## Redigere rolletillatelser
+## Redigering av rolle-tillatelser
 
-1. Naviger til **Innstillinger** og deretter **Roller**.
-2. Klikk på rollen du vil endre.
-3. I **Tillatelser**-seksjonen, kryss av eller fjern kryss for områdene du vil at rollen skal ha tilgang til.
-4. Klikk **Lagre** for å bruke endringene.
+1. Naviger til **Innstillinger** deretter **Roller**.
+2. Klikk rollen du vil endre.
+3. I **Tillatelser**-seksjonen, merk eller avmerk områdene du vil at rollen skal få tilgang.
+4. Klikk **Lagre** for å anvende endringene.
 
 :::tip
-Følg prinsippet om minste privilegium -- gi hver rolle kun de tillatelsene den virkelig trenger. Dette holder dataene dine sikre og reduserer sjansen for utilsiktede endringer.
+Følg prinsippet om minste privile -- gi hver rolle bare de tillatelene den virkelig trenger. Dette holder dataene sikre og reduserer sjansen for utilsiktede endringer.
 :::
 
-## Vanlige rolleeksempler
+## Vanlige rolle-eksempler
 
-- **Kontoransatte** -- tilgang til Personer, Donasjoner, Oppmøte og Skjemaer
-- **Gruppeledere** -- kun tilgang til [Grupper](../groups/creating-groups.md)
-- **Innsjekking-frivillige** -- kun tilgang til [Oppmøte](../attendance/check-in.md)
-- **Finansteam** -- tilgang til [Donasjoner](../donations/recording-donations.md) og rapportering
+- **Kontorpersonale** -- tilgang til mennesker, donasjoner, oppmøte og skjemaer
+- **Gruppeleder** -- tilgang til [Grupper](../groups/creating-groups.md) bare
+- **Innsjekking-frivillige** -- tilgang til [Oppmøte](../attendance/check-in.md) bare
+- **Finans-team** -- tilgang til [Donasjoner](../donations/recording-donations.md) og rapportering

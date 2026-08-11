@@ -1,118 +1,129 @@
 ---
-title: "Accueil"
+title: "Enregistrement"
 ---
 
-# Accueil
+# Enregistrement
 
 <div class="article-intro">
 
-B1 Admin supporte l'accueil automatisé aux services grâce à l'application compagne **B1 Checkin**. Les membres peuvent se pointer eux-mêmes et leur famille aux bornes ou appareils dédiés à leur arrivée, ce qui accélère le processus et réduit la charge de travail de vos bénévoles. Chaque accueil est automatiquement enregistré comme présence.
+B1 Admin supporte l'auto-enregistrement aux services par le biais de l'application complémentaire **B1 Checkin**. Les membres peuvent s'enregistrer eux-mêmes et leurs familles aux kiosques ou sur des appareils dédiés à leur arrivée, ce qui accélère le processus et réduit la charge de travail de vos bénévoles. Chaque enregistrement est automatiquement enregistré comme une présence.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Vos campus, heures de service et groupes doivent être configurés dans [Configuration de la présence](setup.md).
-- Vous devez avoir [des personnes dans votre base de données](../people/adding-people.md) avec [des ménages](../people/adding-people.md#managing-households) configurés pour que les familles puissent s'accueillir ensemble.
-- Vous aurez besoin d'une tablette et optionnellement d'une imprimante Brother (voir [recommandations de matériel](#recommended-hardware) ci-dessous).
+- Vos campus, les heures de service et les groupes doivent être configurés dans [Configuration de la présence](setup.md).
+- Vous avez besoin de [personnes dans votre base de données](../people/adding-people.md) avec [ménages](../people/adding-people.md#managing-households) configurés pour que les familles puissent s'enregistrer ensemble.
+- Vous aurez besoin d'une tablette et éventuellement d'une imprimante d'étiquettes Brother (voir [recommandations matériel](#recommended-hardware) ci-dessous).
 
 </div>
 
-## Comment ça fonctionne
+## Comment ça marche
 
-L'application B1 Checkin se connecte à votre configuration de présence B1 Admin. Lorsqu'un membre s'accueille, sa présence est automatiquement enregistrée par rapport au campus, à l'heure de service et au groupe appropriés. Vous n'avez pas besoin d'entrer la présence manuellement pour quiconque utilise le système d'accueil.
+L'application B1 Checkin se connecte à votre configuration de présence B1 Admin. Quand un membre s'enregistre, sa présence est automatiquement enregistrée par rapport au campus, à l'heure de service et au groupe corrects. Vous n'avez pas besoin d'entrer les présences manuellement pour quiconque utilise le système d'enregistrement.
 
-## Configuration de l'accueil
+## Configuration de l'enregistrement
 
-1. **Configurez d'abord votre structure de présence.** Dans B1 Admin, allez à **Présence > Configuration** et assurez-vous que vos campus, heures de service et groupes sont en place. L'application d'accueil dépend de cette configuration. Voir [Configuration de la présence](setup.md) pour les détails.
-2. **Installez l'application B1 Checkin** sur les appareils que vous envisagez d'utiliser. L'application est disponible sur les plateformes suivantes :
+1. **Configurez d'abord votre structure de présence.** Dans B1 Admin, allez à **Présence > Configuration** et assurez-vous que vos campus, heures de service et groupes sont en place. L'application d'enregistrement dépend de cette configuration. Voir [Configuration de la présence](setup.md) pour les détails.
+2. **Installez l'application B1 Checkin** sur les appareils que vous prévoyez d'utiliser. L'application est disponible sur les plates-formes suivantes :
    - **iPad/iOS :** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
-   - **Tablettes Android/Samsung :** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
-   - **Tablettes Amazon Fire :** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
-3. **Connectez-vous à l'application B1 Checkin** en utilisant les identifiants de compte de votre église.
-4. **Sélectionnez le campus et l'heure de service** pour la réunion actuelle.
-5. Les membres peuvent maintenant chercher leur nom sur l'appareil et s'accueillir.
+   - **Android/Samsung Tablets :** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
+   - **Amazon Fire Tablets :** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
+3. **Connectez-vous à l'application B1 Checkin** avec vos identifiants de compte d'église.
+4. **Sélectionnez le campus et l'heure de service** pour le rassemblement actuel.
+5. Les membres peuvent maintenant rechercher leur nom sur l'appareil et s'enregistrer.
 
 :::tip
-Placez les appareils d'accueil à des endroits visibles et faciles d'accès comme l'entrée du hall ou le pupitre d'accueil. Une brève annonce pendant les services aide les membres à savoir que l'option est disponible.
+Placez les appareils d'enregistrement dans des emplacements visibles et faciles d'accès, comme les entrées du hall ou les bureaux d'accueil. Une courte annonce pendant les services aide les membres à savoir que l'option est disponible.
 :::
 
 :::tip
-Si votre église a plusieurs campus, vous devrez répéter la configuration pour chaque campus dans [Configuration de la présence](setup.md). Chaque appareil d'accueil peut être configuré pour un campus différent.
+Si votre église a plusieurs campus, vous devrez répéter la configuration pour chaque campus dans [Configuration de la présence](setup.md). Chaque appareil d'enregistrement peut être configuré pour un campus différent.
 :::
 
 ## Matériel recommandé
 
-**Tablettes** — n'importe lequel de ceux-ci fonctionne bien avec l'application :
+**Tablettes** — l'une de ces fonctionnent bien avec l'application :
 
-- **Compact :** Samsung Galaxy Tab A7 Lite 8,7"
+- **Compacte :** Samsung Galaxy Tab A7 Lite 8,7"
 - **Grand écran :** Samsung Galaxy Tab A8 10,5"
 - **Budget :** Amazon Fire HD 10
 
-**Imprimantes** — les accueils fonctionnent avec les imprimantes Brother pour imprimer les étiquettes nominatives :
+**Imprimantes** — les enregistrements fonctionnent avec les imprimantes d'étiquettes Brother pour imprimer les badges :
 
-- **Meilleur :** Brother QL-1110NWB (supporte plusieurs tablettes via Bluetooth et WiFi)
-- **Bon :** Brother QL-810W (supporte plusieurs tablettes via WiFi)
+- **Meilleure :** Brother QL-1110NWB (supporte plusieurs tablettes via Bluetooth et WiFi)
+- **Bien :** Brother QL-810W (supporte plusieurs tablettes via WiFi)
 - **Budget :** Brother QL-1100 (WiFi uniquement)
 
 **Étiquettes :** Brother DK-1201 (1-1/7" x 3-1/2")
 
 :::warning
-Seules les imprimantes Brother sont compatibles avec l'application B1 Checkin. Les autres marques d'imprimantes ne fonctionneront pas pour imprimer les étiquettes nominatives.
+Seules les imprimantes d'étiquettes Brother sont compatibles avec l'application B1 Checkin. Les autres marques d'imprimantes ne fonctionneront pas pour imprimer les badges.
 :::
 
 :::info
-Suivez les instructions de configuration de votre imprimante pour la connecter au même réseau WiFi que votre tablette. Vous pouvez trouver les pilotes et guides de configuration Brother sur le [site de support Brother](https://support.brother.com).
+Suivez les instructions de configuration de votre imprimante pour la connecter au même réseau WiFi que votre tablette. Vous pouvez trouver les pilotes d'imprimante Brother et les guides de configuration sur le [site d'assistance Brother](https://support.brother.com).
 :::
 
-## Personnalisation de l'apparence de la borne
+## Personnalisation de l'apparence du kiosque
 
-Vous pouvez personnaliser l'apparence de l'application B1 Checkin pour correspondre à l'image de marque de votre église. Dans B1 Admin, allez à **Présence > Thème de borne** pour configurer :
+Vous pouvez personnaliser l'apparence et la convivialité de l'application B1 Checkin pour correspondre à la marque de votre église. Dans B1 Admin, allez à **Présence > Thème du kiosque** pour configurer :
 
 ### Couleurs
 
-Personnalisez huit paramètres de couleur pour correspondre à votre image de marque d'église :
+Personnalisez huit paramètres de couleur pour correspondre à la marque de votre église :
 
-- **Principal** et **Contraste principal** -- Couleur de marque principale et sa couleur de texte.
-- **Secondaire** et **Contraste secondaire** -- Couleur d'accent et sa couleur de texte.
-- **Arrière-plan d'en-tête** et **Arrière-plan de sous-en-tête** -- Couleurs pour les zones d'en-tête de la borne.
-- **Arrière-plan du bouton** et **Texte du bouton** -- Couleurs pour les boutons interactifs.
+- **Primaire** et **Contraste primaire** -- Couleur de marque principale et couleur du texte.
+- **Secondaire** et **Contraste secondaire** -- Couleur d'accent et couleur du texte.
+- **Fond du header** et **Fond du sous-header** -- Couleurs des zones d'en-tête du kiosque.
+- **Fond du bouton** et **Texte du bouton** -- Couleurs des boutons interactifs.
 
 ### Image de fond
 
-Téléchargez une image de fond optionnelle pour les écrans d'accueil et de recherche de la borne. La taille recommandée est 1920x1080 pixels.
+Téléchargez une image de fond optionnelle pour les écrans de bienvenue et de recherche du kiosque. La taille recommandée est de 1920x1080 pixels.
 
 ### Écran inactif / Économiseur d'écran
 
 Configurez un économiseur d'écran qui s'active après une période d'inactivité :
 
 1. Activez ou désactivez l'écran inactif.
-2. Réglez le **délai d'attente** (nombre de secondes d'inactivité avant le démarrage de l'économiseur d'écran, minimum 10 secondes).
+2. Définissez le **délai d'inactivité** (nombre de secondes d'inactivité avant le démarrage de l'économiseur d'écran, minimum 10 secondes).
 3. Ajoutez une ou plusieurs **diapositives** -- chaque diapositive a une image et une durée d'affichage (minimum 3 secondes).
 
 :::tip
-Utilisez l'écran inactif pour afficher des annonces, des événements à venir ou des messages de bienvenue lorsque la borne n'est pas activement utilisée.
+Utilisez l'écran inactif pour afficher les annonces, les événements à venir ou les messages de bienvenue quand le kiosque n'est pas activement utilisé.
 :::
 
 ## Enregistrement des invités via code QR
 
-La borne d'accueil peut afficher un code QR que les visiteurs scannent pour s'enregistrer eux-mêmes et leur famille sur leur propre téléphone. Cela accélère le processus d'accueil pour les premiers visiteurs.
+Le kiosque d'enregistrement peut afficher un code QR que les visiteurs scannent pour s'enregistrer eux-mêmes et leur famille sur leur téléphone. Cela accélère le processus d'enregistrement pour les nouveaux invités.
 
-Lorsqu'un invité scanne le code QR, il est dirigé vers une [page d'enregistrement des invités](../../b1-church/checkin/guest-registration) où il entre son nom, son e-mail et les membres de sa famille. Un bénévole peut alors le chercher sur la borne et l'accueillir.
+Quand un invité scanne le code QR, il est dirigé vers une [page d'enregistrement des invités](../../b1-church/checkin/guest-registration) où il entre son nom, son email et les membres de sa famille. Un bénévole peut ensuite le rechercher sur le kiosque et l'enregistrer.
 
-### Activation de l'enregistrement des invités par code QR
+### Activation de l'enregistrement des invités via code QR
 
 Pour activer l'affichage du code QR :
 
-1. Dans B1 Admin, allez à **Mobile** dans la barre latérale gauche (icône téléphone).
-2. Sélectionnez l'onglet **Accueil**.
-3. Basculez **Enregistrement des invités par code QR** sur activé.
+1. Dans B1 Admin, ouvrez le **menu de section** dans le coin supérieur gauche (le nom de la section avec la petite flèche) et choisissez **Mobile**.
+2. Sélectionnez l'onglet **B1 CheckIn**.
+3. Activez **Enregistrement des invités via code QR** et cliquez sur **Enregistrer**.
 
 :::note
-Ce paramètre se trouve sous **Mobile**, pas sous Présence > Thème de borne.
+Ce paramètre est sous **Mobile**, pas sous Présence > Thème du kiosque.
+:::
+
+### Partage du lien d'enregistrement
+
+Une fois l'enregistrement des invités via code QR activé, une section **Partager le code QR d'enregistrement** apparaît sous le curseur. Cela vous donne deux façons d'amener les invités au formulaire d'enregistrement au-delà du code QR du kiosque :
+
+- **Copier le lien** — copie l'URL d'enregistrement pour la coller sur le site web de votre église, dans les emails ou n'importe où en ligne.
+- **Télécharger le PNG** — télécharge le code QR comme une image que vous pouvez imprimer sur des prospectus, des bulletins ou des affiches.
+
+:::tip
+Ajoutez le lien d'enregistrement au site web de votre église "Planifiez votre visite" ou à la page "Je suis nouveau" pour que les invités puissent s'enregistrer avant même d'arriver.
 :::
 
 ## Ce qui est enregistré
 
-Chaque accueil crée un enregistrement de présence dans B1 Admin. Vous pouvez voir ces enregistrements dans les onglets [Présence](tracking-attendance.md) et [Groupes](../groups/group-members.md) tout comme la présence saisie manuellement. Il n'y a aucune différence dans la façon dont les données apparaissent -- les deux méthodes alimentent les mêmes rapports.
+Chaque enregistrement crée un dossier de présence dans B1 Admin. Vous pouvez consulter ces dossiers sur les onglets [Présence](tracking-attendance.md) et [Groupes](../groups/group-members.md) tout comme les présences saisies manuellement. Il n'y a aucune différence dans la façon dont les données apparaissent -- les deux méthodes alimentent les mêmes rapports.

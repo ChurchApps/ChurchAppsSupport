@@ -1,36 +1,38 @@
-# MinistryStuff (платное хранилище и SMS)
+# MinistryStuff (Оплачиваемое хранилище и текстирование)
 
-MinistryStuff.org — это отдельный платный сервис, который финансирует две вещи, которые ChurchApps не может раздавать бесплатно, — массовое файловое хранилище (1 ТБ+) и SMS-кредиты — в виде подписок с фиксированной ежемесячной платой. Сам ChurchApps остаётся на 100% бесплатным; ничто в B1 не требует подписки MinistryStuff, и каждая точка интеграции — это шов провайдера, который могла бы реализовать и третья сторона.
+MinistryStuff.org — это отдельный платный сервис, который финансирует две вещи, которые ChurchApps не может раздать — объёмное хранилище файлов (1TB+) и кредиты SMS — как подписки с фиксированной ставкой. ChurchApps сам остаётся на 100% бесплатным; ничто в B1 не требует подписки MinistryStuff, и каждая точка интеграции — это сеам поставщика, который третья сторона также может реализовать.
 
 ## Компоненты
 
-| Часть | Репозиторий | Роль |
+| Кусок | Репо | Роль |
 |---|---|---|
-| MinistryStuffApi | `MinistryStuffApi/` (порт 8097 в разработке) | Биллинг (Stripe), отправка SMS + учёт кредитов (AWS End User Messaging), хранилище (S3 + учёт квот). Единая база данных MySQL `ministrystuff`. |
-| MinistryStuffWeb | `MinistryStuffWeb/` (порт 3103 в разработке) | ministrystuff.org — маркетинг, тарификация и портал аккаунта (планы, использование, редиректы Stripe Checkout/Customer Portal). |
-| Провайдер SMS | `Packages/texting` → `MinistryStuffProvider` | Зарегистрирован как `ministrystuff` наряду с Clearstream/TextInChurch. |
-| Шов хранилища | `Packages/apihelper` → `IStorageProvider` / `StorageProviderFactory` | `ChurchAppsStorageProvider` (по умолчанию, бесплатный) оборачивает исходный переключатель S3/диск; `FileStorageHelper` без изменений делегирует провайдеру по умолчанию. |
-| Подключение в Api | Модули content + messaging в `Api/` | `MinistryStuffStorageProvider` + `StorageResolver` (content), внедрение служебного ключа `TextingConfigHelper` (messaging), таблица `storageProviders`, конечные точки `/content/storage/*` + `/messaging/texting/credits`. |
+| MinistryStuffApi | `MinistryStuffApi/` (порт 8097 dev) | Выставление (Stripe), отправка SMS + учёт кредитов (AWS End User Messaging), хранилище (S3 + учёт квоты). Одна БД MySQL `ministrystuff`. |
+| MinistryStuffWeb | `MinistryStuffWeb/` (порт 3103 dev) | ministrystuff.org — маркетинг, ценообразование и портал учётной записи (планы, использование, перенаправления Stripe Checkout/Customer Portal). |
+| Поставщик текстирования | `Packages/texting` → `MinistryStuffProvider` | Зарегистрирован как `ministrystuff` рядом с Clearstream/TextInChurch. |
+| Сеам хранилища | `Packages/apihelper` → `IStorageProvider` / `StorageProviderFactory` | `ChurchAppsStorageProvider` (по умолчанию, бесплатно) оборачивает оригинальный переключатель S3/диска; `FileStorageHelper` делегирует поставщику по умолчанию без изменений. |
+| Проводка Api | `Api/` модули содержания + обмена сообщениями | `MinistryStuffStorageProvider` + `StorageResolver` (содержание), `TextingConfigHelper` впрыск сервис-ключа (обмена сообщениями), таблица `storageProviders`, конечные точки `/content/storage/*` + `/messaging/texting/credits`. |
 
-## Идентификация и доверие
+## Идентичность и доверие
 
-- Те же аккаунты, те же церкви: MinistryStuffApi проверяет JWT-токены ChurchApps общим `JWT_SECRET` (паттерн приложения-побратима, как у B1Transfer). Портал входит через MembershipApi и принимает передачу `?jwt=`.
-- Сервер-сервер (основной Api → MinistryStuffApi): заголовок `X-Service-Key` (`MINISTRYSTUFF_SERVICE_KEY`, с обеих сторон) + явный `churchId`. Право доступа всегда проверяется относительно подписки этой церкви. Церкви никогда не хранят учётные данные MinistryStuff — выбора провайдера в B1Admin достаточно.
+- Одни и те же учётные записи, одна и та же церковь: MinistryStuffApi проверяет JWT ChurchApps с общим `JWT_SECRET` (шаблон приложения-сибирского, как B1Transfer). Портал входит в MembershipApi и принимает передачи `?jwt=`.
+- Сервер-к-серверу (ядро Api → MinistryStuffApi): заголовок `X-Service-Key` (`MINISTRYSTUFF_SERVICE_KEY`, обе стороны) + явно `churchId`. Право всегда проверяется против подписки этой церкви. Церкви никогда не держат учётные данные MinistryStuff — выбор поставщика в B1Admin это всё, что нужно.
 
-## Поток SMS
+## Поток текстирования
 
-B1Admin «Отправить SMS» → `TextingController` Api → `getProvider("ministrystuff")` из `@churchapps/texting` → MinistryStuffApi `/sms/send|/sms/sendBulk` → количество сегментов списывается с `smsCreditGrants` текущего периода → AWS End User Messaging (или `smsMode: mock` в разработке). Кредиты — это **жёсткая остановка**: исчерпанные кредиты отклоняют отправку целиком (`insufficient_credits`, отображается в B1Admin как дружелюбное предложение апгрейда) — никогда не частичная отправка, никогда не биллинг за перерасход. Выдача кредитов идемпотентна по каждому расчётному периоду, из вебхуков Stripe `invoice.paid`. Отказы от SMS (`smsOptOuts`) отфильтровываются перед каждой отправкой.
+B1Admin Отправить текст → Api `TextingController` → `@churchapps/texting` `getProvider("ministrystuff")` → MinistryStuffApi `/sms/send|/sms/sendBulk` → счёт отрезков дебитировался против текущего периода `smsCreditGrants` → AWS End User Messaging (или `smsMode: mock` в dev). Кредиты это **жёсткая остановка**: исчерпанные кредиты отклоняют оптом (`insufficient_credits`, выраженные как дружелюбный запрос обновления в B1Admin) — никогда частичные отправки, никогда выставление перерасхода. Гранты кредитов выпускаются идемпотентно за период выставления из вебхуков Stripe `invoice.paid`. Отказ (`smsOptOuts`) отфильтровывается перед каждой отправкой.
 
 ## Поток хранилища
 
-Строка провайдера церкви (`content.storageProviders`, управляется в B1Admin → Settings → File Storage) выбирает, куда идут **новые** загрузки. `contentPath` — абсолютный URL для каждого файла, поэтому смешанные провайдеры сосуществуют без миграции: старые файлы продолжают обслуживаться из `content.churchapps.org`, новые — из `content.ministrystuff.org`. Загрузки проходят путь Api → `StorageResolver.forChurch` → метод провайдера `store`/`getUploadUrl` (предварительно подписанный POST с `content-length-range` в режиме S3; резерв на base64 в режиме диска/разработки); удаления маршрутизируются по сохранённому URL (`StorageResolver.forUrl`). Квота = байты по плану, подсчитываются из `storageObjects` (резервации `stored` + `pending`); превышение квоты блокирует новые загрузки (`storage_quota_exceeded`) — ничего никогда не удаляется и не тарифицируется дополнительно. Бесплатный уровень ChurchApps остаётся нетронутым (те же лимиты, что и раньше; без общецерковной квоты).
+Строка поставщика церкви (`content.storageProviders`, управляемая в B1Admin → Параметры → Хранилище файлов) выбирает где **новые** загрузки идут. `contentPath` является абсолютным URL за файл, поэтому смешанные поставщики сосуществуют с нулевой миграцией: старые файлы продолжают служить с `content.churchapps.org`, новые с `content.ministrystuff.org`. Загрузки текут Api → `StorageResolver.forChurch` → поставщик `store`/`getUploadUrl` (предписанный POST с `content-length-range` в режиме S3; fallback base64 в режиме диска/dev); удаления маршрут на хранимый URL (`StorageResolver.forUrl`). Квота = байты плана, считаются с `storageObjects` (`stored` + `pending` зарезервированные); превышенная квота блокирует новые загрузки (`storage_quota_exceeded`) — ничто никогда не удаляется или не выставляется счётом extra. Свободный уровень ChurchApps не затронут (те же границы как перед; никакой квоты полной церкви).
 
-Примечание об охвате: выбор провайдера покрывает поток файлов/ресурсов контента (где живут массовые медиа). Загрузки галереи/логотипа/фото остаются на провайдере по умолчанию — они перечисляют ключи из хранилища и строят URL на стороне клиента, поэтому привязка по церкви для них пока не применяется.
+Примечание области: выбор поставщика охватывает поток **файлы/ресурсы** содержания (где массив мультимедиа живёт). Загрузки галереи/логотипа/фотографии остаются на поставщике по умолчанию — они ключи списка с хранилища и строят URL клиента-сторону, поэтому изоляция за церковь не применяется ещё.
 
-## Биллинг
+Тот же сеам также питает [Собственное хранилище](./byos-storage): церкви могут ссылаться Google Drive, Dropbox, OneDrive или свой S3-совместимый ведро вместо плана MinistryStuff.
 
-Stripe Checkout (хостируемый) для подписки, Stripe Customer Portal для обновления карты/отмены/счетов — у MinistryStuffWeb нет собственных форм для карт. Одна строка `subscriptions` на пару (церковь, продукт); планы/уровни живут в коде (`MinistryStuffApi/src/helpers/Plans.ts`) с id цен Stripe из конфигурации. Вебхук (`/billing/webhook`, проверка подписи по сырому телу, дедупликация `webhookEvents`) управляет жизненным циклом подписки: active → past_due (льготный период) → canceled.
+## Выставление
 
-## Настройка для разработки
+Stripe Checkout (размещённый) для подписания, Stripe Customer Portal для обновления карты/отмены/счётов — MinistryStuffWeb не имеет форм карты. Одна строка `subscriptions` за (церковь, продукт); планы/уровни живут в коде (`MinistryStuffApi/src/helpers/Plans.ts`) с идентификаторами цены Stripe из конфигурации. Вебхук (`/billing/webhook`, проверка подписи сырого тела, дедупликация `webhookEvents`) управляет жизненным циклом подписки: active → past_due (благодать) → canceled.
 
-Запустите MinistryStuffApi (`yarn dev`, 8097; нужен `.env` с общим `JWT_SECRET` + `MINISTRYSTUFF_SERVICE_KEY`) и установите тот же служебный ключ в `Api/.env`. `Api/config/dev.json` уже указывает `ministryStuffApi` на `localhost:8097`. MinistryStuffWeb нужен `.env` с `VITE_STAGE=dev`. В разработке используется `smsMode: mock` и дисковое хранилище — AWS не требуется.
+## Dev Установка
+
+Запустите MinistryStuffApi (`yarn dev`, 8097; требует `.env` с общим `JWT_SECRET` + `MINISTRYSTUFF_SERVICE_KEY`) и установите тот же сервис-ключ в `Api/.env`. `Api/config/dev.json` уже указывает `ministryStuffApi` на `localhost:8097`. MinistryStuffWeb требует `.env` с `VITE_STAGE=dev`. Dev использует `smsMode: mock` и дисковое хранилище — AWS не требуется.

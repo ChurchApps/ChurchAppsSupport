@@ -1,60 +1,64 @@
 ---
-title: "Rubrica dei Membri"
+title: "Directory Membri"
 ---
 
-# Rubrica dei Membri
+# Directory Membri
 
 <div class="article-intro">
 
-La rubrica dei membri ti permette di sfogliare e cercare le persone della tua chiesa. Che tu debba cercare un compagno di gruppo o trovare qualcuno di nuovo, la rubrica rende facile connettersi con la famiglia della tua chiesa.
+La directory dei membri ti permette di sfogliare e cercare persone nella tua chiesa. Che tu abbia bisogno di cercare un collega membro di un gruppo o trovare qualcuno nuovo, la directory rende facile connettersi con la tua famiglia di chiesa.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Devi aver [effettuato l'accesso](../getting-started/logging-in.md) al tuo account B1.church.
-- La rubrica è disponibile solo per **membri e staff**. I visitatori e i frequentatori che non sono ancora diventati membri vedranno invece un messaggio "Solo Membri".
+- Devi essere [acceduto](../getting-started/logging-in.md) al tuo account B1.church.
+- La directory è disponibile solo per **membri e staff**. I visitatori e i frequentatori che non sono ancora diventati membri vedranno un messaggio "Solo Membri" al posto.
 
 </div>
 
-## Accedere alla Rubrica
+## Accesso alla Directory
 
-1. Clicca su **Comunità** nella [barra laterale di navigazione](../getting-started/navigating.md).
-2. La rubrica si carica con un elenco di tutti i membri della chiesa visibili sul lato sinistro della pagina.
+1. Fai clic su **Community** nella [navigazione della barra laterale](../getting-started/navigating.md).
+2. La directory si carica con un elenco di tutti i membri della chiesa visibili sul lato sinistro della pagina.
 
-## Cercare i Membri
+## Ricerca di Membri
 
-La pagina utilizza un layout master-detail. Sul lato sinistro hai due modi per trovare le persone:
+La pagina usa un layout master-dettagli. Sul lato sinistro, hai due modi per trovare persone:
 
-### Cercare per Nome
+### Ricerca per Nome
 
 1. Assicurati che il filtro **Persone** sia selezionato in cima all'area di ricerca.
 2. Digita un nome nella casella di ricerca.
-3. Clicca su **Cerca** o premi **Invio** per vedere i risultati.
+3. Fai clic su **Ricerca** o premi **Invio** per vedere i risultati.
 
-Se lasci vuota la casella di ricerca e clicchi su **Cerca**, viene mostrato l'elenco completo della rubrica.
+Se lasci la casella di ricerca vuota e fai clic su **Ricerca**, viene mostrato l'elenco della directory completo.
 
-### Cercare per Gruppo
+### Ricerca per Gruppo
 
-1. Clicca sul filtro **Gruppi** in cima all'area di ricerca.
-2. Seleziona un gruppo dall'elenco a tendina.
-3. Clicca su **Cerca** per vedere tutti i membri di quel gruppo.
+1. Fai clic sul filtro **Gruppi** in cima all'area di ricerca.
+2. Seleziona un gruppo dall'elenco a discesa.
+3. Fai clic su **Ricerca** per vedere tutti i membri di quel gruppo.
 
 :::tip
-Cercare per gruppo è un modo rapido per trovare qualcuno che hai incontrato a una [riunione di gruppo](../groups/browsing-groups.md) ma di cui non ricordi bene il nome.
+Cercare per gruppo è un modo veloce per trovare qualcuno che hai incontrato in una [riunione di gruppo](../groups/browsing-groups.md) ma di cui non riesci a ricordare il nome.
 :::
 
-## Sfogliare la Rubrica
+## Sfogliatura della Directory
 
-I membri sono elencati in ordine alfabetico per cognome e raggruppati sotto intestazioni per lettera (A, B, C e così via). Ogni voce mostra la foto del membro, il nome visualizzato e il nome della famiglia, rendendo facile scorrere l'elenco.
+I membri sono elencati alfabeticamente per cognome e raggruppati sotto intestazioni di lettere (A, B, C, e così via). Ogni voce mostra la foto del membro, il nome visualizzato e il nome della famiglia, rendendo facile scansionare l'elenco.
 
-## Visualizzare il Profilo di un Membro
+## Visualizzazione di un Profilo Membro
 
-Clicca su qualsiasi membro dell'elenco per aprire il suo profilo nel pannello dei dettagli a destra. Il profilo mostra le informazioni del membro come configurate dalla tua chiesa, che possono includere dettagli di contatto, membri della famiglia e appartenenze a gruppi.
+Fai clic su qualsiasi membro nell'elenco per aprire il suo profilo nel pannello dei dettagli a destra. Il profilo mostra le informazioni del membro come configurato dalla tua chiesa, che può includere dettagli di contatto, membri della famiglia e iscritti ai gruppi.
 
-Puoi cliccare sui membri della famiglia all'interno di un profilo per navigare anche ai loro profili.
+Puoi fare clic sui membri della famiglia all'interno di un profilo per navigare ai loro profili così come.
 
 :::info
-Le informazioni visibili in ogni profilo dipendono dalle impostazioni di privacy e di rubrica della tua chiesa. Non tutti i campi potrebbero essere mostrati per ogni membro.
+Le informazioni visibili in ogni profilo dipendono dalle impostazioni di privacy e directory della tua chiesa. Non tutti i campi possono essere mostrati per ogni membro.
+:::
+
+:::info
+I membri sotto l'[età minima della tua chiesa per messaggi privati](/docs/b1-admin/settings/mobile-app#member-directory--messaging-settings) rimangono visibili nella directory, ma l'opzione di inviare loro un messaggio privato non è disponibile.
 :::

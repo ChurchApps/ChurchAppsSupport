@@ -1,70 +1,70 @@
 ---
-title: "Asignar roles"
+title: "Asignación de Roles"
 ---
 
-# Asignar roles
+# Asignación de Roles
 
 <div class="article-intro">
 
-B1 Admin utiliza un sistema de permisos basado en roles para controlar lo que cada usuario de su equipo puede ver y hacer. Al asignar roles, puede dar al personal y voluntarios acceso exactamente a las \u00e1reas que necesitan -- y nada m\u00e1s. Una gesti\u00f3n adecuada de roles mantiene seguros los datos de su iglesia mientras permite que su equipo trabaje de manera eficiente.
+B1 Admin usa un sistema de permisos basado en roles para controlar qué cada usuario en tu equipo puede ver y hacer. Al asignar roles, puedes dar acceso al personal y voluntarios a exactamente las áreas que necesitan -- y nada más. La gestión adecuada de roles mantiene tus datos de iglesia seguros mientras potencia a tu equipo para trabajar eficientemente.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de comenzar</h4>
+<h4>Antes de Comenzar</h4>
 
-- Necesita acceso de **Administrador de dominio** o un rol con permiso para administrar **Configuraci\u00f3n** en B1 Admin.
-- Las personas a las que desea asignar roles deben existir previamente en su directorio. Consulte [Agregar personas](adding-people.md) si necesita agregarlas primero.
+- Necesitas acceso **Admin de Dominio** o un rol con permiso para administrar **Configuración** en B1 Admin.
+- Las personas a las que deseas asignar roles ya deben existir en tu directorio. Ver [Agregar Personas](adding-people.md) si necesitas agregarlas primero.
 
 </div>
 
-## Comprender los roles
+## Entender Roles
 
-Un rol es un conjunto de permisos que se asigna a uno o m\u00e1s usuarios. Por ejemplo, podr\u00eda crear un rol de "Equipo de finanzas" que otorgue acceso a los [registros de donaciones](../donations/recording-donations.md), o un rol de "Voluntario de check-in" que solo permita acceso a las [funciones de asistencia](../attendance/check-in.md).
+Un rol es un conjunto de permisos que asignas a uno o más usuarios. Por ejemplo, podrías crear un rol "Equipo de Finanzas" que otorgue acceso a [registros de donaciones](../donations/recording-donations.md), o un rol "Voluntario de Registración" que solo permite acceso a [características de asistencia](../attendance/check-in.md).
 
-Cada rol controla el acceso a \u00e1reas espec\u00edficas de B1 Admin, incluyendo:
+Cada rol controla acceso a áreas específicas de B1 Admin, incluyendo:
 
-- **Personas** -- ver y editar perfiles de miembros
-- **Donaciones** -- administrar contribuciones y reportes financieros
+- **Personas** -- ver y editar perfiles de miembros. La pestaña Notas en un registro de persona requiere **Editar Personas**, y un permiso separado **Ver Notas Confidenciales** controla el acceso a la sección Notas Confidenciales (para cuidado pastoral, historial personal y notas similares sensibles).
+- **Donaciones** -- administrar contribuciones e informes financieros
 - **Asistencia** -- registrar y ver datos de asistencia
 - **Formularios** -- crear y administrar [formularios personalizados](../forms/creating-forms.md)
-- **Grupos** -- administrar [membres\u00edas de grupo](../groups/group-members.md) y calendarios
-- **Configuraci\u00f3n** -- establecer configuraciones a nivel de toda la iglesia
+- **Grupos** -- administrar [membresías de grupo](../groups/group-members.md) y calendarios
+- **Configuración** -- configurar la iglesia en toda la configuración
 
 :::warning
-Los **Administradores de dominio** tienen acceso completo a todas las \u00e1reas de B1 Admin. Sus permisos no pueden ser editados ni restringidos. Use este rol \u00fanicamente para sus administradores principales.
+**Los Admins de Dominio** tienen acceso completo a cada área de B1 Admin. Sus permisos no pueden ser editados o restringidos. Usa este rol solo para tus administradores principales.
 :::
 
-## Ver y administrar roles
+## Ver y Administrar Roles
 
-1. Haga clic en **Configuraci\u00f3n** en la barra lateral izquierda.
-2. Haga clic en **Roles** en la navegaci\u00f3n superior.
-3. Ver\u00e1 una lista de todos los roles configurados para su iglesia.
-4. Haga clic en cualquier rol para ver sus miembros y permisos.
+1. Abre el **menú de sección** en la esquina superior izquierda (el nombre de la sección con la flecha pequeña) y elige **Configuración**.
+2. Haz clic en **Roles** en la navegación superior.
+3. Verás una lista de todos los roles configurados para tu iglesia.
+4. Haz clic en cualquier rol para ver sus miembros y permisos.
 
-## Agregar usuarios a un rol
+## Agregar Usuarios a un Rol
 
-1. Navegue a **Configuraci\u00f3n** y luego a **Roles**.
-2. Haga clic en el rol al que desea agregar un usuario.
-3. En la secci\u00f3n de **Miembros**, busque a la persona por nombre.
-4. Haga clic en **Agregar** para asignarla al rol.
+1. Navega a **Configuración** luego **Roles**.
+2. Haz clic en el rol al que deseas agregar un usuario.
+3. En la sección **Miembros**, busca la persona por nombre.
+4. Haz clic en **Agregar** para asignarla al rol.
 
-El usuario tendr\u00e1 todos los permisos asociados con ese rol la pr\u00f3xima vez que inicie sesi\u00f3n.
+El usuario ahora tendrá todos los permisos asociados con ese rol la próxima vez que inicie sesión.
 
-## Editar permisos de un rol
+## Editar Permisos de Rol
 
-1. Navegue a **Configuraci\u00f3n** y luego a **Roles**.
-2. Haga clic en el rol que desea modificar.
-3. En la secci\u00f3n de **Permisos**, marque o desmarque las \u00e1reas a las que desea que el rol tenga acceso.
-4. Haga clic en **Guardar** para aplicar los cambios.
+1. Navega a **Configuración** luego **Roles**.
+2. Haz clic en el rol que deseas modificar.
+3. En la sección **Permisos**, marca o desmarca las áreas a las que deseas que el rol acceda.
+4. Haz clic en **Guardar** para aplicar tus cambios.
 
 :::tip
-Siga el principio de m\u00ednimo privilegio -- otorgue a cada rol solo los permisos que realmente necesita. Esto mantiene sus datos seguros y reduce la posibilidad de cambios accidentales.
+Sigue el principio de menor privilegio -- da a cada rol solo los permisos que realmente necesita. Esto mantiene tus datos seguros y reduce la posibilidad de cambios accidentales.
 :::
 
-## Ejemplos comunes de roles
+## Ejemplos de Roles Comunes
 
-- **Personal de oficina** -- acceso a Personas, Donaciones, Asistencia y Formularios
-- **L\u00edderes de grupo** -- acceso solo a [Grupos](../groups/creating-groups.md)
-- **Voluntarios de check-in** -- acceso solo a [Asistencia](../attendance/check-in.md)
-- **Equipo de finanzas** -- acceso a [Donaciones](../donations/recording-donations.md) y reportes
+- **Personal de Oficina** -- acceso a Personas, Donaciones, Asistencia y Formularios
+- **Líderes de Grupo** -- acceso a [Grupos](../groups/creating-groups.md) solo
+- **Voluntarios de Registración** -- acceso a [Asistencia](../attendance/check-in.md) solo
+- **Equipo de Finanzas** -- acceso a [Donaciones](../donations/recording-donations.md) e informes

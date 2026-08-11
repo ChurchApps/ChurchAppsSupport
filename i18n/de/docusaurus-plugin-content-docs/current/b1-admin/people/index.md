@@ -6,36 +6,36 @@ title: "Personen"
 
 <div class="article-intro">
 
-Der Bereich **Personen** ist das Herz deiner Kirchenverwaltung in B1 Admin. Hier behältst du dein Kirchenverzeichnis - Suche nach Mitgliedern, Hinzufügen neuer Personen, Anzeigen und Bearbeiten von Profilen sowie Nachverfolgung von Haushalten. Egal, ob du eine kleine oder große Gemeinde hast, die Aufrechterhaltung deiner Personendatensätze in Ordnung ist das Fundament, das jede andere Funktion in B1 antreibt.
+Der **Personen**-Bereich ist das Herz Ihrer Kirchenverwaltung in B1 Admin. Hier pflegen Sie Ihr Kirchenverzeichnis -- suchen Sie Mitglieder, fügen Sie neue Personen hinzu, sehen Sie sich Profile an und bearbeiten Sie, und verfolgen Sie Haushalte. Ob Sie eine kleine oder große Gemeinde haben, das Halten Ihrer Personendatensätze organisiert ist die Grundlage, die jede andere Funktion in B1 ermöglicht.
 
 </div>
 
-## Was du tun kannst
+## Was Sie tun können
 
-Hier ist ein Überblick über die wichtigsten Funktionen im Bereich Personen:
+Hier ist ein Überblick über die wichtigsten Funktionen, die im Personen-Bereich verfügbar sind:
 
-1. **Dein Verzeichnis durchsuchen** -- Verwende die Quick-Search-Leiste, um jemanden nach Namen zu finden, oder nutze erweiterte Filter und KI-gesteuerte Natursprachsuche, um genau die Person zu finden, die du brauchst. Siehe [Personen suchen](./searching-people.md) und [KI-Suche](./ai-search.md) für Details.
+1. **Durchsuchen Sie Ihr Verzeichnis** -- Verwenden Sie die schnelle Suchleiste, um jeden nach Namen zu finden, oder nutzen Sie erweiterte Filter und KI-gestützte natürliche Sprachsuche, um genau die Personen zu finden, die Sie benötigen. Siehe [Personen suchen](./searching-people.md) und [KI-Suche](./ai-search.md) für Details.
 
-2. **Suchabfragen als Listen speichern** -- Speichere jede Suche oder Filter unter einem Namen, damit du sie mit einem Klick neu laden kannst. Siehe [Gespeicherte Listen](./lists.md).
+2. **Speichern Sie Suchanfragen als Listen** -- Speichern Sie jede Suche oder jeden Filter als benannte Liste, damit Sie ihn mit einem Klick neu laden können. Siehe [Gespeicherte Listen](./lists.md).
 
-3. **Demografische Daten anzeigen** -- Sehen Sie eine visuelle Aufschlüsselung deiner Gemeinde nach Alter, Geschlecht, Familienstand, Mitgliedschaftsstatus und Campus - und klicke auf ein beliebiges Chartsegment, um diese Personen anzuzeigen. Siehe [Demografische Daten](./demographics.md).
+3. **Anzeige von Demografie** -- Sehen Sie eine visuelle Aufschlüsselung Ihrer Gemeinde nach Alter, Geschlecht, Familienstand, Mitgliedschaftsstatus und Campus -- und klicken Sie auf ein Diagrammsegment, um in diese Personen zu bohren. Siehe [Demografie](./demographics.md).
 
-4. **Neue Personen hinzufügen** -- Schnell Personen zu deinem Verzeichnis hinzufügen und ihre Profildetails, Kontaktinformationen und Haushaltsverbindungen ausfüllen. Siehe [Personen hinzufügen](./adding-people.md) für schrittweise Anweisungen.
+4. **Fügen Sie neue Personen hinzu** -- Fügen Sie schnell Personen zu Ihrem Verzeichnis hinzu und füllen Sie ihre Profildetails, Kontaktinformationen und Haushaltsverbindungen. Siehe [Personen hinzufügen](./adding-people.md) für Schritt-für-Schritt-Anweisungen.
 
-5. **Personen in Masse bearbeiten** -- Aktualisiere mehrere Personen auf einmal, indem du ihren Mitgliedschaftsstatus, Familienstand, Geschlecht, Abmeldungspräferenzen oder Gruppenmitgliedschaften änderst. Dies spart Zeit bei gleichen Änderungen für viele Personen. Siehe [Massenbearbeitung](./bulk-editing.md).
+5. **Massen-Bearbeitung von Personen** -- Aktualisieren Sie mehrere Personen gleichzeitig durch Änderung ihres Mitgliedschaftsstatus, Familienstandes, Geschlechts, Opt-out-Präferenzen oder Gruppenmitgliedschaften. Dies spart Zeit, wenn Sie die gleiche Änderung an vielen Personen vornehmen. Siehe [Massen-Bearbeitung](./bulk-editing.md).
 
-6. **Drucke dein Verzeichnis** -- Generiere ein formatiertes, druckbares Mitgliederverzeichnis, gruppiert nach Haushalt, komplett mit Fotos und Kontaktinformationen. Siehe [Druckverzeichnis](./print-directory.md).
+6. **Drucken Sie Ihr Verzeichnis** -- Generieren Sie ein formatiertes, druckbares Mitgliedeverzeichnis, das nach Haushalt gruppiert ist, komplett mit Fotos und Kontaktinformationen. Siehe [Verzeichnis drucken](./print-directory.md).
 
-7. **Daten importieren und exportieren** -- Bringe Mitgliedsdaten aus einer CSV-Datei herein oder migriere von einem anderen Kirchenleistungssystem wie Breeze. Du kannst dein Verzeichnis auch jederzeit in CSV exportieren. Siehe [Daten importieren](./importing-data.md) und [Daten exportieren](./exporting-data.md).
+7. **Importieren und exportieren Sie Daten** -- Bringen Sie Mitgliederdaten aus einer CSV-Datei oder migrieren Sie von einem anderen Kirchenverwaltungssystem wie Breeze. Sie können Ihr Verzeichnis auch jederzeit zu CSV exportieren. Siehe [Daten importieren](./importing-data.md) und [Daten exportieren](./exporting-data.md).
 
-8. **Profile verwalten** -- Zeige an und bearbeite detaillierte Profile für jede Person, einschließlich Kontaktinformationen, Haushaltsmitglieder, [Gruppenmitgliedschaften](../groups/group-members.md), [Anwesenheitsverlauf](../attendance/tracking-attendance.md), [Spenden](../donations/recording-donations.md) und [benutzerdefinierte Formulare](../forms/creating-forms.md). Fahre über eine E-Mail, Adresse oder Telefonnummer in der blauen Profilkopfzeile, um sie mit einem Klick zu kopieren.
+8. **Verwalten Sie Profile** -- Sehen Sie sich detaillierte Profile für jede Person an und bearbeiten Sie diese, einschließlich Kontaktinformationen, Haushaltsmitglieder, [Gruppenmitgliedschaften](../groups/group-members.md), [Anwesenheitsverlauf](../attendance/tracking-attendance.md), [Spenden](../donations/recording-donations.md) und [benutzerdefinierte Formulare](../forms/creating-forms.md). Halten Sie den Mauszeiger über eine E-Mail, Adresse oder Telefonnummer in der blauen Profilkopfzeile, um sie mit einem Klick zu kopieren.
 
-9. **Rollen und Berechtigungen zuweisen** -- Steuere, wer in deinem Team auf verschiedene Teile von B1 Admin zugreifen kann, indem du Rollen zuweist. Siehe [Rollen zuweisen](./roles-permissions.md).
+9. **Weisen Sie Rollen und Berechtigungen zu** -- Kontrollieren Sie, wer in Ihrem Team auf verschiedene Teile von B1 Admin zugreifen kann, indem Sie Rollen zuweisen. Siehe [Zuweisen von Rollen](./roles-permissions.md).
 
 ## Erste Schritte
 
-Um auf den Bereich Personen zuzugreifen, klicke auf **Personen** in der linken Seitenleiste deines B1 Admin-Dashboards. Du wirst dein vollständiges Kirchenverzeichnis mit einer Suchleiste oben und einer Liste von Mitgliedern unten sehen.
+Um auf den Personen-Bereich zuzugreifen, öffnen Sie das **Bereichsmenü** in der oberen linken Ecke von B1 Admin (der Bereichsname mit dem kleinen Pfeil) und wählen Sie **Personen**. Sie sehen Ihr gesamtes Kirchenverzeichnis mit einer Suchleiste oben und einer Liste der Mitglieder darunter.
 
 :::tip
-Wenn du B1 zum ersten Mal einrichtest, beginne mit dem [Importieren deiner vorhandenen Mitgliedsdaten](./importing-data.md). Überprüfe und bereinige dann die Profile nach Bedarf.
+Wenn Sie B1 zum ersten Mal einrichten, beginnen Sie mit [Importieren Ihrer vorhandenen Mitgliederdaten](./importing-data.md). Überprüfen und bereinigen Sie dann Profile nach Bedarf.
 :::

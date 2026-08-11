@@ -1,59 +1,59 @@
 ---
-title: "Mga Playlist"
+title: "Playlists"
 ---
 
-# Mga Playlist
+# Playlists
 
 <div class="article-intro">
 
-Nagbibigay-daan ang mga playlist na ayusin ang inyong mga sermon sa mga serye o koleksyon. Kapag nagba-browse ang mga bisita sa inyong sermon library sa inyong B1.church website, tinutulungan sila ng mga playlist na mahanap at masubaybayan ang isang kumpletong serye ng sermon sa tamang pagkakasunod-sunod.
+Ang Playlist ay nagbibigay-daan sa iyo na ayusin ang iyong sermon sa series o koleksyon. Kapag tiningnan ng bisita ang iyong sermon library sa iyong B1.church website, ang playlist ay tumutulong sa kanila na mahanap at sundin ang isang kompletong sermon series sa tamang kaayusan.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Magsimula</h4>
 
-- Kailangan mo ng **contentApi.streamingServices.edit** na pahintulot. Tingnan ang [Mga Tungkulin at Pahintulot](../settings/roles-permissions.md) kung wala kang access.
-- Ihanda ang pangalan, paglalarawan, at thumbnail na larawan para sa inyong playlist
+- Kailangan mo ng **contentApi.streamingServices.edit** permission. Tingnan ang [Roles & Permissions](../settings/roles-permissions.md) kung walang access.
+- Handa ang pangalan, paglalarawan, at thumbnail image para sa iyong playlist
 
 </div>
 
-## Pagtingin ng mga Playlist
+## Pagtingin ng Playlist
 
-1. Sa B1 Admin, i-click ang **Sermons** sa kaliwang sidebar.
-2. I-click ang **Playlists** tab sa itaas ng pahina.
-3. Makikita ninyo ang listahan ng lahat ng inyong kasalukuyang playlist kasama ang kanilang mga pangalan at paglalarawan.
+1. Sa B1 Admin, buksan ang **section menu** sa top-left corner (ang pangalan ng section na may maliit na arrow) at piliin ang **Sermons**.
+2. I-click ang **Playlists** tab sa tuktok ng pahina.
+3. Makikita mo ang isang listahan ng lahat ng iyong existing na playlist na may pangalan at paglalarawan.
 
-## Paggawa ng Playlist
+## Lumilikha ng Playlist
 
-1. I-click ang **Create First Playlist** button (kung wala pa kayong playlist) o i-click ang **Add Playlist**.
-2. Maglagay ng **pangalan** para sa playlist -- halimbawa, ang pamagat ng serye ng sermon tulad ng "Faith Foundations" o "Summer in the Psalms."
-3. Magdagdag ng **paglalarawan** para bigyan ang mga bisita ng maikling pangkalahatang-tanaw ng serye.
-4. Magtakda ng **petsa ng paglalathala** para kontrolin kung kailan magiging visible ang playlist.
-5. Mag-upload ng **thumbnail na larawan** para visual na kinatawan ng serye.
-6. I-click ang **Save** para gawin ang inyong playlist.
+1. I-click ang **Create First Playlist** button (kung walang playlist ka pa) o i-click ang **Add Playlist**.
+2. Ipasok ang **name** para sa playlist -- halimbawa, ang sermon series title tulad ng "Faith Foundations" o "Summer in the Psalms."
+3. Magdagdag ng **description** upang magbigay ng brief overview ng series sa bisita.
+4. Itakda ang **publish date** upang kontrolin kung kailan ang playlist ay magiging makikita.
+5. I-upload ang **thumbnail image** upang kumatawan sa series nang visual.
+6. I-click ang **Save** upang lumikha ng iyong playlist.
 
 :::tip
-Gumawa ng inyong mga playlist muna bago magdagdag ng mga sermon. Sa ganitong paraan maaari ninyong i-assign ang bawat sermon sa tamang playlist habang nagdaragdag kayo, sa halip na mag-reorganize sa paglaon.
+Lumikha ng iyong playlist muna bago magdagdag ng sermon. Sa ganitong paraan maaari mong italang ang bawat sermon sa tamang playlist habang napupunta, sa halip na reorganize ang hinaharap.
 :::
 
-## Pagdagdag ng mga Sermon sa isang Playlist
+## Pagdadagdag ng Sermon sa Playlist
 
-Kapag [nagdagdag o nag-edit kayo ng sermon](managing-sermons), ini-assign ninyo ito sa isang playlist gamit ang **Playlist** dropdown. Lahat ng sermon na naka-assign sa parehong playlist ay pinagsasama-sama at ipinapakita nang maayos sa inyong website.
+Kapag [nagdadagdag o nag-edit ka ng sermon](managing-sermons), italang mo ito sa playlist gamit ang **Playlist** dropdown. Lahat ng sermon na italang sa parehong playlist ay pinagsasama-sama at ipinakita sa kaayusan sa iyong website.
 
 :::info
-Maaari rin ninyong i-assign ang mga sermon sa mga playlist sa panahon ng [Bulk Import](bulk-import). Kapag nag-i-import mula sa YouTube o Vimeo, pumili ng playlist mula sa **Import Into Playlist** dropdown bago i-click ang **Import**.
+Maaari mo ring italang ang sermon sa playlist sa panahon ng [Bulk Import](bulk-import). Kapag nag-import mula sa YouTube o Vimeo, piliin ang playlist mula sa **Import Into Playlist** dropdown bago i-click ang **Import**.
 :::
 
-## Paano Lumalabas ang mga Playlist sa Inyong Website
+## Paano Lumilitaw ang Playlist sa Iyong Website
 
-Ipinapakita ang mga playlist sa inyong B1.church website bilang mga nabo-browse na koleksyon. Maaaring gawin ng mga bisita ang:
+Ang Playlist ay ipinakita sa iyong B1.church website bilang browsable na koleksyon. Ang bisita ay maaaring:
 
-- Makita ang lahat ng available na serye ng sermon sa isang tingin
-- I-click ang isang playlist para tingnan ang lahat ng sermon sa seryeng iyon
-- Manood o makinig sa mga sermon nang maayos
+- Makita ang lahat ng available na sermon series nang sabay-sabay
+- Mag-click sa isang playlist upang tingnan ang lahat ng sermon sa series na iyon
+- Manood o makinig ng sermon sa kaayusan
 
-## Mga Susunod na Hakbang
+## Susunod na Hakbang
 
-- [Pamamahala ng mga Sermon](managing-sermons) -- Magdagdag ng mga indibidwal na sermon sa inyong mga playlist
-- [Bulk Import](bulk-import) -- Mag-import ng maraming sermon at i-assign ang mga ito sa mga playlist
+- [Managing Sermons](managing-sermons) -- Magdagdag ng individual na sermon sa iyong playlist
+- [Bulk Import](bulk-import) -- I-import ang maraming sermon at italang ang mga ito sa playlist

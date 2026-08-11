@@ -6,52 +6,53 @@ title: "Arquitectura"
 
 <div class="article-intro">
 
-Estas páginas son mapas de sistema entre repositorios: documentan cómo funciona un sistema central de ChurchApps de extremo a extremo — a través de las aplicaciones, los módulos de API, y las bibliotecas compartidas — en lugar de cómo se configura cualquier proyecto individual. Léelas antes de cambiar el comportamiento de un sistema; lee [Configuración](../setup/) para ejecutar un proyecto y la [sección API](../api/) para referencia de nivel de extremo.
+Estas páginas son mapas de sistema entre repositorios: documentan cómo funciona un sistema central de ChurchApps de extremo a extremo — en todas las aplicaciones, los módulos de API y las bibliotecas compartidas — en lugar de cómo se configura un solo proyecto. Léelas antes de cambiar el comportamiento de un sistema; lee [Configuración](../setup/) para poner en funcionamiento un proyecto y la [sección API](../api/) para referencia a nivel de punto final.
 
 </div>
 
-## El ecosistema de una ojeada
+## El ecosistema de un vistazo
 
-ChurchApps es ~20 repositorios independientes (no un monorepo). Las aplicaciones de cliente hablan con un pequeño conjunto de APIs de backend sobre HTTPS y WebSocket, y comparten código a través de paquetes npm publicados bajo el alcance `@churchapps`.
+ChurchApps es ~20 repositorios independientes (no un monorepo). Las aplicaciones cliente hablan con un pequeño conjunto de APIs backend sobre HTTPS y WebSocket, y comparten código a través de paquetes npm publicados bajo el alcance `@churchapps`.
 
 ```
 ┌────────────────────────────────┐            ┌──────────────────────────────────────────────┐
 │  Clientes                      │            │  Api — monolito modular central (AWS Lambda) │
 │                                │            │                                              │
-│  B1Admin    panel de personal  │   HTTPS    │   membership    attendance    content        │
-│  B1App      portal de miembros │ ─────────▶ │   giving        messaging     doing          │
-│             + sitios web        │            │                                              │
-│  B1Checkin  quiosco de registro│ ◀───WS───▶ │   una base de datos MySQL por módulo (6 total)
-│  B1Mobile   (solo mantenimiento)│            └──────────────────────────────────────────────┘
-│  FreePlay   reproductor contenido │          ┌──────────────────────────────────────────────┐
-└───────────────┬────────────────┘            │  LessonsApi — backend de Lessons.church     │
+│  B1Admin    panel de personal  │   HTTPS    │   membresía  asistencia   contenido          │
+│  B1App      portal de miembros │ ─────────▶ │   dar        mensajería   haciendo          │
+│             sitios web iglesia │            │                                              │
+│  B1Checkin  quiosco registro   │ ◀───WS───▶ │   una base de datos MySQL por módulo (6 totales) │
+│  B1Mobile   (solo mantenimiento│            └──────────────────────────────────────────────┘
+│  FreePlay   reproductor contenido TV      │            │                             └──────────────────────────────────────┘
+└───────────────┬────────────────┘            │  LessonsApi — Backend de Lessons.church         │
                 │                             └──────────────────────────────────────────────┘
-                │  código compartido a través de npm (@churchapps/*)
+                │  código compartido vía npm (@churchapps/*)
                 ▼
    helpers (interfaces entre aplicaciones) · apphelper (componentes React) · apihelper (utilidades Express/servidor)
 ```
 
-Dos reglas estructurales moldean todo lo documentado en esta sección:
+Dos reglas estructurales dan forma a todo lo documentado en esta sección:
 
-1. **Los módulos están aislados.** Cada módulo Api posee su base de datos y sus tablas; otros módulos y aplicaciones alcanzan sus datos solo a través de sus extremos REST. Ver [Estructura del Módulo](../api/module-structure).
-2. **El código compartido se envía como paquetes npm.** Las aplicaciones nunca importan código fuente una de la otra; cualquier cosa reutilizada cruza límites de repositorio a través de `@churchapps/helpers`, `@churchapps/apphelper`, o `@churchapps/apihelper`. Ver [Bibliotecas Compartidas](../shared-libraries/).
+1. **Los módulos están aislados.** Cada módulo de Api posee su base de datos y sus tablas; otros módulos y aplicaciones llegan a sus datos solo a través de sus puntos finales REST. Consulta [Estructura de Módulo](../api/module-structure).
+2. **El código compartido se envía como paquetes npm.** Las aplicaciones nunca importan el código fuente de otras; cualquier cosa reutilizada cruza límites de repositorio a través de `@churchapps/helpers`, `@churchapps/apphelper` o `@churchapps/apihelper`. Consulta [Bibliotecas Compartidas](../shared-libraries/).
 
-## Mapas de sistema
+## Mapas del sistema
 
-| Página | Qué cubre | Abarca |
-|------|----------------|-------|
-| [Notificaciones y Recordatorios](./notifications) | Cómo cualquier cosa le dice a una persona algo: las dos puertas de despacho, la cadena de escalada de canal, y el motor de recordatorios | Api (messaging), B1Admin, B1App |
-| [Arquitectura en Tiempo Real](../realtime) | La estructura de entrega de WebSocket detrás del chat, la presencia, y la entrega en la aplicación | Api (messaging), todas las aplicaciones web |
-| [Notificaciones Push Web](../web-push) | El canal de inserción del navegador: claves VAPID, almacenamiento de suscripción, entrega | Api (messaging), todas las aplicaciones web |
-| [Donaciones](./giving) | Proveedores de pago y puertas de enlace, flujos de donación, fondos/lotes, webhooks de puerta de enlace | Api (giving), apphelper, B1App, B1Admin |
-| [Registros de Evento](./registrations) | El modelo de comercio de registro: tipos de asistentes, selecciones, códigos de descuento, pagos a través de la puerta de enlace de donación, y la lista de espera | Api (content + giving), B1App, B1Admin |
-| [Registros](./check-ins) | Registro de quiosco y automático, el modelo de datos de asistencia, enrutamiento de sala, la capa de seguridad infantil, impresión de etiquetas | B1Checkin, B1App, B1Admin, Api (attendance + membership) |
-| [Constructor de Sitios Web](./website-builder) | El árbol página/sección/elemento, el contrato de tipo de elemento y renderizadores, blog, páginas de acceso cerrado, SEO, generación de AI, formularios conversacionales | Api (content), AskApi, helpers/apphelper, B1Admin, B1App |
-| [Enrutamiento de Sitios Web y Multi-Sitio](./websites) | Cómo una solicitud se resuelve a una iglesia y un sitio específico, el modelo de datos `siteId` de multi-sitio, y el borde de dominio personalizado de Caddy | B1App, Api (membership + content), B1Admin |
+| Página | Lo que cubre | Abarca |
+|--------|----------------|-------|
+| [Notificaciones y Recordatorios](./notifications) | Cómo algo le dice algo a una persona: las dos puertas de envío, la cadena de escalada de canal y el motor de recordatorio | Api (mensajería), B1Admin, B1App |
+| [Arquitectura en Tiempo Real](../realtime) | El marco de entrega WebSocket detrás de chat, presencia y entrega en la aplicación | Api (mensajería), todas las aplicaciones web |
+| [Notificaciones Web Push](../web-push) | El canal push del navegador: claves VAPID, almacenamiento de suscripción, entrega | Api (mensajería), todas las aplicaciones web |
+| [Dar Dinero](./giving) | Proveedores y puertas de pago, flujos de donación, fondos/lotes, webhooks de puerta | Api (dar), apphelper, B1App, B1Admin |
+| [Registros de Eventos](./registrations) | El modelo de comercio de registro: tipos de asistentes, selecciones, códigos de descuento, pagos a través de la puerta de dar, y la lista de espera | Api (contenido + dar), B1App, B1Admin |
+| [Registros de Asistencia](./check-ins) | Quiosco y auto registro de asistencia, el modelo de datos de asistencia, enrutamiento de salas, la capa de seguridad infantil, impresión de etiquetas | B1Checkin, B1App, B1Admin, Api (asistencia + membresía) |
+| [Constructor de Sitio Web](./website-builder) | El árbol página/sección/elemento, el contrato de tipo de elemento y renderizadores, blog, páginas con cierre de acceso, SEO y generación de IA | Api (contenido), AskApi, helpers/apphelper, B1Admin, B1App |
+| [Enrutamiento y Sitios Múltiples del Sitio Web](./websites) | Cómo una solicitud se resuelve en una iglesia y un sitio específico, el modelo de datos `siteId` de múltiples sitios y el borde de dominio personalizado de Caddy | B1App, Api (membresía + contenido), B1Admin |
 | [Integraciones](./integrations) | La superficie de extensión: OAuth, claves API, webhooks, proveedores de contenido, MCP | Api, bibliotecas compartidas, aplicaciones externas |
-| [Registro de Auditoría y Lotes Reversibles](./audit-log) | Auditoría activada de forma predeterminada de cada mutación en el punto de estrangulamiento del controlador, y la capa de lote que hace importaciones y acciones en masa reversibles | Api (all modules), B1Admin, B1Transfer |
-| [MinistryStuff](./ministrystuff) | El servicio de pago de almacenamiento y créditos de mensajería de texto: identidad de JWT compartido, S2S de clave de servicio, las interfaces de proveedor de mensajería de texto y almacenamiento, facturación de Stripe | MinistryStuffApi, MinistryStuffWeb, Api (content + messaging), paquetes texting/apihelper, B1Admin |
+| [Registro de Auditoría y Lotes Deshacer](./audit-log) | Auditoría activada por defecto de cada mutación en el punto de estrangulamiento del controlador, y la capa de lote que hace importaciones y acciones masivas deshacer | Api (todos los módulos), B1Admin, B1Transfer |
+| [MinistryStuff](./ministrystuff) | El servicio pagado de almacenamiento y crédito de mensajería de texto: identidad JWT compartida, S2S de clave de servicio, las costuras del proveedor de almacenamiento y mensajería, facturación de Stripe | MinistryStuffApi, MinistryStuffWeb, Api (contenido + mensajería), paquetes texting/apihelper, B1Admin |
+| [Traer Tu Propio Almacenamiento](./byos-storage) | Las iglesias vinculan Google Drive, Dropbox, OneDrive o un depósito compatible con S3 para subidas más allá de los 100 MB gratis: conectar OAuth, formas de carga por proveedor, la redirección de descarga pública | Api (contenido + membresía), paquetes helpers/apphelper, B1Admin, B1App |
 
 :::tip
-Cuando un cambio altera cómo funciona uno de estos sistemas — no solo una página dentro de una aplicación — el mapa de sistema correspondiente aquí debe actualizarse en el mismo esfuerzo. Eso mantiene esta sección confiable como la primera parada para nuevos contribuyentes.
+Cuando un cambio altera cómo funciona uno de estos sistemas — no solo una página dentro de una aplicación — el mapa del sistema de coincidencia aquí debe actualizarse en el mismo esfuerzo. Eso mantiene esta sección confiable como la primera parada para nuevos colaboradores.
 :::

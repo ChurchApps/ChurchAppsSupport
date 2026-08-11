@@ -6,43 +6,44 @@ title: "Sitio Web"
 
 <div class="article-intro">
 
-La sección de Sitio Web en B1 Admin le brinda un constructor de sitios web completo para su iglesia. Puede crear páginas, personalizar la apariencia de su sitio, gestionar archivos multimedia y publicar calendarios de eventos -- todo sin escribir código.
+La sección Sitio Web en B1 Admin te proporciona un constructor de sitios web completo para tu iglesia. Puedes crear páginas, personalizar la apariencia de tu sitio, administrar archivos multimedia y publicar calendarios de eventos -- todo sin escribir ningún código.
 
 </div>
 
-## Lo que Puede Hacer
+## Lo Que Puedes Hacer
 
-El constructor de sitios web está organizado en cinco áreas principales:
+El constructor de Sitio Web se organiza en cinco áreas principales:
 
 ### Páginas
 
-Cree y gestione todas las páginas de su sitio web de la iglesia. La tabla de **Páginas** muestra cada página junto con su estado -- ya sea **Generada** (creada automáticamente por el sistema) o **Personalizada** (creada por usted). Puede agregar nuevas páginas personalizadas, editar las existentes o convertir páginas generadas automáticamente en páginas personalizadas para tener control total sobre su contenido.
+Crea y administra todas las páginas de tu sitio web de iglesia. La tabla **Páginas** muestra cada página junto con su estado -- **Generada** (creada automáticamente por el sistema) o **Personalizada** (creada por ti). Puedes agregar nuevas páginas personalizadas, editar las existentes, o convertir páginas generadas automáticamente en páginas personalizadas para tener control total sobre su contenido.
 
-La barra lateral izquierda muestra sus enlaces de navegación en una estructura de árbol. Puede reordenar los enlaces arrastrando y soltando para establecer la jerarquía y el orden exactos que desea que los visitantes vean.
+Tus enlaces de navegación se muestran en una estructura de árbol. Puedes reordenar enlaces mediante arrastrar y soltar para establecer la jerarquía exacta y el orden que deseas que los visitantes vean.
 
 ### Bloques
 
-Construya componentes de contenido reutilizables que puede colocar en múltiples páginas. Los bloques le ahorran tiempo cuando tiene contenido como una llamada a la acción, un banner de anuncios o una sección de contacto que aparece en más de un lugar. Actualice un bloque una vez y el cambio se aplica en todos los lugares donde se usa.
+Construye componentes de contenido reutilizables que puedas colocar en múltiples páginas. Los bloques te ahorran tiempo cuando tienes contenido como una llamada a la acción, un banner de anuncio, o una sección de contacto que aparece en más de un lugar. Actualiza un bloque una vez y el cambio se aplica en todas partes donde se use.
 
 ### Apariencia
 
-Personalice el tema, colores, fuentes, logotipo y espaciado de su sitio web. Puede aplicar temas de estilo prediseñados para un inicio rápido o ajustar cada detalle con el editor de paleta de colores, configuraciones de tipografía y CSS personalizado. Consulte la guía de [Apariencia](appearance) para todos los detalles.
+Personaliza el tema, colores, fuentes, logo y espaciado de tu sitio web. Puedes aplicar temas de estilo preconstructos para un inicio rápido o ajustar cada detalle con el editor de paleta de colores, configuración de tipografía y CSS personalizado. Consulta la guía [Apariencia](appearance) para detalles completos.
 
 ### Archivos
 
-Suba y organice todos sus recursos multimedia -- imágenes, documentos y otros archivos -- en una ubicación central. Use carpetas para mantener todo organizado y copie las URL de los archivos para usarlas en cualquier parte de su sitio. Consulte [Archivos](files) para más información.
+Carga y organiza todos tus activos multimedia -- imágenes, documentos y otros archivos -- en una ubicación central. Usa carpetas para mantener todo ordenado y copia URLs de archivos para usar en cualquier lugar de tu sitio. Consulta [Archivos](files) para más información.
 
 ### Calendarios
 
-Publique calendarios de eventos en su sitio web para que los visitantes puedan ver lo que está sucediendo en su iglesia. Cree calendarios curados que reúnan eventos de múltiples grupos en una sola vista.
+Publica calendarios de eventos en tu sitio web para que los visitantes vean qué está sucediendo en tu iglesia. Crea calendarios curados que extraigan eventos de múltiples grupos en una sola vista.
 
 :::tip
-Comience con la [Configuración Inicial](initial-setup) si está configurando su sitio web por primera vez. Le guía a través de la configuración del dominio, la creación de su primera página y la configuración de la apariencia de su sitio.
+Comienza con [Configuración Inicial](initial-setup) si estás configurando tu sitio web por primera vez. Te guía a través de la configuración del dominio, crear tu primera página y configurar la apariencia de tu sitio.
 :::
 
 ## Próximos Pasos
 
-- [Configuración Inicial](initial-setup) -- Ponga en marcha su sitio web por primera vez
-- [Gestión de Páginas](managing-pages) -- Aprenda a crear y organizar sus páginas
-- [Apariencia](appearance) -- Personalice la apariencia de su sitio
-- [Archivos](files) -- Suba y gestione archivos multimedia
+- [Configuración Inicial](initial-setup) -- Pon tu sitio web en funcionamiento por primera vez
+- [Administrar Páginas](managing-pages) -- Aprende cómo crear y organizar tus páginas
+- [Usar el Editor de Páginas](page-editor) -- Construye y estiliza tu contenido de página con el editor visual
+- [Apariencia](appearance) -- Personaliza la apariencia y funcionamiento de tu sitio
+- [Archivos](files) -- Carga y administra archivos multimedia

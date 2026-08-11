@@ -1,70 +1,70 @@
 ---
-title: "Visning av planer"
+title: "Vis planer"
 ---
 
-# Visning av planer
+# Vis planer
 
 <div class="article-intro">
 
-Planersiden gir deg en klar visning av alle tjenestplanene du er tildelt. Den bruker et master-detail-oppsett slik at du raskt kan bla gjennom planene dine og dykke inn i detalj om enhver plan.
+Planersiden gir deg en klar visning av alle serviceplaner du er tildelt. Den bruker et master-detalj-layout slik at du raskt kan bla gjennom planene dine og dykke inn i detaljene for hvilken som helst.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du må være [logget inn](../getting-started/logging-in.md) på B1.church-kontoen din.
-- Du må være tildelt minst en tjeneste plan. Hvis du ikke ser noen planer, kontakt kirkeadministratoren eller ministerielederen din.
+- Du må være [pålogget](../getting-started/logging-in.md) B1.church-kontoen din.
+- Du må være tildelt minst en serviceplan. Hvis du ikke ser noen planer, kontakt kirkens administrator eller ministerleder.
 
 </div>
 
-## Tilgang til planene dine
+## Få tilgang til planene dine
 
-1. Klikk **Plans** i [sidepanelnavigasjonen](../getting-started/navigating.md).
+1. Klikk **Planer** i [sidestolpen navigering](../getting-started/navigating.md).
 2. Du vil se en liste over planene dine på venstre side av siden.
 
-## Planlisten
+## Planerlisten
 
-Planene dine er oppført i det venstre panelet under **My Plans**. Hvert element viser:
+Planene dine er oppført i det venstre panelet under **Mine planer**. Hver oppføring viser:
 
-- **Plannavn** (for eksempel "Sunday Worship" eller "Kids Ministry")
-- **Tjenestdatoen**
-- Din **stilling** (rollen du fyller)
-- Din **status** -- fargekodert slik at du kan se på et blikk enten du har akseptert, avslått eller ikke ennå svart
+- **Plannavnet** (for eksempel "Søndagsgudstjeneste" eller "Barneminister")
+- **Servicedatoen**
+- Din **posisjon** (rollen du fyller)
+- Din **status** -- fargekodert slik at du kan se på et øyeblikk om du har akseptert, avslått eller ikke har svart ennå
 
-Øverst på listen ser du også et **Blockout Dates**-alternativ. Klikk det for å administrere datoer når du er utilgjengelig for å tjene. Du kan legge til, redigere og fjerne blokkerte datoer-områder slik at laglederne dine vet når de skal planlegge rundt deg.
+Øverst på listen vil du også se alternativet **Blokerringsdatoer**. Klikk det for å administrere datoer når du er utilgjengelig for tjeneste. Du kan legge til, redigere og fjerne blokeringsdatointervaller slik at teamleder vet når de skal planlegge deg.
 
 :::info
-Kirken din kan sende **påminnelser** før tjenestene du er planlagt for, via e-post og som en app-varsling. Hvis du ennå ikke har svart, kan du **Accept** eller **Decline** rett fra påminnelses-e-posten — ingen pålogging nødvendig.
+Kirken din kan sende **påminnelser** før tjenestene du er planlagt for, via e-post og som app-melding. Hvis du ennå ikke har svart, kan du **Akseptere** eller **Avslå** direkte fra påminnelsese-posten -- ingen pålogging nødvendig.
 :::
 
-## Visning av plandetalj
+## Vis planinformasjon
 
-Klikk på en plan i listen for å åpne dens detalj i det høyre panelet. Detaljvisningen inkluderer:
+Klikk på en plan i listen for å åpne detaljene i det høyre panelet. Detaljvisten inkluderer:
 
-- **Positionsdetalj** -- Din tildelte stilling med nødvendige tider og gjeldende status. Hvis du ikke ennå har svart, kan du klikke **Accept** eller **Decline** direkte fra denne visningen.
-- **Notes** -- Alle notater planopprettaren la til for laget.
-- **Order of Service** -- Den fulle tjenesterekkefølgen med tidspunkt, elementer og beskrivelser. Se [Service Order](./service-order.md) for mer informasjon.
-- **Team assignments** -- Et sammendrag av alle teammedlemmer og deres stillinger, slik at du kan se hvem andre som tjener ved siden av deg.
+- **Posisjonsdetaljer** -- Din tildelte posisjon med nødvendige tider og gjeldende status. Hvis du ennå ikke har svart, kan du klikke **Akseptere** eller **Avslå** direkte fra denne visningen.
+- **Merknader** -- Eventuelle merknader som plantegner lagt til for teamet.
+- **Tjenesterekkefølge** -- Den fullstendige servicerekkefølgen med timing, elementer og beskrivelser. Se [Tjenesterekkefølge](./service-order.md) for mer detaljer.
+- **Teamtildelinger** -- Et sammendrag av alle teammedlemmer og deres posisjoner, slik at du kan se hvem annet som tjener sammen med deg.
 
 :::tip
-Hvis du har flere oppgaver på tvers av forskjellige planer, er listen sortert etter dato slik at dine kommende forpliktelser vises først. Sjekk tilbake regelmessig for å holde deg oppdatert på timeplanen din.
+Hvis du har flere tildelinger på tvers av ulike planer, sorteres listen etter dato slik at de kommende forpliktelsene dine vises først. Kontroller regelmessig for å holde deg oppdatert på timeplanen din.
 :::
 
-## Lærersyn for leksjoner
+## Lærerutvisning for leksjoner
 
-Hvis planen din inkluderer tilknyttet læreplan fra en innholdsleverandør (for eksempel Lessons.church), vil du se en omskifter-knapp i **Order of Service**-fanen som lar deg bytte mellom **Summary** og **Teach**-visninger.
+Hvis planen inkluderer tilhørende læreplan fra en innholdsleverandør (som Lessons.church), vil du se en veksleknapp i **Tjenesterekkefølge**-fanen som lar deg bytte mellom **Sammendrag** og **Undervis**-visninger.
 
-- **Summary view** -- Viser tjenesterekkefølgen med tidspunkt og grunnleggende leksjonsseksjoner, ideell for raskt å gjennomgå hva som vil skje når
-- **Teach view** -- Åpner en immersiv, fullskjerm-leksjonspresentasjon designet for lærere, med formatert instruksjoner, innebygd media, notater og trinn-for-trinn-veiledning
+- **Sammendrag-visning** -- Viser tjenesterekkefølgen med timing og grunnleggende leksjonsseksjoner, ideell for å raskt se gjennom hva som vil skje når
+- **Undervis-visning** -- Åpner en oppslukende, fullskjerms leksjonspresentasjon designet for lærere, med formatert instruksjoner, innebygd media, merknader og trinnvis veiledning
 
-Teach-visningen organiserer leksjonsinnholdet i navigerbare seksjoner vises som faner øverst. Du kan:
+Undervis-visningen organiserer leksjoninnholdet i navigerbare seksjoner som vises som faner øverst. Du kan:
 
-- Trykk på en seksjonsfane for å hoppe direkte til den delen av leksjonen
-- Bla gjennom leksjonsinnholdet, og den aktive fanen oppdateres automatisk for å samsvare med posisjonen din
-- Klikk på medieelementer (videoer, bilder, aktiviteter) for å vise dem i en modaldialog
-- Se handlingstyper formatert distinkt: **Say** vises i samtalebobler, **Do** i fet tekst og **Note** i uthevede billeforklaringer
+- Trykk på en seksjonfane for å hoppe direkte til den delen av leksjonen
+- Bla gjennom leksjoninnholdet, og den aktive fanen vil oppdateres automatisk for å samsvare med posisjonen din
+- Klikk på medieelementer (videoer, bilder, aktiviteter) for å vise dem i en modaldialog; lydlenker (sanger, predikenclips) spilles direkte med en innebygd lydspiller
+- Se handlingstyper formatert særskilt: **Si** vises i samtalebobler, **Gjør** i fet tekst, og **Merk** i fremhevet opprop
 
 :::tip
-Teach-visningen er spesielt nyttig når du leder en klasserom eller liten gruppe, da den presenterer alt leksjonsinnholdet ditt i et rent, distraksjonsfritt format optimalisert for mobil og tablet-bruk.
+Undervis-visningen er spesielt nyttig når du leder et klasserom eller liten gruppe, da den presenterer alt leksjoninnholdet ditt i et rent, distraksjonfritt format optimalisert for mobil- og nettbrettbruk.
 :::

@@ -1,71 +1,71 @@
 ---
-title: "Mga Campus"
+title: "Campuses"
 ---
 
-# Mga Campus
+# Campuses
 
 <div class="article-intro">
 
-Kung ang iyong simbahan ay nagsasagupan sa higit sa isang lokasyon, ang **Mga Campus** ay nagpapahintulot sa iyo na subaybayan kung aling site ang bawat tao at grupo ay pag-aari. Kapag na-configure na, ang mga campus ay lumalabas bilang isang pagpipilian sa mga profile ng tao, sa attendance setup, at sa dashboard ng Demographics. Ang mga multi-site na simbahan ay maaaring mag-filter, maghanap, at mag-ulat ayon sa campus sa buong B1 Admin.
+Kung ang iyong simbahan ay nakatipak sa mahigit isang lokasyon, ang **Campuses** ay nagbibigay-daan sa iyo na i-track kung aling site ang bawat tao at grupo ay pag-aari. Kapag na-configure, ang campus ay lumalabas bilang opsyon sa person profile, sa attendance setup, at sa Demographics dashboard. Ang multi-site na simbahan ay maaaring mag-filter, maghanap, at mag-report ng campus sa buong B1 Admin.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Magsimula</h4>
 
-- Kailangan mo ng pahintulot na **I-edit ang Mga Setting ng Simbahan** upang pamahalaan ang mga campus. Tingnan ang [Mga Tungkulin at Pahintulot](./roles-permissions.md).
+- Kailangan mo ng **Edit Church Setting** permission upang pamahalaan ang campus. Tingnan ang [Roles & Permissions](./roles-permissions.md).
 
 </div>
 
-## Pagbubukas ng Mga Setting ng Campus
+## Pagbubukas ng Campus Setting
 
-Sa B1 Admin, pumunta sa **Mga Setting** sa left sidebar at pumili ng **Mga Campus** mula sa navigation ng Settings. Makikita mo ang isang listahan ng lahat ng mga na-configure na campus na may kanilang pangalan, lokasyon, at timezone.
+Sa B1 Admin, buksan ang **section menu** sa top-left corner (ang pangalan ng section na may maliit na arrow), pumili ng **Settings**, at pumili ng **Campuses** mula sa Settings navigation. Makikita mo ang isang listahan ng lahat ng configured na campus na may pangalan, lokasyon, at timezone.
 
-## Pagdadagdag ng isang Campus
+## Pagdadagdag ng Campus
 
-1. I-click ang **Magdagdag ng Campus** (o ang button na **+** kung walang mga campus pa).
-2. Punan ang mga detalye ng campus:
-   - **Pangalan** *(kinakailangan)* — ang pangalang ipinakita sa buong B1 Admin (halimbawa, "Main Campus" o "North Campus").
-   - **Tirahan** — ang street address ng campus (ginamit para sa impormasyon display; hindi pareho sa iyong pangunahing address ng simbahan sa Mga Setting ng Simbahan).
-   - **Lungsod / Estado / Zip** — ang lokasyon ng campus.
-   - **Timezone** — ang IANA timezone para sa campus na ito (halimbawa, *America/Chicago*). Kapaki-pakinabang kapag ang mga campus ay nasa iba't ibang time zone.
-   - **Website** — isang opsyonal na URL para sa sariling web presence ng campus na ito.
-3. I-click ang **Mag-save**.
+1. I-click ang **Add Campus** (o ang **+** button kung walang campus pa).
+2. Puno ang campus detail:
+   - **Name** *(required)* — ang display name na ipinakita sa B1 Admin (halimbawa, "Main Campus" o "North Campus").
+   - **Address** — ang campus street address (ginagamit para sa informational display; hindi katulad ng iyong main church address sa Church Setting).
+   - **City / State / Zip** — ang campus location.
+   - **Timezone** — ang IANA timezone para sa campus na ito (halimbawa, *America/Chicago*). Kapaki-pakinabang kapag ang campus ay nasa iba't ibang time zone.
+   - **Website** — isang optional na URL para sa sariling web presence ng campus na ito.
+3. I-click ang **Save**.
 
-## Pag-edit ng isang Campus
+## Pag-edit ng Campus
 
-I-click ang anumang row ng campus sa listahan upang buksan ang editor nito sa panel sa kanang bahagi. I-update ang mga field at i-click ang **Mag-save**.
+I-click ang anumang campus row sa listahan upang buksan ang editor nito sa panel sa kanan. I-update ang field at i-click ang **Save**.
 
-## Pagbubuksan ng isang Campus
+## Pagtanggal ng Campus
 
-Buksan ang isang campus para sa pag-edit at i-click ang **Buksang**. Makakatanggap ka ng katanungan upang kumpirmahin. Ang pagbubuksan ng isang campus ay hindi nag-alis ng mga taong na-assign dito — ang kanilang campus field ay nagiging blank lamang.
+Buksan ang isang campus para sa pag-edit at i-click ang **Delete**. Hihilingin ka na mag-confirm. Ang pagtanggal ng campus ay hindi nag-aalis ng mga taong italang nito — ang kanilang campus field ay nagiging blank lamang.
 
-## Paglalaan ng mga Tao sa isang Campus
+## Pag-assign ng Tao sa Campus
 
-Pagkatapos ng paglikha ng mga campus, ang mga tauhan ay maaaring magtalaga ng isang tao sa isang campus mula sa kanilang profile:
+Pagkatapos lumikha ng campus, ang staff ay maaaring italang ang isang tao sa campus mula sa kanilang profile:
 
-1. Buksan ang rekord ng isang tao sa **Mga Tao**.
-2. I-click ang **I-edit**.
-3. Pumili ng campus mula sa dropdown ng **Campus**.
-4. I-click ang **Mag-save**.
+1. Buksan ang person record sa **People**.
+2. I-click ang **Edit**.
+3. Pumili ng campus mula sa **Campus** dropdown.
+4. I-click ang **Save**.
 
-Maaari mo ring i-update ang campus sa bulk mula sa pahina ng Mga Tao. Pumili ng maraming mga tao, gamitin ang **Bulk Edit**, at itakda ang Campus field para sa lahat nang sabay-sabay.
+Maaari mo ring i-update ang campus nang bulk mula sa People page. Pumili ng maraming tao, gamitin ang **Bulk Edit**, at itakda ang Campus field para sa lahat nang sabay-sabay.
 
-## Pag-filter ayon sa Campus
+## Pag-filter ng Campus
 
-Kapag na-setup na ang mga campus, maaari kang mag-filter sa buong B1 Admin ayon sa campus:
+Kapag na-set up na ang campus, maaari kang mag-filter sa B1 Admin ng campus:
 
-- **Paghahanap ng Mga Tao** — magdagdag ng isang kondisyon ng Campus sa advanced search, o mag-load ng isang [Nakaimbak na Lista](../people/lists.md) na-scope sa isang campus.
-- **Demograpiya** — ang dashboard ng [Demograpiya](../people/demographics.md) ay nagpapakita ng isang donut chart ng Campus kapag hindi bababa sa isang tao ang may na-assign na campus.
-- **Attendance Setup** — bawat oras ng serbisyo sa Attendance ay maaaring makaugnayan sa isang campus.
+- **People search** — magdagdag ng Campus condition sa advanced search, o mag-load ng [Saved List](../people/lists.md) scoped sa campus.
+- **Demographics** — ang [Demographics dashboard](../people/demographics.md) ay nagpapakita ng Campus donut chart kapag hindi bababa sa isang tao ang may assigned na campus.
+- **Attendance Setup** — bawat service time sa Attendance ay maaaring nakakabit sa campus.
 
 :::tip
-Ang mga singly-location na simbahan ay hindi na kailangang mag-configure ng mga campus. Lahat ng campus feature ay opsyonal — kung walang mga campus na umiiral, ang mga campus field at chart ay simpleng hindi lumalabas.
+Ang single-location na simbahan ay hindi kailangang mag-configure ng campus. Lahat ng campus feature ay optional — kung walang campus, ang campus field at chart ay hindi lamang lumalabas.
 :::
 
-## Kaugnay na mga Artikulo
+## Mga Kaugnay na Artikulo
 
-- [Mga Setting ng Simbahan](./church-settings.md) — ang iyong pangunahing address ng simbahan at branding (hiwalay mula sa mga address ng campus)
-- [Demograpiya](../people/demographics.md) — ang chart ng Campus breakdown
-- [Attendance Setup](../attendance/setup.md) — ikonekta ang mga oras ng serbisyo sa isang campus
-- [Bulk Editing](../people/bulk-editing.md) — magtalaga ng campus sa maraming mga tao nang sabay-sabay
+- [Church Setting](./church-settings.md) — ang iyong pangunahing church address at branding (hiwalay mula sa address ng campus)
+- [Demographics](../people/demographics.md) — ang Campus breakdown chart
+- [Attendance Setup](../attendance/setup.md) — ikonekta ang service time sa campus
+- [Bulk Editing](../people/bulk-editing.md) — italang ang campus sa maraming tao nang sabay-sabay

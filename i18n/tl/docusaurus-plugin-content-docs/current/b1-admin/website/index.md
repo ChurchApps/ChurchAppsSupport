@@ -6,43 +6,44 @@ title: "Website"
 
 <div class="article-intro">
 
-Ang seksyon ng Website sa B1 Admin ay nagbibigay sa inyo ng full-featured na website builder para sa inyong simbahan. Maaari kayong gumawa ng mga pahina, i-customize ang hitsura at pakiramdam ng inyong site, mamahala ng mga media file, at mag-publish ng mga kalendaryo ng kaganapan -- lahat nang walang pagsusulat ng anumang code.
+Ang seksyon ng Website sa B1 Admin ay nagbibigay sa iyo ng isang full-featured website builder para sa iyong simbahan. Maaari kang lumikha ng mga pahina, i-customize ang hitsura at pakiramdam ng iyong site, pamahalaan ang mga file ng media, at maglathala ng mga kalendaryo ng event -- lahat nang walang pagsusulat ng anumang code.
 
 </div>
 
-## Ano ang Maaari Ninyong Gawin
+## Ano ang Maaari Mong Gawin
 
-Ang Website builder ay nakaayos sa limang pangunahing bahagi:
+Ang Website builder ay inorganisa sa limang pangunahing lugar:
 
 ### Mga Pahina
 
-Gumawa at pamahalaan ang lahat ng pahina sa website ng inyong simbahan. Ipinapakita ng **Pages** table ang bawat pahina kasama ang status nito -- alinman sa **Generated** (awtomatikong ginawa ng sistema) o **Custom** (ginawa ninyo). Maaari kayong magdagdag ng mga bagong custom na pahina, mag-edit ng mga kasalukuyang pahina, o gawing custom na pahina ang mga auto-generated na pahina para sa buong kontrol sa kanilang content.
+Lumikha at pamahalaan ang lahat ng mga pahina sa iyong website ng simbahan. Ang **Mga Pahina** na talahanayan ay nagpapakita ng bawat pahina kasama ang kanyang status -- alinman ay **Nabuo** (awtomatikong ginawa ng system) o **Custom** (ginawa mo). Maaari kang magdagdag ng mga bagong custom na pahina, mag-edit ng mga umiiral, o ikonberta ang auto-generated na mga pahina sa custom na mga pahina para sa buong kontrol sa kanilang nilalaman.
 
-Ipinapakita ng kaliwang sidebar ang inyong mga navigation link sa isang tree structure. Maaari ninyong ayusin ang mga link gamit ang drag-and-drop para itakda ang eksaktong hierarchy at pagkakasunod-sunod na gusto ninyong makita ng mga bisita.
+Ang iyong mga link sa navigation ay ipinapakita sa isang tree structure. Maaari mong baguhin ang mga link gamit ang drag-and-drop upang itakda ang eksaktong hierarchy at pagkakasunod-sunod na nais mong makita ng mga bisita.
 
-### Mga Block
+### Mga Bloke
 
-Bumuo ng mga reusable na content component na maaari ninyong ilagay sa maraming pahina. Nakakatipid ng oras ang mga block kapag mayroon kayong content tulad ng call-to-action, announcement banner, o contact section na lumalabas sa higit sa isang lugar. I-update ang isang block nang isang beses at ang pagbabago ay naa-apply sa lahat ng lugar kung saan ito ginagamit.
+Bumuo ng mga mabagong component ng nilalaman na maaari mong ilagay sa maraming pahina. Ang mga bloke ay nakakatipid sa iyo ng oras kapag mayroon kang nilalaman tulad ng isang call-to-action, announcement banner, o contact section na lumalabas sa higit sa isang lugar. I-update ang isang bloke minsan at ang pagbabago ay naaply saanman ito ginagamit.
 
 ### Hitsura
 
-I-customize ang tema, mga kulay, font, logo, at spacing ng inyong website. Maaari kayong mag-apply ng mga pre-built na style theme para sa mabilis na simula o i-fine-tune ang bawat detalye gamit ang color palette editor, typography settings, at custom CSS. Tingnan ang gabay sa [Hitsura](appearance) para sa buong detalye.
+I-customize ang tema, kulay, font, logo, at spacing ng iyong website. Maaari kang maglapat ng pre-built na mga tema ng istilo para sa isang mabilis na pagsisimula o mahusay na ayusin ang bawat detalye gamit ang color palette editor, typography settings, at custom CSS. Tingnan ang [Hitsura](appearance) guide para sa buong detalye.
 
 ### Mga File
 
-I-upload at ayusin ang lahat ng inyong media asset -- mga larawan, dokumento, at iba pang file -- sa isang sentral na lokasyon. Gumamit ng mga folder para mapanatiling maayos ang mga bagay-bagay at kopyahin ang mga file URL para gamitin kahit saan sa inyong site. Tingnan ang [Mga File](files) para sa karagdagang impormasyon.
+I-upload at ayusin ang lahat ng iyong mga asset ng media -- mga larawan, dokumento, at iba pang mga file -- sa isang sentral na lokasyon. Gamitin ang mga folder upang mapanatili ang mga bagay na malinis at kopyahin ang mga URL ng file para sa paggamit saanman sa iyong site. Tingnan ang [Mga File](files) para sa higit pang impormasyon.
 
 ### Mga Kalendaryo
 
-Mag-publish ng mga kalendaryo ng kaganapan sa inyong website para makita ng mga bisita kung ano ang nangyayari sa inyong simbahan. Gumawa ng mga curated na kalendaryo na nagku-pull ng mga kaganapan mula sa maraming grupo sa isang view.
+Maglathala ng mga kalendaryo ng event sa iyong website upang ang mga bisita ay makita kung ano ang nangyayari sa iyong simbahan. Lumikha ng mga curated na kalendaryo na nagsasaad ng mga event mula sa maraming mga grupo sa isang solong view.
 
 :::tip
-Magsimula sa [Paunang Setup](initial-setup) kung unang beses ninyong kino-configure ang inyong website. Gagabayan kayo nito sa pag-setup ng domain, paggawa ng inyong unang pahina, at pag-configure ng hitsura ng inyong site.
+Magsimula sa [Paunang Setup](initial-setup) kung ikaw ay nag-configure ng iyong website sa unang pagkakataon. Ito ay gagabay sa iyo sa setup ng domain, paglikha ng iyong unang pahina, at pag-configure ng hitsura ng iyong site.
 :::
 
 ## Mga Susunod na Hakbang
 
-- [Paunang Setup](initial-setup) -- I-setup ang inyong website para sa unang pagkakataon
-- [Pamamahala ng mga Pahina](managing-pages) -- Matutunan kung paano gumawa at ayusin ang inyong mga pahina
-- [Hitsura](appearance) -- I-customize ang hitsura at pakiramdam ng inyong site
-- [Mga File](files) -- I-upload at pamahalaan ang mga media file
+- [Paunang Setup](initial-setup) -- Pagsisimula ng iyong website at pagpapatakbo sa unang pagkakataon
+- [Pag-manage ng Mga Pahina](managing-pages) -- Matuto kung paano lumikha at ayusin ang iyong mga pahina
+- [Paggamit ng Page Editor](page-editor) -- Bumuo at istilo ang iyong nilalaman ng pahina gamit ang visual editor
+- [Hitsura](appearance) -- I-customize ang hitsura at pakiramdam ng iyong site
+- [Mga File](files) -- I-upload at pamahalaan ang mga file ng media

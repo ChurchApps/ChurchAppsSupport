@@ -1,71 +1,71 @@
 ---
-title: "Mga Kampanya at Pangako"
+title: "Campaigns & Pledges"
 ---
 
-# Mga Kampanya at Pangako
+# Campaigns & Pledges
 
 <div class="article-intro">
 
-Ang mga kampanya ay nagbibigay-daan sa iyo na magpatakbo ng isang fundraising drive tungo sa isang tiyak na layunin -- isang building fund, isang missions trip, isang espesyal na proyekto -- at subaybayan ang mga pangako mula sa mga miyembro sa tabi ng aktwal na mga donasyon upang makita ang iyong real-time progress.
+Ang Campaign ay nagbibigay-daan sa iyo na magpatakbo ng fundraising drive tungo sa isang tiyak na layunin — isang building fund, isang mission trip, isang special project — at subaybayan ang pledge mula sa mga miyembro kasama ang aktwal na donation upang makita mo ang real-time progress.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Magsimula</h4>
 
-- I-set up ang iyong [donation funds](funds) -- ang bawat kampanya ay nakakonekta sa isang fund
-- Mayroon kang access sa Donations na seksyon ng B1 Admin
+- I-set up ang iyong [donation funds](funds) — ang bawat kampanya ay nakakabit sa isang fund
+- Kailangan mo ng access sa Donations section ng B1 Admin
 
 </div>
 
-## Pagbubukas ng mga Kampanya
+## Pagbubukas ng Campaign
 
-Sa B1 Admin, pumunta sa **Donations** sa kaliwang sidebar at piliin ang **Campaigns**. Makikita mo ang isang listahan ng lahat ng mga kampanya na may kanilang amount ng layunin, kabuuang ipinangako, at kabuuang ibinigay na sa ngayon.
+Sa B1 Admin, buksan ang **section menu** sa top-left corner (ang pangalan ng section na may maliit na arrow) at piliin ang **Donations**, pagkatapos piliin ang **Campaigns**. Makikita mo ang listahan ng lahat ng campaign na may goal amount, total pledged, at total given hanggang ngayon.
 
-## Paglikha ng isang Kampanya
+## Lumilikha ng Campaign
 
-1. Mag-click **Add Campaign**.
-2. Punan ang mga detalye ng kampanya:
-   - **Pangalan** *(kinakailangan)* -- ang display name para sa kampanyang ito (halimbawa, "Building Fund 2026").
-   - **Fund** -- ang donation fund na ito ang kampanya ay nauugnay sa.
-   - **Start Date** / **End Date** -- ang fundraising window.
-   - **Goal** -- ang target dollar amount para sa kampanya.
-3. Mag-click **Save**.
+1. I-click ang **Add Campaign**.
+2. Puno ang campaign details:
+   - **Name** *(required)* — ang display name para sa kampanyang ito (halimbawa, "Building Fund 2026").
+   - **Fund** — ang donation fund na ito ay campaign ay naka-associate.
+   - **Start Date** / **End Date** — ang fundraising window.
+   - **Goal** — ang target dollar amount para sa kampanya.
+3. I-click ang **Save**.
 
-## Sumusubaybay sa Pag-unlad
+## Pag-track ng Progress
 
-Ang bawat kampanya card ay nagpapakita:
+Ang bawat campaign card ay nagpapakita ng:
 
-- **Goal** -- ang iyong target amount
-- **Pledged** -- ang kabuuang halaga na ang mga miyembro ay nangako na ibigay
-- **Given** -- ang kabuuang halaga na aktwal na inilaan sa fund ng kampanyang ito sa panahon ng kampanya
-- Isang **progress bar** na nagpapakita kung paano malayo ka sa iyong layunin
+- **Goal** — ang iyong target amount
+- **Pledged** — ang kabuuang halaga ng miyembro na nangako na magbigay
+- **Given** — ang kabuuang halaga na aktwal na na-donate sa campaign fund ng kampanyang ito sa panahon ng kampanya
+- Isang **progress bar** na nagpapakita kung gaano kalayo ang iyong naabot na ang iyong layunin
 
-Mag-click sa anumang kampanya upang buksan ang detalye view, na naglalista ng indibidwal na mga pangako at ng kanilang fulfillment status.
+I-click ang anumang campaign upang buksan ang detail view, na naglilista ng individual pledge at kanilang fulfillment status.
 
-## Pagdagdag ng mga Pangako
+## Pagdadagdag ng Pledge
 
-Ang mga pangako ay mga pangako mula sa mga miyembro na magbigay tungo sa isang kampanya. Upang itala ang isang pangako:
+Ang pledge ay commitment mula sa miyembro upang magbigay tungo sa isang kampanya. Upang mag-record ng pledge:
 
 1. Buksan ang isang kampanya.
-2. Mag-click **Add Pledge**.
-3. Piliin ang **taong** gumagawa ng pangako.
-4. Magpasok ng pangako na **halaga**.
-5. Opsyonal na itakda ang **petsa** para sa commitment ng pangako.
-6. Mag-click **Save**.
+2. I-click ang **Add Pledge**.
+3. Piliin ang **person** na gumagawa ng pledge.
+4. Ipasok ang pledge **amount**.
+5. Opsyonal na itakda ang **date** para sa pledge commitment.
+6. I-click ang **Save**.
 
-Ang mga pangako ay lumalabas sa detalye ng kampanya at nag-aambag sa **Pledged** na kabuuan sa kampanya card.
+Ang pledge ay lumalabas sa campaign detail at nag-aambag sa **Pledged** total sa campaign card.
 
 :::tip
-Ang mga pangako ay hiwalay mula sa aktwal na mga donasyon. Ang isang pangako ay sumusubaybay sa isang commitment; ang isang donasyon ay nagrehistro ng aktwal na regalo. Pareho ay ipinapakita sa kampanya upang makita kung paano nauubos ang mga pangako.
+Ang pledge ay hiwalay mula sa aktwal na donation. Ang pledge ay nag-track ng commitment; ang donation ay nag-record ng aktwal na regalo. Parehong ay ipinakita sa kampanya upang makita mo kung gaano kahusay ang fulfillment ng pledge.
 :::
 
-## Pag-edit o Pag-delete ng isang Kampanya
+## Pag-edit o Pagtanggal ng Campaign
 
-Mag-click sa edit icon sa anumang kampanya card upang i-update ang pangalan, layunin, petsa, o fund nito. Mag-click **Delete** upang permanenteng alisin ang kampanya at ang mga pangako nito. Ang pag-delete ng kampanya ay hindi nag-delete ng anumang mga donasyon na nakatala sa nito na fund.
+I-click ang edit icon sa anumang campaign card upang i-update ang pangalan, layunin, petsa, o pondo. I-click ang **Delete** upang permanenteng alisin ang kampanya at ang pledge nito. Ang pagtanggal ng kampanya ay hindi nag-delete ng anumang donation na naitala sa pondo nito.
 
 ## Mga Kaugnay na Artikulo
 
-- [Pag-record ng mga Donasyon](recording-donations) -- itala ang mga aktwal na regalo na nagsasagawa ng mga pangako
-- [Mga Fund](funds) -- i-set up ang fund upang iugnay sa isang kampanya
-- [Mga Ulat ng Donasyon](donation-reports) -- pag-uulat sa mga donasyon ayon sa fund
+- [Recording Donation](recording-donations) — mag-record ng aktwal na regalo na tumutugon sa pledge
+- [Funds](funds) — i-set up ang pondo upang i-associate sa kampanya
+- [Donation Reports](donation-reports) — pag-report sa donation ng pondo

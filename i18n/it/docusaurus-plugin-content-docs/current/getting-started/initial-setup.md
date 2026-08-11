@@ -1,69 +1,70 @@
 ---
-title: "Configurazione iniziale"
+title: "Configurazione Iniziale"
 ---
 
-# Configurazione iniziale
+# Configurazione Iniziale
 
 <div class="article-intro">
 
-Dopo aver creato il vostro account e la vostra chiesa, ci sono alcuni passaggi importanti da configurare prima di invitare il vostro team. Questa guida vi accompagna nell'ordine di configurazione consigliato affinché la vostra chiesa sia pronta dal primo giorno.
+Dopo aver creato il tuo account e la tua chiesa, ci sono alcuni passaggi importanti da configurare prima di invitare il tuo team. Questa guida ti guida attraverso l'ordine di configurazione consigliato in modo che la tua chiesa sia pronta da giorno uno.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di iniziare</h4>
+<h4>Prima di Iniziare</h4>
 
-- [Create il vostro account](./create-account.md) e registrate la vostra chiesa
-- Tenete pronti il logo e le risorse di branding della vostra chiesa (opzionale ma consigliato)
+- [Crea il tuo account](./create-account.md) e registra la tua chiesa
+- Tieni pronti il tuo logo della chiesa e i tuoi asset di branding (facoltativo ma consigliato)
 
 </div>
 
-## Passo 1: Configurare le informazioni della vostra chiesa
+## Passo 1: Configura le Informazioni della Tua Chiesa
 
-1. Navigate su **Impostazioni** nella barra laterale sinistra.
-2. Cliccate su **Modifica impostazioni**.
-3. Inserite il **nome**, l'**indirizzo** e i **dettagli di contatto** della vostra chiesa.
-4. Cliccate su **Salva** per applicare le modifiche.
+1. Apri il **menu sezione** nell'angolo in alto a sinistra (il nome della sezione con la piccola freccia) e scegli **Impostazioni**.
+2. Fai clic su **Modifica Impostazioni**.
+3. Inserisci il **nome** della tua chiesa, **indirizzo** e **dettagli di contatto**.
+4. Fai clic su **Salva** per applicare le modifiche.
 
-## Passo 2: Configurare il vostro branding
+## Passo 2: Configura il Tuo Branding
 
-1. Dalla pagina **Impostazioni**, caricate il **logo della vostra chiesa**.
-2. Configurate eventuali opzioni di branding aggiuntive come colori e immagini.
-3. Il vostro branding apparirà sul vostro sito web B1.church e nell'app B1 Mobile.
+1. Dal **Dashboard**, passa a **Sito Web**, quindi seleziona **Aspetto**.
+2. Carica il **logo della tua chiesa**.
+3. Configura eventuali opzioni di branding aggiuntive come colori e immagini.
+4. Il tuo branding apparirà sul tuo sito web B1.church e nell'app B1 Mobile.
 
 :::tip
-Avere il logo e il branding pronti prima di invitare i membri del team dà un'ottima prima impressione quando effettuano l'accesso.
+Avere il tuo logo e il branding pronti prima di invitare i membri del team dà una prima impressione raffinata quando accedono.
 :::
 
-## Passo 3: Configurare i ruoli e invitare il vostro team
+## Passo 3: Configura Ruoli e Invita il Tuo Team
 
-1. Cliccate su **Ruoli** dalla pagina **Impostazioni**.
-2. Create ruoli per il vostro team (ad esempio, "Pastore", "Segretario", "Tesoriere").
-3. Assegnate i permessi appropriati a ciascun ruolo.
-4. Aggiungete i membri del team cercando i loro account e assegnandoli ai ruoli.
+1. Fai clic su **Ruoli** dalla pagina **Impostazioni**.
+2. Crea ruoli per il tuo team (ad esempio, "Pastore", "Segretario", "Tesoriere").
+3. Assegna le autorizzazioni appropriate a ogni ruolo.
+4. Aggiungi i membri del team cercando i loro account e assegnandoli ai ruoli.
 
-## Passo 4: Configurare le aree principali
+## Passo 4: Configura le Tue Aree Chiave
 
-Con il vostro team pronto, iniziate a costruire le aree principali di B1 Admin:
+Con il tuo team in atto, inizia a costruire le aree core di B1 Admin:
 
-1. **Persone** -- Aggiungete i membri alla directory della vostra chiesa. Questa è la base per tutto il resto, quindi iniziate da qui. Potete aggiungere persone manualmente o utilizzare lo strumento **Importa** dalle **Impostazioni**.
-2. **Gruppi** -- Create gruppi per piccoli gruppi, team di ministero, classi e altri incontri.
-3. **Presenze** -- Configurate le vostre sedi, servizi e orari dei servizi per il monitoraggio delle presenze.
-4. **Donazioni** -- Configurate i fondi per le donazioni e collegate il vostro gateway di pagamento (Stripe) per accettare offerte online.
-5. **Sito web** -- Costruite il sito web pubblico della vostra chiesa utilizzando il costruttore di siti web B1.church.
+1. **Persone** -- Aggiungi i membri alla directory della tua chiesa. Questo è il fondamento per tutto il resto, quindi inizia da qui. Puoi aggiungere persone manualmente o usare lo strumento **Importa** dalle **Impostazioni**.
+2. **Gruppi** -- Crea gruppi per piccoli gruppi, team del ministero, classi e altri raduni.
+3. **Frequenza** -- Configura i tuoi campus, servizi e orari di servizio per il tracciamento della frequenza.
+4. **Donazioni** -- Configura i fondi di donazione e connetti il tuo gateway di pagamento (Stripe) per accettare le donazioni online.
+5. **Sito Web** -- Costruisci il tuo sito web pubblico della chiesa usando il generatore di siti web B1.church.
 
 :::info
-Non è necessario configurare ogni area in una volta sola. Molte chiese iniziano con **Persone** e **Gruppi**, poi aggiungono **Presenze** e **Donazioni** man mano che acquisiscono familiarità con la piattaforma.
+Non devi configurare ogni area contemporaneamente. Molte chiese iniziano con **Persone** e **Gruppi**, quindi aggiungono **Frequenza** e **Donazioni** man mano che si familiarizzano con la piattaforma.
 :::
 
-## Ordine consigliato
+## Ordine Consigliato
 
-Per un'esperienza di configurazione ottimale, suggeriamo questo ordine:
+Per l'esperienza di configurazione più fluida, suggeriamo questo ordine:
 
-1. **Persone** -- Aggiungete prima i vostri membri e i frequentatori abituali.
-2. **Gruppi** -- Organizzate le persone in gruppi significativi.
-3. **Presenze** -- Iniziate a monitorare chi partecipa ogni settimana.
-4. **Donazioni** -- Configurate le offerte una volta che le persone sono nel sistema.
-5. **Sito web** -- Costruite il vostro sito pubblico per ultimo, dopo che i dati sono a posto.
+1. **Persone** -- Aggiungi per primi i tuoi membri e i frequentatori regolari.
+2. **Gruppi** -- Organizza le persone in gruppi significativi.
+3. **Frequenza** -- Inizia a tracciare chi si presenta ogni settimana.
+4. **Donazioni** -- Configura le donazioni una volta che le persone sono nel sistema.
+5. **Sito Web** -- Costruisci il tuo sito rivolto al pubblico ultimo, dopo che i tuoi dati sono in atto.
 
-Una volta completati questi passaggi, la vostra chiesa è pronta. Esplorate la documentazione di [B1 Admin](/docs/b1-admin/) per guide dettagliate su ciascuna area.
+Una volta completati questi passaggi, la tua chiesa è pronta per andare. Esplora la documentazione [B1 Admin](/docs/b1-admin/) per guide dettagliate su ogni area.

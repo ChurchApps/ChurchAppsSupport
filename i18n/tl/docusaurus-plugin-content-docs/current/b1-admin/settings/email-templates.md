@@ -1,56 +1,56 @@
 ---
-title: "Email Templates"
+title: "Mga Template ng Email"
 ---
 
-# Email Templates
+# Mga Template ng Email
 
 <div class="article-intro">
 
-Ang Email Templates ay nagbibigay-daan sa iyong i-save ang mga magagamit-muling email content -- isang mensahe ng pagsalubong, paalala sa event, pasasalamat sa donasyon -- para ikaw (o ang isang [workflow](../serving/workflows.md)) ay makapagpadala nito sa isang click sa halip na isulat ito mula sa umpisa tuwing kakailanganin.
+Ang Mga Template ng Email ay nagbibigay-daan sa iyo na magsave ng mabagong nilalaman ng email -- isang welcome message, isang reminder ng event, isang giving thank-you -- upang ikaw (o isang [workflow](../serving/workflows.md)) ay maaaring magpadala nito sa isang click sa halip na isulat ito mula sa simula bawat pagkakataon.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Kailangan mo ng access sa lugar ng Settings sa B1 Admin.
+- Kailangan mo ng access sa lugar ng Mga Ayos sa B1 Admin.
 
 </div>
 
-## Pag-access sa Email Templates
+## Pag-access sa Mga Template ng Email
 
-1. Pumunta sa **Settings** sa kaliwang sidebar.
-2. I-click ang **Email Templates**.
-3. Makikita mo ang isang listahan ng mga umiiral nang template kasama ang kanilang subject, kategorya, at petsa ng huling pagbabago.
+1. Sa B1 Admin, buksan ang **menu ng seksyon** sa sulok sa itaas-kaliwa (ang pangalan ng seksyon na may maliit na arrow) at pumili ng **Mga Ayos**.
+2. I-click ang **Mga Template ng Email**.
+3. Makikita mo ang isang listahan ng mga umiiral na template na may kanilang subject, kategorya, at huling binago na petsa.
 
-## Paggawa ng Template
+## Paglikha ng Isang Template
 
-1. I-click ang **New Template**.
-2. Ilagay ang isang **Template Name** para makilala ito sa listahan, at pumili ng isang **Category** (General, Events, Groups, Giving, o Welcome) para tumulong sa pag-aayos ng iyong mga template.
-3. Ilagay ang linya ng **Subject**.
-4. Isulat ang **Body** gamit ang rich text editor.
-5. I-click ang **Save**.
+1. I-click ang **Bagong Template**.
+2. Ipasok ang **Pangalan ng Template** upang tukuyin ito sa listahan, at pumili ng **Kategorya** (Pangkalahatan, Mga Event, Mga Grupo, Nagbibigay, o Pagbubukas) upang tumulong na ayusin ang iyong mga template.
+3. Ipasok ang linya ng **Pakikipag-ugnayan**.
+4. Isulat ang **Katawan** gamit ang rich text editor.
+5. I-click ang **Magsave**.
 
-## Merge Fields
+## Mga Merge Field
 
-I-click ang isang merge field chip sa itaas ng Subject o Body para i-insert ito sa iyong cursor. Kapag naipadala na ang email, papalitan ang bawat merge field ng aktwal na impormasyon ng tumatanggap:
+I-click ang isang merge field chip sa itaas ng Subject o Katawan upang ilagay ito sa iyong cursor. Kapag ipinadala ang email, bawat merge field ay pinalitan ng aktwal na impormasyon ng tumatanggap:
 
-- `{{firstName}}`, `{{lastName}}`, `{{displayName}}` -- Pangalan ng tumatanggap
-- `{{email}}` -- Email address ng tumatanggap
-- `{{churchName}}` -- Pangalan ng iyong simbahan
+- `{{firstName}}`, `{{lastName}}`, `{{displayName}}` -- Ang pangalan ng tumatanggap
+- `{{email}}` -- Ang email address ng tumatanggap
+- `{{churchName}}` -- Ang pangalan ng iyong simbahan
 
-## Pag-preview ng Template
+## Pag-preview ng Isang Template
 
-I-click ang **Preview** para makita kung ano ang magiging itsura ng subject at body kapag napunan ng sample data ang mga merge field, bago mo i-save o ipadala.
+I-click ang **Preview** upang makita kung paano ang subject at katawan ay magmumukhang may sample na data na puno para sa mga merge field, bago mo i-save o magpadala.
 
-## Paggamit ng Template
+## Paggamit ng Isang Template
 
-Available na piliin ang mga na-save na template kapag gumagawa ng email para sa mga tao o isang grupo, at bilang isang aksyon sa [Workflows](../serving/workflows.md).
+Ang mga nakaligtas na template ay available upang piliin mula sa paglikha ng isang email sa mga tao o isang grupo, at bilang isang aksyon sa [Mga Workflow](../serving/workflows.md).
 
-## Pag-edit at Pagbura
+## Pag-edit at Pagtanggal
 
-I-click ang icon na **Edit** sa tabi ng isang template para i-update ito, o ang icon na **Delete** para permanenteng alisin ito.
+I-click ang icon ng **Edit** sa tabi ng isang template upang i-update ito, o ang icon ng **Delete** upang permanenteng alisin ito.
 
-## Susunod na mga Hakbang
+## Mga Susunod na Hakbang
 
-- [Workflows](../serving/workflows.md) -- Awtomatikong i-trigger ang isang template email batay sa mga panuntunan
+- [Mga Workflow](../serving/workflows.md) -- I-trigger ang template email ng awtomatiko batay sa mga patakaran

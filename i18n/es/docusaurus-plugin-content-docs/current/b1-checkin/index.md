@@ -1,42 +1,43 @@
 ---
-title: "Descripcion general de B1 Church Checkin"
+title: "Descripción General de B1 Church Checkin"
 ---
 
-# Descripcion general de B1 Church Checkin
+# Descripción General de B1 Church Checkin
 
 <div class="article-intro">
 
-B1 Church Checkin es una aplicacion de quiosco de autoservicio para iPads y tabletas Android. Permite a los miembros de la iglesia buscar a su familia, asignar ninos a grupos o clases e imprimir etiquetas con nombres y comprobantes de recogida para padres, todo sin necesidad de un voluntario en el mostrador.
+B1 Church Checkin es una aplicación de quiosco de autoservicio para iPad y tabletas Android. Permite que los miembros de la iglesia busquen su familia, asignen niños a grupos o clases, e impriman etiquetas de nombre y recibos de recogida de padres -- todo sin necesidad de un voluntario en la oficina.
 
 </div>
 
-## Como funciona
+## Cómo Funciona
 
-Coloque un iPad o una tableta Android en el vestibulo o area de bienvenida. Los miembros se acercan, buscan su hogar por numero de telefono o apellido, revisan a su familia, eligen a que grupos debe asistir cada persona y tocan **Registrar**. La aplicacion imprime automaticamente etiquetas con nombres y comprobantes de recogida, y luego se reinicia para la siguiente familia.
+Coloca un iPad o tableta Android en tu vestíbulo o área de bienvenida. Los miembros llegan, buscan su hogar por número de teléfono o apellido, revisan su familia, eligen qué grupos debe asistir cada persona, y presionan **Registrarse**. La aplicación imprime etiquetas de nombre y recibos de recogida automáticamente, luego se reinicia para la siguiente familia.
 
-## Caracteristicas principales
+## Características Clave
 
-- **Busqueda de miembros en autoservicio** -- Busque por numero de telefono o apellido para encontrar su hogar rapidamente.
-- **Revision del hogar** -- Vea a todos los miembros de la familia con fotos y asignaciones de grupo actuales de un vistazo.
-- **Asignacion de grupos** -- Asigne a cada miembro de la familia a la clase o grupo correcto para el horario de servicio seleccionado.
-- **Registro de invitados** -- Agregue un invitado a su hogar en el momento con solo un nombre y apellido.
-- **Impresion de etiquetas** -- Imprima etiquetas con nombres para ninos y comprobantes de recogida para padres con codigos de seguridad unicos.
-- **Soporte para impresoras de red** -- Descubra y configure impresoras de red directamente desde la aplicacion.
-- **Inicio de sesion automatico** -- Despues del primer inicio de sesion, la aplicacion recuerda sus credenciales y va directamente a la pantalla de servicios en futuros inicios.
-- **Soporte para multiples iglesias** -- Si su cuenta esta vinculada a mas de una iglesia, puede elegir en cual registrarse.
-- **Imagen de marca de la iglesia** -- La aplicacion muestra el logotipo de su iglesia en el encabezado una vez que se selecciona una iglesia.
+- **Búsqueda de miembros de autoservicio** -- Busca por número de teléfono o apellido para encontrar tu hogar rápidamente.
+- **Revisión del hogar** -- Ve a todos los miembros de la familia con fotos y asignaciones de grupos actuales de un vistazo.
+- **Asignación de grupos** -- Asigna a cada miembro de la familia al grupo o clase correcto para la hora de servicio seleccionada.
+- **Registro de invitado** -- Agrega un invitado a tu hogar en el acto con un nombre y apellido.
+- **Registro de invitado QR** -- Muestra un código QR que los visitantes pueden escanear para [registrarse a sí mismos](../b1-church/checkin/guest-registration) en su propio teléfono antes de registrarse.
+- **Impresión de etiquetas** -- Imprime etiquetas de nombre para niños y recibos de recogida de padres con códigos de seguridad únicos.
+- **Soporte de impresoras de red** -- Descubre y configura impresoras de red directamente desde la aplicación.
+- **Inicio de sesión automático** -- Después del primer inicio de sesión, la aplicación recuerda tus credenciales e ir directamente a la pantalla de servicios en futuros lanzamientos.
+- **Soporte de múltiples iglesias** -- Si tu cuenta está vinculada a más de una iglesia, puedes elegir cuál registrar.
+- **Marca de iglesia** -- La aplicación muestra tu logo de iglesia en el encabezado una vez que se selecciona una iglesia.
 
-## Secciones de documentacion
+## Secciones de Documentación
 
-- **[Primeros pasos](./getting-started/)** -- Instalacion de la aplicacion, inicio de sesion y configuracion de la impresora.
-- **[Flujo de registro](./check-in/)** -- El flujo completo de registro desde la seleccion de un servicio hasta la impresion de etiquetas.
+- **[Primeros Pasos](./getting-started/)** -- Instalar la aplicación, iniciar sesión y configurar tu impresora.
+- **[Flujo de Registro de Asistencia](./check-in/)** -- El flujo completo de registro de asistencia desde seleccionar un servicio hasta imprimir etiquetas.
 
 :::tip
-B1 Church Checkin funciona mejor en una tableta de 10 pulgadas (iPad o Android) montada en orientacion horizontal donde las familias puedan alcanzarla facilmente. Obtenga la aplicacion en el [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin) o [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/).
+B1 Church Checkin funciona mejor en una tableta de 10 pulgadas (iPad o Android) montada en orientación horizontal donde las familias pueden acceder fácilmente. Obtén la aplicación de la [App Store de Apple](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin), o [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/).
 :::
 
 :::info
-Antes de usar B1 Church Checkin, el administrador de su iglesia necesita configurar los servicios, horarios de servicio y grupos en B1 Admin. Consulte la [guia de configuracion de asistencia](../b1-admin/attendance/setup.md) para mas detalles.
+Antes de usar B1 Church Checkin, el administrador de tu iglesia necesita configurar servicios, horarios de servicio y grupos en B1 Admin. Consulta la [guía de configuración de asistencia](../b1-admin/attendance/setup.md) para detalles.
 :::
 
-Para soporte, envie un correo electronico a [support@churchapps.org](mailto:support@churchapps.org).
+Para soporte, envía un correo electrónico a [support@churchapps.org](mailto:support@churchapps.org).

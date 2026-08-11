@@ -1,89 +1,89 @@
 ---
-title: "Merkelappdesigner for innsjekking"
+title: "Innsjekk-etikett designer"
 ---
 
-# Merkelappdesigner for innsjekking
+# Innsjekk-etikett designer
 
 <div class="article-intro">
 
-Merkelappdesigneren lar deg lage og tilpasse navnemerke- og henteslipmaler som skrives ut når familier sjekker inn barna sine. Du kan kontrollere nøyaktig hvilken informasjon som vises på hver merkelapp, hvor den er plassert, og hvordan den ser ut.
+Etikett-designeren lar deg opprette og tilpasse navneskilt- og hentemerkemaler som skrives ut når familier sjekker inn barna sine. Du kan kontrollere nøyaktig hva informasjon som vises på hver etikett, hvor den er plassert, og hvordan den ser ut.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Sett opp [Oppmøte](setup) og konfigurer minst én servicetid med innsjekking aktivert
-- Sett opp [Innsjekking](check-in) slik at merkelapper skrives ut
-- Du trenger administratortilgang til oppmøteseksjonen
+- Sett opp [Oppmøte](setup) og konfigurer minst ett gudstjenesteklokkeslett med innsjekking aktivert
+- Sett opp [Innsjekking](check-in) slik at etiketter skrives ut
+- Du trenger administrativ tilgang til oppmøte-seksjonen
 
 </div>
 
-## Åpning av merkelappdesigneren
+## Åpning av etikett-designeren
 
-I B1 Admin går du til **Oppmøte** i venstresidemeny og velger **Merkelapper**. Du vil se en liste over dine lagrede merkelappmal, delt inn etter type: **Navnemerke** og **Henteslip**.
+I B1 Admin, klikk **seksjonsmenyene** i det øvre venstre hjørnet (gjeldende seksjonsavn med den lille pilen ved siden av) og velg **Mobil**. I navigasjonslinjen velger du **B1 CheckIn**, deretter klikker du **Design Labels**-knappen på innsjekk-etikettkortet. Du vil se en liste over lagrede etikett-maler, atskilt etter type: **Navneskilt** og **Hentemerkeseddel**.
 
-## Merkelapptyper
+## Etikett-typer
 
-- **Navnemerke** — skrives ut og festes på barnet. Inneholder vanligvis barnets navn, klasseromet/økten deres og en sikkerhetskode.
-- **Henteslip** — gis til forelder eller foresatt. Inneholder vanligvis sikkerhetskoden og en liste over barna de sjekket inn.
+- **Navneskilt** — skrevet ut og festet til barnet. Inkluderer vanligvis barnets navn, klasserommet/økten, og en sikkerhetskode.
+- **Hentemerkeseddel** -- gitt til forelderen eller foresatte. Inkluderer vanligvis sikkerhetskoden og en liste over barna de sjekket inn.
 
-B1 starter deg med en standard navnemerkemal og en standard henteslipmal i størrelse for standard 3,5 × 1,1 tommer termiske merkelapper.
+B1 starter deg med en standard navneskilt- og en standard hentemerkeseddel-mal som er dimensjonert for standard 3,5 × 1,1 tommer termiske etiketter.
 
-## Opprette en merkelappmal
+## Opprett en etikett-mal
 
-1. Klikk **Legg til navnemerke** eller **Legg til henteslip** (eller bruk rullegardinmenyen for å velge).
-2. En ny mal åpnes i merkelappediteren.
+1. Klikk **Legg til navneskilt** eller **Legg til hentemerkeseddel** (eller bruk rullemenyen for å velge).
+2. En ny mal åpnes i etikett-editoren.
 
-### Merkelappeditor
+### Etikett-editor
 
-Redigereren viser en skalert forhåndsvisning av merkelappen i den konfigurerte størrelsen. I den venstre panelen kan du konfigurere:
+Editoren viser en skalert forhåndsvisning av etiketten ved den konfigurerte størrelsen. I det venstre panelet kan du konfigurere:
 
-- **Navn** — mallnavnet (bare for din henvisning)
-- **Merkelapptype** — Navnemerke eller Henteslip
-- **Bredde / Høyde** — merkelappstørrelse i tommer
+- **Navn** -- malens navn (kun for din referanse)
+- **Etikett-type** -- Navneskilt eller hentemerkeseddel
+- **Bredde / høyde** -- etikettstørrelse i tommer
 
 ### Legge til blokker
 
-En merkelapp er bygget fra blokker — individuelle innholdsdeler plassert på merkelapplerret. Klikk **Legg til blokk** for å sette inn en ny blokk og velg dens type:
+En etikett er bygget fra blokker -- individuelle deler av innhold som er plassert på etikett-lerretet. Klikk **Legg til blokk** for å sette inn en ny blokk og velg dens type:
 
-- **Felt** — trekker en datoverdi på utskriftstidspunktet:
-  - `person.displayName` — personens fulle navn
-  - `sessions` — servicen/klasserommet de sjekket inn til
-  - `securityCode` — den tilfeldig genererte sikkerhetskoden for henting
-  - `children` — liste over barn (for henteslip)
-  - `person.nametagNotes` — eventuelle spesielle merknader på personens register
-  - `campus` — campus-navn
-- **Tekst** — statisk tekst du skriver inn (for overskrifter, merkelapper eller instruksjoner)
-- **Strekkode** — en strekkode som koder sikkerhetskoden
+- **Felt** -- trekker en dataveralue ved utskriftstid:
+  - `person.displayName` -- personens fulle navn
+  - `sessions` -- gudstjenesten/klasserommet de sjekket inn til
+  - `securityCode` -- den tilfeldig genererte sikkerhetskoden
+  - `children` -- liste over barn (for hentemerkesedler)
+  - `person.nametagNotes` -- alle spesielle notater på personens registrering
+  - `campus` -- campusnavnet
+- **Tekst** -- statisk tekst du skriver inn (for overskrifter, etiketter eller instruksjoner)
+- **Strekkode** -- en strekkode som koder sikkerhetskoden
 
 ### Plassering av blokker
 
-Hver blokk har **X**, **Y**, **Bredde** og **Høyde**-felt uttrykt som prosenter av merkelapplerret (0–100). Juster disse for å plassere innholdet nøyaktig. Du kan også angi:
+Hver blokk har **X**, **Y**, **Bredde** og **Høyde**-felt uttrykt som prosenter av etikett-lerretet (0–100). Juster disse for å plassere innhold presist. Du kan også sette:
 
-- **Skriftstørrelse** — tekststørrelse i punkter
-- **Fett** — veksle fettskrift
-- **Justering** — venstre, senter eller høyre tekstjustering
-- **Betingelse** — skjul eventuelt blokken hvis et felt er tomt (for eksempel, vis bare nametagNotes hvis den har en verdi)
+- **Skriftstørrelse** -- tekststørrelse i poeng
+- **Fet** -- slå på fet tekst
+- **Justering** -- venstre, sentrum eller høyre tekstjustering
+- **Betingelse** -- skjul valgfritt blokken hvis et felt er tomt (for eksempel, vis kun nametagNotes hvis det har en verdi)
 
 ### Lagring
 
-Klikk **Lagre** for å lagre malen. Den oppdaterte malen vil bli brukt neste gang merkelapper skrives ut i B1 Checkin.
+Klikk **Lagre** for å lagre malen. Den oppdaterte malen vil bli brukt neste gang etiketter skrives ut i B1 Checkin.
 
-## Omrangering av maler
+## Ombestilling av maler
 
-Hvis du har flere navnemerke- eller henteslipsmaler, vil B1 Checkin som standard bruke den første malen i listen. Dra maler for å omrangere dem.
+Hvis du har flere navneskilt- eller hentemerkeseddel-maler, vil B1 Checkin bruke den første malen i listen som standard. Dra maler for å ombestille dem.
 
 ## Sletting av en mal
 
-Klikk sletteikonet på en hvilken som helst malrad og bekreft. Sletting av den siste malen av en type gjenoppretter den innebygde standardmalen.
+Klikk slettikonet på en hvilken som helst mallinje og bekreft. Sletting av siste mal av en type gjenoppretter den innebygde standardmalen.
 
 :::tip
-Lag en testutskrift etter redigering av en mal for å bekrefte at oppsettet ser riktig ut før neste service.
+Lag en testutskrift etter redigering av en mal for å bekrefte at oppsettet ser riktig ut før neste gudstjeneste.
 :::
 
 ## Relaterte artikler
 
-- [Innsjekking Setup](setup) — konfigurer services og grupper for innsjekking
-- [Gjennomføring av innsjekking](check-in) — innsjekking flyt for familier
-- [B1 Checkin Kom i gang](../../b1-checkin/getting-started/) — Checkin kioskapp
+- [Innsjekking Setup](setup) -- konfigurere gudstjenester og grupper for innsjekking
+- [Fullføring av innsjekking](check-in) -- innsjekkingsflyten for familier
+- [B1 Checkin Komme i gang](../../b1-checkin/getting-started/) -- Checkin kioskappen

@@ -6,48 +6,48 @@ title: "Salud de Grupos"
 
 <div class="article-intro">
 
-El panel de Salud de Grupos te ofrece una visión general de cómo están yendo todos tus grupos — tendencias de membresía, promedios de asistencia y crecimiento o desgaste durante los últimos 90 días — todo en una sola tabla ordenable.
+El panel de Salud de Grupos te da una vista panorámica de cómo están yendo todos tus grupos — tendencias de membresía, promedios de asistencia y crecimiento o desgaste durante los últimos 90 días — todo en una tabla ordenable.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- Necesitas al menos algunos grupos con miembros para ver datos significativos. Ver [Creando Grupos](creating-groups).
-- Los datos de asistencia se extraen de las sesiones registradas. Consulta la sección [Asistencia](../attendance/).
+- Necesitas al menos algunos grupos con miembros para ver datos significativos. Ver [Crear Grupos](creating-groups).
+- Los datos de asistencia se extraen de sesiones registradas. Ver la sección [Asistencia](../attendance/).
 
 </div>
 
-## Abriendo Salud de Grupos
+## Abrir Salud de Grupos
 
-En B1 Admin, ve a **Grupos** en la barra lateral izquierda y selecciona **Salud**. El panel carga una tabla con una fila por grupo.
+En B1 Admin, abre el **menú de sección** en la esquina superior izquierda y elige **Personas**, luego haz clic en la pestaña **Grupos** en la barra de navegación y selecciona **Salud**. El panel carga una tabla con una fila por grupo.
 
 ## Columnas
 
-| Columna | Lo que muestra |
-|---------|----------------|
-| **Nombre** | El nombre del grupo, vinculado a la página de detalles del grupo |
+| Columna | Qué muestra |
+|--------|--------------|
+| **Nombre** | El nombre del grupo, vinculado a la página de detalle del grupo |
 | **Categoría** | La categoría del grupo |
-| **Miembros** | Cantidad actual de miembros activos |
-| **Se unió (90d)** | Miembros que se unieron en los últimos 90 días |
-| **Se fue (90d)** | Miembros que se fueron en los últimos 90 días |
-| **Desgaste (90d)** | Tasa de desgaste neta como porcentaje durante 90 días |
-| **Promedio de Asistencia** | Asistencia promedio por sesión |
+| **Miembros** | Recuento actual de miembros activos |
+| **Se Unieron (90d)** | Miembros que se unieron en los últimos 90 días |
+| **Se Fueron (90d)** | Miembros que se fueron en los últimos 90 días |
+| **Desgaste (90d)** | Tasa de desgaste neto como porcentaje durante 90 días |
+| **Asistencia Promedio** | Asistencia promedio por sesión de asistencia |
 
-Haz clic en cualquier encabezado de columna para ordenar la tabla por esa columna. Haz clic nuevamente para invertir la dirección de ordenamiento.
+Haz clic en cualquier encabezado de columna para ordenar la tabla por esa columna. Haz clic nuevamente para invertir la dirección de clasificación.
 
-## Usando Datos de Salud
+## Usar Datos de Salud
 
-- **Alto desgaste + bajos ingresos** — un grupo que se está reduciendo y no reemplaza a los miembros perdidos. Vale la pena una conversación con el líder del grupo.
-- **Alto ingreso + baja asistencia** — las personas se están registrando pero no están asistiendo. Considera un seguimiento de participación.
-- **Alta asistencia promedio** — un grupo saludable y activo. Posible modelo para otros grupos.
+- **Desgaste alto + incorporaciones bajas** — un grupo que se está reduciendo y no está reemplazando a miembros perdidos. Vale la pena tener una conversación con el líder del grupo.
+- **Incorporaciones altas + asistencia baja** — la gente se está registrando pero no se muestra. Considera seguimiento de participación.
+- **Asistencia promedio alta** — un grupo saludable y activo. Modelo potencial para otros grupos.
 
 :::tip
-Hacer clic en el nombre de un grupo te lleva directamente a la página de detalles del grupo donde puedes revisar miembros individuales, registros de asistencia y eventos del calendario.
+Hacer clic en un nombre de grupo te lleva directamente a la página de detalle del grupo donde puedes revisar miembros individuales, registros de asistencia y eventos de calendario.
 :::
 
 ## Artículos Relacionados
 
-- [Creando Grupos](creating-groups) — configura grupos
-- [Miembros del Grupo](group-members) — gestiona la membresía del grupo
-- [Rastreando Asistencia](../attendance/tracking-attendance) — registra sesiones de asistencia que alimentan este panel
+- [Crear Grupos](creating-groups) — configura grupos
+- [Miembros del Grupo](group-members) — administra membresía del grupo
+- [Rastrear Asistencia](../attendance/tracking-attendance) — registra sesiones de asistencia que alimentan este panel

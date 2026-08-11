@@ -1,43 +1,43 @@
 ---
-title: "B1 Church Checkin"
+title: "Visão Geral de Check-In da B1 Church"
 ---
 
-# B1 Church Checkin
+# Visão Geral de Check-In da B1 Church
 
 <div class="article-intro">
 
-B1 Church Checkin é um aplicativo de quiosque de auto-atendimento para iPads e tablets Android. Ele deixa membros da iglesia procurar por sua família, designar crianças a grupos ou classes e imprimir etiquetas de nome e slips de retirada de pais -- tudo sem precisar de um voluntário na mesa.
+B1 Church Checkin é um aplicativo de quiosque de autoatendimento para iPads e tablets Android. Ele permite que membros da igreja procurem sua família, atribuam crianças a grupos ou aulas e imprimam etiquetas de nome e comprovantes de retirada dos pais -- tudo sem precisar de um voluntário na recepção.
 
 </div>
 
 ## Como Funciona
 
-Coloque um iPad ou tablet Android em seu saguão ou área de boas-vindas. Membros chegam, procuram por sua família por número de telefone ou sobrenome, revisam sua família, escolhem quais grupos cada pessoa deve frequentar e tocam em **Check-in**. O app imprime etiquetas de nome e slips de retirada automaticamente, depois reinicia para a próxima família.
+Coloque um iPad ou tablet Android em seu hall de entrada ou área de boas-vindas. Os membros chegam, procuram sua família por número de telefone ou sobrenome, revisam sua família, escolhem quais grupos cada pessoa deve assistir e tocam em **Check-in**. O aplicativo imprime automaticamente etiquetas de nome e comprovantes de retirada, depois reseta para a próxima família.
 
-## Características-Chave
+## Principais Características
 
-- **Pesquisa de membro de auto-atendimento** -- Procure por número de telefone ou sobrenome para encontrar sua família rapidamente.
-- **Revisão de família** -- Veja todos os membros da família com fotos e atribuições de grupo atuais em um relance.
-- **Atribuição de grupo** -- Designe cada membro da família para a classe ou grupo certo para o horário de serviço selecionado.
-- **Check-in de hóspede** -- Adicione um hóspede à sua família no ato com um primeiro e último nome.
-- **Registro de hóspede por código QR** -- Exiba um código QR que visitantes podem escanear para [se registrarem](../b1-church/checkin/guest-registration) em seu próprio telefone antes de fazer check-in.
-- **Impressão de etiqueta** -- Imprima etiquetas de nome para crianças e slips de retirada de pais com códigos de segurança únicos.
-- **Suporte de impressora de rede** -- Descubra e configure impressoras de rede diretamente do app.
-- **Auto-login** -- Após o primeiro login, o app lembra de suas credenciais e vai direto à tela de serviços em lançamentos futuros.
-- **Suporte multi-iglesia** -- Se sua conta é vinculada a mais de uma iglesia, você pode escolher qual para fazer check-in.
-- **Marca de iglesia** -- O app exibe seu logo de iglesia no cabeçalho uma vez que uma iglesia está selecionada.
+- **Busca de membro de autoatendimento** -- Procure por número de telefone ou sobrenome para encontrar sua família rapidamente.
+- **Revisão da família** -- Veja todos os membros da família com fotos e atribuições de grupo atual de uma só olhada.
+- **Atribuição de grupo** -- Atribua cada membro da família à classe ou grupo certo para o horário de serviço selecionado.
+- **Check-in de convidado** -- Adicione um convidado à sua família na hora com um primeiro e último nome.
+- **Registro de convidado por QR** -- Exiba um código QR que os visitantes podem escanear para se [registrar](../b1-church/checkin/guest-registration) em seu próprio telefone antes do check-in.
+- **Impressão de etiqueta** -- Imprima etiquetas de nome para crianças e comprovantes de retirada dos pais com códigos de segurança exclusivos.
+- **Suporte a impressora de rede** -- Descubra e configure impressoras de rede diretamente no aplicativo.
+- **Conectar Automaticamente** -- Após o primeiro login, o aplicativo se lembra de suas credenciais e vai direto para a tela de serviços nos próximos lançamentos.
+- **Suporte a várias igrejas** -- Se sua conta está vinculada a mais de uma igreja, você pode escolher qual fazer o check-in.
+- **Marca de Igreja** -- O aplicativo exibe seu logotipo de igreja no cabeçalho após uma igreja ser selecionada.
 
 ## Seções de Documentação
 
-- **[Getting Started](./getting-started/)** -- Instalando o app, entrando e configurando sua impressora.
-- **[Check-In Workflow](./check-in/)** -- O fluxo de check-in completo de selecionando um serviço à impressão de etiquetas.
+- **[Começando](./getting-started/)** -- Instalando o aplicativo, fazendo login e configurando sua impressora.
+- **[Fluxo de Check-In](./check-in/)** -- O fluxo completo de check-in desde selecionar um serviço até imprimir etiquetas.
 
 :::tip
-B1 Church Checkin funciona melhor em um tablet de 10 polegadas (iPad ou Android) montado em orientação paisagem onde famílias podem facilmente alcançá-lo. Obtenha o app na [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin) ou [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/).
+B1 Church Checkin funciona melhor em um tablet de 10 polegadas (iPad ou Android) montado em orientação paisagem onde as famílias podem alcançá-lo facilmente. Obtenha o aplicativo na [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin) ou [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/).
 :::
 
 :::info
-Antes de usar B1 Church Checkin, o administrador de sua iglesia precisa configurar serviços, horários de serviço e grupos no B1 Admin. Veja o [guia de configuração de presença](../b1-admin/attendance/setup.md) para detalhes.
+Antes de usar B1 Church Checkin, seu administrador de igreja precisa configurar serviços, horários de serviço e grupos em B1 Admin. Consulte o [guia de configuração de participação](../b1-admin/attendance/setup.md) para detalhes.
 :::
 
-Para suporte, envie email para [support@churchapps.org](mailto:support@churchapps.org).
+Para suporte, envie um email para [support@churchapps.org](mailto:support@churchapps.org).
