@@ -18,8 +18,8 @@ For most churches, buy the **Amazon Fire TV Stick 4K Max**. It has 16 GB of stor
 
 | Device | Why | Where to buy |
 |---|---|---|
-| **Fire TV Stick 4K Max** — *best choice* | 16 GB storage for offline lesson downloads, fastest stick, Wi-Fi 6E, runs Fire OS | [Amazon](https://www.amazon.com/all-new-amazon-fire-tv-stick-4k-max/dp/B0BP9SNVH9) |
-| **Fire TV Stick 4K Plus** | Solid mid-range pick, runs Fire OS | [Amazon](https://www.amazon.com/Amazon-newest-AI-powered-Search-million/dp/B0F7Z4QZTT) |
+| **Fire TV Stick 4K Max** — *best choice* | 16 GB storage for offline lesson downloads, fastest stick, Wi-Fi 6E, runs Fire OS | [Amazon](https://www.amazon.com/dp/B0BP9SNVH9?tag=signpresenter-20) |
+| **Fire TV Stick 4K Plus** | Solid mid-range pick, runs Fire OS | [Amazon](https://www.amazon.com/dp/B0F7Z4QZTT?tag=signpresenter-20) |
 | **Onn 4K Pro** (Walmart) | Budget Google TV box with 32 GB storage — great capacity for offline lessons | [Walmart](https://www.walmart.com/ip/4K-PRO-STREAMING/18382213962) |
 | **Onn 4K Streaming Device** (Walmart) | Cheapest reliable option; runs the Android TV version of FreePlay well | [Walmart](https://www.walmart.com/ip/ONN-4K-STREAMING/18355665352) |
 | **Apple TV 4K** | Premium option; great if your church is already Apple-based | [Apple](https://www.apple.com/apple-tv-4k/) |
