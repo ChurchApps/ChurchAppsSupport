@@ -16,12 +16,15 @@ For most churches, buy the **Amazon Fire TV Stick 4K Max**. It has 16 GB of stor
 
 ## Recommended Devices
 
-| Device | Why |
-|---|---|
-| **Fire TV Stick 4K Max** — *best choice* | 16 GB storage for offline lesson downloads, fastest stick, Wi-Fi 6E, runs Fire OS |
-| **Fire TV Stick 4K Plus** | Solid mid-range pick, runs Fire OS |
-| **Onn 4K Streaming Device** (Walmart) | Budget-friendly Google TV device; runs the Android TV version of FreePlay well |
-| **Apple TV 4K** | Premium option; great if your church is already Apple-based |
+| Device | Why | Where to buy |
+|---|---|---|
+| **Fire TV Stick 4K Max** — *best choice* | 16 GB storage for offline lesson downloads, fastest stick, Wi-Fi 6E, runs Fire OS | [Amazon](https://www.amazon.com/all-new-amazon-fire-tv-stick-4k-max/dp/B0BP9SNVH9) |
+| **Fire TV Stick 4K Plus** | Solid mid-range pick, runs Fire OS | [Amazon](https://www.amazon.com/Amazon-newest-AI-powered-Search-million/dp/B0F7Z4QZTT) |
+| **Onn 4K Pro** (Walmart) | Budget Google TV box with 32 GB storage — great capacity for offline lessons | [Walmart](https://www.walmart.com/ip/4K-PRO-STREAMING/18382213962) |
+| **Onn 4K Streaming Device** (Walmart) | Cheapest reliable option; runs the Android TV version of FreePlay well | [Walmart](https://www.walmart.com/ip/ONN-4K-STREAMING/18355665352) |
+| **Apple TV 4K** | Premium option; great if your church is already Apple-based | [Apple](https://www.apple.com/apple-tv-4k/) |
+
+Only buy from the links above (or the exact model names) — several current Fire TV models look nearly identical but cannot run FreePlay; see the warning below.
 
 Older Fire TV Sticks you already own (Fire TV Stick 4K, older HD/Lite models) also work — if the device runs Fire OS and can install apps from the Amazon Appstore, it can run FreePlay.
 
@@ -31,7 +34,7 @@ Older Fire TV Sticks you already own (Fire TV Stick 4K, older HD/Lite models) al
 - **Roku** — FreePlay is not available on Roku devices.
 
 :::warning Check the box before you buy
-Amazon sells Fire OS and Vega OS sticks side by side at similar prices. Before buying, confirm the model name: **4K Max** and **4K Plus** run Fire OS (FreePlay works); **HD (2026)** and **4K Select** run Vega OS (FreePlay does not).
+Amazon sells Fire OS and Vega OS sticks side by side at similar prices. Before buying, confirm the model name: **4K Max** and **4K Plus** run Fire OS (FreePlay works); **HD (2026)** and **4K Select** run Vega OS (FreePlay does not). Amazon has announced that future Fire TV Sticks will move to Vega OS, so if you're standardizing on Fire TV, the 4K Max and 4K Plus are the models to stock up on.
 :::
 
 ## Why Storage Matters
