@@ -20,6 +20,10 @@ Our **<a href="/guides/freeplay-b1admin" target="_blank">step-by-step guide</a>*
 
 ## Installing FreePlay
 
+:::tip Buying a device?
+Not all streaming sticks can run FreePlay — the newest budget Fire TV models can't. See **[Choosing a Device](./choosing-a-device.md)** for exactly what to buy.
+:::
+
 ### Android TV / Amazon Fire TV
 
 1. Open the app store on your TV (**Google Play Store** or **Amazon Appstore**)

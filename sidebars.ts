@@ -545,6 +545,7 @@ const sidebars: SidebarsConfig = {
           key: 'freeplay-getting-started',
           link: { type: 'doc', id: 'freeplay/getting-started/index' },
           items: [
+            'freeplay/getting-started/choosing-a-device',
             'freeplay/getting-started/pairing-modes',
           ],
         },
