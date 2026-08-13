@@ -20,19 +20,19 @@ The Birthday Report helps you stay connected with your congregation by showing m
 
 ## Running the Report
 
-1. Navigate to **Reports** from the main menu.
-2. Click the **Birthday Report** card.
-3. Set the **date range** using the date filters to define which birthdays you want to see.
-4. The report will display a list of members with birthdays in that range.
+1. Open the **section menu** in the top-left corner and choose **Reports** (or go to **/reports**).
+2. Click the **Birthdays** card.
+3. Choose the **Month** you want from the dropdown. You can optionally limit the results to a single **Group**.
+4. Click **Run Report**. The report lists everyone with a birthday in that month, with their birth date — ready to read straight into a bulletin or announcement list.
 
 ## What the Report Shows
 
 The Birthday Report displays:
 
-- **Member name** -- The person's name from your church database.
-- **Birth date** -- The date of their birthday.
+- **Birthday** -- The date of their birthday.
+- **Name** -- The person's name from your church database.
 
-Results are listed within the date range you selected, making it easy to see who has a birthday coming up.
+Results cover the month you selected, making it easy to see who has a birthday coming up.
 
 ## Practical Uses
 
