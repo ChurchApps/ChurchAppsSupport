@@ -35,7 +35,7 @@ Lessons.church isebenta kanye netinye tinsita ta-ChurchApps kute ikusite ukhipha
 
 - **B1.church** -- Emavolontiya nebatali bangafinyelela tifundzo letitako naletisandza kubakhona ngekusebentisa i-app ye-B1.
 - **FreeShow** -- Sebentisa insakatiselo yekwetfula ye-FreeShow kuveta lokucuketfwe kwesifundzo esikrinini.
-- **Venue TV App** -- Veta tifundzo ngco kuthelevishini ngekusebentisa insakatiselo ye-Android TV.
+- **[FreePlay](https://freeplay.church)** -- Veta tifundzo ngco kuthelevishini nge-FreePlay ye-Android TV, Fire TV ne-Apple TV.
 
 ## Tincenye Temibhalo
 

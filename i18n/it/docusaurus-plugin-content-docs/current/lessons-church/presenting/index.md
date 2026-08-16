@@ -12,7 +12,7 @@ Lessons.church fornisce strumenti per aiutare i tuoi volontari a insegnare ogni 
 
 ## Modalità presentazione
 
-Quando è il momento di insegnare, puoi avviare la **Modalità presentazione** direttamente da qualsiasi lezione. Questo ti offre una vista a schermo intero, ottimizzata per la proiezione, progettata per schermi e proiettori in classe. Si integra anche con il software di presentazione FreeShow e l'app Android Venue TV per visualizzazioni automatizzate.
+Quando è il momento di insegnare, puoi avviare la **Modalità presentazione** direttamente da qualsiasi lezione. Questo ti offre una vista a schermo intero, ottimizzata per la proiezione, progettata per schermi e proiettori in classe. Si integra anche con il software di presentazione FreeShow e [FreePlay](https://freeplay.church) per visualizzazioni automatizzate.
 
 ## Guide per i volontari
 

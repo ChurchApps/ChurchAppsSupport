@@ -12,7 +12,7 @@ Ang Lessons.church ay nagbibigay ng mga tool upang matulungan ang iyong mga bolu
 
 ## Presenter Mode
 
-Kapag oras na para magturo, maaari mong ilunsad ang **Presenter Mode** nang direkta mula sa anumang aralin. Nagbibigay ito sa iyo ng full-screen, projection-friendly na view na dinisenyo para sa mga screen at projector ng silid-aralan. Nag-i-integrate din ito sa FreeShow presentation software at sa Venue TV Android app para sa mga automated na display.
+Kapag oras na para magturo, maaari mong ilunsad ang **Presenter Mode** nang direkta mula sa anumang aralin. Nagbibigay ito sa iyo ng full-screen, projection-friendly na view na dinisenyo para sa mga screen at projector ng silid-aralan. Nag-i-integrate din ito sa FreeShow presentation software at sa [FreePlay](https://freeplay.church) para sa mga automated na display.
 
 ## Mga Gabay para sa Boluntaryo
 

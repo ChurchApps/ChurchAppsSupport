@@ -35,7 +35,7 @@ Lessons.church werkt samen met andere ChurchApps-tools om u te helpen inhoud af 
 
 - **B1.church** -- Vrijwilligers en ouders hebben toegang tot komende en recente lessen via de B1-app.
 - **FreeShow** -- Gebruik FreeShow-presentatiesoftware om lesseninhoud op het scherm weer te geven.
-- **Venue TV-app** -- Geef lessen rechtstreeks op een TV weer met behulp van de Android TV-app.
+- **[FreePlay](https://freeplay.church)** -- Geef lessen rechtstreeks op een TV weer met FreePlay voor Android TV, Fire TV en Apple TV.
 
 ## Documentatiesecties
 

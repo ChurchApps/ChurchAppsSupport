@@ -34,9 +34,9 @@ Der Präsentationsmodus verwendet einen sauberen, dunklen Hintergrund, damit die
 
 Lessons.church lässt sich mit [FreeShow](https://freeshow.app) integrieren, einer kostenlosen Präsentationsanwendung. FreeShow kann Lektionsinhalte direkt von Lessons.church abrufen, sodass Sie Lektionsfolien in Ihren bestehenden Präsentationsablauf einbinden können. Dies ist besonders nützlich, wenn Sie FreeShow bereits für Gottesdienstliedtexte oder Ankündigungen verwenden.
 
-## Verwendung mit der Venue TV App
+## Verwendung mit FreePlay
 
-Die **Venue TV** Android-App ermöglicht es Ihnen, Lektionen auf einem Fernseher ohne separaten Computer anzuzeigen. Installieren Sie die App auf einem Android TV-Gerät, verbinden Sie sie mit Ihrem Lessons.church-Klassenzimmer, und die geplante Lektion erscheint automatisch. Dies ist eine großartige freihändige Option für Klassenzimmer mit einem eigenen Bildschirm.
+**[FreePlay](https://freeplay.church)** ermöglicht es Ihnen, Lektionen auf einem Fernseher ohne separaten Computer anzuzeigen. Installieren Sie die App auf einem Android TV-, Fire TV- oder Apple TV-Gerät, verbinden Sie sie mit Ihrem Lessons.church-Klassenzimmer, und die geplante Lektion erscheint automatisch. Dies ist eine großartige freihändige Option für Klassenzimmer mit einem eigenen Bildschirm. Siehe die [FreePlay-Dokumentation](/docs/freeplay/) zur Einrichtung.
 
 :::tip
 Wenn Sie einen Projektor verwenden, stellen Sie sicher, dass Ihr Display auf Spiegeln oder Erweitern auf den Projektor eingestellt ist, bevor Sie den Präsentationsmodus starten. So wird sichergestellt, dass die Vollbildansicht auf dem richtigen Bildschirm erscheint.

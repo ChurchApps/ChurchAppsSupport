@@ -12,7 +12,7 @@ Lessons.church fournit des outils pour aider vos bénévoles à enseigner chaque
 
 ## Mode Présentation
 
-Lorsqu'il est temps d'enseigner, vous pouvez lancer le **Mode Présentation** directement depuis n'importe quelle leçon. Cela vous offre un affichage plein écran, optimisé pour la projection, conçu pour les écrans et vidéoprojecteurs de salle de classe. Il s'intègre également au logiciel de présentation FreeShow et à l'application Android Venue TV pour les affichages automatisés.
+Lorsqu'il est temps d'enseigner, vous pouvez lancer le **Mode Présentation** directement depuis n'importe quelle leçon. Cela vous offre un affichage plein écran, optimisé pour la projection, conçu pour les écrans et vidéoprojecteurs de salle de classe. Il s'intègre également au logiciel de présentation FreeShow et à [FreePlay](https://freeplay.church) pour les affichages automatisés.
 
 ## Guides pour les bénévoles
 

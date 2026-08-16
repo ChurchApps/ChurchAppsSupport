@@ -35,7 +35,7 @@ Lessons.church 与其他 ChurchApps 工具协同工作，帮助您传递内容�
 
 - **B1.church** -- 志愿者和家长可以通过 B1 应用访问即将到来和最近的课程。
 - **FreeShow** -- 使用 FreeShow 演示软件在屏幕上显示课程内容。
-- **Venue TV 应用** -- 使用 Android TV 应用直接在电视上显示课程。
+- **[FreePlay](https://freeplay.church)** -- 使用 FreePlay 应用（Android TV、Fire TV 和 Apple TV）直接在电视上显示课程。
 
 ## 文档章节
 

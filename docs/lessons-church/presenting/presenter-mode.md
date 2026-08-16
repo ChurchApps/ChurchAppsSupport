@@ -34,9 +34,9 @@ Presenter Mode uses a clean, dark background so the content stands out on a proj
 
 Lessons.church integrates with [FreeShow](https://freeshow.app), a free presentation application. FreeShow can pull lesson content directly from Lessons.church, allowing you to incorporate lesson slides into your existing presentation workflow. This is especially useful if you already use FreeShow for worship lyrics or announcements.
 
-## Using with Venue TV App
+## Using with FreePlay
 
-The **Venue TV** Android app lets you display lessons on a TV without a separate computer. Install the app on an Android TV device, connect it to your Lessons.church classroom, and the scheduled lesson will appear automatically. This is a great hands-free option for classrooms that have a dedicated screen.
+**[FreePlay](https://freeplay.church)** lets you display lessons on a TV without a separate computer. Install the app on an Android TV, Fire TV, or Apple TV device, connect it to your Lessons.church classroom, and the scheduled lesson will appear automatically. This is a great hands-free option for classrooms that have a dedicated screen. See the [FreePlay docs](/docs/freeplay/) for setup.
 
 :::tip
 If you are using a projector, make sure your display is set to mirror or extend to the projector before entering Presenter Mode. This ensures the full-screen view appears on the correct screen.

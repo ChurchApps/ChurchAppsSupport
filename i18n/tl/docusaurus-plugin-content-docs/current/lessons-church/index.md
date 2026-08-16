@@ -35,7 +35,7 @@ Ang Lessons.church ay gumagana sa ibang mga tool ng ChurchApps upang matulungan 
 
 - **B1.church** -- Ang mga boluntaryo at magulang ay maaaring mag-access ng mga paparating at kamakailang aralin sa pamamagitan ng B1 app.
 - **FreeShow** -- Gamitin ang FreeShow presentation software upang ipakita ang nilalaman ng aralin sa screen.
-- **Venue TV App** -- Ipakita ang mga aralin nang direkta sa isang TV gamit ang Android TV app.
+- **[FreePlay](https://freeplay.church)** -- Ipakita ang mga aralin nang direkta sa isang TV gamit ang FreePlay para sa Android TV, Fire TV, at Apple TV.
 
 ## Mga Seksyon ng Dokumentasyon
 

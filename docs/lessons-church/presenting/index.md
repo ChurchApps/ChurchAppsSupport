@@ -12,7 +12,7 @@ Lessons.church provides tools to help your volunteers confidently teach each les
 
 ## Presenter Mode
 
-When it is time to teach, you can launch **Presenter Mode** directly from any lesson. This gives you a full-screen, projection-friendly view designed for classroom screens and projectors. It also integrates with FreeShow presentation software and the Venue TV Android app for automated displays.
+When it is time to teach, you can launch **Presenter Mode** directly from any lesson. This gives you a full-screen, projection-friendly view designed for classroom screens and projectors. It also integrates with FreeShow presentation software and [FreePlay](https://freeplay.church) for automated displays.
 
 ## Volunteer Guides
 

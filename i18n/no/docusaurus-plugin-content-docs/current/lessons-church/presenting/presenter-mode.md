@@ -34,9 +34,9 @@ Presentasjonsmodus bruker en ren, mørk bakgrunn slik at innholdet fremheves på
 
 Lessons.church integreres med [FreeShow](https://freeshow.app), en gratis presentasjonsapplikasjon. FreeShow kan hente leksjonsinnhold direkte fra Lessons.church, slik at du kan inkorporere leksjonsbilder i den eksisterende presentasjonsarbeidsflyten din. Dette er spesielt nyttig hvis du allerede bruker FreeShow til sangtekster eller kunngjøringer.
 
-## Bruk med Venue TV-app
+## Bruk med FreePlay
 
-**Venue TV** Android-appen lar deg vise leksjoner på en TV uten en separat datamaskin. Installer appen på en Android TV-enhet, koble den til Lessons.church-klasserommet ditt, og den planlagte leksjonen vil vises automatisk. Dette er et flott håndfritt alternativ for klasserom som har en dedikert skjerm.
+**[FreePlay](https://freeplay.church)** lar deg vise leksjoner på en TV uten en separat datamaskin. Installer appen på en Android TV-, Fire TV- eller Apple TV-enhet, koble den til Lessons.church-klasserommet ditt, og den planlagte leksjonen vil vises automatisk. Dette er et flott håndfritt alternativ for klasserom som har en dedikert skjerm. Se [FreePlay-dokumentasjonen](/docs/freeplay/) for oppsett.
 
 :::tip
 Hvis du bruker en projektor, sørg for at skjermen din er satt til å speile eller utvide til projektoren før du går inn i Presentasjonsmodus. Dette sikrer at fullskjermsvisningen vises på riktig skjerm.

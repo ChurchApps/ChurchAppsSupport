@@ -34,9 +34,9 @@ El Modo de presentador utiliza un fondo oscuro y limpio para que el contenido de
 
 Lessons.church se integra con [FreeShow](https://freeshow.app), una aplicación de presentación gratuita. FreeShow puede obtener el contenido de las lecciones directamente de Lessons.church, permitiéndole incorporar diapositivas de lecciones en su flujo de trabajo de presentación existente. Esto es especialmente útil si ya utiliza FreeShow para letras de canciones de adoración o anuncios.
 
-## Uso con la aplicación Venue TV
+## Uso con FreePlay
 
-La aplicación de Android **Venue TV** le permite mostrar lecciones en un televisor sin una computadora adicional. Instale la aplicación en un dispositivo Android TV, conéctelo al aula de su Lessons.church, y la lección programada aparecerá automáticamente. Esta es una excelente opción sin intervención manual para aulas que tienen una pantalla dedicada.
+**[FreePlay](https://freeplay.church)** le permite mostrar lecciones en un televisor sin una computadora adicional. Instale la aplicación en un dispositivo Android TV, Fire TV o Apple TV, conéctelo al aula de su Lessons.church, y la lección programada aparecerá automáticamente. Esta es una excelente opción sin intervención manual para aulas que tienen una pantalla dedicada. Consulte la [documentación de FreePlay](/docs/freeplay/) para la configuración.
 
 :::tip
 Si está usando un proyector, asegúrese de que su pantalla esté configurada para duplicar o extender al proyector antes de entrar al Modo de presentador. Esto garantiza que la vista a pantalla completa aparezca en la pantalla correcta.

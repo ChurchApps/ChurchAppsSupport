@@ -34,9 +34,9 @@ Simo Sekwetfula sisebentisa umnyama lohlobile lohlanti kute lokucuketfwe kuvele 
 
 Lessons.church ihlanganiswe ne- [FreeShow](https://freeshow.app), insakatiselo yekwetfula lengakhokhelwa. FreeShow ingadonsa lokucuketfwe kwesifundzo ngco kusukela ku-Lessons.church, ikuvumela kufaka emaslayidi esifundzo emgudvini wakho lowakhona wekwetfula. Loku kusita kakhulu nangabe usewusebentisa i-FreeShow yemavi ekukhonta nobe tatiso.
 
-## Kusebentisa Ne-Venue TV App
+## Kusebentisa Ne-FreePlay
 
-Insakatiselo ye- **Venue TV** ye-Android ikuvumela kukhombisa tifundzo kuthelevishini ngaphandle kwekhompyutha lehlukile. Faka insakatiselo kudivayisi ye-Android TV, uyihlanganise nelikilasi lakho le-Lessons.church, sifundzo lesihleliwe sitawuvela ngokutentekela. Loku kuyintfo lenhle yekungasebentisi tandla kumakilasi lanesikrini lesikhethiwe.
+**[FreePlay](https://freeplay.church)** ikuvumela kukhombisa tifundzo kuthelevishini ngaphandle kwekhompyutha lehlukile. Faka insakatiselo kudivayisi ye-Android TV, Fire TV noma Apple TV, uyihlanganise nelikilasi lakho le-Lessons.church, sifundzo lesihleliwe sitawuvela ngokutentekela. Loku kuyintfo lenhle yekungasebentisi tandla kumakilasi lanesikrini lesikhethiwe. Bona [emadokhumenti e-FreePlay](/docs/freeplay/) ngekuhlela.
 
 :::tip
 Nangabe usebentisa iphrojekthi, cinisekisa kutsi sikrini sakho sisetiwe kutsi sikhombise nobe sengete kuphrojekthi ngaphambi kwekungena Ku-Simo Sekwetfula. Loku kucinisekisa kutsi kubuka kwesikrini lesigcwele kuvela esikrinini lesifanele.

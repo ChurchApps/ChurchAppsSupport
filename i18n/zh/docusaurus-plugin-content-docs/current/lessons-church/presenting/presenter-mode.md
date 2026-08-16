@@ -34,9 +34,9 @@ title: "演示模式"
 
 Lessons.church 与 [FreeShow](https://freeshow.app) 集成，这是一款免费的演示应用。FreeShow 可以直接从 Lessons.church 拉取课程内容，让您将课程幻灯片融入现有的演示工作流程。如果您已经使用 FreeShow 来显示敬拜歌词或公告，这尤其有用。
 
-## 与 Venue TV 应用配合使用
+## 与 FreePlay 配合使用
 
-**Venue TV** Android 应用让您无需单独的电脑即可在电视上显示课程。在 Android TV 设备上安装该应用，将其连接到您的 Lessons.church 教室，已安排的课程将自动出现。这是拥有专用屏幕的教室的绝佳免提方案。
+**[FreePlay](https://freeplay.church)** 让您无需单独的电脑即可在电视上显示课程。在 Android TV、Fire TV 或 Apple TV 设备上安装该应用，将其连接到您的 Lessons.church 教室，已安排的课程将自动出现。这是拥有专用屏幕的教室的绝佳免提方案。设置请参阅 [FreePlay 文档](/docs/freeplay/)。
 
 :::tip
 如果您使用投影仪，请确保在进入演示模式之前将显示设置为镜像或扩展到投影仪。这样可以确保全屏视图显示在正确的屏幕上。

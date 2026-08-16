@@ -12,7 +12,7 @@ Lessons.church tilbyr verktøy for å hjelpe de frivillige med å undervise hver
 
 ## Presentasjonsmodus
 
-Når det er tid for å undervise, kan du starte **Presentasjonsmodus** direkte fra hvilken som helst leksjon. Dette gir deg en fullskjerms, projeksjonsvennlig visning designet for klasseromsskjermer og projektorer. Den integreres også med FreeShow-presentasjonsprogramvare og Venue TV Android-appen for automatiserte visninger.
+Når det er tid for å undervise, kan du starte **Presentasjonsmodus** direkte fra hvilken som helst leksjon. Dette gir deg en fullskjerms, projeksjonsvennlig visning designet for klasseromsskjermer og projektorer. Den integreres også med FreeShow-presentasjonsprogramvare og [FreePlay](https://freeplay.church) for automatiserte visninger.
 
 ## Frivilligguider
 

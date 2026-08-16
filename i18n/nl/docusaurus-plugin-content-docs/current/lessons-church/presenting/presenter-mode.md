@@ -34,9 +34,9 @@ Presentator modus gebruikt een schone, donkere achtergrond zodat de inhoud opval
 
 Lessons.church integreert met [FreeShow](https://freeshow.app), een gratis presentatie-app. FreeShow kan lesinhoud rechtstreeks van Lessons.church ophalen, zodat je lesdia's in je bestaande presentatiewerkstroom kunt opnemen. Dit is vooral handig als je FreeShow al gebruikt voor aanbiddingsliederen of aankondigingen.
 
-## Venue TV App gebruiken
+## FreePlay gebruiken
 
-De **Venue TV** Android app laat je lessen op een TV weergeven zonder een aparte computer. Installeer de app op een Android TV apparaat, verbind het met je Lessons.church klaslokaal en de geplande les verschijnt automatisch. Dit is een geweldige handvrije optie voor klaslokalen die een speciaal scherm hebben.
+**[FreePlay](https://freeplay.church)** laat je lessen op een TV weergeven zonder een aparte computer. Installeer de app op een Android TV-, Fire TV- of Apple TV-apparaat, verbind het met je Lessons.church klaslokaal en de geplande les verschijnt automatisch. Dit is een geweldige handvrije optie voor klaslokalen die een speciaal scherm hebben. Zie de [FreePlay-documentatie](/docs/freeplay/) voor de installatie.
 
 :::tip
 Als je een projector gebruikt, zorg ervoor dat je scherm is ingesteld op spiegelen of uitbreiden naar de projector voordat je Presentator modus invoert. Dit zorgt ervoor dat de volledig scherm weergave op het juiste scherm verschijnt.

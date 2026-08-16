@@ -35,7 +35,7 @@ Lessons.church는 다른 ChurchApps 도구와 연동하여 콘텐츠를 전달�
 
 - **B1.church** -- 봉사자와 학부모가 B1 앱을 통해 예정된 공과와 최근 공과를 확인할 수 있습니다.
 - **FreeShow** -- FreeShow 프레젠테이션 소프트웨어를 사용하여 화면에 공과 내용을 표시할 수 있습니다.
-- **Venue TV 앱** -- Android TV 앱을 사용하여 TV에 직접 공과를 표시할 수 있습니다.
+- **[FreePlay](https://freeplay.church)** -- Android TV, Fire TV, Apple TV용 FreePlay 앱을 사용하여 TV에 직접 공과를 표시할 수 있습니다.
 
 ## 문서 섹션
 

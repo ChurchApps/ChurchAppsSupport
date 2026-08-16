@@ -12,7 +12,7 @@ Lessons.church bietet Werkzeuge, die Ihren Freiwilligen helfen, jede Lektion sel
 
 ## Präsentationsmodus
 
-Wenn es Zeit zum Unterrichten ist, können Sie den **Präsentationsmodus** direkt aus jeder Lektion starten. Dieser bietet Ihnen eine Vollbildansicht im projektionsfreundlichen Design, die für Klassenzimmerbildschirme und Projektoren konzipiert ist. Er lässt sich auch mit der Präsentationssoftware FreeShow und der Venue TV Android-App für automatisierte Anzeigen integrieren.
+Wenn es Zeit zum Unterrichten ist, können Sie den **Präsentationsmodus** direkt aus jeder Lektion starten. Dieser bietet Ihnen eine Vollbildansicht im projektionsfreundlichen Design, die für Klassenzimmerbildschirme und Projektoren konzipiert ist. Er lässt sich auch mit der Präsentationssoftware FreeShow und [FreePlay](https://freeplay.church) für automatisierte Anzeigen integrieren.
 
 ## Leitfäden für Freiwillige
 

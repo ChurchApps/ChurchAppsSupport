@@ -34,9 +34,9 @@ Ang Presenter Mode ay gumagamit ng malinis, madilim na background upang ang nila
 
 Ang Lessons.church ay nag-i-integrate sa [FreeShow](https://freeshow.app), isang libreng application para sa presentasyon. Ang FreeShow ay maaaring kumuha ng nilalaman ng aralin nang direkta mula sa Lessons.church, na nagbibigay-daan sa iyo na isama ang mga slide ng aralin sa iyong umiiral na daloy ng trabaho sa presentasyon. Ito ay partikular na kapaki-pakinabang kung ginagamit mo na ang FreeShow para sa mga lyrics ng pagsamba o anunsyo.
 
-## Paggamit sa Venue TV App
+## Paggamit sa FreePlay
 
-Ang **Venue TV** Android app ay nagbibigay-daan sa iyo na ipakita ang mga aralin sa isang TV nang walang hiwalay na computer. I-install ang app sa isang Android TV device, ikonekta ito sa iyong silid-aralan ng Lessons.church, at ang naka-iskedyul na aralin ay awtomatikong lalabas. Ito ay isang magandang hands-free na opsyon para sa mga silid-aralan na may dedicated na screen.
+**[FreePlay](https://freeplay.church)** ay nagbibigay-daan sa iyo na ipakita ang mga aralin sa isang TV nang walang hiwalay na computer. I-install ang app sa isang Android TV, Fire TV, o Apple TV device, ikonekta ito sa iyong silid-aralan ng Lessons.church, at ang naka-iskedyul na aralin ay awtomatikong lalabas. Ito ay isang magandang hands-free na opsyon para sa mga silid-aralan na may dedicated na screen. Tingnan ang [mga dokumento ng FreePlay](/docs/freeplay/) para sa setup.
 
 :::tip
 Kung gumagamit ka ng projector, siguraduhing ang iyong display ay nakatakda sa mirror o extend sa projector bago pumasok sa Presenter Mode. Tinitiyak nito na ang full-screen na view ay lalabas sa tamang screen.

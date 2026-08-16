@@ -34,9 +34,9 @@ Le mode présentation utilise un fond sombre et épuré pour que le contenu ress
 
 Lessons.church s'intègre avec [FreeShow](https://freeshow.app), une application de présentation gratuite. FreeShow peut récupérer le contenu des leçons directement depuis Lessons.church, vous permettant d'incorporer les diapositives des leçons dans votre flux de présentation existant. Cela est particulièrement utile si vous utilisez déjà FreeShow pour les paroles de louange ou les annonces.
 
-## Utilisation avec l'application Venue TV
+## Utilisation avec FreePlay
 
-L'application Android **Venue TV** vous permet d'afficher des leçons sur un téléviseur sans ordinateur séparé. Installez l'application sur un appareil Android TV, connectez-la à votre salle de classe Lessons.church, et la leçon planifiée apparaîtra automatiquement. C'est une excellente option sans intervention manuelle pour les salles de classe qui disposent d'un écran dédié.
+**[FreePlay](https://freeplay.church)** vous permet d'afficher des leçons sur un téléviseur sans ordinateur séparé. Installez l'application sur un appareil Android TV, Fire TV ou Apple TV, connectez-la à votre salle de classe Lessons.church, et la leçon planifiée apparaîtra automatiquement. C'est une excellente option sans intervention manuelle pour les salles de classe qui disposent d'un écran dédié. Consultez la [documentation FreePlay](/docs/freeplay/) pour la configuration.
 
 :::tip
 Si vous utilisez un projecteur, assurez-vous que votre affichage est configuré pour dupliquer ou étendre vers le projecteur avant d'entrer en mode présentation. Cela garantit que la vue plein écran apparaît sur le bon écran.
