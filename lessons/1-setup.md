@@ -21,14 +21,14 @@ title: Setup Lessons.church
     <h3 style="color: white; margin-top: 0; font-size: 20px; margin-bottom: 15px;">✨ What's New?</h3>
     <ul style="color: rgba(255,255,255,0.9); font-size: 16px; line-height: 1.8; margin: 0; padding-left: 25px;">
       <li><strong>Schedule lessons right in B1Admin</strong> - No more switching between apps!</li>
-      <li><strong>New TV Player Coming</strong> - Better than ever with improved performance</li>
+      <li><strong>FreePlay TV Player</strong> - Play scheduled lessons on Android TV, Fire TV, and Apple TV</li>
       <li><strong>Seamless Integration</strong> - Everything in one place</li>
     </ul>
   </div>
 
   <div style="background: rgba(255, 193, 7, 0.15); backdrop-filter: blur(10px); border-left: 4px solid #ffc107; padding: 15px 20px; border-radius: 6px; margin-bottom: 20px;">
     <p style="margin: 0; color: white; font-size: 16px;">
-      <strong>📅 Start Scheduling Now!</strong> You can begin scheduling your lessons in B1Admin today. The new TV player app will be available soon to present your scheduled lessons.
+      <strong>📅 Start Scheduling Now!</strong> You can begin scheduling your lessons in B1Admin today. Use <a href="https://freeplay.church">FreePlay</a> to present your scheduled lessons on classroom TVs.
     </p>
   </div>
 
@@ -49,7 +49,7 @@ title: Setup Lessons.church
       <li><a href="../videos/lessons/schedule-lesson/output.mp4" data-steps="schedule-steps">Schedule Lessons</a></li>
       <li><a href="../videos/lessons/customize-lessons/output.mp4" data-steps="customize-steps">Customize Lessons</a></li>
       <li><a href="../videos/lessons/connect-mobile/output.mp4" data-steps="mobile-steps">Connect Mobile App</a></li>
-      <li><a href="../videos/lessons/connect-tv/output.mp4" data-steps="tv-steps">Connect TV App</a></li>
+      <li><a href="../videos/lessons/connect-tv/output.mp4" data-steps="tv-steps">Connect FreePlay</a></li>
       <li><a href="../videos/lessons/connect_to_signpresenter/output.mp4" data-steps="signpresenter-steps">Connect to SignPresenter</a></li>
   </ul>
 </div>
@@ -236,9 +236,9 @@ title: Setup Lessons.church
 <div id="tv-steps" class="video-steps">
 <h3>Steps</h3>
 <div class="step-accordion">
-  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">1.</span><span class="step-text">Present lessons on any Android streaming device (Fire TV, Onn from Walmart, Android 10+)</span><span class="step-arrow">▼</span></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">1.</span><span class="step-text">Present lessons with FreePlay on Android TV, Fire TV, or Apple TV</span><span class="step-arrow">▼</span></div>
   <div class="step-content"><img src="../videos/lessons/connect-tv/1.png" onclick="showModal(this.src)"></div>
-  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">2.</span><span class="step-text">Hold the blue mic button and say "Download Lessons Dot Church App" or search manually</span><span class="step-arrow">▼</span></div>
+  <div class="step-header" onclick="toggleStep(this)"><span class="step-num">2.</span><span class="step-text">Hold the blue mic button and say "Download FreePlay" or search manually</span><span class="step-arrow">▼</span></div>
   <div class="step-content"><img src="../videos/lessons/connect-tv/2.png" onclick="showModal(this.src)"></div>
   <div class="step-header" onclick="toggleStep(this)"><span class="step-num">3.</span><span class="step-text">Open the app to see the Browse Programs screen with available curriculum</span><span class="step-arrow">▼</span></div>
   <div class="step-content"><img src="../videos/lessons/connect-tv/3.png" onclick="showModal(this.src)"></div>

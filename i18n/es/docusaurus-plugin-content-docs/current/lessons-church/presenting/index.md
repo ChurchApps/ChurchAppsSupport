@@ -12,7 +12,7 @@ Lessons.church proporciona herramientas para ayudar a sus voluntarios a enseñar
 
 ## Modo de presentador
 
-Cuando es hora de enseñar, puede iniciar el **Modo de presentador** directamente desde cualquier lección. Esto le ofrece una vista a pantalla completa, optimizada para proyección, diseñada para pantallas de aula y proyectores. También se integra con el software de presentación FreeShow y la aplicación de Android Venue TV para visualizaciones automatizadas.
+Cuando es hora de enseñar, puede iniciar el **Modo de presentador** directamente desde cualquier lección. Esto le ofrece una vista a pantalla completa, optimizada para proyección, diseñada para pantallas de aula y proyectores. También se integra con el software de presentación FreeShow y [FreePlay](https://freeplay.church) para visualizaciones automatizadas.
 
 ## Guías para voluntarios
 

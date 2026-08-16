@@ -12,7 +12,7 @@ Lessons.church giver værktøjer til at hjælpe dine frivillige med selvtillid t
 
 ## Presenter mode
 
-Når det er tid til at undervise, kan du starte **Presenter mode** direkte fra enhver lektion. Dette giver dig en fuldskærms, projektorvenlig visning designet til klassekameras og projektorer. Det integrerer også med FreeShow præsentations software og Venue TV Android-appen til automatiserede skærme.
+Når det er tid til at undervise, kan du starte **Presenter mode** direkte fra enhver lektion. Dette giver dig en fuldskærms, projektorvenlig visning designet til klassekameras og projektorer. Det integrerer også med FreeShow præsentations software og [FreePlay](https://freeplay.church) til automatiserede skærme.
 
 ## Frivillig-guides
 

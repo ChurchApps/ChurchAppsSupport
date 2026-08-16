@@ -12,7 +12,7 @@ Lessons.church inikeza tinsita letisita emavolontiya akho kufundzisa sifundzo ng
 
 ## Simo Sekwetfula
 
-Nasekufike sikhatsi sekufundzisa, ungacala **Simo Sekwetfula** ngco kusukela kunoma nguluphi sifundzo. Loku kukupha kubuka kwesikrini lesigcwele, lokwakhelwe kuveta esikrinini, lokwakhelwe emakrinini nemaphrojekthi welikilasi. Kuphindze kuhlanganiswe nensakatiselo yekwetfula ye-FreeShow kanye nensakatiselo ye-Venue TV ye-Android kute kwente ematfulo latitentelako.
+Nasekufike sikhatsi sekufundzisa, ungacala **Simo Sekwetfula** ngco kusukela kunoma nguluphi sifundzo. Loku kukupha kubuka kwesikrini lesigcwele, lokwakhelwe kuveta esikrinini, lokwakhelwe emakrinini nemaphrojekthi welikilasi. Kuphindze kuhlanganiswe nensakatiselo yekwetfula ye-FreeShow kanye ne-[FreePlay](https://freeplay.church) kute kwente ematfulo latitentelako.
 
 ## Imihlahlandlela Yemavolontiya
 

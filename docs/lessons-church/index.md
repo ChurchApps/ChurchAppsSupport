@@ -35,7 +35,7 @@ Lessons.church works with other ChurchApps tools to help you deliver content:
 
 - **B1.church** -- Volunteers and parents can access upcoming and recent lessons through the B1 app.
 - **FreeShow** -- Use FreeShow presentation software to display lesson content on screen.
-- **Venue TV App** -- Display lessons directly on a TV using the Android TV app.
+- **[FreePlay](https://freeplay.church)** -- Display lessons directly on a TV using the FreePlay app for Android TV, Fire TV, and Apple TV.
 
 ## Documentation Sections
 

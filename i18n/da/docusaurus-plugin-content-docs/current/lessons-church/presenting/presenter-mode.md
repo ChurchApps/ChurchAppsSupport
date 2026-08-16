@@ -34,9 +34,9 @@ Presenter mode bruger en ren, mørkebaggrund, så indholdet stikker ud på en pr
 
 Lessons.church integreres med [FreeShow](https://freeshow.app), en gratis præsentations-ansøgning. FreeShow kan trække lektionsindhold direkte fra Lessons.church, hvilket lader dig indlemme lektionsslider i dit eksisterende præsentations-workflow. Dette er især nyttigt, hvis du allerede bruger FreeShow til tilbedeise-tekster eller meddelelser.
 
-## Brug med Venue TV App
+## Brug med FreePlay
 
-**Venue TV** Android-appen lader dig vise lektioner på et tv uden en separat computer. Installler appen på en Android TV-enhed, forbind den til dit Lessons.church-klasseværelse, og den planlagte lektion vil vises automatisk. Dette er en fantastisk hænder-fri mulighed for klasseværelser, der har en dedikeret skærm.
+**[FreePlay](https://freeplay.church)** lader dig vise lektioner på et tv uden en separat computer. Installer appen på en Android TV-, Fire TV- eller Apple TV-enhed, forbind den til dit Lessons.church-klasseværelse, og den planlagte lektion vil vises automatisk. Dette er en fantastisk hænder-fri mulighed for klasseværelser, der har en dedikeret skærm. Se [FreePlay-dokumentationen](/docs/freeplay/) for opsætning.
 
 :::tip
 Hvis du bruger en projektor, sørg for, at dit display er indstillet til at spejle eller udvide til projektoren før du går ind i Presenter mode. Dette sikrer, at fuldskærm-visningen vises på den rigtige skærm.

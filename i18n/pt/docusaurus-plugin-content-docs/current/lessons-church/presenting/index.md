@@ -12,7 +12,7 @@ O Lessons.church fornece ferramentas para ajudar seus voluntários a ensinar cad
 
 ## Modo Apresentador
 
-Quando é hora de ensinar, você pode iniciar o **Modo Apresentador** diretamente de qualquer lição. Isso oferece uma visualização em tela cheia, otimizada para projeção, projetada para telas de sala de aula e projetores. Também se integra com o software de apresentação FreeShow e o aplicativo Venue TV para Android para exibições automatizadas.
+Quando é hora de ensinar, você pode iniciar o **Modo Apresentador** diretamente de qualquer lição. Isso oferece uma visualização em tela cheia, otimizada para projeção, projetada para telas de sala de aula e projetores. Também se integra com o software de apresentação FreeShow e [FreePlay](https://freeplay.church) para exibições automatizadas.
 
 ## Guias do Voluntário
 

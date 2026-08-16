@@ -34,9 +34,9 @@ title: "발표자 모드"
 
 Lessons.church는 무료 프레젠테이션 애플리케이션인 [FreeShow](https://freeshow.app)와 통합됩니다. FreeShow는 Lessons.church에서 직접 공과 콘텐츠를 가져올 수 있어 기존 프레젠테이션 워크플로우에 공과 슬라이드를 통합할 수 있습니다. 이미 찬양 가사나 공지 사항에 FreeShow를 사용하고 있다면 특히 유용합니다.
 
-## Venue TV 앱과 함께 사용하기
+## FreePlay와 함께 사용하기
 
-**Venue TV** Android 앱을 사용하면 별도의 컴퓨터 없이 TV에 공과를 표시할 수 있습니다. Android TV 기기에 앱을 설치하고 Lessons.church 교실에 연결하면, 배정된 공과가 자동으로 표시됩니다. 전용 화면이 있는 교실에 적합한 핸즈프리 옵션입니다.
+**[FreePlay](https://freeplay.church)**를 사용하면 별도의 컴퓨터 없이 TV에 공과를 표시할 수 있습니다. Android TV, Fire TV 또는 Apple TV 기기에 앱을 설치하고 Lessons.church 교실에 연결하면, 배정된 공과가 자동으로 표시됩니다. 전용 화면이 있는 교실에 적합한 핸즈프리 옵션입니다. 설정은 [FreePlay 문서](/docs/freeplay/)를 참조하세요.
 
 :::tip
 프로젝터를 사용하는 경우, 발표자 모드에 들어가기 전에 디스플레이가 프로젝터에 미러링 또는 확장되도록 설정되어 있는지 확인하십시오. 이렇게 하면 전체 화면 보기가 올바른 화면에 표시됩니다.

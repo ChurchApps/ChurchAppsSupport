@@ -12,7 +12,7 @@ Lessons.church biedt hulpprogramma's om je vrijwilligers vol vertrouwen elke les
 
 ## Presentator modus
 
-Wanneer het tijd is om les te geven, kun je **Presentator modus** rechtstreeks vanuit elke les activeren. Dit geeft je een volledig scherm, projectie-vriendelijke weergave ontworpen voor klasschermen en projectoren. Het integreert ook met FreeShow presentatie software en de Venue TV Android app voor geautomatiseerde schermen.
+Wanneer het tijd is om les te geven, kun je **Presentator modus** rechtstreeks vanuit elke les activeren. Dit geeft je een volledig scherm, projectie-vriendelijke weergave ontworpen voor klasschermen en projectoren. Het integreert ook met FreeShow presentatie software en [FreePlay](https://freeplay.church) voor geautomatiseerde schermen.
 
 ## Vrijwilligersgidsen
 
