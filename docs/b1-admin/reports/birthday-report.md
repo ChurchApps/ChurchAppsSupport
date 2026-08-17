@@ -20,7 +20,7 @@ The Birthday Report helps you stay connected with your congregation by showing m
 
 ## Running the Report
 
-1. Open the **section menu** in the top-left corner and choose **Reports** (or go to **/reports**).
+1. Go directly to **admin.b1.church/reports** in your browser (the Reports page is not yet listed in the navigation menu — bookmarking that address is the easiest way to get back to it).
 2. Click the **Birthdays** card.
 3. Choose the **Month** you want from the dropdown. You can optionally limit the results to a single **Group**.
 4. Click **Run Report**. The report lists everyone with a birthday in that month, with their birth date — ready to read straight into a bulletin or announcement list.
