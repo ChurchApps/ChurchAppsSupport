@@ -6,90 +6,81 @@ title: "Mailchimp"
 
 <div class="article-intro">
 
-Før nye B1-personer, givere eller gruppemedlemmer inn i en Mailchimp-målgruppe, slik at neste velkomstserie, årsslutt-appell eller frivillig-nyhetsbrev henter fra en liste som alltid er oppdatert. B1 har ingen innebygd Mailchimp-synkronisering -- koblingen ligger helt i Zapier (eller Make): B1 utløser hendelsen, Mailchimp tar imot abonnenten.
+Hold en Mailchimp-publikum synkronisert med B1 automatisk: personer flyter inn med navn, e-post og telefon; gruppe- og listetilhørighet blir Mailchimp-tagger; slettede personer arkiveres. Synkroniseringen er innebygd i B1 — ingen tredjepartstjeneste, ingen per-oppgave-måling, og endringer kommer nesten i sanntid i stedet for på en nattlig tidsplan.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- En [Mailchimp](https://mailchimp.com)-konto med minst én målgruppe du vil at B1-personer skal legges til i
-- En [Zapier](https://zapier.com)-konto (gratisnivået dekker små menigheter)
-- En B1Admin-bruker med tillatelsen **Rediger innstillinger** slik at du kan lage en API-nøkkel
+- En [Mailchimp](https://mailchimp.com)-konto med publikummet du vil at B1 skal administrere
+- En Mailchimp **API-nøkkel** (Mailchimp: profilikon → **Konto & fakturering → Ekstra → API-nøkler**)
+- Din **publikum-ID** (Mailchimp: **Publikum → Innstillinger → Publikumnavn og standarder**)
+- En B1Admin-bruker med tillatelse til **Rediger innstillinger**
 
 </div>
 
-## Hva du kan koble sammen
+## Hva som synkroniseres
 
-| Retning | B1-trigger | Mailchimp-handling |
-|---|---|---|
-| B1 → Mailchimp | `person.created` | Legg til/oppdater abonnent |
-| B1 → Mailchimp | `donation.created` | Legg til abonnent i tag (f.eks. «Ga i 2026») |
-| B1 → Mailchimp | `group.member.added` | Legg til abonnent i tag knyttet til den gruppen |
-| Mailchimp → B1 | Ny abonnent | B1 *Opprett person* |
+| B1-endring | Mailchimp-effekt |
+|---|---|
+| Person lagt til eller oppdatert | Abonnent lagt til/oppdatert (fornavn, etternavn, telefon; nye abonnenter ankommer som `subscribed`) |
+| Person slettet (eller GDPR-slettet) | Abonnent arkivert |
+| Person slutter seg til en gruppe | Tagg oppkalt etter gruppen lagt til |
+| Person forlater en gruppe | Den taggen fjernet |
+| Person skriver seg på en lagret liste | Tagg oppkalt etter listen lagt til |
+| Person forlater en lagret liste | Den taggen fjernet |
 
-Mailchimp-siden eksponerer mye mer (kampanjer, segmenter, automatiseringer) — se [Mailchimps Zapier-triggere](https://zapier.com/apps/mailchimp/integrations) for hele listen. Alt som kan mappes fra B1-konvolutten er innafor.
+**Lagrede lister er vanligvis bedre tagg-kilde.** En B1 [lagret liste](/docs/b1-admin/people/lists) er en regelbasert publikum som re-evalueres selv — "alle på Nord-campus", "medlemmer som meldte seg på pastoralt e-post". Pek Mailchimp-segmentene dine på listetagger og synkroniseringen vedlikeholder dem; bruk gruppetagger for e-post til ministermål.
+
+Synkroniseringen er **enveisrettet** (B1 → Mailchimp) og berører bare Mailchimp-standardfeltene, så den kan ikke være i konflikt med flettfelt eller segmenter du administrerer inne i Mailchimp.
 
 ## Oppsett
 
-### 1. Lag en B1 API-nøkkel
+1. I B1Admin, gå til **Innstillinger → Utvikler → Webhooker → Legg til webhook**.
+2. Sett **koblingstype** til **Mailchimp**.
+3. Lim inn din **Mailchimp API-nøkkel** og **publikum-ID**. Nøkkelen lagres kryptert og vises aldri igjen.
+4. De relevante hendelsene er forhåndsvalgt; avmerk alle du ikke vil ha (f.eks. la personhendelser være på, men hopp over gruppetagger).
+5. Lagre. B1 bekrefter nøkkelen og publikummet mot Mailchimp før godkjenning — en stavefeil mislykkes umiddelbart med en grunn.
 
-I B1Admin, gå til **Innstillinger → Utvikler → API-nøkler → Ny API-nøkkel**. Gi den omfangene Zappen trenger:
+Bruk **Send test** når som helst for å reverifisere forbindelsen. Hvert synkroniseringsforsøk blir loggført i webhookens leveringshistorikk med Mailchimps faktiske svar, og mislykkede leveringer prøves automatisk på nytt med backoff i omtrent fem dager.
 
-- `settings:write` — påkrevd for at triggeren skal kunne registrere webhooken sin
-- `people:read` — slik at Zappen kan lese for-/etternavn, e-post osv.
-- (Valgfritt) `people:write` hvis du også planlegger en retning fra Mailchimp til B1
+## Første import
 
-Lagre og kopier `cak_…`-strengen — den vises bare én gang.
+Koblingen synkroniserer *endringer* fra det øyeblikket den er på; den fyller ikke inn eksisterende katalog på forhånd. For oppsettpdag:
 
-### 2. Bygg Zappen
+1. I B1Admin, gå til **Personer**, søk etter personene du vil ha (eller kjør en lagret liste), og klikk **Eksporter** for å laste ned en CSV.
+2. I Mailchimp, bruk **Publikum → Importer kontakter** for å laste opp CSV-filen, og bruk eventuelle tagger under importen.
 
-1. **Trigger:** `B1.church — Ny person`. Ved første bruk ber Zapier deg om å *logge inn på B1.church*; lim inn API-nøkkelen.
-2. **Handling:** `Mailchimp — Legg til/oppdater abonnent`. Map triggerens utdata:
-   - `data.contactInfo.email` → E-postadresse
-   - `data.name.first` → Fornavn
-   - `data.name.last` → Etternavn
-   - (Valgfritt) `data.id` → et Mailchimp-flettefelt hvis du vil beholde B1s person-ID ved siden av.
-3. Slå på Zappen. Zapier registrerer en `person.created`-webhook på B1 — verifiser under **Innstillinger → Utvikler → Webhooker** at en rad med navnet «Zapier — person.created» vises.
-
-Det er alt. Legg til en person i B1Admin for å bekrefte -- den nye abonnenten dukker opp i Mailchimp i løpet av sekunder.
-
-## Vanlige oppskrifter
-
-### Tagg givere automatisk
-
-- **Trigger** — B1: Ny gave
-- **Handling** — B1: Finn person (oppslag etter `personId`) for å hente e-posten
-- **Handling** — Mailchimp: Legg til abonnent i tag (tag `Gave-2026`)
-
-### Send ut en gruppespesifikk velkomstserie
-
-- **Trigger** — B1: Nytt gruppemedlem, filtrert etter `data.groupId`
-- **Handling** — Mailchimp: Legg til abonnent i tag oppkalt etter gruppen; utløs din eksisterende automatisering basert på den taggen
-
-### Toveis: nye Mailchimp-påmeldinger blir B1-kontakter
-
-- **Trigger** — Mailchimp: Ny abonnent
-- **Handling** — B1: Opprett person (map for-/etternavn/e-post)
-
-## Make-alternativ
-
-Makes [Mailchimp-app](https://www.make.com/en/integrations/mailchimp) dekker 44 moduler — koblingen er identisk, med B1s *Overvåk hendelser*-trigger som erstatter Zapiers. Se [Make-oversiktsdokumentet](../make) for B1-siden.
+Hvis du gjør den første lasten gjennom Mailchimps importer-verktøy, beholder du kontroll over samtykkespørsmålet — importer kun personer som faktisk har gitt samtykke til å motta e-post fra deg. Masseimportering av hele en katalog som abonnerte kontakter kan bryte Mailchimps vilkår og anti-spam-lover (CAN-SPAM/GDPR).
 
 ## Begrensninger og merknader
 
-- **Mailchimps gratisnivå setter tak på kontakter og målgrupper** — en Zap som flommer en gratis målgruppe forbi grensen, vil begynne å feile med `4xx Member limit reached`. Mailchimps logger gjør dette tydelig.
-- **Mailchimp dedupliserer etter e-post**, så å kjøre en Zap på nytt på samme B1-person oppdaterer dem på stedet; det oppretter ikke duplikater.
-- **Avmeldinger fra Mailchimp flyter ikke tilbake til B1.** Hvis du vil at Mailchimp-avmeldinger skal fjerne B1s «Send e-post»-preferanse, må du bygge den motsatte Zappen eksplisitt.
+- **Enveisrettet synk.** Avmeldinger, bounces og redigeringer gjort i Mailchimp flyter ikke tilbake til B1. Noen som avmelder seg i Mailchimp kan fortsatt motta e-post sendt direkte fra B1 — behandle Mailchimp som kildekilde for massepost-samtykke.
+- **Personer uten e-postadresse hoppet over** (logget som slikt i leveringshistorikken) — Mailchimp-abonnenter er nøkkelet per e-post.
+- **E-postadresseendringer oppretter en ny abonnent.** Mailchimp identifiserer personer etter e-post, så endring av noens e-post i B1 legger dem til under den nye adressen; den gamle abonnenten blir værende til du arkiverer den i Mailchimp.
+- **Bare standardfelt synkroniseres** — fornavn, etternavn, telefon. Medlemskapsstatus, campus og egendefinerte B1-felt mapper ikke til Mailchimp flettfelt i denne versjonen; bruk listetagger til segmentering i stedet.
+- **Tagnavn er gruppe-/listenavet.** Omdøping av en gruppe eller liste starter tagging under det nye navnet; den gamle taggen blir værende på eksisterende abonnenter til du fjerner den i Mailchimp.
+- **Mailchimps kontaktgrenser gjelder fortsatt** — en synk som skyver et gratis-lags publikum forbi sitt tak vil logge `Member limit reached`-feil i leveringshistorikken.
+
+## Andre oppskrifter (Zapier / Make)
+
+Alt utover publikumssynk — tagging av givere på `donation.created`, Mailchimp → B1 bakretning, eller synk til en annen e-postplattform helt (Constant Contact, Brevo, osv.) — er fortsatt tilgjengelig gjennom [Zapier](../zapier) eller [Make](../make), som utløses på samme webhookhendelser:
+
+- **Tagg givere:** B1 *Ny gave* → B1 *Finn person* → Mailchimp *Legg abonnent til tagg* (`Gave-2026`)
+- **To-veis:** Mailchimp *Ny abonnent* → B1 *Opprett person*
+
+Hvis du tidligere koblet person-/gruppsynk gjennom Zapier, slå av disse Zapsene etter aktivering av den innebygde koblingen — kjøring av begge doble-prosesser hver hendelse og brenner Zapier-oppgaver for ingenting.
 
 ## Feilsøking
 
-- **Zappen utløses aldri** — sjekk `Innstillinger → Utvikler → Webhooker` for raden `Zapier — person.created`. Hvis den mangler, manglet API-nøkkelen `settings:write` da Zappen ble slått på. Lag en ny nøkkel, koble til på nytt, slå Zappen av og på.
-- **`Member exists`-advarsel ved Legg til/oppdater** — bytt handlingen fra *Legg til abonnent* til *Legg til/oppdater abonnent* (verbet betyr noe). Upsert-varianten er idempotent.
-- **For- og etternavn kommer gjennom tomme** — B1s `data.name.first` og `data.name.last` fylles bare ut hvis de feltene er satt på personen. Map `data.name.display` som en reserveløsning.
+- **Lagring mislykkes med "Mailchimp avviste API-nøkkelen"** — nøkkelen ble tilbakekalt eller stavefeil. Nøkler må ende med et datasentersuffiks som `-us21`.
+- **Lagring mislykkes med "publikum ikke funnet"** — publikum-IDen eksisterer ikke under den kontoen. Kopier den fra **Publikum → Innstillinger → Publikumnavn og standarder** (det er ikke publikumets navn).
+- **En person dukket aldri opp i Mailchimp** — sjekk webhookens leveringshistorikk. "Hoppet over: person har ingen e-postadresse" betyr akkurat det; en `4xx` fra Mailchimp viser årsaken i responskroppen.
+- **Leveringer stoppet helt** — etter gjentatte uttømt leveringer deaktiverer webhookene seg automatisk. Rett årsaken (vanligvis en tilbakekalt nøkkel), re-aktiver den, og bruk **Send test** for å bekrefte.
 
 ## Se også
 
-- [Zapier (oversikt)](../zapier) — B1-siden av alle Zapier-oppskrifter
-- [Make (oversikt)](../make) — samme idé, visuell bygger
-- [Webhooker (utviklerreferanse)](/docs/developer/api/webhooks#event-catalog)
+- [Webhooks (utviklerreferanse)](/docs/developer/api/webhooks) — motoren under, hendelsetkatalog, leverans-/prøv-igjen-semantikk
+- [Lagrede lister](/docs/b1-admin/people/lists) — regelbaserte publikumer som kartlegger naturlig til Mailchimp-tagger
+- [Zapier (oversikt)](../zapier) — for oppskrifter utover publikumssynk

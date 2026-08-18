@@ -23,7 +23,7 @@ B1 Admin provides three attendance reports to help you understand how people are
 
 The Attendance Trend report shows how attendance changes over time for your services.
 
-1. Navigate to **Reports** and click the **Attendance Trend** card.
+1. Go directly to **admin.b1.church/reports/attendanceTrend** in your browser (reports have no entry in the navigation menu — bookmarking the address is the easiest way to get back to it).
 2. Set the **date range** to define the time period.
 3. Select a **service** or **group** to filter the results.
 4. The report displays a trend line showing attendance counts over the selected period.
@@ -34,7 +34,7 @@ This report is useful for spotting patterns like seasonal dips, growth trends, o
 
 The Group Attendance report shows attendance totals by group for a selected date range.
 
-1. Navigate to **Reports** and click the **Group Attendance** card.
+1. Go directly to **admin.b1.church/reports/groupAttendance** in your browser.
 2. Set the **date range** for the report.
 3. Select the **group(s)** you want to review.
 4. The report displays total attendance figures for each group.
@@ -45,7 +45,7 @@ Use this report to compare attendance across groups and identify which groups ar
 
 The Daily Group Attendance report provides a day-by-day breakdown of attendance data for your groups.
 
-1. Navigate to **Reports** and click the **Daily Group Attendance** card.
+1. Go directly to **admin.b1.church/reports/dailyGroupAttendance** in your browser.
 2. Set the **date range** for the report.
 3. Select the **group(s)** you want to review.
 4. The report shows attendance numbers for each individual day within the range.

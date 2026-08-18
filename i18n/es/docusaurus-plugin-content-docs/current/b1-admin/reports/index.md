@@ -1,44 +1,45 @@
 ---
-title: "Informes"
+title: "Reportes"
 ---
 
-# Informes
+# Reportes
 
 <div class="article-intro">
 
-La página de Informes le brinda acceso rápido a informes pre-construidos que lo ayudan a comprender sus datos de iglesia. Use estos informes para rastrear tendencias de asistencia, monitorear la actividad de ofrendas y mantenerse conectado con su congregación a través de celebraciones de cumpleaños.
+La página de Reportes te da acceso rápido a reportes prebuild que te ayudan a entender tus datos de iglesia. Usa estos reportes para rastrear tendencias de asistencia, monitorear actividad de donaciones y mantenerte conectado con tu congregación a través de celebraciones de cumpleaños.
 
 </div>
 
-## Informes Disponibles
+## Reportes Disponibles
 
-La página de Informes muestra tarjetas de informes para cada informe disponible. Haga clic en cualquier tarjeta para abrir el informe con sus filtros.
+Los reportes no tienen entrada en el menú de navegación de B1 Admin -- ve directamente a la URL del reporte que deseas (marcarlo es la forma más fácil de volver). Cada reporte se abre directamente a sus filtros.
 
-- **[Informe de Cumpleaños](./birthday-report)** -- Ver próximos cumpleaños de los miembros de su congregación.
-- **[Tendencia de Asistencia](./attendance-reports)** -- Ver cómo cambian los patrones de asistencia a lo largo del tiempo en sus servicios.
-- **[Asistencia del Grupo](./attendance-reports)** -- Ver totales de asistencia por grupo para un rango de fechas seleccionado.
-- **[Asistencia Diaria del Grupo](./attendance-reports)** -- Obtener un desglose día por día de datos de asistencia del grupo.
-- **[Resumen de Donaciones](./donation-summary)** -- Revisar totales de ofrendas y tendencias para planificación financiera.
-- **[Registro de Auditoría](./audit-log)** -- Rastrear todos los cambios y acciones en su sistema de gestión de iglesia (encontrado bajo Configuración > Registro de Auditoría).
+- **[Reporte de Cumpleaños](./birthday-report)** (`admin.b1.church/reports/birthdays`) -- Ver cumpleaños próximos para los miembros de tu congregación.
+- **[Reporte de Aniversarios](./anniversary-report)** (`admin.b1.church/reports/anniversaries`) -- Ver aniversarios de bodas próximos para los miembros de tu congregación.
+- **[Tendencia de Asistencia](./attendance-reports)** (`admin.b1.church/reports/attendanceTrend`) -- Ver cómo los patrones de asistencia cambian a lo largo del tiempo en tus servicios.
+- **[Asistencia de Grupo](./attendance-reports)** (`admin.b1.church/reports/groupAttendance`) -- Ver totales de asistencia por grupo para un rango de fechas seleccionado.
+- **[Asistencia Diaria de Grupo](./attendance-reports)** (`admin.b1.church/reports/dailyGroupAttendance`) -- Obtén un desglose día a día de datos de asistencia de grupo.
+- **[Resumen de Donaciones](./donation-summary)** (`admin.b1.church/reports/donationSummary`) -- Revisa totales y tendencias de donaciones para planificación financiera.
+- **[Registro de Auditoría](./audit-log)** -- Rastrea todos los cambios y acciones en tu sistema de gestión de iglesia (se encuentra bajo Configuración > Registro de Auditoría).
 
-## Uso de Informes
+## Usando Reportes
 
-1. Navegue a **Informes** desde el menú principal.
-2. Haga clic en una **tarjeta de informe** para abrirlo.
-3. Use los **filtros** en la parte superior de cada informe para reducir los datos por rango de fechas, grupo, servicio u otros criterios.
-4. Revise los resultados mostrados en el informe.
+1. Ve directamente a la URL del reporte, como **admin.b1.church/reports/birthdays**.
+2. Usa los **filtros** en la parte superior del reporte para reducir los datos por rango de fechas, grupo, servicio u otros criterios.
+3. Revisa los resultados mostrados en el reporte.
 
 :::tip
-Ejecute informes regularmente para mantenerse al día de las tendencias de asistencia, próximos cumpleaños y patrones de ofrendas. Estos datos lo ayudan a planificar ministerios y alcance más efectivamente.
+Ejecuta reportes regularmente para mantenerte al tanto de tendencias de asistencia, cumpleaños próximos y patrones de donaciones. Estos datos te ayudan a planificar ministerios y alcance más efectivamente.
 :::
 
 :::info
-Los datos de informes dependen de la entrada consistente de datos. Asegúrese de que su equipo esté [rastreando asistencia](../attendance/tracking-attendance.md), [registrando donaciones](../donations/recording-donations.md) y manteniendo [registros de personas](../people/adding-people.md) actualizados para obtener los resultados más precisos.
+Los datos de reportes dependen de la entrada de datos consistente. Asegúrate de que tu equipo esté [registrando asistencia](../attendance/tracking-attendance.md), [registrando donaciones](../donations/recording-donations.md) y manteniendo [registros de personas](../people/adding-people.md) actualizados para los resultados más precisos.
 :::
 
-## Más Información
+## Aprende Más
 
-- [Informe de Cumpleaños](./birthday-report) -- Búsqueda y uso de datos de cumpleaños.
-- [Informes de Asistencia](./attendance-reports) -- Comprensión de los tres informes de asistencia.
-- [Resumen de Donaciones](./donation-summary) -- Revisión de datos de ofrendas y resúmenes financieros.
-- [Registro de Auditoría](./audit-log) -- Rastreo de actividad del sistema y cambios.
+- [Reporte de Cumpleaños](./birthday-report) -- Encontrar y usar datos de cumpleaños.
+- [Reporte de Aniversarios](./anniversary-report) -- Encontrar y usar datos de aniversarios.
+- [Reportes de Asistencia](./attendance-reports) -- Entender los tres reportes de asistencia.
+- [Resumen de Donaciones](./donation-summary) -- Revisar datos de donaciones y resúmenes financieros.
+- [Registro de Auditoría](./audit-log) -- Rastrear actividad del sistema y cambios.

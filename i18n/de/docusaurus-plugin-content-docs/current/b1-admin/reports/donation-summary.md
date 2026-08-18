@@ -1,51 +1,50 @@
 ---
-title: "Spendenzusammenfassung"
+title: "Spendenübersicht"
 ---
 
-# Spendenzusammenfassung
+# Spendenübersicht
 
 <div class="article-intro">
 
-Der Bericht Spendenzusammenfassung gibt Ihnen ein klares Bild der Spendenaktivitäten Ihrer Gemeinde. Nutzen Sie ihn, um Spendensummen zu verfolgen, Spendentrends zu überwachen und Finanzberichte für Ihr Leitungsteam vorzubereiten.
+Der Bericht „Spendenübersicht" gibt Ihnen einen klaren Überblick über die Spendentätigkeit Ihrer Kirche. Verwenden Sie ihn, um Spendensummen nachzuverfolgen, Spendentrends zu überwachen und Finanzberichte für Ihr Leitungsteam vorzubereiten.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Stellen Sie sicher, dass Spenden [konsequent erfasst](../donations/recording-donations.md) werden
+- Stellen Sie sicher, dass Spenden [konsistent aufgezeichnet](../donations/recording-donations.md) werden in Ihrem System
 - Sie benötigen die entsprechenden [Berechtigungen](../settings/roles-permissions.md), um auf Finanzberichte zuzugreifen
 
 </div>
 
-## Den Bericht ausführen
+## Bericht ausführen
 
-1. Navigieren Sie über das Hauptmenü zu **Berichte**.
-2. Klicken Sie auf die Karte **Spendenzusammenfassung**.
-3. Legen Sie den **Zeitraum** fest, um den Berichtszeitraum zu definieren.
-4. Wenden Sie zusätzliche Filter wie **Fonds** oder andere Kriterien an, um die Ergebnisse einzugrenzen.
-5. Der Bericht zeigt die Spendenzusammenfassung für den ausgewählten Zeitraum.
+1. Gehen Sie direkt zu **admin.b1.church/reports/donationSummary** in Ihrem Browser (Berichte haben keinen Eintrag im Navigationsmenü – ein Lesezeichen für die Adresse ist der einfachste Weg, um dorthin zurückzukehren).
+2. Setzen Sie den **Datumsbereich**, um den Berichtszeitraum zu definieren.
+3. Wenden Sie zusätzliche Filter wie **Fonds** oder andere Kriterien an, um die Ergebnisse einzugrenzen.
+4. Der Bericht zeigt die Spendenübersicht für den ausgewählten Zeitraum.
 
 ## Was der Bericht zeigt
 
-Der Bericht Spendenzusammenfassung enthält:
+Der Bericht „Spendenübersicht" umfasst:
 
-- **Gesamtspenden** -- Den Gesamtspendenbetrag für den ausgewählten Zeitraum.
-- **Spenderanzahl** -- Die Anzahl der einzigartigen Spender, die beigetragen haben.
-- **Beträge nach Fonds** -- Eine Aufschlüsselung der Spenden über verschiedene Fonds, falls zutreffend.
+- **Gesamtspenden** – Der Gesamtspendenumfang für den ausgewählten Zeitraum.
+- **Anzahl der Spender** – Die Anzahl der eindeutigen Spender, die beitrugen.
+- **Beträge nach Fonds** – Eine Aufschlüsselung der Spenden nach verschiedenen Fonds, falls zutreffend.
 
 ## Praktische Anwendungen
 
-- **Finanzplanung** -- Überprüfen Sie Spendentrends, um zukünftige Einnahmen zu prognostizieren und Ihr Budget zu planen.
-- **Vorstandsberichte** -- Erstellen Sie Zusammenfassungen für regelmäßige Vorstands- oder Leitungstreffen mit klaren Spendendaten.
-- **Jahresend-Überprüfungen** -- Führen Sie den Bericht für das gesamte Jahr aus, um jährliche Finanzzusammenfassungen zu erstellen.
-- **Kampagnen-Tracking** -- Filtern Sie nach Fonds, um den Fortschritt bei speziellen Spendenaktionen oder Bauprojekten zu verfolgen.
-- **Saisonale Analyse** -- Vergleichen Sie Spenden über verschiedene Zeiträume, um saisonale Muster zu verstehen.
+- **Finanzplanung** – Überprüfen Sie Spendentrends, um zukünftige Einnahmen zu prognostizieren und Ihr Budget zu planen.
+- **Berichte an das Leitungsgremium** – Generieren Sie Zusammenfassungen für regelmäßige Treffen des Leitungsgremiums oder der Leitung mit klaren Spendendaten.
+- **Jahresendberichte** – Führen Sie den Bericht für das ganze Jahr aus, um jährliche Finanzzusammenfassungen vorzubereiten.
+- **Kampagnenverfolgung** – Filtern Sie nach Fonds, um die Fortschritte bei besonderen Spendenkampagnen oder Bauprojekten zu verfolgen.
+- **Saisonale Analyse** – Vergleichen Sie Spenden in verschiedenen Zeiträumen, um saisonale Muster zu verstehen.
 
 :::tip
-Führen Sie diesen Bericht monatlich aus, um über die finanzielle Gesundheit Ihrer Gemeinde informiert zu bleiben. Der Vergleich von Monat zu Monat hilft Ihnen, Trends frühzeitig zu erkennen.
+Führen Sie diesen Bericht monatlich aus, um über die finanzielle Gesundheit Ihrer Kirche informiert zu bleiben. Das Vergleichen von Monat-zu-Monat-Daten hilft Ihnen, Trends frühzeitig zu erkennen.
 :::
 
 :::warning
-Spendendaten stammen aus erfassten Spenden in Ihrem System. Stellen Sie sicher, dass Spenden konsequent eingegeben werden -- ob durch Online-Spenden, Scheckverarbeitung oder manuelle Eingabe -- für die genauesten Berichte. Siehe [Spenden erfassen](../donations/recording-donations.md) für Details.
+Spendendaten stammen aus aufgezeichneten Beiträgen in Ihrem System. Stellen Sie sicher, dass Spenden konsistent eingegeben werden – ob durch Online-Spenden, Scheckverarbeitung oder manuelle Eingabe – für die genauesten Berichte. Siehe [Spenden aufzeichnen](../donations/recording-donations.md) für Details.
 :::

@@ -6,45 +6,44 @@ title: "Ulat ng Kaarawan"
 
 <div class="article-intro">
 
-Ang Ulat ng Kaarawan ay tumutulong sa inyo na manatiling konektado sa inyong kongregasyon sa pamamagitan ng pagpapakita ng mga miyembrong may paparating na kaarawan. Gamitin ito para magplano ng mga pagdiriwang, magpadala ng mga kard, o gumawa ng mga anunsyo sa panahon ng mga serbisyo.
+Ang Birthday Report ay tumutulong sa iyo na manatiling konektado sa iyong paglalakbay sa pamamagitan ng pagpapakita ng mga miyembro na may paparating na mga kaarawan. Gamitin ito upang magplano ng mga selebrasyon, magpadala ng mga card, o gumawa ng mga pahayag sa panahon ng mga serbisyo.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Kang Magsimula</h4>
 
-- Siguraduhing nailagay ang mga petsa ng kapanganakan sa profile ng bawat tao. Tingnan ang [Pagdagdag ng mga Tao](../people/adding-people.md) para sa mga detalye.
-- Kailangan mo ng naaangkop na [mga pahintulot](../settings/roles-permissions.md) para ma-access ang mga ulat
+- Siguraduhin na ang mga petsa ng pagsilang ay naisaad sa profile ng bawat tao. Tingnan ang [Adding People](../people/adding-people.md) para sa mga detalye.
+- Kailangan mo ng tamang [permissions](../settings/roles-permissions.md) upang ma-access ang mga ulat
 
 </div>
 
 ## Pagpapatakbo ng Ulat
 
-1. Pumunta sa **Mga Ulat** mula sa pangunahing menu.
-2. I-click ang **Ulat ng Kaarawan** card.
-3. Itakda ang **saklaw ng petsa** gamit ang mga filter ng petsa para tukuyin kung aling mga kaarawan ang gusto ninyong makita.
-4. Ipapakita ng ulat ang listahan ng mga miyembrong may kaarawan sa saklaw na iyon.
+1. Pumunta direkta sa **admin.b1.church/reports/birthdays** sa iyong browser (ang mga ulat ay walang entry sa navigation menu — ang pag-bookmark sa address ay ang pinakamadaling paraan upang bumalik dito).
+2. Pumili ng **Month** na gusto mo mula sa dropdown. Maaari mong i-limit ang mga resulta sa isang **Group**.
+3. I-click ang **Run Report**. Ang ulat ay naglalista ng lahat na may kaarawan sa buwan na iyon, kasama ang kanilang petsa ng pagsilang — handa nang basahin direkta sa isang bulletin o announcement list.
 
 ## Ano ang Ipinapakita ng Ulat
 
-Ipinapakita ng Ulat ng Kaarawan ang:
+Ang Birthday Report ay nagpapakita ng:
 
-- **Pangalan ng miyembro** -- Ang pangalan ng tao mula sa database ng inyong simbahan.
-- **Petsa ng kapanganakan** -- Ang petsa ng kanilang kaarawan.
+- **Birthday** -- Ang petsa ng kanilang kaarawan.
+- **Name** -- Ang pangalan ng tao mula sa iyong church database.
 
-Nakalista ang mga resulta sa loob ng saklaw ng petsa na inyong pinili, na nagpapadali sa pagtingin kung sino ang may paparating na kaarawan.
+Ang mga resulta ay sumasaklaw sa buwan na iyong pinili, na ginagawang madali ang pagtukoy kung sino ang may paparating na kaarawan.
 
-## Mga Praktikal na Gamit
+## Practical Uses
 
-- **Lingguhang mga anunsyo** -- Patakbuhin ang ulat para sa paparating na linggo at isama ang mga kaarawan sa inyong bulletin o mga anunsyo.
-- **Mga kard ng kaarawan** -- Gumawa ng listahan para sa buwan at ipagawa sa inyong koponan na magpadala ng mga personal na kard ng kaarawan.
-- **Mga lider ng small group** -- Maaaring patakbuhin ng mga lider ng grupo ang ulat para maalala ang mga kaarawan ng mga miyembro sa kanilang grupo.
-- **Mga pagdiriwang ng milestone** -- Mag-filter para sa mga tiyak na saklaw ng petsa para magplano ng mga pagdiriwang ng milestone na kaarawan.
+- **Weekly announcements** -- Patakbuhin ang ulat para sa susunod na linggo at isama ang mga kaarawan sa iyong bulletin o mga pahayag.
+- **Birthday cards** -- Bumuo ng isang listahan para sa buwan at hayaan ang iyong team na magpadala ng personal na birthday cards.
+- **Small group leaders** -- Ang mga pinuno ng grupo ay maaaring magpatakbo ng ulat upang maalala ang mga kaarawan ng mga miyembro sa kanilang grupo.
+- **Milestone celebrations** -- I-filter para sa mga specific date ranges upang magplano ng mga milestone birthday celebrations.
 
 :::tip
-Patakbuhin ang ulat na ito sa simula ng bawat buwan para magplano nang maaga. Maaari ninyong itakda ang saklaw ng petsa para saklawin ang buong buwan para magkaroon kayo ng oras na maghanda ng mga kard o anunsyo.
+Patakbuhin ang ulat na ito sa simula ng bawat buwan upang magplano nang mauna. Maaari mong itakda ang date range upang sumasaklaw sa buong buwan upang mayroon kang oras na maghanda ng mga card o mga pahayag.
 :::
 
 :::info
-Ang data ng kaarawan ay nagmumula sa field ng petsa ng kapanganakan sa profile ng bawat tao. Siguraduhing napapanahon ang inyong [mga talaan ng membership](../people/adding-people.md) para sa mga tamang resulta.
+Ang birthday data ay nagmula sa birth date field sa profile ng bawat tao. Siguraduhin na ang iyong [membership records](../people/adding-people.md) ay up to date para sa tumpak na mga resulta.
 :::

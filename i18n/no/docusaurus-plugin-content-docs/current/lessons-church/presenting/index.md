@@ -1,42 +1,42 @@
 ---
-title: "Presentasjon"
+title: "Presentering"
 ---
 
-# Presentasjon
+# Presentering
 
 <div class="article-intro">
 
-Lessons.church tilbyr verktøy for å hjelpe de frivillige med å undervise hver leksjon med selvtillit. Enten du projiserer innhold på en skjerm, deler ut trykte guider eller distribuerer aktivitetsark, er alt du trenger bygget rett inn i plattformen.
+Lessons.church gir verktøy for å hjelpe frivillige dine med å undervise hver leksjon med selvtillit. Enten du projiserer innhold på en skjerm, deler ut trykte guider eller distribuerer aktivitetsark, alt du trenger er innebygd rett inn i plattformen.
 
 </div>
 
-## Presentasjonsmodus
+## Presentør-modus
 
-Når det er tid for å undervise, kan du starte **Presentasjonsmodus** direkte fra hvilken som helst leksjon. Dette gir deg en fullskjerms, projeksjonsvennlig visning designet for klasseromsskjermer og projektorer. Den integreres også med FreeShow-presentasjonsprogramvare og [FreePlay](https://freeplay.church) for automatiserte visninger.
+Når det er tid til å undervise, kan du starte **Presentør-modus** direkte fra hvilken som helst leksjon. Dette gir deg en fullskjermsvisning vennlig for projeksjon designet for klasseromssk og projektorer. Det integreres også med FreeShow-presentasjonsprogramvare og [FreePlay](https://freeplay.church) for automatiserte skjermer.
 
 ## Frivilligguider
 
-Hver leksjon inkluderer rollebaserte guider slik at de frivillige vet nøyaktig hva de skal si og gjøre. En velkomstvert ser sine instruksjoner, en smågruppeleder ser sine, og så videre. Guider kan vises på en telefon eller nettbrett under timen, eller skrives ut på forhånd.
+Hver leksjon inneholder rolle-baserte guider slik at frivillige dine vet nøyaktig hva de skal si og gjøre. En hilser ser instruksjonene sine, en smågruppeleder ser sine, og så videre. Guider kan vises på en telefon eller nettbrett under klassen, eller skrives ut på forhånd.
 
-## Nedlastbart materiell
+## Nedlastbar materiell
 
-Leksjoner kommer med nedlastbare ressurser som aktivitetsark, fargeleggingssider, lederguider og tilleggs-PDF-er. Disse materialene er tilgjengelige på program-, studie- og leksjonsnivå, slik at du kan hente alt du trenger på ett sted.
+Leksjoner kommer med nedlastbare ressurser som aktivitetsark, fargeark, lederveiledninger og supplerende PDF-er. Disse materialene er tilgjengelige på program-, studie- og lesjonsnivåer, slik at du kan få alt du trenger på ett sted.
 
-## Sette alt sammen
+## Å sette det hele sammen
 
-En typisk søndag morgen-arbeidsflyt kan se slik ut:
+En typisk søndags morgen arbeidsflukt kan se slik ut:
 
-1. Last ned og skriv ut eventuelle aktivitetsark eller fargeleggingssider tidligere i uken.
-2. Del frivilligguide-lenkene med teamet ditt slik at de kan gjennomgå rollene sine.
-3. Åpne leksjonen i **Presentasjonsmodus** på klasseromsdatamaskinen eller TV-en.
-4. Gå gjennom leksjonsseksjonene mens frivillige følger med i sine individuelle guider.
+1. Last ned og skriv ut eventuelle aktivitetsark eller fargeark tidligere i uken.
+2. Del frivilligveiledningslenker med teamet ditt slik at de kan se gjennom rollene deres.
+3. Åpne leksjonen i **Presentør-modus** på klasseromspcn eller TV-en.
+4. Gå gjennom lesjonsdeler mens frivillige følger med sine individuelle guider.
 
 :::tip
-Å forberede materiell og dele guidelenker noen dager før timen gir de frivillige tid til å gjennomgå og komme selvsikre søndag morgen.
+Forberedelse av materiell og deling av veiledningslenker noen få dager før klassen gir frivillige tid til å se gjennom og ankomme selvsikker søndags morgen.
 :::
 
-## Neste steg
+## Neste trinn
 
-- [Presentasjonsmodus](./presenter-mode.md) -- Vis leksjoner på en skjerm eller projektor
-- [Frivilligguider](./volunteer-guides.md) -- Rollebaserte instruksjoner for teamet ditt
-- [Nedlastinger og materiell](./downloads.md) -- Skriv ut og distribuer leksjonsressurser
+- [Presentør-modus](./presenter-mode.md) -- Vis leksjoner på en skjerm eller projektor
+- [Frivilligguider](./volunteer-guides.md) -- Rolle-spesifikke instruksjoner for teamet ditt
+- [Nedlastinger og materiell](./downloads.md) -- Skriv ut og distribuer leksjonressurser

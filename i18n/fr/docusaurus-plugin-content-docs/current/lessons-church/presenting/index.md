@@ -6,37 +6,37 @@ title: "Présentation"
 
 <div class="article-intro">
 
-Lessons.church fournit des outils pour aider vos bénévoles à enseigner chaque leçon avec assurance. Que vous projetiez du contenu sur un écran, distribuiez des guides imprimés ou partagiez des fiches d'activités, tout ce dont vous avez besoin est intégré directement dans la plateforme.
+Lessons.church fournit des outils pour aider vos bénévoles à enseigner avec confiance chaque leçon. Que vous projetiez du contenu sur un écran, distribuerez des guides imprimés ou distribuerez des feuilles d'activités, tout ce dont vous avez besoin est intégré dans la plateforme.
 
 </div>
 
-## Mode Présentation
+## Mode présentateur
 
-Lorsqu'il est temps d'enseigner, vous pouvez lancer le **Mode Présentation** directement depuis n'importe quelle leçon. Cela vous offre un affichage plein écran, optimisé pour la projection, conçu pour les écrans et vidéoprojecteurs de salle de classe. Il s'intègre également au logiciel de présentation FreeShow et à [FreePlay](https://freeplay.church) pour les affichages automatisés.
+Quand vient le moment d'enseigner, vous pouvez lancer le **Mode présentateur** directement à partir de n'importe quelle leçon. Cela vous donne une vue plein écran, conviviale pour la projection, conçue pour les écrans et projecteurs de salle de classe. Il s'intègre également au logiciel de présentation FreeShow et à [FreePlay](https://freeplay.church) pour les affichages automatisés.
 
-## Guides pour les bénévoles
+## Guides des bénévoles
 
-Chaque leçon inclut des guides basés sur les rôles afin que vos bénévoles sachent exactement quoi dire et quoi faire. Un accueillant voit ses instructions, un responsable de petit groupe voit les siennes, et ainsi de suite. Les guides peuvent être consultés sur un téléphone ou une tablette pendant le cours, ou imprimés à l'avance.
+Chaque leçon inclut des guides basés sur les rôles afin que vos bénévoles sachent exactement ce qu'ils doivent dire et faire. Un accueillant voit ses instructions, un animateur de petit groupe voit les siennes, etc. Les guides peuvent être consultés sur un téléphone ou une tablette pendant la classe, ou imprimés à l'avance.
 
-## Ressources téléchargeables
+## Matériaux téléchargeables
 
-Les leçons sont accompagnées de ressources téléchargeables telles que des fiches d'activités, des pages de coloriage, des guides pour les responsables et des PDF complémentaires. Ces ressources sont disponibles au niveau du programme, de l'étude et de la leçon, afin que vous puissiez récupérer tout ce dont vous avez besoin en un seul endroit.
+Les leçons sont accompagnées de ressources téléchargeables telles que des feuilles d'activités, des pages à colorier, des guides des animateurs et des PDF supplémentaires. Ces matériels sont disponibles au niveau du programme, de l'étude et de la leçon, afin que vous puissiez obtenir tout ce dont vous avez besoin en un seul endroit.
 
-## Mettre le tout en pratique
+## Tout mettre ensemble
 
-Un dimanche matin typique pourrait se dérouler ainsi :
+Un flux de travail typique du dimanche matin pourrait ressembler à ceci :
 
-1. Téléchargez et imprimez les fiches d'activités ou les pages de coloriage plus tôt dans la semaine.
-2. Partagez les liens des guides des bénévoles avec votre équipe afin qu'ils puissent consulter leurs rôles.
-3. Ouvrez la leçon en **Mode Présentation** sur l'ordinateur ou le téléviseur de la salle de classe.
-4. Parcourez les sections de la leçon pendant que les bénévoles suivent avec leurs guides individuels.
+1. Téléchargez et imprimez les feuilles d'activités ou les pages à colorier plus tôt dans la semaine.
+2. Partagez les liens de guide des bénévoles avec votre équipe afin qu'elle puisse examiner ses rôles.
+3. Ouvrez la leçon en **Mode présentateur** sur l'ordinateur ou la TV de la salle de classe.
+4. Passez en revue les sections de leçon tandis que les bénévoles suivent avec leurs guides individuels.
 
 :::tip
-Préparer les ressources et partager les liens des guides quelques jours avant le cours donne à vos bénévoles le temps de se préparer et d'arriver en confiance le dimanche matin.
+Préparer les matériels et partager les liens de guide quelques jours avant la classe donne à vos bénévoles le temps d'examiner et d'arriver confiants le dimanche matin.
 :::
 
 ## Prochaines étapes
 
-- [Mode Présentation](./presenter-mode.md) -- Affichez les leçons sur un écran ou un vidéoprojecteur
-- [Guides pour les bénévoles](./volunteer-guides.md) -- Instructions basées sur les rôles pour votre équipe
-- [Téléchargements et ressources](./downloads.md) -- Imprimez et distribuez les ressources des leçons
+- [Mode présentateur](./presenter-mode.md) -- Afficher les leçons sur un écran ou un projecteur
+- [Guides des bénévoles](./volunteer-guides.md) -- Instructions spécifiques aux rôles pour votre équipe
+- [Téléchargements et matériels](./downloads.md) -- Imprimer et distribuer les ressources pédagogiques

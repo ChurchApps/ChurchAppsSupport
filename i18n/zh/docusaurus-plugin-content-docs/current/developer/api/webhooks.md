@@ -6,34 +6,34 @@ title: "Webhooks"
 
 <div class="article-intro">
 
-Webhook 允许教会向第三方工具推送实时通知——自动化平台(Zapier、Make、n8n)、CRM、会计系统,或任何接受 HTTP POST 的系统。当 B1 中的人员、小组或家庭发生变化时,B1 会向每个订阅该事件的 URL 发送一个已签名的 JSON 负载。
+Webhooks 让教会向第三方工具推送实时通知——自动化平台（Zapier、Make、n8n）、CRM、会计系统或任何接受 HTTP POST 的东西。当人员、团体或家庭在 B1 中改变时，B1 向订阅该事件的每个 URL 发送签名的 JSON 负载。
 
 </div>
 
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- 具有**编辑教会设置**权限的教会管理员负责注册和管理 webhook
-- 你的接收端点必须能通过公开地址的 **HTTPS** 访问
-- 准备好一种安全存储签名密钥的方式——它只会显示一次
+- 一个具有**编辑教会设置**权限的教会管理员注册和管理 webhooks
+- 您的接收端点必须在**HTTPS** 上于公共地址可到达
+- 有办法安全地存储签名密钥——它只显示一次
 
 </div>
 
-## 概览
+## 概述
 
-Webhook 只是**出站**的:B1 调用你的端点,你不调用 B1。每个 webhook 都是一个按教会划分的订阅,由目标 URL、签名密钥和订阅事件列表组成。
+Webhooks 是**仅出站**：B1 调用您的端点，您不调用 B1。每个 webhook 是一个按教会订阅，包括目标 URL、签名密钥和订阅事件列表。
 
-投递使用**持久发件箱**:当订阅事件发生时,B1 会记录一条投递行,后台工作进程会在大约一分钟内向其发送 POST 请求。失败的投递会以指数退避方式重试。即使投递变慢或你的端点短暂宕机,也不会丢失任何数据。
+交付使用**持久出站箱**：当订阅的事件发生时，B1 记录一条交付行，背景工作者在约一分钟内 POST 它。失败的交付使用指数退避进行重试。如果交付缓慢或您的端点短暂停机，不会丢失任何内容。
 
 ## 注册 Webhook
 
 ### 在 B1Admin 中
 
-前往 **设置 → 开发者 → Webhook → 新建 Webhook**。输入名称、负载 URL,并选择要订阅的事件。保存时,**签名密钥只会显示一次**——请立即复制并妥善保存到你的集成中。它不会再次显示(之后可以轮换密钥,但无法找回原始密钥)。
+转到**设置 → 开发者 → Webhooks → 新 Webhook**。输入名称、负载 URL，并选择要订阅的事件。保存时，**签名密钥显示一次**——立即复制并与您的集成一起存储。不会再显示（您可以稍后轮换它，但不能检索原始值）。
 
 ### 通过 API
 
-所有端点都位于 Membership 模块的基础路径 `/membership/webhooks` 下,需要具有 `Settings / Edit` 权限的教会管理员的 JWT,**或者使用带有 `settings:write` 作用域签发的 [API 密钥](./api-keys)**。同一批路由同时接受这两种方式。这正是 Zapier 和 Make 在启用一个 Zap 或场景时能够代表教会注册 webhook 的原因。
+所有端点都在成员模块基本路径 `/membership/webhooks` 下，并需要具有 `Settings / Edit` 权限的教会管理员的 JWT，**或使用 `settings:write` 作用域的 [API 密钥](./api-keys)****。相同的路由接受两者。这就是当 Zap 或场景打开时 Zapier 和 Make 代表教会注册 webhooks 的方式。
 
 ```http
 POST /membership/webhooks
@@ -41,18 +41,18 @@ Authorization: Bearer <jwt>
 Content-Type: application/json
 
 {
-  "name": "Zapier — new members",
+  "name": "Zapier — 新成员",
   "url": "https://hooks.zapier.com/hooks/catch/123/abc",
   "events": ["person.created", "person.updated", "group.member.added"]
 }
 ```
 
-创建响应——**只有**创建响应——包含 `secret`:
+创建响应——**仅**创建响应——包括 `secret`：
 
 ```json
 {
   "id": "a1b2c3d4e5f",
-  "name": "Zapier — new members",
+  "name": "Zapier — 新成员",
   "url": "https://hooks.zapier.com/hooks/catch/123/abc",
   "events": ["person.created", "person.updated", "group.member.added"],
   "active": true,
@@ -60,58 +60,58 @@ Content-Type: application/json
 }
 ```
 
-| 方法与路径 | 用途 |
+| 方法和路径 | 用途 |
 |---|---|
-| `GET /membership/webhooks` | 列出教会的 webhook(不含密钥) |
-| `GET /membership/webhooks/events` | 有效事件名称目录 |
+| `GET /membership/webhooks` | 列出教会的 webhooks（密钥省略） |
+| `GET /membership/webhooks/events` | 有效事件名称的目录 |
 | `GET /membership/webhooks/:id` | 加载一个 webhook |
-| `POST /membership/webhooks` | 创建(不带 `id`)或更新(带 `id`) |
-| `POST /membership/webhooks/:id/regenerate-secret` | 轮换签名密钥;新值只返回一次 |
-| `DELETE /membership/webhooks/:id` | 删除一个 webhook |
-| `GET /membership/webhooks/:id/deliveries` | 某个 webhook 最近的投递尝试 |
-| `GET /membership/webhooks/deliveries/:deliveryId` | 一次投递的完整负载和响应 |
-| `POST /membership/webhooks/deliveries/:deliveryId/redeliver` | 重新排队一次投递 |
+| `POST /membership/webhooks` | 创建（无 `id`）或更新（带 `id`） |
+| `POST /membership/webhooks/:id/regenerate-secret` | 轮换签名密钥；返回新值一次 |
+| `DELETE /membership/webhooks/:id` | 删除 webhook |
+| `GET /membership/webhooks/:id/deliveries` | webhook 最近的交付尝试 |
+| `GET /membership/webhooks/deliveries/:deliveryId` | 一个交付的完整负载和响应 |
+| `POST /membership/webhooks/deliveries/:deliveryId/redeliver` | 重新队列交付 |
 
 ## 事件目录
 
-事件名称遵循 `{entity}.{action}` 模式。可从 `GET /membership/webhooks/events` 获取实时列表。
+事件名称遵循 `{entity}.{action}` 的模式。从 `GET /membership/webhooks/events` 获取实时列表。
 
-| 事件 | 触发时机 |
+| 事件 | 触发时 |
 |---|---|
-| `person.created` | 新增一个人员 |
-| `person.updated` | 一条人员记录被修改 |
-| `person.destroyed` | 一个人员被删除 |
-| `household.created` | 新增一个家庭 |
-| `household.updated` | 一个家庭信息被修改 |
-| `household.destroyed` | 一个家庭被删除 |
-| `group.created` | 新增一个小组 |
-| `group.updated` | 一个小组被修改 |
-| `group.destroyed` | 一个小组被删除 |
-| `group.member.added` | 一个人被加入某个小组 |
-| `group.member.removed` | 一个人被从某个小组移除 |
-| `donation.created` | 记录了一笔捐款——手动录入、在线捐款,或从待处理转为完成的状态变化 |
-| `donation.updated` | 一条捐款记录被编辑 |
-| `attendance.recorded` | 记录了一次到访(手动录入或签到) |
-| `session.created` | 新建了一个出勤场次(手动创建,或首次签到时自动创建) |
-| `form.submission.created` | 提交了一份表单 |
-| `event.created` | 新增了一个日历事件 |
-| `event.updated` | 一个日历事件被编辑 |
-| `event.destroyed` | 一个日历事件被删除 |
+| `person.created` | 人员被添加 |
+| `person.updated` | 人员记录被更改 |
+| `person.destroyed` | 人员被删除 |
+| `household.created` | 家庭被添加 |
+| `household.updated` | 家庭被改变 |
+| `household.destroyed` | 家庭被删除 |
+| `group.created` | 团体被添加 |
+| `group.updated` | 团体被改变 |
+| `group.destroyed` | 团体被删除 |
+| `group.member.added` | 人员被添加到团体 |
+| `group.member.removed` | 人员被从团体中移除 |
+| `donation.created` | 礼物被记录——手动输入、在线或待定 → 完成转换 |
+| `donation.updated` | 捐赠记录被编辑 |
+| `attendance.recorded` | 访问被记录（手动输入或签到） |
+| `session.created` | 新的出席会话被创建（手动或在第一次签到时自动） |
+| `form.submission.created` | 表单被提交 |
+| `event.created` | 日历事件被添加 |
+| `event.updated` | 日历事件被编辑 |
+| `event.destroyed` | 日历事件被删除 |
 
 ## 负载格式
 
-每次投递都是一个带有 JSON 正文和以下请求头的 HTTP `POST`:
+每个交付是 HTTP `POST`，带有 JSON 主体和这些标题：
 
-| 请求头 | 说明 |
+| 标题 | 描述 |
 |---|---|
-| `Content-Type` | 始终为 `application/json` |
-| `X-B1-Event` | 事件名称,例如 `person.created` |
-| `X-B1-Delivery-Id` | 本次投递尝试的唯一 id——用于去重 |
-| `X-B1-Signature` | 原始正文的 HMAC-SHA256 签名(见下文) |
-| `X-B1-Timestamp` | 请求发送时的 Unix 纪元秒数 |
+| `Content-Type` | 总是 `application/json` |
+| `X-B1-Event` | 事件名称，例如 `person.created` |
+| `X-B1-Delivery-Id` | 此交付尝试的唯一 id——使用它来去重 |
+| `X-B1-Signature` | 原始主体的 HMAC-SHA256 签名（见下文） |
+| `X-B1-Timestamp` | 发送请求时的 Unix 纪元秒 |
 | `User-Agent` | `B1-Webhooks/1.0` |
 
-正文将变更的资源包装在一个小信封中:
+主体在小信封中包装已更改的资源：
 
 ```json
 {
@@ -127,29 +127,32 @@ Content-Type: application/json
 }
 ```
 
-对于 `*.destroyed` 事件,`data` 仅包含被删除记录的 `id` 和 `churchId`。
+对于 `*.destroyed` 事件，`data` 仅包含已删除记录的 `id` 和 `churchId`。
 
-负载中通过 id 引用其他记录的事件,还会携带在投递时解析出的可读名称:小组成员事件上的 `personName` 和 `groupName`,出勤、捐款和名单成员事件上的 `personName`,`session.created` 上的 `groupName`,以及 `form.submission.created` 上的 `formName`(如果提交与某个人关联,还会附带 `personName`)。
+其负载按 id 引用其他记录的事件也携带人类可读的名称，在交付时解析：组成员事件上的 `personName` 和 `groupName`、出席、捐赠和列表成员事件上的 `personName`、`session.created` 上的 `groupName`，以及 `form.submission.created` 上的 `formName`（加上提交与人员绑定时的 `personName`）。
 
 ## 连接器类型
 
-默认的投递格式就是上面的 JSON 信封——`connectorType: "standard"`。对于 [Slack 和 Discord](/docs/b1-admin/integrations/slack-discord),同一套 webhook 引擎会改为发送这些服务可以直接接受的聊天格式消息:
+默认交付格式是上面的 JSON 信封——`connectorType: "standard"`。对于 [Slack 和 Discord](/docs/b1-admin/integrations/slack-discord)，相同的 webhook 引擎改为发布这些服务直接接受的聊天型消息：
 
-| `connectorType` | 发送的正文 | 使用场景 |
+| `connectorType` | 发送的主体 | 用于 |
 |---|---|---|
-| `"standard"`(默认) | 已签名的 `{event, churchId, occurredAt, data}` 信封 | 你在编写自己的集成,或对接 Zapier / Make / 自建服务器 |
-| `"slack"` | `{ "text": "💝 New donation: $50.00" }` | 你要直接发送到 Slack 的传入 Webhook URL |
-| `"discord"` | `{ "content": "💝 New donation: $50.00" }` | 你要直接发送到 Discord 频道 webhook URL |
+| `"standard"`（默认） | `{event, churchId, occurredAt, data}` 信封，已签名 | 您编写自己的集成，或指向 Zapier / Make / 自定义服务器 |
+| `"slack"` | `{ "text": "💝 新捐赠：$50.00" }` | 您直接发布到 Slack 传入 Webhook URL |
+| `"discord"` | `{ "content": "💝 新捐赠：$50.00" }` | 您直接发布到 Discord 频道 webhook URL |
+| `"mailchimp"` | n/a——连接器自己调用 Mailchimp 的 API | 您想要 [受众同步](/docs/b1-admin/integrations/services/mailchimp)，无需托管 URL |
 
-连接器类型在 webhook 编辑器的**连接器类型**下拉菜单中设置,或在 `POST /membership/webhooks` 请求正文中通过 `connectorType` 设置。发往 Slack/Discord 的投递仍然会带上已签名的 `X-B1-Signature` 请求头(它们会无害地忽略它),所以之后把 webhook 改回 `standard` 无需重新签名。
+连接器类型在 webhook 编辑器中的**连接器类型**下拉菜单中设置，或通过 `POST /membership/webhooks` 主体中的 `connectorType`。对于 Slack/Discord 交付，已签名的 `X-B1-Signature` 标题仍会发送（它们无害地忽略它），所以稍后将 webhook 切换回 `standard` 不需要重新签名。
 
-## 测试投递
+Slack 和 Discord 是纯主体重塑——引擎仍然 POST 到教会提供的 URL。`mailchimp` 是第一个改为拥有其 HTTP 交换的连接器：每个事件它对 Mailchimp 的 API 发出经过身份验证的 upsert/archive/tag 请求（`MailchimpConnector.deliver`），其凭证（`{apiKey, audienceId}`）在 `webhooks.connectorConfig` 中存储为 AES 加密，仅通过 API 写入。Mailchimp webhooks 仅接受人员、团体成员和列表成员事件；保存路由在接受前验证 Mailchimp 的密钥和受众。未映射的情况（没有电子邮件的人员、没有映射的事件）完成为成功，响应主体为 `Skipped:`，而不是浪费重试。
 
-每个 webhook 编辑器都有一个**发送测试事件**按钮——对应的 API 调用是 `POST /membership/webhooks/:id/test`。测试路由会为第一个订阅的事件构建一个合成负载,同步地通过真实的已签名投递路径进行分发(对于 Slack/Discord 还会经过 `formatForConnector`),并返回结果投递行,包括 `responseStatus` 和 `responseBody`。在正式启用集成之前,可用它来确认连通性和签名处理是否正常。
+## 测试交付
+
+每个 webhook 编辑器都有一个**发送测试事件**按钮——相应的 API 调用是 `POST /membership/webhooks/:id/test`。测试路由为第一个订阅的事件构建综合负载，通过真实的签名交付路径（以及通过 `formatForConnector` 用于 Slack/Discord）调度它，并返回生成的交付行，包括 `responseStatus` 和 `responseBody`。使用它在真实启用集成前确认连接和签名处理。对于 `mailchimp` webhooks，测试改为验证存储的凭证与 Mailchimp API（综合事件会将虚假订阅者写入教会的真实受众），并返回没有创建行的交付形状结果。
 
 ## 验证签名
 
-在信任负载之前,务必先验证 `X-B1-Signature`。签名是 `sha256=` 后跟**原始请求正文**以你的签名密钥为密钥计算出的十六进制 HMAC-SHA256。请对你实际收到的字节进行计算——不要重新序列化解析后的 JSON。
+在信任负载前始终验证 `X-B1-Signature`。签名是 `sha256=` 后跟原始请求主体的 hex HMAC-SHA256，使用您的签名密钥。在您收到的字节上计算——不要重新序列化解析的 JSON。
 
 **Node.js**
 
@@ -183,55 +186,55 @@ function isValid(string $rawBody, string $signatureHeader, string $secret): bool
 }
 ```
 
-拒绝任何签名不匹配的请求。也可以选择性地拒绝 `X-B1-Timestamp` 超过几分钟之前的请求,以限制重放窗口。
+拒绝任何签名不匹配的请求。可选地，也拒绝其 `X-B1-Timestamp` 超过几分钟的请求以限制重放窗口。
 
 ## SDK 支持
 
-对于 Node.js,`@churchapps/integration-sdk` 提供了一个类型化的验证器和一个 Express 中间件,帮你完成原始正文捕获、签名校验和信封解析:
+对于 Node.js，`@churchapps/integration-sdk` 附带一个类型化验证器和一个 Express 中间件，为您处理原始主体捕获、签名检查和信封解析：
 
 ```ts
 import express from "express";
 import { b1WebhookMiddleware } from "@churchapps/integration-sdk";
 
 const app = express();
-// 在 JSON 解析之前捕获原始正文——签名校验仍然需要它。
+// 在 JSON 解析前捕获原始主体——必需以便签名仍然验证。
 app.use(express.json({ verify: (req, _res, buf) => { (req as any).rawBody = buf; } }));
 
 app.post("/webhooks/b1", b1WebhookMiddleware({ secret: process.env.B1_WEBHOOK_SECRET! }), (req, res) => {
   const env = req.b1Webhook!;
   switch (env.event) {
-    case "donation.created": console.log("new gift", env.data.amount); break;
+    case "donation.created": console.log("新礼物", env.data.amount); break;
   }
   res.sendStatus(200);
 });
 ```
 
-该 SDK 还为非 Express 运行时(无服务器函数、Fastify 等)提供了 `WebhookVerifier.verify(secret, rawBody, signatureHeader)`。详见 npm 上的软件包说明。
+SDK 也为非 Express 运行时（无服务器函数、Fastify 等）公开 `WebhookVerifier.verify(secret, rawBody, signatureHeader)`。查看 npm 上的包。
 
-## 投递与重试
+## 交付和重试
 
-你的端点应尽快以 `2xx` 状态响应——理想情况下只是把工作排队,而不是等处理完再响应。任何非 `2xx` 响应、连接失败,或响应时间超过 **10 秒**,都会被视为投递失败。
+您的端点应该以 `2xx` 状态尽快响应——理想情况下仅在队列工作后，而不是在处理后。任何非 `2xx` 响应、连接失败或响应慢于 **10 秒**都算作失败的交付。
 
-失败的投递会以指数退避方式重试——**在大约 5 天内进行 16 次尝试**。间隔从 1 分钟开始增长,经过数小时,最后几次尝试的间隔可达 3 天。第 16 次尝试失败后,该次投递会被标记为 `exhausted` 并放弃。
+失败的交付使用指数退避进行重试——**16 次尝试超过大约 5 天**。间隔从 1 分钟增长，通过小时，直到最后尝试的 3 天间隔。在第 16 次失败尝试后，交付被标记为 `exhausted` 并被放弃。
 
-投递是**至少一次**的:同一次投递可能会到达不止一次(例如你的端点处理成功了,但响应丢失了)。请使用 `X-B1-Delivery-Id` 请求头去重——每个 id 只处理一次,重复的视为无操作。
+交付是 **at-least-once**：交付可能多次到达（例如，如果您的端点成功但响应丢失）。使用 `X-B1-Delivery-Id` 标题进行去重——仅处理每个 id 一次，并将重复视为无操作。
 
 ### 自动禁用
 
-如果某个 webhook 产生**连续三次耗尽的投递**,B1 会自动将其禁用。修复你的端点后,再到 B1Admin 中重新启用该 webhook(或通过 `POST /membership/webhooks` 并设置 `"active": true`)。
+如果 webhook 产生 **三个连续耗尽的交付**，B1 会自动禁用它。修复您的端点，然后在 B1Admin 中重新启用 webhook（或通过 `POST /membership/webhooks`，`"active": true`）。
 
-## 检查与重新投递
+## 检查和重新交付
 
-B1Admin 中的 webhook 编辑器会显示一个**最近投递**表格——事件、状态、尝试次数、响应码和时间戳。点击某一行可查看发送的完整负载以及收到的响应。
+B1Admin 中的 webhook 编辑器显示**最近交付**表——事件、状态、尝试计数、响应代码和时间戳。选择行会显示发送的完整负载和返回的响应。
 
-使用**重新投递**可以用原始负载重新排队任意一次历史投递——适用于修复端点中的 bug 之后,或用于补投端点宕机期间错过的事件。
+使用**重新交付**重新队列任何过去的交付及其原始负载——在修复端点中的 bug 后，或在端点停机时补充事件，这会很有用。
 
 ## URL 要求
 
-由于 webhook URL 是由教会提供的,B1 会实施防范服务器端请求伪造(SSRF)的防护措施。如果某个 webhook URL 满足以下任一条件,则会在注册时以及每次投递前被拒绝:
+因为 webhook URL 是教会提供的，B1 执行防止服务器端请求伪造的防护。Webhook URL 被拒绝——在注册时和在每次交付前重新检查——如果它：
 
-- 未使用 **`https`**
-- 指向 `localhost`、`.local` / `.internal` 主机名,或者
-- 解析为**私有、环回、链路本地或云元数据**的 IP 地址
+- 不使用 **`https`**
+- 指向 `localhost`、`.local` / `.internal` 主机名，或
+- 解析为 **private、loopback、link-local 或 cloud-metadata** IP 地址
 
-你的端点必须是一个可公开访问的 HTTPS 服务。
+您的端点必须是公开可达的 HTTPS 服务。

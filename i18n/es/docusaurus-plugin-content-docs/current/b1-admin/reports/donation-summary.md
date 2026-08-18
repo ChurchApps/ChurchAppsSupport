@@ -6,46 +6,45 @@ title: "Resumen de Donaciones"
 
 <div class="article-intro">
 
-El reporte de Resumen de Donaciones le da una imagen clara de la actividad de donaciones de su iglesia. Úselo para hacer seguimiento de los totales de donaciones, monitorear las tendencias de ofrendas y preparar informes financieros para su equipo de liderazgo.
+El reporte de Resumen de Donaciones te da una visión clara de la actividad de donaciones de tu iglesia. Úsalo para rastrear totales de donaciones, monitorear tendencias de donaciones y preparar reportes financieros para tu equipo de liderazgo.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- Asegúrese de que las donaciones se estén [registrando de manera consistente](../donations/recording-donations.md) en su sistema
-- Necesita los [permisos](../settings/roles-permissions.md) apropiados para acceder a los reportes financieros
+- Asegúrate de que las donaciones estén siendo [registradas consistentemente](../donations/recording-donations.md) en tu sistema
+- Necesitas los [permisos](../settings/roles-permissions.md) apropiados para acceder a reportes financieros
 
 </div>
 
 ## Ejecutar el Reporte
 
-1. Navegue a **Reportes** desde el menú principal.
-2. Haga clic en la tarjeta **Resumen de Donaciones**.
-3. Establezca el **rango de fechas** para definir el período del reporte.
-4. Aplique filtros adicionales como **fondo** u otros criterios para reducir los resultados.
-5. El reporte mostrará el resumen de donaciones para el período seleccionado.
+1. Ve directamente a **admin.b1.church/reports/donationSummary** en tu navegador (los reportes no tienen entrada en el menú de navegación — marcar la dirección es la forma más fácil de volver a ella).
+2. Establece el **rango de fechas** para definir el período de reporte.
+3. Aplica filtros adicionales como **fondo** u otros criterios para reducir los resultados.
+4. El reporte mostrará el resumen de donaciones para el período seleccionado.
 
 ## Qué Muestra el Reporte
 
 El reporte de Resumen de Donaciones incluye:
 
-- **Total de donaciones** -- El monto total de donaciones para el período seleccionado.
-- **Cantidad de donantes** -- El número de donantes únicos que contribuyeron.
-- **Montos por fondo** -- Un desglose de las donaciones por diferentes fondos, si aplica.
+- **Donaciones totales** -- La cantidad total de donaciones para el período seleccionado.
+- **Conteo de donantes** -- El número de donantes únicos que contribuyeron.
+- **Montos por fondo** -- Un desglose de las donaciones entre diferentes fondos, si aplica.
 
 ## Usos Prácticos
 
-- **Planificación financiera** -- Revise las tendencias de donaciones para proyectar ingresos futuros y planificar su presupuesto.
-- **Informes para la junta** -- Genere resúmenes para reuniones regulares de junta o liderazgo con datos claros de donaciones.
-- **Revisiones de fin de año** -- Ejecute el reporte para el año completo para preparar resúmenes financieros anuales.
-- **Seguimiento de campañas** -- Filtre por fondo para hacer seguimiento del progreso en campañas especiales de donación o proyectos de construcción.
-- **Análisis estacional** -- Compare las donaciones entre diferentes períodos para comprender los patrones estacionales.
+- **Planificación financiera** -- Revisa tendencias de donaciones para pronosticar ingresos futuros y planificar tu presupuesto.
+- **Reportes de junta** -- Genera resúmenes para reuniones regulares de junta o liderazgo con datos claros de donaciones.
+- **Revisiones de fin de año** -- Ejecuta el reporte para el año completo para preparar resúmenes financieros anuales.
+- **Seguimiento de campañas** -- Filtra por fondo para rastrear el progreso en campañas de donaciones especiales o proyectos de construcción.
+- **Análisis estacional** -- Compara donaciones en diferentes períodos para entender patrones estacionales.
 
 :::tip
-Ejecute este reporte mensualmente para mantenerse informado sobre la salud financiera de su iglesia. Comparar datos mes a mes le ayuda a detectar tendencias de manera temprana.
+Ejecuta este reporte mensualmente para mantenerte informado sobre la salud financiera de tu iglesia. Comparar datos mes a mes te ayuda a detectar tendencias temprano.
 :::
 
 :::warning
-Los datos de donaciones provienen de las contribuciones registradas en su sistema. Asegúrese de que las donaciones se ingresen de manera consistente -- ya sea a través de donaciones en línea, procesamiento de cheques o entrada manual -- para obtener los reportes más precisos. Consulte [Registro de Donaciones](../donations/recording-donations.md) para más detalles.
+Los datos de donaciones provienen de contribuciones registradas en tu sistema. Asegúrate de que las donaciones se ingresen consistentemente — ya sea a través de donaciones en línea, procesamiento de cheques o entrada manual — para los reportes más precisos. Ver [Registración de Donaciones](../donations/recording-donations.md) para detalles.
 :::

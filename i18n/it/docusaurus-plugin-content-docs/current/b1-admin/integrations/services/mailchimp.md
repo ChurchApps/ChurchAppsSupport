@@ -6,90 +6,81 @@ title: "Mailchimp"
 
 <div class="article-intro">
 
-Convoglia le nuove persone, i donatori o i membri di gruppo di B1 in un pubblico Mailchimp in modo che la prossima serie di benvenuto, appello di fine anno o newsletter per volontari attinga da un elenco sempre aggiornato. B1 non ha una sincronizzazione integrata con Mailchimp — il collegamento vive interamente in Zapier (o Make): B1 attiva l'evento, Mailchimp acquisisce l'iscritto.
+Mantieni un pubblico Mailchimp sincronizzato con B1 automaticamente: le persone si iscrivono con nome, email e telefono; l'appartenenza a gruppi e liste diventa tag Mailchimp; le persone eliminate vengono archiviate. La sincronizzazione è integrata in B1 — nessun servizio di terze parti, nessuna misurazione per attività, e i cambiamenti arrivano in tempo quasi reale invece di su una pianificazione notturna.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Un account [Mailchimp](https://mailchimp.com) con almeno un pubblico in cui vuoi che le persone di B1 vengano inviate
-- Un account [Zapier](https://zapier.com) (il piano gratuito copre le chiese piccole)
-- Un utente B1Admin con il permesso **Modifica impostazioni** in modo da poter generare una chiave API
+- Un account [Mailchimp](https://mailchimp.com) con il pubblico che desideri che B1 gestisca
+- Una **Chiave API** Mailchimp (Mailchimp: icona profilo → **Account e fatturazione → Extra → Chiavi API**)
+- Il tuo **ID Pubblico** (Mailchimp: **Pubblico → Impostazioni → Nome e impostazioni predefinite del pubblico**)
+- Un utente B1Admin con il permesso **Modifica impostazioni**
 
 </div>
 
-## Cosa puoi collegare
+## Cosa si sincronizza
 
-| Direzione | Trigger B1 | Azione Mailchimp |
-|---|---|---|
-| B1 → Mailchimp | `person.created` | Aggiungi/Aggiorna iscritto |
-| B1 → Mailchimp | `donation.created` | Aggiungi iscritto a tag (ad es. "Ha donato nel 2026") |
-| B1 → Mailchimp | `group.member.added` | Aggiungi iscritto a tag associato a quel gruppo |
-| Mailchimp → B1 | Nuovo iscritto | B1 *Crea persona* |
+| Cambio B1 | Effetto Mailchimp |
+|---|---|
+| Persona aggiunta o aggiornata | Iscritto aggiunto/aggiornato (nome, cognome, telefono; i nuovi iscritti arrivano come `subscribed`) |
+| Persona eliminata (o cancellata GDPR) | Iscritto archiviato |
+| Persona aderisce a un gruppo | Tag denominato dopo il gruppo aggiunto |
+| Persona esce da un gruppo | Quel tag rimosso |
+| Persona entra in una lista salvata | Tag denominato dopo la lista aggiunto |
+| Persona esce da una lista salvata | Quel tag rimosso |
 
-Il lato Mailchimp espone molto di più (campagne, segmenti, automazioni) — consulta i [trigger Zapier di Mailchimp](https://zapier.com/apps/mailchimp/integrations) per l'elenco completo. Qualsiasi cosa mappabile dalla busta di B1 è utilizzabile.
+**Le liste salvate sono solitamente la fonte di tag migliore.** Una [lista salvata](/docs/b1-admin/people/lists) B1 è un pubblico basato su regole che si rivaluta — "tutti del campus Nord", "membri che hanno optato per email pastorali". Punta i tuoi segmenti Mailchimp ai tag delle liste e la sincronizzazione li mantiene; usa tag di gruppo per i mailing dei team ministero.
 
-## Configurazione
+La sincronizzazione è **unidirezionale** (B1 → Mailchimp) e tocca solo i campi standard di Mailchimp, quindi non può entrare in conflitto con i campi merge o i segmenti che gestisci in Mailchimp.
 
-### 1. Genera una chiave API B1
+## Setup
 
-In B1Admin vai su **Impostazioni → Sviluppatore → Chiavi API → Nuova chiave API**. Assegnale gli ambiti di cui lo Zap ha bisogno:
+1. In B1Admin vai a **Impostazioni → Sviluppatore → Webhook → Aggiungi Webhook**.
+2. Imposta il **Tipo di connettore** su **Mailchimp**.
+3. Incolla la tua **Chiave API Mailchimp** e l'**ID Pubblico**. La chiave è archiviata crittografata e non viene mai più visualizzata.
+4. Gli eventi rilevanti sono pre-selezionati; deseleziona quelli che non desideri (ad es. lascia gli eventi di persone ma salta i tag di gruppo).
+5. Salva. B1 verifica la chiave e il pubblico rispetto a Mailchimp prima di accettare — un errore di battitura fallisce immediatamente con un motivo.
 
-- `settings:write` — richiesto perché il trigger registri il suo webhook
-- `people:read` — così lo Zap può leggere nome, cognome, email, ecc.
-- (Facoltativo) `people:write` se prevedi anche una direzione Mailchimp → B1
+Usa **Invia test** in qualsiasi momento per verificare nuovamente la connessione. Ogni tentativo di sincronizzazione viene registrato nella cronologia di consegna del webhook con la risposta effettiva di Mailchimp, e le consegne non riuscite vengono ritentate automaticamente con backoff per circa cinque giorni.
 
-Salva e copia la stringa `cak_…` — viene mostrata una sola volta.
+## Importazione iniziale
 
-### 2. Costruisci lo Zap
+Il connettore sincronizza i *cambiamenti* dal momento in cui è attivo; non riempie la tua directory esistente. Per il giorno del setup:
 
-1. **Trigger:** `B1.church — Nuova persona`. Al primo utilizzo Zapier ti chiede di *Accedere a B1.church*; incolla la chiave API.
-2. **Azione:** `Mailchimp — Aggiungi/Aggiorna iscritto`. Mappa l'output del trigger:
-   - `data.contactInfo.email` → Indirizzo email
-   - `data.name.first` → Nome
-   - `data.name.last` → Cognome
-   - (Facoltativo) `data.id` → un campo di unione Mailchimp se vuoi mantenere l'id della persona di B1 associato.
-3. Attiva lo Zap. Zapier registra un webhook `person.created` su B1 — verifica in **Impostazioni → Sviluppatore → Webhook** che appaia una riga chiamata "Zapier — person.created".
+1. In B1Admin vai a **Persone**, cerca le persone che desideri (o esegui una lista salvata), e fai clic su **Esporta** per scaricare un CSV.
+2. In Mailchimp usa **Pubblico → Importa contatti** per caricare il CSV, applicando i tag durante l'importazione.
 
-Ed è tutto. Aggiungi una persona in B1Admin per confermare — il nuovo iscritto appare in Mailchimp in pochi secondi.
-
-## Ricette comuni
-
-### Etichetta automaticamente i donatori
-
-- **Trigger** — B1: Nuova donazione
-- **Azione** — B1: Trova persona (ricerca tramite `personId`) per ottenere l'email
-- **Azione** — Mailchimp: Aggiungi iscritto a tag (tag `Gave-2026`)
-
-### Avvia una serie di benvenuto specifica per gruppo
-
-- **Trigger** — B1: Nuovo membro del gruppo, filtrato per `data.groupId`
-- **Azione** — Mailchimp: Aggiungi iscritto a tag intitolato al gruppo; attiva la tua automazione esistente da quel tag
-
-### Bidirezionale: le nuove iscrizioni Mailchimp diventano contatti B1
-
-- **Trigger** — Mailchimp: Nuovo iscritto
-- **Azione** — B1: Crea persona (mappa Nome/Cognome/Email)
-
-## Alternativa Make
-
-L'[app Mailchimp](https://www.make.com/en/integrations/mailchimp) di Make copre 44 moduli — il collegamento è identico, con il trigger *Osserva eventi* di B1 che sostituisce quello di Zapier. Consulta il [documento di panoramica Make](../make) per il lato B1.
+Fare il carico iniziale attraverso l'importatore di Mailchimp ti tiene in controllo della domanda di consenso — importa solo le persone che hanno effettivamente accettato di ricevere le tue email. L'importazione in massa di un'intera directory come contatti iscritti può violare i termini di Mailchimp e la legge anti-spam (CAN-SPAM/GDPR).
 
 ## Limiti e note
 
-- **Il piano gratuito di Mailchimp limita contatti e pubblici** — uno Zap che inonda un pubblico gratuito oltre il suo limite inizierà a generare errori `4xx Member limit reached`. I log di Mailchimp lo rendono evidente.
-- **Mailchimp deduplica per email**, quindi rieseguire uno Zap sulla stessa persona di B1 la aggiorna sul posto; non crea duplicati.
-- **Le disiscrizioni da Mailchimp non tornano indietro verso B1.** Se vuoi che le disiscrizioni Mailchimp cancellino la preferenza "Invia email" di B1, costruisci esplicitamente lo Zap inverso.
+- **Sincronizzazione unidirezionale.** Le cancellazioni di iscrizione, i rimbalzi e le modifiche apportate in Mailchimp non tornano a B1. Qualcuno che si disiscrive in Mailchimp può ancora ricevere email inviate direttamente da B1 — tratta Mailchimp come la fonte di verità per il consenso al mailing di massa.
+- **Le persone senza un indirizzo email vengono saltate** (registrate come tali nella cronologia delle consegne) — gli iscritti a Mailchimp sono codificati per email.
+- **I cambiamenti dell'indirizzo email creano un nuovo iscritto.** Mailchimp identifica le persone per email, quindi cambiare l'email di qualcuno in B1 li aggiunge con il nuovo indirizzo; l'iscritto precedente rimane fino a quando non lo archivi in Mailchimp.
+- **Solo i campi standard si sincronizzano** — nome, cognome, telefono. Stato di iscrizione, campus e campi B1 personalizzati non si mappano ai campi merge di Mailchimp in questa versione; usa i tag della lista per segmentare invece.
+- **I nomi dei tag sono i nomi dei gruppi/liste.** Rinominare un gruppo o una lista inizia a contrassegnare con il nuovo nome; il vecchio tag rimane sui sottoscritti esistenti fino a quando non viene rimosso in Mailchimp.
+- **I limiti di contatto di Mailchimp si applicano ancora** — una sincronizzazione che spinge un pubblico di livello gratuito oltre il limite registrerà errori `Member limit reached` nella cronologia delle consegne.
+
+## Altre ricette (Zapier / Make)
+
+Qualsiasi cosa al di là della sincronizzazione del pubblico — contrassegnare i donatori su `donation.created`, una direzione inversa Mailchimp → B1, o sincronizzazione a una piattaforma di posta elettronica diversa (Constant Contact, Brevo, ecc.) — è ancora disponibile tramite [Zapier](../zapier) o [Make](../make), che si attivano sugli stessi eventi webhook:
+
+- **Contrassegna i donatori:** B1 *Nuova donazione* → B1 *Trova persona* → Mailchimp *Aggiungi iscritto a tag* (`Gave-2026`)
+- **Bidirezionale:** Mailchimp *Nuovo iscritto* → B1 *Crea persona*
+
+Se in precedenza hai collegato la sincronizzazione di persone/gruppi tramite Zapier, spegni questi Zap dopo aver abilitato il connettore nativo — eseguire entrambi elabora doppiamente ogni evento e brucia i compiti di Zapier per niente.
 
 ## Risoluzione dei problemi
 
-- **Lo Zap non si attiva mai** — controlla `Impostazioni → Sviluppatore → Webhook` per la riga `Zapier — person.created`. Se assente, alla chiave API mancava `settings:write` quando lo Zap è stato attivato. Rigenera, riconnetti, disattiva e riattiva lo Zap.
-- **Avviso `Member exists` su Aggiungi/Aggiorna** — cambia l'azione da *Aggiungi iscritto* a *Aggiungi/Aggiorna iscritto* (il verbo conta). La variante upsert è idempotente.
-- **Nome / cognome arrivano vuoti** — `data.name.first` e `data.name.last` di B1 sono popolati solo se quei campi sono impostati sulla persona. Mappa `data.name.display` come alternativa.
+- **Il salvataggio non riesce con "Mailchimp ha rifiutato la chiave API"** — la chiave è stata revocata o errata. Le chiavi devono terminare con un suffisso di data center come `-us21`.
+- **Il salvataggio non riesce con "audience not found"** — l'ID pubblico non esiste con quell'account. Copialo da **Pubblico → Impostazioni → Nome e impostazioni predefinite del pubblico** (non è il nome del pubblico).
+- **Una persona non è mai apparsa in Mailchimp** — controlla la cronologia delle consegne del webhook. "Skipped: person has no email address" significa esattamente quello; a `4xx` da Mailchimp mostra il motivo nel corpo della risposta.
+- **Le consegne si sono completamente fermate** — dopo consegne esaurite ripetute il webhook si disabilita automaticamente. Correggi la causa (di solito una chiave revocata), ri-abilitalo, e usa **Invia test** per confermare.
 
 ## Vedi anche
 
-- [Zapier (panoramica)](../zapier) — il lato B1 di ogni ricetta Zapier
-- [Make (panoramica)](../make) — stessa idea, builder visuale
-- [Webhook (riferimento sviluppatore)](/docs/developer/api/webhooks#event-catalog)
+- [Webhook (riferimento sviluppatore)](/docs/developer/api/webhooks) — il motore sottostante, catalogo degli eventi, semantica di consegna/riprovazione
+- [Liste salvate](/docs/b1-admin/people/lists) — pubblici basati su regole che si mappano naturalmente sui tag Mailchimp
+- [Zapier (panoramica)](../zapier) — per ricette al di là della sincronizzazione del pubblico

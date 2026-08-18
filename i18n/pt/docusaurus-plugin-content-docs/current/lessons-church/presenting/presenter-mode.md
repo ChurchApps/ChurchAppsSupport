@@ -6,47 +6,47 @@ title: "Modo Apresentador"
 
 <div class="article-intro">
 
-O Modo Apresentador transforma uma lição em uma exibição em tela cheia, otimizada para projeção. Ele é projetado para mostrar conteúdo de lições em telas de sala de aula, projetores ou TVs para que todos na sala possam acompanhar durante o horário da aula.
+Modo Apresentador transforma uma lição em uma exibição de tela inteira, amigável à projeção. É projetado para mostrar conteúdo de lição em telas de sala de aula, projetores ou TVs para que todos na sala possam acompanhar durante o tempo de aula.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- [Agende uma lição](../classrooms/scheduling-lessons.md) em uma sala de aula, ou navegue até uma lição pela [biblioteca de conteúdo](../browsing/index.md)
-- Certifique-se de que sua tela (projetor, TV ou monitor) está conectada e configurada
+- [Agende uma lição](../classrooms/scheduling-lessons.md) para uma sala de aula ou navegue para uma lição através da [biblioteca de conteúdo](../browsing/index.md)
+- Certifique-se de que seu display (projetor, TV ou monitor) está conectado e configurado
 
 </div>
 
-## Entrando no Modo Apresentador
+## Entrando em Modo Apresentador
 
-1. Abra a lição que deseja apresentar.
+1. Abra a lição que você quer apresentar.
 2. Clique no botão **Apresentar** na página da lição.
-3. A lição mudará para uma visualização em tela cheia com fundo preto e texto grande e fácil de ler.
+3. A lição mudará para uma visão de tela inteira com fundo preto e texto grande e fácil de ler.
 
-Uma vez no Modo Apresentador, você pode avançar pela lição seção por seção usando os controles de navegação na tela.
+Uma vez que você está em Modo Apresentador, você pode se mover através da lição seção por seção usando os controles de navegação na tela.
 
-## Como É a Aparência
+## Como Se Parece
 
-O Modo Apresentador usa um fundo escuro e limpo para que o conteúdo se destaque em uma tela projetada. Cada seção da lição é exibida uma por vez, mantendo o foco na atividade atual. Texto, imagens e vídeos incorporados são todos formatados para serem legíveis do outro lado da sala.
+Modo Apresentador usa um fundo limpo e escuro para que o conteúdo se destaque em uma tela projetada. Cada seção da lição é exibida um de cada vez, mantendo o foco na atividade atual. Texto, imagens e embeds de vídeo estão todos formatados para serem legíveis de toda uma sala.
 
-## Usando com o FreeShow
+## Usando com FreeShow
 
-O Lessons.church se integra com o [FreeShow](https://freeshow.app), um aplicativo de apresentação gratuito. O FreeShow pode importar conteúdo de lições diretamente do Lessons.church, permitindo incorporar slides de lições ao seu fluxo de apresentação existente. Isso é especialmente útil se você já usa o FreeShow para letras de louvor ou avisos.
+Lessons.church se integra com [FreeShow](https://freeshow.app), um aplicativo de apresentação gratuito. FreeShow pode extrair conteúdo de lição direto de Lessons.church, permitindo que você incorpore slides de lição em seu fluxo de trabalho de apresentação existente. Isso é especialmente útil se você já usa FreeShow para letras de adoração ou anúncios.
 
-## Usando com o FreePlay
+## Usando com FreePlay
 
-**[FreePlay](https://freeplay.church)** permite exibir lições em uma TV sem um computador separado. Instale o aplicativo em um dispositivo Android TV, Fire TV ou Apple TV, conecte-o à sua sala de aula do Lessons.church, e a lição agendada aparecerá automaticamente. Esta é uma ótima opção sem necessidade de intervenção para salas de aula que têm uma tela dedicada. Consulte a [documentação do FreePlay](/docs/freeplay/) para a configuração.
+**[FreePlay](https://freeplay.church)** permite que você exiba lições em uma TV sem um computador separado. Instale o aplicativo em um dispositivo Android TV, Fire TV ou Apple TV, conecte-o à sua sala de aula Lessons.church e a lição agendada aparecerá automaticamente. Essa é uma ótima opção sem mãos para salas de aula que têm uma tela dedicada. Veja a [documentação do FreePlay](/docs/freeplay/) para configuração.
 
 :::tip
-Se você está usando um projetor, certifique-se de que seu display está configurado para espelhar ou estender para o projetor antes de entrar no Modo Apresentador. Isso garante que a visualização em tela cheia apareça na tela correta.
+Se você está usando um projetor, certifique-se de que seu display está definido para espelhar ou estender para o projetor antes de entrar em Modo Apresentador. Isso garante que a visão de tela inteira apareça na tela correta.
 :::
 
 ## Saindo do Modo Apresentador
 
-Para sair do Modo Apresentador, pressione a tecla **Escape** ou clique no botão de sair no canto da tela. Você retornará à visualização normal da lição.
+Para deixar Modo Apresentador, pressione a chave **Escape** ou clique no botão de saída no canto da tela. Você retornará à visão normal da lição.
 
 ## Artigos Relacionados
 
-- [Guias do Voluntário](./volunteer-guides.md) -- Compartilhar instruções específicas por função com sua equipe enquanto você apresenta
-- [Downloads e Materiais](./downloads.md) -- Imprimir folhetos e folhas de atividades para complementar a apresentação
+- [Guias de Voluntário](./volunteer-guides.md) -- Compartilhe instruções específicas de função com sua equipe enquanto você apresenta
+- [Downloads e Materiais](./downloads.md) -- Imprima apostilas e folhas de atividade para complementar a apresentação

@@ -1,68 +1,68 @@
 ---
-title: "Rapports de fréquentation"
+title: "Rapports de présence"
 ---
 
-# Rapports de fréquentation
+# Rapports de présence
 
 <div class="article-intro">
 
-B1 Admin fournit trois rapports de fréquentation pour vous aider à comprendre comment les personnes participent à vos cultes et groupes. Chaque rapport offre une perspective différente sur vos données de fréquentation, des tendances générales aux détails quotidiens.
+B1 Admin fournit trois rapports de présence pour vous aider à comprendre comment les gens s'engagent avec vos services et groupes. Chaque rapport offre une perspective différente sur vos données de présence, des tendances de haut niveau aux ventilations quotidiennes.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Assurez-vous que la fréquentation est [suivie de manière cohérente](../attendance/tracking-attendance.md) pour vos cultes et groupes
-- Vérifiez que vos [groupes](../groups/creating-groups.md) et cultes sont configurés dans B1 Admin
-- Vous avez besoin des [autorisations](../settings/roles-permissions.md) appropriées pour accéder aux rapports
+- Assurez-vous que la présence est [suivie régulièrement](../attendance/tracking-attendance.md) pour vos services et groupes
+- Assurez-vous que vos [groupes](../groups/creating-groups.md) et services sont configurés dans B1 Admin
+- Vous devez avoir les [permissions](../settings/roles-permissions.md) appropriées pour accéder aux rapports
 
 </div>
 
-## Tendance de fréquentation
+## Tendance de présence
 
-Le rapport Tendance de fréquentation montre l'évolution de la fréquentation au fil du temps pour vos cultes.
+Le rapport Tendance de présence montre comment la présence change au fil du temps pour vos services.
 
-1. Accédez à **Rapports** et cliquez sur la carte **Tendance de fréquentation**.
-2. Définissez la **période** pour délimiter l'intervalle de temps.
-3. Sélectionnez un **culte** ou un **groupe** pour filtrer les résultats.
-4. Le rapport affiche une courbe de tendance montrant les effectifs de fréquentation sur la période sélectionnée.
+1. Allez directement à **admin.b1.church/reports/attendanceTrend** dans votre navigateur (les rapports n'ont pas d'entrée dans le menu de navigation — mettre en signet l'adresse est le moyen le plus facile d'y revenir).
+2. Définissez la **plage de dates** pour définir la période.
+3. Sélectionnez un **service** ou un **groupe** pour filtrer les résultats.
+4. Le rapport affiche une ligne de tendance montrant les chiffres de présence sur la période sélectionnée.
 
-Ce rapport est utile pour repérer des tendances telles que les baisses saisonnières, les tendances de croissance ou l'impact d'événements spéciaux.
+Ce rapport est utile pour repérer des modèles comme les creux saisonniers, les tendances de croissance ou l'impact d'événements spéciaux.
 
-## Fréquentation par groupe
+## Présence par groupe
 
-Le rapport Fréquentation par groupe affiche les totaux de fréquentation par groupe pour une période sélectionnée.
+Le rapport Présence par groupe affiche les totaux de présence par groupe pour une plage de dates sélectionnée.
 
-1. Accédez à **Rapports** et cliquez sur la carte **Fréquentation par groupe**.
-2. Définissez la **période** pour le rapport.
-3. Sélectionnez le ou les **groupes** que vous souhaitez examiner.
-4. Le rapport affiche les chiffres totaux de fréquentation pour chaque groupe.
+1. Allez directement à **admin.b1.church/reports/groupAttendance** dans votre navigateur.
+2. Définissez la **plage de dates** pour le rapport.
+3. Sélectionnez le ou les **groupe(s)** que vous souhaitez examiné.
+4. Le rapport affiche les chiffres de présence totale pour chaque groupe.
 
-Utilisez ce rapport pour comparer la fréquentation entre les groupes et identifier ceux qui sont en croissance ou qui nécessitent une attention particulière.
+Utilisez ce rapport pour comparer la présence entre les groupes et identifier les groupes qui connaissent une croissance ou qui ont besoin d'attention.
 
-## Fréquentation quotidienne par groupe
+## Présence quotidienne par groupe
 
-Le rapport Fréquentation quotidienne par groupe fournit un détail jour par jour des données de fréquentation de vos groupes.
+Le rapport Présence quotidienne par groupe fournit une ventilation jour après jour des données de présence pour vos groupes.
 
-1. Accédez à **Rapports** et cliquez sur la carte **Fréquentation quotidienne par groupe**.
-2. Définissez la **période** pour le rapport.
-3. Sélectionnez le ou les **groupes** que vous souhaitez examiner.
-4. Le rapport affiche les chiffres de fréquentation pour chaque jour individuel de la période.
+1. Allez directement à **admin.b1.church/reports/dailyGroupAttendance** dans votre navigateur.
+2. Définissez la **plage de dates** pour le rapport.
+3. Sélectionnez le ou les **groupe(s)** que vous souhaitez examiné.
+4. Le rapport affiche les chiffres de présence pour chaque jour individuel dans la plage.
 
-Ce rapport vous donne un niveau de détail granulaire, utile pour comprendre les variations d'une semaine à l'autre ou identifier des jours spécifiques avec une fréquentation anormalement élevée ou basse.
+Ce rapport vous donne des détails granulaires, ce qui est utile pour comprendre la variation semaine après semaine ou identifier les jours spécifiques avec une présence inhabituellement élevée ou basse.
 
 :::tip
-Utilisez le rapport Tendance de fréquentation pour une vue d'ensemble et le rapport Fréquentation quotidienne par groupe lorsque vous avez besoin d'examiner des dates spécifiques.
+Utilisez le rapport Tendance de présence pour un aperçu de haut niveau et le rapport Présence quotidienne par groupe lorsque vous devez explorer des dates spécifiques.
 :::
 
 ## Utilisations pratiques
 
-- **Planification** -- Utilisez les tendances de fréquentation pour planifier les places assises, le personnel et les ressources pour les prochains cultes.
-- **Sensibilisation** -- Identifiez les tendances de baisse de fréquentation suffisamment tôt pour pouvoir assurer le suivi des membres.
-- **Rapports pour le conseil** -- Incluez les données de fréquentation dans vos rapports réguliers de direction pour montrer la santé des ministères.
-- **Évaluation des événements** -- Comparez la fréquentation avant et après les événements spéciaux pour mesurer leur impact.
+- **Planification** -- Utilisez les tendances de présence pour planifier les places assises, les effectifs et les ressources pour les services à venir.
+- **Sensibilisation** -- Identifiez tôt les modèles de baisse de présence pour pouvoir faire un suivi auprès des membres.
+- **Rapports de conseil** -- Incluez les données de présence dans vos rapports de leadership réguliers pour montrer la santé du ministère.
+- **Évaluation d'événement** -- Comparez la présence avant et après les événements spéciaux pour mesurer leur impact.
 
 :::warning
-Les données de fréquentation sont enregistrées via vos processus d'enregistrement des groupes et des cultes. Si la fréquentation n'est pas suivie de manière cohérente, vos rapports ne refléteront pas fidèlement la participation réelle. Consultez [Suivi de la fréquentation](../attendance/tracking-attendance.md) pour les instructions de configuration.
+Les données de présence sont enregistrées par le biais de vos processus d'enregistrement de groupe et de service. Si la présence n'est pas suivie régulièrement, vos rapports ne refléteront pas avec précision la participation réelle. Voir [Suivi de la présence](../attendance/tracking-attendance.md) pour les instructions de configuration.
 :::

@@ -6,39 +6,40 @@ title: "Rapporter"
 
 <div class="article-intro">
 
-Rapportsiden gir deg rask tilgang til forhåndsinnebygde rapporter som hjelper deg med å forstå kirkens data. Bruk disse rapportene til å spore oppmøtetrender, overvåke givingsaktivitet og holde kontakt med menigheten gjennom fødselsdagsfeiringer.
+Rapporter-siden gir deg rask tilgang til forhåndsbygde rapporter som hjelper deg med å forstå kirkdataene dine. Bruk disse rapportene til å spore oppmøtetrender, overvåke giveaktivitet og holde kontakten med menigheten gjennom bursdagsfeiring.
 
 </div>
 
 ## Tilgjengelige rapporter
 
-Rapportsiden viser rapportkort for hver tilgjengelig rapport. Klikk på ethvert kort for å åpne rapporten med filtrene.
+Rapporter har ingen oppføring i B1 Admin-navigasjonsmenyen -- gå direkte til URL-en for rapporten du ønsker (bokmerking er den enkleste måten å komme tilbake på). Hver rapport åpnes rett til filterne.
 
-- **[Fødselsdagsrapport](./birthday-report)** -- Se kommende fødselsdager for menighetsmedlemmer.
-- **[Oppmøtetrendrer](./attendance-reports)** -- Se hvordan oppmøtemønstre endres over tid på tvers av tjenestene.
-- **[Gruppeoppmøte](./attendance-reports)** -- Se oppmøtetotaler etter gruppe for et valgt datoområde.
-- **[Daglig gruppeoppmøte](./attendance-reports)** -- Få en dag-for-dag fordeling av gruppeoppmøtedata.
-- **[Donasjonssammendrag](./donation-summary)** -- Gjennomgå givingtotaler og trender for finansiell planlegging.
-- **[Revisjonlogg](./audit-log)** -- Spor alle endringer og handlinger på tvers av kirkens styringssystem (funnet under Innstillinger > Revisjonlogg).
+- **[Bursdagsrapport](./birthday-report)** (`admin.b1.church/reports/birthdays`) -- Se kommende bursdager for menighetsmedlemmene.
+- **[Jubileumrapport](./anniversary-report)** (`admin.b1.church/reports/anniversaries`) -- Se kommende bryllupsjubileer for menighetsmedlemmene.
+- **[Oppmøte trend](./attendance-reports)** (`admin.b1.church/reports/attendanceTrend`) -- Se hvordan oppmøtemønstrene endres over tid på tvers av tjenestene.
+- **[Gruppeoppmøte](./attendance-reports)** (`admin.b1.church/reports/groupAttendance`) -- Vis oppmøtetotaler etter gruppe for et valgt datoområde.
+- **[Daglig gruppeoppmøte](./attendance-reports)** (`admin.b1.church/reports/dailyGroupAttendance`) -- Få en dag-for-dag-sammendelinger av gruppeoppmøtedata.
+- **[Gavesammendrag](./donation-summary)** (`admin.b1.church/reports/donationSummary`) -- Gjennomgå givetotaler og -trender for økonomisk planlegging.
+- **[Revisjonsslogg](./audit-log)** -- Spor alle endringer og handlinger på tvers av kirkledelsessystemet (funnet under Innstillinger > Revisjonsslogg).
 
-## Bruk av rapporter
+## Bruke rapporter
 
-1. Gå til **Rapporter** fra hovedmenyen.
-2. Klikk på et **rapportkort** for å åpne det.
-3. Bruk **filtrene** øverst i hver rapport for å begrense dataene etter datoområde, gruppe, service eller andre kriterier.
-4. Gjennomgå resultatene som vises i rapporten.
+1. Gå direkte til rapportens URL, for eksempel **admin.b1.church/reports/birthdays**.
+2. Bruk **filtrene** øverst på rapporten for å snevre inn dataene etter datoområde, gruppe, tjeneste eller andre kriterier.
+3. Gjennomgå resultatene som vises i rapporten.
 
 :::tip
-Kjør rapporter regelmessig for å holde deg oppdatert på oppmøtetrender, kommende fødselsdager og givingsmønstre. Disse dataene hjelper deg med å planlegge ministerier og utreach mer effektivt.
+Kjør rapporter regelmessig for å holde deg oppdatert på oppmøtetrender, kommende bursdager og givermonster. Disse dataene hjelper deg med å planlegge ministrier og utreach mer effektivt.
 :::
 
 :::info
-Rapportdata avhenger av konsistent dataregistrering. Kontroller at teamet ditt [sporer oppmøte](../attendance/tracking-attendance.md), [registrerer donasjoner](../donations/recording-donations.md) og holder [personposter](../people/adding-people.md) oppdatert for de mest nøyaktige resultatene.
+Rapportdata avhenger av konsistent datainntasting. Sørg for at teamet ditt [sporer oppmøte](../attendance/tracking-attendance.md), [registrerer gaver](../donations/recording-donations.md), og holder [personpostene](../people/adding-people.md) oppdatert for de mest nøyaktige resultatene.
 :::
 
 ## Lær mer
 
-- [Fødselsdagsrapport](./birthday-report) -- Finne og bruke fødselsdagsdata.
-- [Oppmøterapporter](./attendance-reports) -- Forståelse av de tre oppmøterapportene.
-- [Donasjonssammendrag](./donation-summary) -- Gjennomgang av givingdata og finansielle oppsummeringer.
-- [Revisjonlogg](./audit-log) -- Sporing av systemaktivitet og endringer.
+- [Bursdagsrapport](./birthday-report) -- Finne og bruke bursdagsdata.
+- [Jubileumrapport](./anniversary-report) -- Finne og bruke jubileumdata.
+- [Oppmøterrapporter](./attendance-reports) -- Forstå de tre oppmøterapportene.
+- [Gavesammendrag](./donation-summary) -- Gjennomgå giverdata og økonomiske sammendelinger.
+- [Revisjonsslogg](./audit-log) -- Spore systemaktivitet og endringer.

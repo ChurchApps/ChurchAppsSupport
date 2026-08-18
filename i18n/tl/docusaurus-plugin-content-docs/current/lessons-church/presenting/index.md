@@ -1,42 +1,42 @@
 ---
-title: "Pagpapahayag"
+title: "Pagpresenta"
 ---
 
-# Pagpapahayag
+# Pagpresenta
 
 <div class="article-intro">
 
-Ang Lessons.church ay nagbibigay ng mga tool upang matulungan ang iyong mga boluntaryo na magturo ng bawat aralin nang may kumpiyansa. Kung nagpo-project ka ng nilalaman sa isang screen, nagbibigay ng mga naka-print na gabay, o namamahagi ng mga activity sheet, lahat ng kailangan mo ay built-in sa platform.
+Ang Lessons.church ay nagbibigay ng mga tool upang tulungan ang iyong mga volunteer na tiyak na ituro ang bawat leksyon. Gusto man ninyong i-project ang content sa isang screen, magbigay ng printed guides, o magbahagi ng activity sheets, lahat ng kailangan mo ay itinayo na direkta sa platform.
 
 </div>
 
 ## Presenter Mode
 
-Kapag oras na para magturo, maaari mong ilunsad ang **Presenter Mode** nang direkta mula sa anumang aralin. Nagbibigay ito sa iyo ng full-screen, projection-friendly na view na dinisenyo para sa mga screen at projector ng silid-aralan. Nag-i-integrate din ito sa FreeShow presentation software at sa [FreePlay](https://freeplay.church) para sa mga automated na display.
+Kapag panahon na ang ituro, maaari mong ilunsad ang **Presenter Mode** direkta mula sa anumang leksyon. Ito ay nagbibigay sa iyo ng isang full-screen, projection-friendly view na dinisenyo para sa mga classroom screen at projectors. Ito ay sumasaklaw din sa FreeShow presentation software at [FreePlay](https://freeplay.church) para sa automated displays.
 
-## Mga Gabay para sa Boluntaryo
+## Volunteer Guides
 
-Ang bawat aralin ay may kasamang mga gabay na batay sa tungkulin upang malaman ng iyong mga boluntaryo kung ano ang eksaktong sasabihin at gagawin. Ang isang greeter ay nakikita ang kanilang mga instruksiyon, ang isang small-group leader ay nakikita ang kanila, at iba pa. Ang mga gabay ay maaaring tingnan sa isang telepono o tablet habang nasa klase, o i-print nang maaga.
+Bawat leksyon ay may role-based guides upang ang iyong mga volunteer ay tumpak na alam kung ano ang sasabihin at gawin. Ang isang greeter ay nakakakita ng kanilang mga tagubilin, ang isang small-group leader ay nakakakita ng kanilang, at iba pa. Ang mga guide ay maaaring tingnan sa isang phone o tablet sa panahon ng klase, o i-print nang maaga.
 
-## Mga Nada-download na Materyal
+## Downloadable Materials
 
-Ang mga aralin ay may kasamang mga nada-download na mapagkukunan tulad ng mga activity sheet, coloring page, gabay para sa lider, at mga supplementary PDF. Ang mga materyal na ito ay available sa mga antas ng programa, pag-aaral, at aralin, kaya maaari mong kunin ang lahat ng kailangan mo sa isang lugar.
+Ang mga leksyon ay may mga kasamang downloadable na mapagkukunan tulad ng activity sheets, coloring pages, leader guides, at supplementary PDFs. Ang mga materyales na ito ay available sa programa, pag-aaral, at lesson levels, kaya maaari mong kunin ang lahat ng kailangan mo sa isang lugar.
 
-## Pagsasama-sama ng Lahat
+## Pinagsama-sama Ang Lahat
 
-Ang isang karaniwang daloy ng trabaho tuwing umaga ng Linggo ay maaaring ganito ang hitsura:
+Ang isang karaniwang Sunday morning workflow ay maaaring ganito:
 
-1. Mag-download at mag-print ng anumang activity sheet o coloring page mas maaga sa linggo.
-2. Ibahagi ang mga link ng gabay para sa boluntaryo sa iyong team upang masuri nila ang kanilang mga tungkulin.
-3. Buksan ang aralin sa **Presenter Mode** sa computer o TV ng silid-aralan.
-4. Dumaan sa mga seksyon ng aralin habang sinusundan ng mga boluntaryo ang kanilang mga indibidwal na gabay.
+1. I-download at i-print ang anumang activity sheets o coloring pages nang mas maaga sa linggo.
+2. Ibahagi ang volunteer guide links sa iyong team upang sila ay makapagsuri ng kanilang mga papel.
+3. Buksan ang leksyon sa **Presenter Mode** sa classroom computer o TV.
+4. Maglakbay sa mga lesson sections habang sumusunod ang mga volunteer sa kanilang mga indibidwal na gabay.
 
 :::tip
-Ang paghahanda ng mga materyal at pagbabahagi ng mga link ng gabay ilang araw bago ang klase ay nagbibigay sa iyong mga boluntaryo ng oras na magsuri at dumating na may kumpiyansa tuwing umaga ng Linggo.
+Ang paghahanda ng mga materyales at pagbabahagi ng guide links ilang araw bago ang klase ay nagbibigay sa iyong mga volunteer ng oras na suriin at dumating na confident sa Sunday morning.
 :::
 
-## Mga Susunod na Hakbang
+## Next Steps
 
-- [Presenter Mode](./presenter-mode.md) -- Ipakita ang mga aralin sa isang screen o projector
-- [Mga Gabay para sa Boluntaryo](./volunteer-guides.md) -- Mga instruksiyon na batay sa tungkulin para sa iyong team
-- [Mga Download at Materyal](./downloads.md) -- Mag-print at mamahagi ng mga mapagkukunan ng aralin
+- [Presenter Mode](./presenter-mode.md) -- Ipakita ang mga leksyon sa isang screen o projector
+- [Volunteer Guides](./volunteer-guides.md) -- Role-based instructions para sa iyong team
+- [Downloads at Materials](./downloads.md) -- I-print at ibahagi ang mga mapagkukunan ng leksyon

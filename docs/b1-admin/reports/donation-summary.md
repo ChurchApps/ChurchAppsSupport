@@ -20,11 +20,10 @@ The Donation Summary report gives you a clear picture of your church's giving ac
 
 ## Running the Report
 
-1. Navigate to **Reports** from the main menu.
-2. Click the **Donation Summary** card.
-3. Set the **date range** to define the reporting period.
-4. Apply additional filters such as **fund** or other criteria to narrow the results.
-5. The report will display the giving summary for the selected period.
+1. Go directly to **admin.b1.church/reports/donationSummary** in your browser (reports have no entry in the navigation menu — bookmarking the address is the easiest way to get back to it).
+2. Set the **date range** to define the reporting period.
+3. Apply additional filters such as **fund** or other criteria to narrow the results.
+4. The report will display the giving summary for the selected period.
 
 ## What the Report Shows
 

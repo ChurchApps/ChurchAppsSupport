@@ -1,52 +1,52 @@
 ---
-title: "Modo de presentador"
+title: "Modo de Presentador"
 ---
 
-# Modo de presentador
+# Modo de Presentador
 
 <div class="article-intro">
 
-El Modo de presentador convierte una lección en una visualización a pantalla completa, optimizada para proyección. Está diseñado para mostrar el contenido de las lecciones en pantallas de aula, proyectores o televisores para que todos en la sala puedan seguir durante el tiempo de clase.
+Modo de Presentador convierte una lección en una pantalla completa amigable para la proyección. Está diseñado para mostrar contenido de lecciones en pantallas de aula, proyectores o TVs para que todos en la sala puedan seguir durante la clase.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de comenzar</h4>
+<h4>Antes de Comenzar</h4>
 
-- [Programe una lección](../classrooms/scheduling-lessons.md) en un aula, o navegue a una lección a través de la [biblioteca de contenido](../browsing/index.md)
-- Asegúrese de que su pantalla (proyector, televisor o monitor) esté conectada y configurada
+- [Programa una lección](../classrooms/scheduling-lessons.md) a un aula, o navega a una lección a través de la [biblioteca de contenido](../browsing/index.md)
+- Asegúrate de que tu pantalla (proyector, TV o monitor) esté conectada y configurada
 
 </div>
 
-## Entrar al Modo de presentador
+## Entrando en Modo de Presentador
 
-1. Abra la lección que desea presentar.
-2. Haga clic en el botón **Presentar** en la página de la lección.
-3. La lección cambiará a una vista de pantalla completa con un fondo negro y texto grande, fácil de leer.
+1. Abre la lección que deseas presentar.
+2. Haz clic en el botón **Presentar** en la página de la lección.
+3. La lección cambiará a una vista de pantalla completa con un fondo negro y texto grande y fácil de leer.
 
-Una vez que esté en el Modo de presentador, puede avanzar por la lección sección por sección usando los controles de navegación en pantalla.
+Una vez que estés en Modo de Presentador, puedes avanzar a través de la lección sección por sección usando los controles de navegación en pantalla.
 
-## Cómo se ve
+## Cómo Se Ve
 
-El Modo de presentador utiliza un fondo oscuro y limpio para que el contenido destaque en una pantalla proyectada. Cada sección de la lección se muestra una a la vez, manteniendo el enfoque en la actividad actual. El texto, las imágenes y los videos incrustados están formateados para ser legibles desde el otro lado de la sala.
+Modo de Presentador usa un fondo limpio y oscuro para que el contenido destaque en una pantalla proyectada. Cada sección de la lección se muestra de una vez, manteniendo el enfoque en la actividad actual. Texto, imágenes e inserciones de video están todos formateados para ser legibles desde el otro lado de una sala.
 
-## Uso con FreeShow
+## Usando con FreeShow
 
-Lessons.church se integra con [FreeShow](https://freeshow.app), una aplicación de presentación gratuita. FreeShow puede obtener el contenido de las lecciones directamente de Lessons.church, permitiéndole incorporar diapositivas de lecciones en su flujo de trabajo de presentación existente. Esto es especialmente útil si ya utiliza FreeShow para letras de canciones de adoración o anuncios.
+Lessons.church se integra con [FreeShow](https://freeshow.app), una aplicación de presentación gratuita. FreeShow puede extraer contenido de lecciones directamente de Lessons.church, permitiéndote incorporar diapositivas de lecciones en tu flujo de trabajo de presentación existente. Esto es especialmente útil si ya usas FreeShow para letras de adoración o anuncios.
 
-## Uso con FreePlay
+## Usando con FreePlay
 
-**[FreePlay](https://freeplay.church)** le permite mostrar lecciones en un televisor sin una computadora adicional. Instale la aplicación en un dispositivo Android TV, Fire TV o Apple TV, conéctelo al aula de su Lessons.church, y la lección programada aparecerá automáticamente. Esta es una excelente opción sin intervención manual para aulas que tienen una pantalla dedicada. Consulte la [documentación de FreePlay](/docs/freeplay/) para la configuración.
+**[FreePlay](https://freeplay.church)** te permite mostrar lecciones en un TV sin una computadora separada. Instala la aplicación en un dispositivo Android TV, Fire TV o Apple TV, conéctalo a tu aula de Lessons.church, y la lección programada aparecerá automáticamente. Esta es una excelente opción sin manos para aulas que tienen una pantalla dedicada. Ver la [documentación de FreePlay](/docs/freeplay/) para configuración.
 
 :::tip
-Si está usando un proyector, asegúrese de que su pantalla esté configurada para duplicar o extender al proyector antes de entrar al Modo de presentador. Esto garantiza que la vista a pantalla completa aparezca en la pantalla correcta.
+Si estás usando un proyector, asegúrate de que tu pantalla esté configurada para espejar o extender al proyector antes de entrar en Modo de Presentador. Esto asegura que la vista de pantalla completa aparezca en la pantalla correcta.
 :::
 
-## Salir del Modo de presentador
+## Saliendo del Modo de Presentador
 
-Para salir del Modo de presentador, presione la tecla **Escape** o haga clic en el botón de salida en la esquina de la pantalla. Volverá a la vista normal de la lección.
+Para dejar Modo de Presentador, presiona la tecla **Escape** o haz clic en el botón de salida en la esquina de la pantalla. Volverás a la vista de lección normal.
 
-## Artículos relacionados
+## Artículos Relacionados
 
-- [Guías para voluntarios](./volunteer-guides.md) -- Comparta instrucciones específicas por rol con su equipo mientras presenta
-- [Descargas y materiales](./downloads.md) -- Imprima folletos y hojas de actividades para complementar la presentación
+- [Guías de Voluntarios](./volunteer-guides.md) -- Comparte instrucciones específicas por rol con tu equipo mientras presentas
+- [Descargas y Materiales](./downloads.md) -- Imprime folletos y hojas de actividad para complementar la presentación

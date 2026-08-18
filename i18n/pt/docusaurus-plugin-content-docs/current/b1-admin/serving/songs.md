@@ -6,68 +6,79 @@ title: "Músicas"
 
 <div class="article-intro">
 
-A página de Músicas gerencia sua biblioteca de músicas de louvor. Mantenha todos os detalhes, letras e arranjos das músicas em um só lugar para que sua equipe de louvor possa se preparar facilmente para os próximos cultos e manter um repertório consistente.
+A página Músicas gerencia sua biblioteca de canções de adoração. Mantenha todos os detalhes, letras e arranjos de suas canções em um só lugar para que sua equipe de adoração possa se preparar facilmente para próximos serviços e manter um repertório consistente.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Navegue até a seção **Serviço** no B1 Admin para acessar a página de Músicas
-- Opcionalmente, tenha seus [planos de culto](./plans.md) configurados para poder vincular músicas diretamente na [ordem do culto](./service-order.md)
+- Navegue para a seção **Serviço** no B1 Admin para acessar a página Músicas
+- Opcionalmente, tenha seus [planos de serviço](./plans.md) configurados para que possa vincular músicas diretamente ao [ordem de serviço](./service-order.md)
 
 </div>
 
-## Navegando pela Sua Biblioteca de Músicas
+## Navegando por Sua Biblioteca de Canções
 
-Ao abrir a página **Músicas**, suas músicas são exibidas como cartões. Cada cartão mostra a imagem em miniatura da música, o título, o artista e a duração. Percorra a biblioteca ou use a busca para encontrar o que precisa.
+Quando você abre a página **Músicas**, suas canções são exibidas como cartões. Cada cartão mostra a imagem em miniatura da canção, título, artista e duração. Percorra a biblioteca ou use a pesquisa para encontrar o que você precisa.
 
-## Buscando Músicas
+## Procurando Canções
 
-1. Clique no botão **Buscar** na página de Músicas.
-2. Digite um **título** de música ou o nome de um **artista**.
-3. Os resultados serão filtrados conforme você digita, mostrando músicas correspondentes da sua biblioteca.
+1. Clique no botão **Pesquisa** na página Músicas.
+2. Digite um **título** de canção ou nome do **artista**.
+3. Os resultados serão filtrados conforme você digita, mostrando canções correspondentes de sua biblioteca.
 
-## Adicionando uma Música
+## Adicionando uma Canção
 
-1. Clique em **Adicionar Música** na página de Músicas.
-2. Pesquise no banco de dados externo de músicas por título ou artista.
-3. Selecione a música que deseja adicionar.
-4. A música será adicionada à sua biblioteca com seus detalhes básicos pré-preenchidos.
+1. Clique em **Adicionar Canção** na página Músicas.
+2. Procure o banco de dados de canções externo por título ou artista.
+3. Selecione a canção que deseja adicionar.
+4. A canção será adicionada à sua biblioteca com seus detalhes básicos pré-preenchidos.
 
 :::tip
-Depois de adicionar uma música, clique nela para revisar e atualizar seus detalhes, adicionar arranjos ou anexar links externos como vídeos do YouTube ou cifras.
+Depois de adicionar uma canção, clique nela para revisar e atualizar seus detalhes, adicionar arranjos ou anexar links externos como vídeos do YouTube ou tabelas de acordes.
 :::
 
-## Visualizando e Editando uma Música
+## Visualizando e Editando uma Canção
 
-Clique em qualquer cartão de música para abrir sua página de detalhes. A partir daí você pode:
+Clique em qualquer cartão de canção para abrir sua página de detalhes. De aqui você pode:
 
-- **Editar detalhes da música** -- Atualizar o título, artista, duração e outros metadados.
-- **Gerenciar arranjos** -- Cada música pode ter vários arranjos (por exemplo, tons ou versões diferentes). Adicione, edite ou remova arranjos conforme necessário.
-- **Adicionar letras** -- Insira ou atualize a letra de cada arranjo.
-- **Definir o tom** -- Especifique o tom musical de cada arranjo usando o seletor de tom ao lado da letra. Alterar o tom transpõe imediatamente os acordes exibidos, tanto na página do arranjo quanto ao abrir a música a partir de um plano de culto, para que sua equipe sempre veja os acordes no tom em que realmente estão tocando.
-- **Adicionar links externos** -- Anexe links para recursos como vídeos do YouTube, cifras ou partituras hospedadas em outro lugar.
+- **Editar detalhes da canção** -- Atualize o título, artista, duração e outros metadados.
+- **Gerenciar arranjos** -- Cada canção pode ter múltiplos arranjos (por exemplo, chaves diferentes ou versões). Adicione, edite ou remova arranjos conforme necessário.
+- **Adicionar letras** -- Digite ou atualize as letras para cada arranjo.
+- **Definir a chave** -- Especifique a chave musical para cada arranjo usando o seletor de chave ao lado das letras. Mudar a chave transpõe os acordes exibidos imediatamente, tanto na página do arranjo quanto ao abrir a canção de um plano de serviço, para que sua equipe sempre veja acordes na chave que estão realmente tocando.
+- **Adicionar links externos** -- Anexe links a recursos como vídeos do YouTube, tabelas de acordes ou partituras hospedadas em outro lugar.
 
 ## Arranjos
 
-Um arranjo representa uma versão distinta de uma música — por exemplo, uma versão moderna mais rápida versus uma versão acústica mais lenta, ou a mesma música em um tom diferente para uma equipe diferente. Cada arranjo da mesma música compartilha o título e o artista, mas tem suas próprias configurações independentes:
+Um arranjo representa uma versão distinta de uma canção — por exemplo, uma versão moderna mais rápida versus uma versão acústica mais lenta, ou a mesma canção em uma chave diferente para uma equipe diferente. Cada arranjo da mesma canção compartilha o título e artista da canção, mas tem suas próprias configurações independentes:
 
-- **Tom** — o tom musical em que o arranjo é executado
+- **Chave** — a chave musical em que o arranjo é executado
 - **BPM** — andamento em batidas por minuto
-- **Duração** — duração em segundos
-- **Compasso** — fórmula de compasso (por exemplo, 4/4, 3/4, 6/8)
-- **Sequência** — a estrutura de acordes/seções (por exemplo, Introdução → Verso → Refrão → Ponte)
-- **Letra** — para exibição ou projeção
-- **Links externos** — cifras, gravações do YouTube, partituras ou outros recursos
+- **Comprimento** — duração em segundos
+- **Medida** — assinatura de tempo (por exemplo, 4/4, 3/4, 6/8)
+- **Sequência** — a estrutura de acordes/seção (por exemplo, Intro → Verso → Refrão → Ponte)
+- **Letras** — para exibição ou projeção
+- **Links externos** -- tabelas de acordes, gravações do YouTube, partituras ou outros recursos
 
-Ao adicionar uma música a uma [Ordem do Culto](./service-order.md), você pode escolher qual arranjo usar para aquele culto específico, para que sua equipe sempre ensaie e toque a versão correta.
+Quando você adiciona uma canção a uma [Ordem de Serviço](./service-order.md), você pode escolher qual arranjo usar para aquele serviço específico, para que sua equipe sempre ensaie e toque a versão correta.
+
+### Áudio de Ensaio
+
+Administradores de adoração podem anexar uma faixa de áudio de ensaio a um arranjo para que a equipe possa ouvir antes da prática:
+
+1. Abra a canção e selecione o arranjo.
+2. Clique em **Carregar Áudio**.
+3. Escolha um arquivo MP3, M4A ou AAC (até 25 MB -- WAV não é aceito, para manter o uso de armazenamento gerenciável).
+4. Salve. A faixa é reproduzida embutida em qualquer lugar que o arranjo apareça -- na página do arranjo em B1 Admin e no plano de serviço quando um membro da equipe o abre no portal de membros b1.church. Itens do plano com áudio mostram um ícone de nota musical em vez de uma miniatura.
+
+Deletar o arranjo também remove seu arquivo de áudio carregado.
 
 :::info
-Músicas da sua biblioteca podem ser adicionadas diretamente a uma [Ordem do Culto](./service-order.md) dentro de um plano, vinculando os detalhes da música e o arranjo escolhido àquele culto específico.
+Canções de sua biblioteca podem ser adicionadas diretamente a uma [Ordem de Serviço](./service-order.md) dentro de um plano, vinculando os detalhes da canção e o arranjo escolhido para aquele serviço específico.
 :::
 
 ## Próximos Passos
 
-- Adicione músicas à sua [Ordem do Culto](./service-order.md) ao montar um [plano de culto](./plans.md)
-- Coordene com sua equipe de louvor usando [Tarefas](./tasks.md) para preparação e prática de músicas
+- Adicione canções ao seu [Ordem de Serviço](./service-order.md) ao criar um [plano de serviço](./plans.md)
+- Coordene com sua equipe de adoração usando [Tarefas](./tasks.md) para preparação e prática de canções

@@ -51,6 +51,10 @@ Customize how your church appears across all ChurchApps tools:
 For best results, use a logo with a transparent background in PNG format. This ensures it looks great on both light and dark backgrounds.
 :::
 
+## First Day of Week
+
+Choose which day your calendars start on. The **First Day of Week** dropdown on the Church Info section defaults to **Sunday**, but can be set to any day. Once changed, it's honored across calendar grids in B1 Admin and the B1.church member portal -- group calendars, curated calendars, and the event editor all lay out weeks starting on the day you choose.
+
 ## Grade Promotion
 
 If you track **Grade** on children and students, B1 can automatically bump everyone up a grade on a date you choose (for example, August 1st) rather than requiring you to edit each profile by hand.

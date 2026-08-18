@@ -6,90 +6,81 @@ title: "Mailchimp"
 
 <div class="article-intro">
 
-Pipe new B1 people, givers, or group members into a Mailchimp audience so the next welcome series, year-end appeal, or volunteer newsletter pulls from a list that's always up to date. B1 has no built-in Mailchimp sync — the wiring lives entirely in Zapier (or Make): B1 fires the event, Mailchimp ingests the subscriber.
+Keep a Mailchimp audience in sync with B1 automatically: people flow in with their name, email, and phone; group and list membership becomes Mailchimp tags; deleted people are archived. The sync is built into B1 — no third-party service, no per-task metering, and changes arrive in near-realtime rather than on a nightly schedule.
 
 </div>
 
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- A [Mailchimp](https://mailchimp.com) account with at least one audience you want B1 people pushed into
-- A [Zapier](https://zapier.com) account (the free tier covers small churches)
-- A B1Admin user with **Edit Settings** permission so you can mint an API key
+- A [Mailchimp](https://mailchimp.com) account with the audience you want B1 to manage
+- A Mailchimp **API key** (Mailchimp: profile icon → **Account & billing → Extras → API keys**)
+- Your **Audience ID** (Mailchimp: **Audience → Settings → Audience name and defaults**)
+- A B1Admin user with **Edit Settings** permission
 
 </div>
 
-## What You Can Wire Up
+## What Syncs
 
-| Direction | B1 trigger | Mailchimp action |
-|---|---|---|
-| B1 → Mailchimp | `person.created` | Add/Update Subscriber |
-| B1 → Mailchimp | `donation.created` | Add Subscriber to Tag (e.g. "Gave in 2026") |
-| B1 → Mailchimp | `group.member.added` | Add Subscriber to Tag scoped to that group |
-| Mailchimp → B1 | New Subscriber | B1 *Create Person* |
+| B1 change | Mailchimp effect |
+|---|---|
+| Person added or updated | Subscriber added/updated (first name, last name, phone; new subscribers arrive as `subscribed`) |
+| Person deleted (or GDPR-erased) | Subscriber archived |
+| Person joins a group | Tag named after the group added |
+| Person leaves a group | That tag removed |
+| Person enters a saved list | Tag named after the list added |
+| Person leaves a saved list | That tag removed |
 
-The Mailchimp side exposes lots more (campaigns, segments, automations) — see [Mailchimp's Zapier triggers](https://zapier.com/apps/mailchimp/integrations) for the full list. Anything mappable from the B1 envelope is fair game.
+**Saved lists are usually the better tag source.** A B1 [saved list](/docs/b1-admin/people/lists) is a rule-based audience that re-evaluates itself — "everyone at the North campus," "members who opted into pastoral emails." Point your Mailchimp segments at list tags and the sync maintains them; use group tags for ministry-team mailings.
+
+The sync is **one-way** (B1 → Mailchimp) and only touches Mailchimp's standard fields, so it can't conflict with merge fields or segments you manage inside Mailchimp.
 
 ## Setup
 
-### 1. Mint a B1 API key
+1. In B1Admin go to **Settings → Developer → Webhooks → Add Webhook**.
+2. Set **Connector Type** to **Mailchimp**.
+3. Paste your **Mailchimp API Key** and **Audience ID**. The key is stored encrypted and never shown again.
+4. The relevant events are pre-selected; uncheck any you don't want (e.g. leave person events on but skip group tags).
+5. Save. B1 verifies the key and audience against Mailchimp before accepting — a typo fails immediately with a reason.
 
-In B1Admin go to **Settings → Developer → API Keys → New API Key**. Give it the scopes the Zap needs:
+Use **Send Test** at any time to re-verify the connection. Every sync attempt is logged in the webhook's delivery history with Mailchimp's actual response, and failed deliveries retry automatically with backoff for about five days.
 
-- `settings:write` — required for the trigger to register its webhook
-- `people:read` — so the Zap can read first/last name, email, etc.
-- (Optional) `people:write` if you also plan a Mailchimp → B1 direction
+## Initial Import
 
-Save and copy the `cak_…` string — it's only shown once.
+The connector syncs *changes* from the moment it's on; it doesn't backfill your existing directory. For setup day:
 
-### 2. Build the Zap
+1. In B1Admin go to **People**, search for the people you want (or run a saved list), and click **Export** to download a CSV.
+2. In Mailchimp use **Audience → Import contacts** to load the CSV, applying any tags during import.
 
-1. **Trigger:** `B1.church — New Person`. On first use Zapier asks you to *Sign in to B1.church*; paste the API key.
-2. **Action:** `Mailchimp — Add/Update Subscriber`. Map the trigger output:
-   - `data.contactInfo.email` → Email Address
-   - `data.name.first` → First Name
-   - `data.name.last` → Last Name
-   - (Optional) `data.id` → a Mailchimp merge field if you want to keep B1's person id alongside.
-3. Turn the Zap on. Zapier registers a `person.created` webhook on B1 — verify in **Settings → Developer → Webhooks** that a row named "Zapier — person.created" appears.
-
-That's it. Add a person in B1Admin to confirm — the new subscriber shows up in Mailchimp within seconds.
-
-## Common Recipes
-
-### Tag givers automatically
-
-- **Trigger** — B1: New Donation
-- **Action** — B1: Find Person (lookup by `personId`) to get the email
-- **Action** — Mailchimp: Add Subscriber to Tag (tag `Gave-2026`)
-
-### Drop a group-specific welcome series
-
-- **Trigger** — B1: New Group Member, filtered by `data.groupId`
-- **Action** — Mailchimp: Add Subscriber to Tag named after the group; trigger your existing automation off that tag
-
-### Two-way: new Mailchimp signups become B1 contacts
-
-- **Trigger** — Mailchimp: New Subscriber
-- **Action** — B1: Create Person (map First/Last/Email)
-
-## Make Alternative
-
-Make's [Mailchimp app](https://www.make.com/en/integrations/mailchimp) covers 44 modules — the wiring is identical, with the B1 *Watch Events* trigger replacing Zapier's. See the [Make overview doc](../make) for the B1 side.
+Doing the initial load through Mailchimp's importer keeps you in control of the consent question — only import people who have actually agreed to receive your emails. Bulk-importing a whole directory as subscribed contacts can violate Mailchimp's terms and anti-spam law (CAN-SPAM/GDPR).
 
 ## Limits & Notes
 
-- **Mailchimp's free tier caps contacts and audiences** — a Zap that floods a free audience past its limit will start erroring with `4xx Member limit reached`. Mailchimp's logs make this obvious.
-- **Mailchimp deduplicates by email**, so re-running a Zap on the same B1 person updates them in place; it doesn't create duplicates.
-- **Unsubscribes from Mailchimp don't flow back to B1.** If you want Mailchimp unsubscribes to clear B1's "Send Mail" preference, build the reverse Zap explicitly.
+- **One-way sync.** Unsubscribes, bounces, and edits made in Mailchimp do not flow back to B1. Someone who unsubscribes in Mailchimp can still receive email sent directly from B1 — treat Mailchimp as the source of truth for bulk-mail consent.
+- **People without an email address are skipped** (logged as such in the delivery history) — Mailchimp subscribers are keyed by email.
+- **Email address changes create a new subscriber.** Mailchimp identifies people by email, so changing someone's email in B1 adds them under the new address; the old subscriber stays until you archive it in Mailchimp.
+- **Only standard fields sync** — first name, last name, phone. Membership status, campus, and custom B1 fields don't map to Mailchimp merge fields in this version; use list tags to segment instead.
+- **Tag names are the group/list names.** Renaming a group or list starts tagging under the new name; the old tag remains on existing subscribers until removed in Mailchimp.
+- **Mailchimp's contact limits still apply** — a sync that pushes a free-tier audience past its cap will log `Member limit reached` errors in the delivery history.
+
+## Other Recipes (Zapier / Make)
+
+Anything beyond audience sync — tagging givers on `donation.created`, a Mailchimp → B1 reverse direction, or syncing to a different email platform entirely (Constant Contact, Brevo, etc.) — is still available through [Zapier](../zapier) or [Make](../make), which trigger on the same webhook events:
+
+- **Tag givers:** B1 *New Donation* → B1 *Find Person* → Mailchimp *Add Subscriber to Tag* (`Gave-2026`)
+- **Two-way:** Mailchimp *New Subscriber* → B1 *Create Person*
+
+If you previously wired person/group sync through Zapier, switch those Zaps off after enabling the native connector — running both double-processes every event and burns Zapier tasks for nothing.
 
 ## Troubleshooting
 
-- **Zap never fires** — check `Settings → Developer → Webhooks` for the `Zapier — person.created` row. If absent, the API key was missing `settings:write` when the Zap turned on. Re-mint, re-connect, toggle the Zap off and on.
-- **`Member exists` warning on Add/Update** — switch the action from *Add Subscriber* to *Add/Update Subscriber* (the verb matters). The upsert variant is idempotent.
-- **First name / last name come through blank** — B1's `data.name.first` and `data.name.last` are only populated if those fields are set on the person. Map `data.name.display` as a fallback.
+- **Save fails with "Mailchimp rejected the API key"** — the key was revoked or mistyped. Keys must end in a data-center suffix like `-us21`.
+- **Save fails with "audience not found"** — the Audience ID doesn't exist under that account. Copy it from **Audience → Settings → Audience name and defaults** (it's not the audience's name).
+- **A person never appeared in Mailchimp** — check the webhook's delivery history. "Skipped: person has no email address" means exactly that; a `4xx` from Mailchimp shows the reason in the response body.
+- **Deliveries stopped entirely** — after repeated exhausted deliveries the webhook auto-disables. Fix the cause (usually a revoked key), re-enable it, and use **Send Test** to confirm.
 
 ## See Also
 
-- [Zapier (overview)](../zapier) — the B1 side of every Zapier recipe
-- [Make (overview)](../make) — same idea, visual builder
-- [Webhooks (developer reference)](/docs/developer/api/webhooks#event-catalog)
+- [Webhooks (developer reference)](/docs/developer/api/webhooks) — the engine underneath, event catalog, delivery/retry semantics
+- [Saved Lists](/docs/b1-admin/people/lists) — rule-based audiences that map naturally onto Mailchimp tags
+- [Zapier (overview)](../zapier) — for recipes beyond audience sync

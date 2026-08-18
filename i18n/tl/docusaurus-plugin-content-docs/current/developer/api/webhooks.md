@@ -1,39 +1,39 @@
 ---
-title: "Mga Webhook"
+title: "Webhooks"
 ---
 
-# Mga Webhook
+# Webhooks
 
 <div class="article-intro">
 
-Ang mga webhook ay nagpapahintulot sa isang simbahan na mag-push ng real-time na mga notification sa mga third-party na tool — mga automation platform (Zapier, Make, n8n), mga CRM, mga accounting system, o anumang tumatanggap ng HTTP POST. Kapag nagbago ang isang tao, grupo, o sambahayan sa B1, ang B1 ay nagpapadala ng signed na JSON payload sa bawat URL na naka-subscribe sa kaganapang iyon.
+Ang mga Webhooks ay nagpapahintulot sa isang church na magpadala ng real-time notifications sa third-party tools — automation platforms (Zapier, Make, n8n), CRMs, accounting systems, o anumang tumatanggap ng HTTP POST. Kapag ang isang tao, grupo, o household ay nagbabago sa B1, ang B1 ay nagpapadala ng isang signed JSON payload sa bawat URL na naka-subscribe sa event na iyon.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Kayo Magsimula</h4>
+<h4>Bago Kang Magsimula</h4>
 
-- Ang isang church admin na may pahintulot na **Edit Church Settings** ay nagrerehistro at namamahala ng mga webhook
-- Ang inyong receiving endpoint ay dapat maaabot sa **HTTPS** sa isang pampublikong address
-- Magkaroon ng paraan upang itago ang signing secret nang ligtas — ipinakikita ito nang isang beses lamang
+- Isang church admin na may **Edit Church Settings** permission ay nag-register at namamahala ng mga webhooks
+- Ang iyong receiving endpoint ay dapat na accessible sa **HTTPS** sa isang public address
+- Magkaroon ng isang paraan upang secure na mag-store ang signing secret — ito ay ipinapakita lamang nang minsan
 
 </div>
 
-## Pangkalahatang Tanawin
+## Overview
 
-Ang mga webhook ay **outbound** lamang: ang B1 ay tumatawag sa inyong endpoint, hindi kayo tumatawag sa B1. Ang bawat webhook ay isang per-church na subscription na binubuo ng isang destination URL, isang signing secret, at isang listahan ng mga naka-subscribe na kaganapan.
+Ang mga Webhooks ay **outbound** lamang: B1 ay tumatawag sa iyong endpoint, hindi mo tinawag ang B1. Bawat webhook ay isang per-church subscription na binubuo ng isang destination URL, isang signing secret, at isang listahan ng subscribed events.
 
-Ang paghahatid ay gumagamit ng **durable outbox**: kapag nangyari ang isang naka-subscribe na kaganapan, ang B1 ay nagtatalang ng delivery row at ang isang background worker ay nagpo-POST nito sa loob ng humigit-kumulang isang minuto. Ang mga nabigong paghahatid ay sinusubukan muli na may exponential backoff. Walang nawawala kung mabagal ang paghahatid o panandaliang down ang inyong endpoint.
+Ang paghahatid ay gumagamit ng isang **durable outbox**: kapag ang isang subscribed event ay nangyayari, B1 ay nag-record ng isang delivery row at isang background worker ay POSTs ito sa loob ng humigit-kumulang na isang minuto. Ang mga nabigong deliveries ay muling sinusubok na may exponential backoff. Walang nawala kung ang isang delivery ay mabagal o ang iyong endpoint ay pansamantalang pababa.
 
-## Pagpaparehistro ng Webhook
+## Pag-register ng Webhook
 
 ### Sa B1Admin
 
-Pumunta sa **Settings → Webhooks → New Webhook**. Maglagay ng pangalan, ang payload URL, at piliin ang mga kaganapan kung saan mag-subscribe. Sa pag-save, ang **signing secret ay ipinapakita nang isang beses** — kopyahin ito kaagad at itago ito sa inyong integration. Hindi na ito muling ipapakita (maaari ninyong i-rotate ito mamaya, ngunit hindi ninyo mababawi ang orihinal).
+Pumunta sa **Settings → Developer → Webhooks → New Webhook**. Magpasok ng isang pangalan, ang payload URL, at pumili ng mga event na mag-subscribe. Sa save, ang **signing secret ay ipinapakita nang minsan** — kopyahin ito kaagad at ilagay ito sa iyong integration. Hindi ito kailanman ipapakita muli (maaari mong i-rotate ito mamaya, ngunit hindi mo makukuha ang orihinal).
 
-### Sa Pamamagitan ng API
+### Sa pamamagitan ng API
 
-Ang lahat ng endpoint ay nasa ilalim ng Membership module base path `/membership/webhooks` at nangangailangan alinman ng JWT mula sa isang church admin na may pahintulot na `Settings / Edit`, **o isang [API key](./api-keys) na ginawa na may `settings:write` scope**. Ang parehong mga route ay tumatanggap ng pareho. Ito ang nagbibigay-daan sa Zapier at Make na magrehistro ng mga webhook sa ngalan ng simbahan kapag ang isang Zap o scenario ay pinaganda.
+Ang lahat ng endpoints ay nasa ilalim ng Membership module base path `/membership/webhooks` at nangangailangan ng alinman sa isang JWT mula sa isang church admin na may `Settings / Edit` permission, **o isang [API key](./api-keys) na mintado na may `settings:write` scope**. Ang parehong mga route ay tumatanggap sa pareho. Ito ang nagbibigay-daan sa Zapier at Make na mag-register ng mga webhooks sa ngalan ng church kapag ang isang Zap o scenario ay inilabas.
 
 ```http
 POST /membership/webhooks
@@ -47,7 +47,7 @@ Content-Type: application/json
 }
 ```
 
-Ang create response — at **lamang** ang create response — ay naglalaman ng `secret`:
+Ang create response — at **lamang** ang create response — ay may kasamang `secret`:
 
 ```json
 {
@@ -60,58 +60,58 @@ Ang create response — at **lamang** ang create response — ay naglalaman ng `
 }
 ```
 
-| Method & Path | Layunin |
+| Method & Path | Purpose |
 |---|---|
-| `GET /membership/webhooks` | I-list ang mga webhook ng simbahan (walang secret) |
-| `GET /membership/webhooks/events` | Ang katalogo ng mga valid na pangalan ng kaganapan |
-| `GET /membership/webhooks/:id` | Mag-load ng isang webhook |
-| `POST /membership/webhooks` | Lumikha (walang `id`) o mag-update (na may `id`) |
-| `POST /membership/webhooks/:id/regenerate-secret` | I-rotate ang signing secret; ibinabalik ang bagong halaga nang isang beses |
-| `DELETE /membership/webhooks/:id` | Burahin ang isang webhook |
-| `GET /membership/webhooks/:id/deliveries` | Mga kamakailang pagtatangka sa paghahatid para sa isang webhook |
+| `GET /membership/webhooks` | I-list ang mga webhook ng church (secret na inalis) |
+| `GET /membership/webhooks/events` | Ang catalog ng valid event names |
+| `GET /membership/webhooks/:id` | I-load ang isang webhook |
+| `POST /membership/webhooks` | Lumikha (walang `id`) o i-update (na may `id`) |
+| `POST /membership/webhooks/:id/regenerate-secret` | I-rotate ang signing secret; ibabalik ang bagong halaga nang minsan |
+| `DELETE /membership/webhooks/:id` | Tanggalin ang webhook |
+| `GET /membership/webhooks/:id/deliveries` | Mga kamakailang paghahatid na subok para sa webhook |
 | `GET /membership/webhooks/deliveries/:deliveryId` | Buong payload at response para sa isang paghahatid |
 | `POST /membership/webhooks/deliveries/:deliveryId/redeliver` | Muling i-queue ang isang paghahatid |
 
-## Katalogo ng Kaganapan
+## Event Catalog
 
-Ang mga pangalan ng kaganapan ay sumusunod sa pattern na `{entity}.{action}`. Kunin ang live na listahan mula sa `GET /membership/webhooks/events`.
+Ang mga event names ay sumusunod sa pattern `{entity}.{action}`. I-fetch ang live list mula sa `GET /membership/webhooks/events`.
 
-| Kaganapan | Umaapoy kapag |
+| Event | Fires when |
 |---|---|
 | `person.created` | Isang tao ay idinagdag |
-| `person.updated` | Ang rekord ng tao ay binago |
-| `person.destroyed` | Isang tao ay binura |
-| `household.created` | Isang sambahayan ay idinagdag |
-| `household.updated` | Ang sambahayan ay binago |
-| `household.destroyed` | Ang sambahayan ay binura |
+| `person.updated` | Ang tao record ay binago |
+| `person.destroyed` | Isang tao ay natanggal |
+| `household.created` | Isang household ay idinagdag |
+| `household.updated` | Ang household ay nabago |
+| `household.destroyed` | Isang household ay natanggal |
 | `group.created` | Isang grupo ay idinagdag |
-| `group.updated` | Ang grupo ay binago |
-| `group.destroyed` | Ang grupo ay binura |
-| `group.member.added` | Isang tao ay idinagdag sa grupo |
-| `group.member.removed` | Isang tao ay inalis sa grupo |
-| `donation.created` | Isang kaloob ay naitala — manual entry, online, o ang paglipat mula pending → complete |
-| `donation.updated` | Isang tala ng donasyon ay na-edit |
-| `attendance.recorded` | Isang pagbisita ay naitala (manual entry o check-in) |
-| `session.created` | Isang bagong attendance session ay nalikha (manu-mano o awtomatiko sa unang check-in) |
-| `form.submission.created` | Isang form ay naisumite |
-| `event.created` | Isang kalendaryong kaganapan ay idinagdag |
-| `event.updated` | Isang kalendaryong kaganapan ay na-edit |
-| `event.destroyed` | Isang kalendaryong kaganapan ay binura |
+| `group.updated` | Ang grupo ay nabago |
+| `group.destroyed` | Isang grupo ay natanggal |
+| `group.member.added` | Isang tao ay idinagdag sa isang grupo |
+| `group.member.removed` | Isang tao ay inalis mula sa isang grupo |
+| `donation.created` | Isang regalo ay naitala — manual entry, online, o ang pending → complete transition |
+| `donation.updated` | Ang donation record ay nag-edit |
+| `attendance.recorded` | Isang pagbisita ay naka-log (manual entry o check-in) |
+| `session.created` | Isang bagong attendance session ay nilikha (manu-mano o auto sa unang check-in) |
+| `form.submission.created` | Isang form ay isinumite |
+| `event.created` | Isang calendar event ay idinagdag |
+| `event.updated` | Isang calendar event ay nag-edit |
+| `event.destroyed` | Isang calendar event ay natanggal |
 
-## Format ng Payload
+## Payload Format
 
-Ang bawat paghahatid ay isang HTTP `POST` na may JSON body at mga header na ito:
+Bawat paghahatid ay isang HTTP `POST` na may isang JSON body at ang mga headers na ito:
 
-| Header | Paglalarawan |
+| Header | Description |
 |---|---|
 | `Content-Type` | Laging `application/json` |
-| `X-B1-Event` | Ang pangalan ng kaganapan, hal. `person.created` |
-| `X-B1-Delivery-Id` | Natatanging id para sa pagtatangkang ito sa paghahatid — gamitin ito upang mag-deduplicate |
+| `X-B1-Event` | Ang event name, halimbawa `person.created` |
+| `X-B1-Delivery-Id` | Natatanging id para sa attempt ng paghahatid na ito — gamitin ito upang mag-deduplicate |
 | `X-B1-Signature` | HMAC-SHA256 signature ng raw body (tingnan sa ibaba) |
 | `X-B1-Timestamp` | Unix epoch seconds kapag ipinadala ang request |
 | `User-Agent` | `B1-Webhooks/1.0` |
 
-Ang body ay nakabalot sa nabagong resource sa isang maliit na envelope:
+Ang body ay bumalot sa binagong resource sa isang maliit na envelope:
 
 ```json
 {
@@ -127,29 +127,32 @@ Ang body ay nakabalot sa nabagong resource sa isang maliit na envelope:
 }
 ```
 
-Para sa mga kaganapan ng `*.destroyed`, ang `data` ay naglalaman lamang ng `id` at `churchId` ng binurang rekord.
+Para sa `*.destroyed` events, ang `data` ay naglalaman lamang ng `id` at `churchId` ng natanggal na record.
 
-Ang mga kaganapan na ang payload ay tumutukoy sa ibang mga rekord sa pamamagitan ng id ay nagdadala rin ng mga pangalang madaling basahin ng tao, na na-resolve sa oras ng paghahatid: `personName` at `groupName` sa mga kaganapan ng group membership, `personName` sa mga kaganapan ng attendance, donation, at list membership, `groupName` sa `session.created`, at `formName` (kasama ang `personName` kapag ang submission ay nakatali sa isang tao) sa `form.submission.created`.
+Ang mga event na ang mga payload ay sumusuporta sa ibang mga record sa pamamagitan ng id ay nagdadala din ng mga human-readable na pangalan, na nalutas sa oras ng paghahatid: `personName` at `groupName` sa mga group membership events, `personName` sa attendance, donation, at list membership events, `groupName` sa `session.created`, at `formName` (kasama ang `personName` kapag ang submission ay nakatali sa isang tao) sa `form.submission.created`.
 
-## Mga Uri ng Connector
+## Connector Types
 
-Ang default na format ng paghahatid ay ang JSON envelope sa itaas — `connectorType: "standard"`. Para sa [Slack at Discord](/docs/b1-admin/integrations/slack-discord) ang parehong webhook engine ay sa halip ay nag-po-post ng isang chat-shaped na mensahe na direktang tinatanggap ng mga serbisyong iyon:
+Ang default na delivery format ay ang JSON envelope sa itaas — `connectorType: "standard"`. Para sa [Slack and Discord](/docs/b1-admin/integrations/slack-discord) ang parehong webhook engine ay nagpo-post ng isang chat-shaped message na ang mga serbisyo na ito ay tumatanggap direkta:
 
-| `connectorType` | Body na ipinapadala | Gamitin kapag |
+| `connectorType` | Body sent | Use when |
 |---|---|---|
-| `"standard"` (default) | Envelope na `{event, churchId, occurredAt, data}`, naka-sign | Gumagawa kayo ng sariling integration, o tumuturo sa Zapier / Make / isang custom server |
-| `"slack"` | `{ "text": "💝 New donation: $50.00" }` | Direktang nagpo-post kayo sa isang Slack Incoming Webhook URL |
-| `"discord"` | `{ "content": "💝 New donation: $50.00" }` | Direktang nagpo-post kayo sa isang Discord channel webhook URL |
+| `"standard"` (default) | `{event, churchId, occurredAt, data}` envelope, signed | Ikaw ay nagsusulat ng iyong sariling integration, o nakatutok sa Zapier / Make / isang custom server |
+| `"slack"` | `{ "text": "💝 New donation: $50.00" }` | Ikaw ay naglalahad direkta sa isang Slack Incoming Webhook URL |
+| `"discord"` | `{ "content": "💝 New donation: $50.00" }` | Ikaw ay naglalahad direkta sa isang Discord channel webhook URL |
+| `"mailchimp"` | n/a — ang connector ay tumatawag sa Mailchimp's API mismo | Gusto mo ng [audience sync](/docs/b1-admin/integrations/services/mailchimp) nang walang URL na i-host |
 
-Ang connector type ay itinatakda sa **Connector Type** dropdown sa webhook editor, o sa pamamagitan ng `connectorType` sa `POST /membership/webhooks` body. Ang naka-sign na `X-B1-Signature` header ay ipinapadala pa rin para sa mga paghahatid sa Slack/Discord (binabalewala nila ito nang hindi nakakasama), kaya ang paglipat ng isang webhook pabalik sa `standard` mamaya ay hindi na nangangailangan ng muling pag-sign.
+Ang connector type ay nakatakda sa **Connector Type** dropdown sa webhook editor, o sa pamamagitan ng `connectorType` sa `POST /membership/webhooks` body. Ang signed `X-B1-Signature` header ay pa rin ipinapadala para sa Slack/Discord deliveries (hindi nila ito pinahahalagahan), kaya ang pagsisimula ng webhook pabalik sa `standard` mamaya ay hindi nangangailangan ng muling pag-sign.
 
-## Mga Test na Paghahatid
+Ang Slack at Discord ay purong body reshapes — ang engine ay pa rin POSTs sa church-supplied URL. Ang `mailchimp` ay ang una na connector na sa halip na nag-own ng kanya na HTTP exchange: bawat event ay naglalabas ito ng authenticated upsert/archive/tag requests laban sa Mailchimp's API (`MailchimpConnector.deliver`), at ang mga credentials nito (`{apiKey, audienceId}`) ay naka-store AES-encrypted sa `webhooks.connectorConfig`, write-only sa pamamagitan ng API. Ang mga Mailchimp webhooks ay tumatanggap lamang ng tao, group-member, at list-member events; ang save route ay nag-verify ng key at audience laban sa Mailchimp bago tanggapin. Ang mga delivery rows ay nag-store ng standard envelope, kaya ang delivery log ay nagpapakita kung ano ang nakita ng B1 kasama ng response ng Mailchimp. Ang mga unmapped na sitwasyon (tao na walang email, event na walang mapping) ay nagtatapos bilang successful na may `Skipped:` response body sa halip na masusunog ang retries.
 
-Bawat webhook editor ay may **Send Test Event** button — ang katumbas na API call ay `POST /membership/webhooks/:id/test`. Ang test route ay bumubuo ng isang synthetic na payload para sa unang naka-subscribe na kaganapan, ipinapadala ito nang synchronous sa pamamagitan ng aktwal na signed-delivery path (at sa pamamagitan ng `formatForConnector` para sa Slack/Discord), at ibinabalik ang resultang delivery row kabilang ang `responseStatus` at `responseBody`. Gamitin ito upang kumpirmahin ang konektibidad at ang paghawak ng signature bago buksan ang integration para sa totoong paggamit.
+## Test Deliveries
 
-## Pag-verify ng mga Signature
+Bawat webhook editor ay may **Send Test Event** button — ang kaugnay na API call ay `POST /membership/webhooks/:id/test`. Ang test route ay bumubuo ng synthetic payload para sa unang subscribed event, dispatch ito sa pamamagitan ng tunay na signed-delivery path (at sa pamamagitan ng `formatForConnector` para sa Slack/Discord), at nagbabalik ng nagreresultang delivery row na may kasamang `responseStatus` at `responseBody`. Gamitin ito upang kumpirmahin ang connectivity at signature handling bago i-flip ang integration on para sa tunay. Para sa `mailchimp` webhooks ang test ay sa halip ay nag-verify ng stored credentials laban sa Mailchimp API (ang isang synthetic event ay magsusulat ng isang fake subscriber sa tunay na audience ng church) at nagbabalik ng isang delivery-shaped result nang walang lumilikha ng row.
 
-Laging i-verify ang `X-B1-Signature` bago pagkatiwalaan ang isang payload. Ang signature ay `sha256=` na sinusundan ng hex HMAC-SHA256 ng **raw na request body** na kinakabitan ng inyong signing secret. I-compute ito sa mga byte na inyong natanggap — huwag muling i-serialize ang parsed na JSON.
+## Pagsusuri ng Mga Signature
+
+Laging i-verify ang `X-B1-Signature` bago magtiwala sa isang payload. Ang signature ay `sha256=` na sinusundan ng hex HMAC-SHA256 ng **raw request body** na may key na iyong signing secret. Kalkulahin ito sa mga byte na iyong natanggap — huwag muling i-serialize ang parsed JSON.
 
 **Node.js**
 
@@ -183,18 +186,18 @@ function isValid(string $rawBody, string $signatureHeader, string $secret): bool
 }
 ```
 
-Tanggihan ang anumang request na ang signature ay hindi tumutugma. Opsyonal ding tanggihan ang mga request na ang `X-B1-Timestamp` ay higit sa ilang minuto ang tanda upang limitahan ang mga replay window.
+Tanggihan ang anumang request na ang signature ay hindi tumugma. Opsyonal din na tanggihan ang mga request na ang `X-B1-Timestamp` ay higit sa ilang minuto ng lumang upang limitahan ang replay windows.
 
 ## SDK Support
 
-Para sa Node.js, ang `@churchapps/integration-sdk` ay may kasamang typed verifier at isang Express middleware na humahawak ng raw-body capture, signature check, at envelope parsing para sa inyo:
+Para sa Node.js, ang `@churchapps/integration-sdk` ay naghahatid ng isang typed verifier at isang Express middleware na sumasagot sa raw-body capture, signature check, at envelope parsing para sa iyo:
 
 ```ts
 import express from "express";
 import { b1WebhookMiddleware } from "@churchapps/integration-sdk";
 
 const app = express();
-// Kunin ang raw body bago ang JSON parsing — kinakailangan upang mag-verify pa rin ang signature.
+// Kunin ang raw body bago ang JSON parsing — kinakailangan upang ang signature ay manatiling nag-verify.
 app.use(express.json({ verify: (req, _res, buf) => { (req as any).rawBody = buf; } }));
 
 app.post("/webhooks/b1", b1WebhookMiddleware({ secret: process.env.B1_WEBHOOK_SECRET! }), (req, res) => {
@@ -206,32 +209,32 @@ app.post("/webhooks/b1", b1WebhookMiddleware({ secret: process.env.B1_WEBHOOK_SE
 });
 ```
 
-Ang SDK ay nagpapakita rin ng `WebhookVerifier.verify(secret, rawBody, signatureHeader)` para sa mga non-Express runtime (serverless functions, Fastify, atbp.). Tingnan ang package sa npm.
+Ang SDK ay nagbalanse din ng `WebhookVerifier.verify(secret, rawBody, signatureHeader)` para sa non-Express runtimes (serverless functions, Fastify, atbp.). Tingnan ang package sa npm.
 
-## Paghahatid at Mga Retry
+## Delivery & Retries
 
-Ang inyong endpoint ay dapat tumugon ng `2xx` status nang mabilis hangga't maaari — ideal pagkatapos lamang ng pag-queue ng trabaho, hindi pagkatapos ng pagproseso nito. Ang anumang hindi `2xx` na response, pagkabigo sa koneksyon, o response na mas mabagal sa **10 segundo** ay binibilang bilang nabigong paghahatid.
+Ang iyong endpoint ay dapat tumugon na may `2xx` status kasing bilis ng posible — ideyal pagkatapos lamang ng pag-queue ng trabaho, hindi pagkatapos ng pagproseso. Anumang non-`2xx` response, isang failure ng koneksyon, o isang response na mas mabagal kaysa **10 seconds** ay tumutok bilang isang nabigong paghahatid.
 
-Ang mga nabigong paghahatid ay sinusubukan muli na may exponential backoff — **16 na pagtatangka sa humigit-kumulang 5 araw**. Ang interval ay lumalaki mula 1 minuto, sa pamamagitan ng mga oras, hanggang sa 3-araw na agwat para sa mga huling pagtatangka. Pagkatapos ng ika-16 na nabigong pagtatangka, ang paghahatid ay minarkahan na `exhausted` at inabandona.
+Ang mga nabigong deliveries ay muling sinusubok na may exponential backoff — **16 attempts sa loob ng humigit-kumulang 5 days**. Ang interval ay lumalaki mula 1 minuto, sa pamamagitan ng mga oras, hanggang sa 3-day na mga agwat para sa mga final na pagsubok. Pagkatapos ng ika-16 na nabigong pagsubok ang paghahatid ay minarkahan `exhausted` at iniwan.
 
-Ang paghahatid ay **at-least-once**: ang isang paghahatid ay maaaring dumating nang higit sa isang beses (halimbawa, kung ang inyong endpoint ay nagtagumpay ngunit ang response ay nawala). Gamitin ang `X-B1-Delivery-Id` header upang mag-deduplicate — iproseso ang bawat id nang isang beses lamang at tratuhin ang mga pag-uulit bilang no-op.
+Ang paghahatid ay **at-least-once**: ang isang paghahatid ay maaaring dumating nang higit sa minsan (halimbawa, kung ang iyong endpoint ay successful ngunit ang response ay nawala). Gamitin ang `X-B1-Delivery-Id` header upang mag-deduplicate — iproseso ang bawat id lamang nang minsan at tratuhin ang repeats bilang no-ops.
 
 ### Auto-disabling
 
-Kung ang isang webhook ay gumagawa ng **tatlong sunud-sunod na exhausted na paghahatid**, ang B1 ay awtomatikong nag-disable nito. Ayusin ang inyong endpoint, pagkatapos ay muling paganahin ang webhook sa B1Admin (o sa pamamagitan ng `POST /membership/webhooks` na may `"active": true`).
+Kung ang isang webhook ay gumagawa ng **tatlong sunod-sunod na nakaubos na deliveries**, B1 ay awtomatikong nag-disable nito. I-ayos ang iyong endpoint, pagkatapos ay muling i-enable ang webhook sa B1Admin (o sa pamamagitan ng `POST /membership/webhooks` na may `"active": true`).
 
-## Pag-inspect at Muling Paghahatid
+## Pagsusuri at Paghahatid Muli
 
-Ang webhook editor sa B1Admin ay nagpapakita ng **Recent Deliveries** na talahanayan — kaganapan, status, bilang ng pagtatangka, response code, at timestamp. Ang pagpili ng isang row ay nagbubunyag ng buong payload na ipinadala at ang response na bumalik.
+Ang webhook editor sa B1Admin ay nagpapakita ng **Recent Deliveries** table — event, status, attempt count, response code, at timestamp. Ang pagpili ng isang row ay nagbubunyag ng buong payload na ipinadala at ang response na bumalik.
 
-Gamitin ang **Redeliver** upang muling i-queue ang anumang nakaraang paghahatid na may orihinal na payload — kapaki-pakinabang pagkatapos ayusin ang isang bug sa inyong endpoint, o upang mag-backfill ng mga kaganapan na namiss ng inyong endpoint habang ito ay down.
+Gamitin ang **Redeliver** upang muling i-queue ang anumang nakaraang paghahatid na may kanya na orihinal na payload — kapaki-pakinabang pagkatapos ayusin ang isang bug sa iyong endpoint, o upang mag-backfill ng mga event na ang iyong endpoint ay nawala habang ito ay pababa.
 
-## Mga Kinakailangan sa URL
+## URL Requirements
 
-Dahil ang mga URL ng webhook ay ibinibigay ng simbahan, ang B1 ay nagpapatupad ng mga guards laban sa server-side request forgery. Ang isang URL ng webhook ay tinatanggihan — sa pagpaparehistro at muling sinusuri bago ng bawat paghahatid — kung ito ay:
+Dahil ang mga webhook URL ay church-supplied, B1 ay nag-enforce ng mga guards laban sa server-side request forgery. Ang isang webhook URL ay tinatanggihan — sa pagpaparehistro at nire-check muli bago ang bawat paghahatid — kung ito:
 
-- hindi gumagamit ng **`https`**
-- tumuturo sa `localhost`, isang `.local` / `.internal` na hostname, o
-- nare-resolve sa **private, loopback, link-local, o cloud-metadata** na IP address
+- ay hindi gumagamit ng **`https`**
+- puntos sa `localhost`, isang `.local` / `.internal` hostname, o
+- nalulutas sa isang **private, loopback, link-local, o cloud-metadata** IP address
 
-Ang inyong endpoint ay dapat na isang publicly na maaabot na HTTPS service.
+Ang iyong endpoint ay dapat na isang publicly reachable HTTPS service.

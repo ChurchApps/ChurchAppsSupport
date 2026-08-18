@@ -6,46 +6,45 @@ title: "Résumé des dons"
 
 <div class="article-intro">
 
-Le rapport Résumé des dons vous donne une image claire de l'activité de dons de votre église. Utilisez-le pour suivre les totaux des dons, surveiller les tendances de générosité et préparer des rapports financiers pour votre équipe de direction.
+Le rapport Résumé des dons vous donne une image claire de l'activité de don de votre église. Utilisez-le pour suivre les totaux de don, surveiller les tendances de donation et préparer les rapports financiers pour votre équipe de direction.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Assurez-vous que les dons sont [enregistrés de manière cohérente](../donations/recording-donations.md) dans votre système
-- Vous avez besoin des [autorisations](../settings/roles-permissions.md) appropriées pour accéder aux rapports financiers
+- Assurez-vous que les dons sont [enregistrés régulièrement](../donations/recording-donations.md) dans votre système
+- Vous devez avoir les [permissions](../settings/roles-permissions.md) appropriées pour accéder aux rapports financiers
 
 </div>
 
-## Exécuter le rapport
+## Exécution du rapport
 
-1. Accédez à **Rapports** depuis le menu principal.
-2. Cliquez sur la carte **Résumé des dons**.
-3. Définissez la **période** pour délimiter la période du rapport.
-4. Appliquez des filtres supplémentaires tels que le **fonds** ou d'autres critères pour affiner les résultats.
-5. Le rapport affichera le résumé des dons pour la période sélectionnée.
+1. Allez directement à **admin.b1.church/reports/donationSummary** dans votre navigateur (les rapports n'ont pas d'entrée dans le menu de navigation — mettre en signet l'adresse est le moyen le plus facile d'y revenir).
+2. Définissez la **plage de dates** pour définir la période de rapport.
+3. Appliquez des filtres supplémentaires tels que **fonds** ou d'autres critères pour affiner les résultats.
+4. Le rapport affichera le résumé de donation pour la période sélectionnée.
 
 ## Ce que le rapport affiche
 
-Le rapport Résumé des dons comprend :
+Le rapport Résumé des dons inclut :
 
-- **Total des dons** -- Le montant global des dons pour la période sélectionnée.
-- **Nombre de donateurs** -- Le nombre de donateurs uniques ayant contribué.
-- **Montants par fonds** -- Une répartition des dons entre les différents fonds, le cas échéant.
+- **Total des dons** -- Le montant de donation globale pour la période sélectionnée.
+- **Nombre de donateurs** -- Le nombre de donateurs uniques qui ont contribué.
+- **Montants par fonds** -- Une ventilation de la donation par différents fonds, le cas échéant.
 
 ## Utilisations pratiques
 
-- **Planification financière** -- Examinez les tendances de dons pour prévoir les revenus futurs et planifier votre budget.
-- **Rapports pour le conseil** -- Générez des résumés pour les réunions régulières du conseil ou de la direction avec des données de dons claires.
-- **Bilans de fin d'année** -- Exécutez le rapport pour l'année complète afin de préparer les résumés financiers annuels.
-- **Suivi de campagnes** -- Filtrez par fonds pour suivre la progression des campagnes de dons spéciales ou des projets de construction.
-- **Analyse saisonnière** -- Comparez les dons sur différentes périodes pour comprendre les tendances saisonnières.
+- **Planification financière** -- Examinez les tendances de donation pour prévoir les revenus futurs et planifier votre budget.
+- **Rapports de conseil** -- Générez des résumés pour les réunions régulières du conseil ou de direction avec des données de donation claires.
+- **Examens de fin d'année** -- Exécutez le rapport pour l'année complète pour préparer les résumés financiers annuels.
+- **Suivi de campagne** -- Filtrez par fonds pour suivre la progression des campagnes de donation spéciales ou des projets de construction.
+- **Analyse saisonnière** -- Comparez la donation pendant différentes périodes pour comprendre les modèles saisonniers.
 
 :::tip
-Exécutez ce rapport mensuellement pour rester informé de la santé financière de votre église. La comparaison des données d'un mois à l'autre vous aide à repérer les tendances rapidement.
+Exécutez ce rapport mensuellement pour rester informé de la santé financière de votre église. Comparer les données mois après mois vous aide à repérer les tendances tôt.
 :::
 
 :::warning
-Les données de dons proviennent des contributions enregistrées dans votre système. Assurez-vous que les dons sont saisis de manière cohérente -- que ce soit par les dons en ligne, le traitement des chèques ou la saisie manuelle -- pour obtenir les rapports les plus précis. Consultez [Enregistrer les dons](../donations/recording-donations.md) pour plus de détails.
+Les données de donation proviennent des contributions enregistrées dans votre système. Assurez-vous que les dons sont saisis régulièrement -- que ce soit par donation en ligne, traitement de chèques ou saisie manuelle -- pour les rapports les plus précis. Voir [Enregistrement des dons](../donations/recording-donations.md) pour plus de détails.
 :::

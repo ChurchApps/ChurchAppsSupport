@@ -10,39 +10,51 @@ Ang FreePlay ay available para sa Android TV, Amazon Fire TV, at Apple TV. Ang g
 
 </div>
 
+:::tip Bago sa FreePlay? Magsimula dito
+Manood ng aming **<a href="/guides/freeplay-quickstart" target="_blank">quick start video</a>** — i-install ang FreePlay at magsimulang maglaro ng content sa loob lamang ng ilang minuto. Walang kinakailangang tech skills.
+:::
+
+:::tip Nag-setup gamit ang B1 Admin?
+Ang aming **<a href="/guides/freeplay-b1admin" target="_blank">step-by-step guide</a>** ay sumasaklaw sa buong setup — mula sa pag-link ng mga content provider hanggang sa pagkakaroon ng tamang leksyon na awtomatikong nag-download sa iyong classroom TV bawat linggo.
+:::
+
 ## Pag-install ng FreePlay
+
+:::tip Bumibili ng device?
+Hindi lahat ng streaming sticks ay maaaring magpatakbo ng FreePlay — ang pinakabagong budget Fire TV models ay hindi. Tingnan ang **[Choosing a Device](./choosing-a-device.md)** para sa eksakto kung ano ang bilhin.
+:::
 
 ### Android TV / Amazon Fire TV
 
 1. Buksan ang app store sa iyong TV (**Google Play Store** o **Amazon Appstore**)
-2. Maghanap ng **FreePlay**
+2. Maghanap para sa **FreePlay**
 3. Piliin ang app at piliin ang **Install**
 
 ### Apple TV
 
 1. Buksan ang **App Store** sa iyong Apple TV
-2. Maghanap ng **FreePlay**
+2. Maghanap para sa **FreePlay**
 3. Piliin ang app at piliin ang **Get**
 
-## Paglunsad ng App
+## Paglulunsad ng App
 
-Kapag binuksan mo ang FreePlay sa unang pagkakataon, makikita mo ang isang animated splash screen na may logo ng FreePlay. Sinusuri ng app ang anumang dating nakakonektang content provider. Kung nakakonekta ka na sa isang provider, dadalhin ka nito direkta sa content browser ng provider na iyon. Kung hindi, bubuksan nito ang screen ng **Content Providers** kung saan maaari kang kumonekta sa iyong unang pinagmulan ng nilalaman.
+Kapag unang bumubukas ka ng FreePlay, makikita mo ang isang animated splash screen na may FreePlay logo. Ang app ay nag-check para sa sinumang dating naka-connect na content providers. Kung naiwan mo na ang provider, ito ay kukunin ka direkta sa provider's content browser. Kung hindi, ito ay bubukas ang **Content Providers** screen kung saan maaari mong ikonekta sa iyong unang content source.
 
-## Pag-navigate Gamit ang Iyong TV Remote
+## Pag-navigate gamit ang Iyong TV Remote
 
-Ang FreePlay ay ginawa para sa mga TV remote. Narito ang mga kontrol na gagamitin mo sa buong app:
+Ang FreePlay ay binuo para sa TV remotes. Narito ang mga kontrol na gagamitin mo sa buong app:
 
-- **Directional pad (pataas/pababa/pakaliwa/pakanan)** - Lumipat sa pagitan ng mga item sa screen
-- **Select / OK button** - Piliin ang naka-highlight na item
-- **Kaliwang arrow** - Buksan ang sidebar mula sa anumang screen
-- **Kanang arrow** - Isara ang sidebar at bumalik sa pangunahing content area
+- **Directional pad (up/down/left/right)** - Lumipat sa pagitan ng mga item sa screen
+- **Select / OK button** - Pumili ng highlighted item
+- **Left arrow** - Buksan ang sidebar mula sa anumang screen
+- **Right arrow** - Sarahin ang sidebar at bumalik sa pangunahing content area
 - **Back / Menu button** - Bumalik sa nakaraang screen
 
 :::tip
-Ang sidebar ay nag-co-collapse sa isang makitid na strip ng mga icon kapag nagba-browse ka ng nilalaman. Pindutin ang kaliwang arrow sa iyong remote upang palawakin ito at makita ang buong mga label.
+Ang sidebar ay nagsasama sa isang makitid na strip ng mga icon kapag nag-browse ka ng content. Pindutin ang left arrow sa iyong remote upang palawakin ito at makita ang buong labels.
 :::
 
 ## Ano ang Susunod
 
-- **[Pagpili ng Pairing Mode](./pairing-modes)** - Alamin ang iba't ibang paraan upang ikonekta ang iyong TV
-- **[Mga Content Provider](../content-providers/)** - Kumonekta sa Lessons.church, Bible Project, at higit pa
+- **[Choosing a Pairing Mode](./pairing-modes)** - Matuto tungkol sa iba't ibang mga paraan upang ikonekta ang iyong TV
+- **[Content Providers](../content-providers/)** - Ikonekta sa Lessons.church, Bible Project, at marami pang iba

@@ -6,45 +6,45 @@ title: "Lessons.church"
 
 <div class="article-intro">
 
-Ang Lessons.church ay isang ganap na libreng platform ng kurikulum para sa mga simbahan. Walang mga subscription, walang bayad, at walang mga limitasyon sa paggamit. Nagbibigay ito ng 1,100+ na video-based na aralin sa 189+ na pag-aaral mula sa 12+ na provider, na sumasaklaw sa mga grupo ng edad mula preschool hanggang adult.
+Ang Lessons.church ay isang ganap na libreng platform ng curriculum para sa mga simbahan. Walang mga subscription, walang bayad, at walang mga limitasyon sa paggamit. Ito ay nagbibigay ng 1,100+ video-based lessons sa buong 189+ studies mula sa 12+ providers, na sumasaklaw sa mga age groups mula sa preschool hanggang adult.
 
 </div>
 
 ## Ano ang Maaari Mong Gawin
 
-Sa Lessons.church, ang iyong simbahan ay maaaring:
+Gamit ang Lessons.church, ang iyong simbahan ay maaaring:
 
-- **Mag-browse ng nilalaman** -- Galugarin ang lumalaking library ng mga programa at pag-aaral mula sa maraming provider, na nakaayos ayon sa grupo ng edad at paksa.
-- **Mag-set up ng mga silid-aralan** -- Gumawa ng mga silid-aralan na tumutugma sa istruktura ng iyong ministeryo (halimbawa, preschool, elementary, youth, o adult).
-- **Mag-iskedyul ng mga aralin** -- Italaga ang mga partikular na aralin sa iyong mga silid-aralan sa mga petsa na kailangan mo ang mga ito.
-- **I-customize para sa iyong mga pangangailangan** -- Ayusin ang nilalaman ng aralin upang tumugma sa estilo ng pagtuturo at kagustuhan ng iyong simbahan.
-- **Magpahayag sa mga klase** -- Gamitin ang built-in na presenter mode upang dumaan sa mga aralin nang hakbang-hakbang habang nasa oras ng klase.
+- **Tuklasin ang content** -- I-explore ang lumalaking library ng mga programa at pag-aaral mula sa maraming providers, na inorganisa ayon sa age group at paksa.
+- **I-setup ang mga classroom** -- Lumikha ng mga classroom na tumutugma sa iyong ministry structure (halimbawa, preschool, elementary, youth, o adult).
+- **I-schedule ang mga leksyon** -- Mag-assign ng mga specific na leksyon sa iyong mga classroom sa mga petang kailangan mo.
+- **Mag-customize para sa iyong mga pangangailangan** -- I-adjust ang lesson content upang magkasya sa iyong church's teaching style at preferences.
+- **Ipresenta sa mga klase** -- Gamitin ang built-in presenter mode upang maglakbay sa mga leksyon hakbang sa hakbang sa panahon ng class time.
 
-## Paano Nakaayos ang Nilalaman
+## Kung Paano Inorganisa ang Content
 
-Inaayos ng Lessons.church ang kurikulum sa isang malinaw na hierarchy:
+Ang Lessons.church ay nag-organize ng curriculum sa isang malinaw na hierarchy:
 
-1. **Mga Programa** -- Isang top-level na serye ng kurikulum mula sa isang provider (halimbawa, isang programa ng ministeryo ng mga bata).
-2. **Mga Pag-aaral** -- Isang grupo ng mga kaugnay na aralin sa loob ng isang programa (halimbawa, isang apat na linggong serye sa isang partikular na paksa).
-3. **Mga Aralin** -- Isang indibidwal na sesyon ng pagtuturo sa loob ng isang pag-aaral, karaniwang ginagamit para sa isang pagpupulong ng klase.
-4. **Mga Venue** -- Iba't ibang bersyon ng isang aralin na inangkop para sa mga partikular na grupo ng edad o kapaligiran (halimbawa, isang bersyon para sa preschool at isang bersyon para sa elementary).
+1. **Programs** -- Isang top-level curriculum series mula sa isang provider (halimbawa, isang children's ministry program).
+2. **Studies** -- Isang grupo ng mga kaugnay na leksyon sa loob ng isang programa (halimbawa, isang four-week series sa isang specific na paksa).
+3. **Lessons** -- Isang indibidwal na pagtuturo session sa loob ng isang pag-aaral, karaniwang ginagamit para sa isang iisang class meeting.
+4. **Venues** -- Iba't ibang bersyon ng isang leksyon na customized para sa mga specific na age group o setting (halimbawa, isang preschool version at isang elementary version).
 
-## Mga Integration
+## Integrations
 
-Ang Lessons.church ay gumagana sa ibang mga tool ng ChurchApps upang matulungan kang maihatid ang nilalaman:
+Ang Lessons.church ay gumagana sa ibang mga ChurchApps tools upang tulungan kang magdala ng content:
 
-- **B1.church** -- Ang mga boluntaryo at magulang ay maaaring mag-access ng mga paparating at kamakailang aralin sa pamamagitan ng B1 app.
-- **FreeShow** -- Gamitin ang FreeShow presentation software upang ipakita ang nilalaman ng aralin sa screen.
-- **[FreePlay](https://freeplay.church)** -- Ipakita ang mga aralin nang direkta sa isang TV gamit ang FreePlay para sa Android TV, Fire TV, at Apple TV.
+- **B1.church** -- Ang mga volunteer at magulang ay maaaring mag-access ng mga paparating at kamakailang mga leksyon sa pamamagitan ng B1 app.
+- **FreeShow** -- Gamitin ang FreeShow presentation software upang ipakita ang lesson content sa screen.
+- **[FreePlay](https://freeplay.church)** -- Ipakita ang mga leksyon direkta sa isang TV gamit ang FreePlay app para sa Android TV, Fire TV, at Apple TV.
 
-## Mga Seksyon ng Dokumentasyon
+## Documentation Sections
 
-- [Pagsisimula](./getting-started/) -- Gumawa ng iyong account at alamin ang mga pangunahing kaalaman
-- [Pagba-browse ng Nilalaman](./browsing/) -- Maghanap ng mga programa, pag-aaral, at aralin
-- [Mga Silid-aralan](./classrooms/) -- Mag-set up ng mga silid-aralan at mag-iskedyul ng mga aralin
-- [Pag-customize](./customization/) -- I-angkop ang mga aralin sa iyong simbahan
-- [Pagpapahayag](./presenting/) -- Maghatid ng mga aralin sa klase gamit ang presenter mode
-- [Administrasyon](./admin/) -- Pamahalaan ang mga programa, pag-aaral, at aralin bilang admin
-- [Pahayag ng Pananampalataya](./statement-of-faith.md) -- Mga pangunahing paniniwala at mga gabay sa kurikulum
+- [Pagsisimula](./getting-started/) -- Lumikha ng iyong account at matuto ng mga pangunahing
+- [Pag-browse ng Content](./browsing/) -- Maghanap ng mga programa, pag-aaral, at mga leksyon
+- [Classrooms](./classrooms/) -- I-setup ang mga classroom at i-schedule ang mga leksyon
+- [Customization](./customization/) -- I-customize ang mga leksyon sa iyong simbahan
+- [Pagpresenta](./presenting/) -- Maghatid ng mga leksyon sa klase gamit ang presenter mode
+- [Administration](./admin/) -- Pamahalaan ang mga programa, pag-aaral, at mga leksyon bilang isang admin
+- [Statement of Faith](./statement-of-faith.md) -- Mga pangunahing paniniwala at curriculum guidelines
 
 Para sa suporta, mag-email sa [support@churchapps.org](mailto:support@churchapps.org).

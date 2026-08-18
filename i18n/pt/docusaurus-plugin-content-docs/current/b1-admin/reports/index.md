@@ -6,39 +6,40 @@ title: "Relatórios"
 
 <div class="article-intro">
 
-A página de Relatórios oferece acesso rápido a relatórios pré-construídos que ajudam você a entender seus dados da igreja. Use esses relatórios para rastrear tendências de presença, monitorar atividade de doação e permaneça conectado com sua congregação através de celebrações de aniversário.
+A página Relatórios oferece acesso rápido a relatórios pré-construídos que ajudam você a entender os dados de sua igreja. Use esses relatórios para rastrear tendências de frequência, monitorar atividade de doação e se manter conectado com sua congregação através de celebrações de aniversário.
 
 </div>
 
 ## Relatórios Disponíveis
 
-A página de Relatórios exibe cartões de relatório para cada relatório disponível. Clique em qualquer cartão para abrir o relatório com seus filtros.
+Relatórios não têm entrada no menu de navegação do B1 Admin -- vá diretamente para a URL do relatório que você quer (marcador de endereço é a maneira mais fácil de voltar). Cada relatório abre direto para seus filtros.
 
-- **[Birthday Report](./birthday-report)** -- Visualize aniversários próximos para membros de sua congregação.
-- **[Attendance Trend](./attendance-reports)** -- Veja como padrões de presença mudam ao longo do tempo em seus serviços.
-- **[Group Attendance](./attendance-reports)** -- Visualize totais de presença por grupo para um intervalo de datas selecionado.
-- **[Daily Group Attendance](./attendance-reports)** -- Obtenha um detalhamento dia a dia de dados de presença do grupo.
-- **[Donation Summary](./donation-summary)** -- Revise totais e tendências de doação para planejamento financeiro.
-- **[Audit Log](./audit-log)** -- Rastreie todas as mudanças e ações em todo seu sistema de gerenciamento de igreja (encontrado em Settings > Audit Log).
+- **[Relatório de Aniversários](./birthday-report)** (`admin.b1.church/reports/birthdays`) -- Veja aniversários próximos para membros de sua congregação.
+- **[Relatório de Aniversários de Casamento](./anniversary-report)** (`admin.b1.church/reports/anniversaries`) -- Veja aniversários de casamento próximos para membros de sua congregação.
+- **[Tendência de Frequência](./attendance-reports)** (`admin.b1.church/reports/attendanceTrend`) -- Veja como os padrões de frequência mudam ao longo do tempo em seus serviços.
+- **[Frequência de Grupo](./attendance-reports)** (`admin.b1.church/reports/groupAttendance`) -- Veja totais de frequência por grupo para um intervalo de datas selecionado.
+- **[Frequência de Grupo Diária](./attendance-reports)** (`admin.b1.church/reports/dailyGroupAttendance`) -- Obtenha um detalhamento dia a dia dos dados de frequência de grupo.
+- **[Resumo de Doações](./donation-summary)** (`admin.b1.church/reports/donationSummary`) -- Revise totais de doação e tendências para planejamento financeiro.
+- **[Log de Auditoria](./audit-log)** -- Rastreie todas as mudanças e ações em seu sistema de gerenciamento de igreja (encontrado em Configurações > Log de Auditoria).
 
 ## Usando Relatórios
 
-1. Navegue até **Reports** do menu principal.
-2. Clique em um **cartão de relatório** para abri-lo.
-3. Use os **filtros** no topo de cada relatório para estreitar os dados por intervalo de datas, grupo, serviço ou outros critérios.
-4. Revise os resultados exibidos no relatório.
+1. Vá diretamente para a URL do relatório, como **admin.b1.church/reports/birthdays**.
+2. Use os **filtros** no topo do relatório para estreitar os dados por intervalo de datas, grupo, serviço ou outros critérios.
+3. Revise os resultados exibidos no relatório.
 
 :::tip
-Execute relatórios regularmente para se manter atualizado sobre tendências de presença, aniversários próximos e padrões de doação. Esses dados ajudam você a planejar ministérios e alcance mais efetivamente.
+Execute relatórios regularmente para se manter atualizado sobre tendências de frequência, aniversários próximos e padrões de doação. Esses dados ajudam você a planejar ministérios e alcance mais efetivamente.
 :::
 
 :::info
-Os dados de relatório dependem de entrada de dados consistente. Certifique-se de que sua equipe está [rastreando presença](../attendance/tracking-attendance.md), [registrando doações](../donations/recording-donations.md) e mantendo [registros de pessoas](../people/adding-people.md) atualizados para os resultados mais precisos.
+Os dados do relatório dependem de entrada de dados consistente. Certifique-se de que sua equipe está [rastreando frequência](../attendance/tracking-attendance.md), [registrando doações](../donations/recording-donations.md) e mantendo [registros de pessoas](../people/adding-people.md) atualizados para os resultados mais precisos.
 :::
 
 ## Saiba Mais
 
-- [Birthday Report](./birthday-report) -- Encontrando e usando dados de aniversário.
-- [Attendance Reports](./attendance-reports) -- Entendendo os três relatórios de presença.
-- [Donation Summary](./donation-summary) -- Revisando dados de doação e resumos financeiros.
-- [Audit Log](./audit-log) -- Rastreando atividade do sistema e mudanças.
+- [Relatório de Aniversários](./birthday-report) -- Encontrando e usando dados de aniversário.
+- [Relatório de Aniversários de Casamento](./anniversary-report) -- Encontrando e usando dados de aniversário de casamento.
+- [Relatórios de Frequência](./attendance-reports) -- Entendendo os três relatórios de frequência.
+- [Resumo de Doações](./donation-summary) -- Revisando dados de doação e resumos financeiros.
+- [Log de Auditoria](./audit-log) -- Rastreando atividade do sistema e mudanças.

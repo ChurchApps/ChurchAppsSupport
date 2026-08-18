@@ -1,50 +1,49 @@
 ---
-title: "Rapport des anniversaires"
+title: "Rapport d'anniversaire"
 ---
 
-# Rapport des anniversaires
+# Rapport d'anniversaire
 
 <div class="article-intro">
 
-Le rapport des anniversaires vous aide à rester en contact avec votre communauté en affichant les membres dont l'anniversaire approche. Utilisez-le pour planifier des célébrations, envoyer des cartes ou faire des annonces pendant les cultes.
+Le rapport d'anniversaire vous aide à rester connecté avec votre congrégation en montrant les membres avec les anniversaires à venir. Utilisez-le pour planifier des célébrations, envoyer des cartes ou faire des annonces pendant les services.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Assurez-vous que les dates de naissance sont saisies sur le profil de chaque personne. Consultez [Ajouter des personnes](../people/adding-people.md) pour plus de détails.
-- Vous avez besoin des [autorisations](../settings/roles-permissions.md) appropriées pour accéder aux rapports
+- Assurez-vous que les dates de naissance sont entrées sur le profil de chaque personne. Voir [Ajouter des personnes](../people/adding-people.md) pour plus de détails.
+- Vous devez avoir les [permissions](../settings/roles-permissions.md) appropriées pour accéder aux rapports
 
 </div>
 
-## Exécuter le rapport
+## Exécution du rapport
 
-1. Accédez à **Rapports** depuis le menu principal.
-2. Cliquez sur la carte **Rapport des anniversaires**.
-3. Définissez la **période** à l'aide des filtres de date pour déterminer quels anniversaires vous souhaitez voir.
-4. Le rapport affichera une liste des membres ayant leur anniversaire dans cette période.
+1. Allez directement à **admin.b1.church/reports/birthdays** dans votre navigateur (les rapports n'ont pas d'entrée dans le menu de navigation — mettre en signet l'adresse est le moyen le plus facile d'y revenir).
+2. Choisissez le **Mois** que vous voulez dans la liste déroulante. Vous pouvez optionnellement limiter les résultats à un seul **Groupe**.
+3. Cliquez sur **Exécuter le rapport**. Le rapport liste tout le monde avec un anniversaire dans ce mois, avec leur date de naissance — prêt à lire directement dans un bulletin ou une liste d'annonces.
 
 ## Ce que le rapport affiche
 
-Le rapport des anniversaires affiche :
+Le rapport d'anniversaire affiche :
 
-- **Nom du membre** -- Le nom de la personne dans votre base de données de l'église.
-- **Date de naissance** -- La date de son anniversaire.
+- **Anniversaire** -- La date de leur anniversaire.
+- **Nom** -- Le nom de la personne de votre base de données d'église.
 
-Les résultats sont listés dans la période que vous avez sélectionnée, ce qui permet de voir facilement qui a un anniversaire à venir.
+Les résultats couvrent le mois que vous avez sélectionné, ce qui facilite la visualisation de qui a un anniversaire à venir.
 
 ## Utilisations pratiques
 
 - **Annonces hebdomadaires** -- Exécutez le rapport pour la semaine à venir et incluez les anniversaires dans votre bulletin ou vos annonces.
-- **Cartes d'anniversaire** -- Générez une liste pour le mois et demandez à votre équipe d'envoyer des cartes d'anniversaire personnalisées.
-- **Responsables de petits groupes** -- Les responsables de groupes peuvent exécuter le rapport pour se souvenir des anniversaires des membres de leur groupe.
-- **Célébrations d'étapes** -- Filtrez par périodes spécifiques pour planifier des célébrations d'anniversaires marquants.
+- **Cartes d'anniversaire** -- Générez une liste pour le mois et demandez à votre équipe d'envoyer des cartes d'anniversaire personnelles.
+- **Animateurs de petits groupes** -- Les animateurs de groupe peuvent exécuter le rapport pour se souvenir des anniversaires des membres de leur groupe.
+- **Célébrations de jalons** -- Filtrez des plages de dates spécifiques pour planifier les célébrations d'anniversaires de jalons.
 
 :::tip
-Exécutez ce rapport au début de chaque mois pour anticiper. Vous pouvez définir la période sur le mois entier afin d'avoir le temps de préparer des cartes ou des annonces.
+Exécutez ce rapport au début de chaque mois pour planifier à l'avance. Vous pouvez définir la plage de dates pour couvrir le mois entier afin d'avoir le temps de préparer des cartes ou des annonces.
 :::
 
 :::info
-Les données d'anniversaire proviennent du champ date de naissance sur le profil de chaque personne. Assurez-vous que vos [fiches de membres](../people/adding-people.md) sont à jour pour obtenir des résultats précis.
+Les données d'anniversaire proviennent du champ date de naissance sur le profil de chaque personne. Assurez-vous que vos [dossiers d'adhésion](../people/adding-people.md) sont à jour pour des résultats précis.
 :::

@@ -1,12 +1,12 @@
 ---
-title: "Presentasjonsmodus"
+title: "Presentør-modus"
 ---
 
-# Presentasjonsmodus
+# Presentør-modus
 
 <div class="article-intro">
 
-Presentasjonsmodus gjør en leksjon om til en fullskjerms, projeksjonsvennlig visning. Den er designet for å vise leksjonsinnhold på klasseromsskjermer, projektorer eller TV-er slik at alle i rommet kan følge med under undervisningstiden.
+Presentør-modus gjør en leksjon om til en fullskjermsvisning vennlig for projeksjon. Det er designet for å vise lesjoninnhold på klasseromssk, projektorer eller TV-er slik at alle i rommet kan følge med i klassetiden.
 
 </div>
 
@@ -14,39 +14,39 @@ Presentasjonsmodus gjør en leksjon om til en fullskjerms, projeksjonsvennlig vi
 <h4>Før du begynner</h4>
 
 - [Planlegg en leksjon](../classrooms/scheduling-lessons.md) til et klasserom, eller naviger til en leksjon gjennom [innholdsbiblioteket](../browsing/index.md)
-- Sørg for at skjermen din (projektor, TV eller monitor) er tilkoblet og konfigurert
+- Kontroller at displayet ditt (projektor, TV eller monitor) er tilkoblet og konfigurert
 
 </div>
 
-## Gå inn i Presentasjonsmodus
+## Aktivering av presentør-modus
 
 1. Åpne leksjonen du vil presentere.
-2. Klikk **Presenter**-knappen på leksjonssiden.
-3. Leksjonen vil bytte til en fullskjermsvisning med svart bakgrunn og stor, lettlest tekst.
+2. Klikk **Presentér**-knappen på lesjonssiden.
+3. Leksjonen vil bytte til en fullskjermvisning med svart bakgrunn og stor, letleselig tekst.
 
-Når du er i Presentasjonsmodus, kan du gå gjennom leksjonen seksjon for seksjon ved hjelp av navigasjonskontrollene på skjermen.
+Når du er i presentør-modus, kan du bevege deg gjennom lesjonsdelen efter deler ved hjelp av navigasjonsmedlemene på skjermen.
 
-## Slik ser det ut
+## Hvordan det ser ut
 
-Presentasjonsmodus bruker en ren, mørk bakgrunn slik at innholdet fremheves på en prosjektert skjerm. Hver seksjon av leksjonen vises én om gangen, slik at fokuset holdes på den gjeldende aktiviteten. Tekst, bilder og videoinnbygging er alle formatert for å være lesbare fra andre siden av rommet.
+Presentør-modus bruker en ren, mørk bakgrunn slik at innholdet skiller seg ut på en projisert skjerm. Hver del av leksjonen vises en om gangen og holder fokus på den nåværende aktiviteten. Tekst, bilder og videoinnlegg er alle formatert til å være leselig fra hele rommet.
 
 ## Bruk med FreeShow
 
-Lessons.church integreres med [FreeShow](https://freeshow.app), en gratis presentasjonsapplikasjon. FreeShow kan hente leksjonsinnhold direkte fra Lessons.church, slik at du kan inkorporere leksjonsbilder i den eksisterende presentasjonsarbeidsflyten din. Dette er spesielt nyttig hvis du allerede bruker FreeShow til sangtekster eller kunngjøringer.
+Lessons.church integreres med [FreeShow](https://freeshow.app), en gratis presentasjonsprogram. FreeShow kan trekke lesjoninnhold direkte fra Lessons.church, slik at du kan integrere lesjonslider i den eksisterende presentasjonsflytens. Dette er spesielt nyttig hvis du allerede bruker FreeShow for tilbedelseslyriker eller kunngjøringer.
 
 ## Bruk med FreePlay
 
-**[FreePlay](https://freeplay.church)** lar deg vise leksjoner på en TV uten en separat datamaskin. Installer appen på en Android TV-, Fire TV- eller Apple TV-enhet, koble den til Lessons.church-klasserommet ditt, og den planlagte leksjonen vil vises automatisk. Dette er et flott håndfritt alternativ for klasserom som har en dedikert skjerm. Se [FreePlay-dokumentasjonen](/docs/freeplay/) for oppsett.
+**[FreePlay](https://freeplay.church)** lar deg vise leksjoner på en TV uten en egen datamaskin. Installer appen på Android TV, Fire TV eller Apple TV, koble den til klassens Lessons.church, og den planlagte leksjonen vises automatisk. Dette er et flott handsfree-alternativ for klasserom som har en dedikert skjerm. Se [FreePlay-dokumentasjonen](/docs/freeplay/) for oppsett.
 
 :::tip
-Hvis du bruker en projektor, sørg for at skjermen din er satt til å speile eller utvide til projektoren før du går inn i Presentasjonsmodus. Dette sikrer at fullskjermsvisningen vises på riktig skjerm.
+Hvis du bruker en projektor, husk at displayet ditt er satt til speil eller utvide til projektoren før aktivering av presentør-modus. Dette sikrer at fullskjermvisningen vises på riktig skjerm.
 :::
 
-## Avslutte Presentasjonsmodus
+## Avslutning av presentør-modus
 
-For å forlate Presentasjonsmodus, trykk **Escape**-tasten eller klikk på avsluttknappen i hjørnet av skjermen. Du vil gå tilbake til den vanlige leksjonsvisningen.
+For å forlate presentør-modus, trykk **Escape**-tasten eller klikk utgangsknappen i hjørnet av skjermen. Du vil gå tilbake til normal lesjonvisning.
 
 ## Relaterte artikler
 
-- [Frivilligguider](./volunteer-guides.md) -- Del rollespesifikke instruksjoner med teamet ditt mens du presenterer
-- [Nedlastinger og materiell](./downloads.md) -- Skriv ut utdelingsark og aktivitetsark som supplement til presentasjonen
+- [Frivilligguider](./volunteer-guides.md) -- Del rolle-spesifikke instruksjoner med teamet ditt mens du presenterer
+- [Nedlastinger og materiell](./downloads.md) -- Skriv ut og distribuer presentasjon handouts og aktivitetsark

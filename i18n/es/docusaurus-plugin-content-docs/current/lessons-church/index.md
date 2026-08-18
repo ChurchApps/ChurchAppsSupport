@@ -6,45 +6,45 @@ title: "Lessons.church"
 
 <div class="article-intro">
 
-Lessons.church es una plataforma de currículo completamente gratuita para iglesias. No hay suscripciones, no hay tarifas y no hay límites de uso. Ofrece más de 1,100 lecciones basadas en video en más de 189 estudios de más de 12 proveedores, cubriendo grupos de edad desde preescolar hasta adultos.
+Lessons.church es una plataforma de currículo completamente gratuita para iglesias. No hay suscripciones, sin cuotas, y sin límites de uso. Proporciona 1,100+ lecciones basadas en video en 189+ estudios de 12+ proveedores, cubriendo grupos de edad desde preescolar hasta adultos.
 
 </div>
 
-## Lo que puede hacer
+## Lo que Puedes Hacer
 
-Con Lessons.church, su iglesia puede:
+Con Lessons.church, tu iglesia puede:
 
-- **Explorar contenido** -- Descubra una biblioteca creciente de programas y estudios de múltiples proveedores, organizados por grupo de edad y tema.
-- **Configurar aulas** -- Cree aulas que coincidan con la estructura de su ministerio (por ejemplo, preescolar, primaria, jóvenes o adultos).
-- **Programar lecciones** -- Asigne lecciones específicas a sus aulas en las fechas que las necesite.
-- **Personalizar según sus necesidades** -- Ajuste el contenido de las lecciones para adaptarlo al estilo de enseñanza y las preferencias de su iglesia.
-- **Presentar a las clases** -- Utilice el modo de presentador integrado para recorrer las lecciones paso a paso durante el tiempo de clase.
+- **Explorar contenido** -- Navega a través de una biblioteca creciente de programas y estudios de múltiples proveedores, organizados por grupo de edad y tema.
+- **Configurar aulas** -- Crea aulas que coincidan con tu estructura ministerial (por ejemplo, preescolar, primaria, jóvenes o adultos).
+- **Programar lecciones** -- Asigna lecciones específicas a tus aulas en las fechas que las necesites.
+- **Personaliza para tus necesidades** -- Ajusta el contenido de la lección para que se adapte al estilo de enseñanza y preferencias de tu iglesia.
+- **Presenta a las clases** -- Usa el modo de presentador integrado para recorrer las lecciones paso a paso durante la clase.
 
-## Cómo está organizado el contenido
+## Cómo se Organiza el Contenido
 
 Lessons.church organiza el currículo en una jerarquía clara:
 
 1. **Programas** -- Una serie de currículo de nivel superior de un proveedor (por ejemplo, un programa de ministerio infantil).
 2. **Estudios** -- Un grupo de lecciones relacionadas dentro de un programa (por ejemplo, una serie de cuatro semanas sobre un tema específico).
-3. **Lecciones** -- Una sesión de enseñanza individual dentro de un estudio, generalmente utilizada para una sola reunión de clase.
-4. **Ambientes** -- Diferentes versiones de una lección adaptadas para grupos de edad o entornos específicos (por ejemplo, una versión para preescolar y una versión para primaria).
+3. **Lecciones** -- Una sesión de enseñanza individual dentro de un estudio, típicamente usada para una reunión de clase única.
+4. **Lugares** -- Versiones diferentes de una lección adaptadas para grupos de edad específicos o configuraciones (por ejemplo, una versión de preescolar y una versión de primaria).
 
 ## Integraciones
 
-Lessons.church funciona con otras herramientas de ChurchApps para ayudarle a entregar contenido:
+Lessons.church funciona con otras herramientas de ChurchApps para ayudarte a entregar contenido:
 
-- **B1.church** -- Los voluntarios y los padres pueden acceder a las lecciones próximas y recientes a través de la aplicación B1.
-- **FreeShow** -- Use el software de presentación FreeShow para mostrar el contenido de las lecciones en pantalla.
-- **[FreePlay](https://freeplay.church)** -- Muestre las lecciones directamente en un televisor con FreePlay para Android TV, Fire TV y Apple TV.
+- **B1.church** -- Los voluntarios y padres pueden acceder a lecciones próximas y recientes a través de la aplicación B1.
+- **FreeShow** -- Usa el software de presentación FreeShow para mostrar contenido de lecciones en la pantalla.
+- **[FreePlay](https://freeplay.church)** -- Muestra lecciones directamente en un TV usando la aplicación FreePlay para Android TV, Fire TV y Apple TV.
 
-## Secciones de la documentación
+## Secciones de Documentación
 
-- [Primeros pasos](./getting-started/) -- Cree su cuenta y aprenda lo básico
-- [Explorar contenido](./browsing/) -- Encuentre programas, estudios y lecciones
-- [Aulas](./classrooms/) -- Configure aulas y programe lecciones
-- [Personalización](./customization/) -- Adapte las lecciones a su iglesia
-- [Presentación](./presenting/) -- Imparta lecciones en clase usando el modo de presentador
-- [Administración](./admin/) -- Gestione programas, estudios y lecciones como administrador
-- [Declaración de fe](./statement-of-faith.md) -- Creencias fundamentales y directrices del currículo
+- [Iniciando](./getting-started/) -- Crea tu cuenta y aprende lo básico
+- [Explorando Contenido](./browsing/) -- Encuentra programas, estudios y lecciones
+- [Aulas](./classrooms/) -- Configura aulas y programa lecciones
+- [Personalización](./customization/) -- Personaliza lecciones para tu iglesia
+- [Presentación](./presenting/) -- Entrega lecciones en clase usando modo de presentador
+- [Administración](./admin/) -- Gestiona programas, estudios y lecciones como administrador
+- [Declaración de Fe](./statement-of-faith.md) -- Creencias centrales y directrices del currículo
 
-Para soporte, envíe un correo electrónico a [support@churchapps.org](mailto:support@churchapps.org).
+Para soporte, correo electrónico [support@churchapps.org](mailto:support@churchapps.org).

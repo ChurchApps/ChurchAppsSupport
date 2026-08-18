@@ -63,6 +63,17 @@ An arrangement represents a distinct version of a song — for example, a faster
 
 When you add a song to a [Service Order](./service-order.md), you can choose which arrangement to use for that specific service, so your team always rehearses and plays the right version.
 
+### Rehearsal Audio
+
+Worship admins can attach a rehearsal audio track to an arrangement so the team can listen ahead of practice:
+
+1. Open the song and select the arrangement.
+2. Click **Upload Audio**.
+3. Choose an MP3, M4A, or AAC file (up to 25 MB -- WAV isn't accepted, to keep storage usage manageable).
+4. Save. The track plays inline wherever that arrangement appears -- on the arrangement page in B1 Admin and in the service plan when a team member opens it in the B1.church member portal. Plan items with audio show a music-note icon instead of a thumbnail.
+
+Deleting the arrangement also removes its uploaded audio file.
+
 :::info
 Songs from your library can be added directly to a [Service Order](./service-order.md) within a plan, linking the song details and the chosen arrangement to that specific service.
 :::

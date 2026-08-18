@@ -1,73 +1,77 @@
 ---
-title: "Mga Ayos ng Simbahan"
+title: "Church Settings"
 ---
 
-# Mga Ayos ng Simbahan
+# Church Settings
 
 <div class="article-intro">
 
-Ang pahina ng Mga Ayos ng Simbahan ay kung saan mo ise-configure ang pangunahing impormasyon, detalye ng pakikipag-ugnayan, at tatak ng iyong simbahan. Ang mga detalyeng ito ay ginagamit sa lahat ng mga tool ng ChurchApps, kasama ang iyong website sa B1.church at ang B1 Mobile app.
+Ang Church Settings page ay kung saan mo na-configure ang pangunahing impormasyon, contact details, at branding ng iyong simbahan. Ang mga detalye na ito ay ginagamit sa lahat ng ChurchApps tools, kabilang ang iyong B1.church website at ang B1 Mobile app.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Ka Magsimula</h4>
+<h4>Bago Kang Magsimula</h4>
 
-- Kailangan mo ng pahintulot na "I-edit ang Mga Ayos ng Simbahan". Tingnan ang [Mga Rol at Pahintulot](./roles-permissions.md) kung wala kang access.
-- Handa na ang address, impormasyon ng pakikipag-ugnayan, at logo ng iyong simbahan
+- Kailangan mo ng "Edit Church Settings" permission. Tingnan ang [Roles & Permissions](./roles-permissions.md) kung wala kang access.
+- Magkaroon ng iyong church's address, contact information, at logo na handa
 
 </div>
 
-## Pag-edit ng Impormasyon ng Iyong Simbahan
+## Pag-edit ng Iyong Church Information
 
-1. Sa B1 Admin, buksan ang **menu ng seksyon** sa sulok sa itaas-kaliwa (ang pangalan ng seksyon na may maliit na arrow) at pumili ng **Mga Ayos**.
-2. I-click ang **Edit Settings** na pindutan sa header.
-3. I-update ang alinman sa mga sumusunod na field:
-   - **Pangalan ng Simbahan** -- Ang pangalang ipinapakita sa lahat ng mga produkto ng ChurchApps.
-   - **Address** -- Ang pisikal na address ng iyong simbahan.
-   - **Impormasyon ng Pakikipag-ugnayan** -- Numero ng telepono, email, at iba pang detalye ng pakikipag-ugnayan.
-4. I-click ang **Magsave** upang i-apply ang iyong mga pagbabago.
+1. Sa B1 Admin, buksan ang **section menu** sa tuktok na sulok sa kaliwa (ang pangalan ng section na may maliit na arrow) at pumili ng **Settings**.
+2. I-click ang **Edit Settings** button sa header.
+3. I-update ang sinuman sa mga sumusunod na larangan:
+   - **Church Name** -- Ang pangalan na ipinapakita sa lahat ng ChurchApps products.
+   - **Address** -- Ang physical address ng iyong simbahan.
+   - **Contact Information** -- Numero ng telepono, email, at iba pang contact details.
+4. I-click ang **Save** upang i-apply ang iyong mga pagbabago.
 
-## Pag-setup ng Iyong Subdomain
+## Pagtatag ng Iyong Subdomain
 
-Ang iyong simbahan ay makakakuha ng libreng subdomain sa **yourchurch.b1.church**. Ito ang web address kung saan ang mga miyembro at bisita ay maaaring mag-access sa online presence ng iyong simbahan.
+Ang iyong simbahan ay nakakakuha ng libre na subdomain sa **yourchurch.b1.church**. Ito ang web address kung saan ang mga miyembro at bisita ay maaaring mag-access sa iyong online presence ng iyong simbahan.
 
-1. Sa pahina ng Mga Ayos, hanapin ang **Subdomain** field.
-2. Ipasok ang iyong preferred subdomain (halimbawa, "gracechurch" para sa gracechurch.b1.church).
+1. Sa Settings page, hanapin ang **Subdomain** field.
+2. Magpasok ng iyong preferred subdomain (halimbawa, "gracechurch" para sa gracechurch.b1.church).
 3. I-save ang iyong mga pagbabago.
 
 :::info
-Ang iyong subdomain ay dapat na natatangi sa lahat ng mga simbahan ng ChurchApps. Kung ang iyong preferred na pangalan ay kinuha na, subukan ang pagdagdag ng iyong lungsod o estado (halimbawa, "gracechurch-dallas").
+Ang iyong subdomain ay dapat na natatangi sa lahat ng ChurchApps churches. Kung ang iyong preferred na pangalan ay kinuha, subukan ang pagdaragdag ng iyong lungsod o estado (halimbawa, "gracechurch-dallas").
 :::
 
-## Pag-configure ng Tatak
+## Pagsasaayos ng Branding
 
-I-customize kung paano makikita ang iyong simbahan sa lahat ng mga tool ng ChurchApps:
+I-customize kung paano lumilitaw ang iyong simbahan sa lahat ng ChurchApps tools:
 
-1. I-upload ang iyong **logo ng simbahan** sa pamamagitan ng pag-click sa lugar ng logo at pagpili ng larawan.
-2. Magdagdag ng anumang karagdagang **mga larawan ng simbahan** na ginagamit sa iyong website at [mobile app](./mobile-app.md).
+1. I-upload ang iyong **church logo** sa pamamagitan ng pag-click sa logo area at pagpili ng isang image file.
+2. Magdagdag ng anumang dagdag na **church images** na ginagamit sa iyong website at [mobile app](./mobile-app.md).
 
 :::tip
-Para sa pinakamahusay na resulta, gumamit ng logo na may transparent na background sa PNG format. Nagsisiguro ito na mukhang maganda ito sa parehong light at dark backgrounds.
+Para sa pinakamahusay na mga resulta, gumamit ng logo na may transparent background sa PNG format. Sinisiguro nito na maganda ito parehong light at dark backgrounds.
 :::
 
-## Pagtaas ng Baitang
+## First Day of Week
 
-Kung sinusubaybayan mo ang **Baitang** sa mga bata at estudyante, B1 ay maaaring awtomatikong itaas ang lahat ng isang baitang sa isang petsa na iyong pipiliin (halimbawa, Agosto 1) sa halip na mangailangan para sa iyo na i-edit ang bawat profile nang manu-mano.
+Pumili kung aling araw ang nagsisimula sa iyong mga calendar. Ang **First Day of Week** dropdown sa Church Info section ay default sa **Sunday**, ngunit maaaring itakda sa anumang araw. Kapag binago, ito ay sinusunod sa lahat ng calendar grids sa B1 Admin at ang B1.church member portal -- ang mga calendar ng grupo, curated calendars, at ang event editor ay lahat ay nag-lay out ng mga linggo na nagsisimula sa araw na iyong pinili.
 
-1. Sa pahina ng Mga Ayos, hanapin ang opsyon ng **Pagtaas ng Baitang**.
-2. I-on ito at piliin ang **buwan at araw** upang itaas ang mga baitang bawat taon.
+## Grade Promotion
+
+Kung sinusubaybayan mo ang **Grade** sa mga bata at mag-aaral, B1 ay maaaring awtomatikong itaas ang lahat ng isang beses sa isang petsa na iyong pinili (halimbawa, Agosto 1) sa halip na mangangailangan kang mag-edit ng bawat profile nang manu-mano.
+
+1. Sa Settings page, hanapin ang **Grade Promotion** option.
+2. I-turn ito on at pumili ng **month and day** upang itaas ang mga beses bawat taon.
 3. I-save ang iyong mga pagbabago.
 
-## Import at Export
+## Import and Export
 
-Ang pindutan ng **Import/Export** sa header ng Mga Ayos ay nagbubukas ng dedikadong tool sa isang bagong browser window. Gamitin ito upang:
+Ang **Import/Export** button sa Settings header ay bumubukas ng isang dedikadong tool sa isang bagong browser window. Gamitin ito upang:
 
-- Mag-import ng data ng miyembro mula sa ibang sistema ng pamamahala ng simbahan.
-- I-export ang iyong data ng ChurchApps para sa backup o mga layunin ng migrasyon.
+- I-import ang miyembro data mula sa ibang church management system.
+- I-export ang iyong ChurchApps data para sa backup o migration purposes.
 
-Ito ay partikular na kapaki-pakinabang kapag una mong ise-setup ang iyong simbahan at kailangan mong ilipat ang umiiral na mga record sa ChurchApps.
+Ito ay partikular na kapaki-pakinabang kapag nagsisimula ka na sa pagsisiguro sa iyong simbahan at kailangan mong ilipat ang umiiral na mga record sa ChurchApps.
 
 :::warning
-Kapag nag-import ng data, palaging i-backup muna ang iyong umiiral na mga record. Ang mga operasyon ng pag-import ay nagdadagdag ng data sa iyong sistema at maaaring lumikha ng duplicate entries kung tatakbo ng maraming beses.
+Kapag nag-import ng data, laging mag-backup ng iyong umiiral na mga record nang una. Ang mga operasyon ng import ay nagdadagdag ng data sa iyong sistema at maaaring lumikha ng mga duplicate entry kung patakbuhin ng maraming pagkakataon.
 :::

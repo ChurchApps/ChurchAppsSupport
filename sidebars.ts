@@ -110,6 +110,7 @@ const sidebars: SidebarsConfig = {
           link: { type: 'doc', id: 'b1-admin/reports/index' },
           items: [
             'b1-admin/reports/birthday-report',
+            'b1-admin/reports/anniversary-report',
             'b1-admin/reports/attendance-reports',
             'b1-admin/reports/donation-summary',
             'b1-admin/reports/audit-log',

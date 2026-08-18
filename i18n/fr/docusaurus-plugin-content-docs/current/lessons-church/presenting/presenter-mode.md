@@ -1,52 +1,52 @@
 ---
-title: "Mode présentation"
+title: "Mode présentateur"
 ---
 
-# Mode présentation
+# Mode présentateur
 
 <div class="article-intro">
 
-Le mode présentation transforme une leçon en un affichage plein écran adapté à la projection. Il est conçu pour afficher le contenu des leçons sur les écrans des salles de classe, les projecteurs ou les téléviseurs afin que tout le monde dans la salle puisse suivre pendant le cours.
+Le mode présentateur transforme une leçon en un affichage plein écran convivial pour la projection. Il est conçu pour afficher le contenu de la leçon sur les écrans, projecteurs ou TV de la salle de classe afin que tout le monde dans la salle puisse suivre pendant la classe.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- [Planifiez une leçon](../classrooms/scheduling-lessons.md) pour une salle de classe, ou accédez à une leçon via la [bibliothèque de contenu](../browsing/index.md)
-- Assurez-vous que votre écran (projecteur, téléviseur ou moniteur) est connecté et configuré
+- [Planifiez une leçon](../classrooms/scheduling-lessons.md) à une salle de classe, ou naviguez vers une leçon via la [bibliothèque de contenu](../browsing/index.md)
+- Assurez-vous que votre affichage (projecteur, TV ou moniteur) est connecté et configuré
 
 </div>
 
-## Entrer en mode présentation
+## Passage au mode présentateur
 
 1. Ouvrez la leçon que vous souhaitez présenter.
 2. Cliquez sur le bouton **Présenter** sur la page de la leçon.
-3. La leçon passera en vue plein écran avec un fond noir et un texte large et facile à lire.
+3. La leçon basculera vers une vue plein écran avec un fond noir et un texte large et facile à lire.
 
-Une fois en mode présentation, vous pouvez parcourir la leçon section par section à l'aide des commandes de navigation à l'écran.
+Une fois en mode présentateur, vous pouvez vous déplacer dans la leçon section par section en utilisant les contrôles de navigation à l'écran.
 
-## Apparence
+## À quoi ça ressemble
 
-Le mode présentation utilise un fond sombre et épuré pour que le contenu ressorte sur un écran projeté. Chaque section de la leçon est affichée une à la fois, maintenant l'attention sur l'activité en cours. Le texte, les images et les vidéos intégrées sont tous formatés pour être lisibles depuis l'autre bout de la salle.
+Le mode présentateur utilise un fond propre et sombre afin que le contenu se détache sur un écran projeté. Chaque section de la leçon est affichée une à la fois, gardant l'accent sur l'activité actuelle. Le texte, les images et les intégrations vidéo sont tous formatés pour être lisibles de partout dans une salle.
 
 ## Utilisation avec FreeShow
 
-Lessons.church s'intègre avec [FreeShow](https://freeshow.app), une application de présentation gratuite. FreeShow peut récupérer le contenu des leçons directement depuis Lessons.church, vous permettant d'incorporer les diapositives des leçons dans votre flux de présentation existant. Cela est particulièrement utile si vous utilisez déjà FreeShow pour les paroles de louange ou les annonces.
+Lessons.church s'intègre avec [FreeShow](https://freeshow.app), une application de présentation gratuite. FreeShow peut extraire le contenu de la leçon directement de Lessons.church, vous permettant d'intégrer les diapositives de la leçon dans votre flux de travail de présentation existant. Ceci est particulièrement utile si vous utilisez déjà FreeShow pour les paroles de culte ou les annonces.
 
 ## Utilisation avec FreePlay
 
-**[FreePlay](https://freeplay.church)** vous permet d'afficher des leçons sur un téléviseur sans ordinateur séparé. Installez l'application sur un appareil Android TV, Fire TV ou Apple TV, connectez-la à votre salle de classe Lessons.church, et la leçon planifiée apparaîtra automatiquement. C'est une excellente option sans intervention manuelle pour les salles de classe qui disposent d'un écran dédié. Consultez la [documentation FreePlay](/docs/freeplay/) pour la configuration.
+**[FreePlay](https://freeplay.church)** vous permet d'afficher les leçons sur une TV sans ordinateur séparé. Installez l'application sur un appareil Android TV, Fire TV ou Apple TV, connectez-la à votre salle de classe Lessons.church, et la leçon planifiée apparaîtra automatiquement. C'est une excellente option pratique pour les salles de classe qui ont un écran dédié. Consultez la [documentation FreePlay](/docs/freeplay/) pour la configuration.
 
 :::tip
-Si vous utilisez un projecteur, assurez-vous que votre affichage est configuré pour dupliquer ou étendre vers le projecteur avant d'entrer en mode présentation. Cela garantit que la vue plein écran apparaît sur le bon écran.
+Si vous utilisez un projecteur, assurez-vous que votre affichage est défini pour se refléter ou s'étendre au projecteur avant d'entrer en mode présentateur. Cela garantit que la vue plein écran apparaît sur le bon écran.
 :::
 
-## Quitter le mode présentation
+## Sortie du mode présentateur
 
-Pour quitter le mode présentation, appuyez sur la touche **Échap** ou cliquez sur le bouton de sortie dans le coin de l'écran. Vous reviendrez à la vue normale de la leçon.
+Pour quitter le mode présentateur, appuyez sur la touche **Échap** ou cliquez sur le bouton de sortie dans le coin de l'écran. Vous reviendrez à la vue de leçon normale.
 
 ## Articles connexes
 
-- [Guides des bénévoles](./volunteer-guides.md) -- Partager des instructions spécifiques au rôle avec votre équipe pendant la présentation
-- [Téléchargements et documents](./downloads.md) -- Imprimer des fiches et des feuilles d'activités pour accompagner la présentation
+- [Guides des bénévoles](./volunteer-guides.md) -- Partagez les instructions spécifiques aux rôles avec votre équipe pendant que vous présentez
+- [Téléchargements et matériels](./downloads.md) -- Imprimer des documents et des feuilles d'activités pour compléter la présentation

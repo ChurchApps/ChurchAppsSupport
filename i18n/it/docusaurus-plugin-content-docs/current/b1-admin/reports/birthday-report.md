@@ -1,12 +1,12 @@
 ---
-title: "Report compleanni"
+title: "Report di compleanni"
 ---
 
-# Report compleanni
+# Report di compleanni
 
 <div class="article-intro">
 
-Il Report compleanni ti aiuta a restare in contatto con la tua congregazione mostrando i membri con compleanni imminenti. Usalo per pianificare celebrazioni, inviare biglietti o fare annunci durante i servizi.
+Il Report di compleanni ti aiuta a rimanere in contatto con la tua congregazione mostrando i membri con i compleanni imminenti. Usalo per pianificare celebrazioni, inviare cartoline o fare annunci durante i servizi.
 
 </div>
 
@@ -18,33 +18,32 @@ Il Report compleanni ti aiuta a restare in contatto con la tua congregazione mos
 
 </div>
 
-## Eseguire il report
+## Esecuzione del report
 
-1. Naviga su **Reports** dal menu principale.
-2. Clicca la scheda **Birthday Report**.
-3. Imposta l'**intervallo di date** usando i filtri per definire quali compleanni vuoi vedere.
-4. Il report mostrerà un elenco di membri con compleanni in quell'intervallo.
+1. Vai direttamente a **admin.b1.church/reports/birthdays** nel tuo browser (i report non hanno una voce nel menu di navigazione — aggiungere l'indirizzo ai segnalibri è il modo più semplice per tornare).
+2. Scegli il **Mese** che desideri dal menu a discesa. Puoi opzionalmente limitare i risultati a un singolo **Gruppo**.
+3. Fai clic su **Esegui report**. Il report elenca tutti coloro che hanno un compleanno in quel mese, con la loro data di nascita — pronto da leggere direttamente in un bollettino o elenco di annunci.
 
 ## Cosa mostra il report
 
-Il Report compleanni mostra:
+Il Report di compleanni visualizza:
 
-- **Nome del membro** -- Il nome della persona dal database della tua chiesa.
-- **Data di nascita** -- La data del loro compleanno.
+- **Compleanno** -- La data del loro compleanno.
+- **Nome** -- Il nome della persona dal tuo database della chiesa.
 
-I risultati sono elencati nell'intervallo di date selezionato, rendendo facile vedere chi ha un compleanno in arrivo.
+I risultati coprono il mese che hai selezionato, rendendo facile vedere chi ha un compleanno in arrivo.
 
 ## Usi pratici
 
-- **Annunci settimanali** -- Esegui il report per la settimana successiva e includi i compleanni nel tuo bollettino o annunci.
-- **Biglietti di compleanno** -- Genera un elenco per il mese e fai inviare dal tuo team biglietti di compleanno personali.
-- **Leader di piccoli gruppi** -- I leader dei gruppi possono eseguire il report per ricordare i compleanni dei membri nel loro gruppo.
-- **Celebrazioni di traguardi** -- Filtra per intervalli di date specifici per pianificare celebrazioni di compleanni importanti.
+- **Annunci settimanali** -- Esegui il report per la settimana in arrivo e includi i compleanni nel tuo bollettino o annunci.
+- **Cartoline di compleanno** -- Genera un elenco per il mese e fai inviare cartoline di compleanno personali dal tuo team.
+- **Leader di piccoli gruppi** -- I leader di gruppo possono eseguire il report per ricordare i compleanni dei membri nel loro gruppo.
+- **Celebrazioni di anniversari** -- Filtra per intervalli di date specifici per pianificare celebrazioni di compleanni importanti.
 
 :::tip
-Esegui questo report all'inizio di ogni mese per pianificare in anticipo. Puoi impostare l'intervallo di date per coprire l'intero mese così hai tempo per preparare biglietti o annunci.
+Esegui questo report all'inizio di ogni mese per pianificare in anticipo. Puoi impostare l'intervallo di date per coprire l'intero mese in modo da avere il tempo di preparare cartoline o annunci.
 :::
 
 :::info
-I dati dei compleanni provengono dal campo data di nascita nel profilo di ogni persona. Assicurati che i tuoi [registri dei membri](../people/adding-people.md) siano aggiornati per risultati accurati.
+I dati di compleanno provengono dal campo di data di nascita nel profilo di ogni persona. Assicurati che i tuoi [record di iscritti](../people/adding-people.md) siano aggiornati per risultati accurati.
 :::

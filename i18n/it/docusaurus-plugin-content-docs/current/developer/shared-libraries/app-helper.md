@@ -6,63 +6,63 @@ title: "AppHelper"
 
 <div class="article-intro">
 
-Il pacchetto `@churchapps/apphelper` fornisce componenti React e utilità condivise per tutte le applicazioni web di ChurchApps. È un unico pacchetto pubblicato che espone moduli funzionali tramite entry point subpath -- login, donazioni, moduli, markdown e funzionalità sito web/CMS -- insieme a un set di componenti e helper condivisi principali.
+Il pacchetto `@churchapps/apphelper` fornisce componenti React condivisi e utilità per tutte le applicazioni web ChurchApps. È un unico pacchetto pubblicato che espone moduli di funzionalità tramite punti di ingresso di sottopercorso -- login, donazioni, moduli, markdown e funzionalità di sito web/CMS -- insieme a un set principale di componenti e helper condivisi.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
 - Installa **Node.js** e **Git** -- vedi [Prerequisiti](../setup/prerequisites)
-- Familiarizza con la configurazione del [workspace Packages](./index.md) e il flusso di rilascio
+- Familiarizza te stesso con la configurazione dello [spazio di lavoro Packages](./index.md) e il flusso di rilascio
 
 </div>
 
-## Entry Point
+## Punti di ingresso
 
-Il pacchetto definisce export subpath nel suo `package.json`, così ogni modulo funzionale è importabile singolarmente:
+Il pacchetto definisce esportazioni di sottopercorso nel suo `package.json`, quindi ogni modulo di funzionalità è importabile da solo:
 
-| Entry point | Contenuto |
+| Punto di ingresso | Contenuti |
 |-------------|----------|
-| `@churchapps/apphelper` | Componenti, helper e hook principali |
+| `@churchapps/apphelper` | Componenti principali, helper e hook |
 | `@churchapps/apphelper/login` | UI di login e registrazione |
-| `@churchapps/apphelper/donations` | Componenti per donazioni e offerte |
-| `@churchapps/apphelper/forms` | Componenti per l'invio di moduli |
-| `@churchapps/apphelper/markdown` | Editor e renderer markdown e HTML |
-| `@churchapps/apphelper/website` | Componenti del website builder e del CMS |
+| `@churchapps/apphelper/donations` | Componenti di donazione |
+| `@churchapps/apphelper/forms` | Componenti di invio del modulo |
+| `@churchapps/apphelper/markdown` | Editor e renderer Markdown e HTML |
+| `@churchapps/apphelper/website` | Componenti di generatore di siti e CMS |
 
-## Chi Consuma Cosa
+## Chi consuma cosa
 
-Prima di modificare un export condiviso, controlla quali app lo importano:
+Prima di modificare un'esportazione condivisa, controlla quali app la importano:
 
-| Area di export | Cosa fornisce | Consumato da |
+| Area di esportazione | Cosa fornisce | Consumato da |
 |---|---|---|
-| Root -- componenti e hook principali | `DisplayBox`, `InputBox`, `Loading`, `PageHeader`, `PersonAvatar`, `SmallButton`, `ErrorMessages`, `ExportLink`, `useMountedState`, più le utilità `@churchapps/helpers` ri-esportate (`ApiHelper`, `DateHelper`, `Locale`, `UserHelper`, ecc.) | B1Admin, B1App, B1Transfer, LessonsApp |
+| Root -- componenti principali e hook | `DisplayBox`, `InputBox`, `Loading`, `PageHeader`, `PersonAvatar`, `SmallButton`, `ErrorMessages`, `ExportLink`, `useMountedState`, più utilità `@churchapps/helpers` ri-esportate (`ApiHelper`, `DateHelper`, `Locale`, `UserHelper`, ecc.) | B1Admin, B1App, B1Transfer, LessonsApp |
 | Root -- chrome del sito | `SiteHeader` (navigazione, menu utente, notifiche) | B1Admin, B1Transfer, LessonsApp |
-| Root -- editor di contenuti admin | `ImageEditor`, `HelpIcon` | B1Admin |
-| Root -- infrastruttura realtime | `SocketHelper`, `SubscriptionManager`, `NotificationService` | B1Admin, B1App |
-| Root -- store chat/presenza | `ConversationStore`, `PresenceStore` | B1App |
-| Root -- UI note e messaggistica | `Notes` (note dello staff su persone/attività); `AddNote`, `SubscriptionToggle` (messaggistica dei membri) | B1Admin (`Notes`), B1App (`AddNote`, `SubscriptionToggle`) |
+| Root -- editor di contenuti amministrativi | `ImageEditor`, `HelpIcon` | B1Admin |
+| Root -- impianto idraulico realtime | `SocketHelper`, `SubscriptionManager`, `NotificationService` | B1Admin, B1App |
+| Root -- negozi di chat/presenza | `ConversationStore`, `PresenceStore` | B1App |
+| Root -- note e UI di messaging | `Notes` (note del personale su persone/compiti); `AddNote`, `SubscriptionToggle` (messaging dei membri) | B1Admin (`Notes`), B1App (`AddNote`, `SubscriptionToggle`) |
 | Root -- specifico di Lessons | `AnalyticsHelper`, `FloatingSupport`, `SupportModal` | LessonsApp |
 | `./login` | `LoginPage`, `LogoutPage` | B1Admin, B1App, B1Transfer, LessonsApp |
-| `./markdown` | `MarkdownEditor`, `MarkdownPreviewLight` (condivisi); `MarkdownPreview`, `HtmlEditor` (editing di contenuti admin) | B1Admin, B1App, LessonsApp |
-| `./donations` | `MultiGatewayDonationForm`, `RecurringDonations`, `PaymentMethods`, `StripePaymentMethod`, `DonationHelper`/`getPaymentProvider` (condivisi); `FundDonations` (solo admin) | B1Admin, B1App |
+| `./markdown` | `MarkdownEditor`, `MarkdownPreviewLight` (condiviso); `MarkdownPreview`, `HtmlEditor` (modifica di contenuti amministrativi) | B1Admin, B1App, LessonsApp |
+| `./donations` | `MultiGatewayDonationForm`, `RecurringDonations`, `PaymentMethods`, `StripePaymentMethod`, `DonationHelper`/`getPaymentProvider` (condiviso); `FundDonations` (solo amministrativo) | B1Admin, B1App |
 | `./forms` | `FormSubmissionEdit` (renderizza `ConversationalForm` quando il `displayMode` del modulo è `conversational`) | B1Admin, B1App |
-| `./website` | Nucleo di rendering delle pagine condiviso dall'editor e dal renderer (`Element` + i renderer per tipo risolti tramite `ElementRegistry`, `StyleHelper`, `DroppableArea`, `DraggableWrapper`, `Theme`, `YoutubeBackground`, `SectionDivider`/`parseDividerConfig`); widget a livello di sito (`AnnouncementBanner`, `Launcher` + i loro helper `parse*Config`); `Animate`, `ElementBlock`, `NonAuthDonationWrapper`, `SermonElement` usati solo dal renderer rivolto al pubblico | B1Admin (editor), B1App (componenti editor + renderer) |
+| `./website` | Nucleo di rendering della pagina condiviso da editor e renderer (`Element` + i renderer per tipo risolti tramite `ElementRegistry`, `StyleHelper`, `DroppableArea`, `DraggableWrapper`, `Theme`, `YoutubeBackground`, `SectionDivider`/`parseDividerConfig`); widget a livello di sito (`AnnouncementBanner`, `Launcher` + i loro helper `parse*Config`); `Animate`, `ElementBlock`, `NonAuthDonationWrapper`, `SermonElement` usati solo dal renderer pubblico | B1Admin (editor), B1App (componenti editor + renderer) |
 
-B1Transfer e LessonsApp usano solo gli entry point root e `login` -- i subpath `donations`, `forms` e `website` sono consumati esclusivamente da B1Admin e B1App oggi.
+B1Transfer e LessonsApp utilizzano solo i punti di ingresso root e `login` -- i sottopercorsi `donations`, `forms` e `website` vengono consumati esclusivamente da B1Admin e B1App oggi.
 
-## Configurazione per lo Sviluppo Locale
+## Setup per lo sviluppo locale
 
-Questo pacchetto risiede nel workspace [Packages](https://github.com/ChurchApps/Packages) insieme alle altre librerie condivise:
+Questo pacchetto vive nello spazio di lavoro [Packages](https://github.com/ChurchApps/Packages) insieme alle altre librerie condivise:
 
-1. Clona il workspace:
+1. Clona lo spazio di lavoro:
 
    ```bash
    git clone https://github.com/ChurchApps/Packages.git
    ```
 
-2. Installa le dipendenze alla root del workspace:
+2. Installa le dipendenze nella radice dello spazio di lavoro:
 
    ```bash
    cd Packages && yarn install
@@ -74,24 +74,24 @@ Questo pacchetto risiede nel workspace [Packages](https://github.com/ChurchApps/
    cd apphelper && yarn dev
    ```
 
-   Il server di sviluppo del playground si avvia su `http://localhost:3001`. Copia prima `playground/dotenv.sample` in `playground/.env` e compila i valori richiesti.
+   Il server dev del playground inizia su `http://localhost:3001`. Copia `playground/dotenv.sample` in `playground/.env` e riempi prima i valori richiesti.
 
-Per compilare il pacchetto per il consumo (compila in `dist/` e copia gli asset locale/CSS), esegui `yarn workspace @churchapps/apphelper build` -- oppure `yarn build` alla root per compilare ogni pacchetto nell'ordine di dipendenza. Per testare una build non pubblicata all'interno di un'app consumatrice, usa un portale Yarn temporaneo -- vedi [Sviluppo Locale contro un'App Consumatrice](./index.md#local-development-against-a-consuming-app).
+Per costruire il pacchetto per il consumo (compila in `dist/` e copia asset locale/CSS), esegui `yarn workspace @churchapps/apphelper build` -- o `yarn build` alla radice per costruire ogni pacchetto in ordine di dipendenza. Per testare una costruzione non pubblicata dentro un'app di consumo, usa un portale Yarn temporaneo -- vedi [Sviluppo locale rispetto a un'app di consumo](./index.md#local-development-against-a-consuming-app).
 
 :::tip
-Il playground è il modo più rapido per sviluppare e testare i componenti di AppHelper. Esegue il ricaricamento a caldo del server di sviluppo Vite in modo da poter vedere le modifiche in tempo reale.
+Il playground è il modo più veloce per sviluppare e testare i componenti AppHelper. Ricarica a caldo il server dev Vite in modo da poter vedere i cambiamenti in tempo reale.
 :::
 
 ## Pubblicazione
 
-I rilasci passano attraverso changesets: esegui `yarn changeset` alla root del workspace ad ogni modifica, poi `yarn publish-all` quando sei pronto per il rilascio. Vedi la [Panoramica delle Librerie Condivise](./index.md#releasing-with-changesets) per il flusso completo.
+I rilasci vanno attraverso i changesets: esegui `yarn changeset` alla radice dello spazio di lavoro con ogni cambiamento, quindi `yarn publish-all` quando sei pronto a rilasciare. Vedi [Panoramica delle librerie condivise](./index.md#releasing-with-changesets) per il flusso completo.
 
 :::warning
-Non rimuovere né rinominare mai un export finché la sostituzione non è pubblicata e ogni consumatore non è stato migrato -- fai un grep di tutti i repository consumatori prima di unire una rimozione.
+Non rimuovere o rinominare mai un'esportazione finché la sostituzione non è pubblicata e ogni consumer non è stato migrato -- grep tutti i repository di consumo prima di unire una rimozione.
 :::
 
-## Articoli Correlati
+## Articoli correlati
 
-- **[Helpers](./helpers)** -- Il pacchetto di utilità base usato insieme ad AppHelper
-- **[Applicazioni Web](../web-apps/)** -- Le applicazioni web che consumano questo pacchetto
-- **[Panoramica delle Librerie Condivise](./index.md)** -- Configurazione del workspace, flusso di rilascio e workflow di link locale
+- **[Helpers](./helpers)** -- Il pacchetto di utilità di base utilizzato insieme ad AppHelper
+- **[App Web](../web-apps/)** -- Le applicazioni web che consumono questo pacchetto
+- **[Panoramica delle librerie condivise](./index.md)** -- Setup dello spazio di lavoro, flusso di rilascio e flusso di link locale
