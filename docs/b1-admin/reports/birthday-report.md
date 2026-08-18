@@ -1,50 +1,45 @@
 ---
-title: "Birthday Report"
+title: "Birthday & Anniversary Lists"
 ---
 
-# Birthday Report
+# Birthday & Anniversary Lists
 
 <div class="article-intro">
 
-The Birthday Report helps you stay connected with your congregation by showing members with upcoming birthdays. Use it to plan celebrations, send cards, or make announcements during services.
+Need a list of everyone with a birthday or anniversary in a given month — for the bulletin, announcements, or cards? The People search can filter your congregation by **Birth Month** and **Anniversary Month** and show the dates right in the results.
 
 </div>
 
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Ensure birth dates are entered on each person's profile. See [Adding People](../people/adding-people.md) for details.
-- You need the appropriate [permissions](../settings/roles-permissions.md) to access reports
+- Ensure birth dates (and anniversaries) are entered on each person's profile. See [Adding People](../people/adding-people.md).
+- You need permission to view People. See [Roles & Permissions](../settings/roles-permissions.md).
 
 </div>
 
-## Running the Report
+## Getting a Birthday List for a Month
 
-1. Go directly to **admin.b1.church/reports** in your browser (the Reports page is not yet listed in the navigation menu — bookmarking that address is the easiest way to get back to it).
-2. Click the **Birthdays** card.
-3. Choose the **Month** you want from the dropdown. You can optionally limit the results to a single **Group**.
-4. Click **Run Report**. The report lists everyone with a birthday in that month, with their birth date — ready to read straight into a bulletin or announcement list.
+1. Open the **section menu** in the top-left corner and choose **People**.
+2. Under the search box, click **Advanced**.
+3. Expand the **Demographics** section and check **Birth Month**, then choose the month.
+4. Run the search — everyone with a birthday that month appears in the results.
+5. To see the dates, click the **columns icon** at the top right of the results and enable the **Birthday** column. Use **Export** to download the list as a spreadsheet if you prefer to sort or print it there.
 
-## What the Report Shows
+## Getting an Anniversary List
 
-The Birthday Report displays:
-
-- **Birthday** -- The date of their birthday.
-- **Name** -- The person's name from your church database.
-
-Results cover the month you selected, making it easy to see who has a birthday coming up.
+Same steps — in the **Demographics** section, check **Anniversary Month** instead (or as well), choose the month, and enable the **Anniversary** column in the results.
 
 ## Practical Uses
 
-- **Weekly announcements** -- Run the report for the upcoming week and include birthdays in your bulletin or announcements.
-- **Birthday cards** -- Generate a list for the month and have your team send personal birthday cards.
-- **Small group leaders** -- Group leaders can run the report to remember birthdays of members in their group.
-- **Milestone celebrations** -- Filter for specific date ranges to plan milestone birthday celebrations.
+- **Weekly bulletins** -- Run the current month's list and read the names straight into the bulletin.
+- **Birthday & anniversary cards** -- Export the month's list and hand it to your card-writing team.
+- **Milestones** -- Combine with the **Age** filter to find milestone birthdays.
 
 :::tip
-Run this report at the beginning of each month to plan ahead. You can set the date range to cover the entire month so you have time to prepare cards or announcements.
+Both lists come from the birth date and anniversary fields on each person's profile — if someone's missing, their profile just needs the date added.
 :::
 
 :::info
-Birthday data comes from the birth date field on each person's profile. Make sure your [membership records](../people/adding-people.md) are up to date for accurate results.
+Earlier versions of B1 Admin had a separate Reports page for birthdays. That page has been retired — the People search filters above are the current way, and they cover anniversaries too.
 :::
