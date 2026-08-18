@@ -12,7 +12,7 @@ The Settings section is where you configure your church's account, branding, and
 
 ## What You Will Find Here
 
-The Settings area is organized into the following sub-sections accessible from the sidebar:
+The Settings area is organized into the following sub-sections:
 
 1. **Settings** -- Configure your church's basic information, branding, and subdomain. See [Church Settings](./church-settings.md) for details.
 2. **Campuses** -- Add and manage multiple physical locations for your church. Once created, campuses appear on person profiles, in attendance setup, and in the Demographics dashboard. See [Campuses](./campuses.md) for details.

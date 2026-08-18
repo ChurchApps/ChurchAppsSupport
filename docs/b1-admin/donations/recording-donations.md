@@ -21,7 +21,7 @@ Recording donations in B1 Admin is done through the Batches system. You create a
 
 ## Creating a Batch and Adding Donations
 
-1. In **B1 Admin**, click **Donations** in the sidebar, then click **Batches**.
+1. In **B1 Admin**, open the **section menu** in the top-left corner and choose **Donations**, then click **Batches**.
 2. Click **Add Batch**.
 3. Enter a name for the batch (e.g., "Sunday Offering - Jan 5") and select the date. Click **Save**.
 4. Your new batch appears in the list showing zero donations and $0.00.

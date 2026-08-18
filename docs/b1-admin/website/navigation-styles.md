@@ -31,7 +31,7 @@ You can customize colors for both modes independently.
 ## Accessing Navigation Styles
 
 1. Navigate to **Website** in B1 Admin
-2. Click on **Appearance** in the sidebar
+2. Click the **Appearance** tab at the top of the Website Pages view
 3. Scroll to the **Navigation Styles** section
 4. Click **Edit Navigation Styles**
 

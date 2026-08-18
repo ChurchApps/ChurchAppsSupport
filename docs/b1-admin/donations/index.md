@@ -12,7 +12,7 @@ The Donations section in B1 Admin provides everything you need to manage your ch
 
 ## Sub-Sections
 
-You will find the following pages in the Donations sidebar:
+You will find the following pages in the Donations section:
 
 ### Summary
 
