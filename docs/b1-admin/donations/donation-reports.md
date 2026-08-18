@@ -20,9 +20,9 @@ B1 Admin gives you several ways to view and analyze your church's giving data. T
 
 ## Giving Dashboard
 
-The **Giving Dashboard** is the first thing you see when you click **Donations** in the sidebar. It provides a high-level view of your giving activity with key performance indicators.
+The **Giving Dashboard** is the first thing you see when you open the **Donations** section. It provides a high-level view of your giving activity with key performance indicators.
 
-1. Navigate to **Donations** in the sidebar to open the dashboard.
+1. Open the **section menu** in the top-left corner and choose **Donations** to open the dashboard.
 2. At the top, four **KPI cards** display your giving metrics at a glance:
    - **Total Giving** -- The total amount donated in the selected period.
    - **Average Gift** -- The average donation amount.
@@ -36,7 +36,7 @@ The **Giving Dashboard** is the first thing you see when you click **Donations**
 
 The **Summary** page provides more detailed aggregate giving data.
 
-1. Navigate to **Donations** in the sidebar to open the Summary page.
+1. Open the **section menu** in the top-left corner and choose **Donations** to open the Summary page.
 2. Use the **date range filter** to select the time period you want to review. Set the earlier date on top and the more recent date on the bottom.
 3. The page displays a weekly giving chart so you can see trends at a glance.
 4. Click **Download** to export a CSV file with the total amount given, the week it was given, and the fund it was given to.
@@ -58,11 +58,11 @@ For a breakdown of who gave, how much, and to which fund:
 
 ## Donation Summary Report
 
-B1 Admin also includes a **Donation Summary** report in the Reports section:
+Donation reporting is built directly into the Donations section -- the Summary page serves as your donation summary report:
 
-1. Click **Reports** in the sidebar.
-2. Select the **Donation Summary** report.
-3. Choose your filters (date range, fund, campus, etc.) and run the report.
+1. Open the **section menu** in the top-left corner and choose **Donations** to open the Summary page.
+2. Use the **date range filter** to select the period you want to report on.
+3. Click **Download** to export the report as a CSV file.
 
 ## Exporting Data
 

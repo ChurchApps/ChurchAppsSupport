@@ -6,7 +6,7 @@ title: "Saved Lists"
 
 <div class="article-intro">
 
-**Saved Lists** let you store a search query under a name and re-run it with one click at any time. Build a list once — "Active Members in Campus North," "Visitors in the last 90 days," or any advanced filter — and it stays in your sidebar so you never have to rebuild the query again.
+**Saved Lists** let you store a search query under a name and re-run it with one click at any time. Build a list once — "Active Members in Campus North," "Visitors in the last 90 days," or any advanced filter — and it stays in the **Saved Lists** panel on the People page so you never have to rebuild the query again.
 
 </div>
 
@@ -23,7 +23,7 @@ title: "Saved Lists"
 2. When results appear, a **Save as List** button (bookmark icon) shows in the People page header.
 3. Click **Save as List**.
 4. Enter a **Name** for the list (required).
-5. Optionally enter a **Category** to group related lists together in the sidebar (for example, "Outreach" or "Membership").
+5. Optionally enter a **Category** to group related lists together in the **Saved Lists** panel (for example, "Outreach" or "Membership").
 6. Click **Save**.
 
 The list is now saved to your church's account and will appear in the **Saved Lists** panel on the left side of the People page.

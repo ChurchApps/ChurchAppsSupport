@@ -22,7 +22,7 @@ Once your campuses, service times, and groups are set up, you can manually recor
 
 A session represents one occurrence of a group meeting -- for example, your K--3rd grade class on a specific Sunday.
 
-1. Open **B1 Admin** and click **Groups** in the sidebar.
+1. Open **B1 Admin**, open the **section menu** in the top-left corner and choose **People**, then click the **Groups** tab.
 2. Select the group you want to record attendance for.
 3. Click the **Sessions** tab.
 4. Click **New** to create a new session.

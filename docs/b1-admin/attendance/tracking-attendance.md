@@ -20,8 +20,8 @@ Once your campuses, service times, and groups are configured, B1 Admin makes it 
 
 ## Viewing Attendance Trends
 
-1. Open **B1 Admin** and click **Attendance** in the sidebar.
-2. Select the **Attendance** tab.
+1. Open **B1 Admin**, then open the **section menu** in the top-left corner and choose **People**.
+2. Click the **Attendance** tab.
 3. The report runs automatically when the tab opens, showing attendance over a default date range.
 
 ## Filtering Your Data

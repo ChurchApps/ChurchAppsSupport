@@ -40,7 +40,7 @@ Before you can track attendance, you need to tell B1 Admin about your church's p
 
 Before a group can have attendance recorded, Track Attendance must be turned on for that group.
 
-1. Click **Groups** in the sidebar and select the group.
+1. Open the **section menu** in the top-left corner and choose **People**, then click the **Groups** tab and select the group.
 2. Click the **Edit** pencil icon.
 3. Set **Track Attendance** to **Yes**.
 4. Click **Save**.
