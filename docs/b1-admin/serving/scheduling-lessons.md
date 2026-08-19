@@ -45,27 +45,39 @@ Once linked, you can schedule lessons directly from Plans.
 
 1. In B1 Admin, go to **Serving → Plans**
 2. Select your ministry tab and click **Add Plan Type** — give the plan type a name such as Children's Church or Sunday School
-3. Click on the plan type you just made and click **Schedule Lesson** for one lesson or **bulk schedule** for a series of lessons.
-3. Select the **date** for the lesson (defaults to the upcoming Sunday)
-4. Click **Select Lesson** — a content browser dialog opens
-5. At the top of the dialog, confirm **Lessons.church** is selected as the provider
-6. Browse through the content:
+3. Click on the plan type you just made and click **Schedule Lesson**. From that menu you can schedule one lesson, bulk-schedule a series, or **Apply Year Plan** to drop in a published 12–52 week sequence from Lessons.church.
+4. Select the **date** for the lesson (defaults to the upcoming Sunday)
+5. Click **Select Lesson** — a content browser dialog opens
+6. At the top of the dialog, confirm **Lessons.church** is selected as the provider
+7. Browse through the content:
    - Select a **Program** (e.g., "Bible Stories for Kids")
    - Select a **Study** within that program (e.g., "Creation and Early Stories")
    - Select the specific **Lesson**
    - Select the **Venue** — this is the age-group version of the lesson
-7. Click **Associate Lesson** to confirm
-8. Choose your **copy option** for volunteers:
+8. Click **Associate Lesson** to confirm
+9. Choose your **copy option** for volunteers:
    - **Nothing** — fresh plan, no volunteers carried over
    - **Positions Only** — copies volunteer roles from the previous plan but not who is assigned
    - **Positions and Assignments** — copies both roles and assigned volunteers *(most common)*
-9. Click **Save**
+10. Click **Save**
 
 The plan is created and named automatically (e.g., "Feb 23 - Elementary"). Volunteers can open the plan to see their assignments and review the lesson content before Sunday.
 
 :::warning
 Make sure to select the correct **Venue** for your classroom's age group. Choosing the wrong venue means your volunteers will see content designed for a different age level.
 :::
+
+## Apply a Year Plan
+
+If a curriculum publisher has published a year plan on Lessons.church, you can load the whole sequence onto this plan type in one step:
+
+1. Click **Schedule Lesson → Apply Year Plan**
+2. Choose the published year plan
+3. Set the first class date (week 1 lands on that date; later weeks are seven days apart)
+4. Choose how many weeks to write (12, 24, 44, or 52)
+5. Optionally copy volunteer positions from the previous plan
+6. Preview the list. Dates that already have a plan are skipped. Uncheck any week you do not want.
+7. Save. Each week becomes a serving plan you can edit as usual — change the lesson, volunteers, or date — and FreePlay will play whatever is on that week's plan.
 
 :::tip
 **Plan ahead** — You can schedule multiple weeks of lessons at once so your team can prepare in advance. Use the past lesson list in the plan view to avoid accidentally repeating content.

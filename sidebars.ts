@@ -528,6 +528,7 @@ const sidebars: SidebarsConfig = {
             'lessons-church/admin/managing-programs',
             'lessons-church/admin/managing-studies',
             'lessons-church/admin/managing-lessons',
+            'lessons-church/admin/managing-year-plans',
             'lessons-church/admin/statistics',
             'lessons-church/admin/third-party-providers',
             'lessons-church/admin/open-lesson-format',

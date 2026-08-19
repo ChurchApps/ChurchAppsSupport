@@ -46,7 +46,7 @@ Once you have scheduled lessons, your volunteers can open the portal, select the
 
 ## Tips for Scheduling
 
-- **Plan ahead** -- Schedule several weeks of lessons at a time so your team can prepare in advance.
+- **Plan ahead** -- Churches schedule classroom lessons in [B1 Admin](../../b1-admin/serving/scheduling-lessons.md), including applying a published year plan.
 - **Stay consistent** -- Following a program sequentially helps kids build on what they learned the previous week.
 - **Check the history** -- Use the past lesson list to make sure you are not accidentally repeating content.
 
