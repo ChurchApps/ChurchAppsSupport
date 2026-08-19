@@ -25,6 +25,21 @@ Lessons are the individual teaching sessions within a study. Each lesson represe
 3. Enter a **Name** and other details for the lesson.
 4. Save the lesson.
 
+## Parent Take-Home
+
+Each lesson has an optional **Parent take-home** section under Description. These fields are what parents see on their B1 group after class (and on the classroom parent page). They are not a second lesson description.
+
+| Field | Purpose |
+|---|---|
+| **Bottom line** | One sentence. "God keeps His promises." |
+| **Verse** | Memory verse reference and short text. |
+| **Question** | One car-ride question parents can ask without a PDF. |
+| **Optional note** | Extra (prayer prompt, family activity). Markdown. Hidden when empty. |
+
+Bottom line and one question matter more than an overview. Leave all four empty if you have nothing for parents that week — nothing is shown.
+
+Do not put parent copy in **Description**. Description is catalog copy for teachers browsing lessons.church.
+
 ## Understanding the Lesson Structure
 
 Each lesson is organized into several layers:

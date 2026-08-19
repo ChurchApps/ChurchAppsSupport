@@ -29,7 +29,7 @@ The portal is organized into two main areas:
 
 From the portal, you can:
 
-1. **Manage classrooms** -- Add, edit, or remove classrooms. Each classroom can be linked to a volunteer team (so they see upcoming lessons in the B1 app) and a parent/student group (so they can access recent lessons).
+1. **Manage classrooms** -- Add, edit, or remove classrooms. Each classroom can be linked to a volunteer team (so they see upcoming lessons in the B1 app) and a parent/student group (so they can access recent lessons). Churches still on this classroom schedule path: parents open the classroom page (without `?upcoming=1`) to see take-home content. Churches using B1Admin plan types see the take-home card on the associated group's page in B1 instead.
 2. **View and manage scheduled lessons** -- See which lessons are coming up for each classroom and make changes as needed.
 3. **Subscribe to classroom feeds** -- Click the feed icon next to a classroom to get a playlist feed URL you can use with compatible apps.
 4. **Access External Providers** -- Use the **External Providers** page to configure third-party content sources that support the Open Lesson Format. This lets you bring in lessons from other providers beyond the built-in Lessons.church library.

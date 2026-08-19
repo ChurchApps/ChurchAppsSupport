@@ -46,6 +46,10 @@ Your provider URL must return a JSON object with this structure:
               "title": "The Baptism of Jesus",
               "image": "https://example.com/images/lesson1.jpg",
               "description": "An introduction to Jesus' ministry.",
+              "bottomLine": "God keeps His promises.",
+              "verse": "Genesis 9:13 — I have set my rainbow in the clouds…",
+              "parentQuestion": "What is one promise God has kept in our family?",
+              "parentNote": "Pray together thanking God for keeping His promises.",
               "venues": [
                 {
                   "id": "venue-1",
@@ -85,10 +89,16 @@ Your provider URL must return a JSON object with this structure:
 | `lessons[].slug` | string | URL-friendly name |
 | `lessons[].title` | string | Full title |
 | `lessons[].image` | string | Lesson image URL (optional) |
-| `lessons[].description` | string | Lesson summary (optional) |
+| `lessons[].description` | string | Lesson summary (optional). Catalog copy for teachers browsing the library — not parent take-home. |
+| `lessons[].bottomLine` | string | One-sentence parent take-home (optional) |
+| `lessons[].verse` | string | Memory verse reference and short text (optional) |
+| `lessons[].parentQuestion` | string | One question for parents to ask at home (optional) |
+| `lessons[].parentNote` | string | Optional extra note for parents (markdown) |
 | `venues[].id` | string | Unique venue identifier |
 | `venues[].name` | string | Venue name (e.g. "Kids", "Adults", "Youth") |
 | `venues[].apiUrl` | string | URL returning the venue feed (see below) |
+
+The four parent take-home fields (`bottomLine`, `verse`, `parentQuestion`, `parentNote`) are optional on both the tree and the venue feed. If omitted they are treated as empty. Do not copy `description` into them.
 
 **Venues** represent different versions of the same lesson tailored for different audiences (age groups, settings, etc.).
 
@@ -104,6 +114,10 @@ Each venue's `apiUrl` must return a JSON object matching this schema:
   "lessonName": "The Baptism of Jesus",
   "lessonImage": "https://example.com/images/lesson1.jpg",
   "lessonDescription": "An introduction to Jesus' ministry.",
+  "bottomLine": "God keeps His promises.",
+  "verse": "Genesis 9:13 — I have set my rainbow in the clouds…",
+  "parentQuestion": "What is one promise God has kept in our family?",
+  "parentNote": "Pray together thanking God for keeping His promises.",
   "studyName": "The Beginning",
   "studySlug": "the-beginning",
   "programName": "Gospel of Mark",
@@ -166,7 +180,11 @@ Each venue's `apiUrl` must return a JSON object matching this schema:
 | `lessonId` | string | Lesson identifier |
 | `lessonName` | string | Lesson display name |
 | `lessonImage` | string | Lesson image URL |
-| `lessonDescription` | string | Lesson summary |
+| `lessonDescription` | string | Lesson summary (catalog copy) |
+| `bottomLine` | string | One-sentence parent take-home (optional) |
+| `verse` | string | Memory verse reference and short text (optional) |
+| `parentQuestion` | string | One question for parents to ask at home (optional) |
+| `parentNote` | string | Optional extra note for parents, markdown (optional) |
 | `studyName` | string | Parent study name |
 | `studySlug` | string | Parent study slug |
 | `programName` | string | Parent program name |

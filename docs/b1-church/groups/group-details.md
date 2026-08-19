@@ -30,7 +30,9 @@ If you are not logged in, you will see the following:
 
 ## Member View (Logged In)
 
-When you are logged in, the group detail page shows the hero section along with a sidebar of tabs. The available tabs are:
+When you are logged in, the group detail page shows the hero section along with a sidebar of tabs. If your group is associated with a Lessons.church plan type and this week's lesson has parent take-home content, a **This week's lesson** card appears between the hero and the tabs (members only).
+
+The available tabs are:
 
 - **Group Details** -- The group's full description, rendered with rich text formatting.
 - **Members** -- A list of all members in the group, showing their photo and name. You can click a member's name to visit their profile in the [member directory](../community/member-directory.md).

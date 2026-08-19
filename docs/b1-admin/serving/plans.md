@@ -100,8 +100,10 @@ Below the plan list on the plan type page, the **Groups** section lets you decid
 4. Repeat to associate additional groups, or click the trash icon to remove a group.
 
 :::info
-Only groups tagged as **Standard** appear in the picker. Members of an associated group automatically see this plan type's plans on the [Plans](/docs/b1-church/plans/) tab in the B1 member portal — limited to the past/future/both window you selected.
+Only groups tagged as **Standard** appear in the picker. Members of an associated group automatically see this plan type's plans on the group's page in the B1 member portal — limited to the past/future/both window you selected.
 :::
+
+If the plans are Lessons.church lessons, members of the associated group also see a **This week's lesson** card on the group page (bottom line, verse, and a question for parents). Associate a parent group here and set the filter to **Past** so today's lesson is included. Volunteer teams typically use **Future** or **Both**.
 
 ## Printing Plans
 

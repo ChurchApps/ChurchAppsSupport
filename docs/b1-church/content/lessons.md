@@ -8,6 +8,8 @@ title: "Lessons (Deprecated)"
 The embedded **Lessons** tab on B1.church has been deprecated. Curriculum playback from Lessons.church is now delivered through **[FreePlay](/docs/freeplay/)** — ChurchApps' free TV app for classroom screens, Fire TV, Apple TV, and Android TV — which offers offline playback, classroom pairing, and a TV-remote experience the embedded tab could not provide.
 
 To browse, schedule, or edit curriculum directly, sign in to [Lessons.church](https://lessons.church) in your browser. To play lessons on a classroom TV, install [FreePlay](/docs/freeplay/getting-started/) on your TV device.
+
+Parents of groups associated with a lesson plan type in B1Admin see **this week's lesson** on the [group details](/docs/b1-church/groups/group-details.md) page — not on this deprecated tab.
 :::
 
 <div class="article-intro">
