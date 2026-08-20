@@ -20,17 +20,11 @@ Need a list of everyone with a birthday or anniversary in a given month — for 
 
 ## Getting a Birthday List for a Month
 
-<<<<<<< HEAD
-1. Go directly to **admin.b1.church/reports/birthdays** in your browser (reports have no entry in the navigation menu — bookmarking the address is the easiest way to get back to it).
-2. Choose the **Month** you want from the dropdown. You can optionally limit the results to a single **Group**.
-3. Click **Run Report**. The report lists everyone with a birthday in that month, with their birth date — ready to read straight into a bulletin or announcement list.
-=======
 1. Open the **section menu** in the top-left corner and choose **People**.
 2. Under the search box, click **Advanced**.
 3. Expand the **Demographics** section and check **Birth Month**, then choose the month.
 4. Run the search — everyone with a birthday that month appears in the results.
 5. To see the dates, click the **columns icon** at the top right of the results and enable the **Birthday** column. Use **Export** to download the list as a spreadsheet if you prefer to sort or print it there.
->>>>>>> 9a8f78ab2212c7f20f92240d9ac0763eeb360cfb
 
 ## Getting an Anniversary List
 
