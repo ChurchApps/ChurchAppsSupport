@@ -131,8 +131,15 @@ The Breeze import transfers people, groups (tags), and donation records automati
 
 ## Preparing a Planning Center Export
 
-1. In Planning Center, export your people data as a CSV or zip file.
-2. Upload it using the **Planning Center Zip** option in Step 1.
+1. Log in to Planning Center and open the **People** product.
+2. In the left sidebar, click **Lists** and create a list that includes everyone you want to bring over. (If you already have a list of your whole congregation, use that one.)
+3. Open the list and use its **export** option to download your people as a **CSV** file. Include the fields you want to keep — name, email, phone, address, birthdate, gender, and membership status all map over to B1.
+4. If Planning Center gives you more than one file, select them all, right-click, and compress them into a single zip.
+   - On a Mac: select the files, right-click, and choose **Compress**.
+   - On a PC: select the files, right-click, choose **Send to**, then **Compressed (zipped) folder**.
+5. Upload the CSV or zip using the **Planning Center Zip** option in Step 1.
+
+After uploading, continue to the preview and confirm your people and households look right before running the import.
 
 ---
 
