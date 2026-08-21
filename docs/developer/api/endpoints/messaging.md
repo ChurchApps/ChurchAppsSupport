@@ -71,10 +71,22 @@ Base path: `/messaging/messages`
 | GET | `/conversation/:conversationId` | JWT | — | Load all messages for a conversation |
 | GET | `/catchup/:churchId/:conversationId` | Public | — | Load all messages for a conversation (public catchup for live chat) |
 | GET | `/:churchId/:id` | Public | — | Load a single message by ID |
-| POST | `/` | JWT | — | Save messages (batch). Sends real-time updates and triggers notifications |
+| POST | `/` | JWT | — | Save messages (batch). Sends real-time updates and triggers notifications. Updating an existing message requires being its author or holding `content.edit`; the stored author is never reassignable |
 | POST | `/send` | Public | — | Send messages (batch, public). Sends real-time updates via WebSocket and triggers notifications |
 | POST | `/setCallout` | JWT | — | (legacy) Broadcast a callout message in real time. No active client; live stream chat no longer renders callouts |
-| DELETE | `/:churchId/:id` | JWT | — | Delete a message and broadcast the deletion in real time |
+| DELETE | `/:churchId/:id` | JWT | — | Delete a message and broadcast the deletion in real time. See [Message moderation](#message-moderation) |
+
+### Message moderation
+
+Deleting a message is allowed for:
+
+- the message's author;
+- staff with `content.edit` (anywhere in the church);
+- **group leaders**, for conversations with a `contentType` of `group` or `groupAnnouncement` whose `contentId` is a group they lead (`leaderGroupIds` on the JWT).
+
+Person-note conversations (`person` / `personConfidential`) are never leader-moderated — they use the notes permissions (`people.edit`, `people.viewConfidentialNotes`) instead.
+
+Leaders get delete only, not edit: rewriting another member's message stays restricted to the author and `content.edit` staff.
 
 ### Example: Send a Message
 
