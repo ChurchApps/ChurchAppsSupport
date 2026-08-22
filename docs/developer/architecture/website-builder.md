@@ -172,6 +172,17 @@ Forms (membership module) gained a conversational mode aimed at connect-card-sty
 
 The four fields are set via the API today; the B1Admin form editor does not expose them yet.
 
+## Public-site cache
+
+B1App's public render path caches church-tagged fetches (`next: { revalidate: 300, tags: [sdSlug] }` in production; `0` in dev) so a live page can stay stale for up to five minutes after a ContentApi write. `POST /api/revalidate/{sdSlug}` on B1App calls `revalidateTag(sdSlug)` and is the only way to drop that cache early.
+
+Two writers hit it:
+
+1. **B1Admin** — `clearSiteCache()` in `B1Admin/src/site/siteCache.ts` POSTs after editor saves. It prefers the active site's subdomain (a secondary site must bust *that* tag, not the church's default).
+2. **Api** — Content mutations that never go through B1Admin (API keys, MCP, AI) fire `SiteCacheHelper.bump(churchId)` from the content controllers. The helper resolves the church subdomain via `SubDomainHelper` and POSTs `{b1AppRoot}/api/revalidate/{sd}`. Failures are swallowed so an unreachable B1App cannot fail a save.
+
+Controllers that bump: pages (save, delete, duplicate, publish, discard, unpublish, AI temp), sections, elements, blocks, links, global styles, posts, and redirects. Dev `b1AppRoot` is `http://{subdomain}.localtest.me:3301`; demo/staging/prod use `https://{subdomain}.b1.church`.
+
 ## Related Pages
 
 - [Website Routing & Multi-Site](./websites) — how a request resolves to a church/site and how custom domains route
