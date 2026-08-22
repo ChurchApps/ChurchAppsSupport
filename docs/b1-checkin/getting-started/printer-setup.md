@@ -18,6 +18,16 @@ B1 Church Checkin can print name labels and parent pickup slips to a network lab
 
 </div>
 
+## Recommended Labels
+
+B1 Checkin's default label template is sized for **1.1" × 3.5"** labels.
+
+If you are using a **Brother QL printer**, you must use **Brother DK-1201** labels (1.1" × 3.5"). Brother printers detect the label size from the physical roll loaded in the printer — if the roll does not match the template size, the printer will not print. Do not substitute a different size.
+
+[Brother DK-1201 Compatible Labels — 12 Rolls (Amazon)](https://www.amazon.com/dp/B0716XB6JG?tag=signpresenter-20)
+
+---
+
 ## Accessing Printer Settings
 
 You can open the printer settings screen at any time through the **Admin Settings** menu:
