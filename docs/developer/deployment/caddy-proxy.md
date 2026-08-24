@@ -27,12 +27,12 @@ For how a request resolves to a church/site once it reaches B1App, see [Website 
 
 ## The two API endpoints the box depends on
 
-Both are anonymous, on the Membership API:
+Both on the Membership API. `authorize` is anonymous; `hostmap` has required the `x-internal-key: <INTERNAL_API_KEY>` header since Api PR #67 (2026-08-16) — `sync-hostmap.ps1` reads it from `C:\caddy\internal-key.txt`:
 
 | Endpoint | Role |
 |---|---|
 | `GET /membership/domains/authorize?domain={host}` | Caddy's **on-demand TLS `ask` gate**: `200 {"authorized":true}` when the host (or, for a `www.` host, its apex) is a row in `domains`; `404` otherwise. This is the abuse control — Caddy will not issue a certificate for a host this endpoint rejects |
-| `GET /membership/domains/hostmap` | `text/plain`, sorted, deduplicated `{domain} {sub}.b1.church` lines (site-aware: a domain assigned to a secondary site dials that site's subdomain). Source of the `map` |
+| `GET /membership/domains/hostmap` | Requires `x-internal-key` (or a server-admin JWT). `text/plain`, sorted, deduplicated `{domain} {sub}.b1.church` lines (site-aware: a domain assigned to a secondary site dials that site's subdomain). Source of the `map` |
 
 ## Request flow
 
@@ -49,12 +49,12 @@ New-domain propagation: a domain saved in B1Admin becomes routable within ~5 min
 Condensed from the field-tested procedure (full step-by-step with copy-paste commands lives in the ops workspace, not this repo). Prerequisites first — the build is dead without them:
 
 1. **IAM**: attach `CaddyRole` (S3 access to the cert bucket) to the instance. Verify via IMDSv2 from the box — note a bare IMDS GET returning 401 just means IMDSv2 is enforced, not "no role".
-2. **API health**: `authorize` must return 404 for a bogus domain and `hostmap` must return 200 before anything else.
+2. **API health**: `authorize` must return 404 for a bogus domain and `hostmap` (with the `x-internal-key` header) must return 200 before anything else.
 
 Then:
 
 3. **Binary**: download a custom build from Caddy's build service — `https://caddyserver.com/api/download?os=windows&arch=amd64&p=github.com/techknowlogick/certmagic-s3` (~57 MB vs ~45 MB stock; v2.11.4 at time of writing). The module choice matters: `techknowlogick/certmagic-s3` uses `bucket`/`region`/`prefix` keys matching the existing cert layout; the `ss098` fork uses `host`/`endpoint` and will **not** find the existing certificates.
-4. **Files**: `Caddyfile` + `sync-hostmap.ps1` into `C:\caddy\`; seed the map once with `sync-hostmap.ps1 -NoReload`.
+4. **Files**: `Caddyfile` + `sync-hostmap.ps1` + `internal-key.txt` (prod `INTERNAL_API_KEY`, one line) into `C:\caddy\`; seed the map once with `sync-hostmap.ps1 -NoReload`.
 5. **Gates before first start**: `caddy list-modules` must show the s3 storage module; `caddy adapt` must emit `"module":"s3","bucket":"churchapps-caddy-certs","region":"us-east-2","prefix":"certs"` in its storage block; `caddy validate` must pass.
 6. **Service**: install via WinSW (service id `caddy`, auto-restart on failure, rolling logs). Runs as LocalSystem, which reaches IMDS for the role credentials.
 7. **Sync task**: register `CaddyHostmapSync` (SYSTEM, every 5 min + at startup, 4-minute execution limit).
