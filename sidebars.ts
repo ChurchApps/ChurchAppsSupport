@@ -93,6 +93,7 @@ const sidebars: SidebarsConfig = {
             'b1-admin/serving/workflows',
             'b1-admin/serving/automations',
             'b1-admin/serving/songs',
+            'b1-admin/serving/digital-signage',
           ],
         },
         {

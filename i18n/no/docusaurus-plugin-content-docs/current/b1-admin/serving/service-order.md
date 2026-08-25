@@ -1,96 +1,63 @@
----
-title: "Gudstjenesterekkefølge"
+﻿---
+title: "Serviceorden"
 ---
 
-# Gudstjenesterekkefølge
+# Serviceorden
 
 <div class="article-intro">
 
-Gudstjenesterekkefølgen definerer rekkefølgen på elementene i gudstjenesten din. Bruk den til å legge opp alt fra åpningssangen til avslutningsbønnen, slik at hele teamet ditt kjenner flyten i gudstjenesten på forhånd.
+Serviceorden definerer sekvensen av elementer i gudstjenesten. Bruk den for å legge ut alt fra åpningssangen til avslutningsbønnen, slik at hele teamet ditt kjenner flyten av tjenesten på forhånd.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- [Opprett en gudstjenesteplan](./plans.md) for datoen du vil bygge en gudstjenesterekkefølge for
-- Eventuelt kan du legge til [sanger](./songs.md) i biblioteket ditt, slik at du kan lenke dem direkte inn i gudstjenesterekkefølgen
+- [Opprett en serviceplan](./plans.md) for datoen du vil bygge en serviceorden for
+- Eventuelt, legg til [sanger](./songs.md) i biblioteket ditt slik at du kan lenke dem direkte inn i serviceorden
 
 </div>
 
-## Åpne gudstjenesterekkefølgen
+## Tilgang til serviceorden
 
-1. Naviger til **Tjeneste** og velg tjenesteområdet ditt.
-2. Klikk på en **plantype**, og åpne deretter en bestemt **plan**.
-3. Klikk på fanen **Gudstjenesterekkefølge** på plandetalj-siden.
+1. Naviger til **Serving** og velg ministeriet ditt.
+2. Klikk på en **plan type**, og åpne så en spesifikk **plan**.
+3. Klikk **Service Order**-fanen på plan-detaljesiden.
 
-## Bygge gudstjenesterekkefølgen
+## Bygging av serviceorden
 
-Gudstjenesterekkefølgen er en liste over elementer ordnet i den sekvensen de skal skje under gudstjenesten. Vanlige elementer inkluderer:
+Serviceorden er en liste over elementer arrangert i sekvensen de vil oppstå under tjenesten. Vanlige elementer inkluderer:
 
-- Lovsanger
+- Tilbedelsessanger
 - Bønner
-- Skriftlesninger
+- Skriftsteder
 - Kunngjøringer
 - Preken eller budskap
-- Offer
-- Avslutning
+- Offering
+- Lukking
 
-## Legge elementer til gudstjenesterekkefølgen
+## Legge til elementer i serviceorden
 
-1. På fanen **Gudstjenesterekkefølge** klikker du **Legg til element**.
-2. Velg hvilken type element du vil legge til (for eksempel en sang fra biblioteket ditt, et egendefinert element eller en overskrift).
-3. Skriv inn detaljene for elementet, som tittel og eventuelle notater.
-4. Klikk **Lagre**.
+1. På **Service Order**-fanen, klikk **Add Item**.
+2. Velg type element du vil legge til (for eksempel en sang fra biblioteket ditt, et egendefinert element, eller en overskrift).
+3. Angi detaljer for elementet, for eksempel tittel og noter.
+4. Klikk **Save**.
 
-:::tip
-Du kan legge til sanger direkte fra [Sanger](./songs.md)-biblioteket ditt. Dette knytter sangdetaljene, inkludert tekster og arrangementer, til gudstjenesteplanen din, slik at lovsangsteamet har alt de trenger.
-:::
+## Omorganisering av elementer
 
-## Endre rekkefølgen på elementer
+Dra elementer etter håndtaket på venstre side av hver rad for å omorganisere rekkefølgen -- slipp på den blå linjen hvor du vil at elementet skal lande.
 
-Dra elementer etter håndtaket til venstre på hver rad for å endre rekkefølgen — slipp på den blå linjen der du vil at elementet skal havne, eller på en seksjonsoverskrift for å flytte det inn i den seksjonen. Sekvensen som vises på skjermen, er rekkefølgen teamet ditt vil følge under gudstjenesten.
+## Redigering og fjerning av elementer
 
-## Tidsbruk og media
+- Klikk på ethvert element i serviceorden for å **redigere** detaljer.
+- Bruk **delete**-alternativet for å fjerne et element fra orden.
 
-Hvert element og hver seksjon viser hvor lenge det varer og når det starter:
+## Deling av serviceorden
 
-- Hvis planen har ett enkelt gudstjenestetidspunkt valgt, viser venstre kolonne det faktiske **klokkeslettet** hvert element starter (for eksempel 9:14). Ellers viser den forløpt tid fra begynnelsen av gudstjenesten.
-- Seksjonsoverskrifter summerer opp den totale varigheten til alt som er inni dem.
-- Sanger og egendefinerte elementer teller med i denne tidsplanen når du angir **minutter**/**sekunder** på elementets redigeringsskjerm.
-- Elementer du legger til fra mediebiblioteket (bilder eller videoklipp) viser et **miniatyrbilde** og tidsberegnes automatisk — en videos varighet måles fra selve filen, mens et bilde bidrar med et planleggingsestimat på ~5:00 (vist i kursiv) siden det blir stående på skjermen til en operatør går videre. Du kan fortsatt redigere begge til en bestemt varighet.
-
-## Redigere og fjerne elementer
-
-- Klikk på et hvilket som helst element i gudstjenesterekkefølgen for å **redigere** detaljene.
-- Bruk **slett**-alternativet for å fjerne et element fra rekkefølgen.
-
-:::info
-Gudstjenesterekkefølgen er spesifikk for hver plan. Endringer du gjør her, påvirker bare den valgte planen og vil ikke endre andre planer eller sangbiblioteket ditt.
-:::
-
-## Inkludere elementer i bestemte gudstjenestetidspunkter
-
-Hvis planen din har mer enn ett gudstjenestetidspunkt (for eksempel en gudstjeneste kl. 8 og kl. 10), kan du velge hvilke gudstjenester hvert element skal vises i. Dette er nyttig når en kunngjøring bare er relevant for én gudstjeneste, eller når en sang synges i én gudstjeneste, men ikke i en annen.
-
-1. Åpne en plan som har to eller flere gudstjenestetidspunkter definert under **Tidspunkter**-fanen.
-2. På fanen **Gudstjenesterekkefølge** klikker du et element for å redigere det.
-3. Under **Inkluder i gudstjenester** ser du en avmerkingsboks for hvert gudstjenestetidspunkt, merket med klokkeslettet.
-4. Fjern haken for enhver gudstjeneste der elementet skal utelates.
-5. Klikk **Lagre**.
-
-Som standard er hvert element inkludert i hver gudstjeneste. Utelatte gudstjenestetidspunkter skjules når du skriver ut planen filtrert til den gudstjenesten, slik at hver gudstjeneste får et rent kjøreskjema med bare de relevante elementene.
-
-:::tip
-Seksjonen **Inkluder i gudstjenester** vises bare når planen har mer enn ett gudstjenestetidspunkt. Hvis du bare ser én gudstjeneste, må du redigere planens **Tidspunkter**-fane for å legge til flere gudstjenester først.
-:::
-
-## Dele gudstjenesterekkefølgen
-
-Når gudstjenesterekkefølgen er ferdig, kan du skrive ut hele planen (inkludert gudstjenesterekkefølgen) fra plandetalj-siden. Dette gir teamet ditt en fullstendig oversikt over gudstjenesten.
+Når serviceorden er fullført, kan du skrive ut fullplanen fra planen-detaljesiden. Dette gir teamet ditt en komplett gjennomgang av tjenesten.
 
 ## Neste steg
 
-- Administrer lovsangsrepertoaret ditt på siden [Sanger](./songs.md)
-- Tildel frivillige til gudstjenesten under Tildelinger-fanen på [Planer](./plans.md)
-- Opprett [oppgaver](./tasks.md) for eventuelle oppfølgingspunkter knyttet til gudstjenesten
+- Administrer tilbedelsesrepertoaret på [Songs](./songs.md)-siden
+- Tilord frivillige til tjenesten på [Plans](./plans.md) Assignments-fanen
+

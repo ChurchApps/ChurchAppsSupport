@@ -1,4 +1,4 @@
----
+﻿---
 title: "ChatGPT"
 ---
 
@@ -6,88 +6,80 @@ title: "ChatGPT"
 
 <div class="article-intro">
 
-Koble OpenAI ChatGPT til kirkens B1-data slik at du kan stille spørsmål som "hvem har ikke vært i en gruppe dette kvartalet?" eller "oppsummer giver for bygningsfonden denne måneden" og få ChatGPT til å hente svarene direkte fra B1. To veier er støttet: en **egendefinert GPT** som fungerer på en ChatGPT Plus-plan, og **MCP-serveren** for utviklerverktøy som støtter det.
+Koble OpenAI sin ChatGPT til kirkens B1-data og la den gjøre det tunge arbeidet. Når den er tilkoblet, kan ChatGPT se live kirkeoppføringene dine og hjelpe deg med å få ting gjort som ellers ville ta flere trinn i B1 Admin eller som du ikke kunne finne ut hvordan man skulle gjøre.
+
+**Noen ting du kan be det gjøre:**
+- Sett opp undervisningsklassrom og plasser hver lærer i riktig rom basert på gruppen deres
+- Vis meg alle som møtte opp forrige uke, men som ikke har blitt tildelt en smågruppe
+- Oppsummer denne måneds giver etter fond
+- Hvem er våre nyeste medlemmer og har vi fulgt opp med dem?
+- Jeg kan ikke finne ut hvordan jeg skal gjøre X i B1 -- kan du lede meg gjennom det eller gjøre det for meg?
+
+ChatGPT henter svarene og tar handlinger direkte fra B1-dataene dine, begrenset til kun kirken din.
+
+:::tip Anbefalt: Claude Code
+For den glatteste MCP-opplevelsen, Claude Code er den anbefalte klienten -- oppsettet tar en kommando og det fungerer ut av boksen. ChatGPT fungerer også og er et godt valg hvis laget ditt allerede bruker det.
+:::
+
+To stier støttes: **MCP Connector** (innebygd i ChatGPT) og en **Custom GPT** for lag som ønsker en delt assistent.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- En kirkeadministrator med **Rediger innstillinger**-tillatelsen (for å mynte en API-nøkkel)
-- En **ChatGPT Plus, Pro, Team eller Enterprise**-konto (den gratis nivået kan ikke bruke egendefinerte GPTer eller koblinger)
-- Den fulle URL-adressen til B1-API-en din -- vanligvis `https://api.churchapps.org` for vertskirker, eller din selvvertsette API-vert
+- En kirkeadmin med **Edit Settings**-tillatelse i B1 Admin (nødvendig for å opprette en API-nøkkel)
+- En **ChatGPT Plus, Pro, Team, eller Enterprise**-konto
 
 </div>
 
-## Velg riktig vei
+## Hurtigoppsettsveiledning
 
-| Vei | Plan som trengs | Innsats | Hva du får |
-|---|---|---|---|
-| **Egendefinert GPT med handlinger** | ChatGPT Plus / Team / Enterprise | 10 minutter | En delbar GPT som ringer B1s REST API for noen av laget ditt |
-| **MCP via OpenAI-verktøy** | Utvikler / Agent SDK / Pro-koblinger | Mer | Full oppdagelse via MCP-serveren, egnet for kodingsverktøy og agentplattformer |
+Følg disse trinnene i **ChatGPT-skrivebordsappen** (Mac/Windows).
 
-For de fleste kirker er **egendefinert GPT**-veien det riktige svaret -- det krever ingen utvikleroppsett, fungerer inne i den vanlige ChatGPT-appen og mobilklientene, og kan deles med laget ditt. MCP-veien er dokumentert nedenfor for teknisk stab som bruker OpenAI-utviklerverktøy eller agentplattformer.
+**Trinn 1 — Få API-nøkkelen din fra B1 Admin først**
 
-## Vei A -- egendefinert GPT med handlinger
+Før du berører ChatGPT, oppretter du en API-nøkkel i B1 Admin:
 
-Dette kobler ChatGPT direkte til B1 REST API. Din egendefinerte GPT vil kunne lese og (valgfritt) skrive B1-poster på vegne av hvem som bruker det.
+1. Gå til **Settings → Developer → API Keys** i B1 Admin
+2. Klikk **New API Key**, navngi det `ChatGPT`, velg omfang (start med `people:read`, `groups:read`, `attendance:read`, `donations:read`), og klikk **Save**
+3. Kopier `cak_…`-nøkkelen -- den vises kun en gang
 
-### 1. Opprett en API-nøkkel
+**Trinn 2 — Klikk på navnet ditt i nedre venstre hjørne av ChatGPT**
 
-1. I B1Admin gå til **Innstillinger → Utvikler → API-nøkler**.
-2. Klikk **Ny API-nøkkel**, gi den navn `ChatGPT` og velg omfang. Vanlige startmengder:
-   - **Skrivebeskyttet assistent:** `people:read`, `groups:read`, `attendance:read`, `donations:read`
-   - **Les + skriv:** legg til de tilsvarende `:write`-omfangene
-3. Lagre og kopier den fulle `cak_…`-nøkkelen.
+**Trinn 3 — Klikk Settings**
 
-Se [API-nøkler](/docs/developer/api/api-keys) for den fulle omfangslisten.
+**Trinn 4 — Klikk Plugins i venstre sidestolpe**
 
-### 2. Bygg den egendefinerte GPTen
+**Trinn 5 — Klikk MCPs-fanen**
 
-1. I ChatGPT klikker du profilen din → **Mine GPTer** → **Opprett en GPT**.
-2. Bytt til **Konfigurere**-fanen og gi GPTen et navn (f.eks. "B1-assistent") og instruksjoner.
-3. Scroll til **Handlinger** → **Opprett ny handling** → **Godkjenning**.
-   - **Godkjenningstype:** API-nøkkel
-   - **API-nøkkel:** `cak_<prefix>.<secret>`
-   - **Auth-type:** Bærer
-   - Lagre.
-4. I **Skjema**-boksen limer du inn en minimal OpenAPI-spesifikasjon som beskriver sluttpunktene du vil at GPTen skal bruke.
-5. Lagre handlingen. Test det med en melding som *"hvor mange folk er i kirken?"* -- ChatGPT vil ringe `listPeople` og svare.
-6. **Publiser** GPTen (bare meg / alle med lenke / organisasjon) og del med laget ditt.
+**Trinn 6 — Klikk Add → Add MCP server**
 
-### 3. Bruk det
+**Trinn 7 — Fyll ut skjemaet og klikk Save**
 
-Alle du deler GPTen med kan stille naturligspråkspørsmål -- ChatGPT plukker riktig handling, ringer B1 og svarer. Nøkkelen omfanger gjelder fortsatt: en skrivebeskyttet nøkkel vil nekte skrivinger uavhengig av handlingen som er definert i skjemaet.
+Klikk **Streamable HTTP**, og fyll deretter inn disse verdiene:
 
-## Vei B -- MCP via OpenAI-verktøy
+| Felt | Hva du skal angi |
+|---|---|
+| **Name** | `B1 Church` (eller et navn du liker) |
+| **Type** | **Streamable HTTP** |
+| **URL** | `https://api.churchapps.org/mcp` |
+| **Bearer token env var** | La dette være tomt |
+| **Headers** | Key: `Authorization` / Value: `Bearer cak_yourprefix.yoursecret` |
 
-B1 API inkluderer en MCP-server på `/mcp` som enhver MCP-bevisst OpenAI-verktøy kan bruke -- for eksempel [OpenAI Agents SDK](https://platform.openai.com/docs/guides/agents), Responses API-er MCP-verktøy eller tredjepartsagentplattformer som bruker MCP-servere.
+For Value-feltet, skriv ordet `Bearer`, ett mellomrom, og lim deretter inn nøkkelen -- alt i samme boks.
 
-Godkjenn med samme `cak_…`-nøkkel i `Authorization: Bearer`-headeren. Tre verktøy er eksponert: `list_endpoints`, `describe_endpoint` og `api_call`. Se [MCP-serveren for utviklere](/docs/developer/api/mcp) for protokoll, transport og verktøyskjemaer.
+Klikk **Save**.
+
+Det er det! Gå tilbake til en chat og still noe som "How many people are in our church?" og ChatGPT vil hente svaret direkte fra B1.
 
 ## Sikkerhet og grenser
 
-- **Per-kirke isolering.** API-nøkkelen løses til en kirke. ChatGPT kan ikke se andre kirkenes data.
-- **Tillatelse-avgrenset.** Hvis du fjerner en tillatelse fra personen som skapte nøkkelen, mister ChatGPT den på neste anrop -- umiddelbar.
-- **Tilbakekallbar.** Slett nøkkelen i **Innstillinger → Utvikler → API-nøkler** og ChatGPTs tilgang slutter umiddelbar.
-- **Deling av en egendefinert GPT deler dataene.** Alle som har tilgang til GPTen kan stille spørsmål og se det som nøkkelen har omfang for. Begrenset deling til stab som burde se disse dataene, og foretrekk smalere omfang.
-- **Revisjonsmonolog.** Mutasjoner går gjennom samme revisjonslogg som B1Admin-handlinger; gjennomgå dem under **Rapporter → Revisjonslogg**.
+- **Per-church isolation.** API-nøkkelen løser seg til en kirke bare. ChatGPT kan ikke se andre kirkenes data.
+- **Permission-scoped.** Nøkkelen bærer bare omfangene du ga.
+- **Revocable instantly.** Slett nøkkelen og tilgang ender umiddelbart.
 
 ## Kostnad
 
-ChurchApps er gratis og åpen kilde -- API-en som din egendefinerte GPT ringer er en del av API-en som kirken din allerede kjører. OpenAI belaster for ChatGPT-bruk per deres planer. Det er ingen per-anrop kostnad fra ChurchApps.
+ChurchApps er gratis og åpen kildekode. OpenAI tar betalt for ChatGPT-bruk etter egne planer. Det er ingen per-anrop-kostnad fra ChurchApps.
 
-## Feilsøking
-
-**Handling returnerer 401:** bearerheadingenen er ikke angitt riktig. I handlingens godkjenningspanel må du sikre at **Auth-type: Bearer** er valgt og nøkkelverdien ikke inkluderer ordet `Bearer`.
-
-**Handling returnerer 403:** nøkkelen har ikke omfang for det sluttpunktet. Mynt en ny nøkkel med riktige omfang og oppdater GPTen.
-
-**ChatGPT kaller feil handling:** stram opp `summary`- og `description`-feltene i OpenAPI-skjemaet slik at modellen plukker riktig. Legger til eksempelspørsmål i GPT-instruksjonene hjelper også.
-
-## Relatert
-
-- [API-nøkler](/docs/developer/api/api-keys) -- full omfangsreferanse
-- [MCP-server (developer reference)](/docs/developer/api/mcp) -- protokolldetaljer og verktøyskjemaer
-- [Claude](./claude) -- samme idé, for Anthropic-modeller
-- [REST API-referanse](/docs/developer/api/endpoints) -- alle sluttpunktene en egendefinert GPT-handling kan treffe

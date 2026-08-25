@@ -31,12 +31,13 @@ To update your information, edit the fields and click the **Save Changes** butto
 ## Changing Your Password
 
 1. Scroll to the password fields on the Profile page.
-2. Enter your new password in the **Password** field.
-3. Re-enter it in the **Confirm Password** field.
-4. Click **Save Changes**.
+2. Enter your **Current Password**.
+3. Enter your new password in the **Password** field.
+4. Re-enter it in the **Confirm Password** field.
+5. Click **Save Changes**.
 
 :::info
-Your password must be at least 8 characters long. Make sure both the password and confirmation fields match exactly.
+Your password must be at least 8 characters long. Make sure both the password and confirmation fields match exactly. You must confirm your current password to change it -- if you don't know it, use the **Forgot Password** link on the login page instead.
 :::
 
 ## Linked Accounts

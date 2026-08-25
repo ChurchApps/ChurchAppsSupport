@@ -1,63 +1,66 @@
----
-title: "Gruppdetaljer"
+﻿---
+title: "Gruppedetaljer"
 ---
 
-# Gruppdetaljer
+# Gruppedetaljer
 
 <div class="article-intro">
 
-Når du klikker på en gruppe fra gruppesiden, tas du til gruppesiden. Hva du ser avhenger av om du er logget inn eller ikke, med at innloggede medlemmer har tilgang til ekstra faner og funksjoner.
+Når du klikker på en gruppe fra gruppesiden, tas du til gruppetdetaljesiden. Hva du ser avhenger av om du er logget inn eller ikke, med innloggede medlemmer som har tilgang til ekstra faner og funksjoner.
 
 </div>
 
 <div class="prereqs">
-<h4>Før Du Begynner</h4>
+<h4>Før du begynner</h4>
 
-- Finn en gruppe å se ved å [bla gjennom grupper](./browsing-groups.md).
-- For full tilgang til alle faner, [logg inn](../getting-started/logging-in.md) på kontoen din.
+- Finn en gruppe å vise ved [browsing groups](./browsing-groups.md).
+- For full tilgang til alle faner, [logg inn](../getting-started/logging-in.md) på kontoen.
 
 </div>
 
-## Besøkervisning (Ikke Logget Inn)
+## Besøk visning (ikke logget inn)
 
-Hvis du ikke er logget inn, vil du se følgende:
+Hvis du ikke er logget inn, ser du følgende:
 
-- **Hero-seksjon** -- Et stort bannområde som viser gruppens foto, navn, møtetid og møtested.
-- **Beskrivelse** -- Den fullstendige beskrivelsen av gruppen som forklarer formålet og hva du kan forvente.
-- **Ledere** -- Avatarer og navn på gruppens ledere. Du kan klikke på en leders navn for å se profilen deres.
-- **Kalenderhendelser** -- Opptil tre kommende arrangementer for gruppen vises, hver viser datoen og arrangementtitelen. Hvis gruppen har ingen kommende arrangementer, er denne seksjonen skjult.
-- **Kontaktskjema** -- Et skjema som lar deg sende en melding direkte til gruppens ledere. Fyll inn **fornavn**, **etternavn**, **e-post**, **telefonnummer** og **melding**, og klikk deretter **Send**. Hvis det er flere ledere, kan du velge hvilken en som skal kontaktes fra en rullegardinmeny.
+- **Hero section** -- Et stort bannerområde som viser gruppens foto, navn, møtetid og møtested.
+- **Description** -- Hele beskrivelsen av gruppen som forklarer formål og hva du kan forvente.
+- **Leaders** -- Avatarer og navn på gruppens ledere. Du kan klikke på en leders navn for å se profilen.
+- **Calendar events** -- Opp til tre kommende hendelser for gruppen vises, hver viser dato og hendelsestittel. Hvis gruppen har ingen kommende hendelser, er denne seksjonen skjult.
+- **Contact form** -- Et skjema som lar deg sende en melding direkte til gruppens ledere.
 
-## Medlemsvisning (Logget Inn)
+## Medlemsvisning (logget inn)
 
-Når du er logget inn, viser gruppesiden hero-seksjonen sammen med en sidepanels faneliste. De tilgjengelige fanene er:
+Når du er logget inn, viser gruppetdetaljesiden heroseksjonen sammen med en sidestolpe med faner. Hvis gruppen er knyttet til en Lessons.church-plantype og denne ukens leksjon har foreldertake-home-innhold, vises et **This week lesson**-kort mellom helten og fanene (bare medlemmer).
 
-- **Gruppdetaljer** -- Gruppens fullstendige beskrivelse, gjengitt med rik tekstformatering.
-- **Medlemmer** -- En liste over alle medlemmer i gruppen, som viser deres foto og navn. Du kan klikke på et medlemsnavn for å besøke profilen deres i [medlemskatalogen](../community/member-directory.md).
-- **Kalender** -- Gruppens kalender som viser møter og arrangementer. Du kan bla gjennom kommende og tidligere arrangementer.
-- **Samtaler** -- Et sted for gruppemedlemmer å legge ut meldinger og samhandle med hverandre. Se [Gruppesamt](./conversations.md) for mer informasjon.
-- **Ressurser** -- Delte filer og lenker som er blitt lagt ut for gruppen. Du kan laste ned opplastede filer eller åpne linkede ressurser.
-- **Oppmøte** -- Synlig bare for gruppledere. Tillater sporing av hvem som møtte opp til gruppemøter.
+Tilgjengelige faner er:
 
-## Lederfunksjoner
+- **Group Details** -- Gruppens fulle beskrivelse, gjengitt med rik tekstformatering.
+- **Members** -- En liste over alle medlemmer i gruppen, som viser foto og navn.
+- **Calendar** -- Gruppens kalender som viser møter og hendelser.
+- **Conversations** -- Et område for gruppmedlemmer til å legge ut meldinger og samhandle.
+- **Resources** -- Delte filer og lenker som har blitt lagt ut for gruppen.
+- **Attendance** -- Synlig for gruppledere bare. Tillat sporing av hvem som møtte møter.
 
-Hvis du er leder av gruppen, har du ekstra redigeringsfunksjoner:
+## Leder-evner
 
-- **Rediger gruppdetaljer** -- Oppdater gruppens navn, beskrivelse, møtetid og andre innstillinger direkte fra **Detaljer**-fanen.
-- **Administrer medlemmer** -- Legg til nye medlemmer i gruppen eller fjern eksisterende fra **Medlemmer**-fanen.
-- **Administrer ressurser** -- Last opp filer (opptil 100 MB lagring), legg til lenker, eller slett eksisterende ressurser.
-- **Lederressurser** -- Få tilgang til en separat **Ressurser (Ledere)**-fane med filer og lenker synlige bare for gruppledere.
-- **Spor oppmøte** -- Registrer frammøte for gruppeseanser fra **Oppmøte**-fanen.
+Hvis du er leder av gruppen, har du ytterligere redigeringsfunksjoner:
 
-## Bli Med i en Gruppe
+- **Rediger gruppedetaljer** -- Oppdater gruppens navn, beskrivelse, møtetid og andre innstillinger direkte fra **Details**-fanen.
+- **Administrer medlemmer** -- Legg til nye medlemmer i gruppen eller fjern eksisterende fra **Members**-fanen.
+- **Opprett og rediger hendelser** -- Legg hendelser til gruppens kalender.
+- **Administrer ressurser** -- Last opp filer (opp til 100 MB lagring), legg til lenker, eller slett eksisterende ressurser.
+- **Spor oppmøte** -- Registrer oppmøte for gruppesesjoner fra **Attendance**-fanen.
 
-Når du er logget inn og ikke ennå medlem, vises en join-knapp på gruppesiden. Knappetittelen avhenger av gruppens join-policy:
+## Innmelding i en gruppe
 
-- **Bli med i gruppe** -- Gruppen er åpen. Hvis du klikker på dette, legges du umiddelbart til som medlem.
-- **Be om å bli med** -- Gruppen krever godkjenning. Hvis du klikker på dette, åpnes en dialog hvor du kan inkludere en valgfri melding til gruppeleder, og deretter sende forespørselen din. Se [Be om å bli med i en gruppe](./join-requests.md) for detaljer om håndtering av forespørslene dine.
+Når du er logget inn og ikke ennå er medlem, vises en join-knapp på gruppetdetaljesiden. Knappens etikett avhenger av gruppens innmeldingspolicy:
 
-Hvis ingen av knappene vises, er gruppen lukket og medlemmer må legges til manuelt av leder eller administrator.
+- **Join Group** -- Gruppen er åpen. Klikking legger deg umiddelbart til som medlem.
+- **Request to Join** -- Gruppen krever godkjenning. Klikking åpner en dialog hvor du kan inkludere en valgfri melding til grupplederen, deretter innleverer forespørselen.
+
+Hvis ingen knapp vises, er gruppen lukket og medlemmer må legges til manuelt av en leder eller administrator.
 
 :::info
-Hvis en gruppe er lukket og du vil bli med, bruk kontaktskjemaet på besøkervisningen for å komme i kontakt med gruppens ledere.
+Hvis en gruppe er lukket og du vil bli medlem, bruker du kontaktskjemaet på besøksvisningen for å nå ut til gruppens ledere.
 :::
+

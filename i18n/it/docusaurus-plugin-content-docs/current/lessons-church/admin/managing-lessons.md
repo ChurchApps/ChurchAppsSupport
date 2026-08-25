@@ -1,78 +1,90 @@
 ---
-title: "Gestione delle lezioni"
+title: "Gestione delle Lezioni"
 ---
 
-# Gestione delle lezioni
+# Gestione delle Lezioni
 
 <div class="article-intro">
 
-Le lezioni sono le singole sessioni di insegnamento all'interno di uno studio. Ogni lezione rappresenta ciò che accade durante un singolo incontro di classe. È qui che costruisci i contenuti dettagliati -- ambienti, sezioni, ruoli e azioni -- che i volontari utilizzeranno quando insegnano.
+Le lezioni sono le singole sessioni di insegnamento all'interno di uno studio. Ogni lezione rappresenta ciò che accade durante un singolo incontro in classe. Qui è dove costruisci il contenuto dettagliato - i luoghi, le sezioni, i ruoli e le azioni - che i volontari useranno quando insegneranno.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di iniziare</h4>
+<h4>Prima di Iniziare</h4>
 
-- [Crea un programma](./managing-programs.md) e [aggiungi uno studio](./managing-studies.md)
-- Disponi dei permessi di amministratore per Lessons.church (vedi la [Panoramica dell'amministrazione](./index.md))
+- [Crea un programma](./managing-programs.md) e [aggiungi uno studio](./managing-studies.md) ad esso
+- Hai le autorizzazioni di amministrazione per Lessons.church (vedi la [panoramica amministrazione](./index.md))
 
 </div>
 
-## Creazione di una lezione
+## Creazione di una Lezione
 
-1. Vai all'area **Amministrazione**, espandi il programma e lo studio, e trova lo studio a cui vuoi aggiungere una lezione.
-2. Clicca su **Aggiungi lezione**.
+1. Passa all'area **Admin**, espandi il programma e lo studio, e trova lo studio a cui desideri aggiungere una lezione.
+2. Fai clic su **Aggiungi Lezione**.
 3. Inserisci un **Nome** e altri dettagli per la lezione.
 4. Salva la lezione.
 
-## Comprendere la struttura della lezione
+## Presa a Casa per i Genitori
+
+Ogni lezione ha una sezione facoltativa **Presa a casa per i genitori** sotto la Descrizione. Questi campi sono ciò che i genitori vedono sul loro gruppo B1 dopo la lezione.
+
+| Campo | Scopo |
+|---|---|
+| **Riga di fondo** | Una frase. "Dio mantiene le Sue promesse." |
+| **Versetto** | Riferimento del versetto della memoria e testo breve. |
+| **Domanda** | Una domanda che i genitori possono fare senza un PDF. |
+| **Nota facoltativa** | Extra (preghiera, attività familiare). Markdown. |
+
+La riga di fondo e una domanda contano più di una panoramica. Lascia tutti e quattro vuoti se non hai nulla per i genitori quella settimana.
+
+## Struttura della Lezione
 
 Ogni lezione è organizzata in diversi livelli:
 
-- **Ambienti** -- Versioni diverse della lezione per diverse fasce d'età o contesti. Ad esempio, potresti avere un ambiente "Prescolare" e un ambiente "Elementare" per la stessa lezione.
-- **Sezioni** -- I segmenti all'interno di un ambiente, come "Benvenuto", "Video", "Storia biblica" e "Attività". Le sezioni controllano il flusso del tempo in classe.
-- **Ruoli e azioni** -- All'interno di ogni sezione, assegni ruoli (ad esempio, "Insegnante principale" o "Leader piccolo gruppo") e dai a ogni ruolo azioni specifiche.
+- **Luoghi** -- Diverse versioni della lezione per diversi gruppi di età o ambienti.
+- **Sezioni** -- I segmenti all'interno di un luogo, come "Benvenuto", "Video", "Storia Biblica" e "Attività".
+- **Ruoli e Azioni** -- All'interno di ogni sezione, assegni ruoli e dai a ogni ruolo azioni specifiche.
 
-## Tipi di azione
+## Tipi di Azione
 
 Ci sono quattro tipi di azioni che puoi assegnare a un ruolo all'interno di una sezione:
 
-- **Dire** -- Testo che il volontario dovrebbe leggere o parafrasare alla classe.
-- **Fare** -- Un'attività fisica o un'istruzione da eseguire.
-- **Nota** -- Informazioni di contesto o un promemoria per il volontario (non da leggere ad alta voce).
-- **Riprodurre** -- Un video o una clip audio da riprodurre durante la sezione.
+- **Detto** -- Testo che il volontario dovrebbe dire o parafrasare alla classe.
+- **Fatto** -- Un'attività fisica o un'istruzione da eseguire.
+- **Nota** -- Informazioni di background o un promemoria per il volontario.
+- **Riproduci** -- Una clip video o audio da riprodurre durante la sezione.
 
-## Aggiunta di un ambiente
+## Aggiunta di un Luogo
 
-1. Apri la lezione nella vista amministrativa.
-2. Clicca su **Aggiungi ambiente**.
-3. Inserisci un nome per l'ambiente (ad es. "Prescolare" o "Elementare").
-4. Salva. Ora puoi aggiungere sezioni a questo ambiente.
+1. Apri la lezione nella visualizzazione amministrazione.
+2. Fai clic su **Aggiungi Luogo**.
+3. Inserisci un nome per il luogo (ad es. "Età Prescolare" o "Elementare").
+4. Salva. Ora puoi aggiungere sezioni a questo luogo.
 
-## Aggiunta di sezioni e azioni
+## Aggiunta di Sezioni e Azioni
 
-1. Espandi un ambiente per vedere le sue sezioni.
-2. Clicca su **Aggiungi sezione** e assegnale un nome (ad es. "Benvenuto").
-3. All'interno della sezione, clicca su **Aggiungi azione**.
-4. Scegli il **ruolo**, il **tipo di azione** (Dire, Fare, Nota o Riprodurre) e inserisci il contenuto.
+1. Espandi un luogo per vedere le sue sezioni.
+2. Fai clic su **Aggiungi Sezione** e dagli un nome (ad es. "Benvenuto").
+3. All'interno della sezione, fai clic su **Aggiungi Azione**.
+4. Scegli il **ruolo**, il **tipo di azione** (Detto, Fatto, Nota o Riproduci) e inserisci il contenuto.
 5. Salva.
 
-Ripeti questo processo per costruire l'intero flusso della lezione.
+Ripeti questo processo per costruire l'intero flusso di lezione.
 
-## Caricamento di risorse a livello di lezione
+## Caricamento di Risorse a Livello di Lezione
 
-Puoi allegare materiali scaricabili direttamente a una lezione -- ad esempio, una scheda attività o una pagina da colorare specifica per quella settimana.
+Puoi allegare materiali scaricabili direttamente a una lezione.
 
-1. Apri la lezione nella vista amministrativa.
-2. Vai alla sezione **Risorse**.
+1. Apri la lezione nella visualizzazione amministrazione.
+2. Passa alla sezione **Risorse**.
 3. Carica i tuoi file.
 
 :::tip
-Costruisci la lezione dal punto di vista del volontario. Scorri le sezioni e le azioni in ordine e chiediti se un volontario alla prima esperienza potrebbe seguire senza nessun'altra preparazione.
+Costruisci la tua lezione dalla prospettiva del volontario. Attraversa le sezioni e le azioni nell'ordine e chiedi a te stesso se un volontario per la prima volta potrebbe seguire senza altre preparazioni.
 :::
 
-## Articoli correlati
+## Articoli Correlati
 
-- [Gestione dei programmi](./managing-programs.md) -- Configurare il contenitore didattico di primo livello
-- [Gestione degli studi](./managing-studies.md) -- Organizzare le lezioni in gruppi di studio
-- [Statistiche](./statistics.md) -- Monitorare come vengono utilizzate le tue lezioni
+- [Gestione dei Programmi](./managing-programs.md) -- Configura il contenitore di curriculum di livello superiore
+- [Gestione degli Studi](./managing-studies.md) -- Organizza le lezioni in gruppi di studio

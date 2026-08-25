@@ -1,102 +1,105 @@
----
-title: "Åpent leksjonformat"
+﻿---
+title: "Open Lesson Format"
 ---
 
-# Åpent leksjonformat
+# Open Lesson Format
 
 <div class="article-intro">
 
-Åpent leksjonformat er et standardisert JSON-skjema som lar tredjepartsinnholds-leverandører publisere pensum for Lessons.church. Enhver organisasjon som er vert for en feed i dette formatet kan legges til som en ekstern leverandør, noe som gjør innholdet deres bla og spilt sammen med det innebygde biblioteket.
+Open Lesson Format er et standardisert JSON-skjema som tillater tredjeparts innholdsleverandører å publisere lærebok for Lessons.church. Enhver organisasjon som er vert for en feed i dette formatet kan legges til som en ekstern leverandør, noe som gjør innholdet deres gjennomlovlig og avspillingsbart sammen med det innebygde biblioteket.
 
 </div>
 
 ## Hvordan det fungerer
 
-En leverandør er vert for to typer sluttpunkter:
+En leverandør er vert for to typer endepunkter:
 
-1. **Provider-tre** -- En enkelt URL som returnerer komplett katalog av programmer, studier, leksjoner og venues. Hvert venue inkluderer feed-URL som peker til detaljert leksjons-innhold.
-2. **Venue-feed** -- En URL per venue, som returnerer komplett leksjons-innhold.
+1. **Provider Tree** -- En enkelt URL som returnerer hele katalogen over programmer, studier, leksjoner og venues. Hver venue inkluderer en feed-URL som peker til det detaljerte leksjonsinnholdet.
+2. **Venue Feed** -- En URL per venue, returnerer hele leksjonsinnholdet (seksjoner, handlinger og mediefiler).
 
-Når en kirke legger til leverandør-URL i Lessons.church, henter plattformen ditt tre for å finne tilgjengelig innhold, deretter henter individuelle venue-feeds etter behov.
+Når en kirke legger til leverandørens URL i Lessons.church, henter plattformen treet ditt for å oppdage tilgjengelig innhold, deretter henter individuell venue-feed på etterspørsel.
 
-## Provider-tre
+## Provider Tree
 
-Din leverandør-URL må returnere JSON-objekt med denne strukturen. Det inkluderer programmer, som inkluderer studier, som inkluderer leksjoner, som inkluderer venues.
+Leverandørens URL må returnere en JSON-objekt med denne strukturen:
 
-### Tre-felt
+```json
+{
+  "programs": [
+    {
+      "id": "program-1",
+      "name": "Gospel of Mark",
+      "slug": "gospel-of-mark",
+      "about": "A 12-week study through the Gospel of Mark.",
+      "studies": [
+        {
+          "id": "study-1",
+          "name": "The Beginning",
+          "slug": "the-beginning",
+          "lessons": [
+            {
+              "id": "lesson-1",
+              "name": "The Baptism of Jesus",
+              "slug": "baptism-of-jesus",
+              "bottomLine": "God keeps His promises.",
+              "verse": "Genesis 9:13",
+              "parentQuestion": "What is one promise God has kept?",
+              "venues": [
+                {
+                  "id": "venue-1",
+                  "name": "Kids",
+                  "apiUrl": "https://example.com/feed/venues/venue-1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
 
-| Felt | Type | Beskrivelse |
-|---|---|---|
-| `programs[].id` | streng | Unik program-identifikator |
-| `programs[].name` | streng | Visnings-navn |
-| `programs[].slug` | streng | URL-venlig navn |
-| `programs[].image` | streng | Program-bilde URL (valgfritt) |
-| `programs[].about` | streng | Beskrivelse (valgfritt) |
-| `studies[].id` | streng | Unik studie-identifikator |
-| `studies[].name` | streng | Visnings-navn |
-| `studies[].slug` | streng | URL-venlig navn |
-| `lessons[].id` | streng | Unik leksjons-identifikator |
-| `lessons[].name` | streng | Visnings-navn |
-| `lessons[].slug` | streng | URL-venlig navn |
-| `lessons[].title` | streng | Full tittel |
-| `lessons[].image` | streng | Leksjons-bilde URL (valgfritt) |
-| `lessons[].description` | streng | Leksjons-sammendrag (valgfritt) |
-| `venues[].id` | streng | Unik venue-identifikator |
-| `venues[].name` | streng | Venue-navn (f.eks. "Barn", "Voksne") |
-| `venues[].apiUrl` | streng | URL som returnerer venue-feed |
+## Venue Feed
 
-## Venue-feed
+Hver venues `apiUrl` må returnere en JSON-objekt som samsvarer med dette skjemaet:
 
-Hver venue sin `apiUrl` må returnere JSON-objekt som samsvarer med dette skjemaet:
+```json
+{
+  "id": "venue-1",
+  "name": "Kids",
+  "lessonId": "lesson-1",
+  "lessonName": "The Baptism of Jesus",
+  "bottomLine": "God keeps His promises.",
+  "sections": [
+    {
+      "id": "section-1",
+      "name": "Opening Discussion",
+      "sort": 1,
+      "actions": [
+        {
+          "id": "action-1",
+          "actionType": "text",
+          "content": "**Key Verse:** Mark 1:9-11",
+          "sort": 1
+        }
+      ]
+    }
+  ]
+}
+```
 
-Roten-objektet inneholder leksjons-detaljer, studier-info, program-info, downloads og seksjoner.
-
-### Seksjon
-
-| Felt | Type | Beskrivelse |
-|---|---|---|
-| `id` | streng | Seksjon-identifikator |
-| `name` | streng | Seksjons-tittel |
-| `sort` | nummer | Visnings-rekkefølge |
-| `materials` | streng | Materialer eller prep-notater (valgfritt) |
-| `actions` | matrise | Ordnete handlinger innen denne seksjonen |
-
-### Handling
-
-| Felt | Type | Beskrivelse |
-|---|---|---|
-| `id` | streng | Handlings-identifikator |
-| `actionType` | streng | En av: `play`, `text`, `question`, `quote`, `subhead` |
-| `content` | streng | Tekst-innhold eller media-merke |
-| `sort` | nummer | Visnings-rekkefølge |
-| `role` | streng | Rolle-navn, f.eks. "Leder" (valgfritt) |
-| `files` | matrise | Media-filer for `play`-handlinger (valgfritt) |
-
-### Fil
-
-| Felt | Type | Beskrivelse |
-|---|---|---|
-| `id` | streng | Fil-identifikator |
-| `name` | streng | Filnavn |
-| `url` | streng | Direkte last-ned-URL |
-| `streamUrl` | streng | Stream-URL, f.eks. Vimeo-lenke (valgfritt) |
-| `fileType` | streng | MIME-type |
-| `seconds` | nummer | Varighet i sekunder for lyd/video (valgfritt) |
-| `bytes` | nummer | Filstørrelse i bytes (valgfritt) |
-| `thumbnail` | streng | Thumbnail-bilde URL (valgfritt) |
-| `loop` | boolsk | Hvorvidt media skal løkke (valgfritt) |
-
-## Handling-typer
+## Handlingstyper
 
 | Type | Formål |
-|---|---|
-| `play` | Media-avspilling -- video, lyd eller bildeshow |
-| `text` | Statisk tekst-innhold |
-| `question` | Diskusjons- eller refleksjons-spørsmål |
-| `quote` | Et fremhevet sitat eller Bibel-passasje |
-| `subhead` | En heading eller skilletegn innen en seksjon |
+|------|--------|
+| `play` | Medieavspilling -- video, lyd eller lysbildeshow |
+| `text` | Statisk tekstinnhold |
+| `question` | Diskusjons- eller refleksjonsspørsmål |
+| `quote` | Høydepunkt sitat eller Skriftstedspassasje |
+| `subhead` | Overskrift eller skillelinje innenfor en seksjons |
 
 :::tip
-For å se et arbeidende eksempel på feeden i aksjon, kan du vise det innebygde Lessons.church-innholdt-treet på `https://api.lessons.church/lessons/public/tree`.
+For å se et arbeidende eksempel på feed, kan du vise det innebygde Lessons.church-innholdstreet på `https://api.lessons.church/lessons/public/tree`.
 :::
 

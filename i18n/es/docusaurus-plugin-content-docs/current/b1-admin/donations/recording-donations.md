@@ -1,64 +1,64 @@
----
-title: "Registrar donaciones"
+﻿---
+title: "Registrar Donaciones"
 ---
 
-# Registrar donaciones
+# Registrar Donaciones
 
 <div class="article-intro">
 
-El registro de donaciones en B1 Admin se realiza a trav\u00e9s del sistema de Lotes. Usted crea un lote para representar una recolecci\u00f3n (como una ofrenda dominical), y luego agrega donaciones individuales a ese lote. Esto mantiene sus registros de ofrendas organizados y f\u00e1ciles de conciliar.
+Registrar donaciones en B1 Admin se realiza a través del sistema de Lotes. Creas un lote para representar una colección (como una ofrenda dominical), luego agregas donaciones individuales a ese lote. Esto mantiene tus registros de donación organizados y fáciles de reconciliar.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de comenzar</h4>
+<h4>Antes de Comenzar</h4>
 
-- Configure sus [fondos](funds.md) para poder asignar las donaciones a las categor\u00edas correctas
-- Cree un [lote](batches.md) para contener las donaciones que est\u00e1 a punto de ingresar
-- Aseg\u00farese de que los donantes est\u00e9n en su [directorio de personas](../people/adding-people.md) para poder buscarlos al ingresar las ofrendas
+- Configura tus [fondos](funds.md) para poder asignar donaciones a las categorías correctas
+- Crea un [lote](batches.md) para mantener las donaciones que estás a punto de ingresar
+- Asegúrate de que los donantes están en tu [directorio de personas](../people/adding-people.md) para poder buscarlos al ingresar donaciones
 
 </div>
 
-## Crear un lote y agregar donaciones
+## Crear un Lote y Agregar Donaciones
 
-1. En **B1 Admin**, haga clic en **Donaciones** en la barra lateral, luego haga clic en **Lotes**.
-2. Haga clic en **Agregar lote**.
-3. Ingrese un nombre para el lote (por ejemplo, "Ofrenda dominical - 5 de enero") y seleccione la fecha. Haga clic en **Guardar**.
-4. Su nuevo lote aparece en la lista mostrando cero donaciones y $0.00.
-5. Haga clic en el **nombre del lote** para abrirlo.
+1. En **B1 Admin**, abre el **menú de sección** en la esquina superior izquierda y elige **Donaciones**, luego haz clic en **Lotes**.
+2. Haz clic en **Agregar Lote**.
+3. Ingresa un nombre para el lote (p. ej., "Ofrenda Dominical - 5 de Enero") y selecciona la fecha. Haz clic en **Guardar**.
+4. Tu nuevo lote aparece en la lista mostrando cero donaciones y $0.00.
+5. Haz clic en el **nombre del lote** para abrirlo.
 
-## Ingresar donaciones individuales
+## Ingresar Donaciones Individuales
 
-1. En la p\u00e1gina de detalle del lote, escriba el nombre del donante en el **campo de b\u00fasqueda** para encontrarlo.
-2. Despu\u00e9s de seleccionar a una persona, aparece el formulario de ingreso de donaci\u00f3n con campos para **Fecha**, **M\u00e9todo de pago**, **Fondo**, **Monto** y **N\u00famero de cheque**.
-3. Complete los detalles y haga clic en **Agregar donaci\u00f3n**.
-4. La donaci\u00f3n se agrega a la tabla inferior, y el formulario se reinicia para que pueda ingresar la siguiente.
+1. En la página de detalle del lote, escribe el nombre del donante en el **campo de búsqueda** para encontrarlo.
+2. Después de seleccionar una persona, aparece el formulario de entrada de donación con campos para **Fecha**, **Método de Pago**, **Fondo**, **Cantidad** y **Número de Cheque**.
+3. Completa los detalles y haz clic en **Agregar Donación**.
+4. La donación se agrega a la tabla a continuación, y el formulario se reinicia para que puedas ingresar la siguiente.
 
 :::tip
-Puede ingresar r\u00e1pidamente m\u00faltiples donaciones seguidas sin salir de la p\u00e1gina del lote. El formulario se reinicia despu\u00e9s de cada entrada para que pueda procesar una pila de cheques o sobres de manera eficiente.
+Puedes ingresar rápidamente múltiples donaciones seguidas sin dejar la página del lote. El formulario se reinicia después de cada entrada para que puedas pasar por una pila de cheques o sobres de manera eficiente.
 :::
 
-## Dividir una donaci\u00f3n entre m\u00faltiples fondos
+## Dividir una Donación Entre Múltiples Fondos
 
-A veces un solo donante da a m\u00e1s de un fondo en una sola transacci\u00f3n. Para manejar esto:
+A veces un solo donante da a más de un fondo en una sola transacción. Para manejar esto:
 
-1. Haga clic en el bot\u00f3n **Editar** en la fila de la donaci\u00f3n.
-2. En el formulario de edici\u00f3n, agregue montos a diferentes fondos. El total se calcular\u00e1 autom\u00e1ticamente a partir de los montos individuales por fondo.
-3. Haga clic en **Guardar** para actualizar la donaci\u00f3n.
+1. Haz clic en el botón **Editar** en la fila de donación.
+2. En el formulario de edición, agrega cantidades a diferentes fondos. El total se calculará automáticamente de las cantidades de fondo individual.
+3. Haz clic en **Guardar** para actualizar la donación.
 
 :::info
-Dividir donaciones entre fondos es com\u00fan cuando un donante escribe un solo cheque designado para m\u00faltiples prop\u00f3sitos, como Fondo General y Misiones.
+Dividir donaciones entre fondos es común cuando un donante escribe un solo cheque designado para múltiples propósitos, como Fondo General y Misiones.
 :::
 
-## Editar o eliminar donaciones
+## Editar o Eliminar Donaciones
 
-Para editar una donaci\u00f3n, haga clic en el bot\u00f3n **Editar** en su fila dentro del lote. Puede cambiar la fecha, monto, fondo, m\u00e9todo de pago o cualquier otro detalle. Haga clic en **Guardar** cuando termine.
+Para editar una donación, haz clic en el botón **Editar** en su fila en el lote. Puedes cambiar la fecha, cantidad, fondo, método de pago o cualquier otro detalle. Haz clic en **Guardar** cuando termines.
 
 :::tip
-El encabezado de la p\u00e1gina del lote se actualiza autom\u00e1ticamente para mostrar el n\u00famero total de donaciones y el monto combinado en d\u00f3lares a medida que agrega o edita entradas. Use esto para conciliar con su comprobante de dep\u00f3sito.
+El encabezado de la página del lote se actualiza automáticamente para mostrar el número total de donaciones y la cantidad en dólares combinada a medida que agregas o editas entradas. Usa esto para reconciliar contra tu comprobante de depósito.
 :::
 
-## Pr\u00f3ximos pasos
+## Próximos Pasos
 
-- Revise sus entradas usando los [Reportes de donaciones](donation-reports.md) para verificar la precisi\u00f3n
-- Al final del a\u00f1o, genere [Estados de cuenta de ofrendas](giving-statements.md) para sus donantes
+- Revisa tus entradas usando [Reportes de Donaciones](donation-reports.md) para verificar precisión
+- Al final del año, genera [Declaraciones de Donaciones](giving-statements.md) para tus donantes

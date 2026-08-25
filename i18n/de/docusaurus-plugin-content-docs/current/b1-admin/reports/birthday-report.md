@@ -1,49 +1,45 @@
 ---
-title: "Geburtstagsberichte"
+title: "Geburtstags- & Jahrestagslistenmen"
 ---
 
-# Geburtstagsberichte
+# Geburtstags- & Jahrestagslistenmen
 
 <div class="article-intro">
 
-Der Bericht „Geburtstage" hilft Ihnen, mit Ihrer Gemeinde verbunden zu bleiben, indem Mitglieder mit anstehenden Geburtstagen angezeigt werden. Verwenden Sie ihn, um Feiern zu planen, Karten zu versenden oder Ankündigungen während der Gottesdienste zu machen.
+Benötigen Sie eine Liste aller mit einem Geburtstag oder Jahrestag in einem bestimmten Monat -- für das Bulletin, Ankündigungen oder Karten? Die Personensuche kann Ihre Gemeinde nach **Geburtsmonat** und **Jahrestag-Monat** filtern und die Daten direkt in den Ergebnissen anzeigen.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Stellen Sie sicher, dass Geburtsdaten im Profil jeder Person eingegeben sind. Siehe [Personen hinzufügen](../people/adding-people.md) für Details.
-- Sie benötigen die entsprechenden [Berechtigungen](../settings/roles-permissions.md), um auf Berichte zuzugreifen
+- Stellen Sie sicher, dass Geburtsdaten (und Jahrestage) auf den Profilen jeder Person eingegeben sind. Siehe [Personen hinzufügen](../people/adding-people.md).
+- Sie benötigen die Berechtigung zum Anzeigen von Personen. Siehe [Rollen & Berechtigungen](../settings/roles-permissions.md).
 
 </div>
 
-## Bericht ausführen
+## Abrufen einer Geburtstagsliste für einen Monat
 
-1. Gehen Sie direkt zu **admin.b1.church/reports/birthdays** in Ihrem Browser (Berichte haben keinen Eintrag im Navigationsmenü – ein Lesezeichen für die Adresse ist der einfachste Weg, um dorthin zurückzukehren).
-2. Wählen Sie den **Monat**, den Sie möchten, aus der Dropdown-Liste aus. Sie können die Ergebnisse optional auf eine einzelne **Gruppe** beschränken.
-3. Klicken Sie auf **Bericht ausführen**. Der Bericht listet alle Personen mit einem Geburtstag in diesem Monat auf, mit ihrem Geburtsdatum – bereit zum direkten Einlesen in ein Bulletin oder eine Ankündigungsliste.
+1. Öffnen Sie das **Abschnittsmenü** in der oberen linken Ecke und wählen Sie **Personen**.
+2. Klicken Sie unter dem Suchfeld auf **Erweitert**.
+3. Erweitern Sie den Abschnitt **Demografische Daten** und aktivieren Sie **Geburtsmonat**, wählen Sie dann den Monat.
+4. Führen Sie die Suche aus -- alle Personen mit einem Geburtstag in diesem Monat werden in den Ergebnissen angezeigt.
+5. Um die Daten anzuzeigen, klicken Sie auf das **Spaltensymbol** oben rechts in den Ergebnissen und aktivieren Sie die Spalte **Geburtstag**. Verwenden Sie **Exportieren**, um die Liste als Tabellenkalkulation herunterzuladen, wenn Sie sie lieber dort sortieren oder drucken möchten.
 
-## Was der Bericht zeigt
+## Abrufen einer Jahrestagslist
 
-Der Geburtstagsberichte zeigt:
-
-- **Geburtstag** – Das Datum ihres Geburtstags.
-- **Name** – Der Name der Person aus Ihrer Kirchendatenbank.
-
-Die Ergebnisse decken den ausgewählten Monat ab und machen es einfach, zu sehen, wer einen Geburtstag hat.
+Dieselbe Schritte -- aktivieren Sie im Abschnitt **Demografische Daten** statt dessen **Jahrestag-Monat** (oder auch), wählen Sie den Monat und aktivieren Sie die Spalte **Jahrestag** in den Ergebnissen.
 
 ## Praktische Anwendungen
 
-- **Wöchentliche Ankündigungen** – Führen Sie den Bericht für die kommende Woche aus und beziehen Sie Geburtstage in Ihr Bulletin oder Ankündigungen ein.
-- **Geburtstagskarten** – Generieren Sie eine Liste für den Monat und lassen Sie Ihr Team persönliche Geburtstagskarten versenden.
-- **Kleingruppenleitende** – Leitende können den Bericht ausführen, um die Geburtstage von Mitgliedern in ihrer Gruppe nicht zu vergessen.
-- **Meilenstein-Feiern** – Filtern Sie nach spezifischen Datumsbereichen, um Meilenstein-Geburtstagsfeierlichkeiten zu planen.
+- **Wöchentliches Bulletin** -- Führen Sie die Liste des aktuellen Monats aus und lesen Sie die Namen direkt ins Bulletin.
+- **Geburtstags- & Jahrestagsmarkierungen** -- Exportieren Sie die Monatsliste und geben Sie sie an Ihr Markierungsteam.
+- **Meilensteine** -- Kombinieren Sie mit dem Filter **Alter**, um Meilensteingeburtstage zu finden.
 
 :::tip
-Führen Sie diesen Bericht am Anfang jedes Monats aus, um im Voraus zu planen. Sie können den Datumsbereich so einstellen, dass er den gesamten Monat abdeckt, damit Sie Zeit haben, Karten oder Ankündigungen vorzubereiten.
+Beide Listen stammen aus den Feldern für Geburtsdatum und Jahrestag im Profil jeder Person -- wenn jemand fehlt, muss sein Profil nur das Datum hinzufügen.
 :::
 
 :::info
-Geburtstagssdaten stammen aus dem Geburtsdatum-Feld im Profil jeder Person. Stellen Sie sicher, dass Ihre [Mitgliedschaftsunterlagen](../people/adding-people.md) aktuell sind, um genaue Ergebnisse zu erhalten.
+In früheren Versionen von B1 Admin gab es eine separate Seite "Berichte" für Geburtstage. Diese Seite wurde eingestellt -- die obigen Filter der Personensuche sind der aktuelle Weg, und sie decken auch Jahrestage ab.
 :::

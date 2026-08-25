@@ -1,56 +1,56 @@
 ---
-title: "Spendenbescheinigungen"
+title: "Spendquittungen"
 ---
 
-# Spendenbescheinigungen
+# Spendquittungen
 
 <div class="article-intro">
 
-Am Ende jedes Jahres benötigen Ihre Spender eine Zusammenfassung ihrer steuerlich absetzbaren Spenden für ihre Unterlagen. B1 Admin macht es einfach, diese Bescheinigungen für alle Spender auf einmal zu erstellen, was Ihnen Stunden manueller Arbeit erspart.
+Am Ende jedes Jahres benötigen Ihre Spender eine Zusammenfassung ihrer steuerabzugsfähigen Spenden für ihre Unterlagen. B1 Admin macht es einfach, diese Quittungen gleichzeitig für alle Spender zu generieren und spart Ihnen Stunden manuelle Arbeit.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Überprüfen Sie, ob Ihre [Fonds](funds.md) korrekt als **Steuerlich absetzbar** markiert sind -- nur Spenden an steuerlich absetzbare Fonds erscheinen auf Bescheinigungen
-- Stellen Sie sicher, dass alle Spenden [erfasst](recording-donations.md) wurden und alle Online-Transaktionen [aus Stripe importiert](stripe-import.md) wurden
+- Überprüfen Sie, ob Ihre [Fonds](funds.md) korrekt als **Steuerabzugsfähig** gekennzeichnet sind -- nur Spenden an steuerabzugsfähige Fonds werden auf Quittungen angezeigt
+- Stellen Sie sicher, dass alle Spenden [aufgezeichnet](recording-donations.md) wurden und dass alle Online-Transaktionen [aus Stripe importiert](stripe-import.md) wurden
 
 </div>
 
-## Auf Spendenbescheinigungen zugreifen
+## Zugriff auf Spendquittungen
 
-1. Klicken Sie in **B1 Admin** in der Seitenleiste auf **Spenden**.
-2. Klicken Sie auf **Bescheinigungen**.
+1. Öffnen Sie in **B1 Admin** das **Abschnittsmenü** in der oberen linken Ecke und wählen Sie **Spenden**.
+2. Klicken Sie auf **Quittungen**.
 
-## Bescheinigungen erstellen
+## Generieren von Quittungen
 
-1. Wählen Sie das **Jahr** aus dem Dropdown-Menü oben auf der Seite. Sie können das aktuelle Jahr oder eines der fünf vorherigen Jahre wählen.
-2. Die Seite zeigt Zusammenfassungsstatistiken für dieses Jahr, darunter:
-   - **Gesamtspender** -- die Anzahl der Personen, die gespendet haben
-   - **Gesamtspenden** -- die Anzahl der einzelnen Spendeneinträge
-   - **Gesamtbetrag** -- der kombinierte Betrag aller Spenden
+1. Wählen Sie das **Jahr** aus der Dropdown-Liste oben auf der Seite. Sie können das aktuelle Jahr oder eines der fünf vorherigen Jahre wählen.
+2. Die Seite zeigt Zusammenfassungsstatistiken für dieses Jahr an, einschließlich:
+   - **Gesamte Spender** -- die Anzahl der Personen, die spendeten
+   - **Gesamtspenden** -- die Anzahl der einzelnen Spendeneintragungen
+   - **Gesamtbetrag** -- der kombinierte Dollarbetrag aller Spenden
 
-## Bescheinigungen herunterladen
+## Quittungen herunterladen
 
-Sie haben zwei Möglichkeiten, Bescheinigungen an Ihre Spender zu übermitteln:
+Sie haben zwei Möglichkeiten, Quittungen an Ihre Spender zu erhalten:
 
 ### Als CSV-Dateien herunterladen
 
-Klicken Sie auf **ZIP herunterladen**, um eine ZIP-Datei mit einer individuellen CSV-Datei für jeden Spender herunterzuladen. Dies ist nützlich, wenn Sie Bescheinigungen einzeln per E-Mail versenden oder sie in ein anderes System importieren möchten.
+Klicken Sie auf **ZIP herunterladen**, um eine ZIP-Datei mit einer einzelnen CSV-Datei für jeden Spender herunterzuladen. Dies ist hilfreich, wenn Sie Quittungen einzeln per E-Mail versenden oder in ein anderes System importieren möchten.
 
-### Alle Bescheinigungen drucken
+### Alle Quittungen drucken
 
-Klicken Sie auf **Alle drucken**, um eine druckbare Ansicht aller Spenderbescheinigungen in Ihrem Browser zu öffnen. Verwenden Sie dann die Druckfunktion Ihres Browsers, um sie an einen Drucker zu senden. Jede Bescheinigung beginnt auf einer neuen Seite, sodass sie bereit zum Falten und Versenden sind.
+Klicken Sie auf **Alle drucken**, um eine druckbare Ansicht der Quittung jedes Spenders in Ihrem Browser zu öffnen. Verwenden Sie dann die Druckfunktion Ihres Browsers, um sie an einen Drucker zu senden. Jede Quittung beginnt auf einer neuen Seite, sodass sie falten und verschickt werden können.
 
 :::tip
-Erstellen Sie Ihre Bescheinigungen Anfang Januar, solange Ihre Aufzeichnungen aktuell sind. Überprüfen Sie, ob Ihre Fonds korrekt als steuerlich absetzbar markiert sind, bevor Sie Bescheinigungen erstellen -- nur Spenden an steuerlich absetzbare Fonds sind enthalten.
+Führen Sie Ihre Quittungen Anfang Januar aus, während Ihre Aufzeichnungen noch frisch sind. Überprüfen Sie, ob Ihre Fonds korrekt als steuerabzugsfähig gekennzeichnet sind, bevor Sie Quittungen generieren -- nur Spenden an steuerabzugsfähige Fonds sind enthalten.
 :::
 
 :::info
-Spendenbescheinigungen enthalten nur Spenden an Fonds, bei denen die Einstellung **Steuerlich absetzbar** aktiviert ist. Wenn ein Fonds nicht als steuerlich absetzbar markiert ist, erscheinen seine Spenden nicht auf der Bescheinigung. Sie können diese Einstellung auf der Seite [Fonds](funds.md) verwalten.
+Spendquittungen enthalten nur Spenden, die Fonds zugewiesen sind, die die Einstellung **Steuerabzugsfähig** aktiviert haben. Wenn ein Fonds nicht als steuerabzugsfähig gekennzeichnet ist, werden seine Spenden auf der Quittung nicht angezeigt. Sie können diese Einstellung auf der Seite [Fonds](funds.md) verwalten.
 :::
 
 ## Nächste Schritte
 
-Wenn Sie Spendendetails vor der Erstellung von Bescheinigungen überprüfen müssen, besuchen Sie die Seite [Spendenberichte](donation-reports.md) oder prüfen Sie einzelne [Stapel](batches.md).
+Wenn Sie Spendendetails überprüfen müssen, bevor Sie Quittungen generieren, besuchen Sie die Seite [Spendberichte](donation-reports.md) oder überprüfen Sie einzelne [Chargen](batches.md).

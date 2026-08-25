@@ -51,6 +51,15 @@ You can add songs directly from your [Songs](./songs.md) library. This links the
 
 Drag items by the handle on the left of each row to rearrange the order — drop onto the blue line where you want the item to land, or onto a section header to move it into that section. The sequence shown on screen is the order your team will follow during the service.
 
+## Grouping Actions Under a Section
+
+Lesson and curriculum sections can hold their own step-by-step actions (for example, the individual cues inside a "Large Group" section). Click **Expand to Actions** on a section to break it out into its action items -- the section stays in place as a collapsible **folder**, with its actions nested underneath it.
+
+- Click the section's folder toggle to expand or collapse its actions without leaving the service order.
+- **Collapse to Section** reverses this for plans built before folders existed, turning a flat run of actions back into a single section item. New expansions always create a folder, so you generally only need this on older plans.
+
+Volunteers assigned to an item show up next to it in the service order, so anyone reviewing the plan can see who's covering each part at a glance.
+
 ## Timing and Media
 
 Each item and section shows how long it runs and when it starts:

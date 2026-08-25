@@ -6,40 +6,38 @@ title: "Amministrazione"
 
 <div class="article-intro">
 
-L'area di amministrazione di Lessons.church è il luogo in cui i creatori di contenuti e gli amministratori gestiscono la libreria delle lezioni. Da qui puoi costruire la struttura del tuo programma didattico, caricare risorse, esaminare le statistiche di utilizzo e collegare fornitori di contenuti di terze parti.
+L'area amministrazione in Lessons.church è dove i creatori di contenuto e gli amministratori gestiscono la biblioteca di lezioni. Da qui puoi costruire la tua struttura di curriculum, caricare risorse, rivedere le statistiche di utilizzo e connettere provider di contenuto di terze parti.
 
 </div>
 
 :::warning
-L'accesso all'amministrazione richiede permessi appropriati. Se non vedi le opzioni di amministrazione, contatta l'amministratore della tua chiesa per richiedere l'accesso.
+L'accesso amministratore richiede le autorizzazioni appropriate. Se non vedi le opzioni di amministrazione, contatta l'amministratore della tua chiesa per richiedere l'accesso.
 :::
 
-## Cosa puoi fare
+## Cosa Puoi Fare
 
-L'area di amministrazione ti dà il pieno controllo sui tuoi contenuti:
+L'area amministrazione ti dà il controllo completo sui tuoi contenuti:
 
-- **Creare e modificare programmi** -- Configura serie didattiche di primo livello con nomi, descrizioni, immagini e slug.
-- **Gestire studi** -- Organizza gruppi di lezioni correlate all'interno di ciascun programma.
-- **Costruire lezioni** -- Aggiungi singole lezioni con ambienti, sezioni, ruoli e azioni.
-- **Caricare risorse** -- Allega file scaricabili (PDF, schede attività, immagini) a livello di programma, studio o lezione.
-- **Visualizzare statistiche** -- Scopri quali contenuti vengono scaricati, da chi e dove.
-- **Configurare fornitori** -- Collega fornitori di programmi didattici esterni che utilizzano l'Open Lesson Format.
+- **Crea e modifica programmi** -- Configura serie di curriculum di livello superiore.
+- **Gestisci studi** -- Organizza gruppi di lezioni correlate.
+- **Costruisci lezioni** -- Aggiungi lezioni individuali con luoghi, sezioni, ruoli e azioni.
+- **Carica risorse** -- Allega file scaricabili.
+- **Visualizza statistiche** -- Vedi quale contenuto viene scaricato e da chi.
+- **Configura provider** -- Collega provider di curriculum esterni.
+- **Piani dell'anno** -- Pubblica sequenze di settimana 1, 2, 3…
 
-## Gerarchia dei contenuti
+## Gerarchia di Contenuto
 
-Come amministratore, è utile comprendere come sono strutturati i contenuti:
+Come amministratore, è utile capire come il contenuto è strutturato:
 
-1. I **Programmi** contengono uno o più studi.
-2. Gli **Studi** contengono una o più lezioni.
-3. Le **Lezioni** contengono uno o più ambienti (varianti per fascia d'età).
-4. Gli **Ambienti** contengono sezioni, e le sezioni contengono azioni basate sui ruoli.
+1. **Programmi** contengono uno o più studi.
+2. **Studi** contengono una o più lezioni.
+3. **Lezioni** contengono uno o più luoghi (variazioni del gruppo di età).
+4. **Luoghi** contengono sezioni e le sezioni contengono azioni basate sui ruoli.
 
 Ogni livello può avere le proprie risorse scaricabili allegate.
 
-## Passi successivi
+## Passaggi Successivi
 
-- [Gestione dei programmi](./managing-programs.md) -- Creare e configurare programmi
-- [Gestione degli studi](./managing-studies.md) -- Aggiungere studi all'interno di un programma
-- [Gestione delle lezioni](./managing-lessons.md) -- Costruire lezioni con ambienti, sezioni e azioni
-- [Statistiche](./statistics.md) -- Esaminare i dati di download e utilizzo
-- [Fornitori di terze parti](./third-party-providers.md) -- Collegare feed di programmi didattici esterni
+- [Gestione delle Lezioni](./managing-lessons.md) -- Costruisci lezioni con luoghi, sezioni e azioni
+- [Gestione dei Piani dell'Anno](./managing-year-plans.md) -- Pubblica sequenze di settimane

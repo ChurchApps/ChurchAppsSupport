@@ -1,49 +1,45 @@
 ---
-title: "Report di compleanni"
+title: "Elenchi di Compleanni e Anniversari"
 ---
 
-# Report di compleanni
+# Elenchi di Compleanni e Anniversari
 
 <div class="article-intro">
 
-Il Report di compleanni ti aiuta a rimanere in contatto con la tua congregazione mostrando i membri con i compleanni imminenti. Usalo per pianificare celebrazioni, inviare cartoline o fare annunci durante i servizi.
+Hai bisogno di un elenco di tutti coloro con un compleanno o un anniversario in un determinato mese - per il bollettino, annunci o biglietti? La ricerca di persone può filtrare la tua congregazione per **Mese di Nascita** e **Mese di Anniversario** e mostrare le date direttamente nei risultati.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di iniziare</h4>
+<h4>Prima di Iniziare</h4>
 
-- Assicurati che le date di nascita siano inserite nel profilo di ogni persona. Vedi [Aggiungere persone](../people/adding-people.md) per i dettagli.
-- Hai bisogno dei [permessi](../settings/roles-permissions.md) appropriati per accedere ai report
+- Assicurati che le date di nascita (e gli anniversari) siano inseriti nel profilo di ogni persona. Vedi [Aggiunta di Persone](../people/adding-people.md).
+- Hai bisogno del permesso di visualizzare Persone. Vedi [Ruoli e Autorizzazioni](../settings/roles-permissions.md).
 
 </div>
 
-## Esecuzione del report
+## Ottenere un Elenco di Compleanni per un Mese
 
-1. Vai direttamente a **admin.b1.church/reports/birthdays** nel tuo browser (i report non hanno una voce nel menu di navigazione — aggiungere l'indirizzo ai segnalibri è il modo più semplice per tornare).
-2. Scegli il **Mese** che desideri dal menu a discesa. Puoi opzionalmente limitare i risultati a un singolo **Gruppo**.
-3. Fai clic su **Esegui report**. Il report elenca tutti coloro che hanno un compleanno in quel mese, con la loro data di nascita — pronto da leggere direttamente in un bollettino o elenco di annunci.
+1. Apri il **menu della sezione** nell'angolo in alto a sinistra e scegli **Persone**.
+2. Sotto la casella di ricerca, fai clic su **Avanzate**.
+3. Espandi la sezione **Dati Demografici** e spunta **Mese di Nascita**, quindi scegli il mese.
+4. Esegui la ricerca -- tutti coloro con un compleanno quel mese appaiono nei risultati.
+5. Per vedere le date, fai clic sull'icona **colonne** in alto a destra dei risultati e abilita la colonna **Compleanno**. Usa **Esporta** per scaricare l'elenco come foglio di calcolo se preferisci ordinarlo o stamparlo lì.
 
-## Cosa mostra il report
+## Ottenere un Elenco di Anniversari
 
-Il Report di compleanni visualizza:
+Stessi passaggi -- nella sezione **Dati Demografici**, spunta **Mese di Anniversario** invece (o anche), scegli il mese, e abilita la colonna **Anniversario** nei risultati.
 
-- **Compleanno** -- La data del loro compleanno.
-- **Nome** -- Il nome della persona dal tuo database della chiesa.
+## Usi Pratici
 
-I risultati coprono il mese che hai selezionato, rendendo facile vedere chi ha un compleanno in arrivo.
-
-## Usi pratici
-
-- **Annunci settimanali** -- Esegui il report per la settimana in arrivo e includi i compleanni nel tuo bollettino o annunci.
-- **Cartoline di compleanno** -- Genera un elenco per il mese e fai inviare cartoline di compleanno personali dal tuo team.
-- **Leader di piccoli gruppi** -- I leader di gruppo possono eseguire il report per ricordare i compleanni dei membri nel loro gruppo.
-- **Celebrazioni di anniversari** -- Filtra per intervalli di date specifici per pianificare celebrazioni di compleanni importanti.
+- **Bollettini settimanali** -- Esegui l'elenco del mese corrente e leggi i nomi direttamente nel bollettino.
+- **Biglietti di compleanno e anniversario** -- Esporta l'elenco del mese e consegnalo al tuo team di redazione di biglietti.
+- **Pietre miliari** -- Combina con il filtro **Età** per trovare compleanni con pietre miliari.
 
 :::tip
-Esegui questo report all'inizio di ogni mese per pianificare in anticipo. Puoi impostare l'intervallo di date per coprire l'intero mese in modo da avere il tempo di preparare cartoline o annunci.
+Entrambi gli elenchi provengono dai campi data di nascita e anniversario nel profilo di ogni persona -- se qualcuno manca, il loro profilo ha solo bisogno della data aggiunta.
 :::
 
 :::info
-I dati di compleanno provengono dal campo di data di nascita nel profilo di ogni persona. Assicurati che i tuoi [record di iscritti](../people/adding-people.md) siano aggiornati per risultati accurati.
+Le versioni precedenti di B1 Admin avevano una pagina Rapporti separata per i compleanni. Quella pagina è stata ritirata -- i filtri di ricerca di Persone sopra sono il modo attuale, e coprono anche gli anniversari.
 :::

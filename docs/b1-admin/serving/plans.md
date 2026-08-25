@@ -120,3 +120,4 @@ Plans are organized by ministry. Make sure you are on the correct ministry tab b
 - Build out your [Service Order](./service-order.md) with songs, readings, and other elements
 - Add [songs](./songs.md) from your library directly into the service order
 - Use [Tasks](./tasks.md) to assign follow-up action items to team members
+- Display current lesson content on a lobby TV with [Digital Signage](./digital-signage.md)

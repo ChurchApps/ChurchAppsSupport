@@ -1,84 +1,84 @@
----
-title: "Músicas"
+﻿---
+title: "Cânticos"
 ---
 
-# Músicas
+# Cânticos
 
 <div class="article-intro">
 
-A página Músicas gerencia sua biblioteca de canções de adoração. Mantenha todos os detalhes, letras e arranjos de suas canções em um só lugar para que sua equipe de adoração possa se preparar facilmente para próximos serviços e manter um repertório consistente.
+A página Songs gerencia sua biblioteca de cânticos de adoração. Mantenha todos seus detalhes de cântico, letra e arranjos em um lugar para que seu time de adoração possa facilmente se preparar para serviços próximos e manter um repertório consistente.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Navegue para a seção **Serviço** no B1 Admin para acessar a página Músicas
-- Opcionalmente, tenha seus [planos de serviço](./plans.md) configurados para que possa vincular músicas diretamente ao [ordem de serviço](./service-order.md)
+- Navegue para a seção **Serving** em B1 Admin para acessar a página Songs
+- Opcionalmente, tenha seus [planos de serviço](./plans.md) configurados para que você possa vincular cânticos direto na [ordem de serviço](./service-order.md)
 
 </div>
 
-## Navegando por Sua Biblioteca de Canções
+## Navegando Pela Sua Biblioteca de Cânticos
 
-Quando você abre a página **Músicas**, suas canções são exibidas como cartões. Cada cartão mostra a imagem em miniatura da canção, título, artista e duração. Percorra a biblioteca ou use a pesquisa para encontrar o que você precisa.
+Quando você abre a página **Songs**, seus cânticos são exibidos como cartões. Cada cartão mostra a imagem de miniatura do cântico, título, artista e duração. Role através da biblioteca ou use busca para encontrar o que precisa.
 
-## Procurando Canções
+## Buscando Cânticos
 
-1. Clique no botão **Pesquisa** na página Músicas.
-2. Digite um **título** de canção ou nome do **artista**.
-3. Os resultados serão filtrados conforme você digita, mostrando canções correspondentes de sua biblioteca.
+1. Clique no botão **Search** na página Songs.
+2. Digite um título de cântico ou nome de **artista**.
+3. Os resultados filtrarão enquanto você digita, mostrando cânticos correspondentes de sua biblioteca.
 
-## Adicionando uma Canção
+## Adicionando um Cântico
 
-1. Clique em **Adicionar Canção** na página Músicas.
-2. Procure o banco de dados de canções externo por título ou artista.
-3. Selecione a canção que deseja adicionar.
-4. A canção será adicionada à sua biblioteca com seus detalhes básicos pré-preenchidos.
+1. Clique em **Add Song** na página Songs.
+2. Busque no banco de dados externo de cânticos por título ou artista.
+3. Selecione o cântico que você quer adicionar.
+4. O cântico será adicionado à sua biblioteca com seus detalhes básicos pré-preenchidos.
 
 :::tip
-Depois de adicionar uma canção, clique nela para revisar e atualizar seus detalhes, adicionar arranjos ou anexar links externos como vídeos do YouTube ou tabelas de acordes.
+Depois de adicionar um cântico, clique nele para revisar e atualizar seus detalhes, adicionar arranjos ou anexar links externos como vídeos YouTube ou partituras de acordos.
 :::
 
-## Visualizando e Editando uma Canção
+## Visualizando e Editando um Cântico
 
-Clique em qualquer cartão de canção para abrir sua página de detalhes. De aqui você pode:
+Clique em qualquer cartão de cântico para abrir sua página de detalhe. A partir daqui você pode:
 
-- **Editar detalhes da canção** -- Atualize o título, artista, duração e outros metadados.
-- **Gerenciar arranjos** -- Cada canção pode ter múltiplos arranjos (por exemplo, chaves diferentes ou versões). Adicione, edite ou remova arranjos conforme necessário.
-- **Adicionar letras** -- Digite ou atualize as letras para cada arranjo.
-- **Definir a chave** -- Especifique a chave musical para cada arranjo usando o seletor de chave ao lado das letras. Mudar a chave transpõe os acordes exibidos imediatamente, tanto na página do arranjo quanto ao abrir a canção de um plano de serviço, para que sua equipe sempre veja acordes na chave que estão realmente tocando.
-- **Adicionar links externos** -- Anexe links a recursos como vídeos do YouTube, tabelas de acordes ou partituras hospedadas em outro lugar.
+- **Editar detalhes de cântico** -- Atualize o título, artista, duração e outros metadados.
+- **Gerenciar arranjos** -- Cada cântico pode ter múltiplos arranjos (por exemplo, chaves diferentes ou versões). Adicione, edite ou remova arranjos conforme necessário.
+- **Adicionar letra** -- Digite ou atualize a letra para cada arranjo usando notação ChordPro (por exemplo, `[G]Amazing grace`). Uma visualização ao vivo próxima ao editor renderiza o gráfico de acordes formatado enquanto você digita, para que você possa ver exatamente o que seu time verá.
+- **Defina a chave** -- Especifique a chave musical para cada arranjo usando o seletor de chave próximo à letra. Alterar a chave transpõe os acordes exibidos imediatamente, tanto na página de arranjo quanto ao abrir o cântico de um plano de serviço, para que seu time sempre veja acordes na chave em que estão realmente tocando.
+- **Adicionar links externos** -- Anexe links a recursos como vídeos YouTube, partituras de acordes ou partituras hospedadas em outro lugar.
 
 ## Arranjos
 
-Um arranjo representa uma versão distinta de uma canção — por exemplo, uma versão moderna mais rápida versus uma versão acústica mais lenta, ou a mesma canção em uma chave diferente para uma equipe diferente. Cada arranjo da mesma canção compartilha o título e artista da canção, mas tem suas próprias configurações independentes:
+Um arranjo representa uma versão distinta de um cântico — por exemplo, uma versão moderna mais rápida versus uma tomada acústica mais lenta, ou o mesmo cântico em uma chave diferente para um time diferente. Cada arranjo do mesmo cântico compartilha o título e artista do cântico mas tem seus próprios configurações independentes:
 
-- **Chave** — a chave musical em que o arranjo é executado
-- **BPM** — andamento em batidas por minuto
-- **Comprimento** — duração em segundos
-- **Medida** — assinatura de tempo (por exemplo, 4/4, 3/4, 6/8)
-- **Sequência** — a estrutura de acordes/seção (por exemplo, Intro → Verso → Refrão → Ponte)
-- **Letras** — para exibição ou projeção
-- **Links externos** -- tabelas de acordes, gravações do YouTube, partituras ou outros recursos
+- **Key** — a chave musical em que o arranjo é executado
+- **BPM** — tempo em batidas por minuto
+- **Length** — duração em segundos
+- **Meter** — assinatura de tempo (por exemplo, 4/4, 3/4, 6/8)
+- **Sequence** — a estrutura de acordes/seção (por exemplo, Intro → Verse → Chorus → Bridge)
+- **Lyrics** — para exibição ou projeção
+- **External links** — partituras de acordes, gravações YouTube, partituras ou outros recursos
 
-Quando você adiciona uma canção a uma [Ordem de Serviço](./service-order.md), você pode escolher qual arranjo usar para aquele serviço específico, para que sua equipe sempre ensaie e toque a versão correta.
+Quando você adiciona um cântico a uma [Service Order](./service-order.md), você pode escolher qual arranjo usar para aquele serviço específico, para que seu time sempre ensaie e toque a versão correta.
 
 ### Áudio de Ensaio
 
-Administradores de adoração podem anexar uma faixa de áudio de ensaio a um arranjo para que a equipe possa ouvir antes da prática:
+Admins de adoração podem anexar uma faixa de áudio de ensaio a um arranjo para que o time possa ouvir antes da prática:
 
-1. Abra a canção e selecione o arranjo.
-2. Clique em **Carregar Áudio**.
-3. Escolha um arquivo MP3, M4A ou AAC (até 25 MB -- WAV não é aceito, para manter o uso de armazenamento gerenciável).
-4. Salve. A faixa é reproduzida embutida em qualquer lugar que o arranjo apareça -- na página do arranjo em B1 Admin e no plano de serviço quando um membro da equipe o abre no portal de membros b1.church. Itens do plano com áudio mostram um ícone de nota musical em vez de uma miniatura.
+1. Abra o cântico e selecione o arranjo.
+2. Clique em **Upload Audio**.
+3. Escolha um arquivo MP3, M4A ou AAC (até 25 MB -- WAV não é aceito para manter o uso de armazenamento gerenciável).
+4. Salve. A faixa toca inline em qualquer lugar que aquele arranjo apareça -- na página de arranjo em B1 Admin e no plano de serviço quando um membro do time o abre no portal de membro B1.church. Itens de plano com áudio mostram um ícone de nota musical em vez de uma miniatura.
 
 Deletar o arranjo também remove seu arquivo de áudio carregado.
 
 :::info
-Canções de sua biblioteca podem ser adicionadas diretamente a uma [Ordem de Serviço](./service-order.md) dentro de um plano, vinculando os detalhes da canção e o arranjo escolhido para aquele serviço específico.
+Cânticos de sua biblioteca podem ser adicionados direto a uma [Service Order](./service-order.md) dentro de um plano, vinculando os detalhes do cântico e o arranjo escolhido a aquele serviço específico.
 :::
 
-## Próximos Passos
+## Próximas Etapas
 
-- Adicione canções ao seu [Ordem de Serviço](./service-order.md) ao criar um [plano de serviço](./plans.md)
-- Coordene com sua equipe de adoração usando [Tarefas](./tasks.md) para preparação e prática de canções
+- Adicione cânticos à sua [Service Order](./service-order.md) quando construindo um [plano de serviço](./plans.md)
+- Coordene com seu time de adoração usando [Tasks](./tasks.md) para preparação e prática de cânticos

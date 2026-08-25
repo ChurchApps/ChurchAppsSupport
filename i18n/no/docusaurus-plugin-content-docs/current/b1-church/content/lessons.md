@@ -1,45 +1,40 @@
----
-title: "Leksjoner"
+﻿---
+title: "Leksjoner (Avskrevet)"
 ---
 
-# Leksjoner
+# Leksjoner (Avskrevet)
+
+:::danger Lessons-fanen er erstattet av FreePlay
+Den innebygde **Lessons**-fanen på B1.church har blitt avskrevet. Læreplanspillbakspilling fra Lessons.church leveres nå gjennom **[FreePlay](/docs/freeplay/)** -- ChurchApps gratis TV-app for klasserom, Fire TV, Apple TV og Android TV -- som tilbyr offline-avspilling, klasserompairing og en TV-fjernkontroll-opplevelse den innebygde fanen ikke kunne tilby.
+
+For å bla gjennom, planlegge eller redigere læreplan direkte, logg inn på [Lessons.church](https://lessons.church) i nettleseren. For å spille av leksjoner på en klasserom-TV, installer [FreePlay](/docs/freeplay/getting-started/) på TV-enheten.
+
+Foreldre i grupper knyttet til en leskjonplantype i B1Admin ser **denne ukens leksjon** på [gruppedetaljersiden](/docs/b1-church/groups/group-details.md) -- ikke på denne avskrevne fanen.
+:::
 
 <div class="article-intro">
 
-**Leksjoner**-fanen gir deg tilgang til kirkens undervisningsmateriell og læringsinnhold. Innholdet leveres gjennom Lessons.church-plattformen og er bygget direkte inn i B1.church, slik at du ikke trenger å navigere til et separat nettsted.
+**Lessons**-fanen ga deg tilgang til kirkens lærebok og læremateriell. Innhold ble levert gjennom Lessons.church-plattformen og innebygd direkte innenfor B1.church, slik at du ikke trengte å navigere til et separat nettsted.
 
 </div>
 
 <div class="prereqs">
-<h4>Før Du Begynner</h4>
+<h4>Før du begynner</h4>
 
-- Du må være [logget inn](../getting-started/logging-in.md) på B1.church-kontoen din. Leksjoner-fanen finnes i medlemsområdet og krever autentisering.
-- Kirken din må ha konfigurert undervisningsmateriell gjennom Lessons.church.
+- Du må være [logget inn](../getting-started/logging-in.md) på B1.church-kontoen. Lessons-fanen er i medlemsområdet og krever autentisering.
+- Kirken må ha konfigurert lærebok gjennom Lessons.church.
 
 </div>
 
-## Tilgang til Leksjoner
+## Tilgang til leksjoner
 
-1. Logg inn på B1.church-medlemsportalen din.
-2. Klikk på **Leksjoner**-fanen i [medlemsnavigasjonen](../getting-started/navigating.md).
-3. Lessons.church-innholdet lastes direkte inn på siden.
+1. Logg inn på B1.church medlemsportalen.
+2. Klikk **Lessons**-fanen i [medlem navigasjonen](../getting-started/navigating.md).
+3. Lessons.church-innholdet laster direkte på siden.
 
-Innloggingen din overføres automatisk når du åpner Leksjoner-fanen. Du trenger ikke å logge inn separat på Lessons.church.
-
-## Hva Du Kan Gjøre
-
-Inne i Leksjoner-fanen kan du bla gjennom undervisningsmateriellet kirken din har gjort tilgjengelig. Avhengig av hva kirken din har satt opp, kan du finne:
-
-- **Leksjonsplaner** -- Strukturerte oppsett med seksjoner og aktiviteter
-- **Presentasjoner og media** -- Lysbilder, videoer og bilder som følger leksjonene
-- **Nedlastbare ressurser** -- Filer og tillegg for videre studier
-
-Du kan klikke på individuelle seksjoner innen en leksjon for å se innholdet i et dialogvindu. Bruk **Tilbake**-knappen for å gå tilbake til seksjonslisten, eller **Lukk** for å lukke dialogen.
-
-:::tip
-Leksjoner delt med gruppene dine vil også vises på [Tidslinjen](../community/timeline.md) din, noe som gjør det enkelt å finne tildelt undervisningsmateriell uten å navigere direkte til Leksjoner-fanen.
-:::
+Loggen din kjører over automatisk når du åpner Lessons-fanen. Du trenger ikke å logge inn på nytt på Lessons.church separat.
 
 ## Tilgjengelighet
 
-Leksjoner-fanen vises når kirken din har konfigurert undervisningsmateriell gjennom Lessons.church. Hvis du ikke ser en **Leksjoner**-fane i medlemsnavigasjonen, har kanskje ikke kirken din satt opp leksjonsinnhold. Kontakt kirkens administrator for mer informasjon.
+Lessons-fanen vises når kirken har konfigurert lærebok gjennom Lessons.church. Hvis du ikke ser en **Lessons**-fane i medlemsnavigasjonen, har kirken kanskje ikke leksjoninnhold satt opp. Kontakt kirkeadministratoren for mer informasjon.
+

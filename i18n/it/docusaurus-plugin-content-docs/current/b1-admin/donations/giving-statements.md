@@ -1,56 +1,56 @@
 ---
-title: "Dichiarazioni di donazione"
+title: "Dichiarazioni di Donazione"
 ---
 
-# Dichiarazioni di donazione
+# Dichiarazioni di Donazione
 
 <div class="article-intro">
 
-Alla fine di ogni anno, i tuoi donatori hanno bisogno di un riepilogo delle loro donazioni deducibili fiscalmente per i loro registri. B1 Admin rende facile generare queste dichiarazioni per tutti i donatori contemporaneamente, risparmiandoti ore di lavoro manuale.
+Alla fine di ogni anno, i tuoi donatori hanno bisogno di un riassunto delle loro donazioni deducibili da imposte per i loro record. B1 Admin rende facile generare queste dichiarazioni per tutti i donatori contemporaneamente, risparmiandoti ore di lavoro manuale.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di iniziare</h4>
+<h4>Prima di Iniziare</h4>
 
-- Verifica che i tuoi [fondi](funds.md) siano correttamente contrassegnati come **Deducibili fiscalmente** -- solo le donazioni a fondi deducibili fiscalmente appaiono nelle dichiarazioni
-- Assicurati che tutte le donazioni siano state [registrate](recording-donations.md) e che tutte le transazioni online siano state [importate da Stripe](stripe-import.md)
+- Verifica che i tuoi [fondi](funds.md) siano contrassegnati correttamente come **Deducibile da Imposte** -- solo le donazioni ai fondi deducibili da imposte appaiono sulle dichiarazioni
+- Assicurati che tutte le donazioni siano state [registrate](recording-donations.md) e che qualsiasi transazione online sia stata [importata da Stripe](stripe-import.md)
 
 </div>
 
-## Accedere alle dichiarazioni di donazione
+## Accesso alle Dichiarazioni di Donazione
 
-1. In **B1 Admin**, clicca **Donazioni** nella barra laterale.
-2. Clicca **Dichiarazioni**.
+1. In **B1 Admin**, apri il **menu della sezione** nell'angolo in alto a sinistra e scegli **Donazioni**.
+2. Fai clic su **Dichiarazioni**.
 
-## Generare le dichiarazioni
+## Generazione di Dichiarazioni
 
-1. Seleziona l'**anno** dal menu a discesa in cima alla pagina. Puoi scegliere l'anno corrente o uno qualsiasi dei cinque anni precedenti.
-2. La pagina mostra le statistiche di riepilogo per quell'anno, tra cui:
-   - **Totale donatori** -- il numero di persone che hanno donato
-   - **Totale donazioni** -- il numero di record di donazione individuali
-   - **Importo totale** -- l'importo complessivo in dollari di tutte le donazioni
+1. Seleziona l'**anno** dal menu a discesa nella parte superiore della pagina. Puoi scegliere l'anno corrente o uno qualsiasi degli ultimi cinque anni.
+2. La pagina visualizza le statistiche di riepilogo per quell'anno, incluso:
+   - **Donatori totali** -- il numero di persone che hanno donato
+   - **Donazioni totali** -- il numero di record di donazione individuali
+   - **Importo totale** -- l'importo in dollari combinato di tutte le donazioni
 
-## Scaricare le dichiarazioni
+## Download delle Dichiarazioni
 
-Hai due opzioni per consegnare le dichiarazioni ai tuoi donatori:
+Hai due opzioni per fornire dichiarazioni ai tuoi donatori:
 
-### Scaricare come file CSV
+### Scarica come File CSV
 
-Clicca **Scarica ZIP** per scaricare un file ZIP contenente un singolo file CSV per ogni donatore. Questo è utile se vuoi inviare le dichiarazioni individualmente via email o importarle in un altro sistema.
+Fai clic su **Scarica ZIP** per scaricare un file ZIP contenente un file CSV individuale per ogni donatore. Questo è utile se desideri inviare dichiarazioni individualmente via email o importarle in un altro sistema.
 
-### Stampare tutte le dichiarazioni
+### Stampa Tutte le Dichiarazioni
 
-Clicca **Stampa tutto** per aprire una visualizzazione stampabile della dichiarazione di ogni donatore nel tuo browser. Da lì, usa la funzione di stampa del tuo browser per inviarle alla stampante. Ogni dichiarazione inizia su una nuova pagina, pronta per essere piegata e spedita.
+Fai clic su **Stampa Tutto** per aprire una visualizzazione stampabile di ogni dichiarazione del donatore nel tuo browser. Da lì, usa la funzione di stampa del tuo browser per inviarle a una stampante. Ogni dichiarazione inizia su una nuova pagina così sono pronte a essere piegate e spedite.
 
 :::tip
-Genera le tue dichiarazioni all'inizio di gennaio, quando i tuoi registri sono ancora freschi. Verifica che i tuoi fondi siano correttamente contrassegnati come deducibili fiscalmente prima di generare le dichiarazioni -- solo le donazioni a fondi deducibili fiscalmente sono incluse.
+Esegui le tue dichiarazioni all'inizio di gennaio mentre i tuoi record sono freschi. Verifica che i tuoi fondi siano contrassegnati correttamente come deducibili da imposte prima di generare dichiarazioni -- solo le donazioni ai fondi deducibili da imposte sono incluse.
 :::
 
 :::info
-Le dichiarazioni di donazione includono solo le donazioni assegnate a fondi che hanno l'impostazione **Deducibile fiscalmente** abilitata. Se un fondo non è contrassegnato come deducibile fiscalmente, le sue donazioni non appariranno nella dichiarazione. Puoi gestire questa impostazione nella pagina [Fondi](funds.md).
+Le dichiarazioni di donazione includono solo donazioni assegnate a fondi che hanno l'impostazione **Deducibile da Imposte** abilitata. Se un fondo non è contrassegnato come deducibile da imposte, le sue donazioni non appariranno sulla dichiarazione. Puoi gestire questa impostazione nella pagina [Fondi](funds.md).
 :::
 
-## Prossimi passi
+## Passaggi Successivi
 
-Se hai bisogno di esaminare i dettagli delle donazioni prima di generare le dichiarazioni, visita la pagina [Report donazioni](donation-reports.md) o controlla i singoli [lotti](batches.md).
+Se hai bisogno di rivedere i dettagli delle donazioni prima di generare dichiarazioni, visita la pagina [Rapporti sulle Donazioni](donation-reports.md) o controlla i singoli [lotti](batches.md).

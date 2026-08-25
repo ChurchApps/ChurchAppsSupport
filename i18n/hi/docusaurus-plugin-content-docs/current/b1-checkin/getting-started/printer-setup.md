@@ -1,13 +1,7 @@
+﻿---
+title: "प्रिंटर सेटअप"
 ---
-title: "Printer Setup"
----
 
-# Printer Setup
+# प्रिंटर सेटअप
 
-<div class="article-intro">
-
-यह page ChurchApps documentation का हिस्सा है।
-
-</div>
-
-अधिक जानकारी के लिए [मुख्य documentation](https://churchapps.org) देखें।
+B1 Church Checkin नेटवर्क लेबल प्रिंटर पर नाम टैग और पिकअप पर्ची प्रिंट कर सकता है।

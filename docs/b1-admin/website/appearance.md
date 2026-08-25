@@ -95,6 +95,10 @@ Add your **Google Analytics 4 Measurement ID** in the Style Settings panel to tr
 Custom CSS is powerful but can break your site's layout if used incorrectly. Most churches can achieve the look they want using the built-in color, font, and spacing controls. Only use custom CSS if you are comfortable with web development.
 :::
 
+:::info
+Your site enforces a Content Security Policy that blocks inline scripts from any other source. The **Custom JavaScript** field is the one trusted exception -- code you save there runs as-is, so only paste scripts from sources you trust (analytics tags, chat widgets, and similar embeds).
+:::
+
 ## Style Themes
 
 If you want a quick starting point, the **Suggested Palettes** in the Color Palette section offer pre-built themes that set coordinated colors in one click. You can always fine-tune individual settings after applying a theme.

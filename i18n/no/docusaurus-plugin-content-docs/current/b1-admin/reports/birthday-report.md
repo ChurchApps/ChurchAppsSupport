@@ -1,49 +1,42 @@
----
-title: "Bursdagsrapport"
+﻿---
+title: "Fødsels- og jubileumslister"
 ---
 
-# Bursdagsrapport
+# Fødsels- og jubileumslister
 
 <div class="article-intro">
 
-Bursdagsrapporten hjelper deg med å holde kontakten med menigheten ved å vise medlemmer med kommende bursdager. Bruk den til å planlegge feiringer, sende kort eller gjøre kunngjøringer under tjenestene.
+Trenger du en liste over alle med fødselsdag eller jubileum i en gitt måned -- for bulletinen, kunngjøringer eller kort? People-søket kan filtrere forsamlingen din etter **Birth Month** og **Anniversary Month** og vise datoer rett i resultatene.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Sørg for at fødselsdatoer er oppført på hver persons profil. Se [Legge til personer](../people/adding-people.md) for detaljer.
-- Du trenger de riktige [tillatelsene](../settings/roles-permissions.md) for å få tilgang til rapporter
+- Sørg for at fødselsdatoer (og jubileer) er anført på hver persons profil. Se [Adding People](../people/adding-people.md).
+- Du trenger tillatelse til å vise People. Se [Roles & Permissions](../settings/roles-permissions.md).
 
 </div>
 
-## Kjøre rapporten
+## Henting av en fødselslistre for en måned
 
-1. Gå direkte til **admin.b1.church/reports/birthdays** i nettleseren din (rapporter har ingen oppføring i navigasjonsmenyen — bokmerking av adressen er den enkleste måten å komme tilbake på).
-2. Velg **måneden** du vil ha fra rullegardinlisten. Du kan valgfritt begrense resultatene til en enkelt **gruppe**.
-3. Klikk **Kjør rapport**. Rapporten viser alle med bursdagen i den måneden, med deres fødselsdato — klar til å lese direkte inn i en bulletin eller kunngjøringsliste.
+1. Åpne **seksjonsmenyen** i øvre venstre hjørne og velg **People**.
+2. Under søkeboxen, klikk **Advanced**.
+3. Utvid **Demographics**-seksjonen og sjekk **Birth Month**, deretter velg måneden.
+4. Kjør søket -- alle med fødselsdag den måneden vises i resultatene.
+5. For å se datoene, klikk **columns icon** øverst til høyre på resultatene og aktiver **Birthday**-kolonnen.
 
-## Hva rapporten viser
+## Henting av jubileumslist
 
-Bursdagsrapporten viser:
+Samme trinn -- i **Demographics**-seksjonen, sjekk **Anniversary Month** i stedet (eller også), velg måneden, og aktiver **Anniversary**-kolonnen i resultatene.
 
-- **Bursdagen** -- Datoen for deres bursdagen.
-- **Navn** -- Personens navn fra kirkadatabasen din.
+## Praktisk bruk
 
-Resultatene dekker måneden du valgte, noe som gjør det enkelt å se hvem som har bursdagen sin i vente.
-
-## Praktiske bruksområder
-
-- **Ukentlige kunngjøringer** -- Kjør rapporten for den kommende uken og inkluder bursdager i bulletinen eller kunngjøringene.
-- **Bursdag kort** -- Generer en liste for måneden og ha teamet ditt sende personlige bursdagskort.
-- **Smågruppeleiere** -- Gruppeleiere kan kjøre rapporten for å huske bursdagen til medlemmer i gruppen deres.
-- **Milepælfeiring** -- Filter for spesifikke datoområder for å planlegge milepælfeiringer av bursdager.
+- **Ukentlige bulletiner** -- Kjør gjeldende månedsliste og les navnene direkte inn i bulletinen.
+- **Fødsels- og jubileumskort** -- Eksporter månedens liste og gi den til kortskarivningsgruppen.
+- **Milepæler** -- Kombiner med **Age**-filteret for å finne milepæls fødselsdager.
 
 :::tip
-Kjør denne rapporten ved begynnelsen av hver måned for å planlegge på forhånd. Du kan sette datoområdet til å dekke hele måneden slik at du har tid til å forberede kort eller kunngjøringer.
+Begge listene kommer fra fødselsdatos- og jubileumsfeltene på hver persons profil -- hvis noen mangler, trenger profilen bare datoen lagt til.
 :::
 
-:::info
-Bursdagsdata kommer fra fødselsdatofelt på hver persons profil. Sørg for at [medlemskapspostene dine](../people/adding-people.md) er oppdatert for nøyaktige resultater.
-:::

@@ -1,72 +1,72 @@
 ---
-title: "Calendario Disponibilità"
+title: "Calendario di Disponibilità"
 ---
 
-# Calendario Disponibilità
+# Calendario di Disponibilità
 
 <div class="article-intro">
 
-Il Calendario Disponibilità ti offre una visione d'insieme di tutte le prenotazioni di sale e risorse della tua chiesa. Da qui puoi vedere cosa è in programma, individuare i conflitti prima che si verifichino e prenotare direttamente una sala o una risorsa per qualsiasi evento.
+Il Calendario di Disponibilità ti dà una visione d'insieme di tutte le prenotazioni di stanze e risorse nella tua chiesa. Da qui puoi vedere cosa è programmato, individuare i conflitti prima che accadano, e prenotare una stanza o una risorsa per qualsiasi evento direttamente.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di iniziare</h4>
+<h4>Prima di Iniziare</h4>
 
-- Configura almeno una [sala o risorsa](rooms-resources) nella sezione Sale e Risorse
-- Hai bisogno dell'accesso in modifica alla sezione Calendari in B1 Admin
+- Configura almeno una [stanza o risorsa](rooms-resources) nella sezione Stanze e Risorse
+- Hai bisogno dell'accesso di modifica alla sezione Calendari in B1 Admin
 
 </div>
 
-## Apertura del Calendario Disponibilità
+## Apertura del Calendario di Disponibilità
 
-In B1 Admin, vai su **Calendari** e seleziona **Disponibilità** dalla barra laterale.
+In B1 Admin, apri il **menu della sezione** nell'angolo in alto a sinistra e scegli **Calendari**, quindi seleziona **Disponibilità**.
 
-## Lettura del calendario
+## Lettura del Calendario
 
-Il calendario mostra il mese corrente per impostazione predefinita. Puoi navigare avanti e indietro con le frecce in alto, oppure passare tra visualizzazione mensile, settimanale e giornaliera.
+Il calendario visualizza il mese corrente per impostazione predefinita. Puoi navigare avanti e indietro con le frecce nella parte superiore, o passare tra le visualizzazioni mese, settimana e giorno.
 
 Ogni evento è codificato a colori in base allo stato della prenotazione:
 
 | Colore | Significato |
 |-------|---------|
 | Verde | Approvato |
-| Arancione | In attesa di approvazione |
+| Arancione | In sospeso per l'approvazione |
 | Grigio | Bloccato (non disponibile) |
 
-Passando il mouse sopra un evento vengono mostrati il titolo dell'evento e la sala o risorsa a cui è collegato.
+Passando il mouse su un evento viene visualizzato il titolo dell'evento e la stanza o risorsa a cui è collegato.
 
-## Filtraggio per sala o risorsa
+## Filtro per Stanza o Risorsa
 
-Usa il menu a tendina **Filtro** in alto a sinistra per restringere il calendario a una singola sala o risorsa. Seleziona **Tutte le sale e risorse** per tornare alla visualizzazione completa.
+Usa il menu a tendina **Filtro** nella parte superiore sinistra per restringere il calendario a una singola stanza o risorsa. Seleziona **Tutte le Stanze e Risorse** per tornare alla visualizzazione completa.
 
-## Prenotazione di una sala o risorsa
+## Prenotazione di una Stanza o Risorsa
 
 1. Fai clic sul pulsante **Prenota** nell'angolo in alto a destra della pagina.
-2. Nella finestra di dialogo che si apre, compila i dettagli dell'evento:
+2. Nel dialogo che si apre, compila i dettagli dell'evento:
    - **Titolo** — il nome dell'evento
    - **Inizio** e **Fine** data/ora
    - **Visibilità** — Pubblica o Privata
-   - **Sale** — seleziona una o più sale da riservare
-   - **Risorse** — seleziona una o più risorse da riservare
-3. Facoltativamente imposta gli orari di **Allestimento** e **Smontaggio** (in minuti). Questi aggiungono un margine alla prenotazione su entrambi i lati in modo che lo spazio sia riservato per l'allestimento e la pulizia, anche se gli orari di inizio/fine dell'evento restano invariati.
-4. Per ripetere la prenotazione, seleziona **Si ripete** e configura la ricorrenza:
+   - **Stanze** — seleziona una o più stanze da prenotare
+   - **Risorse** — seleziona una o più risorse da prenotare
+3. Facoltativamente imposta i tempi di **Setup** e **Teardown** (in minuti). Questi riempiono la prenotazione su entrambi i lati in modo che lo spazio sia riservato per la configurazione e la pulizia, anche se i tempi di inizio/fine dell'evento rimangono gli stessi.
+4. Per ripetere la prenotazione, spunta **Ripete** e configura la ricorrenza:
    - **Ripeti ogni** -- imposta l'intervallo (ad esempio, ogni 2 settimane).
-   - **Frequenza** -- Giornaliera, Settimanale o Mensile. Settimanale ti permette di scegliere giorni specifici della settimana; Mensile ti permette di scegliere un giorno fisso del mese o uno schema relativo come "il secondo martedì".
-   - **Termina** -- Mai, in una data specifica, oppure dopo un numero prestabilito di occorrenze.
-5. Per specificare una finestra di prenotazione personalizzata (diversa dall'inizio/fine dell'evento), attiva **Finestra di prenotazione personalizzata** e inserisci gli orari di inizio e fine della finestra. Usa questa opzione quando una sala deve essere accessibile al di fuori degli orari indicati dell'evento.
+   - **Frequenza** -- Giornaliero, Settimanale o Mensile. Settimanale ti permette di scegliere giorni specifici della settimana; Mensile ti permette di scegliere un giorno fisso del mese o un modello relativo come "il secondo martedì".
+   - **Termina** -- Mai, in una data specifica, o dopo un numero impostato di occorrenze.
+5. Per specificare una finestra di prenotazione personalizzata (diversa dall'inizio/fine dell'evento), attiva **Finestra di Prenotazione Personalizzata** e inserisci i tempi di inizio e fine della finestra. Usala quando una stanza deve essere accessibile al di fuori dell'orario elencato dell'evento.
 6. Fai clic su **Salva** per inviare la prenotazione.
 
 :::info
-Se la sala o risorsa ha un **Gruppo di approvazione** configurato, la prenotazione apparirà come **In attesa** finché un leader di quel gruppo non la approva. Consulta [Approvazioni del calendario](approvals) per il flusso di approvazione.
+Se la stanza o risorsa ha un **Gruppo di Approvazione** configurato, la prenotazione apparirà come **In Sospeso** fino a quando un leader di quel gruppo non l'approva. Vedi [Approvazioni del Calendario](approvals) per il flusso di lavoro di approvazione.
 :::
 
 :::tip
-Il calendario evidenzierà eventuali conflitti prima che tu salvi. Se vedi un avviso di conflitto, modifica gli orari o scegli una sala diversa.
+Il calendario evidenzierà tutti i conflitti prima di salvare. Se vedi un avviso di conflitto, regola i tuoi orari o scegli una stanza diversa.
 :::
 
-## Articoli correlati
+## Articoli Correlati
 
-- [Sale, Risorse e Programmazione](rooms-resources) — configura spazi prenotabili e attrezzature
-- [Approvazioni del calendario](approvals) — approva o rifiuta le richieste di prenotazione
-- [Creazione dei calendari](creating-calendars) — gestisci i calendari degli eventi
+- [Stanze, Risorse e Pianificazione](rooms-resources) — configura spazi e attrezzature prenotabili
+- [Approvazioni del Calendario](approvals) — approva o rifiuta le richieste di prenotazione
+- [Creazione di Calendari](creating-calendars) — gestisci i calendari degli eventi

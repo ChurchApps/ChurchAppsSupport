@@ -1,49 +1,45 @@
----
-title: "Rapport d'anniversaire"
+﻿---
+title: "Listes d'anniversaires et d'anniversaires"
 ---
 
-# Rapport d'anniversaire
+# Listes d'anniversaires et d'anniversaires
 
 <div class="article-intro">
 
-Le rapport d'anniversaire vous aide à rester connecté avec votre congrégation en montrant les membres avec les anniversaires à venir. Utilisez-le pour planifier des célébrations, envoyer des cartes ou faire des annonces pendant les services.
+Besoin d'une liste de tous ceux qui ont un anniversaire ou un anniversaire dans un mois donné -- pour le bulletin, les annonces ou les cartes ? La recherche Personnes peut filtrer votre congrégation par **Mois de naissance** et **Mois d'anniversaire** et afficher les dates directement dans les résultats.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Assurez-vous que les dates de naissance sont entrées sur le profil de chaque personne. Voir [Ajouter des personnes](../people/adding-people.md) pour plus de détails.
-- Vous devez avoir les [permissions](../settings/roles-permissions.md) appropriées pour accéder aux rapports
+- Assurez-vous que les dates de naissance (et les anniversaires) sont entrées sur le profil de chaque personne. Consultez [Ajout de personnes](../people/adding-people.md).
+- Vous avez besoin de la permission d'afficher les personnes. Consultez [Rôles et permissions](../settings/roles-permissions.md).
 
 </div>
 
-## Exécution du rapport
+## Obtenir une liste d'anniversaires pour un mois
 
-1. Allez directement à **admin.b1.church/reports/birthdays** dans votre navigateur (les rapports n'ont pas d'entrée dans le menu de navigation — mettre en signet l'adresse est le moyen le plus facile d'y revenir).
-2. Choisissez le **Mois** que vous voulez dans la liste déroulante. Vous pouvez optionnellement limiter les résultats à un seul **Groupe**.
-3. Cliquez sur **Exécuter le rapport**. Le rapport liste tout le monde avec un anniversaire dans ce mois, avec leur date de naissance — prêt à lire directement dans un bulletin ou une liste d'annonces.
+1. Ouvrez le **menu de section** dans le coin supérieur gauche et choisissez **Personnes**.
+2. Sous la boîte de recherche, cliquez sur **Avancé**.
+3. Développez la section **Démographie** et cochez **Mois de naissance**, puis choisissez le mois.
+4. Exécutez la recherche -- tous les anniversaires de ce mois apparaissent dans les résultats.
+5. Pour voir les dates, cliquez sur l'**icône des colonnes** en haut à droite des résultats et activez la colonne **Anniversaire**. Utilisez **Exporter** pour télécharger la liste sous forme de feuille de calcul si vous préférez la trier ou l'imprimer là-bas.
 
-## Ce que le rapport affiche
+## Obtenir une liste d'anniversaires
 
-Le rapport d'anniversaire affiche :
-
-- **Anniversaire** -- La date de leur anniversaire.
-- **Nom** -- Le nom de la personne de votre base de données d'église.
-
-Les résultats couvrent le mois que vous avez sélectionné, ce qui facilite la visualisation de qui a un anniversaire à venir.
+Mêmes étapes -- dans la section **Démographie**, cochez **Mois d'anniversaire** à la place (ou aussi), choisissez le mois, et activez la colonne **Anniversaire** dans les résultats.
 
 ## Utilisations pratiques
 
-- **Annonces hebdomadaires** -- Exécutez le rapport pour la semaine à venir et incluez les anniversaires dans votre bulletin ou vos annonces.
-- **Cartes d'anniversaire** -- Générez une liste pour le mois et demandez à votre équipe d'envoyer des cartes d'anniversaire personnelles.
-- **Animateurs de petits groupes** -- Les animateurs de groupe peuvent exécuter le rapport pour se souvenir des anniversaires des membres de leur groupe.
-- **Célébrations de jalons** -- Filtrez des plages de dates spécifiques pour planifier les célébrations d'anniversaires de jalons.
+- **Bulletins hebdomadaires** -- Exécutez la liste du mois en cours et lisez les noms directement dans le bulletin.
+- **Cartes d'anniversaire et d'anniversaire** -- Exportez la liste du mois et remettez-la à votre équipe de rédaction de cartes.
+- **Jalons** -- Combinez avec le filtre **Âge** pour trouver les anniversaires importants.
 
 :::tip
-Exécutez ce rapport au début de chaque mois pour planifier à l'avance. Vous pouvez définir la plage de dates pour couvrir le mois entier afin d'avoir le temps de préparer des cartes ou des annonces.
+Les deux listes proviennent de la date de naissance et des champs d'anniversaire sur le profil de chaque personne -- si quelqu'un manque, son profil a juste besoin de la date ajoutée.
 :::
 
 :::info
-Les données d'anniversaire proviennent du champ date de naissance sur le profil de chaque personne. Assurez-vous que vos [dossiers d'adhésion](../people/adding-people.md) sont à jour pour des résultats précis.
+Les versions antérieures de B1 Admin avaient une page Rapports séparée pour les anniversaires. Cette page a été supprimée -- les filtres de recherche Personnes ci-dessus sont le moyen actuel, et ils couvrent également les anniversaires.
 :::

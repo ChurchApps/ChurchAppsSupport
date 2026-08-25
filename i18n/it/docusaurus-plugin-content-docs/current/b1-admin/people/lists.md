@@ -1,68 +1,66 @@
 ---
-title: "Liste salvate"
+title: "Elenchi Salvati"
 ---
 
-# Liste salvate
+# Elenchi Salvati
 
 <div class="article-intro">
 
-Le **Liste salvate** ti permettono di memorizzare una query di ricerca sotto un nome e rieseguirla con un clic in qualsiasi momento. Costruisci una lista una volta — "Membri attivi nel campus Nord," "Visitatori negli ultimi 90 giorni," o qualsiasi filtro avanzato — e resta nella tua barra laterale così non devi mai ricostruire la query.
+Gli **Elenchi Salvati** ti permettono di archiviare una query di ricerca sotto un nome e rieseguirla con un clic in qualsiasi momento. Costruisci un elenco una volta - "Membri Attivi nel Campus Nord", "Visitatori negli ultimi 90 giorni", o qualsiasi filtro avanzato - e rimane nel pannello **Elenchi Salvati** sulla pagina Persone così non devi mai ricostruire la query di nuovo.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di iniziare</h4>
+<h4>Prima di Iniziare</h4>
 
-- Esegui almeno una ricerca nella sezione Persone in modo da avere risultati da salvare. Consulta [Ricerca delle persone](./searching-people.md) o [Ricerca IA](./ai-search.md).
+- Esegui almeno una ricerca nella sezione Persone così hai i risultati da salvare. Vedi [Ricerca di Persone](./searching-people.md) o [Ricerca AI](./ai-search.md).
 
 </div>
 
-## Salvare una ricerca come lista
+## Salvataggio di una Ricerca come Elenco
 
-1. Esegui una ricerca nella pagina **Persone** — una ricerca rapida, una ricerca IA o una ricerca con filtro avanzato.
-2. Quando appaiono i risultati, un pulsante **Salva come lista** (icona segnalibro) appare nell'intestazione della pagina Persone.
-3. Fai clic su **Salva come lista**.
-4. Inserisci un **Nome** per la lista (obbligatorio).
-5. Facoltativamente inserisci una **Categoria** per raggruppare liste correlate nella barra laterale (ad esempio, "Evangelizzazione" o "Appartenenza").
+1. Esegui una ricerca sulla pagina **Persone** — una ricerca veloce, una ricerca AI, o una ricerca di filtro avanzato.
+2. Quando appaiono i risultati, un pulsante **Salva come Elenco** (icona segnalibro) appare nell'intestazione della pagina Persone.
+3. Fai clic su **Salva come Elenco**.
+4. Inserisci un **Nome** per l'elenco (obbligatorio).
+5. Facoltativamente inserisci una **Categoria** per raggruppare gli elenchi correlati nel pannello **Elenchi Salvati** (ad esempio, "Sensibilizzazione" o "Iscrizione").
 6. Fai clic su **Salva**.
 
-La lista è ora salvata nell'account della tua chiesa e apparirà nel pannello **Liste salvate** sul lato sinistro della pagina Persone.
+L'elenco è ora salvato nell'account della tua chiesa e apparirà nel pannello **Elenchi Salvati** sul lato sinistro della pagina Persone.
 
 :::info
-Le liste sono condivise in tutta la tua chiesa — chiunque abbia accesso a Persone può vederle e caricarle. Solo lo staff con il permesso appropriato può rinominare o eliminare le liste.
+Gli elenchi sono condivisi in tutta la tua chiesa -- chiunque abbia accesso a Persone può vederli e caricarli. Solo il personale con il permesso appropriato può rinominare o eliminare gli elenchi.
 :::
 
-## Caricare una lista salvata
+## Caricamento di un Elenco Salvato
 
-Nel pannello **Liste salvate** sul lato sinistro della pagina Persone, fai clic su qualsiasi nome di lista. La ricerca viene rieseguita istantaneamente con la query memorizzata, aggiornando la tabella dei risultati.
+Nel pannello **Elenchi Salvati** sul lato sinistro della pagina Persone, fai clic su un nome di elenco. La ricerca viene rieseguita istantaneamente con la query archiviata, aggiornando la tabella dei risultati.
 
-Le liste sono raggruppate per categoria (se ne hai assegnata una), con le liste senza categoria che appaiono per ultime.
+Gli elenchi sono raggruppati per categoria (se ne hai assegnata una), con gli elenchi senza categoria che appaiono per ultimi.
 
 :::tip
-Le liste sono **query dal vivo**, non istantanee. Ogni volta che carichi una lista, la ricerca viene eseguita di nuovo sui tuoi dati attuali, quindi appariranno le nuove persone che ora corrispondono ai criteri.
+Gli elenchi sono **query in diretta**, non istantanee. Ogni volta che carichi un elenco, la ricerca viene eseguita di nuovo contro i tuoi dati attuali, così le nuove persone che ora soddisfano i criteri appariranno.
 :::
 
-## Rinomina ed eliminazione delle liste
+## Rinomina e Eliminazione di Elenchi
 
-Lo staff con permesso di gestione può rinominare o eliminare qualsiasi lista direttamente dal pannello Liste salvate.
+Il personale con il permesso di gestione può rinominare o eliminare qualsiasi elenco direttamente dal pannello Elenchi Salvati.
 
-- Fai clic sull'**icona a matita** accanto a un nome di lista per rinominarla.
-- Fai clic sull'**icona del cestino** per eliminarla (ti verrà chiesta conferma).
+- Fai clic sull'**icona matita** accanto al nome di un elenco per rinominarlo.
+- Fai clic sull'**icona cestino** per eliminarlo (ti verrà chiesto di confermare).
 
-## Casi d'uso
+## Casi d'Uso
 
-| Scenario | Come costruire la lista |
+| Scenario | Come costruire l'elenco |
 |---|---|
-| Tutti i visitatori | Ricerca avanzata: Stato di appartenenza = Visitatore |
-| Membri in una sede specifica | Ricerca avanzata: Campus = [il tuo campus] |
-| Persone senza indirizzo email | Ricerca avanzata: Email è vuota |
-| Volontari con controllo dei precedenti scaduto | Ricerca avanzata: [Campo personalizzato](../settings/custom-fields.md) "Scadenza controllo precedenti" è prima di oggi |
-| Risultati da una domanda IA | Fai una domanda nella Ricerca IA, poi salva |
+| Tutti i visitatori | Ricerca avanzata: Stato di Iscrizione = Visitatore |
+| Membri in un campus specifico | Ricerca avanzata: Campus = [tuo campus] |
+| Persone senza un indirizzo email | Ricerca avanzata: Email è vuoto |
+| Volontari con un controllo dei precedenti scaduto | Ricerca avanzata: [Campo Personalizzato](../settings/custom-fields.md) "Controllo dei precedenti scade" è prima di oggi |
+| Risultati da una domanda AI | Fai una domanda in Ricerca AI, quindi salva |
 
-## Articoli correlati
+## Articoli Correlati
 
-- [Ricerca delle persone](./searching-people.md) — ricerca rapida e personalizzazione delle colonne
-- [Ricerca IA](./ai-search.md) — query in linguaggio naturale che puoi salvare come liste
-- [Campi personalizzati](../settings/custom-fields.md) — definisci i tuoi campi persona, poi filtra e salva liste su di essi
-- [Demografia](./demographics.md) — approfondisci un grafico demografico in un filtro Persone, poi salvalo come lista
-- [Modifica in blocco](./bulk-editing.md) — dopo aver caricato una lista, aggiorna in blocco tutti i suoi membri contemporaneamente
+- [Ricerca di Persone](./searching-people.md) — ricerca veloce e personalizzazione delle colonne
+- [Ricerca AI](./ai-search.md) — query in linguaggio naturale che puoi salvare come elenchi
+- [Campi Personalizzati](../settings/custom-fields.md) — definisci i tuoi campi di persona, quindi filtra e salva gli elenchi su di essi

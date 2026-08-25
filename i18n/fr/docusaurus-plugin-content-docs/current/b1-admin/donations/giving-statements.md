@@ -1,56 +1,56 @@
----
-title: "Reçus fiscaux"
+﻿---
+title: "Relevés de dons"
 ---
 
-# Reçus fiscaux
+# Relevés de dons
 
 <div class="article-intro">
 
-À la fin de chaque année, vos donateurs ont besoin d'un résumé de leurs dons déductibles d'impôts pour leurs dossiers. B1 Admin facilite la génération de ces relevés pour tous les donateurs en une seule fois, vous épargnant des heures de travail manuel.
+À la fin de chaque année, vos donateurs ont besoin d'un résumé de leurs dons déductibles d'impôts pour leurs dossiers. B1 Admin facilite la génération de ces relevés pour tous les donateurs à la fois, vous faisant économiser des heures de travail manuel.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Vérifiez que vos [fonds](funds.md) sont correctement marqués comme **Déductible d'impôts** -- seuls les dons aux fonds déductibles d'impôts apparaissent sur les relevés
-- Assurez-vous que tous les dons ont été [enregistrés](recording-donations.md) et que toutes les transactions en ligne ont été [importées depuis Stripe](stripe-import.md)
+- Vérifiez que vos [fonds](funds.md) sont correctement marqués comme **Déductibles fiscalement** -- seules les donations aux fonds déductibles d'impôts apparaissent sur les relevés
+- Assurez-vous que toutes les donations ont été [enregistrées](recording-donations.md) et que toutes les transactions en ligne ont été [importées depuis Stripe](stripe-import.md)
 
 </div>
 
-## Accéder aux reçus fiscaux
+## Accès aux relevés de dons
 
-1. Dans **B1 Admin**, cliquez sur **Dons** dans la barre latérale.
+1. Dans **B1 Admin**, ouvrez le **menu de section** dans le coin supérieur gauche et choisissez **Donations**.
 2. Cliquez sur **Relevés**.
 
-## Générer les relevés
+## Génération de relevés
 
-1. Sélectionnez l'**année** dans le menu déroulant en haut de la page. Vous pouvez choisir l'année en cours ou l'une des cinq années précédentes.
-2. La page affiche les statistiques résumées pour cette année, notamment :
-   - **Total des donateurs** -- le nombre de personnes ayant donné
-   - **Total des dons** -- le nombre d'enregistrements de dons individuels
-   - **Montant total** -- le montant combiné en dollars de l'ensemble des dons
+1. Sélectionnez l'**année** dans la liste déroulante en haut de la page. Vous pouvez choisir l'année en cours ou n'importe laquelle des cinq années précédentes.
+2. La page affiche les statistiques récapitulatives pour cette année, notamment :
+   - **Donateurs totaux** -- le nombre de personnes qui ont donné
+   - **Donations totales** -- le nombre d'enregistrements de donation individuels
+   - **Montant total** -- le montant en dollars combiné de tous les dons
 
-## Télécharger les relevés
+## Téléchargement des relevés
 
-Vous disposez de deux options pour transmettre les relevés à vos donateurs :
+Vous avez deux options pour obtenir les relevés à vos donateurs :
 
-### Télécharger en fichiers CSV
+### Télécharger sous forme de fichiers CSV
 
-Cliquez sur **Télécharger le ZIP** pour télécharger un fichier ZIP contenant un fichier CSV individuel pour chaque donateur. Cela est utile si vous souhaitez envoyer les relevés par e-mail individuellement ou les importer dans un autre système.
+Cliquez sur **Télécharger ZIP** pour télécharger un fichier ZIP contenant un fichier CSV individuel pour chaque donateur. C'est utile si vous souhaitez envoyer des relevés individuellement ou les importer dans un autre système.
 
 ### Imprimer tous les relevés
 
-Cliquez sur **Tout imprimer** pour ouvrir une vue imprimable du relevé de chaque donateur dans votre navigateur. À partir de là, utilisez la fonction d'impression de votre navigateur pour les envoyer à une imprimante. Chaque relevé commence sur une nouvelle page afin qu'ils soient prêts à être pliés et envoyés par courrier.
+Cliquez sur **Imprimer tous** pour ouvrir une vue imprimable de chaque relevé de donateur dans votre navigateur. À partir de là, utilisez la fonction d'impression de votre navigateur pour les envoyer à une imprimante. Chaque relevé commence sur une nouvelle page pour qu'il soit prêt à plier et à envoyer par la poste.
 
 :::tip
-Générez vos relevés tôt en janvier, pendant que vos registres sont encore frais. Vérifiez bien que vos fonds sont correctement marqués comme déductibles d'impôts avant de générer les relevés -- seuls les dons aux fonds déductibles d'impôts sont inclus.
+Exécutez vos relevés tôt en janvier quand vos dossiers sont frais. Vérifiez à nouveau que vos fonds sont correctement marqués comme déductibles d'impôts avant de générer les relevés -- seules les donations aux fonds marqués comme déductibles d'impôts sont incluses.
 :::
 
 :::info
-Les reçus fiscaux n'incluent que les dons affectés à des fonds pour lesquels le paramètre **Déductible d'impôts** est activé. Si un fonds n'est pas marqué comme déductible d'impôts, ses dons n'apparaîtront pas sur le relevé. Vous pouvez gérer ce paramètre sur la page [Fonds](funds.md).
+Les relevés de dons n'incluent que les donations assignées aux fonds pour lesquels le paramètre **Déductible fiscalement** est activé. Si un fonds n'est pas marqué comme déductible d'impôts, ses donations n'apparaîtront pas sur le relevé. Vous pouvez gérer ce paramètre sur la page [Fonds](funds.md).
 :::
 
 ## Prochaines étapes
 
-Si vous avez besoin de vérifier les détails des dons avant de générer les relevés, consultez la page [Rapports de dons](donation-reports.md) ou vérifiez les [lots](batches.md) individuels.
+Si vous avez besoin d'examiner les détails des donations avant de générer les relevés, visitez la page [Rapports de donations](donation-reports.md) ou vérifiez les [lots](batches.md) individuels.

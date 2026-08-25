@@ -1,53 +1,50 @@
----
-title: "Tjenesterekkefølge"
+﻿---
+title: "Serviceorden"
 ---
 
-# Tjenesterekkefølge
+# Serviceorden
 
 <div class="article-intro">
 
-Når du åpner en plan, viser **Tjenesterekkefølge**-delen sekvensen av elementer for den gudstjenesten. Dette gir deg og teamet ditt en felles oversikt over gudstjenesteflyten, inkludert tidspunkter, sangdetaljer og beskrivelser for hvert element.
+Når du åpner en plan, viser **Order of Service**-seksjonen sekvensen av elementer for denne tjenesten. Dette gir deg og teamet ditt en delt visning av tjenestens flyt, inkludert timing, sangdetaljer og beskrivelser for hver element.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du må være [logget inn](../getting-started/logging-in.md) på B1.church-kontoen din.
-- Åpne en plan fra [planlisten](./viewing-plans.md) din for å se tjenesterekkefølgen.
+- Du må være [logget inn](../getting-started/logging-in.md) på B1.church-kontoen.
+- Åpne en plan fra [Plans list](./viewing-plans.md) for å vise serviceorden.
 
 </div>
 
-## Hva tjenesterekkefølgen viser
+## Hva serviceorden viser
 
-Tjenesterekkefølgen vises som en liste over elementer i den rekkefølgen de vil forekomme under gudstjenesten. Hvert element inkluderer:
+Serviceorden vises som en liste over elementer i rekkefølgen de vil oppstå under tjenesten. Hvert element inkluderer:
 
-- **Kumulativ tid** -- Løpende tid fra starten av gudstjenesten, slik at du vet når hvert element forventes å begynne.
-- **Elementetikett og beskrivelse** -- Navnet på elementet (for eksempel en sangtittel, bønn eller kunngjøring) sammen med eventuelle notater eller beskrivelser.
-- **Varighet** -- Hvor lang tid elementet forventes å ta.
+- **Cumulative time** -- Løpetiden fra tjenestens start, slik at du vet når hver element forventes å begynne.
+- **Item label and description** -- Navnet på elementet (som en sangtittel, bønn eller kunngjøring) sammen med noter eller beskrivelser.
+- **Duration** -- Hvor lenge elementet forventes å ta.
 
-Elementene er organisert under **overskrifter** som grupperer relaterte elementer sammen (for eksempel «lovsangssett» eller «budskap»). Dette gjør det enkelt å skanne den overordnede strukturen til gudstjenesten.
+Elementer er organisert under **headers** som grupperer relaterte elementer sammen (for eksempel "Worship Set" eller "Message"). Dette gjør det enkelt å skanne den generelle strukturen av tjenesten.
 
-## Sangtekster og akkorder
+## Visning av sanglyrikk og akkorder
 
-Klikk på en sang i tjenesterekkefølgen for å åpne teksten og akkordene. Bruk **toneart**-nedtrekksmenyen øverst for å transponere akkordene på farten -- praktisk hvis instrumentet ditt eller vokalregisteret ditt trenger en annen toneart enn den lovsangslederen planla for.
+Klikk en sang i serviceorden for å åpne lyrikk og akkorder.
 
-## Pensum- og leksjonsinnhold
+## Utskrift av serviceorden
 
-Hvis planen har tilknyttet pensum eller leksjonsinnhold fra en leverandør som [Lessons.church](../content/lessons.md), vil du se en forhåndsvisning av det innholdet innenfor tjenesterekkefølgen. Dette kan inkludere leksjonsseksjoner, presentasjonsmateriell og andre ressurser teamet ditt trenger for gudstjenesten.
+Du kan skrive ut en formatert versjon av serviceorden for å ta med deg på tjenestesdagen.
 
-## Skrive ut tjenesterekkefølgen
-
-Du kan skrive ut en formatert versjon av tjenesterekkefølgen for å ta med deg på gudstjenestedagen.
-
-1. Åpne planen fra **Planer**-listen din.
-2. I **Tjenesterekkefølge**-delen klikker du på **utskrifts**-ikonet øverst til høyre.
-3. Et nytt vindu åpnes med et utskriftsvennlig oppsett som inkluderer:
-   - **Gudstjenestedatoen** øverst.
-   - **Teamtildelinger** gruppert etter kategori til venstre, som viser hver posisjon og hvem som fyller den.
-   - Den **fullstendige tjenesterekkefølgen** til høyre med kolonner for tid, elementdetaljer og varighet.
-4. Nettleserens utskriftsdialog åpnes automatisk, slik at du kan skrive ut eller lagre som PDF.
+1. Åpne planen fra **Plans**-listen.
+2. I **Order of Service**-seksjonen, klikk **print**-ikonet i øvre høyre hjørne.
+3. Et nytt vindu åpnes med et utskrivbart layout som inkluderer:
+   - **Service date** øverst.
+   - **Team assignments** gruppert etter kategori på venstre, som viser hver posisjon og hvem som fyller den.
+   - **Full service order** på høyre side med tid, varighet, og detaljer.
+4. Nettleserens utskriftsdialog åpnes automatisk slik at du kan skrive ut eller lagre som PDF.
 
 :::tip
-Den utskrevne tjenesterekkefølgen er en flott referanse å ha tilgjengelig under øvelser eller selve gudstjenesten. Den inkluderer både teamlisten og den fullstendige tjenesterekkefølgen på én side.
+Den utskrevne serviceorden er en stor referanse å ha for hånden under øvelser eller tjenesten selv. Den inkluderer både lag-retten og hele serviceorden på en enkelt side.
 :::
+

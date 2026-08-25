@@ -1,4 +1,4 @@
----
+﻿---
 title: "Perfil"
 ---
 
@@ -6,32 +6,35 @@ title: "Perfil"
 
 <div class="article-intro">
 
-A seção Perfil permite que você gerencie as configurações da sua conta pessoal no ChurchApps. Seu perfil é compartilhado entre todas as ferramentas do ChurchApps, portanto as alterações feitas aqui se aplicam em todos os lugares -- do B1 Admin ao aplicativo móvel B1.
+A seção Perfil permite você gerenciar as configurações de sua conta pessoal em ChurchApps. Seu perfil é compartilhado em todas as ferramentas ChurchApps, portanto as alterações que você faz aqui se aplicam em qualquer lugar -- de B1 Admin ao aplicativo B1 Mobile.
 
 </div>
 
-## O que você pode fazer
+## O Que Você Pode Fazer
 
-Na seção Perfil, você pode:
+Da seção Perfil, você pode:
 
-- **Atualizar seu nome e e-mail** -- Mantenha suas informações de contato atualizadas.
+- **Atualizar seu nome e email** -- Mantenha suas informações de contato atualizadas.
 - **Alterar sua senha** -- Defina uma nova senha para sua conta.
-- **Alternar temas** -- Alterne entre os modos claro e escuro de acordo com sua preferência.
+- **Alternar temas** -- Alterne entre modo claro e escuro para corresponder sua preferência.
 - **Gerenciar dispositivos conectados** -- Visualize e controle quais dispositivos ChurchAppsPlayer estão vinculados à sua conta.
 - **Visualizar contas vinculadas** -- Veja e gerencie quaisquer serviços externos conectados à sua conta ChurchApps.
+- **Aprovar pedidos de alteração de perfil** -- Revise e aplique atualizações enviadas por membros.
 
-## Subseções do Perfil
+## Sub-Seções de Perfil
 
-A área de Perfil possui as seguintes páginas:
+A área Perfil tem as seguintes páginas:
 
-1. **[Gerenciando seu Perfil](./managing-profile.md)** -- Edite suas informações pessoais, altere sua senha, gerencie contas vinculadas, ajuste preferências de tema e gerencie a exclusão da conta.
-2. **[Gerenciando Dispositivos](./devices.md)** -- Visualize, adicione e gerencie dispositivos ChurchAppsPlayer pareados com sua conta.
+1. **[Gerenciando Seu Perfil](./managing-profile.md)** -- Edite suas informações pessoais, altere sua senha, gerencie contas vinculadas, ajuste preferências de tema e lide com deleção de conta.
+2. **[Aprovando Alterações de Perfil](./approving-profile-changes.md)** -- Revise e aprove pedidos de atualização de perfil enviados por membros através de B1 Mobile.
+3. **[Gerenciando Dispositivos](./devices.md)** -- Visualize, adicione e gerencie dispositivos ChurchAppsPlayer emparelhados com sua conta.
 
 :::tip
-Mantenha seu endereço de e-mail atualizado. Ele é usado para recuperação de conta e notificações importantes da sua igreja.
+Mantenha seu endereço de email atualizado. É usado para recuperação de conta e notificações importantes de sua igreja.
 :::
 
-## Próximos passos
+## Próximas Etapas
 
-- [Gerenciando seu Perfil](./managing-profile.md) -- Edite suas configurações pessoais
+- [Gerenciando Seu Perfil](./managing-profile.md) -- Edite suas configurações pessoais
+- [Aprovando Alterações de Perfil](./approving-profile-changes.md) -- Revise pedidos de alteração de perfil de membro
 - [Gerenciando Dispositivos](./devices.md) -- Gerencie dispositivos conectados

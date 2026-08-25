@@ -1,13 +1,7 @@
+﻿---
+title: "Lessons.church से सबक का कार्यक्रम बनाना"
 ---
-title: "Scheduling Lessons"
----
 
-# Scheduling Lessons
+# Lessons.church से सबक का कार्यक्रम बनाना
 
-<div class="article-intro">
-
-यह page ChurchApps documentation का हिस्सा है।
-
-</div>
-
-अधिक जानकारी के लिए [मुख्य documentation](https://churchapps.org) देखें।
+B1 Admin सीधे Lessons.church के साथ एकीकृत होता है।

@@ -1,13 +1,7 @@
+﻿---
+title: "खुली पाठ प्रारूप"
 ---
-title: "Open Lesson Format"
----
 
-# Open Lesson Format
+# खुली पाठ प्रारूप
 
-<div class="article-intro">
-
-यह page ChurchApps documentation का हिस्सा है।
-
-</div>
-
-अधिक जानकारी के लिए [मुख्य documentation](https://churchapps.org) देखें।
+खुली पाठ प्रारूप एक मानकीकृत JSON स्कीमा है।

@@ -1,53 +1,55 @@
 ---
-title: "Ordine del servizio"
+title: "Ordine del Servizio"
 ---
 
-# Ordine del servizio
+# Ordine del Servizio
 
 <div class="article-intro">
 
-Quando apri un piano, la sezione **Order of Service** mostra la sequenza degli elementi per quel servizio. Questo dà a te e al tuo team una visione condivisa del flusso del servizio, comprese le tempistiche, i dettagli dei canti e le descrizioni per ogni elemento.
+Quando apri un piano, la sezione **Ordine del Servizio** mostra la sequenza di elementi per quel servizio. Questo ti dà e al tuo team una visualizzazione condivisa del flusso del servizio, inclusi tempi, dettagli della canzone e descrizioni per ogni elemento.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di iniziare</h4>
+<h4>Prima di Iniziare</h4>
 
-- Devi aver [effettuato l'accesso](../getting-started/logging-in.md) al tuo account B1.church.
-- Apri un piano dal tuo [elenco dei Piani](./viewing-plans.md) per visualizzarne l'ordine del servizio.
+- Devi essere [accedere](../getting-started/logging-in.md) al tuo account B1.church.
+- Apri un piano dal tuo elenco [Piani](./viewing-plans.md) per visualizzare il suo ordine del servizio.
 
 </div>
 
-## Cosa mostra l'ordine del servizio
+## Cosa Mostra l'Ordine del Servizio
 
-L'ordine del servizio viene mostrato come un elenco di elementi nell'ordine in cui avverranno durante il servizio. Ogni elemento include:
+L'ordine del servizio è visualizzato come un elenco di elementi nell'ordine in cui si verificheranno durante il servizio. Ogni elemento include:
 
-- **Tempo cumulativo** -- Il tempo trascorso dall'inizio del servizio, così sai quando ci si aspetta che inizi ciascun elemento.
-- **Etichetta e descrizione dell'elemento** -- Il nome dell'elemento (come il titolo di un canto, una preghiera o un annuncio) insieme a eventuali note o descrizioni.
-- **Durata** -- Quanto tempo dovrebbe richiedere l'elemento.
+- **Tempo cumulativo** -- Il tempo in esecuzione dall'inizio del servizio, così sai quando si prevede che inizi ogni elemento.
+- **Etichetta e descrizione dell'elemento** -- Il nome dell'elemento (come il titolo di una canzone, preghiera o annuncio) insieme a eventuali note o descrizioni.
+- **Durata** -- Quanto tempo previsto per durare dell'elemento.
 
-Gli elementi sono organizzati sotto **intestazioni** che raggruppano gli elementi correlati (ad esempio "Momento di lode" o "Messaggio"). Questo rende facile scorrere rapidamente la struttura generale del servizio.
+Gli elementi sono organizzati sotto le **intestazioni** che raggruppano gli elementi correlati insieme (ad esempio, "Set di Adorazione" o "Messaggio"). Questo rende facile scansionare la struttura complessiva del servizio.
 
-## Visualizzare testi e accordi dei canti
+Le sezioni di lezione e curriculum possono anche espandersi in una cartella di azioni individuali annidate sotto di esse -- fai clic sulla sezione per espandere o comprimere le sue azioni e vedi ogni fase che il tuo team percorrerà.
 
-Fai clic su un canto nell'ordine del servizio per aprirne il testo e gli accordi. Usa il menu a tendina **Key Signature** in alto per trasporre gli accordi al volo -- utile se il tuo strumento o la tua estensione vocale richiedono una tonalità diversa da quella pianificata dal leader del worship.
+## Visualizzazione dei Testi e degli Accordi della Canzone
 
-## Curricula e contenuti delle lezioni
+Fai clic su una canzone nell'ordine del servizio per aprire i suoi testi e accordi. Usa il menu a discesa **Firma Chiave** nella parte superiore per trasporre gli accordi al volo -- utile se il tuo strumento o la gamma vocale ha bisogno di una chiave diversa da quella che il leader dell'adorazione ha pianificato.
 
-Se il piano ha curricula o contenuti di lezione associati provenienti da un fornitore come [Lessons.church](../content/lessons.md), vedrai un'anteprima di quel contenuto all'interno dell'ordine del servizio. Questo può includere sezioni della lezione, materiali per la presentazione e altre risorse di cui il tuo team ha bisogno per il servizio.
+## Contenuto di Curriculum e Lezione
 
-## Stampare l'ordine del servizio
+Se il piano ha curriculum associato o contenuto di lezione da un provider come [Lessons.church](../content/lessons.md), vedrai un'anteprima di quel contenuto all'interno dell'ordine del servizio. Questo può includere sezioni di lezione, materiali di presentazione e altre risorse di cui il tuo team ha bisogno per il servizio.
 
-Puoi stampare una versione formattata dell'ordine del servizio da portare con te il giorno del servizio.
+## Stampa dell'Ordine del Servizio
 
-1. Apri il piano dal tuo elenco **Plans**.
-2. Nella sezione **Order of Service**, fai clic sull'icona di **stampa** nell'angolo in alto a destra.
-3. Si apre una nuova finestra con un layout stampabile che include:
-   - La **data del servizio** in alto.
-   - Le **assegnazioni del team** raggruppate per categoria a sinistra, con ogni posizione e chi la ricopre.
-   - L'**ordine del servizio completo** a destra, con colonne per orario, dettagli dell'elemento e durata.
-4. Si aprirà automaticamente la finestra di stampa del tuo browser, così puoi stampare o salvare come PDF.
+Puoi stampare una versione formattata dell'ordine del servizio per portarlo con te il giorno del servizio.
+
+1. Apri il piano dal tuo elenco **Piani**.
+2. Nella sezione **Ordine del Servizio**, fai clic sull'icona **stampa** nell'angolo in alto a destra.
+3. Una nuova finestra si apre con un layout stampabile che include:
+   - La **data del servizio** nella parte superiore.
+   - **Incarichi del team** raggruppati per categoria sulla sinistra, mostrando ogni posizione e chi la sta ricoprendo.
+   - L'**ordine del servizio completo** sulla destra con colonne di tempo, dettagli dell'elemento e durata.
+4. La finestra di dialogo di stampa del tuo browser si apre automaticamente così puoi stampare o salvare come PDF.
 
 :::tip
-L'ordine del servizio stampato è un ottimo riferimento da tenere a portata di mano durante le prove o il servizio stesso. Include sia l'elenco del team sia l'ordine del servizio completo su una singola pagina.
+L'ordine del servizio stampato è un grande riferimento da avere a portata di mano durante le prove o il servizio stesso. Include sia il roster del team che l'ordine di servizio completo su una singola pagina.
 :::

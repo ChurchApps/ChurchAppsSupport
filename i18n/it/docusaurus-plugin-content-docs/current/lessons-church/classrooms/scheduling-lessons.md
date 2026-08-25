@@ -1,59 +1,59 @@
 ---
-title: "Programmazione delle lezioni"
+title: "Pianificazione di Lezioni"
 ---
 
-# Programmazione delle lezioni
+# Pianificazione di Lezioni
 
 <div class="article-intro">
 
-Una volta configurate le tue classi, il passo successivo è programmare le lezioni affinché i tuoi volontari sappiano esattamente cosa insegnare e quando. La programmazione collega il contenuto delle lezioni di Lessons.church al calendario della tua classe.
+Una volta che le tue aule sono configurate, il passo successivo è pianificare le lezioni in modo che i tuoi volontari sappiano esattamente cosa insegnare e quando. La pianificazione collega il contenuto della lezione da Lessons.church al calendario della tua aula.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di iniziare</h4>
+<h4>Prima di Iniziare</h4>
 
-- [Configura almeno una classe](./setting-up-classrooms.md) nel portale
-- [Sfoglia la libreria dei contenuti](../browsing/index.md) per trovare un programma e uno studio che vuoi insegnare
+- [Configura almeno un'aula](./setting-up-classrooms.md) nel portale
+- [Sfoglia la biblioteca di contenuti](../browsing/index.md) per trovare un programma e uno studio che desideri insegnare
 
 </div>
 
-## Visualizzazione della programmazione di una classe
+## Visualizzazione di un Programma di Aula
 
-1. Accedi e vai al tuo **Portale**.
-2. Clicca sulla **classe** che vuoi programmare.
-3. La vista della programmazione mostra le **ultime 4 lezioni passate** e le **prossime 4 lezioni future**. Questo ti dà una rapida visione di ciò che è stato insegnato di recente e di ciò che è in arrivo.
+1. Accedi e passa al tuo **Portale**.
+2. Fai clic sull'**aula** che desideri pianificare.
+3. La vista del programma visualizza le **ultime 4 lezioni passate** e le **prossime 4 lezioni in arrivo**.
 
-## Aggiunta di una lezione alla programmazione
+## Aggiunta di una Lezione al Programma
 
-1. Dalla vista della programmazione della classe, clicca per aggiungere una nuova lezione.
-2. Seleziona la **data** della lezione.
-3. Scegli il **programma** da cui vuoi insegnare (ad esempio, "Storie bibliche per bambini").
-4. Seleziona lo **studio** all'interno di quel programma (ad esempio, "Creazione e prime storie").
-5. Scegli la **lezione** specifica che vuoi programmare.
-6. Scegli l'**ambiente** appropriato per questa classe. Gli ambienti rappresentano versioni specifiche per fascia d'età del contenuto della lezione (ad esempio, "Prescolare" o "Elementare"). Scegliere l'ambiente giusto assicura che i tuoi volontari vedano contenuti adatti alla fascia d'età della loro classe.
-7. Salva la lezione programmata.
+1. Dalla vista del programma dell'aula, fai clic per aggiungere una nuova lezione.
+2. Seleziona la **data** per la lezione.
+3. Scegli il **programma** che desideri insegnare.
+4. Seleziona lo **studio** all'interno di quel programma.
+5. Scegli la **lezione** specifica.
+6. Scegli il **luogo** appropriato per questa aula. I luoghi rappresentano versioni specifiche del gruppo di età del contenuto della lezione.
+7. Salva la lezione pianificata.
 
-La lezione apparirà ora nella programmazione della classe per quella data.
+La lezione ora apparirà nel programma dell'aula per quella data.
 
 :::info
-Programmi, studi e lezioni sono la gerarchia dei contenuti su Lessons.church. Un programma contiene più studi, e ogni studio contiene lezioni individuali. Gli ambienti forniscono varianti specifiche per età della stessa lezione. Vedi [Programmi e studi](../browsing/programs-and-studies.md) per una spiegazione completa.
+I programmi, gli studi e le lezioni sono la gerarchia di contenuto su Lessons.church. Un programma contiene più studi e ogni studio contiene lezioni individuali.
 :::
 
-## Come i volontari usano la programmazione
+## Come I Volontari Usano Il Programma
 
-Una volta programmate le lezioni, i tuoi volontari possono aprire il portale, selezionare la loro classe e vedere immediatamente cosa è in arrivo. Possono rivedere il contenuto della lezione in anticipo, scaricare tutti i materiali di cui hanno bisogno e arrivare preparati. Niente più incertezze su cosa insegnare dopo.
+Una volta che hai pianificato le lezioni, i tuoi volontari possono aprire il portale, selezionare la loro aula e immediatamente vedere cosa è in arrivo. Possono rivedere il contenuto della lezione in anticipo e arrivare preparati.
 
-## Suggerimenti per la programmazione
+## Suggerimenti per la Pianificazione
 
-- **Pianifica in anticipo** -- Programma diverse settimane di lezioni alla volta così il tuo team può prepararsi in anticipo.
-- **Mantieni la coerenza** -- Seguire un programma in sequenza aiuta i bambini a costruire su ciò che hanno imparato la settimana precedente.
-- **Controlla la cronologia** -- Usa l'elenco delle lezioni passate per assicurarti di non ripetere accidentalmente i contenuti.
+- **Pianifica in anticipo** -- Le chiese pianificano le lezioni dell'aula in B1 Admin.
+- **Mantieni la coerenza** -- Seguire una serie di programmi sequenzialmente aiuta i bambini a costruire su quello che hanno imparato la settimana precedente.
+- **Controlla la cronologia** -- Usa l'elenco delle lezioni passate per assicurarti di non ripetere accidentalmente il contenuto.
 
 :::warning
-Assicurati di selezionare l'ambiente corretto per la fascia d'età della tua classe. Scegliere l'ambiente sbagliato significa che i tuoi volontari vedranno contenuti progettati per un livello d'età diverso.
+Assicurati di selezionare il luogo corretto per il gruppo di età della tua aula. Scegliere il luogo sbagliato significa che i tuoi volontari vedranno contenuto progettato per un livello di età diverso.
 :::
 
-## E dopo
+## Cosa c'è Dopo
 
-Dopo aver programmato le lezioni, potresti voler [personalizzare il contenuto della lezione](../customization/customizing-lessons.md) per classi specifiche in modo che corrispondano al tuo stile di insegnamento e alle esigenze della fascia d'età. Quando è il momento di insegnare, scopri la [Presentazione](../presenting/index.md) per svolgere le lezioni in modo efficace.
+Dopo aver pianificato le lezioni, potresti desiderare di [personalizzare il contenuto della lezione](../customization/customizing-lessons.md) per aule specifiche.

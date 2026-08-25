@@ -1,41 +1,52 @@
----
-title: "Format de leçon ouverte"
+﻿---
+title: "Format de leçon ouvert"
 ---
 
-# Format de leçon ouverte
+# Format de leçon ouvert
 
 <div class="article-intro">
 
-Le format de leçon ouverte (OLF) est une norme pour créer des leçons interopérables qui peuvent être utilisées dans plusieurs applications de gestion d'église et plates-formes d'apprentissage.
+Le format de leçon ouvert est un schéma JSON standardisé qui permet aux fournisseurs de contenu tiers de publier du curriculum pour Lessons.church. N'importe quelle organisation qui héberge un flux dans ce format peut être ajoutée en tant que fournisseur externe, rendant son contenu consultable et lisible aux côtés de la bibliothèque intégrée.
 
 </div>
 
-## À propos du format
+## Comment ça fonctionne
 
-Le format de leçon ouverte définit une structure cohérente pour les leçons incluant :
+Un fournisseur héberge deux types de points de terminaison :
 
-- **Métadonnées** — Titre, description, niveau d'âge, auteur
-- **Contenu** — Étapes de la leçon, éléments vidéo et multimédia
-- **Ressources** — Feuilles de travail, guides pour enseignants, matériel supplémentaire
+1. **Arborescence du fournisseur** -- Une seule URL qui renvoie le catalogue complet des programmes, études, leçons et lieux.
+2. **Flux du lieu** -- Une URL par lieu, renvoyant le contenu complet de la leçon.
 
-## Avantages du format OLF
+Quand une église ajoute l'URL de votre fournisseur dans Lessons.church, la plate-forme récupère votre arborescence pour découvrir le contenu disponible, puis récupère les flux individuels du lieu à la demande.
 
-- **Interopérabilité** — Les leçons fonctionnent dans plusieurs applications
-- **Portabilité** — Exportez et partagez facilement les leçons
-- **Personnalisation** — Modifiez les leçons pour vos besoins spécifiques
-- **Compatibilité** — Compatible avec les outils d'apprentissage standard du secteur
+## Arborescence du fournisseur
 
-## Utilisation du format OLF
+Votre URL de fournisseur doit renvoyer un objet JSON avec cette structure :
 
-1. Les leçons créées en Lessons.church utilisent le format OLF par défaut
-2. Vous pouvez exporter les leçons au format OLF pour utilisation dans d'autres applications
-3. Vous pouvez importer des leçons OLF depuis d'autres sources
+\\\json
+{
+  "programs": [
+    {
+      "id": "program-1",
+      "name": "Gospel of Mark",
+      "slug": "gospel-of-mark",
+      "image": "https://example.com/images/mark.jpg",
+      "about": "A 12-week study through the Gospel of Mark.",
+      "studies": [...]
+    }
+  ]
+}
+\\\
 
-## Spécification technique
+## Champs de l'arborescence
 
-Pour la spécification technique complète et la documentation, consultez la [documentation OLF](https://github.com/churchapps/open-lesson-format).
-
-## Articles connexes
-
-- [Aperçu de Lessons.church](../index.md)
-- [Planification des leçons](../../b1-admin/serving/scheduling-lessons.md)
+| Champ | Type | Description |
+|-------|------|-------------|
+| \programs[].id\ | string | Identifiant de programme unique |
+| \programs[].name\ | string | Nom d'affichage |
+| \programs[].slug\ | string | Nom convivial pour l'URL |
+| \studies[].id\ | string | Identifiant d'étude unique |
+| \lessons[].id\ | string | Identifiant de leçon unique |
+| \enues[].id\ | string | Identifiant de lieu unique |
+| \enues[].name\ | string | Nom du lieu (par ex. « Kids », « Adults ») |
+| \enues[].apiUrl\ | string | URL renvoyant le flux du lieu |

@@ -1,12 +1,12 @@
 ---
-title: "Configurazione Stampante"
+title: "Configurazione della Stampante"
 ---
 
-# Configurazione Stampante
+# Configurazione della Stampante
 
 <div class="article-intro">
 
-B1 Church Checkin può stampare etichette con il nome e ricevute di ritiro per i genitori su una stampante di etichette di rete. La configurazione della stampante è opzionale -- puoi usare l'app senza una stampante solo per il monitoraggio delle presenze.
+B1 Church Checkin può stampare etichette con nomi e ricevute di ritiro per un genitore su una stampante di etichette di rete. La configurazione della stampante è facoltativa -- puoi usare l'app senza una stampante solo per il tracciamento della presenza.
 
 </div>
 
@@ -18,57 +18,73 @@ B1 Church Checkin può stampare etichette con il nome e ricevute di ritiro per i
 
 </div>
 
+## Etichette Consigliate
+
+Il modello di etichetta predefinito di B1 Checkin ha dimensioni di **1,1" × 3,5"**.
+
+Se stai usando una **stampante Brother QL**, devi usare le etichette **Brother DK-1201** (1,1" × 3,5"). Le stampanti Brother rilevano la dimensione dell'etichetta dal rotolo fisico caricato nella stampante -- se il rotolo non corrisponde alla dimensione del modello, la stampante non stamperà. Non sostituire con una dimensione diversa.
+
+[Etichette Compatibili Brother DK-1201 — 12 Rotoli (Amazon)](https://www.amazon.com/dp/B0716XB6JG?tag=signpresenter-20)
+
+---
+
 ## Accesso alle Impostazioni della Stampante
 
-Puoi aprire la schermata delle impostazioni della stampante in qualsiasi momento toccando la **barra di stato della stampante** nella parte superiore dello schermo. Questa barra sottile mostra il numero di versione dell'app e lo stato attuale della connessione della stampante.
+Puoi aprire la schermata delle impostazioni della stampante in qualsiasi momento tramite il menu **Impostazioni Admin**:
+
+1. Tocca il **logo della chiesa** nell'intestazione **sette volte** in rapida successione (entro due secondi).
+2. Se è impostato un PIN chiosco, inserisci il PIN quando richiesto.
+3. Nella schermata Impostazioni Admin, tocca **Cambia Stampante**.
+
+Questo apre la schermata delle impostazioni della stampante dove puoi scansionare le stampanti, selezionarne una ed eseguire una stampa di prova.
 
 ## Scansione delle Stampanti
 
-Quando si apre la schermata delle impostazioni della stampante, l'app scansiona automaticamente la tua rete locale alla ricerca di stampanti compatibili. Vedrai un indicatore di caricamento con il messaggio "Scanning for printers" mentre la scansione è in corso.
+Quando la schermata delle impostazioni della stampante si apre, l'app scansiona automaticamente la tua rete locale per le stampanti compatibili. Vedrai un indicatore di caricamento con il messaggio "Scansione delle stampanti" mentre la scansione è in corso.
 
-Una volta completata la scansione, vedrai un elenco delle stampanti trovate. Ogni scheda della stampante mostra:
+Una volta completata la scansione, vedrai un elenco delle stampanti scoperte. Ogni scheda della stampante mostra:
 
-- Il **nome del modello** della stampante
+- Il nome del **modello di stampante**
 - L'**indirizzo IP** della stampante sulla tua rete
 
-Un'opzione **No Printer** è sempre inclusa in fondo all'elenco.
+Un'opzione **Nessuna Stampante** è sempre inclusa nella parte inferiore dell'elenco.
 
 :::warning
-Il tablet e la stampante devono essere connessi alla stessa rete locale affinché la scansione trovi la stampante. Se la tua stampante non appare, verifica che entrambi i dispositivi siano sulla stessa rete Wi-Fi e che la stampante sia accesa.
+Il tablet e la stampante devono essere collegati alla stessa rete locale affinché la scansione scopra la stampante. Se la stampante non appare, verifica che entrambi i dispositivi siano sulla stessa rete Wi-Fi e che la stampante sia accesa.
 :::
 
 ## Selezione di una Stampante
 
-1. Tocca la stampante che desideri utilizzare. La scheda della stampante selezionata viene evidenziata con un segno di spunta.
-2. Per stampare senza una stampante fisica (per test o modalità solo presenze), seleziona **No Printer**.
+1. Tocca la stampante che desideri utilizzare. La scheda della stampante selezionata diventa evidenziata con una spunta.
+2. Per stampare senza una stampante fisica (per test o modalità solo presenza), seleziona **Nessuna Stampante**.
 
 ## Stampa di Prova
 
 Prima di salvare la tua selezione, puoi verificare che la connessione funzioni:
 
 1. Seleziona una stampante dall'elenco.
-2. Tocca il pulsante **Test Print** nella parte inferiore dello schermo.
-3. L'app invia un'etichetta di prova alla stampante. Se la stampante è collegata correttamente, verrà stampata una pagina di prova.
+2. Tocca il pulsante **Stampa di Prova** nella parte inferiore dello schermo.
+3. L'app invia un'etichetta di prova alla stampante. Se la stampante è collegata correttamente, una pagina di prova stamperà.
 
-Se tocchi **Test Print** con **No Printer** selezionato, l'app mostrerà un avviso ricordandoti che nessuna stampante è selezionata.
+Se tocchi **Stampa di Prova** con **Nessuna Stampante** selezionata, l'app visualizzerà un avviso ricordandoti che nessuna stampante è selezionata.
 
 :::tip
-Esegui sempre una stampa di prova dopo aver selezionato una stampante per confermare la connessione prima del prossimo servizio.
+Esegui sempre una stampa di prova dopo aver selezionato una stampante per confermare la connessione prima del tuo prossimo servizio.
 :::
 
-## Salvataggio della Selezione
+## Salvataggio della Tua Selezione
 
-Quando sei soddisfatto della tua scelta della stampante:
+Quando sei soddisfatto della tua scelta di stampante:
 
-1. Tocca il pulsante **Save & Restart** nella parte inferiore dello schermo.
+1. Tocca il pulsante **Salva e Riavvia** nella parte inferiore dello schermo.
 2. L'app salva la tua selezione della stampante e si riavvia per applicare le impostazioni.
 
-La tua selezione della stampante viene ricordata tra i riavvii dell'app. Non è necessario configurarla di nuovo a meno che tu non voglia cambiare stampante.
+La tua selezione della stampante viene ricordata tra i riavvii dell'app. Non devi configurarla di nuovo a meno che non desideri cambiare stampanti.
 
 :::info
-Se sposti il kiosk in una posizione diversa o cambi la configurazione di rete, torna alle impostazioni della stampante per scansionare nuovamente le stampanti e aggiornare la tua selezione.
+Se sposti il chiosco in una posizione diversa o modifichi la configurazione di rete, torna alle impostazioni della stampante per scansionare di nuovo le stampanti e aggiorna la tua selezione.
 :::
 
 ## Passaggi Successivi
 
-Con la stampante configurata, sei pronto per iniziare il check-in. Consulta il [flusso di check-in](../check-in/) per scoprire come funziona l'intero processo, partendo dalla [selezione di un servizio](../check-in/selecting-service).
+Con la tua stampante configurata, sei pronto per iniziare il check-in. Vedi il [flusso di lavoro di check-in](../check-in/) per saperne di più su come funziona il processo completo, a partire da [selezione di un servizio](../check-in/selecting-service).

@@ -1,77 +1,81 @@
----
-title: "Kirkens innstillinger"
+﻿---
+title: "Kirkestillinger"
 ---
 
-# Kirkens innstillinger
+# Kirkestillinger
 
 <div class="article-intro">
 
-Kirkens innstillinger-side er hvor du konfigurerer kirkens grunnleggende informasjon, kontaktdetaljer og merkevarebygging. Disse detaljene brukes på tvers av alle ChurchApps-verktøy, inkludert nettstedet ditt B1.church og B1 Mobile-appen.
+Church Settings-siden er hvor du konfigurerer grunnleggende kirkeinformasjon, kontaktdetaljer og merkevaregivning. Disse detaljer brukes på tvers av alle ChurchApps-verktøy, inkludert B1.church-nettstedet og B1 Mobile-appen.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du trenger tillatelsen "Rediger kirkens innstillinger". Se [Roller og tillatelser](./roles-permissions.md) hvis du ikke har tilgang.
+- Du trenger "Edit Church Settings"-tillatelse. Se [Roles & Permissions](./roles-permissions.md) hvis du ikke har tilgang.
 - Ha kirkens adresse, kontaktinformasjon og logo klar
 
 </div>
 
-## Redigering av kirkens informasjon
+## Redigering av kirkeinformasjonen
 
-1. I B1 Admin, åpne **seksjonsmenyen** i øvre venstre hjørne (seksjonsnavn med liten pil) og velg **Innstillinger**.
-2. Klikk **Rediger innstillinger**-knappen i overskriften.
+1. I B1 Admin åpner du **seksjonsmenyen** i øvre venstre hjørne og velger **Settings**.
+2. Klikk **Edit Settings**-knappen i hovudet.
 3. Oppdater noen av følgende felt:
-   - **Kirkenavn** -- Navnet som vises på tvers av alle ChurchApps-produkter.
-   - **Adresse** -- Kirkens fysiske adresse.
-   - **Kontaktinformasjon** -- Telefonnummer, e-post og andre kontaktdetaljer.
-4. Klikk **Lagre** for å bruke endringene.
+   - **Church Name** -- Navnet som vises på tvers av alle ChurchApps-produkter.
+   - **Address** -- Kirkens fysiske adresse.
+   - **Contact Information** -- Telefonnummer, e-post og andre kontaktdetaljer.
+4. Klikk **Save** for å bruke endringene.
 
-## Konfigurere underdomenet ditt
+## Oppsett av domenet ditt
 
-Kirken din får et gratis underdomene på **dinkirke.b1.church**. Dette er webaddressen der medlemmer og besøkende kan få tilgang til kirkens nettilstedeværelse.
+Kirken din får et gratis domene ved **yourchurch.b1.church**. Dette er webadresse hvor medlemmer og besøkende kan få tilgang til kirkens online tilstedeværelse.
 
-1. På innstillingssiden, finner du **Subdomene**-feltet.
-2. Skriv inn ditt foretrukne underdomene (for eksempel "gracechurch" for gracechurch.b1.church).
+1. På Settings-siden, finn **Subdomain**-feltet.
+2. Angi ønsket subdomene (for eksempel "gracechurch" for gracechurch.b1.church).
 3. Lagre endringene.
 
 :::info
-Underdomenet ditt må være unikt på tvers av alle ChurchApps-kirker. Hvis ditt foretrukne navn er opptatt, prøv å legge til byen eller fylket ditt (for eksempel "gracechurch-oslo").
+Subdomenet ditt må være unikt på tvers av alle ChurchApps-kirker. Hvis det foretrukne navn er tatt, prøv å legge til by eller stat (for eksempel "gracechurch-dallas").
 :::
 
-## Konfigurering av merkevarebygning
+## Konfigurering av merkevaregivning
 
 Tilpass hvordan kirken din vises på tvers av alle ChurchApps-verktøy:
 
-1. Last opp **kirkelogoen** din ved å klikke logoområdet og velge en bildefil.
-2. Legg til alle ekstra **kirkebilde** brukt på nettstedet og [mobilappen](./mobile-app.md).
+1. Last opp **church logo** ved å klikke logoområdet og velge bildefil.
+2. Legg til eventuelle ekstra **church images** som brukes på nettstedet og [mobile app](./mobile-app.md).
 
 :::tip
-For beste resultater, bruk en logo med transparent bakgrunn i PNG-format. Dette sikrer at den ser bra ut på både lyse og mørke bakgrunner.
+For beste resultater, bruk en logo med gjennomsiktig bakgrunn i PNG-format. Dette sikrer at den ser bra ut på både lys og mørk bakgrunn.
 :::
 
-## Første dag i uken
+## Fillagring
 
-Velg hvilken dag kalenderene dine starter. **Første dag i uken**-rullegardinlisten i kirkeinformasjonsdelen har som standard **Søndag**, men kan settes til en dag. Når den er endret, blir den respektert på tvers av kalendergitter i B1 Admin og B1.church-medlemsportalen -- gruppekaler, valgte kalendere og hendelsesredigeringen legger alle ut uker som starter dagen du velger.
+Som standard bruker filer du laster opp på nettstedet ditt (gjennom [Files](../website/files.md)) B1s gratis vertede lagring, opp til 100MB. Hvis du trenger mer plass, kan du koble ditt eget skylagring i stedet -- nye opplastinger goes direkte til kontoen din med ingen plattformgrense.
 
-## Klassetrinnavansering
+1. På Settings-siden, finn **File Storage**-kortet og klikk for å redigere.
+2. Velg en leverandør: **Google Drive**, **Dropbox**, **OneDrive**, eller en **S3-kompatibel bøtte** (AWS S3, Cloudflare R2, Backblaze B2, etc.).
+3. For Google Drive, Dropbox eller OneDrive, klikk **Connect** og logg inn for å godkjenne tilgang.
+4. Klikk **Save**.
 
-Hvis du sporer **Klassetrinn** på barn og elever, kan B1 automatisk bumpe alle opp et trinn på en dato du velger (for eksempel 1. august) i stedet for å kreve at du redigerer hver profil for hånd.
+## Klasse-promotering
 
-1. På innstillingssiden, finn **Klassetrinnavanserings**-alternativet.
-2. Slå det på og velg **måned og dag** for å fremme klassetrinn hvert år.
+Hvis du sporer **Grade** på barn og studenter, kan B1 automatisk bumpe alle opp en klasse på en dato du velger (for eksempel 1. august) i stedet for å kreve at du redigerer hver profil for hånd.
+
+1. På Settings-siden, finn **Grade Promotion**-alternativet.
+2. Slå det på og velg **måned og dag** for å promotere karakter hvert år.
 3. Lagre endringene.
 
 ## Import og eksport
 
-**Import/Eksport**-knappen i innstillingsheder åpner et dedikert verktøy i et nytt nettleservindu. Bruk dette til å:
+**Import/Export**-knappen i Settings-hovudet åpner et dedikert verktøy i et nytt nettleservindu. Bruk dette for å:
 
-- Importere medlemsdata fra et annet kirkehåndteringssystem.
-- Eksportere ChurchApps-dataene dine for sikkerhetskopi eller migreringsformål.
-
-Dette er spesielt nyttig når du først setter opp kirken og trenger å overføre eksisterende poster til ChurchApps.
+- Importere medlemsdata fra en annen kirkestyringsystem.
+- Eksporter ChurchApps-dataene dine for sikkerhetskopi eller migrasjonsformål.
 
 :::warning
-Når du importerer data, alltid sikkerhetskopi av eksisterende poster først. Importoperasjoner legger til data i systemet ditt og kan opprette dupliseringer hvis kjørt flere ganger.
+Når du importerer data, sikkerhetskopier alltid eksisterende oppføringer først. Importoperasjoner legger data til systemet og kan opprette duplikatoppføringer hvis kjørt flere ganger.
 :::
+

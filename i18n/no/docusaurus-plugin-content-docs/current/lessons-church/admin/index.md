@@ -1,4 +1,4 @@
----
+﻿---
 title: "Administrasjon"
 ---
 
@@ -6,40 +6,40 @@ title: "Administrasjon"
 
 <div class="article-intro">
 
-Administrasjonsområdet i Lessons.church er der innholdsskapere og administratorer administrerer leksjonsbiblioteket. Herfra kan du bygge opp din læreplansstruktur, laste opp ressurser, se bruksstatistikk og koble til tredjeparts innholdsleverandører.
+Admin-området i Lessons.church er hvor innholdsskaper og administratorer administrerer leksjonsbiblioteket. Herfra kan du bygge ut læreplanstrukturen, laste opp ressurser, gjennomgå bruksstatistikk og koble tredjeparts innholdsleverandører.
 
 </div>
 
 :::warning
-Administratortilgang krever riktige tillatelser. Hvis du ikke ser administratoralternativene, kontakt menighetens administrator for å be om tilgang.
+Admin-tilgang krever passende tillatelser. Hvis du ikke ser administrasjonsalternativene, kontakt kirkeadministratoren for tilgang.
 :::
 
 ## Hva du kan gjøre
 
-Administrasjonsområdet gir deg full kontroll over innholdet ditt:
+Admin-området gir deg full kontroll over innholdet:
 
-- **Opprette og redigere programmer** -- Sett opp toppnivå læreplansserier med navn, beskrivelser, bilder og slugs.
-- **Administrere studier** -- Organiser grupper av relaterte leksjoner innenfor hvert program.
-- **Bygge leksjoner** -- Legg til individuelle leksjoner med arenaer, seksjoner, roller og handlinger.
-- **Laste opp ressurser** -- Legg ved nedlastbare filer (PDF-er, aktivitetsark, bilder) på program-, studie- eller leksjonsnivå.
-- **Se statistikk** -- Se hvilket innhold som lastes ned, av hvem og hvor.
-- **Konfigurere leverandører** -- Koble til eksterne læreplansleverandører som bruker Open Lesson Format.
+- **Opprett og rediger programmer** -- Sett opp lærepersonserier på toppnivå.
+- **Administrer studier** -- Organiser grupper av relaterte leksjoner innenfor hvert program.
+- **Bygg leksjoner** -- Legg til individuelle leksjoner.
+- **Last opp ressurser** -- Fest nedlastbare filer (PDF-er, aktivitetarker, bilder).
+- **Se statistikk** -- Se hvilket innhold som blir lastet ned og av hvem.
+- **Konfigurer leverandører** -- Koble tredjeparts innholdsleverandører.
+- **År-planer** -- Publiser uke 1, 2, 3… sekvenser.
 
 ## Innholdshierarki
 
-Som administrator er det nyttig å forstå hvordan innhold er strukturert:
+Som administrator hjelpet det å forstå hvordan innhold er strukturert:
 
-1. **Programmer** inneholder én eller flere studier.
-2. **Studier** inneholder én eller flere leksjoner.
-3. **Leksjoner** inneholder én eller flere arenaer (aldersgruppevarianter).
-4. **Arenaer** inneholder seksjoner, og seksjoner inneholder rollebaserte handlinger.
-
-Hvert nivå kan ha sine egne nedlastbare ressurser vedlagt.
+1. **Programs** inneholder ett eller flere studier.
+2. **Studies** inneholder ett eller flere leksjoner.
+3. **Lessons** inneholder ett eller flere venues (aldersgruppevariasjoner).
+4. **Venues** inneholder seksjoner, og seksjoner inneholder rollebaserte handlinger.
 
 ## Neste steg
 
-- [Administrere programmer](./managing-programs.md) -- Opprette og konfigurere programmer
-- [Administrere studier](./managing-studies.md) -- Legge til studier innenfor et program
-- [Administrere leksjoner](./managing-lessons.md) -- Bygge ut leksjoner med arenaer, seksjoner og handlinger
-- [Statistikk](./statistics.md) -- Se nedlastings- og bruksdata
-- [Tredjepartsleverandører](./third-party-providers.md) -- Koble til eksterne læreplansfeeder
+- [Managing Programs](./managing-programs.md) -- Opprett og konfigurer programmer
+- [Managing Studies](./managing-studies.md) -- Legg til studier innenfor et program
+- [Managing Lessons](./managing-lessons.md) -- Bygg ut leksjoner
+- [Statistics](./statistics.md) -- Gjennomgå nedlastings- og bruksdata
+- [Third-Party Providers](./third-party-providers.md) -- Koble eksterne læreplanfeed
+

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Configurações"
 ---
 
@@ -6,43 +6,43 @@ title: "Configurações"
 
 <div class="article-intro">
 
-A seção Configurações é onde você configura a conta da sua igreja, a identidade visual e as opções administrativas no B1 Admin. A partir daqui você pode gerenciar tudo, desde o nome e o subdomínio da sua igreja até as permissões de usuário e a configuração do aplicativo móvel.
+A seção Configurações é onde você configura a conta de sua igreja, marca e opções administrativas em B1 Admin. Daqui você pode gerenciar tudo desde o nome e subdomínio de sua igreja até permissões de usuário e configuração de aplicativo móvel.
 
 </div>
 
 ## O Que Você Encontrará Aqui
 
-A área de Configurações está organizada nas seguintes subseções, acessíveis pela barra lateral:
+A área de Configurações está organizada nas seguintes sub-seções:
 
-1. **Configurações** -- Configure as informações básicas, a identidade visual e o subdomínio da sua igreja. Veja [Configurações da Igreja](./church-settings.md) para mais detalhes.
-2. **Campi** -- Adicione e gerencie vários locais físicos da sua igreja. Uma vez criados, os campi aparecem nos perfis de pessoas, na configuração de presença e no painel de Demografia. Veja [Campi](./campuses.md) para mais detalhes.
-3. **Campos Personalizados** -- Defina seus próprios campos para acompanhar nas pessoas (uma data, número, resposta sim/não ou lista de seleção), depois preencha-os nos perfis e pesquise por eles. Veja [Campos Personalizados](./custom-fields.md) para mais detalhes.
-3. **Aplicativos Móveis** -- Configure e personalize as abas de navegação que aparecem no [PWA do B1.church](/docs/b1-church/getting-started/installing-pwa) para seus membros (as mesmas abas também são exibidas pelo aplicativo nativo B1 Mobile, hoje descontinuado). Veja [Configurações do Aplicativo Móvel](./mobile-app.md) para mais detalhes.
-4. **Modelos de E-mail** -- Salve conteúdo de e-mail reutilizável para envio manual ou a partir de um fluxo de trabalho. Veja [Modelos de E-mail](./email-templates.md) para mais detalhes.
-5. **Administração do Servidor** -- Acesse ferramentas avançadas de administração para gerenciar as configurações de nível de servidor da sua igreja.
-6. **Formulários** -- Crie e gerencie formulários personalizados para coletar informações da sua congregação.
+1. **Configurações** -- Configure as informações básicas de sua igreja, marca e subdomínio. Consulte [Configurações da Igreja](./church-settings.md) para detalhes.
+2. **Campuses** -- Adicione e gerencie múltiplas localizações físicas para sua igreja. Uma vez criados, campi aparecem em perfis de pessoa, na configuração de presença e no painel de Dados Demográficos. Consulte [Campuses](./campuses.md) para detalhes.
+3. **Custom Fields** -- Defina seus próprios campos para rastrear em pessoas (uma data, número, resposta sim/não ou pick-list), depois preencha-os em perfis e busque neles. Consulte [Custom Fields](./custom-fields.md) para detalhes.
+3. **Mobile Apps** -- Configure e customize as guias de navegação que aparecem no [B1.church PWA](/docs/b1-church/getting-started/installing-pwa) para seus membros (as mesmas guias também são renderizadas pelo app móvel nativo B1 Mobile depreciado). Consulte [Configurações de Aplicativo Móvel](./mobile-app.md) para detalhes.
+4. **Email Templates** -- Salve conteúdo de email reutilizável para enviar manualmente ou de um workflow. Consulte [Email Templates](./email-templates.md) para detalhes.
+5. **Server Admin** -- Acesse ferramentas de administração avançadas para gerenciar configurações em nível de servidor de sua igreja.
+6. **Forms** -- Crie e gerencie formulários personalizados para colher informações de sua congregação.
 
 ## A Página Principal de Configurações
 
-Ao abrir a página Configurações pela primeira vez, você verá o **nome da sua igreja** e o **subdomínio** exibidos no topo. O cabeçalho oferece botões de acesso rápido para tarefas comuns:
+Quando você abre primeiro a página Configurações, você verá o **nome de sua igreja** e **subdomínio** exibidos no topo. O cabeçalho fornece botões de acesso rápido para tarefas comuns:
 
-- **Editar Configurações** -- Atualize o nome, o endereço, as informações de contato e a identidade visual da sua igreja.
-- **Aplicativos Móveis** -- Vá diretamente para a configuração do aplicativo móvel.
-- **Funções** -- Gerencie funções e permissões de usuário para sua equipe.
-- **Importar/Exportar** -- Transfira dados entre sistemas usando a ferramenta de importação/exportação.
+- **Editar Configurações** -- Atualize o nome de sua igreja, endereço, informações de contato e marca.
+- **Mobile Apps** -- Pule direto para configuração de aplicativo móvel.
+- **Roles** -- Gerencie papéis e permissões de usuário para seu time.
+- **Import/Export** -- Transfira dados entre sistemas usando a ferramenta de importação/exportação.
 
 :::tip
-Comece configurando o nome e a identidade visual da sua igreja em **Editar Configurações**, depois configure as [Funções](./roles-permissions.md) para convidar os membros da sua equipe com o nível de acesso adequado.
+Comece por configurar o nome de sua igreja e marca em **Editar Configurações**, depois configure [Roles](./roles-permissions.md) para convidar seus membros do time com o nível certo de acesso.
 :::
 
 :::info
-Para informações sobre como seus dados são protegidos, veja [Segurança de Dados](./data-security.md).
+Para informação sobre como seus dados estão protegidos, consulte [Segurança de Dados](./data-security.md).
 :::
 
-## Próximos Passos
+## Próximas Etapas
 
-- [Configurações da Igreja](./church-settings.md) -- Configure as informações e a identidade visual da sua igreja
-- [Campi](./campuses.md) -- Adicione locais para igrejas com múltiplos campi
-- [Funções e Permissões](./roles-permissions.md) -- Configure funções de usuário e controle de acesso
-- [Configurações do Aplicativo Móvel](./mobile-app.md) -- Personalize as abas de navegação exibidas no PWA do B1.church
-- [Segurança de Dados](./data-security.md) -- Saiba como seus dados são protegidos
+- [Configurações da Igreja](./church-settings.md) -- Configure suas informações e marca de igreja
+- [Campuses](./campuses.md) -- Adicione localizações para igrejas multi-site
+- [Funções e Permissões](./roles-permissions.md) -- Configure papéis de usuário e controle de acesso
+- [Configurações de Aplicativo Móvel](./mobile-app.md) -- Customize as guias de navegação mostradas no B1.church PWA
+- [Segurança de Dados](./data-security.md) -- Saiba como seus dados estão protegidos

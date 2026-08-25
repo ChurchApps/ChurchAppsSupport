@@ -1,83 +1,83 @@
 ---
-title: "Informes de Donaciones"
+title: "Reportes de Donaciones"
 ---
 
-# Informes de Donaciones
+# Reportes de Donaciones
 
 <div class="article-intro">
 
-B1 Admin le ofrece varias formas de ver y analizar los datos de ofrendas de su iglesia. La página de Resumen de Donaciones proporciona una vista general visual con gráficos y filtros, mientras que la sección de Informes ofrece un informe de Resumen de Donaciones más detallado. Use estas herramientas para rastrear tendencias de ofrendas, prepararse para reuniones de junta o conciliar sus registros.
+B1 Admin te da varias formas de ver y analizar los datos de donaciones de tu iglesia. La página Resumen de Donaciones proporciona una descripción visual con gráficos y filtros, mientras que la sección Reportes ofrece un reporte más detallado de Resumen de Donaciones. Usa estas herramientas para rastrear tendencias de donaciones, prepararte para reuniones de junta, o reconciliar tus registros.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- Asegúrese de que las donaciones hayan sido [registradas en lotes](recording-donations.md) o [importadas desde Stripe](stripe-import.md)
-- Verifique que sus [fondos](funds.md) estén configurados correctamente para que las donaciones estén debidamente categorizadas
+- Asegúrate de que las donaciones han sido [registradas en lotes](recording-donations.md) o [importadas desde Stripe](stripe-import.md)
+- Verifica que tus [fondos](funds.md) estén configurados correctamente para que las donaciones se categoricen adecuadamente
 
 </div>
 
-## Panel de Ofrendas
+## Panel de Donaciones
 
-El **Panel de Ofrendas** es lo primero que ve cuando hace clic en **Donaciones** en la barra lateral. Proporciona una vista de alto nivel de su actividad de ofrendas con indicadores clave de rendimiento.
+El **Panel de Donaciones** es lo primero que ves cuando abres la sección de **Donaciones**. Proporciona una vista de alto nivel de tu actividad de donaciones con indicadores clave de desempeño.
 
-1. Navegue a **Donaciones** en la barra lateral para abrir el panel.
-2. En la parte superior, cuatro **tarjetas de KPI** muestran sus métricas de ofrendas de un vistazo:
-   - **Total de Ofrendas** -- El monto total donado en el período seleccionado.
-   - **Ofrenda Promedio** -- El monto promedio de donación.
-   - **Donantes Únicos** -- El número de personas distintas que ofrendaron.
-   - **Total de Donaciones** -- El número total de donaciones individuales.
-3. Use el **selector de período** para cambiar entre vistas **Semanal**, **Mensual** y **Trimestral**.
-4. Debajo de los KPI, un gráfico muestra las tendencias de ofrendas para el período seleccionado.
-5. Haga clic en **Descargar** para exportar un archivo CSV con los totales de ofrendas.
+1. Abre el **menú de sección** en la esquina superior izquierda y elige **Donaciones** para abrir el panel.
+2. En la parte superior, cuatro **tarjetas KPI** muestran tus métricas de donaciones de un vistazo:
+   - **Donación Total** -- La cantidad total donada en el período seleccionado.
+   - **Donación Promedio** -- La cantidad de donación promedio.
+   - **Donantes Únicos** -- El número de personas distintas que dieron.
+   - **Total de Donaciones** -- El número total de registros de donaciones individuales.
+3. Usa el **alternador de período** para cambiar entre vistas **Semanal**, **Mensual** y **Trimestral**.
+4. Debajo de los KPI, un gráfico muestra tendencias de donaciones para el período seleccionado.
+5. Haz clic en **Descargar** para exportar un archivo CSV con totales de donaciones.
 
-## Página de Resumen de Donaciones
+## Página Resumen de Donaciones
 
-La página de **Resumen** proporciona datos agregados de ofrendas más detallados.
+La página **Resumen** proporciona datos de donaciones agregadas más detallados.
 
-1. Navegue a **Donaciones** en la barra lateral para abrir la página de Resumen.
-2. Use el **filtro de rango de fechas** para seleccionar el período de tiempo que desea revisar. Establezca la fecha más antigua arriba y la más reciente abajo.
-3. La página muestra un gráfico semanal de ofrendas para que pueda ver tendencias de un vistazo.
-4. Haga clic en **Descargar** para exportar un archivo CSV con el monto total ofrendado, la semana en que se ofrendó y el fondo al que se destinó.
+1. Abre el **menú de sección** en la esquina superior izquierda y elige **Donaciones** para abrir la página de Resumen.
+2. Usa el **filtro de rango de fechas** para seleccionar el período de tiempo que deseas revisar. Establece la fecha anterior en la parte superior y la fecha más reciente en la parte inferior.
+3. La página muestra un gráfico de donaciones semanales para que veas tendencias de un vistazo.
+4. Haz clic en **Descargar** para exportar un archivo CSV con la cantidad total donada, la semana en que se donó, y el fondo al que se donó.
 
 :::info
-La página de Resumen muestra datos agregados de ofrendas. No incluye nombres de donantes individuales. Para detalles a nivel de donante, use la página de [Lotes](batches.md).
+La página de Resumen muestra datos de donaciones agregados. No incluye nombres de donantes individuales. Para detalles a nivel de donante, usa la página [Lotes](batches.md).
 :::
 
-## Visualización de Detalles por Donante
+## Ver Detalles a Nivel de Donante
 
-Para un desglose de quién ofrendó, cuánto y a qué fondo:
+Para un desglose de quién donó, cuánto, y a qué fondo:
 
-1. Navegue a **Donaciones > Lotes**.
-2. Haga clic en el **nombre de un lote** para abrirlo.
-3. La página de detalle del lote lista cada donación con el nombre del donante, monto, fondo, fecha y método de pago.
-4. Haga clic en el **nombre de un donante** para ver un desglose de cuántas veces donó y cuánto cada vez.
-5. Haga clic en un **ID de donación** para abrir un panel lateral con los detalles completos de esa donación individual.
-6. Haga clic en **Descargar** para exportar un CSV con toda la información de donantes y donaciones de ese lote.
+1. Navega a **Donaciones > Lotes**.
+2. Haz clic en un **nombre de lote** para abrirlo.
+3. La página de detalle del lote lista cada donación con el nombre del donante, cantidad, fondo, fecha y método de pago.
+4. Haz clic en el **nombre de un donante** para ver un desglose de cuántas veces donaron y cuánto cada vez.
+5. Haz clic en una **ID de donación** para abrir un panel lateral con los detalles completos de esa donación individual.
+6. Haz clic en **Descargar** para exportar un CSV con toda la información de donante y donación para ese lote.
 
-## Informe de Resumen de Donaciones
+## Reporte de Resumen de Donaciones
 
-B1 Admin también incluye un informe de **Resumen de Donaciones** en la sección de Informes:
+El reporte de donaciones está integrado directamente en la sección de Donaciones -- la página de Resumen sirve como tu reporte de resumen de donaciones:
 
-1. Haga clic en **Informes** en la barra lateral.
-2. Seleccione el informe **Resumen de Donaciones**.
-3. Elija sus filtros (rango de fechas, fondo, sede, etc.) y ejecute el informe.
+1. Abre el **menú de sección** en la esquina superior izquierda y elige **Donaciones** para abrir la página de Resumen.
+2. Usa el **filtro de rango de fechas** para seleccionar el período que deseas reportar.
+3. Haz clic en **Descargar** para exportar el reporte como un archivo CSV.
 
-## Exportación de Datos
+## Exportar Datos
 
-Puede exportar datos de donaciones desde múltiples lugares:
+Puedes exportar datos de donaciones desde múltiples lugares:
 
-- **Página de Resumen** -- descargar un CSV de totales semanales de ofrendas por fondo
-- **Página de detalle del lote** -- descargar un CSV de donaciones individuales con detalles del donante
-- **Página de detalle del fondo** -- descargar el historial de donaciones de un fondo específico
+- **Página de resumen** -- descarga un CSV de totales de donaciones semanales por fondo
+- **Página de detalle de lote** -- descarga un CSV de donaciones individuales con detalles de donante
+- **Página de detalle de fondo** -- descarga el historial de donaciones para un fondo específico
 
 :::tip
-Para informes de fin de año, combine la exportación de la página de Resumen con la herramienta de [Estados de Ofrendas](giving-statements.md) para obtener tanto tendencias agregadas como estados individuales de donantes.
+Para reportes de fin de año, combina la exportación de la página de Resumen con la herramienta [Declaraciones de Donaciones](giving-statements.md) para obtener tanto tendencias agregadas como declaraciones de donantes individuales.
 :::
 
 ## Próximos Pasos
 
-- Generar [Estados de Ofrendas](giving-statements.md) para sus donantes al final del año
-- Revisar [lotes](batches.md) individuales para verificar detalles de donaciones
-- Consultar las páginas de detalle de [fondos](funds.md) para desgloses de ofrendas por categoría
+- Genera [Declaraciones de Donaciones](giving-statements.md) para tus donantes al final del año
+- Revisa [lotes](batches.md) individuales para verificar detalles de donación
+- Verifica páginas de detalle de [fondo](funds.md) para desglose de donaciones por categoría

@@ -1,59 +1,51 @@
 ---
-title: "Panoramica del portale"
+title: "Panoramica del Portale"
 ---
 
-# Panoramica del portale
+# Panoramica del Portale
 
 <div class="article-intro">
 
-Dopo aver effettuato l'accesso a Lessons.church, vieni portato al **Portale** -- la dashboard della tua chiesa per gestire classi e programmazioni delle lezioni. È qui che trascorrerai la maggior parte del tempo quando organizzi il materiale didattico per la tua chiesa.
+Dopo aver effettuato l'accesso a Lessons.church, sei portato al **Portale** -- la dashboard della tua chiesa per gestire le aule e i programmi di lezioni. Questo è dove trascorrerai la maggior parte del tuo tempo quando organizzi il curriculum per la tua chiesa.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di iniziare</h4>
+<h4>Prima di Iniziare</h4>
 
-- [Crea un account](./creating-account.md) e collegati alla tua chiesa
+- [Crea un account](./creating-account.md) e connettiti alla tua chiesa
 - Accedi a [Lessons.church](https://lessons.church)
 
 </div>
 
-## Cosa vedi
+## Cosa Vedi
 
 Il portale è organizzato in due aree principali:
 
-- **Classi** (lato destro) -- Un elenco delle classi della tua chiesa. Clicca sul nome di una classe per vedere le lezioni programmate. Puoi anche aggiungere nuove classi o modificare quelle esistenti da qui.
-- **Lezioni programmate** (lato sinistro) -- Una volta selezionata una classe, quest'area mostra le lezioni che sono state programmate per essa. Se non hai ancora configurato nessuna classe, vedrai un video con le istruzioni di configurazione per aiutarti a iniziare.
+- **Aule** (lato destro) -- Un elenco delle aule della tua chiesa. Fai clic sul nome di un'aula per visualizzare le lezioni programmate per essa.
+- **Lezioni Programmate** (lato sinistro) -- Una volta selezionata un'aula, quest'area visualizza le lezioni programmate per essa.
 
-## Cosa puoi fare dal portale
+## Cosa Puoi Fare dal Portale
 
 Dal portale, puoi:
 
-1. **Gestire le classi** -- Aggiungere, modificare o rimuovere classi. Ogni classe può essere collegata a un team di volontari (così vedono le lezioni in arrivo nell'app B1) e a un gruppo di genitori/studenti (così possono accedere alle lezioni recenti).
-2. **Visualizzare e gestire le lezioni programmate** -- Vedere quali lezioni sono in arrivo per ogni classe e apportare modifiche secondo necessità.
-3. **Iscriversi ai feed delle classi** -- Clicca sull'icona del feed accanto a una classe per ottenere un URL del feed playlist che puoi utilizzare con app compatibili.
-4. **Accedere ai fornitori esterni** -- Usa la pagina **Fornitori esterni** per configurare fonti di contenuti di terze parti che supportano l'Open Lesson Format. Questo ti permette di importare lezioni da altri fornitori oltre alla libreria integrata di Lessons.church.
-5. **Accedere all'area di amministrazione** -- Se hai i permessi di amministratore, vedrai un'opzione **Amministrazione** nella navigazione. L'area di amministrazione ti permette di gestire programmi, studi e lezioni a livello di contenuto.
+1. **Gestisci le aule** -- Aggiungi, modifica o rimuovi aule.
+2. **Visualizza e gestisci le lezioni programmate** -- Vedi quali lezioni sono in arrivo.
+3. **Accedi all'area Admin** -- Se hai le autorizzazioni di amministrazione, potrai gestire programmi, studi e contenuti di lezioni a livello di contenuto.
 
 ## Navigazione
 
 La navigazione del portale include:
 
-- **Home** -- Torna alla home page pubblica di Lessons.church per sfogliare i contenuti.
-- **Programmazioni** -- La vista principale del portale per gestire classi e programmazioni delle lezioni.
-- **Fornitori esterni** -- Configura fornitori di lezioni di terze parti.
-- **Amministrazione** -- Gestisci programmi, studi e contenuti delle lezioni (visibile solo se hai i permessi di amministratore).
+- **Home** -- Torna alla home page pubblica di Lessons.church.
+- **Programmi** -- Visualizza e gestisci i programmi di curriculum.
+- **Aule** -- Gestisci le aule della tua chiesa.
 
-:::info
-L'opzione **Amministrazione** appare solo se al tuo account sono stati concessi i permessi di modifica dei contenuti. La maggior parte dello staff della chiesa utilizzerà le pagine **Programmazioni** e **Fornitori esterni** per la gestione quotidiana.
-:::
+## Iniziare
 
-## Per iniziare
+Se stai visitando il portale per la prima volta e non hai ancora creato nessun'aula, fai clic su **Aggiungi Prima Aula** nel pannello delle aule. Dai alla tua aula un nome e salvala.
 
-Se stai visitando il portale per la prima volta e non hai ancora creato nessuna classe, inizia cliccando su **Aggiungi prima classe** nel pannello delle classi. Dai alla tua classe un nome (ad esempio, "Prescolare" o "3a-5a elementare") e salvala. Da lì, puoi iniziare a [programmare le lezioni](../classrooms/scheduling-lessons.md).
+## Articoli Correlati
 
-## Articoli correlati
-
-- [Configurazione delle classi](../classrooms/setting-up-classrooms.md) -- Guida dettagliata per creare e gestire le classi
-- [Navigazione dei contenuti](../browsing/index.md) -- Trovare programmi e studi da programmare
-- [Fornitori esterni](../browsing/external-providers.md) -- Aggiungere fonti di materiale didattico di terze parti
+- [Configurazione delle Aule](../classrooms/setting-up-classrooms.md) -- Guida dettagliata per creare e gestire le aule
+- [Pianificazione di Lezioni](../classrooms/scheduling-lessons.md) -- Pianifica il contenuto per le aule

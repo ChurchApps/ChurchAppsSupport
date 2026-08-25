@@ -52,6 +52,7 @@ Two structural rules shape everything documented in this section:
 | [Audit Log & Undoable Batches](./audit-log) | Default-on auditing of every mutation at the controller choke point, and the batch layer that makes imports and bulk actions undoable | Api (all modules), B1Admin, B1Transfer |
 | [MinistryStuff](./ministrystuff) | The paid storage & texting-credit service: shared-JWT identity, service-key S2S, the texting and storage provider seams, Stripe billing | MinistryStuffApi, MinistryStuffWeb, Api (content + messaging), texting/apihelper packages, B1Admin |
 | [Bring-Your-Own Storage](./byos-storage) | Churches link Google Drive, Dropbox, OneDrive or an S3-compatible bucket for uploads past the free 100MB: OAuth connect, per-provider upload shapes, the public download redirect | Api (content + membership), helpers/apphelper packages, B1Admin, B1App |
+| [Content Commons](./commons) | The shared asset/submission spine behind cross-product user-generated content, and the single staff-only moderation queue in B1Admin Server Admin | Api (commons module), B1Admin, WorshipCommons, Lessons.church, FreeShow |
 
 :::tip
 When a change alters how one of these systems works — not just a page inside one app — the matching system map here should be updated in the same effort. That keeps this section trustworthy as the first stop for new contributors.

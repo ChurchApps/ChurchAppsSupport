@@ -1,12 +1,12 @@
----
-title: "Planlegge leksjoner"
+﻿---
+title: "Planlegging av leksjoner"
 ---
 
-# Planlegge leksjoner
+# Planlegging av leksjoner
 
 <div class="article-intro">
 
-Når klasserommene dine er satt opp, er neste steg å planlegge leksjoner slik at de frivillige vet nøyaktig hva de skal undervise og når. Planlegging kobler leksjonsinnholdet fra Lessons.church til klasseromkalenderen din.
+Når klasserommene er satt opp, er neste trinn å planlegge leksjoner slik at frivillige vet nøyaktig hva de skal undervise og når. Planlegging av leksjoner knytter læreplaninnholdet fra Lessons.church til klasserommets kalender.
 
 </div>
 
@@ -14,46 +14,47 @@ Når klasserommene dine er satt opp, er neste steg å planlegge leksjoner slik a
 <h4>Før du begynner</h4>
 
 - [Sett opp minst ett klasserom](./setting-up-classrooms.md) i portalen
-- [Bla gjennom innholdsbiblioteket](../browsing/index.md) for å finne et program og en studie du vil undervise
+- [Bla gjennom innholdsbibilioteket](../browsing/index.md) for å finne et program og studium du vil undervise
 
 </div>
 
-## Se en klasseromstimeplan
+## Visning av en klasseromtidplan
 
-1. Logg inn og naviger til **Portalen** din.
-2. Klikk på **klasserommet** du vil planlegge.
-3. Timeplanvisningen viser de **siste 4 tidligere leksjonene** og de **neste 4 kommende leksjonene**. Dette gir deg et raskt overblikk over hva som nylig ble undervist og hva som kommer.
+1. Logg inn og naviger til **Portal**.
+2. Klikk på **klasserom** du vil planlegge.
+3. Timeplanen viser **siste 4 tidligere leksjoner** og **neste 4 kommende leksjoner**. Dette gir deg et raskt blikk på hva som ble nylig undervist og hva som kommer opp.
 
-## Legge til en leksjon i timeplanen
+## Tillegg av en leksjon til planen
 
-1. Fra klasseromstimeplanvisningen, klikk for å legge til en ny leksjon.
+1. Fra klasserommets planleggingsvisning, klikk for å legge til en ny leksjon.
 2. Velg **datoen** for leksjonen.
-3. Velg **programmet** du vil undervise fra (for eksempel «Bibelfortellinger for barn»).
-4. Velg **studien** innenfor det programmet (for eksempel «Skapelsen og de tidlige fortellingene»).
-5. Velg den spesifikke **leksjonen** du vil planlegge.
-6. Velg riktig **arena** for dette klasserommet. Arenaer representerer aldersgruppespesifikke versjoner av leksjonsinnholdet (for eksempel «Småbarn» eller «Barneskole»). Å velge riktig arena sikrer at de frivillige ser innhold tilpasset klasserommets aldersgruppe.
+3. Velg **programmet** du vil undervise fra (f.eks. "Bible Stories for Kids").
+4. Velg **studium** innenfor det programmet (f.eks. "Creation and Early Stories").
+5. Plukk den spesifikk **leksjonen** du vil planlegge.
+6. Velg passende **venue** for dette klasserom. Venues representerer aldersgruppespecifikke versjoner av leksjonsinnholdet.
 7. Lagre den planlagte leksjonen.
 
-Leksjonen vil nå vises på klasseromstimeplanen for den datoen.
+Leksjonen vil nå vises på klasserommets plan for den datoen.
 
 :::info
-Programmer, studier og leksjoner utgjør innholdshierarkiet på Lessons.church. Et program inneholder flere studier, og hver studie inneholder individuelle leksjoner. Arenaer gir aldersspesifikke varianter av samme leksjon. Se [Programmer og studier](../browsing/programs-and-studies.md) for en fullstendig forklaring.
+Programmer, studier og leksjoner er innholdshierarkiet på Lessons.church. Et program inneholder flere studier, og hvert studium inneholder individuelle leksjoner. Venues gir aldersspesifikke variasjoner av samme leksjon. Se [Programs and Studies](../browsing/programs-and-studies.md) for fullstendig forklaring.
 :::
 
-## Hvordan frivillige bruker timeplanen
+## Hvordan frivillige bruker planen
 
-Når du har planlagt leksjoner, kan de frivillige åpne portalen, velge klasserommet sitt og umiddelbart se hva som kommer. De kan gjennomgå leksjonsinnholdet på forhånd, laste ned eventuelle materialer de trenger, og komme forberedt. Ingen mer gjetting om hva som skal undervises.
+Når du har planlagt leksjoner, kan frivillige åpne portalen, velge sitt klasserom, og umiddelbart se hva som kommer. De kan gjennomgå leksjonsinnholdet på forhånd, laste ned eventuelle materialer de trenger, og komme forberedt.
 
 ## Tips for planlegging
 
-- **Planlegg fremover** -- Planlegg flere uker med leksjoner om gangen slik at teamet ditt kan forberede seg i god tid.
-- **Vær konsekvent** -- Å følge et program sekvensielt hjelper barna å bygge på det de lærte forrige uke.
-- **Sjekk historikken** -- Bruk listen over tidligere leksjoner for å forsikre deg om at du ikke ved et uhell gjentar innhold.
+- **Plan ahead** -- Kirker planlegger klasseroomsleksjoner i [B1 Admin](../../b1-admin/serving/scheduling-lessons.md).
+- **Stay consistent** -- Følge et program sekvensielt hjelper barn med å bygge på det de lærte forrige uke.
+- **Check the history** -- Bruk tidligere leksjoners liste for å sørge for at du ikke utilsiktet gjentar innhold.
 
 :::warning
-Sørg for å velge riktig arena for klasseromets aldersgruppe. Å velge feil arena betyr at de frivillige vil se innhold designet for et annet aldersnivå.
+Sørg for å velge riktig venue for klasserooms aldersgruppe. Velge feil venue betyr at frivillige vil se innhold designet for en annen alder.
 :::
 
-## Hva er neste steg
+## Neste steg
 
-Etter å ha planlagt leksjoner, kan det hende du vil [tilpasse leksjonsinnholdet](../customization/customizing-lessons.md) for spesifikke klasserom slik at det passer din undervisningsstil og aldersgruppens behov. Når det er tid for undervisning, lær om [Presentasjon](../presenting/index.md) for å levere leksjoner effektivt.
+Etter planlegging av leksjoner, vil du kanskje [tilpasse leksjonsinnholdet](../customization/customizing-lessons.md) for spesifikke klasserom. Når det er tid å undervise, lær om [Presenting](../presenting/index.md) for å levere leksjoner effektivt.
+

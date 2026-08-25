@@ -1,4 +1,4 @@
----
+﻿---
 title: "Listas Guardadas"
 ---
 
@@ -6,63 +6,63 @@ title: "Listas Guardadas"
 
 <div class="article-intro">
 
-Las **Listas Guardadas** le permiten almacenar una consulta de búsqueda bajo un nombre y volver a ejecutarla con un solo clic en cualquier momento. Cree una lista una vez — "Miembros Activos en la Sede Norte," "Visitantes en los últimos 90 días," o cualquier filtro avanzado — y permanece en su barra lateral para que nunca tenga que reconstruir la consulta de nuevo.
+**Listas Guardadas** te permiten guardar una consulta de búsqueda bajo un nombre y re-ejecutarla con un clic en cualquier momento. Construye una lista una vez -- "Miembros Activos en Campus Norte", "Visitantes en los últimos 90 días", o cualquier filtro avanzado -- y permanece en el panel **Listas Guardadas** en la página de Personas para que nunca tengas que reconstruir la consulta nuevamente.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- Ejecute al menos una búsqueda en la sección Personas para tener resultados que guardar. Consulte [Búsqueda de Personas](./searching-people.md) o [Búsqueda con IA](./ai-search.md).
+- Ejecuta al menos una búsqueda en la sección de Personas para que tengas resultados para guardar. Consulta [Buscar Personas](./searching-people.md) o [Búsqueda de IA](./ai-search.md).
 
 </div>
 
-## Guardar una Búsqueda como Lista
+## Guardar una Búsqueda como una Lista
 
-1. Ejecute una búsqueda en la página **Personas** — una búsqueda rápida, una búsqueda con IA, o una búsqueda de filtro avanzado.
-2. Cuando aparezcan los resultados, aparecerá un botón **Guardar como Lista** (ícono de marcador) en el encabezado de la página Personas.
-3. Haga clic en **Guardar como Lista**.
-4. Ingrese un **Nombre** para la lista (obligatorio).
-5. Opcionalmente ingrese una **Categoría** para agrupar listas relacionadas en la barra lateral (por ejemplo, "Alcance" o "Membresía").
-6. Haga clic en **Guardar**.
+1. Ejecuta una búsqueda en la página **Personas** -- una búsqueda rápida, una búsqueda de IA, o una búsqueda de filtro avanzado.
+2. Cuando aparecen resultados, un botón **Guardar como Lista** (icono de marcador) aparece en el encabezado de la página de Personas.
+3. Haz clic en **Guardar como Lista**.
+4. Ingresa un **Nombre** para la lista (requerido).
+5. Opcionalmente ingresa una **Categoría** para agrupar listas relacionadas juntas en el panel **Listas Guardadas** (por ejemplo, "Alcance" o "Membresía").
+6. Haz clic en **Guardar**.
 
-La lista ahora está guardada en la cuenta de su iglesia y aparecerá en el panel de **Listas Guardadas** en el lado izquierdo de la página Personas.
+La lista ahora se guarda en la cuenta de tu iglesia y aparecerá en el panel **Listas Guardadas** en el lado izquierdo de la página de Personas.
 
 :::info
-Las listas se comparten en toda su iglesia — cualquiera con acceso a Personas puede verlas y cargarlas. Solo el personal con el permiso adecuado puede renombrar o eliminar listas.
+Las listas se comparten en toda tu iglesia -- cualquiera con acceso a Personas puede verlas y cargarlas. Solo el personal con el permiso apropiado puede renombrar o eliminar listas.
 :::
 
 ## Cargar una Lista Guardada
 
-En el panel de **Listas Guardadas** en el lado izquierdo de la página Personas, haga clic en cualquier nombre de lista. La búsqueda se vuelve a ejecutar instantáneamente con la consulta almacenada, actualizando la tabla de resultados.
+En el panel **Listas Guardadas** en el lado izquierdo de la página de Personas, haz clic en cualquier nombre de lista. La búsqueda se re-ejecuta instantáneamente con la consulta guardada, actualizando la tabla de resultados.
 
-Las listas se agrupan por categoría (si asignó una), con las listas sin categoría apareciendo al final.
+Las listas se agrupan por categoría (si asignaste una), con listas sin categorizar apareciendo al final.
 
 :::tip
-Las listas son **consultas en vivo**, no instantáneas. Cada vez que carga una lista, la búsqueda se ejecuta de nuevo contra sus datos actuales, así que las nuevas personas que ahora coincidan con los criterios aparecerán.
+Las listas son **consultas activas**, no instantáneas. Cada vez que cargas una lista, la búsqueda se ejecuta de nuevo contra tus datos actuales, por lo que nuevas personas que ahora coincidan con los criterios aparecerán.
 :::
 
 ## Renombrar y Eliminar Listas
 
-El personal con permiso de administración puede renombrar o eliminar cualquier lista directamente desde el panel de Listas Guardadas.
+El personal con permiso de gestión puede renombrar o eliminar cualquier lista directamente desde el panel de Listas Guardadas.
 
-- Haga clic en el **ícono de lápiz** junto al nombre de una lista para renombrarla.
-- Haga clic en el **ícono de papelera** para eliminarla (se le pedirá que confirme).
+- Haz clic en el **icono de lápiz** junto a un nombre de lista para renombrarlo.
+- Haz clic en el **icono de papelera** para eliminarlo (se te pedirá que confirmes).
 
 ## Casos de Uso
 
 | Escenario | Cómo construir la lista |
-|---|---|
+|----------|------------------------|
 | Todos los visitantes | Búsqueda avanzada: Estado de Membresía = Visitante |
-| Miembros en una sede específica | Búsqueda avanzada: Sede = [su sede] |
-| Personas sin dirección de correo electrónico | Búsqueda avanzada: Correo electrónico está vacío |
-| Voluntarios con una verificación de antecedentes vencida | Búsqueda avanzada: [Campo Personalizado](../settings/custom-fields.md) "La verificación de antecedentes vence" es antes de hoy |
-| Resultados de una pregunta con IA | Haga una pregunta en Búsqueda con IA, luego guarde |
+| Miembros en un campus específico | Búsqueda avanzada: Campus = [tu campus] |
+| Personas sin dirección de correo electrónico | Búsqueda avanzada: Correo Electrónico está vacío |
+| Voluntarios con un cheque de antecedentes vencido | Búsqueda avanzada: [Campo Personalizado](../settings/custom-fields.md) "Cheque de antecedentes vence" es antes de hoy |
+| Resultados de una pregunta de IA | Haz una pregunta en Búsqueda de IA, luego guarda |
 
 ## Artículos Relacionados
 
-- [Búsqueda de Personas](./searching-people.md) — búsqueda rápida y personalización de columnas
-- [Búsqueda con IA](./ai-search.md) — consultas en lenguaje natural que puede guardar como listas
-- [Campos Personalizados](../settings/custom-fields.md) — defina sus propios campos de persona, luego filtre y guarde listas sobre ellos
-- [Demografía](./demographics.md) — profundice un gráfico demográfico en un filtro de Personas, luego guárdelo como lista
-- [Edición Masiva](./bulk-editing.md) — después de cargar una lista, actualice en masa todos sus miembros a la vez
+- [Buscar Personas](./searching-people.md) -- búsqueda rápida y personalización de columnas
+- [Búsqueda de IA](./ai-search.md) -- consultas en lenguaje natural que puedes guardar como listas
+- [Campos Personalizados](../settings/custom-fields.md) -- define tus propios campos de persona, luego filtra y guarda listas en ellos
+- [Demográficos](./demographics.md) -- penetra un gráfico demográfico en un filtro de Personas, luego guárdalo como una lista
+- [Edición en Lote](./bulk-editing.md) -- después de cargar una lista, actualiza en lote a todos sus miembros
