@@ -6,7 +6,7 @@ title: "Online Giving Setup"
 
 <div class="article-intro">
 
-B1 Admin integrates with **Stripe**, **PayPal**, and **Kingdom Funding** so your members can give online through your B1.church site. Once configured, online donations automatically appear in your donation records alongside manually entered gifts, keeping everything in one system.
+B1 Admin integrates with **Stripe**, **PayPal**, **Kingdom Funding**, and **Paystack** (for churches in Africa) so your members can give online through your B1.church site. Once configured, online donations automatically appear in your donation records alongside manually entered gifts, keeping everything in one system.
 
 </div>
 
@@ -99,6 +99,23 @@ Kingdom Funding integration is currently in beta. Contact your B1 account repres
 7. Save.
 
 Once connected, members will see a card/bank toggle on the donation page and can give by credit card or ACH transfer.
+
+## Setting Up Paystack (Africa)
+
+Stripe does not open accounts for churches in Ghana, Nigeria, Kenya, South Africa or Côte d'Ivoire. [Paystack](https://paystack.com) does, and it accepts local cards, **mobile money** (MTN MoMo, Vodafone Cash, AirtelTigo, M-PESA), bank transfer and USSD — donors pay in your local currency (GHS, NGN, KES, ZAR, XOF).
+
+1. Register at [paystack.com](https://paystack.com) with your church's business registration certificate and local bank account, and complete Paystack's activation (go-live) review.
+2. In the Paystack Dashboard open **Settings → API Keys & Webhooks** and copy the **Public Key** and **Secret Key** (use the live keys, not the test keys).
+3. In B1 Admin, go to **Settings**, open the **Giving** section and click edit.
+4. Set the **Provider** to **Paystack**, paste the Public Key and Secret Key, and choose your **Currency**.
+5. Copy the **webhook URL** shown under the provider, go back to the Paystack Dashboard (**Settings → API Keys & Webhooks**) and paste it into the **Webhook URL** field. This is how recurring gifts and mobile money payments get recorded.
+6. Save.
+
+Donors complete their payment in a secure Paystack window and can pick card, mobile money or bank transfer there. Notes:
+
+- **Recurring gifts** need a card; mobile money can't be charged again automatically, so Paystack only allows one-time mobile money gifts.
+- Paystack recurring gifts can be cancelled from B1 but not paused or edited — cancel and create a new one to change the amount.
+- The **Processing Fee** defaults reflect Paystack's local-card rates for your currency; edit them if your negotiated rates differ.
 
 ## Next Steps
 
