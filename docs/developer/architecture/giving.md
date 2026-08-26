@@ -67,7 +67,7 @@ Each provider tokenizes differently, but all keep the card out of B1:
 
 | Provider | Entry widget | Token returned to API |
 |----------|--------------|-----------------------|
-| Stripe | Stripe `Elements` `CardElement` → `stripe.createPaymentMethod(...)` | payment-method id (`pm_…`); bank via Financial Connections / ACH SetupIntent |
+| Stripe | Stripe `Elements` `CardElement` → `stripe.createPaymentMethod(...)` | payment-method id (`pm_…`); bank via `/paymentmethods/ach-setup-intent` — Financial Connections `us_bank_account` for USD gateways, Canadian PAD `acss_debit` (hosted mandate modal, mandate `default_for` invoices/subscriptions, one-off charges pass the mandate id) for CAD gateways |
 | Kingdom Funding | Hosted tokenizer form keyed by the gateway public key | single-use nonce |
 | PayPal | PayPal Hosted Fields; server order built via `/donate/client-token` + `/donate/create-order` | captured order id |
 | Paystack | Paystack Inline popup (`js.paystack.co/v2/inline.js`) — the popup itself takes the payment (card, mobile money, bank transfer, USSD) | paid transaction reference; saved methods are Paystack `AUTH_…` authorization codes |
