@@ -46,7 +46,7 @@ Un jeton d'accès OAuth a exactement la même forme qu'un JWT de connexion -- la
 
 ### Clés API
 
-Un jeton d'accès personnel \cak_<prefix>.<secret>\, créé dans **B1Admin → Paramètres → Développeur → Clés API**. Seul un hash SHA-256 est stocké. Géré à `/membership/apiKeys`. Idéal pour les scripts propres d'une seule église et pour les connecteurs comme Zapier et Make.
+Un jeton d'accès personnel `cak_<prefix>.<secret>`, créé dans **B1Admin → Paramètres → Développeur → Clés API**. Seul un hash SHA-256 est stocké. Géré à `/membership/apiKeys`. Idéal pour les scripts propres d'une seule église et pour les connecteurs comme Zapier et Make.
 
 ### OAuth 2.0 et applications connectées
 

@@ -35,7 +35,7 @@ Les conversations avec `contentType: "person"` (l'onglet Notes sur un dossier de
 
 ### Exemple : Démarrer une conversation
 
-\\\
+```
 POST /messaging/conversations/start
 Authorization: Bearer <token>
 
@@ -46,7 +46,7 @@ Authorization: Bearer <token>
   "title": "Weekly Discussion",
   "comment": "Welcome to this week's discussion thread!"
 }
-\\\
+```
 
 ## Messages
 

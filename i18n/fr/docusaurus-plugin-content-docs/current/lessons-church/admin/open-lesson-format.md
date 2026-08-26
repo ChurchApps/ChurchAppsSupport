@@ -23,7 +23,7 @@ Quand une église ajoute l'URL de votre fournisseur dans Lessons.church, la plat
 
 Votre URL de fournisseur doit renvoyer un objet JSON avec cette structure :
 
-\\\json
+```json
 {
   "programs": [
     {
@@ -36,7 +36,7 @@ Votre URL de fournisseur doit renvoyer un objet JSON avec cette structure :
     }
   ]
 }
-\\\
+```
 
 ## Champs de l'arborescence
 
