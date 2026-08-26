@@ -1,12 +1,12 @@
 ---
-title: "Anniversary Report"
+title: "Anniversary List"
 ---
 
-# Anniversary Report
+# Anniversary List
 
 <div class="article-intro">
 
-The Anniversary Report helps you stay connected with your congregation by showing members with upcoming wedding anniversaries. Use it to plan celebrations, send cards, or make announcements during services.
+Need a list of everyone with a wedding anniversary in a given month — for the bulletin, cards, or announcements? The People search lets you filter by **Anniversary Month** and show the dates right in the results.
 
 </div>
 
@@ -14,36 +14,32 @@ The Anniversary Report helps you stay connected with your congregation by showin
 <h4>Before You Begin</h4>
 
 - Ensure anniversary dates are entered on each person's profile. See [Adding People](../people/adding-people.md) for details.
-- You need the appropriate [permissions](../settings/roles-permissions.md) to access reports
+- You need permission to view People. See [Roles & Permissions](../settings/roles-permissions.md).
 
 </div>
 
-## Running the Report
+## Getting an Anniversary List for a Month
 
-1. Go directly to **admin.b1.church/reports/anniversaries** in your browser (reports have no entry in the navigation menu — bookmarking the address is the easiest way to get back to it).
-2. Choose the **Month** you want from the dropdown. You can optionally limit the results to a single **Group**.
-3. Click **Run Report**. The report lists everyone with an anniversary in that month, with the date — ready to read straight into a bulletin or announcement list.
-
-## What the Report Shows
-
-The Anniversary Report displays:
-
-- **Anniversary** -- The date of their wedding anniversary.
-- **Name** -- The person's name from your church database.
-
-Results cover the month you selected, making it easy to see who has an anniversary coming up.
+1. Open the **section menu** in the top-left corner and choose **People**.
+2. Under the search box, click **Advanced**.
+3. Expand the **Demographics** section and check **Anniversary Month**, then choose the month.
+4. Run the search — everyone with an anniversary that month appears in the results.
+5. To see the dates, click the **columns icon** at the top right of the results and enable the **Anniversary** column. Use **Export** to download the list as a spreadsheet if you prefer to sort or print it.
 
 ## Practical Uses
 
-- **Weekly announcements** -- Run the report for the upcoming week and include anniversaries in your bulletin or announcements.
-- **Anniversary cards** -- Generate a list for the month and have your team send personal anniversary cards.
-- **Small group leaders** -- Group leaders can run the report to remember anniversaries of members in their group.
-- **Milestone celebrations** -- Filter for specific date ranges to plan milestone anniversary celebrations.
+- **Weekly bulletins** -- Run the current month's list and include anniversaries in your bulletin or announcements.
+- **Anniversary cards** -- Export the month's list and hand it to your card-writing team.
+- **Milestone celebrations** -- Combine with the **Years Married** filter to find milestone anniversaries.
 
 :::tip
-Run this report at the beginning of each month to plan ahead. You can set the date range to cover the entire month so you have time to prepare cards or announcements.
+Run this at the beginning of each month so you have time to prepare cards or announcements before anniversaries arrive.
 :::
 
 :::info
-Anniversary data comes from the anniversary field on each person's profile. Make sure your [membership records](../people/adding-people.md) are up to date for accurate results.
+Anniversary data comes from the anniversary field on each person's profile. If someone is missing, their profile just needs the date added. See [Adding People](../people/adding-people.md).
 :::
+
+## Also See
+
+Looking for birthdays at the same time? See [Birthday & Anniversary Lists](./birthday-report.md) to pull both in one search.
