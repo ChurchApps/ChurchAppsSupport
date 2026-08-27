@@ -1,68 +1,68 @@
-﻿---
-title: "Listas Salvas"
+---
+title: "Saved Lists"
 ---
 
-# Listas Salvas
+# Saved Lists
 
 <div class="article-intro">
 
-**Listas Salvas** permitem você armazenar uma consulta de busca sob um nome e executá-la com um clique a qualquer momento. Construa uma lista uma vez — "Membros Ativos no Campus Norte," "Visitantes nos últimos 90 dias," ou qualquer filtro avançado — e fica no painel **Listas Salvas** na página Pessoas para que você nunca tenha que reconstruir a consulta novamente.
+**Saved Lists** let you store a search query under a name and re-run it with one click at any time. Build a list once — "Active Members in Campus North," "Visitors in the last 90 days," or any advanced filter — and it stays in the **Saved Lists** panel on the People page so you never have to rebuild the query again.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Before You Begin</h4>
 
-- Execute pelo menos uma busca na seção Pessoas para ter resultados para salvar. Consulte [Buscando Pessoas](./searching-people.md) ou [Busca de IA](./ai-search.md).
+- Run at least one search in the People section so you have results to save. See [Searching People](./searching-people.md) or [AI Search](./ai-search.md).
 
 </div>
 
-## Salvando uma Busca como uma Lista
+## Saving a Search as a List
 
-1. Execute uma busca na página **Pessoas** — uma busca rápida, uma busca de IA ou uma busca de filtro avançado.
-2. Quando os resultados aparecem, um botão **Salvar como Lista** (ícone de marcador) aparece no cabeçalho da página Pessoas.
-3. Clique em **Salvar como Lista**.
-4. Digite um **Nome** para a lista (obrigatório).
-5. Opcionalmente digite uma **Categoria** para agrupar listas relacionadas juntas no painel **Listas Salvas** (por exemplo, "Alcance" ou "Associação").
-6. Clique em **Salvar**.
+1. Run a search on the **People** page — a quick search, an AI search, or an advanced filter search.
+2. When results appear, a **Save as List** button (bookmark icon) shows in the People page header.
+3. Click **Save as List**.
+4. Enter a **Name** for the list (required).
+5. Optionally enter a **Category** to group related lists together in the **Saved Lists** panel (for example, "Outreach" or "Membership").
+6. Click **Save**.
 
-A lista agora está salva na conta de sua igreja e aparecerá no painel **Listas Salvas** no lado esquerdo da página Pessoas.
+The list is now saved to your church's account and will appear in the **Saved Lists** panel on the left side of the People page.
 
 :::info
-Listas são compartilhadas entre sua igreja — qualquer um com acesso a Pessoas pode vê-las e carregá-las. Apenas staff com permissão apropriada pode renomear ou deletar listas.
+Lists are shared across your church — anyone with People access can see and load them. Only staff with the appropriate permission can rename or delete lists.
 :::
 
-## Carregando uma Lista Salva
+## Loading a Saved List
 
-No painel **Listas Salvas** no lado esquerdo da página Pessoas, clique em qualquer nome de lista. A busca se re-executa instantaneamente com a consulta armazenada, atualizando a tabela de resultados.
+In the **Saved Lists** panel on the left side of the People page, click any list name. The search re-runs instantly with the stored query, updating the results table.
 
-Listas são agrupadas por categoria (se você atribuiu uma), com listas sem categoria aparecendo por último.
+Lists are grouped by category (if you assigned one), with uncategorized lists appearing last.
 
 :::tip
-Listas são **consultas ao vivo**, não snapshots. Cada vez que você carrega uma lista, a busca se executa fresca contra seus dados atuais, para que pessoas novas que agora correspondem aos critérios apareçam.
+Lists are **live queries**, not snapshots. Every time you load a list, the search runs fresh against your current data, so new people who now match the criteria will appear.
 :::
 
-## Renomeando e Deletando Listas
+## Renaming and Deleting Lists
 
-Staff com permissão de gerenciar pode renomear ou deletar qualquer lista diretamente do painel Listas Salvas.
+Staff with manage permission can rename or delete any list directly from the Saved Lists panel.
 
-- Clique no **ícone de lápis** próximo a um nome de lista para renomeá-la.
-- Clique no **ícone de lixo** para deletá-la (você será pedido para confirmar).
+- Click the **pencil icon** next to a list name to rename it.
+- Click the **trash icon** to delete it (you will be asked to confirm).
 
-## Casos de Uso
+## Use Cases
 
-| Cenário | Como construir a lista |
+| Scenario | How to build the list |
 |---|---|
-| Todos os visitantes | Busca avançada: Membership Status = Visitor |
-| Membros em um campus específico | Busca avançada: Campus = [seu campus] |
-| Pessoas sem endereço de email | Busca avançada: Email is empty |
-| Voluntários com verificação de antecedentes expirada | Busca avançada: [Campo Personalizado](../settings/custom-fields.md) "Background check expires" is before today |
-| Resultados de uma pergunta de IA | Faça uma pergunta em Busca de IA, depois salve |
+| All visitors | Advanced search: Membership Status = Visitor |
+| Members at a specific campus | Advanced search: Campus = [your campus] |
+| People without an email address | Advanced search: Email is empty |
+| Volunteers with an expired background check | Advanced search: [Custom Field](../settings/custom-fields.md) "Background check expires" is before today |
+| Results from an AI question | Ask a question in AI Search, then save |
 
 ## Artigos Relacionados
 
-- [Buscando Pessoas](./searching-people.md) — busca rápida e customização de coluna
-- [Busca de IA](./ai-search.md) — consultas em linguagem natural que você pode salvar como listas
-- [Campos Personalizados](../settings/custom-fields.md) — defina seus próprios campos de pessoa, depois filtre e salve listas neles
-- [Dados Demográficos](./demographics.md) — detalhe um gráfico demográfico em um filtro de Pessoas, depois salve como uma lista
-- [Edição em Massa](./bulk-editing.md) — após carregar uma lista, atualizar em massa todos os seus membros de uma vez
+- [Searching People](./searching-people.md) — quick search and column customization
+- [AI Search](./ai-search.md) — natural-language queries you can save as lists
+- [Custom Fields](../settings/custom-fields.md) — define your own person fields, then filter and save lists on them
+- [Demographics](./demographics.md) — drill a demographic chart into a People filter, then save it as a list
+- [Bulk Editing](./bulk-editing.md) — after loading a list, bulk-update all its members at once

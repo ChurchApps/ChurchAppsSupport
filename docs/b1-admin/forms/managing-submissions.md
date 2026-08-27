@@ -55,7 +55,12 @@ The data collected through forms can help you:
 Form members with **Admin** or **View Only** roles can access the Submissions tab. Make sure the right people on your team have access to the forms they need by managing roles in the **Members** tab.
 :::
 
+:::tip
+If a **Stand Alone** form is set to create a person record, any submissions matched to an existing person also show up on that person's own **Forms** tab in the People section — not just People-type forms.
+:::
+
 ## Next Steps
 
 - Learn how to build and customize forms in [Creating Forms](./creating-forms.md)
 - Add people from form submissions to your [people directory](../people/adding-people.md) for ongoing follow-up
+- [Automatically add submitters to a group](./creating-forms.md#automatically-adding-submitters-to-a-group) so a stand-alone sign-up form builds its own roster

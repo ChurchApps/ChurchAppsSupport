@@ -1,23 +1,23 @@
 ---
-title: "Auto-Hospedagem com Docker"
+title: "Self-Hosting with Docker"
 ---
 
-# Auto-Hospedagem com Docker
+# Self-Hosting with Docker
 
 <div class="article-intro">
 
-Execute sua própria instância privada do B1 Admin, do portal de membros B1, da API, e de um banco de dados MySQL em qualquer máquina com Docker — um servidor doméstico, um VPS de $5, ou uma caixa on-premise. Um único `docker compose up` constrói e inicia tudo. Se você preferir não gerenciar um servidor de forma alguma, veja [Auto-Hospedagem no Railway](./railway-template) para a alternativa gerenciada.
+Run your own private instance of B1 Admin, the B1 member portal, the API, and a MySQL database on any machine with Docker — a home server, a $5 VPS, or an on-prem box. One `docker compose up` builds and starts everything. If you'd rather not manage a server at all, see [Self-Hosting on Railway](./railway-template) for the managed alternative.
 
 </div>
 
-## Início Rápido
+## Quick Start
 
 <div class="prereqs">
-<h4>O Que Você Precisa</h4>
+<h4>What You Need</h4>
 
-- [Docker Engine](https://docs.docker.com/engine/install/) com Compose v2 (incluído no Docker Desktop)
-- ~4 GB de RAM disponíveis durante a construção inicial (os aplicativos web são construídos a partir do código-fonte)
-- Git, ou apenas o arquivo `docker-compose.yml` bruto
+- [Docker Engine](https://docs.docker.com/engine/install/) with Compose v2 (included in Docker Desktop)
+- ~4 GB of RAM available during the initial build (the web apps are built from source)
+- Git, or just the raw `docker-compose.yml` file
 
 </div>
 
@@ -27,26 +27,26 @@ cd B1Admin
 docker compose up -d
 ```
 
-A primeira execução leva de 10 a 20 minutos: ela constrói o B1Admin a partir do seu clone e constrói a API e o B1App diretamente a partir de seus repositórios no GitHub. As inicializações seguintes levam segundos.
+The first run takes 10–20 minutes: it builds B1Admin from your clone and builds the API and B1App directly from their GitHub repositories. Subsequent starts are seconds.
 
-Quando os quatro serviços estiverem no ar:
+When all four services are up:
 
-1. Abra **http://localhost:3101** (B1 Admin).
-2. Clique em **Register** e crie sua conta. A primeira conta é automaticamente um administrador de servidor.
-3. Siga as instruções no aplicativo para criar sua primeira igreja.
+1. Open **http://localhost:3101** (B1 Admin).
+2. Click **Register** and create your account. The first account is automatically a server admin.
+3. Follow the in-app prompts to create your first church.
 
-Os esquemas do banco de dados são criados automaticamente pela migração de inicialização do contêiner da API — nenhum SQL manual é necessário.
+Database schemas are created automatically by the API container's startup migration — no manual SQL required.
 
-| Serviço | URL |
+| Service | URL |
 |---------|-----|
-| B1Admin (equipe/admin) | http://localhost:3101 |
-| B1App (portal de membros / website) | http://localhost:3000 |
+| B1Admin (staff/admin) | http://localhost:3101 |
+| B1App (member portal / website) | http://localhost:3000 |
 | API | http://localhost:8084 |
-| MySQL | somente interno (`mysql:3306` na rede do compose) |
+| MySQL | internal only (`mysql:3306` on the compose network) |
 
 ## Configuração
 
-Todas as configurações vivem em um arquivo `.env` ao lado de `docker-compose.yml`. Toda variável tem um padrão funcional para localhost, então o arquivo é opcional até que você queira personalizar algo.
+All settings live in a `.env` file next to `docker-compose.yml`. Every variable has a working default for localhost, so the file is optional until you customize.
 
 ```bash
 # .env — everything is optional; shown with defaults
@@ -69,21 +69,21 @@ SMTP_SECURE=false
 SUPPORT_EMAIL=noreply@yourchurch.org
 ```
 
-Antes de usar de verdade, altere `MYSQL_ROOT_PASSWORD`, `JWT_SECRET`, e `ENCRYPTION_KEY` (qualquer string de 32 caracteres).
+Before real use, change `MYSQL_ROOT_PASSWORD`, `JWT_SECRET`, and `ENCRYPTION_KEY` (any 32-character string).
 
 :::warning
-Os valores `*_URL` são **embutidos nos aplicativos web em tempo de construção** (comportamento padrão do Vite/Next.js). Alterá-los no `.env` exige uma reconstrução, não apenas um reinício:
+The `*_URL` values are **baked into the web apps at build time** (standard Vite/Next.js behavior). Changing them in `.env` requires a rebuild, not just a restart:
 
 ```bash
 docker compose up -d --build
 ```
 :::
 
-Alterar a senha do MySQL depois da primeira inicialização também exige atualizar a senha dentro do próprio MySQL — o volume mantém as credenciais antigas.
+Changing the MySQL password after first launch requires updating the password inside MySQL too — the volume keeps the old credentials.
 
-## Expondo para a Internet
+## Exposing It to the Internet
 
-Coloque qualquer proxy reverso na frente e dê um hostname a cada serviço. Com o [Caddy](https://caddyserver.com/) é assim:
+Put any reverse proxy in front and give each service a hostname. With [Caddy](https://caddyserver.com/) it's this:
 
 ```
 admin.yourchurch.org { reverse_proxy localhost:3101 }
@@ -91,7 +91,7 @@ app.yourchurch.org   { reverse_proxy localhost:3000 }
 api.yourchurch.org   { reverse_proxy localhost:8084 }
 ```
 
-Depois defina as URLs no `.env` e reconstrua:
+Then set the URLs in `.env` and rebuild:
 
 ```bash
 API_URL=https://api.yourchurch.org
@@ -104,43 +104,43 @@ SOCKET_URL=wss://api.yourchurch.org
 docker compose up -d --build
 ```
 
-O WebSocket usado para chat e notificações ao vivo compartilha a porta da API, então `SOCKET_URL` é apenas a URL da API com `wss://`.
+The WebSocket used for chat and live notifications shares the API's port, so `SOCKET_URL` is just the API URL with `wss://`.
 
-## E-mail, Doações, Multi-Site, e Integrações
+## Email, Giving, Multi-Site, and Integrations
 
-Estes funcionam de forma idêntica à implantação no Railway — as mesmas variáveis de ambiente, definidas no seu arquivo `.env` em vez do painel do Railway (o arquivo compose as repassa para a API):
+These work identically to the Railway deployment — the same environment variables, set in your `.env` file instead of the Railway dashboard (the compose file passes them through to the API):
 
-- **[E-mail / SMTP](./railway-template#1-email-highly-recommended)** — fortemente recomendado; sem isso, os membros não conseguem redefinir senhas
-- **[Multi-site](./railway-template#3-multi-site-multiple-churches-on-one-instance)** — igrejas ilimitadas por instância, gerenciadas na interface de admin
-- **[Doações online](./railway-template#4-online-giving-stripe--paypal)** — configuradas por igreja na interface de admin, não via variáveis de ambiente
-- **[Integrações opcionais](./railway-template#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `WEB_PUSH_PUBLIC_KEY`/`WEB_PUSH_PRIVATE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
+- **[Email / SMTP](./railway-template#1-email-highly-recommended)** — strongly recommended; without it members can't reset passwords
+- **[Multi-site](./railway-template#3-multi-site-multiple-churches-on-one-instance)** — unlimited churches per instance, managed in the admin UI
+- **[Online giving](./railway-template#4-online-giving-stripe--paypal)** — configured per-church in the admin UI, not via env vars
+- **[Optional integrations](./railway-template#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `WEB_PUSH_PUBLIC_KEY`/`WEB_PUSH_PRIVATE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
 
-## Dados, Backups, e Armazenamento de Arquivos
+## Data, Backups, and File Storage
 
-Dois volumes Docker nomeados guardam todo o estado:
+Two named Docker volumes hold all state:
 
-| Volume | Conteúdo |
+| Volume | Contents |
 |--------|----------|
-| `mysql-data` | Todos os esquemas do banco de dados |
-| `api-content` | Arquivos enviados — fotos, documentos, imagens do website (montado em `/app/content`) |
+| `mysql-data` | All database schemas |
+| `api-content` | Uploaded files — photos, documents, website images (mounted at `/app/content`) |
 
-Faça backup do banco de dados com um único comando (agende-o com cron):
+Back up the database with a one-liner (schedule it with cron):
 
 ```bash
 docker compose exec mysql mysqldump -uroot -p"$MYSQL_ROOT_PASSWORD" --all-databases > backup-$(date +%F).sql
 ```
 
-Faça backup dos arquivos enviados copiando o volume:
+Back up uploaded files by copying the volume:
 
 ```bash
 docker run --rm -v b1admin_api-content:/data -v "$PWD":/backup alpine tar czf /backup/content-$(date +%F).tgz -C /data .
 ```
 
-Para bibliotecas de mídia grandes, você pode trocar o armazenamento de arquivos para S3 em vez do volume local — defina `FILE_STORE=S3` mais as variáveis `AWS_*` descritas na [seção de Armazenamento de Arquivos do guia do Railway](./railway-template#5-file-storage).
+For large media libraries you can switch file storage to S3 instead of the local volume — set `FILE_STORE=S3` plus the `AWS_*` variables described in the [Railway guide's File Storage section](./railway-template#5-file-storage).
 
-## Atualizando
+## Updating
 
-A API e o B1App são construídos a partir do branch `main` de seus repositórios no GitHub; o B1Admin é construído a partir do seu clone local.
+The API and B1App build from the `main` branch of their GitHub repos; B1Admin builds from your local clone.
 
 ```bash
 git pull                              # update B1Admin
@@ -148,32 +148,32 @@ docker compose build --pull           # rebuild all images against latest main
 docker compose up -d
 ```
 
-As migrações do banco de dados rodam automaticamente quando o contêiner da API inicia.
+Database migrations run automatically when the API container starts.
 
-Para fixar versões em vez de acompanhar `main`, aponte os contextos de construção para uma tag no `.env`:
+To pin versions instead of tracking `main`, point the build contexts at a tag in `.env`:
 
 ```bash
 API_CONTEXT=https://github.com/ChurchApps/Api.git#v1.2.3
 B1APP_CONTEXT=https://github.com/ChurchApps/B1App.git#v1.2.3
 ```
 
-Desenvolvedores podem apontar as mesmas variáveis para checkouts locais (por exemplo, `API_CONTEXT=../Api`).
+Developers can point the same variables at local checkouts (e.g. `API_CONTEXT=../Api`).
 
 ## Solução de Problemas
 
-| Sintoma | Causa provável | Correção |
+| Symptom | Likely cause | Fix |
 |---------|--------------|-----|
-| O contêiner `api` reinicia em loop | MySQL não está pronto ou falha de migração | `docker compose logs api` — a migração imprime qual módulo falhou |
-| O login redireciona para `api.churchapps.org` | O aplicativo web foi construído sem os argumentos do estágio `custom` | Reconstrua: `docker compose build --no-cache b1admin b1app` |
-| Alterou uma URL no `.env` mas nada aconteceu | As URLs são embutidas em tempo de construção | `docker compose up -d --build` |
-| "Verifique seu e-mail" mas nenhum e-mail chega | `MAIL_SYSTEM=SMTP` com credenciais erradas | Corrija as credenciais, ou remova `MAIL_SYSTEM` para desativar o e-mail |
-| Chat / recursos ao vivo silenciosos | `SOCKET_URL` inacessível a partir do navegador | Precisa ser `wss://` atrás de HTTPS e com proxy para a porta 8084 |
-| A construção trava em um VPS pequeno | Falta de memória durante `next build` | Adicione swap, ou construa em outra máquina e faça `docker save`/`load` |
+| `api` container restarts in a loop | MySQL not ready or migration failure | `docker compose logs api` — the migration prints which module failed |
+| Login redirects to `api.churchapps.org` | Web app built without the `custom` stage args | Rebuild: `docker compose build --no-cache b1admin b1app` |
+| Changed a URL in `.env` but nothing happened | URLs are baked at build time | `docker compose up -d --build` |
+| "Check your email" but no email arrives | `MAIL_SYSTEM=SMTP` with bad credentials | Fix credentials, or unset `MAIL_SYSTEM` to disable email |
+| Chat / live features silent | `SOCKET_URL` unreachable from the browser | Must be `wss://` behind HTTPS and proxied to port 8084 |
+| Build dies on a small VPS | Out of memory during `next build` | Add swap, or build on another machine and `docker save`/`load` |
 
-Ainda travado? Abra uma issue em [github.com/ChurchApps/ChurchAppsSupport/issues](https://github.com/ChurchApps/ChurchAppsSupport/issues) com a saída de `docker compose logs`.
+Still stuck? Open an issue at [github.com/ChurchApps/ChurchAppsSupport/issues](https://github.com/ChurchApps/ChurchAppsSupport/issues) with the output of `docker compose logs`.
 
 ## Artigos Relacionados
 
-- **[Auto-Hospedagem no Railway](./railway-template)** — alternativa de hospedagem gerenciada, além dos guias de configuração pós-implantação compartilhados
-- **[Configuração Inicial](../../getting-started/initial-setup)** — primeiros passos depois que sua igreja é criada
-- **[Configuração Local da API](../api/local-setup)** — rodando a pilha diretamente para desenvolvimento
+- **[Self-Hosting on Railway](./railway-template)** — managed hosting alternative, plus the shared post-deploy configuration guides
+- **[Initial Setup](../../getting-started/initial-setup)** — first steps after your church is created
+- **[Local API Setup](../api/local-setup)** — running the stack directly for development

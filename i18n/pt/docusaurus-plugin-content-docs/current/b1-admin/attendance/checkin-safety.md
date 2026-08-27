@@ -6,96 +6,96 @@ title: "Segurança de Check-In"
 
 <div class="article-intro">
 
-B1 inclui um conjunto de controles de segurança infantil para check-in: limites de capacidade de sala e proporções de voluntário para criança, orientação de idade e série no quiosque, tipos de check-in que distinguem membros, convidados e voluntários, e uma lista de retirada confiável por família que é verificada no checkout. Esta página aborda como configurar cada recurso de segurança no B1 Admin.
+B1 includes a set of child-safety controls for check-in: room capacity limits and volunteer-to-child ratios, age and grade guidance at the kiosk, check-in types that distinguish members, guests, and volunteers, and a trusted-pickup list per household that is verified at check-out. This page covers how to configure each safety feature in B1 Admin.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Before You Begin</h4>
 
-- Configure sua [estrutura de presença](setup.md) e [quiosques de check-in](check-in.md)
-- Salas são [grupos](../groups/creating-groups.md) vinculados a horários de serviço — as configurações de segurança abaixo ficam no grupo
-- Chamar um responsável e transmissão de emergência requerem um provedor de mensagens de texto conectado ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream), ou Mutual Ministry)
+- Set up your [attendance structure](setup.md) and [check-in kiosks](check-in.md)
+- Rooms are [groups](../groups/creating-groups.md) linked to service times — the safety settings below live on the group
+- Page-a-parent and emergency broadcast require a connected texting provider ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream), or Mutual Ministry)
 
 </div>
 
-## Capacidade da Sala e Fechamento de uma Sala
+## Room Capacity and Closing a Room
 
-Cada sala de check-in (grupo) pode enforçar seus próprios limites. Abra o grupo, clique no **ícone de lápis** para editar suas configurações e encontre a seção **Capacidade de Check-In**:
+Each check-in room (group) can enforce its own limits. Open the group, click the **pencil icon** to edit its settings, and find the **Check-In Capacity** section:
 
-- **Capacidade** -- O número máximo de pessoas que podem fazer check-in nesta sala de uma vez. Quando a sala está cheia, o check-in nela é bloqueado e o quiosque nomeia a sala cheia.
-- **Capacidade de Convidados** -- Um limite separado opcional de quantos convidados a sala pode acomodar.
-- **Fechado para Check-In** -- Defina como **Sim** para parar todos os check-ins nesta sala imediatamente (por exemplo, quando uma aula é cancelada ou uma sala fica indisponível). Os checkouts ainda funcionam.
+- **Capacity** -- The maximum number of people who can be checked in to this room at once. When the room is full, check-in to it is blocked and the kiosk names the full room.
+- **Guest Capacity** -- An optional separate cap on how many guests the room can hold.
+- **Closed for Check-In** -- Set to **Yes** to stop all check-ins to this room immediately (for example, when a class is cancelled or a room is unavailable). Check-outs still work.
 
-## Proporções de Voluntários
+## Volunteer Ratios
 
-A mesma seção **Capacidade de Check-In** no grupo inclui regras de pessoal:
+The same **Check-In Capacity** section on the group includes staffing rules:
 
-- **Crianças por Voluntário** -- O número máximo de crianças que cada voluntário com check-in pode cobrir (por exemplo, 5 significa um voluntário para cada cinco crianças).
-- **Voluntários Mínimos** -- O menor número de voluntários que devem ter check-in antes que as crianças possam fazer check-in na sala.
+- **Children per Volunteer** -- The maximum number of children each checked-in volunteer can cover (e.g. 5 means one volunteer per five children).
+- **Minimum Volunteers** -- The smallest number of volunteers that must be checked in before children can check in to the room.
 
-Voluntários contam para essas regras quando fazem check-in com o tipo **Voluntário** no quiosque (consulte [Tipos de Check-In](#check-in-types) abaixo).
+Volunteers count toward these rules when they check in with the **Volunteer** type at the kiosk (see [Check-In Types](#check-in-types) below).
 
-### Escolhendo Avisar vs. Bloquear
+### Choosing Warn vs. Block
 
-Como as proporções são rigorosamente aplicadas é uma configuração de toda a igreja:
+How strictly ratios are enforced is a church-wide setting:
 
-1. No B1 Admin, vá para **Configurações > Gerenciar Igreja** e abra o ladrilho **Check-In**.
-2. Defina **Execução de Proporção de Voluntários**:
-   - **Avisar (permitir com confirmação)** -- O quiosque mostra um aviso quando uma sala está acima da proporção ou abaixo de seus voluntários mínimos, e um membro da equipe pode confirmar para continuar assim mesmo. Este é o padrão.
-   - **Bloquear (prevenir check-in)** -- O check-in na sala é recusado até que voluntários suficientes estejam com check-in.
+1. In B1 Admin, go to **Settings > Manage Church** and open the **Check-In** tile.
+2. Set **Volunteer Ratio Enforcement**:
+   - **Warn (allow with confirmation)** -- The kiosk shows a warning when a room is over ratio or under its minimum volunteers, and a staff member can confirm to proceed anyway. This is the default.
+   - **Block (prevent check-in)** -- Check-in to the room is refused until enough volunteers are checked in.
 
 :::info
-Capacidade e Fechado para Check-In são sempre limites rígidos — a escolha avisar/bloquear se aplica apenas às proporções de voluntários.
+Capacity and Closed for Check-In are always hard limits — the warn/block choice applies only to volunteer ratios.
 :::
 
-## Tipos de Check-In
+## Check-In Types
 
-Cada check-in registra se a pessoa é um **Membro**, **Convidado** ou **Voluntário**. O tipo é escolhido com chips na tela da família do quiosque (Membro é o padrão). Os tipos alimentam as regras de segurança — voluntários fornecem cobertura de proporção e convidados contam contra a Capacidade de Convidados da sala.
+Every check-in records whether the person is a **Member**, **Guest**, or **Volunteer**. The type is chosen with chips on the kiosk household screen (Member is the default). Types feed the safety rules — volunteers provide ratio coverage, and guests count against the room's Guest Capacity.
 
-## Orientação de Idade e Série da Sala
+## Age and Grade Room Guidance
 
-Você pode dar a cada sala limites de idade ou série para que o quiosque guie as famílias para salas apropriadas:
+You can give each room age or grade bounds so the kiosk guides families to appropriate rooms:
 
-- Nas configurações do grupo, use a seção **Idade e Série** para definir a idade mínima/máxima (anos e meses) e/ou série para a sala.
-- No quiosque, as salas para as quais uma criança se qualifica são destacadas e as salas que não são desativadas. Uma sala desativada ainda pode ser escolhida com uma confirmação da equipe — a orientação nunca bloqueia.
+- On the group's settings, use the **Age & Grade** section to set the minimum/maximum age (years and months) and/or grade for the room.
+- At the kiosk, rooms a child qualifies for are highlighted and rooms they don't are dimmed. A dimmed room can still be chosen with a staff confirmation — the guidance never hard-blocks.
 
-As séries mudam na **data de promoção de série** da sua igreja:
+Grades roll over on your church's **grade promotion date**:
 
-1. No B1 Admin, vá para **Configurações > Gerenciar Igreja** e abra o ladrilho de promoção de série.
-2. Defina o mês e o dia em que sua igreja promove estudantes (por exemplo, 1º de agosto). As idades e séries no quiosque são calculadas a partir da data de promoção mais recente.
+1. In B1 Admin, go to **Settings > Manage Church** and open the grade promotion tile.
+2. Set the month and day your church promotes students (for example, August 1). Ages and grades at the kiosk are computed as of the most recent promotion date.
 
-## Pessoas Confiáveis e Não Autorizadas para Retirada
+## Trusted and Not-Authorized Pickup People
 
-Cada família pode ter uma lista de pessoas que estão — ou não — autorizadas a retirar suas crianças.
+Each household can carry a list of people who are — or are not — allowed to pick up its children.
 
-1. Abra a página de uma pessoa em **Pessoas** e encontre o cartão **Retirada**.
-2. Clique em **Adicionar**. Procure por uma pessoa existente ou adicione alguém que não esteja no sistema inserindo seu **Nome**, **Relacionamento** e uma foto.
-3. Defina o **Status**:
-   - **Confiável** -- No checkout, essa pessoa aparece como um cartão de retirada tocável com sua foto, tornando a retirada verificada rápida.
-   - **Não Autorizado** -- Se alguém tentar retirada sob esse nome, o quiosque bloqueia o checkout com um aviso. Um membro da equipe pode substituir e a substituição é registrada no registro de presença.
+1. Open a person's page in **People** and find the **Pickup** card.
+2. Click **Add**. Search for an existing person, or add someone not in the system by entering their **Name**, **Relationship**, and a photo.
+3. Set the **Status**:
+   - **Trusted** -- At check-out, this person appears as a tappable pickup card with their photo, making verified pickup fast.
+   - **Not Authorized** -- If someone attempts pickup under this name, the kiosk blocks check-out with a warning. A staff member can override, and the override is recorded on the attendance record.
 
-Clique no chip de status de uma pessoa no cartão para alternar entre Confiável e Não Autorizado.
+Click a person's status chip on the card to toggle between Trusted and Not Authorized.
 
 :::tip
-Adicione fotos às pessoas de retirada confiáveis sempre que possível — a tela de checkout mostra a foto para que os voluntários possam verificar visualmente a pessoa na frente deles.
+Add photos to trusted pickup people whenever possible — the check-out screen shows the photo so volunteers can visually verify the person standing in front of them.
 :::
 
-## Chamar um Responsável e Transmissão de Emergência
+## Page-a-Parent and Emergency Broadcast
 
-Ambas as funcionalidades enviam mensagens de texto através do provedor de mensagens de texto conectado da sua igreja — não há serviço SMS integrado, portanto, um dos provedores suportados deve ser configurado primeiro.
+Both features send text messages through your church's connected texting provider — there is no built-in SMS service, so one of the supported providers must be configured first.
 
-- **Chamar um responsável** -- De uma tela de checkout de quiosque operado, a equipe pode textar os pais/responsáveis de uma criança com check-in (por exemplo, "Por favor, venha ao berçário").
-- **Transmissão de emergência** -- A partir das configurações de administrador do quiosque, a equipe pode textar os responsáveis de todas as famílias com check-in para o serviço selecionado de uma vez. O envio requer digitar **EMERGÊNCIA** para confirmar.
+- **Page a parent** -- From a manned kiosk's check-out screen, staff can text a checked-in child's parents/guardians (for example, "Please come to the nursery").
+- **Emergency broadcast** -- From the kiosk's admin settings, staff can text every checked-in household's guardians for the selected service at once. Sending requires typing **EMERGENCY** to confirm.
 
-Pessoas que optaram por não receber mensagens de texto ou que não têm número celular registrado são automaticamente ignoradas — o quiosque relata quantas mensagens foram enviadas e quantas foram ignoradas.
+People who have opted out of texts, or who have no mobile number on file, are skipped automatically — the kiosk reports how many messages were sent and how many were skipped.
 
-Consulte o passo a passo do lado do quiosque em [Checkout e Segurança Infantil](../../b1-checkin/check-in/checking-out).
+See the kiosk-side walkthrough in [Check-Out & Child Safety](../../b1-checkin/check-in/checking-out).
 
 ## Artigos Relacionados
 
-- [Check-In](check-in.md) — configuração do quiosque e hardware
-- [Checkout e Segurança Infantil](../../b1-checkin/check-in/checking-out) — o checkout do quiosque, verificação de retirada e fluxos de chamada
-- [Criando Grupos](../groups/creating-groups.md) — onde as configurações da sala ficam
-- [Configuração de Presença](setup.md) — serviços, horários de serviço e atribuições de sala
-- [Idade Mínima para Mensagens Privadas](../settings/mobile-app.md#member-directory--messaging-settings) — bloqueia novas conversas de mensagens privadas com crianças enquanto as mantém no diretório
+- [Check-In](check-in.md) — kiosk setup and hardware
+- [Check-Out & Child Safety](../../b1-checkin/check-in/checking-out) — the kiosk check-out, pickup verification, and paging flows
+- [Creating Groups](../groups/creating-groups.md) — where room settings live
+- [Attendance Setup](setup.md) — services, service times, and room assignments
+- [Minimum Age for Private Messages](../settings/mobile-app.md#member-directory--messaging-settings) — blocks new private-message conversations with children while keeping them in the directory

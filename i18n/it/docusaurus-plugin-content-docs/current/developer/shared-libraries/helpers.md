@@ -1,68 +1,68 @@
 ---
-title: "Helpers"
+title: "Aiuti"
 ---
 
 # Helpers
 
 <div class="article-intro">
 
-Il pacchetto `@churchapps/helpers` fornisce le utilità di base utilizzate da tutti i progetti ChurchApps, sia frontend che backend. È indipendente dal framework e include helper comuni come `DateHelper`, `ApiHelper`, `CurrencyHelper`, oltre alle interfacce TypeScript condivise che formano il contratto dati tra app e API.
+The `@churchapps/helpers` package provides base utilities used by all ChurchApps projects, both frontend and backend. It is framework-agnostic and includes common helpers such as `DateHelper`, `ApiHelper`, `CurrencyHelper`, plus the shared TypeScript interfaces that form the data contract between apps and APIs.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Installa **Node.js** e **Git** -- vedi [Prerequisiti](../setup/prerequisites)
-- Familiarizza con la configurazione del [workspace Packages](./index.md) e il flusso di rilascio
+- Install **Node.js** and **Git** -- see [Prerequisites](../setup/prerequisites)
+- Familiarize yourself with the [Packages workspace](./index.md) Configurazione and release flow
 
 </div>
 
-## Chi Consuma Questo Pacchetto
+## Who Consumes This
 
-Ogni API di ChurchApps (l'Api principale, AskApi e LessonsApi) e ogni frontend web (B1Admin, B1App, B1Transfer, LessonsApp) dipende direttamente da questo pacchetto. I frontend ottengono anche molti dei suoi export (`ApiHelper`, `DateHelper`, `UserHelper` e altre interfacce) ri-esportati tramite [`@churchapps/apphelper`](./app-helper). Gli altri pacchetti condivisi lo dichiarano come dipendenza peer così ogni app risolve esattamente una copia.
+Every ChurchApps API (the core Api, AskApi, and LessonsApi) and every web frontend (B1Admin, B1App, B1Transfer, LessonsApp) depends on this package directly. Frontends also get many of its exports (`ApiHelper`, `DateHelper`, `UserHelper`, and other interfaces) re-exported through [`@churchapps/apphelper`](./app-helper). The other shared packages declare it as a peer dependency so each app resolves exactly one copy.
 
-## Configurazione per lo Sviluppo Locale
+## Configurazione for Local Development
 
-Questo pacchetto risiede nel workspace [Packages](https://github.com/ChurchApps/Packages) insieme alle altre librerie condivise:
+This package lives in the [Packages](https://github.com/ChurchApps/Packages) workspace alongside the other shared libraries:
 
-1. Clona il workspace:
+1. Clone the workspace:
 
    ```bash
    git clone https://github.com/ChurchApps/Packages.git
    ```
 
-2. Installa le dipendenze alla root del workspace:
+2. Install dependencies at the workspace root:
 
    ```bash
    cd Packages && yarn install
    ```
 
-3. Compila (compila TypeScript in `dist/`):
+3. Build (compiles TypeScript Per `dist/`):
 
    ```bash
    yarn workspace @churchapps/helpers build
    ```
 
-   Oppure esegui `yarn build` alla root per compilare ogni pacchetto nell'ordine di dipendenza.
+   Or run `yarn build` at the root Per build every package in dependency order.
 
-Per testare le modifiche all'interno di un progetto consumatore, usa un portale Yarn temporaneo -- vedi [Sviluppo Locale contro un'App Consumatrice](./index.md#local-development-against-a-consuming-app).
+Per test changes inside a consuming project, use a temporary Yarn portal -- see [Local Development Against a Consuming App](./index.md#local-development-against-a-consuming-app).
 
-## Pubblicazione
+## Publishing
 
-I rilasci passano attraverso changesets piuttosto che bump manuali di versione:
+Releases go through changesets rather than manual version bumps:
 
-1. Esegui `yarn changeset` alla root del workspace e seleziona `@churchapps/helpers` con il tipo di bump appropriato; fai il commit del file changeset generato insieme alla tua modifica.
-2. Quando sei pronto per il rilascio, esegui `yarn publish-all` alla root -- incrementa le versioni, scrive i CHANGELOG, compila nell'ordine di dipendenza e pubblica su npm.
+1. Run `yarn changeset` at the workspace root and Seleziona `@churchapps/helpers` with the appropriate bump Digita; commit the generated changeset file with your change.
+2. When ready Per release, run `yarn publish-all` at the root -- it bumps versions, writes CHANGELOGs, builds in dependency order, and publishes Per npm.
 
-Le nuove interfacce condivise vanno in `helpers/src/interfaces/` e vengono ri-esportate tramite il barrel del pacchetto. Anche il catalogo dei tipi di elemento del website builder (`ElementTypes.ts` — 35 tipi con i rispettivi schemi answers) risiede qui; è il contratto condiviso dai renderer di apphelper, dai moduli dell'editor di B1Admin e dai prompt di generazione AI (vedi [Architettura del Website Builder](../architecture/website-builder)).
+New shared interfaces go in `helpers/src/interfaces/` and are re-exported through the package barrel. The website builder's element-Digita catalog (`ElementTypes.ts` — 35 types with their answers schemas) also lives here; it is the contract shared by the apphelper renderers, the B1Admin editor forms, and the AI generation prompts (see [Website Builder Architecture](../architecture/website-builder)).
 
 :::warning
-Poiché questo pacchetto è utilizzato da ogni progetto ChurchApps, le modifiche qui hanno un impatto ampio. Un rilascio di `helpers` incrementa automaticamente `apihelper` e `apphelper` così i loro intervalli di dipendenza restano aggiornati. Testa con un portale Yarn in almeno un'API consumatrice e un'app web consumatrice prima di pubblicare.
+Since this package is used by every ChurchApps project, changes here have a wide impact. A release of `helpers` automatically bumps `apihelper` and `apphelper` so their dependency ranges stay current. Test with a Yarn portal in at least one consuming API and one consuming web app before publishing.
 :::
 
 ## Articoli Correlati
 
-- **[ApiHelper](./api-helper)** -- Utilità lato server che dipendono da questo pacchetto
-- **[AppHelper](./app-helper)** -- Componenti React che dipendono da questo pacchetto
-- **[Panoramica delle Librerie Condivise](./index.md)** -- Configurazione del workspace, flusso di rilascio e workflow di link locale
+- **[ApiHelper](./api-helper)** -- Server-side utilities that depend on this package
+- **[AppHelper](./app-helper)** -- React components that depend on this package
+- **[Shared Libraries Overview](./index.md)** -- Workspace Configurazione, release flow, and local-link workflow

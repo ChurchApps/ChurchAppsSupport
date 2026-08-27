@@ -6,96 +6,96 @@ title: "Criando Calendários"
 
 <div class="article-intro">
 
-Criar um calendário no B1 Admin permite que você crie uma visualização selecionada de eventos conectando um ou mais grupos. Os eventos são gerenciados pelos líderes dos grupos dentro de seus grupos, e seu calendário exibe esses eventos em um único lugar. Nem mesmo um administrador de domínio pode adicionar ou editar eventos diretamente na seção de calendário, a menos que seja líder do grupo ao qual os eventos pertencem.
+Creating a calendar in B1 Admin lets you build a curated view of events by connecting one or more groups. Events are managed by group leaders within their groups, and your calendar displays those events in one place. Admins with edit access can add or edit events for any group. Non-admin group leaders can only manage events for groups they lead.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Before You Begin</h4>
 
-- Configure os [grupos](../groups/creating-groups.md) cujos eventos você deseja incluir em seu calendário
-- Você precisa de acesso administrativo à seção Calendários no B1 Admin
+- Set up the [groups](../groups/creating-groups.md) whose events you want to include in your calendar
+- You need administrative access to the Calendars section in B1 Admin
 
 </div>
 
-## Criando um Novo Calendário
+## Creating a New Calendar
 
-1. No B1 Admin, navegue até **Site**, depois para a seção **Calendários**.
-2. Clique em **Adicionar Calendário**.
-3. Digite um **nome** para seu calendário (por exemplo, "Eventos do Ministério da Juventude" ou "Calendário Principal da Igreja").
-4. Adicione uma **descrição** opcional para ajudar sua equipe a entender para que serve este calendário.
-5. Clique em **Criar** para salvar seu novo calendário.
+1. In the B1 Admin, navigate to **Website**, then to the **Calendars** section.
+2. Click **Add Calendar**.
+3. Enter a **name** for your calendar (for example, "Youth Ministry Events" or "Main Church Calendar").
+4. Add an optional **description** to help your team understand what this calendar is for.
+5. Click **Create** to save your new calendar.
 
-## A Página de Detalhe do Calendário
+## The Calendar Detail Page
 
-Depois de criar um calendário, clique nele para abrir a página de detalhe. Esta página tem duas áreas principais:
+After creating a calendar, click on it to open the detail page. This page has two main areas:
 
-- **Coluna esquerda** -- Uma visualização do calendário mostrando eventos extraídos de grupos conectados.
-- **Coluna direita** -- A lista de grupos associados. É aqui que você gerencia quais grupos estão incluídos neste calendário.
+- **Left column** -- A view of the calendar showing events pulled in from connected groups.
+- **Right column** -- The associated groups list. This is where you manage which groups are included in this calendar.
 
-## Conectando Grupos
+## Connecting Groups
 
-Os grupos que possuem eventos no calendário aparecem automaticamente na lista de grupos no lado direito da página de detalhe.
+Groups that have events in the calendar automatically appear in the groups list on the right side of the detail page.
 
-1. Clique em **Adicionar** na seção de grupos para associar um grupo ao seu calendário.
-2. Selecione o grupo no menu suspenso.
-3. Escolha se deseja incluir **todos os eventos** desse grupo ou apenas **eventos específicos**.
-4. Clique em **Salvar**.
+1. Click **Add** in the groups section to associate a group with your calendar.
+2. Select the group from the dropdown.
+3. Choose whether to include **all events** from that group or only **specific events**.
+4. Click **Save**.
 
 :::tip
-Conectar grupos ao seu calendário é uma forma poderosa de agregar eventos automaticamente. Quando um líder do grupo adiciona um evento ao seu [grupo](../groups/creating-groups.md), ele pode fluir para o calendário de toda a igreja sem nenhum trabalho extra da sua parte.
+Connecting groups to your calendar is a powerful way to automatically aggregate events. When a group leader adds an event to their [group](../groups/creating-groups.md), it can flow into your church-wide calendar without any extra work from you.
 :::
 
 :::info
-Se você deseja criar um único calendário que agregue eventos de muitos grupos em sua igreja, consulte [Calendário Selecionado](curated-calendar) para uma abordagem simplificada.
+If you want to create a single calendar that pulls events from many groups across your church, see [Curated Calendar](curated-calendar) for a streamlined approach.
 :::
 
-## Habilitando Registro de Eventos
+## Enabling Event Registration
 
-Você pode habilitar o registro para qualquer evento do calendário para que os membros possam se inscrever através do site B1 ou do aplicativo móvel.
+You can enable registration for any calendar event so members can sign up through the B1 website or mobile app.
 
-1. Clique em um evento existente ou crie um novo.
-2. No editor de eventos, alterne **Registro** para habilitá-lo.
-3. Configure as configurações de registro:
-   - **Capacidade** (opcional) -- Defina um número máximo de registros. Deixe em branco para ilimitado.
-   - **Registro Abre** -- A data e hora em que o registro fica disponível.
-   - **Registro Fecha** -- A data e hora em que o registro fecha.
-   - **Tags** -- Rótulos separados por vírgula (por exemplo, "juventude, retiro, vbs") para ajudar a categorizar eventos registráveis.
-   - **Perguntas de Registro** -- Opcionalmente, anexe um [formulário](../forms/creating-forms.md) para que os registrantes respondam perguntas extras (restrições dietéticas, tamanho da camiseta, contato de emergência, etc.) como parte do registro. Escolha **Nenhum** para pular perguntas.
-   - **Habilitar Lista de Espera** -- Quando o evento ficar cheio, permita que registrantes adicionais entrem em uma lista de espera em vez de serem rejeitados. Consulte [Registros Pagos](paid-registrations#waitlist).
-4. Salve o evento.
+1. Click on an existing event or create a new one.
+2. In the event editor, toggle **Registration** to enable it.
+3. Configure the registration settings:
+   - **Capacity** (optional) -- Set a maximum number of registrations. Leave blank for unlimited.
+   - **Registration Opens** -- The date and time when registration becomes available.
+   - **Registration Closes** -- The date and time when registration closes.
+   - **Tags** -- Comma-separated labels (e.g., "youth, retreat, vbs") to help categorize registerable events.
+   - **Registration Questions** -- Optionally attach a [form](../forms/creating-forms.md) so registrants answer extra questions (dietary restrictions, T-shirt size, emergency contact, etc.) as part of signing up. Choose **None** to skip questions.
+   - **Enable Waitlist** -- When the event fills up, let additional registrants join a waitlist instead of being turned away. See [Paid Registrations](paid-registrations#waitlist).
+4. Save the event.
 
-Para eventos pagos, a mesma página de configurações permite que você defina **Tipos de Participante** com preço, **Seleções** opcionais (complementos) e **Códigos de Desconto**, com pagamento coletado através do provedor de doações da sua igreja. Consulte [Registros Pagos](paid-registrations) para o guia completo.
+For paid events, the same settings page lets you define priced **Attendee Types**, optional **Selections** (add-ons), and **Discount Codes**, with payment collected through your church's giving provider. See [Paid Registrations](paid-registrations) for the full walkthrough.
 
-Depois que o registro estiver habilitado, os membros verão um botão **Registre-se neste Evento** quando visualizarem o evento no [site B1](../../b1-church/events/registering) ou [aplicativo B1](../../b1-mobile/events/registering). Se você anexou um formulário, os registrantes verão uma etapa **Perguntas** durante o registro e suas respostas serão salvas com seu registro.
+Once registration is enabled, members will see a **Register for this Event** button when they view the event on the [B1 website](../../b1-church/events/registering) or [B1 Mobile app](../../b1-mobile/events/registering). If you attached a form, registrants see a **Questions** step during registration and their answers are saved with their registration.
 
 :::info
-Perguntas de Registro funcionam apenas com formulários que **não** estão marcados como Restritos. Um formulário restrito é pulado automaticamente durante o registro em vez de ser mostrado, então use um formulário irrestrito ao anexar perguntas a um evento.
+Registration Questions only works with forms that are **not** marked Restricted. A restricted form is skipped automatically during registration rather than shown, so use an unrestricted form when attaching questions to an event.
 :::
 
-### Gerenciando Registros
+### Managing Registrations
 
-Para visualizar e gerenciar registros de seus eventos:
+To view and manage registrations for your events:
 
-1. Navegue até a página **Registros** no B1 Admin.
-2. Você verá uma tabela de todos os eventos com registro habilitado, mostrando o título do evento, data, contagem de registro atual versus capacidade e tags.
-3. Clique em um evento para ver a lista completa de registros, incluindo nomes, contagem de membros, tipos de participante, status de pagamento e data de registro.
-4. Na página de detalhe, você pode:
-   - **Adicionar Participante** -- Registre manualmente alguém que se inscreveu offline ou por telefone.
-   - **Cancelar** registros individuais
-   - **Deletar** registros permanentemente
-   - **Promover** registros na lista de espera quando um lugar se abre
-   - **Exportar CSV** -- Baixe todos os registros, incluindo tipos de participante, seleções, valores de pagamento e respostas às perguntas
+1. Navigate to the **Registrations** page in B1 Admin.
+2. You will see a table of all events with registration enabled, showing the event title, date, current registration count vs. capacity, and tags.
+3. Click on an event to see the full list of registrations, including names, member count, attendee types, payment status, and registration date.
+4. From the detail page, you can:
+   - **Add Attendee** -- Manually register someone who signed up offline or over the phone.
+   - **Cancel** individual registrations
+   - **Delete** registrations permanently
+   - **Promote** waitlisted registrations when a spot opens
+   - **Export CSV** -- Download all registrations, including attendee types, selections, payment amounts, and question answers
 
-Se o evento tiver Perguntas de Registro anexadas, a página de detalhe também mostra um filtro **Apenas perguntas sem resposta** para encontrar rapidamente registrantes que ainda não enviaram respostas, e um botão **Ver Respostas** em cada registro respondido para ver suas respostas. Eventos pagos adicionam uma coluna **Tipo**, uma coluna **Pago / Total**, contagens por tipo e um diálogo de detalhes de pagamentos -- consulte [Registros Pagos](paid-registrations#the-registration-roster).
+If the event has Registration Questions attached, the detail page also shows an **Unanswered questions only** filter to quickly find registrants who haven't submitted answers yet, and a **View Answers** button on each answered registration to see their responses. Paid events add a **Type** column, a **Paid / Total** column, per-type counts, and a payments detail dialog -- see [Paid Registrations](paid-registrations#the-registration-roster).
 
 :::tip
-Use a barra de progresso de capacidade para monitorar com que rapidez os eventos estão preenchendo. A barra fica vermelha quando um evento está na ou acima da capacidade.
+Use the capacity progress bar to monitor how quickly events are filling up. The bar turns red when an event is at or over capacity.
 :::
 
-## Próximos Passos
+## Next Steps
 
-- [Calendário Selecionado](curated-calendar) -- Crie um calendário que agregue de múltiplos grupos
-- [Registros Pagos](paid-registrations) -- Tipos de participante, seleções de complementos, códigos de desconto, pagamentos e listas de espera
-- [Guia de Registro de Eventos](../guides/event-registration) -- Guia passo a passo para configurar registro de eventos
-- [Visão Geral de Calendários](./) -- Retornar à visão geral de calendários
+- [Curated Calendar](curated-calendar) -- Create a calendar that pulls from multiple groups
+- [Paid Registrations](paid-registrations) -- Attendee types, add-on selections, discount codes, payments, and waitlists
+- [Event Registration Guide](../guides/event-registration) -- Step-by-step guide for setting up event registration
+- [Calendars Overview](./) -- Return to the calendars overview

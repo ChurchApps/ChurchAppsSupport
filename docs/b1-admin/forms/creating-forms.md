@@ -57,6 +57,16 @@ The **Payment** field type requires Stripe to be configured. If you haven't set 
    - **Admin** — Can edit the form and view all submissions.
    - **View Only** — Can view submissions but cannot edit the form.
 
+## Automatically Adding Submitters to a Group
+
+When **Create a person record from submissions** is enabled, you can also link the form to a group so every submitter is added to that group's roster automatically:
+
+1. Open your form's **Details**, and turn on **Create a person record from submissions**.
+2. Under **Add submitters to a group**, select the group to add submitters to, or leave it set to **None**.
+3. Click **Save**.
+
+Each time someone submits the form, the matched or newly created person is added to the group (existing group members are skipped). This is useful for things like a camp sign-up form that should automatically build the camp's roster group.
+
 ## Duplicating a Form
 
 To reuse a form as a starting point for a new one, click the **Duplicate** icon (copy icon) next to the form in the Forms list. B1 creates an exact copy of the form — including all questions — which you can then rename and edit independently.

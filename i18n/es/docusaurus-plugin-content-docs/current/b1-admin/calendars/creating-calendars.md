@@ -1,12 +1,12 @@
 ---
-title: "Creación de Calendarios"
+title: "Creando Calendarios"
 ---
 
-# Creación de Calendarios
+# Creando Calendarios
 
 <div class="article-intro">
 
-Crear un calendario en B1 Admin le permite construir una vista seleccionada de eventos conectando uno o más grupos. Los eventos son administrados por los líderes de grupo dentro de sus grupos, y su calendario muestra esos eventos en un solo lugar. Ni siquiera un administrador de dominio puede agregar o editar eventos directamente en la sección de calendarios a menos que sea líder del grupo al que pertenecen los eventos.
+Crear un calendario en B1 Admin te permite construir una vista curada de eventos conectando uno o más grupos. Los eventos son administrados por líderes de grupo dentro de sus grupos, y tu calendario muestra esos eventos en un lugar. Los administradores con acceso de edición pueden agregar o editar eventos para cualquier grupo. Los líderes de grupo que no son administradores solo pueden administrar eventos de grupos que lideran.
 
 </div>
 

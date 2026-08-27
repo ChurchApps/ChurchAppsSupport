@@ -1,8 +1,8 @@
 ---
-title: "Crear Formularios"
+title: "Creando Formularios"
 ---
 
-# Crear Formularios
+# Creando Formularios
 
 <div class="article-intro">
 
@@ -18,7 +18,7 @@ Construya formularios personalizados para recopilar información de su congregac
 
 </div>
 
-## Crear un Nuevo Formulario
+## Creando un Nuevo Formulario
 
 1. Navegue a **Formularios** desde el menú principal.
 2. Haga clic en **Agregar Formulario**.
@@ -30,19 +30,19 @@ Construya formularios personalizados para recopilar información de su congregac
 
 Su nuevo formulario aparecerá en la lista. Haga clic en él para comenzar a agregar preguntas.
 
-## Agregar Preguntas
+## Agregando Preguntas
 
-1. Abra su formulario y vaya a la pestaña de **Preguntas**.
+1. Abra su formulario y vaya a la pestaña **Preguntas**.
 2. Haga clic en **Agregar Pregunta**.
 3. Seleccione un **tipo de campo** del menú desplegable de Proveedor. Los tipos disponibles incluyen:
-   - **Cuadro de texto** — Para respuestas de texto corto
+   - **Cuadro de Texto** — Para respuestas de texto corto
    - **Fecha** — Para selección de fechas
-   - **Correo electrónico** — Para direcciones de correo electrónico
-   - **Número de teléfono** — Para entrada de teléfono
-   - **Opción múltiple** — Para seleccionar entre opciones predefinidas
+   - **Correo Electrónico** — Para direcciones de correo electrónico
+   - **Número de Teléfono** — Para entrada de teléfono
+   - **Opción Múltiple** — Para seleccionar entre opciones predefinidas
    - **Pago** — Para recopilar pagos
 4. Ingrese un **Título** y una **Descripción** opcional para la pregunta.
-5. Marque **Requerir una respuesta** si el campo es obligatorio.
+5. Marque **Requerir una Respuesta** si el campo es obligatorio.
 6. Haga clic en **Guardar**.
 7. Repita para agregar más preguntas.
 
@@ -50,14 +50,32 @@ Su nuevo formulario aparecerá en la lista. Haga clic en él para comenzar a agr
 El tipo de campo **Pago** requiere que Stripe esté configurado. Si aún no ha configurado las donaciones en línea, consulte [Configuración de Donaciones en Línea](../donations/online-giving-setup.md) antes de agregar campos de pago.
 :::
 
-## Gestionar Miembros del Formulario
+## Administrando Miembros del Formulario
 
-1. Abra su formulario y vaya a la pestaña de **Miembros**.
+1. Abra su formulario y vaya a la pestaña **Miembros**.
 2. Busque una persona y agréguela con un rol:
    - **Administrador** — Puede editar el formulario y ver todas las respuestas.
    - **Solo Lectura** — Puede ver las respuestas pero no puede editar el formulario.
 
-## Configurar Propiedades del Formulario
+## Agregando Automáticamente Remitentes a un Grupo
+
+Cuando **Crear un registro de persona desde respuestas** está habilitado, también puede vincular el formulario a un grupo para que cada remitente se agregue automáticamente al grupo del grupo:
+
+1. Abra los **Detalles** de su formulario, y active **Crear un registro de persona desde respuestas**.
+2. Debajo de **Agregar remitentes a un grupo**, seleccione el grupo al que agregar remitentes, o déjelo establecido en **Ninguno**.
+3. Haga clic en **Guardar**.
+
+Cada vez que alguien envía el formulario, la persona coincidente o recientemente creada se agrega al grupo (se omiten los miembros del grupo existentes). Esto es útil para cosas como un formulario de inscripción a campamento que debería construir automáticamente el grupo de participantes del campamento.
+
+## Duplicando un Formulario
+
+Para reutilizar un formulario como punto de partida para uno nuevo, haga clic en el icono **Duplicar** (icono de copia) junto al formulario en la lista de Formularios. B1 crea una copia exacta del formulario — incluyendo todas las preguntas — que luego puede renombrar y editar independientemente.
+
+:::tip
+La duplicación es útil para eventos recurrentes donde las preguntas de inscripción permanecen igual de año en año. Duplique el formulario del año pasado, actualice el nombre y las fechas, ¡y estará listo!
+:::
+
+## Configurando Propiedades del Formulario
 
 Puede actualizar el nombre y la configuración de su formulario en cualquier momento. Para formularios Independientes, también verá una **URL pública** única que puede compartir con cualquier persona.
 
@@ -66,5 +84,5 @@ Los formularios Independientes son ideales para inscripciones a eventos. Compart
 :::
 
 :::info
-Para incrustar un formulario en su sitio web de B1, vaya al editor de su sitio web, agregue una nueva sección y seleccione el elemento **Formulario**. Luego elija el formulario que desea mostrar. Consulte [Gestión de Páginas](../website/managing-pages.md) para obtener detalles sobre la edición de su sitio web.
+Para incrustar un formulario en su sitio web de B1, vaya al editor de su sitio web, agregue una nueva sección y seleccione el elemento **Formulario**. Luego elija el formulario que desea mostrar. Consulte [Administrando Páginas](../website/managing-pages.md) para obtener detalles sobre la edición de su sitio web.
 :::

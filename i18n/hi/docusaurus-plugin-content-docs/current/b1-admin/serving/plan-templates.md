@@ -1,64 +1,64 @@
 ---
-title: "Plan Templates"
+title: "योजना टेम्पलेट"
 ---
 
 # Plan Templates
 
 <div class="article-intro">
 
-Plan templates आपको एक plan के service order या positions का एक reusable snapshot save करने और इसे एक click में future plans पर apply करने देते हैं। Same structure को हर week rebuild करने के बजाय, आप इसे एक बार save करते हैं और इसे अतिरिक्त upcoming plans पर जितनी बार चाहें stamp करते हैं।
+Plan templates let you save a reusable snapshot of a plan's order of service or positions and apply it to future plans in one click. Instead of rebuilding the same structure every week, you save it once and stamp it onto as many upcoming plans as you need.
 
 </div>
 
 <div class="prereqs">
-<h4>शुरुआत से पहले</h4>
+<h4>Before You Begin</h4>
 
-- कम से कम एक [service plan](plans.md) को एक service order या defined positions के साथ create करें
-- आपको B1 Admin में Serving area तक access की आवश्यकता है
+- Create at least one [service plan](plans.md) with a service order or positions defined
+- You need access to the Serving area in B1 Admin
 
 </div>
 
-## एक Plan को Template के रूप में Save करना
+## Saving a Plan as a Template
 
-1. **Serving** area से एक existing plan को खोलें।
-2. **Templates** button (plan page के top) पर click करें।
-3. **Save as Template** को choose करें।
-4. Template को एक name दें (उदाहरण के लिए, "Standard Sunday" या "Worship + Sermon")।
-5. Save करें। Template plan के current service order और positions को उस moment पर capture करता है।
+1. Open an existing plan from the **Serving** area.
+2. Click the **Templates** button (top of the plan page).
+3. Choose **Save as Template**.
+4. Give the template a name (for example, "Standard Sunday" or "Worship + Sermon").
+5. Save. The template captures the plan's current order of service and positions at that moment.
 
-## Templates को Manage करना
+## Managing Templates
 
-किसी भी plan type page पर **Templates** button से आप:
+From the **Templates** button on any plan type page you can:
 
-- **Rename** — template के display name को change करें
-- **Update from plan** — template के content को एक plan के current state के साथ replace करें (उपयोगी जब आपने अपनी standard structure को refine किया है)
-- **Apply** — template को एक या अधिक upcoming plans पर stamp करें
-- **Delete** — एक template को remove करें जिसकी आपको अब आवश्यकता नहीं है
+- **Rename** — change the template's display name
+- **Update from plan** — replace the template's content with a plan's current state (useful after you refine your standard structure)
+- **Apply** — stamp the template onto one or more upcoming plans
+- **Delete** — remove a template you no longer need
 
-## Plans को Template Apply करना
+## Applying a Template to Plans
 
-1. Plan type page पर **Templates** button पर click करें।
-2. Template के बगल में **Apply** icon (copy icon) पर click करें जिसे आप use करना चाहते हैं।
-3. उनके boxes को check करके select करें कि कौन से upcoming plans को apply करें।
-4. क्या copy करें choose करें:
-   - **Order of Service** — selected plans के service order items को template के items के साथ replace करता है
-   - **Positions** — selected plans की positions (और उनकी assignments) को template के positions के साथ replace करता है
-5. **Apply** पर click करें।
+1. Click the **Templates** button on the plan type page.
+2. Click the **Apply** icon (copy icon) next to the template you want to use.
+3. Select which upcoming plans to apply it to by checking their boxes.
+4. Choose what to copy:
+   - **Order of Service** — replaces the selected plans' service order items with the template's items
+   - **Positions** — replaces the selected plans' positions (and their assignments) with the template's positions
+5. Click **Apply**.
 
 :::warning
-Positions को apply करना selected plans पर सभी existing positions और assignments को replace करता है। यह सुनिश्चित करें कि आपने उन positions के लिए पहले से volunteers को schedule नहीं किया है इससे पहले apply करें।
+Applying positions replaces all existing positions and assignments on the selected plans. Make sure you have not already scheduled volunteers for those positions before applying.
 :::
 
 :::tip
-जब आप एक consistent song/sermon structure चाहते हैं लेकिन volunteers हर week अलग तरीके से already assigned हों तो Positions के बिना Order of Service को apply करें।
+Apply the Order of Service without Positions when you want a consistent song/sermon structure but volunteers are already assigned differently each week.
 :::
 
-## Templates को Up to Date रखना
+## Keeping Templates Up to Date
 
-यदि आपकी standard service structure बदलती है, तो template manager को खोलें और इसे scratch से rebuild करने के बजाय अपने latest plan से sync करने के लिए **Update from plan** को use करें।
+If your standard service structure changes, open the template manager and use **Update from plan** to sync the template from your latest plan rather than rebuilding it from scratch.
 
-## संबंधित लेख
+## Related Articles
 
-- [Service Plans](plans.md) — Individual service plans को create और manage करें
-- [Plans Overview](plans-overview.md) — एक single grid में सभी upcoming assignments को plans के across देखें
-- [Service Order](service-order.md) — एक plan के भीतर service order को build करें
+- [Service Plans](plans.md) — Create and manage individual service plans
+- [Plans Overview](plans-overview.md) — See all upcoming assignments across plans in one grid
+- [Service Order](service-order.md) — Build the order of service within a plan

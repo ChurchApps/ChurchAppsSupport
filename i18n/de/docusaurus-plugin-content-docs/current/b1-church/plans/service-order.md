@@ -1,22 +1,15 @@
----
-title: "Dienstfolge"
+﻿---
+title: "Gottesdienst-Reihenfolge"
 ---
 
-# Dienstfolge
+# Gottesdienst-Reihenfolge
 
 <div class="article-intro">
 
-Die Dienstfolge zeigt die Abfolge der Elemente in Ihrem Gottesdienst auf der B1 Church Website an.
+Hier finden Sie Informationen zu Gottesdienst-Reihenfolge.
 
 </div>
 
-<div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+## Erste Schritte
 
-- Ihre Kirche muss Dienstpläne in B1 Admin eingerichtet haben
-
-</div>
-
-## Anzeigen der Dienstfolge
-
-Klicken Sie auf einen Plan auf der Website Ihrer Kirche, um die Dienstfolge anzuzeigen.
+Um mit Gottesdienst-Reihenfolge zu arbeiten, folgen Sie den Anweisungen in diesem Abschnitt.

@@ -1,45 +1,29 @@
 ---
-title: "रिपोर्ट"
+title: "Reports"
 ---
 
-# रिपोर्ट
+# Reports
 
 <div class="article-intro">
 
-रिपोर्ट पृष्ठ आपको पूर्व-निर्मित रिपोर्ट तक त्वरित पहुंच देता है जो आपको अपने चर्च डेटा को समझने में मदद करते हैं। इन रिपोर्ट्स को उपस्थिति प्रवृत्तियों को ट्रैक करने, देना गतिविधि की निगरानी करने और जन्मदिन उत्सव के माध्यम से अपनी मंडली के साथ जुड़े रहने के लिए उपयोग करें।
+B1 Admin gives you several ways to pull data about your congregation, attendance, and giving. Reporting is built into the relevant sections of the app rather than a single Reports page.
 
 </div>
 
-## उपलब्ध रिपोर्ट
+## Where to Find Reports
 
-रिपोर्ट्स के पास B1 Admin नेविगेशन मेनू में कोई प्रविष्टि नहीं है -- जिस रिपोर्ट को आप चाहते हैं उसके URL पर सीधे जाएं (इसे बुकमार्क करना वापस आने का सबसे आसान तरीका है)। प्रत्येक रिपोर्ट सीधे अपने फ़िल्टर के लिए खुलता है।
+### People
+- **[Birthday & Anniversary Lists](./birthday-report)** -- Filter by Birth Month or Anniversary Month in **People → Advanced Search** to get a list of upcoming birthdays or anniversaries.
 
-- **[जन्मदिन रिपोर्ट](./birthday-report)** (`admin.b1.church/reports/birthdays`) -- अपने मंडली सदस्यों के लिए आने वाले जन्मदिन देखें।
-- **[वर्षगांठ रिपोर्ट](./anniversary-report)** (`admin.b1.church/reports/anniversaries`) -- अपने मंडली सदस्यों के लिए आने वाली शादी की वर्षगांठ देखें।
-- **[उपस्थिति प्रवृत्ति](./attendance-reports)** (`admin.b1.church/reports/attendanceTrend`) -- देखें कि आपकी सेवाओं में उपस्थिति के पैटर्न समय के साथ कैसे बदलते हैं।
-- **[समूह उपस्थिति](./attendance-reports)** (`admin.b1.church/reports/groupAttendance`) -- एक चयनित तारीख सीमा के लिए समूह द्वारा उपस्थिति कुल देखें।
-- **[दैनिक समूह उपस्थिति](./attendance-reports)** (`admin.b1.church/reports/dailyGroupAttendance`) -- समूह उपस्थिति डेटा का दिन-दर-दिन विश्लेषण प्राप्त करें।
-- **[दान सारांश](./donation-summary)** (`admin.b1.church/reports/donationSummary`) -- वित्तीय योजना के लिए देना कुल और प्रवृत्तियों की समीक्षा करें।
-- **[ऑडिट लॉग](./audit-log)** -- अपने चर्च प्रबंधन प्रणाली में सभी परिवर्तन और कार्यों को ट्रैक करें (सेटिंग्स > ऑडिट लॉग के तहत पाया गया)।
+### Attendance
+- **[Attendance Reports](./attendance-reports)** -- Attendance trends and group attendance data are found in the **Attendance** section.
 
-## रिपोर्ट का उपयोग करना
+### Donations
+- **[Donation Summary](./donation-summary)** -- Giving totals and fund breakdowns are found in the **Donations** section.
 
-1. रिपोर्ट के URL पर सीधे जाएं, जैसे **admin.b1.church/reports/birthdays**।
-2. तारीख सीमा, समूह, सेवा, या अन्य मानदंडों द्वारा डेटा को संकीर्ण करने के लिए शीर्ष पर **फ़िल्टर** का उपयोग करें।
-3. रिपोर्ट में प्रदर्शित परिणामों की समीक्षा करें।
-
-:::tip
-उपस्थिति प्रवृत्तियों, आने वाले जन्मदिन और देना पैटर्न के शीर्ष पर रहने के लिए नियमित रूप से रिपोर्ट चलाएं। यह डेटा आपको अधिक प्रभावी रूप से मंत्रालय और आउटरीच की योजना बनाने में मदद करता है।
-:::
+### Settings
+- **[Audit Log](./audit-log)** -- Track all changes and actions across your church management system (found under **Settings → Audit Log**).
 
 :::info
-रिपोर्ट डेटा सुसंगत डेटा प्रविष्टि पर निर्भर करता है। सुनिश्चित करें कि आपकी टीम [उपस्थिति ट्रैक कर रही है](../attendance/tracking-attendance.md), [दान रिकॉर्ड कर रही है](../donations/recording-donations.md), और सबसे सटीक परिणामों के लिए [लोगों के रिकॉर्ड](../people/adding-people.md) को अपडेट रखा जा रही है।
+Report data depends on consistent data entry. Make sure your team is [tracking attendance](../attendance/tracking-attendance.md), [recording donations](../donations/recording-donations.md), and keeping [people records](../people/adding-people.md) up to date for the most accurate results.
 :::
-
-## और जानें
-
-- [जन्मदिन रिपोर्ट](./birthday-report) -- जन्मदिन डेटा खोजना और उपयोग करना।
-- [वर्षगांठ रिपोर्ट](./anniversary-report) -- वर्षगांठ डेटा खोजना और उपयोग करना।
-- [उपस्थिति रिपोर्ट](./attendance-reports) -- तीन उपस्थिति रिपोर्ट को समझना।
-- [दान सारांश](./donation-summary) -- देना डेटा और वित्तीय सारांश की समीक्षा करना।
-- [ऑडिट लॉग](./audit-log) -- सिस्टम गतिविधि और परिवर्तन ट्रैक करना।

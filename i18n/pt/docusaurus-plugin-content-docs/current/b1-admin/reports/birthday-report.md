@@ -1,45 +1,45 @@
-﻿---
-title: "Listas de Aniversários e Aniversários de Casamento"
+---
+title: "Birthday & Anniversary Lists"
 ---
 
-# Listas de Aniversários e Aniversários de Casamento
+# Birthday & Anniversary Lists
 
 <div class="article-intro">
 
-Precisa de uma lista de todos com aniversário ou aniversário de casamento em um dado mês — para o boletim, anúncios ou cartões? A busca de Pessoas pode filtrar sua congregação por **Mês de Nascimento** e **Mês de Aniversário de Casamento** e mostrar as datas direito nos resultados.
+Need a list of everyone with a birthday or anniversary in a given month — for the bulletin, announcements, or cards? The People search can filter your congregation by **Birth Month** and **Anniversary Month** and show the dates right in the results.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Before You Begin</h4>
 
-- Certifique-se de que datas de nascimento (e aniversários de casamento) estão inseridas no perfil de cada pessoa. Consulte [Adicionando Pessoas](../people/adding-people.md).
-- Você precisa de permissão para visualizar Pessoas. Consulte [Funções e Permissões](../settings/roles-permissions.md).
+- Ensure birth dates (and anniversaries) are entered on each person's profile. See [Adding People](../people/adding-people.md).
+- You need permission to view People. See [Roles & Permissions](../settings/roles-permissions.md).
 
 </div>
 
-## Obtendo uma Lista de Aniversários para um Mês
+## Getting a Birthday List for a Month
 
-1. Abra o **menu de seção** no canto superior esquerdo e escolha **Pessoas**.
-2. Sob a caixa de busca, clique em **Avançado**.
-3. Expanda a seção **Demographics** e marque **Birth Month**, depois escolha o mês.
-4. Execute a busca — todos com aniversário aquele mês aparecem nos resultados.
-5. Para ver as datas, clique no **ícone de colunas** no canto superior direito dos resultados e habilite a coluna **Birthday**. Use **Export** para baixar a lista como uma planilha se preferir ordená-la ou imprimi-la lá.
+1. Open the **section menu** in the top-left corner and choose **People**.
+2. Under the search box, click **Advanced**.
+3. Expand the **Demographics** section and check **Birth Month**, then choose the month.
+4. Run the search — everyone with a birthday that month appears in the results.
+5. To see the dates, click the **columns icon** at the top right of the results and enable the **Birthday** column. Use **Export** to download the list as a spreadsheet if you prefer to sort or print it there.
 
-## Obtendo uma Lista de Aniversários de Casamento
+## Getting an Anniversary List
 
-Messos passos — na seção **Demographics**, marque **Anniversary Month** em vez disso (ou também), escolha o mês e habilite a coluna **Anniversary** nos resultados.
+Same steps — in the **Demographics** section, check **Anniversary Month** instead (or as well), choose the month, and enable the **Anniversary** column in the results.
 
-## Usos Práticos
+## Practical Uses
 
-- **Boletins semanais** -- Execute a lista do mês atual e leia os nomes direto no boletim.
-- **Cartões de aniversário e aniversário de casamento** -- Exporte a lista do mês e entregue ao seu time de redação de cartões.
-- **Marcos** -- Combine com o filtro de **Age** para encontrar aniversários marco.
+- **Weekly bulletins** -- Run the current month's list and read the names straight into the bulletin.
+- **Birthday & anniversary cards** -- Export the month's list and hand it to your card-writing team.
+- **Milestones** -- Combine with the **Age** filter to find milestone birthdays.
 
 :::tip
-Ambas as listas vêm dos campos de data de nascimento e aniversário de casamento no perfil de cada pessoa — se alguém está faltando, seu perfil apenas precisa da data adicionada.
+Both lists come from the birth date and anniversary fields on each person's profile — if someone's missing, their profile just needs the date added.
 :::
 
 :::info
-Versões anteriores de B1 Admin tinha uma página Relatórios separada para aniversários. Essa página foi aposentada — os filtros de busca de Pessoas acima são o caminho atual e cobrem aniversários de casamento também.
+Earlier versions of B1 Admin had a separate Reports page for birthdays. That page has been retired — the People search filters above are the current way, and they cover anniversaries too.
 :::

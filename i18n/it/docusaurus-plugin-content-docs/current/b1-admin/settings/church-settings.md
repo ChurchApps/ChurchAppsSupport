@@ -1,90 +1,90 @@
 ---
-title: "Impostazioni della Chiesa"
+title: "Impostazioni Chiesa"
 ---
 
-# Impostazioni della Chiesa
+# Church Impostazioni
 
 <div class="article-intro">
 
-La pagina Impostazioni della Chiesa è dove configuri le informazioni di base della tua chiesa, i dettagli di contatto e il branding. Questi dettagli vengono utilizzati in tutti gli strumenti ChurchApps, incluso il tuo sito web B1.church e l'app B1 Mobile.
+The Church Impostazioni page is where you configure your church's basic information, contact details, and branding. These details are used across all ChurchApps tools, including your B1.church website and the B1 Mobile app.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Hai bisogno del permesso "Modifica Impostazioni della Chiesa". Vedi [Ruoli e Autorizzazioni](./roles-permissions.md) se non hai accesso.
-- Tieni pronto l'indirizzo della chiesa, le informazioni di contatto e il logo
+- You need the "Modifica Church Impostazioni" Permesso. See [Roles & Permissions](./roles-permissions.md) if you do not have access.
+- Have your church's address, contact information, and logo ready
 
 </div>
 
-## Modifica delle Informazioni della Chiesa
+## Editing Your Church Information
 
-1. In B1 Admin, apri il **menu della sezione** nell'angolo in alto a sinistra (il nome della sezione con la piccola freccia) e scegli **Impostazioni**.
-2. Fai clic sul pulsante **Modifica Impostazioni** nell'intestazione.
-3. Aggiorna uno dei seguenti campi:
-   - **Nome della Chiesa** -- Il nome visualizzato in tutti i prodotti ChurchApps.
-   - **Indirizzo** -- L'indirizzo fisico della tua chiesa.
-   - **Informazioni di Contatto** -- Numero di telefono, email e altri dettagli di contatto.
-4. Fai clic su **Salva** per applicare le tue modifiche.
+1. In B1 Admin, Apri the **menu della sezione** in the angolo in alto a sinistra (the section name with the small arrow) and Scegli **Impostazioni**.
+2. Fai clic the **Modifica Impostazioni** button in the header.
+3. Update any of the following fields:
+   - **Church Name** -- The name displayed across all ChurchApps products.
+   - **Address** -- Your church's physical address.
+   - **Contact Information** -- Phone number, email, and other contact details.
+4. Fai clic **Salva** Per apply your changes.
 
-## Configurazione del Sottodominio
+## Setting Up Your Subdomain
 
-La tua chiesa ottiene un sottodominio gratuito su **tuachiesa.b1.church**. Questo è l'indirizzo web dove i membri e i visitatori possono accedere alla tua presenza online della chiesa.
+Your church gets a free subdomain at **yourchurch.b1.church**. This is the web address where Membri and visitors can access your church's online presence.
 
-1. Nella pagina Impostazioni, individua il campo **Sottodominio**.
-2. Inserisci il tuo sottodominio preferito (ad esempio, "chiesa di grazia" per chiesiadi grazia.b1.church).
-3. Salva le tue modifiche.
+1. On the Impostazioni page, locate the **Subdomain** field.
+2. Inserisci your preferred subdomain (for example, "gracechurch" for gracechurch.b1.church).
+3. Salva your changes.
 
 :::info
-Il tuo sottodominio deve essere univoco in tutte le chiese ChurchApps. Se il nome preferito è occupato, prova ad aggiungere la tua città o stato (ad esempio, "gracechurch-dallas").
+Your subdomain must be unique across all ChurchApps churches. If your preferred name is taken, try adding your city or state (for example, "gracechurch-dallas").
 :::
 
-## Configurazione del Branding
+## Configuring Branding
 
-Personalizza come la tua chiesa appare in tutti gli strumenti ChurchApps:
+Customize how your church appears across all ChurchApps tools:
 
-1. Carica il tuo **logo della chiesa** facendo clic sull'area del logo e selezionando un file immagine.
-2. Aggiungi eventuali **immagini della chiesa** aggiuntive utilizzate sul tuo sito web e [app mobile](./mobile-app.md).
+1. Carica your **church logo** by clicking the logo area and selecting an image file.
+2. Aggiungi any additional **church images** used on your website and [mobile app](./mobile-app.md).
 
 :::tip
-Per i migliori risultati, usa un logo con sfondo trasparente in formato PNG. Questo garantisce che appaia perfetto sia su sfondi chiari che scuri.
+For best results, use a logo with a transparent background in PNG format. This ensures it looks great on both light and dark backgrounds.
 :::
 
-## Primo Giorno della Settimana
+## First Giorno of Week
 
-Scegli quale giorno i tuoi calendari iniziano. L'elenco a discesa **Primo Giorno della Settimana** nella sezione Informazioni Chiesa è impostato su **Domenica** per impostazione predefinita, ma può essere impostato su qualsiasi giorno. Una volta modificato, viene onorato in tutte le griglie del calendario in B1 Admin e nel portale membro B1.church.
+Scegli which Giorno your calendars start on. The **First Giorno of Week** dropdown on the Church Info section defaults Per **Sunday**, but can be set Per any Giorno. Once changed, it's honored across calendar grids in B1 Admin and the B1.church Membro portal -- Gruppo calendars, curated calendars, and the Evento editor all lay out weeks starting on the Giorno you Scegli.
 
-## Archiviazione File
+## File Storage
 
-Per impostazione predefinita, i file che carichi sul tuo sito web (tramite [File](../website/files.md)) e in altre aree di contenuto utilizzano l'archiviazione ospitata gratuita di B1, fino a 100 MB. Se hai bisogno di più spazio, puoi invece collegare il tuo archivio cloud - i nuovi caricamenti vanno direttamente al tuo account senza limite della piattaforma.
+By default, files you Carica Per your website (through [Files](../website/files.md)) and other content areas use B1's free hosted storage, up Per 100MB. If you need more Stanza, you can connect your own cloud storage instead -- new uploads then go straight Per your Account with No platform limit.
 
-1. Nella pagina Impostazioni, trova la scheda **Archiviazione File** e fai clic per modificarla.
-2. Scegli un provider: **Google Drive**, **Dropbox**, **OneDrive**, o un **bucket compatibile S3** (AWS S3, Cloudflare R2, Backblaze B2, ecc.).
-3. Per Google Drive, Dropbox o OneDrive, fai clic su **Connetti** e accedi per autorizzare l'accesso. Per un bucket compatibile S3, inserisci la tua chiave di accesso, segreto, nome del bucket e URL di base pubblico.
-4. Fai clic su **Salva**.
+1. On the Impostazioni page, Trova the **File Storage** card and Fai clic Per Modifica it.
+2. Scegli a provider: **Google Drive**, **Dropbox**, **OneDrive**, or an **S3-compatible bucket** (AWS S3, Cloudflare R2, Backblaze B2, etc.).
+3. For Google Drive, Dropbox, or OneDrive, Fai clic **Connect** and sign in Per authorize access. For an S3-compatible bucket, Inserisci your access key, secret, bucket name, and public URL base.
+4. Fai clic **Salva**.
 
 :::info
-Questo influisce solo sui nuovi caricamenti sul tuo sito Web Files e aree di contenuto simili. Le immagini della galleria, le miniature, i logo e le foto delle persone rimangono sempre sull'archiviazione predefinita di B1.
+This only affects new uploads Per your website Files and similar content areas. Gallery images, thumbnails, logos, and person photos always stay on B1's default storage.
 :::
 
-## Promozione del Grado
+## Grade Promotion
 
-Se traccia il **Grado** su bambini e studenti, B1 può automaticamente aumentare tutti di un grado in una data che scegli (ad esempio, 1° agosto) piuttosto che richiedere di modificare ogni profilo a mano.
+If you track **Grade** on children and students, B1 can automatically bump everyone up a grade on a Data you Scegli (for example, August 1st) rather than requiring you Per Modifica each Profilo by hand.
 
-1. Nella pagina Impostazioni, trova l'opzione **Promozione del Grado**.
-2. Attivala e scegli il **mese e il giorno** per promuovere i gradi ogni anno.
-3. Salva le tue modifiche.
+1. On the Impostazioni page, Trova the **Grade Promotion** option.
+2. Turn it on and Scegli the **Mese and Giorno** Per promote grades each Anno.
+3. Salva your changes.
 
-## Importazione e Esportazione
+## Importa and Esporta
 
-Il pulsante **Importazione/Esportazione** nell'intestazione Impostazioni apre uno strumento dedicato in una nuova finestra del browser. Usalo per:
+The **Importa/Esporta** button in the Impostazioni header opens a dedicated tool in a new browser window. Use this Per:
 
-- Importare i dati dei membri da un altro sistema di gestione della chiesa.
-- Esportare i tuoi dati ChurchApps per backup o scopi di migrazione.
+- Importa Membro data from another church management system.
+- Esporta your ChurchApps data for backup or migration purposes.
 
-Questo è particolarmente utile quando stai configurando per la prima volta la tua chiesa e devi trasferire record esistenti in ChurchApps.
+This is especially helpful when you are first setting up your church and need Per transfer existing records into ChurchApps.
 
 :::warning
-Quando importi i dati, esegui sempre un backup dei tuoi record esistenti prima. Le operazioni di importazione aggiungono dati al tuo sistema e potrebbero creare voci duplicate se eseguite più volte.
+When importing data, always Indietro up your existing records first. Importa operations Aggiungi data Per your system and may Crea duplicate entries if run multiple times.
 :::

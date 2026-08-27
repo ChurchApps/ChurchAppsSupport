@@ -1,38 +1,38 @@
 # MinistryStuff (Paid Storage & Texting)
 
-MinistryStuff.org वह separate paid service है जो दोनों चीजों को fund करती है जो ChurchApps give away नहीं कर सकता — bulk file storage (1TB+) और SMS credits — flat-rate monthly subscriptions के रूप में। ChurchApps स्वयं 100% free रहता है; B1 में कुछ भी MinistryStuff subscription को require नहीं करता है, और हर integration point एक provider seam है जिसे एक third party भी implement कर सकता है।
+MinistryStuff.org is the separate paid service that funds the two things ChurchApps cannot give away — bulk file storage (1TB+) and SMS credits — as flat-rate monthly subscriptions. ChurchApps itself stays 100% free; nothing in B1 requires a MinistryStuff subscription, and every integration point is a provider seam a third party could also implement.
 
 ## Components
 
 | Piece | Repo | Role |
 |---|---|---|
-| MinistryStuffApi | `MinistryStuffApi/` (port 8097 dev) | Billing (Stripe), SMS send + credit ledger (AWS End User Messaging), storage (S3 + quota accounting)। Single MySQL DB `ministrystuff`। |
-| MinistryStuffWeb | `MinistryStuffWeb/` (port 3103 dev) | ministrystuff.org — marketing, pricing, और account portal (plans, usage, Stripe Checkout/Customer Portal redirects)। |
-| Texting provider | `Packages/texting` → `MinistryStuffProvider` | Registered as `ministrystuff` alongside Clearstream/TextInChurch। |
-| Storage seam | `Packages/apihelper` → `IStorageProvider` / `StorageProviderFactory` | `ChurchAppsStorageProvider` (default, free) wraps original S3/disk switch; `FileStorageHelper` unchanged default provider को delegate करता है। |
-| Api wiring | `Api/` content + messaging modules | `MinistryStuffStorageProvider` + `StorageResolver` (content), `TextingConfigHelper` service-key injection (messaging), `storageProviders` table, `/content/storage/*` + `/messaging/texting/credits` endpoints। |
+| MinistryStuffApi | `MinistryStuffApi/` (port 8097 dev) | Billing (Stripe), SMS send + credit ledger (AWS End User Messaging), storage (S3 + quota accounting). Single MySQL DB `ministrystuff`. |
+| MinistryStuffWeb | `MinistryStuffWeb/` (port 3103 dev) | ministrystuff.org — marketing, pricing, and the account portal (plans, usage, Stripe Checkout/Customer Portal redirects). |
+| Texting provider | `Packages/texting` → `MinistryStuffProvider` | Registered as `ministrystuff` alongside Clearstream/TextInChurch. |
+| Storage seam | `Packages/apihelper` → `IStorageProvider` / `StorageProviderFactory` | `ChurchAppsStorageProvider` (default, free) wraps the original S3/disk switch; `FileStorageHelper` delegates to the default provider unchanged. |
+| Api wiring | `Api/` content + messaging modules | `MinistryStuffStorageProvider` + `StorageResolver` (content), `TextingConfigHelper` service-key injection (messaging), `storageProviders` table, `/content/storage/*` + `/messaging/texting/credits` endpoints. |
 
 ## Identity & trust
 
-- Same accounts, same churches: MinistryStuffApi shared `JWT_SECRET` के साथ ChurchApps JWTs को verify करता है (sibling-app pattern, B1Transfer की तरह)। Portal MembershipApi के विरुद्ध login करता है और `?jwt=` hand-offs को accept करता है।
-- Server-to-server (core Api → MinistryStuffApi): `X-Service-Key` header (`MINISTRYSTUFF_SERVICE_KEY`, दोनों sides) + explicit `churchId`। Entitlement हमेशा उस church के subscription के विरुद्ध checked है। Churches कभी MinistryStuff credentials को hold नहीं करते — B1Admin में provider को select करना वह सब है जो needed है।
+- Same accounts, same churches: MinistryStuffApi verifies ChurchApps JWTs with the shared `JWT_SECRET` (sibling-app pattern, like B1Transfer). The portal logs in against MembershipApi and accepts `?jwt=` hand-offs.
+- Server-to-server (core Api → MinistryStuffApi): `X-Service-Key` header (`MINISTRYSTUFF_SERVICE_KEY`, both sides) + explicit `churchId`. Entitlement is always checked against that church's subscription. Churches never hold MinistryStuff credentials — selecting the provider in B1Admin is all that's needed.
 
 ## Texting flow
 
-B1Admin Send Text → Api `TextingController` → `@churchapps/texting` `getProvider("ministrystuff")` → MinistryStuffApi `/sms/send|/sms/sendBulk` → current period के `smsCreditGrants` के विरुद्ध segment count debited → AWS End User Messaging (या dev में `smsMode: mock`)। Credits एक **hard stop** हैं: exhausted credits wholesale को reject करते हैं (`insufficient_credits`, B1Admin में एक friendly upgrade prompt के रूप में surfaced) — कभी partial sends नहीं, कभी overage billing नहीं। Credit grants idempotently issued होते हैं billing period से Stripe `invoice.paid` webhooks से। Opt-outs (`smsOptOuts`) हर send से पहले filtered होते हैं।
+B1Admin Send Text → Api `TextingController` → `@churchapps/texting` `getProvider("ministrystuff")` → MinistryStuffApi `/sms/send|/sms/sendBulk` → segment count debited against the current period's `smsCreditGrants` → AWS End User Messaging (or `smsMode: mock` in dev). Credits are a **hard stop**: exhausted credits reject wholesale (`insufficient_credits`, surfaced as a friendly upgrade prompt in B1Admin) — never partial sends, never overage billing. Credit grants are issued idempotently per billing period from Stripe `invoice.paid` webhooks. Opt-outs (`smsOptOuts`) are filtered before every send.
 
 ## Storage flow
 
-एक church का provider row (`content.storageProviders`, B1Admin → Settings → File Storage में managed) select करता है कहाँ **new** uploads जाते हैं। `contentPath` एक absolute per-file URL है, तो mixed providers coexist करते हैं zero migration के साथ: old files `content.churchapps.org` से serve करते रहते हैं, new ones `content.ministrystuff.org` से। Uploads flow Api → `StorageResolver.forChurch` → provider `store`/`getUploadUrl` (S3 mode में presigned POST जिसमें `content-length-range` हो; disk/dev mode में base64 fallback); deletes stored URL द्वारा route करते हैं (`StorageResolver.forUrl`)। Quota = plan bytes, `storageObjects` से counted (`stored` + `pending` reservations); exceeded quota new uploads को block करता है (`storage_quota_exceeded`) — कुछ भी never deleted या billed extra है। Free ChurchApps tier untouched है (before के जैसे same limits; कोई church-wide quota नहीं)।
+A church's provider row (`content.storageProviders`, managed in B1Admin → Settings → File Storage) selects where **new** uploads go. `contentPath` is an absolute per-file URL, so mixed providers coexist with zero migration: old files keep serving from `content.churchapps.org`, new ones from `content.ministrystuff.org`. Uploads flow Api → `StorageResolver.forChurch` → provider `store`/`getUploadUrl` (presigned POST with `content-length-range` in S3 mode; base64 fallback in disk/dev mode); deletes route by the stored URL (`StorageResolver.forUrl`). Quota = plan bytes, counted from `storageObjects` (`stored` + `pending` reservations); exceeded quota blocks new uploads (`storage_quota_exceeded`) — nothing is ever deleted or billed extra. The free ChurchApps tier is untouched (same limits as before; no church-wide quota).
 
-Scope note: provider selection content **files/resources** flow को cover करता है (जहाँ bulk media live करता है)। Gallery/logo/photo uploads default provider पर रहते हैं — वे storage से keys list करते हैं और URLs को client-side build करते हैं, तो per-church rooting apply नहीं होता yet।
+Scope note: provider selection covers the content **files/resources** flow (where bulk media lives). Gallery/logo/photo uploads stay on the default provider — they list keys from storage and build URLs client-side, so per-church rooting doesn't apply yet.
 
-Same seam [Bring-Your-Own Storage](./byos-storage) को भी power करता है: churches Google Drive, Dropbox, OneDrive, या अपने स्वयं के S3-compatible bucket को link कर सकते हैं MinistryStuff plan के बजाय।
+The same seam also powers [Bring-Your-Own Storage](./byos-storage): churches can link Google Drive, Dropbox, OneDrive, or their own S3-compatible bucket instead of a MinistryStuff plan.
 
 ## Billing
 
-Stripe Checkout (hosted) subscribe के लिए, Stripe Customer Portal card update/cancel/invoices के लिए — MinistryStuffWeb के पास कोई card forms नहीं है। One `subscriptions` row per (church, product); plans/tiers code में live करते हैं (`MinistryStuffApi/src/helpers/Plans.ts`) जिसमें config से Stripe price ids। Webhook (`/billing/webhook`, raw-body signature verification, `webhookEvents` dedup) subscription lifecycle को drives करता है: active → past_due (grace) → canceled।
+Stripe Checkout (hosted) for subscribe, Stripe Customer Portal for card update/cancel/invoices — MinistryStuffWeb has no card forms. One `subscriptions` row per (church, product); plans/tiers live in code (`MinistryStuffApi/src/helpers/Plans.ts`) with Stripe price ids from config. Webhook (`/billing/webhook`, raw-body signature verification, `webhookEvents` dedup) drives the subscription lifecycle: active → past_due (grace) → canceled.
 
 ## Dev setup
 
-MinistryStuffApi run करें (`yarn dev`, 8097; needs `.env` shared `JWT_SECRET` + `MINISTRYSTUFF_SERVICE_KEY` के साथ) और `Api/.env` में same service key set करें। `Api/config/dev.json` पहले से ही `ministryStuffApi` को `localhost:8097` पर point करता है। MinistryStuffWeb को `.env` के साथ `VITE_STAGE=dev` चाहिए। Dev `smsMode: mock` और disk storage का उपयोग करता है — कोई AWS needed नहीं।
+Run MinistryStuffApi (`yarn dev`, 8097; needs `.env` with the shared `JWT_SECRET` + `MINISTRYSTUFF_SERVICE_KEY`) and set the same service key in `Api/.env`. `Api/config/dev.json` already points `ministryStuffApi` at `localhost:8097`. MinistryStuffWeb needs `.env` with `VITE_STAGE=dev`. Dev uses `smsMode: mock` and disk storage — no AWS needed.

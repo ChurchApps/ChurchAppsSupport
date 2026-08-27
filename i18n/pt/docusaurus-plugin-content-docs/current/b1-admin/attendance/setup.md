@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Configuração de Presença"
 ---
 
@@ -6,61 +6,61 @@ title: "Configuração de Presença"
 
 <div class="article-intro">
 
-Antes de poder rastrear presença, você precisa dizer ao B1 Admin sobre as localizações físicas de sua igreja, quando os serviços acontecem e quais grupos se reúnem em cada serviço. Esta configuração única cria a estrutura que alimenta todo o rastreamento e relatório de presença em sua igreja.
+Before you can track attendance, you need to tell B1 Admin about your church's physical locations, when services happen, and which groups meet at each service. This one-time setup creates the structure that powers all attendance tracking and reporting across your church.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Before You Begin</h4>
 
-- Você precisa de uma conta B1 Admin ativa com permissão para gerenciar presença. Consulte [Funções e Permissões](../people/roles-permissions.md) se não tiver certeza sobre seu nível de acesso.
-- Se você planeja atribuir grupos a horários de serviço, certifique-se de que seus [grupos estão criados](../groups/creating-groups.md) primeiro.
+- You need an active B1 Admin account with permission to manage attendance. See [Roles & Permissions](../people/roles-permissions.md) if you're unsure about your access level.
+- If you plan to assign groups to service times, make sure your [groups are created](../groups/creating-groups.md) first.
 
 </div>
 
-## Conceitos-Chave
+## Key Concepts
 
-- **Campus** - uma localização física onde sua igreja se reúne (por exemplo, "Campus Principal", "Campus Norte"). Os campi são gerenciados em **Configurações**.
-- **Serviço** - um encontro recorrente em um campus (por exemplo, "Serviço de Domingo", "Semana").
-- **Horário do Serviço** - um horário específico que um serviço acontece (por exemplo, "9:00 AM", "11:00 AM").
-- **Grupo Agendado** - um grupo atribuído a um horário de serviço específico. A presença é rastreada no contexto daquele serviço.
-- **Grupo Não Agendado** - um grupo que rastreia presença por conta própria, sem estar vinculado a um horário de serviço.
+- **Campus** -- a physical location where your church meets (e.g., "Main Campus," "North Campus"). Campuses are managed under **Settings**.
+- **Service** -- a recurring gathering at a campus (e.g., "Sunday Service," "Midweek").
+- **Service Time** -- a specific time a service happens (e.g., "9:00 AM," "11:00 AM").
+- **Scheduled Group** -- a group assigned to a specific service time. Attendance is tracked in the context of that service.
+- **Unscheduled Group** -- a group that tracks attendance on its own, without being tied to a service time.
 
-## Configurando Sua Estrutura de Presença
+## Setting Up Your Attendance Structure
 
-1. Abra **B1 Admin**, clique no **menu de seção** no canto superior esquerdo (o nome da seção com a seta pequena) e escolha **Pessoas**.
-2. Na barra de navegação, clique na guia **Presença**. A guia **Configuração** é selecionada por padrão.
-3. Clique em **Gerenciar Campi** (canto superior direito do painel Configuração). Isto o leva a **Configurações → Campi**. Clique em **Adicionar Campus**, digite o nome de sua localização (endereço e fuso horário são opcionais) e clique em **Salvar**.
-4. Retorne a **Pessoas → Presença → Configuração**. Seu campus agora aparece na tabela de configuração.
-5. Clique no **botão + na coluna Serviço** sob seu campus. Digite um nome de serviço como "Serviço de Domingo" e clique em **Salvar**.
-6. Clique no **botão + na coluna Hora** sob o serviço. Digite uma hora como "9:00 AM" e clique em **Salvar**. Repita para cada horário de serviço.
-7. Para conectar um grupo a um horário de serviço, abra o grupo na guia **Grupos**, clique no lápis **Editar** e use **Adicionar Horário do Serviço** — veja a próxima seção.
+1. Open **B1 Admin**, click the **section menu** in the top-left corner (the section name with the small arrow), and choose **People**.
+2. In the navigation bar, click the **Attendance** tab. The **Setup** tab is selected by default.
+3. Click **Manage Campuses** (top right of the Setup panel). This takes you to **Settings → Campuses**. Click **Add Campus**, enter the name of your location (address and time zone are optional), and click **Save**.
+4. Return to **People → Attendance → Setup**. Your campus now appears in the setup table.
+5. Click the **+ button in the Service column** under your campus. Enter a service name such as "Sunday Service" and click **Save**.
+6. Click the **+ button in the Time column** under the service. Enter a time such as "9:00 AM" and click **Save**. Repeat for each service time.
+7. To connect a group to a service time, open the group from the **Groups** tab, click the **Edit** pencil, and use **Add Service Time** — see the next section.
 
-### Ativando Rastrear Presença em um Grupo
+### Enabling Track Attendance on a Group
 
-Antes de um grupo poder ter presença registrada, Rastrear Presença deve estar ligado para esse grupo.
+Before a group can have attendance recorded, Track Attendance must be turned on for that group.
 
-1. Abra o **menu de seção** no canto superior esquerdo e escolha **Pessoas**, depois clique na guia **Grupos** e selecione o grupo.
-2. Clique no ícone do lápis **Editar**.
-3. Defina **Rastrear Presença** como **Sim**.
-4. Clique em **Salvar**.
+1. Open the **section menu** in the top-left corner and choose **People**, then click the **Groups** tab and select the group.
+2. Click the **Edit** pencil icon.
+3. Set **Track Attendance** to **Yes**.
+4. Click **Save**.
 
 :::tip
-Se você atribuiu o grupo a um horário de serviço na etapa anterior, também use a opção **Adicionar Horário do Serviço** na tela de edição do grupo para vinculá-lo ao serviço correto. Isto garante que as sessões estejam conectadas ao campus e hora corretos.
+If you assigned the group to a service time in the previous step, also use the **Add Service Time** option on the group's edit screen to link it to the correct service. This ensures sessions are connected to the right campus and time.
 :::
 
 :::tip
-Se um grupo se reúne fora de um serviço regular - como um pequeno grupo entre semana que rastreia sua própria presença - você pode deixá-lo como um grupo não agendado. Ele ainda aparecerá na guia Grupos para relatório de presença.
+If a group meets outside of a regular service -- like a midweek small group that tracks its own attendance -- you can leave it as an unscheduled group. It will still appear on the Groups tab for attendance reporting.
 :::
 
-## Editando Sua Configuração
+## Editing Your Setup
 
-Você pode atualizar sua configuração a qualquer momento. Selecione um campus, horário de serviço ou grupo e clique em **Editar** para alterar seus detalhes ou **Deletar** para removê-lo.
+You can update your setup at any time. Select a campus, service time, or group and click **Edit** to change its details, or **Delete** to remove it.
 
 :::info
-Remover um horário de serviço não deleta registros de presença passados. Seus dados históricos são preservados mesmo se você alterar seu cronograma.
+Removing a service time does not delete past attendance records. Your historical data is preserved even if you change your schedule.
 :::
 
-## O Que Vem a Seguir
+## What's Next
 
-Quando seus campi, horários de serviço e grupos estiverem em vigor, você está pronto para começar a [registrar presença](recording-attendance.md) manualmente ou configurar [check-in automático](check-in.md) para seus serviços.
+Once your campuses, service times, and groups are in place, you are ready to start [recording attendance](recording-attendance.md) manually or set up [self check-in](check-in.md) for your services.

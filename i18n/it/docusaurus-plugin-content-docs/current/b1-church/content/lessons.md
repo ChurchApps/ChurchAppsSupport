@@ -1,53 +1,53 @@
 ---
-title: "Lezioni (Deprecato)"
+title: "Lessons (Deprecated)"
 ---
 
-# Lezioni (Deprecato)
+# Lessons (Deprecated)
 
-:::danger La scheda Lezioni è stata sostituita da FreePlay
-La scheda **Lezioni** incorporata su B1.church è stata deprecata. La riproduzione del curriculum da Lessons.church è ora fornita tramite **[FreePlay](/docs/freeplay/)** — l'app TV gratuita di ChurchApps per schermi in aula, Fire TV, Apple TV e Android TV — che offre riproduzione offline, pairing in aula e un'esperienza da telecomando TV che la scheda incorporata non poteva fornire.
+:::danger Lessons tab has been replaced by FreePlay
+The embedded **Lessons** tab on B1.church has been deprecated. Curriculum playback from Lessons.church is now delivered through **[FreePlay](/docs/freeplay/)** — ChurchApps' free TV app for classroom screens, Fire TV, Apple TV, and Android TV — which offers offline playback, classroom pairing, and a TV-remote experience the embedded tab could not provide.
 
-Per sfogliare, pianificare o modificare il curriculum direttamente, accedi a [Lessons.church](https://lessons.church) nel tuo browser. Per riprodurre lezioni su una TV in aula, installa [FreePlay](/docs/freeplay/getting-started/) sul tuo dispositivo TV.
+Per browse, schedule, or Modifica curriculum directly, sign in Per [Lessons.church](https://lessons.church) in your browser. Per play lessons on a classroom TV, install [FreePlay](/docs/freeplay/getting-started/) on your TV device.
 
-I genitori dei gruppi associati a un tipo di piano di lezione in B1Admin vedono **la lezione di questa settimana** nella pagina [dettagli del gruppo](/docs/b1-church/groups/group-details.md) -- non in questa scheda deprecata.
+Parents of Gruppi associated with a lesson plan Digita in B1Admin see **this week's lesson** on the [group details](/docs/b1-church/groups/group-details.md) page — not on this deprecated tab.
 :::
 
 <div class="article-intro">
 
-La scheda **Lezioni** ti forniva l'accesso al curriculum e ai materiali di apprendimento della tua chiesa. Il contenuto era fornito tramite la piattaforma Lessons.church e incorporato direttamente all'interno di B1.church, quindi non avevi bisogno di navigare verso un sito separato.
+The **Lessons** tab gave you access Per your church's curriculum and learning materials. Content was provided through the Lessons.church platform and embedded directly within B1.church, so you did not need Per navigate Per a separate site.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Devi essere [accedere](../getting-started/logging-in.md) al tuo account B1.church. La scheda Lezioni si trova nell'area membro e richiede l'autenticazione.
-- La tua chiesa deve aver configurato il curriculum tramite Lessons.church.
+- You must be [logged in](../getting-started/logging-in.md) Per your B1.church Account. The Lessons tab is located in the Membro area and requires authentication.
+- Your church must have configured curriculum through Lessons.church.
 
 </div>
 
-## Accesso alle Lezioni
+## Accessing Lessons
 
-1. Accedi al tuo portale membro B1.church.
-2. Fai clic sulla scheda **Lezioni** nella [navigazione membro](../getting-started/navigating.md).
-3. Il contenuto di Lessons.church si carica direttamente nella pagina.
+1. Log in Per your B1.church Membro portal.
+2. Fai clic the **Lessons** tab in the [member navigation](../getting-started/navigating.md).
+3. The Lessons.church content loads directly within the page.
 
-Il tuo accesso viene trasferito automaticamente quando apri la scheda Lezioni. Non devi accedere di nuovo separatamente a Lessons.church.
+Your login carries over automatically when you Apri the Lessons tab. You do not need Per sign in again separately Per Lessons.church.
 
-## Cosa Puoi Fare
+## What You Can Do
 
-Una volta dentro la scheda Lezioni, puoi sfogliare il curriculum che la tua chiesa ha reso disponibile. A seconda di cosa ha impostato la tua chiesa, potresti trovare:
+Once inside the Lessons tab, you can browse the curriculum your church has made Disponibile. Depending on what your church has set up, you may Trova:
 
-- **Piani di lezione** -- Delinee strutturate con sezioni e attività
-- **Presentazioni e media** -- Diapositive, video e immagini per accompagnare le lezioni
-- **Risorse scaricabili** -- File e componenti aggiuntivi per ulteriori studi
+- **Lezione plans** -- Structured outlines with sections and activities
+- **Presentations and media** -- Slides, videos, and images Per accompany lessons
+- **Downloadable resources** -- Files and Aggiungi-ons for further study
 
-Puoi fare clic su singole sezioni all'interno di una lezione per visualizzarne il contenuto in una finestra di dialogo. Usa il pulsante **Indietro** per tornare all'elenco delle sezioni, o **Chiudi** per uscire dalla finestra di dialogo.
+You can Fai clic on individual sections within a lesson Per Visualizza their content in a dialog window. Use the **Indietro** button Per return Per the section list, or **Chiudi** Per exit the dialog.
 
 :::tip
-Le lezioni condivise con i tuoi gruppi appariranno anche sulla tua [Timeline](../community/timeline.md), rendendo facile trovare il curriculum assegnato senza navigare direttamente alla scheda Lezioni.
+Lessons shared with your Gruppi will also appear on your [Timeline](../community/timeline.md), making it easy Per Trova assigned curriculum without navigating Per the Lessons tab directly.
 :::
 
-## Disponibilità
+## Availability
 
-La scheda Lezioni appare quando la tua chiesa ha configurato il curriculum tramite Lessons.church. Se non vedi una scheda **Lezioni** nella tua navigazione membro, la tua chiesa potrebbe non avere il contenuto della lezione impostato. Contatta l'amministratore della tua chiesa per ulteriori informazioni.
+The Lessons tab appears when your church has configured curriculum through Lessons.church. If you do not see a **Lessons** tab in your Membro navigation, your church may not have lesson content set up. Contact your church administrator for more information.

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Registrering av donasjoner"
 ---
 
@@ -6,59 +6,31 @@ title: "Registrering av donasjoner"
 
 <div class="article-intro">
 
-Registrering av donasjoner i B1 Admin gjøres gjennom Batches-systemet. Du oppretter et batch for å representere en samling (som et søndags offering), deretter legger du individuelle donasjoner til det batchet. Dette holder giveoppoføringene dine organisert og enkle å forene.
+Registrering av donasjoner i B1 Admin gjøres gjennom partier systemet. Du oppretter et partie for å representere en innsamling (som en søndags gave), og legger deretter til individuelle donasjoner til det partiet. Dette holder givergang postene dine organisert og enkle å forsone.
 
 </div>
 
 <div class="prereqs">
-<h4>Før du begynner</h4>
+<h4>Før du starter</h4>
 
-- Sett opp [fondene dine](funds.md) slik at du kan tilordne donasjoner til riktige kategorier
-- Opprett et [batch](batches.md) for å holde donasjoner du er i ferd med å angi
-- Sørg for at donnorene er i [personkatalogen din](../people/adding-people.md) slik at du kan slå dem opp når du registrerer gaver
+- Sett opp fondene dine slik at du kan tilordne donasjoner til riktige kategorier
+- Opprett et partie for å holde donasjoner du er i ferd med å angi
+- Kontroller at donorene er i menneske katalogen din slik at du kan slå dem opp når du angir gaver
 
 </div>
 
-## Oppretting av et batch og legge til donasjoner
+## Opprett et partie og legg til donasjoner
 
-1. I **B1 Admin** åpner du **seksjonsmenyen** i øvre venstre hjørne og velg **Donations**, deretter klikk **Batches**.
-2. Klikk **Add Batch**.
-3. Angi et navn for batchet (f.eks. "Sunday Offering - Jan 5") og velg datoen. Klikk **Save**.
-4. Det nye batchet ditt vises i listen med null donasjoner og $0.00.
-5. Klikk på **batch-navn** for å åpne det.
+1. I B1 Admin, åpne Seksjonsmeny i øvre venstre hjørne og velg Donasjoner, og klikk deretter Partier.
+2. Klikk Legg til partie.
+3. Skriv inn ett navn for partiet (f.eks. "Søndag gave - jan 5") og velg datoen. Klikk Lagre.
+4. Det nye partiet ditt vises i listen som viser null donasjoner og 0 kroner.
+5. Klikk på partie navnet for å åpne det.
 
-## Registrering av individuelle donasjoner
+## Angi individuelle donasjoner
 
-1. På batch-detaljesiden, skriv inn donorens navn i **søkefeltet** for å finne dem.
-2. Etter å ha valgt en person, vises donasjonsregistreringskjemaet med felt for **Date**, **Payment Method**, **Fund**, **Amount**, og **Check Number**.
-3. Fyll inn detaljer og klikk **Add Donation**.
-4. Donasjonen legges til tabellen nedenfor, og skjemaet tilbakestilles slik at du kan angi den neste.
+1. På partie detalj siden, skriv donor navn i søkefeltet for å finne dem.
+2. Etter valg av en person, vises donasjon innskrivings skjema med felt for dato, betalingsmetode, fond, beløp og sjekknummer.
+3. Fyll inn detaljene og klikk Legg til donasjon.
+4. Donasjonen blir lagt til i tabellen nedenfor og skjemaet tilbakestilles slik at du kan angi den neste.
 
-:::tip
-Du kan raskt angi flere donasjoner på rad uten å forlate batch-siden. Skjemaet tilbakestilles etter hver oppføring slik at du kan arbeide gjennom en stabel med sjekker eller konvolutter effektivt.
-:::
-
-## Deling av en donasjon på flere fond
-
-Noen ganger gir en enkelt donor til mer enn ett fond i en transaksjon. For å håndtere dette:
-
-1. Klikk **Edit**-knappen på donasjonsraden.
-2. I redigeringskjemaet legger du til beløp til forskjellige fond. Totalbeløpet beregnes automatisk fra de individuelle fondbeløpene.
-3. Klikk **Save** for å oppdatere donasjonen.
-
-:::info
-Deling av donasjoner på tvers av fond er vanlig når en donor skriver en enkelt sjekk utpekt for flere formål, som General Fund og Missions.
-:::
-
-## Redigering eller fjerning av donasjoner
-
-For å redigere en donasjon, klikk **Edit**-knappen på raden i batchet. Du kan endre datoen, beløpet, fondet, betalingsmåten eller enhver annen detalj. Klikk **Save** når du er ferdig.
-
-:::tip
-Batch-sidehuvudet oppdateres automatisk for å vise det totale antallet donasjoner og det kombinerte dollarbeløpet når du legger til eller redigerer oppføringer. Bruk dette for å forene mot ditt innskuddskvittering.
-:::
-
-## Neste steg
-
-- Gjennomgå oppføringene dine med [Donation Reports](donation-reports.md) for å verifisere nøyaktighet
-- Ved årets slutt genererer du [Giving Statements](giving-statements.md) for donnorene dine

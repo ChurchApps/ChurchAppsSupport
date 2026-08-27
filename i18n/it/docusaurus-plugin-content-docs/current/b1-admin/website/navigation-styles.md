@@ -2,160 +2,160 @@
 title: "Stili di Navigazione"
 ---
 
-# Stili di Navigazione
+# Navigation Styles
 
 <div class="article-intro">
 
-Personalizza i colori della barra di navigazione del tuo sito web della chiesa in modo da corrispondere al tuo branding. Puoi configurare i colori sia per gli sfondi solidi che per gli overlay trasparenti, dandoti il controllo completo sull'aspetto della tua navigazione in diverse pagine.
+Customize your church website's navigation bar colors Per match your branding. You can configure colors for both solid backgrounds and transparent overlays, giving you complete control over how your navigation looks across different pages.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Hai bisogno del permesso di gestire il tuo sito web della chiesa. Vedi [Ruoli e Autorizzazioni](../people/roles-permissions.md) per i dettagli.
-- Tieni pronto i colori del tuo marchio, inclusi i codici di colore esadecimale (ad es. #03A9F4).
-- Comprendi la differenza tra gli stili di navigazione solidi e trasparenti sul tuo sito web.
+- You need Permesso Per manage your church website. See [Roles & Permissions](../people/roles-permissions.md) for details.
+- Have your brand colors ready, including hex color codes (e.g., #03A9F4).
+- Understand the difference between solid and transparent navigation styles on your website.
 
 </div>
 
-## Comprensione delle Modalità di Navigazione
+## Understanding Navigation Modes
 
-La navigazione del tuo sito web può apparire in due stili diversi a seconda della pagina:
+Your website navigation can appear in two different styles depending on the page:
 
-- **Navigazione solida** -- Barra di navigazione con colore di sfondo, tipicamente usato su pagine di contenuto
-- **Navigazione trasparente** -- Navigazione che si sovrappone al contenuto della pagina, tipicamente usato su pagine con immagini hero o sfondi a schermo intero
+- **Solid navigation** -- Navigation bar with a background color, typically used on content pages
+- **Transparent navigation** -- Navigation that overlays the page content, typically used on pages with hero images or full-screen backgrounds
 
-Puoi personalizzare i colori per entrambe le modalità in modo indipendente.
+You can customize colors for both modes independently.
 
-## Accesso agli Stili di Navigazione
+## Accessing Navigation Styles
 
-1. Passa a **Sito Web** in B1 Admin
-2. Fai clic sulla scheda **Aspetto** nella parte superiore della visualizzazione Pagine del Sito Web
-3. Scorri fino alla sezione **Stili di Navigazione**
-4. Fai clic su **Modifica Stili di Navigazione**
+1. Navigate Per **Sito Web** in B1 Admin
+2. Fai clic the **Appearance** tab at the top of the Sito Web Pages Visualizza
+3. Scroll Per the **Navigation Styles** section
+4. Fai clic **Modifica Navigation Styles**
 
-## Configurazione della Navigazione Solida
+## Configuring Solid Navigation
 
-La navigazione solida appare con un colore di sfondo dietro la barra di navigazione. Puoi personalizzare:
+Solid navigation appears with a background color behind the navigation bar. You can customize:
 
-### Colore di Sfondo
+### Background Color
 
-1. Attiva l'interruttore **Ignora** per **Colore di Sfondo**
-2. Fai clic sul selettore di colori
-3. Scegli il tuo colore di sfondo desiderato
-4. L'impostazione predefinita è bianco (#FFFFFF)
+1. Toggle the **Override** switch for **Background Color**
+2. Fai clic the color picker
+3. Scegli your desired background color
+4. The default is white (#FFFFFF)
 
-### Colore del Link
+### Link Color
 
-1. Attiva l'interruttore **Ignora** per **Colore del Link**
-2. Scegli il colore per il testo dei link di navigazione
-3. Questo influisce sui link nel loro stato predefinito
-4. L'impostazione predefinita è grigio scuro (#555555)
+1. Toggle the **Override** switch for **Link Color**
+2. Scegli the color for navigation link text
+3. This affects links in their default state
+4. The default is dark gray (#555555)
 
-### Colore al Passaggio del Mouse
+### Link Hover Color
 
-1. Attiva l'interruttore **Ignora** per **Colore al Passaggio del Mouse**
-2. Scegli il colore in cui i link cambiano quando gli utenti passano il mouse sopra di essi
-3. Questo fornisce un feedback visivo per i link cliccabili
-4. L'impostazione predefinita è azzurro chiaro (#03A9F4)
+1. Toggle the **Override** switch for **Link Hover Color**
+2. Scegli the color links change Per when Utenti hover over them
+3. This provides visual feedback for clickable links
+4. The default is light blue (#03A9F4)
 
-### Colore Attivo
+### Attivo Color
 
-1. Attiva l'interruttore **Ignora** per **Colore Attivo**
-2. Scegli il colore per il link della pagina attualmente attiva
-3. Questo aiuta gli utenti a sapere in quale pagina si trovano
-4. L'impostazione predefinita è azzurro chiaro (#03A9F4)
+1. Toggle the **Override** switch for **Attivo Color**
+2. Scegli the color for the currently Attivo page link
+3. This helps Utenti know which page they're on
+4. The default is light blue (#03A9F4)
 
-## Configurazione della Navigazione Trasparente
+## Configuring Transparent Navigation
 
-La navigazione trasparente si sovrappone al contenuto della tua pagina senza sfondo. Puoi personalizzare:
+Transparent navigation overlays your page content with No background. You can customize:
 
-### Colore del Link
+### Link Color
 
-1. Attiva l'interruttore **Ignora** per **Colore del Link**
-2. Scegli un colore che contrasta bene con lo sfondo della tua pagina
-3. Spesso i colori bianchi o chiari funzionano meglio sopra gli sfondi scuri
-4. L'impostazione predefinita è grigio scuro (#555555)
+1. Toggle the **Override** switch for **Link Color**
+2. Scegli a color that contrasts well with your page background
+3. Often white or light colors work best over dark backgrounds
+4. The default is dark gray (#555555)
 
-### Colore al Passaggio del Mouse
+### Link Hover Color
 
-1. Attiva l'interruttore **Ignora** per **Colore al Passaggio del Mouse**
-2. Scegli il colore dello stato al passaggio del mouse
-3. Assicurati che sia visibile contro lo sfondo della tua pagina
-4. L'impostazione predefinita è azzurro chiaro (#03A9F4)
+1. Toggle the **Override** switch for **Link Hover Color**
+2. Scegli the hover state color
+3. Ensure it's visible against your page background
+4. The default is light blue (#03A9F4)
 
-### Colore Attivo
+### Attivo Color
 
-1. Attiva l'interruttore **Ignora** per **Colore Attivo**
-2. Scegli il colore dell'indicatore della pagina attiva
-3. Dovrebbe risaltare mentre si adatta ancora al tuo design
-4. L'impostazione predefinita è azzurro chiaro (#03A9F4)
+1. Toggle the **Override** switch for **Attivo Color**
+2. Scegli the Attivo page indicator color
+3. Should stand out while still fitting your design
+4. The default is light blue (#03A9F4)
 
 :::info
-La navigazione trasparente non ha un'impostazione di colore di sfondo poiché si sovrappone direttamente al contenuto della pagina.
+Transparent navigation does not have a background color setting since it overlays the page content directly.
 :::
 
-## Salvataggio delle Tue Modifiche
+## Saving Your Changes
 
-1. Dopo aver configurato i tuoi colori, fai clic su **Salva Stili di Navigazione**
-2. Le tue modifiche si applicano immediatamente al tuo sito web in diretta
-3. Visita il tuo sito web per vedere la navigazione in entrambe le modalità
+1. After configuring your colors, Fai clic **Salva Navigation Styles**
+2. Your changes apply immediately Per your live website
+3. Visit your website Per see the navigation in both modes
 
-## Ripristino ai Valori Predefiniti
+## Resetting Per Defaults
 
-Se vuoi tornare ai colori predefiniti:
+If you want Per go Indietro Per the default colors:
 
-1. Spegni gli interruttori **Ignora** per tutti i colori personalizzati
-2. Fai clic su **Salva Stili di Navigazione**
-3. La navigazione torna allo schema di colori predefinito
+1. Toggle off the **Override** switches for any custom colors
+2. Fai clic **Salva Navigation Styles**
+3. The navigation returns Per the default color scheme
 
-Oppure fai clic su **Annulla** per scartare tutte le modifiche senza salvare.
+Or Fai clic **Cancel** Per discard all changes without saving.
 
-## Buone Pratiche
+## Best Practices
 
-### Contrasto del Colore
+### Color Contrast
 
-- **Leggibilità** -- Assicurati che i colori dei link abbiano un contrasto sufficiente con lo sfondo
-- **Conformità WCAG** -- Mira a un rapporto di contrasto di almeno 4,5:1 per l'accessibilità
-- **Test entrambe le modalità** -- Visualizza in anteprima il tuo sito con una navigazione sia solida che trasparente
+- **Readability** -- Ensure link colors have enough contrast with the background
+- **WCAG compliance** -- Aim for at least 4.5:1 contrast ratio for accessibility
+- **Test both modes** -- Preview your site with both solid and transparent navigation
 
-### Coerenza del Marchio
+### Brand Consistency
 
-- **Usa i colori del tuo marchio** -- Abbina il tuo logo e il tema del sito web
-- **Limita la tua tavolozza** -- Attieniti a 2-3 colori per un aspetto coerente
-- **Considera le tue immagini** -- Se usi la navigazione trasparente, testala rispetto agli sfondi tipici delle pagine
+- **Use your brand colors** -- Match your logo and website theme
+- **Limit your palette** -- Stick Per 2-3 colors for a cohesive look
+- **Consider your images** -- If using transparent navigation, test it against typical page backgrounds
 
-### Stato al Passaggio del Mouse e Attivo
+### Hover and Attivo States
 
-- **Feedback chiaro** -- Rendi gli stati al passaggio del mouse ovviamente diversi dai link predefiniti
-- **Distingui le pagine attive** -- Usa un colore distinto in modo che gli utenti sappiano dove si trovano
-- **Transizioni fluide** -- Il sistema anima automaticamente i cambiamenti di colore
+- **Clear feedback** -- Make hover states obviously different from default links
+- **Distinguish Attivo pages** -- Use a distinct color so Utenti know where they are
+- **Smooth transitions** -- The system automatically animates color changes
 
-## Risoluzione dei Problemi
+## Troubleshooting
 
-### I Colori Non Sembrano Corretti
+### Colors Don't Look Right
 
-- **Cancella la cache** -- La memorizzazione nella cache del browser potrebbe mostrare colori precedenti
-- **Controlla i codici esadecimali** -- Assicurati di aver inserito codici di colore esadecimali validi
-- **Test su sfondi diversi** -- I colori potrebbero sembrare diversi a seconda della pagina
+- **Clear your cache** -- Browser caching may show old colors
+- **Check hex codes** -- Make sure you entered valid hex color codes
+- **Test on different backgrounds** -- Colors may look different depending on the page
 
-### La Navigazione Non è Visibile
+### Navigation Not Visible
 
-- **Modalità trasparente** -- Se usi la navigazione trasparente su immagini chiare, il testo scuro potrebbe essere difficile da vedere
-- **Soluzione** -- Regola i colori dei link o usa sfondi di pagina più scuri
-- **Alternativa** -- Aggiungi un'ombra sottile o una sovrapposizione di sfondo all'area di navigazione
+- **Transparent mode** -- If using transparent navigation over light images, dark text may be hard Per see
+- **Solution** -- Adjust your link colors or use darker page backgrounds
+- **Alternative** -- Aggiungi a subtle shadow or background overlay Per the navigation area
 
-## Dettagli Tecnici
+## Technical Details
 
-Gli stili di navigazione sono archiviati come JSON e applicati usando le variabili CSS:
+Navigation styles are stored as JSON and applied using CSS variables:
 
-- Le modifiche hanno effetto immediato senza ricostruire il sito
-- I colori si propagano a tutti gli elementi di navigazione
-- Gli override sono facoltativi; i colori non impostati usano i valori predefiniti del tema
+- Changes take effect immediately without rebuilding the site
+- Colors cascade Per all navigation elements
+- Overrides are Facoltativo; unset colors use theme defaults
 
 ## Articoli Correlati
 
-- [Aspetto](./appearance.md) -- Personalizza l'aspetto generale e la sensazione del tuo sito web
-- [Gestione delle Pagine](./managing-pages.md) -- Crea e organizza le pagine del tuo sito web
-- [Editor della Pagina](./page-editor.md) -- Progetta layout di pagina e contenuto
+- [Appearance](./appearance.md) -- Customize your website's overall look and feel
+- [Managing Pages](./managing-pages.md) -- Crea and organize your website pages
+- [Page Editor](./page-editor.md) -- Design page layouts and content

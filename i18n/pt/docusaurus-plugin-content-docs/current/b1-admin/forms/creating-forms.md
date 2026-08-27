@@ -1,70 +1,88 @@
 ---
-title: "Criando formularios"
+title: "Criando Formulários"
 ---
 
-# Criando formularios
+# Criando Formulários
 
 <div class="article-intro">
 
-Crie formularios personalizados para coletar informacoes da sua congregacao. Voce pode criar formularios para inscricoes em eventos, pesquisas, cartoes de visitante, solicitacoes de membresia e muito mais. Os formularios podem ser vinculados a pessoas no seu banco de dados ou usados como paginas independentes com sua propria URL publica.
+Build custom forms to collect information from your congregation. You can create forms for event registrations, surveys, visitor cards, membership applications, and more. Forms can be linked to people in your database or used as standalone pages with their own public URL.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de comecar</h4>
+<h4>Before You Begin</h4>
 
-- Para formularios **People** (vinculados a registros de pessoas), voce precisa ter [pessoas no seu banco de dados](../people/adding-people.md) primeiro.
-- Para formularios que coletam **pagamentos**, voce deve ter o [Stripe configurado para doacao online](../donations/online-giving-setup.md).
+- For **People** forms (linked to person records), you need [people in your database](../people/adding-people.md) first.
+- For forms that collect **payments**, you must have [Stripe configured for online giving](../donations/online-giving-setup.md).
 
 </div>
 
-## Criando um novo formulario
+## Creating a New Form
 
-1. Navegue ate **Forms** no menu principal.
-2. Clique em **Add Form**.
-3. Digite um **nome** para o seu formulario.
-4. Escolha o tipo de formulario no menu suspenso:
-   - **People** — Associa envios a [registros de pessoas](../people/adding-people.md) no seu banco de dados.
-   - **Stand Alone** — Cria um formulario independente com sua propria URL publica, ideal para inscricoes externas.
-5. Clique em **Save** para criar o formulario.
+1. Navigate to **Forms** from the main menu.
+2. Click **Add Form**.
+3. Enter a **name** for your form.
+4. Choose the form type from the dropdown:
+   - **People** — Associates submissions with [people records](../people/adding-people.md) in your database.
+   - **Stand Alone** — Creates an independent form with its own public URL, ideal for external registrations.
+5. Click **Save** to create the form.
 
-Seu novo formulario aparecera na lista. Clique nele para comecar a adicionar perguntas.
+Your new form will appear in the list. Click on it to start adding questions.
 
-## Adicionando perguntas
+## Adding Questions
 
-1. Abra seu formulario e va para a aba **Questions**.
-2. Clique em **Add Question**.
-3. Selecione um **tipo de campo** no menu suspenso Provider. Os tipos disponiveis incluem:
-   - **Textbox** — Para respostas de texto curtas
-   - **Date** — Para selecao de datas
-   - **Email** — Para enderecos de e-mail
-   - **Phone Number** — Para entrada de telefone
-   - **Multiple Choice** — Para selecionar entre opcoes predefinidas
-   - **Payment** — Para coletar pagamentos
-4. Digite um **Titulo** e uma **Descricao** opcional para a pergunta.
-5. Marque **Require an answer** se o campo for obrigatorio.
-6. Clique em **Save**.
-7. Repita para adicionar mais perguntas.
+1. Open your form and go to the **Questions** tab.
+2. Click **Add Question**.
+3. Select a **field type** from the Provider dropdown. Available types include:
+   - **Textbox** — For short text answers
+   - **Date** — For date selections
+   - **Email** — For email addresses
+   - **Phone Number** — For phone input
+   - **Multiple Choice** — For selecting from predefined options
+   - **Payment** — For collecting payments
+4. Enter a **Title** and optional **Description** for the question.
+5. Check **Require an answer** if the field is mandatory.
+6. Click **Save**.
+7. Repeat to add more questions.
 
 :::warning
-O tipo de campo **Payment** requer que o Stripe esteja configurado. Se voce ainda nao configurou a doacao online, veja [Configuracao de doacao online](../donations/online-giving-setup.md) antes de adicionar campos de pagamento.
+The **Payment** field type requires Stripe to be configured. If you haven't set up online giving yet, see [Online Giving Setup](../donations/online-giving-setup.md) before adding payment fields.
 :::
 
-## Gerenciando membros do formulario
+## Managing Form Members
 
-1. Abra seu formulario e va para a aba **Members**.
-2. Pesquise por uma pessoa e adicione-a com uma funcao:
-   - **Admin** — Pode editar o formulario e visualizar todos os envios.
-   - **View Only** — Pode visualizar envios, mas nao pode editar o formulario.
+1. Open your form and go to the **Members** tab.
+2. Search for a person and add them with a role:
+   - **Admin** — Can edit the form and view all submissions.
+   - **View Only** — Can view submissions but cannot edit the form.
 
-## Configurando propriedades do formulario
+## Automatically Adding Submitters to a Group
 
-Voce pode atualizar o nome e as configuracoes do seu formulario a qualquer momento. Para formularios Stand Alone, voce tambem vera uma **URL publica** unica que pode compartilhar com qualquer pessoa.
+When **Create a person record from submissions** is enabled, you can also link the form to a group so every submitter is added to that group's roster automatically:
+
+1. Open your form's **Details**, and turn on **Create a person record from submissions**.
+2. Under **Add submitters to a group**, select the group to add submitters to, or leave it set to **None**.
+3. Click **Save**.
+
+Each time someone submits the form, the matched or newly created person is added to the group (existing group members are skipped). This is useful for things like a camp sign-up form that should automatically build the camp's roster group.
+
+## Duplicating a Form
+
+To reuse a form as a starting point for a new one, click the **Duplicate** icon (copy icon) next to the form in the Forms list. B1 creates an exact copy of the form — including all questions — which you can then rename and edit independently.
 
 :::tip
-Formularios Stand Alone sao otimos para inscricoes em eventos. Compartilhe a URL publica por e-mail, redes sociais ou incorpore o formulario diretamente no site da sua igreja.
+Duplication is handy for recurring events where the registration questions stay the same from year to year. Duplicate last year's form, update the name and dates, and you're ready to go.
+:::
+
+## Configuring Form Properties
+
+You can update your form's name and settings at any time. For Stand Alone forms, you will also see a unique **public URL** that you can share with anyone.
+
+:::tip
+Stand Alone forms are great for event registrations. Share the public URL via email, social media, or embed the form directly on your church website.
 :::
 
 :::info
-Para incorporar um formulario no seu site B1, va ao editor do site, adicione uma nova secao e selecione o elemento **Form**. Em seguida, escolha o formulario que deseja exibir. Veja [Gerenciando paginas](../website/managing-pages.md) para detalhes sobre a edicao do seu site.
+To embed a form on your B1 website, go to your website editor, add a new section, and select the **Form** element. Then choose the form you want to display. See [Managing Pages](../website/managing-pages.md) for details on editing your website.
 :::

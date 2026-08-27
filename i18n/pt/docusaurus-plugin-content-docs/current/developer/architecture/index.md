@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Arquitetura"
 ---
 
@@ -6,13 +6,13 @@ title: "Arquitetura"
 
 <div class="article-intro">
 
-Estas páginas são mapas de sistema cross-repo: documentam como um sistema ChurchApps principal funciona fim-a-fim — através dos apps, os módulos de API e as bibliotecas compartilhadas — em vez de como qualquer projeto único está configurado. Leia-as antes de alterar o comportamento de um sistema; leia [Setup](../setup/) para obter um projeto rodando e a seção [API](../api/) para referência em nível de endpoint.
+These pages are cross-repo system maps: they document how a core ChurchApps system works end-to-end — across the apps, the API modules, and the shared libraries — rather than how any single project is set up. Read them before changing a system's behavior; read [Setup](../setup/) to get a project running and the [API section](../api/) for endpoint-level reference.
 
 </div>
 
-## O ecossistema num relance
+## The ecosystem at a glance
 
-ChurchApps é ~20 repositórios independentes (não um monorepo). Apps de cliente falam a um pequeno conjunto de APIs de backend sobre HTTPS e WebSocket e compartilham código através de pacotes npm publicados sob o escopo `@churchapps`.
+ChurchApps is ~20 independent repositories (not a monorepo). Client apps talk to a small set of backend APIs over HTTPS and WebSocket, and share code through npm packages published under the `@churchapps` scope.
 
 ```
 ┌────────────────────────────────┐            ┌──────────────────────────────────────────────┐
@@ -31,29 +31,29 @@ ChurchApps é ~20 repositórios independentes (não um monorepo). Apps de client
    helpers (cross-app interfaces) · apphelper (React components) · apihelper (Express/server utilities)
 ```
 
-Duas regras estruturais moldam tudo documentado nesta seção:
+Two structural rules shape everything documented in this section:
 
-1. **Módulos estão isolados.** Cada módulo Api possui seu banco de dados e suas tabelas; outros módulos e apps alcançam seus dados apenas através de seus endpoints REST. Consulte [Estrutura de Módulo](../api/module-structure).
-2. **Código compartilhado envia como pacotes npm.** Apps nunca importam código de um do outro; qualquer coisa reutilizada cruza limites de repositório através de `@churchapps/helpers`, `@churchapps/apphelper` ou `@churchapps/apihelper`. Consulte [Bibliotecas Compartilhadas](../shared-libraries/).
+1. **Modules are isolated.** Each Api module owns its database and its tables; other modules and apps reach its data only through its REST endpoints. See [Module Structure](../api/module-structure).
+2. **Shared code ships as npm packages.** Apps never import each other's source; anything reused crosses repo boundaries through `@churchapps/helpers`, `@churchapps/apphelper`, or `@churchapps/apihelper`. See [Shared Libraries](../shared-libraries/).
 
-## Mapas de sistema
+## System maps
 
-| Página | O que cobre | Abrange |
+| Page | What it covers | Spans |
 |------|----------------|-------|
-| [Notificações e Lembretes](./notifications) | Como qualquer coisa diz a uma pessoa algo: as duas portas de despacho, a cadeia de escalação de canal e o mecanismo de lembrete | Api (messaging), B1Admin, B1App |
-| [Arquitetura de Tempo Real](../realtime) | O framework de entrega WebSocket por trás de chat, presença e entrega in-app | Api (messaging), todos os web apps |
-| [Notificações de Push Web](../web-push) | O canal de push de navegador: chaves VAPID, armazenamento de subscrição, entrega | Api (messaging), todos os web apps |
-| [Giving](./giving) | Provedores e gateways de pagamento, fluxos de doação, fundos/lotes, webhooks de gateway | Api (giving), apphelper, B1App, B1Admin |
-| [Registros de Evento](./registrations) | O modelo de comércio de inscrição: tipos de participante, seleções, códigos de desconto, pagamentos através gateway de dádiva e a lista de espera | Api (content + giving), B1App, B1Admin |
-| [Check-Ins](./check-ins) | Quiosque e self check-in, modelo de dados de presença, roteamento de sala, camada de segurança pediátrica, impressão de etiqueta | B1Checkin, B1App, B1Admin, Api (attendance + membership) |
-| [Construtor de Website](./website-builder) | A árvore página/seção/elemento, contrato de tipo de elemento e renderizadores, blog, páginas de acesso-gated, SEO e geração de IA | Api (content), AskApi, helpers/apphelper, B1Admin, B1App |
-| [Roteamento de Website e Multi-Site](./websites) | Como uma solicitação resolve para uma igreja e um site específico, modelo de dados `siteId` multi-site e a borda de domínio personalizado Caddy | B1App, Api (membership + content), B1Admin |
-| [Integrações](./integrations) | A superfície de extensão: OAuth, chaves de API, webhooks, provedores de conteúdo, MCP | Api, bibliotecas compartilhadas, apps externos |
-| [Audit Log & Batch Undoable](./audit-log) | Auditoria padrão-ligada de cada mutação no ponto de estrangulamento de controlador e a camada de lote que torna importações e ações em massa desfazer-áveis | Api (todos os módulos), B1Admin, B1Transfer |
-| [MinistryStuff](./ministrystuff) | O serviço de armazenamento e crédito de texting pago: identidade JWT compartilhada, S2S de chave de serviço, seams de provedor de texting/armazenamento, faturamento Stripe | MinistryStuffApi, MinistryStuffWeb, Api (content + messaging), pacotes texting/apihelper, B1Admin |
-| [Trazer Seu Próprio Armazenamento](./byos-storage) | Igrejas vinculam Google Drive, Dropbox, OneDrive ou um bucket compatível com S3 para uploads passado o 100MB gratuito: conexão OAuth, formas de upload por-provedor, redirecionamento de download público | Api (content + membership), pacotes helpers/apphelper, B1Admin, B1App |
-| [Content Commons](./commons) | A espinha compartilhada de ativos/submissão por trás do conteúdo gerado por usuário cross-produto e a fila de moderação única somente-staff em B1Admin Server Admin | Api (commons module), B1Admin, WorshipCommons, Lessons.church, FreeShow |
+| [Notifications & Reminders](./notifications) | How anything tells a person something: the two dispatch doors, the channel escalation chain, and the reminder engine | Api (messaging), B1Admin, B1App |
+| [Real-time Architecture](../realtime) | The WebSocket delivery framework behind chat, presence, and in-app delivery | Api (messaging), all web apps |
+| [Web Push Notifications](../web-push) | The browser push channel: VAPID keys, subscription storage, delivery | Api (messaging), all web apps |
+| [Giving](./giving) | Payment providers and gateways, donation flows, funds/batches, gateway webhooks | Api (giving), apphelper, B1App, B1Admin |
+| [Event Registrations](./registrations) | The registration commerce model: attendee types, selections, discount codes, payments through the giving gateway, and the waitlist | Api (content + giving), B1App, B1Admin |
+| [Check-Ins](./check-ins) | Kiosk and self check-in, the attendance data model, room routing, the child-safety layer, label printing | B1Checkin, B1App, B1Admin, Api (attendance + membership) |
+| [Website Builder](./website-builder) | The page/section/element tree, the element-type contract and renderers, blog, access-gated pages, SEO, and AI generation | Api (content), AskApi, helpers/apphelper, B1Admin, B1App |
+| [Website Routing & Multi-Site](./websites) | How a request resolves to a church and a specific site, the multi-site `siteId` data model, and the Caddy custom-domain edge | B1App, Api (membership + content), B1Admin |
+| [Integrations](./integrations) | The extension surface: OAuth, API keys, webhooks, content providers, MCP | Api, shared libraries, external apps |
+| [Audit Log & Undoable Batches](./audit-log) | Default-on auditing of every mutation at the controller choke point, and the batch layer that makes imports and bulk actions undoable | Api (all modules), B1Admin, B1Transfer |
+| [MinistryStuff](./ministrystuff) | The paid storage & texting-credit service: shared-JWT identity, service-key S2S, the texting and storage provider seams, Stripe billing | MinistryStuffApi, MinistryStuffWeb, Api (content + messaging), texting/apihelper packages, B1Admin |
+| [Bring-Your-Own Storage](./byos-storage) | Churches link Google Drive, Dropbox, OneDrive or an S3-compatible bucket for uploads past the free 100MB: OAuth connect, per-provider upload shapes, the public download redirect | Api (content + membership), helpers/apphelper packages, B1Admin, B1App |
+| [Content Commons](./commons) | The shared asset/submission spine behind cross-product user-generated content, and the single staff-only moderation queue in B1Admin Server Admin | Api (commons module), B1Admin, WorshipCommons, Lessons.church, FreeShow |
 
 :::tip
-Quando uma alteração altera como um destes sistemas funciona — não apenas uma página dentro de um app — o mapa de sistema correspondente aqui deve ser atualizado no mesmo esforço. Isto mantém esta seção confiável como o primeiro parada para novos colaboradores.
+When a change alters how one of these systems works — not just a page inside one app — the matching system map here should be updated in the same effort. That keeps this section trustworthy as the first stop for new contributors.
 :::

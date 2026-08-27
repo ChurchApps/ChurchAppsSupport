@@ -1,187 +1,200 @@
 ---
-title: "लोगों का बल्क संपादन"
+title: "Bulk Editing People"
 ---
 
-# लोगों का बल्क संपादन
+# Bulk Editing People
 
 <div class="article-intro">
-बल्क संपादन आपको एक बार में कई लोगों को अपडेट करने की अनुमति देता है, कई व्यक्तियों में समान परिवर्तन करते समय समय बचाता है। आप एक ही ऑपरेशन में सदस्यता स्थिति, वैवाहिक स्थिति, लिंग, ऑप्ट-आउट प्राथमिकताएं और समूह सदस्यता अपडेट कर सकते हैं।
+Bulk editing allows you to update multiple people at once, saving time when making the same change to many individuals. You can update membership status, marital status, gender, opt-out preferences, and group memberships in a single operation.
 </div>
 
 <div class="prereqs">
-<h4>शुरू करने से पहले</h4>
+<h4>Before You Begin</h4>
 
-- आपको लोगों के डेटा को प्रबंधित करने की अनुमति चाहिए। विवरण के लिए [भूमिकाएं और अनुमतियां](./roles-permissions.md) देखें।
-- आपको उन लोगों को पहले से जोड़ा या आयात किया होना चाहिए जिन्हें आप संपादित करना चाहते हैं। यदि आवश्यक हो तो [लोग जोड़ना](./adding-people.md) देखें।
+- You need permission to manage people data. See [Roles & Permissions](./roles-permissions.md) for details.
+- You should have already added or imported the people you want to edit. See [Adding People](./adding-people.md) if needed.
 </div>
 
-## बल्क संपादन के लिए लोगों का चयन
+## Selecting People for Bulk Editing
 
-1. B1 Admin में **लोग** पर जाएं
-2. खोज या फ़िल्टर उपकरण का उपयोग उन लोगों को खोजने के लिए करें जिन्हें आप अपडेट करना चाहते हैं
-3. प्रत्येक व्यक्ति के नाम के बगल में बॉक्स को चेक करें उन्हें चुनने के लिए
-   - आप लोगों को व्यक्तिगत रूप से चुन सकते हैं
-   - या वर्तमान पृष्ठ पर सभी दृश्यमान लोगों को चुनने के लिए हेडर चेकबॉक्स का उपयोग करें
-4. एक बार जब आप कम से कम एक व्यक्ति का चयन कर लेते हैं, तो **बल्क क्रियाएं** बटन दिखाई देगा
+1. Navigate to **People** in B1 Admin
+2. Use the search or filter tools to find the people you want to update
+3. Check the boxes next to each person's name to select them
+   - You can select people individually
+   - Or use the header checkbox to select all visible people on the current page
+4. Once you have selected at least one person, the **Bulk Actions** button will appear
 
 :::tip
-यदि आपको विशिष्ट मानदंडों के आधार पर लोगों के एक बड़े समूह को अपडेट करने की आवश्यकता है, तो पहले अपनी सूची को संकीर्ण करने के लिए [AI खोज](./ai-search.md) सुविधा या फ़िल्टर का उपयोग करें, फिर सभी मेल खाने वाले लोगों का चयन करें।
+If you need to update a large group of people based on specific criteria, use the [AI Search](./ai-search.md) feature or filters to narrow down your list first, then select all matching people.
 :::
 
-## उपलब्ध बल्क क्रियाएं
+## Available Bulk Actions
 
-**बल्क क्रियाएं** मेनू कई विकल्प प्रदान करता है:
+The **Bulk Actions** menu provides several options:
 
-### सदस्यता स्थिति अपडेट करें
+### Update Membership Status
 
-सभी चयनित लोगों के लिए सदस्यता स्थिति अपडेट करें:
+Update the membership status for all selected people:
 
-1. **बल्क क्रियाएं** → **सदस्यता स्थिति सेट करें** पर क्लिक करें
-2. नई स्थिति चुनें:
-   - **आगंतुक** -- पहली बार या कभी-कभार आने वाले
-   - **नियमित उपस्थित** -- बार-बार आने वाले जो सदस्य नहीं हैं
-   - **सदस्य** -- आधिकारिक चर्च सदस्य
-   - **कर्मचारी** -- चर्च कर्मचारी सदस्य
-   - **निष्क्रिय** -- वे लोग जो अब उपस्थित नहीं हो रहे हैं
-3. अपडेट मोड चुनें:
-   - **सभी को ओवरराइट करें** -- सभी चयनित लोगों के लिए वर्तमान स्थिति को बदलें
-   - **केवल खाली अपडेट करें** -- केवल उन लोगों के लिए स्थिति सेट करें जिनके पास कोई नहीं है
-4. **अपडेट** पर क्लिक करें
+1. Click **Bulk Actions** → **Set Membership Status**
+2. Choose the new status:
+   - **Visitor** -- First-time or occasional attendees
+   - **Regular Attendee** -- Frequent attendees who aren't members
+   - **Member** -- Official church members
+   - **Staff** -- Church staff members
+   - **Inactive** -- People who are no longer attending
+3. Choose update mode:
+   - **Overwrite all** -- Replace the current status for all selected people
+   - **Only update empty** -- Only set the status for people who don't have one
+4. Click **Update**
 
-### वैवाहिक स्थिति अपडेट करें
+### Update Marital Status
 
-बल्क में वैवाहिक स्थिति अपडेट करें:
+Update marital status in bulk:
 
-1. **बल्क क्रियाएं** → **वैवाहिक स्थिति सेट करें** पर क्लिक करें
-2. नई स्थिति चुनें:
-   - **अज्ञात**
-   - **अविवाहित**
-   - **विवाहित**
-   - **तलाकशुदा**
-   - **विधवा/विधुर**
-3. चुनें कि मौजूदा मूल्यों को ओवरराइट करना है या केवल खाली फ़ील्ड अपडेट करना है
-4. **अपडेट** पर क्लिक करें
+1. Click **Bulk Actions** → **Set Marital Status**
+2. Select the new status:
+   - **Unknown**
+   - **Single**
+   - **Married**
+   - **Divorced**
+   - **Widowed**
+3. Choose whether to overwrite existing values or only update empty fields
+4. Click **Update**
 
-### लिंग अपडेट करें
+### Update Gender
 
-कई लोगों के लिए लिंग जानकारी अपडेट करें:
+Update gender information for multiple people:
 
-1. **बल्क क्रियाएं** → **लिंग सेट करें** पर क्लिक करें
-2. मान चुनें:
-   - **अनिर्दिष्ट**
-   - **पुरुष**
-   - **महिला**
-3. अपडेट मोड चुनें (सभी को ओवरराइट करें या केवल खाली)
-4. **अपडेट** पर क्लिक करें
+1. Click **Bulk Actions** → **Set Gender**
+2. Select the value:
+   - **Unspecified**
+   - **Male**
+   - **Female**
+3. Choose update mode (overwrite all or only empty)
+4. Click **Update**
 
-### ऑप्ट-आउट स्थिति अपडेट करें
+### Update Opt-Out Status
 
-नियंत्रित करें कि लोगों ने संचार से ऑप्ट-आउट किया है या नहीं:
+Control whether people have opted out of communications:
 
-1. **बल्क क्रियाएं** → **ऑप्ट-आउट सेट करें** पर क्लिक करें
-2. चुनें:
-   - **नहीं** -- संचार की अनुमति दें (ऑप्ट-आउट हटाएं)
-   - **हां** -- संचार अवरुद्ध करें (ऑप्ट-आउट सेट करें)
-3. अपडेट मोड चुनें
-4. **अपडेट** पर क्लिक करें
+1. Click **Bulk Actions** → **Set Opted Out**
+2. Choose:
+   - **No** -- Allow communications (remove opt-out)
+   - **Yes** -- Block communications (set opt-out)
+3. Choose update mode
+4. Click **Update**
 
 :::warning
-ऑप्ट-आउट स्थिति बदलते समय सावधान रहें। जिन लोगों ने स्पष्ट रूप से ऑप्ट-आउट किया है, उन्हें संचार प्राप्त नहीं करना चाहिए जब तक कि उन्होंने नई सहमति नहीं दी हो।
+Be careful when changing opt-out status. People who have explicitly opted out should not receive communications unless they have given new consent.
 :::
 
-### समूह में जोड़ें
+### Set Custom Field
 
-सभी चयनित लोगों को एक या अधिक समूहों में जोड़ें:
+Set a Yes/No [custom field](../settings/custom-fields.md) value for all selected people at once:
 
-1. **बल्क क्रियाएं** → **समूह में जोड़ें** पर क्लिक करें
-2. उन समूह(समूहों) को खोजें और चुनें जिनमें लोगों को जोड़ना है
-3. आप लोगों को सभी में जोड़ने के लिए कई समूह चुन सकते हैं
-4. **समूहों में जोड़ें** पर क्लिक करें
-
-प्रत्येक व्यक्ति को चयनित समूह(समूहों) के नियमित सदस्य के रूप में जोड़ा जाएगा। आप बाद में आवश्यकतानुसार व्यक्तियों को समूह नेताओं के रूप में पदोन्नत कर सकते हैं [समूह सदस्य](../groups/group-members.md) पृष्ठ से।
-
-### समूह से हटाएं
-
-सभी चयनित लोगों को एक या अधिक समूहों से हटाएं:
-
-1. **बल्क क्रियाएं** → **समूह से हटाएं** पर क्लिक करें
-2. उन समूह(समूहों) को खोजें और चुनें जिनसे लोगों को हटाना है
-3. आप कई समूह चुन सकते हैं
-4. **समूहों से हटाएं** पर क्लिक करें
+1. Click **Bulk Actions** → **Set Custom Field**.
+2. Choose the Yes/No custom field you want to set.
+3. Choose the value (**Yes** or **No**) to apply.
+4. Click **Update**.
 
 :::info
-यह क्रिया केवल लोगों को निर्दिष्ट समूहों से हटाती है। यह उनके व्यक्ति रिकॉर्ड को हटाती नहीं है।
+Only Yes/No custom fields are available for this bulk action. To set other field types, edit each person individually.
 :::
 
-### लोगों को हटाएं
+### Add to Group
 
-चयनित लोगों को अपने चर्च डेटाबेस से स्थायी रूप से हटाएं:
+Add all selected people to one or more groups:
 
-1. **बल्क क्रियाएं** → **हटाएं** पर क्लिक करें
-2. उन लोगों की सूची की समीक्षा करें जिन्हें हटाया जाएगा
-3. पुष्टि फ़ील्ड में **DELETE** टाइप करें
-4. **हटाना पुष्टि करें** पर क्लिक करें
+1. Click **Bulk Actions** → **Add to Group**
+2. Search for and select the group(s) to add people to
+3. You can select multiple groups to add people to all of them
+4. Click **Add to Groups**
+
+Each person will be added as a regular member of the selected group(s). You can later promote individuals to group leaders if needed from the [Group Members](../groups/group-members.md) page.
+
+### Remove from Group
+
+Remove all selected people from one or more groups:
+
+1. Click **Bulk Actions** → **Remove from Group**
+2. Search for and select the group(s) to remove people from
+3. You can select multiple groups
+4. Click **Remove from Groups**
+
+:::info
+This action only removes people from the specified groups. It does not delete their person records.
+:::
+
+### Delete People
+
+Permanently delete the selected people from your church database:
+
+1. Click **Bulk Actions** → **Delete**
+2. Review the list of people who will be deleted
+3. Type **DELETE** in the confirmation field
+4. Click **Confirm Delete**
 
 :::danger
-लोगों को हटाना स्थायी है और पूर्ववत नहीं किया जा सकता। यह उनके सभी डेटा को हटा देगा जिसमें शामिल हैं:
-- व्यक्तिगत जानकारी
-- समूह सदस्यता
-- उपस्थिति रिकॉर्ड
-- दान इतिहास
-- फॉर्म सबमिशन
+Deleting people is permanent and cannot be undone. This will remove all their data including:
+- Personal information
+- Group memberships
+- Attendance records
+- Donation history
+- Form submissions
 
-केवल इस क्रिया का उपयोग करें यदि आप पूरी तरह से निश्चित हैं कि आप इन लोगों को अपने सिस्टम से हटाना चाहते हैं।
+Only use this action if you are absolutely certain you want to remove these people from your system.
 :::
 
-## बल्क संपादन परिणाम
+## Bulk Edit Results
 
-बल्क क्रिया पूरी करने के बाद, आप एक सारांश देखेंगे जो दिखाता है:
+After completing a bulk action, you'll see a summary showing:
 
-- **कुल चयनित** -- ऑपरेशन में कितने लोग शामिल थे
-- **सफलतापूर्वक अपडेट किए गए** -- कितने रिकॉर्ड बदले गए
-- **विफल** -- कोई भी रिकॉर्ड जो अपडेट नहीं किया जा सका (यदि लागू हो)
-- **अपरिवर्तित** -- रिकॉर्ड जिन्हें परिवर्तन की आवश्यकता नहीं थी (उदाहरण के लिए, "केवल खाली अपडेट करें" मोड का उपयोग करते समय)
+- **Total selected** -- How many people were included in the operation
+- **Successfully updated** -- How many records were changed
+- **Failed** -- Any records that couldn't be updated (if applicable)
+- **Unchanged** -- Records that didn't need changes (e.g., when using "only update empty" mode)
 
-यदि कोई अपडेट विफल होता है, तो आप त्रुटि विवरण देखेंगे जो बताता है कि क्यों।
+If any updates failed, you'll see error details explaining why.
 
-## सर्वोत्तम प्रथाएं
+## Best Practices
 
-- **छोटे से शुरू करें** -- यह सुनिश्चित करने के लिए पहले कुछ रिकॉर्ड पर बल्क ऑपरेशन का परीक्षण करें कि आप सही परिवर्तन कर रहे हैं
-- **फ़िल्टर का उपयोग करें** -- लोगों का चयन करने से पहले फ़िल्टर या AI खोज के साथ अपनी सूची को संकीर्ण करें यह सुनिश्चित करने के लिए कि आप केवल सही व्यक्तियों को अपडेट कर रहे हैं
-- **चयनों की दोबारा जांच करें** -- बल्क परिवर्तन लागू करने से पहले चयनित लोगों की समीक्षा करें
-- **"केवल खाली अपडेट करें" मोड का उपयोग करें** -- जब आप मौजूदा जानकारी को ओवरराइट किए बिना लापता डेटा भरना चाहते हैं
-- **प्रमुख परिवर्तनों का दस्तावेज़ीकरण करें** -- बल्क अपडेट के बारे में नोट्स रखें यदि आपको बाद में उनका संदर्भ लेने की आवश्यकता हो
-- **अपनी टीम के साथ समन्वय करें** -- बड़े बल्क परिवर्तन करते समय अन्य व्यवस्थापकों को सूचित करें
+- **Start small** -- Test bulk operations on a few records first to ensure you're making the right changes
+- **Use filters** -- Narrow your list with filters or AI search before selecting people to ensure you're only updating the right individuals
+- **Double-check selections** -- Review the selected people before applying bulk changes
+- **Use "only update empty" mode** -- When you want to fill in missing data without overwriting existing information
+- **Document major changes** -- Keep notes about bulk updates in case you need to reference them later
+- **Coordinate with your team** -- Let other administrators know when making large bulk changes
 
-## सामान्य उपयोग के मामले
+## Common Use Cases
 
-### नए सदस्यों को अपडेट करना
+### Updating New Members
 
-सदस्यता कक्षा के बाद, सभी उपस्थित लोगों को सदस्य स्थिति में अपडेट करें:
+After a membership class, update all attendees to Member status:
 
-1. उन लोगों को खोजें जिन्होंने कक्षा में भाग लिया
-2. सभी का चयन करें
-3. **बल्क क्रियाएं** → **सदस्यता स्थिति सेट करें** → **सदस्य** का उपयोग करें
+1. Search for the people who attended the class
+2. Select them all
+3. Use **Bulk Actions** → **Set Membership Status** → **Member**
 
-### छोटे समूहों को व्यवस्थित करना
+### Organizing Small Groups
 
-एक नए छोटे समूह में कई लोगों को जोड़ें:
+Add multiple people to a new small group:
 
-1. उन लोगों को खोजें जिन्हें आप समूह में चाहते हैं
-2. उनका चयन करें
-3. **बल्क क्रियाएं** → **समूह में जोड़ें** का उपयोग करें और छोटे समूह का चयन करें
+1. Search for the people you want in the group
+2. Select them
+3. Use **Bulk Actions** → **Add to Group** and select the small group
 
-### डेटा साफ करना
+### Cleaning Up Data
 
-विवाहित जोड़ों के लिए लापता वैवाहिक स्थिति भरें:
+Fill in missing marital status for married couples:
 
-1. उन लोगों के लिए फ़िल्टर करें जो विवाहित हैं (परिवार की जानकारी का उपयोग करके)
-2. खाली वैवाहिक स्थिति वाले लोगों का चयन करें
-3. **बल्क क्रियाएं** → **वैवाहिक स्थिति सेट करें** → **विवाहित** → **केवल खाली अपडेट करें** का उपयोग करें
+1. Filter for people who are married (using household information)
+2. Select those with blank marital status
+3. Use **Bulk Actions** → **Set Marital Status** → **Married** → **Only update empty**
 
-## संबंधित लेख
+## Related Articles
 
-- [लोग खोजना](./searching-people.md) -- संपादित करने के लिए लोगों को खोजें
-- [AI खोज](./ai-search.md) -- लोगों के विशिष्ट समूहों को खोजने के लिए प्राकृतिक भाषा का उपयोग करें
-- [समूह सदस्य](../groups/group-members.md) -- समूह सदस्यता प्रबंधित करें
-- [डेटा निर्यात करना](./exporting-data.md) -- बल्क परिवर्तन करने से पहले लोगों का डेटा निर्यात करें
+- [Searching People](./searching-people.md) -- Find people to edit
+- [AI Search](./ai-search.md) -- Use natural language to find specific groups of people
+- [Group Members](../groups/group-members.md) -- Manage group membership
+- [Exporting Data](./exporting-data.md) -- Export people data before making bulk changes

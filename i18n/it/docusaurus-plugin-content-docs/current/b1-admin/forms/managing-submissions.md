@@ -1,61 +1,66 @@
 ---
-title: "Gestione degli invii"
+title: "Gestione Invii"
 ---
 
-# Gestione degli invii
+# Managing Submissions
 
 <div class="article-intro">
 
-Una volta che il tuo modulo è attivo, gli invii inizieranno ad arrivare. La scheda Invii ti permette di esaminare ogni risposta, tenere traccia di chi ha inviato e utilizzare i dati per seguire tempestivamente la tua congregazione.
+Once your form is live, submissions will start coming in. The Submissions tab lets you review every response, track who has submitted, and use the data Per follow up with your congregation in a timely manner.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di iniziare</h4>
+<h4>Prima di Iniziare</h4>
 
-- [Crea un modulo](./creating-forms.md) con almeno una domanda
-- Condividi il modulo tramite il suo URL pubblico o incorporalo nel tuo [sito web](../website/managing-pages.md)
+- [Create a form](./creating-forms.md) with at least one question
+- Share the form via its public URL or embed it on your [website](../website/managing-pages.md)
 
 </div>
 
-## Visualizzazione degli invii
+## Viewing Submissions
 
-1. Vai a **Forms** dal menu principale.
-2. Clicca sul modulo che vuoi esaminare.
-3. Vai alla scheda **Submissions**.
+1. Navigate Per **Forms** from the main menu.
+2. Fai clic on the form you want Per review.
+3. Go Per the **Submissions** tab.
 
-Vedrai un elenco di tutte le risposte ricevute per quel modulo. Ogni invio mostra le informazioni del rispondente e la data di invio.
+You will see a list of all responses received for that form. Each submission shows the respondent's information and the Data it was submitted.
 
-## Esame dei singoli invii
+## Reviewing Individual Submissions
 
-Clicca su qualsiasi invio per visualizzare i dettagli completi. Vedrai tutte le risposte fornite dalla persona per ogni domanda del modulo.
+Fai clic on any submission Per Visualizza the full details. You will see all the answers the person provided for each question on the form.
 
-## Come vengono raccolti gli invii
+## How Submissions Are Collected
 
-Gli invii possono arrivare attraverso diversi canali:
+Submissions can come in through several channels:
 
-- **URL pubblico** -- Se il tuo modulo ha un URL pubblico (moduli Stand Alone), chiunque abbia il link può inviare una risposta. Condividi l'URL via email, social media o messaggi di testo.
-- **Incorporato nel tuo sito web** -- I moduli incorporati nel tuo sito web B1 raccolgono automaticamente gli invii quando i visitatori li compilano.
-- **Uso interno** -- Il personale e i volontari possono anche inviare moduli per conto di altri direttamente all'interno di B1 Admin.
+- **Public URL** -- If your form has a public URL (Stand Alone forms), anyone with the link can Invia a response. Share the URL via email, social media, or text messages.
+- **Embedded on your website** -- Forms embedded on your B1 website collect submissions automatically when visitors fill them out.
+- **Internal use** -- Staff and Volontari can also Invia forms on behalf of others directly within B1 Admin.
 
 :::tip
-Controlla regolarmente la scheda **Submissions** per moduli come schede visitatore o richieste di preghiera, così da poter dare un seguito tempestivo.
+Check the **Submissions** tab regularly for forms like visitor cards or prayer requests, so you can follow up promptly.
 :::
 
-## Utilizzo dei dati degli invii
+## Using Submission Data
 
-I dati raccolti attraverso i moduli possono aiutarti a:
+The data collected through forms can help you:
 
-- Monitorare le registrazioni agli eventi e pianificare di conseguenza
-- Seguire i visitatori o i nuovi membri
-- Raccogliere feedback dai sondaggi per la pianificazione del ministero
-- Elaborare pagamenti per eventi o programmi
+- Track Evento registrations and plan accordingly
+- Follow up with visitors or new Membri
+- Collect survey feedback for ministry planning
+- Process payments for Eventi or programs
 
 :::info
-I membri del modulo con ruoli **Admin** o **View Only** possono accedere alla scheda Invii. Assicurati che le persone giuste del tuo team abbiano accesso ai moduli di cui hanno bisogno gestendo i ruoli nella scheda **Members**.
+Modulo Membri with **Admin** or **Visualizza Only** Ruoli can access the Submissions tab. Make sure the right people on your team have access Per the forms they need by managing Ruoli in the **Membri** tab.
 :::
 
-## Prossimi passi
+:::tip
+If a **Stand Alone** form is set Per Crea a person record, any submissions matched Per an existing person also show up on that person's own **Forms** tab in the People section — not just People-Digita forms.
+:::
 
-- Scopri come creare e personalizzare i moduli in [Creazione di moduli](./creating-forms.md)
-- Aggiungi le persone dagli invii dei moduli alla tua [directory delle persone](../people/adding-people.md) per un follow-up continuativo
+## Avanti Steps
+
+- Learn how Per build and customize forms in [Creating Forms](./creating-forms.md)
+- Aggiungi people from form submissions Per your [people directory](../people/adding-people.md) for ongoing follow-up
+- [Automatically add submitters to a group](./creating-forms.md#automatically-adding-submitters-to-a-group) so a stand-alone sign-up form builds its own roster

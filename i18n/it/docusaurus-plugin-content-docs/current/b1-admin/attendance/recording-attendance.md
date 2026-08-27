@@ -1,65 +1,65 @@
 ---
-title: "Registrazione della Presenza"
+title: "Registrazione della Frequenza"
 ---
 
-# Registrazione della Presenza
+# Recording Frequenza
 
 <div class="article-intro">
 
-Una volta configurati i campus, i tempi dei servizi e i gruppi, è possibile registrare manualmente la presenza dopo ogni riunione. B1 Admin organizza la presenza intorno a **sessioni** - una sessione per gruppo per data di riunione. Crea la sessione, contrassegna chi era presente, e i dati fluiscono direttamente nei tuoi rapporti di presenza.
+Once your campuses, Servizio times, and Gruppi are set up, you can manually record Frequenza after each gathering. B1 Admin organizes Frequenza around **Sessioni** -- one Sessione per Gruppo per meeting Data. You Crea the Sessione, mark who showed up, and the data feeds directly into your Frequenza Rapporti.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- I tuoi campus, i tempi dei servizi e i gruppi devono essere configurati. Vedi [Configurazione della Presenza](setup.md) se non lo hai ancora fatto.
-- I gruppi che desideri tracciare devono avere l'opzione **Traccia Presenza** abilitata. Vedi [Configurazione della Presenza](setup.md) per i dettagli.
+- Your campuses, Servizio times, and Gruppi must be configured. See [Attendance Setup](setup.md) if you haven't done this yet.
+- The Gruppi you want Per track must have **Track Frequenza** Abilitato. See [Attendance Setup](setup.md) for details.
 
 </div>
 
-## Creazione di una Sessione
+## Creating a Sessione
 
-Una sessione rappresenta un'occorrenza di un incontro del gruppo - ad esempio, la tua classe 1°-3° grado in una domenica specifica.
+A Sessione represents one occurrence of a Gruppo meeting -- for example, your K--3rd grade class on a specific Sunday.
 
-1. Apri **B1 Admin**, apri il **menu della sezione** nell'angolo in alto a sinistra e scegli **Persone**, quindi fai clic sulla scheda **Gruppi**.
-2. Seleziona il gruppo per il quale desideri registrare la presenza.
-3. Fai clic sulla scheda **Sessioni**.
-4. Fai clic su **Nuovo** per creare una nuova sessione.
-5. Se il gruppo è assegnato a un tempo di servizio, scegli il **Tempo di Servizio**. Se è un gruppo non programmato, questo campo non apparirà.
-6. Seleziona la **Data della Sessione** - può essere oggi, una data passata o una data futura.
-7. Fai clic su **Salva**.
+1. Apri **B1 Admin**, Apri the **menu della sezione** in the angolo in alto a sinistra and Scegli **People**, then Fai clic the **Gruppi** tab.
+2. Seleziona the Gruppo you want Per record Frequenza for.
+3. Fai clic the **Sessioni** tab.
+4. Fai clic **New** Per Crea a new Sessione.
+5. If the Gruppo is assigned Per a Servizio Ora, Scegli the **Servizio Ora**. If it is an unscheduled Gruppo, this field will not appear.
+6. Seleziona the **Sessione Data** -- this can be Oggi, a Data Passata, or a Data Futura.
+7. Fai clic **Salva**.
 
 :::tip
-Puoi creare sessioni per date passate per recuperare la presenza che non hai ancora registrato, o crearle in anticipo così sono pronte quando il tuo gruppo si riunisce.
+You can Crea Sessioni for past dates Per catch up on Frequenza you haven't recorded yet, or Crea them in advance so they are ready when your Gruppo meets.
 :::
 
-## Contrassegno della Presenza
+## Marking Frequenza
 
-Dopo aver salvato la sessione, i membri del gruppo appaiono sul lato destro della pagina.
+After saving the Sessione, the Gruppo's Membri appear on the lato destro of the page.
 
-1. Spunta la casella accanto a ogni persona che ha partecipato.
-2. Le modifiche vengono salvate automaticamente - non c'è un pulsante Salva aggiuntivo per i contrassegni di presenza.
+1. Check the box Avanti Per each person who attended.
+2. Changes are saved automatically -- there is No additional Salva button for Frequenza marks.
 
 :::info
-Solo i membri attuali del gruppo appaiono nell'elenco della sessione. Se qualcuno ha partecipato ma non è ancora nel gruppo, [aggiungilo al gruppo](../groups/group-members.md) prima, quindi registra la sua presenza.
+Only current Gruppo Membri appear in the Sessione list. If someone attended but is not yet in the Gruppo, [add them to the group](../groups/group-members.md) first, then record their Frequenza.
 :::
 
-## Esportazione della Presenza in un Foglio di Calcolo
+## Exporting Frequenza Per a Spreadsheet
 
-Puoi scaricare un record della sessione come file CSV da usare in Excel, Numbers o Google Sheets.
+You can Scarica a record of the Sessione as a CSV file Per use in Excel, Numbers, or Google Sheets.
 
-1. Apri la sessione che desideri esportare.
-2. Fai clic sul pulsante **Scarica CSV**.
-3. Apri il file scaricato nella tua applicazione di foglio di calcolo.
+1. Apri the Sessione you want Per Esporta.
+2. Fai clic the **Scarica CSV** button.
+3. Apri the downloaded file in your spreadsheet application.
 
-## Visualizzazione della Presenza Registrata
+## Viewing Recorded Frequenza
 
-Dopo la registrazione delle sessioni, i dati appaiono nei tuoi rapporti di presenza.
+After recording Sessioni, the data appears in your Frequenza Rapporti.
 
-- **Scheda Presenza** - mostra le tendenze a livello di chiesa nel tempo. Vedi [Tracciamento della Presenza](tracking-attendance.md).
-- **Scheda Gruppi** - mostra la presenza suddivisa per singolo gruppo.
+- **Frequenza tab** -- shows church-wide trends over Ora. See [Tracking Attendance](tracking-attendance.md).
+- **Gruppi tab** -- shows Frequenza broken down by individual Gruppo.
 
 :::tip
-Se una sessione che hai appena creato non appare nei rapporti subito, assicurati che la data della sessione rientri nell'intervallo di date selezionato nei filtri del rapporto.
+If a Sessione you just created does not appear in Rapporti right away, make sure the Sessione Data falls within the Data range selected in the Rapporto filters.
 :::

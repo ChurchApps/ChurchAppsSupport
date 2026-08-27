@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Detalhes do Grupo"
 ---
 
@@ -6,61 +6,61 @@ title: "Detalhes do Grupo"
 
 <div class="article-intro">
 
-Quando você clica em um grupo da página de grupos, você é levado à página de detalhe do grupo. O que você vê depende de se você está conectado ou não, com membros conectados tendo acesso a guias e recursos adicionais.
+When you click on a group from the groups page, you are taken to the group detail page. What you see depends on whether you are logged in or not, with logged-in members having access to additional tabs and features.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Before You Begin</h4>
 
-- Encontre um grupo para visualizar por [navegando grupos](./browsing-groups.md).
-- Para acesso total a todas as guias, [faça login](../getting-started/logging-in.md) em sua conta.
+- Find a group to view by [browsing groups](./browsing-groups.md).
+- For full access to all tabs, [log in](../getting-started/logging-in.md) to your account.
 
 </div>
 
-## Visualização de Visitante (Não Conectado)
+## Visitor View (Not Logged In)
 
-Se você não está conectado, você verá o seguinte:
+If you are not logged in, you will see the following:
 
-- **Hero section** -- Uma grande área de banner mostrando a foto do grupo, nome, hora de encontro e localização do encontro.
-- **Description** -- A descrição completa do grupo explicando seu propósito e o que esperar.
-- **Leaders** -- Avatares e nomes dos líderes do grupo. Você pode clicar no nome de um líder para visualizar seu perfil.
-- **Calendar events** -- Até três eventos próximos para o grupo são exibidos, cada mostrando a data e título do evento. Se o grupo não tem eventos próximos, esta seção está escondida.
-- **Contact form** -- Um formulário que permite você enviar uma mensagem direto para os líderes do grupo. Preencha seu **first name**, **last name**, **email**, **phone number** e **message**, depois clique em **Submit**. Se há múltiplos líderes, você pode escolher qual contatar de um dropdown.
+- **Hero section** -- A large banner area showing the group's photo, name, meeting time, and meeting location.
+- **Description** -- The full description of the group explaining its purpose and what to expect.
+- **Leaders** -- Avatars and names of the group's leaders. You can click a leader's name to view their profile.
+- **Calendar events** -- Up to three upcoming events for the group are displayed, each showing the date and event title. If the group has no upcoming events, this section is hidden.
+- **Contact form** -- A form that lets you send a message directly to the group's leaders. Fill in your **first name**, **last name**, **email**, **phone number**, and **message**, then click **Submit**. If there are multiple leaders, you can choose which one to contact from a dropdown.
 
-## Visualização de Membro (Conectado)
+## Member View (Logged In)
 
-Quando você está conectado, a página de detalhe do grupo mostra a seção hero junto com uma barra lateral de guias. Se seu grupo está associado com um tipo de plano Lessons.church e a aula dessa semana tem conteúdo de take-home para pais, um cartão **This weeks lesson** aparece entre o hero e as guias (apenas membros).
+When you are logged in, the group detail page shows the hero section along with a sidebar of tabs. If your group is associated with a Lessons.church plan type and this week's lesson has parent take-home content, a **This week's lesson** card appears between the hero and the tabs (members only).
 
-As guias disponíveis são:
+The available tabs are:
 
-- **Group Details** -- A descrição completa do grupo, renderizada com formatação de texto rich.
-- **Members** -- Uma lista de todos membros no grupo, mostrando sua foto e nome. Você pode clicar no nome de um membro para visitar seu perfil no [member directory](../community/member-directory.md).
-- **Calendar** -- O calendário do grupo mostrando encontros e eventos. Você pode procurar eventos próximos e passados.
-- **Conversations** -- Um espaço para membros do grupo postar mensagens e interagir com cada outro. Consulte [Conversas do Grupo](./conversations.md) para mais detalhes.
-- **Resources** -- Arquivos e links compartilhados que foram postados para o grupo. Você pode fazer download de arquivos carregados ou abrir recursos vinculados.
-- **Attendance** -- Visível apenas para líderes do grupo. Permite rastreamento de quem compareceu aos encontros do grupo.
+- **Group Details** -- The group's full description, rendered with rich text formatting.
+- **Members** -- A list of all members in the group, showing their photo and name. You can click a member's name to visit their profile in the [member directory](../community/member-directory.md).
+- **Calendar** -- The group's calendar showing meetings and events. You can browse upcoming and past events.
+- **Conversations** -- A space for group members to post messages and interact with each other. See [Group Conversations](./conversations.md) for more details.
+- **Resources** -- Shared files and links that have been posted for the group. You can download uploaded files or open linked resources.
+- **Attendance** -- Visible to group leaders only. Allows tracking of who attended group meetings.
 
-## Capacidades do Líder
+## Leader Capabilities
 
-Se você é um líder do grupo, você tem capacidades de edição adicionais:
+If you are a leader of the group, you have additional editing capabilities:
 
-- **Edit group details** -- Atualize o nome do grupo, descrição, hora de encontro e outras configurações direto da guia **Details**.
-- **Manage members** -- Adicione novos membros ao grupo ou remova existentes da guia **Members**.
-- **Create and edit events** -- Adicione eventos ao calendário do grupo. Ao criar um evento, você pode reservar salas e recursos junto com ele — selecione de salas e recursos disponíveis, defina tempos opcionais de configuração e limpeza e a solicitação de reserva é automaticamente submetida para aprovação.
-- **Manage resources** -- Faça upload de arquivos (até 100 MB de armazenamento), adicione links ou delete recursos existentes.
-- **Leader resources** -- Acesse uma guia separada **Resources (Leaders)** com arquivos e links visíveis apenas para líderes do grupo.
-- **Track attendance** -- Registre presença para sessões do grupo da guia **Attendance**.
+- **Edit group details** -- Update the group's name, description, meeting time, and other settings directly from the **Details** tab.
+- **Manage members** -- Add new members to the group or remove existing ones from the **Members** tab.
+- **Create and edit events** -- Add events to the group calendar. When creating an event, you can reserve rooms and resources alongside it — select from available rooms and resources, set optional setup and teardown times, and the booking request is automatically submitted for approval.
+- **Manage resources** -- Upload files (up to 100 MB of storage), add links, or delete existing resources.
+- **Leader resources** -- Access a separate **Resources (Leaders)** tab with files and links visible only to group leaders.
+- **Track attendance** -- Record attendance for group sessions from the **Attendance** tab.
 
-## Juntando-se a um Grupo
+## Joining a Group
 
-Quando você está conectado e ainda não é um membro, um botão de join aparece na página de detalhe do grupo. O rótulo do botão depende da política de join do grupo:
+When you are logged in and not yet a member, a join button appears on the group detail page. The button label depends on the group's join policy:
 
-- **Join Group** -- O grupo está aberto. Clicar imediatamente o adiciona como membro.
-- **Request to Join** -- O grupo requer aprovação. Clicar abre uma caixa de diálogo onde você pode incluir uma mensagem opcional para o líder do grupo, depois envie seu pedido. Consulte [Solicitando Juntação a um Grupo](./join-requests.md) para detalhes sobre gerenciamento de seus pedidos.
+- **Join Group** -- The group is open. Clicking this immediately adds you as a member.
+- **Request to Join** -- The group requires approval. Clicking this opens a dialog where you can include an optional message to the group leader, then submit your request. See [Requesting to Join a Group](./join-requests.md) for details on managing your requests.
 
-Se nenhum botão aparece, o grupo está fechado e membros devem ser adicionados manualmente por um líder ou administrador.
+If neither button appears, the group is closed and members must be added manually by a leader or administrator.
 
 :::info
-Se um grupo está fechado e você quer se juntar, use o formulário de contato na visualização de visitante para alcançar os líderes do grupo.
+If a group is closed and you want to join, use the contact form on the visitor view to reach out to the group's leaders.
 :::

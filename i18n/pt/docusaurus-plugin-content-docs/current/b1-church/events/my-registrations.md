@@ -6,63 +6,63 @@ title: "Minhas Inscrições"
 
 <div class="article-intro">
 
-A página **Registrations** no portal do membro é sua central para todos os eventos em que você se inscreveu. A partir daqui, você pode verificar seu status, pagar um saldo pendente, editar quem vai participar e o que você pediu, ou cancelar uma inscrição completamente.
+The **Registrations** page in the member portal is your home base for every event you have signed up for. From here you can check your status, pay an outstanding balance, edit who is coming and what you ordered, or cancel a registration entirely.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Before You Begin</h4>
 
-- Você precisa estar [conectado](../getting-started/logging-in.md) — inscrições feitas como visitante não aparecem aqui
-- Você precisa ter pelo menos uma inscrição em evento. Veja [Inscrevendo-se em Eventos](./registering).
+- You must be [logged in](../getting-started/logging-in.md) — guest registrations do not appear here
+- You need at least one event registration. See [Registering for Events](./registering).
 
 </div>
 
-## Visualizando Suas Inscrições
+## Viewing Your Registrations
 
-Abra **Registrations** no portal do membro. Cada inscrição aparece como um cartão mostrando:
+Open **Registrations** in the member portal. Each registration appears as a card showing:
 
-- O **título e a data do evento**
-- Um selo de **status** — **confirmed**, **pending**, **waitlisted** ou **cancelled**
-- Os **membros** que você inscreveu
-- A linha de pagamento — o total pago, ou **Balance due** se ainda houver valor devido
+- The **event title and date**
+- A **status** pill — **confirmed**, **pending**, **waitlisted**, or **cancelled**
+- The **members** you registered
+- The payment line — either the paid total, or **Balance due** if money is still owed
 
-Se você ainda não se inscreveu em nada, verá "No registrations yet."
+If you haven't registered for anything yet, you'll see "No registrations yet."
 
-## Concluindo um Pagamento
+## Completing a Payment
 
-Um botão **Complete payment** aparece em qualquer inscrição com saldo pendente — mais comumente depois que você é promovido de uma lista de espera, ou quando uma edição da equipe alterou seu total.
+A **Complete payment** button appears on any registration with an outstanding balance — most commonly after you are promoted from a waitlist, or when a staff edit changed your total.
 
-1. Clique em **Complete payment**.
-2. Revise o resumo do pedido, escolha um cartão salvo ou insira um novo e efetue o pagamento.
-3. Assim que o saldo for pago, a inscrição passa a ficar **confirmed**.
+1. Click **Complete payment**.
+2. Review the order summary, choose a saved card or enter a new one, and pay.
+3. Once the balance is paid, the registration becomes **confirmed**.
 
 :::tip
-Quando uma vaga na lista de espera se abre para você, o e-mail que sua igreja envia inclui um link direto para essa etapa de pagamento.
+When a waitlist spot opens for you, the email your church sends includes a link straight to this payment step.
 :::
 
-## Editando uma Inscrição
+## Editing a Registration
 
-Planos mudam. Clique em **Edit** em uma inscrição para abrir a caixa de diálogo **Edit Registration**, onde você pode:
+Plans change. Click **Edit** on a registration to open the **Edit Registration** dialog, where you can:
 
-- Atualizar seus **dados de contato**
-- Alterar o **nome** e o **tipo de participante** de cada membro
-- Ajustar as **quantidades de seleção** (complementos como camisetas ou refeições)
+- Update your **contact details**
+- Change each member's **name** and **attendee type**
+- Adjust **selection quantities** (add-ons like T-shirts or meals)
 
-A capacidade ainda se aplica quando você edita — se um tipo de participante ou opção já estiver esgotado, você será solicitado a escolher outro. Salvar recalcula seu total; se a alteração deixar um saldo devido, um botão **Complete payment** aparece no cartão.
+Capacity still applies when you edit — if an attendee type or option has since sold out, you'll be asked to choose another. Saving recalculates your total; if the change leaves a balance due, a **Complete payment** button appears on the card.
 
 :::info
-A edição nunca cobra seu cartão automaticamente. Se o seu novo total for maior, pague a diferença com **Complete payment**; se for menor, entre em contato com sua igreja sobre um reembolso — reembolsos são tratados pela equipe da igreja por meio do provedor de pagamento dela.
+Editing never charges your card automatically. If your new total is higher, pay the difference with **Complete payment**; if it is lower, contact your church about a refund — refunds are handled by church staff through their payment provider.
 :::
 
-## Cancelando uma Inscrição
+## Canceling a Registration
 
-1. Clique em **Cancel Registration** no cartão.
-2. Confirme na caixa de diálogo — o cancelamento não pode ser desfeito.
+1. Click **Cancel Registration** on the card.
+2. Confirm in the dialog — cancellation cannot be undone.
 
-Sua vaga é liberada imediatamente. Se o evento tiver uma lista de espera, a próxima pessoa na fila é promovida automaticamente. Qualquer pagamento que você tenha feito não é reembolsado automaticamente — entre em contato com o escritório da sua igreja sobre reembolsos.
+Your spot is released immediately. If the event has a waitlist, the next person in line is promoted automatically. Any payment you made is not automatically refunded — contact your church office about refunds.
 
 ## Artigos Relacionados
 
-- [Inscrevendo-se em Eventos](./registering) -- O processo de inscrição, incluindo pagamento e listas de espera
-- [Visão Geral dos Eventos](./index.md) -- Navegue pelos próximos eventos
+- [Registering for Events](./registering) -- The signup process, including payment and waitlists
+- [Events Overview](./index.md) -- Browse upcoming events

@@ -1,83 +1,83 @@
 ---
-title: "Imprimir Diretório"
+title: "Diretório de Impressão"
 ---
 
-# Imprimir Diretório
+# Diretório de Impressão
 
 <div class="article-intro">
 
-O recurso Imprimir Diretório gera um diretório de membros formatado e imprimível para sua igreja. Ele organiza os membros por família, inclui informações de contato e fotos, e é projetado para parecer profissional quando impresso em papel de tamanho carta padrão.
+The Print Directory feature generates a formatted, printable member directory for your church. It organizes members by household, includes contact information and photos, and is designed to look professional when printed on standard letter-size paper.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Before You Begin</h4>
 
-- Você precisa de uma conta ativa da B1 Admin com permissão para visualizar pessoas.
-- As pessoas em seu diretório devem ter fotos e informações de contato preenchidas para os melhores resultados.
+- You need an active B1 Admin account with permission to view people.
+- People in your directory should have photos and contact information filled in for the best results.
 
 </div>
 
-## Abrindo o Imprimir Diretório
+## Opening the Print Directory
 
-1. Navegue até **Pessoas** na B1 Admin.
-2. Clique no **ícone de impressora** (ícone de impressora) na barra de ferramentas no topo do cartão de resultados de Pessoas. Ele aparece ao lado do botão Exportar.
-3. O Imprimir Diretório se abre em uma nova aba do navegador e começa a carregar seus dados de diretório.
-4. Após cerca de 1,5 segundos, a caixa de diálogo de impressão do seu navegador aparecerá automaticamente.
+1. Navigate to **People** in B1 Admin.
+2. Click the **print icon** (printer icon) in the toolbar at the top of the People results card. It appears next to the Export button.
+3. The Print Directory opens in a new browser tab and begins loading your directory data.
+4. After about 1.5 seconds, your browser's print dialog will appear automatically.
 
 :::tip
-O diretório se abre em uma aba separada para que você possa imprimi-lo sem sair da página Pessoas. Depois que a caixa de diálogo de impressão aparece, a aba navega de volta automaticamente.
+The directory opens in a separate tab so you can print it without leaving the People page. After the print dialog appears, the tab navigates back automatically.
 :::
 
-## O que Fica Incluído
+## What Gets Included
 
-O diretório de impressão inclui todos os **membros ativos** de sua igreja. Especificamente:
+The print directory includes all **active members** of your church. Specifically:
 
-- As pessoas com um status de associação **Inativo** ou **Visitante** são automaticamente excluídas.
-- As pessoas que **optaram por não participar** do diretório são excluídas.
-- Todos os outros são agrupados por **família**.
+- People with an **Inactive** or **Visitor** membership status are automatically excluded.
+- People who have **opted out** of the directory are excluded.
+- Everyone else is grouped by **household**.
 
-## Layout do Diretório
+## Directory Layout
 
-O diretório impresso tem duas partes:
+The printed directory has two parts:
 
-### Página de Capa
+### Cover Page
 
-A primeira página inclui:
-- O nome de sua igreja
-- O título "Diretório de Membros"
-- O ano atual
-- A localização de sua igreja
-- Uma contagem de famílias totais incluídas
+The first page includes:
+- Your church name
+- The title "Member Directory"
+- The current year
+- Your church's location
+- A count of total households included
 
-### Listagens de Membros
+### Member Listings
 
-As páginas restantes listam as famílias alfabeticamente por sobrenome. Cada cartão de família mostra:
+The remaining pages list households alphabetically by last name. Each household card shows:
 
-- **Fotos** -- Miniaturas circulares para cada membro da família, com seu nome abaixo
-- **Nome de exibição da família** -- Por exemplo, "A Família Smith", "João & Jane Doe", ou apenas o nome da pessoa para indivíduos
-- **Endereço** -- Rua, cidade, estado e CEP
-- **Telefone** -- Número de casa ou celular
-- **E-mail** -- Endereço de e-mail principal
-- **Aniversários** -- Formatados como datas individuais para cada membro da família
-- **Aniversário de Casamento** -- Se registrado
+- **Photos** -- Circular thumbnails for each household member, with their name below
+- **Household display name** -- For example, "The Smith Family", "John & Jane Doe", or just the person's name for individuals
+- **Address** -- Street address, city, state, and zip
+- **Phone** -- Home or mobile number
+- **Email** -- Primary email address
+- **Birthdays** -- Formatted as individual dates for each household member
+- **Anniversary** -- If recorded
 
-As famílias são organizadas em **seções alfabéticas** (A, B, C, ...) com um cabeçalho de seção decorativo antes de cada grupo de letras. Dois cartões de família aparecem lado a lado em cada linha.
+Households are organized into **alphabetical sections** (A, B, C, ...) with a decorative section header before each letter group. Two household cards appear side by side on each row.
 
-## Configurações de Impressão
+## Print Settings
 
-O diretório é formatado para **papel de tamanho carta** (8,5" × 11") com margens de 0,5 polegada. Quando a caixa de diálogo de impressão do navegador aparecer:
+The directory is formatted for **letter-size paper** (8.5" × 11") with 0.5-inch margins. When the browser print dialog appears:
 
-- Deixe o tamanho do papel definido como **Carta**
-- Ative **Gráficos de fundo** (às vezes chamado de "Imprimir fundos") nas configurações de impressão do seu navegador se quiser que os cabeçalhos de seção sejam impressos com seus estilos de cor
-- A orientação de retrato é recomendada
+- Leave the paper size set to **Letter**
+- Enable **Background graphics** (sometimes called "Print backgrounds") in your browser's print settings if you want section headers to print with their color styling
+- Portrait orientation is recommended
 
 :::info
-O diretório respeita quebras de página — cartões de família e cabeçalhos de seção não serão divididos entre páginas.
+The directory respects page breaks — household cards and section headers will not be split across pages.
 :::
 
 ## Artigos Relacionados
 
-- [Pesquisando Pessoas](./searching-people.md) -- Filtre seu diretório antes de imprimir
-- [Exportando Dados](./exporting-data.md) -- Exporte dados de diretório como uma planilha em vez disso
-- [Adicionando Pessoas](./adding-people.md) -- Adicione ou atualize registros de membros
+- [Searching People](./searching-people.md) -- Filter your directory before printing
+- [Exporting Data](./exporting-data.md) -- Export directory data as a spreadsheet instead
+- [Adding People](./adding-people.md) -- Add or update member records

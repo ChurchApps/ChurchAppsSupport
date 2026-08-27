@@ -2,40 +2,40 @@
 title: "Content Commons"
 ---
 
-# Content Commons — Biblioteca di Asset Condivisa e Moderazione
+# Content Commons — Shared Asset Library & Moderation
 
-Il contenuto inviato dagli utenti condiviso tra prodotti (canzoni WorshipCommons, lezioni Lessons.church, modelli FreeShow, modelli di sito web B1) passa attraverso una singola coda di moderazione piuttosto che un flusso di revisione per prodotto.
+Utente-submitted content shared across products (WorshipCommons songs, Lessons.church lessons, FreeShow templates, B1 website templates) goes through one moderation queue rather than a per-product review flow. This page covers the submission/approval lifecycle, the shared asset data model, and where moderation lives.
 
-## La Spina di Asset
+## The asset spine
 
-Due tabelle trasportano ogni elemento commons, indipendentemente dal prodotto:
+Two tables carry every commons item, regardless of product:
 
-- **`assets`** — il file di identità pubblica. `status`: `pending` | `published` | `unpublished` | `removed`.
-- **`assetFiles`** — ogni file allegato a un asset (audio, immagini, documenti).
-- **`submissions`** — l'unità di moderazione. Ciclo di vita: `draft → pending → approved | rejected | withdrawn`.
+- **`assets`** — the public identity row. `status`: `In Sospeso` | `published` | `unpublished` | `removed`. Digita-specific data (song details, authors) lives in satellite tables joined by `assetId`.
+- **`assetFiles`** — every file attached Per an asset (audio, images, documents), replacing the older `path` + comma-separated `files` columns on individual content tables.
+- **`submissions`** — the moderation unit. Lifecycle: `draft → In Sospeso → Approvato | rejected | withdrawn`. A submission can be a brand-new asset or an Modifica Per an existing published one (by the original author or a third party).
 
-L'approvazione di una presentazione esegue un **hook di pubblicazione** specifico del prodotto (Api/src/modules/commons/helpers/publishHooks/, ad es. `song.ts`) che espande la presentazione nei record del prodotto.
+Approving a submission runs a product-specific **publish hook** (`Api/src/modules/commons/helpers/publishHooks/`, e.g. `song.ts`) that expands the submission into the product's own records.
 
-## Flusso di Presentazione
+## Submission flow
 
-`CommonsSubmissionController` (Api/src/modules/commons/) è l'API rivolta all'utente finale: crea una bozza, presegna e allega file, invia per revisione o ritira.
+`CommonsSubmissionController` (`Api/src/modules/commons/`) is the end-Utente-facing API: Crea a draft, presign and attach files, Invia for review, or withdraw. Its actual clients are external producer sites (the WorshipCommons site, Lessons.church, FreeShow, the B1 website template gallery) — not B1Admin.
 
-## Coda di Moderazione
+## Moderation queue
 
-La coda vive in **B1Admin → Server Admin → Commons** (B1Admin/src/serverAdmin/components/CommonsTab.tsx), gestita dal permesso `Permissions.server.admin`.
+The queue lives in **B1Admin → Server Admin → Commons** (`B1Admin/src/serverAdmin/components/CommonsTab.tsx`), gated by the `Permessi.server.admin` Permesso — the same one that gates Churches/Impersonate/Jobs on that page. This is a ChurchApps-Staff-only internal tool, not something individual churches see.
 
-Tre sub-tab:
+Three sub-tabs:
 
-- **Coda** — ogni presentazione in sospeso in tutti i prodotti. Filtrabile per prodotto/tipo di asset.
-- **Rapporti** — rapporti di copyright e politica/qualità sugli asset pubblicati.
-- **Asset** — un browser cercabile di contenuto pubblicato con azioni per asset: riepilogo, annullamento pubblicazione/ripubblicazione o rimozione.
+- **Queue** — every In Sospeso submission across all products, filterable by product/asset Digita. Each row shows a new-asset vs. Modifica-by-author vs. Modifica-by-third-party badge, the submitter's approval track record, a field/file diff summary, and age (flagged past 72h). **Review** opens a drawer with field-level diffs, file previews, and an embedded read-only product preview; Approve/Reject support keyboard shortcuts (j/k Per navigate, a/r Per act).
+- **Rapporti** — copyright and policy/quality Rapporti on published assets, split into two queues plus resolved history. A Staff Membro claims a Rapporto, then resolves it with a resolution (upheld/dismissed/duplicate) and an action (none/unpublish/Rimuovi).
+- **Assets** — a searchable browser of published content with per-asset actions: feature, unpublish/republish, or Rimuovi (reason: copyright/policy).
 
-Ogni endpoint sotto `/commons/admin/*` ricontrolla indipendentemente il permesso server-admin.
+Every endpoint under `/commons/admin/*` (`CommonsAdminController.ts`) independently re-checks the server-admin Permesso.
 
 :::info
-Questo design intenzionalmente ha una singola coda. L'interfaccia di moderazione `/admin` di WorshipCommons è stata ritirata a favore dell'instradamento di ogni presentazione di prodotto attraverso gli strumenti Server Admin di B1Admin.
+This design intentionally has a single queue: WorshipCommons' own `/admin` moderation UI was retired in favor of routing every product's submissions through B1Admin's Server Admin tools.
 :::
 
-## Span
+## Spans
 
-Api (modulo commons), B1Admin (Server Admin) e i siti del produttore esterno: WorshipCommons, Lessons.church, FreeShow, modelli del generatore di siti web B1.
+Api (commons module), B1Admin (Server Admin), and the external producer sites: WorshipCommons, Lessons.church, FreeShow, B1 website builder templates.

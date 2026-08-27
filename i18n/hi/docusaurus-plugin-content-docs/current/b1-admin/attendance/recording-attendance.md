@@ -2,64 +2,64 @@
 title: "उपस्थिति रिकॉर्ड करना"
 ---
 
-# उपस्थिति रिकॉर्ड करना
+# Recording Attendance
 
 <div class="article-intro">
 
-एक बार आपके परिसर, सेवा के समय, और समूह सेट अप हो जाने के बाद, आप प्रत्येक सभा के बाद मैन्युअल रूप से उपस्थिति रिकॉर्ड कर सकते हैं। B1 Admin उपस्थिति को **सत्रों** के चारों ओर आयोजित करता है -- प्रति समूह प्रति बैठक तारीख एक सत्र। आप सत्र बनाते हैं, चिह्नित करते हैं कि कौन दिखा, और डेटा सीधे आपकी उपस्थिति रिपोर्ट में चला जाता है।
+Once your campuses, service times, and groups are set up, you can manually record attendance after each gathering. B1 Admin organizes attendance around **sessions** -- one session per group per meeting date. You create the session, mark who showed up, and the data feeds directly into your attendance reports.
 
 </div>
 
 <div class="prereqs">
-<h4>शुरू करने से पहले</h4>
+<h4>Before You Begin</h4>
 
-- आपके परिसर, सेवा के समय, और समूह को कॉन्फ़िगर किया जाना चाहिए। यदि आपने अभी तक ऐसा नहीं किया है तो [उपस्थिति सेटअप](setup.md) देखें।
-- जिन समूहों को आप ट्रैक करना चाहते हैं उन्हें **उपस्थिति ट्रैक करें** सक्षम होना चाहिए। विवरण के लिए [उपस्थिति सेटअप](setup.md) देखें।
+- Your campuses, service times, and groups must be configured. See [Attendance Setup](setup.md) if you haven't done this yet.
+- The groups you want to track must have **Track Attendance** enabled. See [Attendance Setup](setup.md) for details.
 
 </div>
 
-## एक सत्र बनाना
+## Creating a Session
 
-एक सत्र एक समूह बैठक की एक घटना का प्रतिनिधित्व करता है -- उदाहरण के लिए, एक विशिष्ट रविवार को आपकी K--3 वर्ग।
+A session represents one occurrence of a group meeting -- for example, your K--3rd grade class on a specific Sunday.
 
-1. **B1 Admin** खोलें, ऊपरी-बाएं कोने में **सेक्शन मेनू** खोलें और **लोग** चुनें, फिर **समूह** टैब पर क्लिक करें।
-2. वह समूह चुनें जिसके लिए आप उपस्थिति रिकॉर्ड करना चाहते हैं।
-3. **सत्र** टैब पर क्लिक करें।
-4. एक नया सत्र बनाने के लिए **नया** पर क्लिक करें।
-5. यदि समूह को सेवा के समय के लिए निर्दिष्ट किया गया है, तो **सेवा समय** चुनें। यदि यह एक अनुसूचित समूह है, तो यह क्षेत्र दिखाई नहीं देगा।
-6. **सत्र तारीख** चुनें -- यह आज, एक पिछली तारीख, या भविष्य की तारीख हो सकती है।
-7. **सहेजें** पर क्लिक करें।
+1. Open **B1 Admin**, open the **section menu** in the top-left corner and choose **People**, then click the **Groups** tab.
+2. Select the group you want to record attendance for.
+3. Click the **Sessions** tab.
+4. Click **New** to create a new session.
+5. If the group is assigned to a service time, choose the **Service Time**. If it is an unscheduled group, this field will not appear.
+6. Select the **Session Date** -- this can be today, a past date, or a future date.
+7. Click **Save**.
 
 :::tip
-आप पिछली तारीखों के लिए सत्र बना सकते हैं उपस्थिति को पकड़ने के लिए जिसे आपने अभी तक रिकॉर्ड नहीं किया है, या उन्हें अग्रिम रूप से बनाएं ताकि वे तैयार हों जब आपका समूह मिले।
+You can create sessions for past dates to catch up on attendance you haven't recorded yet, or create them in advance so they are ready when your group meets.
 :::
 
-## उपस्थिति चिह्नित करना
+## Marking Attendance
 
-सत्र को सहेजने के बाद, समूह के सदस्य पृष्ठ के दाईं ओर दिखाई देते हैं।
+After saving the session, the group's members appear on the right side of the page.
 
-1. प्रत्येक व्यक्ति के बगल में चेकबॉक्स को चेक करें जो उपस्थित था।
-2. परिवर्तन स्वचालित रूप से सहेजे जाते हैं -- उपस्थिति अंकों के लिए कोई अतिरिक्त Save बटन नहीं है।
+1. Check the box next to each person who attended.
+2. Changes are saved automatically -- there is no additional Save button for attendance marks.
 
 :::info
-केवल वर्तमान समूह के सदस्य सत्र सूची में दिखाई देते हैं। यदि कोई व्यक्ति उपस्थित था लेकिन अभी तक समूह में नहीं है, तो पहले [उन्हें समूह में जोड़ें](../groups/group-members.md), फिर उनकी उपस्थिति रिकॉर्ड करें।
+Only current group members appear in the session list. If someone attended but is not yet in the group, [add them to the group](../groups/group-members.md) first, then record their attendance.
 :::
 
-## उपस्थिति को स्प्रेडशीट में निर्यात करना
+## Exporting Attendance to a Spreadsheet
 
-आप सत्र का एक रिकॉर्ड CSV फ़ाइल के रूप में डाउनलोड कर सकते हैं जिसे Excel, Numbers, या Google Sheets में उपयोग करने के लिए।
+You can download a record of the session as a CSV file to use in Excel, Numbers, or Google Sheets.
 
-1. वह सत्र खोलें जिसे आप निर्यात करना चाहते हैं।
-2. **CSV डाउनलोड करें** बटन पर क्लिक करें।
-3. डाउनलोड की गई फ़ाइल को अपने स्प्रेडशीट एप्लिकेशन में खोलें।
+1. Open the session you want to export.
+2. Click the **Download CSV** button.
+3. Open the downloaded file in your spreadsheet application.
 
-## दर्ज की गई उपस्थिति को देखना
+## Viewing Recorded Attendance
 
-सत्र रिकॉर्ड करने के बाद, डेटा आपकी उपस्थिति रिपोर्ट में दिखाई देता है।
+After recording sessions, the data appears in your attendance reports.
 
-- **उपस्थिति टैब** -- समय के साथ चर्च-व्यापी प्रवृत्तियों को दिखाता है। [उपस्थिति ट्रैकिंग](tracking-attendance.md) देखें।
-- **समूह टैब** -- व्यक्तिगत समूह द्वारा टूटी हुई उपस्थिति को दिखाता है।
+- **Attendance tab** -- shows church-wide trends over time. See [Tracking Attendance](tracking-attendance.md).
+- **Groups tab** -- shows attendance broken down by individual group.
 
 :::tip
-यदि आपके द्वारा अभी बनाया गया कोई सत्र तुरंत रिपोर्ट में दिखाई नहीं देता है, तो सुनिश्चित करें कि सत्र की तारीख रिपोर्ट फ़िल्टर में चुनी गई तारीख सीमा के भीतर आती है।
+If a session you just created does not appear in reports right away, make sure the session date falls within the date range selected in the report filters.
 :::

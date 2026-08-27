@@ -6,11 +6,11 @@ title: "Check-Ins"
 
 <div class="article-intro">
 
-Check-in एक system है जिसके तीन front doors हैं: staffed और self-serve stations के लिए B1Checkin kiosk app, B1App member portal के अंदर self check-in, और B1Admin में admin-side attendance। तीनों core Api में same attendance module को write करते हैं, और classroom routing पूरी तरह से Groups द्वारा driven होता है — कोई separate "locations" या "rooms" entity नहीं है। एक child-safety layer top पर बैठता है: per-visit check-in types, server-side capacity और volunteer-ratio gates, kiosk-side age/grade eligibility, check-out पर trusted-pickup verification, और church के texting provider पर parent paging। यह page data model, check-in flows, safety layer, और label printing pipeline को map करता है।
+Check-in is one system with three front doors: the B1Checkin kiosk app for staffed and self-serve stations, self check-in inside the B1App member portal, and admin-side attendance in B1Admin. All three write to the same attendance module in the core Api, and classroom routing is driven entirely by Groups — there is no separate "locations" or "rooms" entity. A child-safety layer sits on top: per-visit check-in types, server-side capacity and volunteer-ratio gates, kiosk-side age/grade eligibility, trusted-pickup verification at check-out, and parent paging over the church's texting provider. This page maps the data model, the check-in flows, the safety layer, and the label printing pipeline.
 
 </div>
 
-## अवलोकन
+## Overview
 
 ```
 ┌──────────────────────────┐
@@ -37,106 +37,102 @@ POST /attendance/visits/checkin ──▶ { securityCode, streaks }
 
 | Surface | Repo | Stack | Role |
 |---------|------|-------|------|
-| Kiosk | `B1Checkin` | Expo / React Native, expo-router file routing; EAS builds for Android, Amazon Fire, और iOS; `expo-updates` via OTA updates | Staffed या self-serve station जिसमें label printing और verified check-out हो |
-| Self check-in | `B1App` | Next.js (b1.church member portal) | Logged-in members अपने household को एक phone से check करते हैं; कोई printing नहीं |
-| Admin | `B1Admin` | React SPA | Service structure को configure करता है, groups को service times को assign करता है, labels design करता है, manual attendance record करता है, reports run करता है |
+| Kiosk | `B1Checkin` | Expo / React Native, expo-router file routing; EAS builds for Android, Amazon Fire, and iOS; OTA updates via `expo-updates` | Staffed or self-serve station with label printing and verified check-out |
+| Self check-in | `B1App` | Next.js (b1.church member portal) | Logged-in members check their household in from a phone; no printing |
+| Admin | `B1Admin` | React SPA | Configures the service structure, assigns groups to service times, designs labels, records manual attendance, runs reports |
 
-तीनों `ApiHelper` के through same दो API modules को call करते हैं: **MembershipApi** (`/membership`) people, households, और groups के लिए; **AttendanceApi** (`/attendance`) बाकी सब के लिए।
+All three call the same two API modules through `ApiHelper`: **MembershipApi** (`/membership`) for people, households, and groups; **AttendanceApi** (`/attendance`) for everything below.
 
 ## Data model (`Api/src/modules/attendance`)
 
 | Entity / table | Key fields | Meaning |
-|---|---|---|
-| `campuses` | name, address | Deprecated here — campuses membership module में master किए जाते हैं (`/membership/campuses`); attendance copy frozen read-only है legacy readers के लिए (`models/Campus.ts`) |
-| `services` | campusId, name | एक recurring gathering, उदाहरण के लिए "Sunday Morning" (`models/Service.ts`) |
-| `serviceTimes` | serviceId, name | एक service के अंदर एक time slot, उदाहरण के लिए "9:00 AM" (`models/ServiceTime.ts`) |
-| `groupServiceTimes` | groupId, serviceTimeId | Join table: कौन से groups (classrooms) किन service times पर meet करते हैं (`models/GroupServiceTime.ts`) |
-| `sessions` | groupId, serviceTimeId, sessionDate | एक group की एक meeting एक date पर — lazily created check-in time पर (`models/Session.ts`) |
-| `visits` | personId, serviceId, visitDate, checkinTime, securityCode, checkinType, checkedInById, checkoutTime, checkedOutBy, checkedOutById | एक date पर एक person attending (`models/Visit.ts`)। `checkinType` है `member` / `guest` / `volunteer` (NULL = legacy member), kiosk द्वारा set और capacity/ratio gates द्वारा consumed |
-| `visitSessions` | visitId, sessionId | कौन से session(s) एक visit cover करता है — एक child दो service times को check in करने पर दो rows मिलते हैं (`models/VisitSession.ts`) |
+|----------------|-----------|---------|
+| `campuses` | name, address | Deprecated here — campuses are mastered in the membership module (`/membership/campuses`); the attendance copy is frozen read-only for legacy readers (`models/Campus.ts`) |
+| `services` | campusId, name | A recurring gathering, e.g. "Sunday Morning" (`models/Service.ts`) |
+| `serviceTimes` | serviceId, name | A time slot within a service, e.g. "9:00 AM" (`models/ServiceTime.ts`) |
+| `groupServiceTimes` | groupId, serviceTimeId | Join table: which groups (classrooms) meet at which service times (`models/GroupServiceTime.ts`) |
+| `sessions` | groupId, serviceTimeId, sessionDate | One meeting of one group on one date — created lazily at check-in time (`models/Session.ts`) |
+| `visits` | personId, serviceId, visitDate, checkinTime, securityCode, checkinType, checkedInById, checkoutTime, checkedOutBy, checkedOutById | One person attending on one date (`models/Visit.ts`). `checkinType` is `member` / `guest` / `volunteer` (NULL = legacy member), set by the kiosk and consumed by the capacity/ratio gates |
+| `visitSessions` | visitId, sessionId | Which session(s) a visit covers — a child checked in to two service times gets two rows (`models/VisitSession.ts`) |
 | `labelTemplates` | name, labelType (`nametag`/`pickup`), width, height, isDefault, content (JSON blocks) | Designable label layouts (`models/LabelTemplate.ts`) |
 
-### एक completed check-in कैसे persisted होता है
+### How a completed check-in is persisted
 
-`VisitController.postCheckin` (`Api/src/modules/attendance/controllers/VisitController.ts`) `POST /attendance/visits/checkin?serviceId=&peopleIds=` को handle करता है। Body एक array of `Visit` objects है, जिसमें प्रत्येक `visitSessions` carry करता है जिसका embedded `session` केवल एक `(serviceTimeId, groupId)` pair को name करता है। Server फिर:
+`VisitController.postCheckin` (`Api/src/modules/attendance/controllers/VisitController.ts`) handles `POST /attendance/visits/checkin?serviceId=&peopleIds=`. The body is an array of `Visit` objects, each carrying `visitSessions` whose embedded `session` names only a `(serviceTimeId, groupId)` pair. The server then:
 
-1. **किसी भी write से पहले capacity और ratios को gate करता है।** `evaluateGates()` → `CheckinGateHelper.evaluate()` प्रत्येक targeted room की capacity, guest capacity, closed flag, और volunteer ratio को current occupancy के विरुद्ध check करता है। postCheckin non-transactional है, इसलिए gate को first save से पहले run करना चाहिए — एक hard violation `409` return करता है offending room(s) को naming करते हुए और कुछ भी persist नहीं होता है। [Capacity और volunteer-ratio gates](#capacity-and-volunteer-ratio-gates) देखें।
+1. **Gates capacity and ratios before any write.** `evaluateGates()` → `CheckinGateHelper.evaluate()` checks each targeted room's capacity, guest capacity, closed flag, and volunteer ratio against current occupancy. postCheckin is **not transactional**, so the gate must run before the first save — a hard violation returns a 409 naming the offending room(s) and nothing is persisted. See [Capacity and volunteer-ratio gates](#capacity-and-volunteer-ratio-gates).
+2. **Resolves sessions lazily.** `getSessionId()` finds or creates the `sessions` row for `(groupId, serviceTimeId, today)` — session ids are cached in-process per date. New sessions emit a `session.created` webhook. The loop is an awaited `for..of` — an earlier fire-and-forget `forEach(async …)` raced the save and wrote NULL sessionIds on first-session creation (fixed; noted in a code comment at the loop).
+3. **Replaces the day's records.** Any existing visits for those people at that service today are deleted along with their visitSessions, then the submitted set is saved. Re-checking-in a family is therefore an idempotent "this is the current state" operation, not an append. Passing `?checkDuplicates=true` instead returns `{ duplicates: [personId…] }` without writing, which is how the kiosk warns before overwriting.
+4. **Generates one security code per batch.** `SecurityCodeHelper.generate()` produces a 4-character code from the alphabet `23456789BCDFGHJKLMNPQRSTVWXYZ` (no vowels or ambiguous characters, so codes can't spell words or misread). The server retries on collision against the same church's same-day open visits and stamps the code on every visit in the batch.
+5. **Returns `{ streaks, securityCode }`.** `streaks` maps personId to consecutive-week attendance count; the kiosk celebrates milestones (every 5th week) with confetti.
 
-2. **Lazily sessions को resolve करता है।** `getSessionId()` `sessions` row को find या create करता है `(groupId, serviceTimeId, today)` के लिए — session ids को per-date in-process cache किया जाता है। New sessions एक `session.created` webhook emit करते हैं। Loop एक awaited `for..of` है — एक earlier fire-and-forget `forEach(async …)` ने save को race किया और first-session creation पर NULL sessionIds को write किया (fixed; loop में एक code comment पर noted)।
-
-3. **Day के records को replace करता है।** उन लोगों के लिए existing visits उस service पर आज delete किए जाते हैं उनके visitSessions के साथ, फिर submitted set saved किया जाता है। एक family को re-checking-in करना इसलिए एक idempotent "यह current state है" operation है, append नहीं। `?checkDuplicates=true` passing के बजाय `{ duplicates: [personId…] }` return करता है बिना लिखे, जो है कैसे kiosk overwriting से पहले warn करता है।
-
-4. **Batch per एक security code generate करता है।** `SecurityCodeHelper.generate()` alphabet से एक 4-character code produce करता है `23456789BCDFGHJKLMNPQRSTVWXYZ` (कोई vowels या ambiguous characters नहीं, ताकि codes शब्द spell न कर सकें या misread न हों)। Server same-day open visits के against collision पर retry करता है और batch में हर visit पर code stamp करता है।
-
-5. **`{ streaks, securityCode }` return करता है।** `streaks` personId को consecutive-week attendance count में map करता है; kiosk milestones (हर 5वें week) को confetti से celebrate करता है।
-
-प्रत्येक saved visit एक `attendance.recorded` webhook भी emit करता है। Read side, `GET /attendance/visits/checkin`, लोगों के visits return करता है उनके **last logged date** से — यदि वह एक पिछले week था तो ids stripped होते हैं, तो client एक pre-filled copy receive करता है जो last week के room selections का जो save होगा new records के रूप में।
+Each saved visit also emits an `attendance.recorded` webhook. The read side, `GET /attendance/visits/checkin`, returns the people's visits from their **last logged date** — if that was a previous week the ids are stripped, so the client receives a pre-filled copy of last week's room selections that will save as new records.
 
 ### Check-out
 
-दो endpoints loop को complete करते हैं (`VisitController`):
+Two endpoints complete the loop (`VisitController`):
 
-- `GET /attendance/visits/code/:code` — आज के not-yet-checked-out visits जिनमें वह security code है, sessions populated के साथ।
-- `POST /attendance/visits/checkout` — body `{ visitIds, checkedOutBy?, checkedOutById? }`; `checkoutTime` stamp करता है और कौन pick up करता है, और per-visit एक `attendance.checkout` webhook emit करता है।
+- `GET /attendance/visits/code/:code` — today's not-yet-checked-out visits carrying that security code, with sessions populated.
+- `POST /attendance/visits/checkout` — body `{ visitIds, checkedOutBy?, checkedOutById? }`; stamps `checkoutTime` and who picked up, and emits an `attendance.checkout` webhook per visit.
 
-अनुमतियां: kiosks `attendance.checkin` के साथ authenticate करते हैं, जो exactly check-in/check-out/label-template surface को grant करता है; `attendance.view`/`attendance.edit` reporting और manual entry को cover करते हैं; structure (services, service times, group assignments) को `services.edit` की आवश्यकता है। Member self check-in (B1App) को कोई permission की आवश्यकता नहीं है: church में एक linked person वाला कोई भी authenticated user `GET`/`POST /attendance/visits/checkin` को call कर सकता है, और server submitted `personId`s को caller के own household तक restrict करता है (अन्यथा 403 — यह fence ही है जो अन्य families के `securityCode`s को unreadable रखता है)। Membership grant है; कि क्या members feature को see करते हैं church के B1App navigation tabs द्वारा controlled होता है। अन्य check-in endpoints (`code/:code`, `checkout`, `guardians`, `CheckinController`) kiosk/staff-only रहती हैं।
+Permissions: kiosks authenticate with `attendance.checkin`, which grants exactly the check-in/check-out/label-template surface; `attendance.view`/`attendance.edit` cover reporting and manual entry; the structure (services, service times, group assignments) requires `services.edit`. Member self check-in (B1App) needs no permission at all: any authenticated user with a linked person in the church may call `GET`/`POST /attendance/visits/checkin`, and the server restricts the submitted `personId`s to the caller's own household (403 otherwise — this fence is what keeps other families' `securityCode`s unreadable). Membership is the grant; whether members *see* the feature is controlled by the church's B1App navigation tabs. The other check-in endpoints (`code/:code`, `checkout`, `guardians`, `CheckinController`) remain kiosk/staff-only.
 
-## Groups room routing को drive करते हैं
+## Groups drive room routing
 
-System में कोई room या classroom entity नहीं है। एक "room" एक membership **group** है `trackAttendance` enabled के साथ, `groupServiceTimes` के through एक या अधिक service times से linked। Group fields (`Api/src/modules/membership/models/Group.ts` पर) जो kiosk behavior को shape करते हैं:
+There is no room or classroom entity anywhere in the system. A "room" is a membership **group** with `trackAttendance` enabled, linked to one or more service times through `groupServiceTimes`. The group fields (on `Api/src/modules/membership/models/Group.ts`) that shape kiosk behavior:
 
 | Field | Effect |
-|---|---|
-| `trackAttendance` | Group सब पर attendance में participate करता है; B1Admin setup tree को `trackAttendance` groups को flag करता है जिनके कोई `groupServiceTimes` row नहीं है unassigned के रूप में |
-| `parentPickup` | एक child room को mark करता है: इसे check in करने से visit एक "child" visit बनता है, जो एक family pickup label print करता है और security code को nametag पर रखता है |
-| `printNametag` | क्या check-ins इस group को नametag बिल्कुल print करते हैं |
-| `capacity` / `guestCapacity` / `checkinClosed` | Room capacity limits और एक hard "closed" switch, server-side द्वारा check-in gate द्वारा enforced (B1Admin group settings में "Check-In Capacity" के तहत edited) |
-| `volunteerRatio` / `minVolunteers` | Children-per-volunteer ratio और minimum volunteer headcount, church-wide `ratioEnforcement` setting के per enforced |
-| `minAgeMonths` / `maxAgeMonths` / `minGrade` / `maxGrade` | Age/grade eligibility bounds kiosk-side evaluated highlight या dim rooms के लिए |
+|------|--------|
+| `trackAttendance` | Group participates in attendance at all; B1Admin's setup tree flags `trackAttendance` groups with no `groupServiceTimes` row as unassigned |
+| `parentPickup` | Marks a child room: checking in to it makes the visit a "child" visit, which prints a family pickup label and puts the security code on the nametag |
+| `printNametag` | Whether check-ins to this group print a nametag at all |
+| `capacity` / `guestCapacity` / `checkinClosed` | Room capacity limits and a hard "closed" switch, enforced server-side by the check-in gate (edited in B1Admin's group settings under "Check-In Capacity") |
+| `volunteerRatio` / `minVolunteers` | Children-per-volunteer ratio and minimum volunteer headcount, enforced per the church-wide `ratioEnforcement` setting |
+| `minAgeMonths` / `maxAgeMonths` / `minGrade` / `maxGrade` | Age/grade eligibility bounds evaluated kiosk-side to highlight or dim rooms |
 
-हर client same way denormalize करता है (उदाहरण के लिए `B1Checkin/app/services.tsx`, `B1App/src/app/[sdSlug]/mobile/components/screens/CheckinPage.tsx`): parallel में `GET /attendance/servicetimes?serviceId=`, `GET /attendance/groupservicetimes`, और `GET /membership/groups` को load करें, फिर हर service time के लिए groups को collect करें जिनकी `groupServiceTimes` row इसे point करती है `serviceTime.groups` में। यह array है जो room picker show करता है, group `categoryName` द्वारा organized।
+Every client denormalizes the same way (e.g. `B1Checkin/app/services.tsx`, `B1App/src/app/[sdSlug]/mobile/components/screens/CheckinPage.tsx`): load `GET /attendance/servicetimes?serviceId=`, `GET /attendance/groupservicetimes`, and `GET /membership/groups` in parallel, then for each service time collect the groups whose `groupServiceTimes` row points at it into `serviceTime.groups`. That array is what the room picker shows, organized by group `categoryName`.
 
-Assignments को B1Admin में group page से edit किया जाता है (`B1Admin/src/groups/components/ServiceTimesEdit.tsx` — `POST`/`DELETE /attendance/groupservicetimes`), और पूरे Campus → Service → Service Time → Group tree को `B1Admin/src/attendance/components/AttendanceSetup.tsx` में `GET /attendance/attendancerecords/tree` के via visualized होता है।
+Assignments are edited from the group's page in B1Admin (`B1Admin/src/groups/components/ServiceTimesEdit.tsx` — `POST`/`DELETE /attendance/groupservicetimes`), and the whole Campus → Service → Service Time → Group tree is visualized in `B1Admin/src/attendance/components/AttendanceSetup.tsx` via `GET /attendance/attendancerecords/tree`.
 
 :::info
-क्योंकि groups single source of truth हैं, same group membership kiosk routing, roster-style attendance को B1Admin group pages में, और attendance reporting को power करता है — एक group को service time के लिए assign करना single step है जो इसे check-in destination बनाने के लिए आवश्यक है।
+Because groups are the single source of truth, the same group membership powers kiosk routing, roster-style attendance in B1Admin's group pages, and attendance reporting — assigning a group to a service time is the only step needed to make it a check-in destination.
 :::
 
 ## Child safety
 
 ### Check-in types
 
-हर visit एक `checkinType` carry करता है — `member`, `guest`, या `volunteer` (NULL का मतलब legacy/member; migration `tools/migrations/attendance/2026-07-03_checkin_type.ts`)। Type को **kiosk-side चुना जाता है**: Member / Guest / Volunteer chips expanded member row पर (`B1Checkin/src/components/MemberServiceTimes.tsx`), completion पर pending visit के लिए stamp किया जाता है (`app/checkinComplete.tsx`, defaulting `member` को)। Server इसे gate में consume करता है — volunteers capacity के बजाय ratio coverage की ओर count करते हैं, और guests `guestCapacity` के विरुद्ध count करते हैं।
+Every visit carries a `checkinType` — `member`, `guest`, or `volunteer` (NULL means legacy/member; migration `tools/migrations/attendance/2026-07-03_checkin_type.ts`). The type is chosen **kiosk-side**: Member / Guest / Volunteer chips on the expanded member row (`B1Checkin/src/components/MemberServiceTimes.tsx`), stamped onto each pending visit at completion (`app/checkinComplete.tsx`, defaulting to `member`). The server consumes it in the gate — volunteers count toward ratio coverage instead of against capacity, and guests count against `guestCapacity`.
 
-### Capacity और volunteer-ratio gates
+### Capacity and volunteer-ratio gates
 
-`CheckinGateHelper.evaluate()` (`Api/src/modules/attendance/helpers/CheckinGateHelper.ts`) postCheckin के अंदर कोई save से पहले run होता है (endpoint non-transactional है, तो gating-before-save correctness mechanism है)। यह current occupancy को targeted group के per load करता है (`VisitRepo.countActiveByGroupToday`) और group config को membership module gateway के through, फिर violations को classify करता है:
+`CheckinGateHelper.evaluate()` (`Api/src/modules/attendance/helpers/CheckinGateHelper.ts`) runs inside `postCheckin` before any save (the endpoint is non-transactional, so gating-before-save is the correctness mechanism). It loads current occupancy per targeted group (`VisitRepo.countActiveByGroupToday`) and the group config through the membership module gateway, then classifies violations:
 
-- **Hard (हमेशा block):** `checkinClosed`, `current + incoming > capacity`, guest count over `guestCapacity`। Batch को `409 { error: "capacity", groups: [{ groupId, groupName, reason }] }` के साथ reject किया जाता है — kiosk named room को दिखाता है।
-- **Ratio (warn या block):** incoming non-volunteers एक room में जहां `volunteers < minVolunteers`, कोई volunteers नहीं, या `children > volunteers × volunteerRatio`। Severity per-church setting `ratioEnforcement` को follow करती है (`"warn"` default / `"block"`, B1Admin Manage Church → Check-In में edited, `CheckinSettingsEdit.tsx`)। Warn-mode `409 { warning: true, error: "ratio", … }` return करता है जब तक client resubmit नहीं करता `acknowledgeWarnings=true` के साथ — वह resubmit kiosk का staff-confirm override है।
+- **Hard (always block):** `checkinClosed`, `current + incoming > capacity`, guest count over `guestCapacity`. The batch is rejected with `409 { error: "capacity", groups: [{ groupId, groupName, reason }] }` — the kiosk shows the named room.
+- **Ratio (warn or block):** incoming non-volunteers into a room where `volunteers < minVolunteers`, no volunteers at all, or `children > volunteers × volunteerRatio`. Severity follows the per-church setting `ratioEnforcement` (`"warn"` default / `"block"`, edited in B1Admin Manage Church → Check-In, `CheckinSettingsEdit.tsx`). Warn-mode returns `409 { warning: true, error: "ratio", … }` unless the client resubmits with `acknowledgeWarnings=true` — that resubmit is the kiosk's staff-confirm override.
 
 ### Age/grade eligibility (kiosk-side)
 
-Room eligibility advisory UI है, kiosk पर evaluated, server द्वारा enforced नहीं। `B1Checkin/src/helpers/EligibilityHelper.ts` एक person की birthdate/grade को group के `minAgeMonths`/`maxAgeMonths`/`minGrade`/`maxGrade` के विरुद्ध compare करता है (grade order: PreK, K, 1–12, Graduated) और `eligible` / `ineligible` / `unknown` return करता है — missing data `unknown` yield करता है और कभी room को hide नहीं करता है। Ages और grades को church के **grade promotion date** (`gradePromotionDate` setting, `"MM-DD"`, `B1Admin/src/settings/components/GradePromotionSettingsEdit.tsx` में edited) के रूप में compute किया जाता है; kiosk `GET /attendance/checkin/settings` से fetch करता है, और `resolveAsOfDate` today के on या before का most recent occurrence pick करता है। Room picker eligible rooms को highlight करता है और ineligible ones को dim करता है; एक dimmed room pick करना एक staff confirmation को require करता है।
+Room eligibility is advisory UI, evaluated on the kiosk, not enforced by the server. `B1Checkin/src/helpers/EligibilityHelper.ts` compares a person's birthdate/grade against the group's `minAgeMonths`/`maxAgeMonths`/`minGrade`/`maxGrade` (grade order: PreK, K, 1–12, Graduated) and returns `eligible` / `ineligible` / `unknown` — missing data yields `unknown` and never hides a room. Ages and grades are computed as of the church's **grade promotion date** (`gradePromotionDate` setting, `"MM-DD"`, edited in `B1Admin/src/settings/components/GradePromotionSettingsEdit.tsx`); the kiosk fetches it from `GET /attendance/checkin/settings`, and `resolveAsOfDate` picks the most recent occurrence on or before today. The room picker highlights eligible rooms and dims ineligible ones; picking a dimmed room requires a staff confirmation.
 
-### Trusted और not-authorized pickup
+### Trusted and not-authorized pickup
 
-Pickup people एक membership entity हैं, per household: `householdPickupPeople` (`Api/src/modules/membership/models/HouseholdPickupPerson.ts` — householdId, optional personId, name, photoUrl, relationship, `status` `trusted` / `notAuthorized`, notes)। CRUD है `GET /membership/householdpickup/:householdId` (कोई authenticated church user, ताकि kiosks इसे read कर सकें) plus `POST` / `DELETE` `people.edit` द्वारा gated। Staff person page के **Pickup** card पर list को manage करते हैं (`B1Admin/src/people/components/PickupPeople.tsx`) — photo, relationship, और एक Trusted/Not Authorized status chip।
+Pickup people are a membership entity, per household: `householdPickupPeople` (`Api/src/modules/membership/models/HouseholdPickupPerson.ts` — householdId, optional personId, name, photoUrl, relationship, `status` `trusted` / `notAuthorized`, notes). CRUD is `GET /membership/householdpickup/:householdId` (any authenticated church user, so kiosks can read it) plus `POST` / `DELETE` gated by `people.edit`. Staff manage the list on the person page's **Pickup** card (`B1Admin/src/people/components/PickupPeople.tsx`) — photo, relationship, and a Trusted/Not Authorized status chip.
 
-Check-out पर (`B1Checkin/app/checkout.tsx`) kiosk household के pickup list को load करता है: `trusted` entries household-adult photo grid के साथ-साथ tappable pickup cards के रूप में render होते हैं, और एक free-typed "Other" नाम को fuzzy-matched किया जाता है (Levenshtein, `src/helpers/PickupMatchHelper.ts`) `notAuthorized` entries के विरुद्ध — एक match check-out को warning sheet के साथ block करता है और एक staff **Override** button। Override logged होता है visit पर ही: यह `checkedOutBy` को `"OVERRIDE: {name}"` के रूप में post करता है normal `POST /attendance/visits/checkout` के through, तो यह attendance record में land करता है और `attendance.checkout` webhook के बजाय एक separate audit table।
+At check-out (`B1Checkin/app/checkout.tsx`) the kiosk loads the household's pickup list: `trusted` entries render as tappable pickup cards alongside the household-adult photo grid, and a free-typed "Other" name is fuzzy-matched (Levenshtein, `src/helpers/PickupMatchHelper.ts`) against `notAuthorized` entries — a match blocks check-out with a warning sheet and a staff **Override** button. The override is logged on the visit itself: it posts `checkedOutBy` as `"OVERRIDE: {name}"` through the normal `POST /attendance/visits/checkout`, so it lands in the attendance record and the `attendance.checkout` webhook rather than a separate audit table.
 
-### Page-a-parent और emergency broadcast
+### Page-a-parent and emergency broadcast
 
-`CheckinController` (`Api/src/modules/attendance/controllers/CheckinController.ts`, `/attendance/checkin`) दो SMS endpoints को expose करता है:
+`CheckinController` (`Api/src/modules/attendance/controllers/CheckinController.ts`, `/attendance/checkin`) exposes two SMS endpoints:
 
-- `POST /page` — `{ visitId, message }`: एक checked-in child के guardians को page करता है (kiosk check-out screen, manned mode)।
-- `POST /broadcast` — `{ serviceId, message }`: एक service के सभी checked-in household adults को text करता है (kiosk admin settings, एक type-`EMERGENCY`-to-confirm sheet के behind `B1Checkin/app/adminSettings.tsx` में)।
+- `POST /page` — `{ visitId, message }`: pages the guardians of one checked-in child (kiosk check-out screen, manned mode).
+- `POST /broadcast` — `{ serviceId, message }`: texts every checked-in household's adults for a service (kiosk admin settings, behind a type-`EMERGENCY`-to-confirm sheet in `B1Checkin/app/adminSettings.tsx`).
 
-दोनों household adults को membership gateway के through resolve करते हैं, फिर delivery को **`MessagingModuleGateway.sendBulkText`** (`Api/src/shared/modules/MessagingModuleGateway.ts`) को hand करते हैं — church के configured texting provider (`@churchapps/texting`: TextInChurch, Clearstream, या MutualMinistry; कोई built-in SMS sender नहीं) में cross-module door। Gateway एक `sentText` row plus per-recipient `deliveryLog` entries log करता है और एक batch को 500 recipients तक cap करता है; कोई provider configured के बिना यह `no_provider` return करता है, जो kiosk surface करता है "No SMS provider configured"। Controller का `dispatch()` phone numbers को dedupe करता है और people को skip करता है कोई mobile के साथ या `optedOut` set के साथ, `{ sent, failed, skippedOptedOut, skippedNoPhone }` return करता है ताकि kiosk दिखा सके क्या skip किया गया।
+Both resolve household adults through the membership gateway, then hand delivery to **`MessagingModuleGateway.sendBulkText`** (`Api/src/shared/modules/MessagingModuleGateway.ts`) — the cross-module door into the church's configured texting provider (`@churchapps/texting`: TextInChurch, Clearstream, or MutualMinistry; there is no built-in SMS sender). The gateway logs a `sentText` row plus per-recipient `deliveryLog` entries and caps a batch at 500 recipients; with no provider configured it returns `no_provider`, which the kiosk surfaces as "No SMS provider configured". The controller's `dispatch()` dedupes phone numbers and skips people with no mobile or `optedOut` set, returning `{ sent, failed, skippedOptedOut, skippedNoPhone }` so the kiosk can show what was skipped.
 
 ## The kiosk (B1Checkin)
 
-Screens expo-router files हैं `B1Checkin/app/` के अंदर; cross-screen state एक static `CachedData` class में lives (`src/helpers/CachedData.ts`), React state में नहीं।
+Screens are expo-router files under `B1Checkin/app/`; cross-screen state lives in a static `CachedData` class (`src/helpers/CachedData.ts`), not React state.
 
 ```
 index (boot/auto-login) → selectChurch → services ──▶ lookup ──▶ household ──▶ checkinComplete
@@ -146,63 +142,60 @@ index (boot/auto-login) → selectChurch → services ──▶ lookup ──▶
              labelTemplates               │                                            to lookup
 ```
 
-1. **Lookup** (`app/lookup.tsx`) — phone द्वारा search करता है (`GET /membership/people/search/phone?number=`, last-4 या full) या नाम द्वारा (`GET /membership/people/search?term=`)। एक match को select करने से household load होता है (`GET /membership/people/household/{householdId}`) और existing visits (`GET /attendance/visits/checkin`), `pendingVisits` को last week के selections से seed करते हुए।
+1. **Lookup** (`app/lookup.tsx`) — search by phone (`GET /membership/people/search/phone?number=`, last-4 or full) or by name (`GET /membership/people/search?term=`). Selecting a match loads the household (`GET /membership/people/household/{householdId}`) and existing visits (`GET /attendance/visits/checkin`), seeding `pendingVisits` with last week's selections.
+2. **Household review** (`app/household.tsx`, `src/components/MemberList.tsx`) — each member row shows an already-checked-in badge, allergy/`nametagNotes` badge, and their current room chips. Expanding a member lists every service time with a room button plus the Member / Guest / Volunteer check-in-type chips (`MemberServiceTimes.tsx`).
+3. **Group assignment** (`app/selectGroup.tsx`) — a category tree built from `serviceTime.groups`, with age/grade-eligible rooms highlighted and ineligible ones dimmed behind a staff confirm (see [Age/grade eligibility](#agegrade-eligibility-kiosk-side)); picking a room writes a `{ session: { serviceTimeId, groupId } }` visitSession into that person's pending visit (`src/helpers/VisitSessionHelper.ts`). "None" clears it.
+4. **Complete** (`app/checkinComplete.tsx`) — `POST /attendance/visits/checkin` with `pendingVisits` (each stamped with its `checkinType`), then prints labels if a printer is configured and auto-returns to lookup. A `409` capacity response shows the named full/closed room; a ratio warning offers a staff confirm that resubmits with `acknowledgeWarnings=true`.
 
-2. **Household review** (`app/household.tsx`, `src/components/MemberList.tsx`) — प्रत्येक member row एक already-checked-in badge, allergy/`nametagNotes` badge, और उनके current room chips दिखाता है। एक member को expand करने से हर service time को एक room button plus Member / Guest / Volunteer check-in-type chips के साथ list किया जाता है (`MemberServiceTimes.tsx`)।
+The **check-out** screen (`app/checkout.tsx`) accepts the 4-character security code through an auto-focused input — so USB/Bluetooth keyboard-wedge barcode scanners work with no camera — or an on-screen keypad using the same alphabet, auto-submitting at 4 characters. It looks up the code, shows the children being picked up, and presents the household's **trusted pickup people** as tappable cards alongside a photo grid of household adults (plus an "Other" free-text option that is fuzzy-checked against not-authorized names — see [Trusted and not-authorized pickup](#trusted-and-not-authorized-pickup)), then posts `POST /attendance/visits/checkout` with the picker's name/id. In manned mode the screen also offers **Page a parent** (`POST /attendance/checkin/page`) and a **security-label reprint** — `reprint()` rebuilds the family's labels with `LabelHelper.getAllLabelsFor(...)` and feeds them through the same `PrintUI` pipeline as check-in.
 
-3. **Group assignment** (`app/selectGroup.tsx`) — एक category tree built `serviceTime.groups` से, age/grade-eligible rooms को highlight किया गया और ineligible ones dimmed के पीछे staff confirm; एक room pick करना एक `{ session: { serviceTimeId, groupId } }` visitSession को उस person के pending visit में write करता है (`src/helpers/VisitSessionHelper.ts`)। "None" इसे clear करता है।
-
-4. **Complete** (`app/checkinComplete.tsx`) — `POST /attendance/visits/checkin` `pendingVisits` के साथ (प्रत्येक अपने `checkinType` के साथ stamp किया गया), फिर labels print करता है यदि printer configured है और auto-return lookup को करता है। एक `409` capacity response named full/closed room दिखाता है; एक ratio warning staff confirm offer करता है जो `acknowledgeWarnings=true` के साथ resubmit करता है।
-
-**Check-out** screen (`app/checkout.tsx`) एक auto-focused input के through 4-character security code को accept करता है — तो USB/Bluetooth keyboard-wedge barcode scanners कोई camera के बिना काम करते हैं — या same alphabet का उपयोग करके एक on-screen keypad, 4 characters पर auto-submitting। यह code को look up करता है, picked up किए जा रहे children को दिखाता है, और household के **trusted pickup people** को tappable cards के रूप में present करता है household adults के photo grid के साथ-साथ (plus एक "Other" free-text option जो not-authorized names के विरुद्ध fuzzy-checked होता है — [Trusted और not-authorized pickup](#trusted-and-not-authorized-pickup) देखें), फिर picker के नाम/id के साथ `POST /attendance/visits/checkout` को posts करता है। Manned mode में screen भी **Page a parent** offer करता है (`POST /attendance/checkin/page`) और एक **security-label reprint** — `reprint()` family के labels को rebuild करता है `LabelHelper.getAllLabelsFor(...)` के साथ और उन्हें same `PrintUI` pipeline के through feed करता है check-in के रूप में।
-
-Station personality एक AsyncStorage flag है `@StationMode` (`"self"` | `"manned"`, `app/adminSettings.tsx` में toggled)। Manned mode lookup screen पर check-out entry point और household screen से per-member profile editing को add करता है (`POST /membership/people`)। Kiosk hardening built in है: एक optional PIN (`app/setPin.tsx`, `src/components/PinEntryModal.tsx`) admin और printer screens को gates करता है, admin screen केवल header logo पर 7 rapid taps के via opens होता है, और एक idle attract screen (`src/hooks/useInactivityTimer.ts`) families के बीच take over होता है।
+Station personality is an AsyncStorage flag `@StationMode` (`"self"` | `"manned"`, toggled in `app/adminSettings.tsx`). Manned mode adds the check-out entry point on the lookup screen and per-member profile editing (`POST /membership/people`) from the household screen. Kiosk hardening is built in: an optional PIN (`app/setPin.tsx`, `src/components/PinEntryModal.tsx`) gates the admin and printer screens, the admin screen opens only via 7 rapid taps on the header logo, and an idle attract screen (`src/hooks/useInactivityTimer.ts`) takes over between families.
 
 ## Self check-in (B1App)
 
-Members b1.church portal पर `/mobile/checkin` screen से check in करते हैं (`B1App/src/app/[sdSlug]/mobile/components/ScreenRouter.tsx` द्वारा routed `screens/CheckinPage.tsx` को)। यह एक logged-in user को require करता है और kiosk के समान चार steps को walk करता है — services → household → groups → complete — identical endpoints के विरुद्ध, state को `B1App/src/helpers/CheckinHelper.ts` में held। Kiosk से विभिन्नताएं: household logged-in user के own `householdId` से come करता है (कोई search step नहीं), और कोई label printing नहीं — completion screen के बजाय batch के security code को एक QR के रूप में show करता है (`qrcode.react`) एक "show this को एक check-in station में" hint के साथ। यदि household submit time पर already checked in है, एक "Show check-in code" button existing visit के `securityCode` से QR को re-display करता है। Check-in immediate submit time पर record किया जाता है (कोई pending state नहीं); QR केवल kiosk पर label printing को drive करता है।
+Members check in from the b1.church portal at the `/mobile/checkin` screen (routed by `B1App/src/app/[sdSlug]/mobile/components/ScreenRouter.tsx` to `screens/CheckinPage.tsx`). It requires a logged-in user and walks the same four steps as the kiosk — services → household → groups → complete — against the identical endpoints, with state held in `B1App/src/helpers/CheckinHelper.ts`. The differences from the kiosk: the household comes from the logged-in user's own `householdId` (no search step), and there is no label printing — instead the completion screen shows the batch's security code as a QR (`qrcode.react`) with a "show this at a check-in station" hint. If the household is already checked in when the page loads, a "Show check-in code" button re-displays the QR from the existing visit's `securityCode`. The check-in is recorded immediately at submit time (there is no pending state); the QR only drives label printing at the kiosk.
 
-**Phone-to-kiosk label printing** (`B1Checkin/app/scan.tsx`, lookup screen पर "Scan code" button से reached): kiosk एक `expo-camera` `CameraView` को open करता है (front-facing by default, flippable) QR codes के लिए scan करता हुआ। एक scanned payload accept किया जाता है जब यह एक bare 4-character code है security-code alphabet में, तो दोनों B1App QR और printed label का QR block काम करते हैं। Screen फिर check-out reprint path को follow करता है — `GET /attendance/visits/code/{code}` → `GET /membership/people/ids` → `LabelHelper.getAllLabelsFor(visits, people, code)` → `PrintUI` — और lookup को return करता है। कोई attendance write scan time पर नहीं होता; labels-only। Codes कोई active visits के साथ, stations कोई printer के साथ, और label-less groups प्रत्येक एक toast surface करते हैं और lookup को return करते हैं।
+**Phone-to-kiosk label printing** (`B1Checkin/app/scan.tsx`, reached from the "Scan code" button on the lookup screen): the kiosk opens an `expo-camera` `CameraView` (front-facing by default, flippable) scanning for QR codes. A scanned payload is accepted when it is a bare 4-character code in the security-code alphabet, so both the B1App QR and a printed label's QR block work. The screen then follows the check-out reprint path — `GET /attendance/visits/code/{code}` → `GET /membership/people/ids` → `LabelHelper.getAllLabelsFor(visits, people, code)` → `PrintUI` — and returns to lookup. No attendance write happens at scan time; labels-only. Codes with no active visits, stations with no printer, and label-less groups each surface a toast and return to lookup.
 
-Types और `ApiHelper`/`ArrayHelper` `@churchapps/helpers` और `@churchapps/apphelper` से come करते हैं; कोई React components B1Admin के साथ shared नहीं हैं।
+Types and `ApiHelper`/`ArrayHelper` come from `@churchapps/helpers` and `@churchapps/apphelper`; no React components are shared with B1Admin.
 
 ## Admin-side attendance (B1Admin)
 
-- **Setup** — `/attendance` (`B1Admin/src/attendance/AttendancePage.tsx`) structure tree को render करता है और services (`ServiceEdit.tsx`) और service times (`ServiceTimeEdit.tsx`) को creates करता है। Campus data membership से `useCampuses()` hook के via आता है।
-- **Manual attendance** attendance side पर नहीं lives, Groups side पर: `B1Admin/src/groups/components/GroupSessionsTab.tsx` sessions create करता है (`POST /attendance/sessions`) और लोगों को `POST /attendance/visitsessions/log` के via present mark करता है, जो उस person के लिए visit को find-या-create करता है। Group leaders अपने groups के लिए attendance record कर सकते हैं बिना `attendance.edit` permission के — controllers `au.leaderGroupIds` को check करते हैं।
-- **Reporting** — attendance trend और group attendance server-defined reports हैं (`B1Admin/src/components/reporting/ReportWithFilter.tsx` ReportingApi के विरुद्ध); per-person history है `GET /attendance/attendancerecords?personId=` (`B1Admin/src/people/components/PersonAttendance.tsx`)।
+- **Setup** — `/attendance` (`B1Admin/src/attendance/AttendancePage.tsx`) renders the structure tree and creates services (`ServiceEdit.tsx`) and service times (`ServiceTimeEdit.tsx`). Campus data comes from membership via the `useCampuses()` hook.
+- **Manual attendance** lives on the Groups side, not the attendance section: `B1Admin/src/groups/components/GroupSessionsTab.tsx` creates sessions (`POST /attendance/sessions`) and marks people present via `POST /attendance/visitsessions/log`, which finds-or-creates the visit for that person and session. Group leaders can record attendance for their own groups without the `attendance.edit` permission — the controllers check `au.leaderGroupIds`.
+- **Reporting** — attendance trend and group attendance are server-defined reports (`B1Admin/src/components/reporting/ReportWithFilter.tsx` against ReportingApi); per-person history is `GET /attendance/attendancerecords?personId=` (`B1Admin/src/people/components/PersonAttendance.tsx`).
 
 ## Label printing
 
-### Templates और designer
+### Templates and the designer
 
-Churches अपने labels को B1Admin में `/mobile/checkin/labels` पर design करते हैं (`B1Admin/src/attendance/LabelsPage.tsx` + `components/LabelEditor.tsx`, Check-In settings page से reached)। एक template एक `labelTemplates` row है जिसका `content` एक JSON array of blocks है — `text`, `field`, `barcode`, `qrcode`, या `box` — प्रत्येक percent coordinates में positioned जिसमें font, alignment, symbology (`code39`/`code128`/`qr`), और optional visibility conditions हों (उदाहरण के लिए केवल allergy box render करें जब `person.nametagNotes` non-empty हो)। दो `labelType`s exist: `nametag` (एक per checked-in person; fields जैसे `person.displayName`, `sessions`, `securityCode`) और `pickup` (एक per family; fields जैसे `children`, `childrenAllergies`)। Server एक single default को per type enforce करता है per church (`LabelTemplateController.save`)। Designer bundled labels को mirror करने वाले starter templates को ship करता है और sample data के विरुद्ध preview करता है।
+Churches design their own labels in B1Admin at `/mobile/checkin/labels` (`B1Admin/src/attendance/LabelsPage.tsx` + `components/LabelEditor.tsx`, reached from the Check-In settings page). A template is a `labelTemplates` row whose `content` is a JSON array of blocks — `text`, `field`, `barcode`, `qrcode`, or `box` — each positioned in percent coordinates with font, alignment, symbology (`code39`/`code128`/`qr`), and optional visibility conditions (e.g. only render the allergy box when `person.nametagNotes` is non-empty). Two `labelType`s exist: `nametag` (one per checked-in person; fields like `person.displayName`, `sessions`, `securityCode`) and `pickup` (one per family; fields like `children`, `childrenAllergies`). The server enforces a single default per type per church (`LabelTemplateController.save`). The designer ships starter templates mirroring the kiosk's bundled labels and previews against sample data.
 
-### Kiosk पर rendering और printing
+### Rendering and printing on the kiosk
 
-Check-in completion पर, `B1Checkin/src/helpers/LabelHelper.ts` decide करता है प्रत्येक pending visit पर group flags से क्या print करना है: `printNametag` groups के लिए nametags, plus एक family pickup label यदि कोई visit `parentPickup` group को hit करता है। Check-in response से security code को child nametags पर जाता है और pickup label पर; adult nametags बिना code print होते हैं। यदि church के templates हैं, `LabelRenderer` (`src/helpers/LabelRenderer.ts`) blocks + एक field context को एक standalone HTML document में turn करता है; अन्यथा bundled HTML labels `B1Checkin/assets/labels/` में placeholder substitution के साथ उपयोग किए जाते हैं।
+At check-in completion, `B1Checkin/src/helpers/LabelHelper.ts` decides what to print from the group flags on each pending visit: nametags for `printNametag` groups, plus one family pickup label if any visit hit a `parentPickup` group. The security code from the check-in response goes onto child nametags and the pickup label; adult nametags print without a code. If the church has templates, `LabelRenderer` (`src/helpers/LabelRenderer.ts`) turns blocks + a field context into a standalone HTML document; otherwise bundled HTML labels in `B1Checkin/assets/labels/` are used with placeholder substitution.
 
-Barcodes pure-TypeScript encoders द्वारा inline SVG के रूप में generate होते हैं `B1Checkin/src/helpers/barcode.ts` में — Code 39 pattern tables और Code 128 (code set B जिसमें mod-103 checksum है) width tables, plus QR `qrcode` package के via। **ये encoders intentionally B1Admin में duplicate होते हैं** (`LabelEditor.tsx` same tables को inline करता है, एक code comment में noted) ताकि designer previews pixel-faithful हों kiosk output को; एक change को दोनों में mirror किया जाना चाहिए।
+Barcodes are generated as inline SVG by pure-TypeScript encoders in `B1Checkin/src/helpers/barcode.ts` — Code 39 pattern tables and Code 128 (code set B with mod-103 checksum) width tables, plus QR via the `qrcode` package. **These encoders are intentionally duplicated in B1Admin** (`LabelEditor.tsx` inlines the same tables, noted in a code comment) so designer previews are pixel-faithful to kiosk output; a change to one must be mirrored in the other.
 
-Print pipeline (`src/components/PrintUI.tsx`) प्रत्येक HTML label को एक `WebView` में render करता है, `react-native-view-shot` के via JPG में capture करता है, और image URIs को native **printer-helper** Expo module को hand करता है (`B1Checkin/modules/printer-helper/`)। Module `scan()`, `checkInit()`, `printUris()`, और status events को expose करता है, दोनों platforms पर एक provider per brand के साथ:
+The print pipeline (`src/components/PrintUI.tsx`) renders each HTML label in a `WebView`, captures it to JPG via `react-native-view-shot`, and hands the image URIs to the native **printer-helper** Expo module (`B1Checkin/modules/printer-helper/`). The module exposes `scan()`, `checkInit()`, `printUris()`, and status events, with a provider per brand on both platforms:
 
 | Brand | Android | iOS | Notes |
-|---|---|---|---|
-| Brother | `BrotherProvider.kt` (Brother print SDK) | `BrotherProvider.swift` (`BRLMPrinterKit.xcframework`) | QL-series network printers (QL-800/810W/820NWB/1100/1110NWB…), die-cut 29×90 labels, recommended default |
+|-------|---------|-----|-------|
+| Brother | `BrotherProvider.kt` (Brother print SDK) | `BrotherProvider.swift` (`BRLMPrinterKit.xcframework`) | QL-series network printers (QL-800/810W/820NWB/1100/1110NWB…), die-cut 29×90 labels, the recommended default |
 | Zebra | `ZebraProvider.kt` (Link-OS SDK) | `ZebraProvider.swift` + `ZebraBridge` | Network discovery + TCP/ZPL image printing |
 
-Printer selection `app/printers.tsx` पर lives (network scan `brand~model~ip` entries return करता है; choice AsyncStorage को persist करता है), और `src/helpers/PrinterLog.ts` एक on-device diagnostic log रखता है kiosk header में एक live status dot के through surfaced।
+Printer selection lives at `app/printers.tsx` (network scan returns `brand~model~ip` entries; the choice persists to AsyncStorage), and `src/helpers/PrinterLog.ts` keeps an on-device diagnostic log surfaced through a live status dot in the kiosk header.
 
 ## Guest registration
 
-Check-in के बीच एक person create करने के दो paths:
+Two paths create a person mid-check-in:
 
-- **Kiosk पर** — household screen का "Add guest" `B1Checkin/app/addGuest.tsx` को opens करता है, जो पहले `GET /membership/people/search?term=` के लिए एक existing non-member match को search करता है और अन्यथा `POST /membership/people` के साथ एक create करता है, current household को attach किया जाता है। Guest फिर group assignment के जैसे किसी भी member के रूप में flow करता है।
-- **Self-serve via QR** — जब church setting `enableQRGuestRegistration` पर है (B1Admin के Check-In settings में configured, `GET /membership/settings/public/{churchId}` से read), lookup screen एक QR code display करता है `https://{subdomain}.b1.church/guest-register?serviceId=` को linking करता हुआ। वह B1App page (`src/app/[sdSlug]/(public)/guest-register/page.tsx`) एक visiting family को register करने देता है अपने phone पर anonymous `POST /membership/people/guest-register` endpoint के through, kiosk line को moving रखता है।
+- **At the kiosk** — the household screen's "Add guest" opens `B1Checkin/app/addGuest.tsx`, which first searches `GET /membership/people/search?term=` for an existing non-member match and otherwise creates one with `POST /membership/people`, attached to the current household. The guest then flows through group assignment like any member.
+- **Self-serve via QR** — when the church setting `enableQRGuestRegistration` is on (configured in B1Admin's Check-In settings, read from `GET /membership/settings/public/{churchId}`), the kiosk lookup screen shows a QR code linking to `https://{subdomain}.b1.church/guest-register?serviceId=`. That B1App page (`src/app/[sdSlug]/(public)/guest-register/page.tsx`) lets a visiting family register themselves on their own phone through the anonymous `POST /membership/people/guest-register` endpoint, keeping the kiosk line moving.
 
-## संबंधित पृष्ठ
+## Related Pages
 
-- [Attendance Endpoints](../api/endpoints/attendance) -- Campuses, services, sessions, visits, और visit sessions के लिए पूरी REST surface
-- [Membership Endpoints](../api/endpoints/membership) -- People, households, और groups
-- [Webhooks](../api/webhooks) -- `session.created`, `attendance.recorded`, और `attendance.checkout` events
-- [Module Structure](../api/module-structure) -- Server-side कैसे attendance module organize किया जाता है
+- [Attendance Endpoints](../api/endpoints/attendance) -- Full REST surface for campuses, services, sessions, visits, and visit sessions
+- [Membership Endpoints](../api/endpoints/membership) -- People, households, and groups
+- [Webhooks](../api/webhooks) -- The `session.created`, `attendance.recorded`, and `attendance.checkout` events
+- [Module Structure](../api/module-structure) -- How the attendance module is organized server-side

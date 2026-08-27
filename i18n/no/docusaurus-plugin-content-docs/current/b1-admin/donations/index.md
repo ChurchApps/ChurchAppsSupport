@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Donasjoner"
 ---
 
@@ -6,48 +6,35 @@ title: "Donasjoner"
 
 <div class="article-intro">
 
-Donations-seksjonen i B1 Admin gir alt du trenger for å administrere kirkens giving. Fra registrering av ukentlige offringer til generering av årsavslutninger skatteutsagn, er alle donasjonsverktøyene dine organisert på ett sted slik at du kan holde oversikt over kirkens økonomi.
+Donasjoner delen i B1 Admin gir alt du trenger for å administrere kirkens givergang. Fra registrering av ukentlige gave til generering av årlig slutt skatteoppgaver, alle givergang verktøyer dine er organisert på ett sted slik at du kan holde deg oppdatert på kirkens økonomi.
 
 </div>
 
-## Underavdelinger
+## Under seksjoner
 
-Du finner følgende sider i Donations-seksjonen:
+Du vil finne følgende sider i donasjoner delen:
 
-### Summary
+### Oversikt
 
-**Summary**-siden gir deg en visuell oversikt over all givingsaktivitet. Den viser diagrammer og filtrerte rapporter slik at du raskt kan se donasjonstrender på tvers av kirken. Se [Donation Reports](donation-reports.md) for mer detaljer om bruk av sammendrag og rapportverktøy.
+Oversikts siden gir et visuelt oversyn over all givergang aktivitet.
 
-### Batches
+### Partier
 
-**[Batches](batches.md)** lar deg gruppere donasjoner sammen -- for eksempel alle sjekker og kontanter samlet under et søndags offering. Hvert batch sporer antallet donasjoner og totalbeløp for enkel avstemming.
+Partier lar deg gruppere donasjoner sammen.
 
-### Funds
+### Fond
 
-**[Funds](funds.md)** kategoriserer donasjoner dine etter formål. Vanlige eksempler inkluderer General Fund, Building Fund, og Missions. Du kan merke hvert fond som skattefradragsberettiget eller ikke.
+Fond kategoriserer donasjoner etter formål.
 
-### Statements
+### Uttalelser
 
-**[Statements](giving-statements.md)**-siden genererer årsavslutnings givingsutsagn for donnorene dine. Du kan laste ned individuelle CSV-filer eller skrive ut alle utsagn på en gang.
+Uttalelse siden genererer årlig sluttgivergang uttalelser for donorene dine.
 
-### Stripe Import
+### Stripe import
 
-Hvis du aksepterer nettdonasjoner gjennom Stripe, lar **[Stripe Import](stripe-import.md)**-verktøyet deg trekke disse transaksjonene inn i B1 Admin slik at alt er i ett system.
+Hvis du godtar online donasjoner gjennom Stripe, kan Stripe import verktøyet lar deg trekke disse transaksjonene inn i B1 Admin.
 
-## Nettgiving
+## Online givergang
 
-B1 Admin integrerer med **Stripe** og **PayPal** for å akseptere nettdonasjoner. Når det er konfigurert, kan medlemmer gi gjennom B1.church-siden din og disse donasjonen vises automatisk i dine oppføringer. Se [Online Giving Setup](online-giving-setup.md) for å komme i gang.
+B1 Admin integreres med Stripe og PayPal for å godta online donasjoner.
 
-:::tip
-Hvis du er ny for donasjoner i B1 Admin, start med [å sette opp fondene dine](funds.md), deretter [opprett ditt første batch](batches.md) og [registrer donasjoner](recording-donations.md) inn i det.
-:::
-
-## Neste steg
-
-- [Recording Donations](recording-donations.md) -- angi donasjoner inn i et batch
-- [Donation Batches](batches.md) -- organiser donasjoner inn i grupper
-- [Managing Funds](funds.md) -- sett opp og administrer givingskategorier
-- [Giving Statements](giving-statements.md) -- generer skatteutsagn for donnorer
-- [Online Giving Setup](online-giving-setup.md) -- koble Stripe eller PayPal
-- [Stripe Import](stripe-import.md) -- importer nettransaksjoner
-- [Donation Reports](donation-reports.md) -- se og filtrer donasjonssammendelinger

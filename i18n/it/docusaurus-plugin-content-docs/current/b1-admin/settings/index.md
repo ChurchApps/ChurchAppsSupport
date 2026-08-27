@@ -1,48 +1,48 @@
 ---
-title: "Impostazioni"
+title: "Settings"
 ---
 
 # Impostazioni
 
 <div class="article-intro">
 
-La sezione Impostazioni è dove configuri l'account della tua chiesa, il branding e le opzioni amministrative in B1 Admin. Da qui puoi gestire tutto dalla tua denominazione della chiesa e dal sottodominio alle autorizzazioni degli utenti e alla configurazione dell'app mobile.
+The Impostazioni section is where you configure your church's Account, branding, and administrative options in B1 Admin. From here you can manage everything from your church name and subdomain Per Utente Permessi and mobile app Configurazione.
 
 </div>
 
-## Cosa Troverai Qui
+## What You Will Trova Here
 
-L'area Impostazioni è organizzata nelle seguenti sottosezioni:
+The Impostazioni area is organized into the following sub-sections:
 
-1. **Impostazioni** -- Configura le informazioni di base della tua chiesa, il branding e il sottodominio. Vedi [Impostazioni della Chiesa](./church-settings.md) per i dettagli.
-2. **Campus** -- Aggiungi e gestisci più sedi fisiche per la tua chiesa. Vedi [Campus](./campuses.md) per i dettagli.
-3. **Campi Personalizzati** -- Definisci i tuoi campi per tracciare su persone (una data, un numero, una risposta sì/no, o un elenco a scelta), quindi compilali su profili e cerca su di essi. Vedi [Campi Personalizzati](./custom-fields.md) per i dettagli.
-3. **App Mobile** -- Configura e personalizza le schede di navigazione che appaiono nel [PWA B1.church](/docs/b1-church/getting-started/installing-pwa) per i tuoi membri. Vedi [Impostazioni App Mobile](./mobile-app.md) per i dettagli.
-4. **Modelli Email** -- Salva il contenuto email riutilizzabile per inviare manualmente o da un flusso di lavoro. Vedi [Modelli Email](./email-templates.md) per i dettagli.
-5. **Admin Server** -- Accedi agli strumenti di amministrazione avanzati per gestire le impostazioni a livello di server della tua chiesa.
-6. **Moduli** -- Crea e gestisci moduli personalizzati per raccogliere informazioni dalla tua congregazione.
+1. **Impostazioni** -- Configure your church's basic information, branding, and subdomain. See [Church Settings](./church-settings.md) for details.
+2. **Campuses** -- Aggiungi and manage multiple physical locations for your church. Once created, campuses appear on person Profili, in Frequenza Configurazione, and in the Demographics dashboard. See [Campuses](./campuses.md) for details.
+3. **Custom Fields** -- Define your own fields Per track on people (a Data, number, Sì/No answer, or pick-list), then fill them in on Profili and Cerca on them. See [Custom Fields](./custom-fields.md) for details.
+3. **Mobile Apps** -- Set up and customize the navigation tabs that appear in the [B1.church PWA](/docs/b1-church/getting-started/installing-pwa) for your Membri (the same tabs are also rendered by the deprecated B1 Mobile native app). See [Mobile App Settings](./mobile-app.md) for details.
+4. **Email Templates** -- Salva reusable email content for sending manually or from a workflow. See [Email Templates](./email-templates.md) for details.
+5. **Server Admin** -- Access advanced administration tools for managing your church's server-level Impostazioni.
+6. **Forms** -- Crea and manage custom forms for collecting information from your congregation.
 
-## La Pagina Impostazioni Principale
+## The Main Impostazioni Pagina
 
-Quando apri per la prima volta la pagina Impostazioni, vedrai il **nome della chiesa** e il **sottodominio** visualizzati nella parte superiore. L'intestazione fornisce pulsanti di accesso rapido per le attività comuni:
+When you first Apri the Impostazioni page, you will see your **church name** and **subdomain** displayed at the top. The header provides quick-access buttons for common tasks:
 
-- **Modifica Impostazioni** -- Aggiorna il nome della chiesa, l'indirizzo, le informazioni di contatto e il branding.
-- **App Mobile** -- Vai direttamente alla configurazione dell'app mobile.
-- **Ruoli** -- Gestisci i ruoli e le autorizzazioni degli utenti per il tuo team.
-- **Importazione/Esportazione** -- Trasferisci i dati tra i sistemi usando lo strumento di importazione/esportazione.
+- **Modifica Impostazioni** -- Update your church's name, address, contact information, and branding.
+- **Mobile Apps** -- Jump directly Per mobile app Configurazione.
+- **Ruoli** -- Manage Utente Ruoli and Permessi for your team.
+- **Importa/Esporta** -- Transfer data between systems using the Importa/Esporta tool.
 
 :::tip
-Inizia configurando il nome della chiesa e il branding sotto **Modifica Impostazioni**, quindi configura i [Ruoli](./roles-permissions.md) per invitare i membri del team con il livello di accesso corretto.
+Start by configuring your church name and branding under **Modifica Impostazioni**, then set up [Roles](./roles-permissions.md) Per invite your team Membri with the right level of access.
 :::
 
 :::info
-Per informazioni su come i tuoi dati sono protetti, vedi [Sicurezza dei Dati](./data-security.md).
+For information about how your data is protected, see [Data Security](./data-security.md).
 :::
 
-## Passaggi Successivi
+## Avanti Steps
 
-- [Impostazioni della Chiesa](./church-settings.md) -- Configura le informazioni e il branding della chiesa
-- [Campus](./campuses.md) -- Aggiungi sedi per le chiese multisede
-- [Ruoli e Autorizzazioni](./roles-permissions.md) -- Configura i ruoli degli utenti e il controllo di accesso
-- [Impostazioni App Mobile](./mobile-app.md) -- Personalizza le schede di navigazione mostrate nel PWA B1.church
-- [Sicurezza dei Dati](./data-security.md) -- Scopri come i tuoi dati sono protetti
+- [Church Settings](./church-settings.md) -- Configure your church information and branding
+- [Campuses](./campuses.md) -- Aggiungi locations for multi-site churches
+- [Roles & Permissions](./roles-permissions.md) -- Set up Utente Ruoli and access control
+- [Mobile App Settings](./mobile-app.md) -- Customize the navigation tabs shown in the B1.church PWA
+- [Data Security](./data-security.md) -- Learn how your data is protected

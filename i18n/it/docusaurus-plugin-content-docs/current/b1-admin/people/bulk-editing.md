@@ -1,187 +1,200 @@
 ---
-title: "Modifica in blocco delle persone"
+title: "Bulk Editing People"
 ---
 
-# Modifica in blocco delle persone
+# Bulk Editing People
 
 <div class="article-intro">
-La modifica in blocco ti consente di aggiornare più persone contemporaneamente, risparmiando tempo quando si effettua la stessa modifica a molti individui. Puoi aggiornare lo stato di appartenenza, lo stato civile, il genere, le preferenze di opt-out e le appartenenze ai gruppi in un'unica operazione.
+Bulk editing allows you Per update multiple people at once, saving Ora when making the same change Per many individuals. You can update membership status, marital status, gender, opt-out preferences, and Gruppo memberships in a single operation.
 </div>
 
 <div class="prereqs">
-<h4>Prima di iniziare</h4>
+<h4>Prima di Iniziare</h4>
 
-- Hai bisogno del permesso per gestire i dati delle persone. Vedi [Ruoli e permessi](./roles-permissions.md) per i dettagli.
-- Dovresti aver già aggiunto o importato le persone che vuoi modificare. Vedi [Aggiungere persone](./adding-people.md) se necessario.
+- You need Permesso Per manage people data. See [Roles & Permissions](./roles-permissions.md) for details.
+- You should have already added or imported the people you want Per Modifica. See [Adding People](./adding-people.md) if needed.
 </div>
 
-## Selezionare persone per la modifica in blocco
+## Selecting People for Bulk Editing
 
-1. Naviga su **Persone** in B1 Admin
-2. Usa la ricerca o gli strumenti di filtro per trovare le persone che vuoi aggiornare
-3. Seleziona le caselle accanto al nome di ogni persona per selezionarle
-   - Puoi selezionare le persone individualmente
-   - Oppure usa la casella di selezione nell'intestazione per selezionare tutte le persone visibili nella pagina corrente
-4. Una volta selezionata almeno una persona, apparirà il pulsante **Azioni in blocco**
+1. Navigate Per **People** in B1 Admin
+2. Use the Cerca or filter tools Per Trova the people you want Per update
+3. Check the boxes Avanti Per each person's name Per Seleziona them
+   - You can Seleziona people individually
+   - Or use the header checkbox Per Seleziona all visible people on the current page
+4. Once you have selected at least one person, the **Bulk Actions** button will appear
 
 :::tip
-Se devi aggiornare un grande gruppo di persone in base a criteri specifici, usa la funzione [Ricerca IA](./ai-search.md) o i filtri per restringere prima il tuo elenco, quindi seleziona tutte le persone corrispondenti.
+If you need Per update a large Gruppo of people based on specific criteria, use the [AI Search](./ai-search.md) feature or filters Per narrow down your list first, then Seleziona all matching people.
 :::
 
-## Azioni in blocco disponibili
+## Disponibile Bulk Actions
 
-Il menu **Azioni in blocco** fornisce diverse opzioni:
+The **Bulk Actions** menu provides several options:
 
-### Aggiorna stato di appartenenza
+### Update Membership Status
 
-Aggiorna lo stato di appartenenza per tutte le persone selezionate:
+Update the membership status for all selected people:
 
-1. Clicca su **Azioni in blocco** → **Imposta stato di appartenenza**
-2. Scegli il nuovo stato:
-   - **Visitatore** -- Partecipanti per la prima volta o occasionali
-   - **Partecipante regolare** -- Partecipanti frequenti che non sono membri
-   - **Membro** -- Membri ufficiali della chiesa
-   - **Staff** -- Membri dello staff della chiesa
-   - **Inattivo** -- Persone che non partecipano più
-3. Scegli la modalità di aggiornamento:
-   - **Sovrascrivi tutto** -- Sostituisci lo stato corrente per tutte le persone selezionate
-   - **Aggiorna solo vuoti** -- Imposta lo stato solo per le persone che non ne hanno uno
-4. Clicca su **Aggiorna**
+1. Fai clic **Bulk Actions** → **Set Membership Status**
+2. Scegli the new status:
+   - **Visitor** -- First-Ora or occasional attendees
+   - **Regular Attendee** -- Frequent attendees who aren't Membri
+   - **Membro** -- Official church Membri
+   - **Staff** -- Church Staff Membri
+   - **Inattivo** -- People who are No longer attending
+3. Scegli update mode:
+   - **Overwrite all** -- Replace the current status for all selected people
+   - **Only update empty** -- Only set the status for people who don't have one
+4. Fai clic **Update**
 
-### Aggiorna stato civile
+### Update Marital Status
 
-Aggiorna lo stato civile in blocco:
+Update marital status in bulk:
 
-1. Clicca su **Azioni in blocco** → **Imposta stato civile**
-2. Seleziona il nuovo stato:
-   - **Sconosciuto**
-   - **Singolo**
-   - **Sposato**
-   - **Divorziato**
-   - **Vedovo**
-3. Scegli se sovrascrivere i valori esistenti o aggiornare solo i campi vuoti
-4. Clicca su **Aggiorna**
+1. Fai clic **Bulk Actions** → **Set Marital Status**
+2. Seleziona the new status:
+   - **Unknown**
+   - **Single**
+   - **Married**
+   - **Divorced**
+   - **Widowed**
+3. Scegli whether Per overwrite existing values or only update empty fields
+4. Fai clic **Update**
 
-### Aggiorna genere
+### Update Gender
 
-Aggiorna le informazioni sul genere per più persone:
+Update gender information for multiple people:
 
-1. Clicca su **Azioni in blocco** → **Imposta genere**
-2. Seleziona il valore:
-   - **Non specificato**
-   - **Maschio**
-   - **Femmina**
-3. Scegli la modalità di aggiornamento (sovrascrivi tutto o solo vuoti)
-4. Clicca su **Aggiorna**
+1. Fai clic **Bulk Actions** → **Set Gender**
+2. Seleziona the value:
+   - **Unspecified**
+   - **Male**
+   - **Female**
+3. Scegli update mode (overwrite all or only empty)
+4. Fai clic **Update**
 
-### Aggiorna stato di opt-out
+### Update Opt-Out Status
 
-Controlla se le persone hanno scelto di non ricevere comunicazioni:
+Control whether people have opted out of communications:
 
-1. Clicca su **Azioni in blocco** → **Imposta opt-out**
+1. Fai clic **Bulk Actions** → **Set Opted Out**
 2. Scegli:
-   - **No** -- Consenti comunicazioni (rimuovi opt-out)
-   - **Sì** -- Blocca comunicazioni (imposta opt-out)
-3. Scegli la modalità di aggiornamento
-4. Clicca su **Aggiorna**
+   - **No** -- Allow communications (Rimuovi opt-out)
+   - **Sì** -- Block communications (set opt-out)
+3. Scegli update mode
+4. Fai clic **Update**
 
 :::warning
-Fai attenzione quando cambi lo stato di opt-out. Le persone che hanno esplicitamente scelto di non ricevere comunicazioni non dovrebbero riceverle a meno che non abbiano dato un nuovo consenso.
+Be careful when changing opt-out status. People who have explicitly opted out should not receive communications unless they have given new consent.
 :::
 
-### Aggiungi al gruppo
+### Set Custom Field
 
-Aggiungi tutte le persone selezionate a uno o più gruppi:
+Set a Sì/No [custom field](../settings/custom-fields.md) value for all selected people at once:
 
-1. Clicca su **Azioni in blocco** → **Aggiungi al gruppo**
-2. Cerca e seleziona il/i gruppo/i a cui aggiungere le persone
-3. Puoi selezionare più gruppi per aggiungere persone a tutti
-4. Clicca su **Aggiungi ai gruppi**
-
-Ogni persona verrà aggiunta come membro regolare del/i gruppo/i selezionato/i. Puoi successivamente promuovere individui a leader di gruppo se necessario dalla pagina [Membri del gruppo](../groups/group-members.md).
-
-### Rimuovi dal gruppo
-
-Rimuovi tutte le persone selezionate da uno o più gruppi:
-
-1. Clicca su **Azioni in blocco** → **Rimuovi dal gruppo**
-2. Cerca e seleziona il/i gruppo/i da cui rimuovere le persone
-3. Puoi selezionare più gruppi
-4. Clicca su **Rimuovi dai gruppi**
+1. Fai clic **Bulk Actions** → **Set Custom Field**.
+2. Scegli the Sì/No custom field you want Per set.
+3. Scegli the value (**Sì** or **No**) Per apply.
+4. Fai clic **Update**.
 
 :::info
-Questa azione rimuove solo le persone dai gruppi specificati. Non elimina i loro record personali.
+Only Sì/No custom fields are Disponibile for this bulk action. Per set other field types, Modifica each person individually.
 :::
 
-### Elimina persone
+### Aggiungi Per Gruppo
 
-Elimina definitivamente le persone selezionate dal tuo database della chiesa:
+Aggiungi all selected people Per one or more Gruppi:
 
-1. Clicca su **Azioni in blocco** → **Elimina**
-2. Rivedi l'elenco delle persone che verranno eliminate
-3. Digita **DELETE** nel campo di conferma
-4. Clicca su **Conferma eliminazione**
+1. Fai clic **Bulk Actions** → **Aggiungi Per Gruppo**
+2. Cerca for and Seleziona the Gruppo(s) Per Aggiungi people Per
+3. You can Seleziona multiple Gruppi Per Aggiungi people Per all of them
+4. Fai clic **Aggiungi Per Gruppi**
+
+Each person will be added as a regular Membro of the selected Gruppo(s). You can later promote individuals Per Gruppo leaders if needed from the [Group Members](../groups/group-members.md) page.
+
+### Rimuovi from Gruppo
+
+Rimuovi all selected people from one or more Gruppi:
+
+1. Fai clic **Bulk Actions** → **Rimuovi from Gruppo**
+2. Cerca for and Seleziona the Gruppo(s) Per Rimuovi people from
+3. You can Seleziona multiple Gruppi
+4. Fai clic **Rimuovi from Gruppi**
+
+:::info
+This action only removes people from the specified Gruppi. It does not Elimina their person records.
+:::
+
+### Elimina People
+
+Permanently Elimina the selected people from your church database:
+
+1. Fai clic **Bulk Actions** → **Elimina**
+2. Review the list of people who will be deleted
+3. Digita **Elimina** in the confirmation field
+4. Fai clic **Confirm Elimina**
 
 :::danger
-L'eliminazione delle persone è permanente e non può essere annullata. Questo rimuoverà tutti i loro dati inclusi:
-- Informazioni personali
-- Appartenenze ai gruppi
-- Record di presenza
-- Cronologia delle donazioni
-- Invii di moduli
+Deleting people is permanent and cannot be undone. This will Rimuovi all their data including:
+- Personal information
+- Gruppo memberships
+- Frequenza records
+- Donazione history
+- Modulo submissions
 
-Usa questa azione solo se sei assolutamente certo di voler rimuovere queste persone dal tuo sistema.
+Only use this action if you are absolutely certain you want Per Rimuovi these people from your system.
 :::
 
-## Risultati della modifica in blocco
+## Bulk Modifica Results
 
-Dopo aver completato un'azione in blocco, vedrai un riepilogo che mostra:
+After completing a bulk action, you'll see a summary showing:
 
-- **Totale selezionato** -- Quante persone sono state incluse nell'operazione
-- **Aggiornate con successo** -- Quanti record sono stati modificati
-- **Fallite** -- Eventuali record che non sono stati aggiornati (se applicabile)
-- **Non modificate** -- Record che non necessitavano di modifiche (ad es., quando si usa la modalità "aggiorna solo vuoti")
+- **Total selected** -- How many people were included in the operation
+- **Successfully updated** -- How many records were changed
+- **Failed** -- Any records that couldn't be updated (if applicable)
+- **Unchanged** -- Records that didn't need changes (e.g., when using "only update empty" mode)
 
-Se alcuni aggiornamenti sono falliti, vedrai i dettagli dell'errore che spiegano il motivo.
+If any updates failed, you'll see error details explaining why.
 
-## Migliori pratiche
+## Best Practices
 
-- **Inizia in piccolo** -- Testa le operazioni in blocco su pochi record prima per assicurarti di effettuare le modifiche corrette
-- **Usa i filtri** -- Restringi il tuo elenco con filtri o ricerca IA prima di selezionare le persone per assicurarti di aggiornare solo gli individui giusti
-- **Controlla due volte le selezioni** -- Rivedi le persone selezionate prima di applicare modifiche in blocco
-- **Usa la modalità "aggiorna solo vuoti"** -- Quando vuoi compilare dati mancanti senza sovrascrivere informazioni esistenti
-- **Documenta le modifiche importanti** -- Conserva note sugli aggiornamenti in blocco nel caso tu debba farvi riferimento in seguito
-- **Coordina con il tuo team** -- Informa gli altri amministratori quando effettui grandi modifiche in blocco
+- **Start small** -- Test bulk operations on a few records first Per ensure you're making the right changes
+- **Use filters** -- Narrow your list with filters or AI Cerca before selecting people Per ensure you're only updating the right individuals
+- **Double-check selections** -- Review the selected people before applying bulk changes
+- **Use "only update empty" mode** -- When you want Per fill in missing data without overwriting existing information
+- **Document major changes** -- Keep notes about bulk updates in case you need Per reference them later
+- **Coordinate with your team** -- Let other administrators know when making large bulk changes
 
-## Casi d'uso comuni
+## Common Use Cases
 
-### Aggiornamento di nuovi membri
+### Updating New Membri
 
-Dopo un corso di appartenenza, aggiorna tutti i partecipanti allo stato di Membro:
+After a membership class, update all attendees Per Membro status:
 
-1. Cerca le persone che hanno partecipato al corso
-2. Selezionale tutte
-3. Usa **Azioni in blocco** → **Imposta stato di appartenenza** → **Membro**
+1. Cerca for the people who attended the class
+2. Seleziona them all
+3. Use **Bulk Actions** → **Set Membership Status** → **Membro**
 
-### Organizzazione di piccoli gruppi
+### Organizing Small Gruppi
 
-Aggiungi più persone a un nuovo piccolo gruppo:
+Aggiungi multiple people Per a new small Gruppo:
 
-1. Cerca le persone che vuoi nel gruppo
-2. Selezionale
-3. Usa **Azioni in blocco** → **Aggiungi al gruppo** e seleziona il piccolo gruppo
+1. Cerca for the people you want in the Gruppo
+2. Seleziona them
+3. Use **Bulk Actions** → **Aggiungi Per Gruppo** and Seleziona the small Gruppo
 
-### Pulizia dei dati
+### Cleaning Up Data
 
-Compila lo stato civile mancante per le coppie sposate:
+Fill in missing marital status for married couples:
 
-1. Filtra per persone sposate (usando informazioni sulla famiglia)
-2. Seleziona quelle con stato civile vuoto
-3. Usa **Azioni in blocco** → **Imposta stato civile** → **Sposato** → **Aggiorna solo vuoti**
+1. Filter for people who are married (using household information)
+2. Seleziona those with blank marital status
+3. Use **Bulk Actions** → **Set Marital Status** → **Married** → **Only update empty**
 
-## Articoli correlati
+## Articoli Correlati
 
-- [Ricerca di persone](./searching-people.md) -- Trova persone da modificare
-- [Ricerca IA](./ai-search.md) -- Usa il linguaggio naturale per trovare gruppi specifici di persone
-- [Membri del gruppo](../groups/group-members.md) -- Gestisci l'appartenenza ai gruppi
-- [Esportazione di dati](./exporting-data.md) -- Esporta dati delle persone prima di effettuare modifiche in blocco
+- [Searching People](./searching-people.md) -- Trova people Per Modifica
+- [AI Search](./ai-search.md) -- Use natural language Per Trova specific Gruppi of people
+- [Group Members](../groups/group-members.md) -- Manage Gruppo membership
+- [Exporting Data](./exporting-data.md) -- Esporta people data before making bulk changes

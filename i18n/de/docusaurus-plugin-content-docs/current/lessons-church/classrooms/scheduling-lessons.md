@@ -1,23 +1,7 @@
+﻿---
+title: "Lektionen einplanen"
 ---
-title: "Lektionen planen"
----
 
-# Lektionen planen
+# Lektionen einplanen
 
-<div class="article-intro">
-
-Klassenzimmer können Lektionen aus Lessons.church planen.
-
-</div>
-
-## Planen einer Lektion
-
-1. Öffnen Sie das Klassenzimmer
-2. Klicken Sie auf "Lektion planen"
-3. Wählen Sie eine Lektion aus
-4. Stellen Sie das Planungsdatum ein
-5. Speichern Sie den Plan
-
-## Anzeigen von geplanten Lektionen
-
-Geplante Lektionen werden im Klassenzimmer-Kalender angezeigt.
+Informationen zu Lektionen einplanen in der ChurchApps-Architektur und Dokumentation.

@@ -1,101 +1,101 @@
 ---
-title: "Sicurezza del Check-In"
+title: "Sicurezza Check-In"
 ---
 
-# Sicurezza del Check-In
+# Check-In Safety
 
 <div class="article-intro">
 
-B1 include una serie di controlli di sicurezza dei bambini per il check-in: limiti di capacità della stanza e rapporti tra volontari e bambini, guida sull'età e il grado al chiosco, tipi di check-in che distinguono membri, ospiti e volontari, e una lista di prelievo fidata per famiglia che viene verificata al checkout. Questa pagina descrive come configurare ogni funzione di sicurezza in B1 Admin.
+B1 includes a set of child-safety controls for check-in: Stanza Capacità limits and Volontario-Per-child ratios, age and grade guidance at the kiosk, check-in types that distinguish Membri, Ospiti, and Volontari, and a trusted-pickup list per household that is verified at check-out. This page covers how Per configure each safety feature in B1 Admin.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di iniziare</h4>
+<h4>Prima di Iniziare</h4>
 
-- Configura la tua [struttura di presenze](setup.md) e [chioschi di check-in](check-in.md)
-- Le stanze sono [gruppi](../groups/creating-groups.md) collegati agli orari di servizio — le impostazioni di sicurezza qui sotto vivono sul gruppo
-- Page-a-parent e broadcast di emergenza richiedono un provider di messaggistica connesso ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream), o Mutual Ministry)
+- Set up your [attendance structure](setup.md) and [check-in kiosks](check-in.md)
+- Stanze are [groups](../groups/creating-groups.md) linked Per Servizio times — the safety Impostazioni below live on the Gruppo
+- Pagina-a-parent and emergency broadcast require a connected texting provider ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream), or Mutual Ministry)
 
 </div>
 
-## Capacità della stanza e chiusura di una stanza
+## Stanza Capacità and Closing a Stanza
 
-Ogni stanza di check-in (gruppo) può applicare i suoi limiti. Apri il gruppo, fai clic sull'**icona della matita** per modificare le sue impostazioni, e trova la sezione **Capacità di check-in**:
+Each check-in Stanza (Gruppo) can enforce its own limits. Apri the Gruppo, Fai clic the **icona della matita** Per Modifica its Impostazioni, and Trova the **Check-In Capacità** section:
 
-- **Capacità** -- Il numero massimo di persone che possono essere registrate in questa stanza in una volta. Quando la stanza è piena, il check-in viene bloccato e il chiosco nomina la stanza piena.
-- **Capacità ospiti** -- Un limite separato opzionale su quanti ospiti la stanza può contenere.
-- **Chiuso per check-in** -- Impostato a **Sì** per interrompere tutti i check-in in questa stanza immediatamente (ad esempio, quando una classe è cancellata o una stanza non è disponibile). I checkout funzionano comunque.
+- **Capacità** -- The maximum number of people who can be checked in Per this Stanza at once. When the Stanza is full, check-in Per it is blocked and the kiosk names the full Stanza.
+- **Ospite Capacità** -- An Facoltativo separate cap on how many Ospiti the Stanza can hold.
+- **Closed for Check-In** -- Set Per **Sì** Per stop all check-ins Per this Stanza immediately (for example, when a class is cancelled or a Stanza is Non Disponibile). Check-outs still work.
 
-## Rapporti volontari
+## Volontario Ratios
 
-La stessa sezione **Capacità di check-in** sul gruppo include regole di staffing:
+The same **Check-In Capacità** section on the Gruppo includes staffing rules:
 
-- **Bambini per volontario** -- Il numero massimo di bambini che ogni volontario registrato può coprire (ad es. 5 significa un volontario ogni cinque bambini).
-- **Volontari minimi** -- Il numero più piccolo di volontari che devono essere registrati prima che i bambini possano fare il check-in alla stanza.
+- **Children per Volontario** -- The maximum number of children each checked-in Volontario can cover (e.g. 5 means one Volontario per five children).
+- **Minimum Volontari** -- The smallest number of Volontari that must be checked in before children can check in Per the Stanza.
 
-I volontari contano verso queste regole quando fanno il check-in con il tipo **Volontario** al chiosco (vedi [Tipi di check-in](#check-in-types) sotto).
+Volontari count toward these rules when they check in with the **Volontario** Digita at the kiosk (see [Check-In Types](#check-in-types) below).
 
-### Scelta tra Avviso e Blocco
+### Choosing Warn vs. Block
 
-La rigidità con cui vengono applicati i rapporti è un'impostazione a livello di chiesa:
+How strictly ratios are enforced is a church-wide setting:
 
-1. In B1 Admin, vai a **Impostazioni > Gestisci chiesa** e apri il riquadro **Check-In**.
-2. Imposta **Applicazione del rapporto volontari**:
-   - **Avviso (consenti con conferma)** -- Il chiosco mostra un avviso quando una stanza è oltre il rapporto o al di sotto dei suoi volontari minimi, e un membro dello staff può confermare per procedere comunque. Questo è il valore predefinito.
-   - **Blocco (blocca il check-in)** -- Il check-in alla stanza viene rifiutato fino a quando non vengono registrati abbastanza volontari.
+1. In B1 Admin, go Per **Impostazioni > Manage Church** and Apri the **Check-In** tile.
+2. Set **Volontario Ratio Enforcement**:
+   - **Warn (allow with confirmation)** -- The kiosk shows a warning when a Stanza is over ratio or under its minimum Volontari, and a Staff Membro can confirm Per proceed anyway. This is the default.
+   - **Block (prevent check-in)** -- Check-in Per the Stanza is refused until enough Volontari are checked in.
 
 :::info
-La capacità e la chiusura per check-in sono sempre limiti rigidi — la scelta avviso/blocco si applica solo ai rapporti di volontari.
+Capacità and Closed for Check-In are always hard limits — the warn/block choice applies only Per Volontario ratios.
 :::
 
-## Tipi di check-in
+## Check-In Types
 
-Ogni check-in registra se la persona è un **Membro**, **Ospite** o **Volontario**. Il tipo viene scelto con i chip sulla schermata della famiglia del chiosco (Membro è il valore predefinito). I tipi alimentano le regole di sicurezza — i volontari forniscono copertura di rapporto, e gli ospiti contano rispetto alla capacità degli ospiti della stanza.
+Every check-in records whether the person is a **Membro**, **Ospite**, or **Volontario**. The Digita is chosen with chips on the kiosk household screen (Membro is the default). Types feed the safety rules — Volontari provide ratio coverage, and Ospiti count against the Stanza's Ospite Capacità.
 
-## Guida sull'età e grado della stanza
+## Age and Grade Stanza Guidance
 
-Puoi dare a ogni stanza limiti di età o grado in modo che il chiosco guidi le famiglie verso stanze appropriate:
+You can give each Stanza age or grade bounds so the kiosk guides families Per appropriate Stanze:
 
-- Sulle impostazioni del gruppo, usa la sezione **Età e grado** per impostare l'età minima/massima (anni e mesi) e/o il grado per la stanza.
-- Al chiosco, le stanze per cui un bambino si qualifica sono evidenziate e le stanze per cui non si qualifica sono attenuate. Una stanza attenuata può comunque essere scelta con una conferma dello staff — la guida non blocca mai.
+- On the Gruppo's Impostazioni, use the **Age & Grade** section Per set the minimum/maximum age (years and months) and/or grade for the Stanza.
+- At the kiosk, Stanze a child qualifies for are highlighted and Stanze they don't are dimmed. A dimmed Stanza can still be chosen with a Staff confirmation — the guidance never hard-blocks.
 
-I gradi si rinnovano nella **data di promozione del grado** della tua chiesa:
+Grades roll over on your church's **grade promotion Data**:
 
-1. In B1 Admin, vai a **Impostazioni > Gestisci chiesa** e apri il riquadro di promozione del grado.
-2. Imposta il mese e il giorno in cui la tua chiesa promuove gli studenti (ad esempio, 1 agosto). Le età e i gradi al chiosco sono calcolati a partire dalla data di promozione più recente.
+1. In B1 Admin, go Per **Impostazioni > Manage Church** and Apri the grade promotion tile.
+2. Set the Mese and Giorno your church promotes students (for example, August 1). Ages and grades at the kiosk are computed as of the most recent promotion Data.
 
-## Persone di prelievo fidate e non autorizzate
+## Attendibile and Not-Authorized Pickup People
 
-Ogni famiglia può portare un elenco di persone a cui è - o non è - consentito prelevare i suoi figli.
+Each household can carry a list of people who are — or are not — allowed Per pick up its children.
 
-1. Apri la pagina di una persona in **Persone** e trova la scheda **Prelievo**.
-2. Fai clic su **Aggiungi**. Cerca una persona esistente, o aggiungi qualcuno non nel sistema inserendo il loro **Nome**, **Relazione** e una foto.
-3. Imposta lo **Stato**:
-   - **Fidata** -- Al checkout, questa persona appare come una scheda di prelievo toccabile con la loro foto, rendendo il prelievo verificato veloce.
-   - **Non autorizzato** -- Se qualcuno tenta il prelievo sotto questo nome, il chiosco blocca il checkout con un avviso. Un membro dello staff può ignorare, e l'override viene registrato nel record di presenze.
+1. Apri a person's page in **People** and Trova the **Pickup** card.
+2. Fai clic **Aggiungi**. Cerca for an existing person, or Aggiungi someone not in the system by entering their **Name**, **Relationship**, and a photo.
+3. Set the **Status**:
+   - **Attendibile** -- At check-out, this person appears as a tappable pickup card with their photo, making verified pickup fast.
+   - **Not Authorized** -- If someone attempts pickup under this name, the kiosk blocks check-out with a warning. A Staff Membro can override, and the override is recorded on the Frequenza record.
 
-Fai clic sul chip di stato di una persona sulla scheda per passare da Fidata a Non autorizzato.
+Fai clic a person's status chip on the card Per toggle between Attendibile and Not Authorized.
 
 :::tip
-Aggiungi foto alle persone di prelievo fidate quando possibile — la schermata di checkout mostra la foto in modo che i volontari possono verificare visivamente la persona di fronte a loro.
+Aggiungi photos Per trusted pickup people whenever possible — the check-out screen shows the photo so Volontari can visually verify the person standing in front of them.
 :::
 
-## Page-a-Parent e Emergency Broadcast
+## Pagina-a-Parent and Emergency Broadcast
 
-Entrambe le funzioni inviano messaggi di testo attraverso il provider di messaggistica connesso della tua chiesa — non c'è un servizio SMS integrato, quindi uno dei provider supportati deve essere configurato per primo.
+Both features send text messages through your church's connected texting provider — there is No built-in SMS Servizio, so one of the supported providers must be configured first.
 
-- **Page a parent** -- Da una schermata di checkout presidio del chiosco, lo staff può inviare un SMS ai genitori/tutori di un bambino registrato (ad esempio, "Per favore vieni all'asilo").
-- **Emergency broadcast** -- Dalle impostazioni di amministrazione del chiosco, lo staff può inviare un SMS a tutti i tutori della famiglia registrata per il servizio selezionato in una volta. L'invio richiede di digitare **EMERGENCY** per confermare.
+- **Pagina a parent** -- From a manned kiosk's check-out screen, Staff can text a checked-in child's parents/guardians (for example, "Please come Per the nursery").
+- **Emergency broadcast** -- From the kiosk's admin Impostazioni, Staff can text every checked-in household's guardians for the selected Servizio at once. Sending requires typing **EMERGENCY** Per confirm.
 
-Le persone che hanno disabilitato i testi, o che non hanno un numero di cellulare in archivio, vengono saltate automaticamente — il chiosco riporta quanti messaggi sono stati inviati e quanti sono stati saltati.
+People who have opted out of texts, or who have No mobile number on file, are skipped automatically — the kiosk Rapporti how many messages were sent and how many were skipped.
 
-Vedi la procedura dettagliata dal lato del chiosco in [Check-Out e sicurezza dei bambini](../../b1-checkin/check-in/checking-out).
+See the kiosk-side walkthrough in [Check-Out & Child Safety](../../b1-checkin/check-in/checking-out).
 
-## Articoli correlati
+## Articoli Correlati
 
-- [Check-In](check-in.md) — configurazione del chiosco e hardware
-- [Check-Out e sicurezza dei bambini](../../b1-checkin/check-in/checking-out) — il checkout del chiosco, la verifica del prelievo e i flussi di paging
-- [Creazione di gruppi](../groups/creating-groups.md) — dove vivono le impostazioni della stanza
-- [Impostazioni presenze](setup.md) — servizi, orari di servizio e assegnazioni di stanze
-- [Età minima per messaggi privati](../settings/mobile-app.md#member-directory--messaging-settings) — blocca le nuove conversazioni di messaggi privati con i bambini mantenendoli nella directory
+- [Check-In](check-in.md) — kiosk Configurazione and hardware
+- [Check-Out & Child Safety](../../b1-checkin/check-in/checking-out) — the kiosk check-out, pickup verification, and paging flows
+- [Creating Groups](../groups/creating-groups.md) — where Stanza Impostazioni live
+- [Attendance Setup](setup.md) — Servizi, Servizio times, and Stanza assignments
+- [Minimum Age for Private Messages](../settings/mobile-app.md#member-directory--messaging-settings) — blocks new private-message conversations with children while keeping them in the directory

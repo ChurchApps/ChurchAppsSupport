@@ -1,11 +1,72 @@
-﻿---
+---
 title: "उपलब्धता कैलेंडर"
 ---
 
-# उपलब्धता कैलेंडर
+# Availability Calendar
 
-आपको B1 Admin में कैलेंडर अनुभाग में संपादन पहुंच की आवश्यकता है।
+<div class="article-intro">
 
-## उपलब्धता कैलेंडर खोलना
+The Availability Calendar gives you a bird's-eye view of all room and resource bookings across your church. From here you can see what is scheduled, spot conflicts before they happen, and book a room or resource for any event directly.
 
-B1 Admin में, ऊपरी-बाएं कोने में **सेक्शन मेनू** खोलें और **कैलेंडर** चुनें, फिर **उपलब्धता** चुनें।
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Set up at least one [room or resource](rooms-resources) in the Rooms & Resources section
+- You need edit access to the Calendars section in B1 Admin
+
+</div>
+
+## Opening the Availability Calendar
+
+In B1 Admin, open the **section menu** in the top-left corner and choose **Calendars**, then select **Availability**.
+
+## Reading the Calendar
+
+The calendar displays the current month by default. You can navigate forward and back with the arrows at the top, or switch between month, week, and day views.
+
+Each event is color-coded by booking status:
+
+| Color | Meaning |
+|-------|---------|
+| Green | Approved |
+| Orange | Pending approval |
+| Grey | Blocked out (not available) |
+
+Hovering over an event shows the event title and the room or resource it is attached to.
+
+## Filtering by Room or Resource
+
+Use the **Filter** dropdown at the top left to narrow the calendar to a single room or resource. Select **All Rooms & Resources** to return to the full view.
+
+## Booking a Room or Resource
+
+1. Click the **Book** button in the top right corner of the page.
+2. In the dialog that opens, fill in the event details:
+   - **Title** — the name of the event
+   - **Start** and **End** date/time
+   - **Visibility** — Public or Private
+   - **Rooms** — select one or more rooms to reserve
+   - **Resources** — select one or more resources to reserve
+3. Optionally set **Setup** and **Teardown** times (in minutes). These pad the booking on both ends so the space is reserved for setup and cleanup, even though the event start/end times stay the same.
+4. To repeat the booking, check **Repeats** and configure the recurrence:
+   - **Repeat every** -- set the interval (for example, every 2 weeks).
+   - **Frequency** -- Daily, Weekly, or Monthly. Weekly lets you pick specific day(s) of the week; Monthly lets you pick a fixed day of the month or a relative pattern like "the second Tuesday."
+   - **Ends** -- Never, on a specific date, or after a set number of occurrences.
+5. To specify a custom booking window (different from the event start/end), toggle **Custom Booking Window** and enter the window start and end times. Use this when a room needs to be accessible outside the event's listed hours.
+6. Click **Save** to submit the booking.
+
+:::info
+If the room or resource has an **Approval Group** configured, the booking will appear as **Pending** until a leader of that group approves it. See [Calendar Approvals](approvals) for the approval workflow.
+:::
+
+:::tip
+The calendar will highlight any conflicts before you save. If you see a conflict warning, adjust your times or choose a different room.
+:::
+
+## Related Articles
+
+- [Rooms, Resources & Scheduling](rooms-resources) — set up bookable spaces and equipment
+- [Calendar Approvals](approvals) — approve or deny booking requests
+- [Creating Calendars](creating-calendars) — manage event calendars

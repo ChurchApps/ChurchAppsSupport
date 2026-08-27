@@ -1,43 +1,46 @@
 ---
-title: "Amministrazione"
+title: "Administration"
 ---
 
-# Amministrazione
+# Administration
 
 <div class="article-intro">
 
-L'area amministrazione in Lessons.church è dove i creatori di contenuto e gli amministratori gestiscono la biblioteca di lezioni. Da qui puoi costruire la tua struttura di curriculum, caricare risorse, rivedere le statistiche di utilizzo e connettere provider di contenuto di terze parti.
+The admin area in Lessons.church is where content creators and administrators manage the lesson library. From here you can build out your curriculum structure, Carica resources, review usage statistics, and connect third-party content providers.
 
 </div>
 
 :::warning
-L'accesso amministratore richiede le autorizzazioni appropriate. Se non vedi le opzioni di amministrazione, contatta l'amministratore della tua chiesa per richiedere l'accesso.
+Admin access requires appropriate Permessi. If you do not see the admin options, contact your church administrator Per request access.
 :::
 
-## Cosa Puoi Fare
+## What You Can Do
 
-L'area amministrazione ti dà il controllo completo sui tuoi contenuti:
+The admin area gives you full control over your content:
 
-- **Crea e modifica programmi** -- Configura serie di curriculum di livello superiore.
-- **Gestisci studi** -- Organizza gruppi di lezioni correlate.
-- **Costruisci lezioni** -- Aggiungi lezioni individuali con luoghi, sezioni, ruoli e azioni.
-- **Carica risorse** -- Allega file scaricabili.
-- **Visualizza statistiche** -- Vedi quale contenuto viene scaricato e da chi.
-- **Configura provider** -- Collega provider di curriculum esterni.
-- **Piani dell'anno** -- Pubblica sequenze di settimana 1, 2, 3…
+- **Crea and Modifica programs** -- Set up top-level curriculum series with names, descriptions, images, and slugs.
+- **Manage studies** -- Organize Gruppi of related lessons within each program.
+- **Build lessons** -- Aggiungi individual lessons with venues, sections, Ruoli, and actions.
+- **Carica resources** -- Attach downloadable files (PDFs, activity sheets, images) at the program, study, or lesson level.
+- **Visualizza statistics** -- See which content is being downloaded, by whom, and where.
+- **Configure providers** -- Connect external curriculum providers that use the Apri Lezione Format.
+- **Anno plans** -- Publish week 1, 2, 3… sequences for any curriculum. Churches apply them in B1 Admin.
 
-## Gerarchia di Contenuto
+## Content Hierarchy
 
-Come amministratore, è utile capire come il contenuto è strutturato:
+As an admin, it helps Per understand how content is structured:
 
-1. **Programmi** contengono uno o più studi.
-2. **Studi** contengono una o più lezioni.
-3. **Lezioni** contengono uno o più luoghi (variazioni del gruppo di età).
-4. **Luoghi** contengono sezioni e le sezioni contengono azioni basate sui ruoli.
+1. **Programs** contain one or more studies.
+2. **Studies** contain one or more lessons.
+3. **Lessons** contain one or more venues (age-Gruppo variations).
+4. **Venues** contain sections, and sections contain Ruolo-based actions.
 
-Ogni livello può avere le proprie risorse scaricabili allegate.
+Each level can have its own downloadable resources attached.
 
-## Passaggi Successivi
+## Avanti Steps
 
-- [Gestione delle Lezioni](./managing-lessons.md) -- Costruisci lezioni con luoghi, sezioni e azioni
-- [Gestione dei Piani dell'Anno](./managing-year-plans.md) -- Pubblica sequenze di settimane
+- [Managing Programs](./managing-programs.md) -- Crea and configure programs
+- [Managing Studies](./managing-studies.md) -- Aggiungi studies within a program
+- [Managing Lessons](./managing-lessons.md) -- Build out lessons with venues, sections, and actions
+- [Statistics](./statistics.md) -- Review Scarica and usage data
+- [Third-Party Providers](./third-party-providers.md) -- Connect external curriculum feeds

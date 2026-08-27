@@ -1,52 +1,52 @@
----
-title: "Godkjenninger av kalender"
+﻿---
+title: "Kalender godkjenninger"
 ---
 
-# Godkjenninger av kalender
+# Kalender godkjenninger
 
 <div class="article-intro">
 
-Siden for godkjenninger er der administratorer gjennomgår og handler på ventende booking-forespørsler for rom og ressurser, samt kalenderarrangementer som krever godkjenning før publisering.
+Godkjenningssiden er stedet hvor administratorer gjennomgår og handler på ventende rom- og ressursbookingsforespørsler, samt kalenderhendelser som krever godkjenning før de publiseres.
 
 </div>
 
 <div class="prereqs">
-<h4>Før du begynner</h4>
+<h4>Før du starter</h4>
 
-- Konfigurer rom eller ressurser med en **godkjenningsgruppe** i [Rom & ressurser](rooms-resources)
-- Du må ha tillatelsen **Kalendaradministrator** eller **content.edit**
+- Konfigurer rom eller ressurser med en **Godkjenningsgruppe** i [Rom & ressurser](rooms-resources)
+- Du trenger **Kalender Admin**-tillatelsen eller **content.edit**-tillatelsen
 
 </div>
 
-## Åpne godkjenninger
+## Åpning av godkjenninger
 
-I B1 Admin går du til **Kalendere** og velger **Godkjenninger**. Ventende bookingforespørsler og arrangementer som venter gjennomgang vises her.
+I B1 Admin, gå til **Kalendere** og velg **Godkjenninger**. Ventende bookingsforespørsler og hendelser som venter på gjennomgang er oppført her.
 
-## Bookingforespørsler
+## Bookingsforespørsler
 
-Når en gruppe oppretter et arrangement og ber om et rom eller en ressurs, vises forespørselen i panelet **Bookingforespørsler**. Hver rad viser:
+Når en gruppe oppretter en hendelse og ber om et rom eller ressurs, vises forespørselen i **Bookingsforespørsler**-panelet. Hver rad viser:
 
-- Rommet eller ressursen som bes om
-- Arrangementnavn og dato/tidspunkt
+- Rom eller ressurs som forespørres
+- Hendelsenavn og dato/tid
 - Gruppen som ber om det
 
 ### Konfliktindikatorer
 
-Hvis to forespørsler overlapper for samme rom eller ressurs, vises et konfliktvarselikon. Gjennomgå konfliktende forespørsler nøye før du godkjenner noen av dem.
+Hvis to forespørsler overlapper for samme rom eller ressurs, vises et konfliktvarselikon. Gjennomgå motstridende forespørsler nøye før du godkjenner noen.
 
-### Godkjenne eller avvise
+### Godkjenning eller avvisning
 
-Klikk på **✓** (godkjenn) eller **✗** (avvis)-ikonet på en bookingforespørsel. Gruppen som ber om det blir underrettet om avgjørelsen. Godkjente bookinger blir låst til rommet eller ressursen for arrangementet; avviste bookinger frigjør tidsplassen for andre.
+Klikk **✓** (godkjenn) eller **✗** (avvis) ikonet på enhver bookingsforespørsel. Gruppen som ber om det blir varslet om beslutningen. Godkjente bookinger låses til det rommet eller ressursen for hendelsen; aviste bookinger frigir sporet for andre.
 
-## Ventende arrangementer
+## Ventende hendelser
 
-Hvis arbeidsflyten for kalenderen krever godkjenning av arrangementer før de blir synlige for publikum, vises ventende arrangementer i panelet **Ventende arrangementer**. Godkjenn et arrangement for å publisere det på kalenderen, eller avvis det for å underrette innleveren om at endringer er nødvendige.
+Hvis arbeidsflaten for kalenderen krever godkjenning av hendelse før hendelser blir synlige for offentligheten, vises ventende hendelser i **Ventende hendelser**-panelet. Godkjenn en hendelse for å publisere den til kalenderen, eller avvis den for å varsle innsendingen om at endringer er nødvendig.
 
 :::tip
-Sett opp en godkjenningsgruppe på et rom i [Rom & ressurser](rooms-resources) for å kreve godkjenning av det rommet. Grupper med tilgang kan da be om rommet når de oppretter arrangementer, og disse forespørslene flytes inn på denne siden.
+Sett opp en godkjenningsgruppe på et rom i [Rom & ressurser](rooms-resources) for å kreve godkjenning for det rommet. Grupper med tilgang kan deretter ber om rommet når de oppretter hendelser, og disse forespørslene flyter inn på denne siden.
 :::
 
 ## Relaterte artikler
 
-- [Rom, ressurser og planlegging](rooms-resources) – konfigurer bookbare rom og ressurser
-- [Opprette kalendere](creating-calendars) – administrer kalendere og arrangementer
+- [Rom, ressurser & planlegging](rooms-resources) — konfigurer bookbare rom og ressurser
+- [Opprett kalendere](creating-calendars) — administrer kalendere og hendelser

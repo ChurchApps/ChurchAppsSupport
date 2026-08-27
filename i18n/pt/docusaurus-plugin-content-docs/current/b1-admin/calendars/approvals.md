@@ -6,47 +6,47 @@ title: "Aprovações de Calendário"
 
 <div class="article-intro">
 
-A página de Aprovações é onde os administradores revisam e agem sobre solicitações de reserva de sala e recurso pendentes, bem como eventos de calendário que exigem aprovação antes de serem publicados.
+The Approvals page is where administrators review and act on pending room and resource booking requests, as well as calendar events that require approval before being published.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Before You Begin</h4>
 
-- Configure salas ou recursos com um **Grupo de Aprovação** em [Salas e Recursos](rooms-resources)
-- Você precisa da permissão **Calendars Admin** ou da permissão **content.edit**
+- Configure rooms or resources with an **Approval Group** in [Rooms & Resources](rooms-resources)
+- You need the **Calendars Admin** permission or the **content.edit** permission
 
 </div>
 
-## Abrindo Aprovações
+## Opening Approvals
 
-Em B1 Admin, acesse **Calendários** e selecione **Aprovações**. Solicitações de reserva pendentes e eventos aguardando revisão estão listados aqui.
+In B1 Admin, go to **Calendars** and select **Approvals**. Pending booking requests and events awaiting review are listed here.
 
-## Solicitações de Reserva
+## Booking Requests
 
-Quando um grupo cria um evento e solicita uma sala ou recurso, a solicitação aparece no painel **Solicitações de Reserva**. Cada linha mostra:
+When a group creates an event and requests a room or resource, the request appears in the **Booking Requests** panel. Each row shows:
 
-- A sala ou recurso sendo solicitado
-- O nome e data/hora do evento
-- O grupo solicitante
+- The room or resource being requested
+- The event name and date/time
+- The requesting group
 
-### Indicadores de Conflito
+### Conflict Indicators
 
-Se duas solicitações se sobrepõem para a mesma sala ou recurso, um ícone de aviso de conflito aparece. Revise as solicitações conflitantes cuidadosamente antes de aprovar uma.
+If two requests overlap for the same room or resource, a conflict warning icon appears. Review conflicting requests carefully before approving either one.
 
-### Aprovando ou Rejeitando
+### Approving or Rejecting
 
-Clique no ícone **✓** (aprovar) ou **✗** (rejeitar) em qualquer solicitação de reserva. O grupo solicitante é notificado da decisão. As reservas aprovadas são bloqueadas para essa sala ou recurso para o evento; as reservas rejeitadas liberam o slot para outros.
+Click the **✓** (approve) or **✗** (reject) icon on any booking request. The requesting group is notified of the decision. Approved bookings are locked to that room or resource for the event; rejected bookings free the slot for others.
 
-## Eventos Pendentes
+## Pending Events
 
-Se seu fluxo de trabalho de calendário exigir aprovação de evento antes que os eventos se tornem visíveis ao público, eventos pendentes aparecerão no painel **Eventos Pendentes**. Aprove um evento para publicá-lo no calendário ou rejeite-o para notificar o autor que mudanças são necessárias.
+If your calendar workflow requires event approval before events become visible to the public, pending events appear in the **Pending Events** panel. Approve an event to publish it to the calendar, or reject it to notify the submitter that changes are needed.
 
 :::tip
-Configure um Grupo de Aprovação em uma sala em [Salas e Recursos](rooms-resources) para exigir aprovação para essa sala. Os grupos com acesso podem então solicitar a sala ao criar eventos e essas solicitações fluem para esta página.
+Set up an Approval Group on a room in [Rooms & Resources](rooms-resources) to require approval for that room. Groups with access can then request the room when creating events, and those requests flow into this page.
 :::
 
 ## Artigos Relacionados
 
-- [Salas, Recursos e Agendamento](rooms-resources) — Configure salas e recursos reserváveis
-- [Criando Calendários](creating-calendars) — Gerencie calendários e eventos
+- [Rooms, Resources & Scheduling](rooms-resources) — configure bookable rooms and resources
+- [Creating Calendars](creating-calendars) — manage calendars and events

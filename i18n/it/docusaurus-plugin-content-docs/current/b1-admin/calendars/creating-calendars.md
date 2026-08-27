@@ -1,101 +1,101 @@
 ---
-title: "Creazione dei calendari"
+title: "Creazione di Calendari"
 ---
 
-# Creazione dei calendari
+# Creating Calendars
 
 <div class="article-intro">
 
-Creare un calendario in B1 Admin ti permette di costruire una vista curata degli eventi collegando uno o più gruppi. Gli eventi sono gestiti dai leader dei gruppi all'interno dei loro gruppi, e il tuo calendario mostra quegli eventi in un unico posto. Anche un amministratore di dominio non può aggiungere o modificare eventi direttamente nella sezione calendario a meno che non sia un leader del gruppo a cui appartengono gli eventi.
+Creating a calendar in B1 Admin lets you build a curated Visualizza of Eventi by connecting one or more Gruppi. Eventi are managed by Gruppo leaders within their Gruppi, and your calendar displays those Eventi in one place. Admins with Modifica access can Aggiungi or Modifica Eventi for any Gruppo. Non-admin Gruppo leaders can only manage Eventi for Gruppi they lead.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di iniziare</h4>
+<h4>Prima di Iniziare</h4>
 
-- Configura i [gruppi](../groups/creating-groups.md) i cui eventi vuoi includere nel tuo calendario
-- Hai bisogno dell'accesso amministrativo alla sezione Calendari in B1 Admin
+- Set up the [groups](../groups/creating-groups.md) whose Eventi you want Per include in your calendar
+- You need administrative access Per the Calendars section in B1 Admin
 
 </div>
 
-## Creazione di un nuovo calendario
+## Creating a New Calendario
 
-1. In B1 Admin, vai su **Sito web**, poi alla sezione **Calendari**.
-2. Fai clic su **Aggiungi calendario**.
-3. Inserisci un **nome** per il tuo calendario (ad esempio, "Eventi Ministero Giovanile" o "Calendario Principale della Chiesa").
-4. Aggiungi una **descrizione** facoltativa per aiutare il tuo team a capire a cosa serve questo calendario.
-5. Fai clic su **Crea** per salvare il tuo nuovo calendario.
+1. In the B1 Admin, navigate Per **Sito Web**, then Per the **Calendars** section.
+2. Fai clic **Aggiungi Calendario**.
+3. Inserisci a **name** for your calendar (for example, "Youth Ministry Eventi" or "Main Church Calendario").
+4. Aggiungi an Facoltativo **description** Per help your team understand what this calendar is for.
+5. Fai clic **Crea** Per Salva your new calendar.
 
-## La pagina di dettaglio del calendario
+## The Calendario Detail Pagina
 
-Dopo aver creato un calendario, fai clic su di esso per aprire la pagina di dettaglio. Questa pagina ha due aree principali:
+After creating a calendar, Fai clic on it Per Apri the detail page. This page has two main areas:
 
-- **Colonna sinistra** -- Una vista del calendario che mostra gli eventi provenienti dai gruppi collegati.
-- **Colonna destra** -- L'elenco dei gruppi associati. Qui gestisci quali gruppi sono inclusi in questo calendario.
+- **Left column** -- A Visualizza of the calendar showing Eventi pulled in from connected Gruppi.
+- **Right column** -- The associated Gruppi list. This is where you manage which Gruppi are included in this calendar.
 
-## Collegamento dei gruppi
+## Connecting Gruppi
 
-I gruppi che hanno eventi nel calendario appaiono automaticamente nell'elenco dei gruppi sul lato destro della pagina di dettaglio.
+Gruppi that have Eventi in the calendar automatically appear in the Gruppi list on the lato destro of the detail page.
 
-1. Fai clic su **Aggiungi** nella sezione gruppi per associare un gruppo al tuo calendario.
-2. Seleziona il gruppo dal menu a tendina.
-3. Scegli se includere **tutti gli eventi** di quel gruppo o solo **eventi specifici**.
-4. Fai clic su **Salva**.
+1. Fai clic **Aggiungi** in the Gruppi section Per associate a Gruppo with your calendar.
+2. Seleziona the Gruppo from the dropdown.
+3. Scegli whether Per include **all Eventi** from that Gruppo or only **specific Eventi**.
+4. Fai clic **Salva**.
 
 :::tip
-Collegare i gruppi al tuo calendario è un modo potente per aggregare automaticamente gli eventi. Quando un leader di gruppo aggiunge un evento al proprio [gruppo](../groups/creating-groups.md), questo può confluire nel calendario dell'intera chiesa senza alcun lavoro aggiuntivo da parte tua.
+Connecting Gruppi Per your calendar is a powerful way Per automatically aggregate Eventi. When a Gruppo leader adds an Evento Per their [group](../groups/creating-groups.md), it can flow into your church-wide calendar without any extra work from you.
 :::
 
 :::info
-Se vuoi creare un unico calendario che raccoglie eventi da molti gruppi della tua chiesa, consulta [Calendario curato](curated-calendar) per un approccio semplificato.
+If you want Per Crea a single calendar that pulls Eventi from many Gruppi across your church, see [Curated Calendar](curated-calendar) for a streamlined approach.
 :::
 
-## Abilitazione della registrazione agli eventi
+## Enabling Evento Registration
 
-Puoi abilitare la registrazione per qualsiasi evento del calendario in modo che i membri possano iscriversi tramite il sito web B1 o l'app mobile.
+You can enable registration for any calendar Evento so Membri can sign up through the B1 website or mobile app.
 
-1. Fai clic su un evento esistente o creane uno nuovo.
-2. Nell'editor dell'evento, attiva **Registrazione** per abilitarla.
-3. Configura le impostazioni di registrazione:
-   - **Capacità** (facoltativo) -- Imposta un numero massimo di registrazioni. Lascia vuoto per illimitato.
-   - **Apertura registrazione** -- La data e l'ora in cui la registrazione diventa disponibile.
-   - **Chiusura registrazione** -- La data e l'ora in cui la registrazione si chiude.
-   - **Tag** -- Etichette separate da virgola (ad es. "giovani, ritiro, vbs") per aiutare a categorizzare gli eventi registrabili.
-   - **Domande di registrazione** -- Facoltativamente allega un [modulo](../forms/creating-forms.md) in modo che gli iscritti rispondano a domande aggiuntive (restrizioni alimentari, taglia della maglietta, contatto di emergenza, ecc.) durante l'iscrizione. Scegli **Nessuno** per saltare le domande.
-   - **Abilita lista d'attesa** -- Quando l'evento raggiunge il completo, permetti ad altri iscritti di unirsi a una lista d'attesa invece di essere respinti. Consulta [Registrazioni a pagamento](paid-registrations#waitlist).
-4. Salva l'evento.
+1. Fai clic on an existing Evento or Crea a new one.
+2. In the Evento editor, toggle **Registration** Per enable it.
+3. Configure the registration Impostazioni:
+   - **Capacità** (Facoltativo) -- Set a maximum number of registrations. Leave blank for unlimited.
+   - **Registration Opens** -- The Data and Ora when registration becomes Disponibile.
+   - **Registration Closes** -- The Data and Ora when registration closes.
+   - **Tags** -- Comma-separated labels (e.g., "youth, retreat, vbs") Per help categorize registerable Eventi.
+   - **Registration Questions** -- Optionally attach a [form](../forms/creating-forms.md) so registrants answer extra questions (dietary restrictions, T-shirt size, emergency contact, etc.) as part of signing up. Scegli **None** Per skip questions.
+   - **Enable Waitlist** -- When the Evento fills up, let additional registrants join a waitlist instead of being turned away. See [Paid Registrations](paid-registrations#waitlist).
+4. Salva the Evento.
 
-Per gli eventi a pagamento, la stessa pagina delle impostazioni ti permette di definire **Tipi di partecipante** con prezzo, **Selezioni** facoltative (extra) e **Codici sconto**, con il pagamento raccolto tramite il provider di donazioni della tua chiesa. Consulta [Registrazioni a pagamento](paid-registrations) per la guida completa.
+For paid Eventi, the same Impostazioni page lets you define priced **Attendee Types**, Facoltativo **Selections** (Aggiungi-ons), and **Discount Codes**, with payment collected through your church's giving provider. See [Paid Registrations](paid-registrations) for the full walkthrough.
 
-Una volta abilitata la registrazione, i membri vedranno un pulsante **Registrati per questo evento** quando visualizzano l'evento sul [sito web B1](../../b1-church/events/registering) o sull'[app B1 Mobile](../../b1-mobile/events/registering). Se hai allegato un modulo, gli iscritti vedranno un passaggio **Domande** durante la registrazione e le loro risposte verranno salvate insieme alla loro iscrizione.
+Once registration is Abilitato, Membri will see a **Register for this Evento** button when they Visualizza the Evento on the [B1 website](../../b1-church/events/registering) or [B1 Mobile app](../../b1-mobile/events/registering). If you attached a form, registrants see a **Questions** step during registration and their answers are saved with their registration.
 
 :::info
-Le Domande di registrazione funzionano solo con moduli che **non** sono contrassegnati come Riservati. Un modulo riservato viene saltato automaticamente durante la registrazione anziché mostrato, quindi usa un modulo non riservato quando alleghi domande a un evento.
+Registration Questions only works with forms that are **not** marked Restricted. A restricted form is skipped automatically during registration rather than shown, so use an unrestricted form when attaching questions Per an Evento.
 :::
 
-### Gestione delle registrazioni
+### Managing Registrations
 
-Per visualizzare e gestire le registrazioni per i tuoi eventi:
+Per Visualizza and manage registrations for your Eventi:
 
-1. Vai alla pagina **Registrazioni** in B1 Admin.
-2. Vedrai una tabella di tutti gli eventi con la registrazione abilitata, che mostra il titolo dell'evento, la data, il conteggio attuale delle registrazioni rispetto alla capacità e i tag.
-3. Fai clic su un evento per vedere l'elenco completo delle registrazioni, inclusi nomi, numero di membri, tipi di partecipante, stato del pagamento e data di registrazione.
-4. Dalla pagina di dettaglio, puoi:
-   - **Aggiungi partecipante** -- Registra manualmente qualcuno che si è iscritto offline o per telefono.
-   - **Annulla** singole registrazioni
-   - **Elimina** le registrazioni permanentemente
-   - **Promuovi** le registrazioni in lista d'attesa quando si libera un posto
-   - **Esporta CSV** -- Scarica tutte le registrazioni, inclusi tipi di partecipante, selezioni, importi pagati e risposte alle domande
+1. Navigate Per the **Registrations** page in B1 Admin.
+2. You will see a table of all Eventi with registration Abilitato, showing the Evento title, Data, current registration count vs. Capacità, and tags.
+3. Fai clic on an Evento Per see the full list of registrations, including names, Membro count, attendee types, payment status, and registration Data.
+4. From the detail page, you can:
+   - **Aggiungi Attendee** -- Manually register someone who signed up offline or over the phone.
+   - **Cancel** individual registrations
+   - **Elimina** registrations permanently
+   - **Promote** waitlisted registrations when a spot opens
+   - **Esporta CSV** -- Scarica all registrations, including attendee types, selections, payment amounts, and question answers
 
-Se l'evento ha Domande di registrazione allegate, la pagina di dettaglio mostra anche un filtro **Solo domande senza risposta** per trovare rapidamente gli iscritti che non hanno ancora inviato risposte, e un pulsante **Visualizza risposte** su ogni registrazione con risposta per vedere le loro risposte. Gli eventi a pagamento aggiungono una colonna **Tipo**, una colonna **Pagato / Totale**, conteggi per tipo, e una finestra di dettaglio dei pagamenti -- consulta [Registrazioni a pagamento](paid-registrations#the-registration-roster).
+If the Evento has Registration Questions attached, the detail page also shows an **Unanswered questions only** filter Per quickly Trova registrants who haven't submitted answers yet, and a **Visualizza Answers** button on each answered registration Per see their responses. Paid Eventi Aggiungi a **Digita** column, a **Paid / Total** column, per-Digita counts, and a payments detail dialog -- see [Paid Registrations](paid-registrations#the-registration-roster).
 
 :::tip
-Usa la barra di progresso della capacità per monitorare quanto velocemente si stanno riempiendo gli eventi. La barra diventa rossa quando un evento è al completo o oltre la capacità.
+Use the Capacità progress bar Per monitor how quickly Eventi are filling up. The bar turns red when an Evento is at or over Capacità.
 :::
 
-## Prossimi passi
+## Avanti Steps
 
-- [Calendario curato](curated-calendar) -- Crea un calendario che raccoglie eventi da più gruppi
-- [Registrazioni a pagamento](paid-registrations) -- Tipi di partecipante, selezioni extra, codici sconto, pagamenti e liste d'attesa
-- [Guida alla registrazione eventi](../guides/event-registration) -- Guida passo-passo per configurare la registrazione agli eventi
-- [Panoramica calendari](./) -- Torna alla panoramica dei calendari
+- [Curated Calendar](curated-calendar) -- Crea a calendar that pulls from multiple Gruppi
+- [Paid Registrations](paid-registrations) -- Attendee types, Aggiungi-on selections, discount codes, payments, and waitlists
+- [Event Registration Guide](../guides/event-registration) -- Step-by-step guide for setting up Evento registration
+- [Calendars Overview](./) -- Return Per the calendars Panoramica

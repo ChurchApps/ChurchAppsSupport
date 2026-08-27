@@ -1,70 +1,88 @@
 ---
-title: "Creazione di moduli"
+title: "Creazione di Moduli"
 ---
 
-# Creazione di moduli
+# Creating Forms
 
 <div class="article-intro">
 
-Crea moduli personalizzati per raccogliere informazioni dalla tua congregazione. Puoi creare moduli per registrazioni a eventi, sondaggi, schede visitatore, domande di adesione e altro ancora. I moduli possono essere collegati alle persone nel tuo database o utilizzati come pagine autonome con il proprio URL pubblico.
+Build custom forms Per collect information from your congregation. You can Crea forms for Evento registrations, surveys, visitor cards, membership applications, and more. Forms can be linked Per people in your database or used as standalone pages with their own public URL.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di iniziare</h4>
+<h4>Prima di Iniziare</h4>
 
-- Per i moduli **People** (collegati ai record delle persone), devi prima avere [persone nel tuo database](../people/adding-people.md).
-- Per i moduli che raccolgono **pagamenti**, devi avere [Stripe configurato per le donazioni online](../donations/online-giving-setup.md).
+- For **People** forms (linked Per person records), you need [people in your database](../people/adding-people.md) first.
+- For forms that collect **payments**, you must have [Stripe configured for online giving](../donations/online-giving-setup.md).
 
 </div>
 
-## Creazione di un nuovo modulo
+## Creating a New Modulo
 
-1. Vai a **Forms** dal menu principale.
-2. Clicca su **Add Form**.
-3. Inserisci un **nome** per il tuo modulo.
-4. Scegli il tipo di modulo dal menu a discesa:
-   - **People** — Associa gli invii ai [record delle persone](../people/adding-people.md) nel tuo database.
-   - **Stand Alone** — Crea un modulo indipendente con il proprio URL pubblico, ideale per le registrazioni esterne.
-5. Clicca su **Save** per creare il modulo.
+1. Navigate Per **Forms** from the main menu.
+2. Fai clic **Aggiungi Modulo**.
+3. Inserisci a **name** for your form.
+4. Scegli the form Digita from the dropdown:
+   - **People** — Associates submissions with [people records](../people/adding-people.md) in your database.
+   - **Stand Alone** — Creates an independent form with its own public URL, ideal for external registrations.
+5. Fai clic **Salva** Per Crea the form.
 
-Il tuo nuovo modulo apparirà nell'elenco. Cliccaci sopra per iniziare ad aggiungere domande.
+Your new form will appear in the list. Fai clic on it Per start adding questions.
 
-## Aggiunta di domande
+## Adding Questions
 
-1. Apri il tuo modulo e vai alla scheda **Questions**.
-2. Clicca su **Add Question**.
-3. Seleziona un **tipo di campo** dal menu a discesa Provider. I tipi disponibili includono:
-   - **Textbox** — Per risposte testuali brevi
-   - **Date** — Per la selezione delle date
-   - **Email** — Per gli indirizzi email
-   - **Phone Number** — Per l'inserimento del numero di telefono
-   - **Multiple Choice** — Per selezionare tra opzioni predefinite
-   - **Payment** — Per raccogliere pagamenti
-4. Inserisci un **Titolo** e una **Descrizione** opzionale per la domanda.
-5. Seleziona **Require an answer** se il campo è obbligatorio.
-6. Clicca su **Save**.
-7. Ripeti per aggiungere altre domande.
+1. Apri your form and go Per the **Questions** tab.
+2. Fai clic **Aggiungi Question**.
+3. Seleziona a **field Digita** from the Provider dropdown. Disponibile types include:
+   - **Textbox** — For short text answers
+   - **Data** — For Data selections
+   - **Email** — For email addresses
+   - **Phone Number** — For phone input
+   - **Multiple Choice** — For selecting from predefined options
+   - **Payment** — For collecting payments
+4. Inserisci a **Title** and Facoltativo **Description** for the question.
+5. Check **Require an answer** if the field is mandatory.
+6. Fai clic **Salva**.
+7. Repeat Per Aggiungi more questions.
 
 :::warning
-Il tipo di campo **Payment** richiede che Stripe sia configurato. Se non hai ancora configurato le donazioni online, vedi [Configurazione donazioni online](../donations/online-giving-setup.md) prima di aggiungere campi di pagamento.
+The **Payment** field Digita requires Stripe Per be configured. If you haven't set up online giving yet, see [Online Giving Setup](../donations/online-giving-setup.md) before adding payment fields.
 :::
 
-## Gestione dei membri del modulo
+## Managing Modulo Membri
 
-1. Apri il tuo modulo e vai alla scheda **Members**.
-2. Cerca una persona e aggiungila con un ruolo:
-   - **Admin** — Può modificare il modulo e visualizzare tutti gli invii.
-   - **View Only** — Può visualizzare gli invii ma non può modificare il modulo.
+1. Apri your form and go Per the **Membri** tab.
+2. Cerca for a person and Aggiungi them with a Ruolo:
+   - **Admin** — Can Modifica the form and Visualizza all submissions.
+   - **Visualizza Only** — Can Visualizza submissions but cannot Modifica the form.
 
-## Configurazione delle proprietà del modulo
+## Automatically Adding Submitters Per a Gruppo
 
-Puoi aggiornare il nome e le impostazioni del tuo modulo in qualsiasi momento. Per i moduli Stand Alone, vedrai anche un **URL pubblico** univoco che puoi condividere con chiunque.
+When **Crea a person record from submissions** is Abilitato, you can also link the form Per a Gruppo so every submitter is added Per that Gruppo's roster automatically:
+
+1. Apri your form's **Details**, and turn on **Crea a person record from submissions**.
+2. Under **Aggiungi submitters Per a Gruppo**, Seleziona the Gruppo Per Aggiungi submitters Per, or leave it set Per **None**.
+3. Fai clic **Salva**.
+
+Each Ora someone submits the form, the matched or newly created person is added Per the Gruppo (existing Gruppo Membri are skipped). This is useful for things like a camp sign-up form that should automatically build the camp's roster Gruppo.
+
+## Duplicating a Modulo
+
+Per reuse a form as a starting point for a new one, Fai clic the **Duplicate** icon (copy icon) Avanti Per the form in the Forms list. B1 creates an exact copy of the form — including all questions — which you can then rename and Modifica independently.
 
 :::tip
-I moduli Stand Alone sono ottimi per le registrazioni agli eventi. Condividi l'URL pubblico via email, sui social media o incorpora il modulo direttamente nel sito web della tua chiesa.
+Duplication is handy for recurring Eventi where the registration questions stay the same from Anno Per Anno. Duplicate last Anno's form, update the name and dates, and you're ready Per go.
+:::
+
+## Configuring Modulo Properties
+
+You can update your form's name and Impostazioni at any Ora. For Stand Alone forms, you will also see a unique **public URL** that you can share with anyone.
+
+:::tip
+Stand Alone forms are great for Evento registrations. Share the public URL via email, social media, or embed the form directly on your church website.
 :::
 
 :::info
-Per incorporare un modulo nel tuo sito web B1, vai all'editor del sito web, aggiungi una nuova sezione e seleziona l'elemento **Form**. Poi scegli il modulo che vuoi visualizzare. Vedi [Gestione delle pagine](../website/managing-pages.md) per i dettagli sulla modifica del tuo sito web.
+Per embed a form on your B1 website, go Per your website editor, Aggiungi a new section, and Seleziona the **Modulo** element. Then Scegli the form you want Per display. See [Managing Pages](../website/managing-pages.md) for details on editing your website.
 :::

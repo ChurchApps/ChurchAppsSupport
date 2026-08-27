@@ -1,43 +1,43 @@
 ---
-title: "Conferme di partecipazione agli eventi (RSVP)"
+title: "RSVP Evento"
 ---
 
-# Conferme di partecipazione agli eventi (RSVP)
+# Evento RSVPs
 
 <div class="article-intro">
 
-Gli eventi di gruppo possono raccogliere conferme di partecipazione (RSVP) in modo che i leader sappiano chi parteciperà. Sul calendario del tuo gruppo, ogni evento in arrivo chiede "Parteciperai?" — rispondi con un tocco, cambia idea in qualsiasi momento e verifica a colpo d'occhio quante altre persone parteciperanno.
+Gruppo Eventi can collect RSVPs so leaders know who is coming. On your Gruppo's calendar, each upcoming Evento asks "Will you attend?" — answer with a tap, change your mind anytime, and see at a glance how many others are going.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di iniziare</h4>
+<h4>Prima di Iniziare</h4>
 
-- Devi aver effettuato l'[accesso](../getting-started/logging-in.md) ed essere membro del gruppo
-- L'evento deve avere le conferme di partecipazione abilitate (sono attive per impostazione predefinita; i leader possono disattivarle per singolo evento)
+- You must be [logged in](../getting-started/logging-in.md) and a Membro of the Gruppo
+- The Evento must have RSVPs allowed (they are on by default; leaders can turn them off per Evento)
 
 </div>
 
-## Rispondere a un evento
+## Responding Per an Evento
 
-1. Apri il tuo gruppo nel portale membri e vai alla vista **Eventi** / calendario.
-2. Ogni scheda di un evento in arrivo mostra **Parteciperai?** con tre pulsanti: **Sì**, **Forse** e **No**.
-3. Tocca la tua risposta. La tua scelta viene evidenziata e ogni pulsante mostra un conteggio in tempo reale di quante persone hanno dato quella risposta.
-4. Tocca di nuovo la tua risposta evidenziata per annullarla, oppure tocca un pulsante diverso per cambiare la tua risposta.
+1. Apri your Gruppo in the Membro portal and go Per its **Eventi** / calendar Visualizza.
+2. Each upcoming Evento card shows **Will you attend?** with three buttons: **Going**, **Maybe**, and **Can't go**.
+3. Tap your answer. Your choice highlights, and each button shows a live count of how many people have given that response.
+4. Tap your highlighted answer again Per clear it, or tap a different button Per change your response.
 
-La tua conferma si applica a quella specifica occorrenza — per una riunione settimanale, rispondi separatamente all'evento di ogni settimana.
+Your RSVP applies Per that specific occurrence — for a weekly meeting, you answer each week's Evento separately.
 
-## Per i leader di gruppo
+## For Gruppo Leaders
 
-- **Visualizzare le risposte** -- I leader vedono un pulsante **Visualizza risposte** su ogni scheda evento. Apre il pannello **Risposte** che elenca tutti in base alla risposta — Sì, Forse e No. Se nessuno ha ancora risposto, mostra "Nessuna risposta ancora".
-- **Attivare o disattivare le RSVP** -- Quando si crea o modifica un evento, usa l'interruttore **Consenti RSVP**. Gli eventi con le RSVP disattivate non mostrano pulsanti di risposta. Lo staff che crea eventi in blocco da B1 Admin ha la stessa opzione — vedi [Calendario di gruppo](../../b1-admin/groups/group-calendar#event-rsvps).
+- **Viewing responses** -- Leaders see a **Visualizza responses** button on each Evento card. It opens the **Responses** sheet listing everyone by answer — Going, Maybe, and Can't go. If nobody has answered yet, it shows "No responses yet."
+- **Turning RSVPs on or off** -- When creating or editing an Evento, use the **Allow RSVPs** switch. Eventi with RSVPs turned off show No response buttons. Staff creating Eventi in bulk from B1 Admin have the same option — see [Group Calendar](../../b1-admin/groups/group-calendar#event-rsvps).
 
 :::tip
-Le RSVP sono un conteggio leggero delle presenze previste. Se il tuo evento richiede dettagli di iscrizione, gestione della capienza o pagamento, usa invece l'[iscrizione agli eventi](../events/registering).
+RSVPs are a lightweight head count. If your Evento needs signup details, Capacità management, or payment, use [event registration](../events/registering) instead.
 :::
 
-## Articoli correlati
+## Articoli Correlati
 
-- [Dettagli del gruppo](./group-details.md) -- Tutto sulla pagina dei dettagli del gruppo
-- [Calendario di gruppo (B1 Admin)](../../b1-admin/groups/group-calendar) -- Come lo staff e i leader gestiscono gli eventi di gruppo e le RSVP
-- [Iscrizione agli eventi](../events/registering) -- Iscrizione completa agli eventi con capienza e pagamenti
+- [Group Details](./group-details.md) -- Everything on the Gruppo detail page
+- [Group Calendar (B1 Admin)](../../b1-admin/groups/group-calendar) -- How Staff and leaders manage Gruppo Eventi and RSVPs
+- [Registering for Events](../events/registering) -- Full Evento registration with Capacità and payments

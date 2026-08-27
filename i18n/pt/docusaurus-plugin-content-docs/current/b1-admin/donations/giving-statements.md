@@ -1,56 +1,56 @@
-﻿---
-title: "Declarações de Dádivas"
+---
+title: "Declarações de Doação"
 ---
 
-# Declarações de Dádivas
+# Declarações de Doação
 
 <div class="article-intro">
 
-No final de cada ano, seus doadores precisam de um resumo de suas dádivas dedutíveis para fins fiscais para seus registros. B1 Admin torna fácil gerar essas declarações para todos os doadores de uma vez, economizando horas de trabalho manual.
+At the end of each year, your donors need a summary of their tax-deductible giving for their records. B1 Admin makes it easy to generate these statements for all donors at once, saving you hours of manual work.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Before You Begin</h4>
 
-- Verifique que seus [fundos](funds.md) estão corretamente marcados como **Dedutível de Imposto** -- apenas doações para fundos dedutíveis de imposto aparecem nas declarações
-- Certifique-se de que todas as doações foram [registradas](recording-donations.md) e qualquer transação online foi [importada do Stripe](stripe-import.md)
+- Verify that your [funds](funds.md) are correctly marked as **Tax Deductible** -- only donations to tax-deductible funds appear on statements
+- Ensure all donations have been [recorded](recording-donations.md) and any online transactions have been [imported from Stripe](stripe-import.md)
 
 </div>
 
-## Acessando Declarações de Dádivas
+## Accessing Giving Statements
 
-1. Em **B1 Admin**, abra o **menu de seção** no canto superior esquerdo e escolha **Doações**.
-2. Clique em **Declarações**.
+1. In **B1 Admin**, open the **section menu** in the top-left corner and choose **Donations**.
+2. Click **Statements**.
 
-## Gerando Declarações
+## Generating Statements
 
-1. Selecione o **ano** no dropdown no topo da página. Você pode escolher o ano atual ou qualquer um dos cinco anos anteriores.
-2. A página exibe estatísticas de resumo para aquele ano, incluindo:
-   - **Doadores totais** -- o número de pessoas que doaram
-   - **Doações totais** -- o número de registros de doação individual
-   - **Valor total** -- o valor em dólares combinado de todas as dádivas
+1. Select the **year** from the dropdown at the top of the page. You can choose the current year or any of the five previous years.
+2. The page displays summary statistics for that year, including:
+   - **Total donors** -- the number of people who gave
+   - **Total donations** -- the number of individual donation records
+   - **Total amount** -- the combined dollar amount of all giving
 
-## Baixando Declarações
+## Downloading Statements
 
-Você tem duas opções para entregar declarações aos seus doadores:
+You have two options for getting statements to your donors:
 
-### Baixando como Arquivos CSV
+### Download as CSV Files
 
-Clique em **Baixar ZIP** para baixar um arquivo ZIP contendo um arquivo CSV individual para cada doador. Isto é útil se você quer enviar declarações individualmente ou importá-las em outro sistema.
+Click **Download ZIP** to download a ZIP file containing an individual CSV file for each donor. This is useful if you want to email statements individually or import them into another system.
 
-### Imprimindo Todas as Declarações
+### Print All Statements
 
-Clique em **Imprimir Tudo** para abrir uma visualização imprimível de cada declaração de doador em seu navegador. De lá, use a função de impressão do seu navegador para enviar para uma impressora. Cada declaração começa em uma nova página para que estejam prontas para dobrar e enviar.
+Click **Print All** to open a printable view of every donor's statement in your browser. From there, use your browser's print function to send them to a printer. Each statement starts on a new page so they are ready to fold and mail.
 
 :::tip
-Execute suas declarações no início de janeiro enquanto seus registros estão frescos. Verifique novamente que seus fundos estão corretamente marcados como dedutíveis de imposto antes de gerar declarações -- apenas doações para fundos dedutíveis de imposto são incluídas.
+Run your statements early in January while your records are fresh. Double-check that your funds are correctly marked as tax-deductible before generating statements -- only donations to tax-deductible funds are included.
 :::
 
 :::info
-Declarações de dádivas apenas incluem doações atribuídas a fundos que têm a configuração **Dedutível de Imposto** ativada. Se um fundo não está marcado como dedutível de imposto, suas doações não aparecerão na declaração. Você pode gerenciar essa configuração na página [Fundos](funds.md).
+Giving statements only include donations assigned to funds that have the **Tax Deductible** setting enabled. If a fund is not marked as tax-deductible, its donations will not appear on the statement. You can manage this setting on the [Funds](funds.md) page.
 :::
 
-## Próximas Etapas
+## Next Steps
 
-Se você precisar revisar detalhes de doações antes de gerar declarações, visite a página [Relatórios de Doações](donation-reports.md) ou verifique [lotes](batches.md) individuais.
+If you need to review donation details before generating statements, visit the [Donation Reports](donation-reports.md) page or check individual [batches](batches.md).

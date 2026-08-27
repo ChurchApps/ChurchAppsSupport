@@ -2,69 +2,87 @@
 title: "फॉर्म बनाना"
 ---
 
-# फॉर्म बनाना
+# Creating Forms
 
 <div class="article-intro">
 
-अपनी मण्डली से जानकारी एकत्र करने के लिए कस्टम फॉर्म बनाएँ। आप इवेंट पंजीकरण, सर्वेक्षण, विज़िटर कार्ड, सदस्यता आवेदन, और बहुत कुछ के लिए फॉर्म बना सकते हैं। फॉर्म आपके डेटाबेस में लोगों से जोड़े जा सकते हैं या अपने स्वयं के सार्वजनिक URL वाले स्वतंत्र पेज के रूप में उपयोग किए जा सकते हैं।
+Build custom forms to collect information from your congregation. You can create forms for event registrations, surveys, visitor cards, membership applications, and more. Forms can be linked to people in your database or used as standalone pages with their own public URL.
 
 </div>
 
 <div class="prereqs">
-<h4>शुरू करने से पहले</h4>
+<h4>Before You Begin</h4>
 
-- **People** फॉर्म (व्यक्ति रिकॉर्ड से जुड़े) के लिए, आपको पहले [अपने डेटाबेस में लोग](../people/adding-people.md) होने चाहिए।
-- **भुगतान** एकत्र करने वाले फॉर्म के लिए, आपके पास [ऑनलाइन दान के लिए Stripe कॉन्फ़िगर](../donations/online-giving-setup.md) होना चाहिए।
+- For **People** forms (linked to person records), you need [people in your database](../people/adding-people.md) first.
+- For forms that collect **payments**, you must have [Stripe configured for online giving](../donations/online-giving-setup.md).
 
 </div>
 
-## नया फॉर्म बनाना
+## Creating a New Form
 
-1. मुख्य मेनू से **Forms** पर जाएँ।
-2. **Add Form** पर क्लिक करें।
-3. अपने फॉर्म के लिए एक **नाम** दर्ज करें।
-4. ड्रॉपडाउन से फॉर्म प्रकार चुनें:
-   - **People** — सबमिशन को आपके डेटाबेस में [व्यक्ति रिकॉर्ड](../people/adding-people.md) से जोड़ता है।
-   - **Stand Alone** — अपने स्वयं के सार्वजनिक URL के साथ एक स्वतंत्र फॉर्म बनाता है, जो बाहरी पंजीकरण के लिए आदर्श है।
-5. फॉर्म बनाने के लिए **Save** पर क्लिक करें।
+1. Navigate to **Forms** from the main menu.
+2. Click **Add Form**.
+3. Enter a **name** for your form.
+4. Choose the form type from the dropdown:
+   - **People** — Associates submissions with [people records](../people/adding-people.md) in your database.
+   - **Stand Alone** — Creates an independent form with its own public URL, ideal for external registrations.
+5. Click **Save** to create the form.
 
-आपका नया फॉर्म सूची में दिखाई देगा। प्रश्न जोड़ना शुरू करने के लिए उस पर क्लिक करें।
+Your new form will appear in the list. Click on it to start adding questions.
 
-## प्रश्न जोड़ना
+## Adding Questions
 
-1. अपना फॉर्म खोलें और **Questions** टैब पर जाएँ।
-2. **Add Question** पर क्लिक करें।
-3. Provider ड्रॉपडाउन से **फ़ील्ड प्रकार** चुनें। उपलब्ध प्रकारों में शामिल हैं:
-   - **Textbox** — छोटे टेक्स्ट उत्तरों के लिए
-   - **Date** — तिथि चयन के लिए
-   - **Email** — ईमेल पतों के लिए
-   - **Phone Number** — फ़ोन इनपुट के लिए
-   - **Multiple Choice** — पूर्वनिर्धारित विकल्पों में से चुनने के लिए
-   - **Payment** — भुगतान एकत्र करने के लिए
-4. प्रश्न के लिए एक **शीर्षक** और वैकल्पिक **विवरण** दर्ज करें।
-5. यदि फ़ील्ड अनिवार्य है तो **Require an answer** चेक करें।
-6. **Save** पर क्लिक करें।
-7. अधिक प्रश्न जोड़ने के लिए दोहराएँ।
+1. Open your form and go to the **Questions** tab.
+2. Click **Add Question**.
+3. Select a **field type** from the Provider dropdown. Available types include:
+   - **Textbox** — For short text answers
+   - **Date** — For date selections
+   - **Email** — For email addresses
+   - **Phone Number** — For phone input
+   - **Multiple Choice** — For selecting from predefined options
+   - **Payment** — For collecting payments
+4. Enter a **Title** and optional **Description** for the question.
+5. Check **Require an answer** if the field is mandatory.
+6. Click **Save**.
+7. Repeat to add more questions.
 
 :::warning
-**Payment** फ़ील्ड प्रकार के लिए Stripe कॉन्फ़िगर होना आवश्यक है। यदि आपने अभी तक ऑनलाइन दान सेट अप नहीं किया है, तो भुगतान फ़ील्ड जोड़ने से पहले [ऑनलाइन दान सेटअप](../donations/online-giving-setup.md) देखें।
+The **Payment** field type requires Stripe to be configured. If you haven't set up online giving yet, see [Online Giving Setup](../donations/online-giving-setup.md) before adding payment fields.
 :::
 
-## फॉर्म सदस्य प्रबंधित करना
+## Managing Form Members
 
-1. अपना फॉर्म खोलें और **Members** टैब पर जाएँ।
-2. किसी व्यक्ति को खोजें और उन्हें एक भूमिका के साथ जोड़ें:
-   - **Admin** — फॉर्म संपादित कर सकता है और सभी सबमिशन देख सकता है।
-   - **View Only** — सबमिशन देख सकता है लेकिन फॉर्म संपादित नहीं कर सकता।
+1. Open your form and go to the **Members** tab.
+2. Search for a person and add them with a role:
+   - **Admin** — Can edit the form and view all submissions.
+   - **View Only** — Can view submissions but cannot edit the form.
 
-## फॉर्म गुण कॉन्फ़िगर करना
+## Automatically Adding Submitters to a Group
 
-आप किसी भी समय अपने फॉर्म का नाम और सेटिंग्स अपडेट कर सकते हैं। Stand Alone फॉर्म के लिए, आपको एक अद्वितीय **सार्वजनिक URL** भी दिखाई देगा जिसे आप किसी के साथ भी साझा कर सकते हैं।
+When **Create a person record from submissions** is enabled, you can also link the form to a group so every submitter is added to that group's roster automatically:
+
+1. Open your form's **Details**, and turn on **Create a person record from submissions**.
+2. Under **Add submitters to a group**, select the group to add submitters to, or leave it set to **None**.
+3. Click **Save**.
+
+Each time someone submits the form, the matched or newly created person is added to the group (existing group members are skipped). This is useful for things like a camp sign-up form that should automatically build the camp's roster group.
+
+## Duplicating a Form
+
+To reuse a form as a starting point for a new one, click the **Duplicate** icon (copy icon) next to the form in the Forms list. B1 creates an exact copy of the form — including all questions — which you can then rename and edit independently.
 
 :::tip
-Stand Alone फॉर्म इवेंट पंजीकरण के लिए बहुत अच्छे हैं। सार्वजनिक URL को ईमेल, सोशल मीडिया के माध्यम से साझा करें, या फॉर्म को सीधे अपनी चर्च वेबसाइट पर एम्बेड करें।
+Duplication is handy for recurring events where the registration questions stay the same from year to year. Duplicate last year's form, update the name and dates, and you're ready to go.
+:::
+
+## Configuring Form Properties
+
+You can update your form's name and settings at any time. For Stand Alone forms, you will also see a unique **public URL** that you can share with anyone.
+
+:::tip
+Stand Alone forms are great for event registrations. Share the public URL via email, social media, or embed the form directly on your church website.
 :::
 
 :::info
-अपनी B1 वेबसाइट पर फॉर्म एम्बेड करने के लिए, अपने वेबसाइट संपादक में जाएँ, एक नया सेक्शन जोड़ें, और **Form** एलिमेंट चुनें। फिर वह फॉर्म चुनें जिसे आप प्रदर्शित करना चाहते हैं। अपनी वेबसाइट संपादित करने के विवरण के लिए [पेज प्रबंधित करना](../website/managing-pages.md) देखें।
+To embed a form on your B1 website, go to your website editor, add a new section, and select the **Form** element. Then choose the form you want to display. See [Managing Pages](../website/managing-pages.md) for details on editing your website.
 :::

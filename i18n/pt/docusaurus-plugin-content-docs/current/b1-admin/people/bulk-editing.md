@@ -5,183 +5,196 @@ title: "Edição em Massa de Pessoas"
 # Edição em Massa de Pessoas
 
 <div class="article-intro">
-A edição em massa permite que você atualize várias pessoas de uma só vez, economizando tempo ao fazer a mesma alteração em muitos indivíduos. Você pode atualizar status de membro, estado civil, gênero, preferências de exclusão e participação em grupos em uma única operação.
+Bulk editing allows you to update multiple people at once, saving time when making the same change to many individuals. You can update membership status, marital status, gender, opt-out preferences, and group memberships in a single operation.
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Before You Begin</h4>
 
-- Você precisa de permissão para gerenciar dados de pessoas. Consulte [Funções e Permissões](./roles-permissions.md) para detalhes.
-- Você já deve ter adicionado ou importado as pessoas que deseja editar. Consulte [Adicionando Pessoas](./adding-people.md) se necessário.
+- You need permission to manage people data. See [Roles & Permissions](./roles-permissions.md) for details.
+- You should have already added or imported the people you want to edit. See [Adding People](./adding-people.md) if needed.
 </div>
 
-## Selecionando Pessoas para Edição em Massa
+## Selecting People for Bulk Editing
 
-1. Navegue até **Pessoas** no B1 Admin
-2. Use as ferramentas de pesquisa ou filtro para encontrar as pessoas que deseja atualizar
-3. Marque as caixas ao lado do nome de cada pessoa para selecioná-las
-   - Você pode selecionar pessoas individualmente
-   - Ou use a caixa de seleção do cabeçalho para selecionar todas as pessoas visíveis na página atual
-4. Depois de selecionar pelo menos uma pessoa, o botão **Ações em Massa** aparecerá
+1. Navigate to **People** in B1 Admin
+2. Use the search or filter tools to find the people you want to update
+3. Check the boxes next to each person's name to select them
+   - You can select people individually
+   - Or use the header checkbox to select all visible people on the current page
+4. Once you have selected at least one person, the **Bulk Actions** button will appear
 
 :::tip
-Se você precisar atualizar um grande grupo de pessoas com base em critérios específicos, use o recurso de [Pesquisa com IA](./ai-search.md) ou filtros para reduzir sua lista primeiro, depois selecione todas as pessoas correspondentes.
+If you need to update a large group of people based on specific criteria, use the [AI Search](./ai-search.md) feature or filters to narrow down your list first, then select all matching people.
 :::
 
-## Ações em Massa Disponíveis
+## Available Bulk Actions
 
-O menu **Ações em Massa** oferece várias opções:
+The **Bulk Actions** menu provides several options:
 
-### Atualizar Status de Membro
+### Update Membership Status
 
-Atualize o status de membro para todas as pessoas selecionadas:
+Update the membership status for all selected people:
 
-1. Clique em **Ações em Massa** → **Definir Status de Membro**
-2. Escolha o novo status:
-   - **Visitante** -- Participantes pela primeira vez ou ocasionais
-   - **Frequentador Regular** -- Frequentadores assíduos que não são membros
-   - **Membro** -- Membros oficiais da igreja
-   - **Equipe** -- Membros da equipe da igreja
-   - **Inativo** -- Pessoas que não estão mais frequentando
-3. Escolha o modo de atualização:
-   - **Sobrescrever todos** -- Substituir o status atual de todas as pessoas selecionadas
-   - **Apenas atualizar vazios** -- Definir o status apenas para pessoas que não têm um
-4. Clique em **Atualizar**
+1. Click **Bulk Actions** → **Set Membership Status**
+2. Choose the new status:
+   - **Visitor** -- First-time or occasional attendees
+   - **Regular Attendee** -- Frequent attendees who aren't members
+   - **Member** -- Official church members
+   - **Staff** -- Church staff members
+   - **Inactive** -- People who are no longer attending
+3. Choose update mode:
+   - **Overwrite all** -- Replace the current status for all selected people
+   - **Only update empty** -- Only set the status for people who don't have one
+4. Click **Update**
 
-### Atualizar Estado Civil
+### Update Marital Status
 
-Atualize o estado civil em massa:
+Update marital status in bulk:
 
-1. Clique em **Ações em Massa** → **Definir Estado Civil**
-2. Selecione o novo status:
-   - **Desconhecido**
-   - **Solteiro**
-   - **Casado**
-   - **Divorciado**
-   - **Viúvo**
-3. Escolha se deseja sobrescrever valores existentes ou apenas atualizar campos vazios
-4. Clique em **Atualizar**
+1. Click **Bulk Actions** → **Set Marital Status**
+2. Select the new status:
+   - **Unknown**
+   - **Single**
+   - **Married**
+   - **Divorced**
+   - **Widowed**
+3. Choose whether to overwrite existing values or only update empty fields
+4. Click **Update**
 
-### Atualizar Gênero
+### Update Gender
 
-Atualize informações de gênero para várias pessoas:
+Update gender information for multiple people:
 
-1. Clique em **Ações em Massa** → **Definir Gênero**
-2. Selecione o valor:
-   - **Não especificado**
-   - **Masculino**
-   - **Feminino**
-3. Escolha o modo de atualização (sobrescrever todos ou apenas vazios)
-4. Clique em **Atualizar**
+1. Click **Bulk Actions** → **Set Gender**
+2. Select the value:
+   - **Unspecified**
+   - **Male**
+   - **Female**
+3. Choose update mode (overwrite all or only empty)
+4. Click **Update**
 
-### Atualizar Status de Exclusão
+### Update Opt-Out Status
 
-Controle se as pessoas optaram por não receber comunicações:
+Control whether people have opted out of communications:
 
-1. Clique em **Ações em Massa** → **Definir Exclusão**
-2. Escolha:
-   - **Não** -- Permitir comunicações (remover exclusão)
-   - **Sim** -- Bloquear comunicações (definir exclusão)
-3. Escolha o modo de atualização
-4. Clique em **Atualizar**
+1. Click **Bulk Actions** → **Set Opted Out**
+2. Choose:
+   - **No** -- Allow communications (remove opt-out)
+   - **Yes** -- Block communications (set opt-out)
+3. Choose update mode
+4. Click **Update**
 
 :::warning
-Tenha cuidado ao alterar o status de exclusão. Pessoas que explicitamente optaram por não receber comunicações não devem recebê-las, a menos que tenham dado novo consentimento.
+Be careful when changing opt-out status. People who have explicitly opted out should not receive communications unless they have given new consent.
 :::
 
-### Adicionar ao Grupo
+### Set Custom Field
 
-Adicione todas as pessoas selecionadas a um ou mais grupos:
+Set a Yes/No [custom field](../settings/custom-fields.md) value for all selected people at once:
 
-1. Clique em **Ações em Massa** → **Adicionar ao Grupo**
-2. Pesquise e selecione o(s) grupo(s) ao(s) qual(is) deseja adicionar pessoas
-3. Você pode selecionar múltiplos grupos para adicionar pessoas a todos eles
-4. Clique em **Adicionar aos Grupos**
-
-Cada pessoa será adicionada como membro regular do(s) grupo(s) selecionado(s). Você pode promover indivíduos a líderes de grupo posteriormente na página [Membros do Grupo](../groups/group-members.md).
-
-### Remover do Grupo
-
-Remova todas as pessoas selecionadas de um ou mais grupos:
-
-1. Clique em **Ações em Massa** → **Remover do Grupo**
-2. Pesquise e selecione o(s) grupo(s) do(s) qual(is) deseja remover pessoas
-3. Você pode selecionar múltiplos grupos
-4. Clique em **Remover dos Grupos**
+1. Click **Bulk Actions** → **Set Custom Field**.
+2. Choose the Yes/No custom field you want to set.
+3. Choose the value (**Yes** or **No**) to apply.
+4. Click **Update**.
 
 :::info
-Esta ação apenas remove pessoas dos grupos especificados. Ela não exclui seus registros de pessoa.
+Only Yes/No custom fields are available for this bulk action. To set other field types, edit each person individually.
 :::
 
-### Excluir Pessoas
+### Add to Group
 
-Exclua permanentemente as pessoas selecionadas do banco de dados da sua igreja:
+Add all selected people to one or more groups:
 
-1. Clique em **Ações em Massa** → **Excluir**
-2. Revise a lista de pessoas que serão excluídas
-3. Digite **DELETE** no campo de confirmação
-4. Clique em **Confirmar Exclusão**
+1. Click **Bulk Actions** → **Add to Group**
+2. Search for and select the group(s) to add people to
+3. You can select multiple groups to add people to all of them
+4. Click **Add to Groups**
+
+Each person will be added as a regular member of the selected group(s). You can later promote individuals to group leaders if needed from the [Group Members](../groups/group-members.md) page.
+
+### Remove from Group
+
+Remove all selected people from one or more groups:
+
+1. Click **Bulk Actions** → **Remove from Group**
+2. Search for and select the group(s) to remove people from
+3. You can select multiple groups
+4. Click **Remove from Groups**
+
+:::info
+This action only removes people from the specified groups. It does not delete their person records.
+:::
+
+### Delete People
+
+Permanently delete the selected people from your church database:
+
+1. Click **Bulk Actions** → **Delete**
+2. Review the list of people who will be deleted
+3. Type **DELETE** in the confirmation field
+4. Click **Confirm Delete**
 
 :::danger
-Excluir pessoas é permanente e não pode ser desfeito. Isso removerá todos os seus dados, incluindo:
-- Informações pessoais
-- Participações em grupos
-- Registros de presença
-- Histórico de doações
-- Envios de formulários
+Deleting people is permanent and cannot be undone. This will remove all their data including:
+- Personal information
+- Group memberships
+- Attendance records
+- Donation history
+- Form submissions
 
-Use esta ação apenas se tiver certeza absoluta de que deseja remover essas pessoas do seu sistema.
+Only use this action if you are absolutely certain you want to remove these people from your system.
 :::
 
-## Resultados da Edição em Massa
+## Bulk Edit Results
 
-Após concluir uma ação em massa, você verá um resumo mostrando:
+After completing a bulk action, you'll see a summary showing:
 
-- **Total selecionado** -- Quantas pessoas foram incluídas na operação
-- **Atualizados com sucesso** -- Quantos registros foram alterados
-- **Falharam** -- Quaisquer registros que não puderam ser atualizados (se aplicável)
-- **Inalterados** -- Registros que não precisaram de alterações (por exemplo, ao usar o modo "apenas atualizar vazios")
+- **Total selected** -- How many people were included in the operation
+- **Successfully updated** -- How many records were changed
+- **Failed** -- Any records that couldn't be updated (if applicable)
+- **Unchanged** -- Records that didn't need changes (e.g., when using "only update empty" mode)
 
-Se alguma atualização falhar, você verá detalhes do erro explicando o motivo.
+If any updates failed, you'll see error details explaining why.
 
-## Melhores Práticas
+## Best Practices
 
-- **Comece pequeno** -- Teste operações em massa em alguns registros primeiro para garantir que está fazendo as alterações corretas
-- **Use filtros** -- Reduza sua lista com filtros ou pesquisa com IA antes de selecionar pessoas para garantir que está atualizando apenas os indivíduos certos
-- **Verifique as seleções** -- Revise as pessoas selecionadas antes de aplicar alterações em massa
-- **Use o modo "apenas atualizar vazios"** -- Quando você deseja preencher dados ausentes sem sobrescrever informações existentes
-- **Documente grandes alterações** -- Mantenha notas sobre atualizações em massa caso precise referenciá-las posteriormente
-- **Coordene com sua equipe** -- Avise outros administradores ao fazer grandes alterações em massa
+- **Start small** -- Test bulk operations on a few records first to ensure you're making the right changes
+- **Use filters** -- Narrow your list with filters or AI search before selecting people to ensure you're only updating the right individuals
+- **Double-check selections** -- Review the selected people before applying bulk changes
+- **Use "only update empty" mode** -- When you want to fill in missing data without overwriting existing information
+- **Document major changes** -- Keep notes about bulk updates in case you need to reference them later
+- **Coordinate with your team** -- Let other administrators know when making large bulk changes
 
-## Casos de Uso Comuns
+## Common Use Cases
 
-### Atualizando Novos Membros
+### Updating New Members
 
-Após uma aula de membros, atualize todos os participantes para o status de Membro:
+After a membership class, update all attendees to Member status:
 
-1. Pesquise as pessoas que participaram da aula
-2. Selecione todas elas
-3. Use **Ações em Massa** → **Definir Status de Membro** → **Membro**
+1. Search for the people who attended the class
+2. Select them all
+3. Use **Bulk Actions** → **Set Membership Status** → **Member**
 
-### Organizando Pequenos Grupos
+### Organizing Small Groups
 
-Adicione várias pessoas a um novo pequeno grupo:
+Add multiple people to a new small group:
 
-1. Pesquise as pessoas que você deseja no grupo
-2. Selecione-as
-3. Use **Ações em Massa** → **Adicionar ao Grupo** e selecione o pequeno grupo
+1. Search for the people you want in the group
+2. Select them
+3. Use **Bulk Actions** → **Add to Group** and select the small group
 
-### Limpando Dados
+### Cleaning Up Data
 
-Preencha o estado civil ausente para casais:
+Fill in missing marital status for married couples:
 
-1. Filtre por pessoas casadas (usando informações de família)
-2. Selecione aquelas com estado civil em branco
-3. Use **Ações em Massa** → **Definir Estado Civil** → **Casado** → **Apenas atualizar vazios**
+1. Filter for people who are married (using household information)
+2. Select those with blank marital status
+3. Use **Bulk Actions** → **Set Marital Status** → **Married** → **Only update empty**
 
 ## Artigos Relacionados
 
-- [Pesquisando Pessoas](./searching-people.md) -- Encontre pessoas para editar
-- [Pesquisa com IA](./ai-search.md) -- Use linguagem natural para encontrar grupos específicos de pessoas
-- [Membros do Grupo](../groups/group-members.md) -- Gerencie participação em grupos
-- [Exportando Dados](./exporting-data.md) -- Exporte dados de pessoas antes de fazer alterações em massa
+- [Searching People](./searching-people.md) -- Find people to edit
+- [AI Search](./ai-search.md) -- Use natural language to find specific groups of people
+- [Group Members](../groups/group-members.md) -- Manage group membership
+- [Exporting Data](./exporting-data.md) -- Export people data before making bulk changes

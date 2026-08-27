@@ -1,8 +1,8 @@
 ---
-title: "Plan Templates"
+title: "Modelos de Plano"
 ---
 
-# Plan Templates
+# Modelos de Plano
 
 <div class="article-intro">
 
@@ -57,7 +57,7 @@ Apply the Order of Service without Positions when you want a consistent song/ser
 
 If your standard service structure changes, open the template manager and use **Update from plan** to sync the template from your latest plan rather than rebuilding it from scratch.
 
-## Related Articles
+## Artigos Relacionados
 
 - [Service Plans](plans.md) — Create and manage individual service plans
 - [Plans Overview](plans-overview.md) — See all upcoming assignments across plans in one grid

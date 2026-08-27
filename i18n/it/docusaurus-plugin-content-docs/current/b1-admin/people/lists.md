@@ -1,66 +1,68 @@
 ---
-title: "Elenchi Salvati"
+title: "Saved Lists"
 ---
 
-# Elenchi Salvati
+# Saved Lists
 
 <div class="article-intro">
 
-Gli **Elenchi Salvati** ti permettono di archiviare una query di ricerca sotto un nome e rieseguirla con un clic in qualsiasi momento. Costruisci un elenco una volta - "Membri Attivi nel Campus Nord", "Visitatori negli ultimi 90 giorni", o qualsiasi filtro avanzato - e rimane nel pannello **Elenchi Salvati** sulla pagina Persone così non devi mai ricostruire la query di nuovo.
+**Saved Lists** let you store a Cerca query under a name and re-run it with one Fai clic at any Ora. Build a list once — "Attivo Membri in Campus North," "Visitors in the last 90 days," or any advanced filter — and it stays in the **Saved Lists** panel on the People page so you never have Per rebuild the query again.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Esegui almeno una ricerca nella sezione Persone così hai i risultati da salvare. Vedi [Ricerca di Persone](./searching-people.md) o [Ricerca AI](./ai-search.md).
+- Run at least one Cerca in the People section so you have results Per Salva. See [Searching People](./searching-people.md) or [AI Search](./ai-search.md).
 
 </div>
 
-## Salvataggio di una Ricerca come Elenco
+## Saving a Cerca as a List
 
-1. Esegui una ricerca sulla pagina **Persone** — una ricerca veloce, una ricerca AI, o una ricerca di filtro avanzato.
-2. Quando appaiono i risultati, un pulsante **Salva come Elenco** (icona segnalibro) appare nell'intestazione della pagina Persone.
-3. Fai clic su **Salva come Elenco**.
-4. Inserisci un **Nome** per l'elenco (obbligatorio).
-5. Facoltativamente inserisci una **Categoria** per raggruppare gli elenchi correlati nel pannello **Elenchi Salvati** (ad esempio, "Sensibilizzazione" o "Iscrizione").
-6. Fai clic su **Salva**.
+1. Run a Cerca on the **People** page — a quick Cerca, an AI Cerca, or an advanced filter Cerca.
+2. When results appear, a **Salva as List** button (bookmark icon) shows in the People page header.
+3. Fai clic **Salva as List**.
+4. Inserisci a **Name** for the list (Obbligatorio).
+5. Optionally Inserisci a **Category** Per Gruppo related lists together in the **Saved Lists** panel (for example, "Outreach" or "Membership").
+6. Fai clic **Salva**.
 
-L'elenco è ora salvato nell'account della tua chiesa e apparirà nel pannello **Elenchi Salvati** sul lato sinistro della pagina Persone.
+The list is now saved Per your church's Account and will appear in the **Saved Lists** panel on the lato sinistro of the People page.
 
 :::info
-Gli elenchi sono condivisi in tutta la tua chiesa -- chiunque abbia accesso a Persone può vederli e caricarli. Solo il personale con il permesso appropriato può rinominare o eliminare gli elenchi.
+Lists are shared across your church — anyone with People access can see and load them. Only Staff with the appropriate Permesso can rename or Elimina lists.
 :::
 
-## Caricamento di un Elenco Salvato
+## Loading a Saved List
 
-Nel pannello **Elenchi Salvati** sul lato sinistro della pagina Persone, fai clic su un nome di elenco. La ricerca viene rieseguita istantaneamente con la query archiviata, aggiornando la tabella dei risultati.
+In the **Saved Lists** panel on the lato sinistro of the People page, Fai clic any list name. The Cerca re-runs instantly with the stored query, updating the results table.
 
-Gli elenchi sono raggruppati per categoria (se ne hai assegnata una), con gli elenchi senza categoria che appaiono per ultimi.
+Lists are grouped by category (if you assigned one), with uncategorized lists appearing last.
 
 :::tip
-Gli elenchi sono **query in diretta**, non istantanee. Ogni volta che carichi un elenco, la ricerca viene eseguita di nuovo contro i tuoi dati attuali, così le nuove persone che ora soddisfano i criteri appariranno.
+Lists are **live queries**, not snapshots. Every Ora you load a list, the Cerca runs fresh against your current data, so new people who now match the criteria will appear.
 :::
 
-## Rinomina e Eliminazione di Elenchi
+## Renaming and Deleting Lists
 
-Il personale con il permesso di gestione può rinominare o eliminare qualsiasi elenco direttamente dal pannello Elenchi Salvati.
+Staff with manage Permesso can rename or Elimina any list directly from the Saved Lists panel.
 
-- Fai clic sull'**icona matita** accanto al nome di un elenco per rinominarlo.
-- Fai clic sull'**icona cestino** per eliminarlo (ti verrà chiesto di confermare).
+- Fai clic the **icona della matita** Avanti Per a list name Per rename it.
+- Fai clic the **trash icon** Per Elimina it (you will be asked Per confirm).
 
-## Casi d'Uso
+## Use Cases
 
-| Scenario | Come costruire l'elenco |
+| Scenario | How Per build the list |
 |---|---|
-| Tutti i visitatori | Ricerca avanzata: Stato di Iscrizione = Visitatore |
-| Membri in un campus specifico | Ricerca avanzata: Campus = [tuo campus] |
-| Persone senza un indirizzo email | Ricerca avanzata: Email è vuoto |
-| Volontari con un controllo dei precedenti scaduto | Ricerca avanzata: [Campo Personalizzato](../settings/custom-fields.md) "Controllo dei precedenti scade" è prima di oggi |
-| Risultati da una domanda AI | Fai una domanda in Ricerca AI, quindi salva |
+| All visitors | Advanced Cerca: Membership Status = Visitor |
+| Membri at a specific campus | Advanced Cerca: Campus = [your campus] |
+| People without an email address | Advanced Cerca: Email is empty |
+| Volontari with an expired background check | Advanced Cerca: [Custom Field](../settings/custom-fields.md) "Background check expires" is before Oggi |
+| Results from an AI question | Ask a question in AI Cerca, then Salva |
 
 ## Articoli Correlati
 
-- [Ricerca di Persone](./searching-people.md) — ricerca veloce e personalizzazione delle colonne
-- [Ricerca AI](./ai-search.md) — query in linguaggio naturale che puoi salvare come elenchi
-- [Campi Personalizzati](../settings/custom-fields.md) — definisci i tuoi campi di persona, quindi filtra e salva gli elenchi su di essi
+- [Searching People](./searching-people.md) — quick Cerca and column customization
+- [AI Search](./ai-search.md) — natural-language queries you can Salva as lists
+- [Custom Fields](../settings/custom-fields.md) — define your own person fields, then filter and Salva lists on them
+- [Demographics](./demographics.md) — drill a demographic chart into a People filter, then Salva it as a list
+- [Bulk Editing](./bulk-editing.md) — after loading a list, bulk-update all its Membri at once

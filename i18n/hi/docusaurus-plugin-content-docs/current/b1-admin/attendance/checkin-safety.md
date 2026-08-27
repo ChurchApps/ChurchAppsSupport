@@ -2,100 +2,100 @@
 title: "चेक-इन सुरक्षा"
 ---
 
-# चेक-इन सुरक्षा
+# Check-In Safety
 
 <div class="article-intro">
 
-B1 में चेक-इन के लिए बाल सुरक्षा नियंत्रणों का एक सेट शामिल है: कक्ष क्षमता सीमाएं और स्वयंसेवक-से-बाल अनुपात, कियोस्क में आयु और ग्रेड मार्गदर्शन, चेक-इन प्रकार जो सदस्यों, अतिथियों, और स्वयंसेवकों को अलग करते हैं, और एक विश्वसनीय पिकअप सूची प्रति घरेलू जो चेक-आउट पर सत्यापित की जाती है। यह पृष्ठ B1 Admin में प्रत्येक सुरक्षा सुविधा को कॉन्फ़िगर करने के तरीके को कवर करता है।
+B1 includes a set of child-safety controls for check-in: room capacity limits and volunteer-to-child ratios, age and grade guidance at the kiosk, check-in types that distinguish members, guests, and volunteers, and a trusted-pickup list per household that is verified at check-out. This page covers how to configure each safety feature in B1 Admin.
 
 </div>
 
 <div class="prereqs">
-<h4>शुरू करने से पहले</h4>
+<h4>Before You Begin</h4>
 
-- अपनी [उपस्थिति संरचना](setup.md) सेट अप करें और [चेक-इन कियोस्क](check-in.md) सेट अप करें
-- कक्ष [समूह](../groups/creating-groups.md) हैं जो सेवा के समय से जुड़े हैं — नीचे की सुरक्षा सेटिंग्स समूह पर रहती हैं
-- पेज-ए-पैरेंट और आपातकालीन प्रसारण को एक जुड़े हुए टेक्सिंग प्रदाता की आवश्यकता होती है ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream), या Mutual Ministry)
+- Set up your [attendance structure](setup.md) and [check-in kiosks](check-in.md)
+- Rooms are [groups](../groups/creating-groups.md) linked to service times — the safety settings below live on the group
+- Page-a-parent and emergency broadcast require a connected texting provider ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream), or Mutual Ministry)
 
 </div>
 
-## कक्ष क्षमता और कक्ष को बंद करना
+## Room Capacity and Closing a Room
 
-प्रत्येक चेक-इन कक्ष (समूह) अपनी स्वयं की सीमाओं को लागू कर सकता है। समूह खोलें, इसकी सेटिंग्स को संपादित करने के लिए **पेंसिल आइकन** पर क्लिक करें, और **चेक-इन क्षमता** अनुभाग खोजें:
+Each check-in room (group) can enforce its own limits. Open the group, click the **pencil icon** to edit its settings, and find the **Check-In Capacity** section:
 
-- **क्षमता** -- एक समय में इस कक्ष में चेक-इन किए जा सकने वाले लोगों की अधिकतम संख्या। जब कक्ष पूर्ण हो, तो इसमें चेक-इन अवरुद्ध हो जाता है और कियोस्क पूर्ण कक्ष का नाम देता है।
-- **अतिथि क्षमता** -- कक्ष पकड़ सकता है कि कितने अतिथि पर एक वैकल्पिक अलग कप।
-- **चेक-इन के लिए बंद** -- इस कक्ष में सभी चेक-इन को तुरंत बंद करने के लिए **हां** पर सेट करें (उदाहरण के लिए, जब कोई कक्षा रद्द हो या कक्ष अनुपलब्ध हो)। चेक-आउट अभी भी काम करते हैं।
+- **Capacity** -- The maximum number of people who can be checked in to this room at once. When the room is full, check-in to it is blocked and the kiosk names the full room.
+- **Guest Capacity** -- An optional separate cap on how many guests the room can hold.
+- **Closed for Check-In** -- Set to **Yes** to stop all check-ins to this room immediately (for example, when a class is cancelled or a room is unavailable). Check-outs still work.
 
-## स्वयंसेवक अनुपात
+## Volunteer Ratios
 
-समूह पर समान **चेक-इन क्षमता** अनुभाग में कर्मचारी नियम शामिल हैं:
+The same **Check-In Capacity** section on the group includes staffing rules:
 
-- **प्रति स्वयंसेवक बाल** -- अधिकतम संख्या बाल कि प्रत्येक चेक-इन स्वयंसेवक कवर कर सकते हैं (उदाहरण के लिए 5 का मतलब एक स्वयंसेवक प्रति पांच बच्चों)।
-- **न्यूनतम स्वयंसेवक** -- स्वयंसेवकों की सबसे छोटी संख्या जो बाल चेक-इन से पहले चेक-इन होनी चाहिए कक्ष के लिए।
+- **Children per Volunteer** -- The maximum number of children each checked-in volunteer can cover (e.g. 5 means one volunteer per five children).
+- **Minimum Volunteers** -- The smallest number of volunteers that must be checked in before children can check in to the room.
 
-स्वयंसेवक इन नियमों की ओर गिनती करते हैं जब वे कियोस्क पर **स्वयंसेवक** प्रकार के साथ चेक-इन करते हैं (नीचे [चेक-इन प्रकार](#check-in-types) देखें)।
+Volunteers count toward these rules when they check in with the **Volunteer** type at the kiosk (see [Check-In Types](#check-in-types) below).
 
-### चेतावनी बनाम ब्लॉक चुनना
+### Choosing Warn vs. Block
 
-अनुपात कितनी कड़ाई से लागू किया जाता है यह एक चर्च-व्यापी सेटिंग है:
+How strictly ratios are enforced is a church-wide setting:
 
-1. B1 Admin में, **सेटिंग्स > चर्च प्रबंधित करें** पर जाएं और **चेक-इन** टाइल खोलें।
-2. **स्वयंसेवक अनुपात प्रवर्तन** सेट करें:
-   - **चेतावनी (पुष्टि के साथ अनुमति)** -- कियोस्क दिखाता है कि जब कोई कक्ष अनुपात से अधिक है या अपने न्यूनतम स्वयंसेवक के तहत है, और एक कर्मचारी सदस्य वैसे भी आगे बढ़ने की पुष्टि कर सकता है। यह डिफ़ॉल्ट है।
-   - **ब्लॉक (चेक-इन को रोकें)** -- कक्ष चेक-इन अस्वीकार कर दिया जाता है जब तक पर्याप्त स्वयंसेवक चेक-इन नहीं करते।
+1. In B1 Admin, go to **Settings > Manage Church** and open the **Check-In** tile.
+2. Set **Volunteer Ratio Enforcement**:
+   - **Warn (allow with confirmation)** -- The kiosk shows a warning when a room is over ratio or under its minimum volunteers, and a staff member can confirm to proceed anyway. This is the default.
+   - **Block (prevent check-in)** -- Check-in to the room is refused until enough volunteers are checked in.
 
 :::info
-क्षमता और चेक-इन के लिए बंद हमेशा हार्ड सीमाएं हैं — चेतावनी/ब्लॉक विकल्प केवल स्वयंसेवक अनुपात पर लागू होता है।
+Capacity and Closed for Check-In are always hard limits — the warn/block choice applies only to volunteer ratios.
 :::
 
-## चेक-इन प्रकार
+## Check-In Types
 
-प्रत्येक चेक-इन रिकॉर्ड करता है कि क्या व्यक्ति एक **सदस्य**, **अतिथि**, या **स्वयंसेवक** है। प्रकार कियोस्क घरेलू स्क्रीन पर चिप्स के साथ चुना जाता है (सदस्य डिफ़ॉल्ट है)। प्रकार सुरक्षा नियमों को खिलाते हैं — स्वयंसेवक अनुपात कवरेज प्रदान करते हैं, और अतिथि कक्ष की अतिथि क्षमता के विरुद्ध गिनती करते हैं।
+Every check-in records whether the person is a **Member**, **Guest**, or **Volunteer**. The type is chosen with chips on the kiosk household screen (Member is the default). Types feed the safety rules — volunteers provide ratio coverage, and guests count against the room's Guest Capacity.
 
-## आयु और ग्रेड कक्ष मार्गदर्शन
+## Age and Grade Room Guidance
 
-आप प्रत्येक कक्ष को आयु या ग्रेड सीमाएं दे सकते हैं ताकि कियोस्क परिवारों को उचित कक्षों की ओर निर्देशित करे:
+You can give each room age or grade bounds so the kiosk guides families to appropriate rooms:
 
-- समूह की सेटिंग्स पर, **आयु और ग्रेड** अनुभाग का उपयोग करके कक्ष के लिए न्यूनतम/अधिकतम आयु (वर्ष और महीने) और/या ग्रेड सेट करें।
-- कियोस्क पर, कक्ष एक बाल योग्य हैं हाइलाइट किया जाता है और कक्ष वे नहीं हैं मंद हैं। एक मंद कक्ष अभी भी कर्मचारी पुष्टि के साथ चुना जा सकता है — मार्गदर्शन कभी हार्ड-ब्लॉक नहीं करता है।
+- On the group's settings, use the **Age & Grade** section to set the minimum/maximum age (years and months) and/or grade for the room.
+- At the kiosk, rooms a child qualifies for are highlighted and rooms they don't are dimmed. A dimmed room can still be chosen with a staff confirmation — the guidance never hard-blocks.
 
-ग्रेड आपके चर्च के **ग्रेड प्रचार तारीख** पर रोल ओवर:
+Grades roll over on your church's **grade promotion date**:
 
-1. B1 Admin में, **सेटिंग्स > चर्च प्रबंधित करें** पर जाएं और ग्रेड प्रचार टाइल खोलें।
-2. महीने और दिन सेट करें आपके चर्च छात्रों को बढ़ावा देता है (उदाहरण के लिए, अगस्त 1)। कियोस्क पर आयु और ग्रेड सबसे हाल ही में प्रचार तारीख के रूप में गणना की जाती है।
+1. In B1 Admin, go to **Settings > Manage Church** and open the grade promotion tile.
+2. Set the month and day your church promotes students (for example, August 1). Ages and grades at the kiosk are computed as of the most recent promotion date.
 
-## विश्वसनीय और अनुमति नहीं किए गए पिकअप लोग
+## Trusted and Not-Authorized Pickup People
 
-प्रत्येक घरेलू लोगों की एक सूची ले जा सकते हैं जो हैं - या नहीं हैं — अपने बच्चों को पिकअप करने की अनुमति दी।
+Each household can carry a list of people who are — or are not — allowed to pick up its children.
 
-1. **लोग** में एक व्यक्ति की पृष्ठ खोलें और **पिकअप** कार्ड खोजें।
-2. **जोड़ें** पर क्लिक करें। एक मौजूदा व्यक्ति के लिए खोजें, या **नाम**, **संबंध**, और एक फोटो में प्रवेश करके सिस्टम में किसी को जोड़ें।
-3. **स्थिति** सेट करें:
-   - **विश्वसनीय** -- चेक-आउट पर, यह व्यक्ति एक पिकअप कार्ड के रूप में दिखाई देता है उनके फोटो के साथ, सत्यापित पिकअप तेज बना रहा है।
-   - **अनुमति नहीं** -- यदि कोई इस नाम के तहत पिकअप का प्रयास करता है, तो कियोस्क एक चेतावनी के साथ चेक-आउट को ब्लॉक करता है। एक कर्मचारी सदस्य ओवरराइड कर सकता है, और ओवरराइड उपस्थिति रिकॉर्ड पर दर्ज किया जाता है।
+1. Open a person's page in **People** and find the **Pickup** card.
+2. Click **Add**. Search for an existing person, or add someone not in the system by entering their **Name**, **Relationship**, and a photo.
+3. Set the **Status**:
+   - **Trusted** -- At check-out, this person appears as a tappable pickup card with their photo, making verified pickup fast.
+   - **Not Authorized** -- If someone attempts pickup under this name, the kiosk blocks check-out with a warning. A staff member can override, and the override is recorded on the attendance record.
 
-कार्ड पर व्यक्ति की स्थिति चिप पर क्लिक करें विश्वसनीय और अनुमति नहीं के बीच टॉगल करने के लिए।
+Click a person's status chip on the card to toggle between Trusted and Not Authorized.
 
 :::tip
-जब भी संभव हो विश्वसनीय पिकअप लोगों को फोटो जोड़ें — चेक-आउट स्क्रीन फोटो दिखाता है ताकि स्वयंसेवक दृश्य रूप से सत्यापित कर सकें व्यक्ति उनके सामने खड़ा है।
+Add photos to trusted pickup people whenever possible — the check-out screen shows the photo so volunteers can visually verify the person standing in front of them.
 :::
 
-## पेज-ए-पैरेंट और आपातकालीन प्रसारण
+## Page-a-Parent and Emergency Broadcast
 
-दोनों सुविधाएं आपके चर्च के जुड़े हुए टेक्सिंग प्रदाता के माध्यम से पाठ संदेश भेजती हैं — कोई निर्मित SMS सेवा नहीं है, इसलिए समर्थित प्रदाताओं में से एक को पहले कॉन्फ़िगर किया जाना चाहिए।
+Both features send text messages through your church's connected texting provider — there is no built-in SMS service, so one of the supported providers must be configured first.
 
-- **एक माता-पिता को पेज करें** -- एक कर्मचारी कियोस्क के चेक-आउट स्क्रीन से, कर्मचारी एक चेक-इन बाल के माता-पिता/अभिभावकों को टेक्स्ट कर सकते हैं (उदाहरण के लिए, "कृपया नर्सरी आएं")।
-- **आपातकालीन प्रसारण** -- कियोस्क की प्रशासन सेटिंग्स से, कर्मचारी सभी चेक-इन घरेलू अभिभावकों को चयनित सेवा के लिए एक बार में टेक्स्ट कर सकते हैं। भेजने के लिए **आपातकालीन** टाइप करने की आवश्यकता होती है।
+- **Page a parent** -- From a manned kiosk's check-out screen, staff can text a checked-in child's parents/guardians (for example, "Please come to the nursery").
+- **Emergency broadcast** -- From the kiosk's admin settings, staff can text every checked-in household's guardians for the selected service at once. Sending requires typing **EMERGENCY** to confirm.
 
-लोग जिन्होंने ऑप्ट आउट टेक्स्ट किया है, या जिनके पास फाइल पर कोई मोबाइल संख्या नहीं है, स्वचालित रूप से छोड़ दिए जाते हैं — कियोस्क रिपोर्ट करता है कितने संदेश भेजे गए और कितने छोड़ दिए गए।
+People who have opted out of texts, or who have no mobile number on file, are skipped automatically — the kiosk reports how many messages were sent and how many were skipped.
 
-[चेक-आउट और बाल सुरक्षा](../../b1-checkin/check-in/checking-out) में कियोस्क-साइड वॉकथ्रू देखें।
+See the kiosk-side walkthrough in [Check-Out & Child Safety](../../b1-checkin/check-in/checking-out).
 
-## संबंधित लेख
+## Related Articles
 
-- [चेक-इन](check-in.md) — कियोस्क सेटअप और हार्डवेयर
-- [चेक-आउट और बाल सुरक्षा](../../b1-checkin/check-in/checking-out) — कियोस्क चेक-आउट, पिकअप सत्यापन, और पेजिंग प्रवाह
-- [समूह बनाना](../groups/creating-groups.md) — जहां कक्ष सेटिंग्स रहती हैं
-- [उपस्थिति सेटअप](setup.md) — सेवाएं, सेवा के समय, और कक्ष असाइनमेंट
-- [निजी संदेशों के लिए न्यूनतम आयु](../settings/mobile-app.md#member-directory--messaging-settings) — बच्चों के साथ नई निजी-संदेश वार्तालाप को ब्लॉक करते हुए उन्हें निर्देशिका में रखता है
+- [Check-In](check-in.md) — kiosk setup and hardware
+- [Check-Out & Child Safety](../../b1-checkin/check-in/checking-out) — the kiosk check-out, pickup verification, and paging flows
+- [Creating Groups](../groups/creating-groups.md) — where room settings live
+- [Attendance Setup](setup.md) — services, service times, and room assignments
+- [Minimum Age for Private Messages](../settings/mobile-app.md#member-directory--messaging-settings) — blocks new private-message conversations with children while keeping them in the directory

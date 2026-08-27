@@ -89,6 +89,19 @@ Control whether people have opted out of communications:
 Be careful when changing opt-out status. People who have explicitly opted out should not receive communications unless they have given new consent.
 :::
 
+### Set Custom Field
+
+Set a Yes/No [custom field](../settings/custom-fields.md) value for all selected people at once:
+
+1. Click **Bulk Actions** → **Set Custom Field**.
+2. Choose the Yes/No custom field you want to set.
+3. Choose the value (**Yes** or **No**) to apply.
+4. Click **Update**.
+
+:::info
+Only Yes/No custom fields are available for this bulk action. To set other field types, edit each person individually.
+:::
+
 ### Add to Group
 
 Add all selected people to one or more groups:

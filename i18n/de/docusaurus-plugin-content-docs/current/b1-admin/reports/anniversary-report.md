@@ -1,49 +1,45 @@
----
-title: "Jahrestag-Berichte"
+﻿---
+title: "Jahrestagliste"
 ---
 
-# Jahrestag-Berichte
+# Jahrestagliste
 
 <div class="article-intro">
 
-Der Bericht „Jahrestag" hilft Ihnen, mit Ihrer Gemeinde verbunden zu bleiben, indem Mitglieder mit anstehenden Hochzeitsjubiläen angezeigt werden. Verwenden Sie ihn, um Feiern zu planen, Karten zu versenden oder Ankündigungen während der Gottesdienste zu machen.
+Benötigen Sie eine Liste von Personen mit Hochzeitsjahrestag in einem bestimmten Monat – für das Gemeindeblatt, Karten oder Ankündigungen? Mit der Personensuche können Sie nach **Jahrestag-Monat** filtern und die Daten direkt in den Ergebnissen anzeigen.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Stellen Sie sicher, dass Jahrestags-Daten im Profil jeder Person eingegeben sind. Siehe [Personen hinzufügen](../people/adding-people.md) für Details.
-- Sie benötigen die entsprechenden [Berechtigungen](../settings/roles-permissions.md), um auf Berichte zuzugreifen
+- Stellen Sie sicher, dass Jahrestagsdat auf dem Profil jeder Person eingetragen sind. Siehe [Personen hinzufügen](../people/adding-people.md) für Details.
+- Sie benötigen die Berechtigung zum Anzeigen von Personen. Siehe [Rollen & Berechtigungen](../settings/roles-permissions.md).
 
 </div>
 
-## Bericht ausführen
+## Abrufen einer Jahrestagliste für einen Monat
 
-1. Gehen Sie direkt zu **admin.b1.church/reports/anniversaries** in Ihrem Browser (Berichte haben keinen Eintrag im Navigationsmenü – ein Lesezeichen für die Adresse ist der einfachste Weg, um dorthin zurückzukehren).
-2. Wählen Sie den **Monat**, den Sie möchten, aus der Dropdown-Liste aus. Sie können die Ergebnisse optional auf eine einzelne **Gruppe** beschränken.
-3. Klicken Sie auf **Bericht ausführen**. Der Bericht listet alle Personen mit einem Jahrestag in diesem Monat auf, mit dem Datum – bereit zum direkten Einlesen in ein Bulletin oder eine Ankündigungsliste.
+1. Öffnen Sie das **Abschnittsmenü** in der oberen linken Ecke und wählen Sie **Personen**.
+2. Klicken Sie unter dem Suchfeld auf **Erweitert**.
+3. Erweitern Sie den Abschnitt **Demografie** und aktivieren Sie **Jahrestag-Monat**, wählen Sie dann den Monat aus.
+4. Führen Sie die Suche aus – alle Personen mit einem Jahrestag in diesem Monat werden in den Ergebnissen angezeigt.
+5. Um die Daten anzuzeigen, klicken Sie auf das **Spaltensymbol** oben rechts in den Ergebnissen und aktivieren Sie die Spalte **Jahrestag**. Verwenden Sie **Exportieren**, um die Liste als Tabelle herunterzuladen, wenn Sie sie lieber sortieren oder drucken möchten.
 
-## Was der Bericht zeigt
+## Praktische Verwendungen
 
-Der Bericht „Jahrestag" zeigt:
-
-- **Jahrestag** – Das Datum ihres Hochzeitsjubiläums.
-- **Name** – Der Name der Person aus Ihrer Kirchendatenbank.
-
-Die Ergebnisse decken den ausgewählten Monat ab und machen es einfach, zu sehen, wer einen Jahrestag hat.
-
-## Praktische Anwendungen
-
-- **Wöchentliche Ankündigungen** – Führen Sie den Bericht für die kommende Woche aus und beziehen Sie Jubiläen in Ihr Bulletin oder Ankündigungen ein.
-- **Jubiläums-Karten** – Generieren Sie eine Liste für den Monat und lassen Sie Ihr Team persönliche Jubiläums-Karten versenden.
-- **Kleingruppenleitende** – Leitende können den Bericht ausführen, um die Jubiläen von Mitgliedern in ihrer Gruppe nicht zu vergessen.
-- **Meilenstein-Feiern** – Filtern Sie nach spezifischen Datumsbereichen, um Meilenstein-Jubiläumsfeierlichkeiten zu planen.
+- **Wöchentliche Gemeindebriefe** – Führen Sie die Liste des aktuellen Monats aus und fügen Sie Jahrestage in Ihr Gemeindeblatt oder Ankündigungen ein.
+- **Jahrestagskartennen** – Exportieren Sie die Liste des Monats und geben Sie sie Ihrem Kartenschreib-Team.
+- **Meilenstein-Feierlichkeiten** – Kombinieren Sie mit dem Filter **Jahre verheiratet**, um Meilenstein-Jahrestage zu finden.
 
 :::tip
-Führen Sie diesen Bericht am Anfang jedes Monats aus, um im Voraus zu planen. Sie können den Datumsbereich so einstellen, dass er den gesamten Monat abdeckt, damit Sie Zeit haben, Karten oder Ankündigungen vorzubereiten.
+Führen Sie dies zu Beginn jedes Monats durch, damit Sie Zeit haben, Karten zu schreiben oder Ankündigungen vorzubereiten, bevor Jahrestage eintreffen.
 :::
 
 :::info
-Jubiläums-Daten stammen aus dem Jubiläums-Feld im Profil jeder Person. Stellen Sie sicher, dass Ihre [Mitgliedschaftsunterlagen](../people/adding-people.md) aktuell sind, um genaue Ergebnisse zu erhalten.
+Jahrestagsdat stammen aus dem Jahrestag-Feld auf dem Profil jeder Person. Wenn jemand fehlt, muss sein Profil einfach das Datum hinzugefügt haben. Siehe [Personen hinzufügen](../people/adding-people.md).
 :::
+
+## Siehe auch
+
+Suchen Sie gleichzeitig nach Geburtstagen? Siehe [Geburtstags- und Jahrestaglisten](./birthday-report.md), um beide in einer Suche zu ziehen.

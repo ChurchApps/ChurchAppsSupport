@@ -6,65 +6,65 @@ title: "ApiHelper"
 
 <div class="article-intro">
 
-O pacote `@churchapps/apihelper` fornece utilitários do lado do servidor para todas as APIs Express.js do ChurchApps. Ele inclui a classe base de controller, autenticação JWT, utilitários de banco de dados e integrações AWS dos quais todo projeto de API depende.
+The `@churchapps/apihelper` package provides server-side utilities for all ChurchApps Express.js APIs. It includes the base controller class, JWT authentication, database utilities, and AWS integrations that every API project depends on.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Before You Begin</h4>
 
-- Instale **Node.js** e **Git** -- veja [Pré-requisitos](../setup/prerequisites)
-- Familiarize-se com a configuração do [workspace Packages](./index.md) e fluxo de lançamento
-- Este pacote depende de [`@churchapps/helpers`](./helpers) (como uma dependência de pares) e o re-exporta
+- Install **Node.js** and **Git** -- see [Prerequisites](../setup/prerequisites)
+- Familiarize yourself with the [Packages workspace](./index.md) setup and release flow
+- This package depends on [`@churchapps/helpers`](./helpers) (as a peer dependency) and re-exports it
 
 </div>
 
-## O Que Está Incluído
+## What's Included
 
-- **CustomBaseController** -- classe base para controllers de API, construída em `inversify-express-utils`
-- **Auth** -- autenticação JWT via `CustomAuthProvider`, `AuthenticatedUser` e `Principal`
-- **Utilitários de banco de dados** -- `DB.query` / `DB.queryOne` e a classe `Pool` para gerenciamento de conexões MySQL, mais `MySqlHelper` e `DBCreator` para configuração de schema
-- **Integrações AWS** -- `AwsHelper` para armazenamento de arquivos S3 e leituras do Parameter Store
-- **Email** -- `EmailHelper` suportando transportes SES e SMTP
-- **Carregamento de configuração** -- `EnvironmentBase` lê strings de conexão e segredos de variáveis de ambiente ou Parameter Store
+- **CustomBaseController** -- base class for API controllers, built on `inversify-express-utils`
+- **Auth** -- JWT authentication via `CustomAuthProvider`, `AuthenticatedUser`, and `Principal`
+- **Database utilities** -- `DB.query` / `DB.queryOne` and the `Pool` class for MySQL connection management, plus `MySqlHelper` and `DBCreator` for schema setup
+- **AWS integrations** -- `AwsHelper` for S3 file storage and SSM Parameter Store reads
+- **Email** -- `EmailHelper` supporting SES and SMTP transports
+- **Config loading** -- `EnvironmentBase` reads connection strings and secrets from environment variables or Parameter Store
 - **Misc** -- `EncryptionHelper`, `FileStorageHelper`, `LoggingHelper`, `BasePermissions`, `SlugHelper`
 
-## Configuração para Desenvolvimento Local
+## Setup for Local Development
 
-Este pacote vive no workspace [Packages](https://github.com/ChurchApps/Packages) ao lado das outras bibliotecas compartilhadas:
+This package lives in the [Packages](https://github.com/ChurchApps/Packages) workspace alongside the other shared libraries:
 
-1. Clone o workspace:
+1. Clone the workspace:
 
    ```bash
    git clone https://github.com/ChurchApps/Packages.git
    ```
 
-2. Instale as dependências na raiz do workspace:
+2. Install dependencies at the workspace root:
 
    ```bash
    cd Packages && yarn install
    ```
 
-3. Construa (compila TypeScript para `dist/`):
+3. Build (compiles TypeScript to `dist/`):
 
    ```bash
    yarn workspace @churchapps/apihelper build
    ```
 
-   Ou execute `yarn build` na raiz para construir cada pacote em ordem de dependência.
+   Or run `yarn build` at the root to build every package in dependency order.
 
-Para testar mudanças dentro de uma API consumidora, use um portal Yarn temporário -- veja [Desenvolvimento Local Contra uma Aplicação Consumidora](./index.md#local-development-against-a-consuming-app).
+To test changes inside a consuming API, use a temporary Yarn portal -- see [Local Development Against a Consuming App](./index.md#local-development-against-a-consuming-app).
 
-## Publicando
+## Publishing
 
-Lançamentos vão através de changesets: execute `yarn changeset` na raiz do workspace com cada mudança, depois `yarn publish-all` quando pronto para lançar. Veja [Visão Geral de Bibliotecas Compartilhadas](./index.md#releasing-with-changesets) para o fluxo completo.
+Releases go through changesets: run `yarn changeset` at the workspace root with every change, then `yarn publish-all` when ready to release. See the [Shared Libraries Overview](./index.md#releasing-with-changesets) for the full flow.
 
 :::info
-Este pacote é uma dependência de toda API ChurchApps -- a API principal, AskApi e LessonsApi. Ao fazer alterações, teste contra uma API localmente antes de publicar.
+This package is a dependency of every ChurchApps API -- the core Api, AskApi, and LessonsApi. When making changes, test against an API locally before publishing.
 :::
 
 ## Artigos Relacionados
 
-- **[Helpers](./helpers)** -- O pacote de utilitários base do qual este pacote depende
-- **[Estrutura do Módulo](../api/module-structure)** -- Como controllers e middleware de autenticação são usados nos módulos da API
-- **[Configuração Local da API](../api/local-setup)** -- Configurando a API para desenvolvimento local
+- **[Helpers](./helpers)** -- The base utility package that this package depends on
+- **[Module Structure](../api/module-structure)** -- How controllers and auth middleware are used in API modules
+- **[Local API Setup](../api/local-setup)** -- Setting up the API for local development

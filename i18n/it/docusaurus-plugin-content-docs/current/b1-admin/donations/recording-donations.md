@@ -1,64 +1,64 @@
 ---
-title: "Registrazione delle Donazioni"
+title: "Registrazione Donazioni"
 ---
 
-# Registrazione delle Donazioni
+# Recording Donations
 
 <div class="article-intro">
 
-La registrazione delle donazioni in B1 Admin viene eseguita tramite il sistema Lotti. Crei un lotto per rappresentare una raccolta (come un'offerta domenicale), quindi aggiungi donazioni individuali a quel lotto. Questo mantiene i tuoi record di donazione organizzati e facili da riconciliare.
+Recording donations in B1 Admin is done through the Batches system. You Crea a batch Per represent a collection (such as a Sunday offering), then Aggiungi individual donations Per that batch. This keeps your giving records organized and easy Per reconcile.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Configura i tuoi [fondi](funds.md) così puoi assegnare donazioni alle categorie corrette
-- Crea un [lotto](batches.md) per contenere le donazioni che stai per inserire
-- Assicurati che i donatori siano nella tua [directory di persone](../people/adding-people.md) così puoi cercarli quando inserisci i doni
+- Set up your [funds](funds.md) so you can assign donations Per the correct categories
+- Crea a [batch](batches.md) Per hold the donations you are about Per Inserisci
+- Make sure the donors are in your [people directory](../people/adding-people.md) so you can look them up when entering gifts
 
 </div>
 
-## Creazione di un Lotto e Aggiunta di Donazioni
+## Creating a Batch and Adding Donations
 
-1. In **B1 Admin**, apri il **menu della sezione** nell'angolo in alto a sinistra e scegli **Donazioni**, quindi fai clic su **Lotti**.
-2. Fai clic su **Aggiungi Lotto**.
-3. Inserisci un nome per il lotto (ad es. "Offerta Domenica - 5 Jan") e seleziona la data. Fai clic su **Salva**.
-4. Il tuo nuovo lotto appare nell'elenco mostrando zero donazioni e $0,00.
-5. Fai clic sul **nome del lotto** per aprirlo.
+1. In **B1 Admin**, Apri the **menu della sezione** in the angolo in alto a sinistra and Scegli **Donations**, then Fai clic **Batches**.
+2. Fai clic **Aggiungi Batch**.
+3. Inserisci a name for the batch (e.g., "Sunday Offering - Jan 5") and Seleziona the Data. Fai clic **Salva**.
+4. Your new batch appears in the list showing zero donations and $0.00.
+5. Fai clic on the **batch name** Per Apri it.
 
-## Inserimento di Donazioni Individuali
+## Entering Individual Donations
 
-1. Nella pagina dei dettagli del lotto, digita il nome del donatore nel **campo di ricerca** per trovarlo.
-2. Dopo aver selezionato una persona, appare il modulo di voce di donazione con campi per **Data**, **Metodo di Pagamento**, **Fondo**, **Importo** e **Numero Assegno**.
-3. Compila i dettagli e fai clic su **Aggiungi Donazione**.
-4. La donazione viene aggiunta alla tabella sottostante e il modulo si reimposta così puoi inserire il prossimo.
+1. In the batch detail page, Digita the donor's name in the **Cerca field** Per Trova them.
+2. After selecting a person, the donation entry form appears with fields for **Data**, **Payment Method**, **Fund**, **Amount**, and **Check Number**.
+3. Fill in the details and Fai clic **Aggiungi Donazione**.
+4. The donation is added Per the table below, and the form resets so you can Inserisci the Avanti one.
 
 :::tip
-Puoi inserire rapidamente più donazioni in fila senza lasciare la pagina del lotto. Il modulo si reimposta dopo ogni voce così puoi muoverti attraverso una pila di assegni o buste efficientemente.
+You can quickly Inserisci multiple donations in a row without leaving the batch page. The form resets after each entry so you can move through a stack of checks or envelopes efficiently.
 :::
 
-## Divisione di una Donazione tra Più Fondi
+## Splitting a Donazione Across Multiple Funds
 
-A volte un singolo donatore dà a più di un fondo in una sola transazione. Per gestire questo:
+Sometimes a single donor gives Per more than one fund in one transaction. Per handle this:
 
-1. Fai clic sul pulsante **Modifica** sulla riga di donazione.
-2. Nel modulo di modifica, aggiungi importi a fondi diversi. Il totale si calcolerà automaticamente dalle importazioni di fondi individuali.
-3. Fai clic su **Salva** per aggiornare la donazione.
+1. Fai clic the **Modifica** button on the donation row.
+2. In the Modifica form, Aggiungi amounts Per different funds. The total will automatically calculate from the individual fund amounts.
+3. Fai clic **Salva** Per update the donation.
 
 :::info
-La divisione di donazioni tra fondi è comune quando un donatore scrive un singolo assegno designato per scopi multipli, come Fondo Generale e Missioni.
+Splitting donations across funds is common when a donor writes a single check designated for multiple purposes, such as General Fund and Missions.
 :::
 
-## Modifica o Rimozione di Donazioni
+## Editing or Removing Donations
 
-Per modificare una donazione, fai clic sul pulsante **Modifica** sulla sua riga nel lotto. Puoi cambiare la data, l'importo, il fondo, il metodo di pagamento o qualsiasi altro dettaglio. Fai clic su **Salva** quando hai finito.
+Per Modifica a donation, Fai clic the **Modifica** button on its row in the batch. You can change the Data, amount, fund, payment method, or any other detail. Fai clic **Salva** when you are done.
 
 :::tip
-L'intestazione della pagina del lotto si aggiorna automaticamente per mostrare il numero totale di donazioni e l'importo in dollari combinato mentre aggiungi o modifichi le voci. Usa questo per riconciliare contro la tua ricevuta di deposito.
+The batch page header updates automatically Per show the total number of donations and the combined dollar amount as you Aggiungi or Modifica entries. Use this Per reconcile against your deposit slip.
 :::
 
-## Passaggi Successivi
+## Avanti Steps
 
-- Rivedi le tue voci usando [Rapporti sulle Donazioni](donation-reports.md) per verificare l'accuratezza
-- A fine anno, genera [Dichiarazioni di Donazione](giving-statements.md) per i tuoi donatori
+- Review your entries using [Donation Reports](donation-reports.md) Per verify accuracy
+- At Anno-end, generate [Giving Statements](giving-statements.md) for your donors

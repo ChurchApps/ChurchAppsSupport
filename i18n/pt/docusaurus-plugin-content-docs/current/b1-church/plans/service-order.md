@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Ordem de Serviço"
 ---
 
@@ -6,50 +6,50 @@ title: "Ordem de Serviço"
 
 <div class="article-intro">
 
-Quando você abre um plano, a seção **Order of Service** mostra a sequência de itens para aquele serviço. Isto lhe dá a você e seu time uma visualização compartilhada do fluxo de serviço, incluindo timing, detalhes de cântico e descrições para cada elemento.
+When you open a plan, the **Order of Service** section shows the sequence of items for that service. This gives you and your team a shared view of the service flow, including timing, song details, and descriptions for each element.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Before You Begin</h4>
 
-- Você deve estar [conectado](../getting-started/logging-in.md) a sua conta B1.church.
-- Abra um plano da sua [lista Plans](./viewing-plans.md) para visualizar sua ordem de serviço.
+- You must be [logged in](../getting-started/logging-in.md) to your B1.church account.
+- Open a plan from your [Plans list](./viewing-plans.md) to view its service order.
 
 </div>
 
-## O Que a Ordem de Serviço Mostra
+## What the Service Order Shows
 
-A ordem de serviço é exibida como uma lista de itens na ordem em que ocorrerão durante o serviço. Cada item inclui:
+The service order is displayed as a list of items in the order they will occur during the service. Each item includes:
 
-- **Cumulative time** -- O tempo de execução do início do serviço, para que você saiba quando cada elemento é esperado começar.
-- **Item label and description** -- O nome do elemento (como um título de cântico, oração ou anúncio) junto com qualquer nota ou descrições.
-- **Duration** -- Quanto tempo o item é esperado levar.
+- **Cumulative time** -- The running time from the start of the service, so you know when each element is expected to begin.
+- **Item label and description** -- The name of the element (such as a song title, prayer, or announcement) along with any notes or descriptions.
+- **Duration** -- How long the item is expected to take.
 
-Itens estão organizados sob **headers** que agrupam elementos relacionados juntos (por exemplo, "Worship Set" ou "Message"). Isto torna fácil escanear a estrutura geral do serviço.
+Items are organized under **headers** that group related elements together (for example, "Worship Set" or "Message"). This makes it easy to scan the overall structure of the service.
 
-Seções de aula e currículo também podem expandir em uma pasta de ações individuais aninhadas abaixo delas -- clique na seção para expandir ou colapsar suas ações e ver cada passo que seu time caminhará.
+Lesson and curriculum sections can also expand into a folder of individual actions nested beneath them -- click the section to expand or collapse its actions and see each step your team will walk through.
 
-## Visualizando Letra e Acordes de Cântico
+## Viewing Song Lyrics and Chords
 
-Clique em um cântico na ordem de serviço para abrir sua letra e acordes. Use o dropdown **Key Signature** no topo para transpor os acordes em tempo real -- útil se seu instrumento ou alcance vocal precisa de uma chave diferente daquela que o líder de adoração planejou.
+Click a song in the service order to open its lyrics and chords. Use the **Key Signature** dropdown at the top to transpose the chords on the fly -- handy if your instrument or vocal range needs a different key than the one the worship leader planned for.
 
-## Conteúdo de Aula e Currículo
+## Curriculum and Lesson Content
 
-Se o plano tem conteúdo associado de aula ou currículo de um provedor como [Lessons.church](../content/lessons.md), você verá uma visualização daquele conteúdo dentro da ordem de serviço. Isto pode incluir seções de aula, materiais de apresentação e outros recursos que seu time precisa para o serviço.
+If the plan has associated curriculum or lesson content from a provider like [Lessons.church](../content/lessons.md), you will see a preview of that content within the service order. This can include lesson sections, presentation materials, and other resources your team needs for the service.
 
-## Imprimindo a Ordem de Serviço
+## Printing the Service Order
 
-Você pode imprimir uma versão formatada da ordem de serviço para trazer com você no dia do serviço.
+You can print a formatted version of the service order to bring with you on the day of the service.
 
-1. Abra o plano da sua lista **Plans**.
-2. Na seção **Order of Service**, clique no ícone **print** no canto superior direito.
-3. Uma nova janela abre com um layout imprimível que inclui:
-   - A **data do serviço** no topo.
-   - **Atribuições de time** agrupadas por categoria na esquerda, mostrando cada posição e quem a está preenchendo.
-   - A **ordem de serviço completa** na direita com tempo, detalhes de item e colunas de duração.
-4. A caixa de diálogo de impressão do seu navegador abrirá automaticamente para que você possa imprimir ou salvar como PDF.
+1. Open the plan from your **Plans** list.
+2. In the **Order of Service** section, click the **print** icon in the top-right corner.
+3. A new window opens with a printable layout that includes:
+   - The **service date** at the top.
+   - **Team assignments** grouped by category on the left, showing each position and who is filling it.
+   - The **full service order** on the right with time, item details, and duration columns.
+4. Your browser's print dialog will open automatically so you can print or save as PDF.
 
 :::tip
-A ordem de serviço impressa é uma ótima referência para ter à mão durante ensaios ou o serviço em si. Inclui tanto o roster do time quanto a ordem de serviço completa em uma página.
+The printed service order is a great reference to have on hand during rehearsals or the service itself. It includes both the team roster and the full order of service on a single page.
 :::

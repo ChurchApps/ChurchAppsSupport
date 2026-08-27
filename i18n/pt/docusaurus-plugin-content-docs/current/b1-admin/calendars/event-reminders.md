@@ -1,80 +1,80 @@
 ---
-title: "Lembretes de Eventos"
+title: "Lembretes de Evento"
 ---
 
-# Lembretes de Eventos
+# Lembretes de Evento
 
 <div class="article-intro">
 
-Os lembretes de eventos notificam automaticamente as pessoas certas antes de um evento acontecer - por exemplo, "Não perca! O workshop de saúde começa amanhã às 9:00 AM." Você configura um lembrete uma vez no evento, e B1 o envia de acordo com a agenda através de notificações push e email. Os membros podem controlar quais lembretes recebem de suas próprias [Notification Preferences](../../b1-church/getting-started/notification-preferences).
+Event reminders automatically notify the right people before an event happens -- for example, "Don't miss it! The healthcare workshop starts tomorrow at 9:00 AM." You configure a reminder once on the event, and B1 sends it out on schedule through push notifications and email. Members can control which reminders they receive from their own [Notification Preferences](../../b1-church/getting-started/notification-preferences).
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Before You Begin</h4>
 
-- Crie o evento sobre o qual você quer lembrar as pessoas (veja [Creating Calendars](creating-calendars))
-- Para atingir os participantes registrados, [ative o registro](creating-calendars) no evento
-- Para atingir um grupo inteiro, certifique-se de que o evento pertence a um [group](../groups/creating-groups) com membros
+- Create the event you want to remind people about (see [Creating Calendars](creating-calendars))
+- To reach registered attendees, [enable registration](creating-calendars) on the event
+- To reach a whole group, make sure the event belongs to a [group](../groups/creating-groups) with members
 
 </div>
 
-## Configurando um Lembrete
+## Setting Up a Reminder
 
-Você configura lembretes na seção **Reminders** do evento.
+You configure reminders in the **Reminders** section of the event.
 
-- Quando você **criar um novo evento**, expanda a seção **Reminders** no editor de evento antes de salvar.
-- Para um **evento existente**, abra a página **Registration Details** do evento (da seção **Registrations**) para adicionar ou alterar seu lembrete.
+- When you **create a new event**, expand the **Reminders** section in the event editor before saving.
+- For an **existing event**, open the event's **Registration Details** page (from the **Registrations** section) to add or change its reminder.
 
-1. Ative **Enable reminders**.
-2. Escolha **When** enviar. Escolha até três horários: **7 days before**, **3 days before**, **1 day before** e **Day of**.
-3. Defina a **Time of day** em que o lembrete deve sair (o padrão é **9:00 AM**, no fuso horário local da sua igreja).
-4. Escolha **Who** deve ser lembrado (veja [Who Gets Reminded](#who-gets-reminded) abaixo).
-5. Opcionalmente adicione uma **Message**. Deixe em branco para usar a redação padrão, ou escreva a sua - você pode incluir `{{eventTitle}}` e será substituído pelo nome do evento.
-6. Escolha os **Channels**: notificação **Push**, **Email** ou ambos.
-7. Salve o evento.
+1. Turn on **Enable reminders**.
+2. Choose **When** to send. Pick up to three timings: **7 days before**, **3 days before**, **1 day before**, and **Day of**.
+3. Set the **Time of day** the reminder should go out (default is **9:00 AM**, in your church's local time zone).
+4. Choose **Who** should be reminded (see [Who Gets Reminded](#who-gets-reminded) below).
+5. Optionally add a **Message**. Leave it blank to use the default wording, or write your own -- you can include `{{eventTitle}}` and it will be replaced with the event's name.
+6. Choose the **Channels**: **Push** notification, **Email**, or both.
+7. Save the event.
 
-À medida que você faz alterações, uma **visualização ao vivo** mostra aproximadamente quantas pessoas serão lembradas, quantos participantes não podem ser alcançados e os próximos horários de envio programados - para que você possa confirmar que o lembrete se parece correto antes de salvar.
+As you make changes, a **live preview** shows roughly how many people will be reminded, how many attendees can't be reached, and the next scheduled send times -- so you can confirm the reminder looks right before you save.
 
-## Quem Recebe Lembretes
+## Who Gets Reminded
 
-A configuração **Who** controla para quem o lembrete vai:
+The **Who** setting controls who the reminder goes to:
 
-- **Registrants only** — Todos registrados para o evento que estão vinculados a um registro de pessoa. Este é o padrão quando o evento tem registro habilitado, então um lembrete para um evento pequeno registrado nunca vai acidentalmente para um grupo inteiro.
-- **Heads / registrants only** — Um lembrete por registro (a pessoa que se registrou), em vez de cada membro da família no registro.
-- **Group members** — Todos no grupo do evento. Este é o padrão quando o evento não usa registro.
-- **Auto** — Usa registrantes quando o registro está habilitado, caso contrário o grupo.
+- **Registrants only** -- Everyone registered for the event who is linked to a person record. This is the default when the event has registration enabled, so a reminder for a small registered event never accidentally goes to a whole group.
+- **Heads / registrants only** -- One reminder per registration (the person who registered), rather than every family member on the registration.
+- **Group members** -- Everyone in the event's group. This is the default when the event does not use registration.
+- **Auto** -- Uses registrants when registration is enabled, otherwise the group.
 
 :::info
-Convidados adicionados apenas por nome (sem um registro de pessoa vinculado) não podem receber um lembrete, porque não há conta, dispositivo ou email para enviar. A visualização informa quantos participantes se enquadram neste grupo para que não haja surpresas. Membros que optaram por não se comunicarem também são ignorados.
+Guests added by name only (without a linked person record) can't receive a reminder, because there's no account, device, or email to send to. The preview tells you how many attendees fall into this group so there are no surprises. Members who have opted out of communication are also skipped.
 :::
 
-## Quando os Lembretes São Enviados
+## When Reminders Are Sent
 
-- Os lembretes disparam no **horário que você escolher**, no fuso horário local da sua igreja, em cada um dos offsets que você selecionou.
-- Se você **alterar a data ou hora do evento**, os lembretes pendentes são automaticamente reagendados — você não precisa editar o lembrete.
-- Se você **deletar o evento** (ou cancelar uma única ocorrência de um evento recorrente), seus lembretes pendentes são automaticamente cancelados.
-- Eventos recorrentes são tratados automaticamente: cada ocorrência futura obtém seu próprio lembrete.
+- Reminders fire at the **time of day you choose**, in your church's local time zone, on each of the offsets you selected.
+- If you **change the event's date or time**, the pending reminders are automatically rescheduled -- you don't need to edit the reminder.
+- If you **delete the event** (or cancel a single occurrence of a recurring event), its pending reminders are automatically cancelled.
+- Recurring events are handled automatically: each upcoming occurrence gets its own reminder.
 
 :::tip
-Os lembretes são enviados **push primeiro, com email como fallback**. Se um membro tiver notificações push habilitadas, receberá um push; se não, receberá um email. Os membros escolhem quais canais desejam por tipo de notificação em suas [Notification Preferences](../../b1-church/getting-started/notification-preferences).
+Reminders are sent **push first, with email as a fallback**. If a member has push notifications enabled, they'll get a push; if not, they'll get an email instead. Members choose which channels they want per notification type in their [Notification Preferences](../../b1-church/getting-started/notification-preferences).
 :::
 
-## O Que os Membros Podem Controlar
+## What Members Can Control
 
-Os lembretes sempre respeitam as [Notification Preferences](../../b1-church/getting-started/notification-preferences) de cada membro. Um membro pode:
+Reminders always respect each member's [Notification Preferences](../../b1-church/getting-started/notification-preferences). A member can:
 
-- Desativar **Event Reminders** para push ou email enquanto mantém outras notificações ativas.
-- Definir **quiet hours** para que notificações não urgentes aguardem um horário razoável.
+- Turn **Event Reminders** off for push or email while keeping other notifications on.
+- Set **quiet hours** so non-urgent notifications wait until a reasonable time.
 
-Você não pode anular a escolha de um membro de optar por não receber lembretes de eventos - isso mantém B1 em conformidade com as regras anti-spam e mantém os membros no controle de sua caixa de entrada.
+You can't override a member's choice to opt out of event reminders -- this keeps B1 compliant with anti-spam rules and keeps members in control of their inbox.
 
-## Lembretes de Serviço
+## Serving Reminders
 
-Voluntários agendados em um plano recebem um **serving reminder** separado com os detalhes do plano e, quando ainda não responderam, botões **Accept / Decline** direto no email. Esses lembretes são configurados no tipo de plano em vez de em um evento de calendário - veja [Sunday Volunteers](../guides/sunday-volunteers) para saber como funcionam o agendamento e lembretes de voluntários.
+Volunteers scheduled on a plan receive a separate **serving reminder** with the plan details and, when they haven't responded yet, **Accept / Decline** buttons right in the email. Those reminders are configured on the plan type rather than on a calendar event -- see [Sunday Volunteers](../guides/sunday-volunteers) for how volunteer scheduling and reminders work.
 
-## Próximos Passos
+## Next Steps
 
-- [Notification Preferences](../../b1-church/getting-started/notification-preferences) — O que os membros podem controlar
-- [Event Registration Guide](../guides/event-registration) — Configure o registro para que os lembretes possam atingir os participantes
-- [Creating Calendars](creating-calendars) — Voltar à configuração do calendário
+- [Notification Preferences](../../b1-church/getting-started/notification-preferences) -- What members can control
+- [Event Registration Guide](../guides/event-registration) -- Set up registration so reminders can reach attendees
+- [Creating Calendars](creating-calendars) -- Return to calendar setup

@@ -1,7 +1,48 @@
-﻿---
-title: "सेटिंग्स"
+---
+title: "Settings"
 ---
 
-# सेटिंग्स
+# Settings
 
-सेटिंग्स अनुभाग वह जगह है जहां आप B1 Admin में अपने चर्च के खाते को कॉन्फ़िगर करते हैं।
+<div class="article-intro">
+
+The Settings section is where you configure your church's account, branding, and administrative options in B1 Admin. From here you can manage everything from your church name and subdomain to user permissions and mobile app configuration.
+
+</div>
+
+## What You Will Find Here
+
+The Settings area is organized into the following sub-sections:
+
+1. **Settings** -- Configure your church's basic information, branding, and subdomain. See [Church Settings](./church-settings.md) for details.
+2. **Campuses** -- Add and manage multiple physical locations for your church. Once created, campuses appear on person profiles, in attendance setup, and in the Demographics dashboard. See [Campuses](./campuses.md) for details.
+3. **Custom Fields** -- Define your own fields to track on people (a date, number, yes/no answer, or pick-list), then fill them in on profiles and search on them. See [Custom Fields](./custom-fields.md) for details.
+3. **Mobile Apps** -- Set up and customize the navigation tabs that appear in the [B1.church PWA](/docs/b1-church/getting-started/installing-pwa) for your members (the same tabs are also rendered by the deprecated B1 Mobile native app). See [Mobile App Settings](./mobile-app.md) for details.
+4. **Email Templates** -- Save reusable email content for sending manually or from a workflow. See [Email Templates](./email-templates.md) for details.
+5. **Server Admin** -- Access advanced administration tools for managing your church's server-level settings.
+6. **Forms** -- Create and manage custom forms for collecting information from your congregation.
+
+## The Main Settings Page
+
+When you first open the Settings page, you will see your **church name** and **subdomain** displayed at the top. The header provides quick-access buttons for common tasks:
+
+- **Edit Settings** -- Update your church's name, address, contact information, and branding.
+- **Mobile Apps** -- Jump directly to mobile app configuration.
+- **Roles** -- Manage user roles and permissions for your team.
+- **Import/Export** -- Transfer data between systems using the import/export tool.
+
+:::tip
+Start by configuring your church name and branding under **Edit Settings**, then set up [Roles](./roles-permissions.md) to invite your team members with the right level of access.
+:::
+
+:::info
+For information about how your data is protected, see [Data Security](./data-security.md).
+:::
+
+## Next Steps
+
+- [Church Settings](./church-settings.md) -- Configure your church information and branding
+- [Campuses](./campuses.md) -- Add locations for multi-site churches
+- [Roles & Permissions](./roles-permissions.md) -- Set up user roles and access control
+- [Mobile App Settings](./mobile-app.md) -- Customize the navigation tabs shown in the B1.church PWA
+- [Data Security](./data-security.md) -- Learn how your data is protected

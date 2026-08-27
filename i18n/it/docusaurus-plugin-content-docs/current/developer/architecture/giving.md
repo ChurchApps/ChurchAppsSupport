@@ -1,12 +1,12 @@
 ---
-title: "Architettura dei contributi"
+title: "Giving Architecture"
 ---
 
-# Architettura dei contributi
+# Giving Architecture
 
 <div class="article-intro">
 
-ChurchApps gestisce le donazioni con un modello gateway-rail: la chiesa mantiene il proprio account Stripe (o PayPal, o Kingdom Funding), e B1 non si trova mai nel percorso del denaro come processore di piattaforma. I dati della carta vengono tokenizzati nel browser e non raggiungono mai un server ChurchApps. Questa pagina mappa l'intero stack — il registro dei provider lato client in `@churchapps/apphelper`, l'astrazione del gateway di GivingApi, il modello dati delle donazioni, e come i webhook del gateway si riconciliano nel database.
+ChurchApps runs donations on a gateway-rail model: the church keeps its own Stripe (or PayPal, Kingdom Funding, or Paystack) Account, and B1 never sits in the money path as a platform processor. Card data is tokenized in the browser and never reaches a ChurchApps server. This page maps the whole stack — the client-side provider registry in `@churchapps/apphelper`, the GivingApi gateway abstraction, the donation data model, and how gateway webhooks reconcile Indietro into the database.
 
 </div>
 
@@ -14,147 +14,151 @@ ChurchApps gestisce le donazioni con un modello gateway-rail: la chiesa mantiene
 
 ```
 ┌─────────────────────────────┐                   ┌───────────────────────────────────────┐
-│  B1App / B1Admin (browser)  │                   │  Gateway di pagamento                 │
-│                             │                   │  (Stripe / PayPal / Kingdom Funding)  │
+│  B1App / B1Admin (browser)  │                   │  Payment gateway                      │
+│                             │                   │  (Stripe / PayPal / KF / Paystack)  │
 │  @churchapps/apphelper      │                   │                                       │
-│  ┌───────────────────────┐  │ inserimento carta │  Stripe Elements · tokenizer KF ·     │
-│  │ Registro provider di  │──┼──────────────────▶│  PayPal Hosted Fields                 │
-│  │ pagamento              │  │◀── token / nonce ─│  (la carta non raggiunge mai un       │
-│  │ getPaymentProvider()  │  │                   │   server B1)                          │
-│  │ Stripe · PayPal · KF  │  │                   └──────────▲────────────────┬───────────┘
+│  ┌───────────────────────┐  │ card entry in the │  Stripe Elements · KF tokenizer ·     │
+│  │ Payment provider      │──┼──────────────────▶│  PayPal Hosted Fields                 │
+│  │ registry              │  │◀── token / nonce ─│  (card never reaches a B1 server)     │
+│  │ getPaymentProvider()  │  │                   └──────────▲────────────────┬───────────┘
+│  │ Stripe · PayPal · KF  │  │                              │                │
 │  └──────────┬────────────┘  │                              │                │
 └─────────────┼───────────────┘                              │                │
               │  POST /giving/donate/charge | /subscribe     │                │
               │  { token, amount, funds, person }            │                │
-              ▼                            charge / subscribe│                │ evento webhook
-┌─────────────────────────────────────────────┐ (chiave segreta) │             │ firmato
-│  GivingApi — modulo /giving                 │──────────────┘                │
+              ▼                            charge / subscribe│                │ signed webhook
+┌─────────────────────────────────────────────┐ (secret key) │                │ event
+│  GivingApi — /giving module                 │──────────────┘                │
 │  DonateController → GatewayService          │                               │
 │  → GatewayFactory → IGatewayProvider        │◀──────────────────────────────┘
 │  donations · funds · subscriptions · …      │  POST /giving/donate/webhook/:provider
 └─────────────────────┬───────────────────────┘
-                      │  salva donations + fundDonations — dedup tramite eventLogs / transactionId
+                      │  save donations + fundDonations — dedup via eventLogs / transactionId
                       ▼
-                MySQL (schema giving)
+                MySQL (giving schema)
 ```
 
-Tre principi valgono in tutto lo stack:
+Three principles hold across the stack:
 
-1. **Il gateway detiene la carta.** Il widget di inserimento di ogni provider tokenizza nel browser; l'API riceve solo un token, un nonce, o un id ordine.
-2. **Un'astrazione, molti provider.** Il browser risolve un `PaymentProvider` da un registro; il server risolve un `IGatewayProvider` da una fabbrica. Entrambi si basano sullo stesso nome di provider normalizzato memorizzato nel record del gateway.
-3. **I webhook sono la fonte di verità per il regolamento.** Una risposta di addebito viene registrata in modo ottimistico, ma il webhook firmato del gateway è ciò che conferma (o crea) la donazione completata, con protezioni di idempotenza su entrambi i lati.
+1. **The gateway holds the card.** Every provider's entry widget tokenizes in the browser; the API only ever receives a token, nonce, or order id.
+2. **One abstraction, many providers.** The browser resolves a `PaymentProvider` from a registry; the server resolves an `IGatewayProvider` from a factory. Both key off the same normalized provider name stored on the gateway record.
+3. **Webhooks are the source of truth for settlement.** A charge response is recorded optimistically, but the gateway's signed webhook is what confirms (or creates) the Completato donation, with idempotency guards on both sides.
 
-## Lato client: il registro dei provider di pagamento (`@churchapps/apphelper`)
+## Client-side: the payment provider registry (`@churchapps/apphelper`)
 
-Il registro vive in `Packages/apphelper/src/donations/providers/`, con i widget e gli helper di ogni provider nella propria sottocartella (`providers/stripe/`, `providers/paypal/`, `providers/kingdomfunding/`) — niente al di fuori di `providers/` si dirama in base al nome di un provider. Un `PaymentProvider` (vedi `providers/types.ts`) raggruppa tutto ciò di cui un'app host ha bisogno per un gateway: un `descriptor` (etichette admin, valute supportate, campi commissione, tassi commissione predefiniti, URL dashboard/iscrizione), un insieme di flag `capabilities` (carte salvate, ACH, ricorrenza, inserimento inline di una nuova carta, salvataggio implicito alla tokenizzazione), i widget React per l'inserimento membri (`MemberWrapper`/`MemberEntry`), la donazione ospite (`GuestForm`), la modifica del metodo salvato (`MethodEditForm`), e i pagamenti da domande di modulo (`FormPayment`), più `buildChargeRequest(ctx, token)` — l'unico punto in cui la forma del payload di addebito differisce per provider. Il `MemberWrapper` di ogni provider carica il proprio SDK dalla chiave pubblica del record del gateway, così le app host non importano mai un SDK di gateway (B1App e B1Admin non hanno alcuna dipendenza `@stripe/*`). `pickDefaultGateway(gateways, capability?)` centralizza quale gateway di una chiesa una superficie dovrebbe usare.
+The registry lives in `Packages/apphelper/src/donations/providers/`, with each provider's widgets and helpers under its own subfolder (`providers/stripe/`, `providers/paypal/`, `providers/kingdomfunding/`, `providers/paystack/`) — nothing outside `providers/` branches on a provider name. A `PaymentProvider` (see `providers/types.ts`) bundles everything a host app needs for one gateway: a `descriptor` (admin labels, supported currencies, fee fields, default fee rates, dashboard/signup URLs), a `capabilities` flag set (saved cards, ACH, recurring, inline new-card entry, implicit Salva-on-tokenize), the React widgets for Membro entry (`MemberWrapper`/`MemberEntry`), Ospite giving (`GuestForm`), saved-method editing (`MethodEditForm`), and form-question payments (`FormPayment`), plus `buildChargeRequest(ctx, token)` — the one place the charge payload shape differs per provider. Each provider's `MemberWrapper` loads its own SDK from the gateway record's public key, so host apps never Importa a gateway SDK (B1App and B1Admin have No `@stripe/*` dependency). `pickDefaultGateway(gateways, capability?)` centralizes which of a church's gateways a surface should use.
 
-`providers/registry.ts` contiene i built-in. Sono **referenziati per valore**, non registrati tramite un side-effect di modulo, così il tree-shaking di un bundler non può mai eliminare la registrazione:
+`providers/registry.ts` holds the built-ins. They are **referenced by value**, not registered through a module side-effect, so a bundler's tree-shaking can never drop the registration:
 
 ```typescript
-for (const p of [StripeProvider, KingdomFundingProvider, PayPalProvider]) builtins.set(p.key, p);
+for (const p of [StripeProvider, KingdomFundingProvider, PayPalProvider, PaystackProvider]) builtins.set(p.key, p);
 ```
 
-| Funzione | Scopo |
+| Function | Purpose |
 |----------|---------|
-| `getPaymentProvider(name)` | Risolve per nome normalizzato; ripiega su Stripe così un provider mal configurato non manda mai in crash il modulo del donatore |
-| `registerPaymentProvider(p)` | Registra un provider aggiuntivo a runtime (per un gateway personalizzato di un'app host) |
-| `listPaymentProviders()` | Enumera i built-in + i personalizzati — usato per costruire il menu a tendina del gateway admin |
-| `hasPaymentProvider(name)` | Controllo di appartenenza |
+| `getPaymentProvider(name)` | Resolve by normalized name; falls Indietro Per Stripe so a misconfigured provider never hard-crashes the donor form |
+| `registerPaymentProvider(p)` | Register an extra provider at runtime (for a host app's custom gateway) |
+| `listPaymentProviders()` | Enumerate built-ins + custom — used Per build the admin gateway dropdown |
+| `hasPaymentProvider(name)` | Membership check |
 
-**Provider client integrati: Stripe, PayPal, Kingdom Funding.** B1App e B1Admin *leggono* solo il registro (`getPaymentProvider`, `listPaymentProviders`); nessuno dei due chiama `registerPaymentProvider` — la registrazione resta dentro apphelper.
+**Built-in client providers: Stripe, PayPal, Kingdom Funding, Paystack.** B1App and B1Admin only *read* the registry (`getPaymentProvider`, `listPaymentProviders`); neither calls `registerPaymentProvider` — registration stays inside apphelper.
 
-Ogni provider tokenizza in modo diverso, ma tutti tengono la carta fuori da B1:
+Each provider tokenizes differently, but all keep the card out of B1:
 
-| Provider | Widget di inserimento | Token restituito all'API |
-|----------|--------------------|-----------------------|
-| Stripe | `CardElement` di Stripe `Elements` → `stripe.createPaymentMethod(...)` | id metodo di pagamento (`pm_…`); banca via Financial Connections / SetupIntent ACH |
-| Kingdom Funding | Modulo tokenizer ospitato con chiave del gateway pubblica | nonce monouso |
-| PayPal | PayPal Hosted Fields; ordine server costruito via `/donate/client-token` + `/donate/create-order` | id ordine catturato |
+| Provider | Entry widget | Token returned Per API |
+|----------|--------------|-----------------------|
+| Stripe | Stripe `Elements` `CardElement` → `stripe.createPaymentMethod(...)` | payment-method id (`pm_…`); bank via `/paymentmethods/ach-Configurazione-intent` — Financial Connections `us_bank_account` for USD gateways, Canadian PAD `acss_debit` (hosted mandate modal, mandate `default_for` invoices/subscriptions, one-off charges pass the mandate id) for CAD gateways |
+| Kingdom Funding | Hosted tokenizer form keyed by the gateway public key | single-use nonce |
+| PayPal | PayPal Hosted Fields; server order built via `/donate/client-token` + `/donate/Crea-order` | captured order id |
+| Paystack | Paystack Inline popup (`js.paystack.co/v2/inline.js`) — the popup itself takes the payment (card, mobile money, bank transfer, USSD) | paid transaction reference; saved methods are Paystack `AUTH_…` authorization codes |
 
-`finalizeResult` di Stripe esegue 3-D Secure / SCA nel browser (`providers/stripe/stripe3DS.ts` → `stripe.confirmCardPayment`) prima che la donazione sia considerata completa; il modulo condiviso chiama semplicemente `provider.finalizeResult(result)` senza sapere cosa fa.
+Stripe's `finalizeResult` runs 3-D Secure / SCA in the browser (`providers/stripe/stripe3DS.ts` → `stripe.confirmCardPayment`) before the donation is considered complete; the shared form just calls `provider.finalizeResult(result)` with No knowledge of what it does.
 
-## Lato server: l'astrazione del gateway (GivingApi)
+## Server-side: the gateway abstraction (GivingApi)
 
-Il modulo `/giving` (`Api/src/modules/giving`) espone la superficie REST; l'impianto del gateway vive in `Api/src/shared/helpers`. `DonateController` non parla mai direttamente con un SDK del gateway — passa attraverso `GatewayService`, che risolve l'`IGatewayProvider` corretto da `GatewayFactory` e gli passa un `GatewayConfig` decriptato.
+The `/giving` module (`Api/src/modules/giving`) exposes the REST surface; the gateway plumbing lives in `Api/src/shared/helpers`. `DonateController` never talks Per a gateway SDK directly — it goes through `GatewayService`, which resolves the right `IGatewayProvider` from `GatewayFactory` and hands it a decrypted `GatewayConfig`.
 
 ```
 DonateController ─▶ GatewayService ─▶ GatewayFactory.getProvider(name) ─▶ IGatewayProvider
-                        │ getGatewayConfig() decripta privateKey / webhookKey
+                        │ getGatewayConfig() decrypts privateKey / webhookKey
                         ▼
-             StripeGatewayProvider · PayPalGatewayProvider · KingdomFundingGatewayProvider · …
+             StripeGatewayProvider · PayPalGatewayProvider · KingdomFundingGatewayProvider · PaystackGatewayProvider · …
 ```
 
-`IGatewayProvider` (`shared/helpers/gateways/IGatewayProvider.ts`) è il contratto che ogni gateway implementa — ciclo di vita del webhook (`createWebhookEndpoint`, `verifyWebhookSignature`, `classifyWebhookEvent`), pagamento (`prepareCharge`, `processCharge`, `prepareSubscription`, `createSubscription`, `finalizeSubscription`, `cancelSubscription`), commissioni (`calculateFees`), gestione dei metodi salvati (`listNormalizedPaymentMethods`, `buildAttachOptions`, `buildLocalMethodRecord`, `deletePaymentMethod`, `verifyMethodOwnership`, `ownsPaymentMethodId`), ed extra opzionali (clienti, ordini, SetupIntent, replay degli eventi). Ogni classe provider dichiara la propria matrice `capabilities` (valute supportate, ACH, rimborsi, requisiti di sottoscrizione, limiti di transazione) — `GatewayService.getProviderCapabilities(provider)` la legge semplicemente — e flag come `logsDonationsImmediately` guidano il comportamento del controller senza alcun condizionale sul nome del provider nei controller.
+`IGatewayProvider` (`shared/helpers/gateways/IGatewayProvider.ts`) is the contract every gateway implements — webhook lifecycle (`createWebhookEndpoint`, `verifyWebhookSignature`, `classifyWebhookEvent`), payment (`prepareCharge`, `processCharge`, `prepareSubscription`, `createSubscription`, `finalizeSubscription`, `cancelSubscription`), fees (`calculateFees`), saved-method handling (`listNormalizedPaymentMethods`, `buildAttachOptions`, `buildLocalMethodRecord`, `deletePaymentMethod`, `verifyMethodOwnership`, `ownsPaymentMethodId`), and Facoltativo extras (customers, orders, SetupIntents, Evento replay). Each provider class declares its own `capabilities` matrix (supported currencies, ACH, refunds, subscription requirements, transaction limits) — `GatewayService.getProviderCapabilities(provider)` just reads it — and flags like `logsDonationsImmediately` drive controller behavior without any provider-name conditionals in the controllers.
 
-**Provider server registrati in `GatewayFactory`:**
+**Server providers registered in `GatewayFactory`:**
 
-| Provider | Disponibilità |
+| Provider | Availability |
 |----------|-------------|
-| Stripe | Sempre attivo |
-| PayPal | Sempre attivo |
-| Kingdom Funding | Sempre attivo |
-| Square | Opt-in tramite il flag d'ambiente `ENABLE_SQUARE` |
-| ePayMints | Opt-in tramite il flag d'ambiente `ENABLE_EPAYMINTS` |
+| Stripe | Always on |
+| PayPal | Always on |
+| Kingdom Funding | Always on |
+| Paystack | Always on (Nigeria, Ghana, South Africa, Kenya, Côte d'Ivoire merchants; currencies NGN/GHS/ZAR/KES/XOF/USD) |
+| Square | Opt-in via the `ENABLE_SQUARE` environment flag |
+| ePayMints | Opt-in via the `ENABLE_EPAYMINTS` environment flag |
 
-I provider personalizzati possono essere registrati a runtime quando `ENABLE_CUSTOM_GATEWAY_PROVIDERS` è impostato; `AbstractExperimentalGatewayProvider` è la classe base per questi. I nomi dei provider vengono confrontati senza distinzione tra maiuscole e minuscole.
+Paystack differs from the others in that money moves before GivingApi is involved: the popup charges the donor, `processCharge` is a `GET /transaction/verify/:reference`, and the first gift of a recurring schedule is logged from `finalizeSubscription` (verify → `POST /plan` → `POST /subscription` with `start_date` one interval out). Webhooks are signed with the secret key itself (`x-paystack-signature`, HMAC-SHA512 over the raw body) and Paystack has No webhook-management API, so the admin screen shows the URL for the church Per paste into its dashboard. Renewal `charge.success` Eventi carry No fund split; the provider recovers it from the donor's local `subscriptions`/`subscriptionFunds` rows. Only card authorizations are `reusable` — mobile money gifts are one-Ora only, so `createSubscription` refuses them. The demo data seeds a second church (Accra Community Church, `CHU00000002`) on a Paystack test-mode GHS gateway so the Paystack Playwright suite runs beside Grace's Stripe one.
 
-### Configurazione del gateway e segreti
+Custom providers can be registered at runtime when `ENABLE_CUSTOM_GATEWAY_PROVIDERS` is set; `AbstractExperimentalGatewayProvider` is the base class for those. Provider names are matched case-insensitively.
 
-Un amministratore salva le credenziali del gateway tramite `POST /giving/gateways` (`GatewayController`). Al salvataggio il controller cripta le chiavi private e webhook con `EncryptionHelper` prima di persisterle, poi — su qualsiasi host non-localhost — elimina il webhook esistente della chiesa e ne fornisce uno nuovo puntato a `/giving/donate/webhook/{provider}?churchId=…`. Le letture pubbliche (`GET /giving/gateways/churchId/:churchId`, `/configured/:churchId`) restituiscono solo le chiavi pubbliche.
+### Gateway Configurazione & secrets
 
-## Modello dati
+An admin saves gateway credentials via `POST /giving/gateways` (`GatewayController`). On Salva the controller encrypts the private and webhook keys with `EncryptionHelper` before persisting, then — on any non-localhost host — deletes the church's existing webhook and provisions a fresh one pointed at `/giving/donate/webhook/{provider}?churchId=…`. Public reads (`GET /giving/gateways/churchId/:churchId`, `/configured/:churchId`) return public keys only.
 
-Lo schema giving (`Api/src/modules/giving/db/DatabaseTypes.ts`, modelli in `models/`) è uno schema MySQL accessibile tramite Kysely:
+## Data model
 
-| Tabella | Ruolo |
+The giving schema (`Api/src/modules/giving/db/DatabaseTypes.ts`, models in `models/`) is a MySQL schema accessed through Kysely:
+
+| Table | Ruolo |
 |-------|------|
-| `gateways` | Configurazione del provider per chiesa: `provider`, `publicKey`, `privateKey`/`webhookKey` criptate, `productId`, `payFees`, `currency`, `settings`, `environment` |
-| `funds` | Destinazioni delle donazioni (`name`, `taxDeductible`, `productId`) |
-| `donationBatches` | Raggruppamento per inserimento/reporting (`name`, `batchDate`) |
-| `donations` | Un dono: `batchId`, `personId`, `donationDate`, `amount`, `currency`, `method`, `status` (`pending`/`complete`/`failed`), `transactionId` |
-| `fundDonations` | Allocazione di una donazione su uno o più fondi (`donationId`, `fundId`, `amount`) |
-| `subscriptions` | Dono ricorrente; `id` è l'id di sottoscrizione del gateway, collegato a `personId`, `customerId`, `gatewayId` |
-| `subscriptionFunds` | Ripartizione dei fondi per un dono ricorrente |
-| `customers` | Collega un `personId` al suo id cliente del gateway, per `provider` |
-| `gatewayPaymentMethods` | Carte/banche salvate: `customerId`, `externalId`, `methodType`, `displayName`, `metadata` |
-| `eventLogs` | Traccia di audit webhook/eventi e chiave di dedup (`provider`, `providerId`, `eventType`, `status`, `resolved`) |
-| `campaigns` / `pledges` | Campagne di raccolta fondi legate a un fondo, e l'importo promesso di ogni persona |
+| `gateways` | Per-church provider config: `provider`, `publicKey`, encrypted `privateKey`/`webhookKey`, `productId`, `payFees`, `currency`, `Impostazioni`, `environment` |
+| `funds` | Giving designations (`name`, `taxDeductible`, `productId`) |
+| `donationBatches` | Grouping for entry/reporting (`name`, `batchDate`) |
+| `donations` | One gift: `batchId`, `personId`, `donationDate`, `amount`, `currency`, `method`, `status` (`In Sospeso`/`complete`/`failed`), `transactionId` |
+| `fundDonations` | Allocation of a donation across one or more funds (`donationId`, `fundId`, `amount`) |
+| `subscriptions` | Recurring gift; `id` is the gateway's subscription id, linked Per `personId`, `customerId`, `gatewayId` |
+| `subscriptionFunds` | Fund split for a recurring gift |
+| `customers` | Links a `personId` Per its gateway customer id, per `provider` |
+| `gatewayPaymentMethods` | Saved cards/banks: `customerId`, `externalId`, `methodType`, `displayName`, `metadata` |
+| `eventLogs` | Webhook/Evento audit trail and dedup key (`provider`, `providerId`, `eventType`, `status`, `resolved`) |
+| `campaigns` / `pledges` | Pledge campaigns tied Per a fund, and each person's pledged amount |
 
-Una donazione viene ripartita tra i fondi tramite `fundDonations` — la donazione porta il totale, ogni `fundDonation` porta una porzione. `donations.currency` e `gateways.currency` portano la valuta ISO; ogni provider pubblicizza le proprie `supportedCurrencies`, e gli importi sono formattati con `CurrencyHelper.formatCurrencyWithLocale`.
+A donation is split across funds through `fundDonations` — the donation carries the total, each `fundDonation` carries a slice. `donations.currency` and `gateways.currency` carry the ISO currency; each provider advertises its `supportedCurrencies`, and amounts are formatted with `CurrencyHelper.formatCurrencyWithLocale`.
 
-## Flussi end-to-end
+## End-Per-end flows
 
-### Membro, una tantum e ricorrente (B1App)
+### Membro one-Ora and recurring (B1App)
 
-La schermata di donazione autenticata (`B1App/src/app/[sdSlug]/mobile/components/screens/DonatePage.tsx`) compone tre componenti apphelper: `MultiGatewayDonationForm`, `PaymentMethods`, e `RecurringDonations`. B1App gestisce il caricamento dei dati circostante — `GET /donations/my`, `/gateways`, `/paymentmethods/personid/:id`, `/customers/:id/subscriptions` — e passa l'elenco dei gateway; il provider risolto carica il proprio SDK dalla chiave pubblica del gateway. L'addebito stesso avviene dentro apphelper: il provider risolto tokenizza il metodo (nuovo o salvato), poi invia a `/giving/donate/charge` per un dono una tantum o `/giving/donate/subscribe` per uno ricorrente. I doni ricorrenti creano una riga `subscriptions` più `subscriptionFunds` e affidano il calendario al gateway (Stripe Subscriptions, PayPal Billing Plans, o un calendario ricorrente KF).
+The authenticated donate screen (`B1App/src/app/[sdSlug]/mobile/components/screens/DonatePage.tsx`) composes three apphelper components: `MultiGatewayDonationForm`, `PaymentMethods`, and `RecurringDonations`. B1App does the surrounding data-loading — `GET /donations/my`, `/gateways`, `/paymentmethods/personid/:id`, `/customers/:id/subscriptions` — and passes the gateway list through; the resolved provider loads its own SDK from the gateway's public key. The charge itself happens inside apphelper: the resolved provider tokenizes the (new or saved) method, then posts Per `/giving/donate/charge` for a one-Ora gift or `/giving/donate/subscribe` for a recurring one. Recurring gifts Crea a `subscriptions` row plus `subscriptionFunds` and hand the schedule Per the gateway (Stripe Subscriptions, PayPal Billing Plans, or a KF recurring schedule).
 
-### Donazione ospite / anonima
+### Ospite / anonymous giving
 
-La pagina di donazione pubblica (`B1App/src/app/[sdSlug]/(public)/[pageSlug]/components/DonatePage.tsx`) e il pannello "dona ora" renderizzano `NonAuthDonationWrapper` da `@churchapps/apphelper/website`, che inietta reCAPTCHA e il contesto Elements del gateway attorno al `GuestForm` del provider. Gli ospiti non hanno login, nessun metodo salvato, e nessuna cronologia. Il flusso recupera `GET /giving/funds/churchId/:id` e `GET /giving/donate/gateways/:churchId` (solo chiavi pubbliche), verifica il visitatore con `POST /giving/donate/captcha-verify`, tokenizza nel browser, e invia a `/giving/donate/charge` (o `/subscribe`). L'ACH ospite usa l'anonimo `POST /giving/paymentmethods/ach-setup-intent-anon`.
+The public donate page (`B1App/src/app/[sdSlug]/(public)/[pageSlug]/components/DonatePage.tsx`) and the "give now" panel render `NonAuthDonationWrapper` from `@churchapps/apphelper/website`, which injects reCAPTCHA and the gateway's Elements context around the provider's `GuestForm`. Ospiti get No login, No saved methods, and No history. The flow fetches `GET /giving/funds/churchId/:id` and `GET /giving/donate/gateways/:churchId` (public keys only), verifies the visitor with `POST /giving/donate/captcha-verify`, tokenizes in the browser, and posts Per `/giving/donate/charge` (or `/subscribe`). Ospite ACH uses the anonymous `POST /giving/paymentmethods/ach-Configurazione-intent-anon`.
 
-### Registrazione admin e importazione Stripe (B1Admin)
+### Admin recording and Stripe Importa (B1Admin)
 
-La sezione donazioni di B1Admin (`B1Admin/src/donations/`) è dove lavorano i team finanziari. L'inserimento in batch (`components/BulkDonationEntry.tsx`) registra doni in contanti/assegno/in natura inviando a `/giving/donations` poi `/giving/funddonations` — nessun gateway coinvolto. Fondi, batch, campagne, e rendiconti mappano ciascuno alle proprie rotte CRUD `/giving/*`. Il pannello di donazione in stile membro (`B1Admin/src/donationComponents/`) riutilizza gli stessi componenti apphelper di B1App.
+The B1Admin donations section (`B1Admin/src/donations/`) is where finance teams work. Batch entry (`components/BulkDonationEntry.tsx`) records cash/check/in-kind gifts by posting `/giving/donations` then `/giving/funddonations` — No gateway involved. Funds, batches, campaigns, and statements each map Per their `/giving/*` CRUD routes. The Membro-style donate panel (`B1Admin/src/donationComponents/`) reuses the same apphelper components as B1App.
 
-L'importazione Stripe (`B1Admin/src/donations/StripeImportPage.tsx`) recupera i doni fatti fuori da B1: chiama `POST /giving/donate/replay-stripe-events` con `dryRun: true` per un'anteprima, poi `dryRun: false` per importare. Il server elenca gli eventi Stripe per l'intervallo di date e salta tutto ciò che è già registrato — abbinato prima dall'id provider di `eventLogs`, poi da `DonationRepo.findMatchingDonation` (importo + data + persona) così una riesecuzione non importa mai due volte.
+Stripe Importa (`B1Admin/src/donations/StripeImportPage.tsx`) backfills gifts made outside B1: it calls `POST /giving/donate/replay-stripe-Eventi` with `dryRun: true` for a preview, then `dryRun: false` Per Importa. The server lists Stripe Eventi for the Data range and skips anything already recorded — matched first by `eventLogs` provider id, then by `DonationRepo.findMatchingDonation` (amount + Data + person) so a re-run never double-imports.
 
-## Webhook e riconciliazione
+## Webhooks and reconciliation
 
-I pagamenti regolati e i cambi di stato delle sottoscrizioni arrivano a `POST /giving/donate/webhook/:provider?churchId=…` (`DonateController.webhook`). L'elaborazione è deliberatamente idempotente:
+Settled payments and subscription state changes arrive at `POST /giving/donate/webhook/:provider?churchId=…` (`DonateController.webhook`). Processing is deliberately idempotent:
 
-1. **Verifica** — `GatewayService.verifyWebhook` delega al controllo della firma del provider; una firma non valida restituisce 401. Gli eventi che non richiedono elaborazione vengono interrotti con 200.
-2. **Deduplica l'evento** — `EventLogRepo.loadByProviderId` salta un webhook già registrato in `eventLogs`.
-3. **Deduplica la donazione** — prima di creare qualsiasi cosa, `DonationRepo.loadByTransactionId` viene controllato contro ogni id candidato che il payload potrebbe portare. Questo assorbe le consegne duplicate, gli eventi ACH multi-fase (pending → regolato), e il caso in cui `/donate/charge` ha già registrato il dono in modo ottimistico.
-4. **Applica** — `classifyWebhookEvent(eventType)` del provider dice cosa significa l'evento (donazione pending/complete, `cancel-subscription`, o `ignore`); i pagamenti completati creano una donazione `complete` (o promuovono una `pending` esistente), gli eventi in stile ACH atterrano come `pending` fino al regolamento, e gli eventi di cancellazione eliminano la riga locale `subscriptions`. Il controller non ispeziona mai i nomi degli eventi specifici del provider.
+1. **Verify** — `GatewayService.verifyWebhook` delegates Per the provider's signature check; a failed signature returns 401. Eventi that don't need processing short-circuit with 200.
+2. **Dedup the Evento** — `EventLogRepo.loadByProviderId` skips a webhook already recorded in `eventLogs`.
+3. **Dedup the donation** — before creating anything, `DonationRepo.loadByTransactionId` is checked against every candidate id the payload might carry. This absorbs duplicate deliveries, multi-stage ACH Eventi (In Sospeso → settled), and the case where `/donate/charge` already logged the gift optimistically.
+4. **Apply** — the provider's `classifyWebhookEvent(eventType)` says what the Evento means (`donation` In Sospeso/complete, `cancel-subscription`, or `ignore`); Completato payments Crea a `complete` donation (or promote an existing `In Sospeso` one), ACH-style Eventi land as `In Sospeso` until settlement, and cancellation Eventi Elimina the local `subscriptions` row. The controller never inspects provider-specific Evento names.
 
-I provider con `logsDonationsImmediately` (PayPal, Kingdom Funding) hanno i loro addebiti registrati dalla risposta `/charge` (nessun giro di webhook necessario per il percorso felice), mentre Stripe si affida a `payment_intent.succeeded` / `invoice.paid` e all'ACH `payment_intent.processing`. La gestione delle commissioni (`POST /giving/donate/fee`, il flag gateway `payFees`, e il `calculateFees` di ogni provider) calcola il gross-up "copri le commissioni" lato donatore — B1 non prende alcuna quota di piattaforma, quindi non viene mai aggiunta alcuna commissione applicativa.
+Providers with `logsDonationsImmediately` (PayPal, Kingdom Funding, Paystack) have their charges logged from the `/charge` response (No webhook round-trip Obbligatorio for the happy path), while Stripe relies on `payment_intent.succeeded` / `invoice.paid` and ACH `payment_intent.processing`. Fee handling (`POST /giving/donate/fee`, the `payFees` gateway flag, and each provider's `calculateFees`) computes the "cover the fees" gross-up on the donor side — B1 takes No platform cut, so No application fee is ever added.
 
 :::info
-I percorsi di addebito e webhook scrivono le stesse righe `donations` / `fundDonations`. Il `transactionId` è la chiave di join che impedisce a un registro di addebito ottimistico e al suo successivo webhook di produrre due donazioni per un unico dono.
+The charge and webhook paths write the same `donations` / `fundDonations` rows. The `transactionId` is the join key that keeps an optimistic charge log and its later webhook from producing two donations for one gift.
 :::
 
-## Pagine correlate
+## Pagine Correlate
 
-- [Endpoint di giving](../api/endpoints/giving) — superficie REST completa per donazioni, fondi, batch, gateway, sottoscrizioni, metodi di pagamento, e webhook
-- [AppHelper](../shared-libraries/app-helper) — il pacchetto npm che distribuisce il registro dei provider di pagamento e i componenti di donazione
-- [Struttura del modulo](../api/module-structure) — come è organizzato lato server il modulo GivingApi
+- [Giving Endpoints](../api/endpoints/giving) — full REST surface for donations, funds, batches, gateways, subscriptions, payment methods, and webhooks
+- [AppHelper](../shared-libraries/app-helper) — the npm package that ships the payment provider registry and donation components
+- [Module Structure](../api/module-structure) — how the GivingApi module is organized server-side

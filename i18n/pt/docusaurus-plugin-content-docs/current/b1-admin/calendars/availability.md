@@ -1,72 +1,72 @@
-﻿---
-title: "Calendário de Disponibilidade"
+---
+title: "Availability Calendar"
 ---
 
-# Calendário de Disponibilidade
+# Availability Calendar
 
 <div class="article-intro">
 
-O Calendário de Disponibilidade oferece uma visão geral de todas as reservas de salas e recursos em sua igreja. Daqui você pode ver o que está agendado, identificar conflitos antes que aconteçam e reservar uma sala ou recurso para qualquer evento diretamente.
+The Availability Calendar gives you a bird's-eye view of all room and resource bookings across your church. From here you can see what is scheduled, spot conflicts before they happen, and book a room or resource for any event directly.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Before You Begin</h4>
 
-- Configure pelo menos uma [sala ou recurso](rooms-resources) na seção Salas e Recursos
-- Você precisa de acesso de edição à seção Calendários em B1 Admin
+- Set up at least one [room or resource](rooms-resources) in the Rooms & Resources section
+- You need edit access to the Calendars section in B1 Admin
 
 </div>
 
-## Abrindo o Calendário de Disponibilidade
+## Opening the Availability Calendar
 
-Em B1 Admin, abra o **menu de seção** no canto superior esquerdo e escolha **Calendários**, depois selecione **Disponibilidade**.
+In B1 Admin, open the **section menu** in the top-left corner and choose **Calendars**, then select **Availability**.
 
-## Lendo o Calendário
+## Reading the Calendar
 
-O calendário exibe o mês atual por padrão. Você pode navegar para frente e para trás com as setas no topo ou alternar entre visualizações de mês, semana e dia.
+The calendar displays the current month by default. You can navigate forward and back with the arrows at the top, or switch between month, week, and day views.
 
-Cada evento é codificado por cor pelo status de reserva:
+Each event is color-coded by booking status:
 
-| Cor | Significado |
+| Color | Meaning |
 |-------|---------|
-| Verde | Aprovado |
-| Laranja | Pendente de aprovação |
-| Cinza | Bloqueado (não disponível) |
+| Green | Approved |
+| Orange | Pending approval |
+| Grey | Blocked out (not available) |
 
-Passar o mouse sobre um evento mostra o título do evento e a sala ou recurso ao qual está anexado.
+Hovering over an event shows the event title and the room or resource it is attached to.
 
-## Filtrando por Sala ou Recurso
+## Filtering by Room or Resource
 
-Use o dropdown **Filtrar** no canto superior esquerdo para restringir o calendário a uma única sala ou recurso. Selecione **Todas as Salas e Recursos** para retornar à visualização completa.
+Use the **Filter** dropdown at the top left to narrow the calendar to a single room or resource. Select **All Rooms & Resources** to return to the full view.
 
-## Reservando uma Sala ou Recurso
+## Booking a Room or Resource
 
-1. Clique no botão **Reservar** no canto superior direito da página.
-2. Na caixa de diálogo que se abre, preencha os detalhes do evento:
-   - **Título** — o nome do evento
-   - **Início** e **Fim** data/hora
-   - **Visibilidade** — Público ou Privado
-   - **Salas** — selecione uma ou mais salas para reservar
-   - **Recursos** — selecione um ou mais recursos para reservar
-3. Opcionalmente defina tempos de **Configuração** e **Limpeza** (em minutos). Estes expandem a reserva em ambas as extremidades para que o espaço seja reservado para configuração e limpeza, mesmo que os horários de início/fim do evento permaneçam os mesmos.
-4. Para repetir a reserva, marque **Repete** e configure a recorrência:
-   - **Repetir cada** -- defina o intervalo (por exemplo, a cada 2 semanas).
-   - **Frequência** -- Diário, Semanal ou Mensal. Semanal permite escolher dias específicos da semana; Mensal permite escolher um dia fixo do mês ou um padrão relativo como "a segunda terça-feira".
-   - **Termina** -- Nunca, em uma data específica ou após um número definido de ocorrências.
-5. Para especificar uma janela de reserva personalizada (diferente do início/fim do evento), alterne **Janela de Reserva Personalizada** e digite os horários de início e fim da janela. Use isto quando uma sala precisa estar acessível fora dos horários listados do evento.
-6. Clique em **Salvar** para enviar a reserva.
+1. Click the **Book** button in the top right corner of the page.
+2. In the dialog that opens, fill in the event details:
+   - **Title** — the name of the event
+   - **Start** and **End** date/time
+   - **Visibility** — Public or Private
+   - **Rooms** — select one or more rooms to reserve
+   - **Resources** — select one or more resources to reserve
+3. Optionally set **Setup** and **Teardown** times (in minutes). These pad the booking on both ends so the space is reserved for setup and cleanup, even though the event start/end times stay the same.
+4. To repeat the booking, check **Repeats** and configure the recurrence:
+   - **Repeat every** -- set the interval (for example, every 2 weeks).
+   - **Frequency** -- Daily, Weekly, or Monthly. Weekly lets you pick specific day(s) of the week; Monthly lets you pick a fixed day of the month or a relative pattern like "the second Tuesday."
+   - **Ends** -- Never, on a specific date, or after a set number of occurrences.
+5. To specify a custom booking window (different from the event start/end), toggle **Custom Booking Window** and enter the window start and end times. Use this when a room needs to be accessible outside the event's listed hours.
+6. Click **Save** to submit the booking.
 
 :::info
-Se a sala ou recurso tem um **Grupo de Aprovação** configurado, a reserva aparecerá como **Pendente** até que um líder daquele grupo aprove. Consulte [Aprovações de Calendário](approvals) para o fluxo de aprovação.
+If the room or resource has an **Approval Group** configured, the booking will appear as **Pending** until a leader of that group approves it. See [Calendar Approvals](approvals) for the approval workflow.
 :::
 
 :::tip
-O calendário destacará quaisquer conflitos antes de você salvar. Se você ver um aviso de conflito, ajuste seus horários ou escolha uma sala diferente.
+The calendar will highlight any conflicts before you save. If you see a conflict warning, adjust your times or choose a different room.
 :::
 
 ## Artigos Relacionados
 
-- [Salas, Recursos e Agendamento](rooms-resources) — configure espaços e equipamentos reserváveis
-- [Aprovações de Calendário](approvals) — aprove ou negue solicitações de reserva
-- [Criando Calendários](creating-calendars) — gerenciar calendários de eventos
+- [Rooms, Resources & Scheduling](rooms-resources) — set up bookable spaces and equipment
+- [Calendar Approvals](approvals) — approve or deny booking requests
+- [Creating Calendars](creating-calendars) — manage event calendars

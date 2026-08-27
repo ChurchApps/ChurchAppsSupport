@@ -1,68 +1,38 @@
 ---
-title: "Helpers"
+title: "Помощники"
 ---
 
-# Helpers
+# Помощники
 
-<div class="article-intro">
+Библиотека `@churchapps/helpers` предоставляет утилиты для работы с данными, датами и другими общими задачами.
 
-Пакет `@churchapps/helpers` предоставляет базовые утилиты, используемые всеми проектами ChurchApps, как на фронтенде, так и на бэкенде. Он фреймворк-независим и включает общие помощники, такие как `DateHelper`, `ApiHelper`, `CurrencyHelper`, плюс общие интерфейсы TypeScript, которые образуют контракт данных между приложениями и API.
+## Функции
 
-</div>
+```javascript
+import { DateHelper, StringHelper, ArrayHelper } from '@churchapps/helpers';
 
-<div class="prereqs">
-<h4>Перед началом работы</h4>
+// Работа с датами
+const formatted = DateHelper.format(new Date(), 'YYYY-MM-DD');
+const days = DateHelper.getDaysBetween(start, end);
 
-- Установите **Node.js** и **Git** — см. [Предварительные требования](../setup/prerequisites)
-- Ознакомьтесь с установкой [рабочего пространства Packages](./index.md) и потоком выпуска
+// Работа со строками
+const slug = StringHelper.toSlug('Hello World'); // 'hello-world'
+const initials = StringHelper.getInitials('John Doe'); // 'JD'
 
-</div>
+// Работа с массивами
+const unique = ArrayHelper.unique([1, 2, 2, 3]); // [1, 2, 3]
+const grouped = ArrayHelper.groupBy(items, 'category');
+```
 
-## Кто это потребляет
+## Использование
 
-Каждый ChurchApps API (основной Api, AskApi и LessonsApi) и каждый фронтенд веб-приложений (B1Admin, B1App, B1Transfer, LessonsApp) зависит от этого пакета напрямую. Фронтенды также получают многие его экспорты (`ApiHelper`, `DateHelper`, `UserHelper` и другие интерфейсы) переэкспортированные через [`@churchapps/apphelper`](./app-helper). Другие общие пакеты объявляют это как peer зависимость, так что каждое приложение разрешает ровно одну копию.
+```javascript
+import { DateHelper } from '@churchapps/helpers';
 
-## Настройка для локальной разработки
+const today = DateHelper.today();
+```
 
-Этот пакет находится в рабочем пространстве [Packages](https://github.com/ChurchApps/Packages) рядом с другими общими библиотеками:
+## Связанные документы
 
-1. Клонируйте рабочее пространство:
-
-   ```bash
-   git clone https://github.com/ChurchApps/Packages.git
-   ```
-
-2. Установите зависимости в корне рабочего пространства:
-
-   ```bash
-   cd Packages && yarn install
-   ```
-
-3. Соберите (компилирует TypeScript в `dist/`):
-
-   ```bash
-   yarn workspace @churchapps/helpers build
-   ```
-
-   Или запустите `yarn build` в корне для сборки каждого пакета в порядке зависимостей.
-
-Для тестирования изменений в потребляющем проекте используйте временный Yarn portal — см. [Локальная разработка в потребляющем приложении](./index.md#local-development-against-a-consuming-app).
-
-## Публикация
-
-Выпуски выполняются через changesets вместо ручного изменения версии:
-
-1. Запустите `yarn changeset` в корне рабочего пространства и выберите `@churchapps/helpers` с подходящим типом bump; зафиксируйте сгенерированный файл changeset с вашим изменением.
-2. Когда будете готовы к выпуску, запустите `yarn publish-all` в корне — он изменяет версии, пишет CHANGELOGs, создаёт в порядке зависимостей и публикует в npm.
-
-Новые общие интерфейсы идут в `helpers/src/interfaces/` и переэкспортируются через package barrel. Каталог типов элементов конструктора веб-сайтов (`ElementTypes.ts` — 35 типов с их schemas ответов) также находится здесь; это контракт, общий для средств визуализации apphelper, форм редактора B1Admin и запросов генерирования AI (см. [Архитектура конструктора веб-сайтов](../architecture/website-builder)).
-
-:::warning
-Поскольку этот пакет используется каждым проектом ChurchApps, изменения здесь имеют широкое влияние. Выпуск `helpers` автоматически изменяет `apihelper` и `apphelper`, поэтому их диапазоны зависимостей остаются текущими. Тестируйте с Yarn portal как минимум в одном потребляющем API и одном потребляющем веб-приложении перед публикацией.
-:::
-
-## Связанные статьи
-
-- **[ApiHelper](./api-helper)** — серверные утилиты, которые зависят от этого пакета
-- **[AppHelper](./app-helper)** — React-компоненты, которые зависят от этого пакета
-- **[Обзор общих библиотек](./index.md)** — установка рабочего пространства, поток выпуска и локальный рабочий процесс ссылок
+- [API Helper](api-helper.md)
+- [Shared Libraries](index.md)

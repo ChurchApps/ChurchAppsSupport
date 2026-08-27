@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Registrando Presença"
 ---
 
@@ -6,60 +6,60 @@ title: "Registrando Presença"
 
 <div class="article-intro">
 
-Depois de configurar seus campi, horários de serviço e grupos, você pode registrar manualmente a presença após cada encontro. B1 Admin organiza a presença em torno de **sessões** - uma sessão por grupo por data de encontro. Você cria a sessão, marca quem compareceu e os dados alimentam diretamente seus relatórios de presença.
+Once your campuses, service times, and groups are set up, you can manually record attendance after each gathering. B1 Admin organizes attendance around **sessions** -- one session per group per meeting date. You create the session, mark who showed up, and the data feeds directly into your attendance reports.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Before You Begin</h4>
 
-- Seus campi, horários de serviço e grupos devem estar configurados. Consulte [Configuração de Presença](setup.md) se ainda não tiver feito isso.
-- Os grupos que você deseja rastrear devem ter **Rastrear Presença** ativado. Consulte [Configuração de Presença](setup.md) para detalhes.
+- Your campuses, service times, and groups must be configured. See [Attendance Setup](setup.md) if you haven't done this yet.
+- The groups you want to track must have **Track Attendance** enabled. See [Attendance Setup](setup.md) for details.
 
 </div>
 
 ## Criando uma Sessão
 
-Uma sessão representa uma ocorrência de um encontro de grupo - por exemplo, sua classe de K a 3ª série em um domingo específico.
+A session represents one occurrence of a group meeting -- for example, your K--3rd grade class on a specific Sunday.
 
-1. Abra **B1 Admin**, abra o **menu de seção** no canto superior esquerdo e escolha **Pessoas**, depois clique na guia **Grupos**.
-2. Selecione o grupo para o qual deseja registrar presença.
-3. Clique na guia **Sessões**.
-4. Clique em **Novo** para criar uma nova sessão.
-5. Se o grupo está atribuído a um horário de serviço, escolha o **Horário do Serviço**. Se for um grupo não programado, este campo não aparecerá.
-6. Selecione a **Data da Sessão** - pode ser hoje, uma data anterior ou uma data futura.
-7. Clique em **Salvar**.
+1. Open **B1 Admin**, open the **section menu** in the top-left corner and choose **People**, then click the **Groups** tab.
+2. Select the group you want to record attendance for.
+3. Click the **Sessions** tab.
+4. Click **New** to create a new session.
+5. If the group is assigned to a service time, choose the **Service Time**. If it is an unscheduled group, this field will not appear.
+6. Select the **Session Date** -- this can be today, a past date, or a future date.
+7. Click **Save**.
 
 :::tip
-Você pode criar sessões para datas anteriores para preencher a presença que ainda não registrou, ou criá-las com antecedência para que estejam prontas quando seu grupo se reunir.
+You can create sessions for past dates to catch up on attendance you haven't recorded yet, or create them in advance so they are ready when your group meets.
 :::
 
 ## Marcando Presença
 
-Depois de salvar a sessão, os membros do grupo aparecem no lado direito da página.
+After saving the session, the group's members appear on the right side of the page.
 
-1. Marque a caixa ao lado de cada pessoa que compareceu.
-2. As alterações são salvas automaticamente - não há um botão Salvar adicional para marcas de presença.
+1. Check the box next to each person who attended.
+2. Changes are saved automatically -- there is no additional Save button for attendance marks.
 
 :::info
-Apenas os membros atuais do grupo aparecem na lista de sessão. Se alguém compareceu mas ainda não está no grupo, [adicione-o primeiro](../groups/group-members.md), depois registre sua presença.
+Only current group members appear in the session list. If someone attended but is not yet in the group, [add them to the group](../groups/group-members.md) first, then record their attendance.
 :::
 
-## Exportando Presença para uma Planilha
+## Exporting Attendance to a Spreadsheet
 
-Você pode baixar um registro da sessão como arquivo CSV para usar no Excel, Numbers ou Google Sheets.
+You can download a record of the session as a CSV file to use in Excel, Numbers, or Google Sheets.
 
-1. Abra a sessão que deseja exportar.
-2. Clique no botão **Baixar CSV**.
-3. Abra o arquivo baixado em seu aplicativo de planilha.
+1. Open the session you want to export.
+2. Click the **Download CSV** button.
+3. Open the downloaded file in your spreadsheet application.
 
 ## Visualizando Presença Registrada
 
-Depois de registrar sessões, os dados aparecem em seus relatórios de presença.
+After recording sessions, the data appears in your attendance reports.
 
-- **Guia Presença** - mostra tendências em toda a igreja ao longo do tempo. Consulte [Rastreando Presença](tracking-attendance.md).
-- **Guia Grupos** - mostra presença dividida por grupo individual.
+- **Attendance tab** -- shows church-wide trends over time. See [Tracking Attendance](tracking-attendance.md).
+- **Groups tab** -- shows attendance broken down by individual group.
 
 :::tip
-Se uma sessão que você acabou de criar não aparecer em relatórios imediatamente, certifique-se de que a data da sessão está dentro do intervalo de datas selecionado nos filtros de relatório.
+If a session you just created does not appear in reports right away, make sure the session date falls within the date range selected in the report filters.
 :::

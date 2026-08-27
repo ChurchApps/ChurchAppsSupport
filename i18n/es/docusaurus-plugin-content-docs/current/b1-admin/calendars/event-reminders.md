@@ -1,8 +1,8 @@
 ---
-title: "Recordatorios de Evento"
+title: "Recordatorios de Eventos"
 ---
 
-# Recordatorios de Evento
+# Recordatorios de Eventos
 
 <div class="article-intro">
 

@@ -1,93 +1,93 @@
 ---
-title: "सशुल्क पंजीकरण"
+title: "भुगतान पंजीकरण"
 ---
 
-# सशुल्क पंजीकरण
+# Paid Registrations
 
 <div class="article-intro">
 
-इवेंट पंजीकरण एक साधारण संख्या गणना से कहीं आगे जा सकता है। आप मूल्य वाले उपस्थित प्रकार (जैसे Adult और Child) परिभाषित कर सकते हैं, अपनी स्वयं की कीमतों और मात्राओं के साथ वैकल्पिक ऐड-ऑन प्रदान कर सकते हैं, छूट कोड बना सकते हैं, और अपने चर्च के मौजूदा गिविंग प्रदाता के माध्यम से पंजीकरण पर भुगतान एकत्र कर सकते हैं। जब कोई इवेंट भर जाता है, तो एक वैकल्पिक प्रतीक्षा सूची इच्छुक सदस्यों को लाइन में रखती है और जगह खुलते ही उन्हें स्वचालित रूप से प्रोमोट करती है।
+Event registration can go beyond a simple head count. You can define priced attendee types (like Adult and Child), offer optional add-ons with their own prices and quantities, create discount codes, and collect payment at registration through your church's existing giving provider. When an event fills up, an optional waitlist keeps interested members in line and promotes them automatically as spots open.
 
 </div>
 
 <div class="prereqs">
-<h4>शुरू करने से पहले</h4>
+<h4>Before You Begin</h4>
 
-- पहले इवेंट पर पंजीकरण सक्षम करें — देखें [कैलेंडर बनाना](creating-calendars#enabling-event-registration)
-- भुगतान एकत्र करने के लिए, आपके चर्च को [ऑनलाइन गिविंग कॉन्फ़िगर](../donations/online-giving-setup.md) करना होगा (Stripe, PayPal, या Kingdom Funding)। निःशुल्क इवेंट्स के लिए किसी गिविंग सेटअप की आवश्यकता नहीं है।
+- Enable registration on the event first — see [Creating Calendars](creating-calendars#enabling-event-registration)
+- To collect payments, your church needs [online giving configured](../donations/online-giving-setup.md) (Stripe, PayPal, or Kingdom Funding). Free events need no giving setup.
 
 </div>
 
-## पंजीकरण सेटिंग्स खोलना
+## Opening Registration Settings
 
-1. B1 Admin में, **Registrations** पेज पर जाएं और अपना इवेंट खोलें (या इसे इसके कैलेंडर से खोलें)।
-2. **Registration Settings** कार्ड बुनियादी बातें दिखाता है — **Enable Registration**, **Capacity**, **Registration Opens/Closes**, **Tags**, और **Registration Questions**।
-3. बुनियादी बातों के नीचे तीन एकॉर्डियन हैं: **Attendee Types**, **Selections**, और **Discount Codes**।
+1. In B1 Admin, go to the **Registrations** page and open your event (or open the event from its calendar).
+2. The **Registration Settings** card shows the basics — **Enable Registration**, **Capacity**, **Registration Opens/Closes**, **Tags**, and **Registration Questions**.
+3. Below the basics are three accordions: **Attendee Types**, **Selections**, and **Discount Codes**.
 
 ## Attendee Types
 
-Attendee types आपको विभिन्न प्रकार के उपस्थित लोगों के लिए अलग-अलग कीमतें लगाने देते हैं — और प्रत्येक को अलग से सीमित करते हैं।
+Attendee types let you charge different prices for different kinds of attendees — and cap each one separately.
 
-1. **Attendee Types** एकॉर्डियन खोलें और **Add Type** पर क्लिक करें।
-2. एक **Name** दर्ज करें (जैसे "Adult", "Child", "Student")।
-3. एक **Price** सेट करें। निःशुल्क प्रकार के लिए 0 का उपयोग करें।
-4. वैकल्पिक रूप से केवल इस प्रकार के लिए एक **Capacity** सेट करें (जैसे केवल 20 Child स्थान)। बिना प्रति-प्रकार सीमा के लिए खाली छोड़ दें।
-5. **Save** पर क्लिक करें।
+1. Expand the **Attendee Types** accordion and click **Add Type**.
+2. Enter a **Name** (e.g. "Adult", "Child", "Student").
+3. Set a **Price**. Use 0 for a free type.
+4. Optionally set a **Capacity** for just this type (e.g. only 20 Child spots). Leave blank for no per-type limit.
+5. Click **Save**.
 
-पंजीकरण के दौरान, प्रत्येक उपस्थित व्यक्ति एक प्रकार चुनता है; बिक चुके प्रकार **Sold out** के रूप में दिखाए जाते हैं और चुने नहीं जा सकते। रोस्टर प्रत्येक उपस्थित व्यक्ति का प्रकार और चालू प्रति-प्रकार गणना दिखाता है।
+During registration, each attendee picks a type; sold-out types are shown as **Sold out** and cannot be selected. The roster shows each attendee's type and running per-type counts.
 
 ## Selections
 
-Selections वैकल्पिक मूल्य वाले ऐड-ऑन हैं — टी-शर्ट, भोजन योजना, गतिविधि अपग्रेड।
+Selections are optional priced add-ons — T-shirts, meal plans, activity upgrades.
 
-1. **Selections** एकॉर्डियन खोलें और **Add Selection** पर क्लिक करें।
-2. एक **Name**, वैकल्पिक **Description**, और एक **Price** दर्ज करें (0 "Free" के रूप में दिखता है)।
-3. वैकल्पिक रूप से एक **Capacity** (सभी पंजीकरणों में कुल उपलब्ध) और एक **Max Qty** (एक पंजीकरण द्वारा ऑर्डर की जा सकने वाली सबसे अधिक मात्रा) सेट करें।
-4. **Save** पर क्लिक करें।
+1. Expand the **Selections** accordion and click **Add Selection**.
+2. Enter a **Name**, optional **Description**, and a **Price** (0 shows as "Free").
+3. Optionally set a **Capacity** (total available across all registrations) and a **Max Qty** (the most one registration can order).
+4. Click **Save**.
 
-पंजीकरणकर्ता साइनअप के दौरान मात्राएं चुनते हैं, और कुल क्षमता के विरुद्ध गिने जाते हैं ताकि आप कभी अधिक न बेचें।
+Registrants choose quantities during signup, and the totals count against capacity so you never oversell.
 
 ## Discount Codes
 
-1. **Discount Codes** एकॉर्डियन खोलें और **Add Discount Code** पर क्लिक करें।
-2. वह **Code** दर्ज करें जो पंजीकरणकर्ता टाइप करेंगे।
-3. **Type** चुनें — **Percent** या **Amount** — और उसका **Value**।
-4. वैकल्पिक रूप से एक **Start Date** / **End Date**, एक **Min Members** (पंजीकरण पर न्यूनतम उपस्थित लोगों की संख्या), और **Max Uses** के साथ कोड को सीमित करें।
-5. **Save** पर क्लिक करें।
+1. Expand the **Discount Codes** accordion and click **Add Discount Code**.
+2. Enter the **Code** registrants will type.
+3. Choose the **Type** — **Percent** or **Amount** — and its **Value**.
+4. Optionally limit the code with a **Start Date** / **End Date**, a **Min Members** (minimum number of attendees on the registration), and **Max Uses**.
+5. Click **Save**.
 
-प्रत्येक कोड एक **Uses** गणना दिखाता है ताकि आप देख सकें कि इसे कितनी बार भुनाया गया है। पंजीकरणकर्ताओं को कोड लागू करते समय तुरंत प्रतिक्रिया मिलती है — जिसमें यह स्पष्ट संदेश शामिल हैं कि कोई कोड समाप्त हो गया है, अभी शुरू नहीं हुआ है, या अधिक उपस्थित लोगों की आवश्यकता है।
+Each code shows a **Uses** count so you can see how often it has been redeemed. Registrants get instant feedback when they apply a code — including clear messages when a code has expired, hasn't started, or needs more attendees.
 
-## प्रतीक्षा सूची
+## Waitlist
 
-Registration Settings कार्ड में **Enable Waitlist** चालू करें। जब इवेंट क्षमता तक पहुंच जाता है:
+Turn on **Enable Waitlist** in the Registration Settings card. When the event reaches capacity:
 
-- नए पंजीकरणकर्ताओं को मना करने के बजाय प्रतीक्षा सूची स्थान की पेशकश की जाती है। वे वही साइनअप पूरा करते हैं (प्रतीक्षा सूची में रहते हुए भुगतान छोड़ दिया जाता है)।
-- जब कोई रद्द करता है, तो सबसे पुराना प्रतीक्षा सूची में मौजूद पंजीकरण **स्वचालित रूप से प्रोमोट** होता है और उसे एक ईमेल मिलता है कि एक स्थान खुल गया है। यदि उन पर बकाया राशि है, तो ईमेल उन्हें भुगतान पूरा करने के लिए लिंक करता है।
-- आप किसी भी समय प्रतीक्षा सूची वाली पंक्ति पर **Promote** क्रिया के साथ किसी को मैन्युअल रूप से प्रोमोट कर सकते हैं — इवेंट क्षमता बढ़ाने के बाद उपयोगी।
-
-:::info
-प्रोमोट किए गए पंजीकरण तब तक *pending* रहते हैं जब तक कोई बकाया राशि का भुगतान नहीं हो जाता; भुगतान करना (या भुगतान के लिए कुछ न होना) उन्हें पुष्ट करता है।
-:::
-
-## पंजीकरण रोस्टर
-
-हर पंजीकरण देखने के लिए Registrations पेज से एक इवेंट खोलें। तालिका **Name**, **Members**, **Type** (प्रत्येक उपस्थित व्यक्ति का प्रकार), **Paid / Total** (बकाया राशि होने पर एक शेष चेतावनी के साथ), **Status**, और **Date** दिखाती है, साथ ही तालिका के ऊपर प्रति-प्रकार गणना चिप्स भी।
-
-- किसी पंक्ति के विवरण आइकन पर क्लिक करके **Registration Details** डायलॉग खोलें — सदस्य, चयन, भुगतान/शेष, और हर शुल्क (राशि, विधि, तिथि) सूचीबद्ध करने वाली एक **Payments** तालिका।
-- **Export CSV** सदस्यों, उपस्थित प्रकारों, चयनों, भुगतान/कुल/शेष, स्थिति, और प्रत्येक पंजीकरण प्रश्न के लिए एक कॉलम के साथ पूरा रोस्टर डाउनलोड करता है।
-- **Add Attendee** अभी भी आपको ऑफ़लाइन साइनअप को मैन्युअल रूप से दर्ज करने देता है।
+- New registrants are offered a waitlist spot instead of being turned away. They complete the same signup (payment is skipped while waitlisted).
+- When someone cancels, the oldest waitlisted registration is **promoted automatically** and receives an email that a spot opened. If they owe a balance, the email links them to complete payment.
+- You can promote someone manually at any time with the **Promote** action on a waitlisted row — useful after raising the event capacity.
 
 :::info
-रिफंड B1 के अंदर प्रोसेस नहीं होते। यदि आपको किसी रद्द किए गए सशुल्क पंजीकरण को रिफंड करने की आवश्यकता है, तो अपने गिविंग प्रदाता के डैशबोर्ड (जैसे Stripe) से रिफंड जारी करें।
+Promoted registrations stay *pending* until any balance is paid; paying (or having nothing to pay) confirms them.
 :::
 
-## भुगतान कैसे काम करता है
+## The Registration Roster
 
-भुगतान उसी गिविंग गेटवे के माध्यम से चलते हैं जिसका आपका चर्च दान के लिए पहले से उपयोग करता है — कार्ड विवरण सीधे प्रदाता के पास जाते हैं और कभी B1 के सर्वर को नहीं छूते। कीमतों की हमेशा सर्वर पर आपके कॉन्फ़िगर किए गए प्रकारों, चयनों, और छूट कोड से गणना की जाती है, ताकि कोई पंजीकरणकर्ता कुल राशि के साथ छेड़छाड़ न कर सके। लॉग-इन सदस्य सहेजे गए कार्ड से भुगतान कर सकते हैं; अतिथि चेकआउट पर एक कार्ड दर्ज करते हैं।
+Open an event from the Registrations page to see every registration. The table shows **Name**, **Members**, **Type** (each attendee's type), **Paid / Total** (with a balance warning when money is still owed), **Status**, and **Date**, plus per-type count chips above the table.
 
-## संबंधित लेख
+- Click a row's details icon to open the **Registration Details** dialog — members, selections, paid/balance, and a **Payments** table listing every charge (amount, method, date).
+- **Export CSV** downloads the full roster with columns for members, attendee types, selections, paid/total/balance, status, and one column per registration question.
+- **Add Attendee** still lets you record offline signups manually.
 
-- [कैलेंडर बनाना](creating-calendars#enabling-event-registration) — पंजीकरण और बुनियादी सेटिंग्स सक्षम करें
-- [ऑनलाइन गिविंग सेटअप](../donations/online-giving-setup.md) — चेकआउट पर उपयोग होने वाला भुगतान गेटवे कॉन्फ़िगर करें
-- [इवेंट्स के लिए पंजीकरण](../../b1-church/events/registering) — जब सदस्य साइन अप करते हैं तो वे क्या देखते हैं
-- [मेरे पंजीकरण](../../b1-church/events/my-registrations) — सदस्य शेष राशि का भुगतान कैसे करते हैं और पंजीकरण कैसे संपादित करते हैं
+:::info
+Refunds are not processed inside B1. If you need to refund a cancelled paid registration, issue the refund from your giving provider's dashboard (e.g. Stripe).
+:::
+
+## How Payment Works
+
+Payments run through the same giving gateway your church already uses for donations — card details go straight to the provider and never touch B1's servers. Prices are always computed on the server from your configured types, selections, and discount codes, so a registrant can't tamper with the total. Logged-in members can pay with a saved card; guests enter a card at checkout.
+
+## Related Articles
+
+- [Creating Calendars](creating-calendars#enabling-event-registration) — enable registration and the basic settings
+- [Online Giving Setup](../donations/online-giving-setup.md) — configure the payment gateway used at checkout
+- [Registering for Events](../../b1-church/events/registering) — what members see when they sign up
+- [My Registrations](../../b1-church/events/my-registrations) — how members pay balances and edit registrations

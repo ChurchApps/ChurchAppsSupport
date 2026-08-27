@@ -2,100 +2,100 @@
 title: "कैलेंडर बनाना"
 ---
 
-# कैलेंडर बनाना
+# Creating Calendars
 
 <div class="article-intro">
 
-B1 Admin में कैलेंडर बनाने से आप एक या अधिक समूहों को कनेक्ट करके इवेंट का एक क्यूरेटेड दृश्य बना सकते हैं। इवेंट अपने समूहों के भीतर समूह नेताओं द्वारा प्रबंधित होते हैं, और आपका कैलेंडर उन इवेंट को एक जगह दिखाता है। यहां तक कि एक डोमेन एडमिन कैलेंडर अनुभाग में सीधे इवेंट जोड़ या संपादित नहीं कर सकता है जब तक कि वे इवेंट के समूह के नेता न हों।
+Creating a calendar in B1 Admin lets you build a curated view of events by connecting one or more groups. Events are managed by group leaders within their groups, and your calendar displays those events in one place. Admins with edit access can add or edit events for any group. Non-admin group leaders can only manage events for groups they lead.
 
 </div>
 
 <div class="prereqs">
-<h4>शुरू करने से पहले</h4>
+<h4>Before You Begin</h4>
 
-- उन [समूहों](../groups/creating-groups.md) को सेटअप करें जिनके इवेंट आप अपने कैलेंडर में शामिल करना चाहते हैं
-- आपको B1 Admin में कैलेंडर अनुभाग तक प्रशासनिक पहुंच की आवश्यकता है
+- Set up the [groups](../groups/creating-groups.md) whose events you want to include in your calendar
+- You need administrative access to the Calendars section in B1 Admin
 
 </div>
 
-## नया कैलेंडर बनाना
+## Creating a New Calendar
 
-1. B1 Admin में, **वेबसाइट** पर नेविगेट करें, फिर **कैलेंडर** अनुभाग पर।
-2. **कैलेंडर जोड़ें** पर क्लिक करें।
-3. अपने कैलेंडर के लिए एक **नाम** दर्ज करें (उदाहरण के लिए, "युवा मंत्रालय इवेंट" या "मुख्य चर्च कैलेंडर")।
-4. अपनी टीम को समझने में मदद करने के लिए एक वैकल्पिक **विवरण** जोड़ें कि यह कैलेंडर किसके लिए है।
-5. अपने नए कैलेंडर को सेव करने के लिए **बनाएं** पर क्लिक करें।
+1. In the B1 Admin, navigate to **Website**, then to the **Calendars** section.
+2. Click **Add Calendar**.
+3. Enter a **name** for your calendar (for example, "Youth Ministry Events" or "Main Church Calendar").
+4. Add an optional **description** to help your team understand what this calendar is for.
+5. Click **Create** to save your new calendar.
 
-## कैलेंडर विवरण पृष्ठ
+## The Calendar Detail Page
 
-कैलेंडर बनाने के बाद, विवरण पृष्ठ खोलने के लिए इस पर क्लिक करें। इस पृष्ठ के दो मुख्य क्षेत्र हैं:
+After creating a calendar, click on it to open the detail page. This page has two main areas:
 
-- **बाईं स्तंभ** -- कैलेंडर का एक दृश्य जो कनेक्टेड समूहों से खींचे गए इवेंट दिखाता है।
-- **दाईं स्तंभ** -- संबंधित समूहों की सूची। यह वह जगह है जहां आप प्रबंधित करते हैं कि इस कैलेंडर में कौन से समूह शामिल हैं।
+- **Left column** -- A view of the calendar showing events pulled in from connected groups.
+- **Right column** -- The associated groups list. This is where you manage which groups are included in this calendar.
 
-## समूहों को कनेक्ट करना
+## Connecting Groups
 
-कैलेंडर में इवेंट वाले समूह विवरण पृष्ठ के दाईं ओर समूहों की सूची में स्वचालित रूप से दिखाई देते हैं।
+Groups that have events in the calendar automatically appear in the groups list on the right side of the detail page.
 
-1. अपने कैलेंडर के साथ एक समूह को जोड़ने के लिए समूह अनुभाग में **जोड़ें** पर क्लिक करें।
-2. ड्रॉपडाउन से समूह चुनें।
-3. चुनें कि उस समूह से **सभी इवेंट** शामिल करें या केवल **विशिष्ट इवेंट**।
-4. **सेव** पर क्लिक करें।
+1. Click **Add** in the groups section to associate a group with your calendar.
+2. Select the group from the dropdown.
+3. Choose whether to include **all events** from that group or only **specific events**.
+4. Click **Save**.
 
 :::tip
-अपने कैलेंडर में समूहों को कनेक्ट करना स्वचालित रूप से इवेंट को एकत्रित करने का एक शक्तिशाली तरीका है। जब एक समूह नेता अपने [समूह](../groups/creating-groups.md) में कोई इवेंट जोड़ता है, तो यह आपके चर्च-व्यापी कैलेंडर में बिना किसी अतिरिक्त काम के प्रवाहित हो सकता है।
+Connecting groups to your calendar is a powerful way to automatically aggregate events. When a group leader adds an event to their [group](../groups/creating-groups.md), it can flow into your church-wide calendar without any extra work from you.
 :::
 
 :::info
-यदि आप एक एकल कैलेंडर बनाना चाहते हैं जो आपकी चर्च के कई समूहों से इवेंट खींचता है, तो एक सुव्यवस्थित दृष्टिकोण के लिए [क्यूरेटेड कैलेंडर](curated-calendar) देखें।
+If you want to create a single calendar that pulls events from many groups across your church, see [Curated Calendar](curated-calendar) for a streamlined approach.
 :::
 
-## इवेंट पंजीकरण सक्षम करना
+## Enabling Event Registration
 
-आप किसी भी कैलेंडर इवेंट के लिए पंजीकरण सक्षम कर सकते हैं ताकि सदस्य B1 वेबसाइट या मोबाइल ऐप के माध्यम से साइन अप कर सकें।
+You can enable registration for any calendar event so members can sign up through the B1 website or mobile app.
 
-1. एक मौजूदा इवेंट पर क्लिक करें या एक नया बनाएं।
-2. इवेंट संपादक में, इसे सक्षम करने के लिए **पंजीकरण** को टॉगल करें।
-3. पंजीकरण सेटिंग को कॉन्फ़िगर करें:
-   - **क्षमता** (वैकल्पिक) -- पंजीकरण की अधिकतम संख्या सेट करें। असीमित के लिए खाली छोड़ दें।
-   - **पंजीकरण खुलता है** -- तारीख और समय जब पंजीकरण उपलब्ध हो जाता है।
-   - **पंजीकरण बंद होता है** -- तारीख और समय जब पंजीकरण बंद होता है।
-   - **टैग** -- अल्पविराम-सीमांकित लेबल (जैसे, "युवा, सेवानिवृत्ति, vbs") पंजीकरण योग्य इवेंट को वर्गीकृत करने में मदद करने के लिए।
-   - **पंजीकरण प्रश्न** -- वैकल्पिक रूप से एक [फॉर्म](../forms/creating-forms.md) संलग्न करें ताकि पंजीकरणकर्ता अतिरिक्त प्रश्नों (आहार प्रतिबंध, टी-शर्ट आकार, आपातकालीन संपर्क, आदि) का उत्तर साइन अप के भाग के रूप में दें। प्रश्नों को छोड़ने के लिए **कोई नहीं** चुनें।
-   - **प्रतीक्षा सूची सक्षम करें** -- जब इवेंट भर जाता है, तो अतिरिक्त पंजीकरणकर्ताओं को मना किए जाने के बजाय प्रतीक्षा सूची में शामिल होने दें। [भुगतान पंजीकरण](paid-registrations#waitlist) देखें।
-4. इवेंट को सेव करें।
+1. Click on an existing event or create a new one.
+2. In the event editor, toggle **Registration** to enable it.
+3. Configure the registration settings:
+   - **Capacity** (optional) -- Set a maximum number of registrations. Leave blank for unlimited.
+   - **Registration Opens** -- The date and time when registration becomes available.
+   - **Registration Closes** -- The date and time when registration closes.
+   - **Tags** -- Comma-separated labels (e.g., "youth, retreat, vbs") to help categorize registerable events.
+   - **Registration Questions** -- Optionally attach a [form](../forms/creating-forms.md) so registrants answer extra questions (dietary restrictions, T-shirt size, emergency contact, etc.) as part of signing up. Choose **None** to skip questions.
+   - **Enable Waitlist** -- When the event fills up, let additional registrants join a waitlist instead of being turned away. See [Paid Registrations](paid-registrations#waitlist).
+4. Save the event.
 
-भुगतान किए गए इवेंट के लिए, वही सेटिंग पृष्ठ आपको मूल्य निर्धारित **उपस्थिति प्रकार**, वैकल्पिक **चयन** (ऐड-ऑन), और **छूट कोड** को परिभाषित करने देता है, आपकी चर्च के देने वाले प्रदाता के माध्यम से भुगतान एकत्रित किया जाता है। पूर्ण विस्तृत विवरण के लिए [भुगतान पंजीकरण](paid-registrations) देखें।
+For paid events, the same settings page lets you define priced **Attendee Types**, optional **Selections** (add-ons), and **Discount Codes**, with payment collected through your church's giving provider. See [Paid Registrations](paid-registrations) for the full walkthrough.
 
-एक बार पंजीकरण सक्षम हो जाने के बाद, सदस्यों को **इस इवेंट के लिए पंजीकरण करें** बटन दिखाई देगा जब वे [B1 वेबसाइट](../../b1-church/events/registering) या [B1 मोबाइल ऐप](../../b1-mobile/events/registering) पर इवेंट देखते हैं। यदि आप एक फॉर्म संलग्न करते हैं, तो पंजीकरणकर्ता पंजीकरण के दौरान एक **प्रश्न** चरण देखते हैं और उनके उत्तर उनके पंजीकरण के साथ सहेजे जाते हैं।
+Once registration is enabled, members will see a **Register for this Event** button when they view the event on the [B1 website](../../b1-church/events/registering) or [B1 Mobile app](../../b1-mobile/events/registering). If you attached a form, registrants see a **Questions** step during registration and their answers are saved with their registration.
 
 :::info
-पंजीकरण प्रश्न केवल उन फॉर्म के साथ काम करते हैं जो **नहीं** प्रतिबंधित के रूप में चिह्नित हैं। एक प्रतिबंधित फॉर्म पंजीकरण के दौरान स्वचालित रूप से छोड़ा जाता है न कि दिखाया जाता है, इसलिए किसी इवेंट में प्रश्नों को संलग्न करते समय एक प्रतिबंधित फॉर्म का उपयोग करें।
+Registration Questions only works with forms that are **not** marked Restricted. A restricted form is skipped automatically during registration rather than shown, so use an unrestricted form when attaching questions to an event.
 :::
 
-### पंजीकरण प्रबंधित करना
+### Managing Registrations
 
-अपने इवेंट के लिए पंजीकरण को देखने और प्रबंधित करने के लिए:
+To view and manage registrations for your events:
 
-1. B1 Admin में **पंजीकरण** पृष्ठ पर नेविगेट करें।
-2. आप पंजीकरण सक्षम किए गए सभी इवेंट की एक तालिका देखेंगे, जिसमें इवेंट शीर्षक, तारीख, वर्तमान पंजीकरण संख्या बनाम क्षमता, और टैग दिखाई देंगे।
-3. नामों, सदस्य संख्या, उपस्थिति प्रकार, भुगतान स्थिति, और पंजीकरण तारीख सहित पंजीकरण की पूरी सूची देखने के लिए किसी इवेंट पर क्लिक करें।
-4. विवरण पृष्ठ से, आप कर सकते हैं:
-   - **उपस्थिति जोड़ें** -- किसी को मैन्युअल रूप से पंजीकृत करें जो ऑफलाइन या फोन पर साइन अप किया है।
-   - **व्यक्तिगत पंजीकरण को रद्द करें**
-   - **पंजीकरण को स्थायी रूप से हटाएं**
-   - **जब कोई जगह खुलती है तो प्रतीक्षा सूची में रजिस्ट्रेशन को प्रचारित करें**
-   - **CSV निर्यात करें** -- सभी पंजीकरण डाउनलोड करें, जिसमें उपस्थिति प्रकार, चयन, भुगतान राशि, और प्रश्न उत्तर शामिल हैं
+1. Navigate to the **Registrations** page in B1 Admin.
+2. You will see a table of all events with registration enabled, showing the event title, date, current registration count vs. capacity, and tags.
+3. Click on an event to see the full list of registrations, including names, member count, attendee types, payment status, and registration date.
+4. From the detail page, you can:
+   - **Add Attendee** -- Manually register someone who signed up offline or over the phone.
+   - **Cancel** individual registrations
+   - **Delete** registrations permanently
+   - **Promote** waitlisted registrations when a spot opens
+   - **Export CSV** -- Download all registrations, including attendee types, selections, payment amounts, and question answers
 
-यदि इवेंट में पंजीकरण प्रश्न संलग्न हैं, तो विवरण पृष्ठ उन पंजीकरणकर्ताओं को जल्दी से खोजने के लिए एक **केवल अनुत्तरित प्रश्न** फ़िल्टर भी दिखाता है जिन्होंने अभी तक उत्तर जमा नहीं किए हैं, और प्रत्येक उत्तरित पंजीकरण पर एक **उत्तर देखें** बटन उनकी प्रतिक्रियाओं को देखने के लिए। भुगतान किए गए इवेंट एक **प्रकार** स्तंभ, एक **भुगतान / कुल** स्तंभ, प्रति-प्रकार गणना, और एक भुगतान विवरण संवाद जोड़ते हैं -- [भुगतान पंजीकरण](paid-registrations#the-registration-roster) देखें।
+If the event has Registration Questions attached, the detail page also shows an **Unanswered questions only** filter to quickly find registrants who haven't submitted answers yet, and a **View Answers** button on each answered registration to see their responses. Paid events add a **Type** column, a **Paid / Total** column, per-type counts, and a payments detail dialog -- see [Paid Registrations](paid-registrations#the-registration-roster).
 
 :::tip
-क्षमता प्रगति पट्टी का उपयोग करके निगरानी करें कि इवेंट कितनी जल्दी भर रहे हैं। जब कोई इवेंट क्षमता पर या उससे अधिक हो तो बार लाल हो जाता है।
+Use the capacity progress bar to monitor how quickly events are filling up. The bar turns red when an event is at or over capacity.
 :::
 
-## अगले कदम
+## Next Steps
 
-- [क्यूरेटेड कैलेंडर](curated-calendar) -- एक कैलेंडर बनाएं जो कई समूहों से खींचता है
-- [भुगतान पंजीकरण](paid-registrations) -- उपस्थिति प्रकार, ऐड-ऑन चयन, छूट कोड, भुगतान, और प्रतीक्षा सूची
-- [इवेंट पंजीकरण गाइड](../guides/event-registration) -- इवेंट पंजीकरण सेटअप के लिए चरण-दर-चरण गाइड
-- [कैलेंडर अवलोकन](./) -- कैलेंडर अवलोकन पर लौटें
+- [Curated Calendar](curated-calendar) -- Create a calendar that pulls from multiple groups
+- [Paid Registrations](paid-registrations) -- Attendee types, add-on selections, discount codes, payments, and waitlists
+- [Event Registration Guide](../guides/event-registration) -- Step-by-step guide for setting up event registration
+- [Calendars Overview](./) -- Return to the calendars overview

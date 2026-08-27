@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Aparência"
 ---
 
@@ -6,104 +6,104 @@ title: "Aparência"
 
 <div class="article-intro">
 
-A página Aparência permite você customizar a aparência geral e sensação do site de sua igreja. De cores e fontes a espaçamento e CSS personalizado você pode controlar cada aspecto visual de seu site de um lugar.
+The Appearance page lets you customize the overall look and feel of your church website. From colors and fonts to spacing and custom CSS, you can control every visual aspect of your site from one place.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Before You Begin</h4>
 
-- Complete a [Configuração Inicial](initial-setup) para seu website
-- Tenha seu logo de igreja pronto em formato PNG com fundo transparente e proporção 4:1
-- Saiba as cores de marca de sua igreja (valores hex) se você tem um guia de estilo existente
+- Complete the [Initial Setup](initial-setup) for your website
+- Have your church logo ready in PNG format with a transparent background and a 4:1 aspect ratio
+- Know your church's brand colors (hex values) if you have an existing style guide
 
 </div>
 
-## Acessando Configurações de Aparência
+## Accessing Appearance Settings
 
-1. Em B1 Admin, clique em **Website** no menu esquerdo.
-2. Clique na guia **Aparência** no topo da visualização Website Pages.
-3. A página Site Styles carrega com uma visualização ao vivo de seu website no esquerdo e opções de **Configurações de Estilo** na direita.
+1. In the B1 Admin, click **Website** in the left menu.
+2. Click the **Appearance** tab at the top of the Website Pages view.
+3. The Site Styles page loads with a live preview of your website on the left and **Style Settings** options on the right.
 
-## Paleta de Cores
+## Color Palette
 
-1. Clique em **Color Palette** no painel Configurações de Estilo.
-2. Você verá **Base Colors** (tons claros, de ênfase e escuros) e **Semantic Colors** (Primary, Secondary, Success, Warning e Error).
-3. Clique em qualquer amostra de cor para abrir o seletor de cor. Arraste o seletor ou digite um valor hex para escolher sua cor.
-4. O **Color Combinations Preview** mostra como suas cores selecionadas trabalham juntas.
-5. Use **Suggested Palettes** para aplicar rapidamente um esquema de cores pré-projetado.
-6. Clique em **Save** quando estiver satisfeito.
+1. Click **Color Palette** in the Style Settings panel.
+2. You will see **Base Colors** (light, accent, and dark shades) and **Semantic Colors** (Primary, Secondary, Success, Warning, and Error).
+3. Click any color swatch to open the color picker. Drag the selector or enter a hex value to choose your color.
+4. The **Color Combinations Preview** shows how your selected colors work together.
+5. Use **Suggested Palettes** to quickly apply a pre-designed color scheme.
+6. Click **Save** when you are satisfied.
 
-## Tipografia
+## Typography
 
-1. Clique em **Typography Settings** no painel Configurações de Estilo.
-2. Clique em **Select a Font** para abrir o navegador de fonte. Você pode buscar por nome ou procurar categorias como Serif, Sans Serif, Display, Handwriting e Monospace.
-3. Defina fontes tanto para cabeçalhos quanto para texto de corpo.
-4. Clique em **Typography Scale** para ajustar a hierarquia de tamanho para Heading 1 a Heading 4. Use a escala multiplicadora e campos de tamanho base para ajustar bem.
-5. Clique em **Save** para aplicar suas escolhas de fonte.
+1. Click **Typography Settings** in the Style Settings panel.
+2. Click **Select a Font** to open the font browser. You can search by name or browse categories like Serif, Sans Serif, Display, Handwriting, and Monospace.
+3. Set fonts for both headings and body text.
+4. Click **Typography Scale** to adjust the size hierarchy for Heading 1 through Heading 4. Use the scale multiplier and base size fields to fine-tune.
+5. Click **Save** to apply your font choices.
 
-## Espaçamento
+## Spacing
 
-1. Clique em **Spacing Scale** no painel Configurações de Estilo.
-2. Ajuste valores de espaçamento para Extra Small até Extra Large. Exemplos práticos mostram como cada valor afeta layout.
-3. Clique em **Save Spacing** para aplicar os valores através de todo seu site.
+1. Click **Spacing Scale** in the Style Settings panel.
+2. Adjust spacing values for Extra Small through Extra Large. Practical examples show how each value affects layout.
+3. Click **Save Spacing** to apply the values across your entire site.
 
-## Logo e Marca
+## Logo and Branding
 
-1. Clique em **Logo** no painel Configurações de Estilo.
-2. Faça upload de seu **Light Background Logo** e **Dark Background Logo**. Use imagens com fundo transparente e proporção 4:1 para melhores resultados.
-3. Faça upload de uma **Social Media Image** para visualizações de link e um **Favicon** para o ícone da guia do navegador.
+1. Click **Logo** in the Style Settings panel.
+2. Upload your **Light Background Logo** and **Dark Background Logo**. Use images with a transparent background and a 4:1 aspect ratio for best results.
+3. Upload a **Social Media Image** for link previews and a **Favicon** for the browser tab icon.
 
 :::tip
-Para melhores resultados, use um logo com fundo transparente em formato PNG. Isto garante que pareça ótimo tanto em fundos claros quanto escuros em seu website e [aplicativo móvel](../settings/mobile-app.md).
+For best results, use a logo with a transparent background in PNG format. This ensures it looks great on both light and dark backgrounds across your website and [mobile app](../settings/mobile-app.md).
 :::
 
 ## Estilos de Navegação
 
-Customize cores da barra de navegação de seu website para modos sólido e transparente:
+Customize your website's navigation bar colors for both solid and transparent modes:
 
-1. Role até a seção **Navigation Styles**
-2. Clique em **Edit Navigation Styles**
-3. Configure cores para navegação sólida (com fundo) e navegação transparente (modo overlay)
-4. Clique em **Save** para aplicar suas cores de navegação
+1. Scroll to the **Navigation Styles** section
+2. Click **Edit Navigation Styles**
+3. Configure colors for solid navigation (with background) and transparent navigation (overlay mode)
+4. Click **Save** to apply your navigation colors
 
-Para instruções detalhadas, consulte [Navigation Styles](./navigation-styles.md).
+For detailed instructions, see [Navigation Styles](./navigation-styles.md).
 
-## Widgets de Site
+## Site Widgets
 
-Widgets de site aparecem em cada página de seu site, flutuando acima do conteúdo da página:
+Site widgets appear on every page of your site, floating above the page content:
 
-- **Announcement Banner** -- Uma barra demissível no topo de seu site para mensagens sensíveis ao tempo, como um evento próximo ou uma mudança de serviço.
-- **Launcher** -- Um botão flutuante que abre um menu de acesso rápido, por exemplo links para dar, fazer check-in ou visualizar o boletim.
+- **Announcement Banner** -- A dismissible bar at the top of your site for time-sensitive messages, like an upcoming event or a service change.
+- **Launcher** -- A floating button that opens a quick-access menu, for example links to give, check in, or view the bulletin.
 
-1. Clique em **Site Widgets** no painel Configurações de Estilo.
-2. Ligue os widgets que você quer e configure seu texto, links e cores.
-3. Clique em **Save**.
+1. Click **Site Widgets** in the Style Settings panel.
+2. Turn on the widgets you want and configure their text, links, and colors.
+3. Click **Save**.
 
-## Análise
+## Analytics
 
-Adicione seu **Google Analytics 4 Measurement ID** no painel Configurações de Estilo para rastrear tráfego de visitante em seu website.
+Add your **Google Analytics 4 Measurement ID** in the Style Settings panel to track visitor traffic on your website.
 
-## CSS e JavaScript Personalizado
+## Custom CSS and JavaScript
 
-1. Clique em **CSS and Javascript** no painel Configurações de Estilo.
-2. Adicione **Custom CSS** para substituir estilos padrão para customização avançada.
-3. Adicione **Custom HTML** para códigos de rastreamento ou outros scripts.
-4. Use a seção **Common Javascript Examples** para snippets como integração do Google Analytics.
+1. Click **CSS and Javascript** in the Style Settings panel.
+2. Add **Custom CSS** to override default styles for advanced customization.
+3. Add **Custom HTML** for tracking codes or other scripts.
+4. Use the **Common Javascript Examples** section for snippets like Google Analytics integration.
 
 :::warning
-CSS personalizado é poderoso mas pode quebrar seu layout do site se usado incorretamente. A maioria das igrejas pode alcançar a aparência que desejam usando os controles de cor, fonte e espaçamento construídos. Apenas use CSS personalizado se você estiver confortável com desenvolvimento web.
+Custom CSS is powerful but can break your site's layout if used incorrectly. Most churches can achieve the look they want using the built-in color, font, and spacing controls. Only use custom CSS if you are comfortable with web development.
 :::
 
 :::info
-Seu site impõe uma Content Security Policy que bloqueia scripts inline de qualquer outra fonte. O campo **Custom JavaScript** é a única exceção confiável — código que você salva lá executa como-é, para que você apenas cole scripts de fontes que você confia (tags de análise, widgets de chat e embeds similares).
+Your site enforces a Content Security Policy that blocks inline scripts from any other source. The **Custom JavaScript** field is the one trusted exception -- code you save there runs as-is, so only paste scripts from sources you trust (analytics tags, chat widgets, and similar embeds).
 :::
 
-## Temas de Estilo
+## Style Themes
 
-Se você quer um ponto de partida rápido, o **Suggested Palettes** na seção Color Palette oferece temas pré-construídos que definem cores coordenadas em um clique. Você sempre pode ajustar bem configurações individuais depois de aplicar um tema.
+If you want a quick starting point, the **Suggested Palettes** in the Color Palette section offer pre-built themes that set coordinated colors in one click. You can always fine-tune individual settings after applying a theme.
 
-## Próximas Etapas
+## Next Steps
 
-- [Gerenciando Páginas](managing-pages) -- Construa e organize suas páginas de website
-- [Arquivos](files) -- Faça upload de ativos de mídia para seu site
+- [Managing Pages](managing-pages) -- Build and organize your website pages
+- [Files](files) -- Upload media assets for your site

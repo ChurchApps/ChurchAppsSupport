@@ -6,88 +6,88 @@ title: "Gerenciando Aulas"
 
 <div class="article-intro">
 
-Aulas são as sessões individuais de ensino dentro de um estudo. Cada aula representa o que acontece durante um único encontro de classe. É aqui que você constrói o conteúdo detalhado -- locais, seções, papéis e ações -- que os voluntários usarão ao ensinar.
+Lessons are the individual teaching sessions within a study. Each lesson represents what happens during a single class meeting. This is where you build out the detailed content -- venues, sections, roles, and actions -- that volunteers will use when they teach.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Before You Begin</h4>
 
-- [Crie um programa](./managing-programs.md) e [adicione um estudo](./managing-studies.md) a ele
-- Tenha permissões de administrador para o Lessons.church (veja a [visão geral de Administração](./index.md))
+- [Create a program](./managing-programs.md) and [add a study](./managing-studies.md) to it
+- Have admin permissions for Lessons.church (see the [Administration overview](./index.md))
 
 </div>
 
-## Criando uma Aula
+## Creating a Lesson
 
-1. Navegue até a área de **Admin**, expanda o programa e o estudo, e encontre o estudo ao qual deseja adicionar uma aula.
-2. Clique em **Add Lesson**.
-3. Digite um **Name** e outros detalhes para a aula.
-4. Salve a aula.
+1. Navigate to the **Admin** area, expand the program and study, and find the study you want to add a lesson to.
+2. Click **Add Lesson**.
+3. Enter a **Name** and other details for the lesson.
+4. Save the lesson.
 
-## Para Levar aos Pais
+## Parent Take-Home
 
-Cada aula tem uma seção opcional **Para levar aos pais** em Description. Esses campos são o que os pais veem em seu grupo B1 após a aula (e na página de pais da sala). Não são uma segunda descrição da aula.
+Each lesson has an optional **Parent take-home** section under Description. These fields are what parents see on their B1 group after class (and on the classroom parent page). They are not a second lesson description.
 
-| Campo | Finalidade |
+| Field | Purpose |
 |---|---|
-| **Resumo** | Uma frase. "Deus cumpre Suas promessas." |
-| **Versículo** | Referência do versículo para memorizar e texto curto. |
-| **Pergunta** | Uma pergunta para o trajeto de carro que os pais podem fazer sem um PDF. |
-| **Nota opcional** | Extra (sugestão de oração, atividade em família). Markdown. Oculto quando vazio. |
+| **Bottom line** | One sentence. "God keeps His promises." |
+| **Verse** | Memory verse reference and short text. |
+| **Question** | One car-ride question parents can ask without a PDF. |
+| **Optional note** | Extra (prayer prompt, family activity). Markdown. Hidden when empty. |
 
-O resumo e uma pergunta importam mais do que uma visão geral. Deixe os quatro campos vazios se você não tiver nada para os pais naquela semana — nada é exibido.
+Bottom line and one question matter more than an overview. Leave all four empty if you have nothing for parents that week — nothing is shown.
 
-Não coloque conteúdo para os pais em **Description**. Description é o texto de catálogo para professores navegando no lessons.church.
+Do not put parent copy in **Description**. Description is catalog copy for teachers browsing lessons.church.
 
-## Entendendo a Estrutura da Aula
+## Understanding the Lesson Structure
 
-Cada aula é organizada em várias camadas:
+Each lesson is organized into several layers:
 
-- **Locais** -- Diferentes versões da aula para diferentes faixas etárias ou ambientes. Por exemplo, você pode ter um local "Pré-escola" e um local "Fundamental" para a mesma aula.
-- **Seções** -- Os segmentos dentro de um local, como "Boas-vindas", "Vídeo", "História Bíblica" e "Atividade". As seções controlam o fluxo do tempo de classe.
-- **Papéis e Ações** -- Dentro de cada seção, você atribui papéis (por exemplo, "Professor Líder" ou "Líder de Pequeno Grupo") e dá a cada papel ações específicas.
+- **Venues** -- Different versions of the lesson for different age groups or settings. For example, you might have a "Preschool" venue and an "Elementary" venue for the same lesson.
+- **Sections** -- The segments within a venue, such as "Welcome", "Video", "Bible Story", and "Activity". Sections control the flow of the class time.
+- **Roles and Actions** -- Within each section, you assign roles (for example, "Lead Teacher" or "Small Group Leader") and give each role specific actions.
 
-## Tipos de Ação
+## Action Types
 
-Há quatro tipos de ações que você pode atribuir a um papel dentro de uma seção:
+There are four types of actions you can assign to a role within a section:
 
-- **Say (Falar)** -- Texto que o voluntário deve falar ou parafrasear para a classe.
-- **Do (Fazer)** -- Uma atividade física ou instrução a ser realizada.
-- **Note (Nota)** -- Informação de contexto ou lembrete para o voluntário (não lido em voz alta).
-- **Play (Reproduzir)** -- Um vídeo ou clipe de áudio para reproduzir durante a seção.
+- **Say** -- Text the volunteer should speak or paraphrase to the class.
+- **Do** -- A physical activity or instruction to carry out.
+- **Note** -- Background information or a reminder for the volunteer (not read aloud).
+- **Play** -- A video or audio clip to play during the section.
 
-## Adicionando um Local
+## Adding a Venue
 
-1. Abra a aula na visão de admin.
-2. Clique em **Add Venue**.
-3. Digite um nome para o local (por exemplo, "Pré-escola" ou "Fundamental").
-4. Salve. Agora você pode adicionar seções a este local.
+1. Open the lesson in the admin view.
+2. Click **Add Venue**.
+3. Enter a name for the venue (e.g., "Preschool" or "Elementary").
+4. Save. You can now add sections to this venue.
 
-## Adicionando Seções e Ações
+## Adding Sections and Actions
 
-1. Expanda um local para ver suas seções.
-2. Clique em **Add Section** e dê um nome a ela (por exemplo, "Boas-vindas").
-3. Dentro da seção, clique em **Add Action**.
-4. Escolha o **papel**, o **tipo de ação** (Say, Do, Note ou Play) e digite o conteúdo.
-5. Salve.
+1. Expand a venue to see its sections.
+2. Click **Add Section** and give it a name (e.g., "Welcome").
+3. Within the section, click **Add Action**.
+4. Choose the **role**, **action type** (Say, Do, Note, or Play), and enter the content.
+5. Save.
 
-Repita esse processo para construir todo o fluxo da aula.
+Repeat this process to build out the full lesson flow.
 
-## Enviando Recursos no Nível da Aula
+## Uploading Lesson-Level Resources
 
-Você pode anexar materiais para download diretamente a uma aula -- por exemplo, uma folha de atividade ou página para colorir específica daquela semana.
+You can attach downloadable materials directly to a lesson -- for example, an activity sheet or coloring page specific to that week.
 
-1. Abra a aula na visão de admin.
-2. Navegue até a seção **Resources**.
-3. Envie seus arquivos.
+1. Open the lesson in the admin view.
+2. Navigate to the **Resources** section.
+3. Upload your files.
 
 :::tip
-Construa sua aula a partir da perspectiva do voluntário. Percorra as seções e ações em ordem e pergunte a si mesmo se um voluntário de primeira viagem conseguiria seguir sem nenhuma outra preparação.
+Build your lesson from the volunteer's perspective. Step through the sections and actions in order and ask yourself whether a first-time volunteer could follow along without any other preparation.
 :::
 
 ## Artigos Relacionados
 
-- [Gerenciando Programas](./managing-programs.md) -- Configurar o contêiner de currículo de nível superior
-- [Gerenciando Estudos](./managing-studies.md) -- Organizar aulas em grupos de estudo
-- [Estatísticas](./statistics.md) -- Acompanhar como suas aulas estão sendo usadas
+- [Managing Programs](./managing-programs.md) -- Set up the top-level curriculum container
+- [Managing Studies](./managing-studies.md) -- Organize lessons into study groups
+- [Statistics](./statistics.md) -- Track how your lessons are being used

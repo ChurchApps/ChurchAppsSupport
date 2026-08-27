@@ -1,52 +1,52 @@
 ---
-title: "Approvazioni del Calendario"
+title: "Calendar Approvals"
 ---
 
-# Approvazioni del Calendario
+# Calendario Approvals
 
 <div class="article-intro">
 
-La pagina Approvazioni è dove gli amministratori rivedono e agiscono su richieste di prenotazione di stanze e risorse in sospeso, nonché su eventi del calendario che richiedono l'approvazione prima di essere pubblicati.
+The Approvals page is where administrators review and act on In Sospeso Stanza and resource booking requests, as well as calendar Eventi that require approval before being published.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Configura stanze o risorse con un **Gruppo di Approvazione** in [Stanze e Risorse](rooms-resources)
-- Hai bisogno del permesso **Calendars Admin** o del permesso **content.edit**
+- Configure Stanze or resources with an **Approval Gruppo** in [Rooms & Resources](rooms-resources)
+- You need the **Calendars Admin** Permesso or the **content.Modifica** Permesso
 
 </div>
 
-## Apertura delle Approvazioni
+## Opening Approvals
 
-In B1 Admin, vai su **Calendari** e seleziona **Approvazioni**. Le richieste di prenotazione in sospeso e gli eventi in attesa di revisione sono elencati qui.
+In B1 Admin, go Per **Calendars** and Seleziona **Approvals**. In Sospeso booking requests and Eventi awaiting review are listed here.
 
-## Richieste di Prenotazione
+## Booking Requests
 
-Quando un gruppo crea un evento e richiede una stanza o una risorsa, la richiesta appare nel pannello **Richieste di Prenotazione**. Ogni riga mostra:
+When a Gruppo creates an Evento and requests a Stanza or resource, the request appears in the **Booking Requests** panel. Each row shows:
 
-- La stanza o risorsa richiesta
-- Il nome dell'evento e la data/ora
-- Il gruppo richiedente
+- The Stanza or resource being requested
+- The Evento name and Data/Ora
+- The requesting Gruppo
 
-### Indicatori di Conflitto
+### Conflict Indicators
 
-Se due richieste si sovrappongono per la stessa stanza o risorsa, appare un'icona di avvertenza di conflitto. Rivedi attentamente le richieste in conflitto prima di approvare una di esse.
+If two requests overlap for the same Stanza or resource, a conflict warning icon appears. Review conflicting requests carefully before approving either one.
 
-### Approvazione o Rifiuto
+### Approving or Rejecting
 
-Fai clic sull'icona **✓** (approva) o **✗** (rifiuta) su qualsiasi richiesta di prenotazione. Il gruppo richiedente riceve una notifica della decisione. Le prenotazioni approvate sono bloccate in quella stanza o risorsa per l'evento; le prenotazioni rifiutate liberano lo slot per altri.
+Fai clic the **✓** (approve) or **✗** (reject) icon on any booking request. The requesting Gruppo is notified of the decision. Approvato bookings are locked Per that Stanza or resource for the Evento; rejected bookings free the slot for others.
 
-## Eventi in Sospeso
+## In Sospeso Eventi
 
-Se il tuo flusso di lavoro del calendario richiede l'approvazione dell'evento prima che gli eventi diventino visibili al pubblico, gli eventi in sospeso appaiono nel pannello **Eventi in Sospeso**. Approva un evento per pubblicarlo sul calendario, o rifiutalo per notificare al mittente che sono necessari cambiamenti.
+If your calendar workflow requires Evento approval before Eventi become visible Per the public, In Sospeso Eventi appear in the **In Sospeso Eventi** panel. Approve an Evento Per publish it Per the calendar, or reject it Per notify the submitter that changes are needed.
 
 :::tip
-Configura un Gruppo di Approvazione su una stanza in [Stanze e Risorse](rooms-resources) per richiedere l'approvazione per quella stanza. I gruppi con accesso possono quindi richiedere la stanza quando creano eventi, e quelle richieste confluiscono in questa pagina.
+Set up an Approval Gruppo on a Stanza in [Rooms & Resources](rooms-resources) Per require approval for that Stanza. Gruppi with access can then request the Stanza when creating Eventi, and those requests flow into this page.
 :::
 
 ## Articoli Correlati
 
-- [Stanze, Risorse e Programmazione](rooms-resources) — configura stanze e risorse prenotabili
-- [Creazione di Calendari](creating-calendars) — gestisci calendari ed eventi
+- [Rooms, Resources & Scheduling](rooms-resources) — configure bookable Stanze and resources
+- [Creating Calendars](creating-calendars) — manage calendars and Eventi

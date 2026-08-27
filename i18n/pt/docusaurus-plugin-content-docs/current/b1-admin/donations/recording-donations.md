@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Registrando Doações"
 ---
 
@@ -6,59 +6,59 @@ title: "Registrando Doações"
 
 <div class="article-intro">
 
-Registrar doações em B1 Admin é feito através do sistema de Lotes. Você cria um lote para representar uma coleta (como uma oferta de domingo), depois adiciona doações individuais para aquele lote. Isto mantém seus registros de dádivas organizados e fáceis de reconciliar.
+Recording donations in B1 Admin is done through the Batches system. You create a batch to represent a collection (such as a Sunday offering), then add individual donations to that batch. This keeps your giving records organized and easy to reconcile.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Before You Begin</h4>
 
-- Configure seus [fundos](funds.md) para que você possa atribuir doações às categorias corretas
-- Crie um [lote](batches.md) para conter as doações que está prestes a inserir
-- Certifique-se de que os doadores estão em seu [diretório de pessoas](../people/adding-people.md) para que você possa procurá-los ao inserir dádivas
+- Set up your [funds](funds.md) so you can assign donations to the correct categories
+- Create a [batch](batches.md) to hold the donations you are about to enter
+- Make sure the donors are in your [people directory](../people/adding-people.md) so you can look them up when entering gifts
 
 </div>
 
-## Criando um Lote e Adicionando Doações
+## Creating a Batch and Adding Donations
 
-1. Em **B1 Admin**, abra o **menu de seção** no canto superior esquerdo e escolha **Doações**, depois clique em **Lotes**.
-2. Clique em **Adicionar Lote**.
-3. Digite um nome para o lote (por exemplo, "Oferta de Domingo - 5 de Jan") e selecione a data. Clique em **Salvar**.
-4. Seu novo lote aparece na lista mostrando zero doações e $0,00.
-5. Clique no **nome do lote** para abri-lo.
+1. In **B1 Admin**, open the **section menu** in the top-left corner and choose **Donations**, then click **Batches**.
+2. Click **Add Batch**.
+3. Enter a name for the batch (e.g., "Sunday Offering - Jan 5") and select the date. Click **Save**.
+4. Your new batch appears in the list showing zero donations and $0.00.
+5. Click on the **batch name** to open it.
 
-## Inserindo Doações Individuais
+## Entering Individual Donations
 
-1. Na página de detalhe do lote, digite o nome do doador no **campo de busca** para encontrá-lo.
-2. Depois de selecionar uma pessoa, o formulário de entrada de doação aparece com campos para **Data**, **Método de Pagamento**, **Fundo**, **Valor** e **Número de Cheque**.
-3. Preencha os detalhes e clique em **Adicionar Doação**.
-4. A doação é adicionada à tabela abaixo e o formulário se reinicia para que você possa inserir a próxima.
+1. In the batch detail page, type the donor's name in the **search field** to find them.
+2. After selecting a person, the donation entry form appears with fields for **Date**, **Payment Method**, **Fund**, **Amount**, and **Check Number**.
+3. Fill in the details and click **Add Donation**.
+4. The donation is added to the table below, and the form resets so you can enter the next one.
 
 :::tip
-Você pode inserir rapidamente múltiplas doações em linha sem sair da página do lote. O formulário se reinicia após cada entrada para que você possa passar por uma pilha de cheques ou envelopes eficientemente.
+You can quickly enter multiple donations in a row without leaving the batch page. The form resets after each entry so you can move through a stack of checks or envelopes efficiently.
 :::
 
-## Dividindo uma Doação Entre Múltiplos Fundos
+## Splitting a Donation Across Multiple Funds
 
-Às vezes um único doador dá para mais de um fundo em uma transação. Para lidar com isto:
+Sometimes a single donor gives to more than one fund in one transaction. To handle this:
 
-1. Clique no botão **Editar** na linha de doação.
-2. No formulário de edição, adicione valores para fundos diferentes. O total será calculado automaticamente dos valores de fundo individuais.
-3. Clique em **Salvar** para atualizar a doação.
+1. Click the **Edit** button on the donation row.
+2. In the edit form, add amounts to different funds. The total will automatically calculate from the individual fund amounts.
+3. Click **Save** to update the donation.
 
 :::info
-Dividir doações entre fundos é comum quando um doador escreve um único cheque designado para múltiplos propósitos, como Fundo Geral e Missões.
+Splitting donations across funds is common when a donor writes a single check designated for multiple purposes, such as General Fund and Missions.
 :::
 
-## Editando ou Removendo Doações
+## Editing or Removing Donations
 
-Para editar uma doação, clique no botão **Editar** na sua linha no lote. Você pode alterar a data, valor, fundo, método de pagamento ou qualquer outro detalhe. Clique em **Salvar** quando terminar.
+To edit a donation, click the **Edit** button on its row in the batch. You can change the date, amount, fund, payment method, or any other detail. Click **Save** when you are done.
 
 :::tip
-O cabeçalho da página do lote atualiza automaticamente para mostrar o número total de doações e o valor em dólares combinado enquanto você adiciona ou edita entradas. Use isto para reconciliar contra seu comprovante de depósito.
+The batch page header updates automatically to show the total number of donations and the combined dollar amount as you add or edit entries. Use this to reconcile against your deposit slip.
 :::
 
-## Próximas Etapas
+## Next Steps
 
-- Revise suas entradas usando [Relatórios de Doações](donation-reports.md) para verificar precisão
-- No final do ano, gere [Declarações de Dádivas](giving-statements.md) para seus doadores
+- Review your entries using [Donation Reports](donation-reports.md) to verify accuracy
+- At year-end, generate [Giving Statements](giving-statements.md) for your donors

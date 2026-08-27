@@ -1,66 +1,66 @@
 ---
-title: "Solicitando Ingresso em um Grupo"
+title: "Requesting to Join a Group"
 ---
 
-# Solicitando Ingresso em um Grupo
+# Requesting to Join a Group
 
 <div class="article-intro">
 
-Alguns grupos exigem aprovação antes que você possa se tornar um membro. Quando um grupo tem essa configuração, você envia uma solicitação de ingresso — opcionalmente incluindo uma mensagem ao líder do grupo — e espera o líder aprovar ou recusar. Você pode visualizar o status de suas solicitações pendentes e cancelá-las a qualquer momento.
+Some groups require approval before you can become a member. When a group has this setting, you submit a join request — optionally including a message to the group leader — and wait for the leader to approve or decline. You can view the status of your pending requests and cancel them at any time.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Before You Begin</h4>
 
-- Você deve estar [conectado](../getting-started/logging-in.md) em sua conta B1.church para solicitar ingresso em um grupo.
+- You must be [logged in](../getting-started/logging-in.md) to your B1.church account to request to join a group.
 
 </div>
 
-## Ingressando vs. Solicitando Ingresso
+## Joining vs. Requesting to Join
 
-Grupos podem ter diferentes políticas de ingresso definidas por seus administradores:
+Groups can have different join policies set by their administrators:
 
-- **Aberto** -- Clique em **Ingressar no Grupo** na página de detalhes do grupo e você é imediatamente adicionado como membro.
-- **Aprovação necessária** -- Clique em **Solicitar Ingresso** para enviar uma solicitação que um líder do grupo deve aprovar antes que você se torne membro.
-- **Fechado** -- Nenhum botão de ingresso aparece. Membros devem ser adicionados manualmente por líderes.
+- **Open** -- Click **Join Group** on the group's detail page and you are immediately added as a member.
+- **Request required** -- Click **Request to Join** to submit a request that a group leader must approve before you become a member.
+- **Closed** -- No join button appears. Members must be added manually by leaders.
 
-## Como Enviar uma Solicitação de Ingresso
+## How to Submit a Join Request
 
-1. Navegue até o grupo que você quer ingressar. Consulte [Navegando Grupos](./browsing-groups.md) se precisar de ajuda para encontrá-lo.
-2. Abra a página de detalhes do grupo.
-3. Clique em **Solicitar Ingresso**.
-4. Um diálogo aparece onde você pode opcionalmente escrever uma mensagem ao líder do grupo explicando por que gostaria de ingressar.
-5. Clique em **Enviar** para enviar sua solicitação.
+1. Browse to the group you want to join. See [Browsing Groups](./browsing-groups.md) if you need help finding it.
+2. Open the group's detail page.
+3. Click **Request to Join**.
+4. A dialog appears where you can optionally write a message to the group leader explaining why you would like to join.
+5. Click **Submit** to send your request.
 
-Os líderes do grupo receberão uma notificação sobre sua solicitação. Uma vez que eles a revisem, você receberá uma notificação com o resultado.
+The group's leaders will receive a notification about your request. Once they review it, you will receive a notification with the outcome.
 
 :::tip
-Incluir uma mensagem breve — como você ouviu falar sobre o grupo ou o que espera obter — pode ajudar o líder a tomar uma decisão mais rápida.
+Including a brief message — such as how you heard about the group or what you hope to get out of it — can help the leader make a faster decision.
 :::
 
-## Verificando o Status de Suas Solicitações
+## Checking the Status of Your Requests
 
-Após enviar uma solicitação, você pode visualizar seu status a partir da página **Grupos**:
+After submitting a request, you can view its status from the **Groups** page:
 
-1. Navegue até a página **Grupos** do site B1.church de sua igreja.
-2. Role para baixo até a seção **Solicitações Pendentes**.
-3. Cada solicitação pendente mostra o nome do grupo e a data em que você a enviou.
+1. Navigate to the **Groups** page on your church's B1.church site.
+2. Scroll down to the **Pending Requests** section.
+3. Each pending request shows the group name and the date you submitted it.
 
-Se uma solicitação foi aprovada ou recusada, você receberá uma notificação — solicitações aprovadas o movem para o grupo como membro.
+If a request has been approved or declined, you will receive a notification — approved requests move you into the group as a member.
 
-## Cancelando uma Solicitação
+## Cancelling a Request
 
-Se você mudar de ideia antes que um líder revise sua solicitação:
+If you change your mind before a leader reviews your request:
 
-1. Vá para a página **Grupos**.
-2. Encontre sua solicitação na seção **Solicitações Pendentes**.
-3. Clique em **Cancelar** ao lado da solicitação.
+1. Go to the **Groups** page.
+2. Find your request in the **Pending Requests** section.
+3. Click **Cancel** next to the request.
 
-A solicitação é imediatamente retirada e o líder não a verá mais.
+The request is immediately withdrawn and the leader will no longer see it.
 
 ## Artigos Relacionados
 
-- [Navegando Grupos](./browsing-groups.md) -- Encontre grupos para ingressar
-- [Detalhes do Grupo](./group-details.md) -- O que você pode ver e fazer na página de um grupo
-- [Conversas em Grupos](./conversations.md) -- Participe de discussões uma vez que você seja membro
+- [Browsing Groups](./browsing-groups.md) -- Find groups to join
+- [Group Details](./group-details.md) -- What you can see and do on a group's page
+- [Group Conversations](./conversations.md) -- Participate in discussions once you are a member

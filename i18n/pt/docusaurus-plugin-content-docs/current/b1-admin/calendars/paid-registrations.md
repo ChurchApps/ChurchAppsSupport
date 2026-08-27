@@ -6,88 +6,88 @@ title: "Inscrições Pagas"
 
 <div class="article-intro">
 
-A inscrição em eventos pode ir além de uma simples contagem de participantes. Você pode definir tipos de participante com preços (como Adulto e Criança), oferecer complementos opcionais com seus próprios preços e quantidades, criar códigos de desconto e coletar pagamento na inscrição por meio do provedor de doações já existente da sua igreja. Quando um evento lota, uma lista de espera opcional mantém os membros interessados na fila e os promove automaticamente conforme vagas se abrem.
+Event registration can go beyond a simple head count. You can define priced attendee types (like Adult and Child), offer optional add-ons with their own prices and quantities, create discount codes, and collect payment at registration through your church's existing giving provider. When an event fills up, an optional waitlist keeps interested members in line and promotes them automatically as spots open.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Before You Begin</h4>
 
-- Ative a inscrição no evento primeiro — veja [Criando Calendários](creating-calendars#enabling-event-registration)
-- Para coletar pagamentos, sua igreja precisa ter [as doações on-line configuradas](../donations/online-giving-setup.md) (Stripe, PayPal ou Kingdom Funding). Eventos gratuitos não precisam de configuração de doações.
+- Enable registration on the event first — see [Creating Calendars](creating-calendars#enabling-event-registration)
+- To collect payments, your church needs [online giving configured](../donations/online-giving-setup.md) (Stripe, PayPal, or Kingdom Funding). Free events need no giving setup.
 
 </div>
 
-## Abrindo as Configurações de Inscrição
+## Opening Registration Settings
 
-1. No B1 Admin, vá até a página **Registrations** e abra seu evento (ou abra o evento a partir do calendário).
-2. O card **Registration Settings** mostra o básico — **Enable Registration**, **Capacity**, **Registration Opens/Closes**, **Tags** e **Registration Questions**.
-3. Abaixo do básico há três acordeões: **Attendee Types**, **Selections** e **Discount Codes**.
+1. In B1 Admin, go to the **Registrations** page and open your event (or open the event from its calendar).
+2. The **Registration Settings** card shows the basics — **Enable Registration**, **Capacity**, **Registration Opens/Closes**, **Tags**, and **Registration Questions**.
+3. Below the basics are three accordions: **Attendee Types**, **Selections**, and **Discount Codes**.
 
-## Tipos de Participante
+## Attendee Types
 
-Os tipos de participante permitem cobrar preços diferentes para diferentes tipos de participantes — e limitar cada um separadamente.
+Attendee types let you charge different prices for different kinds of attendees — and cap each one separately.
 
-1. Expanda o acordeão **Attendee Types** e clique em **Add Type**.
-2. Digite um **Name** (por exemplo, "Adult", "Child", "Student").
-3. Defina um **Price**. Use 0 para um tipo gratuito.
-4. Opcionalmente, defina uma **Capacity** apenas para esse tipo (por exemplo, apenas 20 vagas para Child). Deixe em branco para não haver limite por tipo.
-5. Clique em **Save**.
+1. Expand the **Attendee Types** accordion and click **Add Type**.
+2. Enter a **Name** (e.g. "Adult", "Child", "Student").
+3. Set a **Price**. Use 0 for a free type.
+4. Optionally set a **Capacity** for just this type (e.g. only 20 Child spots). Leave blank for no per-type limit.
+5. Click **Save**.
 
-Durante a inscrição, cada participante escolhe um tipo; tipos esgotados são mostrados como **Sold out** e não podem ser selecionados. A lista de inscritos mostra o tipo de cada participante e as contagens correntes por tipo.
+During registration, each attendee picks a type; sold-out types are shown as **Sold out** and cannot be selected. The roster shows each attendee's type and running per-type counts.
 
-## Seleções
+## Selections
 
-As seleções são complementos pagos opcionais — camisetas, planos de refeição, upgrades de atividades.
+Selections are optional priced add-ons — T-shirts, meal plans, activity upgrades.
 
-1. Expanda o acordeão **Selections** e clique em **Add Selection**.
-2. Digite um **Name**, uma **Description** opcional e um **Price** (0 aparece como "Free").
-3. Opcionalmente, defina uma **Capacity** (total disponível em todas as inscrições) e um **Max Qty** (o máximo que uma única inscrição pode pedir).
-4. Clique em **Save**.
+1. Expand the **Selections** accordion and click **Add Selection**.
+2. Enter a **Name**, optional **Description**, and a **Price** (0 shows as "Free").
+3. Optionally set a **Capacity** (total available across all registrations) and a **Max Qty** (the most one registration can order).
+4. Click **Save**.
 
-Os inscritos escolhem as quantidades durante a inscrição, e os totais contam contra a capacidade para que você nunca venda em excesso.
+Registrants choose quantities during signup, and the totals count against capacity so you never oversell.
 
-## Códigos de Desconto
+## Discount Codes
 
-1. Expanda o acordeão **Discount Codes** e clique em **Add Discount Code**.
-2. Digite o **Code** que os inscritos vão digitar.
-3. Escolha o **Type** — **Percent** ou **Amount** — e seu **Value**.
-4. Opcionalmente, limite o código com uma **Start Date** / **End Date**, um **Min Members** (número mínimo de participantes na inscrição) e **Max Uses**.
-5. Clique em **Save**.
+1. Expand the **Discount Codes** accordion and click **Add Discount Code**.
+2. Enter the **Code** registrants will type.
+3. Choose the **Type** — **Percent** or **Amount** — and its **Value**.
+4. Optionally limit the code with a **Start Date** / **End Date**, a **Min Members** (minimum number of attendees on the registration), and **Max Uses**.
+5. Click **Save**.
 
-Cada código mostra uma contagem de **Uses** para que você possa ver com que frequência ele foi resgatado. Os inscritos recebem feedback instantâneo ao aplicar um código — incluindo mensagens claras quando um código expirou, ainda não começou a valer ou precisa de mais participantes.
+Each code shows a **Uses** count so you can see how often it has been redeemed. Registrants get instant feedback when they apply a code — including clear messages when a code has expired, hasn't started, or needs more attendees.
 
-## Lista de Espera
+## Waitlist
 
-Ative **Enable Waitlist** no card Registration Settings. Quando o evento atinge a capacidade:
+Turn on **Enable Waitlist** in the Registration Settings card. When the event reaches capacity:
 
-- Novos inscritos recebem uma vaga na lista de espera em vez de serem recusados. Eles completam a mesma inscrição (o pagamento é ignorado enquanto estão na lista de espera).
-- Quando alguém cancela, a inscrição mais antiga na lista de espera é **promovida automaticamente** e recebe um e-mail informando que uma vaga se abriu. Se houver saldo devido, o e-mail contém um link para concluir o pagamento.
-- Você pode promover alguém manualmente a qualquer momento com a ação **Promote** em uma linha na lista de espera — útil depois de aumentar a capacidade do evento.
-
-:::info
-As inscrições promovidas permanecem *pendentes* até que qualquer saldo seja pago; pagar (ou não ter nada a pagar) as confirma.
-:::
-
-## A Lista de Inscritos
-
-Abra um evento na página Registrations para ver todas as inscrições. A tabela mostra **Name**, **Members**, **Type** (o tipo de cada participante), **Paid / Total** (com um aviso de saldo quando ainda há dinheiro devido), **Status** e **Date**, além de chips de contagem por tipo acima da tabela.
-
-- Clique no ícone de detalhes de uma linha para abrir a caixa de diálogo **Registration Details** — membros, seleções, pago/saldo e uma tabela de **Payments** listando cada cobrança (valor, método, data).
-- **Export CSV** baixa a lista completa com colunas para membros, tipos de participante, seleções, pago/total/saldo, status e uma coluna para cada pergunta de inscrição.
-- **Add Attendee** ainda permite registrar inscrições feitas fora do sistema manualmente.
+- New registrants are offered a waitlist spot instead of being turned away. They complete the same signup (payment is skipped while waitlisted).
+- When someone cancels, the oldest waitlisted registration is **promoted automatically** and receives an email that a spot opened. If they owe a balance, the email links them to complete payment.
+- You can promote someone manually at any time with the **Promote** action on a waitlisted row — useful after raising the event capacity.
 
 :::info
-Reembolsos não são processados dentro do B1. Se você precisar reembolsar uma inscrição paga cancelada, faça o reembolso pelo painel do seu provedor de doações (por exemplo, Stripe).
+Promoted registrations stay *pending* until any balance is paid; paying (or having nothing to pay) confirms them.
 :::
 
-## Como Funciona o Pagamento
+## The Registration Roster
 
-Os pagamentos passam pelo mesmo gateway de doações que sua igreja já usa para doações — os dados do cartão vão diretamente para o provedor e nunca passam pelos servidores do B1. Os preços são sempre calculados no servidor com base nos tipos, seleções e códigos de desconto configurados, então um inscrito não pode adulterar o total. Membros logados podem pagar com um cartão salvo; visitantes inserem um cartão no momento do pagamento.
+Open an event from the Registrations page to see every registration. The table shows **Name**, **Members**, **Type** (each attendee's type), **Paid / Total** (with a balance warning when money is still owed), **Status**, and **Date**, plus per-type count chips above the table.
+
+- Click a row's details icon to open the **Registration Details** dialog — members, selections, paid/balance, and a **Payments** table listing every charge (amount, method, date).
+- **Export CSV** downloads the full roster with columns for members, attendee types, selections, paid/total/balance, status, and one column per registration question.
+- **Add Attendee** still lets you record offline signups manually.
+
+:::info
+Refunds are not processed inside B1. If you need to refund a cancelled paid registration, issue the refund from your giving provider's dashboard (e.g. Stripe).
+:::
+
+## How Payment Works
+
+Payments run through the same giving gateway your church already uses for donations — card details go straight to the provider and never touch B1's servers. Prices are always computed on the server from your configured types, selections, and discount codes, so a registrant can't tamper with the total. Logged-in members can pay with a saved card; guests enter a card at checkout.
 
 ## Artigos Relacionados
 
-- [Criando Calendários](creating-calendars#enabling-event-registration) — ative a inscrição e as configurações básicas
-- [Configuração de Doações On-line](../donations/online-giving-setup.md) — configure o gateway de pagamento usado no checkout
-- [Inscrevendo-se em Eventos](../../b1-church/events/registering) — o que os membros veem ao se inscrever
-- [Minhas Inscrições](../../b1-church/events/my-registrations) — como os membros pagam saldos e editam inscrições
+- [Creating Calendars](creating-calendars#enabling-event-registration) — enable registration and the basic settings
+- [Online Giving Setup](../donations/online-giving-setup.md) — configure the payment gateway used at checkout
+- [Registering for Events](../../b1-church/events/registering) — what members see when they sign up
+- [My Registrations](../../b1-church/events/my-registrations) — how members pay balances and edit registrations

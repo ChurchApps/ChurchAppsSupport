@@ -1,61 +1,66 @@
 ---
-title: "सबमिशन प्रबंधित करना"
+title: "प्रस्तुतियों को प्रबंधित करना"
 ---
 
-# सबमिशन प्रबंधित करना
+# Managing Submissions
 
 <div class="article-intro">
 
-एक बार आपका फॉर्म लाइव हो जाने पर, सबमिशन आने शुरू हो जाएँगे। सबमिशन टैब आपको हर उत्तर की समीक्षा करने, ट्रैक करने कि किसने जमा किया है, और डेटा का उपयोग करके अपनी मण्डली के साथ समय पर फॉलो-अप करने की सुविधा देता है।
+Once your form is live, submissions will start coming in. The Submissions tab lets you review every response, track who has submitted, and use the data to follow up with your congregation in a timely manner.
 
 </div>
 
 <div class="prereqs">
-<h4>शुरू करने से पहले</h4>
+<h4>Before You Begin</h4>
 
-- कम से कम एक प्रश्न के साथ [एक फॉर्म बनाएँ](./creating-forms.md)
-- फॉर्म को उसके सार्वजनिक URL के माध्यम से साझा करें या अपनी [वेबसाइट](../website/managing-pages.md) पर एम्बेड करें
+- [Create a form](./creating-forms.md) with at least one question
+- Share the form via its public URL or embed it on your [website](../website/managing-pages.md)
 
 </div>
 
-## सबमिशन देखना
+## Viewing Submissions
 
-1. मुख्य मेनू से **Forms** पर जाएँ।
-2. जिस फॉर्म की आप समीक्षा करना चाहते हैं उस पर क्लिक करें।
-3. **Submissions** टैब पर जाएँ।
+1. Navigate to **Forms** from the main menu.
+2. Click on the form you want to review.
+3. Go to the **Submissions** tab.
 
-आपको उस फॉर्म के लिए प्राप्त सभी उत्तरों की सूची दिखाई देगी। प्रत्येक सबमिशन उत्तरदाता की जानकारी और जमा करने की तिथि दिखाता है।
+You will see a list of all responses received for that form. Each submission shows the respondent's information and the date it was submitted.
 
-## व्यक्तिगत सबमिशन की समीक्षा
+## Reviewing Individual Submissions
 
-पूर्ण विवरण देखने के लिए किसी भी सबमिशन पर क्लिक करें। आपको फॉर्म पर प्रत्येक प्रश्न के लिए व्यक्ति द्वारा दिए गए सभी उत्तर दिखाई देंगे।
+Click on any submission to view the full details. You will see all the answers the person provided for each question on the form.
 
-## सबमिशन कैसे एकत्र होते हैं
+## How Submissions Are Collected
 
-सबमिशन कई माध्यमों से आ सकते हैं:
+Submissions can come in through several channels:
 
-- **सार्वजनिक URL** -- यदि आपके फॉर्म का सार्वजनिक URL है (Stand Alone फॉर्म), तो लिंक वाला कोई भी व्यक्ति उत्तर जमा कर सकता है। URL को ईमेल, सोशल मीडिया, या टेक्स्ट संदेशों के माध्यम से साझा करें।
-- **आपकी वेबसाइट पर एम्बेडेड** -- आपकी B1 वेबसाइट पर एम्बेड किए गए फॉर्म विज़िटर द्वारा भरे जाने पर स्वचालित रूप से सबमिशन एकत्र करते हैं।
-- **आंतरिक उपयोग** -- कर्मचारी और स्वयंसेवक भी B1 Admin के भीतर सीधे दूसरों की ओर से फॉर्म जमा कर सकते हैं।
+- **Public URL** -- If your form has a public URL (Stand Alone forms), anyone with the link can submit a response. Share the URL via email, social media, or text messages.
+- **Embedded on your website** -- Forms embedded on your B1 website collect submissions automatically when visitors fill them out.
+- **Internal use** -- Staff and volunteers can also submit forms on behalf of others directly within B1 Admin.
 
 :::tip
-विज़िटर कार्ड या प्रार्थना अनुरोध जैसे फॉर्म के लिए नियमित रूप से **Submissions** टैब की जाँच करें, ताकि आप शीघ्र फॉलो-अप कर सकें।
+Check the **Submissions** tab regularly for forms like visitor cards or prayer requests, so you can follow up promptly.
 :::
 
-## सबमिशन डेटा का उपयोग
+## Using Submission Data
 
-फॉर्म के माध्यम से एकत्र किया गया डेटा आपकी मदद कर सकता है:
+The data collected through forms can help you:
 
-- इवेंट पंजीकरण ट्रैक करने और तदनुसार योजना बनाने में
-- विज़िटर या नए सदस्यों के साथ फॉलो-अप करने में
-- मंत्रालय योजना के लिए सर्वेक्षण प्रतिक्रिया एकत्र करने में
-- इवेंट या कार्यक्रमों के लिए भुगतान प्रोसेस करने में
+- Track event registrations and plan accordingly
+- Follow up with visitors or new members
+- Collect survey feedback for ministry planning
+- Process payments for events or programs
 
 :::info
-**Admin** या **View Only** भूमिका वाले फॉर्म सदस्य सबमिशन टैब तक पहुँच सकते हैं। सुनिश्चित करें कि आपकी टीम के सही लोगों को **Members** टैब में भूमिकाएँ प्रबंधित करके आवश्यक फॉर्म तक पहुँच प्राप्त हो।
+Form members with **Admin** or **View Only** roles can access the Submissions tab. Make sure the right people on your team have access to the forms they need by managing roles in the **Members** tab.
 :::
 
-## अगले कदम
+:::tip
+If a **Stand Alone** form is set to create a person record, any submissions matched to an existing person also show up on that person's own **Forms** tab in the People section — not just People-type forms.
+:::
 
-- [फॉर्म बनाना](./creating-forms.md) में फॉर्म बनाने और कस्टमाइज़ करने का तरीका जानें
-- निरंतर फॉलो-अप के लिए फॉर्म सबमिशन से लोगों को अपनी [व्यक्ति निर्देशिका](../people/adding-people.md) में जोड़ें
+## Next Steps
+
+- Learn how to build and customize forms in [Creating Forms](./creating-forms.md)
+- Add people from form submissions to your [people directory](../people/adding-people.md) for ongoing follow-up
+- [Automatically add submitters to a group](./creating-forms.md#automatically-adding-submitters-to-a-group) so a stand-alone sign-up form builds its own roster

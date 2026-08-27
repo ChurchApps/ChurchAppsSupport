@@ -1,62 +1,62 @@
 ---
-title: "Approvazione delle Modifiche al Profilo"
+title: "Approvazione Modifiche Profilo"
 ---
 
-# Approvazione delle Modifiche al Profilo
+# Approving Profilo Changes
 
 <div class="article-intro">
 
-Quando la tua chiesa richiede l'approvazione dell'amministratore per gli aggiornamenti del profilo, i membri inviano le loro modifiche tramite l'app B1 Mobile e quelle richieste appaiono come attività in B1 Admin. Questa guida spiega come esaminarle e approvarle.
+When your church requires administrator approval for Profilo updates, Membri Invia their changes through the B1 Mobile app and those requests appear as tasks in B1 Admin. This guide explains how Per review and approve them.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Devi essere membro del gruppo designato come **Gruppo di Approvazione della Directory** in **Mobile → B1 Mobile**
-- Se nessun gruppo di approvazione è stato configurato, le modifiche del profilo vengono applicate immediatamente senza revisione
+- You must be a Membro of the Gruppo designated as the **Directory Approval Gruppo** in **Mobile &rarr; B1 Mobile**
+- If No approval Gruppo has been configured, Profilo changes are applied immediately without review
 
 </div>
 
-## Dove Trovare le Richieste in Sospeso
+## Where Per Trova In Sospeso Requests
 
-Quando un membro presenta una modifica del profilo, appare come un'attività assegnata al tuo gruppo di approvazione. Puoi trovarla in due posti:
+When a Membro submits a Profilo change, it appears as a task assigned Per your approval Gruppo. You can Trova it in two places:
 
-**Dal Dashboard:**
-1. Accedi a B1 Admin — il Dashboard si carica automaticamente.
-2. Nella sezione **Attività** sul lato destro, fai clic sulla scheda **Assegnate ai Miei Gruppi**.
-3. Tutte le richieste di modifica del profilo in sospeso verranno elencate lì.
+**From the Dashboard:**
+1. Log in Per B1 Admin — the Dashboard loads automatically.
+2. In the **Tasks** section on the lato destro, Fai clic the **Assigned Per My Gruppi** tab.
+3. Any In Sospeso Profilo change requests will be listed there.
 
-**Da Servizio → Il Mio Lavoro:**
-1. Nella navigazione superiore, fai clic su **Servizio**.
-2. Fai clic su **Il Mio Lavoro**.
-3. Fai clic sulla scheda **Assegnate ai Miei Gruppi** sotto Attività.
+**From Serving &rarr; My Work:**
+1. In the top navigation, Fai clic **Serving**.
+2. Fai clic **My Work**.
+3. Fai clic the **Assigned Per My Gruppi** tab under Tasks.
 
-## Revisione e Approvazione di una Richiesta
+## Reviewing and Approving a Request
 
-1. Fai clic sull'attività **Aggiornamento Profilo** per aprirla.
-2. In **Modifiche Richieste**, vedrai ogni campo che il membro vuole aggiornare insieme al nuovo valore che hanno presentato.
-3. Rivedi le modifiche.
-4. Fai clic su **Applica** per approvare e salvare le modifiche nel loro profilo.
+1. Fai clic the **Profilo Update** task Per Apri it.
+2. Under **Requested Changes**, you will see each field the Membro wants Per update along with the new value they submitted.
+3. Review the changes.
+4. Fai clic **Apply** Per approve and Salva the changes Per their Profilo.
 
-L'attività si chiuderà automaticamente una volta applicate le modifiche.
+The task will Chiudi automatically once the changes are applied.
 
-## Configurazione del Gruppo di Approvazione
+## Setting Up the Approval Gruppo
 
-Se la tua chiesa desidera che le modifiche del profilo richiedano l'approvazione, un Gruppo di Approvazione della Directory deve essere configurato per primo.
+If your church wants Profilo changes Per require approval, a Directory Approval Gruppo must be configured first.
 
-1. Nella navigazione superiore, fai clic su **Mobile**.
-2. Fai clic su **B1 Mobile**.
-3. Sotto **Gruppo di Approvazione della Directory**, seleziona il gruppo i cui membri dovrebbero rivedere le richieste di modifica del profilo.
-4. Fai clic su **Salva**.
+1. In the top navigation, Fai clic **Mobile**.
+2. Fai clic **B1 Mobile**.
+3. Under **Directory Approval Gruppo**, Seleziona the Gruppo whose Membri should review Profilo change requests.
+4. Fai clic **Salva**.
 
-Qualsiasi membro di quel gruppo vedrà le richieste di modifica del profilo in arrivo in **Assegnate ai Miei Gruppi** sulla loro dashboard.
+Any Membro of that Gruppo will see incoming Profilo change requests under **Assigned Per My Gruppi** on their dashboard.
 
 :::tip
-Assicurati che i tuoi approvatori siano effettivamente membri del gruppo configurato — solo i membri del gruppo vedranno le richieste.
+Make sure your approvers are actually Membri of the configured Gruppo — only Gruppo Membri will see the requests.
 :::
 
 ## Articoli Correlati
 
-- [Gestione del Tuo Profilo](./managing-profile.md) — Modifica le tue impostazioni di account
-- [Impostazioni B1 Mobile](../../b1-mobile/profile/editing-profile.md) — Cosa vedono i membri quando inviano una modifica del profilo
+- [Managing Your Profile](./managing-profile.md) — Modifica your own Account Impostazioni
+- [B1 Mobile Settings](../../b1-mobile/profile/editing-profile.md) — What Membri see when they Invia a Profilo change

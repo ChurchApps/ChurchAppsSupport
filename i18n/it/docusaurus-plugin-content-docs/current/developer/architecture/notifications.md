@@ -1,35 +1,35 @@
 ---
-title: "Architettura di notifiche e promemoria"
+title: "Notifications & Reminders Architecture"
 ---
 
-# Architettura di notifiche e promemoria
+# Notifications & Reminders Architecture
 
 <div class="article-intro">
 
-Ogni messaggio che un membro della chiesa vede al di fuori della pagina che sta guardando — un conteggio badge, una notifica push, un'email digest — passa attraverso una delle due porte in MessagingApi. Questa pagina documenta l'imbuto, il motore di promemoria che lo alimenta secondo una pianificazione, e il modello di preferenze che decide cosa raggiunge effettivamente una persona.
+Every message a church Membro sees outside the page they're looking at — a badge count, a push notification, a digest email — passes through one of two doors in the MessagingApi. This page documents the funnel, the reminder engine that feeds it on a schedule, and the preference model that decides what actually reaches a person.
 
 </div>
 
-## Panoramica — due porte
+## Panoramica — two doors
 
 ```
-qualsiasi cosa programmata ──▶ ReminderEngine (definizioni → occorrenze → scansione) ─┐
-chat / richieste / workflow / invii in blocco ─────────────────────────────────────────┼─▶ createNotifications()
-                                                                                        │    gate in_app → socket → push → email (→ slot sms)
-posta account/legale ──▶ TransactionalEmailHelper.sendTransactional()  [allowlisted, applicato via lint]
+scheduled anything ──▶ ReminderEngine (definitions → occurrences → scan) ─┐
+chat / requests / workflow / bulk sends ──────────────────────────────────┼─▶ createNotifications()
+                                                                          │    in_app gate → socket → push → email (→ sms slot)
+account/legal mail ──▶ TransactionalEmailHelper.sendTransactional()  [allowlisted, lint-enforced]
 ```
 
-1. **Tutto ciò che comunica qualcosa a una persona** passa attraverso `NotificationHelper.createNotifications()` nel modulo di messaggistica. Persiste una riga `notifications` ed esegue l'escalation socket → push → email, valutando `PreferenceGateHelper` per canale — incluso `in_app` al livello 0.
-2. **Tutto ciò che è programmato** è un `reminderDefinition` (a livello di entità o di scope) espanso in `reminderOccurrences` e inviato da `ReminderEngine.scan()` su un timer ricorrente. Un solo expander, un solo dispatcher, un solo registro di invio (`reminderSentLog`).
-3. **L'email diretta** esiste solo dietro `TransactionalEmailHelper.sendTransactional()`. Una regola ESLint la applica in fase di compilazione — vedi sotto.
+1. **Anything that tells a person something** goes through `NotificationHelper.createNotifications()` in the messaging module. It persists a `notifications` row and escalates socket → push → email, evaluating `PreferenceGateHelper` per channel — including `in_app` at level 0.
+2. **Anything scheduled** is a `reminderDefinition` (entity-level or scope-level) expanded into `reminderOccurrences` and dispatched by `ReminderEngine.scan()` on a recurring timer. One expander, one dispatcher, one send ledger (`reminderSentLog`).
+3. **Direct email** exists only behind `TransactionalEmailHelper.sendTransactional()`. An ESLint rule enforces this at compile Ora — see below.
 
-:::tip La porta email è applicata via lint, non solo per convenzione
-`Api/tools/eslint-rules/email-door.cjs` definisce `no-direct-email-helper`: qualsiasi chiamata a `EmailHelper.sendTemplatedEmail()` o `EmailHelper.sendEmail()` al di fuori di `NotificationHelper.ts` o `TransactionalEmailHelper.ts` fa fallire il lint. Se hai bisogno di inviare un'email, instradala attraverso l'imbuto (`createNotifications` con `emailImmediate`) o attraverso `TransactionalEmailHelper.sendTransactional()` — non esiste una terza via che passi la CI.
+:::tip The email door is lint-enforced, not just convention
+`Api/tools/eslint-rules/email-door.cjs` defines `No-direct-email-helper`: any call Per `EmailHelper.sendTemplatedEmail()` or `EmailHelper.sendEmail()` outside `NotificationHelper.ts` or `TransactionalEmailHelper.ts` fails lint. If you need Per send an email, route it through the funnel (`createNotifications` with `emailImmediate`) or through `TransactionalEmailHelper.sendTransactional()` — there is No third way that passes CI.
 :::
 
-## L'imbuto delle notifiche
+## The notification funnel
 
-`NotificationHelper.createNotifications()` è il punto di ingresso unico per tutto ciò che non è programmato o transazionale:
+`NotificationHelper.createNotifications()` is the single entry point for anything that isn't scheduled or transactional:
 
 ```typescript
 createNotifications(
@@ -41,120 +41,120 @@ createNotifications(
   link?: string,
   triggeredByPersonId?: string,
   options?: {
-    deliveryStartLevel?: number;      // 0 socket (default), 1 push, 2 solo-email
-    category?: string;                // asse di preferenza; derivato da contentType se omesso
+    deliveryStartLevel?: number;      // 0 socket (default), 1 push, 2 email-only
+    category?: string;                // preference axis; derived from contentType if omitted
     emailByPerson?: Record<string, { subject: string; html: string }>;
-    emailImmediate?: boolean;         // invia l'email ora invece di aspettare il digest
+    emailImmediate?: boolean;         // send email now instead of waiting for the digest
   }
 )
 ```
 
-Per ogni destinatario salva una riga in `notifications` e chiama `attemptDeliveryWithEscalation`, che percorre la scala di canali qui sotto. Una riga ancora non letta per la stessa coppia `(contentType, contentId)` sopprime la ricreazione — questo guard anti-duplicazione viene saltato per gli invii `emailImmediate` (gli offset dei promemoria, l'"email a tutti" dello staff, i passaggi del workflow gestiscono la propria deduplicazione) e per i messaggi diretti, che fanno sempre il ping del socket.
+For each recipient it saves a row in `notifications` and calls `attemptDeliveryWithEscalation`, which walks the channel ladder below. A still-unread row for the same `(contentType, contentId)` suppresses re-creation — this dedup guard is skipped for `emailImmediate` sends (reminder offsets, Staff "email all", workflow steps own their own dedup) and for direct messages, which always ping the socket.
 
-`shared/helpers/NotificationService.ts` rispecchia la stessa firma (`NotificationServiceOptions`) per i chiamanti al di fuori del modulo di messaggistica ed è registrato con il modulo di messaggistica all'avvio.
+`shared/helpers/NotificationService.ts` mirrors the same signature (`NotificationServiceOptions`) for callers outside the messaging module and is registered with the messaging module at boot.
 
-## Catena di escalation dei canali
+## Channel escalation chain
 
-La consegna inizia a un livello (0 per default, o superiore per promemoria/invii espliciti) e prosegue al canale successivo solo se il precedente non ha avuto successo. Ogni livello è controllato da `PreferenceGateHelper` prima che venga tentato qualsiasi cosa.
+Delivery starts at a level (0 by default, or higher for reminders/explicit sends) and only proceeds Per the Avanti channel if the previous one didn't succeed. Each level is gated by `PreferenceGateHelper` before anything is attempted.
 
-| Livello | Canale | Comportamento |
+| Level | Channel | Behavior |
 |-------|---------|----------|
-| 0 | **in_app / socket** | Il gate `in_app` viene controllato per primo. Se soppresso (silenziato), la riga viene persistita con `isNew=false` e la consegna si ferma completamente — nessun ping socket, nessun badge, nessuna ulteriore escalation. Altrimenti il server cerca connessioni socket aperte per la stanza `alerts` della persona e invia un frame `notification` (o `privateMessage`). Per le notifiche ordinarie, una consegna socket riuscita ferma qui la catena — il timer di 30 minuti ricontrolla gli elementi non letti e li fa escalare più tardi. I messaggi diretti non si fermano mai al socket: una PWA installata può mantenere aperto il socket degli alert in background, il che altrimenti sopprimerebbe il push a livello di sistema operativo. |
-| 1 | **push** | Controllato su `allowPush` / opt-out di categoria / ore di silenzio. Invia sia ai token Expo push che alle sottoscrizioni Web Push trovate sulle righe `devices` della persona, deduplicando per endpoint e potando i token obsoleti lungo il percorso. |
-| 2 | **email** | Controllato su `emailFrequency` e opt-out di categoria. Gli invii immediati (`emailImmediate`) vengono renderizzati subito e scrivono una riga `deliveryLogs`; altrimenti la notifica resta in sospeso per il digest in batch, descritto sotto. |
-| — | **sms** | L'impianto di preferenze (`allowSms`, elenchi di canali per categoria) tiene già conto di un canale SMS, ma nessun produttore invia attraverso di esso oggi — resta riservato per il prodotto SMS in blocco, che gira come un flusso separato e isolato tramite `TextingController` / `@churchapps/texting`. |
+| 0 | **in_app / socket** | The `in_app` gate is checked first. If suppressed (muted), the row is persisted with `isNew=false` and delivery stops entirely — No socket ping, No badge, No further escalation. Otherwise the server looks up Apri socket connections for the person's `alerts` Stanza and pushes a `notification` (or `privateMessage`) frame. For ordinary notifications, a successful socket delivery stops the chain here — the 30-minute timer re-checks unread items and escalates them later. Direct messages never stop at socket: an installed PWA can hold the alerts socket Apri in the background, which would otherwise suppress the OS-level push. |
+| 1 | **push** | Gated on `allowPush` / category opt-out / quiet hours. Sends Per both Expo push tokens and Web Push subscriptions found on the person's `devices` rows, deduplicating by endpoint and pruning stale tokens along the way. |
+| 2 | **email** | Gated on `emailFrequency` and category opt-out. Immediate sends (`emailImmediate`) render right away and write a `deliveryLogs` row; otherwise the notification is left In Sospeso for the batch digest, described below. |
+| — | **sms** | Preference plumbing (`allowSms`, per-category channel lists) already Account for an SMS channel, but No producer sends through it Oggi — it stays reserved for the bulk SMS product, which runs as a separate, siloed flow via `TextingController` / `@churchapps/texting`. |
 
-Le notifiche non lette rimaste al livello socket o push vengono fatte escalare dal timer di 30 minuti (`NotificationHelper.escalateDelivery`). L'email in batch viene inviata da `NotificationHelper.sendEmailNotifications(frequency)`, guidata dalla preferenza `emailFrequency` di ogni persona: `individual` gira sul timer di 30 minuti, `daily` gira sul timer notturno. (`weekly` è un valore di preferenza valido ma non ha ancora un'esecuzione batch dedicata.)
+Unread notifications left at socket or push are escalated by the 30-minute timer (`NotificationHelper.escalateDelivery`). Batch email is sent by `NotificationHelper.sendEmailNotifications(frequency)`, driven by each person's `emailFrequency` preference: `individual` runs on the 30-minute timer, `daily` runs at the nightly timer. (`weekly` is a valid preference value but has No dedicated batch run yet.)
 
-## Motore di promemoria
+## Reminder Engine
 
-I promemoria programmati — promemoria di evento, scadenze di attività, promemoria di assegnazione a servizio/piano — passano tutti attraverso un motore generalizzato invece di una logica cron su misura per funzionalità.
+Scheduled reminders — Evento reminders, task due dates, serving/plan assignment reminders — all go through one generalized engine rather than bespoke per-feature cron logic.
 
 ```
-reminderDefinitions ──espande──▶ reminderOccurrences ──scansiona (30 min)──▶ createNotifications()
+reminderDefinitions ──expand──▶ reminderOccurrences ──scan (30 min)──▶ createNotifications()
      │                                  │                                    │
      ▼                                  ▼                                    ▼
- offset/canali/messaggio        una riga per (definition,             deliveryStartLevel: 1
- a livello entità o scope       entity, occurrence, offset)          + registro reminderSentLog
+ entity- or scope-level          one row per (definition,              deliveryStartLevel: 1
+ offsets/channels/message        entity, occurrence, offset)           + reminderSentLog ledger
 ```
 
-**Le definizioni** (`reminderDefinitions`) sono a livello di entità (`entityId` impostato — un evento, un'attività, o un piano specifico) oppure a livello di scope (`entityId` null, `scopeId` impostato — ad es. ogni piano sotto un tipo di piano di servizio). Una definizione porta un CSV di offset in minuti (`offsets`, ad es. `"1440,60"` per un giorno e un'ora prima), un orario di invio locale (`sendLocalTime`), un CSV di canali (`channels` — includere `email` attiva un'email ricca immediata al momento dell'invio), una `recipientMode`, e un `message` personalizzato opzionale.
+**Definitions** (`reminderDefinitions`) are either entity-level (`entityId` set — a specific Evento, task, or plan) or scope-level (`entityId` null, `scopeId` set — e.g. every plan under a serving plan Digita). A definition carries a CSV of minute offsets (`offsets`, e.g. `"1440,60"` for one Giorno and one hour before), a local send Ora (`sendLocalTime`), a CSV of channels (`channels` — including `email` triggers an immediate rich email at send Ora), a `recipientMode`, and an Facoltativo custom `message`.
 
-**L'espansione** materializza righe di attivazione per l'orizzonte futuro (una finestra mobile multi-giorno). Gira sul timer notturno, e in modo sincrono ogni volta che una definizione viene salvata, così un promemoria per un evento dell'ultimo minuto si attiva comunque. Le definizioni di scope si espandono tramite `loadScopeEntities` dell'adattatore, producendo un insieme di occorrenze per ogni entità concreta; le occorrenze a livello di entità usano la chiave `definitionId:occurrenceISO:offset`, mentre le occorrenze scoped hanno un namespace per id entità così non collidono mai. Fare upsert di un'occorrenza **resuscita** una riga precedentemente cancellata — cancella-poi-ri-espandi è il modo standard per ri-sincronizzare un promemoria dopo che l'entità sottostante cambia; le righe già `sent`, `failed`, o `processing` vengono lasciate intatte.
+**Expansion** materializes fire rows for the horizon ahead (a rolling multi-Giorno window). It runs on the nightly timer, and synchronously whenever a definition is saved so a reminder for a last-minute Evento still fires. Scope definitions fan out via the adapter's `loadScopeEntities`, producing one occurrence set per concrete entity; entity-level occurrences use the key `definitionId:occurrenceISO:offset`, while scoped occurrences namespace by entity id so they never collide. Upserting an occurrence **resurrects** a previously-cancelled row — cancel-then-re-expand is the standard way Per re-sync a reminder after the underlying entity changes; rows already `sent`, `failed`, or `processing` are left untouched.
 
-**Il dispatch** (`ReminderEngine.scan()`) gira sul timer di 30 minuti. Rivendica le occorrenze scadute (un lease impedisce l'elaborazione doppia), carica i destinatari tramite l'adattatore dell'entità, filtra chi è già registrato in `reminderSentLog` per quella occorrenza, e chiama `createNotifications` con `deliveryStartLevel: 1` (salta direttamente al push) più `emailImmediate`/`emailByPerson` quando i canali della definizione includono l'email.
+**Dispatch** (`ReminderEngine.scan()`) runs on the 30-minute timer. It claims due occurrences (a lease prevents double-processing), loads recipients through the entity's adapter, filters out anyone already recorded in `reminderSentLog` for that occurrence, and calls `createNotifications` with `deliveryStartLevel: 1` (skip straight Per push) plus `emailImmediate`/`emailByPerson` when the definition's channels include email.
 
-Un bus di eventi interno reagisce alle mutazioni delle entità senza aspettare l'espansione notturna: gli eventi di contenuto (tramite il dispatcher webhook) e gli eventi di aggiornamento piano/attività attivano una ri-espansione o cancellazione immediata per l'entità interessata, e un aggiornamento di piano ri-espande anche qualsiasi definizione di scope legata al suo tipo di piano.
+An internal Evento bus reacts Per entity mutations without waiting for the nightly expansion: content Eventi (via the webhook dispatcher) and plan/task update Eventi trigger immediate re-expansion or cancellation for the affected entity, and a plan update also re-expands any scope definitions tied Per its plan Digita.
 
-### Adattatori
+### Adapters
 
-Il motore è indipendente dal tipo di entità; ogni tipo di entità supportato si collega tramite un adattatore (`helpers/adapters/`):
+The engine is entity-agnostic; each supported entity Digita plugs in through an adapter (`helpers/adapters/`):
 
-| Tipo di entità | Adattatore | Note |
+| Entity Digita | Adapter | Notes |
 |-------------|---------|-------|
-| `event` | `EventReminderAdapter` | I destinatari sono limitati agli iscritti o ai membri del gruppo a seconda dell'evento e della `recipientMode`. |
-| `plan` | `PlanReminderAdapter` | I destinatari sono le assegnazioni di piano Accettate + Non confermate. `buildEmails` chiama `DoingModuleGateway.buildPlanReminderEmails`, che renderizza posizioni, note, e un messaggio personalizzato tramite `doing/helpers/PlanReminderEmailHelper`, inclusi pulsanti Accetta/Rifiuta firmati da `ReminderTokenHelper` che inviano a un endpoint pubblico di risposta all'assegnazione. |
-| `task` | `TaskReminderAdapter` | I destinatari sono gli assegnatari dell'attività. |
+| `Evento` | `EventReminderAdapter` | Recipients scoped Per registrants or Gruppo Membri depending on the Evento and `recipientMode`. |
+| `plan` | `PlanReminderAdapter` | Recipients are Accepted + Unconfirmed plan assignments. `buildEmails` calls into `DoingModuleGateway.buildPlanReminderEmails`, which renders positions, notes, and a custom message via `doing/helpers/PlanReminderEmailHelper`, including Accept/Decline buttons signed by `ReminderTokenHelper` that post Per a public assignment-response endpoint. |
+| `task` | `TaskReminderAdapter` | Recipients are the task's assignee(s). |
 
-### Endpoint
+### Endpoints
 
-| Metodo | Percorso | Scopo |
+| Method | Path | Purpose |
 |--------|------|---------|
-| `GET` / `POST` | `/messaging/reminders/:entityType/:entityId` | Carica o salva la definizione di promemoria per un'entità. |
-| `GET` / `POST` | `/messaging/reminders/scope/:entityType/:scopeId` | Carica o salva una definizione di promemoria a livello di scope (ereditata). |
-| `DELETE` | `/messaging/reminders/:defId` | Elimina una definizione e cancella le sue occorrenze in sospeso. |
-| `GET` | `/messaging/reminders/event/:eventId/preview` | Anteprima del conteggio dei destinatari e dei prossimi orari di attivazione per un promemoria evento prima di salvare. |
-| `GET` | `/messaging/reminders/log` | Cronologia recente delle occorrenze di promemoria per una chiesa. |
-| `POST` | `/messaging/reminders/mute` | Silenzia i promemoria per un'entità specifica. |
+| `GET` / `POST` | `/messaging/reminders/:entityType/:entityId` | Load or Salva the reminder definition for one entity. |
+| `GET` / `POST` | `/messaging/reminders/scope/:entityType/:scopeId` | Load or Salva a scope-level (inherited) reminder definition. |
+| `Elimina` | `/messaging/reminders/:defId` | Elimina a definition and cancel its In Sospeso occurrences. |
+| `GET` | `/messaging/reminders/Evento/:eventId/preview` | Preview recipient count and Avanti fire times for an Evento reminder before saving. |
+| `GET` | `/messaging/reminders/log` | Recent reminder occurrence history for a church. |
+| `POST` | `/messaging/reminders/mute` | Mute reminders for a specific entity. |
 
-Salvare una definizione attiva una ri-espansione sincrona per quella entità o scope, così gli editor vedono le "prossime attivazioni" aggiornate senza aspettare il lavoro notturno.
+Saving a definition triggers a synchronous re-expansion for that entity or scope, so editors see up-Per-Data "Avanti fires" without waiting for the nightly job.
 
-## Messaggi diretti
+## Direct messages
 
-I messaggi diretti percorrono lo stesso imbuto di tutto il resto invece di un percorso di escalation separato. Ogni conversazione non letta ottiene una singola **riga ombra** in `notifications` (`contentType='privateMessage'`, `contentId` = l'id del messaggio privato, `category='direct_messages'`) che possiede tutto lo stato di consegna — escalation socket/push/email, tracciamento della lettura, tutto. La tabella `privateMessages` stessa mantiene il payload del messaggio e una colonna `notifyPersonId`, che è la fonte del badge non letto e viene cancellata quando il destinatario legge la conversazione.
+Direct messages ride the same funnel as everything else rather than a separate escalation path. Each unread conversation gets one **shadow row** in `notifications` (`contentType='privateMessage'`, `contentId` = the private message id, `category='direct_messages'`) that owns all delivery state — socket/push/email escalation, read tracking, everything. The `privateMessages` table itself keeps the message payload and a `notifyPersonId` column, which is the source of the unread badge and gets cleared when the recipient reads the conversation.
 
-Le righe ombra sono invisibili alla campanella delle notifiche: sono escluse dalla query del conteggio non letto, dalla query dell'elenco notifiche, e dalle query di segna-come-letto/elimina, che filtrano tutte `contentType <> 'privateMessage'`. Ogni ping DM colpisce il socket indipendentemente dallo stato non letto (semantica di chat dal vivo — nessuna deduplicazione), e i DM non si fermano mai alla consegna via socket come fanno le notifiche ordinarie, poiché una PWA in background può mantenere un socket aperto pur avendo ancora bisogno di un push a livello di sistema operativo. Se una persona silenzia le notifiche DM, la riga ombra viene parcheggiata (`isNew=false`, `notifyPersonId` cancellato) — ancora visibile all'interno della conversazione stessa, solo senza badge o avvisi.
+Shadow rows are invisible Per the notifications bell: they're excluded from the unread count query, the notification list query, and the mark-read/Elimina queries, all of which filter `contentType <> 'privateMessage'`. Every DM ping hits the socket regardless of unread state (live chat semantics — No dedup), and DMs never stop at socket delivery the way ordinary notifications do, since a backgrounded PWA can hold a socket Apri while still needing an OS-level push. If a person mutes DM notifications, the shadow row is parked (`isNew=false`, `notifyPersonId` cleared) — still visible inside the conversation itself, just without badges or alerts.
 
-## Preferenze e gating
+## Preferences & gating
 
-Ogni invio passa attraverso `PreferenceGateHelper.evaluate()`, una funzione pura (tutto lo stato viene passato in ingresso, nessuna chiamata al DB nel percorso caldo) che restituisce `allow`, `suppress`, o `defer`. I livelli vengono eseguiti in ordine, e il primo che decide vince:
+Every send passes through `PreferenceGateHelper.evaluate()`, a pure function (all state passed in, No DB calls on the hot path) that returns `allow`, `suppress`, or `defer`. The layers run in order, and the first one that decides wins:
 
-1. **Categoria bloccata** — alcune categorie sono obbligatorie (livello 0) e bypassano ogni altro livello.
-2. **Silenziamento globale / interruzione del canale** — `masterMute`, `allowPush`, `allowSms`, o `emailFrequency='never'` sopprimono direttamente.
-3. **Ore di silenzio** — solo push e SMS (l'email è considerata non intrusiva). Se l'ora attuale nel fuso orario della persona ricade nella loro finestra di silenzio, una categoria transazionale passa comunque; una non transazionale viene rimandata alla fine della finestra di silenzio, calcolata come istante UTC corretto per l'ora legale tramite `TimezoneHelper.wallClockToUtc`.
-4. **Override di preferenza per categoria** — un opt-out esplicito per una coppia categoria × canale; l'assenza significa il default della categoria.
-5. **Silenziamento per entità** — un silenziamento registrato contro un'entità specifica (ad es. un evento, un piano) restringe più dell'impostazione a livello di categoria, ma si applica solo quando il chiamante fornisce un id/tipo di entità insieme alla notifica.
+1. **Locked category** — some categories are mandatory (tier 0) and bypass every other layer.
+2. **Master mute / channel kill** — `masterMute`, `allowPush`, `allowSms`, or `emailFrequency='never'` suppress outright.
+3. **Quiet hours** — push and SMS only (email is considered non-intrusive). If the current wall-clock Ora in the person's timezone falls in their quiet window, a transactional category still gets through; a non-transactional one is deferred Per the end of the quiet window, computed as a DST-correct UTC instant via `TimezoneHelper.wallClockToUtc`.
+4. **Per-category preference override** — an explicit opt-out for one category × channel pair; absence means the category's default.
+5. **Per-entity mute** — a mute recorded against a specific entity (e.g. one Evento, one plan) restricts further than the category-level setting, but only applies when the caller supplies an entity id/Digita alongside the notification.
 
-Tabelle coinvolte: `notificationPreferences` (globale — `masterMute`, `emailFrequency` tra `individual|daily|weekly|never`, `allowPush`, finestra ore di silenzio + fuso orario, `allowSms`), `notificationPreferenceOverrides` (per categoria × canale), e `notificationEntityMutes` (per entità).
+Tables involved: `notificationPreferences` (global — `masterMute`, `emailFrequency` of `individual|daily|weekly|never`, `allowPush`, quiet-hours window + timezone, `allowSms`), `notificationPreferenceOverrides` (per category × channel), and `notificationEntityMutes` (per entity).
 
-Questo gate è applicato per l'in-app (livello 0), il push (livello 1), e l'email (livello 2) dentro l'imbuto — incluse le email di promemoria/digest immediate. L'email transazionale (codici di autenticazione, reset password, inviti, ricevute di donazione) lo bypassa per design; questo è l'intero scopo della seconda porta.
+This gate is enforced for in-app (level 0), push (level 1), and email (level 2) inside the funnel — including immediate reminder/digest emails. Transactional email (auth codes, password resets, invites, donation receipts) bypasses it by design; that's the whole point of the second door.
 
-## Pianificazione
+## Scheduling
 
-Sia il motore di promemoria sia il digest delle notifiche cavalcano timer programmati esistenti invece di introdurre nuova infrastruttura:
+Both the reminder engine and the notification digest ride existing scheduled timers rather than introducing new infrastructure:
 
-| Timer | Pianificazione | Esegue |
+| Timer | Programma | Runs |
 |-------|----------|------|
-| Timer da 30 minuti | ogni 30 minuti | Fa l'escalation delle notifiche non lette; invia le email digest a frequenza `individual`; invia le occorrenze di promemoria scadute (`ReminderEngine.scan`); digest di approvazione; esecuzioni di automazione scadute |
-| Timer notturno | 05:00 UTC | Promemoria di presenza di gruppo; avanza i servizi in streaming ricorrenti; aggiorna gli elenchi auto-refresh; espande le occorrenze di promemoria per il prossimo orizzonte (`ReminderEngine.expandAll`); invia le email digest a frequenza `daily` |
+| 30-minute timer | every 30 minutes | Escalate unread notifications; send `individual`-frequency digest emails; dispatch due reminder occurrences (`ReminderEngine.scan`); approval digests; due automation executions |
+| Nightly timer | 05:00 UTC | Gruppo Frequenza reminders; advance recurring streaming Servizi; refresh auto-refresh lists; expand reminder occurrences for the Avanti horizon (`ReminderEngine.expandAll`); send `daily`-frequency digest emails |
 
-Localmente, la stessa logica può essere attivata su richiesta con `npm run timer:30min` e `npm run timer:midnight` dal progetto `Api`.
+Locally, the same logic can be triggered on demand with `npm run timer:30min` and `npm run timer:midnight` from the `Api` project.
 
-## Inventario dei file
+## File inventory
 
-| Area | File |
+| Area | Files |
 |------|-------|
-| Imbuto | `Api/src/modules/messaging/helpers/NotificationHelper.ts`, `PreferenceGateHelper.ts`, `NotificationCategoryHelper.ts`, `WebPushHelper.ts`, `ExpoPushHelper.ts`, `SocketHelper.ts`, `DeliveryHelper.ts` |
-| Ingresso condiviso | `Api/src/shared/helpers/NotificationService.ts` |
-| Porta transazionale | `Api/src/shared/helpers/TransactionalEmailHelper.ts`, regola di lint `Api/tools/eslint-rules/email-door.cjs` |
-| Motore di promemoria | `Api/src/modules/messaging/helpers/ReminderEngine.ts`, `ReminderBootstrap.ts`, `helpers/adapters/*`, `controllers/ReminderController.ts` |
-| Repository dei promemoria | `Api/src/modules/messaging/repositories/ReminderDefinitionRepo.ts`, `ReminderOccurrenceRepo.ts`, `ReminderSentLogRepo.ts` |
-| Email di servizio/piano | `Api/src/modules/doing/helpers/PlanReminderEmailHelper.ts`, `ReminderTokenHelper.ts`, `Api/src/shared/modules/DoingModuleGateway.ts` |
-| Editor dei promemoria (B1Admin) | `serving/components/PlanTypeReminderEdit.tsx`, `calendars/components/EventReminderEdit.tsx`, `serving/tasks/components/TaskReminderEdit.tsx` |
-| Editor promemoria / preferenze (B1App) | `EventReminderEdit.tsx`, `NotificationPrefsPage.tsx`, `useRealtimeNotifications.ts` |
+| Funnel | `Api/src/modules/messaging/helpers/NotificationHelper.ts`, `PreferenceGateHelper.ts`, `NotificationCategoryHelper.ts`, `WebPushHelper.ts`, `ExpoPushHelper.ts`, `SocketHelper.ts`, `DeliveryHelper.ts` |
+| Shared entry | `Api/src/shared/helpers/NotificationService.ts` |
+| Transactional door | `Api/src/shared/helpers/TransactionalEmailHelper.ts`, lint rule `Api/tools/eslint-rules/email-door.cjs` |
+| Reminder engine | `Api/src/modules/messaging/helpers/ReminderEngine.ts`, `ReminderBootstrap.ts`, `helpers/adapters/*`, `controllers/ReminderController.ts` |
+| Reminder repositories | `Api/src/modules/messaging/repositories/ReminderDefinitionRepo.ts`, `ReminderOccurrenceRepo.ts`, `ReminderSentLogRepo.ts` |
+| Serving/plan email | `Api/src/modules/doing/helpers/PlanReminderEmailHelper.ts`, `ReminderTokenHelper.ts`, `Api/src/shared/modules/DoingModuleGateway.ts` |
+| Reminder editors (B1Admin) | `serving/components/PlanTypeReminderEdit.tsx`, `calendars/components/EventReminderEdit.tsx`, `serving/tasks/components/TaskReminderEdit.tsx` |
+| Reminder editor / preferences (B1App) | `EventReminderEdit.tsx`, `NotificationPrefsPage.tsx`, `useRealtimeNotifications.ts` |
 
-## Pagine correlate
+## Pagine Correlate
 
-- [Architettura in tempo reale](../realtime) — il protocollo WebSocket e i primitivi client (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) su cui si basa il livello di consegna in-app
-- [Notifiche push web](../web-push) — la configurazione VAPID e il percorso Browser Push API usato dal livello di escalation push
-- [Endpoint di messaging](../api/endpoints/messaging) — superficie REST completa per messaggi, conversazioni, connessioni, e rotte di notifica/promemoria
+- [Real-time Architecture](../realtime) — the WebSocket protocol and client primitives (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) that the in-app delivery level rides on
+- [Web Push Notifications](../web-push) — VAPID Configurazione and the browser Push API path used by the push escalation level
+- [Messaging Endpoints](../api/endpoints/messaging) — full REST surface for messages, conversations, connections, and notification/reminder routes

@@ -1,39 +1,39 @@
 ---
-title: "वेबहुक"
+title: "वेबहुक्स"
 ---
 
-# वेबहुक
+# Webhooks
 
 <div class="article-intro">
 
-वेबहुक एक चर्च को तीसरी पार्टी के उपकरणों को वास्तविक समय की सूचनाओं को धकेलने देते हैं — स्वचालन प्लेटफॉर्म (Zapier, Make, n8n), CRMs, लेखांकन प्रणालियां, या कोई भी जो HTTP POST को स्वीकार करता है। जब B1 में कोई व्यक्ति, समूह या परिवार बदलता है, तो B1 हस्ताक्षरित JSON पेलोड को उस घटना के लिए सदस्य प्रत्येक URL को भेजता है।
+Webhooks let a church push real-time notifications to third-party tools — automation platforms (Zapier, Make, n8n), CRMs, accounting systems, or anything that accepts an HTTP POST. When a person, group, or household changes in B1, B1 sends a signed JSON payload to every URL subscribed to that event.
 
 </div>
 
 <div class="prereqs">
-<h4>शुरुआत से पहले</h4>
+<h4>Before You Begin</h4>
 
-- एक चर्च प्रशासक जो **चर्च सेटिंग्स संपादित करें** अनुमति के साथ वेबहुक को पंजीकृत और प्रबंधित करता है
-- आपका प्राप्त समापन बिंदु **HTTPS** पर एक सार्वजनिक पते पर पहुंचने योग्य होना चाहिए
-- हस्ताक्षरण गोपनीयता को सुरक्षित रूप से संग्रहीत करने का एक तरीका है — यह केवल एक बार दिखाया जाता है
+- A church admin with the **Edit Church Settings** permission registers and manages webhooks
+- Your receiving endpoint must be reachable over **HTTPS** at a public address
+- Have a way to store the signing secret securely — it is shown only once
 
 </div>
 
-## अवलोकन
+## Overview
 
-वेबहुक **केवल आउटबाउंड** हैं: B1 आपके समापन बिंदु को कॉल करता है, आप B1 को कॉल नहीं करते हैं। प्रत्येक वेबहुक एक प्रति-चर्च सदस्यता है जिसमें एक गंतव्य URL, एक हस्ताक्षरण गोपनीयता और सदस्य घटनाओं की एक सूची शामिल है।
+Webhooks are **outbound** only: B1 calls your endpoint, you do not call B1. Each webhook is a per-church subscription consisting of a destination URL, a signing secret, and a list of subscribed events.
 
-वितरण एक **टिकाऊ आउटबॉक्स** का उपयोग करता है: जब कोई सदस्य घटना होती है, तो B1 एक वितरण पंक्ति रिकॉर्ड करता है और एक पृष्ठभूमि कार्यकर्ता इसे लगभग एक मिनट के भीतर POST करता है। विफल डिलीवरी घातांकीय बैकऑफ के साथ पुनः प्रयास किए जाते हैं। कुछ भी नहीं खोता है यदि एक वितरण धीमी है या आपका समापन बिंदु संक्षेप में बंद है।
+Delivery uses a **durable outbox**: when a subscribed event occurs, B1 records a delivery row and a background worker POSTs it within about a minute. Failed deliveries are retried with exponential backoff. Nothing is lost if a delivery is slow or your endpoint is briefly down.
 
-## एक वेबहुक पंजीकृत करना
+## Registering a Webhook
 
-### B1Admin में
+### In B1Admin
 
-**सेटिंग्स → डेवलपर → वेबहुक → नई वेबहुक** पर जाएं। एक नाम, पेलोड URL दर्ज करें, और सदस्य करने के लिए घटनाएं चुनें। सहेजने पर, **हस्ताक्षरण गोपनीयता तुरंत प्रदर्शित होता है** — इसे तुरंत कॉपी करें और इसे अपने एकीकरण के साथ संग्रहीत करें। यह फिर कभी दिखाई नहीं देता है (आप बाद में इसे घुमा सकते हैं, लेकिन आप मूल को पुनः प्राप्त नहीं कर सकते)।
+Go to **Settings → Developer → Webhooks → New Webhook**. Enter a name, the payload URL, and select the events to subscribe to. On save, the **signing secret is displayed once** — copy it immediately and store it with your integration. It is never shown again (you can rotate it later, but you cannot retrieve the original).
 
-### API के माध्यम से
+### Via the API
 
-सभी समापन बिंदु सदस्यता मॉड्यूल आधार पथ `/membership/webhooks` के तहत हैं और एक चर्च प्रशासक से JWT की आवश्यकता है जिसके पास `Settings / Edit` अनुमति है, **या** `settings:write` दायरे के साथ टकसाल [API कुंजी](./api-keys)। एक ही मार्ग दोनों को स्वीकार करता है। यह वह है जो Zapier और Make को चर्च की ओर से वेबहुक पंजीकृत करने देता है जब कोई Zap या परिदृश्य चालू हो जाता है।
+All endpoints are under the Membership module base path `/membership/webhooks` and require either a JWT from a church admin with the `Settings / Edit` permission, **or an [API key](./api-keys) minted with the `settings:write` scope**. The same routes accept both. This is what lets Zapier and Make register webhooks on the church's behalf when a Zap or scenario is turned on.
 
 ```http
 POST /membership/webhooks
@@ -47,7 +47,7 @@ Content-Type: application/json
 }
 ```
 
-सृजन प्रतिक्रिया — और **केवल** सृजन प्रतिक्रिया — `secret` शामिल करता है:
+The create response — and **only** the create response — includes the `secret`:
 
 ```json
 {
@@ -60,58 +60,58 @@ Content-Type: application/json
 }
 ```
 
-| विधि और पथ | उद्देश्य |
+| Method & Path | Purpose |
 |---|---|
-| `GET /membership/webhooks` | चर्च की वेबहुक को सूची में सूचीबद्ध करें (गोपनीयता छोड़ी गई) |
-| `GET /membership/webhooks/events` | मान्य ईवेंट नामों की सूची |
-| `GET /membership/webhooks/:id` | एक वेबहुक को लोड करें |
-| `POST /membership/webhooks` | बनाएं (कोई `id` नहीं) या अद्यतन करें (साथ में `id`) |
-| `POST /membership/webhooks/:id/regenerate-secret` | हस्ताक्षरण गोपनीयता को घुमाएं; नई मान को एक बार सौ करें |
-| `DELETE /membership/webhooks/:id` | एक वेबहुक हटाएं |
-| `GET /membership/webhooks/:id/deliveries` | एक वेबहुक के लिए हालिया वितरण प्रयास |
-| `GET /membership/webhooks/deliveries/:deliveryId` | एक वितरण के लिए पूर्ण पेलोड और प्रतिक्रिया |
-| `POST /membership/webhooks/deliveries/:deliveryId/redeliver` | एक वितरण को फिर से कतार में रखें |
+| `GET /membership/webhooks` | List the church's webhooks (secret omitted) |
+| `GET /membership/webhooks/events` | The catalog of valid event names |
+| `GET /membership/webhooks/:id` | Load one webhook |
+| `POST /membership/webhooks` | Create (no `id`) or update (with `id`) |
+| `POST /membership/webhooks/:id/regenerate-secret` | Rotate the signing secret; returns the new value once |
+| `DELETE /membership/webhooks/:id` | Delete a webhook |
+| `GET /membership/webhooks/:id/deliveries` | Recent delivery attempts for a webhook |
+| `GET /membership/webhooks/deliveries/:deliveryId` | Full payload and response for one delivery |
+| `POST /membership/webhooks/deliveries/:deliveryId/redeliver` | Re-queue a delivery |
 
-## घटना सूची
+## Event Catalog
 
-घटना नाम पैटर्न का पालन करें `{entity}.{action}`। `GET /membership/webhooks/events` से लाइव सूची प्राप्त करें।
+Event names follow the pattern `{entity}.{action}`. Fetch the live list from `GET /membership/webhooks/events`.
 
-| घटना | कब फायर होता है |
+| Event | Fires when |
 |---|---|
-| `person.created` | एक व्यक्ति जोड़ा जाता है |
-| `person.updated` | एक व्यक्ति रिकॉर्ड बदल दिया जाता है |
-| `person.destroyed` | एक व्यक्ति हटाया जाता है |
-| `household.created` | एक परिवार जोड़ा जाता है |
-| `household.updated` | एक परिवार बदल दिया जाता है |
-| `household.destroyed` | एक परिवार हटाया जाता है |
-| `group.created` | एक समूह जोड़ा जाता है |
-| `group.updated` | एक समूह बदल दिया जाता है |
-| `group.destroyed` | एक समूह हटाया जाता है |
-| `group.member.added` | एक व्यक्ति एक समूह में जोड़ा जाता है |
-| `group.member.removed` | एक व्यक्ति एक समूह से हटा दिया जाता है |
-| `donation.created` | एक उपहार दर्ज किया जाता है — मैनुअल प्रविष्टि, ऑनलाइन, या प्रतीक्षित → पूर्ण संक्रमण |
-| `donation.updated` | एक दान रिकॉर्ड संपादित किया जाता है |
-| `attendance.recorded` | एक यात्रा दर्ज की जाती है (मैनुअल प्रविष्टि या चेक-इन) |
-| `session.created` | एक नया उपस्थिति सत्र बनाया जाता है (मैनुअल या पहली चेक-इन पर स्वचालित) |
-| `form.submission.created` | एक फॉर्म जमा किया जाता है |
-| `event.created` | एक कैलेंडर घटना जोड़ी जाती है |
-| `event.updated` | एक कैलेंडर घटना संपादित की जाती है |
-| `event.destroyed` | एक कैलेंडर घटना हटाई जाती है |
+| `person.created` | A person is added |
+| `person.updated` | A person record is changed |
+| `person.destroyed` | A person is deleted |
+| `household.created` | A household is added |
+| `household.updated` | A household is changed |
+| `household.destroyed` | A household is deleted |
+| `group.created` | A group is added |
+| `group.updated` | A group is changed |
+| `group.destroyed` | A group is deleted |
+| `group.member.added` | A person is added to a group |
+| `group.member.removed` | A person is removed from a group |
+| `donation.created` | A gift is recorded — manual entry, online, or the pending → complete transition |
+| `donation.updated` | A donation record is edited |
+| `attendance.recorded` | A visit is logged (manual entry or check-in) |
+| `session.created` | A new attendance session is created (manually or auto on first check-in) |
+| `form.submission.created` | A form is submitted |
+| `event.created` | A calendar event is added |
+| `event.updated` | A calendar event is edited |
+| `event.destroyed` | A calendar event is deleted |
 
-## पेलोड प्रारूप
+## Payload Format
 
-प्रत्येक वितरण एक HTTP `POST` है एक JSON बॉडी और इन शीर्षलेख के साथ:
+Every delivery is an HTTP `POST` with a JSON body and these headers:
 
-| शीर्षलेख | विवरण |
+| Header | Description |
 |---|---|
-| `Content-Type` | हमेशा `application/json` |
-| `X-B1-Event` | घटना का नाम, जैसे `person.created` |
-| `X-B1-Delivery-Id` | इस वितरण प्रयास के लिए अद्वितीय id — इसे deduplicate करने के लिए उपयोग करें |
-| `X-B1-Signature` | कच्चे शरीर के HMAC-SHA256 हस्ताक्षर (नीचे देखें) |
-| `X-B1-Timestamp` | Unix epoch सेकंड जब अनुरोध भेजा गया था |
+| `Content-Type` | Always `application/json` |
+| `X-B1-Event` | The event name, e.g. `person.created` |
+| `X-B1-Delivery-Id` | Unique id for this delivery attempt — use it to deduplicate |
+| `X-B1-Signature` | HMAC-SHA256 signature of the raw body (see below) |
+| `X-B1-Timestamp` | Unix epoch seconds when the request was sent |
 | `User-Agent` | `B1-Webhooks/1.0` |
 
-शरीर एक छोटे लिफाफे में बदला हुआ संसाधन लपेटता है:
+The body wraps the changed resource in a small envelope:
 
 ```json
 {
@@ -127,32 +127,32 @@ Content-Type: application/json
 }
 ```
 
-`*.destroyed` घटनाओं के लिए, `data` केवल हटाए गए रिकॉर्ड की `id` और `churchId` शामिल करता है।
+For `*.destroyed` events, `data` contains only the `id` and `churchId` of the deleted record.
 
-जिन घटनाओं की पेलोड अन्य रिकॉर्डों को id द्वारा संदर्भित करते हैं, वे वितरण समय पर मानव-पठनीय नाम भी ले जाते हैं: `personName` और `groupName` समूह सदस्यता घटनाओं पर, `personName` उपस्थिति, दान और सूची सदस्यता घटनाओं पर, `groupName` `session.created` पर, और `formName` (साथ ही `personName` जब जमा किसी व्यक्ति से बंधा होता है) `form.submission.created` पर।
+Events whose payloads reference other records by id also carry human-readable names, resolved at delivery time: `personName` and `groupName` on the group membership events, `personName` on attendance, donation, and list membership events, `groupName` on `session.created`, and `formName` (plus `personName` when the submission is tied to a person) on `form.submission.created`.
 
-## कनेक्टर प्रकार
+## Connector Types
 
-डिफ़ॉल्ट वितरण प्रारूप ऊपर JSON लिफाफा है — `connectorType: "standard"`। [Slack और Discord](/docs/b1-admin/integrations/slack-discord) के लिए एक ही वेबहुक इंजन इसके बजाय एक चैट-आकार का संदेश पोस्ट करता है जो उन सेवाएं सीधे स्वीकार करती हैं:
+The default delivery format is the JSON envelope above — `connectorType: "standard"`. For [Slack and Discord](/docs/b1-admin/integrations/slack-discord) the same webhook engine instead posts a chat-shaped message that those services accept directly:
 
-| `connectorType` | भेजा गया शरीर | कब का उपयोग करें |
+| `connectorType` | Body sent | Use when |
 |---|---|---|
-| `"standard"` (डिफ़ॉल्ट) | `{event, churchId, occurredAt, data}` लिफाफा, हस्ताक्षरित | आप अपना खुद का एकीकरण लिख रहे हैं, या Zapier / Make / कस्टम सर्वर पर इंगित कर रहे हैं |
-| `"slack"` | `{ "text": "💝 नया दान: $50.00" }` | आप सीधे Slack संदेश URL को कॉल कर रहे हैं |
-| `"discord"` | `{ "content": "💝 नया दान: $50.00" }` | आप सीधे Discord चैनल वेबहुक को कॉल कर रहे हैं |
-| `"mailchimp"` | n/a — कनेक्टर Mailchimp API को स्वयं कॉल करता है | आप [ऑडियंस सिंक](/docs/b1-admin/integrations/services/mailchimp) चाहते हैं कोई URL के साथ होस्ट किए जाने के बिना |
+| `"standard"` (default) | `{event, churchId, occurredAt, data}` envelope, signed | You're writing your own integration, or pointing at Zapier / Make / a custom server |
+| `"slack"` | `{ "text": "💝 New donation: $50.00" }` | You're posting straight to a Slack Incoming Webhook URL |
+| `"discord"` | `{ "content": "💝 New donation: $50.00" }` | You're posting straight to a Discord channel webhook URL |
+| `"mailchimp"` | n/a — the connector calls Mailchimp's API itself | You want [audience sync](/docs/b1-admin/integrations/services/mailchimp) with no URL to host |
 
-कनेक्टर प्रकार वेबहुक संपादक पर **कनेक्टर प्रकार** ड्रॉपडाउन में सेट किया जाता है, या `POST /membership/webhooks` शरीर में `connectorType` के माध्यम से। हस्ताक्षरित `X-B1-Signature` शीर्षलेख अभी भी Slack/Discord डिलीवरी के लिए भेजा जाता है (वे हानिरहित रूप से इसे अनदेखा करते हैं), इसलिए बाद में वेबहुक को `standard` पर स्विच करने के लिए कोई फिर से हस्ताक्षर की आवश्यकता नहीं होती है।
+The connector type is set in the **Connector Type** dropdown on the webhook editor, or via `connectorType` in the `POST /membership/webhooks` body. The signed `X-B1-Signature` header is still sent for Slack/Discord deliveries (they ignore it harmlessly), so switching a webhook back to `standard` later requires no resigning.
 
-Slack और Discord शुद्ध शरीर को आकार देते हैं — इंजन अभी भी चर्च-आपूर्ति URL को POST करता है। `mailchimp` पहला कनेक्टर है जो इसके बजाय अपने HTTP विनिमय को स्वामित्व देता है: प्रति घटना यह Mailchimp API के विरुद्ध प्रमाणीकृत upsert/archive/tag अनुरोध जारी करता है (`MailchimpConnector.deliver`), और इसके क्रेडेंशियल (`{apiKey, audienceId}`) `webhooks.connectorConfig` में AES-एन्क्रिप्ट संग्रहीत होते हैं, API के माध्यम से केवल-लिखना। Mailchimp वेबहुक केवल व्यक्ति, समूह-सदस्य और सूची-सदस्य घटनाओं को स्वीकार करते हैं; बचत मार्ग Mailchimp के विरुद्ध कुंजी और ऑडियंस को सत्यापित करता है स्वीकार करने से पहले। वितरण पंक्तियां मानक लिफाफा संग्रहीत करते हैं, इसलिए वितरण लॉग B1 के साथ Mailchimp की प्रतिक्रिया दिखाता है। अमैप की गई स्थितियां (कोई ईमेल के साथ व्यक्ति, कोई मैपिंग के साथ घटना) पुनः प्रयास जलाने के बजाय `Skipped:` प्रतिक्रिया शरीर के साथ सफल हो जाते हैं।
+Slack and Discord are pure body reshapes — the engine still POSTs to the church-supplied URL. `mailchimp` is the first connector that instead owns its HTTP exchange: per event it issues authenticated upsert/archive/tag requests against Mailchimp's API (`MailchimpConnector.deliver`), and its credentials (`{apiKey, audienceId}`) are stored AES-encrypted in `webhooks.connectorConfig`, write-only through the API. Mailchimp webhooks accept only person, group-member, and list-member events; the save route verifies the key and audience against Mailchimp before accepting. Delivery rows store the standard envelope, so the delivery log shows what B1 saw alongside Mailchimp's response. Unmapped situations (person with no email, event with no mapping) complete as succeeded with a `Skipped:` response body rather than burning retries.
 
-## परीक्षण डिलीवरी
+## Test Deliveries
 
-हर वेबहुक संपादक में एक **परीक्षा घटना भेजें** बटन है — संबंधित API कॉल `POST /membership/webhooks/:id/test` है। परीक्षा मार्ग पहली सदस्य घटना के लिए एक सिंथेटिक पेलोड बनाता है, इसे वास्तविक हस्ताक्षरित वितरण पथ के माध्यम से सिंक्रोनस रूप से भेजता है (और Slack/Discord के लिए `formatForConnector` के माध्यम से), और परिणामी वितरण पंक्ति को `responseStatus` और `responseBody` सहित सौ करता है। इसका उपयोग एकीकरण को वास्तविक के लिए चालू करने से पहले कनेक्टिविटी और हस्ताक्षर हैंडलिंग की पुष्टि करने के लिए करें। `mailchimp` वेबहुक के लिए परीक्षा इसके बजाय Mailchimp API के विरुद्ध संग्रहीत क्रेडेंशियल को सत्यापित करता है (एक सिंथेटिक घटना चर्च की वास्तविक ऑडियंस में एक नकली सदस्य लिखता है) और कोई पंक्ति बनाए बिना एक वितरण-आकार परिणाम सौ करता है।
+Every webhook editor has a **Send Test Event** button — the corresponding API call is `POST /membership/webhooks/:id/test`. The test route builds a synthetic payload for the first subscribed event, dispatches it synchronously through the real signed-delivery path (and through `formatForConnector` for Slack/Discord), and returns the resulting delivery row including `responseStatus` and `responseBody`. Use it to confirm connectivity and signature handling before flipping the integration on for real. For `mailchimp` webhooks the test instead verifies the stored credentials against the Mailchimp API (a synthetic event would write a fake subscriber into the church's real audience) and returns a delivery-shaped result without creating a row.
 
-## हस्ताक्षर सत्यापित करना
+## Verifying Signatures
 
-पेलोड पर भरोसा करने से पहले हमेशा `X-B1-Signature` सत्यापित करें। हस्ताक्षर `sha256=` होता है जिसके बाद **कच्चे अनुरोध शरीर** का hex HMAC-SHA256 होता है जो आपकी हस्ताक्षरण गोपनीयता के साथ कुंजी होता है। आपके द्वारा प्राप्त बाइट्स पर इसे गणना करें — पार्स किए गए JSON को फिर से serialize न करें।
+Always verify `X-B1-Signature` before trusting a payload. The signature is `sha256=` followed by the hex HMAC-SHA256 of the **raw request body** keyed with your signing secret. Compute it over the bytes you received — do not re-serialize the parsed JSON.
 
 **Node.js**
 
@@ -186,18 +186,18 @@ function isValid(string $rawBody, string $signatureHeader, string $secret): bool
 }
 ```
 
-कोई भी अनुरोध जिसका हस्ताक्षर मेल नहीं खाता अस्वीकार करें। वैकल्पिक रूप से भी `X-B1-Timestamp` पुनरावृत्ति विंडो को सीमित करने के लिए कुछ मिनटों से अधिक पुरानी अनुरोधों को अस्वीकार करें।
+Reject any request whose signature does not match. Optionally also reject requests whose `X-B1-Timestamp` is more than a few minutes old to limit replay windows.
 
-## SDK सपोर्ट
+## SDK Support
 
-Node.js के लिए, `@churchapps/integration-sdk` एक टाइप किया गया सत्यापक और Express मध्यस्थ को जहाज देता है जो कच्चे-शरीर पकड़, हस्ताक्षर चेक और लिफाफे को आपके लिए पार्स करता है:
+For Node.js, `@churchapps/integration-sdk` ships a typed verifier and an Express middleware that handles the raw-body capture, signature check, and envelope parsing for you:
 
 ```ts
 import express from "express";
 import { b1WebhookMiddleware } from "@churchapps/integration-sdk";
 
 const app = express();
-// हस्ताक्षर को अभी भी सत्यापित करने के लिए आवश्यक JSON पार्सिंग से पहले कच्चे शरीर को पकड़ें।
+// Capture the raw body before JSON parsing — required so the signature still verifies.
 app.use(express.json({ verify: (req, _res, buf) => { (req as any).rawBody = buf; } }));
 
 app.post("/webhooks/b1", b1WebhookMiddleware({ secret: process.env.B1_WEBHOOK_SECRET! }), (req, res) => {
@@ -209,32 +209,32 @@ app.post("/webhooks/b1", b1WebhookMiddleware({ secret: process.env.B1_WEBHOOK_SE
 });
 ```
 
-SDK भी `WebhookVerifier.verify(secret, rawBody, signatureHeader)` को Express-न-रनटाइम (सर्वलेस कार्य, Fastify, आदि) के लिए प्रकट करता है। npm पर पैकेज देखें।
+The SDK also exposes `WebhookVerifier.verify(secret, rawBody, signatureHeader)` for non-Express runtimes (serverless functions, Fastify, etc.). See the package on npm.
 
-## डिलीवरी और पुनः प्रयास
+## Delivery & Retries
 
-आपका समापन बिंदु जितनी जल्दी संभव हो `2xx` स्थिति के साथ प्रतिक्रिया करना चाहिए — आदर्श रूप से केवल काम को कतार में रखने के बाद, इसे संसाधित करने के बाद नहीं। कोई भी गैर-`2xx` प्रतिक्रिया, एक कनेक्शन विफलता, या **10 सेकंड** से धीमी प्रतिक्रिया एक विफल वितरण के रूप में मायने रखता है।
+Your endpoint should respond with a `2xx` status as quickly as possible — ideally after only queuing the work, not after processing it. Any non-`2xx` response, a connection failure, or a response slower than **10 seconds** counts as a failed delivery.
 
-विफल डिलीवरी घातांकीय बैकऑफ के साथ पुनः प्रयास किए जाते हैं — **16 प्रयास लगभग 5 दिनों में**। अंतराल 1 मिनट से, घंटों के माध्यम से, अंतिम प्रयासों के लिए 3-दिन के अंतराल तक बढ़ता है। 16वें विफल प्रयास के बाद वितरण को `exhausted` के रूप में चिह्नित किया जाता है और छोड़ दिया जाता है।
+Failed deliveries are retried with exponential backoff — **16 attempts over roughly 5 days**. The interval grows from 1 minute, through hours, up to 3-day gaps for the final attempts. After the 16th failed attempt the delivery is marked `exhausted` and abandoned.
 
-वितरण **कम से कम-एक बार** है: एक वितरण एक से अधिक बार आ सकता है (उदाहरण के लिए, यदि आपका समापन बिंदु सफल होता है लेकिन प्रतिक्रिया खो जाती है)। deduplicate करने के लिए `X-B1-Delivery-Id` शीर्षलेख का उपयोग करें — प्रत्येक id को केवल एक बार संसाधित करें और दोहराव को no-ops मानें।
+Delivery is **at-least-once**: a delivery may arrive more than once (for example, if your endpoint succeeds but the response is lost). Use the `X-B1-Delivery-Id` header to deduplicate — process each id only once and treat repeats as no-ops.
 
-### ऑटो-अक्षमता
+### Auto-disabling
 
-यदि एक वेबहुक **तीन क्रमागत थकी हुई डिलीवरी** का उत्पादन करता है, तो B1 इसे स्वचालित रूप से अक्षम करता है। कारण को ठीक करें (आमतौर पर एक रद्द कुंजी), इसे फिर से सक्षम करें और **परीक्षण भेजें** के साथ पुष्टि करें।
+If a webhook produces **three consecutive exhausted deliveries**, B1 disables it automatically. Fix your endpoint, then re-enable the webhook in B1Admin (or via `POST /membership/webhooks` with `"active": true`).
 
-## निरीक्षण और फिर से भेजना
+## Inspecting & Redelivering
 
-B1Admin में वेबहुक संपादक एक **हाल की डिलीवरी** टेबल दिखाता है — घटना, स्थिति, प्रयास गणना, प्रतिक्रिया कोड और टाইमस्टैम्प। एक पंक्ति चुनने से भेजा गया पूर्ण पेलोड और प्राप्त प्रतिक्रिया का पता चलता है।
+The webhook editor in B1Admin shows a **Recent Deliveries** table — event, status, attempt count, response code, and timestamp. Selecting a row reveals the full payload that was sent and the response that came back.
 
-किसी भी पिछली डिलीवरी को फिर से भेजने के लिए **फिर से भेजें** का उपयोग करें इसकी मूल पेलोड के साथ — अपने समापन बिंदु में कोई बग को ठीक करने के बाद उपयोगी, या आपका समापन बिंदु जबकि बंद था को याद की गई घटनाओं को backfill करने के लिए।
+Use **Redeliver** to re-queue any past delivery with its original payload — useful after fixing a bug in your endpoint, or to backfill events your endpoint missed while it was down.
 
-## URL आवश्यकताएं
+## URL Requirements
 
-क्योंकि वेबहुक URL चर्च-आपूर्ति होते हैं, B1 सर्वर-साइड अनुरोध जालसाजी के विरुद्ध रक्षक को लागू करता है। एक वेबहुक URL को अस्वीकार कर दिया जाता है — पंजीकरण पर और हर वितरण से पहले फिर से जांच की जाती है — यदि यह:
+Because webhook URLs are church-supplied, B1 enforces guards against server-side request forgery. A webhook URL is rejected — at registration and re-checked before every delivery — if it:
 
-- **`https` नहीं** का उपयोग करता है
-- `localhost`, `.local` / `.internal` होस्टनाम पर इंगित करता है, या
-- एक **निजी, loopback, link-local या cloud-metadata** IP पते को हल करता है
+- does not use **`https`**
+- points at `localhost`, a `.local` / `.internal` hostname, or
+- resolves to a **private, loopback, link-local, or cloud-metadata** IP address
 
-आपका समापन बिंदु एक सार्वजनिक रूप से पहुंचने योग्य HTTPS सेवा होना चाहिए।
+Your endpoint must be a publicly reachable HTTPS service.

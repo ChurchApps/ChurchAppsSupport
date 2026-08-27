@@ -1,49 +1,45 @@
 ---
-title: "Report di anniversari"
+title: "Anniversary List"
 ---
 
-# Report di anniversari
+# Anniversary List
 
 <div class="article-intro">
 
-Il Report di anniversari ti aiuta a rimanere in contatto con la tua congregazione mostrando i membri con i prossimi anniversari di matrimonio. Usalo per pianificare celebrazioni, inviare cartoline o fare annunci durante i servizi.
+Need a list of everyone with a wedding anniversary in a given Mese — for the bulletin, cards, or announcements? The People Cerca lets you filter by **Anniversary Mese** and show the dates right in the results.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di iniziare</h4>
+<h4>Prima di Iniziare</h4>
 
-- Assicurati che le date di anniversario siano inserite nel profilo di ogni persona. Vedi [Aggiungere persone](../people/adding-people.md) per i dettagli.
-- Hai bisogno dei [permessi](../settings/roles-permissions.md) appropriati per accedere ai report
+- Ensure anniversary dates are entered on each person's Profilo. See [Adding People](../people/adding-people.md) for details.
+- You need Permesso Per Visualizza People. See [Roles & Permissions](../settings/roles-permissions.md).
 
 </div>
 
-## Esecuzione del report
+## Getting an Anniversary List for a Mese
 
-1. Vai direttamente a **admin.b1.church/reports/anniversaries** nel tuo browser (i report non hanno una voce nel menu di navigazione — aggiungere l'indirizzo ai segnalibri è il modo più semplice per tornare).
-2. Scegli il **Mese** che desideri dal menu a discesa. Puoi opzionalmente limitare i risultati a un singolo **Gruppo**.
-3. Fai clic su **Esegui report**. Il report elenca tutti coloro che hanno un anniversario in quel mese, con la data — pronto da leggere direttamente in un bollettino o elenco di annunci.
+1. Apri the **menu della sezione** in the angolo in alto a sinistra and Scegli **People**.
+2. Under the Cerca box, Fai clic **Advanced**.
+3. Expand the **Demographics** section and check **Anniversary Mese**, then Scegli the Mese.
+4. Run the Cerca — everyone with an anniversary that Mese appears in the results.
+5. Per see the dates, Fai clic the **columns icon** at the top right of the results and enable the **Anniversary** column. Use **Esporta** Per Scarica the list as a spreadsheet if you prefer Per sort or print it.
 
-## Cosa mostra il report
+## Practical Uses
 
-Il Report di anniversari visualizza:
-
-- **Anniversario** -- La data del loro anniversario di matrimonio.
-- **Nome** -- Il nome della persona dal tuo database della chiesa.
-
-I risultati coprono il mese che hai selezionato, rendendo facile vedere chi ha un anniversario in arrivo.
-
-## Usi pratici
-
-- **Annunci settimanali** -- Esegui il report per la settimana in arrivo e includi gli anniversari nel tuo bollettino o annunci.
-- **Cartoline di anniversario** -- Genera un elenco per il mese e fai inviare cartoline di anniversario personali dal tuo team.
-- **Leader di piccoli gruppi** -- I leader di gruppo possono eseguire il report per ricordare gli anniversari dei membri nel loro gruppo.
-- **Celebrazioni di anniversari importanti** -- Filtra per intervalli di date specifici per pianificare celebrazioni di anniversari importanti.
+- **Weekly bulletins** -- Run the current Mese's list and include anniversaries in your bulletin or announcements.
+- **Anniversary cards** -- Esporta the Mese's list and hand it Per your card-writing team.
+- **Milestone celebrations** -- Combine with the **Years Married** filter Per Trova milestone anniversaries.
 
 :::tip
-Esegui questo report all'inizio di ogni mese per pianificare in anticipo. Puoi impostare l'intervallo di date per coprire l'intero mese in modo da avere il tempo di preparare cartoline o annunci.
+Run this at the beginning of each Mese so you have Ora Per prepare cards or announcements before anniversaries arrive.
 :::
 
 :::info
-I dati di anniversario provengono dal campo di anniversario nel profilo di ogni persona. Assicurati che i tuoi [record di iscritti](../people/adding-people.md) siano aggiornati per risultati accurati.
+Anniversary data comes from the anniversary field on each person's Profilo. If someone is missing, their Profilo just needs the Data added. See [Adding People](../people/adding-people.md).
 :::
+
+## Also See
+
+Looking for birthdays at the same Ora? See [Birthday & Anniversary Lists](./birthday-report.md) Per pull both in one Cerca.

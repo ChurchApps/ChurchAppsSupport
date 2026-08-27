@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Rastreando Presença"
 ---
 
@@ -6,58 +6,58 @@ title: "Rastreando Presença"
 
 <div class="article-intro">
 
-Depois que seus campi, horários de serviço e grupos estão configurados, B1 Admin torna fácil revisar dados de presença e identificar tendências. A página de Presença fornece duas visualizações de relatório - a guia **Presença** para tendências em toda a igreja e a guia **Grupos** para detalhes em nível de grupo. Use essas ferramentas para entender padrões de crescimento, identificar engajamento em declínio e tomar decisões baseadas em dados para sua igreja.
+Once your campuses, service times, and groups are configured, B1 Admin makes it easy to review attendance data and spot trends. The Attendance page provides two reporting views -- the **Attendance** tab for church-wide trends and the **Groups** tab for group-level detail. Use these tools to understand growth patterns, identify declining engagement, and make data-driven decisions for your church.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Before You Begin</h4>
 
-- Sua estrutura de presença deve estar configurada com pelo menos um campus e horário de serviço. Consulte [Configuração de Presença](setup.md) se ainda não tiver feito isso.
-- Os dados de presença precisam ser registrados antes que os relatórios mostrem resultados. Os dados podem vir de [entrada manual](recording-attendance.md) ou [check-in automático](check-in.md).
+- Your attendance structure must be set up with at least one campus and service time. See [Attendance Setup](setup.md) if you haven't done this yet.
+- Attendance data needs to be recorded before reports will show results. Data can come from [manual entry](recording-attendance.md) or [self check-in](check-in.md).
 
 </div>
 
-## Visualizando Tendências de Presença
+## Viewing Attendance Trends
 
-1. Abra **B1 Admin**, depois abra o **menu de seção** no canto superior esquerdo e escolha **Pessoas**.
-2. Clique na guia **Presença**.
-3. O relatório executa automaticamente quando a guia abre, mostrando presença ao longo de um intervalo de datas padrão.
+1. Open **B1 Admin**, then open the **section menu** in the top-left corner and choose **People**.
+2. Click the **Attendance** tab.
+3. The report runs automatically when the tab opens, showing attendance over a default date range.
 
-## Filtrando Seus Dados
+## Filtering Your Data
 
-Use os filtros no topo da página para restringir os resultados:
+Use the filters at the top of the page to narrow the results:
 
-- **Intervalo de Datas** - escolha uma data de início e fim para focar em um período específico.
-- **Campus** - selecione um campus para ver presença apenas para aquela localização.
-- **Horário do Serviço** - escolha um horário de serviço para detalhar um encontro específico.
+- **Date Range** -- choose a start and end date to focus on a specific period.
+- **Campus** -- select a campus to see attendance for only that location.
+- **Service Time** -- pick a service time to drill into a particular gathering.
 
-O gráfico e os dados atualizam assim que você altera um filtro, permitindo que você compare rapidamente diferentes períodos ou localizações.
+The chart and data update as soon as you change a filter, so you can quickly compare different time periods or locations.
 
 :::info
-Relatórios executam automaticamente cada vez que você abre a guia Presença, para que você sempre veja números atualizados sem precisar clicar em um botão de atualização.
+Reports auto-run each time you open the Attendance tab, so you will always see up-to-date numbers without needing to click a refresh button.
 :::
 
-## Presença de Grupo
+## Group Attendance
 
-A guia **Grupos** mostra presença dividida por grupo individual. Isto é útil quando você quer monitorar uma classe específica, time de ministério ou pequeno grupo em vez de olhar para números gerais de serviço.
+The **Groups** tab shows attendance broken down by individual group. This is useful when you want to monitor a specific class, ministry team, or small group rather than looking at overall service numbers.
 
-1. Selecione a guia **Grupos**.
-2. Escolha um grupo da lista para ver seu histórico de presença.
-3. Use o filtro de intervalo de datas para ajustar a janela de relatório.
+1. Select the **Groups** tab.
+2. Choose a group from the list to see its attendance history.
+3. Use the date range filter to adjust the reporting window.
 
 :::tip
-Presença de grupo é especialmente valiosa para [pequeno grupo](../groups/creating-groups.md) líderes que querem rastrear engajamento dentro de seu grupo ao longo do tempo.
+Group attendance is especially valuable for [small group](../groups/creating-groups.md) leaders who want to track engagement within their group over time.
 :::
 
-## Dicas para Usar Dados de Presença
+## Tips for Using Attendance Data
 
-- Revise tendências mensalmente para pegar padrões sazonais cedo.
-- Compare dados em nível de campus para entender quais localizações estão crescendo.
-- Use relatórios em nível de grupo para dar seguimento aos [grupos](../groups/group-members.md) que mostram presença em declínio.
-- Combine insights de presença com a ferramenta [Busca de IA](../people/ai-search.md) para encontrar pessoas que não compareceram recentemente.
+- Review trends monthly to catch seasonal patterns early.
+- Compare campus-level data to understand which locations are growing.
+- Use group-level reports to follow up with [groups](../groups/group-members.md) that show declining attendance.
+- Combine attendance insights with the [AI Search](../people/ai-search.md) tool to find people who haven't attended recently.
 
-## Páginas Relacionadas
+## Related Pages
 
-- [Registrando Presença](recording-attendance.md) - registre manualmente a presença para uma sessão de grupo
-- [Check-In](check-in.md) - configure check-in automático para que a presença seja registrada automaticamente
+- [Recording Attendance](recording-attendance.md) -- manually enter attendance for a group session
+- [Check-In](check-in.md) -- set up self check-in so attendance is recorded automatically

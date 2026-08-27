@@ -1,128 +1,128 @@
-﻿---
-title: "Agendando Aulas de Lessons.church"
+---
+title: "Agendando Aulas"
 ---
 
-# Agendando Aulas de Lessons.church
+# Scheduling Lessons from Lessons.church
 
 <div class="article-intro">
 
-B1 Admin se integra diretamente com [Lessons.church](https://lessons.church) para que você possa agendar currículo para suas salas de aula direito dentro de seus planos de serviço. Isto mantém tudo — voluntários, atribuições e conteúdo de lição — em um lugar.
+B1 Admin integrates directly with [Lessons.church](https://lessons.church) so you can schedule curriculum for your classrooms right inside your service plans. This keeps everything — volunteers, assignments, and lesson content — in one place.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Before You Begin</h4>
 
-- Configure seus ministérios na área de Serving
-- Tenha uma conta ativa [Lessons.church](https://lessons.church) — se inscreva lá primeiro se sua igreja ainda não tem uma
+- Set up your ministries in the Serving area
+- Have an active [Lessons.church](https://lessons.church) account — sign up there first if your church doesn't have one yet
 
 </div>
 
-:::tip Siga um guia passo a passo guiado
-Quer ver a configuração completa de início ao fim? Nosso **<a href="/guides/freeplay-b1admin" target="_blank">guia passo a passo</a>** cobre vincular provedores, agendar uma lição e conectar FreePlay ao seu TV de sala de aula — com vídeos curtos e passos escritos que você pode marcar conforme avança.
+:::tip Follow a guided walkthrough
+Want to see the full setup from start to finish? Our **<a href="/guides/freeplay-b1admin" target="_blank">step-by-step guide</a>** covers linking providers, scheduling a lesson, and connecting FreePlay to your classroom TV — with short videos and written steps you can check off as you go.
 :::
 
-## Passo 1 — Vincule Sua Conta Lessons.church
+## Step 1 — Link Your Lessons.church Account
 
-Esta é uma configuração única por ministério. Você precisa conectar sua conta Lessons.church antes de poder procurar e agendar conteúdo.
+This is a one-time setup per ministry. You need to connect your Lessons.church account before you can browse and schedule content.
 
-1. Faça login em [B1 Admin](https://admin.b1.church/) e vá para **Serving**
-2. Abra o ministério que você quer conectar (por exemplo, Ministério de Crianças)
-3. Role para baixo até a seção **Content Provider Accounts**
-4. Clique em **Link New Provider**
-5. Selecione **Lessons.church** da lista
-6. Uma tela de autorização de dispositivo aparecerá com um código
-7. Vá para [lessons.church](https://lessons.church), faça login e digite o código para autorizar a conexão
-8. Uma vez aprovado, você verá **"Account linked"** sob Lessons.church em B1 Admin
+1. Log in to [B1 Admin](https://admin.b1.church/) and go to **Serving**
+2. Open the ministry you want to connect (e.g., Children's Ministry)
+3. Scroll down to the **Content Provider Accounts** section
+4. Click **Link New Provider**
+5. Select **Lessons.church** from the list
+6. A device authorization screen will appear with a code
+7. Go to [lessons.church](https://lessons.church), log in, and enter the code to authorize the connection
+8. Once approved, you will see **"Account linked"** under Lessons.church in B1 Admin
 
 :::info
-A seção Content Provider Accounts é por ministério. Se você executa múltiplos ministérios (por exemplo, Crianças e Juventude), você precisará vincular Lessons.church para cada um separadamente.
+The Content Provider Accounts section is per ministry. If you run multiple ministries (e.g., Children's and Youth), you will need to link Lessons.church for each one separately.
 :::
 
-## Passo 2 — Agende uma Aula
+## Step 2 — Schedule a Lesson
 
-Uma vez vinculado, você pode agendar aulas direto de Planos.
+Once linked, you can schedule lessons directly from Plans.
 
-1. Em B1 Admin, vá para **Serving → Plans**
-2. Selecione sua guia de ministério e clique **Add Plan Type** — dê ao tipo de plano um nome como Crianças Church ou Escola Dominical
-3. Clique no tipo de plano que você acabou de fazer e clique **Schedule Lesson**. A partir daquele menu você pode agendar uma aula, agendar em massa uma série ou **Apply Year Plan** para colocar uma sequência publicada de 12–52 semanas de Lessons.church.
-4. Selecione a **data** para a aula (padrão para domingo próximo)
-5. Clique em **Select Lesson** — uma caixa de diálogo de navegador de conteúdo abre
-6. No topo da caixa de diálogo, confirme que **Lessons.church** está selecionado como o provedor
-7. Procure pelo conteúdo:
-   - Selecione um **Program** (por exemplo, "Bible Stories for Kids")
-   - Selecione um **Study** dentro daquele programa (por exemplo, "Creation and Early Stories")
-   - Selecione a **Lesson** específica
-   - Selecione o **Venue** — isto é a versão de faixa etária da aula
-8. Clique em **Associate Lesson** para confirmar
-9. Escolha sua **opção de cópia** para voluntários:
-   - **Nothing** — plano fresco, nenhum voluntário trazido
-   - **Positions Only** — copia papéis de voluntário do plano anterior mas não quem está atribuído
-   - **Positions and Assignments** — copia ambos papéis e voluntários atribuídos *(mais comum)*
-10. Clique em **Save**
+1. In B1 Admin, go to **Serving → Plans**
+2. Select your ministry tab and click **Add Plan Type** — give the plan type a name such as Children's Church or Sunday School
+3. Click on the plan type you just made and click **Schedule Lesson**. From that menu you can schedule one lesson, bulk-schedule a series, or **Apply Year Plan** to drop in a published 12–52 week sequence from Lessons.church.
+4. Select the **date** for the lesson (defaults to the upcoming Sunday)
+5. Click **Select Lesson** — a content browser dialog opens
+6. At the top of the dialog, confirm **Lessons.church** is selected as the provider
+7. Browse through the content:
+   - Select a **Program** (e.g., "Bible Stories for Kids")
+   - Select a **Study** within that program (e.g., "Creation and Early Stories")
+   - Select the specific **Lesson**
+   - Select the **Venue** — this is the age-group version of the lesson
+8. Click **Associate Lesson** to confirm
+9. Choose your **copy option** for volunteers:
+   - **Nothing** — fresh plan, no volunteers carried over
+   - **Positions Only** — copies volunteer roles from the previous plan but not who is assigned
+   - **Positions and Assignments** — copies both roles and assigned volunteers *(most common)*
+10. Click **Save**
 
-O plano é criado e nomeado automaticamente (por exemplo, "23 de Fev - Elementary"). Voluntários podem abrir o plano para ver suas atribuições e revisar o conteúdo da aula antes de domingo.
+The plan is created and named automatically (e.g., "Feb 23 - Elementary"). Volunteers can open the plan to see their assignments and review the lesson content before Sunday.
 
 :::warning
-Certifique-se de selecionar o **Venue** correto para o grupo etário de sua sala de aula. Escolher o venue errado significa que seus voluntários verão conteúdo projetado para um nível de idade diferente.
+Make sure to select the correct **Venue** for your classroom's age group. Choosing the wrong venue means your volunteers will see content designed for a different age level.
 :::
 
-## Aplicar um Plano de Ano
+## Apply a Year Plan
 
-Se um editor de currículo publicou um plano de ano em Lessons.church, você pode carregar a sequência inteira neste tipo de plano em um passo:
+If a curriculum publisher has published a year plan on Lessons.church, you can load the whole sequence onto this plan type in one step:
 
-1. Clique **Schedule Lesson → Apply Year Plan**
-2. Escolha o plano de ano publicado
-3. Defina a data da primeira aula (semana 1 cai naquela data; semanas posteriores são sete dias separadas)
-4. Escolha quantas semanas escrever (12, 24, 44 ou 52)
-5. Opcionalmente copie posições de voluntário do plano anterior
-6. Visualize a lista. Datas que já têm um plano são puladas. Desmarque qualquer semana que você não queira.
-7. Salve. Cada semana se torna um plano de serviço que você pode editar como usual — altere a aula, voluntários ou data — e FreePlay toca qualquer coisa que esteja naquele plano de semana.
+1. Click **Schedule Lesson → Apply Year Plan**
+2. Choose the published year plan
+3. Set the first class date (week 1 lands on that date; later weeks are seven days apart)
+4. Choose how many weeks to write (12, 24, 44, or 52)
+5. Optionally copy volunteer positions from the previous plan
+6. Preview the list. Dates that already have a plan are skipped. Uncheck any week you do not want.
+7. Save. Each week becomes a serving plan you can edit as usual — change the lesson, volunteers, or date — and FreePlay will play whatever is on that week's plan.
 
 :::tip
-**Planeje com antecedência** — Você pode agendar múltiplas semanas de aulas de uma vez para que seu time possa se preparar com antecedência. Use a lista de aula passada na visualização do plano para evitar repetir conteúdo acidentalmente.
+**Plan ahead** — You can schedule multiple weeks of lessons at once so your team can prepare in advance. Use the past lesson list in the plan view to avoid accidentally repeating content.
 :::
 
-## Customizando Conteúdo de Aula
+## Customizing Lesson Content
 
-Uma vez que uma aula está agendada, você pode ajustá-la para sua sala de aula específica — remova seções que não se aplicam, esconda papéis que sua sala não usa ou reordene o conteúdo para combinar com seu fluxo preferido. Customizações podem ser salvas para apenas uma sala de aula ou aplicadas em todas as salas de aula em sua igreja.
+Once a lesson is scheduled, you can tailor it for your specific classroom — remove sections that don't apply, hide roles your room doesn't use, or reorder the content to match your preferred flow. Customizations can be saved for just one classroom or applied across all classrooms at your church.
 
-Consulte o guia [Customizando Aulas](/docs/lessons-church/customization/customizing-lessons) para instruções passo a passo.
+See the [Customizing Lessons](/docs/lessons-church/customization/customizing-lessons) guide for step-by-step instructions.
 
-## Tocando Aulas em um TV de Sala de Aula com FreePlay
+## Playing Lessons on a Classroom TV with FreePlay
 
-Agendar uma aula em B1 Admin emparelha perfeitamente com **[FreePlay](/docs/freeplay/)** — o player de mídia gratuito ChurchApps para TVs de sala de aula e Fire Sticks. Quando seu plano está configurado, FreePlay pode puxar o conteúdo da aula direto de Lessons.church e tocá-lo tela cheia na sala de aula. Seu professor controla o passo com um controle remoto de TV, avançando através de vídeos e slides conforme a aula flui.
+Scheduling a lesson in B1 Admin pairs perfectly with **[FreePlay](/docs/freeplay/)** — ChurchApps' free media player for classroom TVs and Fire Sticks. When your plan is set up, FreePlay can pull the lesson content directly from Lessons.church and play it full-screen in the classroom. Your teacher controls the pace with a TV remote, advancing through videos and slides as the lesson flows.
 
-Isto significa que seus voluntários veem o plano em seus telefones enquanto o conteúdo toca no TV da sala — nenhuma configuração separada, nenhum drive USB, nenhuma correria de último minuto.
+This means your volunteers see the plan on their phones while the content plays on the room's TV — no separate setup, no USB drives, no last-minute scrambling.
 
-[Aprenda como conectar FreePlay a um provedor de conteúdo →](/docs/freeplay/content-providers/connecting-providers)
+[Learn how to connect FreePlay to a content provider →](/docs/freeplay/content-providers/connecting-providers)
 
-## Não Vê Seu Provedor de Currículo?
+## Don't See Your Curriculum Provider?
 
-A lista de provedores disponíveis está crescendo. Se sua igreja usa um provedor de currículo que ainda não está mostrando em B1 Admin, entre em contato conosco e trabalharemos em ter alguém adicionado.
+The list of available providers is growing. If your church uses a curriculum provider that isn't showing in B1 Admin yet, reach out to us and we'll work on getting them added.
 
-Sinta-se livre em copiar e enviar a mensagem abaixo direto para seu provedor de currículo — uma vez que eles entrem em contato conosco vamos ter a integração configurada:
+Feel free to copy and send the message below directly to your curriculum provider — once they reach out to us we'll get the integration set up:
 
 ---
 
-> **Assunto: ChurchApps Integration Request**
+> **Subject: ChurchApps Integration Request**
 >
-> Olá [Curriculum Provider Team],
+> Hi [Curriculum Provider Team],
 >
-> Nós adoramos seu currículo e o usamos cada semana com nossos filhos. Nós também usamos ChurchApps para gerenciar nossos voluntários e planos de serviço e usamos FreePlay (freeplay.church) para tocar conteúdo de aula direto em nossas TVs de sala de aula. Tem sido um mudança de jogo para nossos professores.
+> We love your curriculum and use it every week with our kids. We also use ChurchApps to manage our volunteers and service plans, and we use FreePlay (freeplay.church) to play lesson content directly on our classroom TVs. It has been a game changer for our teachers.
 >
-> Agora nós temos que gerenciar seu currículo separadamente, mas se você fosse integrado com ChurchApps nós poderíamos agendar suas aulas direto dentro de nossos planos de serviço e tocá-los através de FreePlay em nossas telas de sala de aula — tudo sem deixar as ferramentas que já usamos.
+> Right now we have to manage your curriculum separately, but if you were integrated with ChurchApps we could schedule your lessons right inside our service plans and play them through FreePlay on our classroom screens — all without leaving the tools we already use.
 >
-> ChurchApps já funciona com vários provedores de currículo e seu time está pronto para funcionar com você também. Você poderia entrar em contato com eles em **support@churchapps.org** para começar a conversa? Nós adoraríamos ver isto acontecer!
+> ChurchApps already works with several curriculum providers and their team is ready to work with you too. Could you reach out to them at **support@churchapps.org** to get the conversation started? We'd love to see this happen!
 >
-> Obrigado!
+> Thank you!
 
 ---
 
 ## Artigos Relacionados
 
-- [Planos de Serviço](./plans.md)
-- [Ordem de Serviço](./service-order.md)
-- [Customizando Aulas](/docs/lessons-church/customization/customizing-lessons)
-- [FreePlay — Tocando Aulas em uma TV de Sala de Aula](/docs/freeplay/classroom-mode/playing-lessons)
-- [Guia de Agendamento Lessons.church](/docs/lessons-church/classrooms/scheduling-lessons)
+- [Service Plans](./plans.md)
+- [Service Order](./service-order.md)
+- [Customizing Lessons](/docs/lessons-church/customization/customizing-lessons)
+- [FreePlay — Playing Lessons on a Classroom TV](/docs/freeplay/classroom-mode/playing-lessons)
+- [Lessons.church Scheduling Guide](/docs/lessons-church/classrooms/scheduling-lessons)

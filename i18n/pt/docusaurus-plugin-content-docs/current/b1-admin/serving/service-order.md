@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Ordem de Serviço"
 ---
 
@@ -6,100 +6,100 @@ title: "Ordem de Serviço"
 
 <div class="article-intro">
 
-A ordem de serviço define a sequência de elementos em seu serviço de adoração. Use-a para delinear tudo desde a canção de abertura até a oração de encerramento, para que seu time inteiro saiba o fluxo do serviço à frente.
+The service order defines the sequence of elements in your worship service. Use it to lay out everything from the opening song to the closing prayer, so your entire team knows the flow of the service ahead of time.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Before You Begin</h4>
 
-- [Crie um plano de serviço](./plans.md) para a data que você quer construir uma ordem de serviço para
-- Opcionalmente, adicione [cânticos](./songs.md) à sua biblioteca para que você possa vinculá-los direto na ordem de serviço
+- [Create a service plan](./plans.md) for the date you want to build a service order for
+- Optionally, add [songs](./songs.md) to your library so you can link them directly into the service order
 
 </div>
 
-## Acessando a Ordem de Serviço
+## Accessing the Service Order
 
-1. Navegue para **Serving** e selecione seu ministério.
-2. Clique em um **tipo de plano**, depois abra um **plano** específico.
-3. Clique na guia **Service Order** na página de detalhe do plano.
+1. Navigate to **Serving** and select your ministry.
+2. Click on a **plan type**, then open a specific **plan**.
+3. Click the **Service Order** tab on the plan detail page.
 
-## Construindo Sua Ordem de Serviço
+## Building Your Service Order
 
-A ordem de serviço é uma lista de itens arranjados na sequência em que ocorrerão durante o serviço. Elementos comuns incluem:
+The service order is a list of items arranged in the sequence they will occur during the service. Common elements include:
 
-- Cânticos de adoração
-- Orações
-- Leituras de Escritura
-- Anúncios
-- Sermão ou mensagem
-- Oferta
-- Encerramento
+- Worship songs
+- Prayers
+- Scripture readings
+- Announcements
+- Sermon or message
+- Offering
+- Closing
 
-## Adicionando Itens à Ordem de Serviço
+## Adding Items to the Service Order
 
-1. Na guia **Service Order**, clique em **Add Item**.
-2. Escolha o tipo de elemento que você quer adicionar (por exemplo, um cântico de sua biblioteca, um item personalizado ou um cabeçalho).
-3. Digite os detalhes para o item, como título e qualquer nota.
-4. Clique em **Save**.
+1. On the **Service Order** tab, click **Add Item**.
+2. Choose the type of element you want to add (for example, a song from your library, a custom item, or a heading).
+3. Enter the details for the item, such as the title and any notes.
+4. Click **Save**.
 
 :::tip
-Você pode adicionar cânticos direto de sua biblioteca [Songs](./songs.md). Isto vincula os detalhes do cântico, incluindo letra e arranjos, ao seu plano de serviço para que seu time de adoração tenha tudo que precisa.
+You can add songs directly from your [Songs](./songs.md) library. This links the song details, including lyrics and arrangements, to your service plan so your worship team has everything they need.
 :::
 
-## Reordenando Itens
+## Reordering Items
 
-Arraste itens pela alça no lado esquerdo de cada linha para reorganizar a ordem — solte na linha azul onde você quer o item descer ou em um cabeçalho de seção para movê-lo para aquela seção. A sequência mostrada na tela é a ordem que seu time seguirá durante o serviço.
+Drag items by the handle on the left of each row to rearrange the order — drop onto the blue line where you want the item to land, or onto a section header to move it into that section. The sequence shown on screen is the order your team will follow during the service.
 
-## Agrupando Ações Sob uma Seção
+## Grouping Actions Under a Section
 
-Seções de aula e currículo podem conter suas próprias ações passo a passo (por exemplo, as dicas individuais dentro de uma seção "Large Group"). Clique em **Expand to Actions** em uma seção para quebrá-la em seus itens de ação -- a seção permanece no lugar como uma **pasta** colapsável, com suas ações aninhadas abaixo dela.
+Lesson and curriculum sections can hold their own step-by-step actions (for example, the individual cues inside a "Large Group" section). Click **Expand to Actions** on a section to break it out into its action items -- the section stays in place as a collapsible **folder**, with its actions nested underneath it.
 
-- Clique em alternador de pasta da seção para expandir ou colapsar suas ações sem deixar a ordem de serviço.
-- **Collapse to Section** reverte isto para planos construídos antes de pastas existirem, transformando uma corrida plana de ações de volta para um único item de seção. Novas expansões sempre criam uma pasta, para que você geralmente apenas precise disto em planos mais antigos.
+- Click the section's folder toggle to expand or collapse its actions without leaving the service order.
+- **Collapse to Section** reverses this for plans built before folders existed, turning a flat run of actions back into a single section item. New expansions always create a folder, so you generally only need this on older plans.
 
-Voluntários atribuídos a um item aparecem próximo a ele na ordem de serviço, para que qualquer um revisando o plano possa ver quem está cobrindo cada parte num relance.
+Volunteers assigned to an item show up next to it in the service order, so anyone reviewing the plan can see who's covering each part at a glance.
 
-## Timing e Mídia
+## Timing and Media
 
-Cada item e seção mostra quanto tempo dura e quando começa:
+Each item and section shows how long it runs and when it starts:
 
-- Se o plano tem uma única hora de serviço selecionada, o painel esquerdo mostra a **hora do relógio** que cada item começa (por exemplo, 9:14 AM). Caso contrário mostra tempo decorrido desde o início do serviço.
-- Cabeçalhos de seção totalizam o tempo de execução de tudo dentro deles.
-- Cânticos e itens personalizados contam para este cronograma uma vez que você digite **Minutes**/**Seconds** na tela de edição do item.
-- Itens que você adiciona de sua biblioteca de mídia (imagens ou clips de vídeo) mostram uma **miniatura** e são cronometrados automaticamente — a duração de um vídeo é medida do arquivo em si, enquanto uma imagem contribui uma estimativa de planejamento de ~5:00 (mostrada em itálico) já que fica na tela até um operador a avança. Você pode ainda editar qualquer um para uma duração específica.
+- If the plan has a single service time selected, the left rail shows the actual **clock time** each item starts (for example, 9:14 AM). Otherwise it shows elapsed time from the start of the service.
+- Section headers total up the running time of everything inside them.
+- Songs and custom items count toward this schedule once you enter **Minutes**/**Seconds** on the item's edit screen.
+- Items you add from your media library (images or video clips) show a **thumbnail** and are timed automatically — a video's duration is measured from the file itself, while an image contributes a ~5:00 planning estimate (shown in italics) since it stays on screen until an operator advances it. You can still edit either one to a specific duration.
 
-## Editando e Removendo Itens
+## Editing and Removing Items
 
-- Clique em qualquer item na ordem de serviço para **editar** seus detalhes.
-- Use a opção **delete** para remover um item da ordem.
+- Click on any item in the service order to **edit** its details.
+- Use the **delete** option to remove an item from the order.
 
 :::info
-A ordem de serviço é específica para cada plano. Alterações que você faz aqui apenas afetam o plano selecionado e não alterarão outros planos ou sua biblioteca de cânticos.
+The service order is specific to each plan. Changes you make here only affect the selected plan and will not alter other plans or your song library.
 :::
 
-## Incluindo Itens em Horários de Serviço Específicos
+## Including Items in Specific Service Times
 
-Se seu plano tem mais de um horário de serviço (por exemplo, um serviço de 8 da manhã e 10 da manhã), você pode escolher quais serviços cada item deve aparecer. Isto é útil quando um anúncio é apenas relevante para um serviço ou quando um cântico é cantado em um serviço mas não em outro.
+If your plan has more than one service time (for example, an 8 a.m. and 10 a.m. service), you can choose which services each item should appear in. This is useful when an announcement is only relevant to one service, or when a song is sung in one service but not another.
 
-1. Abra um plano que tem dois ou mais horários de serviço definidos na guia **Times**.
-2. Na guia **Service Order**, clique em um item para editá-lo.
-3. Sob **Include in Services**, você verá uma caixa de seleção para cada hora de serviço, rotulada com a hora.
-4. Desmarque qualquer serviço onde o item deve ser pulado.
-5. Clique em **Save**.
+1. Open a plan that has two or more service times defined on the **Times** tab.
+2. On the **Service Order** tab, click an item to edit it.
+3. Under **Include in Services**, you will see a checkbox for each service time, labeled with the time.
+4. Uncheck any service where the item should be skipped.
+5. Click **Save**.
 
-Por padrão, cada item está incluído em cada serviço. Horários de serviço excluídos estão escondidos quando você imprime o plano filtrado para aquele serviço, para que cada serviço receba uma folha de execução limpa com apenas os itens relevantes.
+By default, every item is included in every service. Excluded service times are hidden when you print the plan filtered to that service, so each service receives a clean run sheet with only the relevant items.
 
 :::tip
-A seção **Include in Services** apenas aparece quando o plano tem mais de um horário de serviço. Se você apenas vê um serviço, edite a guia **Times** do plano para adicionar serviços adicionais primeiro.
+The **Include in Services** section only appears when the plan has more than one service time. If you only see one service, edit the plan's **Times** tab to add additional services first.
 :::
 
-## Compartilhando a Ordem de Serviço
+## Sharing the Service Order
 
-Uma vez que sua ordem de serviço está completa, você pode imprimir o plano completo (incluindo a ordem de serviço) da página de detalhe do plano. Isto dá seu time um resumo completo do serviço.
+Once your service order is complete, you can print the full plan (including the service order) from the plan detail page. This gives your team a complete rundown of the service.
 
-## Próximas Etapas
+## Next Steps
 
-- Gerencie seu repertório de adoração na página [Songs](./songs.md)
-- Atribua voluntários ao serviço na guia [Plans](./plans.md) Assignments
-- Crie [Tasks](./tasks.md) para qualquer itens de acompanhamento relacionados ao serviço
+- Manage your worship repertoire on the [Songs](./songs.md) page
+- Assign volunteers to the service on the [Plans](./plans.md) Assignments tab
+- Create [Tasks](./tasks.md) for any follow-up items related to the service

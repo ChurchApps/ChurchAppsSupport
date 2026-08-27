@@ -1,61 +1,66 @@
 ---
-title: "Gerenciando envios"
+title: "Gerenciando Submissões"
 ---
 
-# Gerenciando envios
+# Gerenciando Submissões
 
 <div class="article-intro">
 
-Quando seu formulario estiver ativo, os envios comecarao a chegar. A aba Envios permite que voce revise cada resposta, acompanhe quem enviou e use os dados para fazer o acompanhamento com sua congregacao de maneira oportuna.
+Once your form is live, submissions will start coming in. The Submissions tab lets you review every response, track who has submitted, and use the data to follow up with your congregation in a timely manner.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de comecar</h4>
+<h4>Before You Begin</h4>
 
-- [Crie um formulario](./creating-forms.md) com pelo menos uma pergunta
-- Compartilhe o formulario atraves da sua URL publica ou incorpore-o no seu [site](../website/managing-pages.md)
+- [Create a form](./creating-forms.md) with at least one question
+- Share the form via its public URL or embed it on your [website](../website/managing-pages.md)
 
 </div>
 
-## Visualizando envios
+## Viewing Submissions
 
-1. Navegue ate **Forms** no menu principal.
-2. Clique no formulario que deseja revisar.
-3. Va para a aba **Submissions**.
+1. Navigate to **Forms** from the main menu.
+2. Click on the form you want to review.
+3. Go to the **Submissions** tab.
 
-Voce vera uma lista de todas as respostas recebidas para aquele formulario. Cada envio mostra as informacoes do respondente e a data em que foi enviado.
+You will see a list of all responses received for that form. Each submission shows the respondent's information and the date it was submitted.
 
-## Revisando envios individuais
+## Reviewing Individual Submissions
 
-Clique em qualquer envio para ver os detalhes completos. Voce vera todas as respostas que a pessoa forneceu para cada pergunta do formulario.
+Click on any submission to view the full details. You will see all the answers the person provided for each question on the form.
 
-## Como os envios sao coletados
+## How Submissions Are Collected
 
-Os envios podem chegar atraves de varios canais:
+Submissions can come in through several channels:
 
-- **URL publica** -- Se o seu formulario tem uma URL publica (formularios Stand Alone), qualquer pessoa com o link pode enviar uma resposta. Compartilhe a URL por e-mail, redes sociais ou mensagens de texto.
-- **Incorporado no seu site** -- Formularios incorporados no seu site B1 coletam envios automaticamente quando os visitantes os preenchem.
-- **Uso interno** -- Funcionarios e voluntarios tambem podem enviar formularios em nome de outros diretamente no B1 Admin.
+- **Public URL** -- If your form has a public URL (Stand Alone forms), anyone with the link can submit a response. Share the URL via email, social media, or text messages.
+- **Embedded on your website** -- Forms embedded on your B1 website collect submissions automatically when visitors fill them out.
+- **Internal use** -- Staff and volunteers can also submit forms on behalf of others directly within B1 Admin.
 
 :::tip
-Verifique a aba **Submissions** regularmente para formularios como cartoes de visitante ou pedidos de oracao, para que voce possa fazer o acompanhamento prontamente.
+Check the **Submissions** tab regularly for forms like visitor cards or prayer requests, so you can follow up promptly.
 :::
 
-## Usando dados dos envios
+## Using Submission Data
 
-Os dados coletados atraves de formularios podem ajuda-lo a:
+The data collected through forms can help you:
 
-- Acompanhar inscricoes em eventos e planejar de acordo
-- Fazer o acompanhamento com visitantes ou novos membros
-- Coletar feedback de pesquisas para planejamento ministerial
-- Processar pagamentos para eventos ou programas
+- Track event registrations and plan accordingly
+- Follow up with visitors or new members
+- Collect survey feedback for ministry planning
+- Process payments for events or programs
 
 :::info
-Membros do formulario com funcoes **Admin** ou **View Only** podem acessar a aba Envios. Certifique-se de que as pessoas certas da sua equipe tenham acesso aos formularios necessarios, gerenciando funcoes na aba **Members**.
+Form members with **Admin** or **View Only** roles can access the Submissions tab. Make sure the right people on your team have access to the forms they need by managing roles in the **Members** tab.
 :::
 
-## Proximos passos
+:::tip
+If a **Stand Alone** form is set to create a person record, any submissions matched to an existing person also show up on that person's own **Forms** tab in the People section — not just People-type forms.
+:::
 
-- Aprenda como criar e personalizar formularios em [Criando formularios](./creating-forms.md)
-- Adicione pessoas dos envios de formularios ao seu [diretorio de pessoas](../people/adding-people.md) para acompanhamento continuo
+## Next Steps
+
+- Learn how to build and customize forms in [Creating Forms](./creating-forms.md)
+- Add people from form submissions to your [people directory](../people/adding-people.md) for ongoing follow-up
+- [Automatically add submitters to a group](./creating-forms.md#automatically-adding-submitters-to-a-group) so a stand-alone sign-up form builds its own roster

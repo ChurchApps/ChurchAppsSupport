@@ -1,7 +1,123 @@
-﻿---
+---
 title: "सेवा योजनाएं"
 ---
 
-# सेवा योजनाएं
+# Service Plans
 
-सेवा योजनाएं आयोजित करती हैं कि कौन सेवा दे रहा है और कब।
+<div class="article-intro">
+
+Service plans organize who is serving and when. Each plan is tied to a specific date and ministry, making it easy to coordinate your volunteer teams week by week and ensure every service is fully staffed.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- Set up your ministries and teams in the Serving area
+- Make sure volunteers have been added to your [people directory](../people/adding-people.md) and assigned to teams
+
+</div>
+
+## Accessing Plans
+
+1. Navigate to **Serving** from the main menu.
+2. Select a **ministry tab** at the top of the page.
+3. Click on a **plan type** to see the list of plans for that type.
+4. Click on a specific plan to open it.
+
+:::info
+Full admin access is not required to manage plans. Anyone who is a member of a ministry can navigate to Serving and create, edit, and schedule plans for their own ministry without needing the Plans Edit permission. Editors with the Plans Edit role can manage plans across every ministry.
+:::
+
+## Creating a Plan
+
+1. From the plan type view, click **New Plan**.
+2. Give the plan a name or use the date as the name. Select the **date** for the service.
+3. If you would like to copy from a previous plan, choose positions only or positions and assignments. If you do not want to copy, just choose nothing. You can also copy the order of service from my previous plan.
+4. Save the plan. You can now begin assigning team members and building out the [service order](./service-order.md).
+
+## The Plan Detail Page
+
+When you open a plan, you will see two tabs:
+
+- **Assignments** -- Manage which team members are assigned to this plan. You can add people from your existing teams and see who has confirmed or is still pending.
+- **[Service Order](./service-order.md)** -- Build the order of service with elements like worship songs, prayers, announcements, and the sermon.
+
+## Assigning Team Members
+
+1. Open a plan and go to the **Assignments** tab.
+2. Click on **add Position** to expand it. Fill out the information in the add a position form. For category name add whatever category you like.
+3. Click on **People Needed** and choose volunteers to fill that position.
+4. Add members from your team roster by clicking **Add**.
+5. Assigned members will appear under their team with their assignment status.
+6. Click notify volunteers to notify them within the B1 app or via email.
+
+Each position shows a count chip (for example, "2/3") so you can see how many spots are filled at a glance. At the top of the Assignments tab, a progress bar and a summary chip ("X of Y positions filled") show your overall staffing for the plan, switching to **Fully staffed** once every position is covered.
+
+:::tip
+Set up your teams in the ministry settings before creating plans. This way, you will have a ready pool of volunteers to assign from.
+:::
+
+## Plan Settings
+
+Each plan has additional settings you can configure by clicking the edit (pencil) icon on the plan. These include:
+
+- **Signup Deadline** — the number of hours before the service when volunteer signups close. Enter a negative number to keep signups open past the service start time.
+- **Show volunteer names on signup page** — when checked, volunteers can see who else is already signed up for each position.
+- **Penciled in** — hides assignments from volunteers until you are ready to publish the schedule.
+- **Automatically schedule a replacement when a volunteer declines** — when checked, if an assigned volunteer declines their position B1 will automatically contact the next available person on the team roster and ask if they can serve. This continues down the list until someone accepts, keeping your positions filled without manual follow-up.
+
+## Volunteer Reminders
+
+B1 can automatically remind volunteers ahead of the services they are scheduled for, so you do not have to chase down your team each week. Reminders go to **everyone scheduled** — both those who have confirmed and those who have not yet responded — by email and as an in-app/push notification. Each reminder includes the volunteer's position(s), the service date, the plan notes, and your custom message.
+
+Reminder timing and content are set per **plan type**, so each kind of service can keep its own schedule.
+
+1. From the **Serving** area, select the ministry that contains the plan type.
+2. Click the **edit (pencil) icon** next to the plan type.
+3. In the **Reminders** section, set:
+   - **Reminder days before service** — a comma-separated list of how many days ahead to send, for example `7,1,0`. Use `0` to send a reminder on the day of the service. Leave this field blank to turn reminders off for this plan type.
+   - **Custom reminder message** *(optional)* — extra text added to the reminder, such as "Arrive 30 minutes early to rehearse."
+4. Save the plan type.
+
+New plan types remind volunteers **2 days before** each service by default until you change this.
+
+:::tip
+Volunteers who have not yet confirmed get **Accept** and **Decline** buttons right inside the reminder email, so they can respond without signing in.
+:::
+
+:::info
+Each reminder is sent once. Plans that are still penciled in (not yet sent to the team) do not trigger reminders.
+:::
+
+## Associating Groups with a Plan Type
+
+Below the plan list on the plan type page, the **Groups** section lets you decide which groups can see the plans for this plan type from their member portal. This is a quick way to surface upcoming services to the right teams without giving them admin access.
+
+1. On the plan type page, scroll down to the **Groups** section.
+2. Click **Add Group** and pick a group from the dropdown.
+3. In the **Shows** column, choose whether members of that group should see **Past**, **Future**, or **Both** plans for this plan type.
+4. Repeat to associate additional groups, or click the trash icon to remove a group.
+
+:::info
+Only groups tagged as **Standard** appear in the picker. Members of an associated group automatically see this plan type's plans on the group's page in the B1 member portal — limited to the past/future/both window you selected.
+:::
+
+If the plans are Lessons.church lessons, members of the associated group also see a **This week's lesson** card on the group page (bottom line, verse, and a question for parents). Associate a parent group here and set the filter to **Past** so today's lesson is included. Volunteer teams typically use **Future** or **Both**.
+
+## Printing Plans
+
+You can print a plan for distribution to your team. Open the plan, Open the service order tab and use the **Print** option to generate a printable version that includes assignments and the service order. This is useful for handing out at rehearsals or posting in a common area.
+
+:::info
+Plans are organized by ministry. Make sure you are on the correct ministry tab before creating or viewing plans.
+:::
+
+## Next Steps
+
+- Use the [Plans Overview](./plans-overview.md) to see all upcoming assignments across multiple weeks in one grid and spot unfilled positions — and assign volunteers directly from the grid
+- Save a plan's structure as a [Plan Template](./plan-templates.md) so you can stamp it onto future plans in one click
+- Build out your [Service Order](./service-order.md) with songs, readings, and other elements
+- Add [songs](./songs.md) from your library directly into the service order
+- Use [Tasks](./tasks.md) to assign follow-up action items to team members
+- Display current lesson content on a lobby TV with [Digital Signage](./digital-signage.md)

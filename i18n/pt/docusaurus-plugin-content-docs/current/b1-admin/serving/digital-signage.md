@@ -6,35 +6,35 @@ title: "Sinalização Digital"
 
 <div class="article-intro">
 
-Envie o conteúdo da sua aula para uma TV de saguão ou corredor usando um feed de sinalização digital. Cada tipo de plano recebe uma URL de feed que sempre reproduz o conteúdo do plano atual, então não há nada para atualizar semana a semana.
+Send your lesson content to a lobby or hallway TV using a digital signage feed. Each plan type gets a feed URL that always plays the current plan's content, so there's nothing to update week to week.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Before You Begin</h4>
 
-- Configure um [tipo de plano](./plans.md) com [Lessons.church](../content/lessons.md) ou outro conteúdo de aula agendado
-- Tenha uma conta [SignPresenter](https://www.signpresenter.com) e um dispositivo configurado para exibi-lo
+- Set up a [plan type](./plans.md) with [Lessons.church](../content/lessons.md) or other lesson content scheduled
+- Have a [SignPresenter](https://www.signpresenter.com) account and a device set up to display it
 
 </div>
 
-## Obtendo a URL do Feed
+## Getting the Feed URL
 
-1. Navegue até **Serving** e abra o ministério que contém seu tipo de plano.
-2. Clique no botão **Digital Signage** (o ícone de RSS) na página do tipo de plano.
-3. Copie a URL do feed exibida na caixa de diálogo.
+1. Navigate to **Serving** and open the ministry containing your plan type.
+2. Click the **Digital Signage** button (the RSS icon) on the plan type page.
+3. Copy the feed URL shown in the dialog.
 
 :::info
-A URL do feed está vinculada ao tipo de plano, não a um único plano. Ela acompanha automaticamente qualquer plano agendado como atual para esse tipo de plano, então você só precisa configurá-la uma vez.
+The feed URL is tied to the plan type, not a single plan. It automatically tracks whichever plan is scheduled as current for that plan type, so you only need to set it up once.
 :::
 
-## Conectando ao SignPresenter
+## Connecting to SignPresenter
 
-O feed foi criado para funcionar com o [SignPresenter](https://www.signpresenter.com), um aplicativo de sinalização digital de terceiros. Cole a URL copiada no SignPresenter como um feed externo para exibir o conteúdo da sua aula atual em uma tela conectada.
+The feed is built to work with [SignPresenter](https://www.signpresenter.com), a third-party digital signage app. Paste the copied URL into SignPresenter as an external feed to display your current lesson content on a connected screen.
 
-Para configuração passo a passo dentro do SignPresenter, consulte o [guia do SignPresenter para Lessons.church](https://support.signpresenter.com/topics/lessons-dot-church.html).
+For step-by-step setup inside SignPresenter, see [SignPresenter's Lessons.church guide](https://support.signpresenter.com/topics/lessons-dot-church.html).
 
-## Próximos Passos
+## Next Steps
 
-- Gerencie os planos que alimentam essa exibição de sinalização na página [Planos](./plans.md)
-- Agende conteúdo com o [Lessons.church](./scheduling-lessons.md)
+- Manage the plans that feed this signage display on the [Plans](./plans.md) page
+- Schedule content with [Lessons.church](./scheduling-lessons.md)

@@ -1,69 +1,69 @@
 ---
-title: "चेक-आउट और बाल सुरक्षा"
+title: "Checking Out & Child Safety"
 ---
 
-# चेक-आउट और बाल सुरक्षा
+# Checking Out & Child Safety
 
 <div class="article-intro">
 
-चेक-आउट बाल चेक-इन के चक्र को पूरा करता है: एक माता-पिता अपने पिकअप लेबल से सुरक्षा कोड प्रस्तुत करता है, कियोस्क सत्यापित करता है कि कौन पिकअप कर रहा है, और बच्चों को चेक-आउट किया जाता है। मानवयुक्त स्टेशनों को सुरक्षा उपकरण भी मिलते हैं — विश्वसनीय-पिकअप सत्यापन, पेज-अ-पेरेंट टेक्स्ट, सुरक्षा-लेबल रीप्रिंट, और एक आपातकालीन प्रसारण।
+Check-out closes the loop on child check-in: a parent presents the security code from their pickup label, the kiosk verifies who is picking up, and the children are checked out. Manned stations also get safety tools — trusted-pickup verification, page-a-parent texts, security-label reprints, and an emergency broadcast.
 
 </div>
 
 <div class="prereqs">
-<h4>शुरू करने से पहले</h4>
+<h4>Before You Begin</h4>
 
-- कियोस्क एडमिन सेटिंग्स में **manned** मोड पर सेट स्टेशनों पर चेक-आउट उपलब्ध है
-- बच्चों को सुरक्षा कोड ले जाने वाले प्रिंटेड पिकअप लेबल के साथ [चेक-इन](./completing-checkin) किया गया होना चाहिए
-- पेजिंग और आपातकालीन प्रसारण के लिए आपके चर्च को B1 Admin में एक कनेक्टेड टेक्स्टिंग प्रदाता की आवश्यकता है
+- Check-out is available on stations set to **manned** mode in the kiosk admin settings
+- Children must have been [checked in](./completing-checkin) with a printed pickup label carrying the security code
+- Paging and emergency broadcasts require your church to have a texting provider connected in B1 Admin
 
 </div>
 
-## चेक-आउट शुरू करना
+## Starting a Check-Out
 
-1. एक मानवयुक्त स्टेशन पर, लुकअप स्क्रीन पर **Check Out** टैप करें।
-2. परिवार के पिकअप लेबल से 4-अक्षर का **सुरक्षा कोड** दर्ज करें। आप इसे टाइप कर सकते हैं, ऑन-स्क्रीन कीपैड का उपयोग कर सकते हैं, या USB या Bluetooth स्कैनर से लेबल के बारकोड को स्कैन कर सकते हैं — सभी 4 अक्षर दर्ज होने के बाद कोड अपने आप सबमिट हो जाता है।
-3. कियोस्क उस कोड के तहत चेक-इन किए गए बच्चों को दिखाता है।
+1. On a manned station, tap **Check Out** on the lookup screen.
+2. Enter the 4-character **security code** from the family's pickup label. You can type it, use the on-screen keypad, or scan the label's barcode with a USB or Bluetooth scanner — the code submits automatically once all 4 characters are entered.
+3. The kiosk shows the children checked in under that code.
 
-## यह सत्यापित करना कि कौन पिकअप कर रहा है
+## Verifying Who Is Picking Up
 
-चेक-आउट स्क्रीन पूछती है कि बच्चों को कौन पिकअप कर रहा है:
+The check-out screen asks who is picking the children up:
 
-- परिवार के लिए **विश्वसनीय पिकअप लोग** उनकी फोटो और रिश्ते के साथ टैप करने योग्य कार्ड के रूप में दिखाई देते हैं — अपने सामने खड़े व्यक्ति को टैप करें।
-- **परिवार के वयस्क** भी एक फोटो ग्रिड में दिखाई देते हैं।
-- **Other** आपको सूची में न शामिल किसी व्यक्ति के लिए एक नाम टाइप करने देता है।
+- **Trusted pickup people** for the household appear as tappable cards with their photo and relationship — tap the person standing in front of you.
+- **Household adults** also appear in a photo grid.
+- **Other** lets you type a name for someone not on the list.
 
-यदि टाइप किया गया नाम उस परिवार के लिए **Not Authorized** के रूप में चिह्नित किसी व्यक्ति से मेल खाता है, तो कियोस्क एक चेतावनी के साथ चेक-आउट को अवरुद्ध कर देता है। एक स्टाफ सदस्य फिर भी आगे बढ़ने के लिए **Override** चुन सकता है — ओवरराइड को व्यक्ति के नाम के साथ उपस्थिति रिकॉर्ड पर दर्ज किया जाता है।
+If a typed name matches someone marked **Not Authorized** for that household, the kiosk blocks the check-out with a warning. A staff member can choose **Override** to proceed anyway — the override is recorded on the attendance record with the person's name.
 
-एक बार पिकअप व्यक्ति की पुष्टि हो जाने पर, चेक आउट टैप करें। पिकअप व्यक्ति का नाम उपस्थिति रिकॉर्ड के साथ संग्रहीत किया जाता है।
+Once the picker is confirmed, tap check out. The pickup person's name is stored with the attendance record.
 
 :::info
-विश्वसनीय और अनधिकृत पिकअप लोगों को B1 Admin में हर व्यक्ति के पेज पर चर्च स्टाफ द्वारा प्रबंधित किया जाता है — देखें [चेक-इन सुरक्षा](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people)।
+Trusted and not-authorized pickup people are managed by church staff on each person's page in B1 Admin — see [Check-In Safety](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
 :::
 
-## माता-पिता को पेज करना
+## Paging a Parent
 
-सेवा के दौरान माता-पिता की आवश्यकता है — डायपर बदलना, रोता हुआ बच्चा? मानवयुक्त स्टेशन के चेक-आउट स्क्रीन से, स्टाफ चर्च के टेक्स्टिंग प्रदाता के माध्यम से एक **page** भेज सकता है: बच्चे के माता-पिता या अभिभावकों को एक टेक्स्ट संदेश। जिन माता-पिता ने टेक्स्ट से ऑप्ट-आउट किया है या जिनके पास कोई मोबाइल नंबर नहीं है उन्हें छोड़ दिया जाता है, और कियोस्क दिखाता है कि कितने संदेश भेजे गए।
+Need a parent during the service — a diaper change, a crying child? From the check-out screen on a manned station, staff can send a **page**: a text message to the child's parents or guardians through the church's texting provider. Parents who opted out of texts or have no mobile number are skipped, and the kiosk shows how many messages were sent.
 
-## लेबल रीप्रिंट करना
+## Reprinting Labels
 
-यदि कोई नेमटैग या पिकअप लेबल खो जाता है या क्षतिग्रस्त हो जाता है, तो मानवयुक्त स्टेशन पर स्टाफ सुरक्षा कोड दर्ज करने के बाद चेक-आउट स्क्रीन से परिवार के लेबल **reprint** कर सकता है। रीप्रिंट मूल चेक-इन के समान ही प्रिंटर और लेबल टेम्पलेट का उपयोग करता है।
+If a nametag or pickup label is lost or damaged, staff on a manned station can **reprint** the family's labels from the check-out screen after entering the security code. The reprint uses the same printer and label templates as the original check-in.
 
-## आपातकालीन प्रसारण
+## Emergency Broadcast
 
-किसी आपातकाल में, स्टाफ एक साथ वर्तमान सेवा के लिए **हर चेक-इन किए गए बच्चे** के अभिभावकों को टेक्स्ट कर सकता है:
+In an emergency, staff can text the guardians of **every checked-in child** for the current service at once:
 
-1. कियोस्क **admin settings** खोलें (हेडर लोगो पर 7 त्वरित टैप, साथ ही यदि सेट है तो PIN)।
-2. **Emergency broadcast** टैप करें।
-3. संदेश दर्ज करें, फिर पुष्टिकरण फ़ील्ड में **EMERGENCY** टाइप करें — जब तक आप ऐसा नहीं करते तब तक **Send broadcast** बटन अक्षम रहता है।
-4. कियोस्क रिपोर्ट करता है कि कितने फोन को संदेश मिला और कितने लोगों को छोड़ दिया गया (ऑप्ट-आउट या कोई मोबाइल नंबर नहीं)।
+1. Open the kiosk **admin settings** (7 rapid taps on the header logo, plus the PIN if one is set).
+2. Tap **Emergency broadcast**.
+3. Enter the message, then type **EMERGENCY** in the confirmation field — the **Send broadcast** button stays disabled until you do.
+4. The kiosk reports how many phones received the message and how many people were skipped (opted out or no mobile number).
 
 :::warning
-यह प्रसारण चयनित सेवा के लिए हर चेक-इन किए गए परिवार को जाता है। इसे वास्तविक आपात स्थितियों के लिए उपयोग करें — निकासी, लॉकडाउन, गंभीर मौसम।
+The broadcast goes to every checked-in household for the selected service. Use it for genuine emergencies — evacuations, lockdowns, severe weather.
 :::
 
-## संबंधित लेख
+## Related Articles
 
-- [चेक-इन पूरा करना](./completing-checkin) — सुरक्षा कोड और पिकअप लेबल कहां से आते हैं
-- [चेक-इन सुरक्षा](../../b1-admin/attendance/checkin-safety) — क्षमताएं, अनुपात, पिकअप लोग, और टेक्स्टिंग प्रदाता आवश्यकता कॉन्फ़िगर करना
-- [प्रिंटर सेटअप](../getting-started/printer-setup) — लेबल प्रिंटर कॉन्फ़िगरेशन
+- [Completing Check-In](./completing-checkin) — where security codes and pickup labels come from
+- [Check-In Safety](../../b1-admin/attendance/checkin-safety) — configuring capacities, ratios, pickup people, and the texting provider requirement
+- [Printer Setup](../getting-started/printer-setup) — label printer configuration

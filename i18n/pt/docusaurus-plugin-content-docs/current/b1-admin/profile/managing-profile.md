@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Gerenciando Seu Perfil"
 ---
 
@@ -6,70 +6,70 @@ title: "Gerenciando Seu Perfil"
 
 <div class="article-intro">
 
-A página Perfil permite você editar as configurações de sua conta pessoal. Seu perfil é compartilhado em todos os produtos ChurchApps, portanto qualquer alteração que você faça aqui será refletida em qualquer lugar que use ChurchApps.
+The Profile page lets you edit your personal account settings. Your profile is shared across all ChurchApps products, so any changes you make here will be reflected everywhere you use ChurchApps.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Before You Begin</h4>
 
-- Você deve estar conectado à sua conta ChurchApps
-- Tenha seu novo endereço de email ou senha pronto se você planeja atualizá-los
+- You must be logged in to your ChurchApps account
+- Have your new email address or password ready if you plan to update them
 
 </div>
 
-## Informações de Perfil
+## Profile Information
 
-A seção superior da página Perfil contém seus detalhes de conta básicos:
+The top section of the Profile page contains your basic account details:
 
-1. **Email** -- Seu endereço de email usado para fazer login e receber notificações.
-2. **First Name** e **Last Name** -- Seu nome de exibição entre ChurchApps.
-3. **Password** -- Atualize sua senha de conta.
+1. **Email** -- Your email address used for logging in and receiving notifications.
+2. **First Name** and **Last Name** -- Your display name across ChurchApps.
+3. **Password** -- Update your account password.
 
-Para atualizar suas informações, edite os campos e clique no botão **Salvar Alterações**.
+To update your information, edit the fields and click the **Save Changes** button.
 
-## Alterando Sua Senha
+## Changing Your Password
 
-1. Role para os campos de senha na página Perfil.
-2. Digite sua **Senha Atual**.
-3. Digite sua nova senha no campo **Password**.
-4. Re-digite-a no campo **Confirmar Senha**.
-5. Clique em **Salvar Alterações**.
+1. Scroll to the password fields on the Profile page.
+2. Enter your **Current Password**.
+3. Enter your new password in the **Password** field.
+4. Re-enter it in the **Confirm Password** field.
+5. Click **Save Changes**.
 
 :::info
-Sua senha deve ter pelo menos 8 caracteres. Certifique-se de que os campos de senha e confirmação combinam exatamente. Você deve confirmar sua senha atual para alterá-la -- se você não a conhecer, use o link **Esqueci Minha Senha** na página de login.
+Your password must be at least 8 characters long. Make sure both the password and confirmation fields match exactly. You must confirm your current password to change it -- if you don't know it, use the **Forgot Password** link on the login page instead.
 :::
 
-## Contas Vinculadas
+## Linked Accounts
 
-A seção **Linked Accounts** mostra quaisquer serviços externos conectados à sua conta ChurchApps. Você pode visualizar quais contas estão vinculadas e gerenciar essas conexões desta seção.
+The **Linked Accounts** section shows any external services connected to your ChurchApps account. You can view which accounts are linked and manage those connections from this section.
 
-## Preferências de Tema
+## Theme Preferences
 
-ChurchApps suporta ambos os modos de exibição claro e escuro:
+ChurchApps supports both light and dark display modes:
 
-1. Encontre o alternador **Theme** na sua página Perfil.
-2. Alterne entre modo **Light** e **Dark**.
-3. A interface será atualizada imediatamente para refletir sua escolha.
+1. Find the **Theme** toggle on your Profile page.
+2. Switch between **Light** and **Dark** mode.
+3. The interface will update immediately to reflect your choice.
 
-Sua preferência de tema é salva em sua conta e se aplicará em todas as suas sessões.
+Your theme preference is saved to your account and will apply across all your sessions.
 
-## Deleção de Conta
+## Account Deletion
 
-Na parte inferior da página Perfil, você encontrará a opção para deletar permanentemente sua conta. Esta ação remove sua conta e dados associados e não pode ser desfeita.
+At the bottom of the Profile page, you will find the option to permanently delete your account. This action removes your account and associated data and cannot be undone.
 
 :::warning
-Deleção de conta é permanente e não pode ser revertida. Certifique-se de que realmente quer remover sua conta antes de prosseguir.
+Account deletion is permanent and cannot be reversed. Make sure you truly want to remove your account before proceeding.
 :::
 
 :::info
-Se você for um **Admin de Domínio**, certifique-se de transferir responsabilidades administrativas para outro usuário antes de deletar sua conta. Consulte [Funções e Permissões](../settings/roles-permissions.md) para detalhes sobre gerenciamento de funções de admin.
+If you are a **Domain Admin**, make sure to transfer administrative responsibilities to another user before deleting your account. See [Roles & Permissions](../settings/roles-permissions.md) for details on managing admin roles.
 :::
 
 :::info
-Edição de perfil está desativada em modo demo. Se você está usando uma conta demo, você não conseguirá fazer alterações nas configurações do seu perfil.
+Profile editing is disabled in demo mode. If you are using a demo account, you will not be able to make changes to your profile settings.
 :::
 
-## Próximas Etapas
+## Next Steps
 
-- [Gerenciando Dispositivos](./devices.md) -- Visualize e gerencie seus dispositivos ChurchAppsPlayer conectados
+- [Managing Devices](./devices.md) -- View and manage your connected ChurchAppsPlayer devices

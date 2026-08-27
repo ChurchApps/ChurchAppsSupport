@@ -1,56 +1,56 @@
 ---
-title: "Spendquittungen"
+title: "Spendendaten-Statements"
 ---
 
-# Spendquittungen
+# Spendendaten-Statements
 
 <div class="article-intro">
 
-Am Ende jedes Jahres benötigen Ihre Spender eine Zusammenfassung ihrer steuerabzugsfähigen Spenden für ihre Unterlagen. B1 Admin macht es einfach, diese Quittungen gleichzeitig für alle Spender zu generieren und spart Ihnen Stunden manuelle Arbeit.
+Am Ende jedes Jahres benötigen Ihre Spender eine Zusammenfassung ihrer steuerlich absetzbaren Spenden für ihre Unterlagen. B1 Admin macht es einfach, diese Statements für alle Spender auf einmal zu generieren und spart Ihnen Stunden manueller Arbeit.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Überprüfen Sie, ob Ihre [Fonds](funds.md) korrekt als **Steuerabzugsfähig** gekennzeichnet sind -- nur Spenden an steuerabzugsfähige Fonds werden auf Quittungen angezeigt
-- Stellen Sie sicher, dass alle Spenden [aufgezeichnet](recording-donations.md) wurden und dass alle Online-Transaktionen [aus Stripe importiert](stripe-import.md) wurden
+- Überprüfen Sie, dass Ihre [Fonds](funds.md) ordnungsgemäß als **Steuerlich absetzbar** gekennzeichnet sind – nur Spenden an steuerlich absetzbaren Fonds werden auf Statements angezeigt
+- Stellen Sie sicher, dass alle Spenden [erfasst](recording-donations.md) wurden und dass Online-Transaktionen [von Stripe importiert](stripe-import.md) wurden
 
 </div>
 
-## Zugriff auf Spendquittungen
+## Zugriff auf Spendendaten-Statements
 
 1. Öffnen Sie in **B1 Admin** das **Abschnittsmenü** in der oberen linken Ecke und wählen Sie **Spenden**.
-2. Klicken Sie auf **Quittungen**.
+2. Klicken Sie auf **Statements**.
 
-## Generieren von Quittungen
+## Generieren von Statements
 
-1. Wählen Sie das **Jahr** aus der Dropdown-Liste oben auf der Seite. Sie können das aktuelle Jahr oder eines der fünf vorherigen Jahre wählen.
+1. Wählen Sie das **Jahr** aus der Dropdown-Liste oben auf der Seite. Sie können das aktuelle Jahr oder eines der fünf vorherigen Jahre auswählen.
 2. Die Seite zeigt Zusammenfassungsstatistiken für dieses Jahr an, einschließlich:
-   - **Gesamte Spender** -- die Anzahl der Personen, die spendeten
-   - **Gesamtspenden** -- die Anzahl der einzelnen Spendeneintragungen
-   - **Gesamtbetrag** -- der kombinierte Dollarbetrag aller Spenden
+   - **Gesamtspender** – die Anzahl der Personen, die gegeben haben
+   - **Gesamtspenden** – die Anzahl der einzelnen Spendendatensätze
+   - **Gesamtbetrag** – der kombinierte Dollarbetrag aller Spenden
 
-## Quittungen herunterladen
+## Herunterladen von Statements
 
-Sie haben zwei Möglichkeiten, Quittungen an Ihre Spender zu erhalten:
+Sie haben zwei Optionen, um Statements an Ihre Spender zu übermitteln:
 
 ### Als CSV-Dateien herunterladen
 
-Klicken Sie auf **ZIP herunterladen**, um eine ZIP-Datei mit einer einzelnen CSV-Datei für jeden Spender herunterzuladen. Dies ist hilfreich, wenn Sie Quittungen einzeln per E-Mail versenden oder in ein anderes System importieren möchten.
+Klicken Sie auf **ZIP herunterladen**, um eine ZIP-Datei mit einer einzelnen CSV-Datei für jeden Spender herunterzuladen. Dies ist nützlich, wenn Sie Statements einzeln per E-Mail versenden oder in ein anderes System importieren möchten.
 
-### Alle Quittungen drucken
+### Alle Statements drucken
 
-Klicken Sie auf **Alle drucken**, um eine druckbare Ansicht der Quittung jedes Spenders in Ihrem Browser zu öffnen. Verwenden Sie dann die Druckfunktion Ihres Browsers, um sie an einen Drucker zu senden. Jede Quittung beginnt auf einer neuen Seite, sodass sie falten und verschickt werden können.
+Klicken Sie auf **Alle drucken**, um eine druckbare Ansicht aller Spender-Statements in Ihrem Browser zu öffnen. Verwenden Sie anschließend die Druckfunktion Ihres Browsers, um sie an einen Drucker zu senden. Jedes Statement beginnt auf einer neuen Seite, damit sie bereit sind, zu falten und zu versenden.
 
 :::tip
-Führen Sie Ihre Quittungen Anfang Januar aus, während Ihre Aufzeichnungen noch frisch sind. Überprüfen Sie, ob Ihre Fonds korrekt als steuerabzugsfähig gekennzeichnet sind, bevor Sie Quittungen generieren -- nur Spenden an steuerabzugsfähige Fonds sind enthalten.
+Führen Sie Ihre Statements Anfang Januar durch, während Ihre Unterlagen noch aktuell sind. Überprüfen Sie doppelt, dass Ihre Fonds ordnungsgemäß als steuerlich absetzbar gekennzeichnet sind, bevor Sie Statements generieren – nur Spenden an steuerlich absetzbaren Fonds sind enthalten.
 :::
 
 :::info
-Spendquittungen enthalten nur Spenden, die Fonds zugewiesen sind, die die Einstellung **Steuerabzugsfähig** aktiviert haben. Wenn ein Fonds nicht als steuerabzugsfähig gekennzeichnet ist, werden seine Spenden auf der Quittung nicht angezeigt. Sie können diese Einstellung auf der Seite [Fonds](funds.md) verwalten.
+Spendendaten-Statements enthalten nur Spenden, die Fonds zugeordnet sind, für die die Einstellung **Steuerlich absetzbar** aktiviert ist. Wenn ein Fonds nicht als steuerlich absetzbar markiert ist, werden seine Spenden nicht auf dem Statement angezeigt. Sie können diese Einstellung auf der Seite [Fonds](funds.md) verwalten.
 :::
 
 ## Nächste Schritte
 
-Wenn Sie Spendendetails überprüfen müssen, bevor Sie Quittungen generieren, besuchen Sie die Seite [Spendberichte](donation-reports.md) oder überprüfen Sie einzelne [Chargen](batches.md).
+Wenn Sie Spendendetails überprüfen müssen, bevor Sie Statements generieren, besuchen Sie die Seite [Spenderberichte](donation-reports.md) oder überprüfen Sie einzelne [Batches](batches.md).

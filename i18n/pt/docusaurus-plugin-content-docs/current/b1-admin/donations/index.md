@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Doações"
 ---
 
@@ -6,48 +6,48 @@ title: "Doações"
 
 <div class="article-intro">
 
-A seção Doações em B1 Admin fornece tudo que você precisa para gerenciar as dádivas de sua igreja. De registrar ofertas semanais a gerar declarações fiscais de final de ano, todas as suas ferramentas de doação estão organizadas em um lugar para que você possa se manter no topo das finanças de sua igreja.
+The Donations section in B1 Admin provides everything you need to manage your church's giving. From recording weekly offerings to generating year-end tax statements, all of your donation tools are organized in one place so you can stay on top of your church's finances.
 
 </div>
 
-## Sub-Seções
+## Subseções
 
-Você encontrará as seguintes páginas na seção Doações:
+You will find the following pages in the Donations section:
 
 ### Resumo
 
-A página **Resumo** oferece uma visão geral visual de toda atividade de dádiva. Ela exibe gráficos e relatórios filtrados para que você possa ver rapidamente tendências de dádiva em sua igreja. Consulte [Relatórios de Doações](donation-reports.md) para mais detalhes sobre o uso das ferramentas de resumo e relatório.
+The **Summary** page gives you a visual overview of all giving activity. It displays charts and filtered reports so you can quickly see donation trends across your church. See [Donation Reports](donation-reports.md) for more details on using the summary and report tools.
 
 ### Lotes
 
-**[Lotes](batches.md)** permite agrupar doações juntas -- por exemplo, todos os cheques e dinheiro coletados durante uma oferta de domingo. Cada lote rastreia sua contagem de doação e valor total para reconciliação fácil.
+**[Batches](batches.md)** let you group donations together -- for example, all the checks and cash collected during a Sunday offering. Each batch tracks its donation count and total amount for easy reconciliation.
 
 ### Fundos
 
-**[Fundos](funds.md)** categorizam suas doações por propósito. Exemplos comuns incluem Fundo Geral, Fundo de Construção e Missões. Você pode marcar cada fundo como dedutível de imposto ou não.
+**[Funds](funds.md)** categorize your donations by purpose. Common examples include General Fund, Building Fund, and Missions. You can mark each fund as tax-deductible or not.
 
-### Declarações
+### Statements
 
-A página **[Declarações](giving-statements.md)** gera declarações de dádiva de final de ano para seus doadores. Você pode baixar arquivos CSV individuais ou imprimir todas as declarações de uma vez.
+The **[Statements](giving-statements.md)** page generates year-end giving statements for your donors. You can download individual CSV files or print all statements at once.
 
-### Importação do Stripe
+### Stripe Import
 
-Se você aceita doações online através do Stripe, a ferramenta **[Importação do Stripe](stripe-import.md)** permite puxar essas transações para B1 Admin para que tudo esteja em um sistema.
+If you accept online donations through Stripe, the **[Stripe Import](stripe-import.md)** tool lets you pull those transactions into B1 Admin so everything is in one system.
 
-## Dádivas Online
+## Online Giving
 
-B1 Admin se integra com **Stripe** e **PayPal** para aceitar doações online. Uma vez configurado, membros podem dar através de seu site B1.church e essas doações aparecem automaticamente em seus registros. Consulte [Configuração de Dádivas Online](online-giving-setup.md) para começar.
+B1 Admin integrates with **Stripe** and **PayPal** for accepting online donations. Once configured, members can give through your B1.church site and those donations automatically appear in your records. See [Online Giving Setup](online-giving-setup.md) to get started.
 
 :::tip
-Se você é novo em doações em B1 Admin, comece por [configurar seus fundos](funds.md), depois [crie seu primeiro lote](batches.md) e [registre doações](recording-donations.md) nele.
+If you are new to donations in B1 Admin, start by [setting up your funds](funds.md), then [create your first batch](batches.md) and [record donations](recording-donations.md) into it.
 :::
 
-## Próximas Etapas
+## Next Steps
 
-- [Registrando Doações](recording-donations.md) -- insira doações em um lote
-- [Lotes de Doações](batches.md) -- organize doações em grupos
-- [Gerenciando Fundos](funds.md) -- configure e gerenciar categorias de dádivas
-- [Declarações de Dádivas](giving-statements.md) -- gere declarações fiscais para doadores
-- [Configuração de Dádivas Online](online-giving-setup.md) -- conecte Stripe ou PayPal
-- [Importação do Stripe](stripe-import.md) -- importe transações online
-- [Relatórios de Doações](donation-reports.md) -- visualize e filtre resumos de doações
+- [Recording Donations](recording-donations.md) -- enter donations into a batch
+- [Donation Batches](batches.md) -- organize donations into groups
+- [Managing Funds](funds.md) -- set up and manage giving categories
+- [Giving Statements](giving-statements.md) -- generate tax statements for donors
+- [Online Giving Setup](online-giving-setup.md) -- connect Stripe or PayPal
+- [Stripe Import](stripe-import.md) -- import online transactions
+- [Donation Reports](donation-reports.md) -- view and filter donation summaries

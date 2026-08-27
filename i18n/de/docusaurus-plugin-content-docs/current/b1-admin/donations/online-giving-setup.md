@@ -100,8 +100,25 @@ Die Kingdom Funding-Integration befindet sich derzeit in der Betaphase. Wenden S
 
 Sobald verbunden, sehen die Mitglieder auf der Spendenleiste einen Karten-/Bankschalter und können per Kreditkarte oder ACH-Überweisung spenden.
 
+## Paystack einrichten (Afrika)
+
+Stripe eröffnet keine Konten für Kirchen in Ghana, Nigeria, Kenia, Südafrika oder Côte d'Ivoire. [Paystack](https://paystack.com) tut dies und akzeptiert lokale Karten, **Mobile Money** (MTN MoMo, Vodafone Cash, AirtelTigo, M-PESA), Banküberweisung und USSD – Spender zahlen in Ihrer lokalen Währung (GHS, NGN, KES, ZAR, XOF).
+
+1. Registrieren Sie sich unter [paystack.com](https://paystack.com) mit dem Geschäftsregistrierungszertifikat und dem lokalen Bankkonto Ihrer Kirche und schließen Sie die Aktivierungsüberprüfung (Go-Live) von Paystack ab.
+2. Öffnen Sie in der Paystack-Verwaltung **Einstellungen → API-Schlüssel & Webhooks** und kopieren Sie den **öffentlichen Schlüssel** und **geheimen Schlüssel** (verwenden Sie die Live-Schlüssel, nicht die Test-Schlüssel).
+3. Gehen Sie in B1 Admin zu **Einstellungen**, öffnen Sie den Abschnitt **Spenden** und klicken Sie auf Bearbeiten.
+4. Setzen Sie den **Anbieter** auf **Paystack**, fügen Sie den öffentlichen Schlüssel und den geheimen Schlüssel ein und wählen Sie Ihre **Währung**.
+5. Kopieren Sie die **Webhook-URL**, die unter dem Anbieter angezeigt wird, gehen Sie zurück zur Paystack-Verwaltung (**Einstellungen → API-Schlüssel & Webhooks**) und fügen Sie sie in das Feld **Webhook-URL** ein. So werden wiederkehrende Geschenke und Mobile Money-Zahlungen erfasst.
+6. Speichern.
+
+Spender schließen ihre Zahlung in einem sicheren Paystack-Fenster ab und können dort Karte, Mobile Money oder Banküberweisung wählen. Hinweise:
+
+- **Wiederkehrende Geschenke** benötigen eine Karte; Mobile Money kann nicht automatisch erneut berechnet werden, daher erlaubt Paystack nur einmalige Mobile Money-Geschenke.
+- Paystack wiederkehrende Geschenke können von B1 aus gekündigt werden, aber nicht pausiert oder bearbeitet – Kündigung und Erstellung einer neuen, um den Betrag zu ändern.
+- Die **Bearbeitungsgebühren** geben standardmäßig die lokalen Kartensätze von Paystack für Ihre Währung wider; bearbeiten Sie sie, wenn Ihre ausgehandelten Sätze unterschiedlich sind.
+
 ## Nächste Schritte
 
 - Verwenden Sie [Stripe Import](stripe-import.md), um Online-Transaktionen in B1 Admin zu importieren, wenn diese nicht automatisch synchronisiert werden
 - Überprüfen Sie Ihre [Spendenberichte](donation-reports.md), um zu überprüfen, dass Online-Spenden korrekt angezeigt werden
-- Generieren Sie [Spendenquittungen](giving-statements.md), die sowohl Online- als auch Offline-Spenden enthalten
+- Generieren Sie [Spendendaten-Statements](giving-statements.md), die sowohl Online- als auch Offline-Spenden enthalten

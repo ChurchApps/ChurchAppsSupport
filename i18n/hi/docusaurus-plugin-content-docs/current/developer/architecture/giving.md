@@ -1,21 +1,21 @@
 ---
-title: "Giving आर्किटेक्चर"
+title: "Giving Architecture"
 ---
 
-# Giving आर्किटेक्चर
+# Giving Architecture
 
 <div class="article-intro">
 
-ChurchApps donations को एक gateway-rail मॉडल पर चलाता है: चर्च अपना खुद का Stripe (या PayPal, या Kingdom Funding) अकाउंट रखता है, और B1 कभी भी एक प्लेटफ़ॉर्म प्रोसेसर के रूप में पैसे के रास्ते में नहीं बैठता। कार्ड डेटा ब्राउज़र में टोकनाइज़ किया जाता है और कभी किसी ChurchApps सर्वर तक नहीं पहुँचता। यह पृष्ठ पूरे स्टैक को मैप करता है — `@churchapps/apphelper` में क्लाइंट-साइड प्रोवाइडर रजिस्ट्री, GivingApi गेटवे abstraction, donation डेटा मॉडल, और गेटवे वेबहुक्स डेटाबेस में वापस कैसे reconcile करते हैं।
+ChurchApps runs donations on a gateway-rail model: the church keeps its own Stripe (or PayPal, Kingdom Funding, or Paystack) account, and B1 never sits in the money path as a platform processor. Card data is tokenized in the browser and never reaches a ChurchApps server. This page maps the whole stack — the client-side provider registry in `@churchapps/apphelper`, the GivingApi gateway abstraction, the donation data model, and how gateway webhooks reconcile back into the database.
 
 </div>
 
-## अवलोकन
+## Overview
 
 ```
 ┌─────────────────────────────┐                   ┌───────────────────────────────────────┐
 │  B1App / B1Admin (browser)  │                   │  Payment gateway                      │
-│                             │                   │  (Stripe / PayPal / Kingdom Funding)  │
+│                             │                   │  (Stripe / PayPal / KF / Paystack)  │
 │  @churchapps/apphelper      │                   │                                       │
 │  ┌───────────────────────┐  │ card entry in the │  Stripe Elements · KF tokenizer ·     │
 │  │ Payment provider      │──┼──────────────────▶│  PayPal Hosted Fields                 │
@@ -38,123 +38,127 @@ ChurchApps donations को एक gateway-rail मॉडल पर चलात
                 MySQL (giving schema)
 ```
 
-पूरे स्टैक में तीन सिद्धांत लागू होते हैं:
+Three principles hold across the stack:
 
-1. **गेटवे कार्ड को रखता है।** हर प्रोवाइडर का entry widget ब्राउज़र में टोकनाइज़ करता है; API को कभी केवल एक token, nonce, या order id मिलता है।
-2. **एक abstraction, कई प्रोवाइडर।** ब्राउज़र एक रजिस्ट्री से `PaymentProvider` को resolve करता है; सर्वर एक factory से `IGatewayProvider` को resolve करता है। दोनों गेटवे रिकॉर्ड पर स्टोर किए गए एक ही normalized प्रोवाइडर नाम पर key करते हैं।
-3. **सेटलमेंट के लिए Webhooks सत्य का स्रोत हैं।** एक charge response optimistically रिकॉर्ड किया जाता है, लेकिन गेटवे का signed webhook ही है जो पूर्ण donation की पुष्टि करता है (या बनाता है), दोनों तरफ idempotency guards के साथ।
+1. **The gateway holds the card.** Every provider's entry widget tokenizes in the browser; the API only ever receives a token, nonce, or order id.
+2. **One abstraction, many providers.** The browser resolves a `PaymentProvider` from a registry; the server resolves an `IGatewayProvider` from a factory. Both key off the same normalized provider name stored on the gateway record.
+3. **Webhooks are the source of truth for settlement.** A charge response is recorded optimistically, but the gateway's signed webhook is what confirms (or creates) the completed donation, with idempotency guards on both sides.
 
-## क्लाइंट-साइड: पेमेंट प्रोवाइडर रजिस्ट्री (`@churchapps/apphelper`)
+## Client-side: the payment provider registry (`@churchapps/apphelper`)
 
-रजिस्ट्री `Packages/apphelper/src/donations/providers/` में रहती है, हर प्रोवाइडर के widgets और helpers अपने ही सबफ़ोल्डर के अंदर (`providers/stripe/`, `providers/paypal/`, `providers/kingdomfunding/`) — `providers/` के बाहर कुछ भी किसी प्रोवाइडर नाम पर शाखा नहीं करता। एक `PaymentProvider` (देखें `providers/types.ts`) एक गेटवे के लिए एक host app को जो कुछ चाहिए वह सब bundle करता है: एक `descriptor` (admin लेबल, समर्थित मुद्राएँ, fee फ़ील्ड, डिफ़ॉल्ट fee दरें, dashboard/signup URLs), एक `capabilities` फ़्लैग सेट (saved कार्ड, ACH, recurring, inline new-card entry, implicit save-on-tokenize), member entry के लिए React widgets (`MemberWrapper`/`MemberEntry`), guest giving (`GuestForm`), saved-method editing (`MethodEditForm`), और form-question payments (`FormPayment`), साथ ही `buildChargeRequest(ctx, token)` — वह एकमात्र जगह जहाँ charge payload का shape प्रति प्रोवाइडर अलग होता है। हर प्रोवाइडर का `MemberWrapper` गेटवे रिकॉर्ड की public key से अपना SDK लोड करता है, इसलिए host apps कभी कोई गेटवे SDK import नहीं करते (B1App और B1Admin के पास कोई `@stripe/*` dependency नहीं है)। `pickDefaultGateway(gateways, capability?)` केंद्रीकृत करता है कि एक चर्च के कौन से गेटवे का उपयोग एक सतह को करना चाहिए।
+The registry lives in `Packages/apphelper/src/donations/providers/`, with each provider's widgets and helpers under its own subfolder (`providers/stripe/`, `providers/paypal/`, `providers/kingdomfunding/`, `providers/paystack/`) — nothing outside `providers/` branches on a provider name. A `PaymentProvider` (see `providers/types.ts`) bundles everything a host app needs for one gateway: a `descriptor` (admin labels, supported currencies, fee fields, default fee rates, dashboard/signup URLs), a `capabilities` flag set (saved cards, ACH, recurring, inline new-card entry, implicit save-on-tokenize), the React widgets for member entry (`MemberWrapper`/`MemberEntry`), guest giving (`GuestForm`), saved-method editing (`MethodEditForm`), and form-question payments (`FormPayment`), plus `buildChargeRequest(ctx, token)` — the one place the charge payload shape differs per provider. Each provider's `MemberWrapper` loads its own SDK from the gateway record's public key, so host apps never import a gateway SDK (B1App and B1Admin have no `@stripe/*` dependency). `pickDefaultGateway(gateways, capability?)` centralizes which of a church's gateways a surface should use.
 
-`providers/registry.ts` built-ins को रखता है। इन्हें **value द्वारा संदर्भित किया जाता है**, module side-effect के माध्यम से रजिस्टर्ड नहीं, इसलिए एक bundler का tree-shaking कभी registration को drop नहीं कर सकता:
+`providers/registry.ts` holds the built-ins. They are **referenced by value**, not registered through a module side-effect, so a bundler's tree-shaking can never drop the registration:
 
 ```typescript
-for (const p of [StripeProvider, KingdomFundingProvider, PayPalProvider]) builtins.set(p.key, p);
+for (const p of [StripeProvider, KingdomFundingProvider, PayPalProvider, PaystackProvider]) builtins.set(p.key, p);
 ```
 
-| फ़ंक्शन | उद्देश्य |
+| Function | Purpose |
 |----------|---------|
-| `getPaymentProvider(name)` | normalized नाम से resolve करें; Stripe पर फ़ॉलबैक करता है ताकि एक misconfigured प्रोवाइडर कभी donor फ़ॉर्म को hard-crash न करे |
-| `registerPaymentProvider(p)` | runtime पर एक अतिरिक्त प्रोवाइडर रजिस्टर करें (एक host app के कस्टम गेटवे के लिए) |
-| `listPaymentProviders()` | built-ins + कस्टम को सूचीबद्ध करें — admin गेटवे dropdown बनाने के लिए उपयोग किया जाता है |
-| `hasPaymentProvider(name)` | membership जाँच |
+| `getPaymentProvider(name)` | Resolve by normalized name; falls back to Stripe so a misconfigured provider never hard-crashes the donor form |
+| `registerPaymentProvider(p)` | Register an extra provider at runtime (for a host app's custom gateway) |
+| `listPaymentProviders()` | Enumerate built-ins + custom — used to build the admin gateway dropdown |
+| `hasPaymentProvider(name)` | Membership check |
 
-**Built-in क्लाइंट प्रोवाइडर: Stripe, PayPal, Kingdom Funding।** B1App और B1Admin केवल रजिस्ट्री को *पढ़ते* हैं (`getPaymentProvider`, `listPaymentProviders`); कोई भी `registerPaymentProvider` को कॉल नहीं करता — registration apphelper के अंदर ही रहता है।
+**Built-in client providers: Stripe, PayPal, Kingdom Funding, Paystack.** B1App and B1Admin only *read* the registry (`getPaymentProvider`, `listPaymentProviders`); neither calls `registerPaymentProvider` — registration stays inside apphelper.
 
-हर प्रोवाइडर अलग तरीके से टोकनाइज़ करता है, लेकिन सभी कार्ड को B1 से बाहर रखते हैं:
+Each provider tokenizes differently, but all keep the card out of B1:
 
-| प्रोवाइडर | Entry widget | API को लौटाया गया Token |
+| Provider | Entry widget | Token returned to API |
 |----------|--------------|-----------------------|
-| Stripe | Stripe `Elements` `CardElement` → `stripe.createPaymentMethod(...)` | payment-method id (`pm_…`); Financial Connections / ACH SetupIntent के माध्यम से बैंक |
-| Kingdom Funding | गेटवे public key द्वारा keyed hosted tokenizer फ़ॉर्म | single-use nonce |
-| PayPal | PayPal Hosted Fields; `/donate/client-token` + `/donate/create-order` के माध्यम से बनाया गया सर्वर order | कैप्चर किया गया order id |
+| Stripe | Stripe `Elements` `CardElement` → `stripe.createPaymentMethod(...)` | payment-method id (`pm_…`); bank via `/paymentmethods/ach-setup-intent` — Financial Connections `us_bank_account` for USD gateways, Canadian PAD `acss_debit` (hosted mandate modal, mandate `default_for` invoices/subscriptions, one-off charges pass the mandate id) for CAD gateways |
+| Kingdom Funding | Hosted tokenizer form keyed by the gateway public key | single-use nonce |
+| PayPal | PayPal Hosted Fields; server order built via `/donate/client-token` + `/donate/create-order` | captured order id |
+| Paystack | Paystack Inline popup (`js.paystack.co/v2/inline.js`) — the popup itself takes the payment (card, mobile money, bank transfer, USSD) | paid transaction reference; saved methods are Paystack `AUTH_…` authorization codes |
 
-Stripe का `finalizeResult` donation को पूर्ण मानने से पहले ब्राउज़र में 3-D Secure / SCA चलाता है (`providers/stripe/stripe3DS.ts` → `stripe.confirmCardPayment`); shared फ़ॉर्म बस `provider.finalizeResult(result)` को यह जाने बिना कॉल करता है कि यह क्या करता है।
+Stripe's `finalizeResult` runs 3-D Secure / SCA in the browser (`providers/stripe/stripe3DS.ts` → `stripe.confirmCardPayment`) before the donation is considered complete; the shared form just calls `provider.finalizeResult(result)` with no knowledge of what it does.
 
-## सर्वर-साइड: गेटवे abstraction (GivingApi)
+## Server-side: the gateway abstraction (GivingApi)
 
-`/giving` मॉड्यूल (`Api/src/modules/giving`) REST सतह को expose करता है; गेटवे plumbing `Api/src/shared/helpers` में रहती है। `DonateController` कभी सीधे किसी गेटवे SDK से बात नहीं करता — यह `GatewayService` से होकर जाता है, जो `GatewayFactory` से सही `IGatewayProvider` को resolve करता है और इसे एक decrypted `GatewayConfig` सौंपता है।
+The `/giving` module (`Api/src/modules/giving`) exposes the REST surface; the gateway plumbing lives in `Api/src/shared/helpers`. `DonateController` never talks to a gateway SDK directly — it goes through `GatewayService`, which resolves the right `IGatewayProvider` from `GatewayFactory` and hands it a decrypted `GatewayConfig`.
 
 ```
 DonateController ─▶ GatewayService ─▶ GatewayFactory.getProvider(name) ─▶ IGatewayProvider
                         │ getGatewayConfig() decrypts privateKey / webhookKey
                         ▼
-             StripeGatewayProvider · PayPalGatewayProvider · KingdomFundingGatewayProvider · …
+             StripeGatewayProvider · PayPalGatewayProvider · KingdomFundingGatewayProvider · PaystackGatewayProvider · …
 ```
 
-`IGatewayProvider` (`shared/helpers/gateways/IGatewayProvider.ts`) वह कॉन्ट्रैक्ट है जिसे हर गेटवे लागू करता है — webhook लाइफ़साइकल (`createWebhookEndpoint`, `verifyWebhookSignature`, `classifyWebhookEvent`), पेमेंट (`prepareCharge`, `processCharge`, `prepareSubscription`, `createSubscription`, `finalizeSubscription`, `cancelSubscription`), fees (`calculateFees`), saved-method हैंडलिंग (`listNormalizedPaymentMethods`, `buildAttachOptions`, `buildLocalMethodRecord`, `deletePaymentMethod`, `verifyMethodOwnership`, `ownsPaymentMethodId`), और वैकल्पिक extras (customers, orders, SetupIntents, event replay)। हर प्रोवाइडर क्लास अपना खुद का `capabilities` matrix घोषित करता है (समर्थित मुद्राएँ, ACH, refunds, subscription requirements, transaction limits) — `GatewayService.getProviderCapabilities(provider)` इसे बस पढ़ता है — और `logsDonationsImmediately` जैसे फ़्लैग कंट्रोलर के व्यवहार को बिना कंट्रोलरों में किसी provider-name conditional के ड्राइव करते हैं।
+`IGatewayProvider` (`shared/helpers/gateways/IGatewayProvider.ts`) is the contract every gateway implements — webhook lifecycle (`createWebhookEndpoint`, `verifyWebhookSignature`, `classifyWebhookEvent`), payment (`prepareCharge`, `processCharge`, `prepareSubscription`, `createSubscription`, `finalizeSubscription`, `cancelSubscription`), fees (`calculateFees`), saved-method handling (`listNormalizedPaymentMethods`, `buildAttachOptions`, `buildLocalMethodRecord`, `deletePaymentMethod`, `verifyMethodOwnership`, `ownsPaymentMethodId`), and optional extras (customers, orders, SetupIntents, event replay). Each provider class declares its own `capabilities` matrix (supported currencies, ACH, refunds, subscription requirements, transaction limits) — `GatewayService.getProviderCapabilities(provider)` just reads it — and flags like `logsDonationsImmediately` drive controller behavior without any provider-name conditionals in the controllers.
 
-**`GatewayFactory` में रजिस्टर्ड सर्वर प्रोवाइडर:**
+**Server providers registered in `GatewayFactory`:**
 
-| प्रोवाइडर | उपलब्धता |
+| Provider | Availability |
 |----------|-------------|
-| Stripe | हमेशा चालू |
-| PayPal | हमेशा चालू |
-| Kingdom Funding | हमेशा चालू |
-| Square | `ENABLE_SQUARE` एनवायरनमेंट फ़्लैग के माध्यम से Opt-in |
-| ePayMints | `ENABLE_EPAYMINTS` एनवायरनमेंट फ़्लैग के माध्यम से Opt-in |
+| Stripe | Always on |
+| PayPal | Always on |
+| Kingdom Funding | Always on |
+| Paystack | Always on (Nigeria, Ghana, South Africa, Kenya, Côte d'Ivoire merchants; currencies NGN/GHS/ZAR/KES/XOF/USD) |
+| Square | Opt-in via the `ENABLE_SQUARE` environment flag |
+| ePayMints | Opt-in via the `ENABLE_EPAYMINTS` environment flag |
 
-जब `ENABLE_CUSTOM_GATEWAY_PROVIDERS` सेट हो तब कस्टम प्रोवाइडर runtime पर रजिस्टर किए जा सकते हैं; `AbstractExperimentalGatewayProvider` उनके लिए base क्लास है। प्रोवाइडर नामों को case-insensitively मैच किया जाता है।
+Paystack differs from the others in that money moves before GivingApi is involved: the popup charges the donor, `processCharge` is a `GET /transaction/verify/:reference`, and the first gift of a recurring schedule is logged from `finalizeSubscription` (verify → `POST /plan` → `POST /subscription` with `start_date` one interval out). Webhooks are signed with the secret key itself (`x-paystack-signature`, HMAC-SHA512 over the raw body) and Paystack has no webhook-management API, so the admin screen shows the URL for the church to paste into its dashboard. Renewal `charge.success` events carry no fund split; the provider recovers it from the donor's local `subscriptions`/`subscriptionFunds` rows. Only card authorizations are `reusable` — mobile money gifts are one-time only, so `createSubscription` refuses them. The demo data seeds a second church (Accra Community Church, `CHU00000002`) on a Paystack test-mode GHS gateway so the Paystack Playwright suite runs beside Grace's Stripe one.
 
-### गेटवे कॉन्फ़िगरेशन और सीक्रेट्स
+Custom providers can be registered at runtime when `ENABLE_CUSTOM_GATEWAY_PROVIDERS` is set; `AbstractExperimentalGatewayProvider` is the base class for those. Provider names are matched case-insensitively.
 
-एक admin `POST /giving/gateways` (`GatewayController`) के माध्यम से गेटवे क्रेडेंशियल्स सेव करता है। सेव पर कंट्रोलर persist करने से पहले `EncryptionHelper` के साथ private और webhook keys को encrypt करता है, फिर — किसी भी non-localhost होस्ट पर — चर्च के मौजूदा webhook को डिलीट करता है और `/giving/donate/webhook/{provider}?churchId=…` पर पॉइंट किया हुआ एक नया provision करता है। Public reads (`GET /giving/gateways/churchId/:churchId`, `/configured/:churchId`) केवल public keys लौटाते हैं।
+### Gateway configuration & secrets
 
-## डेटा मॉडल
+An admin saves gateway credentials via `POST /giving/gateways` (`GatewayController`). On save the controller encrypts the private and webhook keys with `EncryptionHelper` before persisting, then — on any non-localhost host — deletes the church's existing webhook and provisions a fresh one pointed at `/giving/donate/webhook/{provider}?churchId=…`. Public reads (`GET /giving/gateways/churchId/:churchId`, `/configured/:churchId`) return public keys only.
 
-Giving स्कीमा (`Api/src/modules/giving/db/DatabaseTypes.ts`, `models/` में models) Kysely के माध्यम से एक्सेस किया गया एक MySQL स्कीमा है:
+## Data model
 
-| टेबल | भूमिका |
+The giving schema (`Api/src/modules/giving/db/DatabaseTypes.ts`, models in `models/`) is a MySQL schema accessed through Kysely:
+
+| Table | Role |
 |-------|------|
-| `gateways` | प्रति-चर्च प्रोवाइडर कॉन्फ़िग: `provider`, `publicKey`, encrypted `privateKey`/`webhookKey`, `productId`, `payFees`, `currency`, `settings`, `environment` |
-| `funds` | Giving नामाकरण (`name`, `taxDeductible`, `productId`) |
-| `donationBatches` | Entry/reporting के लिए ग्रुपिंग (`name`, `batchDate`) |
-| `donations` | एक gift: `batchId`, `personId`, `donationDate`, `amount`, `currency`, `method`, `status` (`pending`/`complete`/`failed`), `transactionId` |
-| `fundDonations` | एक या अधिक funds में एक donation का आवंटन (`donationId`, `fundId`, `amount`) |
-| `subscriptions` | आवर्ती gift; `id` गेटवे की subscription id है, `personId`, `customerId`, `gatewayId` से लिंक्ड |
-| `subscriptionFunds` | एक आवर्ती gift के लिए fund split |
-| `customers` | एक `personId` को उसके गेटवे customer id से लिंक करता है, प्रति `provider` |
-| `gatewayPaymentMethods` | Saved कार्ड/बैंक: `customerId`, `externalId`, `methodType`, `displayName`, `metadata` |
-| `eventLogs` | Webhook/event audit trail और dedup key (`provider`, `providerId`, `eventType`, `status`, `resolved`) |
-| `campaigns` / `pledges` | एक fund से जुड़ी Pledge campaigns, और हर व्यक्ति की pledged राशि |
+| `gateways` | Per-church provider config: `provider`, `publicKey`, encrypted `privateKey`/`webhookKey`, `productId`, `payFees`, `currency`, `settings`, `environment` |
+| `funds` | Giving designations (`name`, `taxDeductible`, `productId`) |
+| `donationBatches` | Grouping for entry/reporting (`name`, `batchDate`) |
+| `donations` | One gift: `batchId`, `personId`, `donationDate`, `amount`, `currency`, `method`, `status` (`pending`/`complete`/`failed`), `transactionId` |
+| `fundDonations` | Allocation of a donation across one or more funds (`donationId`, `fundId`, `amount`) |
+| `subscriptions` | Recurring gift; `id` is the gateway's subscription id, linked to `personId`, `customerId`, `gatewayId` |
+| `subscriptionFunds` | Fund split for a recurring gift |
+| `customers` | Links a `personId` to its gateway customer id, per `provider` |
+| `gatewayPaymentMethods` | Saved cards/banks: `customerId`, `externalId`, `methodType`, `displayName`, `metadata` |
+| `eventLogs` | Webhook/event audit trail and dedup key (`provider`, `providerId`, `eventType`, `status`, `resolved`) |
+| `campaigns` / `pledges` | Pledge campaigns tied to a fund, and each person's pledged amount |
 
-एक donation `fundDonations` के माध्यम से funds में split किया जाता है — donation कुल राशि carry करता है, हर `fundDonation` एक हिस्सा carry करता है। `donations.currency` और `gateways.currency` ISO मुद्रा carry करते हैं; हर प्रोवाइडर अपनी `supportedCurrencies` advertise करता है, और राशियों को `CurrencyHelper.formatCurrencyWithLocale` के साथ फ़ॉर्मैट किया जाता है।
+A donation is split across funds through `fundDonations` — the donation carries the total, each `fundDonation` carries a slice. `donations.currency` and `gateways.currency` carry the ISO currency; each provider advertises its `supportedCurrencies`, and amounts are formatted with `CurrencyHelper.formatCurrencyWithLocale`.
 
-## End-to-end फ़्लो
+## End-to-end flows
 
-### Member एक-बार और आवर्ती (B1App)
+### Member one-time and recurring (B1App)
 
-Authenticated donate स्क्रीन (`B1App/src/app/[sdSlug]/mobile/components/screens/DonatePage.tsx`) तीन apphelper components को compose करती है: `MultiGatewayDonationForm`, `PaymentMethods`, और `RecurringDonations`। B1App चारों ओर की data-loading करता है — `GET /donations/my`, `/gateways`, `/paymentmethods/personid/:id`, `/customers/:id/subscriptions` — और गेटवे सूची को आगे पास करता है; resolved प्रोवाइडर अपना SDK गेटवे की public key से लोड करता है। Charge खुद apphelper के अंदर होता है: resolved प्रोवाइडर (नए या saved) method को टोकनाइज़ करता है, फिर एक बार के gift के लिए `/giving/donate/charge` को या आवर्ती के लिए `/giving/donate/subscribe` को post करता है। आवर्ती gifts एक `subscriptions` रो प्लस `subscriptionFunds` बनाते हैं और शेड्यूल को गेटवे को सौंपते हैं (Stripe Subscriptions, PayPal Billing Plans, या एक KF आवर्ती शेड्यूल)।
+The authenticated donate screen (`B1App/src/app/[sdSlug]/mobile/components/screens/DonatePage.tsx`) composes three apphelper components: `MultiGatewayDonationForm`, `PaymentMethods`, and `RecurringDonations`. B1App does the surrounding data-loading — `GET /donations/my`, `/gateways`, `/paymentmethods/personid/:id`, `/customers/:id/subscriptions` — and passes the gateway list through; the resolved provider loads its own SDK from the gateway's public key. The charge itself happens inside apphelper: the resolved provider tokenizes the (new or saved) method, then posts to `/giving/donate/charge` for a one-time gift or `/giving/donate/subscribe` for a recurring one. Recurring gifts create a `subscriptions` row plus `subscriptionFunds` and hand the schedule to the gateway (Stripe Subscriptions, PayPal Billing Plans, or a KF recurring schedule).
 
 ### Guest / anonymous giving
 
-Public donate page (`B1App/src/app/[sdSlug]/(public)/[pageSlug]/components/DonatePage.tsx`) और "give now" panel `@churchapps/apphelper/website` से `NonAuthDonationWrapper` को render करते हैं, जो reCAPTCHA को inject करता है और गेटवे के Elements context को प्रोवाइडर के `GuestForm` के चारों ओर। Guests को कोई login, कोई saved methods, और कोई history नहीं मिलती। फ़्लो `GET /giving/funds/churchId/:id` और `GET /giving/donate/gateways/:churchId` (केवल public keys) को fetch करता है, विज़िटर को `POST /giving/donate/captcha-verify` से verify करता है, ब्राउज़र में टोकनाइज़ करता है, और `/giving/donate/charge` (या `/subscribe`) को post करता है। Guest ACH anonymous `POST /giving/paymentmethods/ach-setup-intent-anon` का उपयोग करता है।
+The public donate page (`B1App/src/app/[sdSlug]/(public)/[pageSlug]/components/DonatePage.tsx`) and the "give now" panel render `NonAuthDonationWrapper` from `@churchapps/apphelper/website`, which injects reCAPTCHA and the gateway's Elements context around the provider's `GuestForm`. Guests get no login, no saved methods, and no history. The flow fetches `GET /giving/funds/churchId/:id` and `GET /giving/donate/gateways/:churchId` (public keys only), verifies the visitor with `POST /giving/donate/captcha-verify`, tokenizes in the browser, and posts to `/giving/donate/charge` (or `/subscribe`). Guest ACH uses the anonymous `POST /giving/paymentmethods/ach-setup-intent-anon`.
 
-### Admin रिकॉर्डिंग और Stripe import (B1Admin)
+### Admin recording and Stripe import (B1Admin)
 
-B1Admin donations सेक्शन (`B1Admin/src/donations/`) वह जगह है जहाँ finance टीमें काम करती हैं। Batch entry (`components/BulkDonationEntry.tsx`) `/giving/donations` फिर `/giving/funddonations` को post करके cash/check/in-kind gifts रिकॉर्ड करता है — कोई गेटवे शामिल नहीं। Funds, batches, campaigns, और statements हर एक अपने `/giving/*` CRUD routes से मैप होते हैं। Member-style donate panel (`B1Admin/src/donationComponents/`) B1App जैसे same apphelper components को दोबारा उपयोग करता है।
+The B1Admin donations section (`B1Admin/src/donations/`) is where finance teams work. Batch entry (`components/BulkDonationEntry.tsx`) records cash/check/in-kind gifts by posting `/giving/donations` then `/giving/funddonations` — no gateway involved. Funds, batches, campaigns, and statements each map to their `/giving/*` CRUD routes. The member-style donate panel (`B1Admin/src/donationComponents/`) reuses the same apphelper components as B1App.
 
-Stripe import (`B1Admin/src/donations/StripeImportPage.tsx`) B1 के बाहर की गई gifts को backfill करता है: यह preview के लिए `dryRun: true` के साथ `POST /giving/donate/replay-stripe-events` को कॉल करता है, फिर import करने के लिए `dryRun: false` के साथ। सर्वर date range के लिए Stripe events को सूचीबद्ध करता है और जो कुछ पहले से रिकॉर्ड हो चुका है उसे skip करता है — पहले `eventLogs` provider id से मैच किया जाता है, फिर `DonationRepo.findMatchingDonation` (amount + date + person) से ताकि एक re-run कभी double-import न करे।
+Stripe import (`B1Admin/src/donations/StripeImportPage.tsx`) backfills gifts made outside B1: it calls `POST /giving/donate/replay-stripe-events` with `dryRun: true` for a preview, then `dryRun: false` to import. The server lists Stripe events for the date range and skips anything already recorded — matched first by `eventLogs` provider id, then by `DonationRepo.findMatchingDonation` (amount + date + person) so a re-run never double-imports.
 
-## Webhooks और reconciliation
+## Webhooks and reconciliation
 
-Settled payments और subscription state changes `POST /giving/donate/webhook/:provider?churchId=…` (`DonateController.webhook`) पर आते हैं। Processing जानबूझकर idempotent है:
+Settled payments and subscription state changes arrive at `POST /giving/donate/webhook/:provider?churchId=…` (`DonateController.webhook`). Processing is deliberately idempotent:
 
-1. **Verify** — `GatewayService.verifyWebhook` प्रोवाइडर की signature जाँच को delegate करता है; एक विफल signature 401 लौटाती है। जिन events को processing की ज़रूरत नहीं होती वे 200 के साथ short-circuit हो जाती हैं।
-2. **Event को dedup करें** — `EventLogRepo.loadByProviderId` एक ऐसे webhook को skip करता है जो पहले से `eventLogs` में रिकॉर्ड है।
-3. **Donation को dedup करें** — कुछ भी बनाने से पहले, `DonationRepo.loadByTransactionId` को हर उस candidate id के विरुद्ध चेक किया जाता है जो payload carry कर सकती है। यह duplicate deliveries, multi-stage ACH events (pending → settled), और उस स्थिति को absorb करता है जहाँ `/donate/charge` ने पहले ही gift को optimistically लॉग कर दिया था।
-4. **Apply** — प्रोवाइडर का `classifyWebhookEvent(eventType)` बताता है कि event का क्या मतलब है (`donation` pending/complete, `cancel-subscription`, या `ignore`); पूर्ण payments एक `complete` donation बनाते हैं (या एक मौजूदा `pending` को promote करते हैं), ACH-style events settlement तक `pending` के रूप में रहते हैं, और cancellation events local `subscriptions` रो को डिलीट करते हैं। कंट्रोलर कभी प्रोवाइडर-specific event नामों की जाँच नहीं करता।
+1. **Verify** — `GatewayService.verifyWebhook` delegates to the provider's signature check; a failed signature returns 401. Events that don't need processing short-circuit with 200.
+2. **Dedup the event** — `EventLogRepo.loadByProviderId` skips a webhook already recorded in `eventLogs`.
+3. **Dedup the donation** — before creating anything, `DonationRepo.loadByTransactionId` is checked against every candidate id the payload might carry. This absorbs duplicate deliveries, multi-stage ACH events (pending → settled), and the case where `/donate/charge` already logged the gift optimistically.
+4. **Apply** — the provider's `classifyWebhookEvent(eventType)` says what the event means (`donation` pending/complete, `cancel-subscription`, or `ignore`); completed payments create a `complete` donation (or promote an existing `pending` one), ACH-style events land as `pending` until settlement, and cancellation events delete the local `subscriptions` row. The controller never inspects provider-specific event names.
 
-`logsDonationsImmediately` वाले प्रोवाइडर (PayPal, Kingdom Funding) के charges `/charge` response से लॉग होते हैं (happy path के लिए कोई webhook round-trip आवश्यक नहीं), जबकि Stripe `payment_intent.succeeded` / `invoice.paid` और ACH `payment_intent.processing` पर निर्भर करता है। Fee handling (`POST /giving/donate/fee`, `payFees` गेटवे फ़्लैग, और हर प्रोवाइडर की `calculateFees`) donor साइड पर "fees को cover करें" gross-up की गणना करती है — B1 कोई प्लेटफ़ॉर्म कट नहीं लेता, इसलिए कभी कोई application fee नहीं जोड़ी जाती।
+Providers with `logsDonationsImmediately` (PayPal, Kingdom Funding, Paystack) have their charges logged from the `/charge` response (no webhook round-trip required for the happy path), while Stripe relies on `payment_intent.succeeded` / `invoice.paid` and ACH `payment_intent.processing`. Fee handling (`POST /giving/donate/fee`, the `payFees` gateway flag, and each provider's `calculateFees`) computes the "cover the fees" gross-up on the donor side — B1 takes no platform cut, so no application fee is ever added.
 
 :::info
-Charge और webhook पाथ एक ही `donations` / `fundDonations` rows लिखते हैं। `transactionId` वह join key है जो एक optimistic charge log और उसके बाद के webhook को एक gift के लिए दो donations बनाने से रोकता है।
+The charge and webhook paths write the same `donations` / `fundDonations` rows. The `transactionId` is the join key that keeps an optimistic charge log and its later webhook from producing two donations for one gift.
 :::
 
-## संबंधित पृष्ठ
+## Related Pages
 
-- [Giving Endpoints](../api/endpoints/giving) — donations, funds, batches, gateways, subscriptions, payment methods, और webhooks के लिए पूर्ण REST सतह
-- [AppHelper](../shared-libraries/app-helper) — वह npm पैकेज जो payment provider रजिस्ट्री और donation components को शिप करता है
-- [Module Structure](../api/module-structure) — GivingApi मॉड्यूल को सर्वर-साइड कैसे व्यवस्थित किया जाता है
+- [Giving Endpoints](../api/endpoints/giving) — full REST surface for donations, funds, batches, gateways, subscriptions, payment methods, and webhooks
+- [AppHelper](../shared-libraries/app-helper) — the npm package that ships the payment provider registry and donation components
+- [Module Structure](../api/module-structure) — how the GivingApi module is organized server-side

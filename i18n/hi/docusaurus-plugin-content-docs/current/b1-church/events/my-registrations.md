@@ -2,67 +2,67 @@
 title: "मेरे पंजीकरण"
 ---
 
-# मेरे पंजीकरण
+# My Registrations
 
 <div class="article-intro">
 
-मेंबर पोर्टल में **Registrations** पेज उन हर इवेंट के लिए आपका आधार है जिनके लिए आपने साइन अप किया है। यहां से आप अपनी स्थिति जांच सकते हैं, बकाया राशि का भुगतान कर सकते हैं, कौन आ रहा है और आपने क्या ऑर्डर किया है इसे संपादित कर सकते हैं, या किसी पंजीकरण को पूरी तरह से रद्द कर सकते हैं।
+The **Registrations** page in the member portal is your home base for every event you have signed up for. From here you can check your status, pay an outstanding balance, edit who is coming and what you ordered, or cancel a registration entirely.
 
 </div>
 
 <div class="prereqs">
-<h4>शुरू करने से पहले</h4>
+<h4>Before You Begin</h4>
 
-- आपको [लॉग इन](../getting-started/logging-in.md) होना चाहिए — अतिथि पंजीकरण यहां दिखाई नहीं देते
-- आपके पास कम से कम एक इवेंट पंजीकरण होना चाहिए। देखें [इवेंट्स के लिए पंजीकरण](./registering)।
+- You must be [logged in](../getting-started/logging-in.md) — guest registrations do not appear here
+- You need at least one event registration. See [Registering for Events](./registering).
 
 </div>
 
-## अपने पंजीकरण देखना
+## Viewing Your Registrations
 
-मेंबर पोर्टल में **Registrations** खोलें। प्रत्येक पंजीकरण एक कार्ड के रूप में दिखाई देता है जो दिखाता है:
+Open **Registrations** in the member portal. Each registration appears as a card showing:
 
-- **इवेंट शीर्षक और तिथि**
-- एक **status** पिल — **confirmed**, **pending**, **waitlisted**, या **cancelled**
-- आपने जिन **members** के लिए पंजीकरण किया
-- भुगतान पंक्ति — या तो भुगतान की गई कुल राशि, या यदि पैसा अभी भी बकाया है तो **Balance due**
+- The **event title and date**
+- A **status** pill — **confirmed**, **pending**, **waitlisted**, or **cancelled**
+- The **members** you registered
+- The payment line — either the paid total, or **Balance due** if money is still owed
 
-यदि आपने अभी तक किसी चीज़ के लिए पंजीकरण नहीं किया है, तो आपको "No registrations yet." दिखाई देगा।
+If you haven't registered for anything yet, you'll see "No registrations yet."
 
-## भुगतान पूरा करना
+## Completing a Payment
 
-बकाया राशि वाले किसी भी पंजीकरण पर एक **Complete payment** बटन दिखाई देता है — सबसे अधिक तब जब आपको प्रतीक्षा सूची से प्रोमोट किया जाता है, या जब किसी स्टाफ संपादन ने आपकी कुल राशि बदल दी हो।
+A **Complete payment** button appears on any registration with an outstanding balance — most commonly after you are promoted from a waitlist, or when a staff edit changed your total.
 
-1. **Complete payment** पर क्लिक करें।
-2. ऑर्डर सारांश की समीक्षा करें, एक सहेजा गया कार्ड चुनें या एक नया दर्ज करें, और भुगतान करें।
-3. एक बार बकाया राशि का भुगतान हो जाने पर, पंजीकरण **confirmed** बन जाता है।
+1. Click **Complete payment**.
+2. Review the order summary, choose a saved card or enter a new one, and pay.
+3. Once the balance is paid, the registration becomes **confirmed**.
 
 :::tip
-जब आपके लिए एक प्रतीक्षा सूची स्थान खुलता है, तो आपके चर्च द्वारा भेजा गया ईमेल इस भुगतान चरण के लिए सीधा लिंक शामिल करता है।
+When a waitlist spot opens for you, the email your church sends includes a link straight to this payment step.
 :::
 
-## एक पंजीकरण संपादित करना
+## Editing a Registration
 
-योजनाएं बदलती हैं। **Edit Registration** डायलॉग खोलने के लिए किसी पंजीकरण पर **Edit** पर क्लिक करें, जहां आप कर सकते हैं:
+Plans change. Click **Edit** on a registration to open the **Edit Registration** dialog, where you can:
 
-- अपना **contact details** अपडेट करना
-- प्रत्येक सदस्य का **name** और **attendee type** बदलना
-- **selection quantities** समायोजित करना (टी-शर्ट या भोजन जैसे ऐड-ऑन)
+- Update your **contact details**
+- Change each member's **name** and **attendee type**
+- Adjust **selection quantities** (add-ons like T-shirts or meals)
 
-संपादन करते समय क्षमता अभी भी लागू होती है — यदि कोई उपस्थित प्रकार या विकल्प बिक चुका है, तो आपसे दूसरा चुनने के लिए कहा जाएगा। सहेजने से आपकी कुल राशि की फिर से गणना होती है; यदि बदलाव के बाद बकाया राशि रह जाती है, तो कार्ड पर एक **Complete payment** बटन दिखाई देता है।
+Capacity still applies when you edit — if an attendee type or option has since sold out, you'll be asked to choose another. Saving recalculates your total; if the change leaves a balance due, a **Complete payment** button appears on the card.
 
 :::info
-संपादन कभी भी स्वचालित रूप से आपके कार्ड से शुल्क नहीं लेता। यदि आपकी नई कुल राशि अधिक है, तो **Complete payment** के साथ अंतर का भुगतान करें; यदि यह कम है, तो रिफंड के बारे में अपने चर्च से संपर्क करें — रिफंड चर्च स्टाफ द्वारा उनके भुगतान प्रदाता के माध्यम से संभाला जाता है।
+Editing never charges your card automatically. If your new total is higher, pay the difference with **Complete payment**; if it is lower, contact your church about a refund — refunds are handled by church staff through their payment provider.
 :::
 
-## एक पंजीकरण रद्द करना
+## Canceling a Registration
 
-1. कार्ड पर **Cancel Registration** पर क्लिक करें।
-2. डायलॉग में पुष्टि करें — रद्दीकरण को पूर्ववत नहीं किया जा सकता।
+1. Click **Cancel Registration** on the card.
+2. Confirm in the dialog — cancellation cannot be undone.
 
-आपका स्थान तुरंत जारी कर दिया जाता है। यदि इवेंट में प्रतीक्षा सूची है, तो लाइन में अगले व्यक्ति को स्वचालित रूप से प्रोमोट किया जाता है। आपके द्वारा किया गया कोई भी भुगतान स्वचालित रूप से वापस नहीं किया जाता — रिफंड के बारे में अपने चर्च कार्यालय से संपर्क करें।
+Your spot is released immediately. If the event has a waitlist, the next person in line is promoted automatically. Any payment you made is not automatically refunded — contact your church office about refunds.
 
-## संबंधित लेख
+## Related Articles
 
-- [इवेंट्स के लिए पंजीकरण](./registering) -- साइनअप प्रक्रिया, भुगतान और प्रतीक्षा सूची सहित
-- [इवेंट्स अवलोकन](./index.md) -- आगामी इवेंट्स ब्राउज़ करें
+- [Registering for Events](./registering) -- The signup process, including payment and waitlists
+- [Events Overview](./index.md) -- Browse upcoming events

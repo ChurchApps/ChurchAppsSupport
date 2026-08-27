@@ -1,59 +1,59 @@
 ---
-title: "Pianificazione di Lezioni"
+title: "Programmazione Lezioni"
 ---
 
-# Pianificazione di Lezioni
+# Scheduling Lessons
 
 <div class="article-intro">
 
-Una volta che le tue aule sono configurate, il passo successivo è pianificare le lezioni in modo che i tuoi volontari sappiano esattamente cosa insegnare e quando. La pianificazione collega il contenuto della lezione da Lessons.church al calendario della tua aula.
+Once your classrooms are set up, the Avanti step is scheduling lessons so your Volontari know exactly what Per teach and when. Scheduling connects the lesson content from Lessons.church Per your classroom calendar.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- [Configura almeno un'aula](./setting-up-classrooms.md) nel portale
-- [Sfoglia la biblioteca di contenuti](../browsing/index.md) per trovare un programma e uno studio che desideri insegnare
+- [Set up at least one classroom](./setting-up-classrooms.md) in the portal
+- [Browse the content library](../browsing/index.md) Per Trova a program and study you want Per teach
 
 </div>
 
-## Visualizzazione di un Programma di Aula
+## Viewing a Classroom Programma
 
-1. Accedi e passa al tuo **Portale**.
-2. Fai clic sull'**aula** che desideri pianificare.
-3. La vista del programma visualizza le **ultime 4 lezioni passate** e le **prossime 4 lezioni in arrivo**.
+1. Log in and navigate Per your **Portal**.
+2. Fai clic on the **classroom** you want Per schedule.
+3. The schedule Visualizza displays the **last 4 past lessons** and the **Avanti 4 upcoming lessons**. This gives you a quick look at what was recently taught and what is coming up.
 
-## Aggiunta di una Lezione al Programma
+## Adding a Lezione Per the Programma
 
-1. Dalla vista del programma dell'aula, fai clic per aggiungere una nuova lezione.
-2. Seleziona la **data** per la lezione.
-3. Scegli il **programma** che desideri insegnare.
-4. Seleziona lo **studio** all'interno di quel programma.
-5. Scegli la **lezione** specifica.
-6. Scegli il **luogo** appropriato per questa aula. I luoghi rappresentano versioni specifiche del gruppo di età del contenuto della lezione.
-7. Salva la lezione pianificata.
+1. From the classroom schedule Visualizza, Fai clic Per Aggiungi a new lesson.
+2. Seleziona the **Data** for the lesson.
+3. Scegli the **program** you want Per teach from (for example, "Bible Stories for Kids").
+4. Seleziona the **study** within that program (for example, "Creation and Early Stories").
+5. Pick the specific **lesson** you want Per schedule.
+6. Scegli the appropriate **venue** for this classroom. Venues represent age-Gruppo-specific versions of the lesson content (for example, "Preschool" or "Elementary"). Picking the right venue ensures your Volontari see content tailored Per their classroom's age Gruppo.
+7. Salva the scheduled lesson.
 
-La lezione ora apparirà nel programma dell'aula per quella data.
+The lesson will now appear on the classroom's schedule for that Data.
 
 :::info
-I programmi, gli studi e le lezioni sono la gerarchia di contenuto su Lessons.church. Un programma contiene più studi e ogni studio contiene lezioni individuali.
+Programs, studies, and lessons are the content hierarchy on Lessons.church. A program contains multiple studies, and each study contains individual lessons. Venues provide age-specific variations of the same lesson. See [Programs and Studies](../browsing/programs-and-studies.md) for a full explanation.
 :::
 
-## Come I Volontari Usano Il Programma
+## How Volontari Use the Programma
 
-Una volta che hai pianificato le lezioni, i tuoi volontari possono aprire il portale, selezionare la loro aula e immediatamente vedere cosa è in arrivo. Possono rivedere il contenuto della lezione in anticipo e arrivare preparati.
+Once you have scheduled lessons, your Volontari can Apri the portal, Seleziona their classroom, and immediately see what is coming up. They can review the lesson content ahead of Ora, Scarica any materials they need, and arrive prepared. No more guesswork about what Per teach Avanti.
 
-## Suggerimenti per la Pianificazione
+## Suggerimenti per Scheduling
 
-- **Pianifica in anticipo** -- Le chiese pianificano le lezioni dell'aula in B1 Admin.
-- **Mantieni la coerenza** -- Seguire una serie di programmi sequenzialmente aiuta i bambini a costruire su quello che hanno imparato la settimana precedente.
-- **Controlla la cronologia** -- Usa l'elenco delle lezioni passate per assicurarti di non ripetere accidentalmente il contenuto.
+- **Plan ahead** -- Churches schedule classroom lessons in [B1 Admin](../../b1-admin/serving/scheduling-lessons.md), including applying a published Anno plan.
+- **Stay consistent** -- Following a program sequentially helps kids build on what they learned the previous week.
+- **Check the history** -- Use the past lesson list Per make sure you are not accidentally repeating content.
 
 :::warning
-Assicurati di selezionare il luogo corretto per il gruppo di età della tua aula. Scegliere il luogo sbagliato significa che i tuoi volontari vedranno contenuto progettato per un livello di età diverso.
+Make sure Per Seleziona the correct venue for your classroom's age Gruppo. Choosing the wrong venue means your Volontari will see content designed for a different age level.
 :::
 
-## Cosa c'è Dopo
+## Prossimo Passo
 
-Dopo aver pianificato le lezioni, potresti desiderare di [personalizzare il contenuto della lezione](../customization/customizing-lessons.md) per aule specifiche.
+After scheduling lessons, you may want Per [customize the lesson content](../customization/customizing-lessons.md) for specific classrooms Per match your teaching style and age Gruppo needs. When it is Ora Per teach, learn about [Presenting](../presenting/index.md) Per deliver lessons effectively.

@@ -6,11 +6,11 @@ title: "Audit Log & Undoable Batches"
 
 <div class="article-intro">
 
-Api में हर यूज़र-initiated mutation रिकॉर्ड की जाती है — कौन, क्या, कब, और कहाँ से — सभी मॉड्यूल में, बिना किसी प्रति-कंट्रोलर वायरिंग के। उस ledger के ऊपर एक बैच लेयर बैठती है: एक import या bulk action को एक बैच के रूप में टैग किया जा सकता है और बाद में **undo** किया जा सकता है, row-by-row, Planning-Center की शैली में। दोनों membership डेटाबेस में एक ही `auditLogs` टेबल में रहते हैं और पूरी तरह से एक choke point, `BaseController.actionWrapper` से संचालित होते हैं। यह पृष्ठ मैप करता है कि क्या audit किया जाता है, डेटा कहाँ रहता है, वे performance trade-offs जो इसे आकार देते हैं, और undo बिना cross-database transactions के एक बैच को सुरक्षित रूप से कैसे उलटता है।
+Every user-initiated mutation in the Api is recorded — who, what, when, and from where — across all modules, without any per-controller wiring. On top of that ledger sits a batch layer: an import or bulk action can be tagged as a batch and later **undone** row-by-row, Planning-Center-style. Both live in a single `auditLogs` table in the membership database and are driven entirely from one choke point, `BaseController.actionWrapper`. This page maps what gets audited, where the data lives, the performance trade-offs that shape it, and how undo reverses a batch safely without cross-database transactions.
 
 </div>
 
-## अवलोकन
+## Overview
 
 ```
 every mutating request (POST/PUT/PATCH/DELETE)
@@ -31,119 +31,119 @@ BaseController.actionWrapper ──▶ derive {module, entityType, category, act
                                           conflict guard → restore / delete / re-insert
 ```
 
-दो structural facts नीचे की हर चीज़ को चलाते हैं:
+Two structural facts drive everything below:
 
-1. **कंट्रोलर लेयर ही एकमात्र जगह है जो actor को जानती है।** Repositories कभी `AuthenticatedUser` नहीं देखतीं; केवल कंट्रोलर `au` रखते हैं। हर मॉड्यूल के कंट्रोलर पहले से ही `BaseController.actionWrapper` से होकर गुज़रते हैं, इसलिए यही वह जगह है जहाँ auditing hook होती है — कहीं भी repo signatures नहीं बदलते।
-2. **एक टेबल सभी मॉड्यूल की सेवा करती है।** Giving, attendance, content आदि के लिए audit rows सभी `RepoManager.getRepos("membership")` के माध्यम से membership DB की `auditLogs` में लिखी जाती हैं, यहाँ तक कि एक non-membership कंट्रोलर से भी। "आज Jane ने जो कुछ बदला" एक ही query रहता है।
+1. **The controller layer is the only place that knows the actor.** Repositories never see `AuthenticatedUser`; only controllers hold `au`. Every module's controllers already pass through `BaseController.actionWrapper`, so that is where auditing hooks in — no repo signatures change anywhere.
+2. **One table serves all modules.** Audit rows for giving, attendance, content, etc. are all written into the membership DB's `auditLogs` via `RepoManager.getRepos("membership")`, even from a non-membership controller. "Everything Jane changed today" stays a single query.
 
-## क्या audit किया जाता है
+## What gets audited
 
-Auditing **हर route पर हर mutating verb के लिए डिफ़ॉल्ट-चालू है**। `actionWrapper` शून्य प्रति-route कॉन्फ़िगरेशन के साथ रिक्वेस्ट से audit फ़ील्ड derive करता है:
+Auditing is **default-on for every mutating verb on every route**. `actionWrapper` derives the audit fields from the request with zero per-route config:
 
-| फ़ील्ड | कहाँ से derived |
+| Field | Derived from |
 |-------|--------------|
-| `module` | `this.moduleName` (मालिक मॉड्यूल) |
-| `entityType` | `req.baseUrl` का singularized अंतिम खंड (जैसे `/membership/people` → `person`) |
-| `category` | डिफ़ॉल्ट रूप से `entityType` |
-| `action` | `POST /` के लिए `${entityType}_saved`, `DELETE /:id` के लिए `${entityType}_deleted`, अन्यथा `${entityType}_${method}:${routePath}` ताकि non-CRUD sub-routes (जैसे `task_post:/:id/move`) स्वचालित रूप से कैप्चर हों |
+| `module` | `this.moduleName` (the owning module) |
+| `entityType` | singularized last segment of `req.baseUrl` (e.g. `/membership/people` → `person`) |
+| `category` | defaults to `entityType` |
+| `action` | `${entityType}_saved` for `POST /`, `${entityType}_deleted` for `DELETE /:id`, else `${entityType}_${method}:${routePath}` so non-CRUD sub-routes (e.g. `task_post:/:id/move`) are captured automatically |
 
-`BaseController.AUDIT_REGISTRY` **केवल overrides और opt-outs के लिए है** — यह एक allowlist नहीं है। एक route वहाँ अपनी category/entityType बदलने के लिए, `{ dbModule, table }` घोषित करने के लिए (जो इसे बैच- और undo-सक्षम बनाता है), इसे `sensitive` के रूप में चिह्नित करने के लिए (anonymous mutations को audit करना), या इसे `optOut: true` से बंद करने के लिए दिखाई देता है।
+`BaseController.AUDIT_REGISTRY` is **only for overrides and opt-outs** — it is not an allowlist. A route appears there to rename its category/entityType, to declare `{ dbModule, table }` (which makes it batch- and undo-capable), to mark it `sensitive` (audit anonymous mutations), or to switch it off with `optOut: true`.
 
-**Opt-out सूची** (firehose write paths जो ledger को डुबो देते): attendance की `visits` / `visitsessions` / `sessions` / `checkin` (रविवार का check-in तूफ़ान) और messaging की `messages` / `connections` / `devices` (चैट और presence)। बाकी सब कुछ लॉग होता है।
+**Opt-out list** (firehose write paths that would drown the ledger): attendance `visits` / `visitsessions` / `sessions` / `checkin` (the Sunday check-in storm) and messaging `messages` / `connections` / `devices` (chat and presence). Everything else logs.
 
-**Bulk endpoints** (`people/bulk-delete`, `people/bulk-update`, `groupmembers/bulk-add`, `groupmembers/bulk-remove`) `BULK_ROUTES` में रजिस्टर्ड हैं और **प्रति touched id एक audit row** emit करते हैं, इसलिए एक 10k-व्यक्ति import 10k rows बनाता है — वही per-entity granularity है जो बैच को undoable बनाती है।
+**Bulk endpoints** (`people/bulk-delete`, `people/bulk-update`, `groupmembers/bulk-add`, `groupmembers/bulk-remove`) are registered in `BULK_ROUTES` and emit **one audit row per touched id**, so a 10k-person import produces 10k rows — that per-entity granularity is exactly what makes the batch undoable.
 
-**Anonymous mutations** (`actionWrapperAnon` — guest giving, guest registration, form submissions) केवल registry-flagged `sensitive` routes के लिए audit की जाती हैं, `userId="anonymous"` प्लस client IP के साथ लिखी जाती हैं। Donations सूची में सबसे ऊपर हैं; उस पाथ का एक असली regression इतिहास है।
+**Anonymous mutations** (`actionWrapperAnon` — guest giving, guest registration, form submissions) are audited only for registry-flagged `sensitive` routes, written with `userId="anonymous"` plus the client IP. Donations lead the list; that path has a real regression history.
 
-### Secret redaction और size caps
+### Secret redaction and size caps
 
-किसी भी `details` payload को स्टोर करने से पहले, `AuditLogHelper.capDetails()` इसके ऊपर `sanitizeValue()` चलाता है:
+Before any `details` payload is stored, `AuditLogHelper.capDetails()` runs `sanitizeValue()` over it:
 
-- **Secret keys redact की जाती हैं।** कोई भी फ़ील्ड जिसका lowercase नाम `SENSITIVE_KEYS` (`password`, `token`, `cvv`, `cardnumber`, `routing_number`, `accesstoken`, `clientsecret`, …) में है, `"[redacted]"` से बदल दी जाती है।
-- **विशाल scalars हटा दिए जाते हैं।** कोई भी `data:` URI या 4 KB से बड़ी string (base64 फोटो, blobs) `"[stripped]"` बन जाती है।
-- **Oversized rows को cap किया जाता है।** यदि serialized JSON ~64 KB से बड़ा है तो पूरा payload `{ truncated: true }` से बदल दिया जाता है। Truncated rows फिर भी देखी जा सकती हैं — लेकिन **undoable नहीं** (restore करने के लिए कोई before/after image नहीं है)।
+- **Secret keys are redacted.** Any field whose lowercased name is in `SENSITIVE_KEYS` (`password`, `token`, `cvv`, `cardnumber`, `routing_number`, `accesstoken`, `clientsecret`, …) is replaced with `"[redacted]"`.
+- **Huge scalars are stripped.** Any `data:` URI or string over 4 KB (base64 photos, blobs) becomes `"[stripped]"`.
+- **Oversized rows are capped.** If the serialized JSON exceeds ~64 KB the whole payload is replaced with `{ truncated: true }`. Truncated rows are still viewable — but **not undoable** (there is no before/after image to restore from).
 
-## डेटा कहाँ रहता है
+## Where the data lives
 
-Membership डेटाबेस में एक ही `auditLogs` टेबल हर मॉड्यूल का समर्थन करती है। Columns: `id, churchId, userId, category, action, entityType, entityId, details (MEDIUMTEXT JSON string), ipAddress, module, batchId, created`। माइग्रेशन `tools/migrations/membership/2026-07-04_audit_universal.ts` `module` + `batchId` जोड़ता है, `details` को `TEXT` से `MEDIUMTEXT` तक चौड़ा करता है, इंडेक्स `ix_auditLogs_batch (batchId)` और `ix_auditLogs_entity (churchId, module, entityType, entityId, created)` जोड़ता है, और `batches` टेबल बनाता है। `module` कॉलम ठीक इसीलिए मौजूद है ताकि मॉड्यूल के बीच `entityType` टकराव (`note`, `setting` कई में मौजूद हैं) फ़िल्टर करने योग्य बने रहें, और entity इंडेक्स वही है जो प्रति-entity इतिहास और undo conflict गार्ड दोनों को शक्ति देता है।
+A single `auditLogs` table in the **membership** database backs every module. Columns: `id, churchId, userId, category, action, entityType, entityId, details (MEDIUMTEXT JSON string), ipAddress, module, batchId, created`. The migration `tools/migrations/membership/2026-07-04_audit_universal.ts` adds `module` + `batchId`, widens `details` from `TEXT` to `MEDIUMTEXT`, adds indexes `ix_auditLogs_batch (batchId)` and `ix_auditLogs_entity (churchId, module, entityType, entityId, created)`, and creates the `batches` table. The `module` column exists precisely so `entityType` collisions across modules (`note`, `setting` exist in several) stay filterable, and the entity index is what powers both per-entity history and the undo conflict guard.
 
-Cross-module writes wrapper के अंदर से `RepoManager.getRepos("membership")` से होकर जाती हैं। क्रम जानबूझकर है: **मुख्य write पहले मॉड्यूल DB में commit होता है, audit insert दूसरे नंबर पर।** सामान्य मोड में एक audit-insert विफलता निगल ली जाती है (`console.error`, Sentry इसे पकड़ लेता है) — audit सलाहकारी है और कभी किसी यूज़र की रिक्वेस्ट को विफल नहीं होने देना चाहिए। **बैच मोड में यह strict है** (नीचे देखें)।
+Cross-module writes go through `RepoManager.getRepos("membership")` from inside the wrapper. Ordering is deliberate: **the main write commits in the module DB first, the audit insert second.** In normal mode an audit-insert failure is swallowed (`console.error`, Sentry picks it up) — audit is advisory and must never fail a user's request. In **batch mode it is strict** (see below).
 
-:::info Triggers, CDC, या प्रति-मॉड्यूल टेबल क्यों नहीं?
-- **MySQL triggers** actor को नहीं जानते (connection के पास कोई `au` नहीं है), और इसका मतलब होगा हर schema में trigger sets को बनाए रखना।
-- **binlog / CDC** एक पूरा infrastructure प्रोजेक्ट है उसी actor-identity समस्या के साथ।
-- **हर repo के माध्यम से `userId` को thread करना** उस जानकारी को move करने के लिए सैकड़ों फ़ाइलों को touch करने का मतलब होगा जो कंट्रोलर लेयर के पास पहले से है।
-- **प्रति-मॉड्यूल audit टेबल** का मतलब होगा किसी भी cross-module सवाल के लिए 7× plumbing और fan-out queries। कंट्रोलर choke point पर एक टेबल सबसे कम-कोड डिज़ाइन है जो फिर भी actor को कैप्चर करता है।
+:::info Why not triggers, CDC, or per-module tables?
+- **MySQL triggers** don't know the acting user (the connection has no `au`), and would mean maintaining trigger sets across every schema.
+- **binlog / CDC** is a whole infrastructure project with the same actor-identity problem.
+- **Threading `userId` through every repo** would touch hundreds of files to move information the controller layer already has.
+- **Per-module audit tables** would mean 7× the plumbing and fan-out queries for any cross-module question. One table at the controller choke point is the least-code design that still captures the actor.
 :::
 
-## Performance रुख़
+## Performance stance
 
-Hot पाथ जानबूझकर सस्ता है; लागत केवल वहीं चुकाई जाती है जहाँ यह कुछ खरीदती है।
+The hot path is deliberately cheap; the cost is paid only where it buys something.
 
-- **सामान्य अपडेट पर कोई read-before-write नहीं।** एक नियमित सेव पुराना रिकॉर्ड लोड **नहीं** करता। **सबमिट की गई after-values** को `details.after` में स्टोर किया जाता है; UI *view* के समय entity की पिछली audit row के विरुद्ध diff करके old→new को दोबारा बनाता है। View समय पर एक query, write समय पर शून्य लागत। लॉन्च के बाद से कभी न छुई गई फ़ील्ड्स बस कोई "पुरानी" वैल्यू नहीं दिखातीं — स्वीकार्य।
-- **Deletes को एक before-image मिलती है।** `{ dbModule, table }` वाले एक registry route पर `DELETE /:id` पहले row को generically लोड करता है और इसे `details.before` में स्टोर करता है। Deletes दुर्लभ हैं और before-image ही पूरा forensic मूल्य है।
-- **बैच मोड ही एकमात्र systematic read-before-write है**, और यह opt-in है — एक bulk/import ऑपरेशन पहले से महंगा है, इसलिए N snapshot reads undo की कीमत हैं।
-- **Audit inserts await किए जाते हैं।** `actionWrapper` log promises इकट्ठा करता है और लौटने से पहले `await Promise.allSettled(...)` करता है। यह सबसे महत्वपूर्ण invariant है: Lambda पर container **response लौटते ही freeze हो जाता है**, इसलिए एक un-awaited insert चुपचाप गिरा दिया जाता है। यहाँ "Fire and forget" का मतलब है *errors कभी रिक्वेस्ट को fail नहीं करतीं*, *await मत करो* नहीं — पहले से warm membership pool पर एक एकल insert ~1–3 ms का है।
+- **No read-before-write on normal updates.** A regular save does **not** load the old record. The **submitted after-values** are stored in `details.after`; the UI reconstructs old→new at *view* time by diffing against the entity's previous audit row. One query at view time, zero cost at write time. Fields never touched since launch simply show no "old" value — acceptable.
+- **Deletes get a before-image.** `DELETE /:id` on a registry route with `{ dbModule, table }` loads the row generically first and stores it in `details.before`. Deletes are rare and the before-image is the entire forensic value.
+- **Batch mode is the only systematic read-before-write**, and it is opt-in — a bulk/import operation is already expensive, so N snapshot reads are the price of undo.
+- **Audit inserts are awaited.** `actionWrapper` collects the log promises and `await Promise.allSettled(...)` before returning. This is the single most important invariant: on Lambda the container **freezes the instant the response returns**, so an un-awaited insert is silently dropped. "Fire and forget" here means *errors never fail the request*, not *don't await* — a single insert on the already-warm membership pool is ~1–3 ms.
 
-## बैच और undo
+## Batches and undo
 
-एक **बैच** mutations के एक सेट को समूहित करता है ताकि उन्हें एक साथ review और reverse किया जा सके। इसे खोलने के दो तरीके हैं:
+A **batch** groups a set of mutations so they can be reviewed and reversed together. There are two ways to open one:
 
-- **Explicit:** `POST /membership/batches { label, source }` एक `batchId` लौटाता है। क्लाइंट (B1Transfer, एक B1Admin import UI) फिर हर बाद के save/delete पर `X-Batch-Id: <id>` भेजता है। `POST /membership/batches/:id/complete` इसे बंद करता है और `itemCount` को stamp करता है।
-- **Implicit:** चार bulk endpoints एक ही रिक्वेस्ट के अंदर अपना ही बैच खोलते, भरते, और पूरा करते हैं, response में `batchId` लौटाते हुए।
+- **Explicit:** `POST /membership/batches { label, source }` returns a `batchId`. The client (B1Transfer, a B1Admin import UI) then sends `X-Batch-Id: <id>` on every subsequent save/delete. `POST /membership/batches/:id/complete` closes it and stamps `itemCount`.
+- **Implicit:** the four bulk endpoints open, populate, and complete their own batch inside the single request, returning the `batchId` in the response.
 
-`batches` टेबल (membership DB): `id, churchId, userId, label, source, status (open|completed|undone|partial|failed), itemCount, created, completedAt, undoneAt`।
+The `batches` table (membership DB): `id, churchId, userId, label, source, status (open|completed|undone|partial|failed), itemCount, created, completedAt, undoneAt`.
 
-### बैच मोड strict है
+### Batch mode is strict
 
-जब `X-Batch-Id` मौजूद है, `actionWrapper` हर गार्ड को कड़ा करता है (`writeBatchAuditRows`):
+When `X-Batch-Id` is present, `actionWrapper` tightens every guard (`writeBatchAuditRows`):
 
-1. बैच मौजूद होनी चाहिए, `open` होनी चाहिए, और `au.churchId` से संबंधित होनी चाहिए — अन्यथा **403**।
-2. Route बैच-सक्षम होना चाहिए (registry में `{ dbModule, table }`) — अन्यथा **400**।
-3. Action चलने से पहले, सभी प्रभावित ids के लिए before-images को **एक** `WHERE id IN (...) AND churchId = ?` query में लोड किया जाता है। यदि वह snapshot read fail होता है, तो रिक्वेस्ट **500 फेल होती है और action execute नहीं होता** — बैच मोड को कभी चुपचाप एक un-undoable ledger produce नहीं करना चाहिए। (इसके विपरीत, सामान्य मोड best-effort है और snapshot विफलताओं को निगल जाता है।)
-4. Action सफल होने के बाद, प्रति entity एक audit row `batchId`, `details.before`, और `details.after` के साथ लिखी जाती है, प्लस बैच द्वारा बनाई गई rows के लिए एक explicit **create marker**।
+1. The batch must exist, be `open`, and belong to `au.churchId` — otherwise **403**.
+2. The route must be batch-capable (`{ dbModule, table }` in the registry) — otherwise **400**.
+3. Before the action runs, before-images for all affected ids are loaded in **one** `WHERE id IN (...) AND churchId = ?` query. If that snapshot read fails, the request **fails 500 and the action does not execute** — batch mode must never produce an un-undoable ledger silently. (Normal mode, by contrast, is best-effort and swallows snapshot failures.)
+4. After the action succeeds, one audit row per entity is written with `batchId`, `details.before`, and `details.after`, plus an explicit **create marker** for rows the batch created.
 
 ### Undo
 
-`POST /membership/batches/:id/undo` (अनुमति: बैच निर्माता या `Permissions.server.admin`)। यह रिजेक्ट करता है यदि बैच `completed` नहीं है या **30-दिन की undo विंडो** से पुरानी है। `BatchUndoHelper.undo()` फिर:
+`POST /membership/batches/:id/undo` (permission: batch creator or `Permissions.server.admin`). It refuses if the batch is not `completed` or is older than the **30-day undo window**. `BatchUndoHelper.undo()` then:
 
-1. बैच की audit rows को लोड करता है और उन्हें **`(module, entityType, entityId)` से समूहित करता है।** एक entity जिसे एक बैच के अंदर कई बार छुआ गया है उसे **एक बार** उलटा जाता है, उसकी असली pre-batch स्थिति में — सबसे पहली before-image, या यदि बैच ने उसे बनाया था तो एक delete। यही वजह है कि undo हर row को नीरसता से replay नहीं करता: एक intermediate mid-batch snapshot को restore करना गलत होगा।
-2. हर entity के लिए, **पहले conflict गार्ड चलाता है**: `auditLog.hasLaterModification()` पूछता है कि क्या इस बैच के बाहर उसी `(module, entityType, entityId)` के लिए कोई *बाद की* audit entry मौजूद है। यदि हाँ, तो entity को import के बाद edit किया गया था — इसे **skip और report** किया जाता है, कभी clobber नहीं किया जाता। यह modification detector के रूप में audit log को खुद ही दोबारा उपयोग करता है; किसी भी टेबल पर `modifiedAt` कॉलम की ज़रूरत नहीं है।
-3. रिकॉर्ड किए गए op के अनुसार reverse करता है, registry से `{ dbModule, table }` resolve करके और generic Kysely writes का उपयोग करके:
-   - **created** → row को hard-delete करें।
-   - **updated** → `details.before` को वापस लिखें।
-   - **deleted** → `details.before` को दोबारा insert करें (update-or-insert यदि उस id के साथ एक row फिर से सामने आ गई)।
-4. हर reversal खुद audit की जाती है (`action: "<entityType>_undone"`, कोई `batchId` नहीं — undo-of-undo दायरे से बाहर है)।
+1. Loads the batch's audit rows and **groups them by `(module, entityType, entityId)`.** An entity touched several times inside one batch is reversed **once**, back to its true pre-batch state — the earliest before-image, or a delete if the batch created it. This is why undo does not naively replay each row: restoring an intermediate mid-batch snapshot would be wrong.
+2. For each entity, runs the **conflict guard first**: `auditLog.hasLaterModification()` asks whether any *later* audit entry exists for that same `(module, entityType, entityId)` outside this batch. If so, the entity was edited after the import — it is **skipped and reported**, never clobbered. This reuses the audit log itself as the modification detector; no `modifiedAt` columns are needed on any table.
+3. Reverses per the recorded op, resolving `{ dbModule, table }` from the registry and using generic Kysely writes:
+   - **created** → hard-delete the row.
+   - **updated** → write `details.before` back.
+   - **deleted** → re-insert `details.before` (update-or-insert if a row with that id resurfaced).
+4. Each reversal is itself audited (`action: "<entityType>_undone"`, no `batchId` — undo-of-undo is out of scope).
 
-Op को explicit **create marker** से चुना जाता है, किसी गायब before-image से अनुमान नहीं लगाया जाता — एक वैध रूप से खाली before-image या एक truncated row को create समझने की गलती नहीं होनी चाहिए।
+The op is chosen from the explicit **create marker**, not inferred from a missing before-image — a legitimately empty before-image or a truncated row must not be mistaken for a create.
 
-Result payload `{ restored, skippedConflicts: [...], failed: [...], status }` है; बैच `undone` (clean) या `partial` में चली जाती है। **कोई cross-DB transaction नहीं है** — undo प्रति row best-effort है, वही सीमा जिसे Planning Center merged profiles के लिए दस्तावेज़ करता है।
+The result payload is `{ restored, skippedConflicts: [...], failed: [...], status }`; the batch moves to `undone` (clean) or `partial`. **There is no cross-DB transaction** — undo is best-effort per row, the same limitation Planning Center documents for merged profiles.
 
-:::warning Side-effect entities को एक `onUndo` hook चाहिए
-एक `groupMember` create को उलटने के लिए `groupMemberHistory` ("left") भी लिखनी होगी, अन्यथा churn analytics चुपचाप टूट जाते हैं — एक स्थायी workspace invariant। ऐसी entities `AUDIT_REGISTRY` में एक `onUndo` कॉलबैक रजिस्टर करती हैं जो `true` लौटाता है जब वह reversal को पूरी तरह हैंडल कर चुका होता है, generic पाथ को bypass करते हुए। `groupMembers` canonical केस है (explicit पाथ पर row id से keyed लेकिन bulk endpoints पर `personId` से, और हर add/remove पर history-tracked)।
+:::warning Side-effect entities need an `onUndo` hook
+Reversing a `groupMember` create must also write `groupMemberHistory` ("left"), or churn analytics silently break — a standing workspace invariant. Such entities register an `onUndo` callback in `AUDIT_REGISTRY` that returns `true` when it has fully handled the reversal, bypassing the generic path. `groupMembers` is the canonical case (keyed by row id on the explicit path but by `personId` on bulk endpoints, and history-tracked on every add/remove).
 :::
 
-## उपभोक्ता सतहें
+## Consumer surfaces
 
-दोनों admin सतहें **प्रगति में हैं**; इरादा:
+Both admin surfaces are **in progress**; the intent:
 
-| सतह | रेपो | उद्देश्य |
+| Surface | Repo | Purpose |
 |---------|------|---------|
-| **Audit Log पेज** | B1Admin (ManageChurch → Audit Log) | मॉड्यूल/category/यूज़र/entity से फ़िल्टर करें और old→new diffs रेंडर करें — edits के लिए entity की पिछली entry के विरुद्ध diff करके, deletes के लिए `details.before` से। `GET /membership/auditlogs` से backed, `Permissions.server.admin` से gated। |
-| **Batches पेज** | B1Admin (वही Settings hub) | Status और counts के साथ बैच सूची, **View Results** (बैच की audit rows `GET /membership/batches/:id/results` के माध्यम से), और एक **Undo** बटन जो skipped-conflict / failed report सामने लाता है। |
-| **Import batches** | B1Transfer | एक बैच खोलें, उसके सामान्य save calls पर `X-Batch-Id` भेजें, अंत में पूरा करें — imports बिना किसी नए import endpoint के undoable बन जाते हैं। Legacy `importKey` एक creates-only lineage मार्कर के रूप में बना रहता है, undo के लिए superseded। |
+| **Audit Log page** | B1Admin (ManageChurch → Audit Log) | Filter by module/category/user/entity and render old→new diffs — for edits by diffing against the entity's previous entry, for deletes from `details.before`. Backed by `GET /membership/auditlogs`, gated by `Permissions.server.admin`. |
+| **Batches page** | B1Admin (same Settings hub) | List batches with status and counts, **View Results** (the batch's audit rows via `GET /membership/batches/:id/results`), and an **Undo** button that surfaces the skipped-conflict / failed report. |
+| **Import batches** | B1Transfer | Open a batch, send `X-Batch-Id` on its normal save calls, complete at the end — imports become undoable with no new import endpoints. The legacy `importKey` stays as a creates-only lineage marker, superseded for undo. |
 
-## Gotchas जिन्हें भविष्य के बदलाव को regress नहीं करना चाहिए
+## Gotchas a future change must not regress
 
-- **Audit inserts awaited रहने चाहिए।** Un-awaited `AuditLogHelper.log(...)` Lambda freeze से गिरा दिया जाता है। Promises इकट्ठा करें और लौटने से पहले `await Promise.allSettled` करें।
-- **Kysely `.set()`/`.values()` से `undefined` को गिरा देता है।** Restore पर, एक cleared कॉलम untouched रह जाएगा। `BatchUndoHelper` हर absent फ़ील्ड को explicit `null` में बदलता है (`nullify`) — इसे "तेज़" direct write के लिए कभी bypass न करें।
-- **Retention undo विंडो से काफ़ी ऊपर रहनी चाहिए।** `AuditLogRepo.deleteOld()` nightly टाइमर पर चलता है (डिफ़ॉल्ट 365-दिन retention); undo विंडो 30 दिन है। यदि retention कभी विंडो की ओर गिरती है, तो undo ledgers खुली batches के नीचे से purge हो जाते हैं।
-- **Truncated rows undoable नहीं हैं।** एक `{ truncated: true }` payload के पास कोई before/after image नहीं है; undo इसे `failed` के रूप में रिपोर्ट करता है, कभी अनुमान नहीं लगाता।
-- **क्रम module-write-then-audit है।** Audit insert को कभी भी असली write से आगे न ले जाएँ, और इसे बैच में strict / सामान्य में advisory रखें।
+- **Audit inserts must stay awaited.** Un-awaited `AuditLogHelper.log(...)` is dropped by the Lambda freeze. Collect promises and `await Promise.allSettled` before returning.
+- **Kysely drops `undefined` from `.set()`/`.values()`.** On restore, a cleared column would survive untouched. `BatchUndoHelper` converts every absent field to explicit `null` (`nullify`) — never bypass it for a "faster" direct write.
+- **Retention must stay well above the undo window.** `AuditLogRepo.deleteOld()` runs on the nightly timer (default 365-day retention); the undo window is 30 days. If retention ever drops toward the window, undo ledgers get purged out from under open batches.
+- **Truncated rows are not undoable.** A `{ truncated: true }` payload has no before/after image; undo reports it as `failed`, never guesses.
+- **Ordering is module-write-then-audit.** Never move the audit insert ahead of the real write, and keep it strict-in-batch / advisory-in-normal.
 
 ## File inventory
 
-| क्षेत्र | फ़ाइलें |
+| Area | Files |
 |------|-------|
 | Wrapper / registry | `Api/src/shared/infrastructure/BaseController.ts` (`AUDIT_REGISTRY`, `BULK_ROUTES`, `actionWrapper`, `actionWrapperAnon`, snapshot + write-rows) |
 | Undo engine | `Api/src/shared/infrastructure/BatchUndoHelper.ts` |
@@ -151,10 +151,10 @@ Result payload `{ restored, skippedConflicts: [...], failed: [...], status }` �
 | Controllers | `Api/src/modules/membership/controllers/AuditLogController.ts`, `BatchController.ts` |
 | Models / repos | `Api/src/modules/membership/models/AuditLog.ts`, `Batch.ts`; `repositories/AuditLogRepo.ts` (`loadFiltered`, `loadForBatch`, `hasLaterModification`, `deleteOld`), `BatchRepo.ts` |
 | Migration | `Api/tools/migrations/membership/2026-07-04_audit_universal.ts` |
-| Admin UI (प्रगति में) | B1Admin Audit Log + Batches पेज; B1Transfer import-batch header |
+| Admin UI (in progress) | B1Admin Audit Log + Batches pages; B1Transfer import-batch header |
 
-## संबंधित पृष्ठ
+## Related Pages
 
-- [Module Structure](../api/module-structure) — कैसे एक non-membership कंट्रोलर `RepoManager` के माध्यम से membership repos तक पहुँचता है
-- [Giving](./giving) — donation write paths जो anonymous होने पर भी `sensitive` के रूप में audit किए जाते हैं
-- [Membership Endpoints](../api/endpoints/membership) — वह REST सतह जो `X-Batch-Id` carry करती है और `/auditlogs` और `/batches` expose करती है
+- [Module Structure](../api/module-structure) — how a non-membership controller reaches the membership repos through `RepoManager`
+- [Giving](./giving) — the donation write paths that are audited as `sensitive` even when anonymous
+- [Membership Endpoints](../api/endpoints/membership) — the REST surface that carries `X-Batch-Id` and exposes `/auditlogs` and `/batches`

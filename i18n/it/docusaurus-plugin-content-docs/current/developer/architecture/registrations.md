@@ -1,12 +1,12 @@
 ---
-title: "Registrazioni agli eventi"
+title: "Event Registrations"
 ---
 
-# Registrazioni agli eventi
+# Evento Registrations
 
 <div class="article-intro">
 
-La registrazione nativa agli eventi vive nel modulo di contenuto e, dall'ondata delle registrazioni a pagamento, porta con sé un modello commerciale completo: tipi di partecipanti a prezzo, selezioni di componenti aggiuntivi a prezzo, codici sconto, pagamenti tramite il gateway di donazione esistente della chiesa, e una lista d'attesa guidata dallo stato. Il percorso del denaro riutilizza deliberatamente lo stack di donazione — il controller di registrazione addebita tramite la stessa astrazione `GatewayService` / `IGatewayProvider` documentata in [Contributi](./giving), così nessuna conoscenza di dati carta o SDK del gateway vive nel modulo di contenuto. Questa pagina mappa il modello dati, le regole di prezzo e capienza, e i flussi di registrazione, pagamento, e lista d'attesa.
+Native Evento registration lives in the content module and, since the paid-registrations wave, carries a full commerce model: priced attendee types, priced Aggiungi-on selections, discount codes, payments through the church's existing giving gateway, and a status-driven waitlist. The money path deliberately reuses the giving stack — the registration controller charges through the same `GatewayService` / `IGatewayProvider` abstraction documented in [Giving](./giving), so No card data or gateway SDK knowledge lives in the content module. This page maps the data model, the pricing and Capacità rules, and the registration, payment, and waitlist flows.
 
 </div>
 
@@ -14,80 +14,80 @@ La registrazione nativa agli eventi vive nel modulo di contenuto e, dall'ondata 
 
 ```
 ┌──────────────────────────────┐            ┌─────────────────────────────────────────────┐
-│ B1App (portale membri)       │            │ Api — modulo content                        │
-│  wizard di registrazione ·   │   HTTPS    │  RegistrationController                     │
-│  Le mie registrazioni        │ ─────────▶ │   /content/registrations                    │
-├──────────────────────────────┤            │  RegistrationPricingHelper (prezzo server) │
-│ B1Admin (staff)              │            │  RegistrationHelper (email)                 │
-│  impostazioni registrazione  │            └───────────────┬─────────────────────────────┘
-│  evento · roster · export CSV│                            │ processCharge
+│ B1App (member portal)        │            │ Api — content module                        │
+│  registration wizard ·       │   HTTPS    │  RegistrationController                     │
+│  My Registrations            │ ─────────▶ │   /content/registrations                    │
+├──────────────────────────────┤            │  RegistrationPricingHelper (server pricing) │
+│ B1Admin (staff)              │            │  RegistrationHelper (emails)                │
+│  event registration settings │            └───────────────┬─────────────────────────────┘
+│  · roster · CSV export       │                            │ processCharge
 └──────────────────────────────┘                            ▼
                                             ┌─────────────────────────────────────────────┐
-                                            │ astrazione gateway condivisa (giving)       │
+                                            │ shared gateway abstraction (giving)         │
                                             │  GatewayService → IGatewayProvider          │
                                             │  Stripe · PayPal · Kingdom Funding          │
                                             └─────────────────────────────────────────────┘
 ```
 
-Tre regole valgono in tutto lo stack:
+Three rules hold across the stack:
 
-1. **Il server possiede il prezzo.** I client inviano id di tipo, id di selezione, e quantità; `RegistrationPricingHelper.computeTotal()` calcola il totale lato server e i coupon vengono ri-validati al momento dell'addebito. Un importo fornito dal client non viene mai fidato.
-2. **La capienza è applicata atomicamente al momento dell'inserimento.** Ogni inserimento con limite di capienza usa un'istruzione `INSERT … SELECT … FROM dual WHERE (conteggio di righe attive) < capacity`, così due registrazioni simultanee non possono entrambe prendere l'ultimo posto. I conteggi sono derivati dallo stato (`pending`/`confirmed`), mai memorizzati.
-3. **I pagamenti si basano sui binari del giving.** `RegistrationController` chiama il `GatewayService.processCharge` condiviso con il gateway configurato della chiesa — la stessa astrazione del provider, modello di tokenizzazione, e gestione SCA delle donazioni.
+1. **The server owns the price.** Clients Invia Digita ids, selection ids, and quantities; `RegistrationPricingHelper.computeTotal()` computes the total server-side and coupons are re-validated at charge Ora. A client-supplied amount is never trusted.
+2. **Capacità is enforced atomically at insert Ora.** Every Capacità-limited insert uses an `INSERT … Seleziona … FROM dual WHERE (count of Attivo rows) < Capacità` statement, so two simultaneous registrations can't both take the last spot. Counts are derived from status (`In Sospeso`/`confirmed`), never stored.
+3. **Payments ride the giving rails.** `RegistrationController` calls the shared `GatewayService.processCharge` with the church's configured gateway — the same provider abstraction, tokenization model, and SCA handling as donations.
 
-## Modello dati (`Api/src/modules/content`)
+## Data model (`Api/src/modules/content`)
 
-I modelli si trovano in `models/Registration.ts`; le mappature delle tabelle in `db/DatabaseTypes.ts`; un repository per tabella sotto `repositories/`.
+Models are in `models/Registration.ts`; table mappings in `db/DatabaseTypes.ts`; one repo per table under `repositories/`.
 
-| Tabella | Significato | Campi chiave |
+| Table | Meaning | Key fields |
 |-------|---------|-----------|
-| `registrations` | Una registrazione (un nucleo familiare/gruppo per un evento) | eventId, personId, householdId, **status** (`pending` / `confirmed` / `waitlisted` / `cancelled`), totalAmount, amountPaid, couponId, waitlistNotifiedDate, registeredDate, cancelledDate |
-| `registrationMembers` | Un partecipante su una registrazione | registrationId, personId, firstName, lastName, **registrationTypeId** |
-| `registrationTypes` | Tipi di partecipanti per evento (ad es. Adulto / Bambino) | eventId, name, description, **price**, **capacity**, minAgeYears, maxAgeYears, formId, sort, active |
-| `registrationSelections` | Opzioni di componenti aggiuntivi con prezzo (ad es. maglietta) | eventId, name, description, **price**, **capacity**, **maxQuantity** (limite per registrazione), sort, active |
-| `registrationSelectionChoices` | Quantità di una selezione scelta da una registrazione/membro | registrationId, registrationMemberId, selectionId, **quantity** |
-| `registrationPayments` | Un addebito riuscito contro una registrazione | registrationId, gatewayId, provider, transactionId, method, amount, currency, kind (`charge`), status (`succeeded`), personId |
-| `registrationCoupons` | Codici sconto per evento | eventId, code, **discountType** (`percent` / `amount`), **value**, startDate, endDate, **minMembers**, **maxUses**, active |
+| `registrations` | One registration (one household/party for one Evento) | eventId, personId, householdId, **status** (`In Sospeso` / `confirmed` / `waitlisted` / `cancelled`), totalAmount, amountPaid, couponId, waitlistNotifiedDate, registeredDate, cancelledDate |
+| `registrationMembers` | One attendee on a registration | registrationId, personId, firstName, lastName, **registrationTypeId** |
+| `registrationTypes` | Attendee types per Evento (e.g. Adult / Child) | eventId, name, description, **price**, **Capacità**, minAgeYears, maxAgeYears, formId, sort, Attivo |
+| `registrationSelections` | Named Aggiungi-on options with a price (e.g. T-shirt) | eventId, name, description, **price**, **Capacità**, **maxQuantity** (per-registration cap), sort, Attivo |
+| `registrationSelectionChoices` | Quantity of a selection chosen by a registration/Membro | registrationId, registrationMemberId, selectionId, **quantity** |
+| `registrationPayments` | One successful charge against a registration | registrationId, gatewayId, provider, transactionId, method, amount, currency, kind (`charge`), status (`succeeded`), personId |
+| `registrationCoupons` | Discount codes per Evento | eventId, code, **discountType** (`percent` / `amount`), **value**, startDate, endDate, **minMembers**, **maxUses**, Attivo |
 
-Note:
+Notes:
 
-- **Non esiste una tabella per la lista d'attesa.** I gruppi in lista d'attesa sono righe `registrations` con `status = 'waitlisted'`; l'intero ciclo di vita della lista d'attesa è fatto di transizioni di stato su quell'unica tabella.
-- **Nessun contatore memorizzato.** I conteggi "venduti" / "usati" (capienza evento, capienza per tipo, capienza per selezione, usi coupon) vengono calcolati con sottoquery correlate su righe il cui stato è in `('pending','confirmed')` (`RegistrationTypeRepo.loadActiveWithUsage`, `RegistrationRepo.countActiveForEvent` / `countActiveForCoupon`). Annullare una registrazione libera quindi la capienza senza alcuna contabilità.
-- I prezzi sono colonne MySQL DECIMAL (stringhe sulla rete) convertite con `Number()` dentro l'helper di prezzo.
+- **There is No waitlist table.** Waitlisted parties are `registrations` rows with `status = 'waitlisted'`; the whole waitlist lifecycle is status transitions on that one table.
+- **No stored counters.** "Sold" / "used" counts (Evento Capacità, per-Digita Capacità, per-selection Capacità, coupon uses) are computed with correlated subqueries over rows whose status is in `('In Sospeso','confirmed')` (`RegistrationTypeRepo.loadActiveWithUsage`, `RegistrationRepo.countActiveForEvent` / `countActiveForCoupon`). Cancelling a registration therefore frees Capacità with No bookkeeping.
+- Prices are MySQL DECIMAL columns (strings over the wire) coerced with `Number()` inside the pricing helper.
 
-## Superficie REST
+## REST surface
 
-Tutto è sotto `/content/registrations` (`controllers/RegistrationController.ts`), protetto da `Permissions.registrations` (`view` / `edit`):
+Everything is under `/content/registrations` (`controllers/RegistrationController.ts`), gated by `Permessi.registrations` (`Visualizza` / `Modifica`):
 
-| Rotta | Accesso | Scopo |
+| Route | Access | Purpose |
 |-------|--------|---------|
-| `POST /register` | anonimo | Invio completo: ospite o membro, prezzo server, controlli di capienza, addebito opzionale |
-| `GET /types/event/:eventId`, `GET /selections/event/:eventId` | pubblico | Tipi/selezioni con `used` / `remainingCapacity` derivati per il wizard |
-| `POST /types`, `DELETE /types/:id` (stesso per `/selections`, `/coupons`) | `registrations.edit` | CRUD delle impostazioni staff |
-| `POST /coupons/validate` | pubblico | Validazione inline del codice sconto durante il wizard |
-| `GET /coupons/event/:eventId` | staff | Coupon con conteggi di utilizzo |
-| `GET /event/:eventId` · `GET /event/:eventId/count` | staff · pubblico | Roster; conteggio attivo per la visualizzazione della capienza |
-| `GET /person/:personId` · `GET /:id` · `GET /payments/:registrationId` | autenticato | Le mie registrazioni, dettaglio, cronologia pagamenti |
-| `PUT /:id` | proprietario/staff | Modifica post-invio — sostituisce i membri e le scelte di selezione con nuovi controlli atomici di capienza, ricalcola `totalAmount`; non addebita né rimborsa mai automaticamente |
-| `POST /:id/pay` | proprietario | "Completa pagamento": addebita `totalAmount − amountPaid`, capovolge `waitlisted`/`pending` → `confirmed` |
-| `POST /:id/promote` | staff | Promozione manuale dalla lista d'attesa |
-| `POST /:id/cancel` · `DELETE /:id` | proprietario · staff | Annulla / elimina; entrambi attivano la promozione automatica dalla lista d'attesa |
+| `POST /register` | anonymous | Full submission: Ospite or Membro, server pricing, Capacità checks, Facoltativo charge |
+| `GET /types/Evento/:eventId`, `GET /selections/Evento/:eventId` | public | Types/selections with derived `used` / `remainingCapacity` for the wizard |
+| `POST /types`, `Elimina /types/:id` (same for `/selections`, `/coupons`) | `registrations.Modifica` | Staff Impostazioni CRUD |
+| `POST /coupons/validate` | public | Inline discount-code validation during the wizard |
+| `GET /coupons/Evento/:eventId` | Staff | Coupons with uses counts |
+| `GET /Evento/:eventId` · `GET /Evento/:eventId/count` | Staff · public | Roster; Attivo-count for Capacità display |
+| `GET /person/:personId` · `GET /:id` · `GET /payments/:registrationId` | authed | My Registrations, detail, payment history |
+| `PUT /:id` | owner/Staff | Post-submission Modifica — replaces Membri and selection choices with fresh atomic Capacità checks, recomputes `totalAmount`; never auto-charges or refunds |
+| `POST /:id/pay` | owner | "Complete payment": charges `totalAmount − amountPaid`, flips `waitlisted`/`In Sospeso` → `confirmed` |
+| `POST /:id/promote` | Staff | Manual waitlist promotion |
+| `POST /:id/cancel` · `Elimina /:id` | owner · Staff | Cancel / Elimina; both trigger waitlist auto-promotion |
 
-Una registrazione non-annullata esistente per lo stesso `personId` sullo stesso evento viene rifiutata con 409, e ogni registrazione creata emette un webhook `registration.created` tramite `WebhookDispatcher`.
+A non-cancelled existing registration for the same `personId` on the same Evento is rejected with a 409, and each created registration emits a `registration.created` webhook via `WebhookDispatcher`.
 
-## Prezzi e codici sconto
+## Pricing and discount codes
 
-`helpers/RegistrationPricingHelper.ts` è l'autorità unica per la matematica del denaro:
+`helpers/RegistrationPricingHelper.ts` is the single money-math authority:
 
-- `computeTotal()` somma il prezzo del tipo di ogni membro più il `price × quantity` di ogni scelta di selezione.
-- `validateCoupon()` applica il flag attivo, la finestra di data (`startDate`/`endDate`), `minMembers` rispetto alla dimensione del gruppo inviato, e `maxUses` rispetto al conteggio di redenzione derivato dallo stato.
-- `applyDiscount()` — `percent` sottrae `total × value/100`; `amount` sottrae `value`; entrambi si fermano a zero.
+- `computeTotal()` sums each Membro's Digita price plus each selection choice's `price × quantity`.
+- `validateCoupon()` enforces Attivo flag, Data window (`startDate`/`endDate`), `minMembers` against the submitted party size, and `maxUses` against the status-derived redemption count.
+- `applyDiscount()` — `percent` subtracts `total × value/100`; `amount` subtracts `value`; both floor at zero.
 
-Il wizard chiama `POST /coupons/validate` per un feedback inline, ma `register` ri-valida e ri-applica il coupon lato server — il totale visualizzato dal client è solo consultivo.
+The wizard calls `POST /coupons/validate` for inline feedback, but `register` re-validates and re-applies the coupon server-side — the client's displayed total is advisory only.
 
-## L'idioma atomico della capienza
+## The atomic Capacità idiom
 
-Ogni inserimento con limite di capienza corre in sicurezza senza transazioni o blocchi rendendo il controllo di capienza parte dell'`INSERT` stesso. A livello di evento (`RegistrationRepo.atomicInsertWithCapacityCheck`):
+Every Capacità-limited insert races safely without transactions or locks by making the Capacità check part of the `INSERT` itself. Evento-level (`RegistrationRepo.atomicInsertWithCapacityCheck`):
 
 ```sql
 INSERT INTO registrations (id, churchId, eventId, ...)
@@ -97,11 +97,11 @@ INSERT INTO registrations (id, churchId, eventId, ...)
          WHERE eventId=? AND churchId=? AND status IN ('pending','confirmed')) < ?
 ```
 
-Zero righe interessate significa "a capienza". Lo stesso idioma protegge gli inserimenti per tipo (`RegistrationMemberRepo.atomicInsertWithTypeCapacity`, contando i membri uniti a registrazioni attive) e le quantità per selezione (`RegistrationSelectionChoiceRepo.atomicInsertWithCapacityCheck`, usando `COALESCE(SUM(quantity),0) + ? <= capacity`). Quando qualsiasi inserimento di membro o selezione fallisce a metà registrazione, il controller annulla la registrazione parziale con `deleteCascade()` e segnala quale tipo o selezione è esaurito.
+Zero affected rows means "at Capacità". The same idiom guards per-Digita inserts (`RegistrationMemberRepo.atomicInsertWithTypeCapacity`, counting Membri joined Per Attivo registrations) and per-selection quantities (`RegistrationSelectionChoiceRepo.atomicInsertWithCapacityCheck`, using `COALESCE(SUM(quantity),0) + ? <= Capacità`). When any Membro or selection insert fails mid-registration, the controller rolls the partial registration Indietro with `deleteCascade()` and Rapporti which Digita or selection sold out.
 
-## Flusso di pagamento
+## Payment flow
 
-`processRegistrationCharge` nel controller è l'unico punto in cui le registrazioni toccano il denaro, ed è un client sottile dello stack di donazione:
+`processRegistrationCharge` in the controller is the only place registrations touch money, and it is a thin client of the giving stack:
 
 ```
 RegistrationController ─▶ RepoManager.getRepos("giving").gateway
@@ -110,37 +110,37 @@ RegistrationController ─▶ RepoManager.getRepos("giving").gateway
                              └▶ IGatewayProvider.processCharge  (Stripe / PayPal / Kingdom Funding)
 ```
 
-La tokenizzazione avviene nel browser esattamente come per le donazioni (vedi [Contributi](./giving)) — il wizard riutilizza il registro dei provider di pagamento apphelper, così i membri connessi possono pagare con carte salvate e gli ospiti tokenizzano una nuova carta. Il controller rispecchia le particolarità del provider di `DonateController` (id metodo di pagamento Kingdom Funding `pm-{id}`, risposte Stripe SCA `requires_action` restituite al client senza registrare un pagamento). Un addebito riuscito scrive una riga `registrationPayments`, incrementa `amountPaid`, e conferma la registrazione. **I rimborsi non sono implementati** — una registrazione pagata e annullata mantiene le proprie righe di pagamento e qualsiasi rimborso viene gestito fuori banda nella dashboard del gateway.
+Tokenization happens in the browser exactly as for donations (see [Giving](./giving)) — the wizard reuses the apphelper payment provider registry, so logged-in Membri can pay with saved cards and Ospiti tokenize a new card. The controller mirrors `DonateController`'s provider quirks (Kingdom Funding `pm-{id}` payment-method ids, Stripe SCA `requires_action` responses returned Per the client without recording a payment). A successful charge writes a `registrationPayments` row, bumps `amountPaid`, and confirms the registration. **Refunds are not implemented** — a cancelled paid registration keeps its payment rows and any refund is handled out-of-band in the gateway dashboard.
 
-Entrambi i punti di ingresso passano per lo stesso percorso di codice: `register` (pagamento all'iscrizione) e `pay` (pagamento del saldo / completamento della lista d'attesa).
+Both entry points route through the same code path: `register` (pay at signup) and `pay` (balance payment / waitlist completion).
 
-## Ciclo di vita della lista d'attesa
+## Waitlist lifecycle
 
-Quando l'evento è pieno e il flag `waitlistEnabled` dell'evento è attivo, `register` salva il gruppo come `waitlisted` (saltando i controlli di capienza) e invia la normale email di conferma contrassegnata come un posto in lista d'attesa. La promozione avviene in tre modi — `cancel`, `delete`, e l'endpoint `promote` dello staff — tutti confluiscono in `RegistrationRepo.promoteFromWaitlist`, che sceglie la riga più vecchia in lista d'attesa e la capovolge atomicamente:
+When the Evento is full and the Evento's `waitlistEnabled` flag is on, `register` saves the party as `waitlisted` (skipping Capacità checks) and sends the normal confirmation email marked as a waitlist spot. Promotion happens three ways — `cancel`, `Elimina`, and the Staff `promote` endpoint — all funneling into `RegistrationRepo.promoteFromWaitlist`, which picks the oldest waitlisted row and flips it atomically:
 
 ```sql
 UPDATE registrations SET status='pending', waitlistNotifiedDate=NOW()
   WHERE id=? AND status='waitlisted'
-    AND (…conteggio attivo per l'evento…) < ?
+    AND (…active count for the event…) < ?
 ```
 
-Il guard `status='waitlisted'` significa che le promozioni concorrenti non possono promuovere due volte la stessa riga, e la sottoquery di capienza significa che una promozione non può causare overselling. Le righe promosse atterrano su `pending` — non `confirmed` — perché potrebbe essere ancora dovuto un saldo; `RegistrationHelper.sendWaitlistAvailabilityEmail` comunica all'iscritto che il suo posto si è aperto e, quando `totalAmount − amountPaid > 0`, rimanda alla pagina di completamento del pagamento. Pagare (o non avere alcun saldo) li conferma.
+The `status='waitlisted'` guard means concurrent promotions can't double-promote a row, and the Capacità subquery means a promotion can't oversell. Promoted rows land on `In Sospeso` — not `confirmed` — because a balance may still be owed; `RegistrationHelper.sendWaitlistAvailabilityEmail` tells the registrant their spot opened and, when `totalAmount − amountPaid > 0`, links Per the complete-payment page. Paying (or having No balance) confirms them.
 
 :::info
-Un aumento di capienza non promuove automaticamente da solo — lo staff usa l'azione Promuovi del roster dopo aver aumentato la capienza. Gli annullamenti e le eliminazioni promuovono automaticamente.
+A Capacità raise does not auto-promote by itself — Staff use the roster's Promote action after raising Capacità. Cancels and deletes promote automatically.
 :::
 
-## Superfici client
+## Client surfaces
 
-- **Wizard B1App** — un unico hook condiviso, `B1App/src/components/registration/useEventRegistration.ts`, guida sia il componente del sito web (`components/registration/EventRegister.tsx`) sia la schermata del portale mobile (`app/[sdSlug]/mobile/components/screens/EventRegisterPage.tsx`) attraverso i passaggi `info → members → selections → questions → payment → confirm` (i passaggi intermedi si renderizzano solo quando l'evento ha selezioni, un modulo allegato, o un totale diverso da zero). I passaggi info/membri mostrano selettori per tipo di partecipante con capienza residua in tempo reale e stati di esaurito; il pagamento (`RegistrationPaymentForm.tsx`) mostra il riepilogo dell'ordine, l'inserimento del codice sconto, e — per i membri connessi — i metodi di pagamento salvati tramite il registro dei provider apphelper, con gli ospiti che tokenizzano una nuova carta. La schermata mobile **Registrazioni** (`screens/RegistrationsPage.tsx`) è Le mie registrazioni: stato, saldo dovuto, Completa pagamento (`POST /:id/pay`), Modifica (`PUT /:id` — contatto, tipi di membro, quantità di selezione), e Annulla.
-- **Impostazioni B1Admin** — `B1Admin/src/registrations/components/RegistrationSettingsEdit.tsx` aggiunge l'interruttore Abilita lista d'attesa più fisarmoniche per Tipi di partecipanti, Selezioni, e Codici sconto (`RegistrationTypesEdit.tsx` / `RegistrationSelectionsEdit.tsx` / `RegistrationCouponsEdit.tsx`), tutte in CRUD contro le rotte `/types`, `/selections`, `/coupons`.
-- **Roster B1Admin** — `B1Admin/src/registrations/RegistrationDetailsPage.tsx`: colonna Tipo per partecipante, colonna Pagato/Totale con chip del saldo, chip di conteggio per tipo, una finestra di dialogo dei dettagli di pagamento (`RegistrationDetailDialog.tsx`, da `GET /payments/:registrationId`), l'azione di riga Promuovi della lista d'attesa, ed esportazione CSV che include tipi di partecipanti, selezioni, pagato/totale/saldo, e risposte alle domande.
+- **B1App wizard** — one shared hook, `B1App/src/components/registration/useEventRegistration.ts`, drives both the website component (`components/registration/EventRegister.tsx`) and the mobile portal screen (`app/[sdSlug]/mobile/components/screens/EventRegisterPage.tsx`) through the steps `info → Membri → selections → questions → payment → confirm` (the middle steps render only when the Evento has selections, an attached form, or a nonzero total). The info/Membri steps show per-attendee-Digita pickers with live remaining-Capacità and sold-out states; payment (`RegistrationPaymentForm.tsx`) shows the order summary, discount-code entry, and — for logged-in Membri — saved payment methods via the apphelper provider registry, with Ospiti tokenizing a new card. The **Registrations** mobile screen (`screens/RegistrationsPage.tsx`) is My Registrations: status, balance due, Complete payment (`POST /:id/pay`), Modifica (`PUT /:id` — contact, Membro types, selection quantities), and Cancel.
+- **B1Admin Impostazioni** — `B1Admin/src/registrations/components/RegistrationSettingsEdit.tsx` adds the Enable Waitlist switch plus accordions for Attendee Types, Selections, and Discount Codes (`RegistrationTypesEdit.tsx` / `RegistrationSelectionsEdit.tsx` / `RegistrationCouponsEdit.tsx`), all CRUD against the `/types`, `/selections`, `/coupons` routes.
+- **B1Admin roster** — `B1Admin/src/registrations/RegistrationDetailsPage.tsx`: per-attendee Digita column, Paid/Total column with balance chip, per-Digita count chips, a payments detail dialog (`RegistrationDetailDialog.tsx`, from `GET /payments/:registrationId`), the waitlist Promote row action, and CSV Esporta including attendee types, selections, paid/total/balance, and question answers.
 
-Le ricerche cross-modulo (risolvere o creare la persona ospite, caricare la chiesa per le email) passano attraverso `getMembershipModuleGateway()` — il modulo di contenuto non legge mai direttamente le tabelle di membership.
+Cross-module lookups (resolving or creating the Ospite person, loading the church for emails) go through `getMembershipModuleGateway()` — the content module never reads membership tables directly.
 
-## Pagine correlate
+## Pagine Correlate
 
-- [Contributi](./giving) — l'astrazione del gateway, il registro dei provider, e il modello di tokenizzazione che questa funzionalità riutilizza
-- [Endpoint di content](../api/endpoints/content) — la superficie REST del modulo di contenuto
-- [Webhook](../api/webhooks) — l'evento `registration.created`
-- [Struttura del modulo](../api/module-structure) — come è organizzato lato server il modulo di contenuto
+- [Giving](./giving) — the gateway abstraction, provider registry, and tokenization model this feature reuses
+- [Content Endpoints](../api/endpoints/content) — the content module's REST surface
+- [Webhooks](../api/webhooks) — the `registration.created` Evento
+- [Module Structure](../api/module-structure) — how the content module is organized server-side

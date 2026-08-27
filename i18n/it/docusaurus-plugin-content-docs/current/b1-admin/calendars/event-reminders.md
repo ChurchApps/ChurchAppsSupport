@@ -1,80 +1,80 @@
 ---
-title: "Promemoria di eventi"
+title: "Promemoria Evento"
 ---
 
-# Promemoria di eventi
+# Evento Reminders
 
 <div class="article-intro">
 
-I promemoria di eventi notificano automaticamente le persone giuste prima che accada un evento -- ad esempio, "Non perderti! Il workshop di assistenza sanitaria inizia domani alle 9:00 AM." Configuri un promemoria una volta sull'evento, e B1 lo invia secondo il programma tramite notifiche push e email. I membri possono controllare quali promemoria ricevono dalle loro [Preferenze di notifica](../../b1-church/getting-started/notification-preferences).
+Evento reminders automatically notify the right people before an Evento happens -- for example, "Don't miss it! The healthcare workshop starts Domani at 9:00 AM." You configure a reminder once on the Evento, and B1 sends it out on schedule through push notifications and email. Membri can control which reminders they receive from their own [Notification Preferences](../../b1-church/getting-started/notification-preferences).
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di iniziare</h4>
+<h4>Prima di Iniziare</h4>
 
-- Crea l'evento di cui vuoi ricordare alle persone (vedi [Creazione di calendari](creating-calendars))
-- Per raggiungere i partecipanti registrati, [abilita la registrazione](creating-calendars) sull'evento
-- Per raggiungere un intero gruppo, assicurati che l'evento appartiene a un [gruppo](../groups/creating-groups) con membri
+- Crea the Evento you want Per remind people about (see [Creating Calendars](creating-calendars))
+- Per reach registered attendees, [enable registration](creating-calendars) on the Evento
+- Per reach a whole Gruppo, make sure the Evento belongs Per a [group](../groups/creating-groups) with Membri
 
 </div>
 
-## Configurazione di un promemoria
+## Setting Up a Reminder
 
-Configuri i promemoria nella sezione **Promemoria** dell'evento.
+You configure reminders in the **Reminders** section of the Evento.
 
-- Quando **crei un nuovo evento**, espandi la sezione **Promemoria** nell'editor di eventi prima di salvare.
-- Per un **evento esistente**, apri la pagina **Dettagli della registrazione** dell'evento (dalla sezione **Registrazioni**) per aggiungere o modificare il suo promemoria.
+- When you **Crea a new Evento**, expand the **Reminders** section in the Evento editor before saving.
+- For an **existing Evento**, Apri the Evento's **Registration Details** page (from the **Registrations** section) Per Aggiungi or change its reminder.
 
-1. Attiva **Abilita promemoria**.
-2. Scegli **Quando** inviare. Scegli fino a tre tempi: **7 giorni prima**, **3 giorni prima**, **1 giorno prima** e **Giorno dell'evento**.
-3. Imposta l'**Ora del giorno** in cui il promemoria dovrebbe andare (l'impostazione predefinita è **9:00 AM**, nel fuso orario locale della tua chiesa).
-4. Scegli **Chi** dovrebbe essere ricordato (vedi [Chi viene ricordato](#chi-viene-ricordato) di seguito).
-5. Facoltativamente aggiungi un **Messaggio**. Lascialo vuoto per utilizzare la formulazione predefinita, oppure scrivi il tuo personalizzato -- puoi includere `{{eventTitle}}` e verrà sostituito con il nome dell'evento.
-6. Scegli i **Canali**: notifica **Push**, **Email**, o entrambi.
-7. Salva l'evento.
+1. Turn on **Enable reminders**.
+2. Scegli **When** Per send. Pick up Per three timings: **7 days before**, **3 days before**, **1 Giorno before**, and **Giorno of**.
+3. Set the **Ora of Giorno** the reminder should go out (default is **9:00 AM**, in your church's local Ora zone).
+4. Scegli **Who** should be reminded (see [Who Gets Reminded](#who-gets-reminded) below).
+5. Optionally Aggiungi a **Message**. Leave it blank Per use the default wording, or write your own -- you can include `{{eventTitle}}` and it will be replaced with the Evento's name.
+6. Scegli the **Channels**: **Push** notification, **Email**, or both.
+7. Salva the Evento.
 
-Mentre effettui modifiche, un'**anteprima in diretta** mostra approssimativamente quante persone verranno richiamate, quanti partecipanti non possono essere raggiunti e i prossimi orari di invio programmati -- così puoi confermare che il promemoria appare corretto prima di salvare.
+As you make changes, a **live preview** shows roughly how many people will be reminded, how many attendees can't be reached, and the Avanti scheduled send times -- so you can confirm the reminder looks right before you Salva.
 
-## Chi viene ricordato
+## Who Gets Reminded
 
-L'impostazione **Chi** controlla a chi va il promemoria:
+The **Who** setting controls who the reminder goes Per:
 
-- **Solo registrati** -- Tutti coloro che sono registrati per l'evento e collegati a un record di persona. Questo è l'impostazione predefinita quando l'evento ha la registrazione abilitata, quindi un promemoria per un piccolo evento registrato non va mai accidentalmente a un intero gruppo.
-- **Soli capi/registrati** -- Un promemoria per registrazione (la persona che si è registrata), piuttosto che ogni membro della famiglia sulla registrazione.
-- **Membri del gruppo** -- Tutti nel gruppo dell'evento. Questo è l'impostazione predefinita quando l'evento non utilizza la registrazione.
-- **Auto** -- Utilizza i registrati quando la registrazione è abilitata, altrimenti il gruppo.
+- **Registrants only** -- Everyone registered for the Evento who is linked Per a person record. This is the default when the Evento has registration Abilitato, so a reminder for a small registered Evento never accidentally goes Per a whole Gruppo.
+- **Heads / registrants only** -- One reminder per registration (the person who registered), rather than every family Membro on the registration.
+- **Gruppo Membri** -- Everyone in the Evento's Gruppo. This is the default when the Evento does not use registration.
+- **Auto** -- Uses registrants when registration is Abilitato, otherwise the Gruppo.
 
 :::info
-I guest aggiunti solo per nome (senza un record di persona collegato) non possono ricevere un promemoria, perché non c'è un account, dispositivo o email a cui inviare. L'anteprima ti dice quanti partecipanti rientrano in questo gruppo quindi non ci sono sorprese. I membri che hanno rinunciato alla comunicazione vengono anche saltati.
+Ospiti added by name only (without a linked person record) can't receive a reminder, because there's No Account, device, or email Per send Per. The preview tells you how many attendees fall into this Gruppo so there are No surprises. Membri who have opted out of communication are also skipped.
 :::
 
-## Quando i promemoria vengono inviati
+## When Reminders Are Sent
 
-- I promemoria si attivano all'**ora del giorno che scegli**, nel fuso orario locale della tua chiesa, su ognuno degli offset che hai selezionato.
-- Se **cambi la data o l'ora dell'evento**, i promemoria in sospeso vengono automaticamente riprogrammati -- non devi modificare il promemoria.
-- Se **elimini l'evento** (o annulli una singola occorrenza di un evento ricorrente), i suoi promemoria in sospeso vengono automaticamente annullati.
-- Gli eventi ricorrenti vengono gestiti automaticamente: ogni occorrenza imminente ottiene il suo promemoria.
+- Reminders fire at the **Ora of Giorno you Scegli**, in your church's local Ora zone, on each of the offsets you selected.
+- If you **change the Evento's Data or Ora**, the In Sospeso reminders are automatically rescheduled -- you don't need Per Modifica the reminder.
+- If you **Elimina the Evento** (or cancel a single occurrence of a recurring Evento), its In Sospeso reminders are automatically cancelled.
+- Recurring Eventi are handled automatically: each upcoming occurrence gets its own reminder.
 
 :::tip
-I promemoria vengono inviati **push per primo, con email come fallback**. Se un membro ha le notifiche push abilitate, riceverà un push; in caso contrario, riceverà un email. I membri scelgono quali canali vogliono per tipo di notifica nelle loro [Preferenze di notifica](../../b1-church/getting-started/notification-preferences).
+Reminders are sent **push first, with email as a fallback**. If a Membro has push notifications Abilitato, they'll get a push; if not, they'll get an email instead. Membri Scegli which channels they want per notification Digita in their [Notification Preferences](../../b1-church/getting-started/notification-preferences).
 :::
 
-## Cosa possono controllare i membri
+## What Membri Can Control
 
-I promemoria rispettano sempre le [Preferenze di notifica](../../b1-church/getting-started/notification-preferences) di ogni membro. Un membro può:
+Reminders always respect each Membro's [Notification Preferences](../../b1-church/getting-started/notification-preferences). A Membro can:
 
-- Attivare/disattivare **Promemoria di eventi** per push o email mentre mantiene altre notifiche attive.
-- Impostare **ore silenziose** in modo che le notifiche non urgenti aspettino un momento ragionevole.
+- Turn **Evento Reminders** off for push or email while keeping other notifications on.
+- Set **quiet hours** so non-urgent notifications wait until a reasonable Ora.
 
-Non puoi ignorare la scelta di un membro di rinunciare ai promemoria di eventi -- questo mantiene B1 conforme alle regole anti-spam e mantiene i membri in controllo della loro inbox.
+You can't override a Membro's choice Per opt out of Evento reminders -- this keeps B1 compliant with anti-spam rules and keeps Membri in control of their inbox.
 
-## Promemoria di servizio
+## Serving Reminders
 
-I volontari pianificati su un piano ricevono un **promemoria di servizio** separato con i dettagli del piano e, quando non hanno ancora risposto, pulsanti **Accetta / Rifiuta** direttamente nell'email. Questi promemoria vengono configurati sul tipo di piano piuttosto che su un evento del calendario -- vedi [Volontari domenicali](../guides/sunday-volunteers) per come funzionano la pianificazione dei volontari e i promemoria.
+Volontari scheduled on a plan receive a separate **serving reminder** with the plan details and, when they haven't responded yet, **Accept / Decline** buttons right in the email. Those reminders are configured on the plan Digita rather than on a calendar Evento -- see [Sunday Volunteers](../guides/sunday-volunteers) for how Volontario scheduling and reminders work.
 
-## Passaggi successivi
+## Avanti Steps
 
-- [Preferenze di notifica](../../b1-church/getting-started/notification-preferences) -- Cosa possono controllare i membri
-- [Guida alla registrazione di eventi](../guides/event-registration) -- Configura la registrazione in modo che i promemoria possano raggiungere i partecipanti
-- [Creazione di calendari](creating-calendars) -- Torna alla configurazione del calendario
+- [Notification Preferences](../../b1-church/getting-started/notification-preferences) -- What Membri can control
+- [Event Registration Guide](../guides/event-registration) -- Set up registration so reminders can reach attendees
+- [Creating Calendars](creating-calendars) -- Return Per calendar Configurazione

@@ -1,7 +1,59 @@
-﻿---
-title: "पाठ का कार्यक्रम बनाना"
+---
+title: "पाठों को शेड्यूल करना"
 ---
 
-# पाठ का कार्यक्रम बनाना
+# Scheduling Lessons
 
-कक्षाओं को सेट अप करने के बाद, अगला कदम पाठ का कार्यक्रम बनाना है।
+<div class="article-intro">
+
+Once your classrooms are set up, the next step is scheduling lessons so your volunteers know exactly what to teach and when. Scheduling connects the lesson content from Lessons.church to your classroom calendar.
+
+</div>
+
+<div class="prereqs">
+<h4>Before You Begin</h4>
+
+- [Set up at least one classroom](./setting-up-classrooms.md) in the portal
+- [Browse the content library](../browsing/index.md) to find a program and study you want to teach
+
+</div>
+
+## Viewing a Classroom Schedule
+
+1. Log in and navigate to your **Portal**.
+2. Click on the **classroom** you want to schedule.
+3. The schedule view displays the **last 4 past lessons** and the **next 4 upcoming lessons**. This gives you a quick look at what was recently taught and what is coming up.
+
+## Adding a Lesson to the Schedule
+
+1. From the classroom schedule view, click to add a new lesson.
+2. Select the **date** for the lesson.
+3. Choose the **program** you want to teach from (for example, "Bible Stories for Kids").
+4. Select the **study** within that program (for example, "Creation and Early Stories").
+5. Pick the specific **lesson** you want to schedule.
+6. Choose the appropriate **venue** for this classroom. Venues represent age-group-specific versions of the lesson content (for example, "Preschool" or "Elementary"). Picking the right venue ensures your volunteers see content tailored to their classroom's age group.
+7. Save the scheduled lesson.
+
+The lesson will now appear on the classroom's schedule for that date.
+
+:::info
+Programs, studies, and lessons are the content hierarchy on Lessons.church. A program contains multiple studies, and each study contains individual lessons. Venues provide age-specific variations of the same lesson. See [Programs and Studies](../browsing/programs-and-studies.md) for a full explanation.
+:::
+
+## How Volunteers Use the Schedule
+
+Once you have scheduled lessons, your volunteers can open the portal, select their classroom, and immediately see what is coming up. They can review the lesson content ahead of time, download any materials they need, and arrive prepared. No more guesswork about what to teach next.
+
+## Tips for Scheduling
+
+- **Plan ahead** -- Churches schedule classroom lessons in [B1 Admin](../../b1-admin/serving/scheduling-lessons.md), including applying a published year plan.
+- **Stay consistent** -- Following a program sequentially helps kids build on what they learned the previous week.
+- **Check the history** -- Use the past lesson list to make sure you are not accidentally repeating content.
+
+:::warning
+Make sure to select the correct venue for your classroom's age group. Choosing the wrong venue means your volunteers will see content designed for a different age level.
+:::
+
+## What's Next
+
+After scheduling lessons, you may want to [customize the lesson content](../customization/customizing-lessons.md) for specific classrooms to match your teaching style and age group needs. When it is time to teach, learn about [Presenting](../presenting/index.md) to deliver lessons effectively.

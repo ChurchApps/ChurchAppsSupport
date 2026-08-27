@@ -1,66 +1,66 @@
 ---
-title: "समूह में शामिल होने का अनुरोध"
+title: "Requesting to Join a Group"
 ---
 
-# समूह में शामिल होने का अनुरोध
+# Requesting to Join a Group
 
 <div class="article-intro">
 
-कुछ समूहों को आप सदस्य बनने से पहले approval की आवश्यकता होती है। जब किसी समूह की यह setting हो, तो आप एक join request submit करते हैं — optionally एक message को group leader को शामिल करते हैं — और leader के approve या decline करने की प्रतीक्षा करते हैं। आप अपनी pending requests की स्थिति देख सकते हैं और उन्हें किसी भी समय cancel कर सकते हैं।
+Some groups require approval before you can become a member. When a group has this setting, you submit a join request — optionally including a message to the group leader — and wait for the leader to approve or decline. You can view the status of your pending requests and cancel them at any time.
 
 </div>
 
 <div class="prereqs">
-<h4>शुरू करने से पहले</h4>
+<h4>Before You Begin</h4>
 
-- एक समूह में join करने का अनुरोध करने के लिए आपको अपने B1.church खाते में [logged in](../getting-started/logging-in.md) होना चाहिए।
+- You must be [logged in](../getting-started/logging-in.md) to your B1.church account to request to join a group.
 
 </div>
 
-## Join करना vs. Join करने का अनुरोध
+## Joining vs. Requesting to Join
 
-समूहों के अलग-अलग join policies हो सकते हैं जो उनके administrators द्वारा सेट किए जाते हैं:
+Groups can have different join policies set by their administrators:
 
-- **Open** -- समूह के detail पृष्ठ पर **Join Group** पर क्लिक करें और आप तुरंत सदस्य के रूप में जोड़े जाते हैं।
-- **Request required** -- **Request to Join** पर क्लिक करके एक request submit करें जिसे आप सदस्य बनने से पहले किसी group leader को approve करना चाहिए।
-- **Closed** -- कोई join बटन दिखाई नहीं देता है। सदस्यों को leaders द्वारा manually जोड़ा जाना चाहिए।
+- **Open** -- Click **Join Group** on the group's detail page and you are immediately added as a member.
+- **Request required** -- Click **Request to Join** to submit a request that a group leader must approve before you become a member.
+- **Closed** -- No join button appears. Members must be added manually by leaders.
 
-## Join Request कैसे Submit करें
+## How to Submit a Join Request
 
-1. जिस समूह में आप join करना चाहते हैं उस समूह को browse करें। यदि आपको इसे खोजने में मदद की आवश्यकता है तो [Browsing Groups](./browsing-groups.md) देखें।
-2. समूह के detail पृष्ठ को खोलें।
-3. **Request to Join** पर क्लिक करें।
-4. एक dialog दिखाई देता है जहां आप optionally एक message group leader के लिए लिख सकते हैं कि आप join क्यों करना चाहते हैं।
-5. अपनी request को submit करने के लिए **Submit** पर क्लिक करें।
+1. Browse to the group you want to join. See [Browsing Groups](./browsing-groups.md) if you need help finding it.
+2. Open the group's detail page.
+3. Click **Request to Join**.
+4. A dialog appears where you can optionally write a message to the group leader explaining why you would like to join.
+5. Click **Submit** to send your request.
 
-समूह के leaders को आपकी request के बारे में notification प्राप्त होगा। एक बार जब वे इसकी समीक्षा करते हैं, तो आपको outcome के साथ एक notification प्राप्त होगा।
+The group's leaders will receive a notification about your request. Once they review it, you will receive a notification with the outcome.
 
 :::tip
-एक brief message शामिल करना — जैसे कि आपने समूह के बारे में कहां सुना या आप इससे क्या प्राप्त करने की उम्मीद करते हैं — leader को तेजी से decision लेने में मदद कर सकता है।
+Including a brief message — such as how you heard about the group or what you hope to get out of it — can help the leader make a faster decision.
 :::
 
-## अपनी Requests की स्थिति की जांच करना
+## Checking the Status of Your Requests
 
-Request को submit करने के बाद, आप **Groups** पृष्ठ से इसकी स्थिति देख सकते हैं:
+After submitting a request, you can view its status from the **Groups** page:
 
-1. अपने चर्च की B1.church site पर **Groups** पृष्ठ पर नेविगेट करें।
-2. **Pending Requests** सेक्शन तक स्क्रॉल करें।
-3. प्रत्येक pending request समूह के नाम और जिस तारीख को आपने इसे submit किया है वह दिखाता है।
+1. Navigate to the **Groups** page on your church's B1.church site.
+2. Scroll down to the **Pending Requests** section.
+3. Each pending request shows the group name and the date you submitted it.
 
-यदि कोई request approve या decline हो गई है, तो आपको एक notification प्राप्त होगा — approved requests आपको समूह में सदस्य के रूप में ले जाता है।
+If a request has been approved or declined, you will receive a notification — approved requests move you into the group as a member.
 
-## Request को Cancel करना
+## Cancelling a Request
 
-यदि आप अपना मन बदल लेते हैं तो leader आपकी request को review करने से पहले:
+If you change your mind before a leader reviews your request:
 
-1. **Groups** पृष्ठ पर जाएं।
-2. **Pending Requests** सेक्शन में अपनी request खोजें।
-3. request के बगल में **Cancel** पर क्लिक करें।
+1. Go to the **Groups** page.
+2. Find your request in the **Pending Requests** section.
+3. Click **Cancel** next to the request.
 
-Request तुरंत वापस ले लिया जाता है और leader इसे अब नहीं देखेगा।
+The request is immediately withdrawn and the leader will no longer see it.
 
-## संबंधित लेख
+## Related Articles
 
-- [Browsing Groups](./browsing-groups.md) -- शामिल होने के लिए समूहों को खोजें
-- [Group Details](./group-details.md) -- आप समूह के page पर क्या देख और कर सकते हैं यह जानें
-- [Group Conversations](./conversations.md) -- एक बार जब आप सदस्य हों तो discussions में भाग लें
+- [Browsing Groups](./browsing-groups.md) -- Find groups to join
+- [Group Details](./group-details.md) -- What you can see and do on a group's page
+- [Group Conversations](./conversations.md) -- Participate in discussions once you are a member

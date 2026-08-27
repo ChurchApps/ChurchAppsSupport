@@ -6,36 +6,36 @@ title: "Blog"
 
 <div class="article-intro">
 
-A página Blog compartilha notícias, atualizações e devocionais da sua igreja. As postagens são organizadas por categoria e tag, para que você possa navegar pelos assuntos que mais lhe interessam.
+The Blog page shares news, updates, and devotionals from your church. Posts are organized by category and tag, so you can browse the topics you care about most.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Before You Begin</h4>
 
-- Não é necessário login para ler as postagens do blog. A página Blog é acessível publicamente.
-- Sua igreja precisa ter publicado pelo menos uma postagem para que a página Blog apareça.
+- No login is required to read blog posts. The Blog page is publicly accessible.
+- Your church must have published at least one post for the Blog page to appear.
 
 </div>
 
-## Navegando pelas Postagens
+## Browsing Posts
 
-1. Acesse a página **Blog** pela navegação do site da sua igreja.
-2. As postagens são listadas das mais recentes para as mais antigas, 10 por página. Use os links **Older**/**Newer** na parte inferior para navegar pelo arquivo.
-3. Clique em uma postagem para lê-la na íntegra.
+1. Navigate to the **Blog** page from your church's site navigation.
+2. Posts are listed newest first, 10 per page. Use the **Older**/**Newer** links at the bottom to page through the archive.
+3. Click a post to read it in full.
 
-## Filtrando por Categoria ou Tag
+## Filtering by Category or Tag
 
-Clique em um chip de **categoria** ou **tag** em qualquer postagem, ou na lista do blog, para filtrar a listagem apenas para as postagens que correspondem. Isso facilita acompanhar um assunto ou série específica.
+Click a **category** or **tag** chip on any post, or in the blog list, to filter the listing down to posts that match. This makes it easy to catch up on a specific topic or series.
 
-## Postagens Relacionadas
+## Related Posts
 
-No final de cada postagem, você encontrará uma seção **Related Posts** sugerindo outras postagens da mesma categoria.
+At the end of each post, you will find a **Related Posts** section suggesting other posts from the same category.
 
-## Assinando via RSS
+## Subscribing via RSS
 
-Todo blog de igreja publica um feed RSS que leitores de feed e ferramentas de automação podem assinar, para que você seja notificado automaticamente quando uma nova postagem for publicada, em vez de verificar manualmente.
+Every church blog publishes an RSS feed that feed readers and automation tools can subscribe to, so you are notified automatically when a new post goes up rather than checking back manually.
 
 ## Disponibilidade
 
-A página Blog fica disponível quando sua igreja publica pelo menos uma postagem. Se você não vir um link **Blog** na navegação da sua igreja, é possível que ela ainda não tenha essa configuração feita. Entre em contato com o administrador da sua igreja para mais informações.
+The Blog page is available when your church has published at least one post. If you do not see a **Blog** link in your church's navigation, your church may not have this set up yet. Contact your church administrator for more information.

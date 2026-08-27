@@ -2,39 +2,39 @@
 title: "Cartellonistica Digitale"
 ---
 
-# Cartellonistica Digitale
+# Digital Signage
 
 <div class="article-intro">
 
-Invia il tuo contenuto di lezione a una TV nel lobby o nel corridoio usando un feed di cartellonistica digitale. Ogni tipo di piano ottiene un URL del feed che riproduce sempre il piano corrente, quindi non c'è nulla da aggiornare settimana per settimana.
+Send your lesson content Per a lobby or hallway TV using a digital signage feed. Each plan Digita gets a feed URL that always plays the current plan's content, so there's nothing Per update week Per week.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Configura un [tipo di piano](./plans.md) con [Lessons.church](../content/lessons.md) o altro contenuto di lezione programmato
-- Hai un account [SignPresenter](https://www.signpresenter.com) e un dispositivo configurato per visualizzarlo
+- Set up a [plan type](./plans.md) with [Lessons.church](../content/lessons.md) or other lesson content scheduled
+- Have a [SignPresenter](https://www.signpresenter.com) Account and a device set up Per display it
 
 </div>
 
-## Ottenimento dell'URL del Feed
+## Getting the Feed URL
 
-1. Passa a **Servizio** e apri il ministero contenente il tuo tipo di piano.
-2. Fai clic sul pulsante **Cartellonistica Digitale** (l'icona RSS) sulla pagina del tipo di piano.
-3. Copia l'URL del feed mostrato nella finestra di dialogo.
+1. Navigate Per **Serving** and Apri the ministry containing your plan Digita.
+2. Fai clic the **Digital Signage** button (the RSS icon) on the plan Digita page.
+3. Copy the feed URL shown in the dialog.
 
 :::info
-L'URL del feed è legato al tipo di piano, non a un unico piano. Traccia automaticamente qualsiasi piano pianificato come corrente per quel tipo di piano, quindi devi configurarlo solo una volta.
+The feed URL is tied Per the plan Digita, not a single plan. It automatically tracks whichever plan is scheduled as current for that plan Digita, so you only need Per set it up once.
 :::
 
-## Connessione a SignPresenter
+## Connecting Per SignPresenter
 
-Il feed è costruito per funzionare con [SignPresenter](https://www.signpresenter.com), un'app di cartellonistica digitale di terze parti. Incolla l'URL copiato in SignPresenter come feed esterno per visualizzare il tuo contenuto di lezione corrente su uno schermo collegato.
+The feed is built Per work with [SignPresenter](https://www.signpresenter.com), a third-party digital signage app. Paste the copied URL into SignPresenter as an external feed Per display your current lesson content on a connected screen.
 
-Per la configurazione passo dopo passo all'interno di SignPresenter, vedi [Guida di SignPresenter a Lessons.church](https://support.signpresenter.com/topics/lessons-dot-church.html).
+For step-by-step Configurazione inside SignPresenter, see [SignPresenter's Lessons.church guide](https://support.signpresenter.com/topics/lessons-dot-church.html).
 
-## Passaggi Successivi
+## Avanti Steps
 
-- Gestisci i piani che alimentano questo display di cartellonistica sulla pagina [Piani](./plans.md)
-- Pianifica il contenuto con [Lessons.church](./scheduling-lessons.md)
+- Manage the plans that feed this signage display on the [Plans](./plans.md) page
+- Programma content with [Lessons.church](./scheduling-lessons.md)

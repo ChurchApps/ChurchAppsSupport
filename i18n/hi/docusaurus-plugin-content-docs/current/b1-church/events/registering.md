@@ -1,90 +1,90 @@
 ---
-title: "इवेंट्स के लिए रजिस्टर करना"
+title: "कार्यक्रमों के लिए पंजीकरण"
 ---
 
-# इवेंट्स के लिए रजिस्टर करना
+# Registering for Events
 
 <div class="article-intro">
 
-जब आपका चर्च किसी इवेंट के लिए रजिस्ट्रेशन सक्षम करता है, तो आप एक सरल चरण-दर-चरण प्रक्रिया के माध्यम से साइन अप कर सकते हैं। आप खुद को रजिस्टर कर सकते हैं और परिवार के सदस्यों को जोड़ सकते हैं, चाहे आपके पास खाता हो या आप अतिथि के रूप में विज़िट कर रहे हों। भुगतान वाले इवेंट्स के लिए, आप एक अटेंडी प्रकार चुनते हैं, कोई भी वैकल्पिक अतिरिक्त चीज़ें जोड़ते हैं, डिस्काउंट कोड लागू करते हैं, और अंत में सुरक्षित रूप से भुगतान करते हैं।
+When your church enables registration for an event, you can sign up through a simple step-by-step process. You can register yourself and add family members, whether you have an account or are visiting as a guest. For paid events, you choose an attendee type, add any optional extras, apply a discount code, and pay securely at the end.
 
 </div>
 
 <div class="prereqs">
-<h4>शुरू करने से पहले</h4>
+<h4>Before You Begin</h4>
 
-- आपके चर्च में उस इवेंट के लिए इवेंट रजिस्ट्रेशन सक्षम होना चाहिए
-- रजिस्ट्रेशन विंडो खुली होनी चाहिए (एडमिनिस्ट्रेटर द्वारा तय की गई ओपन और क्लोज़ तारीखों के बीच)
+- Your church must have event registration enabled for the event
+- The registration window must be open (between the open and close dates set by the administrator)
 
 </div>
 
-## चरण 1: अपनी जानकारी दर्ज करें
+## Step 1: Enter Your Information
 
-1. चर्च कैलेंडर से, वह इवेंट खोलें जिसके लिए आप रजिस्टर करना चाहते हैं और **Register for this Event** पर क्लिक करें।
-2. रजिस्ट्रेशन पेज लोड होता है और इवेंट का शीर्षक, विवरण, और तारीख दिखाता है।
-3. यदि आप **लॉग इन** हैं, तो फ़ॉर्म आपका नाम दिखाता है और पुष्टि करता है कि आप अपने खाते के तहत रजिस्टर कर रहे हैं।
-4. यदि आप **अतिथि** हैं (लॉग इन नहीं हैं), तो भरें:
-   - **पहला नाम** (आवश्यक)
-   - **अंतिम नाम** (आवश्यक)
-   - **ईमेल** (आवश्यक)
-   - **फ़ोन** (वैकल्पिक)
-5. यदि इवेंट में अटेंडी प्रकार हैं (उदाहरण के लिए, अलग-अलग कीमतों पर Adult और Child), तो **अपना रजिस्ट्रेशन प्रकार** चुनें। प्रत्येक प्रकार अपनी कीमत दिखाता है, और जो प्रकार खत्म हो चुके हैं वे **Sold out** के रूप में दिखते हैं।
+1. From the church calendar, open the event you want to register for and click **Register for this Event**.
+2. The registration page loads showing the event title, description, and date.
+3. If you are **logged in**, the form shows your name and confirms you are registering under your account.
+4. If you are a **guest** (not logged in), fill in:
+   - **First Name** (required)
+   - **Last Name** (required)
+   - **Email** (required)
+   - **Phone** (optional)
+5. If the event has attendee types (for example, Adult and Child at different prices), choose **your registration type**. Each type shows its price, and types that have run out show as **Sold out**.
 
 :::info
-यदि इवेंट में क्षमता सीमा है, तो एक प्रोग्रेस बार दिखाता है कि कितने स्थान शेष हैं। यदि इवेंट भरा हुआ है और आपके चर्च ने वेटलिस्ट सक्षम किया है, तो आप फिर भी वेटलिस्ट में शामिल होने के लिए साइनअप पूरा कर सकते हैं — नीचे [वेटलिस्ट में शामिल होना](#joining-a-waitlist) देखें।
+If the event has a capacity limit, a progress bar shows how many spots remain. If the event is full and your church has enabled a waitlist, you can still complete the signup to join the waitlist — see [Joining a Waitlist](#joining-a-waitlist) below.
 :::
 
-## चरण 2: परिवार के सदस्य जोड़ें
+## Step 2: Add Family Members
 
-1. यदि आप परिवार के अतिरिक्त सदस्यों को रजिस्टर करना चाहते हैं, तो हर व्यक्ति के लिए उनका **पहला नाम** और **अंतिम नाम** दर्ज करें।
-2. यदि इवेंट में अटेंडी प्रकार हैं, तो आपके द्वारा जोड़े गए हर व्यक्ति के लिए एक प्रकार चुनें।
-3. अधिक लोगों को जोड़ने के लिए **Add Member** पर क्लिक करें (कुल मिलाकर 10 तक)।
-4. रजिस्ट्रेशन से किसी सदस्य को हटाने के लिए उसके बगल में हटाने वाले बटन पर क्लिक करें।
-5. यदि आप केवल खुद को रजिस्टर कर रहे हैं, तो आप इस चरण को छोड़ सकते हैं।
+1. If you want to register additional family members, enter their **First Name** and **Last Name** for each person.
+2. If the event has attendee types, pick a type for each person you add.
+3. Click **Add Member** to add more people (up to 10 total).
+4. Click the remove button next to any member to take them off the registration.
+5. If you are only registering yourself, you can skip this step.
 
-## चरण 3: विकल्प और चयन चुनें (यदि दिए गए हों)
+## Step 3: Choose Options & Selections (If Offered)
 
-कुछ इवेंट्स वैकल्पिक भुगतान वाले ऐड-ऑन देते हैं — टी-शर्ट, भोजन, गतिविधि अपग्रेड।
+Some events offer optional priced add-ons — T-shirts, meals, activity upgrades.
 
-1. यदि इवेंट में चयन हैं, तो एक **Options & Selections** चरण दिखाई देता है।
-2. आप कितनी मात्रा चाहते हैं यह चुनने के लिए मात्रा स्टेपर्स का उपयोग करें। मुफ़्त विकल्प **Free** के रूप में दिखते हैं, और सीमित विकल्प दिखाते हैं कि कितने शेष हैं।
-3. **Continue** पर क्लिक करें।
+1. If the event has selections, an **Options & Selections** step appears.
+2. Use the quantity steppers to choose how many of each you want. Free options show as **Free**, and limited options show how many are remaining.
+3. Click **Continue**.
 
-## चरण 4: प्रश्नों के उत्तर दें (यदि पूछे गए हों)
+## Step 4: Answer Questions (If Asked)
 
-कुछ इवेंट्स रजिस्ट्रेंट्स से कुछ अतिरिक्त प्रश्नों के उत्तर देने के लिए कहते हैं — आहार संबंधी प्रतिबंध, टी-शर्ट आकार, आपातकालीन संपर्क, और इसी तरह के विवरण।
+Some events ask registrants to answer a few extra questions -- dietary restrictions, T-shirt size, emergency contact, and similar details.
 
-1. यदि इवेंट में प्रश्न जुड़े हैं, तो अगला एक **Questions** चरण दिखाई देता है।
-2. अपने उत्तर भरें और आगे बढ़ें।
+1. If the event has questions attached, a **Questions** step appears next.
+2. Fill in your answers and continue.
 
-यदि इवेंट में कोई प्रश्न जुड़ा नहीं है, तो यह चरण स्वचालित रूप से छोड़ दिया जाता है।
+If the event has no questions attached, this step is skipped automatically.
 
-## चरण 5: भुगतान करें (भुगतान वाले इवेंट्स)
+## Step 5: Pay (Paid Events)
 
-यदि आपके रजिस्ट्रेशन की कोई लागत है, तो **Payment** चरण एक **Order Summary** दिखाता है जिसमें हर अटेंडी, हर चयन, कोई भी डिस्काउंट, और **कुल राशि (Total)** सूचीबद्ध होते हैं।
+If your registration has a cost, the **Payment** step shows an **Order Summary** listing each attendee, each selection, any discount, and the **Total**.
 
-- **डिस्काउंट कोड** -- यदि आपके चर्च ने आपको कोड दिया है, तो उसे दर्ज करें और **Apply** पर क्लिक करें। डिस्काउंट तुरंत दिखाई देता है, और यदि कोड समाप्त हो गया है, अभी शुरू नहीं हुआ है, या अधिक अटेंडीज़ की आवश्यकता है तो आपको एक स्पष्ट संदेश दिखेगा।
-- **लॉग इन किए हुए सदस्य** सेव किए गए कार्ड से भुगतान कर सकते हैं या **Use a new card** चुन सकते हैं।
-- **अतिथि** सीधे अपने कार्ड विवरण दर्ज करते हैं।
+- **Discount code** -- If your church gave you a code, enter it and click **Apply**. The discount is reflected immediately, and you'll see a clear message if the code has expired, hasn't started yet, or requires more attendees.
+- **Logged-in members** can pay with a saved card or choose **Use a new card**.
+- **Guests** enter their card details directly.
 
-भुगतान और रजिस्ट्रेशन को एक ही चरण में पूरा करने के लिए **Pay & Register** पर क्लिक करें। आपके कार्ड का विवरण सीधे चर्च के भुगतान प्रदाता के पास जाता है और B1 द्वारा कभी संग्रहीत नहीं किया जाता है।
+Click **Pay & Register** to complete the payment and registration in one step. Your card details go directly to the church's payment provider and are never stored by B1.
 
-मुफ़्त रजिस्ट्रेशंस इस चरण को छोड़ देते हैं और सीधे पुष्टिकरण पर जाते हैं।
+Free registrations skip this step and go straight to confirmation.
 
-## चरण 6: पुष्टि करें
+## Step 6: Confirm
 
-इवेंट विवरण और आपके द्वारा रजिस्टर किए गए सभी लोगों की सूची के साथ एक पुष्टिकरण संदेश दिखाई देता है। आपको अपने खाते से जुड़े ईमेल पते (या अतिथि के रूप में आपके द्वारा दिए गए ईमेल) पर एक **पुष्टिकरण ईमेल** भी प्राप्त होगा।
+A confirmation message appears with the event details and a list of everyone you registered. You will also receive a **confirmation email** at the email address associated with your account (or the email you provided as a guest).
 
-## वेटलिस्ट में शामिल होना
+## Joining a Waitlist
 
-यदि इवेंट भरा हुआ है और आपके चर्च ने वेटलिस्ट सक्षम किया है, तो पहला चरण दिखाता है: *"यह इवेंट भरा हुआ है। आप वेटलिस्ट में शामिल हो सकते हैं और यदि कोई स्थान खुलता है तो हम आपको सूचित करेंगे।"* सामान्य रूप से साइनअप पूरा करें — जब तक आप वेटलिस्टेड हैं तब तक भुगतान छोड़ दिया जाता है। जब कोई स्थान खुलता है, तो आपको एक ईमेल मिलता है; यदि भुगतान बकाया है, तो उसमें इसे पूरा करने के लिए एक लिंक शामिल होता है। आप [मेरी रजिस्ट्रेशंस](./my-registrations) से भी अपनी स्थिति जांच सकते हैं और भुगतान कर सकते हैं।
+If the event is full and your church enabled the waitlist, the first step shows: *"This event is full. You can join the waitlist and we will notify you if a spot opens."* Complete the signup as normal — payment is skipped while you are waitlisted. When a spot opens, you receive an email; if a payment is due, it includes a link to complete it. You can also check your status and pay from [My Registrations](./my-registrations).
 
-## रजिस्ट्रेशन बदलना या रद्द करना
+## Changing or Canceling a Registration
 
-यदि आप लॉग इन हैं, तो आप सदस्य पोर्टल में **Registrations** पेज से खुद अपने रजिस्ट्रेशन को संपादित या रद्द कर सकते हैं — [मेरी रजिस्ट्रेशंस](./my-registrations) देखें। अतिथियों को चर्च कार्यालय से संपर्क करना चाहिए, और स्टाफ B1 Admin रजिस्ट्रेशंस पेज से बदलाव कर सकता है।
+If you are logged in, you can edit or cancel your registration yourself from the **Registrations** page in the member portal — see [My Registrations](./my-registrations). Guests should contact the church office, and staff can make the change from the B1 Admin registrations page.
 
-## संबंधित लेख
+## Related Articles
 
-- [इवेंट्स अवलोकन](./index.md) -- रजिस्ट्रेशन के साथ आगामी इवेंट्स ब्राउज़ करें
-- [मेरी रजिस्ट्रेशंस](./my-registrations) -- अपनी रजिस्ट्रेशंस देखें, संपादित करें, बकाया राशि चुकाएं, और रद्द करें
-- [डोनेशन करना](../giving/making-donations) -- इवेंट में भाग लेने के साथ-साथ डोनेशन करें
+- [Events Overview](./index.md) -- Browse upcoming events with registration
+- [My Registrations](./my-registrations) -- View, edit, pay balances, and cancel your registrations
+- [Making Donations](../giving/making-donations) -- Make a donation alongside event participation

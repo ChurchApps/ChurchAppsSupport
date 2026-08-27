@@ -1,63 +1,63 @@
 ---
-title: "Tracciamento della Presenza"
+title: "Monitoraggio della Frequenza"
 ---
 
-# Tracciamento della Presenza
+# Tracking Frequenza
 
 <div class="article-intro">
 
-Una volta che i tuoi campus, tempi di servizio e gruppi sono configurati, B1 Admin rende facile rivedere i dati di presenza e individuare le tendenze. La pagina Presenza fornisce due visualizzazioni di rapporti - la scheda **Presenza** per le tendenze a livello di chiesa e la scheda **Gruppi** per i dettagli a livello di gruppo. Usa questi strumenti per comprendere i modelli di crescita, identificare il disimpegno in declino e prendere decisioni basate sui dati per la tua chiesa.
+Once your campuses, Servizio times, and Gruppi are configured, B1 Admin makes it easy Per review Frequenza data and spot trends. The Frequenza page provides two reporting views -- the **Frequenza** tab for church-wide trends and the **Gruppi** tab for Gruppo-level detail. Use these tools Per understand growth patterns, identify declining engagement, and make data-driven decisions for your church.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- La tua struttura di presenza deve essere configurata con almeno un campus e un tempo di servizio. Vedi [Configurazione della Presenza](setup.md) se non lo hai ancora fatto.
-- I dati di presenza devono essere registrati prima che i rapporti mostrino risultati. I dati possono provenire da [voce manuale](recording-attendance.md) o [auto check-in](check-in.md).
+- Your Frequenza structure must be set up with at least one campus and Servizio Ora. See [Attendance Setup](setup.md) if you haven't done this yet.
+- Frequenza data needs Per be recorded before Rapporti will show results. Data can come from [manual entry](recording-attendance.md) or [self check-in](check-in.md).
 
 </div>
 
-## Visualizzazione delle Tendenze di Presenza
+## Viewing Frequenza Trends
 
-1. Apri **B1 Admin**, quindi apri il **menu della sezione** nell'angolo in alto a sinistra e scegli **Persone**.
-2. Fai clic sulla scheda **Presenza**.
-3. Il rapporto viene eseguito automaticamente quando la scheda si apre, mostrando la presenza in un intervallo di date predefinito.
+1. Apri **B1 Admin**, then Apri the **menu della sezione** in the angolo in alto a sinistra and Scegli **People**.
+2. Fai clic the **Frequenza** tab.
+3. The Rapporto runs automatically when the tab opens, showing Frequenza over a default Data range.
 
-## Filtro dei Tuoi Dati
+## Filtering Your Data
 
-Usa i filtri nella parte superiore della pagina per restringere i risultati:
+Use the filters at the inizio della pagina Per narrow the results:
 
-- **Intervallo di Date** - scegli una data di inizio e una data di fine per concentrarti su un periodo specifico.
-- **Campus** - seleziona un campus per vedere la presenza solo per quella sede.
-- **Tempo di Servizio** - scegli un tempo di servizio per approfondire una raccolta particolare.
+- **Data Range** -- Scegli a start and end Data Per focus on a specific period.
+- **Campus** -- Seleziona a campus Per see Frequenza for only that location.
+- **Servizio Ora** -- pick a Servizio Ora Per drill into a particular gathering.
 
-Il grafico e i dati si aggiornano non appena modifichi un filtro, quindi puoi rapidamente confrontare diversi periodi di tempo o sedi.
+The chart and data update as soon as you change a filter, so you can quickly compare different Ora periods or locations.
 
 :::info
-I rapporti vengono eseguiti automaticamente ogni volta che apri la scheda Presenza, quindi vedrai sempre numeri aggiornati senza necessità di fare clic su un pulsante di aggiornamento.
+Rapporti auto-run each Ora you Apri the Frequenza tab, so you will always see up-Per-Data numbers without needing Per Fai clic a refresh button.
 :::
 
-## Presenza del Gruppo
+## Gruppo Frequenza
 
-La scheda **Gruppi** mostra la presenza suddivisa per singolo gruppo. È utile quando vuoi monitorare una classe specifica, un team di ministero o un piccolo gruppo piuttosto che guardare i numeri del servizio complessivo.
+The **Gruppi** tab shows Frequenza broken down by individual Gruppo. This is useful when you want Per monitor a specific class, ministry team, or small Gruppo rather than looking at overall Servizio numbers.
 
-1. Seleziona la scheda **Gruppi**.
-2. Scegli un gruppo dall'elenco per vedere la sua cronologia di presenza.
-3. Usa il filtro dell'intervallo di date per regolare la finestra di rendicontazione.
+1. Seleziona the **Gruppi** tab.
+2. Scegli a Gruppo from the list Per see its Frequenza history.
+3. Use the Data range filter Per adjust the reporting window.
 
 :::tip
-La presenza del gruppo è particolarmente preziosa per i leader dei [piccoli gruppi](../groups/creating-groups.md) che desiderano tracciare l'impegno all'interno del loro gruppo nel tempo.
+Gruppo Frequenza is especially valuable for [small group](../groups/creating-groups.md) leaders who want Per track engagement within their Gruppo over Ora.
 :::
 
-## Suggerimenti per l'Utilizzo dei Dati di Presenza
+## Suggerimenti per Using Frequenza Data
 
-- Esamina le tendenze mensilmente per cogliere presto i modelli stagionali.
-- Confronta i dati a livello di campus per capire quali sedi stanno crescendo.
-- Usa i rapporti a livello di gruppo per seguire i [gruppi](../groups/group-members.md) che mostrano una presenza in declino.
-- Combina gli approfondimenti sulla presenza con lo strumento [Ricerca AI](../people/ai-search.md) per trovare persone che non hanno frequentato di recente.
+- Review trends monthly Per catch seasonal patterns early.
+- Compare campus-level data Per understand which locations are growing.
+- Use Gruppo-level Rapporti Per follow up with [groups](../groups/group-members.md) that show declining Frequenza.
+- Combine Frequenza insights with the [AI Search](../people/ai-search.md) tool Per Trova people who haven't attended recently.
 
 ## Pagine Correlate
 
-- [Registrazione della Presenza](recording-attendance.md) - inserisci manualmente la presenza per una sessione di gruppo
-- [Check-In](check-in.md) - configura l'auto check-in in modo che la presenza venga registrata automaticamente
+- [Recording Attendance](recording-attendance.md) -- manually Inserisci Frequenza for a Gruppo Sessione
+- [Check-In](check-in.md) -- set up self check-in so Frequenza is recorded automatically
