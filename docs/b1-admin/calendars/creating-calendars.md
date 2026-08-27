@@ -6,7 +6,7 @@ title: "Creating Calendars"
 
 <div class="article-intro">
 
-Creating a calendar in B1 Admin lets you build a curated view of events by connecting one or more groups. Events are managed by group leaders within their groups, and your calendar displays those events in one place. Even a domain admin cannot add or edit events directly in the calendar section unless they are a leader of the group the events belong to.
+Creating a calendar in B1 Admin lets you build a curated view of events by connecting one or more groups. Events are managed by group leaders within their groups, and your calendar displays those events in one place. Admins with edit access can add or edit events for any group. Non-admin group leaders can only manage events for groups they lead.
 
 </div>
 
