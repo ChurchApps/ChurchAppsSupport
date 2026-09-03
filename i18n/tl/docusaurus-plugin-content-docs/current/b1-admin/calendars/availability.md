@@ -6,67 +6,67 @@ title: "Availability Calendar"
 
 <div class="article-intro">
 
-Ibinibigay ng Availability Calendar ang malawak na pananaw sa lahat ng booking ng silid at resource sa buong simbahan mo. Mula rito, makikita mo kung ano ang naka-iskedyul, matutukoy ang mga conflict bago pa man ito mangyari, at direktang maka-book ng silid o resource para sa anumang event.
+Ang Availability Calendar ay nagbibigay sa iyo ng bird's-eye view ng lahat ng room at resource bookings sa buong iyong simbahan. Mula dito maaari mong makita kung ano ang naka-schedule, makita ang mga conflict bago sila mangyari, at mag-book ng isang kwarto o resource para sa anumang event nang direkta.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Ka Magsimula</h4>
+<h4>Bago Magsimula</h4>
 
-- Mag-set up ng kahit isang [silid o resource](rooms-resources) sa seksyong Rooms & Resources
-- Kailangan mo ng edit access sa seksyong Calendars sa B1 Admin
+- I-setup ang hindi bababa sa isang [room o resource](rooms-resources) sa Rooms & Resources section
+- Kailangan mo ng edit access sa Calendars section sa B1 Admin
 
 </div>
 
-## Pagbukas ng Availability Calendar
+## Pagbubukas ng Availability Calendar
 
-Sa B1 Admin, pumunta sa **Calendars** at piliin ang **Availability** mula sa sidebar.
+Sa B1 Admin, buksan ang **section menu** sa top-left corner at piliin ang **Calendars**, pagkatapos ay piliin ang **Availability**.
 
-## Pagbasa sa Calendar
+## Pagbabasa ng Calendar
 
-Ipinapakita ng calendar ang kasalukuyang buwan bilang default. Puwede kang mag-navigate pasulong at paatras gamit ang mga arrow sa itaas, o lumipat sa pagitan ng month, week, at day views.
+Ang calendar ay nagpapakita ng kasalukuyang buwan bilang default. Maaari kang mag-navigate pasulong at pabalik gamit ang mga arrow sa itaas, o lumipat sa pagitan ng buwan, linggo, at araw na mga view.
 
-Bawat event ay may color-code ayon sa status ng booking:
+Bawat event ay kulay-coded ng booking status:
 
 | Kulay | Kahulugan |
 |-------|---------|
-| Berde | Aprubado |
-| Kahel | Naghihintay ng approval |
-| Kulay-abo | Naka-block (hindi available) |
+| Luntian | Aprubado |
+| Orange | Naghihintay ng approval |
+| Kulay-abo | Blocked out (hindi available) |
 
-Kapag hinover ang isang event, makikita ang title ng event at ang silid o resource na kaugnay nito.
+Ang pag-hover sa isang event ay nagpapakita ng event title at ang kwarto o resource na ito ay nakadikit.
 
-## Pag-filter ayon sa Silid o Resource
+## Pag-filter ng Room o Resource
 
-Gamitin ang **Filter** dropdown sa kaliwang itaas para paliitin ang calendar sa isang partikular na silid o resource. Piliin ang **All Rooms & Resources** para bumalik sa buong view.
+Gamitin ang **Filter** dropdown sa tuktok na kaliwa upang maipitpit ang calendar sa isang kwarto o resource. Piliin ang **All Rooms & Resources** upang bumalik sa buong view.
 
-## Pag-book ng Silid o Resource
+## Pag-book ng Kwarto o Resource
 
-1. I-click ang button na **Book** sa kanang itaas na sulok ng page.
-2. Sa dialog na magbubukas, punan ang mga detalye ng event:
+1. I-click ang **Book** button sa tuktok na kanang sulok ng pahina.
+2. Sa dialog na bumubukas, punan ang mga detalye ng event:
    - **Title** — ang pangalan ng event
-   - **Start** at **End** na petsa/oras
+   - **Start** at **End** date/time
    - **Visibility** — Public o Private
-   - **Rooms** — piliin ang isa o higit pang silid na irereserba
-   - **Resources** — piliin ang isa o higit pang resource na irereserba
-3. Opsyonal na itakda ang mga oras ng **Setup** at **Teardown** (sa minuto). Nagbibigay ito ng dagdag na oras sa dalawang dulo ng booking para nakalaan ang espasyo para sa setup at paglilinis, kahit na hindi nagbabago ang start/end time ng event.
-4. Para ulitin ang booking, i-check ang **Repeats** at i-configure ang recurrence:
-   - **Repeat every** -- itakda ang interval (halimbawa, tuwing 2 linggo).
-   - **Frequency** -- Daily, Weekly, o Monthly. Sa Weekly, makakapili ka ng partikular na araw(-araw) ng linggo; sa Monthly, makakapili ka ng fixed na araw ng buwan o relative pattern tulad ng "ikalawang Martes."
-   - **Ends** -- Never, sa isang partikular na petsa, o pagkatapos ng itinakdang bilang ng pagkakataon.
-5. Para magtakda ng custom booking window (naiiba sa start/end ng event), i-toggle ang **Custom Booking Window** at ilagay ang start at end time ng window. Gamitin ito kapag kailangang ma-access ang isang silid sa labas ng nakalistang oras ng event.
-6. I-click ang **Save** para isumite ang booking.
+   - **Rooms** — piliin ang isa o maraming kwarto upang i-reserve
+   - **Resources** — piliin ang isa o maraming resources upang i-reserve
+3. Opsyonal na itakda ang **Setup** at **Teardown** na mga oras (sa mga minuto). Ang mga ito ay nag-pad sa booking sa parehong dulo kaya ang puwang ay nakalaan para sa setup at cleanup, kahit na ang event start/end times ay manatiling pareho.
+4. Upang ulitin ang booking, suriin ang **Repeats** at i-configure ang recurrence:
+   - **Repeat every** -- itakda ang interval (halimbawa, bawat 2 linggo).
+   - **Frequency** -- Daily, Weekly, o Monthly. Ang Weekly ay nagpapahintulot sa iyo na pumili ng specific na araw(s) ng linggo; Ang Monthly ay nagpapahintulot sa iyo na pumili ng fixed day ng buwan o isang relative pattern tulad ng "ang pangalawang Martes."
+   - **Ends** -- Hindi kailanman, sa isang specific na date, o pagkatapos ng isang itinakdang bilang ng occurrences.
+5. Upang tukuyin ang isang custom booking window (iba sa event start/end), i-toggle ang **Custom Booking Window** at pasingahin ang window start at end times. Gamitin ito kapag ang isang kwarto ay kailangang maging accessible sa labas ng event's listed hours.
+6. I-click ang **Save** upang ipadala ang booking.
 
 :::info
-Kung ang silid o resource ay may naka-configure na **Approval Group**, lalabas ang booking bilang **Pending** hanggang aprubahan ito ng isang leader ng grupong iyon. Tingnan ang [Calendar Approvals](approvals) para sa approval workflow.
+Kung ang kwarto o resource ay may na-configure na **Approval Group**, ang booking ay lilitaw bilang **Pending** hanggang sa ang isang lider ng gruong iyon ay aprubahan ito. Tingnan ang [Calendar Approvals](approvals) para sa approval workflow.
 :::
 
 :::tip
-Ihi-highlight ng calendar ang anumang conflict bago ka mag-save. Kung may makita kang conflict warning, ayusin ang iyong oras o pumili ng ibang silid.
+Ang calendar ay mag-highlight ng anumang mga conflict bago mo i-save. Kung makikita mo ang isang conflict warning, i-adjust ang iyong mga oras o pumili ng ibang kwarto.
 :::
 
-## Kaugnay na Artikulo
+## Mga Kaugnay na Artikulo
 
-- [Rooms, Resources & Scheduling](rooms-resources) — mag-set up ng mga booking na espasyo at kagamitan
+- [Rooms, Resources & Scheduling](rooms-resources) — i-setup ang mga bookable spaces at equipment
 - [Calendar Approvals](approvals) — aprubahan o tanggihan ang mga booking request
-- [Creating Calendars](creating-calendars) — pamahalaan ang mga event calendar
+- [Creating Calendars](creating-calendars) — pamahalaan ang mga calendar ng event

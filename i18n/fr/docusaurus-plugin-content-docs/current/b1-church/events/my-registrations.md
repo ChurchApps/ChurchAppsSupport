@@ -1,68 +1,50 @@
 ---
-title: "Mes inscriptions"
+title: "Mes Inscriptions"
 ---
 
-# Mes inscriptions
+# Mes Inscriptions
 
 <div class="article-intro">
 
-La page **Inscriptions** du portail membre est votre point central pour chaque événement auquel vous vous êtes inscrit. Depuis ici, vous pouvez vérifier votre statut, payer un solde en attente, modifier qui vient et ce que vous avez commandé, ou annuler complètement une inscription.
+La page **Inscriptions** dans le portail des membres est votre base pour chaque événement auquel vous vous êtes inscrit. De là, vous pouvez vérifier votre statut, payer un solde impayé, modifier qui vient et ce que vous avez commandé, ou annuler une inscription complètement.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Vous devez être [connecté](../getting-started/logging-in.md) — les inscriptions en tant qu'invité n'apparaissent pas ici
-- Vous avez besoin d'au moins une inscription à un événement. Voir [S'inscrire aux événements](./registering).
+- Vous devez être [connecté](../getting-started/logging-in.md) — les inscriptions invité n'apparaissent pas ici
+- Vous avez besoin d'au moins une inscription d'événement. Voir [Inscription aux Événements](./registering).
 
 </div>
 
-## Voir vos inscriptions
+## Affichage de Vos Inscriptions
 
-Ouvrez **Inscriptions** dans le portail membre. Chaque inscription apparaît sous forme de carte affichant :
+Ouvrez **Inscriptions** dans le portail des membres. Chaque inscription apparaît comme une carte affichant :
 
 - Le **titre et la date de l'événement**
-- Une pastille de **statut** — **confirmé**, **en attente**, **liste d'attente**, ou **annulé**
+- Une pilule de **statut** — **confirmée**, **en attente**, **en liste d'attente**, ou **annulée**
 - Les **membres** que vous avez inscrits
-- La ligne de paiement — soit le total payé, soit **Solde dû** si de l'argent est encore dû
+- La ligne de paiement — soit le total payé, soit **Solde dû** s'il y a encore de l'argent dû
 
-Si vous ne vous êtes encore inscrit à rien, vous verrez « Aucune inscription pour le moment. »
+Si vous n'avez rien inscrit, vous verrez "Aucune inscription pour l'instant."
 
-## Finaliser un paiement
+## Complétion d'un Paiement
 
-Un bouton **Finaliser le paiement** apparaît sur toute inscription avec un solde en attente — le plus souvent après avoir été promu depuis une liste d'attente, ou lorsqu'une modification du personnel a changé votre total.
+Un bouton **Compléter le paiement** apparaît sur n'importe quelle inscription avec un solde impayé — le plus souvent après votre promotion d'une liste d'attente, ou lorsqu'une édition du personnel a changé votre total.
 
-1. Cliquez sur **Finaliser le paiement**.
-2. Vérifiez le résumé de la commande, choisissez une carte enregistrée ou saisissez-en une nouvelle, et payez.
+1. Cliquez sur **Compléter le paiement**.
+2. Examinez le résumé de la commande, choisissez une carte enregistrée ou entrez une nouvelle, et payez.
 3. Une fois le solde payé, l'inscription devient **confirmée**.
 
 :::tip
-Lorsqu'une place en liste d'attente se libère pour vous, l'e-mail envoyé par votre église inclut un lien direct vers cette étape de paiement.
+Lorsqu'une place de liste d'attente s'ouvre pour vous, l'email que votre église envoie inclut un lien directement vers cette étape de paiement.
 :::
 
-## Modifier une inscription
+## Édition d'une Inscription
 
-Les plans changent. Cliquez sur **Modifier** sur une inscription pour ouvrir la boîte de dialogue **Modifier l'inscription**, où vous pouvez :
+Les plans changent. Cliquez sur **Éditer** sur une inscription pour ouvrir la boîte de dialogue **Éditer l'Inscription**, où vous pouvez :
 
-- Mettre à jour vos **coordonnées**
-- Changer le **nom** et le **type de participant** de chaque membre
-- Ajuster les **quantités de sélection** (options comme les t-shirts ou les repas)
-
-La capacité s'applique toujours lorsque vous modifiez — si un type de participant ou une option a été épuisé depuis, il vous sera demandé d'en choisir un autre. L'enregistrement recalcule votre total ; si le changement laisse un solde dû, un bouton **Finaliser le paiement** apparaît sur la carte.
-
-:::info
-Modifier ne débite jamais votre carte automatiquement. Si votre nouveau total est plus élevé, payez la différence avec **Finaliser le paiement** ; s'il est plus bas, contactez votre église pour un remboursement — les remboursements sont gérés par le personnel de l'église via leur fournisseur de paiement.
-:::
-
-## Annuler une inscription
-
-1. Cliquez sur **Annuler l'inscription** sur la carte.
-2. Confirmez dans la boîte de dialogue — l'annulation ne peut pas être annulée.
-
-Votre place est libérée immédiatement. Si l'événement a une liste d'attente, la personne suivante dans la file est promue automatiquement. Tout paiement que vous avez effectué n'est pas automatiquement remboursé — contactez le bureau de votre église au sujet des remboursements.
-
-## Articles associés
-
-- [S'inscrire aux événements](./registering) -- Le processus d'inscription, y compris le paiement et les listes d'attente
-- [Aperçu des événements](./index.md) -- Parcourir les événements à venir
+- Mettre à jour vos **détails de contact**
+- Modifier le **nom** et le **type de participant** de chaque membre
+- Ajuster les **quantités de sélection** (suppléments comme les T-shirts ou les repas)

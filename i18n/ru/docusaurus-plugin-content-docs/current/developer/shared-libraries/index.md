@@ -4,39 +4,12 @@ title: "Общие библиотеки"
 
 # Общие библиотеки
 
-Общие библиотеки — это пакеты npm, опубликованные под областью `@churchapps`, которые переиспользуются во всех приложениях B1.
+<div class="article-intro">
 
-## Доступные библиотеки
+Общий код ChurchApps опубликован в npm в области `@churchapps/*`. Все общие пакеты живут в одном репозитории -- [Packages](https://github.com/ChurchApps/Packages) -- управляется как рабочее пространство Yarn (Berry) и версионируется с помощью [changesets](https://github.com/changesets/changesets).
 
-- `@churchapps/api-helper` — помощники для API запросов
-- `@churchapps/helpers` — утилиты и помощники
-- и другие...
+</div>
 
-## Установка
+## Packages
 
-```bash
-npm install @churchapps/api-helper
-```
-
-## Использование
-
-```javascript
-import { ApiHelper } from '@churchapps/api-helper';
-
-const data = await ApiHelper.get('/api/endpoint');
-```
-
-## Разработка
-
-Чтобы разработать библиотеку локально:
-
-1. Клонируйте репозиторий
-2. Установите зависимости: `npm install`
-3. Сделайте изменения
-4. Протестируйте: `npm test`
-5. Опубликуйте: `npm publish`
-
-## Связанные документы
-
-- [API Helper](api-helper.md)
-- [Helpers](helpers.md)
+| Package | Description | Used By |

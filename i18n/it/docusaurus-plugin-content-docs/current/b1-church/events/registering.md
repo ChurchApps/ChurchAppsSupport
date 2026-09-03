@@ -1,90 +1,90 @@
 ---
-title: "Registering for Events"
+title: "Registrazione agli Eventi"
 ---
 
-# Registering for Eventi
+# Registrazione agli Eventi
 
 <div class="article-intro">
 
-When your church enables registration for an Evento, you can sign up through a simple step-by-step process. You can register yourself and Aggiungi family Membri, whether you have an Account or are visiting as a Ospite. For paid Eventi, you Scegli an attendee Digita, Aggiungi any Facoltativo extras, apply a discount code, and pay securely at the end.
+Quando la tua chiesa abilita la registrazione per un evento, puoi iscriverti attraverso un semplice processo passo dopo passo. Puoi registrare te stesso e aggiungere membri della famiglia, indipendentemente dal fatto che tu abbia un account o stia visitando come ospite. Per gli eventi a pagamento, scegli un tipo di partecipante, aggiungi eventuali extra facoltativi, applica un codice di sconto e paga in modo sicuro alla fine.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Your church must have Evento registration Abilitato for the Evento
-- The registration window must be Apri (between the Apri and Chiudi dates set by the administrator)
+- La tua chiesa deve avere la registrazione dell'evento abilitata per l'evento
+- La finestra di registrazione deve essere aperta (tra le date di apertura e chiusura impostate dall'amministratore)
 
 </div>
 
-## Step 1: Inserisci Your Information
+## Passaggio 1: Immetti le Tue Informazioni
 
-1. From the church calendar, Apri the Evento you want Per register for and Fai clic **Register for this Evento**.
-2. The registration page loads showing the Evento title, description, and Data.
-3. If you are **logged in**, the form shows your name and confirms you are registering under your Account.
-4. If you are a **Ospite** (not logged in), fill in:
-   - **First Name** (Obbligatorio)
-   - **Last Name** (Obbligatorio)
-   - **Email** (Obbligatorio)
-   - **Phone** (Facoltativo)
-5. If the Evento has attendee types (for example, Adult and Child at different prices), Scegli **your registration Digita**. Each Digita shows its price, and types that have run out show as **Sold out**.
+1. Dal calendario della chiesa, apri l'evento per cui desideri registrarti e fai clic su **Register for this Event**.
+2. La pagina di registrazione si carica mostrando il titolo dell'evento, la descrizione e la data.
+3. Se sei **logged in**, il modulo mostra il tuo nome e conferma che ti stai registrando con il tuo account.
+4. Se sei un **ospite** (non loggato), compila:
+   - **First Name** (obbligatorio)
+   - **Last Name** (obbligatorio)
+   - **Email** (obbligatorio)
+   - **Phone** (facoltativo)
+5. Se l'evento ha tipi di partecipante (ad esempio, Adult e Child a prezzi diversi), scegli il **tuo tipo di registrazione**. Ogni tipo mostra il suo prezzo e i tipi che si sono esauriti vengono visualizzati come **Sold out**.
 
 :::info
-If the Evento has a Capacità limit, a progress bar shows how many spots remain. If the Evento is full and your church has Abilitato a waitlist, you can still complete the signup Per join the waitlist — see [Joining a Waitlist](#joining-a-waitlist) below.
+Se l'evento ha un limite di capacità, una barra di progresso mostra quanti posti rimangono. Se l'evento è pieno e la tua chiesa ha abilitato una lista d'attesa, puoi comunque completare l'iscrizione per unirti alla lista d'attesa — vedi [Unirsi a una Lista d'Attesa](#unirsi-a-una-lista-d-attesa) di seguito.
 :::
 
-## Step 2: Aggiungi Family Membri
+## Passaggio 2: Aggiungi Membri della Famiglia
 
-1. If you want Per register additional family Membri, Inserisci their **First Name** and **Last Name** for each person.
-2. If the Evento has attendee types, pick a Digita for each person you Aggiungi.
-3. Fai clic **Aggiungi Membro** Per Aggiungi more people (up Per 10 total).
-4. Fai clic the Rimuovi button Avanti Per any Membro Per take them off the registration.
-5. If you are only registering yourself, you can skip this step.
+1. Se desideri registrare ulteriori membri della famiglia, immetti il loro **First Name** e **Last Name** per ogni persona.
+2. Se l'evento ha tipi di partecipante, scegli un tipo per ogni persona che aggiungi.
+3. Fai clic su **Add Member** per aggiungere altre persone (fino a 10 totali).
+4. Fai clic sul pulsante di rimozione accanto a qualsiasi membro per rimuoverlo dalla registrazione.
+5. Se stai registrando solo te stesso, puoi saltare questo passaggio.
 
-## Step 3: Scegli Options & Selections (If Offered)
+## Passaggio 3: Scegli Opzioni e Selezioni (Se Offerte)
 
-Some Eventi offer Facoltativo priced Aggiungi-ons — T-shirts, meals, activity upgrades.
+Alcuni eventi offrono componenti aggiuntivi facoltativi a prezzo — magliette, pasti, aggiornamenti di attività.
 
-1. If the Evento has selections, an **Options & Selections** step appears.
-2. Use the quantity steppers Per Scegli how many of each you want. Free options show as **Free**, and limited options show how many are remaining.
-3. Fai clic **Continue**.
+1. Se l'evento ha selezioni, appare un passaggio **Options & Selections**.
+2. Usa gli incrementi di quantità per scegliere quanti di ciascuno desideri. Le opzioni gratuite vengono visualizzate come **Free** e le opzioni limitate mostrano quanti rimangono.
+3. Fai clic su **Continue**.
 
-## Step 4: Answer Questions (If Asked)
+## Passaggio 4: Rispondi alle Domande (Se Chiesto)
 
-Some Eventi ask registrants Per answer a few extra questions -- dietary restrictions, T-shirt size, emergency contact, and similar details.
+Alcuni eventi chiedono ai registrati di rispondere a poche domande aggiuntive — restrizioni dietetiche, taglia della maglietta, contatto di emergenza e dettagli simili.
 
-1. If the Evento has questions attached, a **Questions** step appears Avanti.
-2. Fill in your answers and continue.
+1. Se l'evento ha domande allegate, appare un passaggio **Questions** successivo.
+2. Compila le tue risposte e continua.
 
-If the Evento has No questions attached, this step is skipped automatically.
+Se l'evento non ha domande allegate, questo passaggio viene saltato automaticamente.
 
-## Step 5: Pay (Paid Eventi)
+## Passaggio 5: Pagamento (Eventi a Pagamento)
 
-If your registration has a cost, the **Payment** step shows an **Order Summary** listing each attendee, each selection, any discount, and the **Total**.
+Se la tua registrazione ha un costo, il passaggio **Payment** mostra un **Order Summary** che elenca ogni partecipante, ogni selezione, qualsiasi sconto e il **Total**.
 
-- **Discount code** -- If your church gave you a code, Inserisci it and Fai clic **Apply**. The discount is reflected immediately, and you'll see a clear message if the code has expired, hasn't started yet, or requires more attendees.
-- **Logged-in Membri** can pay with a saved card or Scegli **Use a new card**.
-- **Ospiti** Inserisci their card details directly.
+- **Discount code** -- Se la tua chiesa ti ha dato un codice, inseriscilo e fai clic su **Apply**. Lo sconto si riflette immediatamente e vedrai un messaggio chiaro se il codice è scaduto, non è ancora iniziato o richiede più partecipanti.
+- I **membri loggati** possono pagare con una carta salvata o scegliere **Use a new card**.
+- Gli **ospiti** inseriscono i dettagli della loro carta direttamente.
 
-Fai clic **Pay & Register** Per complete the payment and registration in one step. Your card details go directly Per the church's payment provider and are never stored by B1.
+Fai clic su **Pay & Register** per completare il pagamento e la registrazione in un passaggio. I dettagli della tua carta vanno direttamente al fornitore di pagamenti della chiesa e non vengono mai archiviati da B1.
 
-Free registrations skip this step and go straight Per confirmation.
+Le registrazioni gratuite saltano questo passaggio e vanno direttamente alla conferma.
 
-## Step 6: Confirm
+## Passaggio 6: Conferma
 
-A confirmation message appears with the Evento details and a list of everyone you registered. You will also receive a **confirmation email** at the email address associated with your Account (or the email you provided as a Ospite).
+Un messaggio di conferma appare con i dettagli dell'evento e un elenco di tutti quelli che hai registrato. Riceverai anche un'**email di conferma** all'indirizzo email associato al tuo account (o l'email che hai fornito come ospite).
 
-## Joining a Waitlist
+## Unirsi a una Lista d'Attesa
 
-If the Evento is full and your church Abilitato the waitlist, the first step shows: *"This Evento is full. You can join the waitlist and we will notify you if a spot opens."* Complete the signup as normal — payment is skipped while you are waitlisted. When a spot opens, you receive an email; if a payment is due, it includes a link Per complete it. You can also check your status and pay from [My Registrations](./my-registrations).
+Se l'evento è pieno e la tua chiesa ha abilitato la lista d'attesa, il primo passaggio mostra: *"This event is full. You can join the waitlist and we will notify you if a spot opens."* Completa l'iscrizione come normale — il pagamento viene saltato mentre sei in lista d'attesa. Quando si apre un posto, ricevi un'email; se un pagamento è dovuto, include un link per completarlo. Puoi anche controllare il tuo stato e pagare da [Le Mie Registrazioni](./my-registrations).
 
-## Changing or Canceling a Registration
+## Modifica o Annullamento di una Registrazione
 
-If you are logged in, you can Modifica or cancel your registration yourself from the **Registrations** page in the Membro portal — see [My Registrations](./my-registrations). Ospiti should contact the church office, and Staff can make the change from the B1 Admin registrations page.
+Se sei loggato, puoi modificare o annullare la tua registrazione da solo dalla pagina **Registrations** nel portale dei membri — vedi [Le Mie Registrazioni](./my-registrations). Gli ospiti dovrebbero contattare l'ufficio della chiesa e lo staff può effettuare la modifica dalla pagina delle registrazioni di B1 Admin.
 
 ## Articoli Correlati
 
-- [Events Overview](./index.md) -- Browse upcoming Eventi with registration
-- [My Registrations](./my-registrations) -- Visualizza, Modifica, pay balances, and cancel your registrations
-- [Making Donations](../giving/making-donations) -- Make a donation alongside Evento participation
+- [Panoramica degli Eventi](./index.md) -- Naviga i prossimi eventi con registrazione
+- [Le Mie Registrazioni](./my-registrations) -- Visualizza, modifica, paga saldi e annulla le tue registrazioni
+- [Effettua una Donazione](../giving/making-donations) -- Fai una donazione insieme alla partecipazione all'evento

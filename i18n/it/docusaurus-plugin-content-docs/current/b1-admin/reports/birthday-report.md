@@ -1,45 +1,45 @@
 ---
-title: "Birthday & Anniversary Lists"
+title: "Elenchi di Compleanni e Anniversari"
 ---
 
-# Birthday & Anniversary Lists
+# Elenchi di Compleanni e Anniversari
 
 <div class="article-intro">
 
-Need a list of everyone with a birthday or anniversary in a given Mese — for the bulletin, announcements, or cards? The People Cerca can filter your congregation by **Birth Mese** and **Anniversary Mese** and show the dates right in the results.
+Hai bisogno di un elenco di tutti coloro che hanno un compleanno o un anniversario in un determinato mese — per il bollettino, annunci o biglietti? La ricerca People può filtrare la tua congregazione per **Birth Month** e **Anniversary Month** e mostrare le date direttamente nei risultati.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Ensure birth dates (and anniversaries) are entered on each person's Profilo. See [Adding People](../people/adding-people.md).
-- You need Permesso Per Visualizza People. See [Roles & Permissions](../settings/roles-permissions.md).
+- Assicurati che le date di nascita (e gli anniversari) siano inserite nel profilo di ogni persona. Vedi [Aggiunta di Persone](../people/adding-people.md).
+- Hai bisogno del permesso di visualizzare le Persone. Vedi [Ruoli e Permessi](../settings/roles-permissions.md).
 
 </div>
 
-## Getting a Birthday List for a Mese
+## Ottenere un Elenco di Compleanni per un Mese
 
-1. Apri the **menu della sezione** in the angolo in alto a sinistra and Scegli **People**.
-2. Under the Cerca box, Fai clic **Advanced**.
-3. Expand the **Demographics** section and check **Birth Mese**, then Scegli the Mese.
-4. Run the Cerca — everyone with a birthday that Mese appears in the results.
-5. Per see the dates, Fai clic the **columns icon** at the top right of the results and enable the **Birthday** column. Use **Esporta** Per Scarica the list as a spreadsheet if you prefer Per sort or print it there.
+1. Apri il **menu della sezione** nell'angolo in alto a sinistra e scegli **People**.
+2. Sotto la casella di ricerca, fai clic su **Advanced**.
+3. Espandi la sezione **Demographics** e seleziona **Birth Month**, quindi scegli il mese.
+4. Esegui la ricerca — tutti coloro che hanno un compleanno quel mese appaiono nei risultati.
+5. Per vedere le date, fai clic sull'**icona delle colonne** in alto a destra dei risultati e abilita la colonna **Birthday**. Usa **Export** per scaricare l'elenco come foglio di calcolo se preferisci ordinarlo o stamparlo lì.
 
-## Getting an Anniversary List
+## Ottenere un Elenco di Anniversari
 
-Same steps — in the **Demographics** section, check **Anniversary Mese** instead (or as well), Scegli the Mese, and enable the **Anniversary** column in the results.
+Stessi passaggi — nella sezione **Demographics**, seleziona **Anniversary Month** invece (o anche), scegli il mese e abilita la colonna **Anniversary** nei risultati.
 
-## Practical Uses
+## Usi Pratici
 
-- **Weekly bulletins** -- Run the current Mese's list and read the names straight into the bulletin.
-- **Birthday & anniversary cards** -- Esporta the Mese's list and hand it Per your card-writing team.
-- **Milestones** -- Combine with the **Age** filter Per Trova milestone birthdays.
+- **Bollettini settimanali** -- Esegui l'elenco del mese corrente e leggi i nomi direttamente nel bollettino.
+- **Biglietti di compleanno e anniversario** -- Esporta l'elenco del mese e consegnalo al tuo team per scrivere biglietti.
+- **Pietre miliari** -- Combina con il filtro **Age** per trovare compleanni di pietre miliari.
 
 :::tip
-Both lists come from the birth Data and anniversary fields on each person's Profilo — if someone's missing, their Profilo just needs the Data added.
+Entrambi gli elenchi provengono dai campi data di nascita e anniversario nel profilo di ogni persona — se qualcuno manca, il suo profilo ha solo bisogno della data aggiunta.
 :::
 
 :::info
-Earlier versions of B1 Admin had a separate Rapporti page for birthdays. That page has been retired — the People Cerca filters above are the current way, and they cover anniversaries too.
+Le versioni precedenti di B1 Admin avevano una pagina Reports separata per i compleanni. Quella pagina è stata ritirata — i filtri di ricerca People sopra sono il modo attuale e coprono anche gli anniversari.
 :::

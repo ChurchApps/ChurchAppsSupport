@@ -1,52 +1,52 @@
 ---
-title: "The Me Page"
+title: "La Pagina Me"
 ---
 
-# The Me Pagina
+# La Pagina Me
 
 <div class="article-intro">
 
-The **Me** page is your personal dashboard in the Membro portal — one chronological Visualizza of everything coming up for you: serving assignments, Evento registrations, and your Gruppi' upcoming Eventi, plus your most recent notifications.
+La pagina **Me** è il tuo cruscotto personale nel portale dei membri — una visualizzazione cronologica di tutto quello che viene per te: assegnamenti di servizio, registrazioni a eventi e i prossimi eventi dei tuoi gruppi, più le tue notifiche più recenti.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- You need Per be [logged in](./logging-in.md) — the Me page only appears for signed-in Membri
+- Hai bisogno di essere [loggato](./logging-in.md) — la pagina Me appare solo per i membri registrati
 
 </div>
 
-## Opening the Me Pagina
+## Apertura della Pagina Me
 
-Apri the portal menu and tap **Me**. The page loads with your personal information organized into sections.
+Apri il menu del portale e tocca **Me**. La pagina si carica con le tue informazioni personali organizzate in sezioni.
 
 ## Upcoming
 
-The **Upcoming** section lists everything ahead of you in Data order, each item tagged with a Digita chip:
+La sezione **Upcoming** elenca tutto quello che hai davanti in ordine di data, ogni elemento taggato con un chip di tipo:
 
-- **Serving** -- Your Volontario positions on upcoming Servizio plans. Tap one Per Apri the plan.
-- **Registration** -- Eventi you have [registered for](../events/registering). Tap through Per your [registrations](../events/my-registrations).
-- **Evento** -- Upcoming Eventi from Gruppi you belong Per. Tap one Per Apri the Gruppo's Eventi.
+- **Serving** -- Le tue posizioni di volontario sui prossimi piani di servizio. Tocca uno per aprire il piano.
+- **Registration** -- Eventi per i quali hai [registrato](../events/registering). Tocca attraverso a tu [registrazioni](../events/my-registrations).
+- **Event** -- Prossimi eventi dai gruppi a cui appartieni. Tocca uno per aprire gli eventi del gruppo.
 
-If nothing is scheduled, you'll see "Nothing coming up" — your serving times, Eventi, and registrations will appear here as they are scheduled.
+Se niente è programmato, vedrai "Nothing coming up" — i tuoi tempi di servizio, eventi e registrazioni appariranno qui man mano che vengono programmati.
 
-## Recent Notifications
+## Notifiche Recenti
 
-Below Upcoming, the **Recent Notifications** section shows your latest notifications so you can catch up without opening each area of the portal.
+Sotto Upcoming, la sezione **Recent Notifications** mostra le tue ultime notifiche in modo che tu possa aggiornarti senza aprire ogni area del portale.
 
-## Shortcuts
+## Shortcut
 
-When your church has bookable Stanze or resources, the Me page also shows a **Shortcuts** section:
+Quando la tua chiesa ha aule o risorse prenotabili, la pagina Me mostra anche una sezione **Shortcuts**:
 
-- **Request an Evento** -- Ask Per hold an Evento with the Stanze and equipment you need. See [Requesting Events & Rooms](../events/requesting-events).
-- **My Requests** -- Track the status of your requests and cancel In Sospeso ones.
+- **Request an Event** -- Chiedi di tenere un evento con le aule e l'attrezzatura di cui hai bisogno. Vedi [Richiesta di Eventi e Aule](../events/requesting-events).
+- **My Requests** -- Traccia lo stato delle tue richieste e annulla le richieste in sospeso.
 
-If your church hasn't set up Stanze or resources, these shortcuts are hidden.
+Se la tua chiesa non ha configurato aule o risorse, questi shortcut sono nascosti.
 
 ## Articoli Correlati
 
-- [Navigating B1App](./navigating) -- The Membro portal layout
-- [Requesting Events & Rooms](../events/requesting-events) -- Invia and track Stanza/resource requests
-- [My Registrations](../events/my-registrations) -- Manage your Evento registrations
-- [Volunteer Signup](../serving/volunteer-signup) -- How serving assignments work
+- [Navigazione di B1App](./navigating) -- Il layout del portale dei membri
+- [Richiesta di Eventi e Aule](../events/requesting-events) -- Invia e traccia richieste di aule/risorse
+- [Le Mie Registrazioni](../events/my-registrations) -- Gestisci le tue registrazioni a eventi
+- [Iscrizione di Volontari](../serving/volunteer-signup) -- Come funzionano gli assegnamenti di servizio

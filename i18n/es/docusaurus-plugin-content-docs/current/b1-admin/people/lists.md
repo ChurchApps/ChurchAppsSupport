@@ -61,8 +61,8 @@ El personal con permiso de gestión puede renombrar o eliminar cualquier lista d
 
 ## Artículos Relacionados
 
-- [Buscar Personas](./searching-people.md) -- búsqueda rápida y personalización de columnas
-- [Búsqueda de IA](./ai-search.md) -- consultas en lenguaje natural que puedes guardar como listas
-- [Campos Personalizados](../settings/custom-fields.md) -- define tus propios campos de persona, luego filtra y guarda listas en ellos
-- [Demográficos](./demographics.md) -- penetra un gráfico demográfico en un filtro de Personas, luego guárdalo como una lista
-- [Edición en Lote](./bulk-editing.md) -- después de cargar una lista, actualiza en lote a todos sus miembros
+- [Buscar Personas](./searching-people.md) — búsqueda rápida y personalización de columnas
+- [Búsqueda de IA](./ai-search.md) — consultas en lenguaje natural que puedes guardar como listas
+- [Campos Personalizados](../settings/custom-fields.md) — define tus propios campos de persona, luego filtra y guarda listas en ellos
+- [Demográficos](./demographics.md) — profundiza en un gráfico demográfico en un filtro de Personas, luego guárdalo como una lista
+- [Edición en Lote](./bulk-editing.md) — después de cargar una lista, actualiza en lote a todos sus miembros

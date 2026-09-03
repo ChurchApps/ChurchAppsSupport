@@ -1,49 +1,45 @@
 ---
-title: "Ulat ng Anibersaryo"
+title: "Anniversary List"
 ---
 
-# Ulat ng Anibersaryo
+# Anniversary List
 
 <div class="article-intro">
 
-Ang Anniversary Report ay tumutulong sa iyo na manatiling konektado sa iyong paglalakbay sa pamamagitan ng pagpapakita ng mga miyembro na may paparating na wedding anniversaries. Gamitin ito upang magplano ng mga selebrasyon, magpadala ng mga card, o gumawa ng mga pahayag sa panahon ng mga serbisyo.
+Kailangan ng isang listahan ng lahat na may wedding anniversary sa isang binigyan na buwan — para sa bulletin, card, o announcement? Ang People search ay nagpapahintulot sa iyo na mag-filter sa pamamagitan ng **Anniversary Month** at ipakita ang mga petsa nang direkta sa mga resulta.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Kang Magsimula</h4>
+<h4>Bago Magsimula</h4>
 
-- Siguraduhin na ang mga petsa ng anibersaryo ay naisaad sa profile ng bawat tao. Tingnan ang [Adding People](../people/adding-people.md) para sa mga detalye.
-- Kailangan mo ng tamang [permissions](../settings/roles-permissions.md) upang ma-access ang mga ulat
+- Tiyakin na ang anniversary dates ay na-enter sa profile ng bawat tao. Tingnan ang [Adding People](../people/adding-people.md) para sa mga detalye.
+- Kailangan mo ng permission na tingnan ang People. Tingnan ang [Roles & Permissions](../settings/roles-permissions.md).
 
 </div>
 
-## Pagpapatakbo ng Ulat
+## Pagkuha ng Anniversary List para sa Isang Buwan
 
-1. Pumunta direkta sa **admin.b1.church/reports/anniversaries** sa iyong browser (ang mga ulat ay walang entry sa navigation menu — ang pag-bookmark sa address ay ang pinakamadaling paraan upang bumalik dito).
-2. Pumili ng **Month** na gusto mo mula sa dropdown. Maaari mong i-limit ang mga resulta sa isang **Group**.
-3. I-click ang **Run Report**. Ang ulat ay naglalista ng lahat na may anibersaryo sa buwan na iyon, kasama ang petsa — handa nang basahin direkta sa isang bulletin o announcement list.
+1. Buksan ang **section menu** sa top-left corner at pumili ng **People**.
+2. Sa ilalim ng search box, i-click ang **Advanced**.
+3. Palawakin ang **Demographics** section at suriin ang **Anniversary Month**, pagkatapos ay pumili ng buwan.
+4. Tumakbo ang paghahanap — lahat na may anniversary na month ay lumalabas sa mga resulta.
+5. Upang makita ang mga petsa, i-click ang **columns icon** sa tuktok na kanang ng mga resulta at i-enable ang **Anniversary** column. Gamitin ang **Export** upang i-download ang listahan bilang isang spreadsheet kung gusto mong i-sort o mag-print.
 
-## Ano ang Ipinapakita ng Ulat
+## Mga Praktikal na Paggamit
 
-Ang Anniversary Report ay nagpapakita ng:
-
-- **Anniversary** -- Ang petsa ng kanilang wedding anniversary.
-- **Name** -- Ang pangalan ng tao mula sa iyong church database.
-
-Ang mga resulta ay sumasaklaw sa buwan na iyong pinili, na ginagawang madali ang pagtukoy kung sino ang may paparating na anibersaryo.
-
-## Practical Uses
-
-- **Weekly announcements** -- Patakbuhin ang ulat para sa susunod na linggo at isama ang mga anibersaryo sa iyong bulletin o mga pahayag.
-- **Anniversary cards** -- Bumuo ng isang listahan para sa buwan at hayaan ang iyong team na magpadala ng personal na anniversary cards.
-- **Small group leaders** -- Ang mga pinuno ng grupo ay maaaring magpatakbo ng ulat upang maalala ang mga anibersaryo ng mga miyembro sa kanilang grupo.
-- **Milestone celebrations** -- I-filter para sa mga specific date ranges upang magplano ng mga milestone anniversary celebrations.
+- **Weekly bulletins** -- Tumakbo sa listahan ng kasalukuyang buwan at isama ang mga anniversary sa iyong bulletin o announcement.
+- **Anniversary cards** -- I-export ang listahan ng buwan at ibigay ito sa iyong card-writing team.
+- **Milestone celebrations** -- Pagsamahin ang **Years Married** filter upang mahanap ang milestone anniversary.
 
 :::tip
-Patakbuhin ang ulat na ito sa simula ng bawat buwan upang magplano nang mauna. Maaari mong itakda ang date range upang sumasaklaw sa buong buwan upang mayroon kang oras na maghanda ng mga card o mga pahayag.
+Tatakbo ito sa simula ng bawat buwan upang mayroon kang oras na maghanda ng cards o announcement bago dumating ang anniversary.
 :::
 
 :::info
-Ang anniversary data ay nagmula sa anniversary field sa profile ng bawat tao. Siguraduhin na ang iyong [membership records](../people/adding-people.md) ay up to date para sa tumpak na mga resulta.
+Ang anniversary data ay nagmumula sa anniversary field sa profile ng bawat tao. Kung ang sino ay nawawala, ang kanilang profile ay kailangan lamang na ang petsa ay idinadagdag. Tingnan ang [Adding People](../people/adding-people.md).
 :::
+
+## Tingnan Din
+
+Naghahanap ng mga kaarawan sa parehong oras? Tingnan ang [Birthday & Anniversary Lists](./birthday-report.md) upang makuha ang parehong sa isang paghahanap.

@@ -2,205 +2,205 @@
 title: "Flussi di Lavoro"
 ---
 
-# Workflows
+# Flussi di Lavoro
 
 <div class="article-intro">
 
-Workflows move people through a series of steps on a visual board. Each person becomes a card that travels from one step Per the Avanti -- from a first-Ora Ospite follow-up, Per a membership process, Per a first-Ora giver thank-you, and anything else where you need Per track many people through the same set of stages. A step can ask a Volontario Per do something (make a call, have a conversation) **and** run automated actions on its own -- send an email, wait a few days, Aggiungi the person Per a Gruppo -- so Workflows handle both the human follow-up and the busywork around it. Workflows extend [Tasks](./tasks.md) into a drag-and-drop Kanban board so nothing and No one falls through the cracks.
+I flussi di lavoro muovono le persone attraverso una serie di passaggi su una bacheca visiva. Ogni persona diventa una carta che viaggia da un passaggio al successivo — da un follow-up di ospiti per la prima volta, a un processo di adesione, a un ringraziamento per il primo donatore, e qualsiasi altra cosa in cui hai bisogno di tracciare molte persone attraverso la stessa serie di fasi. Un passaggio può chiedere a un volontario di fare qualcosa (fare una chiamata, avere una conversazione) **e** eseguire azioni automatizzate da solo — inviare un'email, aspettare alcuni giorni, aggiungere la persona a un gruppo — quindi i Flussi di Lavoro gestiscono sia il follow-up umano che il lavoro routinario intorno ad esso. I Flussi di Lavoro estendono [Tasks](./tasks.md) in una bacheca Kanban drag-and-drop in modo che niente e nessuno cada tra le fessure.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Make sure the people you want Per track exist in B1 Admin
-- Familiarize yourself with how [Tasks](./tasks.md) work, since each card on a board is a task
-- Per use the **Send email** action, Crea the email templates you want Per send first (managed under **Messaging → Manage Templates**)
-- You will need the appropriate Tasks Permesso. Viewing, editing cards, and managing workflows are separate Permesso levels (see [Roles & Permissions](../settings/roles-permissions.md))
+- Assicurati che le persone che desideri tracciare esistano in B1 Admin
+- Familiarizza con il funzionamento di [Tasks](./tasks.md), poiché ogni carta su una bacheca è un'attività
+- Per usare l'azione **Send email**, crea prima i modelli di email che desideri inviare (gestiti in **Messaging → Manage Templates**)
+- Avrai bisogno del permesso Tasks appropriato. La visualizzazione, la modifica delle carte e la gestione dei flussi di lavoro sono livelli di permesso separati (vedi [Ruoli e Permessi](../settings/roles-permissions.md))
 
 </div>
 
-## Viewing Workflows
+## Visualizzazione dei Flussi di Lavoro
 
-Navigate Per **Serving**, Apri the **Tasks** area, and Seleziona **Workflows** from the menu. You will see your workflows listed and grouped by category, with Attivo workflows highlighted. Fai clic any workflow Per Apri its board.
+Vai a **Serving**, apri l'area **Tasks** e seleziona **Workflows** dal menu. Vedrai i tuoi flussi di lavoro elencati e raggruppati per categoria, con i flussi di lavoro attivi evidenziati. Fai clic su qualsiasi flusso di lavoro per aprire la sua bacheca.
 
-## Creating a Workflow
+## Creazione di un Flusso di Lavoro
 
-1. On the Workflows page, Fai clic **Aggiungi Workflow**.
-2. Scegli how Per start:
-   - **Blank workflow** -- start from scratch and build your own steps.
-   - **From a template** -- start with a ready-made set of steps you can Modifica. Built-in templates include:
-     - **New Visitor Follow-up** -- Send welcome email → Personal phone call → Invite Per Avanti step → Connected
-     - **Membership Classe** -- Express interest → Register for class → Attend class → Complete membership
-     - **First-Ora Giver Thank-you** -- Send thank-you note → Share giving impact → Stewarded
-3. Give the workflow a **Name**.
-4. Optionally assign a **Category** Per Gruppo related workflows together. You can Crea a new category right from the dropdown.
-5. Leave the workflow **Attivo** so people can be added Per it, or set it Per **Inattivo** Per hide it from the Aggiungi-Per-workflow lists.
-6. Fai clic **Salva**.
+1. Sulla pagina Workflows, fai clic su **Add Workflow**.
+2. Scegli come iniziare:
+   - **Blank workflow** -- inizia da zero e crea i tuoi propri passaggi.
+   - **From a template** -- inizia con un set pronto di passaggi che puoi modificare. I modelli integrati includono:
+     - **New Visitor Follow-up** -- Send welcome email → Personal phone call → Invite to next step → Connected
+     - **Membership Class** -- Express interest → Register for class → Attend class → Complete membership
+     - **First-time Giver Thank-you** -- Send thank-you note → Share giving impact → Stewarded
+3. Dai al flusso di lavoro un **Name**.
+4. Facoltativamente assegna una **Category** per raggruppare i flussi di lavoro correlati insieme. Puoi creare una nuova categoria direttamente dal menu a discesa.
+5. Lascia il flusso di lavoro **Active** in modo che le persone possano essere aggiunte, o impostalo su **Inactive** per nasconderlo dagli elenchi di aggiunta al flusso di lavoro.
+6. Fai clic su **Save**.
 
 :::tip
-Use the **Duplicate** button on the Workflows list Per copy an existing workflow -- including its steps, automated actions, and routing -- as the starting point for a new one.
+Usa il pulsante **Duplicate** nell'elenco dei Flussi di Lavoro per copiare un flusso di lavoro esistente — inclusi i suoi passaggi, le azioni automatizzate e il routing — come punto di partenza per uno nuovo.
 :::
 
-## Building the Board with Steps
+## Costruzione della Bacheca con Passaggi
 
-Each workflow board is made up of **steps**, shown as columns from left Per right. Apri a workflow and use **Aggiungi Step** Per Crea each stage of your process.
+Ogni bacheca del flusso di lavoro è composta da **passaggi**, mostrati come colonne da sinistra a destra. Apri un flusso di lavoro e usa **Add Step** per creare ogni fase del tuo processo.
 
-When you Aggiungi or Modifica a step, you can configure:
+Quando aggiungi o modifichi un passaggio, puoi configurare:
 
-- **Step Name** -- the column heading (for example, "Welcome Call" or "Awaiting Registration").
-- **Due in (days)** -- automatically sets a due Data when a card enters this step. Cards past their due Data are flagged as **Overdue**.
-- **Default assignee** -- the person or Gruppo new cards on this step are assigned Per automatically.
-- **Automated actions** -- things the system does on its own when a card arrives (see below).
-- **Routing** -- where the card goes when it leaves the step (see [Routing](#routing-cards-with-outcomes-and-conditions)).
+- **Step Name** -- l'intestazione della colonna (ad esempio, "Welcome Call" o "Awaiting Registration").
+- **Due in (days)** -- imposta automaticamente una data di scadenza quando una carta entra in questo passaggio. Le carte passate la loro data di scadenza vengono segnalate come **Overdue**.
+- **Default assignee** -- la persona o il gruppo a cui le nuove carte su questo passaggio vengono assegnate automaticamente.
+- **Automated actions** -- cose che il sistema fa da solo quando una carta arriva (vedi sotto).
+- **Routing** -- dove va la carta quando lascia il passaggio (vedi [Routing](#routing-delle-carte-con-risultati-e-condizioni)).
 
-Drag step columns into the order that matches your process. The order also defines the default path a card takes when No other routing applies.
+Trascina le colonne dei passaggi nell'ordine che corrisponde al tuo processo. L'ordine definisce anche il percorso predefinito che una carta prende quando non si applica altro routing.
 
 :::info
-Salva a new step first. Automated actions and routing attach Per the step, so the editor unlocks those sections once the step exists.
+Salva prima un nuovo passaggio. Le azioni automatizzate e il routing si allegano al passaggio, quindi l'editor sblocca quelle sezioni una volta che il passaggio esiste.
 :::
 
-## Automated Actions
+## Azioni Automatizzate
 
-Every step can carry a list of **automated actions** that run by themselves the moment a card **enters** the step -- before anyone touches it. This is how a step both prompts a Volontario *and* takes care of the routine work around the follow-up.
+Ogni passaggio può portare un elenco di **azioni automatizzate** che vengono eseguite da sole nel momento in cui una carta **entra** nel passaggio — prima che chiunque la tocchi. Ecco come un passaggio sia richiede a un volontario *che* si prende cura del lavoro routinario intorno al follow-up.
 
-In the step editor, Apri **Automated actions**, Fai clic **Aggiungi Action**, Scegli a Digita, fill in its Impostazioni, and Fai clic the Salva icon on that action. Aggiungi as many as you need; they run **top Per bottom in order**.
+Nell'editor dei passaggi, apri **Automated actions**, fai clic su **Add Action**, scegli un tipo, compila le sue impostazioni e fai clic sull'icona di salvataggio su quell'azione. Aggiungine quanti ne hai bisogno; vengono eseguiti **dall'alto in basso in ordine**.
 
-| Action | What it does |
+| Azione | Cosa fa |
 |---|---|
-| **Send email** | Emails the person an email template you Scegli. You can override the subject line. |
-| **Wait** | Pauses the card for a number of days before continuing (see below). |
-| **Aggiungi Per Gruppo** | Adds the person Per a [group](../groups/index.md) you pick. |
-| **Aggiungi Per workflow** | Starts the person on another workflow -- useful for handing off between processes. |
-| **Aggiungi note** | Records a note in the card's history. |
-| **Set field** | Updates a field on the person's record: Membership Status, Marital Status, Gender, City, State, or Zip. |
-| **Webhook** | Sends the card's details Per an external web address (URL) you provide, for connecting Per other systems. |
+| **Send email** | Invia alla persona un modello di email che scegli. Puoi sostituire la riga dell'oggetto. |
+| **Wait** | Mette in pausa la carta per un numero di giorni prima di continuare (vedi sotto). |
+| **Add to group** | Aggiunge la persona a un [gruppo](../groups/index.md) che scegli. |
+| **Add to workflow** | Inizia la persona su un altro flusso di lavoro — utile per il passaggio tra processi. |
+| **Add note** | Registra una nota nella cronologia della carta. |
+| **Set field** | Aggiorna un campo nel record della persona: Membership Status, Marital Status, Gender, City, State, o Zip. |
+| **Webhook** | Invia i dettagli della carta a un indirizzo web esterno (URL) che fornisci, per connettersi ad altri sistemi. |
 
-After all of a step's actions finish, the card **rests on that step** so a person can work it -- unless the step has an automatic route that moves it onward (see [Fully automated steps](#fully-automated-steps)).
-
-:::info
-Automated actions run only when a card arrives through the normal flow -- when it's first added, when an outcome or automatic route brings it in, or after a Wait finishes. They do **not** re-run when a Staff Membro manually drags a card onto the step or sends it Indietro, so a person won't get the same email twice.
-:::
-
-### Sending email
-
-Scegli **Send email**, pick one of your email templates, and optionally Digita a custom subject. When a card enters the step, the person receives that email automatically. (If the person has No email address on file, the step simply skips this action.)
-
-### Waiting a few days (drip sequences)
-
-The **Wait** action holds a card for the number of days you set. While it waits, the card shows as **Snoozed**. When the wait is over:
-
-1. Any **remaining actions on the same step** run -- so you can build a drip like **Send email → Wait 3 days → Send a reminder email**.
-2. Then, if the step has an automatic route, the card moves on; otherwise it rests on the step for a person Per pick up.
-
-:::tip
-A **Wait** at the very start of a step is a simple way Per "hold" a card before it surfaces Per a Volontario -- for example, *Wait 7 days, then a coach reaches out*.
-:::
-
-## Adding People as Cards
-
-There are several ways Per put people on a board:
-
-- **From the board** -- Fai clic **Aggiungi Card** at the bottom of a step column and pick a person. You can also pick a Gruppo, and every Membro of that Gruppo is added as a card.
-- **From a person's record** -- Use **Aggiungi Per Workflow** on a person's page Per drop them onto a workflow.
-- **From People Cerca** -- Seleziona multiple people and use the bulk **Aggiungi Per Workflow** action Per Aggiungi them all at once.
-- **Automatically with a trigger** -- Aggiungi people when something happens, like a form submission or a first gift (see [Triggers](#triggers) below).
-
-## Working the Board
-
-Apri a workflow Per see its board. Each card shows the person's name, who it is assigned Per, and a due-Data or status chip (**Overdue** or **Snoozed**). A step column also shows small badges for any automated actions it runs and annotations for its routing, giving you an at-a-glance map of how cards flow.
-
-- **Move a card** -- Drag a card from one column Per the Avanti as the person progresses.
-- **Apri a card** -- Double-Fai clic a card (or Fai clic it) Per Apri its detail drawer, where you can change the step, reassign it, Aggiungi notes, and review what's already happened.
-
-From the card drawer you can:
-
-- **Assign** the card Per a different person or Gruppo.
-- **Snooze** the card for 1 Giorno, 3 days, or 1 week Per temporarily hide its due Data.
-- **Send Indietro** Per the previous step or **Skip** Per the Avanti step.
-- **Pin assignment** -- keep the same owner on the card even as it moves between steps. By default, moving a card Per a new step reassigns it Per that step's default assignee; pinning keeps the current person responsible throughout.
-- **Complete** the card Per finish it, or Scegli an **Outcome** button if the step has outcomes configured (see [Routing](#routing-cards-with-outcomes-and-conditions)).
-- **Aggiungi notes** and review the card's **history** -- including a log of automated actions that have run (emails sent, waits, etc.).
-
-### Bulk actions
-
-Seleziona the checkboxes on multiple cards Per act on them together. A toolbar appears letting you **Complete**, **Snooze**, **Reassign**, or **Move** all selected cards Per another step at once.
-
-## Routing Cards with Outcomes and Conditions
-
-Routing controls where a card goes when it leaves a step. Apri a step's editor Per configure two kinds of routing.
-
-### Outcome buttons
-
-Outcomes are buttons shown on the card drawer when you are completing a card on that step. Instead of a single **Complete** button, you can offer choices like "Joined a Gruppo" or "Not Interested." Each outcome can:
-
-- Send the card Per **another step** in this workflow,
-- **Hand the card off** Per a different workflow entirely, or
-- **Chiudi** the card.
-
-This lets one decision branch the person down different paths.
-
-### Automatic routing (conditional)
-
-Automatic routes move a card onward **the moment it enters a step** (and after its automated actions finish), without anyone clicking, if the person matches a set of conditions. Aggiungi a route, Scegli the target step, and define one or more **conditions** (for example, a person's campus, age, or membership status). A route with No conditions matches everyone.
+Dopo che tutte le azioni di un passaggio sono finite, la carta **riposa su quel passaggio** in modo che una persona possa usarla — a meno che il passaggio non abbia un percorso automatico che la sposti (vedi [Fully automated steps](#fully-automated-steps)).
 
 :::info
-On the board, each step column shows small annotations describing its routing -- for example, an outcome label or "if matches" followed by an arrow Per the destination step or workflow.
+Le azioni automatizzate vengono eseguite solo quando una carta arriva attraverso il flusso normale — quando viene aggiunta per la prima volta, quando un risultato o un percorso automatico la porta, o dopo il completamento di un'attesa. Loro **non** vengono ri-eseguite quando un membro dello staff trascina manualmente una carta sul passaggio o la rimanda, quindi una persona non riceverà la stessa email due volte.
 :::
 
-## Fully Automated Steps
+### Invio di email
 
-You can make a step run entirely on its own, with No one working it. Give the step its **automated actions** and Aggiungi an **automatic route** (with No conditions) pointing Per the Avanti step. When a card enters, the actions run, and then the route advances it immediately -- the card passes straight through.
+Scegli **Send email**, scegli uno dei tuoi modelli di email e facoltativamente digita un oggetto personalizzato. Quando una carta entra nel passaggio, la persona riceve automaticamente quell'email. (Se la persona non ha un indirizzo email nel file, il passaggio semplicemente salta questa azione.)
+
+### Attesa di alcuni giorni (sequenze di sgocciolatura)
+
+L'azione **Wait** tiene una carta per il numero di giorni che imposti. Mentre aspetta, la carta viene visualizzata come **Snoozed**. Quando l'attesa è finita:
+
+1. Qualsiasi **azione rimanente sullo stesso passaggio** viene eseguita — così puoi costruire un gocciolamento come **Send email → Wait 3 days → Send a reminder email**.
+2. Poi, se il passaggio ha un percorso automatico, la carta si sposta; altrimenti riposa sul passaggio per una persona da raccogliere.
 
 :::tip
-Combine this with **Wait**: *Send welcome email → Wait 3 days → automatically advance Per the "Personal call" step.* The email and the timing are handled for you, and a Volontario only sees the card when it's Ora for the human touch.
+Un'**attesa** molto all'inizio di un passaggio è un modo semplice per "mantenere" una carta prima che emerga a un volontario — ad esempio, *Aspetta 7 giorni, poi un allenatore si mette in contatto*.
 :::
 
-## Triggers
+## Aggiunta di Persone come Carte
 
-Triggers Aggiungi people Per a workflow automatically when something happens, so you never have Per Aggiungi cards by hand. On a workflow board, Fai clic the **Triggers** tab, then **Aggiungi Trigger**. There are two kinds:
+Ci sono diversi modi per mettere le persone su una bacheca:
 
-### Evento triggers
+- **Dalla bacheca** -- Fai clic su **Add Card** in fondo a una colonna di passaggi e scegli una persona. Puoi anche scegliere un gruppo e ogni membro di quel gruppo viene aggiunto come carta.
+- **Dal record di una persona** -- Usa **Add to Workflow** sulla pagina di una persona per lasciarla cadere su un flusso di lavoro.
+- **Dalla ricerca People** -- Seleziona più persone e usa l'azione di massa **Add to Workflow** per aggiungerle tutte subito.
+- **Automaticamente con un trigger** -- Aggiungi persone quando succede qualcosa, come un invio di modulo o un primo regalo (vedi [Triggers](#triggers) sotto).
 
-Fire as soon as a record changes in B1. Scegli the Evento, then optionally Aggiungi **conditions** so only matching people are added:
+## Utilizzo della Bacheca
 
-- **Person · Created / Updated** -- e.g. Aggiungi anyone whose status becomes *Visitor*.
-- **Donazione · Created** -- e.g. Aggiungi a first-Ora or large gift Per a thank-you workflow (match on amount, fund, or method).
-- **Gruppo · Membro Joined** / **Gruppo · Created**.
-- **Modulo · Submitted** -- Aggiungi anyone who submits a chosen form (great for an "I'm New" or "Connect" card).
+Apri un flusso di lavoro per vedere la sua bacheca. Ogni carta mostra il nome della persona, a chi è assegnato e un chip di data di scadenza o stato (**Overdue** o **Snoozed**). Una colonna di passaggi mostra anche piccoli badge per qualsiasi azione automatizzata che esegue e annotazioni per il suo routing, offrendoti una mappa a colpo d'occhio di come fluiscono le carte.
 
-### Programma triggers
+- **Sposta una carta** -- Trascina una carta da una colonna all'altra man mano che la persona progredisce.
+- **Apri una carta** -- Fai doppio clic su una carta (o fai clic) per aprire il suo cassetto di dettagli, dove puoi cambiare il passaggio, assegnarla di nuovo, aggiungere note e rivedere cosa è già accaduto.
 
-Run on a recurring basis -- daily, weekly, monthly, or yearly -- against a set of conditions. Use these for Ora-based outreach such as *everyone whose membership anniversary is Oggi* or a *monthly* check-in.
+Dal cassetto della carta puoi:
 
-For any trigger you can also set:
+- **Assign** la carta a una persona o un gruppo diverso.
+- **Snooze** la carta per 1 giorno, 3 giorni o 1 settimana per nascondere temporaneamente la sua data di scadenza.
+- **Send Back** al passaggio precedente o **Skip** al passaggio successivo.
+- **Pin assignment** -- mantieni lo stesso proprietario sulla carta anche mentre si sposta tra i passaggi. Per impostazione predefinita, spostare una carta su un nuovo passaggio la riassegna al responsabile predefinito di quel passaggio; il pinning mantiene la persona corrente responsabile durante il corso.
+- **Complete** la carta per completarla, o scegli un pulsante **Outcome** se il passaggio ha risultati configurati (vedi [Routing](#routing-delle-carte-con-risultati-e-condizioni)).
+- **Add notes** e rivedi la **history** della carta — incluso un log di azioni automatizzate che sono state eseguite (email inviate, attese, ecc.).
 
-- The **entry step** the new card starts on (defaults Per the first step).
-- **Once per person** -- so the same person isn't added Per the workflow twice by the trigger.
-- **Attivo** -- turn the trigger on or off without deleting it.
+### Azioni di massa
+
+Seleziona le caselle di controllo su più carte per agire su di loro insieme. Appare una barra degli strumenti che ti permette di **Complete**, **Snooze**, **Reassign** o **Move** tutte le carte selezionate in un altro passaggio contemporaneamente.
+
+## Routing delle Carte con Risultati e Condizioni
+
+Il routing controlla dove va una carta quando lascia un passaggio. Apri l'editor di un passaggio per configurare due tipi di routing.
+
+### Pulsanti di risultato
+
+I risultati sono pulsanti visualizzati nel cassetto della carta quando completi una carta su quel passaggio. Invece di un singolo pulsante **Complete**, puoi offrire scelte come "Joined a Group" o "Not Interested". Ogni risultato può:
+
+- Inviare la carta a **un altro passaggio** in questo flusso di lavoro,
+- **Consegnare la carta** a un flusso di lavoro completamente diverso, o
+- **Chiudere** la carta.
+
+Questo permette a una decisione di diramazione la persona lungo percorsi diversi.
+
+### Routing automatico (condizionale)
+
+I percorsi automatici muovono una carta in avanti **nel momento in cui entra in un passaggio** (e dopo che le sue azioni automatizzate finiscono), senza che chiunque faccia clic, se la persona corrisponde a un insieme di condizioni. Aggiungi un percorso, scegli il passaggio di destinazione e definisci una o più **conditions** (ad esempio, un campus, l'età o lo stato di adesione di una persona). Un percorso senza condizioni corrisponde a tutti.
+
+:::info
+Sulla bacheca, ogni colonna di passaggi mostra piccole annotazioni che descrivono il suo routing — ad esempio un'etichetta di risultato o "if matches" seguita da una freccia verso il passaggio di destinazione o il flusso di lavoro.
+:::
+
+## Passaggi Completamente Automatizzati
+
+Puoi fare un passaggio funzionare completamente da solo, senza che nessuno lo usi. Dai al passaggio le sue **azioni automatizzate** e aggiungi un **percorso automatico** (senza condizioni) che punta al passaggio successivo. Quando entra una carta, le azioni vengono eseguite e poi il percorso la avanza immediatamente — la carta passa direttamente.
 
 :::tip
-Pair a **Modulo · Submitted** trigger with the **New Visitor Follow-up** template Per turn your "Connect Card" or "I'm New" form into an automatic follow-up pipeline.
+Combina questo con **Wait**: *Send welcome email → Wait 3 days → automatically advance to the "Personal call" step.* L'email e il timing vengono gestiti per te, e un volontario vede la carta solo quando è il momento del tocco umano.
 :::
 
-## My Cards
+## Trigger
 
-Volontari and Staff do not need Per dig through every board Per Trova their work. The **My Cards** page (linked from the Workflows page) lists every card assigned Per the current Utente across all workflows. Clicking a card opens the board it belongs Per.
+I trigger aggiungono persone a un flusso di lavoro automaticamente quando succede qualcosa, così non devi mai aggiungere carte a mano. Su una bacheca del flusso di lavoro, fai clic sulla scheda **Triggers**, quindi su **Add Trigger**. Ci sono due tipi:
+
+### Trigger di evento
+
+Vengono attivati non appena un record cambia in B1. Scegli l'evento, quindi facoltativamente aggiungi **conditions** in modo che solo le persone corrispondenti vengano aggiunte:
+
+- **Person · Created / Updated** -- ad esempio aggiungi chiunque il cui stato diventa *Visitor*.
+- **Donation · Created** -- ad esempio aggiungi un regalo di prima volta o grande a un flusso di lavoro di ringraziamento (corrispondenza per importo, fondo o metodo).
+- **Group · Member Joined** / **Group · Created**.
+- **Form · Submitted** -- aggiungi chiunque invii un modulo scelto (fantastico per un "I'm New" o una carta "Connect").
+
+### Trigger di programmazione
+
+Vengono eseguiti su base ricorrente — giornaliera, settimanale, mensile o annuale — rispetto a un insieme di condizioni. Usali per il follow-up basato sul tempo come *tutti i cui anniversari di adesione è oggi* o un *controllo mensile*.
+
+Per qualsiasi trigger puoi anche impostare:
+
+- Il **passaggio di immissione** su cui la nuova carta inizia (impostazione predefinita sul primo passaggio).
+- **Once per person** — in modo che la stessa persona non venga aggiunta al flusso di lavoro due volte dal trigger.
+- **Active** — accendi o spegni il trigger senza eliminarlo.
+
+:::tip
+Associa un trigger **Form · Submitted** al modello **New Visitor Follow-up** per trasformare il tuo "Connect Card" o il modulo "I'm New" in una pipeline di follow-up automatica.
+:::
+
+## Le Mie Carte
+
+I volontari e lo staff non hanno bisogno di scavare attraverso ogni bacheca per trovare il loro lavoro. La pagina **My Cards** (collegata dalla pagina dei Flussi di Lavoro) elenca ogni carta assegnata all'utente corrente in tutti i flussi di lavoro. Facendo clic su una carta apre la bacheca a cui appartiene.
 
 ## Rapporti
 
-Apri a workflow and Fai clic **Rapporti** Per see analytics for that workflow:
+Apri un flusso di lavoro e fai clic su **Reports** per vedere l'analisi di quel flusso di lavoro:
 
-- **Overdue** -- the number of cards past their due Data.
-- **Cards per Step** -- how many cards currently sit on each step, shown as a column chart.
-- **Completato (30 days)** -- throughput over the last 30 days, shown as a line chart.
+- **Overdue** -- il numero di carte passate la loro data di scadenza.
+- **Cards per Step** -- quante carte attualmente siedono su ogni passaggio, mostrate come un grafico a colonne.
+- **Completed (30 days)** -- throughput negli ultimi 30 giorni, mostrato come un grafico a linee.
 
-Use these Per spot bottlenecks -- for example, a step where cards pile up and never advance.
+Usali per individuare colli di bottiglia — ad esempio un passaggio dove le carte si accumulano e non avanzano mai.
 
 ## Articoli Correlati
 
-- [Tasks](./tasks.md) -- the individual action items that workflow cards are built on
-- [Automations](./automations.md) -- Crea recurring tasks on a schedule
-- [Forms](../forms/index.md) -- build the forms that can trigger workflows
-- [Groups](../groups/index.md) -- the Gruppi an "Aggiungi Per Gruppo" action can place people in
-- [Roles & Permissions](../settings/roles-permissions.md) -- control who can Visualizza, Modifica, and manage workflows
+- [Tasks](./tasks.md) -- i singoli elementi d'azione su cui si basano le carte del flusso di lavoro
+- [Automations](./automations.md) -- crea attività ricorrenti su una pianificazione
+- [Forms](../forms/index.md) -- costruisci i moduli che possono attivare i flussi di lavoro
+- [Groups](../groups/index.md) -- i gruppi che un'azione "Add to group" può inserire le persone in
+- [Ruoli e Permessi](../settings/roles-permissions.md) -- controlla chi può visualizzare, modificare e gestire i flussi di lavoro

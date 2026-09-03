@@ -2,63 +2,63 @@
 title: "Modelli di Piano"
 ---
 
-# Plan Templates
+# Modelli di Piano
 
 <div class="article-intro">
 
-Plan templates let you Salva a reusable snapshot of a plan's order of Servizio or positions and apply it Per future plans in one Fai clic. Instead of rebuilding the same structure every week, you Salva it once and stamp it onto as many upcoming plans as you need.
+I modelli di piano ti permettono di salvare un'istantanea riutilizzabile dell'ordine di servizio o delle posizioni di un piano e applicarla ai piani futuri con un clic. Invece di ricostruire la stessa struttura ogni settimana, la salvi una volta e la applichi a quanti piani futuri ti serve.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Crea at least one [service plan](plans.md) with a Servizio order or positions defined
-- You need access Per the Serving area in B1 Admin
+- Crea almeno un [piano di servizio](plans.md) con un ordine di servizio o posizioni definite
+- Hai bisogno dell'accesso all'area Serving in B1 Admin
 
 </div>
 
-## Saving a Plan as a Template
+## Salvataggio di un Piano come Modello
 
-1. Apri an existing plan from the **Serving** area.
-2. Fai clic the **Templates** button (top of the plan page).
-3. Scegli **Salva as Template**.
-4. Give the template a name (for example, "Standard Sunday" or "Worship + Sermon").
-5. Salva. The template captures the plan's current order of Servizio and positions at that moment.
+1. Apri un piano esistente dall'area **Serving**.
+2. Fai clic sul pulsante **Templates** (in alto sulla pagina del piano).
+3. Scegli **Save as Template**.
+4. Dai al modello un nome (ad esempio, "Standard Sunday" o "Worship + Sermon").
+5. Salva. Il modello cattura l'ordine di servizio e le posizioni attuali del piano in quel momento.
 
-## Managing Templates
+## Gestione dei Modelli
 
-From the **Templates** button on any plan Digita page you can:
+Dal pulsante **Templates** su qualsiasi pagina del tipo di piano puoi:
 
-- **Rename** — change the template's display name
-- **Update from plan** — replace the template's content with a plan's current state (useful after you refine your standard structure)
-- **Apply** — stamp the template onto one or more upcoming plans
-- **Elimina** — Rimuovi a template you No longer need
+- **Rename** — cambia il nome visualizzato del modello
+- **Update from plan** — sostituisci il contenuto del modello con lo stato attuale di un piano (utile dopo aver perfezionato la tua struttura standard)
+- **Apply** — applica il modello a uno o più piani futuri
+- **Delete** — rimuovi un modello che non ti serve più
 
-## Applying a Template Per Plans
+## Applicazione di un Modello ai Piani
 
-1. Fai clic the **Templates** button on the plan Digita page.
-2. Fai clic the **Apply** icon (copy icon) Avanti Per the template you want Per use.
-3. Seleziona which upcoming plans Per apply it Per by checking their boxes.
-4. Scegli what Per copy:
-   - **Order of Servizio** — replaces the selected plans' Servizio order items with the template's items
-   - **Positions** — replaces the selected plans' positions (and their assignments) with the template's positions
-5. Fai clic **Apply**.
+1. Fai clic sul pulsante **Templates** nella pagina del tipo di piano.
+2. Fai clic sull'icona **Apply** (icona di copia) accanto al modello che desideri utilizzare.
+3. Seleziona quali piani futuri applicarlo a selezionando le loro caselle.
+4. Scegli cosa copiare:
+   - **Order of Service** — sostituisce gli elementi dell'ordine di servizio dei piani selezionati con gli elementi del modello
+   - **Positions** — sostituisce le posizioni dei piani selezionati (e i loro assegnamenti) con le posizioni del modello
+5. Fai clic su **Apply**.
 
 :::warning
-Applying positions replaces all existing positions and assignments on the selected plans. Make sure you have not already scheduled Volontari for those positions before applying.
+L'applicazione delle posizioni sostituisce tutte le posizioni e gli assegnamenti esistenti sui piani selezionati. Assicurati di non aver già programmato i volontari per quelle posizioni prima di applicare.
 :::
 
 :::tip
-Apply the Order of Servizio without Positions when you want a consistent song/sermon structure but Volontari are already assigned differently each week.
+Applica l'Ordine di Servizio senza Posizioni quando desideri una struttura di canto/sermone coerente ma i volontari sono già assegnati diversamente ogni settimana.
 :::
 
-## Keeping Templates Up Per Data
+## Mantenimento dei Modelli Aggiornati
 
-If your standard Servizio structure changes, Apri the template manager and use **Update from plan** Per sync the template from your latest plan rather than rebuilding it from scratch.
+Se la tua struttura di servizio standard cambia, apri il gestore dei modelli e usa **Update from plan** per sincronizzare il modello dal tuo piano più recente piuttosto che ricostruirlo da zero.
 
 ## Articoli Correlati
 
-- [Service Plans](plans.md) — Crea and manage individual Servizio plans
-- [Plans Overview](plans-overview.md) — See all upcoming assignments across plans in one grid
-- [Service Order](service-order.md) — Build the order of Servizio within a plan
+- [Piani di Servizio](plans.md) — Crea e gestisci singoli piani di servizio
+- [Panoramica dei Piani](plans-overview.md) — Vedi tutti i prossimi assegnamenti tra piani in una griglia
+- [Ordine di Servizio](service-order.md) — Crea l'ordine di servizio all'interno di un piano

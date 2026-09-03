@@ -1,5 +1,5 @@
 ---
-title: "Docker के साथ Self-Hosting"
+title: "Docker"
 ---
 
 # Self-Hosting with Docker

@@ -2,71 +2,71 @@
 title: "उपलब्धता कैलेंडर"
 ---
 
-# Availability Calendar
+# उपलब्धता कैलेंडर
 
 <div class="article-intro">
 
-The Availability Calendar gives you a bird's-eye view of all room and resource bookings across your church. From here you can see what is scheduled, spot conflicts before they happen, and book a room or resource for any event directly.
+उपलब्धता कैलेंडर आपको अपने चर्च में सभी कमरे और संसाधन बुकिंग का एक पक्षी-आंख दृश्य देता है। यहां से आप देख सकते हैं कि क्या शेड्यूल किया गया है, विरोध से पहले स्पॉट करें, और किसी भी इवेंट के लिए सीधे एक कमरे या संसाधन को बुक करें।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- Set up at least one [room or resource](rooms-resources) in the Rooms & Resources section
-- You need edit access to the Calendars section in B1 Admin
+- कमरे और संसाधन अनुभाग में कम से कम एक [कमरे या संसाधन](rooms-resources) को सेट करें
+- आपको B1 Admin में कैलेंडर अनुभाग तक संपादन पहुंच की आवश्यकता है
 
 </div>
 
-## Opening the Availability Calendar
+## उपलब्धता कैलेंडर खोलना
 
-In B1 Admin, open the **section menu** in the top-left corner and choose **Calendars**, then select **Availability**.
+B1 Admin में, ऊपरी-बाईं कोने में **अनुभाग मेनू** खोलें और **कैलेंडर** चुनें, फिर **उपलब्धता** चुनें।
 
-## Reading the Calendar
+## कैलेंडर पढना
 
-The calendar displays the current month by default. You can navigate forward and back with the arrows at the top, or switch between month, week, and day views.
+कैलेंडर डिफ़ॉल्ट रूप से वर्तमान महीने प्रदर्शित करता है। आप शीर्ष पर तीरों के साथ आगे और पीछे नेविगेट कर सकते हैं, या महीने, सप्ताह, और दिन दृश्यों के बीच स्विच कर सकते हैं।
 
-Each event is color-coded by booking status:
+प्रत्येक इवेंट बुकिंग स्थिति द्वारा रंग-कोडित है:
 
-| Color | Meaning |
+| रंग | मतलब |
 |-------|---------|
-| Green | Approved |
-| Orange | Pending approval |
-| Grey | Blocked out (not available) |
+| हरा | अनुमोदित |
+| संतरा | अनुमोदन की प्रतीक्षा में |
+| ग्रे | ब्लॉक किया गया (उपलब्ध नहीं) |
 
-Hovering over an event shows the event title and the room or resource it is attached to.
+किसी इवेंट के ऊपर होवर करने से इवेंट का शीर्षक और कमरा या संसाधन दिखाई देता है जो इससे जुड़ा है।
 
-## Filtering by Room or Resource
+## कमरे या संसाधन द्वारा फ़िल्टर करना
 
-Use the **Filter** dropdown at the top left to narrow the calendar to a single room or resource. Select **All Rooms & Resources** to return to the full view.
+ऊपरी बाईं ओर **फ़िल्टर** ड्रॉपडाउन का उपयोग करें कैलेंडर को एक एकल कमरे या संसाधन तक सीमित करने के लिए। पूर्ण दृश्य पर वापस जाने के लिए **सभी कमरे और संसाधन** चुनें।
 
-## Booking a Room or Resource
+## कमरे या संसाधन को बुक करना
 
-1. Click the **Book** button in the top right corner of the page.
-2. In the dialog that opens, fill in the event details:
-   - **Title** — the name of the event
-   - **Start** and **End** date/time
-   - **Visibility** — Public or Private
-   - **Rooms** — select one or more rooms to reserve
-   - **Resources** — select one or more resources to reserve
-3. Optionally set **Setup** and **Teardown** times (in minutes). These pad the booking on both ends so the space is reserved for setup and cleanup, even though the event start/end times stay the same.
-4. To repeat the booking, check **Repeats** and configure the recurrence:
-   - **Repeat every** -- set the interval (for example, every 2 weeks).
-   - **Frequency** -- Daily, Weekly, or Monthly. Weekly lets you pick specific day(s) of the week; Monthly lets you pick a fixed day of the month or a relative pattern like "the second Tuesday."
-   - **Ends** -- Never, on a specific date, or after a set number of occurrences.
-5. To specify a custom booking window (different from the event start/end), toggle **Custom Booking Window** and enter the window start and end times. Use this when a room needs to be accessible outside the event's listed hours.
-6. Click **Save** to submit the booking.
+1. पृष्ठ के शीर्ष दाईं कोने में **बुक** बटन क्लिक करें।
+2. जो डायलॉग खुलता है उसमें, इवेंट विवरण भरें:
+   - **शीर्षक** — इवेंट का नाम
+   - **शुरुआत** और **अंत** तारीख/समय
+   - **दृश्यता** — सार्वजनिक या निजी
+   - **कमरे** — आरक्षित करने के लिए एक या अधिक कमरे चुनें
+   - **संसाधन** — आरक्षित करने के लिए एक या अधिक संसाधन चुनें
+3. वैकल्पिक रूप से **सेटअप** और **टेयरडाउन** समय सेट करें (मिनटों में)। ये बुकिंग के दोनों सिरों पर पैड करते हैं ताकि स्थान सेटअप और सफाई के लिए आरक्षित हो, भले ही इवेंट शुरुआत/अंत समय समान रहें।
+4. बुकिंग को दोहराने के लिए, **दोहराता है** जांचें और पुनरावृत्ति कॉन्फ़िगर करें:
+   - **हर दोहराएं** -- अंतराल सेट करें (उदाहरण के लिए, हर 2 सप्ताह)।
+   - **आवृत्ति** -- दैनिक, साप्ताहिक, या मासिक। साप्ताहिक आपको सप्ताह के विशिष्ट दिन (दिनों) को चुनने देता है; मासिक आपको महीने के एक निश्चित दिन या "दूसरा मंगलवार" जैसे एक सापेक्ष पैटर्न चुनने देता है।
+   - **समाप्त होता है** -- कभी नहीं, एक विशिष्ट तारीख पर, या निर्धारित संख्या में घटनाओं के बाद।
+5. एक कस्टम बुकिंग विंडो निर्दिष्ट करने के लिए (इवेंट शुरुआत/अंत से अलग), **कस्टम बुकिंग विंडो** टॉगल करें और विंडो शुरुआत और अंत समय दर्ज करें। इसका उपयोग करें जब एक कमरे को इवेंट के सूचीबद्ध घंटों के बाहर सुलभ होने की आवश्यकता हो।
+6. बुकिंग जमा करने के लिए **सहेजें** क्लिक करें।
 
 :::info
-If the room or resource has an **Approval Group** configured, the booking will appear as **Pending** until a leader of that group approves it. See [Calendar Approvals](approvals) for the approval workflow.
+यदि कमरे या संसाधन के पास एक **अनुमोदन समूह** कॉन्फ़िगर किया गया है, तो बुकिंग **लंबित** के रूप में दिखाई देगा जब तक उस समूह का नेता इसे अनुमोदित न करे। अनुमोदन वर्कफ़्लो के लिए [कैलेंडर अनुमोदन](approvals) देखें।
 :::
 
 :::tip
-The calendar will highlight any conflicts before you save. If you see a conflict warning, adjust your times or choose a different room.
+कैलेंडर सहेजने से पहले किसी भी विरोध को हाइलाइट करेगा। यदि आप विरोध चेतावनी देखते हैं, तो अपने समय को समायोजित करें या एक अलग कमरा चुनें।
 :::
 
-## Related Articles
+## संबंधित लेख
 
-- [Rooms, Resources & Scheduling](rooms-resources) — set up bookable spaces and equipment
-- [Calendar Approvals](approvals) — approve or deny booking requests
-- [Creating Calendars](creating-calendars) — manage event calendars
+- [कमरें, संसाधन और शेड्यूलिंग](rooms-resources) — बुकिंग योग्य स्थान और उपकरण सेट करें
+- [कैलेंडर अनुमोदन](approvals) — बुकिंग अनुरोधों को अनुमोदित या अस्वीकार करें
+- [कैलेंडर बनाना](creating-calendars) — इवेंट कैलेंडर प्रबंधित करें

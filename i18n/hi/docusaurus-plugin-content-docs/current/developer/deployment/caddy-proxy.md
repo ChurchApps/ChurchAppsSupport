@@ -1,5 +1,5 @@
 ---
-title: "Caddy Custom-Domain Proxy"
+title: "Caddy प्रॉक्सी"
 ---
 
 # Caddy Custom-Domain Proxy

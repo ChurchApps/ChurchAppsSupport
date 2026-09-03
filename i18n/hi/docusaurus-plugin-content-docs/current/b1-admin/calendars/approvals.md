@@ -2,51 +2,51 @@
 title: "कैलेंडर अनुमोदन"
 ---
 
-# Calendar Approvals
+# कैलेंडर अनुमोदन
 
 <div class="article-intro">
 
-The Approvals page is where administrators review and act on pending room and resource booking requests, as well as calendar events that require approval before being published.
+अनुमोदन पृष्ठ वह है जहां प्रशासक लंबित कमरे और संसाधन बुकिंग अनुरोधों की समीक्षा करते हैं और कार्य करते हैं, साथ ही साथ कैलेंडर इवेंट जिन्हें प्रकाशित होने से पहले अनुमोदन की आवश्यकता होती है।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- Configure rooms or resources with an **Approval Group** in [Rooms & Resources](rooms-resources)
-- You need the **Calendars Admin** permission or the **content.edit** permission
+- [कमरों और संसाधनों](rooms-resources) में **अनुमोदन समूह** के साथ कमरों या संसाधनों को कॉन्फ़िगर करें
+- आपको **कैलेंडर प्रशासक** अनुमति या **content.edit** अनुमति की आवश्यकता है
 
 </div>
 
-## Opening Approvals
+## अनुमोदन खोलना
 
-In B1 Admin, go to **Calendars** and select **Approvals**. Pending booking requests and events awaiting review are listed here.
+B1 Admin में, **कैलेंडर** पर जाएं और **अनुमोदन** चुनें। लंबित बुकिंग अनुरोध और समीक्षा की प्रतीक्षा में इवेंट यहां सूचीबद्ध हैं।
 
-## Booking Requests
+## बुकिंग अनुरोध
 
-When a group creates an event and requests a room or resource, the request appears in the **Booking Requests** panel. Each row shows:
+जब कोई समूह एक इवेंट बनाता है और एक कमरे या संसाधन का अनुरोध करता है, तो अनुरोध **बुकिंग अनुरोध** पैनल में दिखाई देता है। प्रत्येक पंक्ति दिखाती है:
 
-- The room or resource being requested
-- The event name and date/time
-- The requesting group
+- अनुरोध किए गए कमरे या संसाधन
+- इवेंट का नाम और तारीख/समय
+- अनुरोध करने वाला समूह
 
-### Conflict Indicators
+### विरोध संकेतक
 
-If two requests overlap for the same room or resource, a conflict warning icon appears. Review conflicting requests carefully before approving either one.
+यदि एक ही कमरे या संसाधन के लिए दो अनुरोध ओवरलैप करते हैं, तो विरोध चेतावनी आइकन दिखाई देता है। किसी एक को अनुमोदित करने से पहले विरोधी अनुरोधों की सावधानीपूर्वक समीक्षा करें।
 
-### Approving or Rejecting
+### अनुमोदन या अस्वीकार करना
 
-Click the **✓** (approve) or **✗** (reject) icon on any booking request. The requesting group is notified of the decision. Approved bookings are locked to that room or resource for the event; rejected bookings free the slot for others.
+किसी भी बुकिंग अनुरोध पर **✓** (अनुमोदित) या **✗** (अस्वीकार) आइकन क्लिक करें। अनुरोध करने वाले समूह को निर्णय की सूचना दी जाती है। अनुमोदित बुकिंग उस कमरे या संसाधन के लिए इवेंट के लिए लॉक हो जाती हैं; अस्वीकार किए गए बुकिंग अन्य लोगों के लिए स्लॉट को मुक्त करते हैं।
 
-## Pending Events
+## लंबित इवेंट
 
-If your calendar workflow requires event approval before events become visible to the public, pending events appear in the **Pending Events** panel. Approve an event to publish it to the calendar, or reject it to notify the submitter that changes are needed.
+यदि आपके कैलेंडर वर्कफ़्लो को इवेंट अनुमोदन की आवश्यकता है कि इवेंट जनता को दिखाई देने से पहले, लंबित इवेंट **लंबित इवेंट** पैनल में दिखाई देते हैं। इवेंट को अनुमोदित करें इसे कैलेंडर में प्रकाशित करने के लिए, या इसे अस्वीकार करें जमाकर्ता को सूचित करने के लिए कि परिवर्तन आवश्यक हैं।
 
 :::tip
-Set up an Approval Group on a room in [Rooms & Resources](rooms-resources) to require approval for that room. Groups with access can then request the room when creating events, and those requests flow into this page.
+[कमरों और संसाधनों](rooms-resources) में एक कमरे पर एक अनुमोदन समूह सेट करें उस कमरे के लिए अनुमोदन की आवश्यकता करने के लिए। पहुंच वाले समूह फिर इवेंट बनाते समय कमरे का अनुरोध कर सकते हैं, और वे अनुरोध इस पृष्ठ में प्रवाहित होते हैं।
 :::
 
-## Related Articles
+## संबंधित लेख
 
-- [Rooms, Resources & Scheduling](rooms-resources) — configure bookable rooms and resources
-- [Creating Calendars](creating-calendars) — manage calendars and events
+- [कमरें, संसाधन और शेड्यूलिंग](rooms-resources) — बुकिंग योग्य कमरों और संसाधनों को कॉन्फ़िगर करें
+- [कैलेंडर बनाना](creating-calendars) — कैलेंडर और इवेंट प्रबंधित करें

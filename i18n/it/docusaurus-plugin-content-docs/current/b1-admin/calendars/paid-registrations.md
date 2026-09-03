@@ -1,93 +1,93 @@
 ---
-title: "Registrazioni a Pagamento"
+title: "Registrazioni Pagate"
 ---
 
-# Paid Registrations
+# Registrazioni Pagate
 
 <div class="article-intro">
 
-Evento registration can go beyond a simple head count. You can define priced attendee types (like Adult and Child), offer Facoltativo Aggiungi-ons with their own prices and quantities, Crea discount codes, and collect payment at registration through your church's existing giving provider. When an Evento fills up, an Facoltativo waitlist keeps interested Membri in line and promotes them automatically as spots Apri.
+La registrazione agli eventi può andare oltre un semplice conteggio dei partecipanti. Puoi definire tipi di partecipanti con prezzo (come Adulto e Bambino), offrire componenti aggiuntivi facoltativi con i loro prezzi e quantità, creare codici di sconto e raccogliere il pagamento alla registrazione attraverso il tuo fornitore di donazioni esistente. Quando un evento si riempie, una lista d'attesa facoltativa mantiene i membri interessati in coda e li promuove automaticamente man mano che si aprono i posti.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Enable registration on the Evento first — see [Creating Calendars](creating-calendars#enabling-event-registration)
-- Per collect payments, your church needs [online giving configured](../donations/online-giving-setup.md) (Stripe, PayPal, or Kingdom Funding). Free Eventi need No giving Configurazione.
+- Abilita la registrazione sull'evento per primo — vedi [Creazione di Calendari](creating-calendars#enabling-event-registration)
+- Per raccogliere i pagamenti, la tua chiesa ha bisogno di [donazioni online configurate](../donations/online-giving-setup.md) (Stripe, PayPal o Kingdom Funding). Gli eventi gratuiti non richiedono alcuna configurazione di donazione.
 
 </div>
 
-## Opening Registration Impostazioni
+## Apertura delle Impostazioni di Registrazione
 
-1. In B1 Admin, go Per the **Registrations** page and Apri your Evento (or Apri the Evento from its calendar).
-2. The **Registration Impostazioni** card shows the basics — **Enable Registration**, **Capacità**, **Registration Opens/Closes**, **Tags**, and **Registration Questions**.
-3. Below the basics are three accordions: **Attendee Types**, **Selections**, and **Discount Codes**.
+1. In B1 Admin, vai alla pagina **Registrations** e apri il tuo evento (oppure apri l'evento dal suo calendario).
+2. La scheda **Registration Settings** mostra le nozioni di base — **Enable Registration**, **Capacity**, **Registration Opens/Closes**, **Tags** e **Registration Questions**.
+3. Sotto le nozioni di base ci sono tre sezioni: **Attendee Types**, **Selections** e **Discount Codes**.
 
-## Attendee Types
+## Tipi di Partecipanti
 
-Attendee types let you charge different prices for different kinds of attendees — and cap each one separately.
+I tipi di partecipanti ti permettono di addebitare prezzi diversi per diversi tipi di partecipanti e di limitarne ogni uno separatamente.
 
-1. Expand the **Attendee Types** accordion and Fai clic **Aggiungi Digita**.
-2. Inserisci a **Name** (e.g. "Adult", "Child", "Student").
-3. Set a **Price**. Use 0 for a free Digita.
-4. Optionally set a **Capacità** for just this Digita (e.g. only 20 Child spots). Leave blank for No per-Digita limit.
-5. Fai clic **Salva**.
+1. Espandi la sezione **Attendee Types** e fai clic su **Add Type**.
+2. Immetti un **Name** (ad esempio "Adult", "Child", "Student").
+3. Imposta un **Price**. Usa 0 per un tipo gratuito.
+4. Facoltativamente imposta una **Capacity** solo per questo tipo (ad esempio, solo 20 posti per Child). Lascialo vuoto per nessun limite per tipo.
+5. Fai clic su **Save**.
 
-During registration, each attendee picks a Digita; sold-out types are shown as **Sold out** and cannot be selected. The roster shows each attendee's Digita and running per-Digita counts.
+Durante la registrazione, ogni partecipante sceglie un tipo; i tipi esauriti vengono visualizzati come **Sold out** e non possono essere selezionati. L'elenco mostra il tipo di ogni partecipante e i conteggi per tipo in esecuzione.
 
-## Selections
+## Selezioni
 
-Selections are Facoltativo priced Aggiungi-ons — T-shirts, meal plans, activity upgrades.
+Le selezioni sono componenti aggiuntivi facoltativi con prezzo — magliette, piani pasto, aggiornamenti attività.
 
-1. Expand the **Selections** accordion and Fai clic **Aggiungi Selection**.
-2. Inserisci a **Name**, Facoltativo **Description**, and a **Price** (0 shows as "Free").
-3. Optionally set a **Capacità** (total Disponibile across all registrations) and a **Max Qty** (the most one registration can order).
-4. Fai clic **Salva**.
+1. Espandi la sezione **Selections** e fai clic su **Add Selection**.
+2. Immetti un **Name**, una **Description** facoltativa e un **Price** (0 viene visualizzato come "Free").
+3. Facoltativamente imposta una **Capacity** (totale disponibile in tutte le registrazioni) e un **Max Qty** (il massimo che una registrazione può ordinare).
+4. Fai clic su **Save**.
 
-Registrants Scegli quantities during signup, and the totals count against Capacità so you never oversell.
+I registrati scelgono le quantità durante l'iscrizione e i totali si contano rispetto alla capacità in modo che tu non vendi mai più di quanto disponibile.
 
-## Discount Codes
+## Codici di Sconto
 
-1. Expand the **Discount Codes** accordion and Fai clic **Aggiungi Discount Code**.
-2. Inserisci the **Code** registrants will Digita.
-3. Scegli the **Digita** — **Percent** or **Amount** — and its **Value**.
-4. Optionally limit the code with a **Start Data** / **End Data**, a **Min Membri** (minimum number of attendees on the registration), and **Max Uses**.
-5. Fai clic **Salva**.
+1. Espandi la sezione **Discount Codes** e fai clic su **Add Discount Code**.
+2. Immetti il **Code** che i registrati digiteranno.
+3. Scegli il **Type** — **Percent** o **Amount** — e il suo **Value**.
+4. Facoltativamente limita il codice con una **Start Date** / **End Date**, un **Min Members** (numero minimo di partecipanti alla registrazione) e **Max Uses**.
+5. Fai clic su **Save**.
 
-Each code shows a **Uses** count so you can see how often it has been redeemed. Registrants get instant feedback when they apply a code — including clear messages when a code has expired, hasn't started, or needs more attendees.
+Ogni codice mostra un conteggio di **Uses** così puoi vedere quante volte è stato riscattato. I registrati ricevono feedback istantaneo quando applicano un codice — inclusi messaggi chiari quando un codice è scaduto, non è ancora iniziato o richiede più partecipanti.
 
-## Waitlist
+## Lista d'Attesa
 
-Turn on **Enable Waitlist** in the Registration Impostazioni card. When the Evento reaches Capacità:
+Attiva **Enable Waitlist** nella scheda Registration Settings. Quando l'evento raggiunge la capacità:
 
-- New registrants are offered a waitlist spot instead of being turned away. They complete the same signup (payment is skipped while waitlisted).
-- When someone cancels, the oldest waitlisted registration is **promoted automatically** and receives an email that a spot opened. If they owe a balance, the email links them Per complete payment.
-- You can promote someone manually at any Ora with the **Promote** action on a waitlisted row — useful after raising the Evento Capacità.
-
-:::info
-Promoted registrations stay *In Sospeso* until any balance is paid; paying (or having nothing Per pay) confirms them.
-:::
-
-## The Registration Roster
-
-Apri an Evento from the Registrations page Per see every registration. The table shows **Name**, **Membri**, **Digita** (each attendee's Digita), **Paid / Total** (with a balance warning when money is still owed), **Status**, and **Data**, plus per-Digita count chips above the table.
-
-- Fai clic a row's details icon Per Apri the **Registration Details** dialog — Membri, selections, paid/balance, and a **Payments** table listing every charge (amount, method, Data).
-- **Esporta CSV** downloads the full roster with columns for Membri, attendee types, selections, paid/total/balance, status, and one column per registration question.
-- **Aggiungi Attendee** still lets you record offline signups manually.
+- I nuovi registrati ricevono un posto in lista d'attesa invece di essere respinti. Completano la stessa iscrizione (il pagamento viene saltato mentre sono in lista d'attesa).
+- Quando qualcuno si cancella, la registrazione più vecchia in lista d'attesa viene **promossa automaticamente** e riceve un'email che un posto si è aperto. Se devono un saldo, l'email li collega per completare il pagamento.
+- Puoi promuovere qualcuno manualmente in qualsiasi momento con l'azione **Promote** su una riga in lista d'attesa — utile dopo aver aumentato la capacità dell'evento.
 
 :::info
-Refunds are not processed inside B1. If you need Per refund a cancelled paid registration, issue the refund from your giving provider's dashboard (e.g. Stripe).
+Le registrazioni promosse rimangono *pending* fino a quando qualsiasi saldo non viene pagato; pagare (o non avere nulla da pagare) le conferma.
 :::
 
-## How Payment Works
+## Elenco di Registrazione
 
-Payments run through the same giving gateway your church already uses for donations — card details go straight Per the provider and never touch B1's servers. Prices are always computed on the server from your configured types, selections, and discount codes, so a registrant can't tamper with the total. Logged-in Membri can pay with a saved card; Ospiti Inserisci a card at checkout.
+Apri un evento dalla pagina Registrations per vedere ogni registrazione. La tabella mostra **Name**, **Members**, **Type** (tipo di ogni partecipante), **Paid / Total** (con avviso di saldo quando denaro è ancora dovuto), **Status** e **Date**, più chip di conteggio per tipo sopra la tabella.
+
+- Fai clic sull'icona dei dettagli di una riga per aprire la finestra di dialogo **Registration Details** — membri, selezioni, pagato/saldo e una tabella **Payments** che elenca ogni addebito (importo, metodo, data).
+- **Export CSV** scarica l'elenco completo con colonne per membri, tipi di partecipanti, selezioni, pagato/totale/saldo, stato e una colonna per ogni domanda di registrazione.
+- **Add Attendee** ti permette ancora di registrare iscritti offline manualmente.
+
+:::info
+I rimborsi non vengono elaborati all'interno di B1. Se hai bisogno di rimborsare una registrazione pagata annullata, emetti il rimborso dal dashboard del tuo fornitore di donazioni (ad esempio Stripe).
+:::
+
+## Come Funziona il Pagamento
+
+I pagamenti vengono eseguiti attraverso lo stesso gateway di donazioni che la tua chiesa utilizza già per le donazioni — i dettagli della carta vanno direttamente al provider e non toccano mai i server di B1. I prezzi vengono sempre calcolati sul server dalle tue tipologie configurate, selezioni e codici di sconto, quindi un registrato non può manomettere il totale. I membri registrati possono pagare con una carta salvata; i guest inseriscono una carta al checkout.
 
 ## Articoli Correlati
 
-- [Creating Calendars](creating-calendars#enabling-event-registration) — enable registration and the basic Impostazioni
-- [Online Giving Setup](../donations/online-giving-setup.md) — configure the payment gateway used at checkout
-- [Registering for Events](../../b1-church/events/registering) — what Membri see when they sign up
-- [My Registrations](../../b1-church/events/my-registrations) — how Membri pay balances and Modifica registrations
+- [Creazione di Calendari](creating-calendars#enabling-event-registration) — abilita la registrazione e le impostazioni di base
+- [Configurazione Donazioni Online](../donations/online-giving-setup.md) — configura il gateway di pagamento utilizzato al checkout
+- [Registrazione agli Eventi](../../b1-church/events/registering) — cosa vedono i membri quando si iscrivono
+- [Le Mie Registrazioni](../../b1-church/events/my-registrations) — come i membri pagano i saldi e modificano le registrazioni

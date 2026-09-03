@@ -1,32 +1,32 @@
 ---
-title: "Démarrage"
+title: "Bien Démarrer"
 ---
 
-# Démarrage avec FreePlay
+# Bien Démarrer avec FreePlay
 
 <div class="article-intro">
 
-FreePlay est disponible pour Android TV, Amazon Fire TV et Apple TV. Ce guide vous guide à travers l'installation de l'application, son lancement pour la première fois et l'apprentissage des contrôles de télécommande TV de base que vous utiliserez dans l'application.
+FreePlay est disponible pour Android TV, Amazon Fire TV, et Apple TV. Ce guide vous guide à travers l'installation de l'application, son lancement pour la première fois, et l'apprentissage des contrôles de télécommande TV de base que vous utiliserez dans l'application.
 
 </div>
 
-:::tip Vous êtes nouveau à FreePlay ? Commencez ici
-Regardez notre **<a href="/guides/freeplay-quickstart" target="_blank">vidéo de démarrage rapide</a>** — installez FreePlay et commencez à lire le contenu en seulement quelques minutes. Aucune compétence technique requise.
+:::tip Nouveau dans FreePlay? Commencez ici
+Regardez notre **<a href="/guides/freeplay-quickstart" target="_blank">vidéo de démarrage rapide</a>** — installez FreePlay et commencez à lire du contenu en quelques minutes. Aucune compétence technique requise.
 :::
 
 :::tip Configuration avec B1 Admin?
-Notre **<a href="/guides/freeplay-b1admin" target="_blank">guide étape par étape</a>** couvre la configuration complète — de la liaison des fournisseurs de contenu à l'obtention de la bonne leçon téléchargée automatiquement chaque semaine sur votre TV de salle de classe.
+Notre **<a href="/guides/freeplay-b1admin" target="_blank">guide étape par étape</a>** couvre la configuration complète — du lien des fournisseurs de contenu à l'avoir automatiquement téléchargée la bonne leçon sur votre TV de classe chaque semaine.
 :::
 
 ## Installation de FreePlay
 
-:::tip Vous achetez un appareil ?
-Tous les bâtons de streaming ne peuvent pas exécuter FreePlay — les derniers modèles Fire TV bon marché ne peuvent pas. Voir **[Choisir un appareil](./choosing-a-device.md)** pour exactement ce qu'il faut acheter.
+:::tip Acheter un appareil?
+Tous les bâtons de streaming ne peuvent pas exécuter FreePlay — les derniers modèles Fire TV budgétaires ne le peuvent pas. Voir **[Choisir un Appareil](./choosing-a-device.md)** pour exactement ce qu'il faut acheter.
 :::
 
 ### Android TV / Amazon Fire TV
 
-1. Ouvrez l'App Store sur votre TV (**Google Play Store** ou **Amazon Appstore**)
+1. Ouvrez le magasin d'applications sur votre TV (**Google Play Store** ou **Amazon Appstore**)
 2. Recherchez **FreePlay**
 3. Sélectionnez l'application et choisissez **Installer**
 
@@ -36,25 +36,25 @@ Tous les bâtons de streaming ne peuvent pas exécuter FreePlay — les derniers
 2. Recherchez **FreePlay**
 3. Sélectionnez l'application et choisissez **Obtenir**
 
-## Lancement de l'application
+## Lancement de l'Application
 
-Quand vous ouvrez FreePlay pour la première fois, vous verrez un écran d'éclaboussure animé avec le logo FreePlay. L'application vérifie les fournisseurs de contenu précédemment connectés. Si vous avez déjà connecté un fournisseur, il vous mènera directement au navigateur de contenu de ce fournisseur. Sinon, il ouvrira l'écran **Fournisseurs de contenu** où vous pouvez vous connecter à votre première source de contenu.
+Lorsque vous ouvrez FreePlay pour la première fois, vous verrez un écran de démarrage animé avec le logo FreePlay. L'application vérifie s'il y a des fournisseurs de contenu précédemment connectés. Si vous avez déjà connecté un fournisseur, il vous mènera directement au navigateur de contenu de ce fournisseur. Sinon, il ouvrira l'écran **Fournisseurs de Contenu** où vous pouvez vous connecter à votre première source de contenu.
 
-## Navigation avec votre télécommande TV
+## Navigation avec Votre Télécommande TV
 
 FreePlay est construit pour les télécommandes TV. Voici les contrôles que vous utiliserez dans l'application :
 
 - **Pavé directionnel (haut/bas/gauche/droite)** - Se déplacer entre les éléments à l'écran
-- **Bouton Sélectionner / OK** - Choisir l'élément en surbrillance
+- **Bouton Sélectionner / OK** - Choisir l'élément en évidence
 - **Flèche gauche** - Ouvrir la barre latérale depuis n'importe quel écran
-- **Flèche droite** - Fermer la barre latérale et retourner à la zone de contenu principale
+- **Flèche droite** - Fermer la barre latérale et revenir à la zone de contenu principal
 - **Bouton Retour / Menu** - Retourner à l'écran précédent
 
 :::tip
-La barre latérale se réduit à une bande étroite d'icônes lorsque vous naviguez dans le contenu. Appuyez sur la flèche gauche de votre télécommande pour la développer et voir les étiquettes complètes.
+La barre latérale se réduit à une fine bande d'icônes lorsque vous parcourez le contenu. Appuyez sur la flèche gauche de votre télécommande pour l'élargir et voir les étiquettes complètes.
 :::
 
-## Prochaines étapes
+## Prochaines Étapes
 
-- **[Choisir un mode d'appairage](./pairing-modes)** - Apprenez les différentes façons de connecter votre TV
-- **[Fournisseurs de contenu](../content-providers/)** - Connectez-vous à Lessons.church, Bible Project et bien d'autres
+- **[Choisir un Mode d'Appairage](./pairing-modes)** - En savoir plus sur les différentes façons de connecter votre TV
+- **[Fournisseurs de Contenu](../content-providers/)** - Connectez à Lessons.church, Bible Project, et plus

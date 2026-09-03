@@ -1,5 +1,5 @@
 ---
-title: "Giving Architecture"
+title: "देना"
 ---
 
 # Giving Architecture

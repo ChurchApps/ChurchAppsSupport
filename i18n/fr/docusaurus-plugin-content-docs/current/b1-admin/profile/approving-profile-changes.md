@@ -1,41 +1,59 @@
-﻿---
-title: "Approbation des modifications de profil"
+---
+title: "Approuver les Modifications de Profil"
 ---
 
-# Approbation des modifications de profil
+# Approuver les Modifications de Profil
 
-Lorsque votre église exige l'approbation de l'administrateur pour les mises à jour de profil, les membres soumettent leurs modifications via l'application B1 Mobile et ces demandes apparaissent en tant que tâches dans B1 Admin. Ce guide explique comment les examiner et les approuver.
+<div class="article-intro">
 
-## Où trouver les demandes en attente
+Lorsque votre église exige l'approbation d'un administrateur pour les mises à jour de profil, les membres soumettent leurs modifications via l'application B1 Mobile et ces demandes apparaissent comme des tâches dans B1 Admin. Ce guide explique comment les examiner et les approuver.
 
-Lorsqu'un membre soumet une modification de profil, elle apparaît en tant que tâche assignée à votre groupe d'approbation. Vous pouvez la trouver à deux endroits :
+</div>
 
-**À partir du tableau de bord :**
-1. Connectez-vous à B1 Admin — le tableau de bord se charge automatiquement.
-2. Dans la section **Tâches** sur le côté droit, cliquez sur l'onglet **Assigné à mes groupes**.
+<div class="prereqs">
+<h4>Avant de commencer</h4>
+
+- Vous devez être membre du groupe désigné comme **Groupe d'Approbation du Répertoire** dans **Mobile → B1 Mobile**
+- Si aucun groupe d'approbation n'a été configuré, les modifications de profil sont appliquées immédiatement sans révision
+
+</div>
+
+## Où Trouver les Demandes en Attente
+
+Lorsqu'un membre soumet une modification de profil, elle apparaît comme une tâche assignée à votre groupe d'approbation. Vous pouvez la trouver dans deux endroits :
+
+**À partir du Tableau de Bord :**
+1. Connectez-vous à B1 Admin — le Tableau de Bord se charge automatiquement.
+2. Dans la section **Tâches** sur le côté droit, cliquez sur l'onglet **Assigné à Mes Groupes**.
 3. Toutes les demandes de modification de profil en attente seront listées là.
 
-**À partir de Service → Mon travail :**
-1. Dans la navigation en haut, cliquez sur **Service**.
-2. Cliquez sur **Mon travail**.
-3. Cliquez sur l'onglet **Assigné à mes groupes** sous Tâches.
+**À partir de Serving → Mon Travail :**
+1. Dans la barre de navigation en haut, cliquez sur **Serving**.
+2. Cliquez sur **Mon Travail**.
+3. Cliquez sur l'onglet **Assigné à Mes Groupes** sous Tâches.
 
-## Examen et approbation d'une demande
+## Révision et Approbation d'une Demande
 
-1. Cliquez sur la tâche **Mise à jour du profil** pour l'ouvrir.
-2. Sous **Modifications demandées**, vous verrez chaque champ que le membre souhaite mettre à jour avec la nouvelle valeur qu'il a soumise.
-3. Vérifiez les modifications.
-4. Cliquez sur **Appliquer** pour approuver et enregistrer les modifications sur son profil.
+1. Cliquez sur la tâche **Mise à jour du Profil** pour l'ouvrir.
+2. Sous **Modifications Demandées**, vous verrez chaque champ que le membre souhaite mettre à jour ainsi que la nouvelle valeur qu'il a soumise.
+3. Passez en revue les modifications.
+4. Cliquez sur **Appliquer** pour approuver et enregistrer les modifications sur leur profil.
 
-La tâche se fermera automatiquement une fois les modifications appliquées.
+La tâche se fermera automatiquement une fois que les modifications seront appliquées.
 
-## Configuration du groupe d'approbation
+## Configuration du Groupe d'Approbation
 
-Si votre église veut que les modifications de profil nécessitent une approbation, un groupe d'approbation d'annuaire doit d'abord être configuré.
+Si votre église souhaite que les modifications de profil nécessitent une approbation, un Groupe d'Approbation du Répertoire doit d'abord être configuré.
 
-1. Dans la navigation en haut, cliquez sur **Mobile**.
+1. Dans la barre de navigation en haut, cliquez sur **Mobile**.
 2. Cliquez sur **B1 Mobile**.
-3. Sous **Groupe d'approbation d'annuaire**, sélectionnez le groupe dont les membres doivent vérifier les demandes de modification de profil.
+3. Sous **Groupe d'Approbation du Répertoire**, sélectionnez le groupe dont les membres doivent examiner les demandes de modification de profil.
 4. Cliquez sur **Enregistrer**.
 
-Tout membre de ce groupe verra les demandes entrantes de modification de profil sous **Assigné à mes groupes** sur leur tableau de bord.
+Tout membre de ce groupe verra les demandes de modification de profil entrantes sous **Assigné à Mes Groupes** sur son tableau de bord.
+
+:::tip
+Assurez-vous que vos approbateurs sont réellement des membres du groupe configuré — seuls les membres du groupe verront les demandes.
+:::
+
+## Articles Connexes

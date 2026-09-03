@@ -34,7 +34,7 @@ La misma sección **Capacidad de Check-In** en el grupo incluye reglas de person
 - **Niños por voluntario** -- El número máximo de niños que cada voluntario marcado puede cubrir (p. ej., 5 significa un voluntario por cada cinco niños).
 - **Voluntarios mínimos** -- El número más pequeño de voluntarios que deben estar registrados antes de que los niños puedan hacer check-in a la sala.
 
-Los voluntarios cuentan hacia estas reglas cuando se registran con el tipo **Voluntario** en el quiosco (ver [Tipos de Check-In](#check-in-types) abajo).
+Los voluntarios cuentan hacia estas reglas cuando se registran con el tipo **Voluntario** en el quiosco (ver [Tipos de Check-In](#tipos-de-check-in) abajo).
 
 ### Elegir Advertencia vs. Bloqueo
 

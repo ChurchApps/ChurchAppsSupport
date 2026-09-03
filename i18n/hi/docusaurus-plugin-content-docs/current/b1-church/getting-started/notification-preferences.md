@@ -1,5 +1,5 @@
 ---
-title: "सूचना प्राथमिकताएं"
+title: "सूचना वरीयताएं"
 ---
 
 # Notification Preferences

@@ -1,59 +1,59 @@
 ---
-title: "Demograpiya"
+title: "Demographics"
 ---
 
-# Demograpiya
+# Demographics
 
 <div class="article-intro">
 
-Ang dashboard ng **Demograpiya** ay nagbibigay sa iyo ng visual snapshot ng iyong kongregasyon — kung sino sila, gaano sila karami, at kung paano nahahati ang iyong miyembro sa mga grupo ng edad, kasarian, estado ng kasal, at mga campus. Bawat chart ay interactive: i-click ang anumang segment upang direktang sumama sa isang na-filter na paghahanap ng Mga Tao na nagpapakita ng eksaktong mga taong iyon.
+Ang **Demographics** dashboard ay nagbibigay sa iyo ng visual snapshot ng iyong paglalakbay — sino sila, gaano karami, at kung paano ang iyong pagiging miyembro ay ipinamamahagi sa iba't ibang mga edad, kasarian, estado ng civil, at mga campus. Bawat chart ay interactive: i-click ang kahit anong segment upang direktang lumakad sa isang filtered na search ng People na nagpapakita ng eksaktong mga taong iyon.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Magsimula</h4>
 
-- Ang mga tao ay dapat na umiiral sa iyong direktoryo. Tingnan ang [Pagdadagdag ng Mga Tao](./adding-people.md) o [Pag-import ng Data](./importing-data.md) upang magsimula.
-- Upang makita ang Campus chart, kailangan mo munang mag-configure ng mga campus sa [Settings → Mga Campus](../settings/campuses.md).
+- Ang mga tao ay dapat na maging umiiral sa iyong direktoryo. Tingnan ang [Adding People](./adding-people.md) o [Importing Data](./importing-data.md) upang magsimula.
+- Upang makita ang Campus chart, kailangan mo munang i-configure ang mga campus sa [Settings → Campuses](../settings/campuses.md).
 
 </div>
 
-## Pagbubukas ng Demograpiya
+## Pagbubukas ng Demographics
 
-Mula sa pahina ng **Mga Tao**, i-click ang button ng **Demograpiya** sa header ng pahina (ang icon ng bar chart). Ang pahina ay nagpapakita ng iyong kabuuang bilang ng mga tao sa itaas, na sinusundan ng mga chart na inilarawan sa ibaba.
+Mula sa **People** page, i-click ang **Demographics** button sa page header (ang bar chart icon). Ang pahina ay nagpapakita ng iyong kabuuang person count sa tuktok, sinusundan ng mga chart na inilarawan sa ibaba.
 
 ## Mga Chart
 
-### Distribusyon ng Edad
+### Age Distribution
 
-Isang grouped bar chart na nagpapakita kung gaano karaming tao ang nasa bawat age bracket (halimbawa, 0–9, 10–17, 18–24, at iba pa hanggang 65+). Bawat bar ay nahahati sa tatlong serye — **Babae**, **Lalaki**, at **Hindi Itinalaga** — upang makita mo ang breakdown ng kasarian sa bawat edad na grupo nang sabay-sabay.
+Isang grouped bar chart na nagpapakita kung gaano karaming mga tao ang nahuhulog sa bawat age bracket (halimbawa, 0–9, 10–17, 18–24, at iba pang hanggang 65+). Bawat bar ay nahahati sa tatlong series — **Female**, **Male**, at **Unassigned** — upang makita mo ang gender breakdown sa bawat age group nang mabilis.
 
-### Status ng Miyembro
+### Membership Status
 
-Isang donut chart na sumasalamin sa iyong kongregasyon ayon sa status ng miyembro (halimbawa, Miyembro, Regular na Dumadalo, Bisita, at iba pa).
+Isang donut chart na nagbabago ng iyong paglalakbay ayon sa status ng miyembro (halimbawa, Member, Regular Attender, Visitor, at iba pang).
 
-### Kasarian
+### Gender
 
-Isang donut chart na nagpapakita ng proporsyon ng babae, lalaki, at hindi itinalagang mga record sa iyong direktoryo.
+Isang donut chart na nagpapakita ng proporsyon ng kababaihan, kalalakihan, at hindi nakatalagang mga rekord sa iyong direktoryo.
 
-### Estado ng Kasal
+### Marital Status
 
-Isang donut chart na nagpapakita ng breakdown sa mga halaga ng estado ng kasal (halimbawa, Kasal, Single, Biyuda).
+Isang donut chart na nagpapakita ng breakdown sa buong marital status na mga halaga (halimbawa, Married, Single, Widowed).
 
 ### Campus
 
-Isang donut chart na nagpapakita kung paano nahahati ang mga tao sa mga campus ng iyong simbahan. Ang chart na ito ay lalabas lamang kung mayroon kang mga campus na na-configure at hindi bababa sa isang tao na na-assign sa isang campus. Ang mga taong walang na-assign na campus ay lumalabas bilang **Hindi Itinalaga**.
+Isang donut chart na nagpapakita kung paano ang mga tao ay ipinamamahagi sa mga campus ng iyong simbahan. Ang chart na ito ay lumalabas lamang kung mayroon kang mga campus na naka-configure at hindi bababa sa isang tao na na-assign sa isang campus. Ang mga taong walang na-assign na campus ay lumalabas bilang **Unassigned**.
 
-## Pag-drill sa Data
+## Pag-drill Into ang Data
 
-I-click ang anumang slice ng isang donut chart o anumang segment ng bar sa age chart upang mag-navigate sa pahina ng **Mga Tao** na pre-filtered upang ipakita ang eksaktong mga taong iyon. Gamitin ito upang mabilis na bumuo ng isang listahan ng pakikipag-ugnayan, magsagawa ng isang bulk action, o mag-export ng isang segment — halimbawa, i-click ang slice ng **Bisita** sa Membership Status upang makita ang lahat ng mga bisita at pagkatapos ipadala sila sa isang workflow.
+I-click ang kahit anong slice ng isang donut chart o kahit anong bar segment sa age chart upang mag-navigate sa **People** page pre-filtered upang ipakita ang eksaktong mga taong iyon. Gamitin ito upang mabilis na bumuo ng isang contact list, magsagawa ng bulk action, o mag-export ng isang segment — halimbawa, i-click ang **Visitor** slice sa Membership Status upang makita ang lahat ng bisita at pagkatapos ay ipadala sila sa isang workflow.
 
 :::tip
-Pagkatapos ng pag-drill sa isang na-filter na resulta, gamitin ang **Mag-save bilang Lista** sa paghahanap ng Mga Tao upang i-save ang filter na iyon para sa hinaharap na paggamit. Tingnan ang [Saved Lists](./lists.md).
+Pagkatapos mag-drill sa isang filtered result, gamitin ang **Save as List** sa search ng People upang i-save ang filter na iyon para sa hinaharap na paggamit. Tingnan ang [Saved Lists](./lists.md).
 :::
 
-## Kaugnay na mga Artikulo
+## Mga Kaugnay na Artikulo
 
-- [Paghahanap ng Mga Tao](./searching-people.md) — ang pahina ng Mga Tao na iyong pinasok kapag nag-drill sa isang chart
-- [Saved Lists](./lists.md) — mag-save ng isang demographic segment bilang isang reusable list
-- [Mga Campus](../settings/campuses.md) — mag-configure ng mga campus upang ang Campus chart ay lumabas
+- [Searching People](./searching-people.md) — ang People page kung saan ka bumaba kapag nag-drill sa isang chart
+- [Saved Lists](./lists.md) — i-save ang demographic segment bilang isang reusable list
+- [Campuses](../settings/campuses.md) — i-configure ang mga campus upang lumitaw ang Campus chart

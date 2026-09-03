@@ -1,5 +1,5 @@
 ---
-title: "कार्यक्रम RSVP"
+title: "समूह ईवेंट RSVPs"
 ---
 
 # Event RSVPs

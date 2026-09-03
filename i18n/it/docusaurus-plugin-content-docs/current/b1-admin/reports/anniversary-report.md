@@ -1,45 +1,45 @@
 ---
-title: "Anniversary List"
+title: "Elenco Anniversari"
 ---
 
-# Anniversary List
+# Elenco Anniversari
 
 <div class="article-intro">
 
-Need a list of everyone with a wedding anniversary in a given Mese — for the bulletin, cards, or announcements? The People Cerca lets you filter by **Anniversary Mese** and show the dates right in the results.
+Hai bisogno di un elenco di tutti coloro che hanno un anniversario di matrimonio in un determinato mese — per il bollettino, biglietti o annunci? La ricerca People ti permette di filtrare per **Anniversary Month** e mostrare le date direttamente nei risultati.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Ensure anniversary dates are entered on each person's Profilo. See [Adding People](../people/adding-people.md) for details.
-- You need Permesso Per Visualizza People. See [Roles & Permissions](../settings/roles-permissions.md).
+- Assicurati che le date di anniversario siano inserite nel profilo di ogni persona. Vedi [Aggiunta di Persone](../people/adding-people.md) per i dettagli.
+- Hai bisogno del permesso di visualizzare le Persone. Vedi [Ruoli e Permessi](../settings/roles-permissions.md).
 
 </div>
 
-## Getting an Anniversary List for a Mese
+## Ottenere un Elenco di Anniversari per un Mese
 
-1. Apri the **menu della sezione** in the angolo in alto a sinistra and Scegli **People**.
-2. Under the Cerca box, Fai clic **Advanced**.
-3. Expand the **Demographics** section and check **Anniversary Mese**, then Scegli the Mese.
-4. Run the Cerca — everyone with an anniversary that Mese appears in the results.
-5. Per see the dates, Fai clic the **columns icon** at the top right of the results and enable the **Anniversary** column. Use **Esporta** Per Scarica the list as a spreadsheet if you prefer Per sort or print it.
+1. Apri il **menu della sezione** nell'angolo in alto a sinistra e scegli **People**.
+2. Sotto la casella di ricerca, fai clic su **Advanced**.
+3. Espandi la sezione **Demographics** e seleziona **Anniversary Month**, quindi scegli il mese.
+4. Esegui la ricerca — tutti coloro che hanno un anniversario quel mese appaiono nei risultati.
+5. Per vedere le date, fai clic sull'**icona delle colonne** in alto a destra dei risultati e abilita la colonna **Anniversary**. Usa **Export** per scaricare l'elenco come foglio di calcolo se preferisci ordinarlo o stamparlo.
 
-## Practical Uses
+## Usi Pratici
 
-- **Weekly bulletins** -- Run the current Mese's list and include anniversaries in your bulletin or announcements.
-- **Anniversary cards** -- Esporta the Mese's list and hand it Per your card-writing team.
-- **Milestone celebrations** -- Combine with the **Years Married** filter Per Trova milestone anniversaries.
+- **Bollettini settimanali** -- Esegui l'elenco del mese corrente e includi gli anniversari nel tuo bollettino o negli annunci.
+- **Biglietti di anniversario** -- Esporta l'elenco del mese e consegnalo al tuo team per scrivere biglietti.
+- **Celebrazioni di pietre miliari** -- Combina con il filtro **Years Married** per trovare anniversari di pietre miliari.
 
 :::tip
-Run this at the beginning of each Mese so you have Ora Per prepare cards or announcements before anniversaries arrive.
+Esegui questo all'inizio di ogni mese in modo da avere tempo per preparare i biglietti o gli annunci prima che arrivino gli anniversari.
 :::
 
 :::info
-Anniversary data comes from the anniversary field on each person's Profilo. If someone is missing, their Profilo just needs the Data added. See [Adding People](../people/adding-people.md).
+I dati dell'anniversario provengono dal campo anniversario nel profilo di ogni persona. Se qualcuno manca, il suo profilo ha solo bisogno della data aggiunta. Vedi [Aggiunta di Persone](../people/adding-people.md).
 :::
 
-## Also See
+## Vedi Anche
 
-Looking for birthdays at the same Ora? See [Birthday & Anniversary Lists](./birthday-report.md) Per pull both in one Cerca.
+Stai cercando compleanni nello stesso momento? Vedi [Elenchi di Compleanni e Anniversari](./birthday-report.md) per ottenere entrambi in una sola ricerca.

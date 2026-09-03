@@ -6,51 +6,51 @@ title: "E-Mail-Vorlagen"
 
 <div class="article-intro">
 
-E-Mail-Vorlagen ermöglichen es Ihnen, wiederverwendbare E-Mail-Inhalte zu speichern -- eine Willkommensnachricht, eine Veranstaltungserinnerung, eine Spendendanksagung -- sodass Sie (oder ein [Arbeitsablauf](../serving/workflows.md)) es mit einem Klick senden können, anstatt es jedes Mal von Grund auf zu schreiben.
+Mit E-Mail-Vorlagen können Sie wiederverwendbare E-Mail-Inhalte speichern — eine Willkommensnachricht, eine Ereigniserinnerung, eine Spendenauszeichnung — damit Sie (oder ein [Workflow](../serving/workflows.md)) sie mit einem Klick senden können, anstatt sie jedes Mal von Grund auf neu zu schreiben.
 
 </div>
 
 <div class="prereqs">
-<h4>Voraussetzungen</h4>
+<h4>Vor dem Start</h4>
 
-- Sie benötigen Zugriff auf den Einstellungen-Bereich in B1 Admin.
+- Sie benötigen Zugriff auf den Bereich Settings in B1 Admin.
 
 </div>
 
 ## Zugriff auf E-Mail-Vorlagen
 
-1. Öffnen Sie in B1 Admin das **Bereichsmenü** in der oberen linken Ecke (der Bereichsname mit dem kleinen Pfeil) und wählen Sie **Einstellungen**.
-2. Klicken Sie auf **E-Mail-Vorlagen**.
-3. Sie sehen eine Liste der vorhandenen Vorlagen mit ihrem Betreff, der Kategorie und dem letzten Änderungsdatum.
+1. Öffnen Sie in B1 Admin das **Bereichsmenü** in der oberen linken Ecke (der Bereichsname mit dem kleinen Pfeil) und wählen Sie **Settings**.
+2. Klicken Sie auf **Email Templates**.
+3. Sie sehen eine Liste der vorhandenen Vorlagen mit ihrer Betreffzeile, Kategorie und dem zuletzt geänderten Datum.
 
 ## Erstellen einer Vorlage
 
-1. Klicken Sie auf **Neue Vorlage**.
-2. Geben Sie einen **Vorlagennamen** ein, um sie in der Liste zu identifizieren, und wählen Sie eine **Kategorie** (Allgemein, Veranstaltungen, Gruppen, Geben oder Willkommen), um Ihre Vorlagen zu organisieren.
-3. Geben Sie die **Betreffzeile** ein.
-4. Schreiben Sie den **Text** mit dem Rich-Text-Editor.
-5. Klicken Sie auf **Speichern**.
+1. Klicken Sie auf **New Template**.
+2. Geben Sie einen **Template Name** ein, um ihn in der Liste zu identifizieren, und wählen Sie eine **Kategorie** (General, Events, Groups, Giving oder Welcome), um Ihre Vorlagen zu organisieren.
+3. Geben Sie die Zeile **Subject** ein.
+4. Schreiben Sie den **Body** mit dem Rich-Text-Editor.
+5. Klicken Sie auf **Save**.
 
-## Merge-Felder
+## Zusammenführungsfelder
 
-Klicken Sie auf einen Merge-Feld-Chip über dem Betreff oder Text, um ihn an Ihrer Cursor-Position einzufügen. Wenn die E-Mail gesendet wird, wird jedes Merge-Feld durch die tatsächlichen Informationen des Empfängers ersetzt:
+Klicken Sie auf einen Zusammenführungsfeld-Chip oberhalb der Betreffzeile oder des Body, um ihn an Ihrer Cursor-Position einzufügen. Wenn die E-Mail gesendet wird, wird jedes Zusammenführungsfeld durch die tatsächlichen Informationen des Empfängers ersetzt:
 
-- `{{firstName}}`, `{{lastName}}`, `{{displayName}}` -- Der Name des Empfängers
-- `{{email}}` -- Die E-Mail-Adresse des Empfängers
-- `{{churchName}}` -- Der Name Ihrer Kirche
+- `{{firstName}}`, `{{lastName}}`, `{{displayName}}` — Der Name des Empfängers
+- `{{email}}` — Die E-Mail-Adresse des Empfängers
+- `{{churchName}}` — Der Name Ihrer Kirche
 
 ## Vorschau einer Vorlage
 
-Klicken Sie auf **Vorschau**, um zu sehen, wie der Betreff und der Text mit Beispieldaten aussehen werden, die für die Merge-Felder gefüllt sind, bevor Sie speichern oder senden.
+Klicken Sie auf **Preview**, um zu sehen, wie die Betreffzeile und der Body mit Beispieldaten aussehen werden, die für die Zusammenführungsfelder ausgefüllt sind, bevor Sie speichern oder senden.
 
-## Verwendung einer Vorlage
+## Verwenden einer Vorlage
 
-Gespeicherte Vorlagen sind verfügbar, um sie beim Verfassen einer E-Mail an Personen oder eine Gruppe auszuwählen, und als eine Aktion in [Arbeitsabläufen](../serving/workflows.md).
+Gespeicherte Vorlagen stehen zur Auswahl zur Verfügung, wenn Sie eine E-Mail an Personen oder eine Gruppe verfassen, und als Aktion in [Workflows](../serving/workflows.md).
 
-## Bearbeitung und Löschen
+## Bearbeiten und Löschen
 
-Klicken Sie auf das **Bearbeitungs**-Symbol neben einer Vorlage, um sie zu aktualisieren, oder auf das **Löschen**-Symbol, um sie dauerhaft zu entfernen.
+Klicken Sie auf das Symbol **Edit** neben einer Vorlage, um sie zu aktualisieren, oder auf das Symbol **Delete**, um sie dauerhaft zu entfernen.
 
 ## Nächste Schritte
 
-- [Arbeitsabläufe](../serving/workflows.md) -- Trigger Sie eine Vorlagen-E-Mail automatisch basierend auf Regeln
+- [Workflows](../serving/workflows.md) — Trigger Sie automatisch eine Template-E-Mail basierend auf Regeln

@@ -1,72 +1,72 @@
 ---
-title: "Availability Calendar"
+title: "Calendario Disponibilità"
 ---
 
-# Availability Calendario
+# Calendario Disponibilità
 
 <div class="article-intro">
 
-The Availability Calendario gives you a bird's-eye Visualizza of all Stanza and resource bookings across your church. From here you can see what is scheduled, spot conflicts before they happen, and book a Stanza or resource for any Evento directly.
+Il Calendario Disponibilità ti offre una visione d'insieme di tutte le prenotazioni di aule e risorse in tutta la chiesa. Da qui puoi vedere cosa è programmato, individuare i conflitti prima che accadano e prenotare un'aula o una risorsa per qualsiasi evento direttamente.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Set up at least one [room or resource](rooms-resources) in the Stanze & Resources section
-- You need Modifica access Per the Calendars section in B1 Admin
+- Configura almeno un'[aula o risorsa](rooms-resources) nella sezione Aule e Risorse
+- Hai bisogno dell'accesso di modifica alla sezione Calendars in B1 Admin
 
 </div>
 
-## Opening the Availability Calendario
+## Apertura del Calendario Disponibilità
 
-In B1 Admin, Apri the **menu della sezione** in the angolo in alto a sinistra and Scegli **Calendars**, then Seleziona **Availability**.
+In B1 Admin, apri il **menu della sezione** nell'angolo in alto a sinistra e scegli **Calendars**, quindi seleziona **Availability**.
 
-## Reading the Calendario
+## Lettura del Calendario
 
-The calendar displays the current Mese by default. You can navigate forward and Indietro with the arrows at the top, or switch between Mese, week, and Giorno views.
+Il calendario visualizza il mese corrente per impostazione predefinita. Puoi navigare avanti e indietro con le frecce in alto, oppure passare tra le viste mese, settimana e giorno.
 
-Each Evento is color-coded by booking status:
+Ogni evento è codificato a colori in base allo stato della prenotazione:
 
-| Color | Meaning |
+| Colore | Significato |
 |-------|---------|
-| Green | Approvato |
-| Orange | In Sospeso approval |
-| Grey | Blocked out (not Disponibile) |
+| Verde | Approvato |
+| Arancione | In attesa di approvazione |
+| Grigio | Bloccato (non disponibile) |
 
-Hovering over an Evento shows the Evento title and the Stanza or resource it is attached Per.
+Passando il mouse su un evento viene visualizzato il titolo dell'evento e l'aula o la risorsa a cui è allegato.
 
-## Filtering by Stanza or Resource
+## Filtraggio per Aula o Risorsa
 
-Use the **Filter** dropdown at the top left Per narrow the calendar Per a single Stanza or resource. Seleziona **All Stanze & Resources** Per return Per the full Visualizza.
+Utilizza il menu a discesa **Filter** in alto a sinistra per restringere il calendario a una singola aula o risorsa. Seleziona **All Rooms & Resources** per tornare alla visualizzazione completa.
 
-## Booking a Stanza or Resource
+## Prenotazione di un'Aula o Risorsa
 
-1. Fai clic the **Book** button in the top right corner of the page.
-2. In the dialog that opens, fill in the Evento details:
-   - **Title** — the name of the Evento
-   - **Start** and **End** Data/Ora
-   - **Visibility** — Public or Private
-   - **Stanze** — Seleziona one or more Stanze Per reserve
-   - **Resources** — Seleziona one or more resources Per reserve
-3. Optionally set **Configurazione** and **Teardown** times (in minutes). These pad the booking on both ends so the space is reserved for Configurazione and cleanup, even though the Evento start/end times stay the same.
-4. Per repeat the booking, check **Repeats** and configure the recurrence:
-   - **Repeat every** -- set the interval (for example, every 2 weeks).
-   - **Frequency** -- Daily, Weekly, or Monthly. Weekly lets you pick specific Giorno(s) of the week; Monthly lets you pick a fixed Giorno of the Mese or a relative pattern like "the second Tuesday."
-   - **Ends** -- Never, on a specific Data, or after a set number of occurrences.
-5. Per specify a custom booking window (different from the Evento start/end), toggle **Custom Booking Window** and Inserisci the window start and end times. Use this when a Stanza needs Per be accessible outside the Evento's listed hours.
-6. Fai clic **Salva** Per Invia the booking.
+1. Fai clic sul pulsante **Book** nell'angolo in alto a destra della pagina.
+2. Nella finestra di dialogo che si apre, compila i dettagli dell'evento:
+   - **Title** — il nome dell'evento
+   - **Start** e **End** data/ora
+   - **Visibility** — Public o Private
+   - **Rooms** — seleziona una o più aule da prenotare
+   - **Resources** — seleziona una o più risorse da prenotare
+3. Facoltativamente imposta i tempi di **Setup** e **Teardown** (in minuti). Questi riempiono la prenotazione su entrambi i lati in modo che lo spazio sia riservato per la configurazione e la pulizia, anche se gli orari di inizio/fine dell'evento rimangono gli stessi.
+4. Per ripetere la prenotazione, seleziona **Repeats** e configura la ricorrenza:
+   - **Repeat every** -- imposta l'intervallo (ad esempio, ogni 2 settimane).
+   - **Frequency** -- Daily, Weekly o Monthly. Weekly ti permette di scegliere giorni specifici della settimana; Monthly ti permette di scegliere un giorno fisso del mese o un modello relativo come "il secondo martedì".
+   - **Ends** -- Never, in una data specifica, o dopo un numero impostato di occorrenze.
+5. Per specificare una finestra di prenotazione personalizzata (diversa da inizio/fine evento), attiva **Custom Booking Window** e inserisci l'inizio e la fine della finestra. Usalo quando un'aula deve essere accessibile al di fuori delle ore dell'evento elencate.
+6. Fai clic su **Save** per inviare la prenotazione.
 
 :::info
-If the Stanza or resource has an **Approval Gruppo** configured, the booking will appear as **In Sospeso** until a leader of that Gruppo approves it. See [Calendar Approvals](approvals) for the approval workflow.
+Se l'aula o la risorsa ha un **Approval Group** configurato, la prenotazione apparirà come **Pending** fino a quando un leader di quel gruppo non l'approva. Vedi [Approvazioni Calendario](approvals) per il flusso di lavoro di approvazione.
 :::
 
 :::tip
-The calendar will highlight any conflicts before you Salva. If you see a conflict warning, adjust your times or Scegli a different Stanza.
+Il calendario evidenzierà eventuali conflitti prima che tu salvi. Se vedi un avviso di conflitto, regola gli orari o scegli un'aula diversa.
 :::
 
 ## Articoli Correlati
 
-- [Rooms, Resources & Scheduling](rooms-resources) — set up bookable spaces and equipment
-- [Calendar Approvals](approvals) — approve or deny booking requests
-- [Creating Calendars](creating-calendars) — manage Evento calendars
+- [Aule, Risorse e Programmazione](rooms-resources) — configura spazi e attrezzature prenotabili
+- [Approvazioni Calendario](approvals) — approva o nega richieste di prenotazione
+- [Creazione di Calendari](creating-calendars) — gestire calendari di eventi

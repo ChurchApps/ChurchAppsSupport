@@ -1,53 +1,53 @@
 ---
-title: "Salute dei gruppi"
+title: "Salute dei Gruppi"
 ---
 
-# Salute dei gruppi
+# Salute dei Gruppi
 
 <div class="article-intro">
 
-La dashboard Salute dei gruppi ti fornisce una visione d'insieme di come stanno andando tutti i tuoi gruppi — tendenze di iscrizione, medie di presenze e crescita o attrito negli ultimi 90 giorni — tutto in un'unica tabella ordinabile.
+La dashboard Salute dei Gruppi ti offre una visione d'insieme di come stanno andando tutti i tuoi gruppi — tendenze di adesione, medie di partecipazione e crescita o attrito negli ultimi 90 giorni — il tutto in una singola tabella ordinabile.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di iniziare</h4>
+<h4>Prima di Iniziare</h4>
 
-- Hai bisogno di almeno alcuni gruppi con membri per vedere dati significativi. Vedi [Creazione di gruppi](creating-groups).
-- I dati di presenze sono estratti dalle sessioni registrate. Vedi la sezione [Presenze](../attendance/).
+- Hai bisogno di almeno alcuni gruppi con membri per vedere dati significativi. Vedi [Creazione di Gruppi](creating-groups).
+- I dati di partecipazione vengono estratti dalle sessioni registrate. Vedi la sezione [Attendance](../attendance/).
 
 </div>
 
-## Apertura di Salute dei gruppi
+## Apertura della Salute dei Gruppi
 
-In B1 Admin, apri il **menu sezione** nell'angolo in alto a sinistra e scegli **Persone**, quindi fai clic sulla scheda **Gruppi** nella barra di navigazione e seleziona **Salute**. La dashboard carica una tabella con una riga per gruppo.
+In B1 Admin, apri il **menu della sezione** nell'angolo in alto a sinistra e scegli **People**, quindi fai clic sulla scheda **Groups** nella barra di navigazione e seleziona **Health**. La dashboard carica una tabella con una riga per gruppo.
 
 ## Colonne
 
 | Colonna | Cosa mostra |
 |--------|--------------|
-| **Nome** | Il nome del gruppo, collegato alla pagina di dettaglio del gruppo |
-| **Categoria** | La categoria del gruppo |
-| **Membri** | Conteggio membro attivo corrente |
-| **Unito (90g)** | Membri che si sono uniti negli ultimi 90 giorni |
-| **Partito (90g)** | Membri che hanno lasciato negli ultimi 90 giorni |
-| **Abbandono (90g)** | Tasso di abbandono netto come percentuale in 90 giorni |
-| **Media presenze** | Conteggio medio per sessione di presenze |
+| **Name** | Il nome del gruppo, collegato alla pagina di dettaglio del gruppo |
+| **Category** | La categoria del gruppo |
+| **Members** | Conteggio dei membri attivi correnti |
+| **Joined (90d)** | Membri che si sono iscritti negli ultimi 90 giorni |
+| **Left (90d)** | Membri che se ne sono andati negli ultimi 90 giorni |
+| **Churn (90d)** | Tasso di abbandono netto come percentuale oltre 90 giorni |
+| **Avg Attendance** | Conteggio medio dei presenti per sessione di partecipazione |
 
-Fai clic su qualsiasi intestazione di colonna per ordinare la tabella per colonna. Fai clic di nuovo per invertire la direzione di ordinamento.
+Fai clic su qualsiasi intestazione di colonna per ordinare la tabella in base a quella colonna. Fai clic di nuovo per invertire la direzione dell'ordinamento.
 
-## Utilizzo dei dati di salute
+## Utilizzo dei Dati di Salute
 
-- **Abbandono elevato + iscritti bassi** — un gruppo che si sta riducendo e non sta sostituendo i membri persi. Vale la pena una conversazione con il leader del gruppo.
-- **Iscritti elevati + presenze basse** — le persone si stanno iscrivendo ma non si stanno presentando. Considera un follow-up di coinvolgimento.
-- **Media presenze elevata** — un gruppo sano e attivo. Potenziale modello per altri gruppi.
+- **Alto abbandono + bassi ingressi** — un gruppo che si sta riducendo e non sta sostituendo i membri persi. Vale la pena una conversazione con il leader del gruppo.
+- **Alti ingressi + bassa partecipazione** — le persone si iscrivono ma non si presentano. Considera il follow-up di coinvolgimento.
+- **Alta partecipazione media** — un gruppo sano e attivo. Potenziale modello per altri gruppi.
 
 :::tip
-Fare clic su un nome di gruppo ti porta direttamente alla pagina di dettaglio del gruppo dove puoi revisionare i singoli membri, i record di presenze e gli eventi del calendario.
+Facendo clic su un nome di gruppo vai direttamente alla pagina di dettaglio del gruppo in cui puoi rivedere i singoli membri, i record di partecipazione e gli eventi del calendario.
 :::
 
-## Articoli correlati
+## Articoli Correlati
 
-- [Creazione di gruppi](creating-groups) — configura gruppi
-- [Membri del gruppo](group-members) — gestisci l'iscrizione al gruppo
-- [Tracciamento presenze](../attendance/tracking-attendance) — registra sessioni di presenze che alimentano questa dashboard
+- [Creazione di Gruppi](creating-groups) — configura i gruppi
+- [Membri del Gruppo](group-members) — gestisci l'adesione al gruppo
+- [Tracciamento della Partecipazione](../attendance/tracking-attendance) — registra le sessioni di partecipazione che alimentano questa dashboard

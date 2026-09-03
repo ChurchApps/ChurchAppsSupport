@@ -1,93 +1,93 @@
 ---
-title: "Bayad na Pagpapatala"
+title: "Paid Registrations"
 ---
 
-# Bayad na Pagpapatala
+# Paid Registrations
 
 <div class="article-intro">
 
-Ang pagpaparehistro sa event ay maaaring lumampas sa simpleng bilang ng ulo. Maaari kang magtakda ng mga presyong uri ng attendee (tulad ng Adult at Child), mag-alok ng mga opsyonal na add-on na may sariling presyo at dami, gumawa ng mga discount code, at mangolekta ng bayad sa registration sa pamamagitan ng umiiral nang giving provider ng iyong simbahan. Kapag napuno na ang isang event, ang isang opsyonal na waitlist ay pinananatiling interesado ang mga miyembro sa hanay at awtomatikong pinoprumote sila habang bumubukas ang mga puwesto.
+Ang event registration ay maaaring lumampas sa isang simpleng head count. Maaari kang magbigay ng mga priced attendee type (tulad ng Adult at Child), mag-alok ng opsyonal na add-on na may kanilang sariling mga presyo at dami, lumikha ng mga discount code, at mangolekta ng bayad sa registration sa pamamagitan ng umiiral na giving provider ng iyong simbahan. Kapag puno ang event, isang opsyonal na waitlist ay nagpapanatili sa mga interesadong miyembro sa linya at pino-promote sila awtomatiko habang bumubukas ang mga puwang.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Ka Magsimula</h4>
+<h4>Bago Magsimula</h4>
 
-- I-enable muna ang registration sa event -- tingnan ang [Creating Calendars](creating-calendars#enabling-event-registration)
-- Para mangolekta ng bayad, kailangang [naka-configure ang online giving](../donations/online-giving-setup.md) ng iyong simbahan (Stripe, PayPal, o Kingdom Funding). Hindi na kailangan ng giving setup ang mga libreng event.
+- Una ay i-enable ang registration sa event — tingnan ang [Creating Calendars](creating-calendars#enabling-event-registration)
+- Upang mangolekta ng mga bayad, ang iyong simbahan ay kailangan ng [online giving configured](../donations/online-giving-setup.md) (Stripe, PayPal, o Kingdom Funding). Ang mga libreng event ay hindi na kailangan ang giving setup.
 
 </div>
 
 ## Pagbubukas ng Registration Settings
 
-1. Sa B1 Admin, pumunta sa pahinang **Registrations** at buksan ang iyong event (o buksan ang event mula sa calendar nito).
-2. Ipinapakita ng **Registration Settings** card ang mga pangunahing bagay -- **Enable Registration**, **Capacity**, **Registration Opens/Closes**, **Tags**, at **Registration Questions**.
-3. Sa ilalim ng mga pangunahing bagay ay may tatlong accordion: **Attendee Types**, **Selections**, at **Discount Codes**.
+1. Sa B1 Admin, pumunta sa **Registrations** page at buksan ang iyong event (o buksan ang event mula sa calendar nito).
+2. Ang **Registration Settings** card ay nagpapakita ng mga basics — **Enable Registration**, **Capacity**, **Registration Opens/Closes**, **Tags**, at **Registration Questions**.
+3. Sa ibaba ng mga basics ay tatlong accordion: **Attendee Types**, **Selections**, at **Discount Codes**.
 
 ## Attendee Types
 
-Nagbibigay-daan ang attendee types na maningil ng iba't ibang presyo para sa iba't ibang uri ng attendee -- at limitahan ang bawat isa nang hiwalay.
+Ang mga uri ng attendee ay nagpapahintulot sa iyo na mag-charge ng iba't ibang mga presyo para sa iba't ibang mga uri ng attendee — at mag-cap sa bawat isa nang hiwalay.
 
-1. I-expand ang accordion na **Attendee Types** at i-click ang **Add Type**.
-2. Ilagay ang isang **Name** (hal. "Adult", "Child", "Student").
-3. I-set ang isang **Price**. Gamitin ang 0 para sa libreng uri.
-4. Opsyonal na i-set ang isang **Capacity** para sa uri lamang na ito (hal. 20 puwesto lang para sa Child). Iwanang blangko kung walang limitasyon kada-uri.
+1. Palawakin ang **Attendee Types** accordion at i-click ang **Add Type**.
+2. Magpasok ng **Name** (hal. "Adult", "Child", "Student").
+3. Itakda ang **Price**. Gamitin ang 0 para sa isang libreng uri.
+4. Opsyonal na itakda ang **Capacity** para lamang sa ganitong uri (hal. lamang 20 Child spots). Iwanan blangko para walang per-type limit.
 5. I-click ang **Save**.
 
-Sa panahon ng registration, pipili ang bawat attendee ng uri; ang mga uri na nabenta na ay ipinapakita bilang **Sold out** at hindi na maaaring piliin. Ipinapakita ng roster ang uri ng bawat attendee at ang patuloy na bilang kada-uri.
+Sa panahon ng registration, bawat attendee ay pumipili ng isang uri; ang mga sold-out na uri ay ipinapakita bilang **Sold out** at hindi maaaring piliin. Ang roster ay nagpapakita ng uri ng bawat attendee at tumatakbo na per-type counts.
 
 ## Selections
 
-Ang mga selection ay mga opsyonal na priced add-on -- T-shirt, meal plan, activity upgrade.
+Ang mga selection ay opsyonal na priced add-on — T-shirt, meal plans, activity upgrade.
 
-1. I-expand ang accordion na **Selections** at i-click ang **Add Selection**.
-2. Ilagay ang isang **Name**, opsyonal na **Description**, at isang **Price** (ang 0 ay ipinapakita bilang "Free").
-3. Opsyonal na i-set ang isang **Capacity** (kabuuang available sa lahat ng registration) at isang **Max Qty** (ang pinakamarami na maaaring iutos ng isang registration).
+1. Palawakin ang **Selections** accordion at i-click ang **Add Selection**.
+2. Magpasok ng **Name**, opsyonal na **Description**, at **Price** (0 ay nagpapakita bilang "Free").
+3. Opsyonal na itakda ang **Capacity** (kabuuang available sa lahat ng registrations) at **Max Qty** (ang karamihan ng isa registration ay maaaring mag-order).
 4. I-click ang **Save**.
 
-Pumipili ang mga rehistrado ng dami habang nagpapatala, at ang mga kabuuan ay ibinabawas sa capacity para hindi ka kailanman malampasan sa benta.
+Ang mga registrant ay pumipili ng dami sa panahon ng signup, at ang mga total ay bumubuo laban sa kapasidad kaya hindi mo kailanman oversell.
 
 ## Discount Codes
 
-1. I-expand ang accordion na **Discount Codes** at i-click ang **Add Discount Code**.
-2. Ilagay ang **Code** na i-tta-type ng mga rehistrado.
-3. Piliin ang **Type** -- **Percent** o **Amount** -- at ang **Value** nito.
-4. Opsyonal na limitahan ang code gamit ang **Start Date** / **End Date**, isang **Min Members** (pinakamababang bilang ng attendee sa registration), at **Max Uses**.
+1. Palawakin ang **Discount Codes** accordion at i-click ang **Add Discount Code**.
+2. Magpasok ng **Code** na gagamitin ng mga registrant.
+3. Pumili ng **Type** — **Percent** o **Amount** — at nito **Value**.
+4. Opsyonal na limitahan ang code gamit ang **Start Date** / **End Date**, isang **Min Members** (minimum na bilang ng attendees sa registration), at **Max Uses**.
 5. I-click ang **Save**.
 
-Ipinapakita ng bawat code ang bilang ng **Uses** para makita mo kung gaano na ito kadalas nagamit. Agad na nakakatanggap ang mga rehistrado ng feedback kapag nag-apply sila ng code -- kasama ang malinaw na mensahe kapag nag-expire na ang code, hindi pa nagsisimula, o kailangan pa ng mas maraming attendee.
+Bawat code ay nagpapakita ng **Uses** count upang makita mo kung gaano kadalas ito ay na-redeem. Ang mga registrant ay nakakakuha ng instant feedback kapag nag-apply ng isang code -- kasama ang malinaw na mga mensahe kapag ang isang code ay nag-expire, hindi pa nagsimula, o kailangan ng mas maraming attendees.
 
 ## Waitlist
 
-I-on ang **Enable Waitlist** sa Registration Settings card. Kapag naabot na ng event ang capacity nito:
+I-turn on ang **Enable Waitlist** sa Registration Settings card. Kapag ang event ay umaabot sa kapasidad:
 
-- Aalukin ang mga bagong rehistrado ng puwesto sa waitlist sa halip na tanggihan. Kanilang kinukumpleto ang parehong signup (nilalaktawan ang bayad habang naka-waitlist).
-- Kapag may kumansela, ang pinakamatagal nang naka-waitlist na registration ay **awtomatikong pinoprumote** at makakatanggap ng email na may bumukas na puwesto. Kung may utang na balanse, nililink sila ng email para kumpletuhin ang bayad.
-- Maaari kang manu-manong mag-promote ng isang tao anumang oras gamit ang aksyong **Promote** sa isang waitlisted na row -- kapaki-pakinabang pagkatapos itaas ang capacity ng event.
+- Ang mga bagong registrant ay inaalok ng isang waitlist spot sa halip na itapon. Sila ay kumpleto ang parehong signup (ang bayad ay na-skip habang waitlisted).
+- Kapag may nag-cancel, ang pinakamatandang waitlisted registration ay **pino-promote awtomatiko** at nakakatanggap ng email na ang isang puwang ay bukas. Kung sila ay may utang na balanse, ang email ay nag-link sa kanila upang kumpleto ang pagbabayad.
+- Maaari mong i-promote ang isang tao nang manual sa anumang oras gamit ang **Promote** action sa isang waitlisted row — kapaki-pakinabang pagkatapos ng pagtaas ng event capacity.
 
 :::info
-Ang mga pino-promote na registration ay nananatiling *pending* hanggang mabayaran ang anumang balanse; ang pagbabayad (o walang dapat bayaran) ay nagkukumpirma sa kanila.
+Ang mga pino-promote registration ay nanatiling *pending* hanggang sa bayaran ang anumang balanse; ang pagbabayad (o walang dapat bayaran) ay nag-confirm sa kanila.
 :::
 
 ## Ang Registration Roster
 
-Buksan ang isang event mula sa pahinang Registrations para makita ang bawat registration. Ipinapakita ng table ang **Name**, **Members**, **Type** (uri ng bawat attendee), **Paid / Total** (may babala sa balanse kapag may utang pang bayad), **Status**, at **Date**, kasama ang mga chip ng bilang kada-uri sa itaas ng table.
+Buksan ang isang event mula sa Registrations page upang makita ang bawat registration. Ang tala ay nagpapakita ng **Name**, **Members**, **Type** (uri ng bawat attendee), **Paid / Total** (na may balance warning kapag ang pera ay pa rin ay utang), **Status**, at **Date**, plus per-type count chips sa itaas ng tala.
 
-- I-click ang icon ng detalye ng isang row para buksan ang dialog na **Registration Details** -- mga miyembro, selection, paid/balance, at isang table ng **Payments** na naglilista ng bawat singil (halaga, paraan, petsa).
-- Ang **Export CSV** ay nagda-download ng buong roster na may mga column para sa mga miyembro, uri ng attendee, selection, paid/total/balance, status, at isang column para sa bawat tanong sa registration.
-- Pinapayagan pa rin ng **Add Attendee** na manu-manong itala ang mga offline na signup.
+- I-click ang detalye icon ng isang row upang buksan ang **Registration Details** dialog — mga miyembro, mga selection, binayaran/balanse, at **Payments** table na naglilista ng bawat charge (halaga, pamamaraan, petsa).
+- **Export CSV** ay nag-download ng buong roster na may mga column para sa mga miyembro, mga uri ng attendee, mga selection, binayaran/total/balanse, status, at isang column bawat registration question.
+- **Add Attendee** ay nagbibigay-daan sa iyo pa rin na magrehistro ng offline signups nang manual.
 
 :::info
-Hindi pinoproseso ang mga refund sa loob ng B1. Kung kailangan mong i-refund ang isang kinanselang bayad na registration, ilabas ang refund mula sa dashboard ng iyong giving provider (hal. Stripe).
+Ang mga refund ay hindi naproseso sa loob ng B1. Kung kailangan mong ibalik ang isang kinansela na may-bayad na registration, ilabas ang refund mula sa dashboard ng iyong giving provider (hal. Stripe).
 :::
 
-## Paano Gumagana ang Pagbabayad
+## Paano Gumagana Ang Bayad
 
-Dumadaan ang mga bayad sa parehong giving gateway na ginagamit na ng iyong simbahan para sa mga donasyon -- direktang napupunta ang detalye ng card sa provider at hindi kailanman humihipo sa mga server ng B1. Palaging kinakalkula sa server ang mga presyo batay sa iyong mga naka-configure na uri, selection, at discount code, kaya hindi maaaring baguhin ng isang rehistrado ang kabuuan. Maaaring magbayad ang mga naka-log-in na miyembro gamit ang naka-save na card; naglalagay ang mga bisita ng card sa checkout.
+Ang mga bayad ay tumatakbo sa pamamagitan ng parehong giving gateway na ginagamit na ng iyong simbahan para sa mga donation — ang mga detalye ng card ay direktang napupunta sa provider at hindi kailanman humipo sa mga server ng B1. Ang mga presyo ay palaging kinukuwenta sa server mula sa iyong na-configure na mga uri, mga selection, at mga discount code, kaya ang isang registrant ay hindi maaaring magalabog sa kabuuan. Ang mga naka-log in na miyembro ay maaaring magbayad gamit ang salvadong card; ang mga bisita ay nagpasok ng isang card sa checkout.
 
-## Kaugnay na mga Artikulo
+## Mga Kaugnay na Artikulo
 
 - [Creating Calendars](creating-calendars#enabling-event-registration) — i-enable ang registration at ang mga pangunahing setting
 - [Online Giving Setup](../donations/online-giving-setup.md) — i-configure ang payment gateway na ginagamit sa checkout
-- [Registering for Events](../../b1-church/events/registering) — kung ano ang nakikita ng mga miyembro kapag nagpapatala sila
-- [My Registrations](../../b1-church/events/my-registrations) — kung paano nagbabayad ng balanse at nag-e-edit ng registration ang mga miyembro
+- [Registering for Events](../../b1-church/events/registering) — kung ano ang nakikita ng mga miyembro kapag nag-sign up
+- [My Registrations](../../b1-church/events/my-registrations) — kung paano ang mga miyembro ay nagbabayad ng mga balanse at nag-edit ng mga registration

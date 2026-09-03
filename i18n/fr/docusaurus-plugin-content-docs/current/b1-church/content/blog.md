@@ -6,7 +6,7 @@ title: "Blog"
 
 <div class="article-intro">
 
-La page Blog partage des actualités, des mises à jour et des méditations de votre église. Les articles sont organisés par catégorie et étiquette, afin que vous puissiez parcourir les sujets qui vous intéressent le plus.
+La page Blog partage les nouvelles, mises à jour et dévotionnels de votre église. Les articles sont organisés par catégorie et étiquette, pour que vous puissiez parcourir les sujets qui vous intéressent le plus.
 
 </div>
 
@@ -18,24 +18,24 @@ La page Blog partage des actualités, des mises à jour et des méditations de v
 
 </div>
 
-## Parcourir les articles
+## Parcours des Articles
 
-1. Accédez à la page **Blog** depuis la navigation du site de votre église.
-2. Les articles sont listés du plus récent au plus ancien, 10 par page. Utilisez les liens **Plus anciens**/**Plus récents** en bas pour parcourir les archives.
+1. Naviguez vers la page **Blog** à partir de la navigation du site de votre église.
+2. Les articles sont énumérés les plus récents d'abord, 10 par page. Utilisez les liens **Anciens**/**Plus Récents** en bas pour parcourir votre archive.
 3. Cliquez sur un article pour le lire en entier.
 
-## Filtrer par catégorie ou étiquette
+## Filtrage par Catégorie ou Étiquette
 
-Cliquez sur une puce de **catégorie** ou d'**étiquette** sur n'importe quel article, ou dans la liste du blog, pour filtrer la liste afin de ne voir que les articles correspondants. Cela facilite le suivi d'un sujet ou d'une série en particulier.
+Cliquez sur une puce **catégorie** ou **étiquette** sur n'importe quel article, ou dans la liste de blog, pour filtrer la liste jusqu'aux articles qui correspondent. Cela facilite la rattrapage sur un sujet ou une série spécifique.
 
-## Articles associés
+## Articles Connexes
 
-À la fin de chaque article, vous trouverez une section **Articles associés** suggérant d'autres articles de la même catégorie.
+À la fin de chaque article, vous trouverez une section **Articles Connexes** suggérant d'autres articles de la même catégorie.
 
-## S'abonner via RSS
+## Abonnement via RSS
 
-Chaque blog d'église publie un flux RSS auquel les lecteurs de flux et les outils d'automatisation peuvent s'abonner, afin que vous soyez notifié automatiquement lorsqu'un nouvel article est publié plutôt que de devoir vérifier manuellement.
+Chaque blog d'église publie un flux RSS auquel les lecteurs de flux et les outils d'automatisation peuvent s'abonner, pour que vous soyez notifiés automatiquement lorsqu'un nouvel article est publié au lieu de revérifier manuellement.
 
 ## Disponibilité
 
-La page Blog est disponible lorsque votre église a publié au moins un article. Si vous ne voyez pas de lien **Blog** dans la navigation de votre église, il se peut que votre église n'ait pas encore mis cela en place. Contactez l'administrateur de votre église pour plus d'informations.
+La page Blog est disponible lorsque votre église a publié au moins un article. Si vous ne voyez pas de lien **Blog** dans la navigation de votre église, votre église n'a peut-être pas encore configuré cela. Contactez votre administrateur d'église pour plus d'informations.

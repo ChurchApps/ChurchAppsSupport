@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Gespeicherte Listen"
 ---
 
@@ -6,63 +6,63 @@ title: "Gespeicherte Listen"
 
 <div class="article-intro">
 
-**Gespeicherte Listen** ermöglichen es Ihnen, eine Suchabfrage unter einem Namen zu speichern und diese jederzeit mit einem Klick erneut auszuführen. Erstellen Sie eine Liste einmal – „Aktive Mitglieder auf Campus Nord", „Besucher der letzten 90 Tage" oder ein beliebiger erweiterter Filter – und sie bleibt im Panel **Gespeicherte Listen** auf der Seite Personen, sodass Sie die Abfrage nie wieder erstellen müssen.
+**Gespeicherte Listen** ermöglichen es Ihnen, eine Suchabfrage unter einem Namen zu speichern und sie jederzeit mit einem Klick erneut auszuführen. Erstellen Sie eine Liste einmalig — „Active Members in Campus North", „Visitors in the last 90 days" oder einen beliebigen fortgeschrittenen Filter — und sie bleibt im Panel **Saved Lists** auf der Personenseite, damit Sie die Abfrage nie wieder neu aufbauen müssen.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Vor dem Start</h4>
 
-- Führen Sie mindestens eine Suche im Abschnitt Personen durch, damit Sie Ergebnisse zum Speichern haben. Siehe [Personen durchsuchen](./searching-people.md) oder [KI-Suche](./ai-search.md).
+- Führen Sie mindestens eine Suche im Bereich People durch, damit Sie Ergebnisse speichern können. Siehe [Searching People](./searching-people.md) oder [AI Search](./ai-search.md).
 
 </div>
 
 ## Speichern einer Suche als Liste
 
-1. Führen Sie eine Suche auf der Seite **Personen** durch – eine schnelle Suche, eine KI-Suche oder eine erweiterte Filtersuche.
-2. Wenn Ergebnisse angezeigt werden, wird eine Schaltfläche **Als Liste speichern** (Lesezeichensymbol) in der Kopfzeile der Seite Personen angezeigt.
-3. Klicken Sie auf **Als Liste speichern**.
-4. Geben Sie einen **Namen** für die Liste ein (erforderlich).
-5. Geben Sie optional eine **Kategorie** ein, um verwandte Listen im Panel **Gespeicherte Listen** zu gruppieren (z. B. „Outreach" oder „Mitgliedschaft").
-6. Klicken Sie auf **Speichern**.
+1. Führen Sie eine Suche auf der Seite **People** durch — eine schnelle Suche, eine KI-Suche oder eine fortgeschrittene Filter-Suche.
+2. Wenn Ergebnisse angezeigt werden, wird eine Schaltfläche **Save as List** (Lesezeichen-Symbol) in der Kopfzeile der Personenseite angezeigt.
+3. Klicken Sie auf **Save as List**.
+4. Geben Sie einen **Name** für die Liste ein (erforderlich).
+5. Geben Sie optional eine **Category** ein, um zugehörige Listen im Panel **Saved Lists** zu gruppieren (z. B. „Outreach" oder „Membership").
+6. Klicken Sie auf **Save**.
 
-Die Liste wird jetzt in dem Konto Ihrer Kirche gespeichert und wird im Panel **Gespeicherte Listen** auf der linken Seite der Seite Personen angezeigt.
+Die Liste wird nun auf dem Konto Ihrer Kirche gespeichert und wird im Panel **Saved Lists** auf der linken Seite der Personenseite angezeigt.
 
 :::info
-Listen werden in Ihrer Kirche gemeinsam genutzt – jeder mit Zugriff auf Personen kann sie sehen und laden. Nur Mitarbeiter mit angemessener Berechtigung können Listen umbenennen oder löschen.
+Listen werden in Ihrer Kirche geteilt — Jeder mit Zugriff auf Personen kann sie sehen und laden. Nur Mitarbeiter mit entsprechender Berechtigung können Listen umbenennen oder löschen.
 :::
 
 ## Laden einer gespeicherten Liste
 
-Klicken Sie im Panel **Gespeicherte Listen** auf der linken Seite der Seite Personen auf einen beliebigen Listennamen. Die Suche wird sofort mit der gespeicherten Abfrage erneut ausgeführt und die Ergebnistabelle wird aktualisiert.
+Klicken Sie im Panel **Saved Lists** auf der linken Seite der Personenseite auf einen beliebigen Listennamen. Die Suche wird sofort mit der gespeicherten Abfrage erneut ausgeführt, wobei die Ergebnistabelle aktualisiert wird.
 
 Listen werden nach Kategorie gruppiert (falls Sie eine zugewiesen haben), wobei nicht kategorisierte Listen zuletzt angezeigt werden.
 
 :::tip
-Listen sind **Live-Abfragen**, keine Snapshots. Jedes Mal, wenn Sie eine Liste laden, wird die Suche frisch gegen Ihre aktuellen Daten ausgeführt, sodass neue Personen, die jetzt den Kriterien entsprechen, angezeigt werden.
+Listen sind **Live-Abfragen**, keine Schnappschüsse. Jedes Mal, wenn Sie eine Liste laden, wird die Suche erneut gegen Ihre aktuellen Daten ausgeführt, damit neue Personen, die nun die Kriterien erfüllen, angezeigt werden.
 :::
 
 ## Umbenennen und Löschen von Listen
 
-Personal mit Verwaltungsberechtigung kann Listen direkt aus dem Panel Gespeicherte Listen umbenennen oder löschen.
+Mitarbeiter mit Verwaltungsberechtigung können alle Listen direkt aus dem Panel Gespeicherte Listen umbenennen oder löschen.
 
-- Klicken Sie auf das **Stiftsymbol** neben einem Listennamen, um ihn umzubenennen.
-- Klicken Sie auf das **Papierkorb-Symbol**, um es zu löschen (Sie werden aufgefordert, dies zu bestätigen).
+- Klicken Sie auf das **pencil icon** neben einem Listennamen, um es umzubenennen.
+- Klicken Sie auf das **trash icon**, um es zu löschen (Sie werden aufgefordert, zu bestätigen).
 
 ## Anwendungsfälle
 
-| Szenario | Wie man die Liste erstellt |
-|----------|---------------------------|
-| Alle Besucher | Erweiterte Suche: Mitgliedschaftsstatus = Besucher |
-| Mitglieder auf einem bestimmten Campus | Erweiterte Suche: Campus = [Ihr Campus] |
-| Personen ohne E-Mail-Adresse | Erweiterte Suche: E-Mail ist leer |
-| Freiwillige mit abgelaufenem Hintergrundcheck | Erweiterte Suche: [Benutzerdefiniertes Feld](../settings/custom-fields.md) „Hintergrundcheck läuft ab" ist vor heute |
-| Ergebnisse aus einer KI-Frage | Stellen Sie eine Frage in KI-Suche und speichern Sie sie |
+| Szenario | So erstellen Sie die Liste |
+|---|---|
+| Alle Besucher | Fortgeschrittene Suche: Membership Status = Visitor |
+| Mitglieder an einem bestimmten Campus | Fortgeschrittene Suche: Campus = [Ihr Campus] |
+| Personen ohne E-Mail-Adresse | Fortgeschrittene Suche: Email is empty |
+| Freiwillige mit abgelaufenem Überprüfungszertifikat | Fortgeschrittene Suche: [Custom Field](../settings/custom-fields.md) "Background check expires" is before today |
+| Ergebnisse einer KI-Frage | Stellen Sie in der KI-Suche eine Frage, dann speichern Sie |
 
 ## Verwandte Artikel
 
-- [Personen durchsuchen](./searching-people.md) – schnelle Suche und Spaltenanpassung
-- [KI-Suche](./ai-search.md) – Abfragen in natürlicher Sprache, die Sie als Listen speichern können
-- [Benutzerdefinierte Felder](../settings/custom-fields.md) – definieren Sie Ihre eigenen Personenfelder und filtern/speichern Sie dann Listen
-- [Demografie](./demographics.md) – Drilldown ein demografisches Diagramm in einen Personenfilter und speichern Sie es als Liste
-- [Massenbearbeitung](./bulk-editing.md) – nach Laden einer Liste alle ihre Mitglieder auf einmal in Masse aktualisieren
+- [Searching People](./searching-people.md) — Schnellsuche und Spaltenanpassung
+- [AI Search](./ai-search.md) — natürlichsprachige Abfragen, die Sie als Listen speichern können
+- [Custom Fields](../settings/custom-fields.md) — definieren Sie Ihre eigenen Personenfelder, filtern Sie dann und speichern Sie Listen darauf
+- [Demographics](./demographics.md) — zeigen Sie ein demografisches Diagramm in einem People-Filter ein, dann speichern Sie es als Liste
+- [Bulk Editing](./bulk-editing.md) — nach dem Laden einer Liste, Massenaktualisierung aller Mitglieder auf einmal

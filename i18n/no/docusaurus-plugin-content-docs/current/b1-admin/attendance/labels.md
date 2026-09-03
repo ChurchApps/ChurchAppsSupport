@@ -1,89 +1,89 @@
 ---
-title: "Innsjekk-etikett designer"
+title: "Etikett-designer for innsjekking"
 ---
 
-# Innsjekk-etikett designer
+# Etikett-designer for innsjekking
 
 <div class="article-intro">
 
-Etikett-designeren lar deg opprette og tilpasse navneskilt- og hentemerkemaler som skrives ut når familier sjekker inn barna sine. Du kan kontrollere nøyaktig hva informasjon som vises på hver etikett, hvor den er plassert, og hvordan den ser ut.
+Etikett-designeren lar deg opprette og tilpasse navn-merke- og uthentings-seddel-maler som skrives ut når familier sjekker inn barna sine. Du kan kontrollere nøyaktig hvilken informasjon som vises på hver etikett, hvor den er plassert, og hvordan den ser ut.
 
 </div>
 
 <div class="prereqs">
-<h4>Før du begynner</h4>
+<h4>Før du starter</h4>
 
-- Sett opp [Oppmøte](setup) og konfigurer minst ett gudstjenesteklokkeslett med innsjekking aktivert
+- Sett opp [Innsjekking](setup) og konfigurer minst en servicetid med innsjekking aktivert
 - Sett opp [Innsjekking](check-in) slik at etiketter skrives ut
-- Du trenger administrativ tilgang til oppmøte-seksjonen
+- Du trenger administratortilgang til innsjekking-delen
 
 </div>
 
 ## Åpning av etikett-designeren
 
-I B1 Admin, klikk **seksjonsmenyene** i det øvre venstre hjørnet (gjeldende seksjonsavn med den lille pilen ved siden av) og velg **Mobil**. I navigasjonslinjen velger du **B1 CheckIn**, deretter klikker du **Design Labels**-knappen på innsjekk-etikettkortet. Du vil se en liste over lagrede etikett-maler, atskilt etter type: **Navneskilt** og **Hentemerkeseddel**.
+I B1 Admin klikker du på **seksjonsmenyen** i øvre venstre hjørne (gjeldende seksjonnavn med den lille pilen ved siden av) og velger **Mobil**. I navigasjonslinjen velger du **B1 Innsjekking** og klikker deretter på **Design-etiketter**-knappen på Innsjekking-etiketter-kortet. Du vil se en liste over dine lagrede etikett-maler, delt etter type: **Merkelapp** og **Uthentings-sedde**.
 
 ## Etikett-typer
 
-- **Navneskilt** — skrevet ut og festet til barnet. Inkluderer vanligvis barnets navn, klasserommet/økten, og en sikkerhetskode.
-- **Hentemerkeseddel** -- gitt til forelderen eller foresatte. Inkluderer vanligvis sikkerhetskoden og en liste over barna de sjekket inn.
+- **Merkelapp** — skrives ut og festes på barnet. Inkluderer typisk barnets navn, klasseromet/sesjonen deres og en sikkerhetskode.
+- **Uthentings-sedde** -- gitt til forelder eller foresatt. Inkluderer typisk sikkerhetskoden og en liste over barna de sjekket inn.
 
-B1 starter deg med en standard navneskilt- og en standard hentemerkeseddel-mal som er dimensjonert for standard 3,5 × 1,1 tommer termiske etiketter.
+B1 starter deg med en standard merkelapp og en standard uthentings-sedde-mal størrelse for standard 3,5 × 1,1 tomme termisk etiketter.
 
-## Opprett en etikett-mal
+## Opprette en etikett-mal
 
-1. Klikk **Legg til navneskilt** eller **Legg til hentemerkeseddel** (eller bruk rullemenyen for å velge).
+1. Klikk **Legg til merkelapp** eller **Legg til uthentings-sedde** (eller bruk rullegardinlisten for å velge).
 2. En ny mal åpnes i etikett-editoren.
 
 ### Etikett-editor
 
-Editoren viser en skalert forhåndsvisning av etiketten ved den konfigurerte størrelsen. I det venstre panelet kan du konfigurere:
+Editoren viser en skalert forhåndsvisning av etiketten ved konfigurert størrelse. I det venstre panelet kan du konfigurere:
 
-- **Navn** -- malens navn (kun for din referanse)
-- **Etikett-type** -- Navneskilt eller hentemerkeseddel
-- **Bredde / høyde** -- etikettstørrelse i tommer
+- **Navn** — malens navn (kun for din referanse)
+- **Etikett-type** -- Merkelapp eller Uthentings-sedde
+- **Bredde / høyde** — etikettstørrelse i tommer
 
 ### Legge til blokker
 
-En etikett er bygget fra blokker -- individuelle deler av innhold som er plassert på etikett-lerretet. Klikk **Legg til blokk** for å sette inn en ny blokk og velg dens type:
+En etikett er bygget av blokker — individuelle stykker innhold plassert på etikett-lerretet. Klikk **Legg til blokk** for å sette inn en ny blokk og velg dens type:
 
-- **Felt** -- trekker en dataveralue ved utskriftstid:
-  - `person.displayName` -- personens fulle navn
-  - `sessions` -- gudstjenesten/klasserommet de sjekket inn til
-  - `securityCode` -- den tilfeldig genererte sikkerhetskoden
-  - `children` -- liste over barn (for hentemerkesedler)
-  - `person.nametagNotes` -- alle spesielle notater på personens registrering
-  - `campus` -- campusnavnet
+- **Felt** -- henter en dataverdi ved utskrivingstidspunkt:
+  - `person.displayName` — personens fullt navn
+  - `sessions` — tjenesten/klasserommet de sjekket inn til
+  - `securityCode` -- den tilfeldig genererte uthentings-sikkerhetskoden
+  - `children` -- liste over barn (for uthentings-sedler)
+  - `person.nametagNotes` -- eventuelle spesielle merknader på personens post
+  - `campus` -- kampusnavn
 - **Tekst** -- statisk tekst du skriver inn (for overskrifter, etiketter eller instruksjoner)
 - **Strekkode** -- en strekkode som koder sikkerhetskoden
 
-### Plassering av blokker
+### Posisjonering av blokker
 
-Hver blokk har **X**, **Y**, **Bredde** og **Høyde**-felt uttrykt som prosenter av etikett-lerretet (0–100). Juster disse for å plassere innhold presist. Du kan også sette:
+Hver blokk har **X**, **Y**, **Bredde** og **Høyde**-felt uttrykt som prosenter av etikett-lerretet (0–100). Juster disse for å plassere innhold nøyaktig. Du kan også sette:
 
 - **Skriftstørrelse** -- tekststørrelse i poeng
-- **Fet** -- slå på fet tekst
-- **Justering** -- venstre, sentrum eller høyre tekstjustering
-- **Betingelse** -- skjul valgfritt blokken hvis et felt er tomt (for eksempel, vis kun nametagNotes hvis det har en verdi)
+- **Fet** -- aktiver fet tekst
+- **Justering** -- venstre, sentret eller høyre tekstjustering
+- **Betingelse** -- skjul valgfritt blokken hvis et felt er tomt (for eksempel vis bare nametagNotes hvis det har en verdi)
 
 ### Lagring
 
-Klikk **Lagre** for å lagre malen. Den oppdaterte malen vil bli brukt neste gang etiketter skrives ut i B1 Checkin.
+Klikk **Lagre** for å lagre malen. Den oppdaterte malen vil bli brukt neste gang etiketter skrives ut i B1 Innsjekking.
 
-## Ombestilling av maler
+## Omorganisering av maler
 
-Hvis du har flere navneskilt- eller hentemerkeseddel-maler, vil B1 Checkin bruke den første malen i listen som standard. Dra maler for å ombestille dem.
+Hvis du har flere merkelapp- eller uthentings-sedde-maler, vil B1 Innsjekking som standard bruke den første malen i listen. Dra maler for å omorganisere dem.
 
 ## Sletting av en mal
 
-Klikk slettikonet på en hvilken som helst mallinje og bekreft. Sletting av siste mal av en type gjenoppretter den innebygde standardmalen.
+Klikk slettikonet på en malrad og bekreft. Sletting av den siste malen av en type gjenoppretter den innebygde standard-malen.
 
 :::tip
-Lag en testutskrift etter redigering av en mal for å bekrefte at oppsettet ser riktig ut før neste gudstjeneste.
+Gjør en testutskrift etter redigering av en mal for å bekrefte at oppsettet ser bra ut før neste servicetid.
 :::
 
 ## Relaterte artikler
 
-- [Innsjekking Setup](setup) -- konfigurere gudstjenester og grupper for innsjekking
-- [Fullføring av innsjekking](check-in) -- innsjekkingsflyten for familier
-- [B1 Checkin Komme i gang](../../b1-checkin/getting-started/) -- Checkin kioskappen
+- [Innsjekking-oppsett](setup) -- konfigurer tjenester og grupper for innsjekking
+- [Fullføring av innsjekking](check-in) -- innsjekking-flyt for familier
+- [B1 Innsjekking Komme i gang](../../b1-checkin/getting-started/) -- Innsjekking kiosk-appen

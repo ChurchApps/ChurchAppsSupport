@@ -1,5 +1,5 @@
 ---
-title: "साझा पुस्तकालय"
+title: "साझा पुस्तकालयें"
 ---
 
 # Shared Libraries

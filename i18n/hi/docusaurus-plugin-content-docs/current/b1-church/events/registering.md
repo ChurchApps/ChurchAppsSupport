@@ -1,5 +1,5 @@
 ---
-title: "कार्यक्रमों के लिए पंजीकरण"
+title: "ईवेंट के लिए पंजीकरण"
 ---
 
 # Registering for Events

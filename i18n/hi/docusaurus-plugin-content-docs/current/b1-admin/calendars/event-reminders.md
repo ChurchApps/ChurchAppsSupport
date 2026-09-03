@@ -1,80 +1,80 @@
 ---
-title: "कार्यक्रम अनुस्मारक"
+title: "ईवेंट रिमाइंडर"
 ---
 
-# Event Reminders
+# ईवेंट रिमाइंडर
 
 <div class="article-intro">
 
-Event reminders automatically notify the right people before an event happens -- for example, "Don't miss it! The healthcare workshop starts tomorrow at 9:00 AM." You configure a reminder once on the event, and B1 sends it out on schedule through push notifications and email. Members can control which reminders they receive from their own [Notification Preferences](../../b1-church/getting-started/notification-preferences).
+ईवेंट रिमाइंडर एक ईवेंट होने से पहले सही लोगों को स्वचालित रूप से सूचित करते हैं -- उदाहरण के लिए, "इसे मिस न करें! स्वास्थ्यसेवा कार्यशाला कल सुबह 9:00 बजे शुरू होती है।" आप इवेंट पर एक बार एक रिमाइंडर कॉन्फ़िगर करते हैं, और B1 इसे पुश सूचनाओं और ईमेल के माध्यम से शेड्यूल पर भेजता है। सदस्य अपने [सूचना वरीयताओं](../../b1-church/getting-started/notification-preferences) से नियंत्रित कर सकते हैं कि वे कौन सी रिमाइंडर प्राप्त करते हैं।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- Create the event you want to remind people about (see [Creating Calendars](creating-calendars))
-- To reach registered attendees, [enable registration](creating-calendars) on the event
-- To reach a whole group, make sure the event belongs to a [group](../groups/creating-groups) with members
+- उस ईवेंट को बनाएं जिसके बारे में आप लोगों को रिमाइंड करना चाहते हैं (देखें [कैलेंडर बनाना](creating-calendars))
+- पंजीकृत उपस्थिती तक पहुंचने के लिए, ईवेंट पर [पंजीकरण सक्षम करें](creating-calendars)
+- एक पूरे समूह तक पहुंचने के लिए, सुनिश्चित करें कि ईवेंट एक [समूह](../groups/creating-groups) से संबंधित है जिसमें सदस्य हैं
 
 </div>
 
-## Setting Up a Reminder
+## रिमाइंडर सेट अप करना
 
-You configure reminders in the **Reminders** section of the event.
+आप ईवेंट के **रिमाइंडर** अनुभाग में रिमाइंडर कॉन्फ़िगर करते हैं।
 
-- When you **create a new event**, expand the **Reminders** section in the event editor before saving.
-- For an **existing event**, open the event's **Registration Details** page (from the **Registrations** section) to add or change its reminder.
+- जब आप **एक नया ईवेंट बनाएं**, सहेजने से पहले ईवेंट संपादक में **रिमाइंडर** अनुभाग को विस्तारित करें।
+- **मौजूदा ईवेंट** के लिए, रिमाइंडर को जोड़ने या बदलने के लिए ईवेंट के **पंजीकरण विवरण** पृष्ठ खोलें (**पंजीकरण** अनुभाग से)।
 
-1. Turn on **Enable reminders**.
-2. Choose **When** to send. Pick up to three timings: **7 days before**, **3 days before**, **1 day before**, and **Day of**.
-3. Set the **Time of day** the reminder should go out (default is **9:00 AM**, in your church's local time zone).
-4. Choose **Who** should be reminded (see [Who Gets Reminded](#who-gets-reminded) below).
-5. Optionally add a **Message**. Leave it blank to use the default wording, or write your own -- you can include `{{eventTitle}}` and it will be replaced with the event's name.
-6. Choose the **Channels**: **Push** notification, **Email**, or both.
-7. Save the event.
+1. **रिमाइंडर सक्षम** करने को चालू करें।
+2. कब भेजना है **कब** चुनें। तीन तक की समय-सीमा उठाएं: **7 दिन पहले**, **3 दिन पहले**, **1 दिन पहले**, और **दिन का**।
+3. दिन का **समय** सेट करें रिमाइंडर कब जाना चाहिए (डिफ़ॉल्ट **9:00 AM** है, आपके चर्च के स्थानीय समय क्षेत्र में)।
+4. **कौन** रिमाइंड किया जाना चाहिए यह चुनें (नीचे [कौन रिमाइंड होता है](#who-gets-reminded) देखें)।
+5. वैकल्पिक रूप से एक **संदेश** जोड़ें। डिफ़ॉल्ट शब्दों का उपयोग करने के लिए इसे खाली छोड़ें, या अपना लिखें -- आप `{{eventTitle}}` शामिल कर सकते हैं और इसे ईवेंट के नाम से प्रतिस्थापित किया जाएगा।
+6. **चैनल** चुनें: **पुश** सूचना, **ईमेल**, या दोनों।
+7. ईवेंट को सहेजें।
 
-As you make changes, a **live preview** shows roughly how many people will be reminded, how many attendees can't be reached, and the next scheduled send times -- so you can confirm the reminder looks right before you save.
+जैसा कि आप परिवर्तन करते हैं, एक **लाइव पूर्वावलोकन** मोटे तौर पर दिखाता है कि कितने लोगों को रिमाइंड किया जाएगा, कितने उपस्थिती तक नहीं पहुंचे जा सकते, और अगली शेड्यूल की गई भेजने के समय -- तो आप पुष्टि कर सकते हैं कि रिमाइंडर सही दिखता है सहेजने से पहले।
 
-## Who Gets Reminded
+## कौन रिमाइंड होता है
 
-The **Who** setting controls who the reminder goes to:
+**कौन** सेटिंग नियंत्रित करती है कि रिमाइंडर किसे जाता है:
 
-- **Registrants only** -- Everyone registered for the event who is linked to a person record. This is the default when the event has registration enabled, so a reminder for a small registered event never accidentally goes to a whole group.
-- **Heads / registrants only** -- One reminder per registration (the person who registered), rather than every family member on the registration.
-- **Group members** -- Everyone in the event's group. This is the default when the event does not use registration.
-- **Auto** -- Uses registrants when registration is enabled, otherwise the group.
+- **केवल पंजीकारी** -- ईवेंट के लिए पंजीकृत हर कोई जो एक व्यक्ति रिकॉर्ड से जुड़ा है। यह डिफ़ॉल्ट है जब ईवेंट के पास पंजीकरण सक्षम है, इसलिए एक छोटे पंजीकृत ईवेंट के लिए रिमाइंडर कभी भी गलती से एक पूरे समूह में नहीं जाता है।
+- **प्रमुख / केवल पंजीकारी** -- प्रतिपंजीकरण में एक रिमाइंडर (व्यक्ति जिसने पंजीकरण किया), पंजीकरण पर हर परिवार के सदस्य के बजाय।
+- **समूह सदस्य** -- ईवेंट के समूह में हर कोई। यह डिफ़ॉल्ट है जब ईवेंट पंजीकरण का उपयोग नहीं करता है।
+- **ऑटो** -- पंजीकरण सक्षम होने पर पंजीकारी का उपयोग करता है, अन्यथा समूह।
 
 :::info
-Guests added by name only (without a linked person record) can't receive a reminder, because there's no account, device, or email to send to. The preview tells you how many attendees fall into this group so there are no surprises. Members who have opted out of communication are also skipped.
+केवल नाम से जोड़े गए अतिथि (लिंक किए गए व्यक्ति रिकॉर्ड के बिना) रिमाइंडर प्राप्त नहीं कर सकते हैं, क्योंकि कोई खाता, डिवाइस, या ईमेल नहीं है भेजने के लिए। पूर्वावलोकन आपको बताता है कि कितने उपस्थिती इस समूह में आते हैं ताकि कोई आश्चर्य न हो। सदस्य जिन्होंने संचार से बाहर निकल गए हैं, वे भी छोड़ दिए जाते हैं।
 :::
 
-## When Reminders Are Sent
+## जब रिमाइंडर भेजे जाते हैं
 
-- Reminders fire at the **time of day you choose**, in your church's local time zone, on each of the offsets you selected.
-- If you **change the event's date or time**, the pending reminders are automatically rescheduled -- you don't need to edit the reminder.
-- If you **delete the event** (or cancel a single occurrence of a recurring event), its pending reminders are automatically cancelled.
-- Recurring events are handled automatically: each upcoming occurrence gets its own reminder.
+- रिमाइंडर दिन के **समय पर दिन के** जो आप चुनते हैं, आपके चर्च के स्थानीय समय क्षेत्र में, आपके द्वारा चुनी गई प्रत्येक ऑफसेट पर।
+- यदि आप **ईवेंट की तारीख या समय बदलते हैं**, लंबित रिमाइंडर स्वचालित रूप से फिर से शेड्यूल किए जाते हैं -- आपको रिमाइंडर को संपादित करने की आवश्यकता नहीं है।
+- यदि आप **ईवेंट को हटाते हैं** (या एक आवर्ती ईवेंट की एक एकल घटना को रद्द करते हैं), इसके लंबित रिमाइंडर स्वचालित रूप से रद्द कर दिए जाते हैं।
+- आवर्ती ईवेंट स्वचालित रूप से हैंडल किए जाते हैं: आने वाली प्रत्येक घटना अपना रिमाइंडर मिलता है।
 
 :::tip
-Reminders are sent **push first, with email as a fallback**. If a member has push notifications enabled, they'll get a push; if not, they'll get an email instead. Members choose which channels they want per notification type in their [Notification Preferences](../../b1-church/getting-started/notification-preferences).
+रिमाइंडर **पुश पहले भेजे जाते हैं, फॉलबैक के रूप में ईमेल के साथ**। यदि किसी सदस्य के पास पुश सूचनाएं सक्षम हैं, तो उन्हें पुश मिलेगा; यदि नहीं, तो उन्हें बजाय ईमेल मिलेगा। सदस्य अपने [सूचना वरीयताओं](../../b1-church/getting-started/notification-preferences) में प्रति सूचना प्रकार कौन सी चैनल चाहते हैं यह चुनते हैं।
 :::
 
-## What Members Can Control
+## सदस्य क्या नियंत्रित कर सकते हैं
 
-Reminders always respect each member's [Notification Preferences](../../b1-church/getting-started/notification-preferences). A member can:
+रिमाइंडर हमेशा प्रत्येक सदस्य की [सूचना वरीयताओं](../../b1-church/getting-started/notification-preferences) का सम्मान करते हैं। एक सदस्य कर सकता है:
 
-- Turn **Event Reminders** off for push or email while keeping other notifications on.
-- Set **quiet hours** so non-urgent notifications wait until a reasonable time.
+- पुश या ईमेल के लिए **ईवेंट रिमाइंडर** बंद करें अन्य सूचनाओं को चालू रखते हुए।
+- **शांत घंटे** सेट करें ताकि गैर-जरूरी सूचनाएं एक उचित समय तक प्रतीक्षा करें।
 
-You can't override a member's choice to opt out of event reminders -- this keeps B1 compliant with anti-spam rules and keeps members in control of their inbox.
+आप किसी सदस्य की ईवेंट रिमाइंडर से बाहर निकलने की पसंद को ओवरराइड नहीं कर सकते -- यह B1 को एंटी-स्पैम नियमों के अनुरूप रखता है और सदस्यों को अपने इनबॉक्स पर नियंत्रण रखता है।
 
-## Serving Reminders
+## परिष्करण रिमाइंडर
 
-Volunteers scheduled on a plan receive a separate **serving reminder** with the plan details and, when they haven't responded yet, **Accept / Decline** buttons right in the email. Those reminders are configured on the plan type rather than on a calendar event -- see [Sunday Volunteers](../guides/sunday-volunteers) for how volunteer scheduling and reminders work.
+योजना पर शेड्यूल किए गए स्वेच्छासेवक एक अलग **परिष्करण रिमाइंडर** प्राप्त करते हैं योजना विवरण के साथ और, जब वे अभी तक प्रतिक्रिया नहीं दे रहे हैं, **स्वीकार / अस्वीकार करें** बटन सही ईमेल में। वे रिमाइंडर कैलेंडर ईवेंट के बजाय योजना प्रकार पर कॉन्फ़िगर किए जाते हैं -- [रविवार स्वेच्छासेवक](../guides/sunday-volunteers) को देखें कि स्वेच्छासेवक शेड्यूलिंग और रिमाइंडर कैसे काम करते हैं।
 
-## Next Steps
+## अगले कदम
 
-- [Notification Preferences](../../b1-church/getting-started/notification-preferences) -- What members can control
-- [Event Registration Guide](../guides/event-registration) -- Set up registration so reminders can reach attendees
-- [Creating Calendars](creating-calendars) -- Return to calendar setup
+- [सूचना वरीयताएं](../../b1-church/getting-started/notification-preferences) -- सदस्य क्या नियंत्रित कर सकते हैं
+- [ईवेंट पंजीकरण गाइड](../guides/event-registration) -- पंजीकरण सेट करें ताकि रिमाइंडर उपस्थिती तक पहुंच सकें
+- [कैलेंडर बनाना](creating-calendars) -- कैलेंडर सेटअप पर वापस लौटें

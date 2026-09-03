@@ -1,49 +1,45 @@
 ---
-title: "Ulat ng Kaarawan"
+title: "Birthday & Anniversary Lists"
 ---
 
-# Ulat ng Kaarawan
+# Birthday & Anniversary Lists
 
 <div class="article-intro">
 
-Ang Birthday Report ay tumutulong sa iyo na manatiling konektado sa iyong paglalakbay sa pamamagitan ng pagpapakita ng mga miyembro na may paparating na mga kaarawan. Gamitin ito upang magplano ng mga selebrasyon, magpadala ng mga card, o gumawa ng mga pahayag sa panahon ng mga serbisyo.
+Kailangan ng isang listahan ng lahat na may kaarawan o anniversary sa isang binigyan na buwan — para sa bulletin, announcement, o card? Ang People search ay maaaring mag-filter ng iyong paglalakbay sa pamamagitan ng **Birth Month** at **Anniversary Month** at ipakita ang mga petsa nang direkta sa mga resulta.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Kang Magsimula</h4>
+<h4>Bago Magsimula</h4>
 
-- Siguraduhin na ang mga petsa ng pagsilang ay naisaad sa profile ng bawat tao. Tingnan ang [Adding People](../people/adding-people.md) para sa mga detalye.
-- Kailangan mo ng tamang [permissions](../settings/roles-permissions.md) upang ma-access ang mga ulat
+- Tiyakin na ang mga petsa ng kapanganakan (at mga anniversary) ay na-enter sa profile ng bawat tao. Tingnan ang [Adding People](../people/adding-people.md).
+- Kailangan mo ng permission na tingnan ang People. Tingnan ang [Roles & Permissions](../settings/roles-permissions.md).
 
 </div>
 
-## Pagpapatakbo ng Ulat
+## Pagkuha ng Birthday List para sa Isang Buwan
 
-1. Pumunta direkta sa **admin.b1.church/reports/birthdays** sa iyong browser (ang mga ulat ay walang entry sa navigation menu — ang pag-bookmark sa address ay ang pinakamadaling paraan upang bumalik dito).
-2. Pumili ng **Month** na gusto mo mula sa dropdown. Maaari mong i-limit ang mga resulta sa isang **Group**.
-3. I-click ang **Run Report**. Ang ulat ay naglalista ng lahat na may kaarawan sa buwan na iyon, kasama ang kanilang petsa ng pagsilang — handa nang basahin direkta sa isang bulletin o announcement list.
+1. Buksan ang **section menu** sa top-left corner at pumili ng **People**.
+2. Sa ilalim ng search box, i-click ang **Advanced**.
+3. Palawakin ang **Demographics** section at suriin ang **Birth Month**, pagkatapos ay pumili ng buwan.
+4. Tumakbo ang paghahanap — lahat na may kaarawan na month ay lumalabas sa mga resulta.
+5. Upang makita ang mga petsa, i-click ang **columns icon** sa tuktok na kanang ng mga resulta at i-enable ang **Birthday** column. Gamitin ang **Export** upang i-download ang listahan bilang isang spreadsheet kung gusto mong mag-sort o mag-print doon.
 
-## Ano ang Ipinapakita ng Ulat
+## Pagkuha ng Anniversary List
 
-Ang Birthday Report ay nagpapakita ng:
+Parehong mga hakbang — sa **Demographics** section, suriin ang **Anniversary Month** sa halip (o pati na rin), pumili ng buwan, at i-enable ang **Anniversary** column sa mga resulta.
 
-- **Birthday** -- Ang petsa ng kanilang kaarawan.
-- **Name** -- Ang pangalan ng tao mula sa iyong church database.
+## Mga Praktikal na Paggamit
 
-Ang mga resulta ay sumasaklaw sa buwan na iyong pinili, na ginagawang madali ang pagtukoy kung sino ang may paparating na kaarawan.
-
-## Practical Uses
-
-- **Weekly announcements** -- Patakbuhin ang ulat para sa susunod na linggo at isama ang mga kaarawan sa iyong bulletin o mga pahayag.
-- **Birthday cards** -- Bumuo ng isang listahan para sa buwan at hayaan ang iyong team na magpadala ng personal na birthday cards.
-- **Small group leaders** -- Ang mga pinuno ng grupo ay maaaring magpatakbo ng ulat upang maalala ang mga kaarawan ng mga miyembro sa kanilang grupo.
-- **Milestone celebrations** -- I-filter para sa mga specific date ranges upang magplano ng mga milestone birthday celebrations.
+- **Weekly bulletins** -- Tumakbo sa listahan ng kasalukuyang buwan at basahin ang mga pangalan direkta sa bulletin.
+- **Birthday & anniversary cards** -- I-export ang listahan ng buwan at ibigay ito sa iyong card-writing team.
+- **Milestones** -- Pagsamahin ang **Age** filter upang mahanap ang milestone birthday.
 
 :::tip
-Patakbuhin ang ulat na ito sa simula ng bawat buwan upang magplano nang mauna. Maaari mong itakda ang date range upang sumasaklaw sa buong buwan upang mayroon kang oras na maghanda ng mga card o mga pahayag.
+Ang parehong mga listahan ay nanggagaling sa campo ng petsa ng pagkakaanak at anniversary sa profile ng bawat tao — kung ang sino ay nawawala, ang kanilang profile ay kailangan lamang na ang petsa ay idinadagdag.
 :::
 
 :::info
-Ang birthday data ay nagmula sa birth date field sa profile ng bawat tao. Siguraduhin na ang iyong [membership records](../people/adding-people.md) ay up to date para sa tumpak na mga resulta.
+Ang mas naunang bersyon ng B1 Admin ay may hiwalay na Reports page para sa mga kaarawan. Ang pahinang iyon ay na-retire — ang People search filters sa itaas ay ang kasalukuyang paraan, at sumasaklaw din nila ang mga anniversary.
 :::

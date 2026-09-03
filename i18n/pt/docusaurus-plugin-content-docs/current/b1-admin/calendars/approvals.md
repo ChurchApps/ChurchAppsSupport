@@ -6,47 +6,47 @@ title: "Aprovações de Calendário"
 
 <div class="article-intro">
 
-The Approvals page is where administrators review and act on pending room and resource booking requests, as well as calendar events that require approval before being published.
+A página Aprovações é onde os administradores revisam e agem sobre solicitações de reserva de sala e recursos pendentes, bem como eventos de calendário que exigem aprovação antes de serem publicados.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Antes de começar</h4>
 
-- Configure rooms or resources with an **Approval Group** in [Rooms & Resources](rooms-resources)
-- You need the **Calendars Admin** permission or the **content.edit** permission
+- Configure salas ou recursos com um **Grupo de Aprovação** em [Salas e Recursos](rooms-resources)
+- Você precisa da permissão **Calendars Admin** ou da permissão **content.edit**
 
 </div>
 
-## Opening Approvals
+## Abrindo aprovações
 
-In B1 Admin, go to **Calendars** and select **Approvals**. Pending booking requests and events awaiting review are listed here.
+No B1 Admin, vá para **Calendários** e selecione **Aprovações**. As solicitações de reserva pendentes e os eventos aguardando revisão são listados aqui.
 
-## Booking Requests
+## Solicitações de reserva
 
-When a group creates an event and requests a room or resource, the request appears in the **Booking Requests** panel. Each row shows:
+Quando um grupo cria um evento e solicita uma sala ou recurso, a solicitação aparece no painel **Solicitações de Reserva**. Cada linha mostra:
 
-- The room or resource being requested
-- The event name and date/time
-- The requesting group
+- A sala ou recurso sendo solicitado
+- O nome do evento e a data/hora
+- O grupo solicitante
 
-### Conflict Indicators
+### Indicadores de conflito
 
-If two requests overlap for the same room or resource, a conflict warning icon appears. Review conflicting requests carefully before approving either one.
+Se duas solicitações se sobrepõem para a mesma sala ou recurso, um ícone de aviso de conflito aparece. Revise cuidadosamente as solicitações conflitantes antes de aprovar qualquer uma.
 
-### Approving or Rejecting
+### Aprovando ou rejeitando
 
-Click the **✓** (approve) or **✗** (reject) icon on any booking request. The requesting group is notified of the decision. Approved bookings are locked to that room or resource for the event; rejected bookings free the slot for others.
+Clique no ícone **✓** (aprovar) ou **✗** (rejeitar) em qualquer solicitação de reserva. O grupo solicitante é notificado da decisão. As reservas aprovadas são bloqueadas naquela sala ou recurso para o evento; as reservas rejeitadas liberam o espaço para outros.
 
-## Pending Events
+## Eventos pendentes
 
-If your calendar workflow requires event approval before events become visible to the public, pending events appear in the **Pending Events** panel. Approve an event to publish it to the calendar, or reject it to notify the submitter that changes are needed.
+Se seu fluxo de trabalho de calendário exigir aprovação de evento antes que os eventos se tornem visíveis ao público, eventos pendentes aparecerão no painel **Eventos Pendentes**. Aprove um evento para publicá-lo no calendário ou rejeite-o para notificar o remetente que são necessárias alterações.
 
 :::tip
-Set up an Approval Group on a room in [Rooms & Resources](rooms-resources) to require approval for that room. Groups with access can then request the room when creating events, and those requests flow into this page.
+Configure um Grupo de Aprovação em uma sala em [Salas e Recursos](rooms-resources) para exigir aprovação para essa sala. Os grupos com acesso podem então solicitar a sala ao criar eventos, e essas solicitações fluem para esta página.
 :::
 
-## Artigos Relacionados
+## Artigos relacionados
 
-- [Rooms, Resources & Scheduling](rooms-resources) — configure bookable rooms and resources
-- [Creating Calendars](creating-calendars) — manage calendars and events
+- [Salas, Recursos e Agendamento](rooms-resources) — configure salas e recursos reserváveis
+- [Criando Calendários](creating-calendars) — gerencie calendários e eventos

@@ -1,82 +1,82 @@
 ---
-title: "Rooms, Resources & Scheduling"
+title: "Aule, Risorse e Programmazione"
 ---
 
-# Stanze, Resources & Scheduling
+# Aule, Risorse e Programmazione
 
 <div class="article-intro">
 
-Stanze and Resources let you track your church's bookable spaces and equipment. When a Gruppo or team wants Per use a Stanza or borrow a resource for an Evento, they can request it through B1 — and you can approve or deny those requests Per prevent double-booking.
+Aule e Risorse ti permettono di tenere traccia degli spazi prenotabili e delle attrezzature della tua chiesa. Quando un gruppo o un team vuole utilizzare un'aula o prendere in prestito una risorsa per un evento, può richiederla attraverso B1 — e tu puoi approvare o negare tali richieste per prevenire doppie prenotazioni.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- You need administrative access Per the Calendars section in B1 Admin
-- Set up [groups](../groups/creating-groups) whose Membri will be submitting booking requests
+- Hai bisogno dell'accesso amministrativo alla sezione Calendars in B1 Admin
+- Configura i [gruppi](../groups/creating-groups) i cui membri submitteranno richieste di prenotazione
 
 </div>
 
-## Opening Stanze & Resources
+## Apertura di Aule e Risorse
 
-In B1 Admin, go Per **Calendars** and Seleziona **Stanze & Resources**. The page has four tabs: **Stanze**, **Resources**, **Blockouts**, and **Templates**.
+In B1 Admin, vai a **Calendars** e seleziona **Rooms & Resources**. La pagina ha quattro schede: **Rooms**, **Resources**, **Blockouts** e **Templates**.
 
-## Stanze
+## Aule
 
-Stanze are physical spaces that can be reserved alongside calendar Eventi — a sanctuary, a fellowship hall, a classroom, etc.
+Le aule sono spazi fisici che possono essere prenotati insieme agli eventi del calendario — un santuario, una sala di comunità, un'aula, ecc.
 
-### Adding a Stanza
+### Aggiunta di un'Aula
 
-1. On the **Stanze** tab, Fai clic **Aggiungi Stanza**.
-2. Inserisci a **name** for the Stanza.
-3. Optionally set a **Capacità** (maximum number of people).
-4. Set an **Approval Gruppo** — when a Gruppo requests this Stanza, the chosen Gruppo's leaders are notified and must approve the booking. Leave blank if No approval is needed.
-5. Fai clic **Salva**.
+1. Nella scheda **Rooms**, fai clic su **Add Room**.
+2. Immetti un **name** per l'aula.
+3. Facoltativamente imposta una **capacity** (numero massimo di persone).
+4. Imposta un **Approval Group** — quando un gruppo richiede questa aula, i leader del gruppo scelto vengono notificati e devono approvare la prenotazione. Lascialo vuoto se non è necessaria approvazione.
+5. Fai clic su **Save**.
 
-### Editing or Deleting a Stanza
+### Modifica o Eliminazione di un'Aula
 
-Fai clic the Modifica icon Avanti Per any Stanza, make your changes, and Fai clic **Salva**. Use **Elimina** Per Rimuovi a Stanza permanently.
+Fai clic sull'icona di modifica accanto a qualsiasi aula, apporta le tue modifiche e fai clic su **Save**. Utilizza **Delete** per rimuovere un'aula permanentemente.
 
-## Resources
+## Risorse
 
-Resources are items that can be booked alongside an Evento — AV equipment, projectors, chairs, a van, etc.
+Le risorse sono elementi che possono essere prenotati insieme a un evento — attrezzature AV, proiettori, sedie, un furgone, ecc.
 
-### Adding a Resource
+### Aggiunta di una Risorsa
 
-1. Fai clic the **Resources** tab, then **Aggiungi Resource**.
-2. Inserisci a **name** and optionally a **description**.
-3. Set an **Approval Gruppo** if someone needs Per sign off on resource loans.
-4. Fai clic **Salva**.
+1. Fai clic sulla scheda **Resources**, quindi su **Add Resource**.
+2. Immetti un **name** e facoltativamente una **description**.
+3. Imposta un **Approval Group** se qualcuno deve approvare i prestiti di risorse.
+4. Fai clic su **Save**.
 
-## Blockouts
+## Blocchi
 
-Blockouts prevent Stanze or resources from being booked during certain times — for renovations, reserved periods, or maintenance.
+I blocchi impediscono a aule o risorse di essere prenotate durante determinati periodi — per ristrutturazioni, periodi riservati o manutenzione.
 
-### Adding a Blockout
+### Aggiunta di un Blocco
 
-1. Fai clic the **Blockouts** tab, then **Aggiungi Blockout**.
-2. Scegli whether Per block a **Stanza**, a **Resource**, or all Stanze and resources.
-3. Set the **start** and **end** Data/Ora for the blockout.
-4. Optionally Aggiungi a **reason** note.
-5. Fai clic **Salva**.
+1. Fai clic sulla scheda **Blockouts**, quindi su **Add Blockout**.
+2. Scegli se bloccare un'**Room**, una **Resource** o tutte le aule e risorse.
+3. Imposta la data/ora di **start** e **end** per il blocco.
+4. Facoltativamente aggiungi una nota **reason**.
+5. Fai clic su **Save**.
 
-## Evento Templates
+## Modelli di Evento
 
-Templates let you Salva a reusable Evento Configurazione — title, description, and associated Gruppi — so that recurring Eventi can be created consistently.
+I modelli ti permettono di salvare una configurazione di evento riutilizzabile — titolo, descrizione e gruppi associati — in modo che gli eventi ricorrenti possono essere creati in modo coerente.
 
-### Adding a Template
+### Aggiunta di un Modello
 
-1. Fai clic the **Templates** tab, then **Aggiungi Template**.
-2. Inserisci a **name** for the template.
-3. Optionally link a **Gruppo** so the Evento is automatically connected Per that Gruppo when created from the template.
-4. Fai clic **Salva**.
+1. Fai clic sulla scheda **Templates**, quindi su **Add Template**.
+2. Immetti un **name** per il modello.
+3. Facoltativamente collega un **group** in modo che l'evento sia automaticamente connesso a quel gruppo quando creato dal modello.
+4. Fai clic su **Save**.
 
-When creating a new Evento, Staff can Scegli an existing template Per pre-fill the Evento details.
+Quando crei un nuovo evento, lo staff può scegliere un modello esistente per precompilare i dettagli dell'evento.
 
 ## Articoli Correlati
 
-- [Availability Calendar](availability) — Visualizza all bookings at a glance and book Stanze or resources directly
-- [Calendar Approvals](approvals) — approve or reject Stanza and resource booking requests
-- [Creating Calendars](creating-calendars) — set up Evento calendars
-- [Creating Groups](../groups/creating-groups) — set up Gruppi that can book Stanze and resources
+- [Calendario Disponibilità](availability) — visualizza tutte le prenotazioni a colpo d'occhio e prenota aule o risorse direttamente
+- [Approvazioni Calendario](approvals) — approva o rifiuta richieste di prenotazione di aule e risorse
+- [Creazione di Calendari](creating-calendars) — configura calendari di eventi
+- [Creazione di Gruppi](../groups/creating-groups) — configura gruppi che possono prenotare aule e risorse

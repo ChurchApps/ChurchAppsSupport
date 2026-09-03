@@ -1,40 +1,40 @@
-﻿---
-title: "Signalisation numérique"
+---
+title: "Signalisation Numérique"
 ---
 
-# Signalisation numérique
+# Signalisation Numérique
 
 <div class="article-intro">
 
-Envoyez le contenu de votre leçon à un téléviseur du hall d'entrée ou du couloir en utilisant un flux de signalisation numérique. Chaque type de plan obtient une URL de flux qui joue toujours le contenu du plan actuel, il n'y a donc rien à mettre à jour d'une semaine à l'autre.
+Envoyez le contenu de votre leçon à une TV de hall d'entrée ou de couloir en utilisant un flux de signalisation numérique. Chaque type de plan reçoit une URL de flux qui joue toujours le contenu du plan actuel, donc il n'y a rien à mettre à jour semaine après semaine.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Configurez un [type de plan](./plans.md) avec [Lessons.church](../content/lessons.md) ou un autre contenu de leçon planifié
+- Configurez un [type de plan](./plans.md) avec [Lessons.church](../content/lessons.md) ou un autre contenu de leçon programmé
 - Ayez un compte [SignPresenter](https://www.signpresenter.com) et un appareil configuré pour l'afficher
 
 </div>
 
-## Obtention de l'URL du flux
+## Obtenir l'URL de Flux
 
-1. Accédez à **Serving** et ouvrez le ministère contenant votre type de plan.
-2. Cliquez sur le bouton **Signalisation numérique** (l'icône RSS) sur la page du type de plan.
-3. Copiez l'URL du flux affichée dans la dialogue.
+1. Naviguez vers **Serving** et ouvrez le ministère contenant votre type de plan.
+2. Cliquez sur le bouton **Signalisation Numérique** (l'icône RSS) sur la page du type de plan.
+3. Copiez l'URL de flux affichée dans la boîte de dialogue.
 
 :::info
-L'URL du flux est liée au type de plan, pas à un seul plan. Elle suit automatiquement le plan qui est programmé comme actuel pour ce type de plan, vous ne devez donc le configurer qu'une seule fois.
+L'URL de flux est liée au type de plan, pas à un plan unique. Elle suit automatiquement quel que soit le plan programmé comme actuel pour ce type de plan, donc vous n'avez besoin de la configurer qu'une seule fois.
 :::
 
 ## Connexion à SignPresenter
 
-Le flux est construit pour fonctionner avec [SignPresenter](https://www.signpresenter.com), une application de signalisation numérique tierce. Collez l'URL copiée dans SignPresenter en tant que flux externe pour afficher le contenu de votre leçon actuelle sur un écran connecté.
+Le flux est construit pour fonctionner avec [SignPresenter](https://www.signpresenter.com), une application de signalisation numérique tiers. Collez l'URL copiée dans SignPresenter en tant que flux externe pour afficher le contenu de votre leçon actuelle sur un écran connecté.
 
-Pour les instructions étape par étape à l'intérieur de SignPresenter, consultez le [guide Lessons.church de SignPresenter](https://support.signpresenter.com/topics/lessons-dot-church.html).
+Pour la configuration étape par étape dans SignPresenter, voir [Guide Lessons.church de SignPresenter](https://support.signpresenter.com/topics/lessons-dot-church.html).
 
-## Prochaines étapes
+## Étapes Suivantes
 
 - Gérez les plans qui alimentent cet affichage de signalisation sur la page [Plans](./plans.md)
-- Planifiez le contenu avec [Lessons.church](./scheduling-lessons.md)
+- Programmez le contenu avec [Lessons.church](./scheduling-lessons.md)

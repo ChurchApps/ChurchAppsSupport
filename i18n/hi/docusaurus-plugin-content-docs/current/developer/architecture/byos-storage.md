@@ -1,5 +1,5 @@
 ---
-title: "Bring-Your-Own Storage"
+title: "BYOS स्टोरेज"
 ---
 
 # Bring-Your-Own Storage (BYOS)

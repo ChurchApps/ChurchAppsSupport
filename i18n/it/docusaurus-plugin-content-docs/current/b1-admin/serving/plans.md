@@ -1,123 +1,123 @@
 ---
-title: "Service Plans"
+title: "Piani di Servizio"
 ---
 
-# Servizio Plans
+# Piani di Servizio
 
 <div class="article-intro">
 
-Servizio plans organize who is serving and when. Each plan is tied Per a specific Data and ministry, making it easy Per coordinate your Volontario teams week by week and ensure every Servizio is fully staffed.
+I piani di servizio organizzano chi sta servendo e quando. Ogni piano è legato a una data e un ministero specifici, rendendo facile coordinare i tuoi team di volontari settimana dopo settimana e assicurarsi che ogni servizio sia completamente staffato.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Set up your ministries and teams in the Serving area
-- Make sure Volontari have been added Per your [people directory](../people/adding-people.md) and assigned Per teams
+- Configura i tuoi ministeri e team nell'area Serving
+- Assicurati che i volontari siano stati aggiunti alla tua [directory di persone](../people/adding-people.md) e assegnati ai team
 
 </div>
 
-## Accessing Plans
+## Accesso ai Piani
 
-1. Navigate Per **Serving** from the main menu.
-2. Seleziona a **ministry tab** at the inizio della pagina.
-3. Fai clic on a **plan Digita** Per see the list of plans for that Digita.
-4. Fai clic on a specific plan Per Apri it.
+1. Vai a **Serving** dal menu principale.
+2. Seleziona una **scheda di ministero** in alto della pagina.
+3. Fai clic su un **tipo di piano** per vedere l'elenco dei piani per quel tipo.
+4. Fai clic su un piano specifico per aprirlo.
 
 :::info
-Full admin access is not Obbligatorio Per manage plans. Anyone who is a Membro of a ministry can navigate Per Serving and Crea, Modifica, and schedule plans for their own ministry without needing the Plans Modifica Permesso. Editors with the Plans Modifica Ruolo can manage plans across every ministry.
+L'accesso amministrativo completo non è richiesto per gestire i piani. Chiunque sia un membro di un ministero può andare a Serving e creare, modificare e programmazione piani per il proprio ministero senza aver bisogno del permesso Plans Edit. Gli editori con il ruolo Plans Edit possono gestire piani in tutti i ministeri.
 :::
 
-## Creating a Plan
+## Creazione di un Piano
 
-1. From the plan Digita Visualizza, Fai clic **New Plan**.
-2. Give the plan a name or use the Data as the name. Seleziona the **Data** for the Servizio.
-3. If you would like Per copy from a previous plan, Scegli positions only or positions and assignments. If you do not want Per copy, just Scegli nothing. You can also copy the order of Servizio from my previous plan.
-4. Salva the plan. You can now begin assigning team Membri and building out the [service order](./service-order.md).
+1. Dalla vista del tipo di piano, fai clic su **New Plan**.
+2. Dai un nome al piano o usa la data come nome. Seleziona la **date** per il servizio.
+3. Se desideri copiare da un piano precedente, scegli posizioni solo o posizioni e assegnamenti. Se non desideri copiare, non scegliere nulla. Puoi anche copiare l'ordine di servizio dal mio piano precedente.
+4. Salva il piano. Ora puoi iniziare ad assegnare i membri del team e costruire l'[ordine di servizio](./service-order.md).
 
-## The Plan Detail Pagina
+## La Pagina di Dettaglio del Piano
 
-When you Apri a plan, you will see two tabs:
+Quando apri un piano, vedrai due schede:
 
-- **Assignments** -- Manage which team Membri are assigned Per this plan. You can Aggiungi people from your existing teams and see who has confirmed or is still In Sospeso.
-- **[Service Order](./service-order.md)** -- Build the order of Servizio with elements like worship songs, prayers, announcements, and the sermon.
+- **Assignments** -- Gestisci quali membri del team sono assegnati a questo piano. Puoi aggiungere persone dai tuoi team esistenti e vedere chi ha confermato o è ancora in sospeso.
+- **[Service Order](./service-order.md)** -- Crea l'ordine di servizio con elementi come canzoni di adorazione, preghiere, annunci e il sermone.
 
-## Assigning Team Membri
+## Assegnamento dei Membri del Team
 
-1. Apri a plan and go Per the **Assignments** tab.
-2. Fai clic on **Aggiungi Position** Per expand it. Fill out the information in the Aggiungi a position form. For category name Aggiungi whatever category you like.
-3. Fai clic on **People Needed** and Scegli Volontari Per fill that position.
-4. Aggiungi Membri from your team roster by clicking **Aggiungi**.
-5. Assigned Membri will appear under their team with their assignment status.
-6. Fai clic notify Volontari Per notify them within the B1 app or via email.
+1. Apri un piano e vai alla scheda **Assignments**.
+2. Fai clic su **add Position** per espanderla. Compila le informazioni nel modulo aggiungi una posizione. Per il nome della categoria aggiungi la categoria che preferisci.
+3. Fai clic su **People Needed** e scegli i volontari per riempire quella posizione.
+4. Aggiungi membri dal tuo elenco di team facendo clic su **Add**.
+5. I membri assegnati appariranno sotto il loro team con il loro stato di assegnazione.
+6. Fai clic notifica volontari per notificarli all'interno dell'app B1 o via email.
 
-Each position shows a count chip (for example, "2/3") so you can see how many spots are filled at a glance. At the top of the Assignments tab, a progress bar and a summary chip ("X of Y positions filled") show your overall staffing for the plan, switching Per **Fully staffed** once every position is covered.
+Ogni posizione mostra un chip di conteggio (ad esempio, "2/3") così puoi vedere quanti posti sono riempiti a colpo d'occhio. In alto nella scheda Assignments, una barra di progresso e un chip di riepilogo ("X di Y posizioni riempite") mostra il tuo staffing generale per il piano, passando a **Fully staffed** una volta che ogni posizione è coperta.
 
 :::tip
-Set up your teams in the ministry Impostazioni before creating plans. This way, you will have a ready pool of Volontari Per assign from.
+Configura i tuoi team nelle impostazioni del ministero prima di creare piani. In questo modo, avrai un pool pronto di volontari da cui assegnare.
 :::
 
-## Plan Impostazioni
+## Impostazioni del Piano
 
-Each plan has additional Impostazioni you can configure by clicking the Modifica (pencil) icon on the plan. These include:
+Ogni piano ha impostazioni aggiuntive che puoi configurare facendo clic sull'icona di modifica (matita) sul piano. Questi includono:
 
-- **Signup Deadline** — the number of hours before the Servizio when Volontario signups Chiudi. Inserisci a negative number Per keep signups Apri past the Servizio start Ora.
-- **Show Volontario names on signup page** — when checked, Volontari can see who else is already signed up for each position.
-- **Penciled in** — hides assignments from Volontari until you are ready Per publish the schedule.
-- **Automatically schedule a replacement when a Volontario declines** — when checked, if an assigned Volontario declines their position B1 will automatically contact the Avanti Disponibile person on the team roster and ask if they can serve. This continues down the list until someone accepts, keeping your positions filled without manual follow-up.
+- **Signup Deadline** — il numero di ore prima del servizio quando le iscrizioni dei volontari si chiudono. Immetti un numero negativo per mantenere le iscrizioni aperte dopo l'orario di inizio del servizio.
+- **Show volunteer names on signup page** — quando selezionato, i volontari possono vedere chi altro è già iscritto per ogni posizione.
+- **Penciled in** — nasconde gli assegnamenti dai volontari finché non sei pronto a pubblicare il programma.
+- **Automatically schedule a replacement when a volunteer declines** — quando selezionato, se un volontario assegnato rifiuta la sua posizione B1 contatterà automaticamente la prossima persona disponibile sulla lista del tuo team e chiederà se può servire. Questo continua lungo l'elenco finché qualcuno accetta, mantenendo i tuoi posti riempiti senza follow-up manuale.
 
-## Volontario Reminders
+## Promemoria ai Volontari
 
-B1 can automatically remind Volontari ahead of the Servizi they are scheduled for, so you do not have Per chase down your team each week. Reminders go Per **everyone scheduled** — both those who have confirmed and those who have not yet responded — by email and as an in-app/push notification. Each reminder includes the Volontario's position(s), the Servizio Data, the plan notes, and your custom message.
+B1 può ricordare automaticamente ai volontari i servizi a cui sono programmati in modo da non dover inseguire il tuo team ogni settimana. I promemoria vanno a **tutti programmati** — sia coloro che hanno confermato che coloro che non hanno ancora risposto — via email e come notifica in-app/push. Ogni promemoria include le posizioni del volontario, la data del servizio, le note del piano e il tuo messaggio personalizzato.
 
-Reminder timing and content are set per **plan Digita**, so each kind of Servizio can keep its own schedule.
+Il timing e il contenuto del promemoria sono impostati per **tipo di piano**, in modo che ogni tipo di servizio possa mantenere il proprio programma.
 
-1. From the **Serving** area, Seleziona the ministry that contains the plan Digita.
-2. Fai clic the **Modifica (pencil) icon** Avanti Per the plan Digita.
-3. In the **Reminders** section, set:
-   - **Reminder days before Servizio** — a comma-separated list of how many days ahead Per send, for example `7,1,0`. Use `0` Per send a reminder on the Giorno of the Servizio. Leave this field blank Per turn reminders off for this plan Digita.
-   - **Custom reminder message** *(Facoltativo)* — extra text added Per the reminder, such as "Arrive 30 minutes early Per rehearse."
-4. Salva the plan Digita.
+1. Dall'area **Serving**, seleziona il ministero che contiene il tipo di piano.
+2. Fai clic sull'**icona di modifica (matita)** accanto al tipo di piano.
+3. Nella sezione **Reminders**, imposta:
+   - **Reminder days before service** — un elenco separato da virgole di quanti giorni prima inviare, ad esempio `7,1,0`. Usa `0` per inviare un promemoria nel giorno del servizio. Lascialo vuoto per disattivare i promemoria per questo tipo di piano.
+   - **Custom reminder message** *(opzionale)* — testo aggiuntivo aggiunto al promemoria, come "Arriva 30 minuti prima per fare una prova."
+4. Salva il tipo di piano.
 
-New plan types remind Volontari **2 days before** each Servizio by default until you change this.
+I nuovi tipi di piano ricordano ai volontari **2 giorni prima** di ogni servizio per impostazione predefinita finché non lo modifichi.
 
 :::tip
-Volontari who have not yet confirmed get **Accept** and **Decline** buttons right inside the reminder email, so they can respond without signing in.
+I volontari che non hanno ancora confermato ricevono i pulsanti **Accept** e **Decline** direttamente nell'email del promemoria, in modo che possono rispondere senza effettuare il login.
 :::
 
 :::info
-Each reminder is sent once. Plans that are still penciled in (not yet sent Per the team) do not trigger reminders.
+Ogni promemoria viene inviato una volta. I piani che sono ancora matita (non ancora inviati al team) non attivano i promemoria.
 :::
 
-## Associating Gruppi with a Plan Digita
+## Associazione dei Gruppi con un Tipo di Piano
 
-Below the plan list on the plan Digita page, the **Gruppi** section lets you decide which Gruppi can see the plans for this plan Digita from their Membro portal. This is a quick way Per surface upcoming Servizi Per the right teams without giving them admin access.
+Sotto l'elenco dei piani nella pagina del tipo di piano, la sezione **Groups** ti permette di decidere quali gruppi possono vedere i piani per questo tipo di piano dal loro portale dei membri. Questo è un modo veloce per far emergere i prossimi servizi ai team giusti senza dar loro accesso admin.
 
-1. On the plan Digita page, scroll down Per the **Gruppi** section.
-2. Fai clic **Aggiungi Gruppo** and pick a Gruppo from the dropdown.
-3. In the **Shows** column, Scegli whether Membri of that Gruppo should see **Past**, **Future**, or **Both** plans for this plan Digita.
-4. Repeat Per associate additional Gruppi, or Fai clic the trash icon Per Rimuovi a Gruppo.
+1. Nella pagina del tipo di piano, scorri fino alla sezione **Groups**.
+2. Fai clic su **Add Group** e scegli un gruppo dal menu a discesa.
+3. Nella colonna **Shows**, scegli se i membri di quel gruppo dovrebbero vedere piani **Past**, **Future** o **Both** per questo tipo di piano.
+4. Ripeti per associare gruppi aggiuntivi, o fai clic sull'icona del cestino per rimuovere un gruppo.
 
 :::info
-Only Gruppi tagged as **Standard** appear in the picker. Membri of an associated Gruppo automatically see this plan Digita's plans on the Gruppo's page in the B1 Membro portal — limited Per the past/future/both window you selected.
+Solo i gruppi taggati come **Standard** appaiono nel selezionatore. I membri di un gruppo associato vedono automaticamente i piani di questo tipo di piano sulla pagina del gruppo nel portale dei membri di B1 — limitato alla finestra passato/futuro/entrambi che hai selezionato.
 :::
 
-If the plans are Lessons.church lessons, Membri of the associated Gruppo also see a **This week's lesson** card on the Gruppo page (bottom line, verse, and a question for parents). Associate a parent Gruppo here and set the filter Per **Past** so Oggi's lesson is included. Volontario teams typically use **Future** or **Both**.
+Se i piani sono lezioni di Lessons.church, i membri del gruppo associato vedono anche una scheda **This week's lesson** sulla pagina del gruppo (linea inferiore, versetto e una domanda per i genitori). Associa un gruppo di genitori qui e imposta il filtro su **Past** in modo che la lezione di oggi sia inclusa. I team di volontari in genere usano **Future** o **Both**.
 
-## Printing Plans
+## Stampa dei Piani
 
-You can print a plan for distribution Per your team. Apri the plan, Apri the Servizio order tab and use the **Print** option Per generate a printable version that includes assignments and the Servizio order. This is useful for handing out at rehearsals or posting in a common area.
+Puoi stampare un piano per la distribuzione al tuo team. Apri il piano, apri la scheda ordine di servizio e usa l'opzione **Print** per generare una versione stampabile che includa assegnamenti e ordine di servizio. Questo è utile per distribuire ai prove o affiggere in un'area comune.
 
 :::info
-Plans are organized by ministry. Make sure you are on the correct ministry tab before creating or viewing plans.
+I piani sono organizzati per ministero. Assicurati di essere sulla scheda del ministero corretto prima di creare o visualizzare i piani.
 :::
 
-## Avanti Steps
+## Prossimi Passaggi
 
-- Use the [Plans Overview](./plans-overview.md) Per see all upcoming assignments across multiple weeks in one grid and spot unfilled positions — and assign Volontari directly from the grid
-- Salva a plan's structure as a [Plan Template](./plan-templates.md) so you can stamp it onto future plans in one Fai clic
-- Build out your [Service Order](./service-order.md) with songs, readings, and other elements
-- Aggiungi [songs](./songs.md) from your library directly into the Servizio order
-- Use [Tasks](./tasks.md) Per assign follow-up action items Per team Membri
-- Display current lesson content on a lobby TV with [Digital Signage](./digital-signage.md)
+- Usa [Plans Overview](./plans-overview.md) per vedere tutti i prossimi assegnamenti attraverso più settimane in una griglia e individuare posizioni non riempite — e assegna i volontari direttamente dalla griglia
+- Salva la struttura di un piano come [Plan Template](./plan-templates.md) in modo da poter stamparlo sui piani futuri in un clic
+- Costruisci il tuo [Service Order](./service-order.md) con canzoni, letture e altri elementi
+- Aggiungi [canzoni](./songs.md) dalla tua libreria direttamente nell'ordine di servizio
+- Usa [Tasks](./tasks.md) per assegnare elementi di azione di follow-up ai membri del team
+- Visualizza il contenuto della lezione corrente su una TV in lobby con [Digital Signage](./digital-signage.md)

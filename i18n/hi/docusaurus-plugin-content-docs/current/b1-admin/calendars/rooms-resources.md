@@ -2,81 +2,81 @@
 title: "कमरे, संसाधन और शेड्यूलिंग"
 ---
 
-# Rooms, Resources & Scheduling
+# कमरे, संसाधन और शेड्यूलिंग
 
 <div class="article-intro">
 
-Rooms and Resources let you track your church's bookable spaces and equipment. When a group or team wants to use a room or borrow a resource for an event, they can request it through B1 — and you can approve or deny those requests to prevent double-booking.
+कमरे और संसाधन आपको अपने चर्च के बुकिंग योग्य स्थान और उपकरण को ट्रैक करने देते हैं। जब कोई समूह या टीम एक इवेंट के लिए एक कमरे का उपयोग करना चाहते हैं या एक संसाधन उधार लेना चाहते हैं, वे B1 के माध्यम से इसका अनुरोध कर सकते हैं — और आप दोहरी बुकिंग को रोकने के लिए उन अनुरोधों को मंजूरी दे सकते हैं या अस्वीकार कर सकते हैं।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- You need administrative access to the Calendars section in B1 Admin
-- Set up [groups](../groups/creating-groups) whose members will be submitting booking requests
+- आपको B1 Admin में कैलेंडर अनुभाग तक प्रशासकीय पहुंच की आवश्यकता है
+- [समूह](../groups/creating-groups) सेट करें जिनके सदस्य बुकिंग अनुरोध जमा करेंगे
 
 </div>
 
-## Opening Rooms & Resources
+## कमरे और संसाधन खोलना
 
-In B1 Admin, go to **Calendars** and select **Rooms & Resources**. The page has four tabs: **Rooms**, **Resources**, **Blockouts**, and **Templates**.
+B1 Admin में, **कैलेंडर** पर जाएं और **कमरे और संसाधन** चुनें। पृष्ठ के चार टैब हैं: **कमरे**, **संसाधन**, **ब्लॉकआउट**, और **टेम्पलेट**।
 
-## Rooms
+## कमरे
 
-Rooms are physical spaces that can be reserved alongside calendar events — a sanctuary, a fellowship hall, a classroom, etc.
+कमरे ऐसे भौतिक स्थान हैं जिन्हें कैलेंडर इवेंट के साथ आरक्षित किया जा सकता है — एक अभयारण्य, एक फेलोशिप हॉल, एक कक्षा, आदि।
 
-### Adding a Room
+### एक कमरा जोड़ना
 
-1. On the **Rooms** tab, click **Add Room**.
-2. Enter a **name** for the room.
-3. Optionally set a **capacity** (maximum number of people).
-4. Set an **Approval Group** — when a group requests this room, the chosen group's leaders are notified and must approve the booking. Leave blank if no approval is needed.
-5. Click **Save**.
+1. **कमरे** टैब पर, **कमरा जोड़ें** क्लिक करें।
+2. कमरे के लिए एक **नाम** दर्ज करें।
+3. वैकल्पिक रूप से एक **क्षमता** सेट करें (अधिकतम लोगों की संख्या)।
+4. एक **अनुमोदन समूह** सेट करें — जब कोई समूह इस कमरे का अनुरोध करता है, तो चुने गए समूह के नेताओं को सूचित किया जाता है और उन्हें बुकिंग को मंजूरी देना चाहिए। यदि कोई अनुमोदन की आवश्यकता नहीं है तो खाली छोड़ें।
+5. **सहेजें** क्लिक करें।
 
-### Editing or Deleting a Room
+### कमरे को संपादित या हटाना
 
-Click the edit icon next to any room, make your changes, and click **Save**. Use **Delete** to remove a room permanently.
+किसी भी कमरे के बगल में संपादन आइकन क्लिक करें, अपने परिवर्तन करें, और **सहेजें** क्लिक करें। **हटाएं** का उपयोग कमरे को स्थायी रूप से हटाने के लिए करें।
 
-## Resources
+## संसाधन
 
-Resources are items that can be booked alongside an event — AV equipment, projectors, chairs, a van, etc.
+संसाधन ऐसी वस्तुएं हैं जिन्हें इवेंट के साथ बुक किया जा सकता है — AV उपकरण, प्रोजेक्टर, कुर्सियां, एक वैन, आदि।
 
-### Adding a Resource
+### एक संसाधन जोड़ना
 
-1. Click the **Resources** tab, then **Add Resource**.
-2. Enter a **name** and optionally a **description**.
-3. Set an **Approval Group** if someone needs to sign off on resource loans.
-4. Click **Save**.
+1. **संसाधन** टैब क्लिक करें, फिर **संसाधन जोड़ें**।
+2. एक **नाम** और वैकल्पिक रूप से एक **विवरण** दर्ज करें।
+3. एक **अनुमोदन समूह** सेट करें यदि किसी को संसाधन ऋण को मंजूरी देने की आवश्यकता है।
+4. **सहेजें** क्लिक करें।
 
-## Blockouts
+## ब्लॉकआउट
 
-Blockouts prevent rooms or resources from being booked during certain times — for renovations, reserved periods, or maintenance.
+ब्लॉकआउट कमरों या संसाधनों को कुछ समय के दौरान बुक किए जाने से रोकते हैं — नवीनीकरण, आरक्षित अवधि, या रखरखाव के लिए।
 
-### Adding a Blockout
+### एक ब्लॉकआउट जोड़ना
 
-1. Click the **Blockouts** tab, then **Add Blockout**.
-2. Choose whether to block a **Room**, a **Resource**, or all rooms and resources.
-3. Set the **start** and **end** date/time for the blockout.
-4. Optionally add a **reason** note.
-5. Click **Save**.
+1. **ब्लॉकआउट** टैब क्लिक करें, फिर **ब्लॉकआउट जोड़ें**।
+2. यह चुनें कि क्या **कमरे**, एक **संसाधन**, या सभी कमरे और संसाधनों को ब्लॉक करना है।
+3. ब्लॉकआउट के लिए **शुरुआत** और **अंत** तारीख/समय सेट करें।
+4. वैकल्पिक रूप से एक **कारण** नोट जोड़ें।
+5. **सहेजें** क्लिक करें।
 
-## Event Templates
+## ईवेंट टेम्पलेट
 
-Templates let you save a reusable event configuration — title, description, and associated groups — so that recurring events can be created consistently.
+टेम्पलेट आपको एक पुन: प्रयोज्य ईवेंट कॉन्फ़िगरेशन सहेजने देते हैं — शीर्षक, विवरण, और संबंधित समूह — ताकि आवर्ती इवेंट को सुसंगत रूप से बनाया जा सके।
 
-### Adding a Template
+### एक टेम्पलेट जोड़ना
 
-1. Click the **Templates** tab, then **Add Template**.
-2. Enter a **name** for the template.
-3. Optionally link a **group** so the event is automatically connected to that group when created from the template.
-4. Click **Save**.
+1. **टेम्पलेट** टैब क्लिक करें, फिर **टेम्पलेट जोड़ें**।
+2. टेम्पलेट के लिए एक **नाम** दर्ज करें।
+3. वैकल्पिक रूप से एक **समूह** लिंक करें ताकि ईवेंट स्वचालित रूप से उस समूह से जुड़ा हो जब टेम्पलेट से बनाया जाए।
+4. **सहेजें** क्लिक करें।
 
-When creating a new event, staff can choose an existing template to pre-fill the event details.
+नए ईवेंट बनाते समय, कर्मचारी एक मौजूदा टेम्पलेट चुन सकते हैं ईवेंट विवरण को पूर्व-भरने के लिए।
 
-## Related Articles
+## संबंधित लेख
 
-- [Availability Calendar](availability) — view all bookings at a glance and book rooms or resources directly
-- [Calendar Approvals](approvals) — approve or reject room and resource booking requests
-- [Creating Calendars](creating-calendars) — set up event calendars
-- [Creating Groups](../groups/creating-groups) — set up groups that can book rooms and resources
+- [उपलब्धता कैलेंडर](availability) — सभी बुकिंग एक नज़र में देखें और सीधे कमरों या संसाधनों को बुक करें
+- [कैलेंडर अनुमोदन](approvals) — कमरे और संसाधन बुकिंग अनुरोधों को मंजूरी दें या अस्वीकार करें
+- [कैलेंडर बनाना](creating-calendars) — ईवेंट कैलेंडर सेट करें
+- [समूह बनाना](../groups/creating-groups) — कमरों और संसाधनों को बुक कर सकने वाले समूह सेट करें

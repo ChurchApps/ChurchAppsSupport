@@ -1,83 +1,83 @@
-﻿---
-title: "Druckbares Verzeichnis"
+---
+title: "Verzeichnis drucken"
 ---
 
-# Druckbares Verzeichnis
+# Verzeichnis drucken
 
 <div class="article-intro">
 
-Die Funktion Druckbares Verzeichnis generiert ein formatiertes, druckbares Mitgliederverzeichnis für Ihre Kirche. Es organisiert Mitglieder nach Haushalt, enthält Kontaktinformationen und Fotos und ist für den Druck auf Standard-Briefpapier ausgelegt.
+Die Print Directory-Funktion erstellt ein formatiertes, druckbares Mitgliederverzeichnis für Ihre Kirche. Es organisiert Mitglieder nach Haushalt, enthält Kontaktinformationen und Fotos und ist so konzipiert, dass es professionell aussieht, wenn es auf Standardbrief-Papier gedruckt wird.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Vor dem Start</h4>
 
-- Sie benötigen ein aktives B1 Admin-Konto mit Berechtigung zum Anzeigen von Personen.
-- Personen in Ihrem Verzeichnis sollten Fotos und Kontaktinformationen ausgefüllt haben, um die besten Ergebnisse zu erzielen.
+- Sie benötigen ein aktives B1 Admin-Konto mit der Berechtigung zum Anzeigen von Personen.
+- Personen in Ihrem Verzeichnis sollten Fotos und Kontaktinformationen ausfüllen, um die besten Ergebnisse zu erzielen.
 
 </div>
 
-## Öffnen des druckbaren Verzeichnisses
+## Öffnen des Print Directory
 
-1. Navigieren Sie zu **Personen** in B1 Admin.
-2. Klicken Sie auf das **Drucksymbol** (Druckersymbol) in der Symbolleiste oben auf der Ergebniskarte Personen. Es wird neben der Schaltfläche Exportieren angezeigt.
-3. Das Druckbare Verzeichnis wird in einem neuen Browser-Tab geöffnet und beginnt, Ihre Verzeichnisdaten zu laden.
-4. Nach etwa 1,5 Sekunden wird das Druckdialogfeld Ihres Browsers automatisch angezeigt.
+1. Navigieren Sie zu **People** in B1 Admin.
+2. Klicken Sie auf das **print icon** (Druckersymbol) in der Symbolleiste oben in der Ergebniskarte Personen. Es erscheint neben der Exportschaltfläche.
+3. Das Print Directory wird in einer neuen Browser-Registerkarte geöffnet und beginnt mit dem Laden Ihrer Verzeichnisdaten.
+4. Nach etwa 1,5 Sekunden wird automatisch das Druckdialog Ihres Browsers angezeigt.
 
 :::tip
-Das Verzeichnis wird in einem separaten Tab geöffnet, damit Sie es drucken können, ohne die Seite Personen zu verlassen. Nachdem das Druckdialogfeld angezeigt wird, kehrt der Tab automatisch zurück.
+Das Verzeichnis wird in einer separaten Registerkarte geöffnet, damit Sie es drucken können, ohne die Personenseite zu verlassen. Nachdem das Druckdialog angezeigt wird, wird die Registerkarte automatisch zurück navigiert.
 :::
 
-## Was ist enthalten
+## Was enthalten ist
 
-Das druckbare Verzeichnis enthält alle **aktiven Mitglieder** Ihrer Kirche. Spezifisch:
+Das Druckverzeichnis umfasst alle **aktiven Mitglieder** Ihrer Kirche. Speziell:
 
-- Personen mit dem Status **Inaktiv** oder **Besucher** sind automatisch ausgeschlossen.
-- Personen, die sich **abgemeldet haben** aus dem Verzeichnis, sind ausgeschlossen.
+- Personen mit einem Mitgliedschaftsstatus **Inactive** oder **Visitor** werden automatisch ausgeschlossen.
+- Personen, die sich **from the directory abgemeldet** haben, werden ausgeschlossen.
 - Alle anderen werden nach **Haushalt** gruppiert.
 
-## Verzeichnislayout
+## Verzeichnis-Layout
 
-Das Druckverzeichnis hat zwei Teile:
+Das gedruckte Verzeichnis hat zwei Teile:
 
 ### Titelseite
 
-Die erste Seite enthält:
+Die erste Seite umfasst:
 - Ihren Kirchennamen
-- Der Titel „Mitgliederverzeichnis"
+- Der Titel „Member Directory"
 - Das aktuelle Jahr
-- Den Standort Ihrer Kirche
-- Eine Anzahl der in Zusammenfassung enthaltenen Haushalte
+- Die Lage Ihrer Kirche
+- Eine Anzahl der insgesamt einbezogenen Haushalte
 
 ### Mitgliederlisten
 
 Die verbleibenden Seiten listen Haushalte alphabetisch nach Nachname auf. Jede Haushaltskarte zeigt:
 
-- **Fotos** – Zirkuläre Miniaturen für jedes Haushaltsmitglied mit Name unten
-- **Anzeigename des Haushalts** – Beispielsweise „Die Familie Smith", „John & Jane Doe" oder nur der Name der Person für Einzelpersonen
-- **Adresse** – Straße, Stadt, Bundesland und Postleitzahl
-- **Telefon** – Heim- oder Mobilnummer
-- **E-Mail** – Primäre E-Mail-Adresse
-- **Geburtstage** – Formatiert als einzelne Daten für jedes Haushaltsmitglied
-- **Jahrestag** – Falls aufgezeichnet
+- **Photos** — Zirkelförmige Miniaturen für jedes Haushaltsmitglied, mit ihrem Namen darunter
+- **Household display name** — Zum Beispiel „The Smith Family", „John & Jane Doe" oder nur der Name der Person für Einzelpersonen
+- **Address** — Straßenadresse, Stadt, Staat und Reißverschluss
+- **Phone** — Telefon- oder Mobilnummer
+- **Email** — Primäre E-Mail-Adresse
+- **Birthdays** — Formatiert als einzelne Daten für jedes Haushaltsmitglied
+- **Anniversary** — Wenn aufgezeichnet
 
-Haushalte werden in **alphabetischen Abschnitten** (A, B, C, ...) mit einer dekorativen Abschnittsüberschrift vor jeder Buchstabengruppe organisiert. Zwei Haushaltskarten befinden sich auf jeder Zeile nebeneinander.
+Haushalte werden in **alphabetische Abschnitte** organisiert (A, B, C, ...) mit einer dekorativen Abschnittsüberschrift vor jeder Buchstabengruppe. Zwei Haushaltskarten erscheinen nebeneinander in jeder Zeile.
 
 ## Druckeinstellungen
 
-Das Verzeichnis ist für **Briefpapier** (8,5" × 11") mit 0,5-Zoll-Rändern formatiert. Wenn das Druckdialogfeld Ihres Browsers angezeigt wird:
+Das Verzeichnis ist für **letter-size Papier** (8,5" × 11") mit 0,5-Zoll-Rändern formatiert. Wenn das Druckdialog Ihres Browsers angezeigt wird:
 
-- Lassen Sie die Papiergröße auf **Buchstabe** eingestellt
-- Aktivieren Sie **Hintergrundgrafiken** (manchmal „Hintergründe drucken" genannt) in den Druckeinstellungen Ihres Browsers, wenn Sie möchten, dass Abschnittsüberschriften mit ihrer Farbgestaltung gedruckt werden
-- Hochformatausrichtung wird empfohlen
+- Lassen Sie die Papiersize auf **Letter** eingestellt
+- Aktivieren Sie **Background graphics** (manchmal „Print backgrounds" genannt) in den Druckeinstellungen Ihres Browsers, wenn Sie möchten, dass Abschnittsüberschriften mit Farbgestaltung gedruckt werden
+- Hochformat wird empfohlen
 
 :::info
-Das Verzeichnis respektiert Seitenumbrüche – Haushaltskarten und Abschnittsüberschriften werden nicht über Seiten hinweg aufgeteilt.
+Das Verzeichnis respektiert Seitenumbrüche — Haushaltskarten und Abschnittsüberschriften werden nicht über Seiten aufgeteilt.
 :::
 
 ## Verwandte Artikel
 
-- [Personen durchsuchen](./searching-people.md) – Filtern Sie Ihr Verzeichnis vor dem Drucken
-- [Daten exportieren](./exporting-data.md) – Exportieren Sie Verzeichnisdaten stattdessen als Tabelle
-- [Personen hinzufügen](./adding-people.md) – Fügen Sie Mitgliedsdatensätze hinzu oder aktualisieren Sie sie
+- [Searching People](./searching-people.md) — filtern Sie Ihr Verzeichnis vor dem Drucken
+- [Exporting Data](./exporting-data.md) — exportieren Sie Verzeichnisdaten stattdessen als Tabelle
+- [Adding People](./adding-people.md) — fügen Sie Mitgliederdatensätze hinzu oder aktualisieren Sie sie

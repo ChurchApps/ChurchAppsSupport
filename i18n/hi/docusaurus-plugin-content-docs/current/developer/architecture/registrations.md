@@ -1,5 +1,5 @@
 ---
-title: "Event Registrations"
+title: "पंजीकरण"
 ---
 
 # Event Registrations

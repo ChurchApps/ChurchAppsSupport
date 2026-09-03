@@ -1,69 +1,59 @@
 ---
-title: "Départ et sécurité des enfants"
+title: "Sortie et Sécurité des Enfants"
 ---
 
-# Départ et sécurité des enfants
+# Sortie et Sécurité des Enfants
 
 <div class="article-intro">
 
-Le départ boucle le processus d'enregistrement des enfants : un parent présente le code de sécurité de son étiquette de récupération, le kiosque vérifie qui vient chercher l'enfant, et les enfants sont pris en charge pour le départ. Les postes encadrés bénéficient aussi d'outils de sécurité — vérification des personnes autorisées à récupérer les enfants, textos d'appel des parents, réimpression d'étiquettes de sécurité, et diffusion d'urgence.
+La sortie ferme la boucle du pointage des enfants : un parent présente le code de sécurité de son bordereau de récupération, la borne vérifie qui récupère, et les enfants sont sortis. Les stations mannequin reçoivent aussi des outils de sécurité — vérification de récupération de confiance, textos d'appel aux parents, réimpression d'étiquettes de sécurité, et une diffusion d'urgence.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Le départ est disponible sur les postes réglés en mode **encadré** dans les paramètres d'administration du kiosque
-- Les enfants doivent avoir été [enregistrés](./completing-checkin) avec une étiquette de récupération imprimée portant le code de sécurité
-- L'appel des parents et les diffusions d'urgence nécessitent que votre église ait un fournisseur de messagerie texte connecté dans B1 Admin
+- La sortie est disponible sur les stations définies sur le mode **mannequin** dans les paramètres d'admin de la borne
+- Les enfants doivent avoir été [pointés](./completing-checkin) avec un bordereau de récupération imprimé portant le code de sécurité
+- L'appel et la diffusion d'urgence nécessitent que votre église ait un fournisseur de textos connecté dans B1 Admin
 
 </div>
 
-## Démarrer un départ
+## Démarrage d'une Sortie
 
-1. Sur un poste encadré, appuyez sur **Départ** sur l'écran de recherche.
-2. Saisissez le **code de sécurité** à 4 caractères de l'étiquette de récupération de la famille. Vous pouvez le taper, utiliser le pavé numérique à l'écran, ou scanner le code-barres de l'étiquette avec un scanner USB ou Bluetooth — le code se soumet automatiquement une fois les 4 caractères saisis.
-3. Le kiosque affiche les enfants enregistrés sous ce code.
+1. Sur une station mannequin, appuyez sur **Sortir** sur l'écran de recherche.
+2. Entrez le **code de sécurité** à 4 caractères du bordereau de récupération de la famille. Vous pouvez le taper, utiliser le pavé numérique à l'écran, ou scanner le code-barres du bordereau avec un scanner USB ou Bluetooth — le code se soumet automatiquement une fois que tous les 4 caractères sont saisis.
+3. La borne affiche les enfants pointés sous ce code.
 
-## Vérifier qui vient chercher l'enfant
+## Vérification de Qui Récupère
 
-L'écran de départ demande qui vient chercher les enfants :
+L'écran de sortie demande qui récupère les enfants :
 
-- Les **personnes autorisées à récupérer** du foyer apparaissent comme des cartes sélectionnables avec leur photo et leur relation — appuyez sur la personne qui se trouve devant vous.
-- Les **adultes du foyer** apparaissent également dans une grille de photos.
-- **Autre** vous permet de saisir un nom pour quelqu'un qui n'est pas sur la liste.
+- Les **personnes autorisées à récupérer** pour le ménage apparaissent comme des cartes tapables avec leur photo et relation — appuyez sur la personne qui se tient devant vous.
+- Les **adultes du ménage** apparaissent aussi dans une grille de photos.
+- **Autre** vous permet de taper un nom pour quelqu'un ne figurant pas sur la liste.
 
-Si un nom saisi correspond à quelqu'un marqué **Non autorisé** pour ce foyer, le kiosque bloque le départ avec un avertissement. Un membre du personnel peut choisir **Passer outre** pour continuer quand même — la dérogation est enregistrée sur le dossier de présence avec le nom de la personne.
+Si un nom tapé correspond à quelqu'un marqué **Non Autorisé** pour ce ménage, la borne bloque la sortie avec un avertissement. Un membre du personnel peut choisir **Ignorer** pour continuer quand même — l'ignorance est enregistrée sur le dossier de participation avec le nom de la personne.
 
-Une fois la personne confirmée, appuyez sur départ. Le nom de la personne venant chercher l'enfant est enregistré avec le dossier de présence.
+Une fois le récupérateur confirmé, appuyez sur sortie. Le nom du récupérateur est stocké avec le dossier de participation.
 
 :::info
-Les personnes autorisées et non autorisées à récupérer les enfants sont gérées par le personnel de l'église sur la page de chaque personne dans B1 Admin — voir [Sécurité de l'enregistrement](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+Les personnes autorisées et non autorisées à récupérer sont gérées par le personnel de l'église sur la page de chaque personne dans B1 Admin — voir [Sécurité du Pointage](../../b1-admin/attendance/checkin-safety#personnes-autorisées-et-non-autorisées-à-récupérer).
 :::
 
-## Appeler un parent
+## Appel aux Parents
 
-Besoin d'un parent pendant le service — un changement de couche, un enfant qui pleure ? Depuis l'écran de départ d'un poste encadré, le personnel peut envoyer un **appel** : un message texte aux parents ou tuteurs de l'enfant via le fournisseur de messagerie texte de l'église. Les parents ayant refusé les textos ou n'ayant pas de numéro de mobile sont ignorés, et le kiosque affiche combien de messages ont été envoyés.
+Besoin d'un parent pendant le service — un changement de couche, un enfant qui pleure ? À partir de l'écran de sortie d'une station mannequin, le personnel peut envoyer un **appel** : un message texte aux parents ou tuteurs de l'enfant via le fournisseur de textos de l'église. Les parents qui se sont désinscrites des textos ou qui n'ont pas de numéro mobile sont ignorés, et la borne affiche combien de messages ont été envoyés.
 
-## Réimprimer des étiquettes
+## Réimpression d'Étiquettes
 
-Si une étiquette nominative ou de récupération est perdue ou endommagée, le personnel d'un poste encadré peut **réimprimer** les étiquettes de la famille depuis l'écran de départ après avoir saisi le code de sécurité. La réimpression utilise la même imprimante et les mêmes modèles d'étiquettes que l'enregistrement d'origine.
+Si un badge ou un bordereau de récupération est perdu ou endommagé, le personnel d'une station mannequin peut **réimprimer** les étiquettes de la famille à partir de l'écran de sortie après avoir entré le code de sécurité. La réimpression utilise la même imprimante et les mêmes modèles d'étiquettes que le pointage original.
 
-## Diffusion d'urgence
+## Diffusion d'Urgence
 
-En cas d'urgence, le personnel peut envoyer un texto aux tuteurs de **chaque enfant enregistré** pour le service en cours, tous en même temps :
+En cas d'urgence, le personnel peut envoyer un texto aux tuteurs de **chaque enfant pointé** pour le service actuel à la fois :
 
-1. Ouvrez les **paramètres d'administration** du kiosque (7 appuis rapides sur le logo de l'en-tête, plus le code PIN s'il y en a un).
+1. Ouvrez les **paramètres d'admin** de la borne (7 appuis rapides sur le logo de l'en-tête, plus le PIN s'il en est défini).
 2. Appuyez sur **Diffusion d'urgence**.
-3. Saisissez le message, puis tapez **EMERGENCY** dans le champ de confirmation — le bouton **Envoyer la diffusion** reste désactivé tant que vous ne l'avez pas fait.
-4. Le kiosque indique combien de téléphones ont reçu le message et combien de personnes ont été ignorées (refus ou absence de numéro de mobile).
-
-:::warning
-La diffusion est envoyée à chaque foyer enregistré pour le service sélectionné. Utilisez-la pour de véritables urgences — évacuations, confinements, intempéries sévères.
-:::
-
-## Articles associés
-
-- [Terminer l'enregistrement](./completing-checkin) — d'où proviennent les codes de sécurité et les étiquettes de récupération
-- [Sécurité de l'enregistrement](../../b1-admin/attendance/checkin-safety) — configurer les capacités, ratios, personnes autorisées à récupérer, et l'exigence de fournisseur de messagerie texte
-- [Configuration de l'imprimante](../getting-started/printer-setup) — configuration de l'imprimante d'étiquettes
+3. Entrez le message, puis tapez **URGENCE** dans le champ de confirmation — le bouton **Envoyer la diffusion** reste désactivé jusqu'à ce que vous le fassiez.
+4. La borne rapporte combien de téléphones ont reçu le message et combien de personnes ont été ignorées (se sont désinscrites ou n'ont pas de numéro mobile).

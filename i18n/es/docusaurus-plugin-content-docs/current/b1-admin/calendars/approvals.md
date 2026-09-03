@@ -11,7 +11,7 @@ La página de Aprobaciones es donde los administradores revisan y actúan sobre 
 </div>
 
 <div class="prereqs">
-<h4>Antes de comenzar</h4>
+<h4>Antes de Comenzar</h4>
 
 - Configura salas o recursos con un **Grupo de Aprobación** en [Salas y Recursos](rooms-resources)
 - Necesitas el permiso **Calendars Admin** o el permiso **content.edit**
@@ -36,7 +36,7 @@ Si dos solicitudes se superponen para la misma sala o recurso, aparece un icono 
 
 ### Aprobando o Rechazando
 
-Haz clic en el icono **✓** (aprobar) o **✗** (rechazar) en cualquier solicitud de reserva. El grupo solicitante es notificado de la decisión. Las reservas aprobadas se bloquean a esa sala o recurso para el evento; las reservas rechazadas liberan la ranura para otros.
+Haz clic en el icono **✓** (aprobar) o **✗** (rechazar) en cualquier solicitud de reserva. El grupo solicitante es notificado de la decisión. Las reservas aprobadas se bloquean a esa sala o recurso para el evento; las reservas rechazadas liberan el espacio para otros.
 
 ## Eventos Pendientes
 
@@ -46,7 +46,7 @@ Si tu flujo de trabajo de calendario requiere aprobación de evento antes de que
 Configura un Grupo de Aprobación en una sala en [Salas y Recursos](rooms-resources) para requerir aprobación para esa sala. Los grupos con acceso pueden entonces solicitar la sala al crear eventos, y esas solicitudes fluyen a esta página.
 :::
 
-## Artículos relacionados
+## Artículos Relacionados
 
-- [Salas, Recursos e Programación](rooms-resources) — configura salas y recursos reservables
-- [Creando Calendarios](creating-calendars) — administra calendarios y eventos
+- [Salas, Recursos y Programación](rooms-resources) — configura salas y recursos reservables
+- [Crear Calendarios](creating-calendars) — administra calendarios y eventos

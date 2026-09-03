@@ -18,7 +18,7 @@ El panel de Salud de Grupos te da una vista panorámica de cómo están yendo to
 
 </div>
 
-## Abrir Salud de Grupos
+## Abriendo Salud de Grupos
 
 En B1 Admin, abre el **menú de sección** en la esquina superior izquierda y elige **Personas**, luego haz clic en la pestaña **Grupos** en la barra de navegación y selecciona **Salud**. El panel carga una tabla con una fila por grupo.
 
@@ -32,14 +32,14 @@ En B1 Admin, abre el **menú de sección** en la esquina superior izquierda y el
 | **Se Unieron (90d)** | Miembros que se unieron en los últimos 90 días |
 | **Se Fueron (90d)** | Miembros que se fueron en los últimos 90 días |
 | **Desgaste (90d)** | Tasa de desgaste neto como porcentaje durante 90 días |
-| **Asistencia Promedio** | Asistencia promedio por sesión de asistencia |
+| **Asist. Promedio** | Promedio de asistencia por sesión de asistencia |
 
 Haz clic en cualquier encabezado de columna para ordenar la tabla por esa columna. Haz clic nuevamente para invertir la dirección de clasificación.
 
-## Usar Datos de Salud
+## Usando Datos de Salud
 
-- **Desgaste alto + incorporaciones bajas** — un grupo que se está reduciendo y no está reemplazando a miembros perdidos. Vale la pena tener una conversación con el líder del grupo.
-- **Incorporaciones altas + asistencia baja** — la gente se está registrando pero no se muestra. Considera seguimiento de participación.
+- **Desgaste alto + ingresos bajos** — un grupo que se está reduciendo y no está reemplazando a miembros perdidos. Vale la pena tener una conversación con el líder del grupo.
+- **Ingresos altos + asistencia baja** — la gente se está registrando pero no se presenta. Considera seguimiento de participación.
 - **Asistencia promedio alta** — un grupo saludable y activo. Modelo potencial para otros grupos.
 
 :::tip
@@ -49,5 +49,5 @@ Hacer clic en un nombre de grupo te lleva directamente a la página de detalle d
 ## Artículos Relacionados
 
 - [Crear Grupos](creating-groups) — configura grupos
-- [Miembros del Grupo](group-members) — administra membresía del grupo
+- [Miembros del Grupo](group-members) — administra la membresía del grupo
 - [Rastrear Asistencia](../attendance/tracking-attendance) — registra sesiones de asistencia que alimentan este panel

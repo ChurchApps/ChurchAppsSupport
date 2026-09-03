@@ -1,52 +1,52 @@
 ---
-title: "Mga Pag-aprubahan sa Kalendaryo"
+title: "Calendar Approvals"
 ---
 
-# Mga Pag-aprubahan sa Kalendaryo
+# Calendar Approvals
 
 <div class="article-intro">
 
-Ang Approvals page ay kung saan ang mga administrator ay sinusuri at kumilos sa mga pending na booking request ng kwarto at mapagkukunan, pati na rin ang mga kaganapan sa kalendaryo na nangangailangan ng pagsang-ayon bago ang paglalathala.
+Ang Approvals page ay kung saan ang mga administrator ay sinusuri at kumikilos sa pending room at resource booking requests, pati na rin ang mga calendar event na nangangailangan ng approval bago ang pag-publish.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Magsimula</h4>
 
-- I-configure ang mga kwarto o mapagkukunan na may **Approval Group** sa [Mga Kwarto at Mapagkukunan](rooms-resources)
-- Kailangan mo ng **Calendars Admin** na pahintulot o ang **content.edit** na pahintulot
+- I-configure ang mga kwarto o resource na may **Approval Group** sa [Rooms & Resources](rooms-resources)
+- Kailangan mo ang **Calendars Admin** permission o ang **content.edit** permission
 
 </div>
 
-## Pagbubukas ng Mga Pag-aprubahan
+## Pagbubukas ng Approvals
 
-Sa B1 Admin, pumunta sa **Calendars** at piliin ang **Approvals**. Ang mga pending na booking request at mga kaganapang naghihintay ng review ay nakalista dito.
+Sa B1 Admin, pumunta sa **Calendars** at piliin ang **Approvals**. Ang mga pending booking request at mga event na naghihintay ng review ay nakalista dito.
 
-## Mga Booking Request
+## Booking Requests
 
-Kapag lumilikha ang isang grupo ng isang kaganapan at humihiling ng isang kwarto o mapagkukunan, ang hiling ay lumalabas sa **Booking Requests** panel. Ang bawat row ay nagpapakita:
+Kapag ang isang group ay lumilikha ng isang event at nagsisikap ng isang kwarto o resource, ang request ay lumilitaw sa **Booking Requests** panel. Bawat row ay nagpapakita ng:
 
-- Ang kwarto o mapagkukunan na hinihiling
-- Ang pangalan at petsa/oras ng kaganapan
-- Ang humihiling na grupo
+- Ang kwarto o resource na ine-request
+- Ang event name at date/time
+- Ang requesting group
 
-### Mga Conflict Indicator
+### Conflict Indicators
 
-Kung ang dalawang hiling ay magkakatagpo para sa parehong kwarto o mapagkukunan, isang conflict warning icon ay lumalabas. Suriin nang mabuti ang mga conflicting request bago aprubahan ang isa.
+Kung ang dalawang request ay magkasalubong para sa parehong kwarto o resource, isang conflict warning icon ay lumalabas. Sinusuri nang mabuti ang mga conflicting request bago aprubahan ang kahit alin.
 
-### Pag-aprubahan o Pag-reject
+### Aprubahan o Tanggihan
 
-Mag-click sa **✓** (aprubahan) o **✗** (reject) icon sa anumang booking request. Ang humihiling na grupo ay sinasabihan ng desisyon. Ang mga aprubadong booking ay nakalock sa kwarto o mapagkukunang iyon para sa kaganapan; ang mga rejected booking ay nagpapahintulot sa slot para sa iba.
+I-click ang **✓** (aprubahan) o **✗** (tanggihan) icon sa anumang booking request. Ang requesting group ay nabe-notify ng desisyon. Ang mga aprubadong booking ay naka-lock sa kwartong iyon o resource para sa event; ang mga tinanggihang booking ay nagbabakod ng slot para sa iba.
 
-## Mga Pending Event
+## Pending Events
 
-Kung ang iyong workflow ng kalendaryo ay nangangailangan ng event approval bago ang mga kaganapan ay maging nakikita ng publiko, ang mga pending event ay lumalabas sa **Pending Events** panel. Aprubahan ang isang kaganapan upang ilathala ito sa kalendaryo, o tanggihan ito upang iabiso ang nagpadala na kailangan ng mga pagbabago.
+Kung ang iyong calendar workflow ay nangangailangan ng event approval bago ang mga event ay nagiging makikita sa publiko, ang pending event ay lumilitaw sa **Pending Events** panel. Aprubahan ang isang event upang i-publish ito sa calendar, o tanggihan ito upang mag-notify sa submitter na kailangan ng mga pagbabago.
 
 :::tip
-I-set up ang Approval Group sa isang kwarto sa [Mga Kwarto at Mapagkukunan](rooms-resources) upang mangailangan ng pag-aprubahan para sa kwartong iyon. Ang mga grupo na may access ay maaaring humiling ng kwarto kapag lumilikha ng mga kaganapan, at ang mga hiling na iyon ay umuusbong sa pahinang ito.
+I-setup ang isang Approval Group sa isang kwarto sa [Rooms & Resources](rooms-resources) upang magsikap ng approval para sa kwartong iyon. Ang mga group na may access ay maaaring magsikap ng kwarto kapag lumilikha ng mga event, at ang mga request na ito ay dumadaloy sa pahinang ito.
 :::
 
 ## Mga Kaugnay na Artikulo
 
-- [Mga Kwarto, Mapagkukunan at Pag-schedule](rooms-resources) -- i-configure ang mga bookable na kwarto at mapagkukunan
-- [Paglikha ng mga Kalendaryo](creating-calendars) -- pamahalaan ang mga kalendaryo at kaganapan
+- [Rooms, Resources & Scheduling](rooms-resources) — i-configure ang mga bookable rooms at resources
+- [Creating Calendars](creating-calendars) — pamahalaan ang mga calendar at event

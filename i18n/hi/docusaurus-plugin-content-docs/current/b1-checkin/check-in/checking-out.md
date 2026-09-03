@@ -1,5 +1,5 @@
 ---
-title: "Checking Out & Child Safety"
+title: "चेक-आउट और बाल सुरक्षा"
 ---
 
 # Checking Out & Child Safety

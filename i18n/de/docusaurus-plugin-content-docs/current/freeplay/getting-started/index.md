@@ -6,22 +6,22 @@ title: "Erste Schritte mit FreePlay"
 
 <div class="article-intro">
 
-FreePlay ist für Android TV, Amazon Fire TV und Apple TV verfügbar. Diese Anleitung führt Sie durch die Installation der App, das erste Starten und das Erlernen der grundlegenden TV-Fernbedienungssteuerungen, die Sie in der gesamten App verwenden.
+FreePlay ist für Android TV, Amazon Fire TV und Apple TV verfügbar. Diese Anleitung führt Sie durch die Installation der App, den Start beim ersten Mal und das Erlernen der grundlegenden Fernbedienungs-Steuerungen, die Sie in der ganzen App verwenden werden.
 
 </div>
 
-:::tip Neu bei FreePlay? Starten Sie hier
-Schauen Sie sich unser **<a href="/guides/freeplay-quickstart" target="_blank">Schnellstart-Video</a>** an – installieren Sie FreePlay und starten Sie in wenigen Minuten mit Inhalten. Keine technischen Fähigkeiten erforderlich.
+:::tip Neu bei FreePlay? Fangen Sie hier an
+Schauen Sie sich unser **<a href="/guides/freeplay-quickstart" target="_blank">Quick-Start-Video</a>** an – installieren Sie FreePlay und spielen Sie in wenigen Minuten Inhalte. Keine technischen Fähigkeiten erforderlich.
 :::
 
-:::tip Mit B1 Admin einrichten?
-Unser **<a href="/guides/freeplay-b1admin" target="_blank">Schritt-für-Schritt-Leitfaden</a>** behandelt die vollständige Konfiguration – vom Verknüpfen von Inhalts-Providern bis zum automatischen Herunterladen der richtigen Lektion jede Woche auf Ihren Klassenzimmer-Fernseher.
+:::tip Setup mit B1 Admin?
+Unser **<a href="/guides/freeplay-b1admin" target="_blank">Schritt-für-Schritt-Anleitung</a>** deckt den vollständigen Setup ab – von der Verknüpfung von Inhaltsanbietern bis zur automatischen Download der richtigen Lektion in Ihr Klassenzimmer-TV jede Woche.
 :::
 
-## FreePlay installieren
+## Installieren von FreePlay
 
-:::tip Ein Gerät kaufen?
-Nicht alle Streaming-Sticks können FreePlay ausführen – die neuesten Budget-Fire-TV-Modelle können es nicht. Siehe **[Auswahl eines Geräts](./choosing-a-device.md)**, um genau zu wissen, was zu kaufen ist.
+:::tip Kaufen eines Geräts?
+Nicht alle Streaming-Sticks können FreePlay ausführen – die neuesten Budget-Fire-TV-Modelle können nicht. Siehe **[Wählen eines Geräts](./choosing-a-device.md)** für genau, was zu kaufen ist.
 :::
 
 ### Android TV / Amazon Fire TV
@@ -32,29 +32,29 @@ Nicht alle Streaming-Sticks können FreePlay ausführen – die neuesten Budget-
 
 ### Apple TV
 
-1. Öffnen Sie den **App Store** auf Ihrem Apple TV
+1. Öffnen Sie die **App Store** auf Ihrem Apple TV
 2. Suchen Sie nach **FreePlay**
-3. Wählen Sie die App und wählen Sie **Get**
+3. Wählen Sie die App und wählen Sie **Herunterladen**
 
-## Die App starten
+## Starten der App
 
-Wenn Sie FreePlay zum ersten Mal öffnen, werden Sie einen animierten Splash-Screen mit dem FreePlay-Logo sehen. Die App prüft auf alle zuvor verbundenen Inhalts-Provider. Wenn Sie bereits einen Provider verbunden haben, werden Sie direkt zum Inhaltsbrowser dieses Providers gebracht. Andernfalls wird die Seite **Inhalts-Provider** geöffnet, wo Sie Ihre erste Inhaltsquelle verbinden können.
+Wenn Sie FreePlay zum ersten Mal öffnen, sehen Sie einen animierten Begrüßungsbildschirm mit dem FreePlay-Logo. Die App prüft auf alle zuvor verbundenen Inhaltsanbieter. Wenn Sie bereits einen Anbieter verbunden haben, gelangen Sie direkt zu dem Inhalts-Browser des Anbieters. Andernfalls wird der Bildschirm **Content-Anbieter** geöffnet, auf dem Sie Ihre erste Inhaltsquelle verbinden können.
 
-## Navigieren mit Ihrer Fernbedienung
+## Navigation mit Ihrer TV-Fernbedienung
 
-FreePlay ist für Fernbedienungen gebaut. Hier sind die Steuerungen, die Sie in der gesamten App verwenden:
+FreePlay ist für Fernbedienungen gebaut. Hier sind die Steuerungen, die Sie in der ganzen App verwenden werden:
 
-- **Richtungs-Pad (oben/unten/links/rechts)** - Zwischen Elementen auf dem Bildschirm bewegen
-- **Schaltfläche wählen / OK** - Das hervorgehobene Element auswählen
-- **Linker Pfeil** - Die Seitenleiste von jedem Bildschirm öffnen
-- **Rechter Pfeil** - Die Seitenleiste schließen und zur Hauptinhalts-Fläche zurückkehren
-- **Zurück- / Menü-Schaltfläche** - Zur vorherigen Seite zurückgehen
+- **Richtungspad (oben/unten/links/rechts)** – Zwischen Elementen auf dem Bildschirm verschieben
+- **Wählen / OK-Knopf** – Wählen Sie das hervorgehobene Element
+- **Linker Pfeil** – Öffnen Sie die Seitenleiste von einem beliebigen Bildschirm
+- **Rechter Pfeil** – Schließen Sie die Seitenleiste und kehren Sie zum Hauptinhaltsbereich zurück
+- **Zurück / Menü-Knopf** – Gehen Sie zum vorherigen Bildschirm zurück
 
 :::tip
-Die Seitenleiste bricht zu einem schmalen Symbol-Streifen zusammen, wenn Sie Inhalte durchsuchen. Drücken Sie den linken Pfeil auf Ihrer Fernbedienung, um ihn zu erweitern und die vollständigen Beschriftungen zu sehen.
+Die Seitenleiste bricht zu einem engen Strip von Icons zusammen, wenn Sie Inhalte durchsuchen. Drücken Sie die linke Pfeiltaste auf Ihrer Fernbedienung, um es zu erweitern und die vollständigen Etiketten zu sehen.
 :::
 
-## Was weiter
+## Weiter
 
-- **[Auswahl eines Pairing-Modus](./pairing-modes)** - Erfahren Sie mehr über die verschiedenen Wege, um Ihren Fernseher zu verbinden
-- **[Inhalts-Provider](../content-providers/)** - Verbinden Sie mit Lessons.church, Bible Project und mehr
+- **[Wählen eines Paarungsmodus](./pairing-modes)** – Erfahren Sie von den verschiedenen Wege, Ihren Fernseher zu verbinden
+- **[Inhaltsanbieter](../content-providers/)** – Verbinden Sie sich mit Lessons.church, Bible Project und mehr

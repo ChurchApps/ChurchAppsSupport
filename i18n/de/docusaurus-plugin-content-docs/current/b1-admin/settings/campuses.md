@@ -1,71 +1,71 @@
 ---
-title: "Standorte"
+title: "Campuses"
 ---
 
-# Standorte
+# Campuses
 
 <div class="article-intro">
 
-Wenn Ihre Kirche sich an mehr als einem Ort trifft, ermöglichen **Standorte** es Ihnen, zu verfolgen, welcher Standort jede Person und Gruppe angehört. Nach der Konfiguration werden Standorte als Option auf Personenprofilen, in der Anwesenheit-Einrichtung und im Demografiedashboard angezeigt. Multi-Standort-Kirchen können nach Standort während B1 Admin filtern, suchen und berichten.
+Wenn sich Ihre Kirche an mehr als einem Ort trifft, ermöglichen **Campuses** es Ihnen zu verfolgen, welcher Standort jeder Person und Gruppe gehört. Nach der Konfiguration werden Campuses als Option in Personenprofilen, in der Anwesenheitseinrichtung und im Demographics-Dashboard angezeigt. Multi-Site-Kirchen können über B1 Admin nach Campus filtern, suchen und berichten.
 
 </div>
 
 <div class="prereqs">
-<h4>Voraussetzungen</h4>
+<h4>Vor dem Start</h4>
 
-- Sie benötigen die Berechtigung **Kircheneinstellungen bearbeiten**, um Standorte zu verwalten. Siehe [Rollen & Berechtigungen](./roles-permissions.md).
+- Sie benötigen die Berechtigung **Edit Church Settings**, um Campuses zu verwalten. Siehe [Roles & Permissions](./roles-permissions.md).
 
 </div>
 
-## Öffnen von Standort-Einstellungen
+## Öffnen der Campus-Einstellungen
 
-Öffnen Sie in B1 Admin das **Bereichsmenü** in der oberen linken Ecke (der Bereichsname mit dem kleinen Pfeil), wählen Sie **Einstellungen** und wählen Sie **Standorte** aus der Navigationsleiste "Einstellungen". Sie sehen eine Liste aller konfigurierten Standorte mit ihrem Namen, Ort und Zeitzone.
+Öffnen Sie in B1 Admin das **Bereichsmenü** in der oberen linken Ecke (der Bereichsname mit dem kleinen Pfeil), wählen Sie **Settings** und wählen Sie **Campuses** in der Settings-Navigation. Sie sehen eine Liste aller konfigurierten Campuses mit ihrem Namen, Ort und Zeitzone.
 
-## Hinzufügen eines Standorts
+## Hinzufügen eines Campus
 
-1. Klicken Sie auf **Standort hinzufügen** (oder die **+**-Schaltfläche, wenn noch keine Standorte vorhanden sind).
-2. Füllen Sie die Standortdetails aus:
-   - **Name** *(erforderlich)* -- der Anzeigename, der während B1 Admin angezeigt wird (z.B. "Hauptstandort" oder "Nordstandort").
-   - **Adresse** -- die Straßenadresse des Standorts (verwendet für informative Anzeige; nicht die gleiche wie Ihre Hauptkirchenadresse in Kircheneinstellungen).
-   - **Stadt / Bundesstaat / Postleitzahl** -- der Standortort.
-   - **Zeitzone** -- die IANA-Zeitzone für diesen Standort (z.B. *America/Chicago*). Nützlich, wenn sich Standorte in verschiedenen Zeitzonen befinden.
-   - **Website** -- eine optionale URL für den eigenen Online-Präsenz dieses Standorts.
-3. Klicken Sie auf **Speichern**.
+1. Klicken Sie auf **Add Campus** (oder die Schaltfläche **+**, wenn noch keine Campuses vorhanden sind).
+2. Füllen Sie die Campus-Details aus:
+   - **Name** *(erforderlich)* — der Anzeigename, der in B1 Admin angezeigt wird (z. B. „Main Campus" oder „North Campus").
+   - **Address** — die Straßenadresse des Campus (wird zu Informationszwecken verwendet; nicht identisch mit Ihrer Hauptkirchenadresse in Church Settings).
+   - **City / State / Zip** — der Campus-Standort.
+   - **Timezone** — die IANA-Zeitzone für diesen Campus (z. B. *America/Chicago*). Nützlich, wenn sich Campuses in verschiedenen Zeitzonen befinden.
+   - **Website** — eine optionale URL für die eigene Webseite dieses Campus.
+3. Klicken Sie auf **Save**.
 
-## Bearbeiten eines Standorts
+## Bearbeiten eines Campus
 
-Klicken Sie auf eine beliebige Standortreihe in der Liste, um seinen Editor im Panel auf der rechten Seite zu öffnen. Aktualisieren Sie die Felder und klicken Sie auf **Speichern**.
+Klicken Sie auf eine beliebige Campus-Zeile in der Liste, um seinen Editor im Bereich auf der rechten Seite zu öffnen. Aktualisieren Sie die Felder und klicken Sie auf **Save**.
 
-## Löschen eines Standorts
+## Löschen eines Campus
 
-Öffnen Sie einen Standort zur Bearbeitung und klicken Sie auf **Löschen**. Sie werden aufgefordert, zu bestätigen. Das Löschen eines Standorts entfernt nicht die Personen, die ihm zugewiesen sind -- ihr Standortfeld wird einfach leer.
+Öffnen Sie einen Campus zum Bearbeiten und klicken Sie auf **Delete**. Sie werden aufgefordert, zu bestätigen. Das Löschen eines Campus entfernt nicht die Personen, die ihm zugewiesen sind — ihr Campus-Feld wird einfach leer.
 
-## Zuweisen von Personen zu einem Standort
+## Zuweisen von Personen zu einem Campus
 
-Nach dem Erstellen von Standorten können Mitarbeiter eine Person einem Standort aus ihrem Profil zuweisen:
+Nach dem Erstellen von Campuses können Mitarbeiter eine Person einem Campus aus ihrem Profil zuweisen:
 
-1. Öffnen Sie einen Personendatensatz in **Personen**.
-2. Klicken Sie auf **Bearbeiten**.
-3. Wählen Sie den Standort aus dem **Standort**-Dropdown.
-4. Klicken Sie auf **Speichern**.
+1. Öffnen Sie einen Personendatensatz in **People**.
+2. Klicken Sie auf **Edit**.
+3. Wählen Sie den Campus aus dem Dropdown **Campus**.
+4. Klicken Sie auf **Save**.
 
-Sie können den Standort auch in Massen aus der Seite "Personen" aktualisieren. Wählen Sie mehrere Personen, verwenden Sie **Massen-Bearbeitung** und stellen Sie das Standortfeld für alle gleichzeitig ein.
+Sie können auch den Campus in großen Mengen von der Personenseite aktualisieren. Wählen Sie mehrere Personen, verwenden Sie **Bulk Edit** und legen Sie das Feld Campus für alle auf einmal fest.
 
-## Filtern nach Standort
+## Filtern nach Campus
 
-Nachdem Standorte eingerichtet sind, können Sie über B1 Admin nach Standort filtern:
+Nach dem Einrichten von Campuses können Sie in B1 Admin nach Campus filtern:
 
-- **Personensuche** -- Fügen Sie eine Standortbedingung in der erweiterten Suche hinzu, oder laden Sie eine [gespeicherte Liste](../people/lists.md) mit Standort-Umfang.
-- **Demografie** -- Das [Demografiedashboard](../people/demographics.md) zeigt ein Standort-Kuchen-Diagramm, wenn mindestens eine Person einen Standort zugewiesen hat.
-- **Anwesenheit-Einrichtung** -- jede Dienstleistungszeit in der Anwesenheit kann an einen Standort gebunden sein.
+- **People search** — fügen Sie eine Campus-Bedingung in der erweiterten Suche hinzu, oder laden Sie eine [Saved List](../people/lists.md), die auf einen Campus beschränkt ist.
+- **Demographics** — das [Demographics dashboard](../people/demographics.md) zeigt ein Campus-Donut-Diagramm, wenn mindestens eine Person einem Campus zugewiesen hat.
+- **Attendance Setup** — jede Servicezeit in Attendance kann an einen Campus gebunden werden.
 
 :::tip
-Single-Location-Kirchen müssen Standorte nicht konfigurieren. Alle Standort-Funktionen sind optional -- wenn keine Standorte vorhanden sind, erscheinen Standortfelder und Diagramme einfach nicht.
+Einzelstandort-Kirchen müssen Campuses nicht konfigurieren. Alle Campus-Funktionen sind optional — wenn keine Campuses vorhanden sind, werden Campus-Felder und -Diagramme einfach nicht angezeigt.
 :::
 
 ## Verwandte Artikel
 
-- [Kircheneinstellungen](./church-settings.md) -- Ihre Hauptkirchenadresse und Branding (separate von Standortadressen)
-- [Demografie](../people/demographics.md) -- das Standort-Aufschlüsselungs-Diagramm
-- [Anwesenheit-Einrichtung](../attendance/setup.md) -- Verbinden Sie Dienstleistungszeiten mit einem Standort
-- [Massen-Bearbeitung](../people/bulk-editing.md) -- Weisen Sie den Standort vielen Personen gleichzeitig zu
+- [Church Settings](./church-settings.md) — Ihre Hauptkirchenadresse und Branding (getrennt von Campus-Adressen)
+- [Demographics](../people/demographics.md) — das Campus-Aufschlüsselungs-Diagramm
+- [Attendance Setup](../attendance/setup.md) — verknüpfen Sie Servicezeiten mit einem Campus
+- [Bulk Editing](../people/bulk-editing.md) — weisen Sie Campus vielen Personen auf einmal zu

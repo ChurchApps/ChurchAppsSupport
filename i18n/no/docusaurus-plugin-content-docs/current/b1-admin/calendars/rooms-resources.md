@@ -6,76 +6,77 @@ title: "Rom, ressurser og planlegging"
 
 <div class="article-intro">
 
-Rom og ressurser lar deg spore kirkens bookbare rom og utstyr. Når en gruppe eller et team vil bruke et rom eller låne en ressurs til et arrangement, kan de be om det gjennom B1 – og du kan godkjenne eller avslå disse forespørslene for å forhindre dobbelreservering.
+Rom og ressurser lar deg spore kirkens bookbare områder og utstyr. Når en gruppe eller team ønsker å bruke et rom eller låne en ressurs for et arrangement, kan de be om det gjennom B1 — og du kan godkjenne eller avslå disse forespørslene for å forhindre dobbelbooking.
 
 </div>
 
 <div class="prereqs">
-<h4>Før du begynner</h4>
+<h4>Før du starter</h4>
 
-- Du må ha administratortilgang til Kalendere-delen i B1 Admin
-- Sett opp [grupper](../groups/creating-groups) hvis medlemmer vil sende bookingforespørsler
+- Du trenger administratortilgang til Kalender-seksjonen i B1 Admin
+- Sett opp [grupper](../groups/creating-groups) hvis medlemmer vil sende bookingsforespørsler
 
 </div>
 
-## Åpne rom og ressurser
+## Åpning av Rom & ressurser
 
-I B1 Admin går du til **Kalendere** og velger **Rom & ressurser**. Siden har fire faner: **Rom**, **Ressurser**, **Blokeringer** og **Maler**.
+I B1 Admin går du til **Kalendere** og velger **Rom & ressurser**. Siden har fire faner: **Rom**, **Ressurser**, **Blokkader**, og **Maler**.
 
 ## Rom
 
-Rom er fysiske rom som kan reserveres sammen med kalenderarrangementer – en alter, et fellesskap, klasserom osv.
+Rom er fysiske områder som kan reserveres sammen med kalenderarrangementer — et santuarium, en fellesskapshall, et klasseromaak, etc.
 
 ### Legge til et rom
 
-1. I fanen **Rom** klikker du **Legg til rom**.
+1. Klikk **Legg til rom** på **Rom**-fanen.
 2. Skriv inn et **navn** for rommet.
-3. Angi eventuelt en **kapasitet** (maksimalt antall personer).
-4. Sett en **godkjenningsgruppe** – når en gruppe ber om dette rommet, blir lederne i den valgte gruppen underrettet og må godkjenne bookingen. La det være tomt hvis ingen godkjenning er nødvendig.
+3. Angi eventuelt en **kapasitet** (maksimalt antall mennesker).
+4. Sett en **godkjennelsesgruppe** — når en gruppe ber om dette rommet, får gruppens ledere beskjed og må godkjenne bookingen. La det stå tomt hvis ingen godkjenning er nødvendig.
 5. Klikk **Lagre**.
 
-### Redigere eller slette et rom
+### Redigering eller sletting av et rom
 
-Klikk redigeringsikonet ved siden av et rom, gjør endringene dine og klikk **Lagre**. Bruk **Slett** for å permanentslette et rom.
+Klikk redigeringsikonet ved siden av et room, gjør endringene dine, og klikk **Lagre**. Bruk **Slett** for å fjerne et rom permanent.
 
 ## Ressurser
 
-Ressurser er gjenstander som kan bestilles sammen med et arrangement – AV-utstyr, projektorer, stoler, en varebil osv.
+Ressurser er gjenstander som kan bookes sammen med et arrangement — AV-utstyr, projektorer, stoler, en varebil, etc.
 
 ### Legge til en ressurs
 
-1. Klikk fanen **Ressurser**, deretter **Legg til ressurs**.
+1. Klikk på **Ressurser**-fanen, deretter **Legg til ressurs**.
 2. Skriv inn et **navn** og eventuelt en **beskrivelse**.
-3. Sett en **godkjenningsgruppe** hvis noen må godkjenne ressurslån.
+3. Sett en **godkjennelsesgruppe** hvis noen trenger å skrive under på ressurslån.
 4. Klikk **Lagre**.
 
-## Blokeringer
+## Blokkader
 
-Blokeringer forhindrer rom eller ressurser fra å bli bestilt i bestemte tider – ved renoveringer, reserverte perioder eller vedlikehold.
+Blokkader forhindrer rom eller ressurser fra å bli booket på visse tidspunkter — for renoveringer, reserverte perioder, eller vedlikehold.
 
-### Legge til en blokerig
+### Legge til en blokkade
 
-1. Klikk fanen **Blokeringer**, deretter **Legg til blokerig**.
-2. Velg om du vil blokkere et **Rom**, en **Ressurs** eller alle rom og ressurser.
-3. Sett **start**- og **slutt**-dato/tidspunkt for blokkeringen.
-4. Legg eventuelt til en **årsak**-merknad.
+1. Klikk på **Blokkader**-fanen, deretter **Legg til blokkade**.
+2. Velg om du skal blokkere et **Rom**, en **Ressurs**, eller alle rom og ressurser.
+3. Sett **start**- og **slutt**-dato/klokkeslett for blokkaden.
+4. Legg eventuelt til en **grunn**-notat.
 5. Klikk **Lagre**.
 
-## Arrangementsmaler
+## Arrangementmaler
 
-Maler lar deg lagre en gjenbrukbar arrangementskonfigurasjon – tittel, beskrivelse og tilknyttede grupper – slik at gjentakende arrangementer kan opprettes konsekvent.
+Maler lar deg lagre en gjenbrukbar arrangementkonfigurasjon — tittel, beskrivelse og tilknyttede grupper — slik at tilbakevendende arrangementer kan opprettes konsistent.
 
 ### Legge til en mal
 
-1. Klikk fanen **Maler**, deretter **Legg til mal**.
+1. Klikk på **Maler**-fanen, deretter **Legg til mal**.
 2. Skriv inn et **navn** for malen.
-3. Lenk eventuelt en **gruppe** slik at arrangementet automatisk knyttet til den gruppen når det opprettes fra malen.
+3. Lenke eventuelt en **gruppe** slik at arrangementet automatisk blir koblet til den gruppen når det opprettes fra malen.
 4. Klikk **Lagre**.
 
-Når personalet oppretter et nytt arrangement, kan de velge en eksisterende mal for å fylle ut arrangementstdetaljene på forhånd.
+Når du oppretter et nytt arrangement, kan personalet velge en eksisterende mal for å forhåndsutfylle arrangementdetaljer.
 
 ## Relaterte artikler
 
-- [Godkjenninger av kalender](approvals) – godkjenn eller avvis rom- og ressursbookingforespørsler
-- [Opprette kalendere](creating-calendars) – sett opp arrangementskaldendere
-- [Opprette grupper](../groups/creating-groups) – sett opp grupper som kan bestille rom og ressurser
+- [Tilgjengelighetkalender](availability) — se alle bookinger på en gang og book rom eller ressurser direkte
+- [Kalender-godkjenninger](approvals) — godkjenn eller avslå rom- og ressursbookingsforespørsler
+- [Opprette kalendere](creating-calendars) — sett opp arrangementalendere
+- [Opprette grupper](../groups/creating-groups) — sett opp grupper som kan booke rom og ressurser

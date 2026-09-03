@@ -11,7 +11,7 @@ El Calendario de Disponibilidad te da una vista de pájaro de todas las reservas
 </div>
 
 <div class="prereqs">
-<h4>Antes de comenzar</h4>
+<h4>Antes de Comenzar</h4>
 
 - Configura al menos una [sala o recurso](rooms-resources) en la sección Salas y Recursos
 - Necesitas acceso de edición a la sección Calendarios en B1 Admin
@@ -38,7 +38,7 @@ Pasar el ratón sobre un evento muestra el título del evento y la sala o recurs
 
 ## Filtrando por Sala o Recurso
 
-Usa el dropdown **Filtro** en la esquina superior izquierda para reducir el calendario a una sola sala o recurso. Selecciona **Todas las Salas y Recursos** para volver a la vista completa.
+Usa el menú **Filtro** en la esquina superior izquierda para reducir el calendario a una sola sala o recurso. Selecciona **Todas las Salas y Recursos** para volver a la vista completa.
 
 ## Reservando una Sala o Recurso
 
@@ -65,8 +65,8 @@ Si la sala o recurso tiene un **Grupo de Aprobación** configurado, la reserva a
 El calendario destacará cualquier conflicto antes de que guardes. Si ves una advertencia de conflicto, ajusta tus tiempos o elige una sala diferente.
 :::
 
-## Artículos relacionados
+## Artículos Relacionados
 
-- [Salas, Recursos e Programación](rooms-resources) — configura espacios y equipos reservables
+- [Salas, Recursos y Programación](rooms-resources) — configura espacios y equipos reservables
 - [Aprobaciones de Calendario](approvals) — aprueba o deniega solicitudes de reserva
-- [Creando Calendarios](creating-calendars) — administra calendarios de eventos
+- [Crear Calendarios](creating-calendars) — administra calendarios de eventos

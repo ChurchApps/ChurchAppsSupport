@@ -1,80 +1,80 @@
 ---
-title: "Mga Reminder ng Kaganapan"
+title: "Event Reminders"
 ---
 
-# Mga Reminder ng Kaganapan
+# Event Reminders
 
 <div class="article-intro">
 
-Ang mga reminder ng kaganapan ay awtomatikong nagbibigay ng mensahe sa tamang mga tao bago ang isang kaganapan — halimbawa, "Huwag palampasin ito! Ang healthcare workshop ay magsisimula bukas sa 9:00 AM." I-configure mo ang isang reminder nang isang beses sa kaganapan, at ang B1 ay ipinapadala ito ayon sa iskedyul sa pamamagitan ng push notifications at email. Ang mga miyembro ay maaaring kontrolin kung aling mga reminder ang kanilang natatanggap mula sa kanilang sariling [Notification Preferences](../../b1-church/getting-started/notification-preferences).
+Ang mga event reminder ay awtomatikong nagbibigay ng abiso sa tamang mga tao bago ang isang event ay mangyari -- halimbawa, "Huwag palampasin! Ang healthcare workshop ay magsisimula bukas sa 9:00 AM." Isa kang nag-configure ng reminder sa event, at ang B1 ay ipinapadala ito ayon sa iskedyul sa pamamagitan ng push notification at email. Ang mga miyembro ay maaaring kontrolin kung aling mga reminder ang kanilang natatanggap mula sa kanilang sariling [Notification Preferences](../../b1-church/getting-started/notification-preferences).
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Magsimula</h4>
 
-- Lumikha ng kaganapan na gusto mong i-remind ang mga tao tungkol dito (tingnan ang [Paglikha ng Mga Kalendaryo](creating-calendars))
-- Upang maabot ang mga naka-register na dumalo, [i-enable ang registration](creating-calendars) sa kaganapan
-- Upang maabot ang buong grupo, tiyakin na ang kaganapan ay nabibilang sa [grupo](../groups/creating-groups) na may mga miyembro
+- Lumikha ng event na gusto mong ipaalala sa mga tao (tingnan ang [Creating Calendars](creating-calendars))
+- Upang maabot ang mga naka-register na dumalo, [i-enable ang registration](creating-calendars) sa event
+- Upang maabot ang isang buong grupo, siguraduhin na ang event ay kabilang sa [group](../groups/creating-groups) na may mga miyembro
 
 </div>
 
-## Pag-set Up ng Reminder
+## Pag-setup ng isang Reminder
 
-I-configure mo ang mga reminder sa **Reminders** section ng kaganapan.
+Nag-configure ka ng mga reminder sa **Reminders** section ng event.
 
-- Kapag **lumikha ng bagong kaganapan**, palawakin ang **Reminders** section sa event editor bago mag-save.
-- Para sa isang **umiiral na kaganapan**, buksan ang **Registration Details** page ng kaganapan (mula sa **Registrations** section) upang magdagdag o baguhin ang nito reminder.
+- Kapag **lumikha ng isang bagong event**, palawakin ang **Reminders** section sa event editor bago i-save.
+- Para sa **isang umiiral na event**, buksan ang **Registration Details** page ng event (mula sa **Registrations** section) upang magdagdag o baguhin ang reminder nito.
 
 1. I-turn on ang **Enable reminders**.
-2. Piliin ang **When** upang magpadala. Pumili ng hanggang tatlong timings: **7 days before**, **3 days before**, **1 day before**, at **Day of**.
-3. Itakda ang **Time of day** na dapat mapadala ang reminder (default ay **9:00 AM**, sa iyong church's local time zone).
-4. Piliin ang **Who** dapat na i-remind (tingnan ang [Who Gets Reminded](#who-gets-reminded) sa ibaba).
-5. Opsyonal na magdagdag ng **Message**. Iwanan itong blangko upang gamitin ang default wording, o isulat ang iyong sarili — maaari mong isama ang `{{eventTitle}}` at ito ay papalitan ng pangalan ng kaganapan.
-6. Piliin ang **Channels**: **Push** notification, **Email**, o pareho.
-7. I-save ang kaganapan.
+2. Pumili ng **When** upang magpadala. Pumili ng hanggang tatlong timing: **7 days before**, **3 days before**, **1 day before**, at **Day of**.
+3. Itakda ang **Time of day** na dapat ang reminder ay lumabas (default ay **9:00 AM**, sa local time zone ng iyong simbahan).
+4. Pumili ng **Who** dapat na ma-remind (tingnan ang [Who Gets Reminded](#who-gets-reminded) sa ibaba).
+5. Opsyonal na magdagdag ng **Message**. Iwanan itong blangko upang gamitin ang default na pagpapahayag, o isulat ang iyong sarili -- maaari kang magsama ng `{{eventTitle}}` at ito ay papalitan ng pangalan ng event.
+6. Pumili ng **Channels**: **Push** notification, **Email**, o pareho.
+7. I-save ang event.
 
-Habang gumagawa ng mga pagbabago, ang **live preview** ay nagpapakita ng humigit-kumulang kung gaano karaming tao ang mire-remind, gaano karaming dumalo ang hindi maabot, at ang susunod na scheduled send times — upang maaari mong kumpirmahin na ang reminder ay tumitingin ng tama bago mo ito i-save.
+Habang gumagawa ka ng mga pagbabago, isang **live preview** ay nagpapakita ng humigit-kumulang kung gaano karaming tao ang mare-remind, gaano karaming attendees ang hindi maaabot, at ang susunod na naka-schedule na send times -- upang maaari mong kumpirmahin ang reminder ay mukhang tama bago mo i-save.
 
-## Sino ang Makakakuha ng Reminder
+## Sino Ang Makakakuha ng Reminder
 
-Ang **Who** setting ay kumukontrola sa sino ang reminder ay napupunta sa:
+Ang **Who** setting ay kumokontrol sa sino ang reminder ay napupunta:
 
-- **Registrants only** — Lahat ng naka-register para sa kaganapan na naka-link sa isang tala ng tao. Ito ang default kapag ang kaganapan ay may registration na enabled, kaya ang reminder para sa isang maliit na naka-register na kaganapan ay hindi kailanman aksidentalyang napupunta sa buong grupo.
-- **Heads / registrants only** — Isang reminder sa bawat registration (ang taong nag-register), sa halip na sa bawat miyembro ng pamilya sa registration.
-- **Group members** — Lahat sa grupo ng kaganapan. Ito ang default kapag ang kaganapan ay hindi gumagamit ng registration.
-- **Auto** — Gumagamit ng mga registrant kapag ang registration ay enabled, kung hindi man ang grupo.
+- **Registrants only** -- Lahat ng naka-register para sa event na naka-link sa isang person record. Ito ang default kapag ang event ay may enabled registration, kaya ang reminder para sa isang maliit na naka-register na event ay hindi kailanman pagkakamali ay napupunta sa isang buong grupo.
+- **Heads / registrants only** -- Isang reminder bawat registration (ang taong nag-register), sa halip na bawat miyembro ng pamilya sa registration.
+- **Group members** -- Lahat sa grupo ng event. Ito ang default kapag ang event ay hindi gumagamit ng registration.
+- **Auto** -- Gumagamit ng mga registrant kapag ang registration ay enabled, kung hindi man ang grupo.
 
 :::info
-Ang mga bisita na idinagdag ayon sa pangalan lamang (nang walang naka-link na tala ng tao) ay hindi maaaring makatanggap ng reminder, dahil walang account, device, o email upang magpadala. Ang preview ay nagsasabi sa iyo kung gaano karaming dumalo ang nahuhulog sa grupo na ito upang walang mga sorpresa. Ang mga miyembro na nag-opt out ng komunikasyon ay linalabas din.
+Ang mga bisita na idinagdag ayon sa pangalan lamang (nang walang linked na person record) ay hindi maaaring makatanggap ng reminder, dahil walang account, device, o email upang magpadala. Ang preview ay nagsasabi sa iyo kung gaano karaming attendees ang nahuhulog sa grupo na ito upang walang mga sorpresa. Ang mga miyembro na nag-opt out ng komunikasyon ay na-skip din.
 :::
 
-## Kailan Ipinapadala ang mga Reminder
+## Kailan Ipinapadala Ang Mga Reminder
 
-- Ang mga reminder ay gumagana sa **oras ng araw na iyong pinili**, sa iyong church's local time zone, sa bawat isa sa mga offset na iyong pinili.
-- Kung **babaguhin mo ang petsa o oras ng kaganapan**, ang mga naghihintay na reminder ay awtomatikong naka-reschedule — hindi mo kailangang i-edit ang reminder.
-- Kung **buburahin mo ang kaganapan** (o itapon ang isang solong paglalakbay ng isang recurring event), ang mga naghihintay na reminder ay awtomatikong kinansela.
-- Ang mga recurring event ay hinawakan nang awtomatiko: bawat paparating na paglalakbay ay nakakakuha ng sariling reminder.
+- Ang mga reminder ay tumutunog sa **oras ng araw na iyong pinili**, sa local time zone ng iyong simbahan, sa bawat offset na iyong pinili.
+- Kung **baguhin mo ang date o oras ng event**, ang pending reminder ay awtomatikong na-reschedule -- hindi mo kailangang baguhin ang reminder.
+- Kung **tanggalin mo ang event** (o kanselahin ang isang solong paglalaro ng isang recurring event), ang pending reminder nito ay awtomatikong kinansela.
+- Ang mga recurring event ay pinangangasiwaan awtomatiko: bawat darating na paglalaro ay makakakuha ng sarili nitong reminder.
 
 :::tip
-Ang mga reminder ay ipinapadala **push una, na may email bilang fallback**. Kung ang isang miyembro ay may push notifications na enabled, makakakuha sila ng push; kung hindi, makakakuha sila ng email sa halip. Ang mga miyembro ay pumipili kung aling mga channel ang gusto nila sa bawat uri ng notification sa kanilang [Notification Preferences](../../b1-church/getting-started/notification-preferences).
+Ang mga reminder ay ipinadala **push una, na may email bilang fallback**. Kung ang isang miyembro ay may enabled na push notification, makakakuha sila ng push; kung hindi, makakakuha sila ng email sa halip. Ang mga miyembro ay pumipili kung aling mga channel ang gusto nila bawat notification type sa kanilang [Notification Preferences](../../b1-church/getting-started/notification-preferences).
 :::
 
-## Ano ang Maaaring Kontrolin ng mga Miyembro
+## Kung Ano Ang Maaaring Kontrolin ng Mga Miyembro
 
-Ang mga reminder ay laging gumagalang sa bawat miyembro's [Notification Preferences](../../b1-church/getting-started/notification-preferences). Ang isang miyembro ay maaaring:
+Ang mga reminder ay palaging nirerespeto ang [Notification Preferences](../../b1-church/getting-started/notification-preferences) ng bawat miyembro. Ang isang miyembro ay maaaring:
 
-- I-turn **Event Reminders** off para sa push o email habang pinapanatili ang iba pang mga notification sa.
-- Itakda ang **quiet hours** upang ang mga hindi urgent na notification ay maghintay hanggang sa isang makatwirang oras.
+- I-turn ang **Event Reminders** off para sa push o email habang pinapanatili ang ibang mga notification sa on.
+- Itakda ang **quiet hours** upang ang mga non-urgent notification ay maghintay hanggang sa isang maaasahang oras.
 
-Hindi mo maaaring i-override ang pagpipilian ng isang miyembro na mag-opt out ng mga reminder ng kaganapan — ito ay pinapanatili ang B1 compliant sa mga anti-spam rule at pinapanatili ang mga miyembro sa kontrol ng kanilang inbox.
+Hindi mo maaaring i-override ang pagpili ng isang miyembro na mag-opt out ng mga event reminder -- ito ay nagpapanatili ng B1 compliant sa mga anti-spam na panuntunan at nagpapanatili sa mga miyembro sa kontrol ng kanilang inbox.
 
-## Pagsisilbi ng mga Reminder
+## Serving Reminders
 
-Ang mga volunteer na naka-schedule sa isang plano ay nakakatanggap ng hiwalay na **serving reminder** na may detalye ng plano at, kapag hindi pa sila tumugon, **Accept / Decline** buttons sa tamang email. Ang mga reminder na ito ay na-configure sa uri ng plano sa halip na sa isang kaganapan sa kalendaryo — tingnan ang [Sunday Volunteers](../guides/sunday-volunteers) kung paano gumagana ang volunteer scheduling at mga reminder.
+Ang mga volunteer na na-schedule sa isang plan ay makakatanggap ng isang hiwalay na **serving reminder** na may detalye ng plan at, kapag hindi pa sila tumugon, **Accept / Decline** buttons nang direkta sa email. Ang mga reminder na ito ay na-configure sa uri ng plan sa halip na sa isang calendar event -- tingnan ang [Sunday Volunteers](../guides/sunday-volunteers) para sa kung paano gumagana ang volunteer scheduling at mga reminder.
 
-## Mga Susunod na Hakbang
+## Susunod na Mga Hakbang
 
-- [Notification Preferences](../../b1-church/getting-started/notification-preferences) — Ano ang maaaring kontrolin ng mga miyembro
-- [Event Registration Guide](../guides/event-registration) — I-set up ang registration upang ang mga reminder ay maabot ang mga dumalo
-- [Paglikha ng Mga Kalendaryo](creating-calendars) — Bumalik sa calendar setup
+- [Notification Preferences](../../b1-church/getting-started/notification-preferences) -- Kung ano ang maaaring kontrolin ng mga miyembro
+- [Event Registration Guide](../guides/event-registration) -- I-setup ang registration upang ang mga reminder ay maaaring maabot ang mga attendee
+- [Creating Calendars](creating-calendars) -- Bumalik sa calendar setup

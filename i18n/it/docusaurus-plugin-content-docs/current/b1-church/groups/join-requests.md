@@ -1,66 +1,66 @@
 ---
-title: "Requesting to Join a Group"
+title: "Richiesta di Unirsi a un Gruppo"
 ---
 
-# Requesting Per Join a Gruppo
+# Richiesta di Unirsi a un Gruppo
 
 <div class="article-intro">
 
-Some Gruppi require approval before you can become a Membro. When a Gruppo has this setting, you Invia a join request — optionally including a message Per the Gruppo leader — and wait for the leader Per approve or decline. You can Visualizza the status of your In Sospeso requests and cancel them at any Ora.
+Alcuni gruppi richiedono l'approvazione prima che tu possa diventare un membro. Quando un gruppo ha questa impostazione, invii una richiesta di unione — facoltativamente includendo un messaggio al leader del gruppo — e aspetti che il leader approvi o rifiuti. Puoi visualizzare lo stato delle tue richieste in sospeso e annullarle in qualsiasi momento.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- You must be [logged in](../getting-started/logging-in.md) Per your B1.church Account Per request Per join a Gruppo.
+- Devi essere [loggato](../getting-started/logging-in.md) al tuo account B1.church per richiedere di unirti a un gruppo.
 
 </div>
 
-## Joining vs. Requesting Per Join
+## Unirsi vs. Richiesta di Unirsi
 
-Gruppi can have different join policies set by their administrators:
+I gruppi possono avere diverse politiche di adesione impostate dai loro amministratori:
 
-- **Apri** -- Fai clic **Join Gruppo** on the Gruppo's detail page and you are immediately added as a Membro.
-- **Request Obbligatorio** -- Fai clic **Request Per Join** Per Invia a request that a Gruppo leader must approve before you become a Membro.
-- **Closed** -- No join button appears. Membri must be added manually by leaders.
+- **Open** -- Fai clic su **Join Group** sulla pagina di dettaglio del gruppo e sei immediatamente aggiunto come membro.
+- **Request required** -- Fai clic su **Request to Join** per inviare una richiesta che un leader del gruppo deve approvare prima che tu diventi un membro.
+- **Closed** -- Non appare alcun pulsante di unione. I leader devono aggiungere manualmente i membri.
 
-## How Per Invia a Join Request
+## Come Inviare una Richiesta di Unione
 
-1. Browse Per the Gruppo you want Per join. See [Browsing Groups](./browsing-groups.md) if you need help finding it.
-2. Apri the Gruppo's detail page.
-3. Fai clic **Request Per Join**.
-4. A dialog appears where you can optionally write a message Per the Gruppo leader explaining why you would like Per join.
-5. Fai clic **Invia** Per send your request.
+1. Naviga al gruppo che desideri unire. Vedi [Navigazione dei Gruppi](./browsing-groups.md) se hai bisogno di aiuto per trovarlo.
+2. Apri la pagina di dettaglio del gruppo.
+3. Fai clic su **Request to Join**.
+4. Una finestra di dialogo appare dove puoi facoltativamente scrivere un messaggio al leader del gruppo spiegando perché desideri unirti.
+5. Fai clic su **Submit** per inviare la tua richiesta.
 
-The Gruppo's leaders will receive a notification about your request. Once they review it, you will receive a notification with the outcome.
+I leader del gruppo riceveranno una notifica sulla tua richiesta. Una volta che l'hanno esaminata, riceverai una notifica con il risultato.
 
 :::tip
-Including a brief message — such as how you heard about the Gruppo or what you hope Per get out of it — can help the leader make a faster decision.
+Includere un breve messaggio — come dove hai sentito parlare del gruppo o cosa speri di ricavare da esso — può aiutare il leader a prendere una decisione più velocemente.
 :::
 
-## Checking the Status of Your Requests
+## Controllo dello Stato delle Tue Richieste
 
-After submitting a request, you can Visualizza its status from the **Gruppi** page:
+Dopo aver inviato una richiesta, puoi visualizzare il suo stato dalla pagina **Groups**:
 
-1. Navigate Per the **Gruppi** page on your church's B1.church site.
-2. Scroll down Per the **In Sospeso Requests** section.
-3. Each In Sospeso request shows the Gruppo name and the Data you submitted it.
+1. Naviga alla pagina **Groups** sul sito B1.church della tua chiesa.
+2. Scorri fino alla sezione **Pending Requests**.
+3. Ogni richiesta in sospeso mostra il nome del gruppo e la data che l'hai inviata.
 
-If a request has been Approvato or declined, you will receive a notification — Approvato requests move you into the Gruppo as a Membro.
+Se una richiesta è stata approvata o rifiutata, riceverai una notifica — le richieste approvate ti portano nel gruppo come membro.
 
-## Cancelling a Request
+## Annullamento di una Richiesta
 
-If you change your mind before a leader reviews your request:
+Se cambi idea prima che un leader esamini la tua richiesta:
 
-1. Go Per the **Gruppi** page.
-2. Trova your request in the **In Sospeso Requests** section.
-3. Fai clic **Cancel** Avanti Per the request.
+1. Vai alla pagina **Groups**.
+2. Trova la tua richiesta nella sezione **Pending Requests**.
+3. Fai clic su **Cancel** accanto alla richiesta.
 
-The request is immediately withdrawn and the leader will No longer see it.
+La richiesta viene immediatamente ritirata e il leader non la vedrà più.
 
 ## Articoli Correlati
 
-- [Browsing Groups](./browsing-groups.md) -- Trova Gruppi Per join
-- [Group Details](./group-details.md) -- What you can see and do on a Gruppo's page
-- [Group Conversations](./conversations.md) -- Participate in discussions once you are a Membro
+- [Navigazione dei Gruppi](./browsing-groups.md) -- Trova i gruppi a cui unirti
+- [Dettagli del Gruppo](./group-details.md) -- Cosa puoi vedere e fare nella pagina di un gruppo
+- [Conversazioni di Gruppo](./conversations.md) -- Partecipa alle discussioni una volta che sei un membro

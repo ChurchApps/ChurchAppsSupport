@@ -6,63 +6,63 @@ title: "Saved Lists"
 
 <div class="article-intro">
 
-Ang **Saved Lists** ay nagbibigay-daan sa iyong itago ang isang search query sa ilalim ng isang pangalan at patakbuhin itong muli sa isang click kailanman. Bumuo ng listahan nang isang beses — "Active Members in Campus North," "Visitors in the last 90 days," o anumang advanced filter — at mananatili ito sa iyong sidebar kaya hindi mo na kailangang muling buuin ang query.
+Ang **Saved Lists** ay nagbibigay-daan sa iyo na mag-imbak ng isang query sa paghahanap sa ilalim ng isang pangalan at muling tatakbo ito gamit ang isang click anumang oras. Bumuo ng isang listahan minsan — "Active Members sa Campus North," "Visitors sa nakaraang 90 araw," o anumang advanced filter — at ito ay nanatili sa **Saved Lists** panel sa People page upang hindi mo na kailangang muling itayo ang query.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Ka Magsimula</h4>
+<h4>Bago Magsimula</h4>
 
-- Magpatakbo ng kahit isang search sa seksyong People para magkaroon ka ng mga resultang isa-save. Tingnan ang [Searching People](./searching-people.md) o [AI Search](./ai-search.md).
+- Magpatakbo ng hindi bababa sa isang paghahanap sa People section upang mayroon kang mga resulta na i-save. Tingnan ang [Searching People](./searching-people.md) o [AI Search](./ai-search.md).
 
 </div>
 
-## Pag-save ng Search bilang Listahan
+## Pag-save ng Search bilang Isang Listahan
 
-1. Magpatakbo ng search sa page na **People** — isang quick search, AI search, o isang advanced filter search.
-2. Kapag lumabas ang mga resulta, lalabas ang button na **Save as List** (bookmark icon) sa header ng People page.
+1. Magpatakbo ng paghahanap sa **People** page — isang mabilis na paghahanap, isang AI search, o isang advanced filter search.
+2. Kapag lumitaw ang mga resulta, isang **Save as List** button (bookmark icon) ay nagpapakita sa People page header.
 3. I-click ang **Save as List**.
-4. Ilagay ang **Name** para sa listahan (kailangan).
-5. Opsyonal na maglagay ng **Category** para pagsama-samahin ang mga kaugnay na listahan sa sidebar (halimbawa, "Outreach" o "Membership").
+4. Magpasok ng **Name** para sa listahan (required).
+5. Opsyonal na magpasok ng **Category** upang pagsama-samahin ang mga kaugnay na listahan sa **Saved Lists** panel (halimbawa, "Outreach" o "Membership").
 6. I-click ang **Save**.
 
-Naka-save na ngayon ang listahan sa account ng iyong simbahan at lalabas ito sa panel na **Saved Lists** sa kaliwang bahagi ng People page.
+Ang listahan ay naka-save na sa account ng iyong simbahan at magpapakita sa **Saved Lists** panel sa kaliwang bahagi ng People page.
 
 :::info
-Ang mga listahan ay shared sa buong simbahan mo — kahit sino na may access sa People ay makakakita at makapagload nito. Ang staff lamang na may naaangkop na permiso ang makakapalit ng pangalan o makakatanggal ng mga listahan.
+Ang mga listahan ay ibinabahagi sa buong iyong simbahan — sinuman na may People access ay makakakita at maaaring i-load ang mga ito. Lamang ang staff na may naaaasahang permission ay maaaring baguhin ang pangalan o tanggalin ang mga listahan.
 :::
 
-## Pag-load ng Naka-save na Listahan
+## Pag-load ng Saved Listahan
 
-Sa panel na **Saved Lists** sa kaliwang bahagi ng People page, i-click ang anumang pangalan ng listahan. Agad na muling tatakbo ang search gamit ang naka-store na query, na nag-a-update sa talahanayan ng mga resulta.
+Sa **Saved Lists** panel sa kaliwang bahagi ng People page, i-click ang kahit anong pangalan ng listahan. Ang paghahanap ay agad na muling tatakbo gamit ang naka-imbak na query, na na-update ang tala ng mga resulta.
 
-Naka-group ang mga listahan ayon sa kategorya (kung nagtakda ka ng isa), na may mga uncategorized na listahan na lalabas sa huli.
+Ang mga listahan ay naka-grupo ayon sa kategorya (kung nagtalaaga ka ng isang), na ang mga walang kategoryang listahan ay lumalabas sa huling.
 
 :::tip
-Ang mga listahan ay **live queries**, hindi snapshot. Sa bawat pag-load ng isang listahan, tumatakbo ang search nang bago laban sa iyong kasalukuyang data, kaya lalabas ang mga bagong taong tumutugma na ngayon sa criteria.
+Ang mga listahan ay **live queries**, hindi snapshots. Bawat oras na kag-load ka ng isang listahan, ang paghahanap ay tumatakbo nang sariwain laban sa iyong kasalukuyang data, kaya ang mga bagong taong tumutugma na sa criteria ay lalabas.
 :::
 
-## Pagpapalit ng Pangalan at Pagtanggal ng mga Listahan
+## Pag-rename at Pag-delete ng Mga Listahan
 
-Ang staff na may permisong mamahala ay puwedeng magpalit ng pangalan o magtanggal ng anumang listahan direkta mula sa panel na Saved Lists.
+Ang staff na may manage permission ay maaaring baguhin ang pangalan o tanggalin ang kahit anong listahan direkta mula sa Saved Lists panel.
 
-- I-click ang **pencil icon** sa tabi ng pangalan ng listahan para palitan ang pangalan nito.
-- I-click ang **trash icon** para tanggalin ito (hihilingin sa iyong kumpirmahin).
+- I-click ang **pencil icon** sa tabi ng pangalan ng listahan upang baguhin ang pangalan nito.
+- I-click ang **trash icon** upang tanggalin ito (tatanungin ka na kumpirmahin).
 
 ## Mga Use Case
 
-| Sitwasyon | Paano buuin ang listahan |
+| Scenario | Paano na bumuo ng listahan |
 |---|---|
 | Lahat ng bisita | Advanced search: Membership Status = Visitor |
-| Mga miyembro sa isang partikular na campus | Advanced search: Campus = [iyong campus] |
-| Mga taong walang email address | Advanced search: Email is empty |
-| Mga volunteer na may expired na background check | Advanced search: [Custom Field](../settings/custom-fields.md) "Background check expires" is before today |
-| Mga resulta mula sa isang tanong sa AI | Magtanong sa AI Search, pagkatapos ay i-save |
+| Mga miyembro sa isang specific campus | Advanced search: Campus = [ang iyong campus] |
+| Mga taong walang email address | Advanced search: Email ay wala |
+| Mga volunteer na may nag-expire na background check | Advanced search: [Custom Field](../settings/custom-fields.md) "Background check expires" ay bago ang ngayon |
+| Mga resulta mula sa isang AI tanong | Magtanong ng isang tanong sa AI Search, pagkatapos ay i-save |
 
-## Kaugnay na Artikulo
+## Mga Kaugnay na Artikulo
 
-- [Searching People](./searching-people.md) — quick search at pag-customize ng column
-- [AI Search](./ai-search.md) — mga query sa natural na wika na puwedeng i-save bilang listahan
-- [Custom Fields](../settings/custom-fields.md) — tukuyin ang iyong sariling mga field ng tao, pagkatapos ay i-filter at i-save ang mga listahan base dito
-- [Demographics](./demographics.md) — ipasok ang isang demographic chart sa isang People filter, pagkatapos ay i-save bilang listahan
-- [Bulk Editing](./bulk-editing.md) — pagkatapos mag-load ng listahan, bulk-update ang lahat ng miyembro nito nang sabay-sabay
+- [Searching People](./searching-people.md) — mabilis na paghahanap at column customization
+- [AI Search](./ai-search.md) — natural-language na mga query na maaari mong i-save bilang mga listahan
+- [Custom Fields](../settings/custom-fields.md) — tukuyin ang iyong sariling mga field ng person, pagkatapos ay mag-filter at mag-save ng mga listahan sa kanila
+- [Demographics](./demographics.md) — mag-drill ng isang demographic chart sa isang People filter, pagkatapos ay i-save ito bilang isang listahan
+- [Bulk Editing](./bulk-editing.md) — pagkatapos ng pag-load ng isang listahan, bulk-update lahat ng miyembro nito nang sabay-sabay

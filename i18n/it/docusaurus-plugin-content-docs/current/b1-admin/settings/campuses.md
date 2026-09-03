@@ -6,66 +6,66 @@ title: "Campus"
 
 <div class="article-intro">
 
-Se la tua chiesa si riunisce in più di una posizione, i **Campus** ti permettono di tracciare quale sito ogni persona e gruppo appartiene. Una volta configurati, i campus appaiono come opzione sui profili delle persone, nella configurazione delle presenze e nel dashboard Demografica. Le chiese multi-sito possono filtrare, cercare e segnalare per campus in tutto B1 Admin.
+Se la tua chiesa si riunisce in più di una località, i **Campus** ti permettono di tracciare quale sito appartiene ogni persona e gruppo. Una volta configurati, i campus appaiono come un'opzione nei profili delle persone, nella configurazione della partecipazione e nella dashboard Dati Demografici. Le chiese multi-sito possono filtrare, cercare e rapporto per campus in tutto B1 Admin.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di iniziare</h4>
+<h4>Prima di Iniziare</h4>
 
-- Hai bisogno dell'autorizzazione **Modifica impostazioni chiesa** per gestire i campus. Vedi [Ruoli e autorizzazioni](./roles-permissions.md).
+- Hai bisogno del permesso **Edit Church Settings** per gestire i campus. Vedi [Ruoli e Permessi](./roles-permissions.md).
 
 </div>
 
-## Apertura delle impostazioni del campus
+## Apertura delle Impostazioni del Campus
 
-In B1 Admin, apri il **menu sezione** nell'angolo in alto a sinistra (il nome della sezione con la piccola freccia), scegli **Impostazioni** e seleziona **Campus** dalla navigazione delle impostazioni. Vedrai un elenco di tutti i campus configurati con il loro nome, posizione e fuso orario.
+In B1 Admin, apri il **menu della sezione** nell'angolo in alto a sinistra (il nome della sezione con la piccola freccia), scegli **Settings** e seleziona **Campuses** dalla navigazione delle Impostazioni. Vedrai un elenco di tutti i campus configurati con il loro nome, posizione e fuso orario.
 
-## Aggiunta di un campus
+## Aggiunta di un Campus
 
-1. Fai clic su **Aggiungi campus** (o il pulsante **+** se non esista ancora alcun campus).
-2. Riempi i dettagli del campus:
-   - **Nome** *(obbligatorio)* — il nome visualizzato mostrato in tutto B1 Admin (ad esempio, "Campus principale" o "Campus nord").
-   - **Indirizzo** — l'indirizzo stradale del campus (utilizzato per visualizzazione informativa; non è lo stesso dell'indirizzo della tua chiesa principale nelle impostazioni della chiesa).
-   - **Città / Stato / CAP** — la posizione del campus.
-   - **Fuso orario** — il fuso orario IANA per questo campus (ad esempio, *America/Chicago*). Utile quando i campus si trovano in diversi fusi orari.
-   - **Sito web** — un URL facoltativo per la propria presenza web di questo campus.
-3. Fai clic su **Salva**.
+1. Fai clic su **Add Campus** (o il pulsante **+** se non esistono ancora campus).
+2. Compila i dettagli del campus:
+   - **Name** *(obbligatorio)* — il nome visualizzato in tutto B1 Admin (ad esempio, "Main Campus" o "North Campus").
+   - **Address** — l'indirizzo stradale del campus (utilizzato per il display informativo; non è lo stesso dell'indirizzo principale della tua chiesa nelle Impostazioni della Chiesa).
+   - **City / State / Zip** — la posizione del campus.
+   - **Timezone** — il fuso orario IANA per questo campus (ad esempio, *America/Chicago*). Utile quando i campus sono in fusi orari diversi.
+   - **Website** — un URL opzionale per la propria presenza web del campus.
+3. Fai clic su **Save**.
 
-## Modifica di un campus
+## Modifica di un Campus
 
-Fai clic su qualsiasi riga di campus nell'elenco per aprire il suo editor nel pannello a destra. Aggiorna i campi e fai clic su **Salva**.
+Fai clic su qualsiasi riga di campus nell'elenco per aprire il suo editor nel pannello a destra. Aggiorna i campi e fai clic su **Save**.
 
-## Eliminazione di un campus
+## Eliminazione di un Campus
 
-Apri un campus per la modifica e fai clic su **Elimina**. Ti verrà chiesto di confermare. L'eliminazione di un campus non rimuove le persone ad esso assegnate — il loro campo di campus diventa semplicemente vuoto.
+Apri un campus per la modifica e fai clic su **Delete**. Ti verrà chiesto di confermare. L'eliminazione di un campus non rimuove le persone assegnate a esso — il loro campo di campus diventa semplicemente vuoto.
 
-## Assegnazione di persone a un campus
+## Assegnazione di Persone a un Campus
 
 Dopo aver creato i campus, lo staff può assegnare una persona a un campus dal suo profilo:
 
-1. Apri un record di persona in **Persone**.
-2. Fai clic su **Modifica**.
-3. Scegli il campus dal dropdown **Campus**.
-4. Fai clic su **Salva**.
+1. Apri il record di una persona in **People**.
+2. Fai clic su **Edit**.
+3. Scegli il campus dal menu a discesa **Campus**.
+4. Fai clic su **Save**.
 
-Puoi anche aggiornare il campus in massa dalla pagina Persone. Seleziona più persone, usa **Modifica in massa** e imposta il campo Campus per tutti in una volta.
+Puoi anche aggiornare il campus in blocco dalla pagina People. Seleziona più persone, usa **Bulk Edit** e imposta il campo Campus per tutti contemporaneamente.
 
-## Filtro per campus
+## Filtraggio per Campus
 
-Una volta che i campus sono configurati, puoi filtrare in tutto B1 Admin per campus:
+Una volta configurati i campus, puoi filtrare in tutto B1 Admin per campus:
 
-- **Ricerca persone** — aggiungi una condizione di campus nella ricerca avanzata, o carica una [Lista salvata](../people/lists.md) limitata a un campus.
-- **Demografica** — il dashboard [Demografica](../people/demographics.md) mostra un grafico a ciambella del campus quando almeno una persona ha un campus assegnato.
-- **Impostazione presenze** — ogni ora di servizio in Presenze può essere legata a un campus.
+- **People search** — aggiungi una condizione Campus nella ricerca avanzata, o carica una [Lista Salvata](../people/lists.md) scoped a un campus.
+- **Demographics** — la dashboard [Dati Demografici](../people/demographics.md) mostra un grafico a ciambella del Campus quando almeno una persona ha un campus assegnato.
+- **Attendance Setup** — ogni time di servizio in Attendance può essere legato a un campus.
 
 :::tip
-Le chiese in una sola posizione non hanno bisogno di configurare i campus. Tutte le funzioni del campus sono facoltative — se non esista alcun campus, i campi del campus e i grafici semplicemente non appaiono.
+Le chiese in una singola ubicazione non hanno bisogno di configurare i campus. Tutte le funzioni di campus sono opzionali — se non esistono campus, i campi e i grafici del campus semplicemente non appaiono.
 :::
 
-## Articoli correlati
+## Articoli Correlati
 
-- [Impostazioni chiesa](./church-settings.md) — il tuo indirizzo principale della chiesa e branding (separato dagli indirizzi del campus)
-- [Demografica](../people/demographics.md) — il grafico di ripartizione del campus
-- [Impostazione presenze](../attendance/setup.md) — collega gli orari di servizio a un campus
-- [Modifica in massa](../people/bulk-editing.md) — assegna il campus a molte persone in una volta
+- [Impostazioni della Chiesa](./church-settings.md) — il tuo indirizzo e branding principale della chiesa (separato dagli indirizzi del campus)
+- [Dati Demografici](../people/demographics.md) — il grafico di ripartizione del Campus
+- [Attendance Setup](../attendance/setup.md) — collega i time di servizio a un campus
+- [Modifica in Blocco](../people/bulk-editing.md) — assegna il campus a molte persone contemporaneamente

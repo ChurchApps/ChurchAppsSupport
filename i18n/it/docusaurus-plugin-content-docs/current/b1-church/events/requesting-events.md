@@ -1,52 +1,52 @@
 ---
-title: "Requesting Events & Rooms"
+title: "Richiesta di Eventi e Aule"
 ---
 
-# Requesting Eventi & Stanze
+# Richiesta di Eventi e Aule
 
 <div class="article-intro">
 
-If your church tracks bookable Stanze and resources, you can request an Evento — with the Stanze and equipment it needs — right from the Membro portal. Conflicts with existing bookings are flagged as you pick, your request goes Per the church for approval, and you can track or cancel it from My Requests.
+Se la tua chiesa traccia aule e risorse prenotabili, puoi richiedere un evento — con le aule e l'attrezzatura di cui ha bisogno — direttamente dal portale dei membri. I conflitti con le prenotazioni esistenti vengono contrassegnati mentre scegli, la tua richiesta va alla chiesa per l'approvazione e puoi tracciarla o annullarla dalle Mie Richieste.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- You must be [logged in](../getting-started/logging-in.md) Per the Membro portal
-- Your church must have Stanze or resources set up in B1 Admin — the request shortcuts only appear when it does
+- Devi essere [loggato](../getting-started/logging-in.md) nel portale dei membri
+- La tua chiesa deve avere aule o risorse configurate in B1 Admin — i shortcut di richiesta appaiono solo quando lo fa
 
 </div>
 
-## Submitting a Request
+## Invio di una Richiesta
 
-1. Apri the **Me** page in the Membro portal and tap **Request an Evento** under Shortcuts.
-2. Fill in the Evento basics: **Evento title**, an Facoltativo **Description**, the **Start** and **End** times (or **All Giorno**), and whether it **Repeats**.
-3. Pick the **Stanze** and **Resources** you need. For resources you can set a **Qty**.
-4. Watch for conflict warnings — if your Ora overlaps an existing booking for a Stanza or resource, you'll see *"This Ora conflicts with an existing booking."* You can adjust your Ora or Scegli something else.
-5. Tap **Invia Request**.
+1. Apri la pagina **Me** nel portale dei membri e tocca **Request an Event** sotto Shortcuts.
+2. Compila le nozioni di base dell'evento: **Event title**, una **Description** facoltativa, i tempi **Start** e **End** (o **All day**) e se **Repeats**.
+3. Scegli le **Rooms** e **Resources** di cui hai bisogno. Per le risorse puoi impostare una **Qty**.
+4. Guarda gli avvisi di conflitto — se il tuo orario si sovrappone una prenotazione esistente per un'aula o una risorsa, vedrai *"This time conflicts with an existing booking."* Puoi regolare il tuo orario o sceglierne un'altra.
+5. Tocca **Submit Request**.
 
-After submitting, a **Request submitted** summary shows the status of each Stanza and resource you asked for:
+Dopo aver inviato, un riepilogo **Request submitted** mostra lo stato di ogni aula e risorsa che hai richiesto:
 
-- **Approvato** -- Booked immediately (the Stanza or resource has No approval Gruppo).
-- **In Sospeso approval** -- Someone from the church needs Per sign off first.
+- **Approved** -- Prenotato immediatamente (l'aula o la risorsa non ha un gruppo di approvazione).
+- **Pending approval** -- Qualcuno della chiesa deve approvare prima.
 
-## Tracking Your Requests
+## Tracciamento delle Tue Richieste
 
-Apri **My Requests** from the Me page. Each request shows the Evento, when you requested it, and a status pill:
+Apri **My Requests** dalla pagina Me. Ogni richiesta mostra l'evento, quando l'hai richiesto e una pillola di stato:
 
-- **In Sospeso** -- Awaiting a decision
-- **Approvato** -- Your booking is confirmed
-- **Rejected** -- The request was declined
+- **Pending** -- In attesa di una decisione
+- **Approved** -- La tua prenotazione è confermata
+- **Rejected** -- La richiesta è stata rifiutata
 
-While a request is still In Sospeso, you can withdraw it with **Cancel request** (you'll be asked Per confirm — cancellation cannot be undone).
+Mentre una richiesta è ancora in sospeso, puoi ritirarti con **Cancel request** (ti verrà chiesto di confermare — l'annullamento non può essere annullato).
 
 :::info
-Requests are reviewed by church Staff on the B1 Admin [Approvals page](../../b1-admin/calendars/approvals). Which Stanze and resources need approval is up Per your church — see [Rooms & Resources](../../b1-admin/calendars/rooms-resources).
+Le richieste vengono esaminate dallo staff della chiesa nella pagina [Approvazioni](../../b1-admin/calendars/approvals) di B1 Admin. Quali aule e risorse richiedono l'approvazione dipende dalla tua chiesa — vedi [Aule e Risorse](../../b1-admin/calendars/rooms-resources).
 :::
 
 ## Articoli Correlati
 
-- [The Me Page](../getting-started/me-page) -- Where the request shortcuts live
-- [Calendar Approvals (B1 Admin)](../../b1-admin/calendars/approvals) -- How Staff review requests
-- [Rooms & Resources (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- How churches configure bookable spaces
+- [La Pagina Me](../getting-started/me-page) -- Dove vivono i shortcut di richiesta
+- [Approvazioni Calendario (B1 Admin)](../../b1-admin/calendars/approvals) -- Come lo staff esamina le richieste
+- [Aule e Risorse (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- Come le chiese configurano spazi prenotabili

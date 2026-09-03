@@ -13,7 +13,7 @@ Los recordatorios de evento notifican automáticamente a las personas correctas 
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- Crea el evento para el que deseas recordarle a las personas (ver [Creando Calendarios](creating-calendars))
+- Crea el evento para el que deseas recordarle a las personas (ver [Crear Calendarios](creating-calendars))
 - Para llegar a los asistentes registrados, [habilita el registro](creating-calendars) en el evento
 - Para llegar a un grupo completo, asegúrate de que el evento pertenezca a un [grupo](../groups/creating-groups) con miembros
 
@@ -29,7 +29,7 @@ Configuras recordatorios en la sección **Recordatorios** del evento.
 1. Activa **Habilitar recordatorios**.
 2. Elige **Cuándo** enviar. Elige hasta tres tiempos: **7 días antes**, **3 días antes**, **1 día antes** y **Día del evento**.
 3. Establece la **Hora del día** en que debe enviarse el recordatorio (el valor predeterminado es **9:00 AM**, en la zona horaria local de tu iglesia).
-4. Elige **A quién** recordarle (ver [Quién Recibe Recordatorios](#who-gets-reminded) a continuación).
+4. Elige **A quién** recordarle (ver [Quién Recibe Recordatorios](#quién-recibe-recordatorios) a continuación).
 5. Opcionalmente agrega un **Mensaje**. Déjalo en blanco para usar el texto predeterminado, o escribe el tuyo propio — puedes incluir `{{eventTitle}}` y se reemplazará con el nombre del evento.
 6. Elige los **Canales**: notificación **Push**, **Correo Electrónico**, o ambos.
 7. Guarda el evento.
@@ -77,4 +77,4 @@ Los voluntarios programados en un plan reciben un **recordatorio de servicio** s
 
 - [Preferencias de Notificación](../../b1-church/getting-started/notification-preferences) — Lo que los miembros pueden controlar
 - [Guía de Registro de Evento](../guides/event-registration) — Configura el registro para que los recordatorios puedan alcanzar a los asistentes
-- [Creando Calendarios](creating-calendars) — Vuelve a la configuración del calendario
+- [Crear Calendarios](creating-calendars) — Vuelve a la configuración del calendario
