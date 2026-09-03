@@ -32,6 +32,10 @@ The **Giving Dashboard** is the first thing you see when you open the **Donation
 4. Below the KPIs, a chart displays giving trends for the selected period.
 5. Click **Download** to export a CSV file with giving totals.
 
+## Lapsed Givers
+
+The **Lapsed Givers** tab next to the dashboard lists people who gave during one period but not since. By default it compares last calendar year with this year to date; change either date range to widen or narrow the search. Each row shows the person, the date of their last gift and their total for the earlier period, and **Export** downloads the list as a CSV for a follow-up mailing or call list.
+
 ## Donations Summary Page
 
 The **Summary** page provides more detailed aggregate giving data.

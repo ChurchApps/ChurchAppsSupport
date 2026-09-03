@@ -51,6 +51,26 @@ The currency you select here is used for one-time donations, recurring subscript
 Make sure your Stripe account is configured to accept the currency you choose. If your Stripe account does not support the selected currency, donations will fail at checkout.
 :::
 
+## Apple Pay and Google Pay
+
+Churches on Stripe get Apple Pay and Google Pay buttons on the public giving page automatically. The buttons appear above the card fields for one-time gifts once the donor has chosen a fund and an amount, and only when the donor's browser or device has a wallet set up. Recurring gifts still use the card or bank fields.
+
+Google Pay needs no setup. Apple Pay requires your giving page's domain to be registered with Stripe; B1 registers it the first time the giving page loads on your domain. If the Apple Pay button does not appear on an iPhone, check **Settings > Payment method domains** in your Stripe Dashboard and confirm your `yoursubdomain.b1.church` (or custom) domain is listed and verified.
+
+## Anonymous Gifts
+
+Donors on the public giving page can check **Give anonymously**. An anonymous gift is recorded with no donor attached, still goes to the fund the donor chose, and shows as **Anonymous** in your batches and reports. The donor's email is still required so the receipt can be sent, but no person record is created. Anonymous gifts are one-time only and do not appear on any giving statement.
+
+## Failed Recurring Gifts
+
+When a recurring gift on Stripe fails (an expired or declined card, for example), the failed charge appears under **Donations > Failed Gifts** with the donor, amount, date and the reason the gateway gave. Click **Retry** to attempt the charge again once the donor has updated their payment method.
+
+B1 also emails the donor when the charge fails, and again three and seven days later if it has still not gone through, with a link to update their payment method in B1.church.
+
+:::info
+If your church set up Stripe before this feature existed, open **Church Settings > Giving** and click **Save** once. That refreshes the Stripe webhook so failed charges are reported to B1.
+:::
+
 ## Adding a Donation Page to Your B1.church Site
 
 1. Go to [b1.church](https://b1.church/) and log in.
@@ -69,6 +89,14 @@ To find your giving URL, go to **B1 Admin** and click the **Settings** icon to s
 `https://yoursubdomain.b1.church/donate`
 
 Share this link on your website, in emails, or in your bulletin so members know where to give online.
+
+### Links With a Preset Fund and Amount
+
+To send donors straight to a specific fund, go to **Donations > Funds** and click **Giving Link** on the fund. Optionally enter an amount, then copy the link. When a donor opens it, the fund and amount are already selected on the giving page. The link takes the form:
+
+`https://yoursubdomain.b1.church/donate?fundId=FUND_ID&amount=25`
+
+The same parameters work in the **Donate Link** element of the website builder.
 
 ## Donation Notifications
 
@@ -99,6 +127,10 @@ Kingdom Funding integration is currently in beta. Contact your B1 account repres
 7. Save.
 
 Once connected, members will see a card/bank toggle on the donation page and can give by credit card or ACH transfer.
+
+## PayPal and Venmo Buttons
+
+Churches using **PayPal** as their provider get **PayPal** and **Venmo** buttons above the card fields on the giving page for one-time gifts. Donors who click one complete the payment in a PayPal window, and the gift is recorded like any other online donation. Venmo appears only for donors in the United States on devices PayPal considers eligible. Recurring gifts still use the card fields.
 
 ## Setting Up Paystack (Africa)
 
