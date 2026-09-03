@@ -45,6 +45,10 @@ Your new batch appears in the list, ready for you to add donations.
 - **Sort** -- use the column headers to sort batches by name or date.
 - **Export** -- click **Export to CSV** to download your batch list as a spreadsheet.
 
+## Exporting a Batch to QuickBooks Online
+
+Open a batch and click **Export for QuickBooks** to download the batch as a journal entry that QuickBooks Online can import (**Settings > Import Data > Journal Entries**). The file contains one debit to **Undeposited Funds** for the batch total and one credit per fund, using each fund's name as the account name. QuickBooks asks you to match those names to your chart of accounts during import, so name your funds the way your bookkeeper names the income accounts, or map them once on import.
+
 :::tip
 Name your batches consistently so they are easy to find later. Including the date and collection type (e.g., "Sunday AM - 2025-02-09") keeps your list organized as it grows.
 :::
