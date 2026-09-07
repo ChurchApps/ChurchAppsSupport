@@ -22,11 +22,11 @@ Tabs configured here are delivered through the [B1.church Progressive Web App (P
 
 </div>
 
-## Accessing Mobile App Settings
+## Accessing Navigation Settings
 
-1. In B1 Admin, open the **section menu** in the top-left corner (the section name with the small arrow) and choose **Settings**.
-2. Click the **Mobile Apps** button in the header.
-3. The Mobile App Settings page displays your current app tabs.
+1. In B1 Admin, open the **section menu** in the top-left corner (the section name with the small arrow) and choose **Mobile**.
+2. Choose **Navigation** in the secondary menu (`/mobile/navigation`).
+3. The Navigation page displays your current app tabs.
 
 ## Adding a New Tab
 
@@ -59,7 +59,7 @@ Keep your tab count manageable. Three to five tabs works well for most churches.
 
 ## Member Directory & Messaging Settings
 
-The **B1 Mobile** tab in the same Mobile section holds the settings that govern the member directory and private messaging in the B1.church experience:
+The **Member portal** item in the same Mobile section holds the settings that govern the member directory and private messaging in the B1.church experience:
 
 - **Directory Approval Group** -- The group that reviews member directory updates before they are applied.
 - **Show in Directory** -- Who can appear in the member directory (Staff Only through Everyone).
