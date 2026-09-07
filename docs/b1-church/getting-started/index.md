@@ -36,7 +36,7 @@ If your church has already added you to their system, use the same email address
 
 Once you are logged in, the member portal gives you access to:
 
-- Your personal **Timeline** with updates from your groups and church
+- A **Home** dashboard and a **Me** page with what is coming up for you
 - **Groups** you belong to, including conversations and events
 - Online **Giving** for donations
 - **Plans** showing your volunteer schedule and service details
