@@ -45,7 +45,7 @@ Once linked, you can schedule lessons directly from Plans.
 
 1. In B1 Admin, go to **Serving → Plans**
 2. Select your ministry tab and click **Add Plan Type** — give the plan type a name such as Children's Church or Sunday School
-3. Click on the plan type you just made and click **Schedule Lesson**. From that menu you can schedule one lesson, bulk-schedule a series, or **Apply Year Plan** to drop in a published 12–52 week sequence from Lessons.church.
+3. Click on the plan type you just made and click **Schedule Lesson**. From that menu you can schedule one lesson, bulk-schedule a series, or **Apply Year Plan** to drop in a published year sequence from Lessons.church.
 4. Select the **date** for the lesson (defaults to the upcoming Sunday)
 5. Click **Select Lesson** — a content browser dialog opens
 6. At the top of the dialog, confirm **Lessons.church** is selected as the provider
@@ -73,10 +73,10 @@ If a curriculum publisher has published a year plan on Lessons.church, you can l
 
 1. Click **Schedule Lesson → Apply Year Plan**
 2. Choose the published year plan
-3. Set the first class date (week 1 lands on that date; later weeks are seven days apart)
-4. Choose how many weeks to write (12, 24, 44, or 52)
+3. If the plan is calendar-anchored (for example Ark Kids), choose the **target year**. Easter and Christmas studies land on that year's dates. Adjust the first and last class dates if you are only scheduling part of the year.
+4. If the plan is not calendar-anchored, set the first class date (week 1 lands on that date; later weeks are seven days apart) and how many weeks to write (12, 24, 44, or 52)
 5. Optionally copy volunteer positions from the previous plan
-6. Preview the list. Dates that already have a plan are skipped. Uncheck any week you do not want.
+6. Preview the list. Uncheck any week you do not want — later lessons in that stretch move onto the next open Sunday instead of leaving a hole. Dates that already have a plan are skipped the same way for calendar-anchored plans.
 7. Save. Each week becomes a serving plan you can edit as usual — change the lesson, volunteers, or date — and FreePlay will play whatever is on that week's plan.
 
 :::tip
