@@ -42,7 +42,7 @@ If your church has configured more than three tabs, the rest are not lost: they 
 
 Tapping **More** opens the navigation menu. On a tablet or desktop the same menu is always visible along the left side of the screen. It contains:
 
-- Your name and photo, with an **Edit Profile** shortcut
+- Your name and photo, with an **Edit Profile** shortcut — see [Editing Your Profile](./editing-your-profile.md)
 - **Home** and **Me**
 - **Admin** -- only shown if you have administrator permissions at your church; it opens B1 Admin
 - Every tab your church configured, in order
@@ -58,7 +58,7 @@ The bar across the top of every screen shows:
 - The screen title, or your church's name on Home
 - A back arrow when you have drilled into a detail screen
 - A **bell** icon for notifications and messages, with a badge for unread items
-- Your **profile photo**, which opens your profile at `/mobile/profileEdit`
+- Your **profile photo**, which opens your profile at `/mobile/profileEdit` — see [Editing Your Profile](./editing-your-profile.md)
 
 ## The Me Page
 

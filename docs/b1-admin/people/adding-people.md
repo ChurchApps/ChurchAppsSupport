@@ -31,6 +31,15 @@ The person's profile page will open, ready for you to add more details.
 If you're migrating from another church management system, the [Import Data](importing-data.md) feature lets you bring in your entire directory from a CSV file — much faster than adding people one at a time.
 :::
 
+### Duplicate Warnings
+
+If the email address (or, when creating a person from the full Edit form, the phone number or matching first name + last name + birth date) matches someone already in your database, a **Possible Duplicate** dialog appears before the new record is saved. It lists each matching person along with their email, phone, and birth date so you can compare.
+
+- Click **Use Existing** next to a match to use that person's record instead of creating a new one.
+- Click **Create Anyway** to add the new person even though a possible match was found.
+
+This only checks for duplicates when you're creating a brand-new person — editing an existing record never triggers it. It only prevents new duplicates; it doesn't merge two records that already exist.
+
 ## Editing Details
 
 1. On the person's profile page, click the **edit pencil** next to their name.
@@ -51,6 +60,8 @@ You can fill out custom forms directly from a person's profile. These are user-d
 1. On the person's profile, click the **Forms** dropdown to select a form.
 2. Click **Add Form** to open it.
 3. Fill in the form details and click **Save**.
+
+Once a form is submitted, click the **print icon** next to it to print that person's filled-in answers.
 
 :::info
 Forms linked to a person's profile use the **People** form type. If you need a standalone form (like an event registration), see the [Stand Alone form option](../forms/creating-forms.md) in the forms guide.

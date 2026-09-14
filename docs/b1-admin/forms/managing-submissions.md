@@ -30,6 +30,8 @@ You will see a list of all responses received for that form. Each submission sho
 
 Click on any submission to view the full details. You will see all the answers the person provided for each question on the form.
 
+Click the **print icon** next to the submission to print that person's filled-in answers -- useful for a paper file or a signed release you need to keep on hand. This is separate from [printing a blank form](./creating-forms.md#printing-a-blank-form); it prints one person's already-submitted answers, not an empty copy. The same print icon appears wherever a submission is shown, including on a [person's profile](../people/adding-people.md#working-with-forms).
+
 ## How Submissions Are Collected
 
 Submissions can come in through several channels:

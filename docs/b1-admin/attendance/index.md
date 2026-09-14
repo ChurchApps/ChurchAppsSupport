@@ -35,11 +35,16 @@ The **Attendance** tab displays attendance trends over time. Use the filters to 
 
 The **Groups** tab breaks attendance down by individual group. This is helpful when you want to see how a specific small group, class, or ministry team is doing rather than looking at church-wide numbers.
 
+### Headcounts and Headcount Trend
+
+The **Headcounts** tab lets you record a simple total count for a service, service time, or group instead of a named roster, and the **Headcount Trend** tab charts those totals by week. See [Headcount Entry & Trend](headcount-entry.md) for details.
+
 ## Next Steps
 
 - [Attendance Setup](setup.md) -- configure campuses, service times, and groups
 - [Recording Attendance](recording-attendance.md) -- manually enter attendance for a group session
 - [Tracking Attendance](tracking-attendance.md) -- view trends and filter reports
+- [Headcount Entry & Trend](headcount-entry.md) -- record and chart total counts without a named roster
 - [Check-In](check-in.md) -- set up self check-in for services
 - [Check-In Safety](checkin-safety.md) -- room capacities, volunteer ratios, pickup people, and paging
 

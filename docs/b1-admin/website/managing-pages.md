@@ -35,9 +35,9 @@ You can convert any auto-generated page into a custom page if you want full cont
 
 1. Click the **Add Page** button in the top right corner of the Pages table.
 2. Choose a page type (blank or a template) and give it a name.
-3. Click **Edit** next to any page to open the [page editor](page-editor), where you can add sections, text, images, and other elements.
-4. Click **Page Settings** to update the page title, URL path, and other metadata.
-5. Use the **Preview** button to open your page in a new window and see exactly how it will look to visitors.
+3. Click **Edit Content** next to any page to open the [page editor](page-editor), where you can add sections, text, images, and other elements.
+4. Click **Page Settings** (the gear icon) to update the page title, URL path, and other metadata.
+5. Use the **View live page** button to open your page in a new window and see exactly how it will look to visitors.
 
 :::tip
 For your home page, set the URL path to just `/`. For all other pages, use a descriptive path like `/about` or `/contact`.

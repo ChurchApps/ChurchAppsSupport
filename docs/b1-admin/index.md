@@ -24,13 +24,13 @@ New to B1 Admin? Start with the [Introduction](./introduction) for a video walkt
 
 - **[People](./people/)** - Manage your church directory, add members, bulk edit data, track households
 - **[Groups](./groups/)** - Create and organize church groups with join requests and member management
-- **[Attendance](./attendance/)** - Set up campuses, service times, and track attendance
+- **[Attendance](./attendance/)** - Set up campuses, service times, track named attendance, and log simple headcounts with trend reports
 - **[Donations](./donations/)** - Record giving in multiple currencies, manage funds, generate statements
 - **[Serving](./serving/)** - Coordinate volunteers, create service plans, manage tasks, and move people through step-by-step workflows
 - **[Forms](./forms/)** - Build custom forms for registrations and data collection
 - **[Reports](./reports/)** - View birthday, attendance, and donation reports
 - **[Website](./website/)** - Build and manage your church website with custom navigation styles
-- **[Sermons](./sermons/)** - Manage your sermon library and live streaming
+- **[Sermons](./sermons/)** - Manage your sermon library, live streaming, and an automatic podcast feed
 - **[Calendars](./calendars/)** - Create curated calendars, manage room/resource bookings, and view availability
 - **[Settings](./settings/)** - Configure church info, roles, permissions, and custom person fields
 

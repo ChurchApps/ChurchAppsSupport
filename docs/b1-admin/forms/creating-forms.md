@@ -30,6 +30,10 @@ Build custom forms to collect information from your congregation. You can create
 
 Your new form will appear in the list. Click on it to start adding questions.
 
+## Printing a Blank Form
+
+Need a paper copy to hand out -- for a visitor card at the welcome desk, or a form someone without internet access can fill in by hand? Click the **print icon** next to a form on the main Forms list to open a preview, then click **Print**. Blank fields print with an underline or checkbox for each question so people can fill them in by hand; required questions are marked with an asterisk. There are no other print options -- print the whole form or nothing.
+
 ## Adding Questions
 
 1. Open your form and go to the **Questions** tab.

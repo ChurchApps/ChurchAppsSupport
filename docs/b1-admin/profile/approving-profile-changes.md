@@ -13,7 +13,7 @@ When your church requires administrator approval for profile updates, members su
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- You must be a member of the group designated as the **Directory Approval Group** in **Mobile &rarr; B1 Mobile**
+- You must be a member of the group designated as the **Directory Approval Group** in **Mobile &rarr; Member portal**
 - If no approval group has been configured, profile changes are applied immediately without review
 
 </div>
@@ -46,11 +46,13 @@ The task will close automatically once the changes are applied.
 If your church wants profile changes to require approval, a Directory Approval Group must be configured first.
 
 1. In the top navigation, click **Mobile**.
-2. Click **B1 Mobile**.
+2. Click **Member portal** (the "Portal settings" page).
 3. Under **Directory Approval Group**, select the group whose members should review profile change requests.
 4. Click **Save**.
 
 Any member of that group will see incoming profile change requests under **Assigned to My Groups** on their dashboard.
+
+The same Directory Approval Group also reviews **account deletion requests** — see [Reviewing Account Deletion Requests](./account-deletion.md).
 
 :::tip
 Make sure your approvers are actually members of the configured group — only group members will see the requests.
@@ -59,4 +61,5 @@ Make sure your approvers are actually members of the configured group — only g
 ## Related Articles
 
 - [Managing Your Profile](./managing-profile.md) — Edit your own account settings
+- [Reviewing Account Deletion Requests](./account-deletion.md) — The same approval-group review flow for account deletion
 - [B1 Mobile Settings](../../b1-mobile/profile/editing-profile.md) — What members see when they submit a profile change

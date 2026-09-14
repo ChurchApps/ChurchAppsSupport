@@ -21,7 +21,7 @@ When members visit your B1.church site, they see your church's public website wi
 - **Serving** -- View service plans, your volunteer positions, and sign up for open volunteer opportunities.
 - **Plans** -- See upcoming service plans, view your assigned positions, and access song details and service orders.
 - **Check-In** -- Check in yourself and your household members for services and events. Guests can register via QR code.
-- **Community Directory** -- Browse your church's member directory, view profiles, and send direct messages.
+- **Community Directory** -- Browse your church's member directory, view profiles, and send direct messages. Control who can see your own contact info from your [profile's Privacy tab](./getting-started/editing-your-profile.md#privacy-tab).
 - **Content** -- Access sermons, read the Bible, watch live streams, and view the daily verse, all from your church's site. (Curriculum playback now lives in [FreePlay](/docs/freeplay/) — the in-portal Lessons tab is deprecated.)
 
 ## Learn More

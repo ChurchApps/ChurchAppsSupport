@@ -60,4 +60,5 @@ Group attendance is especially valuable for [small group](../groups/creating-gro
 ## Related Pages
 
 - [Recording Attendance](recording-attendance.md) -- manually enter attendance for a group session
+- [Headcount Entry & Trend](headcount-entry.md) -- a simpler total-count alternative, with its own weekly trend chart
 - [Check-In](check-in.md) -- set up self check-in so attendance is recorded automatically

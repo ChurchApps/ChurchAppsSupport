@@ -60,7 +60,7 @@ ChurchApps supports GDPR compliance for churches with members in the UK or Europ
 ChurchApps provides tools to help churches respond to data subject requests:
 
 - **Right of Access (Article 15)** — Members can request a copy of their personal data by contacting their church. Administrators can export any person's data from the **Data Management** section on the person detail page in B1.church Admin.
-- **Right to Erasure (Article 17)** — Members can request account deletion by contacting their church. Administrators can anonymize a person's data across all modules from the **Data Management** section on the person detail page. Anonymization replaces personal information with generic values while preserving aggregate records (donation totals, attendance counts) needed for church financial reporting.
+- **Right to Erasure (Article 17)** — Members can request account deletion themselves from their Profile page (see [Reviewing Account Deletion Requests](../profile/account-deletion.md)), or by contacting their church directly. Administrators can also anonymize a person's data across all modules from the **Data Management** section on the person detail page. Anonymization replaces personal information with generic values while preserving aggregate records (donation totals, attendance counts) needed for church financial reporting.
 - **Right to Restriction (Article 18)** — Members can request restriction of processing by contacting their church, including opting out of communications.
 - **Right to Data Portability (Article 20)** — Administrators can export personal data in a structured, machine-readable JSON format on behalf of members who request it.
 

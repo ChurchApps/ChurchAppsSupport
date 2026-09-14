@@ -39,6 +39,15 @@ When you open the **Songs** page, your songs are displayed as cards. Each card s
 After adding a song, click on it to review and update its details, add arrangements, or attach external links like YouTube videos or chord charts.
 :::
 
+### Free Songs from WorshipCommons
+
+Your search results may also include a **WorshipCommons — free** section alongside the regular results. These are Sunday-ready songs from [WorshipCommons](https://worshipcommons.org) that have been reviewed and licensed for worship use. Each result shows a license badge -- **Free for worship** or **Public domain** -- so you know the terms before you add it.
+
+- Click a WorshipCommons result to add it to your library, just like a regular search result.
+- Click **View on WorshipCommons** to open the original listing in a new tab.
+
+Only songs that have passed WorshipCommons' review process appear here, so the selection may be smaller than the main song database.
+
 ## Viewing and Editing a Song
 
 Click on any song card to open its detail page. From here you can:

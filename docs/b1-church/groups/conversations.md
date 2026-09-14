@@ -26,12 +26,12 @@ The Conversations tab on your group page is a space where group members can post
 
 ## Discussions and Announcements
 
-The Conversations tab may show two sub-tabs:
+The Conversations tab may show two sub-tabs, depending on which feeds your church has turned on for this group:
 
-- **Discussions** -- A space where any group member can post messages and reply to others. This is the default view and is always available.
-- **Announcements** -- Messages posted by group leaders that are important for all members to see. Regular members can read announcements but only leaders can create them.
+- **Discussions** -- A space where any group member can post messages and reply to others.
+- **Announcements** -- Messages posted by group leaders that are important for all members to see. Regular members can read announcements and react to them, but only leaders can post. If you try to post as a regular member, you'll see a note that only leaders can post announcements and to reply by direct message instead.
 
-If there are no announcements and you are not a leader, you will only see the Discussions view without the tab bar.
+If your church has only turned on one of the two feeds for this group, you'll see just that feed with no tab bar. If both are turned off, the group has no Conversations tab at all.
 
 ## Posting a Message
 

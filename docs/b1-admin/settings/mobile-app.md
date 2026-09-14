@@ -61,9 +61,16 @@ Keep your tab count manageable. Three to five tabs works well for most churches.
 
 The **Member portal** item in the same Mobile section holds the settings that govern the member directory and private messaging in the B1.church experience:
 
-- **Directory Approval Group** -- The group that reviews member directory updates before they are applied.
+- **Directory Approval Group** -- The group that reviews member directory updates, and [account deletion requests](../profile/account-deletion.md), before they take effect.
 - **Show in Directory** -- Who can appear in the member directory (Staff Only through Everyone).
-- **Visibility Preferences** -- Default visibility for member addresses, phone numbers, and email addresses.
+- **Visibility Preference** -- Sets the church-wide default for members who haven't chosen their own setting yet. **Address**, **Phone Number**, and **Email** each have their own dropdown, with the same five levels available everywhere visibility is configured:
+  - **Everyone** -- visible to anyone, including anonymous visitors
+  - **Members** -- visible only to people with a Member or Staff record
+  - **Groups Only** -- visible only to people who share a group with this person
+  - **My Group Leaders and Staff** -- visible only to leaders of a group this person belongs to, plus staff
+  - **Staff Only** -- visible only to staff with the People &gt; View permission, and to the person themselves
+
+  Members can override these defaults for their own record from the **Privacy** tab of their profile in the B1.church PWA -- see [Editing Your Profile](/docs/b1-church/getting-started/me-page).
 - **Minimum Age for Private Messages** -- A child-safety control. B1 will not open a **new** private-message conversation when either person is under this age, based on their birthdate (household role is used as a fallback when no birthdate is on file). People under the age remain fully visible in the directory -- only direct messaging is blocked, in **both directions**, for everyone including staff. Group conversations and messaging a child's parents still work. Options are Off, 13, 16, or 18; the default is **18**. Existing conversations are not affected.
 
 :::tip

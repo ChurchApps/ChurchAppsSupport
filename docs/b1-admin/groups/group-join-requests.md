@@ -82,6 +82,14 @@ When you approve a request, the person becomes a regular group member. You can l
 Providing a decline reason helps the person understand why their request wasn't approved and may encourage them to try again later or explore other groups.
 :::
 
+## Approving from the Tasks Page
+
+Every join request also creates a task under **Serving &rarr; Tasks**, titled "*Person* requested to join *Group*." It's assigned to the group's leaders -- or, if the group has no leader yet, to any staff with the **Group Members &gt; Edit** permission.
+
+Opening the task shows the requester's name, the group, and their optional message, with **Approve** and **Decline** buttons right on the task card (Decline opens the same optional reason field described above). This gives leaders a second, notification-driven way to act on a request without navigating to the group's Join Requests tab.
+
+Deciding a request from either place -- the group's Join Requests tab or its Tasks card -- closes it everywhere, so leaders never see a stale task for a request someone already handled.
+
 ## Notifications
 
 The join request system automatically sends notifications:

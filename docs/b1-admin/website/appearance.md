@@ -69,20 +69,23 @@ Customize your website's navigation bar colors for both solid and transparent mo
 
 For detailed instructions, see [Navigation Styles](./navigation-styles.md).
 
-## Site Widgets
+## Announcement & Widgets
 
 Site widgets appear on every page of your site, floating above the page content:
 
 - **Announcement Banner** -- A dismissible bar at the top of your site for time-sensitive messages, like an upcoming event or a service change.
 - **Launcher** -- A floating button that opens a quick-access menu, for example links to give, check in, or view the bulletin.
 
-1. Click **Site Widgets** in the Style Settings panel.
+1. Click **Announcement & Widgets** in the Style Settings panel.
 2. Turn on the widgets you want and configure their text, links, and colors.
 3. Click **Save**.
 
-## Analytics
+## Redirects & Analytics
 
-Add your **Google Analytics 4 Measurement ID** in the Style Settings panel to track visitor traffic on your website.
+The **Redirects & Analytics** panel in Style Settings holds two unrelated but commonly-needed settings:
+
+- **Analytics** -- Add your **Google Analytics 4 Measurement ID** to track visitor traffic on your website.
+- **Redirects** -- Map an old URL path to a new one, so links to a page you moved or renamed keep working instead of 404ing. Enter the old **From** path and the new **To** path, then click **Save**.
 
 ## Custom CSS and JavaScript
 

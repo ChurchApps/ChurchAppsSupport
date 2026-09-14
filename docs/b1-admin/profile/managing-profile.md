@@ -56,10 +56,13 @@ Your theme preference is saved to your account and will apply across all your se
 
 ## Account Deletion
 
-At the bottom of the Profile page, you will find the option to permanently delete your account. This action removes your account and associated data and cannot be undone.
+At the bottom of the Profile page, you will find the option to delete your account.
+
+- If your church has **not** configured a Directory Approval Group, clicking **Delete my account** removes your account and associated data immediately, and this cannot be undone.
+- If your church **has** configured a Directory Approval Group, your request is sent to that group for review instead. The button is disabled while the request is pending, and you'll be notified once your church approves or declines it. See [Reviewing Account Deletion Requests](./account-deletion.md) for what happens next.
 
 :::warning
-Account deletion is permanent and cannot be reversed. Make sure you truly want to remove your account before proceeding.
+Account deletion — whether immediate or approved by your church — is permanent and cannot be reversed.
 :::
 
 :::info

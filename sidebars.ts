@@ -58,6 +58,7 @@ const sidebars: SidebarsConfig = {
             'b1-admin/attendance/check-in',
             'b1-admin/attendance/checkin-safety',
             'b1-admin/attendance/labels',
+            'b1-admin/attendance/headcount-entry',
           ],
         },
         {
@@ -204,6 +205,8 @@ const sidebars: SidebarsConfig = {
           link: { type: 'doc', id: 'b1-admin/profile/index' },
           items: [
             'b1-admin/profile/managing-profile',
+            'b1-admin/profile/account-deletion',
+            'b1-admin/profile/approving-profile-changes',
             'b1-admin/profile/devices',
           ],
         },
@@ -239,6 +242,7 @@ const sidebars: SidebarsConfig = {
             'b1-church/getting-started/logging-in',
             'b1-church/getting-started/navigating',
             'b1-church/getting-started/me-page',
+            'b1-church/getting-started/editing-your-profile',
             'b1-church/getting-started/installing-pwa',
             'b1-church/getting-started/notification-preferences',
           ],

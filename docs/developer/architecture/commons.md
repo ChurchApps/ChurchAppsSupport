@@ -20,6 +20,10 @@ Approving a submission runs a product-specific **publish hook** (`Api/src/module
 
 `CommonsSubmissionController` (`Api/src/modules/commons/`) is the end-user-facing API: create a draft, presign and attach files, submit for review, or withdraw. Its actual clients are external producer sites (the WorshipCommons site, Lessons.church, FreeShow, the B1 website template gallery) — not B1Admin.
 
+## Church-facing consumption
+
+Beyond moderation, B1Admin also reads from the commons spine directly: its Serving → Songs "Add Song" search queries `GET /songs?sundayReady=true` alongside the existing external song database, surfacing published WorshipCommons songs that staff have marked Sunday-ready (see the listen gate below) with a license badge. Selecting one links the new `SongDetail` back to its source via `songDetailLinks`. This is the one path where an individual church's B1Admin touches commons data directly, rather than through the staff-only Server Admin tools. See the support doc's [Free Songs from WorshipCommons](/docs/b1-admin/serving/songs#free-songs-from-worshipcommons) section for the church-facing description.
+
 ## Moderation queue
 
 The queue lives in **B1Admin → Server Admin → Commons** (`B1Admin/src/serverAdmin/components/CommonsTab.tsx`), gated by the `Permissions.server.admin` permission — the same one that gates Churches/Impersonate/Jobs on that page. This is a ChurchApps-staff-only internal tool, not something individual churches see.
@@ -28,7 +32,7 @@ Three sub-tabs:
 
 - **Queue** — every pending submission across all products, filterable by product/asset type. Each row shows a new-asset vs. edit-by-author vs. edit-by-third-party badge, the submitter's approval track record, a field/file diff summary, and age (flagged past 72h). **Review** opens a drawer with field-level diffs, file previews, and an embedded read-only product preview; Approve/Reject support keyboard shortcuts (j/k to navigate, a/r to act).
 - **Reports** — copyright and policy/quality reports on published assets, split into two queues plus resolved history. A staff member claims a report, then resolves it with a resolution (upheld/dismissed/duplicate) and an action (none/unpublish/remove).
-- **Assets** — a searchable browser of published content with per-asset actions: feature, unpublish/republish, or remove (reason: copyright/policy).
+- **Assets** — a searchable browser of published content with per-asset actions: feature, unpublish/republish, or remove (reason: copyright/policy). For songs, a **listen gate** here is how a song becomes "Sunday-ready": staff mark it once they've listened through every published key and confirmed the score, chords, and slides are all present.
 
 Every endpoint under `/commons/admin/*` (`CommonsAdminController.ts`) independently re-checks the server-admin permission.
 

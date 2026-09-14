@@ -61,6 +61,10 @@ You can automate recurring tasks so they are created on a schedule. See [Automat
 When you need to move many people through the same set of stages -- such as new-visitor follow-up or a membership process -- use [Workflows](./workflows.md). Workflows turn tasks into cards on a drag-and-drop board with steps, due dates, and routing.
 :::
 
+:::info
+Some tasks are created automatically by other parts of B1 and open to a special review card instead of the standard note/reassign view -- [group join requests](../groups/group-join-requests.md#approving-from-the-tasks-page), [profile change requests](../profile/approving-profile-changes.md), and [account deletion requests](../profile/account-deletion.md) all work this way.
+:::
+
 ## Next Steps
 
 - Move people through a multi-step process with [Workflows](./workflows.md)

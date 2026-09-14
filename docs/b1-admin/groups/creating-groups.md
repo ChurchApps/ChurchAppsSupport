@@ -41,12 +41,18 @@ Once your group is created, you can fill in additional details:
      - **Closed** -- Members must be added manually by leaders or administrators
    - **Labels** -- Assign one or more descriptive labels to the group (for example, "In-Person", "Online", "New Members Welcome"). Labels are freeform tags you define; check all that apply. Labels can be used to filter groups in the Groups Browser website element.
    - **Confidential group** -- Hide this group and its roster from public pages, the group finder, and non-members. Use this for sensitive groups like recovery or counseling ministries; only the group's members and church staff can see it.
+   - **Discussions** -- Turns the group's chat feed on or off, where any member can post. On by default.
+   - **Announcements** -- Turns on a second, leader-only chat feed -- members can read and react, but only leaders can post. On by default.
    - **Attendance Tracking** -- Enable this if you want to record [attendance](../attendance/tracking-attendance.md) for this group.
    - **Service Times** -- Associate the group with specific church service times if applicable. See [Attendance Setup](../attendance/setup.md) for details on service times.
 4. Click **Save** to apply your changes.
 
 :::tip
 Adding a clear description and meeting time helps members know what to expect when they join a group.
+:::
+
+:::info
+Turning off both Discussions and Announcements removes the Messages tab from the group entirely in the member portal. Turning off just one hides its tab; members are moved to whichever feed is still on. Existing messages are kept either way -- the toggles only control new posting.
 :::
 
 ## Duplicating a Group

@@ -54,6 +54,15 @@ Each sermon entry can include:
 - **Description** -- A summary of the sermon content
 - **Thumbnail** -- A preview image shown in your sermon library
 - **Video/Audio Links** -- URLs to the sermon media on YouTube, Vimeo, Facebook, or a custom host
+- **Audio File URL (for podcast)** -- A direct link to an MP3/M4A file for this sermon. Either paste a URL or click **Upload Audio** to upload a file and fill it in automatically. Only sermons with this field (or a direct video file link) set are included in your podcast feed.
+
+## Your Podcast Feed
+
+Once at least one sermon has an audio or video file attached, B1 Admin generates a podcast RSS feed for your church automatically -- there's nothing to turn on. Find it in the **Podcast Feed** panel below the sermon list: click the copy icon to copy the feed URL, then submit that URL to Apple Podcasts, Spotify, or any other podcast directory.
+
+:::info
+Sermons that only link to an embedded player (like a YouTube or Vimeo video ID) won't appear in the podcast feed -- podcast apps need a direct, downloadable media file. Add an **Audio File URL** to include a sermon.
+:::
 
 ## Scheduling a Sermon for Live Stream
 
