@@ -39,12 +39,20 @@ The service order is a list of items arranged in the sequence they will occur du
 ## Adding Items to the Service Order
 
 1. On the **Service Order** tab, click **Add Item**.
-2. Choose the type of element you want to add (for example, a song from your library, a custom item, or a heading).
+2. Choose the type of element you want to add (for example, a song from your library, a custom item, a heading, or an **External Item**).
 3. Enter the details for the item, such as the title and any notes.
 4. Click **Save**.
 
 :::tip
 You can add songs directly from your [Songs](./songs.md) library. This links the song details, including lyrics and arrangements, to your service plan so your worship team has everything they need.
+:::
+
+### Importing Multiple Items from an External Provider
+
+Choosing **External Item** opens a browser for your linked lesson providers instead of a single-item form. Browse (or search) into a provider's content, and check the box next to each section or action you want. The dialog tracks how many you have selected (for example, "3 selected") -- click **Import (3)** to add all of them to the service order at once, instead of repeating the add-item flow for each one.
+
+:::tip
+This is the fastest way to pull a whole lesson's worth of sections and cues into a service order in one pass, rather than adding each item individually.
 :::
 
 ## Reordering Items
@@ -78,6 +86,19 @@ Each item and section shows how long it runs and when it starts:
 The service order is specific to each plan. Changes you make here only affect the selected plan and will not alter other plans or your song library.
 :::
 
+### Bulk Selecting and Deleting Items
+
+To clear out several items in a section at once instead of deleting them one by one:
+
+1. Click **Select items** on the section header.
+2. Check the items you want to remove, or check **Select all in section** to grab everything directly under that section.
+3. Click **Delete Selected** and confirm.
+4. Click **Done selecting** to exit selection mode.
+
+:::info
+Bulk select only applies to a section's direct children, not items nested inside a sub-section folder.
+:::
+
 ## Including Items in Specific Service Times
 
 If your plan has more than one service time (for example, an 8 a.m. and 10 a.m. service), you can choose which services each item should appear in. This is useful when an announcement is only relevant to one service, or when a song is sung in one service but not another.
@@ -96,7 +117,7 @@ The **Include in Services** section only appears when the plan has more than one
 
 ## Sharing the Service Order
 
-Once your service order is complete, you can print the full plan (including the service order) from the plan detail page. This gives your team a complete rundown of the service.
+Once your service order is complete, you can print the full plan (including the service order) from the plan detail page. This gives your team a complete rundown of the service. When **Show Volunteer Names** is on for the print, each section header also prints with the assigned volunteer's position next to it, so your team can see who's covering that section without opening the app.
 
 ## Next Steps
 

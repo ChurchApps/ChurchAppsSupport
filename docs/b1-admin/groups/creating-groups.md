@@ -20,11 +20,10 @@ Creating a group in B1 Admin is straightforward. You will set up a category, nam
 
 ## Adding a New Group
 
-1. Navigate to the **B1 Admin dashboard**.
-2. Click on the **Groups** tab.
-3. Click **Add Group** and enter a **Category Name**. Categories help you organize related groups together (for example, "Small Groups," "Ministries," or "Committees"). If a category already exists, you can select it from the list.
-4. Enter the **Group Name**.
-5. Click **Add**. Your new group will appear in the list under the chosen category.
+1. Open the **section menu** in the top-left corner of your B1 Admin dashboard and choose **People**, then click the **Groups** tab in the navigation bar.
+2. Click **Add Group** and enter a **Category Name**. Categories help you organize related groups together (for example, "Small Groups," "Ministries," or "Committees"). If a category already exists, you can select it from the list.
+3. Enter the **Group Name**.
+4. Click **Add**. Your new group will appear in the list under the chosen category.
 
 ## Configuring Group Settings
 

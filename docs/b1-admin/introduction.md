@@ -36,6 +36,19 @@ For further support, please email [support@churchapps.org](mailto:support@church
 Start with the [Settings](./settings/) page to configure your church name, branding, and team permissions. This ensures everything else you set up will display correctly.
 :::
 
+## Finding Anything Quickly with the Command Palette
+
+Instead of clicking through menus, you can jump straight to a person, group, plan, fund, or any admin page from anywhere in B1 Admin:
+
+1. Press **Ctrl+K** (or **Cmd+K** on a Mac), or press **/** while you are not typing in a text field, to open the search bar. You can also click the **Search or jump...** button in the top navigation.
+2. Start typing a name or the page you want (for example, a person's name, "batches", or "songs").
+3. Results are grouped by type -- people, groups, plans, funds, and pages to jump to. Use the arrow keys to move between results and **Enter** to select one, or click a result with your mouse.
+4. Press **Esc** to close the search bar without selecting anything.
+
+:::tip
+The command palette is often the fastest way to reach a page buried in a sub-menu -- type part of the page name instead of navigating through Settings, Serving, or Donations by hand.
+:::
+
 ## Next Steps
 
 After watching this introduction, explore these key features:

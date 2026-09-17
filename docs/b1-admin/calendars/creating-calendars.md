@@ -20,7 +20,7 @@ Creating a calendar in B1 Admin lets you build a curated view of events by conne
 
 ## Creating a New Calendar
 
-1. In the B1 Admin, navigate to **Website**, then to the **Calendars** section.
+1. In the B1 Admin, navigate to **Calendars** in the main menu.
 2. Click **Add Calendar**.
 3. Enter a **name** for your calendar (for example, "Youth Ministry Events" or "Main Church Calendar").
 4. Add an optional **description** to help your team understand what this calendar is for.

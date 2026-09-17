@@ -53,6 +53,7 @@ A label is built from blocks — individual pieces of content positioned on the 
   - `securityCode` — the randomly generated pickup security code
   - `children` — list of children (for pickup slips)
   - `person.nametagNotes` — any special notes on the person's record
+  - `person.isBirthdayWeek` — true if the person's birthday falls within the current week
   - `campus` — the campus name
 - **Text** — static text you type in (for headings, labels, or instructions)
 - **Barcode** — a barcode encoding the security code
@@ -64,7 +65,7 @@ Each block has **X**, **Y**, **Width**, and **Height** fields expressed as perce
 - **Font Size** — text size in points
 - **Bold** — toggle bold text
 - **Align** — left, center, or right text alignment
-- **Condition** — optionally hide the block if a field is empty (for example, only show nametagNotes if it has a value)
+- **Condition** — optionally hide the block if a field is empty (for example, only show nametagNotes if it has a value). This also works with `person.isBirthdayWeek` to show a birthday graphic or text only on nametags for kids with a birthday that week.
 
 ### Saving
 

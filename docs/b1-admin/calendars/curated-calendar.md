@@ -21,11 +21,10 @@ A curated calendar aggregates events from multiple groups into one unified calen
 
 ## Creating a Curated Calendar
 
-1. From the B1 Admin, navigate to the **Website** section.
-2. Click **Calendars** in the top navigation.
-3. Click **Add Calendar** to create a new curated calendar.
-4. Give your calendar a **name** (for example, "Church Events" or "This Week at Our Church").
-5. Click **Create** to save it.
+1. From the B1 Admin, navigate to **Calendars** in the main menu.
+2. Click **Add Calendar** to create a new curated calendar.
+3. Give your calendar a **name** (for example, "Church Events" or "This Week at Our Church").
+4. Click **Create** to save it.
 
 ## Adding Groups to Your Calendar
 

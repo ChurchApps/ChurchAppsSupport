@@ -58,6 +58,24 @@ To edit a donation, click the **Edit** button on its row in the batch. You can c
 The batch page header updates automatically to show the total number of donations and the combined dollar amount as you add or edit entries. Use this to reconcile against your deposit slip.
 :::
 
+## Refunding a Donation
+
+If a donor was charged in error or asks for their money back, you can refund a completed donation directly from its edit screen -- no need to go to your payment gateway's dashboard.
+
+1. Open the donation and click **Edit**.
+2. Click the **Refund** button next to Delete at the bottom of the form.
+3. Confirm the dialog: "Refund this donation in full through the payment gateway? This cannot be undone."
+
+The donation is refunded in full through the original payment gateway and marked **Refunded** in your donation lists.
+
+:::warning
+Refunds are full refunds only -- there is no way to refund a partial amount from B1 Admin. The refund also cannot be undone once confirmed.
+:::
+
+:::info
+The **Refund** button only appears for donations that were paid online (they have a gateway transaction) and are still in **Complete** status. Manually entered donations (cash, check) do not have a gateway transaction to refund -- edit or delete those instead.
+:::
+
 ## Next Steps
 
 - Review your entries using [Donation Reports](donation-reports.md) to verify accuracy

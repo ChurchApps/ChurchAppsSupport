@@ -81,7 +81,7 @@ Duplication is handy for recurring events where the registration questions stay 
 
 ## Configuring Form Properties
 
-You can update your form's name and settings at any time. For Stand Alone forms, you will also see a unique **public URL** that you can share with anyone.
+You can update your form's name and settings at any time. For Stand Alone forms, you will also see a unique **public URL** that you can share with anyone, along with a **Description** field -- text shown above the questions on the public form page, useful for telling people what the form is for before they start filling it out.
 
 :::tip
 Stand Alone forms are great for event registrations. Share the public URL via email, social media, or embed the form directly on your church website.
