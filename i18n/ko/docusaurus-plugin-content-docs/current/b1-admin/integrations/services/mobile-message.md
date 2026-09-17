@@ -54,8 +54,8 @@ POST 단계의 설정:
   {
     "messages": [
       {
-        "to": "{{step2_phone}}",
-        "message": "선물해주셔서 감사합니다, {{step2_first_name}}!",
+        "to": "`{{step2_phone}}`",
+        "message": "선물해주셔서 감사합니다, `{{step2_first_name}}`!",
         "sender": "YourChurch"
       }
     ]

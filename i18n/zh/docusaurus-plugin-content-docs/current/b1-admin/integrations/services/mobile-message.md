@@ -54,8 +54,8 @@ POST 步骤的设置：
   {
     "messages": [
       {
-        "to": "{{step2_phone}}",
-        "message": "感谢您的礼物，{{step2_first_name}}!",
+        "to": "`{{step2_phone}}`",
+        "message": "感谢您的礼物，`{{step2_first_name}}`!",
         "sender": "YourChurch"
       }
     ]

@@ -54,8 +54,8 @@ POST-trinnets innstillinger:
   {
     "messages": [
       {
-        "to": "{{step2_phone}}",
-        "message": "Takk for gaven, {{step2_first_name}}!",
+        "to": "`{{step2_phone}}`",
+        "message": "Takk for gaven, `{{step2_first_name}}`!",
         "sender": "YourChurch"
       }
     ]

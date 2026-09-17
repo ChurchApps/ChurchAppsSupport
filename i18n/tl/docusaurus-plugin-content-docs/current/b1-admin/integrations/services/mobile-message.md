@@ -54,8 +54,8 @@ Ang POST step's settings:
   {
     "messages": [
       {
-        "to": "{{step2_phone}}",
-        "message": "Thanks for your gift, {{step2_first_name}}!",
+        "to": "`{{step2_phone}}`",
+        "message": "Thanks for your gift, `{{step2_first_name}}`!",
         "sender": "YourChurch"
       }
     ]

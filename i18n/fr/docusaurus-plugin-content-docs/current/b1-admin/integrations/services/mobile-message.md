@@ -54,8 +54,8 @@ Paramètres de l'étape POST :
   {
     "messages": [
       {
-        "to": "{{step2_phone}}",
-        "message": "Merci pour votre don, {{step2_first_name}}!",
+        "to": "`{{step2_phone}}`",
+        "message": "Merci pour votre don, `{{step2_first_name}}`!",
         "sender": "VotreEglise"
       }
     ]

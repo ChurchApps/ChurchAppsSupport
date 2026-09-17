@@ -296,8 +296,8 @@ Authorization: Bearer <token>
 
 {
   "groupId": "group-123",
-  "subject": "This Week's Update - {{churchName}}",
-  "htmlContent": "<p>Hello {{firstName}},</p><p>Here's what's happening this week...</p>"
+  "subject": "This Week's Update - `{{churchName}}`",
+  "htmlContent": "<p>Hello `{{firstName}}`,</p><p>Here's what's happening this week...</p>"
 }
 ```
 

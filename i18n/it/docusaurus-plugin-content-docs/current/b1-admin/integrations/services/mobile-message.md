@@ -54,8 +54,8 @@ Le impostazioni del passaggio POST:
   {
     "messages": [
       {
-        "to": "{{step2_phone}}",
-        "message": "Grazie per il tuo regalo, {{step2_first_name}}!",
+        "to": "`{{step2_phone}}`",
+        "message": "Grazie per il tuo regalo, `{{step2_first_name}}`!",
         "sender": "TuaChiesa"
       }
     ]

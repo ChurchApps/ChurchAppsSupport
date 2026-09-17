@@ -26,7 +26,7 @@ Sa B1 Admin, buksan ang **section menu** sa top-left corner, pumili ng **Setting
 1. I-click ang **Add Template**.
 2. Bigyan ng pangalan ang template (halimbawa, "Welcome New Member").
 3. Magpasok ng subject line.
-4. I-compose ang body - makakagamit mo ang rich text editor, HTML, o markdown. Ang dynamic fields ay available bilang {{fieldName}}.
+4. I-compose ang body - makakagamit mo ang rich text editor, HTML, o markdown. Ang dynamic fields ay available bilang `{{fieldName}}`.
 5. I-click ang **Save**.
 
 ## Mga Kaugnay na Artikulo

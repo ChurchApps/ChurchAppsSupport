@@ -54,8 +54,8 @@ As configurações do passo POST:
   {
     "messages": [
       {
-        "to": "{{step2_phone}}",
-        "message": "Obrigado por seu presente, {{step2_first_name}}!",
+        "to": "`{{step2_phone}}`",
+        "message": "Obrigado por seu presente, `{{step2_first_name}}`!",
         "sender": "YourChurch"
       }
     ]
