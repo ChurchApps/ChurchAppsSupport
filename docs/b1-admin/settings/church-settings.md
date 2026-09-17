@@ -30,15 +30,17 @@ The Church Settings page is where you configure your church's basic information,
 
 ## Setting Up Your Subdomain
 
-Your church gets a free subdomain at **yourchurch.b1.church**. This is the web address where members and visitors can access your church's online presence.
+Your church gets a free subdomain at **yourchurch.1.church**. This is the web address where members and visitors can access your church's online presence.
 
 1. On the Settings page, locate the **Subdomain** field.
-2. Enter your preferred subdomain (for example, "gracechurch" for gracechurch.b1.church).
+2. Enter your preferred subdomain (for example, "gracechurch" for gracechurch.1.church).
 3. Save your changes.
 
 :::info
 Your subdomain must be unique across all ChurchApps churches. If your preferred name is taken, try adding your city or state (for example, "gracechurch-dallas").
 :::
+
+If you want visitors to reach your site at your own domain (for example, **www.gracechurch.org**), see [Custom Domain](./custom-domain.md).
 
 ## Configuring Branding
 

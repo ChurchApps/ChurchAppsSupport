@@ -162,6 +162,7 @@ const sidebars: SidebarsConfig = {
           link: { type: 'doc', id: 'b1-admin/settings/index' },
           items: [
             'b1-admin/settings/church-settings',
+            'b1-admin/settings/custom-domain',
             'b1-admin/settings/campuses',
             'b1-admin/settings/custom-fields',
             'b1-admin/settings/roles-permissions',

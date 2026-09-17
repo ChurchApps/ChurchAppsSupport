@@ -14,7 +14,7 @@ The Settings section is where you configure your church's account, branding, and
 
 The Settings area is organized into the following sub-sections:
 
-1. **Settings** -- Configure your church's basic information, branding, and subdomain. See [Church Settings](./church-settings.md) for details.
+1. **Settings** -- Configure your church's basic information, branding, and subdomain. See [Church Settings](./church-settings.md) for details. To use your own domain name (e.g. yourchurch.org), see [Custom Domain](./custom-domain.md).
 2. **Campuses** -- Add and manage multiple physical locations for your church. Once created, campuses appear on person profiles, in attendance setup, and in the Demographics dashboard. Reached as a card on the main Settings page rather than a separate navigation item. See [Campuses](./campuses.md) for details.
 3. **Custom Fields** -- Define your own fields to track on people (a date, number, yes/no answer, or pick-list), then fill them in on profiles and search on them. Also reached as a card on the main Settings page. See [Custom Fields](./custom-fields.md) for details.
 4. **Email Templates** -- Save reusable email content for sending manually or from a workflow. See [Email Templates](./email-templates.md) for details.
