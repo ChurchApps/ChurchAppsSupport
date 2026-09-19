@@ -146,21 +146,40 @@ All of this is B1App-side rendering over ContentApi data — the API stores, the
 
 ## AI generation (AskApi)
 
-Page and site generation runs in **AskApi**, a separate service, under the `/website` controller. It authenticates with the same `CustomAuthProvider` JWT as everything else and is **stateless with respect to content**: every endpoint returns JSON and the caller (B1Admin) persists the result through ContentApi (`POST /content/pages/temp/ai` saves a generated page-sections-elements bundle in one call).
+Page and site generation runs in **AskApi**, a separate service, under the `/website` controller. It authenticates with the same `CustomAuthProvider` JWT as everything else and is **stateless with respect to content**: every endpoint returns JSON and the caller (B1Admin) persists the result through ContentApi (`POST /content/pages/importTree` creates a page with its full nested section/element tree in one call; it always inserts under the caller's church and ignores ids in the body).
+
+### Page generation (`planPage` → `writePage`)
+
+The "AI" page template in B1Admin's `AddPageModal` uses a low-cost pipeline (`AskApi/src/helpers/SiteGenHelper.ts`) built on one rule: **no model ever emits builder JSON**. Two models split the work through the Vercel AI Gateway (plain HTTP, SSM key `/{env}/aiGatewayApiKey` or `AI_GATEWAY_API_KEY`):
+
+- **JEV** (`typesafe-ai/jev`) — a typed-decision model that returns choices, scores and booleans with probabilities but cannot write text. It picks each section in turn from a fixed template library, scores layouts, fact-checks copy, and picks stock photos and icons. Input costs roughly 1/24th of Haiku and output is free, so ~90 calls per page cost a fraction of a cent.
+- **Claude Haiku 4.5** — fills the named, length-capped text slots of the chosen templates. This is ~90% of the per-page cost (about 3 cents per page in total).
+
+| Phase | Endpoint | What happens |
+|-------|----------|--------------|
+| 1 | `POST /website/planPage` | Samples 10 candidate layouts from JEV's per-round probabilities (hero → section count → each section → closer), de-duplicates, has JEV score each for fit/flow/gaps, and returns the top 3 plus a writing voice and a `suggestedStyle` (palette + fonts; returned but not applied by B1Admin). ~3s |
+| 2 | `POST /website/writePage` (one call per candidate, in parallel) | Haiku writes the slot copy; JEV fact-checks every section against the user's description; flagged sections get one Haiku rewrite; a code scrub drops sentences with stock church-site phrases (unless the church's own description uses them); JEV picks visuals and scores the result. Returns a ready-to-save section tree and a score. ~12s |
+| 3 | `POST /content/pages/importTree` | B1Admin saves the best-scoring tree and opens the preview |
+
+Each phase is its own request so every call stays inside the API Gateway 29-second limit. Templates in `SiteGenHelper.buildTree` are fixed section + element trees from the catalog (`text`, `row`/`column`, `card`, `iconFeature`, `faq`, `table`, `testimonial`, `textWithPhoto`, `box`, `map`, `sermons`) and reference theme tokens (`var(--accent)`, `var(--lightAccent)`…), so generated pages inherit the church's existing appearance settings. Adding a section template means adding its slot list to `SECTIONS` and its tree to `buildTree`; the unit test walks every template and validates the tree.
+
+Generated copy only states facts the user typed: the prompt is the single source of truth, which is why the dialog asks for real details (service times, names, ministries).
+
+### Other endpoints
 
 :::info
-As of 2026-07-03, B1Admin's entry points to this pipeline — the site "AI" template in `AddPageModal`, the `SectionToolbar` rewrite button, and the pages-list "Generate Site" button — are commented out client-side while the feature is reworked. The AskApi endpoints below are unaffected and still respond; only the B1Admin UI is hidden.
+The `SectionToolbar` rewrite button and the pages-list "Generate Site" button in B1Admin remain commented out client-side. The AskApi endpoints below still respond; only that UI is hidden.
 :::
 
 | Endpoint | Purpose |
 |----------|---------|
-| `POST /website/generatePageOutline` → `generateSection` | The original two-step page flow: outline first, then one call per section. B1Admin's "AI" page template in `AddPageModal` drives this — outline, then parallel section generation, then preview |
+| `POST /website/generatePageOutline` → `generateSection` | The original two-step page flow (outline, then one LLM call per section emitting element JSON). Superseded in B1Admin by `planPage`/`writePage` because of cost; kept for API consumers |
 | `POST /website/generateSite` | Whole-site generation. **Two-phase by design**: a `planOnly: true` call returns just the multi-page plan (one fast model call), then the client requests full content — keeping every request inside the Lambda/API-Gateway timeout |
 | `POST /website/rewriteSection` | Structure-preserving rewrite: the model may only change text-bearing answers. A recursive structure signature (ids + types + order) is compared before and after; any mismatch returns the original section with `fallback: true` instead of corrupted structure |
 | `POST /website/generateAltText` | Vision call over up to 20 image URLs; returns concise alt text (≤125 chars, "photo of" prefixes stripped) |
 | `POST /website/generateMetaDescription` | One SEO meta description (≤155 chars) from the page's text content — wired to the Generate button on B1Admin's page settings |
 
-Prompts are markdown files under `AskApi/config/instructions/`, including the element catalog the model generates from. Two design points keep the catalog honest: the client passes `availableElementTypes` on every request (the prompt may only use types from that list — the server never hardcodes the full set), and the API's MCP `describe_page_builder` tool carries the same guide for AI agents working through [MCP](../api/mcp). Models are Anthropic Claude via OpenRouter — 3.5 Haiku for section content (latency), 3.5 Sonnet for outlines, site plans, and vision — with an OpenAI fallback when no OpenRouter key is configured.
+Prompts for these endpoints are markdown files under `AskApi/config/instructions/`, including the element catalog the model generates from. Two design points keep the catalog honest: the client passes `availableElementTypes` on every request (the prompt may only use types from that list — the server never hardcodes the full set), and the API's MCP `describe_page_builder` tool carries the same guide for AI agents working through [MCP](../api/mcp). Models are Anthropic Claude via OpenRouter — 3.5 Haiku for section content (latency), 3.5 Sonnet for outlines, site plans, and vision — with an OpenAI fallback when no OpenRouter key is configured.
 
 ## Conversational forms
 
