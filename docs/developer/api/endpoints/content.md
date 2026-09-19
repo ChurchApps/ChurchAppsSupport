@@ -24,6 +24,7 @@ Base path: `/content/pages`
 | GET | `/` | JWT | — | List all pages for the church |
 | POST | `/duplicate/:id` | JWT | Content.Edit | Duplicate a page with all sections and elements |
 | POST | `/temp/ai` | JWT | Content.Edit | Save an AI-generated page (page, sections, and elements in one call) |
+| POST | `/importTree` | JWT | Content.Edit | Create a page from a nested tree (`title`, `url`, `sections[].elements[]…`). Always inserts under the caller's church; ids in the body are ignored. Rows must include their `column` children. Max 30 sections / 500 elements |
 | POST | `/` | JWT | Content.Edit | Create or update pages (batch) |
 | DELETE | `/:id` | JWT | Content.Edit | Delete a page |
 
