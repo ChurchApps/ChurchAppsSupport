@@ -59,12 +59,17 @@ This is the fastest way to pull a whole lesson's worth of sections and cues into
 
 Drag items by the handle on the left of each row to rearrange the order — drop onto the blue line where you want the item to land, or onto a section header to move it into that section. The sequence shown on screen is the order your team will follow during the service.
 
-## Grouping Actions Under a Section
+## Editing a Lesson Section
 
-Lesson and curriculum sections can hold their own step-by-step actions (for example, the individual cues inside a "Large Group" section). Click **Expand to Actions** on a section to break it out into its action items -- the section stays in place as a collapsible **folder**, with its actions nested underneath it.
+Lesson and curriculum sections (for example, "Large Group" or "Engage 1") hold their own script lines, slides and videos. To change what is inside one, click the section in the service order. The section opens showing everything in it: spoken and instruction lines appear as full text marked **Say**, **Do** or **Note**, and slides or videos appear with a thumbnail.
 
-- Click the section's folder toggle to expand or collapse its actions without leaving the service order.
-- **Collapse to Section** reverses this for plans built before folders existed, turning a flat run of actions back into a single section item. New expansions always create a folder, so you generally only need this on older plans.
+- Click the **x** beside any line to take it out of your plan. It stays in the list, crossed out, with an arrow to put it back.
+- Click any text to reword it. A reworded line offers **restore original wording**.
+- Click **Save**. The section stays a single row in your service order, with a small label such as **6 of 8 items** showing that you have customized it, and its running time updates.
+
+Open the section again at any time to see your changes, put lines back, or choose **Restore original section** to undo all of them. Your edits only affect your plan -- the original lesson is never changed -- and they carry through to printed plans and to what your volunteers see.
+
+If you need an item from the section as its own row (for example, to place a song between two lines), click the arrow at the right end of the section row to show its contents as separate rows. Click the arrow on the first of those rows to fold them back into one. This works the same way for content from any connected provider.
 
 Volunteers assigned to an item show up next to it in the service order, so anyone reviewing the plan can see who's covering each part at a glance.
 
