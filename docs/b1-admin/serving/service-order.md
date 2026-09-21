@@ -120,9 +120,13 @@ By default, every item is included in every service. Excluded service times are 
 The **Include in Services** section only appears when the plan has more than one service time. If you only see one service, edit the plan's **Times** tab to add additional services first.
 :::
 
+### Showing a Different Position per Service
+
+If an item has a **Position** set, each checked service time in **Include in Services** also gets its own **Position for this service** dropdown. Use it when the same section is covered by a different volunteer at each service -- leave it set to **Same as above** to keep the item's default position, or pick a different position to override it just for that service time.
+
 ## Sharing the Service Order
 
-Once your service order is complete, you can print the full plan (including the service order) from the plan detail page. This gives your team a complete rundown of the service. When **Show Volunteer Names** is on for the print, each section header also prints with the assigned volunteer's position next to it, so your team can see who's covering that section without opening the app.
+Once your service order is complete, you can print the full plan (including the service order) from the plan detail page. This gives your team a complete rundown of the service. When **Show Volunteer Names** is on for the print, each section header also prints with the assigned volunteer's position next to it, so your team can see who's covering that section without opening the app. If a heading's position is overridden for specific services, the print shows every distinct position name it resolves to across the services on that plan (for example, "Worship Team / Youth Team").
 
 ## Next Steps
 

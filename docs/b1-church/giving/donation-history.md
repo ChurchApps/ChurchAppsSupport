@@ -22,37 +22,36 @@ When you are logged in, you can view a complete record of your past donations an
 
 1. Log in to your B1.church account.
 2. Navigate to the **Donate** section.
-3. Click **History** in the left panel to view your past donations.
+3. Click the **History** tab to view your past donations.
 
-Your donation history is displayed as a table with the following columns:
+At the top, a **Giving** card shows your total for a selectable period -- **Year to Date**, **Last 30 Days**, **Last 90 Days**, or **All Time** -- pick one from the dropdown. If donations in that period were given in more than one currency, the total is converted to your church currency and a **Converted at current exchange rates** note appears underneath.
+
+Below the total, your recent activity is listed with:
 
 - **Date** -- When the donation was made.
 - **Method** -- How you paid (for example, "Card - Visa" or "Bank - ACH").
 - **Fund** -- Which fund the donation was directed to (for example, General Fund, Building Fund).
-- **Amount** -- The dollar amount of the donation.
+- **Amount** -- The amount of the donation, in the currency it was given.
 
 :::info
-Donations that are still being processed will appear with a "Pending" label next to the fund name and the amount shown in a different color.
+Donations that are still being processed appear with a "Pending" label next to the fund name and the amount shown in a different color.
 :::
 
 ## Exporting and Printing Statements
 
-Click the **download** button in the Donation History header to access export options:
-
-- **Current Year (CSV)** -- Download a CSV file of all your donations from the current year. You can open this in a spreadsheet application.
-- **Current Year (Print)** -- Open a printable giving statement for the current year.
-- **Last Year (CSV)** -- Download a CSV file of all your donations from the previous year.
-- **Last Year (Print)** -- Open a printable giving statement for the previous year.
+Click **Print Statement** above the recent activity list to open a printable giving statement covering the current calendar year in a new tab.
 
 :::tip
-Print your previous year's giving statement early in the new year so you have it ready for tax season. The printable statement includes all the details you need for your records.
+Print your statement early in the new year, before you need it for tax filing, while last year's donations are still fresh in your history.
 :::
 
 ## Recurring Donations
 
-From the **Donate** section, you can also click **Recurring Donations** to manage any scheduled giving you have set up. This section lets you view, update, or cancel recurring donations and manage your saved payment methods.
+If you have any scheduled gifts, a **Recurring** section on the History tab lists each one with its amount, interval, and payment method.
 
-If a recurring donation is charged through **Stripe**, you can also **pause** it instead of canceling -- click the pause icon next to the donation and confirm. Giving stops until you click the same icon to **resume**; a paused donation is marked **Paused** in the list. Recurring donations through other payment providers can still be edited or canceled, but not paused.
+If a recurring donation is charged through **Stripe**, you can **pause** it instead of canceling -- click the pause icon next to the donation and confirm. Giving stops until you click the same icon to **resume**; a paused donation is marked **Paused** in the list. Recurring donations through other payment providers can still be edited or canceled, but not paused.
+
+To add, remove, or change your saved payment methods, use the **Manage** tab.
 
 ## Next Steps
 

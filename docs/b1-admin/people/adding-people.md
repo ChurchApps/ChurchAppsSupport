@@ -50,7 +50,7 @@ The profile also includes several tabs for related information:
 
 - **Notes** — Add notes about the person (pastoral care, follow-ups, etc.)
 - **Groups** — View and manage [group memberships](../groups/group-members.md)
-- **Attendance** — View [attendance records](../attendance/tracking-attendance.md)
+- **Attendance** — View this person's individual visit history, including the campus, service, service time, group, and a **Checked In** column with the kiosk check-in time (shown as a dash for visits recorded without a kiosk check-in). For church-wide trends rather than one person's history, see [Tracking Attendance](../attendance/tracking-attendance.md)
 - **Donations** — View [donation history](../donations/recording-donations.md)
 
 ## Working with Forms

@@ -35,19 +35,25 @@ If you are already logged in when you visit the public donate page, you will be 
 
 ## Member Donation Page (Logged In)
 
-When you are logged in, the donation experience includes additional features:
+When you are logged in, the donation experience includes additional features, organized into four tabs:
 
-1. Click the **Donate** tab (or navigate to **My Donations**).
-2. You will see a panel with three sections:
-   - **Give Now** -- Make a one-time or recurring donation.
-   - **History** -- View your past donations and export records.
-   - **Recurring Donations** -- Manage scheduled giving and payment methods.
-3. Select **Give Now** to open the donation form.
-4. Choose the **fund** you would like to give to and enter your donation amount.
-5. Select an existing saved payment method or enter new payment details.
-6. Submit the form to complete your donation.
+- **Overview** -- Your year-to-date giving total, a campaign progress card (if your church has an active campaign), and your most recent gift with a one-click **Repeat** button.
+- **Donate** -- The donation form.
+- **Manage** -- Your saved payment methods (add, remove, or set a default card or bank account).
+- **History** -- Your past donations, giving totals by period, recurring gifts, and statement exports. See [Donation History](./donation-history.md) for details.
+
+To give:
+
+1. Click the **Donate** tab (or navigate to **My Donations**), then select the **Donate** tab if you land on Overview.
+2. Choose the **fund** you would like to give to and enter your donation amount.
+3. Select an existing saved payment method or enter new payment details.
+4. Submit the form to complete your donation.
 
 After your donation is processed, a success message will appear and your donation will show up in your [donation history](./donation-history.md).
+
+:::info
+If donations you've given were recorded in more than one currency, your Overview year-to-date total and the History period total are converted to your church's currency, with a **Converted at current exchange rates** note underneath. Individual donations in your history still show their original currency.
+:::
 
 ## Payment Methods
 

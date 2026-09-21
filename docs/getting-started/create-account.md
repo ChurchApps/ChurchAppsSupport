@@ -47,7 +47,7 @@ After confirming your email and logging in, you will have the option to either c
 1. Select the option to **create a new church**.
 2. Enter your **church name** and basic information. The registration form will auto-populate your church details if a match is found.
 3. Complete the setup process.
-4. You will be taken to the **B1 Admin dashboard** where you can begin configuring your church.
+4. You will be taken to **Sunday**, the B1 Admin home page, where you can begin configuring your church.
 
 **To join an existing church:**
 

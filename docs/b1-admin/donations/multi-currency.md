@@ -78,6 +78,10 @@ Donation reports display amounts in their original currency:
 - Totals are calculated per currency
 - You can filter by specific currencies
 
+### Converted Totals
+
+Wherever B1 shows a single combined total -- the giving summary KPI cards, a donation batch total, and a fund's total -- donations recorded in a currency other than your church's default are converted to your church currency using current exchange rates, so the total is a single meaningful number instead of adding unlike currencies together. A **Converted at current exchange rates** note appears under the total whenever a conversion was applied. Individual donation line items still display in their original currency.
+
 ### Giving Statements
 
 When generating giving statements:
@@ -112,15 +116,14 @@ When working with multiple currencies:
 
 - **Default currency** -- Set your primary church currency as the default for most transactions
 - **Clear communication** -- Tell donors what currency they're giving in during the checkout process
-- **Consistent reporting** -- Decide whether to report in original currencies or convert to a single currency for summaries
+- **Consistent reporting** -- Combined totals are always converted to your church currency automatically; use the per-donation currency filter when you need to see original amounts
 - **Regular reconciliation** -- Reconcile Stripe payouts with your donation records, accounting for currency conversions
 
 ## Limitations
 
-- Currency conversion is handled by Stripe for online giving only
-- Manual donations are recorded as-entered with no automatic conversion
-- Historical reports show donations in their original currencies
-- Total calculations are done per-currency, not across currencies
+- Currency conversion for payment processing is handled by Stripe for online giving only; manual donations are recorded as-entered with no automatic conversion
+- Historical reports and individual donation line items always show the original currency the gift was recorded in
+- Combined totals (KPI cards, batch totals, fund totals) are converted to your church currency using current exchange rates -- these rates may differ slightly from your bank's or Stripe's rates at the time funds settle
 
 ## Related Articles
 

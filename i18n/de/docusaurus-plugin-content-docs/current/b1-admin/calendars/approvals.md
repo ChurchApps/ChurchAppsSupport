@@ -1,52 +1,52 @@
 ---
-title: "Kalender-Genehmigungen"
+title: TITEL: Kalendergenehmigungen
 ---
-
-# Kalender-Genehmigungen
+INHALT:
+# Kalendergenehmigungen
 
 <div class="article-intro">
 
-Die Seite Genehmigungen ist der Ort, an dem Administratoren ausstehende Buchungsanfragen für Räume und Ressourcen sowie Kalenderereignisse, die vor Veröffentlichung genehmigt werden müssen, überprüfen und bearbeiten.
+Auf der Seite „Genehmigungen" prüfen und bearbeiten Administratoren ausstehende Buchungsanfragen für Räume und Ressourcen sowie Kalendertermine, die vor der Veröffentlichung genehmigt werden müssen.
 
 </div>
 
 <div class="prereqs">
-<h4>Vor dem Start</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Konfigurieren Sie Räume oder Ressourcen mit einer **Approval Group** in [Rooms & Resources](rooms-resources)
-- Sie benötigen die Berechtigung **Calendars Admin** oder die Berechtigung **content.edit**
+- Richten Sie für Räume oder Ressourcen unter [Räume & Ressourcen](rooms-resources) eine **Genehmigungsgruppe** ein
+- Sie benötigen die Berechtigung **Kalender-Admin** oder die Berechtigung **content.edit**
 
 </div>
 
-## Öffnen von Genehmigungen
+## Genehmigungen öffnen
 
-Gehen Sie in B1 Admin zu **Calendars** und wählen Sie **Approvals**. Ausstehende Buchungsanfragen und Ereignisse, die überprüft werden müssen, sind hier aufgeführt.
+Gehen Sie in B1 Admin zu **Kalender** und wählen Sie **Genehmigungen**. Ausstehende Buchungsanfragen und zu prüfende Termine werden hier aufgelistet.
 
 ## Buchungsanfragen
 
-Wenn eine Gruppe ein Ereignis erstellt und einen Raum oder eine Ressource anfordert, wird die Anfrage im Bereich **Booking Requests** angezeigt. Jede Zeile zeigt:
+Wenn eine Gruppe einen Termin erstellt und einen Raum oder eine Ressource anfragt, erscheint die Anfrage im Bereich **Buchungsanfragen**. Jede Zeile zeigt:
 
-- Den angeforderten Raum oder die Ressource
-- Den Ereignisnamen und Datum/Uhrzeit
-- Die anfordernde Gruppe
+- Den angefragten Raum bzw. die angefragte Ressource
+- Den Terminnamen sowie Datum/Uhrzeit
+- Die anfragende Gruppe
 
-### Konflikt-Indikatoren
+### Konfliktanzeigen
 
-Wenn sich zwei Anfragen für denselben Raum oder dieselbe Ressource überlappen, wird ein Konfliktwarnsymbol angezeigt. Überprüfen Sie widersprüchliche Anfragen sorgfältig, bevor Sie eine genehmigen.
+Wenn sich zwei Anfragen für denselben Raum oder dieselbe Ressource überschneiden, wird ein Warnsymbol für Konflikte angezeigt. Prüfen Sie einander widersprechende Anfragen sorgfältig, bevor Sie eine davon genehmigen.
 
 ### Genehmigen oder Ablehnen
 
-Klicken Sie auf das Symbol **✓** (genehmigen) oder **✗** (ablehnen) für eine beliebige Buchungsanfrage. Die anfordernde Gruppe wird über die Entscheidung benachrichtigt. Genehmigte Buchungen sind für das Ereignis auf diesen Raum oder diese Ressource gesperrt; abgelehnte Buchungen geben den Platz für andere frei.
+Klicken Sie bei einer Buchungsanfrage auf das Symbol **✓** (genehmigen) oder **✗** (ablehnen). Die anfragende Gruppe wird über die Entscheidung benachrichtigt. Genehmigte Buchungen belegen den Raum bzw. die Ressource fest für den Termin; abgelehnte Buchungen geben den Zeitraum für andere frei.
 
-## Ausstehende Ereignisse
+## Ausstehende Termine
 
-Wenn Ihr Kalender-Workflow eine Ereignisgenehmigung erfordert, bevor Ereignisse für die Öffentlichkeit sichtbar werden, werden ausstehende Ereignisse im Bereich **Pending Events** angezeigt. Genehmigen Sie ein Ereignis, um es im Kalender zu veröffentlichen, oder lehnen Sie es ab, um den Absender zu benachrichtigen, dass Änderungen erforderlich sind.
+Wenn Ihr Kalender-Workflow eine Genehmigung erfordert, bevor Termine öffentlich sichtbar werden, erscheinen die betreffenden Termine im Bereich **Ausstehende Termine**. Genehmigen Sie einen Termin, um ihn im Kalender zu veröffentlichen, oder lehnen Sie ihn ab, um die einreichende Person darüber zu informieren, dass Änderungen erforderlich sind.
 
 :::tip
-Richten Sie eine Approval Group auf einem Raum in [Rooms & Resources](rooms-resources) ein, um die Genehmigung für diesen Raum zu verlangen. Gruppen mit Zugriff können den Raum dann anfordern, wenn sie Ereignisse erstellen, und diese Anfragen werden auf dieser Seite angezeigt.
+Richten Sie unter [Räume & Ressourcen](rooms-resources) eine Genehmigungsgruppe für einen Raum ein, um für diesen Raum eine Genehmigung zu verlangen. Gruppen mit Zugriff können den Raum dann beim Erstellen von Terminen anfragen, und diese Anfragen laufen auf dieser Seite ein.
 :::
 
 ## Verwandte Artikel
 
-- [Rooms, Resources & Scheduling](rooms-resources) — konfigurieren Sie buchbare Räume und Ressourcen
-- [Creating Calendars](creating-calendars) — verwalten Sie Kalender und Ereignisse
+- [Räume, Ressourcen & Planung](rooms-resources) — buchbare Räume und Ressourcen einrichten
+- [Kalender erstellen](creating-calendars) — Kalender und Termine verwalten
