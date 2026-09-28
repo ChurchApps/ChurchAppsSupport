@@ -26,6 +26,10 @@ Getting started with ChurchApps begins with creating your account. The process t
 4. Create a password for your account.
 5. Submit the registration form.
 
+:::info
+One ChurchApps account works across B1, Lessons.church, and the other ChurchApps apps. If you see **You already have a ChurchApps account. Please sign in with it instead.**, click **Login** and sign in with that email. Use **Forgot Password** if you don't remember the password.
+:::
+
 ## Confirming Your Email
 
 After registering, you will receive a confirmation email at the address you provided.
@@ -47,7 +51,7 @@ After confirming your email and logging in, you will have the option to either c
 1. Select the option to **create a new church**.
 2. Enter your **church name** and basic information. The registration form will auto-populate your church details if a match is found.
 3. Complete the setup process.
-4. You will be taken to **Sunday**, the B1 Admin home page, where you can begin configuring your church.
+4. You will be taken to the **Dashboard**, the B1 Admin home page, where you can begin configuring your church.
 
 **To join an existing church:**
 

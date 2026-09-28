@@ -1,56 +1,62 @@
 ---
-title: "Dichiarazioni di Donazione"
+title: "Dichiarazioni di Donazioni"
 ---
 
-# Giving Statements
+# Dichiarazioni di Donazioni
 
 <div class="article-intro">
 
-At the end of each Anno, your donors need a summary of their tax-deductible giving for their records. B1 Admin makes it easy Per generate these statements for all donors at once, saving you hours of manual work.
+Alla fine di ogni anno, i tuoi donatori hanno bisogno di un riepilogo delle loro donazioni deducibili dalle tasse per i loro record. B1 Admin rende facile generare queste dichiarazioni per tutti i donatori contemporaneamente, risparmiandoti ore di lavoro manuale.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Verify that your [funds](funds.md) are correctly marked as **Tax Deductible** -- only donations Per tax-deductible funds appear on statements
-- Ensure all donations have been [recorded](recording-donations.md) and any online transactions have been [imported from Stripe](stripe-import.md)
+- Verifica che i tuoi [fondi](funds.md) siano correttamente contrassegnati come **Deducibile dalle tasse** -- solo le donazioni a fondi deducibili dalle tasse appaiono sulle dichiarazioni
+- Assicurati che tutte le donazioni siano state [registrate](recording-donations.md) e che tutte le transazioni online siano state [importate da Stripe](stripe-import.md)
 
 </div>
 
-## Accessing Giving Statements
+## Accesso alle Dichiarazioni di Donazioni
 
-1. In **B1 Admin**, Apri the **menu della sezione** in the angolo in alto a sinistra and Scegli **Donations**.
-2. Fai clic **Statements**.
+1. In **B1 Admin**, apri il **menu della sezione** nell'angolo superiore sinistro e scegli **Donazioni**.
+2. Fai clic su **Dichiarazioni**.
 
-## Generating Statements
+## Generazione di dichiarazioni
 
-1. Seleziona the **Anno** from the dropdown at the inizio della pagina. You can Scegli the current Anno or any of the five previous years.
-2. The page displays summary statistics for that Anno, including:
-   - **Total donors** -- the number of people who gave
-   - **Total donations** -- the number of individual donation records
-   - **Total amount** -- the combined dollar amount of all giving
+1. Seleziona l'**anno** dal menu a discesa nella parte superiore della pagina. Puoi scegliere l'anno corrente o uno qualsiasi dei cinque anni precedenti.
+2. La pagina visualizza le statistiche di riepilogo per quell'anno, incluse:
+   - **Donatori totali** -- il numero di persone che hanno donato
+   - **Donazioni totali** -- il numero di record di singole donazioni
+   - **Importo totale** -- l'importo in dollari combinato di tutte le donazioni
 
-## Downloading Statements
+## Download delle dichiarazioni
 
-You have two options for getting statements Per your donors:
+Hai due opzioni per ottenere le dichiarazioni per i tuoi donatori:
 
-### Scarica as CSV Files
+### Download come file CSV
 
-Fai clic **Scarica ZIP** Per Scarica a ZIP file containing an individual CSV file for each donor. This is useful if you want Per email statements individually or Importa them into another system.
+Fai clic su **Scarica ZIP** per scaricare un file ZIP contenente un singolo file CSV per ogni donatore. Questo è utile se vuoi inviare per posta le dichiarazioni individualmente o importarle in un altro sistema.
 
-### Print All Statements
+### Stampa tutte le dichiarazioni
 
-Fai clic **Print All** Per Apri a printable Visualizza of every donor's statement in your browser. From there, use your browser's print function Per send them Per a printer. Each statement starts on a new page so they are ready Per fold and mail.
+Fai clic su **Stampa tutto** per aprire una visualizzazione stampabile della dichiarazione di ogni donatore nel tuo browser. Da lì, utilizza la funzione di stampa del tuo browser per inviarle a una stampante. Ogni dichiarazione inizia su una nuova pagina in modo che siano pronte per essere piegate e spedite per posta.
 
 :::tip
-Run your statements early in January while your records are fresh. Double-check that your funds are correctly marked as tax-deductible before generating statements -- only donations Per tax-deductible funds are included.
+Esegui le tue dichiarazioni all'inizio di gennaio mentre i tuoi record sono freschi. Verifica che i tuoi fondi siano correttamente contrassegnati come deducibili dalle tasse prima di generare le dichiarazioni -- solo le donazioni a fondi deducibili dalle tasse sono incluse.
 :::
 
 :::info
-Giving statements only include donations assigned Per funds that have the **Tax Deductible** setting Abilitato. If a fund is not marked as tax-deductible, its donations will not appear on the statement. You can manage this setting on the [Funds](funds.md) page.
+Le dichiarazioni di donazioni includono solo le donazioni assegnate a fondi che hanno l'impostazione **Deducibile dalle tasse** abilitata. Se un fondo non è contrassegnato come deducibile dalle tasse, le sue donazioni non appariranno sulla dichiarazione. Puoi gestire questa impostazione nella pagina [Fondi](funds.md).
 :::
 
-## Avanti Steps
+## Formati di ricevuta per Canada, Australia e Nuova Zelanda
 
-If you need Per review donation details before generating statements, visit the [Donation Reports](donation-reports.md) page or check individual [batches](batches.md).
+Le chiese al di fuori degli Stati Uniti possono cambiare la dichiarazione al layout ufficiale di ricezione del loro paese. Vai a **Impostazioni**, apri la sezione **Donazioni** e imposta il **Formato Dichiarazione** su **Canada**, **Australia** o **Nuova Zelanda**, quindi compila i campi che appaiono: il tuo numero di registrazione (numero di registrazione CRA, ABN o numero di registrazione della beneficenza della Nuova Zelanda), l'indirizzo della tua organizzazione, il nome della persona autorizzata a firmare le ricevute, e per il Canada la città in cui le ricevute sono emesse.
+
+Le dichiarazioni recano quindi il testo che la tua autorità fiscale si aspetta (per il Canada, "Official Receipt for Income Tax Purposes" con il riferimento CRA), un numero di ricevuta nella forma `YEAR-DONORID`, l'importo idoneo conteggiato solo dai fondi deducibili dalle tasse, e una riga separata per tutte le donazioni a fondi non deducibili. I donatori vedono lo stesso blocco di ricevuta quando stampano la loro dichiarazione da B1.church.
+
+## Passaggi successivi
+
+Se hai bisogno di revisare i dettagli delle donazioni prima di generare le dichiarazioni, visita la pagina [Report Donazioni](donation-reports.md) o controlla i singoli [batch](batches.md).

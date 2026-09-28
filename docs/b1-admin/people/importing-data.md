@@ -57,10 +57,17 @@ Available B1 fields include:
 - First Name, Last Name, Middle Name, Nickname, Display Name, Title/Prefix, Suffix
 - Email, Home Phone, Mobile Phone, Work Phone
 - Address Line 1, Address Line 2, City, State, Zip Code
-- Birth Date, Gender, Marital Status, Membership Status
+- Birth Date, Anniversary, Gender, Marital Status, Membership Status
 - Household/Family Name
 - Group Name — assigns the person to a group by name
+- **Custom Field (match by name)** — saves the column into one of your church's [custom person fields](../settings/custom-fields.md). A **B1 field name** box appears, filled in with the column header. Change it to the field's name exactly as it appears in B1 (capitalization doesn't matter).
 - **Form Answer (custom field)** — saves that column's value as a custom field attached to the person's record. If you use this option, you will be asked to give the form a name.
+
+Dates can be in common formats such as `9/17/1994` and are converted automatically. For custom fields, Yes/No fields accept values like Yes, No, Y, N, True, False, 1, and 0, and multiple-choice fields accept either the choice text or its value.
+
+:::info
+Create your custom person fields in B1 Admin before you import. When the import finishes, the **Custom Fields** step lists any column names that don't match a B1 field and counts any values that don't fit the field's type. Those values are skipped, and the rest of the import still completes.
+:::
 
 Columns you do not want to import can be set to **(Skip)**. At least one name field (First Name or Last Name) must be mapped before you can continue.
 
@@ -108,6 +115,7 @@ The tool processes the transfer and shows progress for each step:
 - Donations
 - Attendance
 - Forms, Questions, Answers, and Form Submissions
+- Custom Fields (when you mapped any Custom Field columns)
 - Compressing (for zip file destinations only)
 
 :::warning

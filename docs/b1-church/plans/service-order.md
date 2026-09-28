@@ -6,7 +6,7 @@ title: "Service Order"
 
 <div class="article-intro">
 
-When you open a plan, the **Order of Service** section shows the sequence of items for that service. This gives you and your team a shared view of the service flow, including timing, song details, and descriptions for each element.
+When you open a plan, the **Service Order** tab shows the sequence of items for that service. This gives you and your team a shared view of the service flow, including timing, song details, and descriptions for each element.
 
 </div>
 
@@ -40,16 +40,4 @@ If the plan has associated curriculum or lesson content from a provider like [Le
 
 ## Printing the Service Order
 
-You can print a formatted version of the service order to bring with you on the day of the service.
-
-1. Open the plan from your **Plans** list.
-2. In the **Order of Service** section, click the **print** icon in the top-right corner.
-3. A new window opens with a printable layout that includes:
-   - The **service date** at the top.
-   - **Team assignments** grouped by category on the left, showing each position and who is filling it.
-   - The **full service order** on the right with time, item details, and duration columns.
-4. Your browser's print dialog will open automatically so you can print or save as PDF.
-
-:::tip
-The printed service order is a great reference to have on hand during rehearsals or the service itself. It includes both the team roster and the full order of service on a single page.
-:::
+The B1.church member app does not have a print option for plans. If you need a printed copy with the team roster and the full service order, ask a staff member to print it from B1 Admin. See [Printing Plans](../../b1-admin/serving/plans.md#printing-plans).

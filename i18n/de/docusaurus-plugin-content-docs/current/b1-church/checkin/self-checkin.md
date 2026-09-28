@@ -1,59 +1,61 @@
 ---
-title: "Self-Check-in"
+title: "Selbst-Check-In"
 ---
 
-# Self-Check-in
+# Selbst-Check-In
 
 <div class="article-intro">
 
-Der Self-Check-in-Prozess ermöglicht es Ihnen, die Anwesenheit für sich selbst und Ihren Haushalt in nur wenigen Schritten zu erfassen. Es ist eine schnelle Alternative zur Nutzung eines physischen Kiosks in der Gemeinde.
+Der Selbst-Check-In-Prozess ermöglicht es dir, die Anwesenheit für dich und deinen Haushalt in nur wenigen Schritten zu erfassen. Dies ist eine schnelle Alternative zur Nutzung eines physischen Kiosks in der Kirche.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du anfängst</h4>
 
-- Sie müssen in Ihrem B1.church-Konto [angemeldet](../getting-started/logging-in.md) sein.
-- Ihre Haushaltsmitglieder müssen mit Ihrem Konto verknüpft sein. Wenn ein Familienmitglied fehlt, bitten Sie Ihren Gemeindeadministrator, es Ihrem Haushalt hinzuzufügen.
+- Du musst bei deinem B1.church-Konto [angemeldet](../getting-started/logging-in.md) sein.
+- Deine Haushaltsmitglieder müssen mit deinem Konto verlinkt sein. Wenn ein Familienmitglied fehlt, bitte deinen Kirchenadministrator, es zu deinem Haushalt hinzuzufügen.
 
 </div>
 
-## Der Check-in-Ablauf
+## Der Check-In-Fluss
 
-Der Check-in folgt einem einfachen Drei-Schritte-Prozess. Navigieren Sie zum **Check-in**-Tab in der [Seitenleiste](../getting-started/navigating.md), um zu beginnen.
+Das Check-In folgt einem einfachen dreistufigen Prozess. Navigiere zur Registerkarte **Check-In** in der [Seitenleiste](../getting-started/navigating.md), um zu beginnen.
 
-### Schritt 1: Gottesdienst auswählen
+### Schritt 1: Wähle einen Dienst
 
-Wenn Sie die Check-in-Seite öffnen, sehen Sie eine Liste der verfügbaren Gottesdienste (zum Beispiel „Sonntagmorgen" oder „Mittwochabend"). Jede Gottesdienstkarte zeigt den Namen und den Standort an, falls Ihre Gemeinde mehrere Standorte hat.
+Wenn du die Check-In-Seite öffnest, siehst du eine Liste verfügbarer Dienste (z. B. "Sonntagmorgen" oder "Mittwochabend"). Jede Dienst-Karte zeigt den Dienstnamen und den Standort, wenn deine Kirche mehrere Orte hat.
 
-Klicken Sie auf einen Gottesdienst, um ihn auszuwählen und zum nächsten Schritt zu gelangen.
+Klicke auf einen Dienst, um ihn auszuwählen und zum nächsten Schritt zu gehen.
 
-### Schritt 2: Haushaltsmitglieder und Gruppen auswählen
+### Schritt 2: Wähle Haushaltsmitglieder und Gruppen
 
-Nach der Auswahl eines Gottesdienstes sehen Sie eine Liste Ihrer Haushaltsmitglieder. Für jede teilnehmende Person:
+Nachdem du einen Dienst ausgewählt hast, siehst du eine Liste deiner Haushaltsmitglieder. Für jeden Anwesenden:
 
-1. Tippen Sie auf ein Haushaltsmitglied, um den Eintrag aufzuklappen.
-2. Sie sehen die verfügbaren **Gottesdienstzeiten** für den ausgewählten Gottesdienst.
-3. Klicken Sie auf **Gruppe auswählen** neben einer Gottesdienstzeit, um die Gruppe auszuwählen, in die die Person eingecheckt werden soll (z. B. „Hauptgottesdienst", „Kinderraum 1" oder „Jugendgruppe").
-4. Wiederholen Sie dies für jedes Haushaltsmitglied, das teilnimmt.
+1. Tippe auf ein Haushaltsmitglied, um seinen Eintrag zu erweitern.
+2. Du siehst die verfügbaren **Dienstzeiten** für den von dir ausgewählten Dienst.
+3. Klicke auf **Gruppe auswählen** neben einer Dienstzeit, um auszuwählen, in welche Gruppe die Person eingecheckt werden soll (z. B. "Hauptgottesdienst", "Kinderzimmer 1" oder "Jugendgruppe").
+4. Wiederhole das für jedes Haushaltsmitglied, das anwesend ist.
 
-Sie müssen nicht jedes Haushaltsmitglied einchecken -- klappen Sie nur die Einträge der tatsächlich anwesenden Personen auf und weisen Sie ihnen Gruppen zu.
+Du musst nicht jedes Haushaltsmitglied anmelden – erweitere nur und weise Gruppen für die Personen zu, die tatsächlich anwesend sind.
 
 ### Schritt 3: Bestätigung
 
-Sobald Sie Gruppen für alle anwesenden Personen ausgewählt haben, klicken Sie auf die Schaltfläche **Check-in abschließen** am unteren Rand der Seite.
+Nachdem du Gruppen für jeden ausgewählt hast, der anwesend ist, klicke auf die Schaltfläche **Check-In abschließen** am unteren Ende der Seite.
 
-Sie sehen einen Bestätigungsbildschirm mit der Nachricht „Check-in abgeschlossen!" sowie einem Hinweis, dass Ihre Anwesenheit gespeichert wurde. Klicken Sie auf **Zurück zu meiner Seite**, um zur [Chronik](../community/timeline.md) zurückzukehren.
+Du siehst eine Bestätigung, dass dein Check-In abgeschlossen ist und deine Anwesenheit gespeichert wurde. Nach einem Moment kehrt die Seite zur Serviceliste zurück, bereit für das nächste Check-In.
+
+Wenn deine Kirche Namensschilder an einer Check-In-Station druckt, siehst du stattdessen **Du bist angemeldet!** mit einem QR-Code und einem Sicherheitscode. Zeige den Code an einer Check-In-Station, um deine Namensschilder zu drucken, und tippe dann auf **Fertig**.
 
 :::tip
-Wenn Sie eine Gruppenauswahl vor dem Abschluss des Check-ins ändern möchten, tippen Sie auf die Schaltfläche **Ändern** neben einer Gottesdienstzeit, um eine andere Gruppe auszuwählen.
+Wenn du eine Gruppenwahl vor Abschluss des Check-In ändern musst, tippe auf die Schaltfläche **Ändern** neben einer Dienstzeit, um eine andere Gruppe auszuwählen.
 :::
 
-## Gut zu wissen
+## Dinge, die du wissen solltest
 
-- Sie können nur Haushaltsmitglieder einchecken, die mit Ihrem Konto verknüpft sind. Wenn ein Familienmitglied fehlt, bitten Sie Ihren Gemeindeadministrator, es Ihrem Haushalt hinzuzufügen.
-- Wenn auf der Check-in-Seite keine Gottesdienste angezeigt werden, hat Ihre Gemeinde möglicherweise derzeit keine Gottesdienste für den Check-in konfiguriert.
+- Du kannst nur Haushaltsmitglieder anmelden, die mit deinem Konto verlinkt sind. Wenn ein Familienmitglied fehlt, bitte deinen Kirchenadministrator, es zu deinem Haushalt hinzuzufügen.
+- Wenn auf der Check-In-Seite keine Dienste erscheinen, hat deine Kirche möglicherweise derzeit keine für Check-In konfigurierten Dienste.
 
 :::warning
-Der Check-in ist nur verfügbar, wenn Ihre Gemeinde aktive Gottesdienste konfiguriert hat. Wenn Sie keine Gottesdienste aufgelistet sehen, erkundigen Sie sich bei Ihrem Gemeindebüro, ob der Self-Check-in aktiviert ist.
+Das Check-In ist nur verfügbar, wenn deine Kirche aktive, für Check-In konfigurierte Dienste hat. Wenn du keine Dienste aufgelistet siehst, überprüfe mit deinem Kirchenbüro, ob das Selbst-Check-In aktiviert ist.
 :::

@@ -21,7 +21,7 @@ The Church Settings page is where you configure your church's basic information,
 ## Editing Your Church Information
 
 1. In B1 Admin, open the **section menu** in the top-left corner (the section name with the small arrow) and choose **Settings**.
-2. Click the **Edit Settings** button in the header.
+2. Open the **Church Information** section and click its edit (pencil) icon.
 3. Update any of the following fields:
    - **Church Name** -- The name displayed across all ChurchApps products.
    - **Address** -- Your church's physical address.

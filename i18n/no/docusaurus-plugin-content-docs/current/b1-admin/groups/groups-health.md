@@ -6,48 +6,48 @@ title: "Gruppehelse"
 
 <div class="article-intro">
 
-Gruppehelse-dashbordet gir deg fugleperspektiv over hvordan alle gruppene dine har det — medlemskapstrends, oppmøtesnitt, og vekst eller tap de siste 90 dagene — alt i en enkelt sorterbar tabell.
+Instrumentbordet Gruppehelse gir deg et fuglegransk over hvordan alle gruppene dine går -- medlemskapstrender, frammøtetall og vekst eller avgang over de siste 90 dagene -- alt i en enkelt sorterbar tabell.
 
 </div>
 
 <div class="prereqs">
-<h4>Før du starter</h4>
+<h4>Før du begynner</h4>
 
-- Du trenger minst noen grupper med medlemmer for å se meningsfulle data. Se [Opprette grupper](creating-groups).
-- Oppmøtedata hentes fra registrerte økter. Se [Oppmøte](../attendance/)-seksjonen.
+- Du trenger minst noen få grupper med medlemmer for å se meningsfulle data. Se [Opprett grupper](creating-groups).
+- Frammøtedata hentes fra registrerte økter. Se [Frammøte](../attendance/)-delen.
 
 </div>
 
-## Åpning av gruppehelse
+## Åpne gruppehelse
 
-I B1 Admin åpner du **seksjonsmenyen** i øvre venstre hjørne og velger **Personer**, deretter klikker du **Grupper**-fanen i navigasjonslinjen og velger **Helse**. Dashbordet laster en tabell med en rad per gruppe.
+I B1 Admin, åpne **seksjonsmeny** i øverste venstre hjørne og velg **Personer**, og klikk deretter **Grupper** i navigasjonslinjen og klikk **Gruppehelse**-knappen i sidetittelfeltet. Instrumentbordet laster en tabell med en rad per gruppe.
 
 ## Kolonner
 
 | Kolonne | Hva den viser |
 |--------|--------------|
-| **Navn** | Gruppens navn, knyttet til gruppens detaljside |
+| **Navn** | Gruppenavnet, lenket til gruppens detaljside |
 | **Kategori** | Gruppens kategori |
-| **Medlemmer** | Gjeldende antall aktive medlemmer |
-| **Koblet til (90d)** | Medlemmer som koblet til de siste 90 dagene |
-| **Forlatt (90d)** | Medlemmer som forlot de siste 90 dagene |
+| **Medlemmer** | Gjeldende aktivt medlemstall |
+| **Meldt inn (90d)** | Medlemmer som meldte seg inn i løpet av de siste 90 dagene |
+| **Gikk bort (90d)** | Medlemmer som gikk bort i løpet av de siste 90 dagene |
 | **Avgang (90d)** | Netto avgangsprosent over 90 dager |
-| **Gj.snittlig oppmøte** | Gjennomsnittlig antall per oppmøteøkt |
+| **Gjennomsnittlig frammøte** | Gjennomsnittlig antall frammøtte per frammøtøkt |
 
-Klikk en kolonneoverskrift for å sortere tabellen etter den kolonnen. Klikk igjen for å reversere sorterings-retningen.
+Klikk på en kolonnepoverskrift for å sortere tabellen etter den kolonnen. Klikk igjen for å reversere sorteringsretningen.
 
-## Bruk av helsedata
+## Bruke helsedata
 
-- **Høy avgang + lavt møte** — en gruppe som krymper og ikke erstatter tapte medlemmer. Verdt en samtale med gruppelederen.
-- **Høyt møte + lavt oppmøte** -- folk registrerer seg men møter ikke opp. Vurder engasjements-oppfølging.
-- **Høyt gjennomsnittlig oppmøte** -- en sunn, aktiv gruppe. Potensial modell for andre grupper.
+- **Høy avgang + få innmeldinger** -- en gruppe som krymper og som ikke erstatter tapte medlemmer. Det er verdt en samtale med gruppelederen.
+- **Høy innmelding + lav frammøte** -- folk melder seg på men dukker ikke opp. Vurder oppfølging av engasjement.
+- **Høy gjennomsnittlig frammøte** -- en sunn, aktiv gruppe. Potensielt modell for andre grupper.
 
 :::tip
-Klikk et gruppenavn for å gå direkte til gruppens detaljside der du kan gjennomgå individuelle medlemmer, oppmøterekorder og kalenderarrangementer.
+Å klikke på et gruppenavn tar deg direkte til gruppens detaljside hvor du kan gjennomgå individuelle medlemmer, frammøteoppføringer og kalenderarrangementer.
 :::
 
 ## Relaterte artikler
 
-- [Opprette grupper](creating-groups) -- sett opp grupper
-- [Gruppemedlemmer](group-members) -- administrer gruppendeltakelse
-- [Sporing av oppmøte](../attendance/tracking-attendance) — registrer oppmøtesesjoner som mater dette dashbordet
+- [Opprett grupper](creating-groups) -- sett opp grupper
+- [Gruppemedlemmer](group-members) -- administrer gruppemedlemskap
+- [Spor frammøte](../attendance/tracking-attendance) -- registrer frammøtøkter som mater dette instrumentbordet

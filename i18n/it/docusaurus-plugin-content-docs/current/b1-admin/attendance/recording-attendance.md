@@ -1,65 +1,80 @@
 ---
-title: "Registrazione della Frequenza"
+title: "Registrazione Presenze"
 ---
 
-# Recording Frequenza
+# Registrazione Presenze
 
 <div class="article-intro">
 
-Once your campuses, Servizio times, and Gruppi are set up, you can manually record Frequenza after each gathering. B1 Admin organizes Frequenza around **Sessioni** -- one Sessione per Gruppo per meeting Data. You Crea the Sessione, mark who showed up, and the data feeds directly into your Frequenza Rapporti.
+Una volta configurati i campus, gli orari di servizio e i gruppi, puoi registrare manualmente le presenze dopo ogni riunione. B1 Admin organizza le presenze intorno alle **sessioni** -- una sessione per gruppo per data di riunione. Crei la sessione, contrassegni chi ha partecipato, e i dati vengono inseriti direttamente nei tuoi report di presenze.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Your campuses, Servizio times, and Gruppi must be configured. See [Attendance Setup](setup.md) if you haven't done this yet.
-- The Gruppi you want Per track must have **Track Frequenza** Abilitato. See [Attendance Setup](setup.md) for details.
+- I tuoi campus, orari di servizio e gruppi devono essere configurati. Consulta [Configurazione Presenze](setup.md) se non l'hai ancora fatto.
+- I gruppi che vuoi tracciare devono avere **Traccia Presenze** abilitato. Consulta [Configurazione Presenze](setup.md) per i dettagli.
 
 </div>
 
-## Creating a Sessione
+## Creazione di una sessione
 
-A Sessione represents one occurrence of a Gruppo meeting -- for example, your K--3rd grade class on a specific Sunday.
+Una sessione rappresenta un'occorrenza della riunione di un gruppo -- per esempio, la tua classe di bambini dalle K al 3º grado una specifica domenica.
 
-1. Apri **B1 Admin**, Apri the **menu della sezione** in the angolo in alto a sinistra and Scegli **People**, then Fai clic the **Gruppi** tab.
-2. Seleziona the Gruppo you want Per record Frequenza for.
-3. Fai clic the **Sessioni** tab.
-4. Fai clic **New** Per Crea a new Sessione.
-5. If the Gruppo is assigned Per a Servizio Ora, Scegli the **Servizio Ora**. If it is an unscheduled Gruppo, this field will not appear.
-6. Seleziona the **Sessione Data** -- this can be Oggi, a Data Passata, or a Data Futura.
-7. Fai clic **Salva**.
-
-:::tip
-You can Crea Sessioni for past dates Per catch up on Frequenza you haven't recorded yet, or Crea them in advance so they are ready when your Gruppo meets.
-:::
-
-## Marking Frequenza
-
-After saving the Sessione, the Gruppo's Membri appear on the lato destro of the page.
-
-1. Check the box Avanti Per each person who attended.
-2. Changes are saved automatically -- there is No additional Salva button for Frequenza marks.
-
-:::info
-Only current Gruppo Membri appear in the Sessione list. If someone attended but is not yet in the Gruppo, [add them to the group](../groups/group-members.md) first, then record their Frequenza.
-:::
-
-## Exporting Frequenza Per a Spreadsheet
-
-You can Scarica a record of the Sessione as a CSV file Per use in Excel, Numbers, or Google Sheets.
-
-1. Apri the Sessione you want Per Esporta.
-2. Fai clic the **Scarica CSV** button.
-3. Apri the downloaded file in your spreadsheet application.
-
-## Viewing Recorded Frequenza
-
-After recording Sessioni, the data appears in your Frequenza Rapporti.
-
-- **Frequenza tab** -- shows church-wide trends over Ora. See [Tracking Attendance](tracking-attendance.md).
-- **Gruppi tab** -- shows Frequenza broken down by individual Gruppo.
+1. Apri **B1 Admin**, apri il **menu della sezione** nell'angolo superiore sinistro e scegli **Persone**, quindi fai clic sulla scheda **Gruppi**.
+2. Seleziona il gruppo per il quale vuoi registrare le presenze.
+3. Fai clic sulla scheda **Sessioni**.
+4. Fai clic su **Nuova** per creare una nuova sessione.
+5. Se il gruppo è assegnato a un orario di servizio, scegli l'**Orario di servizio**. Se è un gruppo non programmato, questo campo non apparirà.
+6. Seleziona la **Data della sessione** -- può essere oggi, una data passata o una data futura.
+7. Fai clic su **Salva**.
 
 :::tip
-If a Sessione you just created does not appear in Rapporti right away, make sure the Sessione Data falls within the Data range selected in the Rapporto filters.
+Puoi creare sessioni per date passate per recuperare le presenze che non hai ancora registrato, o crearle in anticipo in modo che siano pronte quando il tuo gruppo si riunisce.
+:::
+
+## Marcatura delle presenze
+
+Seleziona una sessione per vedere il suo elenco di presenze. Ogni membro del gruppo è elencato con una casella di controllo, ordinato per cognome, e chiunque sia già registrato come presente è selezionato.
+
+1. Seleziona la casella accanto a ogni persona che ha frequentato. Usa **Seleziona tutto** o **Deseleziona tutto** per cambiare tutti contemporaneamente.
+2. Il conteggio sopra l'elenco (ad esempio, "12 di 15 presenti") si aggiorna mentre selezioni le caselle.
+3. Fai clic su **Salva Presenze**. Niente viene registrato fino a quando non salvi, e un messaggio conferma quando il salvataggio è completato.
+
+Deselezionare qualcuno che era già registrato come presente e poi salvare li rimuove dalla sessione.
+
+### Aggiunta di visitatori
+
+Per registrare qualcuno che non è un membro del gruppo, cercalo nella ricerca della persona accanto all'elenco di presenze. Se non sono ancora nel tuo database, puoi crearli dalla ricerca. Vengono aggiunti all'elenco già selezionati. Fai clic su **Salva Presenze** per registrarli.
+
+Le persone che hanno effettuato il check-in a un chiosco mostrano un chip **Volontario** o **Ospite**. Le persone che non sono membri del gruppo mostrano un chip **Ospite**.
+
+## Stampa di un foglio di classe
+
+Un foglio di classe è un elenco di classe stampabile che gli insegnanti possono contrassegnare a mano e restituirti per l'immissione successiva. Ogni foglio mostra il nome della chiesa, la classe, l'orario di servizio e una riga di data. Ogni membro ha caselle **Presente** e **Assente**, e ci sono righe vuote per i visitatori e un'area **Insegnante / Note**.
+
+- **Da una sessione** -- Fai clic sull'icona **Stampa Foglio di Classe** (stampante) nella parte superiore dell'elenco di presenze della sessione. Il foglio è datato con la data della sessione.
+- **Tutte le classi per un servizio** -- Se la sessione ha un orario di servizio, fai clic su **Stampa tutte le classi** per stampare un foglio per classe assegnata a quell'orario di servizio. Ogni classe viene stampata su una propria pagina.
+- **Dalla scheda Membri** -- Fai clic sull'icona **Stampa Foglio di Classe** sopra l'elenco dei membri del gruppo per stampare un foglio senza data.
+
+Il foglio si apre in una nuova scheda e la finestra di dialogo di stampa del tuo browser appare automaticamente.
+
+## Esportazione Presenze in un foglio di calcolo
+
+Puoi scaricare un record della sessione come file CSV da utilizzare in Excel, Numbers o Google Sheets.
+
+1. Apri la sessione che vuoi esportare.
+2. Fai clic sul pulsante **Esporta** nella parte superiore dell'elenco di presenze.
+3. Apri il file scaricato nella tua applicazione di foglio di calcolo.
+
+## Visualizzazione delle presenze registrate
+
+Dopo la registrazione delle sessioni, i dati vengono visualizzati nei tuoi report di presenze.
+
+- **Scheda Trend Presenze** -- mostra i trend a livello di chiesa nel tempo. Consulta [Tracciamento Presenze](tracking-attendance.md).
+- **Scheda Presenze Gruppo** -- mostra le presenze suddivise per singolo gruppo.
+
+:::tip
+Se una sessione che hai appena creato non appare nei report subito, assicurati che la data della sessione rientri nell'intervallo di date selezionato nei filtri del report.
 :::

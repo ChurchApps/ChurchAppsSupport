@@ -1,62 +1,65 @@
 ---
-title: "Aprovando Mudanças de Perfil"
+title: "Aprovando Alterações de Perfil"
 ---
 
-# Aprovando Mudanças de Perfil
+# Aprovando Alterações de Perfil
 
 <div class="article-intro">
 
-When your church requires administrator approval for profile updates, members submit their changes through the B1 Mobile app and those requests appear as tasks in B1 Admin. This guide explains how to review and approve them.
+Quando sua igreja requer aprovação do administrador para atualizações de perfil, os membros enviam suas alterações através do aplicativo B1 Mobile e essas solicitações aparecem como tarefas em B1 Admin. Este guia explica como revisar e aprová-las.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Antes de Começar</h4>
 
-- You must be a member of the group designated as the **Directory Approval Group** in **Mobile &rarr; B1 Mobile**
-- If no approval group has been configured, profile changes are applied immediately without review
+- Você deve ser membro do grupo designado como o **Grupo de Aprovação de Diretório** em **Dispositivo Móvel &rarr; Portal de Membros**
+- Se nenhum grupo de aprovação tiver sido configurado, as alterações de perfil são aplicadas imediatamente sem revisão
 
 </div>
 
-## Where to Find Pending Requests
+## Onde Encontrar Solicitações Pendentes
 
-When a member submits a profile change, it appears as a task assigned to your approval group. You can find it in two places:
+Quando um membro envia uma alteração de perfil, ela aparece como uma tarefa atribuída ao seu grupo de aprovação. Você pode encontrá-la em dois lugares:
 
-**From the Dashboard:**
-1. Log in to B1 Admin — the Dashboard loads automatically.
-2. In the **Tasks** section on the right side, click the **Assigned to My Groups** tab.
-3. Any pending profile change requests will be listed there.
+**A partir do Painel (sua página inicial):**
+1. Faça login em B1 Admin — o Painel carrega automaticamente.
+2. Na seção **Tarefas** no lado direito, clique na aba **Atribuído aos Meus Grupos**.
+3. Qualquer solicitação de alteração de perfil pendente será listada ali.
 
-**From Serving &rarr; My Work:**
-1. In the top navigation, click **Serving**.
-2. Click **My Work**.
-3. Click the **Assigned to My Groups** tab under Tasks.
+**A partir de Servindo &rarr; Meu Trabalho:**
+1. Na navegação superior, clique em **Servindo**.
+2. Clique em **Meu Trabalho**.
+3. Clique na aba **Atribuído aos Meus Grupos** em Tarefas.
 
-## Reviewing and Approving a Request
+## Revisando e Aprovando uma Solicitação
 
-1. Click the **Profile Update** task to open it.
-2. Under **Requested Changes**, you will see each field the member wants to update along with the new value they submitted.
-3. Review the changes.
-4. Click **Apply** to approve and save the changes to their profile.
+1. Clique na tarefa **Atualização de Perfil** para abri-la.
+2. Em **Alterações Solicitadas**, você verá cada campo que o membro quer atualizar junto com o novo valor que ele enviou.
+3. Revise as alterações.
+4. Clique em **Aplicar** para aprovar e salvar as alterações em seu perfil.
 
-The task will close automatically once the changes are applied.
+A tarefa se fechará automaticamente assim que as alterações forem aplicadas.
 
-## Setting Up the Approval Group
+## Configurando o Grupo de Aprovação
 
-If your church wants profile changes to require approval, a Directory Approval Group must be configured first.
+Se sua igreja quer que as alterações de perfil requeiram aprovação, um Grupo de Aprovação de Diretório deve ser configurado primeiro.
 
-1. In the top navigation, click **Mobile**.
-2. Click **B1 Mobile**.
-3. Under **Directory Approval Group**, select the group whose members should review profile change requests.
-4. Click **Save**.
+1. Na navegação superior, clique em **Dispositivo Móvel**.
+2. Clique em **Portal de membros** (a página "Configurações do portal").
+3. Em **Grupo de Aprovação de Diretório**, selecione o grupo cujos membros devem revisar solicitações de alteração de perfil.
+4. Clique em **Salvar**.
 
-Any member of that group will see incoming profile change requests under **Assigned to My Groups** on their dashboard.
+Qualquer membro desse grupo verá solicitações de alteração de perfil recebidas em **Atribuído aos Meus Grupos** em seu Painel.
+
+O mesmo Grupo de Aprovação de Diretório também revisa **solicitações de exclusão de conta** — veja [Revisando Solicitações de Exclusão de Conta](./account-deletion.md).
 
 :::tip
-Make sure your approvers are actually members of the configured group — only group members will see the requests.
+Certifique-se de que seus aprovadores são realmente membros do grupo configurado — apenas membros do grupo verão as solicitações.
 :::
 
 ## Artigos Relacionados
 
-- [Managing Your Profile](./managing-profile.md) — Edit your own account settings
-- [B1 Mobile Settings](../../b1-mobile/profile/editing-profile.md) — What members see when they submit a profile change
+- [Gerenciando Seu Perfil](./managing-profile.md) — Edite as configurações de sua própria conta
+- [Revisando Solicitações de Exclusão de Conta](./account-deletion.md) — O mesmo fluxo de revisão do grupo de aprovação para exclusão de conta
+- [Configurações B1 Mobile](../../b1-mobile/profile/editing-profile.md) — O que os membros veem quando enviam uma alteração de perfil

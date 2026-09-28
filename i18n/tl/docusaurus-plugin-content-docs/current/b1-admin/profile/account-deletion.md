@@ -1,63 +1,63 @@
 ---
-title: "Pagsusuri ng Mga Hiling sa Pagbabura ng Account"
+title: "Sinusuri ang mga kahilingan sa pagtanggal ng account"
 ---
 
-# Pagsusuri ng Mga Hiling sa Pagbabura ng Account
+# Sinusuri ang mga kahilingan sa pagtanggal ng account
 
 <div class="article-intro">
 
-Kapag ang isang simbahan ay may Directory Approval Group na na-configure, ang pagbabura ng account ay hindi na nangyayari kaagad — ang hiling ng isang miyembro ay nagiging gawain na sinusuri ng iyong grupo ng pag-apruba bago ang anumang bagay na mabura. Ang pahina na ito ay nagpapaliwanag kung paano ginagawa ang hiling, kung paano aprubahan o tanggihan ito, at kung ano ang nangyayari sa bawat kaso.
+Kapag ang isang simbahan ay may Directory Approval Group na nakaayos, ang pagtanggal ng account ay hindi na agad nangyayari — ang kahilingan ng miyembro ay nagiging isang gawain na susuriin ng iyong approval group bago ang anumang tinatanggal. Ang pahinang ito ay nagpapaliwanag kung paano ginawa ang kahilingan, paano ito aprubahan o tanggihan, at kung ano ang mangyayari sa bawat kaso.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago ka magsimula</h4>
 
-- Ang isang **Directory Approval Group** ay dapat na na-configure sa ilalim ng **Mobile → Member portal**. Kung wala, ang pag-click sa **Delete my account** sa Profile page ay nabubura pa rin ng agarang account, nang walang hakbang sa pagsusuri. Tingnan ang [Mobile App Settings](../settings/mobile-app.md).
-- Ang pagpapagana o pagtanggi ng isang hiling ay nangangailangan ng **People > Edit** na pahintulot.
+- Ang isang **Directory Approval Group** ay dapat na maayos sa ilalim ng **Mobile &rarr; Member portal**. Kung wala, ang pagklik sa **Delete my account** sa Profile page ay agad pa rin buburahin ang account, na walang review step. Tingnan ang [Mobile App Settings](../settings/mobile-app.md).
+- Ang pag-apruba o pagtanggi sa isang kahilingan ay nangangailangan ng **People &gt; Edit** na pahintulot.
 
 </div>
 
-## Paano Humiling ang Miyembro ng Pagbabura
+## Paano hinihiling ng miyembro ang pagtanggal
 
-Ang pagbabura ng account ay hinihiling mula sa **My Profile** na pahina — ang parehong ibahagi na pahina na saklaw sa [Managing Your Profile](./managing-profile.md) — sa ilalim ng **Account Deletion** na seksyon. Kapag ang isang grupo ng pag-apruba ay na-configure, ang pagsasaad ng hiling ay hindi nagbabura ng kahit ano sa kaagad. Halip ito ay:
+Ang pagtanggal ng account ay hinihiling mula sa **My Profile** page — ang parehong shared account page na saklaw sa [Managing Your Profile](./managing-profile.md) — sa ilalim ng **Account Deletion** section. Kapag ang approval group ay naayos, ang pagkumpirma sa kahilingan ay hindi buburahin ang kahit ano kaagad. Sa halip, ito ay:
 
-1. Lumilikha ng bukas na gawain na may pamagat na **"Account deletion request"**, na itinalaga sa Directory Approval Group, sa ilalim ng **Serving → Tasks**.
-2. Nag-disable sa **Delete my account** na pindot para sa taong iyon at nagpapakita ng abiso na ang hiling ay naghihintay ng pagsusuri.
+1. Lumilikha ng isang bukas na gawain na may pamagat na **"Account deletion request"**, itinalaga sa Directory Approval Group, sa ilalim ng **Serving &rarr; My Work**.
+2. Ini-disable ang **Delete my account** button para sa taong iyon at nagpapakita ng isang abiso na ang kahilingan ay naghihintay ng pagsusuri.
 
-Ang pagpapasumite ng isang pangalawang hiling habang ang isa ay bukas na ay muling bubuksan lamang ang parehong gawain — ang isang tao ay maaari lamang magkaroon ng isang naghihintay na hiling sa pagbabura sa isang pagkakataon.
+Ang pagpadala ng ikalawang kahilingan habang ang isa ay bukas na ay muling bubuksan lamang ang parehong gawain — ang isang tao ay maaaring lamang magkaroon ng isang pending deletion request sa isang oras.
 
-## Pagsusuri ng Isang Hiling
+## Pagsusuri sa isang kahilingan
 
-1. Pumunta sa **Serving → Tasks** (o **Assigned to My Groups** sa iyong dashboard, ang parehong lugar kung saan ang [profile change requests](./approving-profile-changes.md) ay lumilitaw).
+1. Pumunta sa **Serving &rarr; My Work** (o **Assigned to My Groups** sa iyong dashboard, ang parehong lugar kung saan lumilitaw ang [profile change requests](./approving-profile-changes.md)).
 2. Buksan ang gawain na may pamagat na **"Account deletion request from *Name*"**.
 3. Makikita mo ang dalawang aksyon: **Approve deletion** at **Decline**.
 
-### Pagpapagana
+### Pag-apruba
 
-Kumpirmahin **"Permanently anonymize this person's record and remove their login? This cannot be undone."** Ito ay nagpapalit sa personal na impormasyon ng taong may generic na halaga (ang parehong pag-anonymize na ginagamit ng **Data Management > Anonymize** na aksyon sa talaan ng isang tao — tingnan ang [Data Security](../settings/data-security.md)) at nag-aalis ng kanilang pag-login. Ang gawain ay awtomatikong nagsasara, at ang miyembro ay naabisuhan na ang kanilang hiling ay aprubado.
+Kumpirmahin ang **"Permanently anonymize this person's record and remove their login? This cannot be undone."** Ito ay pagpapalit ng personal na impormasyon ng tao ng mga generic na halaga (ang parehong anonymization na ginagamit ng **Data Management &gt; Anonymize** action sa record ng isang tao — tingnan ang [Data Security](../settings/data-security.md)) at tinatanggal ang kanilang login. Ang gawain ay awtomatikong nagsasara, at ang miyembro ay inaabisuhan na ang kanilang kahilingan ay aprubado.
 
 ### Pagtatanggi
 
-Ang pagtatanggi ay nangangailangan ng dahilan, dahil ang GDPR ay nagbibigay-daan lamang sa pagtanggi ng isang request sa pag-aalis para sa isang legal na pagsisikap:
+Ang pagtatanggi ay nangangailangan ng dahilan, dahil ang GDPR ay nagbibigay-daan lamang sa pagtanggi sa isang erasure request para sa legal na exception:
 
-- **Legal retention** (mga donasyon, buwis, o talaan ng trabaho)
+- **Legal retention** (mga donation, tax, o employment records)
 - **Needed for a legal claim**
-- **Other** — ipasaad sa text box (hindi bababa sa 10 na titik)
+- **Other** — ipaliwanag sa text box (hindi bababa sa 10 characters)
 
-Ang miyembro ay naabisuhan ng desisyon kasama ang dahilan na ibinigay mo, at maaaring muling magsumite ng kanilang hiling o pataas sa isang superhusyong awtoridad kung hindi sila sumagot.
+Ang miyembro ay inaabisuhan ng desisyon kasama ang dahilan na ibinigay mo, at maaaring muling magsumite ng kanilang kahilingan o mag-escalate sa isang supervisory authority kung hindi sila sumasang-ayon.
 
 :::info
-Ang mga simbahan ay may 30 araw upang tumugon sa isang hiling sa pagbabura. Ang gawain ay dapat sa loob ng 28 araw, at ang grupo ng pag-apruba ay nakakakuha ng awtomatikong paalala kung ito ay bukas pa rin pagkatapos ng 21 at 27 araw.
+Ang mga simbahan ay may 30 araw upang tumugon sa isang kahilingan sa pagtanggal. Ang gawain ay dapat sa loob ng 28 araw, at ang approval group ay tumatanggap ng automatic reminders kung ito ay nananatiling bukas pagkatapos ng 21 at 27 araw.
 :::
 
 :::tip
-Ang pagbabura at mga hiling sa pagbabago ng profile ay gumagamit ng parehong Directory Approval Group at ng parehong Tasks-based na daloy sa pagsusuri — tingnan ang [Approving Profile Changes](./approving-profile-changes.md) kung kailangan mo rin na suriin ang mga hiling sa pag-update ng directory.
+Ang pagtanggal at profile-change requests ay gumagamit ng parehong Directory Approval Group at ang parehong Tasks-based review flow — tingnan ang [Approving Profile Changes](./approving-profile-changes.md) kung kailangan mo ring suriin ang directory update requests.
 :::
 
-## Related Articles
+## Mga kaugnay na artikulo
 
-- [Managing Your Profile](./managing-profile.md) — Kung saan ang mga miyembro ay humihiling ng pagbabura ng kanilang sariling account
-- [Approving Profile Changes](./approving-profile-changes.md) — Ang katulad na daloy sa pagsusuri para sa mga hiling sa pag-update ng directory
-- [Data Security](../settings/data-security.md) — GDPR na kaagapay at pag-anonymize na nagsisimula sa admin
-- [Mobile App Settings](../settings/mobile-app.md) — Pagkonfigura ng Directory Approval Group
+- [Managing Your Profile](./managing-profile.md) — Kung saan ang mga miyembro ay humihiling ng pagtanggal ng kanilang sariling account
+- [Approving Profile Changes](./approving-profile-changes.md) — Ang katulad na review flow para sa directory update requests
+- [Data Security](../settings/data-security.md) — Pagsunod sa GDPR at admin-initiated anonymization
+- [Mobile App Settings](../settings/mobile-app.md) — Pag-setup ng Directory Approval Group

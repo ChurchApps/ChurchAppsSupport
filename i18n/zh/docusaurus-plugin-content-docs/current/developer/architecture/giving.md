@@ -6,16 +6,16 @@ title: "捐赠架构"
 
 <div class="article-intro">
 
-ChurchApps 在“网关直连”模型上运营捐赠功能：教会自己保有其 Stripe（或 PayPal、Kingdom Funding）账户，B1 从来不会作为平台方处理器插入到资金流转路径中。银行卡数据在浏览器中就被令牌化，永远不会到达 ChurchApps 的服务器。本页面梳理了整个技术栈——`@churchapps/apphelper` 中的客户端支付服务商注册表、GivingApi 的网关抽象层、捐赠数据模型，以及网关 Webhook 如何回写数据库完成对账。
+ChurchApps 采用网关路由模式处理捐赠:教会保有自己的 Stripe(或 PayPal、Kingdom Funding 或 Paystack)账户,B1 不作为平台支付处理者介入资金路由。卡数据在浏览器中被令牌化,永远不会到达 ChurchApps 服务器。本页面展示整个堆栈 —— `@churchapps/apphelper` 中的客户端提供商注册表、GivingApi 网关抽象、捐赠数据模型,以及网关 webhook 如何将数据对账回数据库。
 
 </div>
 
-## 概览
+## 概述
 
 ```
 ┌─────────────────────────────┐                   ┌───────────────────────────────────────┐
 │  B1App / B1Admin (browser)  │                   │  Payment gateway                      │
-│                             │                   │  (Stripe / PayPal / Kingdom Funding)  │
+│                             │                   │  (Stripe / PayPal / KF / Paystack)  │
 │  @churchapps/apphelper      │                   │                                       │
 │  ┌───────────────────────┐  │ card entry in the │  Stripe Elements · KF tokenizer ·     │
 │  │ Payment provider      │──┼──────────────────▶│  PayPal Hosted Fields                 │
@@ -38,123 +38,139 @@ ChurchApps 在“网关直连”模型上运营捐赠功能：教会自己保有
                 MySQL (giving schema)
 ```
 
-以下三条原则贯穿整个技术栈：
+整个堆栈遵循三项原则:
 
-1. **银行卡数据始终由网关持有。**每个服务商的输入控件都在浏览器中完成令牌化；API 永远只会收到一个令牌、nonce 或订单 ID。
-2. **一套抽象，多个服务商。**浏览器端从一个注册表中解析出 `PaymentProvider`；服务器端从一个工厂中解析出 `IGatewayProvider`。两者都以存储在网关记录上的同一个标准化服务商名称作为键。
-3. **Webhook 是结算状态的事实来源。**一次扣款响应会被乐观地先行记录，但真正确认（或创建）该笔已完成捐赠记录的，是网关发来的已签名 Webhook，两端都设有幂等性保护。
+1. **网关持有卡数据。** 每个提供商的输入小部件在浏览器中进行令牌化;API 只会收到令牌、nonce 或订单 ID。
+2. **一个抽象,多个提供商。** 浏览器从注册表解析 `PaymentProvider`;服务器从工厂解析 `IGatewayProvider`。两者都基于存储在网关记录上的相同规范化提供商名称。
+3. **Webhook 是清算的事实来源。** 收费响应被乐观地记录,但网关的签名 webhook 才是确认(或创建)已完成捐赠的内容,两端都有幂等性保护。
 
-## 客户端：支付服务商注册表（`@churchapps/apphelper`）
+## 客户端:支付提供商注册表(`@churchapps/apphelper`)
 
-该注册表位于 `Packages/apphelper/src/donations/providers/`，每个服务商各自的控件与辅助函数都放在自己的子目录下（`providers/stripe/`、`providers/paypal/`、`providers/kingdomfunding/`）——`providers/` 目录之外没有任何代码会根据服务商名称做分支判断。一个 `PaymentProvider`（见 `providers/types.ts`）打包了宿主应用接入某个网关所需的一切：一个 `descriptor`（管理端展示标签、支持的币种、手续费字段、默认费率、控制台/注册链接）、一组 `capabilities` 能力标志（已保存银行卡、ACH、循环扣款、内联新卡录入、令牌化即隐式保存）、面向会员录入的 React 控件（`MemberWrapper`/`MemberEntry`）、访客捐赠（`GuestForm`）、已保存方式编辑（`MethodEditForm`）、表单问答内嵌付款（`FormPayment`），以及 `buildChargeRequest(ctx, token)`——扣款负载结构因服务商而异的唯一之处。每个服务商的 `MemberWrapper` 都会根据网关记录中的公钥自行加载其 SDK，因此宿主应用永远不需要引入任何网关 SDK（B1App 和 B1Admin 都没有 `@stripe/*` 这样的依赖）。`pickDefaultGateway(gateways, capability?)` 集中决定某个界面应该使用一个教会众多网关中的哪一个。
+注册表位于 `Packages/apphelper/src/donations/providers/`,每个提供商的小部件和助手在其自己的子文件夹中(`providers/stripe/`、`providers/paypal/`、`providers/kingdomfunding/`、`providers/paystack/`) —— `providers/` 外的任何内容都不会基于提供商名称进行分支。`PaymentProvider`(参见 `providers/types.ts`)捆绑了主机应用对一个网关的所有需求:一个 `descriptor`(管理标签、支持的货币、费用字段、默认费率、仪表板/注册 URL)、一个 `capabilities` 标志集(已保存的卡、ACH、定期、内联新卡输入、隐式保存令牌化)、用于成员输入的 React 小部件(`MemberWrapper`/`MemberEntry`)、访客捐赠(`GuestForm`)、已保存方法编辑(`MethodEditForm`)和表单问题支付(`FormPayment`),加上 `buildChargeRequest(ctx, token)` —— 收费有效负载形状根据提供商而异的唯一地方。每个提供商的 `MemberWrapper` 从网关记录的公钥加载其自己的 SDK,因此主机应用永远不会导入网关 SDK(B1App 和 B1Admin 没有 `@stripe/*` 依赖)。`pickDefaultGateway(gateways, capability?)` 集中了教会的哪个网关应该被表面使用。
 
-`providers/registry.ts` 保存了内置的服务商。它们是**按值引用**注册的，而非通过某个模块的副作用注册，因此打包工具的摇树优化永远不会误删这份注册：
+`providers/registry.ts` 持有内置项。它们**按值引用**,而不是通过模块副作用注册,因此打包器的树摇永远无法删除注册:
 
 ```typescript
-for (const p of [StripeProvider, KingdomFundingProvider, PayPalProvider]) builtins.set(p.key, p);
+for (const p of [StripeProvider, KingdomFundingProvider, PayPalProvider, PaystackProvider]) builtins.set(p.key, p);
 ```
 
-| 函数 | 用途 |
+| 函数 | 目的 |
 |----------|---------|
-| `getPaymentProvider(name)` | 按标准化名称解析；找不到时回退到 Stripe，因此一个配置错误的服务商永远不会导致捐赠表单硬崩溃 |
-| `registerPaymentProvider(p)` | 在运行时注册一个额外的服务商（供宿主应用接入自定义网关使用） |
-| `listPaymentProviders()` | 枚举内置服务商及自定义服务商——用于构建管理端的网关下拉列表 |
+| `getPaymentProvider(name)` | 按规范化名称解析;回退到 Stripe 以便配置错误的提供商永远不会硬崩溃捐赠者表单 |
+| `registerPaymentProvider(p)` | 在运行时注册额外的提供商(用于主机应用的自定义网关) |
+| `listPaymentProviders()` | 枚举内置项 + 自定义项 —— 用于构建管理网关下拉列表 |
 | `hasPaymentProvider(name)` | 成员资格检查 |
 
-**内置的客户端服务商：Stripe、PayPal、Kingdom Funding。**B1App 和 B1Admin 只*读取*这份注册表（`getPaymentProvider`、`listPaymentProviders`）；两者都不会调用 `registerPaymentProvider`——注册逻辑始终留在 apphelper 内部。
+**内置客户端提供商:Stripe、PayPal、Kingdom Funding、Paystack。** B1App 和 B1Admin 仅**读**注册表(`getPaymentProvider`、`listPaymentProviders`);两者都不会调用 `registerPaymentProvider` —— 注册保留在 apphelper 内部。
 
-每个服务商的令牌化方式各不相同，但都确保银行卡信息不进入 B1：
+每个提供商的令牌化方式不同,但都将卡保留在 B1 外:
 
-| 服务商 | 录入控件 | 返回给 API 的令牌 |
+| 提供商 | 输入小部件 | 返回给 API 的令牌 |
 |----------|--------------|-----------------------|
-| Stripe | Stripe `Elements` 的 `CardElement` → `stripe.createPaymentMethod(...)` | 支付方式 ID（`pm_…`）；银行账户则通过 Financial Connections / ACH SetupIntent |
-| Kingdom Funding | 由网关公钥键入的托管令牌化表单 | 一次性 nonce |
-| PayPal | PayPal 托管字段；服务器端订单通过 `/donate/client-token` + `/donate/create-order` 构建 | 已捕获的订单 ID |
+| Stripe | Stripe `Elements` `CardElement` → `stripe.createPaymentMethod(...)`;访客表单还挂载 `ExpressCheckoutElement`(Apple Pay / Google Pay,一次性礼物),其 `onConfirm` 解析为相同的 `pm_…` ID | 支付方法 ID(`pm_…`);通过 `/paymentmethods/ach-setup-intent` 的银行 —— USD 网关的金融连接 `us_bank_account`,CAD 网关的加拿大 PAD `acss_debit`(托管授权模式、授权 `default_for` 发票/订阅、一次性收费传递授权 ID) |
+| Kingdom Funding | 由网关公钥键入的托管令牌化表单 | 单次使用 nonce |
+| PayPal | PayPal 托管字段(卡、定期)加上带 Venmo 资金的 PayPal 智能按钮(一次性);两者共享一个 SDK 加载和通过 `/donate/client-token` + `/donate/create-order` 构建的服务器订单 | 已捕获的订单 ID |
+| Paystack | Paystack 内联弹出窗口(`js.paystack.co/v2/inline.js`) —— 弹出窗口本身进行支付(卡、移动货币、银行转账、USSD) | 已支付的交易参考;已保存的方法是 Paystack `AUTH_…` 授权代码 |
 
-Stripe 的 `finalizeResult` 会在捐赠被视为完成之前，在浏览器中运行 3-D Secure / SCA 校验（`providers/stripe/stripe3DS.ts` → `stripe.confirmCardPayment`）；共享表单只是调用 `provider.finalizeResult(result)`，完全不了解其内部具体做了什么。
+Stripe 的 `finalizeResult` 在浏览器中运行 3-D Secure / SCA(`providers/stripe/stripe3DS.ts` → `stripe.confirmCardPayment`),然后才认为捐赠已完成;共享表单只调用 `provider.finalizeResult(result)`,对其执行的操作一无所知。
 
-## 服务器端：网关抽象层（GivingApi）
+## 服务器端:网关抽象(GivingApi)
 
-`/giving` 模块（`Api/src/modules/giving`）负责暴露 REST 接入面；网关相关的管道逻辑位于 `Api/src/shared/helpers`。`DonateController` 从不直接与某个网关 SDK 打交道——它统一通过 `GatewayService`，由后者从 `GatewayFactory` 解析出正确的 `IGatewayProvider`，并交给它一份已解密的 `GatewayConfig`。
+`/giving` 模块(`Api/src/modules/giving`)暴露 REST 表面;网关管道位于 `Api/src/shared/helpers`。`DonateController` 永远不会直接与网关 SDK 交谈 —— 它通过 `GatewayService` 进行,后者从 `GatewayFactory` 解析正确的 `IGatewayProvider` 并向其传递解密的 `GatewayConfig`。
 
 ```
 DonateController ─▶ GatewayService ─▶ GatewayFactory.getProvider(name) ─▶ IGatewayProvider
                         │ getGatewayConfig() decrypts privateKey / webhookKey
                         ▼
-             StripeGatewayProvider · PayPalGatewayProvider · KingdomFundingGatewayProvider · …
+             StripeGatewayProvider · PayPalGatewayProvider · KingdomFundingGatewayProvider · PaystackGatewayProvider · …
 ```
 
-`IGatewayProvider`（`shared/helpers/gateways/IGatewayProvider.ts`）是每一个网关都必须实现的契约——包括 Webhook 生命周期（`createWebhookEndpoint`、`verifyWebhookSignature`、`classifyWebhookEvent`）、支付相关（`prepareCharge`、`processCharge`、`prepareSubscription`、`createSubscription`、`finalizeSubscription`、`cancelSubscription`）、手续费（`calculateFees`）、已保存支付方式处理（`listNormalizedPaymentMethods`、`buildAttachOptions`、`buildLocalMethodRecord`、`deletePaymentMethod`、`verifyMethodOwnership`、`ownsPaymentMethodId`），以及若干可选的扩展能力（客户、订单、SetupIntent、事件重放）。每个服务商类都会声明自己的 `capabilities` 能力矩阵（支持的币种、ACH、退款、订阅要求、交易限额）——`GatewayService.getProviderCapabilities(provider)` 只是读取这份矩阵——诸如 `logsDonationsImmediately` 之类的标志会驱动控制器的行为，而控制器代码里完全不存在任何针对具体服务商名称的条件判断。
+`IGatewayProvider`(`shared/helpers/gateways/IGatewayProvider.ts`)是每个网关实现的合约 —— webhook 生命周期(`createWebhookEndpoint`、`verifyWebhookSignature`、`classifyWebhookEvent`)、支付(`prepareCharge`、`processCharge`、`prepareSubscription`、`createSubscription`、`finalizeSubscription`、`cancelSubscription`)、费用(`calculateFees`)、已保存方法处理(`listNormalizedPaymentMethods`、`buildAttachOptions`、`buildLocalMethodRecord`、`deletePaymentMethod`、`verifyMethodOwnership`、`ownsPaymentMethodId`)以及可选附加功能(客户、订单、SetupIntents、事件重放、用于失败订阅发票的 `retryFailedPayment`、Apple Pay 域验证的 `registerPaymentMethodDomain`)。省略可选钩子的提供商被报告为该操作不支持,UI 隐藏控件。每个提供商类声明其自己的 `capabilities` 矩阵(支持的货币、ACH、退款、订阅要求、交易限制) —— `GatewayService.getProviderCapabilities(provider)` 只是读取它 —— 并且 `logsDonationsImmediately` 等标志驱动控制器行为,而不是控制器中的任何提供商名称条件。
 
-**在 `GatewayFactory` 中注册的服务器端服务商：**
+**在 `GatewayFactory` 中注册的服务器提供商:**
 
-| 服务商 | 可用性 |
+| 提供商 | 可用性 |
 |----------|-------------|
 | Stripe | 始终开启 |
 | PayPal | 始终开启 |
 | Kingdom Funding | 始终开启 |
-| Square | 通过 `ENABLE_SQUARE` 环境变量选择性开启 |
-| ePayMints | 通过 `ENABLE_EPAYMINTS` 环境变量选择性开启 |
+| Paystack | 始终开启(尼日利亚、加纳、南非、肯尼亚、科特迪瓦商户;货币 NGN/GHS/ZAR/KES/XOF/USD) |
+| Square | 通过 `ENABLE_SQUARE` 环境标志选择加入 |
+| ePayMints | 通过 `ENABLE_EPAYMINTS` 环境标志选择加入 |
 
-当设置了 `ENABLE_CUSTOM_GATEWAY_PROVIDERS` 时，可以在运行时注册自定义服务商；`AbstractExperimentalGatewayProvider` 是这类服务商的基类。服务商名称匹配不区分大小写。
+Paystack 与其他的不同之处在于,资金在 GivingApi 参与之前就已经转移:弹出窗口向捐赠者收费,`processCharge` 是一个 `GET /transaction/verify/:reference`,其已支付金额和货币必须与正在记录的捐赠相匹配(已有文件中的参考从不被记录两次),定期安排的第一笔礼物从 `finalizeSubscription` 记录(验证 → `POST /plan` → `POST /subscription`,其中 `start_date` 是一个间隔之后)。Webhook 由秘钥本身签署(`x-paystack-signature`、原始正文的 HMAC-SHA512),Paystack 没有 webhook 管理 API,因此管理屏幕显示教会要粘贴到其仪表板中的 URL。续订 `charge.success` 事件不包含资金拆分;提供商从捐赠者的本地 `subscriptions`/`subscriptionFunds` 行中恢复它。只有卡授权是 `reusable` 的 —— 移动货币礼物是一次性的,因此 `createSubscription` 拒绝它们。演示数据为第二个教会(Accra Community Church、`CHU00000002`)播种在 Paystack 测试模式 GHS 网关上,以便 Paystack Playwright 套件与 Grace 的 Stripe 套件一起运行。
 
-### 网关配置与密钥
+当设置 `ENABLE_CUSTOM_GATEWAY_PROVIDERS` 时,可以在运行时注册自定义提供商;`AbstractExperimentalGatewayProvider` 是这些的基类。提供商名称不区分大小写进行匹配。
 
-管理员通过 `POST /giving/gateways`（`GatewayController`）保存网关凭证。保存时控制器会用 `EncryptionHelper` 加密私钥和 Webhook 密钥后再持久化，随后——在任何非 localhost 的主机环境下——会删除该教会现有的 Webhook，并重新配置一个指向 `/giving/donate/webhook/{provider}?churchId=…` 的新 Webhook。公开读取接口（`GET /giving/gateways/churchId/:churchId`、`/configured/:churchId`）只会返回公钥。
+### 网关配置和秘密
+
+管理员通过 `POST /giving/gateways`(`GatewayController`)保存网关凭证。保存时,控制器使用 `EncryptionHelper` 加密私钥和 webhook 密钥后再持久化,然后 —— 在任何非本地主机上 —— 删除教会的现有 webhook 并配置一个指向 `/giving/donate/webhook/{provider}?churchId=…` 的新 webhook。教会每个提供商保有一行:保存网关仅替换该提供商的现有行。公共读取(`GET /giving/gateways/churchId/:churchId`、`/configured/:churchId`)仅返回公钥。
 
 ## 数据模型
 
-giving 模式（`Api/src/modules/giving/db/DatabaseTypes.ts`，模型位于 `models/`）是一个通过 Kysely 访问的 MySQL 数据库模式：
+giving 模式(`Api/src/modules/giving/db/DatabaseTypes.ts`、`models/` 中的模型)是通过 Kysely 访问的 MySQL 模式:
 
 | 表 | 角色 |
 |-------|------|
-| `gateways` | 每个教会的服务商配置：`provider`、`publicKey`、加密的 `privateKey`/`webhookKey`、`productId`、`payFees`、`currency`、`settings`、`environment` |
-| `funds` | 捐赠指定用途（`name`、`taxDeductible`、`productId`） |
-| `donationBatches` | 用于录入/报表的分组（`name`、`batchDate`） |
-| `donations` | 一笔捐赠：`batchId`、`personId`、`donationDate`、`amount`、`currency`、`method`、`status`（`pending`/`complete`/`failed`）、`transactionId` |
-| `fundDonations` | 一笔捐赠在一个或多个基金之间的分配（`donationId`、`fundId`、`amount`） |
-| `subscriptions` | 循环捐赠；`id` 就是网关自身的订阅 ID，关联到 `personId`、`customerId`、`gatewayId` |
-| `subscriptionFunds` | 一笔循环捐赠的基金拆分 |
-| `customers` | 将 `personId` 关联到其在某个 `provider` 下的网关客户 ID |
-| `gatewayPaymentMethods` | 已保存的银行卡/银行账户：`customerId`、`externalId`、`methodType`、`displayName`、`metadata` |
-| `eventLogs` | Webhook/事件审计轨迹与去重键（`provider`、`providerId`、`eventType`、`status`、`resolved`） |
-| `campaigns` / `pledges` | 关联到某个基金的认捐活动，以及每个人认捐的金额 |
+| `gateways` | 每教会提供商配置:提供商、公钥、加密的 privateKey/webhookKey、productId、payFees、货币、设置、环境 |
+| `funds` | 捐赠指定(`name`、`taxDeductible`、`productId`) |
+| `donationBatches` | 输入/报告的分组(`name`、`batchDate`) |
+| `donations` | 一笔礼物:`batchId`、`personId`、`donationDate`、`amount`、`currency`、`method`、`status`(pending/complete/failed/refunded;语句、总计、仪表板和捐赠报告仅计数 complete 或 null)、`transactionId` |
+| `fundDonations` | 跨一个或多个资金分配捐赠(`donationId`、`fundId`、`amount`) |
+| `subscriptions` | 定期礼物;`id` 是网关的订阅 ID,链接到 `personId`、`customerId`、`gatewayId` |
+| `subscriptionFunds` | 定期礼物的资金拆分 |
+| `customers` | 将 `personId` 链接到其网关客户 ID,按 `provider` |
+| `gatewayPaymentMethods` | 已保存的卡/银行:`customerId`、`externalId`、`methodType`、`displayName`、`metadata` |
+| `eventLogs` | Webhook/事件审计跟踪和重复数据删除密钥(provider、providerId、eventType、status、resolved) |
+| `campaigns` / `pledges` | 与资金相关的承诺活动,以及每个人的承诺金额 |
 
-一笔捐赠通过 `fundDonations` 分配到多个基金——捐赠记录本身携带总额，每一条 `fundDonation` 携带其中一部分金额。`donations.currency` 和 `gateways.currency` 携带 ISO 币种代码；每个服务商都会公布自己支持的 `supportedCurrencies`，金额则使用 `CurrencyHelper.formatCurrencyWithLocale` 进行格式化。
+捐赠通过 `fundDonations` 拆分为资金 —— 捐赠携带总额,每个 `fundDonation` 携带一个切片。`donations.currency` 和 `gateways.currency` 携带 ISO 货币;每个提供商宣传其 `supportedCurrencies`,金额使用 `CurrencyHelper.formatCurrencyWithLocale` 格式化。
 
 ## 端到端流程
 
-### 会员一次性捐赠与循环捐赠（B1App）
+### 成员一次性和定期(B1App)
 
-已认证的捐赠页面（`B1App/src/app/[sdSlug]/mobile/components/screens/DonatePage.tsx`）组合了三个 apphelper 组件：`MultiGatewayDonationForm`、`PaymentMethods` 和 `RecurringDonations`。围绕这些组件的数据加载由 B1App 负责——`GET /donations/my`、`/gateways`、`/paymentmethods/personid/:id`、`/customers/:id/subscriptions`——并将网关列表传递下去；被解析出的服务商会根据网关的公钥自行加载其 SDK。扣款操作本身发生在 apphelper 内部：被解析出的服务商对（新的或已保存的）支付方式进行令牌化，随后为一次性捐赠调用 `/giving/donate/charge`，或为循环捐赠调用 `/giving/donate/subscribe`。循环捐赠会创建一条 `subscriptions` 记录以及对应的 `subscriptionFunds`，并把排期交给网关处理（Stripe 的 Subscriptions、PayPal 的 Billing Plans，或 KF 的循环排期）。
+认证捐赠屏幕(`B1App/src/app/[sdSlug]/mobile/components/screens/DonatePage.tsx`)组成三个 apphelper 组件:`MultiGatewayDonationForm`、`PaymentMethods` 和 `RecurringDonations`。B1App 进行周围的数据加载 —— `GET /donations/my`、`/gateways`、`/paymentmethods/personid/:id`、`/customers/:id/subscriptions` —— 并传递网关列表;解析的提供商从网关的公钥加载其自己的 SDK。收费本身发生在 apphelper 内:解析的提供商令牌化(新的或已保存的)方法,然后发布到 `/giving/donate/charge` 用于一次性礼物或 `/giving/donate/subscribe` 用于定期礼物。两个端点都将已签入的捐赠者属性到其自己的 `personId`(仅 `donations.edit` 持有者可能属性给其他人)并拒绝加起来超过收费金额的资金拆分。定期礼物创建一个 `subscriptions` 行加 `subscriptionFunds` 并将时间表交给网关(Stripe 订阅、PayPal 计费计划或 KF 定期时间表)。
 
 ### 访客/匿名捐赠
 
-公开捐赠页面（`B1App/src/app/[sdSlug]/(public)/[pageSlug]/components/DonatePage.tsx`）以及“立即捐赠”面板会渲染来自 `@churchapps/apphelper/website` 的 `NonAuthDonationWrapper`，它会在服务商的 `GuestForm` 周围注入 reCAPTCHA 和网关的 Elements 上下文。访客不会有登录、不会有已保存的支付方式，也不会有历史记录。整个流程会获取 `GET /giving/funds/churchId/:id` 和 `GET /giving/donate/gateways/:churchId`（仅返回公钥），通过 `POST /giving/donate/captcha-verify` 验证访客身份，在浏览器中完成令牌化，并提交到 `/giving/donate/charge`（或 `/subscribe`）。访客的 ACH 捐赠使用匿名端点 `POST /giving/paymentmethods/ach-setup-intent-anon`。
+公共捐赠页面(`B1App/src/app/[sdSlug]/(public)/[pageSlug]/components/DonatePage.tsx`)和"立即捐赠"面板呈现来自 `@churchapps/apphelper/website` 的 `NonAuthDonationWrapper`,它在提供商的 `GuestForm` 周围注入 reCAPTCHA 和网关的 Elements 上下文。访客没有登录、没有已保存的方法和没有历史记录。流程获取 `GET /giving/funds/churchId/:id` 和 `GET /giving/donate/gateways/:churchId`(仅公钥)、使用 `POST /giving/donate/captcha-verify` 验证访客、在浏览器中令牌化并发布到 `/giving/donate/charge`(或 `/subscribe`)。访客 ACH 使用匿名 `POST /giving/paymentmethods/ach-setup-intent-anon`。
 
-### 管理端录入与 Stripe 导入（B1Admin）
+三个访客表单选项乘坐相同的收费调用。捐赠 URL 上的 `?fundId=` 和 `?amount=` 预选资金拆分(由每个提供商的访客表单在挂载时读取,通过正常的资金更改处理程序路由,以便总计和费用更新)。`anonymous: true` 使 `DonateController.charge` 丢弃客户端发送的任何人员并使用 `personId = null` 记录礼物;访客表单跳过 `/people/loadOrCreate` 和客户/保险库步骤,三个立即日志提供商停止从网关客户解析人员。Apple Pay 需要在 Stripe 中注册页面的域,因此 Stripe 访客表单每个会话发布一次到公共、速率受限的 `POST /giving/donate/register-domain`,它仅在属于教会的域上接受(`<subDomain>.b1.church`、内容模块的域表中的一行或本地主机)后才调用 Stripe 的支付方法域 API。
 
-B1Admin 的捐赠板块（`B1Admin/src/donations/`）是财务团队的工作台。批量录入（`components/BulkDonationEntry.tsx`）通过依次调用 `/giving/donations` 和 `/giving/funddonations` 来记录现金/支票/实物捐赠——不涉及任何网关。基金、批次、活动和结算单各自对应到相应的 `/giving/*` 增删改查路由。会员风格的捐赠面板（`B1Admin/src/donationComponents/`）复用了与 B1App 相同的 apphelper 组件。
+### 管理记录和 Stripe 导入(B1Admin)
 
-Stripe 导入功能（`B1Admin/src/donations/StripeImportPage.tsx`）用于回填在 B1 之外发生的捐赠：它先以 `dryRun: true` 调用 `POST /giving/donate/replay-stripe-events` 进行预览，再以 `dryRun: false` 执行正式导入。服务器会列出该日期范围内的 Stripe 事件，并跳过已经记录过的事件——先按 `eventLogs` 中的服务商 ID 匹配，再按 `DonationRepo.findMatchingDonation`（金额 + 日期 + 人员）匹配，因此重复运行永远不会造成重复导入。
+B1Admin 捐赠部分(`B1Admin/src/donations/`)是财务团队工作的地方。批量输入(`components/BulkDonationEntry.tsx`)通过发布 `/giving/donations` 然后 `/giving/funddonations` 来记录现金/支票/实物礼物 —— 没有涉及网关。资金、批次、活动和对账单各自映射到其 `/giving/*` CRUD 路由。成员风格的捐赠面板(`B1Admin/src/donationComponents/`)重用 B1App 相同的 apphelper 组件。
 
-## Webhook 与对账
+报告和会计交接是客户端或报告运行程序工作,而不是网关工作:批次页面的 QuickBooks 导出从批次的 `donations` + `fundDonations` 构建日记账条目 CSV(借记未存款资金,每个资金一个贷记)、过期捐赠者标签通过 `ReportOutput` 解析人员名称运行 `Api/reports/lapsedGivers.json` 通过通用报告运行程序、国家收据格式(加拿大/澳大利亚/新西兰)是会员键/值存储中的教会设置,由 `GivingStatementDocument` 呈现并在 B1App 打印页面中重复。
 
-已结算的支付以及订阅状态变更会到达 `POST /giving/donate/webhook/:provider?churchId=…`（`DonateController.webhook`）。处理过程被刻意设计为幂等的：
+### 转换混合货币总计
 
-1. **验证** —— `GatewayService.verifyWebhook` 会委托给对应服务商的签名校验逻辑；签名校验失败返回 401。不需要处理的事件会以 200 短路返回。
-2. **事件去重** —— `EventLogRepo.loadByProviderId` 会跳过已记录在 `eventLogs` 中的 Webhook。
-3. **捐赠去重** —— 在创建任何记录之前，都会用 `DonationRepo.loadByTransactionId` 对照负载中可能携带的每一个候选 ID 进行检查。这一机制能够吸收重复投递、多阶段的 ACH 事件（待结算 → 已结算），以及 `/donate/charge` 已经乐观地记录过这笔捐赠的情况。
-4. **应用变更** —— 服务商的 `classifyWebhookEvent(eventType)` 会说明该事件的含义（`donation` 待结算/已完成、`cancel-subscription`，或 `ignore`）；已完成的支付会创建一条 `complete` 状态的捐赠记录（或将某条已存在的 `pending` 记录升级）；ACH 类事件在正式结算前会以 `pending` 状态落地；取消类事件会删除本地的 `subscriptions` 记录。控制器从不检查任何特定于服务商的事件名称。
+任何返回可能混合货币礼物的单个组合总计的端点 —— giving 摘要 KPI(`GivingKpiCards`)、捐赠批次总计、资金总计和 B1App 捐赠屏幕的年初至今/期间总计 —— 在服务器端转换到教会的默认货币而不是对不同货币求和。`Api/src/shared/helpers/ExchangeRateHelper.ts` 从 `api.frankfurter.dev` 获取以教会货币为键的汇率,在进程中缓存 12 小时,并暴露 `convertTotals(rows, churchCurrency, rates)`:行在 SQL 中按货币预先分组(少数几个分组,从不是每笔礼物转换)、每个分组被转换和求和,结果携带一个 `isConverted` 标志客户端使用以显示"在当前汇率下转换"注记。个别捐赠记录和历史/原始货币报告永远不会被转换 —— 仅组合总计。
 
-具备 `logsDonationsImmediately` 特性的服务商（PayPal、Kingdom Funding）会直接从 `/charge` 响应中记录扣款（在正常路径下无需 Webhook 往返），而 Stripe 则依赖 `payment_intent.succeeded` / `invoice.paid` 以及 ACH 的 `payment_intent.processing`。手续费处理逻辑（`POST /giving/donate/fee`、网关的 `payFees` 标志，以及每个服务商各自的 `calculateFees`）会在捐赠人一侧计算“承担手续费”的加成金额——B1 不抽取任何平台分成，因此永远不会额外附加应用费用。
+Stripe 导入(`B1Admin/src/donations/StripeImportPage.tsx`)回填在 B1 外进行的礼物:它调用 `POST /giving/donate/replay-stripe-events`,其中 `dryRun: true` 用于预览,然后 `dryRun: false` 用于导入。服务器列出日期范围的 Stripe 事件并跳过已记录的任何内容 —— 首先通过 `eventLogs` 提供商 ID 匹配,然后通过 `DonationRepo.findMatchingDonation`(金额 + 日期 + 人员)以便重新运行永远不会重复导入。
+
+## Webhook 和对账
+
+已清算的支付和订阅状态更改到达 `POST /giving/donate/webhook/:provider?churchId=…`(`DonateController.webhook`)。处理有意是幂等的:
+
+1. **验证** —— `GatewayService.verifyWebhook` 委托给提供商的签名检查;失败的签名返回 401。不需要处理的事件使用 200 快速回路。
+2. **重复数据删除事件** —— `EventLogRepo.loadByProviderId` 跳过 `eventLogs` 中已记录的 webhook。
+3. **重复数据删除捐赠** —— 在创建任何内容之前,会检查 `DonationRepo.loadByTransactionId` 对抗有效负载可能携带的每个候选 ID。这吸收重复传递、多阶段 ACH 事件(pending → settled)和 `/donate/charge` 已乐观地记录礼物的情况。
+4. **应用** —— 提供商的 `classifyWebhookEvent(eventType)` 说事件意味着什么(捐赠 pending/complete、cancel-subscription 或 ignore);已完成的支付创建一个 `complete` 捐赠(或晋升现有的 `pending` 或 `failed` 捐赠)、ACH 风格事件落地为 `pending` 直到清算、失败的订阅发票(Stripe `invoice.payment_failed`)创建一个以发票 ID 为键的 `failed` 捐赠、取消事件删除本地 `subscriptions` 行。控制器永远不会检查提供商特定的事件名称。
+
+### 失败的定期礼物和追债
+
+一个 `failed` 捐赠是恢复的工作单位。`GET /giving/donations/failed` 列出它们及来自 `eventLogs` 的最新网关失败消息和来自网关功能的 `canRetry` 标志;`POST /giving/donate/retry/:donationId` 调用提供商的 `retryFailedPayment`(Stripe 支付未清发票),生成的 webhook 通过正常重复数据删除路径将行晋升为 `complete`。追债电子邮件在 webhook 处理程序的第 0 天从捐赠者进行,然后从午夜计时器(在 `lambda/timer-handler.ts` 和 `RailwayCron.ts` 中有线)中的 `DunningHelper.run` 在第 3 和第 7 天进行;每个发送在 `eventLogs` 中记录为 `provider: "dunning"`、`providerId: "<donationId>:<day>"`,因此重新运行永远不会发送两次电子邮件。在此功能之前创建的 Stripe webhook 端点不订阅 `invoice.payment_failed`;重新保存网关使用事件配置新的端点。
+
+具有 `logsDonationsImmediately` 的提供商(PayPal、Kingdom Funding、Paystack)将其费用从 `/charge` 响应记录(对于快乐路径不需要 webhook 往返),而 Stripe 依赖 `payment_intent.succeeded` / `invoice.paid` 和 ACH `payment_intent.processing`。费用处理(`POST /giving/donate/fee`、`payFees` 网关标志和每个提供商的 `calculateFees`)在捐赠者端计算"覆盖费用"总额 —— B1 不获取平台削减,因此永远不会添加应用费用。
 
 :::info
-扣款路径和 Webhook 路径写入的是同一批 `donations` / `fundDonations` 记录。`transactionId` 正是这个用于关联的键，它确保一次乐观记录的扣款日志与其随后到达的 Webhook 不会为同一笔捐赠产生两条重复记录。
+收费和 webhook 路径写入相同的 `donations` / `fundDonations` 行。`transactionId` 是连接键,使乐观费用日志及其后来的 webhook 不会为一笔礼物产生两个捐赠。
 :::
 
 ## 相关页面
 
-- [捐赠端点](../api/endpoints/giving) —— 涵盖捐赠、基金、批次、网关、订阅、支付方式和 Webhook 的完整 REST 接入面
-- [AppHelper](../shared-libraries/app-helper) —— 提供支付服务商注册表与捐赠组件的 npm 包
+- [Giving 端点](../api/endpoints/giving) —— 用于捐赠、资金、批次、网关、订阅、支付方法和 webhook 的完整 REST 表面
+- [AppHelper](../shared-libraries/app-helper) —— 提供支付提供商注册表和捐赠组件的 npm 包
 - [模块结构](../api/module-structure) —— GivingApi 模块在服务器端的组织方式

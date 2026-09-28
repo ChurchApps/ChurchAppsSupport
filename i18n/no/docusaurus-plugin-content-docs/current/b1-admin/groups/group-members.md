@@ -6,15 +6,15 @@ title: "Gruppemedlemmer"
 
 <div class="article-intro">
 
-Når du har opprettet en gruppe, er neste steg å legge til medlemmer. Fra en gruppes detaljside kan du søke etter personer, legge dem til i gruppen, tilordne ledere, sende meldinger og eksportere medlemslisten. Håndtering av gruppemedlemskap er avgjørende for koordinering av små grupper, komiteer og klasser.
+Når du har opprettet en gruppe, er neste steg å legge til medlemmer. Fra gruppens detaljside kan du søke etter personer, legge dem til i gruppen, tildele ledere, sende meldinger og eksportere medlemslisten. Styring av gruppemedlemskap er essensielt for å koordinere små grupper, utvalg og klasser.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du må ha minst én gruppe satt opp i B1 Admin. Se [Opprette grupper](creating-groups.md) hvis du ikke har opprettet en ennå.
-- Personene du vil legge til må allerede finnes i din [Personoversikt](../people/adding-people.md).
+- Du må ha minst en gruppe satt opp i B1 Admin. Se [Opprett grupper](creating-groups.md) hvis du ikke har opprettet en ennå.
+- Personene du vil legge til må allerede finnes i din [Personmappe](../people/adding-people.md).
 
 </div>
 
@@ -22,89 +22,107 @@ Når du har opprettet en gruppe, er neste steg å legge til medlemmer. Fra en gr
 
 1. Gå til siden **Grupper** og klikk på gruppen du vil administrere.
 2. Klikk på fanen **Medlemmer**.
-3. I søkeboksen skriver du inn navnet på personen du vil legge til.
+3. I søkefeltet, skriv inn navn på personen du vil legge til.
 4. Klikk **Legg til** ved siden av personens navn i søkeresultatene.
-5. Personen vises nå i listen over gruppemedlemmer.
+5. Personen vises nå i gruppemedlemslisten.
 
 :::tip
-La søkeboksen være tom og klikk **Søk** for å bla gjennom hele personoversikten. Dette er nyttig hvis du er usikker på den nøyaktige stavemåten av noe sitt navn.
+La søkefeltet være tomt og klikk **Søk** for å bla gjennom hele mappen din. Dette er nyttig hvis du ikke er sikker på eksakt stavemåte av noens navn.
 :::
 
-## Tilordne gruppeleder
+## Utnevn gruppeledere
 
-Gruppeleder har spesielle rettigheter – de kan redigere [gruppekalenderen](group-calendar.md), administrere arrangementer og hjelpe til med koordinering av gruppen.
+Gruppledere har spesielle rettigheter -- de kan redigere [gruppens kalender](group-calendar.md), administrere arrangementer og hjelpe til med å koordinere gruppen.
 
-1. Finn personen du vil gjøre til leder i medlemslisten.
-2. Klikk på **grønt nøkkelpiktogram** ved siden av deres navn.
-3. Personen er nå utpekt som gruppeleder.
+1. I gruppemedlemslisten, finn personen du vil gjøre til leder.
+2. Klikk på **grønn nøkkelikonen** ved siden av deres navn.
+3. Personen er nå utnevnt som gruppleder.
 
-For å fjerne lederstatus, klikk på grønt nøkkelpiktogram igjen.
+For å fjerne lederstatus, klikk på grønn nøkkelikon igjen.
 
 :::info
-Ethvert gruppemedlem kan vise gruppekalenderen og arrangementer, men bare ledere kan legge til eller redigere kalenderarrangementer.
+Alle gruppemedlemmer kan se gruppens kalender og arrangementer, men bare ledere kan legge til eller redigere kalenderarrangementer.
 :::
 
 ## Sende meldinger til gruppemedlemmer
 
-Du kan kommunisere med alle medlemmer av en gruppe direkte fra B1 Admin:
+Du kan kommunisere med alle medlemmer i en gruppe direkte fra B1 Admin:
 
-1. Fra gruppens detaljside finner du meldingsområdet.
-2. Skriv meldingen din i tekstboksen.
+1. Fra gruppens detaljside, se etter meldingsområdet.
+2. Skriv meldingen din i tekstfeltet.
 3. Klikk **Send**.
 
-Meldingen din blir levert til alle medlemmer av gruppen.
+Meldingen din vil bli levert til alle medlemmer i gruppen.
 
 ## Sende e-post til gruppemedlemmer
 
-Du kan sende formaterte e-poster til alle medlemmer av en gruppe:
+Du kan sende formatert e-post til alle medlemmer i en gruppe:
 
-1. Fra gruppens detaljside klikker du på **e-postikonet**.
-2. Dialogboksen Send e-post åpnes og viser hvor mange medlemmer som får e-posten og hvor mange som ikke har e-postadresse registrert.
-3. Du kan eventuelt velge en **e-postmal** fra rullegardinlisten, eller skrive en melding fra bunnen av. Klikk **Administrer maler** for å opprette eller redigere maler.
-4. Skriv inn en **emnelinje**. Du kan sette inn flettefelt ved å klikke feltchippene: `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`.
-5. Skriv **e-postinnholdet** ved hjelp av HTML-redigeringsprogrammet. De samme flettefeltene er tilgjengelige her.
+1. Fra gruppens detaljside, klikk på **e-postikonet**.
+2. Dialogboksen Send e-post åpnes, som viser hvor mange medlemmer som vil motta e-posten og hvor mange som ikke har noen e-postadresse registrert.
+3. Velg valgfritt en **e-postmal** fra rullegardinmenyen, eller skriv en melding fra bunnen av. Klikk **Administrer maler** for å opprette eller redigere maler.
+4. Skriv inn en **emnelinjen**. Du kan sette inn sammenslåingsfelt ved å klikke på feltbrikker: `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`.
+5. Skriv **e-postkroppen** ved hjelp av HTML-redigereren. De samme sammenslåingsfeltene er tilgjengelige her.
 6. Klikk **Send**.
-7. En oppsummering viser hvor mange e-poster som ble sendt og hvor mange medlemmer som ble hoppet over (ingen e-postadresse registrert).
+7. Et sammendrag viser hvor mange e-poster som ble sendt med hell og hvor mange medlemmer som ble hoppet over (ingen e-postadresse registrert).
 
 :::tip
-Opprett gjenbrukbare e-postmaler for gjentakende kommunikasjon, for eksempel ukentlige oppdateringer, arrangementskunngjeringer eller bønneanmodninger. Maler sparer tid og sikrer ensartet meldinger.
+Opprett gjenbrukbare e-postmaler for gjentakende kommunikasjon som ukentlige oppdateringer, hendelseskunngjøringer eller begjæringer om bønn. Maler sparer tid og sikrer konsistent meldinger.
 :::
 
-## Eksportere gruppedata
+### Slå på gruppee-post for kirken din
 
-For å laste ned medlemslisten som en fil:
+Alle kirker på B1 sender e-post fra samme adresse, så de deler ett sendomdømme. For å holde alle e-poster utenfor spammapper, gjennomgår ChurchApps-teamet hver kirke en gang før den kan sende gruppee-post.
 
-1. Fra gruppens detaljside klikker du på **nedlastingsikonet**.
-2. En CSV-fil som inneholder gruppens medlemsinformasjon blir lastet ned til datamaskinen din.
+Hvis kirken din ikke har blitt gjennomgått ennå, viser Send e-post-dialogboksen **Gruppee-post trenger en rask gjennomgang** i stedet for meldingsredigereren:
 
-Dette er nyttig for å lage trykte medlemslister, importere data til andre verktøy eller holde offline-registreringer. For flere eksportalternativer, se [Eksportere data](../people/exporting-data.md).
+1. Klikk **Forespørsel gjennomgang**. ChurchApps-supportteamet blir varslet.
+2. Dialogboksen endres til **Gjennomgang forespurt**. Du kan lukke den.
+3. Gruppee-post slås vanligvis på innen en virkedag. Åpne Send e-post-dialogboksen igjen etterpå for å sende meldingen din.
 
-## Sende push-meldinger til gruppemedlemmer
+Inntil kirken din er godkjent, sender B1 heller ikke [e-poster med skjemafølging](../forms/creating-forms.md#sending-a-follow-up-email) eller trinnet **Send e-post** i [arbeidsflyter](../serving/workflows.md).
 
-Du kan sende en push-melding direkte til alle gruppemedlemmer som har B1.church-appen installert på enheten deres med push-meldinger aktivert.
+:::info Sendingsgrenser
+Etter godkjenning kan en kirke sende opptil 150 kirkeskrevne e-poster per dag. Grensen øker når kirken din bygger opp en ren sendehistorikk, opptil 2 000 per dag. Hvis nylige meldinger spratt tilbake eller ble merket som søppelpost, pauser gruppee-post og dialogboksen ber deg kontakte support. Hvis en sending ville overstige dine daglige grenser, sender B1 det ikke og viser en feil.
+:::
 
-1. Fra gruppens detaljside klikker du på **klokkeikon** i toppraden (ved siden av e-post- og SMS-ikonene).
-2. En dialog åpnes som viser hvor mange av gruppens medlemmer som har push aktivert.
-3. Fyll inn meldingsdetaljene:
-   - **Tittel** *(obligatorisk)* – En kort oppsummering, opptil 80 tegn.
-   - **Melding** *(obligatorisk)* – Meldingsteksten, opptil 240 tegn.
-   - **Åpne lenke eller flyeradresse** *(valgfritt)* – En relativ appsti (for eksempel `/mobile/groups`) eller en fullstendig `https://`-adresse som åpnes når meldingen trykkes.
-   - **Bildeadresse** *(valgfritt)* – En `https://`-adresse til et bilde som vises ved siden av meldingen på støttede enheter.
-4. En direktevisning viser hvordan meldingen vil se ut på enheten.
-5. Klikk **Send melding**.
+## Eksportere gruppedataer
+
+For å laste ned gruppemedlemslisten som en fil:
+
+1. Fra gruppens detaljside, klikk på **nedlastingsikonet**.
+2. En CSV-fil som inneholder gruppens medlemsinformasjon vil lastes ned til datamaskinen din.
+
+For å skrive ut et frammøtekjema for en klasse i stedet, bruk **Skriv ut frammøteliste** -- se [Skrive ut en frammøteliste](../attendance/recording-attendance.md#printing-a-roll-sheet).
+
+En CSV-eksport er nyttig for å importere data til andre verktøy eller for å holde frakoblet poster. For flere eksportalternativer, se [Eksportere data](../people/exporting-data.md).
+
+## Sende pushvarsler til gruppemedlemmer
+
+Du kan sende en pushvarsel direkte til alle gruppemedlemmer som har B1.church-appen installert på enheten sin med pushvarsler aktivert.
+
+1. Fra gruppens detaljside, klikk på **klokkeikonen** i topplinjeverktøylinjen (ved siden av e-post- og SMS-ikonene).
+2. En dialogboks åpnes som viser hvor mange av gruppens medlemmer som har push aktivert.
+3. Fyll ut meldingsdetaljene:
+   - **Tittel** *(påkrevd)* -- En kort sammenfatning, opptil 80 tegn.
+   - **Melding** *(påkrevd)* -- Meldingsteksten, opptil 240 tegn.
+   - **Åpne lenke eller flyerURL** *(valgfritt)* -- En relativ appsti (for eksempel `/mobile/groups`) eller en fullstendig `https://`-URL som varselet åpner når du trykker på det.
+   - **Bilde-URL** *(valgfritt)* -- En `https://`-URL til et bilde som vises ved siden av varselet på støttede enheter.
+4. En live-forhåndsvisning viser hvordan varselet vil vises på enheten.
+5. Klikk **Send varsel**.
 
 :::info
-Push-meldinger leveres bare til gruppemedlemmer som har B1.church PWA installert og ikke har deaktivert push-meldinger. Medlemmer uten registrert push-enhet eller med push slått av telles som hoppet over, og sendeoppsummeringen viser hvor mange som ble nådd kontra hoppet over.
+Pushvarsler leveres bare til gruppemedlemmer som har B1.church PWA installert og som ikke har deaktivert pushvarsler. Medlemmer uten registrert pushmekanisme eller med push slått av, telles som hoppet over, og sendeoppsummeringen viser hvor mange som ble nådd versus hoppet over.
 :::
 
 :::tip
-Etter sending viser dialogen hvor mange meldinger som ble køet. Hvis de fleste medlemmene vises som hoppet over, husk dem på å besøke B1.church-siden sin, installere den som hjemmeskjermapp og tillate meldinger når det spørres.
+Etter sending viser dialogboksen hvor mange varsler som ble satt i køen med hell. Hvis de fleste medlemmer vises som hoppet over, minne dem på at de besøker B1.church-nettstedet sitt, installerer det som en hjemmeskjerm-app og tillater varsler når de blir bedt om det.
 :::
 
 ## Fjerne medlemmer
 
-For å fjerne noen fra en gruppe finner du deres navn i medlemslisten og klikker på **slettknappen** ved siden av oppføringen deres.
+For å fjerne noen fra en gruppe, finn deres navn i medlemslisten og klikk på **fjern**-knappen ved siden av deres oppføring.
 
 :::info
-Å fjerne en person fra en gruppe sletter dem ikke fra personoversikten din. De vil fortsatt vises i [Personoversikt](../people/adding-people.md)-delen og kan legges til gruppen igjen når som helst.
+Hvis du fjerner en person fra en gruppe, blir de ikke slettet fra kirkens mappe din. De vil fortsatt vises i [Personmappen](../people/adding-people.md) og kan legges til gruppen igjen når som helst.
 :::

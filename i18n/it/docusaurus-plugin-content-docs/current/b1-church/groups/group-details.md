@@ -1,66 +1,66 @@
 ---
-title: "Dettagli Gruppo"
+title: "Dettagli del Gruppo"
 ---
 
-# Gruppo Details
+# Dettagli del Gruppo
 
 <div class="article-intro">
 
-When you Fai clic on a Gruppo from the Gruppi page, you are taken Per the Gruppo detail page. What you see depends on whether you are logged in or not, with logged-in Membri having access Per additional tabs and features.
+Quando fai clic su un gruppo dalla pagina dei gruppi, vieni portato alla pagina dei dettagli del gruppo. Quello che vedi dipende dal fatto che tu sia registrato o meno, con i membri registrati che hanno accesso a schede e funzioni aggiuntive.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Trova a Gruppo Per Visualizza by [browsing groups](./browsing-groups.md).
-- For full access Per all tabs, [log in](../getting-started/logging-in.md) Per your Account.
+- Trova un gruppo da visualizzare [sfogliando i gruppi](./browsing-groups.md).
+- Per accesso completo a tutte le schede, [accedi](../getting-started/logging-in.md) al tuo account.
 
 </div>
 
-## Visitor Visualizza (Not Logged In)
+## Visualizzazione dei Visitatori (Non Registrato)
 
-If you are not logged in, you will see the following:
+Se non sei registrato, vedrai quanto segue:
 
-- **Hero section** -- A large banner area showing the Gruppo's photo, name, meeting Ora, and meeting location.
-- **Description** -- The full description of the Gruppo explaining its purpose and what Per expect.
-- **Leaders** -- Avatars and names of the Gruppo's leaders. You can Fai clic a leader's name Per Visualizza their Profilo.
-- **Calendario Eventi** -- Up Per three upcoming Eventi for the Gruppo are displayed, each showing the Data and Evento title. If the Gruppo has No upcoming Eventi, this section is hidden.
-- **Contact form** -- A form that lets you send a message directly Per the Gruppo's leaders. Fill in your **first name**, **last name**, **email**, **phone number**, and **message**, then Fai clic **Invia**. If there are multiple leaders, you can Scegli which one Per contact from a dropdown.
+- **Sezione Hero** - Un'area banner grande che mostra la foto del gruppo, il nome, l'ora della riunione e la posizione della riunione.
+- **Descrizione** - La descrizione completa del gruppo che spiega il suo scopo e cosa aspettarsi.
+- **Leader** - Avatar e nomi dei leader del gruppo. Puoi fare clic sul nome di un leader per visualizzare il loro profilo.
+- **Eventi del calendario** - Fino a tre eventi imminenti per il gruppo vengono visualizzati, ognuno mostrando la data e il titolo dell'evento. Se il gruppo non ha eventi imminenti, questa sezione è nascosta.
+- **Modulo di contatto** - Un modulo che ti permette di inviare un messaggio direttamente ai leader del gruppo. Compila il tuo **nome**, **cognome**, **email**, **numero di telefono** e **messaggio**, quindi fai clic su **Invia**. Se ci sono più leader, puoi scegliere quale contattare da un menu a discesa.
 
-## Membro Visualizza (Logged In)
+## Visualizzazione dei Membri (Registrato)
 
-When you are logged in, the Gruppo detail page shows the hero section along with a sidebar of tabs. If your Gruppo is associated with a Lessons.church plan Digita and this week's lesson has parent take-home content, a **This week's lesson** card appears between the hero and the tabs (Membri only).
+Quando sei registrato, la pagina dei dettagli del gruppo mostra la sezione hero insieme a una barra laterale di schede. Se il tuo gruppo è associato a un tipo di piano Lessons.church e la lezione di questa settimana ha contenuto da portare a casa per i genitori, una scheda **La lezione di questa settimana** appare tra l'hero e le schede (solo per i membri).
 
-The Disponibile tabs are:
+Le schede disponibili sono:
 
-- **Gruppo Details** -- The Gruppo's full description, rendered with rich text formatting.
-- **Membri** -- A list of all Membri in the Gruppo, showing their photo and name. You can Fai clic a Membro's name Per visit their Profilo in the [member directory](../community/member-directory.md).
-- **Calendario** -- The Gruppo's calendar showing meetings and Eventi. You can browse upcoming and past Eventi.
-- **Conversations** -- A space for Gruppo Membri Per post messages and interact with each other. See [Group Conversations](./conversations.md) for more details.
-- **Resources** -- Shared files and links that have been posted for the Gruppo. You can Scarica uploaded files or Apri linked resources.
-- **Frequenza** -- Visible Per Gruppo leaders only. Allows tracking of who attended Gruppo meetings.
+- **Informazioni** - La descrizione completa del gruppo, visualizzata con formattazione di testo ricco. Mostrata solo se il gruppo ha una descrizione.
+- **Piani** - I piani di servizio del gruppo. Mostrati solo se il gruppo ha piani.
+- **Messaggi** - Uno spazio per i membri del gruppo di pubblicare messaggi e interagire tra loro. Mostrato solo ai membri, e solo se la tua chiesa ha attivato la chat di gruppo per questo gruppo. Vedi [Conversazioni di Gruppo](./conversations.md) per più dettagli.
+- **Membri** - Un elenco di tutti i membri nel gruppo, che mostra la loro foto e il nome. Puoi fare clic sul nome di un membro per visitare il suo profilo nella [directory dei membri](../community/member-directory.md).
+- **Partecipazione** - Visibile solo ai leader del gruppo (e al personale con permesso di partecipazione). Consente il tracciamento di chi ha partecipato alle riunioni di gruppo.
+- **Eventi** - Il calendario del gruppo che mostra riunioni e eventi. Puoi sfogliare gli eventi imminenti e passati.
+- **Risorse** - File e link condivisi che sono stati pubblicati per il gruppo. Puoi scaricare file caricati o aprire risorse collegate.
 
-## Leader Capabilities
+## Capacità del Leader
 
-If you are a leader of the Gruppo, you have additional editing capabilities:
+Se sei un leader del gruppo, hai capacità di modifica aggiuntive:
 
-- **Modifica Gruppo details** -- Update the Gruppo's name, description, meeting Ora, and other Impostazioni directly from the **Details** tab.
-- **Manage Membri** -- Aggiungi new Membri Per the Gruppo or Rimuovi existing ones from the **Membri** tab.
-- **Crea and Modifica Eventi** -- Aggiungi Eventi Per the Gruppo calendar. When creating an Evento, you can reserve Stanze and resources alongside it — Seleziona from Disponibile Stanze and resources, set Facoltativo Configurazione and teardown times, and the booking request is automatically submitted for approval.
-- **Manage resources** -- Carica files (up Per 100 MB of storage), Aggiungi links, or Elimina existing resources.
-- **Leader resources** -- Access a separate **Resources (Leaders)** tab with files and links visible only Per Gruppo leaders.
-- **Track Frequenza** -- Record Frequenza for Gruppo Sessioni from the **Frequenza** tab.
+- **Crea e modifica eventi** - Aggiungi eventi al calendario del gruppo dalla scheda **Eventi**. Quando crei un evento, puoi prenotare stanze e risorse accanto ad esso - seleziona da stanze e risorse disponibili, imposta opzioni di tempo di configurazione e smontaggio e la richiesta di prenotazione viene automaticamente inviata per l'approvazione.
+- **Gestisci risorse** - Carica file (fino a 100 MB di archiviazione), aggiungi link o elimina le risorse esistenti.
+- **Traccia partecipazione** - Registra la partecipazione per le sessioni di gruppo dalla scheda **Partecipazione**.
 
-## Joining a Gruppo
+Per modificare il nome del gruppo, la descrizione o l'elenco dei membri, usa B1 Admin. Vedi [Membri del Gruppo](../../b1-admin/groups/group-members.md).
 
-When you are logged in and not yet a Membro, a join button appears on the Gruppo detail page. The button label depends on the Gruppo's join policy:
+## Unirsi a un Gruppo
 
-- **Join Gruppo** -- The Gruppo is Apri. Clicking this immediately adds you as a Membro.
-- **Request Per Join** -- The Gruppo requires approval. Clicking this opens a dialog where you can include an Facoltativo message Per the Gruppo leader, then Invia your request. See [Requesting to Join a Group](./join-requests.md) for details on managing your requests.
+Quando sei registrato e non ancora un membro, un pulsante di iscrizione appare nella pagina dei dettagli del gruppo. L'etichetta del pulsante dipende dalla politica di iscrizione del gruppo:
 
-If neither button appears, the Gruppo is closed and Membri must be added manually by a leader or administrator.
+- **Unisciti al Gruppo** - Il gruppo è aperto. Facendo clic su questo ti aggiunge immediatamente come membro.
+- **Richiedi di Unirti** - Il gruppo richiede l'approvazione. Facendo clic su questo si apre una finestra di dialogo in cui puoi includere un messaggio opzionale al leader del gruppo, quindi inviare la tua richiesta. Vedi [Richiesta di Iscrizione a un Gruppo](./join-requests.md) per i dettagli sulla gestione delle tue richieste.
+
+Se nessun pulsante appare, il gruppo è chiuso e i membri devono essere aggiunti manualmente da un leader o amministratore.
 
 :::info
-If a Gruppo is closed and you want Per join, use the contact form on the visitor Visualizza Per reach out Per the Gruppo's leaders.
+Se un gruppo è chiuso e desideri unirti, usa il modulo di contatto nella visualizzazione dei visitatori per contattare i leader del gruppo.
 :::

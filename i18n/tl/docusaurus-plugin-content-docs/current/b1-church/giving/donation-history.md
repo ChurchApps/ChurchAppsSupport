@@ -1,59 +1,58 @@
 ---
-title: "Kasaysayan ng Donasyon"
+title: "Kasaysayan ng Donation"
 ---
 
-# Kasaysayan ng Donasyon
+# Kasaysayan ng Donation
 
 <div class="article-intro">
 
-Kapag naka-login ka, matitingnan mo ang kumpletong tala ng iyong mga nakaraang donasyon at makakabuo ng mga giving statement para sa layuning pangbuwis. Available ang iyong kasaysayan ng donasyon mula sa seksyong **Donate** ng iyong B1.church account.
+Kapag ikaw ay naka-log in, maaari mong tingnan ang isang kumpletong tala ng iyong nakaraang mga donation at lumikha ng mga pahayag ng pagbibigay para sa layuning buwis. Ang iyong kasaysayan ng donation ay available mula sa seksyon ng **Magbigay** ng iyong B1.church account.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Ka Magsimula</h4>
+<h4>Bago Magsimula</h4>
 
-- Dapat kang [naka-login](../getting-started/logging-in.md) sa iyong B1.church account.
-- Kailangan mong nakagawa na ng kahit isang donasyon. Tingnan ang [Paggawa ng Donasyon](./making-donations.md) upang magsimula.
+- Dapat kang maging [naka-log in](../getting-started/logging-in.md) sa iyong B1.church account.
+- Kailangan mong gumawa ng hindi bababa sa isang donation. Tingnan ang [Paggawa ng Donation](./making-donations.md) upang magsimula.
 
 </div>
 
 ## Pagtingin sa Iyong Kasaysayan
 
 1. Mag-log in sa iyong B1.church account.
-2. Mag-navigate sa seksyong **Donate**.
-3. I-click ang **History** sa kaliwang panel upang tingnan ang iyong mga nakaraang donasyon.
+2. Mag-navigate sa seksyon ng **Magbibigay**.
+3. I-click ang tab ng **Kasaysayan** upang tingnan ang iyong nakaraang mga donation.
 
-Ipinapakita ang iyong kasaysayan ng donasyon bilang isang table na may mga sumusunod na column:
+Sa tuktok, isang **Pagbibigay** card ay nagpapakita ng iyong kabuuan para sa isang mapagpipiliang panahon -- **Taon hanggang Ngayon**, **Nakaraang 30 Araw**, **Nakaraang 90 Araw**, o **Lahat ng Oras** -- pumili ng isa mula sa dropdown. Kung ang mga donation sa panahong iyon ay ibinigay sa higit sa isang pera, ang kabuuan ay na-convert sa pera ng iyong simbahan at isang **Na-convert sa kasalukuyang rate ng palitan** na nota ay lilitaw sa ibaba.
 
-- **Date** -- Kung kailan ginawa ang donasyon.
-- **Method** -- Paano ka nagbayad (halimbawa, "Card - Visa" o "Bank - ACH").
-- **Fund** -- Kung aling fund napunta ang donasyon (halimbawa, General Fund, Building Fund).
-- **Amount** -- Ang halaga ng donasyon.
+Sa ibaba ng kabuuan, ang iyong kamakailang aktibidad ay nakalista na may:
+
+- **Petsa** -- Kailan ang donation ay ginawa.
+- **Paraan** -- Paano ka nagbayad (halimbawa, "Card - Visa" o "Bank - ACH").
+- **Pondo** -- Aling pondo ang donation ay idirekta (halimbawa, General Fund, Building Fund).
+- **Halaga** -- Ang halaga ng donation, sa pera na ito ay ibinigay.
 
 :::info
-Ang mga donasyong pinoproseso pa lang ay lalabas na may label na "Pending" sa tabi ng pangalan ng fund at ang halagang ipinapakita sa ibang kulay.
+Ang mga donation na pa rin na ginagamit ay lumilitaw na may "Pending" na label sa tabi ng pangalan ng pondo at ang halaga ay ipinakita sa ibang kulay.
 :::
 
-## Pag-export at Pag-print ng mga Statement
+## Pag-export at Pag-print ng mga Pahayag
 
-I-click ang buton na **download** sa header ng Donation History upang ma-access ang mga opsyon sa pag-export:
-
-- **Current Year (CSV)** -- I-download ang isang CSV file ng lahat ng iyong donasyon mula sa kasalukuyang taon. Mabubuksan mo ito sa isang spreadsheet application.
-- **Current Year (Print)** -- Buksan ang isang printable giving statement para sa kasalukuyang taon.
-- **Last Year (CSV)** -- I-download ang isang CSV file ng lahat ng iyong donasyon mula sa nakaraang taon.
-- **Last Year (Print)** -- Buksan ang isang printable giving statement para sa nakaraang taon.
+I-click ang **I-print ang Pahayag** sa itaas ng kamakailang listahan ng aktibidad upang magbukas ng isang printable na pagbibigay na pahayag na sumasaklaw sa kasalukuyang taong kalendaryo sa isang bagong tab.
 
 :::tip
-I-print ang iyong giving statement para sa nakaraang taon nang maaga sa bagong taon upang handa ka na sa panahon ng buwis. Kasama sa printable statement ang lahat ng detalyeng kailangan mo para sa iyong mga tala.
+I-print ang iyong pahayag nang maaga sa bagong taon, bago mo ito kailangan para sa pag-file ng buwis, habang ang nakaraang taon ng mga donation ay pa rin na sariwang sa iyong kasaysayan.
 :::
 
-## Mga Recurring na Donasyon
+## Mga Pang-regular na Donation
 
-Mula sa seksyong **Donate**, maaari mo ring i-click ang **Recurring Donations** upang pamahalaan ang anumang iskedyuladong giving na naitakda mo. Nagbibigay-daan sa iyo ang seksyong ito na tingnan, i-update, o kanselahin ang mga recurring na donasyon at pamahalaan ang iyong mga naka-save na paraan ng pagbabayad.
+Kung mayroon kang anumang mga naka-schedule na regalo, isang seksyon ng **Pang-regular na** sa tab ng Kasaysayan ay naglalista ng bawat isa na may halaga, agwat, at paraan ng pagbabayad.
 
-Kung sinisingil ang isang recurring na donasyon sa pamamagitan ng **Stripe**, maaari mo rin itong i-**pause** sa halip na kanselahin -- i-click ang pause icon sa tabi ng donasyon at kumpirmahin. Huminto ang giving hanggang sa i-click mo ang parehong icon upang i-**resume**; minamarkahan ang isang na-pause na donasyon bilang **Paused** sa listahan. Ang mga recurring na donasyon sa pamamagitan ng ibang mga payment provider ay maaari pa ring i-edit o kanselahin, ngunit hindi ma-pause.
+Kung ang isang pang-regular na donation ay na-charge sa pamamagian ng **Stripe**, maaari kang **i-pause** ito sa halip na i-cancel -- i-click ang pause icon sa tabi ng donation at kumpirmahin. Ang pagbibigay ay humihinto hanggang sa i-click mo ang parehong icon upang **muling magsimula**; ang isang naka-pause na donation ay markado **I-pause** sa listahan. Ang mga pang-regular na donation sa pamamagian ng ibang mga provider ng pagbabayad ay maaaring pa rin na i-edit o i-cancel, ngunit hindi i-pause.
 
-## Susunod na mga Hakbang
+Upang magdagdag, alisin, o baguhin ang iyong mga nakaligtas na paraan ng pagbabayad, gamitin ang tab ng **Pamahalaan**.
 
-- [Paggawa ng Donasyon](./making-donations.md) -- Alamin kung paano gumawa ng isang beses o recurring na regalo
+## Susunod na Mga Hakbang
+
+- [Paggawa ng Donation](./making-donations.md) -- Matuto kung paano gumawa ng isang one-time o pang-regular na regalo

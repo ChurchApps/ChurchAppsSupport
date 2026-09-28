@@ -2,54 +2,42 @@
 title: "सेवा क्रम"
 ---
 
-# Service Order
+# सेवा क्रम
 
 <div class="article-intro">
 
-When you open a plan, the **Order of Service** section shows the sequence of items for that service. This gives you and your team a shared view of the service flow, including timing, song details, and descriptions for each element.
+जब आप किसी योजना को खोलते हैं, तो **सेवा क्रम** टैब उस सेवा के लिए आइटमों का अनुक्रम दिखाता है। यह आपको और आपकी टीम को सेवा प्रवाह का एक साझा दृश्य देता है, समय, गीत विवरण, और प्रत्येक तत्व के लिए विवरण सहित।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरुआत करने से पहले</h4>
 
-- You must be [logged in](../getting-started/logging-in.md) to your B1.church account.
-- Open a plan from your [Plans list](./viewing-plans.md) to view its service order.
+- आपको अपने B1.church खाते में [लॉगिन](../getting-started/logging-in.md) होना चाहिए।
+- अपनी सेवा क्रम देखने के लिए अपने [योजना सूची](./viewing-plans.md) से एक योजना खोलें।
 
 </div>
 
-## What the Service Order Shows
+## सेवा क्रम क्या दिखाता है
 
-The service order is displayed as a list of items in the order they will occur during the service. Each item includes:
+सेवा क्रम सेवा के दौरान होने वाले क्रम में आइटमों की एक सूची के रूप में प्रदर्शित किया जाता है। प्रत्येक आइटम में शामिल है:
 
-- **Cumulative time** -- The running time from the start of the service, so you know when each element is expected to begin.
-- **Item label and description** -- The name of the element (such as a song title, prayer, or announcement) along with any notes or descriptions.
-- **Duration** -- How long the item is expected to take.
+- **संचयी समय** -- सेवा की शुरुआत से चलने वाला समय, इसलिए आप जानते हैं कि प्रत्येक तत्व कब शुरू होने की उम्मीद है।
+- **आइटम लेबल और विवरण** -- तत्व का नाम (जैसे एक गीत शीर्षक, प्रार्थना, या घोषणा) किसी भी नोट्स या विवरण के साथ।
+- **अवधि** -- आइटम के लिए कितने समय की आवश्यकता है।
 
-Items are organized under **headers** that group related elements together (for example, "Worship Set" or "Message"). This makes it easy to scan the overall structure of the service.
+आइटमों को **हेडर** के तहत आयोजित किया जाता है जो संबंधित तत्वों को एक साथ समूहित करते हैं (उदाहरण के लिए, "पूजा सेट" या "संदेश")। यह सेवा की समग्र संरचना को स्कैन करना आसान बनाता है।
 
-Lesson and curriculum sections can also expand into a folder of individual actions nested beneath them -- click the section to expand or collapse its actions and see each step your team will walk through.
+पाठ और पाठ्यक्रम अनुभाग भी एक फोल्डर में विस्तारित हो सकते हैं -- अनुभाग पर क्लिक करें इसके कार्यों को विस्तारित या संपीड़ित करने के लिए और प्रत्येक कदम देखने के लिए आपकी टीम चलेगी।
 
-## Viewing Song Lyrics and Chords
+## गीत के गीत और तार देखना
 
-Click a song in the service order to open its lyrics and chords. Use the **Key Signature** dropdown at the top to transpose the chords on the fly -- handy if your instrument or vocal range needs a different key than the one the worship leader planned for.
+सेवा क्रम में एक गीत पर क्लिक करें इसके गीत और तार को खोलने के लिए। शीर्ष पर **Key हस्ताक्षर** ड्रॉपडाउन का उपयोग करें तारों को जाने पर स्थानांतरित करने के लिए -- यह आसान है यदि आपके उपकरण या वोकल रेंज उस चाबी की तुलना में एक अलग चाबी की आवश्यकता है जो पूजा नेता के लिए योजना बनाई गई थी।
 
-## Curriculum and Lesson Content
+## पाठ्यक्रम और पाठ सामग्री
 
-If the plan has associated curriculum or lesson content from a provider like [Lessons.church](../content/lessons.md), you will see a preview of that content within the service order. This can include lesson sections, presentation materials, and other resources your team needs for the service.
+यदि योजना के पास [Lessons.church](../content/lessons.md) जैसे प्रदाता से जुड़ी हुई पाठ्यक्रम या पाठ सामग्री है, तो आप सेवा क्रम के भीतर उस सामग्री का एक पूर्वावलोकन देखेंगे। यह पाठ अनुभाग, प्रस्तुति सामग्री, और अन्य संसाधनों को शामिल कर सकता है जो आपकी टीम को सेवा के लिए आवश्यकता है।
 
-## Printing the Service Order
+## सेवा क्रम प्रिंट करना
 
-You can print a formatted version of the service order to bring with you on the day of the service.
-
-1. Open the plan from your **Plans** list.
-2. In the **Order of Service** section, click the **print** icon in the top-right corner.
-3. A new window opens with a printable layout that includes:
-   - The **service date** at the top.
-   - **Team assignments** grouped by category on the left, showing each position and who is filling it.
-   - The **full service order** on the right with time, item details, and duration columns.
-4. Your browser's print dialog will open automatically so you can print or save as PDF.
-
-:::tip
-The printed service order is a great reference to have on hand during rehearsals or the service itself. It includes both the team roster and the full order of service on a single page.
-:::
+B1.church सदस्य ऐप योजनाओं के लिए कोई प्रिंट विकल्प नहीं है। यदि आपको टीम रोस्टर और पूर्ण सेवा क्रम के साथ एक प्रिंट की गई प्रति चाहिए, तो एक कर्मचारी सदस्य को B1 Admin से इसे प्रिंट करने के लिए कहें। [योजनाओं को प्रिंट करना](../../b1-admin/serving/plans.md#printing-plans) देखें।

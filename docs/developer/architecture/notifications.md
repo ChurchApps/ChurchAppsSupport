@@ -129,6 +129,15 @@ Tables involved: `notificationPreferences` (global — `masterMute`, `emailFrequ
 
 This gate is enforced for in-app (level 0), push (level 1), and email (level 2) inside the funnel — including immediate reminder/digest emails. Transactional email (auth codes, password resets, invites, donation receipts) bypasses it by design; that's the whole point of the second door.
 
+## Church-authored email limits
+
+Email whose content a church wrote goes out from the shared ChurchApps SES identity, so it is metered per church by `Api/src/shared/helpers/ChurchEmailLimiter.ts`. Four paths call it: group/template sends (`EmailTemplateController`, content type `email`), form follow-up emails (`FormSubmissionController`, `formFollowUp`), workflow **Send email** actions (`NotificationHelper` with `churchAuthored`, `workflowEmail`), and B1 account invites (`UserController.sendInviteEmail`, `invite`). System mail (auth codes, receipts, reminders) is not metered.
+
+- **Approval gate.** A church sends nothing until a server admin sets `churches.emailApprovedDate` (`POST /membership/churches/:id/emailApproval`, Server Admin → Churches → **Group Email** chip). Archived churches are always blocked. B1Admin's Send Email dialog reads `GET /messaging/emailTemplates/sendStatus` (`approved`, `paused`, `remaining`, `requested`) and, when unapproved, shows a **Request review** card instead of the editor. `POST /messaging/emailTemplates/requestApproval` emails support, at most once per church per week.
+- **Earned allowance.** An approved church gets `max(150, 2 × its best church-authored day in the prior 30 days)`, capped at 2,000 per rolling 24 hours. The current 24 hours is excluded from "best day" so a burst can't raise its own limit.
+- **Reserve, then settle.** `reserve()` writes one `deliveryLogs` row per recipient before sending, re-checks the allowance with those rows counted, and backs out if two requests raced past the limit (the send returns 429). `settle()` marks each row sent or failed.
+- **Complaint pause.** The `sesFeedback` Lambda (`Api/src/lambda/ses-feedback-handler.ts`, fed by SES → SNS) pins each permanent bounce or complaint to the church whose church-authored email reached that address around that time, stored as `deliveryMethod` `sesBounce` / `sesComplaint`. A church is paused at 2+ complaints (≥ 0.3% of sends) or 10+ hard bounces (≥ 5%) over 7 days.
+
 ## Scheduling
 
 Both the reminder engine and the notification digest ride existing scheduled timers rather than introducing new infrastructure:
@@ -147,6 +156,7 @@ Locally, the same logic can be triggered on demand with `npm run timer:30min` an
 | Funnel | `Api/src/modules/messaging/helpers/NotificationHelper.ts`, `PreferenceGateHelper.ts`, `NotificationCategoryHelper.ts`, `WebPushHelper.ts`, `ExpoPushHelper.ts`, `SocketHelper.ts`, `DeliveryHelper.ts` |
 | Shared entry | `Api/src/shared/helpers/NotificationService.ts` |
 | Transactional door | `Api/src/shared/helpers/TransactionalEmailHelper.ts`, lint rule `Api/tools/eslint-rules/email-door.cjs` |
+| Church email limits | `Api/src/shared/helpers/ChurchEmailLimiter.ts`, `Api/src/lambda/ses-feedback-handler.ts`, `Api/src/modules/messaging/repositories/DeliveryLogRepo.ts` |
 | Reminder engine | `Api/src/modules/messaging/helpers/ReminderEngine.ts`, `ReminderBootstrap.ts`, `helpers/adapters/*`, `controllers/ReminderController.ts` |
 | Reminder repositories | `Api/src/modules/messaging/repositories/ReminderDefinitionRepo.ts`, `ReminderOccurrenceRepo.ts`, `ReminderSentLogRepo.ts` |
 | Serving/plan email | `Api/src/modules/doing/helpers/PlanReminderEmailHelper.ts`, `ReminderTokenHelper.ts`, `Api/src/shared/modules/DoingModuleGateway.ts` |

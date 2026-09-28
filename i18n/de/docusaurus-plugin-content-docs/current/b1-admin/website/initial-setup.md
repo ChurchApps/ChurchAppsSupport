@@ -1,75 +1,75 @@
 ---
-title: "Anfangseinrichtung"
+title: "Erste Einrichtung"
 ---
 
-# Anfangseinrichtung
+# Erste Einrichtung
 
 <div class="article-intro">
 
-Jedes B1-Konto kommt mit einer einsatzbereiten Website. Dieser Leitfaden führt Sie durch das Einrichten Ihrer Kirchendomäne, das Konfigurieren des Erscheinungsbildes Ihrer Website, das Erstellen Ihrer ersten Seiten und das Organisieren Ihrer Navigation.
+Jedes B1-Konto wird mit einer einsatzbereiten Website ausgeliefert. Diese Anleitung führt dich durch die Einrichtung deiner Kirchendomain, die Konfiguration des Aussehens deiner Website, das Erstellen deiner ersten Seiten und die Organisation deiner Navigation.
 
 </div>
 
 <div class="prereqs">
-<h4>Voraussetzungen</h4>
+<h4>Bevor du anfängst</h4>
 
-- Sie benötigen ein B1.church-Konto mit Administratorberechtigung
-- Wenn Sie eine benutzerdefinierte Domäne verwenden, halten Sie Ihre DNS-Anbieter-Anmeldedaten bereit (z.B. GoDaddy, Cloudflare oder AWS)
-- Bereiten Sie Ihr Kirchenlogo im PNG-Format mit transparentem Hintergrund für beste Ergebnisse vor
+- Du benötigst ein B1.church-Konto mit Administratorzugriff
+- Wenn du eine benutzerdefinierte Domain verwendest, halte die Anmeldedaten deines DNS-Anbieters bereit (z. B. GoDaddy, Cloudflare oder AWS)
+- Bereite dein Kirchenlogo im PNG-Format mit transparentem Hintergrund für beste Ergebnisse vor
 
 </div>
 
-## Einrichten Ihrer Domäne
+## Richte deine Domain ein
 
-Ihre Kirche erhält automatisch eine Subdomain auf B1.church (zum Beispiel, `yourchurch.b1.church`). Sie können auch Ihre eigene benutzerdefinierte Domäne an Ihre B1-Website verweisen.
+Deine Kirche erhält automatisch eine Subdomain auf B1.church (z. B. `denekirche.b1.church`). Du kannst deine eigene benutzerdefinierte Domain auch auf deine B1-Website verweisen.
 
-1. Gehen Sie zu **B1.church Admin**, indem Sie admin.b1.church besuchen oder auf Ihr Profil-Dropdown klicken und **App wechseln** wählen.
-2. Öffnen Sie das **Bereichsmenü** in der oberen linken Ecke (der Bereichsname mit dem kleinen Pfeil) und wählen Sie **Einstellungen**.
-3. Klicken Sie auf **Verwalten**, um Ihre Subdomain anzuzeigen. Stellen Sie sie auf etwas Kurzes und Erkennbares ohne Leerzeichen ein.
-4. Um eine benutzerdefinierte Domäne zu verwenden, melden Sie sich bei Ihrem DNS-Anbieter an (wie GoDaddy, Cloudflare oder AWS) und fügen Sie zwei Datensätze hinzu:
-   - Ein **A-Datensatz** für Ihre Wurzel-Domäne, der zu `3.23.251.61` zeigt
-   - Ein **CNAME-Datensatz** für `www`, der zu `proxy.b1.church` zeigt
-5. Kehren Sie zu B1.church Admin zurück, fügen Sie Ihre benutzerdefinierte Domäne zur Liste hinzu und klicken Sie auf **Hinzufügen** dann **Speichern**. Ihre Website kann innerhalb weniger Minuten über Ihre benutzerdefinierte Domäne zugegriffen werden.
+1. Gehe zu **B1.church Admin**, indem du admin.b1.church besuchst oder auf dein Profilmenü klickst und **App wechseln** auswählst.
+2. Öffne das **Abschnittmenü** in der oberen linken Ecke (der Abschnittsname mit dem kleinen Pfeil) und wähle **Einstellungen**.
+3. Öffne den Abschnitt **Kircheninformationen**, um deine Subdomain anzuzeigen. Setze sie auf etwas Kurzes und Erkennbares ohne Leerzeichen.
+4. Um eine benutzerdefinierte Domain zu verwenden, melde dich bei deinem DNS-Anbieter an (z. B. GoDaddy, Cloudflare oder AWS) und füge zwei Einträge hinzu:
+   - Ein **A-Eintrag** für deine Root-Domain, der auf `3.23.251.61` zeigt
+   - Ein **CNAME-Eintrag** für `www`, der auf `proxy.b1.church` zeigt
+5. Kehre zu B1.church Admin zurück, füge deine benutzerdefinierte Domain zur Liste hinzu und klicke auf **Hinzufügen** und dann **Speichern**. Deine Website ist in wenigen Minuten über deine benutzerdefinierte Domain erreichbar.
 
 :::tip
-Wenn Sie die Einstellungsoption nicht sehen, bitten Sie die Person, die Ihr Kirchenkonto eingerichtet hat, Ihnen die Berechtigung "Kircheneinstellungen bearbeiten" zu gewähren. Siehe [Rollen & Berechtigungen](../settings/roles-permissions.md) für Details.
+Wenn du die Option Einstellungen nicht siehst, bitte die Person, die dein Kirchenkonto eingerichtet hat, dir die Berechtigung "Kircheneinstellungen bearbeiten" zu gewähren. Weitere Details findest du unter [Rollen & Berechtigungen](../settings/roles-permissions.md).
 :::
 
-## Erstellen Ihrer ersten Seite
+## Erstelle deine erste Seite
 
-1. Klicken Sie in B1 Admin auf **Website** im linken Menü, um die Ansicht "Website-Seiten" zu öffnen.
-2. Klicken Sie auf **Seite hinzufügen** in der oberen rechten Ecke.
-3. Wählen Sie **Leer** als Seitentyp und nennen Sie ihn "Startseite".
-4. Klicken Sie auf **Seiteneinstellungen** und stellen Sie den URL-Pfad auf `/` (ein Schrägstrich ohne Text) für Ihre Startseite ein. Andere Seiten verwenden `/page-name`.
-5. Klicken Sie auf **Inhalt bearbeiten**, um mit dem Erstellen zu beginnen. Jede Seite muss mit einem **Abschnitt** beginnen -- dies ist der Container für alle anderen Elemente.
-6. Klicken Sie nach dem Hinzufügen eines Abschnitts erneut auf **Inhalt hinzufügen**, um Text, Bilder, Videos, Karten, Formulare und mehr einzufügen, indem Sie sie in Ihren Abschnitt ziehen.
+1. Klicke in B1 Admin auf **Website** im linken Menü, um die Website-Seiten-Ansicht zu öffnen.
+2. Klicke in der oberen rechten Ecke auf **Seite hinzufügen**.
+3. Wähle **Leer** als Seitentyp und nenne sie "Startseite".
+4. Klicke auf **Seiteneinstellungen** und setze den URL-Pfad auf `/` (einen Schrägstrich ohne Text) für deine Startseite. Andere Seiten verwenden `/seitenname`.
+5. Klicke auf **Inhalt bearbeiten**, um mit dem Erstellen zu beginnen. Jede Seite muss mit einem **Abschnitt** beginnen – dies ist der Container für alle anderen Elemente.
+6. Nachdem du einen Abschnitt hinzugefügt hast, klicke erneut auf **Inhalt hinzufügen**, um Text, Bilder, Videos, Karten, Formulare und mehr durch Ziehen in deinen Abschnitt einzufügen.
 
 :::info
-Für detaillierte Anweisungen zum Arbeiten mit Seiten und Navigation siehe [Seiten verwalten](managing-pages). Für einen vollständigen Leitfaden zum visuellen Editor siehe [Verwendung des Seiten-Editors](page-editor).
+Detaillierte Anweisungen zum Arbeiten mit Seiten und Navigation findest du unter [Seiten verwalten](managing-pages). Einen umfassenden Leitfaden zum visuellen Editor findest du unter [Verwenden des Seiten-Editors](page-editor).
 :::
 
-## Konfigurieren des Website-Erscheinungsbildes
+## Konfiguriere das Aussehen der Website
 
-1. Klicken Sie aus der Ansicht "Website-Seiten" auf die Registerkarte **Erscheinungsbild**.
-2. Verwenden Sie die **Farbpalette**, um Ihre Markenfarben für Primär-, Sekundär- und Akzent-Töne einzustellen.
-3. Wählen Sie unter **Typographie-Einstellungen** Ihre Überschriften- und Body-Schriftarten aus dem Schrift-Browser.
-4. Laden Sie Ihr Kirchenlogo unter **Logo** in den Stil-Einstellungen hoch. Geben Sie sowohl ein helles Hintergrund- als auch eine Dunkelversion an.
-5. Konfigurieren Sie Ihren **Website-Fußzeile** mit den Kontaktinformationen und Links Ihrer Kirche.
+1. Klicke in der Website-Seiten-Ansicht auf die Registerkarte **Aussehen** oben.
+2. Verwende die **Farbpalette**, um deine Markenfarben für primär, sekundär und Akzent festzulegen.
+3. Wähle unter **Typografie-Einstellungen** deine Überschrifts- und Body-Schriften aus dem Schrift-Browser.
+4. Lade dein Kirchenlogo unter **Logo** in den Style-Einstellungen hoch. Stelle sowohl eine Version für hellem Hintergrund als auch für dunklem Hintergrund bereit.
+5. Konfiguriere deinen **Website-Footer** mit den Kontaktinformationen und Links deiner Kirche.
 
 :::info
-Änderungen, die Sie in "Erscheinungsbild" vornehmen, gelten für Ihre gesamte Website. Siehe die [Erscheinungsbild](appearance)-Seite für detaillierte Anweisungen zu jeder Einstellung.
+Änderungen, die du in Aussehen vorgenommst, gelten für deine gesamte Website. Detaillierte Anweisungen zu jeder Einstellung findest du auf der Seite [Aussehen](appearance).
 :::
 
-## Einrichten der Navigation
+## Richte Navigation ein
 
-Ihre Navigationslinks werden in der Ansicht "Website-Seiten" angezeigt. Um sie zu organisieren:
+Deine Navigationslinks erscheinen in der Website-Seiten-Ansicht. Um sie zu organisieren:
 
-1. Klicken Sie auf **Hinzufügen**, um einen neuen Navigationslink zu erstellen und zu einer Ihrer Seiten zu verweisen.
-2. Ziehen und legen Sie Links ab, um sie neu zu ordnen oder sie unter übergeordneten Elementen zu verschachteln.
-3. Zeigen Sie Ihre Website an einer Vorschau in der Vorschau an, um zu bestätigen, dass die Navigation richtig aussieht.
+1. Klicke auf **Hinzufügen**, um einen neuen Navigationslink zu erstellen und ihn auf eine deiner Seiten zu verweisen.
+2. Ziehe und versetze Links, um sie neu zu ordnen oder sie unter übergeordnete Elemente zu verschachteln.
+3. Zeige eine Vorschau deiner Website an, um zu bestätigen, dass die Navigation korrekt aussieht.
 
 ## Nächste Schritte
 
-- [Seiten verwalten](managing-pages) -- Erfahren Sie, wie Sie detailliert mit Seiten und Navigation arbeiten
-- [Erscheinungsbild](appearance) -- Passen Sie die Farben, Schriftarten und Layout Ihrer Website an
-- [Dateien](files) -- Laden Sie Bilder und Dokumente für Ihre Website hoch
+- [Seiten verwalten](managing-pages) – Erfahre, wie du im Detail mit Seiten und Navigation arbeitest
+- [Aussehen](appearance) – Verfeinere die Farben, Schriften und das Layout deiner Website
+- [Dateien](files) – Lade Bilder und Dokumente für deine Website hoch

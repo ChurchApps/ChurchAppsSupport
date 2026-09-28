@@ -1,83 +1,89 @@
 ---
-title: "Rapporti Donazioni"
+title: "Report Donazioni"
 ---
 
-# Donazione Rapporti
+# Report Donazioni
 
 <div class="article-intro">
 
-B1 Admin gives you several ways Per Visualizza and analyze your church's giving data. The Donations Summary page provides a visual Panoramica with charts and filters, while the Rapporti section offers a more detailed Donazione Summary Rapporto. Use these tools Per track giving trends, prepare for board meetings, or reconcile your records.
+B1 Admin ti offre diversi modi per visualizzare e analizzare i dati di donazioni della tua chiesa. La pagina Riepilogo Donazioni fornisce una panoramica visiva con grafici e filtri, mentre la sezione Report offre un report Riepilogo Donazioni più dettagliato. Utilizza questi strumenti per tracciare i trend di donazioni, prepararti per le riunioni del consiglio, o riconciliare i tuoi record.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Ensure donations have been [recorded in batches](recording-donations.md) or [imported from Stripe](stripe-import.md)
-- Verify that your [funds](funds.md) are set up correctly so donations are properly categorized
+- Assicurati che le donazioni siano state [registrate in batch](recording-donations.md) o [importate da Stripe](stripe-import.md)
+- Verifica che i tuoi [fondi](funds.md) siano configurati correttamente in modo che le donazioni siano correttamente categorizzate
 
 </div>
 
-## Giving Dashboard
+## Dashboard Donazioni
 
-The **Giving Dashboard** is the first thing you see when you Apri the **Donations** section. It provides a high-level Visualizza of your giving activity with key performance indicators.
+La **Dashboard Donazioni** è la prima cosa che vedi quando apri la sezione **Donazioni**. Fornisce una visione di alto livello della tua attività di donazioni con indicatori chiave di prestazione.
 
-1. Apri the **menu della sezione** in the angolo in alto a sinistra and Scegli **Donations** Per Apri the dashboard.
-2. At the top, four **KPI cards** display your giving metrics at a glance:
-   - **Total Giving** -- The total amount donated in the selected period.
-   - **Average Gift** -- The average donation amount.
-   - **Unique Donors** -- The number of distinct people who gave.
-   - **Total Donations** -- The total number of individual donations.
-3. Use the **period toggle** Per switch between **Weekly**, **Monthly**, and **Quarterly** views.
-4. Below the KPIs, a chart displays giving trends for the selected period.
-5. Fai clic **Scarica** Per Esporta a CSV file with giving totals.
+1. Apri il **menu della sezione** nell'angolo superiore sinistro e scegli **Donazioni** per aprire la dashboard.
+2. Nella parte superiore, quattro **schede KPI** visualizzano le tue metriche di donazioni a colpo d'occhio:
+   - **Donazioni totali** -- L'importo totale donato nel periodo selezionato.
+   - **Donazione media** -- L'importo della donazione media.
+   - **Donatori unici** -- Il numero di persone distinte che hanno donato.
+   - **Totale donazioni** -- Il numero totale di singole donazioni.
+3. Utilizza l'**interruttore di periodo** per passare tra le viste **Settimanale**, **Mensile** e **Trimestrale**.
+4. Sotto gli KPI, un grafico visualizza i trend di donazioni per il periodo selezionato.
+5. Fai clic su **Scarica** per esportare un file CSV con i totali di donazioni.
 
-## Donations Summary Pagina
+Se le donazioni nel periodo sono state effettuate in più di una valuta, i totali KPI vengono convertiti nella valuta della tua chiesa e viene visualizzata una nota **Convertito ai tassi di cambio attuali** sotto le schede. Consulta [Supporto Multi-Valuta](./multi-currency.md#converted-totals) per i dettagli.
 
-The **Summary** page provides more detailed aggregate giving data.
+## Donatori inattivi
 
-1. Apri the **menu della sezione** in the angolo in alto a sinistra and Scegli **Donations** Per Apri the Summary page.
-2. Use the **Data range filter** Per Seleziona the Ora period you want Per review. Set the earlier Data on top and the more recent Data on the bottom.
-3. The page displays a weekly giving chart so you can see trends at a glance.
-4. Fai clic **Scarica** Per Esporta a CSV file with the total amount given, the week it was given, and the fund it was given Per.
+La scheda **Donatori inattivi** accanto alla dashboard elenca le persone che hanno donato durante un periodo ma non da allora. Per impostazione predefinita confronta l'anno solare scorso con quest'anno fino ad oggi; cambia uno qualsiasi degli intervalli di date per ampliare o restringere la ricerca. Ogni riga mostra la persona, la data della sua ultima donazione e il suo totale per il periodo precedente, e **Esporta** scarica l'elenco come CSV per un mailing di follow-up o una lista di chiamate.
+
+## Pagina Riepilogo Donazioni
+
+La pagina **Riepilogo** fornisce dati di donazioni aggregate più dettagliati.
+
+1. Apri il **menu della sezione** nell'angolo superiore sinistro e scegli **Donazioni** per aprire la pagina Riepilogo.
+2. Utilizza il **filtro dell'intervallo di date** per selezionare il periodo di tempo che vuoi revisare. Imposta la data precedente in alto e la data più recente in basso.
+3. La pagina visualizza un grafico di donazioni settimanale in modo che tu possa vedere i trend a colpo d'occhio.
+4. Fai clic su **Scarica** per esportare un file CSV con l'importo totale donato, la settimana in cui è stato donato e il fondo a cui è stato donato.
 
 :::info
-The Summary page shows aggregate giving data. It does not include individual donor names. For donor-level details, use the [Batches](batches.md) page.
+La pagina Riepilogo mostra dati di donazioni aggregate. Non include i nomi dei singoli donatori. Per i dettagli a livello di donatore, utilizza la pagina [Batch](batches.md).
 :::
 
-## Viewing Donor-Level Details
+## Visualizzazione dei dettagli a livello di donatore
 
-For a breakdown of who gave, how much, and Per which fund:
+Per una suddivisione di chi ha donato, quanto e a quale fondo:
 
-1. Navigate Per **Donations > Batches**.
-2. Fai clic on a **batch name** Per Apri it.
-3. The batch detail page lists each donation with the donor's name, amount, fund, Data, and payment method.
-4. Fai clic on a **donor's name** Per see a breakdown of how many times they donated and how much each Ora.
-5. Fai clic on a **donation ID** Per Apri a side panel with the full details for that individual donation.
-6. Fai clic **Scarica** Per Esporta a CSV with all donor and donation information for that batch.
+1. Vai a **Donazioni > Batch**.
+2. Fai clic su un **nome del batch** per aprirlo.
+3. La pagina dei dettagli del batch elenca ogni donazione con il nome del donatore, l'importo, il fondo, la data e il metodo di pagamento.
+4. Fai clic sul **nome di un donatore** per vedere una suddivisione di quante volte hanno donato e quanto ogni volta.
+5. Fai clic su un **ID donazione** per aprire un pannello laterale con i dettagli completi per quella singola donazione.
+6. Fai clic su **Scarica** per esportare un CSV con tutte le informazioni su donatore e donazione per quel batch.
 
-## Donazione Summary Rapporto
+## Report Riepilogo Donazioni
 
-Donazione reporting is built directly into the Donations section -- the Summary page serves as your donation summary Rapporto:
+I report di donazioni sono costruiti direttamente nella sezione Donazioni -- la pagina Riepilogo funge da tuo report di riepilogo donazioni:
 
-1. Apri the **menu della sezione** in the angolo in alto a sinistra and Scegli **Donations** Per Apri the Summary page.
-2. Use the **Data range filter** Per Seleziona the period you want Per Rapporto on.
-3. Fai clic **Scarica** Per Esporta the Rapporto as a CSV file.
+1. Apri il **menu della sezione** nell'angolo superiore sinistro e scegli **Donazioni** per aprire la pagina Riepilogo.
+2. Utilizza il **filtro dell'intervallo di date** per selezionare il periodo su cui vuoi fare un report.
+3. Fai clic su **Scarica** per esportare il report come file CSV.
 
-## Exporting Data
+## Esportazione dati
 
-You can Esporta donation data from multiple places:
+Puoi esportare dati di donazioni da molteplici posizioni:
 
-- **Summary page** -- Scarica a CSV of weekly giving totals by fund
-- **Batch detail page** -- Scarica a CSV of individual donations with donor details
-- **Funds detail page** -- Scarica donation history for a specific fund
+- **Pagina Riepilogo** -- scarica un CSV dei totali di donazioni settimanali per fondo
+- **Pagina dei dettagli del batch** -- scarica un CSV di singole donazioni con i dettagli del donatore
+- **Pagina dei dettagli del fondo** -- scarica la cronologia delle donazioni per un fondo specifico
 
 :::tip
-For Anno-end reporting, combine the Summary page Esporta with the [Giving Statements](giving-statements.md) tool Per get both aggregate trends and individual donor statements.
+Per il reporting di fine anno, combina l'esportazione della pagina Riepilogo con lo strumento [Dichiarazioni di donazioni](giving-statements.md) per ottenere sia i trend aggregati che le dichiarazioni individuali dei donatori.
 :::
 
-## Avanti Steps
+## Passaggi successivi
 
-- Generate [Giving Statements](giving-statements.md) for your donors at Anno-end
-- Review individual [batches](batches.md) Per verify donation details
-- Check [fund](funds.md) detail pages for giving breakdowns by category
+- Genera [Dichiarazioni di donazioni](giving-statements.md) per i tuoi donatori a fine anno
+- Rivedi i singoli [batch](batches.md) per verificare i dettagli delle donazioni
+- Controlla le pagine dei [dettagli dei fondi](funds.md) per le suddivisioni delle donazioni per categoria

@@ -6,44 +6,74 @@ title: "Pag-navigate sa B1App"
 
 <div class="article-intro">
 
-Gumagamit ang member portal sa B1.church ng sidebar navigation layout na nagpapadali sa paglipat sa pagitan ng iba't ibang tool na available sa iyo. Ipinapaliwanag ng pahinang ito kung paano gumagana ang navigation sa parehong desktop at mobile na device.
+Ang member portal sa B1.church ay isang phone-first web app na nakatira sa ilalim ng `/mobile`. Ito ay gumagana sa anumang browser at maaaring i-install sa iyong home screen. Ang pahiwagang ito ay nagpapaliwanag ng Home dashboard, ang bottom tab bar, ang More menu, at ang Me page.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Ka Magsimula</h4>
+<h4>Bago Magsimula</h4>
 
-- Kailangan mong maging [naka-login](./logging-in.md) upang ma-access ang member portal.
+- Kailangan mong maging [naka-log in](./logging-in.md) upang makita ang iyong personal na impormasyon. Ang mga naka-sign out na bisita ay maaaring pa ring tuklasin ang pampubliko na nilalaman at inaalok ng isang knob ng **Mag-sign In** kung saan ang feature ay nangangailangan ng account.
 
 </div>
 
-## Sidebar Navigation
+## Home
 
-Kapag pumasok ka sa member portal, makikita mo ang isang vertical sidebar sa kaliwang bahagi ng screen. Naglalaman ang sidebar na ito ng mga tab para sa bawat seksyon ng portal:
+Ang pagbubukas ng `https://yourchurchname.b1.church/mobile` ay dadalhin ka sa **Home** dashboard sa `/mobile/dashboard`. Ang Home ay ang landing page ng member portal at nagpapakita ng:
 
-- **Timeline** -- Ang iyong personalized na feed ng mga update at conversation mula sa iyong mga grupo at simbahan. Ito ang default na tab na nagla-load kapag binuksan mo ang member portal.
-- **Me** -- Ang iyong personal na dashboard ng mga paparating na serving assignment, pagpaparehistro, kaganapan ng grupo, at mga kamakailang notification. Tingnan ang [The Me Page](./me-page).
-- **Groups** -- Tingnan at makipag-interact sa mga [grupo](../groups/) na kinabibilangan mo.
-- **Community** -- Tingnan ang [member directory](../community/member-directory.md) ng simbahan.
-- **Plans** -- Tingnan ang mga paparating na [service plan](../plans/) at ang mga volunteer position na naitalaga sa iyo.
-- **Check-in** -- Mag-[check in](../checkin/) para sa iyong sarili at sa iyong sambahayan para sa mga serbisyo at kaganapan.
-- **Lessons** *(deprecated)* -- Pinalitan ng [FreePlay](/docs/freeplay/) ang in-portal na Lessons tab para sa classroom playback. Tingnan ang curriculum nang direkta sa [Lessons.church](https://lessons.church) o tingnan ang [Lessons reference page](../content/lessons.md) para sa mga detalye.
-- **Donations** -- Gumawa ng online na [donasyon](../giving/) at tingnan ang iyong kasaysayan ng giving.
+- Isang pagbati na may iyong pangalan
+- Ang alin ng araw
+- Isang featured card para sa anumang nai-highlight ng iyong simbahan
+- Isang **Explore** grid ng mga tool na nag-on ang iyong simbahan -- mga grupo, pagbibigay, check-in, sermon, mga plano, at marami pa
 
-I-click ang alinmang tab upang lumipat sa seksyong iyon. Naka-highlight ang aktibong tab upang palagi mong alam kung nasaan ka.
+Ang pag-tap sa isang card sa Explore ay nagbubukas ng tool na iyon. Kung ang iyong simbahan ay may mas maraming tool kaysa sa akma sa dashboard, ang huling card ay **Marami**, na nagbubukas sa buong listahan sa `/mobile/more`.
+
+## Ang Bottom Tab Bar
+
+Sa isang telepono, isang tab bar ay nakalagay sa ibaba ng screen:
+
+- **Home** -- laging ang unang tab
+- Hanggang sa tatlo mula sa mga tab na nag-configure ang iyong simbahan
+- **Marami** -- nagbubukas ng menu ng navigation
+
+Kung ang iyong simbahan ay nag-configure ng higit sa tatlong tab, ang natitirang ay hindi mawawala: lumilitaw sila sa menu ng **Marami** at sa grid ng Explore ng dashboard. Ang mga administrator ng simbahan ay nagtakda ng tab order sa B1 Admin sa ilalim ng **Mobile → Navigation**.
+
+## Ang Menu
+
+Ang pag-tap sa **Marami** ay nagbubukas ng menu ng navigation. Sa isang tablet o desktop ang parehong menu ay palaging makikita sa kalong ng kaliwang bahagi ng screen. Ito ay naglalaman ng:
+
+- Ang iyong pangalan at larawan, kasama ang isang **I-edit ang Profile** na shortcut — tingnan ang [Pag-edit ng Iyong Profile](./editing-your-profile.md)
+- **Home** at **Ako**
+- **Admin Portal** -- ipinakikita lamang kung mayroon kang mga pahintulot ng administrator sa iyong simbahan; ito ay nagbubukas ng B1 Admin
+- Bawat tab na nag-configure ang iyong simbahan, sa order
+- **I-install ang App** -- nagbubukas ng [mga tagubilin sa pag-install](./installing-pwa.md) sa `/mobile/install`
+- Isang light/dark mode toggle
+- **Mag-sign In** o **I-logout**
+- Ang pangalan ng iyong simbahan at isang link sa privacy policy
+
+## Ang App Bar
+
+Ang bar sa buong tuktok ng bawat screen ay nagpapakita ng:
+
+- Ang pamagat ng screen, o ang pangalan ng iyong simbahan sa Home
+- Isang pabalik na arrow kapag ikaw ay nag-drill sa isang detail screen
+- Isang **kampana** icon para sa mga notipikasyon at mga mensahe, na may badge para sa mga hindi nabasang item
+- Ang iyong **profile photo**, na nagbubukas ng iyong profile sa `/mobile/profileEdit` — tingnan ang [Pag-edit ng Iyong Profile](./editing-your-profile.md)
+
+## Ang Me Page
+
+Ang **Ako** (`/mobile/me`) ay ang iyong personal na hub. Ito ay naglalista ng mga shortcut sa iyong profile, [mga kagustuhan sa notipikasyon](./notification-preferences.md), mga mensahe, [pagbibigay](../giving/), at [mga pag-rehistro](../events/my-registrations.md), sinusundan ng kung ano ang paparating para sa iyo -- mga assignment sa paglilingkod, mga pag-rehistro ng kaganapan, at mga kaganapan ng grupo -- at ang iyong pinakabagong mga notipikasyon. Tingnan ang [Ang Me Page](./me-page) para sa mga detalye.
+
+Kung ikaw ay naka-sign out, ang Me page ay nagpapakita ng isang knob ng **Mag-sign In** sa halip.
+
+## Pag-i-install sa Iyong Home Screen
+
+Ang member portal ay isang Progressive Web App. Bisitahin ang `/mobile/install` (o pumili ng **I-install ang App** sa menu) para sa hakbang-hakbang na mga tagubilin para sa iyong device. Pagkatapos na i-install, ito ay bumubukas na buong-screen mula sa iyong home screen nang walang browser chrome. Tingnan ang [Pag-i-install bilang isang App (PWA)](./installing-pwa.md).
+
+## Ang Public Website ng Iyong Simbahan
+
+Sa labas ng member portal, ang public website ng iyong simbahan ay may sariling header navigation na may mga link na nag-configure ang iyong mga administrator -- mga pahina tulad ng [sermon](../content/sermons.md), ang [Bible](../content/bible.md), [live streaming](../content/live-streaming.md), at isang pampubliko na listahan ng grupo. Sa isang telepono ang mga link na ito ay nanatili sa likod ng hamburger icon sa tuktok na kanang sulok ng header.
 
 :::info
-Maaaring mag-iba ang mga tab na makikita mo depende sa kung ano ang pinagana ng iyong simbahan. Kinokontrol ng mga administrator ng simbahan kung aling mga seksyon ang nakikita ng mga miyembro sa pamamagitan ng B1 Admin. Kung hindi mo nakikita ang isang partikular na tab, maaaring hindi pa binuksan ng iyong simbahan ang feature na iyon.
+Ang mga tab at tool na nakikita mo ay nag-vary sa simbahan. Ang mga administrator ay kumokontrol sa kung aling mga seksyon ay nakikita ng mga miyembro sa pamamagian ng B1 Admin, kaya kung hindi mo nakikita ang feature na ito na inilalarawan dito, ang iyong simbahan ay maaaring hindi nag-on nito.
 :::
-
-## Mobile Navigation
-
-Sa mas maliliit na screen tulad ng telepono at tablet, kumukupos ang sidebar upang makatipid ng espasyo. Sa halip, makikita mo ang buton na **Menu** sa itaas ng member portal. I-tap ito upang buksan ang listahan ng lahat ng available na tab. Pumili ng tab upang mag-navigate sa seksyong iyon, at awtomatikong magsasara ang menu.
-
-## Admin Tab
-
-Kung mayroon kang mga administrator permission sa iyong simbahan, makikita mo ang karagdagang tab na **Admin** sa ibaba ng sidebar. Dadalhin ka ng pag-click dito sa B1 Admin kung saan maaari mong pamahalaan ang mga setting at data ng iyong simbahan.
-
-## Top Header Navigation
-
-Sa labas ng member portal, naglalaman ang pangunahing header ng site ng custom na navigation link ng iyong simbahan. Ang mga ito ay isinasaayos ng mga administrator ng iyong simbahan at maaaring may kasamang mga link sa mga pahina tulad ng [mga sermon](../content/sermons.md), ang [Bible](../content/bible.md), [live streaming](../content/live-streaming.md), at iba pang content. Sa mobile, ma-a-access ang mga link na ito sa pamamagitan ng hamburger menu icon sa kanang-itaas na sulok ng header.

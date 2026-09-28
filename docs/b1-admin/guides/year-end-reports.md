@@ -61,7 +61,7 @@ Create the official giving statements for your donors.
 
 Follow the [Giving Statements](../donations/giving-statements.md) guide to:
 
-1. Navigate to Donations > Statements
+1. Navigate to **Donations > Giving Statements**
 2. Select the year from the dropdown and review the summary statistics
 3. Choose your download method:
    - **Download ZIP** — individual CSV files, one per donor

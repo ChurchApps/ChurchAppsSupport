@@ -45,7 +45,7 @@ Click **Preview** to see how the subject and body will look with sample data fil
 
 ## Using a Template
 
-Saved templates are available to select from when composing an email to people or a group, and as an action in [Workflows](../serving/workflows.md).
+Saved templates are available to select from when composing an email to people or a group, and as an action in [Workflows](../serving/workflows.md). Before your church can send them, the ChurchApps team needs to approve it for group email once. See [Turning On Group Email for Your Church](../groups/group-members.md#turning-on-group-email-for-your-church).
 
 ## Editing and Deleting
 

@@ -34,16 +34,15 @@ When a group uses the **Request** policy, all join attempts go through the appro
 
 1. Navigate to **Groups** in B1 Admin
 2. Click on the group name
-3. Click the **Join Requests** tab
-4. You will see all pending requests for this group
+3. Pending requests for this group appear at the top of the **Members** tab
 
 ### For Administrators
 
 Administrators with group management permissions can view pending requests across all groups:
 
 1. Navigate to **Groups** in B1 Admin
-2. Look for a notification badge or pending requests indicator
-3. Click to view all pending requests church-wide
+2. Click the **pending requests** button in the page header (for example, "3 pending requests"). It only appears when there are requests waiting.
+3. Review all pending requests church-wide
 
 ## Reviewing a Join Request
 
@@ -84,7 +83,7 @@ Providing a decline reason helps the person understand why their request wasn't 
 
 ## Approving from the Tasks Page
 
-Every join request also creates a task under **Serving &rarr; Tasks**, titled "*Person* requested to join *Group*." It's assigned to the group's leaders -- or, if the group has no leader yet, to any staff with the **Group Members &gt; Edit** permission.
+Every join request also creates a task under **Serving &rarr; My Work**, titled "*Person* requested to join *Group*." It's assigned to the group's leaders. If the group has no leader yet, it goes to any staff with the **Group Members &gt; Edit** permission, or to your church's domain admins if no one has that permission. Staff and admins who get the task this way also receive a notification that links straight to it.
 
 Opening the task shows the requester's name, the group, and their optional message, with **Approve** and **Decline** buttons right on the task card (Decline opens the same optional reason field described above). This gives leaders a second, notification-driven way to act on a request without navigating to the group's Join Requests tab.
 
@@ -94,7 +93,7 @@ Deciding a request from either place -- the group's Join Requests tab or its Tas
 
 The join request system automatically sends notifications:
 
-- **When a request is submitted** -- All group leaders receive a notification
+- **When a request is submitted** -- All group leaders receive a notification. If the group has no leader, the staff or admins assigned the task are notified instead (see above).
 - **When a request is approved** -- The requester receives a confirmation
 - **When a request is declined** -- The requester receives a notification with any decline reason
 

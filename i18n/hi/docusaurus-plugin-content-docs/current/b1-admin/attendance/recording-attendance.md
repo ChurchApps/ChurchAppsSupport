@@ -1,65 +1,80 @@
 ---
-title: "उपस्थिति रिकॉर्ड करना"
+title: "उपस्थिति रिकॉर्डिंग"
 ---
 
-# Recording Attendance
+# उपस्थिति रिकॉर्डिंग
 
 <div class="article-intro">
 
-Once your campuses, service times, and groups are set up, you can manually record attendance after each gathering. B1 Admin organizes attendance around **sessions** -- one session per group per meeting date. You create the session, mark who showed up, and the data feeds directly into your attendance reports.
+एक बार जब आपके कैंपस, सेवा समय, और समूह सेट अप हो जाएं, तो आप प्रत्येक सभा के बाद उपस्थिति को मैन्युअल रूप से रिकॉर्ड कर सकते हैं। B1 Admin **सत्र** के आसपास उपस्थिति को व्यवस्थित करता है -- प्रति समूह प्रति मीटिंग तारीख एक सत्र। आप सत्र बनाते हैं, चिह्नित करते हैं कि कौन आया, और डेटा सीधे आपकी उपस्थिति रिपोर्ट में जाता है।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- Your campuses, service times, and groups must be configured. See [Attendance Setup](setup.md) if you haven't done this yet.
-- The groups you want to track must have **Track Attendance** enabled. See [Attendance Setup](setup.md) for details.
+- आपके कैंपस, सेवा समय, और समूहों को कॉन्फ़िगर करना चाहिए। यदि आपने यह अभी तक नहीं किया है तो [उपस्थिति सेटअप](setup.md) देखें।
+- जिन समूहों को आप ट्रैक करना चाहते हैं उनमें **उपस्थिति ट्रैक करें** सक्षम होना चाहिए। विवरण के लिए [उपस्थिति सेटअप](setup.md) देखें।
 
 </div>
 
-## Creating a Session
+## सत्र बनाना
 
-A session represents one occurrence of a group meeting -- for example, your K--3rd grade class on a specific Sunday.
+एक सत्र एक समूह मीटिंग की एक घटना का प्रतिनिधित्व करता है -- उदाहरण के लिए, आपकी K--3rd ग्रेड कक्षा एक विशिष्ट रविवार को।
 
-1. Open **B1 Admin**, open the **section menu** in the top-left corner and choose **People**, then click the **Groups** tab.
-2. Select the group you want to record attendance for.
-3. Click the **Sessions** tab.
-4. Click **New** to create a new session.
-5. If the group is assigned to a service time, choose the **Service Time**. If it is an unscheduled group, this field will not appear.
-6. Select the **Session Date** -- this can be today, a past date, or a future date.
-7. Click **Save**.
-
-:::tip
-You can create sessions for past dates to catch up on attendance you haven't recorded yet, or create them in advance so they are ready when your group meets.
-:::
-
-## Marking Attendance
-
-After saving the session, the group's members appear on the right side of the page.
-
-1. Check the box next to each person who attended.
-2. Changes are saved automatically -- there is no additional Save button for attendance marks.
-
-:::info
-Only current group members appear in the session list. If someone attended but is not yet in the group, [add them to the group](../groups/group-members.md) first, then record their attendance.
-:::
-
-## Exporting Attendance to a Spreadsheet
-
-You can download a record of the session as a CSV file to use in Excel, Numbers, or Google Sheets.
-
-1. Open the session you want to export.
-2. Click the **Download CSV** button.
-3. Open the downloaded file in your spreadsheet application.
-
-## Viewing Recorded Attendance
-
-After recording sessions, the data appears in your attendance reports.
-
-- **Attendance tab** -- shows church-wide trends over time. See [Tracking Attendance](tracking-attendance.md).
-- **Groups tab** -- shows attendance broken down by individual group.
+1. **B1 Admin** खोलें, शीर्ष-बाएं कोने में **अनुभाग मेनू** खोलें और **लोग** चुनें, फिर **समूह** टैब पर क्लिक करें।
+2. उस समूह का चयन करें जिसके लिए आप उपस्थिति रिकॉर्ड करना चाहते हैं।
+3. **सत्र** टैब पर क्लिक करें।
+4. एक नया सत्र बनाने के लिए **नया** पर क्लिक करें।
+5. यदि समूह एक सेवा समय के लिए असाइन किया गया है, तो **सेवा समय** चुनें। यदि यह एक अनिर्धारित समूह है, तो यह फ़ील्ड दिखाई नहीं देगी।
+6. **सत्र तारीख** का चयन करें -- यह आज हो सकता है, एक पिछली तारीख, या भविष्य की तारीख।
+7. **सहेजें** पर क्लिक करें।
 
 :::tip
-If a session you just created does not appear in reports right away, make sure the session date falls within the date range selected in the report filters.
+आप पिछली तारीखों के लिए सत्र बना सकते हैं उपस्थिति को पकड़ने के लिए जो आपने अभी तक रिकॉर्ड नहीं किया है, या उन्हें पहले से बना सकते हैं ताकि वे तैयार हों जब आपका समूह मिले।
+:::
+
+## उपस्थिति को चिह्नित करना
+
+इसकी उपस्थिति सूची देखने के लिए एक सत्र का चयन करें। प्रत्येक समूह सदस्य एक चेकबॉक्स के साथ सूचीबद्ध है, अंतिम नाम के आधार पर क्रमबद्ध, और जो कोई भी पहले से उपस्थित के रूप में रिकॉर्ड किया गया है वह चेक किया जाता है।
+
+1. उपस्थित प्रत्येक व्यक्ति के आगे बॉक्स को चेक करें। सभी को एक साथ बदलने के लिए **सभी का चयन करें** या **कोई नहीं चुनें** का उपयोग करें।
+2. सूची के ऊपर गणना (उदाहरण के लिए, "15 में से 12 उपस्थित") आपके जैसे-जैसे बॉक्स को चेक करते हैं अपडेट होती है।
+3. **उपस्थिति सहेजें** पर क्लिक करें। जब तक आप सहेजते हैं तब तक कुछ भी रिकॉर्ड नहीं होता, और एक संदेश की पुष्टि करता है जब सहेजना पूरा हो जाता है।
+
+जो कोई भी पहले से उपस्थित के रूप में रिकॉर्ड किया गया था उसे अनचेक करने और फिर सहेजने से उन्हें सत्र से हटा दिया जाता है।
+
+### आगंतुकों को जोड़ना
+
+किसी को रिकॉर्ड करने के लिए जो समूह का सदस्य नहीं है, उपस्थिति सूची के बगल में व्यक्ति खोज में उनकी खोज करें। यदि वे अभी तक आपके डेटाबेस में नहीं हैं, तो आप उन्हें खोज से बना सकते हैं। वे पहले से चेक की गई सूची में जोड़े जाते हैं। उन्हें रिकॉर्ड करने के लिए **उपस्थिति सहेजें** पर क्लिक करें।
+
+जो लोग एक कियॉस्क पर चेक इन करते हैं वे एक **स्वयंसेवक** या **अतिथि** चिप दिखाते हैं। जो लोग समूह के सदस्य नहीं हैं वे एक **अतिथि** चिप दिखाते हैं।
+
+## रोल शीट प्रिंट करना
+
+एक रोल शीट एक प्रिंट योग्य कक्षा सूची है जिसे शिक्षक हाथ से चिह्नित कर सकते हैं और बाद में दर्ज करने के लिए आपको वापस दे सकते हैं। प्रत्येक शीट चर्च का नाम, कक्षा, सेवा समय, और एक तारीख की लाइन दिखाती है। प्रत्येक सदस्य के पास **उपस्थित** और **अनुपस्थित** बॉक्स हैं, और आगंतुकों के लिए खाली पंक्तियां और एक **शिक्षक / नोट्स** क्षेत्र हैं।
+
+- **एक सत्र से** -- सत्र की उपस्थिति सूची के शीर्ष पर **रोल शीट प्रिंट करें** (प्रिंटर) आइकन पर क्लिक करें। शीट सत्र की तारीख के साथ तारीख दी गई है।
+- **एक सेवा के लिए सभी कक्षाएं** -- यदि सत्र का एक सेवा समय है, तो उस सेवा समय के लिए असाइन की गई प्रत्येक कक्षा के लिए एक शीट प्रिंट करने के लिए **सभी कक्षाएं प्रिंट करें** पर क्लिक करें। प्रत्येक कक्षा अपने पृष्ठ पर प्रिंट होती है।
+- **सदस्य टैब से** -- समूह की सदस्य सूची के ऊपर **रोल शीट प्रिंट करें** आइकन पर क्लिक करें एक अनिर्दिष्ट शीट प्रिंट करने के लिए।
+
+शीट एक नए टैब में खुलती है और आपके ब्राउज़र का प्रिंट संवाद स्वचालित रूप से दिखाई देता है।
+
+## उपस्थिति को स्प्रेडशीट में निर्यात करना
+
+आप सत्र का एक रिकॉर्ड CSV फ़ाइल के रूप में डाउनलोड कर सकते हैं Excel, Numbers, या Google Sheets में उपयोग करने के लिए।
+
+1. उस सत्र को खोलें जिसे आप निर्यात करना चाहते हैं।
+2. उपस्थिति सूची के शीर्ष पर **निर्यात** बटन पर क्लिक करें।
+3. डाउनलोड की गई फ़ाइल को अपने स्प्रेडशीट एप्लिकेशन में खोलें।
+
+## रिकॉर्ड की गई उपस्थिति को देखना
+
+सत्रों को रिकॉर्ड करने के बाद, डेटा आपकी उपस्थिति रिपोर्ट में दिखाई देता है।
+
+- **उपस्थिति प्रवृत्ति टैब** -- समय के साथ चर्च-व्यापी प्रवृत्तियों को दिखाता है। [उपस्थिति ट्रैकिंग](tracking-attendance.md) देखें।
+- **समूह उपस्थिति टैब** -- व्यक्तिगत समूह द्वारा विभाजित उपस्थिति को दिखाता है।
+
+:::tip
+यदि आपने अभी बनाया गया एक सत्र तुरंत रिपोर्ट में दिखाई नहीं देता है, तो सुनिश्चित करें कि सत्र की तारीख रिपोर्ट फ़िल्टर में चुनी गई तारीख सीमा के अंदर है।
 :::

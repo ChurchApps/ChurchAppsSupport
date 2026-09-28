@@ -1,62 +1,65 @@
 ---
-title: "Aprobando Cambios de Perfil"
+title: "Aprobación de Cambios de Perfil"
 ---
 
-# Aprobando Cambios de Perfil
+# Aprobación de Cambios de Perfil
 
 <div class="article-intro">
 
-Cuando tu iglesia requiere aprobación de administrador para actualizaciones de perfil, los miembros envían sus cambios a través de la aplicación B1 Mobile y esas solicitudes aparecen como tareas en B1 Admin. Esta guía explica cómo revisarlas y aprobarlas.
+Cuando su iglesia requiere aprobación del administrador para actualizaciones de perfil, los miembros envían sus cambios a través de la aplicación móvil B1 y esas solicitudes aparecen como tareas en B1 Admin. Esta guía explica cómo revisarlas y aprobarlas.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de Empezar</h4>
 
-- Debes ser miembro del grupo designado como **Grupo de Aprobación de Directorio** en **Móvil &rarr; B1 Mobile**
-- Si no se ha configurado ningún grupo de aprobación, los cambios de perfil se aplican inmediatamente sin revisión
+- Debe ser miembro del grupo designado como **Grupo de Aprobación de Directorios** en **Móvil &rarr; Portal de miembros**
+- Si no se ha configurado un grupo de aprobación, los cambios de perfil se aplican inmediatamente sin revisión
 
 </div>
 
 ## Dónde Encontrar Solicitudes Pendientes
 
-Cuando un miembro envía un cambio de perfil, aparece como una tarea asignada a tu grupo de aprobación. Puedes encontrarlo en dos lugares:
+Cuando un miembro envía un cambio de perfil, aparece como una tarea asignada a su grupo de aprobación. Puede encontrarla en dos lugares:
 
-**Desde el Panel:**
-1. Inicia sesión en B1 Admin — el Panel se carga automáticamente.
-2. En la sección **Tareas** en el lado derecho, haz clic en la pestaña **Asignado a Mis Grupos**.
+**Desde el Panel (su página de inicio):**
+1. Inicie sesión en B1 Admin — el Panel se carga automáticamente.
+2. En la sección **Tareas** del lado derecho, haga clic en la pestaña **Asignado a Mis Grupos**.
 3. Cualquier solicitud de cambio de perfil pendiente se enumerará allí.
 
 **Desde Servicio &rarr; Mi Trabajo:**
-1. En la navegación superior, haz clic en **Servicio**.
-2. Haz clic en **Mi Trabajo**.
-3. Haz clic en la pestaña **Asignado a Mis Grupos** bajo Tareas.
+1. En la navegación superior, haga clic en **Servicio**.
+2. Haga clic en **Mi Trabajo**.
+3. Haga clic en la pestaña **Asignado a Mis Grupos** en Tareas.
 
-## Revisando y Aprobando una Solicitud
+## Revisión y Aprobación de una Solicitud
 
-1. Haz clic en la tarea **Actualización de Perfil** para abrirla.
-2. Bajo **Cambios Solicitados**, verás cada campo que el miembro quiere actualizar junto con el nuevo valor que enviaron.
-3. Revisa los cambios.
-4. Haz clic en **Aplicar** para aprobar y guardar los cambios en su perfil.
+1. Haga clic en la tarea **Actualización de Perfil** para abrirla.
+2. En **Cambios Solicitados**, verá cada campo que el miembro desea actualizar junto con el nuevo valor que envió.
+3. Revise los cambios.
+4. Haga clic en **Aplicar** para aprobar y guardar los cambios en su perfil.
 
-La tarea se cerrará automáticamente una vez que los cambios se apliquen.
+La tarea se cerrará automáticamente una vez que se apliquen los cambios.
 
-## Configurando el Grupo de Aprobación
+## Configuración del Grupo de Aprobación
 
-Si tu iglesia quiere que los cambios de perfil requieran aprobación, debe configurarse primero un Grupo de Aprobación de Directorio.
+Si su iglesia desea que los cambios de perfil requieran aprobación, primero se debe configurar un Grupo de Aprobación de Directorios.
 
-1. En la navegación superior, haz clic en **Móvil**.
-2. Haz clic en **B1 Mobile**.
-3. Bajo **Grupo de Aprobación de Directorio**, selecciona el grupo cuyos miembros deberían revisar las solicitudes de cambio de perfil.
-4. Haz clic en **Guardar**.
+1. En la navegación superior, haga clic en **Móvil**.
+2. Haga clic en **Portal de miembros** (la página "Configuración del Portal").
+3. En **Grupo de Aprobación de Directorios**, seleccione el grupo cuyos miembros deben revisar las solicitudes de cambio de perfil.
+4. Haga clic en **Guardar**.
 
-Cualquier miembro de ese grupo verá las solicitudes entrantes de cambio de perfil bajo **Asignado a Mis Grupos** en su panel.
+Cualquier miembro de ese grupo verá las solicitudes de cambio de perfil entrantes en **Asignado a Mis Grupos** en su Panel.
+
+El mismo Grupo de Aprobación de Directorios también revisa **solicitudes de eliminación de cuenta** — consulte [Revisión de Solicitudes de Eliminación de Cuenta](./account-deletion.md).
 
 :::tip
-Asegúrate de que tus aprobadores realmente sean miembros del grupo configurado — solo los miembros del grupo verán las solicitudes.
+Asegúrese de que sus aprobadores sean realmente miembros del grupo configurado — solo los miembros del grupo verán las solicitudes.
 :::
 
 ## Artículos Relacionados
 
-- [Administrando tu Perfil](./managing-profile.md) — Edita tu propia configuración de cuenta
-- [Configuración de B1 Mobile](../../b1-mobile/profile/editing-profile.md) — Lo que los miembros ven cuando envían un cambio de perfil
+- [Administración de su Perfil](./managing-profile.md) — Editar su propia configuración de cuenta
+- [Revisión de Solicitudes de Eliminación de Cuenta](./account-deletion.md) — El mismo flujo de revisión de grupo de aprobación para eliminación de cuenta
+- [Configuración de B1 Móvil](../../b1-mobile/profile/editing-profile.md) — Lo que los miembros ven cuando envían un cambio de perfil

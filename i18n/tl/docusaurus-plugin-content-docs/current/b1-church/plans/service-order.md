@@ -1,53 +1,43 @@
 ---
-title: "Ayos ng Serbisyo"
+title: "Pagkakasunod-sunod ng Serbisyo"
 ---
 
-# Ayos ng Serbisyo
+# Pagkakasunod-sunod ng Serbisyo
 
 <div class="article-intro">
 
-Kapag binuksan mo ang isang plano, ipinapakita ng seksyong **Order of Service** ang pagkakasunod-sunod ng mga item para sa serbisyong iyon. Ibinibigay nito sa iyo at sa iyong team ang iisang view ng daloy ng serbisyo, kabilang ang timing, mga detalye ng kanta, at mga paglalarawan para sa bawat elemento.
+Kapag ikaw ay bumubukas ng isang plano, ang tab ng **Pagkakasunod-sunod ng Serbisyo** ay nagpapakita ng pagkakasunod-sunod ng mga item para sa serbisyong iyon. Ito ay nagbibigay sa iyo at sa iyong koponan ng isang ibinabahaging pagtingin sa daloy ng serbisyo, kabilang ang oras, mga detalye ng kanta, at mga paglalarawan para sa bawat elemento.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Ka Magsimula</h4>
+<h4>Bago Magsimula</h4>
 
-- Dapat kang [naka-login](../getting-started/logging-in.md) sa iyong B1.church account.
-- Buksan ang isang plano mula sa iyong [listahan ng Plans](./viewing-plans.md) upang tingnan ang order ng serbisyo nito.
+- Dapat kang maging [naka-log in](../getting-started/logging-in.md) sa iyong B1.church account.
+- Buksan ang isang plano mula sa iyong [Listahan ng Mga Plano](./viewing-plans.md) upang tingnan ang pagkakasunod-sunod ng serbisyo.
 
 </div>
 
-## Ano ang Ipinapakita ng Order ng Serbisyo
+## Kung Ano ang Ipinapakita ng Service Order
 
-Ipinapakita ang order ng serbisyo bilang isang listahan ng mga item ayon sa pagkakasunod-sunod ng kanilang paglabas sa serbisyo. Kasama sa bawat item ang:
+Ang pagkakasunod-sunod ng serbisyo ay ipinakita bilang isang listahan ng mga item sa pagkakasunod-sunod na sila ay magiging nangyari sa panahon ng serbisyo. Bawat item ay kinabibilangan ng:
 
-- **Cumulative time** -- Ang tumatakbong oras mula sa simula ng serbisyo, upang malaman mo kung kailan inaasahang magsisimula ang bawat elemento.
-- **Label at paglalarawan ng item** -- Ang pangalan ng elemento (tulad ng pamagat ng kanta, panalangin, o anunsyo) kasama ang anumang mga tala o paglalarawan.
-- **Tagal** -- Kung gaano katagal inaasahang tatagal ang item.
+- **Pinagsama-samang oras** -- Ang tumatakbong oras mula sa simula ng serbisyo, upang malaman mo kung kailan ang bawat elemento ay inaasahang magsisimula.
+- **Label at paglalarawan ng item** -- Ang pangalan ng elemento (tulad ng pamagat ng kanta, panalangin, o pahayag) kasama ang anumang mga nota o mga paglalarawan.
+- **Tagal** -- Kung gaano katagal ang item ay inaasahang makukuha.
 
-Nakaayos ang mga item sa ilalim ng mga **header** na naggagrupo ng mga magkakaugnay na elemento (halimbawa, "Worship Set" o "Message"). Pinapadali nito ang pagsipat ng kabuuang istruktura ng serbisyo.
+Ang mga item ay organisado sa ilalim ng **mga header** na nag-grupo ng mga kaugnay na elemento nang magkasama (halimbawa, "Worship Set" o "Message"). Ito ay ginagawang madali na i-scan ang pangkalahatang istraktura ng serbisyo.
 
-## Pagtingin sa mga Lyrics at Chords ng Kanta
+Ang mga seksyon ng aralin at curriculum ay maaaring palawakin din sa isang folder ng mga indibidwal na aksyon na nakabalot sa ilalim -- i-click ang seksyon upang palawakin o i-collapse ang mga aksyon nito at makita ang bawat hakbang na ang iyong koponan ay maglalakad.
 
-I-click ang isang kanta sa order ng serbisyo upang buksan ang mga lyrics at chords nito. Gamitin ang dropdown na **Key Signature** sa itaas upang i-transpose ang mga chords agad-agad -- kapaki-pakinabang kung nangangailangan ang iyong instrumento o vocal range ng ibang key kaysa sa pinlano ng worship leader.
+## Pagtingin ng Mga Lyrics at Chords ng Kanta
 
-## Curriculum at Nilalaman ng Aralin
+I-click ang isang kanta sa pagkakasunod-sunod ng serbisyo upang buksan ang mga lyrics at chords nito. Gamitin ang dropdown ng **Key Signature** sa tuktok upang i-transpose ang mga chords nang on the fly -- kapaki-pakinabang kung ang iyong instrumento o vocal range ay nangangailangan ng ibang key kaysa sa plano ng worship leader.
 
-Kung ang plano ay may kaugnay na curriculum o nilalaman ng aralin mula sa isang provider tulad ng [Lessons.church](../content/lessons.md), makikita mo ang preview ng nilalamang iyon sa loob ng order ng serbisyo. Maaaring kabilang dito ang mga seksyon ng aralin, presentation material, at iba pang resources na kailangan ng iyong team para sa serbisyo.
+## Nilalaman ng Curriculum at Aralin
 
-## Pag-print ng Order ng Serbisyo
+Kung ang plano ay may kaugnay na curriculum o nilalaman ng aralin mula sa isang provider tulad ng [Lessons.church](../content/lessons.md), makikita mo ang isang preview ng nilalaman na iyon sa loob ng pagkakasunod-sunod ng serbisyo. Ito ay maaaring isama ang mga seksyon ng aralin, mga materyales sa pagtatanghal, at iba pang mga mapagkukunan na kailangan ng iyong koponan para sa serbisyo.
 
-Maaari kang mag-print ng formatted na bersyon ng order ng serbisyo upang dalhin sa araw ng serbisyo.
+## Pag-print ng Service Order
 
-1. Buksan ang plano mula sa iyong listahan ng **Plans**.
-2. Sa seksyong **Order of Service**, i-click ang print icon sa kanang-itaas na sulok.
-3. Magbubukas ang bagong window na may printable layout na naglalaman ng:
-   - Ang **petsa ng serbisyo** sa itaas.
-   - **Mga team assignment** na nakagrupo ayon sa kategorya sa kaliwa, na nagpapakita ng bawat posisyon at kung sino ang pumupuno nito.
-   - Ang **buong order ng serbisyo** sa kanan kasama ang mga column ng oras, detalye ng item, at tagal.
-4. Awtomatikong magbubukas ang print dialog ng iyong browser upang maka-print ka o mag-save bilang PDF.
-
-:::tip
-Magandang sanggunian ang naka-print na order ng serbisyo na madadala habang nagre-rehearsal o sa mismong serbisyo. Kasama dito ang parehong team roster at ang buong order ng serbisyo sa iisang pahina.
-:::
+Ang B1.church member app ay walang opsyon sa pag-print para sa mga plano. Kung kailangan mo ng isang printed na kopya na may roster ng koponan at ang buong pagkakasunod-sunod ng serbisyo, humingi ng tulong sa isang staff member upang i-print ito mula sa B1 Admin. Tingnan ang [Pag-print ng Mga Plano](../../b1-admin/serving/plans.md#printing-plans).

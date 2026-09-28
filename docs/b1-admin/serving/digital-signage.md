@@ -13,7 +13,7 @@ Send your lesson content to a lobby or hallway TV using a digital signage feed. 
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Set up a [plan type](./plans.md) with [Lessons.church](../content/lessons.md) or other lesson content scheduled
+- Set up a [plan type](./plans.md) with [Lessons.church](../../b1-church/content/lessons.md) or other lesson content scheduled
 - Have a [SignPresenter](https://www.signpresenter.com) account and a device set up to display it
 
 </div>

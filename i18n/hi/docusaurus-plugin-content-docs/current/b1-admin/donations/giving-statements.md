@@ -2,55 +2,61 @@
 title: "दान विवरण"
 ---
 
-# Giving Statements
+# दान विवरण
 
 <div class="article-intro">
 
-At the end of each year, your donors need a summary of their tax-deductible giving for their records. B1 Admin makes it easy to generate these statements for all donors at once, saving you hours of manual work.
+प्रत्येक वर्ष के अंत में, आपके दाताओं को उनके रिकॉर्ड के लिए उनके कर-कटौती योग्य दान का सारांश चाहिए। B1 Admin सभी दाताओं के लिए एक साथ इन विवरणों को उत्पन्न करना आसान बनाता है, आपको मैन्युअल काम के घंटे बचाता है।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- Verify that your [funds](funds.md) are correctly marked as **Tax Deductible** -- only donations to tax-deductible funds appear on statements
-- Ensure all donations have been [recorded](recording-donations.md) and any online transactions have been [imported from Stripe](stripe-import.md)
+- सत्यापित करें कि आपके [निधि](funds.md) को सही तरीके से **कर-कटौती योग्य** के रूप में चिह्नित किया गया है -- केवल कर-कटौती योग्य निधि के लिए दान विवरण पर दिखाई देते हैं
+- सुनिश्चित करें कि सभी दान [रिकॉर्ड किए गए हैं](recording-donations.md) और किसी भी ऑनलाइन लेनदेन को [Stripe से आयात किया गया है](stripe-import.md)
 
 </div>
 
-## Accessing Giving Statements
+## दान विवरण तक पहुंचना
 
-1. In **B1 Admin**, open the **section menu** in the top-left corner and choose **Donations**.
-2. Click **Statements**.
+1. **B1 Admin** में, शीर्ष-बाएं कोने में **अनुभाग मेनू** खोलें और **दान** चुनें।
+2. **विवरण** पर क्लिक करें।
 
-## Generating Statements
+## विवरण उत्पन्न करना
 
-1. Select the **year** from the dropdown at the top of the page. You can choose the current year or any of the five previous years.
-2. The page displays summary statistics for that year, including:
-   - **Total donors** -- the number of people who gave
-   - **Total donations** -- the number of individual donation records
-   - **Total amount** -- the combined dollar amount of all giving
+1. पृष्ठ के शीर्ष पर ड्रॉपडाउन से **वर्ष** का चयन करें। आप वर्तमान वर्ष या पिछले पांच वर्षों में से किसी को चुन सकते हैं।
+2. पृष्ठ उस वर्ष के लिए सारांश आंकड़े प्रदर्शित करता है, जिसमें शामिल हैं:
+   - **कुल दाताएं** -- लोगों की संख्या जिन्होंने दान दिया
+   - **कुल दान** -- व्यक्तिगत दान रिकॉर्ड की संख्या
+   - **कुल राशि** -- सभी दान की कुल डॉलर राशि
 
-## Downloading Statements
+## विवरण डाउनलोड करना
 
-You have two options for getting statements to your donors:
+आपके दाताओं को विवरण देने के लिए आपके पास दो विकल्प हैं:
 
-### Download as CSV Files
+### CSV फ़ाइलों के रूप में डाउनलोड करें
 
-Click **Download ZIP** to download a ZIP file containing an individual CSV file for each donor. This is useful if you want to email statements individually or import them into another system.
+प्रत्येक दाता के लिए एक व्यक्तिगत CSV फ़ाइल युक्त ZIP फ़ाइल डाउनलोड करने के लिए **ZIP डाउनलोड करें** पर क्लिक करें। यह उपयोगी है यदि आप विवरणों को अलग-अलग ईमेल करना चाहते हैं या उन्हें किसी अन्य सिस्टम में आयात करना चाहते हैं।
 
-### Print All Statements
+### सभी विवरण प्रिंट करें
 
-Click **Print All** to open a printable view of every donor's statement in your browser. From there, use your browser's print function to send them to a printer. Each statement starts on a new page so they are ready to fold and mail.
+आपके ब्राउज़र में प्रत्येक दाता के विवरण का एक प्रिंट योग्य दृश्य खोलने के लिए **सभी प्रिंट करें** पर क्लिक करें। वहां से, उन्हें प्रिंटर को भेजने के लिए अपने ब्राउज़र के प्रिंट फ़ंक्शन का उपयोग करें। प्रत्येक विवरण एक नए पृष्ठ पर शुरू होता है ताकि वे मोड़ने और मेल करने के लिए तैयार हों।
 
 :::tip
-Run your statements early in January while your records are fresh. Double-check that your funds are correctly marked as tax-deductible before generating statements -- only donations to tax-deductible funds are included.
+जनवरी की शुरुआत में अपने विवरण चलाएं जबकि आपके रिकॉर्ड ताजा हों। विवरण उत्पन्न करने से पहले दोबारा जांचें कि आपके निधि को सही तरीके से कर-कटौती योग्य के रूप में चिह्नित किया गया है -- केवल कर-कटौती योग्य निधि के लिए दान शामिल हैं।
 :::
 
 :::info
-Giving statements only include donations assigned to funds that have the **Tax Deductible** setting enabled. If a fund is not marked as tax-deductible, its donations will not appear on the statement. You can manage this setting on the [Funds](funds.md) page.
+दान विवरण केवल उन निधियों को असाइन किए गए दान शामिल करते हैं जिनमें **कर-कटौती योग्य** सेटिंग सक्षम है। यदि निधि को कर-कटौती योग्य के रूप में चिह्नित नहीं किया गया है, तो इसके दान विवरण पर दिखाई नहीं देंगे। आप [निधि](funds.md) पृष्ठ पर इस सेटिंग को प्रबंधित कर सकते हैं।
 :::
 
-## Next Steps
+## कनाडा, ऑस्ट्रेलिया और न्यूजीलैंड के लिए रसीद प्रारूप
 
-If you need to review donation details before generating statements, visit the [Donation Reports](donation-reports.md) page or check individual [batches](batches.md).
+संयुक्त राज्य के बाहर के चर्च विवरण को अपने देश के आधिकारिक रसीद लेआउट में स्विच कर सकते हैं। **सेटिंग्स** पर जाएं, **दान** अनुभाग खोलें, और **विवरण प्रारूप** को **कनाडा**, **ऑस्ट्रेलिया** या **न्यूजीलैंड** पर सेट करें, फिर दिखाई देने वाले फ़ील्ड में भरें: आपका पंजीकरण नंबर (CRA पंजीकरण नंबर, ABN, या NZ दान पंजीकरण नंबर), आपके संगठन का पता, रसीद पर हस्ताक्षर करने के लिए अधिकृत व्यक्ति का नाम, और कनाडा के लिए शहर जहां रसीद जारी की जाती है।
+
+विवरण तब शब्दावली ले जाते हैं जो आपके कर प्राधिकरण की अपेक्षा करता है (कनाडा के लिए, CRA संदर्भ के साथ "आय कर उद्देश्यों के लिए आधिकारिक रसीद"), `YEAR-DONORID` के रूप में एक रसीद नंबर, केवल कर-कटौती योग्य निधि से गिनी गई योग्य राशि, और गैर-कटौती योग्य निधि के किसी भी उपहार के लिए एक अलग पंक्ति। दाताएं B1.church से अपना विवरण प्रिंट करते समय एक ही रसीद ब्लॉक देखते हैं।
+
+## अगले कदम
+
+विवरण उत्पन्न करने से पहले दान विवरण की समीक्षा करने के लिए, [दान रिपोर्ट](donation-reports.md) पृष्ठ पर जाएं या व्यक्तिगत [बैच](batches.md) को जांचें।

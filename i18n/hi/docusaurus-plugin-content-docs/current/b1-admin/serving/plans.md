@@ -2,122 +2,122 @@
 title: "सेवा योजनाएं"
 ---
 
-# Service Plans
+# सेवा योजनाएं
 
 <div class="article-intro">
 
-Service plans organize who is serving and when. Each plan is tied to a specific date and ministry, making it easy to coordinate your volunteer teams week by week and ensure every service is fully staffed.
+सेवा योजनाएं व्यवस्थित करती हैं कि कौन सेवा कर रहा है और कब। प्रत्येक योजना एक विशिष्ट तारीख और मंत्रालय से जुड़ी होती है, जिससे आपकी स्वयंसेवक टीमों को सप्ताह दर सप्ताह समन्वित करना आसान हो जाता है और प्रत्येक सेवा पूरी तरह से स्टाफ है यह सुनिश्चित करता है।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरुआत से पहले</h4>
 
-- Set up your ministries and teams in the Serving area
-- Make sure volunteers have been added to your [people directory](../people/adding-people.md) and assigned to teams
+- Serving क्षेत्र में अपनी मंत्रालयों और टीमों को सेट करें
+- सुनिश्चित करें कि स्वयंसेवकों को आपकी [people directory](../people/adding-people.md) में जोड़ा गया है और टीमों को असाइन किया गया है
 
 </div>
 
-## Accessing Plans
+## योजनाओं तक पहुंचना
 
-1. Navigate to **Serving** from the main menu.
-2. Select a **ministry tab** at the top of the page.
-3. Click on a **plan type** to see the list of plans for that type.
-4. Click on a specific plan to open it.
+1. मुख्य मेनू से **Serving** पर नेविगेट करें।
+2. पृष्ठ के शीर्ष पर एक **ministry tab** चुनें।
+3. उस प्रकार की योजनाओं की सूची देखने के लिए **plan type** पर क्लिक करें।
+4. एक विशिष्ट योजना खोलने के लिए उस पर क्लिक करें।
 
 :::info
-Full admin access is not required to manage plans. Anyone who is a member of a ministry can navigate to Serving and create, edit, and schedule plans for their own ministry without needing the Plans Edit permission. Editors with the Plans Edit role can manage plans across every ministry.
+योजनाओं का प्रबंधन करने के लिए पूर्ण admin access की आवश्यकता नहीं है। कोई भी जो किसी मंत्रालय का सदस्य है वह Serving पर नेविगेट कर सकता है और Plans Edit permission की आवश्यकता के बिना अपनी मंत्रालय के लिए योजनाएं बना, संपादित और शेड्यूल कर सकता है। Plans Edit भूमिका वाले Editors हर मंत्रालय की योजनाओं को प्रबंधित कर सकते हैं।
 :::
 
-## Creating a Plan
+## योजना बनाना
 
-1. From the plan type view, click **New Plan**.
-2. Give the plan a name or use the date as the name. Select the **date** for the service.
-3. If you would like to copy from a previous plan, choose positions only or positions and assignments. If you do not want to copy, just choose nothing. You can also copy the order of service from my previous plan.
-4. Save the plan. You can now begin assigning team members and building out the [service order](./service-order.md).
+1. योजना प्रकार दृश्य से, **New Plan** पर क्लिक करें।
+2. योजना को एक नाम दें या तारीख को नाम के रूप में उपयोग करें। सेवा के लिए **date** चुनें।
+3. यदि आप पिछली योजना से कॉपी करना चाहते हैं, तो केवल स्थितियों को चुनें या स्थितियों और कार्यों को चुनें। यदि आप कॉपी नहीं करना चाहते हैं, तो कुछ भी मत चुनें। आप अपनी पिछली योजना से सेवा का क्रम भी कॉपी कर सकते हैं।
+4. योजना को सहेजें। आप अब टीम के सदस्यों को असाइन करना शुरू कर सकते हैं और [service order](./service-order.md) को बना सकते हैं।
 
-## The Plan Detail Page
+## योजना विवरण पृष्ठ
 
-When you open a plan, you will see two tabs:
+जब आप एक योजना खोलते हैं, तो आप दो टैब देखेंगे:
 
-- **Assignments** -- Manage which team members are assigned to this plan. You can add people from your existing teams and see who has confirmed or is still pending.
-- **[Service Order](./service-order.md)** -- Build the order of service with elements like worship songs, prayers, announcements, and the sermon.
+- **Assignments** -- प्रबंधित करें कि इस योजना को कौन सी टीम सदस्यों असाइन किए गए हैं। आप अपनी मौजूदा टीमों से लोग जोड़ सकते हैं और देख सकते हैं कि किसने पुष्टि की है या अभी भी लंबित है।
+- **[Service Order](./service-order.md)** -- पूजा गीतों, प्रार्थनाओं, घोषणाओं, और उपदेश जैसे तत्वों के साथ सेवा का क्रम बनाएं।
 
-## Assigning Team Members
+## टीम सदस्यों को असाइन करना
 
-1. Open a plan and go to the **Assignments** tab.
-2. Click on **add Position** to expand it. Fill out the information in the add a position form. For category name add whatever category you like.
-3. Click on **People Needed** and choose volunteers to fill that position.
-4. Add members from your team roster by clicking **Add**.
-5. Assigned members will appear under their team with their assignment status.
-6. Click notify volunteers to notify them within the B1 app or via email.
+1. एक योजना खोलें और **Assignments** टैब पर जाएं।
+2. **add Position** पर क्लिक करें इसे expand करने के लिए। add a position form में जानकारी भरें। category name के लिए कोई भी category जोड़ें जो आपको पसंद है।
+3. **People Needed** पर क्लिक करें और उस स्थिति को भरने के लिए स्वयंसेवकों को चुनें। यदि स्थिति में एक **Volunteer Group** है, तो आप उस समूह के सदस्यों से चुनते हैं। यदि इसकी Volunteer Group **None** पर सेट है, तो आप इसके बजाय अपने चर्च में किसी को भी खोज सकते हैं।
+4. **Add** पर क्लिक करके अपनी टीम roster से सदस्यों को जोड़ें।
+5. असाइन किए गए सदस्य उनकी टीम के तहत अपने कार्य स्थिति के साथ दिखाई देंगे।
+6. स्वयंसेवकों को सूचित करने के लिए notify volunteers पर क्लिक करें।
 
-Each position shows a count chip (for example, "2/3") so you can see how many spots are filled at a glance. At the top of the Assignments tab, a progress bar and a summary chip ("X of Y positions filled") show your overall staffing for the plan, switching to **Fully staffed** once every position is covered.
+प्रत्येक स्थिति एक count chip दिखाता है (उदाहरण के लिए, "2/3") ताकि आप एक नज़र में देख सकें कि कितने स्पॉट भरे हुए हैं। Assignments टैब के शीर्ष पर, एक progress bar और एक summary chip ("X of Y positions filled") योजना के लिए आपके समग्र staffing को दिखाते हैं, एक बार हर स्थिति कवर हो जाने पर **Fully staffed** पर स्विच करते हैं।
 
 :::tip
-Set up your teams in the ministry settings before creating plans. This way, you will have a ready pool of volunteers to assign from.
+योजनाएं बनाने से पहले अपनी मंत्रालय सेटिंग्स में टीमें सेट करें। इस तरह, आपके पास असाइन करने के लिए स्वयंसेवकों का एक तैयार पूल होगा।
 :::
 
-## Plan Settings
+## योजना सेटिंग्स
 
-Each plan has additional settings you can configure by clicking the edit (pencil) icon on the plan. These include:
+प्रत्येक योजना में अतिरिक्त सेटिंग्स हैं जिन्हें आप योजना पर edit (pencil) आइकन पर क्लिक करके कॉन्फ़िगर कर सकते हैं। इनमें शामिल हैं:
 
-- **Signup Deadline** — the number of hours before the service when volunteer signups close. Enter a negative number to keep signups open past the service start time.
-- **Show volunteer names on signup page** — when checked, volunteers can see who else is already signed up for each position.
-- **Penciled in** — hides assignments from volunteers until you are ready to publish the schedule.
-- **Automatically schedule a replacement when a volunteer declines** — when checked, if an assigned volunteer declines their position B1 will automatically contact the next available person on the team roster and ask if they can serve. This continues down the list until someone accepts, keeping your positions filled without manual follow-up.
+- **Signup Deadline** — सेवा से पहले घंटों की संख्या जब स्वयंसेवक signups बंद हो जाते हैं। सेवा शुरुआत के समय के बाद signups को खुला रखने के लिए एक negative number दर्ज करें।
+- **Show volunteer names on signup page** — जब जांचा जाता है, तो स्वयंसेवक देख सकते हैं कि कौन और पहले से प्रत्येक स्थिति के लिए साइन अप किया है।
+- **Penciled in** — जब तक आप schedule प्रकाशित करने के लिए तैयार नहीं हों तब तक स्वयंसेवकों से कार्य को hide करता है।
+- **Automatically schedule a replacement when a volunteer declines** — जब जांचा जाता है, यदि एक असाइन किया गया स्वयंसेवक अपनी स्थिति में decline करता है तो B1 स्वचालित रूप से टीम roster पर अगले उपलब्ध व्यक्ति से संपर्क करेगा और पूछेगा कि क्या वे सेवा कर सकते हैं। यह सूची के नीचे जारी रहता है जब तक कोई स्वीकार नहीं करता, आपकी स्थितियों को manual follow-up के बिना भरा रखता है।
 
-## Volunteer Reminders
+## स्वयंसेवक अनुस्मारक
 
-B1 can automatically remind volunteers ahead of the services they are scheduled for, so you do not have to chase down your team each week. Reminders go to **everyone scheduled** — both those who have confirmed and those who have not yet responded — by email and as an in-app/push notification. Each reminder includes the volunteer's position(s), the service date, the plan notes, and your custom message.
+B1 स्वचालित रूप से स्वयंसेवकों को उन सेवाओं से पहले remind कर सकता है जिनके लिए वे शेड्यूल किए गए हैं, इसलिए आपको हर सप्ताह अपनी टीम के पीछे भागना नहीं पड़ता। Reminders **everyone scheduled** को जाते हैं — जो पुष्टि किए हैं और जो अभी तक respond नहीं किए हैं दोनों — ईमेल के माध्यम से और in-app/push notification के रूप में। प्रत्येक reminder स्वयंसेवक की स्थिति(यों), सेवा तारीख, योजना नोट्स, और आपके custom message को शामिल करता है।
 
-Reminder timing and content are set per **plan type**, so each kind of service can keep its own schedule.
+Reminder timing और content **plan type** प्रति सेट किए जाते हैं, इसलिए सेवा की प्रत्येक kind अपना स्वयं का schedule रख सकती है।
 
-1. From the **Serving** area, select the ministry that contains the plan type.
-2. Click the **edit (pencil) icon** next to the plan type.
-3. In the **Reminders** section, set:
-   - **Reminder days before service** — a comma-separated list of how many days ahead to send, for example `7,1,0`. Use `0` to send a reminder on the day of the service. Leave this field blank to turn reminders off for this plan type.
-   - **Custom reminder message** *(optional)* — extra text added to the reminder, such as "Arrive 30 minutes early to rehearse."
-4. Save the plan type.
+1. **Serving** क्षेत्र से, उस मंत्रालय को चुनें जिसमें योजना प्रकार शामिल है।
+2. योजना प्रकार के आगे **edit (pencil) icon** पर क्लिक करें।
+3. **Reminders** अनुभाग में, सेट करें:
+   - **Reminder days before service** — कितने दिन आगे भेजने का एक अल्पविराम-अलग सूची, उदाहरण के लिए `7,1,0`। सेवा के दिन एक reminder भेजने के लिए `0` का उपयोग करें। इस योजना प्रकार के लिए reminders को बंद करने के लिए इस फ़ील्ड को blank छोड़ दें।
+   - **Custom reminder message** *(optional)* — reminder में जोड़ा गया अतिरिक्त पाठ, जैसे "Rehearse करने के लिए 30 मिनट पहले आएं।"
+4. योजना प्रकार को सहेजें।
 
-New plan types remind volunteers **2 days before** each service by default until you change this.
+नई योजना प्रकारें स्वयंसेवकों को **2 days before** प्रत्येक सेवा को default रूप से remind करते हैं जब तक आप इसे बदलते हैं।
 
 :::tip
-Volunteers who have not yet confirmed get **Accept** and **Decline** buttons right inside the reminder email, so they can respond without signing in.
+स्वयंसेवक जिन्होंने अभी तक पुष्टि नहीं की है उन्हें **Accept** और **Decline** बटन सही reminder ईमेल के अंदर मिलते हैं, इसलिए वे sign in किए बिना respond कर सकते हैं।
 :::
 
 :::info
-Each reminder is sent once. Plans that are still penciled in (not yet sent to the team) do not trigger reminders.
+प्रत्येक reminder एक बार भेजा जाता है। योजनाएं जो अभी भी penciled in हैं (अभी तक टीम को नहीं भेजे गए) reminders को trigger नहीं करते हैं।
 :::
 
-## Associating Groups with a Plan Type
+## योजना प्रकार के साथ समूहों को जोड़ना
 
-Below the plan list on the plan type page, the **Groups** section lets you decide which groups can see the plans for this plan type from their member portal. This is a quick way to surface upcoming services to the right teams without giving them admin access.
+योजना प्रकार पृष्ठ पर योजना सूची के नीचे, **Groups** अनुभाग आपको यह decide करने देता है कि कौन से समूह अपने member portal से इस योजना प्रकार के लिए योजनाओं को देख सकते हैं। यह आने वाली सेवाओं को सही टीमों तक उजागर करने का एक तेज़ तरीका है बिना उन्हें admin access दिए।
 
-1. On the plan type page, scroll down to the **Groups** section.
-2. Click **Add Group** and pick a group from the dropdown.
-3. In the **Shows** column, choose whether members of that group should see **Past**, **Future**, or **Both** plans for this plan type.
-4. Repeat to associate additional groups, or click the trash icon to remove a group.
+1. योजना प्रकार पृष्ठ पर, **Groups** अनुभाग तक scroll करें।
+2. **Add Group** पर क्लिक करें और dropdown से एक समूह चुनें।
+3. **Shows** column में, choose करें कि क्या उस समूह के सदस्यों को इस योजना प्रकार के लिए **Past**, **Future**, या **Both** योजनाएं देखनी चाहिए।
+4. अतिरिक्त समूहों को जोड़ने के लिए दोहराएं, या एक समूह को हटाने के लिए trash icon पर क्लिक करें।
 
 :::info
-Only groups tagged as **Standard** appear in the picker. Members of an associated group automatically see this plan type's plans on the group's page in the B1 member portal — limited to the past/future/both window you selected.
+केवल **Standard** के रूप में tagged समूह picker में दिखाई देते हैं। एक जुड़े हुए समूह के सदस्य स्वचालित रूप से B1 member portal में समूह के पृष्ठ पर इस योजना प्रकार की योजनाओं को देखते हैं — आपके द्वारा चुनी गई past/future/both window तक सीमित।
 :::
 
-If the plans are Lessons.church lessons, members of the associated group also see a **This week's lesson** card on the group page (bottom line, verse, and a question for parents). Associate a parent group here and set the filter to **Past** so today's lesson is included. Volunteer teams typically use **Future** or **Both**.
+यदि योजनाएं Lessons.church पाठ हैं, तो जुड़े समूह के सदस्य समूह पृष्ठ पर एक **This week's lesson** कार्ड भी देखते हैं (नीचे की पंक्ति, verse, और माता-पिता के लिए एक प्रश्न)। एक parent group को यहां जोड़ें और filter को **Past** पर सेट करें ताकि आज का पाठ शामिल हो। Volunteer टीमें आमतौर पर **Future** या **Both** का उपयोग करते हैं।
 
-## Printing Plans
+## योजनाओं को प्रिंट करना
 
-You can print a plan for distribution to your team. Open the plan, Open the service order tab and use the **Print** option to generate a printable version that includes assignments and the service order. This is useful for handing out at rehearsals or posting in a common area.
+आप अपनी टीम में distribution के लिए एक योजना प्रिंट कर सकते हैं। योजना खोलें, service order tab खोलें और एक printable संस्करण generate करने के लिए **Print** option का उपयोग करें जिसमें कार्य और सेवा क्रम शामिल हैं। यह rehearsals पर हाथ देने या एक सामान्य क्षेत्र में पोस्ट करने के लिए उपयोगी है।
 
 :::info
-Plans are organized by ministry. Make sure you are on the correct ministry tab before creating or viewing plans.
+योजनाएं मंत्रालय द्वारा व्यवस्थित की जाती हैं। योजनाओं को बनाने या देखने से पहले सुनिश्चित करें कि आप सही मंत्रालय tab पर हैं।
 :::
 
-## Next Steps
+## अगले कदम
 
-- Use the [Plans Overview](./plans-overview.md) to see all upcoming assignments across multiple weeks in one grid and spot unfilled positions — and assign volunteers directly from the grid
-- Save a plan's structure as a [Plan Template](./plan-templates.md) so you can stamp it onto future plans in one click
-- Build out your [Service Order](./service-order.md) with songs, readings, and other elements
-- Add [songs](./songs.md) from your library directly into the service order
-- Use [Tasks](./tasks.md) to assign follow-up action items to team members
-- Display current lesson content on a lobby TV with [Digital Signage](./digital-signage.md)
+- एक ग्रिड में कई हफ्तों में सभी आगामी कार्यों को देखने के लिए [Plans Overview](./plans-overview.md) का उपयोग करें और अप्रदर्शित स्थितियों को spot करें — और ग्रिड से सीधे स्वयंसेवकों को असाइन करें
+- एक योजना की संरचना को [Plan Template](./plan-templates.md) के रूप में सहेजें ताकि आप इसे एक क्लिक में भविष्य की योजनाओं पर stamp कर सकें
+- गीतों, readings, और अन्य तत्वों के साथ अपना [Service Order](./service-order.md) बनाएं
+- [songs](./songs.md) को अपनी लाइब्रेरी से सीधे service order में जोड़ें
+- टीम के सदस्यों को follow-up action items असाइन करने के लिए [Tasks](./tasks.md) का उपयोग करें
+- [Digital Signage](./digital-signage.md) के साथ एक lobby TV पर वर्तमान पाठ सामग्री प्रदर्शित करें

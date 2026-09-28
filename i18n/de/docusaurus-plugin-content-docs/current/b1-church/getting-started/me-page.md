@@ -1,52 +1,60 @@
 ---
-title: "Die Seite Mich"
+title: "Die Me-Seite"
 ---
 
-# Die Seite Mich
+# Die Me-Seite
 
 <div class="article-intro">
 
-Die Seite **Mich** ist Ihr persönliches Dashboard im Mitgliedsportal – eine chronologische Ansicht von allem, was für Sie ansteht: Diensteinsätze, Veranstaltungsregistrierungen und bevorstehende Ereignisse Ihrer Gruppen, plus Ihre neuesten Benachrichtigungen.
+Die **Me**-Seite ist Ihr persönliches Dashboard im Mitgliederportal – eine chronologische Ansicht aller anstehenden Aufgaben: Diensteinsätze, Veranstaltungsanmeldungen und bevorstehende Veranstaltungen Ihrer Gruppen sowie Ihre neuesten Benachrichtigungen.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Sie müssen [angemeldet sein](./logging-in.md) – Die Seite Mich wird nur für angemeldete Mitglieder angezeigt
+- Sie müssen [angemeldet sein](./logging-in.md) – Die Me-Seite erscheint nur für angemeldete Mitglieder
 
 </div>
 
-## Öffnen der Seite Mich
+## Öffnen der Me-Seite
 
-Öffnen Sie das Portalmenü und tippen Sie auf **Mich**. Die Seite wird mit Ihren persönlichen Informationen geladen, die in Abschnitte organisiert sind.
+Öffnen Sie das Portalmenü und tippen Sie auf **Me**. Die Seite wird geladen, und Ihre persönlichen Informationen werden in Abschnitte unterteilt.
 
-## Kommend
+## Anstehend
 
-Der Abschnitt **Kommend** listet alles, was vor Ihnen liegt, in Datumsreihenfolge auf, wobei jeder Artikel mit einem Typ-Chip gekennzeichnet ist:
+Der Bereich **Anstehend** listet alle bevorstehenden Aufgaben in chronologischer Reihenfolge auf, wobei jedes Element mit einem Typ-Chip gekennzeichnet ist:
 
-- **Dienst** – Ihre Freiwilligenposition auf kommenden Dienstplänen. Tippen Sie auf einen, um den Plan zu öffnen.
-- **Registrierung** – Veranstaltungen, für die Sie sich [angemeldet haben](../events/registering). Tippen Sie durch zu Ihren [Registrierungen](../events/my-registrations).
-- **Ereignis** – Kommende Ereignisse von Gruppen, zu denen Sie gehören. Tippen Sie auf eines, um die Ereignisse der Gruppe zu öffnen.
+- **Dienst** – Ihre Freiwilligenpositionen in bevorstehenden Diensteplan. Tippen Sie auf einen, um den Plan zu öffnen.
+- **Registrierung** – Veranstaltungen, für die Sie sich [angemeldet haben](../events/registering). Tippen Sie durch zu Ihren [Anmeldungen](../events/my-registrations).
+- **Veranstaltung** – Bevorstehende Veranstaltungen von Gruppen, denen Sie angehören. Tippen Sie auf eine, um die Veranstaltungen der Gruppe zu öffnen.
 
-Wenn nichts geplant ist, sehen Sie „Nichts Bevorstehendes" – Ihre Dienst-, Veranstaltungs- und Registrierungszeiten werden hier angezeigt, wenn sie geplant sind.
+Wenn nichts eingeplant ist, sehen Sie „Nichts steht an" – Ihre Dienstezeiten, Veranstaltungen und Registrierungen werden hier angezeigt, wenn sie eingeplant sind.
 
-## Aktuelle Benachrichtigungen
+## Neueste Benachrichtigungen
 
-Unter Kommend zeigt der Abschnitt **Aktuelle Benachrichtigungen** Ihre neuesten Benachrichtigungen, so dass Sie ohne Öffnen jedes Bereichs des Portals auf dem Laufenden bleiben können.
+Unter „Anstehend" zeigt der Bereich **Neueste Benachrichtigungen** Ihre neuesten Benachrichtigungen, damit Sie sich informiert halten können, ohne jeden Bereich des Portals zu öffnen.
 
 ## Verknüpfungen
 
-Wenn Ihre Kirche Buchbare Räume oder Ressourcen hat, zeigt die Seite Mich auch einen Abschnitt **Verknüpfungen**:
+Der Bereich **Verknüpfungen** oben auf der Me-Seite verlinkt auf die Orte, die Sie am häufigsten besuchen:
 
-- **Veranstaltung anfordern** – Bitten Sie, ein Ereignis mit den Räumen und Ausrüstungen zu halten, die Sie benötigen. Siehe [Veranstaltungen und Räume anfordern](../events/requesting-events).
-- **Meine Anfragen** – Verfolgen Sie den Status Ihrer Anfragen und stornieren Sie ausstehende Anfragen.
+- **Profil bearbeiten** – Siehe [Profil bearbeiten](./editing-your-profile.md).
+- **Benachrichtigungseinstellungen** – Siehe [Benachrichtigungseinstellungen](./notification-preferences.md).
+- **Nachrichten** – Ihre privaten Unterhaltungen.
+- **Spenden** – Spenden Sie online und sehen Sie Ihren Spendenverlauf.
+- **Anmeldungen** – Veranstaltungen, für die Sie sich angemeldet haben.
+
+Wenn Ihre Kirche buchbare Räume oder Ressourcen hat, werden zwei weitere Verknüpfungen angezeigt:
+
+- **Veranstaltung anfordern** – Fordern Sie an, eine Veranstaltung mit den benötigten Räumen und Ausrüstung zu veranstalten. Siehe [Veranstaltungen und Räume anfordern](../events/requesting-events).
+- **Meine Anfragen** – Verfolgen Sie den Status Ihrer Anfragen und brechen Sie ausstehende Anfragen ab.
 
 Wenn Ihre Kirche keine Räume oder Ressourcen eingerichtet hat, sind diese Verknüpfungen verborgen.
 
 ## Verwandte Artikel
 
-- [Navigation in B1App](./navigating) – Das Mitgliedsportallayout
+- [Navigieren in B1App](./navigating) – Das Layout des Mitgliederportals
 - [Veranstaltungen und Räume anfordern](../events/requesting-events) – Senden und verfolgen Sie Raum-/Ressourcenanfragen
-- [Meine Registrierungen](../events/my-registrations) – Verwalten Sie Ihre Veranstaltungsregistrierungen
+- [Meine Anmeldungen](../events/my-registrations) – Verwalten Sie Ihre Veranstaltungsanmeldungen
 - [Freiwilligenanmeldung](../serving/volunteer-signup) – Wie Diensteinsätze funktionieren

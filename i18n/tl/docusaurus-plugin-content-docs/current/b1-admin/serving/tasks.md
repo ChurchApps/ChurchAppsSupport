@@ -6,63 +6,67 @@ title: "Mga Gawain"
 
 <div class="article-intro">
 
-Ang mga gawain ay nagpapahintulot sa iyo na magtalaga ng mga item ng aksyon sa mga tao o grupo sa iyong simbahan. Maging ito ay isang one-time na to-do o isang paulit-ulit na responsibilidad, ang mga gawain ay tumutulong sa iyo na subaybayan kung ano ang kailangang gawin at sino ang responsable upang walang makaligtaan.
+Ang mga task ay nagbibigay-daan sa iyo na italaga ang mga action item sa mga tao o grupo sa iyong simbahan. Kung ito ay isang one-time to-do o isang recurring responsibility, ang mga task ay tumutulong sa iyo na subaybayan kung ano ang kailangan gawin at sino ang responsable upang walang makaligtaan.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago ka magsimula</h4>
 
-- Siguraduhing ang mga tao o [grupo](../groups/creating-groups.md) na gusto mong magtalaga ng mga gawain ay umiiral sa B1 Admin
-- Mag-navigate sa seksyon ng **Paglilingkod** upang ma-access ang pahina ng Mga Gawain
+- Siguraduhin na ang mga tao o [grupo](../groups/creating-groups.md) na nais mong italaga ng mga task ay umiiral sa B1 Admin
+- Mag-navigate sa **Serving** section at buksan ang **My Work** upang makita ang mga task
 
 </div>
 
-## Pagtingin sa mga Gawain
+## Pagsusuri ng mga task
 
-Mag-navigate sa **Paglilingkod** at buksan ang pahina ng **Mga Gawain**. Makikita mo ang isang listahan ng iyong mga bukas na gawain. Bawat gawain ay nagpapakita ng kanyang pamagat, tao na na-assign, at status.
+Mag-navigate sa **Serving** at buksan ang **My Work**. Makikita mo ang isang listahan ng iyong mga bukas na gawain. Ang bawat task ay nagpapakita ng pamagat nito, assignee, at status.
 
 :::tip
-Sa pamamagit ng default, ang mga bukas na gawain lamang ay ipinapakita. I-toggle ang **Ipakita ang Sarado** upang makita ang mga kumpleto na gawain din.
+Bilang default, lamang ang mga bukas na task ang ipinapakita. I-toggle ang **Show Closed** upang makita ang mga nalutas na task din.
 :::
 
-## Paglikha ng isang Gawain
+## Paglikha ng isang task
 
-1. Sa pahina ng Mga Gawain, i-click ang **Magdagdag ng Gawain**.
-2. Magpasok ng isang **pamagat** para sa gawain.
-3. I-click ang kahon ng **Magtalaga sa** at i-type ang pangalan ng isang tao, o lumipat sa **Grupo** at i-type ang pangalan ng grupo.
-4. I-click ang **Maghanap** at pumili ng tao o grupo mula sa mga resulta.
-5. Magdagdag ng isang **nota** na may anumang detalye o mga tagubilin para sa taong na-assign.
-6. I-click ang **Mag-save**.
+1. Sa Tasks page, i-click ang **Add Task**.
+2. Ipasok ang isang **title** para sa task.
+3. I-click ang **Assign To** box at i-type ang pangalan ng isang tao, o lumipat sa **Group** at i-type ang pangalan ng grupo.
+4. I-click ang **Search** at piliin ang tao o grupo mula sa mga resulta.
+5. Magdagdag ng **note** na may anumang detalye o instruction para sa assignee.
+6. I-click ang **Save**.
 
-Ang gawain ay makikita na ngayon sa listahan ng mga gawain at makikita ng taong na-assign sa kanilang dashboard at mobile app.
+Ang task ay lilitaw na sa task list at makikita ng assignee sa kanilang dashboard at mobile app.
 
-## Pamamahala ng isang Gawain
+## Pagsisiguro ng isang task
 
-I-click ang anumang gawain upang buksan ang kanyang detalyadong pahina. Mula dito maaari mong:
+I-click ang anumang task upang buksan ang detail page nito. Mula dito maaari mong:
 
-- **Baguhin ang status** -- Lumipat sa pagitan ng **Bukas** at **Sarado** gamit ang dropdown ng status.
-- **Muling magtalaga ng gawain** -- I-update ang tao na na-assign sa isang ibang tao o grupo.
-- **Magdagdag ng mga nota** -- Isama ang karagdagang impormasyon o mga update para sa taong na-assign.
-- **I-edit ang pamagat** -- I-update ang pamagat ng gawain kung kinakailangan.
+- **Baguhin ang status** -- Lumipat sa pagitan ng **Open** at **Closed** gamit ang status dropdown.
+- **Muling italagang ang task** -- I-update ang assignee sa isang iba't ibang tao o grupo.
+- **Magdagdag ng mga tala** -- Isama ang karagdagang impormasyon o update para sa assignee.
+- **I-edit ang pamagat** -- I-update ang task title kung kinakailangan.
 
-## Lifecycle ng Gawain
+## Task lifecycle
 
-1. Ang isang bagong gawain ay nagsisimula na may status na **Bukas**.
-2. Ang taong na-assign ay nakakatanggap ng isang notipikasyon at maaaring tingnan ang gawain mula sa kanilang dashboard, sa pahina ng Mga Gawain, o sa mobile app.
-3. Kapag kumpleto na ang trabaho, ang taong na-assign (o isang admin) ay nagbabago ng status sa **Sarado**.
-4. Ang mga saradong gawain ay inalis mula sa default view ngunit maaari pa ring ma-access sa pamamagat ng pagpapagana ng **Ipakita ang Sarado**.
+1. Ang isang bagong task ay nagsisimula na may status na **Open**.
+2. Ang assignee ay tumatanggap ng isang notisasyon at maaaring tingnan ang task mula sa kanilang dashboard, **Serving > My Work**, o ang mobile app.
+3. Kapag kumpleto na ang trabaho, ang assignee (o isang admin) ay nagbabago ng status sa **Closed**.
+4. Ang mga closed task ay tinatanggal mula sa default view ngunit maaari pa ring ma-access sa pamamagit ng pag-enable ng **Show Closed**.
 
 :::info
-Maaari mong i-automate ang mga paulit-ulit na gawain upang sila ay likhain ayon sa isang schedule. Tingnan ang [Automations](./automations.md) para sa detalye tungkol sa pag-setup nito.
+Ang B1 Admin ay hindi na lumilikha ng mga recurring task sa isang schedule. Para sa paulit-ulit na follow-up sa mga tao, gumamit ng isang [workflow](./workflows.md) na may [schedule trigger](./workflows.md#schedule-triggers).
 :::
 
 :::tip
-Kapag kailangan mong isulong ang maraming tao sa pamamagat ng parehong hanay ng mga yugto -- tulad ng bagong visitor follow-up o isang membership process -- gamitin ang [Mga Workflow](./workflows.md). Ang mga workflow ay nagiging mga card sa isang drag-and-drop board na may mga hakbang, due dates, at routing.
+Kapag kailangan mong ilipat ang maraming tao sa pamamagit ng parehong set ng mga yugto -- tulad ng bagong visitor follow-up o isang proseso ng membership -- gumamit ng [Workflows](./workflows.md). Ang mga workflow ay nagsasalin ng mga task sa mga card sa isang drag-and-drop board na may mga hakbang, due dates, at routing.
 :::
 
-## Mga Susunod na Hakbang
+:::info
+Ang ilang mga task ay awtomatikong lumilikha ng ibang mga bahagi ng B1 at bumubukas sa isang espesyal na review card sa halip ng standard note/reassign view -- [group join requests](../groups/group-join-requests.md#approving-from-the-tasks-page), [profile change requests](../profile/approving-profile-changes.md), at [account deletion requests](../profile/account-deletion.md) ay lahat gumagana sa ganitong paraan.
+:::
 
-- Isulong ang mga tao sa pamamagat ng isang multi-step process na may [Mga Workflow](./workflows.md)
-- I-setup ang [Automations](./automations.md) upang lumikha ng mga paulit-ulit na gawain nang awtomatiko
-- Gumamit ng mga gawain kasama ang [Service Plans](./plans.md) upang subaybayan ang mga item ng paghahanda ng serbisyo
+## Susunod na mga hakbang
+
+- Ilipat ang mga tao sa pamamagit ng isang multi-step process na may [Workflows](./workflows.md)
+- Gamitin ang [Workflows](./workflows.md) upang ilipat ang mga tao sa pamamagit ng mga repeatable processes nang awtomatiko
+- Gamitin ang mga task kasama ang [Service Plans](./plans.md) upang subaybayan ang mga service preparation action items

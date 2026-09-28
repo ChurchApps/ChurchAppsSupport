@@ -2,62 +2,62 @@
 title: "Pag-validate ng Plano at Mga Notification"
 ---
 
-# Pag-validate ng Plano at Mga Notification sa Boluntaryo
+# Pag-validate ng Plano at Mga Notification sa Volunteer
 
 <div class="article-intro">
 
-Awtomatikong sinusuri ng B1 Admin ang iyong mga plano para sa mga problema bago dumating ang Linggo — mga hindi napunang posisyon, mga conflict sa scheduling, at mga boluntaryo na nag-block ng petsang iyon. Kapag maayos na ang lahat, maaari mong i-notify ang buong team mo sa isang click lang.
+Ang B1 Admin ay awtomatikong sinusuri ang iyong mga plan para sa mga problema bago ang Linggo — walang pulong na posisyon, scheduling conflicts, at mga volunteer na nag-block out ng petsa. Kapag ang lahat ay mukhang maganda, maaari mong abisuhan ang buong team na may isang klik lamang.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago ka magsimula</h4>
 
-- Gumawa ng [plano ng serbisyo](./plans.md) at mag-assign ng mga boluntaryo sa mga posisyon
-- Magdagdag ng [oras ng serbisyo](./plans.md) sa plano para masuri ng conflict detection ang mga overlap
-- Tiyaking naka-install ang B1 Mobile app sa mga boluntaryo para makatanggap ng push notification
+- Lumikha ng isang [service plan](./plans.md) at italagang mga volunteer sa mga posisyon
+- Magdagdag ng [service times](./plans.md) sa plan upang ang conflict detection ay makapagsuri para sa mga overlap
+- Siguraduhin na ang mga volunteer ay may naka-install na B1 Mobile app upang makatanggap ng push notifications
 
 </div>
 
-## Ang Validation Panel
+## Ang validation panel
 
-Ang bawat plano ay may **Validation** panel na awtomatikong tumatakbo habang binubuo mo ito. Sinusuri nito ang tatlong bagay:
+Ang bawat plan ay may isang **Validation** panel na tumatakbo nang awtomatiko habang itinayo mo ito. Ito ay susumusubaybay sa tatlong bagay:
 
-### Mga hindi napunang posisyon
-Kung ang isang posisyon ay nangangailangan ng mas maraming tao kaysa sa kasalukuyang naka-assign, ililista ng validation panel kung ano pa ang kailangan — halimbawa, *"Sound Tech: 1 pang tao ang kailangan."* Makikita mo agad kung ang iyong plano ay may kumpletong tauhan bago dumating ang linggo.
+### Unfilled Positions
+Kung ang isang posisyon ay nangangailangan ng higit pang mga tao kaysa sa kasalukuyang itinalagang mga hakbang, ang validation panel ay nagsasabing kung ano pa ang kailangan — halimbawa, *"Sound Tech: 1 more person needed."* Maaari mong makita sa isang sulyap kung ang iyong plan ay ganap na staffed bago ang linggo ay dumating.
 
-### Mga conflict sa scheduling
-Kung ang isang boluntaryo ay naka-assign sa dalawang posisyon na magkakapatong sa oras sa loob ng parehong plano, iha-highlight ng validation panel ang conflict — halimbawa, *"Jane Smith: conflict sa oras sa pagitan ng Worship Leader at Children's Check-in sa panahon ng Sunday Service."* Nahuhuli nito ang mga double-booking bago sila maging problema sa umaga ng Linggo.
+### Scheduling Conflicts
+Kung ang isang volunteer ay itinalagang sa dalawang posisyon na nagsasapilitanan ng oras sa loob ng parehong plan, ang validation panel ay nagbibigay ng flag sa conflict — halimbawa, *"Jane Smith: time conflict between Worship Leader at Children's Check-in during Sunday Service."* Ito ay nakakahuli ng double-bookings bago sila ay nagiging Sunday morning problema.
 
-### Mga blockout date
-Maaaring mag-set ang mga boluntaryo ng mga petsa kung kailan sila hindi available sa B1 Mobile. Kung may naka-assign sa isang plano na nahuhulog sa isa sa kanilang mga blockout date, awtomatikong ipinapakita ng validation panel ang conflict para makahanap ka ng kapalit.
+### Blockout Dates
+Ang mga volunteer ay maaaring magtakda ng mga petsa na sila ay hindi available sa B1 Mobile. Kung ang isang taong ay itinalagang sa isang plan na bumabagay sa loob ng isa sa kanilang blockout dates, ang validation panel ay lumalabas sa conflict nang awtomatiko upang maaari mong mahanap ang isang kapalit.
 
-### Mga cross-plan conflict
-Sinusuri rin ng validation ang lahat ng iyong mga plano nang sabay-sabay. Kung ang parehong boluntaryo ay naka-assign sa dalawang magkaibang plano na magkakapatong sa oras — halimbawa, isang 9am na serbisyo at isang 10am na serbisyo na parehong tumatagal hanggang 10:30am — iha-flag ng B1 Admin ang taong iyon bilang double-booked sa mga plano.
+### Cross-Plan Conflicts
+Ang validation ay sumusuri din sa lahat ng iyong mga plan nang sabay-sabay. Kung ang parehong volunteer ay itinalagang sa dalawang magkakaibang plano na nagsasapilitanan ng oras — halimbawa, isang 9am service at isang 10am service na parehong tumatakbo hanggang 10:30am — ang B1 Admin ay magbibigay ng flag sa taong iyon bilang double-booked sa mga plan.
 
 :::tip
-Hindi mo kailangang gumawa ng anuman para patakbuhin ang validation — awtomatiko itong nag-a-update sa tuwing magdadagdag o magbabago ka ng assignment. Bantayan lang ang panel habang binubuo mo ang plano.
+Hindi mo kailangang gumawa ng kahit ano upang magpatakbo ng validation — ito ay nag-update nang awtomatiko sa bawat pagkakataon na ikaw ay nagdagdag o nagbago ng isang assignment. Manatiling bantay lang sa panel habang binubuo mo ang plan.
 :::
 
-## Pag-notify sa mga boluntaryo
+## Abiso sa mga volunteer
 
-Kapag handa na ang iyong plano, maaari mong i-notify ang lahat ng naka-assign na boluntaryo nang sabay-sabay mula mismo sa validation panel.
+Kapag handa na ang iyong plan, maaari mong abisuhan ang lahat ng itinalagang volunteer nang sabay-sabay direkta mula sa validation panel.
 
-1. Buksan ang plano at mag-scroll pababa sa **Validation** panel
-2. Kung may mga hindi pa na-notify na boluntaryo, makikita mo ang isang link na nagpapakita kung ilan ang kailangang i-notify (hal., *"I-notify ang 8 boluntaryo"*)
-3. I-click ang link para magpadala ng push notification sa lahat ng hindi pa na-notify
-4. Makakatanggap ang mga boluntaryo ng notification sa kanilang telepono na nagsasabing sila ay na-schedule at hinihikayat silang kumpirmahin ang kanilang assignment
+1. Buksan ang plan at i-scroll sa **Validation** panel
+2. Kung may mga hindi pa na-notify na volunteer, makikita mo ang isang link na nagpapakita kung gaano karami ang kailangan i-notify (hal., *"Notify 8 volunteers"*)
+3. I-click ang link upang magpadala ng push notifications sa lahat na hindi pa na-notify
+4. Ang mga volunteer ay tumatanggap ng isang notification sa kanilang telepono na nagbibigay-alam sa kanila na sila ay na-schedule at nag-aalok sa kanila na kumpirmahin ang kanilang assignment
 
 :::info
-Ang mga boluntaryo lamang na hindi pa na-notify ang isasama. Kung magdagdag ka ng isang tao sa plano sa ibang pagkakataon, muling lalabas ang link para ma-notify mo ang bagong dagdag nang hindi muling nino-notify ang natitirang team.
+Lamang ang mga volunteer na hindi pa na-notify ang kasama. Kung magdagdag ka ng isang tao sa plan mamaya, ang link ay muling lalitaw upang maaari mong abisuhan ang bagong karagdagan nang hindi muli-notify ang natitirang team.
 :::
 
 :::warning
-Ang mga boluntaryo ay kailangang may naka-install na B1 Mobile app at naka-enable ang mga notification para makatanggap ng push notification. Tingnan ang [gabay sa Mga Notification](/docs/b1-mobile/community/notifications) para sa kung paano mai-enable ito ng mga boluntaryo sa kanilang device.
+Ang mga volunteer ay dapat na may naka-install na B1.church mobile experience (PWA sa kanilang home screen, o ang deprecated B1 Mobile native app para sa mga gumagamit na mayroon pa ito) na may enabled notifications upang makatanggap ng push notifications. Tingnan ang [Installing as an App (PWA)](/docs/b1-church/getting-started/installing-pwa) para sa mga instruction sa pag-setup.
 :::
 
 ## Mga kaugnay na artikulo
 
-- [Mga Plano ng Serbisyo](./plans.md)
-- [Mga Automation](./automations.md)
-- [Mga Notification ng B1 Mobile](/docs/b1-mobile/community/notifications)
+- [Service Plans](./plans.md)
+- [Workflows](./workflows.md)
+- [Installing the B1.church PWA](/docs/b1-church/getting-started/installing-pwa)

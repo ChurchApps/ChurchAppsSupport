@@ -6,31 +6,31 @@ title: "Multi-Währungs-Unterstützung"
 
 <div class="article-intro">
 
-Mit der Multi-Währungs-Funktion von B1 können Ihre Kirchengemeinde Spenden in verschiedenen Währungen akzeptieren und nachverfolgen. Dies ist besonders nützlich für Kirchengemeinden mit internationalen Mitgliedern, Missionaren oder mehreren Standorten in verschiedenen Ländern.
+Die Multi-Währungs-Funktion von B1 ermöglicht es deiner Kirche, Spenden in verschiedenen Währungen anzunehmen und zu verfolgen. Dies ist besonders nützlich für Kirchen mit internationalen Mitgliedern, Missionaren oder mehreren Standorten in verschiedenen Ländern.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du beginnst</h4>
 
-- Sie benötigen die Berechtigung zur Verwaltung von Spenden. Weitere Details finden Sie unter [Rollen & Berechtigungen](../people/roles-permissions.md).
-- Richten Sie Ihre [Online-Spenden](./online-giving-setup.md) mit Stripe ein, das Multi-Währungs-Transaktionen unterstützt.
-- Verstehen Sie die Anforderungen Ihrer Kirchengemeinde für die Verwaltung mehrerer Währungen.
+- Du brauchst Berechtigung zur Verwaltung von Spenden. Siehe [Rollen und Berechtigungen](../people/roles-permissions.md) für Details.
+- Richte dein [Online-Spenden](./online-giving-setup.md) mit Stripe ein, das Multi-Währungs-Transaktionen unterstützt.
+- Verstehe die Buchhaltungsbedürfnisse deiner Kirche für die Handhabung mehrerer Währungen.
 
 </div>
 
 ## Multi-Währung aktivieren
 
-Multi-Währungs-Unterstützung ist jetzt standardmäßig in B1 aktiviert. Einmal aktiviert:
+Multi-Währungs-Unterstützung ist jetzt standardmäßig in B1 aktiviert. Sobald aktiviert:
 
-- Mitglieder können in ihrer lokalen Währung spenden, wenn sie online spenden
-- Sie können Spenden manuell in jeder Währung erfassen
-- Spendenberichte zeigen Beträge in ihrer ursprünglichen Währung an
-- Stripe verarbeitet die Währungsumrechnung automatisch für Online-Spenden
+- Mitglieder können bei Online-Spenden in ihrer lokalen Währung spenden
+- Du kannst Spenden manuell in jeder Währung aufzeichnen
+- Spendendberichte zeigen Beträge in ihrer ursprünglichen Währung
+- Stripe behandelt Währungsumrechnung automatisch für Online-Spenden
 
 ## Unterstützte Währungen
 
-Das System unterstützt alle wichtigen Weltwährungen, darunter:
+Das System unterstützt alle major Weltwährungen, einschließlich:
 
 - **USD** -- US-Dollar
 - **EUR** -- Euro
@@ -42,89 +42,92 @@ Das System unterstützt alle wichtigen Weltwährungen, darunter:
 - **INR** -- Indische Rupie
 - **CNY** -- Chinesischer Yuan
 - **JPY** -- Japanischer Yen
-- und viele mehr...
+- Und viele mehr...
 
-Die verfügbaren Währungen für Online-Spenden hängen von den unterstützten Währungen Ihres Stripe-Kontos ab.
+Die verfügbaren Währungen für Online-Spenden hängen von den unterstützten Währungen deines Stripe-Kontos ab.
 
-## Spenden in verschiedenen Währungen erfassen
+## Spenden in verschiedenen Währungen aufzeichnen
 
 ### Online-Spenden
 
 Wenn ein Mitglied online über Stripe spendet:
 
-1. Es wählt seine bevorzugte Währung an der Kasse aus
+1. Es wählt seine bevorzugte Währung an der Kasse
 2. Stripe verarbeitet die Zahlung in dieser Währung
-3. Die Spende wird in B1 mit dem ursprünglichen Währungsbetrag erfasst
-4. Stripe führt automatisch alle erforderlichen Währungsumrechnungen zu Ihrer Standard-Währung durch
+3. Die Spende wird in B1 mit dem ursprünglichen Währungsbetrag aufgezeichnet
+4. Stripe behandelt automatisch jede erforderliche Währungsumrechnung in die Standardwährung deines Kontos
 
-### Manuelle Eintragung
+### Manuelle Eingabe
 
-Um eine Bargeld- oder Scheckspende in einer anderen Währung zu erfassen:
+Um eine Bar- oder Scheckspende in einer anderen Währung aufzuzeichnen:
 
-1. Navigieren Sie zu **Spenden** in B1 Admin
-2. Klicken Sie auf **Spende hinzufügen**
-3. Wählen Sie die Währung aus dem Währungs-Dropdown aus
-4. Geben Sie den Betrag in dieser Währung ein
-5. Füllen Sie die restlichen Spendendetails aus
-6. Klicken Sie auf **Speichern**
+1. Navigiere zu **Spenden** in B1 Admin
+2. Klicke auf **Spende hinzufügen**
+3. Wähle die Währung aus der Dropdown-Liste Währung
+4. Gib den Betrag in dieser Währung ein
+5. Vervollständige die übrigen Spendendetails
+6. Klicke auf **Speichern**
 
-## Multi-Währungs-Spenden ansehen
+## Multi-Währungs-Spenden anzeigen
 
-### Spendenberichte
+### Spendendberichte
 
-Spendenberichte zeigen Beträge in ihrer ursprünglichen Währung an:
+Spendendberichte zeigen Beträge in ihrer ursprünglichen Währung:
 
-- Einzelne Spendendatensätze zeigen den Währungscode an (z.B. "$100,00 USD")
-- Gesamtbeträge werden pro Währung berechnet
-- Sie können nach bestimmten Währungen filtern
+- Einzelne Spendendatensätze zeigen den Währungscode (z. B. „$100,00 USD")
+- Summen werden pro Währung berechnet
+- Du kannst nach bestimmten Währungen filtern
 
-### Spendenbestätigungen
+### Umgerechnete Summen
 
-Bei der Erstellung von Spendenbestätigungen:
+Überall dort, wo B1 eine einzige kombinierte Summe anzeigt -- die Spendendzusammenfassungs-KPI-Karten, eine Chargensumme und eine Fondssumme -- werden Spenden, die in einer anderen Währung als der Standardwährung deiner Kirche aufgezeichnet wurden, in deine Kirchenwährung unter Verwendung aktueller Wechselkurse umgerechnet, so dass die Summe eine einzelne aussagekräftige Zahl ist, anstatt verschiedene Währungen zusammenzurechnen. Ein Vermerk **Umgerechnet zu aktuellen Wechselkursen** wird unter der Summe angezeigt, wenn eine Umrechnung angewendet wurde. Einzelne Spendendposten werden weiterhin in ihrer ursprünglichen Währung angezeigt.
 
-- Jede Spende wird mit ihrer ursprünglichen Währung angezeigt
-- Gesamtbeträge werden nach Währung aufgeschlüsselt
-- Mitglieder sehen genau, was sie in jeder Währung gegeben haben
+### Spendendbestätigungen
+
+Beim Generieren von Spendendbestätigungen:
+
+- Jede Spende erscheint mit ihrer ursprünglichen Währung
+- Summen werden nach Währung aufgeschlüsselt
+- Mitglieder sehen genau, was sie in jeder Währung gespendet haben
 
 ## Stripe-Integration
 
 Für Online-Spenden verwaltet Stripe Multi-Währungs-Transaktionen:
 
-- **Automatische Umrechnung** -- Stripe rechnet Währungen zu Ihrer Standard-Währung um
+- **Automatische Umrechnung** -- Stripe rechnet Währungen in die Standardwährung deines Kontos um
 - **Wechselkurse** -- Stripe verwendet aktuelle Marktwechselkurse
-- **Gebühren** -- Die Währungsumrechnung kann zusätzliche Stripe-Gebühren verursachen
-- **Auszahlungswährung** -- Gelder werden in Ihrer Standard-Währung eingezahlt
+- **Gebühren** -- Währungsumrechnung kann zusätzliche Stripe-Gebühren verursachen
+- **Auszahlungswährung** -- Gelder werden in der Standardwährung deines Kontos eingezahlt
 
 :::info
-Überprüfen Sie Ihr Stripe-Dashboard, um aktuelle Umrechnungskurse und alle mit Multi-Währungs-Transaktionen verbundenen Gebühren anzuzeigen.
+Überprüfe dein Stripe-Dashboard, um aktuelle Wechselkurse und eventuelle Gebühren im Zusammenhang mit Multi-Währungs-Transaktionen zu sehen.
 :::
 
-## Rechnungslegung und Buchhaltung
+## Buchhaltungsüberlegungen
 
 Bei der Arbeit mit mehreren Währungen:
 
-- **Führung von Aufzeichnungen** -- Behalten Sie die Spendendaten und Währungen in ihrer ursprünglichen Form, um genaue Berichte zu erstellen
-- **Wechselkurse** -- Beachten Sie, dass die Umrechnungskurse von Stripe möglicherweise von Ihren Bankenkursen abweichen
-- **Steuerquittungen** -- Konsultieren Sie Ihren Buchhalter darüber, wie Spenden in verschiedenen Währungen für Steuerzwecke gemeldet werden
-- **Mittelzuordnung** -- Sie können Spenden unabhängig von der Währung zu bestimmten Mitteln zuordnen
+- **Aufzeichnungsverwaltung** -- Verfolge ursprüngliche Spendendbeträge und Währungen für genaue Berichterstattung
+- **Wechselkurse** -- Beachte, dass Stripes Umrechnungskurse möglicherweise von den Kursen deiner Bank abweichen
+- **Steuernachweise** -- Wende dich an deinen Buchhalter, um zu erfahren, wie du Spenden in verschiedenen Währungen zu Steuerzwecken meldest
+- **Fondsallokation** -- Du kannst Spenden unabhängig von der Währung bestimmten Fonds zuordnen
 
-## Best Practices
+## Bewährte Verfahren
 
-- **Standard-Währung** -- Legen Sie Ihre primäre Kirchengemeinde-Währung als Standard für die meisten Transaktionen fest
-- **Klare Kommunikation** -- Teilen Sie den Spendern mit, welche Währung sie während des Checkouts spenden
-- **Konsistente Berichterstattung** -- Entscheiden Sie, ob Sie in ursprünglichen Währungen berichten oder für Zusammenfassungen in eine einzige Währung umrechnen
-- **Regelmäßige Abstimmung** -- Stimmen Sie Stripe-Auszahlungen mit Ihren Spendendatensätzen ab und berücksichtigen Sie dabei Währungsumrechnungen
+- **Standardwährung** -- Stelle deine primäre Kirchenwährung als Standard für die meisten Transaktionen ein
+- **Klare Kommunikation** -- Teile Spendern mit, in welcher Währung sie während des Abrechnungsvorgangs spenden
+- **Konsistente Berichterstattung** -- Kombinierte Summen werden immer automatisch in deine Kirchenwährung umgerechnet; verwende den Währungsfilter pro Spende, wenn du ursprüngliche Beträge sehen musst
+- **Regelmäßige Abstimmung** -- Stimme Stripe-Auszahlungen mit deinen Spendendaufzeichnungen ab und berücksichtige dabei Währungsumrechnungen
 
 ## Einschränkungen
 
-- Die Währungsumrechnung wird von Stripe nur für Online-Spenden verwaltet
-- Manuelle Spenden werden so erfasst, wie sie eingegeben werden, ohne automatische Umrechnung
-- Historische Berichte zeigen Spenden in ihrer ursprünglichen Währung
-- Gesamtberechnungen werden pro Währung durchgeführt, nicht währungsübergreifend
+- Währungsumrechnung für die Zahlungsabwicklung wird von Stripe nur für Online-Spenden durchgeführt; manuell eingegebene Spenden werden ohne automatische Umrechnung aufgezeichnet
+- Historische Berichte und einzelne Spendendposten zeigen immer die ursprüngliche Währung, in der das Geschenk aufgezeichnet wurde
+- Kombinierte Summen (KPI-Karten, Chargensummen, Fondssummen) werden unter Verwendung aktueller Wechselkurse in deine Kirchenwährung umgerechnet -- diese Kurse können sich leicht von den Kursen deiner Bank oder Stripes zum Zeitpunkt der Fondsbeteiligung unterscheiden
 
 ## Verwandte Artikel
 
-- [Online-Spenden einrichten](./online-giving-setup.md) -- Konfigurieren Sie Stripe zur Annahme von Spenden
-- [Spenden erfassen](./recording-donations.md) -- Geben Sie Spendendatensätze manuell ein
-- [Spendenberichte](./donation-reports.md) -- Generieren und sehen Sie Spendendaten
-- [Spendenbestätigungen](./giving-statements.md) -- Erstellen Sie Jahresend-Spendenbestätigungen
+- [Online-Spenden einrichten](./online-giving-setup.md) -- Konfiguriere Stripe zum Akzeptieren von Spenden
+- [Spenden aufzeichnen](./recording-donations.md) -- Erfasse manuell Spendendatensätze
+- [Spendendberichte](./donation-reports.md) -- Generiere und zeige Spendendzusammenfassungen
+- [Spendendbestätigungen](./giving-statements.md) -- Erstelle Jahresend-Spendendbestätigungen

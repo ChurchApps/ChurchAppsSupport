@@ -1,66 +1,68 @@
 ---
-title: "Gestione Invii"
+title: "Gestione degli Invii"
 ---
 
-# Managing Submissions
+# Gestione degli Invii
 
 <div class="article-intro">
 
-Once your form is live, submissions will start coming in. The Submissions tab lets you review every response, track who has submitted, and use the data Per follow up with your congregation in a timely manner.
+Una volta che il tuo modulo è attivo, gli invii inizieranno ad arrivare. La scheda Invii ti permette di rivedere ogni risposta, tracciare chi ha inviato, e utilizzare i dati per fare un follow-up con la tua congregazione in modo tempestivo.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- [Create a form](./creating-forms.md) with at least one question
-- Share the form via its public URL or embed it on your [website](../website/managing-pages.md)
+- [Crea un modulo](./creating-forms.md) con almeno una domanda
+- Condividi il modulo tramite il suo URL pubblico o incorporalo nel tuo [sito web](../website/managing-pages.md)
 
 </div>
 
-## Viewing Submissions
+## Visualizzazione degli invii
 
-1. Navigate Per **Forms** from the main menu.
-2. Fai clic on the form you want Per review.
-3. Go Per the **Submissions** tab.
+1. Apri **Persone** dal menu della sezione, quindi fai clic su **Moduli** nella barra di navigazione.
+2. Fai clic sul modulo che vuoi rivedere.
+3. Vai alla scheda **Invii**.
 
-You will see a list of all responses received for that form. Each submission shows the respondent's information and the Data it was submitted.
+Vedrai un elenco di tutte le risposte ricevute per quel modulo. Ogni invio mostra le informazioni del rispondente e la data in cui è stato inviato.
 
-## Reviewing Individual Submissions
+## Revisione dei singoli invii
 
-Fai clic on any submission Per Visualizza the full details. You will see all the answers the person provided for each question on the form.
+Fai clic su qualsiasi invio per visualizzare i dettagli completi. Vedrai tutte le risposte che la persona ha fornito per ogni domanda sul modulo.
 
-## How Submissions Are Collected
+Fai clic sull'**icona di stampa** accanto all'invio per stampare le risposte già compilate di quella persona -- utile per un file cartaceo o una versione firmata che hai bisogno di tenere a portata di mano. Questo è separato da [stampa un modulo vuoto](./creating-forms.md#printing-a-blank-form); stampa le risposte già inviate di una persona, non una copia vuota. La stessa icona di stampa appare ovunque un invio viene mostrato, incluso nel [profilo di una persona](../people/adding-people.md#working-with-forms).
 
-Submissions can come in through several channels:
+## Come vengono raccolti gli invii
 
-- **Public URL** -- If your form has a public URL (Stand Alone forms), anyone with the link can Invia a response. Share the URL via email, social media, or text messages.
-- **Embedded on your website** -- Forms embedded on your B1 website collect submissions automatically when visitors fill them out.
-- **Internal use** -- Staff and Volontari can also Invia forms on behalf of others directly within B1 Admin.
+Gli invii possono provenire attraverso diversi canali:
+
+- **URL pubblico** -- Se il tuo modulo ha un URL pubblico (moduli Autonomi), chiunque abbia il link può inviare una risposta. Condividi l'URL via email, social media o messaggi di testo.
+- **Incorporato nel tuo sito web** -- I moduli incorporati nel tuo sito web B1 raccolgono automaticamente gli invii quando i visitatori li compilano.
+- **Uso interno** -- Lo staff e i volontari possono anche inviare moduli per conto di altri direttamente all'interno di B1 Admin.
 
 :::tip
-Check the **Submissions** tab regularly for forms like visitor cards or prayer requests, so you can follow up promptly.
+Controlla regolarmente la scheda **Invii** per moduli come schede di visitatori o richieste di preghiera, in modo da poter fare un follow-up tempestivamente.
 :::
 
-## Using Submission Data
+## Utilizzo dei dati di invio
 
-The data collected through forms can help you:
+I dati raccolti attraverso i moduli possono aiutarti a:
 
-- Track Evento registrations and plan accordingly
-- Follow up with visitors or new Membri
-- Collect survey feedback for ministry planning
-- Process payments for Eventi or programs
+- Tracciare le registrazioni agli eventi e pianificare di conseguenza
+- Fare un follow-up con i visitatori o i nuovi membri
+- Raccogliere feedback dei sondaggi per la pianificazione del ministero
+- Elaborare i pagamenti per eventi o programmi
 
 :::info
-Modulo Membri with **Admin** or **Visualizza Only** Ruoli can access the Submissions tab. Make sure the right people on your team have access Per the forms they need by managing Ruoli in the **Membri** tab.
+I membri del modulo con ruoli **Admin** o **Solo visualizzazione** possono accedere alla scheda Invii. Assicurati che le persone giuste del tuo team abbiano accesso ai moduli di cui hanno bisogno gestendo i ruoli nella scheda **Membri**.
 :::
 
 :::tip
-If a **Stand Alone** form is set Per Crea a person record, any submissions matched Per an existing person also show up on that person's own **Forms** tab in the People section — not just People-Digita forms.
+Se un modulo **Autonomo** è impostato per creare un record di persona, gli invii corrispondenti a una persona esistente appaiono anche nella propria scheda **Moduli** della persona nella sezione Persone -- non solo i moduli di tipo Persone.
 :::
 
-## Avanti Steps
+## Passaggi successivi
 
-- Learn how Per build and customize forms in [Creating Forms](./creating-forms.md)
-- Aggiungi people from form submissions Per your [people directory](../people/adding-people.md) for ongoing follow-up
-- [Automatically add submitters to a group](./creating-forms.md#automatically-adding-submitters-to-a-group) so a stand-alone sign-up form builds its own roster
+- Scopri come costruire e personalizzare i moduli in [Creazione di Moduli](./creating-forms.md)
+- Aggiungi persone dagli invii di moduli alla tua [directory delle persone](../people/adding-people.md) per il follow-up continuo
+- [Aggiungi automaticamente i mittenti a un gruppo](./creating-forms.md#automatically-adding-submitters-to-a-group) in modo che un modulo di iscrizione autonomo costruisca il suo proprio roster

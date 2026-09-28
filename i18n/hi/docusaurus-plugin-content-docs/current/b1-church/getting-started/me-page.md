@@ -2,51 +2,59 @@
 title: "मेरा पृष्ठ"
 ---
 
-# The Me Page
+# मेरा पृष्ठ
 
 <div class="article-intro">
 
-The **Me** page is your personal dashboard in the member portal — one chronological view of everything coming up for you: serving assignments, event registrations, and your groups' upcoming events, plus your most recent notifications.
+**मेरा** पृष्ठ सदस्य पोर्टल में आपका व्यक्तिगत डैशबोर्ड है -- आपके लिए आने वाली हर चीज का एक कालानुक्रमिक दृश्य: सेवा असाइनमेंट, ईवेंट पंजीकरण, और आपके समूहों की आने वाली घटनाएं, साथ ही आपकी सबसे हाल की सूचनाएं।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरुआत करने से पहले</h4>
 
-- You need to be [logged in](./logging-in.md) — the Me page only appears for signed-in members
+- आपको [लॉगिन](./logging-in.md) होना आवश्यक है -- मेरा पृष्ठ केवल हस्ताक्षरित सदस्यों के लिए दिखाई देता है
 
 </div>
 
-## Opening the Me Page
+## मेरा पृष्ठ खोलना
 
-Open the portal menu and tap **Me**. The page loads with your personal information organized into sections.
+पोर्टल मेनू खोलें और **मेरा** पर टैप करें। पृष्ठ आपकी व्यक्तिगत जानकारी के साथ अनुभागों में आयोजित होकर लोड होता है।
 
-## Upcoming
+## आने वाला
 
-The **Upcoming** section lists everything ahead of you in date order, each item tagged with a type chip:
+**आने वाला** अनुभाग आपके सामने सब कुछ तारीख के क्रम में सूचीबद्ध करता है, प्रत्येक आइटम एक प्रकार की चिप के साथ टैग किया जाता है:
 
-- **Serving** -- Your volunteer positions on upcoming service plans. Tap one to open the plan.
-- **Registration** -- Events you have [registered for](../events/registering). Tap through to your [registrations](../events/my-registrations).
-- **Event** -- Upcoming events from groups you belong to. Tap one to open the group's events.
+- **सेवा** -- आने वाली सेवा योजनाओं पर आपकी स्वेच्छासेवक स्थिति। योजना खोलने के लिए एक पर टैप करें।
+- **पंजीकरण** -- ईवेंट जिनके लिए आप [पंजीकृत](../events/registering) हैं। अपने [पंजीकरणों](../events/my-registrations) के लिए के माध्यम से।
+- **ईवेंट** -- आप जिन समूहों से संबंधित हैं उनसे आने वाली घटनाएं। समूह की घटनाओं को खोलने के लिए एक पर टैप करें।
 
-If nothing is scheduled, you'll see "Nothing coming up" — your serving times, events, and registrations will appear here as they are scheduled.
+यदि कुछ भी शेड्यूल नहीं है, तो आप "कुछ भी आने वाला नहीं" देखेंगे -- आपके सेवा समय, घटनाएं, और पंजीकरण यहां दिखाई देंगे जब वे शेड्यूल किए जाएंगे।
 
-## Recent Notifications
+## हाल की सूचनाएं
 
-Below Upcoming, the **Recent Notifications** section shows your latest notifications so you can catch up without opening each area of the portal.
+आने वाले के नीचे, **हाल की सूचनाएं** अनुभाग आपकी नवीनतम सूचनाएं दिखाता है ताकि आप प्रत्येक क्षेत्र को खोले बिना पकड़ सकें।
 
-## Shortcuts
+## शॉर्टकट
 
-When your church has bookable rooms or resources, the Me page also shows a **Shortcuts** section:
+मेरे पृष्ठ के शीर्ष पर **शॉर्टकट** अनुभाग उन स्थानों से जुड़ता है जहां आप सबसे अधिक जाते हैं:
 
-- **Request an Event** -- Ask to hold an event with the rooms and equipment you need. See [Requesting Events & Rooms](../events/requesting-events).
-- **My Requests** -- Track the status of your requests and cancel pending ones.
+- **प्रोफाइल संपादित करें** -- [अपनी प्रोफाइल संपादित करना](./editing-your-profile.md) देखें।
+- **सूचना वरीयताएं** -- [सूचना वरीयताएं](./notification-preferences.md) देखें।
+- **संदेश** -- आपकी निजी बातचीत।
+- **दान** -- ऑनलाइन दान दें और अपने दान का इतिहास देखें।
+- **पंजीकरण** -- ईवेंट जिनके लिए आप पंजीकृत हैं।
 
-If your church hasn't set up rooms or resources, these shortcuts are hidden.
+यदि आपके चर्च के पास बुकिंग योग्य कमरे या संसाधन हैं, तो दो और शॉर्टकट दिखाई देते हैं:
 
-## Related Articles
+- **एक ईवेंट का अनुरोध करें** -- आप जिन कमरे और उपकरणों की आवश्यकता है उसके साथ एक ईवेंट रखने के लिए कहें। [ईवेंट और कमरों का अनुरोध](../events/requesting-events) देखें।
+- **मेरे अनुरोध** -- अपने अनुरोधों की स्थिति ट्रैक करें और लंबित लोगों को रद्द करें।
 
-- [Navigating B1App](./navigating) -- The member portal layout
-- [Requesting Events & Rooms](../events/requesting-events) -- Submit and track room/resource requests
-- [My Registrations](../events/my-registrations) -- Manage your event registrations
-- [Volunteer Signup](../serving/volunteer-signup) -- How serving assignments work
+यदि आपके चर्च ने कमरे या संसाधन सेट अप नहीं किए हैं, तो ये शॉर्टकट छिपे हैं।
+
+## संबंधित लेख
+
+- [B1App नेविगेट करना](./navigating) -- सदस्य पोर्टल लेआउट
+- [ईवेंट और कमरों का अनुरोध करना](../events/requesting-events) -- कमरे/संसाधन अनुरोध सबमिट करें और ट्रैक करें
+- [मेरे पंजीकरण](../events/my-registrations) -- अपने ईवेंट पंजीकरण प्रबंधित करें
+- [स्वेच्छासेवक साइन अप](../serving/volunteer-signup) -- सेवा असाइनमेंट कैसे काम करते हैं

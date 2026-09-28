@@ -6,53 +6,54 @@ title: "Preferências de Notificação"
 
 <div class="article-intro">
 
-Notification preferences let you decide which notifications you receive from your church and how you receive them -- push notifications, email, or the in-app bell. You can fine-tune each type of notification, set quiet hours, or mute everything at once, all from one screen.
+Preferências de notificação permitem que você decida quais notificações você recebe de sua igreja e como você as recebe -- notificações push, email ou o sino no-app. Você pode ajustar bem cada tipo de notificação, definir horários de silêncio, ou silenciar tudo de uma vez, tudo a partir de uma tela.
 
 </div>
 
-## Opening Your Preferences
+## Abrindo Suas Preferências
 
-1. Open the **Notifications** area (the bell icon) in the B1 member app.
-2. Tap **Notification Preferences**.
+1. Vá para a página **Meu Perfil** e toque em **Preferências de Notificação** sob **Atalhos**.
 
-## Global Controls
+Você também pode tocar no ícone de sino, abrir a aba **Notificações**, tocar em **Visualizar todas as notificações** e então tocar em **Preferências de Notificação** naquela página.
 
-At the top of the screen you'll find settings that apply to everything:
+## Controles Globais
 
-- **Mute all** -- Temporarily pauses all non-essential notifications.
-- **Push notifications** -- Turns push notifications on or off for your device.
-- **Email frequency** -- Choose how email notifications arrive:
-  - **Per notification** -- Send an email as things happen.
-  - **Daily digest** -- Bundle them into one daily email.
-  - **Never** -- Don't send notification emails.
-- **Quiet hours** -- Set a start and end time (and your time zone) when you'd rather not be disturbed. Non-urgent notifications wait until quiet hours are over.
+Na parte superior da tela você encontrará configurações que se aplicam a tudo:
 
-## Choosing Notifications by Type
+- **Silenciar tudo** -- Pausa temporariamente todas as notificações não essenciais.
+- **Notificações push** -- Ativa ou desativa notificações push para seu dispositivo.
+- **Frequência de email** -- Escolha como as notificações de email chegam:
+  - **Por notificação** -- Envie um email conforme as coisas acontecem.
+  - **Resumo diário** -- Agrupe-as em um email diário.
+  - **Nunca** -- Não envie emails de notificação.
+- **Horários de silêncio** -- Defina uma hora de início e término (e seu fuso horário) quando você preferiria não ser perturbado. Notificações não urgentes esperam até que os horários de silêncio terminem.
 
-Below the global controls is a grid of notification types. For each one you can turn on or off the channels you want:
+## Escolhendo Notificações por Tipo
 
-- **Push** -- A notification on your device.
-- **Email** -- A message to your inbox.
-- **In-App** -- The bell/badge inside the app.
+Abaixo dos controles globais há uma grade de tipos de notificação. Para cada uma você pode ativar ou desativar os canais que deseja:
 
-Common types include **Event Reminders**, **Serving & Schedule**, **Direct Messages**, **Group Chat**, **Prayer Requests**, and **Church Announcements**. For example, you might keep push notifications on for Direct Messages but turn them off for Announcements.
+- **Push** -- Uma notificação em seu dispositivo.
+- **Email** -- Uma mensagem para sua caixa de entrada.
+- **No-App** -- O sino/badge dentro do app.
+
+Tipos comuns incluem **Lembretes de Evento**, **Serviço e Agendamento**, **Mensagens Diretas**, **Chat de Grupo**, **Pedidos de Oração** e **Anúncios da Igreja**. Por exemplo, você pode manter notificações push ativadas para Mensagens Diretas, mas desativá-las para Anúncios.
 
 :::info
-A few notification types are **always on** and can't be turned off -- **Account & Security**, **Giving Receipts & Statements**, and **Check-In Safety Alerts**. These are required for your security and for legal reasons, so they show a small lock icon. Everything else is yours to control.
+Alguns tipos de notificação estão **sempre ativados** e não podem ser desativados -- **Conta e Segurança**, **Recibos e Extratos de Doações** e **Alertas de Segurança de Registro**. Estes são necessários para sua segurança e por razões legais, então mostram um ícone de cadeado pequeno. Tudo o mais está sob seu controle.
 :::
 
-Some types are **off by default** (such as promotional or fundraising messages) and only reach you if you choose to opt in.
+Alguns tipos estão **desativados por padrão** (como mensagens promocionais ou de arrecadação de fundos) e apenas chegam a você se você escolher aceitar.
 
-## Saving Your Changes
+## Salvando Suas Alterações
 
-After adjusting your preferences, tap **Save**. Your changes take effect right away and apply everywhere you use B1.
+Depois de ajustar suas preferências, toque em **Salvar Preferências**. Suas mudanças entram em vigor imediatamente e se aplicam em todos os lugares onde você usa B1.
 
 :::tip
-Time-sensitive notifications -- like a security alert or a child check-in safety message -- still reach you even during quiet hours. Everyday updates wait until quiet hours end.
+Notificações sensíveis ao tempo -- como um alerta de segurança ou uma mensagem de segurança de registro de criança -- ainda chegam a você mesmo durante horários de silêncio. Atualizações diárias esperam até que os horários de silêncio terminem.
 :::
 
-## Related
+## Relacionados
 
-- [Volunteer Sign-Up](../serving/volunteer-signup) -- Serving reminders and responding to schedule requests
-- [Registering for Events](../events/registering) -- Sign up for events that send reminders
-- [Installing the App](installing-pwa) -- Add B1 to your device so you can receive push notifications
+- [Inscrição de Voluntário](../serving/volunteer-signup) -- Lembretes de serviço e respondendo a solicitações de agendamento
+- [Registrando-se para Eventos](../events/registering) -- Inscreva-se para eventos que enviam lembretes
+- [Instalando o App](installing-pwa) -- Adicione B1 ao seu dispositivo para que você possa receber notificações push

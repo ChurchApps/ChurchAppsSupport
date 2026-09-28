@@ -37,7 +37,15 @@ Below Upcoming, the **Recent Notifications** section shows your latest notificat
 
 ## Shortcuts
 
-When your church has bookable rooms or resources, the Me page also shows a **Shortcuts** section:
+The **Shortcuts** section at the top of the Me page links to the places you visit most:
+
+- **Edit Profile** -- See [Editing Your Profile](./editing-your-profile.md).
+- **Notification Preferences** -- See [Notification Preferences](./notification-preferences.md).
+- **Messages** -- Your private conversations.
+- **Giving** -- Give online and see your giving history.
+- **Registrations** -- Events you have registered for.
+
+If your church has bookable rooms or resources, two more shortcuts appear:
 
 - **Request an Event** -- Ask to hold an event with the rooms and equipment you need. See [Requesting Events & Rooms](../events/requesting-events).
 - **My Requests** -- Track the status of your requests and cancel pending ones.

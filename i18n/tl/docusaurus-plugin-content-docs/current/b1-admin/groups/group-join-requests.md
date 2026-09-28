@@ -1,114 +1,121 @@
 ---
-title: "Group Join Requests"
+title: "Mga Group Join Requests"
 ---
 
-# Group Join Requests
+# Mga Group Join Requests
 
 <div class="article-intro">
 
-Kapag ang isang grupo ay nakakonfigura na may approval-based join policy, ang mga tao ay maaaring magpadala ng mga kahilingan upang sumali. Ang mga group leaders at administrators ay sinusuri ang mga kahilingan na ito at aprubahan o pagsabihan. Ito ay nagbibigay sa inyong parokya ng kontrol sa membership ng grupo habang ginagawang madali para sa mga tao na ipahayag ang interes nilang sumali.
+Kapag ang isang grupo ay na-configure na may approval-based join policy, ang mga tao ay maaaring magpadala ng mga kahilingan na sumali. Ang mga lider ng grupo at mga administrator ay sinusuri ang mga kahilingan na ito at aprubahan o tumanggihan ang mga ito. Ito ay nagbibigay sa iyong simbahan ng kontrol sa pagiging miyembro ng grupo habang ginagawang madali para sa mga tao na ipahayag ang interes sa pagsali.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago ka magsimula</h4>
 
-- Kailangan ninyo ng pahintulot upang pamahalaan ang mga grupo, o dapat kayong maging lider ng tiyak na grupo. Tingnan ang [Mga Papel at Pahintulot](../people/roles-permissions.md) para sa mga detalye.
-- Ang grupo ay dapat may set na join policy na **Request** (approval required). Tingnan ang [Creating Groups](./creating-groups.md) kung paano makakakonfigure ng join policies.
+- Kailangan mo ng pahintulot upang pamahalaan ang mga grupo, o kailangan mong maging lider ng tiyak na grupo. Makita ang [Roles & Permissions](../people/roles-permissions.md) para sa mga detalye.
+- Ang grupo ay dapat na may join policy nito na nakatakda sa **Request** (kailangan ng pagsang-ayon). Makita ang [Lumilikha ng Mga Grupo](./creating-groups.md) para sa kung paano i-configure ang mga join policy.
 
 </div>
 
-## Pag-unawa sa Join Policies
+## Pag-unawa sa mga Join Policy
 
-Ang mga grupo ay maaaring magkaroon ng tatlong iba't ibang join policies:
+Ang mga grupo ay maaaring magkaroon ng tatlong magkakaibang join policy:
 
-- **Open** -- Ang sinuman ay maaaring sumali kaagad nang walang aprubasyón
-- **Request** -- Ang mga tao ay nagpadala ng join request na nangangailangan ng aprubasyón
-- **Closed** -- Walang nakakapag-request na sumali (ang mga miyembro ay dapat idagdag nang manu-mano)
+- **Open** -- Ang sinuman ay maaaring sumali kaagad nang walang pagsang-ayon
+- **Request** -- Ang mga tao ay nagpadala ng isang join request na nangangailangan ng pagsang-ayon
+- **Closed** -- Walang maaaring humiling na sumali (ang mga miyembro ay dapat na idagdag nang manu-manong)
 
-Kapag ang isang grupo ay gumagamit ng **Request** policy, ang lahat ng join attempts ay dumadaan sa approval workflow na inilalarawan sa pahinang ito.
+Kapag ang isang grupo ay gumagamit ng **Request** policy, ang lahat ng mga pagsubok sa pagsali ay dumaan sa workflow ng pagsang-ayon na inilarawan sa pahinang ito.
 
-## Pagtingin sa Mga Pending Requests
+## Pagsusuri ng mga Pending na Kahilingan
 
-### Para sa Mga Group Leaders
+### Para sa mga Lider ng Grupo
 
 1. Mag-navigate sa **Groups** sa B1 Admin
 2. I-click ang pangalan ng grupo
-3. I-click ang **Join Requests** tab
-4. Makikita ninyo ang lahat ng pending requests para sa gruppong ito
+3. Ang mga pending na kahilingan para sa grupo na ito ay lumilitaw sa tuktok ng tab na **Members**
 
-### Para sa Mga Administrators
+### Para sa mga Administrator
 
-Ang mga administrators na may group management permissions ay maaaring tingnan ang pending requests sa lahat ng mga grupo:
+Ang mga administrator na may mga pahintulot sa pagsasalin ng grupo ay maaaring tingnan ang mga pending na kahilingan sa lahat ng mga grupo:
 
 1. Mag-navigate sa **Groups** sa B1 Admin
-2. Hanapin ang notification badge o pending requests indicator
-3. I-click upang tingnan ang lahat ng pending requests sa buong parokya
+2. I-click ang button na **pending requests** sa page header (halimbawa, "3 pending requests"). Ito ay lumalabas lamang kapag may mga kahilingan na naghihintay.
+3. Suriin ang lahat ng mga pending na kahilingan sa buong simbahan
 
 ## Pagsusuri ng Join Request
 
-Bawat join request ay nagpapakita ng:
+Bawat join request ay nagpapakita:
 
-- **Pangalan at larawan ng tao** -- Ang taong nag-request na sumali
-- **Opsyonal na mensahe** -- Isang personal na mensahe na nagpapaliwanag kung bakit sila gustong sumali (kung ibinigay)
-- **Request date** -- Kailan isinumite ang request
+- **Pangalan at larawan ng tao** -- Ang taong humihingi na sumali
+- **Opsyonal na mensahe** -- Isang personal na mensahe na nagpapaliwanag kung bakit nais nilang sumali (kung ibinigay)
+- **Petsa ng kahilingan** -- Kailan ang kahilingan ay naitala
 
-Upang suriin ang request:
+Upang suriin ang isang kahilingan:
 
-1. Basahin ang mensahe ng tao kung sila ay nagbigay ng isa
+1. Basahin ang mensahe ng tao kung nagbigay sila ng isa
 2. I-click ang pangalan ng tao upang tingnan ang kanilang profile kung kinakailangan
-3. Magpasya kung dapat i-approve o pagsabihan
+3. Magpasya kung aprubahan o tumanggihan
 
-## Pag-apruba ng Request
+## Pag-aprubahan ng isang Kahilingan
 
 1. I-click ang **Approve** sa join request
-2. Ang tao ay agad na idadagdag sa grupo bilang miyembro
-3. Ang nag-request ay makakatanggap ng notification na ang kanilang request ay naaprubahan
-4. Ang request ay minarkahan bilang approved sa system
+2. Ang tao ay kaagad na idinadagdag sa grupo bilang isang miyembro
+3. Ang nag-request ay nakatanggap ng notification na ang kanilang kahilingan ay aprubado
+4. Ang kahilingan ay minarkahan bilang aprubado sa sistema
 
 :::tip
-Kapag nag-apruba kayo ng request, ang tao ay nagiging regular na miyembro ng grupo. Maaari ninyong i-promote sila sa group leader mamaya mula sa [Group Members](./group-members.md) page.
+Kapag aprubahan mo ang isang kahilingan, ang tao ay nagiging isang regular na miyembro ng grupo. Maaari mong i-promote ang mga ito sa lider ng grupo nang huli kung kinakailangan mula sa [Group Members](./group-members.md) page.
 :::
 
-## Pagsabihan ng Request
+## Pagtutanggi ng isang Kahilingan
 
 1. I-click ang **Decline** sa join request
-2. Opsyonal na magbigay ng dahilan para sa pagsabihan (hanggang 500 characters)
+2. Opsyonal na magbigay ng isang dahilan para tumanggihan (hanggang 500 character)
 3. I-click ang **Confirm**
-4. Ang nag-request ay makakatanggap ng notification kasama ang inyong dahilan para sa pagsabihan (kung ibinigay)
-5. Ang request ay minarkahan bilang declined
+4. Ang nag-request ay nakatanggap ng notification na may iyong dahilan sa pagtutanggi (kung ibinigay)
+5. Ang kahilingan ay minarkahan bilang itinanggi
 
 :::info
-Ang pagbibigay ng dahilan para sa pagsabihan ay tumutulong sa tao na maintindihan kung bakit ang kanilang request ay hindi naaprubahan at maaaring hikayatin silang subukan uli mamaya o tuklasin ang iba pang mga grupo.
+Ang pagbibigay ng isang dahilan sa pagtutanggi ay tumutulong sa tao na maunawaan kung bakit ang kanilang kahilingan ay hindi aprubado at maaaring hikayatin silang subukan muli nang huli o tuklasin ang ibang mga grupo.
 :::
+
+## Pag-aprubahan mula sa ang Pahina ng Mga Gawain
+
+Bawat join request ay lumilikha rin ng isang gawain sa ilalim ng **Serving &rarr; My Work**, na may pamagat "*Person* requested to join *Group*." Ito ay nakatalagang sa mga lider ng grupo. Kung ang grupo ay walang lider pa, ito ay napupunta sa anumang staff na may pahintulot ng **Group Members > Edit**, o sa mga admin ng domain ng iyong simbahan kung walang nagkakaroon ng pahintulot na iyon. Ang mga staff at admin na nakakuha ng gawain sa ganitong paraan ay nakakatanggap din ng notification na nag-link direkta dito.
+
+Ang pagbubukas ng gawain ay nagpapakita ng pangalan ng nag-request, ng grupo, at ng kanilang opsyonal na mensahe, na may **Approve** at **Decline** na mga button sa kanang gawain card (Decline ay bumubukas ng parehong opsyonal na dahilan field na inilarawan sa itaas). Ito ay nagbibigay sa mga lider ng pangalawang, notification-driven na paraan upang kumilos sa isang kahilingan nang hindi nag-navigate sa tab ng Join Requests ng grupo.
+
+Ang pagpapasya ng isang kahilingan mula sa alinman sa lugar -- ang tab ng Join Requests ng grupo o ang card ng Mga Gawain nito -- ay nagsasara nito saanman, upang ang mga lider ay hindi kailanman makita ang isang lumang gawain para sa isang kahilingan na inaasikaso na ng isinasagot.
 
 ## Mga Notification
 
-Ang join request system ay awtomatikong nagpapadala ng mga notification:
+Ang sistema ng join request ay awtomatikong nagpadala ng mga notification:
 
-- **Kapag naipadala ang request** -- Lahat ng group leaders ay makakatanggap ng notification
-- **Kapag naaprubahan ang request** -- Ang nag-request ay makakatanggap ng confirmation
-- **Kapag tinanggihan ang request** -- Ang nag-request ay makakatanggap ng notification kasama ang anumang dahilan para sa pagsabihan
+- **Kapag ang isang kahilingan ay naitala** -- Ang lahat ng mga lider ng grupo ay nakakatanggap ng notification. Kung ang grupo ay walang lider, ang mga staff o admin na nakatalagang sa gawain ay isinaabiso sa halip (makita ang itaas).
+- **Kapag ang isang kahilingan ay aprubado** -- Ang nag-request ay nakakatanggap ng confirmation
+- **Kapag ang isang kahilingan ay itinanggi** -- Ang nag-request ay nakakatanggap ng notification na may anumang dahilan sa pagtutanggi
 
-Ang mga notification ay lilitaw sa notification center ng user sa B1.church at sa mobile app.
+Ang mga notification ay lumalabas sa notification center ng user sa B1.church at sa mobile app.
 
-## Pamamahalan ng Mga Requests mula sa Member Side
+## Pag-manage ng mga Kahilingan mula sa ang Bahagi ng Miyembro
 
-Ang mga tao ay maaaring pamahalaan ang kanilang mga join requests mula sa B1.church:
+Ang mga tao ay maaaring pamahalaan ang kanilang sariling mga join request mula sa B1.church:
 
-- Tingnan ang status ng kanilang pending requests sa pahina ng detalye ng grupo
-- Kanselahin ang pending request kung nagbago ang kanilang isip
-- Makita kung ang kanilang request ay naaprubahan o tinanggihan
+- Tingnan ang status ng kanilang mga pending na kahilingan sa group detail page
+- Kanselahin ang isang pending na kahilingan kung nagbago ang kanilang isip
+- Makita kung ang kanilang kahilingan ay aprubado o itinanggi
 
-## Best Practices
+## Mga Best Practice
 
-- **Sumagot nang mabilis** -- Subukan na suriin ang mga requests sa loob ng 24-48 oras upang ang mga tao ay hindi maghintay
-- **Maging malinaw sa mga dahilan para sa pagsabihan** -- Tulungan ang mga tao na maintindihan ang mga susunod na hakbang o alternatibong opsyon
-- **Suriin ang mga profile** -- Tingnan ang profile ng tao upang makita kung sila ay magandang fit para sa grupo
-- **Makipag-ugnayan ng mga inaasahan** -- Siguraduhing ang inyong paglalarawan ng grupo ay malinaw na nagsasaad kung sino ang para sa grupo
+- **Tumugon sa mabilis** -- Subukan na suriin ang mga kahilingan sa loob ng 24-48 oras upang ang mga tao ay hindi maiwan na naghihintay
+- **Maging malinaw sa mga dahilan sa pagtutanggi** -- Tulungan ang mga tao na maunawaan ang mga susunod na hakbang o mga alternatibong opsyon
+- **Suriin ang mga profile** -- Suriin ang profile ng tao upang makita kung sila ay isang magandang pares para sa grupo
+- **Makipag-ugnayan ng mga inaasahan** -- Tiyakin na ang iyong paglalarawan ng grupo ay malinaw na nagsasaad kung sino ang grupo ay para sa
 
-## Related Articles
+## Kaugnay na Mga Artikulo
 
-- [Creating Groups](./creating-groups.md) -- Matuto kung paano i-setup ang mga grupo at makakonfigure ng join policies
-- [Group Members](./group-members.md) -- Pamahalaan ang mga kasalukuyang miyembro ng grupo
-- [Group Calendar](./group-calendar.md) -- I-schedule ang mga pagpupulong at kaganapan ng grupo
+- [Lumilikha ng Mga Grupo](./creating-groups.md) -- Matuto kung paano mag-set up ng mga grupo at mag-configure ng mga join policy
+- [Group Members](./group-members.md) -- Pamahalaan ang mga umiiral na miyembro ng grupo
+- [Group Calendar](./group-calendar.md) -- I-schedule ang mga pagtitipon at kaganapan ng grupo

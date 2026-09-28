@@ -2,65 +2,65 @@
 title: "समूह विवरण"
 ---
 
-# Group Details
+# समूह विवरण
 
 <div class="article-intro">
 
-When you click on a group from the groups page, you are taken to the group detail page. What you see depends on whether you are logged in or not, with logged-in members having access to additional tabs and features.
+जब आप समूह पृष्ठ से किसी समूह पर क्लिक करते हैं, तो आप समूह विवरण पृष्ठ पर जाते हैं। आप जो देखते हैं वह इस पर निर्भर करता है कि आप लॉगिन हैं या नहीं, लॉगिन किए गए सदस्यों को अतिरिक्त टैब और सुविधाओं तक पहुंच मिलती है।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरुआत करने से पहले</h4>
 
-- Find a group to view by [browsing groups](./browsing-groups.md).
-- For full access to all tabs, [log in](../getting-started/logging-in.md) to your account.
+- [समूहों को ब्राउज़ करके](./browsing-groups.md) देखने के लिए एक समूह खोजें।
+- सभी टैबों तक पहुंचने के लिए, अपने खाते में [लॉगिन](../getting-started/logging-in.md) करें।
 
 </div>
 
-## Visitor View (Not Logged In)
+## आगंतुक दृश्य (लॉगिन नहीं)
 
-If you are not logged in, you will see the following:
+यदि आप लॉगिन नहीं हैं, तो आप निम्नलिखित देखेंगे:
 
-- **Hero section** -- A large banner area showing the group's photo, name, meeting time, and meeting location.
-- **Description** -- The full description of the group explaining its purpose and what to expect.
-- **Leaders** -- Avatars and names of the group's leaders. You can click a leader's name to view their profile.
-- **Calendar events** -- Up to three upcoming events for the group are displayed, each showing the date and event title. If the group has no upcoming events, this section is hidden.
-- **Contact form** -- A form that lets you send a message directly to the group's leaders. Fill in your **first name**, **last name**, **email**, **phone number**, and **message**, then click **Submit**. If there are multiple leaders, you can choose which one to contact from a dropdown.
+- **हीरो अनुभाग** -- एक बड़ा बैनर क्षेत्र जो समूह की फोटो, नाम, बैठक का समय, और बैठक स्थान दिखा रहा है।
+- **विवरण** -- समूह के उद्देश्य की व्याख्या करने वाले समूह का पूर्ण विवरण।
+- **नेता** -- समूह के नेताओं के अवतार और नाम। आप एक नेता के प्रोफाइल को देखने के लिए उनके नाम पर क्लिक कर सकते हैं।
+- **कैलेंडर घटनाएं** -- समूह के लिए तीन तक आने वाली घटनाएं प्रदर्शित की जाती हैं, प्रत्येक तारीख और ईवेंट शीर्षक दिखा रहे हैं। यदि समूह के पास कोई आने वाली घटनाएं नहीं हैं, तो यह अनुभाग छिपा हुआ है।
+- **संपर्क फॉर्म** -- एक फॉर्म जो आपको सीधे समूह के नेताओं को एक संदेश भेजने देता है। अपने **प्रथम नाम**, **अंतिम नाम**, **ईमेल**, **फोन नंबर**, और **संदेश** भरें, फिर **सबमिट** पर क्लिक करें। यदि कई नेता हैं, तो आप एक ड्रॉपडाउन से किसी को संपर्क करना चुन सकते हैं।
 
-## Member View (Logged In)
+## सदस्य दृश्य (लॉगिन किए गए)
 
-When you are logged in, the group detail page shows the hero section along with a sidebar of tabs. If your group is associated with a Lessons.church plan type and this week's lesson has parent take-home content, a **This week's lesson** card appears between the hero and the tabs (members only).
+जब आप लॉगिन होते हैं, तो समूह विवरण पृष्ठ हीरो अनुभाग को टैब के साइडबार के साथ दिखाता है। यदि आपका समूह Lessons.church योजना प्रकार से जुड़ा है और इस हफ्ते की पाठ में माता-पिता का घर सामग्री है, तो एक **इस हफ्ते की पाठ** कार्ड हीरो और टैब के बीच दिखाई देता है (केवल सदस्य)।
 
-The available tabs are:
+उपलब्ध टैब हैं:
 
-- **Group Details** -- The group's full description, rendered with rich text formatting.
-- **Members** -- A list of all members in the group, showing their photo and name. You can click a member's name to visit their profile in the [member directory](../community/member-directory.md).
-- **Calendar** -- The group's calendar showing meetings and events. You can browse upcoming and past events.
-- **Conversations** -- A space for group members to post messages and interact with each other. See [Group Conversations](./conversations.md) for more details.
-- **Resources** -- Shared files and links that have been posted for the group. You can download uploaded files or open linked resources.
-- **Attendance** -- Visible to group leaders only. Allows tracking of who attended group meetings.
+- **के बारे में** -- समूह का पूर्ण विवरण, समृद्ध पाठ स्वरूपण के साथ प्रस्तुत किया गया। केवल तभी दिखाया जाता है यदि समूह के पास विवरण है।
+- **योजनाएं** -- समूह की सेवा योजनाएं। केवल तभी दिखाया जाता है यदि समूह के पास योजनाएं हैं।
+- **संदेश** -- एक ऐसी जगह जहां समूह के सदस्य संदेश पोस्ट कर सकते हैं और एक दूसरे के साथ बातचीत कर सकते हैं। केवल सदस्यों को दिखाया जाता है, और केवल तभी यदि आपके चर्च ने इस समूह के लिए समूह चैट चालू किया है। [समूह बातचीता](./conversations.md) में अधिक विवरण देखें।
+- **सदस्य** -- समूह में सभी सदस्यों की एक सूची, उनकी फोटो और नाम दिखा रहे हैं। आप एक सदस्य के नाम पर क्लिक कर सकते हैं उनकी प्रोफाइल को [सदस्य निर्देशिका](../community/member-directory.md) में देखने के लिए।
+- **उपस्थिति** -- केवल समूह नेताओं (और उपस्थिति अनुमति के साथ कर्मचारी) के लिए दृश्यमान। समूह की बैठकों में किसने भाग लिया इसे ट्रैक करने की अनुमति देता है।
+- **घटनाएं** -- समूह की कैलेंडर बैठकों और घटनाओं को दिखा रहे हैं। आप आने वाली और पिछली घटनाओं को ब्राउज़ कर सकते हैं।
+- **संसाधन** -- साझा की गई फाइलें और लिंक जो समूह के लिए पोस्ट किए गए हैं। आप अपलोड की गई फाइलें डाउनलोड कर सकते हैं या लिंक की गई संसाधन खोल सकते हैं।
 
-## Leader Capabilities
+## नेता क्षमताएं
 
-If you are a leader of the group, you have additional editing capabilities:
+यदि आप समूह के नेता हैं, तो आपके पास अतिरिक्त संपादन क्षमताएं हैं:
 
-- **Edit group details** -- Update the group's name, description, meeting time, and other settings directly from the **Details** tab.
-- **Manage members** -- Add new members to the group or remove existing ones from the **Members** tab.
-- **Create and edit events** -- Add events to the group calendar. When creating an event, you can reserve rooms and resources alongside it — select from available rooms and resources, set optional setup and teardown times, and the booking request is automatically submitted for approval.
-- **Manage resources** -- Upload files (up to 100 MB of storage), add links, or delete existing resources.
-- **Leader resources** -- Access a separate **Resources (Leaders)** tab with files and links visible only to group leaders.
-- **Track attendance** -- Record attendance for group sessions from the **Attendance** tab.
+- **घटनाएं बनाएं और संपादित करें** -- **घटनाओं** टैब से समूह कैलेंडर में घटनाएं जोड़ें। किसी ईवेंट को बनाते समय, आप इसके साथ कमरे और संसाधनों को आरक्षित कर सकते हैं -- उपलब्ध कमरों और संसाधनों से चुनें, वैकल्पिक सेटअप और teardown समय सेट करें, और बुकिंग अनुरोध स्वचालित रूप से अनुमोदन के लिए प्रस्तुत किया जाता है।
+- **संसाधनों को प्रबंधित करें** -- फाइलें अपलोड करें (100 MB स्टोरेज तक), लिंक जोड़ें, या मौजूदा संसाधनों को हटाएं।
+- **उपस्थिति ट्रैक करें** -- **उपस्थिति** टैब से समूह सत्र के लिए उपस्थिति रिकॉर्ड करें।
 
-## Joining a Group
+समूह के नाम, विवरण, या सदस्य सूची को बदलने के लिए, B1 Admin का उपयोग करें। [समूह सदस्य](../../b1-admin/groups/group-members.md) देखें।
 
-When you are logged in and not yet a member, a join button appears on the group detail page. The button label depends on the group's join policy:
+## किसी समूह में शामिल होना
 
-- **Join Group** -- The group is open. Clicking this immediately adds you as a member.
-- **Request to Join** -- The group requires approval. Clicking this opens a dialog where you can include an optional message to the group leader, then submit your request. See [Requesting to Join a Group](./join-requests.md) for details on managing your requests.
+जब आप लॉगिन होते हैं और अभी तक सदस्य नहीं हैं, तो एक जॉइन बटन समूह विवरण पृष्ठ पर दिखाई देता है। बटन लेबल समूह की शामिल करने की नीति पर निर्भर करता है:
 
-If neither button appears, the group is closed and members must be added manually by a leader or administrator.
+- **समूह में शामिल हों** -- समूह खुला है। इसे क्लिक करने से तुरंत आपको सदस्य के रूप में जोड़ता है।
+- **शामिल होने का अनुरोध करें** -- समूह को अनुमोदन की आवश्यकता है। इसे क्लिक करने से एक संवाद खुलता है जहां आप समूह के नेता को एक वैकल्पिक संदेश शामिल कर सकते हैं, फिर अपना अनुरोध सबमिट करें। [किसी समूह में शामिल होने का अनुरोध](./join-requests.md) करने के बारे में विवरण पढ़ें।
+
+यदि कोई भी बटन दिखाई नहीं देता है, तो समूह बंद है और सदस्यों को नेता या प्रशासक द्वारा मैन्युअल रूप से जोड़ा जाना चाहिए।
 
 :::info
-If a group is closed and you want to join, use the contact form on the visitor view to reach out to the group's leaders.
+यदि किसी समूह को बंद किया जाता है और आप शामिल होना चाहते हैं, तो समूह के नेताओं तक पहुंचने के लिए आगंतुक दृश्य पर संपर्क फॉर्म का उपयोग करें।
 :::

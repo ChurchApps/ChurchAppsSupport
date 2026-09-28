@@ -1,55 +1,44 @@
 ---
-title: "Ordine Servizio"
+title: "Ordine del Servizio"
 ---
 
-# Servizio Order
+# Ordine del Servizio
 
 <div class="article-intro">
 
-When you Apri a plan, the **Order of Servizio** section shows the sequence of items for that Servizio. This gives you and your team a shared Visualizza of the Servizio flow, including timing, song details, and descriptions for each element.
+Quando apri un piano, la scheda **Ordine del Servizio** mostra la sequenza di elementi per quel servizio. Questo ti dà e al tuo team una visualizzazione condivisa del flusso del servizio, inclusi i tempi, i dettagli della canzone e le descrizioni per ogni elemento.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- You must be [logged in](../getting-started/logging-in.md) Per your B1.church Account.
-- Apri a plan from your [Plans list](./viewing-plans.md) Per Visualizza its Servizio order.
+- Devi essere [registrato](../getting-started/logging-in.md) al tuo account B1.church.
+- Apri un piano dal tuo [elenco di Piani](./viewing-plans.md) per visualizzare il suo ordine del servizio.
 
 </div>
 
-## What the Servizio Order Shows
+## Cosa Mostra l'Ordine del Servizio
 
-The Servizio order is displayed as a list of items in the order they will occur during the Servizio. Each item includes:
+L'ordine del servizio viene visualizzato come un elenco di elementi nell'ordine in cui si verificheranno durante il servizio. Ogni elemento include:
 
-- **Cumulative Ora** -- The running Ora from the start of the Servizio, so you know when each element is expected Per begin.
-- **Item label and description** -- The name of the element (such as a song title, prayer, or announcement) along with any notes or descriptions.
-- **Duration** -- How long the item is expected Per take.
+- **Tempo cumulativo** - Il tempo di esecuzione dall'inizio del servizio, in modo che tu sappia quando ogni elemento dovrebbe iniziare.
+- **Etichetta elemento e descrizione** - Il nome dell'elemento (come un titolo di canzone, una preghiera o un annuncio) insieme a qualsiasi nota o descrizione.
+- **Durata** - Quanto tempo dovrebbe durare l'elemento.
 
-Items are organized under **headers** that Gruppo related elements together (for example, "Worship Set" or "Message"). This makes it easy Per scan the overall structure of the Servizio.
+Gli elementi sono organizzati sotto **intestazioni** che raggruppano gli elementi correlati insieme (ad esempio, "Insieme di Adorazione" o "Messaggio"). Questo rende facile esaminare la struttura complessiva del servizio.
 
-Lezione and curriculum sections can also expand into a folder of individual actions nested beneath them -- Fai clic the section Per expand or collapse its actions and see each step your team will walk through.
+Le sezioni Lezione e curriculum possono anche espandersi in una cartella di azioni individuali annidate sotto di esse - fai clic sulla sezione per espandere o comprimere le sue azioni e vedi ogni passaggio che il tuo team seguirà.
 
-## Viewing Song Lyrics and Chords
+## Visualizzazione dei Testi e Accordi delle Canzoni
 
-Fai clic a song in the Servizio order Per Apri its lyrics and chords. Use the **Key Signature** dropdown at the top Per transpose the chords on the fly -- handy if your instrument or vocal range needs a different key than the one the worship leader planned for.
+Fai clic su una canzone nell'ordine del servizio per aprire i suoi testi e accordi. Usa il menu a discesa **Chiave** nella parte superiore per trasporre gli accordi al volo - pratico se il tuo strumento o la tua gamma vocale ha bisogno di una chiave diversa da quella che il leader dell'adorazione ha pianificato.
 
-## Curriculum and Lezione Content
+## Contenuto del Curriculum e della Lezione
 
-If the plan has associated curriculum or lesson content from a provider like [Lessons.church](../content/lessons.md), you will see a preview of that content within the Servizio order. This can include lesson sections, presentation materials, and other resources your team needs for the Servizio.
+Se il piano ha contenuto di curriculum o lezione associato da un provider come [Lessons.church](../content/lessons.md), vedrai un'anteprima di quel contenuto all'interno dell'ordine del servizio. Questo può includere sezioni di lezione, materiali di presentazione e altre risorse di cui il tuo team ha bisogno per il servizio.
 
-## Printing the Servizio Order
+## Stampa dell'Ordine del Servizio
 
-You can print a formatted version of the Servizio order Per bring with you on the Giorno of the Servizio.
+L'app dei membri di B1.church non ha un'opzione di stampa per i piani. Se hai bisogno di una copia stampata con il roster del team e l'ordine completo del servizio, chiedi a un membro dello staff di stamparla da B1 Admin. Vedi [Stampa dei Piani](../../b1-admin/serving/plans.md#printing-plans).
 
-1. Apri the plan from your **Plans** list.
-2. In the **Order of Servizio** section, Fai clic the **print** icon in the top-right corner.
-3. A new window opens with a printable layout that includes:
-   - The **Servizio Data** at the top.
-   - **Team assignments** grouped by category on the left, showing each position and who is filling it.
-   - The **full Servizio order** on the right with Ora, item details, and duration columns.
-4. Your browser's print dialog will Apri automatically so you can print or Salva as PDF.
-
-:::tip
-The printed Servizio order is a great reference Per have on hand during rehearsals or the Servizio itself. It includes both the team roster and the full order of Servizio on a single page.
-:::

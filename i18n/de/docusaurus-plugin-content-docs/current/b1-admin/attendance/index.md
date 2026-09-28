@@ -1,53 +1,53 @@
 ---
-title: TITLE: Anwesenheit
+title: "Anwesenheit"
 ---
-CONTENT:
+
 # Anwesenheit
 
 <div class="article-intro">
 
-Der Bereich „Anwesenheit" in B1 Admin bietet Ihnen einen vollständigen Überblick darüber, wer Ihre Gemeinde besucht und wie Ihre Gruppen im Laufe der Zeit wachsen. Von der Einrichtung von Standorten und Gottesdienstzeiten über die Auswertung von Trends bis hin zur Einrichtung des Selbst-Check-ins wird alles, was Sie zur Erfassung und zum Verständnis der Anwesenheit benötigen, auf dieser Seite verwaltet.
+Der Bereich Anwesenheit in B1 Admin gibt dir einen vollständigen Überblick darüber, wer in deiner Kirche teilnimmt und wie deine Gruppen im Laufe der Zeit wachsen. Von der Konfiguration von Standorten und Gottesdienstzeiten bis zur Überprüfung von Trends und der Einrichtung von Selbsteintrag – alles, was du brauchst, um die Anwesenheit zu verfolgen und zu verstehen, wird von dieser Seite aus verwaltet.
 
 </div>
 
 ## Seitenübersicht
 
-Wenn Sie die Seite „Anwesenheit" öffnen, sehen Sie einen Kopfbereich mit wichtigen Kennzahlen zur Anwesenheitskonfiguration Ihrer Gemeinde:
+Wenn du die Seite Anwesenheit öffnest, siehst du einen Header mit wichtigen Statistiken zur Anwesenheitseinrichtung deiner Kirche:
 
-- **Standorte** -- die Anzahl der physischen Standorte, die Sie eingerichtet haben
-- **Gottesdienstzeiten** -- die Gesamtzahl der Gottesdienste über alle Standorte hinweg
+- **Standorte** -- die Anzahl der physischen Orte, die du konfiguriert hast
+- **Gottesdienstzeiten** -- die Gesamtzahl der Gottesdienste auf allen Standorten
 - **Geplante Gruppen** -- Gruppen, die einer bestimmten Gottesdienstzeit zugeordnet sind
-- **Nicht geplante Gruppen** -- Gruppen, die ihre Anwesenheit unabhängig von einer Gottesdienstzeit erfassen
+- **Ungeplante Gruppen** -- Gruppen, die die Anwesenheit unabhängig von einer Gottesdienstzeit verfolgen
 
-Unterhalb des Kopfbereichs gliedern drei Registerkarten Ihre Anwesenheitswerkzeuge.
+Unterhalb des Headers organisieren drei Registerkarten deine Anwesenheitswerkzeuge.
 
 ## Registerkarten
 
 ### Einrichtung
 
-Auf der Registerkarte **Einrichtung** konfigurieren Sie die Grundbausteine der Anwesenheitserfassung. Hier legen Sie Ihre Standorte fest, fügen jedem Standort Gottesdienstzeiten hinzu und ordnen diesen Gottesdienstzeiten [Gruppen](../groups/creating-groups.md) zu. Sie müssen dies nur einmal tun, können es jedoch jederzeit aktualisieren, wenn sich Ihr Zeitplan ändert. Eine vollständige Anleitung finden Sie unter [Anwesenheitseinrichtung](setup.md).
+Die Registerkarte **Einrichtung** ist der Ort, wo du die Bausteine der Anwesenheitsverfolgung konfigurierst. Hier legst du deine Standorte fest, fügst Gottesdienstzeiten für jeden Standort hinzu und ordnest [Gruppen](../groups/creating-groups.md) diesen Gottesdienstzeiten zu. Du musst dies nur einmal tun, kannst es aber jederzeit aktualisieren, wenn sich dein Zeitplan ändert. Siehe [Anwesenheitseinrichtung](setup.md) für eine vollständige Anleitung.
 
 ### Anwesenheit
 
-Die Registerkarte **Anwesenheit** zeigt Anwesenheitstrends im Zeitverlauf an. Verwenden Sie die Filter, um die Ergebnisse nach Zeitraum, Standort oder Gottesdienstzeit einzugrenzen und Muster in Ihren Daten schnell zu erkennen. Einzelheiten zur Verwendung von Berichten und Filtern finden Sie unter [Anwesenheit auswerten](tracking-attendance.md).
+Die Registerkarte **Anwesenheit** zeigt Anwesenheitstrends im Laufe der Zeit an. Verwende die Filter, um die Ergebnisse nach Datumsbereich, Standort oder Gottesdienstzeit zu begrenzen, und erkenne schnell Muster in deinen Daten. Siehe [Anwesenheit verfolgen](tracking-attendance.md) für Details zur Verwendung von Berichten und Filtern.
 
 ### Gruppen
 
-Die Registerkarte **Gruppen** schlüsselt die Anwesenheit nach einzelnen Gruppen auf. Das ist hilfreich, wenn Sie sehen möchten, wie sich eine bestimmte Kleingruppe, ein Kurs oder ein Dienstteam entwickelt, anstatt gemeindeweite Zahlen zu betrachten.
+Die Registerkarte **Gruppen** schlüsselt die Anwesenheit nach einzelner Gruppe auf. Dies ist hilfreich, wenn du sehen möchtest, wie es einer bestimmten Kleingruppe, Klasse oder einem Dienst-Team geht, anstatt Zahlen für die ganze Kirche zu betrachten.
 
-### Personenzahlen und Personenzahl-Trend
+### Anwesenheitszahlen und Anwesenheitstrend
 
-Auf der Registerkarte **Personenzahlen** können Sie eine einfache Gesamtzahl für einen Gottesdienst, eine Gottesdienstzeit oder eine Gruppe erfassen, anstatt eine namentliche Anwesenheitsliste zu führen, und die Registerkarte **Personenzahl-Trend** stellt diese Gesamtzahlen wochenweise grafisch dar. Einzelheiten finden Sie unter [Personenzahl-Erfassung & Trend](headcount-entry.md).
+Die Registerkarte **Anwesenheitszahlen** ermöglicht dir, eine einfache Gesamtzahl für einen Gottesdienst, eine Gottesdienstzeit oder eine Gruppe zu erfassen, und die Registerkarte **Anwesenheitstrend** zeigt diese Zahlen wöchentlich an. Siehe [Anwesenheitszahl-Eingabe und Trend](headcount-entry.md) für Details.
 
 ## Nächste Schritte
 
-- [Anwesenheitseinrichtung](setup.md) -- Standorte, Gottesdienstzeiten und Gruppen konfigurieren
-- [Anwesenheit erfassen](recording-attendance.md) -- Anwesenheit für eine Gruppensitzung manuell eingeben
-- [Anwesenheit auswerten](tracking-attendance.md) -- Trends ansehen und Berichte filtern
-- [Personenzahl-Erfassung & Trend](headcount-entry.md) -- Gesamtzahlen ohne namentliche Anwesenheitsliste erfassen und grafisch darstellen
-- [Check-in](check-in.md) -- Selbst-Check-in für Gottesdienste einrichten
-- [Check-in-Sicherheit](checkin-safety.md) -- Raumkapazitäten, Betreuungsschlüssel, Abholberechtigte und Personenrufe
+- [Anwesenheitseinrichtung](setup.md) -- konfiguriere Standorte, Gottesdienstzeiten und Gruppen
+- [Anwesenheit aufzeichnen](recording-attendance.md) -- erfasse manuell die Anwesenheit für eine Gruppensitzung und drucke Klassenlisten
+- [Anwesenheit verfolgen](tracking-attendance.md) -- zeige Trends an und filtere Berichte
+- [Anwesenheitszahl-Eingabe und Trend](headcount-entry.md) -- erfasse und visualisiere Gesamtzahlen ohne benannte Liste
+- [Eintrag](check-in.md) -- richte Selbsteintrag für Gottesdienste ein
+- [Eintragssicherheit](checkin-safety.md) -- Raumkapazitäten, Freiwilligenquoten, Abholpersonen und Paging
 
 :::tip
-Wenn Sie die Anwesenheitserfassung zum ersten Mal einrichten, beginnen Sie mit der Anleitung [Anwesenheitseinrichtung](setup.md), um Ihre Standorte und Gottesdienstzeiten festzulegen. Sobald das eingerichtet ist, können Sie mit dem manuellen [Erfassen der Anwesenheit](recording-attendance.md) beginnen oder den [Selbst-Check-in](check-in.md) einrichten.
+Wenn du die Anwesenheit zum ersten Mal einrichtest, beginne mit dem Leitfaden [Anwesenheitseinrichtung](setup.md), um deine Standorte und Gottesdienstzeiten festzulegen. Danach kannst du [die Anwesenheit manuell aufzeichnen](recording-attendance.md) oder [Selbsteintrag einrichten](check-in.md).
 :::

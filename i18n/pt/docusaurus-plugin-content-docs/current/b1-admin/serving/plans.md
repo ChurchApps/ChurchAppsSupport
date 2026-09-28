@@ -1,123 +1,123 @@
 ---
-title: "Service Plans"
+title: "Planos de Serviço"
 ---
 
-# Service Plans
+# Planos de Serviço
 
 <div class="article-intro">
 
-Service plans organize who is serving and when. Each plan is tied to a specific date and ministry, making it easy to coordinate your volunteer teams week by week and ensure every service is fully staffed.
+Planos de serviço organizam quem está servindo e quando. Cada plano está vinculado a uma data e ministério específicos, facilitando a coordenação de suas equipes de voluntários semana a semana e garantindo que cada serviço esteja totalmente alocado.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Antes de Começar</h4>
 
-- Set up your ministries and teams in the Serving area
-- Make sure volunteers have been added to your [people directory](../people/adding-people.md) and assigned to teams
+- Configure seus ministérios e equipes na área Servindo
+- Certifique-se de que os voluntários foram adicionados ao seu [diretório de pessoas](../people/adding-people.md) e atribuídos às equipes
 
 </div>
 
-## Accessing Plans
+## Acessando Planos
 
-1. Navigate to **Serving** from the main menu.
-2. Select a **ministry tab** at the top of the page.
-3. Click on a **plan type** to see the list of plans for that type.
-4. Click on a specific plan to open it.
+1. Navegue até **Servindo** no menu principal.
+2. Selecione uma **aba de ministério** na parte superior da página.
+3. Clique em um **tipo de plano** para ver a lista de planos para esse tipo.
+4. Clique em um plano específico para abri-lo.
 
 :::info
-Full admin access is not required to manage plans. Anyone who is a member of a ministry can navigate to Serving and create, edit, and schedule plans for their own ministry without needing the Plans Edit permission. Editors with the Plans Edit role can manage plans across every ministry.
+Acesso total de admin não é necessário para gerenciar planos. Qualquer pessoa que seja membro de um ministério pode navegar até Servindo e criar, editar e agendar planos para seu próprio ministério sem precisar da permissão Editar Planos. Editores com a função Editar Planos podem gerenciar planos em todos os ministérios.
 :::
 
-## Creating a Plan
+## Criando um Plano
 
-1. From the plan type view, click **New Plan**.
-2. Give the plan a name or use the date as the name. Select the **date** for the service.
-3. If you would like to copy from a previous plan, choose positions only or positions and assignments. If you do not want to copy, just choose nothing. You can also copy the order of service from my previous plan.
-4. Save the plan. You can now begin assigning team members and building out the [service order](./service-order.md).
+1. Da visualização do tipo de plano, clique em **Novo Plano**.
+2. Dê ao plano um nome ou use a data como nome. Selecione a **data** para o serviço.
+3. Se você gostaria de copiar de um plano anterior, escolha apenas posições ou posições e atribuições. Se você não quer copiar, apenas escolha nada. Você também pode copiar a ordem de serviço do meu plano anterior.
+4. Salve o plano. Você agora pode começar a atribuir membros da equipe e construir a [ordem de serviço](./service-order.md).
 
-## The Plan Detail Page
+## A Página de Detalhes do Plano
 
-When you open a plan, you will see two tabs:
+Quando você abre um plano, vê duas abas:
 
-- **Assignments** -- Manage which team members are assigned to this plan. You can add people from your existing teams and see who has confirmed or is still pending.
-- **[Service Order](./service-order.md)** -- Build the order of service with elements like worship songs, prayers, announcements, and the sermon.
+- **Atribuições** -- Gerencie quais membros da equipe são atribuídos a este plano. Você pode adicionar pessoas de suas equipes existentes e ver quem confirmou ou ainda está pendente.
+- **[Ordem de Serviço](./service-order.md)** -- Construa a ordem de serviço com elementos como canções de adoração, orações, anúncios e o sermão.
 
-## Assigning Team Members
+## Atribuindo Membros da Equipe
 
-1. Open a plan and go to the **Assignments** tab.
-2. Click on **add Position** to expand it. Fill out the information in the add a position form. For category name add whatever category you like.
-3. Click on **People Needed** and choose volunteers to fill that position.
-4. Add members from your team roster by clicking **Add**.
-5. Assigned members will appear under their team with their assignment status.
-6. Click notify volunteers to notify them within the B1 app or via email.
+1. Abra um plano e vá à aba **Atribuições**.
+2. Clique em **adicionar Posição** para expandi-la. Preencha as informações no formulário adicionar posição. Para nome de categoria adicione qualquer categoria que goste.
+3. Clique em **Pessoas Necessárias** e escolha voluntários para preencher essa posição. Se a posição tiver um **Grupo de Voluntários**, você escolhe entre os membros desse grupo. Se seu Grupo de Voluntários estiver definido como **Nenhum**, você pode procurar qualquer pessoa em sua igreja.
+4. Adicione membros da sua lista de equipe clicando em **Adicionar**.
+5. Membros atribuídos aparecerão sob sua equipe com seu status de atribuição.
+6. Clique notificar voluntários para notificá-los dentro do aplicativo B1 ou por email.
 
-Each position shows a count chip (for example, "2/3") so you can see how many spots are filled at a glance. At the top of the Assignments tab, a progress bar and a summary chip ("X of Y positions filled") show your overall staffing for the plan, switching to **Fully staffed** once every position is covered.
+Cada posição mostra um chip de contagem (por exemplo, "2/3") para que você possa ver quantos espaços estão preenchidos de um relance. No topo da aba Atribuições, uma barra de progresso e um chip de resumo ("X de Y posições preenchidas") mostram sua alocação geral para o plano, mudando para **Totalmente alocado** uma vez que cada posição seja coberta.
 
 :::tip
-Set up your teams in the ministry settings before creating plans. This way, you will have a ready pool of volunteers to assign from.
+Configure suas equipes nas configurações do ministério antes de criar planos. Desta forma, você terá um pool pronto de voluntários para atribuir.
 :::
 
-## Plan Settings
+## Configurações do Plano
 
-Each plan has additional settings you can configure by clicking the edit (pencil) icon on the plan. These include:
+Cada plano tem configurações adicionais que você pode configurar clicando no ícone editar (lápis) no plano. Estas incluem:
 
-- **Signup Deadline** — the number of hours before the service when volunteer signups close. Enter a negative number to keep signups open past the service start time.
-- **Show volunteer names on signup page** — when checked, volunteers can see who else is already signed up for each position.
-- **Penciled in** — hides assignments from volunteers until you are ready to publish the schedule.
-- **Automatically schedule a replacement when a volunteer declines** — when checked, if an assigned volunteer declines their position B1 will automatically contact the next available person on the team roster and ask if they can serve. This continues down the list until someone accepts, keeping your positions filled without manual follow-up.
+- **Prazo de inscrição** — o número de horas antes do serviço quando as inscrições de voluntários fecham. Digite um número negativo para manter as inscrições abertas após o horário de início do serviço.
+- **Mostrar nomes de voluntários na página de inscrição** — quando marcado, os voluntários podem ver quem mais já está inscrito para cada posição.
+- **Lápis** — oculta atribuições dos voluntários até que você esteja pronto para publicar o cronograma.
+- **Agendar automaticamente um substituto quando um voluntário declina** — quando marcado, se um voluntário atribuído declinar sua posição, B1 entrará em contato automaticamente com a próxima pessoa disponível na lista de equipe e perguntará se pode servir. Isto continua pela lista até alguém aceitar, mantendo suas posições preenchidas sem acompanhamento manual.
 
-## Volunteer Reminders
+## Lembretes de Voluntários
 
-B1 can automatically remind volunteers ahead of the services they are scheduled for, so you do not have to chase down your team each week. Reminders go to **everyone scheduled** — both those who have confirmed and those who have not yet responded — by email and as an in-app/push notification. Each reminder includes the volunteer's position(s), the service date, the plan notes, and your custom message.
+B1 pode lembrar automaticamente os voluntários antes dos serviços para os quais estão agendados, para que você não tenha que perseguir sua equipe cada semana. Lembretes vão para **todos programados** — tanto aqueles que confirmaram quanto aqueles que ainda não responderam — por email e como notificação no aplicativo/push. Cada lembrete inclui a(s) posição(ões) do voluntário, a data do serviço, as notas do plano e sua mensagem personalizada.
 
-Reminder timing and content are set per **plan type**, so each kind of service can keep its own schedule.
+O tempo e conteúdo do lembrete são definidos por **tipo de plano**, para que cada tipo de serviço possa manter seu próprio cronograma.
 
-1. From the **Serving** area, select the ministry that contains the plan type.
-2. Click the **edit (pencil) icon** next to the plan type.
-3. In the **Reminders** section, set:
-   - **Reminder days before service** — a comma-separated list of how many days ahead to send, for example `7,1,0`. Use `0` to send a reminder on the day of the service. Leave this field blank to turn reminders off for this plan type.
-   - **Custom reminder message** *(optional)* — extra text added to the reminder, such as "Arrive 30 minutes early to rehearse."
-4. Save the plan type.
+1. Da área **Servindo**, selecione o ministério que contém o tipo de plano.
+2. Clique no **ícone editar (lápis)** ao lado do tipo de plano.
+3. Na seção **Lembretes**, defina:
+   - **Lembrete dias antes do serviço** — uma lista separada por vírgula de quantos dias antecipadamente para enviar, por exemplo `7,1,0`. Use `0` para enviar um lembrete no dia do serviço. Deixe este campo em branco para desativar lembretes para este tipo de plano.
+   - **Mensagem de lembrete personalizada** *(opcional)* — texto extra adicionado ao lembrete, como "Chegue 30 minutos antes para ensaiar."
+4. Salve o tipo de plano.
 
-New plan types remind volunteers **2 days before** each service by default until you change this.
+Novos tipos de plano lembram os voluntários **2 dias antes** de cada serviço por padrão até que você mude isto.
 
 :::tip
-Volunteers who have not yet confirmed get **Accept** and **Decline** buttons right inside the reminder email, so they can respond without signing in.
+Voluntários que ainda não confirmaram recebem botões **Aceitar** e **Declinar** direto dentro do email de lembrete, para que possam responder sem fazer login.
 :::
 
 :::info
-Each reminder is sent once. Plans that are still penciled in (not yet sent to the team) do not trigger reminders.
+Cada lembrete é enviado uma vez. Planos que ainda estão em lápis (ainda não enviados para a equipe) não disparam lembretes.
 :::
 
-## Associating Groups with a Plan Type
+## Associando Grupos com um Tipo de Plano
 
-Below the plan list on the plan type page, the **Groups** section lets you decide which groups can see the plans for this plan type from their member portal. This is a quick way to surface upcoming services to the right teams without giving them admin access.
+Abaixo da lista de planos na página do tipo de plano, a seção **Grupos** permite que você decida quais grupos podem ver os planos para este tipo de plano a partir de seu portal de membros. Esta é uma forma rápida de exibir os próximos serviços para as equipes certas sem dar a eles acesso de admin.
 
-1. On the plan type page, scroll down to the **Groups** section.
-2. Click **Add Group** and pick a group from the dropdown.
-3. In the **Shows** column, choose whether members of that group should see **Past**, **Future**, or **Both** plans for this plan type.
-4. Repeat to associate additional groups, or click the trash icon to remove a group.
+1. Na página do tipo de plano, role para baixo até a seção **Grupos**.
+2. Clique em **Adicionar Grupo** e escolha um grupo na lista suspensa.
+3. Na coluna **Mostra**, escolha se os membros desse grupo devem ver planos **Passados**, **Futuros** ou **Ambos** para este tipo de plano.
+4. Repita para associar grupos adicionais, ou clique no ícone de lixo para remover um grupo.
 
 :::info
-Only groups tagged as **Standard** appear in the picker. Members of an associated group automatically see this plan type's plans on the group's page in the B1 member portal — limited to the past/future/both window you selected.
+Apenas grupos marcados como **Padrão** aparecem no seletor. Membros de um grupo associado veem automaticamente os planos deste tipo de plano na página do grupo no portal de membros B1 — limitado à janela passado/futuro/ambos que você selecionou.
 :::
 
-If the plans are Lessons.church lessons, members of the associated group also see a **This week's lesson** card on the group page (bottom line, verse, and a question for parents). Associate a parent group here and set the filter to **Past** so today's lesson is included. Volunteer teams typically use **Future** or **Both**.
+Se os planos forem lições de Lessons.church, membros do grupo associado também veem um cartão **Lição desta semana** na página do grupo (última linha, verso e uma pergunta para pais). Associe um grupo de pais aqui e defina o filtro como **Passado** para que a lição de hoje seja incluída. Equipes de voluntários normalmente usam **Futuro** ou **Ambos**.
 
-## Printing Plans
+## Imprimindo Planos
 
-You can print a plan for distribution to your team. Open the plan, Open the service order tab and use the **Print** option to generate a printable version that includes assignments and the service order. This is useful for handing out at rehearsals or posting in a common area.
+Você pode imprimir um plano para distribuição à sua equipe. Abra o plano, Abra a aba ordem de serviço e use a opção **Imprimir** para gerar uma versão imprimível que inclua atribuições e a ordem de serviço. Isto é útil para distribuir em ensaios ou postar em uma área comum.
 
 :::info
-Plans are organized by ministry. Make sure you are on the correct ministry tab before creating or viewing plans.
+Os planos são organizados por ministério. Certifique-se de que você está na aba de ministério correta antes de criar ou visualizar planos.
 :::
 
-## Next Steps
+## Próximos Passos
 
-- Use the [Plans Overview](./plans-overview.md) to see all upcoming assignments across multiple weeks in one grid and spot unfilled positions — and assign volunteers directly from the grid
-- Save a plan's structure as a [Plan Template](./plan-templates.md) so you can stamp it onto future plans in one click
-- Build out your [Service Order](./service-order.md) with songs, readings, and other elements
-- Add [songs](./songs.md) from your library directly into the service order
-- Use [Tasks](./tasks.md) to assign follow-up action items to team members
-- Display current lesson content on a lobby TV with [Digital Signage](./digital-signage.md)
+- Use a [Visão Geral dos Planos](./plans-overview.md) para ver todas as atribuições futuras em várias semanas em uma grade e detectar posições não preenchidas — e atribua voluntários diretamente da grade
+- Salve a estrutura de um plano como um [Modelo de Plano](./plan-templates.md) para que você possa carimbá-lo em planos futuros em um clique
+- Construa sua [Ordem de Serviço](./service-order.md) com canções, leituras e outros elementos
+- Adicione [canções](./songs.md) de sua biblioteca diretamente à ordem de serviço
+- Use [Tarefas](./tasks.md) para atribuir itens de ação de acompanhamento aos membros da equipe
+- Exiba conteúdo de lição atual em uma TV de saguão com [Sinalização Digital](./digital-signage.md)

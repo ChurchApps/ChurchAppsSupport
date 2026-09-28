@@ -6,44 +6,74 @@ title: "Navigieren in B1App"
 
 <div class="article-intro">
 
-Das Mitgliederportal in B1.church verwendet ein Seitenleisten-Navigationslayout, das den Wechsel zwischen den verschiedenen verfügbaren Werkzeugen erleichtert. Diese Seite erklärt, wie die Navigation sowohl auf dem Desktop als auch auf mobilen Geräten funktioniert.
+Das Mitgliederportal in B1.church ist eine mobile-first Web-App, die unter `/mobile` läuft. Sie funktioniert in jedem Browser und kann auf Ihrem Startbildschirm installiert werden. Diese Seite erklärt das Home-Dashboard, die untere Registerkartenleiste, das Menü „Mehr" und die Me-Seite.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Sie müssen [angemeldet](./logging-in.md) sein, um auf das Mitgliederportal zuzugreifen.
+- Sie müssen [angemeldet sein](./logging-in.md), um Ihre persönlichen Informationen zu sehen. Abgemeldete Besucher können dennoch öffentliche Inhalte durchsuchen und erhalten eine Schaltfläche **Anmelden**, wenn eine Funktion ein Konto erfordert.
 
 </div>
 
-## Seitenleisten-Navigation
+## Startseite
 
-Wenn Sie das Mitgliederportal betreten, sehen Sie eine vertikale Seitenleiste auf der linken Seite des Bildschirms. Diese Seitenleiste enthält Tabs für jeden Bereich des Portals:
+Wenn Sie `https://yourchurchname.b1.church/mobile` öffnen, gelangen Sie zum **Home**-Dashboard unter `/mobile/dashboard`. Home ist die Landingpage des Mitgliederportals und zeigt:
 
-- **Zeitleiste** -- Ihr personalisierter Feed mit Updates und Gesprächen aus Ihren Gruppen und Ihrer Kirche. Dies ist der Standard-Tab, der beim Öffnen des Mitgliederportals geladen wird.
-- **Ich** -- Ihr persönliches Dashboard mit anstehenden Diensteinsätzen, Anmeldungen, Gruppenveranstaltungen und aktuellen Benachrichtigungen. Siehe [Die Ich-Seite](./me-page).
-- **Gruppen** -- Ansehen und Interagieren mit den [Gruppen](../groups/), denen Sie angehören.
-- **Gemeinschaft** -- Durchsuchen Sie das [Mitgliederverzeichnis](../community/member-directory.md) der Kirche.
-- **Pläne** -- Sehen Sie anstehende [Dienstpläne](../plans/) und Ihre zugewiesenen Freiwilligenpositionen.
-- **Check-in** -- [Checken Sie](../checkin/) sich selbst und Ihren Haushalt für Gottesdienste und Veranstaltungen ein.
-- **Lessons** *(veraltet)* -- Der Lessons-Tab im Portal wurde durch [FreePlay](/docs/freeplay/) für die Wiedergabe im Klassenzimmer ersetzt. Durchsuchen Sie Lehrmaterial direkt auf [Lessons.church](https://lessons.church) oder siehe die [Lessons-Referenzseite](../content/lessons.md) für Details.
-- **Spenden** -- Tätigen Sie Online-[Spenden](../giving/) und sehen Sie Ihre Spendenhistorie ein.
+- Eine Begrüßung mit Ihrem Namen
+- Vers des Tages
+- Eine hervorgehobene Karte für alle Funktionen, die Ihre Kirche hervorgehoben hat
+- Ein **Explore**-Raster der Tools, die Ihre Kirche aktiviert hat – Gruppen, Spenden, Check-in, Predigten, Pläne und mehr
 
-Klicken Sie auf einen beliebigen Tab, um zu diesem Bereich zu wechseln. Der aktive Tab wird hervorgehoben, sodass Sie immer wissen, wo Sie sich befinden.
+Wenn Sie auf eine Karte im Explore-Bereich tippen, wird dieses Tool geöffnet. Wenn Ihre Kirche mehr Tools hat als auf das Dashboard passen, ist die letzte Karte **Mehr**, die die vollständige Liste unter `/mobile/more` öffnet.
+
+## Die untere Registerkartenleiste
+
+Auf einem Telefon ist eine Registerkartenleiste am unteren Bildschirmrand befestigt:
+
+- **Startseite** – immer die erste Registerkarte
+- Bis zu drei Registerkarten, die Ihre Kirche konfiguriert hat
+- **Mehr** – öffnet das Navigationsmenü
+
+Wenn Ihre Kirche mehr als drei Registerkarten konfiguriert hat, gehen die restlichen nicht verloren: Sie erscheinen im Menü **Mehr** und im Explore-Raster des Dashboards. Kirchenverwalter stellen die Registerkartenreihenfolge in B1 Admin unter **Mobile → Navigation** ein.
+
+## Das Menü
+
+Wenn Sie auf **Mehr** tippen, wird das Navigationsmenü geöffnet. Auf einem Tablet oder Desktop ist dasselbe Menü immer auf der linken Seite des Bildschirms sichtbar. Es enthält:
+
+- Ihr Name und Foto mit einer Verknüpfung **Profil bearbeiten** – siehe [Profil bearbeiten](./editing-your-profile.md)
+- **Startseite** und **Me**
+- **Admin-Portal** – wird nur angezeigt, wenn Sie Administratorberechtigungen bei Ihrer Kirche haben. Es öffnet B1 Admin
+- Jede Registerkarte, die Ihre Kirche konfiguriert hat, in Reihenfolge
+- **App installieren** – öffnet die [Installationsanweisungen](./installing-pwa.md) unter `/mobile/install`
+- Umschalter für hellen/dunklen Modus
+- **Anmelden** oder **Abmelden**
+- Name Ihrer Kirche und Link zu Datenschutzrichtlinie
+
+## Die Symbolleiste
+
+Die Leiste oben auf jedem Bildschirm zeigt:
+
+- Bildschirmtitel oder Name Ihrer Kirche auf der Startseite
+- Zurückpfeil, wenn Sie zu einem Detailbildschirm abgebogen sind
+- Symbol **Glocke** für Benachrichtigungen und Nachrichten mit einem Badge für ungelesene Elemente
+- Ihr **Profilfoto**, das Ihr Profil unter `/mobile/profileEdit` öffnet – siehe [Profil bearbeiten](./editing-your-profile.md)
+
+## Die Me-Seite
+
+**Me** (`/mobile/me`) ist Ihr persönlicher Hub. Es listet Verknüpfungen zu Ihrem Profil, [Benachrichtigungseinstellungen](./notification-preferences.md), Nachrichten, [Spenden](../giving/) und [Anmeldungen](../events/my-registrations.md) auf, gefolgt von dem, was für Sie ansteht – Diensteinsätze, Veranstaltungsanmeldungen und Gruppenveranstaltungen – und Ihren neuesten Benachrichtigungen. Weitere Informationen finden Sie unter [Die Me-Seite](./me-page).
+
+Wenn Sie abgemeldet sind, zeigt die Me-Seite stattdessen eine Schaltfläche **Anmelden** an.
+
+## Installation auf Ihrem Startbildschirm
+
+Das Mitgliederportal ist eine Progressive Web App. Besuchen Sie `/mobile/install` (oder wählen Sie im Menü **App installieren**), um schrittweise Anweisungen für Ihr Gerät zu erhalten. Nach der Installation wird es von Ihrem Startbildschirm aus im Vollbildmodus ohne Browser-Elemente geöffnet. Siehe [Installation als App (PWA)](./installing-pwa.md).
+
+## Website Ihrer Kirche
+
+Außerhalb des Mitgliederportals hat die öffentliche Website Ihrer Kirche eine eigene Header-Navigation mit Links, die Ihre Administratoren konfiguriert haben – Seiten wie [Predigten](../content/sermons.md), [Bibel](../content/bible.md), [Live-Streaming](../content/live-streaming.md) und eine öffentliche Gruppenliste. Auf einem Telefon befinden sich diese Links hinter dem Hamburger-Symbol in der oberen rechten Ecke der Kopfzeile.
 
 :::info
-Die angezeigten Tabs können je nach den von Ihrer Kirche aktivierten Funktionen variieren. Kirchenverwalter steuern über B1 Admin, welche Bereiche für Mitglieder sichtbar sind. Wenn Sie einen bestimmten Tab nicht sehen, hat Ihre Kirche diese Funktion möglicherweise nicht aktiviert.
+Die Registerkarten und Tools, die Sie sehen, variieren je nach Kirche. Administratoren steuern, welche Abschnitte für Mitglieder durch B1 Admin sichtbar sind. Wenn Sie also eine hier beschriebene Funktion nicht sehen, hat Ihre Kirche sie möglicherweise nicht aktiviert.
 :::
-
-## Mobile Navigation
-
-Auf kleineren Bildschirmen wie Telefonen und Tablets klappt die Seitenleiste ein, um Platz zu sparen. Stattdessen sehen Sie oben im Mitgliederportal eine Schaltfläche **Menü**. Tippen Sie darauf, um eine Liste aller verfügbaren Tabs zu öffnen. Wählen Sie einen Tab aus, um zu diesem Bereich zu navigieren, und das Menü schließt sich automatisch.
-
-## Admin-Tab
-
-Wenn Sie über Administratorberechtigungen in Ihrer Kirche verfügen, sehen Sie unten in der Seitenleiste einen zusätzlichen **Admin**-Tab. Ein Klick darauf führt Sie zu B1 Admin, wo Sie die Einstellungen und Daten Ihrer Kirche verwalten können.
-
-## Navigation in der oberen Kopfzeile
-
-Außerhalb des Mitgliederportals enthält die Kopfzeile der Hauptwebsite die benutzerdefinierten Navigationslinks Ihrer Kirche. Diese werden von den Verwaltern Ihrer Kirche konfiguriert und können Links zu Seiten wie [Predigten](../content/sermons.md), der [Bibel](../content/bible.md), [Live-Streaming](../content/live-streaming.md) und anderen Inhalten enthalten. Auf mobilen Geräten sind diese Links über ein Hamburger-Menüsymbol oben rechts in der Kopfzeile zugänglich.

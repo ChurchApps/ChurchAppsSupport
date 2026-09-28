@@ -1,48 +1,53 @@
 ---
-title: "Attendance"
+title: "Dumalo"
 ---
 
-# Attendance
+# Dumalo
 
 <div class="article-intro">
 
-Ibinibigay ng seksyong Attendance sa B1 Admin ang isang kumpletong larawan kung sino ang dumadalo sa iyong simbahan at kung paano lumalago ang iyong mga grupo sa paglipas ng panahon. Mula sa pag-configure ng mga campus at service times hanggang sa pagsusuri ng mga trend at pag-set up ng self check-in, lahat ng kailangan mo para masubaybayan at maunawaan ang attendance ay pinamamahalaan mula sa page na ito.
+Ang Dumalo na seksyon sa B1 Admin ay nagbibigay sa iyo ng kumpletong paningin kung sino ang dumarating sa iyong simbahan at kung paano lumalaki ang iyong mga grupo sa paglipas ng panahon. Mula sa pag-setup ng mga campus at oras ng serbisyo hanggang sa pagsusuri ng mga uso at pag-setup ng self check-in, lahat ng kailangan mo upang subaybayan at maunawaan ang dumalo ay nililinig mula sa pahinang ito.
 
 </div>
 
-## Pangkalahatang-ideya ng Page
+## Pangkalahatang Pagsusuri ng Pahina
 
-Kapag binuksan mo ang Attendance page, makikita mo ang isang header na may mahahalagang istatistika tungkol sa attendance setup ng iyong simbahan:
+Kapag binuksan mo ang pahina ng Dumalo, makikita mo ang isang header na may mga pangunahing istatistika tungkol sa setup ng dumalo ng iyong simbahan:
 
-- **Campuses** -- ang bilang ng mga pisikal na lokasyon na na-configure mo
-- **Service Times** -- ang kabuuang bilang ng mga serbisyo sa lahat ng campus
-- **Scheduled Groups** -- mga grupong nakatalaga sa isang partikular na service time
-- **Unscheduled Groups** -- mga grupong sumusubaybay ng attendance nang hiwalay sa isang service time
+- **Mga Campus** -- ang bilang ng mga pisikal na lokasyon na iyong na-configure
+- **Oras ng Serbisyo** -- ang kabuuang bilang ng mga serbisyo sa lahat ng mga campus
+- **Mga Naplanong Grupo** -- mga grupo na nakatalagang may tiyak na oras ng serbisyo
+- **Mga Walang Plano na Grupo** -- mga grupo na sumusubaybay sa dumalo nang independyente mula sa isang oras ng serbisyo
 
-Sa ilalim ng header, tatlong tab ang nag-oorganisa ng iyong mga tool para sa attendance.
+Sa ibaba ng header, tatlong tab ang nag-oorganisa ng iyong mga tool sa dumalo.
 
 ## Mga Tab
 
 ### Setup
 
-Ang tab na **Setup** ay kung saan mo ico-configure ang mga building block ng attendance tracking. Dito mo tinutukoy ang iyong mga campus, nagdaragdag ng service times sa bawat campus, at itina-assign ang mga [grupo](../groups/creating-groups.md) sa mga service time na iyon. Kailangan mo lang itong gawin nang isang beses, bagama't puwede mo itong i-update kailanman magbago ang iyong iskedyul. Tingnan ang [Attendance Setup](setup.md) para sa buong walkthrough.
+Ang tab na **Setup** ay kung saan mo iko-configure ang mga bloke ng bumubuo sa pagsubaybay sa dumalo. Dito mo tinutukoy ang iyong mga campus, idinaragdag ang oras ng serbisyo sa bawat campus, at nagtatalaga ng [mga grupo](../groups/creating-groups.md) sa mga oras na iyon ng serbisyo. Kailangan mo lamang gawin ito minsan, kahit na maaari mo itong i-update kapag nagbago ang iyong iskedyul. Makita ang [Attendance Setup](setup.md) para sa buong paglalakbay.
 
-### Attendance
+### Dumalo
 
-Ipinapakita ng tab na **Attendance** ang mga trend ng attendance sa paglipas ng panahon. Gamitin ang mga filter para paliitin ang mga resulta ayon sa date range, campus, o service time at mabilis na matukoy ang mga pattern sa iyong data. Tingnan ang [Tracking Attendance](tracking-attendance.md) para sa mga detalye kung paano gamitin ang mga report at filter.
+Ang tab na **Dumalo** ay nagpapakita ng mga uso sa dumalo sa paglipas ng panahon. Gamitin ang mga filter upang maangkop ang mga resulta ayon sa saklaw ng petsa, campus, o oras ng serbisyo at mabilis na tukuyin ang mga pattern sa iyong data. Makita ang [Pagsusubaybay sa Dumalo](tracking-attendance.md) para sa mga detalye sa paggamit ng mga ulat at filter.
 
-### Groups
+### Mga Grupo
 
-Hinahati ng tab na **Groups** ang attendance ayon sa bawat indibidwal na grupo. Kapaki-pakinabang ito kapag gusto mong makita kung paano ang isang partikular na maliit na grupo, klase, o ministry team ay gumagana sa halip na tumingin sa mga numero para sa buong simbahan.
+Ang tab na **Mga Grupo** ay binabawasan ang dumalo sa pamamagitan ng indibidwal na grupo. Ito ay kapaki-pakinabang kapag nais mong makita kung paano gumagana ang isang tiyak na maliit na grupo, klase, o koponan ng ministeri kaysa sa pagtingin sa mga numerong pangbuong-simbahan.
+
+### Mga Bilang ng Ulo at Uso ng Bilang ng Ulo
+
+Ang tab na **Mga Bilang ng Ulo** ay nagpapahintulot sa iyo na magtatala ng isang simpleng kabuuang bilang para sa isang serbisyo, oras ng serbisyo, o grupo sa halip na isang nakarangal na listahan, at ang tab na **Uso ng Bilang ng Ulo** ay nag-chart ng mga kabuuang iyon sa pamamagitan ng linggo. Makita ang [Pagpasok ng Bilang ng Ulo at Uso](headcount-entry.md) para sa mga detalye.
 
 ## Mga Susunod na Hakbang
 
-- [Attendance Setup](setup.md) -- i-configure ang mga campus, service times, at grupo
-- [Recording Attendance](recording-attendance.md) -- manu-manong maglagay ng attendance para sa isang session ng grupo
-- [Tracking Attendance](tracking-attendance.md) -- tingnan ang mga trend at i-filter ang mga report
-- [Check-In](check-in.md) -- mag-set up ng self check-in para sa mga serbisyo
-- [Check-In Safety](checkin-safety.md) -- kapasidad ng silid, ratio ng volunteer, mga taong pwedeng mag-pickup, at paging
+- [Attendance Setup](setup.md) -- i-configure ang mga campus, oras ng serbisyo, at mga grupo
+- [Pag-record ng Dumalo](recording-attendance.md) -- manu-manong ipasok ang dumalo para sa isang session ng grupo at magsagawa ng mga sheet ng class roll
+- [Pagsusubaybay sa Dumalo](tracking-attendance.md) -- tingnan ang mga uso at i-filter ang mga ulat
+- [Pagpasok ng Bilang ng Ulo at Uso](headcount-entry.md) -- magtatala at mag-chart ng kabuuang bilang nang walang nakarangal na listahan
+- [Check-In](check-in.md) -- mag-setup ng self check-in para sa mga serbisyo
+- [Kaligtasan ng Check-In](checkin-safety.md) -- kapasidad ng kwarto, ratio ng boluntaryo, mga taong pumupulot, at paging
 
 :::tip
-Kung nagse-set up ka ng attendance sa unang pagkakataon, magsimula sa gabay na [Attendance Setup](setup.md) para tukuyin ang iyong mga campus at service times. Kapag naitakda na iyon, puwede mo nang simulan ang [pagre-record ng attendance](recording-attendance.md) nang manu-mano o mag-set up ng [self check-in](check-in.md).
+Kung nag-setup ka ng dumalo sa unang pagkakataon, magsimula sa gabay [Attendance Setup](setup.md) upang tukuyin ang iyong mga campus at oras ng serbisyo. Kapag naipon na iyon, maaari kang magsimulang [mag-record ng dumalo](recording-attendance.md) nang manu-manong o mag-setup ng [self check-in](check-in.md).
 :::

@@ -1,65 +1,80 @@
 ---
-title: "Registrando Presença"
+title: "Registrando Frequência"
 ---
 
-# Registrando Presença
+# Registrando Frequência
 
 <div class="article-intro">
 
-Once your campuses, service times, and groups are set up, you can manually record attendance after each gathering. B1 Admin organizes attendance around **sessions** -- one session per group per meeting date. You create the session, mark who showed up, and the data feeds directly into your attendance reports.
+Depois que suas sedes, horários de serviço e grupos estiverem configurados, você pode registrar manualmente a frequência após cada reunião. O B1 Admin organiza a frequência em torno de **sessões** -- uma sessão por grupo por data de reunião. Você cria a sessão, marca quem compareceu e os dados alimentam diretamente seus relatórios de frequência.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Antes de Começar</h4>
 
-- Your campuses, service times, and groups must be configured. See [Attendance Setup](setup.md) if you haven't done this yet.
-- The groups you want to track must have **Track Attendance** enabled. See [Attendance Setup](setup.md) for details.
+- Suas sedes, horários de serviço e grupos devem ser configurados. Consulte [Configuração de Frequência](setup.md) se você ainda não fez isso.
+- Os grupos que você deseja rastrear devem ter **Rastrear Frequência** ativado. Consulte [Configuração de Frequência](setup.md) para detalhes.
 
 </div>
 
 ## Criando uma Sessão
 
-A session represents one occurrence of a group meeting -- for example, your K--3rd grade class on a specific Sunday.
+Uma sessão representa uma ocorrência de uma reunião de grupo -- por exemplo, sua classe de K a 3º ano em um domingo específico.
 
-1. Open **B1 Admin**, open the **section menu** in the top-left corner and choose **People**, then click the **Groups** tab.
-2. Select the group you want to record attendance for.
-3. Click the **Sessions** tab.
-4. Click **New** to create a new session.
-5. If the group is assigned to a service time, choose the **Service Time**. If it is an unscheduled group, this field will not appear.
-6. Select the **Session Date** -- this can be today, a past date, or a future date.
-7. Click **Save**.
-
-:::tip
-You can create sessions for past dates to catch up on attendance you haven't recorded yet, or create them in advance so they are ready when your group meets.
-:::
-
-## Marcando Presença
-
-After saving the session, the group's members appear on the right side of the page.
-
-1. Check the box next to each person who attended.
-2. Changes are saved automatically -- there is no additional Save button for attendance marks.
-
-:::info
-Only current group members appear in the session list. If someone attended but is not yet in the group, [add them to the group](../groups/group-members.md) first, then record their attendance.
-:::
-
-## Exporting Attendance to a Spreadsheet
-
-You can download a record of the session as a CSV file to use in Excel, Numbers, or Google Sheets.
-
-1. Open the session you want to export.
-2. Click the **Download CSV** button.
-3. Open the downloaded file in your spreadsheet application.
-
-## Visualizando Presença Registrada
-
-After recording sessions, the data appears in your attendance reports.
-
-- **Attendance tab** -- shows church-wide trends over time. See [Tracking Attendance](tracking-attendance.md).
-- **Groups tab** -- shows attendance broken down by individual group.
+1. Abra **B1 Admin**, abra o **menu de seção** no canto superior esquerdo e escolha **Pessoas**, depois clique na guia **Grupos**.
+2. Selecione o grupo para o qual deseja registrar a frequência.
+3. Clique na guia **Sessões**.
+4. Clique em **Novo** para criar uma nova sessão.
+5. Se o grupo for atribuído a um horário de serviço, escolha o **Horário de Serviço**. Se for um grupo não agendado, este campo não aparecerá.
+6. Selecione a **Data da Sessão** -- pode ser hoje, uma data passada ou uma data futura.
+7. Clique em **Salvar**.
 
 :::tip
-If a session you just created does not appear in reports right away, make sure the session date falls within the date range selected in the report filters.
+Você pode criar sessões para datas passadas para recuperar a frequência que você ainda não registrou, ou criá-las com antecedência para que estejam prontas quando seu grupo se reunir.
+:::
+
+## Marcando Frequência
+
+Selecione uma sessão para ver sua lista de frequência. Cada membro do grupo está listado com uma caixa de seleção, classificado por sobrenome, e qualquer pessoa já registrada como presente é marcada.
+
+1. Marque a caixa ao lado de cada pessoa que compareceu. Use **Selecionar Tudo** ou **Selecionar Nenhum** para alterar todos de uma vez.
+2. A contagem acima da lista (por exemplo, "12 de 15 presentes") é atualizada conforme você marca as caixas.
+3. Clique em **Salvar Frequência**. Nada é registrado até que você salve, e uma mensagem confirma quando o salvamento é concluído.
+
+Desmarcar alguém que já foi registrado como presente e depois salvar os remove da sessão.
+
+### Adicionando Visitantes
+
+Para registrar alguém que não é membro do grupo, procure por ele na pesquisa de pessoas ao lado da lista de frequência. Se ele ainda não estiver no seu banco de dados, você pode criá-lo a partir da pesquisa. Ele é adicionado à lista já marcado. Clique em **Salvar Frequência** para registrá-lo.
+
+As pessoas que fizeram check-in em um quiosque mostram um chip **Voluntário** ou **Convidado**. As pessoas que não são membros do grupo mostram um chip **Convidado**.
+
+## Imprimindo uma Folha de Chamada
+
+Uma folha de chamada é uma lista de classe imprimível que os professores podem marcar manualmente e devolver para você inserir depois. Cada folha mostra o nome da igreja, a classe, o horário de serviço e uma linha de data. Cada membro tem caixas de **Presente** e **Ausente**, e há linhas em branco para visitantes e uma área de **Professor / Anotações**.
+
+- **De uma sessão** -- Clique no ícone **Imprimir Folha de Chamada** (impressora) no topo da lista de frequência da sessão. A folha é datada com a data da sessão.
+- **Todas as classes de um serviço** -- Se a sessão tiver um horário de serviço, clique em **Imprimir Todas as Classes** para imprimir uma folha por classe atribuída ao horário de serviço. Cada classe é impressa em sua própria página.
+- **Da guia Membros** -- Clique no ícone **Imprimir Folha de Chamada** acima da lista de membros do grupo para imprimir uma folha sem data.
+
+A folha é aberta em uma nova guia e o diálogo de impressão do seu navegador aparece automaticamente.
+
+## Exportando Frequência para uma Planilha
+
+Você pode baixar um registro da sessão como um arquivo CSV para usar no Excel, Numbers ou Google Sheets.
+
+1. Abra a sessão que deseja exportar.
+2. Clique no botão **Exportar** no topo da lista de frequência.
+3. Abra o arquivo baixado no seu aplicativo de planilha.
+
+## Visualizando Frequência Registrada
+
+Depois de registrar sessões, os dados aparecem em seus relatórios de frequência.
+
+- **Guia Tendência de Frequência** -- mostra tendências em toda a igreja ao longo do tempo. Consulte [Rastreamento de Frequência](tracking-attendance.md).
+- **Guia Frequência de Grupo** -- mostra frequência dividida por grupo individual.
+
+:::tip
+Se uma sessão que você acabou de criar não aparecer nos relatórios imediatamente, certifique-se de que a data da sessão se enquadra no intervalo de datas selecionado nos filtros do relatório.
 :::

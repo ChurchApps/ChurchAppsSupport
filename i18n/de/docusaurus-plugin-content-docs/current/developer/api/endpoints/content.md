@@ -6,26 +6,27 @@ title: "Content-Endpunkte"
 
 <div class="article-intro">
 
-Das Content-Modul verwaltet Website-Seiten, Abschnitte, Elemente, Blöcke, Blogbeiträge, Weiterleitungen, Predigten, Playlists, Streaming-Dienste, Termine, kuratierte Kalender, Dateien, Galerien, Bibelübersetzungen und Versnachschlagewerke, Songs, Arrangements, globale Stile, Stockfotos und Einstellungen. Es ist das größte Modul der API und treibt das CMS, Medien-/Streaming-Funktionen, die Gottesdienstplanung und die Bibel-Funktionen in allen ChurchApps-Anwendungen an.
+Das Content-Modul verwaltet Website-Seiten, Abschnitte, Elemente, Blöcke, Blog-Posts, Weiterleitungen, Predigten, Wiedergabelisten, Streaming-Services, Ereignisse, kuratierte Kalender, Dateien, Galerien, Bibelübersetzungen und Vers-Lookups, Songs, Arrangements, globale Stile, Stockfotos und Einstellungen. Es ist das größte Modul in der API und unterstützt die CMS-, Media/Streaming-, Worship-Planning- und Bible-Funktionen in allen ChurchApps-Anwendungen.
 
 </div>
 
 **Basispfad:** `/content`
 
-## Seiten (Pages)
+## Seiten
 
 Basispfad: `/content/pages`
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/:churchId/tree?url=&id=` | Öffentlich | — | Vollständigen Seitenbaum (Abschnitte, Elemente, Blöcke) anhand von URL oder ID laden. Entfernt interne IDs bei Abruf über URL. URL-basierte Abrufe erzwingen `pages.visibility` — eine gesperrte Seite liefert `{ restricted: true, visibility }`, sofern das (optionale) JWT die Bedingung nicht erfüllt |
-| GET | `/public/:churchId` | Öffentlich | — | Öffentliche Seiten auflisten (`url`, `title`, `metaDescription`); nur `visibility = everyone` |
-| GET | `/:id` | JWT | — | Eine Seite anhand der ID abrufen |
-| GET | `/` | JWT | — | Alle Seiten der Kirche auflisten |
-| POST | `/duplicate/:id` | JWT | Content.Edit | Eine Seite mit allen Abschnitten und Elementen duplizieren |
-| POST | `/temp/ai` | JWT | Content.Edit | Eine KI-generierte Seite speichern (Seite, Abschnitte und Elemente in einem Aufruf) |
+| GET | `/:churchId/tree?url=&id=` | Public | — | Laden Sie den vollständigen Seitenbaum (Abschnitte, Elemente, Blöcke) nach URL oder ID. Entfernt interne IDs beim Abrufen nach URL. URL-basierte Abrufe erzwingen `pages.visibility` – eine geschützte Seite gibt `{ restricted: true, visibility }` zurück, es sei denn, das (optionale) JWT erfüllt die Gate |
+| GET | `/public/:churchId` | Public | — | Liste öffentlicher Seiten (`url`, `title`, `metaDescription`); nur `visibility = everyone` |
+| GET | `/:id` | JWT | — | Seite nach ID abrufen |
+| GET | `/` | JWT | — | Liste aller Seiten für die Kirche |
+| POST | `/duplicate/:id` | JWT | Content.Edit | Duplizieren Sie eine Seite mit allen Abschnitten und Elementen |
+| POST | `/temp/ai` | JWT | Content.Edit | Speichern Sie eine KI-generierte Seite (Seite, Abschnitte und Elemente in einem Aufruf) |
+| POST | `/importTree` | JWT | Content.Edit | Erstellen Sie eine Seite aus einem verschachtelten Baum (`title`, `url`, `sections[].elements[]…`). Wird immer unter der Kirche des Aufrufers eingefügt; IDs im Body werden ignoriert. Zeilen müssen ihre `column`-Kinder enthalten. Max. 30 Abschnitte / 500 Elemente |
 | POST | `/` | JWT | Content.Edit | Seiten erstellen oder aktualisieren (Batch) |
-| DELETE | `/:id` | JWT | Content.Edit | Eine Seite löschen |
+| DELETE | `/:id` | JWT | Content.Edit | Seite löschen |
 
 ### Beispiel: Seitenbaum laden
 
@@ -49,139 +50,139 @@ GET /content/pages/abc-church-id/tree?url=/about
 }
 ```
 
-## Abschnitte (Sections)
+## Abschnitte
 
 Basispfad: `/content/sections`
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Einen Abschnitt anhand der ID abrufen |
-| POST | `/duplicate/:id?convertToBlock=` | JWT | Content.Edit | Einen Abschnitt duplizieren oder in einen wiederverwendbaren Block umwandeln |
-| POST | `/` | JWT | Content.Edit | Abschnitte erstellen oder aktualisieren (Batch). Aktualisiert die Sortierreihenfolge automatisch |
-| DELETE | `/:id` | JWT | Content.Edit | Einen Abschnitt löschen (aktualisiert die Sortierreihenfolge automatisch) |
+| GET | `/:id` | JWT | — | Abschnitt nach ID abrufen |
+| POST | `/duplicate/:id?convertToBlock=` | JWT | Content.Edit | Duplizieren Sie einen Abschnitt oder konvertieren Sie ihn in einen wiederverwendbaren Block |
+| POST | `/` | JWT | Content.Edit | Abschnitte erstellen oder aktualisieren (Batch). Aktualisiert automatisch die Sortierreihenfolge |
+| DELETE | `/:id` | JWT | Content.Edit | Abschnitt löschen (aktualisiert automatisch die Sortierreihenfolge) |
 
-## Elemente (Elements)
+## Elemente
 
 Basispfad: `/content/elements`
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Ein Element anhand der ID abrufen |
-| POST | `/duplicate/:id` | JWT | Content.Edit | Ein Element mit allen untergeordneten Elementen duplizieren |
-| POST | `/` | JWT | Content.Edit | Elemente erstellen oder aktualisieren (Batch). Verwaltet Zeilenspalten und Karussell-Folien automatisch |
-| DELETE | `/:id` | JWT | Content.Edit | Ein Element löschen |
+| GET | `/:id` | JWT | — | Element nach ID abrufen |
+| POST | `/duplicate/:id` | JWT | Content.Edit | Duplizieren Sie ein Element mit allen Kindern |
+| POST | `/` | JWT | Content.Edit | Elemente erstellen oder aktualisieren (Batch). Verwaltet automatisch Zeilenspalten und Karussell-Folien |
+| DELETE | `/:id` | JWT | Content.Edit | Element löschen |
 
-## Blöcke (Blocks)
+## Blöcke
 
 Basispfad: `/content/blocks`
 
-Erweitert Standard-CRUD (GET `/:id`, GET `/`, POST `/`, DELETE `/:id` aus der Basisklasse, mit Content.Edit-Berechtigung für Schreibzugriffe).
+Erweitert Standard-CRUD (GET `/:id`, GET `/`, POST `/`, DELETE `/:id` aus der Basisklasse mit Content.Edit-Berechtigung für Schreibvorgänge).
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Einen Block anhand der ID abrufen |
-| GET | `/` | JWT | — | Alle Blöcke auflisten |
-| GET | `/:churchId/tree/:id` | Öffentlich | — | Vollständigen Blockbaum mit Abschnitten und Elementen laden |
+| GET | `/:id` | JWT | — | Block nach ID abrufen |
+| GET | `/` | JWT | — | Liste aller Blöcke |
+| GET | `/:churchId/tree/:id` | Public | — | Laden Sie den vollständigen Block-Baum mit Abschnitten und Elementen |
 | GET | `/blockType/:blockType` | JWT | — | Blöcke nach Typ laden (z. B. footerBlock, elementBlock) |
-| GET | `/public/footer/:churchId` | Öffentlich | — | Footer-Blockbaum einer Kirche laden |
+| GET | `/public/footer/:churchId` | Public | — | Footer-Block-Baum für eine Kirche laden |
 | POST | `/` | JWT | Content.Edit | Blöcke erstellen oder aktualisieren |
-| DELETE | `/:id` | JWT | Content.Edit | Einen Block löschen |
+| DELETE | `/:id` | JWT | Content.Edit | Block löschen |
 
 ## Links
 
 Basispfad: `/content/links`
 
-Erweitert Standard-CRUD (GET `/:id`, GET `/`, POST `/`, DELETE `/:id` aus der Basisklasse, mit Content.Edit-Berechtigung für Schreibzugriffe).
+Erweitert Standard-CRUD (GET `/:id`, GET `/`, POST `/`, DELETE `/:id` aus der Basisklasse mit Content.Edit-Berechtigung für Schreibvorgänge).
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Einen Link anhand der ID abrufen |
-| GET | `/` | JWT | — | Alle Links auflisten. Optionaler `?category=`-Filter. Sortiert nach dem Speichern automatisch |
-| GET | `/church/:churchId/filtered?category=` | JWT | — | Links gefiltert nach Sichtbarkeit laden (everyone, visitors, members, staff, groups) |
-| GET | `/church/:churchId?category=` | Öffentlich | — | Links einer Kirche nach Kategorie laden (öffentlich) |
-| POST | `/` | JWT | Content.Edit | Links erstellen oder aktualisieren (Batch). Sortiert automatisch nach Kategorie |
-| DELETE | `/:id` | JWT | Content.Edit | Einen Link löschen |
+| GET | `/:id` | JWT | — | Link nach ID abrufen |
+| GET | `/` | JWT | — | Liste aller Links. Optionaler `?category=`-Filter. Wird nach dem Speichern automatisch sortiert |
+| GET | `/church/:churchId/filtered?category=` | JWT | — | Links laden gefiltert nach Sichtbarkeit (everyone, visitors, members, staff, groups) |
+| GET | `/church/:churchId?category=` | Public | — | Links für eine Kirche nach Kategorie laden (öffentlich) |
+| POST | `/` | JWT | Content.Edit | Links erstellen oder aktualisieren (Batch). Wird automatisch nach Kategorie sortiert |
+| DELETE | `/:id` | JWT | Content.Edit | Link löschen |
 
-## Globale Stile (Global Styles)
+## Globale Stile
 
 Basispfad: `/content/globalStyles`
 
-Erweitert Standard-CRUD (POST `/`, DELETE `/:id` aus der Basisklasse, mit Content.Edit-Berechtigung für Schreibzugriffe).
+Erweitert Standard-CRUD (POST `/`, DELETE `/:id` aus der Basisklasse mit Content.Edit-Berechtigung für Schreibvorgänge).
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/church/:churchId` | Öffentlich | — | Globale Stile einer Kirche laden (liefert Standardwerte, falls keine gesetzt sind) |
-| GET | `/` | JWT | — | Globale Stile der authentifizierten Kirche laden |
+| GET | `/church/:churchId` | Public | — | Globale Stile für eine Kirche laden (gibt Standardwerte zurück, falls keine gesetzt) |
+| GET | `/` | JWT | — | Globale Stile für die authentifizierte Kirche laden |
 | POST | `/` | JWT | Content.Edit | Globale Stile erstellen oder aktualisieren |
 | DELETE | `/:id` | JWT | Content.Edit | Globale Stile löschen |
 
-## Seitenverlauf (Page History)
+## Seitenverlauf
 
 Basispfad: `/content/pageHistory`
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/page/:pageId` | JWT | Content.Edit | Verlaufseinträge für eine Seite auflisten |
+| GET | `/page/:pageId` | JWT | Content.Edit | Verlaufsceinträge für eine Seite auflisten |
 | GET | `/block/:blockId` | JWT | Content.Edit | Verlaufseinträge für einen Block auflisten |
-| GET | `/:id` | JWT | Content.Edit | Einen Verlaufseintrag anhand der ID abrufen |
-| POST | `/` | JWT | Content.Edit | Einen Seiten-/Block-Snapshot speichern. Bereinigt periodisch Einträge, die älter als 30 Tage sind |
-| POST | `/restore/:id` | JWT | Content.Edit | Eine Seite/einen Block aus einem Verlaufs-Snapshot wiederherstellen (löscht den aktuellen Inhalt und erstellt ihn aus dem Snapshot neu) |
-| POST | `/restoreSnapshot` | JWT | Content.Edit | Aus einem eingebetteten Snapshot-Objekt wiederherstellen. Body: `{ pageId, blockId, snapshot }` |
+| GET | `/:id` | JWT | Content.Edit | Verlaufseintrag nach ID abrufen |
+| POST | `/` | JWT | Content.Edit | Speichern Sie eine Seite/Block-Momentaufnahme. Bereinigt regelmäßig Einträge, die älter als 30 Tage sind |
+| POST | `/restore/:id` | JWT | Content.Edit | Seite/Block aus einer Verlaufs-Momentaufnahme wiederherstellen (löscht aktuellen Inhalt und erstellt ihn aus der Momentaufnahme neu) |
+| POST | `/restoreSnapshot` | JWT | Content.Edit | Aus einem Inline-Momentaufnahme-Objekt wiederherstellen. Body: `{ pageId, blockId, snapshot }` |
 
-## Beiträge (Blog)
+## Posts (Blog)
 
 Basispfad: `/content/posts`
 
-Blogbeiträge sind eigenständige Datensätze: `title`, `slug` (eindeutig je Kirche), `excerpt`, `content` (Markdown-Text), `authorId`, `photoUrl`, `publishDate`, `category` und `tags`. Ein Beitrag ist veröffentlicht, sobald `publishDate` gesetzt ist und in der Vergangenheit liegt. Lese-Endpunkte reichern jeden Beitrag mit dem aus `authorId` aufgelösten `authorName` an. Siehe [Website-Builder-Architektur](../../architecture/website-builder#blog).
+Blog-Posts sind eigenständige Zeilen: `title`, `slug` (eindeutig pro Kirche), `excerpt`, `content` (Markdown-Body), `authorId`, `photoUrl`, `publishDate`, `category` und `tags`. Ein Post wird veröffentlicht, sobald `publishDate` gesetzt und in der Vergangenheit liegt. Read-Endpunkte bereichern jeden Post mit `authorName`, das aus `authorId` aufgelöst wird. Siehe [Website Builder Architecture](../../architecture/website-builder#blog).
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/public/:churchId?category=&tag=&page=&pageSize=` | Öffentlich | — | Veröffentlichte Beiträge auflisten, paginiert (max. 50 pro Seite) |
-| GET | `/public/:churchId/categories` | Öffentlich | — | Eindeutige Kategorien aller veröffentlichten Beiträge |
-| GET | `/public/:churchId/slug/:slug` | Öffentlich | — | Einen veröffentlichten Beitrag anhand des Slugs abrufen |
-| GET | `/rss/:churchId?siteUrl=` | Öffentlich | — | RSS-2.0-Feed veröffentlichter Beiträge (Links werden als `{siteUrl}/blog/{slug}` gebildet) |
-| GET | `/:id` | JWT | — | Einen Beitrag anhand der ID abrufen |
-| GET | `/` | JWT | — | Alle Beiträge der Kirche auflisten |
-| POST | `/` | JWT | Content.Edit | Beiträge erstellen oder aktualisieren (Batch) |
-| DELETE | `/:id` | JWT | Content.Edit | Einen Beitrag löschen |
+| GET | `/public/:churchId?category=&tag=&page=&pageSize=` | Public | — | Veröffentlichte Posts auflisten, paginiert (max. 50 pro Seite) |
+| GET | `/public/:churchId/categories` | Public | — | Unterschiedliche Kategorien über veröffentlichte Posts hinweg |
+| GET | `/public/:churchId/slug/:slug` | Public | — | Veröffentlichten Post nach Slug abrufen |
+| GET | `/rss/:churchId?siteUrl=` | Public | — | RSS 2.0-Feed veröffentlichter Posts (Links gebaut als `{siteUrl}/blog/{slug}`) |
+| GET | `/:id` | JWT | — | Post nach ID abrufen |
+| GET | `/` | JWT | — | Liste aller Posts für die Kirche |
+| POST | `/` | JWT | Content.Edit | Posts erstellen oder aktualisieren (Batch) |
+| DELETE | `/:id` | JWT | Content.Edit | Post löschen |
 
-## Weiterleitungen (Redirects)
+## Umleitungen
 
 Basispfad: `/content/redirects`
 
-Kirchenspezifische URL-Weiterleitungen (`fromPath` → `toPath`), begrenzt auf 200 pro Kirche. Pfade werden normalisiert (Kleinschreibung, führender Schrägstrich, kein abschließender Schrägstrich), und `fromPath` ist je Kirche eindeutig. B1App löst diese bei drohenden 404-Fehlern auf und gibt einen HTTP-308-Status aus.
+Pro-Kirchen-URL-Umleitungen (`fromPath` → `toPath`), begrenzt auf 200 pro Kirche. Pfade werden normalisiert (kleingeschrieben, führender Schrägstrich, kein nachgestellter Schrägstrich) und `fromPath` ist eindeutig pro Kirche. B1App löst diese bei würde-404s auf und gibt HTTP 308 aus.
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/public/:churchId?path=` | Öffentlich | — | Einen Pfad auflösen (oder alle Weiterleitungen auflisten, wenn `path` weggelassen wird) |
-| GET | `/:id` | JWT | — | Eine Weiterleitung anhand der ID abrufen |
-| GET | `/` | JWT | — | Alle Weiterleitungen der Kirche auflisten |
-| POST | `/` | JWT | Content.Edit | Weiterleitungen erstellen oder aktualisieren. Lehnt `fromPath = toPath` ab und erzwingt die 200-Zeilen-Obergrenze |
-| DELETE | `/:id` | JWT | Content.Edit | Eine Weiterleitung löschen |
+| GET | `/public/:churchId?path=` | Public | — | Pfad auflösen (oder alle Umleitungen auflisten, wenn `path` weggelassen wird) |
+| GET | `/:id` | JWT | — | Umleitung nach ID abrufen |
+| GET | `/` | JWT | — | Liste aller Umleitungen für die Kirche |
+| POST | `/` | JWT | Content.Edit | Umleitungen erstellen oder aktualisieren. Lehnt `fromPath = toPath` ab und erzwingt die 200-Zeilen-Obergrenze |
+| DELETE | `/:id` | JWT | Content.Edit | Umleitung löschen |
 
-## Predigten (Sermons)
+## Predigten
 
 Basispfad: `/content/sermons`
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/public/freeshowSample` | JWT | — | Eine Beispiel-FreeShow-Playlist-Struktur abrufen |
-| GET | `/public/tvWrapper/:churchId` | JWT | — | TV-App-Wrapper mit Predigt-, Lektions- und FreeShow-Quellen abrufen |
-| GET | `/public/tvFeed/:churchId/:sermonId` | Öffentlich | — | Eine einzelne Predigt als TV-Feed-Playlist abrufen |
-| GET | `/public/tvFeed/:churchId` | Öffentlich | — | Alle öffentlichen Playlists/Predigten als TV-Feed abrufen |
-| GET | `/public/:churchId` | Öffentlich | — | Alle öffentlichen Predigten einer Kirche auflisten |
-| GET | `/timeline?sermonIds=` | JWT | — | Zeitleistendaten für Predigten laden |
-| GET | `/lookup?videoType=&videoData=` | Öffentlich | — | Predigt-Metadaten von YouTube oder Vimeo nachschlagen |
-| GET | `/socialSuggestions?youtubeVideoId=` | JWT | — | KI-Vorschläge für Social-Media-Beiträge anhand der Predigt-Untertitel erzeugen |
-| GET | `/outline?url=&title=&author=` | JWT | — | KI-generierte Lektionsgliederung aus einer URL erzeugen |
-| GET | `/youtubeImport/:channelId` | JWT | — | Videos von einem YouTube-Kanal importieren |
+| GET | `/public/freeshowSample` | JWT | — | Abrufen einer Beispiel-FreeShow-Wiedergabelistenstruktur |
+| GET | `/public/tvWrapper/:churchId` | JWT | — | TV-App-Wrapper mit Predigt-, Unterrichts- und FreeShow-Quellen abrufen |
+| GET | `/public/tvFeed/:churchId/:sermonId` | Public | — | Abrufen einer einzelnen Predigt als TV-Feed-Wiedergabeliste |
+| GET | `/public/tvFeed/:churchId` | Public | — | Abrufen aller öffentlichen Wiedergabelisten/Predigten als TV-Feed |
+| GET | `/public/:churchId` | Public | — | Liste aller öffentlichen Predigten für eine Kirche |
+| GET | `/timeline?sermonIds=` | JWT | — | Timeline-Daten für Predigten laden |
+| GET | `/lookup?videoType=&videoData=` | Public | — | Predigtmetadaten von YouTube oder Vimeo nachschlagen |
+| GET | `/socialSuggestions?youtubeVideoId=` | JWT | — | KI-Vorschläge für soziale Medien aus Predigt-Untertiteln generieren |
+| GET | `/outline?url=&title=&author=` | JWT | — | KI-Unterrichtsgliederung aus einer URL generieren |
+| GET | `/youtubeImport/:channelId` | JWT | — | Vidoes von einem YouTube-Kanal importieren |
 | GET | `/vimeoImport/:channelId` | JWT | — | Videos von einem Vimeo-Kanal importieren |
-| GET | `/:id` | JWT | — | Eine Predigt anhand der ID abrufen |
-| GET | `/` | JWT | — | Alle Predigten auflisten |
+| GET | `/:id` | JWT | — | Predigt nach ID abrufen |
+| GET | `/` | JWT | — | Liste aller Predigten |
 | POST | `/` | JWT | StreamingServices.Edit | Predigten erstellen oder aktualisieren (Batch, unterstützt Base64-Thumbnail-Upload) |
-| DELETE | `/:id` | JWT | StreamingServices.Edit | Eine Predigt löschen |
+| DELETE | `/:id` | JWT | StreamingServices.Edit | Predigt löschen |
 
-### Beispiel: Eine YouTube-Predigt nachschlagen
+### Beispiel: YouTube-Predigt nachschlagen
 
 ```
 GET /content/sermons/lookup?videoType=youtube&videoData=dQw4w9WgXcQ
@@ -197,126 +198,126 @@ GET /content/sermons/lookup?videoType=youtube&videoData=dQw4w9WgXcQ
 }
 ```
 
-## Playlists
+## Wiedergabelisten
 
 Basispfad: `/content/playlists`
 
-Erweitert Standard-CRUD (GET `/:id`, GET `/`, DELETE `/:id` aus der Basisklasse, mit StreamingServices.Edit-Berechtigung für Schreibzugriffe).
+Erweitert Standard-CRUD (GET `/:id`, GET `/`, DELETE `/:id` aus der Basisklasse mit StreamingServices.Edit-Berechtigung für Schreibvorgänge).
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Eine Playlist anhand der ID abrufen |
-| GET | `/` | JWT | — | Alle Playlists auflisten |
-| GET | `/public/:churchId` | Öffentlich | — | Alle öffentlichen Playlists einer Kirche auflisten |
-| POST | `/` | JWT | StreamingServices.Edit | Playlists erstellen oder aktualisieren (Batch, unterstützt Base64-Thumbnail-Upload) |
-| DELETE | `/:id` | JWT | StreamingServices.Edit | Eine Playlist löschen |
+| GET | `/:id` | JWT | — | Wiedergabeliste nach ID abrufen |
+| GET | `/` | JWT | — | Liste aller Wiedergabelisten |
+| GET | `/public/:churchId` | Public | — | Liste aller öffentlichen Wiedergabelisten für eine Kirche |
+| POST | `/` | JWT | StreamingServices.Edit | Wiedergabelisten erstellen oder aktualisieren (Batch, unterstützt Base64-Thumbnail-Upload) |
+| DELETE | `/:id` | JWT | StreamingServices.Edit | Wiedergabeliste löschen |
 
-## Streaming-Dienste (Streaming Services)
+## Streaming-Services
 
 Basispfad: `/content/streamingServices`
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/:id/hostChat` | JWT | Chat.Host | Verschlüsselte Host-Chatraum-ID für einen Dienst abrufen |
-| GET | `/` | JWT | — | Alle Streaming-Dienste auflisten. Bereinigt automatisch abgelaufene, nicht wiederkehrende Dienste und führt wiederkehrende Dienste weiter |
-| POST | `/` | JWT | StreamingServices.Edit | Streaming-Dienste erstellen oder aktualisieren (Batch) |
-| DELETE | `/:id` | JWT | StreamingServices.Edit | Einen Streaming-Dienst löschen (löscht auch blockierte IPs) |
+| GET | `/:id/hostChat` | JWT | Chat.Host | Abrufen verschlüsselter Host-Chat-Raum-ID für einen Service |
+| GET | `/` | JWT | — | Liste aller Streaming-Services. Bereinigt automatisch abgelaufene nicht wiederholte Services und aktualisiert wiederholte |
+| POST | `/` | JWT | StreamingServices.Edit | Streaming-Services erstellen oder aktualisieren (Batch) |
+| DELETE | `/:id` | JWT | StreamingServices.Edit | Streaming-Service löschen (löscht auch blockierte IPs) |
 
-## Termine (Events)
+## Ereignisse
 
 Basispfad: `/content/events`
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/timeline/group/:groupId?eventIds=` | JWT | — | Zeitleisten-Termine für eine Gruppe laden |
-| GET | `/timeline?eventIds=` | JWT | — | Zeitleisten-Termine für die Gruppen des aktuellen Benutzers laden |
-| GET | `/subscribe?churchId=&groupId=&curatedCalendarId=` | Öffentlich | — | Termine als ICS-Kalender-Feed abonnieren |
-| GET | `/group/:groupId` | JWT | — | Termine für eine Gruppe abrufen (inklusive Ausnahmedaten) |
-| GET | `/public/group/:churchId/:groupId` | Öffentlich | — | Öffentliche Termine für eine Gruppe abrufen |
-| GET | `/:id` | JWT | — | Einen Termin anhand der ID abrufen |
-| POST | `/` | JWT | — | Termine erstellen oder aktualisieren (Batch) |
-| DELETE | `/:id` | JWT | Content.Edit | Einen Termin löschen |
+| GET | `/timeline/group/:groupId?eventIds=` | JWT | — | Timeline-Ereignisse für eine Gruppe laden |
+| GET | `/timeline?eventIds=` | JWT | — | Timeline-Ereignisse für die Gruppen des aktuellen Benutzers laden |
+| GET | `/subscribe?churchId=&groupId=&curatedCalendarId=` | Public | — | Ereignisse als ICS-Kalender-Feed abonnieren |
+| GET | `/group/:groupId` | JWT | — | Abrufen von Ereignissen für eine Gruppe (einschließlich Ausnahmetermine) |
+| GET | `/public/group/:churchId/:groupId` | Public | — | Abrufen öffentlicher Ereignisse für eine Gruppe |
+| GET | `/:id` | JWT | — | Ereignis nach ID abrufen |
+| POST | `/` | JWT | — | Ereignisse erstellen oder aktualisieren (Batch) |
+| DELETE | `/:id` | JWT | Content.Edit | Ereignis löschen |
 
-## Termin-Ausnahmen (Event Exceptions)
+## Ereignisausnahmen
 
 Basispfad: `/content/eventExceptions`
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Eine Terminausnahme anhand der ID abrufen |
-| POST | `/` | JWT | Content.Edit | Terminausnahmen erstellen oder aktualisieren (Batch) |
-| DELETE | `/:id` | JWT | Content.Edit | Eine Terminausnahme löschen |
+| GET | `/:id` | JWT | — | Ereignisausnahme nach ID abrufen |
+| POST | `/` | JWT | Content.Edit | Ereignisausnahmen erstellen oder aktualisieren (Batch) |
+| DELETE | `/:id` | JWT | Content.Edit | Ereignisausnahme löschen |
 
-## Kuratierte Kalender (Curated Calendars)
+## Kuratierte Kalender
 
 Basispfad: `/content/curatedCalendars`
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Einen kuratierten Kalender anhand der ID abrufen |
-| GET | `/` | JWT | — | Alle kuratierten Kalender auflisten |
+| GET | `/:id` | JWT | — | Kuratierter Kalender nach ID abrufen |
+| GET | `/` | JWT | — | Liste aller kuratierten Kalender |
 | POST | `/` | JWT | Content.Edit | Kuratierte Kalender erstellen oder aktualisieren (Batch) |
-| DELETE | `/:id` | JWT | Content.Edit | Einen kuratierten Kalender löschen |
+| DELETE | `/:id` | JWT | Content.Edit | Kuratierter Kalender löschen |
 
-## Kuratierte Termine (Curated Events)
+## Kuratierte Ereignisse
 
 Basispfad: `/content/curatedEvents`
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/calendar/:curatedCalendarId?withoutEvents` | JWT | — | Kuratierte Termine für einen Kalender abrufen (inklusive Termindetails und Ausnahmedaten, sofern `?withoutEvents` nicht gesetzt ist) |
-| GET | `/public/calendar/:churchId/:curatedCalendarId` | Öffentlich | — | Öffentliche kuratierte Termine für einen Kalender abrufen |
-| GET | `/:id` | JWT | — | Einen kuratierten Termin anhand der ID abrufen |
-| GET | `/` | JWT | — | Alle kuratierten Termine auflisten |
-| POST | `/` | JWT | Content.Edit | Kuratierte Termine erstellen oder aktualisieren. Unterstützt ein `eventIds`-Array, um bestimmte Gruppentermine hinzuzufügen |
-| DELETE | `/:id` | JWT | Content.Edit | Einen kuratierten Termin löschen |
-| DELETE | `/calendar/:curatedCalendarId/event/:eventId` | JWT | Content.Edit | Einen bestimmten Termin aus einem kuratierten Kalender entfernen |
-| DELETE | `/calendar/:curatedCalendarId/group/:groupId` | JWT | Content.Edit | Alle Termine einer Gruppe aus einem kuratierten Kalender entfernen |
+| GET | `/calendar/:curatedCalendarId?withoutEvents` | JWT | — | Kuratierte Ereignisse für einen Kalender abrufen (einschließlich Ereignisdetails und Ausnahmetermine, es sei denn, `?withoutEvents` ist gesetzt) |
+| GET | `/public/calendar/:churchId/:curatedCalendarId` | Public | — | Abrufen öffentlicher kuratierter Ereignisse für einen Kalender |
+| GET | `/:id` | JWT | — | Kuratiertes Ereignis nach ID abrufen |
+| GET | `/` | JWT | — | Liste aller kuratierten Ereignisse |
+| POST | `/` | JWT | Content.Edit | Kuratierte Ereignisse erstellen oder aktualisieren. Unterstützt `eventIds`-Array zum Hinzufügen spezifischer Gruppenereignisse |
+| DELETE | `/:id` | JWT | Content.Edit | Kuratiertes Ereignis löschen |
+| DELETE | `/calendar/:curatedCalendarId/event/:eventId` | JWT | Content.Edit | Entfernen Sie ein bestimmtes Ereignis aus einem kuratierten Kalender |
+| DELETE | `/calendar/:curatedCalendarId/group/:groupId` | JWT | Content.Edit | Entfernen Sie alle Ereignisse einer Gruppe aus einem kuratierten Kalender |
 
-## Dateien (Files)
+## Dateien
 
 Basispfad: `/content/files`
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/:contentType/:contentId` | JWT | — | Dateien nach Content-Typ und Content-ID abrufen |
-| GET | `/` | JWT | — | Alle Dateien für die Kirchen-Website auflisten |
-| GET | `/:id` | JWT | — | Eine Datei anhand der ID abrufen |
-| POST | `/` | JWT | Content.Edit* | Dateien hochladen (Base64). *Auch erlaubt, wenn der Benutzer Mitglied der Gruppe ist, die `contentId` entspricht |
-| POST | `/postUrl` | JWT | Content.Edit* | Eine vorsignierte S3-Upload-URL abrufen. *Auch für Gruppenmitglieder erlaubt. Max. 100 MB pro Content-Element |
-| DELETE | `/:id` | JWT | Content.Edit* | Eine Datei löschen und aus dem Speicher entfernen. *Auch für Gruppenmitglieder erlaubt |
+| GET | `/:contentType/:contentId` | JWT | — | Abrufen von Dateien nach Inhaltstyp und Inhalts-ID |
+| GET | `/` | JWT | — | Liste aller Dateien für die Kirchen-Website |
+| GET | `/:id` | JWT | — | Datei nach ID abrufen |
+| POST | `/` | JWT | Content.Edit* | Dateien hochladen (Base64). *Auch erlaubt, wenn der Benutzer ein Mitglied der Gruppe ist, die mit `contentId` übereinstimmt |
+| POST | `/postUrl` | JWT | Content.Edit* | Abrufen einer vorgesignerten S3-Upload-URL. *Auch erlaubt für Gruppenmitglieder. Max. 100 MB pro Inhaltselement |
+| DELETE | `/:id` | JWT | Content.Edit* | Datei löschen und aus dem Speicher entfernen. *Auch erlaubt für Gruppenmitglieder |
 
-## Galerie (Gallery)
+## Galerie
 
 Basispfad: `/content/gallery`
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/stock/:folder` | Öffentlich | — | Stockfotos in einem Ordner auflisten |
-| GET | `/:folder` | JWT | Content.Edit | Galeriebilder in einem Ordner auflisten |
-| POST | `/requestUpload` | JWT | Content.Edit | Eine vorsignierte S3-Upload-URL für ein Galeriebild abrufen |
-| DELETE | `/:folder/:image` | JWT | Content.Edit | Ein Galeriebild löschen |
+| GET | `/stock/:folder` | Public | — | Auflisten von Stockfotos in einem Ordner |
+| GET | `/:folder` | JWT | Content.Edit | Galerie-Bilder in einem Ordner auflisten |
+| POST | `/requestUpload` | JWT | Content.Edit | Abrufen einer vorgesignerten S3-Upload-URL für ein Galerie-Bild |
+| DELETE | `/:folder/:image` | JWT | Content.Edit | Galerie-Bild löschen |
 
-## Bibeln (Bibles)
+## Bibeln
 
 Basispfad: `/content/bibles`
 
-Alle Bibel-Endpunkte sind öffentlich (keine Authentifizierung erforderlich). Die Daten werden aus externen Quellen bezogen und lokal zwischengespeichert.
+Alle Bible-Endpunkte sind öffentlich (keine Authentifizierung erforderlich). Daten werden aus externen Quellen abgerufen und lokal zwischengespeichert.
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/` | Öffentlich | — | Alle Bibelübersetzungen auflisten (ruft von der Quelle ab, falls der Cache leer ist) |
-| GET | `/stats?startDate=&endDate=` | Öffentlich | — | Bibel-Nachschlagestatistiken für einen Datumsbereich abrufen |
-| GET | `/availableTranslations/:source` | Öffentlich | — | Verfügbare Übersetzungen einer Quelle auflisten (z. B. api.bible) |
-| GET | `/updateTranslations` | Öffentlich | — | Alle Übersetzungen aus allen Quellen synchronisieren |
-| GET | `/updateTranslations/:source` | Öffentlich | — | Übersetzungen aus einer bestimmten Quelle synchronisieren |
-| GET | `/updateCopyrights` | Öffentlich | — | Copyright-Informationen für Übersetzungen aktualisieren, denen diese fehlen |
-| GET | `/:translationKey/updateCopyright` | Öffentlich | — | Copyright für eine bestimmte Übersetzung aktualisieren |
-| GET | `/:translationKey/search?query=&limit=` | Öffentlich | — | Verse in einer Übersetzung durchsuchen |
-| GET | `/:translationKey/books` | Öffentlich | — | Bücher einer Übersetzung abrufen (wird lokal zwischengespeichert) |
-| GET | `/:translationKey/:bookKey/chapters` | Öffentlich | — | Kapitel eines Buches abrufen (wird lokal zwischengespeichert) |
-| GET | `/:translationKey/chapters/:chapterKey/verses` | Öffentlich | — | Verse eines Kapitels abrufen (wird lokal zwischengespeichert) |
-| GET | `/:translationKey/verses/:startVerseKey-:endVerseKey` | Öffentlich | — | Verstext für einen Bereich abrufen. Protokolliert Nachschlagevorgänge. Manche Übersetzungen umgehen aus Lizenzgründen das Caching |
+| GET | `/` | Public | — | Liste aller Bibelübersetzungen (ruft aus der Quelle ab, wenn der Cache leer ist) |
+| GET | `/stats?startDate=&endDate=` | Public | — | Abrufen von Bible-Lookup-Statistiken für einen Datumsbereich |
+| GET | `/availableTranslations/:source` | Public | — | Verfügbare Übersetzungen aus einer Quelle auflisten (z. B. api.bible) |
+| GET | `/updateTranslations` | Public | — | Synchronisieren Sie alle Übersetzungen aus allen Quellen |
+| GET | `/updateTranslations/:source` | Public | — | Übersetzungen von einer bestimmten Quelle synchronisieren |
+| GET | `/updateCopyrights` | Public | — | Aktualisieren Sie Urheberinformationen für Übersetzungen, denen diese fehlen |
+| GET | `/:translationKey/updateCopyright` | Public | — | Urheberrecht für eine bestimmte Übersetzung aktualisieren |
+| GET | `/:translationKey/search?query=&limit=` | Public | — | Verse in einer Übersetzung durchsuchen |
+| GET | `/:translationKey/books` | Public | — | Bücher für eine Übersetzung abrufen (wird lokal zwischengespeichert) |
+| GET | `/:translationKey/:bookKey/chapters` | Public | — | Kapitel für ein Buch abrufen (wird lokal zwischengespeichert) |
+| GET | `/:translationKey/chapters/:chapterKey/verses` | Public | — | Verse für ein Kapitel abrufen (wird lokal zwischengespeichert) |
+| GET | `/:translationKey/verses/:startVerseKey-:endVerseKey` | Public | — | Verstext für einen Bereich abrufen. Protokolliert Nachschläge. Einige Übersetzungen umgehen das Zwischenspeichern aus Lizenzgründen |
 
 ### Beispiel: Verstext abrufen
 
@@ -338,36 +339,36 @@ Basispfad: `/content/songs`
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/search?q=` | JWT | — | Songs anhand einer Suchanfrage durchsuchen |
-| GET | `/:id` | JWT | — | Einen Song anhand der ID abrufen |
-| GET | `/` | JWT | Content.Edit | Alle Songs auflisten |
+| GET | `/search?q=` | JWT | — | Songs nach Abfrage durchsuchen |
+| GET | `/:id` | JWT | — | Song nach ID abrufen |
+| GET | `/` | JWT | Content.Edit | Liste aller Songs |
 | POST | `/` | JWT | Content.Edit | Songs erstellen oder aktualisieren (Batch) |
 | POST | `/import` | JWT | — | Songs aus FreeShow importieren (Batch) |
-| DELETE | `/:id` | JWT | Content.Edit | Einen Song löschen |
+| DELETE | `/:id` | JWT | Content.Edit | Song löschen |
 
-## Song-Details (Song Details)
+## Song-Details
 
 Basispfad: `/content/songDetails`
 
-Song-Details sind global (nicht kirchenspezifisch). Sie repräsentieren kanonische Song-Metadaten, die kirchenübergreifend gemeinsam genutzt werden.
+Song-Details sind global (nicht auf die Kirche beschränkt). Diese stellen kanonische Song-Metadaten dar, die zwischen Kirchen gemeinsam genutzt werden.
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Ein Song-Detail anhand der ID abrufen (global) |
+| GET | `/:id` | JWT | — | Song-Detail nach ID abrufen (global) |
 | GET | `/` | JWT | — | Song-Details für die Kirche auflisten |
-| POST | `/create` | JWT | — | Ein Song-Detail aus einer PraiseCharts-ID erstellen (liefert das vorhandene, falls bereits erstellt). Ruft Metadaten automatisch von PraiseCharts und MusicBrainz ab |
+| POST | `/create` | JWT | — | Song-Detail aus PraiseCharts-ID erstellen (gibt vorhandene zurück, wenn bereits erstellt). Auto-fetcht Metadaten aus PraiseCharts und MusicBrainz |
 | POST | `/` | JWT | — | Song-Details erstellen oder aktualisieren (Batch) |
 
-## Song-Detail-Links (Song Detail Links)
+## Song-Detail-Links
 
 Basispfad: `/content/songDetailLinks`
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Einen Song-Detail-Link anhand der ID abrufen |
+| GET | `/:id` | JWT | — | Song-Detail-Link nach ID abrufen |
 | GET | `/songDetail/:songDetailId` | JWT | — | Alle Links für ein Song-Detail abrufen |
-| POST | `/` | JWT | — | Song-Detail-Links erstellen oder aktualisieren (Batch). Ruft bei Verknüpfung automatisch MusicBrainz-Daten ab |
-| DELETE | `/:id` | JWT | — | Einen Song-Detail-Link löschen |
+| POST | `/` | JWT | — | Song-Detail-Links erstellen oder aktualisieren (Batch). Ruft automatisch MusicBrainz-Daten ab, wenn verlinkt |
+| DELETE | `/:id` | JWT | — | Song-Detail-Link löschen |
 
 ## Arrangements
 
@@ -375,86 +376,86 @@ Basispfad: `/content/arrangements`
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/:id` | JWT | — | Ein Arrangement anhand der ID abrufen |
+| GET | `/:id` | JWT | — | Arrangement nach ID abrufen |
 | GET | `/song/:songId` | JWT | Content.Edit | Arrangements für einen Song abrufen |
 | GET | `/songDetail/:songDetailId` | JWT | Content.Edit | Arrangements für ein Song-Detail abrufen |
 | GET | `/` | JWT | Content.Edit | Alle Arrangements auflisten |
 | POST | `/` | JWT | Content.Edit | Arrangements erstellen oder aktualisieren (Batch) |
-| POST | `/freeShow/missing` | JWT | — | FreeShow-IDs finden, die in der Kirche nicht existieren. Body: `{ freeShowIds: string[] }` |
-| DELETE | `/:id` | JWT | Content.Edit | Ein Arrangement löschen (löscht auch Tonarten; löscht den Song, falls keine Arrangements mehr verbleiben) |
+| POST | `/freeShow/missing` | JWT | — | FreeShow-IDs finden, die nicht in der Kirche vorhanden sind. Body: `{ freeShowIds: string[] }` |
+| DELETE | `/:id` | JWT | Content.Edit | Arrangement löschen (löscht auch Tasten; löscht den Song, wenn keine Arrangements verbleiben) |
 
-## Arrangement-Tonarten (Arrangement Keys)
+## Arrangements-Tasten
 
 Basispfad: `/content/arrangementKeys`
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/presenter/:churchId/:id` | Öffentlich | — | Arrangement-Tonart mit vollständigen Songdaten für die Präsentationsansicht abrufen |
-| GET | `/:id` | JWT | — | Eine Arrangement-Tonart anhand der ID abrufen |
-| GET | `/arrangement/:arrangementId` | JWT | Content.Edit | Tonarten für ein Arrangement abrufen |
-| GET | `/` | JWT | Content.Edit | Alle Arrangement-Tonarten auflisten |
-| POST | `/` | JWT | Content.Edit | Arrangement-Tonarten erstellen oder aktualisieren (Batch) |
-| DELETE | `/:id` | JWT | Content.Edit | Eine Arrangement-Tonart löschen |
+| GET | `/presenter/:churchId/:id` | Public | — | Abrufen der Arrangements-Taste mit vollständigen Song-Daten für die Moderator-Ansicht |
+| GET | `/:id` | JWT | — | Arrangements-Taste nach ID abrufen |
+| GET | `/arrangement/:arrangementId` | JWT | Content.Edit | Tasten für ein Arrangement abrufen |
+| GET | `/` | JWT | Content.Edit | Alle Arrangements-Tasten auflisten |
+| POST | `/` | JWT | Content.Edit | Arrangements-Tasten erstellen oder aktualisieren (Batch) |
+| DELETE | `/:id` | JWT | Content.Edit | Arrangements-Taste löschen |
 
-## Einstellungen (Settings)
+## Einstellungen
 
 Basispfad: `/content/settings`
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
 | GET | `/my` | JWT | — | Einstellungen des aktuellen Benutzers abrufen |
-| GET | `/` | JWT | Settings.Edit | Alle Einstellungen der Kirche abrufen |
-| GET | `/public/:churchId` | Öffentlich | — | Öffentliche Einstellungen einer Kirche abrufen (als Schlüssel-Wert-Paare geliefert) |
-| POST | `/my` | JWT | — | Einstellungen auf Benutzerebene speichern (unterstützt Base64-Bild-Upload) |
-| POST | `/` | JWT | Settings.Edit | Einstellungen auf Kirchenebene speichern (unterstützt Base64-Bild-Upload) |
-| DELETE | `/my/:id` | JWT | — | Eine Benutzereinstellung löschen |
+| GET | `/` | JWT | Settings.Edit | Alle Einstellungen für die Kirche abrufen |
+| GET | `/public/:churchId` | Public | — | Öffentliche Einstellungen für eine Kirche abrufen (als Schlüssel-Wert-Paare zurückgegeben) |
+| POST | `/my` | JWT | — | Benutzereinstellungen speichern (unterstützt Base64-Bild-Upload) |
+| POST | `/` | JWT | Settings.Edit | Kircheneinstellungen speichern (unterstützt Base64-Bild-Upload) |
+| DELETE | `/my/:id` | JWT | — | Benutzereinstellung löschen |
 
-## Vorschau (Preview)
+## Vorschau
 
 Basispfad: `/content/preview`
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/data/:key` | Öffentlich | — | Streaming-Vorschaudaten einer Kirche anhand des Subdomain-Schlüssels laden (Tabs, Links, Dienste, Predigten) |
+| GET | `/data/:key` | Public | — | Streaming-Vorschaudaten für eine Kirche nach Subdomänen-Schlüssel laden (Tabs, Links, Services, Predigten) |
 
-## Galerie (Stockfotos)
+## Galerie (Stock Photos)
 
 Basispfad: `/content/stock`
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| POST | `/search` | Öffentlich | — | Pexels-Stockfotos durchsuchen. Body: `{ term: "church" }` |
+| POST | `/search` | Public | — | Pexels-Stockfotos durchsuchen. Body: `{ term: "church" }` |
 
 ## PraiseCharts
 
 Basispfad: `/content/praiseCharts`
 
-Integration mit PraiseCharts zur Entdeckung von Gottesdienstliedern und für Notenblatt-Downloads.
+Integration mit PraiseCharts für die Entdeckung von Worship-Songs und Downloads von Noten.
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| GET | `/raw/:id` | JWT | — | Rohdaten von PraiseCharts für einen Song abrufen |
-| GET | `/hasAccount` | JWT | — | Prüfen, ob der Benutzer ein verknüpftes PraiseCharts-Konto hat |
-| GET | `/search?q=` | JWT | — | Den PraiseCharts-Katalog durchsuchen |
-| GET | `/products/:id?keys=` | JWT | — | Produkte für einen Song abrufen (aus der Bibliothek, falls authentifiziert, andernfalls aus dem Katalog) |
-| GET | `/arrangement/raw/:id?keys=` | JWT | — | Rohe Arrangement-Daten aus der Bibliothek abrufen |
-| GET | `/download?skus=&keys=&file_name=` | JWT | — | Eine Datei von PraiseCharts herunterladen (PDF oder ZIP). Liefert `{ redirectUrl }` |
-| GET | `/authUrl?returnUrl=` | Öffentlich | — | OAuth-Autorisierungs-URL für PraiseCharts abrufen |
-| GET | `/access?verifier=&token=&secret=` | JWT | — | OAuth-Verifier gegen ein Zugriffstoken eintauschen und in den Benutzereinstellungen speichern |
-| GET | `/library` | JWT | — | Die PraiseCharts-Bibliothek des Benutzers durchsuchen |
+| GET | `/raw/:id` | JWT | — | Rohe PraiseCharts-Daten für einen Song abrufen |
+| GET | `/hasAccount` | JWT | — | Überprüfen Sie, ob der Benutzer ein verknüpftes PraiseCharts-Konto hat |
+| GET | `/search?q=` | JWT | — | PraiseCharts-Katalog durchsuchen |
+| GET | `/products/:id?keys=` | JWT | — | Abrufen von Produkten für einen Song (aus der Bibliothek, wenn authentifiziert, ansonsten Katalog) |
+| GET | `/arrangement/raw/:id?keys=` | JWT | — | Rohe Arrangements-Daten aus der Bibliothek abrufen |
+| GET | `/download?skus=&keys=&file_name=` | JWT | — | Datei von PraiseCharts herunterladen (PDF oder ZIP). Gibt `{ redirectUrl }` zurück |
+| GET | `/authUrl?returnUrl=` | Public | — | OAuth-Autorisierungs-URL für PraiseCharts abrufen |
+| GET | `/access?verifier=&token=&secret=` | JWT | — | OAuth-Verifier gegen Zugriffstoken austauschen und in Benutzereinstellungen speichern |
+| GET | `/library` | JWT | — | PraiseCharts-Bibliothek des Benutzers durchsuchen |
 
-## Support
+## Unterstützung
 
 Basispfad: `/content/support`
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
-| POST | `/createAudio` | Öffentlich | — | SSML mittels AWS Polly in MP3-Audio umwandeln. Body: `{ ssml: "<speak>...</speak>" }` |
+| POST | `/createAudio` | Public | — | SSML mit AWS Polly in MP3-Audio konvertieren. Body: `{ ssml: "<speak>...</speak>" }` |
 
-## Verwandte Seiten
+## Zugehörige Seiten
 
-- [Website-Builder-Architektur](../../architecture/website-builder) -- Wie Seiten, Abschnitte, Elemente, Beiträge und Weiterleitungen in den Apps zusammenwirken
-- [Membership-Endpunkte](./membership) -- Personen, Kirchen, Gruppen, Rollen, Berechtigungen
-- [Attendance-Endpunkte](./attendance) -- Gottesdienst- und Besuchsverfolgung
-- [Authentifizierung & Berechtigungen](./authentication) -- Anmeldeablauf, JWT, Berechtigungsmodell
-- [Modulstruktur](../module-structure) -- Code-Organisationsmuster
+- [Website Builder Architecture](../../architecture/website-builder) -- Wie Seiten, Abschnitte, Elemente, Posts und Umleitungen in allen Apps zusammenpassen
+- [Membership Endpoints](./membership) -- Personen, Kirchen, Gruppen, Rollen, Berechtigungen
+- [Attendance Endpoints](./attendance) -- Service- und Besuchsverfolgung
+- [Authentication & Permissions](./authentication) -- Anmeldefluss, JWT, Berechtigungsmodell
+- [Module Structure](../module-structure) -- Code-Organisationsmuster

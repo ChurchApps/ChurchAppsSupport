@@ -1,58 +1,59 @@
 ---
-title: "Benachrichtigungspräferenzen"
+title: "Benachrichtigungseinstellungen"
 ---
 
-# Benachrichtigungspräferenzen
+# Benachrichtigungseinstellungen
 
 <div class="article-intro">
 
-Mit Benachrichtigungspräferenzen entscheiden Sie, welche Benachrichtigungen Sie von Ihrer Kirche erhalten und wie Sie sie erhalten – Push-Benachrichtigungen, E-Mail oder die In-App-Glocke. Sie können jeden Benachrichtigungstyp optimieren, Ruhezeiten festlegen oder alles auf einmal stummschalten, alles von einem Bildschirm aus.
+Mit Benachrichtigungseinstellungen können Sie entscheiden, welche Benachrichtigungen Sie von Ihrer Kirche erhalten und wie Sie sie erhalten – Push-Benachrichtigungen, E-Mail oder die In-App-Glocke. Sie können jeden Benachrichtigungstyp verfeinern, Ruhezeiten festlegen oder alles auf einmal stummschalten, alles von einem Bildschirm aus.
 
 </div>
 
-## Öffnen Ihrer Präferenzen
+## Öffnen Ihrer Einstellungen
 
-1. Öffnen Sie den Bereich **Benachrichtigungen** (das Glockensymbol) in der B1 Mitglied-App.
-2. Tippen Sie auf **Benachrichtigungspräferenzen**.
+1. Gehen Sie zur Seite **Me** und tippen Sie auf **Benachrichtigungseinstellungen** unter **Verknüpfungen**.
 
-## Globale Steuerungen
+Sie können auch auf das Glockensymbol tippen, die Registerkarte **Benachrichtigungen** öffnen, auf **Alle Benachrichtigungen anzeigen** tippen und dann auf dieser Seite auf **Benachrichtigungseinstellungen** tippen.
 
-Oben auf dem Bildschirm finden Sie Einstellungen, die auf alles angewendet werden:
+## Globale Steuerelemente
 
-- **Alles stummschalten** – Unterbrechen Sie vorübergehend alle nicht wesentlichen Benachrichtigungen.
-- **Push-Benachrichtigungen** – Aktivieren oder deaktivieren Sie Push-Benachrichtigungen für Ihr Gerät.
+Oben auf dem Bildschirm finden Sie Einstellungen, die für alles gelten:
+
+- **Alle stummschalten** – Stoppt vorübergehend alle nicht wesentlichen Benachrichtigungen.
+- **Push-Benachrichtigungen** – Aktiviert oder deaktiviert Push-Benachrichtigungen auf Ihrem Gerät.
 - **E-Mail-Häufigkeit** – Wählen Sie, wie E-Mail-Benachrichtigungen ankommen:
   - **Pro Benachrichtigung** – Senden Sie eine E-Mail, wenn Dinge passieren.
-  - **Tägliche Zusammenfassung** – Fassen Sie sie in eine tägliche E-Mail zusammen.
-  - **Niemals** – Senden Sie keine Benachrichtigungs-E-Mails.
-- **Ruhezeiten** – Legen Sie eine Start- und Endzeit (und Ihre Zeitzone) fest, wenn Sie lieber nicht gestört werden möchten. Nicht dringende Benachrichtigungen warten, bis die Ruhezeiten vorbei sind.
+  - **Tägliche Zusammenfassung** – Fassen Sie sie in einer täglichen E-Mail zusammen.
+  - **Nie** – Senden Sie keine Benachrichtigungs-E-Mails.
+- **Ruhezeiten** – Legen Sie eine Start- und Endzeit (und Ihre Zeitzone) fest, wenn Sie nicht gestört werden möchten. Nicht dringende Benachrichtigungen warten, bis die Ruhezeiten vorbei sind.
 
-## Benachrichtigungen nach Typ wählen
+## Benachrichtigungen nach Typ auswählen
 
-Unter den globalen Steuerelementen befindet sich ein Raster von Benachrichtigungstypen. Für jeden können Sie die Kanäle, die Sie möchten, ein- oder ausschalten:
+Unter den globalen Steuerelementen befindet sich ein Raster von Benachrichtigungstypen. Für jeden können Sie die Kanäle, die Sie möchten, aktivieren oder deaktivieren:
 
 - **Push** – Eine Benachrichtigung auf Ihrem Gerät.
 - **E-Mail** – Eine Nachricht in Ihrem Posteingang.
-- **In-App** – Die Glocke/das Abzeichen in der App.
+- **In-App** – Die Glocke/das Badge in der App.
 
-Häufige Typen sind **Veranstaltungserinnerungen**, **Dienst und Zeitplan**, **Direktnachrichten**, **Gruppenchat**, **Gebetsanfragen** und **Kirchenankündigungen**. Beispielsweise können Sie Push-Benachrichtigungen für Direktnachrichten aktiv lassen, aber für Ankündigungen ausschalten.
+Häufige Typen sind **Ereigniserinnerungen**, **Dienst & Zeitplan**, **Direktnachrichten**, **Gruppenchat**, **Gebetsanliegen** und **Kirchenankündigungen**. Sie können beispielsweise Push-Benachrichtigungen für Direktnachrichten aktivieren, sie aber für Ankündigungen deaktivieren.
 
 :::info
-Ein paar Benachrichtigungstypen sind **immer an** und können nicht ausgeschaltet werden – **Konto- und Sicherheit**, **Spendenerklärungen und -auszüge** und **Check-In-Sicherheitswarnungen**. Diese sind aus Sicherheits- und rechtlichen Gründen erforderlich, daher zeigen sie ein kleines Schlosssymbol. Alles andere ist für Sie zu kontrollieren.
+Einige Benachrichtigungstypen sind **immer aktiv** und können nicht deaktiviert werden – **Konto & Sicherheit**, **Spendensätze & Auszüge** und **Sicherheitswarnungen beim Check-In**. Diese sind aus Sicherheits- und rechtlichen Gründen erforderlich und zeigen ein kleines Schloss-Symbol. Alles andere ist zu Ihrer Kontrolle.
 :::
 
-Einige Typen sind **standardmäßig ausgeschaltet** (z.B. Werbe- oder Fundraising-Nachrichten) und erreichen Sie nur, wenn Sie sich dafür anmelden.
+Einige Typen sind **standardmäßig deaktiviert** (z. B. Werbe- oder Fundraising-Nachrichten) und erreichen Sie nur, wenn Sie sich entscheiden, sich anzumelden.
 
 ## Speichern Ihrer Änderungen
 
-Nachdem Sie Ihre Präferenzen angepasst haben, tippen Sie auf **Speichern**. Ihre Änderungen werden sofort wirksam und gelten überall, wo Sie B1 verwenden.
+Tippen Sie nach dem Anpassen Ihrer Einstellungen auf **Einstellungen speichern**. Ihre Änderungen werden sofort wirksam und gelten überall dort, wo Sie B1 verwenden.
 
 :::tip
-Zeitempfindliche Benachrichtigungen – wie eine Sicherheitsmitteilung oder eine Kind-Check-In-Sicherheitsmeldung – erreichen Sie auch während der Ruhezeiten. Alltägliche Updates warten, bis die Ruhezeiten enden.
+Zeitkritische Benachrichtigungen – wie eine Sicherheitswarnung oder eine Nachricht zur Sicherheit beim Check-In eines Kindes – erreichen Sie auch während der Ruhezeiten. Alltägliche Aktualisierungen warten, bis die Ruhezeiten vorbei sind.
 :::
 
-## Verwandte
+## Verwandt
 
-- [Freiwilligenanmeldung](../serving/volunteer-signup) – Diensterinnerungen und Reaktion auf Zeitplanänderungen
-- [Anmeldung zu Veranstaltungen](../events/registering) – Anmeldung zu Veranstaltungen, die Erinnerungen senden
-- [Installation der App](installing-pwa) – Fügen Sie B1 zu Ihrem Gerät hinzu, damit Sie Push-Benachrichtigungen erhalten können
+- [Freiwilligenanmeldung](../serving/volunteer-signup) – Diensterinnerungen und Reaktion auf Zeitplanänderungsanfragen
+- [Anmeldung zu Ereignissen](../events/registering) – Melden Sie sich für Veranstaltungen an, die Erinnerungen senden
+- [Installation der App](installing-pwa) – Fügen Sie B1 zu Ihrem Gerät hinzu, um Push-Benachrichtigungen zu empfangen

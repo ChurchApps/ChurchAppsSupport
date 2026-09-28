@@ -6,35 +6,35 @@ title: "Support Multi-Devises"
 
 <div class="article-intro">
 
-La fonctionnalité multi-devises de B1 permet à votre église d'accepter et de suivre les dons dans différentes devises. C'est particulièrement utile pour les églises ayant des membres internationaux, des missionnaires ou plusieurs succursales dans différents pays.
+La fonctionnalité multi-devises de B1 permet à votre église d'accepter et de suivre les dons dans différentes devises. Ceci est particulièrement utile pour les églises avec des membres internationaux, des missionnaires ou plusieurs campus dans différents pays.
 
 </div>
 
 <div class="prereqs">
-<h4>Avant de Commencer</h4>
+<h4>Avant de commencer</h4>
 
-- Vous avez besoin d'une permission pour gérer les dons. Voir [Rôles et Permissions](../people/roles-permissions.md) pour plus de détails.
-- Configurez votre [collecte de fonds en ligne](./online-giving-setup.md) avec Stripe, qui supporte les transactions multi-devises.
-- Comprenez les besoins comptables de votre église pour gérer plusieurs devises.
+- Vous avez besoin de la permission de gérer les dons. Voir [Rôles et Autorisations](../people/roles-permissions.md) pour les détails.
+- Configurez votre [don en ligne](./online-giving-setup.md) avec Stripe, qui prend en charge les transactions multi-devises.
+- Comprenez les besoins comptables de votre église pour traiter plusieurs devises.
 
 </div>
 
-## Activer le Support Multi-Devises
+## Activation du Support Multi-Devises
 
-Le support multi-devises est désormais activé par défaut dans B1. Une fois activé :
+Le support multi-devises est maintenant activé par défaut dans B1. Une fois activé :
 
-- Les membres peuvent faire des dons dans leur devise locale lors d'un don en ligne
-- Vous pouvez enregistrer manuellement des dons dans n'importe quelle devise
+- Les membres peuvent donner dans leur devise locale lors d'un don en ligne
+- Vous pouvez enregistrer manuellement les dons dans n'importe quelle devise
 - Les rapports de dons affichent les montants dans leur devise d'origine
-- Stripe gère automatiquement la conversion de devises pour les dons en ligne
+- Stripe gère la conversion de devises automatiquement pour les dons en ligne
 
-## Devises Supportées
+## Devises Acceptées
 
-Le système supporte toutes les principales devises mondiales, notamment :
+Le système prend en charge toutes les principales devises mondiales, y compris :
 
 - **USD** -- Dollar américain
 - **EUR** -- Euro
-- **GBP** -- Livre sterling britannique
+- **GBP** -- Livre sterling
 - **CAD** -- Dollar canadien
 - **AUD** -- Dollar australien
 - **MXN** -- Peso mexicain
@@ -44,43 +44,47 @@ Le système supporte toutes les principales devises mondiales, notamment :
 - **JPY** -- Yen japonais
 - Et bien d'autres...
 
-Les devises disponibles pour les dons en ligne dépendent des devises supportées par votre compte Stripe.
+Les devises disponibles pour les dons en ligne dépendent des devises prises en charge par votre compte Stripe.
 
-## Enregistrer des Dons dans Différentes Devises
+## Enregistrement des dons en différentes devises
 
-### Dons en Ligne
+### Dons en ligne
 
 Lorsqu'un membre fait un don en ligne via Stripe :
 
-1. Il sélectionne sa devise préférée au moment du paiement
+1. Il sélectionne sa devise préférée à la caisse
 2. Stripe traite le paiement dans cette devise
-3. Le don est enregistré dans B1 avec le montant en devise d'origine
-4. Stripe gère automatiquement la conversion de devise nécessaire vers la devise par défaut de votre compte
+3. Le don est enregistré dans B1 avec le montant dans la devise d'origine
+4. Stripe gère automatiquement toute conversion de devise nécessaire pour la devise par défaut de votre compte
 
-### Entrée Manuelle
+### Entrée manuelle
 
-Pour enregistrer un don en espèces ou par chèque dans une devise différente :
+Pour enregistrer un don en espèces ou par chèque en devise différente :
 
-1. Allez à **Dons** dans B1 Admin
-2. Cliquez sur **Ajouter un Don**
-3. Sélectionnez la devise dans le menu déroulant de devise
+1. Accédez à **Dons** dans B1 Admin
+2. Cliquez sur **Ajouter un don**
+3. Sélectionnez la devise dans la liste déroulante des devises
 4. Entrez le montant dans cette devise
 5. Complétez le reste des détails du don
 6. Cliquez sur **Enregistrer**
 
-## Afficher les Dons Multi-Devises
+## Affichage des dons multi-devises
 
-### Rapports de Dons
+### Rapports de dons
 
 Les rapports de dons affichent les montants dans leur devise d'origine :
 
-- Les enregistrements de dons individuels affichent le code de devise (par exemple, « $100,00 USD »)
+- Les enregistrements de dons individuels affichent le code de devise (par exemple, "$100.00 USD")
 - Les totaux sont calculés par devise
 - Vous pouvez filtrer par devises spécifiques
 
-### Relevés de Dons
+### Totaux convertis
 
-Lors de la génération de relevés de dons :
+Partout où B1 affiche un total combiné unique -- les cartes KPI du résumé des dons, un total de lot de don et le total d'un fonds -- les dons enregistrés dans une devise autre que celle par défaut de votre église sont convertis dans la devise de votre église en utilisant les taux de change actuels, de sorte que le total est un seul nombre significatif au lieu d'ajouter des devises différentes ensemble. Une note **Converti aux taux de change actuels** apparaît sous le total chaque fois qu'une conversion a été appliquée. Les éléments individuels de la ligne de don affichent toujours dans leur devise d'origine.
+
+### Déclarations de dons
+
+Lors de la génération de déclarations de dons :
 
 - Chaque don apparaît avec sa devise d'origine
 - Les totaux sont ventilés par devise
@@ -90,41 +94,40 @@ Lors de la génération de relevés de dons :
 
 Pour les dons en ligne, Stripe gère les transactions multi-devises :
 
-- **Conversion automatique** -- Stripe convertit les devises vers la devise par défaut de votre compte
+- **Conversion automatique** -- Stripe convertit les devises dans la devise par défaut de votre compte
 - **Taux de change** -- Stripe utilise les taux de change du marché actuels
-- **Frais** -- La conversion de devises peut entraîner des frais supplémentaires de Stripe
-- **Devise de versement** -- Les fonds sont déposés dans la devise par défaut de votre compte
+- **Frais** -- La conversion de devises peut entraîner des frais Stripe supplémentaires
+- **Devise de paiement** -- Les fonds sont déposés dans la devise par défaut de votre compte
 
 :::info
-Consultez votre tableau de bord Stripe pour voir les taux de conversion actuels et les frais associés aux transactions multi-devises.
+Consultez votre tableau de bord Stripe pour voir les taux de conversion actuels et tous les frais associés aux transactions multi-devises.
 :::
 
-## Considérations Comptables
+## Considérations comptables
 
 Lorsque vous travaillez avec plusieurs devises :
 
-- **Tenue des registres** -- Conservez un suivi des montants de dons d'origine et des devises pour un rapport exact
-- **Taux de change** -- Notez que les taux de conversion de Stripe peuvent différer de ceux de votre banque
-- **Reçus fiscaux** -- Consultez votre comptable sur la manière de déclarer les dons dans différentes devises à titre fiscal
-- **Allocation de fonds** -- Vous pouvez allouer des dons à des fonds spécifiques quelle que soit la devise
+- **Tenue des registres** -- Gardez une trace des montants de dons d'origine et des devises pour une création de rapports précise
+- **Taux de change** -- Notez que les taux de conversion de Stripe peuvent différer des taux de votre banque
+- **Reçus fiscaux** -- Consultez votre comptable sur la façon de déclarer les dons dans différentes devises aux fins fiscales
+- **Allocation de fonds** -- Vous pouvez allouer des dons à des fonds spécifiques indépendamment de la devise
 
-## Bonnes Pratiques
+## Meilleures pratiques
 
-- **Devise par défaut** -- Définissez la devise primaire de votre église comme devise par défaut pour la plupart des transactions
-- **Communication claire** -- Informez les donateurs de la devise qu'ils utilisent lors du processus de paiement
-- **Rapports cohérents** -- Décidez si vous rapporterez dans les devises d'origine ou si vous convertirez en une seule devise pour les résumés
-- **Rapprochement régulier** -- Rapprochez les versements Stripe avec vos enregistrements de dons, en tenant compte des conversions de devises
+- **Devise par défaut** -- Définissez la devise principale de votre église comme par défaut pour la plupart des transactions
+- **Communication claire** -- Dites aux donateurs dans quelle devise ils donnent lors du processus de paiement
+- **Rapport cohérent** -- Les totaux combinés sont toujours convertis dans la devise de votre église automatiquement ; utilisez le filtre de devise par don lorsque vous avez besoin de voir les montants d'origine
+- **Rapprochement régulier** -- Rapprochez les paiements Stripe avec vos dossiers de dons, en tenant compte des conversions de devises
 
 ## Limitations
 
-- La conversion de devises est gérée par Stripe uniquement pour les dons en ligne
-- Les dons manuels sont enregistrés tels qu'entrés sans conversion automatique
-- Les rapports historiques affichent les dons dans leurs devises d'origine
-- Les calculs de total sont effectués par devise, non entre les devises
+- La conversion de devises pour le traitement des paiements est gérée par Stripe pour les dons en ligne uniquement ; les dons manuels sont enregistrés tels quels sans conversion automatique
+- Les rapports historiques et les éléments individuels de la ligne de don affichent toujours la devise d'origine dans laquelle le don a été enregistré
+- Les totaux combinés (cartes KPI, totaux de lots, totaux de fonds) sont convertis dans la devise de votre église en utilisant les taux de change actuels -- ces taux peuvent différer légèrement des taux de votre banque ou de Stripe au moment du règlement des fonds
 
-## Articles Connexes
+## Articles connexes
 
-- [Configuration des Dons en Ligne](./online-giving-setup.md) -- Configurer Stripe pour accepter les dons
-- [Enregistrer des Dons](./recording-donations.md) -- Entrer manuellement des enregistrements de dons
-- [Rapports de Dons](./donation-reports.md) -- Générer et afficher des résumés de dons
-- [Relevés de Dons](./giving-statements.md) -- Créer des relevés de dons de fin d'année
+- [Configuration des dons en ligne](./online-giving-setup.md) -- Configurez Stripe pour accepter les dons
+- [Enregistrement des dons](./recording-donations.md) -- Enregistrez manuellement les dossiers de dons
+- [Rapports de don](./donation-reports.md) -- Générez et consultez les résumés de dons
+- [Déclarations de dons](./giving-statements.md) -- Créez des déclarations de dons de fin d'année

@@ -1,56 +1,62 @@
-﻿---
-title: "Relevés de donation"
+---
+title: "Déclarations de Dons"
 ---
 
-# Relevés de donation
+# Déclarations de Dons
 
 <div class="article-intro">
 
-À la fin de chaque année, vos donateurs ont besoin d'un résumé de leur donation déductible d'impôt pour leurs dossiers. B1 Admin facilite la génération de ces relevés pour tous les donateurs à la fois, ce qui vous permet d'économiser des heures de travail manuel.
+À la fin de chaque année, vos donateurs ont besoin d'un résumé de leurs dons déductibles fiscalement pour leurs registres. B1 Admin facilite la génération de ces déclarations pour tous les donateurs à la fois, vous faisant économiser des heures de travail manuel.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Vérifiez que vos [fonds](funds.md) sont correctement marqués comme **Déductible d'impôt** -- seules les donations aux fonds déductibles d'impôt apparaissent sur les relevés
-- Assurez-vous que toutes les donations ont été [enregistrées](recording-donations.md) et que toutes les transactions en ligne ont été [importées à partir de Stripe](stripe-import.md)
+- Vérifiez que vos [fonds](funds.md) sont correctement marqués comme **Déductible fiscalement** -- seuls les dons aux fonds déductibles fiscalement apparaissent sur les déclarations
+- Assurez-vous que tous les dons ont été [enregistrés](recording-donations.md) et que toutes les transactions en ligne ont été [importées depuis Stripe](stripe-import.md)
 
 </div>
 
-## Accès aux relevés de donation
+## Accès aux Déclarations de Dons
 
-1. Dans **B1 Admin**, ouvrez le **menu de section** dans le coin supérieur gauche et choisissez **Donations**.
-2. Cliquez sur **Relevés**.
+1. Dans **B1 Admin**, ouvrez le **menu de section** dans le coin supérieur gauche et choisissez **Dons**.
+2. Cliquez sur **Déclarations**.
 
-## Génération des relevés
+## Génération de Déclarations
 
 1. Sélectionnez l'**année** dans la liste déroulante en haut de la page. Vous pouvez choisir l'année en cours ou l'une des cinq années précédentes.
-2. La page affiche les statistiques de résumé de cette année, y compris :
-   - **Donateurs totaux** -- le nombre de personnes qui ont donné
-   - **Donations totales** -- le nombre de dossiers de donation individuels
-   - **Montant total** -- le montant en dollars combiné de toutes les donations
+2. La page affiche les statistiques récapitulatives de cette année, y compris :
+   - **Total des donateurs** -- le nombre de personnes qui ont donné
+   - **Total des dons** -- le nombre d'enregistrements de dons individuels
+   - **Montant total** -- le montant total combiné de tous les dons
 
-## Téléchargement des relevés
+## Téléchargement des Déclarations
 
-Vous avez deux options pour obtenir des relevés à vos donateurs :
+Vous avez deux options pour transmettre les déclarations à vos donateurs :
 
-### Téléchargement en fichiers CSV
+### Télécharger les fichiers CSV
 
-Cliquez sur **Télécharger ZIP** pour télécharger un fichier ZIP contenant un fichier CSV individuel pour chaque donateur. Ceci est utile si vous souhaitez envoyer les relevés individuellement par e-mail ou les importer dans un autre système.
+Cliquez sur **Télécharger ZIP** pour télécharger un fichier ZIP contenant un fichier CSV individuel pour chaque donateur. Ceci est utile si vous souhaitez envoyer les déclarations individuellement par courrier électronique ou les importer dans un autre système.
 
-### Imprimer tous les relevés
+### Imprimer Toutes les Déclarations
 
-Cliquez sur **Imprimer tous** pour ouvrir une vue imprimable de chaque relevé de donateur dans votre navigateur. À partir de là, utilisez la fonction d'impression de votre navigateur pour les envoyer à une imprimante. Chaque relevé commence sur une nouvelle page afin qu'ils soient prêts à être pliés et envoyés par la poste.
+Cliquez sur **Imprimer Tout** pour ouvrir une vue imprimable de la déclaration de chaque donateur dans votre navigateur. À partir de là, utilisez la fonction d'impression de votre navigateur pour les envoyer à une imprimante. Chaque déclaration commence sur une nouvelle page afin qu'elles soient prêtes à plier et à envoyer.
 
 :::tip
-Générez vos relevés au début janvier pendant que vos dossiers sont frais. Vérifiez deux fois que vos fonds sont correctement marqués comme déductibles d'impôt avant de générer les relevés -- seules les donations aux fonds déductibles d'impôt sont incluses.
+Exécutez vos déclarations au début janvier pendant que vos registres sont frais. Vérifiez à nouveau que vos fonds sont correctement marqués comme déductibles fiscalement avant de générer les déclarations -- seuls les dons aux fonds déductibles fiscalement sont inclus.
 :::
 
 :::info
-Les relevés de donation incluent uniquement les donations assignées aux fonds qui ont le paramètre **Déductible d'impôt** activé. Si un fonds n'est pas marqué comme déductible d'impôt, ses donations n'apparaîtront pas sur le relevé. Vous pouvez gérer ce paramètre sur la page [Fonds](funds.md).
+Les déclarations de dons incluent uniquement les dons attribués aux fonds qui ont le paramètre **Déductible fiscalement** activé. Si un fonds n'est pas marqué comme déductible fiscalement, ses dons n'apparaîtront pas sur la déclaration. Vous pouvez gérer ce paramètre sur la page [Fonds](funds.md).
 :::
 
-## Étapes suivantes
+## Formats de Reçus pour le Canada, l'Australie et la Nouvelle-Zélande
 
-Si vous avez besoin d'examiner les détails de donation avant de générer les relevés, visitez la page [Rapports de donation](donation-reports.md) ou consultez les [lots](batches.md) individuels.
+Les églises en dehors des États-Unis peuvent changer la déclaration au format de reçu officiel de leur pays. Allez dans **Paramètres**, ouvrez la section **Dons** et définissez **Format de Déclaration** sur **Canada**, **Australie** ou **Nouvelle-Zélande**, puis remplissez les champs qui apparaissent : votre numéro d'inscription (numéro d'inscription de l'ARC, ABN ou numéro d'enregistrement de charité de la Nouvelle-Zélande), l'adresse de votre organisation, le nom de la personne autorisée à signer les reçus, et pour le Canada la ville où les reçus sont émis.
+
+Les déclarations portent alors le libellé que votre autorité fiscale attend (pour le Canada, « Reçu officiel aux fins de l'impôt sur le revenu » avec la référence de l'ARC), un numéro de reçu sous la forme `YEAR-DONORID`, le montant admissible compté uniquement à partir des fonds déductibles fiscalement, et une ligne séparée pour les dons à des fonds non déductibles. Les donateurs voient le même bloc de reçu lorsqu'ils impriment leur propre déclaration depuis B1.church.
+
+## Prochaines étapes
+
+Si vous devez examiner les détails des dons avant de générer les déclarations, visitez la page [Rapports de Don](donation-reports.md) ou consultez les [lots](batches.md) individuels.

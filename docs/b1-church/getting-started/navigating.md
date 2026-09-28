@@ -44,11 +44,11 @@ Tapping **More** opens the navigation menu. On a tablet or desktop the same menu
 
 - Your name and photo, with an **Edit Profile** shortcut — see [Editing Your Profile](./editing-your-profile.md)
 - **Home** and **Me**
-- **Admin** -- only shown if you have administrator permissions at your church; it opens B1 Admin
+- **Admin Portal** -- only shown if you have administrator permissions at your church; it opens B1 Admin
 - Every tab your church configured, in order
 - **Install App** -- opens the [install instructions](./installing-pwa.md) at `/mobile/install`
 - A light/dark mode toggle
-- **Sign In** or **Log Out**
+- **Sign In** or **Logout**
 - Your church's name and a link to the privacy policy
 
 ## The App Bar

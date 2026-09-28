@@ -1,52 +1,60 @@
 ---
-title: "La página Me"
+title: "La Página Mi"
 ---
 
-# La página Me
+# La Página Mi
 
 <div class="article-intro">
 
-La página **Me** es tu panel personal en el portal de miembros — una vista cronológica única de todo lo que se aproxima para ti: asignaciones de servicio, inscripciones a eventos y los próximos eventos de tus grupos, además de tus notificaciones más recientes.
+La página **Mi** es tu panel de control personal en el portal de miembros — una vista cronológica única de todo lo que se aproxima para ti: asignaciones de voluntariado, registros de eventos y los próximos eventos de tus grupos, más tus notificaciones más recientes.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Empezar</h4>
+<h4>Antes de Comenzar</h4>
 
-- Debes [haber iniciado sesión](./logging-in.md) — la página Me solo aparece para miembros que han iniciado sesión
+- Necesitas estar [registrado](./logging-in.md) — la página Mi solo aparece para miembros que han iniciado sesión
 
 </div>
 
-## Abrir la página Me
+## Abriendo la Página Mi
 
-Abre el menú del portal y toca **Me**. La página se carga con tu información personal organizada en secciones.
+Abre el menú del portal y toca **Mi**. La página se carga con tu información personal organizada en secciones.
 
-## Próximamente
+## Próximo
 
-La sección **Próximamente** enumera todo lo que tienes por delante en orden de fecha, cada elemento etiquetado con una insignia de tipo:
+La sección **Próximo** enumera todo lo que se acerca en orden cronológico, cada elemento etiquetado con un chip de tipo:
 
-- **Sirviendo** -- Tus posiciones de voluntariado en los próximos planes de servicio. Toca uno para abrir el plan.
-- **Inscripción** -- Eventos a los que te has [inscrito](../events/registering). Toca para ir a tus [inscripciones](../events/my-registrations).
-- **Evento** -- Próximos eventos de los grupos a los que perteneces. Toca uno para abrir los eventos del grupo.
+- **Voluntariado** -- Tus posiciones de voluntario en planes de servicio próximos. Toca uno para abrir el plan.
+- **Registro** -- Eventos para los que te has [registrado](../events/registering). Toca para ir a tus [registros](../events/my-registrations).
+- **Evento** -- Próximos eventos de grupos a los que perteneces. Toca uno para abrir los eventos del grupo.
 
-Si nada está programado, verás "Nada próximamente" — tus horarios de servicio, eventos e inscripciones aparecerán aquí a medida que se programen.
+Si nada está programado, verás "Nada próximo" — tus horarios de voluntariado, eventos y registros aparecerán aquí a medida que se programen.
 
-## Notificaciones recientes
+## Notificaciones Recientes
 
-Debajo de Próximamente, la sección **Notificaciones recientes** muestra tus últimas notificaciones para que puedas ponerte al día sin abrir cada área del portal.
+Debajo de Próximo, la sección **Notificaciones Recientes** muestra tus notificaciones más recientes para que puedas ponerte al día sin abrir cada área del portal.
 
-## Accesos directos
+## Atajos
 
-Cuando tu iglesia tiene salas o recursos reservables, la página Me también muestra una sección de **Accesos directos**:
+La sección **Atajos** en la parte superior de la página Mi enlaza a los lugares que visitas más:
 
-- **Solicitar un Evento** -- Pide reservar un evento con las salas y el equipo que necesitas. Consulta [Solicitar Eventos y Salas](../events/requesting-events).
-- **Mis Solicitudes** -- Sigue el estado de tus solicitudes y cancela las pendientes.
+- **Editar Perfil** -- Consulta [Editando Tu Perfil](./editing-your-profile.md).
+- **Preferencias de Notificación** -- Consulta [Preferencias de Notificación](./notification-preferences.md).
+- **Mensajes** -- Tus conversaciones privadas.
+- **Dar** -- Dar en línea y ver tu historial de donaciones.
+- **Registros** -- Eventos para los que te has registrado.
 
-Si tu iglesia no ha configurado salas o recursos, estos accesos directos permanecen ocultos.
+Si tu iglesia tiene salas o recursos reservables, aparecen dos atajos más:
 
-## Artículos relacionados
+- **Solicitar un Evento** -- Solicita celebrar un evento con las salas y equipos que necesitas. Consulta [Solicitar Eventos y Salas](../events/requesting-events).
+- **Mis Solicitudes** -- Rastrea el estado de tus solicitudes y cancela las pendientes.
+
+Si tu iglesia no ha configurado salas o recursos, estos atajos están ocultos.
+
+## Artículos Relacionados
 
 - [Navegando B1App](./navigating) -- El diseño del portal de miembros
-- [Solicitar Eventos y Salas](../events/requesting-events) -- Enviar y hacer seguimiento de solicitudes de salas/recursos
-- [Mis Inscripciones](../events/my-registrations) -- Gestiona tus inscripciones a eventos
-- [Registro de Voluntarios](../serving/volunteer-signup) -- Cómo funcionan las asignaciones de servicio
+- [Solicitar Eventos y Salas](../events/requesting-events) -- Envía y rastrea solicitudes de salas/recursos
+- [Mis Registros](../events/my-registrations) -- Gestiona tus registros de eventos
+- [Inscripción de Voluntarios](../serving/volunteer-signup) -- Cómo funcionan las asignaciones de voluntariado

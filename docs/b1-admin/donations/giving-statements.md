@@ -53,7 +53,7 @@ Giving statements only include donations assigned to funds that have the **Tax D
 
 ## Receipt Formats for Canada, Australia and New Zealand
 
-Churches outside the United States can switch the statement to their country's official receipt layout. Go to **Church Settings > Giving** and set **Statement Format** to **Canada**, **Australia** or **New Zealand**, then fill in the fields that appear: your registration number (CRA registration number, ABN, or NZ charity registration number), your organization's address, the name of the person authorized to sign receipts, and for Canada the city where receipts are issued.
+Churches outside the United States can switch the statement to their country's official receipt layout. Go to **Settings**, open the **Giving** section, and set **Statement Format** to **Canada**, **Australia** or **New Zealand**, then fill in the fields that appear: your registration number (CRA registration number, ABN, or NZ charity registration number), your organization's address, the name of the person authorized to sign receipts, and for Canada the city where receipts are issued.
 
 Statements then carry the wording your tax authority expects (for Canada, "Official Receipt for Income Tax Purposes" with the CRA reference), a receipt number in the form `YEAR-DONORID`, the eligible amount counted from tax-deductible funds only, and a separate line for any gifts to non-deductible funds. Donors see the same receipt block when they print their own statement from B1.church.
 

@@ -6,51 +6,51 @@ title: "E-Mail-Vorlagen"
 
 <div class="article-intro">
 
-Mit E-Mail-Vorlagen können Sie wiederverwendbare E-Mail-Inhalte speichern — eine Willkommensnachricht, eine Ereigniserinnerung, eine Spendenauszeichnung — damit Sie (oder ein [Workflow](../serving/workflows.md)) sie mit einem Klick senden können, anstatt sie jedes Mal von Grund auf neu zu schreiben.
+E-Mail-Vorlagen ermöglichen es dir, wiederverwendbare E-Mail-Inhalte zu speichern – eine Willkommensnachricht, eine Ereigniserinnerung, eine Dankbarkeit für Spenden – damit du (oder ein [Arbeitsablauf](../serving/workflows.md)) es mit einem Klick senden kannst, statt es jedes Mal von vorne zu schreiben.
 
 </div>
 
 <div class="prereqs">
-<h4>Vor dem Start</h4>
+<h4>Bevor du anfängst</h4>
 
-- Sie benötigen Zugriff auf den Bereich Settings in B1 Admin.
+- Du benötigst Zugriff auf den Bereich Einstellungen in B1 Admin.
 
 </div>
 
 ## Zugriff auf E-Mail-Vorlagen
 
-1. Öffnen Sie in B1 Admin das **Bereichsmenü** in der oberen linken Ecke (der Bereichsname mit dem kleinen Pfeil) und wählen Sie **Settings**.
-2. Klicken Sie auf **Email Templates**.
-3. Sie sehen eine Liste der vorhandenen Vorlagen mit ihrer Betreffzeile, Kategorie und dem zuletzt geänderten Datum.
+1. Öffne in B1 Admin das **Abschnittmenü** in der oberen linken Ecke (der Abschnittsname mit dem kleinen Pfeil) und wähle **Einstellungen**.
+2. Klicke auf **E-Mail-Vorlagen**.
+3. Du siehst eine Liste vorhandener Vorlagen mit ihrem Betreff, ihrer Kategorie und dem letzten Änderungsdatum.
 
-## Erstellen einer Vorlage
+## Eine Vorlage erstellen
 
-1. Klicken Sie auf **New Template**.
-2. Geben Sie einen **Template Name** ein, um ihn in der Liste zu identifizieren, und wählen Sie eine **Kategorie** (General, Events, Groups, Giving oder Welcome), um Ihre Vorlagen zu organisieren.
-3. Geben Sie die Zeile **Subject** ein.
-4. Schreiben Sie den **Body** mit dem Rich-Text-Editor.
-5. Klicken Sie auf **Save**.
+1. Klicke auf **Neue Vorlage**.
+2. Gib einen **Vorlagennamen** ein, um sie in der Liste zu identifizieren, und wähle eine **Kategorie** (Allgemein, Ereignisse, Gruppen, Gaben oder Willkommen), um deine Vorlagen zu organisieren.
+3. Gib die **Betreffzeile** ein.
+4. Schreibe den **Text** mit dem Rich-Text-Editor.
+5. Klicke auf **Speichern**.
 
-## Zusammenführungsfelder
+## Merge-Felder
 
-Klicken Sie auf einen Zusammenführungsfeld-Chip oberhalb der Betreffzeile oder des Body, um ihn an Ihrer Cursor-Position einzufügen. Wenn die E-Mail gesendet wird, wird jedes Zusammenführungsfeld durch die tatsächlichen Informationen des Empfängers ersetzt:
+Klicke auf ein Merge-Feld-Chip über der Betreffzeile oder dem Text, um es an deiner Cursorposition einzufügen. Wenn die E-Mail versendet wird, wird jedes Merge-Feld durch die tatsächlichen Informationen des Empfängers ersetzt:
 
-- `{{firstName}}`, `{{lastName}}`, `{{displayName}}` — Der Name des Empfängers
-- `{{email}}` — Die E-Mail-Adresse des Empfängers
-- `{{churchName}}` — Der Name Ihrer Kirche
+- `{{firstName}}`, `{{lastName}}`, `{{displayName}}` – Der Name des Empfängers
+- `{{email}}` – Die E-Mail-Adresse des Empfängers
+- `{{churchName}}` – Der Name deiner Kirche
 
 ## Vorschau einer Vorlage
 
-Klicken Sie auf **Preview**, um zu sehen, wie die Betreffzeile und der Body mit Beispieldaten aussehen werden, die für die Zusammenführungsfelder ausgefüllt sind, bevor Sie speichern oder senden.
+Klicke auf **Vorschau**, um zu sehen, wie die Betreffzeile und der Text mit ausgefüllten Beispieldaten für die Merge-Felder aussehen, bevor du speichern oder senden.
 
-## Verwenden einer Vorlage
+## Nutzung einer Vorlage
 
-Gespeicherte Vorlagen stehen zur Auswahl zur Verfügung, wenn Sie eine E-Mail an Personen oder eine Gruppe verfassen, und als Aktion in [Workflows](../serving/workflows.md).
+Gespeicherte Vorlagen können beim Verfassen einer E-Mail an Personen oder eine Gruppe ausgewählt werden und als Aktion in [Arbeitsabläufen](../serving/workflows.md). Bevor deine Kirche sie versenden kann, muss das ChurchApps-Team sie für Gruppen-E-Mail genehmigen. Siehe [Aktivierung von Gruppen-E-Mail für deine Kirche](../groups/group-members.md#turning-on-group-email-for-your-church).
 
 ## Bearbeiten und Löschen
 
-Klicken Sie auf das Symbol **Edit** neben einer Vorlage, um sie zu aktualisieren, oder auf das Symbol **Delete**, um sie dauerhaft zu entfernen.
+Klicke auf das Symbol **Bearbeiten** neben einer Vorlage, um sie zu aktualisieren, oder auf das Symbol **Löschen**, um sie dauerhaft zu entfernen.
 
 ## Nächste Schritte
 
-- [Workflows](../serving/workflows.md) — Trigger Sie automatisch eine Template-E-Mail basierend auf Regeln
+- [Arbeitsabläufe](../serving/workflows.md) – Sende eine Vorlage automatisch basierend auf Regeln

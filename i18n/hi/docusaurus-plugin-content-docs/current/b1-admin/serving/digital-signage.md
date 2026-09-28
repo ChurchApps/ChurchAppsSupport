@@ -2,39 +2,39 @@
 title: "डिजिटल साइनेज"
 ---
 
-# Digital Signage
+# डिजिटल साइनेज
 
 <div class="article-intro">
 
-Send your lesson content to a lobby or hallway TV using a digital signage feed. Each plan type gets a feed URL that always plays the current plan's content, so there's nothing to update week to week.
+डिजिटल साइनेज फीड का उपयोग करके अपनी पाठ सामग्री को लॉबी या हॉलवे टीवी में भेजें। प्रत्येक योजना प्रकार को एक फीड URL मिलता है जो हमेशा वर्तमान योजना की सामग्री को चलाता है, इसलिए सप्ताह दर सप्ताह कुछ भी अपडेट करने की जरूरत नहीं है।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरुआत से पहले</h4>
 
-- Set up a [plan type](./plans.md) with [Lessons.church](../content/lessons.md) or other lesson content scheduled
-- Have a [SignPresenter](https://www.signpresenter.com) account and a device set up to display it
+- [Lessons.church](../../b1-church/content/lessons.md) या अन्य पाठ सामग्री के साथ [योजना प्रकार](./plans.md) सेट करें
+- [SignPresenter](https://www.signpresenter.com) खाता और इसे प्रदर्शित करने के लिए सेट अप किया गया डिवाइस रखें
 
 </div>
 
-## Getting the Feed URL
+## फीड URL प्राप्त करना
 
-1. Navigate to **Serving** and open the ministry containing your plan type.
-2. Click the **Digital Signage** button (the RSS icon) on the plan type page.
-3. Copy the feed URL shown in the dialog.
+1. **Serving** पर नेविगेट करें और अपनी योजना प्रकार वाली मंत्रालय खोलें।
+2. योजना प्रकार पृष्ठ पर **Digital Signage** बटन (RSS आइकन) पर क्लिक करें।
+3. संवाद में दिखाया गया फीड URL कॉपी करें।
 
 :::info
-The feed URL is tied to the plan type, not a single plan. It automatically tracks whichever plan is scheduled as current for that plan type, so you only need to set it up once.
+फीड URL योजना प्रकार से जुड़ा होता है, न कि एकल योजना से। यह स्वचालित रूप से ट्रैक करता है कि इस योजना प्रकार के लिए कौन सी योजना वर्तमान के रूप में निर्धारित की गई है, इसलिए आपको इसे केवल एक बार सेट करना होगा।
 :::
 
-## Connecting to SignPresenter
+## SignPresenter से जुड़ना
 
-The feed is built to work with [SignPresenter](https://www.signpresenter.com), a third-party digital signage app. Paste the copied URL into SignPresenter as an external feed to display your current lesson content on a connected screen.
+फीड को [SignPresenter](https://www.signpresenter.com), एक तीसरे पक्ष के डिजिटल साइनेज ऐप के साथ काम करने के लिए बनाया गया है। कॉपी किए गए URL को SignPresenter में एक बाहरी फीड के रूप में पेस्ट करें ताकि अपनी वर्तमान पाठ सामग्री को किसी जुड़ी हुई स्क्रीन पर प्रदर्शित कर सकें।
 
-For step-by-step setup inside SignPresenter, see [SignPresenter's Lessons.church guide](https://support.signpresenter.com/topics/lessons-dot-church.html).
+SignPresenter के अंदर चरण-दर-चरण सेटअप के लिए, [SignPresenter's Lessons.church guide](https://support.signpresenter.com/topics/lessons-dot-church.html) देखें।
 
-## Next Steps
+## अगले कदम
 
-- Manage the plans that feed this signage display on the [Plans](./plans.md) page
-- Schedule content with [Lessons.church](./scheduling-lessons.md)
+- [Plans](./plans.md) पृष्ठ पर इस साइनेज डिस्प्ले को फीड करने वाली योजनाओं का प्रबंधन करें
+- [Lessons.church](./scheduling-lessons.md) के साथ सामग्री शेड्यूल करें

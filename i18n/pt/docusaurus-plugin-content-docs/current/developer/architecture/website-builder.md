@@ -1,16 +1,16 @@
 ---
-title: "Website Builder Architecture"
+title: "Arquitetura do Construtor de Sites"
 ---
 
-# Website Builder Architecture
+# Arquitetura do Construtor de Sites
 
 <div class="article-intro">
 
-Every church website served by B1App is rendered from a content tree — pages, sections, elements — stored in the ContentApi and edited visually in B1Admin. One shared component library renders both the editor preview and the live site, one element-type catalog defines what can appear on a page, and a separate AI service can generate or rewrite that tree. This page maps the whole stack: the element contract in `@churchapps/helpers`, the render pipeline, church-data elements, site-wide widgets, the blog layer, access-gated pages, SEO, AI generation, and conversational forms.
+Todo site de igreja servido por B1App é renderizado a partir de uma árvore de conteúdo — páginas, seções, elementos — armazenada no ContentApi e editada visualmente no B1Admin. Uma biblioteca de componentes compartilhada renderiza tanto a visualização do editor quanto o site ativo, um catálogo de tipo de elemento único define o que pode aparecer em uma página, e um serviço de IA separado pode gerar ou reescrever essa árvore. Esta página mapeia toda a pilha: o contrato de elemento em `@churchapps/helpers`, o pipeline de renderização, elementos de dados da igreja, widgets de todo o site, a camada de blog, páginas com acesso restrito, SEO, geração de IA e formulários conversacionais.
 
 </div>
 
-## Visão Geral
+## Visão geral
 
 ```
 ┌──────────────────────────────┐             ┌─────────────────────────────────────────┐
@@ -36,35 +36,35 @@ Every church website served by B1App is rendered from a content tree — pages, 
 └──────────────────────────────┘             └─────────────────────────────────────────┘
 ```
 
-Three rules hold across the stack:
+Três regras mantêm-se em toda a pilha:
 
-1. **One tree, two renderers.** A page is a `pages → sections → elements` tree where every node carries its settings as an `answers` JSON blob. The same apphelper components render the drag-and-drop editor in B1Admin and the server-rendered public site in B1App — there is no separate "publish format".
-2. **The contract lives in `@churchapps/helpers`.** `ElementTypes.ts` is the single catalog of element types; renderers resolve through a registry in apphelper; editor forms live in B1Admin. Adding an element type means touching all three, in that order.
-3. **The public site reads anonymous endpoints.** Everything B1App needs — the page tree, settings, blog posts, redirects, and the church-data endpoints in other modules — is public. Auth is optional: a JWT on the anonymous tree endpoint unlocks members-only pages, nothing else changes.
+1. **Uma árvore, dois renderizadores.** Uma página é uma árvore `pages → sections → elements` onde cada nó carrega suas configurações como um blob JSON `answers`. Os mesmos componentes do apphelper renderizam o editor de arrastar e soltar no B1Admin e o site público renderizado no servidor no B1App — não há um "formato de publicação" separado.
+2. **O contrato reside em `@churchapps/helpers`.** `ElementTypes.ts` é o catálogo único de tipos de elemento; os renderizadores se resolvem através de um registro no apphelper; os formulários do editor residem no B1Admin. Adicionar um tipo de elemento significa tocar nos três, nessa ordem.
+3. **O site público lê endpoints anônimos.** Tudo que B1App precisa — a árvore de página, configurações, posts de blog, redirecionamentos e os endpoints de dados da igreja em outros módulos — é público. Autenticação é opcional: um JWT no endpoint de árvore anônimo desbloqueia páginas apenas de membros, nada mais muda.
 
-## The content tree
+## A árvore de conteúdo
 
-The content module (`Api/src/modules/content`) owns the builder's data:
+O módulo de conteúdo (`Api/src/modules/content`) possui os dados do construtor:
 
-| Table | Role |
+| Tabela | Função |
 |-------|------|
-| `pages` | One page per URL: `url`, `title`, `layout`, plus `visibility`/`groupIds` (access gating) and `metaDescription` (SEO) |
-| `sections` | Horizontal bands on a page (or in a block): background, text color, and an `answersJSON` that carries styling plus the `dividerTop`/`dividerBottom` shape-divider configs |
-| `elements` | Content pieces inside a section: `elementType` + `answersJSON`, nestable for layout types (row/column, carousel) |
-| `blocks` | Reusable section/element groups (footer blocks, element blocks) shared across pages |
-| `posts` | Standalone blog posts (see [Blog](#blog)) |
-| `redirects` | Per-church `fromPath → toPath` pairs, capped at 200 (see [SEO](#seo-and-discoverability)) |
-| `settings` | Key-value church settings; rows flagged `public` are served anonymously and carry the widget/analytics config |
+| `pages` | Uma página por URL: `url`, `title`, `layout`, mais `visibility`/`groupIds` (acesso controlado) e `metaDescription` (SEO) |
+| `sections` | Bandas horizontais em uma página (ou em um bloco): cor de fundo, cor de texto e um `answersJSON` que carrega estilos mais as configurações de divisor de forma `dividerTop`/`dividerBottom` |
+| `elements` | Peças de conteúdo dentro de uma seção: `elementType` + `answersJSON`, aninhável para tipos de layout (linha/coluna, carrossel) |
+| `blocks` | Grupos de seção/elemento reutilizáveis (blocos de rodapé, blocos de elemento) compartilhados entre páginas |
+| `posts` | Posts de blog independentes (veja [Blog](#blog)) |
+| `redirects` | Pares `fromPath → toPath` por igreja, limitados a 200 (veja [SEO](#seo-and-discoverability)) |
+| `settings` | Configurações de igreja de chave-valor; linhas sinalizadas como `public` são servidas anonimamente e carregam a configuração de widget/análise |
 
-The whole tree for one URL comes back from a single anonymous call — `GET /content/pages/:churchId/tree?url=/about` — which is what B1App server-renders from. Editor requests fetch by id instead and keep internal ids.
+A árvore inteira para uma URL volta de uma única chamada anônima — `GET /content/pages/:churchId/tree?url=/about` — que é o que B1App renderiza no servidor. As solicitações do editor buscam por id e mantêm ids internos.
 
-## The element contract
+## O contrato de elemento
 
-### The catalog (`@churchapps/helpers`)
+### O catálogo (`@churchapps/helpers`)
 
-`Packages/helpers/src/ElementTypes.ts` defines every element type as an `ElementTypeDefinition`: `elementType`, `label`, `category`, `schemaVersion`, `defaults`, and a JSON-schema-style `answersSchema` for its answers. `validateElementAnswers()` is deliberately lenient — unknown types and extra keys pass, so old content never breaks on a catalog upgrade. **35 types ship today:**
+`Packages/helpers/src/ElementTypes.ts` define cada tipo de elemento como um `ElementTypeDefinition`: `elementType`, `label`, `category`, `schemaVersion`, `defaults` e um `answersSchema` estilo JSON-schema para suas respostas. `validateElementAnswers()` é deliberadamente indulgente — tipos desconhecidos e chaves extras passam, então conteúdo antigo nunca quebra em uma atualização de catálogo. **35 tipos são enviados hoje:**
 
-| Category | Element types |
+| Categoria | Tipos de elemento |
 |----------|---------------|
 | layout (6) | row, column, box, carousel, whiteSpace, block |
 | content (11) | text, textWithPhoto, card, faq, iconFeature, testimonial, socialIcons, countdown, stats, table, buttonLink |
@@ -72,121 +72,146 @@ The whole tree for one URL comes back from a single anonymous call — `GET /con
 | church (12) | logo, sermons, stream, donation, donateLink, form, calendar, groupList, groups, campaignProgress, staffGrid, serviceTimes |
 | advanced (2) | rawHTML, iframe |
 
-The `sermons` element is the most configurable of the church types: a `layout` answer selects `browse` (the legacy full browser), `grid`, `list`, or `featuredLatest`, with `playlistId`, `itemCount`, `showTitles`, and `showDates` refining the non-browse layouts.
+O elemento `sermons` é o mais configurável dos tipos de igreja: uma resposta `layout` seleciona `browse` (o navegador completo legado), `grid`, `list` ou `featuredLatest`, com `playlistId`, `itemCount`, `showTitles` e `showDates` refinando os layouts não-navegadores.
 
-### Renderers (`@churchapps/apphelper`)
+### Renderizadores (`@churchapps/apphelper`)
 
-Renderers live in `Packages/apphelper/src/website/components/elementTypes/`, one component per type, resolved through `ElementRegistry.ts` — a two-layer map where `Element.tsx` registers the default renderer for all 35 types (`registerDefaultElementRenderer`) and a host app can override any of them at runtime (`registerElementRenderer`) without forking the package.
+Os renderizadores residem em `Packages/apphelper/src/website/components/elementTypes/`, um componente por tipo, resolvido através de `ElementRegistry.ts` — um mapa de duas camadas onde `Element.tsx` registra o renderizador padrão para todos os 35 tipos (`registerDefaultElementRenderer`) e um aplicativo hospedeiro pode substituir qualquer um deles em tempo de execução (`registerElementRenderer`) sem fazer fork do pacote.
 
-### Editor forms (B1Admin)
+### Formulários de editor (B1Admin)
 
-The editor's per-type settings forms live in `B1Admin/src/site/admin/elements/` — `ElementEdit.tsx` dispatches to a dedicated component (`GalleryEdit`, `TestimonialEdit`, `StatsEdit`, …) or an inline field builder per type. The AI-facing mirror of this catalog is the API's MCP `describe_page_builder` tool (see [MCP Server](../api/mcp)).
+Os formulários de configurações por tipo do editor residem em `B1Admin/src/site/admin/elements/` — `ElementEdit.tsx` distribui para um componente dedicado (`GalleryEdit`, `TestimonialEdit`, `StatsEdit`, …) ou um construtor de campo inline por tipo. O espelho voltado para IA deste catálogo é a ferramenta MCP `describe_page_builder` da API (veja [MCP Server](../api/mcp)).
 
-### Section shape dividers
+### Divisores de forma de seção
 
-Sections can carry decorative shape dividers on either edge. The config lives in the section's `answersJSON` as `dividerTop` / `dividerBottom` objects — `{ shape, color, height, flip }` with `shape` one of `wave, waves, slant, curve, triangle, peaks`. Apphelper ships the `SectionDivider` component and `parseDividerConfig()` helper; both apps' Section renderers (`B1App/src/components/Section.tsx`, `B1Admin/src/site/admin/Section.tsx`) parse the answers and mount the divider, and `SectionEdit.tsx` in B1Admin provides the picker UI. The packages only ship the building block — the section-level wiring is the consuming apps' job.
+As seções podem carregar divisores de forma decorativos em qualquer uma das bordas. A configuração reside no `answersJSON` da seção como objetos `dividerTop` / `dividerBottom` — `{ shape, color, height, flip }` com `shape` sendo um de `wave, waves, slant, curve, triangle, peaks`. O Apphelper envia o componente `SectionDivider` e o auxiliar `parseDividerConfig()`; os renderizadores Section de ambos os aplicativos (`B1App/src/components/Section.tsx`, `B1Admin/src/site/admin/Section.tsx`) analisam as respostas e montam o divisor, e `SectionEdit.tsx` no B1Admin fornece a UI do seletor. Os pacotes enviam apenas o bloco de construção — a fiação no nível da seção é responsabilidade dos aplicativos que o consomem.
 
-## Church-data elements
+## Elementos de dados de Igreja
 
-Three element types render live church data rather than authored content. Module isolation still applies — each one calls the owning module's own public endpoint from the browser:
+Três tipos de elemento renderizam dados de igreja ativa em vez de conteúdo criado. O isolamento de módulo ainda se aplica — cada um chama o endpoint público do seu próprio módulo a partir do navegador:
 
-| Element | Endpoint | Notes |
+| Elemento | Endpoint | Notas |
 |---------|----------|-------|
-| `campaignProgress` | `GET /giving/funds/public/:churchId/:fundId/total` | Returns `{ fundId, totalAmount, donationCount }`, optional `?startDate=&endDate=` window; the element compares it against its `goalAmount` answer |
-| `staffGrid` | `GET /membership/groupmembers/public/:churchId/:groupId` | **Opt-in only**: the group must have `publicRoster` set (default off). The projection is deliberately minimal — `personId`, `displayName`, `leader`, photo — no contact or demographic fields |
-| `serviceTimes` | `GET /attendance/servicetimes/public/:churchId` | Returns the campus → service → time tree; the apphelper renderer emits best-effort schema.org `Event` JSON-LD from it (the API returns plain data) |
+| `campaignProgress` | `GET /giving/funds/public/:churchId/:fundId/total` | Retorna `{ fundId, totalAmount, donationCount }`, janela `?startDate=&endDate=` opcional; o elemento compara isso contra sua resposta `goalAmount` |
+| `staffGrid` | `GET /membership/groupmembers/public/:churchId/:groupId` | **Apenas opt-in**: o grupo deve ter `publicRoster` definido (padrão desligado). A projeção é deliberadamente mínima — `personId`, `displayName`, `leader`, foto — sem campos de contato ou demográficos |
+| `serviceTimes` | `GET /attendance/servicetimes/public/:churchId` | Retorna a árvore campus → serviço → tempo; o renderizador do apphelper emite JSON-LD schema.org `Event` com o melhor esforço a partir dele (a API retorna dados simples) |
 
 :::warning
-`publicRoster` is the privacy gate for `staffGrid`. Never widen the public group-member projection or bypass the flag — the roster endpoint is anonymous by design and the minimal field list is the safety property.
+`publicRoster` é o portão de privacidade para `staffGrid`. Nunca amplie a projeção de membro de grupo público ou contorne o sinalizador — o endpoint do roster é anônimo por design e a lista de campo mínimo é a propriedade de segurança.
 :::
 
-## Site-wide widgets
+## Widgets de todo o site
 
-Two widgets render on every public page rather than inside the tree: **AnnouncementBanner** (dismissible top-of-page bar) and **Launcher** (floating action hub for give/visit/watch-style links). Both components and their `parse*Config()` helpers ship in apphelper. Configuration is two public settings rows — keys `announcementBanner` and `launcher` — written by B1Admin's `SiteWidgetsEdit` (on the Appearance page) and read by B1App's public layout via `GET /content/settings/public/:churchId`. The API treats these as opaque key-value pairs; the key names are a convention between the two apps.
+Dois widgets são renderizados em cada página pública em vez de dentro da árvore: **AnnouncementBanner** (barra de topo dispensável) e **Launcher** (hub de ação flutuante para links de estilo dar/visitar/assistir). Ambos os componentes e seus auxiliares `parse*Config()` são enviados no apphelper. A configuração são duas linhas de configuração pública — chaves `announcementBanner` e `launcher` — escritas por `SiteWidgetsEdit` do B1Admin (na página Aparência) e lidas pelo layout público do B1App via `GET /content/settings/public/:churchId`. A API trata esses como pares chave-valor opacos; os nomes das chaves são uma convenção entre os dois aplicativos.
 
 ## Blog
 
-The blog is a standalone content type, not a layer over builder pages. A `posts` row holds the whole post: `title`, `slug`, `excerpt`, `content` (markdown body), `authorId`, `photoUrl`, `publishDate`, `category`, `tags`. Public surface (all anonymous, `PostController`):
+O blog é um tipo de conteúdo independente, não uma camada sobre páginas do construtor. Uma linha `posts` contém o post inteiro: `title`, `slug`, `excerpt`, `content` (corpo markdown), `authorId`, `photoUrl`, `publishDate`, `category`, `tags`. Superfície pública (todos anônimos, `PostController`):
 
-| Route | Purpose |
+| Rota | Propósito |
 |-------|---------|
-| `GET /content/posts/public/:churchId` | Published posts, filterable by `?category=&tag=`, paginated |
-| `GET /content/posts/public/:churchId/categories` | Distinct categories across published posts |
-| `GET /content/posts/public/:churchId/slug/:slug` | One published post |
-| `GET /content/posts/rss/:churchId?siteUrl=` | RSS 2.0 feed, titled with the church name, with per-item category and excerpt-or-content description |
+| `GET /content/posts/public/:churchId` | Posts publicados, filtráveis por `?category=&tag=`, paginados |
+| `GET /content/posts/public/:churchId/categories` | Categorias distintas entre posts publicados |
+| `GET /content/posts/public/:churchId/slug/:slug` | Um post publicado |
+| `GET /content/posts/rss/:churchId?siteUrl=` | Feed RSS 2.0, intitulado com o nome da igreja, com categoria por item e descrição de excerpt ou conteúdo |
 
-A post is "published" once `publishDate` is set and past; a future `publishDate` is a scheduled post (hidden publicly, shown with a Scheduled chip in admin). Read endpoints enrich each post with `authorName`, resolved from `authorId` through the membership module gateway. Missing excerpts fall back to stripped-markdown content (~160 chars) in listing cards, meta descriptions, and RSS. B1App serves `/{sdSlug}/blog` — an editorial listing (centered header that becomes the active category/tag name when filtered, category-chip filter row, thumbnail-left post rows with bylines and excerpts) with the RSS feed advertised as an alternate link — and `/{sdSlug}/blog/[postSlug]`, a dedicated route (not the Zone/Section pipeline) with a centered header (category kicker, title, byline, primary-color accent rule), a 16:9 hero at container width, the markdown body in a ~720px reading column, tag chips in the article footer, a `"More in {category}"` related-posts strip, and `BlogPosting` JSON-LD including the author. Both pages style entirely from theme tokens so they inherit each church's palette. Blog URLs are included in the per-church sitemap. B1Admin's authoring UI (**Site → Blog**) edits posts in a dialog: markdown editor with preview toggle, 16:9-cropped gallery image picker, author person-picker (defaults to the editing user), category autocomplete seeded from existing categories, duplicate-slug validation, and a publish toggle; published rows link out to the live post, and the page nudges admins to add a `/blog` navigation link.
+Um post é "publicado" uma vez que `publishDate` está definido e passou; um `publishDate` futuro é um post agendado (ocultado publicamente, mostrado com um chip Agendado no admin). Os endpoints de leitura enriquecem cada post com `authorName`, resolvido de `authorId` através do gateway do módulo de associação. Os excerpts ausentes voltam para conteúdo markdown despojado (~160 caracteres) em cartões de listagem, meta descrições e RSS. B1App serve `/{sdSlug}/blog` — uma listagem editorial (cabeçalho centralizado que se torna o nome de categoria/tag ativa quando filtrado, linha de filtro de chip de categoria, linhas de post com miniaturas à esquerda com assinaturas e excerpts) com o feed RSS anunciado como um link alternativo — e `/{sdSlug}/blog/[postSlug]`, uma rota dedicada (não o pipeline Zone/Section) com um cabeçalho centralizado (kicker de categoria, título, assinatura, regra de acento de cor primária), um herói 16:9 na largura do contêiner, o corpo markdown em uma coluna de leitura de ~720px, chips de tag no rodapé do artigo, uma faixa `"More in {category}"` de posts relacionados e JSON-LD `BlogPosting` incluindo o autor. Ambas as páginas estilizam inteiramente de tokens de tema, então herdam a paleta de cada igreja. As URLs do blog são incluídas no sitemap por igreja. A UI de autoria do B1Admin (**Site → Blog**) edita posts em um diálogo: editor markdown com alternância de visualização, seletor de imagem de galeria cortada 16:9, seletor de pessoa de autor (padrão para o usuário de edição), autocompletar de categoria propagado a partir de categorias existentes, validação de slug duplicado e um alternador de publicação; linhas publicadas se vinculam ao post ao vivo, e a página incentiva admins a adicionar um link de navegação `/blog`.
 
-## Members-only pages
+## Páginas apenas para membros
 
-`pages.visibility` reuses the navigation-links enum — `everyone` (default), `visitors`, `members`, `staff`, `team`, `groups` (with `groupIds`) — but as a **hard access gate**, not a nav filter (`PageVisibilityHelper.canViewPage`). The flow:
+`pages.visibility` reutiliza a enumeração de links de navegação — `everyone` (padrão), `visitors`, `members`, `staff`, `team`, `groups` (com `groupIds`) — mas como um **portão de acesso rígido**, não um filtro de navegação (`PageVisibilityHelper.canViewPage`). O fluxo:
 
-1. The anonymous tree endpoint checks visibility on URL-based fetches. Anonymous callers of a gated page get `{ restricted: true, visibility }` instead of content — the tree never leaks.
-2. The endpoint still honors a JWT: `CustomAuthProvider` verifies the `Authorization` header on *every* request, including anonymous routes, so an authenticated member's fetch of the same URL resolves normally.
-3. B1App renders `RestrictedPage` on a `restricted` response: it hydrates the session from stored credentials, re-fetches the tree with the JWT, and renders it — or shows a login gate with a `returnUrl` when there is no session.
+1. O endpoint de árvore anônimo verifica visibilidade em buscar baseadas em URL. Os chamadores anônimos de uma página controlada obtêm `{ restricted: true, visibility }` em vez de conteúdo — a árvore nunca vaza.
+2. O endpoint ainda honra um JWT: `CustomAuthProvider` verifica o cabeçalho `Authorization` em *todas* as solicitações, incluindo rotas anônimas, então a busca de um membro autenticado da mesma URL se resolve normalmente.
+3. B1App renderiza `RestrictedPage` em uma resposta `restricted`: ele hidrata a sessão das credenciais armazenadas, busca novamente a árvore com o JWT e a renderiza — ou mostra um portão de login com um `returnUrl` quando não há sessão.
 
 :::info
-The gate's granularity varies by level: `groups` checks the token's `groupIds` against the page's list and `staff` checks `membershipStatus`, but `members` and `team` currently pass any authenticated user of the church. Treat `groups` as the strict option.
+A granularidade do portão varia por nível: `groups` verifica os `groupIds` do token contra a lista da página e `staff` verifica `membershipStatus`, mas `members` e `team` atualmente passam qualquer usuário autenticado da igreja. Trate `groups` como a opção rigorosa.
 :::
 
-## SEO and discoverability
+## SEO e descoberta
 
-All of this is B1App-side rendering over ContentApi data — the API stores, the app emits:
+Tudo isso é renderização no lado B1App sobre dados do ContentApi — a API armazena, o aplicativo emite:
 
-| Concern | How it works |
+| Preocupação | Como funciona |
 |---------|--------------|
-| Meta descriptions | `pages.metaDescription` (≤300 chars) flows through `MetaHelper.getMetaData()` into the Next.js `Metadata` (description + Open Graph) on every builder-rendered route. B1Admin's page settings include an AI "Generate" button (see below) |
-| Redirects | Per-church `redirects` rows managed at `/content/redirects` (`content.edit`, 200-row cap, normalized paths). On a would-be 404, B1App's page route resolves the path against `GET /content/redirects/public/:churchId` and issues an HTTP 308 via Next's `permanentRedirect`; unmatched paths fall through to `notFound()` |
-| Branded 404 | `not-found.tsx` renders `BrandedNotFound` with the church's logo, name, and theme instead of a generic error |
-| Structured data | `BlogPosting` JSON-LD on blog posts; `VideoObject` on the per-sermon pages (`/{sdSlug}/sermons/[sermonId]`) and on pages containing a `sermons` element; `Event` from calendar/event elements on builder pages; schema.org `Event` from the `serviceTimes` element |
-| Sermon pages | Every public sermon gets a crawlable page at `/sermons/[sermonId]` with full metadata — sermons are no longer locked inside the client-side browser element |
-| Analytics | The public settings key `ga4MeasurementId` (managed next to redirects in B1Admin) injects a per-church GA4 gtag via `next/script` |
-| Sitemap & feeds | The per-church `sitemap.xml` route includes builder pages and blog URLs; the blog listing advertises the RSS feed |
-| Accessibility | The public chrome renders a skip link targeting the `<main id="main-content">` landmark in every layout wrapper |
+| Meta descrições | `pages.metaDescription` (≤300 chars) flui através de `MetaHelper.getMetaData()` nos metadados Next.js `Metadata` (descrição + Open Graph) em cada rota renderizada pelo construtor. As configurações de página do B1Admin incluem um botão "Gerar" de IA (veja abaixo) |
+| Redirecionamentos | Linhas `redirects` por igreja gerenciadas em `/content/redirects` (`content.edit`, limite de 200 linhas, caminhos normalizados). Em um possível 404, a rota de página do B1App resolve o caminho contra `GET /content/redirects/public/:churchId` e emite um HTTP 308 através do `permanentRedirect` do Next; os caminhos não correspondidos caem através de `notFound()` |
+| 404 marcado | `not-found.tsx` renderiza `BrandedNotFound` com o logo, nome e tema da igreja em vez de um erro genérico |
+| Dados estruturados | JSON-LD `BlogPosting` em posts de blog; `VideoObject` nas páginas por sermão (`/{sdSlug}/sermons/[sermonId]`) e em páginas contendo um elemento `sermons`; `Event` de elementos de calendário/evento em páginas do construtor; `Event` schema.org a partir do elemento `serviceTimes` |
+| Páginas de sermão | Todo sermão público obtém uma página rastreável em `/sermons/[sermonId]` com metadados completos — os sermões não estão mais bloqueados dentro do elemento de navegador do lado do cliente |
+| Análise | A chave de configuração pública `ga4MeasurementId` (gerenciada ao lado de redirecionamentos no B1Admin) injeta um gtag GA4 por igreja via `next/script` |
+| Sitemap & feeds | A rota `sitemap.xml` por igreja inclui páginas do construtor e URLs de blog; a listagem de blog anuncia o feed RSS |
+| Acessibilidade | O chrome público renderiza um link de salto direcionado para o marco `<main id="main-content">` em cada wrapper de layout |
 
-## AI generation (AskApi)
+## Geração de IA (AskApi)
 
-Page and site generation runs in **AskApi**, a separate service, under the `/website` controller. It authenticates with the same `CustomAuthProvider` JWT as everything else and is **stateless with respect to content**: every endpoint returns JSON and the caller (B1Admin) persists the result through ContentApi (`POST /content/pages/temp/ai` saves a generated page-sections-elements bundle in one call).
+A geração de página e site funciona em **AskApi**, um serviço separado, sob o controlador `/website`. Ele autentica com o mesmo JWT `CustomAuthProvider` como tudo mais e é **sem estado com respeito ao conteúdo**: cada endpoint retorna JSON e o chamador (B1Admin) persiste o resultado através do ContentApi (`POST /content/pages/importTree` cria uma página com sua árvore completa de seção/elemento aninhada em uma chamada; sempre insere sob a igreja do chamador e ignora ids no corpo).
+
+### Geração de página (`planPage` → `writePage`)
+
+O modelo "AI" de página em B1Admin's `AddPageModal` usa um pipeline de baixo custo (`AskApi/src/helpers/SiteGenHelper.ts`) construído em uma regra: **nenhum modelo jamais emite JSON do construtor**. Dois modelos dividem o trabalho através do Gateway de IA Vercel (HTTP simples, chave SSM `/{env}/aiGatewayApiKey` ou `AI_GATEWAY_API_KEY`):
+
+- **JEV** (`typesafe-ai/jev`) — um modelo de decisão tipado que retorna escolhas, pontuações e booleanos com probabilidades, mas não pode escrever texto. Ele escolhe cada seção por sua vez a partir de uma biblioteca de modelo fixo, pontuações de layouts, verifica fatos de cópia e escolhe fotos de estoque e ícones. Os custos de entrada custam cerca de $0,04 por milhão de tokens e a saída é gratuita, então ~90 chamadas por página custam uma fração de um centavo.
+- **Um pequeno modelo de chat (GPT-4.1 mini por padrão)** — preenche os slots de texto nomeados e limitados em comprimento dos modelos escolhidos. O escritor é uma constante, substituível com a variável de ambiente `SITEGEN_COPY_MODEL` (qualquer id de modelo de chat no gateway, por ex. `anthropic/claude-haiku-4.5`). Em um lado a lado cego em três igrejas Claude Haiku 4.5 leu um pouco mais caloroso, mas GPT-4.1 mini foi perto, aproximadamente 4x mais barato e mais rápido, então é o padrão. Uma página completa com todos os três layouts custa cerca de 1,3 centavos, cerca de 80% disso o escritor.
+
+| Fase | Endpoint | O que acontece |
+|-------|----------|--------------|
+| 1 | `POST /website/planPage` | Classifica o tipo de página (casa, visita, sobre…), então mostra 10 layouts candidatos das probabilidades por rodada do JEV (herói + contagem de seção → cada seção → mais perto), remove duplicatas, tem JEV pontuação cada para caber/fluxo/lacunas e retorna os 3 melhores mais uma voz de escrita e um `suggestedStyle` (paleta + fontes). Os candidatos que compartilham as mesmas seções até agora fazem ao JEV uma pergunta idêntica, então as rodadas são memoizadas por prefixo. Uma melhor pontuação abaixo de 6 é registrada como `lowLayoutScore` — esse log é o backlog de modelos que valem a pena adicionar. ~2s |
+| 2 | `POST /website/writePage` (uma chamada por candidato) | O escritor preenche a cópia do slot de duas seções por chamada, em paralelo, e retorna cinco manchetes de herói que o JEV escolhe entre; JEV verifica fatos de cada seção; seções que falham, usam uma frase de estoque ou re-contam uma seção anterior (executar 4 palavras compartilhadas, verificadas no código) são reescritas em paralelo com a razão específica; uma limpeza de código cai sentenças com frases de site de igreja de estoque (a menos que a descrição da própria igreja as use); JEV escolhe assuntos de foto, ícones e o divisor de forma do herói, e pontuações o resultado. Retorna uma árvore de seção pronta para salvar e uma pontuação. ~6–9s |
+| 3 | `POST /content/pages/importTree` | B1Admin escreve apenas o layout com melhor classificação (o vice é um fallback se essa escrita falhar), salva e abre a visualização (~10s após Save) |
+
+Cada fase é sua própria solicitação, então cada chamada fica dentro do limite de 29 segundos do API Gateway. Os modelos em `SiteGenHelper.buildTree` são árvores de seção + elemento fixas a partir do catálogo (`text`, `row`/`column`, `card`, `iconFeature`, `faq`, `table`, `testimonial`, `textWithPhoto`, `box`, `map`, `sermons`) e referenciam tokens de tema (`var(--accent)`, `var(--lightAccent)`…), então páginas geradas herdam as configurações de aparência existentes da igreja. Adicionar um modelo de seção significa adicionar sua lista de slot a `SECTIONS` e sua árvore a `buildTree`; o teste de unidade percorre cada modelo e valida a árvore.
+
+**Entradas.** A cópia pode apenas indicar fatos de duas fontes: o que o usuário digitou e `churchContext.facts` — registros que B1Admin reúne antes do planejamento (horários de serviço públicos e nomes de grupo públicos, mais o nome e endereço da igreja). Os mesmos sinalizadores portão modelos apoiados por dados: `times` renderiza o elemento `serviceTimes` ao vivo quando a igreja mantém horários de serviço no B1 (uma tabela digitada de outra forma), `groups` e `countdown` são oferecidos apenas quando há dados por trás deles. As chamadas do JEV são protegidas — um duplicado dispara após 1,5s e a primeira resposta vence — porque o gateway ocasionalmente trava e as chamadas são quase gratuitas.
+
+**Mantendo-se no assunto.** O prompt do usuário é o *assunto da página*, não antecedentes sobre a igreja. `planPage` classifica a solicitação (`home`, `visit`, `about`, `ministries`, `give`, `contact`, `event`, `topic`), e para páginas `event` e `topic` os modelos gerais da igreja (nota do pastor, sermões, ministérios, grupos, impacto comunitário, tempos semanais e contagem regressiva, herói de vídeo) não são sequer oferecidos, enquanto `details` (quando / onde / o que trazer) e um `eventCountdown` de data são. Ambos os juízes pontuam sobre relevância de tópico. B1Admin passa `pageType` do plano em cada chamada `writePage`.
+
+**Páginas completas de pedidos curtos.** As páginas têm três a seis seções do meio, comprimentos de slot generosos, uma linha de intro em seções de cartão e uma FAQ de cinco perguntas, e o passe de reparo expande qualquer seção que volta fina. A geração é um clique: não há perguntas de acompanhamento. Onde a solicitação deixa de fora um detalhe comum que uma página completa precisa (uma hora de início, uma sala, o que trazer, como se inscrever), o escritor a preenche com uma escolha modesta e plausível para a igreja editar. Como as seções são escritas em paralelo, essas lacunas são decididas **uma vez**, em `planPage` (`assumedDetails`, uma pequena chamada de escritor que funciona junto com a amostragem de layout), e passa de volta em cada chamada `writePage` através de `churchContext.assumedDetails`, então uma seção não pode dizer 5:00 enquanto outra diz 5:30. O JEV repara qualquer seção que contradiz a solicitação, os registros da igreja ou esses detalhes decididos. Os detalhes decididos não são superficiais na UI; a igreja revisa e edita a página como qualquer outra. Algumas coisas nunca são inventadas: nomes de pessoas, números de telefone, email e endereços web, preços, estatísticas, a história da igreja, citações atribuídas a pessoas, e um dia da semana para uma data que a solicitação não deu um para.
+
+**Visuais.** Os modelos nunca nomeiam suas fotos ou ícones. Deixam slots abertos e um passe genérico (`visualSlots` → `pickVisuals` → `applyVisuals` em `SiteGenHelper`) percorre a árvore acabada e preenche cada um: um fundo de seção ou entrada de galeria marcada `auto:photo`, um `auto:icon`, `auto:divider` do herói e, sem marcador nenhum, qualquer elemento `textWithPhoto`, `card` ou `image` cuja `photo` está vazia. O JEV escolhe cada um do texto ao lado dele (uma foto de cartão a partir do título e texto desse cartão; um fundo da cópia da seção), sem assunto repetido em uma página. Um modelo novo portanto obtém fotos gratuitamente. As fotos são assuntos de pesquisa Pexels emitidos como placeholders `pexels:<term>` que B1Admin resolve através de `POST /content/stock/search`; um cliente que não envia `resolvesPhotos` obtém uma imagem herói incorporada, bandas de cor plano e cartões sem foto em vez disso. Não há intencionalmente assuntos de retrato e o modelo de pastor não carrega foto: um estranho de estoque nunca deve ficar no lugar de uma pessoa real. Para uma igreja sem páginas ainda, B1Admin aplica `suggestedStyle` aos estilos globais; sites existentes mantêm sua aparência.
+
+### Outros endpoints
 
 :::info
-As of 2026-07-03, B1Admin's entry points to this pipeline — the site "AI" template in `AddPageModal`, the `SectionToolbar` rewrite button, and the pages-list "Generate Site" button — are commented out client-side while the feature is reworked. The AskApi endpoints below are unaffected and still respond; only the B1Admin UI is hidden.
+O botão de reescrita `SectionToolbar` e o botão "Gerar Site" da lista de páginas no B1Admin permanecem comentados no lado do cliente. Os endpoints da AskApi abaixo ainda respondem; apenas essa UI fica oculta.
 :::
 
-| Endpoint | Purpose |
+| Endpoint | Propósito |
 |----------|---------|
-| `POST /website/generatePageOutline` → `generateSection` | The original two-step page flow: outline first, then one call per section. B1Admin's "AI" page template in `AddPageModal` drives this — outline, then parallel section generation, then preview |
-| `POST /website/generateSite` | Whole-site generation. **Two-phase by design**: a `planOnly: true` call returns just the multi-page plan (one fast model call), then the client requests full content — keeping every request inside the Lambda/API-Gateway timeout |
-| `POST /website/rewriteSection` | Structure-preserving rewrite: the model may only change text-bearing answers. A recursive structure signature (ids + types + order) is compared before and after; any mismatch returns the original section with `fallback: true` instead of corrupted structure |
-| `POST /website/generateAltText` | Vision call over up to 20 image URLs; returns concise alt text (≤125 chars, "photo of" prefixes stripped) |
-| `POST /website/generateMetaDescription` | One SEO meta description (≤155 chars) from the page's text content — wired to the Generate button on B1Admin's page settings |
+| `POST /website/generatePageOutline` → `generateSection` | O fluxo de página de duas etapas original (contorno, então uma chamada LLM por seção emitindo JSON de elemento). Supersedido no B1Admin por `planPage`/`writePage` por razões de custo; mantido para consumidores de API |
+| `POST /website/generateSite` | Geração de site inteiro. **Duas fases por design**: uma chamada `planOnly: true` retorna apenas o plano multi-página (uma chamada de modelo rápido), então o cliente solicita conteúdo completo — mantendo cada solicitação dentro do timeout Lambda/API-Gateway |
+| `POST /website/rewriteSection` | Reescrita preservadora de estrutura: o modelo pode apenas alterar respostas que carregam texto. Uma assinatura de estrutura recursiva (ids + tipos + ordem) é comparada antes e depois; qualquer incompatibilidade retorna a seção original com `fallback: true` em vez de estrutura corrompida |
+| `POST /website/generateAltText` | Chamada de visão sobre até 20 URLs de imagem; retorna texto alt conciso (≤125 chars, prefixos "foto de" removidos) |
+| `POST /website/generateMetaDescription` | Uma meta descrição SEO (≤155 chars) a partir do conteúdo de texto da página — conectada ao botão Gerar nas configurações de página do B1Admin |
 
-Prompts are markdown files under `AskApi/config/instructions/`, including the element catalog the model generates from. Two design points keep the catalog honest: the client passes `availableElementTypes` on every request (the prompt may only use types from that list — the server never hardcodes the full set), and the API's MCP `describe_page_builder` tool carries the same guide for AI agents working through [MCP](../api/mcp). Models are Anthropic Claude via OpenRouter — 3.5 Haiku for section content (latency), 3.5 Sonnet for outlines, site plans, and vision — with an OpenAI fallback when no OpenRouter key is configured.
+Os prompts para esses endpoints são arquivos markdown em `AskApi/config/instructions/`, incluindo o catálogo de elemento a partir do qual o modelo gera. Dois pontos de design mantêm o catálogo honesto: o cliente passa `availableElementTypes` em cada solicitação (o prompt pode usar apenas tipos dessa lista — o servidor nunca codifica o conjunto completo) e a ferramenta MCP `describe_page_builder` da API carrega o mesmo guia para agentes de IA trabalhando através de [MCP](../api/mcp). Os modelos são Claude Anthropic através de OpenRouter — 3.5 Haiku para conteúdo de seção (latência), 3.5 Sonnet para contornos, planos de site e visão — com um fallback OpenAI quando nenhuma chave OpenRouter é configurada.
 
-## Conversational forms
+## Formulários conversacionais
 
-Forms (membership module) gained a conversational mode aimed at connect-card-style pages. Four columns on `forms` drive it: `displayMode` (`standard` | `conversational`), `autoCreatePerson`, `followUpSubject`, `followUpBody`.
+Os formulários (módulo de associação) ganharam um modo conversacional direcionado a páginas de estilo cartão de conexão. Quatro colunas em `forms` levam isso: `displayMode` (`standard` | `conversational`), `autoCreatePerson`, `followUpSubject`, `followUpBody`.
 
-- **Rendering** — apphelper's `FormSubmissionEdit` switches to the `ConversationalForm` component (one question at a time) when `displayMode` is `conversational`; B1App's form page passes the mode through. Same submission payload either way.
-- **Auto-create person** — on submission with `autoCreatePerson` set, `ConversationalFormHelper.findOrCreatePerson` dedups by email (case-insensitive) and otherwise creates a household + person with `membershipStatus: "Guest"`, then links the submission to that person.
-- **Follow-up email** — when a subject and body are set, the submitter gets a templated email (with `{firstName}` / `{churchName}` tokens) through the existing transactional path (`TransactionalEmailHelper`), never the notification digest door. Both side-effects are non-fatal: a failure never loses the submission.
+- **Renderização** — o `FormSubmissionEdit` do apphelper muda para o componente `ConversationalForm` (uma pergunta de cada vez) quando `displayMode` é `conversational`; a página de formulário do B1App passa o modo através. Mesmo payload de envio de qualquer forma.
+- **Criar pessoa automaticamente** — no envio com `autoCreatePerson` definido, `ConversationalFormHelper.findOrCreatePerson` deduplica por email (case-insensitive) e caso contrário cria um agregado + pessoa com `membershipStatus: "Guest"`, então vincula o envio a essa pessoa.
+- **Email de acompanhamento** — quando um assunto e corpo estão definidos, o submissor obtém um email em modelo (com tokens `{firstName}` / `{churchName}`) através do caminho transacional existente (`TransactionalEmailHelper`), nunca a porta de digestão de notificação. Ambas as side-effects são não-fatais: uma falha nunca perde o envio.
 
-The four fields are set via the API today; the B1Admin form editor does not expose them yet.
+Os quatro campos são definidos através da API hoje; o editor de formulário do B1Admin ainda não os expõe.
 
-## Public-site cache
+## Cache do site público
 
-B1App's public render path caches church-tagged fetches (`next: { revalidate: 300, tags: [sdSlug] }` in production; `0` in dev) so a live page can stay stale for up to five minutes after a ContentApi write. `POST /api/revalidate/{sdSlug}` on B1App calls `revalidateTag(sdSlug)` and is the only way to drop that cache early.
+O caminho de renderização público do B1App armazena buscas marcadas com igreja (`next: { revalidate: 300, tags: [sdSlug] }` em produção; `0` em dev) para que uma página ativa permaneça obsoleta por até cinco minutos após uma escrita do ContentApi. `POST /api/revalidate/{sdSlug}` no B1App chama `revalidateTag(sdSlug)` e é a única maneira de descartar esse cache mais cedo.
 
-Two writers hit it:
+Dois escritores o atingem:
 
-1. **B1Admin** — `clearSiteCache()` in `B1Admin/src/site/siteCache.ts` POSTs after editor saves. It prefers the active site's subdomain (a secondary site must bust *that* tag, not the church's default).
-2. **Api** — Content mutations that never go through B1Admin (API keys, MCP, AI) fire `SiteCacheHelper.bump(churchId)` from the content controllers. The helper resolves the church subdomain via `SubDomainHelper` and POSTs `{b1AppRoot}/api/revalidate/{sd}`. Failures are swallowed so an unreachable B1App cannot fail a save.
+1. **B1Admin** — `clearSiteCache()` em `B1Admin/src/site/siteCache.ts` POSTs após salva do editor. Ele prefere o subdomínio do site ativo (um site secundário deve derrotar *aquele* tag, não o padrão da igreja).
+2. **Api** — Mutações de conteúdo que nunca passam por B1Admin (chaves API, MCP, IA) disparam `SiteCacheHelper.bump(churchId)` a partir dos controladores de conteúdo. O auxiliar resolve o subdomínio da igreja via `SubDomainHelper` e POSTs `{b1AppRoot}/api/revalidate/{sd}`. As falhas são engolidas para que um B1App inacessível não possa fazer uma falha de salvamento.
 
-Controllers that bump: pages (save, delete, duplicate, publish, discard, unpublish, AI temp), sections, elements, blocks, links, global styles, posts, and redirects. Dev `b1AppRoot` is `http://{subdomain}.localtest.me:3301`; demo/staging/prod use `https://{subdomain}.b1.church`.
+Controladores que atingem: páginas (salvar, deletar, duplicar, publicar, descartar, despublicar, IA temporária), seções, elementos, blocos, links, estilos globais, posts e redirecionamentos. Dev `b1AppRoot` é `http://{subdomain}.localtest.me:3301`; demo/staging/prod usam `https://{subdomain}.b1.church`.
 
-## Related Pages
+## Páginas Relacionadas
 
-- [Website Routing & Multi-Site](./websites) — how a request resolves to a church/site and how custom domains route
-- [Content Endpoints](../api/endpoints/content) — full REST surface for pages, sections, elements, blocks, posts, redirects, and settings
-- [AppHelper](../shared-libraries/app-helper) — the npm package that ships the renderers, registry, dividers, and widgets
-- [MCP Server](../api/mcp) — including the `describe_page_builder` guide tool
-- [Page Editor (end-user)](/docs/b1-admin/website/page-editor) — the staff-facing editor documentation
+- [Website Routing & Multi-Site](./websites) — como uma solicitação resolve para uma igreja/site e como domínios personalizados roteam
+- [Content Endpoints](../api/endpoints/content) — superfície REST completa para páginas, seções, elementos, blocos, posts, redirecionamentos e configurações
+- [AppHelper](../shared-libraries/app-helper) — o pacote npm que envia os renderizadores, registro, divisores e widgets
+- [MCP Server](../api/mcp) — incluindo a ferramenta de guia `describe_page_builder`
+- [Page Editor (end-user)](/docs/b1-admin/website/page-editor) — a documentação do editor voltada para a equipe

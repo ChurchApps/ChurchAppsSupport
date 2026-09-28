@@ -2,65 +2,67 @@
 title: "प्रस्तुतियों को प्रबंधित करना"
 ---
 
-# Managing Submissions
+# प्रस्तुतियों को प्रबंधित करना
 
 <div class="article-intro">
 
-Once your form is live, submissions will start coming in. The Submissions tab lets you review every response, track who has submitted, and use the data to follow up with your congregation in a timely manner.
+एक बार जब आपका फॉर्म लाइव हो जाए, तो प्रस्तुतियां आने लगेंगी। प्रस्तुतियां टैब आपको हर प्रतिक्रिया की समीक्षा करने, यह ट्रैक करने की अनुमति देता है कि किसने जमा किया है, और अपनी मण्डली के साथ समय पर अनुवर्ती कार्रवाई करने के लिए डेटा का उपयोग करता है।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- [Create a form](./creating-forms.md) with at least one question
-- Share the form via its public URL or embed it on your [website](../website/managing-pages.md)
+- कम से कम एक प्रश्न के साथ [एक फॉर्म बनाएं](./creating-forms.md)
+- इसके सार्वजनिक URL के माध्यम से फॉर्म साझा करें या इसे अपनी [वेबसाइट](../website/managing-pages.md) पर एम्बेड करें
 
 </div>
 
-## Viewing Submissions
+## प्रस्तुतियों को देखना
 
-1. Navigate to **Forms** from the main menu.
-2. Click on the form you want to review.
-3. Go to the **Submissions** tab.
+1. अनुभाग मेनू से **लोग** खोलें, फिर नेविगेशन बार में **फॉर्म** पर क्लिक करें।
+2. समीक्षा करना चाहते हैं उस फॉर्म पर क्लिक करें।
+3. **प्रस्तुतियां** टैब पर जाएं।
 
-You will see a list of all responses received for that form. Each submission shows the respondent's information and the date it was submitted.
+आप उस फॉर्म के लिए प्राप्त सभी प्रतिक्रियाओं की सूची देखेंगे। प्रत्येक प्रस्तुति उत्तरदाता की जानकारी और इसे जमा करने की तारीख दिखाती है।
 
-## Reviewing Individual Submissions
+## व्यक्तिगत प्रस्तुतियों की समीक्षा करना
 
-Click on any submission to view the full details. You will see all the answers the person provided for each question on the form.
+पूर्ण विवरण देखने के लिए किसी भी प्रस्तुति पर क्लिक करें। आप फॉर्म पर प्रत्येक प्रश्न के लिए व्यक्ति द्वारा प्रदान किए गए सभी उत्तर देखेंगे।
 
-## How Submissions Are Collected
+उस व्यक्ति के भरे हुए उत्तरों को प्रिंट करने के लिए प्रस्तुति के बगल में **प्रिंट आइकन** पर क्लिक करें -- एक कागज की फ़ाइल या एक हस्ताक्षरित रिलीज के लिए उपयोगी जो आपको हाथ पर रखने की आवश्यकता है। यह [एक खाली फॉर्म प्रिंट करने](./creating-forms.md#printing-a-blank-form) से अलग है; यह एक व्यक्ति के पहले से जमा किए गए उत्तरों को प्रिंट करता है, खाली प्रति नहीं। एक ही प्रिंट आइकन दिखाई देता है जहां भी एक प्रस्तुति दिखाई जाती है, जिसमें [व्यक्ति की प्रोफाइल](../people/adding-people.md#working-with-forms) भी शामिल है।
 
-Submissions can come in through several channels:
+## प्रस्तुतियां कैसे एकत्र की जाती हैं
 
-- **Public URL** -- If your form has a public URL (Stand Alone forms), anyone with the link can submit a response. Share the URL via email, social media, or text messages.
-- **Embedded on your website** -- Forms embedded on your B1 website collect submissions automatically when visitors fill them out.
-- **Internal use** -- Staff and volunteers can also submit forms on behalf of others directly within B1 Admin.
+प्रस्तुतियां कई चैनलों के माध्यम से आ सकती हैं:
+
+- **सार्वजनिक URL** -- यदि आपके फॉर्म का एक सार्वजनिक URL है (स्टैंडअलोन फॉर्म), तो लिंक वाला कोई भी प्रतिक्रिया जमा कर सकता है। URL को ईमेल, सोशल मीडिया, या पाठ संदेशों के माध्यम से साझा करें।
+- **आपकी वेबसाइट पर एम्बेड किया गया** -- आपकी B1 वेबसाइट पर एम्बेड किए गए फॉर्म स्वचालित रूप से प्रस्तुतियां एकत्र करते हैं जब दर्शक उन्हें भरते हैं।
+- **आंतरिक उपयोग** -- कर्मचारी और स्वयंसेवक भी B1 Admin के भीतर सीधे दूसरों की ओर से फॉर्म जमा कर सकते हैं।
 
 :::tip
-Check the **Submissions** tab regularly for forms like visitor cards or prayer requests, so you can follow up promptly.
+दर्शक कार्ड या प्रार्थना अनुरोध जैसे फॉर्म के लिए नियमित रूप से **प्रस्तुतियां** टैब की जांच करें, ताकि आप तुरंत अनुवर्ती कार्रवाई कर सकें।
 :::
 
-## Using Submission Data
+## प्रस्तुति डेटा का उपयोग करना
 
-The data collected through forms can help you:
+फॉर्म के माध्यम से एकत्र किया गया डेटा आपको मदद कर सकता है:
 
-- Track event registrations and plan accordingly
-- Follow up with visitors or new members
-- Collect survey feedback for ministry planning
-- Process payments for events or programs
+- इवेंट पंजीकरण को ट्रैक करें और तदनुसार योजना बनाएं
+- दर्शकों या नए सदस्यों के साथ अनुवर्ती कार्रवाई करें
+- मंत्रालय योजना के लिए सर्वेक्षण प्रतिक्रिया एकत्र करें
+- इवेंट या प्रोग्राम के लिए भुगतान प्रक्रिया करें
 
 :::info
-Form members with **Admin** or **View Only** roles can access the Submissions tab. Make sure the right people on your team have access to the forms they need by managing roles in the **Members** tab.
+**प्रशासक** या **केवल देखें** भूमिकाओं वाले फॉर्म सदस्य प्रस्तुतियां टैब तक पहुंच सकते हैं। **सदस्य** टैब में भूमिकाओं को प्रबंधित करके सुनिश्चित करें कि आपकी टीम के सही लोगों को उन फॉर्म तक पहुंच है जिनकी उन्हें आवश्यकता है।
 :::
 
 :::tip
-If a **Stand Alone** form is set to create a person record, any submissions matched to an existing person also show up on that person's own **Forms** tab in the People section — not just People-type forms.
+यदि **स्टैंडअलोन** फॉर्म को एक व्यक्ति रिकॉर्ड बनाने के लिए सेट किया गया है, तो किसी मौजूदा व्यक्ति से मेल खाने वाली कोई भी प्रस्तुति भी लोग अनुभाग में उस व्यक्ति के स्वयं के **फॉर्म** टैब पर दिखाई देती है -- केवल लोग-प्रकार फॉर्म नहीं।
 :::
 
-## Next Steps
+## अगले कदम
 
-- Learn how to build and customize forms in [Creating Forms](./creating-forms.md)
-- Add people from form submissions to your [people directory](../people/adding-people.md) for ongoing follow-up
-- [Automatically add submitters to a group](./creating-forms.md#automatically-adding-submitters-to-a-group) so a stand-alone sign-up form builds its own roster
+- "[फॉर्म बनाना](./creating-forms.md)" में फॉर्म बनाने और अनुकूलित करने का तरीका जानें
+- फॉर्म प्रस्तुतियों से लोगों को अपने [लोग निर्देशिका](../people/adding-people.md) में जोड़ें चल रहे अनुवर्ती के लिए
+- "[प्रस्तुतकर्ताओं को स्वचालित रूप से एक समूह में जोड़ें](./creating-forms.md#automatically-adding-submitters-to-a-group)" ताकि एक स्टैंडअलोन साइन-अप फॉर्म अपना रोस्टर बनाए

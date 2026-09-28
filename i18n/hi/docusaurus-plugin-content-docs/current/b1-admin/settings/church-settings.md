@@ -2,89 +2,91 @@
 title: "चर्च सेटिंग्स"
 ---
 
-# Church Settings
+# चर्च सेटिंग्स
 
 <div class="article-intro">
 
-The Church Settings page is where you configure your church's basic information, contact details, and branding. These details are used across all ChurchApps tools, including your B1.church website and the B1 Mobile app.
+चर्च सेटिंग्स पेज वह जगह है जहां आप अपने चर्च की बुनियादी जानकारी, संपर्क विवरण, और ब्रांडिंग को कॉन्फ़िगर करते हैं। ये विवरण सभी ChurchApps उपकरणों में उपयोग किए जाते हैं, जिसमें आपकी B1.church वेबसाइट और B1 मोबाइल ऐप शामिल हैं।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- You need the "Edit Church Settings" permission. See [Roles & Permissions](./roles-permissions.md) if you do not have access.
-- Have your church's address, contact information, and logo ready
+- आपको "Edit Church Settings" अनुमति की आवश्यकता है। यदि आपके पास पहुंच नहीं है तो [Roles & Permissions](./roles-permissions.md) देखें।
+- अपने चर्च का पता, संपर्क जानकारी, और लोगो तैयार रखें
 
 </div>
 
-## Editing Your Church Information
+## अपनी चर्च जानकारी संपादित करना
 
-1. In B1 Admin, open the **section menu** in the top-left corner (the section name with the small arrow) and choose **Settings**.
-2. Click the **Edit Settings** button in the header.
-3. Update any of the following fields:
-   - **Church Name** -- The name displayed across all ChurchApps products.
-   - **Address** -- Your church's physical address.
-   - **Contact Information** -- Phone number, email, and other contact details.
-4. Click **Save** to apply your changes.
+1. B1 Admin में, शीर्ष-बाएं कोने में **section menu** खोलें (छोटे तीर के साथ अनुभाग का नाम) और **Settings** चुनें।
+2. **Church Information** अनुभाग खोलें और इसके संपादन (पेंसिल) आइकन पर क्लिक करें।
+3. निम्नलिखित में से किसी भी क्षेत्र को अपडेट करें:
+   - **Church Name** -- सभी ChurchApps उत्पादों में प्रदर्शित नाम।
+   - **Address** -- आपके चर्च का भौतिक पता।
+   - **Contact Information** -- फोन नंबर, ईमेल, और अन्य संपर्क विवरण।
+4. अपने परिवर्तनों को लागू करने के लिए **Save** पर क्लिक करें।
 
-## Setting Up Your Subdomain
+## अपने सबडोमेन सेटअप करना
 
-Your church gets a free subdomain at **yourchurch.b1.church**. This is the web address where members and visitors can access your church's online presence.
+आपके चर्च को **yourchurch.1.church** पर एक मुफ्त सबडोमेन मिलता है। यह वह वेब पता है जहां सदस्य और दर्शक आपके चर्च की ऑनलाइन उपस्थिति को एक्सेस कर सकते हैं।
 
-1. On the Settings page, locate the **Subdomain** field.
-2. Enter your preferred subdomain (for example, "gracechurch" for gracechurch.b1.church).
-3. Save your changes.
+1. सेटिंग्स पेज पर, **Subdomain** फ़ील्ड का पता लगाएं।
+2. अपना पसंदीदा सबडोमेन दर्ज करें (उदाहरण के लिए, "gracechurch" के लिए gracechurch.1.church)।
+3. अपने परिवर्तनों को सहेजें।
 
 :::info
-Your subdomain must be unique across all ChurchApps churches. If your preferred name is taken, try adding your city or state (for example, "gracechurch-dallas").
+आपका सबडोमेन सभी ChurchApps चर्चों में अद्वितीय होना चाहिए। यदि आपका पसंदीदा नाम लिया गया है, तो अपने शहर या राज्य को जोड़ने का प्रयास करें (उदाहरण के लिए, "gracechurch-dallas")।
 :::
 
-## Configuring Branding
+यदि आप चाहते हैं कि दर्शक आपकी साइट तक अपने स्वयं के डोमेन पर पहुंचें (उदाहरण के लिए, **www.gracechurch.org**), [Custom Domain](./custom-domain.md) देखें।
 
-Customize how your church appears across all ChurchApps tools:
+## ब्रांडिंग को कॉन्फ़िगर करना
 
-1. Upload your **church logo** by clicking the logo area and selecting an image file.
-2. Add any additional **church images** used on your website and [mobile app](./mobile-app.md).
+सभी ChurchApps उपकरणों में अनुकूलित करें कि आपका चर्च कैसे दिखाई देता है:
+
+1. लोगो क्षेत्र पर क्लिक करके और एक छवि फ़ाइल का चयन करके अपना **church logo** अपलोड करें।
+2. अपनी वेबसाइट और [mobile app](./mobile-app.md) पर उपयोग की गई कोई भी अतिरिक्त **church images** जोड़ें।
 
 :::tip
-For best results, use a logo with a transparent background in PNG format. This ensures it looks great on both light and dark backgrounds.
+सर्वोत्तम परिणामों के लिए, PNG प्रारूप में एक पारदर्शी पृष्ठभूमि के साथ एक लोगो का उपयोग करें। यह सुनिश्चित करता है कि यह हल्के और अंधेरे दोनों पृष्ठभूमि पर बहुत अच्छा लगता है।
 :::
 
-## First Day of Week
+## सप्ताह का पहला दिन
 
-Choose which day your calendars start on. The **First Day of Week** dropdown on the Church Info section defaults to **Sunday**, but can be set to any day. Once changed, it's honored across calendar grids in B1 Admin and the B1.church member portal -- group calendars, curated calendars, and the event editor all lay out weeks starting on the day you choose.
+चुनें कि आपके कैलेंडर किस दिन शुरू होते हैं। **First Day of Week** ड्रॉपडाउन चर्च जानकारी अनुभाग पर **Sunday** में डिफॉल्ट होता है, लेकिन किसी भी दिन सेट किया जा सकता है। एक बार बदलने के बाद, यह B1 Admin और B1.church सदस्य पोर्टल में कैलेंडर ग्रिड्स में सम्मानित है -- समूह कैलेंडर, क्यूरेटेड कैलेंडर, और ईवेंट संपादक सभी सप्ताह को शुरू करते हैं जिस दिन आप चुनते हैं।
 
-## File Storage
+## फ़ाइल भंडारण
 
-By default, files you upload to your website (through [Files](../website/files.md)) and other content areas use B1's free hosted storage, up to 100MB. If you need more room, you can connect your own cloud storage instead -- new uploads then go straight to your account with no platform limit.
+डिफॉल्ट रूप से, आप जो फाइलें अपनी वेबसाइट पर अपलोड करते हैं ([Files](../website/files.md) के माध्यम से) और अन्य सामग्री क्षेत्र B1 के मुफ्त होस्ट किए गए भंडारण का उपयोग करते हैं, 100MB तक। यदि आपको अधिक जगह की आवश्यकता है, तो आप इसके बजाय अपना स्वयं का क्लाउड भंडारण जोड़ सकते हैं -- नई अपलोड सीधे आपके खाते में जाती हैं बिना प्लेटफॉर्म सीमा के।
 
-1. On the Settings page, find the **File Storage** card and click to edit it.
-2. Choose a provider: **Google Drive**, **Dropbox**, **OneDrive**, or an **S3-compatible bucket** (AWS S3, Cloudflare R2, Backblaze B2, etc.).
-3. For Google Drive, Dropbox, or OneDrive, click **Connect** and sign in to authorize access. For an S3-compatible bucket, enter your access key, secret, bucket name, and public URL base.
-4. Click **Save**.
+1. सेटिंग्स पेज पर, **File Storage** कार्ड ढूंढें और इसे संपादित करने के लिए क्लिक करें।
+2. एक प्रदाता चुनें: **Google Drive**, **Dropbox**, **OneDrive**, या एक **S3-compatible bucket** (AWS S3, Cloudflare R2, Backblaze B2, आदि)।
+3. Google Drive, Dropbox, या OneDrive के लिए, **Connect** पर क्लिक करें और पहुंच को अधिकृत करने के लिए साइन इन करें। S3-compatible bucket के लिए, अपनी पहुंच कुंजी, गुप्त, बाल्टी का नाम, और सार्वजनिक URL आधार दर्ज करें।
+4. **Save** पर क्लिक करें।
 
 :::info
-This only affects new uploads to your website Files and similar content areas. Gallery images, thumbnails, logos, and person photos always stay on B1's default storage.
+यह केवल आपकी वेबसाइट फाइलों और समान सामग्री क्षेत्रों पर नई अपलोड को प्रभावित करता है। गैलरी चित्र, थंबनेल, लोगो, और व्यक्ति की तस्वीरें हमेशा B1 के डिफॉल्ट भंडारण पर रहती हैं।
 :::
 
-## Grade Promotion
+## ग्रेड प्रचार
 
-If you track **Grade** on children and students, B1 can automatically bump everyone up a grade on a date you choose (for example, August 1st) rather than requiring you to edit each profile by hand.
+यदि आप बच्चों और छात्रों पर **ग्रेड** को ट्रैक करते हैं, तो B1 स्वचालित रूप से सभी को ऐसे दिन में एक ग्रेड बढ़ा सकता है जिसे आप चुनते हैं (उदाहरण के लिए, अगस्त 1st) इसके बजाय कि आप प्रत्येक प्रोफ़ाइल को हाथ से संपादित करें।
 
-1. On the Settings page, find the **Grade Promotion** option.
-2. Turn it on and choose the **month and day** to promote grades each year.
-3. Save your changes.
+1. सेटिंग्स पेज पर, **Grade Promotion** विकल्प ढूंढें।
+2. इसे चालू करें और **month और day** चुनें प्रत्येक वर्ष ग्रेड को बढ़ावा देने के लिए।
+3. अपने परिवर्तनों को सहेजें।
 
-## Import and Export
+## आयात और निर्यात
 
-The **Import/Export** button in the Settings header opens a dedicated tool in a new browser window. Use this to:
+सेटिंग्स हेडर में **Import/Export** बटन एक नई ब्राउज़र विंडो में एक समर्पित उपकरण खोलता है। इस का उपयोग करने के लिए:
 
-- Import member data from another church management system.
-- Export your ChurchApps data for backup or migration purposes.
+- दूसरे चर्च प्रबंधन प्रणाली से सदस्य डेटा आयात करें।
+- बैकअप या माइग्रेशन उद्देश्यों के लिए अपना ChurchApps डेटा निर्यात करें।
 
-This is especially helpful when you are first setting up your church and need to transfer existing records into ChurchApps.
+यह विशेष रूप से सहायक है जब आप पहली बार अपने चर्च को सेटअप कर रहे हैं और ChurchApps में मौजूदा रिकॉर्ड को स्थानांतरित करने की आवश्यकता है।
 
 :::warning
-When importing data, always back up your existing records first. Import operations add data to your system and may create duplicate entries if run multiple times.
+डेटा आयात करते समय, हमेशा पहले अपने मौजूदा रिकॉर्ड का बैकअप लें। आयात संचालन आपके सिस्टम में डेटा जोड़ता है और यदि कई बार चलाया जाता है तो डुप्लिकेट प्रविष्टियां बना सकता है।
 :::

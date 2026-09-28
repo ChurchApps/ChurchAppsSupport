@@ -6,7 +6,7 @@ title: "Auto-enregistrement"
 
 <div class="article-intro">
 
-Le processus d'auto-enregistrement vous permet d'enregistrer la présence pour vous-même et votre foyer en quelques étapes seulement. C'est une alternative rapide à l'utilisation d'une borne physique à l'église.
+Le processus d'auto-enregistrement vous permet de consigner votre présence et celle des membres de votre ménage en quelques étapes seulement. C'est une alternative rapide à l'utilisation d'une borne physique à l'église.
 
 </div>
 
@@ -14,46 +14,48 @@ Le processus d'auto-enregistrement vous permet d'enregistrer la présence pour v
 <h4>Avant de commencer</h4>
 
 - Vous devez être [connecté](../getting-started/logging-in.md) à votre compte B1.church.
-- Les membres de votre foyer doivent être liés à votre compte. Si un membre de la famille est manquant, demandez à l'administrateur de votre église de l'ajouter à votre foyer.
+- Les membres de votre ménage doivent être liés à votre compte. Si un membre de la famille manque, demandez à votre administrateur d'église de l'ajouter à votre ménage.
 
 </div>
 
-## Le processus d'enregistrement
+## Le flux d'auto-enregistrement
 
-L'enregistrement suit un processus simple en trois étapes. Accédez à l'onglet **Enregistrement** dans la [barre latérale](../getting-started/navigating.md) pour commencer.
+L'auto-enregistrement suit un processus simple en trois étapes. Accédez à l'onglet **Auto-enregistrement** dans la [barre latérale](../getting-started/navigating.md) pour commencer.
 
-### Étape 1 : Sélectionner un culte
+### Étape 1 : Sélectionner un service
 
-Lorsque vous ouvrez la page d'enregistrement, vous verrez une liste des cultes disponibles (par exemple, « Culte du dimanche matin » ou « Réunion du mercredi soir »). Chaque carte de culte affiche le nom du culte et le campus si votre église a plusieurs sites.
+Lorsque vous ouvrez la page d'auto-enregistrement, vous verrez une liste des services disponibles (par exemple, « Dimanche matin » ou « Mercredi soir »). Chaque carte de service affiche le nom du service et le campus si votre église a plusieurs emplacements.
 
-Cliquez sur un culte pour le sélectionner et passer à l'étape suivante.
+Cliquez sur un service pour le sélectionner et passez à l'étape suivante.
 
-### Étape 2 : Sélectionner les membres du foyer et les groupes
+### Étape 2 : Sélectionner les membres du ménage et les groupes
 
-Après avoir sélectionné un culte, vous verrez une liste des membres de votre foyer. Pour chaque personne présente :
+Après avoir sélectionné un service, vous verrez une liste de vos membres du ménage. Pour chaque personne présente :
 
-1. Appuyez sur un membre du foyer pour développer son entrée.
-2. Vous verrez les **horaires de culte** disponibles pour le culte que vous avez sélectionné.
-3. Cliquez sur **Sélectionner un groupe** à côté d'un horaire de culte pour choisir dans quel groupe la personne doit être enregistrée (comme « Culte principal », « Salle enfants 1 » ou « Groupe jeunes »).
-4. Répétez pour chaque membre du foyer qui est présent.
+1. Appuyez sur un membre du ménage pour développer son entrée.
+2. Vous verrez les **heures de service** disponibles pour le service que vous avez sélectionné.
+3. Cliquez sur **Sélectionner le groupe** à côté d'une heure de service pour choisir le groupe dans lequel la personne doit être enregistrée (par exemple, « Culte principal », « Salle enfants 1 » ou « Groupe jeunesse »).
+4. Répétez pour chaque membre du ménage qui est présent.
 
-Vous n'avez pas besoin d'enregistrer chaque membre du foyer -- développez et assignez des groupes uniquement pour les personnes qui sont effectivement présentes.
+Vous n'avez pas besoin d'enregistrer chaque membre du ménage -- développez et assignez simplement des groupes aux personnes réellement présentes.
 
 ### Étape 3 : Confirmation
 
-Une fois que vous avez sélectionné les groupes pour toutes les personnes présentes, cliquez sur le bouton **Terminer l'enregistrement** en bas de la page.
+Une fois que vous avez sélectionné les groupes pour tous ceux qui assistent, cliquez sur le bouton **Terminer l'enregistrement** en bas de la page.
 
-Vous verrez un écran de confirmation avec le message « Enregistrement terminé ! » accompagné d'une note indiquant que votre présence a été enregistrée. Cliquez sur **Retour à ma page** pour revenir au [fil d'actualité](../community/timeline.md).
+Vous verrez une confirmation que votre enregistrement est terminé et votre présence a été enregistrée. Après un instant, la page revient à la liste des services, prête pour le prochain enregistrement.
+
+Si votre église imprime des badges nominatifs à une station d'enregistrement, vous verrez à la place **Vous êtes enregistré !** avec un code QR et un code de sécurité. Montrez le code à une station d'enregistrement pour imprimer vos badges nominatifs, puis appuyez sur **Terminé**.
 
 :::tip
-Si vous devez modifier la sélection d'un groupe avant de terminer l'enregistrement, appuyez sur le bouton **Modifier** à côté de n'importe quel horaire de culte pour choisir un autre groupe.
+Si vous devez modifier une sélection de groupe avant de terminer l'enregistrement, appuyez sur le bouton **Modifier** à côté de n'importe quelle heure de service pour choisir un groupe différent.
 :::
 
-## Informations importantes
+## À savoir
 
-- Vous ne pouvez enregistrer que les membres du foyer qui sont liés à votre compte. Si un membre de la famille est manquant, demandez à l'administrateur de votre église de l'ajouter à votre foyer.
-- Si aucun culte n'apparaît sur la page d'enregistrement, votre église n'a peut-être pas de cultes configurés pour l'enregistrement à ce moment.
+- Vous pouvez seulement enregistrer les membres du ménage qui sont liés à votre compte. Si un membre de la famille manque, demandez à votre administrateur d'église de l'ajouter à votre ménage.
+- Si aucun service n'apparaît sur la page d'auto-enregistrement, votre église peut ne pas avoir de services configurés pour l'auto-enregistrement en ce moment.
 
 :::warning
-L'enregistrement n'est disponible que lorsque votre église a des cultes actifs configurés. Si vous ne voyez aucun culte listé, vérifiez auprès du secrétariat de votre église pour confirmer si l'auto-enregistrement est activé.
+L'auto-enregistrement n'est disponible que lorsque votre église a des services actifs configurés. Si vous ne voyez aucun service listé, vérifiez auprès de votre bureau de l'église pour confirmer si l'auto-enregistrement est activé.
 :::

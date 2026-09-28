@@ -2,82 +2,88 @@
 title: "दान रिपोर्ट"
 ---
 
-# Donation Reports
+# दान रिपोर्ट
 
 <div class="article-intro">
 
-B1 Admin gives you several ways to view and analyze your church's giving data. The Donations Summary page provides a visual overview with charts and filters, while the Reports section offers a more detailed Donation Summary report. Use these tools to track giving trends, prepare for board meetings, or reconcile your records.
+B1 Admin आपको अपने चर्च के दान डेटा को देखने और विश्लेषण करने के कई तरीके देता है। दान सारांश पृष्ठ चार्ट और फ़िल्टर के साथ एक दृश्य अवलोकन प्रदान करता है, जबकि रिपोर्ट अनुभाग एक अधिक विस्तृत दान सारांश रिपोर्ट प्रदान करता है। दान प्रवृत्तियों को ट्रैक करने, बोर्ड बैठकों की तैयारी करने, या अपने रिकॉर्ड को सामंजस्य करने के लिए इन उपकरणों का उपयोग करें।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- Ensure donations have been [recorded in batches](recording-donations.md) or [imported from Stripe](stripe-import.md)
-- Verify that your [funds](funds.md) are set up correctly so donations are properly categorized
+- सुनिश्चित करें कि दान [बैच में रिकॉर्ड किए गए हैं](recording-donations.md) या [Stripe से आयात किए गए हैं](stripe-import.md)
+- सत्यापित करें कि आपके [निधि](funds.md) सही तरीके से सेट अप हैं ताकि दान को सही तरीके से वर्गीकृत किया जाए
 
 </div>
 
-## Giving Dashboard
+## दान डैशबोर्ड
 
-The **Giving Dashboard** is the first thing you see when you open the **Donations** section. It provides a high-level view of your giving activity with key performance indicators.
+**दान डैशबोर्ड** पहली चीज है जो आप देखते हैं जब आप **दान** अनुभाग खोलते हैं। यह मुख्य कार्यक्षमता संकेतकों के साथ आपकी दान गतिविधि का एक उच्च-स्तरीय दृश्य प्रदान करता है।
 
-1. Open the **section menu** in the top-left corner and choose **Donations** to open the dashboard.
-2. At the top, four **KPI cards** display your giving metrics at a glance:
-   - **Total Giving** -- The total amount donated in the selected period.
-   - **Average Gift** -- The average donation amount.
-   - **Unique Donors** -- The number of distinct people who gave.
-   - **Total Donations** -- The total number of individual donations.
-3. Use the **period toggle** to switch between **Weekly**, **Monthly**, and **Quarterly** views.
-4. Below the KPIs, a chart displays giving trends for the selected period.
-5. Click **Download** to export a CSV file with giving totals.
+1. शीर्ष-बाएं कोने में **अनुभाग मेनू** खोलें और डैशबोर्ड खोलने के लिए **दान** चुनें।
+2. शीर्ष पर, चार **KPI कार्ड** आपकी दान मेट्रिक्स को एक नज़र में प्रदर्शित करते हैं:
+   - **कुल दान** -- चुनी गई अवधि में दान की गई कुल राशि।
+   - **औसत उपहार** -- औसत दान राशि।
+   - **अद्वितीय दाताएं** -- उन लोगों की संख्या जिन्होंने दान दिया।
+   - **कुल दान** -- व्यक्तिगत दान की कुल संख्या।
+3. **अवधि टॉगल** का उपयोग करें **साप्ताहिक**, **मासिक**, और **त्रैमासिक** दृश्यों के बीच स्विच करने के लिए।
+4. KPI के नीचे, एक चार्ट चुनी गई अवधि के लिए दान प्रवृत्तियों को प्रदर्शित करता है।
+5. दान कुल के साथ CSV फ़ाइल को निर्यात करने के लिए **डाउनलोड** पर क्लिक करें।
 
-## Donations Summary Page
+यदि अवधि में दान एक से अधिक मुद्राओं में दिए गए थे, तो KPI कुल आपकी चर्च मुद्रा में परिवर्तित हो जाते हैं और कार्ड के नीचे **वर्तमान विनिमय दर पर परिवर्तित** नोट दिखाई देता है। विवरण के लिए [बहु-मुद्रा समर्थन](./multi-currency.md#converted-totals) देखें।
 
-The **Summary** page provides more detailed aggregate giving data.
+## निष्क्रिय दाताएं
 
-1. Open the **section menu** in the top-left corner and choose **Donations** to open the Summary page.
-2. Use the **date range filter** to select the time period you want to review. Set the earlier date on top and the more recent date on the bottom.
-3. The page displays a weekly giving chart so you can see trends at a glance.
-4. Click **Download** to export a CSV file with the total amount given, the week it was given, and the fund it was given to.
+डैशबोर्ड के बगल में **निष्क्रिय दाताएं** टैब उन लोगों को सूचीबद्ध करता है जिन्होंने एक अवधि के दौरान दान दिया लेकिन तब से नहीं। डिफ़ॉल्ट रूप से यह पिछले कैलेंडर वर्ष की तुलना इसी वर्ष तक करता है; खोज को चौड़ा या संकीर्ण करने के लिए किसी भी तारीख सीमा को बदलें। प्रत्येक पंक्ति व्यक्ति, उनके अंतिम उपहार की तारीख और पहले की अवधि के लिए उनके कुल को दिखाती है, और **निर्यात** सूची को अनुवर्ती मेल या कॉल सूची के लिए CSV के रूप में डाउनलोड करता है।
+
+## दान सारांश पृष्ठ
+
+**सारांश** पृष्ठ अधिक विस्तृत कुल दान डेटा प्रदान करता है।
+
+1. शीर्ष-बाएं कोने में **अनुभाग मेनू** खोलें और सारांश पृष्ठ खोलने के लिए **दान** चुनें।
+2. समीक्षा करने के लिए समय अवधि का चयन करने के लिए **तारीख सीमा फ़िल्टर** का उपयोग करें। शीर्ष पर पहली तारीख सेट करें और नीचे सबसे हाल की तारीख सेट करें।
+3. पृष्ठ एक साप्ताहिक दान चार्ट प्रदर्शित करता है ताकि आप एक नज़र में प्रवृत्तियों को देख सकें।
+4. कुल राशि, दिए गए सप्ताह, और जिस निधि को दिया गया था उसके साथ CSV फ़ाइल को निर्यात करने के लिए **डाउनलोड** पर क्लिक करें।
 
 :::info
-The Summary page shows aggregate giving data. It does not include individual donor names. For donor-level details, use the [Batches](batches.md) page.
+सारांश पृष्ठ कुल दान डेटा दिखाता है। इसमें व्यक्तिगत दाता के नाम शामिल नहीं हैं। दाता-स्तरीय विवरण के लिए, [बैच](batches.md) पृष्ठ का उपयोग करें।
 :::
 
-## Viewing Donor-Level Details
+## दाता-स्तर विवरण देखना
 
-For a breakdown of who gave, how much, and to which fund:
+किसने दान दिया, कितना, और किस निधि को दिया, इसके लिए एक विभाजन के लिए:
 
-1. Navigate to **Donations > Batches**.
-2. Click on a **batch name** to open it.
-3. The batch detail page lists each donation with the donor's name, amount, fund, date, and payment method.
-4. Click on a **donor's name** to see a breakdown of how many times they donated and how much each time.
-5. Click on a **donation ID** to open a side panel with the full details for that individual donation.
-6. Click **Download** to export a CSV with all donor and donation information for that batch.
+1. **दान > बैच** पर नेविगेट करें।
+2. इसे खोलने के लिए **बैच नाम** पर क्लिक करें।
+3. बैच विवरण पृष्ठ दाता का नाम, राशि, निधि, तारीख, और भुगतान विधि के साथ प्रत्येक दान को सूचीबद्ध करता है।
+4. कितनी बार उन्होंने दान दिया और प्रत्येक बार कितना, इसका विभाजन देखने के लिए **दाता के नाम** पर क्लिक करें।
+5. उस व्यक्तिगत दान के पूर्ण विवरण के साथ एक साइड पैनल खोलने के लिए **दान ID** पर क्लिक करें।
+6. उस बैच के लिए सभी दाता और दान जानकारी के साथ CSV को निर्यात करने के लिए **डाउनलोड** पर क्लिक करें।
 
-## Donation Summary Report
+## दान सारांश रिपोर्ट
 
-Donation reporting is built directly into the Donations section -- the Summary page serves as your donation summary report:
+दान रिपोर्टिंग सीधे दान अनुभाग में बनाई गई है -- सारांश पृष्ठ आपकी दान सारांश रिपोर्ट के रूप में कार्य करता है:
 
-1. Open the **section menu** in the top-left corner and choose **Donations** to open the Summary page.
-2. Use the **date range filter** to select the period you want to report on.
-3. Click **Download** to export the report as a CSV file.
+1. शीर्ष-बाएं कोने में **अनुभाग मेनू** खोलें और सारांश पृष्ठ खोलने के लिए **दान** चुनें।
+2. रिपोर्ट करना चाहते हैं उस अवधि का चयन करने के लिए **तारीख सीमा फ़िल्टर** का उपयोग करें।
+3. रिपोर्ट को CSV फ़ाइल के रूप में निर्यात करने के लिए **डाउनलोड** पर क्लिक करें।
 
-## Exporting Data
+## डेटा निर्यात करना
 
-You can export donation data from multiple places:
+आप कई स्थानों से दान डेटा निर्यात कर सकते हैं:
 
-- **Summary page** -- download a CSV of weekly giving totals by fund
-- **Batch detail page** -- download a CSV of individual donations with donor details
-- **Funds detail page** -- download donation history for a specific fund
+- **सारांश पृष्ठ** -- निधि द्वारा साप्ताहिक दान कुल की CSV डाउनलोड करें
+- **बैच विवरण पृष्ठ** -- दाता विवरण के साथ व्यक्तिगत दान की CSV डाउनलोड करें
+- **निधि विवरण पृष्ठ** -- एक विशिष्ट निधि के लिए दान इतिहास डाउनलोड करें
 
 :::tip
-For year-end reporting, combine the Summary page export with the [Giving Statements](giving-statements.md) tool to get both aggregate trends and individual donor statements.
+वर्ष-अंत रिपोर्टिंग के लिए, कुल प्रवृत्तियां और व्यक्तिगत दाता विवरण दोनों प्राप्त करने के लिए सारांश पृष्ठ निर्यात को [दान विवरण](giving-statements.md) उपकरण के साथ जोड़ें।
 :::
 
-## Next Steps
+## अगले कदम
 
-- Generate [Giving Statements](giving-statements.md) for your donors at year-end
-- Review individual [batches](batches.md) to verify donation details
-- Check [fund](funds.md) detail pages for giving breakdowns by category
+- वर्ष के अंत में अपने दाताओं के लिए [दान विवरण](giving-statements.md) उत्पन्न करें
+- दान विवरण को सत्यापित करने के लिए व्यक्तिगत [बैच](batches.md) की समीक्षा करें
+- श्रेणी द्वारा दान विभाजन के लिए [निधि](funds.md) विवरण पृष्ठों को जांचें

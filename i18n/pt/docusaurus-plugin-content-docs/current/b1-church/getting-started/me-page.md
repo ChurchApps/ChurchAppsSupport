@@ -1,52 +1,60 @@
 ---
-title: "The Me Page"
+title: "A Página Meu Perfil"
 ---
 
-# The Me Page
+# A Página Meu Perfil
 
 <div class="article-intro">
 
-The **Me** page is your personal dashboard in the member portal — one chronological view of everything coming up for you: serving assignments, event registrations, and your groups' upcoming events, plus your most recent notifications.
+A página **Meu Perfil** é seu painel pessoal no portal de membros — uma visualização cronológica única de tudo que está vindo para você: atribuições de serviço, registros de eventos e os próximos eventos dos seus grupos, além de suas notificações mais recentes.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Antes de Começar</h4>
 
-- You need to be [logged in](./logging-in.md) — the Me page only appears for signed-in members
+- Você precisa estar [conectado](./logging-in.md) — a página Meu Perfil só aparece para membros conectados
 
 </div>
 
-## Opening the Me Page
+## Abrindo a Página Meu Perfil
 
-Open the portal menu and tap **Me**. The page loads with your personal information organized into sections.
+Abra o menu do portal e toque em **Meu Perfil**. A página carrega com suas informações pessoais organizadas em seções.
 
-## Upcoming
+## Próximos
 
-The **Upcoming** section lists everything ahead of you in date order, each item tagged with a type chip:
+A seção **Próximos** lista tudo que está vindo para você em ordem de data, cada item marcado com um chip de tipo:
 
-- **Serving** -- Your volunteer positions on upcoming service plans. Tap one to open the plan.
-- **Registration** -- Events you have [registered for](../events/registering). Tap through to your [registrations](../events/my-registrations).
-- **Event** -- Upcoming events from groups you belong to. Tap one to open the group's events.
+- **Serviço** -- Suas posições de voluntário nos planos de serviço próximos. Toque em um para abrir o plano.
+- **Registro** -- Eventos em que você [se registrou](../events/registering). Toque para seus [registros](../events/my-registrations).
+- **Evento** -- Próximos eventos dos grupos aos quais você pertence. Toque em um para abrir os eventos do grupo.
 
-If nothing is scheduled, you'll see "Nothing coming up" — your serving times, events, and registrations will appear here as they are scheduled.
+Se nada estiver agendado, você verá "Nada vindo em breve" — seus tempos de serviço, eventos e registros aparecerão aqui conforme forem agendados.
 
-## Recent Notifications
+## Notificações Recentes
 
-Below Upcoming, the **Recent Notifications** section shows your latest notifications so you can catch up without opening each area of the portal.
+Abaixo de Próximos, a seção **Notificações Recentes** mostra suas notificações mais recentes para que você possa se atualizar sem abrir cada área do portal.
 
-## Shortcuts
+## Atalhos
 
-When your church has bookable rooms or resources, the Me page also shows a **Shortcuts** section:
+A seção **Atalhos** no topo da página Meu Perfil vincula aos lugares que você visita mais:
 
-- **Request an Event** -- Ask to hold an event with the rooms and equipment you need. See [Requesting Events & Rooms](../events/requesting-events).
-- **My Requests** -- Track the status of your requests and cancel pending ones.
+- **Editar Perfil** -- Veja [Editando Seu Perfil](./editing-your-profile.md).
+- **Preferências de Notificação** -- Veja [Preferências de Notificação](./notification-preferences.md).
+- **Mensagens** -- Suas conversas privadas.
+- **Doações** -- Faça doações online e veja seu histórico de doações.
+- **Registros** -- Eventos em que você se registrou.
 
-If your church hasn't set up rooms or resources, these shortcuts are hidden.
+Se sua igreja tem salas ou recursos reserváveis, dois atalhos adicionais aparecem:
+
+- **Solicitar um Evento** -- Peça para realizar um evento com as salas e equipamentos de que você precisa. Veja [Solicitando Eventos e Salas](../events/requesting-events).
+- **Minhas Solicitações** -- Acompanhe o status de suas solicitações e cancele as pendentes.
+
+Se sua igreja não configurou salas ou recursos, esses atalhos ficam ocultos.
 
 ## Artigos Relacionados
 
-- [Navigating B1App](./navigating) -- The member portal layout
-- [Requesting Events & Rooms](../events/requesting-events) -- Submit and track room/resource requests
-- [My Registrations](../events/my-registrations) -- Manage your event registrations
-- [Volunteer Signup](../serving/volunteer-signup) -- How serving assignments work
+- [Navegando B1App](./navigating) -- Layout do portal de membros
+- [Solicitando Eventos e Salas](../events/requesting-events) -- Envie e acompanhe solicitações de salas/recursos
+- [Meus Registros](../events/my-registrations) -- Gerencie seus registros de eventos
+- [Inscrição de Voluntário](../serving/volunteer-signup) -- Como funcionam as atribuições de serviço

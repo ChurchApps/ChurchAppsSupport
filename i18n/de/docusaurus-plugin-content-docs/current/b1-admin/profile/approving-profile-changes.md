@@ -11,46 +11,48 @@ Wenn Ihre Kirche eine Administratorgenehmigung für Profiländerungen erfordert,
 </div>
 
 <div class="prereqs">
-<h4>Vor dem Start</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Sie müssen Mitglied der Gruppe sein, die als **Directory Approval Group** in **Mobile → B1 Mobile** bezeichnet wird
+- Sie müssen Mitglied der Gruppe sein, die als **Directory Approval Group** (Verzeichnis-Genehmigungsgruppe) in **Mobile → Member portal** (Mobile → Mitgliederportal) bezeichnet wird
 - Wenn keine Genehmigungsgruppe konfiguriert wurde, werden Profiländerungen sofort ohne Überprüfung angewendet
 
 </div>
 
-## Suchen nach ausstehenden Anfragen
+## Wo finden Sie ausstehende Anfragen
 
 Wenn ein Mitglied eine Profiländerung einreicht, wird sie als Aufgabe Ihrer Genehmigungsgruppe angezeigt. Sie können sie an zwei Orten finden:
 
-**Vom Dashboard:**
+**Von dem Dashboard (Ihre Startseite):**
 1. Melden Sie sich bei B1 Admin an — das Dashboard wird automatisch geladen.
-2. Klicken Sie im Bereich **Tasks** auf der rechten Seite auf die Registerkarte **Assigned to My Groups**.
+2. Im Bereich **Tasks** (Aufgaben) auf der rechten Seite klicken Sie auf die Registerkarte **Assigned to My Groups** (Meinen Gruppen zugewiesen).
 3. Alle ausstehenden Profiländerungsanfragen werden dort aufgelistet.
 
-**Aus Serving → My Work:**
-1. Klicken Sie oben in der Navigation auf **Serving**.
-2. Klicken Sie auf **My Work**.
-3. Klicken Sie auf die Registerkarte **Assigned to My Groups** unter Tasks.
+**Von Serving → My Work (Dienst → Meine Aufgaben):**
+1. Klicken Sie oben in der Navigation auf **Serving** (Dienst).
+2. Klicken Sie auf **My Work** (Meine Aufgaben).
+3. Klicken Sie auf die Registerkarte **Assigned to My Groups** (Meinen Gruppen zugewiesen) unter Tasks (Aufgaben).
 
 ## Überprüfung und Genehmigung einer Anfrage
 
-1. Klicken Sie auf die Aufgabe **Profile Update**, um sie zu öffnen.
-2. Unter **Requested Changes** sehen Sie jedes Feld, das das Mitglied aktualisieren möchte, zusammen mit dem neuen Wert, den es eingereicht hat.
+1. Klicken Sie auf die Aufgabe **Profile Update** (Profilaktualisierung), um sie zu öffnen.
+2. Unter **Requested Changes** (Angeforderte Änderungen) sehen Sie jedes Feld, das das Mitglied aktualisieren möchte, zusammen mit dem neuen Wert, den es eingereicht hat.
 3. Überprüfen Sie die Änderungen.
-4. Klicken Sie auf **Apply**, um die Änderungen zu genehmigen und in ihrem Profil zu speichern.
+4. Klicken Sie auf **Apply** (Anwenden), um die Änderungen zu genehmigen und in ihrem Profil zu speichern.
 
 Die Aufgabe wird automatisch geschlossen, sobald die Änderungen angewendet werden.
 
 ## Einrichten der Genehmigungsgruppe
 
-Wenn Ihre Kirche möchte, dass Profiländerungen genehmigt werden, muss zunächst eine Directory Approval Group konfiguriert werden.
+Wenn Ihre Kirche möchte, dass Profiländerungen genehmigt werden, muss zunächst eine Directory Approval Group (Verzeichnis-Genehmigungsgruppe) konfiguriert werden.
 
 1. Klicken Sie oben in der Navigation auf **Mobile**.
-2. Klicken Sie auf **B1 Mobile**.
-3. Wählen Sie unter **Directory Approval Group** die Gruppe aus, deren Mitglieder Profiländerungsanfragen überprüfen sollten.
-4. Klicken Sie auf **Save**.
+2. Klicken Sie auf **Member portal** (Mitgliederportal) (die Seite "Portal settings" [Portaleinstellungen]).
+3. Wählen Sie unter **Directory Approval Group** (Verzeichnis-Genehmigungsgruppe) die Gruppe aus, deren Mitglieder Profiländerungsanfragen überprüfen sollten.
+4. Klicken Sie auf **Save** (Speichern).
 
-Jedes Mitglied dieser Gruppe sieht eingehende Profiländerungsanfragen unter **Assigned to My Groups** auf seinem Dashboard.
+Jedes Mitglied dieser Gruppe sieht eingehende Profiländerungsanfragen unter **Assigned to My Groups** (Meinen Gruppen zugewiesen) auf seinem Dashboard.
+
+Die gleiche Directory Approval Group (Verzeichnis-Genehmigungsgruppe) überprüft auch **Kontolöschanfragen** — siehe [Überprüfung von Kontolöschanfragen](./account-deletion.md).
 
 :::tip
 Stellen Sie sicher, dass Ihre Genehmiger tatsächlich Mitglieder der konfigurierten Gruppe sind — nur Gruppenmitglieder werden die Anfragen sehen.
@@ -58,5 +60,6 @@ Stellen Sie sicher, dass Ihre Genehmiger tatsächlich Mitglieder der konfigurier
 
 ## Verwandte Artikel
 
-- [Managing Your Profile](./managing-profile.md) — Bearbeiten Sie Ihre eigenen Kontoeinstellungen
-- [B1 Mobile Settings](../../b1-mobile/profile/editing-profile.md) — Was Mitglieder sehen, wenn sie eine Profiländerung einreichen
+- [Verwalten Sie Ihr Profil](./managing-profile.md) — Bearbeiten Sie Ihre eigenen Kontoeinstellungen
+- [Überprüfung von Kontolöschanfragen](./account-deletion.md) — Der gleiche Genehmigungsgruppen-Überprüfungsablauf für Kontolöschung
+- [B1 Mobile Einstellungen](../../b1-mobile/profile/editing-profile.md) — Was Mitglieder sehen, wenn sie eine Profiländerung einreichen

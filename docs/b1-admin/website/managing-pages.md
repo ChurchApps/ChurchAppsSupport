@@ -65,6 +65,34 @@ The Website Pages view displays your navigation links. These links control the m
 Removing a navigation link does not delete the page itself. The page still exists and can be accessed directly by its URL -- it simply will not appear in the menu.
 :::
 
+## Site-Wide Switches
+
+Above **Main Navigation** on the left side of the Website Pages view are two switches that apply to your whole church website:
+
+- **Show Login** -- Shows a **Login** button in your website's navigation bar.
+- **Disable Public Website** -- Turns off your public website. Use it if your church uses B1 only for its member portal, giving, and registrations, and keeps its main website somewhere else.
+
+### What Disabling the Public Website Does
+
+When **Disable Public Website** is on:
+
+- Every public page, including the home page and your custom pages, sends visitors to the login screen.
+- The built-in **Generated** pages (such as Groups and Sermons) are no longer served and no longer appear in the Pages table.
+- The site header shows only the **Login** button, with no navigation links.
+- Search engines are told not to index the site. The sitemap is empty and `robots.txt` blocks all crawling.
+
+These links keep working, so members and guests can still reach them:
+
+- Login and logout
+- The member portal (everything under `/mobile`)
+- [Event registration](../guides/event-registration.md) links and guest registration
+
+A warning appears under the switch while the public website is off. Turn the switch off again to bring your pages back. Nothing is deleted while the site is disabled.
+
+:::info
+This setting applies to your whole church. If you have more than one site, it turns off all of them, not only the one selected in the site switcher.
+:::
+
 ## Tips for Organizing Your Site
 
 - Keep your top-level navigation to five or six items so visitors can find things quickly.

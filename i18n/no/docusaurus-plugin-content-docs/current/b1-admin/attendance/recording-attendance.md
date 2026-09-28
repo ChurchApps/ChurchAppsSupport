@@ -1,65 +1,80 @@
-﻿---
-title: "Registrering av oppmøte"
+---
+title: "Registrering av frammøte"
 ---
 
-# Registrering av oppmøte
+# Registrering av frammøte
 
 <div class="article-intro">
 
-Når dine campuser, tider for gudstjeneste og grupper er satt opp, kan du manuelt registrere oppmøte etter hver samling. B1 Admin organiserer oppmøte rundt **økter** -- en økt per gruppe per møtedato. Du oppretter økten, merker hvem som dukket opp, og dataene går direkte inn i oppmøterapportene dine.
+Når samlingene, tjenestidene og gruppene dine er satt opp, kan du manuelt registrere frammøte etter hver samling. B1 Admin organiserer frammøte rundt **økter** -- en økt per gruppe per møtedato. Du oppretter økten, merker hvem som møtte opp, og dataene går direkte inn i frammøterapportene dine.
 
 </div>
 
 <div class="prereqs">
-<h4>Før du starter</h4>
+<h4>Før du begynner</h4>
 
-- Campusene, gudstjenestetidesne og gruppene dine må være konfigurert. Se [Oppsett av oppmøte](setup.md) hvis du ikke har gjort det ennå.
-- Gruppene du vil spore må ha **Spor oppmøte** aktivert. Se [Oppsett av oppmøte](setup.md) for detaljer.
+- Samlingene, tjenestidene og gruppene dine må være konfigurert. Se [Frammøteoppsett](setup.md) hvis du ikke har gjort dette ennå.
+- Gruppene du vil spore må ha **Spor frammøte** aktivert. Se [Frammøteoppsett](setup.md) for detaljer.
 
 </div>
 
-## Oppretting av en økt
+## Opprette en sesjon
 
-En økt representerer én forekomst av et gruppetreff -- for eksempel K--3. klassingen din en bestemt søndag.
+En sesjon representerer ett forekomst av et gruppemøte -- for eksempel K--3. klasseklassen din på en bestemt søndag.
 
-1. Åpne **B1 Admin**, åpne **seksjonsmeny** i øvre venstre hjørne og velg **Mennesker**, og klikk deretter **Grupper**-fanen.
-2. Velg gruppen du vil registrere oppmøte for.
-3. Klikk **Økter**-fanen.
-4. Klikk **Ny** for å opprette en ny økt.
-5. Hvis gruppen er tildelt en gudstjenesteaktid, velg **Gudstjeneste-tid**. Hvis det er en uplanlagt gruppe, vil dette feltet ikke vises.
-6. Velg **Øktdatoen** -- dette kan være i dag, en tidligere dato eller en fremtidig dato.
+1. Åpne **B1 Admin**, åpne **seksjonsmenyen** i øverste venstre hjørne og velg **Personer**, og klikk deretter på **Grupper**-fanen.
+2. Velg gruppen du vil registrere frammøte for.
+3. Klikk på **Økter**-fanen.
+4. Klikk **Ny** for å opprette en ny økten.
+5. Hvis gruppen er tildelt en tjenestid, velg **Tjenestid**. Hvis det er en uplanlagt gruppe, vises ikke dette feltet.
+6. Velg **Økt-dato** -- dette kan være i dag, en tidligere dato eller en fremtidig dato.
 7. Klikk **Lagre**.
 
 :::tip
-Du kan opprette økter for tidligere datoer for å ta igjen oppmøte du ikke har registrert ennå, eller opprette dem på forhånd slik at de er klare når gruppen møtes.
+Du kan opprette økter for tidligere datoer for å oppdatere frammøte du ikke har registrert ennå, eller opprette dem på forhånd slik at de er klare når gruppen din møtes.
 :::
 
-## Markering av oppmøte
+## Merke frammøte
 
-Etter lagring av økten, vises gruppens medlemmer på høyre side av siden.
+Velg en økten for å se listen over frammøte. Alle gruppemedlemmer er oppført med en avmerkingsboks, sortert etter etternavn, og alle som allerede er registrert som tilstede er avmerket.
 
-1. Klikk av boksen ved siden av hver person som møtte opp.
-2. Endringer blir lagret automatisk -- det er ingen ekstra Lagre-knapp for oppmøte-merker.
+1. Merk av i boksen ved siden av hver person som møtte opp. Bruk **Velg alle** eller **Velg ingen** for å endre alle på en gang.
+2. Antallet ovenfor listen (for eksempel "12 av 15 tilstede") oppdateres når du merker av i bokser.
+3. Klikk **Lagre frammøte**. Ingenting registreres før du lagrer, og en melding bekrefter når lagringen er gjort.
 
-:::info
-Bare gjeldende gruppemedlemmer vises i økt-listen. Hvis noen møtte opp men ikke er ennå i gruppen, [legg dem til gruppen](../groups/group-members.md) først, og registrer deretter oppmøtet deres.
-:::
+Hvis du fjerner merkingen fra noen som allerede var registrert som tilstede og deretter lagrer, fjerner du dem fra økten.
 
-## Eksporter oppmøte til et regneark
+### Legge til besøkende
 
-Du kan laste ned en oversikt over økten som en CSV-fil som skal brukes i Excel, Numbers eller Google Sheets.
+For å registrere noen som ikke er medlem av gruppen, søk etter dem i personsøkene ved siden av listen over frammøte. Hvis de ikke er i databasen din ennå, kan du opprette dem fra søket. De legges til på listen allerede merket av. Klikk **Lagre frammøte** for å registrere dem.
+
+Personer som sjekket inn ved en kiosk viser en **Frivillig** eller **Gjest**-merke. Personer som ikke er gruppemedlemmer viser et **Gjest**-merke.
+
+## Skrive ut klasseliste
+
+En klasseliste er en utskrivbar klasseoversikt som lærere kan merke for hånd og gi tilbake til deg for senere registrering. Hvert ark viser kirkens navn, klassen, tjenestiden og en datolinjen. Hvert medlem har **Tilstede** og **Fraværende**-bokser, og det er blanke linjer for besøkende og et **Lærer / Notater**-område.
+
+- **Fra en økten** -- Klikk på **Skriv ut klasseliste** (skriverikon) øverst i listen over frammøte for økten. Arket er datert med øktens dato.
+- **Alle klasser for en tjeneste** -- Hvis økten har en tjenestid, klikk **Skriv ut alle klasser** for å skrive ut ett ark per klasse tildelt den tjenestiden. Hver klasse skrives ut på sin egen side.
+- **Fra fanen Medlemmer** -- Klikk på ikonet **Skriv ut klasseliste** ovenfor gruppens medlemsliste for å skrive ut et udatert ark.
+
+Arket åpnes i en ny fane og utskriftsdialogen i nettleseren din vises automatisk.
+
+## Eksportere frammøte til et regneark
+
+Du kan laste ned en registrering av økten som en CSV-fil for bruk i Excel, Numbers eller Google Sheets.
 
 1. Åpne økten du vil eksportere.
-2. Klikk **Last ned CSV**-knappen.
-3. Åpne den nedlastede filen i regnearksprogrammet ditt.
+2. Klikk på **Eksporter**-knappen øverst i listen over frammøte.
+3. Åpne den nedlastede filen i regnearkprogrammet ditt.
 
-## Visning av registrert oppmøte
+## Vise registrert frammøte
 
-Etter registrering av økter, vises dataene i oppmøterapportene dine.
+Etter å ha registrert økter, vises dataene i frammøterapportene dine.
 
-- **Oppmøte-fane** -- viser kirkelige trender over tid. Se [Sporing av oppmøte](tracking-attendance.md).
-- **Grupper-fane** -- viser oppmøte brutt ned etter individuell gruppe.
+- **Frammøtetrend-fanen** -- viser kirkebrede trender over tid. Se [Sporing av frammøte](tracking-attendance.md).
+- **Gruppeframmøte-fanen** -- viser frammøte delt ned etter individuell gruppe.
 
 :::tip
-Hvis en økt du nettopp opprettet ikke vises i rapporter umiddelbart, kontroller at øktdatoen faller innenfor datointervallet som er valgt i rapportfiltrene.
+Hvis en økten du nettopp opprettet ikke vises i rapporter med en gang, forsikre deg om at øktdatoen faller innenfor datointervallet valgt i rapportfiltrene.
 :::

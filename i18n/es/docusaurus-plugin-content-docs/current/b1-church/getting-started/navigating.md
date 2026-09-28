@@ -1,49 +1,79 @@
 ---
-title: "Navegar por B1App"
+title: "Navegando B1App"
 ---
 
-# Navegar por B1App
+# Navegando B1App
 
 <div class="article-intro">
 
-El portal de miembros en B1.church utiliza un diseño de navegación de barra lateral que facilita el desplazamiento entre las diferentes herramientas disponibles para ti. Esta página explica cómo funciona la navegación tanto en escritorio como en dispositivos móviles.
+El portal de miembros en B1.church es una aplicación web optimizada para teléfonos que vive bajo `/mobile`. Funciona en cualquier navegador y se puede instalar en tu pantalla de inicio. Esta página explica el panel de inicio, la barra de pestañas inferior, el menú Más y la página Mi.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- Necesitas haber [iniciado sesión](./logging-in.md) para acceder al portal de miembros.
+- Necesitas estar [registrado](./logging-in.md) para ver tu información personal. Los visitantes sin registrar aún pueden navegar contenido público y se les ofrece un botón **Iniciar Sesión** donde una función requiere una cuenta.
 
 </div>
 
-## Navegación de Barra Lateral
+## Inicio
 
-Cuando entras al portal de miembros, verás una barra lateral vertical en el lado izquierdo de la pantalla. Esta barra lateral contiene pestañas para cada sección del portal:
+Abrir `https://yourchurchname.b1.church/mobile` te lleva al panel **Inicio** en `/mobile/dashboard`. Inicio es la página de inicio del portal de miembros y muestra:
 
-- **Línea de tiempo** -- Tu feed personalizado de actualizaciones y conversaciones de tus grupos y de la iglesia. Esta es la pestaña predeterminada que se carga cuando abres el portal de miembros.
-- **Yo** -- Tu panel personal de próximas asignaciones de servicio, inscripciones, eventos de grupo y notificaciones recientes. Consulta [La Página Yo](./me-page).
-- **Grupos** -- Ver e interactuar con los [grupos](../groups/) a los que perteneces.
-- **Comunidad** -- Explora el [directorio de miembros](../community/member-directory.md) de la iglesia.
-- **Planes** -- Ver los próximos [planes de servicio](../plans/) y tus posiciones de voluntariado asignadas.
-- **Registro** -- [Regístrate](../checkin/) a ti mismo y a tu hogar para servicios y eventos.
-- **Lecciones** *(obsoleto)* -- La pestaña Lecciones dentro del portal ha sido reemplazada por [FreePlay](/docs/freeplay/) para la reproducción en el aula. Explora el currículo directamente en [Lessons.church](https://lessons.church) o consulta la [página de referencia de Lecciones](../content/lessons.md) para más detalles.
-- **Donaciones** -- Realiza [donaciones](../giving/) en línea y consulta tu historial de contribuciones.
+- Un saludo con tu nombre
+- El versículo del día
+- Una tarjeta destacada por lo que tu iglesia ha resaltado
+- Una cuadrícula **Explorar** de las herramientas que tu iglesia ha habilitado -- grupos, donaciones, registro de asistencia, sermones, planes y más
 
-Haz clic en cualquier pestaña para cambiar a esa sección. La pestaña activa se resalta para que siempre sepas dónde te encuentras.
+Tocar una tarjeta en Explorar abre esa herramienta. Si tu iglesia tiene más herramientas de las que caben en el panel, la última tarjeta es **Más**, que abre la lista completa en `/mobile/more`.
+
+## La Barra de Pestañas Inferior
+
+En un teléfono, una barra de pestañas está fija en la parte inferior de la pantalla:
+
+- **Inicio** -- siempre la primera pestaña
+- Hasta tres de las pestañas que tu iglesia configuró
+- **Más** -- abre el menú de navegación
+
+Si tu iglesia ha configurado más de tres pestañas, el resto no se pierden: aparecen en el menú **Más** y en la cuadrícula Explorar del panel. Los administradores de la iglesia establecen el orden de pestañas en B1 Admin bajo **Móvil → Navegación**.
+
+## El Menú
+
+Tocar **Más** abre el menú de navegación. En una tableta o escritorio el mismo menú siempre es visible a lo largo del lado izquierdo de la pantalla. Contiene:
+
+- Tu nombre y foto, con un acceso directo **Editar Perfil** — consulta [Editando Tu Perfil](./editing-your-profile.md)
+- **Inicio** y **Mi**
+- **Portal de Administración** -- solo se muestra si tienes permisos de administrador en tu iglesia; abre B1 Admin
+- Cada pestaña que tu iglesia configuró, en orden
+- **Instalar Aplicación** -- abre las [instrucciones de instalación](./installing-pwa.md) en `/mobile/install`
+- Un interruptor de modo claro/oscuro
+- **Iniciar Sesión** o **Cerrar Sesión**
+- El nombre de tu iglesia y un enlace a la política de privacidad
+
+## La Barra de Aplicaciones
+
+La barra en la parte superior de cada pantalla muestra:
+
+- El título de la pantalla, o el nombre de tu iglesia en Inicio
+- Una flecha hacia atrás cuando has profundizado en una pantalla de detalles
+- Un icono de **campana** para notificaciones y mensajes, con un distintivo para elementos no leídos
+- Tu **foto de perfil**, que abre tu perfil en `/mobile/profileEdit` — consulta [Editando Tu Perfil](./editing-your-profile.md)
+
+## La Página Mi
+
+**Mi** (`/mobile/me`) es tu centro personal. Enumera atajos a tu perfil, [preferencias de notificación](./notification-preferences.md), mensajes, [donaciones](../giving/), y [registros](../events/my-registrations.md), seguido de lo que se acerca para ti -- asignaciones de voluntariado, registros de eventos y eventos de grupos -- y tus notificaciones más recientes. Consulta [La Página Mi](./me-page) para más detalles.
+
+Si no has iniciado sesión, la página Mi muestra un botón **Iniciar Sesión** en su lugar.
+
+## Instalando en Tu Pantalla de Inicio
+
+El portal de miembros es una Aplicación Web Progresiva. Visita `/mobile/install` (o elige **Instalar Aplicación** en el menú) para instrucciones paso a paso para tu dispositivo. Una vez instalada, se abre en pantalla completa desde tu pantalla de inicio sin la barra del navegador. Consulta [Instalando como una Aplicación (PWA)](./installing-pwa.md).
+
+## El Sitio Web Público de Tu Iglesia
+
+Fuera del portal de miembros, el sitio web público de tu iglesia tiene su propia navegación de encabezado con enlaces que tus administradores configuraron -- páginas como [sermones](../content/sermons.md), la [Biblia](../content/bible.md), [transmisión en vivo](../content/live-streaming.md), y una lista pública de grupos. En un teléfono esos enlaces viven detrás del icono de hamburguesa en la esquina superior derecha del encabezado.
 
 :::info
-Las pestañas que ves pueden variar según lo que tu iglesia haya habilitado. Los administradores de la iglesia controlan qué secciones son visibles para los miembros a través de B1 Admin. Si no ves una pestaña en particular, es posible que tu iglesia no haya activado esa función.
+Las pestañas y herramientas que ves varían según la iglesia. Los administradores controlan qué secciones son visibles para los miembros a través de B1 Admin, así que si no ves una característica descrita aquí, es posible que tu iglesia no la haya habilitado.
 :::
-
-## Navegación Móvil
-
-En pantallas más pequeñas, como teléfonos y tabletas, la barra lateral se contrae para ahorrar espacio. En su lugar, verás un botón de **Menú** en la parte superior del portal de miembros. Tócalo para abrir una lista de todas las pestañas disponibles. Selecciona una pestaña para navegar a esa sección, y el menú se cerrará automáticamente.
-
-## Pestaña de Administración
-
-Si tienes permisos de administrador en tu iglesia, verás una pestaña adicional de **Administración** en la parte inferior de la barra lateral. Al hacer clic en ella, te lleva a B1 Admin donde puedes administrar la configuración y los datos de tu iglesia.
-
-## Navegación del Encabezado Superior
-
-Fuera del portal de miembros, el encabezado principal del sitio contiene los enlaces de navegación personalizados de tu iglesia. Estos son configurados por los administradores de tu iglesia y pueden incluir enlaces a páginas como [sermones](../content/sermons.md), la [Biblia](../content/bible.md), [transmisión en vivo](../content/live-streaming.md) y otro contenido. En dispositivos móviles, estos enlaces son accesibles a través de un ícono de menú hamburguesa en la esquina superior derecha del encabezado.

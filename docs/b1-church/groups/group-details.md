@@ -34,23 +34,23 @@ When you are logged in, the group detail page shows the hero section along with 
 
 The available tabs are:
 
-- **Group Details** -- The group's full description, rendered with rich text formatting.
+- **About** -- The group's full description, rendered with rich text formatting. Only shown if the group has a description.
+- **Plans** -- The group's service plans. Only shown if the group has plans.
+- **Messages** -- A space for group members to post messages and interact with each other. Only shown to members, and only if your church has turned on group chat for this group. See [Group Conversations](./conversations.md) for more details.
 - **Members** -- A list of all members in the group, showing their photo and name. You can click a member's name to visit their profile in the [member directory](../community/member-directory.md).
-- **Calendar** -- The group's calendar showing meetings and events. You can browse upcoming and past events.
-- **Conversations** -- A space for group members to post messages and interact with each other. See [Group Conversations](./conversations.md) for more details.
+- **Attendance** -- Visible to group leaders (and staff with attendance permission) only. Allows tracking of who attended group meetings.
+- **Events** -- The group's calendar showing meetings and events. You can browse upcoming and past events.
 - **Resources** -- Shared files and links that have been posted for the group. You can download uploaded files or open linked resources.
-- **Attendance** -- Visible to group leaders only. Allows tracking of who attended group meetings.
 
 ## Leader Capabilities
 
 If you are a leader of the group, you have additional editing capabilities:
 
-- **Edit group details** -- Update the group's name, description, meeting time, and other settings directly from the **Details** tab.
-- **Manage members** -- Add new members to the group or remove existing ones from the **Members** tab.
-- **Create and edit events** -- Add events to the group calendar. When creating an event, you can reserve rooms and resources alongside it — select from available rooms and resources, set optional setup and teardown times, and the booking request is automatically submitted for approval.
+- **Create and edit events** -- Add events to the group calendar from the **Events** tab. When creating an event, you can reserve rooms and resources alongside it — select from available rooms and resources, set optional setup and teardown times, and the booking request is automatically submitted for approval.
 - **Manage resources** -- Upload files (up to 100 MB of storage), add links, or delete existing resources.
-- **Leader resources** -- Access a separate **Resources (Leaders)** tab with files and links visible only to group leaders.
 - **Track attendance** -- Record attendance for group sessions from the **Attendance** tab.
+
+To change the group's name, description, or member list, use B1 Admin. See [Group Members](../../b1-admin/groups/group-members.md).
 
 ## Joining a Group
 

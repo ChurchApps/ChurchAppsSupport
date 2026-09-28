@@ -1,12 +1,12 @@
 ---
-title: "Conversas do Grupo"
+title: "Conversas de Grupo"
 ---
 
-# Conversas do Grupo
+# Conversas de Grupo
 
 <div class="article-intro">
 
-A aba Conversas na página do seu grupo é um espaço onde os membros do grupo podem postar mensagens e interagir entre si. Use as conversas para discutir tópicos, compartilhar atualizações e se manter conectado com seu grupo entre os encontros.
+A aba Mensagens na página do seu grupo é um espaço onde os membros do grupo podem postar mensagens e interagir uns com os outros. Use conversas para discutir tópicos, compartilhar atualizações e permanecer conectado com seu grupo entre reuniões.
 
 </div>
 
@@ -14,68 +14,68 @@ A aba Conversas na página do seu grupo é um espaço onde os membros do grupo p
 <h4>Antes de Começar</h4>
 
 - Você deve estar [conectado](../getting-started/logging-in.md) à sua conta B1.church.
-- Você deve ser membro do grupo para acessar a aba Conversas. Veja [Detalhes do Grupo](./group-details.md) para saber como entrar em um grupo.
+- Você deve ser membro do grupo para acessar a aba Mensagens. Veja [Detalhes do Grupo](./group-details.md) para como ingressar em um grupo.
 
 </div>
 
-## Acessando as Conversas
+## Acessando Conversas
 
-1. Navegue até a página de detalhes do grupo clicando em um grupo na [página de grupos](./browsing-groups.md).
-2. Certifique-se de estar conectado.
-3. Clique na aba **Conversas** na barra lateral.
+1. Navegue até a página de detalhes do grupo clicando em um grupo a partir da [página de grupos](./browsing-groups.md).
+2. Certifique-se de que você está conectado.
+3. Clique na aba **Mensagens** na barra lateral.
 
 ## Discussões e Anúncios
 
-A aba Conversas pode mostrar duas subabas:
+A aba Mensagens pode mostrar duas sub-abas, dependendo de quais feeds sua igreja ativou para este grupo:
 
-- **Discussões** -- Um espaço onde qualquer membro do grupo pode postar mensagens e responder a outros. Esta é a visualização padrão e está sempre disponível.
-- **Anúncios** -- Mensagens postadas pelos líderes do grupo que são importantes para todos os membros verem. Membros comuns podem ler os anúncios, mas apenas os líderes podem criá-los.
+- **Discussões** -- Um espaço onde qualquer membro do grupo pode postar mensagens e responder a outros.
+- **Anúncios** -- Mensagens postadas por líderes de grupo que são importantes para todos os membros verem. Membros regulares podem ler anúncios e reagir a eles, mas apenas líderes podem postar. Se você tentar postar como membro regular, você verá uma nota informando que apenas líderes podem postar anúncios e responder por mensagem direta em vez disso.
 
-Se não houver anúncios e você não for líder, verá apenas a visualização de Discussões, sem a barra de abas.
+Se sua igreja ativou apenas um dos dois feeds para este grupo, você verá apenas esse feed sem barra de abas. Se ambos estão desativados, o grupo não tem aba Mensagens.
 
 ## Postando uma Mensagem
 
-1. Abra a aba **Conversas** na página do seu grupo.
-2. Certifique-se de estar na subaba **Discussões** (se a barra de abas estiver visível).
+1. Abra a aba **Mensagens** na página do seu grupo.
+2. Certifique-se de que você está na sub-aba **Discussões** (se a barra de abas for visível).
 3. Digite sua mensagem no campo de texto.
 4. Envie sua mensagem para compartilhá-la com o grupo.
 
-Sua mensagem ficará visível para todos os membros do grupo.
+Sua mensagem será visível para todos os membros do grupo.
 
-## Editando ou Excluindo Suas Mensagens
+## Editando ou Deletando Suas Mensagens
 
-Você pode editar ou excluir qualquer mensagem que tenha postado:
+Você pode editar ou deletar qualquer mensagem que tenha postado:
 
-1. Passe o mouse sobre sua mensagem (ou toque nela no celular) para revelar o botão de **mais opções** (⋮).
-2. Clique no botão para abrir o menu da mensagem.
-3. Escolha **Editar** para modificar o texto da mensagem, ou **Excluir** para removê-la.
-   - Ao editar, o texto da mensagem é carregado de volta no campo de entrada. Faça suas alterações e envie para salvá-las.
-   - Ao excluir, uma caixa de diálogo de confirmação aparece. Clique em **Confirmar** para remover a mensagem permanentemente.
+1. Passe o mouse sobre sua mensagem (ou toque nela em celular) para revelar o botão **mais opções** (⋮).
+2. Clique no botão para abrir o menu de mensagem.
+3. Escolha **Editar** para modificar o texto da mensagem, ou **Deletar** para removê-la.
+   - Ao editar, o texto da mensagem se carrega de volta no campo de entrada. Faça suas alterações e envie para salvá-las.
+   - Ao deletar, um diálogo de confirmação aparece. Clique em **Confirmar** para remover permanentemente a mensagem.
 
 :::info
-Você só pode editar ou excluir suas próprias mensagens. Mensagens postadas por outros membros não mostram as opções de editar/excluir.
+Você só pode editar ou deletar suas próprias mensagens. Mensagens postadas por outros membros não mostram as opções de edição/exclusão.
 :::
 
 ## Reagindo a Mensagens
 
-No chat do grupo, você pode reagir a qualquer mensagem com um emoji:
+No chat de grupo, você pode reagir a qualquer mensagem com um emoji:
 
 1. Toque ou passe o mouse sobre uma mensagem e escolha **Adicionar reação**.
 2. Escolha um dos seis emojis: 👍 ❤️ 😂 🎉 🙏 😮.
 
-As reações aparecem como pequenos chips abaixo da mensagem com uma contagem de quantas pessoas usaram cada uma. Sua própria reação fica destacada — toque no chip (ou escolha o mesmo emoji novamente) para removê-la, ou escolha um emoji diferente para adicionar outra. As reações aparecem em tempo real para todos no chat.
+Reações aparecem como pequenos chips sob a mensagem com uma contagem de quantas pessoas usaram cada uma. Sua própria reação é destacada — toque no chip (ou escolha o mesmo emoji novamente) para removê-la, ou escolha um emoji diferente para adicionar outro. Reações aparecem ao vivo para todos no chat.
 
 :::tip
-As conversas do grupo também aparecem na sua [Linha do Tempo](../community/timeline.md), para que você acompanhe as discussões sem precisar visitar cada grupo individualmente.
+Conversas de grupo também aparecem na sua [Linha do Tempo](../community/timeline.md), então você pode acompanhar as discussões sem visitar cada grupo individualmente.
 :::
 
-## Recursos do Líder
+## Recursos de Líder
 
-Se você for líder do grupo, tem recursos adicionais na aba Conversas:
+Se você é líder de grupo, você tem recursos adicionais na aba Mensagens:
 
-- **Postar anúncios** -- Mude para a subaba **Anúncios** e poste mensagens que todos os membros do grupo podem ler.
-- **Postar discussões** -- Você também pode participar de discussões normais como qualquer outro membro.
+- **Postar anúncios** -- Alterne para a sub-aba **Anúncios** e poste mensagens que todos os membros do grupo possam ler.
+- **Postar discussões** -- Você também pode participar de discussões regulares como qualquer outro membro.
 
 :::info
-As conversas são específicas de cada grupo. Mensagens que você postar em um grupo não aparecerão nas conversas de outro grupo.
+Conversas são específicas para cada grupo. Mensagens que você posta em um grupo não aparecerão nas conversas de outro grupo.
 :::

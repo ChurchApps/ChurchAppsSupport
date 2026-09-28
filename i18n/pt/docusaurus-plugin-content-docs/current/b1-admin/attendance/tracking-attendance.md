@@ -1,63 +1,64 @@
 ---
-title: "Rastreando Presença"
+title: "Rastreamento de Frequência"
 ---
 
-# Rastreando Presença
+# Rastreamento de Frequência
 
 <div class="article-intro">
 
-Once your campuses, service times, and groups are configured, B1 Admin makes it easy to review attendance data and spot trends. The Attendance page provides two reporting views -- the **Attendance** tab for church-wide trends and the **Groups** tab for group-level detail. Use these tools to understand growth patterns, identify declining engagement, and make data-driven decisions for your church.
+Depois que suas sedes, horários de serviço e grupos estiverem configurados, o B1 Admin facilita a revisão de dados de frequência e a identificação de tendências. A página Frequência oferece duas visualizações de relatórios -- a guia **Tendência de Frequência** para tendências em toda a igreja e a guia **Frequência de Grupo** para detalhes em nível de grupo. Use estas ferramentas para entender padrões de crescimento, identificar diminuição de engajamento e tomar decisões orientadas por dados para sua igreja.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Antes de Começar</h4>
 
-- Your attendance structure must be set up with at least one campus and service time. See [Attendance Setup](setup.md) if you haven't done this yet.
-- Attendance data needs to be recorded before reports will show results. Data can come from [manual entry](recording-attendance.md) or [self check-in](check-in.md).
+- Sua estrutura de frequência deve ser configurada com pelo menos uma sede e um horário de serviço. Consulte [Configuração de Frequência](setup.md) se você ainda não fez isso.
+- Os dados de frequência precisam ser registrados antes que os relatórios mostrem resultados. Os dados podem vir de [entrada manual](recording-attendance.md) ou [check-in automático](check-in.md).
 
 </div>
 
-## Viewing Attendance Trends
+## Visualizando Tendências de Frequência
 
-1. Open **B1 Admin**, then open the **section menu** in the top-left corner and choose **People**.
-2. Click the **Attendance** tab.
-3. The report runs automatically when the tab opens, showing attendance over a default date range.
+1. Abra **B1 Admin**, depois abra o **menu de seção** no canto superior esquerdo e escolha **Pessoas**.
+2. Clique na guia **Tendência de Frequência**.
+3. O relatório é executado automaticamente quando a guia é aberta, mostrando frequência ao longo de um intervalo de datas padrão.
 
-## Filtering Your Data
+## Filtrando Seus Dados
 
-Use the filters at the top of the page to narrow the results:
+Use os filtros no topo da página para limitar os resultados:
 
-- **Date Range** -- choose a start and end date to focus on a specific period.
-- **Campus** -- select a campus to see attendance for only that location.
-- **Service Time** -- pick a service time to drill into a particular gathering.
+- **Intervalo de Datas** -- escolha uma data inicial e final para focar em um período específico.
+- **Sede** -- selecione uma sede para ver frequência apenas naquele local.
+- **Horário de Serviço** -- escolha um horário de serviço para analisar uma reunião particular.
 
-The chart and data update as soon as you change a filter, so you can quickly compare different time periods or locations.
+O gráfico e os dados são atualizados assim que você altera um filtro, para que possa comparar rapidamente diferentes períodos ou locais.
 
 :::info
-Reports auto-run each time you open the Attendance tab, so you will always see up-to-date numbers without needing to click a refresh button.
+Os relatórios são executados automaticamente cada vez que você abre a guia Tendência de Frequência, para que você sempre veja números atualizados sem precisar clicar em um botão de atualização.
 :::
 
-## Group Attendance
+## Frequência de Grupo
 
-The **Groups** tab shows attendance broken down by individual group. This is useful when you want to monitor a specific class, ministry team, or small group rather than looking at overall service numbers.
+A guia **Frequência de Grupo** mostra frequência dividida por grupo individual. Isso é útil quando você deseja monitorar uma classe específica, equipe de ministério ou pequeno grupo em vez de observar números gerais de serviço.
 
-1. Select the **Groups** tab.
-2. Choose a group from the list to see its attendance history.
-3. Use the date range filter to adjust the reporting window.
+1. Selecione a guia **Frequência de Grupo**.
+2. Escolha um grupo da lista para ver seu histórico de frequência.
+3. Use o filtro de intervalo de datas para ajustar a janela de relatório.
 
 :::tip
-Group attendance is especially valuable for [small group](../groups/creating-groups.md) leaders who want to track engagement within their group over time.
+A frequência de grupo é especialmente valiosa para líderes de [pequeno grupo](../groups/creating-groups.md) que desejam rastrear engajamento dentro de seu grupo ao longo do tempo.
 :::
 
-## Tips for Using Attendance Data
+## Dicas para Usar Dados de Frequência
 
-- Review trends monthly to catch seasonal patterns early.
-- Compare campus-level data to understand which locations are growing.
-- Use group-level reports to follow up with [groups](../groups/group-members.md) that show declining attendance.
-- Combine attendance insights with the [AI Search](../people/ai-search.md) tool to find people who haven't attended recently.
+- Revise tendências mensalmente para identificar padrões sazonais cedo.
+- Compare dados em nível de sede para entender quais locais estão crescendo.
+- Use relatórios em nível de grupo para acompanhar [grupos](../groups/group-members.md) que mostram frequência em declínio.
+- Combine insights de frequência com a ferramenta [Pesquisa de IA](../people/ai-search.md) para encontrar pessoas que não compareceram recentemente.
 
-## Related Pages
+## Páginas Relacionadas
 
-- [Recording Attendance](recording-attendance.md) -- manually enter attendance for a group session
-- [Check-In](check-in.md) -- set up self check-in so attendance is recorded automatically
+- [Registrando Frequência](recording-attendance.md) -- inserir manualmente a frequência de uma sessão de grupo
+- [Entrada de Contagem de Cabeças e Tendência](headcount-entry.md) -- uma alternativa simples de contagem total, com seu próprio gráfico de tendência semanal
+- [Check-In](check-in.md) -- configurar check-in automático para que a frequência seja registrada automaticamente

@@ -1,93 +1,93 @@
 ---
-title: "Gabay: Gumawa ng mga Ulat ng Pagbibigay sa Katapusan ng Taon"
+title: "Gabay: Lumikha ng Year-End Giving Reports"
 ---
 
-# Gumawa ng mga Ulat ng Pagbibigay sa Katapusan ng Taon
+# Lumikha ng Year-End Giving Reports
 
 <div class="article-intro">
 
-Tatalakayin ang proseso sa katapusan ng taon ng pag-finalize ng inyong mga talaan ng donasyon, pag-verify ng mga setting ng fund, at paglikha ng mga tax-deductible giving statement para sa bawat donor. Karaniwang ginagawa ito sa unang bahagi ng Enero para sa nakaraang taon ng kalendaryo.
+Dumaan sa proseso ng taon-taon ng pag-finalize ng iyong mga record ng donation, pag-verify ng mga setting ng fund, at pagbuo ng mga tax-deductible giving statement para sa bawat donor. Ito ay karaniwang ginagawa sa simula ng Enero para sa nakaraang taon ng kalendaryo.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
 - B1 Admin account na may financial access
-- Mga donasyong naitala sa buong taon (online sa pamamagitan ng Stripe at/o mano-manong nailagay)
-- Access sa inyong Stripe account kung tumatanggap kayo ng online na donasyon
+- Mga donation na narekord sa buong taon (online sa pamamagitan ng Stripe at/o manually entered)
+- Access sa iyong Stripe account kung tumatanggap ka ng online donations
 
 </div>
 
-## Hakbang 1: I-import ang mga Huling Stripe Transaction
+## Hakbang 1: Ilunsad ang Panghuling Stripe Transactions
 
-Siguraduhing nasa inyong sistema na ang lahat ng online na donasyon mula sa katapusan ng taon.
+Siguraduhin na ang lahat ng online donations mula sa dulo ng taon ay nasa iyong sistema.
 
-Sundin ang gabay sa [Stripe Import](../donations/stripe-import.md) para:
+Sundin ang [Stripe Import](../donations/stripe-import.md) gabay upang:
 
-1. Pumunta sa Donations > Batches > Stripe Import
-2. Pumili ng saklaw ng petsa na sumasaklaw sa katapusan ng taon (hal., Disyembre 1 - Disyembre 31)
-3. I-click muna ang Preview para suriin, pagkatapos ay Import Missing para i-finalize
+1. Mag-navigate sa Donations > Batches > Stripe Import
+2. Piliin ang date range na sumasaklaw sa dulo ng taon (hal., Disyembre 1 - Disyembre 31)
+3. I-click ang Preview una upang suriin, pagkatapos ay Import Missing upang tapusin
 
 :::warning
-Patakbuhin ang import na ito bago gumawa ng mga statement. Anumang mga transaksyong hindi pa ninyo na-import ay hindi lalabas sa mga statement ng donor.
+Patakbuhin ang import na ito bago lumikha ng mga statement. Ang anumang transaksyon na hindi mo na-import ay hindi lilitaw sa mga donor statement.
 :::
 
-## Hakbang 2: Suriin ang mga Ulat ng Donasyon
+## Hakbang 2: Suriin ang Mga Donation Reports
 
-I-verify na tama ang inyong mga talaan bago gumawa ng mga statement.
+Patunayan ang iyong mga record bago lumikha ng mga statement.
 
-Sundin ang gabay sa [Mga Ulat ng Donasyon](../donations/donation-reports.md) para:
+Sundin ang [Donation Reports](../donations/donation-reports.md) gabay upang:
 
-1. Tingnan ang pahina ng buod ng donasyon para sa buong taon
-2. Suriin ang mga kabuuan ayon sa fund at ihambing sa inyong mga bank statement para mahuli ang anumang pagkakaiba
-3. I-click ang mga indibidwal na batch para i-verify ang mga detalye sa antas ng donor kung kinakailangan
+1. Suriin ang pahina ng donation summary para sa buong taon
+2. Suriin ang mga kabuuan sa pamamagitan ng fund at ihambing ang iyong bank statements upang makuha ang anumang mga diskrepansya
+3. Mag-click sa mga indibidwal na batch upang patunayan ang mga detalye sa antas ng donor kung kinakailangan
 
-## Hakbang 3: I-verify ang Tax Status ng Fund
+## Hakbang 3: Patunayan ang Fund Tax Status
 
-Siguraduhing tama ang tax-deductible na setting ng bawat fund para tama ang mga statement.
+Siguraduhin na ang setting na tax-deductible ng bawat fund ay tama upang ang mga statement ay tumpak.
 
-Sundin ang gabay sa [Mga Fund](../donations/funds.md) para:
+Sundin ang [Funds](../donations/funds.md) gabay upang:
 
-1. Buksan ang bawat fund at kumpirmahin na tama ang tax-deductible na setting
+1. Buksan ang bawat fund at kumpirmahin ang setting na tax-deductible ay tama
 
 :::info
-Ang mga donasyon lamang sa mga fund na minarkahan bilang tax-deductible ang lalabas sa mga giving statement. Kung ang isang fund ay dapat na tax-deductible ngunit hindi namarkahan nang ganoon, i-update ito bago gumawa ng mga statement.
+Lamang ang mga donation sa mga fund na minarkahan bilang tax-deductible ay lilitaw sa mga giving statement. Kung ang isang fund ay dapat na tax-deductible ngunit hindi ito minarkahan, i-update ito bago lumikha ng mga statement.
 :::
 
-## Hakbang 4: Gumawa ng mga Giving Statement
+## Hakbang 4: Lumikha ng Mga Giving Statement
 
-Gumawa ng mga opisyal na giving statement para sa inyong mga donor.
+Lumikha ng mga opisyal na giving statement para sa iyong mga donor.
 
-Sundin ang gabay sa [Mga Giving Statement](../donations/giving-statements.md) para:
+Sundin ang [Giving Statements](../donations/giving-statements.md) gabay upang:
 
-1. Pumunta sa Donations > Statements
-2. Piliin ang taon mula sa dropdown at suriin ang mga buod na estadistika
-3. Piliin ang inyong paraan ng pag-download:
-   - **Download ZIP** — mga indibidwal na CSV file, isa bawat donor
-   - **Print All** — napi-print na view na may bawat statement sa bagong pahina
+1. Mag-navigate sa **Donations > Giving Statements**
+2. Piliin ang taon mula sa dropdown at suriin ang mga istatistika ng summary
+3. Piliin ang iyong pamamaraan ng pag-download:
+   - **Download ZIP** -- mga indibidwal na CSV files, isa bawat donor
+   - **Print All** -- printable view na may bawat statement sa isang bagong pahina
 
 :::tip
-Gumawa ng mga statement nang maaga sa Enero habang sariwa pa ang mga talaan. Nagbibigay ito sa inyo ng oras para mahuli ang anumang mga isyu bago ipadala ang mga ito.
+Lumikha ng mga statement sa simula ng Enero habang ang mga record ay sariwa. Ito ay nagbibigay sa iyo ng oras upang makuha ang anumang mga isyu bago i-mail ang mga ito.
 :::
 
-## Hakbang 5: Ipamahagi sa mga Donor
+## Hakbang 5: Ihatid sa mga Donor
 
-Ihatid ang mga statement sa mga kamay ng inyong mga donor.
+Ihatid ang mga statement sa iyong mga donor.
 
-1. I-print at ipadala sa koreo ang mga statement, o i-email ang mga indibidwal na CSV sa mga donor
-2. Maaari ring tingnan ng mga miyembro ang kanilang sariling kasaysayan ng pagbibigay at mag-print ng mga statement mula sa [B1.church](../../b1-church/giving/donation-history.md) at sa [B1 Mobile app](../../b1-mobile/giving/donation-history.md)
+1. I-print at i-mail ang mga statement, o i-email ang mga indibidwal na CSV sa mga donor
+2. Ang mga miyembro ay maaari ding tingnan ang kanilang sariling kasaysayan ng pagbibigay at i-print ang mga statement mula sa [B1.church](../../b1-church/giving/donation-history.md) at ang [B1 Mobile app](../../b1-mobile/giving/donation-history.md)
 
 ## Tapos Ka Na!
 
-Kumpleto na ang inyong mga ulat ng pagbibigay sa katapusan ng taon. May mga tax-deductible statement na ang mga donor, at na-finalize na ang inyong mga talaan sa pananalapi para sa taon.
+Ang iyong mga year-end giving reports ay kumpleto. Ang mga donor ay may kanilang mga tax-deductible statement, at ang iyong mga record ng pinansyal ay natapos para sa taon.
 
 ## Mga Kaugnay na Artikulo
 
-- [Stripe Import](../donations/stripe-import.md) — mag-import ng mga online na transaksyon
-- [Mga Ulat ng Donasyon](../donations/donation-reports.md) — tingnan ang mga trend at kabuuan ng pagbibigay
-- [Mga Fund](../donations/funds.md) — pamahalaan ang mga fund at tax-deductible na setting
-- [Mga Giving Statement](../donations/giving-statements.md) — gumawa ng mga year-end statement
-- [Pagtatala ng mga Donasyon](../donations/recording-donations.md) — mano-manong ilagay ang mga donasyong cash/tseke
-- [Kasaysayan ng Donasyon (Web)](../../b1-church/giving/donation-history.md) — self-service view ng miyembro
-- [Gabay sa Pag-set Up ng Online na Pagbibigay](./online-giving.md) — paunang setup ng Stripe at pagbibigay
+- [Stripe Import](../donations/stripe-import.md) -- ilunsad ang mga online transaction
+- [Donation Reports](../donations/donation-reports.md) -- tingnan ang mga trend at kabuuan ng pagbibigay
+- [Funds](../donations/funds.md) -- pamahalaan ang mga fund at mga setting na tax-deductible
+- [Giving Statements](../donations/giving-statements.md) -- lumikha ng mga year-end statement
+- [Recording Donations](../donations/recording-donations.md) -- manu-manong ipasok ang mga cash/check donations
+- [Donation History (Web)](../../b1-church/giving/donation-history.md) -- miyembro ng self-service view
+- [Set Up Online Giving Guide](./online-giving.md) -- paunang Stripe at giving setup

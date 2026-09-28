@@ -6,7 +6,7 @@ title: "Group Conversations"
 
 <div class="article-intro">
 
-The Conversations tab on your group page is a space where group members can post messages and interact with each other. Use conversations to discuss topics, share updates, and stay connected with your group between meetings.
+The Messages tab on your group page is a space where group members can post messages and interact with each other. Use conversations to discuss topics, share updates, and stay connected with your group between meetings.
 
 </div>
 
@@ -14,7 +14,7 @@ The Conversations tab on your group page is a space where group members can post
 <h4>Before You Begin</h4>
 
 - You must be [logged in](../getting-started/logging-in.md) to your B1.church account.
-- You must be a member of the group to access the Conversations tab. See [Group Details](./group-details.md) for how to join a group.
+- You must be a member of the group to access the Messages tab. See [Group Details](./group-details.md) for how to join a group.
 
 </div>
 
@@ -22,20 +22,20 @@ The Conversations tab on your group page is a space where group members can post
 
 1. Navigate to the group detail page by clicking on a group from the [groups page](./browsing-groups.md).
 2. Make sure you are logged in.
-3. Click the **Conversations** tab in the sidebar.
+3. Click the **Messages** tab in the sidebar.
 
 ## Discussions and Announcements
 
-The Conversations tab may show two sub-tabs, depending on which feeds your church has turned on for this group:
+The Messages tab may show two sub-tabs, depending on which feeds your church has turned on for this group:
 
 - **Discussions** -- A space where any group member can post messages and reply to others.
 - **Announcements** -- Messages posted by group leaders that are important for all members to see. Regular members can read announcements and react to them, but only leaders can post. If you try to post as a regular member, you'll see a note that only leaders can post announcements and to reply by direct message instead.
 
-If your church has only turned on one of the two feeds for this group, you'll see just that feed with no tab bar. If both are turned off, the group has no Conversations tab at all.
+If your church has only turned on one of the two feeds for this group, you'll see just that feed with no tab bar. If both are turned off, the group has no Messages tab at all.
 
 ## Posting a Message
 
-1. Open the **Conversations** tab on your group page.
+1. Open the **Messages** tab on your group page.
 2. Make sure you are on the **Discussions** sub-tab (if the tab bar is visible).
 3. Type your message in the text field.
 4. Submit your message to share it with the group.
@@ -71,7 +71,7 @@ Group conversations also appear on your [Timeline](../community/timeline.md), so
 
 ## Leader Features
 
-If you are a group leader, you have additional capabilities in the Conversations tab:
+If you are a group leader, you have additional capabilities in the Messages tab:
 
 - **Post announcements** -- Switch to the **Announcements** sub-tab and post messages that all group members can read.
 - **Post discussions** -- You can also participate in regular discussions just like any other member.

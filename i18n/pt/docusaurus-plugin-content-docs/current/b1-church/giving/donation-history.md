@@ -6,7 +6,7 @@ title: "Histórico de Doações"
 
 <div class="article-intro">
 
-Quando você está conectado, pode visualizar um registro completo das suas doações anteriores e gerar comprovantes de contribuição para fins fiscais. Seu histórico de doações está disponível na seção **Doar** da sua conta B1.church.
+Quando você está conectado, você pode visualizar um registro completo de suas doações anteriores e gerar declarações de doações para fins fiscais. Seu histórico de doações está disponível a partir da seção **Doação** da sua conta B1.church.
 
 </div>
 
@@ -14,46 +14,45 @@ Quando você está conectado, pode visualizar um registro completo das suas doa�
 <h4>Antes de Começar</h4>
 
 - Você deve estar [conectado](../getting-started/logging-in.md) à sua conta B1.church.
-- Você precisa ter feito ao menos uma doação. Veja [Fazendo uma Doação](./making-donations.md) para começar.
+- Você precisa ter feito pelo menos uma doação. Veja [Fazendo uma Doação](./making-donations.md) para começar.
 
 </div>
 
 ## Visualizando Seu Histórico
 
-1. Faça login na sua conta B1.church.
-2. Navegue até a seção **Doar**.
-3. Clique em **Histórico** no painel esquerdo para ver suas doações anteriores.
+1. Conecte-se à sua conta B1.church.
+2. Navegue até a seção **Doação**.
+3. Clique na aba **Histórico** para visualizar suas doações anteriores.
 
-Seu histórico de doações é exibido como uma tabela com as seguintes colunas:
+Na parte superior, um cartão **Doação** mostra seu total para um período selecionável -- **Ano até o momento**, **Últimos 30 dias**, **Últimos 90 dias** ou **Tudo** -- escolha um na lista suspensa. Se doações nesse período foram feitas em mais de uma moeda, o total é convertido para sua moeda da igreja e uma nota **Convertido às taxas de câmbio atuais** aparece abaixo.
+
+Abaixo do total, sua atividade recente é listada com:
 
 - **Data** -- Quando a doação foi feita.
 - **Método** -- Como você pagou (por exemplo, "Cartão - Visa" ou "Banco - ACH").
-- **Fundo** -- Para qual fundo a doação foi direcionada (por exemplo, Fundo Geral, Fundo de Construção).
-- **Valor** -- O valor em dólares da doação.
+- **Fundo** -- Qual fundo a doação foi direcionada (por exemplo, Fundo Geral, Fundo de Construção).
+- **Valor** -- O valor da doação, na moeda em que foi dada.
 
 :::info
-Doações que ainda estão sendo processadas aparecerão com um rótulo "Pendente" ao lado do nome do fundo e o valor exibido em uma cor diferente.
+Doações que ainda estão sendo processadas aparecem com um rótulo "Pendente" ao lado do nome do fundo e o valor mostrado em uma cor diferente.
 :::
 
-## Exportando e Imprimindo Comprovantes
+## Exportando e Imprimindo Declarações
 
-Clique no botão de **download** no cabeçalho do Histórico de Doações para acessar as opções de exportação:
-
-- **Ano Atual (CSV)** -- Baixe um arquivo CSV com todas as suas doações do ano atual. Você pode abri-lo em um aplicativo de planilhas.
-- **Ano Atual (Imprimir)** -- Abra um comprovante de contribuição imprimível para o ano atual.
-- **Ano Anterior (CSV)** -- Baixe um arquivo CSV com todas as suas doações do ano anterior.
-- **Ano Anterior (Imprimir)** -- Abra um comprovante de contribuição imprimível para o ano anterior.
+Clique em **Imprimir Declaração** acima da lista de atividade recente para abrir uma declaração de doação imprimível cobrindo o ano civil atual em uma nova aba.
 
 :::tip
-Imprima o comprovante de contribuição do ano anterior no início do novo ano para tê-lo pronto na temporada de impostos. O comprovante imprimível inclui todos os detalhes que você precisa para seus registros.
+Imprima sua declaração no início do novo ano, antes de precisar dela para arquivamento fiscal, enquanto as doações do ano passado ainda estão frescas em seu histórico.
 :::
 
 ## Doações Recorrentes
 
-Na seção **Doar**, você também pode clicar em **Doações Recorrentes** para gerenciar qualquer doação programada que tenha configurado. Esta seção permite visualizar, atualizar ou cancelar doações recorrentes e gerenciar seus métodos de pagamento salvos.
+Se você tem algum presente agendado, uma seção **Recorrente** na aba Histórico lista cada um com seu valor, intervalo e método de pagamento.
 
-Se uma doação recorrente for cobrada pelo **Stripe**, você também pode **pausá-la** em vez de cancelá-la -- clique no ícone de pausa ao lado da doação e confirme. As contribuições param até você clicar no mesmo ícone para **retomar**; uma doação pausada é marcada como **Pausada** na lista. Doações recorrentes por meio de outros provedores de pagamento ainda podem ser editadas ou canceladas, mas não pausadas.
+Se uma doação recorrente é cobrada através de **Stripe**, você pode **pausar** em vez de cancelar -- clique no ícone de pausa ao lado da doação e confirme. O pagamento para até que você clique no mesmo ícone para **retomar**; uma doação pausada é marcada **Pausada** na lista. Doações recorrentes através de outros provedores de pagamento ainda podem ser editadas ou canceladas, mas não pausadas.
+
+Para adicionar, remover ou alterar seus métodos de pagamento salvos, use a aba **Gerenciar**.
 
 ## Próximos Passos
 
-- [Fazendo uma Doação](./making-donations.md) -- Aprenda a fazer uma doação única ou recorrente
+- [Fazendo uma Doação](./making-donations.md) -- Aprenda como fazer um presente único ou recorrente

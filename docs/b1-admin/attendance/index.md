@@ -42,7 +42,7 @@ The **Headcounts** tab lets you record a simple total count for a service, servi
 ## Next Steps
 
 - [Attendance Setup](setup.md) -- configure campuses, service times, and groups
-- [Recording Attendance](recording-attendance.md) -- manually enter attendance for a group session
+- [Recording Attendance](recording-attendance.md) -- manually enter attendance for a group session and print class roll sheets
 - [Tracking Attendance](tracking-attendance.md) -- view trends and filter reports
 - [Headcount Entry & Trend](headcount-entry.md) -- record and chart total counts without a named roster
 - [Check-In](check-in.md) -- set up self check-in for services

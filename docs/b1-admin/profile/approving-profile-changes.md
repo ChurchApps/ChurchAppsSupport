@@ -22,8 +22,8 @@ When your church requires administrator approval for profile updates, members su
 
 When a member submits a profile change, it appears as a task assigned to your approval group. You can find it in two places:
 
-**From Sunday (your home page):**
-1. Log in to B1 Admin — Sunday loads automatically.
+**From the Dashboard (your home page):**
+1. Log in to B1 Admin — the Dashboard loads automatically.
 2. In the **Tasks** section on the right side, click the **Assigned to My Groups** tab.
 3. Any pending profile change requests will be listed there.
 
@@ -50,7 +50,7 @@ If your church wants profile changes to require approval, a Directory Approval G
 3. Under **Directory Approval Group**, select the group whose members should review profile change requests.
 4. Click **Save**.
 
-Any member of that group will see incoming profile change requests under **Assigned to My Groups** on their Sunday home page.
+Any member of that group will see incoming profile change requests under **Assigned to My Groups** on their Dashboard.
 
 The same Directory Approval Group also reviews **account deletion requests** — see [Reviewing Account Deletion Requests](./account-deletion.md).
 

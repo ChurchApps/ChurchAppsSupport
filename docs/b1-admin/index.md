@@ -14,15 +14,15 @@ B1 Admin is your church management dashboard. It provides tools to manage every 
 
 1. Open your browser and go to [admin.b1.church](https://admin.b1.church)
 2. Sign in with your username and password
-3. You'll land on **Sunday**, your home page. It shows this week's service order, who's checked in and serving in real time, any tasks that need your attention (like pending approvals or join requests), your groups, and your open tasks
+3. You'll land on the **Dashboard**, your home page. It shows this week's service order, who's checked in and serving in real time, any tasks that need your attention (like pending approvals or join requests), your groups, and your open tasks
 
 :::tip
 New to B1 Admin? Start with the [Introduction](./introduction) for a video walkthrough, then visit [Settings](./settings/) to configure your church information and invite your team.
 :::
 
-## Your Sunday Home Page
+## Your Dashboard
 
-Sunday replaces the old dashboard as your B1 Admin home page (`/`). It is built around your church's weekly service:
+The Dashboard is your B1 Admin home page (`/`). It is built around your church's weekly service:
 
 - **This week's service** -- the current or upcoming plan's name and order of service, with a link into the full plan
 - **Live status** -- once people start checking in on Sunday, the page shows how many are in the room, who's serving this hour, first-time guests, and a room-by-room breakdown with capacity bars
@@ -36,13 +36,13 @@ Sermons, Calendars, Mobile, and Settings are still one click away in the top nav
 ## Key Features
 
 - **[People](./people/)** - Manage your church directory, add members, bulk edit data, track households
-- **[Groups](./groups/)** - Create and organize church groups with join requests and member management
-- **[Attendance](./attendance/)** - Set up campuses, service times, track named attendance, and log simple headcounts with trend reports
+- **[Groups](./groups/)** - Create and organize church groups with join requests, member management, and group email
+- **[Attendance](./attendance/)** - Set up campuses, service times, track named attendance with printable class roll sheets, and log simple headcounts with trend reports
 - **[Donations](./donations/)** - Record giving in multiple currencies, manage funds, generate statements
 - **[Serving](./serving/)** - Coordinate volunteers, create service plans, manage tasks, and move people through step-by-step workflows
 - **[Forms](./forms/)** - Build custom forms for registrations and data collection
 - **[Reports](./reports/)** - View birthday, attendance, and donation reports
-- **[Website](./website/)** - Build and manage your church website with custom navigation styles
+- **[Website](./website/)** - Build and manage your church website with custom navigation styles, or turn off the public site and keep only the member portal
 - **[Sermons](./sermons/)** - Manage your sermon library, live streaming, and an automatic podcast feed
 - **[Calendars](./calendars/)** - Create curated calendars, manage room/resource bookings, and view availability
 - **[Settings](./settings/)** - Configure church info, roles, permissions, and custom person fields

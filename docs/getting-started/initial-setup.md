@@ -27,7 +27,7 @@ After creating your account and church, there are a few important steps to confi
 
 ## Step 2: Set Up Your Branding
 
-1. From **Sunday** (your home page), navigate to **Website**, then select **Appearance**.
+1. From the **Dashboard** (your home page), navigate to **Website**, then select **Appearance**.
 2. Upload your **church logo**.
 3. Configure any additional branding options such as colors and images.
 4. Your branding will appear on your B1.church website and in the B1 Mobile app.

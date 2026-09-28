@@ -70,6 +70,22 @@ You can send formatted emails to all members of a group:
 Create reusable email templates for recurring communications like weekly updates, event announcements, or prayer requests. Templates save time and ensure consistent messaging.
 :::
 
+### Turning On Group Email for Your Church
+
+All churches on B1 send email from the same address, so they share one sending reputation. To keep everyone's email out of spam folders, the ChurchApps team reviews each church once before it can send group email.
+
+If your church has not been reviewed yet, the Send Email dialog shows **Group email needs a quick review** instead of the message editor:
+
+1. Click **Request review**. The ChurchApps support team is notified.
+2. The dialog changes to **Review requested**. You can close it.
+3. Group email is usually turned on within one business day. Open the Send Email dialog again after that to send your message.
+
+Until your church is approved, B1 also does not send [form follow-up emails](../forms/creating-forms.md#sending-a-follow-up-email) or the **Send email** step in [workflows](../serving/workflows.md).
+
+:::info Sending limits
+After approval, a church can send up to 150 church-written emails a day. The limit grows as your church builds a clean sending history, up to 2,000 a day. If recent messages bounced or were marked as spam, group email pauses and the dialog asks you to contact support. If a send would go over your daily limit, B1 does not send it and shows an error.
+:::
+
 ## Exporting Group Data
 
 To download the group member list as a file:
@@ -77,7 +93,9 @@ To download the group member list as a file:
 1. From the group detail page, click the **download icon**.
 2. A CSV file containing the group's member information will download to your computer.
 
-This is useful for creating printed rosters, importing data into other tools, or keeping offline records. For more export options, see [Exporting Data](../people/exporting-data.md).
+To print a sign-in sheet for a class instead, use **Print Roll Sheet** -- see [Printing a Roll Sheet](../attendance/recording-attendance.md#printing-a-roll-sheet).
+
+A CSV export is useful for importing data into other tools, or keeping offline records. For more export options, see [Exporting Data](../people/exporting-data.md).
 
 ## Sending Push Notifications to Group Members
 

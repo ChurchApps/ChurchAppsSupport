@@ -20,7 +20,7 @@ Once your form is live, submissions will start coming in. The Submissions tab le
 
 ## Viewing Submissions
 
-1. Navigate to **Forms** from the main menu.
+1. Open **People** from the section menu, then click **Forms** in the navigation bar.
 2. Click on the form you want to review.
 3. Go to the **Submissions** tab.
 

@@ -1,115 +1,133 @@
 ---
-title: "Gabay: Pamahalaan ang mga Boluntaryo tuwing Linggo"
+title: "Gabay: Pamahalaan ang Sunday Volunteers"
 ---
 
-# Pamahalaan ang mga Boluntaryo tuwing Linggo
+# Pamahalaan ang Sunday Volunteers
 
 <div class="article-intro">
 
-I-set up ang inyong mga koponan ng boluntaryo, gumawa ng lingguhang mga plano ng serbisyo, mag-assign ng mga posisyon, bumuo ng mga service order na may mga worship song, at i-automate ang mga paulit-ulit na gawain. Sa huli, makikita ng inyong mga boluntaryo ang kanilang mga assignment sa B1 website at mobile app, at maaaring tanggapin o tanggihan nang direkta.
+Mag-set up ng iyong volunteer teams, lumikha ng mga weekly service plans, magtakda ng mga posisyon, bumuo ng mga service orders na may worship songs, at magtakda ng mga Sunday tasks. Sa pagtatapos, ang iyong mga volunteer ay makikita ang kanilang mga assignment sa B1 website at mobile app, at maaaring tumanggap o tumanggi nang direkta.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
 - B1 Admin account na may admin access
-- Mga boluntaryong [naidagdag sa inyong people directory](../people/adding-people.md)
+- Mga volunteer na [idinagdag sa iyong people directory](../people/adding-people.md)
 
 </div>
 
-## Hakbang 1: Gumawa ng mga Koponan ng Boluntaryo
+## Hakbang 1: Lumikha ng Volunteer Teams
 
-Ayusin ang inyong mga boluntaryo sa mga koponan para mapamahalaan mo ang mga assignment ayon sa ministry area.
+Ayusin ang iyong mga volunteer sa mga team upang maaari mong pamahalaan ang mga assignment sa pamamagitan ng ministry area.
 
-Sundin ang mga gabay sa [Paggawa ng mga Grupo](../groups/creating-groups.md) at [Mga Miyembro ng Grupo](../groups/group-members.md) para:
+Sundin ang [Creating Groups](../groups/creating-groups.md) at [Group Members](../groups/group-members.md) mga gabay upang:
 
-1. Gumawa ng kategorya (hal., "Sunday Morning Teams")
-2. Gumawa ng mga grupo tulad ng "Worship Team", "Sound & Media", "Greeters", "Kids Ministry Volunteers"
-3. Magdagdag ng mga boluntaryo sa bawat grupo sa pamamagitan ng paghahanap ng kanilang pangalan at pag-click ng Add
+1. Lumikha ng isang kategorya (hal., "Sunday Morning Teams")
+2. Lumikha ng mga grupo tulad ng "Worship Team", "Sound & Media", "Greeters", "Kids Ministry Volunteers"
+3. Magdagdag ng mga volunteer sa bawat grupo sa pamamagitan ng paghahanap ng kanilang pangalan at pag-click ng Idagdag
 
 :::tip
-Italaga ang mga team leader gamit ang berdeng icon ng susi sa Members tab. Maaaring pamahalaan ng mga lider ang kanilang sariling kalendaryo ng grupo at i-coordinate ang kanilang koponan.
+Tukuyin ang mga lider ng team gamit ang green key icon sa Members tab. Ang mga lider ay maaaring pamahalaan ang kanilang sariling group calendar at mag-coordinate ng kanilang team.
 :::
 
-## Hakbang 2: Buuin ang Inyong Song Library
+## Hakbang 2: Bumuo ng Iyong Song Library
 
-Magdagdag ng mga worship song para ma-pull mo ang mga ito sa mga service plan bawat linggo.
+Magdagdag ng worship songs upang maaari mong ilagay sa mga service plans bawat linggo.
 
-Sundin ang gabay sa [Mga Kanta](../serving/songs.md) para:
+Sundin ang [Songs](../serving/songs.md) gabay upang:
 
-1. Magdagdag ng mga worship song na may mga pamagat, artist, at tagal
-2. Para sa bawat kanta, magdagdag ng mga arrangement na may lyrics at key designation
-3. Magdagdag ng mga external link sa mga YouTube performance, chord chart, o sheet music
+1. Magdagdag ng worship songs na may mga pamagat, artists, at duration
+2. Para sa bawat kanta, magdagdag ng mga arrangement na may lyrics at key designations
+3. Magdagdag ng mga external links sa YouTube performances, chord charts, o sheet music
 
 :::info
-Ang mga kantang idinagdag dito ay maaaring i-pull sa anumang service plan sa ibang pagkakataon. Buuin ang inyong library nang isang beses, gamitin ito bawat linggo.
+Ang mga kanta na idinagdag dito ay maaaring ilagay sa anumang service plan mamaya. Bumuo ng iyong library minsan, gamitin ulit ito bawat linggo.
 :::
 
-## Hakbang 3: Gumawa ng Service Plan
+## Hakbang 3: Lumikha ng isang Service Plan
 
-Ang mga plano ay ang mga lingguhang assignment na nagsasabi sa mga boluntaryo kung saan sila kinakailangan.
+Ang mga plano ay ang mga weekly assignments na nagsasabi sa mga volunteer kung saan sila kailangan.
 
-Sundin ang gabay sa [Mga Plano](../serving/plans.md) para:
+Sundin ang [Plans](../serving/plans.md) gabay upang:
 
-1. Pumunta sa Serving, piliin ang inyong ministry tab
-2. I-click ang "Add Plan" at piliin ang petsa ng serbisyo
-3. Sa Assignments tab, i-expand ang bawat koponan at i-assign ang mga boluntaryo sa kanilang mga posisyon
-4. Makikita ng mga boluntaryo ang status ng kanilang assignment (Hiniling, Nakumpirma, Nakabinbin)
+1. Mag-navigate sa Serving, piliin ang iyong ministry tab
+2. I-click ang "Add Plan" at piliin ang service date
+3. Sa Assignments tab, palawakin ang bawat team at magtakda ng mga volunteer sa kanilang mga posisyon
+4. Ang mga volunteer ay makikita ang kanilang assignment status (Requested, Confirmed, Pending)
 
-## Hakbang 4: Buuin ang Service Order
+## Hakbang 4: Bumuo ng Service Order
 
-Ilatag ang daloy ng inyong serbisyo mula simula hanggang wakas.
+Ilatag ang daloy ng iyong serbisyo mula simula hanggang dulo.
 
-Sundin ang gabay sa [Service Order](../serving/service-order.md) para:
+Sundin ang [Service Order](../serving/service-order.md) gabay upang:
 
-1. Lumipat sa "Service Order" tab sa inyong plano
-2. I-click ang "Add Item" para magdagdag ng mga elemento: mga worship song (mula sa inyong library), mga panalangin, pagbasa ng banal na kasulatan, mga anunsyo, sermon, handog, pagsasara
-3. I-drag and drop ang mga item para ayusin ang daloy ng serbisyo
+1. Lumipat sa "Service Order" tab sa iyong plano
+2. I-click ang "Add Item" upang magdagdag ng mga elemento: worship songs (mula sa iyong library), panalangin, scripture readings, announcements, sermon, offering, closing
+3. I-drag at i-drop ang mga item upang baguhin ang daloy ng serbisyo
 
 :::info
-Ang mga service order ay tiyak sa bawat plano. Ang mga pagbabago dito ay hindi nakakaapekto sa ibang plano o sa master song library.
+Ang mga service order ay plan-specific. Ang mga pagbabago dito ay hindi nakakaapekto sa ibang mga plano o sa master song library.
 :::
 
-## Hakbang 5: Mag-set Up ng mga Paulit-ulit na Gawain
+## Hakbang 5: Magtakda ng Sunday Tasks
 
-I-automate ang mga lingguhang responsibilidad para walang malaglag.
+Subaybayan ang mga one-off Sunday responsibilities upang walang mawawalan.
 
-Sundin ang mga gabay sa [Mga Gawain](../serving/tasks.md) at [Mga Automation](../serving/automations.md) para:
+Sundin ang [Tasks](../serving/tasks.md) gabay upang:
 
-1. Gumawa ng mga automation para sa mga lingguhang paulit-ulit na responsibilidad (hal., "Ihanda ang mga elemento ng komunyon", "I-print ang mga bulletin", "I-set up ang sound equipment")
-2. I-assign ang bawat automation sa responsableng tao o grupo
-3. Awtomatikong lalabas ang mga gawain sa kanilang B1 dashboard at mobile app
+1. Lumikha ng mga task para sa mga responsibilidad tulad ng "Maghanda ng mga communion elements", "I-print ang mga bulletin", o "Mag-set up ng sound equipment"
+2. Magtakda ng bawat task sa responsableng tao o grupo
+3. Ang mga task ay lumilitaw sa **Serving > My Work**, sa dashboard ng assignee, at sa mobile app
 
-:::tip
-I-set ang mga automation sa Inactive sa panahon ng mga bakasyon o espesyal na panahon, pagkatapos ay i-reactivate kapag handa na kayo. Hindi na kailangang burahin at gawing muli.
+:::info
+Ang B1 Admin ay hindi na lumilikha ng mga task sa isang paulit-ulit na schedule. Para sa mga paulit-ulit na proseso na gumagalaw ng mga tao sa pamamagit ng mga hakbang, gamitin ang [Workflows](../serving/workflows.md) na may schedule trigger.
 :::
 
-## Hakbang 6: Ipaalam sa mga Boluntaryo
+## Hakbang 6: Paganahin ang Self-Service Signup (Opsyonal)
 
-Awtomatikong nakikita ng mga na-assign na boluntaryo ang kanilang mga plano at maaaring tumugon.
+Payagan ang mga volunteer na mag-sign up para sa mga posisyon sa kanilang sarili sa halip na maghintay para sa admin assignments.
 
-1. Nakikita ng mga boluntaryo ang kanilang mga plano sa [B1.church](../../b1-church/plans/viewing-plans.md) at sa [B1 Mobile app](../../b1-mobile/serving/viewing-plans.md)
-2. Maaari nilang tanggapin o tanggihan ang mga assignment nang direkta mula sa alinmang platform
-3. Maaari silang mag-set ng mga blockout date para sa mga linggong hindi sila available
-4. Maaaring i-print ang mga plano para sa mga rehearsal o i-post sa backstage
+1. Kapag nag-edit ng plano, itakda ang isang **Signup Deadline** (mga oras bago ang serbisyo) upang kontrolin kung kailan ang self-signup ay nagsasara. Iwanan ang blangko para sa walang deadline.
+2. Opsyonal na i-toggle ang **Ipakita ang mga pangalan ng volunteer sa signup page** upang hayaang makita ng mga volunteer kung sino ang iba pang nag-sign up.
+3. Para sa bawat posisyon, suriin ang **Allow Self-Signup** checkbox upang gawin itong available para sa self-service.
+4. Magdagdag ng **Paglalarawan** sa bawat posisyon upang ang mga volunteer ay alam kung ano ang kasamahan ng papel.
+
+Kapag ang mga self-signup position ay nilikha, sila ay awtomatikong lumalitaw sa mga volunteer signup pages sa [B1.church](../../b1-church/serving/volunteer-signup) at ang [B1 Mobile app](../../b1-mobile/serving/volunteer-signup). Ang mga miyembro ay maaaring tuklasin ang mga bukas na posisyon, makita kung gaano karaming mga spots ang natitira, at mag-sign up na may isang pag-click.
 
 :::tip
-Aalertuhan ng push notification sa mobile app ang mga boluntaryo kapag nakatanggap sila ng mga bagong assignment o kapag nagbago ang mga plano.
+Ihalo ang admin-assigned at self-signup positions sa parehong plano. Halimbawa, itakda ang iyong worship leader nang direkta ngunit hayaang ang mga greeter at coffee servers ay pumili sa kanilang sarili.
+:::
+
+## Hakbang 7: Ihayag sa Mga Volunteer
+
+Ang mga nakatalagang volunteer ay awtomatikong nakikita ang kanilang mga plano at maaaring tumugon.
+
+1. Ang mga volunteer ay nakikita ang kanilang mga plano sa [B1.church](../../b1-church/plans/viewing-plans.md) at ang [B1 Mobile app](../../b1-mobile/serving/viewing-plans.md)
+2. Maaari silang tumanggap o tumanggi ng mga assignment nang direkta mula sa alinman sa platform
+3. Maaari silang magtakda ng blockout dates para sa mga linggo na sila ay hindi available
+4. Ang mga plano ay maaaring i-print para sa mga rehearsal o i-post backstage
+5. Ang mga volunteer ay maaaring tuklasin at mag-sign up para sa mga bukas na posisyon sa pamamagit ng [volunteer signup page](../../b1-church/serving/volunteer-signup)
+
+:::tip
+Ang mga push notification sa mobile app ay nag-alert sa mga volunteer kapag tumanggap sila ng mga bagong assignment o kapag nagbago ang mga plano.
 :::
 
 ## Tapos Ka Na!
 
-Na-set up na ang inyong sistema ng pamamahala ng boluntaryo. Bawat linggo, gumawa ng bagong plano, mag-assign ng mga posisyon, at makikita ng inyong koponan ang lahat sa kanilang telepono o computer. Awtomatikong hinahawakan ng mga paulit-ulit na gawain ang karaniwang gawain sa paghahanda.
+Ang iyong volunteer management system ay naka-set up. Bawat linggo, lumikha ng isang bagong plano, magtakda ng mga posisyon, at ang iyong team ay nakikita ang lahat sa kanilang telepono o computer.
 
 ## Mga Kaugnay na Artikulo
 
-- [Paggawa ng mga Grupo](../groups/creating-groups.md) — mag-set up ng mga koponan at kategorya
-- [Mga Miyembro ng Grupo](../groups/group-members.md) — magdagdag at pamahalaan ang mga miyembro ng koponan
-- [Mga Plano](../serving/plans.md) — gumawa at pamahalaan ang mga service plan
-- [Service Order](../serving/service-order.md) — buuin ang daloy ng serbisyo
-- [Mga Kanta](../serving/songs.md) — pamahalaan ang inyong worship song library
-- [Mga Gawain](../serving/tasks.md) — mag-assign ng mga action item sa mga tao o grupo
-- [Mga Automation](../serving/automations.md) — i-automate ang mga paulit-ulit na gawain
-- [Pagtingin ng mga Plano (Web)](../../b1-church/plans/viewing-plans.md) — paano nakikita ng mga boluntaryo ang mga plano online
-- [Pagtingin ng mga Plano (Mobile)](../../b1-mobile/serving/viewing-plans.md) — paano nakikita ng mga boluntaryo ang mga plano sa mobile
+- [Creating Groups](../groups/creating-groups.md) -- mag-set up ng mga team at kategorya
+- [Group Members](../groups/group-members.md) -- magdagdag at pamahalaan ang mga miyembro ng team
+- [Plans](../serving/plans.md) -- lumikha at pamahalaan ang mga service plan
+- [Service Order](../serving/service-order.md) -- bumuo ng daloy ng isang serbisyo
+- [Songs](../serving/songs.md) -- pamahalaan ang iyong worship song library
+- [Tasks](../serving/tasks.md) -- magtakda ng mga action items sa mga tao o grupo
+- [Workflows](../serving/workflows.md) -- gumagalaw ang mga tao sa pamamagit ng mga paulit-ulit na proseso na may mga trigger at automated steps
+- [Viewing Plans (Web)](../../b1-church/plans/viewing-plans.md) -- kung paano nakikita ng mga volunteer ang mga plano online
+- [Viewing Plans (Mobile)](../../b1-mobile/serving/viewing-plans.md) -- kung paano nakikita ng mga volunteer ang mga plano sa mobile
+- [Volunteer Signup (Web)](../../b1-church/serving/volunteer-signup) -- kung paano ang mga miyembro ay pumipili sa mga volunteer position
+- [Volunteer Signup (Mobile)](../../b1-mobile/serving/volunteer-signup) -- volunteer self-signup sa mobile

@@ -22,7 +22,7 @@ Roles let you control what different users can access within your ChurchApps acc
 ## Accessing Roles
 
 1. In B1 Admin, open the **section menu** in the top-left corner (the section name with the small arrow) and choose **Settings**.
-2. Click the **Roles** button in the header.
+2. Click **Roles** in the Settings navigation bar.
 3. The Roles page displays all currently defined roles for your church.
 
 ## Understanding the Roles Page

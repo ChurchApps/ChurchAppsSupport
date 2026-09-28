@@ -38,7 +38,7 @@ If your church has configured [safety limits](../../b1-admin/attendance/checkin-
 If a network printer is configured, the app automatically prints labels after check-in:
 
 - **Name labels** are printed for each person who is assigned to a group that has the **Print Nametag** setting enabled. Name labels include the person's name, their group assignment, and allergy/notes information if any is on file.
-- **Parent pickup slips** are printed when any checked-in person is in a group that has the **Parent Pickup** setting enabled. The pickup slip lists the children, their group assignments, and a unique **4-character security code**.
+- **Parent pickup slips** are printed when any checked-in person is in a group that has the **Parent Pickup** setting enabled. People checked in as a **Volunteer** are skipped, so a childcare worker serving in a Parent Pickup room does not get a pickup slip. The pickup slip lists the children, their group assignments, and a unique **4-character security code**.
 
 :::info
 The same security code appears on both the child's name label and the parent's pickup slip. At pickup time, volunteers match the codes to verify that the right adult is picking up each child.

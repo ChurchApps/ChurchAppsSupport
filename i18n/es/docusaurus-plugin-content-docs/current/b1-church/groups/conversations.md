@@ -6,75 +6,75 @@ title: "Conversaciones de Grupo"
 
 <div class="article-intro">
 
-La pestaña Conversaciones en la página de tu grupo es un espacio donde los miembros del grupo pueden publicar mensajes e interactuar entre sí. Usa las conversaciones para discutir temas, compartir actualizaciones y mantenerte conectado con tu grupo entre reuniones.
+La pestaña Mensajes en tu página de grupo es un espacio donde los miembros del grupo pueden publicar mensajes e interactuar entre sí. Usa las conversaciones para discutir temas, compartir actualizaciones y mantenerte conectado con tu grupo entre reuniones.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- Debes haber [iniciado sesión](../getting-started/logging-in.md) en tu cuenta de B1.church.
-- Debes ser miembro del grupo para acceder a la pestaña Conversaciones. Consulta [Detalles del Grupo](./group-details.md) para saber cómo unirte a un grupo.
+- Debes estar [registrado](../getting-started/logging-in.md) en tu cuenta de B1.church.
+- Debes ser miembro del grupo para acceder a la pestaña Mensajes. Consulta [Detalles del Grupo](./group-details.md) para saber cómo unirte a un grupo.
 
 </div>
 
-## Acceder a las Conversaciones
+## Accediendo a Conversaciones
 
 1. Navega a la página de detalles del grupo haciendo clic en un grupo desde la [página de grupos](./browsing-groups.md).
-2. Asegúrate de haber iniciado sesión.
-3. Haz clic en la pestaña **Conversaciones** en la barra lateral.
+2. Asegúrate de que has iniciado sesión.
+3. Haz clic en la pestaña **Mensajes** en la barra lateral.
 
 ## Discusiones y Anuncios
 
-La pestaña Conversaciones puede mostrar dos subpestañas:
+La pestaña Mensajes puede mostrar dos sub-pestañas, dependiendo de qué fuentes tu iglesia haya habilitado para este grupo:
 
-- **Discusiones** -- Un espacio donde cualquier miembro del grupo puede publicar mensajes y responder a otros. Esta es la vista predeterminada y siempre está disponible.
-- **Anuncios** -- Mensajes publicados por los líderes del grupo que son importantes para que todos los miembros los vean. Los miembros regulares pueden leer los anuncios, pero solo los líderes pueden crearlos.
+- **Discusiones** -- Un espacio donde cualquier miembro del grupo puede publicar mensajes y responder a otros.
+- **Anuncios** -- Mensajes publicados por líderes de grupo que son importantes para que todos los miembros vean. Los miembros regulares pueden leer anuncios y reaccionar a ellos, pero solo los líderes pueden publicar. Si intentas publicar como miembro regular, verás una nota de que solo los líderes pueden publicar anuncios y de que debes responder por mensaje directo en su lugar.
 
-Si no hay anuncios y no eres líder, solo verás la vista de Discusiones sin la barra de pestañas.
+Si tu iglesia ha habilitado solo una de las dos fuentes para este grupo, verás solo esa fuente sin barra de pestañas. Si ambas están desactivadas, el grupo no tiene pestaña de Mensajes en absoluto.
 
-## Publicar un Mensaje
+## Publicando un Mensaje
 
-1. Abre la pestaña **Conversaciones** en la página de tu grupo.
-2. Asegúrate de estar en la subpestaña **Discusiones** (si la barra de pestañas es visible).
+1. Abre la pestaña **Mensajes** en tu página de grupo.
+2. Asegúrate de que estás en la sub-pestaña **Discusiones** (si la barra de pestañas es visible).
 3. Escribe tu mensaje en el campo de texto.
 4. Envía tu mensaje para compartirlo con el grupo.
 
 Tu mensaje será visible para todos los miembros del grupo.
 
-## Editar o Eliminar Tus Mensajes
+## Editando o Eliminando Tus Mensajes
 
 Puedes editar o eliminar cualquier mensaje que hayas publicado:
 
-1. Pasa el cursor sobre tu mensaje (o tócalo en dispositivos móviles) para revelar el botón de **más opciones** (⋮).
-2. Haz clic en el botón para abrir el menú del mensaje.
-3. Elige **Editar** para modificar el texto del mensaje, o **Eliminar** para quitarlo.
-   - Al editar, el texto del mensaje se carga de nuevo en el campo de entrada. Realiza tus cambios y envía para guardarlos.
-   - Al eliminar, aparece un cuadro de diálogo de confirmación. Haz clic en **Confirmar** para eliminar el mensaje de forma permanente.
+1. Pasa el ratón sobre tu mensaje (o tócalo en dispositivos móviles) para revelar el botón **más opciones** (⋮).
+2. Haz clic en el botón para abrir el menú de mensajes.
+3. Elige **Editar** para modificar el texto del mensaje, o **Eliminar** para eliminarlo.
+   - Al editar, el texto del mensaje se carga de vuelta en el campo de entrada. Realiza tus cambios y envía para guardarlos.
+   - Al eliminar, aparece un diálogo de confirmación. Haz clic en **Confirmar** para eliminar permanentemente el mensaje.
 
 :::info
 Solo puedes editar o eliminar tus propios mensajes. Los mensajes publicados por otros miembros no muestran las opciones de editar/eliminar.
 :::
 
-## Reaccionar a los Mensajes
+## Reaccionando a Mensajes
 
-En el chat del grupo, puedes reaccionar a cualquier mensaje con un emoji:
+En el chat de grupo, puedes reaccionar a cualquier mensaje con un emoji:
 
-1. Toca o pasa el cursor sobre un mensaje y elige **Agregar reacción**.
-2. Elige uno de los seis emojis: 👍 ❤️ 😂 🎉 🙏 😮.
+1. Toca o pasa el ratón sobre un mensaje y elige **Agregar reacción**.
+2. Elige uno de los seis emoji: 👍 ❤️ 😂 🎉 🙏 😮.
 
-Las reacciones aparecen como pequeñas etiquetas debajo del mensaje con un contador de cuántas personas usaron cada una. Tu propia reacción se resalta — toca la etiqueta (o elige el mismo emoji nuevamente) para eliminarla, o elige un emoji diferente para agregar otro. Las reacciones aparecen en vivo para todos en el chat.
+Las reacciones aparecen como pequeños chips debajo del mensaje con un conteo de cuántas personas usaron cada uno. Tu propia reacción se resalta — toca el chip (o elige el mismo emoji de nuevo) para eliminarlo, o elige un emoji diferente para agregar otro. Las reacciones se muestran en vivo para todos en el chat.
 
 :::tip
-Las conversaciones de grupo también aparecen en tu [Línea de tiempo](../community/timeline.md), para que puedas mantenerte al día con las discusiones sin visitar cada grupo individualmente.
+Las conversaciones del grupo también aparecen en tu [Línea de Tiempo](../community/timeline.md), para que puedas estar al tanto de las discusiones sin visitar cada grupo individualmente.
 :::
 
-## Funciones de Líder
+## Características del Líder
 
-Si eres líder de un grupo, tienes capacidades adicionales en la pestaña Conversaciones:
+Si eres líder de grupo, tienes capacidades adicionales en la pestaña Mensajes:
 
-- **Publicar anuncios** -- Cambia a la subpestaña **Anuncios** y publica mensajes que todos los miembros del grupo puedan leer.
-- **Publicar discusiones** -- También puedes participar en discusiones normales al igual que cualquier otro miembro.
+- **Publicar anuncios** -- Cambia a la sub-pestaña **Anuncios** y publica mensajes que todos los miembros del grupo pueden leer.
+- **Publicar discusiones** -- También puedes participar en discusiones regulares como cualquier otro miembro.
 
 :::info
 Las conversaciones son específicas de cada grupo. Los mensajes que publiques en un grupo no aparecerán en las conversaciones de otro grupo.

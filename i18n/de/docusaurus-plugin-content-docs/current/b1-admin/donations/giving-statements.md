@@ -1,56 +1,62 @@
 ---
-title: "Spendendaten-Statements"
+title: "Spendendbestätigungen"
 ---
 
-# Spendendaten-Statements
+# Spendendbestätigungen
 
 <div class="article-intro">
 
-Am Ende jedes Jahres benötigen Ihre Spender eine Zusammenfassung ihrer steuerlich absetzbaren Spenden für ihre Unterlagen. B1 Admin macht es einfach, diese Statements für alle Spender auf einmal zu generieren und spart Ihnen Stunden manueller Arbeit.
+Am Ende jedes Jahres brauchen deine Spender eine Zusammenfassung ihrer steuerabzugsfähigen Spenden für ihre Aufzeichnungen. B1 Admin macht es dir leicht, diese Bestätigungen für alle Spender auf einmal zu generieren und spart dir Stunden manueller Arbeit.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du beginnst</h4>
 
-- Überprüfen Sie, dass Ihre [Fonds](funds.md) ordnungsgemäß als **Steuerlich absetzbar** gekennzeichnet sind – nur Spenden an steuerlich absetzbaren Fonds werden auf Statements angezeigt
-- Stellen Sie sicher, dass alle Spenden [erfasst](recording-donations.md) wurden und dass Online-Transaktionen [von Stripe importiert](stripe-import.md) wurden
+- Überprüfe, dass deine [Fonds](funds.md) korrekt als **Steuerabzugsfähig** markiert sind -- nur Spenden zu steuerabzugsfähigen Fonds erscheinen auf Bestätigungen
+- Stelle sicher, dass alle Spenden [aufgezeichnet](recording-donations.md) wurden und alle Online-Transaktionen [aus Stripe importiert](stripe-import.md) wurden
 
 </div>
 
-## Zugriff auf Spendendaten-Statements
+## Zugriff auf Spendendbestätigungen
 
-1. Öffnen Sie in **B1 Admin** das **Abschnittsmenü** in der oberen linken Ecke und wählen Sie **Spenden**.
-2. Klicken Sie auf **Statements**.
+1. In **B1 Admin** öffne das **Menü „Bereich"** in der oberen linken Ecke und wähle **Spenden**.
+2. Klicke auf **Bestätigungen**.
 
-## Generieren von Statements
+## Generierung von Bestätigungen
 
-1. Wählen Sie das **Jahr** aus der Dropdown-Liste oben auf der Seite. Sie können das aktuelle Jahr oder eines der fünf vorherigen Jahre auswählen.
-2. Die Seite zeigt Zusammenfassungsstatistiken für dieses Jahr an, einschließlich:
-   - **Gesamtspender** – die Anzahl der Personen, die gegeben haben
-   - **Gesamtspenden** – die Anzahl der einzelnen Spendendatensätze
-   - **Gesamtbetrag** – der kombinierte Dollarbetrag aller Spenden
+1. Wähle das **Jahr** aus der Dropdown-Liste oben auf der Seite. Du kannst das aktuelle Jahr oder eines der fünf vorherigen Jahre wählen.
+2. Die Seite zeigt Zusammenfassungsstatistiken für dieses Jahr, einschließlich:
+   - **Gesamtspender** -- die Anzahl der Personen, die spendeten
+   - **Gesamtspenden** -- die Anzahl der einzelnen Spendendatensätze
+   - **Gesamtbetrag** -- der kombinierte Dollarbetrag aller Spenden
 
-## Herunterladen von Statements
+## Bestätigungen herunterladen
 
-Sie haben zwei Optionen, um Statements an Ihre Spender zu übermitteln:
+Du hast zwei Optionen, um Bestätigungen zu deinen Spendern zu bringen:
 
-### Als CSV-Dateien herunterladen
+### Download als CSV-Dateien
 
-Klicken Sie auf **ZIP herunterladen**, um eine ZIP-Datei mit einer einzelnen CSV-Datei für jeden Spender herunterzuladen. Dies ist nützlich, wenn Sie Statements einzeln per E-Mail versenden oder in ein anderes System importieren möchten.
+Klicke auf **ZIP herunterladen**, um eine ZIP-Datei mit einer einzelnen CSV-Datei für jeden Spender herunterzuladen. Dies ist nützlich, wenn du Bestätigungen einzeln per E-Mail versenden oder in ein anderes System importieren möchtest.
 
-### Alle Statements drucken
+### Alle Bestätigungen drucken
 
-Klicken Sie auf **Alle drucken**, um eine druckbare Ansicht aller Spender-Statements in Ihrem Browser zu öffnen. Verwenden Sie anschließend die Druckfunktion Ihres Browsers, um sie an einen Drucker zu senden. Jedes Statement beginnt auf einer neuen Seite, damit sie bereit sind, zu falten und zu versenden.
+Klicke auf **Alle drucken**, um eine druckbare Ansicht der Bestätigung jedes Spenders in deinem Browser zu öffnen. Verwende dann die Druckfunktion deines Browsers, um sie an einen Drucker zu senden. Jede Bestätigung beginnt auf einer neuen Seite, so dass sie bereit zum Falten und Verschicken sind.
 
 :::tip
-Führen Sie Ihre Statements Anfang Januar durch, während Ihre Unterlagen noch aktuell sind. Überprüfen Sie doppelt, dass Ihre Fonds ordnungsgemäß als steuerlich absetzbar gekennzeichnet sind, bevor Sie Statements generieren – nur Spenden an steuerlich absetzbaren Fonds sind enthalten.
+Führe deine Bestätigungen früh im Januar aus, während deine Aufzeichnungen noch frisch sind. Überprüfe nochmals, dass deine Fonds korrekt als steuerabzugsfähig markiert sind, bevor du Bestätigungen generierst -- nur Spenden zu steuerabzugsfähigen Fonds sind enthalten.
 :::
 
 :::info
-Spendendaten-Statements enthalten nur Spenden, die Fonds zugeordnet sind, für die die Einstellung **Steuerlich absetzbar** aktiviert ist. Wenn ein Fonds nicht als steuerlich absetzbar markiert ist, werden seine Spenden nicht auf dem Statement angezeigt. Sie können diese Einstellung auf der Seite [Fonds](funds.md) verwalten.
+Spendendbestätigungen enthalten nur Spenden, die Fonds zugeordnet sind, für die die Einstellung **Steuerabzugsfähig** aktiviert ist. Wenn ein Fonds nicht als steuerabzugsfähig markiert ist, werden seine Spenden nicht auf der Bestätigung angezeigt. Du kannst diese Einstellung auf der Seite [Fonds](funds.md) verwalten.
 :::
+
+## Belegformate für Kanada, Australien und Neuseeland
+
+Kirchen außerhalb der Vereinigten Staaten können die Bestätigung in das offizielle Beleglayout ihres Landes wechseln. Gehe zu **Einstellungen**, öffne den Abschnitt **Spenden** und stelle **Bestätigungsformat** auf **Kanada**, **Australien** oder **Neuseeland** ein, dann fülle die angezeigten Felder aus: deine Registrierungsnummer (CRA-Registrierungsnummer, ABN oder neuseeländische Wohltätigkeitsregistrierungsnummer), die Adresse deiner Organisation, den Namen der Person, die zum Signieren von Belegen berechtigt ist, und für Kanada die Stadt, in der Belege ausgestellt werden.
+
+Bestätigungen tragen dann den Wortlaut, den deine Steuerbehörde erwartet (für Kanada „Official Receipt for Income Tax Purposes" mit CRA-Verweis), eine Belegunummer in Form `YEAR-DONORID`, den zulässigen Betrag, der nur von steuerabzugsfähigen Fonds gezählt wird, und eine separate Zeile für alle Geschenke an nicht steuerabzugsfähige Fonds. Spender sehen denselben Belegblock, wenn sie ihre eigene Bestätigung aus B1.church drucken.
 
 ## Nächste Schritte
 
-Wenn Sie Spendendetails überprüfen müssen, bevor Sie Statements generieren, besuchen Sie die Seite [Spenderberichte](donation-reports.md) oder überprüfen Sie einzelne [Batches](batches.md).
+Wenn du Spendenddetails überprüfen musst, bevor du Bestätigungen generierst, besuche die Seite [Spendendberichte](donation-reports.md) oder überprüfe einzelne [Chargen](batches.md).

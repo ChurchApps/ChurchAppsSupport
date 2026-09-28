@@ -1,154 +1,153 @@
 ---
-title: "Vista insegnante per lezioni"
+title: "Visualizzazione Insegnante per le Lezioni"
 ---
 
-# Vista insegnante per lezioni
+# Visualizzazione Insegnante per le Lezioni
 
 <div class="article-intro">
-La Vista insegnante fornisce un'interfaccia espansa a schermo intero per visualizzare contenuti di lezioni con sezioni strutturate, rendendo più facile per insegnanti e leader navigare attraverso materiali di lezione durante il tempo di lezione.
+La Visualizzazione Insegnante fornisce un'interfaccia espansa a schermo intero per visualizzare i contenuti delle lezioni con sezioni strutturate, rendendo più facile per gli insegnanti e i leader navigare attraverso i materiali delle lezioni durante il tempo di lezione.
 </div>
 
 <div class="prereqs">
-<h4>Prima di iniziare</h4>
+<h4>Prima di Iniziare</h4>
 
-- La tua chiesa deve avere lezioni programmate in un piano. Vedi la guida di B1 Admin su [Programmazione delle lezioni](../../b1-admin/serving/scheduling-lessons.md) per i dettagli.
+- La tua chiesa deve avere lezioni programmate in un piano. Vedi la guida di B1 Admin su [Programmazione delle Lezioni](../../b1-admin/serving/scheduling-lessons.md) per i dettagli.
 - Devi essere assegnato al piano o avere accesso per visualizzarlo sul tuo sito B1.church.
 </div>
 
-## Apertura della Vista insegnante
+## Apertura della Visualizzazione Insegnante
 
-Per accedere alla vista insegnante espansa per una lezione:
+Per accedere alla visualizzazione insegnante espansa per una lezione:
 
-1. Naviga nella sezione **Piani** su B1.church
-2. Apri il piano che contiene la lezione che vuoi insegnare
-3. Trova la lezione negli elementi del piano
-4. Clicca sulla lezione per visualizzare i suoi dettagli
-5. Clicca sul pulsante **Vista insegnante** o **Vista espansa**
+1. Accedi alla sezione **Piani** su B1.church
+2. Apri il piano che contiene la lezione che desideri insegnare
+3. Apri la scheda **Ordine del Servizio**
+4. Fai clic sul pulsante **Insegna**
 
 La lezione si aprirà in un'interfaccia a schermo intero ottimizzata per l'insegnamento.
 
 :::tip
-La Vista insegnante è particolarmente utile quando si proietta contenuto di lezione su uno schermo o TV per far vedere alla classe, o quando si insegna da un tablet.
+La Visualizzazione Insegnante è particolarmente utile quando si proietta il contenuto della lezione su uno schermo o una TV affinché la classe possa vederlo, o quando si insegna da un tablet.
 :::
 
-## Funzionalità della Vista insegnante
+## Caratteristiche della Visualizzazione Insegnante
 
-### Navigazione a schede
+### Navigazione a Schede
 
-La vista insegnante organizza il contenuto della lezione in sezioni utilizzando schede nella parte superiore:
+La visualizzazione insegnante organizza i contenuti delle lezioni in sezioni utilizzando schede nella parte superiore:
 
 - Ogni sezione principale della lezione appare come una scheda separata
-- Clicca su qualsiasi scheda per passare direttamente a quella sezione
+- Fai clic su qualsiasi scheda per passare direttamente a quella sezione
 - La sezione attiva è evidenziata nella barra delle schede
-- Le schede rendono facile spostarsi tra diverse parti della lezione
+- Le schede facilitano il passaggio a diverse parti della lezione
 
-### Contenuto scorrevole
+### Contenuto Scorrevole
 
-L'area del contenuto principale mostra i materiali completi della lezione:
+L'area di contenuto principale visualizza tutti i materiali delle lezioni:
 
-- Scorri attraverso la lezione naturalmente
+- Scorri naturalmente attraverso la lezione
 - Mentre scorri, la scheda attiva si aggiorna automaticamente per corrispondere alla sezione che stai visualizzando
 - Tutto il testo formattato, le immagini e le istruzioni sono visualizzati chiaramente
 
-### Riproduzione multimediale
+### Riproduzione Multimediale
 
 Quando le lezioni includono video, immagini o altri media:
 
-- Clicca su qualsiasi elemento multimediale per aprirlo in un lettore popup
+- Fai clic su qualsiasi elemento multimediale per aprirlo in un lettore popup
 - I video vengono riprodotti in un lettore video dedicato con controlli standard
 - Le immagini si aprono in una lightbox per la visualizzazione a schermo intero
 - Chiudi il lettore multimediale per tornare al contenuto della lezione
 
-### Risorse scaricabili
+### Risorse Scaricabili
 
 Se la lezione include file scaricabili (schede di attività, pagine da colorare, ecc.):
 
 - Appaiono pulsanti di download per ogni risorsa
-- Clicca per scaricare i file direttamente sul tuo dispositivo
+- Fai clic per scaricare i file direttamente sul tuo dispositivo
 - I file possono includere PDF, immagini o altri materiali forniti dal creatore del contenuto
 
-## Utilizzo della Vista insegnante in classe
+## Utilizzo della Visualizzazione Insegnante in Aula
 
-### Prima della lezione
+### Prima della Lezione
 
-1. Apri la lezione in Vista insegnante prima dell'inizio della lezione
+1. Apri la lezione nella Visualizzazione Insegnante prima che la lezione inizi
 2. Rivedi tutte le sezioni e familiarizza con il contenuto
-3. Scarica eventuali risorse stampabili di cui hai bisogno
-4. Testa eventuali video o media per assicurarti che vengano riprodotti correttamente
+3. Scarica qualsiasi risorsa stampabile di cui hai bisogno
+4. Prova qualsiasi video o media per assicurarti che si riproduca correttamente
 
-### Durante la lezione
+### Durante la Lezione
 
-1. Mantieni aperta la Vista insegnante sul tuo dispositivo o proiettala su uno schermo
-2. Usa le schede per passare tra le sezioni mentre procedi attraverso la lezione
-3. Riproduci video o mostra immagini nei momenti appropriati
-4. Scorri attraverso le istruzioni secondo necessità senza perdere il segno
+1. Mantieni la Visualizzazione Insegnante aperta sul tuo dispositivo o proiettala su uno schermo
+2. Usa le schede per passare tra le sezioni mentre avanzi nella lezione
+3. Riproduci video o mostra immagini al momento opportuno
+4. Scorri le istruzioni secondo necessità senza perdere il tuo posto
 
-### Su uno schermo proiettato
+### Su uno Schermo Proiettato
 
 Quando proietti per la classe:
 
 - Il layout a schermo intero rimuove le distrazioni
-- Testo grande e leggibile rende il contenuto visibile da tutta la stanza
-- Clicca sugli elementi multimediali per mostrare video o immagini a tutta la classe
-- Naviga usando un mouse wireless o un trackpad
+- Il testo grande e leggibile rende il contenuto visibile da tutta la stanza
+- Fai clic su elementi multimediali per mostrare video o immagini all'intera classe
+- Naviga utilizzando un mouse wireless o un trackpad
 
-## Chiusura della Vista insegnante
+## Chiusura della Visualizzazione Insegnante
 
-Per uscire dalla vista insegnante:
+Per uscire dalla visualizzazione insegnante:
 
-- Clicca sul pulsante **Chiudi** (X) nell'angolo in alto
+- Fai clic sul pulsante **Chiudi** (X) nell'angolo in alto
 - Oppure premi il tasto **Esc** sulla tastiera
-- Tornerai alla vista dei dettagli del piano
+- Tornerai alla visualizzazione dei dettagli del piano
 
-## Utilizzo su mobile e tablet
+## Utilizzo su Dispositivi Mobili e Tablet
 
-La Vista insegnante funziona su tablet e dispositivi mobili:
+La Visualizzazione Insegnante funziona su tablet e dispositivi mobili:
 
-- **Tablet** -- Perfetto per insegnanti che vogliono una guida per lezioni portatile
-- **Telefoni** -- Anche supportato, anche se lo schermo più piccolo può essere meno ideale per l'insegnamento
-- **Modalità orizzontale** -- Fornisce la migliore esperienza di visualizzazione sui dispositivi mobili
+- **Tablet** - Perfetto per gli insegnanti che desiderano una guida alle lezioni portatile
+- **Telefoni** - Anche supportati, sebbene lo schermo più piccolo potrebbe essere meno ideale per l'insegnamento
+- **Modalità orizzontale** - Fornisce la migliore esperienza di visualizzazione su dispositivi mobili
 
-## Differenze dalla vista lezione normale
+## Differenze dalla Visualizzazione Regolare delle Lezioni
 
-| Funzionalità | Vista normale | Vista insegnante |
+| Caratteristica | Visualizzazione Regolare | Visualizzazione Insegnante |
 |---------|--------------|--------------|
-| **Layout** | Compatto, in linea con il piano | Schermo intero, vista dedicata |
+| **Layout** | Compatto, in linea con il piano | Visualizzazione dedicata a schermo intero |
 | **Navigazione** | Solo scorrimento | Schede + scorrimento con evidenziazione automatica |
-| **Media** | Incorporato nella pagina | Lettore popup per visualizzazione focalizzata |
-| **Spazio schermo** | Mostra altri elementi del piano | Massimizzato per contenuto lezione |
-| **Migliore per** | Navigazione e pianificazione | Insegnamento e presentazione |
+| **Media** | Incorporato nella pagina | Lettore popup per la visualizzazione mirata |
+| **Spazio dello schermo** | Mostra altri elementi del piano | Massimizzato per il contenuto della lezione |
+| **Migliore per** | Esplorazione e pianificazione | Insegnamento e presentazione |
 
-## Migliori pratiche
+## Migliori Pratiche
 
-- **Prepara in anticipo** -- Rivedi le lezioni in Vista insegnante prima della lezione per familiarizzare con il layout
-- **Segna le sezioni** -- Nota quali schede contengono attività o discussioni chiave
-- **Testa i media** -- Assicurati che video e immagini si carichino correttamente prima del tempo di lezione
-- **Scarica le risorse in anticipo** -- Non aspettare il tempo di lezione per scaricare stampabili
+- **Preparati in anticipo** -- Rivedi le lezioni nella Visualizzazione Insegnante prima della classe per familiarizzare con il layout
+- **Segnalibri delle sezioni** -- Annota quali schede contengono attività chiave o discussioni
+- **Prova i media** -- Assicurati che i video e le immagini si carichino correttamente prima dell'ora di lezione
+- **Scarica le risorse anticipatamente** -- Non aspettare fino all'ora di lezione per scaricare i materiali stampabili
 - **Usa uno schermo più grande** -- Proietta o usa un tablet per la migliore esperienza di insegnamento
 
-## Risoluzione dei problemi
+## Risoluzione dei Problemi
 
-### La lezione non si apre in Vista insegnante
+### La lezione non si apre nella Visualizzazione Insegnante
 
-- Assicurati che la lezione sia stata programmata correttamente nel piano
-- Verifica di avere il permesso per visualizzare il piano
+- Assicurati che la lezione sia stata correttamente programmata nel piano
+- Controlla di avere il permesso di visualizzare il piano
 - Aggiorna la pagina e riprova
 
-### I video non vengono riprodotti
+### I video non si riproducono
 
-- Verifica la tua connessione Internet
+- Controlla la tua connessione a Internet
 - Assicurati che il tuo dispositivo consenta la riproduzione multimediale
 - Prova ad aprire il video in una scheda separata
-- Alcuni fornitori di contenuti potrebbero avere restrizioni sulla riproduzione video
+- Alcuni provider di contenuti potrebbero avere restrizioni sulla riproduzione video
 
-### Il contenuto appare tagliato su mobile
+### Il contenuto appare tagliato su dispositivi mobili
 
 - Ruota il tuo dispositivo in modalità orizzontale
-- Riduci leggermente lo zoom se necessario
-- Considera di usare un tablet o un dispositivo più grande per una migliore visibilità
+- Rimpicciolisci leggermente se necessario
+- Considera di utilizzare un tablet o un dispositivo più grande per una migliore visibilità
 
-## Articoli correlati
+## Articoli Correlati
 
-- [Visualizzazione di piani](../plans/viewing-plans.md) -- Accedi ai tuoi piani assegnati
-- [Lezioni](./lessons.md) -- Sfoglia e visualizza contenuti di lezioni
-- [Programmazione delle lezioni](../../b1-admin/serving/scheduling-lessons.md) -- Guida amministratore per programmare lezioni nei piani
+- [Visualizzazione Piani](../plans/viewing-plans.md) -- Accedi ai tuoi piani assegnati
+- [Lezioni](./lessons.md) -- Sfoglia e visualizza il contenuto delle lezioni
+- [Programmazione delle Lezioni](../../b1-admin/serving/scheduling-lessons.md) -- Guida admin per la programmazione delle lezioni nei piani

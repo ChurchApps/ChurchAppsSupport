@@ -1,19 +1,19 @@
 ---
-title: "Visualizzazione Piani"
+title: "Visualizzazione dei Piani"
 ---
 
-# Visualizzazione Piani
+# Visualizzazione dei Piani
 
 <div class="article-intro">
 
-La pagina Piani ti dà una visione chiara di tutti i piani di servizio a cui sei assegnato. Usa un layout master-dettagli in modo da poter sfogliare rapidamente i tuoi piani e tuffarti nei dettagli di qualsiasi uno.
+La pagina Piani ti dà una visualizzazione chiara di tutti i piani di servizio a cui sei assegnato. Utilizza un layout master-detail in modo da poter sfogliare rapidamente i tuoi piani e approfondire i dettagli di uno qualsiasi.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Devi essere [acceduto](../getting-started/logging-in.md) al tuo account B1.church.
+- Devi essere [registrato](../getting-started/logging-in.md) al tuo account B1.church.
 - Devi essere assegnato ad almeno un piano di servizio. Se non vedi alcun piano, contatta l'amministratore della tua chiesa o il leader del ministero.
 
 </div>
@@ -21,50 +21,48 @@ La pagina Piani ti dà una visione chiara di tutti i piani di servizio a cui sei
 ## Accesso ai Tuoi Piani
 
 1. Fai clic su **Piani** nella [navigazione della barra laterale](../getting-started/navigating.md).
-2. Vedrai un elenco dei tuoi piani nel lato sinistro della pagina.
+2. Vedrai un elenco dei piani su cui sei programmato.
 
 ## L'Elenco dei Piani
 
-I tuoi piani sono elencati nel pannello sinistro sotto **I Miei Piani**. Ogni voce mostra:
+I tuoi piani sono divisi in due schede: **Imminenti** e **Passati**. Ogni voce mostra:
 
-- Il **nome del piano** (ad esempio, "Culto Domenicale" o "Ministero Bambini")
-- La **data di servizio**
+- Il **nome del piano** (ad esempio, "Culto della Domenica" o "Ministero dei Bambini")
+- La **data del servizio**
 - La tua **posizione** (il ruolo che stai ricoprendo)
-- Il tuo **stato** -- codificato a colori in modo da poter vedere a colpo d'occhio se hai accettato, rifiutato, o non hai ancora risposto
+- Il tuo **stato** - codificato a colori in modo da poter vedere a colpo d'occhio se hai accettato, rifiutato o non hai ancora risposto
 
-In cima all'elenco, vedrai anche un'opzione **Date di Blocco**. Fai clic su di essa per gestire le date quando non sei disponibile per il servizio. Puoi aggiungere, modificare e rimuovere intervalli di date di blocco in modo che i tuoi leader di team sappiano quando programmare attorno a te.
+Sotto l'elenco c'è una sezione **Date di Blocco**. Usala per gestire le date quando non sei disponibile per il servizio. Puoi aggiungere, modificare e rimuovere intervalli di date di blocco in modo che i leader del tuo team sappiano quando programmare intorno a te.
 
 :::info
-La tua chiesa potrebbe inviare **promemoria** prima dei servizi per cui sei programmato, via email e come notifica dell'app. Se non hai ancora risposto, puoi **Accettare** o **Rifiutare** direttamente dall'email di promemoria -- nessun login necessario.
+La tua chiesa può inviare **promemoria** prima dei servizi a cui sei programmato, via email e come notifica dell'app. Se non hai ancora risposto, puoi **Accettare** o **Rifiutare** direttamente dal promemoria email - nessun accesso necessario.
 :::
 
 ## Visualizzazione dei Dettagli del Piano
 
-Fai clic su qualsiasi piano nell'elenco per aprire i suoi dettagli nel pannello a destra. La visualizzazione dei dettagli include:
+Fai clic su qualsiasi piano nell'elenco per aprirlo. La pagina del piano ha tre schede:
 
-- **Dettagli della posizione** -- La tua posizione assegnata con gli orari necessari e il tuo stato attuale. Se non hai ancora risposto, puoi fare clic su **Accetta** o **Rifiuta** direttamente da questa visualizzazione.
-- **Note** -- Eventuali note aggiunte dal creatore del piano per il team.
-- **Ordine di Servizio** -- L'ordine di servizio completo con tempi, articoli e descrizioni. Vedi [Ordine di Servizio](./service-order.md) per ulteriori dettagli.
-- **Assegnazioni del team** -- Un riassunto di tutti i membri del team e delle loro posizioni, in modo da poter vedere chi altro sta servendo accanto a te.
+- **Panoramica** - La tua posizione assegnata con gli orari necessari e il tuo stato attuale, più qualsiasi nota che il creatore del piano ha aggiunto per il team. Se non hai ancora risposto, puoi fare clic su **Accetta** o **Rifiuta** direttamente da questa visualizzazione.
+- **Ordine del Servizio** - L'ordine del servizio completo con tempi, elementi e descrizioni. Vedi [Ordine del Servizio](./service-order.md) per più dettagli.
+- **Team di Servizio** - Tutti i membri del team e le loro posizioni, in modo che tu possa vedere chi altro sta servendo accanto a te.
 
 :::tip
-Se hai più assegnazioni in diversi piani, l'elenco è ordinato per data in modo che i tuoi impegni imminenti appaiano per primi. Controlla regolarmente per rimanere al passo con il tuo programma.
+Se hai più incarichi tra piani diversi, l'elenco è ordinato per data in modo che i tuoi impegni imminenti appaiano per primo. Torna regolarmente per stare al corrente del tuo programma.
 :::
 
-## Visualizzazione Insegnante per Lezioni
+## Visualizzazione Insegnante per le Lezioni
 
-Se il tuo piano include curriculum associato da un fornitore di contenuti (come Lessons.church), vedrai un pulsante di commutazione nella scheda **Ordine di Servizio** che ti permette di passare tra le visualizzazioni **Riepilogo** e **Insegna**.
+Se il tuo piano include curriculum associato da un provider di contenuti (come Lessons.church), la scheda **Ordine del Servizio** mostra le sezioni della lezione per una revisione rapida, insieme a un pulsante **Insegna**.
 
-- **Visualizzazione Riepilogo** -- Mostra l'ordine di servizio con tempi e sezioni di lezione di base, ideale per una revisione veloce di cosa accadrà quando
-- **Visualizzazione Insegna** -- Apre una presentazione di lezione immersiva, a schermo intero progettata per gli insegnanti, con istruzioni formattate, media incorporati, note e guida passo dopo passo
+Fai clic su **Insegna** per aprire una presentazione di lezione immersiva a schermo intero progettata per gli insegnanti, con istruzioni formattate, media incorporati, note e guida passo dopo passo. Chiudila per tornare all'ordine del servizio.
 
-La visualizzazione Insegna organizza il contenuto della lezione in sezioni navigabili visualizzate come schede in cima. Puoi:
+La visualizzazione Insegna organizza i contenuti della lezione in sezioni navigabili visualizzate come schede nella parte superiore. Puoi:
 
-- Toccare una scheda di sezione per saltare direttamente a quella parte della lezione
-- Scorrere il contenuto della lezione e la scheda attiva si aggiornerà automaticamente per corrispondere alla tua posizione
-- Fare clic su elementi multimediali (video, immagini, attività) per visualizzarli in una finestra di dialogo modale; i link audio (registrazioni di canzoni, clip di sermoni) si riproducono inline con un lettore audio integrato
-- Vedi i tipi di azione formattati distintamente: **Dì** appare in bolle di conversazione, **Fai** in testo in grassetto, e **Nota** in callout evidenziati
+- Tocca una scheda di sezione per passare direttamente a quella parte della lezione
+- Scorri il contenuto della lezione e la scheda attiva si aggiorna automaticamente per corrispondere alla tua posizione
+- Fai clic su elementi multimediali (video, immagini, attività) per visualizzarli in una finestra di dialogo modale; i link audio (registrazioni di canzoni, clip di sermoni) si riproducono in linea con un lettore audio integrato
+- Vedi i tipi di azione formattati distintivamente: **Dì** appare in bolle di conversazione, **Fai** in testo in grassetto e **Nota** in callout evidenziati
 
 :::tip
-La visualizzazione Insegna è particolarmente utile quando si guida una classe o un piccolo gruppo, poiché presenta tutto il contenuto della lezione in un formato pulito, senza distrazioni, ottimizzato per uso su dispositivi mobili e tablet.
+La visualizzazione Insegna è particolarmente utile quando guidi una classe o un piccolo gruppo, in quanto presenta tutto il contenuto della tua lezione in un formato pulito e senza distrazioni ottimizzato per l'uso mobile e tablet.
 :::

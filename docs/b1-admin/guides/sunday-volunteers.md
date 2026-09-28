@@ -6,7 +6,7 @@ title: "Guide: Manage Sunday Volunteers"
 
 <div class="article-intro">
 
-Set up your volunteer teams, create weekly service plans, assign positions, build service orders with worship songs, and automate recurring tasks. By the end, your volunteers will see their assignments on the B1 website and mobile app, and can accept or decline directly.
+Set up your volunteer teams, create weekly service plans, assign positions, build service orders with worship songs, and assign Sunday tasks. By the end, your volunteers will see their assignments on the B1 website and mobile app, and can accept or decline directly.
 
 </div>
 
@@ -71,18 +71,18 @@ Follow the [Service Order](../serving/service-order.md) guide to:
 Service orders are plan-specific. Changes here don't affect other plans or the master song library.
 :::
 
-## Step 5: Set Up Recurring Tasks
+## Step 5: Assign Sunday Tasks
 
-Automate weekly responsibilities so nothing falls through the cracks.
+Track one-off Sunday responsibilities so nothing falls through the cracks.
 
-Follow the [Tasks](../serving/tasks.md) and [Automations](../serving/automations.md) guides to:
+Follow the [Tasks](../serving/tasks.md) guide to:
 
-1. Create automations for weekly recurring responsibilities (e.g., "Prepare communion elements", "Print bulletins", "Set up sound equipment")
-2. Assign each automation to the responsible person or group
-3. Tasks appear on their B1 dashboard and mobile app automatically
+1. Create tasks for responsibilities like "Prepare communion elements", "Print bulletins", or "Set up sound equipment"
+2. Assign each task to the responsible person or group
+3. Tasks appear under **Serving > My Work**, on the assignee's dashboard, and in the mobile app
 
-:::tip
-Set automations to Inactive during holiday breaks or special seasons, then reactivate when you're ready. No need to delete and recreate.
+:::info
+B1 Admin no longer creates tasks on a repeating schedule. For repeating processes that move people through steps, use [Workflows](../serving/workflows.md) with a schedule trigger.
 :::
 
 ## Step 6: Enable Self-Service Signup (Optional)
@@ -116,7 +116,7 @@ Push notifications on the mobile app alert volunteers when they receive new assi
 
 ## You're Done!
 
-Your volunteer management system is set up. Each week, create a new plan, assign positions, and your team sees everything on their phone or computer. Recurring tasks handle the routine prep work automatically.
+Your volunteer management system is set up. Each week, create a new plan, assign positions, and your team sees everything on their phone or computer.
 
 ## Related Articles
 
@@ -126,7 +126,7 @@ Your volunteer management system is set up. Each week, create a new plan, assign
 - [Service Order](../serving/service-order.md) — build the flow of a service
 - [Songs](../serving/songs.md) — manage your worship song library
 - [Tasks](../serving/tasks.md) — assign action items to people or groups
-- [Automations](../serving/automations.md) — automate recurring tasks
+- [Workflows](../serving/workflows.md) — move people through repeatable processes with triggers and automated steps
 - [Viewing Plans (Web)](../../b1-church/plans/viewing-plans.md) — how volunteers see plans online
 - [Viewing Plans (Mobile)](../../b1-mobile/serving/viewing-plans.md) — how volunteers see plans on mobile
 - [Volunteer Signup (Web)](../../b1-church/serving/volunteer-signup) — how members self-select volunteer positions

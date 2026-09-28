@@ -2,174 +2,182 @@
 title: "डेटा आयात करना"
 ---
 
-# Importing Data
+# डेटा आयात करना
 
 <div class="article-intro">
 
-The B1 Transfer tool makes it easy to bring your existing data into B1, whether you are starting fresh from a spreadsheet, migrating from another church management platform, or importing giving records. It can also be used to export or back up your data at any time.
+B1 Transfer उपकरण आपके मौजूदा डेटा को B1 में लाना आसान बनाता है, चाहे आप स्प्रेडशीट से शुरुआत कर रहे हों, किसी अन्य चर्च प्रबंधन प्लेटफॉर्म से माइग्रेट कर रहे हों, या दान रिकॉर्ड आयात कर रहे हों। इसका उपयोग किसी भी समय आपके डेटा को निर्यात या बैकअप करने के लिए भी किया जा सकता है।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- You need an active B1 Admin account with access to **Settings**.
-- Have your data exported and ready from your previous system before starting.
-- This tool is intended for initial data migration. If you have already been using B1 for a while, importing again may create duplicate records.
+- आपको **सेटिंग्स** तक पहुँच के साथ एक सक्रिय B1 Admin खाते की आवश्यकता है।
+- शुरुआत करने से पहले अपने पिछले सिस्टम से निर्यात किए गए और तैयार डेटा रखें।
+- यह उपकरण प्रारंभिक डेटा माइग्रेशन के लिए है। यदि आप पहले से B1 का उपयोग कर रहे हैं, तो फिर से आयात करने से डुप्लिकेट रिकॉर्ड बन सकते हैं।
 
 </div>
 
-## Accessing the Transfer Tool
+## Transfer Tool तक पहुँचना
 
-1. Log in to **B1 Admin**.
-2. Open the **section menu** in the top-left corner (the section name with the small arrow) and choose **Settings**.
-3. Click the **Import/Export** button in the top right of the page header.
-4. This will open the **B1 Transfer** tool in a new tab at [transfer.b1.church](https://transfer.b1.church).
+1. **B1 Admin** में लॉग इन करें।
+2. ऊपरी-बाएँ कोने में **अनुभाग मेनू** खोलें (अनुभाग का नाम छोटे तीर के साथ) और **सेटिंग्स** चुनें।
+3. पृष्ठ हेडर के ऊपरी दाएँ में **आयात/निर्यात** बटन पर क्लिक करें।
+4. यह [transfer.b1.church](https://transfer.b1.church) पर एक नए टैब में **B1 Transfer** उपकरण खोलेगा।
 
-The transfer tool walks you through four steps: Source, Preview, Destination, and Run.
-
----
-
-## Step 1 - Choose Your Source
-
-Select where your data is coming from. There are seven options:
-
-- **B1 Database** — Pulls data directly from your existing B1 church. Useful for making a backup or converting your data to another format. You must be logged in to use this option.
-- **B1 Import Zip** — A zip file in B1's own format. This is primarily used to restore a previous B1 export.
-- **Breeze Import Zip** — A zip file containing exported files from Breeze ChMS.
-- **Planning Center Zip** — A zip or CSV file exported from Planning Center.
-- **Custom CSV / Excel** — Any CSV or Excel file containing people data. After uploading, you will map your columns to B1 fields before the import proceeds.
-- **Tithe.ly CSV** — A people or giving export file from Tithe.ly (CSV or Excel format accepted).
-- **CCB / Pushpay CSV** — A people or giving export CSV from Church Community Builder or Pushpay.
-
-You can drag and drop your file onto the upload area, or click to browse for it.
+Transfer उपकरण आपको चार चरणों के माध्यम से चलाता है: स्रोत, पूर्वावलोकन, गंतव्य, और चलाएँ।
 
 ---
 
-## Step 1b - Map Your Fields (Custom CSV / Excel only)
+## चरण 1 - अपना स्रोत चुनें
 
-If you selected **Custom CSV / Excel**, after uploading your file the tool will show a field mapping screen before moving to the preview.
+चुनें कि आपका डेटा कहाँ से आ रहा है। सात विकल्प हैं:
 
-Each column from your file is listed alongside a sample value. For each column, use the dropdown to choose the matching B1 field. The tool will auto-detect common column names like "First Name," "Email," or "Zip Code," but you should review every row and correct anything it missed.
+- **B1 डेटाबेस** -- अपने मौजूदा B1 चर्च से सीधे डेटा खींचता है। बैकअप बनाने या अपने डेटा को किसी अन्य प्रारूप में परिवर्तित करने के लिए उपयोगी। इस विकल्प का उपयोग करने के लिए आपको लॉग इन होना चाहिए।
+- **B1 Import Zip** -- B1 के अपने प्रारूप में एक zip फाइल। यह मुख्यतः पिछले B1 निर्यात को पुनर्स्थापित करने के लिए उपयोग किया जाता है।
+- **Breeze Import Zip** -- Breeze ChMS से निर्यात किई गई फाइलें युक्त zip फाइल।
+- **Planning Center Zip** -- Planning Center से निर्यात किया गया zip या CSV फाइल।
+- **कस्टम CSV / Excel** -- लोग डेटा युक्त कोई भी CSV या Excel फाइल। अपलोड करने के बाद, आप आयात आगे बढ़ने से पहले अपने कॉलम को B1 फील्ड में मैप करेंगे।
+- **Tithe.ly CSV** -- Tithe.ly (CSV या Excel प्रारूप स्वीकार किया जाता है) से लोग या दान निर्यात फाइल।
+- **CCB / Pushpay CSV** -- Church Community Builder या Pushpay से लोग या दान निर्यात CSV।
 
-Available B1 fields include:
-
-- First Name, Last Name, Middle Name, Nickname, Display Name, Title/Prefix, Suffix
-- Email, Home Phone, Mobile Phone, Work Phone
-- Address Line 1, Address Line 2, City, State, Zip Code
-- Birth Date, Gender, Marital Status, Membership Status
-- Household/Family Name
-- Group Name — assigns the person to a group by name
-- **Form Answer (custom field)** — saves that column's value as a custom field attached to the person's record. If you use this option, you will be asked to give the form a name.
-
-Columns you do not want to import can be set to **(Skip)**. At least one name field (First Name or Last Name) must be mapped before you can continue.
-
-Click **Confirm Mapping & Import** to proceed to the preview.
+आप अपनी फाइल को अपलोड क्षेत्र पर खींच सकते हैं, या इसे ब्राउज़ करने के लिए क्लिक कर सकते हैं।
 
 ---
 
-## Step 2 - Preview Your Data
+## चरण 1b - अपनी फील्ड मैप करें (केवल कस्टम CSV / Excel)
 
-After uploading, the tool displays a preview of everything that will be imported. Use the tabs to review each data type:
+यदि आपने **कस्टम CSV / Excel** का चयन किया है, तो अपलोड करने के बाद उपकरण पूर्वावलोकन पर जाने से पहले एक फील्ड मैपिंग स्क्रीन दिखाएगा।
 
-- **People** — Listed by household, with photos if included.
-- **Groups** — Organized by campus, service, time, and category.
-- **Attendance** — Session dates, groups, and visit counts.
-- **Donations** — Batches, funds, donors, and amounts.
-- **Forms** — Form names and content types.
+आपकी फाइल से प्रत्येक कॉलम एक नमूना मान के साथ सूचीबद्ध है। प्रत्येक कॉलम के लिए, मिलती-जुलती B1 फील्ड चुनने के लिए ड्रॉपडाउन का उपयोग करें। उपकरण "पहला नाम," "ईमेल," या "ज़िप कोड" जैसे सामान्य कॉलम नामों को स्वचालित रूप से पहचान लेगा, लेकिन आपको हर पंक्ति की समीक्षा करनी चाहिए और जो वह चूक गया है उसे सुधारना चाहिए।
 
-Review this carefully before proceeding. If something looks wrong, click **Start Over** and correct your source file.
+उपलब्ध B1 फील्ड में शामिल हैं:
 
----
+- पहला नाम, अंतिम नाम, मध्य नाम, उपनाम, प्रदर्शन नाम, शीर्षक/उपसर्ग, प्रत्यय
+- ईमेल, गृह फोन, मोबाइल फोन, कार्य फोन
+- पता पंक्ति 1, पता पंक्ति 2, शहर, राज्य, ज़िप कोड
+- जन्म तारीख, वर्षगाँठ, लिंग, वैवाहिक स्थिति, सदस्यता स्थिति
+- घरेलू/पारिवारिक नाम
+- समूह का नाम -- नाम से व्यक्ति को एक समूह को नियुक्त करता है
+- **कस्टम फील्ड (नाम से मेल खाएँ)** -- कॉलम को अपनी चर्च की एक [कस्टम व्यक्ति फील्ड](../settings/custom-fields.md) में बचाता है। एक **B1 फील्ड नाम** बॉक्स दिखाई देता है, कॉलम हेडर के साथ भरा हुआ। इसे B1 में दिखाई देने वाली फील्ड के नाम में बदलें (पूंजीकरण महत्वपूर्ण नहीं है)।
+- **फॉर्म उत्तर (कस्टम फील्ड)** -- उस कॉलम के मान को व्यक्ति के रिकॉर्ड से जुड़ी एक कस्टम फील्ड के रूप में बचाता है। यदि आप इस विकल्प का उपयोग करते हैं, तो आपसे फॉर्म को एक नाम देने के लिए कहा जाएगा।
 
-## Step 3 - Choose Your Destination
-
-Select where you want the data to go:
-
-- **B1 Database** — Imports directly into your church's B1 database. After selecting this, the tool will show a final count of records to be added. Click **Start Transfer** to confirm.
-- **B1 Export Zip** — Downloads your data as a B1-format zip file. Good for backups.
-- **Breeze Export Zip** — Converts your data to Breeze format.
-- **Planning Center Zip** — Converts your data to Planning Center format.
-
-:::warning
-The source and destination cannot be the same format. If they match, the tool will warn you to prevent accidental duplication.
-:::
-
----
-
-## Step 4 - Run
-
-The tool processes the transfer and shows progress for each step:
-
-- Campuses, Services, and Times
-- People
-- Photos
-- Groups and Group Members
-- Donations
-- Attendance
-- Forms, Questions, Answers, and Form Submissions
-- Compressing (for zip file destinations only)
-
-:::warning
-Do not close your browser while the transfer is running. Wait until all steps show as complete.
-:::
-
----
-
-## Preparing a Breeze Import Zip
-
-1. In Breeze, go to **Settings** and click **Export** in the left sidebar.
-2. Export three separate files: **People**, **Tags**, and **Contributions**.
-3. Select all three files, right-click, and compress them into a single zip file.
-   - On a Mac: select the files, right-click, and choose **Compress**.
-   - On a PC: select the files, right-click, choose **Send to**, then **Compressed (zipped) folder**.
-4. Upload the zip file using the **Breeze Import Zip** option in Step 1.
-
-The Breeze import transfers people, groups (tags), and donation records automatically.
-
----
-
-## Preparing a Planning Center Export
-
-1. Log in to Planning Center and open the **People** product.
-2. In the left sidebar, click **Lists** and create a list that includes everyone you want to bring over. (If you already have a list of your whole congregation, use that one.)
-3. Open the list and use its **export** option to download your people as a **CSV** file. Include the fields you want to keep — name, email, phone, address, birthdate, gender, and membership status all map over to B1.
-4. If Planning Center gives you more than one file, select them all, right-click, and compress them into a single zip.
-   - On a Mac: select the files, right-click, and choose **Compress**.
-   - On a PC: select the files, right-click, choose **Send to**, then **Compressed (zipped) folder**.
-5. Upload the CSV or zip using the **Planning Center Zip** option in Step 1.
-
-After uploading, continue to the preview and confirm your people and households look right before running the import.
-
----
-
-## Preparing a Tithe.ly Export
-
-1. In Tithe.ly, export your **People** data as a CSV or Excel file. You can also export a separate **Giving** file if you want to bring in donation records.
-2. The tool will automatically detect whether the file contains people or giving data based on the column names.
-3. Upload the file using the **Tithe.ly CSV** option in Step 1.
+तारीखें `9/17/1994` जैसे सामान्य प्रारूपों में हो सकती हैं और स्वचालित रूप से परिवर्तित होती हैं। कस्टम फील्ड के लिए, हाँ/नहीं फील्ड हाँ, नहीं, Y, N, सत्य, असत्य, 1, और 0 जैसे मानों को स्वीकार करते हैं, और बहु-विकल्प फील्ड विकल्प पाठ या इसके मान को स्वीकार करते हैं।
 
 :::info
-Tithe.ly exports can be imported one file at a time. Run the process twice if you need to import both people and giving records separately.
+आयात करने से पहले अपनी कस्टम व्यक्ति फील्ड को B1 Admin में बनाएँ। जब आयात समाप्त हो जाता है, तो **कस्टम फील्ड** चरण किसी भी कॉलम नाम को सूचीबद्ध करता है जो B1 फील्ड से मेल नहीं खाता है और किसी भी मानों को गिनता है जो फील्ड के प्रकार में फिट नहीं होता है। वे मान छोड़ दिए जाते हैं, और आयात का बाकी हिस्सा अभी भी पूरा हो जाता है।
+:::
+
+कॉलम जिन्हें आप आयात नहीं करना चाहते हैं उन्हें **(स्किप)** पर सेट किया जा सकता है। आगे बढ़ने से पहले कम से कम एक नाम फील्ड (पहला नाम या अंतिम नाम) मैप किया जाना चाहिए।
+
+पूर्वावलोकन पर जाने के लिए **मैपिंग की पुष्टि करें और आयात करें** पर क्लिक करें।
+
+---
+
+## चरण 2 - अपने डेटा का पूर्वावलोकन करें
+
+अपलोड करने के बाद, उपकरण हर चीज़ का पूर्वावलोकन प्रदर्शित करता है जो आयात किया जाएगा। प्रत्येक डेटा प्रकार की समीक्षा करने के लिए टैब का उपयोग करें:
+
+- **लोग** -- परिवार द्वारा सूचीबद्ध, यदि शामिल हो तो तस्वीरें के साथ।
+- **समूह** -- कैंपस, सेवा, समय, और श्रेणी द्वारा व्यवस्थित।
+- **उपस्थिति** -- सत्र तारीखें, समूह, और दौरे की गणना।
+- **दान** -- बैच, कोष, दाता, और राशियाँ।
+- **फॉर्म** -- फॉर्म नाम और सामग्री प्रकार।
+
+आगे बढ़ने से पहले इसकी सावधानीपूर्वक समीक्षा करें। यदि कुछ गलत दिख रहा है, **शुरुआत करें** पर क्लिक करें और अपनी स्रोत फाइल को सुधारें।
+
+---
+
+## चरण 3 - अपना गंतव्य चुनें
+
+चुनें कि आप डेटा कहाँ भेजना चाहते हैं:
+
+- **B1 डेटाबेस** -- सीधे आपकी चर्च की B1 डेटाबेस में आयात करता है। इसे चुनने के बाद, उपकरण जोड़े जाने वाले रिकॉर्ड की अंतिम गणना दिखाएगा। पुष्टि करने के लिए **Transfer शुरू करें** पर क्लिक करें।
+- **B1 Export Zip** -- आपके डेटा को B1-प्रारूप zip फाइल के रूप में डाउनलोड करता है। बैकअप के लिए अच्छा है।
+- **Breeze Export Zip** -- आपके डेटा को Breeze प्रारूप में परिवर्तित करता है।
+- **Planning Center Zip** -- आपके डेटा को Planning Center प्रारूप में परिवर्तित करता है।
+
+:::warning
+स्रोत और गंतव्य एक ही प्रारूप नहीं हो सकते। यदि वे मेल खाते हैं, तो उपकरण आपको आकस्मिक दोहराव को रोकने के लिए चेतावनी देगा।
 :::
 
 ---
 
-## Preparing a CCB or Pushpay Export
+## चरण 4 - चलाएँ
 
-1. In Church Community Builder or Pushpay, export your **People** data as a CSV file. You can also export a separate giving/contributions file.
-2. The tool will automatically detect whether the file contains people or giving data based on the column names.
-3. Upload the file using the **CCB / Pushpay CSV** option in Step 1.
+उपकरण Transfer को संसाधित करता है और प्रत्येक चरण के लिए प्रगति दिखाता है:
+
+- कैंपस, सेवाएँ, और समय
+- लोग
+- तस्वीरें
+- समूह और समूह सदस्य
+- दान
+- उपस्थिति
+- फॉर्म, प्रश्न, उत्तर, और फॉर्म जमा
+- कस्टम फील्ड (जब आपने किसी कस्टम फील्ड कॉलम को मैप किया है)
+- संपीड़न (केवल zip फाइल गंतव्यों के लिए)
+
+:::warning
+Transfer चलते समय अपना ब्राउज़र बंद न करें। सभी चरणों के पूर्ण होने तक प्रतीक्षा करें।
+:::
 
 ---
 
-## After Importing
+## Breeze Import Zip तैयार करना
 
-Once the transfer is complete, take a few minutes to verify your data:
+1. Breeze में, **सेटिंग्स** पर जाएँ और बाएँ साइडबार में **निर्यात** पर क्लिक करें।
+2. तीन अलग-अलग फाइलें निर्यात करें: **लोग**, **टैग**, और **योगदान**।
+3. सभी तीन फाइलों का चयन करें, दाईं ओर क्लिक करें, और उन्हें एक एकल zip फाइल में संपीड़ित करें।
+   - Mac पर: फाइलों का चयन करें, दाईं ओर क्लिक करें, और **संपीड़ित करें** चुनें।
+   - PC पर: फाइलों का चयन करें, दाईं ओर क्लिक करें, **भेजें**, फिर **संपीड़ित (zipped) फोल्डर** चुनें।
+4. चरण 1 में **Breeze Import Zip** विकल्प का उपयोग करके zip फाइल अपलोड करें।
 
-1. Browse the [People](../people/adding-people.md) page and spot-check a few profiles.
-2. Confirm that names, emails, phone numbers, and addresses came through correctly.
-3. Check that household connections are intact.
-4. Review any imported groups and giving records.
+Breeze आयात लोगों, समूहों (टैग), और दान रिकॉर्ड को स्वचालित रूप से स्थानांतरित करता है।
 
-If you notice issues, you can edit individual profiles from the People page. You can also run the transfer tool again to [export your data](exporting-data.md) as a backup.
+---
+
+## Planning Center निर्यात तैयार करना
+
+1. Planning Center में लॉग इन करें और **लोग** उत्पाद खोलें।
+2. बाएँ साइडबार में, **सूचियाँ** पर क्लिक करें और एक सूची बनाएँ जिसमें हर कोई शामिल हो जिसे आप ले जाना चाहते हैं। (यदि आपके पास पहले से अपनी संपूर्ण मण्डली की सूची है, तो उसका उपयोग करें।)
+3. सूची को खोलें और अपने लोगों को **CSV** फाइल के रूप में डाउनलोड करने के लिए इसके **निर्यात** विकल्प का उपयोग करें। वे फील्ड शामिल करें जिन्हें आप रखना चाहते हैं -- नाम, ईमेल, फोन, पता, जन्मतारीख, लिंग, और सदस्यता स्थिति सभी B1 में मैप करते हैं।
+4. यदि Planning Center आपको एक से अधिक फाइलें देता है, तो सभी का चयन करें, दाईं ओर क्लिक करें, और उन्हें एक एकल ज़िप में संपीड़ित करें।
+   - Mac पर: फाइलों का चयन करें, दाईं ओर क्लिक करें, और **संपीड़ित करें** चुनें।
+   - PC पर: फाइलों का चयन करें, दाईं ओर क्लिक करें, **भेजें**, फिर **संपीड़ित (zipped) फोल्डर** चुनें।
+5. चरण 1 में **Planning Center Zip** विकल्प का उपयोग करके CSV या ज़िप अपलोड करें।
+
+अपलोड करने के बाद, पूर्वावलोकन पर जाएँ और आयात चलाने से पहले पुष्टि करें कि आपके लोग और परिवार सही दिख रहे हैं।
+
+---
+
+## Tithe.ly निर्यात तैयार करना
+
+1. Tithe.ly में, अपने **लोग** डेटा को CSV या Excel फाइल के रूप में निर्यात करें। यदि आप दान रिकॉर्ड लाना चाहते हैं तो आप एक अलग **दान** फाइल भी निर्यात कर सकते हैं।
+2. उपकरण कॉलम नामों के आधार पर स्वचालित रूप से पहचान लेगा कि फाइल में लोग या दान डेटा है या नहीं।
+3. चरण 1 में **Tithe.ly CSV** विकल्प का उपयोग करके फाइल अपलोड करें।
+
+:::info
+Tithe.ly निर्यात एक बार में एक फाइल आयात किया जा सकता है। यदि आपको लोगों और दान रिकॉर्ड दोनों को अलग-अलग आयात करने की आवश्यकता है तो प्रक्रिया को दो बार चलाएँ।
+:::
+
+---
+
+## CCB या Pushpay निर्यात तैयार करना
+
+1. Church Community Builder या Pushpay में, अपने **लोग** डेटा को CSV फाइल के रूप में निर्यात करें। आप एक अलग दान/योगदान फाइल भी निर्यात कर सकते हैं।
+2. उपकरण कॉलम नामों के आधार पर स्वचालित रूप से पहचान लेगा कि फाइल में लोग या दान डेटा है या नहीं।
+3. चरण 1 में **CCB / Pushpay CSV** विकल्प का उपयोग करके फाइल अपलोड करें।
+
+---
+
+## आयात करने के बाद
+
+एक बार Transfer पूरा हो जाने के बाद, अपने डेटा को सत्यापित करने के लिए कुछ मिनट का समय लें:
+
+1. [लोग](../people/adding-people.md) पृष्ठ को ब्राउज़ करें और कुछ प्रोफाइल की जाँच करें।
+2. पुष्टि करें कि नाम, ईमेल, फोन नंबर, और पते सही ढंग से आए हैं।
+3. जाँचें कि घरेलू कनेक्शन बरकरार हैं।
+4. आयात किए गए किसी भी समूह और दान रिकॉर्ड की समीक्षा करें।
+
+यदि आप कोई समस्या देखते हैं, तो आप लोग पृष्ठ से अलग-अलग प्रोफाइल को संपादित कर सकते हैं। आप अपने डेटा को बैकअप के रूप में [निर्यात](exporting-data.md) करने के लिए Transfer उपकरण को फिर से चला सकते हैं।

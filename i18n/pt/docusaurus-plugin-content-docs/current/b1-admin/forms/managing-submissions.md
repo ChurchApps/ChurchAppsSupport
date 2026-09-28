@@ -6,61 +6,63 @@ title: "Gerenciando Submissões"
 
 <div class="article-intro">
 
-Once your form is live, submissions will start coming in. The Submissions tab lets you review every response, track who has submitted, and use the data to follow up with your congregation in a timely manner.
+Depois que seu formulário estiver ativo, as submissões começarão a chegar. A guia Submissões permite que você revise cada resposta, rastreie quem enviou e use os dados para acompanhar sua congregação em tempo hábil.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Antes de Começar</h4>
 
-- [Create a form](./creating-forms.md) with at least one question
-- Share the form via its public URL or embed it on your [website](../website/managing-pages.md)
+- [Crie um formulário](./creating-forms.md) com pelo menos uma pergunta
+- Compartilhe o formulário via sua URL pública ou incorpore-o no seu [site](../website/managing-pages.md)
 
 </div>
 
-## Viewing Submissions
+## Visualizando Submissões
 
-1. Navigate to **Forms** from the main menu.
-2. Click on the form you want to review.
-3. Go to the **Submissions** tab.
+1. Abra **Pessoas** no menu de seção, depois clique em **Formulários** na barra de navegação.
+2. Clique no formulário que deseja revisar.
+3. Vá para a guia **Submissões**.
 
-You will see a list of all responses received for that form. Each submission shows the respondent's information and the date it was submitted.
+Você verá uma lista de todas as respostas recebidas para esse formulário. Cada submissão mostra as informações do respondente e a data em que foi enviada.
 
-## Reviewing Individual Submissions
+## Revisando Submissões Individuais
 
-Click on any submission to view the full details. You will see all the answers the person provided for each question on the form.
+Clique em qualquer submissão para visualizar os detalhes completos. Você verá todas as respostas que a pessoa forneceu para cada pergunta do formulário.
 
-## How Submissions Are Collected
+Clique no **ícone de impressão** próximo à submissão para imprimir as respostas preenchidas dessa pessoa -- útil para um arquivo em papel ou um formulário de liberação que você precisa manter à mão. Isso é separado de [imprimir um formulário em branco](./creating-forms.md#printing-a-blank-form); imprime as respostas já enviadas de uma pessoa, não uma cópia vazia. O mesmo ícone de impressão aparece em qualquer lugar onde uma submissão seja mostrada, incluindo no [perfil de uma pessoa](../people/adding-people.md#working-with-forms).
 
-Submissions can come in through several channels:
+## Como as Submissões São Coletadas
 
-- **Public URL** -- If your form has a public URL (Stand Alone forms), anyone with the link can submit a response. Share the URL via email, social media, or text messages.
-- **Embedded on your website** -- Forms embedded on your B1 website collect submissions automatically when visitors fill them out.
-- **Internal use** -- Staff and volunteers can also submit forms on behalf of others directly within B1 Admin.
+As submissões podem vir através de vários canais:
+
+- **URL Pública** -- Se seu formulário tiver uma URL pública (formulários Autônomos), qualquer pessoa com o link pode enviar uma resposta. Compartilhe a URL por e-mail, mídia social ou mensagens de texto.
+- **Incorporado em seu site** -- Formulários incorporados em seu site B1 coletam submissões automaticamente quando os visitantes os preenchem.
+- **Uso interno** -- Funcionários e voluntários também podem enviar formulários em nome de outros diretamente no B1 Admin.
 
 :::tip
-Check the **Submissions** tab regularly for forms like visitor cards or prayer requests, so you can follow up promptly.
+Verifique a guia **Submissões** regularmente para formulários como cartões de visitante ou pedidos de oração, para que você possa acompanhar prontamente.
 :::
 
-## Using Submission Data
+## Usando Dados de Submissões
 
-The data collected through forms can help you:
+Os dados coletados através de formulários podem ajudá-lo a:
 
-- Track event registrations and plan accordingly
-- Follow up with visitors or new members
-- Collect survey feedback for ministry planning
-- Process payments for events or programs
+- Rastrear inscrições em eventos e planejar adequadamente
+- Acompanhar visitantes ou novos membros
+- Coletar feedback de pesquisa para planejamento de ministério
+- Processar pagamentos para eventos ou programas
 
 :::info
-Form members with **Admin** or **View Only** roles can access the Submissions tab. Make sure the right people on your team have access to the forms they need by managing roles in the **Members** tab.
+Membros do formulário com funções **Admin** ou **Apenas Visualizar** podem acessar a guia Submissões. Certifique-se de que as pessoas certas de sua equipe tenham acesso aos formulários de que precisam gerenciando funções na guia **Membros**.
 :::
 
 :::tip
-If a **Stand Alone** form is set to create a person record, any submissions matched to an existing person also show up on that person's own **Forms** tab in the People section — not just People-type forms.
+Se um formulário **Autônomo** está definido para criar um registro de pessoa, quaisquer submissões correspondidas a uma pessoa existente também aparecem na guia **Formulários** dessa pessoa na seção Pessoas -- não apenas formulários do tipo Pessoas.
 :::
 
-## Next Steps
+## Próximos Passos
 
-- Learn how to build and customize forms in [Creating Forms](./creating-forms.md)
-- Add people from form submissions to your [people directory](../people/adding-people.md) for ongoing follow-up
-- [Automatically add submitters to a group](./creating-forms.md#automatically-adding-submitters-to-a-group) so a stand-alone sign-up form builds its own roster
+- Aprenda como criar e personalizar formulários em [Criando Formulários](./creating-forms.md)
+- Adicione pessoas de submissões de formulário ao seu [diretório de pessoas](../people/adding-people.md) para acompanhamento contínuo
+- [Adicionar automaticamente submissores a um grupo](./creating-forms.md#automatically-adding-submitters-to-a-group) para que um formulário de inscrição autônomo crie sua própria lista

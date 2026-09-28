@@ -36,29 +36,44 @@ You can create sessions for past dates to catch up on attendance you haven't rec
 
 ## Marking Attendance
 
-After saving the session, the group's members appear on the right side of the page.
+Select a session to see its attendance list. Every group member is listed with a checkbox, sorted by last name, and anyone already recorded as present is checked.
 
-1. Check the box next to each person who attended.
-2. Changes are saved automatically -- there is no additional Save button for attendance marks.
+1. Check the box next to each person who attended. Use **Select All** or **Select None** to change everyone at once.
+2. The count above the list (for example, "12 of 15 present") updates as you check boxes.
+3. Click **Save Attendance**. Nothing is recorded until you save, and a message confirms when the save is done.
 
-:::info
-Only current group members appear in the session list. If someone attended but is not yet in the group, [add them to the group](../groups/group-members.md) first, then record their attendance.
-:::
+Unchecking someone who was already recorded as present and then saving removes them from the session.
+
+### Adding Visitors
+
+To record someone who is not a member of the group, search for them in the person search beside the attendance list. If they are not in your database yet, you can create them from the search. They are added to the list already checked. Click **Save Attendance** to record them.
+
+People who checked in at a kiosk show a **Volunteer** or **Guest** chip. People who are not group members show a **Guest** chip.
+
+## Printing a Roll Sheet
+
+A roll sheet is a printable class list that teachers can mark by hand and give back to you to enter later. Each sheet shows the church name, the class, the service time, and a date line. Every member has **Present** and **Absent** boxes, and there are blank lines for visitors and a **Teacher / Notes** area.
+
+- **From a session** -- Click the **Print Roll Sheet** (printer) icon at the top of the session's attendance list. The sheet is dated with the session's date.
+- **All classes for a service** -- If the session has a service time, click **Print All Classes** to print one sheet per class assigned to that service time. Each class prints on its own page.
+- **From the Members tab** -- Click the **Print Roll Sheet** icon above the group's member list to print an undated sheet.
+
+The sheet opens in a new tab and your browser's print dialog appears automatically.
 
 ## Exporting Attendance to a Spreadsheet
 
 You can download a record of the session as a CSV file to use in Excel, Numbers, or Google Sheets.
 
 1. Open the session you want to export.
-2. Click the **Download CSV** button.
+2. Click the **Export** button at the top of the attendance list.
 3. Open the downloaded file in your spreadsheet application.
 
 ## Viewing Recorded Attendance
 
 After recording sessions, the data appears in your attendance reports.
 
-- **Attendance tab** -- shows church-wide trends over time. See [Tracking Attendance](tracking-attendance.md).
-- **Groups tab** -- shows attendance broken down by individual group.
+- **Attendance Trend tab** -- shows church-wide trends over time. See [Tracking Attendance](tracking-attendance.md).
+- **Group Attendance tab** -- shows attendance broken down by individual group.
 
 :::tip
 If a session you just created does not appear in reports right away, make sure the session date falls within the date range selected in the report filters.

@@ -1,64 +1,64 @@
 ---
-title: TITLE: Anwesenheit erfassen
+title: "Anwesenheit verfolgen"
 ---
-CONTENT:
-# Anwesenheit erfassen
+
+# Anwesenheit verfolgen
 
 <div class="article-intro">
 
-Sobald Ihre Campus, Gottesdienstzeiten und Gruppen konfiguriert sind, können Sie mit B1 Admin ganz einfach Anwesenheitsdaten auswerten und Trends erkennen. Die Anwesenheitsseite bietet zwei Berichtsansichten -- die Registerkarte **Anwesenheit** für gemeindeweite Trends und die Registerkarte **Gruppen** für Details auf Gruppenebene. Nutzen Sie diese Werkzeuge, um Wachstumsmuster zu verstehen, nachlassendes Engagement zu erkennen und datengestützte Entscheidungen für Ihre Gemeinde zu treffen.
+Sobald deine Standorte, Gottesdienstzeiten und Gruppen konfiguriert sind, erleichtert B1 Admin dir das Überprüfen von Anwesenheitsdaten und das Erkennen von Trends. Die Seite Anwesenheit bietet zwei Berichtsansichten -- die Registerkarte **Anwesenheitstrend** für kirchenweite Trends und die Registerkarte **Gruppenanwesenheit** für Details auf Gruppenebene. Verwende diese Tools, um Wachstumsmuster zu verstehen, rückläufige Beteiligung zu erkennen und datengestützte Entscheidungen für deine Kirche zu treffen.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du beginnst</h4>
 
-- Ihre Anwesenheitsstruktur muss mit mindestens einem Campus und einer Gottesdienstzeit eingerichtet sein. Siehe [Anwesenheit einrichten](setup.md), falls Sie dies noch nicht erledigt haben.
-- Anwesenheitsdaten müssen erfasst worden sein, bevor Berichte Ergebnisse anzeigen. Die Daten können aus der [manuellen Eingabe](recording-attendance.md) oder dem [Selbst-Check-in](check-in.md) stammen.
+- Deine Anwesenheitsstruktur muss mit mindestens einem Standort und einer Gottesdienstzeit eingerichtet sein. Siehe [Anwesenheitseinrichtung](setup.md), falls du dies noch nicht getan hast.
+- Anwesenheitsdaten müssen aufgezeichnet werden, bevor Berichte Ergebnisse anzeigen. Daten können von der [manuellen Eingabe](recording-attendance.md) oder dem [Selbsteintrag](check-in.md) stammen.
 
 </div>
 
 ## Anwesenheitstrends anzeigen
 
-1. Öffnen Sie **B1 Admin**, öffnen Sie dann das **Bereichsmenü** in der oberen linken Ecke und wählen Sie **Personen**.
-2. Klicken Sie auf die Registerkarte **Anwesenheit**.
-3. Der Bericht wird beim Öffnen der Registerkarte automatisch ausgeführt und zeigt die Anwesenheit über einen Standardzeitraum an.
+1. Öffne **B1 Admin**, öffne dann das **Menü „Bereich"** in der oberen linken Ecke und wähle **Personen**.
+2. Klicke auf die Registerkarte **Anwesenheitstrend**.
+3. Der Bericht wird automatisch ausgeführt, wenn die Registerkarte geöffnet wird, und zeigt die Anwesenheit über einen Standard-Datumsbereich.
 
 ## Daten filtern
 
-Verwenden Sie die Filter am oberen Rand der Seite, um die Ergebnisse einzugrenzen:
+Verwende die Filter oben auf der Seite, um die Ergebnisse einzugrenzen:
 
-- **Zeitraum** -- wählen Sie ein Start- und Enddatum, um sich auf einen bestimmten Zeitraum zu konzentrieren.
-- **Campus** -- wählen Sie einen Campus aus, um die Anwesenheit nur für diesen Standort zu sehen.
-- **Gottesdienstzeit** -- wählen Sie eine Gottesdienstzeit aus, um eine bestimmte Versammlung genauer zu betrachten.
+- **Datumsbereich** -- wähle ein Start- und Enddatum, um dich auf einen bestimmten Zeitraum zu konzentrieren.
+- **Standort** -- wähle einen Standort, um die Anwesenheit nur für diesen Ort zu sehen.
+- **Gottesdienstzeit** -- wähle eine Gottesdienstzeit, um einen bestimmten Gottesdienst zu betrachten.
 
-Das Diagramm und die Daten werden aktualisiert, sobald Sie einen Filter ändern, sodass Sie schnell verschiedene Zeiträume oder Standorte vergleichen können.
+Das Diagramm und die Daten werden aktualisiert, sobald du einen Filter änderst, so dass du schnell verschiedene Zeiträume oder Orte vergleichen kannst.
 
 :::info
-Berichte werden bei jedem Öffnen der Registerkarte „Anwesenheit“ automatisch ausgeführt, sodass Sie immer aktuelle Zahlen sehen, ohne auf eine Schaltfläche zum Aktualisieren klicken zu müssen.
+Berichte werden automatisch ausgeführt, jedes Mal wenn du die Registerkarte Anwesenheitstrend öffnest, so dass du immer aktuelle Zahlen sehen wirst, ohne auf eine Aktualisierungsschaltfläche klicken zu müssen.
 :::
 
 ## Gruppenanwesenheit
 
-Die Registerkarte **Gruppen** zeigt die Anwesenheit aufgeschlüsselt nach einzelnen Gruppen. Das ist hilfreich, wenn Sie einen bestimmten Kurs, ein Dienstteam oder eine Kleingruppe beobachten möchten, anstatt die Gesamtzahlen der Gottesdienste zu betrachten.
+Die Registerkarte **Gruppenanwesenheit** zeigt die Anwesenheit aufgeschlüsselt nach einzelner Gruppe. Dies ist nützlich, wenn du eine bestimmte Klasse, ein Dienst-Team oder eine Kleingruppe überwachen möchtest, anstatt Gesamtzahlen für den Gottesdienst zu betrachten.
 
-1. Wählen Sie die Registerkarte **Gruppen**.
-2. Wählen Sie eine Gruppe aus der Liste, um deren Anwesenheitsverlauf zu sehen.
-3. Verwenden Sie den Zeitraumfilter, um den Berichtszeitraum anzupassen.
+1. Wähle die Registerkarte **Gruppenanwesenheit**.
+2. Wähle eine Gruppe aus der Liste, um ihre Anwesenheitshistorie zu sehen.
+3. Verwende den Datumsbereichsfilter, um das Berichtsfenster anzupassen.
 
 :::tip
-Die Gruppenanwesenheit ist besonders wertvoll für Leiterinnen und Leiter von [Kleingruppen](../groups/creating-groups.md), die das Engagement innerhalb ihrer Gruppe im Zeitverlauf verfolgen möchten.
+Gruppenanwesenheit ist besonders wertvoll für [Kleingruppen](../groups/creating-groups.md)-Leader, die die Beteiligung innerhalb ihrer Gruppe im Laufe der Zeit verfolgen möchten.
 :::
 
-## Tipps zur Nutzung von Anwesenheitsdaten
+## Tipps zur Verwendung von Anwesenheitsdaten
 
-- Überprüfen Sie die Trends monatlich, um saisonale Muster frühzeitig zu erkennen.
-- Vergleichen Sie die Daten auf Campus-Ebene, um zu verstehen, welche Standorte wachsen.
-- Nutzen Sie Berichte auf Gruppenebene, um [Gruppen](../groups/group-members.md) nachzugehen, deren Anwesenheit zurückgeht.
-- Kombinieren Sie Erkenntnisse zur Anwesenheit mit dem Werkzeug [KI-Suche](../people/ai-search.md), um Personen zu finden, die in letzter Zeit nicht anwesend waren.
+- Überprüfe Trends monatlich, um saisonale Muster früh zu erkennen.
+- Vergleiche Daten auf Standortebene, um zu verstehen, welche Standorte wachsen.
+- Verwende Berichte auf Gruppenebene, um [Gruppen](../groups/group-members.md) zu verfolgen, die rückläufige Anwesenheit zeigen.
+- Kombiniere Anwesenheitserkenntnisse mit dem Tool [KI-Suche](../people/ai-search.md), um Personen zu finden, die kürzlich nicht teilgenommen haben.
 
 ## Verwandte Seiten
 
-- [Anwesenheit erfassen](recording-attendance.md) -- Anwesenheit für eine Gruppensitzung manuell eingeben
-- [Personenzahl-Erfassung & Trend](headcount-entry.md) -- eine einfachere Alternative mit Gesamtzahlen, inklusive eigenem wöchentlichem Trenddiagramm
-- [Check-in](check-in.md) -- Selbst-Check-in einrichten, damit die Anwesenheit automatisch erfasst wird
+- [Anwesenheit aufzeichnen](recording-attendance.md) -- erfasse manuell die Anwesenheit für eine Gruppensitzung
+- [Anwesenheitszahl-Eingabe und Trend](headcount-entry.md) -- eine einfachere Alternative mit Gesamtzahl und eigenem wöchentlichen Trenddiagramm
+- [Eintrag](check-in.md) -- richte Selbsteintrag ein, damit die Anwesenheit automatisch aufgezeichnet wird

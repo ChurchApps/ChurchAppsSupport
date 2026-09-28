@@ -19,9 +19,9 @@ Die Seite "Massenimport" ermöglicht es Ihnen, Ihre Predigtbibliothek schnell zu
 
 </div>
 
-## Wählen Ihrer Quelle
+## Wählen Sie Ihre Quelle
 
-1. Öffnen Sie in B1 Admin das **Bereichsmenü** in der oberen linken Ecke (der Bereichsname mit dem kleinen Pfeil) und wählen Sie **Predigten**, dann klicken Sie auf die **Massenimport**-Registerkarte.
+1. Öffnen Sie in B1 Admin das **Bereichsmenü** in der oberen linken Ecke (der Bereichsname mit dem kleinen Pfeil) und wählen Sie **Predigten**. Klicken Sie auf **Predigt hinzufügen** und wählen Sie **Massenimport** aus dem Menü.
 2. Sie sehen zwei anklickbare Karten:
    - **YouTube** (rot) -- Importieren Sie Videos von einem YouTube-Kanal
    - **Vimeo** (blau) -- Importieren Sie Videos von einem Vimeo-Konto
@@ -54,7 +54,7 @@ Siehe [Wiedergabelisten](playlists) für detaillierte Anweisungen zum Erstellen 
 Ihre Videos werden mit all ihren Details importiert, einschließlich Titel, Beschreibungen, Daten und Miniaturbildern.
 
 :::info
-Massenimport eignet sich ideal für den Anfang bei der Migration von einer anderen Plattform. Zum Hinzufügen einzelner Predigten in Zukunft verwenden Sie stattdessen die [Predigten verwenden](managing-sermons)-Seite.
+Massenimport eignet sich ideal für den Anfang bei der Migration von einer anderen Plattform. Zum Hinzufügen einzelner Predigten in Zukunft verwenden Sie stattdessen die Seite [Predigten verwalten](managing-sermons).
 :::
 
 ## Nächste Schritte

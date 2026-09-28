@@ -1,64 +1,64 @@
 ---
-title: "Importación Masiva"
+title: "Importación en Lote"
 ---
 
-# Importación Masiva
+# Importación en Lote
 
 <div class="article-intro">
 
-La página de Importación Masiva te permite completar rápidamente tu biblioteca de sermones importando videos de YouTube o Vimeo. Esta es la forma más rápida de traer tu contenido de sermones existente en lugar de agregar cada video uno a la vez.
+La página de Importación en Lote le permite completar rápidamente su biblioteca de sermones importando videos de YouTube o Vimeo. Esta es la forma más rápida de traer su contenido de sermones existente en lugar de agregar cada video uno a la vez.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de Empezar</h4>
 
-- Necesitas el permiso **contentApi.streamingServices.edit**. Ver [Roles y Permisos](../settings/roles-permissions.md) si no tienes acceso.
-- Crea al menos una [lista de reproducción](playlists) para importar tus sermones
-- Ten tu ID de Canal de YouTube o información de cuenta de Vimeo listo
+- Necesita el permiso **contentApi.streamingServices.edit**. Consulte [Roles y Permisos](../settings/roles-permissions.md) si no tiene acceso.
+- Cree al menos una [lista de reproducción](playlists) para importar sus sermones
+- Tenga listo su ID de Canal de YouTube o la información de su cuenta de Vimeo
 
 </div>
 
-## Elegir Tu Fuente
+## Selección de su Fuente
 
-1. En B1 Admin, abre el **menú de sección** en la esquina superior izquierda (el nombre de la sección con la flecha pequeña) y elige **Sermones**, luego haz clic en la pestaña **Importación Masiva**.
-2. Verás dos tarjetas clicables:
-   - **YouTube** (rojo) -- Importa videos de un canal de YouTube
-   - **Vimeo** (azul) -- Importa videos de una cuenta de Vimeo
-3. Haz clic en la tarjeta de la plataforma donde tus sermones están alojados.
+1. En B1 Admin, abra el **menú de sección** en la esquina superior izquierda (el nombre de la sección con la pequeña flecha) y elija **Sermones**. Haga clic en **Agregar Sermón** y elija **Importación en Lote** del menú.
+2. Verá dos tarjetas interactivas:
+   - **YouTube** (rojo) -- Importar videos de un canal de YouTube
+   - **Vimeo** (azul) -- Importar videos de una cuenta de Vimeo
+3. Haga clic en la tarjeta de la plataforma donde están alojados sus sermones.
 
 :::tip
-Puedes volver y cambiar fuentes en cualquier momento si tienes videos en ambas plataformas.
+Puede volver atrás y cambiar de fuentes en cualquier momento si tiene videos en ambas plataformas.
 :::
 
 ## Antes de Importar
 
-Antes de importar videos, necesitas al menos una lista de reproducción para organizarlos. Si aún no has creado ninguna lista de reproducción:
+Antes de importar videos, necesita al menos una lista de reproducción para organizarlos. Si aún no ha creado ninguna lista de reproducción:
 
-1. Haz clic en la pestaña **Listas de Reproducción**.
-2. Haz clic en **Crear Primera Lista de Reproducción** y completa el nombre, descripción, fecha de publicación y miniatura.
-3. Haz clic en **Guardar**, luego regresa a la pestaña **Importación Masiva**.
+1. Haga clic en la pestaña **Listas de Reproducción**.
+2. Haga clic en **Crear Primera Lista de Reproducción** e ingrese el nombre, descripción, fecha de publicación y miniatura.
+3. Haga clic en **Guardar**, luego regrese a la pestaña **Importación en Lote**.
 
-Ver [Listas de Reproducción](playlists) para instrucciones detalladas sobre crear y administrar listas de reproducción.
+Consulte [Listas de Reproducción](playlists) para instrucciones detalladas sobre cómo crear y administrar listas de reproducción.
 
-## Importar Videos
+## Importación de Videos
 
-1. Después de seleccionar YouTube o Vimeo, ingresa tu **ID de Canal de YouTube** o **información de cuenta de Vimeo** en el campo proporcionado.
-2. Haz clic en el botón **Fetch** para recuperar todos los videos disponibles de tu canal o cuenta.
-3. Después de recuperar, verás una lista de todos tus videos con casillas de verificación.
-4. Marca las casillas al lado de los videos que deseas importar. Puedes seleccionar todos o elegir específicos.
-5. Opcionalmente, habilita **Auto Importar Nuevos Videos** para agregar automáticamente futuras subidas a tu biblioteca.
-6. Haz clic en el menú desplegable **Importar a Lista de Reproducción** para elegir qué lista de reproducción deben agregarse estos videos.
-7. Haz clic en el botón **Importar** para completar la importación masiva.
+1. Después de seleccionar YouTube o Vimeo, ingrese su **ID de Canal de YouTube** o **información de cuenta de Vimeo** en el campo proporcionado.
+2. Haga clic en el botón **Obtener** para recuperar todos los videos disponibles de su canal o cuenta.
+3. Después de obtener, verá una lista de todos sus videos con casillas de verificación.
+4. Marque las casillas junto a los videos que desea importar. Puede seleccionar todos o elegir específicos.
+5. Opcionalmente, habilite **Importación Automática de Nuevos Videos** para agregar automáticamente futuras cargas a su biblioteca.
+6. Haga clic en el menú desplegable **Importar en Lista de Reproducción** para elegir en qué lista de reproducción se deben agregar estos videos.
+7. Haga clic en el botón **Importar** para completar la importación en lote.
 
-Tus videos serán importados con todos sus detalles, incluyendo títulos, descripciones, fechas y miniaturas.
+Sus videos se importarán con todos sus detalles, incluidos títulos, descripciones, fechas y miniaturas.
 
 :::info
-La importación masiva es ideal para empezar cuando estás migrando desde otra plataforma. Para agregar sermones individuales en el futuro, usa la página [Administrar Sermones](managing-sermons) en su lugar.
+La importación en lote es ideal para comenzar cuando está migrando de otra plataforma. Para agregar sermones individuales en adelante, use la página [Administración de Sermones](managing-sermons) en su lugar.
 :::
 
 ## Próximos Pasos
 
-- [Administrar Sermones](managing-sermons) -- Edita detalles de sermones importados
-- [Listas de Reproducción](playlists) -- Crea y administra series de sermones
-- [Transmisión en Vivo](live-streaming) -- Configura transmisión en vivo para tus servicios
+- [Administración de Sermones](managing-sermons) -- Editar detalles de sermones importados
+- [Listas de Reproducción](playlists) -- Crear y administrar series de sermones
+- [Transmisión en Vivo](live-streaming) -- Configurar transmisión en vivo para sus servicios

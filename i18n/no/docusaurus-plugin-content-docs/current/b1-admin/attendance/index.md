@@ -1,48 +1,53 @@
 ---
-title: "Oppmøte"
+title: "Frammøte"
 ---
 
-# Oppmøte
+# Frammøte
 
 <div class="article-intro">
 
-Oppmøte-seksjonen i B1 Admin gir deg en fullstendig oversikt over hvem som møter opp i menigheten din, og hvordan gruppene dine vokser over tid. Fra å konfigurere kirkesteder og gudstjenestetider til å gjennomgå trender og sette opp selvbetjent innsjekking -- alt du trenger for å spore og forstå oppmøte, håndteres fra denne siden.
+Frammøte-delen i B1 Admin gir deg en fullstendig oversikt over hvem som møter opp på din kirke og hvordan gruppene dine vokser over tid. Fra konfigurering av samlinger og tjenestider til gjennomgang av trender og oppsett av selvregistrering, alt du trenger for å spore og forstå frammøte administreres fra denne siden.
 
 </div>
 
 ## Sideoversikt
 
-Når du åpner Oppmøte-siden, ser du en topptekst med sentral statistikk om menighetens oppmøteoppsett:
+Når du åpner siden for Frammøte, vil du se en header med viktig statistikk om kirkas frammøteoppsett:
 
-- **Kirkesteder** -- antall fysiske lokasjoner du har konfigurert
-- **Gudstjenestetider** -- det totale antallet gudstjenester på tvers av alle kirkesteder
-- **Planlagte grupper** -- grupper som er tilordnet en bestemt gudstjenestetid
-- **Uplanlagte grupper** -- grupper som sporer oppmøte uavhengig av en gudstjenestetid
+- **Samlinger** -- antallet fysiske steder du har konfigurert
+- **Tjenestider** -- totalt antall tjenester på tvers av alle samlinger
+- **Planlagte grupper** -- grupper som er tildelt en bestemt tjenestid
+- **Uplanlagte grupper** -- grupper som sporer frammøte uavhengig av en tjenestid
 
-Under toppteksten organiserer tre faner oppmøteverktøyene dine.
+Under headeren organiserer tre faner dine frammøteverktøy.
 
 ## Faner
 
 ### Oppsett
 
-Fanen **Oppsett** er der du konfigurerer byggeklossene for oppmøtesporing. Her definerer du kirkestedene dine, legger til gudstjenestetider for hvert kirkested, og tilordner [grupper](../groups/creating-groups.md) til disse gudstjenestetidene. Du trenger bare å gjøre dette én gang, men du kan oppdatere det når timeplanen endrer seg. Se [Oppsett av oppmøte](setup.md) for en full gjennomgang.
+Fanen **Oppsett** er der du konfigurerer byggesteinene for frammøtesporing. Her definerer du samlingene dine, legger til tjenestider for hver samling og tildeler [grupper](../groups/creating-groups.md) til disse tjenestidene. Du trenger bare å gjøre dette en gang, selv om du kan oppdatere det når som helst når planen din endres. Se [Frammøteoppsett](setup.md) for en fullstendig gjennomgang.
 
-### Oppmøte
+### Frammøte
 
-Fanen **Oppmøte** viser oppmøtetrender over tid. Bruk filtrene til å avgrense resultatene etter datoperiode, kirkested eller gudstjenestetid, og oppdag raskt mønstre i dataene dine. Se [Spore oppmøte](tracking-attendance.md) for detaljer om bruk av rapporter og filtre.
+Fanen **Frammøte** viser frammøtetrender over tid. Bruk filtrene til å begrense resultatene etter dato, samling eller tjenestid og oppdage raskt mønstre i dataene dine. Se [Sporing av frammøte](tracking-attendance.md) for detaljer om bruk av rapporter og filtre.
 
 ### Grupper
 
-Fanen **Grupper** bryter ned oppmøtet etter individuell gruppe. Dette er nyttig når du vil se hvordan en bestemt smågruppe, klasse eller tjenesteteam gjør det, i stedet for å se på tall for hele menigheten.
+Fanen **Grupper** bryter ned frammøte etter individuell gruppe. Dette er nyttig når du vil se hvordan en bestemt smågruppe, klasse eller laggruppe gjør det i stedet for å se på kirkebrede tall.
+
+### Manntall og manntallstrend
+
+Fanen **Manntall** lar deg registrere en enkel totalopprekking for en tjeneste, tjenestid eller gruppe i stedet for en navngitt liste, og fanen **Manntallstrend** kartlegger disse totalene etter uke. Se [Manntallregistrering og trend](headcount-entry.md) for detaljer.
 
 ## Neste steg
 
-- [Oppsett av oppmøte](setup.md) -- konfigurer kirkesteder, gudstjenestetider og grupper
-- [Registrere oppmøte](recording-attendance.md) -- registrer oppmøte manuelt for en gruppesamling
-- [Spore oppmøte](tracking-attendance.md) -- vis trender og filtrer rapporter
-- [Innsjekking](check-in.md) -- sett opp selvbetjent innsjekking for gudstjenester
-- [Sikkerhet ved innsjekking](checkin-safety.md) -- romkapasitet, frivillig-forhold, hentepersoner og calling
+- [Frammøteoppsett](setup.md) -- konfigurer samlinger, tjenestider og grupper
+- [Registrering av frammøte](recording-attendance.md) -- skriv inn frammøte manuelt for en gruppesamling og skriv ut klasselister
+- [Sporing av frammøte](tracking-attendance.md) -- vis trender og filtrer rapporter
+- [Manntallregistrering og trend](headcount-entry.md) -- registrer og kartlegg totalt antall uten navngitt liste
+- [Innsjekking](check-in.md) -- sett opp selvregistrering for tjenester
+- [Innsjekkingssikkerhet](checkin-safety.md) -- romkapasiteter, frivilliger, hentepersoner og personsøk
 
 :::tip
-Hvis du setter opp oppmøte for første gang, start med veiledningen [Oppsett av oppmøte](setup.md) for å definere kirkestedene og gudstjenestetidene dine. Når det er på plass, kan du begynne å [registrere oppmøte](recording-attendance.md) manuelt eller sette opp [selvbetjent innsjekking](check-in.md).
+Hvis du setter opp frammøte for første gang, begynn med veiledningen [Frammøteoppsett](setup.md) for å definere samlingene og tjenestidene dine. Når det er på plass, kan du begynne å [registrere frammøte](recording-attendance.md) manuelt eller sette opp [selvregistrering](check-in.md).
 :::

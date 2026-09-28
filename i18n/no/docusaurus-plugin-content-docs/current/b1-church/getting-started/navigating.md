@@ -1,49 +1,79 @@
 ---
-title: "Navigere i B1App"
+title: "Navigering av B1App"
 ---
 
-# Navigere i B1App
+# Navigering av B1App
 
 <div class="article-intro">
 
-Medlemsportalen i B1.church bruker et sidemeny-oppsett som gjør det enkelt å bevege seg mellom de ulike verktøyene som er tilgjengelige for deg. Denne siden forklarer hvordan navigasjonen fungerer på både datamaskin og mobile enheter.
+Medlemsportalen i B1.church er en mobil-først nettapp som ligger under `/mobile`. Den fungerer i hvilken som helst nettleser og kan installeres på startskjermen din. Denne siden forklarer Home-instrumentpanelet, fanelinjen nederst, More-menyen og Min Side.
 
 </div>
 
 <div class="prereqs">
-<h4>Før du begynner</h4>
+<h4>Før Du Begynner</h4>
 
-- Du må være [logget inn](./logging-in.md) for å få tilgang til medlemsportalen.
+- Du må være [logget inn](./logging-in.md) for å se din personlige informasjon. Avloggede besøkende kan fortsatt bla gjennom offentlig innhold og får tilbud om en **Logg Inn**-knapp der en funksjon krever en konto.
 
 </div>
 
-## Sidemeny-navigasjon
+## Hjem
 
-Når du går inn i medlemsportalen, ser du en vertikal sidemeny på venstre side av skjermen. Denne sidemenyen inneholder faner for hver del av portalen:
+Åpning av `https://dinkirkenavn.b1.church/mobile` tar deg til **Hjem**-instrumentpanelet på `/mobile/dashboard`. Hjem er landingssiden for medlemsportalen og viser:
 
-- **Tidslinje** -- Din personlige strøm av oppdateringer og samtaler fra gruppene og kirken din. Dette er standardfanen som lastes når du åpner medlemsportalen.
-- **Meg** -- Ditt personlige dashbord med kommende tjenesteoppdrag, påmeldinger, gruppearrangementer og nylige varsler. Se [Meg-siden](./me-page).
-- **Grupper** -- Se og samhandle med [gruppene](../groups/) du tilhører.
-- **Fellesskap** -- Bla gjennom kirkens [medlemskatalog](../community/member-directory.md).
-- **Planer** -- Se kommende [tjenesteplaner](../plans/) og posisjonene du er tildelt som frivillig.
-- **Innsjekking** -- [Sjekk inn](../checkin/) deg selv og husstanden din til gudstjenester og arrangementer.
-- **Leksjoner** *(avviklet)* -- Leksjoner-fanen i portalen er erstattet av [FreePlay](/docs/freeplay/) for avspilling i klasserommet. Bla gjennom pensum direkte på [Lessons.church](https://lessons.church), eller se [Leksjoner-referansesiden](../content/lessons.md) for detaljer.
-- **Giving** -- Gi online [donasjoner](../giving/) og se givehistorikken din.
+- En hilsen med ditt navn
+- Dagens vers
+- Et fremhevet kort for hva kirken din har fremhevet
+- Et **Utforsk**-rutenett over verktøyene kirken din har skrudd på -- grupper, givning, innsjekking, prekener, planer og mer
 
-Klikk på en hvilken som helst fane for å bytte til den delen. Den aktive fanen er uthevet slik at du alltid vet hvor du er.
+Trykk på et kort i Utforsk for å åpne det verktøyet. Hvis kirken din har flere verktøy enn som passer på instrumentpanelet, er det siste kortet **Mer**, som åpner den fullstendige listen på `/mobile/more`.
+
+## Fanelisten nederst
+
+På en telefon er en fanelist festet til bunnen av skjermen:
+
+- **Hjem** -- alltid første fane
+- Opptil tre av fanene kirken din har konfigurert
+- **Mer** -- åpner navigasjonsmenyen
+
+Hvis kirken din har konfigurert mer enn tre faner, forsvinner resten ikke: de vises i **Mer**-menyen og på instrumentpanelet Utforsk-rutenettet. Kirkeadministratorer angir faneordenen i B1 Admin under **Mobil → Navigering**.
+
+## Menyen
+
+Trykk på **Mer** for å åpne navigasjonsmenyen. På et nettbrett eller skrivebord er den samme menyen alltid synlig langs venstre side av skjermen. Den inneholder:
+
+- Ditt navn og foto, med en **Rediger Profil**-snarvei -- se [Redigering av Din Profil](./editing-your-profile.md)
+- **Hjem** og **Min**
+- **Admin Portal** -- vises bare hvis du har administratortillatelser på kirken din; den åpner B1 Admin
+- Hver fane kirken din konfigurerte, i rekkefølge
+- **Installer App** -- åpner [installasjonsinstruksjonene](./installing-pwa.md) på `/mobile/install`
+- En lys-/mørk modus-veksler
+- **Logg Inn** eller **Logg Ut**
+- Kirkens navn og en lenke til personvernerklæringen
+
+## Applinjen
+
+Linjen øverst på hver skjerm viser:
+
+- Skjermtittelen, eller kirkenavn på Hjem
+- En bakpil når du har drillet inn i en detalj-skjerm
+- Et **klokke**-ikon for varsler og meldinger, med et merke for uleste elementer
+- Ditt **profilfoto**, som åpner profilen din på `/mobile/profileEdit` -- se [Redigering av Din Profil](./editing-your-profile.md)
+
+## Min Side
+
+**Min** (`/mobile/me`) er ditt personlige knutepunkt. Det viser snarveier til profilen din, [varselpreferanser](./notification-preferences.md), meldinger, [givning](../giving/), og [registreringer](../events/my-registrations.md), fulgt av hva som venter deg -- tjenesteoppdrag, arrangementsregistreringer og gruppearrangementer -- og dine siste varsler. Se [Min Side](./me-page) for detaljer.
+
+Hvis du er logget ut, viser Min Side en **Logg Inn**-knapp i stedet.
+
+## Installering til Startskjermen Din
+
+Medlemsportalen er en Progressive Web App. Besøk `/mobile/install` (eller velg **Installer App** i menyen) for trinn-for-trinn instruksjoner for enheten din. Når den er installert, åpnes den fullskjerm fra startskjermen uten nettleserkrom. Se [Installering som en App (PWA)](./installing-pwa.md).
+
+## Kirkens Offentlige Nettsted
+
+Utenfor medlemsportalen har kirkens offentlige nettsted sin egen topptekst-navigering med lenker administratorene har konfigurert -- sider som [prekener](../content/sermons.md), [Bibelen](../content/bible.md), [direktesending](../content/live-streaming.md), og en offentlig gruppeliste. På en telefon befinner disse lenkene seg bak hamburgerikonet øverst til høyre i toppteksten.
 
 :::info
-Fanene du ser kan variere avhengig av hva kirken din har aktivert. Kirkeadministratorer styrer hvilke deler som er synlige for medlemmer gjennom B1 Admin. Hvis du ikke ser en bestemt fane, har kirken din kanskje ikke skrudd på den funksjonen.
+Fanene og verktøyene du ser varierer etter kirke. Administratorer kontrollerer hvilke seksjoner som er synlige for medlemmer gjennom B1 Admin, så hvis du ikke ser en funksjon beskrevet her, kan kirken din ikke ha skrudd på den.
 :::
-
-## Mobilnavigasjon
-
-På mindre skjermer, som telefoner og nettbrett, kollapser sidemenyen for å spare plass. I stedet ser du en **Meny**-knapp øverst i medlemsportalen. Trykk på den for å åpne en liste over alle tilgjengelige faner. Velg en fane for å navigere til den delen, og menyen lukkes automatisk.
-
-## Administrasjonsfane
-
-Hvis du har administratortillatelser i kirken din, ser du en ekstra **Admin**-fane nederst i sidemenyen. Klikker du på den, tar det deg til B1 Admin, der du kan administrere kirkens innstillinger og data.
-
-## Toppmeny-navigasjon
-
-Utenfor medlemsportalen inneholder nettstedets hovedtopptekst kirkens egendefinerte navigasjonslenker. Disse konfigureres av kirkens administratorer og kan inkludere lenker til sider som [prekener](../content/sermons.md), [Bibelen](../content/bible.md), [direktesending](../content/live-streaming.md) og annet innhold. På mobil er disse lenkene tilgjengelige gjennom et hamburgermeny-ikon øverst til høyre i toppteksten.

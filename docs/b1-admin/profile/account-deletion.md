@@ -22,14 +22,14 @@ When a church has a Directory Approval Group configured, account deletion no lon
 
 Account deletion is requested from the **My Profile** page — the same shared account page covered in [Managing Your Profile](./managing-profile.md) — under its **Account Deletion** section. When an approval group is configured, confirming the request does not delete anything right away. Instead it:
 
-1. Creates an open task titled **"Account deletion request"**, assigned to the Directory Approval Group, under **Serving &rarr; Tasks**.
+1. Creates an open task titled **"Account deletion request"**, assigned to the Directory Approval Group, under **Serving &rarr; My Work**.
 2. Disables the **Delete my account** button for that person and shows a notice that the request is awaiting review.
 
 Submitting a second request while one is already open just reopens the same task — a person can only have one pending deletion request at a time.
 
 ## Reviewing a Request
 
-1. Go to **Serving &rarr; Tasks** (or **Assigned to My Groups** on your dashboard, the same place [profile change requests](./approving-profile-changes.md) appear).
+1. Go to **Serving &rarr; My Work** (or **Assigned to My Groups** on your dashboard, the same place [profile change requests](./approving-profile-changes.md) appear).
 2. Open the task titled **"Account deletion request from *Name*"**.
 3. You'll see two actions: **Approve deletion** and **Decline**.
 

@@ -12,8 +12,9 @@ Notification preferences let you decide which notifications you receive from you
 
 ## Opening Your Preferences
 
-1. Open the **Notifications** area (the bell icon) in the B1 member app.
-2. Tap **Notification Preferences**.
+1. Go to the **Me** page and tap **Notification Preferences** under **Shortcuts**.
+
+You can also tap the bell icon, open the **Notifications** tab, tap **View all notifications**, and then tap **Notification Preferences** on that page.
 
 ## Global Controls
 
@@ -45,7 +46,7 @@ Some types are **off by default** (such as promotional or fundraising messages) 
 
 ## Saving Your Changes
 
-After adjusting your preferences, tap **Save**. Your changes take effect right away and apply everywhere you use B1.
+After adjusting your preferences, tap **Save Preferences**. Your changes take effect right away and apply everywhere you use B1.
 
 :::tip
 Time-sensitive notifications -- like a security alert or a child check-in safety message -- still reach you even during quiet hours. Everyday updates wait until quiet hours end.

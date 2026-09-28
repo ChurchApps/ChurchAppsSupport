@@ -2,205 +2,208 @@
 title: "वर्कफ़्लो"
 ---
 
-# Workflows
+# वर्कफ़्लो
 
 <div class="article-intro">
 
-Workflows move people through a series of steps on a visual board. Each person becomes a card that travels from one step to the next -- from a first-time guest follow-up, to a membership process, to a first-time giver thank-you, and anything else where you need to track many people through the same set of stages. A step can ask a volunteer to do something (make a call, have a conversation) **and** run automated actions on its own -- send an email, wait a few days, add the person to a group -- so Workflows handle both the human follow-up and the busywork around it. Workflows extend [Tasks](./tasks.md) into a drag-and-drop Kanban board so nothing and no one falls through the cracks.
+वर्कफ़्लो लोगों को एक दृश्य बोर्ड पर चरणों की एक श्रृंखला के माध्यम से ले जाते हैं। प्रत्येक व्यक्ति एक कार्ड बन जाता है जो एक चरण से अगले चरण तक जाता है -- पहली बार आने वाले अतिथि का अनुवर्ती, सदस्यता प्रक्रिया से, पहली बार देने वाले का धन्यवाद, और कुछ भी जहां आपको कई लोगों को चरणों के एक ही सेट के माध्यम से ट्रैक करने की आवश्यकता है। एक चरण किसी स्वयंसेवक को कुछ करने के लिए कह सकता है (कॉल करें, बातचीत करें) **और** स्वयं स्वचालित कार्यों को चलाएं -- ईमेल भेजें, कुछ दिन प्रतीक्षा करें, व्यक्ति को एक समूह में जोड़ें -- इसलिए वर्कफ़्लो मानव अनुवर्ती और इसके चारों ओर की व्यस्त काम दोनों को संभालते हैं। वर्कफ़्लो [कार्य](./tasks.md) को एक ड्रैग-एंड-ड्रॉप कनबन बोर्ड में विस्तारित करते हैं ताकि कुछ भी और कोई भी दरारों से न गिरे।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- Make sure the people you want to track exist in B1 Admin
-- Familiarize yourself with how [Tasks](./tasks.md) work, since each card on a board is a task
-- To use the **Send email** action, create the email templates you want to send first (managed under **Messaging → Manage Templates**)
-- You will need the appropriate Tasks permission. Viewing, editing cards, and managing workflows are separate permission levels (see [Roles & Permissions](../settings/roles-permissions.md))
+- सुनिश्चित करें कि आप जिन लोगों को ट्रैक करना चाहते हैं वे B1 Admin में मौजूद हैं
+- अपने आप को यह समझाने से परिचित करें कि [कार्य](./tasks.md) कैसे काम करते हैं, क्योंकि बोर्ड पर प्रत्येक कार्ड एक कार्य है
+- **Send email** कार्रवाई का उपयोग करने के लिए, पहले उन ईमेल टेम्पलेट बनाएं जिन्हें आप भेजना चाहते हैं (**Messaging → Manage Templates** के तहत प्रबंधित)
+- आपको उपयुक्त कार्य अनुमति की आवश्यकता होगी। देखना, संपादन कार्ड, और वर्कफ़्लो प्रबंधन अलग-अलग अनुमति स्तर हैं ([Roles & Permissions](../settings/roles-permissions.md) देखें)
 
 </div>
 
-## Viewing Workflows
+## वर्कफ़्लो देखना
 
-Navigate to **Serving**, open the **Tasks** area, and select **Workflows** from the menu. You will see your workflows listed and grouped by category, with active workflows highlighted. Click any workflow to open its board.
+**Serving** पर जाएं और मेनू से **Workflows** चुनें। आप अपने वर्कफ़्लो को सूचीबद्ध और श्रेणी द्वारा समूहीकृत देखेंगे, सक्रिय वर्कफ़्लो हाइलाइट किए जाएंगे। अपने बोर्ड को खोलने के लिए किसी भी वर्कफ़्लो पर क्लिक करें।
 
-## Creating a Workflow
+## एक वर्कफ़्लो बनाना
 
-1. On the Workflows page, click **Add Workflow**.
-2. Choose how to start:
-   - **Blank workflow** -- start from scratch and build your own steps.
-   - **From a template** -- start with a ready-made set of steps you can edit. Built-in templates include:
-     - **New Visitor Follow-up** -- Send welcome email → Personal phone call → Invite to next step → Connected
-     - **Membership Class** -- Express interest → Register for class → Attend class → Complete membership
-     - **First-time Giver Thank-you** -- Send thank-you note → Share giving impact → Stewarded
-3. Give the workflow a **Name**.
-4. Optionally assign a **Category** to group related workflows together. You can create a new category right from the dropdown.
-5. Leave the workflow **Active** so people can be added to it, or set it to **Inactive** to hide it from the add-to-workflow lists.
-6. Click **Save**.
+1. वर्कफ़्लो पेज पर, **Add Workflow** पर क्लिक करें।
+2. कैसे शुरू करें चुनें:
+   - **Blank workflow** -- शुरुआत से शुरू करें और अपने स्वयं के चरण बनाएं।
+   - **From a template** -- तैयार किए गए चरणों के सेट के साथ शुरू करें जिन्हें आप संपादित कर सकते हैं। बिल्ट-इन टेम्पलेट शामिल हैं:
+     - **New Visitor Follow-up** -- स्वागत ईमेल भेजें → व्यक्तिगत फोन कॉल → अगले चरण के लिए आमंत्रित करें → जुड़ा हुआ
+     - **Membership Class** -- रुचि व्यक्त करें → कक्षा के लिए पंजीकरण करें → कक्षा में भाग लें → सदस्यता पूर्ण करें
+     - **First-time Giver Thank-you** -- धन्यवाद नोट भेजें → देने का प्रभाव साझा करें → संरक्षित
+3. वर्कफ़्लो को एक **नाम** दें।
+4. वैकल्पिक रूप से संबंधित वर्कफ़्लो को एक साथ समूहित करने के लिए एक **श्रेणी** निर्दिष्ट करें। आप ड्रॉपडाउन से सीधे एक नई श्रेणी बना सकते हैं।
+5. वर्कफ़्लो को **सक्रिय** छोड़ दें ताकि लोगों को इसमें जोड़ा जा सके, या इसे **निष्क्रिय** में सेट करें ताकि इसे वर्कफ़्लो सूचियों में जोड़ने से छुपाया जा सके।
+6. **Save** पर क्लिक करें।
 
 :::tip
-Use the **Duplicate** button on the Workflows list to copy an existing workflow -- including its steps, automated actions, and routing -- as the starting point for a new one.
+वर्कफ़्लो सूची पर **Duplicate** बटन का उपयोग करके एक मौजूदा वर्कफ़्लो की प्रतिलिपि बनाएं -- इसके चरण, स्वचालित कार्य, और रूटिंग सहित -- एक नए के लिए प्रारंभिक बिंदु के रूप में।
 :::
 
-## Building the Board with Steps
+## चरणों के साथ बोर्ड बनाना
 
-Each workflow board is made up of **steps**, shown as columns from left to right. Open a workflow and use **Add Step** to create each stage of your process.
+प्रत्येक वर्कफ़्लो बोर्ड **चरणों** से बना है, जो बाएं से दाएं स्तंभ के रूप में दिखाए जाते हैं। एक वर्कफ़्लो खोलें और अपनी प्रक्रिया के प्रत्येक चरण को बनाने के लिए **Add Step** का उपयोग करें।
 
-When you add or edit a step, you can configure:
+जब आप एक चरण जोड़ते या संपादित करते हैं, तो आप कॉन्फ़िगर कर सकते हैं:
 
-- **Step Name** -- the column heading (for example, "Welcome Call" or "Awaiting Registration").
-- **Due in (days)** -- automatically sets a due date when a card enters this step. Cards past their due date are flagged as **Overdue**.
-- **Default assignee** -- the person or group new cards on this step are assigned to automatically.
-- **Automated actions** -- things the system does on its own when a card arrives (see below).
-- **Routing** -- where the card goes when it leaves the step (see [Routing](#routing-cards-with-outcomes-and-conditions)).
+- **Step Name** -- स्तंभ शीर्ष (उदाहरण के लिए, "Welcome Call" या "Awaiting Registration")।
+- **Due in (days)** -- स्वचालित रूप से एक कार्य तिथि निर्धारित करता है जब एक कार्ड इस चरण में प्रवेश करता है। अपनी कार्य तिथि से अतीत कार्ड **Overdue** के रूप में झंडी लगाए जाते हैं।
+- **Default assignee** -- व्यक्ति या समूह जिसे इस चरण पर नए कार्ड स्वचालित रूप से सौंपे जाते हैं।
+- **Automated actions** -- चीजें जो सिस्टम अपने आप करता है जब एक कार्ड पहुंचता है (नीचे देखें)।
+- **Routing** -- कार्ड कहां जाता है जब यह चरण को छोड़ता है ([Routing](#routing-cards-with-outcomes-and-conditions) देखें)।
 
-Drag step columns into the order that matches your process. The order also defines the default path a card takes when no other routing applies.
+चरण स्तंभों को उस क्रम में खींचें जो आपकी प्रक्रिया से मेल खाता है। यह आदेश उस डिफ़ॉल्ट पथ को भी परिभाषित करता है जो एक कार्ड तब लेता है जब कोई अन्य रूटिंग लागू नहीं होता है।
 
 :::info
-Save a new step first. Automated actions and routing attach to the step, so the editor unlocks those sections once the step exists.
+पहले एक नया चरण सहेजें। स्वचालित कार्य और रूटिंग चरण को जोड़ते हैं, इसलिए संपादक उन अनुभागों को अनलॉक करता है एक बार चरण मौजूद होता है।
 :::
 
-## Automated Actions
+## स्वचालित कार्यें
 
-Every step can carry a list of **automated actions** that run by themselves the moment a card **enters** the step -- before anyone touches it. This is how a step both prompts a volunteer *and* takes care of the routine work around the follow-up.
+प्रत्येक चरण **स्वचालित कार्यों** की एक सूची ले सकता है जो स्वयं उस क्षण चलते हैं जब एक कार्ड **चरण में प्रवेश करता है** -- इससे पहले कि कोई इसे छुए। यह वह तरीका है जो एक चरण एक स्वयंसेवक को *और* अनुवर्ती के चारों ओर की दिनचर्या काम का ख्याल रखता है।
 
-In the step editor, open **Automated actions**, click **Add Action**, choose a type, fill in its settings, and click the save icon on that action. Add as many as you need; they run **top to bottom in order**.
+चरण संपादक में, **Automated actions** खोलें, **Add Action** पर क्लिक करें, एक प्रकार चुनें, इसकी सेटिंग भरें, और उस कार्रवाई पर सहेजें आइकन पर क्लिक करें। जितने चाहें जोड़ें; वे **ऊपर से नीचे क्रम में चलते हैं**।
 
-| Action | What it does |
+| कार्रवाई | यह क्या करता है |
 |---|---|
-| **Send email** | Emails the person an email template you choose. You can override the subject line. |
-| **Wait** | Pauses the card for a number of days before continuing (see below). |
-| **Add to group** | Adds the person to a [group](../groups/index.md) you pick. |
-| **Add to workflow** | Starts the person on another workflow -- useful for handing off between processes. |
-| **Add note** | Records a note in the card's history. |
-| **Set field** | Updates a field on the person's record: Membership Status, Marital Status, Gender, City, State, or Zip. |
-| **Webhook** | Sends the card's details to an external web address (URL) you provide, for connecting to other systems. |
+| **Send email** | व्यक्ति को एक ईमेल टेम्पलेट ईमेल करता है जिसे आप चुनते हैं। आप विषय पंक्ति को ओवरराइड कर सकते हैं। |
+| **Wait** | किसी कार्ड को जारी रखने से पहले कुछ दिनों के लिए रोकता है (नीचे देखें)। |
+| **Add to group** | व्यक्ति को एक [समूह](../groups/index.md) जिसे आप चुनते हैं, जोड़ता है। |
+| **Add to workflow** | व्यक्ति को दूसरे वर्कफ़्लो पर शुरू करता है -- प्रक्रियाओं के बीच हाथ बंद करने के लिए उपयोगी। |
+| **Add note** | कार्ड के इतिहास में एक नोट रिकॉर्ड करता है। |
+| **Set field** | व्यक्ति के रिकॉर्ड पर एक क्षेत्र को अपडेट करता है: सदस्यता स्थिति, वैवाहिक स्थिति, लिंग, शहर, राज्य, या ज़िप। |
+| **Webhook** | कार्ड के विवरण को एक बाहरी वेब पते (URL) भेजता है जिसे आप प्रदान करते हैं, अन्य सिस्टमों से जुड़ने के लिए। |
 
-After all of a step's actions finish, the card **rests on that step** so a person can work it -- unless the step has an automatic route that moves it onward (see [Fully automated steps](#fully-automated-steps)).
-
-:::info
-Automated actions run only when a card arrives through the normal flow -- when it's first added, when an outcome or automatic route brings it in, or after a Wait finishes. They do **not** re-run when a staff member manually drags a card onto the step or sends it back, so a person won't get the same email twice.
-:::
-
-### Sending email
-
-Choose **Send email**, pick one of your email templates, and optionally type a custom subject. When a card enters the step, the person receives that email automatically. (If the person has no email address on file, the step simply skips this action.)
-
-### Waiting a few days (drip sequences)
-
-The **Wait** action holds a card for the number of days you set. While it waits, the card shows as **Snoozed**. When the wait is over:
-
-1. Any **remaining actions on the same step** run -- so you can build a drip like **Send email → Wait 3 days → Send a reminder email**.
-2. Then, if the step has an automatic route, the card moves on; otherwise it rests on the step for a person to pick up.
-
-:::tip
-A **Wait** at the very start of a step is a simple way to "hold" a card before it surfaces to a volunteer -- for example, *Wait 7 days, then a coach reaches out*.
-:::
-
-## Adding People as Cards
-
-There are several ways to put people on a board:
-
-- **From the board** -- Click **Add Card** at the bottom of a step column and pick a person. You can also pick a group, and every member of that group is added as a card.
-- **From a person's record** -- Use **Add to Workflow** on a person's page to drop them onto a workflow.
-- **From People search** -- Select multiple people and use the bulk **Add to Workflow** action to add them all at once.
-- **Automatically with a trigger** -- Add people when something happens, like a form submission or a first gift (see [Triggers](#triggers) below).
-
-## Working the Board
-
-Open a workflow to see its board. Each card shows the person's name, who it is assigned to, and a due-date or status chip (**Overdue** or **Snoozed**). A step column also shows small badges for any automated actions it runs and annotations for its routing, giving you an at-a-glance map of how cards flow.
-
-- **Move a card** -- Drag a card from one column to the next as the person progresses.
-- **Open a card** -- Double-click a card (or click it) to open its detail drawer, where you can change the step, reassign it, add notes, and review what's already happened.
-
-From the card drawer you can:
-
-- **Assign** the card to a different person or group.
-- **Snooze** the card for 1 day, 3 days, or 1 week to temporarily hide its due date.
-- **Send Back** to the previous step or **Skip** to the next step.
-- **Pin assignment** -- keep the same owner on the card even as it moves between steps. By default, moving a card to a new step reassigns it to that step's default assignee; pinning keeps the current person responsible throughout.
-- **Complete** the card to finish it, or choose an **Outcome** button if the step has outcomes configured (see [Routing](#routing-cards-with-outcomes-and-conditions)).
-- **Add notes** and review the card's **history** -- including a log of automated actions that have run (emails sent, waits, etc.).
-
-### Bulk actions
-
-Select the checkboxes on multiple cards to act on them together. A toolbar appears letting you **Complete**, **Snooze**, **Reassign**, or **Move** all selected cards to another step at once.
-
-## Routing Cards with Outcomes and Conditions
-
-Routing controls where a card goes when it leaves a step. Open a step's editor to configure two kinds of routing.
-
-### Outcome buttons
-
-Outcomes are buttons shown on the card drawer when you are completing a card on that step. Instead of a single **Complete** button, you can offer choices like "Joined a Group" or "Not Interested." Each outcome can:
-
-- Send the card to **another step** in this workflow,
-- **Hand the card off** to a different workflow entirely, or
-- **Close** the card.
-
-This lets one decision branch the person down different paths.
-
-### Automatic routing (conditional)
-
-Automatic routes move a card onward **the moment it enters a step** (and after its automated actions finish), without anyone clicking, if the person matches a set of conditions. Add a route, choose the target step, and define one or more **conditions** (for example, a person's campus, age, or membership status). A route with no conditions matches everyone.
+चरण के सभी कार्यों के समाप्त होने के बाद, कार्ड **उस चरण पर रहता है** ताकि कोई व्यक्ति इसके साथ काम कर सके -- जब तक कि चरण के पास एक स्वचालित मार्ग न हो जो इसे आगे बढ़ाता है ([Fully automated steps](#fully-automated-steps) देखें)।
 
 :::info
-On the board, each step column shows small annotations describing its routing -- for example, an outcome label or "if matches" followed by an arrow to the destination step or workflow.
+स्वचालित कार्य केवल तभी चलते हैं जब एक कार्ड सामान्य प्रवाह के माध्यम से पहुंचता है -- जब इसे पहली बार जोड़ा जाता है, जब एक परिणाम या स्वचालित मार्ग इसे ले आता है, या Wait समाप्त होने के बाद। वे **फिर से नहीं चलते हैं** जब कर्मचारी सदस्य मैन्युअल रूप से कार्ड को चरण पर खींचते हैं या इसे वापस भेजते हैं, इसलिए व्यक्ति को एक ही ईमेल दो बार नहीं मिलेगा।
 :::
 
-## Fully Automated Steps
+### ईमेल भेजना
 
-You can make a step run entirely on its own, with no one working it. Give the step its **automated actions** and add an **automatic route** (with no conditions) pointing to the next step. When a card enters, the actions run, and then the route advances it immediately -- the card passes straight through.
+**Send email** चुनें, अपने ईमेल टेम्पलेट में से एक चुनें, और वैकल्पिक रूप से एक कस्टम विषय टाइप करें। जब एक कार्ड चरण में प्रवेश करता है, तो व्यक्ति को वह ईमेल स्वचालित रूप से प्राप्त होता है। (यदि व्यक्ति के पास फ़ाइल पर कोई ईमेल पता नहीं है, तो चरण सरलता से इस कार्रवाई को छोड़ देता है।)
+
+:::info
+वर्कफ़्लो ईमेल केवल आपके चर्च को समूह ईमेल भेजने के लिए अनुमोदित किए जाने के बाद जाता है, और वे आपके चर्च की दैनिक ईमेल सीमा की ओर गिनती करते हैं। [Turning On Group Email for Your Church](../groups/group-members.md#turning-on-group-email-for-your-church) देखें।
+:::
+
+### कुछ दिन प्रतीक्षा करना (ड्रिप अनुक्रम)
+
+**Wait** कार्रवाई एक कार्ड को आपके द्वारा निर्धारित दिनों की संख्या के लिए रोकती है। जब तक यह प्रतीक्षा करता है, कार्ड **Snoozed** के रूप में दिखाई देता है। जब प्रतीक्षा समाप्त हो जाती है:
+
+1. **उसी चरण पर शेष कार्य** चलते हैं -- इसलिए आप **Send email → Wait 3 days → Send a reminder email** जैसे ड्रिप बना सकते हैं।
+2. फिर, यदि चरण के पास एक स्वचालित मार्ग है, तो कार्ड आगे बढ़ता है; अन्यथा यह एक व्यक्ति को चुनने के लिए चरण पर आराम करता है।
 
 :::tip
-Combine this with **Wait**: *Send welcome email → Wait 3 days → automatically advance to the "Personal call" step.* The email and the timing are handled for you, and a volunteer only sees the card when it's time for the human touch.
+एक चरण की शुरुआत में एक **Wait** एक कार्ड को "hold" करने का एक सरल तरीका है इससे पहले कि यह एक स्वयंसेवक को सतह पर आए -- उदाहरण के लिए, *Wait 7 days, then a coach reaches out*।
 :::
 
-## Triggers
+## कार्डों के रूप में लोगों को जोड़ना
 
-Triggers add people to a workflow automatically when something happens, so you never have to add cards by hand. On a workflow board, click the **Triggers** tab, then **Add Trigger**. There are two kinds:
+बोर्ड पर लोगों को रखने के कई तरीके हैं:
 
-### Event triggers
+- **बोर्ड से** -- चरण स्तंभ के निचले भाग में **Add Card** पर क्लिक करें और एक व्यक्ति चुनें। आप एक समूह भी चुन सकते हैं, और उस समूह के प्रत्येक सदस्य को एक कार्ड के रूप में जोड़ा जाता है।
+- **किसी व्यक्ति के रिकॉर्ड से** -- किसी व्यक्ति के पेज पर **Add to Workflow** का उपयोग करके उन्हें एक वर्कफ़्लो पर छोड़ दें।
+- **लोगों की खोज से** -- कई लोगों का चयन करें और बल्क **Add to Workflow** कार्रवाई का उपयोग करके उन सभी को एक बार में जोड़ें।
+- **एक ट्रिगर के साथ स्वचालित रूप से** -- जब कुछ होता है तो लोगों को जोड़ें, जैसे एक फॉर्म सबमिशन या एक पहला उपहार ([Triggers](#triggers) नीचे देखें)।
 
-Fire as soon as a record changes in B1. Choose the event, then optionally add **conditions** so only matching people are added:
+## बोर्ड पर काम करना
 
-- **Person · Created / Updated** -- e.g. add anyone whose status becomes *Visitor*.
-- **Donation · Created** -- e.g. add a first-time or large gift to a thank-you workflow (match on amount, fund, or method).
-- **Group · Member Joined** / **Group · Created**.
-- **Form · Submitted** -- add anyone who submits a chosen form (great for an "I'm New" or "Connect" card).
+एक वर्कफ़्लो खोलें इसके बोर्ड को देखने के लिए। प्रत्येक कार्ड व्यक्ति का नाम, किसे सौंपा गया है, और एक कार्य तिथि या स्थिति चिप (**Overdue** या **Snoozed**) दिखाता है। एक चरण स्तंभ किसी भी स्वचालित कार्यों के लिए छोटे बैज भी दिखाता है और इसकी रूटिंग के लिए व्याख्याएं, कार्डों के कैसे प्रवाह का एक-एक नज़र का नक्शा देता है।
 
-### Schedule triggers
+- **कार्ड को स्थानांतरित करें** -- एक कार्ड को एक स्तंभ से अगले तक खींचें जब व्यक्ति प्रगति करता है।
+- **एक कार्ड खोलें** -- दोहरी-क्लिक एक कार्ड (या इसे क्लिक करें) अपने विवरण दराज को खोलने के लिए, जहां आप चरण को बदल सकते हैं, इसे पुनः असाइन कर सकते हैं, नोट्स जोड़ सकते हैं, और देख सकते हैं कि क्या पहले से हुआ है।
 
-Run on a recurring basis -- daily, weekly, monthly, or yearly -- against a set of conditions. Use these for time-based outreach such as *everyone whose membership anniversary is today* or a *monthly* check-in.
+कार्ड दराज से आप कर सकते हैं:
 
-For any trigger you can also set:
+- **असाइन** कार्ड को एक अलग व्यक्ति या समूह को।
+- **Snooze** कार्ड 1 दिन, 3 दिन, या 1 सप्ताह के लिए इसकी कार्य तिथि को अस्थायी रूप से छुपाने के लिए।
+- **भेज वापस** पिछले चरण को या **छोड़ दें** अगले चरण के लिए।
+- **असाइनमेंट पिन करें** -- कार्ड पर एक ही मालिक को रखें भले ही यह चरणों के बीच चलता हो। डिफॉल्ट रूप से, एक कार्ड को एक नए चरण में स्थानांतरित करना इसे उस चरण के डिफॉल्ट असाइन करने वाले को पुनः असाइन करता है; पिन वर्तमान व्यक्ति को पूरे समय जिम्मेदार रखता है।
+- **पूर्ण** कार्ड को समाप्त करने के लिए, या एक **परिणाम** बटन चुनें यदि चरण के पास परिणाम कॉन्फ़िगर किए गए हैं ([Routing](#routing-cards-with-outcomes-and-conditions) देखें)।
+- **नोट्स जोड़ें** और कार्ड के **इतिहास** की समीक्षा करें -- स्वचालित कार्यों के दौरान एक लॉग सहित (ईमेल भेजे गए, प्रतीक्षा, आदि)।
 
-- The **entry step** the new card starts on (defaults to the first step).
-- **Once per person** -- so the same person isn't added to the workflow twice by the trigger.
-- **Active** -- turn the trigger on or off without deleting it.
+### बल्क कार्य
+
+कई कार्डों पर चेकबॉक्स को एक साथ कार्य करने के लिए चुनें। एक टूलबार दिखाई देता है जो आपको सभी चुने हुए कार्डों को **पूर्ण**, **Snooze**, **पुनः असाइन**, या **स्थानांतरित** करने देता है एक बार में दूसरे चरण तक।
+
+## परिणामों और शर्तों के साथ कार्डों को रूट करना
+
+रूटिंग नियंत्रित करता है कि एक कार्ड कहां जाता है जब यह एक चरण को छोड़ता है। एक चरण के संपादक को खोलें और दो तरह की रूटिंग को कॉन्फ़िगर करने के लिए।
+
+### परिणाम बटन
+
+परिणाम उस चरण पर कार्ड दराज पर दिखाई देने वाली बटन हैं जब आप कार्ड को पूर्ण कर रहे हों। एक एकल **पूर्ण** बटन के बजाय, आप "Joined a Group" या "Not Interested" जैसे विकल्प की पेशकश कर सकते हैं। प्रत्येक परिणाम कर सकता है:
+
+- कार्ड को **इस वर्कफ़्लो में एक और चरण** भेजें,
+- **कार्ड को एक अलग वर्कफ़्लो को सौंप दें**, या
+- **बंद करें** कार्ड को।
+
+यह एक निर्णय को व्यक्ति को विभिन्न पथों में शाखित करने देता है।
+
+### स्वचालित रूटिंग (सशर्त)
+
+स्वचालित मार्ग एक कार्ड को आगे बढ़ाते हैं **उस क्षण जब यह एक चरण में प्रवेश करता है** (और इसके स्वचालित कार्य समाप्त होने के बाद), बिना किसी को क्लिक किए, यदि व्यक्ति शर्तों के एक सेट से मेल खाता है। एक मार्ग जोड़ें, लक्ष्य चरण चुनें, और एक या अधिक **शर्तें** परिभाषित करें (उदाहरण के लिए, व्यक्ति का कैंपस, आयु, या सदस्यता स्थिति)। बिना शर्तों के एक मार्ग सभी से मेल खाता है।
+
+:::info
+बोर्ड पर, प्रत्येक चरण स्तंभ अपनी रूटिंग का वर्णन करने वाली छोटी व्याख्याओं को दिखाता है -- उदाहरण के लिए, एक परिणाम लेबल या "if matches" लक्ष्य चरण या वर्कफ़्लो के लिए एक तीर के बाद।
+:::
+
+## पूरी तरह से स्वचालित चरण
+
+आप एक चरण को पूरी तरह से अपने आप चलाने के लिए बना सकते हैं, बिना किसी के इस पर काम किए। चरण को इसके **स्वचालित कार्य** और **स्वचालित मार्ग** (बिना शर्तों के) अगले चरण की ओर इशारा करते हुए जोड़ें। जब एक कार्ड प्रवेश करता है, तो कार्य चलते हैं, और फिर मार्ग इसे तुरंत आगे बढ़ाता है -- कार्ड सीधे गुजर जाता है।
 
 :::tip
-Pair a **Form · Submitted** trigger with the **New Visitor Follow-up** template to turn your "Connect Card" or "I'm New" form into an automatic follow-up pipeline.
+इस **Wait** को मिलाएं: *Send welcome email → Wait 3 days → automatically advance to the "Personal call" step.* ईमेल और समय आपके लिए संभाले जाते हैं, और एक स्वयंसेवक केवल तभी कार्ड को देखता है जब यह मानव स्पर्श के लिए समय हो।
 :::
 
-## My Cards
+## ट्रिगर
 
-Volunteers and staff do not need to dig through every board to find their work. The **My Cards** page (linked from the Workflows page) lists every card assigned to the current user across all workflows. Clicking a card opens the board it belongs to.
+ट्रिगर स्वचालित रूप से लोगों को एक वर्कफ़्लो में जोड़ते हैं जब कुछ होता है, इसलिए आपको कभी कार्ड को हाथ से जोड़ना नहीं पड़ता। एक वर्कफ़्लो बोर्ड पर, **Triggers** टैब पर क्लिक करें, फिर **Add Trigger**। दो तरह के हैं:
 
-## Reports
+### ईवेंट ट्रिगर
 
-Open a workflow and click **Reports** to see analytics for that workflow:
+जैसे ही B1 में एक रिकॉर्ड बदलता है फायर करें। ईवेंट चुनें, फिर वैकल्पिक रूप से **शर्तें** जोड़ें ताकि केवल मिलान लोगों को जोड़ा जाए:
 
-- **Overdue** -- the number of cards past their due date.
-- **Cards per Step** -- how many cards currently sit on each step, shown as a column chart.
-- **Completed (30 days)** -- throughput over the last 30 days, shown as a line chart.
+- **Person · Created / Updated** -- जैसे कोई भी जिसकी स्थिति *Visitor* हो जाती है जोड़ें।
+- **Donation · Created** -- जैसे एक पहली बार या बड़े उपहार को एक धन्यवाद वर्कफ़्लो में जोड़ें (राशि, निधि, या विधि पर मिलान)।
+- **Group · Member Joined** / **Group · Created**।
+- **Form · Submitted** -- किसी भी को जोड़ें जो एक चुने गए फॉर्म को प्रस्तुत करता है (एक "I'm New" या "Connect" कार्ड के लिए शानदार)।
 
-Use these to spot bottlenecks -- for example, a step where cards pile up and never advance.
+### अनुसूची ट्रिगर
 
-## Related Articles
+दैनिक, साप्ताहिक, मासिक, या वार्षिक आधार पर शर्तों के एक सेट के खिलाफ चलाएं। समय-आधारित पहुंच के लिए इन का उपयोग करें जैसे *हर कोई जिसकी सदस्यता की सालगिरह आज है* या एक *मासिक* चेक-इन।
 
-- [Tasks](./tasks.md) -- the individual action items that workflow cards are built on
-- [Automations](./automations.md) -- create recurring tasks on a schedule
-- [Forms](../forms/index.md) -- build the forms that can trigger workflows
-- [Groups](../groups/index.md) -- the groups an "Add to group" action can place people in
-- [Roles & Permissions](../settings/roles-permissions.md) -- control who can view, edit, and manage workflows
+किसी भी ट्रिगर के लिए आप निम्न भी सेट कर सकते हैं:
+
+- **entry step** नया कार्ड शुरू होता है (पहले चरण में डिफॉल्ट)।
+- **Once per person** -- इसलिए एक ही व्यक्ति को ट्रिगर द्वारा वर्कफ़्लो में दो बार नहीं जोड़ा जाता है।
+- **सक्रिय** -- ट्रिगर को चालू या बंद करें इसे हटाए बिना।
+
+:::tip
+एक **Form · Submitted** ट्रिगर को **New Visitor Follow-up** टेम्पलेट के साथ जोड़ी जोड़ी अपनी "Connect Card" या "I'm New" फॉर्म को एक स्वचालित अनुवर्ती पाइपलाइन में बदल दें।
+:::
+
+## मेरे कार्ड
+
+स्वयंसेवक और कर्मचारी को हर बोर्ड के माध्यम से खोदने की जरूरत नहीं है अपना काम खोजने के लिए। **My Cards** पेज (वर्कफ़्लो पेज से जुड़ा) सभी वर्कफ़्लो में वर्तमान उपयोगकर्ता को सौंपे गए प्रत्येक कार्ड को सूचीबद्ध करता है। कार्ड पर क्लिक करने से उस बोर्ड को खोलता है जिससे यह संबंधित है।
+
+## रिपोर्ट
+
+एक वर्कफ़्लो खोलें और **Reports** पर क्लिक करें उस वर्कफ़्लो के लिए विश्लेषण देखने के लिए:
+
+- **Overdue** -- अपनी कार्य तिथि के बीते हुए कार्डों की संख्या।
+- **Cards per Step** -- कितने कार्ड वर्तमान में प्रत्येक चरण पर बैठते हैं, एक कॉलम चार्ट के रूप में दिखाया गया।
+- **Completed (30 days)** -- पिछले 30 दिनों में थ्रूपुट, एक लाइन चार्ट के रूप में दिखाया गया।
+
+बाधाओं को स्पॉट करने के लिए इन का उपयोग करें -- उदाहरण के लिए, एक चरण जहां कार्ड ढेर होते हैं और कभी भी आगे नहीं बढ़ते।
+
+## संबंधित लेख
+
+- [कार्य](./tasks.md) -- व्यक्तिगत कार्य आइटम जो वर्कफ़्लो कार्ड पर बनाए जाते हैं
+- [फॉर्म](../forms/index.md) -- वर्कफ़्लो को ट्रिगर कर सकने वाले फॉर्म बनाएं
+- [समूह](../groups/index.md) -- समूह जिनमें "Add to group" कार्रवाई लोगों को रख सकती है
+- [Roles & Permissions](../settings/roles-permissions.md) -- नियंत्रित करें कि कौन वर्कफ़्लो को देख, संपादित, और प्रबंधित कर सकता है

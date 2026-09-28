@@ -1,133 +1,133 @@
 ---
-title: "Guía: Gestión de Voluntarios Dominicales"
+title: "Guía: Administra Voluntarios del Domingo"
 ---
 
-# Gestión de Voluntarios Dominicales
+# Administra Voluntarios del Domingo
 
 <div class="article-intro">
 
-Configure sus equipos de voluntarios, cree planes de servicio semanales, asigne posiciones, cree órdenes de servicio con canciones de adoración y automatice tareas recurrentes. Al final, sus voluntarios verán sus asignaciones en el sitio web B1 y la aplicación móvil, y pueden aceptar o rechazar directamente.
+Configura tus equipos de voluntarios, crea planes de servicio semanales, asigna posiciones, construye órdenes de servicio con canciones de adoración y asigna tareas del domingo. Al final, tus voluntarios verán sus asignaciones en el sitio web B1 y la aplicación móvil, y pueden aceptar o declinar directamente.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- Cuenta B1 Admin con acceso administrativo
-- Voluntarios [agregados a su directorio de personas](../people/adding-people.md)
+- Cuenta de B1 Admin con acceso de administrador
+- Voluntarios [agregados a tu directorio de personas](../people/adding-people.md)
 
 </div>
 
 ## Paso 1: Crear Equipos de Voluntarios
 
-Organice sus voluntarios en equipos para poder gestionar asignaciones por área de ministerio.
+Organiza tus voluntarios en equipos para que puedas administrar asignaciones por área de ministerio.
 
-Siga las guías de [Creación de Grupos](../groups/creating-groups.md) y [Miembros del Grupo](../groups/group-members.md) para:
+Sigue las guías [Crear Grupos](../groups/creating-groups.md) y [Miembros del Grupo](../groups/group-members.md) para:
 
-1. Crear una categoría (p. ej., "Equipos de Domingo por la Mañana")
+1. Crear una categoría (por ejemplo, "Equipos del Domingo por la Mañana")
 2. Crear grupos como "Equipo de Adoración", "Sonido y Medios", "Recepcionistas", "Voluntarios de Ministerio Infantil"
-3. Agregue voluntarios a cada grupo buscando su nombre y haciendo clic en Agregar
+3. Agrega voluntarios a cada grupo buscando su nombre y haciendo clic en Agregar
 
 :::tip
-Designe líderes de equipo usando el icono de llave verde en la pestaña de Miembros. Los líderes pueden gestionar el calendario de su propio grupo y coordinar su equipo.
+Designa líderes de equipo usando el icono de llave verde en la pestaña Miembros. Los líderes pueden administrar el calendario de su propio grupo y coordinar su equipo.
 :::
 
-## Paso 2: Crear Su Biblioteca de Canciones
+## Paso 2: Construye tu Biblioteca de Canciones
 
-Agregue canciones de adoración para poder extraerlas en planes de servicio cada semana.
+Agrega canciones de adoración para que puedas incorporarlas en planes de servicio cada semana.
 
-Siga la guía de [Canciones](../serving/songs.md) para:
+Sigue la guía [Canciones](../serving/songs.md) para:
 
-1. Agregar canciones de adoración con títulos, artistas y duración
-2. Para cada canción, agregue arreglos con letra y designaciones clave
-3. Agregue enlaces externos a presentaciones de YouTube, tablaturas de acordes o partituras
+1. Agrega canciones de adoración con títulos, artistas y duración
+2. Para cada canción, agrega arreglos con letras y designaciones de clave
+3. Agrega enlaces externos a actuaciones de YouTube, hojas de acordes o partituras
 
 :::info
-Las canciones agregadas aquí se pueden extraer en cualquier plan de servicio después. Cree su biblioteca una vez, reutilícela cada semana.
+Las canciones agregadas aquí se pueden incorporar en cualquier plan de servicio más tarde. Construye tu biblioteca una vez, reutilízala cada semana.
 :::
 
 ## Paso 3: Crear un Plan de Servicio
 
-Los planes son las asignaciones semanales que le dicen a los voluntarios dónde se necesitan.
+Los planes son las asignaciones semanales que dicen a los voluntarios dónde se necesitan.
 
-Siga la guía de [Planes](../serving/plans.md) para:
+Sigue la guía [Planes](../serving/plans.md) para:
 
-1. Navegue a Serving, seleccione su pestaña de ministerio
-2. Haga clic en "Agregar Plan" y elija la fecha de servicio
-3. En la pestaña Asignaciones, expanda cada equipo y asigne voluntarios a sus posiciones
+1. Navega a Servicio, selecciona tu pestaña de ministerio
+2. Haz clic en "Agregar Plan" y elige la fecha del servicio
+3. En la pestaña Asignaciones, expande cada equipo y asigna voluntarios a sus posiciones
 4. Los voluntarios verán su estado de asignación (Solicitado, Confirmado, Pendiente)
 
-## Paso 4: Construir la Orden de Servicio
+## Paso 4: Construye el Orden del Servicio
 
-Diseñe el flujo de su servicio de principio a fin.
+Diseña el flujo de tu servicio de principio a fin.
 
-Siga la guía de [Orden de Servicio](../serving/service-order.md) para:
+Sigue la guía [Orden del Servicio](../serving/service-order.md) para:
 
-1. Cambie a la pestaña "Orden de Servicio" en su plan
-2. Haga clic en "Agregar Elemento" para agregar elementos: canciones de adoración (de su biblioteca), oraciones, lecturas de escritura, anuncios, sermón, ofrenda, cierre
-3. Arrastre y suelte elementos para reordenar el flujo del servicio
+1. Cambia a la pestaña "Orden del Servicio" en tu plan
+2. Haz clic en "Agregar Elemento" para agregar elementos: canciones de adoración (de tu biblioteca), oraciones, lecturas de escritura, anuncios, sermón, ofrenda, cierre
+3. Arrastra y suelta elementos para reordenar el flujo del servicio
 
 :::info
-Los órdenes de servicio son específicos del plan. Los cambios aquí no afectan otros planes o la biblioteca de canciones maestro.
+Los órdenes de servicio son específicos del plan. Los cambios aquí no afectan otros planes ni la biblioteca de canciones principal.
 :::
 
-## Paso 5: Configurar Tareas Recurrentes
+## Paso 5: Asignar Tareas del Domingo
 
-Automatice responsabilidades semanales para que nada se pierda.
+Realiza un seguimiento de las responsabilidades puntuales del domingo para que nada se caiga.
 
-Siga las guías de [Tareas](../serving/tasks.md) y [Automatizaciones](../serving/automations.md) para:
+Sigue la guía [Tareas](../serving/tasks.md) para:
 
-1. Crear automatizaciones para responsabilidades recurrentes semanales (p. ej., "Preparar elementos de comunión", "Imprimir boletines", "Configurar equipo de sonido")
-2. Asigne cada automatización a la persona o grupo responsable
-3. Las tareas aparecen en su panel de B1 y aplicación móvil automáticamente
+1. Crea tareas para responsabilidades como "Preparar elementos de comunión", "Imprimir boletines" o "Configurar equipo de sonido"
+2. Asigna cada tarea a la persona o grupo responsable
+3. Las tareas aparecen bajo **Servicio > Mi Trabajo**, en el panel del asignado y en la aplicación móvil
+
+:::info
+B1 Admin ya no crea tareas en horarios repetidos. Para procesos repetidos que muevan a las personas a través de pasos, usa [Flujos de Trabajo](../serving/workflows.md) con un disparador de horario.
+:::
+
+## Paso 6: Habilitar Registro de Autoservicio (Opcional)
+
+Permite que los voluntarios se registren para posiciones ellos mismos en lugar de esperar asignaciones de administrador.
+
+1. Al editar un plan, establece una **Fecha Límite de Registro** (horas antes del servicio) para controlar cuándo se cierra el registro automático. Déjalo en blanco para sin límite.
+2. Opcionalmente activa **Mostrar nombres de voluntarios en la página de registro** para permitir que los voluntarios vean quién más está registrado.
+3. Para cada posición, marca la casilla **Permitir Registro Automático** para hacerla disponible para autoservicio.
+4. Agrega una **Descripción** a cada posición para que los voluntarios sepan en qué consiste el rol.
+
+Una vez que se crean las posiciones de registro automático, aparecen automáticamente en las páginas de registro de voluntarios en [B1.church](../../b1-church/serving/volunteer-signup) y en la [aplicación móvil B1](../../b1-mobile/serving/volunteer-signup). Los miembros pueden explorar posiciones abiertas, ver cuántos lugares quedan y registrarse con un clic.
 
 :::tip
-Establezca automatizaciones en Inactivo durante descansos de vacaciones o temporadas especiales, luego reactive cuando esté listo. No hay necesidad de eliminar y recrear.
+Mezcla posiciones asignadas por administrador y de registro automático en el mismo plan. Por ejemplo, asigna directamente a tu líder de adoración pero permite que recepcionistas y servidores de café se autoseleccionen.
 :::
 
-## Paso 6: Habilitar Registro de Auto-Servicio (Opcional)
-
-Permita que los voluntarios se registren para posiciones ellos mismos en lugar de esperar asignaciones administrativas.
-
-1. Al editar un plan, establezca un **Plazo de Registro** (horas antes del servicio) para controlar cuándo se cierra el registro por auto-servicio. Déjelo en blanco para sin plazo.
-2. Opcionalmente, alterne **Mostrar nombres de voluntarios en la página de registro** para permitir que los voluntarios vean quién más se ha registrado.
-3. Para cada posición, marque la casilla **Permitir Registro de Auto-Servicio** para hacerla disponible para auto-servicio.
-4. Agregue una **Descripción** a cada posición para que los voluntarios sepan en qué consiste el rol.
-
-Una vez que se crean las posiciones de registro por auto-servicio, aparecen automáticamente en las páginas de registro de voluntarios en [B1.church](../../b1-church/serving/volunteer-signup) y la [aplicación B1 Mobile](../../b1-mobile/serving/volunteer-signup). Los miembros pueden explorar posiciones abiertas, ver cuántos espacios quedan y registrarse con un clic.
-
-:::tip
-Mezcle posiciones asignadas por administrador y de registro por auto-servicio en el mismo plan. Por ejemplo, asigne su líder de adoración directamente pero permita que recepcionistas y servidores de café se auto-seleccionen.
-:::
-
-## Paso 7: Notifique a los Voluntarios
+## Paso 7: Notifica a los Voluntarios
 
 Los voluntarios asignados ven automáticamente sus planes y pueden responder.
 
-1. Los voluntarios ven sus planes en [B1.church](../../b1-church/plans/viewing-plans.md) y la [aplicación B1 Mobile](../../b1-mobile/serving/viewing-plans.md)
-2. Pueden aceptar o rechazar asignaciones directamente desde cualquiera de las plataformas
-3. Pueden establecer fechas de bloqueo para semanas en que no están disponibles
-4. Los planes se pueden imprimir para ensayos o publicar detrás del escenario
+1. Los voluntarios ven sus planes en [B1.church](../../b1-church/plans/viewing-plans.md) y en la [aplicación móvil B1](../../b1-mobile/serving/viewing-plans.md)
+2. Pueden aceptar o declinar asignaciones directamente desde cualquiera de las plataformas
+3. Pueden establecer fechas de bloqueo para semanas en que no estén disponibles
+4. Los planes se pueden imprimir para ensayos o publicar en bastidores
 5. Los voluntarios pueden explorar y registrarse para posiciones abiertas a través de la [página de registro de voluntarios](../../b1-church/serving/volunteer-signup)
 
 :::tip
 Las notificaciones push en la aplicación móvil alertan a los voluntarios cuando reciben nuevas asignaciones o cuando los planes cambian.
 :::
 
-## ¡Terminado!
+## ¡Listo!
 
-Su sistema de gestión de voluntarios está configurado. Cada semana, cree un nuevo plan, asigne posiciones y su equipo lo ve en su teléfono o computadora. Las tareas recurrentes manejan automáticamente el trabajo de preparación rutinaria.
+Tu sistema de administración de voluntarios está configurado. Cada semana, crea un nuevo plan, asigna posiciones y tu equipo ve todo en su teléfono o computadora.
 
 ## Artículos Relacionados
 
-- [Creación de Grupos](../groups/creating-groups.md) — configurar equipos y categorías
-- [Miembros del Grupo](../groups/group-members.md) — agregar y gestionar miembros del equipo
-- [Planes](../serving/plans.md) — crear y gestionar planes de servicio
-- [Orden de Servicio](../serving/service-order.md) — construir el flujo de un servicio
-- [Canciones](../serving/songs.md) — gestionar su biblioteca de canciones de adoración
-- [Tareas](../serving/tasks.md) — asignar elementos de acción a personas o grupos
-- [Automatizaciones](../serving/automations.md) — automatizar tareas recurrentes
-- [Visualización de Planes (Web)](../../b1-church/plans/viewing-plans.md) — cómo los voluntarios ven planes en línea
-- [Visualización de Planes (Mobile)](../../b1-mobile/serving/viewing-plans.md) — cómo los voluntarios ven planes en móvil
-- [Registro de Voluntarios (Web)](../../b1-church/serving/volunteer-signup) — cómo los miembros se auto-seleccionan para posiciones de voluntarios
-- [Registro de Voluntarios (Mobile)](../../b1-mobile/serving/volunteer-signup) — registro de voluntarios por auto-servicio en móvil
+- [Crear Grupos](../groups/creating-groups.md) -- configurar equipos y categorías
+- [Miembros del Grupo](../groups/group-members.md) -- agregar y administrar miembros del equipo
+- [Planes](../serving/plans.md) -- crear y administrar planes de servicio
+- [Orden del Servicio](../serving/service-order.md) -- construir el flujo de un servicio
+- [Canciones](../serving/songs.md) -- administrar tu biblioteca de canciones de adoración
+- [Tareas](../serving/tasks.md) -- asignar elementos de acción a personas o grupos
+- [Flujos de Trabajo](../serving/workflows.md) -- mover a las personas a través de procesos repetibles con disparadores y pasos automatizados
+- [Visualización de Planes (Web)](../../b1-church/plans/viewing-plans.md) -- cómo los voluntarios ven planes en línea
+- [Visualización de Planes (Móvil)](../../b1-mobile/serving/viewing-plans.md) -- cómo los voluntarios ven planes en móvil
+- [Registro de Voluntarios (Web)](../../b1-church/serving/volunteer-signup) -- cómo los miembros autoseleccionan posiciones de voluntarios
+- [Registro de Voluntarios (Móvil)](../../b1-mobile/serving/volunteer-signup) -- registro automático de voluntarios en móvil

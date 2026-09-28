@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Einstellungen"
 ---
 
@@ -6,42 +6,47 @@ title: "Einstellungen"
 
 <div class="article-intro">
 
-Der Abschnitt Einstellungen ist der Ort, an dem Sie die Kontoeinstellungen, das Branding und die administrativen Optionen Ihrer Kirche in B1 Admin konfigurieren. Von hier aus können Sie alles vom Kirchennamen und der Subdomäne bis zu Benutzerberechtigungen und der Mobile-App-Konfiguration verwalten.
+Der Abschnitt Einstellungen ist der Ort, an dem du die Kontooptionen, das Branding und administrative Optionen deiner Kirche in B1 Admin konfigurierst. Von hier aus kannst du alles verwalten – von deinem Kirchennamen und deiner Subdomain bis hin zu Benutzerberechtigungen und mobiler App-Konfiguration.
 
 </div>
 
-## Was Sie hier finden
+## Was du hier finden wirst
 
-Der Abschnitt Einstellungen ist in die folgenden Unterbereiche unterteilt:
+Der Bereich Einstellungen ist in die folgenden Unterabschnitte organisiert:
 
-1. **Einstellungen** – Konfigurieren Sie grundlegende Informationen, Branding und Subdomäne Ihrer Kirche. Siehe [Kircheneinstellungen](./church-settings.md) für Details.
-2. **Campusse** – Fügen Sie mehrere physische Standorte für Ihre Kirche hinzu und verwalten Sie sie. Nach der Erstellung werden Campusse in Personenprofilen, beim Anwesenheits-Setup und im Demografie-Dashboard angezeigt. Siehe [Campusse](./campuses.md) für Details.
-3. **Benutzerdefinierte Felder** – Definieren Sie Ihre eigenen Felder zum Verfolgen von Personen (ein Datum, eine Nummer, eine Ja/Nein-Antwort oder eine Pick-Liste), füllen Sie sie dann in Profilen aus und suchen Sie danach. Siehe [Benutzerdefinierte Felder](./custom-fields.md) für Details.
-4. **Mobile Apps** – Richten Sie die Navigations-Tabs ein und passen Sie sie an, die in der [B1.church PWA](/docs/b1-church/getting-started/installing-pwa) für Ihre Mitglieder angezeigt werden. Siehe [Mobile-App-Einstellungen](./mobile-app.md) für Details.
-5. **E-Mail-Vorlagen** – Speichern Sie wiederverwendbare E-Mail-Inhalte zum manuellen Versenden oder aus einem Workflow. Siehe [E-Mail-Vorlagen](./email-templates.md) für Details.
-6. **Server-Admin** – Greifen Sie auf erweiterte Administrationstools zur Verwaltung der Einstellungen auf Serverebene Ihrer Kirche zu.
+1. **Einstellungen** – Konfiguriere die grundlegenden Informationen, das Branding und die Subdomain deiner Kirche. Weitere Details findest du unter [Kircheneinstellungen](./church-settings.md). Um deinen eigenen Domainnamen zu verwenden (z. B. denekirche.org), siehe [Benutzerdefinierte Domain](./custom-domain.md).
+2. **Standorte** – Füge mehrere physische Orte für deine Kirche hinzu und verwalte sie. Sobald erstellt, erscheinen Standorte auf Personenprofilen, im Anwesenheits-Setup und im Demografiedashboard. Erreichbar als Karte auf der Hauptseite Einstellungen statt als separates Navigationselement. Weitere Details findest du unter [Standorte](./campuses.md).
+3. **Benutzerdefinierte Felder** – Definiere deine eigenen Felder zur Verfolgung bei Personen (ein Datum, eine Zahl, eine Ja/Nein-Antwort oder eine Wahllist), fülle sie dann auf Profilen aus und suche danach. Auch als Karte auf der Hauptseite Einstellungen erreichbar. Weitere Details findest du unter [Benutzerdefinierte Felder](./custom-fields.md).
+4. **E-Mail-Vorlagen** – Speichere wiederverwendbare E-Mail-Inhalte zum manuellen Versand oder aus einem Arbeitsablauf. Weitere Details findest du unter [E-Mail-Vorlagen](./email-templates.md).
+5. **Server-Admin** – Zugriff auf erweiterte Verwaltungswerkzeuge zur Verwaltung der Server-Einstellungen deiner Kirche.
 
-## Die Haupteinstellungsseite
+:::info
+Die Konfiguration der **mobilen Apps** und **Formulare** hat jetzt eigene Navigationselemente auf oberster Ebene – **Mobile** und **Formulare** (unter **Personen** verfügbar) – statt in den Einstellungen zu liegen. Weitere Details findest du unter [Einstellungen mobiler Apps](./mobile-app.md) und [Formulare erstellen](/docs/b1-admin/forms/creating-forms).
+:::
 
-Wenn Sie die Seite Einstellungen zum ersten Mal öffnen, sehen Sie **Ihren Kirchennamen** und **Ihre Subdomäne** oben angezeigt. Die Kopfzeile bietet Quick-Access-Schaltflächen für häufige Aufgaben:
+## Die Hauptseite Einstellungen
 
-- **Einstellungen bearbeiten** – Aktualisieren Sie den Namen, die Adresse, die Kontaktinformationen und das Branding Ihrer Kirche.
-- **Mobile Apps** – Springen Sie direkt zur Mobile-App-Konfiguration.
-- **Rollen** – Verwalten Sie Benutzerrollen und Berechtigungen für Ihr Team.
-- **Import/Export** – Übertragen Sie Daten zwischen Systemen mit dem Import-/Export-Tool.
+Wenn du die Seite Einstellungen zum ersten Mal öffnest, siehst du deinen **Kirchennamen** und deine **Subdomain** ganz oben angezeigt. Die Kopfzeile enthält Quick-Access-Schaltflächen für häufige Aufgaben:
+
+- **E-Mail-Vorlagen** – Gehe direkt zur E-Mail-Vorlagenverwaltung.
+- **Audit-Protokoll** – Zeige ein Protokoll von Änderungen in deinem Kirchenkonto an.
+- **Abrechnung** – Gehe direkt zu Spendenabrechnungen.
+- **Import/Export** – Übertrage Daten zwischen Systemen mit dem Import/Export-Werkzeug.
+
+Öffne unten die Kopfzeile den Abschnitt **Kircheninformationen**, um deinen Kirchennamen, deine Adresse, deine Kontaktinformationen und dein Branding zu bearbeiten – siehe [Kircheneinstellungen](./church-settings.md). Zur Verwaltung von Benutzerrollen klicke auf **Rollen** in der Navigationsleiste Einstellungen – siehe [Rollen & Berechtigungen](./roles-permissions.md).
 
 :::tip
-Beginnen Sie mit der Konfiguration des Kirchennamens und des Brandings unter **Einstellungen bearbeiten**, richten Sie dann [Rollen](./roles-permissions.md) ein, um Ihre Mitarbeitern mit der richtigen Zugriffsstufe einzuladen.
+Beginne damit, deinen Kirchennamen und dein Branding unter **Kircheninformationen** zu konfigurieren, richte dann [Rollen](./roles-permissions.md) ein, um deine Teammitglieder mit dem richtigen Zugriffsniveau einzuladen.
 :::
 
 :::info
-Informationen darüber, wie Ihre Daten geschützt sind, finden Sie unter [Datensicherheit](./data-security.md).
+Informationen zum Schutz deiner Daten findest du unter [Datensicherheit](./data-security.md).
 :::
 
 ## Nächste Schritte
 
-- [Kircheneinstellungen](./church-settings.md) – Konfigurieren Sie Ihre Kircheninformationen und Ihr Branding
-- [Campusse](./campuses.md) – Fügen Sie Standorte für Multi-Site-Kirchen hinzu
-- [Rollen & Berechtigungen](./roles-permissions.md) – Richten Sie Benutzerrollen und Zugriffskontrolle ein
-- [Mobile-App-Einstellungen](./mobile-app.md) – Passen Sie die Navigations-Tabs an, die in der B1.church PWA angezeigt werden
-- [Datensicherheit](./data-security.md) – Erfahren Sie, wie Ihre Daten geschützt sind
+- [Kircheneinstellungen](./church-settings.md) – Konfiguriere deine Kircheninformationen und dein Branding
+- [Standorte](./campuses.md) – Füge Standorte für mehrorttige Kirchen hinzu
+- [Rollen & Berechtigungen](./roles-permissions.md) – Richte Benutzerrollen und Zugriffskontrolle ein
+- [Einstellungen mobiler Apps](./mobile-app.md) – Passe die Navigationstabs an, die in der B1.church PWA angezeigt werden
+- [Datensicherheit](./data-security.md) – Erfahre, wie deine Daten geschützt sind

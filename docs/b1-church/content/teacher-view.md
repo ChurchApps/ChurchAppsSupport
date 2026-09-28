@@ -21,9 +21,8 @@ To access the expanded teacher view for a lesson:
 
 1. Navigate to the **Plans** section on B1.church
 2. Open the plan that contains the lesson you want to teach
-3. Find the lesson in the plan items
-4. Click on the lesson to view its details
-5. Click the **Teacher View** or **Expanded View** button
+3. Open the **Service Order** tab
+4. Click the **Teach** button
 
 The lesson will open in a full-screen interface optimized for teaching.
 

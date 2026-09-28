@@ -6,51 +6,51 @@ title: "E-postmaler"
 
 <div class="article-intro">
 
-E-postmaler lar deg lagre gjenbrukbart e-postinnhold -- en velkomstmelding, en hendelsespåminnelse, en giving takkmelding -- slik at du (eller en [arbeidsflyt](../serving/workflows.md)) kan sende det på ett klikk i stedet for å skrive det fra bunnen hver gang.
+E-postmaler lar deg lagre gjenbrukbart e-postinnhold -- en velkomstmelding, en hendelsespåminnelse, en givtakk -- slik at du (eller en [arbeitsflyt](../serving/workflows.md)) kan sende det på ett klikk i stedet for å skrive det fra bunnen av hver gang.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du trenger tilgang til Innstillinger-området i B1 Admin.
+- Du trenger tilgang til området Innstillinger i B1 Admin.
 
 </div>
 
-## Få tilgang til e-postmaler
+## Tilgang til e-postmaler
 
-1. I B1 Admin åpner du **seksjonsmenyen** i det øvre venstre hjørnet (seksjonsnavnet med liten pil) og velger **Innstillinger**.
-2. Klikk **E-postmaler**.
-3. Du vil se en liste over eksisterende maler med deres emne, kategori og sist endret dato.
+1. I B1 Admin åpner du **seksjonmenyen** i øvre venstre hjørne (seksjonsnavn med liten pil) og velger **Innstillinger**.
+2. Klikk på **E-postmaler**.
+3. Du vil se en liste over eksisterende maler med emne, kategori og dato for siste endring.
 
-## Opprett en mal
+## Opprettelse av en mal
 
 1. Klikk **Ny mal**.
-2. Skriv inn et **Malnavn** for å identifisere det i listen, og velg en **Kategori** (Generelt, Hendelser, Grupper, Giving, eller Velkommen) for å hjelpe til med å organisere malene dine.
+2. Oppgi et **Malnavn** for å identifisere det i listen, og velg en **Kategori** (Generell, Hendelser, Grupper, Giving eller Velkommen) for å hjelpe med å organisere malene dine.
 3. Skriv inn **Emnelinjen**.
-4. Skriv **Brødteksten** ved hjelp av riktekstredigeringsprogrammet.
+4. Skriv **Brødteksten** ved hjelp av redigeringsverktøyet for rikt tekst.
 5. Klikk **Lagre**.
 
-## Slå sammen felt
+## Flettefelter
 
-Klikk en flettefeltbrikke over emnet eller brødteksten for å sette den inn der markøren er. Når e-posten sendes, erstattes hvert flettfelt med mottakerens faktiske informasjon:
+Klikk på en flettfeltkort over emnet eller brødteksten for å sette den inn ved markøren. Når e-posten sendes, erstattes hvert flettfelt med mottakerens faktiske informasjon:
 
 - `{{firstName}}`, `{{lastName}}`, `{{displayName}}` -- Mottakerens navn
 - `{{email}}` -- Mottakerens e-postadresse
-- `{{churchName}}` -- Din kirkas navn
+- `{{churchName}}` -- Kirkens navn
 
-## Forhåndsvis en mal
+## Forhåndsvisning av en mal
 
-Klikk **Forhåndsvis** for å se hvordan emnet og brødteksten vil se ut med eksempeldata fylt inn for flettefeltene, før du lagrer eller sender.
+Klikk på **Forhåndsvisning** for å se hvordan emnet og brødteksten vil se ut med eksempeldata fylt inn for flettefeltene, før du lagrer eller sender.
 
-## Bruk en mal
+## Bruk av en mal
 
-Lagrede maler er tilgjengelige for valg når du skriver en e-post til mennesker eller en gruppe, og som en handling i [Arbeidsflyter](../serving/workflows.md).
+Lagrede maler er tilgjengelige å velge fra når du komponerer en e-post til personer eller en gruppe, og som en handling i [Arbeitsflyter](../serving/workflows.md). Før kirken din kan sende dem, må ChurchApps-teamet godkjenne det for gruppee-post en gang. Se [Slå på gruppee-post for kirken din](../groups/group-members.md#slå-på-gruppee-post-for-kirken-din).
 
-## Rediger og slett
+## Redigering og sletting
 
-Klikk **Rediger**-ikonet ved siden av en mal for å oppdatere den, eller **Slett**-ikonet for å fjerne den permanent.
+Klikk på ikonet **Rediger** ved siden av en mal for å oppdatere den, eller ikonet **Slett** for å fjerne den permanent.
 
-## Neste trinn
+## Neste steg
 
-- [Arbeidsflyter](../serving/workflows.md) -- Utløs en male-e-post automatisk basert på regler
+- [Arbeitsflyter](../serving/workflows.md) -- Utløs en mal e-post automatisk basert på regler

@@ -20,7 +20,7 @@ Build custom forms to collect information from your congregation. You can create
 
 ## Creating a New Form
 
-1. Navigate to **Forms** from the main menu.
+1. Open **People** from the section menu, then click **Forms** in the navigation bar.
 2. Click **Add Form**.
 3. Enter a **name** for your form.
 4. Choose the form type from the dropdown:
@@ -70,6 +70,14 @@ When **Create a person record from submissions** is enabled, you can also link t
 3. Click **Save**.
 
 Each time someone submits the form, the matched or newly created person is added to the group (existing group members are skipped). This is useful for things like a camp sign-up form that should automatically build the camp's roster group.
+
+### Sending a Follow-up Email
+
+With **Create a person record from submissions** turned on, you can also email each person who submits the form. Fill in **Follow-up Email Subject** and **Follow-up Email Body** in the form's details. You can use the `{firstName}` and `{churchName}` tokens in both. The email is only sent when both fields are filled in.
+
+:::info
+Follow-up emails only go out after your church has been approved to send group email, and they count toward your church's daily email limit. See [Turning On Group Email for Your Church](../groups/group-members.md#turning-on-group-email-for-your-church).
+:::
 
 ## Duplicating a Form
 

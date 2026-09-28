@@ -61,7 +61,7 @@ Follow the [Managing Pages](../website/managing-pages.md) guide to create pages 
 
 If you want to use your own domain name (like yourchurch.com) instead of the default B1 URL:
 
-1. Go to **Website > Settings** in B1 Admin
+1. Go to **Settings** in B1 Admin and open the **Domains** section
 2. Enter your custom domain
 3. Update your DNS records at your domain provider to point to B1
 

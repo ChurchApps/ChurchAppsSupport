@@ -1,56 +1,56 @@
 ---
-title: "ईमेल टेम्पलेट"
+title: "ईमेल टेम्पलेट्स"
 ---
 
-# Email Templates
+# ईमेल टेम्पलेट्स
 
 <div class="article-intro">
 
-Email Templates let you save reusable email content -- a welcome message, an event reminder, a giving thank-you -- so you (or a [workflow](../serving/workflows.md)) can send it in one click instead of writing it from scratch every time.
+ईमेल टेम्पलेट्स आपको पुनः प्रयोग करने योग्य ईमेल सामग्री को बचाने देते हैं -- एक स्वागत संदेश, एक ईवेंट अनुस्मारक, एक देने का धन्यवाद -- इसलिए आप (या एक [workflow](../serving/workflows.md)) इसे एक क्लिक में भेज सकते हैं इसके बजाय हर बार इसे खरोंच से लिखें।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- You need access to the Settings area in B1 Admin.
+- आपको B1 Admin में सेटिंग्स क्षेत्र तक पहुंच की आवश्यकता है।
 
 </div>
 
-## Accessing Email Templates
+## ईमेल टेम्पलेट्स तक पहुंचना
 
-1. In B1 Admin, open the **section menu** in the top-left corner (the section name with the small arrow) and choose **Settings**.
-2. Click **Email Templates**.
-3. You will see a list of existing templates with their subject, category, and last modified date.
+1. B1 Admin में, शीर्ष-बाएं कोने में **section menu** खोलें (छोटे तीर के साथ अनुभाग का नाम) और **Settings** चुनें।
+2. **Email Templates** पर क्लिक करें।
+3. आप मौजूदा टेम्पलेट्स की एक सूची देखेंगे जिसमें उनके विषय, श्रेणी, और अंतिम संशोधित दिनांक हैं।
 
-## Creating a Template
+## एक टेम्पलेट बनाना
 
-1. Click **New Template**.
-2. Enter a **Template Name** to identify it in the list, and choose a **Category** (General, Events, Groups, Giving, or Welcome) to help organize your templates.
-3. Enter the **Subject** line.
-4. Write the **Body** using the rich text editor.
-5. Click **Save**.
+1. **New Template** पर क्लिक करें।
+2. एक **Template Name** दर्ज करें इसे सूची में पहचानने के लिए, और एक **Category** चुनें (General, Events, Groups, Giving, या Welcome) अपने टेम्पलेट्स को संगठित करने में मदद के लिए।
+3. **Subject** लाइन दर्ज करें।
+4. समृद्ध पाठ संपादक का उपयोग करके **Body** लिखें।
+5. **Save** पर क्लिक करें।
 
-## Merge Fields
+## विलय क्षेत्र
 
-Click a merge field chip above the Subject or Body to insert it at your cursor. When the email is sent, each merge field is replaced with the recipient's actual information:
+विषय या Body के ऊपर एक विलय क्षेत्र चिप पर क्लिक करें इसे अपने कर्सर में डालने के लिए। जब ईमेल भेजा जाता है, तो प्रत्येक विलय क्षेत्र प्राप्तकर्ता की वास्तविक जानकारी से प्रतिस्थापित किया जाता है:
 
-- `{{firstName}}`, `{{lastName}}`, `{{displayName}}` -- The recipient's name
-- `{{email}}` -- The recipient's email address
-- `{{churchName}}` -- Your church's name
+- `{{firstName}}`, `{{lastName}}`, `{{displayName}}` -- प्राप्तकर्ता का नाम
+- `{{email}}` -- प्राप्तकर्ता का ईमेल पता
+- `{{churchName}}` -- आपके चर्च का नाम
 
-## Previewing a Template
+## एक टेम्पलेट की पूर्वावलोकन
 
-Click **Preview** to see how the subject and body will look with sample data filled in for the merge fields, before you save or send.
+**Preview** पर क्लिक करें कि विषय और body कैसे दिखेंगे विलय क्षेत्रों के लिए नमूना डेटा भरा हुआ, इससे पहले कि आप सहेजें या भेजें।
 
-## Using a Template
+## एक टेम्पलेट का उपयोग करना
 
-Saved templates are available to select from when composing an email to people or a group, and as an action in [Workflows](../serving/workflows.md).
+सहेजी गई टेम्पलेट्स लोगों या एक समूह को ईमेल संरचना करते समय चुनने के लिए उपलब्ध हैं, और [Workflows](../serving/workflows.md) में एक कार्रवाई के रूप में। आपके चर्च को भेज सकने से पहले, ChurchApps टीम को एक बार समूह ईमेल के लिए इसे मंजूरी देनी चाहिए। [Turning On Group Email for Your Church](../groups/group-members.md#turning-on-group-email-for-your-church) देखें।
 
-## Editing and Deleting
+## संपादन और हटाना
 
-Click the **Edit** icon next to a template to update it, or the **Delete** icon to remove it permanently.
+टेम्पलेट को अपडेट करने के लिए इसके बगल में **Edit** आइकन पर क्लिक करें, या इसे स्थायी रूप से हटाने के लिए **Delete** आइकन पर क्लिक करें।
 
-## Next Steps
+## अगले कदम
 
-- [Workflows](../serving/workflows.md) -- Trigger a template email automatically based on rules
+- [Workflows](../serving/workflows.md) -- नियमों के आधार पर एक टेम्पलेट ईमेल को स्वचालित रूप से ट्रिगर करें

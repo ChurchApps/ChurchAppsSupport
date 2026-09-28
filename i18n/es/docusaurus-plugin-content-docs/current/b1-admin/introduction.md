@@ -1,48 +1,61 @@
 ---
-title: Introducci\u00f3n a B1.church
+title: Introducción a B1.church
 ---
 
-# \u00a1Bienvenido a B1.church Admin!
+# ¡Bienvenido a B1.church Admin!
 
 <div class="article-intro">
 
-\u00a1Gracias por elegir B1.church! Esta introducci\u00f3n le gu\u00eda a trav\u00e9s de los conceptos b\u00e1sicos para comenzar con la plataforma B1.church Admin, desde iniciar sesi\u00f3n y navegar por el panel de control hasta configurar la informaci\u00f3n de su iglesia y explorar las herramientas disponibles.
+¡Gracias por elegir B1.church! Esta introducción te guía a través de los conceptos básicos de comenzar con la plataforma B1.church Admin, desde iniciar sesión y navegar tu Panel de Control hasta configurar la información de tu iglesia y explorar las herramientas disponibles.
 
 </div>
 
-Para soporte adicional, env\u00ede un correo electr\u00f3nico a [support@churchapps.org](mailto:support@churchapps.org).
+Para obtener más ayuda, envía un correo a [support@churchapps.org](mailto:support@churchapps.org).
 
-## Video de introducci\u00f3n
+## Video de Introducción
 
 <video controls width="100%">
   <source src="/b1Admin/intro/output.mp4" type="video/mp4" />
-  Su navegador no soporta la etiqueta de video.
+  Tu navegador no soporta la etiqueta video.
 </video>
 
-## Recorrido paso a paso
+## Tutorial
 
-1. Usando Google Chrome, vaya a [admin.b1.church](https://admin.b1.church) e inicie sesi\u00f3n con su nombre de usuario y contrase\u00f1a.
-2. Esto le llevar\u00e1 al **panel de control de B1.church Admin**. Desde aqu\u00ed, puede administrar la base de datos de su iglesia, sitio web, aplicaci\u00f3n m\u00f3vil, lecciones y m\u00e1s.
-3. Haga clic en **Configuraci\u00f3n** para establecer la informaci\u00f3n de su iglesia, roles administrativos y otros detalles.
-4. Haga clic en el **l\u00e1piz de edici\u00f3n** para configurar la informaci\u00f3n de su iglesia.
-5. De vuelta en el panel de control, haga clic en el **icono de signo de interrogaci\u00f3n** en la esquina superior derecha para obtener ayuda y tutoriales.
-6. Haga clic en **Ver documentaci\u00f3n** para consultar una lista de tutoriales que le ayudar\u00e1n a comenzar con B1.church.
-7. Regrese al panel de control y haga clic en la **flecha junto a su foto de perfil** y elija **Cambiar aplicaci\u00f3n**.
-8. Elija **Lessons.church** para administrar las lecciones en l\u00ednea y el curr\u00edculo de su iglesia.
-9. Regrese a B1.church haciendo clic en la flecha junto a su foto de perfil y eligiendo **Cambiar aplicaci\u00f3n** nuevamente.
-10. Ahora puede ingresar a B1.church a trav\u00e9s del **portal de miembros** o el **portal de administraci\u00f3n**. El portal de miembros le permite ver c\u00f3mo se ve B1.church para sus miembros, consultar sus grupos y administrar sus donaciones personales.
+1. Usando Google Chrome, ve a [admin.b1.church](https://admin.b1.church) e inicia sesión con tu nombre de usuario y contraseña.
+2. Esto te llevará al **Panel de Control**, la página de inicio de B1.church Admin. Muestra el servicio de esta semana y quién está registrado y sirviendo, junto con tus tareas y grupos. Usa la **paleta de comandos** (ver abajo) o los menús para llegar a Personas, Donaciones, Sitio Web y el resto de la aplicación.
+3. Haz clic en **Configuración** para configurar la información de tu iglesia, roles administrativos y otros detalles.
+4. Haz clic en el **lápiz de edición** para configurar la información de tu iglesia.
+5. De vuelta el domingo, haz clic en el **icono de interrogación** en la esquina superior derecha para obtener ayuda y tutoriales.
+6. Haz clic en **Ver Documentación** para ver una lista de tutoriales para ayudarte a comenzar con B1.church.
+7. Navega de vuelta al Panel de Control y haz clic en la **flecha junto a tu foto de perfil** y elige **Cambiar Aplicación**.
+8. Elige **Lessons.church** para administrar las lecciones y currículum en línea de tu iglesia.
+9. Cambia de vuelta a B1.church haciendo clic en la flecha junto a tu foto de perfil y eligiendo **Cambiar Aplicación** nuevamente.
+10. Ahora puedes entrar a B1.church a través del **portal de miembros** o del **portal administrativo**. El portal de miembros te permite ver cómo se ve B1.church para tus miembros, ver tus grupos y administrar tus donaciones personales.
 
 :::tip
-Comience con la p\u00e1gina de [Configuraci\u00f3n](./settings/) para establecer el nombre de su iglesia, la marca y los permisos del equipo. Esto asegura que todo lo dem\u00e1s que configure se muestre correctamente.
+Comienza con la página [Configuración](./settings/) para configurar el nombre de tu iglesia, marca y permisos del equipo. Esto asegura que todo lo demás que configures se mostrará correctamente.
 :::
 
-## Pr\u00f3ximos pasos
+## Encuentra Cualquier Cosa Rápidamente con la Paleta de Comandos
 
-Despu\u00e9s de ver esta introducci\u00f3n, explore estas funciones clave:
+En lugar de hacer clic a través de menús, puedes saltar directamente a una persona, grupo, plan, fondo o cualquier página de administración desde cualquier lugar en B1 Admin:
 
-- [Agregar personas](./people/adding-people) -- Aprenda c\u00f3mo agregar miembros a su base de datos
-- [Grupos](./groups/) -- Configure y administre grupos de la iglesia
-- [Planes de servicio](./serving/plans) -- Organice su ministerio de servicio
-- [Asistencia](./attendance/) -- Registre la asistencia y el check-in
-- [Sitio web](./website/) -- Construya y personalice el sitio web de su iglesia
-- [Configuraci\u00f3n](./settings/) -- Configure la informaci\u00f3n y permisos de su iglesia
+1. Presiona **Ctrl+K** (o **Cmd+K** en una Mac), o presiona **/** mientras no estés escribiendo en un campo de texto, para abrir la barra de búsqueda. También puedes hacer clic en el botón **Buscar o saltar...** en la navegación superior.
+2. Comienza a escribir un nombre o la página que deseas (por ejemplo, el nombre de una persona, "lotes" o "canciones").
+3. Los resultados se agrupan por tipo: personas, grupos, planes, fondos y páginas a las que saltar. Usa las teclas de flecha para moverte entre resultados y presiona **Intro** para seleccionar uno, o haz clic en un resultado con tu ratón.
+4. Presiona **Esc** para cerrar la barra de búsqueda sin seleccionar nada.
+
+:::tip
+La paleta de comandos es a menudo la forma más rápida de llegar a una página enterrada en un submenú: escribe parte del nombre de la página en lugar de navegar a través de Configuración, Servicio o Donaciones a mano.
+:::
+
+## Próximos Pasos
+
+Después de ver esta introducción, explora estas características clave:
+
+- [Agregar Personas](./people/adding-people) -- Aprende cómo agregar miembros a tu base de datos
+- [Grupos](./groups/) -- Configura y administra grupos de iglesia
+- [Planes de Servicio](./serving/plans) -- Organiza tu ministerio de servicio
+- [Asistencia](./attendance/) -- Realiza seguimiento de asistencia y registro
+- [Sitio Web](./website/) -- Construye y personaliza tu sitio web de iglesia
+- [Configuración](./settings/) -- Configura la información de tu iglesia y permisos

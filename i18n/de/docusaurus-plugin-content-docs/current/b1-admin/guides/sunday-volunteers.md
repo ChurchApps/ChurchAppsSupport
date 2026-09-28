@@ -1,134 +1,133 @@
 ---
-title: "Anleitung: Verwalten Sie Sonntagsfreiwillige"
+title: "Anleitung: Verwalte Sonntags-Freiwillige"
 ---
 
-# Verwalten Sie Sonntagsfreiwillige
+# Verwalte Sonntags-Freiwillige
 
 <div class="article-intro">
 
-Richten Sie Ihre Freiwilligent, erstellen Sie wöchentliche Service-Pläne, weisen Sie Positionen zu, erstellen Sie Service-Reihenfolgen mit Anbetungsliedern und automatisieren Sie wiederkehrende Aufgaben. Am Ende sehen Ihre Freiwilligen ihre Zuweisungen auf der B1-Website und der mobilen App und können direkt akzeptieren oder ablehnen.
+Richte deine Freiwilligenteams auf, erstelle wöchentliche Servicepläne, ordne Positionen zu, baue Servicekommandos mit Lobgesängen und weise Sonntags-Aufgaben zu. Am Ende sehen deine Freiwilligen ihre Zuweisungen auf der B1-Website und mobilen App und können direkt akzeptieren oder ablehnen.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du beginnst</h4>
 
 - B1 Admin-Konto mit Admin-Zugriff
-- Freiwillige [in Ihrem Personen-Verzeichnis hinzugefügt](../people/adding-people.md)
+- Freiwillige [zu deinem Personenverzeichnis hinzugefügt](../people/adding-people.md)
 
 </div>
 
-## Schritt 1: Erstellen Sie Freiwilligenteams
+## Schritt 1: Erstelle Freiwilligenteams
 
-Organisieren Sie Ihre Freiwilligen in Teams, um Zuweisungen nach Ministerbereich zu verwalten.
+Organisiere deine Freiwilligen in Teams, damit du Zuweisungen nach Ministerialsbereich verwalten kannst.
 
-Folgen Sie den Anleitungen [Gruppen erstellen](../groups/creating-groups.md) und [Gruppenmitglieder](../groups/group-members.md) zu:
+Folge den Anleitungen [Gruppen erstellen](../groups/creating-groups.md) und [Gruppenmitglieder](../groups/group-members.md):
 
-1. Erstellen Sie eine Kategorie (z.B. „Sunday Morning Teams")
-2. Erstellen Sie Gruppen wie „Worship Team", „Sound & Media", „Greeters", „Kids Ministry Volunteers"
-3. Fügen Sie Freiwillige zu jeder Gruppe hinzu, indem Sie nach ihrem Namen suchen und auf Hinzufügen klicken
+1. Erstelle eine Kategorie (z. B. „Sonntag-Morgen-Teams")
+2. Erstelle Gruppen wie „Lobpreis-Team", „Sound & Medien", „Greeters", „Kinder-Ministerium-Freiwillige"
+3. Füge Freiwillige zu jeder Gruppe hinzu, indem du nach ihrem Namen suchst und Hinzufügen klickst
 
 :::tip
-Bestimmen Sie Teamleiter mithilfe des grünen Schlüsselsymbols auf der Registerkarte "Mitglieder". Leiter können ihren eigenen Gruppenkalender verwalten und ihr Team koordinieren.
+Bestimme Teamleiter mit dem grünen Schlüsselsymbol auf der Registerkarte Mitglieder. Leiter können ihren eigenen Gruppenkalender verwalten und ihr Team koordinieren.
 :::
 
-## Schritt 2: Erstellen Sie Ihre Lied-Bibliothek
+## Schritt 2: Erstelle deine Liederbibliothek
 
-Fügen Sie Anbetungslieder hinzu, damit Sie diese jede Woche in Service-Pläne aufnehmen können.
+Füge Lobgesänge hinzu, damit du sie jede Woche in Servicepläne einziehen kannst.
 
-Folgen Sie der Anleitung [Lieder](../serving/songs.md) zu:
+Folge der Anleitung [Lieder](../serving/songs.md):
 
-1. Fügen Sie Anbetungslieder mit Titeln, Künstlern und Dauer hinzu
-2. Fügen Sie für jedes Lied Arrangements mit Texten und Tonartbezeichnungen hinzu
-3. Fügen Sie externe Links zu YouTube-Aufführungen, Akkorddiagrammen oder Notenblättern hinzu
+1. Füge Lobgesänge mit Titeln, Künstlern und Dauer hinzu
+2. Für jeden Song, füge Arrangements mit Lyrics und Schlüsselbezeichnungen hinzu
+3. Füge externe Links zu YouTube-Auftritten, Akkorddiagrammen oder Notenblättern hinzu
 
 :::info
-Lieder, die hier hinzugefügt werden, können später in jeden Service-Plan aufgenommen werden. Erstellen Sie Ihre Bibliothek einmal, verwenden Sie sie jede Woche erneut.
+Hier hinzugefügte Lieder können jede Woche in jeden Serviceplan eingezogen werden. Erstelle deine Bibliothek einmal, verwende sie jede Woche wieder.
 :::
 
-## Schritt 3: Erstellen Sie einen Service-Plan
+## Schritt 3: Erstelle einen Serviceplan
 
-Pläne sind die wöchentlichen Zuweisungen, die Freiwilligen sagen, wo sie benötigt werden.
+Pläne sind die wöchentlichen Zuweisungen, die den Freiwilligen sagen, wo sie gebraucht werden.
 
-Folgen Sie der Anleitung [Pläne](../serving/plans.md) zu:
+Folge der Anleitung [Pläne](../serving/plans.md):
 
-1. Navigieren Sie zu Serving, wählen Sie Ihre Ministerregisterkarte
-2. Klicken Sie auf „Plan hinzufügen" und wählen Sie das Service-Datum
-3. Erweitern Sie auf der Registerkarte "Zuweisungen" jedes Team und weisen Sie Freiwilligen ihren Positionen zu
+1. Navigiere zu Serving, wähle dein Ministeriums-Tab
+2. Klicke auf „Plan hinzufügen" und wähle das Servicedatum
+3. Auf der Registerkarte Zuweisungen, erweitere jedes Team und weise Freiwillige ihren Positionen zu
 4. Freiwillige sehen ihren Zuweisungsstatus (Angefordert, Bestätigt, Ausstehend)
 
-## Schritt 4: Erstellen Sie die Service-Reihenfolge
+## Schritt 4: Erstelle die Servicebestellung
 
-Legen Sie den Fluss Ihres Service von Anfang bis Ende fest.
+Lege den Ablauf deines Dienstes von Anfang bis Ende fest.
 
-Folgen Sie der Anleitung [Service-Reihenfolge](../serving/service-order.md) zu:
+Folge der Anleitung [Servicebestellung](../serving/service-order.md):
 
-1. Wechseln Sie zur Registerkarte „Service-Reihenfolge" in Ihrem Plan
-2. Klicken Sie auf „Element hinzufügen", um Elemente hinzuzufügen: Anbetungslieder (aus Ihrer Bibliothek), Gebete, Schriftlesung, Ankündigungen, Predigt, Kollekte, Schluss
-3. Ziehen Sie Elemente per Drag-and-Drop, um den Service-Fluss neu zu ordnen
+1. Wechsle zur Registerkarte „Servicebestellung" in deinem Plan
+2. Klicke auf „Element hinzufügen", um Elemente hinzuzufügen: Lobgesänge (aus deiner Bibliothek), Gebete, Schriftversen, Ankündigungen, Predigt, Opferung, Schluss
+3. Ziehe und ersetze Elemente, um den Servicefluss zu neuordnen
 
 :::info
-Service-Reihenfolgen sind planspezifisch. Änderungen hier wirken sich nicht auf andere Pläne oder die Hauptlied-Bibliothek aus.
+Servicebestellungen sind planspezifisch. Änderungen hier beeinflussen nicht andere Pläne oder die Master-Liederbibliothek.
 :::
 
-## Schritt 5: Richten Sie wiederkehrende Aufgaben ein
+## Schritt 5: Weise Sonntags-Aufgaben zu
 
-Automatisieren Sie wöchentliche Verantwortung, damit nichts fallengelassen wird.
+Verfolge einmalige Sonntags-Verantwortungen, damit nichts durchs Netz geht.
 
-Folgen Sie den Anleitungen [Aufgaben](../serving/tasks.md) und [Automatisierung](../serving/automations.md) zu:
+Folge der Anleitung [Aufgaben](../serving/tasks.md):
 
-1. Erstellen Sie Automatisierungen für wöchentliche wiederkehrende Aufgaben (z.B. „Abendmahlselemente vorbereiten", „Bulletins drucken", „Soundausrüstung einrichten")
-2. Weisen Sie jede Automatisierung der verantwortlichen Person oder Gruppe zu
-3. Aufgaben erscheinen auf ihrem B1-Dashboard und mobiler App automatisch
+1. Erstelle Aufgaben für Verantwortungen wie „Kommunion-Elemente vorbereiten", „Bulletins drucken" oder „Soundanlage einrichten"
+2. Weise jede Aufgabe der verantwortlichen Person oder Gruppe zu
+3. Aufgaben erscheinen unter **Serving > Meine Aufgaben**, auf dem Dashboard des Zugeordneten und in der mobilen App
+
+:::info
+B1 Admin erstellt keine Aufgaben nach einem wiederkehrenden Plan. Für wiederkehrende Prozesse, die Personen durch Schritte bewegen, verwende [Workflows](../serving/workflows.md) mit einem Schedule-Trigger.
+:::
+
+## Schritt 6: Aktiviere Selbstanmeldung (Optional)
+
+Lasse Freiwillige sich selbst für Positionen anmelden, anstatt auf Admin-Zuweisungen zu warten.
+
+1. Wenn du einen Plan bearbeitest, setze ein **Anmelde-Frist** (Stunden vor dem Service), um zu kontrollieren, wann sich die Selbstanmeldung schließt. Lasse leer für keine Frist.
+2. Optional schalte **Freiwilligennamen auf der Anmelde-Seite anzeigen** um, damit Freiwillige sehen können, wer sich sonst noch angemeldet hat.
+3. Für jede Position, aktiviere das Kontrollkästchen **Selbstanmeldung erlauben**, um es für Selbstservice verfügbar zu machen.
+4. Füge eine **Beschreibung** zu jeder Position hinzu, damit Freiwillige wissen, was die Rolle mit sich bringt.
+
+Sobald Selbstanmelde-Positionen erstellt sind, erscheinen sie automatisch auf den Freiwilligen-Anmelde-Seiten auf [B1.church](../../b1-church/serving/volunteer-signup) und der [B1 Mobile App](../../b1-mobile/serving/volunteer-signup). Mitglieder können offene Positionen durchsuchen, sehen, wie viele Plätze verbleiben, und sich mit einem Klick anmelden.
 
 :::tip
-Legen Sie Automatisierungen bei Ferien oder besonderen Zeiten auf "Inaktiv" fest und reaktivieren Sie sie dann, wenn Sie bereit sind. Sie müssen sie nicht löschen und neu erstellen.
+Mische Admin-zugewiesene und Selbstanmelde-Positionen im gleichen Plan. Beispielsweise weise deinen Lobpreis-Leiter direkt zu, aber lasse Greeters und Kaffee-Server sich selbst wählen.
 :::
 
-## Schritt 6: Aktivieren Sie Self-Service-Anmeldung (Optional)
+## Schritt 7: Benachrichtige deine Freiwilligen
 
-Lassen Sie Freiwillige sich selbst für Positionen anmelden, anstatt auf Admin-Zuweisungen zu warten.
-
-1. Legen Sie beim Bearbeiten eines Plans eine **Anmeldungsfrist** (Stunden vor dem Service) fest, um zu kontrollieren, wann sich Freiwillige abmelden. Lassen Sie das Feld leer, wenn es keine Frist gibt.
-2. Schalten Sie optional **Zeigen Sie Freiwilligennamen auf der Anmeldeseite** um, damit Freiwillige sehen können, wer sich angemeldet hat.
-3. Aktivieren Sie für jede Position das Kontrollkästchen **Selbstanmeldung zulassen**, um es für Self-Service verfügbar zu machen.
-4. Fügen Sie eine **Beschreibung** zu jeder Position hinzu, damit Freiwillige wissen, was die Rolle beinhaltet.
-
-Sobald Selbstanmeldungspositionen erstellt sind, werden sie automatisch auf den Freiwilligenanmeldeseiten auf [B1.church](../../b1-church/serving/volunteer-signup) und der [B1 Mobile App](../../b1-mobile/serving/volunteer-signup) angezeigt. Mitglieder können offene Positionen durchsuchen, sehen, wie viele Plätze verbleiben, und sich mit einem Klick anmelden.
-
-:::tip
-Mischen Sie in denselben Plan Admin-zugewiesene und Self-Signup-Positionen. Zum Beispiel weisen Sie Ihren Anbetungsleiter direkt zu, lassen aber Greeter und Kaffeeschenker selbst auswählen.
-:::
-
-## Schritt 7: Teilen Sie es Freiwilligen mit
-
-Zugewiesene Freiwillige sehen ihre Pläne automatisch und können antworten.
+Zugewiesene Freiwillige sehen automatisch ihre Pläne und können reagieren.
 
 1. Freiwillige sehen ihre Pläne auf [B1.church](../../b1-church/plans/viewing-plans.md) und der [B1 Mobile App](../../b1-mobile/serving/viewing-plans.md)
-2. Sie können Zuweisungen direkt von einer der beiden Plattformen akzeptieren oder ablehnen
-3. Sie können Blockierungsdaten für Wochen festlegen, in denen sie nicht verfügbar sind
-4. Pläne können für Proben gedruckt oder auf der Bühne angebracht werden
-5. Freiwillige können auf der Seite [Freiwilligen-Anmeldung](../../b1-church/serving/volunteer-signup) offene Positionen durchsuchen und sich anmelden
+2. Sie können Zuweisungen direkt von beiden Plattformen aus akzeptieren oder ablehnen
+3. Sie können Sperrtermine für Wochen setzen, in denen sie nicht verfügbar sind
+4. Pläne können für Proben gedruckt oder hinter den Kulissen angebracht werden
+5. Freiwillige können offene Positionen durchsuchen und sich über die [Freiwilligen-Anmelde-Seite](../../b1-church/serving/volunteer-signup) anmelden
 
 :::tip
 Push-Benachrichtigungen auf der mobilen App benachrichtigen Freiwillige, wenn sie neue Zuweisungen erhalten oder wenn sich Pläne ändern.
 :::
 
-## Sie sind fertig!
+## Du bist fertig!
 
-Ihr Freiwilligenmanagement-System ist eingerichtet. Erstellen Sie jede Woche einen neuen Plan, weisen Sie Positionen zu, und Ihr Team sieht alles auf ihrem Telefon oder Computer. Wiederkehrende Aufgaben übernehmen die Routine-Vorbereitungsarbeit automatisch.
+Dein Freiwilligen-Verwaltungssystem ist eingerichtet. Jede Woche erstelle einen neuen Plan, weise Positionen zu, und dein Team sieht alles auf ihrem Telefon oder Computer.
 
 ## Verwandte Artikel
 
-- [Gruppen erstellen](../groups/creating-groups.md) -- Richten Sie Teams und Kategorien ein
-- [Gruppenmitglieder](../groups/group-members.md) -- Fügen Sie Teammitglieder hinzu und verwalten Sie diese
-- [Pläne](../serving/plans.md) -- Erstellen Sie und verwalten Sie Service-Pläne
-- [Service-Reihenfolge](../serving/service-order.md) -- Erstellen Sie den Fluss eines Service
-- [Lieder](../serving/songs.md) -- Verwalten Sie Ihre Anbetungs-Lied-Bibliothek
-- [Aufgaben](../serving/tasks.md) -- Weisen Sie Aktionselemente Personen oder Gruppen zu
-- [Automatisierung](../serving/automations.md) -- Automatisieren Sie wiederkehrende Aufgaben
-- [Viewing Plans (Web)](../../b1-church/plans/viewing-plans.md) -- Wie Freiwillige Pläne online sehen
-- [Viewing Plans (Mobile)](../../b1-mobile/serving/viewing-plans.md) -- Wie Freiwillige Pläne mobil sehen
-- [Freiwilligenanmeldung (Web)](../../b1-church/serving/volunteer-signup) -- Wie Mitglieder Freiwilligenpositionen selbst auswählen
-- [Freiwilligenanmeldung (Mobile)](../../b1-mobile/serving/volunteer-signup) -- Freiwilligen-Selbstanmeldung auf mobil
-
+- [Gruppen erstellen](../groups/creating-groups.md) -- richte Teams und Kategorien ein
+- [Gruppenmitglieder](../groups/group-members.md) -- füge Teamemitglieder hinzu und verwalte sie
+- [Pläne](../serving/plans.md) -- erstelle und verwalte Servicepläne
+- [Servicebestellung](../serving/service-order.md) -- baue den Ablauf eines Dienstes
+- [Lieder](../serving/songs.md) -- verwalte deine Lobgesang-Bibliothek
+- [Aufgaben](../serving/tasks.md) -- weise Aktionspunkte Personen oder Gruppen zu
+- [Workflows](../serving/workflows.md) -- bewege Personen durch wiederholbare Prozesse mit Triggern und automatisierten Schritten
+- [Pläne anzeigen (Web)](../../b1-church/plans/viewing-plans.md) -- wie Freiwillige Pläne online sehen
+- [Pläne anzeigen (Mobil)](../../b1-mobile/serving/viewing-plans.md) -- wie Freiwillige Pläne mobil sehen
+- [Freiwilligen-Anmeldung (Web)](../../b1-church/serving/volunteer-signup) -- wie Mitglieder Freiwilligenposten selbst wählen
+- [Freiwilligen-Anmeldung (Mobil)](../../b1-mobile/serving/volunteer-signup) -- Freiwilligen-Selbstanmeldung mobil

@@ -1,48 +1,52 @@
 ---
-title: "Settings"
+title: "सेटिंग्स"
 ---
 
-# Settings
+# सेटिंग्स
 
 <div class="article-intro">
 
-The Settings section is where you configure your church's account, branding, and administrative options in B1 Admin. From here you can manage everything from your church name and subdomain to user permissions and mobile app configuration.
+सेटिंग्स अनुभाग वह जगह है जहां आप B1 Admin में अपने चर्च के खाते, ब्रांडिंग, और प्रशासनिक विकल्पों को कॉन्फ़िगर करते हैं। यहां से आप अपने चर्च के नाम और सबडोमेन से लेकर उपयोगकर्ता अनुमतियों और मोबाइल ऐप कॉन्फ़िगरेशन तक सबकुछ प्रबंधित कर सकते हैं।
 
 </div>
 
-## What You Will Find Here
+## आप यहाँ क्या पाएंगे
 
-The Settings area is organized into the following sub-sections:
+सेटिंग्स क्षेत्र निम्नलिखित उप-अनुभागों में संगठित है:
 
-1. **Settings** -- Configure your church's basic information, branding, and subdomain. See [Church Settings](./church-settings.md) for details.
-2. **Campuses** -- Add and manage multiple physical locations for your church. Once created, campuses appear on person profiles, in attendance setup, and in the Demographics dashboard. See [Campuses](./campuses.md) for details.
-3. **Custom Fields** -- Define your own fields to track on people (a date, number, yes/no answer, or pick-list), then fill them in on profiles and search on them. See [Custom Fields](./custom-fields.md) for details.
-3. **Mobile Apps** -- Set up and customize the navigation tabs that appear in the [B1.church PWA](/docs/b1-church/getting-started/installing-pwa) for your members (the same tabs are also rendered by the deprecated B1 Mobile native app). See [Mobile App Settings](./mobile-app.md) for details.
-4. **Email Templates** -- Save reusable email content for sending manually or from a workflow. See [Email Templates](./email-templates.md) for details.
-5. **Server Admin** -- Access advanced administration tools for managing your church's server-level settings.
-6. **Forms** -- Create and manage custom forms for collecting information from your congregation.
+1. **Settings** -- अपने चर्च की बुनियादी जानकारी, ब्रांडिंग, और सबडोमेन कॉन्फ़िगर करें। विवरण के लिए [Church Settings](./church-settings.md) देखें। अपने स्वयं के डोमेन नाम का उपयोग करने के लिए (जैसे yourchurch.org), [Custom Domain](./custom-domain.md) देखें।
+2. **Campuses** -- अपने चर्च के लिए एक से अधिक भौतिक स्थान जोड़ें और प्रबंधित करें। एक बार बनाए जाने के बाद, कैंपस व्यक्ति प्रोफाइल, उपस्थिति सेटअप, और जनसांख्यिकी डैशबोर्ड पर दिखाई देते हैं। मुख्य सेटिंग्स पेज पर एक कार्ड के रूप में पहुंचा जाता है बल्कि एक अलग नेविगेशन आइटम के रूप में नहीं। विवरण के लिए [Campuses](./campuses.md) देखें।
+3. **Custom Fields** -- अपने स्वयं के क्षेत्रों को परिभाषित करें लोगों को ट्रैक करने के लिए (एक दिनांक, संख्या, हाँ/नहीं उत्तर, या चुनिंदा-सूची), फिर उन्हें प्रोफाइल पर भरें और उन पर खोजें। मुख्य सेटिंग्स पेज पर एक कार्ड के रूप में भी पहुंचा जाता है। विवरण के लिए [Custom Fields](./custom-fields.md) देखें।
+4. **Email Templates** -- पुन: प्रयोग करने योग्य ईमेल सामग्री को मैन्युअल रूप से या एक वर्कफ़्लो से भेजने के लिए सहेजें। विवरण के लिए [Email Templates](./email-templates.md) देखें।
+5. **Server Admin** -- अपने चर्च के सर्वर-स्तर की सेटिंग्स को प्रबंधित करने के लिए उन्नत प्रशासन उपकरण तक पहुंचें।
 
-## The Main Settings Page
+:::info
+**Mobile Apps** कॉन्फ़िगरेशन और **Forms** अब शीर्ष-स्तरीय नेविगेशन आइटम हैं -- **Mobile** और **Forms** (** लोगों ** के तहत पाया गया) -- सेटिंग्स के अंदर रहने के बजाय। विवरण के लिए [Mobile App Settings](./mobile-app.md) और [Creating Forms](/docs/b1-admin/forms/creating-forms) देखें।
+:::
 
-When you first open the Settings page, you will see your **church name** and **subdomain** displayed at the top. The header provides quick-access buttons for common tasks:
+## मुख्य सेटिंग्स पेज
 
-- **Edit Settings** -- Update your church's name, address, contact information, and branding.
-- **Mobile Apps** -- Jump directly to mobile app configuration.
-- **Roles** -- Manage user roles and permissions for your team.
-- **Import/Export** -- Transfer data between systems using the import/export tool.
+जब आप पहली बार सेटिंग्स पेज खोलते हैं, तो आप अपना **church name** और **subdomain** शीर्ष पर प्रदर्शित देखेंगे। हेडर सामान्य कार्यों के लिए त्वरित पहुंच बटन प्रदान करता है:
+
+- **Email Templates** -- ईमेल टेम्पलेट प्रबंधन पर सीधे कूदें।
+- **Audit Log** -- आपके चर्च के खाते में किए गए परिवर्तनों का एक लॉग देखें।
+- **Batches** -- दान बैच पर सीधे कूदें।
+- **Import/Export** -- आयात/निर्यात उपकरण का उपयोग करके सिस्टम के बीच डेटा स्थानांतरित करें।
+
+हेडर के नीचे, अपने चर्च के नाम, पते, संपर्क जानकारी, और ब्रांडिंग को संपादित करने के लिए **Church Information** अनुभाग खोलें -- [Church Settings](./church-settings.md) देखें। उपयोगकर्ता भूमिकाओं को प्रबंधित करने के लिए, सेटिंग्स नेविगेशन बार में **Roles** पर क्लिक करें -- [Roles & Permissions](./roles-permissions.md) देखें।
 
 :::tip
-Start by configuring your church name and branding under **Edit Settings**, then set up [Roles](./roles-permissions.md) to invite your team members with the right level of access.
+**Church Information** के तहत अपने चर्च के नाम और ब्रांडिंग को कॉन्फ़िगर करके शुरू करें, फिर [Roles](./roles-permissions.md) को सेटअप करें सही पहुंच स्तर के साथ अपनी टीम सदस्यों को आमंत्रित करने के लिए।
 :::
 
 :::info
-For information about how your data is protected, see [Data Security](./data-security.md).
+अपने डेटा की सुरक्षा कैसे की जाती है इसके बारे में जानकारी के लिए, [Data Security](./data-security.md) देखें।
 :::
 
-## Next Steps
+## अगले कदम
 
-- [Church Settings](./church-settings.md) -- Configure your church information and branding
-- [Campuses](./campuses.md) -- Add locations for multi-site churches
-- [Roles & Permissions](./roles-permissions.md) -- Set up user roles and access control
-- [Mobile App Settings](./mobile-app.md) -- Customize the navigation tabs shown in the B1.church PWA
-- [Data Security](./data-security.md) -- Learn how your data is protected
+- [Church Settings](./church-settings.md) -- अपनी चर्च जानकारी और ब्रांडिंग कॉन्फ़िगर करें
+- [Campuses](./campuses.md) -- बहु-साइट चर्चों के लिए स्थान जोड़ें
+- [Roles & Permissions](./roles-permissions.md) -- उपयोगकर्ता भूमिकाएं और पहुंच नियंत्रण सेटअप करें
+- [Mobile App Settings](./mobile-app.md) -- B1.church PWA में दिखाए गए नेविगेशन टैब को अनुकूलित करें
+- [Data Security](./data-security.md) -- जानें कि आपका डेटा कैसे संरक्षित है

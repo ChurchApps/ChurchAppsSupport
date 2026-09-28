@@ -6,83 +6,95 @@ title: "Criando Formulários"
 
 <div class="article-intro">
 
-Build custom forms to collect information from your congregation. You can create forms for event registrations, surveys, visitor cards, membership applications, and more. Forms can be linked to people in your database or used as standalone pages with their own public URL.
+Crie formulários personalizados para coletar informações de sua congregação. Você pode criar formulários para inscrições em eventos, pesquisas, cartões de visitante, inscrições de membros e muito mais. Os formulários podem ser vinculados a pessoas em seu banco de dados ou usados como páginas autônomas com sua própria URL pública.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Antes de Começar</h4>
 
-- For **People** forms (linked to person records), you need [people in your database](../people/adding-people.md) first.
-- For forms that collect **payments**, you must have [Stripe configured for online giving](../donations/online-giving-setup.md).
+- Para formulários de **Pessoas** (vinculados a registros de pessoas), você precisa ter [pessoas em seu banco de dados](../people/adding-people.md) primeiro.
+- Para formulários que coletam **pagamentos**, você deve ter [Stripe configurado para doação online](../donations/online-giving-setup.md).
 
 </div>
 
-## Creating a New Form
+## Criando um Novo Formulário
 
-1. Navigate to **Forms** from the main menu.
-2. Click **Add Form**.
-3. Enter a **name** for your form.
-4. Choose the form type from the dropdown:
-   - **People** — Associates submissions with [people records](../people/adding-people.md) in your database.
-   - **Stand Alone** — Creates an independent form with its own public URL, ideal for external registrations.
-5. Click **Save** to create the form.
+1. Abra **Pessoas** no menu de seção, depois clique em **Formulários** na barra de navegação.
+2. Clique em **Adicionar Formulário**.
+3. Insira um **nome** para seu formulário.
+4. Escolha o tipo de formulário no menu suspenso:
+   - **Pessoas** — Associa submissões com [registros de pessoas](../people/adding-people.md) em seu banco de dados.
+   - **Autônomo** — Cria um formulário independente com sua própria URL pública, ideal para inscrições externas.
+5. Clique em **Salvar** para criar o formulário.
 
-Your new form will appear in the list. Click on it to start adding questions.
+Seu novo formulário aparecerá na lista. Clique nele para começar a adicionar perguntas.
 
-## Adding Questions
+## Imprimindo um Formulário em Branco
 
-1. Open your form and go to the **Questions** tab.
-2. Click **Add Question**.
-3. Select a **field type** from the Provider dropdown. Available types include:
-   - **Textbox** — For short text answers
-   - **Date** — For date selections
-   - **Email** — For email addresses
-   - **Phone Number** — For phone input
-   - **Multiple Choice** — For selecting from predefined options
-   - **Payment** — For collecting payments
-4. Enter a **Title** and optional **Description** for the question.
-5. Check **Require an answer** if the field is mandatory.
-6. Click **Save**.
-7. Repeat to add more questions.
+Precisa de uma cópia em papel para distribuir -- para um cartão de visitante na mesa de boas-vindas ou um formulário que alguém sem acesso à internet possa preencher manualmente? Clique no **ícone de impressão** próximo a um formulário na lista principal de Formulários para abrir uma visualização, depois clique em **Imprimir**. Os campos em branco são impressos com uma linha ou caixa de seleção para cada pergunta para que as pessoas possam preenchê-los manualmente; perguntas obrigatórias são marcadas com um asterisco. Não há outras opções de impressão -- imprima o formulário inteiro ou nada.
+
+## Adicionando Perguntas
+
+1. Abra seu formulário e vá para a guia **Perguntas**.
+2. Clique em **Adicionar Pergunta**.
+3. Selecione um **tipo de campo** no menu suspenso do Provedor. Os tipos disponíveis incluem:
+   - **Caixa de Texto** — Para respostas de texto curto
+   - **Data** — Para seleção de data
+   - **E-mail** — Para endereços de e-mail
+   - **Número de Telefone** — Para entrada de telefone
+   - **Múltipla Escolha** — Para selecionar entre opções predefinidas
+   - **Pagamento** — Para coletar pagamentos
+4. Insira um **Título** e **Descrição** opcional para a pergunta.
+5. Marque **Exigir uma resposta** se o campo é obrigatório.
+6. Clique em **Salvar**.
+7. Repita para adicionar mais perguntas.
 
 :::warning
-The **Payment** field type requires Stripe to be configured. If you haven't set up online giving yet, see [Online Giving Setup](../donations/online-giving-setup.md) before adding payment fields.
+O tipo de campo **Pagamento** requer que Stripe seja configurado. Se você ainda não configurou a doação online, consulte [Configuração de Doação Online](../donations/online-giving-setup.md) antes de adicionar campos de pagamento.
 :::
 
-## Managing Form Members
+## Gerenciando Membros do Formulário
 
-1. Open your form and go to the **Members** tab.
-2. Search for a person and add them with a role:
-   - **Admin** — Can edit the form and view all submissions.
-   - **View Only** — Can view submissions but cannot edit the form.
+1. Abra seu formulário e vá para a guia **Membros**.
+2. Procure por uma pessoa e adicione-a com uma função:
+   - **Admin** — Pode editar o formulário e visualizar todas as submissões.
+   - **Apenas Visualizar** — Pode visualizar submissões, mas não pode editar o formulário.
 
-## Automatically Adding Submitters to a Group
+## Adicionando Automaticamente Submissores a um Grupo
 
-When **Create a person record from submissions** is enabled, you can also link the form to a group so every submitter is added to that group's roster automatically:
+Quando **Criar um registro de pessoa a partir de submissões** está ativado, você também pode vincular o formulário a um grupo para que cada submetedor seja adicionado automaticamente à lista de um grupo:
 
-1. Open your form's **Details**, and turn on **Create a person record from submissions**.
-2. Under **Add submitters to a group**, select the group to add submitters to, or leave it set to **None**.
-3. Click **Save**.
+1. Abra os **Detalhes** do seu formulário e ative **Criar um registro de pessoa a partir de submissões**.
+2. Em **Adicionar submissores a um grupo**, selecione o grupo para adicionar submissores ou deixe definido como **Nenhum**.
+3. Clique em **Salvar**.
 
-Each time someone submits the form, the matched or newly created person is added to the group (existing group members are skipped). This is useful for things like a camp sign-up form that should automatically build the camp's roster group.
+Cada vez que alguém envia o formulário, a pessoa correspondente ou recém-criada é adicionada ao grupo (membros do grupo existentes são pulados). Isso é útil para coisas como um formulário de inscrição em acampamento que deve construir automaticamente a lista de acampamento.
 
-## Duplicating a Form
+### Enviando um E-mail de Acompanhamento
 
-To reuse a form as a starting point for a new one, click the **Duplicate** icon (copy icon) next to the form in the Forms list. B1 creates an exact copy of the form — including all questions — which you can then rename and edit independently.
+Com **Criar um registro de pessoa a partir de submissões** ativado, você também pode enviar um e-mail para cada pessoa que envia o formulário. Preencha **Assunto do E-mail de Acompanhamento** e **Corpo do E-mail de Acompanhamento** nos detalhes do formulário. Você pode usar os tokens `{firstName}` e `{churchName}` em ambos. O e-mail é enviado apenas quando ambos os campos estão preenchidos.
 
-:::tip
-Duplication is handy for recurring events where the registration questions stay the same from year to year. Duplicate last year's form, update the name and dates, and you're ready to go.
+:::info
+Os e-mails de acompanhamento são enviados apenas após sua igreja ser aprovada para enviar e-mail em grupo, e contam em relação ao limite diário de e-mail de sua igreja. Consulte [Ativando E-mail em Grupo para Sua Igreja](../groups/group-members.md#turning-on-group-email-for-your-church).
 :::
 
-## Configuring Form Properties
+## Duplicando um Formulário
 
-You can update your form's name and settings at any time. For Stand Alone forms, you will also see a unique **public URL** that you can share with anyone.
+Para reutilizar um formulário como ponto de partida para um novo, clique no ícone **Duplicar** (ícone de cópia) próximo ao formulário na lista de Formulários. O B1 cria uma cópia exata do formulário -- incluindo todas as perguntas -- que você pode então renomear e editar independentemente.
 
 :::tip
-Stand Alone forms are great for event registrations. Share the public URL via email, social media, or embed the form directly on your church website.
+A duplicação é útil para eventos recorrentes onde as perguntas de inscrição permanecem iguais de ano para ano. Duplique o formulário do ano passado, atualize o nome e as datas e você está pronto.
+:::
+
+## Configurando Propriedades do Formulário
+
+Você pode atualizar o nome e as configurações de seu formulário a qualquer momento. Para formulários Autônomos, você também verá uma **URL pública** única que você pode compartilhar com qualquer pessoa, juntamente com um campo **Descrição** -- texto mostrado acima das perguntas na página de formulário público, útil para dizer às pessoas qual é o propósito do formulário antes de começarem a preenchê-lo.
+
+:::tip
+Formulários autônomos são ótimos para inscrições em eventos. Compartilhe a URL pública por e-mail, mídia social ou incorpore o formulário diretamente no site de sua igreja.
 :::
 
 :::info
-To embed a form on your B1 website, go to your website editor, add a new section, and select the **Form** element. Then choose the form you want to display. See [Managing Pages](../website/managing-pages.md) for details on editing your website.
+Para incorporar um formulário no seu site B1, vá para o editor do seu site, adicione uma nova seção e selecione o elemento **Formulário**. Depois escolha o formulário que deseja exibir. Consulte [Gerenciando Páginas](../website/managing-pages.md) para detalhes sobre como editar seu site.
 :::

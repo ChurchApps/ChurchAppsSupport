@@ -6,44 +6,74 @@ title: "Naviguer dans B1App"
 
 <div class="article-intro">
 
-Le portail membre de B1.church utilise une disposition de navigation en barre latérale qui facilite le déplacement entre les différents outils qui vous sont proposés. Cette page explique le fonctionnement de la navigation, tant sur ordinateur de bureau que sur appareils mobiles.
+Le portail des membres dans B1.church est une application web optimisée pour téléphone qui se trouve sous `/mobile`. Elle fonctionne dans n'importe quel navigateur et peut être installée sur votre écran d'accueil. Cette page explique le tableau de bord Accueil, la barre d'onglets inférieure, le menu Plus et la page Me.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Vous devez être [connecté](./logging-in.md) pour accéder au portail membre.
+- Vous devez être [connecté](./logging-in.md) pour voir vos informations personnelles. Les visiteurs déconnectés peuvent toujours parcourir le contenu public et se voient proposer un bouton **Se connecter** où une fonctionnalité nécessite un compte.
 
 </div>
 
-## Navigation par barre latérale
+## Accueil
 
-Lorsque vous entrez dans le portail membre, vous verrez une barre latérale verticale sur le côté gauche de l'écran. Cette barre latérale contient des onglets pour chaque section du portail :
+L'ouverture de `https://yourchurchname.b1.church/mobile` vous amène au tableau de bord **Accueil** à `/mobile/dashboard`. L'accueil est la page d'accueil du portail des membres et affiche :
 
-- **Timeline** -- Votre flux personnalisé de mises à jour et de conversations issues de vos groupes et de votre église. C'est l'onglet par défaut qui se charge à l'ouverture du portail membre.
-- **Me** -- Votre tableau de bord personnel des prochaines affectations de service, inscriptions, événements de groupe et notifications récentes. Voir [La page Me](./me-page).
-- **Groups** -- Consultez et interagissez avec les [groupes](../groups/) auxquels vous appartenez.
-- **Community** -- Parcourez l'[annuaire des membres](../community/member-directory.md) de l'église.
-- **Plans** -- Consultez les [plannings de service](../plans/) à venir et vos postes de bénévolat assignés.
-- **Check-in** -- [Enregistrez-vous](../checkin/) ainsi que votre foyer pour les services et événements.
-- **Lessons** *(obsolète)* -- L'onglet Lessons intégré au portail a été remplacé par [FreePlay](/docs/freeplay/) pour la lecture en salle de classe. Parcourez le curriculum directement sur [Lessons.church](https://lessons.church) ou consultez la [page de référence Lessons](../content/lessons.md) pour plus de détails.
-- **Donations** -- Faites des [dons](../giving/) en ligne et consultez votre historique de dons.
+- Un message d'accueil avec votre nom
+- Le verset du jour
+- Une carte en vedette pour ce que votre église a mis en évidence
+- Une grille **Explorer** des outils que votre église a activés -- groupes, dons, enregistrement, sermons, plans, et plus
 
-Cliquez sur un onglet pour basculer vers cette section. L'onglet actif est mis en surbrillance afin que vous sachiez toujours où vous êtes.
+Appuyer sur une carte dans Explorer ouvre cet outil. Si votre église a plus d'outils que ce qui tient sur le tableau de bord, la dernière carte est **Plus**, qui ouvre la liste complète à `/mobile/more`.
+
+## La barre d'onglets inférieure
+
+Sur un téléphone, une barre d'onglets est fixée en bas de l'écran :
+
+- **Accueil** -- toujours le premier onglet
+- Jusqu'à trois des onglets que votre église a configurés
+- **Plus** -- ouvre le menu de navigation
+
+Si votre église a configuré plus de trois onglets, les autres ne sont pas perdus : ils apparaissent dans le menu **Plus** et sur la grille Explorer du tableau de bord. Les administrateurs d'église définissent l'ordre des onglets dans B1 Admin sous **Mobile → Navigation**.
+
+## Le menu
+
+Appuyer sur **Plus** ouvre le menu de navigation. Sur une tablette ou un ordinateur, le même menu est toujours visible le long du côté gauche de l'écran. Il contient :
+
+- Votre nom et photo, avec un raccourci **Modifier le profil** -- voir [Modification de votre profil](./editing-your-profile.md)
+- **Accueil** et **Me**
+- **Portail d'administration** -- affiché uniquement si vous avez les permissions d'administrateur à votre église ; il ouvre B1 Admin
+- Chaque onglet que votre église a configuré, dans l'ordre
+- **Installer l'application** -- ouvre les [instructions d'installation](./installing-pwa.md) à `/mobile/install`
+- Un bouton bascule de mode clair/sombre
+- **Se connecter** ou **Se déconnecter**
+- Le nom de votre église et un lien vers la politique de confidentialité
+
+## La barre d'application
+
+La barre en haut de chaque écran affiche :
+
+- Le titre de l'écran, ou le nom de votre église sur Accueil
+- Une flèche arrière lorsque vous avez descendu dans un écran de détail
+- Une icône **cloche** pour les notifications et les messages, avec un badge pour les éléments non lus
+- Votre **photo de profil**, qui ouvre votre profil à `/mobile/profileEdit` -- voir [Modification de votre profil](./editing-your-profile.md)
+
+## La page Me
+
+**Me** (`/mobile/me`) est votre centre personnel. Il énumère les raccourcis vers votre profil, [préférences de notification](./notification-preferences.md), messages, [dons](../giving/), et [inscriptions](../events/my-registrations.md), suivis de ce qui vous attend -- assignments de service, inscriptions aux événements et événements de groupe -- et vos notifications les plus récentes. Voir [La page Me](./me-page) pour plus de détails.
+
+Si vous êtes déconnecté, la page Me affiche à la place un bouton **Se connecter**.
+
+## Installer sur votre écran d'accueil
+
+Le portail des membres est une Progressive Web App. Visitez `/mobile/install` (ou choisissez **Installer l'application** dans le menu) pour obtenir des instructions étape par étape pour votre appareil. Une fois installée, elle s'ouvre en plein écran depuis votre écran d'accueil sans l'interface du navigateur. Voir [Installation en tant qu'application (PWA)](./installing-pwa.md).
+
+## Le site Web public de votre église
+
+En dehors du portail des membres, le site Web public de votre église a sa propre navigation d'en-tête avec des liens que vos administrateurs ont configurés -- des pages comme [sermons](../content/sermons.md), la [Bible](../content/bible.md), [diffusion en direct](../content/live-streaming.md), et une liste de groupes publique. Sur un téléphone, ces liens se trouvent derrière l'icône du menu hamburger dans le coin supérieur droit de l'en-tête.
 
 :::info
-Les onglets que vous voyez peuvent varier selon ce que votre église a activé. Les administrateurs de l'église contrôlent les sections visibles par les membres via B1 Admin. Si vous ne voyez pas un onglet en particulier, il est possible que votre église n'ait pas activé cette fonctionnalité.
+Les onglets et les outils que vous voyez varient selon l'église. Les administrateurs contrôlent les sections visibles pour les membres via B1 Admin, donc si vous ne voyez pas une fonctionnalité décrite ici, votre église peut ne pas l'avoir activée.
 :::
-
-## Navigation mobile
-
-Sur les écrans plus petits comme les téléphones et les tablettes, la barre latérale se replie pour économiser de l'espace. À la place, vous verrez un bouton **Menu** en haut du portail membre. Appuyez dessus pour ouvrir une liste de tous les onglets disponibles. Sélectionnez un onglet pour naviguer vers cette section, et le menu se fermera automatiquement.
-
-## Onglet Admin
-
-Si vous avez des autorisations d'administrateur dans votre église, vous verrez un onglet supplémentaire **Admin** en bas de la barre latérale. En cliquant dessus, vous accédez à B1 Admin où vous pouvez gérer les paramètres et les données de votre église.
-
-## Navigation de l'en-tête principal
-
-En dehors du portail membre, l'en-tête principal du site contient les liens de navigation personnalisés de votre église. Ceux-ci sont configurés par les administrateurs de votre église et peuvent inclure des liens vers des pages comme les [prédications](../content/sermons.md), la [Bible](../content/bible.md), la [diffusion en direct](../content/live-streaming.md), et d'autres contenus. Sur mobile, ces liens sont accessibles via une icône de menu hamburger dans le coin supérieur droit de l'en-tête.

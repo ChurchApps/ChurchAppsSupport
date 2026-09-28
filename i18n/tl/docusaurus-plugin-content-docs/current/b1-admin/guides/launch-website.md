@@ -1,90 +1,90 @@
 ---
-title: "Gabay: Ilunsad ang Website ng Iyong Simbahan"
+title: "Gabay: Ilunsad ang Iyong Church Website"
 ---
 
-# Ilunsad ang Website ng Iyong Simbahan
+# Ilunsad ang Iyong Church Website
 
 <div class="article-intro">
 
-Kasama sa B1.church ang isang kumpletong website builder nang walang karagdagang gastos. Inaakay ka ng gabay na ito sa paggawa ng website ng iyong simbahan mula sa simula — pag-set up ng iyong home page, pag-configure ng hitsura, pagdaragdag ng mahahalagang pahina, at opsyonal na pagkonekta ng online giving at mga form ng pagpaparehistro sa kaganapan.
+Ang B1.church ay may kasamang full website builder nang walang dagdag na bayad. Ang gabay na ito ay gumagabay sa iyo sa paglikha ng iyong church website mula sa simula -- pag-setup ng iyong home page, pag-configure ng iyong look and feel, pagdaragdag ng mga pangunahing pahina, at opsyonal na koneksyon ng online giving at event registration forms.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Ihanda ang logo ng iyong simbahan (pinakamaganda ang PNG na may transparent na background)
-- Pumili ng 2–3 brand color para sa iyong site
-- Kung gumagamit ng custom domain (hal., iyongsimbahan.com), siguraduhing may access ka sa iyong DNS provider (GoDaddy, Cloudflare, atbp.)
-- Kung gusto mo ng online giving sa iyong site, kumpletuhin muna ang [Online Giving Setup](../donations/online-giving-setup.md) (Stripe)
+- Handa na ang iyong church logo (PNG na may transparent na background ay ang pinakamahusay)
+- Pumili ng 2-3 na brand colors para sa iyong site
+- Kung gumagamit ng custom domain (hal., yourchurch.com), mayroon kang access sa iyong DNS provider (GoDaddy, Cloudflare, atbp.)
+- Kung nais mo ang online giving sa iyong site, kumpletuhin muna ang [Online Giving Setup](../donations/online-giving-setup.md) (Stripe)
 
 </div>
 
 ## Hakbang 1: Paunang Website Setup
 
-Magsimula sa paggawa ng iyong home page at pangunahing istruktura ng site.
+Magsimula sa pamamagitan ng paglikha ng iyong home page at basic site structure.
 
-Sundin ang gabay na [Paunang Website Setup](../website/initial-setup.md) para:
+Sundin ang [Website Initial Setup](../website/initial-setup.md) gabay upang:
 
-1. Pumunta sa **Website** sa B1 Admin
-2. Gumawa ng iyong home page na may hero section, welcome message, at mahahalagang impormasyon
-3. Idagdag ang pangalan at tagline ng iyong simbahan
+1. Mag-navigate sa **Website** sa B1 Admin
+2. Lumikha ng iyong home page na may hero section, welcome message, at key information
+3. Magdagdag ng iyong church name at tagline
 
 ## Hakbang 2: I-configure ang Hitsura
 
-I-set ang visual identity ng iyong site — mga kulay, font, logo, at footer.
+Itakda ang visual identity ng iyong site -- mga kulay, fonts, logo, at footer.
 
-Sundin ang gabay na [Hitsura](../website/appearance.md) para:
+Sundin ang [Appearance](../website/appearance.md) gabay upang:
 
-1. I-upload ang logo ng iyong simbahan
-2. I-set ang iyong primary at accent na mga kulay
+1. Mag-upload ng iyong church logo
+2. Itakda ang iyong pangunahin at accent na mga kulay
 3. I-configure ang navigation bar at footer
 4. I-preview ang iyong mga pagbabago
 
 :::tip
-Panatilihing simple ang iyong color palette — isang primary color at isang accent color ang karaniwang sapat na. Hahawakan ng website builder ang iba pa.
+Panatilihing simple ang iyong color palette -- isang pangunahing kulay at isang accent color ay karaniwan nang sapat. Ang website builder ay aayusin ang natitira.
 :::
 
-## Hakbang 3: Magdagdag ng mga Content Page
+## Hakbang 3: Magdagdag ng Mga Pahina ng Content
 
-Buuin ang mga pahina na pinakakailangan ng iyong mga bisita.
+Bumuo ng mga pahina na ang iyong mga bisita ay kailangan ng pinaka.
 
-Sundin ang gabay na [Pamamahala ng mga Pahina](../website/managing-pages.md) para gumawa ng mga pahina tulad ng:
+Sundin ang [Managing Pages](../website/managing-pages.md) gabay upang lumikha ng mga pahina tulad ng:
 
-- **Tungkol sa Amin** — Kwento, paniniwala, at pamumuno ng iyong simbahan
-- **Mga Sermon** — Link sa iyong [sermon library](../sermons/managing-sermons.md)
-- **Mga Kaganapan** — Mga paparating na kaganapan at pagpaparehistro
-- **Mag-donate** — Pahina ng online giving (kailangan ang [Stripe setup](../donations/online-giving-setup.md))
-- **Makipag-ugnayan** — Lokasyon, oras ng serbisyo, at impormasyon sa pakikipag-ugnayan
+- **Tungkol** -- Ang kuwento ng iyong simbahan, mga paniniwala, at pamumuno
+- **Mga Sermon** -- Link sa iyong [sermon library](../sermons/managing-sermons.md)
+- **Mga Kaganapan** -- Mga paparating na kaganapan at registration
+- **Magbigay** -- Online giving page (kinakailangan ng [Stripe setup](../donations/online-giving-setup.md))
+- **Makipag-ugnayan** -- Lokasyon, oras ng serbisyo, at contact info
 
 ## Hakbang 4: Ikonekta ang Iyong Domain
 
-Kung gusto mong gamitin ang sarili mong domain name (tulad ng iyongsimbahan.com) sa halip na default na B1 URL:
+Kung nais mong gumamit ng sariling domain name (tulad ng yourchurch.com) sa halip ng default na B1 URL:
 
-1. Pumunta sa **Website > Settings** sa B1 Admin
-2. Ilagay ang iyong custom domain
-3. I-update ang iyong mga DNS record sa iyong domain provider para ituro sa B1
+1. Pumunta sa **Settings** sa B1 Admin at buksan ang **Domains** section
+2. Magpasok ng iyong custom domain
+3. I-update ang iyong DNS records sa iyong domain provider upang tumuro sa B1
 
 :::info
-Ang mga pagbabago sa DNS ay maaaring tumagal ng hanggang 48 oras para kumalat. Maaaring hindi maa-access ang iyong site mula sa custom domain kaagad. Patuloy na gagana ang default na B1 URL sa panahong ito.
+Ang mga DNS changes ay maaaring tumagal ng hanggang 48 na oras upang kumalat. Ang iyong site ay maaaring hindi ma-access mula sa iyong custom domain kaagad. Ang default na B1 URL ay patuloy na gumagana sa panahong ito.
 :::
 
-## Hakbang 5: Magdagdag ng Giving at mga Form
+## Hakbang 5: Magdagdag ng Pagbibigay at Mga Form
 
-Pagandahin ang iyong site gamit ang mga interactive element:
+Palakasin ang iyong site gamit ang mga interactive na elemento:
 
-- **Online Giving** — Magdagdag ng giving section para maka-donate ang mga miyembro nang direkta mula sa iyong website. Tingnan ang [Online Giving Setup](../donations/online-giving-setup.md) para i-configure muna ang Stripe.
-- **Mga Form ng Pagpaparehistro** — I-embed ang mga [Stand Alone na form](../forms/creating-forms.md) para sa event signup, visitor card, o volunteer application. Tingnan ang [Pamamahala ng mga Pahina](../website/managing-pages.md) para sa kung paano magdagdag ng form element sa anumang pahina.
+- **Online Giving** -- Magdagdag ng isang giving section upang ang mga miyembro ay maaaring mag-donate nang direkta mula sa iyong website. Tingnan ang [Online Giving Setup](../donations/online-giving-setup.md) upang i-configure ang Stripe muna.
+- **Registration Forms** -- Mag-embed ng [Stand Alone forms](../forms/creating-forms.md) para sa event signups, visitor cards, o volunteer applications. Tingnan ang [Managing Pages](../website/managing-pages.md) para sa kung paano magdagdag ng isang form element sa anumang pahina.
 
 ## Tapos Ka Na!
 
-Live na ang website ng iyong simbahan. Ibahagi ang URL sa iyong kongregasyon at sa social media. Maaari mong i-update ang content, magdagdag ng mga bagong pahina, at i-adjust ang hitsura anumang oras mula sa B1 Admin dashboard.
+Ang iyong church website ay live. Ibahagi ang URL sa iyong congregation at sa social media. Maaari mong i-update ang content, magdagdag ng mga bagong pahina, at ayusin ang hitsura anumang oras mula sa B1 Admin dashboard.
 
 ## Mga Kaugnay na Artikulo
 
-- [Paunang Website Setup](../website/initial-setup.md) — detalyadong walkthrough ng setup
-- [Pamamahala ng mga Pahina](../website/managing-pages.md) — magdagdag at mag-edit ng mga pahina
-- [Hitsura](../website/appearance.md) — mga kulay, logo, at layout
-- [Pamamahala ng mga File](../website/files.md) — mag-upload ng mga imahe at dokumento
-- [Online Giving Setup](../donations/online-giving-setup.md) — i-configure ang Stripe
-- [Paggawa ng mga Form](../forms/creating-forms.md) — gumawa ng mga form para sa pagpaparehistro at survey
+- [Website Initial Setup](../website/initial-setup.md) -- detalyadong setup walkthrough
+- [Managing Pages](../website/managing-pages.md) -- magdagdag at mag-edit ng mga pahina
+- [Appearance](../website/appearance.md) -- kulay, logo, at layout
+- [Managing Files](../website/files.md) -- mag-upload ng mga imahe at dokumento
+- [Online Giving Setup](../donations/online-giving-setup.md) -- i-configure ang Stripe
+- [Creating Forms](../forms/creating-forms.md) -- bumuo ng registration at survey forms

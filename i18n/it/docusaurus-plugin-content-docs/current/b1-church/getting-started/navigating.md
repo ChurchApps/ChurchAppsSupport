@@ -1,49 +1,79 @@
 ---
-title: "Navigare in B1App"
+title: "Navigazione in B1App"
 ---
 
-# Navigare in B1App
+# Navigazione in B1App
 
 <div class="article-intro">
 
-Il portale membri in B1.church usa un layout di navigazione a barra laterale che rende semplice muoversi tra i diversi strumenti a tua disposizione. Questa pagina spiega come funziona la navigazione sia su desktop sia su dispositivi mobili.
+Il portale dei membri in B1.church è un'app web mobile-first che si trova sotto `/mobile`. Funziona in qualsiasi browser e può essere installata nella schermata iniziale. Questa pagina spiega il dashboard Home, la barra di schede in basso, il menu Altro e la pagina Me.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di iniziare</h4>
+<h4>Prima di Iniziare</h4>
 
-- Devi aver [effettuato l'accesso](./logging-in.md) per accedere al portale membri.
+- Devi essere [registrato](./logging-in.md) per visualizzare le tue informazioni personali. I visitatori non registrati possono comunque sfogliare il contenuto pubblico e gli viene offerto un pulsante Accedi dove una funzione richiede un account.
 
 </div>
 
-## Navigazione a barra laterale
+## Home
 
-Quando entri nel portale membri, vedrai una barra laterale verticale sul lato sinistro dello schermo. Questa barra laterale contiene schede per ogni sezione del portale:
+Aprendo `https://nometuachiesa.b1.church/mobile` ti porta al dashboard **Home** a `/mobile/dashboard`. Home è la pagina di destinazione del portale dei membri e mostra:
 
-- **Timeline** -- Il tuo feed personalizzato di aggiornamenti e conversazioni dai tuoi gruppi e dalla chiesa. Questa è la scheda predefinita caricata quando apri il portale membri.
-- **Me** -- La tua dashboard personale con i prossimi turni di servizio, le iscrizioni, gli eventi di gruppo e le notifiche recenti. Vedi [La pagina Me](./me-page).
-- **Groups** -- Visualizza e interagisci con i [gruppi](../groups/) a cui appartieni.
-- **Community** -- Sfoglia la [directory dei membri](../community/member-directory.md) della chiesa.
-- **Plans** -- Consulta i prossimi [piani di servizio](../plans/) e le posizioni di volontariato a te assegnate.
-- **Check-in** -- [Effettua il check-in](../checkin/) di te stesso e della tua famiglia per servizi ed eventi.
-- **Lessons** *(deprecata)* -- La scheda Lessons all'interno del portale è stata sostituita da [FreePlay](/docs/freeplay/) per la riproduzione in classe. Sfoglia i curricula direttamente su [Lessons.church](https://lessons.church) oppure consulta la [pagina di riferimento su Lessons](../content/lessons.md) per i dettagli.
-- **Donations** -- Effettua [donazioni](../giving/) online e visualizza la cronologia delle tue offerte.
+- Un saluto con il tuo nome
+- Il versetto del giorno
+- Una scheda in evidenza per tutto ciò che la tua chiesa ha evidenziato
+- Una griglia **Esplora** degli strumenti che la tua chiesa ha attivato - gruppi, donazioni, check-in, sermoni, piani e altro
 
-Fai clic su qualsiasi scheda per passare a quella sezione. La scheda attiva viene evidenziata così sai sempre dove ti trovi.
+Toccando una scheda in Esplora si apre quello strumento. Se la tua chiesa ha più strumenti di quanti ne possono stare nel dashboard, l'ultima scheda è **Altro**, che apre l'elenco completo a `/mobile/more`.
+
+## La Barra di Schede Inferiore
+
+Su un telefono, una barra di schede è fissa nella parte inferiore dello schermo:
+
+- **Home** - sempre la prima scheda
+- Fino a tre delle schede che la tua chiesa ha configurato
+- **Altro** - apre il menu di navigazione
+
+Se la tua chiesa ha configurato più di tre schede, il resto non è perso: appaiono nel menu **Altro** e nella griglia Esplora del dashboard. Gli amministratori della chiesa impostano l'ordine delle schede in B1 Admin in **Mobile → Navigazione**.
+
+## Il Menu
+
+Toccando **Altro** si apre il menu di navigazione. Su un tablet o desktop lo stesso menu è sempre visibile lungo il lato sinistro dello schermo. Contiene:
+
+- Il tuo nome e foto, con un collegamento **Modifica Profilo** — vedi [Modifica del Tuo Profilo](./editing-your-profile.md)
+- **Home** e **Me**
+- **Portale Admin** - mostrato solo se hai permessi di amministratore nella tua chiesa; apre B1 Admin
+- Ogni scheda che la tua chiesa ha configurato, in ordine
+- **Installa App** - apre le [istruzioni di installazione](./installing-pwa.md) a `/mobile/install`
+- Un interruttore modalità chiaro/scuro
+- **Accedi** o **Esci**
+- Il nome della tua chiesa e un link alla politica sulla privacy
+
+## La Barra dell'App
+
+La barra nella parte superiore di ogni schermo mostra:
+
+- Il titolo dello schermo o il nome della tua chiesa su Home
+- Una freccia indietro quando hai fatto clic su una schermata di dettaglio
+- Un'icona **campanello** per notifiche e messaggi, con un badge per elementi non letti
+- La tua **foto profilo**, che apre il tuo profilo a `/mobile/profileEdit` — vedi [Modifica del Tuo Profilo](./editing-your-profile.md)
+
+## La Pagina Me
+
+**Me** (`/mobile/me`) è il tuo hub personale. Elenca i collegamenti ai tuoi profili, [preferenze di notifica](./notification-preferences.md), messaggi, [donazioni](../giving/), e [registrazioni](../events/my-registrations.md), seguiti da ciò che ti aspetta - incarichi di servizio, registrazioni a eventi e eventi di gruppo - e le tue notifiche più recenti. Vedi [La Pagina Me](./me-page) per i dettagli.
+
+Se sei disconnesso, la pagina Me mostra invece un pulsante **Accedi**.
+
+## Installazione nella Schermata Iniziale
+
+Il portale dei membri è un'app web progressiva. Visita `/mobile/install` (o scegli **Installa App** nel menu) per le istruzioni passo dopo passo per il tuo dispositivo. Una volta installato, si apre a schermo intero dalla tua schermata iniziale senza interfaccia del browser. Vedi [Installazione come App (PWA)](./installing-pwa.md).
+
+## Il Sito Web Pubblico della Tua Chiesa
+
+Fuori dal portale dei membri, il sito web pubblico della tua chiesa ha la sua propria navigazione di intestazione con i link che i tuoi amministratori hanno configurato - pagine come [sermoni](../content/sermons.md), la [Bibbia](../content/bible.md), [streaming live](../content/live-streaming.md) e un elenco di gruppi pubblici. Su un telefono questi link si trovano dietro l'icona hamburger in alto a destra dell'intestazione.
 
 :::info
-Le schede che vedi possono variare a seconda di ciò che la tua chiesa ha attivato. Gli amministratori della chiesa controllano quali sezioni sono visibili ai membri tramite B1 Admin. Se non vedi una determinata scheda, la tua chiesa potrebbe non aver attivato quella funzionalità.
+Le schede e gli strumenti che vedi variano in base alla chiesa. Gli amministratori controllano quali sezioni sono visibili ai membri attraverso B1 Admin, quindi se non vedi una funzione descritta qui, la tua chiesa potrebbe non averla attivata.
 :::
-
-## Navigazione mobile
-
-Su schermi più piccoli come telefoni e tablet, la barra laterale si comprime per risparmiare spazio. Al suo posto, vedrai un pulsante **Menu** in alto nel portale membri. Toccalo per aprire un elenco di tutte le schede disponibili. Seleziona una scheda per passare a quella sezione, e il menu si chiuderà automaticamente.
-
-## Scheda Admin
-
-Se hai autorizzazioni di amministratore nella tua chiesa, vedrai una scheda **Admin** aggiuntiva in fondo alla barra laterale. Facendoci clic accedi a B1 Admin dove puoi gestire le impostazioni e i dati della tua chiesa.
-
-## Navigazione dell'intestazione principale
-
-Al di fuori del portale membri, l'intestazione principale del sito contiene i link di navigazione personalizzati della tua chiesa. Questi sono configurati dagli amministratori della tua chiesa e possono includere link a pagine come [sermoni](../content/sermons.md), la [Bibbia](../content/bible.md), lo [streaming in diretta](../content/live-streaming.md) e altri contenuti. Su mobile, questi link sono accessibili tramite un'icona a menu hamburger nell'angolo in alto a destra dell'intestazione.

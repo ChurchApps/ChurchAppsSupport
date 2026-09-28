@@ -1,154 +1,153 @@
 ---
-title: "Lærervisning for lekser"
+title: "Lærervisning for Leksjoner"
 ---
 
-# Lærervisning for lekser
+# Lærervisning for Leksjoner
 
 <div class="article-intro">
-Lærervisning gir et utvidet fullskjermgrensesnitt for å vise lekseinnhold med strukturerte seksjoner, noe som gjør det enklere for lærere og ledere å navigere gjennom leksemateriale i klassetiden.
+Lærervisningen gir et utvidet, fullskjermgrensesnitt for visning av leksjonsinnhold med strukturerte avsnitt, noe som gjør det enklere for lærere og ledere å navigere gjennom leksjonsmaterialer under klassetid.
 </div>
 
 <div class="prereqs">
-<h4>Før du begynner</h4>
+<h4>Før Du Begynner</h4>
 
-- Kirken din må ha lekser planlagt i en plan. Se B1 Admin-guiden om [Planlegge lekser](../../b1-admin/serving/scheduling-lessons.md) for detaljer.
-- Du må være tildelt planen eller ha tilgang til å se den på B1.church-nettstedet ditt.
+- Kirken din må ha leksjoner planlagt i en plan. Se B1 Admin-guiden om [Planlegging av Leksjoner](../../b1-admin/serving/scheduling-lessons.md) for detaljer.
+- Du må være tildelt planen eller ha tilgang til å se den på B1.church-siden din.
 </div>
 
-## Åpne lærervisning
+## Åpning av Lærervisning
 
-For å få tilgang til den utvidede lærervisningen for en lekse:
+For å få tilgang til den utvidede lærervisningen for en leksjon:
 
-1. Naviger til **Planer**-delen på B1.church
-2. Åpne planen som inneholder leksen du vil undervise
-3. Finn leksen i planelementene
-4. Klikk på leksen for å se detaljene
-5. Klikk på **Lærervisning** eller **Utvidet visning**-knappen
+1. Naviger til **Planer**-seksjonen på B1.church
+2. Åpne planen som inneholder leksjonen du vil undervise
+3. Åpne **Serviceordre**-fanen
+4. Klikk på **Undervise**-knappen
 
-Leksen vil åpnes i et fullskjermgrensesnitt optimalisert for undervisning.
+Leksjonen åpnes i et fullskjermgrensesnitt optimalisert for undervisning.
 
 :::tip
-Lærervisning er spesielt nyttig når du projiserer lekseinnhold på en skjerm eller TV for at klassen skal se, eller når du underviser fra et nettbrett.
+Lærervisningen er spesielt nyttig når du projiserer leksjonsinnhold på en skjerm eller TV for klassen å se, eller når du underviser fra et nettbrett.
 :::
 
 ## Lærervisningsfunksjoner
 
-### Fanebasert navigasjon
+### Fanenavigering
 
-Lærervisningen organiserer lekseinnhold i seksjoner ved hjelp av faner øverst:
+Lærervisningen organiserer leksjonsinnhold i avsnitt ved hjelp av faner over toppen:
 
-- Hver hovedseksjon av leksen vises som en separat fane
-- Klikk på en fane for å hoppe direkte til den seksjonen
-- Den aktive seksjonen er uthevet i fanelinjen
-- Faner gjør det enkelt å hoppe rundt til forskjellige deler av leksen
+- Hvert hovedavsnitt av leksjonen vises som en separat fane
+- Klikk på en fane for å hoppe direkte til det avsnittet
+- Det aktive avsnittet er fremhevet i fanestolpen
+- Faner gjør det enkelt å hoppe rundt til ulike deler av leksjonen
 
-### Rullbart innhold
+### Rullebart Innhold
 
-Hovedinnholdsområdet viser det fullstendige leksematerialet:
+Hovedinnholdsområdet viser hele leksjonsmaterialene:
 
-- Rull gjennom leksen naturlig
-- Mens du ruller, oppdateres den aktive fanen automatisk for å matche seksjonen du ser på
-- All formatert tekst, bilder og instruksjoner vises tydelig
+- Rull gjennom leksjonen naturlig
+- Når du ruller, oppdateres den aktive fanen automatisk for å samsvare med avsnittet du viser
+- Alt formatert tekst, bilder og instruksjoner vises tydelig
 
-### Medieavspilling
+### Mediaavspilling
 
-Når lekser inkluderer videoer, bilder eller andre medier:
+Når leksjoner inkluderer videoer, bilder eller annet media:
 
-- Klikk på et medieelement for å åpne det i en popup-spiller
-- Videoer spilles i en dedikert videospiller med standardkontroller
-- Bilder åpnes i en lysboks for fullskjermvisning
-- Lukk mediespilleren for å gå tilbake til lekseinnholdet
+- Klikk på et hvilket som helst medieelement for å åpne det i en popup-avspiller
+- Videoer spilles av i en dedikert videospiller med standardkontroller
+- Bilder åpnes i en lightbox for fullskjermsvisning
+- Lukk mediespilleren for å gå tilbake til leksjonsinnholdet
 
-### Nedlastbare ressurser
+### Nedlastbare Ressurser
 
-Hvis leksen inkluderer nedlastbare filer (aktivitetsark, fargesider, etc.):
+Hvis leksjonen inneholder nedlastbare filer (aktivitetark, fargeleggingssider osv.):
 
-- Nedlastingsknapper vises for hver ressurs
+- Nedlastningsknapper vises for hver ressurs
 - Klikk for å laste ned filer direkte til enheten din
-- Filer kan inkludere PDF-er, bilder eller andre materialer levert av innholdsskaperen
+- Filer kan inkludere PDF-filer, bilder eller annet materiale levert av innholdsskaperen
 
-## Bruke lærervisning i klasserommet
+## Bruk av Lærervisning i Klasserommet
 
-### Før klassen
+### Før Klassen
 
-1. Åpne leksen i lærervisning før klassen starter
-2. Gjennomgå alle seksjoner og gjør deg kjent med innholdet
-3. Last ned eventuelle utskrivbare ressurser du trenger
-4. Test eventuelle videoer eller medier for å sikre at de spilles riktig
+1. Åpne leksjonen i Lærervisning før klassen begynner
+2. Gjennomgå alle avsnitt og gjør deg kjent med innholdet
+3. Last ned alle utskrivbare ressurser du trenger
+4. Test eventuelle videoer eller media for å sikre at de avspilles korrekt
 
-### I løpet av klassen
+### Under Klassen
 
-1. Hold lærervisning åpen på enheten din eller prosjiser den på en skjerm
-2. Bruk fanene for å hoppe mellom seksjoner mens du går gjennom leksen
-3. Spill videoer eller vis bilder på passende tidspunkter
-4. Rull gjennom instruksjoner etter behov uten å miste stedet ditt
+1. Hold Lærervisningen åpen på enheten din eller projiser den på en skjerm
+2. Bruk fanene for å hoppe mellom avsnitt mens du går gjennom leksjonen
+3. Spill av videoer eller vis bilder på de aktuelle tidspunktene
+4. Rull gjennom instruksjonene etter behov uten å miste stedet ditt
 
-### På en projisert skjerm
+### På en Projisert Skjerm
 
 Når du projiserer for klassen:
 
-- Fullskjermlayouten fjerner distraksjoner
-- Stor, lesbar tekst gjør innholdet synlig fra tvers av rommet
+- Fullskjermoppsettet fjerner distraksjonene
+- Stor, lesbar tekst gjør innholdet synlig fra hele rommet
 - Klikk på medieelementer for å vise videoer eller bilder til hele klassen
-- Naviger ved hjelp av en trådløs mus eller pekeplate
+- Naviger ved hjelp av en trådløs mus eller styreflate
 
-## Lukke lærervisning
+## Lukking av Lærervisning
 
 For å avslutte lærervisningen:
 
 - Klikk på **Lukk**-knappen (X) i øvre hjørne
-- Eller trykk på **Esc**-tasten på tastaturet
-- Du vil gå tilbake til plandetaljvisningen
+- Eller trykk på **Esc**-tasten på tastaturet ditt
+- Du returnerer til visningen med plandetaljer
 
-## Mobil- og nettbrettbruk
+## Mobil- og Nettbrettbruk
 
-Lærervisning fungerer på nettbrett og mobile enheter:
+Lærervisningen fungerer på nettbrett og mobile enheter:
 
-- **Nettbrett** -- Perfekt for lærere som vil ha en bærbar lekseguide
-- **Telefoner** -- Også støttet, selv om den mindre skjermen kan være mindre ideell for undervisning
-- **Landskapsmodus** -- Gir den beste visningsopplevelsen på mobile enheter
+- **Nettbrett** -- Perfekt for lærere som ønsker en bærbar leksjonsveiledning
+- **Telefoner** -- Støttes også, selv om den mindre skjermen kan være mindre ideell for undervisning
+- **Landskap-modus** -- Gir den beste visningsopplevelsen på mobile enheter
 
-## Forskjeller fra vanlig leksevisning
+## Forskjeller fra Vanlig Leksjonsvisning
 
-| Funksjon | Vanlig visning | Lærervisning |
+| Funksjon | Vanlig Visning | Lærervisning |
 |---------|--------------|--------------|
-| **Layout** | Kompakt, i linje med plan | Fullskjerm, dedikert visning |
-| **Navigasjon** | Bare rull | Faner + rull med automatisk markering |
-| **Medier** | Innebygd i siden | Popup-spiller for fokusert visning |
-| **Skjermplass** | Viser andre planelementer | Maksimert for lekseinnhold |
-| **Best for** | Blaing og planlegging | Undervisning og presentasjon |
+| **Oppsett** | Kompakt, innebygd i plan | Fullskjerm, dedikert visning |
+| **Navigering** | Kun rulling | Faner + rulling med automatisk fremheving |
+| **Media** | Innebygd på siden | Popup-spiller for fokusert visning |
+| **Skjermrom** | Viser andre planelementene | Maksimalisert for leksjonsinnhold |
+| **Best for** | Browsing og planlegging | Undervisning og presentasjon |
 
-## Beste praksis
+## Beste Praksis
 
-- **Forbered deg på forhånd** -- Gjennomgå lekser i lærervisning før klassen for å gjøre deg kjent med layouten
-- **Bokmerk seksjoner** -- Merk hvilke faner som inneholder nøkkelaktiviteter eller diskusjoner
-- **Test medier** -- Sikre at videoer og bilder lastes inn riktig før klassetid
-- **Last ned ressurser tidlig** -- Ikke vent til klassetid med å laste ned utskrifter
-- **Bruk en større skjerm** -- Prosjiser eller bruk et nettbrett for den beste undervisningsopplevelsen
+- **Forbered på forhånd** -- Gjennomgå leksjoner i Lærervisning før klassen for å gjøre deg kjent med oppsettet
+- **Bokmerke avsnitt** -- Noter hvilke faner som inneholder viktige aktiviteter eller diskusjoner
+- **Test media** -- Sikre at videoer og bilder lastes inn riktig før klassetid
+- **Last ned ressurser tidlig** -- Vent ikke til klassetid med å laste ned utskrivbare materialer
+- **Bruk en større skjerm** -- Projiser eller bruk et nettbrett for den beste undervisningsopplevelsen
 
 ## Feilsøking
 
-### Leksen åpnes ikke i lærervisning
+### Leksjonen åpnes ikke i Lærervisning
 
-- Sikre at leksen er korrekt planlagt i planen
-- Sjekk at du har tillatelse til å se planen
+- Sikre at leksjonen er riktig planlagt i planen
+- Sjekk at du har tillatelse til å vise planen
 - Oppdater siden og prøv igjen
 
-### Videoer spilles ikke
+### Videoer vil ikke avspilles
 
-- Sjekk internettforbindelsen din
-- Sikre at enheten din tillater medieavspilling
+- Sjekk internetttilkoblingen din
+- Sikre at enheten din tillater mediaavspilling
 - Prøv å åpne videoen i en separat fane
 - Noen innholdsleverandører kan ha restriksjoner på videoavspilling
 
-### Innholdet virker avkuttet på mobil
+### Innholdet ser avskåret ut på mobil
 
-- Roter enheten din til landskapsmodus
-- Zoom ut litt om nødvendig
+- Roter enheten til landskapsmodus
+- Zoom ut litt hvis nødvendig
 - Vurder å bruke et nettbrett eller større enhet for bedre synlighet
 
-## Relaterte artikler
+## Relaterte Artikler
 
-- [Vise planer](../plans/viewing-plans.md) -- Få tilgang til tildelte planer
-- [Lekser](./lessons.md) -- Bla gjennom og se lekseinnhold
-- [Planlegge lekser](../../b1-admin/serving/scheduling-lessons.md) -- Administratorveiledning for å planlegge lekser i planer
+- [Visning av Planer](../plans/viewing-plans.md) -- Få tilgang til de tildelte planene dine
+- [Leksjoner](./lessons.md) -- Bla gjennom og se leksjonsinnhold
+- [Planlegging av Leksjoner](../../b1-admin/serving/scheduling-lessons.md) -- Admin-guide for planlegging av leksjoner i planer

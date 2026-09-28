@@ -2,87 +2,99 @@
 title: "फॉर्म बनाना"
 ---
 
-# Creating Forms
+# फॉर्म बनाना
 
 <div class="article-intro">
 
-Build custom forms to collect information from your congregation. You can create forms for event registrations, surveys, visitor cards, membership applications, and more. Forms can be linked to people in your database or used as standalone pages with their own public URL.
+अपनी मण्डली से जानकारी एकत्र करने के लिए कस्टम फॉर्म बनाएं। आप इवेंट पंजीकरण, सर्वेक्षण, दर्शक कार्ड, सदस्यता आवेदन, और बहुत कुछ के लिए फॉर्म बना सकते हैं। फॉर्म आपके डेटाबेस में लोगों से जुड़े जा सकते हैं या अपने स्वयं के सार्वजनिक URL के साथ स्टैंडअलोन पृष्ठों के रूप में उपयोग किए जा सकते हैं।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- For **People** forms (linked to person records), you need [people in your database](../people/adding-people.md) first.
-- For forms that collect **payments**, you must have [Stripe configured for online giving](../donations/online-giving-setup.md).
+- **लोग** फॉर्म (व्यक्ति रिकॉर्ड से जुड़े) के लिए, आपको पहले [आपके डेटाबेस में लोग](../people/adding-people.md) चाहिए।
+- **भुगतान** एकत्र करने वाले फॉर्म के लिए, आपको [ऑनलाइन दान के लिए Stripe कॉन्फ़िगर](../donations/online-giving-setup.md) करना चाहिए।
 
 </div>
 
-## Creating a New Form
+## एक नया फॉर्म बनाना
 
-1. Navigate to **Forms** from the main menu.
-2. Click **Add Form**.
-3. Enter a **name** for your form.
-4. Choose the form type from the dropdown:
-   - **People** — Associates submissions with [people records](../people/adding-people.md) in your database.
-   - **Stand Alone** — Creates an independent form with its own public URL, ideal for external registrations.
-5. Click **Save** to create the form.
+1. अनुभाग मेनू से **लोग** खोलें, फिर नेविगेशन बार में **फॉर्म** पर क्लिक करें।
+2. **फॉर्म जोड़ें** पर क्लिक करें।
+3. अपने फॉर्म के लिए एक **नाम** दर्ज करें।
+4. ड्रॉपडाउन से फॉर्म प्रकार चुनें:
+   - **लोग** -- प्रस्तुतियों को आपके डेटाबेस में [लोग रिकॉर्ड](../people/adding-people.md) से जोड़ता है।
+   - **स्टैंडअलोन** -- अपने स्वयं के सार्वजनिक URL के साथ एक स्वतंत्र फॉर्म बनाता है, बाहरी पंजीकरण के लिए आदर्श।
+5. फॉर्म बनाने के लिए **सहेजें** पर क्लिक करें।
 
-Your new form will appear in the list. Click on it to start adding questions.
+आपका नया फॉर्म सूची में दिखाई देगा। प्रश्न जोड़ना शुरू करने के लिए इसे क्लिक करें।
 
-## Adding Questions
+## खाली फॉर्म प्रिंट करना
 
-1. Open your form and go to the **Questions** tab.
-2. Click **Add Question**.
-3. Select a **field type** from the Provider dropdown. Available types include:
-   - **Textbox** — For short text answers
-   - **Date** — For date selections
-   - **Email** — For email addresses
-   - **Phone Number** — For phone input
-   - **Multiple Choice** — For selecting from predefined options
-   - **Payment** — For collecting payments
-4. Enter a **Title** and optional **Description** for the question.
-5. Check **Require an answer** if the field is mandatory.
-6. Click **Save**.
-7. Repeat to add more questions.
+हाथ देने के लिए एक कागज की प्रतिलिपि चाहिए -- स्वागत डेस्क पर एक दर्शक कार्ड के लिए, या एक फॉर्म जो इंटरनेट पहुंच के बिना कोई हाथ से भर सकता है? मुख्य फॉर्म सूची पर एक फॉर्म के बगल में **प्रिंट आइकन** पर क्लिक करें पूर्वावलोकन खोलने के लिए, फिर **प्रिंट** पर क्लिक करें। खाली फ़ील्ड प्रत्येक प्रश्न के लिए एक रेखांकन या चेकबॉक्स के साथ प्रिंट होते हैं ताकि लोग उन्हें हाथ से भर सकें; आवश्यक प्रश्न एक तारांकन के साथ चिह्नित होते हैं। कोई अन्य प्रिंट विकल्प नहीं हैं -- पूरे फॉर्म को प्रिंट करें या कुछ नहीं।
+
+## प्रश्न जोड़ना
+
+1. अपने फॉर्म को खोलें और **प्रश्न** टैब पर जाएं।
+2. **प्रश्न जोड़ें** पर क्लिक करें।
+3. Provider ड्रॉपडाउन से एक **फ़ील्ड प्रकार** का चयन करें। उपलब्ध प्रकार में शामिल हैं:
+   - **टेक्स्टबॉक्स** -- संक्षिप्त पाठ उत्तरों के लिए
+   - **तारीख** -- तारीख चयन के लिए
+   - **ईमेल** -- ईमेल पतों के लिए
+   - **फोन नंबर** -- फोन इनपुट के लिए
+   - **बहु-विकल्प** -- पूर्वनिर्धारित विकल्पों से चयन करने के लिए
+   - **भुगतान** -- भुगतान एकत्र करने के लिए
+4. प्रश्न के लिए एक **शीर्षक** और वैकल्पिक **विवरण** दर्ज करें।
+5. यदि फ़ील्ड अनिवार्य है तो **उत्तर की आवश्यकता है** की जांच करें।
+6. **सहेजें** पर क्लिक करें।
+7. अधिक प्रश्न जोड़ने के लिए दोहराएं।
 
 :::warning
-The **Payment** field type requires Stripe to be configured. If you haven't set up online giving yet, see [Online Giving Setup](../donations/online-giving-setup.md) before adding payment fields.
+**भुगतान** फ़ील्ड प्रकार को Stripe को कॉन्फ़िगर करने की आवश्यकता है। यदि आपने अभी तक ऑनलाइन दान सेट अप नहीं किया है, तो भुगतान फ़ील्ड जोड़ने से पहले [ऑनलाइन दान सेटअप](../donations/online-giving-setup.md) देखें।
 :::
 
-## Managing Form Members
+## फॉर्म सदस्यों को प्रबंधित करना
 
-1. Open your form and go to the **Members** tab.
-2. Search for a person and add them with a role:
-   - **Admin** — Can edit the form and view all submissions.
-   - **View Only** — Can view submissions but cannot edit the form.
+1. अपने फॉर्म को खोलें और **सदस्य** टैब पर जाएं।
+2. किसी व्यक्ति की खोज करें और उन्हें एक भूमिका के साथ जोड़ें:
+   - **प्रशासक** -- फॉर्म को संपादित कर सकते हैं और सभी प्रस्तुतियां देख सकते हैं।
+   - **केवल देखें** -- प्रस्तुतियां देख सकते हैं लेकिन फॉर्म संपादित नहीं कर सकते।
 
-## Automatically Adding Submitters to a Group
+## स्वचालित रूप से प्रस्तुतकर्ताओं को एक समूह में जोड़ना
 
-When **Create a person record from submissions** is enabled, you can also link the form to a group so every submitter is added to that group's roster automatically:
+जब **प्रस्तुतियों से एक व्यक्ति रिकॉर्ड बनाएं** सक्षम हो, तो आप फॉर्म को एक समूह से जोड़ सकते हैं ताकि हर प्रस्तुतकर्ता उस समूह के रोस्टर में स्वचालित रूप से जोड़ा जाए:
 
-1. Open your form's **Details**, and turn on **Create a person record from submissions**.
-2. Under **Add submitters to a group**, select the group to add submitters to, or leave it set to **None**.
-3. Click **Save**.
+1. अपने फॉर्म के **विवरण** को खोलें, और **प्रस्तुतियों से एक व्यक्ति रिकॉर्ड बनाएं** को चालू करें।
+2. **एक समूह में प्रस्तुतकर्ता जोड़ें** के तहत, प्रस्तुतकर्ता जोड़ने के लिए समूह का चयन करें, या इसे **कोई नहीं** पर सेट रखें।
+3. **सहेजें** पर क्लिक करें।
 
-Each time someone submits the form, the matched or newly created person is added to the group (existing group members are skipped). This is useful for things like a camp sign-up form that should automatically build the camp's roster group.
+हर बार जब कोई फॉर्म जमा करता है, तो मेल खाने वाला या नया बनाया गया व्यक्ति समूह में जोड़ा जाता है (मौजूदा समूह सदस्य छोड़े जाते हैं)। यह कैंप साइन-अप फॉर्म जैसी चीजों के लिए उपयोगी है जो स्वचालित रूप से कैंप के रोस्टर समूह को बनाना चाहिए।
 
-## Duplicating a Form
+### एक अनुवर्ती ईमेल भेजना
 
-To reuse a form as a starting point for a new one, click the **Duplicate** icon (copy icon) next to the form in the Forms list. B1 creates an exact copy of the form — including all questions — which you can then rename and edit independently.
+**प्रस्तुतियों से एक व्यक्ति रिकॉर्ड बनाएं** के साथ चालू होने पर, आप फॉर्म जमा करने वाले प्रत्येक व्यक्ति को ईमेल भी कर सकते हैं। फॉर्म के विवरण में **अनुवर्ती ईमेल विषय** और **अनुवर्ती ईमेल बॉडी** में भरें। आप दोनों में `{firstName}` और `{churchName}` टोकन का उपयोग कर सकते हैं। ईमेल केवल तभी भेजा जाता है जब दोनों फ़ील्ड भरे जाते हैं।
 
-:::tip
-Duplication is handy for recurring events where the registration questions stay the same from year to year. Duplicate last year's form, update the name and dates, and you're ready to go.
+:::info
+अनुवर्ती ईमेल केवल तभी भेजे जाते हैं जब आपके चर्च को समूह ईमेल भेजने के लिए अनुमोदित किया गया हो, और वे आपके चर्च की दैनिक ईमेल सीमा की ओर गिनती करते हैं। [अपने चर्च के लिए समूह ईमेल चालू करना](../groups/group-members.md#turning-on-group-email-for-your-church) देखें।
 :::
 
-## Configuring Form Properties
+## फॉर्म को डुप्लिकेट करना
 
-You can update your form's name and settings at any time. For Stand Alone forms, you will also see a unique **public URL** that you can share with anyone.
+एक नए फॉर्म के लिए शुरुआती बिंदु के रूप में एक फॉर्म का पुन: उपयोग करने के लिए, फॉर्म सूची में फॉर्म के बगल में **डुप्लिकेट** आइकन (कॉपी आइकन) पर क्लिक करें। B1 फॉर्म की एक सटीक प्रति बनाता है -- सभी प्रश्न सहित -- जिसे आप फिर स्वतंत्र रूप से नाम दे सकते हैं और संपादित कर सकते हैं।
 
 :::tip
-Stand Alone forms are great for event registrations. Share the public URL via email, social media, or embed the form directly on your church website.
+डुप्लिकेशन आवर्ती इवेंट के लिए काम आता है जहां पंजीकरण प्रश्न वर्ष दर वर्ष समान रहते हैं। पिछले साल के फॉर्म को डुप्लिकेट करें, नाम और तारीखें अपडेट करें, और आप जाने के लिए तैयार हैं।
+:::
+
+## फॉर्म गुण कॉन्फ़िगर करना
+
+आप किसी भी समय अपने फॉर्म का नाम और सेटिंग अपडेट कर सकते हैं। स्टैंडअलोन फॉर्म के लिए, आप एक अद्वितीय **सार्वजनिक URL** भी देखेंगे जिसे आप किसी के साथ साझा कर सकते हैं, साथ ही एक **विवरण** फ़ील्ड -- सार्वजनिक फॉर्म पृष्ठ पर प्रश्नों के ऊपर प्रदर्शित पाठ, यह बताने के लिए उपयोगी है कि फॉर्म किसके लिए है भरना शुरू करने से पहले।
+
+:::tip
+स्टैंडअलोन फॉर्म इवेंट पंजीकरण के लिए बढ़िया हैं। सार्वजनिक URL को ईमेल, सोशल मीडिया के माध्यम से साझा करें, या फॉर्म को सीधे अपनी चर्च वेबसाइट पर एम्बेड करें।
 :::
 
 :::info
-To embed a form on your B1 website, go to your website editor, add a new section, and select the **Form** element. Then choose the form you want to display. See [Managing Pages](../website/managing-pages.md) for details on editing your website.
+अपनी B1 वेबसाइट पर एक फॉर्म एम्बेड करने के लिए, अपने वेबसाइट संपादक पर जाएं, एक नया अनुभाग जोड़ें, और **फॉर्म** तत्व का चयन करें। फिर वह फॉर्म चुनें जो आप प्रदर्शित करना चाहते हैं। अपनी वेबसाइट संपादित करने के विवरण के लिए [पृष्ठों को प्रबंधित करना](../website/managing-pages.md) देखें।
 :::

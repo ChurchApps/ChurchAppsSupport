@@ -14,13 +14,13 @@ Tasks let you assign action items to people or groups in your church. Whether it
 <h4>Before You Begin</h4>
 
 - Make sure the people or [groups](../groups/creating-groups.md) you want to assign tasks to exist in B1 Admin
-- Navigate to the **Serving** section to access the Tasks page
+- Navigate to the **Serving** section and open **My Work** to see tasks
 
 </div>
 
 ## Viewing Tasks
 
-Navigate to **Serving** and open the **Tasks** page. You will see a list of your open tasks. Each task shows its title, assignee, and status.
+Navigate to **Serving** and open **My Work**. You will see a list of your open tasks. Each task shows its title, assignee, and status.
 
 :::tip
 By default, only open tasks are shown. Toggle **Show Closed** to see completed tasks as well.
@@ -49,12 +49,12 @@ Click on any task to open its detail page. From here you can:
 ## Task Lifecycle
 
 1. A new task starts with a status of **Open**.
-2. The assignee receives a notification and can view the task from their dashboard, the Tasks page, or the mobile app.
+2. The assignee receives a notification and can view the task from their dashboard, **Serving > My Work**, or the mobile app.
 3. Once the work is complete, the assignee (or an admin) changes the status to **Closed**.
 4. Closed tasks are removed from the default view but can still be accessed by enabling **Show Closed**.
 
 :::info
-You can automate recurring tasks so they are created on a schedule. See [Automations](./automations.md) for details on setting this up.
+B1 Admin no longer creates recurring tasks on a schedule. For repeating follow-up with people, use a [workflow](./workflows.md) with a [schedule trigger](./workflows.md#schedule-triggers).
 :::
 
 :::tip
@@ -68,5 +68,5 @@ Some tasks are created automatically by other parts of B1 and open to a special 
 ## Next Steps
 
 - Move people through a multi-step process with [Workflows](./workflows.md)
-- Set up [Automations](./automations.md) to create recurring tasks automatically
+- Use [Workflows](./workflows.md) to move people through repeatable processes automatically
 - Use tasks alongside [Service Plans](./plans.md) to track service preparation action items

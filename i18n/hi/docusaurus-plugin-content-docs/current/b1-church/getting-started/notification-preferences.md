@@ -2,57 +2,58 @@
 title: "सूचना वरीयताएं"
 ---
 
-# Notification Preferences
+# सूचना वरीयताएं
 
 <div class="article-intro">
 
-Notification preferences let you decide which notifications you receive from your church and how you receive them -- push notifications, email, or the in-app bell. You can fine-tune each type of notification, set quiet hours, or mute everything at once, all from one screen.
+सूचना वरीयताएं आपको यह तय करने देती हैं कि आप अपने चर्च से कौन सी सूचनाएं प्राप्त करते हैं और आप उन्हें कैसे प्राप्त करते हैं -- पुश सूचनाएं, ईमेल, या इन-ऐप घंटी। आप प्रत्येक प्रकार की सूचना को ठीक कर सकते हैं, शांत घंटे सेट कर सकते हैं, या एक बार में सब कुछ म्यूट कर सकते हैं, सब कुछ एक स्क्रीन से।
 
 </div>
 
-## Opening Your Preferences
+## अपनी वरीयताएं खोलना
 
-1. Open the **Notifications** area (the bell icon) in the B1 member app.
-2. Tap **Notification Preferences**.
+1. **मेरा** पृष्ठ पर जाएं और **शॉर्टकट** के तहत **सूचना वरीयताएं** पर टैप करें।
 
-## Global Controls
+आप घंटी आइकन पर भी टैप कर सकते हैं, **सूचनाएं** टैब खोलें, **सभी सूचनाएं देखें** पर टैप करें, और फिर उस पृष्ठ पर **सूचना वरीयताएं** पर टैप करें।
 
-At the top of the screen you'll find settings that apply to everything:
+## वैश्विक नियंत्रण
 
-- **Mute all** -- Temporarily pauses all non-essential notifications.
-- **Push notifications** -- Turns push notifications on or off for your device.
-- **Email frequency** -- Choose how email notifications arrive:
-  - **Per notification** -- Send an email as things happen.
-  - **Daily digest** -- Bundle them into one daily email.
-  - **Never** -- Don't send notification emails.
-- **Quiet hours** -- Set a start and end time (and your time zone) when you'd rather not be disturbed. Non-urgent notifications wait until quiet hours are over.
+स्क्रीन के शीर्ष पर आप उन सेटिंग्स पाएंगे जो सब कुछ पर लागू होती हैं:
 
-## Choosing Notifications by Type
+- **सब कुछ म्यूट करें** -- अस्थायी रूप से सभी गैर-आवश्यक सूचनाओं को रोकता है।
+- **पुश सूचनाएं** -- अपने डिवाइस के लिए पुश सूचनाएं चालू या बंद करता है।
+- **ईमेल आवृत्ति** -- चुनें कि ईमेल सूचनाएं कैसे आती हैं:
+  - **प्रति सूचना** -- जब चीजें होती हैं तो एक ईमेल भेजता है।
+  - **दैनिक पाचन** -- उन्हें एक दैनिक ईमेल में बंडल करें।
+  - **कभी नहीं** -- सूचना ईमेल न भेजें।
+- **शांत घंटे** -- एक शुरुआत और अंत समय सेट करें (और आपका समय क्षेत्र) जब आप परेशान नहीं होना चाहते। गैर-जरूरी सूचनाएं शांत घंटे खत्म होने तक प्रतीक्षा करती हैं।
 
-Below the global controls is a grid of notification types. For each one you can turn on or off the channels you want:
+## प्रकार द्वारा सूचनाओं का चयन
 
-- **Push** -- A notification on your device.
-- **Email** -- A message to your inbox.
-- **In-App** -- The bell/badge inside the app.
+वैश्विक नियंत्रणों के नीचे सूचना प्रकारों का एक ग्रिड है। प्रत्येक के लिए आप चैनलों को चालू या बंद कर सकते हैं जो आप चाहते हैं:
 
-Common types include **Event Reminders**, **Serving & Schedule**, **Direct Messages**, **Group Chat**, **Prayer Requests**, and **Church Announcements**. For example, you might keep push notifications on for Direct Messages but turn them off for Announcements.
+- **पुश** -- आपके डिवाइस पर एक सूचना।
+- **ईमेल** -- आपके इनबॉक्स पर एक संदेश।
+- **इन-ऐप** -- ऐप के अंदर घंटी/बैज।
+
+सामान्य प्रकारों में **ईवेंट रिमाइंडर**, **सेवा और शेड्यूल**, **प्रत्यक्ष संदेश**, **समूह चैट**, **प्रार्थना अनुरोध**, और **चर्च घोषणाएं** शामिल हैं। उदाहरण के लिए, आप प्रत्यक्ष संदेशों के लिए पुश सूचनाएं रख सकते हैं लेकिन घोषणाओं के लिए बंद कर सकते हैं।
 
 :::info
-A few notification types are **always on** and can't be turned off -- **Account & Security**, **Giving Receipts & Statements**, and **Check-In Safety Alerts**. These are required for your security and for legal reasons, so they show a small lock icon. Everything else is yours to control.
+कुछ सूचना प्रकार **हमेशा चालू** होते हैं और बंद नहीं किए जा सकते -- **खाता और सुरक्षा**, **दान रसीदें और विवरण**, और **चेक-इन सुरक्षा सतर्कताएं**। ये आपकी सुरक्षा और कानूनी कारणों के लिए आवश्यक हैं, इसलिए वे एक छोटा लॉक आइकन दिखाते हैं। बाकी सब कुछ आपके नियंत्रण में है।
 :::
 
-Some types are **off by default** (such as promotional or fundraising messages) and only reach you if you choose to opt in.
+कुछ प्रकार **डिफ़ॉल्ट रूप से बंद** होते हैं (जैसे प्रचारक या धन-संग्रहण संदेश) और केवल आपके पास पहुंचते हैं यदि आप चुनते हैं।
 
-## Saving Your Changes
+## अपने परिवर्तनों को सहेजना
 
-After adjusting your preferences, tap **Save**. Your changes take effect right away and apply everywhere you use B1.
+अपनी वरीयताओं को समायोजित करने के बाद, **वरीयताएं सहेजें** पर टैप करें। आपके परिवर्तन तुरंत प्रभावी होते हैं और B1 के हर जगह लागू होते हैं।
 
 :::tip
-Time-sensitive notifications -- like a security alert or a child check-in safety message -- still reach you even during quiet hours. Everyday updates wait until quiet hours end.
+समय-संवेदनशील सूचनाएं -- एक सुरक्षा सतर्कता या बाल चेक-इन सुरक्षा संदेश -- शांत घंटों के दौरान भी आपके पास पहुंचते हैं। रोजमर्रा की अपडेटें शांत घंटे समाप्त होने तक प्रतीक्षा करते हैं।
 :::
 
-## Related
+## संबंधित
 
-- [Volunteer Sign-Up](../serving/volunteer-signup) -- Serving reminders and responding to schedule requests
-- [Registering for Events](../events/registering) -- Sign up for events that send reminders
-- [Installing the App](installing-pwa) -- Add B1 to your device so you can receive push notifications
+- [स्वेच्छासेवक साइन-अप](../serving/volunteer-signup) -- सेवा रिमाइंडर और शेड्यूल अनुरोधों का जवाब देना
+- [ईवेंट के लिए पंजीकरण करना](../events/registering) -- ईवेंट के लिए साइन अप करें जो रिमाइंडर भेजते हैं
+- [ऐप स्थापित करना](installing-pwa) -- अपने डिवाइस पर B1 जोड़ें ताकि आप पुश सूचनाएं प्राप्त कर सकें

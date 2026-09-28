@@ -44,7 +44,7 @@ When you are logged in, the donation experience includes additional features, or
 
 To give:
 
-1. Click the **Donate** tab (or navigate to **My Donations**), then select the **Donate** tab if you land on Overview.
+1. Open the giving page from your church's **Donate** tab or from **Giving** in the Shortcuts on your [Me page](../getting-started/me-page.md). If you land on **Overview**, select the **Donate** tab.
 2. Choose the **fund** you would like to give to and enter your donation amount.
 3. Select an existing saved payment method or enter new payment details.
 4. Submit the form to complete your donation.

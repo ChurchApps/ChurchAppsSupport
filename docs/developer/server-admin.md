@@ -19,8 +19,8 @@ The features described on this page require **Server.Admin** permission and are 
 Users with Server.Admin permission can access the server admin panel from B1 Admin:
 
 1. Log in to [admin.b1.church](https://admin.b1.church)
-2. Click the **Admin** tab in the main navigation
-3. The Server Admin panel includes tabs for managing churches, users, and system operations
+2. Open **Settings**, then click **Server Admin** in the Settings menu. (You can also go straight to `admin.b1.church/admin`.)
+3. The Server Admin panel has sections for Churches, Users, Impersonate User, Background Jobs, Commons, Usage Trends, Translation Lookups, Server Health, and Database Migrations
 
 ## User Impersonation
 
@@ -28,7 +28,7 @@ The impersonation feature allows server admins to log in as another user for sup
 
 ### How to Impersonate a User
 
-1. Navigate to the **Impersonate** tab in the Server Admin panel
+1. Open the **Impersonate User** section of the Server Admin panel
 2. Enter the user's name or email address in the search field
 3. Click **Search** or press Enter
 4. From the search results, click on the user you want to impersonate
@@ -86,6 +86,29 @@ Commons moderation is staff-only — individual churches never see this queue. T
 :::
 
 See the [Content Commons architecture](/docs/developer/architecture/commons) page for the underlying data model and submission lifecycle.
+
+## Group Email Approval
+
+Churches cannot send church-written email (group email, form follow-ups, workflow emails, and account invites) until a server admin approves them. This keeps bot-registered churches from using the shared ChurchApps sending address for spam.
+
+1. Open the **Churches** tab in the Server Admin panel.
+2. Each church shows a **Group Email** chip: **Approved** (green) or **Not approved** (outlined).
+3. Click the chip and confirm to approve the church, or to revoke an approval.
+
+Church staff ask for approval with the **Request review** button in B1 Admin's Send Email dialog. The request is emailed to the support address and lists the church's name, ID, registration date, location, and who asked. A church can send one request per week. See [Church-authored email limits](/docs/developer/architecture/notifications#church-authored-email-limits) for the daily allowance and the automatic pause on bounces and complaints.
+
+## Database Migrations
+
+Deploys do not change the database. The hosted databases only accept connections from inside the Api's network, so after a release that adds a migration, a server admin applies it from the **Database Migrations** tab. (Self-hosted Docker installs still run migrations automatically when the Api container starts.)
+
+The tab shows the current environment and one row per module (membership, attendance, giving, and so on) with its status, the number of applied and pending migrations, and the last one applied.
+
+- **Run Pending Migrations** applies every pending migration, one module at a time, in order. It stops at the first failure and shows what was applied for each module.
+- A module marked **No history** has a database that predates migration tracking. It is never run automatically, because that would replay old data migrations over live tables. Click **Check Schema** on that module instead. The Api compares the tables, columns, and indexes each migration creates with the live database and marks each migration **Already applied**, **Missing**, **Partly applied**, or **Data only**. Nothing is changed by the check.
+- In the check results, **Record as Already Applied** writes the detected migrations into the migration history without running them. Missing ones stay pending and can then be run normally.
+- A **Partly applied** migration blocks recording. If the migration is safe to run again (read it first), tick **Re-run** so it stays pending and runs again from the top.
+
+The Server Admin panel and the CLI (`yarn migrate:up`) use the same Kysely migrator and `kysely_migration` table, so they always agree on what has been applied. The backing endpoints are `GET /membership/serverHealth/migrations`, `POST /membership/serverHealth/migrations/:module/run`, `GET .../:module/detect`, and `POST .../:module/baseline`, all Server.Admin only.
 
 ## Related Pages
 

@@ -6,65 +6,65 @@ title: "Configuração Inicial"
 
 <div class="article-intro">
 
-Depois de criar sua conta e igreja, há alguns passos importantes para configurar antes de convidar sua equipe. Este guia o orienta através da ordem de configuração recomendada para que sua igreja esteja pronta para o primeiro dia.
+Após criar sua conta e Igreja, há algumas etapas importantes para configurar antes de convidar sua equipe. Este guia o orienta através da ordem de configuração recomendada para que sua Igreja esteja pronta desde o primeiro dia.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- [Crie sua conta](./create-account.md) e registre sua igreja
-- Tenha seus ativos de logotipo e marca de igreja prontos (opcional mas recomendado)
+- [Crie sua conta](./create-account.md) e registre sua Igreja
+- Tenha seus ativos de logo e marca da Igreja prontos (opcional mas recomendado)
 
 </div>
 
-## Etapa 1: Configure as Informações de sua Igreja
+## Passo 1: Configure Suas Informações de Igreja
 
 1. Abra o **menu de seção** no canto superior esquerdo (o nome da seção com a pequena seta) e escolha **Configurações**.
 2. Clique em **Editar Configurações**.
-3. Digite o **nome**, **endereço** e **detalhes de contato** de sua igreja.
+3. Digite o **nome** de sua Igreja, **endereço** e **detalhes de contato**.
 4. Clique em **Salvar** para aplicar suas alterações.
 
-## Etapa 2: Configure sua Marca
+## Passo 2: Configure Sua Marca
 
-1. Do **Painel**, navegue para **Website** e selecione **Aparência**.
-2. Carregue seu **logotipo da igreja**.
+1. A partir do **Painel de Controle** (sua página inicial), navegue até **Site**, depois selecione **Aparência**.
+2. Carregue seu **logo da Igreja**.
 3. Configure quaisquer opções de marca adicionais, como cores e imagens.
-4. Sua marca aparecerá em seu website B1.church e no aplicativo B1 Mobile.
+4. Sua marca aparecerá em seu site B1.church e no aplicativo móvel B1.
 
 :::tip
-Ter seu logotipo e marca prontos antes de convidar membros da equipe fornece uma primeira impressão polida quando eles fazem login.
+Ter seu logo e marca prontos antes de convidar membros da equipe oferece uma primeira impressão polida quando eles fazem login.
 :::
 
-## Etapa 3: Configure Funções e Convide sua Equipe
+## Passo 3: Configure Papéis e Convide Sua Equipe
 
-1. Clique em **Funções** na página **Configurações**.
-2. Crie funções para sua equipe (por exemplo, "Pastor", "Secretário", "Tesoureiro").
-3. Atribua as permissões apropriadas a cada função.
-4. Adicione membros da equipe procurando suas contas e atribuindo-os a funções.
+1. Clique em **Papéis** a partir da página **Configurações**.
+2. Crie papéis para sua equipe (por exemplo, "Pastor", "Secretário", "Tesoureiro").
+3. Atribua as permissões apropriadas para cada papel.
+4. Adicione membros da equipe procurando suas contas e atribuindo-os a papéis.
 
-## Etapa 4: Configure suas Áreas-Chave
+## Passo 4: Configure Suas Áreas-Chave
 
-Com sua equipe no lugar, comece a construir as áreas principais de B1 Admin:
+Com sua equipe no lugar, comece a construir as áreas principais do B1 Admin:
 
-1. **Pessoas** -- Adicione membros ao diretório de sua igreja. Este é o fundamento para tudo mais, então comece aqui. Você pode adicionar pessoas manualmente ou usar a ferramenta **Importar** de **Configurações**.
+1. **Pessoas** -- Adicione membros ao diretório de sua Igreja. Isto é a fundação para tudo mais, então comece aqui. Você pode adicionar pessoas manualmente ou usar a ferramenta **Importar** a partir de **Configurações**.
 2. **Grupos** -- Crie grupos para pequenos grupos, equipes de ministério, aulas e outras reuniões.
-3. **Participação** -- Configure seus campi, serviços e horários de serviço para rastreamento de participação.
+3. **Presença** -- Configure seus campi, serviços e horários de serviço para rastreamento de presença.
 4. **Doações** -- Configure fundos de doação e conecte seu gateway de pagamento (Stripe) para aceitar doações online.
-5. **Website** -- Construa seu website de igreja pública usando o construtor de website B1.church.
+5. **Site** -- Construa seu site da Igreja pública usando o construtor de sites B1.church.
 
 :::info
-Você não precisa configurar todas as áreas de uma vez. Muitas igrejas começam com **Pessoas** e **Grupos**, depois adicionam **Participação** e **Doações** conforme ficam confortáveis com a plataforma.
+Você não precisa configurar cada área de uma vez. Muitas Igrejas começam com **Pessoas** e **Grupos**, então adicionam **Presença** e **Doações** conforme ficam confortáveis com a plataforma.
 :::
 
 ## Ordem Recomendada
 
-Para a experiência de configuração mais tranquila, sugerimos esta ordem:
+Para a experiência de configuração mais suave, sugerimos esta ordem:
 
-1. **Pessoas** -- Adicione seus membros e participantes regulares primeiro.
-2. **Grupos** -- Organize pessoas em grupos significativos.
-3. **Participação** -- Comece a rastrear quem aparece cada semana.
+1. **Pessoas** -- Adicione seus membros e assistentes regulares primeiro.
+2. **Grupos** -- Organize as pessoas em grupos significativos.
+3. **Presença** -- Comece a rastrear quem aparece cada semana.
 4. **Doações** -- Configure doações uma vez que suas pessoas estejam no sistema.
-5. **Website** -- Construa seu site voltado para o público por último, depois que seus dados estiverem no lugar.
+5. **Site** -- Construa seu site voltado para o público por último, após seus dados estarem no lugar.
 
-Uma vez que você tenha concluído estas etapas, sua igreja está pronta para começar. Explore a documentação [B1 Admin](/docs/b1-admin/) para guias detalhados sobre cada área.
+Uma vez que você tenha completado essas etapas, sua Igreja está pronta para ir. Explore a documentação [B1 Admin](/docs/b1-admin/) para guias detalhados em cada área.

@@ -22,7 +22,7 @@ Workflows move people through a series of steps on a visual board. Each person b
 
 ## Viewing Workflows
 
-Navigate to **Serving**, open the **Tasks** area, and select **Workflows** from the menu. You will see your workflows listed and grouped by category, with active workflows highlighted. Click any workflow to open its board.
+Navigate to **Serving** and select **Workflows** from the menu. You will see your workflows listed and grouped by category, with active workflows highlighted. Click any workflow to open its board.
 
 ## Creating a Workflow
 
@@ -85,6 +85,10 @@ Automated actions run only when a card arrives through the normal flow -- when i
 ### Sending email
 
 Choose **Send email**, pick one of your email templates, and optionally type a custom subject. When a card enters the step, the person receives that email automatically. (If the person has no email address on file, the step simply skips this action.)
+
+:::info
+Workflow emails only go out after your church has been approved to send group email, and they count toward your church's daily email limit. See [Turning On Group Email for Your Church](../groups/group-members.md#turning-on-group-email-for-your-church).
+:::
 
 ### Waiting a few days (drip sequences)
 
@@ -200,7 +204,6 @@ Use these to spot bottlenecks -- for example, a step where cards pile up and nev
 ## Related Articles
 
 - [Tasks](./tasks.md) -- the individual action items that workflow cards are built on
-- [Automations](./automations.md) -- create recurring tasks on a schedule
 - [Forms](../forms/index.md) -- build the forms that can trigger workflows
 - [Groups](../groups/index.md) -- the groups an "Add to group" action can place people in
 - [Roles & Permissions](../settings/roles-permissions.md) -- control who can view, edit, and manage workflows

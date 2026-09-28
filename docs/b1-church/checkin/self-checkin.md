@@ -43,7 +43,9 @@ You do not need to check in every household member -- only expand and assign gro
 
 Once you have selected groups for everyone who is attending, click the **Complete Check-in** button at the bottom of the page.
 
-You will see a confirmation screen with the message "Check-in Complete!" along with a note that your attendance has been saved. Click **Back to My Page** to return to the [timeline](../community/timeline.md).
+You will see a confirmation that your check-in is complete and your attendance has been saved. After a moment the page returns to the service list, ready for the next check-in.
+
+If your church prints name tags at a check-in station, you instead see **You're checked in!** with a QR code and a security code. Show the code at a check-in station to print your name tags, then tap **Done**.
 
 :::tip
 If you need to change a group selection before completing check-in, tap the **Change** button next to any service time to pick a different group.

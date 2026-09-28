@@ -59,5 +59,5 @@ Volunteers must have the B1.church mobile experience installed (PWA on their hom
 ## Related Articles
 
 - [Service Plans](./plans.md)
-- [Automations](./automations.md)
+- [Workflows](./workflows.md)
 - [Installing the B1.church PWA](/docs/b1-church/getting-started/installing-pwa)
