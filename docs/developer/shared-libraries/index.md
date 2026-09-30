@@ -19,7 +19,7 @@ ChurchApps shared code is published to npm under the `@churchapps/*` scope. All 
 | [`@churchapps/apphelper`](./app-helper) | Shared React components and feature modules (login, donations, forms, markdown, website) | All web apps |
 | `@churchapps/content-providers` | Abstraction over third-party content providers (Lessons.church, Planning Center, Dropbox, and others) | Api, B1Admin, B1App, FreePlay |
 | `@churchapps/integration-sdk` | Toolkit for building B1.church integrations: webhook verification, typed REST client, OAuth helpers | External integration developers |
-| `@churchapps/texting` | SMS provider abstraction (Text In Church, Clearstream, Mutual Ministry) | Api |
+| `@churchapps/texting` | SMS provider abstraction (Text In Church, Clearstream, Mutual Ministry, MinistryStuff, Nalo Solutions) | Api |
 
 Dependency direction is strictly downward: apps depend on `apihelper` and `apphelper`, which declare `@churchapps/helpers` as a **peer dependency** so each app resolves exactly one copy of it.
 
