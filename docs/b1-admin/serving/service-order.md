@@ -108,7 +108,7 @@ Bulk select only applies to a section's direct children, not items nested inside
 
 If your plan has more than one service time (for example, an 8 a.m. and 10 a.m. service), you can choose which services each item should appear in. This is useful when an announcement is only relevant to one service, or when a song is sung in one service but not another.
 
-1. Open a plan that has two or more service times defined on the **Times** tab.
+1. Open a plan that has two or more service times defined in the **Times** card on the **Assignments** tab.
 2. On the **Service Order** tab, click an item to edit it.
 3. Under **Include in Services**, you will see a checkbox for each service time, labeled with the time.
 4. Uncheck any service where the item should be skipped.
@@ -117,7 +117,7 @@ If your plan has more than one service time (for example, an 8 a.m. and 10 a.m. 
 By default, every item is included in every service. Excluded service times are hidden when you print the plan filtered to that service, so each service receives a clean run sheet with only the relevant items.
 
 :::tip
-The **Include in Services** section only appears when the plan has more than one service time. If you only see one service, edit the plan's **Times** tab to add additional services first.
+The **Include in Services** section only appears when the plan has more than one service time. If you only see one service, use the **Times** card on the plan's **Assignments** tab to add additional services first.
 :::
 
 ### Showing a Different Position per Service

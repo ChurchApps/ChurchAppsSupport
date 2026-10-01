@@ -1,64 +1,70 @@
 ---
-title: "Anwesenheit verfolgen"
+title: Anwesenheit verfolgen
 ---
 
-# Anwesenheit verfolgen
+# Tracking Attendance
 
 <div class="article-intro">
 
-Sobald deine Standorte, Gottesdienstzeiten und Gruppen konfiguriert sind, erleichtert B1 Admin dir das Überprüfen von Anwesenheitsdaten und das Erkennen von Trends. Die Seite Anwesenheit bietet zwei Berichtsansichten -- die Registerkarte **Anwesenheitstrend** für kirchenweite Trends und die Registerkarte **Gruppenanwesenheit** für Details auf Gruppenebene. Verwende diese Tools, um Wachstumsmuster zu verstehen, rückläufige Beteiligung zu erkennen und datengestützte Entscheidungen für deine Kirche zu treffen.
+Once your campuses, service times, and groups are configured, B1 Admin makes it easy to review attendance data and spot trends. The Attendance page provides two reporting views -- the **Attendance Trend** tab for church-wide trends and the **Group Attendance** tab for group-level detail. Use these tools to understand growth patterns, identify declining engagement, and make data-driven decisions for your church.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor du beginnst</h4>
+<h4>Before You Begin</h4>
 
-- Deine Anwesenheitsstruktur muss mit mindestens einem Standort und einer Gottesdienstzeit eingerichtet sein. Siehe [Anwesenheitseinrichtung](setup.md), falls du dies noch nicht getan hast.
-- Anwesenheitsdaten müssen aufgezeichnet werden, bevor Berichte Ergebnisse anzeigen. Daten können von der [manuellen Eingabe](recording-attendance.md) oder dem [Selbsteintrag](check-in.md) stammen.
+- Your attendance structure must be set up with at least one campus and service time. See [Attendance Setup](setup.md) if you haven't done this yet.
+- Attendance data needs to be recorded before reports will show results. Data can come from [manual entry](recording-attendance.md) or [self check-in](check-in.md).
 
 </div>
 
-## Anwesenheitstrends anzeigen
+## Viewing Attendance Trends
 
-1. Öffne **B1 Admin**, öffne dann das **Menü „Bereich"** in der oberen linken Ecke und wähle **Personen**.
-2. Klicke auf die Registerkarte **Anwesenheitstrend**.
-3. Der Bericht wird automatisch ausgeführt, wenn die Registerkarte geöffnet wird, und zeigt die Anwesenheit über einen Standard-Datumsbereich.
+1. Open **B1 Admin**, then open the **section menu** in the top-left corner and choose **People**.
+2. Click the **Attendance Trend** tab.
+3. The report runs automatically when the tab opens, showing total attendance for each week.
 
-## Daten filtern
+## Filtering Your Data
 
-Verwende die Filter oben auf der Seite, um die Ergebnisse einzugrenzen:
+Use the filters in the **Filter Report** box to narrow the results, then click **Run Report**:
 
-- **Datumsbereich** -- wähle ein Start- und Enddatum, um dich auf einen bestimmten Zeitraum zu konzentrieren.
-- **Standort** -- wähle einen Standort, um die Anwesenheit nur für diesen Ort zu sehen.
-- **Gottesdienstzeit** -- wähle eine Gottesdienstzeit, um einen bestimmten Gottesdienst zu betrachten.
+- **Campus** -- select a campus to see attendance for only that location.
+- **Service** -- limit the report to one service.
+- **Service Time** -- pick a service time to drill into a particular gathering.
+- **Group** -- show attendance for a single group.
 
-Das Diagramm und die Daten werden aktualisiert, sobald du einen Filter änderst, so dass du schnell verschiedene Zeiträume oder Orte vergleichen kannst.
+The report shows a bar chart and a table of total visits per week. Each week is labeled with the date of that week's Sunday.
 
 :::info
-Berichte werden automatisch ausgeführt, jedes Mal wenn du die Registerkarte Anwesenheitstrend öffnest, so dass du immer aktuelle Zahlen sehen wirst, ohne auf eine Aktualisierungsschaltfläche klicken zu müssen.
+Reports auto-run each time you open the Attendance Trend tab, so you will always see up-to-date numbers without needing to click a refresh button.
 :::
 
-## Gruppenanwesenheit
+## Group Attendance
 
-Die Registerkarte **Gruppenanwesenheit** zeigt die Anwesenheit aufgeschlüsselt nach einzelner Gruppe. Dies ist nützlich, wenn du eine bestimmte Klasse, ein Dienst-Team oder eine Kleingruppe überwachen möchtest, anstatt Gesamtzahlen für den Gottesdienst zu betrachten.
+The **Group Attendance** tab shows who attended each group session. This is useful when you want to monitor a specific class, ministry team, or small group rather than looking at overall service numbers.
 
-1. Wähle die Registerkarte **Gruppenanwesenheit**.
-2. Wähle eine Gruppe aus der Liste, um ihre Anwesenheitshistorie zu sehen.
-3. Verwende den Datumsbereichsfilter, um das Berichtsfenster anzupassen.
+1. Select the **Group Attendance** tab.
+2. Optionally choose a **Campus** and **Service**.
+3. Set the **Start Date** and **End Date**. By default the report covers last Sunday through today.
+4. Click **Run Report**.
+
+Results are grouped by session date, then by service time and group, with the people who attended listed under each group. Service times, groups, and names are sorted alphabetically so each heading appears once.
+
+To download the data, click **Download Options** and choose **Summary**. The CSV has one row per group member, sorted by group and then name, and a column for each dated session in the range (for example, "Sunday - 9:00 AM (2026-09-27)") marked **present** or **absent**.
 
 :::tip
-Gruppenanwesenheit ist besonders wertvoll für [Kleingruppen](../groups/creating-groups.md)-Leader, die die Beteiligung innerhalb ihrer Gruppe im Laufe der Zeit verfolgen möchten.
+Group attendance is especially valuable for [small group](../groups/creating-groups.md) leaders who want to track engagement within their group over time.
 :::
 
-## Tipps zur Verwendung von Anwesenheitsdaten
+## Tips for Using Attendance Data
 
-- Überprüfe Trends monatlich, um saisonale Muster früh zu erkennen.
-- Vergleiche Daten auf Standortebene, um zu verstehen, welche Standorte wachsen.
-- Verwende Berichte auf Gruppenebene, um [Gruppen](../groups/group-members.md) zu verfolgen, die rückläufige Anwesenheit zeigen.
-- Kombiniere Anwesenheitserkenntnisse mit dem Tool [KI-Suche](../people/ai-search.md), um Personen zu finden, die kürzlich nicht teilgenommen haben.
+- Review trends monthly to catch seasonal patterns early.
+- Compare campus-level data to understand which locations are growing.
+- Use group-level reports to follow up with [groups](../groups/group-members.md) that show declining attendance.
+- Combine attendance insights with the [AI Search](../people/ai-search.md) tool to find people who haven't attended recently.
 
-## Verwandte Seiten
+## Related Pages
 
-- [Anwesenheit aufzeichnen](recording-attendance.md) -- erfasse manuell die Anwesenheit für eine Gruppensitzung
-- [Anwesenheitszahl-Eingabe und Trend](headcount-entry.md) -- eine einfachere Alternative mit Gesamtzahl und eigenem wöchentlichen Trenddiagramm
-- [Eintrag](check-in.md) -- richte Selbsteintrag ein, damit die Anwesenheit automatisch aufgezeichnet wird
+- [Recording Attendance](recording-attendance.md) -- manually enter attendance for a group session
+- [Headcount Entry & Trend](headcount-entry.md) -- a simpler total-count alternative, with its own weekly trend chart
+- [Check-In](check-in.md) -- set up self check-in so attendance is recorded automatically

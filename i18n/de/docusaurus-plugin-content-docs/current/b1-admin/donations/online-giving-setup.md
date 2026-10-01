@@ -1,124 +1,155 @@
 ---
-title: "Online-Spendenverwaltung einrichten"
+title: Online-Spenden einrichten
 ---
 
-# Online-Spendenverwaltung einrichten
+# Online Giving Setup
 
 <div class="article-intro">
 
-B1 Admin integriert sich mit **Stripe**, **PayPal** und **Kingdom Funding**, damit Ihre Mitglieder online über Ihre B1.church-Website spenden können. Nach der Konfiguration werden Online-Spenden automatisch in Ihren Spendenunterlagen zusammen mit manuell eingegebenen Gaben angezeigt und alles bleibt in einem System.
+B1 Admin integrates with **Stripe**, **PayPal**, **Kingdom Funding**, and **Paystack** (for churches in Africa) so your members can give online through your B1.church site. Once configured, online donations automatically appear in your donation records alongside manually entered gifts, keeping everything in one system.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Before You Begin</h4>
 
-- Richten Sie Ihre [Spendenfonds](funds.md) ein, damit Spender ihre Gaben bestimmen können
-- Erstellen Sie ein Stripe-Konto auf [stripe.com](https://stripe.com) und aktivieren Sie es (schalten Sie es aus dem Testmodus)
-- Halten Sie Ihre B1 Admin-Anmeldedaten bereit
+- Set up your [donation funds](funds.md) so donors can designate their gifts
+- Create a Stripe account at [stripe.com](https://stripe.com) and activate it (take it out of test mode)
+- Have your B1 Admin login credentials ready
 
 </div>
 
-## Stripe einrichten
+## Setting Up Stripe
 
-1. Erstellen Sie ein Konto auf [stripe.com](https://stripe.com), falls Sie noch keines haben. Achten Sie darauf, Ihr Konto zu **aktivieren** und es aus dem Testmodus zu schalten.
-2. Gehen Sie in Stripe zu **Developers > API Keys**.
-3. Kopieren Sie Ihren **Publishable Key**.
-4. Melden Sie sich bei [B1 Admin](https://admin.b1.church/) an.
-5. Klicken Sie auf **Church** in der oberen Navigation und dann auf **Edit Church Settings**.
-6. Klicken Sie auf das Bearbeiten-Symbol neben **Church Settings**.
-7. Scrollen Sie nach unten zum Bereich **Giving**.
-8. Stellen Sie den **Provider** auf **Stripe**.
-9. Fügen Sie Ihren Publishable Key in das Feld **Public Key** ein.
-10. Gehen Sie zurück zu Stripe und zeigen Sie Ihren **Secret Key** an (Sie können diesen nur einmal einsehen, speichern Sie also eine Sicherung).
-11. Fügen Sie den Secret Key in das Feld **Secret Key** ein und klicken Sie auf **Save**.
+1. Create an account at [stripe.com](https://stripe.com) if you do not already have one. Make sure to **activate your account** and take it out of test mode.
+2. In Stripe, go to **Developers > API Keys**.
+3. Copy your **Publishable Key**.
+4. Log in to [B1 Admin](https://admin.b1.church/).
+5. Go to **Settings** and open the **Giving** section.
+6. Click the edit icon on the **Giving** section.
+7. Set the **Provider** to **Stripe**.
+8. Paste your Publishable Key into the **Public Key** field.
+9. Go back to Stripe and reveal your **Secret Key** (you can only view this once, so save a backup).
+10. Paste the Secret Key into the **Secret Key** field and click **Save**.
 
 :::warning
-Ihr Stripe Secret Key wird nur einmal angezeigt. Kopieren Sie ihn an einen sicheren Ort, bevor Sie das Stripe-Dashboard verlassen. Wenn Sie ihn verlieren, müssen Sie einen neuen Schlüssel generieren.
+Your Stripe Secret Key is only shown once. Copy it to a secure location before navigating away from the Stripe dashboard. If you lose it, you will need to generate a new key.
 :::
 
-## Wählen Sie Ihre Währung
+## Choosing Your Currency
 
-Nach Auswahl von Stripe als Anbieter erscheint ein Dropdown-Menü **Currency** neben Ihren API-Schlüsseln. Wählen Sie die Währung, die der Abwicklungswährung Ihres Stripe-Kontos entspricht, damit Spenden korrekt berechnet werden.
+After selecting Stripe as your provider, a **Currency** dropdown appears alongside your API keys. Pick the currency that matches your Stripe account's settlement currency so donations are charged correctly.
 
-Unterstützte Währungen sind USD, EUR, GBP, CAD, AUD, INR, JPY, SGD, HKD, SEK, NOK, DKK, CHF, MXN und BRL. Sie können Ihre Standardwährung des Kontos in Ihrem [Stripe-Dashboard](https://dashboard.stripe.com/settings/currencies) überprüfen oder ändern.
+Supported currencies include USD, EUR, GBP, CAD, AUD, INR, JPY, SGD, HKD, SEK, NOK, DKK, CHF, MXN, and BRL. You can confirm or change your account's default currency in your [Stripe Dashboard](https://dashboard.stripe.com/settings/currencies).
 
 :::info
-Die Währung, die Sie hier auswählen, wird für Einmalspenden, wiederkehrende Abonnements, Gebührenberechnungen und Spendenberichte verwendet. Wenn Sie die Währung später wechseln, verwenden nur neue Spenden und Abonnements die neue Währung – bestehende wiederkehrende Gaben werden weiterhin in der Währung verwendet, in der sie erstellt wurden.
+The currency you select here is used for one-time donations, recurring subscriptions, fee calculations, and donation reports. If you switch currencies later, only new donations and subscriptions will use the new currency — existing recurring gifts continue in the currency they were created with.
 :::
 
 :::warning
-Stellen Sie sicher, dass Ihr Stripe-Konto für die gewählte Währung konfiguriert ist. Wenn Ihr Stripe-Konto die ausgewählte Währung nicht unterstützt, schlagen Spenden beim Checkout fehl.
+Make sure your Stripe account is configured to accept the currency you choose. If your Stripe account does not support the selected currency, donations will fail at checkout.
 :::
 
-## Fügen Sie eine Spendenleiste zu Ihrer B1.church-Website hinzu
+## Apple Pay and Google Pay
 
-1. Gehen Sie zu [b1.church](https://b1.church/) und melden Sie sich an.
-2. Klicken Sie auf das **Settings**-Symbol.
-3. Klicken Sie auf **Add Tab**.
-4. Wählen Sie **Donation** als Typ.
-5. Geben Sie einen Namen für die Registerkarte ein (z. B. „Give") und klicken Sie auf **Save**.
-6. Ändern Sie optional das Symbol der Registerkarte – geben Sie „Giv" in die Symbolsuche ein, um ein spendenbezoges Symbol zu finden.
+Churches on Stripe get Apple Pay and Google Pay buttons on the public giving page automatically. The buttons appear above the card fields for one-time gifts once the donor has chosen a fund and an amount, and only when the donor's browser or device has a wallet set up. Recurring gifts still use the card or bank fields.
 
-Ihre Spendenleiste ist jetzt live. Mitglieder können sie unter yoursubdomain.b1.church/donate besuchen.
+Google Pay needs no setup. Apple Pay requires your giving page's domain to be registered with Stripe; B1 registers it the first time the giving page loads on your domain. If the Apple Pay button does not appear on an iPhone, check **Settings > Payment method domains** in your Stripe Dashboard and confirm your `yoursubdomain.b1.church` (or custom) domain is listed and verified.
 
-## Teilen Sie Ihren Spendenlink
+## Anonymous Gifts
 
-Um Ihre Spendenverbindung zu finden, gehen Sie zu **B1 Admin** und klicken Sie auf das **Settings**-Symbol, um Ihre Subdomain anzuzeigen. Ihr Spendenlink folgt diesem Format:
+Donors on the public giving page can check **Give anonymously**. An anonymous gift is recorded with no donor attached, still goes to the fund the donor chose, and shows as **Anonymous** in your batches and reports. The donor's email is still required so the receipt can be sent, but no person record is created. Anonymous gifts are one-time only and do not appear on any giving statement.
 
-https://yoursubdomain.b1.church/donate
+## Failed Recurring Gifts
 
-Teilen Sie diesen Link auf Ihrer Website, in E-Mails oder in Ihrem Gemeindebrief, damit Mitglieder wissen, wo sie online spenden können.
+When a recurring gift on Stripe fails (an expired or declined card, for example), the failed charge appears under **Donations > Failed Gifts** with the donor, amount, date and the reason the gateway gave. Click **Retry** to attempt the charge again once the donor has updated their payment method.
 
-## Spendenmitteilungen
+B1 also emails the donor when the charge fails, and again three and seven days later if it has still not gone through, with a link to update their payment method in B1.church.
 
-Stripe sendet jedes Mal eine E-Mail-Benachrichtigung, wenn eine Spende eingegangen ist. Um die E-Mail-Adresse der Benachrichtigung zu ändern, gehen Sie zum Stripe-Dashboard, klicken Sie auf Ihr Profil oben rechts, wählen Sie **Profile** und aktualisieren Sie Ihre E-Mail-Adresse.
+:::info
+If your church set up Stripe before this feature existed, open **Settings** > **Giving**, click edit, and click **Save** once. That refreshes the Stripe webhook so failed charges are reported to B1.
+:::
 
-## Bearbeitungsgebühren-Optionen
+## Adding a Donation Page to Your B1.church Site
 
-Sie können Ihre Spendenleiste so konfigurieren, dass Spender optional die Bearbeitungsgebühren übernehmen, damit Ihre Gemeinde den vollständigen Spendenbetrag erhält. Diese Einstellung wird in Ihren Kircheneinstellungen in B1 Admin verwaltet.
+1. Go to [b1.church](https://b1.church/) and log in.
+2. Click the **Settings** icon.
+3. Click **Add Tab**.
+4. Choose **Donation** as the type.
+5. Enter a name for the tab (e.g., "Give") and click **Save**.
+6. Optionally, change the tab icon -- type "Giv" in the icon search for a giving-related icon.
+
+Your donation page is now live. Members can visit it at `yoursubdomain.b1.church/donate`.
+
+## Sharing Your Giving Link
+
+To find your giving URL, go to **B1 Admin** and click the **Settings** icon to see your subdomain. Your donation link follows the format:
+
+`https://yoursubdomain.b1.church/donate`
+
+Share this link on your website, in emails, or in your bulletin so members know where to give online.
+
+### Links With a Preset Fund and Amount
+
+To send donors straight to a specific fund, go to **Donations > Funds** and click **Giving Link** on the fund. Optionally enter an amount, then copy the link. When a donor opens it, the fund and amount are already selected on the giving page. The link takes the form:
+
+`https://yoursubdomain.b1.church/donate?fundId=FUND_ID&amount=25`
+
+The same parameters work in the **Donate Link** element of the website builder.
+
+## Donation Notifications
+
+Stripe sends an email notification each time a donation is received. To change the notification email address, go to the Stripe dashboard, click your profile in the top right, choose **Profile**, and update your email address.
+
+## Processing Fee Options
+
+You can configure your giving page to let donors optionally cover processing fees so your church receives the full donation amount. This setting is managed in your church settings within B1 Admin.
 
 :::tip
-Nach der Einrichtung sollten Sie eine kleine Testspende tätigen, um sicherzustellen, dass alles funktioniert, bevor Sie Online-Spenden Ihrer Gemeinde ankündigen.
+After setup, make a small test donation to confirm everything is working before announcing online giving to your congregation.
 :::
 
-## Kingdom Funding einrichten
+## Setting Up Kingdom Funding
 
-Kingdom Funding ist ein christlicher Zahlungsdienstleister, der Kredit-/Debitkarten und ACH-Banküberweisungen unterstützt. Wenn Ihre Gemeinde sich bei Kingdom Funding angemeldet hat, können Sie es als Ihr Spenden-Gateway verbinden.
+Kingdom Funding is a Christian payment processor that supports credit/debit cards and ACH bank transfers. If your church is enrolled with Kingdom Funding, you can connect it as your giving gateway.
 
 :::info
-Die Kingdom Funding-Integration befindet sich derzeit in der Betaphase. Wenden Sie sich an Ihren B1-Kontovertreter, um sie für Ihre Gemeinde zu aktivieren.
+Kingdom Funding integration is currently in beta. Contact your B1 account representative to enable it for your church.
 :::
 
-1. Melden Sie sich bei [kingdomfunding.org](https://kingdomfunding.org) an oder erstellen Sie ein Konto.
-2. Erhalten Sie Ihren **Security Key** (öffentlich) und **Private Key** vom Kingdom Funding-Händlerportal.
-3. Gehen Sie in B1 Admin zu **Settings** und öffnen Sie **Church Settings**.
-4. Stellen Sie im Bereich **Giving** den **Provider** auf **Kingdom Funding**.
-5. Fügen Sie Ihren Security Key in das Feld **Security Key** und Ihren Private Key in das Feld **Private Key** ein.
-6. Stellen Sie den **Webhook Key** ein, den Sie von Kingdom Funding erhalten haben, und kopieren Sie die angezeigte Webhook-URL in Ihre Kingdom Funding-Händlereinstellungen, damit Kingdom Funding B1 über abgeschlossene Transaktionen benachrichtigen kann.
-7. Speichern Sie.
+1. Sign up or log in at [kingdomfunding.org](https://kingdomfunding.org).
+2. Obtain your **Security Key** (public) and **Private Key** from the Kingdom Funding merchant portal.
+3. In B1 Admin, go to **Settings**, open the **Giving** section and click edit.
+4. Set the **Provider** to **Kingdom Funding**.
+5. Paste your Security Key into the **Security Key** field and your Private Key into the **Private Key** field.
+6. Set the **Webhook Key** you received from Kingdom Funding, and copy the displayed webhook URL into your Kingdom Funding merchant settings so Kingdom Funding can notify B1 of completed transactions.
+7. Save.
 
-Sobald verbunden, sehen die Mitglieder auf der Spendenleiste einen Karten-/Bankschalter und können per Kreditkarte oder ACH-Überweisung spenden.
+Once connected, members will see a card/bank toggle on the donation page and can give by credit card or ACH transfer.
 
-## Paystack einrichten (Afrika)
+## PayPal and Venmo Buttons
 
-Stripe eröffnet keine Konten für Kirchen in Ghana, Nigeria, Kenia, Südafrika oder Côte d'Ivoire. [Paystack](https://paystack.com) tut dies und akzeptiert lokale Karten, **Mobile Money** (MTN MoMo, Vodafone Cash, AirtelTigo, M-PESA), Banküberweisung und USSD – Spender zahlen in Ihrer lokalen Währung (GHS, NGN, KES, ZAR, XOF).
+Churches using **PayPal** as their provider get **PayPal** and **Venmo** buttons above the card fields on the giving page for one-time gifts. Donors who click one complete the payment in a PayPal window, and the gift is recorded like any other online donation. Venmo appears only for donors in the United States on devices PayPal considers eligible. Recurring gifts still use the card fields.
 
-1. Registrieren Sie sich unter [paystack.com](https://paystack.com) mit dem Geschäftsregistrierungszertifikat und dem lokalen Bankkonto Ihrer Kirche und schließen Sie die Aktivierungsüberprüfung (Go-Live) von Paystack ab.
-2. Öffnen Sie in der Paystack-Verwaltung **Einstellungen → API-Schlüssel & Webhooks** und kopieren Sie den **öffentlichen Schlüssel** und **geheimen Schlüssel** (verwenden Sie die Live-Schlüssel, nicht die Test-Schlüssel).
-3. Gehen Sie in B1 Admin zu **Einstellungen**, öffnen Sie den Abschnitt **Spenden** und klicken Sie auf Bearbeiten.
-4. Setzen Sie den **Anbieter** auf **Paystack**, fügen Sie den öffentlichen Schlüssel und den geheimen Schlüssel ein und wählen Sie Ihre **Währung**.
-5. Kopieren Sie die **Webhook-URL**, die unter dem Anbieter angezeigt wird, gehen Sie zurück zur Paystack-Verwaltung (**Einstellungen → API-Schlüssel & Webhooks**) und fügen Sie sie in das Feld **Webhook-URL** ein. So werden wiederkehrende Geschenke und Mobile Money-Zahlungen erfasst.
-6. Speichern.
+## Setting Up Paystack (Africa)
 
-Spender schließen ihre Zahlung in einem sicheren Paystack-Fenster ab und können dort Karte, Mobile Money oder Banküberweisung wählen. Hinweise:
+Stripe does not open accounts for churches in Ghana, Nigeria, Kenya, South Africa or Côte d'Ivoire. [Paystack](https://paystack.com) does, and it accepts local cards, **mobile money** (MTN MoMo, Vodafone Cash, AirtelTigo, M-PESA), bank transfer and USSD — donors pay in your local currency (GHS, NGN, KES, ZAR, XOF).
 
-- **Wiederkehrende Geschenke** benötigen eine Karte; Mobile Money kann nicht automatisch erneut berechnet werden, daher erlaubt Paystack nur einmalige Mobile Money-Geschenke.
-- Paystack wiederkehrende Geschenke können von B1 aus gekündigt werden, aber nicht pausiert oder bearbeitet – Kündigung und Erstellung einer neuen, um den Betrag zu ändern.
-- Die **Bearbeitungsgebühren** geben standardmäßig die lokalen Kartensätze von Paystack für Ihre Währung wider; bearbeiten Sie sie, wenn Ihre ausgehandelten Sätze unterschiedlich sind.
+1. Register at [paystack.com](https://paystack.com) with your church's business registration certificate and local bank account, and complete Paystack's activation (go-live) review.
+2. In the Paystack Dashboard open **Settings → API Keys & Webhooks** and copy the **Public Key** and **Secret Key** (use the live keys, not the test keys).
+3. In B1 Admin, go to **Settings**, open the **Giving** section and click edit.
+4. Set the **Provider** to **Paystack**, paste the Public Key and Secret Key, and choose your **Currency**.
+5. Copy the **webhook URL** shown under the provider, go back to the Paystack Dashboard (**Settings → API Keys & Webhooks**) and paste it into the **Webhook URL** field. This is how recurring gifts and mobile money payments get recorded.
+6. Save.
 
-## Nächste Schritte
+Donors complete their payment in a secure Paystack window and can pick card, mobile money or bank transfer there. Notes:
 
-- Verwenden Sie [Stripe Import](stripe-import.md), um Online-Transaktionen in B1 Admin zu importieren, wenn diese nicht automatisch synchronisiert werden
-- Überprüfen Sie Ihre [Spendenberichte](donation-reports.md), um zu überprüfen, dass Online-Spenden korrekt angezeigt werden
-- Generieren Sie [Spendendaten-Statements](giving-statements.md), die sowohl Online- als auch Offline-Spenden enthalten
+- **Recurring gifts** need a card; mobile money can't be charged again automatically, so Paystack only allows one-time mobile money gifts.
+- Paystack recurring gifts can be cancelled from B1 but not paused or edited — cancel and create a new one to change the amount.
+- The **Processing Fee** defaults reflect Paystack's local-card rates for your currency; edit them if your negotiated rates differ.
+
+## Next Steps
+
+- Use [Stripe Import](stripe-import.md) to pull online transactions into B1 Admin if they are not syncing automatically
+- Check your [Donation Reports](donation-reports.md) to verify that online donations are appearing correctly
+- Generate [Giving Statements](giving-statements.md) that include both online and offline donations

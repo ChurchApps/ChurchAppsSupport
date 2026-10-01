@@ -90,6 +90,15 @@ Two operational details on the middleware:
 
 - **Cache.** Each host's result (a hit *or* a confirmed miss — never a network error) is cached for **10 minutes** in an in-memory `Map`, per serverless isolate.
 - **Matcher.** The matcher deliberately re-includes `/sitemap.xml`, `/robots.txt`, and `/manifest.webmanifest`. Its first pattern excludes dotted paths, which would otherwise drop those files; they are added back so a custom domain's per-church SEO/PWA files also receive the `x-site` header.
+- **Canonical header.** For church pages the middleware appends a `Link: <{proto}://{host}{path}>; rel="canonical"` response header naming the host the page was actually served from — subdomain or custom domain (`helpers/canonicalLink.ts`). It is skipped on non-church hosts (`b1.church`, `localhost`, `*.vercel.app`, `*.up.railway.app`) and on `/mobile`, `/login`, `/logout`, and the generated robots/sitemap/manifest files.
+
+### Disabled public website
+
+A church can turn on **Disable Public Website** in B1Admin (church-level content setting `hidePublicSite = "true"`). The site then serves only its member-facing routes:
+
+- **B1App middleware** looks the subdomain up (`/membership/churches/lookup` then `/content/settings/public/:churchId`) and redirects any path outside the allowlist to `/login`, with no `returnUrl`, so members land in the portal. The allowlist (`helpers/publicSite.ts`) is `/login`, `/logout`, `/mobile/*`, `/register/*`, `/guest-register`, and the manifest/robots/sitemap files. Only confirmed answers are cached (same TTL as the host map; uncached in dev/test). An API error serves the site rather than locking everyone out.
+- **`robots.txt`** disallows everything, as on noindex hosts.
+- **API.** `GET /content/pages/public/:churchId` (the sitemap's page list) returns `[]`, so anonymous callers can't list the pages.
 
 ### `siteId` threading
 

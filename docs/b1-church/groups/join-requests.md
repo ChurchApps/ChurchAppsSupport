@@ -33,7 +33,7 @@ Groups can have different join policies set by their administrators:
 4. A dialog appears where you can optionally write a message to the group leader explaining why you would like to join.
 5. Click **Submit** to send your request.
 
-The group's leaders will receive a notification about your request. Once they review it, you will receive a notification with the outcome.
+The group's page now shows a **Request Pending** notice in place of the button. The group's leaders will receive a notification about your request. Once they review it, you will receive a notification with the outcome.
 
 :::tip
 Including a brief message — such as how you heard about the group or what you hope to get out of it — can help the leader make a faster decision.

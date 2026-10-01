@@ -14,7 +14,7 @@ When members visit your B1.church site, they see your church's public website wi
 
 ## Key Features
 
-- **Timeline** -- A personalized feed of updates, conversations, and activity from your groups and church.
+- **Home and Me** -- The member portal opens on a [Home dashboard](./getting-started/navigating.md), and the [Me page](./getting-started/me-page.md) lists what is coming up for you -- serving assignments, event registrations, group events -- along with your recent notifications.
 - **Groups** -- View the groups you belong to, see group members, join conversations, and track attendance.
 - **Giving** -- Make donations to your church online and view your giving history.
 - **Events** -- Browse upcoming events and register yourself and your family.

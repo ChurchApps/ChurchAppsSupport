@@ -1,118 +1,118 @@
 ---
-title: "Serveradministration"
+title: Server Administration
 ---
 
-# Serveradministration
+# Server Administration
 
 <div class="article-intro">
 
-Serveradministrationsfunktionen in ChurchApps sind nur für Benutzer mit der Berechtigung **Server.Admin** verfügbar. Diese Tools werden für Plattformbetrieb, Support und Fehlerbehebung über alle Kirchen im System hinweg verwendet.
+Server administration features in ChurchApps are available only to users with the **Server.Admin** permission. These tools are used for platform operations, support, and troubleshooting across all churches in the system.
 
 </div>
 
-:::warning Zugriff eingeschränkt
-Die auf dieser Seite beschriebenen Funktionen erfordern die Berechtigung **Server.Admin** und sind für reguläre Kirchenadministratoren nicht verfügbar. Sie sind nur für Plattformbetreiber und Support-Personal vorgesehen.
+:::warning Access Restricted
+The features described on this page require **Server.Admin** permission and are not available to regular church administrators. They are intended for platform operators and support staff only.
 :::
 
-## Zugriff auf Server-Admin
+## Accessing Server Admin
 
-Benutzer mit Server.Admin-Berechtigung können von B1 Admin aus auf den Server-Admin-Panel zugreifen:
+Users with Server.Admin permission can access the server admin panel from B1 Admin:
 
-1. Melden Sie sich bei [admin.b1.church](https://admin.b1.church) an
-2. Öffnen Sie **Einstellungen** und klicken Sie dann im Menü Einstellungen auf **Server Admin**. (Sie können auch direkt zu `admin.b1.church/admin` gehen.)
-3. Der Server-Admin-Panel hat Abschnitte für Kirchen, Benutzer, Benutzer nachahmen, Hintergrund-Aufträge, Commons, Verwendungstrends, Übersetzungs-Lookups, Server-Gesundheit und Datenbank-Migrationen
+1. Log in to [admin.b1.church](https://admin.b1.church)
+2. Open **Settings**, then click **Server Admin** in the Settings menu. (You can also go straight to `admin.b1.church/admin`.)
+3. The Server Admin panel has sections for Churches, Users, Impersonate User, Background Jobs, Commons, Usage Trends, Translation Lookups, Server Health, and Database Migrations
 
-## Benutzer-Nachahmer
+## User Impersonation
 
-Die Nachahmer-Funktion ermöglicht es Server-Administratoren, sich für Support- und Fehlerbehebungszwecke als anderer Benutzer anzumelden. Dies ist nützlich, wenn Sie Probleme untersuchen, die von Benutzern gemeldet wurden, oder Kirchen helfen, ihre Systeme zu konfigurieren.
+The impersonation feature allows server admins to log in as another user for support and troubleshooting purposes. This is useful when investigating user-reported issues or helping churches configure their systems.
 
-### Wie man einen Benutzer nachahmt
+### How to Impersonate a User
 
-1. Öffnen Sie den Abschnitt **Benutzer nachahmen** des Server-Admin-Panels
-2. Geben Sie den Namen oder die E-Mail-Adresse des Benutzers in das Suchfeld ein
-3. Klicken Sie auf **Suchen** oder drücken Sie Enter
-4. Klicken Sie in den Suchergebnissen auf den Benutzer, den Sie nachahmen möchten
-5. Bestätigen Sie die Nachahmung im angezeigten Dialog
-6. Sie werden als dieser Benutzer angemeldet und zu seinem Konto umgeleitet
+1. Open the **Impersonate User** section of the Server Admin panel
+2. Enter the user's name or email address in the search field
+3. Click **Search** or press Enter
+4. From the search results, click on the user you want to impersonate
+5. Confirm the impersonation in the dialog that appears
+6. You will be logged in as that user and redirected to their account
 
-### Wichtige Hinweise
+### Important Notes
 
-- Die Nachahmung erstellt eine neue Sitzung mit den Berechtigungen und dem Kirchenzugriff des Zielbenutzers
-- Ihre ursprüngliche Admin-Sitzung endet, wenn Sie einen anderen Benutzer nachahmen
-- Alle Aktionen, die während der Nachahmung durchgeführt werden, werden im Audit-Protokoll protokolliert
-- Um zu Ihrem Admin-Konto zurückzukehren, melden Sie sich ab und melden Sie sich mit Ihren Anmeldedaten wieder an
-- Verwenden Sie die Nachahmung nur wenn notwendig für Support-Zwecke und informieren Sie Benutzer immer, wenn Sie auf ihre Konten für Support zugreifen
+- Impersonation creates a new session with the target user's permissions and church access
+- Your original admin session ends when you impersonate another user
+- All actions taken while impersonated are logged in the audit trail
+- To return to your admin account, log out and log back in with your credentials
+- Use impersonation only when necessary for support purposes and always inform users when accessing their accounts for support
 
-### API-Endpunkt
+### API Endpoint
 
-Die Nachahmer-Funktion wird durch den Endpunkt `/users/:userId/impersonate` in der Membership-API unterstützt. Siehe [Membership-Endpunkte](/docs/developer/api/endpoints/membership#users) für technische Details.
+The impersonation feature is backed by the `/users/:userId/impersonate` endpoint in the Membership API. See [Membership Endpoints](/docs/developer/api/endpoints/membership#users) for technical details.
 
-### Sicherheitsaspekte
+### Security Considerations
 
-- Die Nachahmung erfordert die Berechtigung Server.Admin – diese Berechtigung sollte sparsam und nur an vertraute Plattformbetreiber gewährt werden
-- Alle Nachahmer-Ereignisse werden mit der Admin-Benutzer-ID und der Zielbenutzer-ID protokolliert
-- Kirchen werden nicht benachrichtigt, wenn Nachahmung auftritt, daher sollten Sie klare Richtlinien für wann und wie diese Funktion verwendet werden sollte, aufstellen
-- Erwägen Sie, Nachahmer-Ereignisse in Ihrem Support-Ticketing-System zu dokumentieren, um Rechenschaftspflicht sicherzustellen
+- Impersonation requires Server.Admin permission - this permission should be granted sparingly and only to trusted platform operators
+- All impersonation events are logged with the admin user ID and target user ID
+- Churches are not notified when impersonation occurs, so establish clear policies for when and how this feature should be used
+- Consider documenting impersonation events in your support ticket system for accountability
 
-## Commons-Moderation
+## Commons Moderation
 
-Commons ist die gemeinsame Moderationswarteschlange für benutzereingereichte Inhalte über alle Produkte hinweg – WorshipCommons-Songs, Lessons.church-Lektionen, FreeShow-Vorlagen und B1-Website-Builder-Vorlagen fließen alle durch die gleiche Warteschlange statt separater Pro-Produkt-Review-Tools.
+Commons is the shared moderation queue for user-submitted content across products — WorshipCommons songs, Lessons.church lessons, FreeShow templates, and B1 website builder templates all flow through the same queue instead of separate per-product review tools.
 
-### Zugriff auf Commons
+### Accessing Commons
 
-1. Navigieren Sie zur Registerkarte **Commons** im Server-Admin-Panel.
-2. Sie sehen drei Unter-Registerkarten: **Warteschlange**, **Berichte** und **Vermögenswerte**.
+1. Navigate to the **Commons** tab in the Server Admin panel.
+2. You will see three sub-tabs: **Queue**, **Reports**, and **Assets**.
 
-Eine begrenzte Rolle **music editor** kann auch die Registerkarte Warteschlange sehen, ist aber daran gehindert, Einsendungen genehmigt zu werden, die Chanson-Rechte oder Lizenzen ändern.
+A limited **music editor** role can also see the Queue tab, but is blocked from approving submissions that change a song's rights or licensing.
 
-### Warteschlange
+### Queue
 
-Die Warteschlange listet jeden ausstehenden Eintrag über alle Produkte auf, filterbar nach Produkt und Asset-Typ. Jede Zeile zeigt, ob die Einreichung ein neues Vermögenswert ist, eine Bearbeitung durch seinen ursprünglichen Autor oder eine Bearbeitung durch einen Dritten, zusammen mit der Genehmigungsgeschichte des Einreichers und wie lange die Einreichung wartet (markiert, sobald sie 72 Stunden überschreitet).
+The Queue lists every pending submission across all products, filterable by product and asset type. Each row shows whether the submission is a new asset, an edit by its original author, or an edit by a third party, along with the submitter's approval track record and how long the submission has been waiting (flagged once it passes 72 hours).
 
-Klicken Sie auf **Überprüfen**, um ein Schubfach mit Feld-Ebene-Unterschieden, Dateivorschauen und einer eingebetteten Vorschau des Elements zu öffnen. Verwenden Sie die Tastaturen-Verknüpfungen **a**/**r**, um zu genehmigen oder abzulehnen, und **j**/**k**, um zu dem nächsten oder vorherigen Eintrag zu wechseln, ohne das Schubfach zu verlassen. Das Ablehnen erfordert die Auswahl eines Grundes (z.B. Qualität, Duplikat, Lizenzierung, ccli, ai oder off-topic) und eine Notiz.
+Click **Review** to open a drawer with field-level diffs, file previews, and an embedded read-only preview of the item. Use the **a**/**r** keyboard shortcuts to approve or reject, and **j**/**k** to move to the next or previous submission without leaving the drawer. Rejecting requires selecting a reason (for example quality, duplicate, licensing, ccli, ai, or off-topic) and a note.
 
-### Berichte
+### Reports
 
-Die Registerkarte Berichte behandelt Urheberrechts- und Richtlinien-/Qualitätsberichte, die gegen bereits veröffentlichte Vermögenswerte eingereicht wurden, geteilt in separate Urheberrechts- und Richtlinien & Andere Warteschlangen plus eine gelöste Historie. Anspruch auf einen Bericht, um es zu beginnen, dann es mit einer Auflösung (bestätigt, abgewiesen oder Duplikat) und einer Aktion (keine, entfernen oder entfernen) lösen.
+The Reports tab handles copyright and policy/quality reports filed against already-published assets, split into separate Copyright and Policy & Other queues plus a Resolved history. Claim a report to start working it, then resolve it with a resolution (upheld, dismissed, or duplicate) and an action (none, unpublish, or remove).
 
-### Vermögenswerte
+### Assets
 
-Die Registerkarte Vermögenswerte ist ein durchsuchbarer Browser von veröffentlichtem Inhalt mit Aktionen zum **Feature** eines Vermögenswerts (hebt es auf der Startseite des Produkts hervor), **Unzuveröffentlichung**/**Wiederveröffentlichung** oder **Entfernen** (mit einem Urheberrechts- oder Richtliniengrund).
+The Assets tab is a searchable browser of published content with actions to **Feature** an asset (highlights it on the product's home page), **Unpublish**/**Republish** it, or **Remove** it (with a copyright or policy reason).
 
-Für Songs speziell ist dies auch dort, wo ein Song **sonntags-fertig** wird und berechtigt ist, in der Song-Suche einer Kirche B1 Admin zu erscheinen: ein Reviewer öffnet das Vermögenswert und markiert jeden veröffentlichten Schlüssel als **Gehört**, nachdem er es gehört hat und den Score, Akkorde und Folien alle bestätigt hat. Ein Song wird nur sonntags-fertig, sobald jeder Schlüssel abgehakt ist.
+For songs specifically, this is also where a song becomes **Sunday-ready** and eligible to appear in a church's B1 Admin song search: a reviewer opens the asset and marks each published key as **Listened** once they've listened through it and confirmed the score, chords, and slides are all present. A song only becomes Sunday-ready once every key is checked off.
 
 :::info
-Commons-Moderation ist nur Mitarbeitern – einzelne Kirchen sehen diese Warteschlange nie. Der einzige Ort, wo die B1 Admin einer einzelnen Kirche Commons-Daten berührt, ist der Abschnitt „WorshipCommons – kostenlos" der [Song-Suche](/docs/b1-admin/serving/songs#free-songs-from-worshipcommons), die nur Songs Flächen, die bereits diesen Review-Prozess durchlaufen haben.
+Commons moderation is staff-only — individual churches never see this queue. The one place an individual church's B1 Admin touches Commons data is the "WorshipCommons — free" section of the [song search](/docs/b1-admin/serving/songs#free-songs-from-worshipcommons), which only surfaces songs that have already been through this review process.
 :::
 
-Siehe die Seite [Content Commons-Architektur](/docs/developer/architecture/commons) für das zugrundeliegende Datenmodell und die Einreichungs-Lebenszyklus.
+See the [Content Commons architecture](/docs/developer/architecture/commons) page for the underlying data model and submission lifecycle.
 
-## Genehmigung von Gruppen-E-Mails
+## Group Email Approval
 
-Kirchen können keine Kirchen-geschriebenen E-Mails (Gruppen-E-Mails, Formular-Folgeuppen, Workflow-E-Mails und Konto-Einladungen) senden, bis ein Server-Administrator diese genehmigt hat. Dies verhindert, dass Bot-registrierte Kirchen die gemeinsame ChurchApps-Sendungsadresse für Spam verwenden.
+Churches cannot send church-written email (group email, form follow-ups, workflow emails, and account invites) until a server admin approves them. This keeps bot-registered churches from using the shared ChurchApps sending address for spam.
 
-1. Öffnen Sie die Registerkarte **Kirchen** im Server-Admin-Panel.
-2. Jede Kirche zeigt einen **Gruppen-E-Mail**-Chip: **Genehmigt** (grün) oder **Nicht genehmigt** (unklar).
-3. Klicken Sie auf den Chip und bestätigen Sie, um die Kirche zu genehmigen, oder zu widerrufen Sie eine Genehmigung.
+1. Open the **Churches** tab in the Server Admin panel.
+2. Each church shows a **Group Email** chip: **Approved** (green) or **Not approved** (outlined).
+3. Click the chip and confirm to approve the church, or to revoke an approval.
 
-Kirchenpersonal bittet um Genehmigung mit der Schaltfläche **Überprüfung anfordern** in B1 Admin's E-Mail-Send-Dialog. Die Anfrage wird an die Support-Adresse per E-Mail gesendet und listet den Kirchennamen, die ID, das Registrierungsdatum, den Ort und wer gefragt hat. Eine Kirche kann eine Anfrage pro Woche senden. Siehe [Kirchenautoren-E-Mail-Limits](/docs/developer/architecture/notifications#church-authored-email-limits) für die tägliche Zulage und die automatische Pause bei Bounces und Beschwerden.
+Church staff ask for approval with the **Request review** button in B1 Admin's Send Email dialog. The request is emailed to the support address and lists the church's name, ID, registration date, location, and who asked. A church can send one request per week. See [Church-authored email limits](/docs/developer/architecture/notifications#church-authored-email-limits) for the daily allowance and the automatic pause on bounces and complaints.
 
-## Datenbank-Migrationen
+## Database Migrations
 
-Deploys ändern die Datenbank nicht. Die gehosteten Datenbanken akzeptieren nur Verbindungen von innen in das Netz der Api, daher wenden nach einer Veröffentlichung, die eine Migration hinzufügt, ein Server-Administrator es von der Registerkarte **Datenbank-Migrationen** an. (Self-Hosted Docker-Installationen führen weiterhin Migrationen automatisch aus, wenn der Api-Container startet.)
+Deploys do not change the database. The hosted databases only accept connections from inside the Api's network, so after a release that adds a migration, a server admin applies it from the **Database Migrations** tab. (Self-hosted Docker installs still run migrations automatically when the Api container starts.)
 
-Die Registerkarte zeigt die aktuelle Umgebung und eine Zeile pro Modul (Mitgliedschaft, Anwesenheit, Geben usw.) mit seinem Status, die Anzahl der angewendeten und ausstehenden Migrationen und die zuletzt angewendete.
+The tab shows the current environment and one row per module (membership, attendance, giving, and so on) with its status, the number of applied and pending migrations, and the last one applied.
 
-- **Ausstehende Migrationen ausführen** wendet jede ausstehende Migration an, ein Modul nach dem anderen, der Reihenfolge nach. Es stoppt beim ersten Fehler und zeigt, was für jedes Modul angewendet wurde.
-- Ein Modul markiert **Keine Historie** hat eine Datenbank, die das Migrations-Tracking voraus ist. Es wird nie automatisch ausgeführt, da das alte Daten-Migrationen über Live-Tabellen widerholen würde. Klicken Sie stattdessen auf **Schema überprüfen** auf diesem Modul. Die Api vergleicht die Tabellen, Spalten und Indizes, die jede Migration erzeugt, mit der Live-Datenbank und markiert jede Migration **Bereits angewendet**, **Fehlend**, **Teilweise angewendet** oder **Nur Daten**. Nichts wird durch die Überprüfung geändert.
-- In den Überprüfungs-Ergebnissen schreibt **Als bereits angewendet registrieren** die erkannten Migrationen in die Migrations-Historie, ohne sie auszuführen. Fehlende bleiben ausstehend und können dann normal ausgeführt werden.
-- Eine **Teilweise angewendete** Migration blockiert Aufzeichnung. Wenn die Migration sicher erneut ausgeführt werden kann (lesen Sie sie zuerst), aktivieren Sie **Erneut ausführen**, damit sie ausstehend bleibt und erneut von oben ausgeführt wird.
+- **Run Pending Migrations** applies every pending migration, one module at a time, in order. It stops at the first failure and shows what was applied for each module.
+- A module marked **No history** has a database that predates migration tracking. It is never run automatically, because that would replay old data migrations over live tables. Click **Check Schema** on that module instead. The Api compares the tables, columns, and indexes each migration creates with the live database and marks each migration **Already applied**, **Missing**, **Partly applied**, or **Data only**. Nothing is changed by the check.
+- In the check results, **Record as Already Applied** writes the detected migrations into the migration history without running them (after a confirmation). Everything up to the last **Already applied** migration is recorded, including **Data only** ones in that range; **Missing** ones stay pending and can then be run normally with **Run Pending Migrations**.
+- A **Partly applied** migration blocks recording. If the migration is safe to run again (read it first), tick **Re-run** so it stays pending and runs again from the top.
 
-Der Server-Admin-Panel und die CLI (`yarn migrate:up`) verwenden den gleichen Kysely-Migrator und die `kysely_migration`-Tabelle, daher sind sie immer einig, was angewendet wurde. Die Backing-Endpunkte sind `GET /membership/serverHealth/migrations`, `POST /membership/serverHealth/migrations/:module/run`, `GET .../:module/detect` und `POST .../:module/baseline`, alle nur Server.Admin.
+The Server Admin panel and the CLI (`yarn migrate:up`) use the same Kysely migrator and `kysely_migration` table, so they always agree on what has been applied. The backing endpoints are `GET /membership/serverHealth/migrations`, `POST /membership/serverHealth/migrations/:module/run`, `GET .../:module/detect`, and `POST .../:module/baseline`, all Server.Admin only.
 
-## Zugehörige Seiten
+## Related Pages
 
-- [Authentifizierung & Berechtigungen](/docs/developer/api/endpoints/authentication) — Berechtigungsmodell und JWT-Authentifizierung
-- [Membership-Endpunkte](/docs/developer/api/endpoints/membership) — Benutzer- und Kirchenverwaltungs-API
-- [Audit-Protokoll](/docs/b1-admin/reports/audit-log) — Ansicht-Aktivitätsprotokolle für eine Kirche
-- [Content Commons-Architektur](/docs/developer/architecture/commons) — Gemeinsames Asset-Modell und Moderations-Lebenszyklus
+- [Authentication & Permissions](/docs/developer/api/endpoints/authentication) — Permission model and JWT authentication
+- [Membership Endpoints](/docs/developer/api/endpoints/membership) — User and church management API
+- [Audit Log](/docs/b1-admin/reports/audit-log) — View activity logs for a church
+- [Content Commons Architecture](/docs/developer/architecture/commons) — Shared asset model and moderation lifecycle

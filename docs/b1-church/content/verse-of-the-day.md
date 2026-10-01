@@ -36,6 +36,13 @@ The verse image automatically adjusts to fit your screen. Depending on your devi
 
 The page detects your screen dimensions and selects the best format, so the verse always looks good regardless of how you are viewing it. If you resize your browser window, the image will update to match the new dimensions.
 
+## Sharing the Verse
+
+In the member portal (`/mobile`), the Verse of the Day screen has two buttons below the verse:
+
+- **Share image** -- shares the verse picture itself, so you can post it or send it in a message. On devices that cannot share files (such as most desktop browsers), the image is downloaded instead.
+- **Share** -- shares the verse text, reference, and a link to the page. If your device has no share menu, the text and link are copied to your clipboard.
+
 :::tip
 Make it a daily habit to check the Verse of the Day, then explore the passage further in the [Bible reader](./bible.md).
 :::

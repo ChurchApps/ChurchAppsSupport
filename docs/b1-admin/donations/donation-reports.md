@@ -6,7 +6,7 @@ title: "Donation Reports"
 
 <div class="article-intro">
 
-B1 Admin gives you several ways to view and analyze your church's giving data. The Donations Summary page provides a visual overview with charts and filters, while the Reports section offers a more detailed Donation Summary report. Use these tools to track giving trends, prepare for board meetings, or reconcile your records.
+B1 Admin gives you several ways to view and analyze your church's giving data. The giving dashboard on the Donations **Summary** page provides a visual overview with charts and filters, while the Reports section offers a more detailed Donation Summary report. Use these tools to track giving trends, prepare for board meetings, or reconcile your records.
 
 </div>
 
@@ -20,36 +20,28 @@ B1 Admin gives you several ways to view and analyze your church's giving data. T
 
 ## Giving Dashboard
 
-The **Giving Dashboard** is the first thing you see when you open the **Donations** section. It provides a high-level view of your giving activity with key performance indicators.
+The giving dashboard is the **Dashboard** tab of the **Summary** page, the first page you see when you open the **Donations** section.
 
-1. Open the **section menu** in the top-left corner and choose **Donations** to open the dashboard.
-2. At the top, four **KPI cards** display your giving metrics at a glance:
-   - **Total Giving** -- The total amount donated in the selected period.
+1. Open the **section menu** in the top-left corner and choose **Donations**. The **Summary** page opens on the **Dashboard** tab.
+2. Use the **Weekly**, **Monthly**, and **Quarterly** toggle above the report to choose how giving is grouped.
+3. In the **Filter Report** panel, set the **Start Date** and **End Date** (by default, the past year through yesterday) and optionally pick a **Fund**, then click **Run Report**. The report runs automatically with the defaults when the page opens.
+4. Four **KPI cards** display your giving metrics for the selected range:
+   - **Total Giving** -- The total amount donated.
    - **Average Gift** -- The average donation amount.
    - **Unique Donors** -- The number of distinct people who gave.
    - **Total Donations** -- The total number of individual donations.
-3. Use the **period toggle** to switch between **Weekly**, **Monthly**, and **Quarterly** views.
-4. Below the KPIs, a chart displays giving trends for the selected period.
-5. Click **Download** to export a CSV file with giving totals.
+5. Below the KPIs, a bar chart shows giving per week, month, or quarter, broken out by fund.
+6. Click **Download Options** and choose **Summary** to export a CSV of the totals by period and fund, or click the print icon to print the report.
 
 If donations in the period were given in more than one currency, the KPI totals are converted to your church currency and a **Converted at current exchange rates** note appears below the cards. See [Multi-Currency Support](./multi-currency.md#converted-totals) for details.
 
+:::info
+The dashboard shows aggregate giving data. It does not include individual donor names. For donor-level details, use the [Batches](batches.md) page.
+:::
+
 ## Lapsed Givers
 
-The **Lapsed Givers** tab next to the dashboard lists people who gave during one period but not since. By default it compares last calendar year with this year to date; change either date range to widen or narrow the search. Each row shows the person, the date of their last gift and their total for the earlier period, and **Export** downloads the list as a CSV for a follow-up mailing or call list.
-
-## Donations Summary Page
-
-The **Summary** page provides more detailed aggregate giving data.
-
-1. Open the **section menu** in the top-left corner and choose **Donations** to open the Summary page.
-2. Use the **date range filter** to select the time period you want to review. Set the earlier date on top and the more recent date on the bottom.
-3. The page displays a weekly giving chart so you can see trends at a glance.
-4. Click **Download** to export a CSV file with the total amount given, the week it was given, and the fund it was given to.
-
-:::info
-The Summary page shows aggregate giving data. It does not include individual donor names. For donor-level details, use the [Batches](batches.md) page.
-:::
+The **Lapsed Givers** tab next to the **Dashboard** tab lists people who gave during one period but not since. By default it compares last calendar year with this year to date; change either date range to widen or narrow the search. Each row shows the person, the date of their last gift and their total for the earlier period, and **Download Options > Summary** downloads the list as a CSV for a follow-up mailing or call list.
 
 ## Viewing Donor-Level Details
 
@@ -67,14 +59,14 @@ For a breakdown of who gave, how much, and to which fund:
 Donation reporting is built directly into the Donations section -- the Summary page serves as your donation summary report:
 
 1. Open the **section menu** in the top-left corner and choose **Donations** to open the Summary page.
-2. Use the **date range filter** to select the period you want to report on.
-3. Click **Download** to export the report as a CSV file.
+2. On the **Dashboard** tab, set the **Start Date** and **End Date** in the **Filter Report** panel and click **Run Report**.
+3. Click **Download Options** and choose **Summary** to export the report as a CSV file.
 
 ## Exporting Data
 
 You can export donation data from multiple places:
 
-- **Summary page** -- download a CSV of weekly giving totals by fund
+- **Summary page** -- download a CSV of giving totals by week, month, or quarter and fund
 - **Batch detail page** -- download a CSV of individual donations with donor details
 - **Funds detail page** -- download donation history for a specific fund
 

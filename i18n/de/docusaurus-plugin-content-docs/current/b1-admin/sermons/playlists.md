@@ -6,7 +6,7 @@ title: "Wiedergabelisten"
 
 <div class="article-intro">
 
-Wiedergabelisten ermöglichen es Ihnen, Ihre Predigten in Reihen oder Sammlungen zu organisieren. Wenn Besucher Ihre Predigtbibliothek auf Ihrer B1.church-Website durchsuchen, helfen Wiedergabelisten ihnen, eine komplette Predigtenreihe zu finden und nachzufolgen in der richtigen Reihenfolge.
+Wiedergabelisten ermöglichen es Ihnen, Ihre Predigten in Reihen oder Sammlungen zu organisieren. Wenn Besucher Ihre Predigtbibliothek auf Ihrer B1.church-Website durchsuchen, helfen Wiedergabelisten ihnen, eine vollständige Predigtreihe in der richtigen Reihenfolge zu finden und zu befolgen.
 
 </div>
 
@@ -14,46 +14,46 @@ Wiedergabelisten ermöglichen es Ihnen, Ihre Predigten in Reihen oder Sammlungen
 <h4>Voraussetzungen</h4>
 
 - Sie benötigen die Berechtigung **contentApi.streamingServices.edit**. Siehe [Rollen & Berechtigungen](../settings/roles-permissions.md), wenn Sie keinen Zugriff haben.
-- Bereiten Sie einen Namen, eine Beschreibung und ein Miniaturbild für Ihre Wiedergabeliste vor
+- Halten Sie einen Namen, Beschreibung und Miniaturbild-Bild für Ihre Wiedergabeliste bereit
 
 </div>
 
-## Anzeige von Wiedergabelisten
+## Wiedergabelisten anzeigen
 
-1. Öffnen Sie in B1 Admin das **Bereichsmenü** in der oberen linken Ecke (der Bereichsname mit dem kleinen Pfeil) und wählen Sie **Predigten**.
-2. Klicken Sie auf die **Wiedergabelisten**-Registerkarte oben auf der Seite.
-3. Sie sehen eine Liste aller Ihrer vorhandenen Wiedergabelisten mit ihren Namen und Beschreibungen.
+1. Öffnen Sie in B1 Admin das **Abschnittsmenü** in der oberen linken Ecke (der Abschnittsname mit dem kleinen Pfeil) und wählen Sie **Predigten**.
+2. Suchen Sie das Fenster **Wiedergabelisten** auf der Seite **Predigten** (neben der Predigt-Liste).
+3. Sie sehen eine Liste aller Ihrer bestehenden Wiedergabelisten mit ihren Namen und Beschreibungen.
 
-## Erstellen einer Wiedergabeliste
+## Eine Wiedergabeliste erstellen
 
-1. Klicken Sie auf die Schaltfläche **Erste Wiedergabeliste erstellen** (wenn Sie noch keine Wiedergabelisten haben) oder klicken Sie auf **Wiedergabeliste hinzufügen**.
-2. Geben Sie einen **Namen** für die Wiedergabeliste ein -- zum Beispiel den Titel der Predigtenreihe wie "Faith Foundations" oder "Summer in the Psalms".
+1. Klicken Sie auf die Schaltfläche **Erste Wiedergabeliste erstellen** (wenn Sie noch keine Wiedergabelisten haben) oder klicken Sie auf die Schaltfläche **Hinzufügen** (+) in der Kopfzeile des Fensters **Wiedergabelisten**.
+2. Geben Sie einen **Namen** für die Wiedergabeliste ein -- zum Beispiel den Predigtreihen-Titel wie "Glaubensfundamente" oder "Sommer in den Psalmen".
 3. Fügen Sie eine **Beschreibung** hinzu, um Besuchern einen kurzen Überblick über die Reihe zu geben.
-4. Stellen Sie ein **Veröffentlichungsdatum** ein, um zu kontrollieren, wann die Wiedergabeliste sichtbar wird.
-5. Laden Sie ein **Miniaturbild** hoch, um die Reihe visuell darzustellen.
+4. Legen Sie ein **Veröffentlichungsdatum** fest, um zu kontrollieren, wann die Wiedergabeliste sichtbar wird.
+5. Laden Sie ein **Miniaturbild-Bild** hoch, um die Reihe visuell darzustellen.
 6. Klicken Sie auf **Speichern**, um Ihre Wiedergabeliste zu erstellen.
 
 :::tip
-Erstellen Sie zuerst Ihre Wiedergabelisten, bevor Sie Predigten hinzufügen. Auf diese Weise können Sie jede Predigt der richtigen Wiedergabeliste zuweisen, wenn Sie hinzufügen, anstatt später neu zu organisieren.
+Erstellen Sie Ihre Wiedergabelisten zuerst, bevor Sie Predigten hinzufügen. Auf diese Weise können Sie jede Predigt der richtigen Wiedergabeliste zuweisen, während Sie fortfahren, anstatt sie später neu zu organisieren.
 :::
 
-## Hinzufügen von Predigten zu einer Wiedergabeliste
+## Predigten zu einer Wiedergabeliste hinzufügen
 
-Wenn Sie [eine Predigt hinzufügen oder bearbeiten](managing-sermons), weisen Sie sie einer Wiedergabeliste mit dem **Wiedergabelisten**-Dropdown zu. Alle Predigten, die der gleichen Wiedergabeliste zugewiesen sind, werden gruppiert und in Reihenfolge auf Ihrer Website angezeigt.
+Wenn Sie [eine Predigt hinzufügen oder bearbeiten](managing-sermons), weisen Sie sie einer Wiedergabeliste mithilfe der Dropdown-Liste **Wiedergabeliste** zu. Alle einer Wiedergabeliste zugewiesenen Predigten werden gruppiert und in Reihenfolge auf Ihrer Website angezeigt.
 
 :::info
-Sie können auch Predigten während des [Massenimports](bulk-import) Wiedergabelisten zuweisen. Beim Importieren von YouTube oder Vimeo wählen Sie eine Wiedergabeliste aus dem **In Wiedergabeliste importieren**-Dropdown, bevor Sie auf **Importieren** klicken.
+Sie können Predigten auch Wiedergabelisten während [Massenimport](bulk-import) zuweisen. Beim Importieren von YouTube oder Vimeo wählen Sie eine Wiedergabeliste aus der Dropdown-Liste **Zu Wiedergabeliste importieren**, bevor Sie auf **Importieren** klicken.
 :::
 
-## Wie Wiedergabelisten auf Ihrer Website erscheinen
+## Wie Wiedergabelisten auf Ihrer Website angezeigt werden
 
 Wiedergabelisten werden auf Ihrer B1.church-Website als durchsuchbare Sammlungen angezeigt. Besucher können:
 
-- Sehen Sie alle verfügbaren Predigtenreihen auf einen Blick
-- Klicken Sie in eine Wiedergabeliste, um alle Predigten in dieser Reihe anzuzeigen
-- Schauen Sie sich Predigten oder hören Sie sie in Reihenfolge an
+- Alle verfügbaren Predigtreihen auf einen Blick sehen
+- In eine Wiedergabeliste klicken, um alle Predigten in dieser Reihe zu sehen
+- Predigten in Reihenfolge anschauen oder anhören
 
 ## Nächste Schritte
 
-- [Predigten verwalten](managing-sermons) -- Fügen Sie einzelne Predigten zu Ihren Wiedergabelisten hinzu
+- [Predigten verwalten](managing-sermons) -- Fügen Sie einzelne Predigten Ihren Wiedergabelisten hinzu
 - [Massenimport](bulk-import) -- Importieren Sie mehrere Predigten und weisen Sie sie Wiedergabelisten zu

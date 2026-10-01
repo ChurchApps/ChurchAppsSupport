@@ -1,54 +1,69 @@
 ---
-title: "Spendenstapel"
+title: Donation Batches
 ---
 
-# Spendenstapel
+# Donation Batches
 
 <div class="article-intro">
 
-Stapel gruppieren Ihre Spenden für eine einfachere Nachverfolgung und Abstimmung. Ein typischer Stapel repräsentiert eine einzelne Kollekte, wie eine Sonntagskollekte oder eine Sonderveranstaltung. Die Verwendung von Stapeln hilft Ihnen, organisiert zu bleiben und macht es einfach zu überprüfen, ob Ihre Aufzeichnungen mit den tatsächlichen Einzahlungen übereinstimmen.
+Batches group your donations together for easier tracking and reconciliation. A typical batch represents a single collection, such as a Sunday offering or a special event. Using batches helps you stay organized and makes it simple to verify that your records match the actual deposits.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Before You Begin</h4>
 
-- Stellen Sie sicher, dass Sie [Ihre Fonds eingerichtet](funds.md) haben, damit sie bei der Spendenerfassung verfügbar sind
-- Sie benötigen Zugang zum Bereich **Spenden** in B1 Admin
+- Make sure you have [set up your funds](funds.md) so they are available when recording donations
+- You will need access to the **Donations** section in B1 Admin
 
 </div>
 
-## Die Stapelseite
+## The Batches Page
 
-Wenn Sie zu **Spenden > Stapel** navigieren, sehen Sie eine Liste aller Ihrer Stapel. Jede Zeile zeigt:
+When you navigate to **Donations > Batches**, you will see a list of all your batches. Each row displays:
 
-- **Name** -- die Bezeichnung, die Sie dem Stapel gegeben haben
-- **Datum** -- das Datum der Kollekte
-- **Spenden** -- die Anzahl der einzelnen Spenden im Stapel
-- **Gesamt** -- der kombinierte Betrag
+- **Name** -- the label you gave the batch
+- **Date** -- the date of the collection
+- **Donations** -- the number of individual donations in the batch
+- **Total** -- the combined dollar amount
 
-Die Kopfzeile oben zeigt Zusammenfassungsstatistiken einschließlich der Gesamtzahl der Stapel, der Gesamtzahl der Spenden über alle Stapel hinweg und des Gesamtbetrags.
+The header at the top shows summary statistics including the total number of batches, the total number of donations across all batches, and the overall dollar amount.
 
-## Einen neuen Stapel erstellen
+## Creating a New Batch
 
-1. Klicken Sie oben auf der Seite auf **Stapel hinzufügen**.
-2. Geben Sie einen aussagekräftigen Namen ein (z. B. „Sonntagskollekte - 9. Feb.").
-3. Wählen Sie das Datum der Kollekte.
-4. Klicken Sie auf **Speichern**.
+1. Click **Add Batch** at the top of the page.
+2. Enter a descriptive name (e.g., "Sunday Offering - Feb 9").
+3. Select the date of the collection.
+4. Click **Save**.
 
-Ihr neuer Stapel erscheint in der Liste und ist bereit, Spenden aufzunehmen.
+Your new batch appears in the list, ready for you to add donations.
 
-## Mit Stapeln arbeiten
+## Working with Batches
 
-- **Spenden anzeigen** -- Klicken Sie auf einen Stapelnamen, um ihn zu öffnen und alle einzelnen Spenden zu sehen. Von dort aus können Sie Spenden hinzufügen, bearbeiten oder entfernen.
-- **Stapeldetails bearbeiten** -- Klicken Sie auf die Schaltfläche **Bearbeiten** in einer Stapelzeile, um den Namen oder das Datum zu ändern.
-- **Sortieren** -- Verwenden Sie die Spaltenüberschriften, um Stapel nach Name oder Datum zu sortieren.
-- **Exportieren** -- Klicken Sie auf **Als CSV exportieren**, um Ihre Stapelliste als Tabelle herunterzuladen.
+- **View donations** -- click a batch name to open it and see all the individual donations it contains. From there you can add, edit, or remove donations.
+- **Edit batch details** -- click the **Edit** button on a batch row to change its name or date.
+- **Sort** -- use the column headers to sort batches by name or date.
+- **Export** -- click **Export to CSV** to download your batch list as a spreadsheet.
+
+## Printing a Batch
+
+Open a batch and click the **Print** (printer) icon at the top of the donations list to print a paper copy for your counting team or deposit records. The printout includes:
+
+- The batch name and date
+- Every donation in the batch, with the donor's name, method, notes, date, and amount (refunded gifts are crossed out and marked as refunded)
+- **Fund Subtotals** -- the total given to each fund in the batch
+- **Batch Total** -- the combined amount for the whole batch
+
+The Print icon only appears once the batch has at least one donation.
+
+## Exporting a Batch to QuickBooks Online
+
+Open a batch and click **Export for QuickBooks** to download the batch as a journal entry that QuickBooks Online can import (**Settings > Import Data > Journal Entries**). The file contains one debit to **Undeposited Funds** for the batch total and one credit per fund, using each fund's name as the account name. QuickBooks asks you to match those names to your chart of accounts during import, so name your funds the way your bookkeeper names the income accounts, or map them once on import.
 
 :::tip
-Benennen Sie Ihre Stapel einheitlich, damit sie später leicht zu finden sind. Die Angabe von Datum und Kollektenart (z. B. „Sonntag Vormittag - 2025-02-09") hält Ihre Liste übersichtlich, wenn sie wächst.
+Name your batches consistently so they are easy to find later. Including the date and collection type (e.g., "Sunday AM - 2025-02-09") keeps your list organized as it grows.
 :::
 
-## Nächste Schritte
+## Next Steps
 
-Sobald Sie einen Stapel haben, lesen Sie [Spenden erfassen](recording-donations.md), um zu erfahren, wie Sie einzelne Spenden hinzufügen. Sie können auch [Stripe-Transaktionen importieren](stripe-import.md), um automatisch Stapel aus Online-Spenden zu erstellen.
+Once you have a batch, see [Recording Donations](recording-donations.md) to learn how to add individual donations to it. You can also [import Stripe transactions](stripe-import.md) to automatically create batches from online giving.

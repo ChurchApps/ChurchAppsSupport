@@ -1,7 +1,6 @@
 ---
-title: TITLE: Erinnerungen zu Veranstaltungen
+title: "Erinnerungen zu Veranstaltungen"
 ---
-CONTENT:
 # Erinnerungen zu Veranstaltungen
 
 <div class="article-intro">

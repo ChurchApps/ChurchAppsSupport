@@ -1,45 +1,52 @@
 ---
-title: "Vers des Tages"
+title: Vers des Tages
 ---
 
-# Vers des Tages
+# Verse of the Day
 
 <div class="article-intro">
 
-Die Seite „Vers des Tages" zeigt einen täglichen Bibelvers als schön gestaltetes Bild an. Es ist eine einfache Möglichkeit, den Tag mit der Heiligen Schrift zu beginnen oder unter der Woche Ermutigung zu finden.
+The Verse of the Day page displays a daily Bible verse as a beautifully formatted image. It is a simple way to start your day with Scripture or find encouragement throughout the week.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Before You Begin</h4>
 
-- Zum Anzeigen des Verses des Tages ist keine Anmeldung erforderlich. Die Seite ist öffentlich zugänglich.
-- Ihre Gemeinde muss eine „Vers des Tages"-Seite zu ihrer Seitennavigation hinzugefügt haben.
+- No login is required to view the Verse of the Day. The page is publicly accessible.
+- Your church must have added a Verse of the Day page to their site navigation.
 
 </div>
 
-## Den Vers anzeigen
+## Viewing the Verse
 
-1. Navigieren Sie über die Seitennavigation Ihrer Gemeinde zur Seite **Vers des Tages**.
-2. Die Seite zeigt den heutigen Vers als Bild an.
-3. Jeden Tag erscheint automatisch ein neuer Vers.
+1. Navigate to the **Verse of the Day** page from your church's site navigation.
+2. The page displays today's verse as an image.
+3. A new verse appears automatically each day.
 
-Sie müssen nichts weiter tun -- besuchen Sie einfach die Seite, und der Vers des aktuellen Tages wird angezeigt.
+There is nothing you need to do -- just visit the page and the current day's verse will be shown.
 
-## Responsive Darstellung
+## Responsive Display
 
-Das Versbild passt sich automatisch an Ihren Bildschirm an. Je nach Gerät und Fenstergröße sehen Sie eines von drei Formaten:
+The verse image automatically adjusts to fit your screen. Depending on your device and window size, you will see one of three formats:
 
-- **Breitbild (16:9)** -- Ideal für Desktop-Monitore und Laptops
-- **Quadratisch (1:1)** -- Geeignet für Tablets
-- **Hochformat (9:16)** -- Optimiert für vertikal gehaltene Smartphones
+- **Widescreen (16:9)** -- Best for desktop monitors and laptops
+- **Square (1:1)** -- Suited for tablet-sized screens
+- **Portrait (9:16)** -- Optimized for phones held vertically
 
-Die Seite erkennt Ihre Bildschirmabmessungen und wählt das beste Format, sodass der Vers unabhängig von Ihrem Anzeigegerät immer gut aussieht. Wenn Sie Ihr Browserfenster verkleinern oder vergrößern, wird das Bild an die neuen Abmessungen angepasst.
+The page detects your screen dimensions and selects the best format, so the verse always looks good regardless of how you are viewing it. If you resize your browser window, the image will update to match the new dimensions.
+
+## Sharing the Verse
+
+In the member portal (`/mobile`), the Verse of the Day screen has two buttons below the verse:
+
+- **Share image** -- shares the verse picture itself, so you can post it or send it in a message. On devices that cannot share files (such as most desktop browsers), the image is downloaded instead.
+- **Share** -- shares the verse text, reference, and a link to the page. If your device has no share menu, the text and link are copied to your clipboard.
 
 :::tip
-Machen Sie es sich zur täglichen Gewohnheit, den Vers des Tages zu lesen, und erkunden Sie die Bibelstelle anschließend im [Bibelleser](./bible.md) weiter.
+Make it a daily habit to check the Verse of the Day, then explore the passage further in the [Bible reader](./bible.md).
 :::
 
-## Verfügbarkeit
+## Availability
 
-Der Vers des Tages ist eine integrierte Inhaltsfunktion von B1.church. Wenn Sie ihn in der Navigation Ihrer Gemeinde nicht sehen, hat Ihr Gemeindeadministrator ihn möglicherweise nicht zum Seitenmenü hinzugefügt. Wenden Sie sich an Ihren Gemeindeadministrator, um dies anzufragen.
+The Verse of the Day is a built-in content feature of B1.church. If you do not see it in your church's navigation, your church administrator may not have added it to the site menu. Contact your church administrator to request it.

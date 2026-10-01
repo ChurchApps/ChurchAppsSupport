@@ -23,21 +23,28 @@ B1 Admin provides three attendance reports to help you understand how people are
 
 The Attendance Trend report shows how attendance changes over time for your services.
 
-1. Go directly to **admin.b1.church/reports/attendanceTrend** in your browser (reports have no entry in the navigation menu — bookmarking the address is the easiest way to get back to it).
-2. Set the **date range** to define the time period.
-3. Select a **service** or **group** to filter the results.
-4. The report displays a trend line showing attendance counts over the selected period.
+1. Go directly to **admin.b1.church/reports/attendanceTrend** in your browser (reports have no entry in the navigation menu — bookmarking the address is the easiest way to get back to it). The same report is also on the **Attendance Trend** tab of the Attendance page.
+2. Optionally select a **Campus**, **Service**, **Service Time**, or **Group** to filter the results, then click **Run Report**.
+3. The report displays a bar chart and table of total visits per week. Each week is labeled with the date of that week's Sunday.
 
 This report is useful for spotting patterns like seasonal dips, growth trends, or the impact of special events.
 
 ## Group Attendance
 
-The Group Attendance report shows attendance totals by group for a selected date range.
+The Group Attendance report shows who attended each group session in a date range.
 
-1. Go directly to **admin.b1.church/reports/groupAttendance** in your browser.
-2. Set the **date range** for the report.
-3. Select the **group(s)** you want to review.
-4. The report displays total attendance figures for each group.
+1. Go directly to **admin.b1.church/reports/groupAttendance** in your browser, or open the **Group Attendance** tab of the Attendance page.
+2. Optionally select a **Campus** and **Service**.
+3. Set the **Start Date** and **End Date**. By default the report covers last Sunday through today, and the end date is included in full.
+4. Click **Run Report**.
+
+The results are grouped by session date, then service time, then group, with the people who attended listed under each group. Service times, groups, and names are sorted alphabetically.
+
+To download a spreadsheet, click **Download Options** and choose **Summary**. The CSV has:
+
+- One row per member of each group that met in the date range, sorted by group and then name.
+- The person's name and group name in the first columns.
+- One column per dated session, named with the service, service time, and date (for example, "Sunday - 9:00 AM (2026-09-27)"), with each person marked **present** or **absent**.
 
 Use this report to compare attendance across groups and identify which groups are growing or need attention.
 

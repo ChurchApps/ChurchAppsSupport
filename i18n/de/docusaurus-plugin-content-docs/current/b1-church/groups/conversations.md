@@ -1,81 +1,81 @@
 ---
-title: "Gruppenkonversationen"
+title: Group Conversations
 ---
 
-# Gruppenkonversationen
+# Group Conversations
 
 <div class="article-intro">
 
-Die Registerkarte Nachrichten auf Ihrer Gruppenseite ist ein Ort, an dem Gruppenmitglieder Nachrichten posten und miteinander interagieren können. Nutzen Sie Konversationen, um Themen zu diskutieren, Updates zu teilen und sich zwischen den Treffen mit Ihrer Gruppe verbunden zu halten.
+The Messages tab on your group page is a space where group members can post messages and interact with each other. Use conversations to discuss topics, share updates, and stay connected with your group between meetings.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Before You Begin</h4>
 
-- Sie müssen in Ihr B1.church-Konto [angemeldet sein](../getting-started/logging-in.md).
-- Sie müssen Mitglied der Gruppe sein, um auf die Registerkarte Nachrichten zuzugreifen. Weitere Informationen finden Sie unter [Gruppendetails](./group-details.md).
+- You must be [logged in](../getting-started/logging-in.md) to your B1.church account.
+- You must be a member of the group to access the Messages tab. See [Group Details](./group-details.md) for how to join a group.
 
 </div>
 
-## Zugriff auf Konversationen
+## Accessing Conversations
 
-1. Navigieren Sie zur Seite mit den Gruppendetails, indem Sie auf eine Gruppe von der [Gruppenseite](./browsing-groups.md) klicken.
-2. Stellen Sie sicher, dass Sie angemeldet sind.
-3. Klicken Sie auf die Registerkarte **Nachrichten** in der Seitenleiste.
+1. Navigate to the group detail page by clicking on a group from the [groups page](./browsing-groups.md).
+2. Make sure you are logged in.
+3. Click the **Messages** tab in the sidebar.
 
-## Diskussionen und Ankündigungen
+## Discussions and Announcements
 
-Die Registerkarte Nachrichten kann zwei Unterregisterkarten anzeigen, je nachdem, welche Feeds Ihre Kirche für diese Gruppe aktiviert hat:
+The Messages tab may show two sub-tabs, depending on which feeds your church has turned on for this group:
 
-- **Diskussionen** – Ein Ort, an dem jedes Gruppenmitglied Nachrichten posten und auf andere antworten kann.
-- **Ankündigungen** – Nachrichten von Gruppenleitern, die für alle Mitglieder wichtig zu sehen sind. Normale Mitglieder können Ankündigungen lesen und darauf reagieren, aber nur Leiter können sie posten. Wenn Sie als normales Mitglied versuchen zu posten, sehen Sie einen Hinweis, dass nur Leiter Ankündigungen posten können und stattdessen per Direktnachricht antworten sollen.
+- **Discussions** -- A space where any group member can post messages and reply to others.
+- **Announcements** -- Messages posted by group leaders that are important for all members to see. Regular members can read announcements and react to them, but only leaders can post. If you try to post as a regular member, you'll see a note that only leaders can post announcements and to reply by direct message instead.
 
-Wenn Ihre Kirche für diese Gruppe nur einen der beiden Feeds aktiviert hat, sehen Sie nur diesen Feed ohne Registerkartenleiste. Wenn beide ausgeschaltet sind, hat die Gruppe überhaupt keine Registerkarte Nachrichten.
+If your church has only turned on one of the two feeds for this group, you'll see just that feed with no tab bar. If both are turned off, the group has no Messages tab at all.
 
-## Nachricht posten
+## Posting a Message
 
-1. Öffnen Sie die Registerkarte **Nachrichten** auf Ihrer Gruppenseite.
-2. Stellen Sie sicher, dass Sie auf der Unterregisterkarte **Diskussionen** sind (falls die Registerkartenleiste sichtbar ist).
-3. Geben Sie Ihre Nachricht in das Textfeld ein.
-4. Senden Sie Ihre Nachricht ab, um sie mit der Gruppe zu teilen.
+1. Open the **Messages** tab on your group page.
+2. Make sure you are on the **Discussions** sub-tab (if the tab bar is visible).
+3. Type your message in the text field.
+4. Submit your message to share it with the group.
 
-Ihre Nachricht ist für alle Mitglieder der Gruppe sichtbar.
+Your message will be visible to all members of the group.
 
-## Bearbeiten oder Löschen Ihrer Nachrichten
+## Editing or Deleting Your Messages
 
-Sie können alle Nachrichten, die Sie gepostet haben, bearbeiten oder löschen:
+You can edit or delete any message you have posted:
 
-1. Fahren Sie mit der Maus über Ihre Nachricht (oder tippen Sie auf dem Mobilgerät), um die Schaltfläche **Weitere Optionen** (⋮) anzuzeigen.
-2. Klicken Sie auf die Schaltfläche, um das Nachrichtenmenü zu öffnen.
-3. Wählen Sie **Bearbeiten**, um den Nachrichtentext zu ändern, oder **Löschen**, um ihn zu entfernen.
-   - Beim Bearbeiten wird der Nachrichtentext zurück in das Eingabefeld geladen. Nehmen Sie Ihre Änderungen vor und senden Sie sie ab, um sie zu speichern.
-   - Beim Löschen wird ein Bestätigungsdialog angezeigt. Klicken Sie auf **Bestätigen**, um die Nachricht dauerhaft zu entfernen.
+1. Hover over your message (or tap it on mobile) to reveal the **more options** button (⋮).
+2. Click the button to open the message menu.
+3. Choose **Edit** to modify the message text, or **Delete** to remove it.
+   - When editing, the message text loads back into the input field. Make your changes and submit to save them.
+   - When deleting, a confirmation dialog appears. Click **Confirm** to permanently remove the message.
 
 :::info
-Sie können nur Ihre eigenen Nachrichten bearbeiten oder löschen. Nachrichten von anderen Mitgliedern zeigen nicht die Bearbeitungs-/Löschoptionen an.
+You can only edit or delete your own messages. Messages posted by other members do not show the edit/delete options.
 :::
 
-## Auf Nachrichten reagieren
+## Reacting to Messages
 
-In der Gruppenchat können Sie auf jede Nachricht mit einem Emoji reagieren:
+In the group chat, you can react to any message with an emoji:
 
-1. Tippen Sie auf eine Nachricht oder fahren Sie mit der Maus darüber und wählen Sie **Reaktion hinzufügen**.
-2. Wählen Sie eines der sechs Emojis: 👍 ❤️ 😂 🎉 🙏 😮.
+1. Tap or hover over a message and choose **Add reaction**.
+2. Pick one of the six emoji: 👍 ❤️ 😂 🎉 🙏 😮.
 
-Reaktionen werden als kleine Chips unter der Nachricht mit einer Anzahl angezeigt, wie viele Personen jedes verwendet haben. Ihre eigene Reaktion wird hervorgehoben – tippen Sie auf den Chip (oder wählen Sie das gleiche Emoji erneut), um ihn zu entfernen, oder wählen Sie ein anderes Emoji, um ein weiteres hinzuzufügen. Reaktionen werden live für alle im Chat angezeigt.
+Reactions appear as small chips under the message with a count of how many people used each one. Your own reaction is highlighted — tap the chip (or pick the same emoji again) to remove it, or pick a different emoji to add another. Reactions show up live for everyone in the chat.
 
 :::tip
-Gruppenkonversationen werden auch auf Ihrer [Zeitleiste](../community/timeline.md) angezeigt, sodass Sie Diskussionen verfolgen können, ohne jede Gruppe einzeln zu besuchen.
+Group conversations live on each group's **Messages** tab -- the old combined [Timeline](../community/timeline.md) feed has been retired. Activity that needs your attention arrives as a notification under the **bell** icon in the app bar.
 :::
 
-## Führungskräftemerkmale
+## Leader Features
 
-Wenn Sie ein Gruppenleiter sind, haben Sie zusätzliche Möglichkeiten auf der Registerkarte Nachrichten:
+If you are a group leader, you have additional capabilities in the Messages tab:
 
-- **Ankündigungen posten** – Wechseln Sie zur Unterregisterkarte **Ankündigungen** und posten Sie Nachrichten, die alle Gruppenmitglieder lesen können.
-- **Diskussionen posten** – Sie können auch an normalen Diskussionen teilnehmen, genau wie jedes andere Mitglied.
+- **Post announcements** -- Switch to the **Announcements** sub-tab and post messages that all group members can read.
+- **Post discussions** -- You can also participate in regular discussions just like any other member.
 
 :::info
-Konversationen sind spezifisch für jede Gruppe. Nachrichten, die Sie in einer Gruppe posten, werden nicht in den Konversationen einer anderen Gruppe angezeigt.
+Conversations are specific to each group. Messages you post in one group will not appear in another group's conversations.
 :::

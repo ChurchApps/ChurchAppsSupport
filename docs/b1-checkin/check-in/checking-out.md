@@ -23,6 +23,7 @@ Check-out closes the loop on child check-in: a parent presents the security code
 
 1. On a manned station, tap **Check Out** on the lookup screen.
 2. Enter the 4-character **security code** from the family's pickup label. You can type it, use the on-screen keypad, or scan the label's barcode with a USB or Bluetooth scanner — the code submits automatically once all 4 characters are entered.
+   - No scanner? Tap **Scan** below the code field to use the tablet's camera instead. Hold the pickup label's QR code or barcode up to the camera in the **Scan pickup code** window and the code is entered for you. The back camera is used by default; tap the flip button to switch cameras, or tap **Cancel** to go back to typing.
 3. The kiosk shows the children checked in under that code.
 
 ## Verifying Who Is Picking Up

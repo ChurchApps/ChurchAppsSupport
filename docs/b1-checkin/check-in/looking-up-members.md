@@ -55,6 +55,16 @@ Searching by the last 4 digits of a phone number is the fastest way to look up y
 If no results are found, the app displays a message letting you know. Double-check the digits or name you entered, or try the other search mode. If you are a first-time visitor, ask a volunteer for help getting [added to the system](../../b1-admin/people/adding-people.md).
 :::
 
+## Printing Labels for a Phone Check-In
+
+Families who already checked in on their phone through [B1 Church self check-in](../../b1-church/checkin/self-checkin) can print their name tags at the kiosk without looking themselves up.
+
+1. On the lookup screen, tap the **Scan code** button (the QR code icon).
+2. Hold the QR code from your phone up to the camera. If the app asks for camera access, tap **Allow Camera**. The front camera is used by default; tap the flip button to switch.
+3. The kiosk finds the check-in and prints the labels, then returns to the lookup screen.
+
+Scanning only prints labels -- the attendance was already recorded when the family checked in on their phone. If the code doesn't match an active check-in, the kiosk shows a message and returns to the lookup screen.
+
 ## Next Step
 
 After selecting a person, you will [review your household](./household-review) and manage group assignments.

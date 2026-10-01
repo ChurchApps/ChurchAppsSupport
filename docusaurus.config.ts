@@ -93,6 +93,8 @@ const config: Config = {
 
           // Old hardcoded URLs
           { from: '/b1Admin/plans.html', to: '/docs/b1-admin/serving/plans' },
+          // Automations page removed from B1Admin; scheduled automation now lives in workflow triggers
+          { from: '/docs/b1-admin/serving/automations', to: '/docs/b1-admin/serving/workflows' },
           { from: '/b1/admin/youtube-channel-id.html', to: '/docs/b1-admin/sermons/live-streaming' },
           { from: '/b1/download', to: '/docs/b1-mobile/getting-started/installing' },
           { from: '/b1/portal/donations', to: '/docs/b1-church/giving/' },

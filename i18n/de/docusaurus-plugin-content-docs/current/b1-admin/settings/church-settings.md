@@ -1,92 +1,125 @@
 ---
-title: "Kircheneinstellungen"
+title: Kircheneinstellungen
 ---
 
-# Kircheneinstellungen
+# Church Settings
 
 <div class="article-intro">
 
-Die Seite Kircheneinstellungen ist der Ort, an dem du die grundlegenden Informationen, Kontaktdaten und das Branding deiner Kirche konfigurierst. Diese Angaben werden in allen ChurchApps-Tools verwendet, einschließlich deiner B1.church-Website und der B1-Mobile-App.
+The Church Settings page is where you configure your church's basic information, contact details, and branding. These details are used across all ChurchApps tools, including your B1.church website and the B1 Mobile app.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor du anfängst</h4>
+<h4>Before You Begin</h4>
 
-- Du benötigst die Berechtigung "Kircheneinstellungen bearbeiten". Siehe [Rollen & Berechtigungen](./roles-permissions.md), wenn du keinen Zugriff hast.
-- Halte die Adresse, Kontaktinformationen und das Logo deiner Kirche bereit
+- You need the "Edit Church Settings" permission. See [Roles & Permissions](./roles-permissions.md) if you do not have access.
+- Have your church's address, contact information, and logo ready
 
 </div>
 
-## Bearbeite deine Kircheninformationen
+## Editing Your Church Information
 
-1. Öffne in B1 Admin das **Abschnittmenü** in der oberen linken Ecke (der Abschnittsname mit dem kleinen Pfeil) und wähle **Einstellungen**.
-2. Öffne den Abschnitt **Kircheninformationen** und klicke auf sein Bearbeitungssymbol (Stift).
-3. Aktualisiere eines der folgenden Felder:
-   - **Kirchenname** – Der Name, der in allen ChurchApps-Produkten angezeigt wird.
-   - **Adresse** – Die physische Adresse deiner Kirche.
-   - **Kontaktinformationen** – Telefonnummer, E-Mail und andere Kontaktdaten.
-4. Klicke auf **Speichern**, um deine Änderungen zu übernehmen.
+1. In B1 Admin, open the **section menu** in the top-left corner (the section name with the small arrow) and choose **Settings**.
+2. Open the **Church Information** section and click its edit (pencil) icon.
+3. Update any of the following fields:
+   - **Church Name** -- The name displayed across all ChurchApps products.
+   - **Address** -- Your church's physical address.
+   - **Contact Information** -- Phone number, email, and other contact details.
+4. Click **Save** to apply your changes.
 
-## Einrichten deiner Subdomain
+## Setting Up Your Subdomain
 
-Deine Kirche erhält eine kostenlose Subdomain unter **denekirche.1.church**. Dies ist die Webadresse, unter der Mitglieder und Besucher auf deine Online-Präsenz zugreifen können.
+Your church gets a free subdomain at **yourchurch.1.church**. This is the web address where members and visitors can access your church's online presence.
 
-1. Suche auf der Seite Einstellungen das Feld **Subdomain**.
-2. Gib deine bevorzugte Subdomain ein (z. B. "gracechurch" für gracechurch.1.church).
-3. Speichere deine Änderungen.
+1. On the Settings page, locate the **Subdomain** field.
+2. Enter your preferred subdomain (for example, "gracechurch" for gracechurch.1.church).
+3. Save your changes.
 
 :::info
-Deine Subdomain muss eindeutig über alle ChurchApps-Kirchen hinweg sein. Wenn dein bevorzugter Name vergeben ist, versuche deine Stadt oder deinen Staat hinzuzufügen (z. B. "gracechurch-dallas").
+Your subdomain must be unique across all ChurchApps churches. If your preferred name is taken, try adding your city or state (for example, "gracechurch-dallas").
 :::
 
-Wenn du möchtest, dass Besucher deine Website unter deiner eigenen Domain erreichen (z. B. **www.gracechurch.org**), siehe [Benutzerdefinierte Domain](./custom-domain.md).
+If you want visitors to reach your site at your own domain (for example, **www.gracechurch.org**), see [Custom Domain](./custom-domain.md).
 
-## Branding konfigurieren
+## Configuring Branding
 
-Passe an, wie deine Kirche in allen ChurchApps-Tools angezeigt wird:
+Customize how your church appears across all ChurchApps tools:
 
-1. Lade dein **Kirchenlogo** hoch, indem du auf den Logobereich klickst und eine Bilddatei auswählst.
-2. Füge alle zusätzlichen **Kirchenbilder** hinzu, die auf deiner Website und [mobilen App](./mobile-app.md) verwendet werden.
+1. Upload your **church logo** by clicking the logo area and selecting an image file.
+2. Add any additional **church images** used on your website and [mobile app](./mobile-app.md).
 
 :::tip
-Um beste Ergebnisse zu erzielen, verwende ein Logo mit transparentem Hintergrund im PNG-Format. Dies stellt sicher, dass es sowohl auf hellen als auch auf dunklen Hintergründen großartig aussieht.
+For best results, use a logo with a transparent background in PNG format. This ensures it looks great on both light and dark backgrounds.
 :::
 
-## Erster Wochentag
+## First Day of Week
 
-Wähle, mit welchem Tag deine Kalender beginnen. Das Dropdown **Erster Wochentag** im Abschnitt Kircheninfo ist standardmäßig auf **Sonntag** eingestellt, kann aber auf jeden Tag eingestellt werden. Sobald geändert, wird es in Kalenderrastern in B1 Admin und im Mitgliederportal B1.church berücksichtigt – Gruppenkalender, kuratierte Kalender und der Ereignis-Editor zeigen alle Wochen beginnend mit dem Tag, den du auswählst.
+Choose which day your calendars start on. The **First Day of Week** dropdown on the Church Info section defaults to **Sunday**, but can be set to any day. Once changed, it's honored across calendar grids in B1 Admin and the B1.church member portal -- group calendars, curated calendars, and the event editor all lay out weeks starting on the day you choose.
 
-## Dateispeicherung
+## Region (Date Format)
 
-Standardmäßig verwenden Dateien, die du auf deine Website hochlädst (über [Dateien](../website/files.md)) und andere Inhaltsbereiche B1s kostenlosen gehosteten Speicher mit bis zu 100 MB. Wenn du mehr Speicherplatz benötigst, kannst du stattdessen deinen eigenen Cloud-Speicher verbinden – neue Uploads gehen dann direkt auf dein Konto ohne Plattformlimit.
+The **Region** setting controls how dates and times are written throughout B1. By default dates use the United States format (for example, "Sep 28, 2026" and "9/28/2026"). Churches outside the US can switch to their own format -- for example, choosing English (United Kingdom) shows "28 Sept 2026" and "28/09/2026" instead.
 
-1. Suche auf der Seite Einstellungen die Karte **Dateispeicherung** und klicke auf Bearbeiten.
-2. Wähle einen Anbieter: **Google Drive**, **Dropbox**, **OneDrive** oder einen **S3-kompatiblen Bucket** (AWS S3, Cloudflare R2, Backblaze B2, usw.).
-3. Für Google Drive, Dropbox oder OneDrive klicke auf **Verbinden** und melde dich an, um den Zugriff zu autorisieren. Für einen S3-kompatiblen Bucket gib deine Zugriffstaste, dein Geheimnis, deinen Bucketnamen und deine öffentliche URL-Basis ein.
-4. Klicke auf **Speichern**.
+1. On the Settings page, find the **Region** card and click to edit it.
+2. Choose your region from the **Region** dropdown. Each option shows a sample date so you can see exactly how dates will look.
+3. Click **Save**.
+
+The Region card then shows your selected region and a sample of the **Date format**.
+
+Your region applies to dates and times across B1 Admin and on your B1.church website and member portal, including sermons, blog posts, group calendars, and serving plans, so members see dates in the same format your staff do.
+
+## Texting
+
+Connect a texting provider to send SMS messages to a person or a whole group from B1 Admin. Texts are sent through your own account with the provider, so their pricing and limits apply.
+
+1. On the Settings page, find the **Texting** card and click to edit it.
+2. Choose a **Provider**:
+   - **Clearstream** -- enter an **API Key**. Create one in your Clearstream Account Settings under API Keys.
+   - **Text In Church** -- enter an **API Key**. Ask Text In Church Support for developer API access first, then create a key in your Account Settings > Developer API section.
+   - **Nalo Solutions** (Ghana) -- enter the auth key from your Nalo Solutions account as the **API Key**, and a **Sender ID** (up to 11 characters) that Nalo has approved for you.
+3. Click **Save**.
+
+To stop texting, set **Provider** to **None** and save. This removes the saved provider.
+
+Once a provider is connected, staff with permission to send texts see a text icon in the header of a group (**Text this group**) and of a person with a mobile phone (**Send text message**). Type your message and click **Send**. The dialog counts characters and SMS segments. For a group, it shows how many members will get the text before you send:
+
+- Members with no mobile phone on file are skipped.
+- Members who chose **Hide me from the member directory** are counted as opted out and skipped.
+- Family members who share a mobile number get the text only once.
+
+## File Storage
+
+By default, files you upload to your website (through [Files](../website/files.md)) and other content areas use B1's free hosted storage, up to 100MB. If you need more room, you can connect your own cloud storage instead -- new uploads then go straight to your account with no platform limit.
+
+1. On the Settings page, find the **File Storage** card and click to edit it.
+2. Choose a provider: **Google Drive**, **Dropbox**, **OneDrive**, or an **S3-compatible bucket** (AWS S3, Cloudflare R2, Backblaze B2, etc.).
+3. For Google Drive, Dropbox, or OneDrive, click **Connect** and sign in to authorize access. For an S3-compatible bucket, enter your access key, secret, bucket name, and public URL base.
+4. Click **Save**.
 
 :::info
-Dies betrifft nur neue Uploads auf deine Website-Dateien und ähnliche Inhaltsbereiche. Galeriebilder, Miniaturansichten, Logos und Personenfotos bleiben immer im Standardspeicher von B1.
+This only affects new uploads to your website Files and similar content areas. Gallery images, thumbnails, logos, and person photos always stay on B1's default storage.
 :::
 
-## Klassenstufenförderung
+## Grade Promotion
 
-Wenn du **Klassenstufe** bei Kindern und Schülern verfolgst, kann B1 automatisch jeden um eine Klassenstufe an einem von dir gewählten Datum erhöhen (z. B. 1. August) statt dich jeden Profil von Hand bearbeiten zu lassen.
+If you track **Grade** on children and students, B1 can automatically bump everyone up a grade on a date you choose (for example, August 1st) rather than requiring you to edit each profile by hand.
 
-1. Suche auf der Seite Einstellungen die Option **Klassenstufenförderung**.
-2. Schalte sie ein und wähle den **Monat und Tag**, um die Klassenstufen jedes Jahr zu fördern.
-3. Speichere deine Änderungen.
+1. On the Settings page, find the **Grade Promotion** option.
+2. Turn the switch on (it shows **Enabled**) and choose the **Month** and **Day** to promote grades each year. On that date, everyone with a grade moves up one grade, and 12th graders become **Graduated**.
+3. Save your changes.
 
-## Import und Export
+To stop automatic promotion, turn the switch off so it shows **Disabled** and save. The promotion date is removed and grades will no longer change on their own.
 
-Die Schaltfläche **Import/Export** in der Kopfzeile der Einstellungen öffnet ein dediziertes Werkzeug in einem neuen Browser-Fenster. Nutze dies für:
+## Import and Export
 
-- Import von Mitgliederdaten aus einem anderen Kirchenverwaltungssystem.
-- Export deiner ChurchApps-Daten zur Sicherung oder Migration.
+The **Import/Export** button in the Settings header opens a dedicated tool in a new browser window. Use this to:
 
-Dies ist besonders hilfreich, wenn du deine Kirche zum ersten Mal einrichtest und bestehende Datensätze in ChurchApps übertragen musst.
+- Import member data from another church management system.
+- Export your ChurchApps data for backup or migration purposes.
+
+This is especially helpful when you are first setting up your church and need to transfer existing records into ChurchApps.
 
 :::warning
-Beim Importieren von Daten sicherst du immer zunächst deine bestehenden Datensätze. Import-Operationen fügen Daten zu deinem System hinzu und können doppelte Einträge erstellen, wenn sie mehrmals ausgeführt werden.
+When importing data, always back up your existing records first. Import operations add data to your system and may create duplicate entries if run multiple times.
 :::

@@ -1,6 +1,8 @@
 ---
-title: # Anwesenheitserfassung einrichten
+title: "Anwesenheitserfassung einrichten"
 ---
+# Anwesenheitserfassung einrichten
+
 <div class="article-intro">
 
 Bevor Sie Anwesenheiten erfassen können, müssen Sie B1 Admin mitteilen, welche physischen Standorte Ihre Gemeinde hat, wann Gottesdienste stattfinden und welche Gruppen sich zu welchem Gottesdienst treffen. Diese einmalige Einrichtung schafft die Struktur, auf der die gesamte Anwesenheitserfassung und -auswertung in Ihrer Gemeinde basiert.

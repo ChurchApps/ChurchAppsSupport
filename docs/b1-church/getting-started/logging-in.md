@@ -6,7 +6,7 @@ title: "Logging In"
 
 <div class="article-intro">
 
-Logging in to B1.church gives you access to the member portal where you can view your timeline, manage groups, give online, and use all of the tools your church has set up. This article covers how to sign in, navigate your user menu, and log out.
+Logging in to B1.church gives you access to the member portal where you can see what is coming up for you, manage groups, give online, and use all of the tools your church has set up. This article covers how to sign in, navigate your user menu, and log out.
 
 </div>
 
@@ -27,9 +27,13 @@ Logging in to B1.church gives you access to the member portal where you can view
 
 After signing in, you will be taken back to the page you were on before you clicked login. If you navigated directly to a member portal page while logged out, you will be returned to that page automatically after signing in.
 
+## Staying Signed In
+
+You stay signed in on the same browser or installed app until you log out, even if you do not visit for a while -- your session is kept for up to about 30 days of inactivity. Signing in once also keeps you signed in when you move between your church's website and the member portal (`/mobile`), so you do not have to log in again in each place.
+
 ## Accessing the Member Portal
 
-Once logged in, you can access the member portal by clicking on your **name** in the top-right corner of the page and selecting **Member Portal** from the menu. The member portal is where all of your personal church tools live, including your [timeline](../community/timeline.md), [groups](../groups/), [giving](../giving/), and more.
+Once logged in, you can access the member portal by clicking on your **name** in the top-right corner of the page and selecting **Member Portal** from the menu. The member portal is where all of your personal church tools live, including your [Home dashboard](./navigating.md), [Me page](./me-page.md), [groups](../groups/), [giving](../giving/), and more.
 
 ## Your User Menu
 

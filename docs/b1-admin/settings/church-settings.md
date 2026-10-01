@@ -57,6 +57,37 @@ For best results, use a logo with a transparent background in PNG format. This e
 
 Choose which day your calendars start on. The **First Day of Week** dropdown on the Church Info section defaults to **Sunday**, but can be set to any day. Once changed, it's honored across calendar grids in B1 Admin and the B1.church member portal -- group calendars, curated calendars, and the event editor all lay out weeks starting on the day you choose.
 
+## Region (Date Format)
+
+The **Region** setting controls how dates and times are written throughout B1. By default dates use the United States format (for example, "Sep 28, 2026" and "9/28/2026"). Churches outside the US can switch to their own format -- for example, choosing English (United Kingdom) shows "28 Sept 2026" and "28/09/2026" instead.
+
+1. On the Settings page, find the **Region** card and click to edit it.
+2. Choose your region from the **Region** dropdown. Each option shows a sample date so you can see exactly how dates will look.
+3. Click **Save**.
+
+The Region card then shows your selected region and a sample of the **Date format**.
+
+Your region applies to dates and times across B1 Admin and on your B1.church website and member portal, including sermons, blog posts, group calendars, and serving plans, so members see dates in the same format your staff do.
+
+## Texting
+
+Connect a texting provider to send SMS messages to a person or a whole group from B1 Admin. Texts are sent through your own account with the provider, so their pricing and limits apply.
+
+1. On the Settings page, find the **Texting** card and click to edit it.
+2. Choose a **Provider**:
+   - **Clearstream** -- enter an **API Key**. Create one in your Clearstream Account Settings under API Keys.
+   - **Text In Church** -- enter an **API Key**. Ask Text In Church Support for developer API access first, then create a key in your Account Settings > Developer API section.
+   - **Nalo Solutions** (Ghana) -- enter the auth key from your Nalo Solutions account as the **API Key**, and a **Sender ID** (up to 11 characters) that Nalo has approved for you.
+3. Click **Save**.
+
+To stop texting, set **Provider** to **None** and save. This removes the saved provider.
+
+Once a provider is connected, staff with permission to send texts see a text icon in the header of a group (**Text this group**) and of a person with a mobile phone (**Send text message**). Type your message and click **Send**. The dialog counts characters and SMS segments. For a group, it shows how many members will get the text before you send:
+
+- Members with no mobile phone on file are skipped.
+- Members who chose **Hide me from the member directory** are counted as opted out and skipped.
+- Family members who share a mobile number get the text only once.
+
 ## File Storage
 
 By default, files you upload to your website (through [Files](../website/files.md)) and other content areas use B1's free hosted storage, up to 100MB. If you need more room, you can connect your own cloud storage instead -- new uploads then go straight to your account with no platform limit.
@@ -75,8 +106,10 @@ This only affects new uploads to your website Files and similar content areas. G
 If you track **Grade** on children and students, B1 can automatically bump everyone up a grade on a date you choose (for example, August 1st) rather than requiring you to edit each profile by hand.
 
 1. On the Settings page, find the **Grade Promotion** option.
-2. Turn it on and choose the **month and day** to promote grades each year.
+2. Turn the switch on (it shows **Enabled**) and choose the **Month** and **Day** to promote grades each year. On that date, everyone with a grade moves up one grade, and 12th graders become **Graduated**.
 3. Save your changes.
+
+To stop automatic promotion, turn the switch off so it shows **Disabled** and save. The promotion date is removed and grades will no longer change on their own.
 
 ## Import and Export
 

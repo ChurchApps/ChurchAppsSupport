@@ -1,69 +1,70 @@
 ---
-title: "Auschecken & Kindersicherheit"
+title: Checking Out & Child Safety
 ---
 
-# Auschecken & Kindersicherheit
+# Checking Out & Child Safety
 
 <div class="article-intro">
 
-Der Checkout schließt die Schleife auf das Kinder-Check-in: Ein Eltern stellt den Sicherheitscode auf ihrem Abholschein vor, der Kiosk überprüft, wer abholt, und die Kinder werden ausgecheckt. Bemannte Stationen erhalten auch Sicherheitswerkzeuge — Überprüfung der vertrauenswürdigen Abholung, Page-a-Parent-Texte, Sicherheits-Label-Nachdrucke und ein Notfall-Broadcast.
+Check-out closes the loop on child check-in: a parent presents the security code from their pickup label, the kiosk verifies who is picking up, and the children are checked out. Manned stations also get safety tools — trusted-pickup verification, page-a-parent texts, security-label reprints, and an emergency broadcast.
 
 </div>
 
 <div class="prereqs">
-<h4>Vor dem Start</h4>
+<h4>Before You Begin</h4>
 
-- Der Checkout ist auf Stationen verfügbar, die in den Kiosk-Admin-Einstellungen auf **manned**-Modus eingestellt sind
-- Kinder müssen mit einem gedruckten Abholschein [eingecheckt werden](./completing-checkin), das den Sicherheitscode trägt
-- Paging und Notfall-Broadcasts erfordern, dass Ihre Kirche einen Texting-Anbieter in B1 Admin verbunden hat
+- Check-out is available on stations set to **manned** mode in the kiosk admin settings
+- Children must have been [checked in](./completing-checkin) with a printed pickup label carrying the security code
+- Paging and emergency broadcasts require your church to have a texting provider connected in B1 Admin
 
 </div>
 
-## Starten eines Checkouts
+## Starting a Check-Out
 
-1. Tippen Sie auf einer bemannten Station auf dem Suchbildschirm auf **Check Out**.
-2. Geben Sie den 4-stelligen **Sicherheitscode** von dem Abholschein der Familie ein. Sie können ihn eingeben, die On-Screen-Tastatur verwenden oder den Label-Barcode mit einem USB- oder Bluetooth-Scanner scannen — der Code wird automatisch eingereicht, sobald alle 4 Zeichen eingegeben sind.
-3. Der Kiosk zeigt die Kinder an, die unter diesem Code eingecheckt sind.
+1. On a manned station, tap **Check Out** on the lookup screen.
+2. Enter the 4-character **security code** from the family's pickup label. You can type it, use the on-screen keypad, or scan the label's barcode with a USB or Bluetooth scanner — the code submits automatically once all 4 characters are entered.
+   - No scanner? Tap **Scan** below the code field to use the tablet's camera instead. Hold the pickup label's QR code or barcode up to the camera in the **Scan pickup code** window and the code is entered for you. The back camera is used by default; tap the flip button to switch cameras, or tap **Cancel** to go back to typing.
+3. The kiosk shows the children checked in under that code.
 
-## Überprüfung, wer abholt
+## Verifying Who Is Picking Up
 
-Der Check-out-Bildschirm fragt, wer die Kinder abholt:
+The check-out screen asks who is picking the children up:
 
-- **Trusted pickup people** für den Haushalt werden als anklickbare Karten mit ihrem Foto und ihrer Beziehung angezeigt — tippen Sie auf die Person, die vor Ihnen steht.
-- **Household adults** werden auch in einem Fototisch angezeigt.
-- **Other** ermöglicht es Ihnen, einen Namen für jemanden einzugeben, der nicht in der Liste steht.
+- **Trusted pickup people** for the household appear as tappable cards with their photo and relationship — tap the person standing in front of you.
+- **Household adults** also appear in a photo grid.
+- **Other** lets you type a name for someone not on the list.
 
-Wenn ein eingegebener Name mit jemandem übereinstimmt, der als **Not Authorized** für diesen Haushalt markiert ist, blockiert der Kiosk den Checkout mit einer Warnung. Ein Mitarbeiter kann **Override** wählen, um trotzdem fortzufahren — das Override wird im Anwesenheitsdatensatz mit dem Namen der Person aufgezeichnet.
+If a typed name matches someone marked **Not Authorized** for that household, the kiosk blocks the check-out with a warning. A staff member can choose **Override** to proceed anyway — the override is recorded on the attendance record with the person's name.
 
-Sobald der Abhol-Person bestätigt ist, tippen Sie auf Checkout. Der Name der Abhol-Person wird mit dem Anwesenheitsdatensatz gespeichert.
+Once the picker is confirmed, tap check out. The pickup person's name is stored with the attendance record.
 
 :::info
-Vertrauenswürdige und nicht autorisierte Abhol-Personen werden von Kirchenmitarbeitern auf der Seite jeder Person in B1 Admin verwaltet — siehe [Check-In Safety](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+Trusted and not-authorized pickup people are managed by church staff on each person's page in B1 Admin — see [Check-In Safety](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
 :::
 
-## Paging eines Eltern
+## Paging a Parent
 
-Brauchen Sie während des Services einen Eltern — eine Windelwechsel, ein weinendes Kind? Auf dem Checkout-Bildschirm auf einer bemannten Station können Mitarbeiter eine **page** senden: eine Textnachricht an die Eltern oder Erziehungsberechtigten des Kindes über den Texting-Anbieter der Kirche. Eltern, die sich von Texten abgemeldet haben oder keine Mobilnummer haben, werden übersprungen, und der Kiosk zeigt an, wie viele Nachrichten gesendet wurden.
+Need a parent during the service — a diaper change, a crying child? From the check-out screen on a manned station, staff can send a **page**: a text message to the child's parents or guardians through the church's texting provider. Parents who opted out of texts or have no mobile number are skipped, and the kiosk shows how many messages were sent.
 
-## Nachdrucken von Labels
+## Reprinting Labels
 
-Wenn ein Namensschild oder Abholschein verloren oder beschädigt geht, können Mitarbeiter auf einer bemannten Station die Labels der Familie vom Checkout-Bildschirm nach Eingabe des Sicherheitscodes **erneut drucken**. Der Nachdruck verwendet die gleichen Drucker und Label-Vorlagen wie der ursprüngliche Check-in.
+If a nametag or pickup label is lost or damaged, staff on a manned station can **reprint** the family's labels from the check-out screen after entering the security code. The reprint uses the same printer and label templates as the original check-in.
 
-## Notfall-Broadcast
+## Emergency Broadcast
 
-Im Notfall können Mitarbeiter die Erziehungsberechtigten von **jedem eingecheckten Kind** für den aktuellen Service auf einmal per SMS kontaktieren:
+In an emergency, staff can text the guardians of **every checked-in child** for the current service at once:
 
-1. Öffnen Sie die **Admin-Einstellungen** des Kiosks (7 schnelle Taps auf das Header-Logo, plus die PIN, falls eine eingestellt ist).
-2. Tippen Sie auf **Emergency broadcast**.
-3. Geben Sie die Nachricht ein, geben Sie dann **EMERGENCY** im Bestätigungsfeld ein — die Schaltfläche **Send broadcast** bleibt deaktiviert, bis Sie dies tun.
-4. Der Kiosk zeigt an, wie viele Telefone die Nachricht erhalten haben und wie viele Personen übersprungen wurden (abgemeldet oder keine Mobilnummer).
+1. Open the kiosk **admin settings** (7 rapid taps on the header logo, plus the PIN if one is set).
+2. Tap **Emergency broadcast**.
+3. Enter the message, then type **EMERGENCY** in the confirmation field — the **Send broadcast** button stays disabled until you do.
+4. The kiosk reports how many phones received the message and how many people were skipped (opted out or no mobile number).
 
 :::warning
-Der Broadcast geht an jeden eingecheckten Haushalt für den ausgewählten Service. Verwenden Sie ihn für echte Notfälle — Evakuierungen, Sperrungen, schweres Wetter.
+The broadcast goes to every checked-in household for the selected service. Use it for genuine emergencies — evacuations, lockdowns, severe weather.
 :::
 
-## Verwandte Artikel
+## Related Articles
 
-- [Completing Check-In](./completing-checkin) — wo Sicherheitscodes und Abholscheine herkommen
-- [Check-In Safety](../../b1-admin/attendance/checkin-safety) — konfigurieren Sie Kapazitäten, Verhältnisse, Abhol-Personen und das Texting-Anbieter-Anforderung
-- [Printer Setup](../getting-started/printer-setup) — Label-Drucker-Konfiguration
+- [Completing Check-In](./completing-checkin) — where security codes and pickup labels come from
+- [Check-In Safety](../../b1-admin/attendance/checkin-safety) — configuring capacities, ratios, pickup people, and the texting provider requirement
+- [Printer Setup](../getting-started/printer-setup) — label printer configuration

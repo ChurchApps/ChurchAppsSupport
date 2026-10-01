@@ -1,68 +1,82 @@
 ---
-title: "Einreichungen verwalten"
+title: Einreichungen verwalten
 ---
 
-# Einreichungen verwalten
+# Managing Submissions
 
 <div class="article-intro">
 
-Sobald dein Formular online ist, werden Einreichungen ankommen. Die Registerkarte Einreichungen ermöglicht es dir, alle Antworten zu überprüfen, zu verfolgen, wer eingereicht hat, und die Daten zu nutzen, um rechtzeitig mit deiner Gemeinde zu folgen.
+Once your form is live, submissions will start coming in. The **Form Submissions** tab lets you review every response, track who has submitted, and use the data to follow up with your congregation in a timely manner.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor du beginnst</h4>
+<h4>Before You Begin</h4>
 
-- [Erstelle ein Formular](./creating-forms.md) mit mindestens einer Frage
-- Teile das Formular über seine öffentliche URL oder bette es auf deiner [Website](../website/managing-pages.md) ein
+- [Create a form](./creating-forms.md) with at least one question
+- Share the form via its public URL or embed it on your [website](../website/managing-pages.md)
 
 </div>
 
-## Einreichungen anzeigen
+## Viewing Submissions
 
-1. Öffne **Personen** aus dem Menü „Bereich", klicke dann auf **Formulare** in der Navigationsleiste.
-2. Klicke auf das Formular, das du überprüfen möchtest.
-3. Gehe zur Registerkarte **Einreichungen**.
+1. Open **People** from the section menu, then click **Forms** in the navigation bar.
+2. Click on the form you want to review.
+3. Go to the **Form Submissions** tab.
 
-Du siehst eine Liste aller Antworten für dieses Formular. Jede Einreichung zeigt die Informationen des Befragten und das Datum, an dem es eingereicht wurde.
+You will see a list of all responses received for that form. Each submission shows the respondent's information and the date it was submitted, followed by one column for every question on the form. If your form has many questions, scroll the table sideways to see the rest of the columns.
 
-## Einzelne Einreichungen überprüfen
+## Reviewing Individual Submissions
 
-Klicke auf eine beliebige Einreichung, um die vollständigen Details anzuzeigen. Du siehst alle Antworten, die die Person für jede Frage im Formular gegeben hat.
+Click on any submission to view the full details. You will see all the answers the person provided for each question on the form.
 
-Klicke auf das **Druckersymbol** neben der Einreichung, um die ausgefüllten Antworten dieser Person zu drucken -- nützlich für eine Papierkopie oder eine Genehmigung, die du griffbereit halten musst. Dies ist separate vom [Drucken eines leeren Formulars](./creating-forms.md#printing-a-blank-form); es druckt die bereits eingereichten Antworten einer Person, nicht eine leere Kopie. Dieses Druckersymbol erscheint überall dort, wo eine Einreichung angezeigt wird, einschließlich auf dem [Profil einer Person](../people/adding-people.md#working-with-forms).
+Click the **print icon** next to the submission to print that person's filled-in answers -- useful for a paper file or a signed release you need to keep on hand. This is separate from [printing a blank form](./creating-forms.md#printing-a-blank-form); it prints one person's already-submitted answers, not an empty copy. The same print icon appears wherever a submission is shown, including on a [person's profile](../people/adding-people.md#working-with-forms).
 
-## Wie Einreichungen gesammelt werden
+## Changing the Person on a Submission
 
-Einreichungen können über mehrere Kanäle kommen:
+If a submission is linked to the wrong person — for example, two family members share an email address — you can move it to the right person or unlink it.
 
-- **Öffentliche URL** -- Wenn dein Formular eine öffentliche URL hat (eigenständige Formulare), kann jeder mit dem Link eine Antwort einreichen. Teile die URL per E-Mail, in sozialen Medien oder über SMS.
-- **Auf deiner Website eingebettet** -- Formulare, die auf deiner B1-Website eingebettet sind, sammeln Einreichungen automatisch, wenn Besucher sie ausfüllen.
-- **Interne Nutzung** -- Personal und Freiwillige können Formulare auch im Namen anderer direkt in B1 Admin einreichen.
+1. On the **Form Submissions** tab, click the **Change person** icon (two arrows) next to the person's name. The same icon appears next to a submission on a [person's profile](../people/adding-people.md#working-with-forms).
+2. In the **Change person** dialog, search for the correct person and click **Move to this person**.
+3. Or click **Unlink (Anonymous)** to detach the submission from any person. It then shows as **Anonymous**.
 
-:::tip
-Überprüfe die Registerkarte **Einreichungen** regelmäßig auf Formulare wie Besucherkarten oder Gebetsanfragen, damit du rechtzeitig folgen kannst.
-:::
-
-## Einreichungsdaten verwenden
-
-Die über Formulare gesammelten Daten können dir helfen:
-
-- Veranstaltungsregistrierungen zu verfolgen und entsprechend zu planen
-- Mit Besuchern oder neuen Mitgliedern zu folgen
-- Umfragefeedback für die Ministeriationsplanung zu sammeln
-- Zahlungen für Veranstaltungen oder Programme zu verarbeiten
+Only the link changes. The answers stay the same, and no follow-up emails are sent again.
 
 :::info
-Formularmitglieder mit Rollen **Admin** oder **Nur anzeigen** können auf die Registerkarte Einreichungen zugreifen. Stelle sicher, dass die richtigen Personen in deinem Team auf die Formulare zugreifen, die sie brauchen, indem du Rollen in der Registerkarte **Mitglieder** verwaltest.
+On forms set to create a person record, when someone is signed in to your church's site while submitting, the submission is linked to their own record, even if another person in your database shares their email address. When you [merge two person records](../people/adding-people.md), the removed person's form submissions move to the person you keep.
+:::
+
+## How Submissions Are Collected
+
+Submissions can come in through several channels:
+
+- **Public URL** -- If your form has a public URL (Stand Alone forms), anyone with the link can submit a response. Share the URL via email, social media, or text messages.
+- **Embedded on your website** -- Forms embedded on your B1 website collect submissions automatically when visitors fill them out.
+- **Internal use** -- Staff and volunteers can also submit forms on behalf of others directly within B1 Admin.
+
+:::tip
+Check the **Form Submissions** tab regularly for forms like visitor cards or prayer requests, so you can follow up promptly.
+:::
+
+## Using Submission Data
+
+The data collected through forms can help you:
+
+- Track event registrations and plan accordingly
+- Follow up with visitors or new members
+- Collect survey feedback for ministry planning
+- Process payments for events or programs
+
+:::info
+Form members with **Admin** or **View Only** roles can access the **Form Submissions** tab. Make sure the right people on your team have access to the forms they need by managing roles in the **Form Members** tab.
 :::
 
 :::tip
-Wenn ein **eigenständiges** Formular zum Erstellen eines Personendatensatzes eingestellt ist, werden alle Einreichungen, die mit einer bestehenden Person übereinstimmen, auch auf der Registerkarte **Formulare** dieser Person im Bereich Personen angezeigt -- nicht nur bei Formularen vom Typ Personen.
+If a **Stand Alone** form is set to create a person record, any submissions matched to an existing person also show up on that person's own **Forms** tab in the People section — not just People-type forms.
 :::
 
-## Nächste Schritte
+## Next Steps
 
-- Erfahre, wie du Formulare in [Formulare erstellen](./creating-forms.md) erstellst und anpasst
-- Füge Personen aus Formulareinreichungen zu deinem [Personenverzeichnis](../people/adding-people.md) hinzu, um eine laufende Nachverfolgung zu ermöglichen
-- [Einreicher automatisch zu einer Gruppe hinzufügen](./creating-forms.md#automatically-adding-submitters-to-a-group), damit ein eigenständiges Anmeldeformular seine eigene Rosterliste aufbaut
+- Learn how to build and customize forms in [Creating Forms](./creating-forms.md)
+- Add people from form submissions to your [people directory](../people/adding-people.md) for ongoing follow-up
+- [Automatically add submitters to a group](./creating-forms.md#automatically-adding-submitters-to-a-group) so a stand-alone sign-up form builds its own roster

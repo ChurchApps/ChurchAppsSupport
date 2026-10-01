@@ -26,11 +26,13 @@ If you are not logged in, you will see the following:
 - **Description** -- The full description of the group explaining its purpose and what to expect.
 - **Leaders** -- Avatars and names of the group's leaders. You can click a leader's name to view their profile.
 - **Calendar events** -- Up to three upcoming events for the group are displayed, each showing the date and event title. If the group has no upcoming events, this section is hidden.
-- **Contact form** -- A form that lets you send a message directly to the group's leaders. Fill in your **first name**, **last name**, **email**, **phone number**, and **message**, then click **Submit**. If there are multiple leaders, you can choose which one to contact from a dropdown.
+- **Sign in to join** -- A button at the bottom of the page. Sign in (or create an account) to join the group or request to join. After you sign in, you are brought back to the group and taken straight to the join step.
 
 ## Member View (Logged In)
 
-When you are logged in, the group detail page shows the hero section along with a sidebar of tabs. If your group is associated with a Lessons.church plan type and this week's lesson has parent take-home content, a **This week's lesson** card appears between the hero and the tabs (members only).
+If you are logged in but not a member of the group, you see the group's hero section and description along with the join option for the group (see [Joining a Group](#joining-a-group) below). The tabs described next appear once you are a member.
+
+When you are a member, the group detail page shows the hero section along with a sidebar of tabs. If your group is associated with a Lessons.church plan type and this week's lesson has parent take-home content, a **This week's lesson** card appears between the hero and the tabs (members only).
 
 The available tabs are:
 
@@ -59,8 +61,12 @@ When you are logged in and not yet a member, a join button appears on the group 
 - **Join Group** -- The group is open. Clicking this immediately adds you as a member.
 - **Request to Join** -- The group requires approval. Clicking this opens a dialog where you can include an optional message to the group leader, then submit your request. See [Requesting to Join a Group](./join-requests.md) for details on managing your requests.
 
+After you send a request, the button is replaced by a **Request Pending** notice: "Your request to join has been sent. A group leader will review it."
+
+If you were not logged in and clicked **Sign in to join**, you return to the group after signing in and the join step starts automatically: an open group adds you right away, and a group that requires approval opens the **Request to Join** dialog.
+
 If neither button appears, the group is closed and members must be added manually by a leader or administrator.
 
 :::info
-If a group is closed and you want to join, use the contact form on the visitor view to reach out to the group's leaders.
+You must be signed in to join or request to join a group. If a group is closed and you want to join, contact your church office or one of the group's leaders.
 :::

@@ -1,61 +1,63 @@
 ---
-title: "Selbst-Check-In"
+title: Selbstanmeldung
 ---
 
-# Selbst-Check-In
+# Self Check-In
 
 <div class="article-intro">
 
-Der Selbst-Check-In-Prozess ermöglicht es dir, die Anwesenheit für dich und deinen Haushalt in nur wenigen Schritten zu erfassen. Dies ist eine schnelle Alternative zur Nutzung eines physischen Kiosks in der Kirche.
+The self check-in process lets you record attendance for yourself and your household in just a few steps. It is a quick alternative to using a physical kiosk at the church.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor du anfängst</h4>
+<h4>Before You Begin</h4>
 
-- Du musst bei deinem B1.church-Konto [angemeldet](../getting-started/logging-in.md) sein.
-- Deine Haushaltsmitglieder müssen mit deinem Konto verlinkt sein. Wenn ein Familienmitglied fehlt, bitte deinen Kirchenadministrator, es zu deinem Haushalt hinzuzufügen.
+- You must be [logged in](../getting-started/logging-in.md) to your B1.church account.
+- Your household members must be linked to your account. If a family member is missing, ask your church administrator to add them to your household.
 
 </div>
 
-## Der Check-In-Fluss
+## The Check-In Flow
 
-Das Check-In folgt einem einfachen dreistufigen Prozess. Navigiere zur Registerkarte **Check-In** in der [Seitenleiste](../getting-started/navigating.md), um zu beginnen.
+Check-in follows a simple three-step process. Navigate to the **Check-In** tab in the [sidebar](../getting-started/navigating.md) to get started.
 
-### Schritt 1: Wähle einen Dienst
+### Step 1: Select a Service
 
-Wenn du die Check-In-Seite öffnest, siehst du eine Liste verfügbarer Dienste (z. B. "Sonntagmorgen" oder "Mittwochabend"). Jede Dienst-Karte zeigt den Dienstnamen und den Standort, wenn deine Kirche mehrere Orte hat.
+When you open the check-in page, you will see a list of available services (for example, "Sunday Morning" or "Wednesday Evening"). Each service card shows the service name and campus if your church has multiple locations.
 
-Klicke auf einen Dienst, um ihn auszuwählen und zum nächsten Schritt zu gehen.
+Click on a service to select it and move to the next step.
 
-### Schritt 2: Wähle Haushaltsmitglieder und Gruppen
+### Step 2: Select Household Members and Groups
 
-Nachdem du einen Dienst ausgewählt hast, siehst du eine Liste deiner Haushaltsmitglieder. Für jeden Anwesenden:
+After selecting a service, you will see a list of your household members. For each person attending:
 
-1. Tippe auf ein Haushaltsmitglied, um seinen Eintrag zu erweitern.
-2. Du siehst die verfügbaren **Dienstzeiten** für den von dir ausgewählten Dienst.
-3. Klicke auf **Gruppe auswählen** neben einer Dienstzeit, um auszuwählen, in welche Gruppe die Person eingecheckt werden soll (z. B. "Hauptgottesdienst", "Kinderzimmer 1" oder "Jugendgruppe").
-4. Wiederhole das für jedes Haushaltsmitglied, das anwesend ist.
+1. Tap a household member to expand their entry.
+2. You will see the available **service times** for the service you selected.
+3. Click **Select Group** next to a service time to choose which group the person should be checked into (such as "Main Worship," "Kids Room 1," or "Youth Group").
+4. Repeat for each household member who is attending.
 
-Du musst nicht jedes Haushaltsmitglied anmelden – erweitere nur und weise Gruppen für die Personen zu, die tatsächlich anwesend sind.
+You do not need to check in every household member -- only expand and assign groups for the people who are actually present.
 
-### Schritt 3: Bestätigung
+### Step 3: Confirmation
 
-Nachdem du Gruppen für jeden ausgewählt hast, der anwesend ist, klicke auf die Schaltfläche **Check-In abschließen** am unteren Ende der Seite.
+Once you have selected groups for everyone who is attending, click the **Complete Check-in** button at the bottom of the page.
 
-Du siehst eine Bestätigung, dass dein Check-In abgeschlossen ist und deine Anwesenheit gespeichert wurde. Nach einem Moment kehrt die Seite zur Serviceliste zurück, bereit für das nächste Check-In.
+You will see a confirmation that your check-in is complete and your attendance has been saved. After a moment the page returns to the service list, ready for the next check-in.
 
-Wenn deine Kirche Namensschilder an einer Check-In-Station druckt, siehst du stattdessen **Du bist angemeldet!** mit einem QR-Code und einem Sicherheitscode. Zeige den Code an einer Check-In-Station, um deine Namensschilder zu drucken, und tippe dann auf **Fertig**.
+If your church prints name tags at a check-in station, you instead see **You're checked in!** with a QR code and a security code. Show the code at a check-in station to print your name tags, then tap **Done**. At a B1 Checkin kiosk, tap **Scan code** and hold the QR code up to the camera -- see [Printing Labels for a Phone Check-In](../../b1-checkin/check-in/looking-up-members#printing-labels-for-a-phone-check-in).
+
+If your household is already checked in for the service you select, a **Show check-in code** button appears above your household list. Tap it to bring the QR code and security code back up -- for example, if you closed the page before reaching a check-in station.
 
 :::tip
-Wenn du eine Gruppenwahl vor Abschluss des Check-In ändern musst, tippe auf die Schaltfläche **Ändern** neben einer Dienstzeit, um eine andere Gruppe auszuwählen.
+If you need to change a group selection before completing check-in, tap the **Change** button next to any service time to pick a different group.
 :::
 
-## Dinge, die du wissen solltest
+## Things to Know
 
-- Du kannst nur Haushaltsmitglieder anmelden, die mit deinem Konto verlinkt sind. Wenn ein Familienmitglied fehlt, bitte deinen Kirchenadministrator, es zu deinem Haushalt hinzuzufügen.
-- Wenn auf der Check-In-Seite keine Dienste erscheinen, hat deine Kirche möglicherweise derzeit keine für Check-In konfigurierten Dienste.
+- You can only check in household members that are linked to your account. If a family member is missing, ask your church administrator to add them to your household.
+- If no services appear on the check-in page, your church may not have any services configured for check-in at this time.
 
 :::warning
-Das Check-In ist nur verfügbar, wenn deine Kirche aktive, für Check-In konfigurierte Dienste hat. Wenn du keine Dienste aufgelistet siehst, überprüfe mit deinem Kirchenbüro, ob das Selbst-Check-In aktiviert ist.
+Check-in is only available when your church has active services configured. If you do not see any services listed, check with your church office to confirm whether self check-in is enabled.
 :::

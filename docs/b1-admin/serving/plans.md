@@ -46,7 +46,7 @@ When you open a plan, you will see two tabs:
 ## Assigning Team Members
 
 1. Open a plan and go to the **Assignments** tab.
-2. Click on **add Position** to expand it. Fill out the information in the add a position form. For category name add whatever category you like.
+2. Click on **add Position** to expand it. Fill out the information in the add a position form. For category name add whatever category you like. To let anyone in your church fill the position (not just members of one team), leave **Volunteer Group** set to **None**.
 3. Click on **People Needed** and choose volunteers to fill that position. If the position has a **Volunteer Group**, you choose from that group's members. If its Volunteer Group is set to **None**, you can search for anyone in your church instead.
 4. Add members from your team roster by clicking **Add**.
 5. Assigned members will appear under their team with their assignment status.

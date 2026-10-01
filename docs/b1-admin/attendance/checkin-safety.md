@@ -40,7 +40,7 @@ Volunteers count toward these rules when they check in with the **Volunteer** ty
 
 How strictly ratios are enforced is a church-wide setting:
 
-1. In B1 Admin, go to **Settings > Manage Church** and open the **Check-In** tile.
+1. In B1 Admin, go to **Settings** and open the **Check-In** section.
 2. Set **Volunteer Ratio Enforcement**:
    - **Warn (allow with confirmation)** -- The kiosk shows a warning when a room is over ratio or under its minimum volunteers, and a staff member can confirm to proceed anyway. This is the default.
    - **Block (prevent check-in)** -- Check-in to the room is refused until enough volunteers are checked in.
@@ -62,7 +62,7 @@ You can give each room age or grade bounds so the kiosk guides families to appro
 
 Grades roll over on your church's **grade promotion date**:
 
-1. In B1 Admin, go to **Settings > Manage Church** and open the grade promotion tile.
+1. In B1 Admin, go to **Settings** and open the **Grade Promotion** section.
 2. Set the month and day your church promotes students (for example, August 1). Ages and grades at the kiosk are computed as of the most recent promotion date.
 
 ## Trusted and Not-Authorized Pickup People

@@ -48,7 +48,7 @@ Once linked, you can schedule lessons directly from Plans.
 3. Click on the plan type you just made and click **Schedule Lesson**. From that menu you can schedule one lesson, bulk-schedule a series, or **Apply Year Plan** to drop in a published year sequence from Lessons.church.
 4. Select the **date** for the lesson (defaults to the upcoming Sunday)
 5. Click **Select Lesson** — a content browser dialog opens
-6. At the top of the dialog, confirm **Lessons.church** is selected as the provider
+6. The dialog opens with **Lessons.church** selected as the provider (or the provider used for this plan type's earlier lessons). If you have linked other providers, you can switch between them at the top of the dialog
 7. Browse through the content:
    - Select a **Program** (e.g., "Bible Stories for Kids")
    - Select a **Study** within that program (e.g., "Creation and Early Stories")

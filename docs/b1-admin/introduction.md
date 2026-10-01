@@ -45,6 +45,14 @@ Instead of clicking through menus, you can jump straight to a person, group, pla
 3. Results are grouped by type -- people, groups, plans, funds, and pages to jump to. Use the arrow keys to move between results and **Enter** to select one, or click a result with your mouse.
 4. Press **Esc** to close the search bar without selecting anything.
 
+The command palette can also start common tasks. Type what you want to do and select it:
+
+- **Create a page**, **Create a group**, **Set up FreeShow**, or **Set up FreePlay** opens the matching quick setup wizard right where you are, without going back to the Dashboard.
+- **Add a person** opens the new person form.
+- **Start check-in** opens the check-in app.
+
+The actions you see depend on your permissions.
+
 :::tip
 The command palette is often the fastest way to reach a page buried in a sub-menu -- type part of the page name instead of navigating through Settings, Serving, or Donations by hand.
 :::

@@ -56,7 +56,7 @@ The **Payment** field type requires Stripe to be configured. If you haven't set 
 
 ## Managing Form Members
 
-1. Open your form and go to the **Members** tab.
+1. Open your form and go to the **Form Members** tab.
 2. Search for a person and add them with a role:
    - **Admin** — Can edit the form and view all submissions.
    - **View Only** — Can view submissions but cannot edit the form.
@@ -90,6 +90,8 @@ Duplication is handy for recurring events where the registration questions stay 
 ## Configuring Form Properties
 
 You can update your form's name and settings at any time. For Stand Alone forms, you will also see a unique **public URL** that you can share with anyone, along with a **Description** field -- text shown above the questions on the public form page, useful for telling people what the form is for before they start filling it out.
+
+Use the **Thank You Message** field to set what people see after they submit the form, including on the form's public URL page. If you leave it blank, they see "Thank you for submitting the form!"
 
 :::tip
 Stand Alone forms are great for event registrations. Share the public URL via email, social media, or embed the form directly on your church website.

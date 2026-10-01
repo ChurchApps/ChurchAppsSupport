@@ -1,90 +1,90 @@
 ---
-title: TITEL: Check-in-Etiketten-Designer
+title: Anmeldungs-Etiketten-Designer
 ---
-INHALT:
-# Check-in-Etiketten-Designer
+
+# Check-In Label Designer
 
 <div class="article-intro">
 
-Mit dem Etiketten-Designer erstellen und gestalten Sie die Vorlagen für Namensschilder und Abholscheine, die gedruckt werden, wenn Familien ihre Kinder einchecken. Sie legen genau fest, welche Informationen auf jedem Etikett erscheinen, wo sie positioniert sind und wie sie aussehen.
+The Label Designer lets you create and customize the name tag and pickup slip templates that print when families check in their children. You can control exactly what information appears on each label, where it is positioned, and how it looks.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Before You Begin</h4>
 
-- Richten Sie [Anwesenheit](setup) ein und konfigurieren Sie mindestens eine Gottesdienstzeit mit aktiviertem Check-in
-- Richten Sie [Check-in](check-in) ein, damit Etiketten gedruckt werden
-- Sie benötigen administrativen Zugriff auf den Bereich „Anwesenheit"
+- Set up [Attendance](setup) and configure at least one service time with check-in enabled
+- Set up [Check-In](check-in) so labels are printing
+- You need administrative access to the Attendance section
 
 </div>
 
-## Den Etiketten-Designer öffnen
+## Opening the Label Designer
 
-Klicken Sie in B1 Admin auf das **Bereichsmenü** in der oberen linken Ecke (der aktuelle Bereichsname mit dem kleinen Pfeil daneben) und wählen Sie **Mobile**. Wählen Sie in der Navigationsleiste **B1 CheckIn** und klicken Sie dann auf der Karte „Check-in-Etiketten" auf die Schaltfläche **Etiketten entwerfen**. Sie sehen eine Liste Ihrer gespeicherten Etikettenvorlagen, getrennt nach Typ: **Namensschild** und **Abholschein**.
+In B1 Admin, click the **section menu** in the top-left corner (the current section name with the small arrow next to it) and choose **Mobile**. In the navigation bar, select **B1 CheckIn**, then click the **Design Labels** button on the Check-in Labels card. You will see a list of your saved label templates, separated by type: **Nametag** and **Pickup Slip**.
 
-## Etikettentypen
+## Label Types
 
-- **Namensschild** — wird gedruckt und am Kind befestigt. Enthält in der Regel den Namen des Kindes, seinen Raum bzw. seine Gruppe und einen Sicherheitscode.
-- **Abholschein** — wird dem Elternteil oder der Aufsichtsperson ausgehändigt. Enthält in der Regel den Sicherheitscode und eine Liste der eingecheckten Kinder.
+- **Nametag** — printed and attached to the child. Typically includes the child's name, their classroom/session, and a security code.
+- **Pickup Slip** — given to the parent or guardian. Typically includes the security code and a list of the children they checked in.
 
-B1 stellt Ihnen zu Beginn eine Standardvorlage für Namensschilder und eine für Abholscheine bereit, dimensioniert für gängige Thermoetiketten im Format 3,5 × 1,1 Zoll.
+B1 starts you with a default nametag and a default pickup slip template sized for standard 3.5 × 1.1 inch thermal labels.
 
-## Eine Etikettenvorlage erstellen
+## Creating a Label Template
 
-1. Klicken Sie auf **Namensschild hinzufügen** oder **Abholschein hinzufügen** (oder treffen Sie Ihre Auswahl über das Dropdown-Menü).
-2. Eine neue Vorlage wird im Etiketteneditor geöffnet.
+1. Click **Add** and choose a starting point from the menu: **Nametag 3.5" x 1.1"**, **Pickup Slip 3.5" x 1.1"**, or **Blank**.
+2. A new template opens in the label editor.
 
-### Etiketteneditor
+### Label Editor
 
-Der Editor zeigt eine skalierte Vorschau des Etiketts in der konfigurierten Größe. Im linken Bereich können Sie Folgendes konfigurieren:
+The editor shows a scaled preview of the label at the configured size. Along the left panel you can configure:
 
-- **Name** — der Vorlagenname (nur zu Ihrer eigenen Orientierung)
-- **Etikettentyp** — Namensschild oder Abholschein
-- **Breite / Höhe** — Etikettengröße in Zoll
+- **Name** — the template name (for your reference only)
+- **Label Type** — Nametag or Pickup Slip
+- **Width / Height** — label size in inches
 
-### Blöcke hinzufügen
+### Adding Blocks
 
-Ein Etikett besteht aus Blöcken — einzelnen Inhaltselementen, die auf der Etikettenfläche positioniert werden. Klicken Sie auf **Block hinzufügen**, um einen neuen Block einzufügen, und wählen Sie seinen Typ:
+A label is built from blocks — individual pieces of content positioned on the label canvas. Click **Add Block** to insert a new block and choose its type:
 
-- **Feld** — ruft zum Druckzeitpunkt einen Datenwert ab:
-  - `person.displayName` — der vollständige Name der Person
-  - `sessions` — der Gottesdienst bzw. der Raum, in den eingecheckt wurde
-  - `securityCode` — der zufällig generierte Sicherheitscode für die Abholung
-  - `children` — Liste der Kinder (für Abholscheine)
-  - `person.nametagNotes` — besondere Hinweise im Datensatz der Person
-  - `person.isBirthdayWeek` — „true", wenn der Geburtstag der Person in die aktuelle Woche fällt
-  - `campus` — der Name des Standorts
-- **Text** — statischer Text, den Sie selbst eingeben (für Überschriften, Bezeichnungen oder Hinweise)
-- **Barcode** — ein Barcode, der den Sicherheitscode kodiert
+- **Field** — pulls a data value at print time:
+  - `person.displayName` — the person's full name
+  - `sessions` — the service/classroom they checked in to
+  - `securityCode` — the randomly generated pickup security code
+  - `children` — list of children (for pickup slips)
+  - `person.nametagNotes` — any special notes on the person's record
+  - `person.isBirthdayWeek` — true if the person's birthday (month and day) is within 3 days before or after the check-in date
+  - `campus` — the campus name
+- **Text** — static text you type in (for headings, labels, or instructions)
+- **Barcode** — a barcode encoding the security code
 
-### Blöcke positionieren
+### Positioning Blocks
 
-Jeder Block verfügt über die Felder **X**, **Y**, **Breite** und **Höhe**, angegeben als Prozentwerte der Etikettenfläche (0–100). Passen Sie diese an, um Inhalte präzise zu positionieren. Außerdem können Sie einstellen:
+Each block has **X**, **Y**, **Width**, and **Height** fields expressed as percentages of the label canvas (0–100). Adjust these to position content precisely. You can also set:
 
-- **Schriftgröße** — Textgröße in Punkt
-- **Fett** — Fettschrift ein- oder ausschalten
-- **Ausrichtung** — linksbündig, zentriert oder rechtsbündig
-- **Bedingung** — blendet den Block optional aus, wenn ein Feld leer ist (zum Beispiel `nametagNotes` nur anzeigen, wenn ein Wert vorhanden ist). Dies funktioniert auch mit `person.isBirthdayWeek`, um eine Geburtstagsgrafik oder einen Geburtstagstext nur auf den Namensschildern von Kindern anzuzeigen, die in dieser Woche Geburtstag haben.
+- **Font Size** — text size in points
+- **Bold** — toggle bold text
+- **Align** — left, center, or right text alignment
+- **Condition** — optionally hide the block if a field is empty (for example, only show nametagNotes if it has a value). This also works with `person.isBirthdayWeek` to show a birthday graphic or text only on nametags for kids whose birthday is within a few days of check-in.
 
-### Speichern
+### Saving
 
-Klicken Sie auf **Speichern**, um die Vorlage zu sichern. Die aktualisierte Vorlage wird beim nächsten Etikettendruck in B1 Checkin verwendet.
+Click **Save** to save the template. The updated template will be used the next time labels are printed in B1 Checkin.
 
-## Vorlagen neu anordnen
+## Reordering Templates
 
-Wenn Sie mehrere Vorlagen für Namensschilder oder Abholscheine haben, verwendet B1 Checkin standardmäßig die erste Vorlage in der Liste. Ziehen Sie die Vorlagen, um ihre Reihenfolge zu ändern.
+If you have multiple nametag or pickup slip templates, B1 Checkin will use the first template in the list by default. Drag templates to reorder them.
 
-## Eine Vorlage löschen
+## Deleting a Template
 
-Klicken Sie in der jeweiligen Vorlagenzeile auf das Löschsymbol und bestätigen Sie. Wenn Sie die letzte Vorlage eines Typs löschen, wird die integrierte Standardvorlage wiederhergestellt.
+Click the delete icon on any template row and confirm. Deleting the last template of a type restores the default built-in template.
 
 :::tip
-Führen Sie nach dem Bearbeiten einer Vorlage einen Testdruck durch, um zu prüfen, ob das Layout stimmt, bevor Ihr nächster Gottesdienst beginnt.
+Make a test print after editing a template to confirm the layout looks right before your next service.
 :::
 
-## Verwandte Artikel
+## Related Articles
 
-- [Check-in-Einrichtung](setup) — Gottesdienste und Gruppen für das Check-in konfigurieren
-- [Check-in abschließen](check-in) — der Check-in-Ablauf für Familien
-- [Erste Schritte mit B1 Checkin](../../b1-checkin/getting-started/) — die Checkin-Kiosk-App
+- [Check-In Setup](setup) — configure services and groups for check-in
+- [Completing Check-In](check-in) — the check-in flow for families
+- [B1 Checkin Getting Started](../../b1-checkin/getting-started/) — the Checkin kiosk app

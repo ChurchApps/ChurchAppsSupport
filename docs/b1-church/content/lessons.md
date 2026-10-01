@@ -45,7 +45,7 @@ Once inside the Lessons tab, you can browse the curriculum your church has made 
 You can click on individual sections within a lesson to view their content in a dialog window. Use the **Back** button to return to the section list, or **Close** to exit the dialog.
 
 :::tip
-Lessons shared with your groups will also appear on your [Timeline](../community/timeline.md), making it easy to find assigned curriculum without navigating to the Lessons tab directly.
+Lessons scheduled for your groups appear as **This week's lesson** on the [group details](../groups/group-details.md) page, making it easy to find assigned curriculum without navigating to the Lessons tab directly.
 :::
 
 ## Availability

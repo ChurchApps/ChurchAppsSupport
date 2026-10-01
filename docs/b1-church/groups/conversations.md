@@ -66,7 +66,7 @@ In the group chat, you can react to any message with an emoji:
 Reactions appear as small chips under the message with a count of how many people used each one. Your own reaction is highlighted — tap the chip (or pick the same emoji again) to remove it, or pick a different emoji to add another. Reactions show up live for everyone in the chat.
 
 :::tip
-Group conversations also appear on your [Timeline](../community/timeline.md), so you can keep up with discussions without visiting each group individually.
+Group conversations live on each group's **Messages** tab -- the old combined [Timeline](../community/timeline.md) feed has been retired. Activity that needs your attention arrives as a notification under the **bell** icon in the app bar.
 :::
 
 ## Leader Features

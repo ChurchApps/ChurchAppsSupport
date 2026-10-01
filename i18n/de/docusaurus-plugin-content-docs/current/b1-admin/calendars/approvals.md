@@ -1,52 +1,58 @@
 ---
-title: TITEL: Kalendergenehmigungen
+title: Calendar Approvals
 ---
-INHALT:
-# Kalendergenehmigungen
+
+# Calendar Approvals
 
 <div class="article-intro">
 
-Auf der Seite „Genehmigungen" prüfen und bearbeiten Administratoren ausstehende Buchungsanfragen für Räume und Ressourcen sowie Kalendertermine, die vor der Veröffentlichung genehmigt werden müssen.
+The Approvals page is where administrators review and act on pending room and resource booking requests, as well as calendar events that require approval before being published.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Before You Begin</h4>
 
-- Richten Sie für Räume oder Ressourcen unter [Räume & Ressourcen](rooms-resources) eine **Genehmigungsgruppe** ein
-- Sie benötigen die Berechtigung **Kalender-Admin** oder die Berechtigung **content.edit**
+- Configure rooms or resources with an **Approval Group** in [Rooms & Resources](rooms-resources)
+- You need the **Calendars Admin** permission or the **content.edit** permission
 
 </div>
 
-## Genehmigungen öffnen
+## Opening Approvals
 
-Gehen Sie in B1 Admin zu **Kalender** und wählen Sie **Genehmigungen**. Ausstehende Buchungsanfragen und zu prüfende Termine werden hier aufgelistet.
+In B1 Admin, go to **Calendars** and select **Approvals**. Pending booking requests and events awaiting review are listed here.
 
-## Buchungsanfragen
+## Booking Requests
 
-Wenn eine Gruppe einen Termin erstellt und einen Raum oder eine Ressource anfragt, erscheint die Anfrage im Bereich **Buchungsanfragen**. Jede Zeile zeigt:
+When a group creates an event and requests a room or resource, the request appears in the **Room & Resource Requests** panel. Each row shows:
 
-- Den angefragten Raum bzw. die angefragte Ressource
-- Den Terminnamen sowie Datum/Uhrzeit
-- Die anfragende Gruppe
+- The room or resource being requested
+- The event name and date/time
+- The requesting group
 
-### Konfliktanzeigen
+### Conflict Indicators
 
-Wenn sich zwei Anfragen für denselben Raum oder dieselbe Ressource überschneiden, wird ein Warnsymbol für Konflikte angezeigt. Prüfen Sie einander widersprechende Anfragen sorgfältig, bevor Sie eine davon genehmigen.
+If two requests overlap for the same room or resource, a conflict warning icon appears. Review conflicting requests carefully before approving either one.
 
-### Genehmigen oder Ablehnen
+### Approving or Rejecting
 
-Klicken Sie bei einer Buchungsanfrage auf das Symbol **✓** (genehmigen) oder **✗** (ablehnen). Die anfragende Gruppe wird über die Entscheidung benachrichtigt. Genehmigte Buchungen belegen den Raum bzw. die Ressource fest für den Termin; abgelehnte Buchungen geben den Zeitraum für andere frei.
+Click the **✓** (approve) or **✗** (reject) icon on any booking request. The requesting group is notified of the decision. Approved bookings are locked to that room or resource for the event; rejected bookings free the slot for others.
 
-## Ausstehende Termine
+When you click approve, an **Approve booking** dialog opens so you can also publish the event in the same step:
 
-Wenn Ihr Kalender-Workflow eine Genehmigung erfordert, bevor Termine öffentlich sichtbar werden, erscheinen die betreffenden Termine im Bereich **Ausstehende Termine**. Genehmigen Sie einen Termin, um ihn im Kalender zu veröffentlichen, oder lehnen Sie ihn ab, um die einreichende Person darüber zu informieren, dass Änderungen erforderlich sind.
+1. Check **Publish to public calendar** to make the event public on its group's calendar. Leave it unchecked to approve the booking without changing the event's visibility.
+2. Once **Publish to public calendar** is checked, you can optionally choose a curated calendar from **Also add to calendar** to add the event to one of your [curated calendars](curated-calendar) as well. Leave it set to **None** to skip this. (This option only appears if you have the **content.edit** permission.)
+3. Click **Approve**.
+
+## Pending Events
+
+If your calendar workflow requires event approval before events become visible to the public, pending events appear in the **Event Requests** panel. Approve an event to publish it to the calendar, or reject it to notify the submitter that changes are needed.
 
 :::tip
-Richten Sie unter [Räume & Ressourcen](rooms-resources) eine Genehmigungsgruppe für einen Raum ein, um für diesen Raum eine Genehmigung zu verlangen. Gruppen mit Zugriff können den Raum dann beim Erstellen von Terminen anfragen, und diese Anfragen laufen auf dieser Seite ein.
+Set up an Approval Group on a room in [Rooms & Resources](rooms-resources) to require approval for that room. Groups with access can then request the room when creating events, and those requests flow into this page.
 :::
 
-## Verwandte Artikel
+## Related Articles
 
-- [Räume, Ressourcen & Planung](rooms-resources) — buchbare Räume und Ressourcen einrichten
-- [Kalender erstellen](creating-calendars) — Kalender und Termine verwalten
+- [Rooms, Resources & Scheduling](rooms-resources) — configure bookable rooms and resources
+- [Creating Calendars](creating-calendars) — manage calendars and events

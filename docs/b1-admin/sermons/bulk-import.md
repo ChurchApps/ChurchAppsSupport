@@ -35,9 +35,9 @@ You can go back and switch sources at any time if you have videos on both platfo
 
 Before importing videos, you need at least one playlist to organize them into. If you have not created any playlists yet:
 
-1. Click the **Playlists** tab.
+1. Go back to the **Sermons** page and find the **Playlists** panel.
 2. Click **Create First Playlist** and fill in the name, description, publish date, and thumbnail.
-3. Click **Save**, then return to the **Bulk Import** tab.
+3. Click **Save**, then return to Bulk Import by clicking **Add Sermon** and choosing **Bulk Import**.
 
 See [Playlists](playlists) for detailed instructions on creating and managing playlists.
 

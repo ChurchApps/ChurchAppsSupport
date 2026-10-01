@@ -101,7 +101,7 @@ A CSV export is useful for importing data into other tools, or keeping offline r
 
 You can send a push notification directly to all group members who have the B1.church app installed on their device with push notifications enabled.
 
-1. From the group detail page, click the **bell icon** in the header toolbar (next to the email and SMS icons).
+1. From the group detail page, click the **bell icon** in the header toolbar (next to the email and text icons -- the text icon appears once a [texting provider](../settings/church-settings.md#texting) is connected).
 2. A dialog opens showing how many of your group's members have push enabled.
 3. Fill in the notification details:
    - **Title** *(required)* -- A short summary, up to 80 characters.

@@ -1,7 +1,6 @@
 ---
-title: TITLE: Erfassung der Besucherzahl & Trend
+title: "Erfassung der Besucherzahl & Trend"
 ---
-CONTENT:
 # Erfassung der Besucherzahl & Trend
 
 <div class="article-intro">

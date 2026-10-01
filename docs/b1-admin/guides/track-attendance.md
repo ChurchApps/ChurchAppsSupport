@@ -46,9 +46,9 @@ Not every group needs attendance tracking. Enable it for groups where you want t
 
 Check off who attended each service and group.
 
-Follow the [Tracking Attendance](../attendance/tracking-attendance.md) guide to:
+Follow the [Recording Attendance](../attendance/recording-attendance.md) guide to:
 
-1. Navigate to Attendance, select the date and service
+1. Open a group's **Sessions** tab and add a session for the date and service time. Check **Also add for the other groups** to create sessions for every class at that service time at once.
 2. Check off who attended each group
 
 :::tip
@@ -76,7 +76,7 @@ See the big picture of participation across your church.
 Follow the [Attendance Reports](../reports/attendance-reports.md) guide. Three report views are available:
 
 1. **Attendance Trend** — see attendance over time to spot growth or decline
-2. **Group Attendance** — compare totals across groups
+2. **Group Attendance** — see who attended each group session in a date range, with a CSV download
 3. **Daily Group Attendance** — day-by-day breakdown for detailed analysis
 
 :::info
@@ -90,7 +90,8 @@ Your attendance tracking is set up. Whether you record attendance manually, use 
 ## Related Articles
 
 - [Attendance Setup](../attendance/setup.md) — configure campuses and services
-- [Tracking Attendance](../attendance/tracking-attendance.md) — record attendance manually
+- [Recording Attendance](../attendance/recording-attendance.md) — record attendance manually
+- [Tracking Attendance](../attendance/tracking-attendance.md) — review attendance trends
 - [Check-In](../attendance/check-in.md) — self-service check-in app
 - [Creating Groups](../groups/creating-groups.md) — set up groups with attendance tracking
 - [Attendance Reports](../reports/attendance-reports.md) — view attendance trends

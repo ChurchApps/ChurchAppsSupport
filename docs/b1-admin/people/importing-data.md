@@ -118,6 +118,8 @@ The tool processes the transfer and shows progress for each step:
 - Custom Fields (when you mapped any Custom Field columns)
 - Compressing (for zip file destinations only)
 
+When the destination is **B1 Database**, the progress card is titled **Import Progress** and finishes with **Import Complete!** (or **Import Completed with Errors**). For zip file destinations, the same messages say **Export**.
+
 :::warning
 Do not close your browser while the transfer is running. Wait until all steps show as complete.
 :::

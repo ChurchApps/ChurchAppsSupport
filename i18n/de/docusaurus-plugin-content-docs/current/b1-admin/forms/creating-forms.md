@@ -1,100 +1,102 @@
 ---
-title: "Formulare erstellen"
+title: Formulare erstellen
 ---
 
-# Formulare erstellen
+# Creating Forms
 
 <div class="article-intro">
 
-Erstelle benutzerdefinierte Formulare, um Informationen von deiner Gemeinde zu sammeln. Du kannst Formulare für Veranstaltungsregistrierungen, Umfragen, Besucherkarten, Mitgliedschaftsanträge und mehr erstellen. Formulare können mit Personen in deiner Datenbank verknüpft werden oder als eigenständige Seiten mit eigener öffentlicher URL verwendet werden.
+Build custom forms to collect information from your congregation. You can create forms for event registrations, surveys, visitor cards, membership applications, and more. Forms can be linked to people in your database or used as standalone pages with their own public URL.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor du beginnst</h4>
+<h4>Before You Begin</h4>
 
-- Für **Personen**-Formulare (verknüpft mit Personendatensätzen) brauchst du [Personen in deiner Datenbank](../people/adding-people.md) zuerst.
-- Für Formulare, die **Zahlungen** sammeln, musst du [Stripe für Online-Spenden konfiguriert](../donations/online-giving-setup.md) haben.
+- For **People** forms (linked to person records), you need [people in your database](../people/adding-people.md) first.
+- For forms that collect **payments**, you must have [Stripe configured for online giving](../donations/online-giving-setup.md).
 
 </div>
 
-## Ein neues Formular erstellen
+## Creating a New Form
 
-1. Öffne **Personen** aus dem Menü „Bereich", klicke dann auf **Formulare** in der Navigationsleiste.
-2. Klicke auf **Formular hinzufügen**.
-3. Gib einen **Namen** für dein Formular ein.
-4. Wähle den Formulartyp aus der Dropdown-Liste:
-   - **Personen** — Verknüpft Einreichungen mit [Personendatensätzen](../people/adding-people.md) in deiner Datenbank.
-   - **Eigenständig** -- Erstellt ein unabhängiges Formular mit eigener öffentlicher URL, ideal für externe Registrierungen.
-5. Klicke auf **Speichern**, um das Formular zu erstellen.
+1. Open **People** from the section menu, then click **Forms** in the navigation bar.
+2. Click **Add Form**.
+3. Enter a **name** for your form.
+4. Choose the form type from the dropdown:
+   - **People** — Associates submissions with [people records](../people/adding-people.md) in your database.
+   - **Stand Alone** — Creates an independent form with its own public URL, ideal for external registrations.
+5. Click **Save** to create the form.
 
-Dein neues Formular wird in der Liste angezeigt. Klicke darauf, um Fragen hinzuzufügen.
+Your new form will appear in the list. Click on it to start adding questions.
 
-## Ein leeres Formular drucken
+## Printing a Blank Form
 
-Brauchst du eine Papierkopie zum Verteilen -- für eine Besucherkarte am Willkommensschalter oder ein Formular, das jemand ohne Internetzugang von Hand ausfüllen kann? Klicke auf das **Druckersymbol** neben einem Formular in der Hauptformularliste, um eine Vorschau zu öffnen, klicke dann auf **Drucken**. Leere Felder werden mit einer Unterstreichung oder Kontrollkästchen für jede Frage gedruckt, damit Personen sie von Hand ausfüllen können; erforderliche Fragen sind mit einem Sternchen gekennzeichnet. Es gibt keine anderen Druckoptionen -- drucke das ganze Formular oder nichts.
+Need a paper copy to hand out -- for a visitor card at the welcome desk, or a form someone without internet access can fill in by hand? Click the **print icon** next to a form on the main Forms list to open a preview, then click **Print**. Blank fields print with an underline or checkbox for each question so people can fill them in by hand; required questions are marked with an asterisk. There are no other print options -- print the whole form or nothing.
 
-## Fragen hinzufügen
+## Adding Questions
 
-1. Öffne dein Formular und gehe zur Registerkarte **Fragen**.
-2. Klicke auf **Frage hinzufügen**.
-3. Wähle einen **Feldtyp** aus der Dropdown-Liste Provider. Verfügbare Typen umfassen:
-   - **Textfeld** -- Für kurze Textantworten
-   - **Datum** -- Für Datumsauswahl
-   - **E-Mail** -- Für E-Mail-Adressen
-   - **Telefonnummer** -- Für Telefoneingabe
-   - **Mehrfachauswahl** -- Zur Auswahl aus vordefinierten Optionen
-   - **Zahlung** -- Zur Erfassung von Zahlungen
-4. Gib einen **Titel** und eine optionale **Beschreibung** für die Frage ein.
-5. Aktiviere **Antwort erforderlich**, wenn das Feld erforderlich ist.
-6. Klicke auf **Speichern**.
-7. Wiederhole den Vorgang, um weitere Fragen hinzuzufügen.
+1. Open your form and go to the **Questions** tab.
+2. Click **Add Question**.
+3. Select a **field type** from the Provider dropdown. Available types include:
+   - **Textbox** — For short text answers
+   - **Date** — For date selections
+   - **Email** — For email addresses
+   - **Phone Number** — For phone input
+   - **Multiple Choice** — For selecting from predefined options
+   - **Payment** — For collecting payments
+4. Enter a **Title** and optional **Description** for the question.
+5. Check **Require an answer** if the field is mandatory.
+6. Click **Save**.
+7. Repeat to add more questions.
 
 :::warning
-Der Feldtyp **Zahlung** erfordert, dass Stripe konfiguriert ist. Wenn du Online-Spenden noch nicht eingerichtet hast, siehe [Online-Spenden einrichten](../donations/online-giving-setup.md), bevor du Zahlungsfelder hinzufügst.
+The **Payment** field type requires Stripe to be configured. If you haven't set up online giving yet, see [Online Giving Setup](../donations/online-giving-setup.md) before adding payment fields.
 :::
 
-## Formularmitglieder verwalten
+## Managing Form Members
 
-1. Öffne dein Formular und gehe zur Registerkarte **Mitglieder**.
-2. Suche eine Person und füge sie mit einer Rolle hinzu:
-   - **Admin** -- Kann das Formular bearbeiten und alle Einreichungen anzeigen.
-   - **Nur anzeigen** -- Kann Einreichungen anzeigen, kann aber das Formular nicht bearbeiten.
+1. Open your form and go to the **Form Members** tab.
+2. Search for a person and add them with a role:
+   - **Admin** — Can edit the form and view all submissions.
+   - **View Only** — Can view submissions but cannot edit the form.
 
-## Einreicher automatisch zu einer Gruppe hinzufügen
+## Automatically Adding Submitters to a Group
 
-Wenn **Eine Personenaufzeichnung aus Einreichungen erstellen** aktiviert ist, kannst du das Formular auch mit einer Gruppe verknüpfen, damit jeder Einreicher automatisch zur Rosterliste dieser Gruppe hinzugefügt wird:
+When **Create a person record from submissions** is enabled, you can also link the form to a group so every submitter is added to that group's roster automatically:
 
-1. Öffne die **Details** deines Formulars und schalte **Eine Personenaufzeichnung aus Einreichungen erstellen** ein.
-2. Unter **Einreicher zu einer Gruppe hinzufügen** wähle die Gruppe aus, zu der Einreicher hinzugefügt werden sollen, oder lasse es auf **Keine** eingestellt.
-3. Klicke auf **Speichern**.
+1. Open your form's **Details**, and turn on **Create a person record from submissions**.
+2. Under **Add submitters to a group**, select the group to add submitters to, or leave it set to **None**.
+3. Click **Save**.
 
-Jedes Mal, wenn jemand das Formular einreicht, wird die gefundene oder neu erstellte Person zur Gruppe hinzugefügt (bestehende Gruppenmitglieder werden übersprungen). Dies ist nützlich für Dinge wie ein Lageranmeldeformular, das automatisch die Lagerroster-Gruppe erstellen sollte.
+Each time someone submits the form, the matched or newly created person is added to the group (existing group members are skipped). This is useful for things like a camp sign-up form that should automatically build the camp's roster group.
 
-### E-Mail zur Nachverfolgung senden
+### Sending a Follow-up Email
 
-Mit **Eine Personenaufzeichnung aus Einreichungen erstellen** aktiviert, kannst du auch jedem Kontakt eine E-Mail senden, der das Formular einreicht. Fülle **Betreff der Nachverfolgungs-E-Mail** und **Inhalt der Nachverfolgungs-E-Mail** in den Formulardetails aus. Du kannst die Token `{firstName}` und `{churchName}` in beiden verwenden. Die E-Mail wird nur gesendet, wenn beide Felder ausgefüllt sind.
+With **Create a person record from submissions** turned on, you can also email each person who submits the form. Fill in **Follow-up Email Subject** and **Follow-up Email Body** in the form's details. You can use the `{firstName}` and `{churchName}` tokens in both. The email is only sent when both fields are filled in.
 
 :::info
-Nachverfolgungs-E-Mails werden nur versendet, nachdem deine Kirche zum Versenden von Gruppen-E-Mails genehmigt wurde, und sie zählen zum täglichen E-Mail-Limit deiner Kirche. Siehe [Gruppen-E-Mail für deine Kirche aktivieren](../groups/group-members.md#turning-on-group-email-for-your-church).
+Follow-up emails only go out after your church has been approved to send group email, and they count toward your church's daily email limit. See [Turning On Group Email for Your Church](../groups/group-members.md#turning-on-group-email-for-your-church).
 :::
 
-## Ein Formular duplizieren
+## Duplicating a Form
 
-Um ein Formular als Ausgangspunkt für ein neues zu verwenden, klicke auf das Symbol **Duplizieren** (Kopiersymbol) neben dem Formular in der Formulliste. B1 erstellt eine exakte Kopie des Formulars -- einschließlich aller Fragen -- die du dann unabhängig umbenennen und bearbeiten kannst.
+To reuse a form as a starting point for a new one, click the **Duplicate** icon (copy icon) next to the form in the Forms list. B1 creates an exact copy of the form — including all questions — which you can then rename and edit independently.
 
 :::tip
-Verdopplung ist praktisch für wiederkehrende Veranstaltungen, bei denen die Registrierungsfragen von Jahr zu Jahr gleich bleiben. Verdopple das Formular des letzten Jahres, aktualisiere den Namen und die Daten, und du bist bereit.
+Duplication is handy for recurring events where the registration questions stay the same from year to year. Duplicate last year's form, update the name and dates, and you're ready to go.
 :::
 
-## Formulareigenschaften konfigurieren
+## Configuring Form Properties
 
-Du kannst den Namen und die Einstellungen deines Formulars jederzeit aktualisieren. Für eigenständige Formulare siehst du auch eine eindeutige **öffentliche URL**, die du mit jedem teilen kannst, zusammen mit einem **Beschreibungsfeld** -- Text, der oben auf der öffentlichen Formularseite über den Fragen angezeigt wird, nützlich, um Personen zu sagen, wofür das Formular ist, bevor sie es ausfüllen.
+You can update your form's name and settings at any time. For Stand Alone forms, you will also see a unique **public URL** that you can share with anyone, along with a **Description** field -- text shown above the questions on the public form page, useful for telling people what the form is for before they start filling it out.
+
+Use the **Thank You Message** field to set what people see after they submit the form, including on the form's public URL page. If you leave it blank, they see "Thank you for submitting the form!"
 
 :::tip
-Eigenständige Formulare sind großartig für Veranstaltungsregistrierungen. Teile die öffentliche URL per E-Mail, in sozialen Medien oder bette das Formular direkt auf deine Kirchenwebsite ein.
+Stand Alone forms are great for event registrations. Share the public URL via email, social media, or embed the form directly on your church website.
 :::
 
 :::info
-Um ein Formular auf deiner B1-Website einzubinden, gehe zu deinem Website-Editor, füge einen neuen Abschnitt hinzu und wähle das Element **Formular**. Wähle dann das Formular, das du anzeigen möchtest. Siehe [Seiten verwalten](../website/managing-pages.md) für Details zum Bearbeiten deiner Website.
+To embed a form on your B1 website, go to your website editor, add a new section, and select the **Form** element. Then choose the form you want to display. See [Managing Pages](../website/managing-pages.md) for details on editing your website.
 :::

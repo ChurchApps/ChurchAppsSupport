@@ -68,7 +68,7 @@ Follow your printer's setup instructions to connect it to the same WiFi network 
 
 ## Customizing the Kiosk Appearance
 
-You can customize the look and feel of the B1 Checkin app to match your church's branding. In B1 Admin, go to **Attendance > Kiosk Theme** to configure:
+You can customize the look and feel of the B1 Checkin app to match your church's branding. In B1 Admin, go to **Mobile > B1 CheckIn** and use the **Kiosk Theme** card to configure:
 
 ### Colors
 
@@ -110,7 +110,7 @@ To turn on the QR code display:
 3. Toggle **QR Guest Registration** on and click **Save**.
 
 :::note
-This setting is under **Mobile**, not under Attendance > Kiosk Theme.
+This setting is under **Mobile > B1 CheckIn** (the same page as the **Kiosk Theme** card), not under Attendance.
 :::
 
 ### Sharing the Registration Link

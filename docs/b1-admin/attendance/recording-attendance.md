@@ -30,6 +30,16 @@ A session represents one occurrence of a group meeting -- for example, your K--3
 6. Select the **Session Date** -- this can be today, a past date, or a future date.
 7. Click **Save**.
 
+### Adding Sessions for Every Class in a Service Time
+
+If other groups meet at the same service time (for example, all of your children's classes at Sunday 9:00 AM), you can create their sessions in one step instead of visiting each group.
+
+1. Follow the steps above and choose a **Service Time**.
+2. Check **Also add for the other _N_ groups in _service time_**. The checkbox shows how many other groups are assigned to that service time. It only appears when adding a new session and at least one other group meets at that time.
+3. Click **Save**.
+
+A session is created for the current group and for each of the other groups on the same date and service time. Groups that already have a session for that date and service time are skipped, so you won't get duplicates.
+
 :::tip
 You can create sessions for past dates to catch up on attendance you haven't recorded yet, or create them in advance so they are ready when your group meets.
 :::
@@ -52,7 +62,7 @@ People who checked in at a kiosk show a **Volunteer** or **Guest** chip. People 
 
 ## Printing a Roll Sheet
 
-A roll sheet is a printable class list that teachers can mark by hand and give back to you to enter later. Each sheet shows the church name, the class, the service time, and a date line. Every member has **Present** and **Absent** boxes, and there are blank lines for visitors and a **Teacher / Notes** area.
+A roll sheet is a printable class list that teachers can mark by hand and give back to you to enter later. Each sheet shows the church name, the class, a large **Date** line under the class name, and the service time. Members are listed in two columns (read down the left column, then the right) so more names fit on a page, and every member has **Present** and **Absent** boxes. There are blank lines for visitors and a **Teacher / Notes** area.
 
 - **From a session** -- Click the **Print Roll Sheet** (printer) icon at the top of the session's attendance list. The sheet is dated with the session's date.
 - **All classes for a service** -- If the session has a service time, click **Print All Classes** to print one sheet per class assigned to that service time. Each class prints on its own page.
@@ -73,7 +83,7 @@ You can download a record of the session as a CSV file to use in Excel, Numbers,
 After recording sessions, the data appears in your attendance reports.
 
 - **Attendance Trend tab** -- shows church-wide trends over time. See [Tracking Attendance](tracking-attendance.md).
-- **Group Attendance tab** -- shows attendance broken down by individual group.
+- **Group Attendance tab** -- shows attendance broken down by individual group. See [Attendance Reports](../reports/attendance-reports.md#group-attendance).
 
 :::tip
 If a session you just created does not appear in reports right away, make sure the session date falls within the date range selected in the report filters.

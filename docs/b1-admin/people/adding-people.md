@@ -53,6 +53,22 @@ The profile also includes several tabs for related information:
 - **Attendance** — View this person's individual visit history, including the campus, service, service time, group, and a **Checked In** column with the kiosk check-in time (shown as a dash for visits recorded without a kiosk check-in). For church-wide trends rather than one person's history, see [Tracking Attendance](../attendance/tracking-attendance.md)
 - **Donations** — View [donation history](../donations/recording-donations.md)
 
+## Emailing a Person
+
+If the person has an email address on file, an **Email this person** button (envelope icon) appears in the profile header.
+
+1. On the person's profile, click the **envelope icon**.
+2. An **Email** dialog titled with the person's name opens, showing **Sending to** with the person's address.
+3. Optionally choose a saved template from **Load Template (optional)**.
+4. Enter a **Subject** and compose the message.
+5. Click **Send Email**.
+
+To write the message in your own mail program instead, click **Open in my email app**.
+
+:::info
+Sending from B1 uses the same approval and daily limits as group email. If your church hasn't been approved yet, the dialog asks you to request a review — you can still click **Open in my email app** in the meantime. See [Turning On Group Email for Your Church](../groups/group-members.md#turning-on-group-email-for-your-church). Users without permission to edit group members go straight to their email app when they click the envelope icon.
+:::
+
 ## Working with Forms
 
 You can fill out custom forms directly from a person's profile. These are user-defined forms that you can build by following the [Creating Forms](../forms/creating-forms.md) guide.
@@ -62,6 +78,8 @@ You can fill out custom forms directly from a person's profile. These are user-d
 3. Fill in the form details and click **Save**.
 
 Once a form is submitted, click the **print icon** next to it to print that person's filled-in answers.
+
+If a submission landed on the wrong person, click the **Change person** icon (two arrows) next to it to move it to someone else or unlink it. See [Changing the Person on a Submission](../forms/managing-submissions.md#changing-the-person-on-a-submission).
 
 :::info
 Forms linked to a person's profile use the **People** form type. If you need a standalone form (like an event registration), see the [Stand Alone form option](../forms/creating-forms.md) in the forms guide.

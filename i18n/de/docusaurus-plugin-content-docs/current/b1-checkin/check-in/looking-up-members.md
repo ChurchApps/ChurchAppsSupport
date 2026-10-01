@@ -1,60 +1,70 @@
 ---
-title: "Mitglieder nachschlagen"
+title: Mitglieder suchen
 ---
 
-# Mitglieder nachschlagen
+# Looking Up Members
 
 <div class="article-intro">
 
-Nach der Auswahl eines Gottesdienstes gelangen Sie zum Mitgliedersuche-Bildschirm. Hier suchen Sie nach Ihrer Familie, um einzuchecken. Die App unterstuetzt die Suche nach Telefonnummer oder nach Name.
+After selecting a service, you arrive at the member lookup screen. This is where you search for your family so you can check in. The app supports searching by phone number or by name.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Before You Begin</h4>
 
-- [Waehlen Sie einen Gottesdienst](./selecting-service) auf dem Gottesdienst-Bildschirm
-- Stellen Sie sicher, dass Ihr Haushalt von einem Gemeinde-Administrator [im System erfasst](../../b1-admin/people/adding-people.md) wurde
+- [Select a service](./selecting-service) from the services screen
+- Ensure your household has been [added to the system](../../b1-admin/people/adding-people.md) by a church administrator
 
 </div>
 
-## Suchmodi
+## Search Modes
 
-Der Such-Bildschirm bietet zwei Suchmodi. Sie koennen zwischen ihnen wechseln, indem Sie auf den Umschalter am oberen Bildschirmrand tippen:
+The lookup screen offers two search modes. You can switch between them by tapping the toggle at the top of the screen:
 
-- **Phone** -- Suche nach Telefonnummer. Dies ist der Standardmodus.
-- **Name** -- Suche nach Name.
+- **Phone** -- Search by phone number. This is the default mode.
+- **Name** -- Search by name.
 
-## Suche nach Telefonnummer
+## Searching by Phone Number
 
-1. Stellen Sie sicher, dass **Phone** der aktive Suchmodus ist (er ist oben hervorgehoben).
-2. Tippen Sie auf das Suchfeld und geben Sie mindestens **4 Ziffern** Ihrer Telefonnummer ueber die Bildschirmtastatur ein.
-3. Tippen Sie auf die Schaltflaeche **Search** oder druecken Sie die Suchtaste auf der Tastatur.
+1. Make sure **Phone** is the active search mode (it is highlighted at the top).
+2. Tap the search field and enter at least **4 digits** of your phone number using the on-screen keypad.
+3. Tap the **Search** button or press the search key on the keyboard.
 
-Die App sucht nach Mitgliedern, deren Telefonnummer mit den eingegebenen Ziffern uebereinstimmt. Wenn Sie mehr als 4 Ziffern eingeben, wird die vollstaendige Nummer verwendet. Bei genau 4 Ziffern wird mit den letzten 4 Ziffern der hinterlegten Telefonnummern abgeglichen.
+The app searches for members whose phone number matches the digits you entered. If you enter more than 4 digits, it uses the full number. If you enter exactly 4, it matches against the last 4 digits of phone numbers on file.
 
-## Suche nach Name
+## Searching by Name
 
-1. Tippen Sie auf den **Name**-Umschalter am oberen Bildschirmrand, um in den Namenssuche-Modus zu wechseln.
-2. Geben Sie mindestens **2 Zeichen** des Namens der Person in das Suchfeld ein.
-3. Tippen Sie auf die Schaltflaeche **Search**.
+1. Tap the **Name** toggle at the top of the screen to switch to name search mode.
+2. Enter at least **2 characters** of the person's name in the search field.
+3. Tap the **Search** button.
 
-Die App sucht nach Mitgliedern, deren Name mit Ihrer Eingabe uebereinstimmt.
+The app searches for members whose name matches what you typed.
 
-## Eine Person auswaehlen
+## Selecting a Person
 
-Suchergebnisse erscheinen als Karten unterhalb des Suchfeldes. Jede Karte zeigt den **Namen** und das **Foto** der Person (sofern hinterlegt).
+Search results appear as cards below the search field. Each card shows the person's **name** and **photo** (if one is on file).
 
-Tippen Sie auf die Karte einer Person, um sie auszuwaehlen. Die App laedt alle Mitglieder des Haushalts dieser Person und fuehrt Sie zum [Haushaltsuebersichts-Bildschirm](./household-review).
+Tap a person's card to select them. The app loads all members of that person's household and takes you to the [household review screen](./household-review).
 
 :::tip
-Die Suche nach den letzten 4 Ziffern einer Telefonnummer ist der schnellste Weg, Ihre Familie nachzuschlagen. Ermutigen Sie Mitglieder, diese Methode fuer ein schnelleres Check-in-Erlebnis zu nutzen.
+Searching by the last 4 digits of a phone number is the fastest way to look up your family. Encourage members to use this method for a quicker check-in experience.
 :::
 
 :::warning
-Wenn keine Ergebnisse gefunden werden, zeigt die App eine entsprechende Meldung an. Ueberpruefen Sie die eingegebenen Ziffern oder den Namen erneut oder versuchen Sie den anderen Suchmodus. Wenn Sie ein erstmaliger Besucher sind, bitten Sie einen Ehrenamtlichen um Hilfe, damit Sie [im System erfasst](../../b1-admin/people/adding-people.md) werden.
+If no results are found, the app displays a message letting you know. Double-check the digits or name you entered, or try the other search mode. If you are a first-time visitor, ask a volunteer for help getting [added to the system](../../b1-admin/people/adding-people.md).
 :::
 
-## Naechster Schritt
+## Printing Labels for a Phone Check-In
 
-Nach der Auswahl einer Person werden Sie [Ihren Haushalt ueberpruefen](./household-review) und Gruppenzuweisungen verwalten.
+Families who already checked in on their phone through [B1 Church self check-in](../../b1-church/checkin/self-checkin) can print their name tags at the kiosk without looking themselves up.
+
+1. On the lookup screen, tap the **Scan code** button (the QR code icon).
+2. Hold the QR code from your phone up to the camera. If the app asks for camera access, tap **Allow Camera**. The front camera is used by default; tap the flip button to switch.
+3. The kiosk finds the check-in and prints the labels, then returns to the lookup screen.
+
+Scanning only prints labels -- the attendance was already recorded when the family checked in on their phone. If the code doesn't match an active check-in, the kiosk shows a message and returns to the lookup screen.
+
+## Next Step
+
+After selecting a person, you will [review your household](./household-review) and manage group assignments.

@@ -1,62 +1,66 @@
 ---
-title: "Anmelden"
+title: Anmelden
 ---
 
-# Anmelden
+# Logging In
 
 <div class="article-intro">
 
-Die Anmeldung bei B1.church gibt Ihnen Zugriff auf das Mitgliederportal, in dem Sie Ihre Zeitleiste ansehen, Gruppen verwalten, online spenden und alle Werkzeuge nutzen können, die Ihre Kirche eingerichtet hat. Dieser Artikel behandelt die Anmeldung, die Navigation in Ihrem Benutzermenü und das Abmelden.
+Logging in to B1.church gives you access to the member portal where you can see what is coming up for you, manage groups, give online, and use all of the tools your church has set up. This article covers how to sign in, navigate your user menu, and log out.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Before You Begin</h4>
 
-- Sie benötigen ein ChurchApps-Konto. Siehe [Erste Schritte](../getting-started/), um eines zu erstellen.
-- Sie benötigen die B1.church-URL Ihrer Kirche (zum Beispiel `https://yourchurchname.b1.church`).
+- You need a ChurchApps account. See [Getting Started](../getting-started/) to create one.
+- You need your church's B1.church URL (for example, `https://yourchurchname.b1.church`).
 
 </div>
 
-## So melden Sie sich an
+## How to Log In
 
-1. Rufen Sie die B1.church-URL Ihrer Kirche auf (zum Beispiel `https://yourchurchname.b1.church`).
-2. Klicken Sie oben rechts in der Kopfzeile auf die Schaltfläche **Login**.
-3. Geben Sie Ihre **E-Mail-Adresse** und Ihr **Passwort** ein, oder klicken Sie auf **Mit Google fortfahren** oder **Mit Microsoft fortfahren**, falls Ihre Kirche Single Sign-On aktiviert hat.
-4. Klicken Sie auf **Anmelden**.
+1. Go to your church's B1.church URL (for example, `https://yourchurchname.b1.church`).
+2. Click the **Login** button in the top-right corner of the header.
+3. Enter your **email address** and **password**, or click **Continue with Google** or **Continue with Microsoft** if your church has single sign-on enabled.
+4. Click **Sign In**.
 
-Nach der Anmeldung werden Sie zu der Seite zurückgebracht, auf der Sie sich befanden, bevor Sie auf Login geklickt haben. Wenn Sie im abgemeldeten Zustand direkt zu einer Seite des Mitgliederportals navigiert sind, werden Sie nach der Anmeldung automatisch zu dieser Seite zurückgeführt.
+After signing in, you will be taken back to the page you were on before you clicked login. If you navigated directly to a member portal page while logged out, you will be returned to that page automatically after signing in.
 
-## Zugriff auf das Mitgliederportal
+## Staying Signed In
 
-Sobald Sie angemeldet sind, können Sie auf das Mitgliederportal zugreifen, indem Sie oben rechts auf der Seite auf Ihren **Namen** klicken und im Menü **Mitgliederportal** auswählen. Im Mitgliederportal befinden sich alle Ihre persönlichen Kirchenwerkzeuge, einschließlich Ihrer [Zeitleiste](../community/timeline.md), [Gruppen](../groups/), [Spenden](../giving/) und mehr.
+You stay signed in on the same browser or installed app until you log out, even if you do not visit for a while -- your session is kept for up to about 30 days of inactivity. Signing in once also keeps you signed in when you move between your church's website and the member portal (`/mobile`), so you do not have to log in again in each place.
 
-## Ihr Benutzermenü
+## Accessing the Member Portal
 
-Nach der Anmeldung erscheint Ihr Name als Chip oben rechts. Klicken Sie darauf, um ein Menü mit folgenden Optionen zu öffnen:
+Once logged in, you can access the member portal by clicking on your **name** in the top-right corner of the page and selecting **Member Portal** from the menu. The member portal is where all of your personal church tools live, including your [Home dashboard](./navigating.md), [Me page](./me-page.md), [groups](../groups/), [giving](../giving/), and more.
 
-- **Mitgliederportal** -- Gehen Sie zu Ihrem persönlichen Mitgliederportal-Dashboard.
-- **Profil bearbeiten** -- Aktualisieren Sie Ihre Kontoeinstellungen oder bearbeiten Sie Ihr Kirchenprofil.
-- **Abmelden** -- Melden Sie sich von Ihrem Konto ab.
+## Your User Menu
 
-## Admin-Zugriff
+After logging in, your name appears as a chip in the top-right corner. Click it to open a menu with the following options:
 
-Wenn Sie ein Kirchenverwalter mit den entsprechenden Berechtigungen sind, sehen Sie in Ihrem Benutzermenü zusätzlich die Option **Admin-Portal**. Ein Klick darauf führt Sie zu B1 Admin, wo Sie die Einstellungen, Personen, Gruppen und Inhalte Ihrer Kirche verwalten können.
+- **Member Portal** -- Go to your personal member portal dashboard.
+- **Edit Profile** -- Update your account settings or edit your church profile.
+- **Logout** -- Sign out of your account.
 
-## Passwort vergessen
+## Admin Access
 
-Wenn Sie sich nicht an Ihr Passwort erinnern können:
+If you are a church administrator with the appropriate permissions, you will also see an **Admin Portal** option in your user menu. Clicking it takes you to B1 Admin where you can manage your church's settings, people, groups, and content.
 
-1. Klicken Sie auf der Anmeldeseite auf **Passwort vergessen**.
-2. Geben Sie die mit Ihrem ChurchApps-Konto verknüpfte E-Mail-Adresse ein und senden Sie sie ab.
-3. Prüfen Sie Ihre E-Mails auf eine Nachricht mit einem **6-stelligen Bestätigungscode**. Der Code ist 15 Minuten lang gültig.
-4. Geben Sie den Code auf dem Bestätigungsbildschirm ein, um sich anzumelden.
-5. Sobald Sie angemeldet sind, besuchen Sie Ihr Profil, um ein neues Passwort zu wählen.
+## Forgot Your Password
+
+If you cannot remember your password:
+
+1. Click **Forgot Password** on the login page.
+2. Enter the email address tied to your ChurchApps account and submit.
+3. Check your email for a message containing a **6-digit verification code**. The code is valid for 15 minutes.
+4. Enter the code on the verification screen to sign in.
+5. Once you are signed in, visit your profile to choose a new password.
 
 :::tip
-Falls der Code nicht innerhalb weniger Minuten eintrifft, überprüfen Sie Ihren Spam-Ordner. Nach fünf fehlgeschlagenen Versuchen wird der Code gesperrt -- fordern Sie in diesem Fall über die Seite „Passwort vergessen" einen neuen an.
+If the code does not arrive within a couple of minutes, check your spam folder. After five incorrect attempts the code is locked — request a new one from the Forgot Password page if that happens.
 :::
 
-## Abmelden
+## Logging Out
 
-Um sich abzumelden, klicken Sie oben rechts auf Ihren **Namen** und wählen Sie **Abmelden**. Sie werden abgemeldet und zur öffentlichen Website zurückgeführt.
+To log out, click your **name** in the top-right corner and select **Logout**. You will be signed out and returned to the public site.

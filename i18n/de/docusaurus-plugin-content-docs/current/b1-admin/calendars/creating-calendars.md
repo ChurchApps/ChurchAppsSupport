@@ -1,6 +1,8 @@
 ---
-title: # Kalender erstellen
+title: "Kalender erstellen"
 ---
+# Kalender erstellen
+
 <div class="article-intro">
 
 Wenn Sie in B1 Admin einen Kalender erstellen, können Sie eine kuratierte Ansicht von Veranstaltungen aufbauen, indem Sie eine oder mehrere Gruppen verknüpfen. Die Veranstaltungen werden von den Gruppenleitern innerhalb ihrer Gruppen verwaltet, und Ihr Kalender zeigt diese Veranstaltungen an einem Ort an. Administratoren mit Bearbeitungsrechten können Veranstaltungen für jede Gruppe hinzufügen oder bearbeiten. Gruppenleiter ohne Administratorrechte können nur Veranstaltungen für die von ihnen geleiteten Gruppen verwalten.

@@ -1,7 +1,6 @@
 ---
-title: TITLE: Verfügbarkeitskalender
+title: "Verfügbarkeitskalender"
 ---
-CONTENT:
 # Verfügbarkeitskalender
 
 <div class="article-intro">

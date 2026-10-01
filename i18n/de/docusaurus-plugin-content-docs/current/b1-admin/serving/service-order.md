@@ -1,135 +1,135 @@
 ---
-title: "Servicebestellung"
+title: Gottesdienst-Reihenfolge
 ---
 
-# Servicebestellung
+# Service Order
 
 <div class="article-intro">
 
-Die Servicebestellung definiert die Reihenfolge der Elemente in Ihrem Gottesdienst. Verwenden Sie sie, um alles vom Eröffnungslied bis zum Abschlussgebet festzulegen, damit Ihr gesamtes Team den Ablauf des Gottesdienstes im Voraus kennt.
+The service order defines the sequence of elements in your worship service. Use it to lay out everything from the opening song to the closing prayer, so your entire team knows the flow of the service ahead of time.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Before You Begin</h4>
 
-- [Erstellen Sie einen Serviceplan](./plans.md) für das Datum, für das Sie eine Servicebestellung erstellen möchten
-- Fügen Sie optional [Lieder](./songs.md) zu Ihrer Bibliothek hinzu, damit Sie sie direkt in die Servicebestellung verlinken können
+- [Create a service plan](./plans.md) for the date you want to build a service order for
+- Optionally, add [songs](./songs.md) to your library so you can link them directly into the service order
 
 </div>
 
-## Zugriff auf die Servicebestellung
+## Accessing the Service Order
 
-1. Navigieren Sie zu **Serving** und wählen Sie Ihr Ministerium.
-2. Klicken Sie auf einen **Plantyp**, und öffnen Sie dann einen spezifischen **Plan**.
-3. Klicken Sie auf der Plandetailseite auf die Registerkarte **Servicebestellung**.
+1. Navigate to **Serving** and select your ministry.
+2. Click on a **plan type**, then open a specific **plan**.
+3. Click the **Service Order** tab on the plan detail page.
 
-## Aufbau Ihrer Servicebestellung
+## Building Your Service Order
 
-Die Servicebestellung ist eine Liste von Elementen in der Reihenfolge, in der sie während des Gottesdienstes auftreten. Häufige Elemente sind:
+The service order is a list of items arranged in the sequence they will occur during the service. Common elements include:
 
-- Anbetungslieder
-- Gebete
-- Schriftlesungen
-- Ankündigungen
-- Predigt oder Botschaft
-- Opfer
-- Abschluss
+- Worship songs
+- Prayers
+- Scripture readings
+- Announcements
+- Sermon or message
+- Offering
+- Closing
 
-## Hinzufügen von Elementen zur Servicebestellung
+## Adding Items to the Service Order
 
-1. Klicken Sie auf der Registerkarte **Servicebestellung** auf **Element hinzufügen**.
-2. Wählen Sie den Typ des Elements, das Sie hinzufügen möchten (z. B. ein Lied aus Ihrer Bibliothek, ein benutzerdefiniertes Element, eine Überschrift oder ein **Externes Element**).
-3. Geben Sie die Details für das Element ein, z. B. den Titel und eventuell Notizen.
-4. Klicken Sie auf **Speichern**.
-
-:::tip
-Sie können Lieder direkt aus Ihrer [Lieder](./songs.md)-Bibliothek hinzufügen. Dies verlinkt die Lieddetails, einschließlich Text und Arrangements, mit Ihrem Serviceplan, sodass Ihr Anbetungsteam alles hat, was es braucht.
-:::
-
-### Mehrere Elemente von einem externen Anbieter importieren
-
-Wenn Sie **Externes Element** wählen, wird ein Browser für Ihre verknüpften Lektionanbieter anstelle eines Einzelelementformulars geöffnet. Durchsuchen Sie (oder suchen Sie) den Inhalt eines Anbieters durch, und aktivieren Sie das Kontrollkästchen neben jedem Abschnitt oder jeder Aktion, den/die Sie hinzufügen möchten. Das Dialogfeld verfolgt, wie viele Sie ausgewählt haben (zum Beispiel "3 ausgewählt") – klicken Sie auf **Importieren (3)**, um sie alle auf einmal zur Servicebestellung hinzuzufügen, anstatt den Vorgang zum Hinzufügen eines Elements für jedes zu wiederholen.
+1. On the **Service Order** tab, click **Add Item**.
+2. Choose the type of element you want to add (for example, a song from your library, a custom item, a heading, or an **External Item**).
+3. Enter the details for the item, such as the title and any notes.
+4. Click **Save**.
 
 :::tip
-Dies ist die schnellste Möglichkeit, um eine ganze Lektion voller Abschnitte und Anhaltspunkte auf einmal in eine Servicebestellung zu ziehen, anstatt jedes Element einzeln hinzuzufügen.
+You can add songs directly from your [Songs](./songs.md) library. This links the song details, including lyrics and arrangements, to your service plan so your worship team has everything they need.
 :::
 
-## Elemente neu ordnen
+### Importing Multiple Items from an External Provider
 
-Ziehen Sie Elemente durch den Griff auf der linken Seite jeder Reihe, um die Reihenfolge zu ändern — legen Sie sie auf der blauen Linie ab, wo das Element landen soll, oder auf einen Abschnittskopf, um es in diesen Abschnitt zu verschieben. Die auf dem Bildschirm angezeigte Reihenfolge ist die Reihenfolge, der Ihr Team während des Gottesdienstes folgt.
+Choosing **External Item** opens a browser for your linked lesson providers instead of a single-item form. Browse (or search) into a provider's content, and check the box next to each section or action you want. The dialog tracks how many you have selected (for example, "3 selected") -- click **Import (3)** to add all of them to the service order at once, instead of repeating the add-item flow for each one.
 
-## Bearbeiten eines Lektionsabschnitts
+:::tip
+This is the fastest way to pull a whole lesson's worth of sections and cues into a service order in one pass, rather than adding each item individually.
+:::
 
-Lektions- und Lehrplanabschnitte (zum Beispiel "Große Gruppe" oder "Aufwärmen 1") enthalten ihre eigenen Skriptzeilen, Folien und Videos. Um zu ändern, was sich darin befindet, klicken Sie auf den Abschnitt in der Servicebestellung. Der Abschnitt wird geöffnet und zeigt alles darin: Sprech- und Anweisungszeilen werden als vollständiger Text mit **Sagen**, **Tun** oder **Notiz** markiert, und Folien oder Videos werden mit einer Miniaturansicht angezeigt.
+## Reordering Items
 
-- Klicken Sie auf das **x** neben einer beliebigen Zeile, um sie aus Ihrem Plan zu entfernen. Sie bleibt in der Liste, durchgestrichen, mit einem Pfeil zum Wiederherstellen.
-- Klicken Sie auf einen beliebigen Text, um ihn umzuformulieren. Eine neu formulierte Zeile bietet **Originaltext wiederherstellen**.
-- Klicken Sie auf **Speichern**. Der Abschnitt bleibt eine einzelne Reihe in Ihrer Servicebestellung mit einer kleinen Beschriftung wie **6 von 8 Elementen**, die zeigt, dass Sie ihn angepasst haben, und seine Laufzeit wird aktualisiert.
+Drag items by the handle on the left of each row to rearrange the order — drop onto the blue line where you want the item to land, or onto a section header to move it into that section. The sequence shown on screen is the order your team will follow during the service.
 
-Öffnen Sie den Abschnitt jederzeit erneut, um Ihre Änderungen zu sehen, Zeilen zurückzusetzen oder **Originalabschnitt wiederherstellen** zu wählen, um alle rückgängig zu machen. Ihre Änderungen betreffen nur Ihren Plan – die ursprüngliche Lektion wird nie geändert – und werden in gedruckten Plänen und in dem widergespiegelt, was Ihre Freiwilligen sehen.
+## Editing a Lesson Section
 
-Wenn Sie ein Element aus dem Abschnitt als eigene Reihe benötigen (zum Beispiel, um ein Lied zwischen zwei Zeilen zu platzieren), klicken Sie auf den Pfeil am rechten Ende der Abschnittsreihe, um seinen Inhalt als separate Reihen anzuzeigen. Klicken Sie auf den Pfeil in der ersten dieser Reihen, um sie wieder zu einer zu falten. Dies funktioniert genauso für Inhalte von jedem verbundenen Anbieter.
+Lesson and curriculum sections (for example, "Large Group" or "Engage 1") hold their own script lines, slides and videos. To change what is inside one, click the section in the service order. The section opens showing everything in it: spoken and instruction lines appear as full text marked **Say**, **Do** or **Note**, and slides or videos appear with a thumbnail.
 
-Freiwillige, die einem Element zugeordnet sind, werden neben diesem in der Servicebestellung angezeigt, sodass jeder, der den Plan überprüft, auf einen Blick sehen kann, wer jeden Teil abdeckt.
+- Click the **x** beside any line to take it out of your plan. It stays in the list, crossed out, with an arrow to put it back.
+- Click any text to reword it. A reworded line offers **restore original wording**.
+- Click **Save**. The section stays a single row in your service order, with a small label such as **6 of 8 items** showing that you have customized it, and its running time updates.
 
-## Timing und Medien
+Open the section again at any time to see your changes, put lines back, or choose **Restore original section** to undo all of them. Your edits only affect your plan -- the original lesson is never changed -- and they carry through to printed plans and to what your volunteers see.
 
-Jedes Element und jeder Abschnitt zeigt, wie lange es läuft und wann es beginnt:
+If you need an item from the section as its own row (for example, to place a song between two lines), click the arrow at the right end of the section row to show its contents as separate rows. Click the arrow on the first of those rows to fold them back into one. This works the same way for content from any connected provider.
 
-- Wenn der Plan eine einzelne ausgewählte Servicezeit hat, zeigt die linke Schiene die tatsächliche **Uhrzeit**, zu der jedes Element beginnt (zum Beispiel 9:14 Uhr). Andernfalls wird die verstrichene Zeit vom Anfang des Gottesdienstes angezeigt.
-- Abschnittskopfzeilen addieren die Laufzeit von allem darin.
-- Lieder und benutzerdefinierte Elemente zählen zu diesem Zeitplan, sobald Sie **Minuten**/**Sekunden** auf dem Bearbeitungsbildschirm des Elements eingeben.
-- Elemente, die Sie aus Ihrer Medienbibliothek hinzufügen (Bilder oder Videoclips), zeigen eine **Miniaturansicht** und werden automatisch zeitlich abgestimmt — die Dauer eines Videos wird aus der Datei selbst gemessen, während ein Bild einen geschätzten Planwert von etwa 5:00 Minuten beiträgt (in Kursivschrift angezeigt), da es auf dem Bildschirm bleibt, bis ein Bediener es voranschreitet. Sie können entweder auf eine bestimmte Dauer bearbeiten.
+Volunteers assigned to an item show up next to it in the service order, so anyone reviewing the plan can see who's covering each part at a glance.
 
-## Bearbeiten und Entfernen von Elementen
+## Timing and Media
 
-- Klicken Sie auf ein beliebiges Element in der Servicebestellung, um seine Details zu **bearbeiten**.
-- Verwenden Sie die Option **Löschen**, um ein Element aus der Bestellung zu entfernen.
+Each item and section shows how long it runs and when it starts:
+
+- If the plan has a single service time selected, the left rail shows the actual **clock time** each item starts (for example, 9:14 AM). Otherwise it shows elapsed time from the start of the service.
+- Section headers total up the running time of everything inside them.
+- Songs and custom items count toward this schedule once you enter **Minutes**/**Seconds** on the item's edit screen.
+- Items you add from your media library (images or video clips) show a **thumbnail** and are timed automatically — a video's duration is measured from the file itself, while an image contributes a ~5:00 planning estimate (shown in italics) since it stays on screen until an operator advances it. You can still edit either one to a specific duration.
+
+## Editing and Removing Items
+
+- Click on any item in the service order to **edit** its details.
+- Use the **delete** option to remove an item from the order.
 
 :::info
-Die Servicebestellung ist spezifisch für jeden Plan. Änderungen, die Sie hier vornehmen, betreffen nur den ausgewählten Plan und ändern keine anderen Pläne oder Ihre Lied bibliothek.
+The service order is specific to each plan. Changes you make here only affect the selected plan and will not alter other plans or your song library.
 :::
 
-### Massen auswahl und Löschung von Elementen
+### Bulk Selecting and Deleting Items
 
-Um mehrere Elemente in einem Abschnitt auf einmal zu löschen, anstatt sie einzeln zu löschen:
+To clear out several items in a section at once instead of deleting them one by one:
 
-1. Klicken Sie auf **Elemente auswählen** auf der Abschnittskopfzeile.
-2. Aktivieren Sie die Elemente, die Sie entfernen möchten, oder aktivieren Sie **Alle im Abschnitt auswählen**, um alles direkt unter diesem Abschnitt zu erfassen.
-3. Klicken Sie auf **Ausgewählte löschen** und bestätigen Sie.
-4. Klicken Sie auf **Auswahl beenden**, um den Auswahlmodus zu beenden.
+1. Click **Select items** on the section header.
+2. Check the items you want to remove, or check **Select all in section** to grab everything directly under that section.
+3. Click **Delete Selected** and confirm.
+4. Click **Done selecting** to exit selection mode.
 
 :::info
-Die Massenauswahl gilt nur für direkte Kinder eines Abschnitts, nicht für Elemente, die in einem Unterabschnitts ordner verschachtelt sind.
+Bulk select only applies to a section's direct children, not items nested inside a sub-section folder.
 :::
 
-## Elemente in spezifische Servicezeiten einbeziehen
+## Including Items in Specific Service Times
 
-Wenn Ihr Plan mehr als eine Servicezeit hat (zum Beispiel einen 8-Uhr- und einen 10-Uhr-Gottesdienst), können Sie wählen, in welchen Services jedes Element angezeigt werden soll. Dies ist hilfreich, wenn eine Ankündigung nur für einen Service relevant ist oder wenn ein Lied in einem Service gesungen wird, aber nicht in einem anderen.
+If your plan has more than one service time (for example, an 8 a.m. and 10 a.m. service), you can choose which services each item should appear in. This is useful when an announcement is only relevant to one service, or when a song is sung in one service but not another.
 
-1. Öffnen Sie einen Plan, bei dem auf der Registerkarte **Zeiten** zwei oder mehr Servicezeiten definiert sind.
-2. Klicken Sie auf der Registerkarte **Servicebestellung** auf ein Element, um es zu bearbeiten.
-3. Unter **In Services einbeziehen** wird ein Kontrollkästchen für jede Servicezeit mit der Uhrzeit angezeigt.
-4. Deaktivieren Sie einen beliebigen Service, bei dem das Element übersprungen werden soll.
-5. Klicken Sie auf **Speichern**.
+1. Open a plan that has two or more service times defined in the **Times** card on the **Assignments** tab.
+2. On the **Service Order** tab, click an item to edit it.
+3. Under **Include in Services**, you will see a checkbox for each service time, labeled with the time.
+4. Uncheck any service where the item should be skipped.
+5. Click **Save**.
 
-Standardmäßig ist jedes Element in jedem Service enthalten. Ausgeschlossene Servicezeiten werden ausgeblendet, wenn Sie den Plan gefiltert nach diesem Service drucken, damit jeder Service eine saubere Run Sheet nur mit den relevanten Elementen erhält.
+By default, every item is included in every service. Excluded service times are hidden when you print the plan filtered to that service, so each service receives a clean run sheet with only the relevant items.
 
 :::tip
-Der Abschnitt **In Services einbeziehen** wird nur angezeigt, wenn der Plan mehr als eine Servicezeit hat. Wenn Sie nur einen Service sehen, bearbeiten Sie die Registerkarte **Zeiten** des Plans, um zuerst zusätzliche Services hinzuzufügen.
+The **Include in Services** section only appears when the plan has more than one service time. If you only see one service, use the **Times** card on the plan's **Assignments** tab to add additional services first.
 :::
 
-### Anzeige einer anderen Position pro Service
+### Showing a Different Position per Service
 
-Wenn ein Element eine **Position** gesetzt hat, erhält jede aktivierte Servicezeit in **In Services einbeziehen** auch sein eigenes Dropdown **Position für diesen Service**. Verwenden Sie es, wenn derselbe Abschnitt in jedem Service von einem anderen Freiwilligen abgedeckt wird – lassen Sie es auf **Wie oben** eingestellt, um die Standardposition des Elements beizubehalten, oder wählen Sie eine andere Position, um es nur für diese Servicezeit zu überschreiben.
+If an item has a **Position** set, each checked service time in **Include in Services** also gets its own **Position for this service** dropdown. Use it when the same section is covered by a different volunteer at each service -- leave it set to **Same as above** to keep the item's default position, or pick a different position to override it just for that service time.
 
-## Freigabe der Servicebestellung
+## Sharing the Service Order
 
-Sobald Ihre Servicebestellung fertig ist, können Sie den vollständigen Plan (einschließlich Servicebestellung) auf der Plandetailseite drucken. Dies gibt Ihrem Team einen vollständigen Überblick über den Gottesdienst. Wenn **Freiwilligennamen anzeigen** beim Drucken aktiviert ist, wird jede Abschnittskopfzeile auch mit der zugeordneten Position des Freiwilligen daneben gedruckt, sodass Ihr Team sehen kann, wer diesen Abschnitt abdeckt, ohne die App zu öffnen. Wenn eine Kopfzeilenposition für spezifische Services überschrieben wird, zeigt der Druck jeden unterschiedlichen Positionsnamen an, zu dem er in den Services dieses Plans führt (zum Beispiel "Anbetungsteam / Jugendteam").
+Once your service order is complete, you can print the full plan (including the service order) from the plan detail page. This gives your team a complete rundown of the service. When **Show Volunteer Names** is on for the print, each section header also prints with the assigned volunteer's position next to it, so your team can see who's covering that section without opening the app. If a heading's position is overridden for specific services, the print shows every distinct position name it resolves to across the services on that plan (for example, "Worship Team / Youth Team").
 
-## Nächste Schritte
+## Next Steps
 
-- Verwalten Sie Ihr Anbetungsrepertoire auf der Seite [Lieder](./songs.md)
-- Ordnen Sie Freiwillige dem Gottesdienst auf der Registerkarte [Pläne](./plans.md) Zuordnungen zu
-- Erstellen Sie [Aufgaben](./tasks.md) für alle nachfolgenden Elemente im Zusammenhang mit dem Gottesdienst
+- Manage your worship repertoire on the [Songs](./songs.md) page
+- Assign volunteers to the service on the [Plans](./plans.md) Assignments tab
+- Create [Tasks](./tasks.md) for any follow-up items related to the service

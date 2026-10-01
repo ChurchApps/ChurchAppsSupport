@@ -21,12 +21,12 @@ Playlists let you organize your sermons into series or collections. When visitor
 ## Viewing Playlists
 
 1. In B1 Admin, open the **section menu** in the top-left corner (the section name with the small arrow) and choose **Sermons**.
-2. Click the **Playlists** tab at the top of the page.
+2. Find the **Playlists** panel on the **Sermons** page (alongside the sermon list).
 3. You will see a list of all your existing playlists with their names and descriptions.
 
 ## Creating a Playlist
 
-1. Click the **Create First Playlist** button (if you have no playlists yet) or click **Add Playlist**.
+1. Click the **Create First Playlist** button (if you have no playlists yet) or click the **Add** (+) button in the **Playlists** panel header.
 2. Enter a **name** for the playlist -- for example, the sermon series title like "Faith Foundations" or "Summer in the Psalms."
 3. Add a **description** to give visitors a brief overview of the series.
 4. Set a **publish date** to control when the playlist becomes visible.

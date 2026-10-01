@@ -1,66 +1,72 @@
 ---
-title: "Gruppendetails"
+title: Gruppendetails
 ---
 
-# Gruppendetails
+# Group Details
 
 <div class="article-intro">
 
-Wenn Sie auf eine Gruppe von der Gruppenseite klicken, werden Sie auf die Seite mit den Gruppendetails geleitet. Was Sie sehen, hängt davon ab, ob Sie angemeldet sind oder nicht, wobei angemeldete Mitglieder Zugriff auf zusätzliche Registerkarten und Funktionen haben.
+When you click on a group from the groups page, you are taken to the group detail page. What you see depends on whether you are logged in or not, with logged-in members having access to additional tabs and features.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Before You Begin</h4>
 
-- Finden Sie eine Gruppe zum Anzeigen, indem Sie [Gruppen durchsuchen](./browsing-groups.md).
-- Für vollständigen Zugriff auf alle Registerkarten [melden Sie sich](../getting-started/logging-in.md) bei Ihrem Konto an.
+- Find a group to view by [browsing groups](./browsing-groups.md).
+- For full access to all tabs, [log in](../getting-started/logging-in.md) to your account.
 
 </div>
 
-## Ansicht für Besucher (nicht angemeldet)
+## Visitor View (Not Logged In)
 
-Wenn Sie nicht angemeldet sind, sehen Sie folgendes:
+If you are not logged in, you will see the following:
 
-- **Hero-Bereich** – Ein großer Bannerbereich, der das Foto der Gruppe, den Namen, die Treffzeit und den Treffpunkt anzeigt.
-- **Beschreibung** – Die vollständige Beschreibung der Gruppe, die ihren Zweck und was Sie erwarten können, erklärt.
-- **Leiter** – Avatare und Namen der Leiter der Gruppe. Sie können auf den Namen eines Leiters klicken, um sein Profil anzuzeigen.
-- **Kalenderereignisse** – Bis zu drei bevorstehende Ereignisse für die Gruppe werden angezeigt, wobei jeweils das Datum und der Ereignistitel angezeigt werden. Wenn die Gruppe keine bevorstehenden Ereignisse hat, ist dieser Bereich verborgen.
-- **Kontaktformular** – Ein Formular, mit dem Sie eine Nachricht direkt an die Leiter der Gruppe senden können. Füllen Sie Ihren **Vorname**, **Nachname**, **E-Mail**, **Telefonnummer** und **Nachricht** aus und klicken Sie auf **Senden**. Wenn es mehrere Leiter gibt, können Sie aus einer Dropdown-Liste auswählen, welchen Sie kontaktieren möchten.
+- **Hero section** -- A large banner area showing the group's photo, name, meeting time, and meeting location.
+- **Description** -- The full description of the group explaining its purpose and what to expect.
+- **Leaders** -- Avatars and names of the group's leaders. You can click a leader's name to view their profile.
+- **Calendar events** -- Up to three upcoming events for the group are displayed, each showing the date and event title. If the group has no upcoming events, this section is hidden.
+- **Sign in to join** -- A button at the bottom of the page. Sign in (or create an account) to join the group or request to join. After you sign in, you are brought back to the group and taken straight to the join step.
 
-## Mitgliedsansicht (angemeldet)
+## Member View (Logged In)
 
-Wenn Sie angemeldet sind, zeigt die Seite mit den Gruppendetails den Hero-Bereich zusammen mit einer Seitenleiste mit Registerkarten an. Wenn Ihre Gruppe einem Lessons.church-Plantyp zugeordnet ist und diese Woche's Lektion Eltern-Take-Home-Inhalte hat, wird eine Karte **Diese Woche's Lektion** zwischen dem Hero und den Registerkarten angezeigt (nur für Mitglieder).
+If you are logged in but not a member of the group, you see the group's hero section and description along with the join option for the group (see [Joining a Group](#joining-a-group) below). The tabs described next appear once you are a member.
 
-Die verfügbaren Registerkarten sind:
+When you are a member, the group detail page shows the hero section along with a sidebar of tabs. If your group is associated with a Lessons.church plan type and this week's lesson has parent take-home content, a **This week's lesson** card appears between the hero and the tabs (members only).
 
-- **Info** – Die vollständige Beschreibung der Gruppe, formatiert mit Rich-Text-Formatierung. Wird nur angezeigt, wenn die Gruppe eine Beschreibung hat.
-- **Pläne** – Die Dienste der Gruppe. Wird nur angezeigt, wenn die Gruppe Pläne hat.
-- **Nachrichten** – Ein Ort für Gruppenmitglieder, um Nachrichten zu posten und miteinander zu interagieren. Wird nur für Mitglieder angezeigt, und nur wenn Ihre Kirche den Gruppenchat für diese Gruppe aktiviert hat. Weitere Informationen finden Sie unter [Gruppenkonversationen](./conversations.md).
-- **Mitglieder** – Eine Liste aller Mitglieder in der Gruppe, mit ihrem Foto und Namen. Sie können auf den Namen eines Mitglieds klicken, um sein Profil im [Mitgliederverzeichnis](../community/member-directory.md) zu besuchen.
-- **Anwesenheit** – Nur für Gruppenleitern (und Personal mit Anwesenheitsberechtigung) sichtbar. Ermöglicht die Verfolgung, wer an Gruppentreffen teilgenommen hat.
-- **Ereignisse** – Der Kalender der Gruppe mit Treffen und Ereignissen. Sie können zukünftige und vergangene Ereignisse durchsuchen.
-- **Ressourcen** – Freigegebene Dateien und Links, die für die Gruppe gepostet wurden. Sie können hochgeladene Dateien herunterladen oder verlinkte Ressourcen öffnen.
+The available tabs are:
 
-## Führungskräftemerkmale
+- **About** -- The group's full description, rendered with rich text formatting. Only shown if the group has a description.
+- **Plans** -- The group's service plans. Only shown if the group has plans.
+- **Messages** -- A space for group members to post messages and interact with each other. Only shown to members, and only if your church has turned on group chat for this group. See [Group Conversations](./conversations.md) for more details.
+- **Members** -- A list of all members in the group, showing their photo and name. You can click a member's name to visit their profile in the [member directory](../community/member-directory.md).
+- **Attendance** -- Visible to group leaders (and staff with attendance permission) only. Allows tracking of who attended group meetings.
+- **Events** -- The group's calendar showing meetings and events. You can browse upcoming and past events.
+- **Resources** -- Shared files and links that have been posted for the group. You can download uploaded files or open linked resources.
 
-Wenn Sie ein Leiter der Gruppe sind, haben Sie zusätzliche Bearbeitungsmöglichkeiten:
+## Leader Capabilities
 
-- **Ereignisse erstellen und bearbeiten** – Fügen Sie Ereignisse auf der Registerkarte **Ereignisse** zum Gruppenkalender hinzu. Beim Erstellen eines Ereignisses können Sie Räume und Ressourcen neben ihm reservieren – wählen Sie aus verfügbaren Räumen und Ressourcen, legen Sie optionale Aufbau- und Abbauzeiten fest, und die Buchungsanfrage wird automatisch zur Genehmigung eingereicht.
-- **Ressourcen verwalten** – Laden Sie Dateien hoch (bis zu 100 MB Speicher), fügen Sie Links hinzu oder löschen Sie vorhandene Ressourcen.
-- **Anwesenheit verfolgen** – Erfassen Sie die Teilnahme für Gruppensitzungen von der Registerkarte **Anwesenheit**.
+If you are a leader of the group, you have additional editing capabilities:
 
-Um den Namen, die Beschreibung oder die Mitgliederliste der Gruppe zu ändern, verwenden Sie B1 Admin. Siehe [Gruppenmitglieder](../../b1-admin/groups/group-members.md).
+- **Create and edit events** -- Add events to the group calendar from the **Events** tab. When creating an event, you can reserve rooms and resources alongside it — select from available rooms and resources, set optional setup and teardown times, and the booking request is automatically submitted for approval.
+- **Manage resources** -- Upload files (up to 100 MB of storage), add links, or delete existing resources.
+- **Track attendance** -- Record attendance for group sessions from the **Attendance** tab.
 
-## Einer Gruppe beitreten
+To change the group's name, description, or member list, use B1 Admin. See [Group Members](../../b1-admin/groups/group-members.md).
 
-Wenn Sie angemeldet sind und noch kein Mitglied sind, wird eine Beitrittschaltfläche auf der Seite mit den Gruppendetails angezeigt. Die Schaltflächenbeschriftung hängt von der Beitrittrichtlinie der Gruppe ab:
+## Joining a Group
 
-- **Gruppe beitreten** – Die Gruppe ist offen. Wenn Sie darauf klicken, werden Sie sofort als Mitglied hinzugefügt.
-- **Beitritt anfordern** – Die Gruppe erfordert Genehmigung. Wenn Sie darauf klicken, wird ein Dialog geöffnet, in dem Sie eine optionale Nachricht an den Gruppenleiter einschließen können, und senden Sie Ihre Anfrage ein. Weitere Informationen zum Verwalten von Anfragen finden Sie unter [Beitritt zu einer Gruppe anfordern](./join-requests.md).
+When you are logged in and not yet a member, a join button appears on the group detail page. The button label depends on the group's join policy:
 
-Wenn keine Schaltfläche angezeigt wird, ist die Gruppe geschlossen und Mitglieder müssen von einem Leiter oder Administrator manuell hinzugefügt werden.
+- **Join Group** -- The group is open. Clicking this immediately adds you as a member.
+- **Request to Join** -- The group requires approval. Clicking this opens a dialog where you can include an optional message to the group leader, then submit your request. See [Requesting to Join a Group](./join-requests.md) for details on managing your requests.
+
+After you send a request, the button is replaced by a **Request Pending** notice: "Your request to join has been sent. A group leader will review it."
+
+If you were not logged in and clicked **Sign in to join**, you return to the group after signing in and the join step starts automatically: an open group adds you right away, and a group that requires approval opens the **Request to Join** dialog.
+
+If neither button appears, the group is closed and members must be added manually by a leader or administrator.
 
 :::info
-Wenn eine Gruppe geschlossen ist und Sie ihr beitreten möchten, verwenden Sie das Kontaktformular in der Besucheransicht, um sich an die Leiter der Gruppe zu wenden.
+You must be signed in to join or request to join a group. If a group is closed and you want to join, contact your church office or one of the group's leaders.
 :::

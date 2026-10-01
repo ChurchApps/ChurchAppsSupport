@@ -25,13 +25,12 @@ B1 Admin integrates with **Stripe**, **PayPal**, **Kingdom Funding**, and **Pays
 2. In Stripe, go to **Developers > API Keys**.
 3. Copy your **Publishable Key**.
 4. Log in to [B1 Admin](https://admin.b1.church/).
-5. Click **Church** in the top navigation, then click **Edit Church Settings**.
-6. Click the edit icon next to **Church Settings**.
-7. Scroll down to the **Giving** section.
-8. Set the **Provider** to **Stripe**.
-9. Paste your Publishable Key into the **Public Key** field.
-10. Go back to Stripe and reveal your **Secret Key** (you can only view this once, so save a backup).
-11. Paste the Secret Key into the **Secret Key** field and click **Save**.
+5. Go to **Settings** and open the **Giving** section.
+6. Click the edit icon on the **Giving** section.
+7. Set the **Provider** to **Stripe**.
+8. Paste your Publishable Key into the **Public Key** field.
+9. Go back to Stripe and reveal your **Secret Key** (you can only view this once, so save a backup).
+10. Paste the Secret Key into the **Secret Key** field and click **Save**.
 
 :::warning
 Your Stripe Secret Key is only shown once. Copy it to a secure location before navigating away from the Stripe dashboard. If you lose it, you will need to generate a new key.
@@ -68,7 +67,7 @@ When a recurring gift on Stripe fails (an expired or declined card, for example)
 B1 also emails the donor when the charge fails, and again three and seven days later if it has still not gone through, with a link to update their payment method in B1.church.
 
 :::info
-If your church set up Stripe before this feature existed, open **Church Settings > Giving** and click **Save** once. That refreshes the Stripe webhook so failed charges are reported to B1.
+If your church set up Stripe before this feature existed, open **Settings** > **Giving**, click edit, and click **Save** once. That refreshes the Stripe webhook so failed charges are reported to B1.
 :::
 
 ## Adding a Donation Page to Your B1.church Site
@@ -120,8 +119,8 @@ Kingdom Funding integration is currently in beta. Contact your B1 account repres
 
 1. Sign up or log in at [kingdomfunding.org](https://kingdomfunding.org).
 2. Obtain your **Security Key** (public) and **Private Key** from the Kingdom Funding merchant portal.
-3. In B1 Admin, go to **Settings** and open **Church Settings**.
-4. In the **Giving** section, set the **Provider** to **Kingdom Funding**.
+3. In B1 Admin, go to **Settings**, open the **Giving** section and click edit.
+4. Set the **Provider** to **Kingdom Funding**.
 5. Paste your Security Key into the **Security Key** field and your Private Key into the **Private Key** field.
 6. Set the **Webhook Key** you received from Kingdom Funding, and copy the displayed webhook URL into your Kingdom Funding merchant settings so Kingdom Funding can notify B1 of completed transactions.
 7. Save.
