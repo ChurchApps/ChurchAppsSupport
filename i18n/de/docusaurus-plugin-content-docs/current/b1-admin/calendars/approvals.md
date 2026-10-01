@@ -1,7 +1,6 @@
 ---
-title: TITEL: Kalendergenehmigungen
+title: "Kalendergenehmigungen"
 ---
-INHALT:
 # Kalendergenehmigungen
 
 <div class="article-intro">

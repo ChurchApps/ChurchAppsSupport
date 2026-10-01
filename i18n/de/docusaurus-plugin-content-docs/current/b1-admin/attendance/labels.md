@@ -1,7 +1,6 @@
 ---
-title: TITEL: Check-in-Etiketten-Designer
+title: "Check-in-Etiketten-Designer"
 ---
-INHALT:
 # Check-in-Etiketten-Designer
 
 <div class="article-intro">

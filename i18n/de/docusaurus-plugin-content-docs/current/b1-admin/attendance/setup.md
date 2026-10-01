@@ -1,5 +1,5 @@
 ---
-title: # Anwesenheitserfassung einrichten
+title: "Anwesenheitserfassung einrichten"
 ---
 <div class="article-intro">
 

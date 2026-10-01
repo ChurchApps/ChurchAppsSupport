@@ -1,5 +1,5 @@
 ---
-title: # Check-In Sicherheit
+title: "Check-In Sicherheit"
 ---
 <div class="article-intro">
 

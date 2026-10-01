@@ -1,7 +1,6 @@
 ---
-title: TITLE: Check-In
+title: "Check-In"
 ---
-CONTENT:
 # Check-In
 
 <div class="article-intro">

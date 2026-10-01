@@ -1,7 +1,6 @@
 ---
-title: TITLE: Kuratierter Kalender
+title: "Kuratierter Kalender"
 ---
-CONTENT:
 # Kuratierter Kalender
 
 <div class="article-intro">
