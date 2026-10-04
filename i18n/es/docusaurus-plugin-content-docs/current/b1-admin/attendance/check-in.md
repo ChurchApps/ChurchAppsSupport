@@ -42,7 +42,7 @@ Coloca los dispositivos de registración en ubicaciones visibles y de fácil acc
 Si tu iglesia tiene múltiples sedes, deberás repetir la configuración para cada sede en [Configuración de Asistencia](setup.md). Cada dispositivo de registración puede configurarse para una sede diferente.
 :::
 
-## Hardware Recomendado
+## Hardware Recomendado {#recommended-hardware}
 
 **Tabletas** — cualquiera de éstas funciona bien con la aplicación:
 

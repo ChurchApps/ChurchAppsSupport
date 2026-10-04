@@ -89,7 +89,7 @@ Formulare, die mit der Profilseite einer Person verknüpft sind, verwenden den F
 Wenn Sie nur eine oder zwei zusätzliche Informationen über Personen verfolgen müssen -- ein Datum, eine Zahl, eine Ja/Nein-Antwort -- verwenden Sie [benutzerdefinierte Felder](../settings/custom-fields.md) anstelle eines Formulars. Sie können schneller ausgefüllt werden und sind direkt in der erweiterten Suche durchsuchbar.
 :::
 
-## Verwaltung von Haushalten
+## Verwaltung von Haushalten {#managing-households}
 
 Haushalte ermöglichen es Ihnen, Familienmitglieder zusammen zu verknüpfen. Dies ist besonders nützlich für [Check-in](../attendance/check-in.md), wo ein Elternteil alle seine Kinder auf einmal einchecken kann.
 

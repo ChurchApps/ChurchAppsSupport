@@ -42,7 +42,7 @@ Placez les appareils d'enregistrement dans des emplacements visibles et faciles 
 Si votre église a plusieurs campus, vous devrez répéter la configuration pour chaque campus dans [Configuration de la présence](setup.md). Chaque appareil d'enregistrement peut être configuré pour un campus différent.
 :::
 
-## Matériel recommandé
+## Matériel recommandé {#recommended-hardware}
 
 **Tablettes** — l'une de ces fonctionnent bien avec l'application :
 

@@ -42,7 +42,7 @@ Place check-in devices in visible, easy-to-reach locations such as lobby entranc
 If your church has multiple campuses, you'll need to repeat the setup for each campus in [Attendance Setup](setup.md). Each check-in device can be configured for a different campus.
 :::
 
-## Recommended Hardware
+## Recommended Hardware {#recommended-hardware}
 
 **Tablets** — any of these work well with the app:
 

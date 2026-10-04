@@ -71,7 +71,7 @@ Los formularios vinculados al perfil de una persona usan el tipo de formulario *
 Si solo necesitas realizar un seguimiento de una o dos piezas de información adicional en personas: una fecha, un número, una respuesta sí/no, usa [Campos Personalizados](../settings/custom-fields.md) en su lugar de un formulario. Son más rápidos de completar y se pueden buscar directamente en Búsqueda Avanzada.
 :::
 
-## Administrar Hogares
+## Administrar Hogares {#managing-households}
 
 Los hogares te permiten vincular miembros de la familia juntos. Esto es especialmente útil para [registro](../attendance/check-in.md), donde un padre puede registrar a todos sus hijos a la vez.
 

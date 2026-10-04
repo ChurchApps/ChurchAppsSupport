@@ -49,7 +49,7 @@ Das Verknüpfen von Gruppen mit Ihrem Kalender ist eine wirkungsvolle Möglichke
 Wenn Sie einen einzelnen Kalender erstellen möchten, der Veranstaltungen aus vielen Gruppen Ihrer Gemeinde zusammenführt, finden Sie unter [Kuratierter Kalender](curated-calendar) einen übersichtlichen Ansatz.
 :::
 
-## Veranstaltungsanmeldung aktivieren
+## Veranstaltungsanmeldung aktivieren {#enabling-event-registration}
 
 Sie können für jede Kalenderveranstaltung die Anmeldung aktivieren, damit sich Mitglieder über die B1-Website oder die mobile App anmelden können.
 

@@ -50,7 +50,7 @@ Connecting Gruppi Per your calendar is a powerful way Per automatically aggregat
 If you want Per Crea a single calendar that pulls Eventi from many Gruppi across your church, see [Curated Calendar](curated-calendar) for a streamlined approach.
 :::
 
-## Enabling Evento Registration
+## Enabling Evento Registration {#enabling-event-registration}
 
 You can enable registration for any calendar Evento so Membri can sign up through the B1 website or mobile app.
 

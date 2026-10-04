@@ -56,7 +56,7 @@ U kunt aangepaste formulieren rechtstreeks vanuit het profiel van een persoon in
 Formulieren die aan het profiel van een persoon zijn gekoppeld, gebruiken het type **Personen**. Als u een zelfstandig formulier nodig hebt (zoals een gebeurtenisregistratie), raadpleegt u de optie [Zelfstandig formulier](../forms/creating-forms.md) in de handleiding voor formulieren.
 :::
 
-## Huishoudens beheren
+## Huishoudens beheren {#managing-households}
 
 Met huishoudens kunt u familieleden met elkaar koppelen. Dit is vooral handig voor [checkin](../attendance/check-in.md), waarbij een ouder al zijn kinderen tegelijk kan inchecken.
 

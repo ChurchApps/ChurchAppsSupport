@@ -56,7 +56,7 @@ Du kan udfylde brugerdefinerede formularer direkte fra en persons profil. Disse 
 Formularer knyttet til en persons profil bruger **Folk** formular typen. Hvis du har brug for en selvstændig formular (som event registrering), se [Selvstændig formular mulighed](../forms/creating-forms.md) i formularer vejledningen.
 :::
 
-## Administrer husstande
+## Administrer husstande {#managing-households}
 
 Husstande lader dig forbinde familiemedlemmer sammen. Dette er særligt nyttigt til [check-in](../attendance/check-in.md), hvor en forælder kan tjekke alle deres børn ind på en gang.
 

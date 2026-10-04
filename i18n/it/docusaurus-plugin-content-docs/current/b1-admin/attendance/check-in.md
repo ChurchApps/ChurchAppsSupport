@@ -42,7 +42,7 @@ Posiziona i dispositivi di check-in in luoghi visibili e facili da raggiungere c
 Se la tua chiesa ha più campus, dovrai ripetere la configurazione per ogni campus in [Impostazioni presenze](setup.md). Ogni dispositivo di check-in può essere configurato per un campus diverso.
 :::
 
-## Hardware consigliato
+## Hardware consigliato {#recommended-hardware}
 
 **Tablet** — uno qualsiasi di questi funziona bene con l'app:
 

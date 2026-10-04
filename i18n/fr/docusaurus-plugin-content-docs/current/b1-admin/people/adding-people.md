@@ -71,7 +71,7 @@ Les formulaires liés au profil d'une personne utilisent le type de formulaire *
 Si vous n'avez besoin de suivre qu'une ou deux informations supplémentaires sur les personnes - une date, un nombre, une réponse oui/non - utilisez [Champs personnalisés](../settings/custom-fields.md) à la place d'un formulaire. Ils sont plus rapides à remplir et sont consultables directement dans Recherche avancée.
 :::
 
-## Gestion des ménages
+## Gestion des ménages {#managing-households}
 
 Les ménages vous permettent de lier les membres de la famille ensemble. Ceci est particulièrement utile pour l'[enregistrement](../attendance/check-in.md), où un parent peut enregistrer tous ses enfants à la fois.
 

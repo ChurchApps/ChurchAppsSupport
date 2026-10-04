@@ -42,7 +42,7 @@ Platzieren Sie Anmeldungsgeräte an sichtbaren, leicht zu erreichenden Orten wie
 Wenn Ihre Kirche mehrere Campusse hat, müssen Sie das Setup für jeden Campus in der [Anwesenheits-Einrichtung](setup.md) wiederholen. Jedes Anmeldungsgerät kann für einen anderen Campus konfiguriert werden.
 :::
 
-## Empfohlene Hardware
+## Empfohlene Hardware {#recommended-hardware}
 
 **Tablets** — jedes dieser Geräte funktioniert gut mit der App:
 

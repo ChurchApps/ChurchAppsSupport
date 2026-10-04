@@ -56,7 +56,7 @@ Het verbinden van groepen aan uw agenda is een krachtige manier om events automa
 Als u een enkele agenda wilt maken die events van veel groepen in uw kerk samenbrengt, zie [Curated Calendar](curated-calendar) voor een gestroomlijnde aanpak.
 :::
 
-## Event-registratie inschakelen
+## Event-registratie inschakelen {#enabling-event-registration}
 
 U kunt registratie inschakelen voor elk agenda-event zodat leden zich via de B1-website of mobiele app kunnen aanmelden.
 

@@ -42,7 +42,7 @@ Placer ind- og udchecking-enheder på synlige, nemme-at-nå steder, såsom lobby
 Hvis din kirke har flere campusser, skal du gentage opsætningen for hver campus i [Fremmøde-opsætning](setup.md). Hver ind- og udchecking-enhed kan konfigureres til en anden campus.
 :::
 
-## Anbefalet hardware
+## Anbefalet hardware {#recommended-hardware}
 
 **Tablets** — alle disse virker godt med appen:
 

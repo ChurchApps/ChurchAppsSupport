@@ -89,7 +89,7 @@ Forms linked to a person's profile use the **People** form type. If you need a s
 If you only need to track one or two extra pieces of information on people — a date, a number, a yes/no answer — use [Custom Fields](../settings/custom-fields.md) instead of a form. They're quicker to fill in and are searchable directly in Advanced Search.
 :::
 
-## Managing Households
+## Managing Households {#managing-households}
 
 Households let you link family members together. This is especially useful for [check-in](../attendance/check-in.md), where a parent can check in all their children at once.
 

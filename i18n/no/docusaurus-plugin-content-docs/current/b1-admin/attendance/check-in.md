@@ -42,7 +42,7 @@ Plasser innsjekkingsenheter på synlige, lett tilgjengelige steder som lobbyer e
 Hvis kirken din har flere campuser, må du gjenta oppsettet for hver campus i [Innsjekking Setup](setup.md). Hver innsjekking-enhet kan konfigureres for en annen campus.
 :::
 
-## Anbefalt maskinvare
+## Anbefalt maskinvare {#recommended-hardware}
 
 **Nettbrett** — noen av disse fungerer godt med appen:
 

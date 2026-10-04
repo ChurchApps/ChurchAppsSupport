@@ -71,7 +71,7 @@ Ang mga form na naka-link sa profile ng tao ay gumagamit ng uri ng **Mga Tao**. 
 Kung kailangan mo lamang na subaybayan ang isang o dalawang karagdagang piraso ng impormasyon sa mga tao -- isang petsa, isang numero, isang oo/hindi na sumagot -- gamitin ang [Custom Fields](../settings/custom-fields.md) sa halip na isang form. Sila ay mas mabilis na mapapuno at ay maaaring mahanap nang direkta sa Advanced Search.
 :::
 
-## Pag-manage ng mga Tahanan
+## Pag-manage ng mga Tahanan {#managing-households}
 
 Ang mga tahanan ay nagbibigay-daan sa iyo na i-link ang mga miyembro ng pamilya nang magkasama. Ito ay partikular na kapaki-pakinabang para sa [check-in](../attendance/check-in.md), kung saan ang magulang ay maaaring mag-check in ng lahat ng kanilang mga anak nang sabay-sabay.
 

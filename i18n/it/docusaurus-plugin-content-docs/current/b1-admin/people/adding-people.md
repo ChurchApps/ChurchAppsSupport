@@ -71,7 +71,7 @@ I moduli collegati al profilo di una persona utilizzano il tipo di modulo **Pers
 Se hai bisogno di tracciare solo uno o due extra di informazioni sulle persone - una data, un numero, una risposta sì/no - usa [Campi Personalizzati](../settings/custom-fields.md) invece di un modulo. Sono più veloci da compilare e sono ricercabili direttamente in Ricerca Avanzata.
 :::
 
-## Gestione dei Nuclei Familiari
+## Gestione dei Nuclei Familiari {#managing-households}
 
 I nuclei familiari ti permettono di collegare i familiari insieme. Ciò è particolarmente utile per il [check-in](../attendance/check-in.md), dove un genitore può registrare tutti i suoi figli in una volta.
 

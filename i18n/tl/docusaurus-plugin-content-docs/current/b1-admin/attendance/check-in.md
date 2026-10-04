@@ -42,7 +42,7 @@ Ilagay ang check-in device sa nakikitang, madaling maabot na lokasyon tulad ng l
 Kung may mga campus ang iyong simbahan, kailangan mong ulitin ang setup para sa bawat campus sa [Attendance Setup](setup.md). Bawat check-in device ay maaaring i-configure para sa ibang campus.
 :::
 
-## Inirerekomendasyon na Hardware
+## Inirerekomendasyon na Hardware {#recommended-hardware}
 
 **Tablet** — ang sinumang ito ay gumagana nang maayos sa app:
 

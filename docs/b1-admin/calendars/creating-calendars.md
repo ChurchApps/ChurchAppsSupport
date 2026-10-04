@@ -50,7 +50,7 @@ Connecting groups to your calendar is a powerful way to automatically aggregate 
 If you want to create a single calendar that pulls events from many groups across your church, see [Curated Calendar](curated-calendar) for a streamlined approach.
 :::
 
-## Enabling Event Registration
+## Enabling Event Registration {#enabling-event-registration}
 
 You can enable registration for any calendar event so members can sign up through the B1 website or mobile app.
 

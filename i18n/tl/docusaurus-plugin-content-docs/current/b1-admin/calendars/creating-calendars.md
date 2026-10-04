@@ -50,7 +50,7 @@ Ang pagkonekta ng mga grupo sa iyong calendar ay isang makapangyarihang paraan p
 Kung gusto mong gumawa ng iisang calendar na kumukuha ng mga event mula sa maraming grupo sa buong simbahan, tingnan ang [Curated Calendar](curated-calendar) para sa isang mas simpleng paraan.
 :::
 
-## Pag-enable ng Event Registration
+## Pag-enable ng Event Registration {#enabling-event-registration}
 
 Puwede mong i-enable ang registration para sa anumang calendar event para makapag-sign up ang mga miyembro sa pamamagitan ng B1 website o mobile app.
 

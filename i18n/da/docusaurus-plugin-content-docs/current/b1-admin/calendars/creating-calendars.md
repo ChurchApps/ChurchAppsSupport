@@ -56,7 +56,7 @@ Tilslutning af grupper til din kalender er en kraftfuld måde at samle begivenhe
 Hvis du vil oprette en enkelt kalender, der trækker begivenheder fra mange grupper på tværs af din kirke, skal du se [Kurateret kalender](curated-calendar) for en strømlinet tilgang.
 :::
 
-## Aktivering af begivenhedsregistrering
+## Aktivering af begivenhedsregistrering {#enabling-event-registration}
 
 Du kan aktivere registrering for enhver kalenderbegivenhed, så medlemmer kan tilmelde sig gennem B1-webstedet eller mobilappen.
 

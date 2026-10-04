@@ -41,7 +41,7 @@ Beka emadivayisi ekungena endzaweni letibonakalako, letifinyeleleka lula njengas
 Nangabe libandla lakho linemakhampasi lamanyenti, kufanele uphindze kuhlelwa ngalinye likhampasi ku-[Kuhlelwa Kwekubakhona](setup.md). Idivayisi ngayinye yekungena ingahlelwa yelinye likhampasi lelihlukile.
 :::
 
-## Ema-Hardware Lancomekako
+## Ema-Hardware Lancomekako {#recommended-hardware}
 
 **Ema-Tablet** — nome ngusiphi salawa asebenta kahle ne-app:
 

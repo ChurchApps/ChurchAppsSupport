@@ -50,7 +50,7 @@ Tilknytting av grupper til kalendarvisningen er en kraftig måte å automatisk a
 Hvis du vil opprette en enkelt kalender som trekker hendelser fra mange grupper på tvers av kirken, se [Kuratert kalender](curated-calendar) for en strømlinjeformet tilnærming.
 :::
 
-## Aktiver hendelsesregistrering
+## Aktiver hendelsesregistrering {#enabling-event-registration}
 
 Du kan aktivere registrering for en hendelse slik at medlemmer kan melde seg på via B1-nettstedet eller mobilapper.
 

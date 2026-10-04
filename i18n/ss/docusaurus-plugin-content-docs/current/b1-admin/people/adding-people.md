@@ -60,7 +60,7 @@ Emafomu lahlotjaniswe nephrofayela yemuntfu asebentisa luhlobo lwefomu **People*
 Nangabe udzinga kulandzelela kancane kwemininingwane lengetiwe kubantu — lusuku, linombolo, imphendvulo ye-yebo/cha — sebentisa [Custom Fields](../settings/custom-fields.md) esikhundleni sefomu. Ziphangisa kugcwaliswa futsi ziyatfolakala nakusetjentiswa i-Advanced Search.
 :::
 
-## Kuphatsa Imindeni
+## Kuphatsa Imindeni {#managing-households}
 
 Imindeni ikuvumela kutsi uhlanganise emalunga emndeni ndzawonye. Loku kusita kakhulu ku-[kubhalisa nasufika](../attendance/check-in.md), lapho umtali angabhalisela bonkhe bantfwana bakhe kanyekanye.
 

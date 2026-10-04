@@ -50,7 +50,7 @@ Conectar grupos a su calendario es una forma poderosa de agregar eventos automá
 Si desea crear un único calendario que extraiga eventos de muchos grupos de su iglesia, consulte [Calendario Curado](curated-calendar) para un enfoque simplificado.
 :::
 
-## Habilitar el Registro de Eventos
+## Habilitar el Registro de Eventos {#enabling-event-registration}
 
 Puede habilitar el registro para cualquier evento del calendario para que los miembros puedan inscribirse a través del sitio web de B1 o la aplicación móvil.
 

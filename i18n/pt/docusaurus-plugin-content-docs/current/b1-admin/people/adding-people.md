@@ -71,7 +71,7 @@ Formulários vinculados ao perfil de uma pessoa usam o tipo de formulário **Pes
 Se você apenas precisar rastrear uma ou duas peças extras de informação em pessoas -- uma data, um número, uma resposta sim/não -- use [Campos Personalizados](../settings/custom-fields.md) em vez de um formulário. Eles são mais rápidos de preencher e são pesquisáveis diretamente na Pesquisa Avançada.
 :::
 
-## Gerenciando Famílias
+## Gerenciando Famílias {#managing-households}
 
 As famílias permitem que você vincule membros da família. Isso é especialmente útil para [verificação](../attendance/check-in.md), onde um pai pode verificar todos os seus filhos de uma vez.
 

@@ -42,7 +42,7 @@ Plaats incheckingsapparaten op zichtbare, gemakkelijk bereikbare plaatsen, zoals
 Als uw kerk meerdere campussen heeft, moet u de instellingen voor elke campus in [Aanwezigheid instellen](setup.md) herhalen. Elk incheckingsapparaat kan voor een andere campus worden geconfigureerd.
 :::
 
-## Aanbevolen hardware
+## Aanbevolen hardware {#recommended-hardware}
 
 **Tablets** -- elk van deze werkt goed met de app:
 
