@@ -21,8 +21,8 @@ The Appearance page lets you customize the overall look and feel of your church 
 
 ## Accessing Appearance Settings
 
-1. In the B1 Admin, click **Website** in the left menu.
-2. Click the **Appearance** tab at the top of the Website Pages view.
+1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left) and expand **Website**.
+2. Click **Appearance**.
 3. The Site Styles page loads with a live preview of your website on the left and **Style Settings** options on the right.
 
 ## Color Palette

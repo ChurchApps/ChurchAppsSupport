@@ -1,58 +1,60 @@
 ---
-title: "Gjestregistrering"
+title: "Gjesteregistrering"
 ---
 
-# Gjestregistrering
+# Gjesteregistrering
 
 <div class="article-intro">
 
-Hvis du besøker en kirke for første gang, kan du registrere deg selv og familien din som gjester ved å bruke gjestregistreringssiden. Dette oppretter en post i kirkens system slik at frivillige kan sjekke deg inn når du kommer.
+Hvis du besøker en menighet for første gang, kan du registrere deg selv og familien din som gjester via registreringssiden for gjester. Dette oppretter en oppføring i menighetens system, slik at frivillige kan sjekke deg inn når du kommer.
 
 </div>
 
 <div class="prereqs">
-<h4>Før Du Begynner</h4>
+<h4>Før du begynner</h4>
 
-- Kirken din må ha QR-gjestregistrering aktivert
-- Skann QR-koden som vises ved innsjekking-kioskén, eller motta en lenke fra en kirkevoluntær
+- Menigheten din må ha slått på QR-registrering av gjester
+- Skann QR-koden som vises på innsjekkingskiosken, trykk på **Registrer her** på kiosken, eller få en lenke av en frivillig i menigheten
 
 </div>
 
-## Hvordan Gjestregistrering Fungerer
+## Slik fungerer gjesteregistrering
 
-Gjestregistrering er designet for besøkende som ikke ennå har en konto. En QR-kode vises ved kirkens innsjekking-kiosk som lenker til registreringssiden. Du kan også motta lenken fra en frivillig eller velsigner.
+Gjesteregistrering er laget for besøkende som ennå ikke har en konto. Trykk på **Registrer deg som gjest** på menighetens innsjekkingskiosk for å vise en QR-kode som lenker til registreringssiden. Du kan også få lenken av en frivillig eller en vert.
 
-## Registrer Familien Din
+Har du ikke telefonen for hånden? Trykk på **Registrer her** i det samme QR-kodevinduet på kiosken for å fylle ut skjemaet på selve kiosken. Se [Registrere seg som gjest](../../b1-checkin/check-in/looking-up-members#registering-as-a-guest) for hvordan dette fungerer på kiosken.
 
-1. **Skann QR-koden** ved innsjekking-kioskén eller åpne gjestregistreringslenken på telefonen din.
-2. Gjestregistreringsskjemaet vises med felt for **primærkontakten**:
-   - **Fornavn** (obligatorisk)
-   - **Etternavn** (obligatorisk)
+## Registrere familien din
+
+1. **Skann QR-koden** på innsjekkingskiosken eller åpne lenken til gjesteregistreringen på telefonen din. (Hvis du trykket på **Registrer her** på kiosken, er skjemaet allerede åpent.)
+2. Registreringsskjemaet for gjester vises med felt for **primærkontakten**:
+   - **Fornavn** (påkrevd)
+   - **Etternavn** (påkrevd)
    - **E-post** (valgfritt)
    - **Telefon** (valgfritt)
-3. For å legge til **familiemedlemmer**, trykk **Legg Til Familjemedlem** og skriv inn fornavn og etternavn deres. Du kan legge til opptil 10 familiemedlemmer.
-4. For å fjerne et familiemedlem, trykk sletteknappen ved siden av navnet deres.
-5. Trykk **Registrer** for å sende inn.
+3. For å legge til **familiemedlemmer** trykker du på **Legg til familiemedlem** og skriver inn fornavn og etternavn. Du kan legge til opptil 10 familiemedlemmer.
+4. For å fjerne et familiemedlem trykker du på fjern-knappen ved siden av navnet.
+5. Trykk på **Registrer** for å sende inn.
 
-## Etter Registrering
+## Etter registreringen
 
-Når du sender inn skjemaet, vises en bekreftelsesside med meldingen: "Registrering Fullført -- Alt er klart! En ansatt vil sjekke deg inn snart."
+Når du har sendt inn skjemaet, vises en bekreftelsesskjerm med meldingen: «Registreringen er fullført -- Alt er klart! En medarbeider sjekker deg inn om litt.»
 
-Registreringen din oppretter poster i kirkens database:
+Registreringen din oppretter oppføringer i menighetens database:
 
-- En **husstand** opprettes ved hjelp av primærkontaktens etternavn.
-- **Personposter** opprettes for hvert familjemedlem med medlemsstatus "Gjest".
-- En kirkevoluntær eller administrator kan deretter sjekke inn familien din ved hjelp av [B1 Innsjekking](../../b1-checkin/check-in/looking-up-members)-kioskén.
+- En **husstand** opprettes med primærkontaktens etternavn.
+- **Personoppføringer** opprettes for hvert familiemedlem med medlemsstatusen «Gjest».
+- En frivillig eller administrator i menigheten kan deretter sjekke familien din inn via kiosken i [B1 Checkin](../../b1-checkin/check-in/looking-up-members).
 
 :::info
-Hvis e-posten din samsvarer med en eksisterende post i kirkens database, lenker systemet til den posten i stedet for å opprette en duplikat. Dette holder kirkens data ren.
+Hvis e-postadressen din samsvarer med en eksisterende oppføring i menighetens database, kobler systemet til den oppføringen i stedet for å opprette en duplikat. Dette holder menighetens data ryddige.
 :::
 
 :::tip
-Å gi e-postadressen din hjelper kirken å følge opp med deg etter besøket. Det er valgfritt, men anbefalt.
+Hvis du oppgir e-postadressen din, kan menigheten ta kontakt med deg etter besøket. Det er valgfritt, men anbefalt.
 :::
 
-## Relaterte Artikler
+## Relaterte artikler
 
-- [Selv innsjekking](./self-checkin) -- Sjekk deg selv inn etter registrering
-- [Legge Til Gjester (Kiosk)](../../b1-checkin/check-in/adding-guests) -- Hvordan frivillige legger til gjester ved kioskén
+- [Selvinnsjekking](./self-checkin) -- Sjekk deg selv inn etter at du har registrert deg
+- [Legge til gjester (kiosk)](../../b1-checkin/check-in/adding-guests) -- Slik legger frivillige til gjester på kiosken

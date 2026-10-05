@@ -2,83 +2,92 @@
 title: "गीत"
 ---
 
-# Songs
+# गीत
 
 <div class="article-intro">
 
-The Songs page manages your worship song library. Keep all your song details, lyrics, and arrangements in one place so your worship team can easily prepare for upcoming services and maintain a consistent repertoire.
+गीत पृष्ठ आपकी पूजा गीत लाइब्रेरी का प्रबंधन करता है। सभी आपकी गीत विवरण, गीत, और व्यवस्था को एक जगह रखें ताकि आपकी पूजा टीम आने वाली सेवाओं के लिए आसानी से तैयार कर सके और एक सुसंगत प्रदर्शनी बनाए रख सके।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- Navigate to the **Serving** section in B1 Admin to access the Songs page
-- Optionally, have your [service plans](./plans.md) set up so you can link songs directly into the [service order](./service-order.md)
+- B1 Admin में [Jump menu](../introduction.md#getting-around-with-the-jump-menu) में, **सेवा > गीत** चुनें गीत पृष्ठ तक पहुंचने के लिए
+- वैकल्पिक रूप से, अपनी [सेवा योजनाओं](./plans.md) को सेट करें ताकि आप गीतों को सीधे [सेवा क्रम](./service-order.md) में लिंक कर सकें
 
 </div>
 
-## Browsing Your Song Library
+## अपनी गीत लाइब्रेरी को ब्राउज़ करना
 
-When you open the **Songs** page, your songs are displayed as cards. Each card shows the song's thumbnail image, title, artist, and duration. Scroll through the library or use search to find what you need.
+जब आप **गीत** पृष्ठ खोलते हैं, तो आपके गीत कार्ड के रूप में प्रदर्शित होते हैं। प्रत्येक कार्ड गीत की थंबनेल छवि, शीर्षक, कलाकार, और अवधि दिखाता है। लाइब्रेरी के माध्यम से स्क्रॉल करें या आवश्यक खोजने के लिए खोज का उपयोग करें।
 
-## Searching for Songs
+## गीतों की खोज
 
-1. Click the **Search** button on the Songs page.
-2. Type a song **title** or **artist** name.
-3. The results will filter as you type, showing matching songs from your library.
+1. गीत पृष्ठ पर **खोज** बटन पर क्लिक करें।
+2. एक गीत **शीर्षक** या **कलाकार** नाम टाइप करें।
+3. परिणाम आपकी लाइब्रेरी से मेल खाने वाली गीतों को दिखाते हुए फ़िल्टर होंगे।
 
-## Adding a Song
+## एक गीत जोड़ना
 
-1. Click **Add Song** on the Songs page.
-2. Search the external song database by title or artist.
-3. Select the song you want to add.
-4. The song will be added to your library with its basic details pre-filled.
+1. गीत पृष्ठ पर **गीत जोड़ें** पर क्लिक करें।
+2. शीर्षक या कलाकार द्वारा बाहरी गीत डेटाबेस में खोजें।
+3. जो गीत आप जोड़ना चाहते हैं उसे चुनें।
+4. गीत अपनी लाइब्रेरी में जोड़ा जाएगा अपने बुनियादी विवरण पूर्व-भरे हुए के साथ।
 
 :::tip
-After adding a song, click on it to review and update its details, add arrangements, or attach external links like YouTube videos or chord charts.
+एक गीत जोड़ने के बाद, इसे क्लिक करें इसके विवरण की समीक्षा और अपडेट करने के लिए, व्यवस्था जोड़ने के लिए, या बाहरी लिंक संलग्न करने के लिए जैसे YouTube वीडियो या कॉर्ड चार्ट।
 :::
 
-## Viewing and Editing a Song
+### WorshipCommons से मुक्त गीत
 
-Click on any song card to open its detail page. From here you can:
+आपके खोज परिणामों में **WorshipCommons -- मुक्त** अनुभाग भी शामिल हो सकता है नियमित परिणामों के साथ। ये [WorshipCommons](https://worshipcommons.org) से रविवार-तैयार गीत हैं जिन्हें समीक्षा की गई है और पूजा उपयोग के लिए लाइसेंस दिया गया है। प्रत्येक परिणाम एक लाइसेंस बैज दिखाता है -- **पूजा के लिए मुक्त** या **सार्वजनिक डोमेन** -- ताकि आप इसे जोड़ने से पहले शर्तें जान सकें।
 
-- **Edit song details** -- Update the title, artist, duration, and other metadata.
-- **Manage arrangements** -- Each song can have multiple arrangements (for example, different keys or versions). Add, edit, or remove arrangements as needed.
-- **Add lyrics** -- Enter or update the lyrics for each arrangement using ChordPro notation (for example, `[G]Amazing grace`). A live preview next to the editor renders the formatted chord chart as you type, so you can see exactly what your team will see.
-- **Set the key** -- Specify the musical key for each arrangement using the key picker next to the lyrics. Changing the key transposes the displayed chords immediately, both on the arrangement page and when opening the song from a service plan, so your team always sees chords in the key they're actually playing.
-- **Add external links** -- Attach links to resources like YouTube videos, chord charts, or sheet music hosted elsewhere.
+- नियमित खोज परिणाम की तरह अपनी लाइब्रेरी में इसे जोड़ने के लिए एक WorshipCommons परिणाम पर क्लिक करें।
+- **WorshipCommons पर देखें** एक नई टैब में मूल सूचीकरण को खोलने के लिए पर क्लिक करें।
 
-## Arrangements
+केवल वह गीत जो WorshipCommons की समीक्षा प्रक्रिया पास कर गई हैं यहां दिखाई देते हैं, इसलिए चयन मुख्य गीत डेटाबेस से छोटा हो सकता है।
 
-An arrangement represents a distinct version of a song — for example, a faster modern version versus a slower acoustic take, or the same song in a different key for a different team. Each arrangement of the same song shares the song title and artist but has its own independent settings:
+## एक गीत देखना और संपादित करना
 
-- **Key** — the musical key the arrangement is performed in
-- **BPM** — tempo in beats per minute
-- **Length** — duration in seconds
-- **Meter** — time signature (e.g., 4/4, 3/4, 6/8)
-- **Sequence** — the chord/section structure (e.g., Intro → Verse → Chorus → Bridge)
-- **Lyrics** — for display or projection
-- **External links** — chord charts, YouTube recordings, sheet music, or other resources
+किसी भी गीत कार्ड पर क्लिक करके इसके विवरण पृष्ठ खोलें। यहां से आप कर सकते हैं:
 
-When you add a song to a [Service Order](./service-order.md), you can choose which arrangement to use for that specific service, so your team always rehearses and plays the right version.
+- **गीत विवरण संपादित करें** -- शीर्षक, कलाकार, अवधि, और अन्य मेटाडेटा अपडेट करें।
+- **व्यवस्था प्रबंधित करें** -- प्रत्येक गीत में कई व्यवस्थाएं हो सकती हैं (उदा., विभिन्न कुंजियां या संस्करण)। आवश्यकतानुसार व्यवस्था जोड़ें, संपादित करें, या निकालें।
+- **गीत जोड़ें** -- ChordPro संकेतन (उदा., `[G]आश्चर्यजनक कृपा`) का उपयोग करके प्रत्येक व्यवस्था के लिए गीत दर्ज करें या अपडेट करें। संपादक के बगल में एक लाइव पूर्वावलोकन प्रदान किए गए कॉर्ड चार्ट को प्रस्तुत करता है, ताकि आप देख सकें कि आपकी टीम टाइप करते समय बिल्कुल क्या देखेगी।
+- **कुंजी सेट करें** -- प्रत्येक व्यवस्था के लिए संगीत कुंजी निर्दिष्ट करें गीत के बगल में कुंजी पिकर का उपयोग करके। कुंजी परिवर्तन व्यवस्था पृष्ठ पर और जब सेवा योजना से गीत खोला जाता है दोनों तरह से प्रदर्शित कॉर्ड को तुरंत ट्रांसपोज़ करता है, ताकि आपकी टीम हमेशा उस कुंजी में कॉर्ड देखे जो वे वास्तव में खेल रहे हैं।
+- **बाहरी लिंक जोड़ें** -- कहीं और होस्ट किए गए संसाधनों के लिंक संलग्न करें जैसे YouTube वीडियो, कॉर्ड चार्ट, या शीट संगीत।
 
-### Rehearsal Audio
+## व्यवस्था
 
-Worship admins can attach a rehearsal audio track to an arrangement so the team can listen ahead of practice:
+एक व्यवस्था एक गीत का एक विशिष्ट संस्करण है -- उदा., एक तेजी से आधुनिक संस्करण बनाम एक धीमा ध्वनिक टेक, या एक अलग कुंजी में एक अलग टीम के लिए समान गीत। एक ही गीत की प्रत्येक व्यवस्था गीत शीर्षक और कलाकार साझा करते हैं लेकिन अपने स्वतंत्र सेटिंग्स हैं:
 
-1. Open the song and select the arrangement.
-2. Click **Upload Audio**.
-3. Choose an MP3, M4A, or AAC file (up to 25 MB -- WAV isn't accepted, to keep storage usage manageable).
-4. Save. The track plays inline wherever that arrangement appears -- on the arrangement page in B1 Admin and in the service plan when a team member opens it in the B1.church member portal. Plan items with audio show a music-note icon instead of a thumbnail.
+- **कुंजी** -- संगीत कुंजी व्यवस्था प्रदर्शन में है
+- **BPM** -- प्रति मिनट बीट में गति
+- **लंबाई** -- सेकंड में अवधि
+- **मीटर** -- समय हस्ताक्षर (उदा., 4/4, 3/4, 6/8)
+- **अनुक्रम** -- कॉर्ड/अनुभाग संरचना (उदा., इंट्रो → श्लोक → कोरस → ब्रिज)
+- **गीत** -- प्रदर्शन या प्रक्षेपण के लिए
+- **बाहरी लिंक** -- कॉर्ड चार्ट, YouTube रिकॉर्डिंग, शीट संगीत, या अन्य संसाधन
 
-Deleting the arrangement also removes its uploaded audio file.
+जब आप एक गीत को [सेवा क्रम](./service-order.md) में जोड़ते हैं, तो आप चुन सकते हैं कि व्यवस्था उस विशिष्ट सेवा के लिए उपयोग करने के लिए, तो आपकी टीम हमेशा सही संस्करण रिहर्सल करता है और खेलता है।
+
+### रिहर्सल ऑडियो
+
+पूजा प्रशासक एक व्यवस्था को एक रिहर्सल ऑडियो ट्रैक संलग्न कर सकते हैं ताकि टीम अभ्यास से पहले सुन सके:
+
+1. गीत खोलें और व्यवस्था चुनें।
+2. **ऑडियो अपलोड करें** पर क्लिक करें।
+3. एक MP3, M4A, या AAC फ़ाइल चुनें (25 MB तक -- WAV स्वीकार नहीं है, भंडारण उपयोग प्रबंधनीय रखने के लिए)।
+4. बचाते हैं। ट्रैक इनलाइन कहीं भी उस व्यवस्था में दिखाई देता है -- B1 Admin में व्यवस्था पृष्ठ पर और सेवा योजना में जब एक टीम सदस्य B1.church सदस्य पोर्टल में इसे खोलता है। ऑडियो के साथ आइटमों की योजना करें एक थंबनेल के बजाय एक संगीत-नोट आइकन दिखाते हैं।
+
+व्यवस्था को हटाने से भी इसकी अपलोड की गई ऑडियो फ़ाइल को हटाता है।
 
 :::info
-Songs from your library can be added directly to a [Service Order](./service-order.md) within a plan, linking the song details and the chosen arrangement to that specific service.
+आपकी लाइब्रेरी से गीत सीधे एक [सेवा क्रम](./service-order.md) में जोड़े जा सकते हैं एक योजना के भीतर, गीत विवरण और चुनी गई व्यवस्था को उस विशिष्ट सेवा में जोड़ते हुए।
 :::
 
-## Next Steps
+## अगली कदम
 
-- Add songs to your [Service Order](./service-order.md) when building out a [service plan](./plans.md)
-- Coordinate with your worship team using [Tasks](./tasks.md) for song preparation and practice
+- [सेवा क्रम](./service-order.md) बनाते समय अपनी [सेवा योजना](./plans.md) में गीत जोड़ें
+- गीत की तैयारी और अभ्यास के लिए [कार्य](./tasks.md) का उपयोग करके अपनी पूजा टीम के साथ समन्वय करें

@@ -20,7 +20,7 @@ Playlists let you organize your sermons into series or collections. When visitor
 
 ## Viewing Playlists
 
-1. In B1 Admin, open the **section menu** in the top-left corner (the section name with the small arrow) and choose **Sermons**.
+1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Sermons**, and click **Sermons**.
 2. Find the **Playlists** panel on the **Sermons** page (alongside the sermon list).
 3. You will see a list of all your existing playlists with their names and descriptions.
 

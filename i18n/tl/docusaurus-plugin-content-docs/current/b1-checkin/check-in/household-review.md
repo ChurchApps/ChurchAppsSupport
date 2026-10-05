@@ -1,63 +1,64 @@
 ---
-title: "Pagsusuri sa Iyong Sambahayan"
+title: "Pagsusuri ng Iyong Sambahayan"
 ---
 
-# Pagsusuri sa Iyong Sambahayan
+# Pagsusuri ng Iyong Sambahayan
 
 <div class="article-intro">
 
-Matapos kang pumili ng isang tao mula sa mga resulta ng paghahanap, nilo-load ng app ang iyong buong sambahayan at ipinapakita ito sa screen ng pagsusuri ng sambahayan. Ito ang sentral na sentro ng proseso ng check-in kung saan makikita mo ang lahat sa iyong pamilya at mapamahalaan ang kanilang mga pagtatalaga ng grupo bago mag-check in.
+Pagkatapos mong pumili ng isang tao mula sa mga resulta ng paghahanap, nilo-load ng app ang buong sambahayan mo at ipinapakita ito sa household review screen. Ito ang sentro ng proseso ng check-in kung saan makikita mo ang lahat ng kasama sa iyong pamilya at maaayos mo ang kanilang mga group assignment bago mag-check in.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Magsimula</h4>
 
-- [Pumili ng serbisyo](./selecting-service) mula sa screen ng mga serbisyo
-- [Hanapin ang isang miyembro](./looking-up-members) at piliin sila mula sa mga resulta ng paghahanap
+- [Pumili ng serbisyo](./selecting-service) mula sa services screen
+- [Maghanap ng miyembro](./looking-up-members) at piliin sila mula sa mga resulta ng paghahanap
 
 </div>
 
 ## Pagtingin sa mga Miyembro ng Sambahayan
 
-Lumilitaw ang bawat miyembro ng sambahayan bilang isang card na may:
+Ang bawat miyembro ng sambahayan ay lumalabas bilang isang card na may:
 
-- Ang kanilang **larawan** (o isang placeholder na icon kung walang larawan sa file)
+- Ang kanilang **larawan** (o isang placeholder icon kung walang larawang naka-file)
 - Ang kanilang **display name**
-- Isang **buod ng kanilang kasalukuyang mga pagtatalaga ng grupo** (ipinapakita bilang maliliit na chip sa ilalim ng pangalan kapag naka-collapse ang card)
-- Isang **arrow ng expand/collapse** sa kanang bahagi
+- Isang **buod ng kanilang kasalukuyang mga group assignment** (ipinapakita bilang maliliit na chip sa ibaba ng pangalan kapag naka-collapse ang card)
+- Isang **expand/collapse na arrow** sa kanang bahagi
 
-## Pagpapalawak ng isang Miyembro
+## Pag-expand ng Miyembro
 
-I-tap ang card ng isang miyembro upang palawakin ito. Kapag na-expand, makikita mo ang isang hilera para sa bawat **oras ng serbisyo** sa loob ng piniling serbisyo. Ipinapakita ng bawat hilera ang:
+I-tap ang card ng isang miyembro para i-expand ito. Kapag naka-expand, makikita mo ang isang row para sa bawat **service time** sa napiling serbisyo. Ipinapakita ng bawat row ang:
 
-- Ang **pangalan ng oras ng serbisyo** (halimbawa, "9:00 AM" o "11:00 AM")
-- Isang **pindutang** nagpapakita ng kasalukuyang itinalagang grupo, o "Select Group" kung wala pang naitalagang grupo
+- Ang **pangalan ng service time** (halimbawa, "9:00 AM" o "11:00 AM")
+- Ang **mga grupong iniaalok** sa service time na iyon, nakalista sa ibaba ng pangalan (halimbawa, "Nursery, Preschool, Adult Bible Class"), para makita mo kung aling mga klase ang available bago ka pumili
+- Isang **button** na nagpapakita ng kasalukuyang naka-assign na grupo, o "Select Group" kung wala pang naka-assign na grupo
 
-I-tap ang pindutan ng grupo upang pumunta sa [screen ng pagpili ng grupo](./group-assignment) kung saan maaari mong piliin o baguhin ang grupo para sa taong iyon at oras ng serbisyo.
+I-tap ang group button para pumunta sa [group selection screen](./group-assignment) kung saan maaari kang pumili o magpalit ng grupo para sa taong iyon at service time.
 
-Ipinapakita rin ng na-expand na card ang mga chip na **Member**, **Guest**, at **Volunteer**. I-tap ang isa upang itakda kung paano nagche-check in ang taong ito — Member ang default. Mahalaga ang uri para sa mga kuwarto ng bata: nabibilang ang mga boluntaryo sa ratio ng boluntaryo-sa-bata ng kuwarto, at nabibilang ang mga bisita laban sa anumang kapasidad ng bisitang itinakda ng iyong simbahan.
+Ipinapakita rin ng naka-expand na card ang mga chip na **Member**, **Guest**, at **Volunteer**. I-tap ang isa para itakda kung paano nagchi-check in ang taong ito — Member ang default. Mahalaga ang uri para sa mga silid ng mga bata: ang mga volunteer ay binibilang sa volunteer-to-child ratio ng silid, at ang mga guest ay binibilang laban sa anumang guest capacity na itinakda ng inyong simbahan.
 
-I-tap muli ang card ng miyembro upang i-collapse ito.
+I-tap muli ang card ng miyembro para i-collapse ito.
 
 :::tip
-Hindi mo kailangang italaga ang bawat miyembro ng pamilya sa isang grupo. Ang mga adultong dumadalo sa pangunahing serbisyong pagsamba ay maaaring iwanan nang walang pagtatalaga ng grupo. Italaga lamang ang mga grupo para sa mga miyembrong kailangang mag-check in sa isang partikular na klase o programa.
+Hindi mo kailangang mag-assign ng grupo sa bawat miyembro ng pamilya. Ang mga nasa hustong gulang na dadalo sa pangunahing worship service ay maaaring iwanang walang group assignment. Mag-assign lamang ng mga grupo para sa mga miyembrong kailangang i-check in sa isang partikular na klase o programa.
 :::
 
-## Pag-navigate mula sa Screen na Ito
+## Pag-navigate Mula sa Screen na Ito
 
-Mula sa screen ng pagsusuri ng sambahayan, mayroon kang tatlong opsyon:
+Mula sa household review screen, may tatlo kang opsyon:
 
-- **Palawakin ang isang miyembro** at i-tap ang isang pindutan ng oras ng serbisyo upang [italaga o baguhin ang isang grupo](./group-assignment).
-- **I-tap ang pindutang Add Guest** sa ibaba ng listahan ng miyembro upang [magdagdag ng bisita](./adding-guests) sa iyong sambahayan.
-- **I-tap ang pindutang Check-in** sa ibaba ng screen upang [kumpletuhin ang check-in](./completing-checkin) para sa lahat sa sambahayan.
+- **I-expand ang isang miyembro** at i-tap ang isang service time button para [mag-assign o magpalit ng grupo](./group-assignment).
+- **I-tap ang Add Guest na button** sa ibaba ng listahan ng mga miyembro para [magdagdag ng guest](./adding-guests) sa iyong sambahayan.
+- **I-tap ang Check-in na button** sa ibaba ng screen para [kumpletuhin ang check-in](./completing-checkin) ng lahat sa sambahayan.
 
 :::info
-Anumang mga pagtatalaga ng grupo mula sa nakaraang check-in sa parehong serbisyo ay awtomatikong na-preload. Kung dumadalo ang iyong mga anak sa parehong mga grupo bawat linggo, maaaring hindi mo na kailangang baguhin ang kahit ano -- suriin lamang at mag-check in.
+Awtomatikong ni-load nang una ang anumang group assignment mula sa nakaraang check-in sa parehong serbisyo. Kung pareho ang mga grupong dinadaluhan ng iyong mga anak linggu-linggo, maaaring hindi mo na kailangang baguhin ang kahit ano -- suriin lang at mag-check in.
 :::
 
-## Susunod na mga Hakbang
+## Mga Susunod na Hakbang
 
-- [Magtalaga ng mga grupo](./group-assignment) sa mga miyembro ng pamilyang kailangang mag-check in sa isang partikular na klase o programa.
-- [Magdagdag ng bisita](./adding-guests) kung may dumadalaw kasama ang iyong pamilya.
-- [Kumpletuhin ang check-in](./completing-checkin) kapag tila tama na ang lahat ng pagtatalaga.
+- [Mag-assign ng mga grupo](./group-assignment) sa mga miyembro ng pamilyang kailangang i-check in sa isang partikular na klase o programa.
+- [Magdagdag ng guest](./adding-guests) kung may bumibisitang kasama ng iyong pamilya.
+- [Kumpletuhin ang check-in](./completing-checkin) kapag mukhang tama na ang mga assignment ng lahat.

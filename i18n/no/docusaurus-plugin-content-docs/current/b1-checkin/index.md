@@ -1,43 +1,43 @@
 ---
-title: "B1 Church Checkin-oversikt"
+title: "Oversikt over B1 Church Checkin"
 ---
 
-# B1 Church Checkin-oversikt
+# Oversikt over B1 Church Checkin
 
 <div class="article-intro">
 
-B1 Church Checkin er en selvbetjening-kioskapp for iPad og Android-nettbrett. Det lar kirkamedlemmer slå opp familien sin, tildele barn til grupper eller klasser og skrive ut navneskilt og oppsamlingsslip for foreldre -- alt uten at de trenger en frivillig ved skrivebordet.
+B1 Church Checkin er en selvbetjent kioskapp for iPad og Android-nettbrett. Den lar menighetens medlemmer slå opp familien sin, plassere barn i grupper eller klasser, og skrive ut navnelapper og hentelapper for foreldre -- uten at det trengs en frivillig i skranken.
 
 </div>
 
-## Hvordan det fungerer
+## Slik fungerer det
 
-Plasser en iPad eller Android-nettbrett i lobbyen eller velkomstsonen din. Medlemmer går opp, søker etter husholdningen sin etter telefonnummer eller etternavn, gjennomgår familien sin, velger hvilke grupper hver person skal delta på og trykker **Innsjekk**. Appen skriver ut navneskilt og oppsamlingsslip automatisk, deretter tilbakestilles for neste familie.
+Plasser en iPad eller et Android-nettbrett i foajeen eller velkomstområdet. Medlemmene går bort, søker opp husstanden sin på telefonnummer eller etternavn, går gjennom familien, velger hvilke grupper hver person skal være med i, og trykker på **Check-in**. Appen skriver automatisk ut navnelapper og hentelapper, og tilbakestiller seg deretter for neste familie.
 
-## Viktige funksjoner
+## Hovedfunksjoner
 
-- **Selvbetjeningsmedlemoppslag** -- Søk etter telefonnummer eller etternavn for å finne husholdningen raskfort.
-- **Husholdningsgjennomgang** -- Se alle familiemedlemmer med bilder og gjeldende gruppetildelinger på et øyeblikk.
-- **Gruppetildeling** -- Tildel hvert familiemedlem til riktig klasse eller gruppe for den valgte servicetiden.
-- **Innsjekk av gjest** -- Legg til en gjest i husholdningen din på stedet med fornavn og etternavn.
-- **QR-gjesteregistrering** -- Vis en QR-kode som besøkende kan skanne for å [registrere seg selv](../b1-church/checkin/guest-registration) på sin egen telefon før de sjekker inn.
-- **Etikettutskrift** -- Skriv ut navneskilt for barn og oppsamlingsslip for foreldre med unike sikkerhetskoder.
-- **Nettverkskriversupport** -- Oppdag og konfigurer nettverksskrivere direkte fra appen.
-- **Automatisk pålogging** -- Etter første pålogging husker appen legitimasjonen din og går direkte til serviceskjermen ved fremtidige oppstarter.
-- **Multikirkestøtte** -- Hvis kontoen din er koblet til mer enn en kirke, kan du velge hvilken som skal sjekkes inn.
-- **Kirkemerkevarebygging** -- Appen viser kirkalogoen din i toppteksten når en kirke er valgt.
+- **Selvbetjent medlemsoppslag** -- Søk på telefonnummer eller etternavn for å finne husstanden din raskt.
+- **Husstandsoversikt** -- Se alle familiemedlemmer med bilder og gjeldende gruppetilhørighet på et øyeblikk.
+- **Gruppeplassering** -- Plasser hvert familiemedlem i riktig klasse eller gruppe for den valgte gudstjenestetiden.
+- **Innsjekking av gjester** -- Legg til en gjest i husstanden på stedet med fornavn og etternavn.
+- **QR-registrering av gjester** -- Vis en QR-kode som besøkende kan skanne for å [registrere seg selv](../b1-church/checkin/guest-registration) på sin egen telefon før de sjekker inn, eller la dem trykke på **Registrer her** for å fylle ut det samme skjemaet på kiosken.
+- **Etikettutskrift** -- Skriv ut navnelapper til barn og hentelapper til foreldre med unike sikkerhetskoder.
+- **Støtte for nettverksskrivere** -- Finn og sett opp nettverksskrivere direkte fra appen.
+- **Automatisk innlogging** -- Etter første innlogging husker appen påloggingsinformasjonen din og går rett til tjenesteskjermen ved senere oppstarter.
+- **Støtte for flere menigheter** -- Hvis kontoen din er koblet til mer enn én menighet, kan du velge hvilken du vil sjekke inn til.
+- **Menighetens profil** -- Appen viser menighetens logo i toppen så snart en menighet er valgt.
 
 ## Dokumentasjonsseksjoner
 
-- **[Kom i gang](./getting-started/)** -- Installering av appen, pålogging og oppsett av skriveren din.
-- **[Innsjekkarbeidsflyt](./check-in/)** -- Fullstendige innsjekkflytdetaljene fra valg av service til utskrift av etiketter.
+- **[Kom i gang](./getting-started/)** -- Installere appen, logge inn og sette opp skriveren.
+- **[Innsjekkingsprosessen](./check-in/)** -- Hele innsjekkingsforløpet, fra valg av gudstjeneste til utskrift av etiketter.
 
 :::tip
-B1 Church Checkin fungerer best på et 10-tommers nettbrett (iPad eller Android) montert i landskapsorientering der familier enkelt kan nå det. Hent appen fra [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin) eller [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/).
+B1 Church Checkin fungerer best på et 10-tommers nettbrett (iPad eller Android) montert i liggende format, slik at familiene lett når det. Last ned appen fra [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin) eller [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/).
 :::
 
 :::info
-Før du bruker B1 Church Checkin, må kirkens administrator konfigurere tjenester, servicetider og grupper i B1 Admin. Se [setupveiledningen for nærvær](../b1-admin/attendance/setup.md) for detaljer.
+Før du bruker B1 Church Checkin, må administratoren i menigheten sette opp gudstjenester, gudstjenestetider og grupper i B1 Admin. Se [veiledningen for oppsett av oppmøte](../b1-admin/attendance/setup.md) for detaljer.
 :::
 
-For support, send e-post til [support@churchapps.org](mailto:support@churchapps.org).
+Kontakt oss på [support@churchapps.org](mailto:support@churchapps.org) hvis du trenger hjelp.

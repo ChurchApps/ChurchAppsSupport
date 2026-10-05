@@ -20,7 +20,7 @@ Once your campuses, service times, and groups are configured, B1 Admin makes it 
 
 ## Viewing Attendance Trends
 
-1. Open **B1 Admin**, then open the **section menu** in the top-left corner and choose **People**.
+1. Open **B1 Admin**, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **People**, and click **Attendance**.
 2. Click the **Attendance Trend** tab.
 3. The report runs automatically when the tab opens, showing total attendance for each week.
 
@@ -32,8 +32,9 @@ Use the filters in the **Filter Report** box to narrow the results, then click *
 - **Service** -- limit the report to one service.
 - **Service Time** -- pick a service time to drill into a particular gathering.
 - **Group** -- show attendance for a single group.
+- **Start Date** and **End Date** -- the date range to include. By default the report covers the past year, from one year ago through today, and the end date is included in full.
 
-The report shows a bar chart and a table of total visits per week. Each week is labeled with the date of that week's Sunday.
+The report shows a bar chart and a table of total visits per week. Each week is labeled with the date of that week's Sunday. The table also has a **Session Dates** column listing the actual dates in that week that had attendance (for example, "9/27, 9/30"), so you can see when a midweek gathering is counted in the same week as Sunday.
 
 :::info
 Reports auto-run each time you open the Attendance Trend tab, so you will always see up-to-date numbers without needing to click a refresh button.
@@ -48,7 +49,7 @@ The **Group Attendance** tab shows who attended each group session. This is usef
 3. Set the **Start Date** and **End Date**. By default the report covers last Sunday through today.
 4. Click **Run Report**.
 
-Results are grouped by session date, then by service time and group, with the people who attended listed under each group. Service times, groups, and names are sorted alphabetically so each heading appears once.
+Results are grouped by session date, then by service time and group, with the people who attended listed under each group. Service times, groups, and names are sorted alphabetically so each heading appears once. Each person's row also shows a **Checked In** column with the time their attendance was recorded (blank when no time is on file) and a **Membership Status** column (for example, Member or Visitor), so you can spot guests at a glance.
 
 To download the data, click **Download Options** and choose **Summary**. The CSV has one row per group member, sorted by group and then name, and a column for each dated session in the range (for example, "Sunday - 9:00 AM (2026-09-27)") marked **present** or **absent**.
 

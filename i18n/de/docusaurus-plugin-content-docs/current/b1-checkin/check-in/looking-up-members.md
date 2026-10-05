@@ -1,70 +1,84 @@
 ---
-title: Mitglieder suchen
+title: "Mitglieder suchen"
 ---
 
-# Looking Up Members
+# Mitglieder suchen
 
 <div class="article-intro">
 
-After selecting a service, you arrive at the member lookup screen. This is where you search for your family so you can check in. The app supports searching by phone number or by name.
+Nach Auswahl eines Gottesdienstes gelangen Sie zum Suchbildschirm für Mitglieder. Hier können Sie Ihre Familie suchen, um sich anzumelden. Die App unterstützt die Suche nach Telefonnummer oder nach Name.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Bevor Sie Beginnen</h4>
 
-- [Select a service](./selecting-service) from the services screen
-- Ensure your household has been [added to the system](../../b1-admin/people/adding-people.md) by a church administrator
+- [Wählen Sie einen Gottesdienst](./selecting-service) aus dem Bildschirm mit den Gottesdiensten
+- Stellen Sie sicher, dass Ihr Haushalt von einem Kirchenadministrator [dem System hinzugefügt wurde](../../b1-admin/people/adding-people.md)
 
 </div>
 
-## Search Modes
+## Suchmodi
 
-The lookup screen offers two search modes. You can switch between them by tapping the toggle at the top of the screen:
+Der Suchbildschirm bietet zwei Suchmodi. Sie können zwischen ihnen wechseln, indem Sie auf den Schalter oben auf dem Bildschirm tippen:
 
-- **Phone** -- Search by phone number. This is the default mode.
-- **Name** -- Search by name.
+- **Telefon** – Suche nach Telefonnummer. Dies ist der Standardmodus.
+- **Name** – Suche nach Name.
 
-## Searching by Phone Number
+## Nach Telefonnummer suchen
 
-1. Make sure **Phone** is the active search mode (it is highlighted at the top).
-2. Tap the search field and enter at least **4 digits** of your phone number using the on-screen keypad.
-3. Tap the **Search** button or press the search key on the keyboard.
+1. Stellen Sie sicher, dass **Telefon** der aktive Suchmodus ist (er ist oben hervorgehoben).
+2. Tippen Sie auf das Suchfeld und geben Sie mindestens **4 Ziffern** Ihrer Telefonnummer über das Tastenfeld auf dem Bildschirm ein.
+3. Tippen Sie auf die Schaltfläche **Suchen** oder drücken Sie die Suchtaste auf der Tastatur.
 
-The app searches for members whose phone number matches the digits you entered. If you enter more than 4 digits, it uses the full number. If you enter exactly 4, it matches against the last 4 digits of phone numbers on file.
+Die App durchsucht Mitglieder, deren Telefonnummer den eingegebenen Ziffern entspricht. Wenn Sie mehr als 4 Ziffern eingeben, verwendet sie die vollständige Nummer. Wenn Sie genau 4 eingeben, vergleicht sie mit den letzten 4 Ziffern der Telefonnummern in der Datei.
 
-## Searching by Name
+## Nach Name suchen
 
-1. Tap the **Name** toggle at the top of the screen to switch to name search mode.
-2. Enter at least **2 characters** of the person's name in the search field.
-3. Tap the **Search** button.
+1. Tippen Sie oben auf dem Bildschirm auf den **Name**-Schalter, um zum Namenssuchmodus zu wechseln.
+2. Geben Sie mindestens **2 Zeichen** des Namens der Person in das Suchfeld ein.
+3. Tippen Sie auf die Schaltfläche **Suchen**.
 
-The app searches for members whose name matches what you typed.
+Die App durchsucht Mitglieder, deren Name dem Eingegebenen entspricht.
 
-## Selecting a Person
+## Eine Person auswählen
 
-Search results appear as cards below the search field. Each card shows the person's **name** and **photo** (if one is on file).
+Die Suchergebnisse werden als Karten unterhalb des Suchfelds angezeigt. Jede Karte zeigt den **Namen** und das **Foto** der Person (falls vorhanden).
 
-Tap a person's card to select them. The app loads all members of that person's household and takes you to the [household review screen](./household-review).
+Tippen Sie auf die Karte einer Person, um diese auszuwählen. Die App lädt alle Mitglieder des Haushalts dieser Person und führt Sie zum [Bildschirm für die Haushaltsübersicht](./household-review).
 
 :::tip
-Searching by the last 4 digits of a phone number is the fastest way to look up your family. Encourage members to use this method for a quicker check-in experience.
+Die Suche nach den letzten 4 Ziffern einer Telefonnummer ist der schnellste Weg, um Ihre Familie zu finden. Ermutigen Sie die Mitglieder, diese Methode für ein schnelleres Anmeldeerlebnis zu verwenden.
 :::
 
 :::warning
-If no results are found, the app displays a message letting you know. Double-check the digits or name you entered, or try the other search mode. If you are a first-time visitor, ask a volunteer for help getting [added to the system](../../b1-admin/people/adding-people.md).
+Wenn keine Ergebnisse gefunden werden, zeigt die App eine Meldung an. Überprüfen Sie die eingegebenen Ziffern oder den Namen erneut, oder versuchen Sie den anderen Suchmodus. Wenn Sie ein Erstbesucher sind, bitten Sie einen Freiwilligen um Hilfe, um [dem System hinzugefügt zu werden](../../b1-admin/people/adding-people.md).
 :::
 
-## Printing Labels for a Phone Check-In
+## Als Gast registrieren
 
-Families who already checked in on their phone through [B1 Church self check-in](../../b1-church/checkin/self-checkin) can print their name tags at the kiosk without looking themselves up.
+Wenn Ihre Kirche die QR-Gastregistrierung aktiviert hat, wird unter dem Suchfeld auf dem Suchbildschirm ein Link **Als Gast registrieren** angezeigt. Erstbesucher können damit ihre Familie dem Kirchensystem hinzufügen, bevor sie sich anmelden.
 
-1. On the lookup screen, tap the **Scan code** button (the QR code icon).
-2. Hold the QR code from your phone up to the camera. If the app asks for camera access, tap **Allow Camera**. The front camera is used by default; tap the flip button to switch.
-3. The kiosk finds the check-in and prints the labels, then returns to the lookup screen.
+1. Tippen Sie auf **Als Gast registrieren**. Ein Fenster öffnet sich mit einem QR-Code und der Meldung „QR-Code scannen, um sich als Gast zu registrieren".
+2. Wählen Sie, wie Sie das [Gastregistrierungsformular](../../b1-church/checkin/guest-registration) ausfüllen möchten:
+   - **Auf Ihrem Telefon** – Scannen Sie den QR-Code, füllen Sie das Formular auf Ihrem Telefon aus und tippen Sie auf **OK**, um das Fenster zu schließen.
+   - **Am Kiosk** – Tippen Sie auf **Hier registrieren**, um das gleiche Formular direkt auf dem Tablet zu öffnen. Füllen Sie es aus und tippen Sie auf **Registrieren**, dann tippen Sie auf **Fertig** (oder den Zurück-Pfeil), um zum Suchbildschirm zurückzukehren.
+3. Nach der Registrierung suchen Sie Ihre Familie nach Name oder Telefonnummer, um sich anzumelden.
 
-Scanning only prints labels -- the attendance was already recorded when the family checked in on their phone. If the code doesn't match an active check-in, the kiosk shows a message and returns to the lookup screen.
+:::info
+Das Formular, das mit **Hier registrieren** geöffnet wurde, bleibt auf der Gastregistrierungsseite – Besucher können nicht zu anderen Teilen der Kirchenwebseite vom Kiosk aus navigieren. Wenn 2 Minuten lang niemand das Formular berührt oder beschriftet, schließt der Kiosk es und kehrt zum Suchbildschirm zurück. Jedes Mal, wenn das Formular geschlossen wird, wird alles, was darin eingegeben wurde, gelöscht, damit die nächste Familie mit einem leeren Formular beginnt.
+:::
 
-## Next Step
+## Name-Tags für eine Telefonanmeldung drucken
 
-After selecting a person, you will [review your household](./household-review) and manage group assignments.
+Familien, die sich bereits über [B1 Church Selbstanmeldung](../../b1-church/checkin/self-checkin) auf ihrem Telefon angemeldet haben, können ihre Name-Tags am Kiosk drucken, ohne sich selbst zu suchen.
+
+1. Tippen Sie auf dem Suchbildschirm auf die Schaltfläche **Code scannen** (das QR-Code-Symbol).
+2. Halten Sie den QR-Code von Ihrem Telefon vor die Kamera. Wenn die App um Kamerazugriff fragt, tippen Sie auf **Kamera zulassen**. Die Frontkamera wird standardmäßig verwendet; tippen Sie auf die Flip-Schaltfläche, um zu wechseln.
+3. Der Kiosk findet die Anmeldung und druckt die Etiketten aus, dann kehrt er zum Suchbildschirm zurück.
+
+Das Scannen druckt nur Etiketten – die Anwesenheit wurde bereits erfasst, als sich die Familie auf ihrem Telefon anmeldete. Wenn der Code keiner aktiven Anmeldung entspricht, zeigt der Kiosk eine Meldung an und kehrt zum Suchbildschirm zurück.
+
+## Nächster Schritt
+
+Nach Auswahl einer Person werden Sie Ihren [Haushalt überprüfen](./household-review) und Gruppenzuweisungen verwalten.

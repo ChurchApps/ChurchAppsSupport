@@ -6,24 +6,24 @@ title: "Bibliotecas Compartilhadas"
 
 <div class="article-intro">
 
-ChurchApps shared code is published to npm under the `@churchapps/*` scope. All of the shared packages live in a single repository -- [Packages](https://github.com/ChurchApps/Packages) -- managed as a Yarn (Berry) workspace and versioned with [changesets](https://github.com/changesets/changesets).
+O código compartilhado de ChurchApps é publicado no npm sob o escopo `@churchapps/*`. Todos os pacotes compartilhados vivem em um único repositório -- [Packages](https://github.com/ChurchApps/Packages) -- gerenciado como um espaço de trabalho Yarn (Berry) e versionado com [changesets](https://github.com/changesets/changesets).
 
 </div>
 
-## Packages
+## Pacotes
 
-| Package | Description | Used By |
+| Pacote | Descrição | Usado Por |
 |---------|-------------|---------|
-| [`@churchapps/helpers`](./helpers) | Foundation layer: framework-free helper functions and the shared TypeScript interfaces that form the cross-app data contract | All projects |
-| [`@churchapps/apihelper`](./api-helper) | Server-side Express utilities: auth, base controllers, database access, AWS and email integrations | All APIs |
-| [`@churchapps/apphelper`](./app-helper) | Shared React components and feature modules (login, donations, forms, markdown, website) | All web apps |
-| `@churchapps/content-providers` | Abstraction over third-party content providers (Lessons.church, Planning Center, Dropbox, and others) | Api, B1Admin, B1App, FreePlay |
-| `@churchapps/integration-sdk` | Toolkit for building B1.church integrations: webhook verification, typed REST client, OAuth helpers | External integration developers |
-| `@churchapps/texting` | SMS provider abstraction (Text In Church, Clearstream, Mutual Ministry) | Api |
+| [`@churchapps/helpers`](./helpers) | Camada de fundação: funções auxiliares independentes de framework e as interfaces TypeScript compartilhadas que formam o contrato de dados entre aplicativos | Todos os projetos |
+| [`@churchapps/apihelper`](./api-helper) | Utilitários Express no lado do servidor: autenticação, controladores base, acesso ao banco de dados, integrações AWS e email | Todas as APIs |
+| [`@churchapps/apphelper`](./app-helper) | Componentes React compartilhados e módulos de recursos (login, doações, formulários, markdown, website) | Todos os aplicativos web |
+| `@churchapps/content-providers` | Abstração sobre provedores de conteúdo de terceiros (Lessons.church, Planning Center, Dropbox e outros) | Api, B1Admin, B1App, FreePlay |
+| `@churchapps/integration-sdk` | Toolkit para construir integrações B1.church: verificação de webhook, cliente REST tipado, auxiliares OAuth | Desenvolvedores de integração externa |
+| `@churchapps/texting` | Abstração de provedor de SMS (Text In Church, Clearstream, Mutual Ministry, MinistryStuff, Nalo Solutions) | Api |
 
-Dependency direction is strictly downward: apps depend on `apihelper` and `apphelper`, which declare `@churchapps/helpers` as a **peer dependency** so each app resolves exactly one copy of it.
+A direção de dependência é estritamente para baixo: os aplicativos dependem de `apihelper` e `apphelper`, que declaram `@churchapps/helpers` como uma **peer dependency** para que cada aplicativo resolva exatamente uma cópia dela.
 
-## Workspace Setup
+## Configuração do Espaço de Trabalho
 
 ```bash
 git clone https://github.com/ChurchApps/Packages.git
@@ -32,33 +32,33 @@ yarn install
 yarn build
 ```
 
-The repo uses Yarn Berry (the root `packageManager` field is authoritative) with a single lockfile. `yarn build` builds every package in dependency order; `yarn test` runs all package tests.
+O repositório usa Yarn Berry (o campo `packageManager` da raiz é autoritário) com um único lockfile. `yarn build` compila cada pacote em ordem de dependência; `yarn test` executa todos os testes do pacote.
 
-## Releasing with Changesets
+## Lançamento com Changesets
 
-Every change to a package ships with a changeset:
+Cada mudança em um pacote é enviada com um changeset:
 
-1. Run `yarn changeset` at the workspace root. Pick the package(s) you touched, the bump type (patch = fix, minor = new export or feature, major = breaking), and write a one-line summary -- it becomes the CHANGELOG entry.
-2. Commit the generated `.changeset/*.md` file together with your code change. A pre-commit hook blocks commits that change a package's source without a staged changeset.
-3. When ready to publish, run `yarn publish-all` at the root. This consumes pending changesets (bumping versions, writing CHANGELOGs, syncing internal dependency ranges), builds everything in dependency order, and publishes the bumped packages to npm. Then commit and push the version bumps.
+1. Execute `yarn changeset` na raiz do espaço de trabalho. Escolha o(s) pacote(s) que você tocou, o tipo de bump (patch = correção, minor = nova exportação ou recurso, major = breaking) e escreva um resumo de uma linha -- torna-se a entrada CHANGELOG.
+2. Commit o arquivo `.changeset/*.md` gerado junto com sua mudança de código. Um hook de pre-commit bloqueia commits que alteram o source de um pacote sem um changeset encenado.
+3. Quando pronto para publicar, execute `yarn publish-all` na raiz. Isto consome changesets pendentes (aumentando versões, escrevendo CHANGELOGs, sincronizando intervalos de dependência interna), compila tudo em ordem de dependência e publica os pacotes aumentados no npm. Depois commit e push os aumentos de versão.
 
 :::warning
-Never run a raw `npm publish` inside a single package -- it skips build ordering and the version bookkeeping the release script handles. Publishing requires an npm account with publish rights to the `@churchapps` scope.
+Nunca execute um `npm publish` bruto dentro de um único pacote -- isso pula a ordem de construção e a contabilidade de versão que o script de lançamento manipula. A publicação requer uma conta npm com direitos de publicação no escopo `@churchapps`.
 :::
 
-## Local Development Against a Consuming App
+## Desenvolvimento Local Contra um Aplicativo Consumidor
 
-Inside the workspace, packages build directly against their siblings -- no linking needed. To test an unpublished package build inside a consuming app (B1Admin, B1App, etc.), add a temporary Yarn portal in the consumer:
+Dentro do espaço de trabalho, os pacotes compilam diretamente contra seus irmãos -- nenhuma ligação necessária. Para testar uma construção de pacote não publicado dentro de um aplicativo consumidor (B1Admin, B1App, etc.), adicione um portal Yarn temporário no consumidor:
 
 ```bash
-# in the consuming project
+# no projeto consumidor
 yarn link ../Packages/helpers
-# ... test ...
+# ... teste ...
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-Build the package first (`yarn build` at the workspace root) -- the consumer reads the compiled `dist/` output, not the source.
+Compile o pacote primeiro (`yarn build` na raiz do espaço de trabalho) -- o consumidor lê a saída compilada `dist/`, não a source.
 
 :::warning
-`yarn link` writes a portal resolution into the consumer's `package.json`. Never commit it -- always `yarn unlink` and reinstall when done.
+`yarn link` escreve uma resolução de portal no `package.json` do consumidor. Nunca o faça commit -- sempre `yarn unlink` e reinstale quando terminar.
 :::

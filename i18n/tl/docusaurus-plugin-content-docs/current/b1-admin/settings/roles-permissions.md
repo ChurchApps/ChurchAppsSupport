@@ -1,68 +1,68 @@
 ---
-title: "Mga Rol at Pahintulot"
+title: "Mga Tungkulin at Pahintulot"
 ---
 
-# Mga Rol at Pahintulot
+# Mga Tungkulin at Pahintulot
 
 <div class="article-intro">
 
-Ang mga rol ay nagbibigay-daan sa iyo na kontrolin kung ano ang maaaring i-access ng iba't ibang mga user sa loob ng iyong account ng ChurchApps. Maaari kang lumikha ng mga custom na rol para sa staff, volunteers, at ibang mga miyembro ng koponan, bawat isa na may kanilang sariling antas ng access upang mapanatili ang iyong data na secure.
+Hinahayaan ka ng mga Tungkulin (Roles) na kontrolin kung ano ang maaaring ma-access ng iba't ibang user sa loob ng iyong ChurchApps account. Maaari kang gumawa ng mga custom na tungkulin para sa staff, volunteer, at iba pang miyembro ng team, bawat isa ay may sariling antas ng access para mapanatiling ligtas ang iyong datos.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Ka Magsimula</h4>
+<h4>Bago Magsimula</h4>
 
-- Kailangan mo ng Domain Admin access o isang rol na may pahintulot na pamahalaan ang mga rol
-- Mayroon kang listahan ng mga miyembro ng koponan at ang mga lugar kung saan kailangan nila ng access
-- Suriin ang mga available na kategorya ng pahintulot sa ibaba upang planuhin ang iyong mga rol
+- Kailangan mo ng Domain Admin access o isang tungkulin na may pahintulot na mamahala ng mga tungkulin
+- Maghanda ng listahan ng mga miyembro ng team at ng mga lugar na kailangan nilang ma-access
+- Repasuhin ang mga available na kategorya ng pahintulot sa ibaba para planuhin ang iyong mga tungkulin
 
 </div>
 
-## Pag-access sa mga Rol
+## Pagpunta sa Roles
 
-1. Sa B1 Admin, buksan ang **section menu** sa tuktok-kaliwa (ang pangalan ng seksyon na may maliit na arrow) at pumili ng **Settings**.
-2. I-click ang **Roles** sa navigation bar ng Settings.
-3. Ang pahina ng Roles ay nagpapakita ng lahat ng kasalukuyang tinukoy na mga rol para sa iyong simbahan.
+1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa itaas na kaliwa) at i-expand ang **Settings**.
+2. I-click ang **Roles**.
+3. Ipapakita ng pahina ng Roles ang lahat ng kasalukuyang naka-define na tungkulin para sa iyong simbahan.
 
-## Pag-unawa sa Pahina ng Mga Rol
+## Pag-unawa sa Pahina ng Roles
 
-Ang pahina ng Roles ay nahahati sa dalawang mga panel:
+Nahahati sa dalawang panel ang pahina ng Roles:
 
-- **Kaliwang panig** -- Nagpapakita ng listahan ng mga miyembro na itinalaga sa napiling rol.
-- **Kanang panig** -- Nagpapakita ng mga setting ng pahintulot na maaari mong i-configure para sa rol na iyon.
+- **Kaliwang bahagi** -- Ipinapakita ang listahan ng mga miyembrong nakatalaga sa napiling tungkulin.
+- **Kanang bahagi** -- Ipinapakita ang mga setting ng pahintulot na maaari mong i-configure para sa tungkuling iyon.
 
-I-click ang anumang pangalan ng rol upang tingnan at pamahalaan ang mga miyembro at pahintulot nito.
+I-click ang pangalan ng anumang tungkulin para tingnan at pamahalaan ang mga miyembro at pahintulot nito.
 
-## Pagdaragdag ng Mga User sa Isang Rol
+## Pagdaragdag ng mga User sa isang Tungkulin
 
-1. Piliin ang rol na gusto mong magdagdag ng mga miyembro sa.
-2. Gamitin ang **search field** sa kaliwang panig upang mahanap ang taong gusto mong idagdag.
+1. Piliin ang tungkuling gusto mong dagdagan ng mga miyembro.
+2. Gamitin ang **search field** sa kaliwang bahagi para hanapin ang taong gusto mong idagdag.
 3. Piliin ang tao mula sa mga resulta ng paghahanap.
-4. Idadagdag sila sa rol kaagad.
+4. Agad siyang idadagdag sa tungkulin.
 
-## Pag-aalis ng Mga User mula sa Isang Rol
+## Pag-aalis ng mga User sa isang Tungkulin
 
-1. Piliin ang rol na naglalaman ng user na gusto mong alisin.
-2. Hanapin ang tao sa listahan ng miyembro sa kaliwang panig.
-3. I-click ang **remove button** sa tabi ng kanilang pangalan.
+1. Piliin ang tungkuling naglalaman ng user na gusto mong alisin.
+2. Hanapin ang tao sa listahan ng mga miyembro sa kaliwang bahagi.
+3. I-click ang **remove button** sa tabi ng kanyang pangalan.
 
-## Pag-configure ng Mga Pahintulot
+## Pag-configure ng mga Pahintulot
 
-Bawat rol ay maaaring bigyan ng access sa mga partikular na lugar ng B1 Admin. Ang mga pahintulot ay isinasaayos ayon sa seksyon:
+Ang bawat tungkulin ay maaaring bigyan ng access sa mga partikular na lugar ng B1 Admin. Nakaayos ang mga pahintulot ayon sa seksyon:
 
-- **People** -- Access sa direktoryo ng miyembro at mga record ng tao.
+- **People** -- Access sa member directory at mga record ng tao.
 - **Donations** -- Access sa mga record ng donasyon at pamamahala ng pondo.
-- **Attendance** -- Access sa pagsubaybay ng pagdalo at mga ulat.
-- **Content** -- Access sa website at pamamahala ng nilalaman.
-- At mga karagdagang lugar habang sila ay available.
+- **Attendance** -- Access sa pagsubaybay ng attendance at mga ulat.
+- **Content** -- Access sa pamamahala ng website at nilalaman.
+- At iba pang lugar habang nagiging available ang mga ito.
 
-Gamitin ang mga checkbox sa kanang panig ng pahina ng Roles upang i-enable o i-disable ang access para sa bawat lugar.
+Gamitin ang mga checkbox sa kanang bahagi ng pahina ng Roles para i-enable o i-disable ang access sa bawat lugar.
 
 :::warning
-Ang **Domain Admins** ay may buong access sa lahat ng mga lugar ng iyong account ng ChurchApps. Ang kanilang mga pahintulot ay hindi mababago o maiiwanan. Gamitin ang rol na ito lamang para sa iyong pinakamapagkakatiwalaang mga administrator.
+Ang mga **Domain Admin** ay may buong access sa lahat ng lugar ng iyong ChurchApps account. Hindi mababago o malilimitahan ang kanilang mga pahintulot. Gamitin lamang ang tungkuling ito para sa iyong pinakapinagkakatiwalaang mga administrator.
 :::
 
 :::tip
-Lumikha ng mga partikular na rol tulad ng "Treasurer" na may lamang **Donations** access, o "Check-In Volunteer" na may lamang **Attendance** access. Ito ay sumusunod sa prinsipyo ng hindi sapat na pribilehiyo at pinapanatili ang iyong data na secure. Tingnan ang [Data Security](./data-security.md) para sa higit pang impormasyon tungkol sa kung paano pinoprotektahan ng ChurchApps ang iyong impormasyon.
+Gumawa ng mga partikular na tungkulin tulad ng "Treasurer" na may access lang sa **Donations**, o "Check-In Volunteer" na may access lang sa **Attendance**. Sinusunod nito ang prinsipyo ng least privilege at pinananatiling ligtas ang iyong datos. Tingnan ang [Seguridad ng Datos](./data-security.md) para sa higit pa kung paano pinoprotektahan ng ChurchApps ang iyong impormasyon.
 :::

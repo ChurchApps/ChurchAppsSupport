@@ -1,50 +1,50 @@
 ---
-title: Formulare
+title: "Formulare"
 ---
 
-# Forms
+# Formulare
 
 <div class="article-intro">
 
-The Forms section lets you create custom forms for registrations, surveys, data collection, and more. Whether you need a visitor card, an event sign-up, or a prayer request form, you can build it here and share it with your congregation through a public link or your B1.church website.
+Der Bereich "Formulare" ermöglicht es Ihnen, benutzerdefinierte Formulare für Registrierungen, Umfragen, Datenerfassung und mehr zu erstellen. Unabhängig davon, ob Sie eine Besucherkarte, eine Veranstaltungsanmeldung oder ein Gebetsanfrageformular benötigen, können Sie es hier erstellen und über einen öffentlichen Link oder Ihre B1.church-Website mit Ihrer Gemeinde teilen.
 
 </div>
 
-## The Forms Page
+## Die Seite "Formulare"
 
-When you open **Forms**, you will see these tabs:
+Wenn Sie **Forms** (Formulare) öffnen, werden diese Registerkarten angezeigt:
 
-- **Forms** -- Shows all your active forms.
-- **Archived Forms** -- Shows forms that have been archived. You can restore archived forms at any time. This tab only appears once at least one form has been archived.
+- **Forms** (Formulare) -- Zeigt alle Ihre aktiven Formulare an.
+- **Archived Forms** (Archivierte Formulare) -- Zeigt Formulare an, die archiviert wurden. Sie können archivierte Formulare jederzeit wiederherstellen. Diese Registerkarte wird nur angezeigt, nachdem mindestens ein Formular archiviert wurde.
 
-Each form in the list displays its name and, if configured, a public URL that you can share externally.
+Jedes Formular in der Liste zeigt seinen Namen und, falls konfiguriert, eine öffentliche URL, die Sie extern teilen können.
 
-## What You Can Do
+## Was Sie tun können
 
-From the Forms page, you can:
+Von der Seite "Formulare" aus können Sie:
 
-- **Add a form** -- Click **Add Form** to create a new custom form.
-- **Edit a form** -- Click on a form name to open it and modify its questions, members, or settings.
-- **Archive a form** -- Move forms you no longer need to the **Archived Forms** tab to keep your list clean.
-- **Restore a form** -- Switch to the **Archived Forms** tab and restore any form you want to make active again.
+- **Ein Formular hinzufügen** -- Klicken Sie auf **Add Form** (Formular hinzufügen), um ein neues benutzerdefiniertes Formular zu erstellen.
+- **Ein Formular bearbeiten** -- Klicken Sie auf einen Formularnamen, um ihn zu öffnen und seine Fragen, Mitglieder oder Einstellungen zu ändern.
+- **Ein Formular archivieren** -- Verschieben Sie Formulare, die Sie nicht mehr benötigen, zur Registerkarte **Archived Forms** (Archivierte Formulare), um Ihre Liste sauber zu halten.
+- **Ein Formular wiederherstellen** -- Wechseln Sie zur Registerkarte **Archived Forms** (Archivierte Formulare) und stellen Sie jedes Formular wieder her, das Sie wieder aktiv machen möchten.
 
-## Working with a Form
+## Arbeiten mit einem Formular
 
-Click on any form name to open it. The form editor has up to three tabs:
+Klicken Sie auf einen beliebigen Formularnamen, um ihn zu öffnen. Der Formular-Editor hat bis zu drei Registerkarten:
 
-- **Questions** -- Build the form structure by adding fields with different types. See [Creating Forms](./creating-forms.md) for details.
-- **Form Members** -- Control who can access and manage the form (stand-alone forms only).
-- **Form Submissions** -- View responses that have been submitted. See [Managing Submissions](./managing-submissions.md) for details.
+- **Questions** (Fragen) -- Erstellen Sie die Formularstruktur, indem Sie Felder mit verschiedenen Typen hinzufügen. Siehe [Creating Forms](./creating-forms.md) für Details.
+- **Form Members** (Formularmitglieder) -- Kontrollieren Sie, wer auf das Formular zugreifen und es verwalten kann (nur Stand-Alone-Formulare).
+- **Form Submissions** (Formularübermittlungen) -- Zeigen Sie eingereichte Antworten an. Siehe [Managing Submissions](./managing-submissions.md) für Details.
 
 :::tip
-Forms with a public URL can be shared via link, embedded on your website, or included in emails. This makes it easy to collect information from people who may not have a church account.
+Formulare mit einer öffentlichen URL können per Link geteilt, auf Ihrer Website eingebettet oder in E-Mails eingefügt werden. Dies macht es einfach, Informationen von Personen zu sammeln, die möglicherweise kein Kirchenkonto haben.
 :::
 
 :::info
-You can control who has access to each form using the **Form Members** tab. Assign **Admin** or **View Only** roles to give your team the right level of access.
+Sie können mithilfe der Registerkarte **Form Members** (Formularmitglieder) kontrollieren, wer Zugriff auf jedes Formular hat. Weisen Sie **Admin** oder **View Only** (Nur anzeigen) Rollen zu, um Ihrem Team die richtige Zugriffsstufe zu geben.
 :::
 
-## Learn More
+## Weitere Informationen
 
-- [Creating Forms](./creating-forms.md) -- Step-by-step guide to building forms and adding questions.
-- [Managing Submissions](./managing-submissions.md) -- How to view and manage form responses.
+- [Creating Forms](./creating-forms.md) (Formulare erstellen) -- Schritt-für-Schritt-Anleitung zum Erstellen von Formularen und zum Hinzufügen von Fragen.
+- [Managing Submissions](./managing-submissions.md) (Übermittlungen verwalten) -- Wie Sie Formularantworten anzeigen und verwalten.

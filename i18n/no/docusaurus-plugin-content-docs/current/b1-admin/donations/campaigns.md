@@ -1,71 +1,71 @@
 ---
-title: "Kampanjer og løfter"
+title: "Kampanjer og givertilsagn"
 ---
 
-# Kampanjer og løfter
+# Kampanjer og givertilsagn
 
 <div class="article-intro">
 
-Kampanjer lar deg kjøre en innsamlingskampanje mot et spesifikt mål — et bygningsfond, en misjonstur, et spesialprosjekt — og spore løfter fra medlemmer sammen med faktiske donasjoner slik at du kan se fremdriften din i sanntid.
+Med kampanjer kan du gjennomføre en innsamlingsaksjon mot et bestemt mål — et byggefond, en misjonsreise, et spesielt prosjekt — og følge medlemmenes givertilsagn side om side med faktiske donasjoner, slik at du ser fremdriften i sanntid.
 
 </div>
 
 <div class="prereqs">
-<h4>Før du starter</h4>
+<h4>Før du begynner</h4>
 
-- Sett opp dine [donasjonsfond](funds) — hver kampanje er knyttet til et fond
-- Du trenger tilgang til Donasjoner-seksjonen av B1 Admin
+- Sett opp [donasjonsfondene](funds) dine — hver kampanje er knyttet til et fond
+- Du trenger tilgang til Donasjoner-delen i B1 Admin
 
 </div>
 
-## Åpning av kampanjer
+## Åpne kampanjer
 
-I B1 Admin åpner du **seksjonsmenyen** i øvre venstre hjørne (seksjonsnavnet med den lille pilen) og velger **Donasjoner**, deretter velger du **Kampanjer**. Du vil se en liste over alle kampanjer med målbeløpet, totalt løftet og totalt gitt så langt.
+Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) i B1 Admin (søkefeltet øverst til venstre), utvid **Donasjoner** og klikk på **Kampanjer**. Du ser en liste over alle kampanjer med målbeløp, totalt tilsagt beløp og totalt gitt beløp så langt.
 
-## Opprett en kampanje
+## Opprette en kampanje
 
-1. Klikk **Legg til kampanje**.
-2. Fyll inn kampanjedetaljene:
-   - **Navn** *(obligatorisk)* — visningsnavnet for denne kampanjen (for eksempel "Bygningsfond 2026").
-   - **Fond** — donasjonsfonden denne kampanjen er knyttet til.
-   - **Startdato** / **Sluttdato** — innsamlingsvinduet.
-   - **Mål** -- målbeløpet for kampanjen.
-3. Klikk **Lagre**.
+1. Klikk på **Legg til kampanje**.
+2. Fyll ut kampanjedetaljene:
+   - **Navn** *(påkrevd)* — visningsnavnet på kampanjen (for eksempel «Byggefond 2026»).
+   - **Fond** — donasjonsfondet kampanjen er knyttet til.
+   - **Startdato** / **Sluttdato** — innsamlingsperioden.
+   - **Mål** — målbeløpet for kampanjen.
+3. Klikk på **Lagre**.
 
-## Sporing av progresjon
+## Følge fremdriften
 
 Hvert kampanjekort viser:
 
-- **Mål** -- målbeløpet ditt
-- **Løftet** -- det totale beløpet medlemmer har løftet å gi
-- **Gitt** -- det totale beløpet som faktisk er donert til denne kampanjens fond under kampanjevinduet
-- En **fremgangslinje** som viser hvor langt mot målet ditt du har kommet
+- **Mål** — målbeløpet ditt
+- **Tilsagt** — det totale beløpet medlemmene har lovet å gi
+- **Gitt** — det totale beløpet som faktisk er gitt til kampanjens fond i kampanjeperioden
+- En **fremdriftslinje** som viser hvor langt du har kommet mot målet
 
-Klikk en kampanje for å åpne detaljvisningen, som viser individuelle løfter og deres oppfyllelsesstatus.
+Klikk på en kampanje for å åpne detaljvisningen, som viser de enkelte givertilsagnene og status for oppfyllelsen av dem.
 
-## Legge til løfter
+## Legge til givertilsagn
 
-Løfter er forpliktelser fra medlemmer om å gi til en kampanje. For å registrere et løfte:
+Givertilsagn er forpliktelser fra medlemmer om å gi til en kampanje. Slik registrerer du et givertilsagn:
 
 1. Åpne en kampanje.
-2. Klikk **Legg til løfte**.
-3. Velg **personen** som gir løftet.
-4. Skriv inn løfte **beløp**.
-5. Angi eventuelt en **dato** for løfteinngåelsen.
-6. Klikk **Lagre**.
+2. Klikk på **Legg til givertilsagn**.
+3. Velg **personen** som gir tilsagnet.
+4. Skriv inn **beløpet** for tilsagnet.
+5. Du kan angi en **dato** for tilsagnet.
+6. Klikk på **Lagre**.
 
-Løfter vises i kampanjedetaljene og bidrar til **Løftet**-totalen på kampanjekortet.
+Givertilsagn vises i kampanjedetaljene og bidrar til totalen **Tilsagt** på kampanjekortet.
 
 :::tip
-Løfter er adskilt fra faktiske donasjoner. Et løfte sporer en forpliktelse; en donasjon registrerer det faktiske gaven. Begge vises på kampanjen slik at du kan se hvor godt løfter blir oppfylt.
+Givertilsagn er atskilt fra faktiske donasjoner. Et givertilsagn registrerer en forpliktelse, mens en donasjon registrerer selve gaven. Begge vises på kampanjen, slik at du ser hvor godt tilsagnene blir oppfylt.
 :::
 
-## Redigering eller sletting av en kampanje
+## Redigere eller slette en kampanje
 
-Klikk redigeringsikonet på et kampanjekort for å oppdatere dets navn, mål, datoer eller fond. Klikk **Slett** for å permanent fjerne kampanjen og dens løfter. Sletting av en kampanje sletter ikke eventuelle donasjoner som ble registrert på fondene.
+Klikk på redigeringsikonet på et kampanjekort for å endre navn, mål, datoer eller fond. Klikk på **Slett** for å fjerne kampanjen og givertilsagnene permanent. Når du sletter en kampanje, slettes ikke donasjonene som er registrert på fondet.
 
 ## Relaterte artikler
 
-- [Registrering av donasjoner](recording-donations) — registrer de faktiske gavene som oppfyller løfter
-- [Fond](funds) — sett opp fondet til å knytte til en kampanje
-- [Donasjonrapporter](donation-reports) — rapportering om donasjoner etter fond
+- [Registrere donasjoner](recording-donations) — registrer de faktiske gavene som oppfyller givertilsagnene
+- [Fond](funds) — sett opp fondet som skal knyttes til en kampanje
+- [Donasjonsrapporter](donation-reports) — rapportering av donasjoner per fond

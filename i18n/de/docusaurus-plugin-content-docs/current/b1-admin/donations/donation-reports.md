@@ -1,81 +1,81 @@
 ---
-title: Spendenberichte
+title: "Spendenbericht"
 ---
 
-# Donation Reports
+# Spendenbericht
 
 <div class="article-intro">
 
-B1 Admin gives you several ways to view and analyze your church's giving data. The giving dashboard on the Donations **Summary** page provides a visual overview with charts and filters, while the Reports section offers a more detailed Donation Summary report. Use these tools to track giving trends, prepare for board meetings, or reconcile your records.
+B1 Admin bietet Ihnen mehrere Möglichkeiten, die Spendendaten Ihrer Kirche anzuzeigen und zu analysieren. Das Spenden-Dashboard auf der Seite **Zusammenfassung** bietet einen visuellen Überblick mit Diagrammen und Filtern, während der Berichts-Bereich einen detaillierteren Spendenübersichts-Bericht bietet. Verwenden Sie diese Werkzeuge, um Spenden-Trends zu verfolgen, sich auf Board-Meetings vorzubereiten oder Ihre Aufzeichnungen abzustimmen.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Ensure donations have been [recorded in batches](recording-donations.md) or [imported from Stripe](stripe-import.md)
-- Verify that your [funds](funds.md) are set up correctly so donations are properly categorized
+- Stellen Sie sicher, dass Spenden [in Bündel eingetragen](recording-donations.md) oder [aus Stripe importiert](stripe-import.md) wurden
+- Überprüfen Sie, dass Ihre [Fonds](funds.md) korrekt eingerichtet sind, damit Spenden richtig kategorisiert werden
 
 </div>
 
-## Giving Dashboard
+## Spenden-Dashboard
 
-The giving dashboard is the **Dashboard** tab of the **Summary** page, the first page you see when you open the **Donations** section.
+Das Spenden-Dashboard ist die Registerkarte **Dashboard** der Seite **Zusammenfassung**, die erste Seite, wenn Sie den Bereich **Spenden** öffnen.
 
-1. Open the **section menu** in the top-left corner and choose **Donations**. The **Summary** page opens on the **Dashboard** tab.
-2. Use the **Weekly**, **Monthly**, and **Quarterly** toggle above the report to choose how giving is grouped.
-3. In the **Filter Report** panel, set the **Start Date** and **End Date** (by default, the past year through yesterday) and optionally pick a **Fund**, then click **Run Report**. The report runs automatically with the defaults when the page opens.
-4. Four **KPI cards** display your giving metrics for the selected range:
-   - **Total Giving** -- The total amount donated.
-   - **Average Gift** -- The average donation amount.
-   - **Unique Donors** -- The number of distinct people who gave.
-   - **Total Donations** -- The total number of individual donations.
-5. Below the KPIs, a bar chart shows giving per week, month, or quarter, broken out by fund.
-6. Click **Download Options** and choose **Summary** to export a CSV of the totals by period and fund, or click the print icon to print the report.
+1. Öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links in B1 Admin), erweitern Sie **Spenden** und klicken Sie auf **Zusammenfassung**. Die Seite **Zusammenfassung** öffnet sich auf der Registerkarte **Dashboard**.
+2. Verwenden Sie die Umschalter **Wöchentlich**, **Monatlich** und **Vierteljährlich** über dem Bericht, um zu wählen, wie Spenden gruppiert werden.
+3. In dem Panel **Bericht filtern** legen Sie das **Startdatum** und **Enddatum** fest (standardmäßig das letzte Jahr bis gestern) und wählen Sie optional einen **Fonds** aus, dann klicken Sie auf **Bericht ausführen**. Der Bericht läuft automatisch mit den Standardeinstellungen, wenn die Seite öffnet.
+4. Vier **KPI-Karten** zeigen Ihre Spenden-Metriken für den ausgewählten Bereich an:
+   - **Gesamtspenden** -- Der Gesamtbetrag gespendet.
+   - **Durchschnittliches Geschenk** -- Der Durchschnittlich-Spendenbetrag.
+   - **Eindeutige Spender** -- Die Anzahl der unterschiedlichen Personen, die gegeben haben.
+   - **Gesamtspenden** -- Die Gesamtzahl der einzelnen Spenden.
+5. Unter den KPIs zeigt ein Balkendiagramm Spenden pro Woche, Monat oder Quartal, aufgeschlüsselt nach Fonds.
+6. Klicken Sie auf **Download-Optionen** und wählen Sie **Zusammenfassung**, um ein CSV der Gesamt-Zahlen nach Zeitraum und Fonds zu exportieren, oder klicken Sie auf das Druck-Symbol, um den Bericht zu drucken. Der Name Ihrer Kirche wird oben auf dem gedruckten Bericht angezeigt.
 
-If donations in the period were given in more than one currency, the KPI totals are converted to your church currency and a **Converted at current exchange rates** note appears below the cards. See [Multi-Currency Support](./multi-currency.md#converted-totals) for details.
+Wenn Spenden im Zeitraum in mehr als einer Währung gegeben wurden, werden die KPI-Gesamtzahl in Ihre Kirchenwährung konvertiert und eine Notiz **Konvertiert zu aktuellen Wechselkursen** wird unter den Karten angezeigt. Siehe [Multi-Währungs-Unterstützung](./multi-currency.md#converted-totals) für Details.
 
 :::info
-The dashboard shows aggregate giving data. It does not include individual donor names. For donor-level details, use the [Batches](batches.md) page.
+Das Dashboard zeigt aggregierte Spendendaten. Es enthält keine einzelnen Spender-Namen. Für Spender-Level-Details verwenden Sie die Seite [Bündel](batches.md).
 :::
 
 ## Lapsed Givers
 
-The **Lapsed Givers** tab next to the **Dashboard** tab lists people who gave during one period but not since. By default it compares last calendar year with this year to date; change either date range to widen or narrow the search. Each row shows the person, the date of their last gift and their total for the earlier period, and **Download Options > Summary** downloads the list as a CSV for a follow-up mailing or call list.
+Die Registerkarte **Lapsed Givers** neben der Registerkarte **Dashboard** listet Personen auf, die in einem Zeitraum gegeben haben, aber nicht seitdem. Standardmäßig vergleicht es das letzte Kalenderjahr mit diesem Jahr bis heute; ändern Sie einen oder beide Datumsbereiche, um die Suche zu erweitern oder einzuschränken. Jede Reihe zeigt die Person, das Datum ihres letzten Geschenks und ihre Gesamtsumme für den früheren Zeitraum, und **Download-Optionen > Zusammenfassung** lädt die Liste als CSV für einen Follow-up-Mailing oder Anrufliste herunter.
 
-## Viewing Donor-Level Details
+## Spender-Level-Details anzeigen
 
-For a breakdown of who gave, how much, and to which fund:
+Für eine Aufschlüsselung darüber, wer gegeben hat, wie viel und zu welchem Fonds:
 
-1. Navigate to **Donations > Batches**.
-2. Click on a **batch name** to open it.
-3. The batch detail page lists each donation with the donor's name, amount, fund, date, and payment method.
-4. Click on a **donor's name** to see a breakdown of how many times they donated and how much each time.
-5. Click on a **donation ID** to open a side panel with the full details for that individual donation.
-6. Click **Download** to export a CSV with all donor and donation information for that batch.
+1. Navigieren Sie zu **Spenden > Bündel**.
+2. Klicken Sie auf einen **Bündelnamen**, um ihn zu öffnen.
+3. Die Bündel-Detailseite listet jede Spende mit dem Namen des Spenders, dem Betrag, Fonds, Datum und Zahlungsmethode auf.
+4. Klicken Sie auf einen **Namen des Spenders**, um einen Zusammenbruch zu sehen, wie viele Male sie gegeben haben und wie viel jedes Mal.
+5. Klicken Sie auf eine **Spenden-ID**, um ein Seitenpanel mit den vollständigen Details für diese einzelne Spende zu öffnen.
+6. Klicken Sie auf **Herunterladen**, um ein CSV mit allen Spender- und Spendendaten für dieses Bündel zu exportieren.
 
-## Donation Summary Report
+## Spendenbericht Zusammenfassung
 
-Donation reporting is built directly into the Donations section -- the Summary page serves as your donation summary report:
+Die Spenden-Berichterstattung ist direkt in den Spenden-Bereich eingebaut -- die Zusammenfassungsseite dient als Ihre Spendenbericht-Zusammenfassung:
 
-1. Open the **section menu** in the top-left corner and choose **Donations** to open the Summary page.
-2. On the **Dashboard** tab, set the **Start Date** and **End Date** in the **Filter Report** panel and click **Run Report**.
-3. Click **Download Options** and choose **Summary** to export the report as a CSV file.
+1. Im Jump-Menü wählen Sie **Spenden > Zusammenfassung**.
+2. In der Registerkarte **Dashboard** legen Sie das **Startdatum** und **Enddatum** im Panel **Bericht filtern** fest und klicken Sie auf **Bericht ausführen**.
+3. Klicken Sie auf **Download-Optionen** und wählen Sie **Zusammenfassung**, um den Bericht als CSV-Datei zu exportieren.
 
-## Exporting Data
+## Daten exportieren
 
-You can export donation data from multiple places:
+Sie können Spendendaten von mehreren Stellen exportieren:
 
-- **Summary page** -- download a CSV of giving totals by week, month, or quarter and fund
-- **Batch detail page** -- download a CSV of individual donations with donor details
-- **Funds detail page** -- download donation history for a specific fund
+- **Zusammenfassungsseite** -- ein CSV der Spenden-Gesamtzahl nach Woche, Monat oder Quartal und Fonds herunterladen
+- **Bündel-Detailseite** -- ein CSV der einzelnen Spenden mit Spender-Details herunterladen
+- **Fonds-Detailseite** -- Spendenverlauf für einen bestimmten Fonds herunterladen
 
 :::tip
-For year-end reporting, combine the Summary page export with the [Giving Statements](giving-statements.md) tool to get both aggregate trends and individual donor statements.
+Für Jahresabschluss-Berichterstattung kombinieren Sie den Zusammenfassungsseiten-Export mit dem [Spendennachweise](giving-statements.md)-Werkzeug, um sowohl aggregierte Trends als auch einzelne Spender-Aussagen zu erhalten.
 :::
 
-## Next Steps
+## Nächste Schritte
 
-- Generate [Giving Statements](giving-statements.md) for your donors at year-end
-- Review individual [batches](batches.md) to verify donation details
-- Check [fund](funds.md) detail pages for giving breakdowns by category
+- Generieren Sie [Spendennachweise](giving-statements.md) für Ihre Spender am Jahresende
+- Überprüfen Sie einzelne [Bündel](batches.md), um Spendendetails zu überprüfen
+- Überprüfen Sie [Fonds](funds.md) Detailseiten für Spenden-Aufschlüsselungen nach Kategorie

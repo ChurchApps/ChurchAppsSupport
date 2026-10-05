@@ -6,7 +6,7 @@ title: "Giverarkitektur"
 
 <div class="article-intro">
 
-ChurchApps kjører donasjoner på en gateway-rail-modell: kirken beholder sin egen Stripe (eller PayPal, Kingdom Funding eller Paystack) konto, og B1 sitter aldri i pengeflaten som en plattformbehandler. Kortdata blir tokenisert i nettleseren og når aldri en ChurchApps-server. Denne siden kartlegger hele stacken — klientregistret for betalingsleverandør i `@churchapps/apphelper`, GivingApi gateway-abstraksjonen, donasjondatamodellen, og hvordan gateway-webhooks blir innhentet tilbake til databasen.
+ChurchApps håndterer gaver etter en gateway-modell: menigheten har sin egen Stripe-konto (eller PayPal, Kingdom Funding eller Paystack), og B1 står aldri i pengestrømmen som plattformens betalingsbehandler. Kortdata tokeniseres i nettleseren og når aldri en ChurchApps-server. Denne siden kartlegger hele stakken — leverandørregisteret på klientsiden i `@churchapps/apphelper`, gateway-abstraksjonen i GivingApi, datamodellen for gaver og hvordan webhooks fra gatewayene avstemmes tilbake i databasen.
 
 </div>
 
@@ -38,17 +38,17 @@ ChurchApps kjører donasjoner på en gateway-rail-modell: kirken beholder sin eg
                 MySQL (giving schema)
 ```
 
-Tre prinsipper holder seg gjennom hele stacken:
+Tre prinsipper gjelder gjennom hele stakken:
 
-1. **Gatewayen holder kortet.** Hver leverandørs oppføringsvideo blir tokenisert i nettleseren; API-en mottar kun en token, nonce eller ordre-id.
-2. **En abstraksjon, mange leverandører.** Nettleseren løser en `PaymentProvider` fra et register; serveren løser en `IGatewayProvider` fra en fabrikk. Begge nøkkeler av samme normaliserte leverandørnavn som lagres på gatewayposten.
-3. **Webhooks er kilden til sannhet for oppgjør.** Et gebyrrespons blir registrert optimistisk, men gatewayens signerte webhook er det som bekrefter (eller oppretter) den fullførte donasjonen, med idempotensibeskyttelse på begge sider.
+1. **Gatewayen holder kortet.** Hver leverandørs inntastingswidget tokeniserer i nettleseren; API-et mottar bare et token, en nonce eller en ordre-ID.
+2. **Én abstraksjon, mange leverandører.** Nettleseren henter en `PaymentProvider` fra et register; serveren henter en `IGatewayProvider` fra en fabrikk. Begge bruker det samme normaliserte leverandørnavnet som er lagret på gateway-posten.
+3. **Webhooks er sannhetskilden for oppgjør.** Et belastningssvar registreres optimistisk, men det er gatewayens signerte webhook som bekrefter (eller oppretter) den fullførte gaven, med vern mot duplikater på begge sider.
 
-## Klientsiden: betalingsleverandørregisteret (`@churchapps/apphelper`)
+## Klientsiden: leverandørregisteret for betaling (`@churchapps/apphelper`)
 
-Registeret ligger i `Packages/apphelper/src/donations/providers/`, med hver leverandørs widgets og hjelpere under sin egen undermappe (`providers/stripe/`, `providers/paypal/`, `providers/kingdomfunding/`, `providers/paystack/`) — ingenting utenfor `providers/` grener på et leverandørnavn. En `PaymentProvider` (se `providers/types.ts`) bunter sammen alt en vertapp trenger for en gateway: en `descriptor` (admin-etiketter, støttede valutaer, gebyrfelt, standardgebyrrate, dashboard/påmeldingsadresser), et `capabilities`-flagsett (lagrede kort, ACH, gjentakende, innebygd oppføring av nytt kort, implisitt lagring ved tokenisering), React-widgetene for medlemsoppføring (`MemberWrapper`/`MemberEntry`), gjestegivinger (`GuestForm`), redigering av lagret metode (`MethodEditForm`) og skjemagavebetaling (`FormPayment`), pluss `buildChargeRequest(ctx, token)` — stedet der gebyrpayloaden form varierer per leverandør. Hver leverandørs `MemberWrapper` laster sin egen SDK fra gatewayens offentlige nøkkel, så vertapper importerer aldri en gateway SDK (B1App og B1Admin har ingen `@stripe/*` avhengighet). `pickDefaultGateway(gateways, capability?)` sentraliserer hvilken av kirkens gateways et område skal bruke.
+Registeret ligger i `Packages/apphelper/src/donations/providers/`, med hver leverandørs widgets og hjelpere i sin egen undermappe (`providers/stripe/`, `providers/paypal/`, `providers/kingdomfunding/`, `providers/paystack/`) — ingenting utenfor `providers/` forgrener seg på leverandørnavn. En `PaymentProvider` (se `providers/types.ts`) samler alt en vertsapp trenger for én gateway: en `descriptor` (administratoretiketter, støttede valutaer, gebyrfelt, standard gebyrsatser, URL-er til dashbord/registrering), et `capabilities`-sett med flagg (lagrede kort, ACH, gjentakende, inntasting av nytt kort på stedet, implisitt lagring ved tokenisering), React-widgetene for medlemsinntasting (`MemberWrapper`/`MemberEntry`), gavegiving som gjest (`GuestForm`), redigering av lagrede betalingsmåter (`MethodEditForm`) og betalinger i skjemaspørsmål (`FormPayment`), pluss `buildChargeRequest(ctx, token)` — det ene stedet der formen på belastningsnyttelasten er forskjellig per leverandør. Hver leverandørs `MemberWrapper` laster sin egen SDK fra gateway-postens offentlige nøkkel, slik at vertsapper aldri importerer en gateway-SDK (B1App og B1Admin har ingen `@stripe/*`-avhengighet). `pickDefaultGateway(gateways, capability?)` samler på ett sted valget av hvilken av menighetens gatewayer en flate skal bruke.
 
-`providers/registry.ts` holder innebygningene. De er **referert til etter verdi**, ikke registrert gjennom en modulside-effekt, så en bundlers treskakning kan aldri slippe registreringen:
+`providers/registry.ts` rommer de innebygde. De **refereres til som verdier**, ikke registreres gjennom en sideeffekt i en modul, slik at bundlerens tree-shaking aldri kan fjerne registreringen:
 
 ```typescript
 for (const p of [StripeProvider, KingdomFundingProvider, PayPalProvider, PaystackProvider]) builtins.set(p.key, p);
@@ -56,36 +56,36 @@ for (const p of [StripeProvider, KingdomFundingProvider, PayPalProvider, Paystac
 
 | Funksjon | Formål |
 |----------|---------|
-| `getPaymentProvider(name)` | Løse etter normalisert navn; faller tilbake til Stripe slik at en feilkonfigurert leverandør aldri hardt-krasjer giverformen |
-| `registerPaymentProvider(p)` | Registrer en ekstra leverandør under kjøring (for en vertapps egendefinerte gateway) |
-| `listPaymentProviders()` | Oppramse innebygninger + egendefinert — brukt til å bygge administrasjonsgatewayens rullegardin |
-| `hasPaymentProvider(name)` | Medlemskapssjekk |
+| `getPaymentProvider(name)` | Hent etter normalisert navn; faller tilbake til Stripe slik at en feilkonfigurert leverandør aldri krasjer giverskjemaet |
+| `registerPaymentProvider(p)` | Registrer en ekstra leverandør under kjøring (for en vertsapps egen gateway) |
+| `listPaymentProviders()` | List opp innebygde + egne — brukes til å bygge nedtrekkslisten for gateway i administrasjonen |
+| `hasPaymentProvider(name)` | Sjekk om den finnes |
 
-**Innebygde klientleverandører: Stripe, PayPal, Kingdom Funding, Paystack.** B1App og B1Admin *leser* registeret (`getPaymentProvider`, `listPaymentProviders`); ingen kaller `registerPaymentProvider` — registreringen forblir inne i apphelper.
+**Innebygde klientleverandører: Stripe, PayPal, Kingdom Funding, Paystack.** B1App og B1Admin bare *leser* registeret (`getPaymentProvider`, `listPaymentProviders`); ingen av dem kaller `registerPaymentProvider` — registreringen forblir inne i apphelper.
 
-Hver leverandør tokeniserer annerledes, men alle holder kortet ut av B1:
+Hver leverandør tokeniserer på sin måte, men alle holder kortet utenfor B1:
 
-| Leverandør | Oppføringsvideo | Token returnert til API |
+| Leverandør | Inntastingswidget | Token som returneres til API-et |
 |----------|--------------|-----------------------|
-| Stripe | Stripe `Elements` `CardElement` → `stripe.createPaymentMethod(...)`; gjesteformen monterer også en `ExpressCheckoutElement` (Apple Pay / Google Pay, engangsgaver) hvis `onConfirm` løser til samme `pm_…` id | betalingsmetode-id (`pm_…`); bank via `/paymentmethods/ach-setup-intent` — Financial Connections `us_bank_account` for USD-gatewayer, kanadisk PAD `acss_debit` (vertsbasert mandatmodal, mandat `default_for` fakturaer/abonnementer, engangsgebyrer sender mandat-id) for CAD-gatewayer |
-| Kingdom Funding | Vertsbasert tokeniseringsform knyttet til gatewayens offentlige nøkkel | engangsbruk nonce |
-| PayPal | PayPal Hosted Fields (kort, gjentakende) pluss PayPal Smart Buttons med Venmo-finansiering (engang); begge deler en SDK-belastning og serverordren bygget via `/donate/client-token` + `/donate/create-order` | fangede ordre-id |
-| Paystack | Paystack Inline popup (`js.paystack.co/v2/inline.js`) — popupen selv tar betalingen (kort, mobil penger, bankoverføring, USSD) | betalt transaksjonsreferanse; lagrede metoder er Paystack `AUTH_…` autorisasjonskoder |
+| Stripe | Stripe `Elements` `CardElement` → `stripe.createPaymentMethod(...)`; gjesteskjemaet monterer også en `ExpressCheckoutElement` (Apple Pay / Google Pay, engangsgaver) hvis `onConfirm` ender i den samme `pm_…`-ID-en | betalingsmåte-ID (`pm_…`); bank via `/paymentmethods/ach-setup-intent` — Financial Connections `us_bank_account` for USD-gatewayer, kanadisk PAD `acss_debit` (modal for vert-hostet fullmakt, fullmakt `default_for` fakturaer/abonnementer, engangsbelastninger sender fullmakts-ID-en) for CAD-gatewayer |
+| Kingdom Funding | Vert-hostet tokeniseringsskjema styrt av gatewayens offentlige nøkkel | engangs-nonce |
+| PayPal | PayPal Hosted Fields (kort, gjentakende) pluss PayPal Smart Buttons med Venmo-finansiering (engangs); begge deler én SDK-lasting og serverordren som bygges via `/donate/client-token` + `/donate/create-order` | fullført ordre-ID |
+| Paystack | Paystack Inline-popup (`js.paystack.co/v2/inline.js`) — selve popupen tar imot betalingen (kort, mobilpenger, bankoverføring, USSD) | betalt transaksjonsreferanse; lagrede betalingsmåter er Paystack `AUTH_…`-autorisasjonskoder |
 
-Stripes `finalizeResult` kjører 3-D Secure / SCA i nettleseren (`providers/stripe/stripe3DS.ts` → `stripe.confirmCardPayment`) før donasjonen anses som fullført; det delte skjemaet kaller bare `provider.finalizeResult(result)` uten kunnskap om hva det gjør.
+Stripes `finalizeResult` kjører 3-D Secure / SCA i nettleseren (`providers/stripe/stripe3DS.ts` → `stripe.confirmCardPayment`) før gaven regnes som fullført; det delte skjemaet kaller bare `provider.finalizeResult(result)` uten å vite hva den gjør.
 
 ## Serversiden: gateway-abstraksjonen (GivingApi)
 
-`/giving`-modulen (`Api/src/modules/giving`) viser REST-flaten; gateway-rørleggeriet ligger i `Api/src/shared/helpers`. `DonateController` snakker aldri direkte til en gateway SDK — det går gjennom `GatewayService`, som løser rett `IGatewayProvider` fra `GatewayFactory` og gir den en dekryptert `GatewayConfig`.
+`/giving`-modulen (`Api/src/modules/giving`) eksponerer REST-flaten; gateway-rørleggerarbeidet ligger i `Api/src/shared/helpers`. `DonateController` snakker aldri direkte med en gateway-SDK — den går gjennom `GatewayService`, som henter riktig `IGatewayProvider` fra `GatewayFactory` og gir den en dekryptert `GatewayConfig`.
 
 ```
 DonateController ─▶ GatewayService ─▶ GatewayFactory.getProvider(name) ─▶ IGatewayProvider
-                        │ getGatewayConfig() dekrypterer privateKey / webhookKey
+                        │ getGatewayConfig() decrypts privateKey / webhookKey
                         ▼
              StripeGatewayProvider · PayPalGatewayProvider · KingdomFundingGatewayProvider · PaystackGatewayProvider · …
 ```
 
-`IGatewayProvider` (`shared/helpers/gateways/IGatewayProvider.ts`) er kontrakten hver gateway implementerer — webhook livssyklus (`createWebhookEndpoint`, `verifyWebhookSignature`, `classifyWebhookEvent`), betaling (`prepareCharge`, `processCharge`, `prepareSubscription`, `createSubscription`, `finalizeSubscription`, `cancelSubscription`), gebyrer (`calculateFees`), lagret-metodebehandling (`listNormalizedPaymentMethods`, `buildAttachOptions`, `buildLocalMethodRecord`, `deletePaymentMethod`, `verifyMethodOwnership`, `ownsPaymentMethodId`) og valgfrie ekstra (kunder, ordre, SetupIntents, arrangementsomfang, `retryFailedPayment` for en mislykket abonnementsfaktura, `registerPaymentMethodDomain` for Apple Pay domenebekreftelse). En leverandør som utelater en valgfri krok rapporteres som ikke støttet for den handlingen og brukergrensesnittet skjuler kontrollen. Hver leverandørklasse erklærer sin egen `capabilities` matrise (støttede valutaer, ACH, refusjoner, abonnementskrav, transaksjonsgrenser) — `GatewayService.getProviderCapabilities(provider)` leser bare den — og flagg som `logsDonationsImmediately` driver controllerkraftverk uten noen leverandørnavn-betinget i kontrollerne.
+`IGatewayProvider` (`shared/helpers/gateways/IGatewayProvider.ts`) er kontrakten som hver gateway implementerer — livssyklus for webhook (`createWebhookEndpoint`, `verifyWebhookSignature`, `classifyWebhookEvent`), betaling (`prepareCharge`, `processCharge`, `prepareSubscription`, `createSubscription`, `finalizeSubscription`, `cancelSubscription`), gebyrer (`calculateFees`), håndtering av lagrede betalingsmåter (`listNormalizedPaymentMethods`, `buildAttachOptions`, `buildLocalMethodRecord`, `deletePaymentMethod`, `verifyMethodOwnership`, `ownsPaymentMethodId`) og valgfrie tillegg (kunder, ordrer, SetupIntents, avspilling av hendelser, `retryFailedPayment` for en mislykket abonnementsfaktura, `registerPaymentMethodDomain` for domeneverifisering for Apple Pay). En leverandør som utelater en valgfri hook, rapporteres som ikke støttet for den handlingen, og brukergrensesnittet skjuler kontrollen. Hver leverandørklasse deklarerer sin egen `capabilities`-matrise (støttede valutaer, ACH, refusjoner, krav til abonnement, transaksjonsgrenser) — `GatewayService.getProviderCapabilities(provider)` leser den bare — og flagg som `logsDonationsImmediately` styrer kontrollernes oppførsel uten noen betingelser på leverandørnavn i kontrollerne.
 
 **Serverleverandører registrert i `GatewayFactory`:**
 
@@ -94,83 +94,83 @@ DonateController ─▶ GatewayService ─▶ GatewayFactory.getProvider(name) �
 | Stripe | Alltid på |
 | PayPal | Alltid på |
 | Kingdom Funding | Alltid på |
-| Paystack | Alltid på (Nigeria, Ghana, Sør-Afrika, Kenya, Côte d'Ivoire kjøpmenn; valutaer NGN/GHS/ZAR/KES/XOF/USD) |
-| Square | Opt-in via `ENABLE_SQUARE` miljøflagget |
-| ePayMints | Opt-in via `ENABLE_EPAYMINTS` miljøflagget |
+| Paystack | Alltid på (selgere i Nigeria, Ghana, Sør-Afrika, Kenya og Elfenbenskysten; valutaene NGN/GHS/ZAR/KES/XOF/USD) |
+| Square | Må velges aktivt via miljøflagget `ENABLE_SQUARE` |
+| ePayMints | Må velges aktivt via miljøflagget `ENABLE_EPAYMINTS` |
 
-Paystack skiller seg fra de andre ved at penger beveger seg før GivingApi er involvert: popupen belaster giveren, `processCharge` er en `GET /transaction/verify/:reference` hvis betalte beløp og valuta må være sammenfallende med donasjonen som registreres (en referanse som allerede er på fil blir aldri logget to ganger), og den første gaven av en gjentakende tidsplan blir logget fra `finalizeSubscription` (verifiser → `POST /plan` → `POST /subscription` med `start_date` en interval ut). Webhooks blir signert med den hemmelige nøkkelen selv (`x-paystack-signature`, HMAC-SHA512 over råroten) og Paystack har ingen webhook-administrasjons-API, så administrasjonsskjermen viser adressen for kirken til å lime inn på sitt dashbord. Fornyelse `charge.success` hendelser har ingen fondsdeling; leverandøren gjenoppretter den fra giverens lokale `subscriptions`/`subscriptionFunds` rader. Bare kortautorisasjoner er `reusable` — mobil penge-gaver er engangsbruk, så `createSubscription` nekter dem. Demodata såer en andre kirke (Accra Community Church, `CHU00000002`) på en Paystack test-modell GHS gateway slik at Paystack Playwright-suiten kjører ved siden av Graces Stripe en.
+Paystack skiller seg fra de andre ved at pengene flyttes før GivingApi er involvert: popupen belaster giveren, `processCharge` er en `GET /transaction/verify/:reference` der det betalte beløpet og valutaen må samsvare med gaven som registreres (en referanse som allerede finnes, logges aldri to ganger), og den første gaven i en gjentakende plan logges fra `finalizeSubscription` (verify → `POST /plan` → `POST /subscription` med `start_date` ett intervall fram). Webhooks signeres med selve hemmelige nøkkelen (`x-paystack-signature`, HMAC-SHA512 over råbodyen), og Paystack har ikke noe API for administrasjon av webhooks, så administrasjonsskjermen viser URL-en som menigheten limer inn i sitt dashbord. `charge.success`-hendelser ved fornyelse har ingen fordeling på fond; leverandøren gjenoppretter den fra giverens lokale `subscriptions`-/`subscriptionFunds`-rader. Bare kortautorisasjoner er `reusable` — gaver med mobilpenger er bare engangsgaver, så `createSubscription` avviser dem. Demodataene legger inn en andre menighet (Accra Community Church, `CHU00000002`) på en Paystack-gateway i testmodus med GHS, slik at Paystack-Playwright-testene kjører ved siden av Graces Stripe-tester.
 
-Egendefinerte leverandører kan registreres under kjøring når `ENABLE_CUSTOM_GATEWAY_PROVIDERS` er satt; `AbstractExperimentalGatewayProvider` er basisklassen for disse. Leverandørnavn blir matchet case-insensitivt.
+Egne leverandører kan registreres under kjøring når `ENABLE_CUSTOM_GATEWAY_PROVIDERS` er satt; `AbstractExperimentalGatewayProvider` er baseklassen for disse. Leverandørnavn sammenlignes uten hensyn til store og små bokstaver.
 
-### Gateway-konfigurering & hemmeligheter
+### Gateway-konfigurasjon og hemmeligheter
 
-En administrator lagrer gateway-legitimasjon via `POST /giving/gateways` (`GatewayController`). På lagring krypterer kontrolleren private og webhook-nøkler med `EncryptionHelper` før vedvarende, deretter — på en hvilken som helst ikke-localhost-vert — sletter kirkens eksisterende webhook og etablerer en frisk som peker på `/giving/donate/webhook/{provider}?churchId=…`. En kirke beholder én rad per leverandør: lagring av en gateway erstatter bare den eksisterende raden for samme leverandør. Offentlige lesinger (`GET /giving/gateways/churchId/:churchId`, `/configured/:churchId`) returnerer bare offentlige nøkler.
+En administrator lagrer gateway-legitimasjon via `POST /giving/gateways` (`GatewayController`). Ved lagring krypterer kontrolleren den private nøkkelen og webhook-nøkkelen med `EncryptionHelper` før de lagres, og — på alle verter som ikke er localhost — sletter den menighetens eksisterende webhook og oppretter en ny som peker til `/giving/donate/webhook/{provider}?churchId=…`. En menighet har én rad per leverandør: å lagre en gateway erstatter bare den eksisterende raden for den samme leverandøren. Offentlige lesinger (`GET /giving/gateways/churchId/:churchId`, `/configured/:churchId`) returnerer bare offentlige nøkler.
 
 ## Datamodell
 
-Givingskjemaet (`Api/src/modules/giving/db/DatabaseTypes.ts`, modeller i `models/`) er et MySQL-skjema som åpnes gjennom Kysely:
+Giverskjemaet (`Api/src/modules/giving/db/DatabaseTypes.ts`, modeller i `models/`) er et MySQL-skjema som nås gjennom Kysely:
 
-| Bord | Rolle |
+| Tabell | Rolle |
 |-------|------|
-| `gateways` | Per-kirke leverandørkonfigurasjon: `provider`, `publicKey`, kryptert `privateKey`/`webhookKey`, `productId`, `payFees`, `currency`, `settings`, `environment` |
-| `funds` | Givingtildelinger (`name`, `taxDeductible`, `productId`) |
-| `donationBatches` | Gruppering for oppføring/rapportering (`name`, `batchDate`) |
-| `donations` | En gave: `batchId`, `personId`, `donationDate`, `amount`, `currency`, `method`, `status` (`pending`/`complete`/`failed`/`refunded`; utsagn, totaler, dashbord og donasjonsrapporter teller bare `complete` eller null), `transactionId` |
-| `fundDonations` | Tildeling av en donasjon over en eller flere fond (`donationId`, `fundId`, `amount`) |
-| `subscriptions` | Gjentakende gave; `id` er gatewayens abonnements-id, koblet til `personId`, `customerId`, `gatewayId` |
-| `subscriptionFunds` | Fondsdeling for en gjentakende gave |
-| `customers` | Kobler en `personId` til sin gateway kunde-id, per `provider` |
+| `gateways` | Leverandørkonfigurasjon per menighet: `provider`, `publicKey`, krypterte `privateKey`/`webhookKey`, `productId`, `payFees`, `currency`, `settings`, `environment` |
+| `funds` | Giverformål (`name`, `taxDeductible`, `productId`) |
+| `donationBatches` | Gruppering for registrering/rapportering (`name`, `batchDate`) |
+| `donations` | Én gave: `batchId`, `personId`, `donationDate`, `amount`, `currency`, `method`, `status` (`pending`/`complete`/`failed`/`refunded`; giveroppgaver, totaler, dashbord og gaverapporter teller bare `complete` eller null), `transactionId` |
+| `fundDonations` | Fordeling av en gave på ett eller flere fond (`donationId`, `fundId`, `amount`) |
+| `subscriptions` | Gjentakende gave; `id` er gatewayens abonnements-ID, knyttet til `personId`, `customerId`, `gatewayId` |
+| `subscriptionFunds` | Fordeling på fond for en gjentakende gave |
+| `customers` | Knytter en `personId` til dens gateway-kunde-ID, per `provider` |
 | `gatewayPaymentMethods` | Lagrede kort/banker: `customerId`, `externalId`, `methodType`, `displayName`, `metadata` |
-| `eventLogs` | Webhook/arrangementer revisjonsspor og dedupnøkkel (`provider`, `providerId`, `eventType`, `status`, `resolved`) |
-| `campaigns` / `pledges` | Løfte-kampanjer knyttet til et fond, og hver persons lovte beløp |
+| `eventLogs` | Revisjonsspor for webhooks/hendelser og nøkkel for duplikatkontroll (`provider`, `providerId`, `eventType`, `status`, `resolved`) |
+| `campaigns` / `pledges` | Løftekampanjer knyttet til et fond, og hver persons lovede beløp |
 
-En donasjon blir delt over fond gjennom `fundDonations` — donasjonen bærer totalen, hver `fundDonation` bærer en del. `donations.currency` og `gateways.currency` bærer ISO-valutaen; hver leverandør annonserer sin `supportedCurrencies`, og beløp blir formatert med `CurrencyHelper.formatCurrencyWithLocale`.
+En gave fordeles på fond gjennom `fundDonations` — gaven bærer totalen, hver `fundDonation` bærer en andel. `donations.currency` og `gateways.currency` bærer ISO-valutaen; hver leverandør oppgir sine `supportedCurrencies`, og beløp formateres med `CurrencyHelper.formatCurrencyWithLocale`.
 
-## End-to-end-flyter
+## Flyter fra ende til ende
 
-### Medlem engang og gjentakende (B1App)
+### Medlem, engangs og gjentakende (B1App)
 
-Den godkjente doneringsskjermen (`B1App/src/app/[sdSlug]/mobile/components/screens/DonatePage.tsx`) komponerer tre apphelper-komponenter: `MultiGatewayDonationForm`, `PaymentMethods` og `RecurringDonations`. B1App gjør den omgivende datalasten — `GET /donations/my`, `/gateways`, `/paymentmethods/personid/:id`, `/customers/:id/subscriptions` — og sender gatewaylisten igjennom; den løste leverandøren laster sin egen SDK fra gatewayens offentlige nøkkel. Gebyret selv skjer inne i apphelper: den løste leverandøren tokeniserer (ny eller lagret) metode, deretter poster til `/giving/donate/charge` for en engangsave eller `/giving/donate/subscribe` for en gjentakende. Begge endepunkter tilskriver en innlogget giver til sin egen `personId` (bare `donations.edit` holdere kan tilskrive til noen andre) og avviser fonddelinger som legger opp til mer enn det ladde beløpet. Gjentakende gaver lager en `subscriptions` rad pluss `subscriptionFunds` og sender tidsplanen til gatewayen (Stripe Abonnement, PayPal Fakturaplan eller en KF gjentakende plan).
+Den autentiserte giverskjermen (`B1App/src/app/[sdSlug]/mobile/components/screens/DonatePage.tsx`) setter sammen tre apphelper-komponenter: `MultiGatewayDonationForm`, `PaymentMethods` og `RecurringDonations`. B1App står for datainnlastingen rundt — `GET /donations/my`, `/gateways`, `/paymentmethods/personid/:id`, `/customers/:id/subscriptions` — og sender gateway-listen videre; den valgte leverandøren laster sin egen SDK fra gatewayens offentlige nøkkel. Selve belastningen skjer inne i apphelper: den valgte leverandøren tokeniserer den (nye eller lagrede) betalingsmåten og sender deretter til `/giving/donate/charge` for en engangsgave eller `/giving/donate/subscribe` for en gjentakende. Begge endepunktene knytter en innlogget giver til vedkommendes egen `personId` (bare innehavere av `donations.edit` kan knytte til en annen) og avviser fordelinger på fond som summerer seg til mer enn det belastede beløpet. Gjentakende gaver oppretter en `subscriptions`-rad pluss `subscriptionFunds` og overlater planen til gatewayen (Stripe Subscriptions, PayPal Billing Plans eller en gjentakende plan hos KF).
 
-### Gjest / anonym giver
+### Gjestegaver / anonyme gaver
 
-Den offentlige donerningssiden (`B1App/src/app/[sdSlug]/(public)/[pageSlug]/components/DonatePage.tsx`) og panelet "gi nå" gjengir `NonAuthDonationWrapper` fra `@churchapps/apphelper/website`, som injiserer reCAPTCHA og leverandørens Elements-kontekst rundt leverandørens `GuestForm`. Gjester får ingen pålogging, ingen lagrede metoder og ingen historie. Flyten henter `GET /giving/funds/churchId/:id` og `GET /giving/donate/gateways/:churchId` (bare offentlige nøkler), bekrefter besøkende med `POST /giving/donate/captcha-verify`, tokeniserer i nettleseren og poster til `/giving/donate/charge` (eller `/subscribe`). Gjest ACH bruker den anonyme `POST /giving/paymentmethods/ach-setup-intent-anon`.
+Den offentlige giversiden (`B1App/src/app/[sdSlug]/(public)/[pageSlug]/components/DonatePage.tsx`) og panelet «gi nå» viser `NonAuthDonationWrapper` fra `@churchapps/apphelper/website`, som legger reCAPTCHA og gatewayens Elements-kontekst rundt leverandørens `GuestForm`. Gjester får ingen innlogging, ingen lagrede betalingsmåter og ingen historikk. Flyten henter `GET /giving/funds/churchId/:id` og `GET /giving/donate/gateways/:churchId` (bare offentlige nøkler), verifiserer den besøkende med `POST /giving/donate/captcha-verify`, tokeniserer i nettleseren og sender til `/giving/donate/charge` (eller `/subscribe`). ACH for gjester bruker det anonyme `POST /giving/paymentmethods/ach-setup-intent-anon`.
 
-Tre gaveskjemavalg kjører på samme gebyrkall. `?fundId=` og `?amount=` på donasjonsadressen forinnstiller fonddelingen (lest av hver leverandørs gaveskjema på montering, rouret gjennom normal fondskiftebehandler slik totaler og gebyrer oppdateres). `anonymous: true` gjør `DonateController.charge` kaster ut hvilken som helst person klienten sendte og logger gaven med `personId = null`; gaveskjemaet hopper over `/people/loadOrCreate` og kunde/valvtrinn, og de tre umiddelbare loggtrinnleverandørene slutter å løse en person fra gatewaykunnen. Apple Pay trenger sidens domene registrert hos Stripe, så en Stripe gaveskjema poster en gang per sesjon til det offentlige, ratebegrensede `POST /giving/donate/register-domain`, som kun godtar et domene som tilhører kirken (`<subDomain>.b1.church`, en rad i innholdsmodulens domener-bord eller en lokal vert) før Stripes betalingsmetode-domener-API anropet.
+Tre valg i gjesteskjemaet følger med det samme belastningskallet. `?fundId=` og `?amount=` i giver-URL-en forhåndsvelger fordelingen på fond (leses av hver leverandørs gjesteskjema ved montering og sendes gjennom den vanlige håndtereren for fondsendring slik at totaler og gebyrer oppdateres). `anonymous: true` gjør at `DonateController.charge` forkaster enhver person klienten sendte og logger gaven med `personId = null`; gjesteskjemaet hopper over `/people/loadOrCreate` og kunde-/hvelvtrinnet, og de tre leverandørene som logger umiddelbart, slutter å hente en person fra gateway-kunden. Apple Pay krever at sidens domene er registrert hos Stripe, så et Stripe-gjesteskjema sender én gang per økt til det offentlige, hastighetsbegrensede `POST /giving/donate/register-domain`, som bare godtar et domene som tilhører menigheten (`<subDomain>.b1.church`, en rad i innholdsmodulens domenetabell, eller en lokal vert) før det kaller Stripes API for betalingsmåte-domener.
 
-### Admin-oppføring og Stripe-import (B1Admin)
+### Administratorregistrering og Stripe-import (B1Admin)
 
-B1Admin donasjonsavsnittet (`B1Admin/src/donations/`) er hvor finansteam arbeider. Batchoppføring (`components/BulkDonationEntry.tsx`) registrerer kontanter/sjekk/slag-in-kind-gaver ved posting `/giving/donations` deretter `/giving/funddonations` — ingen gateway involvert. Midler, seriebatcher, kampanjer og uttalelser hver kart til deres `/giving/*` CRUD-ruter. Det medlemsstil doneringspanel (`B1Admin/src/donationComponents/`) gjenbruker samme apphelper-komponentene som B1App.
+Gaveseksjonen i B1Admin (`B1Admin/src/donations/`) er der økonomiteamene jobber. Batch-registrering (`components/BulkDonationEntry.tsx`) registrerer kontant-/sjekk-/naturagaver ved å sende `/giving/donations` og deretter `/giving/funddonations` — ingen gateway er involvert. Fond, bunter, kampanjer og giveroppgaver tilsvarer hver sine `/giving/*`-CRUD-ruter. Giverpanelet i medlemsstil (`B1Admin/src/donationComponents/`) gjenbruker de samme apphelper-komponentene som B1App.
 
-Rapportering og regnskapsoverføringer er klientsidearbeid eller rapportkjører-arbeid, ikke gatewayarbeid: sideprisen sitt QuickBooks-eksport bygger et journaloppføring-CSV fra batchens `donations` + `fundDonations` (debit Ikke-innskudd midler, en kreditt per fond), Lapsed Givers-fanen kjører `Api/reports/lapsedGivers.json` gjennom den generiske rapportkjøreren med person-navn løst av `ReportOutput`, og land mottaksformater (Kanada / Australia / New Zealand) er kirkestillinger i medlemskapsnøkkel/verdilageret gjengivet av `GivingStatementDocument` og duplisert i B1App utskriftssiden.
+Rapportering og overleveringer til regnskap er arbeid på klienten eller i rapportkjøreren, ikke gateway-arbeid: QuickBooks-eksporten på bunt-siden bygger en CSV med journalposter fra buntens `donations` + `fundDonations` (debet Undeposited Funds, én kreditt per fond), fanen Lapsed Givers kjører `Api/reports/lapsedGivers.json` gjennom den generiske rapportkjøreren der personnavn løses opp av `ReportOutput`, og landsspesifikke kvitteringsformater (Canada / Australia / New Zealand) er menighetsinnstillinger i nøkkel/verdi-lageret for medlemskap, gjengitt av `GivingStatementDocument` og duplisert i utskriftssiden i B1App.
 
-### Konvertere blandet-valutasum
+### Konvertering av totaler i blandede valutaer
 
-Et endepunkt som returnerer en enkelt kombinert sum over mulig blandet-valutagaver — giversammenfatningen KPI-kort (`GivingKpiCards`), en donasjonsbatch sum, en fond sum og B1App donasjonseskjermen år-til-dato/periode totaler — konverterer til kirkens standardvaluta serversiden i stedet for å summere ulikt valutaer. `Api/src/shared/helpers/ExchangeRateHelper.ts` henter satser fra `api.frankfurter.dev` knyttet av kirkenes valuta, lagrer dem i prosess i 12 timer og eksponerer `convertTotals(rows, churchCurrency, rates)`: rader er pre-gruppert etter valuta i SQL (en håndvoll grupper, aldri en per-gave konvertering), hver gruppe blir konvertert og summert, og resultatet bærer en `isConverted` flagg klienten bruker til å vise en "Konvertert til gjeldende valutakurser" merknad. `GET /donations/exchange-rates` eksponerer satskursen til klienter som trenger det (B1App donasjonseskjermen); satskursen selv blir aldri godtatt fra en forespørsel, bare noensinne hentet serversiden slik at en klient ikke kan påvirke en rapportert sum. Individuelle donasjonsrekorder og historisk/original-valuta-rapporter blir aldri konvertert — bare kombinerte totaler er.
+Ethvert endepunkt som returnerer én samlet total for gaver i muligens blandede valutaer — nøkkeltallene i giveroppsummeringen (`GivingKpiCards`), en totalsum for en gavebunt, en totalsum for et fond og totalene hittil i år/for perioden på giverskjermen i B1App — konverterer til menighetens standardvaluta på serveren i stedet for å summere ulike valutaer. `Api/src/shared/helpers/ExchangeRateHelper.ts` henter kurser fra `api.frankfurter.dev` med menighetens valuta som nøkkel, mellomlagrer dem i prosessen i 12 timer og eksponerer `convertTotals(rows, churchCurrency, rates)`: radene er på forhånd gruppert etter valuta i SQL (en håndfull grupper, aldri konvertering per gave), hver gruppe konverteres og summeres, og resultatet bærer et `isConverted`-flagg som klienten bruker til å vise en merknad om «Converted at current exchange rates». `GET /donations/exchange-rates` eksponerer kurstabellen for klienter som trenger den (giverskjermen i B1App); selve kursene godtas aldri fra en forespørsel, de hentes alltid bare på serveren, slik at en klient ikke kan påvirke en rapportert total. Enkeltgaver og historiske rapporter/rapporter i opprinnelig valuta konverteres aldri — bare samlede totaler.
 
-Stripe-import (`B1Admin/src/donations/StripeImportPage.tsx`) fylling bakover gaver gjort utenfor B1: den kaller `POST /giving/donate/replay-stripe-events` med `dryRun: true` for en forhåndsvisning, deretter `dryRun: false` til import. Serveren lister Stripe-arrangementer for datointervallet og hopper alt allerede registrert — matchet først av `eventLogs` leverandør-id, deretter av `DonationRepo.findMatchingDonation` (beløp + dato + person) slik en rerun aldri dobbelt-import.
+Stripe-importen (`B1Admin/src/donations/StripeImportPage.tsx`) fyller inn gaver gitt utenfor B1: den kaller `POST /giving/donate/replay-stripe-events` med `dryRun: true` for en forhåndsvisning, deretter `dryRun: false` for å importere. Serveren lister Stripe-hendelser for datointervallet og hopper over alt som allerede er registrert — avstemt først mot `eventLogs`-leverandørens ID, deretter mot `DonationRepo.findMatchingDonation` (beløp + dato + person), slik at en ny kjøring aldri importerer to ganger.
 
 ## Webhooks og avstemming
 
-Oppgjorte betalinger og abonnementstilstandsendringer ankomst på `POST /giving/donate/webhook/:provider?churchId=…` (`DonateController.webhook`). Bearbeiding er bevisst idempotent:
+Gjennomførte betalinger og endringer i abonnementstilstand kommer til `POST /giving/donate/webhook/:provider?churchId=…` (`DonateController.webhook`). Behandlingen er bevisst idempotent:
 
-1. **Verifiser** — `GatewayService.verifyWebhook` delegerer til leverandørens signatursjekk; en mislykket signatur returnerer 401. Arrangementer som ikke trenger bearbeiding kortslutning med 200.
-2. **Dedup arrangementet** — `EventLogRepo.loadByProviderId` hopper et webhook allerede registrert i `eventLogs`.
-3. **Dedup donasjonen** — før du lager noe, `DonationRepo.loadByTransactionId` blir sjekket mot hver kandidat-id payloaden mulig å bære. Dette absorberer duplisert leveranser, multi-trinn ACH-arrangementer (ventende → oppgjort) og saken hvor `/donate/charge` allerede logget gaven optimistisk.
-4. **Påfør** — leverandørens `classifyWebhookEvent(eventType)` sier hva arrangementet betyr (`donation` ventende/fullføring, `cancel-subscription` eller `ignore`); fullførte betalinger lager en `complete` donasjon (eller fremme en eksisterende `pending` eller `failed`), ACH-stilvender lander som `pending` til oppgjør, en mislykket abonnementsfaktura (Stripe `invoice.payment_failed`) lager en `failed` donasjon knyttet på faktura-id, og kanselleringshendelser sletter den lokale `subscriptions` rad. Kontrolleren inspekterer aldri leverandørspesifikke arrangementnavn.
+1. **Verifiser** — `GatewayService.verifyWebhook` delegerer til leverandørens signatursjekk; en mislykket signatur gir 401. Hendelser som ikke trenger behandling, avsluttes tidlig med 200.
+2. **Fjern duplikater av hendelsen** — `EventLogRepo.loadByProviderId` hopper over en webhook som allerede er registrert i `eventLogs`.
+3. **Fjern duplikater av gaven** — før noe opprettes, sjekkes `DonationRepo.loadByTransactionId` mot hver kandidat-ID nyttelasten kan bære. Dette fanger opp dobbeltlevering, ACH-hendelser i flere trinn (pending → settled) og tilfellet der `/donate/charge` allerede har logget gaven optimistisk.
+4. **Bruk** — leverandørens `classifyWebhookEvent(eventType)` sier hva hendelsen betyr (`donation` pending/complete, `cancel-subscription` eller `ignore`); fullførte betalinger oppretter en `complete`-gave (eller løfter en eksisterende `pending` eller `failed` opp), ACH-lignende hendelser havner som `pending` til oppgjør, en mislykket abonnementsfaktura (Stripe `invoice.payment_failed`) oppretter en `failed`-gave med faktura-ID-en som nøkkel, og kanselleringshendelser sletter den lokale `subscriptions`-raden. Kontrolleren inspiserer aldri leverandørspesifikke hendelsesnavn.
 
-### Mislykkede gjentakende gaver og innkreving
+### Mislykkede gjentakende gaver og purring
 
-En `failed` donasjon er arbeidsenhetene for gjenoppretting. `GET /giving/donations/failed` lister dem med den nyeste gatewayfeilen fra `eventLogs` og en `canRetry` flagg fra gatewayens evner; `POST /giving/donate/retry/:donationId` kaller leverandørens `retryFailedPayment` (Stripe betaler den åpne fakturaen), og den resulterende webhookfremmer raden til `complete` gjennom det normale dedupslinga. Innkrevingspostene går til giveren fra webhook-behandleren på dag 0, deretter fra `DunningHelper.run` i midnattstidtakeren (ledningsført i både `lambda/timer-handler.ts` og `RailwayCron.ts`) på dag 3 og 7; hver sending blir registrert i `eventLogs` som `provider: "dunning"`, `providerId: "<donationId>:<day>"` slik en omgivelsen aldri e-post dobbelt. Stripe webhook-endepunkter opprettet før denne funksjonen abonnerer ikke på `invoice.payment_failed`; lagring av gatewayen igjen fasiliterer et frisk endepunkt med arrangementet.
+En `failed`-gave er arbeidsenheten for gjenoppretting. `GET /giving/donations/failed` lister dem med den nyeste gateway-feilmeldingen fra `eventLogs` og et `canRetry`-flagg fra gatewayens muligheter; `POST /giving/donate/retry/:donationId` kaller leverandørens `retryFailedPayment` (Stripe betaler den åpne fakturaen), og den resulterende webhooken løfter raden til `complete` gjennom den vanlige duplikatkontrollen. E-poster om purring sendes til giveren fra webhook-håndtereren på dag 0, deretter fra `DunningHelper.run` i midnattstimeren (koblet inn i både `lambda/timer-handler.ts` og `RailwayCron.ts`) etter 3 og 7 dager; hver sending registreres i `eventLogs` som `provider: "dunning"`, `providerId: "<donationId>:<day>"`, slik at en ny kjøring aldri sender e-post to ganger. Når Stripe gir opp og kansellerer abonnementet (`customer.subscription.deleted` med `cancellation_details.reason: "payment_failed"`), sender `DunningHelper.notifyCanceled` giveren én e-post (`providerId: "<subscriptionId>:canceled"`); kanselleringer startet av giveren eller en administrator er stille. Stripe legger aldri til hendelser på et eksisterende endepunkt: etter at `StripeHelper.webhookEvents` er endret, må du enten lagre gatewayen på nytt eller kjøre `tools/manual/stripe-webhook-events.ts` (prøvekjøring som standard, `--apply` for å skrive) mot produksjon.
 
-Leverandører med `logsDonationsImmediately` (PayPal, Kingdom Funding, Paystack) har deres gebyrer logget fra `/charge` responsen (ingen webhook omgang-tur nødvendig for den lykkelig vei), mens Stripe er avhengig av `payment_intent.succeeded` / `invoice.paid` og ACH `payment_intent.processing`. Gebyrbehandling (`POST /giving/donate/fee`, `payFees` gatewayflaget og hver leverandørs `calculateFees`) beregner "dekk gebyrene" brutto-up på giverens side — B1 tar ingen plattformkutt, slik ingen applikasjonsgebyr blir noen gang lagt til.
+Leverandører med `logsDonationsImmediately` (PayPal, Kingdom Funding, Paystack) får belastningene sine logget fra `/charge`-svaret (ingen webhook-runde kreves for den gunstige veien), mens Stripe er avhengig av `payment_intent.succeeded` / `invoice.paid` og ACH `payment_intent.processing`. Gebyrhåndteringen (`POST /giving/donate/fee`, gateway-flagget `payFees` og hver leverandørs `calculateFees`) beregner påslaget for «dekk gebyrene» på giverens side — B1 tar ingen plattformandel, så noe applikasjonsgebyr legges aldri til.
 
 :::info
-Gebyret og webhook-stiene skriver samme `donations` / `fundDonations` rader. `transactionId` er sammenføyningsnøkkelen som holder en optimistisk gebyrkall og dens senere webhook fra å produsere to donasjoner for en gave.
+Belastnings- og webhook-veiene skriver de samme `donations`-/`fundDonations`-radene. `transactionId` er koblingsnøkkelen som hindrer at en optimistisk belastningslogg og den senere webhooken gir to gaver for én gave.
 :::
 
 ## Relaterte sider
 
-- [Giving Endepunkter](../api/endpoints/giving) — full REST overflate for donasjoner, midler, seriebatcher, gatewayen, abonnement, betalingsmetoder og webhooks
-- [AppHelper](../shared-libraries/app-helper) — npm-pakken som leverer betalingsleverandørregisteret og donasjonskomponentene
-- [Modulstruktur](../api/module-structure) — hvordan GivingApi-modulen er organisert serversiden
+- [Endepunkter for gaver](../api/endpoints/giving) — hele REST-flaten for gaver, fond, bunter, gatewayer, abonnementer, betalingsmåter og webhooks
+- [AppHelper](../shared-libraries/app-helper) — npm-pakken som leverer leverandørregisteret for betaling og gavekomponentene
+- [Modulstruktur](../api/module-structure) — hvordan GivingApi-modulen er organisert på serversiden

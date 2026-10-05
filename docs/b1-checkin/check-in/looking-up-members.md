@@ -55,6 +55,20 @@ Searching by the last 4 digits of a phone number is the fastest way to look up y
 If no results are found, the app displays a message letting you know. Double-check the digits or name you entered, or try the other search mode. If you are a first-time visitor, ask a volunteer for help getting [added to the system](../../b1-admin/people/adding-people.md).
 :::
 
+## Registering as a Guest
+
+If your church has QR guest registration turned on, a **Register as guest** link appears below the search on the lookup screen. First-time visitors can use it to add their family to the church's system before checking in.
+
+1. Tap **Register as guest**. A window opens with a QR code and the message "Scan to register as a guest."
+2. Choose how to fill in the [guest registration form](../../b1-church/checkin/guest-registration):
+   - **On your phone** -- Scan the QR code, fill in the form on your phone, and tap **OK** to close the window.
+   - **On the kiosk** -- Tap **Register here** to open the same form right on the tablet. Fill it in and tap **Register**, then tap **Done** (or the back arrow) to return to the lookup screen.
+3. Once registered, search for your family by name or phone number to check in.
+
+:::info
+The form opened with **Register here** stays on the guest registration page -- visitors can't browse to other parts of the church website from the kiosk. If no one touches or types in the form for 2 minutes, the kiosk closes it and returns to the lookup screen. Each time the form closes, anything typed into it is cleared so the next family starts with a blank form.
+:::
+
 ## Printing Labels for a Phone Check-In
 
 Families who already checked in on their phone through [B1 Church self check-in](../../b1-church/checkin/self-checkin) can print their name tags at the kiosk without looking themselves up.

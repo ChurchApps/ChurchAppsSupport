@@ -1,45 +1,52 @@
 ---
-title: "Dagens Vers"
+title: "Dagens vers"
 ---
 
-# Dagens Vers
+# Dagens vers
 
 <div class="article-intro">
 
-Dagens Vers-siden viser et daglig bibelvers som et vakkert formatert bilde. Det er en enkel måte å starte dagen med Skriften eller finne oppmuntring gjennom uken.
+Siden Dagens vers viser et bibelvers for dagen som et pent formatert bilde. Det er en enkel måte å begynne dagen med Guds ord på, eller å finne oppmuntring gjennom uka.
 
 </div>
 
 <div class="prereqs">
-<h4>Før Du Begynner</h4>
+<h4>Før du begynner</h4>
 
-- Ingen innlogging er nødvendig for å se Dagens Vers. Siden er offentlig tilgjengelig.
-- Kirken din må ha lagt til en Dagens Vers-side i nettstedets navigasjon.
+- Du trenger ikke å logge inn for å se Dagens vers. Siden er offentlig tilgjengelig.
+- Menigheten din må ha lagt en side for Dagens vers inn i navigasjonen på nettstedet sitt.
 
 </div>
 
-## Se Verset
+## Se verset
 
-1. Naviger til **Dagens Vers**-siden fra kirkens nettstedsnavigasjon.
+1. Gå til siden **Dagens vers** fra navigasjonen på menighetens nettsted.
 2. Siden viser dagens vers som et bilde.
 3. Et nytt vers vises automatisk hver dag.
 
-Det er ingenting du trenger å gjøre -- bare besøk siden, så vil dagens vers bli vist.
+Du trenger ikke å gjøre noe -- bare åpne siden, så vises dagens vers.
 
-## Responsiv Visning
+## Tilpasset visning
 
-Versbildet tilpasser seg automatisk skjermen din. Avhengig av enheten og vindusstørrelsen vil du se ett av tre formater:
+Versbildet tilpasser seg automatisk skjermen din. Avhengig av enheten og vindusstørrelsen ser du ett av tre formater:
 
-- **Bredskjerm (16:9)** -- Best for skrivebordsskjermer og bærbare datamaskiner
-- **Kvadrat (1:1)** -- Egnet for nettbrett-størrelse skjermer
-- **Portrett (9:16)** -- Optimalisert for telefoner holdt vertikalt
+- **Bredformat (16:9)** -- Passer best for stasjonære skjermer og bærbare datamaskiner
+- **Kvadratisk (1:1)** -- Egnet for nettbrett
+- **Stående (9:16)** -- Optimalisert for mobiler som holdes loddrett
 
-Siden oppdager skjermdimensjonene dine og velger det beste formatet, slik at verset alltid ser bra ut uansett hvordan du ser det. Hvis du endrer størrelsen på nettleservinduet, vil bildet oppdateres for å matche de nye dimensjonene.
+Siden registrerer skjermstørrelsen din og velger det beste formatet, slik at verset alltid ser bra ut uansett hvordan du ser på det. Hvis du endrer størrelsen på nettleservinduet, oppdateres bildet slik at det passer de nye målene.
+
+## Dele verset
+
+I medlemsportalen (`/mobile`) har skjermen Dagens vers to knapper under verset:
+
+- **Del bilde** -- deler selve versbildet, slik at du kan legge det ut eller sende det i en melding. På enheter som ikke kan dele filer (for eksempel de fleste nettlesere på datamaskin), lastes bildet ned i stedet.
+- **Del** -- deler verseteksten, bibelreferansen og en lenke til siden. Hvis enheten din ikke har noen delingsmeny, kopieres teksten og lenken til utklippstavlen.
 
 :::tip
-Gjør det til en daglig vane å sjekke Dagens Vers, og utforsk deretter passasjen videre i [bibelleseren](./bible.md).
+Gjør det til en daglig vane å lese Dagens vers, og utforsk deretter tekstavsnittet videre i [bibelleseren](./bible.md).
 :::
 
 ## Tilgjengelighet
 
-Dagens Vers er en innebygd innholdsfunksjon i B1.church. Hvis du ikke ser den i kirkens navigasjon, har kanskje ikke kirkens administrator lagt den til i nettstedsmenyen. Kontakt kirkens administrator for å be om det.
+Dagens vers er en innebygd innholdsfunksjon i B1.church. Hvis du ikke ser den i menighetens navigasjon, har kanskje administratoren i menigheten ikke lagt den til i nettstedets meny. Ta kontakt med administratoren i menigheten for å be om den.

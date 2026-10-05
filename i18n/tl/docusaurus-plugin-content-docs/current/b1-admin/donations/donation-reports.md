@@ -1,89 +1,81 @@
 ---
-title: "Mga Ulat sa Donasyon"
+title: "Mga Ulat ng Donasyon"
 ---
 
-# Mga Ulat sa Donasyon
+# Mga Ulat ng Donasyon
 
 <div class="article-intro">
 
-Ang B1 Admin ay nagbibigay sa iyo ng ilang mga paraan upang tingnan at suriin ang data ng pagbibigay ng iyong simbahan. Ang Donations Summary page ay nagbibigay ng isang visual overview na may mga chart at filter, habang ang Reports section ay nag-aalok ng isang mas detalyadong Donation Summary report. Gamitin ang mga tool na ito upang subaybayan ang mga uso sa pagbibigay, maghanda para sa mga pagpupulong ng board, o magsama ng iyong mga talaan.
+Nagbibigay ang B1 Admin ng iba't ibang paraan para tingnan at suriin ang giving data ng simbahan mo. Ang giving dashboard sa pahinang **Summary** ng Donations ay nagbibigay ng biswal na pangkalahatang-tanaw na may mga chart at filter, habang ang seksyong Reports ay nag-aalok ng mas detalyadong Donation Summary report. Gamitin ang mga tool na ito para subaybayan ang mga trend ng pagbibigay, maghanda para sa mga pulong ng lupon, o i-reconcile ang mga talaan mo.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago ka magsimula</h4>
+<h4>Bago Magsimula</h4>
 
-- Tiyakin na ang mga donasyon ay [naitala sa mga batch](recording-donations.md) o [na-import mula sa Stripe](stripe-import.md)
-- Suriin na ang iyong [funds](funds.md) ay na-setup nang tama upang ang mga donasyon ay maayos na naka-kategorya
+- Tiyaking ang mga donasyon ay [naitala na sa mga batch](recording-donations.md) o [na-import mula sa Stripe](stripe-import.md)
+- I-verify na tama ang pagkaka-set up ng iyong mga [fund](funds.md) para maayos na maiuri ang mga donasyon
 
 </div>
 
-## Dashboard ng Pagbibigay
+## Giving Dashboard
 
-Ang **Giving Dashboard** ay ang unang bagay na nakikita mo kapag binuksan mo ang seksyon ng **Donations**. Ito ay nagbibigay ng mataas na antas na paningin ng iyong aktibidad ng pagbibigay na may mga pangunahing tagapagpahiwatig ng pagganap.
+Ang giving dashboard ay ang tab na **Dashboard** ng pahinang **Summary**, ang unang pahinang makikita mo kapag binuksan ang seksyong **Donations**.
 
-1. Buksan ang **section menu** sa itaas na sulok sa kaliwa at piliin ang **Donations** upang buksan ang dashboard.
-2. Sa tuktok, apat na **KPI cards** ay nagpapakita ng iyong mga sukatan ng pagbibigay sa isang sulyap:
-   - **Total Giving** -- Ang kabuuang halaga ng na-donate sa napiling panahon.
-   - **Average Gift** -- Ang average na halaga ng donasyon.
-   - **Unique Donors** -- Ang bilang ng mga natatanging tao na nagbigay.
+1. Buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas ng B1 Admin), palawakin ang **Donations**, at i-click ang **Summary**. Magbubukas ang pahinang **Summary** sa tab na **Dashboard**.
+2. Gamitin ang toggle na **Weekly**, **Monthly**, at **Quarterly** sa itaas ng ulat para piliin kung paano pagsasama-samahin ang mga handog.
+3. Sa panel na **Filter Report**, itakda ang **Start Date** at **End Date** (bilang default, ang nakaraang taon hanggang kahapon) at opsyonal na pumili ng **Fund**, pagkatapos ay i-click ang **Run Report**. Awtomatikong tumatakbo ang ulat gamit ang mga default kapag nagbukas ang pahina.
+4. Apat na **KPI card** ang nagpapakita ng mga sukatan ng pagbibigay para sa napiling saklaw:
+   - **Total Giving** -- Ang kabuuang halagang naidonasyon.
+   - **Average Gift** -- Ang karaniwang halaga ng donasyon.
+   - **Unique Donors** -- Ang bilang ng mga natatanging taong nagbigay.
    - **Total Donations** -- Ang kabuuang bilang ng mga indibidwal na donasyon.
-3. Gamitin ang **period toggle** upang lumipat sa pagitan ng **Weekly**, **Monthly**, at **Quarterly** na mga paninindigan.
-4. Sa ibaba ng KPIs, isang chart ay nagpapakita ng mga uso sa pagbibigay para sa napiling panahon.
-5. I-click ang **Download** upang mag-export ng CSV file na may kabuuang halaga ng pagbibigay.
+5. Sa ibaba ng mga KPI, may bar chart na nagpapakita ng pagbibigay kada linggo, buwan, o quarter, hinati ayon sa fund.
+6. I-click ang **Download Options** at piliin ang **Summary** para mag-export ng CSV ng mga kabuuan ayon sa panahon at fund, o i-click ang print icon para i-print ang ulat. Lumalabas ang pangalan ng simbahan mo sa itaas ng na-print na ulat.
 
-Kung ang mga donasyon sa panahon ay ibinigay sa higit sa isang currency, ang kabuuan ng KPI ay kinukonberto sa iyong currency ng simbahan at isang notang **Converted at current exchange rates** ay lumilitaw sa ibaba ng mga kard. Makita ang [Multi-Currency Support](./multi-currency.md#converted-totals) para sa mga detalye.
-
-## Mga Lapsed na Nag-ibigay
-
-Ang tab na **Lapsed Givers** sa tabi ng dashboard ay naglalista ng mga taong nagbigay sa isang panahon ngunit hindi pa. Sa default ito ay inihahambing ang nakaraang taon ng kalendaryo na may ngayong taon hanggang sa kasalukuyan; baguhin ang kahit na saklaw ng petsa upang palawakin o paliitin ang paghahanap. Bawat hilera ay nagpapakita ng tao, ang petsa ng kanilang huling regalo at ang kanilang kabuuan para sa mas maaga na panahon, at ang **Export** ay nag-download ng listahan bilang CSV para sa isang follow-up mailing o call list.
-
-## Pahina ng Donation Summary
-
-Ang **Summary** page ay nagbibigay ng mas detalyadong aggregate data ng pagbibigay.
-
-1. Buksan ang **section menu** sa itaas na sulok sa kaliwa at piliin ang **Donations** upang buksan ang Summary page.
-2. Gamitin ang **date range filter** upang pumili ng panahon na nais mong suriin. Itakda ang mas maagap na petsa sa tuktok at ang mas kamakailang petsa sa ibaba.
-3. Ang pahina ay nagpapakita ng chart ng pagbibigay bawat linggo upang makita mo ang mga uso sa isang sulyap.
-4. I-click ang **Download** upang mag-export ng CSV file na may kabuuang halaga na ibinigay, ang linggo na ibinigay, at ang fund na ibinigay.
+Kung ang mga donasyon sa panahong iyon ay ibinigay sa higit sa isang currency, kino-convert ang mga kabuuang KPI sa currency ng simbahan mo at may lalabas na paalalang **Converted at current exchange rates** sa ibaba ng mga card. Tingnan ang [Suporta sa Maraming Currency](./multi-currency.md#converted-totals) para sa mga detalye.
 
 :::info
-Ang Summary page ay nagpapakita ng aggregate data ng pagbibigay. Hindi ito kasama ang mga pangalang nag-iindibidwal na nag-ibigay. Para sa mga detalye sa antas ng donor, gamitin ang [Batches](batches.md) page.
+Ipinapakita ng dashboard ang pinagsama-samang giving data. Hindi nito kasama ang mga pangalan ng indibidwal na nagbigay. Para sa detalye sa antas ng nagbigay, gamitin ang pahina ng [Batches](batches.md).
 :::
 
-## Pagsusuri ng Detalye sa Antas ng Nag-donor
+## Mga Lapsed Giver
 
-Para sa isang breakdown kung sino ang nagbigay, magkano, at sa anong fund:
+Ang tab na **Lapsed Givers** sa tabi ng tab na **Dashboard** ay naglilista ng mga taong nagbigay sa isang panahon ngunit hindi na simula noon. Bilang default, inihahambing nito ang nakaraang taon sa kasalukuyang taon hanggang ngayon; baguhin ang alinmang saklaw ng petsa para palawakin o paliitin ang paghahanap. Ipinapakita ng bawat row ang tao, ang petsa ng huli nilang handog at ang kabuuan nila sa naunang panahon, at ang **Download Options > Summary** ay nagda-download ng listahan bilang CSV para sa follow-up na mailing o listahan ng tatawagan.
 
-1. Mag-navigate sa **Donations > Batches**.
-2. I-click ang **batch name** upang buksan ito.
-3. Ang batch detail page ay naglalista ng bawat donasyon na may pangalan ng donor, halaga, fund, petsa, at paraan ng pagbabayad.
-4. I-click ang **pangalan ng donor** upang makita ang isang breakdown kung gaano karaming beses sila nagbigay at kung gaano kalaki ang bawat oras.
-5. I-click ang **donation ID** upang buksan ang isang side panel na may buong mga detalye para sa indibidwal na donasyon.
-6. I-click ang **Download** upang mag-export ng CSV na may lahat ng impormasyon ng donor at donasyon para sa batch na iyon.
+## Pagtingin sa Detalye sa Antas ng Nagbigay
+
+Para sa detalye kung sino ang nagbigay, magkano, at para sa aling fund:
+
+1. Pumunta sa **Donations > Batches**.
+2. I-click ang **pangalan ng batch** para buksan ito.
+3. Inililista ng pahina ng detalye ng batch ang bawat donasyon kasama ang pangalan ng nagbigay, halaga, fund, petsa, at paraan ng pagbabayad.
+4. I-click ang **pangalan ng nagbigay** para makita ang detalye kung ilang beses siyang nagdonasyon at magkano sa bawat pagkakataon.
+5. I-click ang **donation ID** para magbukas ng side panel na may buong detalye ng indibidwal na donasyong iyon.
+6. I-click ang **Download** para mag-export ng CSV na may lahat ng impormasyon ng nagbigay at donasyon para sa batch na iyon.
 
 ## Donation Summary Report
 
-Ang umuulat ng donasyon ay direktang nakabalot sa seksyon ng Donations -- ang Summary page ay nagsisilbing iyong ulat sa donasyon na pagbubuod:
+Nakapaloob na mismo sa seksyong Donations ang pag-uulat ng donasyon -- ang pahinang Summary ang nagsisilbing donation summary report mo:
 
-1. Buksan ang **section menu** sa itaas na sulok sa kaliwa at piliin ang **Donations** upang buksan ang Summary page.
-2. Gamitin ang **date range filter** upang pumili ng panahon na nais mong iulat.
-3. I-click ang **Download** upang mag-export ng ulat bilang CSV file.
+1. Sa Jump menu, piliin ang **Donations > Summary**.
+2. Sa tab na **Dashboard**, itakda ang **Start Date** at **End Date** sa panel na **Filter Report** at i-click ang **Run Report**.
+3. I-click ang **Download Options** at piliin ang **Summary** para i-export ang ulat bilang CSV file.
 
 ## Pag-export ng Data
 
-Maaari mong i-export ang data ng donasyon mula sa maraming lugar:
+Maaari kang mag-export ng donation data mula sa iba't ibang lugar:
 
-- **Summary page** -- mag-download ng CSV ng weekly na kabuuan ng pagbibigay ayon sa fund
-- **Batch detail page** -- mag-download ng CSV ng mga indibidwal na donasyon na may mga detalye ng donor
-- **Funds detail page** -- mag-download ng kasaysayan ng donasyon para sa isang tiyak na fund
+- **Pahina ng Summary** -- mag-download ng CSV ng mga kabuuan ng pagbibigay kada linggo, buwan, o quarter at fund
+- **Pahina ng detalye ng Batch** -- mag-download ng CSV ng mga indibidwal na donasyon kasama ang detalye ng nagbigay
+- **Pahina ng detalye ng Funds** -- i-download ang kasaysayan ng donasyon para sa isang partikular na fund
 
 :::tip
-Para sa umuulat sa pagtatapos ng taon, pagsama ang Summary page export gamit ang tool na [Giving Statements](giving-statements.md) upang makakuha ng parehong aggregate trends at mga indibidwal na statement ng donor.
+Para sa pag-uulat sa katapusan ng taon, pagsamahin ang export mula sa pahina ng Summary at ang tool na [Giving Statements](giving-statements.md) para makuha ang parehong pinagsama-samang trend at mga indibidwal na statement ng nagbigay.
 :::
 
 ## Mga Susunod na Hakbang
 
-- Lumikha ng [Giving Statements](giving-statements.md) para sa iyong mga donor sa pagtatapos ng taon
-- Suriin ang indibidwal na [batches](batches.md) upang tiyakin ang mga detalye ng donasyon
-- Suriin ang [fund](funds.md) detail pages para sa mga breakdown ng pagbibigay ayon sa kategorya
+- Gumawa ng [Giving Statements](giving-statements.md) para sa mga nagbigay mo sa katapusan ng taon
+- Suriin ang mga indibidwal na [batch](batches.md) para i-verify ang detalye ng mga donasyon
+- Tingnan ang mga pahina ng detalye ng [fund](funds.md) para sa hati ng pagbibigay ayon sa kategorya

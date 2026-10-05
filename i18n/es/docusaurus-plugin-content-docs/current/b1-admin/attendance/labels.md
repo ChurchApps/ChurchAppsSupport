@@ -1,89 +1,90 @@
 ---
-title: "Diseñador de Etiquetas de Check-In"
+title: "Diseñador de Etiquetas de Registro"
 ---
 
-# Diseñador de Etiquetas de Check-In
+# Diseñador de Etiquetas de Registro
 
 <div class="article-intro">
 
-El Diseñador de Etiquetas te permite crear y personalizar las plantillas de etiquetas de nombre y comprobantes de recogida que se imprimen cuando las familias registran a sus niños. Puedes controlar exactamente qué información aparece en cada etiqueta, dónde se posiciona y cómo se ve.
+El Diseñador de Etiquetas le permite crear y personalizar las plantillas de etiquetas de nombres y comprobantes de recogida que se imprimen cuando las familias registran a sus hijos. Puede controlar exactamente qué información aparece en cada etiqueta, dónde se posiciona y cómo se ve.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- Configura [Asistencia](setup) y configura al menos un horario de servicio con check-in habilitado
-- Configura [Check-In](check-in) para que las etiquetas se impriman
-- Necesitas acceso administrativo a la sección de Asistencia
+- Configure [Attendance](setup) y configure al menos un horario de servicio con registro habilitado
+- Configure [Check-In](check-in) para que se impriman las etiquetas
+- Necesita acceso administrativo a la sección Attendance
 
 </div>
 
-## Abrir el Diseñador de Etiquetas
+## Abriendo el Diseñador de Etiquetas
 
-En B1 Admin, haz clic en el **menú de sección** en la esquina superior izquierda (el nombre de la sección actual con la flecha pequeña al lado) y elige **Móvil**. En la barra de navegación, selecciona **B1 CheckIn**, luego haz clic en el botón **Diseñar Etiquetas** en la tarjeta de Etiquetas de Check-In. Verás una lista de tus plantillas de etiquetas guardadas, separadas por tipo: **Etiqueta de Nombre** y **Comprobante de Recogida**.
+En B1 Admin, abra el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la esquina superior izquierda), expanda **Mobile**, y haga clic en **B1 CheckIn**. Luego haga clic en el botón **Design Labels** en la tarjeta Check-in Labels. Verá una lista de sus plantillas de etiquetas guardadas, separadas por tipo: **Nametag** y **Pickup Slip**.
 
 ## Tipos de Etiquetas
 
-- **Etiqueta de Nombre** — se imprime y se adhiere al niño. Típicamente incluye el nombre del niño, su aula/sesión y un código de seguridad.
-- **Comprobante de Recogida** — se entrega al padre o tutor. Típicamente incluye el código de seguridad y una lista de los niños que fueron registrados.
+- **Nametag** — impreso y adherido al niño. Generalmente incluye el nombre del niño, su aula/sesión y un código de seguridad.
+- **Pickup Slip** — entregado al padre o tutor. Generalmente incluye el código de seguridad y una lista de los niños que registró.
 
-B1 te proporciona una plantilla de etiqueta de nombre predeterminada y una plantilla de comprobante de recogida predeterminada dimensionadas para etiquetas térmicas estándar de 3.5 × 1.1 pulgadas.
+B1 comienza con una plantilla de etiqueta de nombre predeterminada y una plantilla de comprobante de recogida predeterminada de tamaño de 3.5 x 1.1 pulgadas.
 
 ## Crear una Plantilla de Etiqueta
 
-1. Haz clic en **Agregar Etiqueta de Nombre** o **Agregar Comprobante de Recogida** (o usa el menú desplegable para elegir).
+1. Haga clic en **Add** y elija un punto de partida del menú: **Nametag 3.5" x 1.1"**, **Pickup Slip 3.5" x 1.1"**, o **Blank**.
 2. Una nueva plantilla se abre en el editor de etiquetas.
 
 ### Editor de Etiquetas
 
-El editor muestra una vista previa escalada de la etiqueta en el tamaño configurado. En el panel izquierdo puedes configurar:
+El editor muestra una vista previa a escala de la etiqueta en el tamaño configurado. En el panel izquierdo puede configurar:
 
-- **Nombre** — el nombre de la plantilla (solo para tu referencia)
-- **Tipo de Etiqueta** — Etiqueta de Nombre o Comprobante de Recogida
-- **Ancho / Alto** — tamaño de etiqueta en pulgadas
+- **Name** — el nombre de la plantilla (solo para su referencia)
+- **Label Type** — Nametag o Pickup Slip
+- **Width / Height** — tamaño de la etiqueta en pulgadas
 
-### Agregar Bloques
+### Añadiendo Bloques
 
-Una etiqueta se construye a partir de bloques — piezas individuales de contenido posicionadas en el lienzo de etiqueta. Haz clic en **Agregar Bloque** para insertar un nuevo bloque y elige su tipo:
+Una etiqueta se construye a partir de bloques — piezas individuales de contenido posicionadas en el lienzo de la etiqueta. Haga clic en **Add Block** para insertar un nuevo bloque y elegir su tipo:
 
-- **Campo** — extrae un valor de datos en tiempo de impresión:
+- **Field** — extrae un valor de datos en tiempo de impresión:
   - `person.displayName` — nombre completo de la persona
-  - `sessions` — el servicio/aula en el que se registraron
-  - `securityCode` — el código de seguridad de recogida generado aleatoriamente
+  - `sessions` — el servicio/aula en el que se registró
+  - `securityCode` — código de seguridad de recogida generado aleatoriamente
   - `children` — lista de niños (para comprobantes de recogida)
   - `person.nametagNotes` — cualquier nota especial en el registro de la persona
-  - `campus` — el nombre de la sede
-- **Texto** — texto estático que escribes (para títulos, etiquetas o instrucciones)
-- **Código de Barras** — un código de barras que codifica el código de seguridad
+  - `person.isBirthdayWeek` — verdadero si el cumpleaños de la persona (mes y día) está dentro de 3 días antes o después de la fecha de registro
+  - `campus` — nombre del campus
+- **Text** — texto estático que escribe (para encabezados, etiquetas o instrucciones)
+- **Barcode** — código de barras que codifica el código de seguridad
 
-### Posicionar Bloques
+### Posicionamiento de Bloques
 
-Cada bloque tiene campos **X**, **Y**, **Ancho** y **Alto** expresados como porcentajes del lienzo de etiqueta (0–100). Ajusta estos para posicionar contenido con precisión. También puedes establecer:
+Cada bloque tiene campos **X**, **Y**, **Width** y **Height** expresados como porcentajes del lienzo de la etiqueta (0-100). Ajuste estos para posicionar contenido con precisión. También puede configurar:
 
-- **Tamaño de Fuente** — tamaño de texto en puntos
-- **Negrita** — alternar texto en negrita
-- **Alineación** — alineación de texto a la izquierda, centro o derecha
-- **Condición** — opcionalmente oculta el bloque si un campo está vacío (por ejemplo, solo mostrar nametagNotes si tiene un valor)
+- **Font Size** — tamaño del texto en puntos
+- **Bold** — alterna texto en negrita
+- **Align** — alineación del texto a la izquierda, centro o derecha
+- **Condition** — opcionalmente oculta el bloque si un campo está vacío (por ejemplo, solo muestra nametagNotes si tiene un valor). Esto también funciona con `person.isBirthdayWeek` para mostrar un gráfico o texto de cumpleaños solo en etiquetas de nombres para niños cuyo cumpleaños está a unos pocos días del registro.
 
-### Guardar
+### Guardando
 
-Haz clic en **Guardar** para guardar la plantilla. La plantilla actualizada se usará la próxima vez que se impriman etiquetas en B1 Checkin.
+Haga clic en **Save** para guardar la plantilla. La plantilla actualizada se usará la próxima vez que se impriman etiquetas en B1 Checkin.
 
-## Reordenar Plantillas
+## Reordenando Plantillas
 
-Si tienes múltiples plantillas de etiqueta de nombre o comprobante de recogida, B1 Checkin usará la primera plantilla en la lista de forma predeterminada. Arrastra las plantillas para reordenarlas.
+Si tiene múltiples plantillas de etiqueta de nombre o comprobante de recogida, B1 Checkin usará la primera plantilla en la lista de forma predeterminada. Arrastre plantillas para reordenarlas.
 
 ## Eliminar una Plantilla
 
-Haz clic en el icono de eliminar en cualquier fila de plantilla y confirma. Eliminar la última plantilla de un tipo restaura la plantilla predeterminada incorporada.
+Haga clic en el icono de eliminación en cualquier fila de plantilla y confirme. Eliminar la última plantilla de un tipo restaura la plantilla predeterminada integrada.
 
 :::tip
-Haz una prueba de impresión después de editar una plantilla para confirmar que el diseño se ve bien antes de tu próximo servicio.
+Haga una impresión de prueba después de editar una plantilla para confirmar que el diseño se ve bien antes de su próximo servicio.
 :::
 
 ## Artículos Relacionados
 
-- [Configuración de Check-In](setup) — configura servicios y grupos para check-in
-- [Completar Check-In](check-in) — el flujo de check-in para familias
-- [Inicio Rápido de B1 Checkin](../../b1-checkin/getting-started/) — la aplicación de quiosco Checkin
+- [Configuración de Registro](setup) — configure servicios y grupos para registro
+- [Completando Registro](check-in) — el flujo de registro para familias
+- [Iniciando B1 Checkin](../../b1-checkin/getting-started/) — la aplicación de quiosco Checkin

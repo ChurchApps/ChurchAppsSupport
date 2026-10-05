@@ -67,7 +67,7 @@ For a complete reference of all player controls, see [Playing Lessons](../classr
 
 ## Switching Between Providers
 
-Connected providers appear as items in the sidebar on the left. To switch to a different provider:
+Connected providers appear as items under the **Browse** heading in the sidebar on the left. To switch to a different provider:
 
 1. Press the **Left** arrow on your remote to expand the sidebar
 2. Select the provider you want to browse

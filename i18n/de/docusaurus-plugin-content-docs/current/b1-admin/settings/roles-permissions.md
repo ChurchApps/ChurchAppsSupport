@@ -1,68 +1,68 @@
 ---
-title: "Rollen & Berechtigungen"
+title: "Roles & Permissions"
 ---
 
-# Rollen & Berechtigungen
+# Roles & Permissions
 
 <div class="article-intro">
 
-Rollen ermöglichen es dir zu steuern, worauf verschiedene Benutzer in deinem ChurchApps-Konto zugreifen können. Du kannst benutzerdefinierte Rollen für Personal, Freiwillige und andere Teammitglieder erstellen, jede mit ihrem eigenen Zugriffsniveau, um deine Daten sicher zu halten.
+Rollen ermöglichen es Ihnen zu kontrollieren, auf welche verschiedene Benutzer in Ihrem ChurchApps-Konto zugreifen können. Sie können benutzerdefinierte Rollen für Personal, Freiwillige und andere Teamkollegen erstellen, jeweils mit ihrer eigenen Zugriffsstufe, um Ihre Daten sicher zu halten.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor du anfängst</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Du benötigst Domain-Admin-Zugriff oder eine Rolle mit Berechtigung zur Verwaltung von Rollen
-- Habe eine Liste von Teammitgliedern und den Bereichen, auf die sie Zugriff benötigen
-- Überprüfe die verfügbaren Berechtigungskategorien unten, um deine Rollen zu planen
+- Sie benötigen Domain Admin-Zugriff oder eine Rolle mit Berechtigung zur Rollenverwaltung
+- Halten Sie eine Liste von Teamkollegen und den Bereichen bereit, auf die sie Zugriff benötigen
+- Überprüfen Sie die unten verfügbaren Berechtigungskategorien, um Ihre Rollen zu planen
 
 </div>
 
 ## Zugriff auf Rollen
 
-1. Öffne in B1 Admin das **Abschnittmenü** in der oberen linken Ecke (der Abschnittsname mit dem kleinen Pfeil) und wähle **Einstellungen**.
-2. Klicke auf **Rollen** in der Navigationsleiste Einstellungen.
-3. Die Seite Rollen zeigt alle derzeit definierten Rollen für deine Kirche an.
+1. Öffnen Sie in B1 Admin das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links) und erweitern Sie **Settings**.
+2. Klicken Sie auf **Roles**.
+3. Die Seite Roles zeigt alle derzeit definierten Rollen für Ihre Kirche an.
 
-## Die Seite Rollen verstehen
+## Verständnis der Rollen-Seite
 
-Die Seite Rollen ist in zwei Fenster unterteilt:
+Die Rollen-Seite ist in zwei Fenster unterteilt:
 
-- **Linke Seite** – Zeigt die Liste der Mitglieder, die der ausgewählten Rolle zugewiesen sind.
-- **Rechte Seite** – Zeigt die Berechtigungseinstellungen an, die du für diese Rolle konfigurieren kannst.
+- **Linke Seite** -- Zeigt die Liste der Mitglieder an, die der ausgewählten Rolle zugewiesen sind.
+- **Rechte Seite** -- Zeigt die Berechtigungseinstellungen an, die Sie für diese Rolle konfigurieren können.
 
-Klicke auf einen Rollennamen, um seine Mitglieder und Berechtigungen anzuzeigen und zu verwalten.
+Klicken Sie auf einen Rollennamen, um seine Mitglieder und Berechtigungen anzuzeigen und zu verwalten.
 
-## Benutzer zu einer Rolle hinzufügen
+## Hinzufügen von Benutzern zu einer Rolle
 
-1. Wähle die Rolle aus, der du Mitglieder hinzufügen möchtest.
-2. Verwende das **Suchfeld** auf der linken Seite, um die Person zu finden, die du hinzufügen möchtest.
-3. Wähle die Person aus den Suchergebnissen.
-4. Sie wird sofort zur Rolle hinzugefügt.
+1. Wählen Sie die Rolle aus, der Sie Mitglieder hinzufügen möchten.
+2. Verwenden Sie das **search field** auf der linken Seite, um die Person zu finden, die Sie hinzufügen möchten.
+3. Wählen Sie die Person aus den Suchergebnissen.
+4. Sie werden sofort zur Rolle hinzugefügt.
 
-## Benutzer aus einer Rolle entfernen
+## Entfernen von Benutzern aus einer Rolle
 
-1. Wähle die Rolle, die den Benutzer enthält, den du entfernen möchtest.
-2. Suche die Person in der Mitgliederliste auf der linken Seite.
-3. Klicke auf die **Schaltfläche Entfernen** neben ihrem Namen.
+1. Wählen Sie die Rolle aus, die den Benutzer enthält, den Sie entfernen möchten.
+2. Suchen Sie die Person in der Mitgliederliste auf der linken Seite.
+3. Klicken Sie auf die **remove button** neben ihrem Namen.
 
-## Berechtigungen konfigurieren
+## Konfiguration von Berechtigungen
 
-Jede Rolle kann Zugriff auf bestimmte Bereiche von B1 Admin erhalten. Berechtigungen sind nach Abschnitt organisiert:
+Jeder Rolle kann Zugriff auf bestimmte Bereiche von B1 Admin gewährt werden. Berechtigungen sind nach Abschnitt organisiert:
 
-- **Personen** – Zugriff auf das Mitgliederverzeichnis und Personendatensätze.
-- **Spenden** – Zugriff auf Spendendatensätze und Fondsverwaltung.
-- **Anwesenheit** – Zugriff auf Anwesenheitsverfolgung und Berichte.
-- **Inhalt** – Zugriff auf Website- und Inhaltsverwaltung.
+- **People** -- Zugriff auf das Mitgliederverzeichnis und Personendatensätze.
+- **Donations** -- Zugriff auf Spendendatensätze und Fondsverwaltung.
+- **Attendance** -- Zugriff auf Anwesenheitsverfolgung und Berichte.
+- **Content** -- Zugriff auf Website- und Inhaltsverwaltung.
 - Und zusätzliche Bereiche, wenn sie verfügbar sind.
 
-Verwende die Kontrollkästchen auf der rechten Seite der Seite Rollen, um den Zugriff für jeden Bereich zu aktivieren oder zu deaktivieren.
+Verwenden Sie die Kontrollkästchen auf der rechten Seite der Rollen-Seite, um den Zugriff für jeden Bereich zu aktivieren oder zu deaktivieren.
 
 :::warning
-**Domain-Admins** haben vollständigen Zugriff auf alle Bereiche deines ChurchApps-Kontos. Ihre Berechtigungen können nicht geändert oder eingeschränkt werden. Verwende diese Rolle nur für deine vertrauenswürdigsten Administratoren.
+**Domain Admins** haben vollständigen Zugriff auf alle Bereiche Ihres ChurchApps-Kontos. Ihre Berechtigungen können nicht geändert oder eingeschränkt werden. Verwenden Sie diese Rolle nur für Ihre vertrauenswürdigsten Administratoren.
 :::
 
 :::tip
-Erstelle spezifische Rollen wie "Schatzmeister" mit nur **Spenden**-Zugriff oder "Check-In-Freiwilliger" mit nur **Anwesenheits**-Zugriff. Dies folgt dem Prinzip der geringsten Berechtigung und hält deine Daten sicher. Siehe [Datensicherheit](./data-security.md) für mehr über den Schutz deiner Informationen durch ChurchApps.
+Erstellen Sie spezifische Rollen wie "Treasurer" mit nur **Donations**-Zugriff oder "Check-In Volunteer" mit nur **Attendance**-Zugriff. Dies folgt dem Prinzip der minimalen Berechtigung und hält Ihre Daten sicher. Siehe [Data Security](./data-security.md) für mehr darüber, wie ChurchApps Ihre Informationen schützt.
 :::

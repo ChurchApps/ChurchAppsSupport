@@ -12,10 +12,10 @@ La sezione Moduli ti permette di creare moduli personalizzati per registrazioni,
 
 ## La pagina Moduli
 
-Quando apri **Moduli**, vedrai due schede:
+Quando apri **Moduli**, vedrai queste schede:
 
 - **Moduli** -- Mostra tutti i tuoi moduli attivi.
-- **Archiviati** -- Mostra i moduli che sono stati archiviati. Puoi ripristinare i moduli archiviati in qualsiasi momento.
+- **Moduli archiviati** -- Mostra i moduli che sono stati archiviati. Puoi ripristinare i moduli archiviati in qualsiasi momento. Questa scheda appare solo una volta che almeno un modulo è stato archiviato.
 
 Ogni modulo nell'elenco mostra il suo nome e, se configurato, un URL pubblico che puoi condividere esternamente.
 
@@ -23,25 +23,25 @@ Ogni modulo nell'elenco mostra il suo nome e, se configurato, un URL pubblico ch
 
 Dalla pagina Moduli, puoi:
 
-- **Aggiungere un modulo** -- Clicca su **Add Form** per creare un nuovo modulo personalizzato.
-- **Modificare un modulo** -- Clicca sul nome di un modulo per aprirlo e modificare le sue domande, i membri o le impostazioni.
-- **Archiviare un modulo** -- Sposta i moduli che non ti servono più nella scheda **Archiviati** per mantenere pulito il tuo elenco.
-- **Ripristinare un modulo** -- Passa alla scheda **Archiviati** e ripristina qualsiasi modulo che vuoi rendere nuovamente attivo.
+- **Aggiungere un modulo** -- Fai clic su **Aggiungi modulo** per creare un nuovo modulo personalizzato.
+- **Modificare un modulo** -- Fai clic sul nome di un modulo per aprirlo e modificare le sue domande, i membri o le impostazioni.
+- **Archiviare un modulo** -- Sposta i moduli che non ti servono più nella scheda **Moduli archiviati** per mantenere pulito il tuo elenco.
+- **Ripristinare un modulo** -- Passa alla scheda **Moduli archiviati** e ripristina qualsiasi modulo che vuoi rendere nuovamente attivo.
 
 ## Lavorare con un modulo
 
-Clicca sul nome di un modulo per aprirlo. L'editor del modulo ha tre schede:
+Fai clic sul nome di un modulo per aprirlo. L'editor del modulo ha fino a tre schede:
 
 - **Domande** -- Costruisci la struttura del modulo aggiungendo campi con diversi tipi. Vedi [Creazione di moduli](./creating-forms.md) per i dettagli.
-- **Membri** -- Controlla chi può accedere e gestire il modulo.
-- **Invii** -- Visualizza le risposte che sono state inviate. Vedi [Gestione degli invii](./managing-submissions.md) per i dettagli.
+- **Membri modulo** -- Controlla chi può accedere e gestire il modulo (solo per moduli autonomi).
+- **Invii modulo** -- Visualizza le risposte che sono state inviate. Vedi [Gestione degli invii](./managing-submissions.md) per i dettagli.
 
 :::tip
 I moduli con un URL pubblico possono essere condivisi tramite link, incorporati nel tuo sito web o inclusi nelle email. Questo rende facile raccogliere informazioni da persone che potrebbero non avere un account della chiesa.
 :::
 
 :::info
-Puoi controllare chi ha accesso a ciascun modulo utilizzando la scheda **Membri**. Assegna ruoli **Admin** o **View Only** per dare al tuo team il giusto livello di accesso.
+Puoi controllare chi ha accesso a ciascun modulo utilizzando la scheda **Membri modulo**. Assegna ruoli **Admin** o **Solo visualizzazione** per dare al tuo team il giusto livello di accesso.
 :::
 
 ## Scopri di più

@@ -6,74 +6,76 @@ title: "Pag-navigate sa B1App"
 
 <div class="article-intro">
 
-Ang member portal sa B1.church ay isang phone-first web app na nakatira sa ilalim ng `/mobile`. Ito ay gumagana sa anumang browser at maaaring i-install sa iyong home screen. Ang pahiwagang ito ay nagpapaliwanag ng Home dashboard, ang bottom tab bar, ang More menu, at ang Me page.
+Ang member portal sa B1.church ay isang web app na pang-telepono muna na matatagpuan sa ilalim ng `/mobile`. Gumagana ito sa kahit anong browser at maaaring i-install sa iyong home screen. Ipinapaliwanag ng pahinang ito ang Home dashboard, ang bottom tab bar, ang More menu, at ang Me page.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Magsimula</h4>
 
-- Kailangan mong maging [naka-log in](./logging-in.md) upang makita ang iyong personal na impormasyon. Ang mga naka-sign out na bisita ay maaaring pa ring tuklasin ang pampubliko na nilalaman at inaalok ng isang knob ng **Mag-sign In** kung saan ang feature ay nangangailangan ng account.
+- Kailangan mong [naka-log in](./logging-in.md) para makita ang iyong personal na impormasyon. Makakapag-browse pa rin ng pampublikong nilalaman ang mga bisitang hindi naka-sign in at bibigyan sila ng button na **Sign In** kung saan kailangan ng account ang isang tampok.
 
 </div>
 
 ## Home
 
-Ang pagbubukas ng `https://yourchurchname.b1.church/mobile` ay dadalhin ka sa **Home** dashboard sa `/mobile/dashboard`. Ang Home ay ang landing page ng member portal at nagpapakita ng:
+Kapag binuksan ang `https://yourchurchname.b1.church/mobile`, dadalhin ka sa **Home** dashboard sa `/mobile/dashboard`. Ang Home ang landing page ng member portal at ipinapakita nito ang:
 
-- Isang pagbati na may iyong pangalan
-- Ang alin ng araw
-- Isang featured card para sa anumang nai-highlight ng iyong simbahan
-- Isang **Explore** grid ng mga tool na nag-on ang iyong simbahan -- mga grupo, pagbibigay, check-in, sermon, mga plano, at marami pa
+- Pagbati na may pangalan mo
+- Ang talata ng araw
+- Isang featured card para sa anumang itinampok ng inyong simbahan
+- Isang **Explore** grid ng mga tool na in-on ng inyong simbahan -- mga grupo, pagbibigay, check-in, mga sermon, mga plano, at iba pa
 
-Ang pag-tap sa isang card sa Explore ay nagbubukas ng tool na iyon. Kung ang iyong simbahan ay may mas maraming tool kaysa sa akma sa dashboard, ang huling card ay **Marami**, na nagbubukas sa buong listahan sa `/mobile/more`.
+Kapag nag-tap ka ng card sa Explore, bubuksan ang tool na iyon. Kung mas marami ang tool ng inyong simbahan kaysa sa kasya sa dashboard, ang huling card ay **More**, na nagbubukas ng buong listahan sa `/mobile/more`.
+
+Kung naka-sign out ka, ipinapakita ng Home ang heading na **Welcome** kapalit ng pagbati, kasama ang maikling paanyaya ("Sign in to see your groups, giving, and more.") at button na **Sign in**. Maaaring baguhin ng inyong simbahan ang salita ng paanyayang ito o itago ito -- tingnan ang [Mobile App Settings](../../b1-admin/settings/mobile-app.md#home-screen-sign-in-prompt). Kapag nakatago ito, maaari ka pa ring mag-sign in mula sa menu o sa tab na Me.
 
 ## Ang Bottom Tab Bar
 
-Sa isang telepono, isang tab bar ay nakalagay sa ibaba ng screen:
+Sa telepono, nakapirmi ang tab bar sa ibaba ng screen:
 
-- **Home** -- laging ang unang tab
-- Hanggang sa tatlo mula sa mga tab na nag-configure ang iyong simbahan
-- **Marami** -- nagbubukas ng menu ng navigation
+- **Home** -- laging unang tab
+- Hanggang tatlo sa mga tab na na-configure ng inyong simbahan
+- **More** -- nagbubukas ng navigation menu
 
-Kung ang iyong simbahan ay nag-configure ng higit sa tatlong tab, ang natitirang ay hindi mawawala: lumilitaw sila sa menu ng **Marami** at sa grid ng Explore ng dashboard. Ang mga administrator ng simbahan ay nagtakda ng tab order sa B1 Admin sa ilalim ng **Mobile → Navigation**.
+Kung higit sa tatlong tab ang na-configure ng inyong simbahan, hindi nawawala ang iba: lumalabas sila sa **More** menu at sa Explore grid ng dashboard. Itinatakda ng mga administrator ng simbahan ang pagkakasunud-sunod ng mga tab sa B1 Admin sa ilalim ng **Mobile → Navigation**.
 
 ## Ang Menu
 
-Ang pag-tap sa **Marami** ay nagbubukas ng menu ng navigation. Sa isang tablet o desktop ang parehong menu ay palaging makikita sa kalong ng kaliwang bahagi ng screen. Ito ay naglalaman ng:
+Kapag nag-tap ka sa **More**, magbubukas ang navigation menu. Sa tablet o desktop, laging nakikita ang parehong menu sa kaliwang gilid ng screen. Naglalaman ito ng:
 
-- Ang iyong pangalan at larawan, kasama ang isang **I-edit ang Profile** na shortcut — tingnan ang [Pag-edit ng Iyong Profile](./editing-your-profile.md)
-- **Home** at **Ako**
-- **Admin Portal** -- ipinakikita lamang kung mayroon kang mga pahintulot ng administrator sa iyong simbahan; ito ay nagbubukas ng B1 Admin
-- Bawat tab na nag-configure ang iyong simbahan, sa order
-- **I-install ang App** -- nagbubukas ng [mga tagubilin sa pag-install](./installing-pwa.md) sa `/mobile/install`
-- Isang light/dark mode toggle
-- **Mag-sign In** o **I-logout**
-- Ang pangalan ng iyong simbahan at isang link sa privacy policy
+- Ang iyong pangalan at larawan, na may shortcut na **Edit Profile** — tingnan ang [Pag-edit ng Iyong Profile](./editing-your-profile.md)
+- **Home** at **Me**
+- **Admin Portal** -- lumalabas lamang kung mayroon kang pahintulot bilang administrator sa inyong simbahan; binubuksan nito ang B1 Admin
+- Bawat tab na na-configure ng inyong simbahan, ayon sa pagkakasunud-sunod
+- **Install App** -- binubuksan ang [mga tagubilin sa pag-install](./installing-pwa.md) sa `/mobile/install`
+- Isang toggle ng light/dark mode
+- **Sign In** o **Logout**
+- Ang pangalan ng inyong simbahan at link sa patakaran sa privacy
 
 ## Ang App Bar
 
-Ang bar sa buong tuktok ng bawat screen ay nagpapakita ng:
+Ang bar sa itaas ng bawat screen ay nagpapakita ng:
 
-- Ang pamagat ng screen, o ang pangalan ng iyong simbahan sa Home
-- Isang pabalik na arrow kapag ikaw ay nag-drill sa isang detail screen
-- Isang **kampana** icon para sa mga notipikasyon at mga mensahe, na may badge para sa mga hindi nabasang item
-- Ang iyong **profile photo**, na nagbubukas ng iyong profile sa `/mobile/profileEdit` — tingnan ang [Pag-edit ng Iyong Profile](./editing-your-profile.md)
+- Ang pamagat ng screen, o ang pangalan ng inyong simbahan sa Home
+- Isang back arrow kapag pumasok ka sa isang detail screen
+- Isang icon na **bell** para sa mga notification at mensahe, na may badge para sa mga hindi pa nababasa
+- Ang iyong **larawan sa profile**, na nagbubukas ng iyong profile sa `/mobile/profileEdit` — tingnan ang [Pag-edit ng Iyong Profile](./editing-your-profile.md)
 
 ## Ang Me Page
 
-Ang **Ako** (`/mobile/me`) ay ang iyong personal na hub. Ito ay naglalista ng mga shortcut sa iyong profile, [mga kagustuhan sa notipikasyon](./notification-preferences.md), mga mensahe, [pagbibigay](../giving/), at [mga pag-rehistro](../events/my-registrations.md), sinusundan ng kung ano ang paparating para sa iyo -- mga assignment sa paglilingkod, mga pag-rehistro ng kaganapan, at mga kaganapan ng grupo -- at ang iyong pinakabagong mga notipikasyon. Tingnan ang [Ang Me Page](./me-page) para sa mga detalye.
+Ang **Me** (`/mobile/me`) ang iyong personal na hub. Naglilista ito ng mga shortcut sa iyong profile, [mga kagustuhan sa notification](./notification-preferences.md), mga mensahe, [pagbibigay](../giving/), at [mga rehistrasyon](../events/my-registrations.md), kasunod ang mga paparating para sa iyo -- mga atas sa paglilingkod, rehistrasyon sa event, at mga event ng grupo -- at ang iyong mga pinakabagong notification. Tingnan ang [Ang Me Page](./me-page) para sa detalye.
 
-Kung ikaw ay naka-sign out, ang Me page ay nagpapakita ng isang knob ng **Mag-sign In** sa halip.
+Kung naka-sign out ka, ipinapakita ng Me page ang button na **Sign In** sa halip.
 
-## Pag-i-install sa Iyong Home Screen
+## Pag-install sa Iyong Home Screen
 
-Ang member portal ay isang Progressive Web App. Bisitahin ang `/mobile/install` (o pumili ng **I-install ang App** sa menu) para sa hakbang-hakbang na mga tagubilin para sa iyong device. Pagkatapos na i-install, ito ay bumubukas na buong-screen mula sa iyong home screen nang walang browser chrome. Tingnan ang [Pag-i-install bilang isang App (PWA)](./installing-pwa.md).
+Ang member portal ay isang Progressive Web App. Bisitahin ang `/mobile/install` (o piliin ang **Install App** sa menu) para sa sunud-sunod na tagubilin para sa iyong device. Kapag na-install na, bubukas ito nang full-screen mula sa iyong home screen nang walang browser chrome. Tingnan ang [Pag-install bilang App (PWA)](./installing-pwa.md).
 
-## Ang Public Website ng Iyong Simbahan
+## Ang Pampublikong Website ng Inyong Simbahan
 
-Sa labas ng member portal, ang public website ng iyong simbahan ay may sariling header navigation na may mga link na nag-configure ang iyong mga administrator -- mga pahina tulad ng [sermon](../content/sermons.md), ang [Bible](../content/bible.md), [live streaming](../content/live-streaming.md), at isang pampubliko na listahan ng grupo. Sa isang telepono ang mga link na ito ay nanatili sa likod ng hamburger icon sa tuktok na kanang sulok ng header.
+Sa labas ng member portal, may sariling header navigation ang pampublikong website ng inyong simbahan na may mga link na itinakda ng inyong mga administrator -- mga pahina gaya ng [mga sermon](../content/sermons.md), ang [Biblia](../content/bible.md), [live streaming](../content/live-streaming.md), at pampublikong listahan ng mga grupo. Sa telepono, nasa likod ng hamburger icon sa kanang itaas ng header ang mga link na iyon.
 
 :::info
-Ang mga tab at tool na nakikita mo ay nag-vary sa simbahan. Ang mga administrator ay kumokontrol sa kung aling mga seksyon ay nakikita ng mga miyembro sa pamamagian ng B1 Admin, kaya kung hindi mo nakikita ang feature na ito na inilalarawan dito, ang iyong simbahan ay maaaring hindi nag-on nito.
+Nag-iiba ang mga tab at tool na makikita mo sa bawat simbahan. Kinokontrol ng mga administrator sa B1 Admin kung aling mga seksyon ang nakikita ng mga miyembro, kaya kung wala kang nakikitang tampok na inilarawan dito, maaaring hindi pa ito in-on ng inyong simbahan.
 :::

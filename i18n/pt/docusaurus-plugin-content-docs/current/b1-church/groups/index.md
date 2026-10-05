@@ -6,34 +6,34 @@ title: "Grupos"
 
 <div class="article-intro">
 
-Grupos são uma ótima forma de se conectar com outras pessoas na sua igreja. Seja você procurando um pequeno grupo, uma equipe ministerial, um estudo bíblico ou uma oportunidade de voluntariado, você pode navegar e entrar em grupos diretamente pelo site B1.church da sua igreja.
+Grupos são uma ótima maneira de se conectar com outras pessoas em sua igreja. Quer você esteja procurando um pequeno grupo, um time de ministério, um estudo bíblico ou uma oportunidade de voluntariado, você pode navegar e participar de grupos diretamente do site B1.church de sua igreja.
 
 </div>
 
-## O que Você Pode Fazer
+## O Que Você Pode Fazer
 
-Veja o que você pode fazer com grupos no B1App:
+Aqui está o que você pode fazer com grupos no B1App:
 
-- **Navegar por grupos públicos** -- Veja todos os grupos disponíveis organizados por categoria. Cada grupo mostra uma foto, nome, horário de encontro, local e uma breve descrição.
-- **Ver detalhes do grupo** -- Clique em qualquer grupo para ver sua descrição completa, líderes, próximos eventos do calendário e um formulário de contato para falar com os líderes do grupo.
-- **Entrar em grupos** -- Conecte-se a um grupo para se tornar membro. Grupos abertos permitem entrar imediatamente; grupos que exigem aprovação permitem enviar uma solicitação de entrada. Veja [Solicitando Entrada em um Grupo](./join-requests.md).
-- **Participar de conversas** -- Depois de se tornar membro de um grupo, você pode postar mensagens e interagir com outros membros do grupo pela aba Conversas.
-- **Acessar calendários e recursos** -- Veja os próximos eventos no calendário do grupo e baixe arquivos ou links compartilhados na aba Recursos.
+- **Navegar em grupos públicos** -- Visualize todos os grupos disponíveis organizados por categoria. Cada grupo mostra uma foto, nome, horário de reunião, local e uma breve descrição.
+- **Visualizar detalhes do grupo** -- Clique em qualquer grupo para ver sua descrição completa, líderes e eventos do calendário futuros.
+- **Participar de grupos** -- Conecte-se com um grupo para se tornar um membro. Grupos abertos deixam você participar imediatamente; grupos que requerem aprovação deixam você enviar uma solicitação de participação. Veja [Solicitando Participar de um Grupo](./join-requests.md).
+- **Participar de conversas** -- Uma vez que você é membro de um grupo, você pode postar mensagens e interagir com outros membros do grupo através da aba **Mensagens**.
+- **Acessar eventos e recursos** -- Visualize eventos futuros na aba **Eventos** do grupo e baixe arquivos compartilhados ou links da aba **Recursos**.
 
 ## Experiência Pública vs. Conectada
 
-Qualquer pessoa pode visitar a página de grupos da sua igreja e navegar pelos grupos disponíveis. Visitantes que não estão conectados podem ver descrições de grupos, ver quem são os líderes, verificar os próximos eventos do calendário e enviar uma mensagem a um líder usando o formulário de contato.
+Qualquer pessoa pode visitar a página de grupos de sua igreja e navegar nos grupos disponíveis. Visitantes que não estão conectados podem visualizar descrições de grupos, ver quem são os líderes e verificar eventos do calendário futuros. Para participar de um grupo, visitantes clicam em **Conectar para participar** e se conectam ou criam uma conta.
 
-Quando você [faz login](../getting-started/logging-in.md), você desbloqueia abas adicionais na página de detalhes do grupo, incluindo **Detalhes do Grupo**, **Calendário**, **Conversas**, **Recursos**, **Membros** e **Frequência**. Os líderes de grupo têm recursos de edição extras em cada uma dessas abas.
+Quando você [se conecta](../getting-started/logging-in.md) e é membro do grupo, você desbloqueia abas adicionais na página de detalhes do grupo: **Sobre**, **Planos**, **Mensagens**, **Membros**, **Presença**, **Eventos** e **Recursos**. Algumas abas aparecem apenas quando se aplicam -- por exemplo, **Sobre** precisa de uma descrição do grupo, **Planos** precisa de planos de serviço, **Mensagens** precisa que o bate-papo em grupo esteja ativado, e **Presença** é mostrada para líderes do grupo e pessoas que podem registrar presença. Líderes do grupo têm capacidades de edição extras nessas abas.
 
 :::tip
-Grupos também aparecem na sua [Linha do Tempo](../community/timeline.md) -- conversas e atualizações dos seus grupos aparecerão automaticamente no seu feed de atividades.
+Conversas em grupo vivem na aba **Mensagens** de cada grupo, e seus eventos futuros de grupos aparecem na [página Me](../getting-started/me-page.md). Atividade nova que precisa de sua atenção chega como notificação no menu de sino.
 :::
 
 ## Próximos Passos
 
-- [Navegando pelos Grupos](./browsing-groups.md) -- Aprenda a encontrar e explorar grupos
+- [Navegando em Grupos](./browsing-groups.md) -- Aprenda como encontrar e explorar grupos
 - [Detalhes do Grupo](./group-details.md) -- Entenda tudo na página de detalhes do grupo
-- [Solicitando Entrada em um Grupo](./join-requests.md) -- Envie e gerencie solicitações de entrada
-- [Conversas do Grupo](./conversations.md) -- Poste mensagens, reaja com emojis e interaja com seu grupo
-- [Confirmações de Presença em Eventos](./event-rsvps.md) -- Responda a eventos do grupo e veja quem vai participar
+- [Solicitando Participar de um Grupo](./join-requests.md) -- Envie e gerencie solicitações de participação
+- [Conversas em Grupo](./conversations.md) -- Poste mensagens, reaja com emoji e interaja com seu grupo
+- [RSVPs de Evento](./event-rsvps.md) -- Responda a eventos de grupo e veja quem está vindo

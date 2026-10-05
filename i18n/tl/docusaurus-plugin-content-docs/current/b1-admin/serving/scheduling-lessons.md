@@ -1,111 +1,128 @@
 ---
-title: "Pag-schedule ng mga Aralin"
+title: "Pag-iskedyul ng mga Lesson"
 ---
 
-# Pag-schedule ng mga Aralin mula sa Lessons.church
+# Pag-iskedyul ng mga Lesson mula sa Lessons.church
 
 <div class="article-intro">
 
-Direktang nag-i-integrate ang B1 Admin sa [Lessons.church](https://lessons.church) para maka-schedule ka ng curriculum para sa iyong mga classroom sa loob mismo ng iyong mga plano ng serbisyo. Pinapanatili nito ang lahat — mga boluntaryo, assignment, at nilalaman ng aralin — sa isang lugar.
+Direktang nakikipag-integrate ang B1 Admin sa [Lessons.church](https://lessons.church) para maiskedyul ninyo ang kurikulum para sa inyong mga classroom mismo sa loob ng inyong mga plano ng service. Pinapanatili nitong nasa iisang lugar ang lahat -- mga boluntaryo, assignment, at nilalaman ng lesson.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago ka magsimula</h4>
+<h4>Bago Magsimula</h4>
 
-- I-set up ang iyong mga ministeryo sa lugar ng Paglilingkod
-- Magkaroon ng aktibong [Lessons.church](https://lessons.church) account — mag-sign up muna doon kung wala pa ang iyong simbahan
+- I-set up ang inyong mga ministry sa lugar ng Serving
+- Magkaroon ng aktibong account sa [Lessons.church](https://lessons.church) -- mag-sign up muna roon kung wala pa ang inyong simbahan
 
 </div>
 
-## Hakbang 1 — I-link ang iyong Lessons.church account
+:::tip Sundan ang gabay na walkthrough
+Gusto bang makita ang buong setup mula simula hanggang katapusan? Saklaw ng aming **<a href="/guides/freeplay-b1admin" target="_blank">step-by-step na gabay</a>** ang pag-link ng mga provider, pag-iskedyul ng lesson, at pagkonekta ng FreePlay sa TV ng inyong classroom -- may maiikling video at nakasulat na mga hakbang na maaari ninyong i-check habang sumusulong.
+:::
 
-Ito ay isang beses lang na setup bawat ministeryo. Kailangan mong ikonekta ang iyong Lessons.church account bago ka makabrowse at maka-schedule ng nilalaman.
+## Hakbang 1 — I-link ang Inyong Lessons.church Account
 
-1. Mag-log in sa [B1 Admin](https://admin.b1.church/) at pumunta sa **Paglilingkod**
-2. Buksan ang ministeryo na gusto mong ikonekta (hal., Ministeryong Pambata)
-3. Mag-scroll pababa sa seksyon ng **Mga Account ng Content Provider**
-4. I-click ang **Mag-link ng Bagong Provider**
+Minsanan lamang itong setup bawat ministry. Kailangan ninyong ikonekta ang inyong Lessons.church account bago kayo makapag-browse at makapag-iskedyul ng nilalaman.
+
+1. Mag-log in sa [B1 Admin](https://admin.b1.church/) at pumunta sa **Serving**
+2. Buksan ang ministry na nais ninyong ikonekta (hal., Children's Ministry)
+3. Mag-scroll pababa sa seksyong **Content Provider Accounts**
+4. I-click ang **Link New Provider**
 5. Piliin ang **Lessons.church** mula sa listahan
 6. Lalabas ang isang device authorization screen na may code
-7. Pumunta sa [lessons.church](https://lessons.church), mag-log in, at ilagay ang code para i-authorize ang koneksyon
-8. Kapag na-approve, makikita mo ang **"Naka-link ang account"** sa ilalim ng Lessons.church sa B1 Admin
+7. Pumunta sa [lessons.church](https://lessons.church), mag-log in, at ilagay ang code para pahintulutan ang koneksyon
+8. Kapag naaprubahan na, makikita ninyo ang **"Account linked"** sa ilalim ng Lessons.church sa B1 Admin
 
 :::info
-Ang seksyon ng Mga Account ng Content Provider ay bawat ministeryo. Kung nagpapatakbo ka ng maraming ministeryo (hal., Pambata at Kabataan), kailangan mong i-link ang Lessons.church para sa bawat isa nang hiwalay.
+Bawat ministry ang seksyong Content Provider Accounts. Kung may pinapatakbo kayong maraming ministry (hal., Children's at Youth), kailangan ninyong i-link nang hiwalay ang Lessons.church para sa bawat isa.
 :::
 
-## Hakbang 2 — Mag-schedule ng isang aralin
+## Hakbang 2 — Mag-iskedyul ng Lesson
 
-Kapag naka-link na, maaari kang mag-schedule ng mga aralin direkta mula sa Mga Plano.
+Kapag naka-link na, maaari kayong mag-iskedyul ng mga lesson nang direkta mula sa Plans.
 
-1. Sa B1 Admin, pumunta sa **Paglilingkod → Mga Plano**
-2. Piliin ang tab ng iyong ministeryo at i-click ang **Magdagdag ng Plano** — bubukas ang form na **Mag-schedule ng Aralin**
-3. Piliin ang **petsa** para sa aralin (default ay ang darating na Linggo)
-4. I-click ang **Pumili ng Aralin** — bubukas ang isang content browser dialog
-5. Sa itaas ng dialog, kumpirmahin na ang **Lessons.church** ay napili bilang provider
-6. Mag-browse sa nilalaman:
-   - Pumili ng **Programa** (hal., "Bible Stories for Kids")
-   - Pumili ng **Pag-aaral** sa loob ng programa na iyon (hal., "Creation and Early Stories")
-   - Piliin ang partikular na **Aralin**
-   - Piliin ang **Venue** — ito ang bersyon ng aralin ayon sa edad (hal., "Preschool", "Elementary")
-7. I-click ang **I-associate ang Aralin** para kumpirmahin
-8. Piliin ang iyong **opsyon sa pagkopya** para sa mga boluntaryo:
-   - **Wala** — bagong plano, walang boluntaryong dinala
-   - **Mga posisyon lamang** — kinokopya ang mga volunteer role mula sa nakaraang plano ngunit hindi kung sino ang naka-assign
-   - **Mga posisyon at assignment** — kinokopya ang parehong mga role at naka-assign na boluntaryo *(pinakakaraniwan)*
-9. I-click ang **I-save**
+1. Sa B1 Admin, pumunta sa **Serving → Plans**
+2. Piliin ang tab ng inyong ministry at i-click ang **Add Plan Type** -- bigyan ng pangalan ang plan type tulad ng Children's Church o Sunday School
+3. I-click ang plan type na kagagawa lang ninyo at i-click ang **Schedule Lesson**. Mula sa menu na iyon, maaari kayong mag-iskedyul ng isang lesson, mag-bulk-schedule ng isang serye, o mag-**Apply Year Plan** para ilagay ang naka-publish na year sequence mula sa Lessons.church.
+4. Piliin ang **petsa** para sa lesson (default ay ang susunod na Linggo)
+5. I-click ang **Select Lesson** -- magbubukas ang isang content browser dialog
+6. Magbubukas ang dialog na naka-select ang **Lessons.church** bilang provider (o ang provider na ginamit para sa mga naunang lesson ng plan type na ito). Kung may iba pa kayong na-link na provider, maaari kayong lumipat sa pagitan nila sa itaas ng dialog
+7. I-browse ang nilalaman:
+   - Pumili ng **Program** (hal., "Bible Stories for Kids")
+   - Pumili ng **Study** sa loob ng programang iyon (hal., "Creation and Early Stories")
+   - Piliin ang partikular na **Lesson**
+   - Piliin ang **Venue** -- ito ang bersyon ng lesson para sa partikular na pangkat ng edad
+8. I-click ang **Associate Lesson** para kumpirmahin
+9. Piliin ang inyong **copy option** para sa mga boluntaryo:
+   - **Nothing** -- bagong plano, walang boluntaryong dadalhin
+   - **Positions Only** -- kinokopya ang mga tungkulin ng boluntaryo mula sa nakaraang plano ngunit hindi kung sino ang nakatalaga
+   - **Positions and Assignments** -- kinokopya ang parehong mga tungkulin at mga nakatalagang boluntaryo *(pinakakaraniwan)*
+10. I-click ang **Save**
 
-Ang plano ay awtomatikong nagagawa at napapangalanan (hal., "Feb 23 - Elementary"). Maaaring buksan ng mga boluntaryo ang plano para makita ang kanilang mga assignment at suriin ang nilalaman ng aralin bago ang Linggo.
+Awtomatikong nagagawa at napapangalanan ang plano (hal., "Feb 23 - Elementary"). Maaaring buksan ng mga boluntaryo ang plano para makita ang kanilang mga assignment at repasuhin ang nilalaman ng lesson bago ang Linggo.
 
 :::warning
-Tiyaking piliin ang tamang **Venue** para sa edad ng iyong classroom. Ang pagpili ng maling venue (hal., Preschool na nilalaman para sa isang Elementary na klase) ay nangangahulugang makikita ng iyong mga boluntaryo ang nilalaman na dinisenyo para sa ibang antas ng edad.
+Tiyaking piliin ang tamang **Venue** para sa pangkat ng edad ng inyong classroom. Kapag mali ang napiling venue, makikita ng inyong mga boluntaryo ang nilalamang idinisenyo para sa ibang antas ng edad.
 :::
+
+## Mag-apply ng Year Plan
+
+Kung nag-publish ang isang curriculum publisher ng year plan sa Lessons.church, maaari ninyong i-load ang buong sequence sa plan type na ito sa isang hakbang:
+
+1. I-click ang **Schedule Lesson → Apply Year Plan**
+2. Piliin ang naka-publish na year plan
+3. Kung naka-angkla sa kalendaryo ang plano (halimbawa Ark Kids), piliin ang **target year**. Ang mga study para sa Easter at Pasko ay mapupunta sa mga petsa ng taong iyon. Ayusin ang una at huling petsa ng klase kung bahagi lamang ng taon ang iniiskedyul ninyo.
+4. Kung hindi naka-angkla sa kalendaryo ang plano, itakda ang petsa ng unang klase (mapupunta sa petsang iyon ang linggo 1; ang mga susunod na linggo ay pitong araw ang pagitan) at kung ilang linggo ang isusulat (12, 24, 44, o 52)
+5. Opsyonal na kopyahin ang mga posisyon ng boluntaryo mula sa nakaraang plano
+6. I-preview ang listahan. I-uncheck ang anumang linggong ayaw ninyo -- ang mga susunod na lesson sa bahaging iyon ay lilipat sa susunod na bakanteng Linggo sa halip na mag-iwan ng puwang. Ang mga petsang may plano na ay nilalaktawan sa parehong paraan para sa mga planong naka-angkla sa kalendaryo.
+7. I-save. Ang bawat linggo ay nagiging plano ng serving na maaari ninyong i-edit gaya ng dati -- palitan ang lesson, mga boluntaryo, o petsa -- at ipapalabas ng FreePlay kung ano man ang nasa plano ng linggong iyon.
 
 :::tip
-**Magplano nang maaga** — Maaari kang mag-schedule ng maraming linggo ng mga aralin nang sabay-sabay para makapaghanda ang iyong team nang maaga. Gamitin ang listahan ng mga nakaraang aralin sa plan view para maiwasang aksidenteng maulit ang nilalaman.
+**Magplano nang maaga** -- Maaari kayong mag-iskedyul ng maraming linggo ng mga lesson nang sabay-sabay para makapaghanda nang maaga ang inyong team. Gamitin ang listahan ng mga nakaraang lesson sa plan view para maiwasan ang aksidenteng pag-uulit ng nilalaman.
 :::
 
-## Pag-customize ng nilalaman ng aralin
+## Pag-customize ng Nilalaman ng Lesson
 
-Kapag naka-schedule na ang isang aralin, maaari mo itong i-customize para sa iyong partikular na classroom — alisin ang mga seksyon na hindi naaangkop, itago ang mga role na hindi ginagamit ng iyong kwarto, o muling ayusin ang nilalaman para tumugma sa iyong preferred na daloy. Ang mga customization ay maaaring i-save para sa isang classroom lang o ilapat sa lahat ng classroom sa iyong simbahan.
+Kapag naka-iskedyul na ang isang lesson, maaari ninyo itong iangkop sa inyong partikular na classroom -- alisin ang mga seksyong hindi naaangkop, itago ang mga tungkuling hindi ginagamit ng inyong silid, o i-reorder ang nilalaman para umayon sa nais ninyong daloy. Maaaring i-save ang mga customization para sa isang classroom lamang o i-apply sa lahat ng classroom sa inyong simbahan.
 
-Tingnan ang gabay sa [Pag-customize ng mga Aralin](/docs/lessons-church/customization/customizing-lessons) para sa mga hakbang-hakbang na tagubilin.
+Tingnan ang gabay na [Pag-customize ng mga Lesson](/docs/lessons-church/customization/customizing-lessons) para sa mga hakbang-hakbang na tagubilin.
 
-## Pagpapatugtog ng mga aralin sa classroom TV gamit ang FreePlay
+## Pagpapalabas ng mga Lesson sa TV ng Classroom gamit ang FreePlay
 
-Ang pag-schedule ng isang aralin sa B1 Admin ay perpektong katambal ng **[FreePlay](/docs/freeplay/)** — ang libreng media player ng ChurchApps para sa mga classroom TV at Fire Stick. Kapag naka-set up ang iyong plano, maaaring kunin ng FreePlay ang nilalaman ng aralin nang direkta mula sa Lessons.church at i-play ito nang full-screen sa classroom. Kinokontrol ng iyong guro ang bilis gamit ang TV remote, na ina-advance ang mga video at slide habang dumadaloy ang aralin.
+Bagay na bagay ang pag-iskedyul ng lesson sa B1 Admin sa **[FreePlay](/docs/freeplay/)** -- ang libreng media player ng ChurchApps para sa mga TV at Fire Stick ng classroom. Kapag naka-set up na ang inyong plano, maaaring kunin ng FreePlay ang nilalaman ng lesson nang direkta mula sa Lessons.church at ipalabas ito nang full-screen sa classroom. Kinokontrol ng inyong guro ang bilis gamit ang TV remote, habang umuusad sa mga video at slide habang dumadaloy ang lesson.
 
-Ibig sabihin nito na nakikita ng iyong mga boluntaryo ang plano sa kanilang mga telepono habang ang nilalaman ay nagpe-play sa TV ng kwarto — walang hiwalay na setup, walang USB drive, walang last-minute na kaguluhan.
+Ibig sabihin, nakikita ng inyong mga boluntaryo ang plano sa kanilang mga telepono habang ipinapalabas ang nilalaman sa TV ng silid -- walang hiwalay na setup, walang USB drive, at walang huling-minutong pagmamadali.
 
 [Alamin kung paano ikonekta ang FreePlay sa isang content provider →](/docs/freeplay/content-providers/connecting-providers)
 
-## Hindi nakikita ang iyong curriculum provider?
+## Hindi Makita ang Inyong Curriculum Provider?
 
-Ang listahan ng mga available na provider ay lumalaki. Kung gumagamit ang iyong simbahan ng isang curriculum provider na hindi pa lumalabas sa B1 Admin, makipag-ugnayan sa amin at gagawan namin ng paraan para maidagdag sila.
+Patuloy na dumarami ang listahan ng mga available na provider. Kung gumagamit ang inyong simbahan ng curriculum provider na hindi pa lumalabas sa B1 Admin, makipag-ugnayan sa amin at aasikasuhin namin ang pagdaragdag sa kanila.
 
-Huwag mag-atubiling kopyahin at ipadala ang mensahe sa ibaba nang direkta sa iyong curriculum provider — kapag nakipag-ugnayan sila sa amin, ise-set up namin ang integration:
+Malaya ninyong kopyahin at ipadala nang direkta ang mensahe sa ibaba sa inyong curriculum provider -- kapag nakipag-ugnayan na sila sa amin, ise-set up namin ang integration:
 
 ---
 
-> **Paksa: ChurchApps Integration Request**
+> **Paksa: Kahilingan sa Integration ng ChurchApps**
 >
 > Kumusta [Curriculum Provider Team],
 >
-> Gustung-gusto namin ang iyong curriculum at ginagamit namin ito linggo-linggo kasama ang aming mga bata. Gumagamit din kami ng ChurchApps para pamahalaan ang aming mga boluntaryo at mga plano ng serbisyo, at gumagamit kami ng FreePlay (freeplay.church) para i-play ang nilalaman ng aralin nang direkta sa aming mga classroom TV. Naging game changer ito para sa aming mga guro.
+> Gustong-gusto namin ang inyong kurikulum at ginagamit namin ito linggo-linggo kasama ang aming mga bata. Gumagamit din kami ng ChurchApps para pamahalaan ang aming mga boluntaryo at mga plano ng service, at ginagamit namin ang FreePlay (freeplay.church) para ipalabas ang nilalaman ng lesson nang direkta sa mga TV ng aming classroom. Malaking tulong ito para sa aming mga guro.
 >
-> Sa ngayon, kailangan naming pamahalaan ang iyong curriculum nang hiwalay, ngunit kung naka-integrate kayo sa ChurchApps, maaari naming i-schedule ang iyong mga aralin sa loob mismo ng aming mga plano ng serbisyo at i-play ang mga ito sa pamamagitan ng FreePlay sa aming mga classroom screen — lahat nang hindi umaalis sa mga tool na ginagamit na namin.
+> Sa ngayon, kailangan naming pamahalaan nang hiwalay ang inyong kurikulum, ngunit kung naka-integrate kayo sa ChurchApps, maiiskedyul namin ang inyong mga lesson mismo sa loob ng aming mga plano ng service at maipapalabas ang mga ito sa pamamagitan ng FreePlay sa mga screen ng aming classroom — nang hindi umaalis sa mga tool na ginagamit na namin.
 >
-> Gumagana na ang ChurchApps sa ilang curriculum provider at handa ang kanilang team na makipagtulungan sa inyo rin. Maaari ba kayong makipag-ugnayan sa kanila sa **support@churchapps.org** para simulan ang pag-uusap? Gusto naming makitang mangyari ito!
+> Katrabaho na ng ChurchApps ang ilang curriculum provider at handa rin ang kanilang team na makipagtulungan sa inyo. Maaari ba ninyo silang kontakin sa **support@churchapps.org** para masimulan ang usapan? Nais naming makitang matupad ito!
 >
-> Salamat!
+> Maraming salamat!
 
 ---
 
-## Mga kaugnay na artikulo
+## Mga Kaugnay na Artikulo
 
-- [Mga Plano ng Serbisyo](./plans.md)
-- [Order ng Serbisyo](./service-order.md)
-- [Pag-customize ng mga Aralin](/docs/lessons-church/customization/customizing-lessons)
-- [FreePlay — Pagpapatugtog ng mga Aralin sa isang Classroom TV](/docs/freeplay/classroom-mode/playing-lessons)
-- [Gabay sa Pag-schedule ng Lessons.church](/docs/lessons-church/classrooms/scheduling-lessons)
+- [Mga Plano ng Service](./plans.md)
+- [Service Order](./service-order.md)
+- [Pag-customize ng mga Lesson](/docs/lessons-church/customization/customizing-lessons)
+- [FreePlay — Pagpapalabas ng mga Lesson sa TV ng Classroom](/docs/freeplay/classroom-mode/playing-lessons)
+- [Gabay sa Pag-iskedyul ng Lessons.church](/docs/lessons-church/classrooms/scheduling-lessons)

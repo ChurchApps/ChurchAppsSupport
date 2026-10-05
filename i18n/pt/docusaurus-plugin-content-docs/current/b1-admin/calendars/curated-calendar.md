@@ -1,58 +1,57 @@
 ---
-title: "Calendário curado"
+title: "Calendário Selecionado"
 ---
 
-# Calendário curado
+# Calendário Selecionado
 
 <div class="article-intro">
 
-Um calendário curado agrega eventos de vários grupos em uma única visualização de calendário unificada. É ideal para criar um calendário abrangente da igreja que mostra tudo o que está acontecendo em todos os seus ministérios e grupos em um só lugar.
+Um calendário selecionado agrega eventos de múltiplos grupos em uma visualização de calendário unificada. Isso é ideal para criar um calendário de toda a igreja que mostra tudo o que está acontecendo em todos os seus ministérios e grupos em um único lugar.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de começar</h4>
+<h4>Antes de Começar</h4>
 
 - Configure os [grupos](../groups/creating-groups.md) cujos eventos você deseja incluir
 - Certifique-se de que os líderes de grupo adicionaram eventos aos seus respectivos grupos
-- Familiarize-se com o básico de [Criando calendários](creating-calendars)
+- Familiarize-se com o básico de [Criando Calendários](creating-calendars)
 
 </div>
 
-## Criando um calendário curado
+## Criando um Calendário Selecionado
 
-1. No B1 Admin, navegue até a seção **Website**.
-2. Clique em **Calendários** na navegação superior.
-3. Clique em **Adicionar calendário** para criar um novo calendário curado.
-4. Dê um **nome** ao seu calendário (por exemplo, "Eventos da Igreja" ou "Esta semana na nossa igreja").
-5. Clique em **Criar** para salvá-lo.
+1. Em B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), expanda **Calendários** e clique em **Calendários**.
+2. Clique em **Adicionar Calendário** para criar um novo calendário selecionado.
+3. Dê ao seu calendário um **nome** (por exemplo, "Eventos da Igreja" ou "Esta Semana em Nossa Igreja").
+4. Clique em **Criar** para salvá-lo.
 
-## Adicionando grupos ao seu calendário
+## Adicionando Grupos ao Seu Calendário
 
-1. Clique no seu novo calendário para abri-lo.
-2. Na seção **Grupos no calendário** no lado direito, clique em **Adicionar**.
+1. Clique em seu novo calendário para abri-lo.
+2. Na seção **Grupos no Calendário** no lado direito, clique em **Adicionar**.
 3. Selecione um grupo no menu suspenso.
 4. Escolha se deseja adicionar **todos os eventos** desse grupo ou apenas **eventos específicos**.
 5. Clique em **Salvar**.
-6. Repita este processo para adicionar quantos grupos desejar incluir.
+6. Repita este processo para adicionar quantos grupos você quiser incluir.
 
 :::tip
-Adicione todos os seus grupos de ministérios ativos para criar um calendário abrangente que dê à sua congregação uma visão completa de tudo o que está acontecendo na sua igreja a cada semana.
+Adicione todos os seus grupos de ministério ativos para criar um calendário abrangente que dê à sua congregação uma visão completa do que está acontecendo em sua igreja a cada semana.
 :::
 
-## Compartilhando seu calendário
+## Compartilhando Seu Calendário
 
-Uma vez que seu calendário curado esteja configurado, você pode compartilhá-lo de várias maneiras:
+Assim que seu calendário selecionado estiver configurado, você pode compartilhá-lo de várias maneiras:
 
-- **Incorporar no seu site** -- O calendário pode ser exibido diretamente nas páginas do seu site B1.church para que os visitantes possam navegar.
-- **Assinar via ICS** -- Clique em **Assinar** para copiar o link ICS. Sua congregação pode colar este link no Google Calendar, Apple Calendar, Outlook ou qualquer outro aplicativo de calendário para se manter sincronizada.
-- **Baixar o arquivo ICS** -- Baixe o arquivo do calendário para importá-lo em um aplicativo de calendário.
+- **Incorporar em seu site** -- O calendário pode ser exibido diretamente nas páginas do seu site B1.church para os visitantes navegarem.
+- **Inscrever-se via ICS** -- Clique em **Inscrever-se** para copiar o link ICS. Sua congregação pode colar este link em Google Calendar, Apple Calendar, Outlook, ou qualquer outro aplicativo de calendário para permanecer sincronizado.
+- **Baixar o arquivo ICS** -- Baixe o arquivo de calendário para importá-lo em um aplicativo de calendário.
 
 :::info
-Quando os líderes de grupo adicionam novos eventos aos seus [grupos](../groups/creating-groups.md), esses eventos aparecem automaticamente no seu calendário curado. Você não precisa atualizar manualmente o calendário curado cada vez que um novo evento é adicionado.
+Quando os líderes de grupo adicionam novos eventos aos seus [grupos](../groups/creating-groups.md), esses eventos aparecem automaticamente em seu calendário selecionado. Você não precisa atualizar manualmente o calendário selecionado cada vez que um novo evento é adicionado.
 :::
 
-## Próximos passos
+## Próximas Etapas
 
-- [Criando calendários](creating-calendars) -- Aprenda o básico sobre criação de calendários
-- [Visão geral dos calendários](./) -- Retorne à visão geral dos calendários
+- [Criando Calendários](creating-calendars) -- Aprenda o básico de criação de calendários
+- [Calendars Overview](./) -- Volte à visão geral de calendários

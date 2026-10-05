@@ -97,6 +97,7 @@ Provides read-only aggregate views of attendance data for reporting and display.
 | GET | `/tree` | JWT | — | Load the full attendance tree (campuses, services, service times, groups) |
 | GET | `/trend?campusId=&serviceId=&serviceTimeId=&groupId=` | JWT | Attendance.View Summary | Load attendance trend data with optional filters |
 | GET | `/groups?serviceId=&week=` | JWT | Attendance.View | Load group attendance for a service on a given week |
+| GET | `/sessionStatus?serviceTimeId=&date=` | JWT | Attendance.View | For every group assigned to the service time, return `{ groupId, sessionId, attendanceCount }` for that date (`date` is `YYYY-MM-DD`; `sessionId` is null when the group has no session). Backs B1Admin's **Who Still Needs Attendance** dialog |
 | GET | `/search?campusId=&serviceId=&serviceTimeId=&groupId=&startDate=&endDate=` | JWT | Attendance.View | Search attendance records with filters (campus, service, service time, group, date range) |
 
 ### Example: Attendance Trend

@@ -1,83 +1,89 @@
 ---
-title: "Diretório de Impressão"
+title: "Imprimir Diretório"
 ---
 
-# Diretório de Impressão
+# Imprimir Diretório
 
 <div class="article-intro">
 
-The Print Directory feature generates a formatted, printable member directory for your church. It organizes members by household, includes contact information and photos, and is designed to look professional when printed on standard letter-size paper.
+O recurso Print Directory gera um diretório de membros formatado e imprimível para sua igreja. Organiza membros por família, inclui informações de contato e fotos, e é projetado para parecer profissional quando impresso em papel de tamanho padrão.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Antes de Começar</h4>
 
-- You need an active B1 Admin account with permission to view people.
-- People in your directory should have photos and contact information filled in for the best results.
+- Você precisa de uma conta B1 Admin ativa com permissão para visualizar pessoas.
+- Pessoas em seu diretório devem ter fotos e informações de contato preenchidas para melhores resultados.
 
 </div>
 
-## Opening the Print Directory
+## Abrindo o Imprimir Diretório
 
-1. Navigate to **People** in B1 Admin.
-2. Click the **print icon** (printer icon) in the toolbar at the top of the People results card. It appears next to the Export button.
-3. The Print Directory opens in a new browser tab and begins loading your directory data.
-4. After about 1.5 seconds, your browser's print dialog will appear automatically.
+1. Navegue até **Pessoas** em B1 Admin.
+2. Clique no **ícone de impressão** (ícone de impressora) na barra de ferramentas no topo do cartão de resultados de Pessoas. Ele aparece ao lado do botão Exportar.
+3. O Print Directory abre em uma nova aba do navegador e começa a carregar dados do seu diretório.
+4. Após cerca de 1,5 segundos, o diálogo de impressão do seu navegador aparecerá automaticamente.
 
 :::tip
-The directory opens in a separate tab so you can print it without leaving the People page. After the print dialog appears, the tab navigates back automatically.
+O diretório abre em uma aba separada para que você possa imprimi-lo sem sair da página de Pessoas. Após o diálogo de impressão aparecer, a aba navega de volta automaticamente.
 :::
 
-## What Gets Included
+## O Que Está Incluído
 
-The print directory includes all **active members** of your church. Specifically:
+O diretório impresso inclui todos os **membros ativos** da sua igreja. Especificamente:
 
-- People with an **Inactive** or **Visitor** membership status are automatically excluded.
-- People who have **opted out** of the directory are excluded.
-- Everyone else is grouped by **household**.
+- Pessoas com status de filiação **Inactive** ou **Visitor** são automaticamente excluídas.
+- Pessoas que **optaram por não participar** do diretório são excluídas.
+- Todos os outros estão agrupados por **família**.
 
-## Directory Layout
+### Imprimindo Apenas Seus Resultados de Pesquisa
 
-The printed directory has two parts:
+Após você executar uma pesquisa na página de Pessoas — uma pesquisa rápida, uma [Pesquisa Avançada](./searching-people.md#advanced-search), uma [Lista Salva](./lists.md) ou uma [Pesquisa por IA](./ai-search.md) — o ícone de impressão muda para **Print Results**. Clicando nele imprime um diretório de apenas as pessoas em seus resultados em vez de toda a igreja, usando o mesmo layout.
 
-### Cover Page
+Ao imprimir resultados de pesquisa, o filtro de status de filiação acima não se aplica: todos que você pesquisou estão incluídos, mesmo Visitantes ou pessoas Inativas. Pessoas que optaram por não participar do diretório ainda são deixadas de fora. Para voltar a imprimir o diretório completo, limpe sua pesquisa primeiro.
 
-The first page includes:
-- Your church name
-- The title "Member Directory"
-- The current year
-- Your church's location
-- A count of total households included
+## Layout do Diretório
 
-### Member Listings
+O diretório impresso tem duas partes:
 
-The remaining pages list households alphabetically by last name. Each household card shows:
+### Página de Capa
 
-- **Photos** -- Circular thumbnails for each household member, with their name below
-- **Household display name** -- For example, "The Smith Family", "John & Jane Doe", or just the person's name for individuals
-- **Address** -- Street address, city, state, and zip
-- **Phone** -- Home or mobile number
-- **Email** -- Primary email address
-- **Birthdays** -- Formatted as individual dates for each household member
-- **Anniversary** -- If recorded
+A primeira página inclui:
+- O nome da sua igreja
+- O título "Member Directory"
+- O ano atual
+- A localização da sua igreja
+- Uma contagem de famílias totais incluídas
 
-Households are organized into **alphabetical sections** (A, B, C, ...) with a decorative section header before each letter group. Two household cards appear side by side on each row.
+### Listagens de Membros
 
-## Print Settings
+As páginas restantes listam famílias alfabeticamente pelo sobrenome. Cada cartão de família mostra:
 
-The directory is formatted for **letter-size paper** (8.5" × 11") with 0.5-inch margins. When the browser print dialog appears:
+- **Fotos** — Miniaturas circulares para cada membro da família, com seu nome abaixo
+- **Nome de exibição da família** — Por exemplo, "The Smith Family", "John & Jane Doe" ou apenas o nome da pessoa para indivíduos
+- **Endereço** — Endereço de rua, cidade, estado e CEP
+- **Telefone** — Número de casa ou celular
+- **Email** — Endereço de email principal
+- **Aniversários** — Formatado como datas individuais para cada membro da família
+- **Aniversário de Casamento** — Se registrado
 
-- Leave the paper size set to **Letter**
-- Enable **Background graphics** (sometimes called "Print backgrounds") in your browser's print settings if you want section headers to print with their color styling
-- Portrait orientation is recommended
+As famílias são organizadas em **seções alfabéticas** (A, B, C, ...) com um cabeçalho de seção decorativo antes de cada grupo de letras. Dois cartões de família aparecem lado a lado em cada linha.
+
+## Configurações de Impressão
+
+O diretório é formatado para **papel tamanho carta** (8.5" × 11") com margens de 0,5 polegada. Quando o diálogo de impressão do navegador aparecer:
+
+- Deixe o tamanho do papel definido como **Letter**
+- Ative **Background graphics** (às vezes chamado de "Print backgrounds") nas configurações de impressão do seu navegador se você quiser que os cabeçalhos de seção sejam impressos com seu estilo de cor
+- A orientação retrato é recomendada
 
 :::info
-The directory respects page breaks — household cards and section headers will not be split across pages.
+O diretório respeita quebras de página — cartões de família e cabeçalhos de seção não serão divididos entre páginas.
 :::
 
 ## Artigos Relacionados
 
-- [Searching People](./searching-people.md) -- Filter your directory before printing
-- [Exporting Data](./exporting-data.md) -- Export directory data as a spreadsheet instead
-- [Adding People](./adding-people.md) -- Add or update member records
+- [Pesquisando Pessoas](./searching-people.md) — Filtre seu diretório antes de imprimir
+- [Exportando Dados](./exporting-data.md) — Exporte dados do diretório como uma planilha
+- [Adicionando Pessoas](./adding-people.md) — Adicione ou atualize registros de membros

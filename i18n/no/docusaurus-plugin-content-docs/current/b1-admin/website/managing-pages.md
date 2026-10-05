@@ -1,131 +1,130 @@
 ---
-title: "Administrering av sider"
+title: "Administrere sider"
 ---
 
-# Administrering av sider
+# Administrere sider
 
 <div class="article-intro">
 
-Nettsideperspektivet er senteret ditt for å opprette, redigere og organisere alle sidene på kirkens nettsted. Du kan administrere både sideinnholdet og nettstedets navigasjon fra denne enkeltskjermen.
+Visningen Nettstedssider er det sentrale stedet for å opprette, redigere og organisere alle sidene på kirkens nettsted. Du kan administrere både sideinnholdet og navigasjonen fra denne ene skjermen.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Fullfør [Initialoppsett](initial-setup) for å konfigurere domenet og grunnleggende nettstedsinnstillinger
-- Ha innholdet og bildene dine klare. Bruk [Filer](files)-lederen til å laste opp medieobjekter først.
+- Fullfør [førstegangsoppsettet](initial-setup) for å konfigurere domenet og de grunnleggende nettstedsinnstillingene
+- Ha innhold og bilder klare. Last opp mediefilene først i [Filer](files)-behandleren.
 
 </div>
 
 :::info
-Hvis kirken din har mer enn ett nettsted (for eksempel separate steder per campus), bruker du nettstedsvelgeren øverst i Nettsideperspektivet for å hoppe mellom dem. Hvert nettsted har sine egne sider, navigasjon og [utseende](appearance)-innstillinger.
+Hvis kirken har mer enn ett nettsted (for eksempel egne nettsteder for hver menighet), bruker du nettstedsvelgeren øverst i visningen Nettstedssider for å bytte mellom dem. Hvert nettsted har sine egne sider, sin egen navigasjon og egne [utseende](appearance)-innstillinger.
 :::
 
-## Forståelse av sidetyper
+## Forstå sidetyper
 
-**Sider**-tabellen viser hver side på nettstedet ditt sammen med statusen:
+Tabellen **Sider** viser alle sidene på nettstedet sammen med status:
 
-- **Generert** -- Sider som ble automatisk opprettet av systemet basert på kirkens data (for eksempel en Grupper-side, en Prekener-side eller en individuell side for hver preken i biblioteket). Disse sidene oppdaterer seg selv når dataene dine endres.
-- **Egendefinert** -- Sider som du opprettet selv med ditt eget innhold og layout.
+- **Generert** -- Sider som systemet har opprettet automatisk ut fra kirkens data (for eksempel en gruppeside, en preken-side eller en egen side for hver preken i biblioteket). Disse sidene oppdaterer seg selv når dataene endres.
+- **Egendefinert** -- Sider du har opprettet selv med eget innhold og eget oppsett.
 
-Du kan konvertere en hvilken som helst autogenerert side til en egendefinert side hvis du vil ha full kontroll over innholdet og designet.
+Du kan gjøre om en hvilken som helst automatisk generert side til en egendefinert side hvis du vil ha full kontroll over innhold og design.
 
-## Legge til og redigering av sider
+## Legge til og redigere sider
 
-1. Klikk **Legg til side**-knappen i øvre høyre hjørne av Sider-tabellen.
-2. Velg en sidetype (blank eller mal) og gi den et navn.
-3. Klikk **Rediger innhold** ved siden av en hvilken som helst side for å åpne [sideeditoren](page-editor), hvor du kan legge til seksjoner, tekst, bilder og andre elementer.
-4. Klikk **Sideinnstillinger** (tandhjulikonet) for å oppdatere sidetittel, URL-bane og andre metadata.
-5. Bruk **Vis live-side**-knappen for å åpne siden i et nytt vindu og se nøyaktig hvordan det vil se ut for besøkende.
+1. Klikk på knappen **Legg til side** øverst til høyre i tabellen Sider.
+2. Velg en sidetype (tom eller en mal) og gi siden et navn.
+3. Klikk på **Rediger innhold** ved siden av en side for å åpne [sideredigeringen](page-editor), der du kan legge til seksjoner, tekst, bilder og andre elementer.
+4. Klikk på **Sideinnstillinger** (tannhjulikonet) for å oppdatere sidetittel, URL-bane og andre metadata.
+5. Bruk knappen **Vis live side** for å åpne siden i et nytt vindu og se nøyaktig hvordan den ser ut for besøkende.
 
 :::tip
-For hjemmesiden, sett URL-banen til bare `/`. For alle andre sider bruker du en beskrivende bane som `/about` eller `/contact`.
+For hjemmesiden setter du URL-banen til bare `/`. For alle andre sider bruker du en beskrivende bane som `/about` eller `/contact`.
 :::
 
 ### Sideinnstillinger
 
-Åpne **Sideinnstillinger** på en hvilken som helst side for å konfigurere:
+Åpne **Sideinnstillinger** på en side for å angi:
 
-- **Tittel og URL-bane** -- Sidenavnet og dets adresse på nettstedet.
-- **Synlighet** -- Velg hvem som kan se siden: alle, bare medlemmer, bare ansatte, eller medlemmer av spesifikke grupper. Dette er en rask måte å gate en privat side (som en ansattsressurs-side) uten et eget passord.
-- **Meta-beskrivelse** -- En kort oppsummering som vises i søkemotorresultater og forhåndsvisninger av sosiale medier.
-- **Omdirigeringer** -- Pek en gammel URL-bane til denne siden, så lenker og bokmerker til en pensjonert side fortsetter å fungere.
+- **Tittel og URL-bane** -- Sidens navn og adressen på nettstedet.
+- **Synlighet** -- Velg hvem som kan se siden: alle, bare medlemmer, bare ansatte eller medlemmer av bestemte grupper. Dette er en enkel måte å skjerme en privat side (for eksempel en ressursside for ansatte) uten et eget passord.
+- **Metabeskrivelse** -- Et kort sammendrag som vises i søkeresultater og i lenkeforhåndsvisninger på sosiale medier.
+- **Omdirigeringer** -- La en gammel URL-bane peke til denne siden, slik at lenker og bokmerker til en nedlagt side fortsetter å fungere.
 
-## Administrering av navigasjon
+## Administrere navigasjon
 
-Nettsideperspektivet viser navigasjonslenkene dine. Disse lenkene kontrollerer menyen som besøkende ser på nettstedet.
+Visningen Nettstedssider viser navigasjonslenkene dine. Disse lenkene styrer menyen besøkende ser på nettstedet.
 
-1. Klikk **Legg til** for å opprette en ny navigasjonslenke. Du kan peke den til en hvilken som helst side på nettstedet eller til en ekstern URL.
-2. For å sortere lenker, dra og slipp dem inn i den rekkefølgen du ønsker. Du kan også neste lenker under et overordnet element for å lage rullegardinmenyer.
-3. Klikk **Rediger**-ikonet ved siden av en hvilken som helst lenke for å endre etiketten, URL-en eller posisjonen.
-4. For å fjerne en lenke fra navigasjonen, klikk **Slett**-ikonet.
+1. Klikk på **Legg til** for å opprette en ny navigasjonslenke. Den kan peke til en hvilken som helst side på nettstedet eller til en ekstern URL.
+2. Dra og slipp lenkene i ønsket rekkefølge for å endre rekkefølgen. Du kan også legge lenker under et overordnet element for å lage nedtrekksmenyer.
+3. Klikk på ikonet **Rediger** ved siden av en lenke for å endre navn, URL eller plassering.
+4. Klikk på ikonet **Slett** for å fjerne en lenke fra navigasjonen.
 
 :::info
-Fjerning av en navigasjonslenke sletter ikke siden selv. Siden fortsetter å eksistere og kan nås direkte via dens URL -- den vil ganske enkelt ikke vises i menyen.
+Når du fjerner en navigasjonslenke, slettes ikke selve siden. Siden finnes fortsatt og kan nås direkte med URL-en -- den vises bare ikke i menyen.
 :::
 
-## Sideomfattende bryteknapper
+## Bryterne for hele nettstedet
 
-Over **Hovednavigasjon** på venstre side av Nettsideperspektivet er det to bryteknapper som gjelder for hele kirkens nettsted:
+Over **Hovednavigasjon** på venstre side av visningen Nettstedssider finner du to brytere som gjelder hele kirkens nettsted:
 
-- **Vis pålogging** -- Viser en **Pålogging**-knapp i nettstedets navigasjonslinje.
-- **Deaktiver offentlig nettsted** -- Slår av ditt offentlige nettsted. Bruk det hvis kirken bruker B1 bare for medlemsportalen, giving og registreringer, og holder hovednettstedet sitt et annet sted.
+- **Vis innlogging** -- Viser en **Logg inn**-knapp i nettstedets navigasjonslinje.
+- **Deaktiver offentlig nettsted** -- Slår av det offentlige nettstedet. Bruk den hvis kirken bare bruker B1 til medlemsportalen, giving og påmeldinger, og har hovednettstedet et annet sted.
 
-### Hva det gjør å deaktivere det offentlige nettstedet
+### Hva det betyr å deaktivere det offentlige nettstedet
 
-Når **Deaktiver offentlig nettsted** er på:
+Når **Deaktiver offentlig nettsted** er slått på:
 
-- Hver offentlig side, inkludert hjemmesiden og de tilpassede sidene, sender besøkende til påloggingsskjermen.
-- De innebygde **Genererte** sidene (som Grupper og Prekener) blir ikke lenger served og vises ikke lenger i Sider-tabellen.
-- Nettstedshuvudet viser bare **Pålogging**-knappen, uten navigasjonslenker.
-- Søkemotorer blir fortalt ikke å indeksere nettstedet. Sitemap er tomt og `robots.txt` blokkerer all crawling.
+- Alle offentlige sider, inkludert hjemmesiden og de egendefinerte sidene, sender besøkende som ikke er innlogget, til innloggingsskjermen. Etter innlogging kommer de tilbake til siden de ba om.
+- Innloggede medlemmer ser hele nettstedet som vanlig, inkludert navigasjonen og de innebygde **genererte** sidene (som Grupper og Prekener). Genererte sider vises ikke lenger i tabellen Sider.
+- Søkemotorer får beskjed om ikke å indeksere nettstedet. Områdekartet er tomt, og `robots.txt` blokkerer all gjennomsøking.
 
-Disse lenkene fortsetter å fungere, slik at medlemmer og gjester fremdeles kan nå dem:
+Disse lenkene fungerer fortsatt, slik at medlemmer og gjester kan nå dem:
 
-- Pålogging og utlogging
+- Innlogging og utlogging
 - Medlemsportalen (alt under `/mobile`)
-- [Hendelsesregistrering](../guides/event-registration.md)-lenker og gjestregistrering
+- Lenker til [arrangementspåmelding](../guides/event-registration.md) og gjestepåmelding
 
-En advarsel vises under bryteren mens det offentlige nettstedet er av. Slå bryteren av igjen for å få sidene tilbake. Ingenting slettes mens nettstedet er deaktivert.
+Det vises en advarsel under bryteren så lenge det offentlige nettstedet er slått av. Slå bryteren av igjen for å få sidene tilbake. Ingenting slettes mens nettstedet er deaktivert.
 
 :::info
-Denne innstillingen gjelder hele kirken. Hvis du har mer enn ett nettsted, slår den av alle, ikke bare det som er valgt i nettstedsvelgeren.
+Denne innstillingen gjelder hele kirken. Hvis du har mer enn ett nettsted, slås alle av, ikke bare det som er valgt i nettstedsvelgeren.
 :::
 
-## Tips for organisering av nettstedet
+## Tips for å organisere nettstedet
 
-- Hold toppnivånavigasjonen til fem eller seks elementer slik besøkende raskt kan finne ting.
-- Bruk nestede lenker for relaterte undersider (for eksempel en "Om"-rullegardin med "Teamet vårt," "Oppfatninger" og "Historie").
-- Gjennomgå navigasjonen på mobil ved å klikke **Mobil forhåndsvisning** for å sikre at det fungerer bra på mindre skjermer.
-- Gi sidene klare, beskrivende navn som hjelper besøkende med å forstå hva de finner.
+- Hold hovednavigasjonen til fem eller seks elementer, slik at besøkende raskt finner frem.
+- Bruk nøstede lenker for relaterte undersider (for eksempel en nedtrekksmeny «Om oss» med «Teamet vårt», «Tro» og «Historie»).
+- Sjekk navigasjonen på mobil ved å klikke på **Mobilforhåndsvisning**, så du ser at den fungerer godt på mindre skjermer.
+- Gi sidene klare, beskrivende navn som hjelper besøkende å forstå hva de finner.
 
 :::tip
-Du kan legge til [skjemaer](../forms/creating-forms.md) på sidene dine for å samle påmeldinger, bønneforespørsler eller annen informasjon fra besøkende.
+Du kan legge til [skjemaer](../forms/creating-forms.md) på sidene for å samle inn påmeldinger, forbønnsemner eller annen informasjon fra besøkende.
 :::
 
-## Start fra en nettstedsmal
+## Starte fra en nettstedsmal
 
-Hvis du bygger nettstedet fra bunnen av, kan du bootstrape det ved å bruke en **Nettstedmal** i stedet for å opprette sider en etter en. En nettstedmal lager et sett med forhåndsbyggede sider -- hjem, om, koble til, gi og andre -- med placeholder-innhold og navigasjonslenker allerede tilkoblet.
+Hvis du bygger nettstedet fra grunnen av, kan du komme raskt i gang med en **nettstedsmal** i stedet for å opprette sider én og én. En nettstedsmal oppretter et sett ferdige sider -- hjem, om oss, kontakt, gi og flere -- med plassholderinnhold og navigasjonslenker som allerede er koblet sammen.
 
-1. På siden Sider klikker du **Nettstedsmaler**-knappen (ved siden av **Legg til side**-knappen).
-2. Bla gjennom tilgjengelige maler og klikk en for å forhåndsvise sidestrukturen.
-3. Når du finner en du liker, klikk **Bruk mal**.
-4. Sider som ikke allerede eksisterer, opprettes og legges til i navigasjonen. Eksisterende sider blir igjen som de er.
+1. På skjermen Sider klikker du på knappen **Nettstedsmaler** (ved siden av knappen **Legg til side**).
+2. Bla gjennom tilgjengelige maler og klikk på en for å forhåndsvise sidestrukturen.
+3. Når du har funnet en du liker, klikker du på **Bruk mal**.
+4. Sider som ikke finnes fra før, opprettes og legges til i navigasjonen. Eksisterende sider blir stående som de er.
 
-Etter å ha brukt en mal, åpner du hver side i [sideeditoren](page-editor) for å erstatte placeholder-teksten og bildene med kirkens virkelige innhold.
+Etter at du har brukt en mal, åpner du hver side i [sideredigeringen](page-editor) og erstatter plassholdertekst og -bilder med kirkens egentlige innhold.
 
 :::info
-Nettstedsmaler oppretter sidestruktur og navigasjon. De overstyrer ikke fargeskjemaet eller skrifttypene på nettstedet -- disse styres av [Utseende](appearance).
+Nettstedsmaler oppretter sidestruktur og navigasjon. De overstyrer ikke nettstedets fargevalg eller skrifttyper -- de styres av [Utseende](appearance).
 :::
 
-## Bildelightbox
+## Bildelysboks
 
-Når besøkende klikker på et bilde på nettstedet, åpnes det i en fullskjerms lightbox-overlay. Dette lar personer vise bilder i større størrelse uten å forlate siden. Ingen konfigurering er nødvendig -- lightbox-en er aktivert automatisk for bilder i sideinnholdet.
+Når besøkende klikker på et bilde på nettstedet, åpnes det i en lysboks over hele skjermen. Da kan folk se bilder i større format uten å forlate siden. Ingen konfigurasjon er nødvendig -- lysboksen er automatisk slått på for bilder i sideinnholdet.
 
 ## Neste steg
 
-- [Initialoppsett](initial-setup) -- Instruksjoner for første gangs oppsett
-- [Bruk av sideeditoren](page-editor) -- Lær hvordan du bygger og utformer sideinnhold
-- [Utseende](appearance) -- Tilpass det visuelle temaet på nettstedet
-- [Filer](files) -- Last opp og administrer medieobjekter for sidene
+- [Førstegangsoppsett](initial-setup) -- Veiledning for første gangs oppsett
+- [Bruke sideredigeringen](page-editor) -- Lær hvordan du bygger og stiler sideinnhold
+- [Utseende](appearance) -- Tilpass nettstedets visuelle tema
+- [Filer](files) -- Last opp og administrer mediefiler til sidene

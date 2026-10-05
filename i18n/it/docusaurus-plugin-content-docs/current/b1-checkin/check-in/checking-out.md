@@ -1,69 +1,70 @@
 ---
-title: "Ritiro e Sicurezza dei Bambini"
+title: "Check-out e Sicurezza dei Bambini"
 ---
 
-# Ritiro e Sicurezza dei Bambini
+# Check-out e Sicurezza dei Bambini
 
 <div class="article-intro">
 
-Il ritiro chiude il ciclo di check-in dei bambini: un genitore presenta il codice di sicurezza dalla sua etichetta di ritiro, il chiosco verifica chi sta ritirando e i bambini vengono ritirati. Le stazioni sorvegliate ottengono anche strumenti di sicurezza — verifica del ritiro di fiducia, testi di pagina di un genitore, ristampe di etichette di sicurezza e un trasmesso di emergenza.
+Il check-out chiude il ciclo sul check-in dei bambini: un genitore presenta il codice di sicurezza dalla sua etichetta di ritiro, il chiosco verifica chi sta ritirando, e i bambini vengono sottoposti a check-out. Le stazioni gestite da persone ottengono anche strumenti di sicurezza -- verifica del ritiro affidabile, messaggi di avviso genitore, ristampe di etichette di sicurezza e un broadcast di emergenza.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Il ritiro è disponibile sulle stazioni impostate su modalità **manned** nelle impostazioni admin del chiosco
-- I bambini devono essere stati [controllati in](./completing-checkin) con un'etichetta di ritiro stampata che porti il codice di sicurezza
-- Il paging e i trasmessi di emergenza richiedono che la tua chiesa abbia un provider di messaggistica di testo connesso in B1 Admin
+- Il check-out è disponibile su stazioni impostate su modalità **manned** nelle impostazioni di amministrazione del chiosco
+- I bambini devono essere stati [controllati](./completing-checkin) con un'etichetta di ritiro stampata che riporta il codice di sicurezza
+- L'avviso e i broadcast di emergenza richiedono che la tua chiesa abbia un fornitore di SMS collegato in B1 Admin
 
 </div>
 
-## Inizio di un Ritiro
+## Inizio di un Check-Out
 
-1. Su una stazione controllata, tocca **Check Out** sulla schermata di ricerca.
-2. Immetti il **codice di sicurezza** di 4 caratteri dall'etichetta di ritiro della famiglia. Puoi digitarlo, usare il tastierino sullo schermo o scansionare il codice a barre dell'etichetta con uno scanner USB o Bluetooth — il codice viene inviato automaticamente una volta che vengono inseriti tutti i 4 caratteri.
+1. Su una stazione gestita, tocca **Check Out** nella schermata di ricerca.
+2. Inserisci il **codice di sicurezza** di 4 caratteri dall'etichetta di ritiro della famiglia. Puoi digitarlo, usare il tastierino sullo schermo o scansionare il codice a barre dell'etichetta con uno scanner USB o Bluetooth -- il codice viene inviato automaticamente una volta inseriti tutti e 4 i caratteri.
+   - Nessuno scanner? Tocca **Scansiona** sotto il campo del codice per usare la fotocamera del tablet. Tieni il codice QR o il codice a barre dell'etichetta di ritiro davanti alla fotocamera nella finestra **Scansiona codice di ritiro** e il codice viene inserito per te. Per impostazione predefinita viene utilizzata la fotocamera posteriore; tocca il pulsante di capovolgimento per cambiare fotocamere, o tocca **Annulla** per tornare alla digitazione.
 3. Il chiosco mostra i bambini controllati sotto quel codice.
 
 ## Verifica di Chi Sta Ritirando
 
-La schermata di ritiro chiede chi sta ritirando i bambini:
+La schermata di check-out chiede chi sta ritirando i bambini:
 
-- Le **persone di ritiro di fiducia** per la famiglia appaiono come schede toccabili con la loro foto e relazione — tocca la persona in piedi di fronte a te.
-- Appaiono anche gli **adulti della famiglia** in una griglia di foto.
-- **Other** ti permette di digitare un nome per qualcuno non sull'elenco.
+- Le **persone di ritiro affidabili** per la famiglia compaiono come schede toccabili con la loro foto e relazione -- tocca la persona in piedi davanti a te.
+- Gli **adulti della famiglia** compaiono anche in una griglia foto.
+- **Altro** ti permette di digitare un nome per qualcuno non nell'elenco.
 
-Se un nome digitato corrisponde a qualcuno contrassegnato come **Not Authorized** per quella famiglia, il chiosco blocca il ritiro con un avvertimento. Un membro dello staff può scegliere **Override** per procedere comunque — l'override viene registrato nel record di partecipazione con il nome della persona.
+Se un nome digitato corrisponde a qualcuno contrassegnato come **Non Autorizzato** per quella famiglia, il chiosco blocca il check-out con un avviso. Un membro dello staff può scegliere **Ignora** per procedere comunque -- l'ignoranza viene registrata nel record di frequenza con il nome della persona.
 
-Una volta confermato il ritiratore, tocca il ritiro. Il nome della persona che ritira viene archiviato con il record di partecipazione.
+Una volta confermato il ritiratario, tocca il check-out. Il nome della persona che ritira viene memorizzato nel record di frequenza.
 
 :::info
-Le persone di ritiro di fiducia e non autorizzate vengono gestite dallo staff della chiesa nella pagina di ogni persona in B1 Admin — vedi [Check-In Safety](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+Le persone di ritiro affidabili e non autorizzate vengono gestite dal personale della chiesa nella pagina di ogni persona in B1 Admin -- vedi [Sicurezza Check-In](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
 :::
 
-## Paging di un Genitore
+## Avviso di un Genitore
 
-Hai bisogno di un genitore durante il servizio — un cambio di pannolino, un bambino che piange? Dalla schermata di ritiro su una stazione controllata, lo staff può inviare una **page**: un messaggio di testo al genitore o ai tutori del bambino tramite il provider di messaggistica di testo della chiesa. I genitori che hanno optato per escludersi dai testi o che non hanno un numero mobile vengono saltati e il chiosco mostra quanti messaggi sono stati inviati.
+Hai bisogno di un genitore durante il servizio -- un cambio di pannolino, un bambino che piange? Dalla schermata di check-out su una stazione gestita, il personale può inviare un **avviso**: un messaggio di testo ai genitori o ai tutori del bambino attraverso il fornitore di SMS della chiesa. I genitori che hanno rinunciato ai messaggi di testo o non hanno un numero mobile vengono saltati, e il chiosco mostra quanti messaggi sono stati inviati.
 
 ## Ristampa di Etichette
 
-Se un adesivo di nome o un'etichetta di ritiro vengono persi o danneggiati, lo staff su una stazione controllata può **ristampare** le etichette della famiglia dalla schermata di ritiro dopo aver inserito il codice di sicurezza. La ristampa utilizza la stessa stampante e i modelli di etichetta del check-in originale.
+Se un cartellino dei nomi o un'etichetta di ritiro è perso o danneggiato, il personale su una stazione gestita può **ristampare** le etichette della famiglia dalla schermata di check-out dopo aver inserito il codice di sicurezza. La ristampa utilizza la stessa stampante e i modelli di etichetta del check-in originale.
 
-## Trasmesso di Emergenza
+## Broadcast di Emergenza
 
-In un'emergenza, lo staff può inviare un messaggio di testo ai tutori di **ogni bambino controllato** per il servizio corrente contemporaneamente:
+In un'emergenza, il personale può inviare un messaggio ai tutori di **ogni bambino controllato** per il servizio attuale in una volta:
 
-1. Apri le **impostazioni admin** del chiosco (7 tocchi rapidi sull'intestazione logo, più il PIN se ne è impostato uno).
-2. Tocca **Emergency broadcast**.
-3. Immetti il messaggio, quindi digita **EMERGENCY** nel campo di conferma — il pulsante **Send broadcast** rimane disabilitato finché non lo fai.
-4. Il chiosco riporta quanti telefoni hanno ricevuto il messaggio e quante persone sono state saltate (optato o nessun numero mobile).
+1. Apri le **impostazioni di amministrazione** del chiosco (7 tocchi rapidi sul logo dell'intestazione, più il PIN se ne è stato impostato).
+2. Tocca **Broadcast di emergenza**.
+3. Inserisci il messaggio, quindi digita **EMERGENZA** nel campo di conferma -- il pulsante **Invia broadcast** rimane disabilitato finché non lo fai.
+4. Il chiosco segnala quanti telefoni hanno ricevuto il messaggio e quante persone sono state saltate (hanno rinunciato o non hanno un numero mobile).
 
 :::warning
-Il trasmesso va a ogni famiglia controllata per il servizio selezionato. Usalo per emergenze genuine — evacuazioni, blocchi, maltempo grave.
+Il broadcast va a ogni famiglia controllata per il servizio selezionato. Usalo per vere emergenze -- evacuazioni, blocchi, tempo severo.
 :::
 
 ## Articoli Correlati
 
-- [Completamento del Check-In](./completing-checkin) — da dove provengono i codici di sicurezza e le etichette di ritiro
-- [Check-In Safety](../../b1-admin/attendance/checkin-safety) — configurazione di capacità, rapporti, persone di ritiro e il requisito del provider di messaggistica di testo
-- [Configurazione della Stampante](../getting-started/printer-setup) — configurazione della stampante di etichette
+- [Completamento del Check-In](./completing-checkin) -- da dove provengono i codici di sicurezza e le etichette di ritiro
+- [Sicurezza Check-In](../../b1-admin/attendance/checkin-safety) -- configurazione di capacità, rapporti, persone di ritiro e il requisito del fornitore di SMS
+- [Configurazione Stampante](../getting-started/printer-setup) -- configurazione della stampante di etichette

@@ -1,72 +1,72 @@
 ---
-title: Gruppendetails
+title: "Gruppendetails"
 ---
 
-# Group Details
+# Gruppendetails
 
 <div class="article-intro">
 
-When you click on a group from the groups page, you are taken to the group detail page. What you see depends on whether you are logged in or not, with logged-in members having access to additional tabs and features.
+Wenn Sie auf eine Gruppe auf der Seite "Gruppen" klicken, werden Sie zur Seite mit den Gruppendetails weitergeleitet. Was Sie sehen, hängt davon ab, ob Sie angemeldet sind oder nicht. Angemeldete Mitglieder haben Zugriff auf zusätzliche Reiter und Funktionen.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Find a group to view by [browsing groups](./browsing-groups.md).
-- For full access to all tabs, [log in](../getting-started/logging-in.md) to your account.
+- Suchen Sie eine Gruppe zum Anzeigen, indem Sie [Gruppen durchsuchen](./browsing-groups.md).
+- Für vollständigen Zugriff auf alle Reiter [melden Sie sich](../getting-started/logging-in.md) bei Ihrem Konto an.
 
 </div>
 
-## Visitor View (Not Logged In)
+## Besucheransicht (Nicht angemeldet)
 
-If you are not logged in, you will see the following:
+Wenn Sie nicht angemeldet sind, sehen Sie Folgendes:
 
-- **Hero section** -- A large banner area showing the group's photo, name, meeting time, and meeting location.
-- **Description** -- The full description of the group explaining its purpose and what to expect.
-- **Leaders** -- Avatars and names of the group's leaders. You can click a leader's name to view their profile.
-- **Calendar events** -- Up to three upcoming events for the group are displayed, each showing the date and event title. If the group has no upcoming events, this section is hidden.
-- **Sign in to join** -- A button at the bottom of the page. Sign in (or create an account) to join the group or request to join. After you sign in, you are brought back to the group and taken straight to the join step.
+- **Herobereich** -- Ein großes Banner-Bereich, das das Foto, den Namen, die Treffenszeit und den Treffensort der Gruppe anzeigt.
+- **Beschreibung** -- Die vollständige Beschreibung der Gruppe, die ihren Zweck und Erwartungen erläutert.
+- **Leiter** -- Avatare und Namen der Gruppenleiter. Sie können auf den Namen eines Leiters klicken, um sein Profil anzuzeigen.
+- **Kalender-Events** -- Bis zu drei bevorstehende Events für die Gruppe werden angezeigt, jeweils mit Datum und Event-Titel. Wenn die Gruppe keine bevorstehenden Events hat, ist dieser Bereich ausgeblendet.
+- **Zum Beitreten anmelden** -- Eine Schaltfläche am Ende der Seite. Melden Sie sich an (oder erstellen Sie ein Konto), um der Gruppe beizutreten oder um Beitritt zu beantragen. Nach dem Anmelden werden Sie zurück zur Gruppe gebracht und direkt zum Beitrittsprozess geleitet.
 
-## Member View (Logged In)
+## Mitgliedersicht (Angemeldet)
 
-If you are logged in but not a member of the group, you see the group's hero section and description along with the join option for the group (see [Joining a Group](#joining-a-group) below). The tabs described next appear once you are a member.
+Wenn Sie angemeldet, aber kein Mitglied der Gruppe sind, sehen Sie den Herobereich und die Beschreibung der Gruppe zusammen mit der Beitrittsoption für die Gruppe (siehe [Einer Gruppe beitreten](#einer-gruppe-beitreten) unten). Die unten beschriebenen Reiter erscheinen, sobald Sie Mitglied werden.
 
-When you are a member, the group detail page shows the hero section along with a sidebar of tabs. If your group is associated with a Lessons.church plan type and this week's lesson has parent take-home content, a **This week's lesson** card appears between the hero and the tabs (members only).
+Wenn Sie Mitglied sind, zeigt die Seite mit den Gruppendetails den Herobereich zusammen mit einer Seitenleiste mit Reitern. Wenn Ihre Gruppe mit einem Lessons.church-Plantyp verknüpft ist und die Lektion dieser Woche Inhalte zum Mitnehmen für Eltern hat, wird eine Karte **Diese Woche's Lektion** zwischen dem Herobereich und den Reitern angezeigt (nur für Mitglieder).
 
-The available tabs are:
+Die verfügbaren Reiter sind:
 
-- **About** -- The group's full description, rendered with rich text formatting. Only shown if the group has a description.
-- **Plans** -- The group's service plans. Only shown if the group has plans.
-- **Messages** -- A space for group members to post messages and interact with each other. Only shown to members, and only if your church has turned on group chat for this group. See [Group Conversations](./conversations.md) for more details.
-- **Members** -- A list of all members in the group, showing their photo and name. You can click a member's name to visit their profile in the [member directory](../community/member-directory.md).
-- **Attendance** -- Visible to group leaders (and staff with attendance permission) only. Allows tracking of who attended group meetings.
-- **Events** -- The group's calendar showing meetings and events. You can browse upcoming and past events.
-- **Resources** -- Shared files and links that have been posted for the group. You can download uploaded files or open linked resources.
+- **Über** -- Die vollständige Beschreibung der Gruppe mit umfangreicher Textformatierung. Wird nur angezeigt, wenn die Gruppe eine Beschreibung hat.
+- **Pläne** -- Die Servicepläne der Gruppe. Wird nur angezeigt, wenn die Gruppe Pläne hat.
+- **Nachrichten** -- Ein Bereich für Gruppenmitglieder zum Posten von Nachrichten und zur Interaktion miteinander. Wird nur Mitgliedern angezeigt und nur, wenn Ihre Kirche den Gruppen-Chat für diese Gruppe aktiviert hat. Weitere Informationen finden Sie unter [Gruppengespräche](./conversations.md).
+- **Mitglieder** -- Eine Liste aller Mitglieder in der Gruppe mit ihrem Foto und Namen. Sie können auf den Namen eines Mitglieds klicken, um sein Profil im [Mitgliedsverzeichnis](../community/member-directory.md) anzuzeigen.
+- **Anwesenheit** -- Sichtbar nur für Gruppenleiter (und Personal mit Anwesenheitsberechtigung). Ermöglicht die Verfolgung, wer an Gruppentreffen teilgenommen hat.
+- **Events** -- Der Kalender der Gruppe mit Treffen und Events. Sie können bevorstehende und frühere Events durchsuchen.
+- **Ressourcen** -- Freigegebene Dateien und Links, die für die Gruppe gepostet wurden. Sie können hochgeladene Dateien herunterladen oder auf verknüpfte Ressourcen zugreifen.
 
-## Leader Capabilities
+## Leiter-Funktionen
 
-If you are a leader of the group, you have additional editing capabilities:
+Wenn Sie ein Leiter der Gruppe sind, haben Sie zusätzliche Bearbeitungsfunktionen:
 
-- **Create and edit events** -- Add events to the group calendar from the **Events** tab. When creating an event, you can reserve rooms and resources alongside it — select from available rooms and resources, set optional setup and teardown times, and the booking request is automatically submitted for approval.
-- **Manage resources** -- Upload files (up to 100 MB of storage), add links, or delete existing resources.
-- **Track attendance** -- Record attendance for group sessions from the **Attendance** tab.
+- **Events erstellen und bearbeiten** -- Fügen Sie Events zum Gruppenkalender aus dem Reiter **Events** hinzu. Beim Erstellen eines Events können Sie Räume und Ressourcen gleichzeitig reservieren -- wählen Sie aus verfügbaren Räumen und Ressourcen, legen Sie optionale Setup- und Abbauzeiten fest, und die Buchungsanfrage wird automatisch zur Genehmigung eingereicht.
+- **Ressourcen verwalten** -- Laden Sie Dateien hoch (bis zu 100 MB Speicher), fügen Sie Links hinzu oder löschen Sie vorhandene Ressourcen.
+- **Anwesenheit nachverfolgung** -- Erfassen Sie die Anwesenheit bei Gruppensitzungen aus dem Reiter **Anwesenheit**.
 
-To change the group's name, description, or member list, use B1 Admin. See [Group Members](../../b1-admin/groups/group-members.md).
+Um den Namen, die Beschreibung oder die Mitgliederliste der Gruppe zu ändern, verwenden Sie B1 Admin. Siehe [Gruppenmitglieder](../../b1-admin/groups/group-members.md).
 
-## Joining a Group
+## Einer Gruppe beitreten
 
-When you are logged in and not yet a member, a join button appears on the group detail page. The button label depends on the group's join policy:
+Wenn Sie angemeldet und noch kein Mitglied sind, wird auf der Seite mit den Gruppendetails eine Beitrittschaltfläche angezeigt. Die Schaltflächenbeschriftung hängt von der Beitrittrichtlinie der Gruppe ab:
 
-- **Join Group** -- The group is open. Clicking this immediately adds you as a member.
-- **Request to Join** -- The group requires approval. Clicking this opens a dialog where you can include an optional message to the group leader, then submit your request. See [Requesting to Join a Group](./join-requests.md) for details on managing your requests.
+- **Gruppe beitreten** -- Die Gruppe ist offen. Ein Klick fügt Sie sofort als Mitglied hinzu.
+- **Um Beitritt bitten** -- Die Gruppe erfordert eine Genehmigung. Ein Klick öffnet einen Dialog, in dem Sie eine optionale Nachricht an den Gruppenleiter eingeben können, bevor Sie Ihre Anfrage einreichen. Weitere Informationen finden Sie unter [Um Beitritt zu einer Gruppe bitten](./join-requests.md).
 
-After you send a request, the button is replaced by a **Request Pending** notice: "Your request to join has been sent. A group leader will review it."
+Nach dem Absenden einer Anfrage wird die Schaltfläche durch einen **Anfrage ausstehend** Vermerk ersetzt: "Ihre Beitrittanfrage wurde gesendet. Ein Gruppenleiter wird diese überprüfen."
 
-If you were not logged in and clicked **Sign in to join**, you return to the group after signing in and the join step starts automatically: an open group adds you right away, and a group that requires approval opens the **Request to Join** dialog.
+Wenn Sie nicht angemeldet waren und auf **Zum Beitreten anmelden** geklickt haben, kehren Sie nach dem Anmelden zur Gruppe zurück und der Beitrittsprozess startet automatisch: Eine offene Gruppe fügt Sie sofort hinzu, und eine Gruppe, die eine Genehmigung erfordert, öffnet den Dialog **Um Beitritt bitten**.
 
-If neither button appears, the group is closed and members must be added manually by a leader or administrator.
+Wenn keine der beiden Schaltflächen angezeigt wird, ist die Gruppe geschlossen und Mitglieder müssen manuell von einem Leiter oder Administrator hinzugefügt werden.
 
 :::info
-You must be signed in to join or request to join a group. If a group is closed and you want to join, contact your church office or one of the group's leaders.
+Sie müssen angemeldet sein, um einer Gruppe beizutreten oder um Beitritt zu beantragen. Wenn eine Gruppe geschlossen ist und Sie beitreten möchten, kontaktieren Sie Ihr Kirchenbüro oder einen der Gruppenleiter.
 :::

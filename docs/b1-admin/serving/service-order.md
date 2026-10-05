@@ -126,7 +126,7 @@ If an item has a **Position** set, each checked service time in **Include in Ser
 
 ## Sharing the Service Order
 
-Once your service order is complete, you can print the full plan (including the service order) from the plan detail page. This gives your team a complete rundown of the service. When **Show Volunteer Names** is on for the print, each section header also prints with the assigned volunteer's position next to it, so your team can see who's covering that section without opening the app. If a heading's position is overridden for specific services, the print shows every distinct position name it resolves to across the services on that plan (for example, "Worship Team / Youth Team").
+Once your service order is complete, you can print the full plan (including the service order) from the plan detail page. This gives your team a complete rundown of the service, headed with your church's name and the plan's name. When **Show Volunteer Names** is on for the print, each section header also prints with the assigned volunteer's position next to it, so your team can see who's covering that section without opening the app. If a heading's position is overridden for specific services, the print shows every distinct position name it resolves to across the services on that plan (for example, "Worship Team / Youth Team").
 
 ## Next Steps
 

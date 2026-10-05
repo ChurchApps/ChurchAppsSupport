@@ -1,183 +1,185 @@
 ---
-title: "Importering av data"
+title: "Importere data"
 ---
 
-# Importering av data
+# Importere data
 
 <div class="article-intro">
 
-B1-overføringsverktøyet gjør det enkelt å bringe eksisterende data inn i B1, enten du starter på nytt fra et regneark, migrerer fra en annen kirkledelsesplattform eller importerer donasjonsposter. Det kan også brukes til å eksportere eller sikkerhetskopiere dataene dine når som helst.
+Verktøyet B1 Transfer gjør det enkelt å hente inn eksisterende data i B1, enten du starter på nytt fra et regneark, flytter over fra en annen plattform for menighetsadministrasjon eller importerer gaveregistreringer. Det kan også brukes til å eksportere eller sikkerhetskopiere dataene dine når som helst.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du må ha en aktiv B1 Admin-konto med tilgang til **Innstillinger**.
-- Ha dataene dine eksportert og klar fra forrige system før du starter.
-- Dette verktøyet er ment for innledende dataflytting. Hvis du allerede har brukt B1 en stund, kan import igjen opprette duplikat poster.
+- Du trenger en aktiv B1 Admin-konto med tilgang til **Innstillinger**.
+- Ha dataene eksportert og klare fra det tidligere systemet før du starter.
+- Dette verktøyet er ment for den første dataflyttingen. Hvis du allerede har brukt B1 en stund, kan en ny import skape duplikater.
 
 </div>
 
-## Tilgang til overføringsverktøyet
+## Åpne overføringsverktøyet
 
 1. Logg inn på **B1 Admin**.
-2. Åpne **seksjonsmeny** i øverste venstre hjørne (seksjonsnavn med liten pil) og velg **Innstillinger**.
-3. Klikk på **Import/eksport**-knappen øverst til høyre på sidetittelfeltet.
-4. Dette åpner **B1-overføring**-verktøyet i en ny fane på [transfer.b1.church](https://transfer.b1.church).
+2. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre), utvid **Innstillinger** og klikk på **Innstillinger**.
+3. Klikk på knappen **Import/eksport** øverst til høyre i sidehodet.
+4. Da åpnes verktøyet **B1 Transfer** i en ny fane på [transfer.b1.church](https://transfer.b1.church).
 
-Overføringsverktøyet leder deg gjennom fire trinn: Kilde, Forhåndsvisning, Destinasjon og Kjør.
+Overføringsverktøyet tar deg gjennom fire trinn: Kilde, Forhåndsvisning, Mål og Kjør.
 
 ---
 
 ## Trinn 1 - Velg kilde
 
-Velg hvor dataene dine kommer fra. Det er syv valg:
+Velg hvor dataene dine kommer fra. Det er sju alternativer:
 
-- **B1-database** -- Trekker data direkte fra eksisterende B1-kirke din. Nyttig for å lage sikkerhetskopi eller konvertere dataene dine til et annet format. Du må være logget inn for å bruke dette valget.
-- **B1-import ZIP** -- En ZIP-fil i B1s eget format. Dette brukes hovedsakelig til å gjenopprette en tidligere B1-eksport.
-- **Breeze-import ZIP** -- En ZIP-fil som inneholder eksporterte filer fra Breeze ChMS.
-- **Planning Center ZIP** -- En ZIP- eller CSV-fil eksportert fra Planning Center.
-- **Egendefinert CSV/Excel** -- En CSV- eller Excel-fil som inneholder persondata. Etter opplasting, vil du kartlegge kolonnene dine til B1-felt før importen fortsetter.
-- **Tithe.ly CSV** -- En personer- eller donasjonseksportfil fra Tithe.ly (CSV- eller Excel-format godtatt).
-- **CCB/Pushpay CSV** -- En personer- eller donasjons-eksport CSV fra Church Community Builder eller Pushpay.
+- **B1 Database** — Henter data direkte fra din eksisterende B1-menighet. Nyttig for å ta sikkerhetskopi eller konvertere dataene til et annet format. Du må være logget inn for å bruke dette alternativet.
+- **B1 Import Zip** — En zip-fil i B1s eget format. Brukes først og fremst for å gjenopprette en tidligere B1-eksport.
+- **Breeze Import Zip** — En zip-fil med eksporterte filer fra Breeze ChMS.
+- **Planning Center Zip** — En zip- eller CSV-fil eksportert fra Planning Center.
+- **Egendefinert CSV / Excel** — En hvilken som helst CSV- eller Excel-fil med persondata. Etter opplasting kobler du kolonnene dine til B1-felt før importen fortsetter.
+- **Tithe.ly CSV** — En eksportfil med personer eller gaver fra Tithe.ly (CSV- eller Excel-format godtas).
+- **CCB / Pushpay CSV** — En CSV-eksportfil med personer eller gaver fra Church Community Builder eller Pushpay.
 
-Du kan dra og slippe filen din på opplastingsområdet, eller klikk for å bla etter den.
+Du kan dra og slippe filen i opplastingsfeltet, eller klikke for å finne den.
 
 ---
 
-## Trinn 1b - Kartlegg feltene dine (bare egendefinert CSV/Excel)
+## Trinn 1b - Koble feltene dine (bare egendefinert CSV / Excel)
 
-Hvis du valgte **Egendefinert CSV/Excel**, etter opplasting av filen din, vil verktøyet vise en feltkartkartskjerm før du går til forhåndsvisningen.
+Hvis du valgte **Egendefinert CSV / Excel**, viser verktøyet en skjerm for feltkobling etter at du har lastet opp filen, før det går videre til forhåndsvisningen.
 
-Hver kolonne fra filen din er oppført sammen med en eksempelverdi. For hver kolonne, bruk rullegardinmenyen for å velge det samsvarende B1-feltet. Verktøyet vil automatisk oppdage vanlige kolonnenavn som "Fornavn", "E-post" eller "Postnummer", men du bør gjennomgå hver rad og korrigere alt det gikk glipp av.
+Hver kolonne fra filen din vises sammen med en eksempelverdi. For hver kolonne bruker du nedtrekkslisten til å velge det tilsvarende B1-feltet. Verktøyet gjenkjenner automatisk vanlige kolonnenavn som «Fornavn», «E-post» eller «Postnummer», men du bør se gjennom hver rad og rette opp det som er oversett.
 
-Tilgjengelige B1-felt inkluderer:
+Tilgjengelige B1-felt omfatter:
 
-- Fornavn, Etternavn, Mellomtall, Kallenavn, Visningsnavn, Tittel/Prefiks, Suffiks
+- Fornavn, Etternavn, Mellomnavn, Kallenavn, Visningsnavn, Tittel/prefiks, Suffiks
 - E-post, Hjemmetelefon, Mobiltelefon, Arbeidstelefon
-- Adresselinje 1, Adresselinje 2, By, Fylke, Postnummer
-- Fødselsdato, Årsdagen, Kjønn, Sivilstand, Medlemskapsstatus
-- Husholdning/familienavn
-- Gruppenavn -- tildeler personen til en gruppe etter navn
-- **Egendefinert felt (samsvarer etter navn)** -- lagrer kolonnen i et av kirkens [egendefinerte personfelter](../settings/custom-fields.md). En **B1-feltnavn**-boks vises, fylt med kolonneoverskriften. Endre den til feltets navn nøyaktig slik det vises i B1 (kapitalisering spiller ingen rolle).
-- **Skjemarespons (egendefinert felt)** -- lagrer den kolonnens verdi som et egendefinert felt knyttet til personens oppføring. Hvis du bruker dette valget, blir du bedt om å gi skjemaet et navn.
+- Adresselinje 1, Adresselinje 2, By, Fylke/delstat, Postnummer
+- Fødselsdato, Jubileum, Kjønn, Sivilstatus, Medlemsstatus
+- Husstands-/familienavn
+- Gruppenavn — knytter personen til en gruppe etter navn
+- **Egendefinert felt (koble på navn)** — lagrer kolonnen i et av menighetens [egendefinerte personfelt](../settings/custom-fields.md). Et felt **B1-feltnavn** vises, utfylt med kolonneoverskriften. Endre det til feltets navn nøyaktig slik det står i B1 (store og små bokstaver spiller ingen rolle).
+- **Skjemasvar (egendefinert felt)** — lagrer kolonnens verdi som et egendefinert felt knyttet til personens post. Hvis du bruker dette alternativet, blir du bedt om å gi skjemaet et navn.
 
-Datoer kan være i vanlige formater som `9/17/1994` og konverteres automatisk. For egendefinerte felt, godtar Ja/Nei-felt verdier som Ja, Nei, J, N, Sann, Usann, 1 og 0, og flervalgsfelter godtar enten valgsteksten eller verdien.
+Datoer kan ha vanlige formater som `9/17/1994` og konverteres automatisk. For egendefinerte felt godtar ja/nei-felt verdier som Yes, No, Y, N, True, False, 1 og 0, og flervalgsfelt godtar enten valgteksten eller verdien.
 
 :::info
-Opprett egendefinerte personfelter dine i B1 Admin før du importerer. Når importen er ferdig, viser **Egendefinerte felt**-trinnet alle kolonnenavn som ikke samsvarer med et B1-felt og teller alle verdier som ikke passer til feltets type. Disse verdiene hoppes over, og resten av importen fullfører likevel.
+Opprett de egendefinerte personfeltene dine i B1 Admin før du importerer. Når importen er ferdig, viser trinnet **Egendefinerte felt** alle kolonnenavn som ikke samsvarer med et B1-felt, og teller verdier som ikke passer til felttypen. Disse verdiene hoppes over, og resten av importen fullføres likevel.
 :::
 
-Kolonner du ikke vil importere kan settes til **(Skip)**. Minst ett navnefelt (Fornavn eller Etternavn) må kartlegges før du kan fortsette.
+Kolonner du ikke vil importere, kan settes til **(Hopp over)**. Minst ett navnefelt (Fornavn eller Etternavn) må være koblet før du kan fortsette.
 
-Klikk **Bekreft kartlegging og import** for å fortsette til forhåndsvisningen.
-
----
-
-## Trinn 2 - Forhåndsvis dataene dine
-
-Etter opplasting, viser verktøyet en forhåndsvisning av alt som vil importeres. Bruk fanene for å gjennomgå hver datatype:
-
-- **Personer** -- Listet etter husholdning, med bilder hvis inkludert.
-- **Grupper** -- Organisert etter campus, service, tid og kategori.
-- **Frammøte** -- Økto datoer, grupper og besøktellinger.
-- **Donasjoner** -- Batcher, fond, donatorer og beløp.
-- **Skjemaer** -- Skjemanavner og innholdstyper.
-
-Gjennomgå dette nøye før du fortsetter. Hvis noe ser galt ut, klikk **Start på nytt** og korriger kildefilen din.
+Klikk på **Bekreft kobling og importer** for å gå videre til forhåndsvisningen.
 
 ---
 
-## Trinn 3 - Velg destinasjon
+## Trinn 2 - Forhåndsvis dataene
 
-Velg hvor du vil at dataene skal gå:
+Etter opplasting viser verktøyet en forhåndsvisning av alt som skal importeres. Bruk fanene for å gå gjennom hver datatype:
 
-- **B1-database** -- Importerer direkte inn i kirkens B1-database. Etter å ha valgt dette, vil verktøyet vise en endelig telling av poster som skal legges til. Klikk **Start overføring** for å bekrefte.
-- **B1-eksport ZIP** -- Laster ned dataene dine som en B1-format ZIP-fil. Bra for sikkerhetskopier.
-- **Breeze-eksport ZIP** -- Konverterer dataene dine til Breeze-format.
-- **Planning Center ZIP** -- Konverterer dataene dine til Planning Center-format.
+- **Personer** — Oppført etter husstand, med bilder hvis de er inkludert.
+- **Grupper** — Organisert etter avdeling, samling, tid og kategori.
+- **Oppmøte** — Øktdatoer, grupper og antall besøk.
+- **Gaver** — Gavebunter, fond, givere og beløp.
+- **Skjemaer** — Skjemanavn og innholdstyper.
+
+Se nøye gjennom dette før du går videre. Hvis noe ser feil ut, klikker du på **Start på nytt** og retter opp kildefilen.
+
+---
+
+## Trinn 3 - Velg mål
+
+Velg hvor dataene skal havne:
+
+- **B1 Database** — Importerer direkte til menighetens B1-database. Når du har valgt dette, viser verktøyet et endelig antall poster som skal legges til. Klikk på **Start overføring** for å bekrefte.
+- **B1 Export Zip** — Laster ned dataene som en zip-fil i B1-format. Bra for sikkerhetskopier.
+- **Breeze Export Zip** — Konverterer dataene til Breeze-format.
+- **Planning Center Zip** — Konverterer dataene til Planning Center-format.
 
 :::warning
-Kilden og destinasjonen kan ikke være samme format. Hvis de samsvarer, vil verktøyet advare deg for å forhindre utilsiktet duplisering.
+Kilden og målet kan ikke ha samme format. Hvis de er like, advarer verktøyet deg for å hindre utilsiktet duplisering.
 :::
 
 ---
 
 ## Trinn 4 - Kjør
 
-Verktøyet behandler overføringen og viser fremdrift for hvert trinn:
+Verktøyet behandler overføringen og viser fremdriften for hvert trinn:
 
-- Campus, tjenester og tider
+- Avdelinger, samlinger og tider
 - Personer
 - Bilder
-- Grupper og gruppmedlemmer
-- Donasjoner
-- Frammøte
-- Skjemaer, spørsmål, svar og skjemainnlevering
-- Egendefinerte felt (når du kartlegger noen egendefinerte feltkolonner)
-- Komprimering (bare for ZIP-fildestinasjon)
+- Grupper og gruppemedlemmer
+- Gaver
+- Oppmøte
+- Skjemaer, spørsmål, svar og skjemainnsendinger
+- Egendefinerte felt (når du har koblet noen kolonner til egendefinerte felt)
+- Komprimering (bare for mål med zip-fil)
+
+Når målet er **B1 Database**, har fremdriftskortet tittelen **Importfremdrift** og avsluttes med **Import fullført!** (eller **Import fullført med feil**). For mål med zip-fil står det **Eksport** i de samme meldingene.
 
 :::warning
-Lukk ikke nettleseren mens overføringen kjører. Vent til alle trinn viser som fullstendige.
+Ikke lukk nettleseren mens overføringen pågår. Vent til alle trinn vises som fullført.
 :::
 
 ---
 
-## Forberede en Breeze-import ZIP
+## Forberede en Breeze Import Zip
 
-1. I Breeze, gå til **Innstillinger** og klikk **Eksport** i venstre sidefelt.
-2. Eksporter tre separate filer: **People**, **Tags** og **Bidrag**.
-3. Velg alle tre filene, høyreklikk og komprimer dem inn i en enkelt ZIP-fil.
-   - På en Mac: velg filene, høyreklikk og velg **Komprimer**.
-   - På en PC: velg filene, høyreklikk, velg **Send til**, deretter **Komprimert (zippet) mappe**.
-4. Last opp ZIP-filen ved å bruke **Breeze-import ZIP**-valget i trinn 1.
+1. Gå til **Settings** i Breeze og klikk på **Export** i sidefeltet til venstre.
+2. Eksporter tre separate filer: **People**, **Tags** og **Contributions**.
+3. Marker alle tre filene, høyreklikk og komprimer dem til én enkelt zip-fil.
+   - På Mac: marker filene, høyreklikk og velg **Komprimer**.
+   - På PC: marker filene, høyreklikk, velg **Send til** og deretter **Komprimert mappe (zip)**.
+4. Last opp zip-filen med alternativet **Breeze Import Zip** i trinn 1.
 
-Breeze-importen overfører personer, grupper (etiketter) og donasjonsposter automatisk.
-
----
-
-## Forberedelse av en Planning Center-eksport
-
-1. Logg inn på Planning Center og åpne **Mennesker**-produktet.
-2. I venstre sidefelt, klikk **Lister** og opprett en liste som inkluderer alle du vil bringe over. (Hvis du allerede har en liste over hele menigheten, bruk den.)
-3. Åpne listen og bruk dens **eksport**-valget for å laste ned mennesker dine som en **CSV**-fil. Inkluder feltene du vil beholde -- navn, e-post, telefon, adresse, fødselsdato, kjønn og medlemskapsstatus alle kartlegges over til B1.
-4. Hvis Planning Center gir deg mer enn en fil, velg dem alle, høyreklikk og komprimer dem inn i en enkelt ZIP.
-   - På en Mac: velg filene, høyreklikk og velg **Komprimer**.
-   - På en PC: velg filene, høyreklikk, velg **Send til**, deretter **Komprimert (zippet) mappe**.
-5. Last opp CSV eller ZIP ved å bruke **Planning Center ZIP**-valget i trinn 1.
-
-Etter opplasting, gå til forhåndsvisningen og bekreft at mennesker og husstander dine ser riktig ut før du kjører importen.
+Breeze-importen overfører personer, grupper (tagger) og gaveregistreringer automatisk.
 
 ---
 
-## Forberedelse av en Tithe.ly-eksport
+## Forberede en Planning Center-eksport
 
-1. I Tithe.ly, eksporter **Mennesker**-dataene dine som en CSV- eller Excel-fil. Du kan også eksportere en separat **Givende**-fil hvis du vil bringe donasjonsposter.
-2. Verktøyet vil automatisk oppdage om filen inneholder personer- eller donasjondata basert på kolonnenavnene.
-3. Last opp filen ved å bruke **Tithe.ly CSV**-valget i trinn 1.
+1. Logg inn på Planning Center og åpne produktet **People**.
+2. Klikk på **Lists** i sidefeltet til venstre og lag en liste med alle du vil ta med deg. (Hvis du allerede har en liste over hele menigheten, bruker du den.)
+3. Åpne listen og bruk **eksport**-alternativet for å laste ned personene som en **CSV**-fil. Ta med feltene du vil beholde – navn, e-post, telefon, adresse, fødselsdato, kjønn og medlemsstatus blir alle overført til B1.
+4. Hvis Planning Center gir deg mer enn én fil, markerer du dem alle, høyreklikker og komprimerer dem til én zip-fil.
+   - På Mac: marker filene, høyreklikk og velg **Komprimer**.
+   - På PC: marker filene, høyreklikk, velg **Send til** og deretter **Komprimert mappe (zip)**.
+5. Last opp CSV- eller zip-filen med alternativet **Planning Center Zip** i trinn 1.
+
+Etter opplasting går du videre til forhåndsvisningen og kontrollerer at personene og husstandene ser riktige ut før du kjører importen.
+
+---
+
+## Forberede en Tithe.ly-eksport
+
+1. Eksporter **People**-dataene dine fra Tithe.ly som CSV- eller Excel-fil. Du kan også eksportere en egen **Giving**-fil hvis du vil ta med gaveregistreringer.
+2. Verktøyet gjenkjenner automatisk om filen inneholder persondata eller gavedata, ut fra kolonnenavnene.
+3. Last opp filen med alternativet **Tithe.ly CSV** i trinn 1.
 
 :::info
-Tithe.ly-eksporten kan importeres en fil av gangen. Kjør prosessen to ganger hvis du må importere både personer og donasjonsposter separat.
+Tithe.ly-eksporter kan importeres én fil om gangen. Kjør prosessen to ganger hvis du må importere personer og gaveregistreringer hver for seg.
 :::
 
 ---
 
-## Forberedelse av en CCB eller Pushpay-eksport
+## Forberede en CCB- eller Pushpay-eksport
 
-1. I Church Community Builder eller Pushpay, eksporter **Mennesker**-dataene dine som en CSV-fil. Du kan også eksportere en separat givende/bidragssfil.
-2. Verktøyet vil automatisk oppdage om filen inneholder personer- eller donasjondata basert på kolonnenavnene.
-3. Last opp filen ved å bruke **CCB/Pushpay CSV**-valget i trinn 1.
+1. Eksporter **People**-dataene dine fra Church Community Builder eller Pushpay som CSV-fil. Du kan også eksportere en egen fil med gaver/bidrag.
+2. Verktøyet gjenkjenner automatisk om filen inneholder persondata eller gavedata, ut fra kolonnenavnene.
+3. Last opp filen med alternativet **CCB / Pushpay CSV** i trinn 1.
 
 ---
 
-## Etter import
+## Etter importen
 
-Når overføringen er fullstendig, ta noen få minutter til å verifisere dataene dine:
+Når overføringen er fullført, bør du bruke noen minutter på å kontrollere dataene:
 
-1. Bla gjennom [Mennesker](../people/adding-people.md)-siden og plassekontroll noen få profiler.
-2. Bekreft at navn, e-poster, telefonnumre og adresser kom gjennom korrekt.
-3. Sjekk at husstandstilkoblingene er intakte.
-4. Gjennomgå eventuelle importerte grupper og donasjonsposter.
+1. Bla gjennom siden [Personer](../people/adding-people.md) og stikkprøvekontroller noen profiler.
+2. Bekreft at navn, e-postadresser, telefonnumre og adresser kom riktig med.
+3. Kontroller at husstandskoblingene er intakte.
+4. Gå gjennom importerte grupper og gaveregistreringer.
 
-Hvis du legger merke til problemer, kan du redigere individuelle profiler fra mennesker-siden. Du kan også kjøre overføringsverktøyet igjen for å [eksportere dataene dine](exporting-data.md) som sikkerhetskopi.
+Hvis du oppdager feil, kan du redigere enkeltprofiler fra siden Personer. Du kan også kjøre overføringsverktøyet på nytt for å [eksportere dataene dine](exporting-data.md) som sikkerhetskopi.

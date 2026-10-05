@@ -20,7 +20,7 @@ Crie formulários personalizados para coletar informações de sua congregação
 
 ## Criando um Novo Formulário
 
-1. Abra **Pessoas** no menu de seção, depois clique em **Formulários** na barra de navegação.
+1. Abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo do B1 Admin), expanda **Pessoas** e clique em **Formulários**.
 2. Clique em **Adicionar Formulário**.
 3. Insira um **nome** para seu formulário.
 4. Escolha o tipo de formulário no menu suspenso:
@@ -56,7 +56,7 @@ O tipo de campo **Pagamento** requer que Stripe seja configurado. Se você ainda
 
 ## Gerenciando Membros do Formulário
 
-1. Abra seu formulário e vá para a guia **Membros**.
+1. Abra seu formulário e vá para a guia **Membros do Formulário**.
 2. Procure por uma pessoa e adicione-a com uma função:
    - **Admin** — Pode editar o formulário e visualizar todas as submissões.
    - **Apenas Visualizar** — Pode visualizar submissões, mas não pode editar o formulário.
@@ -81,7 +81,7 @@ Os e-mails de acompanhamento são enviados apenas após sua igreja ser aprovada 
 
 ## Duplicando um Formulário
 
-Para reutilizar um formulário como ponto de partida para um novo, clique no ícone **Duplicar** (ícone de cópia) próximo ao formulário na lista de Formulários. O B1 cria uma cópia exata do formulário -- incluindo todas as perguntas -- que você pode então renomear e editar independentemente.
+Para reutilizar um formulário como ponto de partida para um novo, clique no ícone **Duplicar** (ícone de cópia) próximo ao formulário na lista de Formulários. B1 cria uma cópia exata do formulário — incluindo todas as perguntas — que você pode então renomear e editar independentemente.
 
 :::tip
 A duplicação é útil para eventos recorrentes onde as perguntas de inscrição permanecem iguais de ano para ano. Duplique o formulário do ano passado, atualize o nome e as datas e você está pronto.
@@ -90,6 +90,8 @@ A duplicação é útil para eventos recorrentes onde as perguntas de inscriçã
 ## Configurando Propriedades do Formulário
 
 Você pode atualizar o nome e as configurações de seu formulário a qualquer momento. Para formulários Autônomos, você também verá uma **URL pública** única que você pode compartilhar com qualquer pessoa, juntamente com um campo **Descrição** -- texto mostrado acima das perguntas na página de formulário público, útil para dizer às pessoas qual é o propósito do formulário antes de começarem a preenchê-lo.
+
+Use o campo **Mensagem de Obrigado** para configurar o que as pessoas veem após enviar o formulário, incluindo na página de URL pública do formulário. Se deixar em branco, elas verão "Obrigado por enviar o formulário!"
 
 :::tip
 Formulários autônomos são ótimos para inscrições em eventos. Compartilhe a URL pública por e-mail, mídia social ou incorpore o formulário diretamente no site de sua igreja.

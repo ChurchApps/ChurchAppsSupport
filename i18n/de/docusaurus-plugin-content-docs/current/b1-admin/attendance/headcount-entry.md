@@ -1,49 +1,50 @@
 ---
-title: "Erfassung der Besucherzahl & Trend"
+title: "Kopfzahl Erfassung & Trend"
 ---
-# Erfassung der Besucherzahl & Trend
+
+# Kopfzahl Erfassung & Trend
 
 <div class="article-intro">
 
-Mit Besucherzahlen können Sie eine einfache Gesamtzahl der Anwesenden erfassen -- für einen Gottesdienst, eine Gottesdienstzeit oder eine Gruppe -- ohne namentliche Teilnehmerliste einzuchecken. Nutzen Sie dies, wenn Sie lediglich wissen möchten, „wie viele Personen anwesend waren", und kombinieren Sie es mit dem Bericht Besucherzahl-Trend, um diese Zahl im Zeitverlauf zu beobachten.
+Mit Kopfzahlen können Sie eine einfache Gesamtbesucherzahl aufzeichnen – für einen Gottesdienst, eine Gottesdienstzeit oder eine Gruppe – ohne eine benannte Liste einzuchecken. Verwenden Sie dies, wenn Sie nur wissen müssen, "wie viele Menschen waren hier", und kombinieren Sie es mit dem Kopfzahl-Trendbericht, um diese Zahl im Laufe der Zeit zu beobachten.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Ihre Campus, Gottesdienste und Gottesdienstzeiten müssen konfiguriert sein. Siehe [Anwesenheit einrichten](setup.md).
-- Das Erfassen einer Besucherzahl erfordert die Berechtigung **Anwesenheit &gt; Bearbeiten**; das Anzeigen des Trendberichts erfordert **Anwesenheit &gt; Anzeigen**. Siehe [Rollen & Berechtigungen](../settings/roles-permissions.md).
+- Ihre Standorte, Gottesdienste und Gottesdienstzeiten müssen konfiguriert werden. Siehe [Anwesenheitseinrichtung](setup.md).
+- Die Eingabe einer Kopfzahl erfordert die Berechtigung **Teilnahme > Bearbeiten**; Die Anzeige des Trendberichts erfordert **Teilnahme > Anzeigen**. Siehe [Rollen & Berechtigungen](../settings/roles-permissions.md).
 
 </div>
 
 :::info
-Besucherzahlen sind eine Alternative ohne Namensangaben zur [Anwesenheitserfassung](recording-attendance.md). Wenn Sie wissen müssen, **wer** anwesend war -- zum Beispiel, um Personen nachzugehen, die nicht wiedergekommen sind --, verwenden Sie weiterhin die namentliche Sitzungsanwesenheit auf der Registerkarte „Sitzungen" einer Gruppe. Besucherzahlen speichern nur eine Zahl.
+Kopfzahlen sind eine nur-Total-Alternative zu [Teilnahme aufzeichnen](recording-attendance.md). Wenn Sie wissen müssen, **wer** anwesend war – zum Beispiel, um Personen zu kontaktieren, die nicht zurückgekehrt sind – verwenden Sie weiterhin benannte Sitzungsteilnahme auf einer Gruppen-Registerkarte "Sitzungen". Kopfzahlen speichern nur eine Zahl.
 :::
 
-## Eine Besucherzahl erfassen
+## Kopfzahl aufzeichnen
 
-1. Öffnen Sie **B1 Admin**, öffnen Sie das **Bereichsmenü** in der oberen linken Ecke, wählen Sie **Personen** und klicken Sie dann auf die Registerkarte **Anwesenheit**.
-2. Wählen Sie die Unterregisterkarte **Besucherzahlen**.
+1. Öffnen Sie **B1 Admin**, öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), erweitern Sie **Personen**, und klicken Sie auf **Teilnahme**.
+2. Wählen Sie die Registerkarte **Kopfzahlen** aus.
 3. Füllen Sie das Formular aus:
    - **Gottesdienst** *(erforderlich)*
-   - **Gottesdienstzeit** -- leer lassen, um eine Gesamtzahl über alle Gottesdienstzeiten hinweg zu erfassen
-   - **Gruppe** -- optional; es werden nur Gruppen aufgeführt, für die „Anwesenheit erfassen" aktiviert ist. Leer lassen für „Keine Gruppe (gesamter Gottesdienst)".
+   - **Gottesdienstzeit** – leer lassen, um einen Gesamtwert über alle Gottesdienstzeiten aufzuzeichnen
+   - **Gruppe** – optional; nur Gruppen mit aktiviertem Verfolgung der Teilnahme werden aufgelistet. Lassen Sie leer für "Keine Gruppe (gesamter Gottesdienst)".
    - **Datum**
-   - **Besucherzahl** -- die Gesamtzahl der anwesenden Personen
+   - **Kopfzahl** – die Gesamtzahl der anwesenden Personen
 4. Klicken Sie auf **Speichern**.
 
-Die Tabelle **Letzte Besucherzahlen** auf der rechten Seite listet Ihre letzten Einträge mit Datum, Gottesdienst, Gottesdienstzeit, Gruppe und Anzahl auf. Klicken Sie auf eine Zeile, um sie wieder in das Formular zu laden, falls Sie sie korrigieren oder löschen möchten.
+Die Tabelle **Aktuelle Kopfzahlen** auf der rechten Seite listet Ihre letzten Einträge mit Datum, Gottesdienst, Gottesdienstzeit, Gruppe und Zahl auf. Klicken Sie auf eine Zeile, um sie zurück in das Formular zu laden, wenn Sie sie korrigieren oder löschen müssen.
 
-## Bericht „Besucherzahl-Trend"
+## Kopfzahl-Trendbericht
 
-1. Wählen Sie auf derselben Registerkarte **Anwesenheit** die Unterregisterkarte **Besucherzahl-Trend**.
-2. Verwenden Sie die Filter **Campus**, **Gottesdienst**, **Gottesdienstzeit** und **Gruppe**, um den Bericht einzugrenzen.
+1. Wählen Sie auf der gleichen Seite **Teilnahme** die Registerkarte **Kopfzahl-Trend** aus.
+2. Verwenden Sie die Filter **Standort**, **Gottesdienst**, **Gottesdienstzeit** und **Gruppe**, um den Bericht zu verfeinern.
 
-Der Bericht zeigt Ihre erfassten Besucherzahlen wochenweise summiert, sowohl als Liniendiagramm als auch als Tabelle -- im selben Berichtsstil wie die [Trend-Registerkarten für Anwesenheit und Gruppen](tracking-attendance.md).
+Der Bericht zeigt Ihre aufgezeichneten Kopfzahlen pro Woche zusammengefasst, sowohl als Liniendiagramm als auch als Tabelle – der gleiche Berichtstil, der von den [Trendregisterkarten für Teilnahme und Gruppen](tracking-attendance.md) verwendet wird.
 
 ## Verwandte Seiten
 
-- [Anwesenheitserfassung](recording-attendance.md) -- namentliche Sitzungsanwesenheit pro Person
-- [Anwesenheit nachverfolgen](tracking-attendance.md) -- Trendberichte zu Anwesenheit und Gruppen
-- [Anwesenheit einrichten](setup.md) -- Campus, Gottesdienste und Gottesdienstzeiten konfigurieren
+- [Teilnahme aufzeichnen](recording-attendance.md) – benannte Sitzungsteilnahme pro Person
+- [Teilnahme verfolgen](tracking-attendance.md) – Teilnahme- und Gruppen-Trendberichte
+- [Anwesenheitseinrichtung](setup.md) – konfigurieren Sie Standorte, Gottesdienste und Gottesdienstzeiten

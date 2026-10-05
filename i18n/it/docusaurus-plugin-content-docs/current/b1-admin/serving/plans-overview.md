@@ -6,87 +6,87 @@ title: "Panoramica dei Piani"
 
 <div class="article-intro">
 
-La Panoramica dei Piani offre una visione d'insieme di tutte le assegnazioni dei volontari su più date di servizio contemporaneamente. Invece di aprire ogni piano singolarmente, puoi vedere chi presta servizio in ogni posizione nelle settimane successive in un'unica griglia — e individuare rapidamente eventuali lacune ancora da coprire.
+La Panoramica dei Piani ti dà una visione complessiva di tutti i tuoi incarichi per i volontari su più date di servizio contemporaneamente. Invece di aprire ogni piano individualmente, puoi vedere chi sta servendo in ogni posizione su diverse settimane in una singola griglia -- e individuare rapidamente eventuali lacune che devono ancora essere colmate.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Crea almeno un Ministero e un Tipo di Piano nell'area Servizio
-- Crea [piani di servizio](./plans.md) con date e assegnazioni di volontari
-- Assicurati che i tuoi volontari siano stati aggiunti alla tua [directory delle persone](../people/adding-people.md)
+- Crea almeno un Ministero e Tipo di Piano nell'area Servizio
+- Crea [piani di servizio](./plans.md) con date e incarichi per i volontari
+- Assicurati che i tuoi volontari siano stati aggiunti alla tua [directory dei contatti](../people/adding-people.md)
 
 </div>
 
-## Accedere alla Panoramica
+## Accesso alla Panoramica
 
-1. Vai su **Servizio** dal menu principale in B1 Admin.
+1. In B1 Admin, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Servizio** e fai clic su **Piani**.
 2. Seleziona una **scheda ministero** nella parte superiore della pagina.
-3. Clicca su un **tipo di piano** per aprirne l'elenco dei piani.
-4. Clicca sul pulsante **Panoramica** vicino alla parte superiore della pagina.
+3. Fai clic su un **tipo di piano** per aprire il suo elenco di piani.
+4. Fai clic sul pulsante **Panoramica** vicino alla parte superiore della pagina.
 
-## Leggere la Griglia della Panoramica
+## Lettura della Griglia Panoramica
 
-La panoramica mostra una griglia in cui:
+La panoramica mostra una griglia dove:
 
-- Le **righe** rappresentano ogni posizione (ad esempio, "Musica: Chitarra", "Tecnica: Proiezione") raggruppate per categoria
-- Le **colonne** rappresentano le prossime date di servizio (ad esempio, "14 apr", "21 apr")
-- Le **celle** mostrano il nome del volontario assegnato a quella posizione in quella data
+- **Righe** rappresentano ogni posizione (ad esempio, "Musica: Chitarra", "Tecnologia: Proiezione") raggruppate per categoria
+- **Colonne** rappresentano le prossime date di servizio (ad esempio, "14 apr", "21 apr")
+- **Celle** mostrano il nome del volontario assegnato a quella posizione in quella data
 
-Le celle evidenziate in **rosso** non sono coperte — nessun volontario è ancora stato assegnato. Questo rende facile individuare a colpo d'occhio le lacune di personale senza dover aprire ogni piano singolarmente.
+Le celle evidenziate in **rosso** sono vuote -- nessun volontario è stato assegnato ancora. Questo rende facile vedere le lacune di personale a colpo d'occhio senza aprire ogni piano individualmente.
 
 :::tip
-I nomi dei volontari sono mostrati in un formato abbreviato (nome e iniziale del cognome, ad esempio "Mario R.") per mantenere la griglia compatta quando ci sono molte posizioni.
+I nomi dei volontari sono mostrati in un formato abbreviato (nome e iniziale cognome, ad esempio, "John D.") per mantenere la griglia compatta quando hai molte posizioni.
 :::
 
-## Assegnare Volontari Direttamente dalla Panoramica
+## Assegnazione di Volontari Direttamente dalla Panoramica
 
-Non è necessario aprire i singoli piani per coprire gli slot vuoti. Clicca su qualsiasi cella della griglia per aprire un pannello di assegnazione per quella posizione e data. Da lì puoi:
+Non devi aprire i piani individuali per riempire gli slot vuoti. Fai clic su qualsiasi cella nella griglia per aprire un pannello di incarico per quella posizione e data. Da lì puoi:
 
-- Selezionare una persona dal tuo team da assegnare alla posizione
-- Cliccare su **Rimuovi** accanto a chiunque sia già assegnato per toglierlo da quello slot
-- Salvare la modifica senza uscire dalla panoramica
+- Selezionare una persona dal tuo team per assegnare alla posizione
+- Fai clic su **Rimuovi** accanto a chiunque sia già assegnato per allontanarlo da quello slot
+- Salva la modifica senza lasciare la panoramica
 
-Questo rende possibile organizzare il personale per un intero calendario in un solo passaggio — lavorando su settimane e posizioni senza dover entrare e uscire dai singoli piani.
+Questo rende possibile staffare un intero programma in una sola volta -- lavora su settimane e posizioni senza navigare dentro e fuori dai piani individuali.
 
-## Assegnazione Automatica dalla Panoramica
+## Pianificazione Automatica dalla Panoramica
 
-Clicca su **Assegnazione Automatica** per far sì che B1 riempia tutti gli slot aperti e non coperti nella griglia corrente in una sola volta. Per ogni piano visualizzato, il sistema attinge candidati dal gruppo collegato a ciascuna posizione e riempie automaticamente gli slot vuoti, riportando quanti dei piani visibili è riuscito a coprire. I piani vengono riempiti uno alla volta in modo che lo stesso volontario non venga prenotato due volte in date diverse nello stesso passaggio.
+Fai clic su **Pianificazione Automatica** per far sì che B1 riempia ogni slot aperto e vuoto nella griglia corrente contemporaneamente. Per ogni piano in vista, estrae i candidati dal gruppo collegato a ogni posizione e riempie gli slot vuoti automaticamente, segnalando quanti dei piani visibili è stato in grado di riempire. I piani vengono riempiti uno alla volta in modo che lo stesso volontario non sia prenotato due volte su due date nello stesso passaggio.
 
 :::info
-L'Assegnazione Automatica riempie solo gli slot già vuoti — non sostituisce mai un'assegnazione esistente.
+La Pianificazione Automatica riempie solo gli slot che sono già vuoti -- non sostituisce mai un incarico esistente.
 :::
 
-## Inviare un'Email a Tutti gli Assegnati
+## Invio di Email a Tutti i Programmati
 
-Clicca su **Invia Email ai Volontari** per inviare una notifica a ogni volontario assegnato in qualsiasi punto dell'intervallo di date e del ministero attualmente filtrati, in un'unica azione, invece di inviare email piano per piano. B1 riporta quante email sono state inviate e quante non sono andate a buon fine.
+Fai clic su **Email Volontari** per inviare una notifica a ogni volontario assegnato da qualsiasi parte nell'intervallo di date e ministeri attualmente filtrati, in un'azione sola, piuttosto che inviare email piano per piano. B1 segnala quante email sono state inviate e quante non riuscite.
 
-## Evidenziare il Calendario di un Volontario
+## Evidenziazione del Programma di un Volontario
 
-Usa il menu a tendina **Evidenzia** per scegliere una persona dal tuo team — ogni cella in cui è assegnata viene messa in risalto nella griglia, così puoi vedere ovunque stia già prestando servizio prima di aggiungerla a un altro slot. Scegli **Tutti** per disattivare l'evidenziazione.
+Utilizza il menu a discesa **Evidenzia** per scegliere una persona dal tuo team -- ogni cella dove sono assegnati è evidenziata nella griglia, in modo da poter vedere ovunque stiano già servendo prima di aggiungerli a un altro slot. Scegli **Tutti** per disattivare l'evidenziazione.
 
-## Filtrare la Panoramica
+## Filtraggio della Panoramica
 
-Puoi regolare ciò che la panoramica mostra usando i controlli di filtro nella parte superiore:
+Puoi regolare ciò che la panoramica mostra utilizzando i controlli dei filtri nella parte superiore:
 
-- **Data Inizio / Data Fine** — Per impostazione predefinita, la panoramica mostra le 12 settimane future. Inserisci date personalizzate per ampliare o restringere l'intervallo.
-- **Ministero** — Passa a un ministero diverso senza uscire dalla panoramica.
-- **Tipo di Piano** — Filtra per un tipo di piano specifico all'interno del ministero selezionato.
-- **Solo non coperti** — Attiva questa opzione per nascondere le righe in cui ogni data è già coperta, così puoi concentrarti solo sulle posizioni che necessitano ancora di un volontario.
+- **Data Inizio / Data Fine** -- Per impostazione predefinita, la panoramica mostra 12 settimane nel futuro. Inserisci date personalizzate per espandere o restringere l'intervallo.
+- **Ministero** -- Passa a un ministero diverso senza lasciare la panoramica.
+- **Tipo di Piano** -- Filtra a un tipo di piano specifico all'interno del ministero selezionato.
+- **Solo non riempiti** -- Attivalo per nascondere le righe dove ogni data è già riempita, in modo da poterti concentrare solo sulle posizioni che hanno ancora bisogno di un volontario.
 
-Clicca su **Filtra** dopo aver apportato modifiche per aggiornare la griglia.
+Fai clic su **Filtra** dopo aver apportato modifiche per aggiornare la griglia.
 
 ## Esportazione in CSV
 
-Clicca su **Esporta CSV** per scaricare la griglia corrente come foglio di calcolo. L'esportazione include tutte le posizioni e le assegnazioni dei volontari per l'intervallo di date filtrato, rendendo facile condividerla con i responsabili di ministero o stamparla per le riunioni di pianificazione.
+Fai clic su **Esporta CSV** per scaricare la griglia corrente come foglio di calcolo. L'esportazione include tutte le posizioni e gli incarichi dei volontari per l'intervallo di date filtrato, rendendo facile condividere con i leader dei ministeri o stampare per le riunioni di pianificazione.
 
 :::info
-L'esportazione CSV riflette qualsiasi filtro attualmente applicato — nel download sono incluse solo le date e il tipo di piano mostrati nella griglia.
+L'esportazione CSV riflette tutti i filtri attualmente applicati -- solo le date e il tipo di piano mostrati nella griglia sono inclusi nel download.
 :::
 
 ## Articoli Correlati
 
-- [Piani di Servizio](./plans.md) — Crea e gestisci i singoli piani di servizio
-- [Ordine del Servizio](./service-order.md) — Costruisci l'ordine del servizio all'interno di un piano
-- [Pianificazione delle Lezioni](./scheduling-lessons.md) — Pianifica le lezioni insieme ai tuoi piani di servizio
+- [Piani di Servizio](./plans.md) -- Crea e gestisci i piani di servizio individuali
+- [Ordine di Servizio](./service-order.md) -- Costruisci l'ordine di servizio all'interno di un piano
+- [Pianificazione delle Lezioni](./scheduling-lessons.md) -- Pianifica le lezioni insieme ai tuoi piani di servizio

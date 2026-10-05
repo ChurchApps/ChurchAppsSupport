@@ -1,54 +1,54 @@
 ---
-title: B1 Admin Overview
+title: "B1 Admin Überblick"
 ---
 
-# B1 Admin Overview
+# B1 Admin Überblick
 
 <div class="article-intro">
 
-B1 Admin is your church management dashboard. It provides tools to manage every aspect of your church's operations -- from member directories and donations to website building and live streaming -- all from one place.
+B1 Admin ist Ihr Kirchen-Management-Dashboard. Es bietet Werkzeuge zur Verwaltung aller Aspekte der Abläufe Ihrer Kirche – von Verzeichnissen und Spenden bis zu Website-Erstellung und Live-Streaming – alles an einem Ort.
 
 </div>
 
-## Getting Started
+## Erste Schritte
 
-1. Open your browser and go to [admin.b1.church](https://admin.b1.church)
-2. Sign in with your username and password
-3. You'll land on the **Dashboard**, your home page. It shows this week's service order, who's checked in and serving in real time, any tasks that need your attention (like pending approvals or join requests), your groups, and your open tasks
-
-:::tip
-New to B1 Admin? Start with the [Introduction](./introduction) for a video walkthrough, then visit [Settings](./settings/) to configure your church information and invite your team.
-:::
-
-## Your Dashboard
-
-The Dashboard is your B1 Admin home page (`/`). It is built around your church's weekly service:
-
-- **This week's service** -- the current or upcoming plan's name and order of service, with a link into the full plan
-- **Live status** -- once people start checking in on Sunday, the page shows how many are in the room, who's serving this hour, first-time guests, and a room-by-room breakdown with capacity bars
-- **Needs Attention** -- pending approvals and group join requests that require action
-- **Your Groups** and **Open Tasks** -- the groups you belong to and tasks assigned to you or your groups
+1. Öffnen Sie Ihren Browser und gehen Sie zu [admin.b1.church](https://admin.b1.church)
+2. Melden Sie sich mit Ihrem Benutzernamen und Passwort an
+3. Sie landen auf dem **Dashboard**, Ihrer Startseite. Es zeigt die Bestellung des Gottesdienstes dieser Woche, wer gerade eingecheckt hat und Dienst versieht, alle Aufgaben, die Ihrer Aufmerksamkeit bedürfen (wie ausstehende Genehmigungen oder Beitrittsanfragen), Ihre Gruppen und Ihre offenen Aufgaben
 
 :::tip
-Sermons, Calendars, Mobile, and Settings are still one click away in the top navigation. For anything else, press **Ctrl+K** (or **Cmd+K**) to open the [command palette](./introduction#finding-anything-quickly-with-the-command-palette).
+Neu bei B1 Admin? Beginnen Sie mit der [Einführung](./introduction) für eine Video-Anleitung, besuchen Sie dann [Einstellungen](./settings/), um Ihre Kircheninformationen zu konfigurieren und Ihr Team einzuladen.
 :::
 
-## Key Features
+## Ihr Dashboard
 
-- **[People](./people/)** - Manage your church directory, add members, bulk edit data, track households
-- **[Groups](./groups/)** - Create and organize church groups with join requests, member management, and group email
-- **[Attendance](./attendance/)** - Set up campuses, service times, track named attendance with printable class roll sheets, and log simple headcounts with trend reports
-- **[Donations](./donations/)** - Record giving in multiple currencies, manage funds, print batches with fund subtotals, generate statements
-- **[Serving](./serving/)** - Coordinate volunteers, create service plans, manage tasks, and move people through step-by-step workflows
-- **[Forms](./forms/)** - Build custom forms for registrations and data collection
-- **[Reports](./reports/)** - View birthday, attendance, and donation reports
-- **[Website](./website/)** - Build and manage your church website with custom navigation styles, or turn off the public site and keep only the member portal
-- **[Sermons](./sermons/)** - Manage your sermon library, live streaming, and an automatic podcast feed
-- **[Calendars](./calendars/)** - Create curated calendars, manage room/resource bookings, and view availability
-- **[Settings](./settings/)** - Configure church info, region and date format, texting, roles, permissions, and custom person fields
+Das Dashboard ist Ihre B1 Admin-Startseite (`/`). Es ist um den wöchentlichen Gottesdienst Ihrer Kirche strukturiert:
+
+- **Der Gottesdienst dieser Woche** – der aktuelle oder kommende Plan und die Reihenfolge der Andacht, mit einem Link zum vollständigen Plan
+- **Live-Status** – sobald die Leute am Sonntag einchecken, zeigt die Seite, wie viele im Raum sind, wer diese Stunde Dienst versieht, Ersatbesucher und eine Aufschlüsselung nach Raum mit Kapazitätsbalken
+- **Benötigt Aufmerksamkeit** – ausstehende Genehmigungen und Gruppenbeitrittsanfragen, die Maßnahmen erfordern
+- **Ihre Gruppen** und **Offene Aufgaben** – die Gruppen, denen Sie angehören, und Aufgaben, die Ihnen oder Ihren Gruppen zugewiesen sind
+
+:::tip
+Jeder Bereich, einschließlich Predigten, Kalender, Mobil und Einstellungen, ist im [Jump-Menü](./introduction.md#getting-around-with-the-jump-menu) oben links in B1 Admin. Klicken Sie darauf oder drücken Sie **Strg+K** (oder **Cmd+K**), und durchsuchen Sie oder geben Sie an.
+:::
+
+## Hauptfunktionen
+
+- **[Personen](./people/)** - Verwalten Sie Ihr Kirchenverzeichnis, fügen Sie Mitglieder hinzu, bearbeiten Sie Daten in Massen, verfolgen Sie Haushalte
+- **[Gruppen](./groups/)** - Erstellen und organisieren Sie Kirchengruppen mit Beitrittsanfragen, Mitgliederverwaltung, Gruppen-E-Mail und personalisierten Gruppennachrichten
+- **[Besucherverfolgung](./attendance/)** - Richten Sie Standorte und Gottesdienstzeiten ein, verfolgen Sie namentliche Besucherzahlen mit druckbaren Klassenlisten, sehen Sie, welche Klassen noch Besucherzahlen eingeben müssen, und protokollieren Sie einfache Kopfzählungen mit Trendberichten
+- **[Spenden](./donations/)** - Erfassen Sie Spenden in mehreren Währungen, verwalten Sie Fonds, drucken Sie Chargen mit Funduntersummen, generieren Sie Auszüge
+- **[Dienst](./serving/)** - Koordinieren Sie Freiwillige, erstellen Sie Dienste-Pläne, verwalten Sie Aufgaben und führen Sie Personen durch schrittweise Workflows durch, die automatisch E-Mails und Nachrichten senden können
+- **[Formulare](./forms/)** - Erstellen Sie benutzerdefinierte Formulare für Anmeldungen und Datenerfassung
+- **[Berichte](./reports/)** - Sehen Sie Geburtstags-, Besucher- und Spendenberichte
+- **[Website](./website/)** - Erstellen und verwalten Sie Ihre Kirchenwebsite mit benutzerdefinierten Navigationsstilen, oder deaktivieren Sie die öffentliche Website und behalten Sie nur das Mitgliederportal
+- **[Predigten](./sermons/)** - Verwalten Sie Ihre Predigtbibliothek, Live-Streaming und einen automatischen Podcast-Feed
+- **[Kalender](./calendars/)** - Erstellen Sie verwahrte Kalender, verwalten Sie Raum-/Ressourcenbuchungen und sehen Sie die Verfügbarkeit
+- **[Einstellungen](./settings/)** - Konfigurieren Sie Kircheninformationen, Region und Datumsformat, Nachrichten, Rollen, Berechtigungen und benutzerdefinierte Personenfelder
 
 :::info
-Click the question mark icon in the top-right corner of any page for quick access to help and documentation.
+Klicken Sie auf das Fragezeichen-Symbol in der oberen rechten Ecke einer beliebigen Seite, um schnell auf Hilfe und Dokumentation zuzugreifen.
 :::
 
-For support, email [support@churchapps.org](mailto:support@churchapps.org).
+Für Unterstützung schreiben Sie an [support@churchapps.org](mailto:support@churchapps.org).

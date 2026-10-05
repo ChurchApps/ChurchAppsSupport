@@ -6,59 +6,59 @@ title: "Bulk Import"
 
 <div class="article-intro">
 
-Ang Bulk Import page ay nagbibigay-daan sa iyo na mabilis na mapuno ang iyong sermon library sa pamamagitan ng pag-import ng mga video mula YouTube o Vimeo. Ito ang pinakamabilis na paraan upang magdala ng iyong kasalukuyang sermon content sa halip na magdagdag ng bawat video nang isa-isa.
+Hinahayaan kayo ng pahinang Bulk Import na mabilis na mapunan ang inyong sermon library sa pamamagitan ng pag-import ng mga video mula sa YouTube o Vimeo. Ito ang pinakamabilis na paraan para madala ang inyong umiiral na nilalaman ng mga sermon sa halip na magdagdag ng bawat video nang isa-isa.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago ka magsimula</h4>
+<h4>Bago Magsimula</h4>
 
-- Kailangan mo ng **contentApi.streamingServices.edit** na pahintulot. Tingnan ang [Roles & Permissions](../settings/roles-permissions.md) kung wala kang access.
-- Lumikha ng hindi bababa sa isang [playlist](playlists) upang i-import ang iyong mga sermon
-- Magkaroon ng iyong YouTube Channel ID o Vimeo account information na handa
+- Kailangan ninyo ng pahintulot na **contentApi.streamingServices.edit**. Tingnan ang [Mga Role at Pahintulot](../settings/roles-permissions.md) kung wala kayong access.
+- Gumawa ng kahit isang [playlist](playlists) na paglalagyan ng inyong mga sermon
+- Ihanda ang inyong YouTube Channel ID o impormasyon ng Vimeo account
 
 </div>
 
-## Pagpipili ng iyong pinagkukunan
+## Pagpili ng Pinagmulan
 
-1. Sa B1 Admin, buksan ang **section menu** sa top-left corner (ang section name na may maliit na arrow) at piliin ang **Sermons**. I-click ang **Add Sermon** at piliin ang **Bulk Import** mula sa menu.
-2. Makikita mo ang dalawang clickable cards:
-   - **YouTube** (pula) -- I-import ang mga video mula sa isang YouTube channel
-   - **Vimeo** (asul) -- I-import ang mga video mula sa isang Vimeo account
-3. I-click ang card para sa platform kung saan naka-host ang iyong mga sermon.
+1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), palawakin ang **Sermons**, at i-click ang **Sermons**. I-click ang **Add Sermon** at piliin ang **Bulk Import** mula sa menu.
+2. Makikita ninyo ang dalawang card na maaaring i-click:
+   - **YouTube** (pula) -- Mag-import ng mga video mula sa isang YouTube channel
+   - **Vimeo** (asul) -- Mag-import ng mga video mula sa isang Vimeo account
+3. I-click ang card ng platform kung saan naka-host ang inyong mga sermon.
 
 :::tip
-Maaari kang bumalik at magpalit ng mga pinagkukunan anumang oras kung mayroon kang mga video sa dalawang platform.
+Maaari kayong bumalik at magpalit ng pinagmulan anumang oras kung may mga video kayo sa parehong platform.
 :::
 
-## Bago ka mag-import
+## Bago Mag-import
 
-Bago mag-import ng mga video, kailangan mo ng hindi bababa sa isang playlist upang ayusin ang mga ito. Kung hindi ka pa nakagawa ng anumang playlists:
+Bago mag-import ng mga video, kailangan ninyo ng kahit isang playlist na pag-oorganisahan sa mga ito. Kung wala pa kayong nagagawang playlist:
 
-1. I-click ang **Playlists** tab.
-2. I-click ang **Create First Playlist** at punan ang pangalan, paglalarawan, petsa ng paglalathala, at thumbnail.
-3. I-click ang **Save**, pagkatapos ay bumalik sa **Bulk Import** tab.
+1. Bumalik sa pahinang **Sermons** at hanapin ang panel na **Playlists**.
+2. I-click ang **Create First Playlist** at punan ang pangalan, paglalarawan, petsa ng pag-publish, at thumbnail.
+3. I-click ang **Save**, pagkatapos ay bumalik sa Bulk Import sa pamamagitan ng pag-click sa **Add Sermon** at pagpili ng **Bulk Import**.
 
-Tingnan ang [Playlists](playlists) para sa detalyadong mga tagubilin sa paglikha at pag-manage ng mga playlist.
+Tingnan ang [Mga Playlist](playlists) para sa detalyadong tagubilin sa paggawa at pamamahala ng mga playlist.
 
-## Pag-import ng mga video
+## Pag-import ng mga Video
 
-1. Pagkatapos pumili ng YouTube o Vimeo, ipasok ang iyong **YouTube Channel ID** o **Vimeo account information** sa ibinigay na field.
-2. I-click ang **Fetch** button upang kunin ang lahat ng available na video mula sa iyong channel o account.
-3. Pagkatapos ng pag-fetch, makikita mo ang isang listahan ng lahat ng iyong mga video na may checkboxes.
-4. Tingnan ang mga checkbox sa tabi ng mga video na nais mong i-import. Maaari kang pumili ng lahat o pumili ng mga partikular.
-5. Bilang opsyon, i-enable ang **Auto Import New Videos** upang awtomatikong magdagdag ng mga kinabukasang uploads sa iyong library.
-6. I-click ang **Import Into Playlist** dropdown upang pumili kung aling playlist ang dapat idagdagan ng mga video na ito.
-7. I-click ang **Import** button upang tapusin ang bulk import.
+1. Matapos piliin ang YouTube o Vimeo, ilagay ang inyong **YouTube Channel ID** o **impormasyon ng Vimeo account** sa ibinigay na field.
+2. I-click ang button na **Fetch** para kunin ang lahat ng available na video mula sa inyong channel o account.
+3. Pagkatapos ng pagkuha, makikita ninyo ang listahan ng lahat ng inyong video na may mga checkbox.
+4. Lagyan ng check ang mga video na gusto ninyong i-import. Maaari ninyong piliin ang lahat o ang mga partikular lang.
+5. Opsyonal, i-enable ang **Auto Import New Videos** para awtomatikong maidagdag sa inyong library ang mga susunod na upload.
+6. I-click ang dropdown na **Import Into Playlist** para piliin kung saang playlist idadagdag ang mga video na ito.
+7. I-click ang button na **Import** para tapusin ang bulk import.
 
-Ang iyong mga video ay ie-import na may lahat ng kanilang detalye, kasama ang mga pamagat, paglalarawan, petsa, at mga thumbnail.
+Mai-import ang inyong mga video kasama ang lahat ng detalye nito, kabilang ang mga pamagat, paglalarawan, petsa, at thumbnail.
 
 :::info
-Ang bulk import ay ideal para sa pagkakasimula kapag nag-migrate mula sa ibang platform. Para sa pagdaragdag ng mga indibidwal na sermon papunta, gumamit ng [Managing Sermons](managing-sermons) page sa halip.
+Mainam ang bulk import para sa pagsisimula kapag lumilipat kayo mula sa ibang platform. Para sa pagdaragdag ng mga indibidwal na sermon sa hinaharap, gamitin na lang ang pahinang [Pamamahala ng mga Sermon](managing-sermons).
 :::
 
-## Susunod na mga hakbang
+## Mga Susunod na Hakbang
 
-- [Managing Sermons](managing-sermons) -- I-edit ang mga detalye ng na-import na sermon
-- [Playlists](playlists) -- Lumikha at pamahalaan ang mga sermon series
-- [Live Streaming](live-streaming) -- I-setup ang live streaming para sa iyong mga serbisyo
+- [Pamamahala ng mga Sermon](managing-sermons) -- I-edit ang mga detalye ng mga na-import na sermon
+- [Mga Playlist](playlists) -- Gumawa at mamahala ng mga serye ng sermon
+- [Live Streaming](live-streaming) -- I-set up ang live streaming para sa inyong mga serbisyo

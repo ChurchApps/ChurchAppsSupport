@@ -1,86 +1,100 @@
 ---
-title: "Verbindung zu Anbietern herstellen"
+title: "Mit Providern verbinden"
 ---
 
-# Verbindung zu Anbietern herstellen
+# Mit Providern verbinden
 
 <div class="article-intro">
 
-Bevor Sie Inhalte eines Anbieters durchsuchen können, müssen Sie sich mit ihm verbinden. Manche Anbieter erfordern eine Authentifizierung per QR-Code oder E-Mail-Anmeldung, während andere mit einem einzigen Klick verbunden werden können.
+Bevor Sie Inhalte von einem Provider durchsuchen können, müssen Sie sich damit verbinden. Einige Provider erfordern Authentifizierung über einen QR-Code oder E-Mail-Login, während andere mit einem einfachen Klick verbunden werden können.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Installieren und starten Sie FreePlay -- siehe [Erste Schritte](../getting-started/)
-- Halten Sie Ihre TV-Fernbedienung zur Navigation bereit
-- Halten Sie bei Anbietern, die eine Anmeldung erfordern, Ihre Zugangsdaten bereit
+- Installieren und starten Sie FreePlay – siehe [Erste Schritte](../getting-started/)
+- Haben Sie Ihre Fernbedienung bereit zum Navigieren
+- Für Provider, die Login benötigen, haben Sie Ihre Account-Anmeldedaten verfügbar
 
 </div>
 
-:::tip B1 Admin + FreePlay gemeinsam einrichten?
-Unsere **<a href="/guides/freeplay-b1admin" target="_blank">Schritt-für-Schritt-Anleitung</a>** führt Sie durch die Verknüpfung von B1 Admin, die Planung einer Lektion und die Verbindung von FreePlay -- alles an einem Ort. Öffnen Sie sie in einem neuen Tab, um mitzumachen.
+:::tip Richten Sie B1 Admin + FreePlay zusammen ein?
+Unserer **<a href="/guides/freeplay-b1admin" target="_blank">Schritt-für-Schritt-Anleitung</a>** führt Sie durch das Verlinken von B1 Admin, das Planen einer Lektion und das Verbinden von FreePlay – alles an einem Ort. Öffnen Sie sie in einem neuen Tab, um ihr zu folgen.
 :::
 
-## Verfügbare Anbieter durchsuchen
+## Verfügbare Provider durchsuchen
 
-1. Öffnen Sie den Bildschirm **Content-Anbieter** über die Seitenleiste (wählen Sie unten das Symbol **Anbieter**)
-2. Sie sehen ein Raster mit Anbieterkarten, jede mit dem Logo und Namen des Anbieters
-3. Verbundene Anbieter zeigen unter ihrem Namen ein grünes Abzeichen **Verbunden** an
-4. Anbieter, die noch nicht verfügbar sind, zeigen die Bezeichnung **Demnächst verfügbar**
+1. Öffnen Sie **Einstellungen** am unteren Rand der Seitenleiste, wählen Sie dann **Provider**, um den **Content-Provider**-Bildschirm zu öffnen
+2. Sie sehen ein Gitter von Provider-Karten, von denen jede das Logo und den Namen des Providers zeigt
+3. Verbundene Provider zeigen ein grünes **Verbunden**-Badge unter ihrem Namen an
+4. Provider, die noch nicht verfügbar sind, zeigen ein **Demnächst verfügbar**-Label
 
 ## Verbindung ohne Authentifizierung
 
-Manche Anbieter erfordern keine Anmeldung. Wenn Sie einen dieser Anbieter auswählen, verbindet sich FreePlay sofort und öffnet den Content-Browser. Es werden keine Zugangsdaten benötigt.
+Einige Provider benötigen keine Anmeldung. Wenn Sie einen dieser Provider auswählen, verbindet sich FreePlay sofort und öffnet den Content-Browser. Keine Anmeldedaten sind erforderlich.
 
-## Geräte-Flow-Authentifizierung (QR-Code)
+## Gerätestrom-Authentifizierung (QR-Code)
 
-Bestimmte Anbieter verwenden einen Geräte-Flow, ähnlich wie bei der Anmeldung bei Streaming-Apps auf einem Fernseher:
+Bestimmte Provider verwenden einen Gerätestrom, ähnlich wie Sie sich bei Streaming-Apps auf einem Fernseher anmelden:
 
-1. Wählen Sie die Anbieterkarte auf dem Bildschirm **Content-Anbieter** aus
+1. Wählen Sie die Provider-Karte auf dem **Content-Provider**-Bildschirm aus
 2. FreePlay zeigt einen QR-Code und eine Verifizierungs-URL an
-3. Scannen Sie den QR-Code mit Ihrem Telefon oder rufen Sie die angezeigte URL auf einem beliebigen Gerät auf
-4. Geben Sie den auf dem Fernsehbildschirm angezeigten Benutzercode ein
-5. Schließen Sie den Anmeldevorgang auf Ihrem Telefon oder Computer ab
-6. FreePlay erkennt die erfolgreiche Anmeldung und zeigt **Verbunden!** an
-7. Der Content-Browser öffnet sich automatisch
+3. Scannen Sie den QR-Code mit Ihrem Telefon, oder besuchen Sie die angezeigten URL auf einem beliebigen Gerät
+4. Geben Sie den auf dem Fernseh-Bildschirm angezeigten Benutzer-Code ein
+5. Schließen Sie den Anmeldeprozess auf Ihrem Telefon oder Computer ab
+6. FreePlay erkennt die erfolgreiche Anmeldung und zeigt **Verbunden!**
+7. Der Content-Browser öffnet automatisch
 
 :::info
-Eine pulsierende Anzeige **Warte auf Autorisierung** zeigt an, dass FreePlay auf Ihre Anmeldung prüft. Der Code läuft nach einigen Minuten ab, schließen Sie den Vorgang daher zügig ab.
+Ein pulsierendes **Auf Genehmigung warten**-Indikator zeigt, dass FreePlay Ihre Anmeldung überprüft. Der Code läuft nach mehreren Minuten ab, daher schließen Sie den Prozess pünktlich ab.
 :::
 
-**Go Curriculum** verwendet dasselbe QR-Code-Anmeldemuster -- scannen Sie den Code und melden Sie sich mit Ihrem gocurriculum.com-Konto an, um die Verbindung herzustellen.
+**Go Curriculum** verwendet das gleiche QR-Code-Anmelde-Muster – scannen Sie den Code und melden Sie sich mit Ihrem gocurriculum.com-Account an, um sich zu verbinden.
 
-## Formular-Anmeldung
+## Formular-Login
 
-Andere Anbieter verwenden eine klassische Anmeldung mit E-Mail und Passwort:
+Andere Provider verwenden einen traditionellen E-Mail- und Passwort-Login:
 
-1. Wählen Sie die Anbieterkarte aus
-2. Geben Sie Ihre **E-Mail** und Ihr **Passwort** über die Bildschirmtastatur ein
-3. Wählen Sie die Schaltfläche **Anmelden**
-4. Wenn Ihre Zugangsdaten korrekt sind, zeigt FreePlay **Verbunden!** an und öffnet den Content-Browser
+1. Wählen Sie die Provider-Karte aus
+2. Geben Sie Ihre **E-Mail** und **Passwort** über die On-Screen-Tastatur ein
+3. Wählen Sie die **Anmelden**-Schaltfläche
+4. Falls Ihre Anmeldedaten korrekt sind, zeigt FreePlay **Verbunden!** an und öffnet den Content-Browser
 
 :::tip
-Verwenden Sie das Steuerkreuz Ihrer Fernbedienung, um zwischen dem E-Mail-Feld, dem Passwort-Feld und der Anmelden-Schaltfläche zu wechseln. Drücken Sie **Auswählen** auf einem Textfeld, um die Bildschirmtastatur zu öffnen.
+Verwenden Sie das Richtungsfeld auf Ihrer Fernbedienung, um zwischen E-Mail-Feld, Passwort-Feld und Anmelden-Schaltfläche zu wechseln. Drücken Sie **Auswählen** auf einem Textfeld, um die On-Screen-Tastatur zu öffnen.
 :::
 
-## Verbindung zu einem Anbieter trennen
+## Finden eines Providers in Ihrem Netzwerk
 
-Um die Verbindung zu einem bereits verbundenen Anbieter zu trennen:
+**FreeShow** wird über ein On-Screen-Netzwerk statt über Anmeldung gefunden: FreePlay durchsucht das Netzwerk, listet jeden Computer auf, auf dem FreeShow läuft, den es findet, und verbindet sich mit dem, den Sie auswählen (wählen Sie **Erneut scannen**, falls keiner erscheint).
 
-1. Gehen Sie zum Bildschirm **Content-Anbieter**
-2. Wählen Sie die Anbieterkarte aus, die das Abzeichen **Verbunden** anzeigt
-3. Eine Bestätigungsabfrage fragt, ob Sie die Verbindung trennen möchten
-4. Wählen Sie **Trennen**, um die Verbindung zu entfernen
+## Provider-Einstellungen
 
-Nach dem Trennen erscheinen die Inhalte des Anbieters nicht mehr in Ihrer Seitenleiste.
+Das Auswählen einer Provider-Karte, die das **Verbunden**-Badge zeigt, öffnet seinen **Provider-Einstellungen**-Bildschirm:
+
+- **Bibliothek durchsuchen** – diesen Provider's Content-Bibliothek in der Seitenleiste anzeigen oder verbergen
+- **Auto-Download-Lektion von heute** – verwenden Sie diesen Provider als Quelle der heutigen Lektion und laden Sie dessen Dateien vorab (nur für Provider angezeigt, die eine aktuelle Lektion anbieten)
+- **Für Ankündigungen verwenden** – wählen Sie einen Ordner von diesem Provider, um aus dem Element **Ankündigungen** in der Seitenleiste zu schleifen. Siehe [Ankündigungen](./announcements)
+- **Auf Ankündigungs-Updates überprüfen** – gezeigt, sobald ein Ankündigungsordner ausgewählt wurde; lädt neue Folien herunter und entfernt gelöschte
+- **Trennen** – entfernen Sie die Verbindung
+
+## Einen Provider trennen
+
+Um sich von einem Provider zu trennen, mit dem Sie bereits verbunden sind:
+
+1. Gehen Sie zum **Content-Provider**-Bildschirm (**Einstellungen** > **Provider**)
+2. Wählen Sie die Provider-Karte aus, die das **Verbunden**-Badge zeigt
+3. Wählen Sie auf dem **Provider-Einstellungen**-Bildschirm **Trennen** aus
+
+Nach dem Trennen wird der Content des Providers nicht mehr in Ihrer Seitenleiste angezeigt. Wenn Sie einen seiner Ordner für Ankündigungen verwendet haben, werden diese Folien auch entfernt.
 
 :::warning
-Das Trennen entfernt die gespeicherte Authentifizierung von Ihrem Gerät. Sie müssen sich erneut anmelden, wenn Sie später wieder eine Verbindung herstellen möchten.
+Das Trennen entfernt die gespeicherte Authentifizierung von Ihrem Gerät. Sie müssen sich erneut anmelden, wenn Sie sich später erneut verbinden möchten.
 :::
 
 ## Verwandte Artikel
 
-- **[Inhalte durchsuchen und herunterladen](./browsing-content)** - Ordner navigieren und Inhalte nach der Verbindung wiedergeben
-- **[Übersicht der Content-Anbieter](./index.md)** - Alle verfügbaren Anbieter ansehen
+- **[Inhalte durchsuchen und herunterladen](./browsing-content)** – Ordner navigieren und Inhalte nach der Verbindung abspielen
+- **[Ankündigungen](./announcements)** – einen Ordner von Folien von einem verbundenen Provider schleifen
+- **[Content-Provider Überblick](./index.md)** – sehen Sie alle verfügbaren Provider

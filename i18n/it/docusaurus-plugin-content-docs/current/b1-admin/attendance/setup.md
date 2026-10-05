@@ -1,66 +1,66 @@
 ---
-title: "Configurazione della Frequenza"
+title: "Configurazione delle presenze"
 ---
 
-# Frequenza Configurazione
+# Configurazione delle presenze
 
 <div class="article-intro">
 
-Before you can track Frequenza, you need Per tell B1 Admin about your church's physical locations, when Servizi happen, and which Gruppi meet at each Servizio. This one-Ora Configurazione creates the structure that powers all Frequenza tracking and reporting across your church.
+Prima di poter tracciare le presenze, dovete dire a B1 Admin le ubicazioni fisiche della vostra chiesa, quando avvengono i servizi, e quali gruppi si incontrano a ogni servizio. Questa configurazione una tantum crea la struttura che alimenta tutto il tracciamento e la segnalazione delle presenze in tutta la vostra chiesa.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- You need an Attivo B1 Admin Account with Permesso Per manage Frequenza. See [Roles & Permissions](../people/roles-permissions.md) if you're unsure about your access level.
-- If you plan Per assign Gruppi Per Servizio times, make sure your [groups are created](../groups/creating-groups.md) first.
+- Avete bisogno di un account B1 Admin attivo con il permesso di gestire le presenze. Vedere [Ruoli e permessi](../people/roles-permissions.md) se siete incerti sul vostro livello di accesso.
+- Se intendete assegnare gruppi agli orari dei servizi, assicuratevi che i vostri [gruppi siano creati](../groups/creating-groups.md) prima.
 
 </div>
 
-## Concetti Chiave
+## Concetti chiave
 
-- **Campus** -- a physical location where your church meets (e.g., "Main Campus," "North Campus"). Campuses are managed under **Impostazioni**.
-- **Servizio** -- a recurring gathering at a campus (e.g., "Sunday Servizio," "Midweek").
-- **Servizio Ora** -- a specific Ora a Servizio happens (e.g., "9:00 AM," "11:00 AM").
-- **Scheduled Gruppo** -- a Gruppo assigned Per a specific Servizio Ora. Frequenza is tracked in the context of that Servizio.
-- **Unscheduled Gruppo** -- a Gruppo that tracks Frequenza on its own, without being tied Per a Servizio Ora.
+- **Campus** -- un'ubicazione fisica dove la vostra chiesa si incontra (ad es., "Campus principale", "Campus nord"). I campus vengono gestiti in **Impostazioni**.
+- **Servizio** -- una riunione ricorrente presso un campus (ad es., "Servizio domenicale", "Infrasettimanale").
+- **Orario del servizio** -- un'ora specifica in cui avviene un servizio (ad es., "9:00 AM", "11:00 AM").
+- **Gruppo programmato** -- un gruppo assegnato a un orario di servizio specifico. Le presenze vengono tracciato nel contesto di quel servizio.
+- **Gruppo non programmato** -- un gruppo che traccia le presenze su suo conto, senza essere legato a un orario di servizio.
 
-## Setting Up Your Frequenza Structure
+## Configurazione della struttura delle presenze
 
-1. Apri **B1 Admin**, Fai clic the **menu della sezione** in the angolo in alto a sinistra (the section name with the small arrow), and Scegli **People**.
-2. In the navigation bar, Fai clic the **Frequenza** tab. The **Configurazione** tab is selected by default.
-3. Fai clic **Manage Campuses** (top right of the Configurazione panel). This takes you Per **Impostazioni → Campuses**. Fai clic **Aggiungi Campus**, Inserisci the name of your location (address and Ora zone are Facoltativo), and Fai clic **Salva**.
-4. Return Per **People → Frequenza → Configurazione**. Your campus now appears in the Configurazione table.
-5. Fai clic the **+ button in the Servizio column** under your campus. Inserisci a Servizio name such as "Sunday Servizio" and Fai clic **Salva**.
-6. Fai clic the **+ button in the Ora column** under the Servizio. Inserisci a Ora such as "9:00 AM" and Fai clic **Salva**. Repeat for each Servizio Ora.
-7. Per connect a Gruppo Per a Servizio Ora, Apri the Gruppo from the **Gruppi** tab, Fai clic the **Modifica** pencil, and use **Aggiungi Servizio Ora** — see the Avanti section.
+1. Aprite **B1 Admin**, aprite il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), ed espandete **Persone**.
+2. Fate clic su **Presenze**. La scheda **Configurazione** è selezionata per impostazione predefinita.
+3. Fate clic su **Gestisci campus** (in alto a destra del pannello Configurazione). Questo vi porta a **Impostazioni → Campus**. Fate clic su **Aggiungi campus**, inserite il nome della vostra ubicazione (l'indirizzo e il fuso orario sono opzionali), e fate clic su **Salva**.
+4. Tornate a **Persone → Presenze → Configurazione**. Il vostro campus appare ora nella tabella di configurazione.
+5. Fate clic sul **pulsante + nella colonna Servizio** sotto il vostro campus. Inserite un nome di servizio come "Servizio domenicale" e fate clic su **Salva**.
+6. Fate clic sul **pulsante + nella colonna Ora** sotto il servizio. Inserite un'ora come "9:00 AM" e fate clic su **Salva**. Ripetete per ogni orario di servizio.
+7. Per collegare un gruppo a un orario di servizio, aprite il gruppo da **Persone > Gruppi**, fate clic sulla matita **Modifica**, e utilizzate **Aggiungi orario del servizio** -- vedere la sezione successiva.
 
-### Enabling Track Frequenza on a Gruppo
+### Abilitazione del tracciamento delle presenze su un gruppo
 
-Before a Gruppo can have Frequenza recorded, Track Frequenza must be turned on for that Gruppo.
+Prima che un gruppo possa avere le presenze registrate, il tracciamento delle presenze deve essere attivato per quel gruppo.
 
-1. Apri the **menu della sezione** in the angolo in alto a sinistra and Scegli **People**, then Fai clic the **Gruppi** tab and Seleziona the Gruppo.
-2. Fai clic the **Modifica** icona della matita.
-3. Set **Track Frequenza** Per **Sì**.
-4. Fai clic **Salva**.
+1. Nel menu Jump, scegliete **Persone > Gruppi** e selezionate il gruppo.
+2. Fate clic sull'icona della matita **Modifica**.
+3. Impostate **Monitoraggio delle presenze** su **Sì**.
+4. Fate clic su **Salva**.
 
 :::tip
-If you assigned the Gruppo Per a Servizio Ora in the previous step, also use the **Aggiungi Servizio Ora** option on the Gruppo's Modifica screen Per link it Per the correct Servizio. This ensures Sessioni are connected Per the right campus and Ora.
+Se avete assegnato il gruppo a un orario di servizio nel passaggio precedente, utilizzate anche l'opzione **Aggiungi orario del servizio** sulla schermata di modifica del gruppo per collegarlo al servizio corretto. Questo assicura che le sessioni siano collegate al campus e all'ora corretti.
 :::
 
 :::tip
-If a Gruppo meets outside of a regular Servizio -- like a midweek small Gruppo that tracks its own Frequenza -- you can leave it as an unscheduled Gruppo. It will still appear on the Gruppi tab for Frequenza reporting.
+Se un gruppo si incontra al di fuori di un servizio regolare -- come un piccolo gruppo infrasettimanale che traccia le proprie presenze -- potete lasciarlo come gruppo non programmato. Apparirà comunque nella scheda Gruppi per la segnalazione delle presenze.
 :::
 
-## Editing Your Configurazione
+## Modifica della vostra configurazione
 
-You can update your Configurazione at any Ora. Seleziona a campus, Servizio Ora, or Gruppo and Fai clic **Modifica** Per change its details, or **Elimina** Per Rimuovi it.
+Potete aggiornare la vostra configurazione in qualsiasi momento. Selezionate un campus, un orario di servizio, o un gruppo e fate clic su **Modifica** per cambiare i dettagli, o **Elimina** per rimuoverlo.
 
 :::info
-Removing a Servizio Ora does not Elimina past Frequenza records. Your historical data is preserved even if you change your schedule.
+La rimozione di un orario di servizio non elimina i record di presenze passati. I vostri dati storici vengono preservati anche se cambiate la vostra pianificazione.
 :::
 
-## Prossimo Passo
+## Cosa fare dopo
 
-Once your campuses, Servizio times, and Gruppi are in place, you are ready Per start [recording attendance](recording-attendance.md) manually or set up [self check-in](check-in.md) for your Servizi.
+Una volta che i vostri campus, orari dei servizi, e gruppi sono al loro posto, siete pronti a iniziare [registrazione delle presenze](recording-attendance.md) manualmente o configurare [auto check-in](check-in.md) per i vostri servizi.

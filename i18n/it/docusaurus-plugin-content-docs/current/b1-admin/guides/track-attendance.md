@@ -1,97 +1,98 @@
 ---
-title: "Guida: Tracciare le presenze in chiesa"
+title: "Guida: Tracciare la Frequenza della Chiesa"
 ---
 
-# Tracciare le presenze in chiesa
+# Tracciare la Frequenza della Chiesa
 
 <div class="article-intro">
 
-Configura il tracciamento delle presenze per i tuoi servizi e gruppi — dalla configurazione dei campus e degli orari dei servizi, alla registrazione delle presenze manualmente o tramite l'app di check-in self-service, alla visualizzazione delle tendenze nei report. Alla fine, avrai un quadro completo di chi partecipa e quando.
+Configura il tracciamento della frequenza per i tuoi servizi e gruppi — dalla configurazione dei campus e degli orari dei servizi, alla registrazione della frequenza manualmente o tramite l'app di check-in self-service, alla visualizzazione delle tendenze nei report. Alla fine, avrai un quadro completo di chi sta frequentando e quando.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di iniziare</h4>
+<h4>Prima di Iniziare</h4>
 
-- Account B1 Admin con accesso amministratore
+- Account B1 Admin con accesso amministrativo
 - [Persone aggiunte alla tua directory](../people/adding-people.md)
 - [Gruppi creati](../groups/creating-groups.md) per i ministeri che vuoi tracciare
 
 </div>
 
-## Passo 1: Configurare campus e servizi
+## Passo 1: Configura Campus e Servizi
 
 Definisci dove e quando la tua chiesa si riunisce.
 
-Segui la guida [Configurazione presenze](../attendance/setup.md) per:
+Segui la guida [Configurazione della Frequenza](../attendance/setup.md) per:
 
-1. Aggiungere il tuo campus (es. "Campus principale")
-2. Aggiungere gli orari dei servizi (es. "Domenica 9:00", "Domenica 11:00", "Mercoledì 19:00")
-3. Assegnare gruppi a ogni orario di servizio per definire quali classi/ministeri si riuniscono durante quel servizio
+1. Aggiungi il tuo campus (ad es. "Campus Principale")
+2. Aggiungi gli orari dei servizi (ad es. "Domenica 9:00", "Domenica 11:00", "Mercoledì 19:00")
+3. Assegna i gruppi a ogni orario di servizio per definire quali classi/ministeri si incontrano durante quel servizio
 
-## Passo 2: Abilitare il tracciamento presenze dei gruppi
+## Passo 2: Abilita il Tracciamento della Frequenza dei Gruppi
 
-Attiva il tracciamento delle presenze per i gruppi che vuoi monitorare.
+Attiva il tracciamento della frequenza per i gruppi che desideri monitorare.
 
-Segui la guida [Creare gruppi](../groups/creating-groups.md) per:
+Segui la guida [Creazione di Gruppi](../groups/creating-groups.md) per:
 
-1. Modificare ogni gruppo che vuoi tracciare e attivare "Track Attendance"
-2. Associare i gruppi agli orari dei servizi così le presenze vengono registrate rispetto al servizio corretto
+1. Modifica ogni gruppo che desideri tracciare e attiva "Traccia Frequenza"
+2. Associa i gruppi agli orari dei servizi in modo che la frequenza sia registrata rispetto al servizio giusto
 
 :::info
-Non tutti i gruppi hanno bisogno del tracciamento presenze. Abilitalo per i gruppi dove vuoi monitorare la partecipazione — classi per bambini, piccoli gruppi, scuola domenicale, ecc.
+Non tutti i gruppi hanno bisogno del tracciamento della frequenza. Abilitalo per i gruppi in cui desideri monitorare la partecipazione — classi per bambini, piccoli gruppi, scuola domenicale, ecc.
 :::
 
-## Passo 3: Registrare le presenze manualmente
+## Passo 3: Registra la Frequenza Manualmente
 
-Segna chi ha partecipato a ogni servizio e gruppo.
+Contrassegna chi ha frequentato ogni servizio e gruppo.
 
-Segui la guida [Tracciamento presenze](../attendance/tracking-attendance.md) per:
+Segui la guida [Registrazione della Frequenza](../attendance/recording-attendance.md) per:
 
-1. Navigare su Attendance, selezionare la data e il servizio
-2. Spuntare chi ha partecipato a ogni gruppo
+1. Apri la scheda **Sessioni** di un gruppo e aggiungi una sessione per la data e l'orario del servizio. Seleziona **Aggiungi anche per gli altri gruppi** per creare sessioni per ogni classe a quel orario di servizio contemporaneamente.
+2. Contrassegna chi ha frequentato ogni gruppo
 
 :::tip
-Il tracciamento manuale funziona bene per i servizi degli adulti, i piccoli gruppi e qualsiasi situazione in cui un chiosco di check-in non è pratico.
+Il tracciamento manuale funziona bene per i servizi per adulti, piccoli gruppi e qualsiasi situazione in cui un chiosco di check-in non è pratico.
 :::
 
-## Passo 4: Configurare il self check-in (opzionale)
+## Passo 4: Configura Self Check-In (Facoltativo)
 
-Permetti ai membri di fare il check-in usando un chiosco tablet.
+Consenti ai membri di eseguire il check-in da soli utilizzando un chiosco tablet.
 
-Segui la guida [Check-in](../attendance/check-in.md) per:
+Segui la guida [Check-In](../attendance/check-in.md) per:
 
-1. Installare l'app B1 Checkin su un tablet per il check-in self-service
-2. I membri cercano il proprio nome e fanno il check-in per sé stessi e la propria famiglia
-3. I registri di check-in appaiono insieme ai registri inseriti manualmente — nessuna differenza nei dati
+1. Installa l'app B1 Checkin su un tablet per il check-in self-service
+2. I membri cercano il loro nome e eseguono il check-in per se stessi e per la loro famiglia
+3. I record di frequenza del check-in appaiono insieme ai record inseriti manualmente — nessuna differenza nei dati
 
 :::info
-Per una configurazione completa del ministero per bambini inclusa la configurazione di hardware e stampante, vedi la [Guida al check-in per bambini](./childrens-checkin.md).
+Per una configurazione completa del ministero per bambini inclusa la configurazione hardware e stampante, consulta la [Guida ai Check-In per Bambini](./childrens-checkin.md).
 :::
 
-## Passo 5: Visualizzare i report presenze
+## Passo 5: Visualizza i Report di Frequenza
 
-Vedi il quadro generale della partecipazione nella tua chiesa.
+Vedi il quadro generale della partecipazione in tutta la tua chiesa.
 
-Segui la guida [Report presenze](../reports/attendance-reports.md). Sono disponibili tre viste di report:
+Segui la guida [Report di Frequenza](../reports/attendance-reports.md). Sono disponibili tre visualizzazioni di report:
 
-1. **Tendenza presenze** — visualizza le presenze nel tempo per individuare crescita o calo
-2. **Presenze per gruppo** — confronta i totali tra i gruppi
-3. **Presenze giornaliere per gruppo** — dettaglio giorno per giorno per un'analisi approfondita
+1. **Trend di Frequenza** — visualizza la frequenza nel tempo per individuare la crescita o il declino
+2. **Frequenza del Gruppo** — visualizza chi ha frequentato ogni sessione di gruppo in un intervallo di date, con download CSV
+3. **Frequenza Giornaliera del Gruppo** — analisi giorno per giorno per un'analisi dettagliata
 
 :::info
-I report combinano sia le presenze registrate manualmente che quelle del self-check-in. Non c'è differenza nel modo in cui i dati appaiono — entrambi i metodi alimentano gli stessi report.
+I report combinano sia la frequenza registrata manualmente che quella del check-in self-service. Non c'è alcuna differenza nel modo in cui i dati appaiono — entrambi i metodi confluiscono negli stessi report.
 :::
 
-## Hai finito!
+## Fatto!
 
-Il tuo tracciamento presenze è configurato. Che tu registri le presenze manualmente, usi l'app di check-in, o entrambi — tutti i dati confluiscono negli stessi report così hai un quadro chiaro della partecipazione nella tua chiesa.
+Il tracciamento della tua frequenza è configurato. Che tu registri la frequenza manualmente, usi l'app di check-in o entrambi — tutti i dati confluiscono negli stessi report in modo da avere un quadro chiaro della partecipazione in tutta la tua chiesa.
 
-## Articoli correlati
+## Articoli Correlati
 
-- [Configurazione presenze](../attendance/setup.md) — configura campus e servizi
-- [Tracciamento presenze](../attendance/tracking-attendance.md) — registra le presenze manualmente
-- [Check-in](../attendance/check-in.md) — app di check-in self-service
-- [Creare gruppi](../groups/creating-groups.md) — configura gruppi con tracciamento presenze
-- [Report presenze](../reports/attendance-reports.md) — visualizza le tendenze delle presenze
-- [Guida al check-in per bambini](./childrens-checkin.md) — configurazione completa del check-in per il ministero bambini
+- [Configurazione della Frequenza](../attendance/setup.md) — configura campus e servizi
+- [Registrazione della Frequenza](../attendance/recording-attendance.md) — registra la frequenza manualmente
+- [Tracciamento della Frequenza](../attendance/tracking-attendance.md) — esamina le tendenze di frequenza
+- [Check-In](../attendance/check-in.md) — app di check-in self-service
+- [Creazione di Gruppi](../groups/creating-groups.md) — configura gruppi con tracciamento della frequenza
+- [Report di Frequenza](../reports/attendance-reports.md) — visualizza le tendenze di frequenza
+- [Guida ai Check-In per Bambini](./childrens-checkin.md) — configurazione completa del check-in per il ministero dei bambini

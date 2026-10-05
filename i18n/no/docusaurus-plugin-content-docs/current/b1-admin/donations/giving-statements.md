@@ -1,62 +1,62 @@
 ---
-title: "Givingsutsagn"
+title: "Giveroppgaver"
 ---
 
-# Givingsutsagn
+# Giveroppgaver
 
 <div class="article-intro">
 
-På slutten av hvert år trenger donorene dine en sammenfatning av deres skattefradragsberettigende giving for posteriteten. B1 Admin gjør det enkelt å generere disse utsagnene for alle donorer på en gang, noe som sparer deg timer med manuelt arbeid.
+Ved slutten av hvert år trenger giverne dine en oppsummering av skattefradragsberettiget giving til egne papirer. Med B1 Admin er det enkelt å lage disse oppgavene for alle givere på én gang, slik at du sparer mange timer med manuelt arbeid.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Bekreft at [fondene](funds.md) dine er korrekt merket som **Skattefradrags berettiget** -- bare donasjoner til skattefradrags berettigede fond vises på utsagn
-- Forsikre deg om at alle donasjoner er blitt [registrert](recording-donations.md) og eventuelle elektroniske transaksjoner er blitt [importert fra Stripe](stripe-import.md)
+- Kontroller at [fondene](funds.md) dine er riktig merket som **Skattefradragsberettiget** -- bare donasjoner til skattefradragsberettigede fond vises på oppgavene
+- Pass på at alle donasjoner er [registrert](recording-donations.md), og at eventuelle nettbaserte transaksjoner er [importert fra Stripe](stripe-import.md)
 
 </div>
 
-## Få tilgang til givingsutsagn
+## Åpne giveroppgaver
 
-1. I **B1 Admin**, åpne **seksjonsmenyen** i øverste venstre hjørne og velg **Donasjoner**.
-2. Klikk **Utsagn**.
+1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) i **B1 Admin** (søkefeltet øverst til venstre) og utvid **Donasjoner**.
+2. Klikk på **Giveroppgaver**.
 
-## Generere utsagn
+## Lage giveroppgaver
 
-1. Velg **året** fra rullegardinlisten øverst på siden. Du kan velge det gjeldende året eller noen av de fem foregående årene.
-2. Siden viser sammenfattende statistikk for det året, inkludert:
-   - **Totale donorer** -- antallet personer som ga
-   - **Totale donasjoner** -- antallet individuelle donasjonsregistreringer
-   - **Totalt beløp** -- det kombinerte dollarbeløpet for all giving
+1. Velg **år** fra nedtrekkslisten øverst på siden. Du kan velge inneværende år eller et av de fem foregående årene.
+2. Siden viser sammendragstall for det året, blant annet:
+   - **Totalt antall givere** -- antall personer som har gitt
+   - **Totalt antall donasjoner** -- antall enkeltdonasjoner som er registrert
+   - **Totalbeløp** -- det samlede beløpet for all giving
 
-## Nedlasting av utsagn
+## Laste ned oppgaver
 
-Du har to alternativer for å få utsagn til donorene dine:
+Du har to alternativer for å få oppgavene til giverne:
 
-### Nedlast som CSV-filer
+### Last ned som CSV-filer
 
-Klikk **Nedlast ZIP** for å nedlaste en ZIP-fil som inneholder en individuell CSV-fil for hver donor. Dette er nyttig hvis du vil sende utsagn individuelt eller importere dem til et annet system.
+Klikk på **Last ned ZIP** for å laste ned en ZIP-fil med en egen CSV-fil for hver giver. Dette er nyttig hvis du vil sende oppgavene på e-post enkeltvis eller importere dem til et annet system.
 
-### Skriv ut alle utsagn
+### Skriv ut alle oppgaver
 
-Klikk **Skriv ut alle** for å åpne en utskrivbar visning av alle donorutsagn i nettleseren din. Derfra bruker du nettleserens utskriftsfunksjon for å sende dem til en skriver. Hvert utsagn starter på en ny side slik at de er klare til å brette og poste.
+Klikk på **Skriv ut alle** for å åpne en utskriftsvennlig visning av alle giveres oppgaver i nettleseren. Derfra bruker du utskriftsfunksjonen i nettleseren til å sende dem til en skriver. Hver oppgave starter på en ny side, så de er klare til å brettes og sendes i posten.
 
 :::tip
-Kjør utsagnene dine tidlig i januar mens postene dine er friske. Dobbeltsjekk at fondene dine er korrekt merket som skattefradrags berettiget før du genererer utsagn -- bare donasjoner til skattefradrags berettigede fond er inkludert.
+Lag oppgavene tidlig i januar, mens registreringene er ferske. Dobbeltsjekk at fondene er riktig merket som skattefradragsberettigede før du lager oppgavene -- bare donasjoner til skattefradragsberettigede fond tas med.
 :::
 
 :::info
-Givingsutsagn inkluderer bare donasjoner tildelt fond som har **Skattefradrags berettiget**-innstillingen aktivert. Hvis et fond ikke er merket som skattefradrags berettiget, vises ikke donasjonene dets på utsagnet. Du kan administrere denne innstillingen på siden [Fond](funds.md).
+Giveroppgaver inneholder bare donasjoner som er knyttet til fond med innstillingen **Skattefradragsberettiget** aktivert. Hvis et fond ikke er merket som skattefradragsberettiget, vises ikke donasjonene til det fondet på oppgaven. Du kan endre denne innstillingen på siden [Fond](funds.md).
 :::
 
-## Mottaksformater for Canada, Australia og New Zealand
+## Kvitteringsformater for Canada, Australia og New Zealand
 
-Kirker utenfor USA kan bytte utsagnet til sitt lands offisielle mottaksoppsett. Gå til **Innstillinger**, åpne **Giving**-seksjonen, og sett **Utsagnsformat** til **Canada**, **Australia** eller **New Zealand**, og fyll deretter inn feltene som vises: registreringsnummeret ditt (CRA-registreringsnummer, ABN eller NZ-veldedighetregistreringsnummer), organisasjonens adresse, navn på personen som er autorisert til å signere kvitteringer, og for Canada byen der kvitteringer utstedes.
+Menigheter utenfor USA kan bytte oppgaven til landets offisielle kvitteringsoppsett. Gå til **Innstillinger**, åpne **Giving**-delen og sett **Oppgaveformat** til **Canada**, **Australia** eller **New Zealand**. Fyll deretter ut feltene som vises: registreringsnummer (CRA-registreringsnummer, ABN eller New Zealands veldedighetsregistreringsnummer), organisasjonens adresse, navnet på personen som har fullmakt til å signere kvitteringer, og for Canada byen der kvitteringene utstedes.
 
-Utsagn inneholder deretter ordlyden skattemyndighetene dine forventer (for Canada, "Offisiell kvittering for inntektsskatteformål" med CRA-referansen), et kvitteringsnummer i form `YEAR-DONORID`, det berettigede beløpet talt fra skattefradrags berettigede fond bare, og en egen linje for eventuelle gaver til ikke-fradragsberettigede fond. Donorer ser samme kvitteringsblokk når de skriver ut sin egen utsagn fra B1.church.
+Oppgavene får da ordlyden skattemyndighetene forventer (for Canada «Official Receipt for Income Tax Purposes» med CRA-referansen), et kvitteringsnummer på formen `YEAR-DONORID`, det kvalifiserte beløpet regnet bare fra skattefradragsberettigede fond, og en egen linje for eventuelle gaver til fond som ikke er fradragsberettigede. Giverne ser den samme kvitteringsblokken når de skriver ut sin egen oppgave fra B1.church.
 
 ## Neste steg
 
-Hvis du trenger å gjennomgå donasjonsdetaljer før du genererer utsagn, besøk siden [Donasjonsrapporter](donation-reports.md) eller sjekk individuelle [partier](batches.md).
+Hvis du vil gå gjennom donasjonsdetaljene før du lager oppgavene, kan du gå til siden [Donasjonsrapporter](donation-reports.md) eller se på enkeltstående [gavebunter](batches.md).

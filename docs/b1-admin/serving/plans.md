@@ -20,7 +20,7 @@ Service plans organize who is serving and when. Each plan is tied to a specific 
 
 ## Accessing Plans
 
-1. Navigate to **Serving** from the main menu.
+1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Serving**, and click **Plans**.
 2. Select a **ministry tab** at the top of the page.
 3. Click on a **plan type** to see the list of plans for that type.
 4. Click on a specific plan to open it.
@@ -107,7 +107,7 @@ If the plans are Lessons.church lessons, members of the associated group also se
 
 ## Printing Plans
 
-You can print a plan for distribution to your team. Open the plan, Open the service order tab and use the **Print** option to generate a printable version that includes assignments and the service order. This is useful for handing out at rehearsals or posting in a common area.
+You can print a plan for distribution to your team. Open the plan, Open the service order tab and use the **Print** option to generate a printable version that includes assignments and the service order. The top of the printout shows your church's name and the plan's name, so loose pages are easy to identify. This is useful for handing out at rehearsals or posting in a common area.
 
 :::info
 Plans are organized by ministry. Make sure you are on the correct ministry tab before creating or viewing plans.

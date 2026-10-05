@@ -20,7 +20,7 @@ O painel Saúde dos Grupos oferece uma visão geral de como todos os seus grupos
 
 ## Abrindo Saúde dos Grupos
 
-Em B1 Admin, abra o **menu de seção** no canto superior esquerdo e escolha **Pessoas**, depois clique em **Grupos** na barra de navegação e clique no botão **Saúde do Grupo** no cabeçalho da página. O painel carrega uma tabela com uma linha por grupo.
+Em B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), expanda **Pessoas**, clique em **Grupos** e então clique no botão **Saúde do Grupo** no cabeçalho da página. O painel carrega uma tabela com uma linha por grupo.
 
 ## Colunas
 

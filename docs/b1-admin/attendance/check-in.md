@@ -105,8 +105,8 @@ When a guest scans the QR code, they are taken to a [guest registration page](..
 
 To turn on the QR code display:
 
-1. In B1 Admin, open the **section menu** in the top-left corner (the section name with the small arrow) and choose **Mobile**.
-2. Select the **B1 CheckIn** tab.
+1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left) and expand **Mobile**.
+2. Click **B1 CheckIn**.
 3. Toggle **QR Guest Registration** on and click **Save**.
 
 :::note

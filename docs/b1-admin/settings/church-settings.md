@@ -20,7 +20,7 @@ The Church Settings page is where you configure your church's basic information,
 
 ## Editing Your Church Information
 
-1. In B1 Admin, open the **section menu** in the top-left corner (the section name with the small arrow) and choose **Settings**.
+1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Settings**, and click **Settings**.
 2. Open the **Church Information** section and click its edit (pencil) icon.
 3. Update any of the following fields:
    - **Church Name** -- The name displayed across all ChurchApps products.
@@ -87,6 +87,16 @@ Once a provider is connected, staff with permission to send texts see a text ico
 - Members with no mobile phone on file are skipped.
 - Members who chose **Hide me from the member directory** are counted as opted out and skipped.
 - Family members who share a mobile number get the text only once.
+
+### Personalizing Texts with Merge Fields
+
+Below the message box, the Text dialog shows placeholder chips: **First Name**, **Last Name**, **Display Name**, and **Church Name**. Click a chip to insert its placeholder (`{{firstName}}`, `{{lastName}}`, `{{displayName}}`, or `{{churchName}}`) at your cursor. When the text is sent, each placeholder is replaced with that recipient's details, so a group text like `Hi {{firstName}}, see you Sunday!` reaches each member with their own name. Placeholders work for both group texts and texts to a single person.
+
+:::info
+The 1,600-character limit applies to the message as you type it. After the placeholders are filled in, any text longer than 1,600 characters is cut off at that length.
+:::
+
+Texts can also go out automatically from a [workflow](../serving/workflows.md#sending-a-text) step with the **Send Text** action, which uses the same provider and placeholders.
 
 ## File Storage
 

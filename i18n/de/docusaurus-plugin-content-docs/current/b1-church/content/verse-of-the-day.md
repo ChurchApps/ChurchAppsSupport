@@ -1,52 +1,52 @@
 ---
-title: Vers des Tages
+title: "Bibelvers des Tages"
 ---
 
-# Verse of the Day
+# Bibelvers des Tages
 
 <div class="article-intro">
 
-The Verse of the Day page displays a daily Bible verse as a beautifully formatted image. It is a simple way to start your day with Scripture or find encouragement throughout the week.
+Die Bibelvers-des-Tages-Seite zeigt einen täglichen Bibelvers als wunderschön formatiertes Bild. Dies ist eine einfache Möglichkeit, Ihren Tag mit einer Bibelstelle zu beginnen oder Ermuterung in der ganzen Woche zu finden.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Bevor Sie Beginnen</h4>
 
-- No login is required to view the Verse of the Day. The page is publicly accessible.
-- Your church must have added a Verse of the Day page to their site navigation.
+- Um den Bibelvers des Tages anzuzeigen, ist keine Anmeldung erforderlich. Die Seite ist öffentlich zugänglich.
+- Ihre Kirche muss eine Bibelvers-des-Tages-Seite zu ihrer Seitennavigation hinzugefügt haben.
 
 </div>
 
-## Viewing the Verse
+## Vers Ansehen
 
-1. Navigate to the **Verse of the Day** page from your church's site navigation.
-2. The page displays today's verse as an image.
-3. A new verse appears automatically each day.
+1. Navigieren Sie von Ihrer Kirchenseitennavigation zur Seite **Bibelvers des Tages**.
+2. Die Seite zeigt den heutigen Vers als Bild an.
+3. Ein neuer Vers erscheint automatisch jeden Tag.
 
-There is nothing you need to do -- just visit the page and the current day's verse will be shown.
+Sie müssen nichts tun – besuchen Sie einfach die Seite und der aktuelle Tagesvers wird angezeigt.
 
-## Responsive Display
+## Responsive Anzeige
 
-The verse image automatically adjusts to fit your screen. Depending on your device and window size, you will see one of three formats:
+Das Versbild passt sich automatisch an die Größe Ihres Bildschirms an. Abhängig von Ihrem Gerät und Fenstertyp werden Sie eines von drei Formaten sehen:
 
-- **Widescreen (16:9)** -- Best for desktop monitors and laptops
-- **Square (1:1)** -- Suited for tablet-sized screens
-- **Portrait (9:16)** -- Optimized for phones held vertically
+- **Breitbild (16:9)** – Ideal für Desktop-Monitore und Laptops
+- **Quadrat (1:1)** – Geeignet für Tablet-große Bildschirme
+- **Hochformat (9:16)** – Optimiert für vertikal gehaltene Telefone
 
-The page detects your screen dimensions and selects the best format, so the verse always looks good regardless of how you are viewing it. If you resize your browser window, the image will update to match the new dimensions.
+Die Seite erkennt Ihre Bildschirmdimensionen und wählt das beste Format, sodass der Vers unabhängig davon, wie Sie ihn anzeigen, immer gut aussieht. Falls Sie die Größe Ihres Browser-Fensters ändern, wird das Bild aktualisiert, um den neuen Dimensionen zu entsprechen.
 
-## Sharing the Verse
+## Den Vers Teilen
 
-In the member portal (`/mobile`), the Verse of the Day screen has two buttons below the verse:
+Im Mitgliederportal (`/mobile`) hat der Bildschirm Bibelvers des Tages zwei Schaltflächen unter dem Vers:
 
-- **Share image** -- shares the verse picture itself, so you can post it or send it in a message. On devices that cannot share files (such as most desktop browsers), the image is downloaded instead.
-- **Share** -- shares the verse text, reference, and a link to the page. If your device has no share menu, the text and link are copied to your clipboard.
+- **Bild teilen** – teilt das Versbild selbst, sodass Sie es posten oder in einer Nachricht senden können. Auf Geräten, die keine Dateien teilen können (z. B. die meisten Desktop-Browser), wird das Bild stattdessen heruntergeladen.
+- **Teilen** – teilt den Verstext, Referenz und einen Link zur Seite. Falls Ihr Gerät kein Teilungsmenü hat, werden der Text und der Link in Ihre Zwischenablage kopiert.
 
 :::tip
-Make it a daily habit to check the Verse of the Day, then explore the passage further in the [Bible reader](./bible.md).
+Machen Sie es sich zur täglichen Gewohnheit, den Bibelvers des Tages zu überprüfen, und erkunden Sie dann die Passage weiter im [Bibelleser](./bible.md).
 :::
 
-## Availability
+## Verfügbarkeit
 
-The Verse of the Day is a built-in content feature of B1.church. If you do not see it in your church's navigation, your church administrator may not have added it to the site menu. Contact your church administrator to request it.
+Der Bibelvers des Tages ist eine eingebaute Inhaltsfunktion von B1.church. Falls Sie es nicht in der Navigation Ihrer Kirche sehen, hat der Kirchenadministrator es möglicherweise nicht zum Seitenmenü hinzugefügt. Wenden Sie sich an Ihren Kirchenadministrator, um es anzufordern.

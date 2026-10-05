@@ -68,60 +68,60 @@ Suivez les instructions de configuration de votre imprimante pour la connecter a
 
 ## Personnalisation de l'apparence du kiosque
 
-Vous pouvez personnaliser l'apparence et la convivialité de l'application B1 Checkin pour correspondre à la marque de votre église. Dans B1 Admin, allez à **Présence > Thème du kiosque** pour configurer :
+Vous pouvez personnaliser l'apparence de l'application B1 Checkin pour correspondre à la marque de votre église. Dans B1 Admin, allez à **Mobile > B1 CheckIn** et utilisez la carte **Thème du kiosque** pour configurer :
 
 ### Couleurs
 
 Personnalisez huit paramètres de couleur pour correspondre à la marque de votre église :
 
-- **Primaire** et **Contraste primaire** -- Couleur de marque principale et couleur du texte.
-- **Secondaire** et **Contraste secondaire** -- Couleur d'accent et couleur du texte.
-- **Fond du header** et **Fond du sous-header** -- Couleurs des zones d'en-tête du kiosque.
-- **Fond du bouton** et **Texte du bouton** -- Couleurs des boutons interactifs.
+- **Principal** et **Contraste principal** -- Couleur de marque principale et sa couleur de texte.
+- **Secondaire** et **Contraste secondaire** -- Couleur d'accent et sa couleur de texte.
+- **Couleur d'arrière-plan de l'en-tête** et **Couleur d'arrière-plan du sous-en-tête** -- Couleurs pour les zones d'en-tête du kiosque.
+- **Couleur d'arrière-plan du bouton** et **Couleur du texte du bouton** -- Couleurs pour les boutons interactifs.
 
-### Image de fond
+### Image d'arrière-plan
 
-Téléchargez une image de fond optionnelle pour les écrans de bienvenue et de recherche du kiosque. La taille recommandée est de 1920x1080 pixels.
+Téléchargez une image d'arrière-plan facultative pour l'accueil et les écrans de recherche du kiosque. La taille recommandée est de 1920x1080 pixels.
 
 ### Écran inactif / Économiseur d'écran
 
 Configurez un économiseur d'écran qui s'active après une période d'inactivité :
 
 1. Activez ou désactivez l'écran inactif.
-2. Définissez le **délai d'inactivité** (nombre de secondes d'inactivité avant le démarrage de l'économiseur d'écran, minimum 10 secondes).
+2. Réglez le **délai d'attente** (nombre de secondes d'inactivité avant le démarrage de l'économiseur d'écran, minimum 10 secondes).
 3. Ajoutez une ou plusieurs **diapositives** -- chaque diapositive a une image et une durée d'affichage (minimum 3 secondes).
 
 :::tip
-Utilisez l'écran inactif pour afficher les annonces, les événements à venir ou les messages de bienvenue quand le kiosque n'est pas activement utilisé.
+Utilisez l'écran inactif pour afficher des annonces, les événements à venir ou les messages de bienvenue lorsque le kiosque n'est pas activement utilisé.
 :::
 
-## Enregistrement des invités via code QR
+## Enregistrement des visiteurs via code QR
 
-Le kiosque d'enregistrement peut afficher un code QR que les visiteurs scannent pour s'enregistrer eux-mêmes et leur famille sur leur téléphone. Cela accélère le processus d'enregistrement pour les nouveaux invités.
+Le kiosque d'accueil peut afficher un code QR que les visiteurs scannent pour s'enregistrer, eux et leur famille, sur leur propre téléphone. Cela accélère le processus d'accueil pour les nouveaux visiteurs.
 
-Quand un invité scanne le code QR, il est dirigé vers une [page d'enregistrement des invités](../../b1-church/checkin/guest-registration) où il entre son nom, son email et les membres de sa famille. Un bénévole peut ensuite le rechercher sur le kiosque et l'enregistrer.
+Lorsqu'un visiteur scanne le code QR, il est redirigé vers une [page d'enregistrement des visiteurs](../../b1-church/checkin/guest-registration) où il entre son nom, son e-mail et les membres de sa famille. Un bénévole peut alors les rechercher sur le kiosque et les enregistrer.
 
-### Activation de l'enregistrement des invités via code QR
+### Activation de l'enregistrement des visiteurs par code QR
 
 Pour activer l'affichage du code QR :
 
-1. Dans B1 Admin, ouvrez le **menu de section** dans le coin supérieur gauche (le nom de la section avec la petite flèche) et choisissez **Mobile**.
-2. Sélectionnez l'onglet **B1 CheckIn**.
-3. Activez **Enregistrement des invités via code QR** et cliquez sur **Enregistrer**.
+1. Dans B1 Admin, ouvrez le [menu Sauter](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche) et développez **Mobile**.
+2. Cliquez sur **B1 CheckIn**.
+3. Activez **Enregistrement des visiteurs par code QR** et cliquez sur **Enregistrer**.
 
 :::note
-Ce paramètre est sous **Mobile**, pas sous Présence > Thème du kiosque.
+Ce paramètre se trouve sous **Mobile > B1 CheckIn** (la même page que la carte **Thème du kiosque**), pas sous Présence.
 :::
 
 ### Partage du lien d'enregistrement
 
-Une fois l'enregistrement des invités via code QR activé, une section **Partager le code QR d'enregistrement** apparaît sous le curseur. Cela vous donne deux façons d'amener les invités au formulaire d'enregistrement au-delà du code QR du kiosque :
+Une fois l'enregistrement des visiteurs par code QR activé, une section **Partager le code QR d'enregistrement** apparaît sous le curseur. Cela vous donne deux façons de diriger les visiteurs vers le formulaire d'enregistrement en plus du code QR du kiosque :
 
-- **Copier le lien** — copie l'URL d'enregistrement pour la coller sur le site web de votre église, dans les emails ou n'importe où en ligne.
-- **Télécharger le PNG** — télécharge le code QR comme une image que vous pouvez imprimer sur des prospectus, des bulletins ou des affiches.
+- **Copier le lien** -- copie l'URL d'enregistrement pour que vous puissiez la coller sur le site Web de votre église, dans les e-mails ou n'importe où en ligne.
+- **Télécharger PNG** -- télécharge le code QR sous forme d'image que vous pouvez imprimer sur des dépliants, des bulletins ou des panneaux.
 
 :::tip
-Ajoutez le lien d'enregistrement au site web de votre église "Planifiez votre visite" ou à la page "Je suis nouveau" pour que les invités puissent s'enregistrer avant même d'arriver.
+Ajoutez le lien d'enregistrement à la page "Planifier votre visite" ou "Je suis nouveau" de votre site Web afin que les visiteurs puissent s'enregistrer avant même d'arriver.
 :::
 
 ## Ce qui est enregistré

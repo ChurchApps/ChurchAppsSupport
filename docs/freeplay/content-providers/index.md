@@ -20,6 +20,7 @@ FreePlay currently includes the following providers:
 - **B1.church** - Content from your own B1 church setup
 - **Go Curriculum** - Curriculum from gocurriculum.com, organized by collection and lesson
 - **Google Drive** - Browse and play video and audio files from your own Google Drive
+- **FreeShow** - FreePlay finds FreeShow running on a computer on the same network and connects to it
 
 :::info
 Some providers are still being added. If a provider card shows "Coming Soon," it is not yet available for connection.
@@ -29,9 +30,12 @@ Some providers are still being added. If a provider card shows "Coming Soon," it
 
 Each provider has its own content library organized into folders and files. Once you connect to a provider, its content appears in a folder browser where you can drill into categories, select items, and download them for playback.
 
-Connected providers appear in the sidebar on the left side of the screen. You can switch between providers by selecting them in the sidebar, making it easy to jump between content sources during setup.
+Connected providers appear in the sidebar on the left side of the screen, under the **Browse** heading. You can switch between providers by selecting them in the sidebar, making it easy to jump between content sources during setup.
+
+You can also pick a folder from any connected provider to loop as [announcements](./announcements) on your TV.
 
 ## In This Section
 
 - **[Connecting to Providers](./connecting-providers)** - How to authenticate and connect
 - **[Browsing and Downloading Content](./browsing-content)** - Navigate folders, download files, and play content
+- **[Announcements](./announcements)** - Loop a folder of slides from a provider

@@ -1,71 +1,71 @@
 ---
-title: "Campagne e Impegni"
+title: "Campagne e Promesse"
 ---
 
-# Campagne e Impegni
+# Campagne e Promesse
 
 <div class="article-intro">
 
-Le campagne ti permettono di eseguire una raccolta fondi verso un obiettivo specifico — un fondo di costruzione, un viaggio missionario, un progetto speciale — e tracciare gli impegni dei membri insieme alle donazioni effettive in modo che tu possa vedere il tuo progresso in tempo reale.
+Le campagne ti permettono di condurre una raccolta fondi verso un obiettivo specifico -- un fondo di costruzione, un viaggio missionario, un progetto speciale -- e tracciare le promesse dei membri insieme alle donazioni effettive così puoi vedere il tuo progresso in tempo reale.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Configura i tuoi [fondi di donazione](funds) — ogni campagna è legata a un fondo
-- Hai bisogno dell'accesso alla sezione Donazioni di B1 Admin
+- Configura i tuoi [fondi di donazione](funds) -- ogni campagna è legata a un fondo
+- Hai bisogno di accesso alla sezione Donazioni di B1 Admin
 
 </div>
 
 ## Apertura delle Campagne
 
-In B1 Admin, apri il **menu della sezione** nell'angolo in alto a sinistra (il nome della sezione con la piccola freccia) e scegli **Donations**, quindi seleziona **Campaigns**. Vedrai un elenco di tutte le campagne con il loro importo dell'obiettivo, il totale impegnato e il totale donato finora.
+In B1 Admin, apri il [Menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Donazioni**, e fai clic su **Campagne**. Vedrai un elenco di tutte le campagne con il loro importo obiettivo, totale promesso, e totale dato finora.
 
 ## Creazione di una Campagna
 
-1. Fai clic su **Add Campaign**.
+1. Fai clic su **Aggiungi Campagna**.
 2. Compila i dettagli della campagna:
-   - **Name** *(obbligatorio)* — il nome visualizzato per questa campagna (ad esempio, "Building Fund 2026").
-   - **Fund** — il fondo di donazione a cui è associata questa campagna.
-   - **Start Date** / **End Date** — la finestra di raccolta fondi.
-   - **Goal** — l'importo in dollari target per la campagna.
-3. Fai clic su **Save**.
+   - **Nome** *(obbligatorio)* — il nome di visualizzazione per questa campagna (ad esempio, "Fondo di Costruzione 2026").
+   - **Fondo** — il fondo di donazione a cui questa campagna è associata.
+   - **Data di Inizio** / **Data di Fine** — la finestra di raccolta fondi.
+   - **Obiettivo** — l'importo in dollari target per la campagna.
+3. Fai clic su **Salva**.
 
 ## Tracciamento del Progresso
 
-Ogni scheda di campagna mostra:
+Ogni scheda campagna mostra:
 
-- **Goal** — l'importo target
-- **Pledged** — l'importo totale che i membri si sono impegnati a donare
-- **Given** — l'importo totale effettivamente donato a questo fondo di campagna durante la finestra della campagna
-- Una **barra di progresso** che mostra quanto lontano sei dall'obiettivo
+- **Obiettivo** -- il tuo importo target
+- **Promesso** -- l'importo totale che i membri hanno promesso di dare
+- **Dato** -- l'importo totale effettivamente donato a questa campagna fondo durante la finestra di campagna
+- Una **barra di progresso** che mostra quanto sei avanzato verso il tuo obiettivo
 
-Fai clic su qualsiasi campagna per aprire la visualizzazione dei dettagli, che elenca gli impegni individuali e il loro stato di adempimento.
+Fai clic su qualsiasi campagna per aprire la vista dei dettagli, che elenca le promesse individuali e il loro stato di adempimento.
 
-## Aggiunta di Impegni
+## Aggiunta di Promesse
 
-Gli impegni sono promesse dai membri di donare verso una campagna. Per registrare un impegno:
+Le promesse sono impegni dai membri di dare verso una campagna. Per registrare una promessa:
 
 1. Apri una campagna.
-2. Fai clic su **Add Pledge**.
-3. Seleziona la **person** che fa l'impegno.
-4. Immetti l'importo dell'impegno **amount**.
-5. Facoltativamente imposta una **date** per l'impegno di commitment.
-6. Fai clic su **Save**.
+2. Fai clic su **Aggiungi Promessa**.
+3. Seleziona la **persona** che fa la promessa.
+4. Inserisci l'importo della **promessa**.
+5. Facoltativamente imposta una **data** per l'impegno della promessa.
+6. Fai clic su **Salva**.
 
-Gli impegni appaiono nei dettagli della campagna e contribuiscono al totale **Pledged** sulla scheda della campagna.
+Le promesse appaiono nel dettaglio della campagna e contribuiscono al totale **Promesso** sulla scheda della campagna.
 
 :::tip
-Gli impegni sono separati dalle donazioni effettive. Un impegno traccia una promessa; una donazione registra il regalo effettivo. Entrambi vengono mostrati nella campagna in modo che tu possa vedere quanto bene gli impegni vengono adempiti.
+Le promesse sono separate dalle donazioni effettive. Una promessa traccia un impegno; una donazione registra il dono effettivo. Entrambi sono mostrati sulla campagna così puoi vedere come bene le promesse vengono adempite.
 :::
 
 ## Modifica o Eliminazione di una Campagna
 
-Fai clic sull'icona di modifica su qualsiasi scheda di campagna per aggiornare il suo nome, obiettivo, date o fondo. Fai clic su **Delete** per rimuovere permanentemente la campagna e i suoi impegni. L'eliminazione di una campagna non elimina alcuna donazione registrata al suo fondo.
+Fai clic sull'icona di modifica su qualsiasi scheda campagna per aggiornarne il nome, l'obiettivo, le date, o il fondo. Fai clic su **Elimina** per rimuovere permanentemente la campagna e le sue promesse. L'eliminazione di una campagna non elimina alcuna donazione che sia stata registrata al suo fondo.
 
 ## Articoli Correlati
 
-- [Registrazione delle Donazioni](recording-donations) — registra i regali effettivi che adempiono gli impegni
+- [Registrazione di Donazioni](recording-donations) — registra i doni effettivi che adempiono le promesse
 - [Fondi](funds) — configura il fondo da associare a una campagna
-- [Rapporti sulle Donazioni](donation-reports) — rapporto sulle donazioni per fondo
+- [Rapporti di Donazione](donation-reports) — rapporti sulle donazioni per fondo

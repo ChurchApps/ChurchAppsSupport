@@ -1,71 +1,71 @@
 ---
-title: "Campagnes et Engagements"
+title: "Campagnes et promesses de dons"
 ---
 
-# Campagnes et Engagements
+# Campagnes et promesses de dons
 
 <div class="article-intro">
 
-Les Campagnes vous permettent de lancer une levée de fonds vers un objectif spécifique — un fonds de construction, un voyage missionnaire, un projet spécial — et de suivre les engagements des membres à côté des dons réels pour que vous puissiez voir votre progression en temps réel.
+Les campagnes vous permettent de mener une collecte de fonds vers un objectif spécifique — un fonds de bâtiment, un voyage missionnaire, un projet spécial — et de suivre les promesses des membres à côté des dons réels pour que vous puissiez voir votre progression en temps réel.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Configurez vos [fonds de don](funds) — chaque campagne est liée à un fonds
-- Vous avez besoin d'un accès à la section Donations de B1 Admin
+- Configurez vos [fonds de dons](funds) — chaque campagne est liée à un fonds
+- Vous avez besoin d'accès à la section Dons de B1 Admin
 
 </div>
 
-## Ouverture des Campagnes
+## Ouverture des campagnes
 
-Dans B1 Admin, ouvrez le **menu de section** dans le coin supérieur gauche (le nom de la section avec la petite flèche) et choisissez **Donations**, puis sélectionnez **Campagnes**. Vous verrez une liste de toutes les campagnes avec leur montant objectif, total engagé et total donné jusqu'à présent.
+Dans B1 Admin, ouvrez le [menu Accès rapide](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Dons**, et cliquez sur **Campagnes**. Vous verrez une liste de toutes les campagnes avec leur montant objectif, le total promis, et le total donné jusqu'à présent.
 
-## Création d'une Campagne
+## Créer une campagne
 
-1. Cliquez sur **Ajouter une Campagne**.
+1. Cliquez sur **Ajouter une campagne**.
 2. Remplissez les détails de la campagne :
-   - **Nom** *(requis)* — le nom d'affichage pour cette campagne (par exemple, "Fonds de Construction 2026").
-   - **Fonds** — le fonds de don avec lequel cette campagne est associée.
-   - **Date de Début** / **Date de Fin** — la fenêtre de collecte de fonds.
+   - **Nom** *(requis)* — le nom d'affichage de cette campagne (par exemple, « Fonds de bâtiment 2026 »).
+   - **Fonds** — le fonds de dons auquel cette campagne est associée.
+   - **Date de début** / **Date de fin** — la fenêtre de collecte de fonds.
    - **Objectif** — le montant en dollars cible pour la campagne.
 3. Cliquez sur **Enregistrer**.
 
-## Suivi de la Progression
+## Suivi de la progression
 
 Chaque carte de campagne affiche :
 
 - **Objectif** — votre montant cible
-- **Engagé** — le montant total que les membres se sont engagés à donner
-- **Donné** — le montant total réellement donné au fonds de cette campagne pendant la fenêtre de campagne
-- Une **barre de progression** montrant jusqu'où vous avez atteint votre objectif
+- **Promis** – le montant total que les membres ont promis de donner
+- **Donné** – le montant total réellement donné à ce fonds de campagne pendant la fenêtre de campagne
+- Une **barre de progression** montrant votre progression vers votre objectif
 
-Cliquez sur n'importe quelle campagne pour ouvrir la vue de détail, qui énumère les engagements individuels et leur statut de remplissage.
+Cliquez sur n'importe quelle campagne pour ouvrir la vue détail, qui répertorie les promesses individuelles et leur statut d'accomplissement.
 
-## Ajout d'Engagements
+## Ajouter des promesses
 
-Les engagements sont des promesses des membres de donner vers une campagne. Pour enregistrer un engagement :
+Les promesses sont des engagements des membres à donner vers une campagne. Pour enregistrer une promesse :
 
 1. Ouvrez une campagne.
-2. Cliquez sur **Ajouter un Engagement**.
-3. Sélectionnez la **personne** faisant l'engagement.
-4. Entrez le montant de l'**engagement**.
-5. Définissez éventuellement une **date** pour l'engagement.
+2. Cliquez sur **Ajouter une promesse**.
+3. Sélectionnez la **personne** faisant la promesse.
+4. Entrez le montant de la **promesse**.
+5. Optionnellement définissez une **date** pour l'engagement de promesse.
 6. Cliquez sur **Enregistrer**.
 
-Les engagements apparaissent dans le détail de la campagne et contribuent au total **Engagé** sur la carte de campagne.
+Les promesses apparaissent dans le détail de la campagne et contribuent au total **Promis** sur la carte de campagne.
 
 :::tip
-Les engagements sont distincts des dons réels. Un engagement suit un engagement; un don enregistre le don réel. Les deux sont affichés sur la campagne pour que vous puissiez voir comment bien les engagements sont remplis.
+Les promesses sont distinctes des dons réels. Une promesse suit un engagement ; un don enregistre le don réel. Les deux sont affichés sur la campagne pour que vous puissiez voir comment bien les promesses sont accomplies.
 :::
 
-## Édition ou Suppression d'une Campagne
+## Modification ou suppression d'une campagne
 
-Cliquez sur l'icône d'édition sur n'importe quelle carte de campagne pour mettre à jour son nom, objectif, dates ou fonds. Cliquez sur **Supprimer** pour supprimer définitivement la campagne et ses engagements. Supprimer une campagne ne supprime pas les dons qui ont été enregistrés sur son fonds.
+Cliquez sur l'icône de modification sur n'importe quelle carte de campagne pour mettre à jour son nom, son objectif, ses dates, ou son fonds. Cliquez sur **Supprimer** pour supprimer définitivement la campagne et ses promesses. La suppression d'une campagne ne supprime pas les dons qui ont été enregistrés dans son fonds.
 
-## Articles Connexes
+## Articles connexes
 
-- [Enregistrement des Donations](recording-donations) — enregistrer les dons réels qui remplissent les engagements
+- [Enregistrement des dons](recording-donations) — enregistrer les dons réels qui accomplissent les promesses
 - [Fonds](funds) — configurer le fonds à associer à une campagne
-- [Rapports de Donations](donation-reports) — rapports sur les donations par fonds
+- [Rapports de dons](donation-reports) — rapports sur les dons par fonds

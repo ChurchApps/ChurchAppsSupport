@@ -1,66 +1,66 @@
 ---
-title: "Solicitando Unirse a un Grupo"
+title: "Solicitud para Unirse a un Grupo"
 ---
 
-# Solicitando Unirse a un Grupo
+# Solicitud para Unirse a un Grupo
 
 <div class="article-intro">
 
-Algunos grupos requieren aprobación antes de que puedas convertirte en miembro. Cuando un grupo tiene esta configuración, envías una solicitud de unirte — opcionalmente incluyendo un mensaje al líder del grupo — y esperas a que el líder apruebe o rechace. Puedes ver el estado de tus solicitudes pendientes y cancelarlas en cualquier momento.
+Algunos grupos requieren aprobación antes de que pueda convertirse en miembro. Cuando un grupo tiene esta configuración, envía una solicitud de adhesión — incluyendo opcionalmente un mensaje al líder del grupo — y espera a que el líder apruebe o rechace. Puede ver el estado de sus solicitudes pendientes y cancelarlas en cualquier momento.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de Empezar</h4>
 
-- Debes estar [conectado](../getting-started/logging-in.md) a tu cuenta de B1.church para solicitar unirte a un grupo.
+- Debe [iniciar sesión](../getting-started/logging-in.md) en su cuenta de B1.church para solicitar unirse a un grupo.
 
 </div>
 
-## Uniéndose vs. Solicitando Unirse
+## Unirse vs. Solicitar Unirse
 
-Los grupos pueden tener diferentes políticas de unirse establecidas por sus administradores:
+Los grupos pueden tener diferentes políticas de adhesión establecidas por sus administradores:
 
-- **Abierto** -- Haz clic en **Unirse al Grupo** en la página de detalles del grupo y serás inmediatamente agregado como miembro.
-- **Se requiere solicitud** -- Haz clic en **Solicitar Unirse** para enviar una solicitud que un líder del grupo debe aprobar antes de que te conviertas en miembro.
-- **Cerrado** -- No aparece botón de unirte. Los miembros deben ser agregados manualmente por líderes.
+- **Abierto** -- Haga clic en **Unirse al Grupo** en la página de detalles del grupo y se agrega inmediatamente como miembro.
+- **Se requiere solicitud** -- Haga clic en **Solicitar Unirse** para enviar una solicitud que un líder del grupo debe aprobar antes de convertirse en miembro.
+- **Cerrado** -- No aparece botón de adhesión. Los miembros deben ser agregados manualmente por líderes.
 
-## Cómo Enviar una Solicitud de Unirse
+## Cómo Enviar una Solicitud de Adhesión
 
-1. Navega al grupo que deseas unirte. Consulta [Explorando Grupos](./browsing-groups.md) si necesitas ayuda para encontrarlo.
-2. Abre la página de detalles del grupo.
-3. Haz clic en **Solicitar Unirse**.
-4. Aparece un diálogo donde puedes opcionalmente escribir un mensaje al líder del grupo explicando por qué te gustaría unirte.
-5. Haz clic en **Enviar** para enviar tu solicitud.
+1. Vaya al grupo al que desea unirse. Ver [Exploración de Grupos](./browsing-groups.md) si necesita ayuda para encontrarlo.
+2. Abra la página de detalles del grupo.
+3. Haga clic en **Solicitar Unirse**.
+4. Aparece un diálogo donde puede escribir opcionalmente un mensaje al líder del grupo explicando por qué le gustaría unirse.
+5. Haga clic en **Enviar** para enviar su solicitud.
 
-Los líderes del grupo recibirán una notificación sobre tu solicitud. Una vez que la revisen, recibirás una notificación con el resultado.
+La página del grupo ahora muestra un aviso **Solicitud Pendiente** en lugar del botón. Los líderes del grupo recibirán una notificación sobre su solicitud. Una vez que la revisen, recibirá una notificación con el resultado.
 
 :::tip
-Incluir un breve mensaje — como cómo escuchaste sobre el grupo o qué esperas obtener de él — puede ayudar al líder a tomar una decisión más rápida.
+Incluir un mensaje breve — como por dónde se enteró del grupo o qué espera obtener — puede ayudar al líder a tomar una decisión más rápida.
 :::
 
-## Verificando el Estado de Tus Solicitudes
+## Comprobación del Estado de Sus Solicitudes
 
-Después de enviar una solicitud, puedes ver su estado desde la página **Grupos**:
+Después de enviar una solicitud, puede ver su estado desde la página **Grupos**:
 
-1. Navega a la página **Grupos** en el sitio B1.church de tu iglesia.
-2. Desplázate hacia abajo a la sección **Solicitudes Pendientes**.
-3. Cada solicitud pendiente muestra el nombre del grupo y la fecha en que la enviaste.
+1. Vaya a la página **Grupos** en el sitio B1.church de su iglesia.
+2. Desplácese hacia abajo hasta la sección **Solicitudes Pendientes**.
+3. Cada solicitud pendiente muestra el nombre del grupo y la fecha en que la envió.
 
-Si una solicitud ha sido aprobada o rechazada, recibirás una notificación — las solicitudes aprobadas te convierten en miembro del grupo.
+Si una solicitud ha sido aprobada o rechazada, recibirá una notificación — las solicitudes aprobadas lo convierten en miembro del grupo.
 
-## Cancelando una Solicitud
+## Cancelación de una Solicitud
 
-Si cambias de opinión antes de que un líder revise tu solicitud:
+Si cambia de opinión antes de que un líder revise su solicitud:
 
-1. Ve a la página **Grupos**.
-2. Encuentra tu solicitud en la sección **Solicitudes Pendientes**.
-3. Haz clic en **Cancelar** junto a la solicitud.
+1. Vaya a la página **Grupos**.
+2. Encuentre su solicitud en la sección **Solicitudes Pendientes**.
+3. Haga clic en **Cancelar** junto a la solicitud.
 
 La solicitud se retira inmediatamente y el líder ya no la verá.
 
 ## Artículos Relacionados
 
-- [Explorando Grupos](./browsing-groups.md) -- Encuentra grupos para unirte
-- [Detalles del Grupo](./group-details.md) -- Lo que puedes ver y hacer en la página de un grupo
-- [Conversaciones del Grupo](./conversations.md) -- Participa en discusiones una vez que eres miembro
+- [Exploración de Grupos](./browsing-groups.md) -- Encuentre grupos para unirse
+- [Detalles del Grupo](./group-details.md) -- Lo que puede ver y hacer en la página de un grupo
+- [Conversaciones de Grupo](./conversations.md) -- Participe en discusiones una vez que sea miembro

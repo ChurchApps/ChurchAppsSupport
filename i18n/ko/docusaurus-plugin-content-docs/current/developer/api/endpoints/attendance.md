@@ -97,6 +97,7 @@ GenericCrudController를 확장하여 `getById`, `post`, `delete` CRUD 경로를
 | GET | `/tree` | JWT | — | 전체 출석 트리(캠퍼스, 예배, 예배 시간, 그룹)를 가져옵니다 |
 | GET | `/trend?campusId=&serviceId=&serviceTimeId=&groupId=` | JWT | Attendance.View Summary | 선택적 필터로 출석 추세 데이터를 가져옵니다 |
 | GET | `/groups?serviceId=&week=` | JWT | Attendance.View | 특정 주의 예배에 대한 그룹 출석을 가져옵니다 |
+| GET | `/sessionStatus?serviceTimeId=&date=` | JWT | Attendance.View | 서비스 시간에 할당된 모든 그룹에 대해 그 날짜에 `{ groupId, sessionId, attendanceCount }`를 반환합니다(`date`는 `YYYY-MM-DD` 형식이고, 그룹에 세션이 없으면 `sessionId`는 null입니다). B1Admin의 **누가 아직 출석이 필요한가** 대화를 지원합니다 |
 | GET | `/search?campusId=&serviceId=&serviceTimeId=&groupId=&startDate=&endDate=` | JWT | Attendance.View | 필터(캠퍼스, 예배, 예배 시간, 그룹, 날짜 범위)를 사용해 출석 기록을 검색합니다 |
 
 ### 예시: 출석 추세

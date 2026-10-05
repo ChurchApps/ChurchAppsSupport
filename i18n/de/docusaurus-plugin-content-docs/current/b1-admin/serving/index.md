@@ -1,40 +1,40 @@
 ---
-title: "Serving"
+title: "Dienst"
 ---
 
-# Serving
+# Dienst
 
 <div class="article-intro">
 
-Der Bereich Serving ist dein Zentrum zur Koordination von Freiwilligen und Planung von Kirchengottesdiensten. Egal ob du Sonntags-Gottesdienste, Wochengottesdienste oder spezielle Veranstaltungen organisierst, hier bringst du alles zusammen, damit deine Teams genau wissen, wer dient und wann.
+Der Abschnitt Dienst ist Ihr Zentrum für die Koordination von Freiwilligen und die Planung von Kirchengottesdiensten. Ob Sie Sonntagsgottesdienste, Veranstaltungen unter der Woche oder besondere Ereignisse organisieren, hier bringen Sie alles zusammen, damit Ihre Teams genau wissen, wer dient und wann.
 
 </div>
 
 ## Wie die Serving-Seite funktioniert
 
-Wenn du die Seite **Serving** öffnest, siehst du deine Ministerien als Registerkarten oben angezeigt. Jedes Ministerium hat seine eigenen Plan-Typen und Teams, so dass du mehrere Ministerien unabhängig verwalten kannst. Zum Beispiel könntest du separate Registerkarten für Lobpreis, Kinder-Ministerium und Gastfreundschaft haben.
+Wenn Sie die Seite **Dienst** öffnen, werden Ihre Ministerien als Registerkarten oben angezeigt. Jedes Ministerium hat seine eigenen Plantypen und Teams, damit Sie mehrere Ministerien unabhängig voneinander verwalten können. Sie können beispielsweise separate Registerkarten für Anbetung, Kindergottesdienst und Gastfreundschaft haben.
 
-Mitarbeiter ohne Admin-Rechte, die Mitglieder eines Ministeriums sind, können auch auf die Serving-Seite zugreifen. Sie sehen nur die Ministerien, zu denen sie gehören und können Pläne, Zuweisungen, Plan-Typen und die Servicebestellung für ihr Ministerium erstellen und bearbeiten, ohne volle Admin-Berechtigungen zu brauchen.
+Nicht-Admin-Mitarbeiter, die Mitglieder eines Ministeriums sind, können auch auf die Seite Dienst zugreifen. Sie sehen nur die Ministerien, zu denen sie gehören, und können Pläne, Aufgaben, Plantypen und die Reihenfolge des Gottesdiensts für ihr Ministerium erstellen und bearbeiten, ohne vollständige Admin-Berechtigungen zu benötigen.
 
 :::tip
-Wenn du Admin bist, schalte **Alle anzeigen** um, um alle Ministerien auf einmal zu sehen. Dies ist hilfreich, wenn du Zuweisungen über mehrere Teams hinweg überprüfen musst.
+Wenn Sie ein Admin sind, aktivieren Sie **Alle anzeigen**, um alle Ministerien auf einmal anzuzeigen. Dies ist hilfreich, wenn Sie Zuweisungen über mehrere Teams hinweg überprüfen müssen.
 :::
 
 ## Unterbereiche
 
-Der Bereich Serving enthält diese wichtigen Bereiche:
+Der Abschnitt Dienst umfasst folgende Schlüsselbereiche:
 
-- **[Pläne](./plans.md)** -- Erstelle Servicepläne für bestimmte Daten und weise Freiwillige Teams zu. Pläne helfen dir zu organisieren, wer wann dient, so dass jeder ihre Rolle im Voraus kennt. Richte automatische [Freiwilligenbenachrichtigungen](./plans.md#volunteer-reminders) ein, damit dein Team vor jedem Gottesdienst benachrichtigt wird, und verwende die **[Pläne-Übersicht](./plans-overview.md)**, um alle bevorstehenden Zuweisungen über mehrere Wochen in einem Raster zu sehen.
-- **[Lieder](./songs.md)** -- Verwalte deine Lobgesang-Bibliothek mit Lyrics, Arrangements und externen Links. Dein Lobpreis-Team kann dies verwenden, um sich auf bevorstehende Gottesdienste vorzubereiten.
-- **[Aufgaben](./tasks.md)** -- Weise und verfolge Aufgaben für deine Teamemitglieder von **Meine Aufgaben**.
-- **[Workflows](./workflows.md)** -- Bewege Personen durch eine Serie von Schritten auf einem visuellen Kanban-Brett, wie Besucherfolge oder einen Mitgliedschaftsprozess. Schritte können automatisierte Aktionen ausführen (E-Mail senden, ein paar Tage warten, zur Gruppe hinzufügen) und Karten rücken durch Ergebnisschaltflächen, bedingte Weiterleitung oder Ereignis- und Schedule-Trigger vor -- mit integrierten Berichten.
+- **[Pläne](./plans.md)** -- Erstellen Sie Servicepläne für bestimmte Daten und weisen Sie Freiwillige den Teams zu. Pläne helfen Ihnen, zu organisieren, wer wann dient, damit jeder seine Rolle rechtzeitig kennt. Richten Sie automatische [Freiwilligen-Erinnerungen](./plans.md#volunteer-reminders) ein, damit Ihr Team vor jedem Gottesdienst benachrichtigt wird, und verwenden Sie die **[Planübersicht](./plans-overview.md)**, um alle bevorstehenden Zuweisungen über mehrere Wochen in einem Raster zu sehen.
+- **[Songs](./songs.md)** -- Verwalten Sie Ihre Anbetungsliedsammlung mit Texten, Arrangements und externen Links. Ihr Anbetungsteam kann diese verwenden, um sich auf bevorstehende Gottesdienste vorzubereiten.
+- **[Aufgaben](./tasks.md)** -- Weisen Sie Aufgaben für Ihre Teamkollegen von **Meine Arbeit** zu und verfolgen Sie sie.
+- **[Workflows](./workflows.md)** -- Bewegen Sie Menschen durch eine Reihe von Schritten auf einem visuellen Kanban-Board, wie z. B. Nachverfolgung von neuen Besuchern oder einen Mitgliedschaftsprozess. Schritte können automatisierte Aktionen ausführen (E-Mail senden, einige Tage warten, zur Gruppe hinzufügen), und Karten werden durch Ergebnisschaltflächen, bedingte Routingvorgänge oder Ereignis- und Zeitplan-Trigger vorangebracht -- mit integrierten Berichten.
 
 ## Erste Schritte
 
-1. Navigiere zu **Serving** aus dem Hauptmenü in B1 Admin.
-2. Klicke die Schaltfläche Ministerium hinzufügen, um ein neues Ministerium zu erstellen oder schalte „Alle anzeigen" um, um vorhandene Ministerium-Registerkarten zu sehen. Wähle eine **Ministerium-Registerkarte**, um ihre Plan-Typen und Teams zu sehen.
-3. Wähle „einen Plan-Typ erstellen" oder wähle einen vorhandenen Plan-Typ, um Servicepläne zu beginnen ([Pläne erstellen](./plans.md)), oder erkunde die Unterbereiche [Lieder](./songs.md) und [Aufgaben](./tasks.md).
+1. Öffnen Sie in B1 Admin das [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), erweitern Sie **Dienst** und klicken Sie auf **Pläne**.
+2. Klicken Sie auf die Schaltfläche "Ministerium hinzufügen", um ein neues Ministerium zu erstellen, oder aktivieren Sie "Alle anzeigen", um die vorhandenen Ministerium-Registerkarten anzuzeigen. Wählen Sie eine **Ministerium-Registerkarte** aus, um ihre Plantypen und Teams anzuzeigen.
+3. Wählen Sie "Plantyp erstellen" oder wählen Sie einen vorhandenen Plantyp, um mit [Erstellen von Serviceplänen](./plans.md) zu beginnen, oder erkunden Sie die Unterbereiche [Songs](./songs.md) und [Aufgaben](./tasks.md).
 
 :::info
-Bevor du Pläne erstellen kannst, musst du deine Ministerien im Bereich Serving und Teams in jedem Ministerium erstellen.
+Bevor Sie Pläne erstellen können, müssen Sie Ihre Ministerien im Dienst-Bereich und Teams in jedem Ministerium erstellen.
 :::

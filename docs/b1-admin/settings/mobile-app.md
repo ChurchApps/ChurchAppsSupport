@@ -24,8 +24,8 @@ Tabs configured here are delivered through the [B1.church Progressive Web App (P
 
 ## Accessing Navigation Settings
 
-1. In B1 Admin, open the **section menu** in the top-left corner (the section name with the small arrow) and choose **Mobile**.
-2. Choose **Navigation** in the secondary menu (`/mobile/navigation`).
+1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left) and expand **Mobile**.
+2. Click **Navigation** (`/mobile/navigation`).
 3. The Navigation page displays your current app tabs.
 
 ## Adding a New Tab
@@ -76,6 +76,15 @@ The **Member portal** item in the same Mobile section holds the settings that go
 :::tip
 Because the minimum-age check relies on birthdates, make sure birthdates are filled in for children in your congregation. This setting belongs to the same child-safety family as the [check-in safety controls](../attendance/checkin-safety.md).
 :::
+
+### Home Screen Sign-In Prompt
+
+Visitors who open the app's [Home screen](/docs/b1-church/getting-started/navigating#home) without signing in see a short prompt -- by default, *"Sign in to see your groups, giving, and more."* -- next to a **Sign In** button. The **Home screen sign-in prompt** settings on the same Member portal page (`/mobile/b1-mobile`) let you change it:
+
+- **Show sign-in prompt on the app home screen** -- Turn this off to hide both the prompt and the **Sign In** button from the Home screen. Visitors can still sign in from the app menu.
+- **Sign-in prompt text** -- Replace the default wording with your own message (up to 150 characters). Leave it blank to use the default. This box is disabled while the prompt is turned off.
+
+Click **Save** to apply. Saving refreshes the app's cached settings, so the change shows up the next time the Home screen loads.
 
 ## Where These Tabs Appear
 

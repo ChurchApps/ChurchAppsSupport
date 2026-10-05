@@ -76,9 +76,8 @@ Above **Main Navigation** on the left side of the Website Pages view are two swi
 
 When **Disable Public Website** is on:
 
-- Every public page, including the home page and your custom pages, sends visitors to the login screen.
-- The built-in **Generated** pages (such as Groups and Sermons) are no longer served and no longer appear in the Pages table.
-- The site header shows only the **Login** button, with no navigation links.
+- Every public page, including the home page and your custom pages, sends visitors who aren't signed in to the login screen. After they sign in, they go back to the page they asked for.
+- Signed-in members see the full website as usual, including your navigation and the built-in **Generated** pages (such as Groups and Sermons). Generated pages no longer appear in the Pages table.
 - Search engines are told not to index the site. The sitemap is empty and `robots.txt` blocks all crawling.
 
 These links keep working, so members and guests can still reach them:

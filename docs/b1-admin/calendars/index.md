@@ -12,7 +12,7 @@ The Calendars section in B1 Admin lets you create curated calendars for your chu
 
 ## Viewing Your Calendars
 
-1. In B1 Admin, navigate to **Calendars** in the main menu.
+1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Calendars**, and click **Calendars**.
 2. The Calendars page lists all your calendars with their name and status.
 3. Each calendar also shows the groups associated with it.
 

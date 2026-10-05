@@ -6,76 +6,76 @@ title: "Gruppesamtaler"
 
 <div class="article-intro">
 
-Meldinger-fanen på gruppesiden din er et sted der gruppemedlemmer kan legge ut meldinger og samhandle med hverandre. Bruk samtaler til å diskutere emner, dele oppdateringer og holde kontakt med gruppen din mellom møter.
+Fanen Meldinger på gruppesiden din er et sted der gruppemedlemmer kan skrive meldinger og snakke med hverandre. Bruk samtaler til å diskutere temaer, dele nyheter og holde kontakten med gruppen mellom samlingene.
 
 </div>
 
 <div class="prereqs">
-<h4>Før Du Begynner</h4>
+<h4>Før du begynner</h4>
 
 - Du må være [logget inn](../getting-started/logging-in.md) på B1.church-kontoen din.
-- Du må være medlem av gruppen for å få tilgang til Meldinger-fanen. Se [Gruppedetaljer](./group-details.md) for hvordan du bli med i en gruppe.
+- Du må være medlem av gruppen for å få tilgang til fanen Meldinger. Se [Gruppedetaljer](./group-details.md) for hvordan du blir med i en gruppe.
 
 </div>
 
-## Tilgang til Samtaler
+## Åpne samtaler
 
-1. Naviger til gruppdetalj-siden ved å klikke på en gruppe fra [gruppesiden](./browsing-groups.md).
+1. Gå til gruppesiden ved å klikke på en gruppe fra [gruppesiden](./browsing-groups.md).
 2. Kontroller at du er logget inn.
-3. Klikk på **Meldinger**-fanen i sidemenyen.
+3. Klikk på fanen **Meldinger** i sidemenyen.
 
-## Diskusjoner og Kunngjøringer
+## Diskusjoner og kunngjøringer
 
-Meldinger-fanen kan vise to underfaner, avhengig av hvilke strømmer kirken din har skrudd på for denne gruppen:
+Fanen Meldinger kan vise to underfaner, avhengig av hvilke strømmer menigheten har slått på for denne gruppen:
 
-- **Diskusjoner** -- Et sted der ethvert gruppemedlem kan legge ut meldinger og svare andre.
-- **Kunngjøringer** -- Meldinger lagt ut av gruppeledere som er viktige for alle medlemmer å se. Vanlige medlemmer kan lese kunngjøringer og reagere på dem, men bare ledere kan legge ut. Hvis du prøver å legge ut som vanlig medlem, vil du se en merknad om at bare ledere kan legge ut kunngjøringer og å svare via direktemelding i stedet.
+- **Diskusjoner** -- Et sted der alle gruppemedlemmer kan skrive meldinger og svare andre.
+- **Kunngjøringer** -- Meldinger fra gruppeledere som er viktige for alle medlemmer å se. Vanlige medlemmer kan lese kunngjøringer og reagere på dem, men bare ledere kan skrive nye. Hvis du prøver å skrive som vanlig medlem, ser du en melding om at bare ledere kan skrive kunngjøringer, og at du i stedet kan svare med en direktemelding.
 
-Hvis kirken din bare har skrudd på en av de to strømmene for denne gruppen, vil du se bare den strømmen uten fanelinje. Hvis begge er avslått, har gruppen ingen Meldinger-fane i det hele tatt.
+Hvis menigheten bare har slått på én av de to strømmene for denne gruppen, ser du bare den strømmen, uten fanelinje. Hvis begge er slått av, har ikke gruppen noen Meldinger-fane i det hele tatt.
 
-## Legge ut en Melding
+## Skrive en melding
 
-1. Åpne **Meldinger**-fanen på gruppesiden din.
-2. Kontroller at du er på **Diskusjoner**-underfanen (hvis fanelinjen er synlig).
-3. Skriv meldingen i tekstfeltet.
+1. Åpne fanen **Meldinger** på gruppesiden din.
+2. Kontroller at du er på underfanen **Diskusjoner** (hvis fanelinjen er synlig).
+3. Skriv meldingen din i tekstfeltet.
 4. Send meldingen for å dele den med gruppen.
 
-Meldingen vil være synlig for alle medlemmer av gruppen.
+Meldingen din blir synlig for alle medlemmene i gruppen.
 
-## Redigering eller Sletting av Meldingene Dine
+## Redigere eller slette meldingene dine
 
-Du kan redigere eller slette enhver melding du har lagt ut:
+Du kan redigere eller slette alle meldinger du har skrevet:
 
-1. Hold musepekeren over meldingen (eller trykk den på mobil) for å vise **flere alternativer**-knappen (⋮).
-2. Klikk knappen for å åpne meldingsmenyen.
-3. Velg **Rediger** for å endre meldingsteksten, eller **Slett** for å fjerne den.
-   - Når du redigerer, lastes meldingsteksten tilbake inn i inndatafeltet. Gjør endringene dine og send inn for å lagre dem.
-   - Når du sletter, vises en bekreftelses-dialog. Klikk **Bekreft** for å permanent fjerne meldingen.
+1. Hold musepekeren over meldingen din (eller trykk på den på mobil) for å vise knappen **flere valg** (⋮).
+2. Klikk på knappen for å åpne meldingsmenyen.
+3. Velg **Rediger** for å endre teksten, eller **Slett** for å fjerne meldingen.
+   - Når du redigerer, lastes meldingsteksten tilbake i inntastingsfeltet. Gjør endringene dine og send for å lagre dem.
+   - Når du sletter, vises en bekreftelsesdialog. Klikk på **Bekreft** for å fjerne meldingen permanent.
 
 :::info
-Du kan bare redigere eller slette dine egne meldinger. Meldinger lagt ut av andre medlemmer viser ikke rediger/slett-alternativene.
+Du kan bare redigere eller slette dine egne meldinger. Meldinger fra andre medlemmer har ikke valgene for å redigere eller slette.
 :::
 
-## Reagering på Meldinger
+## Reagere på meldinger
 
-I gruppechatten kan du reagere på enhver melding med en emoji:
+I gruppechatten kan du reagere på alle meldinger med en emoji:
 
-1. Trykk eller hold musepekeren over en melding og velg **Legg til reaksjon**.
+1. Trykk på en melding eller hold musepekeren over den, og velg **Legg til reaksjon**.
 2. Velg en av de seks emojiene: 👍 ❤️ 😂 🎉 🙏 😮.
 
-Reaksjoner vises som små brikker under meldingen med en telling av hvor mange personer som brukte hver. Din egen reaksjon er fremhevet -- trykk på brikken (eller velg den samme emojien igjen) for å fjerne den, eller velg en annen emoji for å legge til en annen. Reaksjoner vises live for alle i chatten.
+Reaksjonene vises som små chips under meldingen, med antall personer som har brukt hver av dem. Din egen reaksjon er utheva — trykk på chipen (eller velg den samme emojien igjen) for å fjerne den, eller velg en annen emoji for å legge til en til. Reaksjoner vises direkte for alle i chatten.
 
 :::tip
-Gruppsamtaler vises også på [Tidslinjen](../community/timeline.md) din, slik at du kan holde deg oppdatert med diskusjoner uten å besøke hver gruppe individuelt.
+Gruppesamtaler ligger på hver gruppes **Meldinger**-fane -- den gamle samlede [tidslinjen](../community/timeline.md) er tatt ut av bruk. Aktivitet som trenger oppmerksomheten din, kommer som et varsel under **bjelle**-ikonet i appfeltet.
 :::
 
-## Lederfunksjoner
+## Funksjoner for ledere
 
-Hvis du er en gruppeleder, har du ekstra muligheter i Meldinger-fanen:
+Hvis du er gruppeleder, har du flere muligheter i fanen Meldinger:
 
-- **Legg ut kunngjøringer** -- Bytt til **Kunngjøringer**-underfanen og legg ut meldinger som alle gruppemedlemmer kan lese.
-- **Legg ut diskusjoner** -- Du kan også delta i vanlige diskusjoner akkurat som ethvert annet medlem.
+- **Skrive kunngjøringer** -- Bytt til underfanen **Kunngjøringer** og skriv meldinger som alle gruppemedlemmer kan lese.
+- **Skrive diskusjonsinnlegg** -- Du kan også delta i vanlige diskusjoner som alle andre medlemmer.
 
 :::info
-Samtaler er spesifikke for hver gruppe. Meldinger du legger ut i en gruppe vil ikke vises i en annen gruppes samtaler.
+Samtaler er knyttet til hver enkelt gruppe. Meldinger du skriver i én gruppe, vises ikke i samtalene til en annen gruppe.
 :::

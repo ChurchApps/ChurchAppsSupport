@@ -28,6 +28,8 @@ Opening `https://yourchurchname.b1.church/mobile` takes you to the **Home** dash
 
 Tapping a card in Explore opens that tool. If your church has more tools than fit on the dashboard, the last card is **More**, which opens the full list at `/mobile/more`.
 
+If you are signed out, Home shows a **Welcome** heading in place of the greeting, with a short prompt ("Sign in to see your groups, giving, and more.") and a **Sign in** button. Your church can reword this prompt or hide it -- see [Mobile App Settings](../../b1-admin/settings/mobile-app.md#home-screen-sign-in-prompt). When it is hidden, you can still sign in from the menu or the Me tab.
+
 ## The Bottom Tab Bar
 
 On a phone, a tab bar is fixed to the bottom of the screen:

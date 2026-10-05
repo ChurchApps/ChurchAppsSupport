@@ -6,204 +6,220 @@ title: "Fluxos de Trabalho"
 
 <div class="article-intro">
 
-Os Fluxos de Trabalho movem pessoas através de uma série de etapas em um quadro visual. Cada pessoa se torna um cartão que viaja de uma etapa para a próxima -- de um acompanhamento de visitante pela primeira vez, para um processo de membro, para um agradecimento ao doador pela primeira vez, e qualquer outra coisa em que você precise rastrear muitas pessoas através do mesmo conjunto de estágios. Uma etapa pode pedir a um voluntário para fazer algo (fazer uma ligação, ter uma conversa) **e** executar ações automatizadas por conta própria -- enviar um email, aguardar alguns dias, adicionar a pessoa a um grupo -- então Fluxos de Trabalho lidam tanto com o acompanhamento humano quanto com o trabalho em torno dele. Fluxos de Trabalho estendem [Tarefas](./tasks.md) em um quadro Kanban de arrastar e soltar para que nada e ninguém caia pelas rachaduras.
+Os Fluxos de Trabalho movem pessoas através de uma série de etapas em um painel visual. Cada pessoa se torna um cartão que viaja de uma etapa para a próxima -- desde um acompanhamento de primeiro visitante, até um processo de associação, até um agradecimento de primeiro doador, e qualquer outra coisa em que você precise acompanhar muitas pessoas através do mesmo conjunto de estágios. Uma etapa pode pedir a um voluntário para fazer algo (fazer uma ligação, ter uma conversa) **e** executar ações automatizadas por conta própria -- enviar um email ou texto, aguardar alguns dias, adicionar a pessoa a um grupo -- para que os Fluxos de Trabalho lidem tanto com o acompanhamento humano quanto com o trabalho rotineiro em torno disso. Os Fluxos de Trabalho estendem [Tarefas](./tasks.md) em um painel Kanban de arrastar e soltar para que nada e ninguém caia pelas rachaduras.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Certifique-se de que as pessoas que você deseja rastrear existem no B1 Admin
-- Familiarize-se com como [Tarefas](./tasks.md) funcionam, já que cada cartão em um quadro é uma tarefa
-- Para usar a ação **Enviar email**, primeiro crie os modelos de email que você deseja enviar (gerenciados em **Mensagens → Gerenciar Modelos**)
-- Você precisará da permissão apropriada de Tarefas. Visualizar, editar cartões e gerenciar fluxos de trabalho são níveis de permissão separados (veja [Funções e Permissões](../settings/roles-permissions.md))
+- Certifique-se de que as pessoas que você deseja acompanhar existem no B1 Admin
+- Familiarize-se com o funcionamento das [Tarefas](./tasks.md), pois cada cartão em um painel é uma tarefa
+- Para usar a ação **Enviar email**, crie primeiro os modelos de email que você deseja enviar (gerenciados em **Mensagens → Gerenciar Modelos**)
+- Para usar a ação **Enviar texto**, conecte primeiro um [provedor de mensagens de texto](../settings/church-settings.md#texting)
+- Você precisará da permissão apropriada de Tarefas. Visualizar, editar cartões e gerenciar fluxos de trabalho são níveis de permissão separados (consulte [Funções e Permissões](../settings/roles-permissions.md))
 
 </div>
 
 ## Visualizando Fluxos de Trabalho
 
-Navegue até **Servir** e selecione **Fluxos de Trabalho** no menu. Você verá seus fluxos de trabalho listados e agrupados por categoria, com fluxos de trabalho ativos destacados. Clique em qualquer fluxo de trabalho para abrir seu quadro.
+Abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo do B1 Admin), expanda **Serving** (Serviço), e clique em **Workflows** (Fluxos de Trabalho). Você verá seus fluxos de trabalho listados e agrupados por categoria, com fluxos de trabalho ativos destacados. Clique em qualquer fluxo de trabalho para abrir seu painel.
 
 ## Criando um Fluxo de Trabalho
 
-1. Na página Fluxos de Trabalho, clique em **Adicionar Fluxo de Trabalho**.
+1. Na página Fluxos de Trabalho, clique em **Add Workflow** (Adicionar Fluxo de Trabalho).
 2. Escolha como começar:
-   - **Fluxo de trabalho em branco** -- comece do zero e construa suas próprias etapas.
-   - **A partir de um modelo** -- comece com um conjunto pronto de etapas que você pode editar. Os modelos integrados incluem:
-     - **Acompanhamento de Novo Visitante** -- Enviar email de boas-vindas → Chamada telefônica pessoal → Convide para a próxima etapa → Conectado
-     - **Classe de Membro** -- Expressar interesse → Registre-se para a aula → Participe da aula → Concluir membro
-     - **Agradecimento do Doador pela Primeira Vez** -- Enviar nota de agradecimento → Compartilhe o impacto da doação → Gerenciado
-3. Dê ao fluxo de trabalho um **Nome**.
-4. Opcionalmente atribua uma **Categoria** para agrupar fluxos de trabalho relacionados. Você pode criar uma nova categoria diretamente no dropdown.
-5. Deixe o fluxo de trabalho **Ativo** para que as pessoas possam ser adicionadas a ele, ou defina-o como **Inativo** para ocultá-lo das listas de adicionar ao fluxo de trabalho.
-6. Clique em **Salvar**.
+   - **Blank workflow** (Fluxo de trabalho em branco) -- comece do zero e crie suas próprias etapas.
+   - **From a template** (De um modelo) -- comece com um conjunto pronto de etapas que você pode editar. Os modelos integrados incluem:
+     - **New Visitor Follow-up** (Acompanhamento de Novo Visitante) -- Enviar email de boas-vindas → Ligação telefônica pessoal → Convidar para próxima etapa → Conectado
+     - **Membership Class** (Classe de Associação) -- Expressar interesse → Registre-se para classe → Frequente a aula → Conclusão da associação
+     - **First-time Giver Thank-you** (Agradecimento de Primeiro Doador) -- Enviar nota de agradecimento → Compartilhar impacto de doação → Administrado
+3. Dê ao fluxo de trabalho um **Name** (Nome).
+4. Opcionalmente, atribua uma **Category** (Categoria) para agrupar fluxos de trabalho relacionados. Você pode criar uma nova categoria diretamente no menu suspenso.
+5. Deixe o fluxo de trabalho **Active** (Ativo) para que as pessoas possam ser adicionadas a ele, ou defina-o como **Inactive** (Inativo) para ocultá-lo das listas de adicionar ao fluxo de trabalho.
+6. Clique em **Save** (Salvar).
 
 :::tip
-Use o botão **Duplicar** na lista Fluxos de Trabalho para copiar um fluxo de trabalho existente -- incluindo suas etapas, ações automatizadas e roteamento -- como ponto de partida para um novo.
+Use o botão **Duplicate** (Duplicar) na lista Fluxos de Trabalho para copiar um fluxo de trabalho existente -- incluindo suas etapas, ações automatizadas e roteamento -- como ponto de partida para um novo.
 :::
 
-## Construindo o Quadro com Etapas
+## Construindo o Painel com Etapas
 
-Cada quadro de fluxo de trabalho é composto de **etapas**, mostradas como colunas da esquerda para a direita. Abra um fluxo de trabalho e use **Adicionar Etapa** para criar cada estágio do seu processo.
+Cada painel de fluxo de trabalho é composto por **steps** (etapas), mostradas como colunas da esquerda para a direita. Abra um fluxo de trabalho e use **Add Step** (Adicionar Etapa) para criar cada estágio do seu processo.
 
 Quando você adiciona ou edita uma etapa, você pode configurar:
 
-- **Nome da Etapa** -- o título da coluna (por exemplo, "Chamada de Boas-vindas" ou "Aguardando Registro").
-- **Vencer em (dias)** -- define automaticamente uma data de vencimento quando um cartão entra nesta etapa. Cartões após sua data de vencimento são marcados como **Vencidos**.
-- **Responsável padrão** -- a pessoa ou grupo aos quais novos cartões nesta etapa são atribuídos automaticamente.
-- **Ações automatizadas** -- coisas que o sistema faz sozinho quando um cartão chega (veja abaixo).
-- **Roteamento** -- para onde o cartão vai quando sai da etapa (veja [Roteando Cartões com Resultados e Condições](#routing-cards-with-outcomes-and-conditions)).
+- **Step Name** (Nome da Etapa) -- o cabeçalho da coluna (por exemplo, "Welcome Call" (Ligação de Boas-vindas) ou "Awaiting Registration" (Aguardando Registro)).
+- **Due in (days)** (Prazo em dias) -- define automaticamente uma data de vencimento quando um cartão entra nesta etapa. Cartões após sua data de vencimento são sinalizados como **Overdue** (Vencido).
+- **Default assignee** (Responsável padrão) -- a pessoa ou grupo que os novos cartões nesta etapa são atribuídos automaticamente.
+- **Automated actions** (Ações automatizadas) -- coisas que o sistema faz por conta própria quando um cartão chega (veja abaixo).
+- **Routing** (Roteamento) -- para onde o cartão vai quando sai da etapa (consulte [Roteamento](#routing-cards-with-outcomes-and-conditions)).
 
-Arraste colunas de etapas para a ordem que corresponde ao seu processo. A ordem também define o caminho padrão que um cartão segue quando nenhum outro roteamento se aplica.
+Arraste as colunas de etapas para a ordem que corresponde ao seu processo. A ordem também define o caminho padrão que um cartão segue quando nenhum outro roteamento se aplica.
 
 :::info
-Salve uma nova etapa primeiro. As ações automatizadas e o roteamento se anexam à etapa, então o editor desbloqueia essas seções assim que a etapa existe.
+Salve uma nova etapa primeiro. Ações automatizadas e roteamento se vinculam à etapa, portanto o editor desbloqueia essas seções uma vez que a etapa existe.
 :::
 
 ## Ações Automatizadas
 
-Cada etapa pode conter uma lista de **ações automatizadas** que são executadas por conta própria no momento em que um cartão **entra** na etapa -- antes de qualquer pessoa tocá-lo. É assim que uma etapa solicita um voluntário *e* cuida do trabalho rotineiro em torno do acompanhamento.
+Cada etapa pode realizar uma lista de **automated actions** (ações automatizadas) que são executadas por conta própria no momento em que um cartão **entra** na etapa -- antes que alguém o toque. É assim que uma etapa promove um voluntário *e* cuida do trabalho rotineiro ao redor do acompanhamento.
 
-No editor de etapas, abra **Ações automatizadas**, clique em **Adicionar Ação**, escolha um tipo, preencha suas configurações e clique no ícone de salvar dessa ação. Adicione quantas precisar; elas executam **de cima para baixo em ordem**.
+No editor de etapas, abra **Automated actions** (Ações Automatizadas), clique em **Add Action** (Adicionar Ação), escolha um tipo, preencha suas configurações e clique no ícone de salvar nessa ação. Adicione quantas precisar; elas executam **de cima para baixo em ordem**.
 
-| Ação | O que faz |
+| Action (Ação) | What it does (O que faz) |
 |---|---|
-| **Enviar email** | Envia um modelo de email que você escolhe para a pessoa. Você pode substituir a linha de assunto. |
-| **Aguardar** | Pausa o cartão por alguns dias antes de continuar (veja abaixo). |
-| **Adicionar ao grupo** | Adiciona a pessoa a um [grupo](../groups/index.md) que você escolhe. |
-| **Adicionar ao fluxo de trabalho** | Inicia a pessoa em outro fluxo de trabalho -- útil para transferir entre processos. |
-| **Adicionar nota** | Registra uma nota no histórico do cartão. |
-| **Definir campo** | Atualiza um campo no registro da pessoa: Status de Membro, Status Civil, Gênero, Cidade, Estado ou CEP. |
-| **Webhook** | Envia os detalhes do cartão para um endereço web externo (URL) que você fornece, para conectar a outros sistemas. |
+| **Send email** (Enviar email) | Envia um modelo de email que você escolhe para a pessoa. Você pode substituir a linha de assunto. |
+| **Send text** (Enviar texto) | Envia um texto para a pessoa, através do [provedor de mensagens de texto](../settings/church-settings.md#texting) de sua igreja. |
+| **Wait** (Aguardar) | Pausa o cartão por um número de dias antes de continuar (veja abaixo). |
+| **Add to group** (Adicionar ao grupo) | Adiciona a pessoa a um [grupo](../groups/index.md) que você escolhe. |
+| **Remove from group** (Remover do grupo) | Remove a pessoa de um grupo que você escolhe. |
+| **Add to workflow** (Adicionar ao fluxo de trabalho) | Inicia a pessoa em outro fluxo de trabalho -- útil para transferir entre processos. |
+| **Add note** (Adicionar nota) | Registra uma nota no histórico do cartão. |
+| **Set field** (Definir campo) | Atualiza um campo no registro da pessoa: Status de Associação, Estado Civil, Gênero, Cidade, Estado ou CEP. |
+| **Webhook** (Webhook) | Envia os detalhes do cartão para um endereço web externo (URL) que você fornece, para conectar a outros sistemas. |
+| **Create task** (Criar tarefa) | Cria uma [tarefa](./tasks.md) com o título e descrição que você digita, atribuída a quem você escolher. |
 
-Após todas as ações de uma etapa serem concluídas, o cartão **repousa nessa etapa** para que uma pessoa possa trabalhar -- a menos que a etapa tenha uma rota automática que o mova adiante (veja [Etapas Totalmente Automatizadas](#fully-automated-steps)).
+Depois que todas as ações de uma etapa terminam, o cartão **repousa nessa etapa** para que uma pessoa possa trabalhar com ele -- a menos que a etapa tenha uma rota automática que o mova adiante (consulte [Etapas Totalmente Automatizadas](#fully-automated-steps)).
 
 :::info
-As ações automatizadas são executadas apenas quando um cartão chega através do fluxo normal -- quando é adicionado pela primeira vez, quando um resultado ou rota automática o traz, ou após um Aguardar terminar. Eles **não** são re-executados quando um membro da equipe arrasta manualmente um cartão para a etapa ou o envia de volta, portanto uma pessoa não receberá o mesmo email duas vezes.
+Ações automatizadas são executadas apenas quando um cartão chega através do fluxo normal -- quando é adicionado pela primeira vez, quando um resultado ou rota automática o traz, ou após uma Espera terminar. Elas **não** são re-executadas quando um membro da equipe arrasta manualmente um cartão para a etapa ou o envia de volta, portanto uma pessoa não receberá o mesmo email duas vezes.
 :::
 
 ### Enviando email
 
-Escolha **Enviar email**, selecione um de seus modelos de email e, opcionalmente, digite um assunto personalizado. Quando um cartão entra na etapa, a pessoa recebe esse email automaticamente. (Se a pessoa não tiver endereço de email registrado, a etapa simplesmente pula essa ação.)
+Escolha **Send email** (Enviar email), escolha um dos seus modelos de email e opcionalmente digite um assunto personalizado. Quando um cartão entra na etapa, a pessoa recebe esse email automaticamente. (Se a pessoa não tiver um endereço de email em arquivo, a etapa simplesmente pula essa ação.) [Campos de mesclagem](../settings/email-templates.md#merge-fields) no modelo, como `{{firstName}}`, são preenchidos com os detalhes da própria pessoa.
 
 :::info
-Os emails do Fluxo de Trabalho saem apenas depois que sua igreja foi aprovada para enviar email em grupo, e eles contam para o limite de email diário de sua igreja. Veja [Ativando Email em Grupo para Sua Igreja](../groups/group-members.md#turning-on-group-email-for-your-church).
+Emails de fluxo de trabalho saem apenas depois que sua igreja foi aprovada para enviar email em grupo, e contam para o limite de email diário de sua igreja. Consulte [Ativando Email em Grupo para Sua Igreja](../groups/group-members.md#turning-on-group-email-for-your-church).
 :::
 
-### Aguardando alguns dias (sequências de drip)
+### Enviando um texto
 
-A ação **Aguardar** retém um cartão pelo número de dias que você definiu. Enquanto aguarda, o cartão mostra como **Adiado**. Quando o aguardo termina:
+Escolha **Send Text** (Enviar Texto) e digite a **Text message** (Mensagem de Texto) (até 1.600 caracteres). Quando um cartão entra na etapa, a pessoa recebe esse texto no seu telefone celular. Você pode personalizar a mensagem com `{{firstName}}`, `{{lastName}}`, `{{displayName}}` ou `{{churchName}}`, que são preenchidos com os detalhes da pessoa quando o texto é enviado.
 
-1. Qualquer **ações restantes na mesma etapa** executam -- então você pode construir um drip como **Enviar email → Aguardar 3 dias → Enviar um email de lembrete**.
-2. Então, se a etapa tiver uma rota automática, o cartão se move; caso contrário, repousa na etapa para uma pessoa pegar.
+- Se a pessoa não tiver um telefone celular em arquivo, a ação é ignorada.
+- Se a pessoa optou por não receber, nenhum texto é enviado e o histórico do cartão registra **Text skipped: opted out** (Texto ignorado: optou por não receber).
+- Quando o texto sai, o histórico do cartão registra **Text sent** (Texto enviado). Se o envio falhar -- por exemplo, porque nenhum provedor de mensagens de texto está conectado ou sua igreja está sem créditos de mensagens de texto -- a falha é registrada no histórico do cartão e as ações restantes da etapa ainda são executadas.
+
+:::warning
+Os textos são enviados através do [provedor de mensagens de texto](../settings/church-settings.md#texting) de sua igreja. Se nenhum provedor estiver conectado, o editor de ação avisa *"No texting provider is set up"* (Nenhum provedor de mensagens de texto está configurado) e os textos não serão enviados.
+:::
+
+### Aguardando alguns dias (sequências de gotejamento)
+
+A ação **Wait** (Aguardar) mantém um cartão pelo número de dias que você define. Enquanto aguarda, o cartão é exibido como **Snoozed** (Suspenso). Quando a espera termina:
+
+1. Qualquer **ação restante na mesma etapa** é executada -- para que você possa construir um gotejamento como **Enviar email → Aguardar 3 dias → Enviar um email de lembrete**.
+2. Então, se a etapa tiver uma rota automática, o cartão se move adiante; caso contrário, repousa na etapa para que uma pessoa o pegue.
 
 :::tip
-Um **Aguardar** no início de uma etapa é uma maneira simples de "manter" um cartão antes de surgir para um voluntário -- por exemplo, *Aguardar 7 dias, depois um treinador entra em contato*.
+Uma **Wait** (Espera) no início de uma etapa é uma forma simples de "reter" um cartão antes de aparecer a um voluntário -- por exemplo, *Aguardar 7 dias, depois um técnico chega*.
 :::
 
 ## Adicionando Pessoas como Cartões
 
-Existem várias maneiras de colocar pessoas em um quadro:
+Existem várias maneiras de colocar pessoas em um painel:
 
-- **Do quadro** -- Clique em **Adicionar Cartão** na parte inferior de uma coluna de etapas e escolha uma pessoa. Você também pode escolher um grupo, e cada membro desse grupo é adicionado como um cartão.
-- **Do registro da pessoa** -- Use **Adicionar ao Fluxo de Trabalho** na página de uma pessoa para largá-la em um fluxo de trabalho.
-- **Da pesquisa de Pessoas** -- Selecione várias pessoas e use a ação **Adicionar ao Fluxo de Trabalho** em massa para adicioná-las todas de uma vez.
-- **Automaticamente com um acionador** -- Adicione pessoas quando algo acontecer, como um envio de formulário ou um primeiro presente (veja [Acionadores](#triggers) abaixo).
+- **From the board** (Do painel) -- Clique em **Add Card** (Adicionar Cartão) na parte inferior de uma coluna de etapa e escolha uma pessoa. Você também pode escolher um grupo, e todos os membros desse grupo são adicionados como um cartão.
+- **From a person's record** (Do registro de uma pessoa) -- Use **Add to Workflow** (Adicionar ao Fluxo de Trabalho) na página de uma pessoa para colocá-la em um fluxo de trabalho.
+- **From People search** (Da pesquisa de Pessoas) -- Selecione várias pessoas e use a ação em massa **Add to Workflow** (Adicionar ao Fluxo de Trabalho) para adicioná-las todas de uma vez.
+- **Automatically with a trigger** (Automaticamente com um gatilho) -- Adicione pessoas quando algo acontece, como um envio de formulário ou um primeiro presente (consulte [Gatilhos](#triggers) abaixo).
 
-## Trabalhando o Quadro
+## Trabalhando o Painel
 
-Abra um fluxo de trabalho para ver seu quadro. Cada cartão mostra o nome da pessoa, a quem está atribuído e um chip de data de vencimento ou status (**Vencidos** ou **Adiado**). Uma coluna de etapas também mostra pequenos crachás para quaisquer ações automatizadas que ela executa e anotações para seu roteamento, dando-lhe um mapa de como os cartões fluem à primeira vista.
+Abra um fluxo de trabalho para ver seu painel. Cada cartão mostra o nome da pessoa, a quem está atribuído e um chip de data de vencimento ou status (**Overdue** (Vencido) ou **Snoozed** (Suspenso)). Uma coluna de etapa também mostra pequenas crachás para quaisquer ações automatizadas que executa e anotações para seu roteamento, dando-lhe um mapa de um relance de como os cartões fluem.
 
-- **Mover um cartão** -- Arraste um cartão de uma coluna para a próxima conforme a pessoa progride.
-- **Abrir um cartão** -- Clique duas vezes em um cartão (ou clique nele) para abrir sua gaveta de detalhes, onde você pode mudar a etapa, reatribuir, adicionar notas e revisar o que já aconteceu.
+- **Move a card** (Mova um cartão) -- Arraste um cartão de uma coluna para a próxima conforme a pessoa avança.
+- **Open a card** (Abra um cartão) -- Clique duas vezes em um cartão (ou clique nele) para abrir seu painel de detalhes, onde você pode alterar a etapa, reatribuir, adicionar notas e revisar o que já aconteceu.
 
-Da gaveta de cartões você pode:
+Na gaveta do cartão você pode:
 
-- **Atribuir** o cartão a uma pessoa ou grupo diferente.
-- **Adiar** o cartão por 1 dia, 3 dias ou 1 semana para ocultar temporariamente sua data de vencimento.
-- **Enviar de Volta** para a etapa anterior ou **Pular** para a próxima etapa.
-- **Fixar atribuição** -- manter o mesmo proprietário no cartão mesmo quando se move entre etapas. Por padrão, mover um cartão para uma nova etapa o reatribui ao responsável padrão dessa etapa; fixar mantém a pessoa atual responsável em todo o processo.
-- **Concluir** o cartão para terminá-lo, ou escolha um botão **Resultado** se a etapa tiver resultados configurados (veja [Roteando Cartões com Resultados e Condições](#routing-cards-with-outcomes-and-conditions)).
-- **Adicionar notas** e revisar o **histórico** do cartão -- incluindo um log de ações automatizadas que foram executadas (emails enviados, aguardas, etc.).
+- **Assign** (Atribuir) o cartão para uma pessoa ou grupo diferente.
+- **Snooze** (Suspender) o cartão por 1 dia, 3 dias ou 1 semana para ocultar temporariamente sua data de vencimento.
+- **Send Back** (Enviar de Volta) para a etapa anterior ou **Skip** (Pular) para a próxima etapa.
+- **Pin assignment** (Atribuição de pino) -- mantenha o mesmo proprietário no cartão enquanto ele se move entre etapas. Por padrão, mover um cartão para uma nova etapa o reatribui ao responsável padrão dessa etapa; o pino mantém a pessoa atual responsável durante todo o período.
+- **Complete** (Concluir) o cartão para finalizá-lo, ou escolha um botão **Outcome** (Resultado) se a etapa tiver resultados configurados (consulte [Roteamento](#routing-cards-with-outcomes-and-conditions)).
+- **Add notes** (Adicionar notas) e revisar o **history** (histórico) do cartão -- incluindo um registro de ações automatizadas que foram executadas (emails enviados, esperas, etc.).
 
 ### Ações em massa
 
-Selecione as caixas de seleção em vários cartões para agir sobre eles juntos. Uma barra de ferramentas aparece permitindo que você **Conclua**, **Adie**, **Reatribua** ou **Mova** todos os cartões selecionados para outra etapa de uma vez.
+Selecione as caixas de seleção em vários cartões para agir sobre eles juntos. Uma barra de ferramentas aparece permitindo que você **Complete** (Conclua), **Snooze** (Suspenda), **Reassign** (Reatribua) ou **Move** (Mova) todos os cartões selecionados para outra etapa de uma vez.
 
 ## Roteando Cartões com Resultados e Condições
 
-O Roteamento controla para onde um cartão vai quando sai de uma etapa. Abra o editor de uma etapa para configurar dois tipos de roteamento.
+O roteamento controla para onde um cartão vai quando sai de uma etapa. Abra o editor de uma etapa para configurar dois tipos de roteamento.
 
 ### Botões de resultado
 
-Os Resultados são botões mostrados na gaveta de cartões quando você está concluindo um cartão nessa etapa. Em vez de um único botão **Concluir**, você pode oferecer opções como "Ingressou em um Grupo" ou "Não Interessado." Cada resultado pode:
+Resultados são botões mostrados na gaveta do cartão quando você está concluindo um cartão nessa etapa. Em vez de um único botão **Complete** (Concluir), você pode oferecer opções como "Joined a Group" (Entrou em um Grupo) ou "Not Interested" (Não Interessado). Cada resultado pode:
 
-- Enviar o cartão para **outra etapa** neste fluxo de trabalho,
-- **Transferir o cartão** para um fluxo de trabalho completamente diferente, ou
-- **Fechar** o cartão.
+- Enviar o cartão para **another step** (outra etapa) neste fluxo de trabalho,
+- **Hand the card off** (Passar o cartão) para um fluxo de trabalho totalmente diferente, ou
+- **Close** (Fechar) o cartão.
 
-Isso permite que uma decisão ramifique a pessoa em caminhos diferentes.
+Isso permite que uma decisão ramifique a pessoa em diferentes caminhos.
 
 ### Roteamento automático (condicional)
 
-As rotas automáticas movem um cartão adiante **no momento em que entra em uma etapa** (e após suas ações automatizadas serem concluídas), sem que ninguém clique, se a pessoa corresponder a um conjunto de condições. Adicione uma rota, escolha a etapa de destino e defina uma ou mais **condições** (por exemplo, campus de uma pessoa, idade ou status de membro). Uma rota sem condições corresponde a todos.
+Rotas automáticas movem um cartão adiante **no momento em que ele entra em uma etapa** (e depois que suas ações automatizadas terminam), sem que alguém clique, se a pessoa corresponder a um conjunto de condições. Adicione uma rota, escolha a etapa de destino e defina uma ou mais **conditions** (condições) (por exemplo, campus, idade ou status de associação de uma pessoa). Uma rota sem condições corresponde a todos.
 
 :::info
-No quadro, cada coluna de etapas mostra pequenas anotações descrevendo seu roteamento -- por exemplo, um rótulo de resultado ou "se corresponder" seguido por uma seta para a etapa de destino ou fluxo de trabalho.
+No painel, cada coluna de etapa mostra pequenas anotações descrevendo seu roteamento -- por exemplo, um rótulo de resultado ou "if matches" (se corresponder) seguido por uma seta para a etapa ou fluxo de trabalho de destino.
 :::
 
 ## Etapas Totalmente Automatizadas
 
-Você pode fazer uma etapa ser executada inteiramente por conta própria, sem que ninguém a trabalhe. Dê à etapa suas **ações automatizadas** e adicione uma **rota automática** (sem condições) apontando para a próxima etapa. Quando um cartão entra, as ações executam, e então a rota o avança imediatamente -- o cartão passa direto.
+Você pode fazer uma etapa rodar inteiramente por conta própria, sem ninguém trabalhando nela. Dê à etapa seus **ações automatizadas** e adicione uma **rota automática** (sem condições) apontando para a próxima etapa. Quando um cartão entra, as ações são executadas e então a rota o avança imediatamente -- o cartão passa direto.
 
 :::tip
-Combine isso com **Aguardar**: *Enviar email de boas-vindas → Aguardar 3 dias → avançar automaticamente para a etapa "Chamada pessoal".* O email e o tempo são gerenciados para você, e um voluntário só vê o cartão quando é hora do toque humano.
+Combine isso com **Wait** (Espera): *Enviar email de boas-vindas → Aguardar 3 dias → avançar automaticamente para a etapa "Personal call" (Chamada pessoal).* O email e o tempo são tratados para você, e um voluntário apenas vê o cartão quando é hora do toque humano.
 :::
 
-## Acionadores
+## Gatilhos
 
-Os Acionadores adicionam pessoas a um fluxo de trabalho automaticamente quando algo acontece, para que você nunca tenha que adicionar cartões manualmente. Em um quadro de fluxo de trabalho, clique na aba **Acionadores**, depois em **Adicionar Acionador**. Existem dois tipos:
+Gatilhos adicionam pessoas a um fluxo de trabalho automaticamente quando algo acontece, para que você nunca precise adicionar cartões manualmente. Em um painel de fluxo de trabalho, clique na aba **Triggers** (Gatilhos), depois em **Add Trigger** (Adicionar Gatilho). Existem dois tipos:
 
-### Acionadores de eventos
+### Gatilhos de evento
 
-Disparam assim que um registro é alterado no B1. Escolha o evento, depois opcionalmente adicione **condições** para que apenas as pessoas correspondentes sejam adicionadas:
+Acionam assim que um registro muda no B1. Escolha o evento e, opcionalmente, adicione **conditions** (condições) para que apenas pessoas correspondentes sejam adicionadas:
 
-- **Pessoa · Criada / Atualizada** -- por exemplo, adicione qualquer um cujo status se torne *Visitante*.
-- **Doação · Criada** -- por exemplo, adicione uma primeira ou grande doação a um fluxo de trabalho de agradecimento (combine em quantidade, fundo ou método).
-- **Grupo · Membro Ingressou** / **Grupo · Criado**.
-- **Formulário · Enviado** -- adicione qualquer um que envie um formulário escolhido (ótimo para um cartão "Sou Novo" ou "Conectar").
+- **Person · Created / Updated** (Pessoa · Criada / Atualizada) -- por exemplo, adicione qualquer pessoa cujo status se torne *Visitor* (Visitante).
+- **Donation · Created** (Doação · Criada) -- por exemplo, adicione um presente de primeira vez ou grande a um fluxo de trabalho de agradecimento (corresponda em quantidade, fundo ou método).
+- **Group · Member Joined** (Grupo · Membro Aderiu) / **Group · Created** (Grupo · Criado).
+- **Form · Submitted** (Formulário · Enviado) -- adicione qualquer pessoa que envie um formulário escolhido (ótimo para um cartão "I'm New" (Sou Novo) ou "Connect" (Conectar)).
 
-### Acionadores de agenda
+### Gatilhos de cronograma
 
-Executar uma base recorrente -- diária, semanal, mensal ou anualmente -- contra um conjunto de condições. Use-os para alcance baseado em tempo, como *todos cujo aniversário de membro é hoje* ou uma *verificação mensal*.
+Executado regularmente -- diariamente, semanalmente, mensalmente ou anualmente -- em relação a um conjunto de condições. Use-os para um alcance baseado em tempo, como *todos cujo aniversário de associação é hoje* ou uma *verificação mensal*.
 
-Para qualquer acionador você também pode definir:
+Para qualquer gatilho, você também pode definir:
 
-- A **etapa de entrada** na qual o novo cartão começa (padrão é a primeira etapa).
-- **Uma vez por pessoa** -- então a mesma pessoa não é adicionada ao fluxo de trabalho duas vezes pelo acionador.
-- **Ativo** -- ative ou desative o acionador sem excluir.
+- A **entry step** (etapa de entrada) do novo cartão começa (padrão é a primeira etapa).
+- **Once per person** (Uma vez por pessoa) -- para que a mesma pessoa não seja adicionada ao fluxo de trabalho duas vezes pelo gatilho.
+- **Active** (Ativo) -- ative ou desative o gatilho sem deletá-lo.
 
 :::tip
-Combine um acionador **Formulário · Enviado** com o modelo **Acompanhamento de Novo Visitante** para transformar seu formulário "Cartão de Conexão" ou "Sou Novo" em um pipeline de acompanhamento automático.
+Emparelhe um gatilho **Form · Submitted** (Formulário · Enviado) com o modelo **New Visitor Follow-up** (Acompanhamento de Novo Visitante) para transformar seu formulário "Connect Card" (Cartão de Conexão) ou "I'm New" (Sou Novo) em um pipeline de acompanhamento automático.
 :::
 
 ## Meus Cartões
 
-Voluntários e equipe não precisam cavar através de cada quadro para encontrar seu trabalho. A página **Meus Cartões** (vinculada da página Fluxos de Trabalho) lista cada cartão atribuído ao usuário atual em todos os fluxos de trabalho. Clicar em um cartão abre o quadro ao qual pertence.
+Voluntários e equipe não precisam procurar em cada painel para encontrar seu trabalho. A página **My Cards** (Meus Cartões) (vinculada da página Fluxos de Trabalho) lista todos os cartões atribuídos ao usuário atual em todos os fluxos de trabalho. Clicar em um cartão abre o painel a que ele pertence.
 
 ## Relatórios
 
-Abra um fluxo de trabalho e clique em **Relatórios** para ver análises para esse fluxo de trabalho:
+Abra um fluxo de trabalho e clique em **Reports** (Relatórios) para ver a análise desse fluxo de trabalho:
 
-- **Vencidos** -- o número de cartões após sua data de vencimento.
-- **Cartões por Etapa** -- quantos cartões atualmente estão em cada etapa, mostrados como um gráfico de coluna.
-- **Concluído (30 dias)** -- rendimento nos últimos 30 dias, mostrado como um gráfico de linha.
+- **Overdue** (Vencidos) -- o número de cartões após sua data de vencimento.
+- **Cards per Step** (Cartões por Etapa) -- quantos cartões atualmente residem em cada etapa, mostrado como um gráfico de coluna.
+- **Completed (30 days)** (Concluído (30 dias)) -- throughput nos últimos 30 dias, mostrado como um gráfico de linhas.
 
-Use-os para detectar gargalos -- por exemplo, uma etapa onde os cartões se acumulam e nunca avançam.
+Use-os para identificar gargalos -- por exemplo, uma etapa em que cartões se acumulam e nunca avançam.
 
 ## Artigos Relacionados
 
-- [Tarefas](./tasks.md) -- os itens de ação individual em que os cartões do fluxo de trabalho são construídos
-- [Formulários](../forms/index.md) -- construa os formulários que podem desencadear fluxos de trabalho
-- [Grupos](../groups/index.md) -- os grupos que uma ação "Adicionar ao grupo" pode colocar pessoas
-- [Funções e Permissões](../settings/roles-permissions.md) -- controle quem pode visualizar, editar e gerenciar fluxos de trabalho
+- [Tasks](./tasks.md) -- os itens de ação individuais em que os cartões de fluxo de trabalho são construídos
+- [Forms](../forms/index.md) -- construa os formulários que podem disparar fluxos de trabalho
+- [Groups](../groups/index.md) -- os grupos onde uma ação "Add to group" (Adicionar ao grupo) pode colocar pessoas
+- [Roles & Permissions](../settings/roles-permissions.md) -- controle quem pode visualizar, editar e gerenciar fluxos de trabalho

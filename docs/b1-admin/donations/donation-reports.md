@@ -22,7 +22,7 @@ B1 Admin gives you several ways to view and analyze your church's giving data. T
 
 The giving dashboard is the **Dashboard** tab of the **Summary** page, the first page you see when you open the **Donations** section.
 
-1. Open the **section menu** in the top-left corner and choose **Donations**. The **Summary** page opens on the **Dashboard** tab.
+1. Open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left of B1 Admin), expand **Donations**, and click **Summary**. The **Summary** page opens on the **Dashboard** tab.
 2. Use the **Weekly**, **Monthly**, and **Quarterly** toggle above the report to choose how giving is grouped.
 3. In the **Filter Report** panel, set the **Start Date** and **End Date** (by default, the past year through yesterday) and optionally pick a **Fund**, then click **Run Report**. The report runs automatically with the defaults when the page opens.
 4. Four **KPI cards** display your giving metrics for the selected range:
@@ -31,7 +31,7 @@ The giving dashboard is the **Dashboard** tab of the **Summary** page, the first
    - **Unique Donors** -- The number of distinct people who gave.
    - **Total Donations** -- The total number of individual donations.
 5. Below the KPIs, a bar chart shows giving per week, month, or quarter, broken out by fund.
-6. Click **Download Options** and choose **Summary** to export a CSV of the totals by period and fund, or click the print icon to print the report.
+6. Click **Download Options** and choose **Summary** to export a CSV of the totals by period and fund, or click the print icon to print the report. Your church's name appears at the top of the printed report.
 
 If donations in the period were given in more than one currency, the KPI totals are converted to your church currency and a **Converted at current exchange rates** note appears below the cards. See [Multi-Currency Support](./multi-currency.md#converted-totals) for details.
 
@@ -58,7 +58,7 @@ For a breakdown of who gave, how much, and to which fund:
 
 Donation reporting is built directly into the Donations section -- the Summary page serves as your donation summary report:
 
-1. Open the **section menu** in the top-left corner and choose **Donations** to open the Summary page.
+1. In the Jump menu, choose **Donations > Summary**.
 2. On the **Dashboard** tab, set the **Start Date** and **End Date** in the **Filter Report** panel and click **Run Report**.
 3. Click **Download Options** and choose **Summary** to export the report as a CSV file.
 

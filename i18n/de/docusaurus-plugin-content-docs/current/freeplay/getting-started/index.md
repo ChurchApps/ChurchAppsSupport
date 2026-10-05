@@ -1,60 +1,69 @@
 ---
-title: "Erste Schritte mit FreePlay"
+title: "Erste Schritte"
 ---
 
 # Erste Schritte mit FreePlay
 
 <div class="article-intro">
 
-FreePlay ist für Android TV, Amazon Fire TV und Apple TV verfügbar. Diese Anleitung führt Sie durch die Installation der App, den Start beim ersten Mal und das Erlernen der grundlegenden Fernbedienungs-Steuerungen, die Sie in der ganzen App verwenden werden.
+FreePlay ist für Android TV, Amazon Fire TV und Apple TV verfügbar. Diese Anleitung führt Sie durch die Installation der App, das erstmalige Starten und das Erlernen der grundlegenden TV-Fernbedienungs-Steuerelemente, die Sie durchgehend in der App verwenden werden.
 
 </div>
 
 :::tip Neu bei FreePlay? Fangen Sie hier an
-Schauen Sie sich unser **<a href="/guides/freeplay-quickstart" target="_blank">Quick-Start-Video</a>** an – installieren Sie FreePlay und spielen Sie in wenigen Minuten Inhalte. Keine technischen Fähigkeiten erforderlich.
+Sehen Sie sich unser **<a href="/guides/freeplay-quickstart" target="_blank">Quick-Start-Video</a>** an – installieren Sie FreePlay und beginnen Sie, in wenigen Minuten Inhalte abzuspielen. Keine technischen Fähigkeiten erforderlich.
 :::
 
-:::tip Setup mit B1 Admin?
-Unser **<a href="/guides/freeplay-b1admin" target="_blank">Schritt-für-Schritt-Anleitung</a>** deckt den vollständigen Setup ab – von der Verknüpfung von Inhaltsanbietern bis zur automatischen Download der richtigen Lektion in Ihr Klassenzimmer-TV jede Woche.
+:::tip Mit B1 Admin einrichten?
+Unsere **<a href="/guides/freeplay-b1admin" target="_blank">Schritt-für-Schritt-Anleitung</a>** deckt das vollständige Setup ab – vom Verlinken von Content-Providern bis zum automatischen Herunterladen der richtigen Lektion auf Ihrem Klassenzimmer-Fernseher jede Woche.
 :::
 
-## Installieren von FreePlay
+## FreePlay installieren
 
-:::tip Kaufen eines Geräts?
-Nicht alle Streaming-Sticks können FreePlay ausführen – die neuesten Budget-Fire-TV-Modelle können nicht. Siehe **[Wählen eines Geräts](./choosing-a-device.md)** für genau, was zu kaufen ist.
+:::tip Kaufen Sie ein Gerät?
+Nicht alle Streaming-Sticks können FreePlay ausführen – die neuesten Budget Fire TV-Modelle können das nicht. Siehe **[Ein Gerät auswählen](./choosing-a-device.md)**, um genau zu wissen, was zu kaufen ist.
 :::
 
 ### Android TV / Amazon Fire TV
 
-1. Öffnen Sie den App Store auf Ihrem Fernseher (**Google Play Store** oder **Amazon Appstore**)
+1. Öffnen Sie den App-Store auf Ihrem Fernseher (**Google Play Store** oder **Amazon Appstore**)
 2. Suchen Sie nach **FreePlay**
 3. Wählen Sie die App und wählen Sie **Installieren**
 
 ### Apple TV
 
-1. Öffnen Sie die **App Store** auf Ihrem Apple TV
+1. Öffnen Sie den **App Store** auf Ihrem Apple TV
 2. Suchen Sie nach **FreePlay**
-3. Wählen Sie die App und wählen Sie **Herunterladen**
+3. Wählen Sie die App und wählen Sie **Abrufen**
 
-## Starten der App
+## App starten
 
-Wenn Sie FreePlay zum ersten Mal öffnen, sehen Sie einen animierten Begrüßungsbildschirm mit dem FreePlay-Logo. Die App prüft auf alle zuvor verbundenen Inhaltsanbieter. Wenn Sie bereits einen Anbieter verbunden haben, gelangen Sie direkt zu dem Inhalts-Browser des Anbieters. Andernfalls wird der Bildschirm **Content-Anbieter** geöffnet, auf dem Sie Ihre erste Inhaltsquelle verbinden können.
+Wenn Sie FreePlay zum ersten Mal öffnen, sehen Sie einen animierten Splash-Bildschirm mit dem FreePlay-Logo. Die App überprüft alle zuvor verbundenen Content-Provider. Wenn Sie bereits einen Provider verbunden haben, wird er direkt zum Content-Browser dieses Providers führen. Andernfalls öffnet er den **Content-Provider**-Bildschirm, auf dem Sie sich mit Ihrer ersten Content-Quelle verbinden können.
 
-## Navigation mit Ihrer TV-Fernbedienung
+## Mit Ihrer Fernbedienung navigieren
 
-FreePlay ist für Fernbedienungen gebaut. Hier sind die Steuerungen, die Sie in der ganzen App verwenden werden:
+FreePlay ist für Fernbedienungen aus Fernsehen gebaut. Hier sind die Steuerelemente, die Sie durchgehend in der App verwenden:
 
-- **Richtungspad (oben/unten/links/rechts)** – Zwischen Elementen auf dem Bildschirm verschieben
-- **Wählen / OK-Knopf** – Wählen Sie das hervorgehobene Element
-- **Linker Pfeil** – Öffnen Sie die Seitenleiste von einem beliebigen Bildschirm
-- **Rechter Pfeil** – Schließen Sie die Seitenleiste und kehren Sie zum Hauptinhaltsbereich zurück
-- **Zurück / Menü-Knopf** – Gehen Sie zum vorherigen Bildschirm zurück
+- **Richtungsfeld (oben/unten/links/rechts)** – zwischen Elementen auf dem Bildschirm wechseln
+- **Auswählen / OK-Taste** – das hervorgehobene Element wählen
+- **Linkspfeil** – die Seitenleiste von einem beliebigen Bildschirm aus öffnen
+- **Rechtspfeil** – die Seitenleiste schließen und zum Haupt-Content-Bereich zurückkehren
+- **Zurück / Menü-Taste** – zum vorherigen Bildschirm zurückgehen
 
 :::tip
-Die Seitenleiste bricht zu einem engen Strip von Icons zusammen, wenn Sie Inhalte durchsuchen. Drücken Sie die linke Pfeiltaste auf Ihrer Fernbedienung, um es zu erweitern und die vollständigen Etiketten zu sehen.
+Die Seitenleiste kollabiert zu einem schmalen Icon-Streifen, wenn Sie Inhalte durchsuchen. Drücken Sie den Linkspfeil auf Ihrer Fernbedienung, um ihn zu erweitern und die vollständigen Labels zu sehen.
 :::
 
-## Weiter
+## Die Seitenleiste
 
-- **[Wählen eines Paarungsmodus](./pairing-modes)** – Erfahren Sie von den verschiedenen Wege, Ihren Fernseher zu verbinden
-- **[Inhaltsanbieter](../content-providers/)** – Verbinden Sie sich mit Lessons.church, Bible Project und mehr
+Die Seitenleiste listet von oben nach unten auf:
+
+- **Heutiger Plan** – wird angezeigt, wenn der Fernseher mit einem Plan gekoppelt ist. Siehe [Plan Mode](../plan-mode/)
+- **Ankündigungen** – wird angezeigt, sobald Sie einen Ankündigungsordner ausgewählt haben. Siehe [Ankündigungen](../content-providers/announcements)
+- **Durchsuchen** – jeder verbundene Content-Provider, den Sie durchsuchen können. Siehe [Inhalte durchsuchen und herunterladen](../content-providers/browsing-content)
+- **Einstellungen** – am unteren Rand der Seitenleiste. Öffnet **Downloads** (Inhalte abspielen oder löschen, die auf diesem Gerät gespeichert sind) und **Provider** (Content-Provider verbinden und Ankündigungsordner auswählen)
+
+## Was kommt als nächstes
+
+- **[Kopplungsmodus auswählen](./pairing-modes)** – erfahren Sie mehr über die verschiedenen Möglichkeiten, Ihren Fernseher zu verbinden
+- **[Content-Provider](../content-providers/)** – Verbindung zu Lessons.church, Bible Project und mehr

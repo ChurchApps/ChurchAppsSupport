@@ -28,7 +28,7 @@ When a member submits a profile change, it appears as a task assigned to your ap
 3. Any pending profile change requests will be listed there.
 
 **From Serving &rarr; My Work:**
-1. In the top navigation, click **Serving**.
+1. Open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left of B1 Admin) and expand **Serving**.
 2. Click **My Work**.
 3. Click the **Assigned to My Groups** tab under Tasks.
 
@@ -45,7 +45,7 @@ The task will close automatically once the changes are applied.
 
 If your church wants profile changes to require approval, a Directory Approval Group must be configured first.
 
-1. In the top navigation, click **Mobile**.
+1. Open the Jump menu and expand **Mobile**.
 2. Click **Member portal** (the "Portal settings" page).
 3. Under **Directory Approval Group**, select the group whose members should review profile change requests.
 4. Click **Save**.

@@ -22,7 +22,7 @@ Once your campuses, service times, and groups are set up, you can manually recor
 
 A session represents one occurrence of a group meeting -- for example, your K--3rd grade class on a specific Sunday.
 
-1. Open **B1 Admin**, open the **section menu** in the top-left corner and choose **People**, then click the **Groups** tab.
+1. Open **B1 Admin**, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **People**, and click **Groups**.
 2. Select the group you want to record attendance for.
 3. Click the **Sessions** tab.
 4. Click **New** to create a new session.
@@ -59,6 +59,20 @@ Unchecking someone who was already recorded as present and then saving removes t
 To record someone who is not a member of the group, search for them in the person search beside the attendance list. If they are not in your database yet, you can create them from the search. They are added to the list already checked. Click **Save Attendance** to record them.
 
 People who checked in at a kiosk show a **Volunteer** or **Guest** chip. People who are not group members show a **Guest** chip.
+
+## Checking Which Groups Still Need Attendance
+
+When several classes meet at the same service time, you can see at a glance which ones still need their attendance entered for that date.
+
+1. Open a session that has a service time.
+2. Click **Who Still Needs Attendance** at the top of the attendance list.
+3. A dialog lists every group assigned to that service time, with a summary such as "5 of 8 groups entered" at the top.
+
+Groups with no one marked present for that date show a **Not entered** chip and are listed first. Groups that have attendance show **Entered** with the number of people marked present (for example, "Entered (12)"). Click a group's name to jump to that group and record its attendance.
+
+:::tip
+Pair this with **Print All Classes** and [adding sessions for every class in a service time](#adding-sessions-for-every-class-in-a-service-time): create the sessions, hand out roll sheets, then use **Who Still Needs Attendance** to see which sheets haven't been entered yet.
+:::
 
 ## Printing a Roll Sheet
 

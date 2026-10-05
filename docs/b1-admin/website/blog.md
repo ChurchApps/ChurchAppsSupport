@@ -20,8 +20,8 @@ The Blog page lets you publish news, updates, and devotionals to your church web
 
 ## Accessing the Blog
 
-1. In the B1 Admin, click **Website** in the left menu.
-2. Click the **Blog** tab at the top of the Website Pages view.
+1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left) and expand **Website**.
+2. Click **Blog**.
 3. The Blog page lists every post along with its state and publish date.
 
 ## Adding a Post

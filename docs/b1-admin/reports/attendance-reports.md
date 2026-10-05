@@ -24,8 +24,9 @@ B1 Admin provides three attendance reports to help you understand how people are
 The Attendance Trend report shows how attendance changes over time for your services.
 
 1. Go directly to **admin.b1.church/reports/attendanceTrend** in your browser (reports have no entry in the navigation menu — bookmarking the address is the easiest way to get back to it). The same report is also on the **Attendance Trend** tab of the Attendance page.
-2. Optionally select a **Campus**, **Service**, **Service Time**, or **Group** to filter the results, then click **Run Report**.
-3. The report displays a bar chart and table of total visits per week. Each week is labeled with the date of that week's Sunday.
+2. Optionally select a **Campus**, **Service**, **Service Time**, or **Group** to filter the results.
+3. Set the **Start Date** and **End Date**. By default the report covers the past year, from one year ago through today, and the end date is included in full. Click **Run Report**.
+4. The report displays a bar chart and table of total visits per week. Each week is labeled with the date of that week's Sunday, and the table's **Session Dates** column lists the actual dates in that week that had attendance (for example, "9/27, 9/30").
 
 This report is useful for spotting patterns like seasonal dips, growth trends, or the impact of special events.
 
@@ -38,7 +39,7 @@ The Group Attendance report shows who attended each group session in a date rang
 3. Set the **Start Date** and **End Date**. By default the report covers last Sunday through today, and the end date is included in full.
 4. Click **Run Report**.
 
-The results are grouped by session date, then service time, then group, with the people who attended listed under each group. Service times, groups, and names are sorted alphabetically.
+The results are grouped by session date, then service time, then group, with the people who attended listed under each group. Service times, groups, and names are sorted alphabetically. Next to each person's name, the **Checked In** column shows the time their attendance was recorded (blank when no time is on file) and the **Membership Status** column shows their status, such as Member or Visitor.
 
 To download a spreadsheet, click **Download Options** and choose **Summary**. The CSV has:
 

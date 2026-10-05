@@ -1,12 +1,12 @@
 ---
-title: "Check-Ins"
+title: "Verificações de Entrada"
 ---
 
-# Check-Ins
+# Verificações de Entrada
 
 <div class="article-intro">
 
-Check-in is one system with three front doors: the B1Checkin kiosk app for staffed and self-serve stations, self check-in inside the B1App member portal, and admin-side attendance in B1Admin. All three write to the same attendance module in the core Api, and classroom routing is driven entirely by Groups — there is no separate "locations" or "rooms" entity. A child-safety layer sits on top: per-visit check-in types, server-side capacity and volunteer-ratio gates, kiosk-side age/grade eligibility, trusted-pickup verification at check-out, and parent paging over the church's texting provider. This page maps the data model, the check-in flows, the safety layer, and the label printing pipeline.
+Verificação de entrada é um sistema com três entradas: o aplicativo kiosk B1Checkin para estações com pessoal e autosserviço, verificação de entrada automática dentro do portal de membros B1App e presença no lado do administrador em B1Admin. Todos os três escrevem no mesmo módulo de presença no Api principal, e o roteamento de sala de aula é inteiramente orientado por Grupos — não existe entidade "locais" ou "salas" separada. Uma camada de segurança infantil fica no topo: tipos de verificação de entrada por visita, portões de capacidade e proporção de voluntários no lado do servidor, elegibilidade de idade/série no lado do kiosk, verificação de retirada confiável no checkout e paging de pais através do provedor de SMS da igreja. Esta página mapeia o modelo de dados, os fluxos de verificação de entrada, a camada de segurança e o pipeline de impressão de etiqueta.
 
 </div>
 
@@ -27,175 +27,175 @@ Check-in is one system with three front doors: the B1Checkin kiosk app for staff
 └──────────────────────────┘            │  └─────────────────────────────────────────┘ │
                                         └──────────────────────────────────────────────┘
 
-Label print path (kiosk only):
+Caminho de impressão de etiqueta (somente kiosk):
 POST /attendance/visits/checkin ──▶ { securityCode, streaks }
-  └▶ LabelHelper (label templates, or bundled HTML fallback)
-       └▶ LabelRenderer → HTML doc + inline SVG barcodes
-            └▶ PrintUI: WebView render → ViewShot JPG capture
-                 └▶ printer-helper native module → Brother QL / Zebra
+  └▶ LabelHelper (modelos de etiqueta ou fallback HTML incluído)
+       └▶ LabelRenderer → documento HTML + códigos de barras SVG inline
+            └▶ PrintUI: renderização WebView → captura JPG ViewShot
+                 └▶ módulo nativo printer-helper → Brother QL / Zebra
 ```
 
-| Surface | Repo | Stack | Role |
+| Superfície | Repositório | Stack | Papel |
 |---------|------|-------|------|
-| Kiosk | `B1Checkin` | Expo / React Native, expo-router file routing; EAS builds for Android, Amazon Fire, and iOS; OTA updates via `expo-updates` | Staffed or self-serve station with label printing and verified check-out |
-| Self check-in | `B1App` | Next.js (b1.church member portal) | Logged-in members check their household in from a phone; no printing |
-| Admin | `B1Admin` | React SPA | Configures the service structure, assigns groups to service times, designs labels, records manual attendance, runs reports |
+| Kiosk | `B1Checkin` | Expo / React Native, roteamento de arquivo expo-router; compilações EAS para Android, Amazon Fire e iOS; atualizações OTA via `expo-updates` | Estação com pessoal ou autosserviço com impressão de etiqueta e checkout verificado |
+| Verificação de entrada automática | `B1App` | Next.js (portal de membros b1.church) | Membros conectados registram sua casa em um telefone; sem impressão |
+| Admin | `B1Admin` | SPA React | Configura a estrutura de serviço, atribui grupos aos horários de serviço, projeta etiquetas, registra presença manual, executa relatórios |
 
-All three call the same two API modules through `ApiHelper`: **MembershipApi** (`/membership`) for people, households, and groups; **AttendanceApi** (`/attendance`) for everything below.
+Todos os três chamam os mesmos dois módulos API através de `ApiHelper`: **MembershipApi** (`/membership`) para pessoas, casas e grupos; **AttendanceApi** (`/attendance`) para tudo abaixo.
 
-## Data model (`Api/src/modules/attendance`)
+## Modelo de dados (`Api/src/modules/attendance`)
 
-| Entity / table | Key fields | Meaning |
+| Entidade / tabela | Campos principais | Significado |
 |----------------|-----------|---------|
-| `campuses` | name, address | Deprecated here — campuses are mastered in the membership module (`/membership/campuses`); the attendance copy is frozen read-only for legacy readers (`models/Campus.ts`) |
-| `services` | campusId, name | A recurring gathering, e.g. "Sunday Morning" (`models/Service.ts`) |
-| `serviceTimes` | serviceId, name | A time slot within a service, e.g. "9:00 AM" (`models/ServiceTime.ts`) |
-| `groupServiceTimes` | groupId, serviceTimeId | Join table: which groups (classrooms) meet at which service times (`models/GroupServiceTime.ts`) |
-| `sessions` | groupId, serviceTimeId, sessionDate | One meeting of one group on one date — created lazily at check-in time (`models/Session.ts`) |
-| `visits` | personId, serviceId, visitDate, checkinTime, securityCode, checkinType, checkedInById, checkoutTime, checkedOutBy, checkedOutById | One person attending on one date (`models/Visit.ts`). `checkinType` is `member` / `guest` / `volunteer` (NULL = legacy member), set by the kiosk and consumed by the capacity/ratio gates |
-| `visitSessions` | visitId, sessionId | Which session(s) a visit covers — a child checked in to two service times gets two rows (`models/VisitSession.ts`) |
-| `labelTemplates` | name, labelType (`nametag`/`pickup`), width, height, isDefault, content (JSON blocks) | Designable label layouts (`models/LabelTemplate.ts`) |
+| `campuses` | nome, endereço | Descontinuado aqui — campus são mestres no módulo de associação (`/membership/campuses`); a cópia de presença é congelada somente leitura para leitores legados (`models/Campus.ts`) |
+| `services` | campusId, nome | Um encontro recorrente, por exemplo "Sunday Morning" (`models/Service.ts`) |
+| `serviceTimes` | serviceId, nome | Um intervalo de tempo dentro de um serviço, por exemplo "9:00 AM" (`models/ServiceTime.ts`) |
+| `groupServiceTimes` | groupId, serviceTimeId | Tabela de junção: quais grupos (salas de aula) se reúnem em quais horários de serviço (`models/GroupServiceTime.ts`) |
+| `sessions` | groupId, serviceTimeId, sessionDate | Um encontro de um grupo em uma data -- criado preguiçosamente no momento da verificação de entrada (`models/Session.ts`) |
+| `visits` | personId, serviceId, visitDate, checkinTime, securityCode, checkinType, checkedInById, checkoutTime, checkedOutBy, checkedOutById | Uma pessoa frequentando em uma data (`models/Visit.ts`). `checkinType` é `member` / `guest` / `volunteer` (NULL = membro legado), definido pelo kiosk e consumido pelos portões de capacidade/proporção |
+| `visitSessions` | visitId, sessionId | Qual sessão(s) uma visita cobre -- uma criança registrada em dois horários de serviço obtém duas linhas (`models/VisitSession.ts`) |
+| `labelTemplates` | nome, labelType (`nametag`/`pickup`), largura, altura, isDefault, conteúdo (blocos JSON) | Layouts de etiqueta designáveis (`models/LabelTemplate.ts`) |
 
-### How a completed check-in is persisted
+### Como uma verificação de entrada completa é persistida
 
-`VisitController.postCheckin` (`Api/src/modules/attendance/controllers/VisitController.ts`) handles `POST /attendance/visits/checkin?serviceId=&peopleIds=`. The body is an array of `Visit` objects, each carrying `visitSessions` whose embedded `session` names only a `(serviceTimeId, groupId)` pair. The server then:
+`VisitController.postCheckin` (`Api/src/modules/attendance/controllers/VisitController.ts`) trata `POST /attendance/visits/checkin?serviceId=&peopleIds=`. O corpo é uma matriz de objetos `Visit`, cada um transportando `visitSessions` cujos `session` incorporados denominam apenas um par `(serviceTimeId, groupId)`. O servidor então:
 
-1. **Gates capacity and ratios before any write.** `evaluateGates()` → `CheckinGateHelper.evaluate()` checks each targeted room's capacity, guest capacity, closed flag, and volunteer ratio against current occupancy. postCheckin is **not transactional**, so the gate must run before the first save — a hard violation returns a 409 naming the offending room(s) and nothing is persisted. See [Capacity and volunteer-ratio gates](#capacity-and-volunteer-ratio-gates).
-2. **Resolves sessions lazily.** `getSessionId()` finds or creates the `sessions` row for `(groupId, serviceTimeId, today)` — session ids are cached in-process per date. New sessions emit a `session.created` webhook. The loop is an awaited `for..of` — an earlier fire-and-forget `forEach(async …)` raced the save and wrote NULL sessionIds on first-session creation (fixed; noted in a code comment at the loop).
-3. **Replaces the day's records.** Any existing visits for those people at that service today are deleted along with their visitSessions, then the submitted set is saved. Re-checking-in a family is therefore an idempotent "this is the current state" operation, not an append. Passing `?checkDuplicates=true` instead returns `{ duplicates: [personId…] }` without writing, which is how the kiosk warns before overwriting.
-4. **Generates one security code per batch.** `SecurityCodeHelper.generate()` produces a 4-character code from the alphabet `23456789BCDFGHJKLMNPQRSTVWXYZ` (no vowels or ambiguous characters, so codes can't spell words or misread). The server retries on collision against the same church's same-day open visits and stamps the code on every visit in the batch.
-5. **Returns `{ streaks, securityCode }`.** `streaks` maps personId to consecutive-week attendance count; the kiosk celebrates milestones (every 5th week) with confetti.
+1. **Portões de capacidade e proporções antes de qualquer escrita.** `evaluateGates()` → `CheckinGateHelper.evaluate()` verifica capacidade de cada sala alvo, capacidade de convidado, sinalizador fechado e proporção de voluntários contra ocupação atual. postCheckin **não é transacional**, portanto o portão deve ser executado antes da primeira salvação — uma violação difícil retorna um 409 nomeando as sala(s) ofensora(s) e nada é persistido. Veja [Portões de capacidade e proporção de voluntários](#portões-de-capacidade-e-proporção-de-voluntários).
+2. **Resolve sessões preguiçosamente.** `getSessionId()` encontra ou cria a linha `sessions` para `(groupId, serviceTimeId, hoje)` -- ids de sessão são armazenados em cache no processo por data. Novas sessões emitem um webhook `session.created`. O loop é um `for..of` aguardado -- um anterior `forEach(async …)` sem esperar corria a salvação e escrevia IDs de sessão NULL na criação de primeira sessão (corrigido; anotado em um comentário de código no loop).
+3. **Substitui os registros do dia.** Qualquer visita existente para essas pessoas nesse serviço hoje é deletada junto com seus visitSessions, depois o conjunto submetido é salvo. Verificar novamente uma família é, portanto, uma operação idempotente "esse é o estado atual", não uma apêndice. Passar `?checkDuplicates=true` retorna `{ duplicates: [personId…] }` sem escrever, que é como o kiosk avisa antes de sobrescrever.
+4. **Gera um código de segurança por lote.** `SecurityCodeHelper.generate()` produz um código de 4 caracteres do alfabeto `23456789BCDFGHJKLMNPQRSTVWXYZ` (sem vogais ou caracteres ambíguos, portanto códigos não podem soletrar palavras ou serem mal lidos). O servidor retenta colisão contra as mesmas visitas abertas do mesmo dia da mesma igreja e carimba o código em cada visita no lote.
+5. **Retorna `{ streaks, securityCode }`.** `streaks` mapeia personId para contagem de presença consecutiva semanal; o kiosk celebra marcos (a cada 5ª semana) com confete.
 
-Each saved visit also emits an `attendance.recorded` webhook. The read side, `GET /attendance/visits/checkin`, returns the people's visits from their **last logged date** — if that was a previous week the ids are stripped, so the client receives a pre-filled copy of last week's room selections that will save as new records.
+Cada visita salva também emite um webhook `attendance.recorded`. O lado de leitura, `GET /attendance/visits/checkin`, retorna as visitas das pessoas da sua **última data registrada** — se isso foi uma semana anterior os ids são removidos, portanto o cliente recebe uma cópia pré-preenchida da seleção de sala da semana passada que será salva como novos registros.
 
-### Check-out
+### Checkout
 
-Two endpoints complete the loop (`VisitController`):
+Dois endpoints completam o loop (`VisitController`):
 
-- `GET /attendance/visits/code/:code` — today's not-yet-checked-out visits carrying that security code, with sessions populated.
-- `POST /attendance/visits/checkout` — body `{ visitIds, checkedOutBy?, checkedOutById? }`; stamps `checkoutTime` and who picked up, and emits an `attendance.checkout` webhook per visit.
+- `GET /attendance/visits/code/:code` -- visitas de hoje ainda não checkout que carregam esse código de segurança, com sessões preenchidas.
+- `POST /attendance/visits/checkout` -- corpo `{ visitIds, checkedOutBy?, checkedOutById? }`; carimba `checkoutTime` e quem retirou, e emite um webhook `attendance.checkout` por visita.
 
-Permissions: kiosks authenticate with `attendance.checkin`, which grants exactly the check-in/check-out/label-template surface; `attendance.view`/`attendance.edit` cover reporting and manual entry; the structure (services, service times, group assignments) requires `services.edit`. Member self check-in (B1App) needs no permission at all: any authenticated user with a linked person in the church may call `GET`/`POST /attendance/visits/checkin`, and the server restricts the submitted `personId`s to the caller's own household (403 otherwise — this fence is what keeps other families' `securityCode`s unreadable). Membership is the grant; whether members *see* the feature is controlled by the church's B1App navigation tabs. The other check-in endpoints (`code/:code`, `checkout`, `guardians`, `CheckinController`) remain kiosk/staff-only.
+Permissões: kiosks autenticam com `attendance.checkin`, que concede exatamente a superfície de checkin/checkout/modelo-etiqueta; `attendance.view`/`attendance.edit` cobrem relatórios e entrada manual; a estrutura (serviços, horários de serviço, atribuições de grupo) requer `services.edit`. Verificação de entrada automática de membro (B1App) não precisa de permissão alguma: qualquer usuário autenticado com uma pessoa vinculada à igreja pode chamar `GET`/`POST /attendance/visits/checkin`, e o servidor restringe os `personId`s submetidos à casa do chamador (403 caso contrário — essa cerca é o que mantém os códigos de segurança de outras famílias ilegíveis). Associação é a concessão; se os membros *veem* o recurso é controlado pelas abas de navegação B1App da igreja. Os outros endpoints de checkin (`code/:code`, `checkout`, `guardians`, `CheckinController`) permanecem apenas kiosk/pessoal.
 
-## Groups drive room routing
+## Grupos orientam roteamento de sala
 
-There is no room or classroom entity anywhere in the system. A "room" is a membership **group** with `trackAttendance` enabled, linked to one or more service times through `groupServiceTimes`. The group fields (on `Api/src/modules/membership/models/Group.ts`) that shape kiosk behavior:
+Não há entidade de sala ou sala de aula em qualquer lugar do sistema. Uma "sala" é um **grupo** de associação com `trackAttendance` ativado, vinculado a um ou mais horários de serviço através de `groupServiceTimes`. Os campos do grupo (em `Api/src/modules/membership/models/Group.ts`) que formam comportamento do kiosk:
 
-| Field | Effect |
+| Campo | Efeito |
 |------|--------|
-| `trackAttendance` | Group participates in attendance at all; B1Admin's setup tree flags `trackAttendance` groups with no `groupServiceTimes` row as unassigned |
-| `parentPickup` | Marks a child room: checking in to it makes the visit a "child" visit, which prints a family pickup label and puts the security code on the nametag |
-| `printNametag` | Whether check-ins to this group print a nametag at all |
-| `capacity` / `guestCapacity` / `checkinClosed` | Room capacity limits and a hard "closed" switch, enforced server-side by the check-in gate (edited in B1Admin's group settings under "Check-In Capacity") |
-| `volunteerRatio` / `minVolunteers` | Children-per-volunteer ratio and minimum volunteer headcount, enforced per the church-wide `ratioEnforcement` setting |
-| `minAgeMonths` / `maxAgeMonths` / `minGrade` / `maxGrade` | Age/grade eligibility bounds evaluated kiosk-side to highlight or dim rooms |
+| `trackAttendance` | O grupo participa de presença alguma; a árvore de configuração do B1Admin sinaliza grupos `trackAttendance` sem linha `groupServiceTimes` como não atribuídos |
+| `parentPickup` | Marca uma sala infantil: verificar entrada a isso torna a visita uma visita "infantil", que imprime uma etiqueta de retirada de família e coloca o código de segurança no crachá de nome |
+| `printNametag` | Se verificações de entrada para este grupo imprimem um crachá de nome algum |
+| `capacity` / `guestCapacity` / `checkinClosed` | Limites de capacidade da sala e um comutador "fechado" difícil, aplicado no lado do servidor pelo portão de checkin (editado nas configurações do grupo do B1Admin em "Check-In Capacity") |
+| `volunteerRatio` / `minVolunteers` | Proporção de crianças-por-voluntário e contagem mínima de cabeças de voluntário, aplicadas conforme a configuração `ratioEnforcement` da церерая, |
+| `minAgeMonths` / `maxAgeMonths` / `minGrade` / `maxGrade` | Limites de elegibilidade de idade/série avaliados no lado do kiosk para destacar ou escurecer salas |
 
-Every client denormalizes the same way (e.g. `B1Checkin/app/services.tsx`, `B1App/src/app/[sdSlug]/mobile/components/screens/CheckinPage.tsx`): load `GET /attendance/servicetimes?serviceId=`, `GET /attendance/groupservicetimes`, and `GET /membership/groups` in parallel, then for each service time collect the groups whose `groupServiceTimes` row points at it into `serviceTime.groups`. That array is what the room picker shows, organized by group `categoryName`.
+Cada cliente desnormaliza da mesma forma (por exemplo `B1Checkin/app/services.tsx`, `B1App/src/app/[sdSlug]/mobile/components/screens/CheckinPage.tsx`): carregar `GET /attendance/servicetimes?serviceId=`, `GET /attendance/groupservicetimes` e `GET /membership/groups` em paralelo, depois para cada horário de serviço coletar os grupos cujas linhas `groupServiceTimes` apontam para ele em `serviceTime.groups`. Essa matriz é o que o seletor de sala mostra, organizado por `categoryName` do grupo.
 
-Assignments are edited from the group's page in B1Admin (`B1Admin/src/groups/components/ServiceTimesEdit.tsx` — `POST`/`DELETE /attendance/groupservicetimes`), and the whole Campus → Service → Service Time → Group tree is visualized in `B1Admin/src/attendance/components/AttendanceSetup.tsx` via `GET /attendance/attendancerecords/tree`.
+Atribuições são editadas na página do grupo em B1Admin (`B1Admin/src/groups/components/ServiceTimesEdit.tsx` — `POST`/`DELETE /attendance/groupservicetimes`), e a árvore Campus → Serviço → Horário de Serviço → Grupo completa é visualizada em `B1Admin/src/attendance/components/AttendanceSetup.tsx` via `GET /attendance/attendancerecords/tree`.
 
 :::info
-Because groups are the single source of truth, the same group membership powers kiosk routing, roster-style attendance in B1Admin's group pages, and attendance reporting — assigning a group to a service time is the only step needed to make it a check-in destination.
+Como grupos são a única fonte de verdade, a mesma associação de grupo alimenta roteamento de kiosk, presença estilo lista em páginas de grupo do B1Admin, e relatório de presença — atribuir um grupo a um horário de serviço é a única etapa necessária para torná-lo um destino de checkin.
 :::
 
-## Child safety
+## Segurança infantil
 
-### Check-in types
+### Tipos de verificação de entrada
 
-Every visit carries a `checkinType` — `member`, `guest`, or `volunteer` (NULL means legacy/member; migration `tools/migrations/attendance/2026-07-03_checkin_type.ts`). The type is chosen **kiosk-side**: Member / Guest / Volunteer chips on the expanded member row (`B1Checkin/src/components/MemberServiceTimes.tsx`), stamped onto each pending visit at completion (`app/checkinComplete.tsx`, defaulting to `member`). The server consumes it in the gate — volunteers count toward ratio coverage instead of against capacity, and guests count against `guestCapacity`.
+Cada visita carrega um `checkinType` — `member`, `guest` ou `volunteer` (NULL significa legado/membro; migração `tools/migrations/attendance/2026-07-03_checkin_type.ts`). O tipo é escolhido **no lado do kiosk**: chips Membro / Convidado / Voluntário na linha de membro expandida (`B1Checkin/src/components/MemberServiceTimes.tsx`), carimbados em cada visita pendente na conclusão (`app/checkinComplete.tsx`, padronizando para `member`). O servidor o consome no portão — voluntários contam para cobertura de proporção em vez de contra capacidade, e convidados contam contra `guestCapacity`.
 
-### Capacity and volunteer-ratio gates
+### Portões de capacidade e proporção de voluntários
 
-`CheckinGateHelper.evaluate()` (`Api/src/modules/attendance/helpers/CheckinGateHelper.ts`) runs inside `postCheckin` before any save (the endpoint is non-transactional, so gating-before-save is the correctness mechanism). It loads current occupancy per targeted group (`VisitRepo.countActiveByGroupToday`) and the group config through the membership module gateway, then classifies violations:
+`CheckinGateHelper.evaluate()` (`Api/src/modules/attendance/helpers/CheckinGateHelper.ts`) executa dentro de `postCheckin` antes de qualquer salvação (o endpoint não é transacional, portanto gateamento-antes-salvar é o mecanismo de correção). Carrega ocupação atual por grupo alvo (`VisitRepo.countActiveByGroupToday`) e configuração de grupo através do gateway do módulo de associação, depois classifica violações:
 
-- **Hard (always block):** `checkinClosed`, `current + incoming > capacity`, guest count over `guestCapacity`. The batch is rejected with `409 { error: "capacity", groups: [{ groupId, groupName, reason }] }` — the kiosk shows the named room.
-- **Ratio (warn or block):** incoming non-volunteers into a room where `volunteers < minVolunteers`, no volunteers at all, or `children > volunteers × volunteerRatio`. Severity follows the per-church setting `ratioEnforcement` (`"warn"` default / `"block"`, edited in B1Admin Manage Church → Check-In, `CheckinSettingsEdit.tsx`). Warn-mode returns `409 { warning: true, error: "ratio", … }` unless the client resubmits with `acknowledgeWarnings=true` — that resubmit is the kiosk's staff-confirm override.
+- **Difícil (sempre bloquear):** `checkinClosed`, `current + incoming > capacity`, contagem de convidado sobre `guestCapacity`. O lote é rejeitado com `409 { error: "capacity", groups: [{ groupId, groupName, reason }] }` — o kiosk mostra a sala nomeada.
+- **Proporção (aviso ou bloquio):** não-voluntários recebidos em uma sala onde `volunteers < minVolunteers`, nenhum voluntário algum, ou `children > volunteers × volunteerRatio`. A severidade segue a configuração por-igreja `ratioEnforcement` (`"warn"` padrão / `"block"`, editado em B1Admin Manage Church → Check-In, `CheckinSettingsEdit.tsx`). Modo de aviso retorna `409 { warning: true, error: "ratio", … }` a menos que o cliente reenvie com `acknowledgeWarnings=true` — esse reenvio é a confirmação de pessoal do kiosk override.
 
-### Age/grade eligibility (kiosk-side)
+### Elegibilidade de idade/série (no lado do kiosk)
 
-Room eligibility is advisory UI, evaluated on the kiosk, not enforced by the server. `B1Checkin/src/helpers/EligibilityHelper.ts` compares a person's birthdate/grade against the group's `minAgeMonths`/`maxAgeMonths`/`minGrade`/`maxGrade` (grade order: PreK, K, 1–12, Graduated) and returns `eligible` / `ineligible` / `unknown` — missing data yields `unknown` and never hides a room. Ages and grades are computed as of the church's **grade promotion date** (`gradePromotionDate` setting, `"MM-DD"`, edited in `B1Admin/src/settings/components/GradePromotionSettingsEdit.tsx`); the kiosk fetches it from `GET /attendance/checkin/settings`, and `resolveAsOfDate` picks the most recent occurrence on or before today. The room picker highlights eligible rooms and dims ineligible ones; picking a dimmed room requires a staff confirmation.
+Elegibilidade de sala é UI consultivo, avaliado no kiosk, não aplicado pelo servidor. `B1Checkin/src/helpers/EligibilityHelper.ts` compara data de nascimento/série de uma pessoa contra o `minAgeMonths`/`maxAgeMonths`/`minGrade`/`maxGrade` do grupo (ordem de série: PreK, K, 1–12, Graduado) e retorna `eligible` / `ineligible` / `unknown` — dados faltando produzem `unknown` e nunca escondem uma sala. Idades e séries são computadas como da **data de promoção de série** da igreja (`gradePromotionDate` configuração, `"MM-DD"`, editado em `B1Admin/src/settings/components/GradePromotionSettingsEdit.tsx`); o kiosk a carrega de `GET /attendance/checkin/settings`, e `resolveAsOfDate` pega a ocorrência mais recente em ou antes de hoje. O seletor de sala destaca salas elegíveis e escurece as inelegíveis; selecionar uma sala escurecida requer uma confirmação de pessoal.
 
-### Trusted and not-authorized pickup
+### Retirada confiável e não autorizada
 
-Pickup people are a membership entity, per household: `householdPickupPeople` (`Api/src/modules/membership/models/HouseholdPickupPerson.ts` — householdId, optional personId, name, photoUrl, relationship, `status` `trusted` / `notAuthorized`, notes). CRUD is `GET /membership/householdpickup/:householdId` (any authenticated church user, so kiosks can read it) plus `POST` / `DELETE` gated by `people.edit`. Staff manage the list on the person page's **Pickup** card (`B1Admin/src/people/components/PickupPeople.tsx`) — photo, relationship, and a Trusted/Not Authorized status chip.
+Pessoas de retirada são uma entidade de associação, por casa: `householdPickupPeople` (`Api/src/modules/membership/models/HouseholdPickupPerson.ts` — householdId, personId opcional, nome, photoUrl, relacionamento, `status` `trusted` / `notAuthorized`, notas). CRUD é `GET /membership/householdpickup/:householdId` (qualquer usuário da igreja autenticado, portanto os kiosks podem lê-lo) plus `POST` / `DELETE` fechados por `people.edit`. Pessoal gerencia a lista na página de pessoa do **Pickup** card (`B1Admin/src/people/components/PickupPeople.tsx`) — foto, relacionamento e um chip de status Confiável/Não Autorizado.
 
-At check-out (`B1Checkin/app/checkout.tsx`) the kiosk loads the household's pickup list: `trusted` entries render as tappable pickup cards alongside the household-adult photo grid, and a free-typed "Other" name is fuzzy-matched (Levenshtein, `src/helpers/PickupMatchHelper.ts`) against `notAuthorized` entries — a match blocks check-out with a warning sheet and a staff **Override** button. The override is logged on the visit itself: it posts `checkedOutBy` as `"OVERRIDE: {name}"` through the normal `POST /attendance/visits/checkout`, so it lands in the attendance record and the `attendance.checkout` webhook rather than a separate audit table.
+No checkout (`B1Checkin/app/checkout.tsx`) o kiosk carrega a lista de retirada da casa: entradas `trusted` renderizam como cartões de retirada tocáveis ao lado da grade de foto de adulto da casa, e um nome "Outro" digitado livremente é fuzzy-combinado (Levenshtein, `src/helpers/PickupMatchHelper.ts`) contra entradas `notAuthorized` — uma combinação bloqueia checkout com uma folha de aviso e um botão de pessoal **Override**. A sobrescrita é registrada na visita em si: ela posta `checkedOutBy` como `"OVERRIDE: {name}"` através do `POST /attendance/visits/checkout` normal, portanto cai no registro de presença e no webhook `attendance.checkout` em vez de uma tabela de auditoria separada.
 
-### Page-a-parent and emergency broadcast
+### Page-a-parent e transmissão de emergência
 
-`CheckinController` (`Api/src/modules/attendance/controllers/CheckinController.ts`, `/attendance/checkin`) exposes two SMS endpoints:
+`CheckinController` (`Api/src/modules/attendance/controllers/CheckinController.ts`, `/attendance/checkin`) expõe dois endpoints SMS:
 
-- `POST /page` — `{ visitId, message }`: pages the guardians of one checked-in child (kiosk check-out screen, manned mode).
-- `POST /broadcast` — `{ serviceId, message }`: texts every checked-in household's adults for a service (kiosk admin settings, behind a type-`EMERGENCY`-to-confirm sheet in `B1Checkin/app/adminSettings.tsx`).
+- `POST /page` — `{ visitId, message }`: página os guardiões de uma criança registrada (tela de checkout de kiosk, modo tripulado).
+- `POST /broadcast` — `{ serviceId, message }`: textos cada adultos da casa registrada para um serviço (configurações admin de kiosk, atrás de uma folha tipo-`EMERGENCY`-para-confirmar em `B1Checkin/app/adminSettings.tsx`).
 
-Both resolve household adults through the membership gateway, then hand delivery to **`MessagingModuleGateway.sendBulkText`** (`Api/src/shared/modules/MessagingModuleGateway.ts`) — the cross-module door into the church's configured texting provider (`@churchapps/texting`: TextInChurch, Clearstream, or MutualMinistry; there is no built-in SMS sender). The gateway logs a `sentText` row plus per-recipient `deliveryLog` entries and caps a batch at 500 recipients; with no provider configured it returns `no_provider`, which the kiosk surfaces as "No SMS provider configured". The controller's `dispatch()` dedupes phone numbers and skips people with no mobile or `optedOut` set, returning `{ sent, failed, skippedOptedOut, skippedNoPhone }` so the kiosk can show what was skipped.
+Ambos resolvem adultos da casa através do gateway de associação, depois entregar **`MessagingModuleGateway.sendBulkText`** (`Api/src/shared/modules/MessagingModuleGateway.ts`) — a porta entre módulos para o provedor SMS configurado da igreja (`@churchapps/texting`: TextInChurch, Clearstream ou MutualMinistry; não há remetente SMS integrado). O gateway registra uma linha `sentText` mais entradas de `deliveryLog` por destinatário e limita um lote em 500 destinatários; com nenhum provedor configurado retorna `no_provider`, que o kiosk superfícies como "No SMS provider configured". O dispatch() do controlador deduplicates números de telefone e pula pessoas com nenhum móvel ou `optedOut` definido, retornando `{ sent, failed, skippedOptedOut, skippedNoPhone }` portanto o kiosk pode mostrar o que foi pulado.
 
-## The kiosk (B1Checkin)
+## O kiosk (B1Checkin)
 
-Screens are expo-router files under `B1Checkin/app/`; cross-screen state lives in a static `CachedData` class (`src/helpers/CachedData.ts`), not React state.
+As telas são arquivos expo-router sob `B1Checkin/app/`; estado entre telas vive em uma classe estática `CachedData` (`src/helpers/CachedData.ts`), não estado React.
 
 ```
 index (boot/auto-login) → selectChurch → services ──▶ lookup ──▶ household ──▶ checkinComplete
                                           │             │  ▲         │ │            │
-             loads serviceTimes, groups,  │             │  └─────────┘ └▶ addGuest  └▶ print labels,
-             groupServiceTimes,           │             └▶ checkout (manned)           auto-return
-             labelTemplates               │                                            to lookup
+             carrega serviceTimes, grupos,│             │  └─────────┘ └▶ addGuest  └▶ imprime etiquetas,
+             groupServiceTimes,           │             └▶ checkout (manned)        retorna auto ao
+             labelTemplates               │                                        lookup
 ```
 
-1. **Lookup** (`app/lookup.tsx`) — search by phone (`GET /membership/people/search/phone?number=`, last-4 or full) or by name (`GET /membership/people/search?term=`). Selecting a match loads the household (`GET /membership/people/household/{householdId}`) and existing visits (`GET /attendance/visits/checkin`), seeding `pendingVisits` with last week's selections.
-2. **Household review** (`app/household.tsx`, `src/components/MemberList.tsx`) — each member row shows an already-checked-in badge, allergy/`nametagNotes` badge, and their current room chips. Expanding a member lists every service time with a room button plus the Member / Guest / Volunteer check-in-type chips (`MemberServiceTimes.tsx`).
-3. **Group assignment** (`app/selectGroup.tsx`) — a category tree built from `serviceTime.groups`, with age/grade-eligible rooms highlighted and ineligible ones dimmed behind a staff confirm (see [Age/grade eligibility](#agegrade-eligibility-kiosk-side)); picking a room writes a `{ session: { serviceTimeId, groupId } }` visitSession into that person's pending visit (`src/helpers/VisitSessionHelper.ts`). "None" clears it.
-4. **Complete** (`app/checkinComplete.tsx`) — `POST /attendance/visits/checkin` with `pendingVisits` (each stamped with its `checkinType`), then prints labels if a printer is configured and auto-returns to lookup. A `409` capacity response shows the named full/closed room; a ratio warning offers a staff confirm that resubmits with `acknowledgeWarnings=true`.
+1. **Lookup** (`app/lookup.tsx`) — pesquisa por telefone (`GET /membership/people/search/phone?number=`, últimos 4 ou completo) ou por nome (`GET /membership/people/search?term=`). Selecionar uma combinação carrega a casa (`GET /membership/people/household/{householdId}`) e visitas existentes (`GET /attendance/visits/checkin`), semeando `pendingVisits` com seleções da semana passada.
+2. **Revisão da casa** (`app/household.tsx`, `src/components/MemberList.tsx`) — cada linha de membro mostra um crachá já registrado, crachá de alergia/`nametagNotes` e seus chips de sala atuais. Expandir um membro lista cada horário de serviço com um botão de sala plus chips de tipo de checkin de Membro / Convidado / Voluntário (`MemberServiceTimes.tsx`). Sob cada nome de horário de serviço, `ServiceTimeHelper.getGroupSummary()` mostra os grupos oferecidos lá (nomes de `serviceTime.groups`, aparados, deduplicated sem sensibilidade a case, juntos por vírgula); nada renderiza quando o tempo não tem grupos.
+3. **Atribuição de grupo** (`app/selectGroup.tsx`) — uma árvore de categoria construída de `serviceTime.groups`, com salas elegíveis de idade/série destacadas e inelegíveis escurecidas atrás de uma confirmação de pessoal (ver [Elegibilidade de idade/série](#elegibilidade-de-idades-série-no-lado-do-kiosk)); selecionar uma sala escreve um `{ session: { serviceTimeId, groupId } }` visitSession na visita pendente dessa pessoa (`src/helpers/VisitSessionHelper.ts`). "None" a limpa.
+4. **Completo** (`app/checkinComplete.tsx`) — `POST /attendance/visits/checkin` com `pendingVisits` (cada carimbado com seu `checkinType`), depois imprime etiquetas se uma impressora é configurada e retorna auto ao lookup. Uma resposta `409` de capacidade mostra a sala cheia/fechada nomeada; um aviso de proporção oferece uma confirmação de pessoal que reenviar com `acknowledgeWarnings=true`.
 
-The **check-out** screen (`app/checkout.tsx`) accepts the 4-character security code through an auto-focused input — so USB/Bluetooth keyboard-wedge barcode scanners work with no camera — or an on-screen keypad using the same alphabet, auto-submitting at 4 characters. It looks up the code, shows the children being picked up, and presents the household's **trusted pickup people** as tappable cards alongside a photo grid of household adults (plus an "Other" free-text option that is fuzzy-checked against not-authorized names — see [Trusted and not-authorized pickup](#trusted-and-not-authorized-pickup)), then posts `POST /attendance/visits/checkout` with the picker's name/id. In manned mode the screen also offers **Page a parent** (`POST /attendance/checkin/page`) and a **security-label reprint** — `reprint()` rebuilds the family's labels with `LabelHelper.getAllLabelsFor(...)` and feeds them through the same `PrintUI` pipeline as check-in.
+A tela **checkout** (`app/checkout.tsx`) aceita o código de segurança de 4 caracteres através de uma entrada de foco automático — portanto varredores de código de barras de cunha USB/Bluetooth trabalham com nenhuma câmera — ou um teclado na tela usando o mesmo alfabeto, auto-enviando em 4 caracteres. Um botão **Scan** abre uma folha com o `src/components/CodeScanner.tsx` compartilhado da câmera (voltado para trás por padrão, aceitando QR, Code 128 e Code 39) portanto estações sem um scanner de cunha podem ler o rótulo de retirada; um código verificado alimenta o mesmo caminho `handleCode()` que entrada digitada. Procura o código, mostra as crianças sendo retiradas, e apresenta as **pessoas de retirada confiável** da casa como cartões tocáveis ao lado de uma grade de foto de adultos da casa (plus uma opção "Outro" de texto livre que é fuzzy-verificada contra nomes não autorizados — ver [Retirada confiável e não autorizada](#retirada-confiável-e-não-autorizada)), depois posta `POST /attendance/visits/checkout` com o nome/id do retirador. Em modo tripulado a tela também oferece **Page a parent** (`POST /attendance/checkin/page`) e uma **reimpressão de etiqueta de segurança** — `reprint()` reconstrói as etiquetas da família com `LabelHelper.getAllLabelsFor(...)` e as alimenta através do mesmo pipeline de `PrintUI` de checkin.
 
-Station personality is an AsyncStorage flag `@StationMode` (`"self"` | `"manned"`, toggled in `app/adminSettings.tsx`). Manned mode adds the check-out entry point on the lookup screen and per-member profile editing (`POST /membership/people`) from the household screen. Kiosk hardening is built in: an optional PIN (`app/setPin.tsx`, `src/components/PinEntryModal.tsx`) gates the admin and printer screens, the admin screen opens only via 7 rapid taps on the header logo, and an idle attract screen (`src/hooks/useInactivityTimer.ts`) takes over between families.
+Personalidade de estação é um sinalizador AsyncStorage `@StationMode` (`"self"` | `"manned"`, alternado em `app/adminSettings.tsx`). Modo tripulado adiciona o ponto de entrada de checkout na tela de lookup e edição de perfil por membro (`POST /membership/people`) na tela de casa. Endurecimento de kiosk é integrado: um PIN opcional (`app/setPin.tsx`, `src/components/PinEntryModal.tsx`) portões as telas de admin e impressora, a tela de admin abre apenas via 7 toques rápidos no logotipo do cabeçalho, e uma tela de atração inativa (`src/hooks/useInactivityTimer.ts`) assume entre famílias.
 
-## Self check-in (B1App)
+## Verificação de entrada automática (B1App)
 
-Members check in from the b1.church portal at the `/mobile/checkin` screen (routed by `B1App/src/app/[sdSlug]/mobile/components/ScreenRouter.tsx` to `screens/CheckinPage.tsx`). It requires a logged-in user and walks the same four steps as the kiosk — services → household → groups → complete — against the identical endpoints, with state held in `B1App/src/helpers/CheckinHelper.ts`. The differences from the kiosk: the household comes from the logged-in user's own `householdId` (no search step), and there is no label printing — instead the completion screen shows the batch's security code as a QR (`qrcode.react`) with a "show this at a check-in station" hint. If the household is already checked in when the page loads, a "Show check-in code" button re-displays the QR from the existing visit's `securityCode`. The check-in is recorded immediately at submit time (there is no pending state); the QR only drives label printing at the kiosk.
+Membros verificam na página de portal b1.church em `/mobile/checkin` (roteado por `B1App/src/app/[sdSlug]/mobile/components/ScreenRouter.tsx` para `screens/CheckinPage.tsx`). Requer um usuário conectado e caminha pelos mesmos quatro passos do kiosk — serviços → casa → grupos → completo — contra os endpoints idênticos, com estado realizado em `B1App/src/helpers/CheckinHelper.ts`. As diferenças do kiosk: a casa vem do `householdId` do usuário conectado (nenhuma etapa de pesquisa), e não há impressão de etiqueta — em vez disso a tela de conclusão mostra o código de segurança do lote como um QR (`qrcode.react`) com uma sugestão "mostrar isso em uma estação de checkin". Se a casa já está registrada quando a página carrega, um botão "Show check-in code" reexibe o QR da primeira visita existente (de `GET /attendance/visits/checkin`) que carrega um `securityCode`. O checkin é registrado imediatamente no tempo de envio (não há estado pendente); o QR apenas orienta a impressão de etiqueta no kiosk.
 
-**Phone-to-kiosk label printing** (`B1Checkin/app/scan.tsx`, reached from the "Scan code" button on the lookup screen): the kiosk opens an `expo-camera` `CameraView` (front-facing by default, flippable) scanning for QR codes. A scanned payload is accepted when it is a bare 4-character code in the security-code alphabet, so both the B1App QR and a printed label's QR block work. The screen then follows the check-out reprint path — `GET /attendance/visits/code/{code}` → `GET /membership/people/ids` → `LabelHelper.getAllLabelsFor(visits, people, code)` → `PrintUI` — and returns to lookup. No attendance write happens at scan time; labels-only. Codes with no active visits, stations with no printer, and label-less groups each surface a toast and return to lookup.
+**Impressão de etiqueta telefone-para-kiosk** (`B1Checkin/app/scan.tsx`, acessível do botão "Scan code" do QR na tela de lookup): o kiosk mostra `CodeScanner` (uma `CameraView` `expo-camera`, voltada para frente por padrão, flippable) verificando códigos QR. `ScanCodeHelper.parse()` aceita uma carga apenas quando é um código de 4 caracteres nu no alfabeto código de segurança, e `ScanCodeHelper.isRepeat()` ignora o mesmo código por 4 segundos, portanto tanto o QR B1App quanto um rótulo impresso QR bloqueiam trabalho. A tela então segue o caminho de reimpressão de checkout — `GET /attendance/visits/code/{code}` → `GET /membership/people/ids` → `LabelHelper.getAllLabelsFor(visits, people, code)` → `PrintUI` — e retorna ao lookup. Nenhuma escrita de presença acontece no tempo de varredura; apenas etiquetas. Códigos com nenhuma visita ativa, estações com nenhuma impressora, e grupos sem etiqueta cada uma superfície um toast e retorna ao lookup.
 
-Types and `ApiHelper`/`ArrayHelper` come from `@churchapps/helpers` and `@churchapps/apphelper`; no React components are shared with B1Admin.
+Tipos e `ApiHelper`/`ArrayHelper` vêm de `@churchapps/helpers` e `@churchapps/apphelper`; nenhum componente React é compartilhado com B1Admin.
 
-## Admin-side attendance (B1Admin)
+## Presença no lado do admin (B1Admin)
 
-- **Setup** — `/attendance` (`B1Admin/src/attendance/AttendancePage.tsx`) renders the structure tree and creates services (`ServiceEdit.tsx`) and service times (`ServiceTimeEdit.tsx`). Campus data comes from membership via the `useCampuses()` hook.
-- **Manual attendance** lives on the Groups side, not the attendance section: `B1Admin/src/groups/components/GroupSessionsTab.tsx` creates sessions (`POST /attendance/sessions`) and marks people present via `POST /attendance/visitsessions/log`, which finds-or-creates the visit for that person and session. Group leaders can record attendance for their own groups without the `attendance.edit` permission — the controllers check `au.leaderGroupIds`.
-- **Reporting** — attendance trend and group attendance are server-defined reports (`B1Admin/src/components/reporting/ReportWithFilter.tsx` against ReportingApi); per-person history is `GET /attendance/attendancerecords?personId=` (`B1Admin/src/people/components/PersonAttendance.tsx`).
+- **Setup** — `/attendance` (`B1Admin/src/attendance/AttendancePage.tsx`) renderiza a árvore de estrutura e cria serviços (`ServiceEdit.tsx`) e horários de serviço (`ServiceTimeEdit.tsx`). Dados de campus vêm da associação via o hook `useCampuses()`.
+- **Presença manual** vive no lado de Grupos, não na seção de presença: `B1Admin/src/groups/components/GroupSessionsTab.tsx` cria sessões (`POST /attendance/sessions`; ao adicionar, `SessionEdit.tsx` pode incluir uma sessão por outro grupo compartilhando o horário de serviço escolhido, pulando grupos que já têm uma sessão nessa data) e marca pessoas presentes via `POST /attendance/visitsessions/log`, que encontra-ou-cria a visita para essa pessoa e sessão. Líderes de grupo podem registrar presença para seus próprios grupos sem a permissão `attendance.edit` — os controladores verificam `au.leaderGroupIds`.
+- **Relatório** — tendência de presença e presença de grupo são relatórios definidos por servidor (`B1Admin/src/components/reporting/ReportWithFilter.tsx` contra ReportingApi; definições em `Api/reports/*.json`). Ambos levam `startDate`/`endDate` (data final inclusiva); o relatório de tendência padrão a um ano atrás através de hoje e adiciona uma coluna `sessionDates` por semana, e presença de grupo da árvore na tela inclui cada `checkinTime` de visita e o `membershipStatus` da pessoa. O CSV de presença de grupo vem do relatório `groupAttendanceDownload` companheiro, girado por `GroupAttendanceDownloadHelper` em uma linha por membro do grupo com uma coluna presente/ausente por sessão datada; histórico por pessoa é `GET /attendance/attendancerecords?personId=` (`B1Admin/src/people/components/PersonAttendance.tsx`).
 
-## Label printing
+## Impressão de etiqueta
 
-### Templates and the designer
+### Modelos e o designer
 
-Churches design their own labels in B1Admin at `/mobile/checkin/labels` (`B1Admin/src/attendance/LabelsPage.tsx` + `components/LabelEditor.tsx`, reached from the Check-In settings page). A template is a `labelTemplates` row whose `content` is a JSON array of blocks — `text`, `field`, `barcode`, `qrcode`, or `box` — each positioned in percent coordinates with font, alignment, symbology (`code39`/`code128`/`qr`), and optional visibility conditions (e.g. only render the allergy box when `person.nametagNotes` is non-empty). Two `labelType`s exist: `nametag` (one per checked-in person; fields like `person.displayName`, `sessions`, `securityCode`) and `pickup` (one per family; fields like `children`, `childrenAllergies`). The server enforces a single default per type per church (`LabelTemplateController.save`). The designer ships starter templates mirroring the kiosk's bundled labels and previews against sample data.
+Igrejas projetam suas próprias etiquetas em B1Admin em `/mobile/checkin/labels` (`B1Admin/src/attendance/LabelsPage.tsx` + `components/LabelEditor.tsx`, acessado da página de configurações de Check-In). Um modelo é uma linha `labelTemplates` cujo `content` é uma matriz JSON de blocos — `text`, `field`, `barcode`, `qrcode` ou `box` — cada posicionado em coordenadas percentuais com fonte, alinhamento, simbologia (`code39`/`code128`/`qr`), e condições de visibilidade opcionais (por exemplo render apenas a caixa de alergia quando `person.nametagNotes` é não-vazio). Dois `labelType`s existem: `nametag` (um por pessoa registrada; campos como `person.displayName`, `sessions`, `securityCode`, e `person.isBirthdayWeek` -- `"true"` quando a data de nascimento da pessoa mês/dia está dentro de 3 dias de hoje, enrolando todo o final do ano, computado por `LabelHelper.isBirthdayWithin()`) e `pickup` (um por família; campos como `children`, `childrenAllergies`). O servidor reforça um único padrão por tipo por igreja (`LabelTemplateController.save`). O designer navios modelos de inicialização espelhando as etiquetas incluídas do kiosk e previsualizações contra dados de amostra.
 
-### Rendering and printing on the kiosk
+### Renderização e impressão no kiosk
 
-At check-in completion, `B1Checkin/src/helpers/LabelHelper.ts` decides what to print from the group flags on each pending visit: nametags for `printNametag` groups, plus one family pickup label if any visit hit a `parentPickup` group. The security code from the check-in response goes onto child nametags and the pickup label; adult nametags print without a code. If the church has templates, `LabelRenderer` (`src/helpers/LabelRenderer.ts`) turns blocks + a field context into a standalone HTML document; otherwise bundled HTML labels in `B1Checkin/assets/labels/` are used with placeholder substitution.
+Na conclusão de checkin, `B1Checkin/src/helpers/LabelHelper.ts` decide o que imprimir a partir dos sinalizadores de grupo em cada visita pendente: nametags para grupos `printNametag`, mais uma etiqueta de retirada de família se qualquer visita atingir um grupo `parentPickup`. Visitas com `checkinType` `volunteer` são puladas por `LabelHelper.selectChildVisits()`, portanto um trabalhador de cuidado infantil em uma sala de Retirada de Pais nunca dispara uma etiqueta de retirada. O código de segurança da resposta de checkin vai em nametags infantis e no rótulo de retirada; nametags adultos imprimem sem um código. Se a igreja tem modelos, `LabelRenderer` (`src/helpers/LabelRenderer.ts`) transforma blocos + contexto de campo em um documento HTML autossuficiente; caso contrário etiquetas HTML incluídas em `B1Checkin/assets/labels/` são usadas com substituição de espaço reservado.
 
-Barcodes are generated as inline SVG by pure-TypeScript encoders in `B1Checkin/src/helpers/barcode.ts` — Code 39 pattern tables and Code 128 (code set B with mod-103 checksum) width tables, plus QR via the `qrcode` package. **These encoders are intentionally duplicated in B1Admin** (`LabelEditor.tsx` inlines the same tables, noted in a code comment) so designer previews are pixel-faithful to kiosk output; a change to one must be mirrored in the other.
+Códigos de barras são gerados como SVG inline por codificadores TypeScript puros em `B1Checkin/src/helpers/barcode.ts` — tabelas de padrão Code 39 e Code 128 (code set B com checksum mod-103) tabelas de largura, plus QR via o pacote `qrcode`. **Esses codificadores são intencionalmente duplicados em B1Admin** (`LabelEditor.tsx` inline as mesmas tabelas, anotado em um comentário de código) portanto previsualizações do designer são pixel-fiéis a saída do kiosk; uma mudança em um deve ser espelhada no outro.
 
-The print pipeline (`src/components/PrintUI.tsx`) renders each HTML label in a `WebView`, captures it to JPG via `react-native-view-shot`, and hands the image URIs to the native **printer-helper** Expo module (`B1Checkin/modules/printer-helper/`). The module exposes `scan()`, `checkInit()`, `printUris()`, and status events, with a provider per brand on both platforms:
+O pipeline de impressão (`src/components/PrintUI.tsx`) renderiza cada etiqueta HTML em uma `WebView`, a captura para JPG via `react-native-view-shot`, e entrega os URIs de imagem ao módulo Expo nativo **printer-helper** (`B1Checkin/modules/printer-helper/`). O módulo expõe `scan()`, `checkInit()`, `printUris()` e eventos de status, com um provedor por marca em ambas as plataformas:
 
-| Brand | Android | iOS | Notes |
+| Marca | Android | iOS | Notas |
 |-------|---------|-----|-------|
-| Brother | `BrotherProvider.kt` (Brother print SDK) | `BrotherProvider.swift` (`BRLMPrinterKit.xcframework`) | QL-series network printers (QL-800/810W/820NWB/1100/1110NWB…), die-cut 29×90 labels, the recommended default |
-| Zebra | `ZebraProvider.kt` (Link-OS SDK) | `ZebraProvider.swift` + `ZebraBridge` | Network discovery + TCP/ZPL image printing |
+| Brother | `BrotherProvider.kt` (Brother print SDK) | `BrotherProvider.swift` (`BRLMPrinterKit.xcframework`) | Impressoras de rede QL-series (QL-800/810W/820NWB/1100/1110NWB…), etiquetas de corte morrer 29×90, o padrão recomendado |
+| Zebra | `ZebraProvider.kt` (Link-OS SDK) | `ZebraProvider.swift` + `ZebraBridge` | Descoberta de rede + impressão de imagem TCP/ZPL |
 
-Printer selection lives at `app/printers.tsx` (network scan returns `brand~model~ip` entries; the choice persists to AsyncStorage), and `src/helpers/PrinterLog.ts` keeps an on-device diagnostic log surfaced through a live status dot in the kiosk header.
+Seleção de impressora vive em `app/printers.tsx` (varredura de rede retorna entradas `brand~model~ip`; a escolha persiste para AsyncStorage), e `src/helpers/PrinterLog.ts` mantém um registro diagnóstico de dispositivo superfícies através de um ponto de status ao vivo no cabeçalho do kiosk.
 
-## Guest registration
+## Registro de visitante
 
-Two paths create a person mid-check-in:
+Dois caminhos criam uma pessoa mid-checkin:
 
-- **At the kiosk** — the household screen's "Add guest" opens `B1Checkin/app/addGuest.tsx`, which first searches `GET /membership/people/search?term=` for an existing non-member match and otherwise creates one with `POST /membership/people`, attached to the current household. The guest then flows through group assignment like any member.
-- **Self-serve via QR** — when the church setting `enableQRGuestRegistration` is on (configured in B1Admin's Check-In settings, read from `GET /membership/settings/public/{churchId}`), the kiosk lookup screen shows a QR code linking to `https://{subdomain}.b1.church/guest-register?serviceId=`. That B1App page (`src/app/[sdSlug]/(public)/guest-register/page.tsx`) lets a visiting family register themselves on their own phone through the anonymous `POST /membership/people/guest-register` endpoint, keeping the kiosk line moving.
+- **No kiosk** — a tela de casa "Add guest" abre `B1Checkin/app/addGuest.tsx`, que primeiro procura `GET /membership/people/search?term=` para uma combinação não-membro existente e caso contrário cria uma com `POST /membership/people`, anexado à casa atual. O convidado então flui através da atribuição de grupo como qualquer membro.
+- **Self-serve via QR** — quando a configuração da igreja `enableQRGuestRegistration` está ligada (configurado nas configurações de Check-In do B1Admin, lido de `GET /membership/settings/public/{churchId}`), a tela de lookup do kiosk mostra um código QR vinculando-se a `https://{subdomain}.b1.church/guest-register?serviceId=`. Essa página B1App (`src/app/[sdSlug]/(public)/guest-register/page.tsx`) deixa uma família visitante se registrar a si mesma no próprio telefone através do endpoint anônimo `POST /membership/people/guest-register`, mantendo a linha do kiosk se movendo. A folha QR também tem um botão **Register here** que abre a mesma página no kiosk (`app/guestRegister.tsx`) em uma `WebView` incógnita, com cache desabilitado; `src/helpers/GuestRegisterHelper.ts` cria a URL para tanto o QR quanto a WebView e bloqueia navegação para fora de `https://{subdomain}.b1.church/guest-register`. A tela retorna ao lookup em **Done**, voltar, ou 120 segundos de inatividade (digitação de formulário é retransmitida da WebView como atividade), desmontando a WebView portanto as entradas de uma família nunca alcançam a próxima.
 
-## Related Pages
+## Páginas Relacionadas
 
-- [Attendance Endpoints](../api/endpoints/attendance) -- Full REST surface for campuses, services, sessions, visits, and visit sessions
-- [Membership Endpoints](../api/endpoints/membership) -- People, households, and groups
-- [Webhooks](../api/webhooks) -- The `session.created`, `attendance.recorded`, and `attendance.checkout` events
-- [Module Structure](../api/module-structure) -- How the attendance module is organized server-side
+- [Attendance Endpoints](../api/endpoints/attendance) -- Superfície REST completa para campus, serviços, sessões, visitas e sessões de visita
+- [Membership Endpoints](../api/endpoints/membership) -- Pessoas, casas e grupos
+- [Webhooks](../api/webhooks) -- Os eventos `session.created`, `attendance.recorded`, e `attendance.checkout`
+- [Module Structure](../api/module-structure) -- Como o módulo de presença é organizado no lado do servidor

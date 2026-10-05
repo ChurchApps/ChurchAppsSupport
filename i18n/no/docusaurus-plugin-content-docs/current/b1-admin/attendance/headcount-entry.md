@@ -1,50 +1,50 @@
 ---
-title: "Antallregistrering og trend"
+title: "Registrering av opptelling og trend"
 ---
 
-# Antallregistrering og trend
+# Registrering av opptelling og trend
 
 <div class="article-intro">
 
-Med antallregistrering kan du registrere et enkelt totalt antall besøkende -- for en gudstjeneste, en gudstjenestetime eller en gruppe -- uten å registrere navngitte personer. Bruk dette når du bare trenger å vite «hvor mange mennesker var her», og kombiner det med antalltrend-rapporten for å følge dette tallet over tid.
+Med opptelling kan du registrere et enkelt samlet oppmøtetall -- for en gudstjeneste, et samlingstidspunkt eller en gruppe -- uten å sjekke inn en navngitt liste. Bruk dette når du bare trenger å vite «hvor mange som var til stede», og kombiner det med rapporten Opptellingstrend for å følge tallet over tid.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Dine campuser, gudstjenester og gudstjenesteklokkesletter må være konfigurert. Se [Oppsett av oppmøte](setup.md).
-- Registrering av antall krever tillatelsen **Oppmøte &gt; Rediger**; visning av trendrapport krever **Oppmøte &gt; Vis**. Se [Roller og tillatelser](../settings/roles-permissions.md).
+- Campuser, gudstjenester og samlingstidspunkter må være satt opp. Se [Oppsett av oppmøte](setup.md).
+- For å registrere en opptelling trenger du tillatelsen **Oppmøte &gt; Rediger**, og for å se trendrapporten trenger du **Oppmøte &gt; Vis**. Se [Roller og tillatelser](../settings/roles-permissions.md).
 
 </div>
 
 :::info
-Antallregistreringer er et reint-tall-alternativ til [Registrering av oppmøte](recording-attendance.md). Hvis du trenger å vite **hvem** som møtte opp -- for eksempel for å følge opp med personer som ikke har vært tilbake -- fortsett å bruke navngitt oppmøtesession på en gruppes Sessions-fane. Antallregistreringer lagrer bare et nummer.
+Opptelling er et alternativ til [registrering av oppmøte](recording-attendance.md) som bare lagrer totalen. Hvis du trenger å vite **hvem** som var til stede -- for eksempel for å følge opp personer som ikke har kommet tilbake -- bør du fortsette å bruke navngitt oppmøte per økt i fanen Økter i en gruppe. Opptelling lagrer bare et tall.
 :::
 
-## Registrering av antall
+## Registrere en opptelling
 
-1. Åpne **B1 Admin**, åpne **seksjonsmenyen** i øvre venstre hjørne og velg **People**, klikk deretter på **Oppmøte**-fanen.
-2. Velg **Antallregistrering**-underfanen.
+1. Åpne **B1 Admin**, åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre), utvid **Personer** og klikk på **Oppmøte**.
+2. Velg underfanen **Opptellinger**.
 3. Fyll ut skjemaet:
    - **Gudstjeneste** *(obligatorisk)*
-   - **Gudstjenesteklokkeslått** -- la stå tomt for å registrere et totalt antall på tvers av alle gudstjenesteklokkesletter
-   - **Gruppe** -- valgfritt; bare grupper med Spor oppmøte aktivert er oppført. La stå tomt for «Ingen gruppe (hele gudstjenesten).»
+   - **Samlingstidspunkt** -- la feltet stå tomt for å registrere en total for alle samlingstidspunkter
+   - **Gruppe** -- valgfritt, bare grupper med Registrer oppmøte aktivert vises. La feltet stå tomt for «Ingen gruppe (hele gudstjenesten)».
    - **Dato**
-   - **Antall** -- det totale antallet mennesker til stede
-4. Klikk **Lagre**.
+   - **Opptelling** -- det totale antallet personer som var til stede
+4. Klikk på **Lagre**.
 
-Tabellen **Nylige antallregistreringer** på høyre side viser de siste innføringene dine med dato, gudstjeneste, gudstjenesteklokkeslått, gruppe og antall. Klikk på en rad for å laste den tilbake inn i skjemaet hvis du trenger å korrigere eller slette den.
+Tabellen **Siste opptellinger** til høyre viser de siste registreringene med dato, gudstjeneste, samlingstidspunkt, gruppe og antall. Klikk på en rad for å laste den inn i skjemaet igjen hvis du må rette eller slette den.
 
-## Antalltrend-rapport
+## Rapporten Opptellingstrend
 
-1. Fra samme **Oppmøte**-fane velger du **Antalltrend**-underfanen.
-2. Bruk **Campus**-, **Gudstjeneste**-, **Gudstjenesteklokkeslått**- og **Gruppe**-filtrene for å begrense rapporten.
+1. Velg fanen **Opptellingstrend** på samme **Oppmøte**-side.
+2. Bruk filtrene **Campus**, **Gudstjeneste**, **Samlingstidspunkt** og **Gruppe** for å avgrense rapporten.
 
-Rapporten viser dine registrerte antall summert etter uke, både som linjediagram og tabell -- samme rapportstil brukt av [Oppmøte- og gruppetrendfanene](tracking-attendance.md).
+Rapporten viser de registrerte opptellingene summert per uke, både som linjediagram og som tabell -- samme rapportstil som i [trendfanene for Oppmøte og Grupper](tracking-attendance.md).
 
 ## Relaterte sider
 
-- [Registrering av oppmøte](recording-attendance.md) -- navngitt oppmøtesession per person
-- [Sporing av oppmøte](tracking-attendance.md) -- oppmøte- og gruppetrendrapporter
-- [Oppsett av oppmøte](setup.md) -- konfigurer campuser, gudstjenester og gudstjenesteklokkesletter
+- [Registrere oppmøte](recording-attendance.md) -- navngitt oppmøte per person og samling
+- [Følge opp oppmøte](tracking-attendance.md) -- trendrapporter for oppmøte og grupper
+- [Oppsett av oppmøte](setup.md) -- sett opp campuser, gudstjenester og samlingstidspunkter

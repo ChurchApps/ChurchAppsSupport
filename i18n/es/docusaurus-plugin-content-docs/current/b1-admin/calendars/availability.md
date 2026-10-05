@@ -6,25 +6,25 @@ title: "Calendario de Disponibilidad"
 
 <div class="article-intro">
 
-El Calendario de Disponibilidad te da una vista de pájaro de todas las reservas de sala y recurso en toda tu iglesia. Desde aquí puedes ver qué está programado, detectar conflictos antes de que sucedan, y reservar una sala o recurso para cualquier evento directamente.
+El Calendario de Disponibilidad le proporciona una vista de pájaro de todas las reservas de salas y recursos en toda su iglesia. Desde aquí puede ver qué está programado, ver conflictos antes de que sucedan, y reservar una sala o recurso para cualquier evento directamente.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- Configura al menos una [sala o recurso](rooms-resources) en la sección Salas y Recursos
-- Necesitas acceso de edición a la sección Calendarios en B1 Admin
+- Configure al menos una [sala o recurso](rooms-resources) en la sección Rooms & Resources
+- Necesita acceso de edición a la sección Calendars en B1 Admin
 
 </div>
 
 ## Abriendo el Calendario de Disponibilidad
 
-En B1 Admin, abre el **menú de sección** en la esquina superior izquierda y elige **Calendarios**, luego selecciona **Disponibilidad**.
+En B1 Admin, abra el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la esquina superior izquierda), expanda **Calendars**, y haga clic en **Availability**.
 
 ## Leyendo el Calendario
 
-El calendario muestra el mes actual por defecto. Puedes navegar hacia adelante y hacia atrás con las flechas en la parte superior, o cambiar entre vistas de mes, semana y día.
+El calendario muestra el mes actual por defecto. Puede navegar hacia adelante y atrás con las flechas en la parte superior, o cambiar entre vistas de mes, semana y día.
 
 Cada evento está codificado por color según el estado de reserva:
 
@@ -34,39 +34,39 @@ Cada evento está codificado por color según el estado de reserva:
 | Naranja | Pendiente de aprobación |
 | Gris | Bloqueado (no disponible) |
 
-Pasar el ratón sobre un evento muestra el título del evento y la sala o recurso al que está adjunto.
+Pasar el mouse sobre un evento muestra el título del evento y la sala o recurso al que está adjunto.
 
 ## Filtrando por Sala o Recurso
 
-Usa el menú **Filtro** en la esquina superior izquierda para reducir el calendario a una sola sala o recurso. Selecciona **Todas las Salas y Recursos** para volver a la vista completa.
+Use el menú desplegable **Filter** en la esquina superior izquierda para reducir el calendario a una sola sala o recurso. Seleccione **All Rooms & Resources** para volver a la vista completa.
 
-## Reservando una Sala o Recurso
+## Reservar una Sala o Recurso
 
-1. Haz clic en el botón **Reservar** en la esquina superior derecha de la página.
-2. En el diálogo que se abre, completa los detalles del evento:
-   - **Título** — el nombre del evento
-   - Fecha/hora **Inicio** y **Fin**
-   - **Visibilidad** — Público o Privado
-   - **Salas** — selecciona una o más salas para reservar
-   - **Recursos** — selecciona uno o más recursos para reservar
-3. Opcionalmente establece tiempos de **Configuración** y **Desmontaje** (en minutos). Estos rellenan la reserva en ambos extremos para que el espacio se reserve para configuración y limpieza, aunque los tiempos de inicio/fin del evento permanezcan igual.
-4. Para repetir la reserva, marca **Repeticiones** y configura la recurrencia:
-   - **Repetir cada** -- establece el intervalo (por ejemplo, cada 2 semanas).
-   - **Frecuencia** -- Diaria, Semanal, o Mensual. Semanal te permite seleccionar día(s) específico(s) de la semana; Mensual te permite seleccionar un día fijo del mes o un patrón relativo como "el segundo martes".
-   - **Termina** -- Nunca, en una fecha específica, o después de un número establecido de ocurrencias.
-5. Para especificar una ventana de reserva personalizada (diferente del inicio/fin del evento), alterna **Ventana de Reserva Personalizada** e ingresa los tiempos de inicio y fin de la ventana. Usa esto cuando una sala necesita ser accesible fuera de las horas listadas del evento.
-6. Haz clic en **Guardar** para enviar la reserva.
+1. Haga clic en el botón **Book** en la esquina superior derecha de la página.
+2. En el diálogo que se abre, complete los detalles del evento:
+   - **Title** — el nombre del evento
+   - **Start** y **End** fecha/hora
+   - **Visibility** — Public o Private
+   - **Rooms** — seleccione una o más salas para reservar
+   - **Resources** — seleccione uno o más recursos para reservar
+3. Opcionalmente configure los tiempos **Setup** y **Teardown** (en minutos). Estos rellenan la reserva en ambos lados para que el espacio esté reservado para configuración y limpieza, aunque los tiempos de inicio/fin del evento se mantengan igual.
+4. Para repetir la reserva, marque **Repeats** y configure la recurrencia:
+   - **Repeat every** -- configure el intervalo (por ejemplo, cada 2 semanas).
+   - **Frequency** -- Daily, Weekly, o Monthly. Weekly permite elegir días específicos de la semana; Monthly permite elegir un día fijo del mes o un patrón relativo como "el segundo martes."
+   - **Ends** -- Never, en una fecha específica, o después de un número fijo de ocurrencias.
+5. Para especificar una ventana de reserva personalizada (diferente del inicio/fin del evento), alterne **Custom Booking Window** e ingrese los tiempos de inicio y fin de la ventana. Use esto cuando una sala necesite ser accesible fuera de las horas indicadas del evento.
+6. Haga clic en **Save** para enviar la reserva.
 
 :::info
-Si la sala o recurso tiene un **Grupo de Aprobación** configurado, la reserva aparecerá como **Pendiente** hasta que un líder de ese grupo la apruebe. Ver [Aprobaciones de Calendario](approvals) para el flujo de trabajo de aprobación.
+Si la sala o recurso tiene un **Approval Group** configurado, la reserva aparecerá como **Pending** hasta que un líder de ese grupo la apruebe. Consulte [Aprobaciones de Calendario](approvals) para el flujo de trabajo de aprobación.
 :::
 
 :::tip
-El calendario destacará cualquier conflicto antes de que guardes. Si ves una advertencia de conflicto, ajusta tus tiempos o elige una sala diferente.
+El calendario destacará cualquier conflicto antes de que guarde. Si ve una advertencia de conflicto, ajuste sus tiempos o elija una sala diferente.
 :::
 
 ## Artículos Relacionados
 
-- [Salas, Recursos y Programación](rooms-resources) — configura espacios y equipos reservables
-- [Aprobaciones de Calendario](approvals) — aprueba o deniega solicitudes de reserva
-- [Crear Calendarios](creating-calendars) — administra calendarios de eventos
+- [Salas, Recursos y Programación](rooms-resources) — configure espacios y equipos reservables
+- [Aprobaciones de Calendario](approvals) — apruebe o rechace solicitudes de reserva
+- [Creando Calendarios](creating-calendars) — administre calendarios de eventos

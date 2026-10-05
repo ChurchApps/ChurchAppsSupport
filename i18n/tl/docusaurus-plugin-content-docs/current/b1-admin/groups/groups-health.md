@@ -1,53 +1,53 @@
 ---
-title: "Kalusugan ng Mga Grupo"
+title: "Groups Health"
 ---
 
-# Kalusugan ng Mga Grupo
+# Groups Health
 
 <div class="article-intro">
 
-Ang Groups Health dashboard ay nagbibigay sa iyo ng isang panoramikong view kung paano ang lahat ng iyong mga grupo ay gumagana -- ang mga trend ng pagiging miyembro, average na dumalo, at paglaki o attrition sa nakaraang 90 na araw -- lahat sa isang solong sortable na table.
+Ang Groups Health dashboard ay nagbibigay sa inyo ng pangkalahatang tanaw kung kumusta ang lahat ng inyong group — mga trend sa pagiging miyembro, average ng attendance, at paglago o pagbaba sa nakalipas na 90 araw — lahat sa iisang talaan na maaaring i-sort.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Ka Magsimula</h4>
+<h4>Bago Magsimula</h4>
 
-- Kailangan mo ng ilang mga grupo na may mga miyembro upang makita ang makabuluhang data. Tingnan ang [Paglikha ng Mga Grupo](creating-groups).
-- Ang attendance data ay kinukuha mula sa mga naka-record na session. Tingnan ang [Dumalo](../attendance/) na seksyon.
+- Kailangan ninyo ng kahit ilang group na may mga miyembro para makita ang makabuluhang datos. Tingnan ang [Paggawa ng mga Group](creating-groups).
+- Kinukuha ang datos ng attendance mula sa mga naitalang session. Tingnan ang seksyong [Attendance](../attendance/).
 
 </div>
 
 ## Pagbubukas ng Groups Health
 
-Sa B1 Admin, buksan ang **section menu** sa itaas-kaliwa na sulok at piliin ang **Mga Tao**, pagkatapos i-click ang **Mga Grupo** sa navigation bar at i-click ang **Group Health** button sa page header. Ang dashboard ay nag-load ng isang table na may isang row bawat grupo.
+Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), i-expand ang **People**, i-click ang **Groups**, at pagkatapos ay i-click ang button na **Group Health** sa header ng page. Maglo-load ang dashboard ng talaan na may isang row para sa bawat group.
 
-## Mga Haligi
+## Mga Column
 
-| Haligi | Kung ano ang ipinakikita |
+| Column | Ano ang ipinapakita |
 |--------|--------------|
-| **Pangalan** | Ang pangalan ng grupo, na naka-link sa pahina ng detalye ng grupo |
-| **Kategorya** | Ang kategorya ng grupo |
-| **Mga Miyembro** | Kasalukuyang aktibong bilang ng mga miyembro |
-| **Sumali (90d)** | Mga miyembro na sumali sa nakaraang 90 na araw |
-| **Naiwan (90d)** | Mga miyembro na nag-iwan sa nakaraang 90 na araw |
-| **Churn (90d)** | Net churn rate bilang isang porsyento sa loob ng 90 na araw |
-| **Avg Dumalo** | Average headcount bawat attendance session |
+| **Name** | Ang pangalan ng group, naka-link sa group detail page |
+| **Category** | Ang category ng group |
+| **Members** | Kasalukuyang bilang ng mga aktibong miyembro |
+| **Joined (90d)** | Mga miyembrong sumali sa nakalipas na 90 araw |
+| **Left (90d)** | Mga miyembrong umalis sa nakalipas na 90 araw |
+| **Churn (90d)** | Net churn rate bilang porsyento sa loob ng 90 araw |
+| **Avg Attendance** | Karaniwang bilang ng dumalo kada attendance session |
 
-I-click ang anumang header ng haligi upang i-sort ang table sa pamamagitan ng haligi na iyon. I-click ulit upang baligtarin ang direksyon ng sorting.
+I-click ang header ng anumang column para i-sort ang talaan ayon sa column na iyon. I-click muli para baligtarin ang direksyon ng pag-sort.
 
 ## Paggamit ng Health Data
 
-- **Mataas na churn + mababang joins** -- isang grupo na lumalaki at hindi nagpalit ng mga nawalan na miyembro. Karapat-dapat sa usapan sa lider ng grupo.
-- **Mataas na joins + mababang dumalo** -- ang mga tao ay nag-sign up ngunit hindi dumarating. Isaalang-alang ang engagement follow-up.
-- **Mataas na average na dumalo** -- isang malusog, aktibong grupo. Potensyal na modelo para sa ibang mga grupo.
+- **Mataas na churn + kaunting sumali** — isang group na lumiliit at hindi napapalitan ang mga nawalang miyembro. Sulit na kausapin ang group leader.
+- **Maraming sumali + mababang attendance** — nagsa-sign up ang mga tao pero hindi dumadalo. Isaalang-alang ang engagement follow-up.
+- **Mataas na average na attendance** — isang malusog at aktibong group. Maaaring maging modelo para sa ibang mga group.
 
 :::tip
-Ang pag-click sa pangalan ng grupo ay tumutulong sa iyo nang direkta sa pahina ng detalye ng grupo kung saan maaari mong suriin ang mga indibidwal na miyembro, mga record ng dumalo, at mga kaganapang calendar.
+Ang pag-click sa pangalan ng group ay direktang magdadala sa inyo sa detail page ng group kung saan maaari ninyong suriin ang mga indibidwal na miyembro, mga attendance record, at mga calendar event.
 :::
 
 ## Mga Kaugnay na Artikulo
 
-- [Paglikha ng Mga Grupo](creating-groups) -- mag-set up ng mga grupo
-- [Mga Miyembro ng Grupo](group-members) -- pamahalaan ang pagiging miyembro ng grupo
-- [Pag-track ng Dumalo](../attendance/tracking-attendance) -- tala sa mga session na dumalo na naipapakain sa dashboard na ito
+- [Paggawa ng mga Group](creating-groups) — mag-set up ng mga group
+- [Mga Miyembro ng Group](group-members) — pamahalaan ang pagiging miyembro ng group
+- [Pagsubaybay sa Attendance](../attendance/tracking-attendance) — magtala ng mga attendance session na nagpapakain sa dashboard na ito

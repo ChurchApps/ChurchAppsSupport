@@ -21,7 +21,7 @@ The B1 page editor is a visual drag-and-drop builder that lets you design your c
 
 ## Opening the Editor
 
-1. In B1 Admin, click **Website** in the left menu.
+1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Website**, and click **Pages**.
 2. Find the page you want to edit in the Pages table and click **Edit**.
 
 The editor opens in full-screen mode. The left panel shows your page structure and available content elements; the center area shows a live preview of your page.

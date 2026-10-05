@@ -6,204 +6,220 @@ title: "Arbeidsflyter"
 
 <div class="article-intro">
 
-Arbeidsflyter flytter personer gjennom en serie med steg på et visuelt brett. Hver person blir til et kort som reiser fra ett steg til det neste -- fra oppfølging av førstegangsgast, til medlemskapsprosess, til takk til førstegangsgiver, og alt annet der du trenger å spore mange personer gjennom samme sett med stadier. Et steg kan spørre en frivillig om å gjøre noe (ringe, ha en samtale) **og** kjøre automatiserte handlinger på egenhånd -- sende en e-post, vente noen dager, legge personen til en gruppe -- så Arbeidsflyter håndterer både den menneskelige oppfølgingen og rutinearbeidet rundt det. Arbeidsflyter utvider [Oppgaver](./tasks.md) til et dra-og-slipp Kanban-brett slik at ingenting og ingen faller gjennom maskene.
+Arbeidsflyter fører mennesker gjennom en rekke trinn på en visuell tavle. Hver person blir et kort som flytter seg fra ett trinn til det neste -- fra oppfølging av en førstegangsbesøkende, via en medlemsprosess, til en takk til en førstegangsgiver, og alt annet der du må følge mange personer gjennom de samme stadiene. Et trinn kan be en frivillig om å gjøre noe (ringe, ta en samtale) **og** samtidig kjøre automatiske handlinger -- sende en e-post eller SMS, vente noen dager, legge personen til i en gruppe -- slik at arbeidsflyter dekker både den menneskelige oppfølgingen og rutinearbeidet rundt den. Arbeidsflyter utvider [Oppgaver](./tasks.md) til en Kanban-tavle med dra og slipp, slik at ingen faller mellom stolene.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Sørg for at personene du vil spore finnes i B1 Admin
-- Gjør deg kjent med hvordan [Oppgaver](./tasks.md) fungerer, siden hvert kort på et brett er en oppgave
-- For å bruke handlingen **Send e-post**, opprett først e-postmalene du vil sende (administrert under **Meldinger → Administrer maler**)
-- Du trenger den aktuelle oppgavistillatelsen. Visning, redigering av kort og administrasjon av arbeidsflyter er separate tillatelsenivåer (se [Roller og tillatelser](../settings/roles-permissions.md))
+- Pass på at personene du vil følge opp finnes i B1 Admin
+- Gjør deg kjent med hvordan [Oppgaver](./tasks.md) fungerer, siden hvert kort på en tavle er en oppgave
+- For å bruke handlingen **Send e-post** må du først opprette e-postmalene du vil sende (administreres under **Meldinger → Administrer maler**)
+- For å bruke handlingen **Send SMS** må du først koble til en [tekstmeldingsleverandør](../settings/church-settings.md#texting)
+- Du trenger riktig tillatelse for Oppgaver. Visning, redigering av kort og administrasjon av arbeidsflyter er separate tillatelsesnivåer (se [Roller og tillatelser](../settings/roles-permissions.md))
 
 </div>
 
-## Visning av arbeidsflyter
+## Vise arbeidsflyter
 
-Naviger til **Serving** og velg **Workflows** fra menyen. Du vil se arbeidsflytene dine oppført og gruppert etter kategori, med aktive arbeidsflyter uthevet. Klikk på en hvilken som helst arbeidsflyt for å åpne brettet.
+Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre i B1 Admin), utvid **Tjeneste** og klikk på **Arbeidsflyter**. Du ser arbeidsflytene dine gruppert etter kategori, med aktive arbeidsflyter uthevet. Klikk på en arbeidsflyt for å åpne tavlen.
 
-## Opprettelse av en arbeitsflyt
+## Opprette en arbeidsflyt
 
-1. På siden Arbeidsflyter klikker du på **Legg til arbeitsflyt**.
+1. På siden Arbeidsflyter klikker du på **Legg til arbeidsflyt**.
 2. Velg hvordan du vil starte:
-   - **Tom arbeitsflyt** -- start fra bunnen og bygg dine egne steg.
-   - **Fra en mal** -- start med et ferdig sett med steg du kan redigere. Innebygde maler inkluderer:
-     - **Oppfølging av ny besøkende** -- Send velkomst-e-post → Personlig telefonsamtale → Inviter til neste steg → Koblet
-     - **Medlemskapsklasse** -- Uttrykk interesse → Registrer deg for klasse → Delta i klasse → Fullfør medlemskap
-     - **Takk til førstegangsgiver** -- Send takk-notat → Del givergavens innvirkning → Forvaltet
+   - **Tom arbeidsflyt** -- start fra bunnen av og bygg dine egne trinn.
+   - **Fra en mal** -- start med et ferdig sett med trinn som du kan redigere. Innebygde maler er blant annet:
+     - **Oppfølging av nye besøkende** -- Send velkomst-e-post → Personlig telefonsamtale → Inviter til neste steg → Tilkoblet
+     - **Medlemskurs** -- Uttrykk interesse → Meld deg på kurset → Delta på kurset → Fullfør medlemskap
+     - **Takk til førstegangsgiver** -- Send takkebrev → Del hva gaven får bety → Forvaltet
 3. Gi arbeidsflyten et **Navn**.
-4. Tilordne eventuelt en **Kategori** for å gruppere relaterte arbeidsflyter sammen. Du kan opprette en ny kategori direkte fra rullegardinmenyen.
-5. La arbeidsflyten være **Aktiv** slik at personer kan legges til den, eller sett den til **Inaktiv** for å skjule den fra listen over arbeitsflyt-lister.
-6. Klikk **Lagre**.
+4. Du kan eventuelt velge en **Kategori** for å gruppere beslektede arbeidsflyter. Du kan opprette en ny kategori direkte fra nedtrekksmenyen.
+5. La arbeidsflyten stå som **Aktiv** slik at personer kan legges til i den, eller sett den til **Inaktiv** for å skjule den fra listene over arbeidsflyter man kan legge til.
+6. Klikk på **Lagre**.
 
 :::tip
-Bruk **Dupliser**-knappen på Arbeitsflyt-listen for å kopiere en eksisterende arbeitsflyt -- inkludert dens steg, automatiserte handlinger og ruting -- som utgangspunkt for en ny.
+Bruk knappen **Dupliser** i listen over arbeidsflyter for å kopiere en eksisterende arbeidsflyt -- inkludert trinn, automatiske handlinger og ruting -- som utgangspunkt for en ny.
 :::
 
-## Bygge brettet med steg
+## Bygge tavlen med trinn
 
-Hvert arbeitsflyt-brett er gjort opp av **steg**, vist som kolonner fra venstre til høyre. Åpne en arbeitsflyt og bruk **Legg til steg** for å opprette hver fase av prosessen.
+Hver arbeidsflyttavle består av **trinn**, vist som kolonner fra venstre mot høyre. Åpne en arbeidsflyt og bruk **Legg til trinn** for å opprette hvert stadium i prosessen din.
 
-Når du legger til eller redigerer et steg, kan du konfigurere:
+Når du legger til eller redigerer et trinn, kan du konfigurere:
 
-- **Stegsnavn** -- kolonneoverskriften (for eksempel, "Velkomstsamtale" eller "Avventer registrering").
-- **Forfallsdato (dager)** -- setter automatisk en forfallsdato når et kort enters dette steget. Kort forbi forfallsdatoen deres flagges som **Forfalt**.
-- **Standardtilordning** -- personen eller gruppen nye kort på dette steget tilordnes automatisk.
-- **Automatiserte handlinger** -- ting systemet gjør på egenhånd når et kort arrives (se nedenfor).
-- **Ruting** -- hvor kortet går når det forlater steget (se [Ruting](#ruting-av-kort-med-resultater-og-betingelser)).
+- **Trinnnavn** -- kolonneoverskriften (for eksempel «Velkomstsamtale» eller «Venter på registrering»).
+- **Frist om (dager)** -- setter automatisk en frist når et kort kommer inn i dette trinnet. Kort som har passert fristen markeres som **Forfalt**.
+- **Standard ansvarlig** -- personen eller gruppen som nye kort i dette trinnet automatisk tildeles.
+- **Automatiske handlinger** -- ting systemet gjør av seg selv når et kort kommer inn (se nedenfor).
+- **Ruting** -- hvor kortet går når det forlater trinnet (se [Ruting](#routing-cards-with-outcomes-and-conditions)).
 
-Dra stegkolonner inn i rekkefølgen som matcher prosessen din. Rekkefølgen definerer også standardbanen et kort tar når ingen annen ruting gjelder.
+Dra trinnkolonnene i den rekkefølgen som passer prosessen din. Rekkefølgen bestemmer også standardveien et kort følger når ingen annen ruting gjelder.
 
 :::info
-Lagre et nytt steg først. Automatiserte handlinger og ruting knytter seg til steget, så editoren låser opp disse seksjonene når steget finnes.
+Lagre et nytt trinn først. Automatiske handlinger og ruting knyttes til trinnet, så redigeringsvinduet låser opp disse delene først når trinnet finnes.
 :::
 
-## Automatiserte handlinger
+## Automatiske handlinger
 
-Hvert steg kan føre en liste med **automatiserte handlinger** som kjøres av seg selv i det øyeblikket et kort **enters** steget -- før noen berører det. Dette er hvordan et steg både prompter en frivillig *og* tar seg av rutinearbeidet rundt oppfølgingen.
+Hvert trinn kan ha en liste med **automatiske handlinger** som kjører av seg selv i det øyeblikket et kort **kommer inn** i trinnet -- før noen har rørt det. Slik kan et trinn både be en frivillig om oppfølging *og* ta seg av rutinearbeidet rundt den.
 
-I stegeditor, åpne **Automatiserte handlinger**, klikk **Legg til handling**, velg en type, fyll inn innstillinger, og klikk lagre-ikonet på denne handlingen. Legg til så mange som du trenger; de kjøres **fra topp til bunn i rekkefølge**.
+I redigeringsvinduet for trinnet åpner du **Automatiske handlinger**, klikker på **Legg til handling**, velger en type, fyller ut innstillingene og klikker på lagre-ikonet på den handlingen. Legg til så mange du trenger; de kjører **ovenfra og ned i rekkefølge**.
 
-| Handling | Hva det gjør |
+| Handling | Hva den gjør |
 |---|---|
-| **Send e-post** | Sender personen en e-postmal du velger. Du kan overstyre emnelinja. |
-| **Vent** | Pause kortet for et antall dager før du fortsetter (se nedenfor). |
-| **Legg til gruppe** | Legger personen til en [gruppe](../groups/index.md) du velger. |
-| **Legg til arbeitsflyt** | Starter personen på en annen arbeitsflyt -- nyttig for å hånde av mellom prosesser. |
-| **Legg til notat** | Registrerer et notat i kortets historie. |
-| **Angi felt** | Oppdaterer et felt på personens post: Medlemskapsstatus, Sivilstand, Kjønn, By, Fylke eller Postnummer. |
-| **Webhook** | Sender kortets detaljer til en ekstern nettadresse (URL) du oppgir, for tilkobling til andre systemer. |
+| **Send e-post** | Sender personen en e-postmal du velger. Du kan endre emnelinjen. |
+| **Send SMS** | Sender personen en melding du skriver, via kirkens [tekstmeldingsleverandør](../settings/church-settings.md#texting). |
+| **Vent** | Setter kortet på pause i et antall dager før det går videre (se nedenfor). |
+| **Legg til i gruppe** | Legger personen til i en [gruppe](../groups/index.md) du velger. |
+| **Fjern fra gruppe** | Fjerner personen fra en gruppe du velger. |
+| **Legg til i arbeidsflyt** | Starter personen på en annen arbeidsflyt -- nyttig for overlevering mellom prosesser. |
+| **Legg til notat** | Registrerer et notat i kortets historikk. |
+| **Sett felt** | Oppdaterer et felt i personens profil: medlemsstatus, sivilstatus, kjønn, by, fylke/delstat eller postnummer. |
+| **Webhook** | Sender kortets detaljer til en ekstern nettadresse (URL) du oppgir, for å koble til andre systemer. |
+| **Opprett oppgave** | Oppretter en [oppgave](./tasks.md) med tittelen og beskrivelsen du skriver inn, tildelt den du velger. |
 
-Etter at alle et steghandlinger er ferdig, **hviler kortet på det steget** slik at en person kan arbeide det -- med mindre steget har en automatisk rute som flytter det videre (se [Helt automatiserte steg](#helt-automatiserte-steg)).
-
-:::info
-Automatiserte handlinger kjøres bare når et kort arrives gjennom normal flow -- når det først blir lagt til, når et resultat eller automatisk rute bringer det inn, eller etter en venting er slutt. De **gjør ikke** kjør igjen når en stab manuelt drar et kort på steget eller sender det tilbake, så en person vil ikke få den samme e-posten to ganger.
-:::
-
-### Sending av e-post
-
-Velg **Send e-post**, velg en av e-postmalene dine, og skriv eventuelt et egendefinert emne. Når et kort enters steget, mottar personen e-posten automatisk. (Hvis personen ikke har noen e-postadresse på fil, hopper steget ganske enkelt over denne handlingen.)
+Når alle handlingene i et trinn er ferdige, **blir kortet liggende i trinnet** slik at en person kan jobbe med det -- med mindre trinnet har en automatisk rute som flytter det videre (se [Helautomatiske trinn](#fully-automated-steps)).
 
 :::info
-Arbeitsflyt-e-poster sendes kun etter at kirken din er godkjent til å sende gruppee-post, og de teller mot kirkens daglige e-postgrense. Se [Slå på gruppee-post for kirken din](../groups/group-members.md#slå-på-gruppee-post-for-kirken-din).
+Automatiske handlinger kjører bare når et kort kommer inn via den vanlige flyten -- når det først legges til, når et utfall eller en automatisk rute bringer det inn, eller etter at en Vent er ferdig. De kjører **ikke** på nytt når en medarbeider manuelt drar et kort til trinnet eller sender det tilbake, så en person får ikke den samme e-posten to ganger.
 :::
 
-### Vente noen dager (drypsekvenser)
+### Sende e-post
 
-Handlingen **Vent** holder et kort for antall dager du setter. Mens det venter, vises kortet som **Utsatt**. Når ventetiden er over:
+Velg **Send e-post**, velg en av e-postmalene dine og skriv eventuelt et eget emne. Når et kort kommer inn i trinnet, får personen e-posten automatisk. (Hvis personen ikke har noen e-postadresse registrert, hopper trinnet ganske enkelt over denne handlingen.) [Flettefelt](../settings/email-templates.md#merge-fields) i malen, som `{{firstName}}`, fylles ut med personens egne opplysninger.
 
-1. Alle **gjenværende handlinger på samme steg** kjøres -- slik at du kan bygge en dryp som **Send e-post → Vent 3 dager → Send påminnelse e-post**.
-2. Deretter, hvis steget har en automatisk rute, moves kortet videre; ellers hviler det på steget for en person å ta tak.
+:::info
+Arbeidsflyt-e-poster sendes først etter at kirken din er godkjent for gruppe-e-post, og de teller med i kirkens daglige e-postgrense. Se [Slå på gruppe-e-post for kirken din](../groups/group-members.md#turning-on-group-email-for-your-church).
+:::
+
+### Sende en SMS
+
+Velg **Send SMS** og skriv **Tekstmeldingen** (opptil 1 600 tegn). Når et kort kommer inn i trinnet, mottar personen meldingen på mobiltelefonen. Du kan personalisere meldingen med `{{firstName}}`, `{{lastName}}`, `{{displayName}}` eller `{{churchName}}`, som fylles ut med personens opplysninger når meldingen sendes.
+
+- Hvis personen ikke har noen mobiltelefon registrert, hoppes handlingen over.
+- Hvis personen har reservert seg, sendes ingen SMS, og kortets historikk viser **SMS hoppet over: reservert**.
+- Når SMS-en er sendt, viser kortets historikk **SMS sendt**. Hvis sendingen mislykkes -- for eksempel fordi ingen tekstmeldingsleverandør er koblet til eller kirken har tomt for SMS-kreditter -- logges feilen i kortets historikk, og trinnets øvrige handlinger kjører likevel.
+
+:::warning
+SMS-er sendes via kirkens egen [tekstmeldingsleverandør](../settings/church-settings.md#texting). Hvis ingen leverandør er koblet til, advarer handlingsredigereren med *«Ingen tekstmeldingsleverandør er satt opp»*, og SMS-er blir ikke sendt.
+:::
+
+### Vente noen dager (drypp-sekvenser)
+
+Handlingen **Vent** holder tilbake et kort i det antallet dager du angir. Mens det venter, vises kortet som **Utsatt**. Når ventetiden er over:
+
+1. Alle **gjenstående handlinger i samme trinn** kjører -- slik at du kan bygge en drypp-sekvens som **Send e-post → Vent 3 dager → Send en påminnelses-e-post**.
+2. Deretter flyttes kortet videre hvis trinnet har en automatisk rute; ellers blir det liggende i trinnet til en person tar det opp.
 
 :::tip
-En **Vent** helt i begynnelsen av et steg er en enkel måte å "holde" et kort før det vises til en frivillig -- for eksempel, *Vent 7 dager, deretter en coach ringer*.
+En **Vent** helt i starten av et trinn er en enkel måte å «holde» et kort tilbake før det dukker opp hos en frivillig -- for eksempel *Vent 7 dager, deretter tar en veileder kontakt*.
 :::
 
 ## Legge til personer som kort
 
-Det er flere måter å sette personer på et brett:
+Det finnes flere måter å få personer inn på en tavle:
 
-- **Fra brettet** -- Klikk **Legg til kort** nederst i en stegkolonne og velg en person. Du kan også velge en gruppe, og hvert medlem av gruppen legges til som kort.
-- **Fra personens record** -- Bruk **Legg til arbeitsflyt** på en persons side for å droppe dem på en arbeitsflyt.
-- **Fra People search** -- Velg flere personer og bruk bulk-handlingen **Legg til arbeitsflyt** for å legge dem alle til på en gang.
-- **Automatisk med en trigger** -- Legg til personer når noe skjer, som en skjemainnsending eller en første gave (se [Triggers](#triggers) nedenfor).
+- **Fra tavlen** -- Klikk på **Legg til kort** nederst i en trinnkolonne og velg en person. Du kan også velge en gruppe, og alle medlemmene i gruppen legges til som kort.
+- **Fra en persons profil** -- Bruk **Legg til i arbeidsflyt** på personens side for å sette dem inn i en arbeidsflyt.
+- **Fra personsøk** -- Velg flere personer og bruk massehandlingen **Legg til i arbeidsflyt** for å legge dem alle til samtidig.
+- **Automatisk med en utløser** -- Legg til personer når noe skjer, som en skjemainnsending eller en første gave (se [Utløsere](#triggers) nedenfor).
 
-## Arbeide med brettet
+## Arbeide med tavlen
 
-Åpne en arbeitsflyt for å se brettet. Hvert kort viser personens navn, hvem det er tilordnet til, og en forfallsdato eller statusbrikke (**Forfalt** eller **Utsatt**). En stegkolonne viser også små badges for alle automatiserte handlinger den kjører og merknader for rutingen, som gir deg et øyeblikksbilde over hvordan kort flyter.
+Åpne en arbeidsflyt for å se tavlen. Hvert kort viser personens navn, hvem det er tildelt, og en merkelapp for frist eller status (**Forfalt** eller **Utsatt**). En trinnkolonne viser også små merker for eventuelle automatiske handlinger den kjører og merknader om rutingen, slik at du får et raskt oversiktskart over hvordan kortene flyter.
 
-- **Flytt et kort** -- Dra et kort fra en kolonne til den neste mens personen progrederer.
-- **Åpne et kort** -- Dobbeltklikk et kort (eller klikk det) for å åpne skuffen for detaljer, der du kan endre steget, tilordne det på nytt, legge til notater, og gjennomgå hva som allerede har skjedd.
+- **Flytt et kort** -- Dra et kort fra en kolonne til den neste etter hvert som personen kommer videre.
+- **Åpne et kort** -- Dobbeltklikk på et kort (eller klikk på det) for å åpne detaljpanelet, der du kan endre trinn, tildele det på nytt, legge til notater og se hva som allerede har skjedd.
 
-Fra kortskuffen kan du:
+Fra kortpanelet kan du:
 
-- **Tilordne** kortet til en annen person eller gruppe.
-- **Utsett** kortet for 1 dag, 3 dager eller 1 uke for å midlertidig skjule forfallsdatoen.
-- **Send tilbake** til forrige steg eller **Hopp over** til neste steg.
-- **Pin-tilordning** -- behold samme eier på kortet mens det moves mellom steg. Som standard, når du moves et kort til et nytt steg, blir det tilordnet til det stegets standardtilordning; fastlåsing holder den aktuelle personen ansvarlig gjennom.
-- **Fullfør** kortet for å avslutte det, eller velg en **Resultat**-knapp hvis steget har resultater konfigurert (se [Ruting](#ruting-av-kort-med-resultater-og-betingelser)).
-- **Legg til notater** og gjennomgå kortets **historie** -- inkludert en logg over automatiserte handlinger som har kjørt (e-poster sendt, venting, osv.).
+- **Tildele** kortet til en annen person eller gruppe.
+- **Utsette** kortet i 1 dag, 3 dager eller 1 uke for å skjule fristen midlertidig.
+- **Sende tilbake** til forrige trinn eller **Hoppe over** til neste trinn.
+- **Feste tildeling** -- la samme eier beholde kortet selv om det flyttes mellom trinn. Som standard tildeles et kort på nytt til det nye trinnets standard ansvarlige når det flyttes; ved å feste beholder den nåværende personen ansvaret hele veien.
+- **Fullføre** kortet for å avslutte det, eller velge en **Utfall**-knapp hvis trinnet har utfall konfigurert (se [Ruting](#routing-cards-with-outcomes-and-conditions)).
+- **Legge til notater** og se kortets **historikk** -- inkludert en logg over automatiske handlinger som har kjørt (sendte e-poster, ventetider osv.).
 
 ### Massehandlinger
 
-Velg avmerkingsboksene på flere kort for å handle på dem sammen. Et verktøyslinje vises som lar deg **Fullfør**, **Utsett**, **Tilordne på nytt**, eller **Flytt** alle valgte kort til et annet steg på en gang.
+Merk avmerkingsboksene på flere kort for å behandle dem samlet. En verktøylinje vises der du kan **Fullføre**, **Utsette**, **Tildele på nytt** eller **Flytte** alle valgte kort til et annet trinn på én gang.
 
-## Ruting av kort med resultater og betingelser
+## Ruting av kort med utfall og betingelser
 
-Ruting kontrollerer hvor et kort går når det forlater et steg. Åpne en stegredaktør for å konfigurere to typer ruting.
+Ruting styrer hvor et kort går når det forlater et trinn. Åpne redigeringsvinduet for et trinn for å konfigurere to typer ruting.
 
-### Resultatknapper
+### Utfallsknapper
 
-Resultater er knapper som vises i kortskuffen når du er ferdig med et kort på det steget. I stedet for en enkelt **Fullfør**-knapp, kan du tilby valg som "Tilsluttet en gruppe" eller "Ikke interessert." Hvert resultat kan:
+Utfall er knapper som vises i kortpanelet når du fullfører et kort i det trinnet. I stedet for én enkelt **Fullfør**-knapp kan du tilby valg som «Ble med i en gruppe» eller «Ikke interessert». Hvert utfall kan:
 
-- Sende kortet til **et annet steg** i denne arbeidsflyten,
-- **Overlevere kortet** til en helt annen arbeitsflyt, eller
-- **Lukk** kortet.
+- Sende kortet til **et annet trinn** i denne arbeidsflyten,
+- **Overlevere kortet** til en helt annen arbeidsflyt, eller
+- **Lukke** kortet.
 
-Dette lar en beslutning forgrene personen nedover ulike baner.
+Dermed kan én beslutning sende personen videre på ulike veier.
 
 ### Automatisk ruting (betinget)
 
-Automatiske ruter moves et kort videre **i det øyeblikket det enters et steg** (og etter dets automatiserte handlinger er ferdig), uten at noen klikker, hvis personen matches et sett med betingelser. Legg til en rute, velg målsteget, og definer en eller flere **betingelser** (for eksempel, en persons campus, alder eller medlemskapsstatus). En rute uten betingelser matches alle.
+Automatiske ruter flytter et kort videre **i det øyeblikket det kommer inn i et trinn** (og etter at de automatiske handlingene er ferdige), uten at noen klikker, hvis personen oppfyller et sett med betingelser. Legg til en rute, velg målsteget og definer én eller flere **betingelser** (for eksempel en persons menighetssted, alder eller medlemsstatus). En rute uten betingelser passer for alle.
 
 :::info
-På brettet, viser hver stegkolonne små merknader som beskriver rutingen -- for eksempel en resultat-etikett eller "hvis matches" etterfulgt av en pil til destinasjons steg eller arbeitsflyt.
+På tavlen viser hver trinnkolonne små merknader som beskriver rutingen -- for eksempel en utfallsetikett eller «hvis treff» etterfulgt av en pil til målsteget eller målarbeidsflyten.
 :::
 
-## Helt automatiserte steg
+## Helautomatiske trinn
 
-Du kan gjøre et steg kjøres helt på egenhånd, uten at noen arbeider det. Gi steget dets **automatiserte handlinger** og legg til en **automatisk rute** (uten betingelser) som peker til neste steg. Når et kort enters, kjøres handlingene, og deretter moves ruten det umiddelbart videre -- kortet passeres rett gjennom.
+Du kan la et trinn kjøre helt av seg selv, uten at noen jobber med det. Gi trinnet sine **automatiske handlinger** og legg til en **automatisk rute** (uten betingelser) som peker til neste trinn. Når et kort kommer inn, kjører handlingene, og deretter flytter ruten det videre umiddelbart -- kortet passerer rett gjennom.
 
 :::tip
-Kombiner dette med **Vent**: *Send velkomst-e-post → Vent 3 dager → automatisk advance til "Personlig samtale"-steget.* E-posten og timingen håndteres for deg, og en frivillig ser bare kortet når det er på tide for menneskelig berøring.
+Kombiner dette med **Vent**: *Send velkomst-e-post → Vent 3 dager → gå automatisk videre til trinnet «Personlig samtale».* E-posten og tidspunktet tas hånd om for deg, og en frivillig ser bare kortet når det er tid for den menneskelige kontakten.
 :::
 
-## Triggers
+## Utløsere
 
-Triggers legger til personer i en arbeitsflyt automatisk når noe skjer, slik at du aldri må legge til kort for hånd. På et arbeitsflyt-brett, klikk på **Triggers**-fanen, deretter **Legg til trigger**. Det er to typer:
+Utløsere legger automatisk personer til i en arbeidsflyt når noe skjer, slik at du aldri trenger å legge til kort for hånd. På en arbeidsflyttavle klikker du på fanen **Utløsere** og deretter **Legg til utløser**. Det finnes to typer:
 
-### Event triggers
+### Hendelsesutløsere
 
-Utløses så snart en post endres i B1. Velg hendelsen, og legg eventuelt til **betingelser** slik at kun matching personer legges til:
+Utløses så snart en post endres i B1. Velg hendelsen, og legg eventuelt til **betingelser** slik at bare matchende personer legges til:
 
-- **Person · Created / Updated** -- f.eks. legg til hvem som helst hvis status blir *Besøkende*.
-- **Donation · Created** -- f.eks. legg til en første eller stor gave til en takk-arbeitsflyt (match på beløp, fond eller metode).
-- **Group · Member Joined** / **Group · Created**.
-- **Form · Submitted** -- legg til hvem som helst som sender inn et valgt skjema (flott for "Jeg er ny" eller "Koble"-kort).
+- **Person · Opprettet / Oppdatert** -- f.eks. legg til alle som får statusen *Besøkende*.
+- **Donasjon · Opprettet** -- f.eks. legg til en førstegangsgave eller en stor gave i en takke-arbeidsflyt (match på beløp, fond eller metode).
+- **Gruppe · Medlem ble med** / **Gruppe · Opprettet**.
+- **Skjema · Sendt inn** -- legg til alle som sender inn et valgt skjema (flott for et «Jeg er ny»- eller «Ta kontakt»-kort).
 
-### Schedule triggers
+### Tidsplanutløsere
 
-Kjør på gjentakende grunnlag -- daglig, ukentlig, månedlig eller årlig -- mot et sett med betingelser. Bruk disse for tidsbasert outreach som *alle hvis medlemskapsanniversary er i dag* eller en *månedlig* innsjekking.
+Kjører regelmessig -- daglig, ukentlig, månedlig eller årlig -- mot et sett med betingelser. Bruk disse til tidsbasert oppfølging, som *alle som har medlemsjubileum i dag* eller en *månedlig* oppfølging.
 
-For alle triggers kan du også sette:
+For alle utløsere kan du også angi:
 
-- **Entry steg** det nye kortet starter på (standard til første steg).
-- **Én gang per person** -- slik at samme person ikke legges til arbeidsflyten to ganger av triggeren.
-- **Aktiv** -- slå triggeren på eller av uten å slette den.
+- **Inngangstrinnet** det nye kortet starter på (standard er det første trinnet).
+- **Én gang per person** -- slik at samme person ikke legges til i arbeidsflyten to ganger av utløseren.
+- **Aktiv** -- slå utløseren av eller på uten å slette den.
 
 :::tip
-Pair a **Form · Submitted** trigger med **Ny besøkende oppfølging**-malen for å gjøre "Connect Card" eller "Jeg er ny"-skjemaet til en automatisk oppfølgingspipeline.
+Kombiner en **Skjema · Sendt inn**-utløser med malen **Oppfølging av nye besøkende** for å gjøre «Kontaktkort»- eller «Jeg er ny»-skjemaet ditt om til en automatisk oppfølgingsrørledning.
 :::
 
 ## Mine kort
 
-Frivillige og ansatte trenger ikke å grave gjennom alle brett for å finne arbeidet sitt. Siden **Mine kort** (lenket fra Arbeitsflyt-siden) lister alle kort som er tilordnet den nåværende bruker på tvers av alle arbeitsflyter. Klikk på et kort for å åpne brettet det tilhører.
+Frivillige og ansatte trenger ikke grave gjennom hver tavle for å finne oppgavene sine. Siden **Mine kort** (lenket fra siden Arbeidsflyter) viser alle kort som er tildelt den innloggede brukeren på tvers av alle arbeidsflyter. Når du klikker på et kort, åpnes tavlen det hører til.
 
 ## Rapporter
 
-Åpne en arbeitsflyt og klikk **Rapporter** for å se analyser for den arbeidsflyten:
+Åpne en arbeidsflyt og klikk på **Rapporter** for å se analyser for den arbeidsflyten:
 
-- **Forfalt** -- antall kort forbi forfallsdatoen.
-- **Kort per steg** -- hvor mange kort som for øyeblikket sitter på hvert steg, vist som et søylediagram.
-- **Fullført (30 dager)** -- gjennomstrømning over de siste 30 dagene, vist som et linjediagram.
+- **Forfalt** -- antall kort som har passert fristen.
+- **Kort per trinn** -- hvor mange kort som for øyeblikket ligger i hvert trinn, vist som et søylediagram.
+- **Fullført (30 dager)** -- gjennomstrømning de siste 30 dagene, vist som et linjediagram.
 
-Bruk disse for å oppdage flaskehalser -- for eksempel, et steg der kort ansamler og aldri advanced.
+Bruk disse til å oppdage flaskehalser -- for eksempel et trinn der kort hoper seg opp og aldri kommer videre.
 
 ## Relaterte artikler
 
-- [Oppgaver](./tasks.md) -- de enkelte handlingselementer som arbeitsflyt-kort er bygget på
-- [Skjemaer](../forms/index.md) -- bygge skjemaene som kan utløse arbeitsflyter
-- [Grupper](../groups/index.md) -- gruppene en "Legg til gruppe"-handling kan plassere personer i
-- [Roller og tillatelser](../settings/roles-permissions.md) -- styr hvem som kan vise, redigere og administrere arbeitsflyter
+- [Oppgaver](./tasks.md) -- de enkelte oppgavene som arbeidsflytkortene bygger på
+- [Skjemaer](../forms/index.md) -- bygg skjemaene som kan utløse arbeidsflyter
+- [Grupper](../groups/index.md) -- gruppene en «Legg til i gruppe»-handling kan plassere personer i
+- [Roller og tillatelser](../settings/roles-permissions.md) -- styr hvem som kan se, redigere og administrere arbeidsflyter

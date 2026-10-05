@@ -1,125 +1,135 @@
 ---
-title: Kircheneinstellungen
+title: "Church Settings"
 ---
 
 # Church Settings
 
 <div class="article-intro">
 
-The Church Settings page is where you configure your church's basic information, contact details, and branding. These details are used across all ChurchApps tools, including your B1.church website and the B1 Mobile app.
+Die Seite Church Settings ist der Ort, an dem Sie die grundlegenden Informationen, Kontaktdaten und das Branding Ihrer Kirche konfigurieren. Diese Details werden in allen ChurchApps-Tools verwendet, einschließlich Ihrer B1.church-Website und der B1 Mobile-App.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- You need the "Edit Church Settings" permission. See [Roles & Permissions](./roles-permissions.md) if you do not have access.
-- Have your church's address, contact information, and logo ready
+- Sie benötigen die Berechtigung "Edit Church Settings". Siehe [Rollen & Berechtigungen](./roles-permissions.md), wenn Sie keinen Zugriff haben.
+- Halten Sie die Adresse, Kontaktinformationen und das Logo Ihrer Kirche bereit
 
 </div>
 
-## Editing Your Church Information
+## Bearbeitung Ihrer Kircheninformationen
 
-1. In B1 Admin, open the **section menu** in the top-left corner (the section name with the small arrow) and choose **Settings**.
-2. Open the **Church Information** section and click its edit (pencil) icon.
-3. Update any of the following fields:
-   - **Church Name** -- The name displayed across all ChurchApps products.
-   - **Address** -- Your church's physical address.
-   - **Contact Information** -- Phone number, email, and other contact details.
-4. Click **Save** to apply your changes.
+1. Öffnen Sie in B1 Admin das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), erweitern Sie **Settings** und klicken Sie auf **Settings**.
+2. Öffnen Sie den Abschnitt **Church Information** und klicken Sie auf das Symbol zum Bearbeiten (Stift).
+3. Aktualisieren Sie eines der folgenden Felder:
+   - **Church Name** -- Der Name, der in allen ChurchApps-Produkten angezeigt wird.
+   - **Address** -- Die physische Adresse Ihrer Kirche.
+   - **Contact Information** -- Telefonnummer, E-Mail und weitere Kontaktdaten.
+4. Klicken Sie auf **Save**, um Ihre Änderungen zu übernehmen.
 
-## Setting Up Your Subdomain
+## Einrichtung Ihrer Subdomain
 
-Your church gets a free subdomain at **yourchurch.1.church**. This is the web address where members and visitors can access your church's online presence.
+Ihre Kirche erhält eine kostenlose Subdomain bei **yourchurch.1.church**. Dies ist die Web-Adresse, unter der Mitglieder und Besucher auf die Online-Präsenz Ihrer Kirche zugreifen können.
 
-1. On the Settings page, locate the **Subdomain** field.
-2. Enter your preferred subdomain (for example, "gracechurch" for gracechurch.1.church).
-3. Save your changes.
+1. Suchen Sie auf der Seite Settings das Feld **Subdomain**.
+2. Geben Sie Ihre bevorzugte Subdomain ein (z. B. "gracechurch" für gracechurch.1.church).
+3. Speichern Sie Ihre Änderungen.
 
 :::info
-Your subdomain must be unique across all ChurchApps churches. If your preferred name is taken, try adding your city or state (for example, "gracechurch-dallas").
+Ihre Subdomain muss über alle ChurchApps-Kirchen hinweg eindeutig sein. Wenn Ihr bevorzugter Name bereits vergeben ist, versuchen Sie, Ihre Stadt oder Ihren Staat hinzuzufügen (z. B. "gracechurch-dallas").
 :::
 
-If you want visitors to reach your site at your own domain (for example, **www.gracechurch.org**), see [Custom Domain](./custom-domain.md).
+Wenn Sie möchten, dass Besucher Ihre Website unter Ihrer eigenen Domain aufrufen (z. B. **www.gracechurch.org**), lesen Sie [Custom Domain](./custom-domain.md).
 
-## Configuring Branding
+## Konfiguration des Brandings
 
-Customize how your church appears across all ChurchApps tools:
+Passen Sie an, wie Ihre Kirche in allen ChurchApps-Tools erscheint:
 
-1. Upload your **church logo** by clicking the logo area and selecting an image file.
-2. Add any additional **church images** used on your website and [mobile app](./mobile-app.md).
+1. Laden Sie Ihr **church logo** hoch, indem Sie auf den Logo-Bereich klicken und eine Bilddatei auswählen.
+2. Fügen Sie alle weiteren **church images** hinzu, die auf Ihrer Website und in der [mobilen App](./mobile-app.md) verwendet werden.
 
 :::tip
-For best results, use a logo with a transparent background in PNG format. This ensures it looks great on both light and dark backgrounds.
+Verwenden Sie für beste Ergebnisse ein Logo mit transparentem Hintergrund im PNG-Format. Dies stellt sicher, dass es auf hellen und dunklen Hintergründen großartig aussieht.
 :::
 
 ## First Day of Week
 
-Choose which day your calendars start on. The **First Day of Week** dropdown on the Church Info section defaults to **Sunday**, but can be set to any day. Once changed, it's honored across calendar grids in B1 Admin and the B1.church member portal -- group calendars, curated calendars, and the event editor all lay out weeks starting on the day you choose.
+Wählen Sie, mit welchem Tag Ihre Kalender beginnen. Die **First Day of Week**-Dropdown im Abschnitt Church Info ist standardmäßig auf **Sunday** eingestellt, kann aber auf jeden beliebigen Tag eingestellt werden. Nach der Änderung wird sie in Calendar-Gittern in B1 Admin und im B1.church-Mitgliederportal berücksichtigt – Gruppenkalender, kuratierte Kalender und der Event-Editor layouten Wochen alle ab dem Tag, den Sie wählen.
 
-## Region (Date Format)
+## Region (Datumsformat)
 
-The **Region** setting controls how dates and times are written throughout B1. By default dates use the United States format (for example, "Sep 28, 2026" and "9/28/2026"). Churches outside the US can switch to their own format -- for example, choosing English (United Kingdom) shows "28 Sept 2026" and "28/09/2026" instead.
+Die **Region**-Einstellung steuert, wie Daten und Uhrzeiten in B1 geschrieben werden. Standardmäßig verwenden Daten das Format der Vereinigten Staaten (z. B. "Sep 28, 2026" und "9/28/2026"). Kirchen außerhalb der USA können zu ihrem eigenen Format wechseln – zum Beispiel zeigt die Auswahl von English (United Kingdom) stattdessen "28 Sept 2026" und "28/09/2026".
 
-1. On the Settings page, find the **Region** card and click to edit it.
-2. Choose your region from the **Region** dropdown. Each option shows a sample date so you can see exactly how dates will look.
-3. Click **Save**.
+1. Suchen Sie auf der Seite Settings die **Region**-Karte und klicken Sie, um sie zu bearbeiten.
+2. Wählen Sie Ihre Region aus der **Region**-Dropdown aus. Jede Option zeigt ein Beispieldatum, damit Sie genau sehen können, wie Daten aussehen werden.
+3. Klicken Sie auf **Save**.
 
-The Region card then shows your selected region and a sample of the **Date format**.
+Die Region-Karte zeigt dann Ihre ausgewählte Region und ein Beispiel des **Date format**.
 
-Your region applies to dates and times across B1 Admin and on your B1.church website and member portal, including sermons, blog posts, group calendars, and serving plans, so members see dates in the same format your staff do.
+Ihre Region gilt für Daten und Uhrzeiten in B1 Admin und auf Ihrer B1.church-Website und Ihrem Mitgliederportal, einschließlich Predigten, Blog-Beiträgen, Gruppenkalendern und Dienst-Plänen, damit Mitglieder Daten im gleichen Format wie Ihre Mitarbeiter sehen.
 
 ## Texting
 
-Connect a texting provider to send SMS messages to a person or a whole group from B1 Admin. Texts are sent through your own account with the provider, so their pricing and limits apply.
+Verbinden Sie einen Texting-Anbieter, um SMS-Nachrichten an eine Person oder eine ganze Gruppe von B1 Admin aus zu senden. Texte werden über Ihr eigenes Konto mit dem Anbieter versendet, daher gelten dessen Preise und Limits.
 
-1. On the Settings page, find the **Texting** card and click to edit it.
-2. Choose a **Provider**:
-   - **Clearstream** -- enter an **API Key**. Create one in your Clearstream Account Settings under API Keys.
-   - **Text In Church** -- enter an **API Key**. Ask Text In Church Support for developer API access first, then create a key in your Account Settings > Developer API section.
-   - **Nalo Solutions** (Ghana) -- enter the auth key from your Nalo Solutions account as the **API Key**, and a **Sender ID** (up to 11 characters) that Nalo has approved for you.
-3. Click **Save**.
+1. Suchen Sie auf der Seite Settings die **Texting**-Karte und klicken Sie, um sie zu bearbeiten.
+2. Wählen Sie einen **Provider**:
+   - **Clearstream** -- geben Sie einen **API Key** ein. Erstellen Sie einen in Ihren Clearstream-Kontoeinstellungen unter API Keys.
+   - **Text In Church** -- geben Sie einen **API Key** ein. Fragen Sie zuerst Text In Church Support um Developer API Zugriff an, dann erstellen Sie einen Schlüssel in Ihren Account Settings > Developer API Abschnitt.
+   - **Nalo Solutions** (Ghana) -- geben Sie den auth key aus Ihrem Nalo Solutions Konto als **API Key** ein, und eine **Sender ID** (bis zu 11 Zeichen), die Nalo für Sie genehmigt hat.
+3. Klicken Sie auf **Save**.
 
-To stop texting, set **Provider** to **None** and save. This removes the saved provider.
+Um das Texting zu beenden, stellen Sie **Provider** auf **None** ein und speichern Sie. Dies entfernt den gespeicherten Anbieter.
 
-Once a provider is connected, staff with permission to send texts see a text icon in the header of a group (**Text this group**) and of a person with a mobile phone (**Send text message**). Type your message and click **Send**. The dialog counts characters and SMS segments. For a group, it shows how many members will get the text before you send:
+Sobald ein Anbieter verbunden ist, sehen Mitarbeiter mit der Berechtigung zum Versenden von Texten ein Text-Symbol im Header einer Gruppe (**Text this group**) und einer Person mit Mobiltelefon (**Send text message**). Geben Sie Ihre Nachricht ein und klicken Sie auf **Send**. Das Dialogfeld zählt Zeichen und SMS-Segmente. Für eine Gruppe zeigt es, wie viele Mitglieder den Text erhalten, bevor Sie ihn senden:
 
-- Members with no mobile phone on file are skipped.
-- Members who chose **Hide me from the member directory** are counted as opted out and skipped.
-- Family members who share a mobile number get the text only once.
+- Mitglieder ohne Mobiltelefonnummer in der Datei werden übersprungen.
+- Mitglieder, die sich für **Hide me from the member directory** entschieden haben, werden als abgemeldet gezählt und übersprungen.
+- Familienmitglieder, die eine Mobilnummer teilen, erhalten den Text nur einmal.
+
+### Personalisierung von Texten mit Merge Fields
+
+Unter der Nachrichtenbox zeigt das Text-Dialogfeld Platzhalter-Chips: **First Name**, **Last Name**, **Display Name** und **Church Name**. Klicken Sie auf einen Chip, um seinen Platzhalter (`{{firstName}}`, `{{lastName}}`, `{{displayName}}` oder `{{churchName}}`) an Ihrem Cursor einzufügen. Wenn der Text versendet wird, wird jeder Platzhalter durch die Details des Empfängers ersetzt, daher erreicht eine Gruppentext wie `Hi {{firstName}}, see you Sunday!` jedes Mitglied mit seinem eigenen Namen. Platzhalter funktionieren sowohl für Gruppentext als auch für Text an eine einzelne Person.
+
+:::info
+Das 1.600-Zeichen-Limit gilt für die Nachricht, wie Sie sie eingeben. Nachdem die Platzhalter gefüllt sind, wird jeder Text, der länger als 1.600 Zeichen ist, auf dieser Länge abgeschnitten.
+:::
+
+Texte können auch automatisch aus einem [Workflow](../serving/workflows.md#sending-a-text)-Schritt mit der Aktion **Send Text** versendet werden, die denselben Anbieter und Platzhalter verwendet.
 
 ## File Storage
 
-By default, files you upload to your website (through [Files](../website/files.md)) and other content areas use B1's free hosted storage, up to 100MB. If you need more room, you can connect your own cloud storage instead -- new uploads then go straight to your account with no platform limit.
+Standardmäßig verwenden Dateien, die Sie auf Ihre Website hochladen (über [Files](../website/files.md)) und andere Inhaltsbereiche den kostenlosen gehosteten Speicher von B1 bis zu 100 MB. Wenn Sie mehr Platz benötigen, können Sie stattdessen Ihren eigenen Cloud-Speicher verbinden – neue Uploads gehen dann direkt auf Ihr Konto ohne Plattformlimit.
 
-1. On the Settings page, find the **File Storage** card and click to edit it.
-2. Choose a provider: **Google Drive**, **Dropbox**, **OneDrive**, or an **S3-compatible bucket** (AWS S3, Cloudflare R2, Backblaze B2, etc.).
-3. For Google Drive, Dropbox, or OneDrive, click **Connect** and sign in to authorize access. For an S3-compatible bucket, enter your access key, secret, bucket name, and public URL base.
-4. Click **Save**.
+1. Suchen Sie auf der Seite Settings die **File Storage**-Karte und klicken Sie, um sie zu bearbeiten.
+2. Wählen Sie einen Anbieter: **Google Drive**, **Dropbox**, **OneDrive** oder einen **S3-kompatiblen Bucket** (AWS S3, Cloudflare R2, Backblaze B2 usw.).
+3. Für Google Drive, Dropbox oder OneDrive klicken Sie auf **Connect** und melden Sie sich an, um den Zugriff zu autorisieren. Für einen S3-kompatiblen Bucket geben Sie Ihren Zugangsschlüssel, Geheimnis, Bucket-Namen und die öffentliche URL-Basis ein.
+4. Klicken Sie auf **Save**.
 
 :::info
-This only affects new uploads to your website Files and similar content areas. Gallery images, thumbnails, logos, and person photos always stay on B1's default storage.
+Dies betrifft nur neue Uploads auf Ihre Website-Dateien und ähnliche Inhaltsbereiche. Galerie-Bilder, Miniaturbilder, Logos und Personenfotos bleiben immer auf dem Standard-Speicher von B1.
 :::
 
 ## Grade Promotion
 
-If you track **Grade** on children and students, B1 can automatically bump everyone up a grade on a date you choose (for example, August 1st) rather than requiring you to edit each profile by hand.
+Wenn Sie **Grade** auf Kindern und Schülern verfolgen, kann B1 automatisch alle an einem von Ihnen gewählten Datum (z. B. 1. August) um eine Note erhöhen, anstatt dass Sie jedes Profil manuell bearbeiten müssen.
 
-1. On the Settings page, find the **Grade Promotion** option.
-2. Turn the switch on (it shows **Enabled**) and choose the **Month** and **Day** to promote grades each year. On that date, everyone with a grade moves up one grade, and 12th graders become **Graduated**.
-3. Save your changes.
+1. Suchen Sie auf der Seite Settings die Option **Grade Promotion**.
+2. Schalten Sie den Schalter ein (er zeigt **Enabled**) und wählen Sie den **Month** und **Day**, um Noten jedes Jahr zu fördern. An diesem Datum wird jeder mit einer Note um eine Note erhöht, und Schüler der 12. Klasse werden zu **Graduated**.
+3. Speichern Sie Ihre Änderungen.
 
-To stop automatic promotion, turn the switch off so it shows **Disabled** and save. The promotion date is removed and grades will no longer change on their own.
+Um die automatische Förderung zu beenden, schalten Sie den Schalter aus, damit er **Disabled** anzeigt und speichern Sie. Das Promotionsdatum wird entfernt und Noten ändern sich nicht mehr von selbst.
 
-## Import and Export
+## Import und Export
 
-The **Import/Export** button in the Settings header opens a dedicated tool in a new browser window. Use this to:
+Die **Import/Export**-Schaltfläche in der Kopfzeile Settings öffnet ein separates Tool in einem neuen Browserfenster. Verwenden Sie dies zu:
 
-- Import member data from another church management system.
-- Export your ChurchApps data for backup or migration purposes.
+- Importieren von Mitgliederdaten aus einem anderen Kirchenmanagementsystem.
+- Exportieren Sie Ihre ChurchApps-Daten zur Sicherung oder Migration.
 
-This is especially helpful when you are first setting up your church and need to transfer existing records into ChurchApps.
+Dies ist besonders hilfreich, wenn Sie Ihre Kirche zum ersten Mal einrichten und bestehende Datensätze in ChurchApps übertragen müssen.
 
 :::warning
-When importing data, always back up your existing records first. Import operations add data to your system and may create duplicate entries if run multiple times.
+Wenn Sie Daten importieren, sichern Sie immer zunächst Ihre bestehenden Datensätze. Importvorgänge fügen Daten zu Ihrem System hinzu und können doppelte Einträge erstellen, wenn sie mehrfach ausgeführt werden.
 :::

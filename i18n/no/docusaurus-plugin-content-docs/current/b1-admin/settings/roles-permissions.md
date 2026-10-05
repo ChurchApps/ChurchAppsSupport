@@ -6,63 +6,63 @@ title: "Roller og tillatelser"
 
 <div class="article-intro">
 
-Roller lar deg kontrollere hva ulike brukere kan få tilgang til innen ChurchApps-kontoen din. Du kan opprette egendefinerte roller for ansatte, frivillige og andre teammedlemmer, hver med sitt eget tilgangsnivå for å holde dataene dine sikre.
+Med roller styrer du hva ulike brukere har tilgang til i ChurchApps-kontoen din. Du kan opprette egne roller for ansatte, frivillige og andre teammedlemmer, hver med sitt eget tilgangsnivå, slik at dataene dine holdes trygge.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du trenger Domeneadministrator-tilgang eller en rolle med tillatelse til å administrere roller
+- Du trenger Domain Admin-tilgang eller en rolle med tillatelse til å administrere roller
 - Ha en liste over teammedlemmer og områdene de trenger tilgang til
-- Gjennomgå de tilgjengelige tillatelseskategoriene nedenfor for å planlegge rollene dine
+- Gå gjennom tillatelseskategoriene nedenfor for å planlegge rollene dine
 
 </div>
 
-## Tilgang til roller
+## Åpne roller
 
-1. I B1 Admin åpner du **seksjonmenyen** i øvre venstre hjørne (seksjonsnavn med liten pil) og velger **Innstillinger**.
-2. Klikk på **Roller** i navigasjonslinja Innstillinger.
-3. Siden Roller viser alle rollen som er definert for kirken din.
+1. I B1 Admin åpner du [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre) og utvider **Innstillinger**.
+2. Klikk på **Roller**.
+3. Siden Roller viser alle rollene som er definert for kirken din.
 
-## Forståelse av siden Roller
+## Forstå siden Roller
 
-Siden Roller er delt inn i to paneler:
+Siden Roller er delt i to paneler:
 
 - **Venstre side** -- Viser listen over medlemmer som er tildelt den valgte rollen.
-- **Høyre side** -- Viser tillatelsesinnstillingene du kan konfigurere for den rollen.
+- **Høyre side** -- Viser tillatelsesinnstillingene du kan konfigurere for rollen.
 
-Klikk på hvilken som helst rollenavn for å vise og administrere medlemmene og tillatelsene.
+Klikk på et rollenavn for å se og administrere medlemmene og tillatelsene.
 
-## Legge til brukere i en rolle
+## Legge brukere til i en rolle
 
-1. Velg rollen du vil legge medlemmer til.
+1. Velg rollen du vil legge medlemmer til i.
 2. Bruk **søkefeltet** på venstre side for å finne personen du vil legge til.
 3. Velg personen fra søkeresultatene.
-4. De vil bli lagt til rollen umiddelbart.
+4. Personen legges til i rollen umiddelbart.
 
 ## Fjerne brukere fra en rolle
 
 1. Velg rollen som inneholder brukeren du vil fjerne.
 2. Finn personen i medlemslisten på venstre side.
-3. Klikk på **fjern-knappen** ved siden av deres navn.
+3. Klikk på **fjern-knappen** ved siden av navnet.
 
-## Konfigurering av tillatelser
+## Konfigurere tillatelser
 
-Hver rolle kan gis tilgang til spesifikke områder av B1 Admin. Tillatelser er organisert etter seksjon:
+Hver rolle kan få tilgang til bestemte områder av B1 Admin. Tillatelsene er organisert etter del:
 
-- **Mennesker** -- Tilgang til medlemsmappen og personposter.
-- **Donasjoner** -- Tilgang til donasjonsposter og fondsadministrasjon.
-- **Oppmøte** -- Tilgang til oppmøtesporing og rapporter.
-- **Innhold** -- Tilgang til nettsted- og innholdsstyring.
+- **Personer** -- Tilgang til medlemsregisteret og personprofiler.
+- **Donasjoner** -- Tilgang til donasjonsregistre og fondsadministrasjon.
+- **Oppmøte** -- Tilgang til registrering av oppmøte og rapporter.
+- **Innhold** -- Tilgang til nettsted og innholdsadministrasjon.
 - Og flere områder etter hvert som de blir tilgjengelige.
 
-Bruk avmerkingsboksene på høyre side av siden Roller for å aktivere eller deaktivere tilgang for hvert område.
+Bruk avmerkingsboksene på høyre side av siden Roller for å slå tilgang av eller på for hvert område.
 
 :::warning
-**Domeneadministratorer** har full tilgang til alle områder av ChurchApps-kontoen din. Deres tillatelser kan ikke endres eller begrenses. Bruk denne rollen bare for de mest pålitelige administratorene dine.
+**Domain Admins** har full tilgang til alle områder av ChurchApps-kontoen din. Tillatelsene deres kan ikke endres eller begrenses. Bruk denne rollen bare for de mest pålitelige administratorene dine.
 :::
 
 :::tip
-Opprett spesifikke roller som "Kasserer" med bare **Donasjoner**-tilgang, eller "Innsjekk-frivillig" med bare **Oppmøte**-tilgang. Dette følger prinsippet om minste tillatelse og holder dataene dine sikre. Se [Datasikkerhet](./data-security.md) for mer om hvordan ChurchApps beskytter informasjonen din.
+Opprett spesifikke roller som «Kasserer» med bare **Donasjoner**-tilgang, eller «Innsjekkingsfrivillig» med bare **Oppmøte**-tilgang. Dette følger prinsippet om minst mulig tilgang og holder dataene dine trygge. Se [Datasikkerhet](./data-security.md) for mer om hvordan ChurchApps beskytter informasjonen din.
 :::

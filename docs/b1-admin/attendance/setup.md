@@ -28,19 +28,19 @@ Before you can track attendance, you need to tell B1 Admin about your church's p
 
 ## Setting Up Your Attendance Structure
 
-1. Open **B1 Admin**, click the **section menu** in the top-left corner (the section name with the small arrow), and choose **People**.
-2. In the navigation bar, click the **Attendance** tab. The **Setup** tab is selected by default.
+1. Open **B1 Admin**, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), and expand **People**.
+2. Click **Attendance**. The **Setup** tab is selected by default.
 3. Click **Manage Campuses** (top right of the Setup panel). This takes you to **Settings → Campuses**. Click **Add Campus**, enter the name of your location (address and time zone are optional), and click **Save**.
 4. Return to **People → Attendance → Setup**. Your campus now appears in the setup table.
 5. Click the **+ button in the Service column** under your campus. Enter a service name such as "Sunday Service" and click **Save**.
 6. Click the **+ button in the Time column** under the service. Enter a time such as "9:00 AM" and click **Save**. Repeat for each service time.
-7. To connect a group to a service time, open the group from the **Groups** tab, click the **Edit** pencil, and use **Add Service Time** — see the next section.
+7. To connect a group to a service time, open the group from **People > Groups**, click the **Edit** pencil, and use **Add Service Time** — see the next section.
 
 ### Enabling Track Attendance on a Group
 
 Before a group can have attendance recorded, Track Attendance must be turned on for that group.
 
-1. Open the **section menu** in the top-left corner and choose **People**, then click the **Groups** tab and select the group.
+1. In the Jump menu, choose **People > Groups** and select the group.
 2. Click the **Edit** pencil icon.
 3. Set **Track Attendance** to **Yes**.
 4. Click **Save**.

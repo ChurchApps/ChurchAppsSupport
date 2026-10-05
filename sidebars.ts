@@ -581,6 +581,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'freeplay/content-providers/connecting-providers',
             'freeplay/content-providers/browsing-content',
+            'freeplay/content-providers/announcements',
           ],
         },
         {

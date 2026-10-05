@@ -1,72 +1,72 @@
 ---
-title: "Calendario Disponibilità"
+title: "Calendario di disponibilità"
 ---
 
-# Calendario Disponibilità
+# Calendario di disponibilità
 
 <div class="article-intro">
 
-Il Calendario Disponibilità ti offre una visione d'insieme di tutte le prenotazioni di aule e risorse in tutta la chiesa. Da qui puoi vedere cosa è programmato, individuare i conflitti prima che accadano e prenotare un'aula o una risorsa per qualsiasi evento direttamente.
+Il calendario di disponibilità vi dà una visione d'insieme di tutte le prenotazioni di stanze e risorse in tutta la vostra chiesa. Da qui potete vedere cosa è pianificato, individuare i conflitti prima che accadano, e prenotare una stanza o una risorsa per qualsiasi evento direttamente.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Configura almeno un'[aula o risorsa](rooms-resources) nella sezione Aule e Risorse
-- Hai bisogno dell'accesso di modifica alla sezione Calendars in B1 Admin
+- Configurate almeno una [stanza o risorsa](rooms-resources) nella sezione Stanze e risorse
+- Avete bisogno dell'accesso in modifica alla sezione Calendari in B1 Admin
 
 </div>
 
-## Apertura del Calendario Disponibilità
+## Apertura del calendario di disponibilità
 
-In B1 Admin, apri il **menu della sezione** nell'angolo in alto a sinistra e scegli **Calendars**, quindi seleziona **Availability**.
+In B1 Admin, aprite il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandete **Calendari**, e fate clic su **Disponibilità**.
 
-## Lettura del Calendario
+## Lettura del calendario
 
-Il calendario visualizza il mese corrente per impostazione predefinita. Puoi navigare avanti e indietro con le frecce in alto, oppure passare tra le viste mese, settimana e giorno.
+Il calendario mostra il mese corrente per impostazione predefinita. Potete navigare in avanti e indietro con le frecce in alto, o passare da viste di mese, settimana e giorno.
 
-Ogni evento è codificato a colori in base allo stato della prenotazione:
+Ogni evento è codificato a colori in base allo stato di prenotazione:
 
 | Colore | Significato |
-|-------|---------|
+|--------|------------|
 | Verde | Approvato |
-| Arancione | In attesa di approvazione |
+| Arancione | In sospeso di approvazione |
 | Grigio | Bloccato (non disponibile) |
 
-Passando il mouse su un evento viene visualizzato il titolo dell'evento e l'aula o la risorsa a cui è allegato.
+Passando il mouse sopra un evento mostra il titolo dell'evento e la stanza o la risorsa a cui è allegato.
 
-## Filtraggio per Aula o Risorsa
+## Filtraggio per stanza o risorsa
 
-Utilizza il menu a discesa **Filter** in alto a sinistra per restringere il calendario a una singola aula o risorsa. Seleziona **All Rooms & Resources** per tornare alla visualizzazione completa.
+Utilizzate il menu a discesa **Filtro** in alto a sinistra per restringere il calendario a una singola stanza o risorsa. Selezionate **Tutte le stanze e risorse** per tornare alla vista completa.
 
-## Prenotazione di un'Aula o Risorsa
+## Prenotazione di una stanza o risorsa
 
-1. Fai clic sul pulsante **Book** nell'angolo in alto a destra della pagina.
-2. Nella finestra di dialogo che si apre, compila i dettagli dell'evento:
-   - **Title** — il nome dell'evento
-   - **Start** e **End** data/ora
-   - **Visibility** — Public o Private
-   - **Rooms** — seleziona una o più aule da prenotare
-   - **Resources** — seleziona una o più risorse da prenotare
-3. Facoltativamente imposta i tempi di **Setup** e **Teardown** (in minuti). Questi riempiono la prenotazione su entrambi i lati in modo che lo spazio sia riservato per la configurazione e la pulizia, anche se gli orari di inizio/fine dell'evento rimangono gli stessi.
-4. Per ripetere la prenotazione, seleziona **Repeats** e configura la ricorrenza:
-   - **Repeat every** -- imposta l'intervallo (ad esempio, ogni 2 settimane).
-   - **Frequency** -- Daily, Weekly o Monthly. Weekly ti permette di scegliere giorni specifici della settimana; Monthly ti permette di scegliere un giorno fisso del mese o un modello relativo come "il secondo martedì".
-   - **Ends** -- Never, in una data specifica, o dopo un numero impostato di occorrenze.
-5. Per specificare una finestra di prenotazione personalizzata (diversa da inizio/fine evento), attiva **Custom Booking Window** e inserisci l'inizio e la fine della finestra. Usalo quando un'aula deve essere accessibile al di fuori delle ore dell'evento elencate.
-6. Fai clic su **Save** per inviare la prenotazione.
+1. Fate clic sul pulsante **Prenota** nell'angolo in alto a destra della pagina.
+2. Nella finestra di dialogo che si apre, compilate i dettagli dell'evento:
+   - **Titolo** — il nome dell'evento
+   - **Data/ora** di inizio e fine
+   - **Visibilità** — Pubblica o Privata
+   - **Stanze** — selezionate una o più stanze da prenotare
+   - **Risorse** — selezionate una o più risorse da prenotare
+3. Opzionalmente impostate i tempi di **Allestimento** e **Smontaggio** (in minuti). Questi riempiono la prenotazione su entrambi i lati in modo che lo spazio sia riservato per l'allestimento e la pulizia, anche se i tempi di inizio/fine dell'evento rimangono uguali.
+4. Per ripetere la prenotazione, spuntate **Ripeti** e configurate la ricorrenza:
+   - **Ripeti ogni** -- impostate l'intervallo (ad esempio, ogni 2 settimane).
+   - **Frequenza** -- Giornaliera, Settimanale, o Mensile. Settimanale vi permette di scegliere giorni specifici della settimana; Mensile vi permette di scegliere un giorno fisso del mese o un modello relativo come "il secondo martedì".
+   - **Termina** -- Mai, in una data specifica, o dopo un numero impostato di occorrenze.
+5. Per specificare una finestra di prenotazione personalizzata (diversa dall'inizio/fine dell'evento), attivate **Finestra di prenotazione personalizzata** e immettete i tempi di inizio e fine della finestra. Utilizzatelo quando una stanza deve essere accessibile al di fuori delle ore di elenco dell'evento.
+6. Fate clic su **Salva** per inviare la prenotazione.
 
 :::info
-Se l'aula o la risorsa ha un **Approval Group** configurato, la prenotazione apparirà come **Pending** fino a quando un leader di quel gruppo non l'approva. Vedi [Approvazioni Calendario](approvals) per il flusso di lavoro di approvazione.
+Se la stanza o la risorsa ha un **Gruppo di approvazione** configurato, la prenotazione apparirà come **In sospeso** fino a quando un leader di quel gruppo la approva. Vedere [Approvazioni del calendario](approvals) per il flusso di lavoro di approvazione.
 :::
 
 :::tip
-Il calendario evidenzierà eventuali conflitti prima che tu salvi. Se vedi un avviso di conflitto, regola gli orari o scegli un'aula diversa.
+Il calendario evidenzierà i conflitti prima di salvare. Se vedete un avvertimento di conflitto, regolate i vostri tempi o scegliete una stanza diversa.
 :::
 
-## Articoli Correlati
+## Articoli correlati
 
-- [Aule, Risorse e Programmazione](rooms-resources) — configura spazi e attrezzature prenotabili
-- [Approvazioni Calendario](approvals) — approva o nega richieste di prenotazione
-- [Creazione di Calendari](creating-calendars) — gestire calendari di eventi
+- [Stanze, risorse e pianificazione](rooms-resources) — configurate spazi e attrezzature prenotabili
+- [Approvazioni del calendario](approvals) — approvate o negate richieste di prenotazione
+- [Creazione di calendari](creating-calendars) — gestite calendari degli eventi

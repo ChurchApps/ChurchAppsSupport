@@ -1,64 +1,71 @@
 ---
-title: "उपस्थिति ट्रैकिंग"
+title: "उपस्थिति की ट्रैकिंग"
 ---
 
-# उपस्थिति ट्रैकिंग
+# उपस्थिति की ट्रैकिंग
 
 <div class="article-intro">
 
-एक बार जब आपके कैंपस, सेवा समय, और समूह कॉन्फ़िगर किए जाते हैं, तो B1 Admin उपस्थिति डेटा की समीक्षा करना और प्रवृत्तियों को खोजना आसान बनाता है। उपस्थिति पृष्ठ दो रिपोर्टिंग दृश्य प्रदान करता है -- चर्च-व्यापी प्रवृत्तियों के लिए **उपस्थिति प्रवृत्ति** टैब और समूह-स्तर विस्तार के लिए **समूह उपस्थिति** टैब। वृद्धि पैटर्न को समझने, कम होती सगाई की पहचान करने, और अपने चर्च के लिए डेटा-चालित निर्णय लेने के लिए इन उपकरणों का उपयोग करें।
+एक बार जब आपके कैंपस, सेवा समय, और समूह कॉन्फ़िगर हो जाते हैं, तो B1 Admin उपस्थिति डेटा को review करना और trends को spot करना आसान बनाता है। Attendance page दो reporting views प्रदान करता है -- **Attendance Trend** tab चर्च-व्यापी trends के लिए और **Group Attendance** tab group-level detail के लिए। इन tools का उपयोग करके growth patterns को समझें, declining engagement को identify करें, और अपने चर्च के लिए data-driven decisions लें।
 
 </div>
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- आपकी उपस्थिति संरचना को कम से कम एक कैंपस और सेवा समय के साथ सेट अप करना चाहिए। यदि आपने यह अभी तक नहीं किया है तो [उपस्थिति सेटअप](setup.md) देखें।
-- रिपोर्ट परिणाम दिखाने से पहले उपस्थिति डेटा को रिकॉर्ड किया जाना चाहिए। डेटा [मैन्युअल प्रविष्टि](recording-attendance.md) या [स्व-चेक-इन](check-in.md) से आ सकता है।
+- आपकी attendance structure को कम से कम एक कैंपस और सेवा समय के साथ सेट अप किया जाना चाहिए। यदि आपने अभी तक ऐसा नहीं किया है तो [Attendance Setup](setup.md) देखें।
+- Reports को दिखाने के लिए attendance data को दर्ज किया जाना चाहिए। Data [manual entry](recording-attendance.md) या [self check-in](check-in.md) से आ सकता है।
 
 </div>
 
-## उपस्थिति प्रवृत्तियों को देखना
+## Attendance Trends को Viewing करना
 
-1. **B1 Admin** खोलें, फिर शीर्ष-बाएं कोने में **अनुभाग मेनू** खोलें और **लोग** चुनें।
-2. **उपस्थिति प्रवृत्ति** टैब पर क्लिक करें।
-3. टैब खुलने पर रिपोर्ट स्वचालित रूप से चलती है, जो डिफ़ॉल्ट तारीख सीमा पर उपस्थिति दिखाती है।
+1. **B1 Admin** खोलें, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (शीर्ष-बाएं खोज बार) खोलें, **People** विस्तृत करें, और **Attendance** पर क्लिक करें।
+2. **Attendance Trend** tab पर क्लिक करें।
+3. Report स्वचालित रूप से tab खुलने पर चलता है, प्रत्येक week के लिए कुल attendance दिखाता है।
 
-## अपने डेटा को फ़िल्टर करना
+## अपने Data को Filter करना
 
-परिणामों को कम करने के लिए पृष्ठ के शीर्ष पर फ़िल्टर का उपयोग करें:
+**Filter Report** box में filters का उपयोग करके परिणामों को narrow करें, फिर **Run Report** पर क्लिक करें:
 
-- **तारीख सीमा** -- एक विशिष्ट अवधि पर ध्यान केंद्रित करने के लिए एक प्रारंभ और समाप्ति तारीख चुनें।
-- **कैंपस** -- केवल उस स्थान के लिए उपस्थिति देखने के लिए एक कैंपस का चयन करें।
-- **सेवा समय** -- एक विशेष सभा में ड्रिल करने के लिए एक सेवा समय चुनें।
+- **Campus** -- केवल उस location के लिए attendance देखने के लिए एक कैंपस select करें।
+- **Service** -- report को एक सेवा तक सीमित करें।
+- **Service Time** -- एक विशेष gathering में drill करने के लिए एक सेवा समय pick करें।
+- **Group** -- एक single group के लिए attendance दिखाएं।
+- **Start Date** और **End Date** -- include करने के लिए date range। डिफ़ॉल्ट रूप से report एक साल का सिलसिला देता है, एक साल पहले से आज तक, और end date पूर्ण रूप से included है।
 
-चार्ट और डेटा तुरंत अपडेट होता है जैसे ही आप एक फ़िल्टर बदलते हैं, इसलिए आप जल्दी से विभिन्न समय अवधि या स्थानों की तुलना कर सकते हैं।
+Report एक bar chart और total visits per week का एक table दिखाता है। प्रत्येक week को उस week के Sunday की date के साथ labeled किया जाता है। Table में एक **Session Dates** column भी है जो उस week में actual dates को list करता है जिनके पास attendance था (उदाहरण के लिए, "9/27, 9/30"), ताकि आप देख सकें कि एक midweek gathering Sunday के समान week में कब counted होता है।
 
 :::info
-रिपोर्ट स्वचालित रूप से चलती है प्रत्येक बार जब आप उपस्थिति प्रवृत्ति टैब खोलते हैं, इसलिए आप हमेशा अद्यतन संख्याएं देखते हैं बिना रीफ्रेश बटन पर क्लिक किए।
+Reports हर बार जब आप Attendance Trend tab खोलते हैं तो auto-run होते हैं, इसलिए आप हमेशा refresh button पर क्लिक किए बिना up-to-date numbers देखेंगे।
 :::
 
-## समूह उपस्थिति
+## Group Attendance
 
-**समूह उपस्थिति** टैब उपस्थिति को व्यक्तिगत समूह द्वारा विभाजित दिखाता है। यह तब उपयोगी है जब आप एक विशिष्ट कक्षा, मंत्रालय टीम, या छोटे समूह की निगरानी करना चाहते हैं बजाय समग्र सेवा संख्याओं को देखने के।
+**Group Attendance** tab दिखाता है कि हर group session में कौन attend किया। यह useful है जब आप overall service numbers को देखने के बजाय एक specific class, ministry team, या small group को monitor करना चाहते हैं।
 
-1. **समूह उपस्थिति** टैब का चयन करें।
-2. इसके उपस्थिति इतिहास को देखने के लिए सूची से एक समूह चुनें।
-3. रिपोर्टिंग विंडो को समायोजित करने के लिए तारीख सीमा फ़िल्टर का उपयोग करें।
+1. **Group Attendance** tab को select करें।
+2. Optionally एक **Campus** और **Service** choose करें।
+3. **Start Date** और **End Date** सेट करें। डिफ़ॉल्ट रूप से report last Sunday से आज का सिलसिला देता है।
+4. **Run Report** पर क्लिक करें।
+
+Results को session date द्वारा grouped किया जाता है, फिर service time और group द्वारा, प्रत्येक group के तहत attend किए गए लोगों के साथ listed। Service times, groups, और names को alphabetically sort किया जाता है इसलिए प्रत्येक heading एक बार दिखाई देता है। प्रत्येक person की row में एक **Checked In** column भी है जिसमें उनकी attendance record किए जाने का समय है (कोई file पर समय न होने पर blank) और एक **Membership Status** column (उदाहरण के लिए, Member या Visitor), ताकि आप guests को एक नज़र में spot कर सकें।
+
+Data को download करने के लिए, **Download Options** पर क्लिक करें और **Summary** चुनें। CSV में group member प्रति एक row है, group द्वारा फिर name द्वारा sorted, और range में प्रत्येक dated session के लिए एक column (उदाहरण के लिए, "Sunday - 9:00 AM (2026-09-27)") **present** या **absent** marked।
 
 :::tip
-समूह उपस्थिति विशेष रूप से मूल्यवान है [छोटे समूह](../groups/creating-groups.md) नेताओं के लिए जो समय के साथ अपने समूह के भीतर सगाई को ट्रैक करना चाहते हैं।
+Group attendance विशेष रूप से valuable है [small group](../groups/creating-groups.md) leaders के लिए जो अपने group में समय के साथ engagement को track करना चाहते हैं।
 :::
 
-## उपस्थिति डेटा का उपयोग करने के लिए टिप्स
+## Attendance Data को उपयोग करने के लिए Tips
 
-- मौसमी पैटर्न को जल्दी पकड़ने के लिए प्रतिमाह प्रवृत्तियों की समीक्षा करें।
-- किन स्थानों में वृद्धि हो रही है यह समझने के लिए कैंपस-स्तर के डेटा की तुलना करें।
-- उपस्थिति में गिरावट दिखाने वाले [समूहों](../groups/group-members.md) के साथ अनुवर्ती कार्रवाई करने के लिए समूह-स्तरीय रिपोर्ट का उपयोग करें।
-- [AI Search](../people/ai-search.md) उपकरण के साथ उपस्थिति अंतर्दृष्टि को जोड़ें उन लोगों को खोजने के लिए जो हाल ही में उपस्थित नहीं हुए हैं।
+- Seasonal patterns को जल्दी catch करने के लिए हर महीने trends को review करें।
+- campus-level data को compare करें ताकि समझ सकें कि कौन सी locations बढ़ रही हैं।
+- [groups](../groups/group-members.md) का पालन करने के लिए group-level reports का उपयोग करें जो declining attendance दिखाते हैं।
+- Attendance insights को combine करें [AI Search](../people/ai-search.md) tool के साथ उन लोगों को खोजने के लिए जो हाल ही में attend नहीं किए हैं।
 
 ## संबंधित पृष्ठ
 
-- [उपस्थिति रिकॉर्डिंग](recording-attendance.md) -- एक समूह सत्र के लिए उपस्थिति को मैन्युअल रूप से दर्ज करें
-- [हेडकाउंट एंट्री और प्रवृत्ति](headcount-entry.md) -- एक सरल कुल-गणना विकल्प, अपने सप्ताह प्रवृत्ति चार्ट के साथ
-- [चेक-इन](check-in.md) -- स्व-चेक-इन सेट अप करें ताकि उपस्थिति स्वचालित रूप से रिकॉर्ड की जाए
+- [Recording Attendance](recording-attendance.md) -- एक group session के लिए मैन्युअल रूप से attendance दर्ज करें
+- [Headcount Entry & Trend](headcount-entry.md) -- एक simpler total-count विकल्प, अपने स्वयं के weekly trend chart के साथ
+- [Check-In](check-in.md) -- self check-in सेट अप करें ताकि attendance स्वचालित रूप से दर्ज हो

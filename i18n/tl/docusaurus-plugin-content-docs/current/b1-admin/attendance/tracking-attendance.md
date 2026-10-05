@@ -1,64 +1,71 @@
 ---
-title: "Pagsusubaybay sa Dumalo"
+title: "Pagsubaybay sa Attendance"
 ---
 
-# Pagsusubaybay sa Dumalo
+# Pagsubaybay sa Attendance
 
 <div class="article-intro">
 
-Kapag na-configure na ang iyong mga campus, oras ng serbisyo, at mga grupo, ang B1 Admin ay ginagawang madali ang pagsusuri ng data ng dumalo at pagtukoy ng mga uso. Ang Attendance page ay nagbibigay ng dalawang paninindigan sa ulat -- ang tab na **Attendance Trend** para sa mga uso sa buong simbahan at ang tab na **Group Attendance** para sa detalye sa antas ng grupo. Gamitin ang mga tool na ito upang maunawaan ang mga pattern ng paglaki, tukuyin ang pagbaba ng pakikipag-ugnayan, at gumawa ng mga desisyon na batay sa data para sa iyong simbahan.
+Kapag naka-configure na ang inyong mga campus, oras ng serbisyo, at mga grupo, madali nang suriin ng B1 Admin ang datos ng attendance at makita ang mga trend. May dalawang view sa pag-uulat ang pahinang Attendance -- ang tab na **Attendance Trend** para sa mga trend ng buong simbahan at ang tab na **Group Attendance** para sa detalye sa antas ng grupo. Gamitin ang mga kasangkapang ito para maunawaan ang mga pattern ng paglago, matukoy ang pagbaba ng pakikilahok, at makagawa ng mga desisyong batay sa datos para sa inyong simbahan.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago ka magsimula</h4>
+<h4>Bago Magsimula</h4>
 
-- Ang iyong istraktura ng dumalo ay dapat na naayos na may hindi bababa sa isang campus at oras ng serbisyo. Makita ang [Attendance Setup](setup.md) kung hindi mo pa ito ginawa.
-- Ang data ng dumalo ay kailangang maitala bago ipakita ng mga ulat ang mga resulta. Ang data ay maaaring magmula sa [manual entry](recording-attendance.md) o [self check-in](check-in.md).
+- Dapat naka-set up ang inyong attendance structure na may kahit isang campus at oras ng serbisyo. Tingnan ang [Attendance Setup](setup.md) kung hindi pa ninyo ito nagagawa.
+- Kailangang maitala muna ang datos ng attendance bago magpakita ng resulta ang mga report. Maaaring magmula ang datos sa [manu-manong pagpasok](recording-attendance.md) o [self check-in](check-in.md).
 
 </div>
 
-## Pagsusuri ng mga Uso sa Dumalo
+## Pagtingin sa mga Trend ng Attendance
 
-1. Buksan ang **B1 Admin**, pagkatapos ay buksan ang **section menu** sa itaas na sulok sa kaliwa at piliin ang **People**.
+1. Buksan ang **B1 Admin**, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), i-expand ang **People**, at i-click ang **Attendance**.
 2. I-click ang tab na **Attendance Trend**.
-3. Ang ulat ay awtomatikong tumatakbo kapag bumubukas ang tab, na nagpapakita ng dumalo sa isang default na saklaw ng petsa.
+3. Awtomatikong tatakbo ang report kapag nabuksan ang tab, na nagpapakita ng kabuuang attendance kada linggo.
 
-## Pag-filter sa Iyong Data
+## Pag-filter ng Inyong Datos
 
-Gamitin ang mga filter sa tuktok ng pahina upang mapaliitin ang mga resulta:
+Gamitin ang mga filter sa kahong **Filter Report** para paliitin ang mga resulta, saka i-click ang **Run Report**:
 
-- **Date Range** -- pumili ng isang petsa ng pagsisimula at pagtatapos upang tumuon sa isang tiyak na panahon.
-- **Campus** -- pumili ng isang campus upang makita ang dumalo para sa loob lamang na lokasyon.
-- **Service Time** -- pumili ng isang oras ng serbisyo upang mag-drill sa isang tiyak na pagtitipon.
+- **Campus** -- pumili ng campus para makita ang attendance sa lokasyong iyon lamang.
+- **Service** -- limitahan ang report sa isang serbisyo.
+- **Service Time** -- pumili ng oras ng serbisyo para tingnan nang mas malalim ang isang partikular na pagtitipon.
+- **Group** -- ipakita ang attendance ng isang grupo.
+- **Start Date** at **End Date** -- ang saklaw ng petsang isasama. Bilang default, sakop ng report ang nakaraang isang taon, mula isang taon na ang nakalipas hanggang ngayon, at buo ang pagkakasama ng petsa ng pagtatapos.
 
-Ang chart at data ay nag-update hanggang sa pagbabago mo ng isang filter, upang maaari mong mabilis na ihambing ang iba't ibang mga panahon o lokasyon.
+Ipinapakita ng report ang bar chart at talahanayan ng kabuuang bisita kada linggo. May label ang bawat linggo na petsa ng Linggo ng linggong iyon. May column ding **Session Dates** ang talahanayan na naglilista ng mga aktwal na petsa sa linggong iyon na may attendance (halimbawa, "9/27, 9/30"), para makita ninyo kung kailan binibilang sa parehong linggo ng Linggo ang isang midweek na pagtitipon.
 
 :::info
-Ang mga ulat ay awtomatikong tumatakbo sa bawat oras na bumubukas mo ang tab na Attendance Trend, kaya lagi kang makakakita ng up-to-date na mga numero nang hindi kailangang i-click ang isang refresh button.
+Awtomatikong tumatakbo ang mga report tuwing bubuksan ninyo ang tab na Attendance Trend, kaya palagi ninyong makikita ang pinakabagong mga numero nang hindi na kailangang mag-click ng refresh button.
 :::
 
-## Dumalo ng Grupo
+## Group Attendance
 
-Ang tab na **Group Attendance** ay nagpapakita ng dumalo na binabawasan ng indibidwal na grupo. Ito ay kapaki-pakinabang kapag nais mong subaybayan ang isang tiyak na klase, koponan ng ministeri, o maliit na grupo sa halip na tumingin sa pangkalahatang mga numerong serbisyo.
+Ipinapakita ng tab na **Group Attendance** kung sino ang dumalo sa bawat session ng grupo. Kapaki-pakinabang ito kapag nais ninyong subaybayan ang isang partikular na klase, ministry team, o small group sa halip na tingnan ang pangkalahatang bilang ng serbisyo.
 
 1. Piliin ang tab na **Group Attendance**.
-2. Pumili ng isang grupo mula sa listahan upang makita ang kasaysayan ng dumalo nito.
-3. Gamitin ang filter ng saklaw ng petsa upang ayusin ang window ng ulat.
+2. Opsyonal na pumili ng **Campus** at **Service**.
+3. Itakda ang **Start Date** at **End Date**. Bilang default, sakop ng report ang nakaraang Linggo hanggang ngayon.
+4. I-click ang **Run Report**.
+
+Pinagsasama-sama ang mga resulta ayon sa petsa ng session, saka ayon sa oras ng serbisyo at grupo, kasama ang mga taong dumalo na nakalista sa ilalim ng bawat grupo. Nakaayos ayon sa alpabeto ang mga oras ng serbisyo, grupo, at pangalan para minsan lang lumabas ang bawat heading. Ipinapakita rin ng hilera ng bawat tao ang column na **Checked In** na may oras kung kailan naitala ang kanyang attendance (blangko kung walang naitalang oras) at column na **Membership Status** (halimbawa, Member o Visitor), para madali ninyong makita ang mga bisita.
+
+Para i-download ang datos, i-click ang **Download Options** at piliin ang **Summary**. May isang hilera ang CSV kada miyembro ng grupo, nakaayos ayon sa grupo at saka sa pangalan, at may column para sa bawat session na may petsa sa saklaw (halimbawa, "Sunday - 9:00 AM (2026-09-27)") na minarkahang **present** o **absent**.
 
 :::tip
-Ang dumalo ng grupo ay partikular na mahalaga para sa mga lider ng [small group](../groups/creating-groups.md) na nais na subaybayan ang pakikipag-ugnayan sa loob ng kanilang grupo sa paglipas ng panahon.
+Lalo nang mahalaga ang group attendance para sa mga lider ng [small group](../groups/creating-groups.md) na nais subaybayan ang pakikilahok sa loob ng kanilang grupo sa paglipas ng panahon.
 :::
 
-## Mga Tip para sa Paggamit ng Data ng Dumalo
+## Mga Tip sa Paggamit ng Datos ng Attendance
 
-- Suriin ang mga uso bawat buwan upang mahanap ang mga seasonal pattern nang maaga.
-- Ihambing ang data sa antas ng campus upang maunawaan kung aling mga lokasyon ang lumalaki.
-- Gamitin ang mga ulat sa antas ng grupo upang sumunod sa [mga grupo](../groups/group-members.md) na nagpapakita ng pagbaba ng dumalo.
-- Pagsasamahin ang mga insight sa dumalo gamit ang tool na [AI Search](../people/ai-search.md) upang mahanap ang mga taong hindi dumalo kamakailan.
+- Suriin ang mga trend kada buwan para maagang mapansin ang mga pana-panahong pattern.
+- Ihambing ang datos sa antas ng campus para malaman kung aling mga lokasyon ang lumalago.
+- Gamitin ang mga report sa antas ng grupo para kumustahin ang mga [grupong](../groups/group-members.md) bumababa ang attendance.
+- Pagsamahin ang mga kaalaman mula sa attendance at ang kasangkapang [AI Search](../people/ai-search.md) para mahanap ang mga taong matagal nang hindi dumadalo.
 
-## Kaugnay na Mga Pahina
+## Mga Kaugnay na Pahina
 
-- [Pag-record ng Dumalo](recording-attendance.md) -- manu-manong ipasok ang dumalo para sa isang session ng grupo
-- [Pagpasok ng Bilang ng Ulo at Uso](headcount-entry.md) -- isang mas simpleng kabuuang bilang na alternatibo, na may sariling chart ng weekly trend
-- [Check-In](check-in.md) -- mag-setup ng self check-in upang maabot ang dumalo ay awtomatikong naitala
+- [Pagtatala ng Attendance](recording-attendance.md) -- manu-manong ilagay ang attendance para sa session ng isang grupo
+- [Pagpasok ng Headcount at Trend](headcount-entry.md) -- mas simpleng alternatibong kabuuang bilang, na may sarili nitong lingguhang trend chart
+- [Check-In](check-in.md) -- mag-set up ng self check-in para awtomatikong maitala ang attendance

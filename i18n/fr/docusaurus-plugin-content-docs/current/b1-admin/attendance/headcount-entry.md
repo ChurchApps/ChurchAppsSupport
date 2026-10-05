@@ -24,7 +24,7 @@ Les décomptes sont une alternative totale uniquement à [Enregistrer l'assistan
 
 ## Enregistrement d'un décompte
 
-1. Ouvrez **B1 Admin**, ouvrez le **menu de section** dans le coin supérieur gauche et choisissez **Personnes**, puis cliquez sur l'onglet **Assistance**.
+1. Ouvrez **B1 Admin**, ouvrez le [menu Sauter](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Personnes**, et cliquez sur **Assistance**.
 2. Sélectionnez le sous-onglet **Décomptes**.
 3. Remplissez le formulaire :
    - **Service** *(requis)*

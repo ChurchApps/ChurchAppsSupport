@@ -6,7 +6,7 @@ title: "Groupes"
 
 <div class="article-intro">
 
-Les groupes sont un excellent moyen de tisser des liens avec d'autres personnes de votre église. Que vous recherchiez un petit groupe, une équipe de ministère, une étude biblique ou une opportunité de bénévolat, vous pouvez parcourir et rejoindre des groupes directement depuis le site B1.church de votre église.
+Les groupes sont un excellent moyen de vous connecter avec d'autres à votre église. Que vous cherchiez un petit groupe, une équipe ministérielle, une étude biblique ou une opportunité de bénévolat, vous pouvez parcourir et rejoindre des groupes directement à partir du site B1.church de votre église.
 
 </div>
 
@@ -14,26 +14,26 @@ Les groupes sont un excellent moyen de tisser des liens avec d'autres personnes 
 
 Voici ce que vous pouvez faire avec les groupes dans B1App :
 
-- **Browse public groups** -- Consultez tous les groupes disponibles, organisés par catégorie. Chaque groupe affiche une photo, un nom, un horaire de réunion, un lieu et une brève description.
-- **View group details** -- Cliquez sur n'importe quel groupe pour voir sa description complète, ses responsables, les événements du calendrier à venir et un formulaire de contact pour joindre les responsables du groupe.
-- **Join groups** -- Connectez-vous à un groupe pour en devenir membre. Les groupes ouverts vous permettent de rejoindre immédiatement ; les groupes nécessitant une approbation vous permettent de soumettre une demande d'adhésion. Voir [Demander à rejoindre un groupe](./join-requests.md).
-- **Participate in conversations** -- Une fois membre d'un groupe, vous pouvez publier des messages et interagir avec les autres membres du groupe via l'onglet Conversations.
-- **Access calendars and resources** -- Consultez les événements à venir sur le calendrier du groupe et téléchargez des fichiers ou liens partagés depuis l'onglet Ressources.
+- **Parcourir les groupes publics** -- Consultez tous les groupes disponibles organisés par catégorie. Chaque groupe affiche une photo, un nom, une heure de réunion, un lieu et une brève description.
+- **Consulter les détails du groupe** -- Cliquez sur n'importe quel groupe pour voir sa description complète, ses leaders et ses événements de calendrier à venir.
+- **Rejoindre des groupes** -- Connectez-vous avec un groupe pour devenir membre. Les groupes ouverts vous permettent de rejoindre immédiatement ; les groupes nécessitant une approbation vous permettent de soumettre une demande de rejoindre. Voir [Demander à rejoindre un groupe](./join-requests.md).
+- **Participer à des conversations** -- Une fois que vous êtes membre d'un groupe, vous pouvez publier des messages et interagir avec d'autres membres du groupe via l'onglet **Messages**.
+- **Accédez aux événements et aux ressources** -- Consultez les événements à venir dans l'onglet **Événements** du groupe et téléchargez des fichiers partagés ou des liens à partir de l'onglet **Ressources**.
 
 ## Expérience publique vs. connectée
 
-Toute personne peut visiter la page des groupes de votre église et parcourir les groupes disponibles. Les visiteurs non connectés peuvent consulter les descriptions des groupes, voir qui sont les responsables, vérifier les événements du calendrier à venir et envoyer un message à un responsable via le formulaire de contact.
+N'importe qui peut visiter la page des groupes de votre église et parcourir les groupes disponibles. Les visiteurs qui ne sont pas connectés peuvent consulter les descriptions des groupes, voir qui sont les leaders et vérifier les événements de calendrier à venir. Pour rejoindre un groupe, les visiteurs cliquent sur **Se connecter pour rejoindre** et se connectent ou créent un compte.
 
-Lorsque vous vous [connectez](../getting-started/logging-in.md), vous débloquez des onglets supplémentaires sur la page de détails du groupe, notamment **Group Details**, **Calendar**, **Conversations**, **Resources**, **Members**, et **Attendance**. Les responsables de groupe disposent de capacités d'édition supplémentaires sur chacun de ces onglets.
+Lorsque vous [vous connectez](../getting-started/logging-in.md) et que vous êtes membre du groupe, vous déverrouillez des onglets supplémentaires sur la page de détails du groupe : **À propos**, **Plans**, **Messages**, **Membres**, **Présence**, **Événements** et **Ressources**. Certains onglets n'apparaissent que s'ils s'appliquent -- par exemple, **À propos** a besoin d'une description de groupe, **Plans** a besoin de plans de service, **Messages** a besoin que le chat de groupe soit activé, et **Présence** est montré aux leaders du groupe et aux personnes qui peuvent enregistrer la présence. Les leaders du groupe ont des capacités d'édition supplémentaires sur ces onglets.
 
 :::tip
-Les groupes apparaissent également sur votre [Timeline](../community/timeline.md) -- les conversations et mises à jour de vos groupes s'afficheront automatiquement dans votre flux d'activité.
+Les conversations de groupe vivent dans l'onglet **Messages** de chaque groupe, et les événements à venir de vos groupes apparaissent sur la [page Me](../getting-started/me-page.md). Les nouvelles activités qui nécessitent votre attention arrivent comme une notification dans le menu des cloches.
 :::
 
-## Prochaines étapes
+## Étapes suivantes
 
-- [Parcourir les groupes](./browsing-groups.md) -- Découvrez comment trouver et explorer des groupes
-- [Détails du groupe](./group-details.md) -- Comprenez tout ce qui se trouve sur la page de détails du groupe
-- [Demander à rejoindre un groupe](./join-requests.md) -- Soumettre et gérer des demandes d'adhésion
-- [Conversations de groupe](./conversations.md) -- Publier des messages, réagir avec des emojis et interagir avec votre groupe
-- [Réponses aux événements](./event-rsvps.md) -- Répondre aux événements de groupe et voir qui participe
+- [Parcourir les groupes](./browsing-groups.md) -- Apprenez à trouver et explorer des groupes
+- [Détails du groupe](./group-details.md) -- Comprendre tout ce qui est sur la page de détails du groupe
+- [Demander à rejoindre un groupe](./join-requests.md) -- Soumettre et gérer des demandes de rejoindre
+- [Conversations de groupe](./conversations.md) -- Publier des messages, réagir avec des émojis et interagir avec votre groupe
+- [RSVP aux événements](./event-rsvps.md) -- Répondre aux événements du groupe et voir qui vient

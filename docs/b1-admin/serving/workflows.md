@@ -6,7 +6,7 @@ title: "Workflows"
 
 <div class="article-intro">
 
-Workflows move people through a series of steps on a visual board. Each person becomes a card that travels from one step to the next -- from a first-time guest follow-up, to a membership process, to a first-time giver thank-you, and anything else where you need to track many people through the same set of stages. A step can ask a volunteer to do something (make a call, have a conversation) **and** run automated actions on its own -- send an email, wait a few days, add the person to a group -- so Workflows handle both the human follow-up and the busywork around it. Workflows extend [Tasks](./tasks.md) into a drag-and-drop Kanban board so nothing and no one falls through the cracks.
+Workflows move people through a series of steps on a visual board. Each person becomes a card that travels from one step to the next -- from a first-time guest follow-up, to a membership process, to a first-time giver thank-you, and anything else where you need to track many people through the same set of stages. A step can ask a volunteer to do something (make a call, have a conversation) **and** run automated actions on its own -- send an email or text, wait a few days, add the person to a group -- so Workflows handle both the human follow-up and the busywork around it. Workflows extend [Tasks](./tasks.md) into a drag-and-drop Kanban board so nothing and no one falls through the cracks.
 
 </div>
 
@@ -16,13 +16,14 @@ Workflows move people through a series of steps on a visual board. Each person b
 - Make sure the people you want to track exist in B1 Admin
 - Familiarize yourself with how [Tasks](./tasks.md) work, since each card on a board is a task
 - To use the **Send email** action, create the email templates you want to send first (managed under **Messaging → Manage Templates**)
+- To use the **Send text** action, connect a [texting provider](../settings/church-settings.md#texting) first
 - You will need the appropriate Tasks permission. Viewing, editing cards, and managing workflows are separate permission levels (see [Roles & Permissions](../settings/roles-permissions.md))
 
 </div>
 
 ## Viewing Workflows
 
-Navigate to **Serving** and select **Workflows** from the menu. You will see your workflows listed and grouped by category, with active workflows highlighted. Click any workflow to open its board.
+Open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left of B1 Admin), expand **Serving**, and click **Workflows**. You will see your workflows listed and grouped by category, with active workflows highlighted. Click any workflow to open its board.
 
 ## Creating a Workflow
 
@@ -69,12 +70,15 @@ In the step editor, open **Automated actions**, click **Add Action**, choose a t
 | Action | What it does |
 |---|---|
 | **Send email** | Emails the person an email template you choose. You can override the subject line. |
+| **Send text** | Texts the person a message you write, through your church's [texting provider](../settings/church-settings.md#texting). |
 | **Wait** | Pauses the card for a number of days before continuing (see below). |
 | **Add to group** | Adds the person to a [group](../groups/index.md) you pick. |
+| **Remove from group** | Removes the person from a group you pick. |
 | **Add to workflow** | Starts the person on another workflow -- useful for handing off between processes. |
 | **Add note** | Records a note in the card's history. |
 | **Set field** | Updates a field on the person's record: Membership Status, Marital Status, Gender, City, State, or Zip. |
 | **Webhook** | Sends the card's details to an external web address (URL) you provide, for connecting to other systems. |
+| **Create task** | Creates a [task](./tasks.md) with the title and description you enter, assigned to whoever you pick. |
 
 After all of a step's actions finish, the card **rests on that step** so a person can work it -- unless the step has an automatic route that moves it onward (see [Fully automated steps](#fully-automated-steps)).
 
@@ -84,10 +88,22 @@ Automated actions run only when a card arrives through the normal flow -- when i
 
 ### Sending email
 
-Choose **Send email**, pick one of your email templates, and optionally type a custom subject. When a card enters the step, the person receives that email automatically. (If the person has no email address on file, the step simply skips this action.)
+Choose **Send email**, pick one of your email templates, and optionally type a custom subject. When a card enters the step, the person receives that email automatically. (If the person has no email address on file, the step simply skips this action.) [Merge fields](../settings/email-templates.md#merge-fields) in the template, such as `{{firstName}}`, are filled in with the person's own details.
 
 :::info
 Workflow emails only go out after your church has been approved to send group email, and they count toward your church's daily email limit. See [Turning On Group Email for Your Church](../groups/group-members.md#turning-on-group-email-for-your-church).
+:::
+
+### Sending a text
+
+Choose **Send Text** and type the **Text message** (up to 1,600 characters). When a card enters the step, the person receives that text on their mobile phone. You can personalize the message with `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, or `{{churchName}}`, which are filled in with the person's details when the text is sent.
+
+- If the person has no mobile phone on file, the action is skipped.
+- If the person has opted out, no text is sent and the card's history records **Text skipped: opted out**.
+- When the text goes out, the card's history records **Text sent**. If the send fails -- for example, because no texting provider is connected or your church is out of texting credits -- the failure is logged in the card's history and the step's remaining actions still run.
+
+:::warning
+Texts are sent through your church's own [texting provider](../settings/church-settings.md#texting). If no provider is connected, the action editor warns *"No texting provider is set up"* and texts will not send.
 :::
 
 ### Waiting a few days (drip sequences)

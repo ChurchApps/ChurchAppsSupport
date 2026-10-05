@@ -6,21 +6,21 @@ title: "Gruppehelse"
 
 <div class="article-intro">
 
-Instrumentbordet Gruppehelse gir deg et fuglegransk over hvordan alle gruppene dine går -- medlemskapstrender, frammøtetall og vekst eller avgang over de siste 90 dagene -- alt i en enkelt sorterbar tabell.
+Dashbordet Gruppehelse gir deg et fugleperspektiv på hvordan alle gruppene dine har det: medlemstrender, gjennomsnittlig oppmøte og vekst eller frafall de siste 90 dagene, alt i én sorterbar tabell.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du trenger minst noen få grupper med medlemmer for å se meningsfulle data. Se [Opprett grupper](creating-groups).
-- Frammøtedata hentes fra registrerte økter. Se [Frammøte](../attendance/)-delen.
+- Du trenger minst noen få grupper med medlemmer for å se meningsfulle data. Se [Opprette grupper](creating-groups).
+- Oppmøtedata hentes fra registrerte samlinger. Se delen [Oppmøte](../attendance/).
 
 </div>
 
-## Åpne gruppehelse
+## Åpne Gruppehelse
 
-I B1 Admin, åpne **seksjonsmeny** i øverste venstre hjørne og velg **Personer**, og klikk deretter **Grupper** i navigasjonslinjen og klikk **Gruppehelse**-knappen i sidetittelfeltet. Instrumentbordet laster en tabell med en rad per gruppe.
+Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) i B1 Admin (søkefeltet øverst til venstre), utvid **Personer**, klikk på **Grupper**, og klikk deretter på knappen **Gruppehelse** i sideoverskriften. Dashbordet laster en tabell med én rad per gruppe.
 
 ## Kolonner
 
@@ -28,26 +28,26 @@ I B1 Admin, åpne **seksjonsmeny** i øverste venstre hjørne og velg **Personer
 |--------|--------------|
 | **Navn** | Gruppenavnet, lenket til gruppens detaljside |
 | **Kategori** | Gruppens kategori |
-| **Medlemmer** | Gjeldende aktivt medlemstall |
-| **Meldt inn (90d)** | Medlemmer som meldte seg inn i løpet av de siste 90 dagene |
-| **Gikk bort (90d)** | Medlemmer som gikk bort i løpet av de siste 90 dagene |
-| **Avgang (90d)** | Netto avgangsprosent over 90 dager |
-| **Gjennomsnittlig frammøte** | Gjennomsnittlig antall frammøtte per frammøtøkt |
+| **Medlemmer** | Nåværende antall aktive medlemmer |
+| **Ble med (90d)** | Medlemmer som ble med de siste 90 dagene |
+| **Sluttet (90d)** | Medlemmer som sluttet de siste 90 dagene |
+| **Frafall (90d)** | Netto frafallsrate i prosent over 90 dager |
+| **Snitt oppmøte** | Gjennomsnittlig antall oppmøtte per samling |
 
-Klikk på en kolonnepoverskrift for å sortere tabellen etter den kolonnen. Klikk igjen for å reversere sorteringsretningen.
+Klikk på en kolonneoverskrift for å sortere tabellen etter den kolonnen. Klikk igjen for å snu sorteringsretningen.
 
 ## Bruke helsedata
 
-- **Høy avgang + få innmeldinger** -- en gruppe som krymper og som ikke erstatter tapte medlemmer. Det er verdt en samtale med gruppelederen.
-- **Høy innmelding + lav frammøte** -- folk melder seg på men dukker ikke opp. Vurder oppfølging av engasjement.
-- **Høy gjennomsnittlig frammøte** -- en sunn, aktiv gruppe. Potensielt modell for andre grupper.
+- **Høyt frafall + få nye** — en gruppe som krymper og ikke erstatter medlemmene som slutter. Verdt en samtale med gruppelederen.
+- **Mange nye + lavt oppmøte** — folk melder seg på, men møter ikke opp. Vurder oppfølging for å få dem engasjert.
+- **Høyt gjennomsnittlig oppmøte** — en sunn og aktiv gruppe. Kan være en modell for andre grupper.
 
 :::tip
-Å klikke på et gruppenavn tar deg direkte til gruppens detaljside hvor du kan gjennomgå individuelle medlemmer, frammøteoppføringer og kalenderarrangementer.
+Når du klikker på et gruppenavn, kommer du direkte til gruppens detaljside, der du kan se enkeltmedlemmer, oppmøteregistreringer og kalenderarrangementer.
 :::
 
 ## Relaterte artikler
 
-- [Opprett grupper](creating-groups) -- sett opp grupper
-- [Gruppemedlemmer](group-members) -- administrer gruppemedlemskap
-- [Spor frammøte](../attendance/tracking-attendance) -- registrer frammøtøkter som mater dette instrumentbordet
+- [Opprette grupper](creating-groups) — sett opp grupper
+- [Gruppemedlemmer](group-members) — administrer gruppemedlemskap
+- [Registrere oppmøte](../attendance/tracking-attendance) — registrer samlinger som mater dette dashbordet

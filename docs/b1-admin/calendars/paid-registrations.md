@@ -20,7 +20,7 @@ Event registration can go beyond a simple head count. You can define priced atte
 
 ## Opening Registration Settings
 
-1. In B1 Admin, go to the **Registrations** page and open your event (or open the event from its calendar).
+1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), choose **Calendars > Registrations**, and open your event (or open the event from its calendar).
 2. The **Registration Settings** card shows the basics — **Enable Registration**, **Capacity**, **Registration Opens/Closes**, **Tags**, and **Registration Questions**.
 3. Below the basics are three accordions: **Attendee Types**, **Selections**, and **Discount Codes**.
 

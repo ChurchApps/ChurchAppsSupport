@@ -54,6 +54,15 @@ FreePlay is built for TV remotes. Here are the controls you will use throughout 
 The sidebar collapses to a narrow strip of icons when you are browsing content. Press the left arrow on your remote to expand it and see the full labels.
 :::
 
+## The Sidebar
+
+The sidebar lists, from top to bottom:
+
+- **Today's Plan** -- Shown when the TV is paired to a plan. See [Plan Mode](../plan-mode/)
+- **Announcements** -- Shown once you have chosen an announcements folder. See [Announcements](../content-providers/announcements)
+- **Browse** -- Each connected content provider you can browse. See [Browsing and Downloading Content](../content-providers/browsing-content)
+- **Settings** -- At the bottom of the sidebar. Opens **Downloads** (play or delete content saved on this device) and **Providers** (connect content providers and choose the announcements folder)
+
 ## What's Next
 
 - **[Choosing a Pairing Mode](./pairing-modes)** - Learn about the different ways to connect your TV

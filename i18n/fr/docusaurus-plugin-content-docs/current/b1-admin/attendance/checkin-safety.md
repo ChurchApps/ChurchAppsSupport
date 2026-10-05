@@ -40,7 +40,7 @@ Les bénévoles comptent pour ces règles lorsqu'ils pointent avec le type **Bé
 
 La façon dont les ratios sont appliqués est un paramètre au niveau de l'église :
 
-1. Dans B1 Admin, allez à **Paramètres > Gérer l'Église** et ouvrez la vignette **Pointage**.
+1. Dans B1 Admin, allez à **Paramètres** et ouvrez la section **Pointage**.
 2. Réglez l'**Application des Ratios de Bénévoles** :
    - **Avertir (autoriser avec confirmation)** -- La borne affiche un avertissement lorsqu'une salle est hors ratio ou en deçà de ses bénévoles minimum, et un membre du personnel peut confirmer pour continuer quand même. C'est la valeur par défaut.
    - **Bloquer (empêcher le pointage)** -- Le pointage dans la salle est refusé jusqu'à ce que suffisamment de bénévoles soient pointés.
@@ -62,7 +62,7 @@ Vous pouvez donner à chaque salle des limites d'âge ou de niveau pour que la b
 
 Les niveaux se déroulent à la **date de promotion de niveau** de votre église :
 
-1. Dans B1 Admin, allez à **Paramètres > Gérer l'Église** et ouvrez la vignette de promotion de niveau.
+1. Dans B1 Admin, allez à **Paramètres** et ouvrez la section **Promotion de niveau**.
 2. Définissez le mois et le jour où votre église promeut les étudiants (par exemple, 1er août). Les âges et niveaux à la borne sont calculés à partir de la date de promotion la plus récente.
 
 ## Personnes Autorisées et Non Autorisées à Récupérer

@@ -1,183 +1,185 @@
 ---
-title: "Pag-import ng Data"
+title: "Pag-import ng Datos"
 ---
 
-# Pag-import ng Data
+# Pag-import ng Datos
 
 <div class="article-intro">
 
-Ang B1 Transfer tool ay ginagawang madali ang pagdadala ng iyong umiiral na data sa B1, kung magsisimula ka mula sa isang spreadsheet, lumipat mula sa ibang church management platform, o pag-import ng mga record ng pagbibigay. Maaari din itong gamitin upang i-export o mag-backup ng iyong data anumang oras.
+Pinapadali ng B1 Transfer tool ang pagdadala ng iyong umiiral na datos sa B1, nagsisimula ka man mula sa isang spreadsheet, lumilipat mula sa ibang church management platform, o nag-i-import ng mga talaan ng pagbibigay. Magagamit din ito para i-export o i-back up ang iyong datos anumang oras.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Ka Magsimula</h4>
+<h4>Bago Magsimula</h4>
 
-- Kailangan mo ng isang active B1 Admin account na may access sa **Settings**.
-- Handa na ang iyong data na na-export at handa mula sa iyong nakaraang sistema bago magsimula.
-- Ang tool na ito ay inilaan para sa paunang data migration. Kung matagal ka nang gumagamit ng B1, ang pag-import ulit ay maaaring lumikha ng mga duplicate record.
+- Kailangan mo ng aktibong B1 Admin account na may access sa **Settings**.
+- Ihanda na ang iyong datos na na-export mula sa dati mong sistema bago magsimula.
+- Ang tool na ito ay para sa unang paglilipat ng datos. Kung matagal mo na ring ginagamit ang B1, maaaring magdulot ng mga duplicate na record ang muling pag-import.
 
 </div>
 
 ## Pag-access sa Transfer Tool
 
 1. Mag-log in sa **B1 Admin**.
-2. Buksan ang **section menu** sa itaas-kaliwa na sulok (ang pangalan ng seksyon na may maliit na arrow) at pumili ng **Settings**.
-3. I-click ang **Import/Export** button sa itaas na kanang bahagi ng page header.
-4. Ito ay bubuksan ang **B1 Transfer** tool sa isang bagong tab sa [transfer.b1.church](https://transfer.b1.church).
+2. Buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), i-expand ang **Settings**, at i-click ang **Settings**.
+3. I-click ang button na **Import/Export** sa kanang itaas ng header ng pahina.
+4. Bubuksan nito ang **B1 Transfer** tool sa bagong tab sa [transfer.b1.church](https://transfer.b1.church).
 
-Ang transfer tool ay gumagabay sa iyo sa pamamagit ng apat na hakbang: Source, Preview, Destination, at Run.
+Ginagabayan ka ng transfer tool sa apat na hakbang: Source, Preview, Destination, at Run.
 
 ---
 
 ## Hakbang 1 - Piliin ang Iyong Source
 
-Piliin kung saan nanggaling ang iyong data. May pitong opsyon:
+Piliin kung saan galing ang iyong datos. May pitong opsyon:
 
-- **B1 Database** -- Kinuha nang direkta ang data mula sa iyong umiiral na B1 church. Kapaki-pakinabang para sa paglikha ng isang backup o pag-convert ng iyong data sa ibang format. Dapat kang naka-log in upang gamitin ang opsyon na ito.
-- **B1 Import Zip** -- Isang zip file sa sariling format ng B1. Ito ay pangunahing ginagamit upang ibalik ang isang nakaraang B1 export.
-- **Breeze Import Zip** -- Isang zip file na naglalaman ng na-export na mga file mula sa Breeze ChMS.
-- **Planning Center Zip** -- Isang zip o CSV file na na-export mula sa Planning Center.
-- **Custom CSV / Excel** -- Anumang CSV o Excel file na naglalaman ng data ng mga tao. Pagkatapos mag-upload, ie-map mo ang iyong mga haligi sa mga larangan ng B1 bago ang import ay magpatuloy.
-- **Tithe.ly CSV** -- Isang file ng pagbibigay o pag-export ng mga tao mula sa Tithe.ly (CSV o Excel format ay tinatanggap).
-- **CCB / Pushpay CSV** -- Isang CSV mula sa Church Community Builder o Pushpay na nag-export ng mga tao o pagbibigay.
+- **B1 Database** — Direktang kumukuha ng datos mula sa umiiral mong B1 church. Kapaki-pakinabang sa paggawa ng backup o pag-convert ng iyong datos sa ibang format. Kailangan mong naka-log in para magamit ang opsyong ito.
+- **B1 Import Zip** — Isang zip file sa sariling format ng B1. Pangunahing ginagamit ito para ibalik ang naunang B1 export.
+- **Breeze Import Zip** — Isang zip file na naglalaman ng mga na-export na file mula sa Breeze ChMS.
+- **Planning Center Zip** — Isang zip o CSV file na na-export mula sa Planning Center.
+- **Custom CSV / Excel** — Anumang CSV o Excel file na naglalaman ng datos ng mga tao. Pagkatapos mag-upload, ima-map mo ang iyong mga column sa mga field ng B1 bago magpatuloy ang import.
+- **Tithe.ly CSV** — Isang export file ng mga tao o pagbibigay mula sa Tithe.ly (tinatanggap ang CSV o Excel format).
+- **CCB / Pushpay CSV** — Isang export CSV ng mga tao o pagbibigay mula sa Church Community Builder o Pushpay.
 
-Maaari mong i-drag at i-drop ang iyong file sa upload area, o i-click upang tuklasin ito.
+Maaari mong i-drag and drop ang iyong file sa upload area, o mag-click para hanapin ito.
 
 ---
 
-## Hakbang 1b - Map Ang Iyong Mga Larangan (Custom CSV / Excel lamang)
+## Hakbang 1b - I-map ang Iyong mga Field (Custom CSV / Excel lang)
 
-Kung pinili mo ang **Custom CSV / Excel**, pagkatapos mag-upload ng iyong file ang tool ay magpapakita ng isang field mapping screen bago lumipat sa preview.
+Kung pinili mo ang **Custom CSV / Excel**, pagkatapos mong i-upload ang file, magpapakita ang tool ng screen ng field mapping bago lumipat sa preview.
 
-Bawat haligi mula sa iyong file ay nakalista kasama ng isang sample value. Para sa bawat haligi, gamitin ang dropdown upang pumili ng tumutugmang larangan ng B1. Ang tool ay awtomatikong tutukoy ng mga pangalan ng haligi tulad ng "First Name," "Email," o "Zip Code," ngunit dapat mong suriin ang bawat hilera at itama ang anumang hindi nito nabigo.
+Nakalista ang bawat column mula sa iyong file kasama ang sample na halaga. Para sa bawat column, gamitin ang dropdown para piliin ang katugmang field ng B1. Awtomatikong makikilala ng tool ang mga karaniwang pangalan ng column tulad ng "First Name," "Email," o "Zip Code," ngunit dapat mong suriin ang bawat hilera at itama ang anumang hindi nito nakilala.
 
-Ang mga available na larangan ng B1 ay may kasamang:
+Kabilang sa mga magagamit na field ng B1 ang:
 
-- Pangalan, Pangalawang Pangalan, Pangalawang Pangalan, Pangalan, Pangalan na Ipakita, Pamagat/Prefix, Suffix
-- Email, Telepono sa Bahay, Mobile Phone, Work Phone
-- Address Line 1, Address Line 2, Lungsod, Estado, Zip Code
-- Araw ng Pagkapanganakan, Anniversary, Kasarian, Status ng Kasal, Status ng Pagiging Miyembro
-- Pangalan ng Tahanan/Pamilya
-- Pangalan ng Grupo -- nagtatalaga ng tao sa isang grupo ayon sa pangalan
-- **Custom Field (tugma ayon sa pangalan)** -- nagsasave ng haligi sa isa sa iyong [custom person fields](../settings/custom-fields.md) ng simbahan. Ang **B1 field name** box ay lilitaw, puno sa pangalan ng haligi. Baguhin ito sa pangalan ng larangan nang eksaktong tulad ng lumilitaw ito sa B1 (ang capitalization ay hindi mahalaga).
-- **Form Answer (custom field)** -- nagsasave ng halaga ng haligi na iyon bilang isang customized na larangan na nakalakay sa record ng tao. Kung gumagamit ka ng opsyon na ito, hihilingin ka na bigyan ng pangalan ang form.
+- First Name, Last Name, Middle Name, Nickname, Display Name, Title/Prefix, Suffix
+- Email, Home Phone, Mobile Phone, Work Phone
+- Address Line 1, Address Line 2, City, State, Zip Code
+- Birth Date, Anniversary, Gender, Marital Status, Membership Status
+- Household/Family Name
+- Group Name — itinatalaga ang tao sa isang grupo ayon sa pangalan
+- **Custom Field (match by name)** — sine-save ang column sa isa sa mga [custom na field ng tao](../settings/custom-fields.md) ng inyong simbahan. Lilitaw ang kahong **B1 field name**, na napunan na ng header ng column. Palitan ito ng pangalan ng field nang eksakto kung paano ito lumilitaw sa B1 (hindi mahalaga ang malaki o maliit na titik).
+- **Form Answer (custom field)** — sine-save ang halaga ng column na iyon bilang custom field na nakakabit sa record ng tao. Kung gagamitin mo ang opsyong ito, hihilingin sa iyong pangalanan ang form.
 
-Ang mga petsa ay maaaring sa mga karaniwang format tulad ng `9/17/1994` at awtomatikong na-convert. Para sa mga customized na larangan, ang Oo/Hindi field ay tumatanggap ng mga halaga tulad ng Oo, Hindi, Y, N, Totoo, Mali, 1, at 0, at maraming pagpipilian ang tumatanggap ng teksto ng pagpipilian o halaga nito.
+Maaaring nasa karaniwang format ang mga petsa tulad ng `9/17/1994` at awtomatiko itong kino-convert. Para sa mga custom field, tinatanggap ng mga field na Yes/No ang mga halagang tulad ng Yes, No, Y, N, True, False, 1, at 0, at tinatanggap ng mga multiple-choice na field ang alinman sa teksto ng pagpipilian o ang halaga nito.
 
 :::info
-Lumikha ng iyong mga customized na larangan ng tao sa B1 Admin bago ang import. Kapag ang import ay tapos na, ang hakbang ng **Custom Fields** ay naglalista ng anumang mga pangalan ng haligi na hindi tumutugma sa larangan ng B1 at binibilang ang anumang mga halaga na hindi umaangkop sa uri ng larangan. Ang mga halaga na iyon ay natatapusan, at ang natitira ng import ay patuloy pa rin.
+Likhain ang iyong mga custom na field ng tao sa B1 Admin bago mag-import. Kapag natapos ang import, inililista ng hakbang na **Custom Fields** ang anumang pangalan ng column na hindi tumutugma sa isang field ng B1 at binibilang ang anumang halagang hindi akma sa uri ng field. Lalaktawan ang mga halagang iyon, at matatapos pa rin ang natitirang bahagi ng import.
 :::
 
-Ang mga haligi na hindi mo nais na i-import ay maaaring itakda sa **(Skip)**. Kahit isang field ng pangalan (Pangalan o Pangalawang Pangalan) ay dapat na ma-map bago ka maaaring magpatuloy.
+Maaaring itakda sa **(Skip)** ang mga column na ayaw mong i-import. Kailangang may na-map na kahit isang field ng pangalan (First Name o Last Name) bago ka makapagpatuloy.
 
-I-click ang **Kumpirmahin ang Pag-map & I-import** upang magpatuloy sa preview.
-
----
-
-## Hakbang 2 - I-preview ang Iyong Data
-
-Pagkatapos mag-upload, ang tool ay nagpapakita ng isang preview ng lahat ng mga bagay na ia-import. Gamitin ang mga tab upang suriin ang bawat uri ng data:
-
-- **Mga Tao** -- Nalista ayon sa tahanan, na may mga larawan kung kasama.
-- **Mga Grupo** -- Naayos ayon sa campus, serbisyo, oras, at kategorya.
-- **Dumalo** -- Mga petsa ng session, mga grupo, at mga bilang ng pagbisita.
-- **Mga Donation** -- Mga batch, mga pondo, mga donor, at mga halaga.
-- **Mga Form** -- Mga pangalan ng form at mga uri ng nilalaman.
-
-Suriin ito nang maingat bago magpatuloy. Kung may problema, i-click ang **Magsimula Ulit** at itama ang iyong source file.
+I-click ang **Confirm Mapping & Import** para magpatuloy sa preview.
 
 ---
 
-## Hakbang 3 - Piliin ang Iyong Destinasyon
+## Hakbang 2 - I-preview ang Iyong Datos
 
-Pumili kung saan gusto mong pumunta ang data:
+Pagkatapos mag-upload, magpapakita ang tool ng preview ng lahat ng ii-import. Gamitin ang mga tab para suriin ang bawat uri ng datos:
 
-- **B1 Database** -- Nag-import nang direkta sa database ng B1 ng iyong simbahan. Pagkatapos pumili nito, ang tool ay magpapakita ng isang panghuling bilang ng mga record na maidagdag. I-click ang **Simulan ang Transfer** upang kumpirmahin.
-- **B1 Export Zip** -- Nag-download ng iyong data bilang isang B1-format na zip file. Mabuti para sa mga backup.
-- **Breeze Export Zip** -- I-convert ang iyong data sa Breeze format.
-- **Planning Center Zip** -- I-convert ang iyong data sa Planning Center format.
+- **People** — Nakalista ayon sa sambahayan, kasama ang mga larawan kung may kasama.
+- **Groups** — Nakaayos ayon sa campus, serbisyo, oras, at kategorya.
+- **Attendance** — Mga petsa ng session, grupo, at bilang ng pagbisita.
+- **Donations** — Mga batch, pondo, donor, at halaga.
+- **Forms** — Mga pangalan ng form at uri ng nilalaman.
+
+Suriin itong mabuti bago magpatuloy. Kung may mukhang mali, i-click ang **Start Over** at itama ang iyong source file.
+
+---
+
+## Hakbang 3 - Piliin ang Iyong Destination
+
+Piliin kung saan mo gustong mapunta ang datos:
+
+- **B1 Database** — Direktang ii-import sa B1 database ng inyong simbahan. Pagkatapos piliin ito, magpapakita ang tool ng huling bilang ng mga record na idaragdag. I-click ang **Start Transfer** para kumpirmahin.
+- **B1 Export Zip** — Dina-download ang iyong datos bilang zip file na nasa format ng B1. Mainam para sa mga backup.
+- **Breeze Export Zip** — Kino-convert ang iyong datos sa format ng Breeze.
+- **Planning Center Zip** — Kino-convert ang iyong datos sa format ng Planning Center.
 
 :::warning
-Ang source at destination ay hindi maaaring maging parehong format. Kung tugma sila, ang tool ay babagal sa iyo upang pumigil sa aksidental na pagbalik.
+Hindi maaaring magkapareho ang format ng source at destination. Kung magkapareho ang mga ito, bibigyan ka ng babala ng tool para maiwasan ang aksidenteng pagdoble.
 :::
 
 ---
 
-## Hakbang 4 - Patakbuhin
+## Hakbang 4 - Run
 
-Ang tool ay nagpoproseso ng transfer at nagpapakita ng progreso para sa bawat hakbang:
+Pino-proseso ng tool ang transfer at ipinapakita ang progreso ng bawat hakbang:
 
-- Mga Campus, Mga Serbisyo, at Oras
+- Mga Campus, Serbisyo, at Oras
 - Mga Tao
 - Mga Larawan
-- Mga Grupo at Mga Miyembro ng Grupo
-- Mga Donation
-- Dumalo
-- Mga Form, Mga Tanong, Mga Sagot, at Mga Pagsusumite ng Form
-- Mga Customized na Larangan (kapag na-map mo ang anumang Custom Field columns)
-- Pag-compress (para sa mga destinasyon ng zip file lamang)
+- Mga Grupo at Miyembro ng Grupo
+- Mga Donasyon
+- Attendance
+- Mga Form, Tanong, Sagot, at Submission ng Form
+- Custom Fields (kapag may na-map kang anumang column ng Custom Field)
+- Compressing (para lang sa mga destinasyong zip file)
+
+Kapag **B1 Database** ang destinasyon, ang progress card ay may pamagat na **Import Progress** at nagtatapos sa **Import Complete!** (o **Import Completed with Errors**). Para sa mga destinasyong zip file, **Export** ang nakasaad sa parehong mga mensahe.
 
 :::warning
-Huwag isara ang iyong browser habang tumatakbo ang transfer. Maghintay hanggang sa lahat ng mga hakbang ay kumpleto.
+Huwag isara ang iyong browser habang tumatakbo ang transfer. Hintaying ipakita ng lahat ng hakbang na tapos na ang mga ito.
 :::
 
 ---
 
-## Pag-handa ng Breeze Import Zip
+## Paghahanda ng Breeze Import Zip
 
 1. Sa Breeze, pumunta sa **Settings** at i-click ang **Export** sa kaliwang sidebar.
-2. I-export ang tatlong magkakaibang mga file: **Mga Tao**, **Mga Tag**, at **Mga Kontribusyon**.
-3. Pumili ng lahat ng tatlong file, right-click, at i-compress ang mga ito sa isang zip file.
-   - Sa isang Mac: pumili ng mga file, right-click, at pumili ng **Compress**.
-   - Sa isang PC: pumili ng mga file, right-click, pumili ng **I-padala sa**, pagkatapos ay **Compressed (zipped) folder**.
-4. Mag-upload ng zip file gamit ang opsyon na **Breeze Import Zip** sa Hakbang 1.
+2. Mag-export ng tatlong magkakahiwalay na file: **People**, **Tags**, at **Contributions**.
+3. Piliin ang lahat ng tatlong file, i-right-click, at i-compress ang mga ito sa iisang zip file.
+   - Sa Mac: piliin ang mga file, i-right-click, at piliin ang **Compress**.
+   - Sa PC: piliin ang mga file, i-right-click, piliin ang **Send to**, pagkatapos ay **Compressed (zipped) folder**.
+4. I-upload ang zip file gamit ang opsyong **Breeze Import Zip** sa Hakbang 1.
 
-Ang Breeze import ay awtomatikong naglilipat ng mga tao, mga grupo (tag), at mga record ng donation.
-
----
-
-## Pag-handa ng Planning Center Export
-
-1. Mag-log in sa Planning Center at buksan ang produkto ng **Mga Tao**.
-2. Sa kaliwang sidebar, i-click ang **Mga Listahan** at lumikha ng isang listahan na kinabibilangan ang lahat na nais mong dalhin. (Kung mayroon ka nang isang listahan ng buong congregation, gamitin ang iyon.)
-3. Buksan ang listahan at gamitin ang opsyon ng **export** upang i-download ang iyong mga tao bilang isang **CSV** file. Isama ang mga larangan na nais mong panatilihin -- ang pangalan, email, telepono, address, birthdate, kasarian, at membership status ay lahat ng mapa sa B1.
-4. Kung ang Planning Center ay nagbigay sa iyo ng higit sa isang file, pumili ng mga ito, right-click, at i-compress ang mga ito sa isang zip.
-   - Sa isang Mac: pumili ng mga file, right-click, at pumili ng **Compress**.
-   - Sa isang PC: pumili ng mga file, right-click, pumili ng **I-padala sa**, pagkatapos ay **Compressed (zipped) folder**.
-5. Mag-upload ng CSV o zip gamit ang opsyon na **Planning Center Zip** sa Hakbang 1.
-
-Pagkatapos mag-upload, magpatuloy sa preview at kumpirmahin ang iyong mga tao at mga tahanan ay mukhang tama bago patakbuhin ang import.
+Awtomatikong inililipat ng Breeze import ang mga tao, grupo (tags), at mga talaan ng donasyon.
 
 ---
 
-## Pag-handa ng Tithe.ly Export
+## Paghahanda ng Planning Center Export
 
-1. Sa Tithe.ly, i-export ang iyong data ng **Mga Tao** bilang isang CSV o Excel file. Maaari mo ring i-export ang isang magkakaibang file ng **Pagbibigay** kung nais mong magdala ng mga record ng donation.
-2. Ang tool ay awtomatikong matutukoy kung ang file ay naglalaman ng data ng mga tao o pagbibigay base sa mga pangalan ng haligi.
-3. Mag-upload ng file gamit ang opsyon na **Tithe.ly CSV** sa Hakbang 1.
+1. Mag-log in sa Planning Center at buksan ang produktong **People**.
+2. Sa kaliwang sidebar, i-click ang **Lists** at lumikha ng listahang kasama ang lahat ng gusto mong dalhin. (Kung mayroon ka nang listahan ng buong kongregasyon ninyo, gamitin iyon.)
+3. Buksan ang listahan at gamitin ang **export** option nito para i-download ang iyong mga tao bilang **CSV** file. Isama ang mga field na gusto mong panatilihin — ang pangalan, email, telepono, address, petsa ng kapanganakan, kasarian, at katayuan ng pagiging miyembro ay lahat nagma-map sa B1.
+4. Kung higit sa isang file ang ibinigay ng Planning Center, piliin ang lahat ng mga ito, i-right-click, at i-compress sa iisang zip.
+   - Sa Mac: piliin ang mga file, i-right-click, at piliin ang **Compress**.
+   - Sa PC: piliin ang mga file, i-right-click, piliin ang **Send to**, pagkatapos ay **Compressed (zipped) folder**.
+5. I-upload ang CSV o zip gamit ang opsyong **Planning Center Zip** sa Hakbang 1.
+
+Pagkatapos mag-upload, magpatuloy sa preview at tiyaking tama ang itsura ng iyong mga tao at sambahayan bago patakbuhin ang import.
+
+---
+
+## Paghahanda ng Tithe.ly Export
+
+1. Sa Tithe.ly, i-export ang iyong datos ng **People** bilang CSV o Excel file. Maaari ka ring mag-export ng hiwalay na file ng **Giving** kung gusto mong dalhin ang mga talaan ng donasyon.
+2. Awtomatikong aalamin ng tool kung ang file ay naglalaman ng datos ng mga tao o ng pagbibigay batay sa mga pangalan ng column.
+3. I-upload ang file gamit ang opsyong **Tithe.ly CSV** sa Hakbang 1.
 
 :::info
-Ang Tithe.ly exports ay maaaring i-import nang isa't isa. Patakbuhin ang proseso nang dalawang beses kung kailangan mong i-import ang parehong mga tao at pagbibigay na mga record nang magkakahiwalay.
+Maaaring i-import ang mga export ng Tithe.ly nang isang file sa bawat pagkakataon. Patakbuhin ang proseso nang dalawang beses kung kailangan mong i-import nang magkahiwalay ang mga talaan ng tao at ng pagbibigay.
 :::
 
 ---
 
-## Pag-handa ng CCB o Pushpay Export
+## Paghahanda ng CCB o Pushpay Export
 
-1. Sa Church Community Builder o Pushpay, i-export ang iyong data ng **Mga Tao** bilang isang CSV file. Maaari mo ring i-export ang isang magkakaibang file ng pagbibigay/mga kontribusyon.
-2. Ang tool ay awtomatikong matutukoy kung ang file ay naglalaman ng data ng mga tao o pagbibigay base sa mga pangalan ng haligi.
-3. Mag-upload ng file gamit ang opsyon na **CCB / Pushpay CSV** sa Hakbang 1.
+1. Sa Church Community Builder o Pushpay, i-export ang iyong datos ng **People** bilang CSV file. Maaari ka ring mag-export ng hiwalay na file ng pagbibigay/mga kontribusyon.
+2. Awtomatikong aalamin ng tool kung ang file ay naglalaman ng datos ng mga tao o ng pagbibigay batay sa mga pangalan ng column.
+3. I-upload ang file gamit ang opsyong **CCB / Pushpay CSV** sa Hakbang 1.
 
 ---
 
-## Pagkatapos ng Pag-import
+## Pagkatapos Mag-import
 
-Kapag ang transfer ay kumpleto, maglaan ng ilang minuto upang patunayan ang iyong data:
+Kapag natapos na ang transfer, maglaan ng ilang minuto para suriin ang iyong datos:
 
-1. Tuklasin ang [Mga Tao](../people/adding-people.md) na pahina at spot-check ng ilang mga profile.
-2. Kumpirmahin na ang mga pangalan, email, mga telepono, at mga address ay dumating nang tama.
-3. Suriin na ang mga koneksyon ng tahanan ay buo.
-4. Suriin ang anumang mga na-import na grupo at mga record ng pagbibigay.
+1. I-browse ang pahina ng [People](../people/adding-people.md) at siyasatin ang ilang profile.
+2. Tiyaking tama ang pagkakapasok ng mga pangalan, email, numero ng telepono, at address.
+3. Tingnan na buo ang mga koneksyon ng sambahayan.
+4. Suriin ang anumang na-import na grupo at mga talaan ng pagbibigay.
 
-Kung napapansin mo ang mga isyu, maaari mong i-edit ang mga indibidwal na profile mula sa Mga Tao na pahina. Maaari mo ring ipatakbo ang transfer tool ulit upang [i-export ang iyong data](exporting-data.md) bilang isang backup.
+Kung may napansin kang problema, maaari mong i-edit ang mga indibidwal na profile mula sa pahina ng People. Maaari mo ring patakbuhin muli ang transfer tool para [i-export ang iyong datos](exporting-data.md) bilang backup.

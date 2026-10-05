@@ -28,19 +28,19 @@ Avant de pouvoir suivre la présence, vous devez indiquer à B1 Admin les emplac
 
 ## Configuration de votre structure de présence
 
-1. Ouvrez **B1 Admin**, cliquez sur le **menu de section** dans le coin supérieur gauche (le nom de la section avec la petite flèche), et choisissez **Personnes**.
-2. Dans la barre de navigation, cliquez sur l'onglet **Présence**. L'onglet **Configuration** est sélectionné par défaut.
+1. Ouvrez **B1 Admin**, ouvrez le [menu Sauter](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), et développez **Personnes**.
+2. Cliquez sur **Présence**. L'onglet **Configuration** est sélectionné par défaut.
 3. Cliquez sur **Gérer les campus** (en haut à droite du panneau de configuration). Cela vous mène à **Paramètres → Campus**. Cliquez sur **Ajouter un campus**, entrez le nom de votre emplacement (l'adresse et le fuseau horaire sont optionnels), et cliquez sur **Enregistrer**.
 4. Retournez à **Personnes → Présence → Configuration**. Votre campus apparaît maintenant dans la table de configuration.
 5. Cliquez sur le **+ bouton dans la colonne Service** sous votre campus. Entrez un nom de service tel que « Service du dimanche » et cliquez sur **Enregistrer**.
 6. Cliquez sur le **+ bouton dans la colonne Heure** sous le service. Entrez une heure comme « 9h00 » et cliquez sur **Enregistrer**. Répétez pour chaque heure de service.
-7. Pour connecter un groupe à une heure de service, ouvrez le groupe à partir de l'onglet **Groupes**, cliquez sur le crayon **Modifier**, et utilisez **Ajouter l'heure de service** — voir la section suivante.
+7. Pour connecter un groupe à une heure de service, ouvrez le groupe à partir de **Personnes > Groupes**, cliquez sur le crayon **Modifier**, et utilisez **Ajouter l'heure de service** — voir la section suivante.
 
 ### Activation du suivi de la présence sur un groupe
 
 Avant qu'un groupe puisse avoir sa présence enregistrée, le suivi de la présence doit être activé pour ce groupe.
 
-1. Ouvrez le **menu de section** dans le coin supérieur gauche et choisissez **Personnes**, puis cliquez sur l'onglet **Groupes** et sélectionnez le groupe.
+1. Dans le menu Sauter, choisissez **Personnes > Groupes** et sélectionnez le groupe.
 2. Cliquez sur l'icône en forme de crayon **Modifier**.
 3. Définissez **Suivre la présence** sur **Oui**.
 4. Cliquez sur **Enregistrer**.

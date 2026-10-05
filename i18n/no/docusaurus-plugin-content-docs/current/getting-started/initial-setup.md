@@ -1,70 +1,70 @@
 ---
-title: "Innledende oppsett"
+title: "Første oppsett"
 ---
 
-# Innledende oppsett
+# Første oppsett
 
 <div class="article-intro">
 
-Etter å ha opprettet kontoen og kirken din, er det noen få viktige trinn å konfigurere før du inviterer teamet ditt. Denne guiden går deg gjennom den anbefalte oppsettsrekkefølgen slik at kirken din er klar fra dag en.
+Etter at du har opprettet konto og menighet, er det noen viktige trinn du bør gjøre før du inviterer teamet ditt. Denne veiledningen tar deg gjennom den anbefalte rekkefølgen, slik at menigheten din er klar fra første dag.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- [Opprett kontoen din](./create-account.md) og registrer kirken din
-- Ha kirkens logo og merkevareressurser klare (valgfritt, men anbefalt)
+- [Opprett kontoen din](./create-account.md) og registrer menigheten din
+- Ha menighetens logo og profilmateriell klart (valgfritt, men anbefalt)
 
 </div>
 
-## Trinn 1: Konfigurer kirkeninformasjonen din
+## Trinn 1: Legg inn menighetsinformasjon
 
-1. Åpne **seksjonsmenyen** i øvre venstre hjørne (seksjonsnavnet med den små pilen) og velg **Innstillinger**.
-2. Klikk **Rediger innstillinger**.
-3. Skriv inn kirkens **navn**, **adresse** og **kontaktdetaljer**.
-4. Klikk **Lagre** for å bruke endringene.
+1. Åpne [Jump-menyen](../b1-admin/introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre i B1 Admin), utvid **Innstillinger** og klikk på **Innstillinger**.
+2. Klikk på **Rediger innstillinger**.
+3. Skriv inn menighetens **navn**, **adresse** og **kontaktinformasjon**.
+4. Klikk på **Lagre** for å ta i bruk endringene.
 
-## Trinn 2: Sett opp merkevarebygging
+## Trinn 2: Sett opp profilen din
 
-1. Fra **Instrumentbrettet** (hjemmesiden din), naviger til **Nettsted**, og velg deretter **Utseende**.
-2. Last opp **kirkens logo**.
-3. Konfigurer eventuelle tillegg merkevarealternativer som farger og bilder.
-4. Merkevarebygging vil vises på B1.church-nettstedet ditt og i B1 Mobile-appen.
+1. Velg **Nettsted > Utseende** i Jump-menyen.
+2. Last opp **menighetens logo**.
+3. Konfigurer eventuelle andre profilvalg, som farger og bilder.
+4. Profilen din vises på B1.church-nettstedet ditt og i B1 Mobile-appen.
 
 :::tip
-Å ha logo og merkevarebygging klar før du inviterer teammedlemmer, gir et polert første inntrykk når de logger inn.
+Når logoen og profilen er på plass før du inviterer teammedlemmer, gir det et ryddig førsteinntrykk når de logger inn.
 :::
 
 ## Trinn 3: Konfigurer roller og inviter teamet ditt
 
-1. Klikk **Roller** fra **Innstillinger**-siden.
-2. Opprett roller for teamet ditt (for eksempel "Pastor", "Sekretær", "Kasserer").
+1. Velg **Innstillinger > Roller** i Jump-menyen.
+2. Opprett roller for teamet ditt (for eksempel «Pastor», «Sekretær», «Kasserer»).
 3. Tildel passende tillatelser til hver rolle.
-4. Legg til teammedlemmer ved å søke etter kontoen deres og tildele dem til roller.
+4. Legg til teammedlemmer ved å søke etter kontoene deres og tildele dem roller.
 
-## Trinn 4: Sett opp nøkkelområdene dine
+## Trinn 4: Sett opp hovedområdene
 
-Med teamet på plass, begynn å bygge ut kjernearealene i B1 Admin:
+Når teamet er på plass, kan du begynne å bygge ut kjerneområdene i B1 Admin:
 
-1. **Mennesker** — Legg til medlemmer i kirkens katalog din. Dette er grunnlaget for alt annet, så start her. Du kan legge til mennesker manuelt eller bruke **Importverktøy** fra **Innstillinger**.
-2. **Grupper** — Opprett grupper for små grupper, ministeriumsteam, klasser og andre sammenkomster.
-3. **Oppmøte** — Konfigurer campusene, tjenestene og tjenestestidene for å spore oppmøte.
-4. **Donasjoner** — Sett opp donasjonsfond og koble betalingsgatewayen din (Stripe) for å godta nettbasert giving.
-5. **Nettsted** — Bygg kirkens offentlige nettsted ved hjelp av B1.church-nettstedbyggeren.
+1. **Personer** -- Legg medlemmer inn i menighetens medlemsregister. Dette er grunnlaget for alt annet, så begynn her. Du kan legge til personer manuelt eller bruke verktøyet **Importer** under **Innstillinger**.
+2. **Grupper** -- Opprett grupper for smågrupper, tjenestelag, klasser og andre samlinger.
+3. **Oppmøte** -- Sett opp avdelinger, gudstjenester og gudstjenestetidspunkter for å registrere oppmøte.
+4. **Gaver** -- Sett opp gavefond og koble til betalingsløsningen din (Stripe) for å ta imot nettgaver.
+5. **Nettsted** -- Bygg menighetens offentlige nettsted med nettstedsbyggeren i B1.church.
 
 :::info
-Du trenger ikke sette opp hvert område samtidig. Mange kirker begynner med **Mennesker** og **Grupper**, og legger deretter til **Oppmøte** og **Donasjoner** etter hvert som de blir komfortable med plattformen.
+Du trenger ikke sette opp alle områdene på en gang. Mange menigheter starter med **Personer** og **Grupper**, og legger til **Oppmøte** og **Gaver** etter hvert som de blir kjent med plattformen.
 :::
 
 ## Anbefalt rekkefølge
 
-For den glatteste oppsetterfaringen foreslår vi denne rekkefølgen:
+For et så smidig oppsett som mulig foreslår vi denne rekkefølgen:
 
-1. **Mennesker** — Legg til medlemmene og vanlige fremmøtere dine først.
-2. **Grupper** — Organiser mennesker i meningsfulle grupper.
-3. **Oppmøte** — Begynn å spore hvem som dukker opp hver uke.
-4. **Donasjoner** — Sett opp giving når mennesker er i systemet.
-5. **Nettsted** — Bygg det offentlig tilgjengelig nettstedet sist, etter at dataene dine er på plass.
+1. **Personer** -- Legg først inn medlemmene og de faste deltakerne.
+2. **Grupper** -- Organiser personene i meningsfulle grupper.
+3. **Oppmøte** -- Begynn å registrere hvem som møter opp hver uke.
+4. **Gaver** -- Sett opp giving når personene er lagt inn i systemet.
+5. **Nettsted** -- Bygg det offentlige nettstedet sist, når dataene dine er på plass.
 
-Når du har fullført disse trinnene, er kirken din klar. Utforsk [B1 Admin](/docs/b1-admin/)-dokumentasjonen for detaljerte veiledninger på hvert område.
+Når du har gjennomført disse trinnene, er menigheten din klar til bruk. Utforsk dokumentasjonen for [B1 Admin](/docs/b1-admin/) for detaljerte veiledninger om hvert område.

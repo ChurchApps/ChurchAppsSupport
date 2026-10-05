@@ -1,45 +1,45 @@
 ---
-title: "Endpoint Attendance"
+title: "Endpoint Presenze"
 ---
 
-# Endpoint Attendance
+# Endpoint Presenze
 
 <div class="article-intro">
 
-Il modulo Attendance gestisce le sedi (campus), i servizi, gli orari dei servizi, le sessioni di presenza, le visite e le sessioni di visita. Fornisce l'infrastruttura per tracciare chi ha partecipato a quale servizio o riunione di gruppo, supporta i flussi di check-in e offre report sulle tendenze e sui riepiloghi delle presenze.
+Il modulo Presenze gestisce le sedi, i servizi, gli orari di servizio, le sessioni di presenze, le visite e le sessioni di visita. Fornisce l'infrastruttura per tracciare chi ha partecipato a quale servizio o riunione di gruppo, supporta i flussi di lavoro di check-in e offre il reporting di tendenze e riepilogate delle presenze.
 
 </div>
 
 **Percorso base:** `/attendance`
 
-## Campus
+## Sedi
 
 Percorso base: `/attendance/campuses`
 
-Controller CRUD standard (estende GenericCrudController). Fornisce le route `getById`, `getAll`, `post` e `delete` tramite la classe base CRUD.
+Controller CRUD standard (estende GenericCrudController). Fornisce i percorsi `getById`, `getAll`, `post` e `delete` tramite la classe base CRUD.
 
-| Metodo | Percorso | Auth | Permesso | Descrizione |
+| Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Elenca tutti i campus della chiesa |
-| GET | `/:id` | JWT | — | Ottiene un campus per ID |
-| POST | `/` | JWT | Services.Edit | Crea o aggiorna i campus |
-| DELETE | `/:id` | JWT | Services.Edit | Elimina un campus |
+| GET | `/` | JWT | — | Elenca tutte le sedi della chiesa |
+| GET | `/:id` | JWT | — | Ottieni una sede per ID |
+| POST | `/` | JWT | Services.Edit | Crea o aggiorna sedi |
+| DELETE | `/:id` | JWT | Services.Edit | Elimina una sede |
 
-## Services
+## Servizi
 
 Percorso base: `/attendance/services`
 
-Estende GenericCrudController con le route CRUD `getById`, `getAll`, `post` e `delete`. Gli endpoint `getAll` (`GET /`) e `search` sono sovrascritti con implementazioni personalizzate.
+Estende GenericCrudController con percorsi CRUD `getById`, `getAll`, `post` e `delete`. Gli endpoint `getAll` (`GET /`) e `search` sono sovrascritti con implementazioni personalizzate.
 
-| Metodo | Percorso | Auth | Permesso | Descrizione |
+| Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Elenca tutti i servizi (include le informazioni sul campus) |
-| GET | `/:id` | JWT | — | Ottiene un servizio per ID |
-| GET | `/search?campusId=` | JWT | — | Cerca i servizi per ID campus |
-| POST | `/` | JWT | Services.Edit | Crea o aggiorna i servizi |
+| GET | `/` | JWT | — | Elenca tutti i servizi (include informazioni sulla sede) |
+| GET | `/:id` | JWT | — | Ottieni un servizio per ID |
+| GET | `/search?campusId=` | JWT | — | Cerca servizi per ID sede |
+| POST | `/` | JWT | Services.Edit | Crea o aggiorna servizi |
 | DELETE | `/:id` | JWT | Services.Edit | Elimina un servizio |
 
-### Esempio: cercare servizi per campus
+### Esempio: Cerca Servizi per Sede
 
 ```
 GET /attendance/services/search?campusId=abc-123
@@ -57,49 +57,50 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Service Times
+## Orari di Servizio
 
 Percorso base: `/attendance/servicetimes`
 
-Estende GenericCrudController con le route CRUD `getById`, `post` e `delete`. Gli endpoint `getAll` e `search` sono implementazioni personalizzate.
+Estende GenericCrudController con percorsi CRUD `getById`, `post` e `delete`. Gli endpoint `getAll` e `search` sono implementazioni personalizzate.
 
-| Metodo | Percorso | Auth | Permesso | Descrizione |
+| Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Elenca tutti gli orari dei servizi. Filtra con `?serviceId=`. Aggiungi `?include=groups` per includere i dati dei gruppi |
-| GET | `/:id` | JWT | — | Ottiene un orario di servizio per ID |
-| GET | `/search?campusId=&serviceId=` | JWT | — | Cerca gli orari dei servizi per campus e servizio |
-| GET | `/public/:churchId` | Public | — | Ottiene l'albero campus → servizio → orario per una chiesa. Alimenta l'elemento `serviceTimes` del website builder |
-| POST | `/` | JWT | Services.Edit | Crea o aggiorna gli orari dei servizi |
+| GET | `/` | JWT | — | Elenca tutti gli orari di servizio. Filtra per `?serviceId=`. Aggiungi `?include=groups` per aggiungere dati di gruppo |
+| GET | `/:id` | JWT | — | Ottieni un orario di servizio per ID |
+| GET | `/search?campusId=&serviceId=` | JWT | — | Cerca orari di servizio per sede e servizio |
+| GET | `/public/:churchId` | Public | — | Ottieni l'albero sede → servizio → orario per una chiesa. Alimenta l'elemento `serviceTimes` del generatore di siti web |
+| POST | `/` | JWT | Services.Edit | Crea o aggiorna orari di servizio |
 | DELETE | `/:id` | JWT | Services.Edit | Elimina un orario di servizio |
 
-## Group Service Times
+## Orari di Servizio del Gruppo
 
 Percorso base: `/attendance/groupservicetimes`
 
-Collega i gruppi a specifici orari di servizio.
+Collega i gruppi a orari di servizio specifici.
 
-| Metodo | Percorso | Auth | Permesso | Descrizione |
+| Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Elenca tutte le associazioni gruppo-orario di servizio. Filtra con `?groupId=` per ottenere le associazioni con i nomi dei servizi |
-| GET | `/:id` | JWT | — | Ottiene un'associazione gruppo-orario di servizio per ID |
-| POST | `/` | JWT | Services.Edit | Crea o aggiorna le associazioni gruppo-orario di servizio |
-| DELETE | `/:id` | JWT | Services.Edit | Elimina un'associazione gruppo-orario di servizio |
+| GET | `/` | JWT | — | Elenca tutte le associazioni gruppo-ora-servizio. Filtra per `?groupId=` per ottenere associazioni con nomi di servizio |
+| GET | `/:id` | JWT | — | Ottieni un'associazione gruppo-ora-servizio per ID |
+| POST | `/` | JWT | Services.Edit | Crea o aggiorna associazioni gruppo-ora-servizio |
+| DELETE | `/:id` | JWT | Services.Edit | Elimina un'associazione gruppo-ora-servizio |
 
-## Attendance Records
+## Registri di Presenze
 
 Percorso base: `/attendance/attendancerecords`
 
-Fornisce viste aggregate in sola lettura dei dati di presenza per il reporting e la visualizzazione.
+Fornisce viste aggregate di sola lettura dei dati delle presenze per il reporting e la visualizzazione.
 
-| Metodo | Percorso | Auth | Permesso | Descrizione |
+| Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Attendance.View | Carica i record di presenza per una persona. Richiede `?personId=` |
-| GET | `/tree` | JWT | — | Carica l'intero albero delle presenze (campus, servizi, orari, gruppi) |
-| GET | `/trend?campusId=&serviceId=&serviceTimeId=&groupId=` | JWT | Attendance.View Summary | Carica i dati di tendenza delle presenze con filtri opzionali |
-| GET | `/groups?serviceId=&week=` | JWT | Attendance.View | Carica la presenza di gruppo per un servizio in una determinata settimana |
-| GET | `/search?campusId=&serviceId=&serviceTimeId=&groupId=&startDate=&endDate=` | JWT | Attendance.View | Cerca i record di presenza con filtri (campus, servizio, orario del servizio, gruppo, intervallo di date) |
+| GET | `/` | JWT | Attendance.View | Carica i registri di presenze per una persona. Richiede `?personId=` |
+| GET | `/tree` | JWT | — | Carica l'albero completo delle presenze (sedi, servizi, orari di servizio, gruppi) |
+| GET | `/trend?campusId=&serviceId=&serviceTimeId=&groupId=` | JWT | Attendance.View Summary | Carica i dati della tendenza delle presenze con filtri facoltativi |
+| GET | `/groups?serviceId=&week=` | JWT | Attendance.View | Carica le presenze del gruppo per un servizio in una data settimana |
+| GET | `/sessionStatus?serviceTimeId=&date=` | JWT | Attendance.View | Per ogni gruppo assegnato all'orario di servizio, restituisci `{ groupId, sessionId, attendanceCount }` per quella data (`date` è `YYYY-MM-DD`; `sessionId` è null quando il gruppo non ha una sessione). Sostiene la finestra di dialogo **Chi Ancora Necessita di Presenze** di B1Admin |
+| GET | `/search?campusId=&serviceId=&serviceTimeId=&groupId=&startDate=&endDate=` | JWT | Attendance.View | Cerca i registri di presenze con filtri (sede, servizio, orario di servizio, gruppo, intervallo di date) |
 
-### Esempio: tendenza delle presenze
+### Esempio: Tendenza di Presenze
 
 ```
 GET /attendance/attendancerecords/trend?serviceId=svc-001
@@ -114,37 +115,37 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Sessions
+## Sessioni
 
 Percorso base: `/attendance/sessions`
 
-Estende GenericCrudController con le route CRUD `getById` e `delete`. Gli endpoint `getAll` e `save` sono implementazioni personalizzate che permettono anche ai leader di gruppo di gestire le sessioni per i propri gruppi.
+Estende GenericCrudController con percorsi CRUD `getById` e `delete`. Gli endpoint `getAll` e `save` sono implementazioni personalizzate che consentono anche ai leader del gruppo di gestire le sessioni per i loro gruppi.
 
-| Metodo | Percorso | Auth | Permesso | Descrizione |
+| Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Attendance.View o Group Leader | Elenca tutte le sessioni. Filtra con `?groupId=` (include i nomi). I leader di gruppo possono visualizzare le sessioni dei propri gruppi |
-| GET | `/:id` | JWT | Attendance.View | Ottiene una sessione per ID |
-| POST | `/` | JWT | Attendance.Edit o Group Leader | Crea o aggiorna le sessioni. I leader di gruppo possono salvare le sessioni per i propri gruppi |
+| GET | `/` | JWT | Attendance.View or Group Leader | Elenca tutte le sessioni. Filtra per `?groupId=` (include nomi). I leader del gruppo possono visualizzare le sessioni per i loro gruppi |
+| GET | `/:id` | JWT | Attendance.View | Ottieni una sessione per ID |
+| POST | `/` | JWT | Attendance.Edit or Group Leader | Crea o aggiorna sessioni. I leader del gruppo possono salvare le sessioni per i loro gruppi |
 | DELETE | `/:id` | JWT | Attendance.Edit | Elimina una sessione |
 
-## Visits
+## Visite
 
 Percorso base: `/attendance/visits`
 
-Gestisce i record di visita individuali (una persona che partecipa in una data specifica) e fornisce il flusso di check-in.
+Gestisce i record di visita individuali (una persona che frequenta in una data specifica) e fornisce il flusso di lavoro di check-in.
 
-| Metodo | Percorso | Auth | Permesso | Descrizione |
+| Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Attendance.View | Elenca tutte le visite. Filtra con `?personId=` |
-| GET | `/:id` | JWT | Attendance.View | Ottiene una visita per ID |
-| GET | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.View o Attendance.Checkin | Carica i dati di check-in per le persone in un servizio. Restituisce le visite con le sessioni di visita dall'ultima data registrata |
-| POST | `/` | JWT | Attendance.Edit | Crea o aggiorna le visite |
-| POST | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.Edit o Attendance.Checkin | Invia i dati di check-in. Crea/aggiorna le visite e le sessioni di visita, rimuove i record obsoleti |
+| GET | `/` | JWT | Attendance.View | Elenca tutte le visite. Filtra per `?personId=` |
+| GET | `/:id` | JWT | Attendance.View | Ottieni una visita per ID |
+| GET | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.View or Attendance.Checkin | Carica i dati di check-in per le persone a un servizio. Restituisce le visite con le sessioni di visita dall'ultima data registrata |
+| POST | `/` | JWT | Attendance.Edit | Crea o aggiorna visite |
+| POST | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.Edit or Attendance.Checkin | Invia i dati di check-in. Crea/aggiorna visite e sessioni di visita, rimuove i record non aggiornati |
 | DELETE | `/:id` | JWT | Attendance.Edit | Elimina una visita |
 
-### Esempio: flusso di check-in
+### Esempio: Flusso di Check-In
 
-**Passo 1 -- Caricare i dati di check-in esistenti:**
+**Passaggio 1 -- Carica i dati di check-in esistenti:**
 
 ```
 GET /attendance/visits/checkin?serviceId=svc-001&peopleIds=person-1,person-2
@@ -174,7 +175,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-**Passo 2 -- Inviare il check-in:**
+**Passaggio 2 -- Invia il check-in:**
 
 ```
 POST /attendance/visits/checkin?serviceId=svc-001&peopleIds=person-1,person-2
@@ -192,23 +193,23 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Visit Sessions
+## Sessioni di Visita
 
 Percorso base: `/attendance/visitsessions`
 
-Gestisce l'associazione tra visite e sessioni (a quale sessione specifica una persona ha partecipato durante una visita). Fornisce anche un endpoint di registrazione rapida e un endpoint di download/esportazione.
+Gestisce l'associazione tra visite e sessioni (quale sessione specifica una persona ha frequentato durante una visita). Fornisce anche un endpoint di registro rapido e un endpoint di download/esportazione.
 
-| Metodo | Percorso | Auth | Permesso | Descrizione |
+| Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Attendance.View o Group Leader | Elenca le sessioni di visita. Filtra con `?sessionId=`. I leader di gruppo possono visualizzare le sessioni di visita dei propri gruppi |
-| GET | `/:id` | JWT | Attendance.View | Ottiene una sessione di visita per ID |
-| GET | `/download/:sessionId` | JWT | Attendance.View | Scarica le presenze per una sessione (restituisce i nomi delle persone con lo stato presente/assente) |
-| POST | `/` | JWT | Attendance.Edit | Crea o aggiorna le sessioni di visita |
-| POST | `/log` | JWT | Attendance.Edit o Group Leader | Registra rapidamente la presenza di una persona a una sessione. Crea automaticamente la visita se necessario. I leader di gruppo possono registrare le presenze per i propri gruppi |
+| GET | `/` | JWT | Attendance.View or Group Leader | Elenca le sessioni di visita. Filtra per `?sessionId=`. I leader del gruppo possono visualizzare le sessioni di visita per i loro gruppi |
+| GET | `/:id` | JWT | Attendance.View | Ottieni una sessione di visita per ID |
+| GET | `/download/:sessionId` | JWT | Attendance.View | Scarica le presenze per una sessione (restituisce nomi delle persone con stato presente/assente) |
+| POST | `/` | JWT | Attendance.Edit | Crea o aggiorna sessioni di visita |
+| POST | `/log` | JWT | Attendance.Edit or Group Leader | Registra rapidamente la presenza di una persona a una sessione. Crea automaticamente una visita se necessario. I leader del gruppo possono registrare le presenze per i loro gruppi |
 | DELETE | `/:id` | JWT | Attendance.Edit | Elimina una sessione di visita per ID |
-| DELETE | `/?personId=&sessionId=` | JWT | Attendance.Edit o Group Leader | Rimuove una persona da una sessione. Elimina la sessione di visita e la visita padre se non restano più sessioni. I leader di gruppo possono rimuovere le presenze per i propri gruppi |
+| DELETE | `/?personId=&sessionId=` | JWT | Attendance.Edit or Group Leader | Rimuovi una persona da una sessione. Elimina la sessione di visita e la visita padre se non rimangono sessioni. I leader del gruppo possono rimuovere le presenze per i loro gruppi |
 
-### Esempio: registrazione rapida della presenza
+### Esempio: Registrazione Rapida di Presenze
 
 ```
 POST /attendance/visitsessions/log
@@ -226,7 +227,7 @@ Authorization: Bearer <token>
 {}
 ```
 
-### Esempio: scaricare la presenza di una sessione
+### Esempio: Scarica le Presenze della Sessione
 
 ```
 GET /attendance/visitsessions/download/sess-001
@@ -254,18 +255,18 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Streaks
+## Sequenze
 
 Percorso base: `/attendance/streaks`
 
-Traccia le serie di presenze consecutive per i singoli individui -- settimane consecutive in cui una persona ha partecipato. Utile per le metriche di coinvolgimento e la gamification.
+Traccia le sequenze di presenze per gli individui -- settimane consecutive in cui una persona ha frequentato. Utile per le metriche di coinvolgimento e la gamificazione.
 
-| Metodo | Percorso | Auth | Permesso | Descrizione |
+| Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| GET | `/person/:personId` | JWT | — | Carica le serie di presenze per una persona |
+| GET | `/person/:personId` | JWT | — | Carica le sequenze di presenze per una persona |
 
-## Pagine correlate
+## Pagine Correlate
 
-- [Endpoint Membership](./membership) — Persone, gruppi, ruoli e gestione della chiesa
-- [Autenticazione e permessi](./authentication) — Flusso di login, JWT, modello dei permessi
-- [Struttura dei moduli](../module-structure) — Pattern di organizzazione del codice
+- [Endpoint di Iscrizione](./membership) — Persone, gruppi, ruoli e gestione della chiesa
+- [Autenticazione e Autorizzazioni](./authentication) — Flusso di accesso, JWT, modello di autorizzazione
+- [Struttura dei Moduli](../module-structure) — Modelli di organizzazione del codice

@@ -258,8 +258,8 @@ Manages SMS texting providers, group text messaging, and delivery tracking.
 | GET | `/sent` | JWT | — | Load all sent text message records for the church |
 | GET | `/sent/:id/details` | JWT | — | Load a sent text with per-recipient delivery logs |
 | POST | `/providers` | JWT | — | Save texting providers (batch). Encrypts API credentials |
-| POST | `/send` | JWT | — | Send an SMS to all eligible members of a group. Body: `{ groupId, message }` |
-| POST | `/sendPerson` | JWT | — | Send an SMS to a single person. Body: `{ personId, phoneNumber, message }` |
+| POST | `/send` | JWT | — | Send an SMS to all eligible members of a group. Body: `{ groupId, message }`. Merge fields (`{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{churchName}}`) are resolved per recipient |
+| POST | `/sendPerson` | JWT | — | Send an SMS to a single person. Body: `{ personId, phoneNumber, message }`. Merge fields are resolved, and the resolved text is what gets logged |
 | DELETE | `/providers/:id` | JWT | — | Delete a texting provider |
 
 ### Example: Send Group Text

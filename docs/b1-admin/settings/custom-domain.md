@@ -33,6 +33,8 @@ Once DNS is pointing to B1:
 2. Click **Domains**.
 3. Type your domain in the field and click **Save**.
 
+You don't need to click the **+** button first -- a domain left typed in the field is added when you save. Use **+** (or press **Enter**) when you want to add several domains to the list before saving.
+
 B1 handles SSL automatically — no certificate purchase needed.
 
 :::warning

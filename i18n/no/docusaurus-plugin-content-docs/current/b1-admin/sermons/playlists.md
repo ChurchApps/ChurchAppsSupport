@@ -1,59 +1,59 @@
 ---
-title: "Playlister"
+title: "Spillelister"
 ---
 
-# Playlister
+# Spillelister
 
 <div class="article-intro">
 
-Playlister lar deg organisere predikenene i serier eller samlinger. Når besøkende blar i predikenbiblioteket på B1.church-nettstedet, hjelper playlister dem med å finne og følge med på en komplett predikensserie i riktig rekkefølge.
+Med spillelister kan du organisere prekenene dine i serier eller samlinger. Når besøkende blar i prekenbiblioteket på B1.church-nettstedet ditt, hjelper spillelistene dem med å finne og følge en hel prekenserie i riktig rekkefølge.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du trenger **contentApi.streamingServices.edit**-tillatelsen. Se [Roller og tillatelser](../settings/roles-permissions.md) hvis du ikke har tilgang.
-- Ha et navn, beskrivelse og miniatyrbildet klart for playlisten
+- Du trenger tillatelsen **contentApi.streamingServices.edit**. Se [Roller og tillatelser](../settings/roles-permissions.md) hvis du ikke har tilgang.
+- Ha et navn, en beskrivelse og et miniatyrbilde klare til spillelisten din
 
 </div>
 
-## Visning av playlister
+## Vise spillelister
 
-1. I B1 Admin, åpne **seksjonsmenyene** i det øvre venstre hjørnet (seksjonsnavnet med den lille pilen) og velg **Prekener**.
-2. Klikk **Playlister**-fanen øverst på siden.
-3. Du vil se en liste over alle eksisterende playlister med navn og beskrivelser.
+1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) i B1 Admin (søkefeltet øverst til venstre), utvid **Prekener** og klikk på **Prekener**.
+2. Finn panelet **Spillelister** på siden **Prekener** (ved siden av prekenlisten).
+3. Du ser en liste over alle eksisterende spillelister med navn og beskrivelser.
 
-## Opprett en playliste
+## Opprette en spilleliste
 
-1. Klikk **Opprett første playliste**-knappen (hvis du ikke har playlister ennå) eller klikk **Legg til playliste**.
-2. Angi **navn** for playlisten -- for eksempel, predeseri-tittel som "Tro-grunnlag" eller "Sommer i Salmene".
-3. Legg til **beskrivelse** for å gi besøkende en kort oversikt over serien.
-4. Sett **publiseringsdato** for å kontrollere når playlisten blir synlig.
-5. Last opp **miniatyrbildet** for å representere serien visuelt.
-6. Klikk **Lagre** for å opprette playlisten.
+1. Klikk på knappen **Opprett første spilleliste** (hvis du ikke har noen spillelister ennå), eller klikk på **Legg til** (+) i overskriften på panelet **Spillelister**.
+2. Skriv inn et **navn** på spillelisten -- for eksempel tittelen på prekenserien, som «Troens grunnvoll» eller «Sommer i Salmene».
+3. Legg til en **beskrivelse** som gir besøkende en kort oversikt over serien.
+4. Angi en **publiseringsdato** for å styre når spillelisten blir synlig.
+5. Last opp et **miniatyrbilde** som representerer serien visuelt.
+6. Klikk på **Lagre** for å opprette spillelisten.
 
 :::tip
-Opprett playlistene før du legger til prekener. På denne måten kan du tildele hver prediken til den rette playlisten mens du går, i stedet for å reorganisere senere.
+Opprett spillelistene først, før du legger til prekener. Da kan du tilordne hver preken til riktig spilleliste underveis i stedet for å omorganisere senere.
 :::
 
-## Legge til prekener til en playliste
+## Legge til prekener i en spilleliste
 
-Når du [legger til eller redigerer en prediken](managing-sermons), tildeler du den til en playliste ved hjelp av **Playliste**-rullemenyene. Alle prekener som er tildelt samme playliste grupperes sammen og vises i rekkefølge på nettstedet.
+Når du [legger til eller redigerer en preken](managing-sermons), tilordner du den til en spilleliste i nedtrekksmenyen **Spilleliste**. Alle prekener som er tilordnet samme spilleliste, grupperes og vises i rekkefølge på nettstedet ditt.
 
 :::info
-Du kan også tildele prekener til playlister under [Bulk import](bulk-import). Når du importerer fra YouTube eller Vimeo, velg en playliste fra **Importer til playliste**-rullemenyene før du klikker **Importer**.
+Du kan også tilordne prekener til spillelister under [Masseimport](bulk-import). Når du importerer fra YouTube eller Vimeo, velger du en spilleliste fra nedtrekksmenyen **Importer til spilleliste** før du klikker på **Importer**.
 :::
 
-## Hvordan playlister vises på nettstedet
+## Slik vises spillelister på nettstedet ditt
 
-Playlister vises på B1.church-nettstedet som gjennomlebare samlinger. Besøkende kan:
+Spillelister vises på B1.church-nettstedet ditt som samlinger man kan bla i. Besøkende kan:
 
-- Se alle tilgjengelige predeserie på et blikk
-- Klikk inn i en playliste for å vise alle prekener i denne serien
-- Se eller lytte til prekener i rekkefølge
+- Se alle tilgjengelige prekenserier med et øyekast
+- Klikke seg inn på en spilleliste for å se alle prekenene i serien
+- Se på eller lytte til prekener i riktig rekkefølge
 
-## Neste trinn
+## Neste steg
 
-- [Administrering av prekener](managing-sermons) -- Legg til individuelle prekener til playlistene
-- [Bulk import](bulk-import) -- Importer flere prekener og tildel dem til playlister
+- [Administrere prekener](managing-sermons) -- Legg til enkeltprekener i spillelistene dine
+- [Masseimport](bulk-import) -- Importer flere prekener og tilordne dem til spillelister

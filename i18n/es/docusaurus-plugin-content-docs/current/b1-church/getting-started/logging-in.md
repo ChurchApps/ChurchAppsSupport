@@ -6,7 +6,7 @@ title: "Iniciar Sesión"
 
 <div class="article-intro">
 
-Iniciar sesión en B1.church te da acceso al portal de miembros donde puedes ver tu línea de tiempo, administrar grupos, dar en línea y usar todas las herramientas que tu iglesia ha configurado. Este artículo cubre cómo iniciar sesión, navegar por tu menú de usuario y cerrar sesión.
+Iniciar sesión en B1.church te da acceso al portal de miembros donde puedes ver qué se acerca para ti, administrar grupos, dar en línea y usar todas las herramientas que tu iglesia ha configurado. Este artículo cubre cómo iniciar sesión, navegar por tu menú de usuario y cerrar sesión.
 
 </div>
 
@@ -21,29 +21,33 @@ Iniciar sesión en B1.church te da acceso al portal de miembros donde puedes ver
 ## Cómo Iniciar Sesión
 
 1. Ve a la URL de B1.church de tu iglesia (por ejemplo, `https://yourchurchname.b1.church`).
-2. Haz clic en el botón **Iniciar sesión** en la esquina superior derecha del encabezado.
+2. Haz clic en el botón **Iniciar Sesión** en la esquina superior derecha del encabezado.
 3. Ingresa tu **dirección de correo electrónico** y **contraseña**, o haz clic en **Continuar con Google** o **Continuar con Microsoft** si tu iglesia tiene el inicio de sesión único habilitado.
 4. Haz clic en **Iniciar Sesión**.
 
 Después de iniciar sesión, volverás a la página en la que estabas antes de hacer clic en iniciar sesión. Si navegaste directamente a una página del portal de miembros mientras no habías iniciado sesión, se te devolverá a esa página automáticamente después de iniciar sesión.
 
-## Acceder al Portal de Miembros
+## Mantener Sesión Iniciada
 
-Una vez que hayas iniciado sesión, puedes acceder al portal de miembros haciendo clic en tu **nombre** en la esquina superior derecha de la página y seleccionando **Portal de Miembros** en el menú. El portal de miembros es donde residen todas tus herramientas personales de la iglesia, incluyendo tu [línea de tiempo](../community/timeline.md), [grupos](../groups/), [donaciones](../giving/) y más.
+Permaneces iniciado sesión en el mismo navegador o aplicación instalada hasta que cierres sesión, incluso si no visitas durante un tiempo -- tu sesión se mantiene durante aproximadamente 30 días de inactividad. Iniciar sesión una vez también te mantiene iniciado sesión cuando cambias entre el sitio web de tu iglesia y el portal de miembros (`/mobile`), por lo que no tienes que iniciar sesión de nuevo en cada lugar.
+
+## Accediendo al Portal de Miembros
+
+Una vez que hayas iniciado sesión, puedes acceder al portal de miembros haciendo clic en tu **nombre** en la esquina superior derecha de la página y seleccionando **Portal de Miembros** en el menú. El portal de miembros es donde residen todas tus herramientas personales de la iglesia, incluyendo tu panel [Inicio](./navigating.md), página [Mi](./me-page.md), [grupos](../groups/), [donaciones](../giving/), y más.
 
 ## Tu Menú de Usuario
 
 Después de iniciar sesión, tu nombre aparece como una etiqueta en la esquina superior derecha. Haz clic en ella para abrir un menú con las siguientes opciones:
 
 - **Portal de Miembros** -- Ve a tu panel personal del portal de miembros.
-- **Editar Perfil** -- Actualiza la configuración de tu cuenta o edita tu perfil de iglesia.
+- **Editar Perfil** -- Actualiza tu configuración de cuenta o edita tu perfil de iglesia.
 - **Cerrar Sesión** -- Sal de tu cuenta.
 
 ## Acceso de Administrador
 
 Si eres un administrador de la iglesia con los permisos apropiados, también verás una opción de **Portal de Administración** en tu menú de usuario. Al hacer clic en ella, te lleva a B1 Admin donde puedes administrar la configuración, las personas, los grupos y el contenido de tu iglesia.
 
-## Olvidaste Tu Contraseña
+## Olvidaste tu Contraseña
 
 Si no recuerdas tu contraseña:
 

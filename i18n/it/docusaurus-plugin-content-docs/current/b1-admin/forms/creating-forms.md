@@ -20,7 +20,7 @@ Crea moduli personalizzati per raccogliere informazioni dalla tua congregazione.
 
 ## Creazione di un nuovo modulo
 
-1. Apri **Persone** dal menu della sezione, quindi fai clic su **Moduli** nella barra di navigazione.
+1. Apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin), espandi **Persone** e fai clic su **Moduli**.
 2. Fai clic su **Aggiungi Modulo**.
 3. Inserisci un **nome** per il tuo modulo.
 4. Scegli il tipo di modulo dal menu a discesa:
@@ -90,6 +90,8 @@ La duplicazione è utile per eventi ricorrenti in cui le domande di registrazion
 ## Configurazione delle proprietà del modulo
 
 Puoi aggiornare il nome e le impostazioni del tuo modulo in qualsiasi momento. Per i moduli Autonomi, vedrai anche un **URL pubblico** univoco che puoi condividere con chiunque, insieme a un campo **Descrizione** -- testo mostrato sopra le domande nella pagina del modulo pubblico, utile per dire alle persone a cosa serve il modulo prima di iniziare a compilarlo.
+
+Utilizza il campo **Messaggio di ringraziamento** per impostare quello che le persone vedono dopo aver inviato il modulo, incluso nella pagina dell'URL pubblico del modulo. Se lo lasci vuoto, vedono "Grazie per aver inviato il modulo!"
 
 :::tip
 I moduli Autonomi sono ottimi per le registrazioni agli eventi. Condividi l'URL pubblico via email, social media o incorpora il modulo direttamente sul tuo sito web della chiesa.

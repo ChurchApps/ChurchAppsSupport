@@ -1,43 +1,43 @@
 ---
-title: "B1 Church Checkin Overview"
+title: "Pangkalahatang-ideya ng B1 Church Checkin"
 ---
 
-# B1 Church Checkin Overview
+# Pangkalahatang-ideya ng B1 Church Checkin
 
 <div class="article-intro">
 
-Ang B1 Church Checkin ay isang self-service kiosk app para sa iPads at Android tablets. Ito ay nagbibigay-daan sa mga miyembro ng simbahan na hanapin ang kanilang pamilya, magtalag ng mga bata sa mga grupo o mga klase, at mag-print ng mga label ng pangalan at mga slip ng pagpickup ng magulang -- lahat nang hindi kailangan ng volunteer sa desk.
+Ang B1 Church Checkin ay isang self-service kiosk app para sa mga iPad at Android tablet. Pinapayagan nito ang mga miyembro ng simbahan na hanapin ang kanilang pamilya, italaga ang mga bata sa mga grupo o klase, at mag-print ng mga name label at pickup slip para sa magulang -- lahat nang hindi na kailangan ng volunteer sa desk.
 
 </div>
 
-## Kung Paano Ito Gumagana
+## Paano Ito Gumagana
 
-Maglagay ng iPad o Android tablet sa iyong lobby o welcome area. Ang mga miyembro ay lumalakad, naghahanap ng kanilang household sa pamamagitan ng numero ng telepono o pangalang pamilya, sinusuri ang kanilang pamilya, pumipili kung aling mga grupo ang dapat dumalo ng bawat tao, at nag-tap ng **Check-in**. Ang app ay nag-print ng mga label ng pangalan at mga slip ng pagpickup ng awtomatiko, pagkatapos ay nire-reset para sa susunod na pamilya.
+Maglagay ng iPad o Android tablet sa inyong lobby o welcome area. Lalapit ang mga miyembro, hahanapin ang kanilang sambahayan gamit ang numero ng telepono o apelyido, irerepaso ang kanilang pamilya, pipiliin kung aling mga grupo dadalo ang bawat tao, at ita-tap ang **Check-in**. Awtomatikong ipi-print ng app ang mga name label at pickup slip, pagkatapos ay magre-reset para sa susunod na pamilya.
 
 ## Mga Pangunahing Tampok
 
-- **Self-service member lookup** -- Maghanap sa pamamagitan ng numero ng telepono o pangalang pamilya upang mahanap ang iyong household nang mabilis.
-- **Household review** -- Makita ang lahat ng miyembro ng pamilya na may mga larawan at kasalukuyang pagtatalaga ng grupo sa isang sulyap.
-- **Pagtatalaga ng grupo** -- Magtalag ng bawat miyembro ng pamilya sa tamang klase o grupo para sa napiling oras ng serbisyo.
-- **Guest check-in** -- Magdagdag ng isang bisita sa iyong household sa lugar na may unang at pangalawang pangalan.
-- **QR guest registration** -- Ipakita ang isang QR code na maaaring i-scan ng mga bisita upang [magparehistro sa kanilang sarili](../b1-church/checkin/guest-registration) sa kanilang sariling telepono bago mag-check-in.
-- **Label printing** -- Mag-print ng mga label ng pangalan para sa mga bata at mga slip ng pagpickup ng magulang na may natatanging code ng seguridad.
-- **Network printer support** -- Tuklasin at i-configure ang mga network printer direkta mula sa app.
-- **Auto-login** -- Pagkatapos ng unang login, ang app ay naaasahan ang iyong mga credentials at napupunta direkta sa screen ng mga serbisyo sa mga susunod na paglulunsad.
-- **Multi-church support** -- Kung ang iyong account ay naka-link sa higit sa isang simbahan, maaari kang pumili kung aling simbahan ang mag-check-in.
-- **Church branding** -- Ang app ay nagpapakita ng iyong logo ng simbahan sa header kapag naisip na ang simbahan.
+- **Self-service na paghahanap ng miyembro** -- Maghanap gamit ang numero ng telepono o apelyido para mabilis na mahanap ang inyong sambahayan.
+- **Pagrerepaso ng sambahayan** -- Makita agad ang lahat ng miyembro ng pamilya kasama ang kanilang mga larawan at kasalukuyang group assignment.
+- **Pagtatalaga sa grupo** -- Italaga ang bawat miyembro ng pamilya sa tamang klase o grupo para sa napiling oras ng service.
+- **Guest check-in** -- Magdagdag agad ng bisita sa inyong sambahayan gamit ang pangalan at apelyido.
+- **QR guest registration** -- Magpakita ng QR code na maaaring i-scan ng mga bisita para [magrehistro nang mag-isa](../b1-church/checkin/guest-registration) sa sarili nilang telepono bago mag-check in, o hayaan silang i-tap ang **Register here** para punan ang parehong form sa kiosk.
+- **Pag-print ng label** -- Mag-print ng mga name label para sa mga bata at pickup slip para sa magulang na may kakaibang security code.
+- **Suporta sa network printer** -- Hanapin at i-configure ang mga network printer mismo sa app.
+- **Auto-login** -- Pagkatapos ng unang pag-login, naaalala ng app ang inyong mga kredensyal at dumidiretso sa screen ng mga service sa susunod na pagbukas.
+- **Suporta sa maraming simbahan** -- Kung naka-link ang inyong account sa higit sa isang simbahan, maaari mong piliin kung saan mag-check in.
+- **Branding ng simbahan** -- Ipinapakita ng app ang logo ng inyong simbahan sa header kapag may napili nang simbahan.
 
 ## Mga Seksyon ng Dokumentasyon
 
-- **[Pagsisimula](./getting-started/)** -- Pag-install ng app, pag-login, at pag-setup ng iyong printer.
-- **[Workflow ng Check-In](./check-in/)** -- Ang buong check-in flow mula sa pagpili ng serbisyo hanggang sa pag-print ng mga label.
+- **[Pagsisimula](./getting-started/)** -- Pag-install ng app, pag-login, at pag-set up ng inyong printer.
+- **[Proseso ng Check-In](./check-in/)** -- Ang buong proseso ng check-in mula sa pagpili ng service hanggang sa pag-print ng mga label.
 
 :::tip
-Ang B1 Church Checkin ay gumagana nang pinakamahusay sa isang 10-pulgada na tablet (iPad o Android) na naka-mount sa landscape orientation kung saan ang mga pamilya ay madaling maaabot. Kunin ang app mula sa [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin), o [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/).
+Pinakamahusay gumana ang B1 Church Checkin sa 10-pulgadang tablet (iPad o Android) na nakalagay nang landscape sa lugar na madaling maabot ng mga pamilya. Kunin ang app sa [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin), o [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/).
 :::
 
 :::info
-Bago gamitin ang B1 Church Checkin, ang administrator ng iyong simbahan ay kailangang i-configure ang mga serbisyo, oras ng serbisyo, at mga grupo sa B1 Admin. Tingnan ang [attendance setup guide](../b1-admin/attendance/setup.md) para sa mga detalye.
+Bago gamitin ang B1 Church Checkin, kailangang i-configure ng administrator ng inyong simbahan ang mga service, oras ng service, at mga grupo sa B1 Admin. Tingnan ang [gabay sa pag-set up ng attendance](../b1-admin/attendance/setup.md) para sa detalye.
 :::
 
-Para sa suporta, i-email ang [support@churchapps.org](mailto:support@churchapps.org).
+Para sa suporta, mag-email sa [support@churchapps.org](mailto:support@churchapps.org).

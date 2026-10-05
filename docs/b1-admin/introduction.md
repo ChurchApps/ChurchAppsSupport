@@ -22,8 +22,8 @@ For further support, please email [support@churchapps.org](mailto:support@church
 ## Walkthrough
 
 1. Using Google Chrome, go to [admin.b1.church](https://admin.b1.church) and sign in with your username and password.
-2. This will take you to the **Dashboard**, the B1.church Admin home page. It shows this week's service and who's checked in and serving, along with your tasks and groups. Use the **command palette** (see below) or the menus to reach People, Donations, Website, and the rest of the app.
-3. Click on **Settings** to set up your church's information, administrative roles, and other details.
+2. This will take you to the **Dashboard**, the B1.church Admin home page. It shows this week's service and who's checked in and serving, along with your tasks and groups. Use the **Jump menu** (the search bar at the top-left, see below) to reach People, Donations, Website, and the rest of the app. Click the small church logo next to it to return to the Dashboard at any time.
+3. Open the Jump menu and choose **Settings** to set up your church's information, administrative roles, and other details.
 4. Click on the **edit pencil** to set up your church information.
 5. Back on Sunday, click the **question mark icon** in the top right corner for help and tutorials.
 6. Click **View Documentation** to see a list of tutorials to help you get started with B1.church.
@@ -36,16 +36,31 @@ For further support, please email [support@churchapps.org](mailto:support@church
 Start with the [Settings](./settings/) page to configure your church name, branding, and team permissions. This ensures everything else you set up will display correctly.
 :::
 
-## Finding Anything Quickly with the Command Palette
+<a id="finding-anything-quickly-with-the-command-palette"></a>
 
-Instead of clicking through menus, you can jump straight to a person, group, plan, fund, or any admin page from anywhere in B1 Admin:
+## Getting Around with the Jump Menu
 
-1. Press **Ctrl+K** (or **Cmd+K** on a Mac), or press **/** while you are not typing in a text field, to open the search bar. You can also click the **Search or jump...** button in the top navigation.
-2. Start typing a name or the page you want (for example, a person's name, "batches", or "songs").
-3. Results are grouped by type -- people, groups, plans, funds, and pages to jump to. Use the arrow keys to move between results and **Enter** to select one, or click a result with your mouse.
-4. Press **Esc** to close the search bar without selecting anything.
+All of B1 Admin is reached from the **Jump menu** at the top-left of the header. Next to the small church logo (which takes you back to the Dashboard) is a search bar that shows where you are, such as **Donations › Batches**, along with a **Ctrl K** (or **⌘ K**) hint.
 
-The command palette can also start common tasks. Type what you want to do and select it:
+### Browsing sections and pages
+
+1. Click the search bar, or press **Ctrl+K** (**Cmd+K** on a Mac), or press **/** while you are not typing in a text field.
+2. The menu lists every section you have access to -- Dashboard, People, Donations, Serving, Sermons, Website, Calendars, Mobile, and Settings. The section you are in is already expanded and your current page is highlighted.
+3. Click a section to expand it and see its pages (for example, **People** contains **People**, **Groups**, **Attendance**, and **Forms**). Only one section is expanded at a time.
+4. Click a page to go there.
+
+You can also use the keyboard: the **Up** and **Down** arrows move through the list, **Right** expands a section, **Left** collapses it, and **Enter** opens the highlighted item. Press **Esc** to close the menu without going anywhere.
+
+In these docs, a step like "In the Jump menu, choose **People > Groups**" means open the Jump menu, expand **People**, and click **Groups**.
+
+### Searching
+
+Instead of browsing, you can start typing as soon as the menu opens to jump straight to a person, group, plan, fund, or any admin page:
+
+1. Type a name or the page you want (for example, a person's name, "batches", "songs", or "my work").
+2. Results are grouped by type -- people, groups, plans, funds, and pages to jump to. Use the arrow keys to move between results and **Enter** to select one, or click a result with your mouse.
+
+The search can also start common tasks. Type what you want to do and select it:
 
 - **Create a page**, **Create a group**, **Set up FreeShow**, or **Set up FreePlay** opens the matching quick setup wizard right where you are, without going back to the Dashboard.
 - **Add a person** opens the new person form.
@@ -53,8 +68,12 @@ The command palette can also start common tasks. Type what you want to do and se
 
 The actions you see depend on your permissions.
 
+### Quick Actions
+
+The last group in the Jump menu is **Quick Actions** -- the setup shortcuts that used to appear on the Dashboard. Expand it to find steps such as **Add Your Church Logo**, **Create Your First Webpage**, **Set Up Online Giving**, **Create Your First Group**, and **Invite Team Members**. Setup actions open their quick setup wizard the first time; once you have set that feature up, they take you to its page instead.
+
 :::tip
-The command palette is often the fastest way to reach a page buried in a sub-menu -- type part of the page name instead of navigating through Settings, Serving, or Donations by hand.
+Searching is often the fastest way to reach a page -- type part of the page name (such as "roles" or "funds") instead of expanding Settings, Serving, or Donations by hand.
 :::
 
 ## Next Steps

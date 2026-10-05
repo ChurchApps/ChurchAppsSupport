@@ -1,46 +1,48 @@
 ---
-title: "Benutzerdefinierte Domäne"
+title: "Custom Domain"
 ---
 
-# Benutzerdefinierte Domäne
+# Custom Domain
 
 <div class="article-intro">
 
-Du kannst deine eigene Domäne (z. B. **www.deinkirche.de**) auf deine B1-Website verweisen, damit Besucher sie unter der echten Webadresse deiner Kirche erreichen, anstatt unter der Standardadresse deinkirche.1.church.
+Sie können Ihre eigene Domain (z. B. **www.yourchurch.org**) auf Ihre B1-Website verweisen, damit Besucher diese unter der echten Web-Adresse Ihrer Kirche aufrufen, anstatt die Standard-Adresse yourchurch.1.church zu verwenden.
 
 </div>
 
-## Schritt 1 -- Füge zuerst den DNS-Datensatz hinzu
+## Schritt 1 — Zunächst den DNS-Datensatz hinzufügen
 
-Bevor du deine Domäne in B1 hinzufügst, musst du sie in deinem Domänenregistrar (GoDaddy, Namecheap, Cloudflare usw.) auf B1-Server verweisen.
+Bevor Sie Ihre Domain in B1 hinzufügen, müssen Sie sie bei Ihrer Domain-Registrierungsstelle (GoDaddy, Namecheap, Cloudflare usw.) auf die Server von B1 verweisen.
 
-Füge einen dieser Datensätze hinzu -- CNAME wird bevorzugt:
+Fügen Sie einen dieser Datensätze hinzu – CNAME wird bevorzugt:
 
-| Typ | Host | Wert |
+| Type | Host | Value |
 |------|------|-------|
 | CNAME | `www` | `proxy.b1.church` |
-| A | `deinkirche.de` | `3.23.251.61` |
+| A | `yourchurch.org` | `3.23.251.61` |
 
-Verwende den **CNAME** für deine `www`-Adresse. Verwende den **A-Datensatz**, wenn dein Registrar CNAME auf einer Root/Apex-Domäne (ohne www) nicht unterstützt oder wenn du möchtest, dass die Root-Domäne auch funktioniert.
+Verwenden Sie das **CNAME** für Ihre `www`-Adresse. Verwenden Sie den **A-Datensatz**, wenn Ihre Registrierungsstelle CNAME auf einer Root/Apex-Domain (ohne www) nicht unterstützt, oder wenn Sie möchten, dass die Root-Domain auch funktioniert.
 
-DNS-Änderungen können von ein paar Minuten bis zu ein paar Stunden dauern.
+DNS-Änderungen können von wenigen Minuten bis zu einigen Stunden dauern.
 
-## Schritt 2 -- Füge die Domäne in B1 hinzu
+## Schritt 2 — Fügen Sie die Domain in B1 hinzu
 
 Sobald DNS auf B1 verweist:
 
-1. Gehe zu **Einstellungen** in B1 Admin.
-2. Klicke auf **Domänen**.
-3. Gib deine Domäne in das Feld ein und klicke auf **Speichern**.
+1. Gehen Sie zu **Settings** in B1 Admin.
+2. Klicken Sie auf **Domains**.
+3. Geben Sie Ihre Domain in das Feld ein und klicken Sie auf **Save**.
 
-B1 handhabt SSL automatisch -- kein Zertifikatskauf notwendig.
+Sie müssen nicht zuerst auf die **+**-Schaltfläche klicken – eine Domain, die im Feld eingegeben wird, wird hinzugefügt, wenn Sie speichern. Verwenden Sie **+** (oder drücken Sie **Enter**), wenn Sie mehrere Domains zur Liste hinzufügen möchten, bevor Sie speichern.
+
+B1 verwaltet SSL automatisch – es ist keine Zertifikatskauf erforderlich.
 
 :::warning
-Wenn du die Domäne in B1 hinzufügst, bevor deine DNS-Datensätze vorhanden sind, wird sie nicht gespeichert. Richte immer zuerst DNS ein.
+Wenn Sie die Domain in B1 hinzufügen, bevor Ihre DNS-Datensätze eingerichtet sind, wird sie nicht gespeichert. Stellen Sie immer DNS zuerst ein.
 :::
 
-## Überprüfe, ob es funktioniert
+## Überprüfung, ob es funktioniert
 
-Nach dem Speichern, besuche deine Domäne in einem Browser. Wenn sie deine B1-Website lädt, bist du fertig. Wenn du einen Fehler siehst, kann sein, dass DNS noch sich ausbreitet -- warte ein paar Minuten und versuche es erneut.
+Besuchen Sie nach dem Speichern Ihre Domain in einem Browser. Wenn es Ihre B1-Website lädt, sind Sie fertig. Wenn Sie einen Fehler sehen, läuft DNS möglicherweise noch – warten Sie ein paar Minuten und versuchen Sie es erneut.
 
-Du kannst die DNS-Ausbreitung auch unter [dnschecker.org](https://dnschecker.org) überprüfen -- suche deine Domäne und überprüfe, ob dein CNAME- oder A-Datensatz angezeigt wird.
+Sie können auch die DNS-Verbreitung unter [dnschecker.org](https://dnschecker.org) überprüfen – suchen Sie nach Ihrer Domain und achten Sie darauf, dass Ihr CNAME- oder A-Datensatz angezeigt wird.

@@ -2,83 +2,92 @@
 title: "Canzoni"
 ---
 
-# Songs
+# Canzoni
 
 <div class="article-intro">
 
-The Songs page manages your worship song library. Keep all your song details, lyrics, and arrangements in one place so your worship team can easily prepare for upcoming Servizi and maintain a consistent repertoire.
+La pagina Canzoni gestisce la tua libreria di canzoni di culto. Mantieni tutti i dettagli della canzone, testi e arrangiamenti in un unico luogo in modo che il tuo team di culto possa facilmente preparare i servizi imminenti e mantenere un repertorio coerente.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Navigate Per the **Serving** section in B1 Admin Per access the Songs page
-- Optionally, have your [service plans](./plans.md) set up so you can link songs directly into the [service order](./service-order.md)
+- Nel [menu Jump](../introduction.md#getting-around-with-the-jump-menu) in B1 Admin, scegli **Servizio > Canzoni** per accedere alla pagina Canzoni
+- Facoltativamente, avere i tuoi [piani di servizio](./plans.md) configurati in modo da poter collegare le canzoni direttamente nell'[ordine di servizio](./service-order.md)
 
 </div>
 
-## Browsing Your Song Library
+## Sfoglia la Tua Libreria di Canzoni
 
-When you Apri the **Songs** page, your songs are displayed as cards. Each card shows the song's thumbnail image, title, artist, and duration. Scroll through the library or use Cerca Per Trova what you need.
+Quando apri la pagina **Canzoni**, le tue canzoni vengono visualizzate come schede. Ogni scheda mostra l'immagine della miniatura della canzone, il titolo, l'artista e la durata. Scorri la libreria o utilizza la ricerca per trovare quello che ti serve.
 
-## Searching for Songs
+## Ricerca di Canzoni
 
-1. Fai clic the **Cerca** button on the Songs page.
-2. Digita a song **title** or **artist** name.
-3. The results will filter as you Digita, showing matching songs from your library.
+1. Fai clic sul pulsante **Ricerca** nella pagina Canzoni.
+2. Digita un **titolo** della canzone o un nome di **artista**.
+3. I risultati si filtreranno mentre digiti, mostrando le canzoni corrispondenti dalla tua libreria.
 
-## Adding a Song
+## Aggiunta di una Canzone
 
-1. Fai clic **Aggiungi Song** on the Songs page.
-2. Cerca the external song database by title or artist.
-3. Seleziona the song you want Per Aggiungi.
-4. The song will be added Per your library with its basic details pre-filled.
+1. Fai clic su **Aggiungi Canzone** nella pagina Canzoni.
+2. Cerca il database esterno di canzoni per titolo o artista.
+3. Seleziona la canzone che vuoi aggiungere.
+4. La canzone verrà aggiunta alla tua libreria con i suoi dettagli di base precompilati.
 
 :::tip
-After adding a song, Fai clic on it Per review and update its details, Aggiungi arrangements, or attach external links like YouTube videos or chord charts.
+Dopo aver aggiunto una canzone, fai clic su di essa per rivedere e aggiornare i suoi dettagli, aggiungere arrangiamenti o allegare link esterni come video YouTube o grafici degli accordi.
 :::
 
-## Viewing and Editing a Song
+### Canzoni Gratuite da WorshipCommons
 
-Fai clic on any song card Per Apri its detail page. From here you can:
+I tuoi risultati di ricerca possono anche includere una sezione **WorshipCommons — gratis** accanto ai risultati regolari. Queste sono canzoni pronte per il culto domenicale da [WorshipCommons](https://worshipcommons.org) che sono state esaminate e concesse in licenza per l'uso nel culto. Ogni risultato mostra un badge di licenza -- **Gratuito per il culto** o **Pubblico dominio** -- in modo da conoscerti i termini prima di aggiungerlo.
 
-- **Modifica song details** -- Update the title, artist, duration, and other metadata.
-- **Manage arrangements** -- Each song can have multiple arrangements (for example, different keys or versions). Aggiungi, Modifica, or Rimuovi arrangements as needed.
-- **Aggiungi lyrics** -- Inserisci or update the lyrics for each arrangement using ChordPro notation (for example, `[G]Amazing grace`). A live preview Avanti Per the editor renders the formatted chord chart as you Digita, so you can see exactly what your team will see.
-- **Set the key** -- Specify the musical key for each arrangement using the key picker Avanti Per the lyrics. Changing the key transposes the displayed chords immediately, both on the arrangement page and when opening the song from a Servizio plan, so your team always sees chords in the key they're actually playing.
-- **Aggiungi external links** -- Attach links Per resources like YouTube videos, chord charts, or sheet music hosted elsewhere.
+- Fai clic su un risultato di WorshipCommons per aggiungerlo alla tua libreria, proprio come un risultato di ricerca regolare.
+- Fai clic su **Visualizza su WorshipCommons** per aprire l'elenco originale in una nuova scheda.
 
-## Arrangements
+Solo le canzoni che hanno superato il processo di revisione di WorshipCommons appaiono qui, quindi la selezione può essere inferiore al database di canzoni principale.
 
-An arrangement represents a distinct version of a song — for example, a faster modern version versus a slower acoustic take, or the same song in a different key for a different team. Each arrangement of the same song shares the song title and artist but has its own independent Impostazioni:
+## Visualizzazione e Modifica di una Canzone
 
-- **Key** — the musical key the arrangement is performed in
-- **BPM** — tempo in beats per minute
-- **Length** — duration in seconds
-- **Meter** — Ora signature (e.g., 4/4, 3/4, 6/8)
-- **Sequence** — the chord/section structure (e.g., Intro → Verse → Chorus → Bridge)
-- **Lyrics** — for display or projection
-- **External links** — chord charts, YouTube recordings, sheet music, or other resources
+Fai clic su qualsiasi scheda di canzone per aprire la sua pagina di dettagli. Da qui puoi:
 
-When you Aggiungi a song Per a [Service Order](./service-order.md), you can Scegli which arrangement Per use for that specific Servizio, so your team always rehearses and plays the right version.
+- **Modifica dettagli della canzone** -- Aggiorna il titolo, l'artista, la durata e altri metadati.
+- **Gestisci arrangiamenti** -- Ogni canzone può avere più arrangiamenti (ad esempio, chiavi diverse o versioni). Aggiungi, modifica o rimuovi arrangiamenti secondo le tue esigenze.
+- **Aggiungi testi** -- Inserisci o aggiorna i testi per ogni arrangiamento utilizzando la notazione ChordPro (ad esempio, `[G]Amazing grace`). Un'anteprima dal vivo accanto all'editor rende il grafico degli accordi formattato mentre digiti, in modo da poter vedere esattamente quello che il tuo team vedrà.
+- **Imposta la chiave** -- Specifica la chiave musicale per ogni arrangiamento utilizzando il selettore di chiavi accanto ai testi. La modifica della chiave traspone immediatamente gli accordi visualizzati, sia nella pagina dell'arrangiamento che quando si apre la canzone da un piano di servizio, in modo che il tuo team veda sempre gli accordi nella chiave che stanno effettivamente suonando.
+- **Aggiungi link esterni** -- Allega i link alle risorse come video YouTube, grafici degli accordi o fogli musicali ospitati altrove.
 
-### Rehearsal Audio
+## Arrangiamenti
 
-Worship admins can attach a rehearsal audio track Per an arrangement so the team can listen ahead of practice:
+Un arrangiamento rappresenta una versione distinta di una canzone -- ad esempio, una versione moderna più veloce rispetto a una versione acustica più lenta, o la stessa canzone in una chiave diversa per un team diverso. Ogni arrangiamento della stessa canzone condivide il titolo e l'artista della canzone ma ha le sue impostazioni indipendenti:
 
-1. Apri the song and Seleziona the arrangement.
-2. Fai clic **Carica Audio**.
-3. Scegli an MP3, M4A, or AAC file (up Per 25 MB -- WAV isn't accepted, Per keep storage usage manageable).
-4. Salva. The track plays inline wherever that arrangement appears -- on the arrangement page in B1 Admin and in the Servizio plan when a team Membro opens it in the B1.church Membro portal. Plan items with audio show a music-note icon instead of a thumbnail.
+- **Chiave** -- la chiave musicale in cui l'arrangiamento viene eseguito
+- **BPM** -- tempo in battiti al minuto
+- **Lunghezza** -- durata in secondi
+- **Tempo** -- firma temporale (ad esempio, 4/4, 3/4, 6/8)
+- **Sequenza** -- la struttura accordo/sezione (ad esempio, Intro → Verso → Ritornello → Bridge)
+- **Testi** -- per la visualizzazione o la proiezione
+- **Link esterni** -- grafici degli accordi, registrazioni YouTube, fogli musicali o altre risorse
 
-Deleting the arrangement also removes its uploaded audio file.
+Quando aggiungi una canzone a un [Ordine di Servizio](./service-order.md), puoi scegliere quale arrangiamento usare per quel servizio specifico, in modo che il tuo team ripeti sempre e suona la versione corretta.
+
+### Audio di Prova
+
+Gli admin del culto possono allegare una traccia audio di prova a un arrangiamento in modo che il team possa ascoltare prima della pratica:
+
+1. Apri la canzone e seleziona l'arrangiamento.
+2. Fai clic su **Carica Audio**.
+3. Scegli un file MP3, M4A o AAC (fino a 25 MB -- WAV non è accettato, per mantenere l'utilizzo dello spazio di archiviazione gestibile).
+4. Salva. La traccia si riproduce in linea ovunque quell'arrangiamento appaia -- nella pagina dell'arrangiamento in B1 Admin e nel piano di servizio quando un membro del team l'apre nel portale dei membri B1.church. Gli elementi del piano con audio mostrano un'icona di nota musicale invece di una miniatura.
+
+L'eliminazione dell'arrangiamento rimuove anche il suo file audio caricato.
 
 :::info
-Songs from your library can be added directly Per a [Service Order](./service-order.md) within a plan, linking the song details and the chosen arrangement Per that specific Servizio.
+Le canzoni della tua libreria possono essere aggiunte direttamente a un [Ordine di Servizio](./service-order.md) all'interno di un piano, collegando i dettagli della canzone e l'arrangiamento scelto a quel servizio specifico.
 :::
 
-## Avanti Steps
+## Passi Successivi
 
-- Aggiungi songs Per your [Service Order](./service-order.md) when building out a [service plan](./plans.md)
-- Coordinate with your worship team using [Tasks](./tasks.md) for song preparation and practice
+- Aggiungi canzoni al tuo [Ordine di Servizio](./service-order.md) quando costruisci un [piano di servizio](./plans.md)
+- Coordina con il tuo team di culto utilizzando [Attività](./tasks.md) per la preparazione e la pratica della canzone

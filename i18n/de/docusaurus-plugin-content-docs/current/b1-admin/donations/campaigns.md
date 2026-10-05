@@ -6,66 +6,66 @@ title: "Kampagnen & Zusagen"
 
 <div class="article-intro">
 
-Mit Kampagnen können Sie eine Fundraising-Aktion mit einem bestimmten Ziel durchführen — ein Baugrund, eine Missionsreise, ein spezielles Projekt — und Zusagen von Mitgliedern zusammen mit tatsächlichen Spenden verfolgen, damit Sie Ihren Echtzeit-Fortschritt sehen können.
+Kampagnen ermöglichen es Ihnen, eine Spendensammlung für ein spezifisches Ziel durchzuführen -- einen Gebäudefonds, eine Missionsreise, ein Spezialproject -- und Zusagen von Mitgliedern neben tatsächlichen Spenden zu verfolgen, damit Sie Ihren Echtzeit-Fortschritt sehen können.
 
 </div>
 
 <div class="prereqs">
-<h4>Vor dem Start</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Richten Sie Ihre [Spendenfonds](funds) ein — jede Kampagne ist an einen Fonds gebunden
-- Sie benötigen Zugriff auf den Bereich Donations in B1 Admin
+- Richten Sie Ihre [Spendenfonds](funds) ein -- jede Kampagne ist an einen Fonds gebunden
+- Sie benötigen Zugriff auf den Spenden-Bereich von B1 Admin
 
 </div>
 
-## Öffnen von Kampagnen
+## Kampagnen öffnen
 
-Öffnen Sie in B1 Admin das **Bereichsmenü** in der oberen linken Ecke (der Bereichsname mit dem kleinen Pfeil) und wählen Sie **Donations**, dann wählen Sie **Campaigns**. Sie sehen eine Liste aller Kampagnen mit ihrem Zielwert, zusammengefassten Zusagen und bisherigen Spenden.
+In B1 Admin öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), erweitern Sie **Spenden** und klicken Sie auf **Kampagnen**. Sie sehen eine Liste aller Kampagnen mit ihrem Zielbetraga, Gesamtzusagen und bisheriger Gesamtspende.
 
-## Erstellen einer Kampagne
+## Kampagne erstellen
 
-1. Klicken Sie auf **Add Campaign**.
+1. Klicken Sie auf **Kampagne hinzufügen**.
 2. Füllen Sie die Kampagnendetails aus:
-   - **Name** *(erforderlich)* — der Anzeigename für diese Kampagne (z. B. „Baugrund 2026").
-   - **Fund** — der Spendenfonds, mit dem diese Kampagne verbunden ist.
-   - **Start Date** / **End Date** — das Fundraising-Fenster.
-   - **Goal** — der Zieldollarbetrag für die Kampagne.
-3. Klicken Sie auf **Save**.
+   - **Name** *(erforderlich)* -- der Anzeigename für diese Kampagne (zum Beispiel „Gebäudefonds 2026").
+   - **Fonds** -- der Spendenfonds, mit dem diese Kampagne verknüpft ist.
+   - **Startdatum** / **Enddatum** -- das Spendendatum-Fenster.
+   - **Ziel** -- der Zieldollarbetrag für die Kampagne.
+3. Klicken Sie auf **Speichern**.
 
-## Verfolgung des Fortschritts
+## Fortschritt verfolgen
 
 Jede Kampagnenkarte zeigt:
 
-- **Goal** — Ihr Zielwert
-- **Pledged** — der Gesamtbetrag, den Mitglieder zugesagt haben zu geben
-- **Given** — der Gesamtbetrag, der tatsächlich zu diesem Kampagnenfonds während des Kampagnenfensters gespendet wurde
-- Eine **progress bar** die zeigt, wie weit Sie zu Ihrem Ziel gekommen sind
+- **Ziel** -- Ihr Zielbetraga
+- **Zugesagt** -- der Gesamtbetrag, den Mitglieder zur Gabe zusagen
+- **Gegeben** -- der Gesamtbetrag, der tatsächlich zu diesem Kampagnenfonds während des Kampagnenfensters gespendet wurde
+- Eine **Fortschrittsleiste**, die zeigt, wie weit Sie sich Ihrem Ziel genähert haben
 
-Klicken Sie auf eine Kampagne, um die Detailansicht zu öffnen, die einzelne Zusagen und ihren Erfüllungsstatus auflistet.
+Klicken Sie auf eine beliebige Kampagne, um die Detailansicht zu öffnen, die einzelne Zusagen und ihren Erfüllungsstatus auflistet.
 
-## Hinzufügen von Zusagen
+## Zusagen hinzufügen
 
-Zusagen sind Verpflichtungen von Mitgliedern, zu einer Kampagne zu geben. Um eine Zusage aufzuzeichnen:
+Zusagen sind Verpflichtungen von Mitgliedern, zu einer Kampagne zu geben. Um eine Zusage zu eintragen:
 
 1. Öffnen Sie eine Kampagne.
-2. Klicken Sie auf **Add Pledge**.
-3. Wählen Sie die **person**, die eine Zusage macht.
-4. Geben Sie den Zusagebetrag **amount** ein.
-5. Stellen Sie optional ein **date** für die Zusagenverpflichtung ein.
-6. Klicken Sie auf **Save**.
+2. Klicken Sie auf **Zusage hinzufügen**.
+3. Wählen Sie die **Person**, die die Zusage macht.
+4. Geben Sie den Zugesagt-**Betrag** ein.
+5. Legen Sie optional ein **Datum** für die Zusage-Verpflichtung fest.
+6. Klicken Sie auf **Speichern**.
 
-Zusagen erscheinen in der Kampagnendetail und tragen zum **Pledged**-Gesamtwert auf der Kampagnenkarte bei.
+Zusagen werden in der Kampagnendetail angezeigt und tragen zu dem **Zugesagt**-Gesamt auf der Kampagnenkarte bei.
 
 :::tip
-Zusagen unterscheiden sich von tatsächlichen Spenden. Eine Zusage verfolgt eine Verpflichtung; eine Spende zeichnet das tatsächliche Geschenk auf. Beide werden in der Kampagne angezeigt, damit Sie sehen können, wie gut Zusagen erfüllt werden.
+Zusagen sind von tatsächlichen Spenden getrennt. Eine Zusage verfolgt eine Verpflichtung; eine Spende eintragen ist das tatsächliche Geschenk. Beide werden in der Kampagne angezeigt, daher können Sie sehen, wie gut Zusagen erfüllt werden.
 :::
 
-## Bearbeiten oder Löschen einer Kampagne
+## Kampagne bearbeiten oder löschen
 
-Klicken Sie auf das Bearbeitungssymbol auf einer beliebigen Kampagnenkarte, um ihren Namen, Ziel, Termine oder Fonds zu aktualisieren. Klicken Sie auf **Delete**, um die Kampagne und ihre Zusagen dauerhaft zu entfernen. Das Löschen einer Kampagne löscht keine Spenden, die in ihren Fonds aufgezeichnet wurden.
+Klicken Sie auf das Bearbeitungssymbol auf einer beliebigen Kampagnenkarte, um seinen Namen, Ziel, Daten oder Fonds zu aktualisieren. Klicken Sie auf **Löschen**, um die Kampagne und ihre Zusagen dauerhaft zu entfernen. Das Löschen einer Kampagne löscht nicht alle Spenden, die zu ihrem Fonds eingetragen wurden.
 
 ## Verwandte Artikel
 
-- [Recording Donations](recording-donations) — zeichnen Sie die tatsächlichen Geschenke auf, die Zusagen erfüllen
-- [Funds](funds) — richten Sie den Fonds ein, der mit einer Kampagne verbunden werden soll
-- [Donation Reports](donation-reports) — Berichte über Spenden nach Fonds
+- [Spenden eintragen](recording-donations) -- eintragen der tatsächlichen Geschenke, die Zusagen erfüllen
+- [Fonds](funds) -- richten Sie den Fonds ein, um ihn mit einer Kampagne zu verknüpfen
+- [Spendenbericht](donation-reports) -- Berichterstattung über Spenden nach Fonds

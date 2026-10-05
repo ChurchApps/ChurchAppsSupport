@@ -1,82 +1,82 @@
 ---
-title: "Rooms, Resources & Scheduling"
+title: "Salas, Recursos e Agendamento"
 ---
 
-# Rooms, Resources & Scheduling
+# Salas, Recursos e Agendamento
 
 <div class="article-intro">
 
-Rooms and Resources let you track your church's bookable spaces and equipment. When a group or team wants to use a room or borrow a resource for an event, they can request it through B1 — and you can approve or deny those requests to prevent double-booking.
+Salas e Recursos permitem que você rastreie os espaços e equipamentos reserváveis de sua igreja. Quando um grupo ou equipe quer usar uma sala ou emprestar um recurso para um evento, eles podem solicitá-lo através de B1 -- e você pode aprovar ou negar essas solicitações para evitar dupla reserva.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Antes de Começar</h4>
 
-- You need administrative access to the Calendars section in B1 Admin
-- Set up [groups](../groups/creating-groups) whose members will be submitting booking requests
+- Você precisa de acesso administrativo à seção de Calendários em B1 Admin
+- Configure [grupos](../groups/creating-groups) cujos membros estarão enviando solicitações de reserva
 
 </div>
 
-## Opening Rooms & Resources
+## Abrindo Salas e Recursos
 
-In B1 Admin, go to **Calendars** and select **Rooms & Resources**. The page has four tabs: **Rooms**, **Resources**, **Blockouts**, and **Templates**.
+Em B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), expanda **Calendários** e clique em **Salas e Recursos**. A página tem quatro abas: **Salas**, **Recursos**, **Bloqueios** e **Modelos**.
 
-## Rooms
+## Salas
 
-Rooms are physical spaces that can be reserved alongside calendar events — a sanctuary, a fellowship hall, a classroom, etc.
+Salas são espaços físicos que podem ser reservados junto com eventos de calendário -- um santuário, um salão de comunhão, uma sala de aula, etc.
 
-### Adding a Room
+### Adicionando uma Sala
 
-1. On the **Rooms** tab, click **Add Room**.
-2. Enter a **name** for the room.
-3. Optionally set a **capacity** (maximum number of people).
-4. Set an **Approval Group** — when a group requests this room, the chosen group's leaders are notified and must approve the booking. Leave blank if no approval is needed.
-5. Click **Save**.
+1. Na aba **Salas**, clique em **Adicionar Sala**.
+2. Digite um **nome** para a sala.
+3. Opcionalmente defina uma **capacidade** (número máximo de pessoas).
+4. Defina um **Grupo de Aprovação** -- quando um grupo solicita esta sala, os líderes do grupo escolhido são notificados e devem aprovar a reserva. Deixe em branco se nenhuma aprovação for necessária.
+5. Clique em **Salvar**.
 
-### Editing or Deleting a Room
+### Editando ou Deletando uma Sala
 
-Click the edit icon next to any room, make your changes, and click **Save**. Use **Delete** to remove a room permanently.
+Clique no ícone de edição ao lado de qualquer sala, faça suas mudanças e clique em **Salvar**. Use **Deletar** para remover uma sala permanentemente.
 
-## Resources
+## Recursos
 
-Resources are items that can be booked alongside an event — AV equipment, projectors, chairs, a van, etc.
+Recursos são itens que podem ser reservados junto com um evento -- equipamento de AV, projetores, cadeiras, uma van, etc.
 
-### Adding a Resource
+### Adicionando um Recurso
 
-1. Click the **Resources** tab, then **Add Resource**.
-2. Enter a **name** and optionally a **description**.
-3. Set an **Approval Group** if someone needs to sign off on resource loans.
-4. Click **Save**.
+1. Clique na aba **Recursos**, depois em **Adicionar Recurso**.
+2. Digite um **nome** e opcionalmente uma **descrição**.
+3. Defina um **Grupo de Aprovação** se alguém precisar aprovar empréstimos de recursos.
+4. Clique em **Salvar**.
 
-## Blockouts
+## Bloqueios
 
-Blockouts prevent rooms or resources from being booked during certain times — for renovations, reserved periods, or maintenance.
+Bloqueios impedem que salas ou recursos sejam reservados durante certos períodos -- para reformas, períodos reservados ou manutenção.
 
-### Adding a Blockout
+### Adicionando um Bloqueio
 
-1. Click the **Blockouts** tab, then **Add Blockout**.
-2. Choose whether to block a **Room**, a **Resource**, or all rooms and resources.
-3. Set the **start** and **end** date/time for the blockout.
-4. Optionally add a **reason** note.
-5. Click **Save**.
+1. Clique na aba **Bloqueios**, depois em **Adicionar Bloqueio**.
+2. Escolha se deseja bloquear uma **Sala**, um **Recurso** ou todas as salas e recursos.
+3. Defina a data/hora de **início** e **término** para o bloqueio.
+4. Opcionalmente adicione uma nota de **motivo**.
+5. Clique em **Salvar**.
 
-## Event Templates
+## Modelos de Eventos
 
-Templates let you save a reusable event configuration — title, description, and associated groups — so that recurring events can be created consistently.
+Modelos permitem que você salve uma configuração de evento reutilizável -- título, descrição e grupos associados -- para que eventos recorrentes possam ser criados consistentemente.
 
-### Adding a Template
+### Adicionando um Modelo
 
-1. Click the **Templates** tab, then **Add Template**.
-2. Enter a **name** for the template.
-3. Optionally link a **group** so the event is automatically connected to that group when created from the template.
-4. Click **Save**.
+1. Clique na aba **Modelos**, depois em **Adicionar Modelo**.
+2. Digite um **nome** para o modelo.
+3. Opcionalmente vinculem um **grupo** para que o evento seja automaticamente conectado a esse grupo quando criado a partir do modelo.
+4. Clique em **Salvar**.
 
-When creating a new event, staff can choose an existing template to pre-fill the event details.
+Ao criar um novo evento, a equipe pode escolher um modelo existente para pré-preencher os detalhes do evento.
 
 ## Artigos Relacionados
 
-- [Availability Calendar](availability) — view all bookings at a glance and book rooms or resources directly
-- [Calendar Approvals](approvals) — approve or reject room and resource booking requests
-- [Creating Calendars](creating-calendars) — set up event calendars
-- [Creating Groups](../groups/creating-groups) — set up groups that can book rooms and resources
+- [Calendário de Disponibilidade](availability) -- veja todas as reservas em um relance e reserve salas ou recursos diretamente
+- [Aprovações de Calendário](approvals) -- aprove ou rejeite solicitações de reserva de salas e recursos
+- [Criando Calendários](creating-calendars) -- configure calendários de eventos
+- [Criando Grupos](../groups/creating-groups) -- configure grupos que podem reservar salas e recursos

@@ -1,66 +1,66 @@
 ---
-title: "समूह में शामिल होने के अनुरोध"
+title: "किसी समूह में शामिल होने का अनुरोध करना"
 ---
 
-# Requesting to Join a Group
+# किसी समूह में शामिल होने का अनुरोध करना
 
 <div class="article-intro">
 
-Some groups require approval before you can become a member. When a group has this setting, you submit a join request — optionally including a message to the group leader — and wait for the leader to approve or decline. You can view the status of your pending requests and cancel them at any time.
+कुछ समूहों को आप सदस्य बनने से पहले अनुमोदन की आवश्यकता होती है। जब किसी समूह के पास यह सेटिंग हो, तो आप एक शामिल होने का अनुरोध जमा करते हैं — वैकल्पिक रूप से समूह के नेता को एक संदेश शामिल करते हुए — और नेता को अनुमोदन या अस्वीकार करने का इंतज़ार करते हैं। आप अपने लंबित अनुरोधों की स्थिति देख सकते हैं और किसी भी समय उन्हें रद्द कर सकते हैं।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- You must be [logged in](../getting-started/logging-in.md) to your B1.church account to request to join a group.
+- किसी समूह में शामिल होने का अनुरोध करने के लिए आपको अपने B1.church खाते में [लॉगिन करना](../getting-started/logging-in.md) होना चाहिए।
 
 </div>
 
-## Joining vs. Requesting to Join
+## शामिल होना बनाम शामिल होने के लिए अनुरोध करना
 
-Groups can have different join policies set by their administrators:
+समूहों के पास उनके प्रशासकों द्वारा निर्धारित विभिन्न शामिल होने की नीतियां हो सकती हैं:
 
-- **Open** -- Click **Join Group** on the group's detail page and you are immediately added as a member.
-- **Request required** -- Click **Request to Join** to submit a request that a group leader must approve before you become a member.
-- **Closed** -- No join button appears. Members must be added manually by leaders.
+- **खुला** -- समूह के विवरण पृष्ठ पर **समूह में शामिल हों** पर क्लिक करें और आप तुरंत सदस्य के रूप में जुड़ जाते हैं।
+- **अनुरोध आवश्यक** -- **शामिल होने के लिए अनुरोध करें** पर क्लिक करें ताकि एक अनुरोध जमा करें जिसे आप सदस्य बनने से पहले समूह के नेता को मंजूर करना होगा।
+- **बंद** -- कोई शामिल होने वाला बटन दिखाई नहीं देता है। सदस्यों को नेताओं द्वारा मैन्युअली जोड़ना होगा।
 
-## How to Submit a Join Request
+## शामिल होने का अनुरोध कैसे जमा करें
 
-1. Browse to the group you want to join. See [Browsing Groups](./browsing-groups.md) if you need help finding it.
-2. Open the group's detail page.
-3. Click **Request to Join**.
-4. A dialog appears where you can optionally write a message to the group leader explaining why you would like to join.
-5. Click **Submit** to send your request.
+1. उस समूह पर जाएं जिसमें आप शामिल होना चाहते हैं। यदि आपको इसे खोजने में सहायता चाहिए तो [समूहों को ब्राउज़ करना](./browsing-groups.md) देखें।
+2. समूह के विवरण पृष्ठ को खोलें।
+3. **शामिल होने के लिए अनुरोध करें** पर क्लिक करें।
+4. एक संवाद दिखाई देता है जहां आप वैकल्पिक रूप से समूह के नेता को एक संदेश लिख सकते हैं जिसमें बताएं कि आप क्यों शामिल होना चाहते हैं।
+5. अपना अनुरोध भेजने के लिए **जमा करें** पर क्लिक करें।
 
-The group's leaders will receive a notification about your request. Once they review it, you will receive a notification with the outcome.
+समूह का पृष्ठ अब बटन के स्थान पर एक **अनुरोध लंबित** नोटिस दिखाता है। समूह के नेताओं को आपके अनुरोध के बारे में एक सूचना मिलेगी। एक बार जब वे इसकी समीक्षा करते हैं, तो आप परिणाम के साथ एक सूचना प्राप्त करेंगे।
 
 :::tip
-Including a brief message — such as how you heard about the group or what you hope to get out of it — can help the leader make a faster decision.
+एक संक्षिप्त संदेश शामिल करना — जैसे कि आपको समूह के बारे में कैसे पता चला या आप इससे क्या प्राप्त करने की उम्मीद करते हैं — नेता को तेज़ी से निर्णय लेने में मदद कर सकता है।
 :::
 
-## Checking the Status of Your Requests
+## अपने अनुरोधों की स्थिति की जांच करना
 
-After submitting a request, you can view its status from the **Groups** page:
+अनुरोध जमा करने के बाद, आप अपने चर्च की B1.church साइट पर **समूह** पृष्ठ से इसकी स्थिति देख सकते हैं:
 
-1. Navigate to the **Groups** page on your church's B1.church site.
-2. Scroll down to the **Pending Requests** section.
-3. Each pending request shows the group name and the date you submitted it.
+1. अपने चर्च की B1.church साइट पर **समूह** पृष्ठ पर जाएं।
+2. **लंबित अनुरोध** सेक्शन तक स्क्रॉल करें।
+3. प्रत्येक लंबित अनुरोध समूह का नाम और जिस तारीख को आपने इसे जमा किया था दिखाता है।
 
-If a request has been approved or declined, you will receive a notification — approved requests move you into the group as a member.
+यदि कोई अनुरोध अनुमोदित या अस्वीकार किया गया है, तो आप एक सूचना प्राप्त करेंगे — अनुमोदित अनुरोध आपको समूह में सदस्य के रूप में ले जाते हैं।
 
-## Cancelling a Request
+## एक अनुरोध रद्द करना
 
-If you change your mind before a leader reviews your request:
+यदि आप अपना विचार बदल लें इससे पहले कि कोई नेता आपके अनुरोध की समीक्षा करे:
 
-1. Go to the **Groups** page.
-2. Find your request in the **Pending Requests** section.
-3. Click **Cancel** next to the request.
+1. **समूह** पृष्ठ पर जाएं।
+2. **लंबित अनुरोध** सेक्शन में अपना अनुरोध खोजें।
+3. अनुरोध के आगे **रद्द करें** पर क्लिक करें।
 
-The request is immediately withdrawn and the leader will no longer see it.
+अनुरोध तुरंत वापस ले लिया जाता है और नेता इसे अब नहीं देखेंगे।
 
-## Related Articles
+## संबंधित लेख
 
-- [Browsing Groups](./browsing-groups.md) -- Find groups to join
-- [Group Details](./group-details.md) -- What you can see and do on a group's page
-- [Group Conversations](./conversations.md) -- Participate in discussions once you are a member
+- [समूहों को ब्राउज़ करना](./browsing-groups.md) -- शामिल होने के लिए समूह खोजें
+- [समूह विवरण](./group-details.md) -- आप समूह के पृष्ठ पर क्या देख और कर सकते हैं
+- [समूह वार्तालाप](./conversations.md) -- एक बार जब आप सदस्य हों तो चर्चा में भाग लें

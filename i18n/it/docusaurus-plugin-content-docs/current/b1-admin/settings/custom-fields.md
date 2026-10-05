@@ -1,95 +1,99 @@
 ---
-title: "Campi Personalizzati"
+title: "Campi personalizzati"
 ---
 
-# Campi Personalizzati
+# Campi personalizzati
 
 <div class="article-intro">
 
-I **Campi Personalizzati** ti permettono di tracciare le tue informazioni su ogni record di persona — cose che B1 non ha un campo integrato per, come una data di scadenza della verifica dei precedenti, una taglia di maglietta o uno stato della classe di battesimo. Definisci un campo una volta nelle Impostazioni, quindi compila un valore nel profilo di ogni persona e cerca o costruisci liste su di esso. Questo sostituisce il vecchio workaround di creare un modulo People solo per archiviare un singolo pezzo di dati personalizzati.
+I **Campi personalizzati** ti permettono di tracciare le tue proprie informazioni su ogni record di persona, cose che B1 non ha un campo integrato per, come una data di scadenza del controllo del background, una taglia di maglietta, o uno stato della classe di battesimo. Definisci un campo una volta nelle Impostazioni, quindi compila un valore nel profilo di ogni persona e cerca o costruisci elenchi su di esso. Questo sostituisce il vecchio workaround di creare un modulo di Persone solo per archiviare un singolo pezzo di dati personalizzati.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Hai bisogno del permesso **People** di modifica per definire campi e riempire i valori, e dell'accesso all'area **Settings**. Chiunque abbia il permesso di visualizzazione di People può vedere i valori. Vedi [Ruoli e Permessi](./roles-permissions.md).
-- Decidi cosa desideri tracciare e quale tipo si adatta meglio (testo, numero, data, risposta sì/no o elenco pick-list) prima di iniziare.
+- È necessaria l'autorizzazione di modifica **People** per definire i campi e per compilare i valori, e l'accesso all'area **Settings**. Chiunque abbia autorizzazione di visualizzazione People può vedere i valori. Vedi [Roles & Permissions](./roles-permissions.md).
+- Decidi cosa vuoi tracciare e quale tipo si adatta meglio (testo, un numero, una data, una risposta sì/no, o una lista di scelta) prima di iniziare.
 
 </div>
 
-## Apertura dei Campi Personalizzati
+## Apertura dei campi personalizzati
 
-In B1 Admin, apri il **menu della sezione** nell'angolo in alto a sinistra (il nome della sezione con la piccola freccia), scegli **Settings** e seleziona la scheda **Custom Fields**. Puoi anche andare direttamente a **/settings/custom-fields**. Vedrai un elenco di ogni campo che hai definito, mostrando il suo **Name** e **Field Type**. Se non ne hai ancora creato nessuno, il pannello legge *"No custom fields have been added yet."*
+In B1 Admin, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), scegli **Settings > Settings**, e seleziona la scheda **Custom Fields**. Puoi anche andare direttamente a **/settings/custom-fields**. Vedrai un elenco di ogni campo che hai definito, che mostra il suo **Nome** e **Tipo di campo**. Se non ne hai creato uno ancora, il pannello legge *"Nessun campo personalizzato è stato aggiunto ancora."*
 
-## Aggiunta di un Campo
+## Aggiunta di un campo
 
 1. Fai clic su **Add Field**.
-2. Nell'editor che si apre a destra, immetti un **Name** — questo è l'etichetta che lo staff vedrà nei profili di persona e nella ricerca (ad esempio, *Background check expires*).
-3. Scegli un **Field Type**:
-   - **Textbox** — testo libero a forma breve.
+2. Nell'editor che si apre a destra, immetti un **Nome** - questa è l'etichetta che lo staff vedrà sui profili delle persone e nella ricerca (ad esempio, *La verifica del background scade*).
+3. Scegli un **Tipo di campo**:
+   - **Textbox** — testo libero di breve lunghezza.
    - **Whole Number** — numeri senza decimali (ad esempio, un conteggio).
    - **Decimal** — numeri che possono includere decimali.
-   - **Date** — una data di calendario.
-   - **Yes/No** — una risposta semplice sì o no.
-   - **Multiple Choice** — un elenco pick-list. Quando scegli questo tipo, appare un **editor delle scelte** in modo da poter aggiungere ogni opzione che le persone possono selezionare.
+   - **Date** — una data del calendario.
+   - **Yes/No** — una semplice risposta sì o no.
+   - **Multiple Choice** — una lista di scelta. Quando scegli questo tipo, appare un **editor di scelte** in modo da poter aggiungere ogni opzione che le persone possono selezionare.
 4. Fai clic su **Save**.
 
 Il campo è ora disponibile nel profilo di ogni persona.
 
 :::info
-I tipi di campo sono lo stesso insieme utilizzato per [le domande del modulo](../forms/creating-forms.md), quindi i valori si comportano in modo coerente in B1.
+I tipi di campo sono lo stesso set utilizzato per le [domande del modulo](../forms/creating-forms.md), quindi i valori si comportano in modo coerente su B1.
 :::
 
-## Modifica di un Campo
+## Modifica di un campo
 
-Fai clic su qualsiasi riga di campo nell'elenco per riaprirla nell'editor. Cambia il nome, il tipo o le scelte e fai clic su **Save**.
+Fai clic su qualsiasi riga di campo nell'elenco per riaprirlo nell'editor. Cambia il nome, il tipo o le scelte e fai clic su **Save**.
 
 :::warning
-Cambiare il **Field Type** di un campo che ha già valori (ad esempio, da Textbox a Date) può lasciare i valori precedentemente inseriti in un formato che non corrisponde più al nuovo tipo. Cambia i tipi con attenzione una volta che lo staff ha iniziato a riempire il campo.
+Cambiare il **Tipo di campo** di un campo che ha già valori (ad esempio, da Textbox a Date) può lasciare i valori precedentemente immessi in un formato che non corrisponde più al nuovo tipo. Cambia i tipi con attenzione una volta che lo staff ha iniziato a compilare il campo.
 :::
 
-## Eliminazione di un Campo
+## Eliminazione di un campo
 
-Apri un campo per la modifica e fai clic su **Delete**. Ti verrà chiesto di confermare: *"Are you sure you wish to delete this custom field? Its stored values will also be removed."* L'eliminazione di un campo rimuove permanentemente esso **e ogni valore archiviato per esso** su tutte le persone — questo non può essere annullato.
+Apri un campo per la modifica e fai clic su **Delete**. Ti verrà chiesto di confermare: *"Sei sicuro di voler eliminare questo campo personalizzato? I suoi valori archiviati verranno anche rimossi."* L'eliminazione di un campo rimuove permanentemente **ogni valore archiviato per esso** su tutte le persone, questo non può essere annullato.
 
-## Compilazione dei Valori su una Persona
+## Compilazione di valori su una persona
 
-Una volta che esiste almeno un campo personalizzato, i suoi valori vivono proprio accanto ai dettagli integrati nel record di ogni persona — li visualizzi in **Personal Details** e li modifichi nello stesso modulo che usi per il resto delle informazioni della persona. Nulla di extra appare finché non hai definito il tuo primo campo.
+Una volta che esiste almeno un campo personalizzato, i suoi valori risiedono proprio accanto ai dettagli integrati nel record di ogni persona, li visualizzi in **Personal Details** e li modifichi sulla stessa forma che usi per il resto delle informazioni della persona. Nulla di straordinario appare fino a quando non hai definito il tuo primo campo.
 
 1. Apri il record di una persona in **People**.
 2. Nella sezione **Personal Details**, fai clic sul pulsante **Edit** (matita).
-3. Scorri fino all'area **Custom Fields** in fondo al modulo di modifica e riempi un valore per ogni campo. Ogni campo mostra l'input che corrisponde al suo tipo — un selezionatore di data per i campi Date, un dropdown sì/no per i campi Yes/No, un elenco pick-list per Multiple Choice e così via.
-4. Fai clic su **Save**. I tuoi valori di campo personalizzato vengono salvati insieme al resto dei dettagli della persona.
+3. Scorri fino all'area **Custom Fields** nella parte inferiore del modulo di modifica e compila un valore per ogni campo. Ogni campo mostra l'input che corrisponde al suo tipo, un selezionatore di data per i campi Date, un menu a discesa sì/no per i campi Yes/No, una lista di scelta per Multiple Choice, e così via.
+4. Fai clic su **Save**. I tuoi valori di campi personalizzati vengono salvati insieme al resto dei dettagli della persona.
 
-Di nuovo nel profilo, qualsiasi campo che ha un valore ora viene visualizzato nella sezione **Personal Details** (le risposte Yes/No vengono lette come *Yes* o *No*, e Multiple Choice mostra l'etichetta dell'opzione). I campi lasciati vuoti sono semplicemente nascosti. Per rimuovere un valore, modifica la persona, svuota il campo e salva — un valore vuoto viene eliminato dal record anziché archiviato come vuoto.
+Tornando al profilo, qualsiasi campo che ha un valore ora mostra nella sezione **Personal Details** (le risposte Yes/No leggono come *Sì* o *No*, e Multiple Choice mostra l'etichetta dell'opzione). I campi lasciati vuoti sono semplicemente nascosti. Per rimuovere un valore, modifica la persona, cancella il campo, e salva, un valore vuoto viene eliminato dal record anziché archiviato come vuoto.
 
 :::tip
-Il caso d'uso classico è la sicurezza dei volontari: crea un campo **Date** chiamato *Background check expires*, registra la data di ogni volontario, quindi crea una [Lista Salvata](../people/lists.md) che segnala chiunque la cui data è passata.
+Il caso di utilizzo classico è la sicurezza dei volontari: crea un campo **Date** chiamato *La verifica del background scade*, registra la data di ogni volontario, quindi costruisci un [Elenco salvato](../people/lists.md) che contrassegna chiunque la cui data sia passata.
 :::
 
-## Ricerca e Costruzione di Liste su Campi Personalizzati
+## Ricerca e costruzione di elenchi su campi personalizzati
 
-I campi personalizzati sono completamente cercabili:
+I campi personalizzati sono completamente ricercabili:
 
-1. Sulla pagina **People**, apri la [Ricerca Avanzata](../people/searching-people.md).
+1. Sulla pagina **People**, apri la [Ricerca avanzata](../people/searching-people.md).
 2. Espandi la categoria **Custom Fields**.
-3. Seleziona il campo su cui desideri filtrare, scegli un operatore e immetti un valore. Gli operatori offerti corrispondono al tipo del campo:
-   - **Textbox** — contains, equals, starts with, ends with.
-   - **Whole Number / Decimal** — equals, greater than, greater than or equal, less than, less than or equal.
-   - **Date** — equals, after (greater than), before (less than).
-   - **Yes/No** — equals Yes o No.
-   - **Multiple Choice** — equals o contains uno delle scelte.
+3. Seleziona il campo su cui desideri filtrare, scegli un operatore e inserisci un valore. Gli operatori offerti corrispondono al tipo del campo:
+   - **Textbox** — contiene, è uguale a, inizia con, termina con.
+   - **Whole Number / Decimal** — è uguale a, maggiore di, maggiore o uguale, minore di, minore o uguale.
+   - **Date** — è uguale a, dopo (maggiore di), prima (minore di).
+   - **Yes/No** — è uguale a Sì o No.
+   - **Multiple Choice** — è uguale a o contiene una delle scelte.
 
-Salva qualsiasi ricerca di campo personalizzato come [Lista](../people/lists.md). Le liste sono query dal vivo, quindi una lista costruita su *Background check expires is before today* ricontrolla ogni persona ogni volta che la apri — nessuna manutenzione manuale.
+Salva qualsiasi ricerca di campo personalizzato come [Elenco](../people/lists.md). Gli elenchi sono query dal vivo, quindi un elenco costruito su *La verifica del background scade prima di oggi* controlla di nuovo ogni persona ogni volta che lo apri, nessuna manutenzione manuale.
 
-## Cosa Succede alla Fusione
+## Visualizzazione di un campo personalizzato come colonna
 
-Quando [unisci due record di persona](../people/adding-people.md), i valori dei campi personalizzati vengono trasferiti automaticamente. La persona che mantieni rimane con i loro propri valori; per qualsiasi campo in cui solo la persona rimossa aveva un valore, quel valore viene copiato in modo che nulla vada perso.
+Per vedere i valori di un campo per tutti in una volta, aggiungilo come colonna sulla pagina **People**. Apri il selezionatore di colonna, passa alla scheda **Custom**, e seleziona il campo. Il valore di ogni persona appare nella sua propria colonna accanto agli integrati. Vedi [Visualizzazione di campi personalizzati come colonne](../people/searching-people.md#showing-custom-fields-as-columns).
 
-## Articoli Correlati
+## Cosa succede al merge
 
-- [Ricerca di Persone](../people/searching-people.md) — ricerca avanzata, inclusa la categoria Custom Fields
-- [Liste Salvate](../people/lists.md) — salva una ricerca di campo personalizzato e rieseguila dal vivo
-- [Ruoli e Permessi](./roles-permissions.md) — chi può definire campi e modificare valori
-- [Creazione di Moduli](../forms/creating-forms.md) — per la raccolta di dati a domande multiple in cui un modulo completo si adatta meglio ai singoli campi
+Quando [unisci due record di persona](../people/adding-people.md), i valori dei campi personalizzati vengono trasportati automaticamente. La persona che mantieni tiene i loro stessi valori; per qualsiasi campo dove solo la persona rimossa aveva un valore, quel valore viene copiato in modo che nulla vada perso.
+
+## Articoli correlati
+
+- [Searching People](../people/searching-people.md) — ricerca avanzata, inclusa la categoria Custom Fields, e visualizzazione di campi personalizzati come colonne
+- [Saved Lists](../people/lists.md) — salva una ricerca di campo personalizzato ed eseguila di nuovo dal vivo
+- [Roles & Permissions](./roles-permissions.md) — chi può definire campi e modificare valori
+- [Creating Forms](../forms/creating-forms.md) — per la raccolta di dati multi-domanda dove un modulo completo si adatta meglio di singoli campi

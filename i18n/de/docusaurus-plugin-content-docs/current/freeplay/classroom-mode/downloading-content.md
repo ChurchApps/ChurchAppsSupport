@@ -1,60 +1,60 @@
 ---
-title: "Unterrichtsinhalte herunterladen"
+title: "Lektionsinhalte herunterladen"
 ---
 
-# Unterrichtsinhalte herunterladen
+# Lektionsinhalte herunterladen
 
 <div class="article-intro">
 
-Sobald Sie eine Kirche und ein Klassenzimmer ausgewählt haben, ruft FreePlay automatisch die Lektion ab, die heute geplant ist, und beginnt mit dem Herunterladen aller Mediendateien. Dieser Bildschirm ist der Ort, wo Sie warten, bis die Inhalte vor Unterrichtsbeginn bereit sind.
+Nachdem Sie eine Kirche und einen Klassenzimmer ausgewählt haben, ruft FreePlay automatisch die für heute geplante Lektion ab und beginnt, alle ihre Mediendateien herunterzuladen. Dieser Bildschirm ist der Ort, an dem Sie warten, bis Inhalte bereit sind, bevor Sie die Lektion starten.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Wählen Sie Ihre Kirche und das Klassenzimmer aus — siehe [Wählen Sie Ihre Kirche und Raum](./selecting-room)
-- Stellen Sie sicher, dass Ihr Fernseher für den anfänglichen Download mit dem Internet verbunden ist
+- Wählen Sie Ihre Kirche und Klassenzimmer aus – siehe [Ihr Klassenzimmer auswählen](./selecting-room)
+- Stellen Sie sicher, dass Ihr Fernseher mit dem Internet für den anfänglichen Download verbunden ist
 
 </div>
 
-## Wie das Herunterladen funktioniert
+## Wie der Download funktioniert
 
-1. FreePlay überprüft den Zeitplan für Ihr Klassenzimmer und lädt die zugeordnete Lektion
-2. Der Lektionsname, Titel und Beschreibung erscheinen auf dem Bildschirm, überlagert auf dem Lektionscover-Bild
-3. Ein Fortschrittsindikator zeigt **Artikel X von Y herunterladen** während jede Datei auf dem Gerät gespeichert wird
-4. Wenn alle Dateien heruntergeladen sind, erscheint die Schaltfläche **Lektion starten** mit einem Play-Symbol
+1. FreePlay überprüft den Plan für Ihr Klassenzimmer und lädt die zugewiesene Lektion
+2. Der Lektionsname, Titel und Beschreibung erscheinen auf dem Bildschirm, überlagert auf dem Titelbild der Lektion
+3. Ein Fortschrittsanzeiger zeigt **Datei X von Y wird heruntergeladen**, während jede Datei auf dem Gerät gespeichert wird
+4. Wenn alle Dateien heruntergeladen werden, erscheint die **Start Lesson**-Schaltfläche mit einem Play-Symbol
 
-Sie müssen während des Herunterladens nichts tun. FreePlay verarbeitet alles automatisch.
+Sie müssen während des Downloads nichts tun. FreePlay erledigt alles automatisch.
 
 ## Auflösung
 
-FreePlay lädt Inhalte standardmäßig in 720p herunter. Die Auflösungseinstellung (720p oder 1080p) bestimmt die Qualität heruntergeladener Video- und Bilddateien. Höhere Auflösung sieht auf großen Fernsehern schärfer aus, dauert aber länger zum Herunterladen und verwendet mehr Speicher.
+FreePlay lädt Inhalte standardmäßig mit 720p herunter. Die Auflösungseinstellung (720p oder 1080p) bestimmt die Qualität der heruntergeladenen Videos und Bilder. Eine höhere Auflösung sieht auf großen Fernsehern schärfer aus, dauert aber länger zum Herunterladen und verbraucht mehr Speicher.
 
 :::info
-Die Auflösung ist standardmäßig auf 720p eingestellt. Inhalte werden in der für Ihr Gerät konfigurierten Auflösung heruntergeladen.
+Die Auflösung ist standardmäßig auf 720p eingestellt. Inhalte werden mit der für Ihr Gerät konfigurierten Auflösung heruntergeladen.
 :::
 
-## Starten Sie die Lektion
+## Lektion starten
 
-Sobald das Herunterladen abgeschlossen ist, erscheint die Schaltfläche **Lektion starten** am unteren Bildschirmrand. Verwenden Sie Ihre Fernbedienung, um sie hervorzuheben und drücken Sie **Wählen**, um die Wiedergabe zu starten.
+Sobald der Download abgeschlossen ist, verblasst die **Start Lesson**-Schaltfläche am unteren Bildschirmrand. Verwenden Sie Ihre Fernbedienung, um sie hervorzuheben und drücken Sie **Auswählen**, um die Wiedergabe zu starten.
 
 ## Automatische Aktualisierung
 
-FreePlay überprüft jede Stunde auf aktualisierte Inhalte. Wenn sich der Zeitplan während des Tages ändert, wird die App automatisch neue Lektionen abgerufen. Sie können auch **Zurück** auf Ihrer Fernbedienung drücken, um zum Raumauswahlbildschirm zurückzukehren und den Downloadbildschirm erneut zu öffnen, um eine Aktualisierung zu erzwingen.
+FreePlay überprüft jede Stunde auf aktualisierten Inhalt. Wenn sich der Plan während des Tages ändert, wählt die App die neue Lektion automatisch auf. Sie können auch **Zurück** auf Ihrer Fernbedienung drücken, um zum Klassenzimmer-Auswahlbildschirm zurückzukehren und den Download-Bildschirm erneut zu betreten, um einen Aktualisierungszwang auszulösen.
 
 :::tip
-Laden Sie Lektionen herunter, bevor Sonntag Morgen kommt, während Ihr Gebäude eine starke Internetverbindung hat. Nach dem Herunterladen wird der Inhalt offline ohne jede Netzwerkabhängigkeit abgespielt.
+Laden Sie Lektionen vor Sonntagmorgen herunter, während Ihr Gebäude eine starke Internetverbindung hat. Einmal heruntergeladen, wird der Inhalt offline ohne jegliche Netzwerkabhängigkeit abgespielt.
 :::
 
-## Download-Registerkarte
+## Download-Bildschirm
 
-FreePlay enthält eine **Download**-Registerkarte, auf der Sie alle auf dem Gerät heruntergeladenen Inhalte anzeigen und verwalten können. Dies gibt Ihnen Sichtbarkeit in das, was lokal gespeichert ist und für die Offline-Wiedergabe bereit ist. Verwenden Sie die Download-Registerkarte, um zu überprüfen, dass Lektionen vor Sonntagmorgen vollständig heruntergeladen sind, oder um Speicherplatz durch Entfernen alter Inhalte freizugeben.
+FreePlay enthält einen **Download**-Bildschirm, auf dem Sie alle Inhalte anzeigen und verwalten können, die auf dem Gerät heruntergeladen wurden. Öffnen Sie **Einstellungen** am unteren Rand der Seitenleiste und wählen Sie **Downloads**. Dies gibt Ihnen Sichtbarkeit, was lokal gespeichert ist und bereit zur Offline-Wiedergabe. Verwenden Sie den Download-Bildschirm, um zu überprüfen, ob Lektionen vollständig heruntergeladen werden, bevor Sonntagmorgen oder um Speicher freizugeben, indem Sie alte Inhalte entfernen.
 
-## Wenn der Zeitplan leer ist
+## Wenn der Plan leer ist
 
-Wenn keine Lektion für das ausgewählte Klassenzimmer geplant ist, sehen Sie die Nachricht "Der Zeitplan konnte nicht geladen werden. Stellen Sie sicher, dass eine Lektion für diese Klasse geplant ist." Überprüfen Sie Ihren Zeitplan auf [freeplay.church](https://freeplay.church) und stellen Sie sicher, dass die richtige Lektion diesem Raum zugewiesen ist.
+Wenn für den ausgewählten Klassenzimmer keine Lektion geplant ist, sehen Sie die Nachricht „Der Plan konnte nicht geladen werden. Stellen Sie sicher, dass eine Lektion für diesen Klassenzimmer geplant ist." Überprüfen Sie Ihren Plan unter [freeplay.church](https://freeplay.church) und stellen Sie sicher, dass die korrekte Lektion diesem Klassenzimmer zugewiesen ist.
 
 ## Nächste Schritte
 
-- **[Spielen von Lektionen](./playing-lessons)** - Lernen Sie die Medienspieler-Steuerungen zum Navigieren in Lektionsinhalten
+- **[Lektionen abspielen](./playing-lessons)** - Erfahren Sie die Steuerelemente des Media Players zum Navigieren in Lektionsinhalten

@@ -1,50 +1,50 @@
 ---
-title: "Inserimento e Trend del Conteggio di Presenze"
+title: "Conteggio dei presenti e andamento"
 ---
 
-# Inserimento e Trend del Conteggio di Presenze
+# Conteggio dei presenti e andamento
 
 <div class="article-intro">
 
-I conteggi di presenze ti permettono di registrare un semplice numero totale di presenze - per un servizio, un orario di servizio, o un gruppo - senza controllare un elenco nominativo. Usalo quando hai solo bisogno di sapere "quante persone c'erano,", e combinalo con il rapporto Trend del Conteggio di Presenze per monitorare quel numero nel tempo.
+Il conteggio dei presenti vi consente di registrare un semplice numero totale di presenze -- per un servizio, un orario di servizio, o un gruppo -- senza controllare un elenco nominativo. Utilizzatelo quando avete bisogno solo di "quante persone erano presenti", e abbinarlo al rapporto di andamento del conteggio dei presenti per osservare quel numero nel tempo.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Le tue sedi, servizi, e orari di servizio devono essere configurati. Vedi [Configurazione delle Presenze](setup.md).
-- Per inserire un conteggio di presenze è necessaria l'autorizzazione **Presenze > Modifica**; per visualizzare il rapporto di tendenza è necessaria l'autorizzazione **Presenze > Visualizza**. Vedi [Ruoli e Autorizzazioni](../settings/roles-permissions.md).
+- I vostri campus, servizi, e orari dei servizi devono essere configurati. Vedere [Configurazione delle presenze](setup.md).
+- L'inserimento di un conteggio dei presenti richiede il permesso **Presenze > Modifica**; la visualizzazione del rapporto di andamento richiede **Presenze > Visualizza**. Vedere [Ruoli e permessi](../settings/roles-permissions.md).
 
 </div>
 
 :::info
-I conteggi di presenze sono un'alternativa solo al totale rispetto a [Registrazione delle Presenze](recording-attendance.md). Se hai bisogno di sapere **chi** ha partecipato - ad esempio, per fare un follow-up con le persone che non sono tornate - continua a usare la registrazione delle presenze della sessione con nome nella scheda Sessioni del gruppo. I conteggi di presenze memorizzano solo un numero.
+Il conteggio dei presenti è un'alternativa solo totale a [Registrazione delle presenze](recording-attendance.md). Se avete bisogno di conoscere **chi** ha frequentato -- ad esempio, per seguire le persone che non sono tornate -- continuate a utilizzare la presenze di sessione nominativa sulla scheda Sessioni di un gruppo. Il conteggio dei presenti memorizza solo un numero.
 :::
 
-## Registrazione di un Conteggio di Presenze
+## Registrazione di un conteggio dei presenti
 
-1. Apri **B1 Admin**, apri il **menu della sezione** nell'angolo in alto a sinistra e scegli **Persone**, quindi fai clic sulla scheda **Presenze**.
-2. Seleziona la sotto-scheda **Conteggi di Presenze**.
-3. Compila il modulo:
+1. Aprite **B1 Admin**, aprite il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandete **Persone**, e fate clic su **Presenze**.
+2. Selezionate la sub-scheda **Conteggio dei presenti**.
+3. Compilate il modulo:
    - **Servizio** *(obbligatorio)*
-   - **Orario di Servizio** -- lascia vuoto per registrare un totale su tutti gli orari di servizio
-   - **Gruppo** -- facoltativo; solo i gruppi con Tracciamento Presenze abilitato sono elencati. Lascia vuoto per "Nessun gruppo (intero servizio)."
+   - **Orario del servizio** -- lasciate vuoto per registrare un totale su tutti gli orari dei servizi
+   - **Gruppo** -- opzionale; solo i gruppi con Tracciamento presenze abilitato sono elencati. Lasciate vuoto per "Nessun gruppo (intero servizio)".
    - **Data**
-   - **Conteggio di Presenze** -- il numero totale di persone presenti
-4. Fai clic su **Salva**.
+   - **Conteggio dei presenti** -- il numero totale di persone presenti
+4. Fate clic su **Salva**.
 
-La tabella **Conteggi di Presenze Recenti** a destra elenca i tuoi ultimi diversi inserimenti con la loro data, servizio, orario di servizio, gruppo e conteggio. Fai clic su una riga per ricaricarla nel modulo se hai bisogno di correggerla o eliminarla.
+La tabella **Conteggi dei presenti recenti** a destra elenca i vostri ultimi inserienti con la loro data, servizio, orario del servizio, gruppo, e conteggio. Fate clic su una riga per ricaricarla nel modulo se avete bisogno di correggerla o eliminarla.
 
-## Rapporto Trend del Conteggio di Presenze
+## Rapporto di andamento del conteggio dei presenti
 
-1. Dalla stessa scheda **Presenze**, seleziona la sotto-scheda **Trend del Conteggio di Presenze**.
-2. Utilizza i filtri **Sede**, **Servizio**, **Orario di Servizio** e **Gruppo** per restringere il rapporto.
+1. Dalla stessa pagina **Presenze**, selezionate la scheda **Andamento del conteggio dei presenti**.
+2. Utilizzate i filtri **Campus**, **Servizio**, **Orario del servizio**, e **Gruppo** per restringere il rapporto.
 
-Il rapporto mostra i tuoi conteggi di presenze registrati sommati per settimana, sia come grafico a linee che come tabella -- lo stesso stile di rapporto utilizzato dalle schede trend [Presenze e Gruppi](tracking-attendance.md).
+Il rapporto mostra i vostri conteggi dei presenti registrati sommati per settimana, sia come grafico a linee che come tabella -- lo stesso stile di rapporto utilizzato dalle [schede di andamento delle presenze e dei gruppi](tracking-attendance.md).
 
-## Pagine Correlate
+## Pagine correlate
 
-- [Registrazione delle Presenze](recording-attendance.md) -- registrazione delle presenze della sessione nominativa e per persona
-- [Tracciamento delle Presenze](tracking-attendance.md) -- presenze e rapporti di trend dei gruppi
-- [Configurazione delle Presenze](setup.md) -- configura sedi, servizi e orari di servizio
+- [Registrazione delle presenze](recording-attendance.md) -- presenze di sessione nominativa, per persona
+- [Monitoraggio delle presenze](tracking-attendance.md) -- rapporti di andamento delle presenze e dei gruppi
+- [Configurazione delle presenze](setup.md) -- configurate campus, servizi, e orari dei servizi

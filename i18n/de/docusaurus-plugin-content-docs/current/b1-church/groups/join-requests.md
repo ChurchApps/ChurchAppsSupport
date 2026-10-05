@@ -1,66 +1,66 @@
 ---
-title: Requesting to Join a Group
+title: "Um Beitritt zu einer Gruppe bitten"
 ---
 
-# Requesting to Join a Group
+# Um Beitritt zu einer Gruppe bitten
 
 <div class="article-intro">
 
-Some groups require approval before you can become a member. When a group has this setting, you submit a join request — optionally including a message to the group leader — and wait for the leader to approve or decline. You can view the status of your pending requests and cancel them at any time.
+Einige Gruppen erfordern eine Genehmigung, bevor Sie Mitglied werden können. Wenn eine Gruppe diese Einstellung hat, reichen Sie eine Beitrittanfrage ein -- optional mit einer Nachricht an den Gruppenleiter -- und warten auf die Genehmigung oder Ablehnung durch den Leiter. Sie können den Status Ihrer ausstehenden Anfragen jederzeit anzeigen und sie jederzeit stornieren.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- You must be [logged in](../getting-started/logging-in.md) to your B1.church account to request to join a group.
+- Sie müssen [angemeldet](../getting-started/logging-in.md) sein, um bei Ihrem B1.church-Konto eine Beitrittanfrage für eine Gruppe einzureichen.
 
 </div>
 
-## Joining vs. Requesting to Join
+## Beitreten vs. Um Beitritt bitten
 
-Groups can have different join policies set by their administrators:
+Gruppen können unterschiedliche Beitrittrichtlinien haben, die von ihren Administratoren festgelegt werden:
 
-- **Open** -- Click **Join Group** on the group's detail page and you are immediately added as a member.
-- **Request required** -- Click **Request to Join** to submit a request that a group leader must approve before you become a member.
-- **Closed** -- No join button appears. Members must be added manually by leaders.
+- **Offen** -- Klicken Sie auf **Gruppe beitreten** auf der Seite mit den Gruppendetails und Sie werden sofort als Mitglied hinzugefügt.
+- **Genehmigung erforderlich** -- Klicken Sie auf **Um Beitritt bitten**, um eine Anfrage einzureichen, die ein Gruppenleiter genehmigen muss, bevor Sie Mitglied werden.
+- **Geschlossen** -- Es wird keine Beitrittschaltfläche angezeigt. Mitglieder müssen manuell von Leitern hinzugefügt werden.
 
-## How to Submit a Join Request
+## Wie Sie eine Beitrittanfrage einreichen
 
-1. Browse to the group you want to join. See [Browsing Groups](./browsing-groups.md) if you need help finding it.
-2. Open the group's detail page.
-3. Click **Request to Join**.
-4. A dialog appears where you can optionally write a message to the group leader explaining why you would like to join.
-5. Click **Submit** to send your request.
+1. Navigieren Sie zu der Gruppe, der Sie beitreten möchten. Siehe [Gruppen durchsuchen](./browsing-groups.md), wenn Sie Hilfe beim Finden benötigen.
+2. Öffnen Sie die Seite mit den Gruppendetails.
+3. Klicken Sie auf **Um Beitritt bitten**.
+4. Ein Dialog wird angezeigt, in dem Sie optional eine Nachricht an den Gruppenleiter schreiben können, in der Sie erklären, warum Sie beitreten möchten.
+5. Klicken Sie auf **Absenden**, um Ihre Anfrage zu senden.
 
-The group's page now shows a **Request Pending** notice in place of the button. The group's leaders will receive a notification about your request. Once they review it, you will receive a notification with the outcome.
+Die Seite der Gruppe zeigt nun einen **Anfrage ausstehend** Vermerk anstelle der Schaltfläche. Die Leiter der Gruppe erhalten eine Benachrichtigung über Ihre Anfrage. Sobald sie sie überprüft haben, erhalten Sie eine Benachrichtigung mit dem Ergebnis.
 
 :::tip
-Including a brief message — such as how you heard about the group or what you hope to get out of it — can help the leader make a faster decision.
+Eine kurze Nachricht zu schreiben -- z.B. wie Sie von der Gruppe gehört haben oder was Sie davon erwarten -- kann dem Leiter helfen, schneller eine Entscheidung zu treffen.
 :::
 
-## Checking the Status of Your Requests
+## Überprüfung des Status Ihrer Anfragen
 
-After submitting a request, you can view its status from the **Groups** page:
+Nach dem Absenden einer Anfrage können Sie deren Status auf der Seite **Gruppen** anzeigen:
 
-1. Navigate to the **Groups** page on your church's B1.church site.
-2. Scroll down to the **Pending Requests** section.
-3. Each pending request shows the group name and the date you submitted it.
+1. Navigieren Sie zur Seite **Gruppen** auf der B1.church-Website Ihrer Kirche.
+2. Scrollen Sie nach unten zum Abschnitt **Ausstehende Anfragen**.
+3. Jede ausstehende Anfrage zeigt den Gruppennamen und das Datum an, an dem Sie sie eingereicht haben.
 
-If a request has been approved or declined, you will receive a notification — approved requests move you into the group as a member.
+Wenn eine Anfrage genehmigt oder abgelehnt wurde, erhalten Sie eine Benachrichtigung -- genehmigte Anfragen machen Sie zum Mitglied in der Gruppe.
 
-## Cancelling a Request
+## Stornierung einer Anfrage
 
-If you change your mind before a leader reviews your request:
+Wenn Sie sich vor der Überprüfung durch einen Leiter anders überlegen:
 
-1. Go to the **Groups** page.
-2. Find your request in the **Pending Requests** section.
-3. Click **Cancel** next to the request.
+1. Gehen Sie zur Seite **Gruppen**.
+2. Suchen Sie Ihre Anfrage im Abschnitt **Ausstehende Anfragen**.
+3. Klicken Sie auf **Stornieren** neben der Anfrage.
 
-The request is immediately withdrawn and the leader will no longer see it.
+Die Anfrage wird sofort zurückgezogen und der Leiter sieht sie nicht mehr.
 
-## Related Articles
+## Verwandte Artikel
 
-- [Browsing Groups](./browsing-groups.md) -- Find groups to join
-- [Group Details](./group-details.md) -- What you can see and do on a group's page
-- [Group Conversations](./conversations.md) -- Participate in discussions once you are a member
+- [Gruppen durchsuchen](./browsing-groups.md) -- Finden Sie Gruppen zum Beitreten
+- [Gruppendetails](./group-details.md) -- Was Sie auf einer Gruppenseite sehen und tun können
+- [Gruppengespräche](./conversations.md) -- Nehmen Sie an Diskussionen teil, sobald Sie Mitglied sind

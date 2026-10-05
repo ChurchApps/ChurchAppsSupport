@@ -2,63 +2,81 @@
 title: "दान रिकॉर्ड करना"
 ---
 
-# Recording Donations
+# दान रिकॉर्ड करना
 
 <div class="article-intro">
 
-Recording donations in B1 Admin is done through the Batches system. You create a batch to represent a collection (such as a Sunday offering), then add individual donations to that batch. This keeps your giving records organized and easy to reconcile.
+B1 Admin में दान रिकॉर्ड करना Batches सिस्टम के माध्यम से किया जाता है। आप एक संग्रह (जैसे रविवार की पेशकश) का प्रतिनिधित्व करने के लिए एक batch बनाते हैं, फिर उस batch में व्यक्तिगत दान जोड़ते हैं। यह आपके दान रिकॉर्ड को संगठित और सुलझाने में आसान रखता है।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरुआत से पहले</h4>
 
-- Set up your [funds](funds.md) so you can assign donations to the correct categories
-- Create a [batch](batches.md) to hold the donations you are about to enter
-- Make sure the donors are in your [people directory](../people/adding-people.md) so you can look them up when entering gifts
+- अपनी [निधि](funds.md) सेट अप करें ताकि आप दान को सही श्रेणियों में निर्दिष्ट कर सकें
+- एक [batch](batches.md) बनाएँ जो उन दान को रखने के लिए जो आप दर्ज करने वाले हैं
+- सुनिश्चित करें कि दाताएं आपकी [लोगों की निर्देशिका](../people/adding-people.md) में हैं ताकि आप उपहार दर्ज करते समय उन्हें देख सकें
 
 </div>
 
-## Creating a Batch and Adding Donations
+## Batch बनाना और दान जोड़ना
 
-1. In **B1 Admin**, open the **section menu** in the top-left corner and choose **Donations**, then click **Batches**.
-2. Click **Add Batch**.
-3. Enter a name for the batch (e.g., "Sunday Offering - Jan 5") and select the date. Click **Save**.
-4. Your new batch appears in the list showing zero donations and $0.00.
-5. Click on the **batch name** to open it.
+1. **B1 Admin** में, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (ऊपरी बाईं ओर खोज पट्टी), **Donations** को विस्तृत करें, और **Batches** पर क्लिक करें।
+2. **Add Batch** पर क्लिक करें।
+3. Batch के लिए एक नाम दर्ज करें (उदाहरण के लिए, "Sunday Offering - Jan 5") और तारीख चुनें। **Save** पर क्लिक करें।
+4. आपका नया batch सूची में शून्य दान और $0.00 दिखाते हुए दिखाई देता है।
+5. इसे खोलने के लिए **batch name** पर क्लिक करें।
 
-## Entering Individual Donations
+## व्यक्तिगत दान दर्ज करना
 
-1. In the batch detail page, type the donor's name in the **search field** to find them.
-2. After selecting a person, the donation entry form appears with fields for **Date**, **Payment Method**, **Fund**, **Amount**, and **Check Number**.
-3. Fill in the details and click **Add Donation**.
-4. The donation is added to the table below, and the form resets so you can enter the next one.
+1. Batch विवरण पृष्ठ पर, दाता को खोजने के लिए **search field** में दाता का नाम टाइप करें।
+2. किसी व्यक्ति को चुनने के बाद, दान प्रवेश फॉर्म **Date**, **Payment Method**, **Fund**, **Amount**, और **Check Number** के लिए फील्ड के साथ दिखाई देता है।
+3. विवरण भरें और **Add Donation** पर क्लिक करें।
+4. दान नीचे की तालिका में जोड़ा जाता है, और फॉर्म रीसेट हो जाता है ताकि आप अगला दान दर्ज कर सकें।
 
 :::tip
-You can quickly enter multiple donations in a row without leaving the batch page. The form resets after each entry so you can move through a stack of checks or envelopes efficiently.
+आप batch पृष्ठ को छोड़े बिना एक पंक्ति में कई दान दर्ज कर सकते हैं। फॉर्म प्रत्येक प्रविष्टि के बाद रीसेट हो जाता है ताकि आप चेक या लिफाफों के ढेर से कुशलतापूर्वक आगे बढ़ सकें।
 :::
 
-## Splitting a Donation Across Multiple Funds
+## कई निधियों में दान को विभाजित करना
 
-Sometimes a single donor gives to more than one fund in one transaction. To handle this:
+कभी-कभी एक एकल दाता एक लेनदेन में एक से अधिक निधि को दान देता है। इसे संभालने के लिए:
 
-1. Click the **Edit** button on the donation row.
-2. In the edit form, add amounts to different funds. The total will automatically calculate from the individual fund amounts.
-3. Click **Save** to update the donation.
+1. दान पंक्ति पर **Edit** बटन पर क्लिक करें।
+2. संपादन फॉर्म में, विभिन्न निधियों में राशि जोड़ें। कुल स्वचालित रूप से व्यक्तिगत निधि राशि से गणना की जाएगी।
+3. दान को अपडेट करने के लिए **Save** पर क्लिक करें।
 
 :::info
-Splitting donations across funds is common when a donor writes a single check designated for multiple purposes, such as General Fund and Missions.
+जब कोई दाता एक एकल चेक लिखता है जो कई उद्देश्यों के लिए निर्दिष्ट होता है, जैसे General Fund और Missions, तो निधियों में दान को विभाजित करना सामान्य है।
 :::
 
-## Editing or Removing Donations
+## दान को संपादित या हटाना
 
-To edit a donation, click the **Edit** button on its row in the batch. You can change the date, amount, fund, payment method, or any other detail. Click **Save** when you are done.
+दान को संपादित करने के लिए, batch में इसकी पंक्ति पर **Edit** बटन पर क्लिक करें। आप तारीख, राशि, निधि, भुगतान विधि, या कोई अन्य विवरण बदल सकते हैं। जब आप कर लें तो **Save** पर क्लिक करें।
 
 :::tip
-The batch page header updates automatically to show the total number of donations and the combined dollar amount as you add or edit entries. Use this to reconcile against your deposit slip.
+Batch पृष्ठ हेडर स्वचालित रूप से अपडेट होता है ताकि दान की कुल संख्या और संयुक्त डॉलर राशि दिखाई जाए जब आप प्रविष्टियों को जोड़ते या संपादित करते हैं। अपनी जमा पर्ची के खिलाफ सुलझाने के लिए इसका उपयोग करें।
 :::
 
-## Next Steps
+## दान में छूट देना
 
-- Review your entries using [Donation Reports](donation-reports.md) to verify accuracy
-- At year-end, generate [Giving Statements](giving-statements.md) for your donors
+यदि कोई दाता गलती से चार्ज किया गया था या अपना पैसा वापस चाहता है, तो आप B1 Admin में सीधे अपने भुगतान gateway के डैशबोर्ड पर जाने की आवश्यकता के बिना पूरा किए गए दान में छूट दे सकते हैं।
+
+1. दान खोलें और **Edit** पर क्लिक करें।
+2. **Refund** बटन पर क्लिक करें फॉर्म के निचले भाग में Delete के पास।
+3. संवाद की पुष्टि करें: "इस दान को भुगतान gateway के माध्यम से पूरी तरह से छूट दें? यह पूर्ववत नहीं किया जा सकता है।"
+
+दान पूरी तरह से मूल भुगतान gateway के माध्यम से छूट दिया जाता है और आपकी दान सूचियों में **Refunded** के रूप में चिह्नित किया जाता है।
+
+:::warning
+छूट केवल पूर्ण छूट हैं -- B1 Admin से आंशिक राशि में छूट देने का कोई तरीका नहीं है। एक बार पुष्टि होने के बाद छूट को भी पूर्ववत नहीं किया जा सकता है।
+:::
+
+:::info
+**Refund** बटन केवल उन दान के लिए दिखाई देता है जो ऑनलाइन भुगतान किए गए थे (उनके पास एक gateway लेनदेन है) और अभी भी **Complete** status में हैं। मैनुअल रूप से दर्ज किए गए दान (नकद, चेक) के पास छूट देने के लिए कोई gateway लेनदेन नहीं है -- इसके बजाय उन्हें संपादित या हटाएँ।
+:::
+
+## अगले कदम
+
+- अपनी प्रविष्टियों की समीक्षा करें [Donation Reports](donation-reports.md) का उपयोग करके सटीकता सत्यापित करने के लिए
+- वर्ष के अंत में, अपने दाताओं के लिए [Giving Statements](giving-statements.md) उत्पन्न करें

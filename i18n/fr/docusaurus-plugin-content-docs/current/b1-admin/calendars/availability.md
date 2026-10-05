@@ -20,7 +20,7 @@ Le Calendrier de Disponibilité vous donne une vue d'ensemble de toutes les rés
 
 ## Ouverture du Calendrier de Disponibilité
 
-Dans B1 Admin, ouvrez le **menu de section** dans le coin supérieur gauche et choisissez **Calendriers**, puis sélectionnez **Disponibilité**.
+Dans B1 Admin, ouvrez le [menu Sauter](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Calendriers**, et cliquez sur **Disponibilité**.
 
 ## Lecture du Calendrier
 

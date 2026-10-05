@@ -1,123 +1,123 @@
 ---
-title: "Tjenesteplaner"
+title: "Gudstjenesteplaner"
 ---
 
-# Tjenesteplaner
+# Gudstjenesteplaner
 
 <div class="article-intro">
 
-Tjenesteplaner organiserer hvem som tjener og når. Hver plan er knyttet til en bestemt dato og ministerium, noe som gjør det enkelt å koordinere frivilliglagene dine uke for uke og sikre at hver tjeneste er fullt bemannet.
+Gudstjenesteplaner organiserer hvem som tjenestegjør og når. Hver plan er knyttet til en bestemt dato og et bestemt tjenesteområde, slik at det er enkelt å koordinere frivilliglagene uke for uke og sørge for at hver gudstjeneste er fullt bemannet.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Sett opp ministeriene og lagene dine i tjeneste-området
-- Sørg for at frivillige har blitt lagt til i [personkatalogen](../people/adding-people.md) og tildelt lag
+- Sett opp tjenesteområder og lag i Tjeneste-området
+- Kontroller at de frivillige er lagt til i [personregisteret](../people/adding-people.md) og tildelt lag
 
 </div>
 
-## Tilgang til planer
+## Åpne planer
 
-1. Naviger til **Tjeneste** fra hovedmenyen.
-2. Velg en **ministeriumfane** øverst på siden.
-3. Klikk på en **plantype** for å se listen over planer for den typen.
+1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) i B1 Admin (søkefeltet øverst til venstre), utvid **Tjeneste** og klikk på **Planer**.
+2. Velg en **tjenesteområdefane** øverst på siden.
+3. Klikk på en **plantype** for å se listen over planer av den typen.
 4. Klikk på en bestemt plan for å åpne den.
 
 :::info
-Full administrator-tilgang er ikke nødvendig for å administrere planer. Alle som er medlemmer av et ministerium kan navigere til Tjeneste og lage, redigere og planlegge planer for sitt eget ministerium uten å trenge tillatelsen Planer rediger. Redaktører med rollen Planer rediger kan administrere planer på tvers av alle ministerier.
+Du trenger ikke full administratortilgang for å administrere planer. Alle som er medlem av et tjenesteområde, kan gå til Tjeneste og opprette, redigere og sette opp planer for sitt eget tjenesteområde uten å trenge tillatelsen Rediger planer. Redaktører med rollen Rediger planer kan administrere planer på tvers av alle tjenesteområder.
 :::
 
-## Opprett en plan
+## Opprette en plan
 
-1. Fra plantypvisningen klikker du **Ny plan**.
-2. Gi planen et navn eller bruk datoen som navn. Velg **datoen** for tjenesten.
-3. Hvis du vil kopiere fra en tidligere plan, velger du bare stillinger eller stillinger og tildelinger. Hvis du ikke vil kopiere, velger du ingenting. Du kan også kopiere tjenesterekkefølgen fra forrige plan.
-4. Lagre planen. Du kan nå begynne å tildele lagmedlemmer og bygge ut [tjenesterekkefølgen](./service-order.md).
+1. Klikk på **Ny plan** i plantypevisningen.
+2. Gi planen et navn, eller bruk datoen som navn. Velg **dato** for gudstjenesten.
+3. Hvis du vil kopiere fra en tidligere plan, velger du bare posisjoner eller posisjoner og tildelinger. Hvis du ikke vil kopiere, velger du ingenting. Du kan også kopiere gudstjenesteforløpet fra den forrige planen min.
+4. Lagre planen. Nå kan du begynne å tildele teammedlemmer og bygge opp [gudstjenesteforløpet](./service-order.md).
 
-## Siden med plandetaljer
+## Plandetaljsiden
 
-Når du åpner en plan, vil du se to faner:
+Når du åpner en plan, ser du to faner:
 
-- **Tildelinger** -- Administrer hvilke lagmedlemmer som er tildelt denne planen. Du kan legge til mennesker fra dine eksisterende lag og se hvem som har bekreftet eller fortsatt venter.
-- **[Tjenesterekkefølge](./service-order.md)** -- Bygge ut tjenesterekkefølgen med elementer som tilbedelseissanger, bønner, kunngjøringer og preken.
+- **Tildelinger** -- Administrer hvilke teammedlemmer som er tildelt denne planen. Du kan legge til personer fra eksisterende lag og se hvem som har bekreftet, og hvem som fortsatt venter.
+- **[Gudstjenesteforløp](./service-order.md)** -- Bygg opp gudstjenesteforløpet med elementer som lovsanger, bønner, kunngjøringer og prekenen.
 
-## Tildelning av lagmedlemmer
+## Tildele teammedlemmer
 
 1. Åpne en plan og gå til fanen **Tildelinger**.
-2. Klikk på **legg til stilling** for å utvide den. Fyll ut informasjonen i skjemaet for å legge til en stilling. For kategorinavn legger du til hvilken som helst kategori du ønsker.
-3. Klikk på **Mennesker trengs** og velg frivillige for å fylle den stillingen. Hvis stillingen har en **Frivillighetsgruppe**, velger du fra medlemmene i den gruppen. Hvis frivillighetsgruppen er satt til **Ingen**, kan du i stedet søke etter hvem som helst i kirken.
-4. Legg til medlemmer fra lagrullen ved å klikke **Legg til**.
+2. Klikk på **Legg til posisjon** for å utvide den. Fyll ut opplysningene i skjemaet for å legge til en posisjon. Som kategorinavn kan du skrive hvilken kategori du vil. For at hvem som helst i menigheten skal kunne fylle posisjonen (ikke bare medlemmer av ett lag), lar du **Frivilliggruppe** stå på **Ingen**.
+3. Klikk på **Personer som trengs** og velg frivillige til å fylle posisjonen. Hvis posisjonen har en **frivilliggruppe**, velger du blant medlemmene i den gruppen. Hvis frivilliggruppen er satt til **Ingen**, kan du i stedet søke etter hvem som helst i menigheten.
+4. Legg til medlemmer fra lagets liste ved å klikke på **Legg til**.
 5. Tildelte medlemmer vises under laget sitt med tildelingsstatus.
-6. Klikk varsel frivillige for å varsle dem i B1-appen eller via e-post.
+6. Klikk på varsle frivillige for å varsle dem i B1-appen eller via e-post.
 
-Hver stilling viser en tellemerke (for eksempel "2/3") slik at du kan se hvor mange plasser som er fylt på et øyeblikk. Øverst på fanen Tildelinger viser en fremdriftslinje og et oppsummering-merke ("X av Y stillinger fylt") det samlede bemanningen for planen, og bytter til **Fullt bemannet** når hver stilling er dekket.
+Hver posisjon viser en teller (for eksempel «2/3») slik at du ser hvor mange plasser som er fylt med et øyekast. Øverst i fanen Tildelinger viser en fremdriftslinje og en oppsummering («X av Y posisjoner fylt») den samlede bemanningen for planen. Den bytter til **Fullt bemannet** så snart alle posisjoner er dekket.
 
 :::tip
-Sett opp lagene dine i ministeriuminnstillingene før du oppretter planer. På denne måten vil du ha en klar pool med frivillige å tildele fra.
+Sett opp lagene dine i innstillingene for tjenesteområdet før du oppretter planer. Da har du en ferdig gruppe frivillige å tildele fra.
 :::
 
 ## Planinnstillinger
 
-Hver plan har tillegginnstillinger du kan konfigurere ved å klikke redigeringsikonet (blyant) på planen. Disse inkluderer:
+Hver plan har flere innstillinger du kan konfigurere ved å klikke på redigeringsikonet (blyanten) på planen. Disse omfatter:
 
-- **Påmelding-fristen** — antall timer før tjenesten når frivilligpåmeldinger lukkes. Skriv inn et negativt tall for å holde påmeldinger åpne etter tjenestens starttid.
-- **Vis frivilligens navn på påmeldingssiden** — når den er avkrysset, kan frivillige se hvem annet som allerede har meldt seg på for hver stilling.
-- **Satt i blyant** — skjuler tildelinger fra frivillige til du er klar til å publisere planen.
-- **Planlegge automatisk en erstatning når en frivillig avslår** — når den er avkrysset, hvis en tildelt frivillig avslår posisjonen, vil B1 automatisk kontakte neste tilgjengelige person på lagkullrullen og spørre om de kan tjene. Dette fortsetter ned i listen til noen godtar, og holder stillingene dine fylte uten manuell oppfølging.
+- **Påmeldingsfrist** — antall timer før gudstjenesten når påmeldingen for frivillige stenger. Skriv inn et negativt tall for å holde påmeldingen åpen etter at gudstjenesten har startet.
+- **Vis navn på frivillige på påmeldingssiden** — når dette er avkrysset, kan frivillige se hvem andre som allerede er påmeldt hver posisjon.
+- **Foreløpig** — skjuler tildelinger for frivillige til du er klar til å publisere timeplanen.
+- **Sett automatisk opp en erstatter når en frivillig takker nei** — når dette er avkrysset, kontakter B1 automatisk den neste tilgjengelige personen på lagets liste og spør om vedkommende kan tjenestegjøre hvis en tildelt frivillig takker nei til posisjonen sin. Dette fortsetter nedover listen til noen sier ja, slik at posisjonene dine holdes fylt uten manuell oppfølging.
 
-## Frivilligs påminnelser
+## Påminnelser til frivillige
 
-B1 kan automatisk påminne frivillige før tjenestene de er planlagt for, slik at du ikke må jakte på laget ditt hver uke. Påminnelser går til **alle planlagte** — både de som har bekreftet og de som ikke har svart ennå — via e-post og som en app-/push-varsling. Hver påminnelse inkluderer frivilligens stilling(er), tjenestdatoen, plannotatene og den egendefinerte meldingen.
+B1 kan automatisk minne frivillige på gudstjenestene de er satt opp til, slik at du slipper å jage laget ditt hver uke. Påminnelser sendes til **alle som er satt opp** -- både de som har bekreftet og de som ikke har svart ennå -- på e-post og som varsel i appen/push. Hver påminnelse inneholder den frivilliges posisjon(er), gudstjenestedatoen, plannotatene og din egen melding.
 
-Påminnelses-timing og innhold angis per **plantype**, slik at hver slags tjeneste kan ha sitt eget skjema.
+Tidspunkt og innhold for påminnelser angis per **plantype**, slik at hver type gudstjeneste kan ha sin egen tidsplan.
 
-1. Fra **Tjeneste**-området velger du ministeriet som inneholder plantypen.
-2. Klikk på **redigeringsikonet (blyant)** ved siden av plantypen.
+1. Velg tjenesteområdet som inneholder plantypen, fra **Tjeneste**-området.
+2. Klikk på **redigeringsikonet (blyanten)** ved siden av plantypen.
 3. I delen **Påminnelser** angir du:
-   - **Påminnelsesdager før tjeneste** — en kommadelt liste over hvor mange dager før du skal sende, for eksempel `7,1,0`. Bruk `0` for å sende påminnelse på dagen for tjenesten. La dette feltet være tomt for å slå av påminnelser for denne plantypen.
-   - **Egendefinert påminnelsesmelding** *(valgfritt)* — ekstra tekst lagt til påminnelsen, for eksempel "Ankomst 30 minutter tidlig for å øve."
+   - **Dager før gudstjenesten for påminnelse** — en kommaseparert liste over hvor mange dager i forveien påminnelsen skal sendes, for eksempel `7,1,0`. Bruk `0` for å sende en påminnelse på selve gudstjenestedagen. La feltet stå tomt for å slå av påminnelser for denne plantypen.
+   - **Egendefinert påminnelsesmelding** *(valgfritt)* — ekstra tekst som legges til i påminnelsen, for eksempel «Kom 30 minutter før for å øve.»
 4. Lagre plantypen.
 
-Nye plantyper påminner frivillige **2 dager før** hver tjeneste som standard til du endrer dette.
+Nye plantyper minner frivillige på **2 dager før** hver gudstjeneste som standard, helt til du endrer dette.
 
 :::tip
-Frivillige som ikke har bekreftet ennå får **Godta** og **Avslå** knapper direkte i påminnelses-e-posten, slik at de kan svare uten å logge inn.
+Frivillige som ikke har bekreftet ennå, får knappene **Godta** og **Avslå** rett i påminnelses-e-posten, slik at de kan svare uten å logge inn.
 :::
 
 :::info
-Hver påminnelse sendes en gang. Planer som fortsatt er satt i blyant (ikke ennå sendt til laget) utløser ikke påminnelser.
+Hver påminnelse sendes én gang. Planer som fortsatt er foreløpige (ikke sendt til laget ennå), utløser ikke påminnelser.
 :::
 
 ## Knytte grupper til en plantype
 
-Under plannisten på plantypesiden lar delen **Grupper** deg bestemme hvilke grupper som kan se planene for denne plantypen fra medlemsportalen. Dette er en rask måte å vise kommende tjenester for de rette lagene uten å gi dem administrator-tilgang.
+Under planlisten på plantypesiden lar delen **Grupper** deg bestemme hvilke grupper som kan se planene for denne plantypen fra medlemsportalen sin. Dette er en rask måte å gjøre kommende gudstjenester synlige for de riktige lagene uten å gi dem administratortilgang.
 
-1. På plantypesiden ruller du ned til delen **Grupper**.
-2. Klikk **Legg til gruppe** og velg en gruppe fra rullelisten.
-3. I kolonnen **Viser** velger du om medlemmer av den gruppen skal se **Tidligere**, **Fremtidtige** eller **Begge** planer for denne plantypen.
-4. Gjenta for å knytte flere grupper, eller klikk søppelkanikonet for å fjerne en gruppe.
-
-:::info
-Bare grupper som er merket som **Standard** vises i velgeren. Medlemmer av en tilknyttet gruppe ser automatisk denne plantypen sin planer på gruppesiden i B1-medlemsportalen — begrenset til tidligere/fremtidelige/begge-vinduet du valgte.
-:::
-
-Hvis planene er Lessons.church-leksjoner, ser medlemmer av den tilknyttede gruppen også et kort **Denne ukens leksjon** på gruppesiden (siste linje, vers og et spørsmål for foreldre). Knytt en foreldregruppe her og sett filteret til **Tidligere** slik at dagens leksjon er inkludert. Frivillige lag bruker typisk **Fremtidtige** eller **Begge**.
-
-## Utskrift av planer
-
-Du kan skrive ut en plan for distribusjon til laget ditt. Åpne planen, åpne tjenesterekkefølge-fanen og bruk **Skriv ut**-alternativet for å generere en utskrivbar versjon som inkluderer tildelinger og tjenesterekkefølgen. Dette er nyttig for utdeling på øvelser eller plassering i et felles område.
+1. Rull ned til delen **Grupper** på plantypesiden.
+2. Klikk på **Legg til gruppe** og velg en gruppe fra nedtrekksmenyen.
+3. I kolonnen **Viser** velger du om medlemmene i den gruppen skal se **tidligere**, **fremtidige** eller **begge** planer for denne plantypen.
+4. Gjenta for å knytte til flere grupper, eller klikk på søppelkasseikonet for å fjerne en gruppe.
 
 :::info
-Planer er organisert etter ministerium. Sørg for at du er på riktig ministerium-fane før du oppretter eller viser planer.
+Bare grupper merket som **Standard** vises i valglisten. Medlemmer av en tilknyttet gruppe ser automatisk planene for denne plantypen på gruppens side i B1-medlemsportalen -- begrenset til tidsvinduet du valgte (tidligere/fremtidige/begge).
 :::
 
-## Neste trinn
+Hvis planene er Lessons.church-leksjoner, ser medlemmer av den tilknyttede gruppen også et kort for **ukens leksjon** på gruppesiden (hovedbudskap, bibelvers og et spørsmål til foreldre). Knytt en foreldregruppe hit og sett filteret til **Tidligere**, slik at dagens leksjon tas med. Frivilliglag bruker vanligvis **Fremtidige** eller **Begge**.
 
-- Bruk [Planoversikten](./plans-overview.md) til å se alle kommende tildelinger over flere uker i ett rutenett og oppdage ufylte stillinger — og tildel frivillige direkte fra rutenettet
-- Lagre en plans struktur som en [planmal](./plan-templates.md) slik at du kan stemple det på fremtidsplaner på ett klikk
-- Bygge ut [tjenesterekkefølgen](./service-order.md) med sanger, lesinger og andre elementer
-- Legg til [sanger](./songs.md) fra biblioteket ditt direkte inn i tjenesterekkefølgen
-- Bruk [oppgaver](./tasks.md) til å tildele oppfølgingshandlinger til lagmedlemmer
-- Vis gjeldende leksjonsinnhold på en lobby-TV med [Digital skilting](./digital-signage.md)
+## Skrive ut planer
+
+Du kan skrive ut en plan som du kan dele ut til laget ditt. Åpne planen, åpne fanen for gudstjenesteforløp og bruk alternativet **Skriv ut** for å lage en utskriftsvennlig versjon som inneholder tildelinger og gudstjenesteforløpet. Øverst på utskriften står menighetens navn og planens navn, slik at løse sider er lette å kjenne igjen. Dette er nyttig å dele ut på øvelser eller henge opp på et felles sted.
+
+:::info
+Planer er organisert etter tjenesteområde. Kontroller at du står på riktig tjenesteområdefane før du oppretter eller viser planer.
+:::
+
+## Neste steg
+
+- Bruk [Planoversikt](./plans-overview.md) for å se alle kommende tildelinger over flere uker i ett rutenett og oppdage ubesatte posisjoner -- og tildel frivillige direkte fra rutenettet
+- Lagre strukturen til en plan som en [plansmal](./plan-templates.md) slik at du kan bruke den på fremtidige planer med ett klikk
+- Bygg opp [gudstjenesteforløpet](./service-order.md) med sanger, tekstlesninger og andre elementer
+- Legg til [sanger](./songs.md) fra biblioteket ditt direkte i gudstjenesteforløpet
+- Bruk [Oppgaver](./tasks.md) for å tildele oppfølgingsoppgaver til teammedlemmer
+- Vis gjeldende leksjonsinnhold på en TV i foajeen med [digital skilting](./digital-signage.md)

@@ -1,209 +1,225 @@
 ---
-title: "Arbeitsabläufe"
+title: "Workflows"
 ---
 
-# Arbeitsabläufe
+# Workflows
 
 <div class="article-intro">
 
-Arbeitsabläufe führen Menschen durch eine Reihe von Schritten auf einer visuellen Tafel. Jede Person wird zu einer Karte, die von einem Schritt zum nächsten wandert – von einer Nachfassung für erstmalige Besucher über einen Mitgliedschaftsprozess bis hin zu einer Dankbarkeit für erstmalige Spender und alles andere, wo du viele Menschen durch die gleichen Stufen verfolgst. Ein Schritt kann einen Freiwilligen bitten, etwas zu tun (anrufen, ein Gespräch führen) **und** automatisierte Aktionen ausführen – eine E-Mail senden, ein paar Tage warten, die Person zu einer Gruppe hinzufügen – damit Arbeitsabläufe sowohl die menschliche Nachfassung als auch die Routineaufgaben erledigen. Arbeitsabläufe erweitern [Aufgaben](./tasks.md) zu einer Drag-and-Drop-Kanban-Tafel, damit niemand durch die Ritzen fällt.
+Workflows bewegen Personen durch eine Reihe von Schritten auf einer visuellen Tafel. Jede Person wird zu einer Karte, die von einem Schritt zum nächsten wandert – von der Verfolgung von Ersttäufigen bis hin zu einem Mitgliedschaftsprozess, von Dankesschreiben an Ersttäter bis hin zu allem anderen, bei dem Sie viele Menschen durch denselben Satz von Stufen verfolgen müssen. Ein Schritt kann einen Freiwilligen auffordern, etwas zu tun (einen Anruf zu tätigen, ein Gespräch zu führen) **und** automatisierte Aktionen auf eigene Faust ausführen – eine E-Mail oder SMS senden, ein paar Tage warten, die Person zu einer Gruppe hinzufügen – damit Workflows sowohl die menschliche Verfolgung als auch die damit verbundene Routinearbeit übernehmen. Workflows erweitern [Tasks](./tasks.md) in ein Drag-and-Drop-Kanban-Board, damit nichts und niemand verloren geht.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor du anfängst</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Stelle sicher, dass die Personen, die du verfolgen möchtest, in B1 Admin vorhanden sind
-- Mache dich damit vertraut, wie [Aufgaben](./tasks.md) funktionieren, da jede Karte auf einer Tafel eine Aufgabe ist
-- Um die Aktion **E-Mail senden** zu verwenden, erstelle zunächst die E-Mail-Vorlagen, die du senden möchtest (verwaltet unter **Messaging → Vorlagen verwalten**)
-- Du benötigst die entsprechende Berechtigung für Aufgaben. Das Anzeigen, Bearbeiten von Karten und das Verwalten von Arbeitsabläufen sind separate Berechtigungsstufen (siehe [Rollen & Berechtigungen](../settings/roles-permissions.md))
+- Stellen Sie sicher, dass die Personen, die Sie verfolgen möchten, in B1 Admin existieren
+- Machen Sie sich vertraut, wie [Tasks](./tasks.md) funktionieren, da jede Karte auf der Tafel eine Task ist
+- Um die **E-Mail senden** Aktion zu verwenden, erstellen Sie zunächst die E-Mail-Vorlagen, die Sie senden möchten (verwaltet unter **Messaging → Manage Templates**)
+- Um die **Text senden** Aktion zu verwenden, verbinden Sie zuerst einen [Texting-Anbieter](../settings/church-settings.md#texting)
+- Sie benötigen die entsprechende Tasks-Berechtigung. Das Anzeigen, Bearbeiten von Karten und das Verwalten von Workflows sind separate Berechtigungsstufen (siehe [Rollen & Berechtigungen](../settings/roles-permissions.md))
 
 </div>
 
-## Arbeitsabläufe anzeigen
+## Workflows anzeigen
 
-Navigiere zu **Dienstleistung** und wähle **Arbeitsabläufe** aus dem Menü. Du siehst deine Arbeitsabläufe aufgelistet und nach Kategorie gruppiert, wobei aktive Arbeitsabläufe hervorgehoben sind. Klicke auf einen Arbeitsablauf, um seine Tafel zu öffnen.
+Öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links in B1 Admin), erweitern Sie **Serving** und klicken Sie auf **Workflows**. Sie sehen Ihre Workflows aufgelistet und nach Kategorie gruppiert, wobei aktive Workflows hervorgehoben werden. Klicken Sie auf einen Workflow, um sein Board zu öffnen.
 
-## Einen Arbeitsablauf erstellen
+## Einen Workflow erstellen
 
-1. Klicke auf der Seite Arbeitsabläufe auf **Arbeitsablauf hinzufügen**.
-2. Wähle aus, wie du anfangen möchtest:
-   - **Leerer Arbeitsablauf** – starten Sie von vorne und bauen Sie Ihre eigenen Schritte auf.
-   - **Aus einer Vorlage** – beginne mit einem vorgefertigten Satz von Schritten, den du bearbeiten kannst. Integrierte Vorlagen umfassen:
-     - **Nachbearbeitung für neue Besucher** – Willkommensmitteilung senden → Persönlicher Anruf → Zum nächsten Schritt einladen → Verbunden
-     - **Mitgliedschaftsklasse** – Interesse ausdrücken → Zur Klasse anmelden → Klasse besuchen → Mitgliedschaft abschließen
-     - **Danksagung für erstmalige Spender** – Danksagung senden → Spendenwirkung teilen → Verwaltet
-3. Gib dem Arbeitsablauf einen **Namen**.
-4. Weise optional eine **Kategorie** zu, um verwandte Arbeitsabläufe zu gruppieren. Du kannst direkt aus dem Dropdown eine neue Kategorie erstellen.
-5. Lasse den Arbeitsablauf **Aktiv**, damit Personen hinzugefügt werden können, oder setze ihn auf **Inaktiv**, um ihn aus den Arbeitsablauf-Hinzufügungslisten auszublenden.
-6. Klicke auf **Speichern**.
+1. Klicken Sie auf der Workflows-Seite auf **Add Workflow**.
+2. Wählen Sie, wie Sie beginnen möchten:
+   - **Blank workflow** – von Grund auf beginnen und Ihre eigenen Schritte erstellen.
+   - **From a template** – mit einem vorgefertigten Satz von Schritten beginnen, den Sie bearbeiten können. Integrierte Vorlagen sind:
+     - **New Visitor Follow-up** – Willkommens-E-Mail senden → Persönlicher Telefonanruf → Zu nächstem Schritt einladen → Verbunden
+     - **Membership Class** – Interesse bekunden → Sich für Klasse anmelden → Klasse besuchen → Mitgliedschaft abschließen
+     - **First-time Giver Thank-you** – Dankesschreiben senden → Auswirkungen von Spenden teilen → Verwaltet
+3. Geben Sie dem Workflow einen **Namen**.
+4. Weisen Sie optional eine **Category** zu, um verwandte Workflows zu gruppieren. Sie können eine neue Kategorie direkt in der Dropdown-Liste erstellen.
+5. Lassen Sie den Workflow **Active**, damit Personen hinzugefügt werden können, oder stellen Sie ihn auf **Inactive**, um ihn aus den Add-to-Workflow-Listen auszublenden.
+6. Klicken Sie auf **Save**.
 
 :::tip
-Nutze die Schaltfläche **Duplizieren** in der Arbeitsabläufe-Liste, um einen bestehenden Arbeitsablauf zu kopieren – einschließlich seiner Schritte, automatisierten Aktionen und Weiterleitung – als Ausgangspunkt für einen neuen Arbeitsablauf.
+Verwenden Sie die **Duplicate**-Schaltfläche in der Workflows-Liste, um einen vorhandenen Workflow zu kopieren – einschließlich seiner Schritte, automatisierten Aktionen und Routing – als Ausgangspunkt für einen neuen.
 :::
 
 ## Die Tafel mit Schritten erstellen
 
-Jede Arbeitsablauf-Tafel besteht aus **Schritten**, die von links nach rechts als Spalten angezeigt werden. Öffne einen Arbeitsablauf und verwende **Schritt hinzufügen**, um jede Phase deines Prozesses zu erstellen.
+Jedes Workflow-Board besteht aus **Schritten**, die als Spalten von links nach rechts angezeigt werden. Öffnen Sie einen Workflow und verwenden Sie **Add Step**, um jede Stufe Ihres Prozesses zu erstellen.
 
-Wenn du einen Schritt hinzufügst oder bearbeitest, kannst du konfigurieren:
+Wenn Sie einen Schritt hinzufügen oder bearbeiten, können Sie Folgendes konfigurieren:
 
-- **Schrittname** – die Spaltenüberschrift (z. B. „Willkommensanruf" oder „Wartet auf Anmeldung").
-- **Fällig in (Tage)** – legt automatisch ein Fälligkeitsdatum fest, wenn eine Karte diesen Schritt betritt. Karten, die nach ihrem Fälligkeitsdatum liegen, werden als **Überfällig** gekennzeichnet.
-- **Standard-Bearbeiter** – die Person oder Gruppe, der neue Karten in diesem Schritt automatisch zugewiesen werden.
-- **Automatisierte Aktionen** – Dinge, die das System von selbst tut, wenn eine Karte ankommt (siehe unten).
-- **Weiterleitung** – wohin die Karte geht, wenn sie den Schritt verlässt (siehe [Routing](#routing-cards-with-outcomes-and-conditions)).
+- **Step Name** – die Spaltenüberschrift (z. B. "Welcome Call" oder "Awaiting Registration").
+- **Due in (days)** – legt automatisch ein Fälligkeitsdatum fest, wenn eine Karte diesen Schritt betritt. Karten, deren Fälligkeitsdatum überschritten ist, werden als **Overdue** gekennzeichnet.
+- **Default assignee** – die Person oder Gruppe, der neue Karten in diesem Schritt automatisch zugewiesen werden.
+- **Automated actions** – Dinge, die das System von selbst tut, wenn eine Karte ankommt (siehe unten).
+- **Routing** – wohin die Karte geht, wenn sie den Schritt verlässt (siehe [Routing](#routing-cards-with-outcomes-and-conditions)).
 
-Ziehe Schrittspalten in die Reihenfolge, die deinen Prozess entspricht. Die Reihenfolge definiert auch den Standardweg, den eine Karte nimmt, wenn keine andere Weiterleitung zutrifft.
+Ziehen Sie Schrittsspalten in die Reihenfolge, die Ihrem Prozess entspricht. Die Reihenfolge definiert auch den Standardpfad, den eine Karte nimmt, wenn kein anderes Routing gilt.
 
 :::info
-Speichere zunächst einen neuen Schritt. Automatisierte Aktionen und Weiterleitung sind an den Schritt gebunden, daher entsperrt der Editor diese Bereiche, sobald der Schritt vorhanden ist.
+Speichern Sie zunächst einen neuen Schritt. Automatisierte Aktionen und Routing sind an den Schritt gebunden, daher werden diese Abschnitte entsperrt, sobald der Schritt vorhanden ist.
 :::
 
 ## Automatisierte Aktionen
 
-Jeder Schritt kann eine Liste von **automatisierten Aktionen** enthalten, die von selbst ablaufen, in dem Moment, in dem eine Karte **den Schritt betritt** – bevor jemand sie anfasst. So kann ein Schritt sowohl einen Freiwilligen auffordern *als auch* die Routineaufgaben rund um die Nachfassung erledigen.
+Jeder Schritt kann eine Liste von **automatisierten Aktionen** tragen, die sich selbst ausführen, in dem Moment, in dem eine Karte **in den Schritt eintritt** – bevor jemand sie anrührt. Auf diese Weise können Sie in einem Schritt sowohl einen Freiwilligen auffordern *als auch* die Routinearbeit um die Verfolgung übernehmen.
 
-Öffne im Schritt-Editor **Automatisierte Aktionen**, klicke auf **Aktion hinzufügen**, wähle einen Typ, fülle seine Einstellungen aus und klicke auf das Speichersymbol für diese Aktion. Füge so viele hinzu wie nötig; sie werden **von oben nach unten der Reihe nach** ausgeführt.
+Öffnen Sie im Schritt-Editor **Automated actions**, klicken Sie auf **Add Action**, wählen Sie einen Typ, füllen Sie seine Einstellungen aus und klicken Sie auf das Speichersymbol für diese Aktion. Fügen Sie so viele hinzu, wie Sie benötigen; sie werden **von oben nach unten der Reihe nach** ausgeführt.
 
-| Aktion | Was sie tut |
+| Action | Was es tut |
 |---|---|
-| **E-Mail senden** | Sendet der Person eine von dir gewählte E-Mail-Vorlage. Du kannst die Betreffzeile überschreiben. |
-| **Warten** | Pausiert die Karte für eine Anzahl von Tagen, bevor es weitergeht (siehe unten). |
-| **Zur Gruppe hinzufügen** | Fügt die Person zu einer [Gruppe](../groups/index.md), die du auswählst, hinzu. |
-| **Zu Arbeitsablauf hinzufügen** | Startet die Person mit einem anderen Arbeitsablauf – nützlich zum Übergeben zwischen Prozessen. |
-| **Notiz hinzufügen** | Zeichnet eine Notiz in der Historie der Karte auf. |
-| **Feld einstellen** | Aktualisiert ein Feld in der Personenakte: Mitgliedschaftsstatus, Familienstand, Geschlecht, Stadt, Bundesland oder Postleitzahl. |
-| **Webhook** | Sendet die Details der Karte an eine externe Webadresse (URL), die du zur Verbindung mit anderen Systemen angibst. |
+| **Send email** | Sendet der Person eine E-Mail-Vorlage, die Sie auswählen. Sie können die Betreffzeile überschreiben. |
+| **Send text** | Sendet der Person eine von Ihnen geschriebene Nachricht per Text über den [Texting-Anbieter](../settings/church-settings.md#texting) Ihrer Kirche. |
+| **Wait** | Pausiert die Karte für eine bestimmte Anzahl von Tagen, bevor sie fortfährt (siehe unten). |
+| **Add to group** | Fügt die Person zu einer [Gruppe](../groups/index.md) hinzu, die Sie auswählen. |
+| **Remove from group** | Entfernt die Person aus einer Gruppe, die Sie auswählen. |
+| **Add to workflow** | Startet die Person auf einem anderen Workflow – nützlich für die Übergabe zwischen Prozessen. |
+| **Add note** | Notiert sich eine Notiz in der Verlaufshistorie der Karte. |
+| **Set field** | Aktualisiert ein Feld in der Personenakte: Membership Status, Marital Status, Gender, City, State oder Zip. |
+| **Webhook** | Sendet die Details der Karte an eine externe Web-Adresse (URL), die Sie bereitstellen, um eine Verbindung zu anderen Systemen herzustellen. |
+| **Create task** | Erstellt eine [Task](./tasks.md) mit dem Titel und der Beschreibung, die Sie eingeben, zugewiesen an die Person, die Sie auswählen. |
 
-Nachdem alle Aktionen eines Schritts abgeschlossen sind, **ruht die Karte auf dem Schritt**, damit eine Person sie bearbeiten kann – es sei denn, der Schritt hat eine automatische Route, die sie weiterleitet (siehe [Vollständig automatisierte Schritte](#fully-automated-steps)).
+Nachdem alle Aktionen eines Schritts abgeschlossen sind, **ruht die Karte auf diesem Schritt**, damit eine Person daran arbeiten kann – es sei denn, der Schritt hat ein automatisches Routing, das sie vorwärts bewegt (siehe [Vollständig automatisierte Schritte](#fully-automated-steps)).
 
 :::info
-Automatisierte Aktionen werden nur ausgeführt, wenn eine Karte durch den normalen Fluss ankommt – wenn sie zuerst hinzugefügt wird, wenn ein Ergebnis oder eine automatische Route sie hereinbringt oder nachdem ein Warten endet. Sie werden **nicht erneut ausgeführt**, wenn ein Mitarbeiter eine Karte manuell auf den Schritt zieht oder zurücksendet, daher erhält eine Person nicht zweimal die gleiche E-Mail.
+Automatisierte Aktionen werden nur ausgeführt, wenn eine Karte durch den normalen Fluss ankommt – wenn sie zuerst hinzugefügt wird, wenn ein Ergebnis oder ein automatisches Routing sie hineinbringt, oder nachdem eine Wartezeit endet. Sie werden **nicht** erneut ausgeführt, wenn ein Mitarbeiter eine Karte manuell auf den Schritt zieht oder sie zurücksendet, daher erhält eine Person nicht zwei Mal die gleiche E-Mail.
 :::
 
 ### E-Mail senden
 
-Wähle **E-Mail senden**, wähle eine deiner E-Mail-Vorlagen und tippe optional ein benutzerdefiniertes Betreff ein. Wenn eine Karte den Schritt betritt, erhält die Person automatisch diese E-Mail. (Wenn die Person keine E-Mail-Adresse in der Datei hat, überspringt der Schritt diese Aktion einfach.)
+Wählen Sie **Send email**, wählen Sie eine Ihrer E-Mail-Vorlagen und geben Sie optional einen benutzerdefinierten Betreff ein. Wenn eine Karte in den Schritt eintritt, erhält die Person diese E-Mail automatisch. (Wenn die Person keine E-Mail-Adresse in der Datei hat, überspringt der Schritt einfach diese Aktion.) [Merge Fields](../settings/email-templates.md#merge-fields) in der Vorlage, wie `{{firstName}}`, werden mit den eigenen Details der Person gefüllt.
 
 :::info
-Arbeitsablauf-E-Mails werden nur versendet, nachdem deine Kirche zum Versand von Gruppen-E-Mails genehmigt wurde, und sie zählen zum täglichen E-Mail-Limit deiner Kirche. Siehe [Aktivierung von Gruppen-E-Mail für deine Kirche](../groups/group-members.md#turning-on-group-email-for-your-church).
+Workflow-E-Mails werden nur versendet, nachdem Ihre Kirche für den Versand von Gruppen-E-Mails genehmigt wurde, und sie zählen zu Ihrem täglichen E-Mail-Limit der Kirche. Siehe [Aktivieren von Gruppen-E-Mails für Ihre Kirche](../groups/group-members.md#turning-on-group-email-for-your-church).
+:::
+
+### Einen Text senden
+
+Wählen Sie **Send Text** und geben Sie die **Text message** ein (bis zu 1.600 Zeichen). Wenn eine Karte in den Schritt eintritt, erhält die Person diesen Text auf ihrem Mobiltelefon. Sie können die Nachricht mit `{{firstName}}`, `{{lastName}}`, `{{displayName}}` oder `{{churchName}}` personalisieren, die mit den Details der Person gefüllt werden, wenn der Text gesendet wird.
+
+- Wenn die Person keine Mobiltelefonnummer in der Datei hat, wird die Aktion übersprungen.
+- Wenn die Person sich abgemeldet hat, wird kein Text gesendet und der Verlauf der Karte zeigt **Text skipped: opted out**.
+- Wenn der Text versendet wird, zeigt der Verlauf der Karte **Text sent**. Wenn der Versand fehlschlägt – zum Beispiel, weil kein Texting-Anbieter verbunden ist oder Ihre Kirche nicht genügend Texting-Gutschriften hat – wird der Fehler im Verlauf der Karte protokolliert und die restlichen Aktionen des Schritts werden immer noch ausgeführt.
+
+:::warning
+Texte werden über den [Texting-Anbieter](../settings/church-settings.md#texting) Ihrer Kirche versendet. Wenn kein Anbieter verbunden ist, warnt der Action-Editor *"No texting provider is set up"* und Texte werden nicht versendet.
 :::
 
 ### Ein paar Tage warten (Drip-Sequenzen)
 
-Die Aktion **Warten** hält eine Karte für die Anzahl der Tage an, die du festlegst. Während es wartet, wird die Karte als **Schlummend** angezeigt. Wenn das Warten vorbei ist:
+Die **Wait** Aktion hält eine Karte für die Anzahl der von Ihnen festgelegten Tage. Während des Wartens zeigt die Karte **Snoozed**. Wenn die Wartezeit vorbei ist:
 
-1. Alle **verbleibenden Aktionen auf dem gleichen Schritt** werden ausgeführt – damit du einen Drip wie **E-Mail senden → 3 Tage warten → Erinnerungs-E-Mail senden** erstellen kannst.
-2. Dann, wenn der Schritt eine automatische Route hat, wird die Karte weiterleitet; sonst ruht sie auf dem Schritt, damit eine Person sie aufgreift.
+1. Alle **verbleibenden Aktionen in demselben Schritt** werden ausgeführt – damit Sie einen Drip wie **E-Mail senden → 3 Tage warten → Eine Erinnerungs-E-Mail senden** erstellen können.
+2. Wenn der Schritt dann ein automatisches Routing hat, wechselt die Karte; andernfalls bleibt sie im Schritt, damit eine Person sie aufgreift.
 
 :::tip
-Ein **Warten** ganz am Anfang eines Schritts ist eine einfache Möglichkeit, eine Karte zu "halten", bevor sie einem Freiwilligen angezeigt wird – zum Beispiel, *7 Tage warten, dann kontaktiert dich ein Coach*.
+Eine **Wait** am ganz Anfang eines Schritts ist eine einfache Möglichkeit, eine Karte zu "halten", bevor sie an einen Freiwilligen weitergeleitet wird – zum Beispiel, *Warten Sie 7 Tage, dann kontaktiert ein Coach Sie*.
 :::
 
-## Menschen als Karten hinzufügen
+## Personen als Karten hinzufügen
 
-Es gibt mehrere Möglichkeiten, Menschen auf eine Tafel zu bringen:
+Es gibt mehrere Möglichkeiten, Personen auf ein Board zu bringen:
 
-- **Vom Board** – Klicke auf **Karte hinzufügen** am unteren Ende einer Schrittspalte und wähle eine Person. Du kannst auch eine Gruppe auswählen, und jedes Mitglied dieser Gruppe wird als Karte hinzugefügt.
-- **Aus dem Personensatz** – Nutze **Zu Arbeitsablauf hinzufügen** auf der Seite einer Person, um sie auf einen Arbeitsablauf zu setzen.
-- **Aus der Personensuche** – Wähle mehrere Personen aus und nutze die Sammelaktion **Zu Arbeitsablauf hinzufügen**, um sie alle gleichzeitig hinzuzufügen.
-- **Automatisch mit einem Auslöser** – Füge Menschen hinzu, wenn etwas passiert, wie eine Formulareinreichung oder ein erstes Geschenk (siehe [Auslöser](#triggers) unten).
+- **From the board** – Klicken Sie auf **Add Card** am unteren Ende einer Schritt-Spalte und wählen Sie eine Person. Sie können auch eine Gruppe auswählen, und jedes Mitglied dieser Gruppe wird als Karte hinzugefügt.
+- **From a person's record** – Verwenden Sie **Add to Workflow** auf der Seite einer Person, um sie auf einen Workflow zu legen.
+- **From People search** – Wählen Sie mehrere Personen aus und verwenden Sie die Bulk-Aktion **Add to Workflow**, um sie alle auf einmal hinzuzufügen.
+- **Automatically with a trigger** – Fügen Sie Personen hinzu, wenn etwas passiert, z. B. eine Formularübermittlung oder ein erstes Geschenk (siehe [Triggers](#triggers) unten).
 
-## Die Tafel bearbeiten
+## Die Tafel arbeiten
 
-Öffne einen Arbeitsablauf, um seine Tafel zu sehen. Jede Karte zeigt den Namen der Person, wem sie zugewiesen ist, und einen Fälligkeitstermin oder Status-Chip (**Überfällig** oder **Schlummend**). Eine Schrittspalte zeigt auch kleine Abzeichen für alle automatisierten Aktionen, die sie ausführt, und Anmerkungen für ihre Weiterleitung, was dir einen schnellen Überblick darüber gibt, wie Karten fließen.
+Öffnen Sie einen Workflow, um sein Board zu sehen. Jede Karte zeigt den Namen der Person, dem die Karte zugewiesen ist, und ein Fälligkeitsdatum oder Status-Chip (**Overdue** oder **Snoozed**). Eine Schrittsspalte zeigt auch kleine Abzeichen für alle automatisierten Aktionen, die sie ausführt, und Anmerkungen für sein Routing, was Ihnen eine Übersichtskarte darüber gibt, wie Karten fließen.
 
-- **Eine Karte verschieben** – Ziehe eine Karte von einer Spalte zur nächsten, während die Person voranschreitet.
-- **Eine Karte öffnen** – Doppelklicke auf eine Karte (oder klicke darauf), um ihr Detail-Drawer zu öffnen, in dem du den Schritt ändern, neu zuweisen, Notizen hinzufügen und überprüfen kannst, was bereits passiert ist.
+- **Move a card** – Ziehen Sie eine Karte von einer Spalte zur nächsten, während die Person vorwärts kommt.
+- **Open a card** – Doppelklicken Sie auf eine Karte (oder klicken Sie darauf), um ihre Detail-Schublade zu öffnen, in der Sie den Schritt ändern, sie neu zuweisen, Notizen hinzufügen und überprüfen können, was bereits passiert ist.
 
-Aus dem Karten-Drawer kannst du:
+Aus der Kartenschublade können Sie:
 
-- **Zuweisen** die Karte einer anderen Person oder Gruppe.
-- **Schlummern** die Karte für 1 Tag, 3 Tage oder 1 Woche, um sein Fälligkeitsdatum vorübergehend auszublenden.
-- **Zurücksendet** zum vorherigen Schritt oder **Überspringen** zum nächsten Schritt.
-- **Zuweisung fixieren** – behalte den gleichen Besitzer auf der Karte, auch wenn sie zwischen Schritten wandert. Standardmäßig wird eine Karte, die zu einem neuen Schritt verschoben wird, dem Standard-Bearbeiter dieses Schritts zugewiesen; Das Fixieren behält die aktuelle verantwortliche Person während des gesamten Prozesses bei.
-- **Fertigstellen** die Karte zum Abschluss oder wähle einen **Ergebnis**-Button, wenn der Schritt konfigurierte Ergebnisse hat (siehe [Routing](#routing-cards-with-outcomes-and-conditions)).
-- **Notizen hinzufügen** und die **Verlaufsverlauf** der Karte überprüfen – einschließlich eines Protokolls der automatisierten Aktionen, die ausgeführt wurden (gesendete E-Mails, Wartezeiten usw.).
+- **Assign** die Karte einer anderen Person oder Gruppe zuweisen.
+- **Snooze** die Karte für 1 Tag, 3 Tage oder 1 Woche, um ihr Fälligkeitsdatum vorübergehend auszublenden.
+- **Send Back** zum vorherigen Schritt oder **Skip** zum nächsten Schritt.
+- **Pin assignment** – behalte denselben Besitzer der Karte bei, während sie zwischen Schritten wechselt. Standardmäßig wird eine Karte auf einen neuen Schritt dem Standard-Bevollmächtigten des Schritts neu zugewiesen; das Anheften behält die aktuelle verantwortliche Person durchgehend bei.
+- **Complete** die Karte, um sie zu beenden, oder wählen Sie eine **Outcome**-Schaltfläche, wenn der Schritt Ergebnisse konfiguriert hat (siehe [Routing](#routing-cards-with-outcomes-and-conditions)).
+- **Add notes** und überprüfen Sie den **history** der Karte – einschließlich eines Protokolls von automatisierten Aktionen, die ausgeführt wurden (E-Mails versendet, Wartezeiten usw.).
 
-### Sammelaktionen
+### Massenaktionen
 
-Wähle die Kontrollkästchen auf mehreren Karten aus, um sie gemeinsam zu bearbeiten. Es wird eine Symbolleiste angezeigt, mit der du alle ausgewählten Karten gleichzeitig **Fertigstellen**, **Schlummern**, **Neu zuweisen** oder **Verschieben** kannst zu einem anderen Schritt.
+Wählen Sie die Kontrollkästchen auf mehreren Karten, um mit ihnen zusammen zu arbeiten. Eine Symbolleiste wird angezeigt, mit der Sie alle ausgewählten Karten auf einmal **Complete**, **Snooze**, **Reassign** oder **Move** zu einem anderen Schritt verschieben können.
 
 ## Routing-Karten mit Ergebnissen und Bedingungen
 
-Das Routing steuert, wohin eine Karte geht, wenn sie einen Schritt verlässt. Öffne den Editor eines Schritts, um zwei Arten von Routing zu konfigurieren.
+Routing kontrolliert, wohin eine Karte geht, wenn sie einen Schritt verlässt. Öffnen Sie den Editor eines Schritts, um zwei Arten von Routing zu konfigurieren.
 
-### Ergebnis-Buttons
+### Ergebnis-Schaltflächen
 
-Ergebnisse sind Buttons, die im Karten-Drawer angezeigt werden, wenn du eine Karte auf diesem Schritt fertigstellst. Anstelle eines einzelnen **Fertigstellen**-Buttons kannst du Optionen wie „Einer Gruppe beigetreten" oder „Nicht interessiert" anbieten. Jedes Ergebnis kann:
+Ergebnisse sind Schaltflächen, die in der Kartenschublade angezeigt werden, wenn Sie eine Karte in diesem Schritt fertig stellen. Anstelle einer einzelnen **Complete**-Schaltfläche können Sie Auswahlmöglichkeiten wie "Joined a Group" oder "Not Interested" anbieten. Jedes Ergebnis kann:
 
-- Die Karte zu **einem anderen Schritt** in diesem Arbeitsablauf senden,
-- **Die Karte an** einen völlig anderen Arbeitsablauf übergeben oder
-- **Die Karte schließen**.
+- die Karte zu **einem anderen Schritt** in diesem Workflow senden,
+- **die Karte übernehmen** auf einen vollständig anderen Workflow oder
+- **Schließe** die Karte.
 
-Dies ermöglicht, dass eine Entscheidung die Person verschiedene Pfade hinunter verzweigt.
+Dies ermöglicht es einer Entscheidung, die Person auf verschiedene Wege zu verzweigen.
 
 ### Automatisches Routing (bedingt)
 
-Automatische Routen verschieben eine Karte **in dem Moment, in dem sie einen Schritt betritt** (und nachdem ihre automatisierten Aktionen abgeschlossen sind), ohne dass jemand klickt, wenn die Person einem Satz von Bedingungen entspricht. Füge eine Route hinzu, wähle den Zielschritt und definiere eine oder mehrere **Bedingungen** (zum Beispiel den Campus einer Person, Alter oder Mitgliedschaftsstatus). Eine Route ohne Bedingungen passt zu jedem.
+Automatische Routen bewegen eine Karte vorwärts **in dem Moment, in dem sie einen Schritt betritt** (und nachdem ihre automatisierten Aktionen abgeschlossen sind), ohne dass jemand klickt, wenn die Person eine Reihe von Bedingungen erfüllt. Fügen Sie eine Route hinzu, wählen Sie den Zielschritt und definieren Sie eine oder mehrere **Bedingungen** (z. B. den Campus einer Person, das Alter oder den Mitgliedschaftsstatus). Eine Route ohne Bedingungen passt zu jedem.
 
 :::info
-Auf der Tafel zeigt jede Schrittspalte kleine Anmerkungen an, die ihre Weiterleitung beschreiben – zum Beispiel eine Ergebnis-Bezeichnung oder „wenn passt", gefolgt von einem Pfeil zum Zielschritt oder Arbeitsablauf.
+Auf der Tafel zeigt jede Schrittsspalte kleine Anmerkungen, die sein Routing beschreiben – zum Beispiel ein Ergebnis-Label oder "if matches" gefolgt von einem Pfeil zum Zielschritt oder Workflow.
 :::
 
 ## Vollständig automatisierte Schritte
 
-Du kannst einen Schritt völlig von selbst laufen lassen, ohne dass jemand ihn bearbeitet. Gib dem Schritt seine **automatisierten Aktionen** und füge eine **automatische Route** (ohne Bedingungen) ein, die auf den nächsten Schritt zeigt. Wenn eine Karte eintritt, werden die Aktionen ausgeführt, und dann leitet die Route sie sofort weiter – die Karte geht direkt durch.
+Sie können einen Schritt so einrichten, dass er sich vollständig von selbst abspielt, ohne dass jemand daran arbeitet. Geben Sie dem Schritt seine **automatisierten Aktionen** und fügen Sie ein **automatisches Routing** hinzu (ohne Bedingungen), das auf den nächsten Schritt zeigt. Wenn eine Karte eintritt, werden die Aktionen ausgeführt und dann der Routing-Fortsätze – die Karte geht direkt durch.
 
 :::tip
-Kombiniere dies mit **Warten**: *Willkommensmitteilung senden → 3 Tage warten → automatisch zum Schritt „Persönlicher Anruf" vorrücken.* Die E-Mail und das Timing werden für dich erledigt, und ein Freiwilliger sieht die Karte nur, wenn es Zeit für die menschliche Note ist.
+Kombinieren Sie dies mit **Wait**: *Willkommens-E-Mail senden → 3 Tage warten → automatisch zum Schritt "Personal Call" weitergeleitet.* Die E-Mail und die Zeitplanung werden für Sie übernommen, und ein Freiwilliger sieht die Karte nur, wenn es Zeit für den menschlichen Touch ist.
 :::
 
-## Auslöser
+## Trigger
 
-Auslöser fügen Menschen automatisch zu einem Arbeitsablauf hinzu, wenn etwas passiert, damit du Karten nie von Hand hinzufügen musst. Klicke auf einer Arbeitsablauf-Tafel auf die Registerkarte **Auslöser** und dann auf **Auslöser hinzufügen**. Es gibt zwei Arten:
+Trigger fügen Personen automatisch zu einem Workflow hinzu, wenn etwas passiert, sodass Sie nie Karten von Hand hinzufügen müssen. Klicken Sie auf einem Workflow-Board auf die Registerkarte **Triggers** und dann **Add Trigger**. Es gibt zwei Arten:
 
-### Event-Auslöser
+### Event-Trigger
 
-Feuern sofort, wenn sich ein Satz in B1 ändert. Wähle das Event und füge optional **Bedingungen** hinzu, damit nur übereinstimmende Personen hinzugefügt werden:
+Werden ausgelöst, sobald sich ein Datensatz in B1 ändert. Wählen Sie das Ereignis und fügen Sie optional **Bedingungen** hinzu, damit nur übereinstimmende Personen hinzugefügt werden:
 
-- **Person · Erstellt / Aktualisiert** – z. B. füge jeden hinzu, dessen Status *Besucher* wird.
-- **Spende · Erstellt** – z. B. füge ein erstmaliges oder großes Geschenk zu einem Dankbarkeits-Arbeitsablauf hinzu (passt auf Betrag, Fonds oder Methode).
-- **Gruppe · Mitglied beigetreten** / **Gruppe · Erstellt**.
-- **Formular · Eingereicht** – füge jeden hinzu, der ein ausgewähltes Formular einreicht (großartig für eine „Ich bin neu" oder „Verbindung" Karte).
+- **Person · Created / Updated** – z. B. jeden hinzufügen, dessen Status zu *Visitor* wird.
+- **Donation · Created** – z. B. einen ersten oder großen Geschenk zu einem Dankesschreiben-Workflow hinzufügen (nach Betrag, Fonds oder Methode abgleichen).
+- **Group · Member Joined** / **Group · Created**.
+- **Form · Submitted** – jeden hinzufügen, der ein ausgewähltes Formular einreicht (ideal für ein "I'm New" oder "Connect" Formular).
 
-### Zeitplan-Auslöser
+### Zeitplan-Trigger
 
-Laufe auf wiederkehrender Basis – täglich, wöchentlich, monatlich oder jährlich – gegen einen Satz von Bedingungen. Nutze diese für zeitbasierte Außenarbeit wie *jeder, dessen Mitgliedschaftsjubiläum heute ist* oder ein *monatliches* Check-in.
+Werden regelmäßig ausgeführt – täglich, wöchentlich, monatlich oder jährlich – gegen einen Satz von Bedingungen. Verwenden Sie diese für zeitbasierte Outreach wie *alle, deren Mitgliedschaftsjubiläum heute ist* oder ein *monatliches* Check-in.
 
-Für jeden Auslöser kannst du auch einstellen:
+Für jeden Trigger können Sie auch folgende Einstellungen vornehmen:
 
-- Der **Eintrittsschritt**, auf dem die neue Karte startet (standardmäßig der erste Schritt).
-- **Einmal pro Person** – daher wird die gleiche Person nicht zweimal durch den Auslöser zum Arbeitsablauf hinzugefügt.
-- **Aktiv** – schalte den Auslöser ein oder aus, ohne ihn zu löschen.
+- Der **entry step**, auf dem die neue Karte beginnt (standardmäßig der erste Schritt).
+- **Once per person** – damit dieselbe Person nicht zweimal vom Trigger zu dem Workflow hinzugefügt wird.
+- **Active** – Aktivieren oder deaktivieren Sie den Trigger, ohne ihn zu löschen.
 
 :::tip
-Paare einen **Formular · Eingereicht**-Auslöser mit der Vorlage **Nachbearbeitung für neue Besucher**, um dein „Verbindungskarte" oder „Ich bin neu"-Formular in eine automatische Nachbearbeitungs-Pipeline zu verwandeln.
+Kombinieren Sie einen **Form · Submitted**-Trigger mit der **New Visitor Follow-up**-Vorlage, um Ihr "Connect Card"- oder "I'm New"-Formular in eine automatische Verfolgungspipeline umzuwandeln.
 :::
 
 ## Meine Karten
 
-Freiwillige und Mitarbeiter müssen nicht jede Tafel durchsuchen, um ihre Arbeit zu finden. Die Seite **Meine Karten** (verlinkt von der Arbeitsabläufe-Seite) listet jede Karte, die dem aktuellen Benutzer zugewiesen ist, über alle Arbeitsabläufe hinweg auf. Durch Klicken auf eine Karte wird die Tafel geöffnet, der sie angehört.
+Freiwillige und Mitarbeiter müssen nicht durch jedes Board graben, um ihre Arbeit zu finden. Die Seite **My Cards** (verlinkt von der Workflows-Seite) listet alle Karten auf, die dem aktuellen Benutzer über alle Workflows hinweg zugewiesen sind. Wenn Sie auf eine Karte klicken, wird das Board geöffnet, zu dem sie gehört.
 
-## Berichte
+## Reports
 
-Öffne einen Arbeitsablauf und klicke auf **Berichte**, um Analysen für diesen Arbeitsablauf zu sehen:
+Öffnen Sie einen Workflow und klicken Sie auf **Reports**, um Analysen für diesen Workflow zu sehen:
 
-- **Überfällig** – die Anzahl der Karten nach ihrem Fälligkeitsdatum.
-- **Karten pro Schritt** – wie viele Karten derzeit auf jedem Schritt sitzen, als Säulendiagramm angezeigt.
-- **Fertiggestellt (30 Tage)** – Durchsatz in den letzten 30 Tagen, als Liniendiagramm angezeigt.
+- **Overdue** – die Anzahl der Karten, deren Fälligkeitsdatum überschritten ist.
+- **Cards per Step** – wie viele Karten sich derzeit auf jedem Schritt befinden, angezeigt als Säulendiagramm.
+- **Completed (30 days)** – Durchsatz über die letzten 30 Tage, angezeigt als Liniendiagramm.
 
-Nutze diese, um Engpässe zu finden – zum Beispiel einen Schritt, wo Karten aufgestapelt werden und nie vorrücken.
+Verwenden Sie diese, um Engpässe zu erkennen – zum Beispiel einen Schritt, in dem sich Karten ansammeln und nie weitergehen.
 
 ## Verwandte Artikel
 
-- [Aufgaben](./tasks.md) – die einzelnen Aktionselemente, auf denen Arbeitsablauf-Karten aufgebaut sind
-- [Formulare](../forms/index.md) – erstelle die Formulare, die Arbeitsabläufe auslösen können
-- [Gruppen](../groups/index.md) – die Gruppen, die eine "Zur Gruppe hinzufügen"-Aktion Menschen in platzieren kann
-- [Rollen & Berechtigungen](../settings/roles-permissions.md) – steuere, wer Arbeitsabläufe anzeigen, bearbeiten und verwalten kann
+- [Tasks](./tasks.md) – die einzelnen Aktionselemente, auf denen Workflow-Karten aufgebaut sind
+- [Forms](../forms/index.md) – erstellen Sie die Formulare, die Workflows auslösen können
+- [Groups](../groups/index.md) – die Gruppen, in die eine "Add to group"-Aktion Personen platzieren kann
+- [Rollen & Berechtigungen](../settings/roles-permissions.md) – kontrollieren Sie, wer Workflows anzeigen, bearbeiten und verwalten kann

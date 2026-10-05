@@ -6,78 +6,78 @@ title: "Revisjonslogg"
 
 <div class="article-intro">
 
-Revisjonsloggen sporer alle signifikante handlinger og endringer på tvers av kirkestyrssystemet ditt. Bruk det til å gjennomgå påloggingsaktivitet, spore hvem som gjorde endringer i personsposter, overvåke tillatelsesoppdateringer og opprettholde ansvarlighet på tvers av laget ditt.
+Revisjonsloggen registrerer alle viktige handlinger og endringer i menighetsadministrasjonssystemet. Bruk den til å gå gjennom påloggingsaktivitet, se hvem som har gjort endringer i personregistreringer, følge med på tillatelsesoppdateringer og sikre ansvarlighet i teamet.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- B1 Admin-konto med serveradministratoradgang
+- B1 Admin-konto med serveradministratortilgang
 - Gå til **Innstillinger** for å finne revisjonsloggen
 
 </div>
 
-## Visning av revisjonslogg
+## Vise revisjonsloggen
 
-1. Gå til **Innstillinger** i B1 Admin.
-2. Velg **Revisjonslogg**.
-3. Loggen viser nylige oppføringer i en tabell med følgende kolonner:
+1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre i B1 Admin) og utvid **Innstillinger**.
+2. Klikk på **Revisjonslogg**.
+3. Loggen viser de siste oppføringene i en tabell med følgende kolonner:
    - **Dato** -- Når handlingen skjedde.
-   - **Kategori** -- Typen handling (fargekodiert for rask skanning).
-   - **Handling** -- Hva som ble gjort (f.eks. opprett, oppdater, slett, login_success).
-   - **Enhet** -- Typen og ID-en til posten som ble påvirket.
+   - **Kategori** -- Typen handling (fargekodet for rask skanning).
+   - **Handling** -- Hva som ble gjort (f.eks. create, update, delete, login_success).
+   - **Enhet** -- Typen og ID-en til posten som ble berørt.
    - **IP-adresse** -- IP-adressen til brukeren som utførte handlingen.
-   - **Detaljer** -- Et sammendrag av de spesifikke endringene som ble gjort.
+   - **Detaljer** -- Et sammendrag av de konkrete endringene som ble gjort.
 
-## Filtrering av loggen
+## Filtrere loggen
 
-Bruk filtrene øverst på siden for å begrense resultatene:
+Bruk filtrene øverst på siden for å snevre inn resultatene:
 
 - **Kategori** -- Filtrer etter handlingstype:
   - **Alle kategorier** -- Vis alt.
-  - **Pålogging** -- Påloggingssuksesser og -feil.
-  - **Folk** -- Opprett, oppdater eller slett personsposter.
-  - **Tillatelser** -- Tillatelsestildelinger og -tilbakalinger.
-  - **Donasjoner** -- Donasjonpostendringer.
-  - **Grupper** -- Gruppeadministrasjonshandlinger.
-  - **Skjemaer** -- Skjemainnsendelsesaktivitet.
-  - **Innstillinger** -- Konfigurasjonsendrigner.
-- **Startdato** -- Vis oppføringer fra denne datoen fremover.
-- **Sluttdato** -- Vis oppføringer opp til denne datoen.
+  - **Pålogging** -- Vellykkede og mislykkede påloggingsforsøk.
+  - **Personer** -- Opprettelse, oppdatering eller sletting av personregistreringer.
+  - **Tillatelser** -- Tildeling og tilbakekalling av tillatelser.
+  - **Donasjoner** -- Endringer i donasjonsregistreringer.
+  - **Grupper** -- Handlinger knyttet til gruppeadministrasjon.
+  - **Skjemaer** -- Aktivitet knyttet til innsendte skjemaer.
+  - **Innstillinger** -- Endringer i konfigurasjonen.
+- **Startdato** -- Vis oppføringer fra og med denne datoen.
+- **Sluttdato** -- Vis oppføringer til og med denne datoen.
 
-Klikk **Søk** etter å ha angitt filtrene for å oppdatere resultatene.
+Klikk på **Søk** etter at du har angitt filtrene, for å oppdatere resultatene.
 
-## Forstå kategorier
+## Forstå kategoriene
 
-Hver kategori er fargekodert for rask identifikasjon:
+Hver kategori er fargekodet for rask identifikasjon:
 
-- **Pålogging** -- Blå brikke. Sporer påloggingsforsøk med suksess og feil.
-- **Folk** -- Lilla brikke. Sporer personpostopprettelser, oppdateringer og slettinger.
-- **Tillatelser** -- Rød brikke. Sporer når tilgangsrettigheter tildeles eller tilbakekalles.
-- **Donasjoner** -- Grønn brikke. Sporer donasjonpostendringer.
-- **Grupper** -- Grå brikke. Sporer gruppeadministrasjonsoperasjoner.
-- **Skjemaer** -- Oransje brikke. Sporer skjemainnsendelsesaktivitet.
-- **Innstillinger** -- Gul brikke. Sporer konfigurasjonsendrninger.
+- **Pålogging** -- Blå merkelapp. Registrerer vellykkede og mislykkede påloggingsforsøk.
+- **Personer** -- Lilla merkelapp. Registrerer opprettelse, oppdatering og sletting av personregistreringer.
+- **Tillatelser** -- Rød merkelapp. Registrerer når tilgangsrettigheter gis eller trekkes tilbake.
+- **Donasjoner** -- Grønn merkelapp. Registrerer endringer i donasjonsregistreringer.
+- **Grupper** -- Grå merkelapp. Registrerer gruppeadministrasjon.
+- **Skjemaer** -- Oransje merkelapp. Registrerer aktivitet knyttet til innsendte skjemaer.
+- **Innstillinger** -- Gul merkelapp. Registrerer endringer i konfigurasjonen.
 
-## Eksport av loggen
+## Eksportere loggen
 
-Når loggoppføringer vises, vises en **CSV-nedlastings**-knapp. Klikk den for å eksportere gjeldende filtrerte resultater til et regneark for offline-gjennomgang eller registrering.
+Når loggoppføringer vises, dukker det opp en knapp for **CSV-nedlasting**. Klikk på den for å eksportere de gjeldende filtrerte resultatene til et regneark for gjennomgang offline eller arkivering.
 
-## Paginering
+## Sideinndeling
 
-Bruk pagineringskontrollene nederst i tabellen for å navigere gjennom resultatene. Du kan vise 25, 50 eller 100 oppføringer per side.
+Bruk sidekontrollene nederst i tabellen for å bla gjennom resultatene. Du kan vise 25, 50 eller 100 oppføringer per side.
 
 :::info
-Revisjonsloggoppføringer beholdes automatisk i ett år. Oppføringer eldre enn 365 dager fjernes for å holde systemet effektivt.
+Oppføringer i revisjonsloggen oppbevares automatisk i ett år. Oppføringer som er eldre enn 365 dager, fjernes for å holde systemet raskt.
 :::
 
 :::tip
-Gjennomgå revisjonsloggen regelmessig, spesielt etter å ha innlandet nye teammedlemmer eller gjort betydelige konfigurasjonsendringer. Det hjelper til med å identifisere uventet aktivitet tidlig.
+Gå gjennom revisjonsloggen jevnlig, særlig etter at du har tatt imot nye teammedlemmer eller gjort store endringer i konfigurasjonen. Det hjelper deg å oppdage uventet aktivitet tidlig.
 :::
 
 ## Relaterte artikler
 
 - [Roller og tillatelser](../settings/roles-permissions) -- Administrer hvem som har tilgang til hva
-- [Datasikkerhet](../settings/data-security) -- Forstå hvordan dataene dine er beskyttet
+- [Datasikkerhet](../settings/data-security) -- Forstå hvordan dataene dine beskyttes
 - [Rapportoversikt](./index.md) -- Se alle tilgjengelige rapporter

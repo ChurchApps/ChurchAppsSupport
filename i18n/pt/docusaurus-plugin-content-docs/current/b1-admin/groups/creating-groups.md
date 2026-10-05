@@ -20,11 +20,10 @@ Criar um grupo no B1 Admin é direto. Você vai configurar uma categoria, dar um
 
 ## Adicionando um Novo Grupo
 
-1. Navegue até o **painel de controle do B1 Admin**.
-2. Clique na aba **Grupos**.
-3. Clique em **Adicionar Grupo** e digite um **Nome de Categoria**. Categorias ajudam você a organizar grupos relacionados juntos (por exemplo, "Grupos Pequenos", "Ministérios" ou "Comitês"). Se uma categoria já existe, você pode selecioná-la da lista.
-4. Digite o **Nome do Grupo**.
-5. Clique em **Adicionar**. Seu novo grupo aparecerá na lista sob a categoria escolhida.
+1. Abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo do B1 Admin), expanda **Pessoas** e clique em **Grupos**.
+2. Clique em **Adicionar Grupo** e digite um **Nome de Categoria**. Categorias ajudam você a organizar grupos relacionados juntos (por exemplo, "Grupos Pequenos", "Ministérios" ou "Comitês"). Se uma categoria já existe, você pode selecioná-la da lista.
+3. Digite o **Nome do Grupo**.
+4. Clique em **Adicionar**. Seu novo grupo aparecerá na lista sob a categoria escolhida.
 
 ## Configurando as Configurações do Grupo
 
@@ -41,12 +40,18 @@ Depois que seu grupo é criado, você pode preencher detalhes adicionais:
      - **Fechado** -- Os membros devem ser adicionados manualmente pelos líderes ou administradores
    - **Rótulos** -- Atribua um ou mais rótulos descritivos ao grupo (por exemplo, "Presencial", "Online", "Bem-vindos Novos Membros"). Rótulos são tags de forma livre que você define; marque tudo que se aplicar. Os rótulos podem ser usados para filtrar grupos no elemento do site do Navegador de Grupos.
    - **Grupo confidencial** -- Oculte este grupo e sua lista de membros de páginas públicas, localizador de grupos e não-membros. Use isso para grupos sensíveis como ministérios de recuperação ou aconselhamento; apenas os membros do grupo e funcionários da igreja podem vê-lo.
+   - **Discussões** -- Ativa o feed de chat do grupo ou desativa, onde qualquer membro pode postar. Ativado por padrão.
+   - **Anúncios** -- Ativa um segundo feed de chat apenas para líderes -- membros podem ler e reagir, mas apenas líderes podem postar. Ativado por padrão.
    - **Rastreamento de Presença** -- Habilite isso se você deseja registrar [presença](../attendance/tracking-attendance.md) para este grupo.
    - **Horários de Serviço** -- Associe o grupo aos horários de serviço da igreja específicos, se aplicável. Consulte [Configuração de Presença](../attendance/setup.md) para detalhes sobre horários de serviço.
 4. Clique em **Salvar** para aplicar suas alterações.
 
 :::tip
 Adicionar uma descrição clara e horário de reunião ajuda os membros a saber o que esperar quando ingressarem em um grupo.
+:::
+
+:::info
+Desativar tanto Discussões quanto Anúncios remove a aba Mensagens do grupo inteiro no portal de membros. Desativar apenas um oculta sua aba; membros são movidos para o feed que ainda está ativado. Mensagens existentes são mantidas de qualquer forma -- os alternadores apenas controlam novos posts.
 :::
 
 ## Duplicando um Grupo

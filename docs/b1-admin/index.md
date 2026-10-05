@@ -30,16 +30,16 @@ The Dashboard is your B1 Admin home page (`/`). It is built around your church's
 - **Your Groups** and **Open Tasks** -- the groups you belong to and tasks assigned to you or your groups
 
 :::tip
-Sermons, Calendars, Mobile, and Settings are still one click away in the top navigation. For anything else, press **Ctrl+K** (or **Cmd+K**) to open the [command palette](./introduction#finding-anything-quickly-with-the-command-palette).
+Every section, including Sermons, Calendars, Mobile, and Settings, is in the [Jump menu](./introduction.md#getting-around-with-the-jump-menu) at the top-left of B1 Admin. Click it or press **Ctrl+K** (or **Cmd+K**), then browse or start typing.
 :::
 
 ## Key Features
 
 - **[People](./people/)** - Manage your church directory, add members, bulk edit data, track households
-- **[Groups](./groups/)** - Create and organize church groups with join requests, member management, and group email
-- **[Attendance](./attendance/)** - Set up campuses, service times, track named attendance with printable class roll sheets, and log simple headcounts with trend reports
+- **[Groups](./groups/)** - Create and organize church groups with join requests, member management, group email, and personalized group texts
+- **[Attendance](./attendance/)** - Set up campuses, service times, track named attendance with printable class roll sheets, see which classes still need attendance entered, and log simple headcounts with trend reports
 - **[Donations](./donations/)** - Record giving in multiple currencies, manage funds, print batches with fund subtotals, generate statements
-- **[Serving](./serving/)** - Coordinate volunteers, create service plans, manage tasks, and move people through step-by-step workflows
+- **[Serving](./serving/)** - Coordinate volunteers, create service plans, manage tasks, and move people through step-by-step workflows that can send emails and texts automatically
 - **[Forms](./forms/)** - Build custom forms for registrations and data collection
 - **[Reports](./reports/)** - View birthday, attendance, and donation reports
 - **[Website](./website/)** - Build and manage your church website with custom navigation styles, or turn off the public site and keep only the member portal

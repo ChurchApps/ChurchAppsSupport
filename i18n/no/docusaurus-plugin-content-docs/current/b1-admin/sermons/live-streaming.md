@@ -1,133 +1,133 @@
 ---
-title: "Direkteoverføring"
+title: "Direktesending"
 ---
 
-# Direkteoverføring
+# Direktesending
 
 <div class="article-intro">
 
-Siden Direkteoverføringstider lar deg konfigurere kirkens strøm-schema, administrere gudstjenesteklokkeslett og tilpasse seertilstanden. Sett opp gjentakende ukentlige gudstjenester eller engangs-hendelser, konfigurér chat- og videoinnstillinger, og kontroller når strømmen går live.
+Siden Tidspunkter for direktesending lar deg konfigurere menighetens sendeplan, administrere gudstjenestetidspunkter og tilpasse seeropplevelsen. Sett opp faste ukentlige gudstjenester eller enkeltstående arrangementer, konfigurer chat- og videoinnstillinger, og styr når sendingen går live.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du trenger **contentApi.streamingServices.edit**-tillatelsen. Se [Roller og tillatelser](../settings/roles-permissions.md) hvis du ikke har tilgang.
-- Ha YouTube-kanal-ID-en klar hvis du planlegger å bruke automatisert direkteoverføring
-- Legg til minst en [prediken](managing-sermons) eller permanent live-URL for å bruke som strøm-kilden
+- Du trenger tillatelsen **contentApi.streamingServices.edit**. Se [Roller og tillatelser](../settings/roles-permissions.md) hvis du ikke har tilgang.
+- Ha YouTube-kanal-ID-en klar hvis du planlegger å bruke automatisk direktesending
+- Legg til minst én [preken](managing-sermons) eller en permanent live-URL som du kan bruke som sendingskilde
 
 </div>
 
-Siden har to hovedfaner: **Gudstjenester** for administrering av direkteoverførings-planen og **Innstillinger** for konfigurering av strøm-siden.
+Siden har to hovedfaner: **Gudstjenester** for å administrere sendeplanen din og **Innstillinger** for å konfigurere sendesiden din.
 
-## Administrering av gudstjenester
+## Administrere gudstjenester
 
 ### Legge til en gudstjeneste
 
-1. I B1 Admin, åpne **seksjonsmenyene** i det øvre venstre hjørnet (seksjonsnavnet med den lille pilen) og velg **Prekener**, deretter klikker du **Direkteoverføringstider**-fanen.
-2. Klikk **Legg til gudstjeneste**-knappen for å opprette en ny planlagt gudstjeneste.
-3. Angi **gudstjeneste navn** (for eksempel, "Søndags morgen").
-4. Sett **gudstjenesteklokkeslett** -- velg dag og tidspunkt gudstjenesten starter.
-5. Sett **Gjentas ukentlig** til **Ja** for vanlige ukentlige gudstjenester, eller **Nei** for en engangs-hendelse.
+1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre) i B1 Admin, utvid **Prekener** og klikk på **Tidspunkter for direktesending**.
+2. Klikk på knappen **Legg til gudstjeneste** for å opprette en ny planlagt gudstjeneste.
+3. Skriv inn et **Gudstjenestenavn** (for eksempel «Søndag formiddag»).
+4. Angi **Gudstjenestetidspunkt** -- velg dagen og klokkeslettet gudstjenesten begynner.
+5. Sett **Gjentas ukentlig** til **Ja** for faste ukentlige gudstjenester, eller **Nei** for et enkeltstående arrangement.
 
-### Konfigurering av chat- og videoinnstillinger
+### Konfigurere chat- og videoinnstillinger
 
-6. Under **Chat-innstillinger**, sett hvor mange minutter før og etter gudstjenesten chat skal være aktivert. Dette lar besøkende begynne å chatte før gudstjenesten starter og fortsette etterpå.
-7. Under **Videoinnstillinger**, sett hvor tidlig du skal starte videostrømmen for nedtelling eller før-gudstjeneste-innhold.
-8. Velg hvilken prediken som skal spilles fra rullemenyene:
-   - **Siste prediken** -- Automatisk avspilling av den senest tilførte videoen.
-   - **Gjeldende direktegudstjeneste** -- Spiller gjeldende direkteoverføring fra YouTube ved hjelp av kanal-ID-en.
-   - Du kan også velge en hvilken som helst spesifikk prediken du allerede har lagret.
-9. Klikk **Lagre** for å planlegge gudstjenesten.
+6. Under **Chatinnstillinger** angir du hvor mange minutter før og etter gudstjenesten chatten skal være aktivert. Da kan besøkende begynne å chatte før gudstjenesten starter og fortsette etterpå.
+7. Under **Videoinnstillinger** angir du hvor tidlig videosendingen skal starte, for nedtelling eller innhold før gudstjenesten.
+8. Velg hvilken preken som skal spilles av, fra nedtrekksmenyen:
+   - **Siste preken** -- Spiller automatisk av den nyligst tilføyde videoen din.
+   - **Pågående direktesending** -- Spiller av den pågående direktesendingen din fra YouTube ved hjelp av kanal-ID-en din.
+   - Du kan også velge en hvilken som helst bestemt preken du allerede har lagret.
+9. Klikk på **Lagre** for å planlegge gudstjenesten.
 
 :::info
-Gudstjenesten vil automatisk oppdateres hver uke hvis den er satt til gjentakelse. Du kan legge til så mange gudstjenester som du trenger. Besøkende vil se neste planlagte gudstjenesteklokkeslett når de besøker strøm-siden.
+Gudstjenesten oppdateres automatisk hver uke hvis den er satt til å gjentas. Du kan legge til så mange gudstjenester du trenger. Besøkende ser neste planlagte gudstjenestetidspunkt når de besøker sendesiden din.
 :::
 
-## Innstillinger for strøm-siden
+## Innstillinger for sendesiden
 
-Klikk **Innstillinger**-fanen for å tilpasse fanene og linkene som vises ved siden av direkteoverføringen.
+Klikk på fanen **Innstillinger** for å tilpasse fanene og lenkene som vises ved siden av direktesendingen.
 
 ### Legge til faner
 
-1. Klikk **Legg til**-knappen for å legge til en ny fane på direkteoverførings-siden.
-2. Velg **Chat**-forhåndsfastsatt fane eller legg til en egendefinert fane med en ekstern URL.
-3. For Chat-fanen, gi den bare et navn i **Fanetekst**-boksen og oppsettet er fullført.
-4. For en lenket fane, angi fanenavnet, velg et ikon ved å klikke ikonknappen, og angi URL-en.
-5. De konfigurerte fanene dine vil vises på direkteoverførings-siden for seere for å få tilgang til tilleggsmidler og interaktive funksjoner.
+1. Klikk på knappen **Legg til** for å legge til en ny fane på direktesendingssiden din.
+2. Velg den ferdigdesignede **Chat**-fanen, eller legg til en egendefinert fane med en ekstern URL.
+3. For Chat-fanen gir du den bare et navn i boksen **Fanetekst**, så er oppsettet ferdig.
+4. For en lenkefane skriver du inn fanenavnet, velger et ikon ved å klikke på ikonknappen, og skriver inn URL-en.
+5. De konfigurerte fanene vises på direktesendingssiden, slik at seerne får tilgang til flere ressurser og interaktive funksjoner.
 
-### Forhåndsvisning av strømmen
+### Forhåndsvise sendingen
 
-Klikk **Vis strømmen**-knappen for å se nøyaktig hvordan direkteoverførings-siden vil se ut for besøkende, inkludert logoen, gudstjenesteklokkeslett og konfigurerte faner.
+Klikk på knappen **Se sendingen din** for å se nøyaktig hvordan direktesendingssiden vil se ut for besøkende, med logo, gudstjenestetidspunkter og de konfigurerte fanene.
 
-## Sette opp YouTube direkteoverføring
+## Sette opp YouTube-direktesendingen din
 
-For å koble YouTube-kanalen for automatisert direkteoverføring:
+Slik kobler du YouTube-kanalen din til automatisk direktesending:
 
-1. Gå til **Prekener** og klikk **Legg til prediken**, deretter velg **Legg til permanent live-URL**.
-2. Videoleverandøren er som standard **Gjeldende YouTube direkteoverføring**. Angi **YouTube-kanal-ID-en**.
-3. Legg til en tittel og beskrivelse, deretter klikk **Lagre**.
-4. I **Direkteoverføringstider**, opprett en gudstjeneste og velg permanent live-URL-en fra prediken-rullemenyene.
+1. Gå til **Prekener** og klikk på **Legg til preken**, og velg deretter **Legg til permanent live-URL**.
+2. Videoleverandøren er som standard **Pågående YouTube-direktesending**. Skriv inn **YouTube-kanal-ID-en** din.
+3. Legg til en tittel og en beskrivelse, og klikk deretter på **Lagre**.
+4. Opprett en gudstjeneste under **Tidspunkter for direktesending**, og velg den permanente live-URL-en din fra prekenlisten.
 
 :::tip
-For å finne YouTube-kanal-ID-en din, gå til avanserte innstillinger for YouTube-kanalen og kopier kanal-ID-verdien.
+For å finne YouTube-kanal-ID-en din går du til de avanserte innstillingene for YouTube-kanalen og kopierer verdien for kanal-ID.
 :::
 
-## Tilpassing av farger og logo
+## Tilpasse farger og logo
 
-Direkteoverførings-siden bruker [Utseende](../website/appearance)-innstillinger for nettstedet:
+Direktesendingssiden bruker innstillingene under [Utseende](../website/appearance) for nettstedet ditt:
 
-- **Lys aksjefargen** med mørk tekst brukes for hodingen.
-- **Mørk aksjefargen** med lys tekst brukes for sidestolpen.
-- **Lysbakgrunns-logoen** vises på strøm-siden. Bruk et bilde med gjennomsiktig bakgrunn og et 4:1-sideforhold.
+- Den **lyse aksentfargen** med mørk tekst brukes til toppfeltet.
+- Den **mørke aksentfargen** med lys tekst brukes til sidefeltet.
+- **Logoen for lys bakgrunn** vises på sendesiden. Bruk et bilde med gjennomsiktig bakgrunn og sideforhold 4:1.
 
-For å endre disse, gå til **Nettsted** deretter **Utseende** og oppdater [Fargepaletten](../website/appearance#color-palette) og [Logo](../website/appearance#logo-and-branding)-innstillingene.
+For å endre disse går du til **Nettsted** og deretter **Utseende** og oppdaterer innstillingene for [fargepalett](../website/appearance#color-palette) og [logo](../website/appearance#logo-and-branding).
 
-## Legge til strøm-verts
+## Legge til programverter for sendingen
 
-For å gi lagets medlemmer tilgang til host-only-chatten ved siden av den offentlige chatten:
+Slik gir du teammedlemmer tilgang til vertschatten, som bare er for verter, ved siden av den offentlige chatten:
 
-1. Åpne **seksjonsmenyene** i det øvre venstre hjørnet (seksjonsnavnet med den lille pilen), velg **Innstillinger** og klikk **Roller**.
-2. Klikk plusknappen og velg **Legg til egendefinert rolle**.
-3. Gi rollen navn "Strøm-vert" og klikk **Lagre**.
-4. Klikk den nye rollen, deretter klikk **Legg til** i Medlemmer-seksjonen for å legge til mennesker.
-5. Rull ned til **Rediger tillatelser**, utvid **Innhold**-seksjonen og merk **Host Chat**.
+1. Velg **Innstillinger > Roller** i Jump-menyen.
+2. Klikk på plussknappen og velg **Legg til egendefinert rolle**.
+3. Gi rollen navnet «Sendingsvert» og klikk på **Lagre**.
+4. Klikk på den nye rollen, og klikk deretter på **Legg til** i delen Medlemmer for å legge til personer.
+5. Bla ned til **Rediger tillatelser**, utvid delen **Innhold** og huk av for **Vertschat**.
 
-Når verter logger inn på direkteoverførings-siden, vises en privat **Host Chat**-fane ved siden av den offentlige chatten for stab-eksklusiv samtale under sendingen.
+Når verter logger inn på direktesendingssiden, vises en privat fane **Vertschat** ved siden av den offentlige chatten, for samtaler kun for medarbeidere under sendingen.
 
 :::info
-For mer informasjon om opprett av roller og administrering av tillatelser, se [Roller og tillatelser](../settings/roles-permissions.md).
+For mer om å opprette roller og administrere tillatelser, se [Roller og tillatelser](../settings/roles-permissions.md).
 :::
 
 ## Feilsøking
 
-Hvis den automatiserte YouTube direkteoverføringen ikke vises riktig når du bruker "Gjeldende YouTube direkteoverføring"-alternativet med kanal-ID-en, prøv følgende:
+Hvis den automatiske YouTube-direktesendingen din ikke vises riktig når du bruker alternativet «Pågående YouTube-direktesending» med kanal-ID-en din, kan du prøve følgende:
 
 **Symptomer:**
-- Direkteoverførings-innlegget viser "Video utilgjengelig"
-- Siden laster, men ingen video vises
-- Direkte YouTube-innlegg fungerer, men den automatiserte kanalens direkteoverføring gjør det ikke
+- Direktesendingen viser «Video unavailable»
+- Siden lastes, men ingen video vises
+- Vanlig innbygging fra YouTube fungerer, men den automatiske kanaldirektesendingen gjør det ikke
 
 **Løsning:**
-Sjekk YouTube-kanalen for gamle eller kommende planlagte direkteoverføringer og slett dem:
+Sjekk YouTube-kanalen din for gamle eller kommende planlagte direktesendinger og slett dem:
 
 1. Gå til YouTube Studio.
-2. Naviger til **Innhold** deretter **Direkte**.
-3. Se etter gamle planlagte direkteoverføringer eller kommende planlagte strømmer.
-4. Slett disse gamle eller planlagte direkteoverførings-oppføringene.
-5. Test direkteoverførings-siden igjen.
+2. Gå til **Innhold** og deretter **Live**.
+3. Se etter gamle planlagte direktesendinger eller kommende planlagte sendinger.
+4. Slett disse gamle eller planlagte direktesendingene.
+5. Test direktesendingssiden din på nytt.
 
 :::warning
-YouTubes automatiserte kanalens direkteoverførings-innlegg kan blokkeres når det er flere planlagte eller tidligere direkteoverførings-oppføringer i kanalen. Fjerning av disse lar YouTube riktig identifisere og betjene gjeldende direkteoverføring.
+YouTubes automatiske innbygging av kanaldirektesending kan bli blokkert når det finnes flere planlagte eller tidligere direktesendinger i kanalen din. Hvis du fjerner dem, kan YouTube identifisere og levere den pågående direktesendingen riktig.
 :::
 
-**Tilleggs-krav:**
-- Direkteoverføringen må settes til **Offentlig** (ikke skjult eller privat).
-- Innlegg må tillates i YouTube-strøm-innstillingene.
-- Pass på at du bruker **Gjeldende YouTube direkteoverføring**-leverandøren (med kanal-ID), ikke **YouTube**-leverandøren (med video-ID).
+**Ytterligere krav:**
+- Direktesendingen må være satt til **Offentlig** (ikke Uoppført eller Privat).
+- Innbygging må være tillatt i innstillingene for YouTube-sendingen din.
+- Pass på at du bruker leverandøren **Pågående YouTube-direktesending** (med kanal-ID), ikke leverandøren **YouTube** (med video-ID).
 
-## Neste trinn
+## Neste steg
 
-- [Administrering av prekener](managing-sermons) -- Legg til prekener i biblioteket
-- [Playlister](playlists) -- Organiser prekener i serier
+- [Administrere prekener](managing-sermons) -- Legg til prekener i biblioteket ditt
+- [Spillelister](playlists) -- Organiser prekener i serier

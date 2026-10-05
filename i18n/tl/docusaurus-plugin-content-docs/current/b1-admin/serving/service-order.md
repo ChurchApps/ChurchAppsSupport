@@ -1,135 +1,135 @@
 ---
-title: "Ayos ng Serbisyo"
+title: "Service Order"
 ---
 
-# Ayos ng Serbisyo
+# Service Order
 
 <div class="article-intro">
 
-Ang service order ay tumutukoy sa pagkakasunod ng mga elemento sa iyong serbisyong pag-ibadal. Gamitin ito upang ilatag ang lahat mula sa opening song hanggang sa closing prayer, upang ang buong team ay nakakaalam ng daloy ng serbisyo nang maaga.
+Tinutukoy ng service order ang pagkakasunod-sunod ng mga elemento sa inyong service ng pagsamba. Gamitin ito para ilatag ang lahat mula sa pambungad na awit hanggang sa pangwakas na panalangin, para alam ng buong team ang daloy ng service nang maaga.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago ka magsimula</h4>
+<h4>Bago Magsimula</h4>
 
-- [Lumikha ng isang service plan](./plans.md) para sa petsa na nais mong bumuo ng isang service order
-- Bilang opsyon, magdagdag ng [kanta](./songs.md) sa iyong library upang maaari mong ikonekta ang mga ito direkta sa service order
+- [Gumawa ng plano ng service](./plans.md) para sa petsang nais ninyong buuan ng service order
+- Opsyonal, magdagdag ng [mga kanta](./songs.md) sa inyong library para direkta ninyo silang ma-link sa service order
 
 </div>
 
-## Pag-access sa service order
+## Pag-access sa Service Order
 
-1. Mag-navigate sa **Serving** at piliin ang iyong ministry.
-2. I-click ang isang **plan type**, pagkatapos ay buksan ang isang partikular na **plan**.
-3. I-click ang **Service Order** tab sa plan detail page.
+1. Pumunta sa **Serving** at piliin ang inyong ministry.
+2. I-click ang isang **plan type**, saka buksan ang isang partikular na **plano**.
+3. I-click ang tab na **Service Order** sa pahina ng detalye ng plano.
 
-## Pagbuo ng iyong service order
+## Pagbuo ng Inyong Service Order
 
-Ang service order ay isang listahan ng mga item na naka-arrange sa pagkakasunod ng kung kailan sila ay mangyayari sa loob ng serbisyo. Ang mga karaniwang elemento ay kasama:
+Ang service order ay listahan ng mga item na nakaayos ayon sa pagkakasunod-sunod ng mga mangyayari sa service. Kabilang sa mga karaniwang elemento ang:
 
-- Worship songs
-- Prayers
-- Scripture readings
-- Announcements
-- Sermon o message
-- Offering
-- Closing
+- Mga awit sa pagsamba
+- Mga panalangin
+- Pagbasa ng Kasulatan
+- Mga anunsyo
+- Sermon o mensahe
+- Handog
+- Pangwakas
 
-## Pagdagdag ng mga item sa service order
+## Pagdaragdag ng mga Item sa Service Order
 
-1. Sa **Service Order** tab, i-click ang **Add Item**.
-2. Pumili ng uri ng elemento na nais mong idagdag (halimbawa, isang kanta mula sa iyong library, isang custom item, isang heading, o isang **External Item**).
-3. Ipasok ang mga detalye para sa item, tulad ng pamagat at anumang mga tala.
+1. Sa tab na **Service Order**, i-click ang **Add Item**.
+2. Piliin ang uri ng elementong nais ninyong idagdag (halimbawa, isang kanta mula sa inyong library, isang custom na item, isang heading, o isang **External Item**).
+3. Ilagay ang mga detalye ng item, tulad ng pamagat at anumang tala.
 4. I-click ang **Save**.
 
 :::tip
-Maaari kang magdagdag ng mga kanta direkta mula sa iyong [Songs](./songs.md) library. Ito ay nag-link ng mga detalye ng kanta, kasama ang mga lirika at arrangement, sa iyong service plan upang ang iyong worship team ay may lahat ng kailangan nila.
+Maaari kayong magdagdag ng mga kanta nang direkta mula sa inyong library ng [Mga Kanta](./songs.md). Nili-link nito ang mga detalye ng kanta, kasama ang lyrics at mga arrangement, sa inyong plano ng service para nasa inyong worship team ang lahat ng kailangan nila.
 :::
 
-### Pag-import ng maraming item mula sa isang external provider
+### Pag-import ng Maraming Item mula sa External Provider
 
-Ang pagpipili ng **External Item** ay nagbubukas ng isang browser para sa iyong mga naka-link na lesson provider sa halip ng isang single-item form. Mag-browse (o maghanap) sa loob ng content ng isang provider, at tingnan ang checkbox sa tabi ng bawat section o aksyon na nais mo. Ang dialog ay sinusubaybayan kung gaano karami ang iyong napili (halimbawa, "3 selected") -- i-click ang **Import (3)** upang magdagdag ng lahat sa service order nang sabay-sabay, sa halip na ulitin ang add-item flow para sa bawat isa.
+Kapag pinili ang **External Item**, magbubukas ang isang browser para sa inyong mga naka-link na lesson provider sa halip na form para sa iisang item. Mag-browse (o maghanap) sa nilalaman ng isang provider, at lagyan ng check ang kahon sa tabi ng bawat seksyon o aksyon na nais ninyo. Binibilang ng dialog kung ilan ang napili ninyo (halimbawa, "3 selected") -- i-click ang **Import (3)** para idagdag silang lahat sa service order nang sabay-sabay, sa halip na ulitin ang proseso ng pagdaragdag ng item para sa bawat isa.
 
 :::tip
-Ito ang pinakamabilis na paraan upang dalhin ang buong lesson's worth ng mga section at cues sa isang service order sa isang pass, sa halip na magdagdag ng bawat item nang isa-isa.
+Ito ang pinakamabilis na paraan para dalhin ang buong hanay ng mga seksyon at cue ng isang lesson sa isang service order nang minsanan, sa halip na isa-isang magdagdag ng bawat item.
 :::
 
-## Pag-reorder ng mga item
+## Pag-reorder ng mga Item
 
-I-drag ang mga item sa handle sa kaliwang bahagi ng bawat row upang baguhin ang order — i-drop sa blue line kung saan mo nais ang item na marating, o sa isang section header upang ilipat ito sa seksyong iyon. Ang pagkakasunod na ipinakita sa screen ay ang order na sinusundan ng iyong team sa loob ng serbisyo.
+I-drag ang mga item gamit ang handle sa kaliwa ng bawat row para ayusin ang pagkakasunod-sunod -- i-drop sa asul na linya kung saan ninyo nais mapunta ang item, o sa header ng seksyon para ilipat ito sa seksyong iyon. Ang pagkakasunod-sunod na nakikita sa screen ang susundan ng inyong team habang nagaganap ang service.
 
-## Pag-edit ng isang lesson section
+## Pag-edit ng Seksyon ng Lesson
 
-Ang lesson at curriculum sections (halimbawa, "Large Group" o "Engage 1") ay tumutulong sa kanilang sariling script lines, slides at videos. Upang baguhin kung ano ang loob, i-click ang section sa service order. Ang section ay bumubukas na nagpapakita ng lahat sa loob nito: spoken at instruction lines ay lumalitaw bilang kumpletong teksto na may label **Say**, **Do** o **Note**, at slides o videos ay lumalitaw na may thumbnail.
+Ang mga seksyon ng lesson at kurikulum (halimbawa, "Large Group" o "Engage 1") ay may sarili nilang mga linya ng script, slide, at video. Para baguhin ang laman ng isa, i-click ang seksyon sa service order. Magbubukas ang seksyon na ipinapakita ang lahat ng nasa loob nito: ang mga sinasabi at mga linya ng tagubilin ay lumalabas bilang buong teksto na may markang **Say**, **Do** o **Note**, at ang mga slide o video ay lumalabas na may thumbnail.
 
-- I-click ang **x** sa tabi ng anumang linya upang alisin ito sa iyong plan. Ito ay nananatili sa listahan, na may linyang ito, na may arrow upang ibalik ito.
-- I-click ang anumang teksto upang baguhin ang paglikha nito. Ang isang reworded line ay nag-aalok ng **restore original wording**.
-- I-click ang **Save**. Ang section ay nananatiling isang row sa iyong service order, na may maliit na label tulad ng **6 of 8 items** na nagpapakita na ikaw ay nag-customize nito, at ang iyong running time ay nag-update.
+- I-click ang **x** sa tabi ng anumang linya para alisin ito sa inyong plano. Mananatili ito sa listahan, may guhit sa gitna, at may arrow para ibalik ito.
+- I-click ang anumang teksto para baguhin ang pagkakasabi. Ang linyang binago ay may opsyong **restore original wording**.
+- I-click ang **Save**. Mananatiling isang row ang seksyon sa inyong service order, na may maliit na label tulad ng **6 of 8 items** na nagpapakitang na-customize ninyo ito, at ina-update ang kabuuang oras nito.
 
-Buksan ang section nang muli anumang oras upang makita ang iyong mga pagbabago, ibalik ang mga linya, o pumili ng **Restore original section** upang bawiin ang lahat. Ang iyong mga edit ay nag-affect lamang sa iyong plan -- ang orihinal na lesson ay hindi kailanman binago -- at sila ay nagpapatuloy sa printed plans at sa kung ano ang nakikita ng iyong mga volunteer.
+Buksan muli ang seksyon anumang oras para makita ang inyong mga pagbabago, ibalik ang mga linya, o piliin ang **Restore original section** para bawiin ang lahat ng ito. Ang inyong mga pagbabago ay nakakaapekto lamang sa inyong plano -- hindi kailanman nababago ang orihinal na lesson -- at dala ang mga ito sa mga naka-print na plano at sa nakikita ng inyong mga boluntaryo.
 
-Kung kailangan mo ng isang item mula sa section bilang isang sariling row (halimbawa, upang magsagawa ng isang kanta sa pagitan ng dalawang linya), i-click ang arrow sa kanang dulo ng section row upang ipakita ang mga nilalaman nito bilang mga hiwalay na row. I-click ang arrow sa una sa mga row na iyon upang ibalik ang mga ito sa isa. Ito ay gumagana nang pareho para sa nilalaman mula sa anumang konektadong provider.
+Kung kailangan ninyo ng isang item mula sa seksyon bilang sarili nitong row (halimbawa, para maglagay ng kanta sa pagitan ng dalawang linya), i-click ang arrow sa kanang dulo ng row ng seksyon para ipakita ang laman nito bilang magkakahiwalay na row. I-click ang arrow sa una sa mga row na iyon para ibalik silang muli bilang isa. Ganito rin ang paraan para sa nilalaman mula sa anumang konektadong provider.
 
-Ang mga volunteer na itinalagang sa isang item ay lumalitaw sa tabi nito sa service order, kaya ang sinuman na sumusubaybay sa plan ay makikita kung sino ang sumasaklaw sa bawat bahagi sa isang sulyap.
+Ang mga boluntaryong nakatalaga sa isang item ay lumalabas sa tabi nito sa service order, kaya makikita ng sinumang nagrerepaso sa plano kung sino ang sumasaklaw sa bawat bahagi sa isang tingin.
 
-## Timing at media
+## Oras at Media
 
-Ang bawat item at section ay nagpapakita kung gaano katagal ito tumatakbo at kailan ito nagsisimula:
+Ipinapakita ng bawat item at seksyon kung gaano katagal ito at kung kailan ito magsisimula:
 
-- Kung ang plan ay may isang serbisyong oras na pinili, ang kaliwang riles ay nagpapakita ng aktwal na **clock time** bawat item ay nagsisimula (halimbawa, 9:14 AM). Kung hindi, ito ay nagpapakita ng elapsed time mula sa simula ng serbisyo.
-- Ang mga section header ay binubuo ang running time ng lahat sa loob nila.
-- Ang mga kanta at custom na item ay nag-aambag sa schedule na ito kapag ipasok mo ang **Minutes**/**Seconds** sa edit screen ng item.
-- Ang mga item na idadagdag mo mula sa iyong media library (mga larawan o video clips) ay nagpapakita ng **thumbnail** at ay awtomatikong natiwala — ang tagal ng video ay sinusukat mula sa file mismo, habang ang isang larawan ay nag-aambag ng isang ~5:00 planning estimate (ipinakita sa italics) dahil ito ay nananatili sa screen hanggang sa isang operator ay nag-advance nito. Maaari mo pa rin i-edit ang isa o ang iba sa isang partikular na tagal.
+- Kung may isang oras ng service na napili sa plano, ipinapakita ng kaliwang rail ang aktwal na **oras sa orasan** ng simula ng bawat item (halimbawa, 9:14 AM). Kung hindi, ipinapakita nito ang lumipas na oras mula sa simula ng service.
+- Kinukwenta ng mga header ng seksyon ang kabuuang oras ng lahat ng nasa loob nila.
+- Ang mga kanta at custom na item ay isinasama sa iskedyul na ito kapag naglagay kayo ng **Minutes**/**Seconds** sa edit screen ng item.
+- Ang mga item na idinagdag ninyo mula sa inyong media library (mga larawan o video clip) ay may **thumbnail** at awtomatikong nasusukat ang oras -- ang haba ng video ay sinusukat mula sa mismong file, habang ang larawan ay nag-aambag ng tinatayang ~5:00 na pagpaplano (nakasulat sa italics) dahil nananatili ito sa screen hanggang i-advance ito ng operator. Maaari pa rin ninyong i-edit ang alinman sa mga ito para sa tiyak na haba.
 
-## Pag-edit at pag-tanggal ng mga item
+## Pag-edit at Pag-alis ng mga Item
 
-- I-click ang anumang item sa service order upang **mag-edit** ng mga detalye nito.
-- Gamitin ang **delete** option upang alisin ang isang item mula sa order.
+- I-click ang anumang item sa service order para **i-edit** ang mga detalye nito.
+- Gamitin ang opsyong **delete** para alisin ang isang item sa order.
 
 :::info
-Ang service order ay partikular sa bawat plan. Ang mga pagbabago na ginagawa mo dito ay nag-affect lamang sa napiling plan at hindi magbabago ng ibang mga plan o sa iyong song library.
+Ang service order ay partikular sa bawat plano. Ang mga pagbabagong gagawin ninyo rito ay nakakaapekto lamang sa napiling plano at hindi nito babaguhin ang ibang mga plano o ang inyong library ng kanta.
 :::
 
-### Bulk selecting at pag-delete ng mga item
+### Maramihang Pagpili at Pagbura ng mga Item
 
-Upang alisin ang maraming item sa isang section nang sabay-sabay sa halip na burahin ang mga ito nang isa-isa:
+Para linisin ang ilang item sa isang seksyon nang sabay-sabay sa halip na isa-isang burahin:
 
-1. I-click ang **Select items** sa section header.
-2. Tingnan ang mga item na nais mong alisin, o tingnan ang **Select all in section** upang makuha ang lahat direktang nasa ilalim ng seksyong iyon.
+1. I-click ang **Select items** sa header ng seksyon.
+2. Lagyan ng check ang mga item na nais ninyong alisin, o lagyan ng check ang **Select all in section** para kunin ang lahat ng direktang nasa ilalim ng seksyong iyon.
 3. I-click ang **Delete Selected** at kumpirmahin.
-4. I-click ang **Done selecting** upang lumabas sa selection mode.
+4. I-click ang **Done selecting** para lumabas sa selection mode.
 
 :::info
-Ang bulk select ay nag-apply lamang sa direktang mga anak ng isang section, hindi sa mga item na naka-nest sa loob ng isang sub-section folder.
+Ang bulk select ay nalalapat lamang sa mga direktang anak ng isang seksyon, hindi sa mga item na nasa loob ng isang sub-section folder.
 :::
 
-## Pag-include ng mga item sa partikular na service times
+## Pagsasama ng mga Item sa Partikular na Oras ng Service
 
-Kung ang iyong plan ay may higit sa isang service time (halimbawa, isang 8 a.m. at 10 a.m. service), maaari kang pumili kung aling mga serbisyo ang dapat lumitaw sa bawat item. Ito ay kapaki-pakinabang kapag ang isang announcement ay relevant lamang sa isang serbisyo, o kapag ang isang kanta ay kinakanta sa isang serbisyo ngunit hindi sa iba.
+Kung may higit sa isang oras ng service ang inyong plano (halimbawa, service ng 8 a.m. at 10 a.m.), maaari ninyong piliin kung aling mga service dapat lumabas ang bawat item. Kapaki-pakinabang ito kapag ang isang anunsyo ay may kinalaman lamang sa isang service, o kapag inaawit ang isang kanta sa isang service ngunit hindi sa isa pa.
 
-1. Buksan ang isang plan na may dalawa o higit pang service times na tinukoy sa **Times** tab.
-2. Sa **Service Order** tab, i-click ang isang item upang i-edit ito.
-3. Sa ilalim ng **Include in Services**, makikita mo ang isang checkbox para sa bawat service time, na may label na ang oras.
-4. Alisin ang check sa anumang serbisyo kung saan dapat laktawan ang item.
+1. Magbukas ng planong may dalawa o higit pang oras ng service na nakatakda sa card na **Times** sa tab na **Assignments**.
+2. Sa tab na **Service Order**, i-click ang isang item para i-edit ito.
+3. Sa ilalim ng **Include in Services**, makikita ninyo ang checkbox para sa bawat oras ng service, na may label na oras.
+4. I-uncheck ang anumang service kung saan dapat laktawan ang item.
 5. I-click ang **Save**.
 
-Bilang default, ang bawat item ay kasama sa bawat serbisyo. Ang mga hindi kasama na service times ay naghihide kapag nag-print ka ng plan filtered sa serbisyong iyon, kaya ang bawat serbisyo ay tumatanggap ng isang malinis na run sheet na may lamang ang mga relevant na item.
+Bilang default, kasama ang bawat item sa bawat service. Ang mga hindi isinamang oras ng service ay itinatago kapag ipinrint ninyo ang plano na naka-filter sa service na iyon, kaya bawat service ay nakakatanggap ng malinis na run sheet na may mga kaugnay na item lamang.
 
 :::tip
-Ang **Include in Services** section ay lumilitaw lamang kapag ang plan ay may higit sa isang service time. Kung nakikita mo lamang ang isang serbisyo, i-edit ang **Times** tab ng plan upang magdagdag ng karagdagang mga serbisyo muna.
+Lumalabas lamang ang seksyong **Include in Services** kapag may higit sa isang oras ng service ang plano. Kung isang service lamang ang nakikita ninyo, gamitin muna ang card na **Times** sa tab na **Assignments** ng plano para magdagdag ng karagdagang mga service.
 :::
 
-### Pagpapakita ng isang iba't ibang posisyon sa bawat serbisyo
+### Pagpapakita ng Ibang Posisyon sa Bawat Service
 
-Kung ang isang item ay may nakatakda na **Position**, ang bawat nakataling service time sa **Include in Services** ay nakakakuha rin ng sariling **Position for this service** dropdown. Gamitin ito kapag ang parehong section ay sumasaklaw ng isang iba't ibang volunteer sa bawat serbisyo -- iwanan ito na nakatakda sa **Same as above** upang panatilihin ang default position ng item, o pumili ng iba't ibang posisyon upang i-override ito lamang para sa serbisyong iyon.
+Kung may nakatakdang **Position** ang isang item, ang bawat naka-check na oras ng service sa **Include in Services** ay may sarili ring dropdown na **Position for this service**. Gamitin ito kapag ibang boluntaryo ang sumasaklaw sa parehong seksyon sa bawat service -- iwanan itong naka-set sa **Same as above** para panatilihin ang default na posisyon ng item, o pumili ng ibang posisyon para i-override ito para lamang sa oras ng service na iyon.
 
-## Pagbabahagi ng service order
+## Pagbabahagi ng Service Order
 
-Kapag kumpleto na ang iyong service order, maaari mong i-print ang kumpletong plan (kasama ang service order) mula sa plan detail page. Ito ay nagbibigay sa iyong team ng isang kumpletong rundown ng serbisyo. Kapag ang **Show Volunteer Names** ay naka-on para sa print, ang bawat section header ay nag-print din na may itinalagong volunteer's position sa tabi nito, kaya ang iyong team ay makikita kung sino ang sumasaklaw sa seksyong iyon nang hindi binubuksan ang app. Kung ang position ng heading ay na-override para sa mga partikular na serbisyo, ang print ay nagpapakita ng bawat natatanging pangalan ng posisyon na ito ay nag-resolve sa lahat ng mga serbisyo sa plan na iyon (halimbawa, "Worship Team / Youth Team").
+Kapag kumpleto na ang inyong service order, maaari ninyong i-print ang buong plano (kasama ang service order) mula sa pahina ng detalye ng plano. Nagbibigay ito sa inyong team ng kumpletong buod ng service, na may heading ng pangalan ng inyong simbahan at pangalan ng plano. Kapag naka-on ang **Show Volunteer Names** para sa print, ang bawat header ng seksyon ay ipi-print din kasama ang posisyon ng nakatalagang boluntaryo sa tabi nito, para makita ng inyong team kung sino ang sumasaklaw sa seksyong iyon nang hindi binubuksan ang app. Kung na-override ang posisyon ng isang heading para sa mga partikular na service, ipinapakita ng print ang bawat natatanging pangalan ng posisyon na nalulutas nito sa mga service ng planong iyon (halimbawa, "Worship Team / Youth Team").
 
-## Susunod na mga hakbang
+## Mga Susunod na Hakbang
 
-- Pamahalaan ang iyong worship repertoire sa [Songs](./songs.md) page
-- Italaga ang mga volunteer sa serbisyo sa [Plans](./plans.md) Assignments tab
-- Lumikha ng [Tasks](./tasks.md) para sa anumang follow-up items na may kaugnayan sa serbisyo
+- Pamahalaan ang inyong repertoire sa pagsamba sa pahina ng [Mga Kanta](./songs.md)
+- Magtalaga ng mga boluntaryo sa service sa tab na Assignments ng [Mga Plano](./plans.md)
+- Gumawa ng [Mga Gawain](./tasks.md) para sa anumang follow-up na kaugnay ng service

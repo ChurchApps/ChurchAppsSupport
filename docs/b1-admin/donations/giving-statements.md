@@ -20,8 +20,8 @@ At the end of each year, your donors need a summary of their tax-deductible givi
 
 ## Accessing Giving Statements
 
-1. In **B1 Admin**, open the **section menu** in the top-left corner and choose **Donations**.
-2. Click **Statements**.
+1. In **B1 Admin**, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left) and expand **Donations**.
+2. Click **Giving Statements**.
 
 ## Generating Statements
 

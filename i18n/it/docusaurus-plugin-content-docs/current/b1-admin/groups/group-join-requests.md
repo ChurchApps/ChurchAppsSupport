@@ -1,8 +1,8 @@
 ---
-title: "Richieste di Aderire al Gruppo"
+title: "Richieste di adesione al gruppo"
 ---
 
-# Richieste di Aderire al Gruppo
+# Richieste di adesione al gruppo
 
 <div class="article-intro">
 
@@ -32,7 +32,7 @@ Quando un gruppo utilizza la politica **Richiesta**, tutti i tentativi di adesio
 
 ### Per i leader del gruppo
 
-1. Vai a **Gruppi** in B1 Admin
+1. In B1 Admin, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) e scegli **Persone > Gruppi**
 2. Fai clic sul nome del gruppo
 3. Le richieste in sospeso per questo gruppo appaiono nella parte superiore della scheda **Membri**
 
@@ -40,7 +40,7 @@ Quando un gruppo utilizza la politica **Richiesta**, tutti i tentativi di adesio
 
 Gli amministratori con autorizzazioni di gestione dei gruppi possono visualizzare le richieste in sospeso in tutti i gruppi:
 
-1. Vai a **Gruppi** in B1 Admin
+1. Nel menu Jump, scegli **Persone > Gruppi**
 2. Fai clic sul pulsante **richieste in sospeso** nell'intestazione della pagina (ad esempio, "3 richieste in sospeso"). Appare solo quando ci sono richieste in attesa.
 3. Rivedi tutte le richieste in sospeso a livello di chiesa
 
@@ -107,7 +107,7 @@ Le persone possono gestire le loro stesse richieste di adesione da B1.church:
 - Annullare una richiesta in sospeso se cambiano idea
 - Vedere se la loro richiesta è stata approvata o rifiutata
 
-## Best practice
+## Migliori pratiche
 
 - **Rispondi tempestivamente** -- Prova a rivedere le richieste entro 24-48 ore in modo che le persone non rimangano in attesa
 - **Sii chiaro nei motivi di rifiuto** -- Aiuta le persone a comprendere i prossimi passi o le opzioni alternative
@@ -116,6 +116,6 @@ Le persone possono gestire le loro stesse richieste di adesione da B1.church:
 
 ## Articoli correlati
 
-- [Creazione di Gruppi](./creating-groups.md) -- Scopri come impostare i gruppi e configurare le politiche di adesione
-- [Membri del Gruppo](./group-members.md) -- Gestisci i membri del gruppo esistenti
-- [Calendario Gruppo](./group-calendar.md) -- Programma le riunioni e gli eventi del gruppo
+- [Creazione di gruppi](./creating-groups.md) -- Scopri come impostare i gruppi e configurare le politiche di adesione
+- [Membri del gruppo](./group-members.md) -- Gestisci i membri del gruppo esistenti
+- [Calendario del gruppo](./group-calendar.md) -- Programma le riunioni e gli eventi del gruppo

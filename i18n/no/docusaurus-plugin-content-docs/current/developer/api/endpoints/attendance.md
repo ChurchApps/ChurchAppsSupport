@@ -1,45 +1,45 @@
 ---
-title: "Oppmøte-endepunkter"
+title: "Endepunkter for oppmøte"
 ---
 
-# Oppmøte-endepunkter
+# Endepunkter for oppmøte
 
 <div class="article-intro">
 
-Oppmøte-modulen administrerer campus-lokasjoner, gudstjenester, gudstjenestetider, oppmøtesesjoner, besøk og besøkssesjoner. Den gir infrastrukturen for å spore hvem som deltok på hvilken gudstjeneste eller gruppemøte, støtter innsjekkingsarbeidsflyter, og tilbyr rapportering av oppmøtetrender og -sammendrag.
+Oppmøtemodulen håndterer campuser, gudstjenester, gudstjenestetidspunkter, oppmøteøkter, besøk og besøksøkter. Den gir infrastrukturen for å holde oversikt over hvem som møtte opp på hvilken gudstjeneste eller gruppesamling, støtter arbeidsflyter for innsjekking og tilbyr rapportering av oppmøtetrender og sammendrag.
 
 </div>
 
 **Basissti:** `/attendance`
 
-## Campus
+## Campuser
 
 Basissti: `/attendance/campuses`
 
-Standard CRUD-kontroller (utvider GenericCrudController). Tilbyr rutene `getById`, `getAll`, `post` og `delete` via CRUD-basisklassen.
+Standard CRUD-kontroller (utvider GenericCrudController). Tilbyr rutene `getById`, `getAll`, `post` og `delete` via CRUD-baseklassen.
 
-| Metode | Sti | Auth | Tillatelse | Beskrivelse |
+| Metode | Sti | Autentisering | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | List alle campus for kirken |
-| GET | `/:id` | JWT | — | Hent et campus etter ID |
-| POST | `/` | JWT | Services.Edit | Opprett eller oppdater campus |
-| DELETE | `/:id` | JWT | Services.Edit | Slett et campus |
+| GET | `/` | JWT | — | List alle campuser for menigheten |
+| GET | `/:id` | JWT | — | Hent en campus etter ID |
+| POST | `/` | JWT | Services.Edit | Opprett eller oppdater campuser |
+| DELETE | `/:id` | JWT | Services.Edit | Slett en campus |
 
 ## Gudstjenester
 
 Basissti: `/attendance/services`
 
-Utvider GenericCrudController med CRUD-rutene `getById`, `getAll`, `post` og `delete`. Endepunktene `getAll` (`GET /`) og `search` overstyres med egendefinerte implementasjoner.
+Utvider GenericCrudController med CRUD-rutene `getById`, `getAll`, `post` og `delete`. Endepunktene `getAll` (`GET /`) og `search` er overstyrt med egne implementasjoner.
 
-| Metode | Sti | Auth | Tillatelse | Beskrivelse |
+| Metode | Sti | Autentisering | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | List alle gudstjenester (inkluderer campus-info) |
+| GET | `/` | JWT | — | List alle gudstjenester (inkluderer campusinformasjon) |
 | GET | `/:id` | JWT | — | Hent en gudstjeneste etter ID |
-| GET | `/search?campusId=` | JWT | — | Søk gudstjenester etter campus-ID |
+| GET | `/search?campusId=` | JWT | — | Søk etter gudstjenester på campus-ID |
 | POST | `/` | JWT | Services.Edit | Opprett eller oppdater gudstjenester |
 | DELETE | `/:id` | JWT | Services.Edit | Slett en gudstjeneste |
 
-### Eksempel: Søk gudstjenester etter campus
+### Eksempel: søk etter gudstjenester på campus
 
 ```
 GET /attendance/services/search?campusId=abc-123
@@ -57,49 +57,50 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Gudstjenestetider
+## Gudstjenestetidspunkter
 
 Basissti: `/attendance/servicetimes`
 
-Utvider GenericCrudController med CRUD-rutene `getById`, `post` og `delete`. Endepunktene `getAll` og `search` er egendefinerte implementasjoner.
+Utvider GenericCrudController med CRUD-rutene `getById`, `post` og `delete`. Endepunktene `getAll` og `search` er egne implementasjoner.
 
-| Metode | Sti | Auth | Tillatelse | Beskrivelse |
+| Metode | Sti | Autentisering | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | List alle gudstjenestetider. Filtrer med `?serviceId=`. Legg til `?include=groups` for å inkludere gruppedata |
-| GET | `/:id` | JWT | — | Hent en gudstjenestetid etter ID |
-| GET | `/search?campusId=&serviceId=` | JWT | — | Søk gudstjenestetider etter campus og gudstjeneste |
-| GET | `/public/:churchId` | Public | — | Hent campus → gudstjeneste → tid-treet for en kirke. Driver nettstedbyggerens `serviceTimes`-element |
-| POST | `/` | JWT | Services.Edit | Opprett eller oppdater gudstjenestetider |
-| DELETE | `/:id` | JWT | Services.Edit | Slett en gudstjenestetid |
+| GET | `/` | JWT | — | List alle gudstjenestetidspunkter. Filtrer med `?serviceId=`. Legg til `?include=groups` for å føye til gruppedata |
+| GET | `/:id` | JWT | — | Hent et gudstjenestetidspunkt etter ID |
+| GET | `/search?campusId=&serviceId=` | JWT | — | Søk etter gudstjenestetidspunkter på campus og gudstjeneste |
+| GET | `/public/:churchId` | Offentlig | — | Hent treet campus → gudstjeneste → tidspunkt for en menighet. Driver nettstedsbyggerens `serviceTimes`-element |
+| POST | `/` | JWT | Services.Edit | Opprett eller oppdater gudstjenestetidspunkter |
+| DELETE | `/:id` | JWT | Services.Edit | Slett et gudstjenestetidspunkt |
 
-## Gruppe-gudstjenestetider
+## Gruppetidspunkter for gudstjenester
 
 Basissti: `/attendance/groupservicetimes`
 
-Kobler grupper til spesifikke gudstjenestetider.
+Knytter grupper til bestemte gudstjenestetidspunkter.
 
-| Metode | Sti | Auth | Tillatelse | Beskrivelse |
+| Metode | Sti | Autentisering | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | List alle gruppe-gudstjenestetid-koblinger. Filtrer med `?groupId=` for å hente koblinger med gudstjenestenavn |
-| GET | `/:id` | JWT | — | Hent en gruppe-gudstjenestetid-kobling etter ID |
-| POST | `/` | JWT | Services.Edit | Opprett eller oppdater gruppe-gudstjenestetid-koblinger |
-| DELETE | `/:id` | JWT | Services.Edit | Slett en gruppe-gudstjenestetid-kobling |
+| GET | `/` | JWT | — | List alle koblinger mellom gruppe og gudstjenestetidspunkt. Filtrer med `?groupId=` for å få koblinger med gudstjenestenavn |
+| GET | `/:id` | JWT | — | Hent en kobling mellom gruppe og gudstjenestetidspunkt etter ID |
+| POST | `/` | JWT | Services.Edit | Opprett eller oppdater koblinger mellom gruppe og gudstjenestetidspunkt |
+| DELETE | `/:id` | JWT | Services.Edit | Slett en kobling mellom gruppe og gudstjenestetidspunkt |
 
-## Oppmøteoppføringer
+## Oppmøteregistreringer
 
 Basissti: `/attendance/attendancerecords`
 
-Tilbyr skrivebeskyttede aggregerte visninger av oppmøtedata for rapportering og visning.
+Tilbyr skrivebeskyttede, aggregerte visninger av oppmøtedata til rapportering og visning.
 
-| Metode | Sti | Auth | Tillatelse | Beskrivelse |
+| Metode | Sti | Autentisering | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Attendance.View | Last oppmøteoppføringer for en person. Krever `?personId=` |
-| GET | `/tree` | JWT | — | Last hele oppmøtetreet (campus, gudstjenester, gudstjenestetider, grupper) |
-| GET | `/trend?campusId=&serviceId=&serviceTimeId=&groupId=` | JWT | Attendance.View Summary | Last oppmøtetrenddata med valgfrie filtre |
-| GET | `/groups?serviceId=&week=` | JWT | Attendance.View | Last gruppeoppmøte for en gudstjeneste i en gitt uke |
-| GET | `/search?campusId=&serviceId=&serviceTimeId=&groupId=&startDate=&endDate=` | JWT | Attendance.View | Søk oppmøteoppføringer med filtre (campus, gudstjeneste, gudstjenestetid, gruppe, datointervall) |
+| GET | `/` | JWT | Attendance.View | Last inn oppmøteregistreringer for en person. Krever `?personId=` |
+| GET | `/tree` | JWT | — | Last inn hele oppmøtetreet (campuser, gudstjenester, gudstjenestetidspunkter, grupper) |
+| GET | `/trend?campusId=&serviceId=&serviceTimeId=&groupId=` | JWT | Attendance.View Summary | Last inn data om oppmøtetrend med valgfrie filtre |
+| GET | `/groups?serviceId=&week=` | JWT | Attendance.View | Last inn gruppeoppmøte for en gudstjeneste i en gitt uke |
+| GET | `/sessionStatus?serviceTimeId=&date=` | JWT | Attendance.View | For hver gruppe som er tilordnet gudstjenestetidspunktet, returneres `{ groupId, sessionId, attendanceCount }` for den datoen (`date` er `YYYY-MM-DD`; `sessionId` er null når gruppen ikke har noen økt). Brukes av dialogen **Hvem mangler fortsatt oppmøte** i B1Admin |
+| GET | `/search?campusId=&serviceId=&serviceTimeId=&groupId=&startDate=&endDate=` | JWT | Attendance.View | Søk i oppmøteregistreringer med filtre (campus, gudstjeneste, gudstjenestetidspunkt, gruppe, datointervall) |
 
-### Eksempel: Oppmøtetrend
+### Eksempel: oppmøtetrend
 
 ```
 GET /attendance/attendancerecords/trend?serviceId=svc-001
@@ -114,37 +115,37 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Sesjoner
+## Økter
 
 Basissti: `/attendance/sessions`
 
-Utvider GenericCrudController med CRUD-rutene `getById` og `delete`. Endepunktene `getAll` og `save` er egendefinerte implementasjoner som også lar gruppeledere administrere sesjoner for sine egne grupper.
+Utvider GenericCrudController med CRUD-rutene `getById` og `delete`. Endepunktene `getAll` og `save` er egne implementasjoner som også lar gruppeledere administrere økter for sine egne grupper.
 
-| Metode | Sti | Auth | Tillatelse | Beskrivelse |
+| Metode | Sti | Autentisering | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Attendance.View eller gruppeleder | List alle sesjoner. Filtrer med `?groupId=` (inkluderer navn). Gruppeledere kan se sesjoner for sine egne grupper |
-| GET | `/:id` | JWT | Attendance.View | Hent en sesjon etter ID |
-| POST | `/` | JWT | Attendance.Edit eller gruppeleder | Opprett eller oppdater sesjoner. Gruppeledere kan lagre sesjoner for sine egne grupper |
-| DELETE | `/:id` | JWT | Attendance.Edit | Slett en sesjon |
+| GET | `/` | JWT | Attendance.View eller gruppeleder | List alle økter. Filtrer med `?groupId=` (inkluderer navn). Gruppeledere kan se økter for sine egne grupper |
+| GET | `/:id` | JWT | Attendance.View | Hent en økt etter ID |
+| POST | `/` | JWT | Attendance.Edit eller gruppeleder | Opprett eller oppdater økter. Gruppeledere kan lagre økter for sine egne grupper |
+| DELETE | `/:id` | JWT | Attendance.Edit | Slett en økt |
 
 ## Besøk
 
 Basissti: `/attendance/visits`
 
-Administrerer individuelle besøksoppføringer (en person som deltar på en bestemt dato) og tilbyr innsjekkingsarbeidsflyten.
+Håndterer enkeltstående besøksregistreringer (en person som møter opp på en bestemt dato) og tilbyr arbeidsflyten for innsjekking.
 
-| Metode | Sti | Auth | Tillatelse | Beskrivelse |
+| Metode | Sti | Autentisering | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
 | GET | `/` | JWT | Attendance.View | List alle besøk. Filtrer med `?personId=` |
 | GET | `/:id` | JWT | Attendance.View | Hent et besøk etter ID |
-| GET | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.View eller Attendance.Checkin | Last innsjekkingsdata for personer på en gudstjeneste. Returnerer besøk med besøkssesjoner fra siste loggførte dato |
+| GET | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.View eller Attendance.Checkin | Last inn innsjekkingsdata for personer på en gudstjeneste. Returnerer besøk med besøksøkter fra siste registrerte dato |
 | POST | `/` | JWT | Attendance.Edit | Opprett eller oppdater besøk |
-| POST | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.Edit eller Attendance.Checkin | Send inn innsjekkingsdata. Oppretter/oppdaterer besøk og besøkssesjoner, fjerner utdaterte oppføringer |
+| POST | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.Edit eller Attendance.Checkin | Send inn innsjekkingsdata. Oppretter/oppdaterer besøk og besøksøkter og fjerner utdaterte registreringer |
 | DELETE | `/:id` | JWT | Attendance.Edit | Slett et besøk |
 
-### Eksempel: Innsjekkingsflyt
+### Eksempel: innsjekkingsflyt
 
-**Trinn 1 -- Last eksisterende innsjekkingsdata:**
+**Trinn 1 -- Last inn eksisterende innsjekkingsdata:**
 
 ```
 GET /attendance/visits/checkin?serviceId=svc-001&peopleIds=person-1,person-2
@@ -192,23 +193,23 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Besøkssesjoner
+## Besøksøkter
 
 Basissti: `/attendance/visitsessions`
 
-Administrerer koblingen mellom besøk og sesjoner (hvilken bestemt sesjon en person deltok på under et besøk). Tilbyr også et hurtiglogg-endepunkt og et nedlastings-/eksportendepunkt.
+Håndterer koblingen mellom besøk og økter (hvilken bestemt økt en person deltok på under et besøk). Tilbyr også et endepunkt for hurtigregistrering og et for nedlasting/eksport.
 
-| Metode | Sti | Auth | Tillatelse | Beskrivelse |
+| Metode | Sti | Autentisering | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Attendance.View eller gruppeleder | List besøkssesjoner. Filtrer med `?sessionId=`. Gruppeledere kan se besøkssesjoner for sine egne grupper |
-| GET | `/:id` | JWT | Attendance.View | Hent en besøkssesjon etter ID |
-| GET | `/download/:sessionId` | JWT | Attendance.View | Last ned oppmøte for en sesjon (returnerer personnavn med til stede/fraværende-status) |
-| POST | `/` | JWT | Attendance.Edit | Opprett eller oppdater besøkssesjoner |
-| POST | `/log` | JWT | Attendance.Edit eller gruppeleder | Hurtiglogg en persons oppmøte til en sesjon. Oppretter automatisk besøk om nødvendig. Gruppeledere kan logge oppmøte for sine egne grupper |
-| DELETE | `/:id` | JWT | Attendance.Edit | Slett en besøkssesjon etter ID |
-| DELETE | `/?personId=&sessionId=` | JWT | Attendance.Edit eller gruppeleder | Fjern en person fra en sesjon. Sletter besøkssesjonen og det overordnede besøket hvis ingen sesjoner gjenstår. Gruppeledere kan fjerne oppmøte for sine egne grupper |
+| GET | `/` | JWT | Attendance.View eller gruppeleder | List besøksøkter. Filtrer med `?sessionId=`. Gruppeledere kan se besøksøkter for sine egne grupper |
+| GET | `/:id` | JWT | Attendance.View | Hent en besøksøkt etter ID |
+| GET | `/download/:sessionId` | JWT | Attendance.View | Last ned oppmøtet for en økt (returnerer personnavn med status til stede/fraværende) |
+| POST | `/` | JWT | Attendance.Edit | Opprett eller oppdater besøksøkter |
+| POST | `/log` | JWT | Attendance.Edit eller gruppeleder | Hurtigregistrer en persons oppmøte på en økt. Oppretter besøk automatisk ved behov. Gruppeledere kan registrere oppmøte for sine egne grupper |
+| DELETE | `/:id` | JWT | Attendance.Edit | Slett en besøksøkt etter ID |
+| DELETE | `/?personId=&sessionId=` | JWT | Attendance.Edit eller gruppeleder | Fjern en person fra en økt. Sletter besøksøkten og det overordnede besøket hvis ingen økter gjenstår. Gruppeledere kan fjerne oppmøte for sine egne grupper |
 
-### Eksempel: Hurtiglogg oppmøte
+### Eksempel: hurtigregistrering av oppmøte
 
 ```
 POST /attendance/visitsessions/log
@@ -226,7 +227,7 @@ Authorization: Bearer <token>
 {}
 ```
 
-### Eksempel: Last ned sesjonsoppmøte
+### Eksempel: last ned oppmøte for en økt
 
 ```
 GET /attendance/visitsessions/download/sess-001
@@ -258,14 +259,14 @@ Authorization: Bearer <token>
 
 Basissti: `/attendance/streaks`
 
-Sporer oppmøterekker for enkeltpersoner -- sammenhengende uker en person har deltatt. Nyttig for engasjementsmålinger og gamification.
+Følger oppmøterekker for enkeltpersoner -- antall påfølgende uker en person har møtt opp. Nyttig for engasjementsmålinger og spillifisering.
 
-| Metode | Sti | Auth | Tillatelse | Beskrivelse |
+| Metode | Sti | Autentisering | Tillatelse | Beskrivelse |
 |--------|------|------|------------|-------------|
-| GET | `/person/:personId` | JWT | — | Last oppmøterekker for en person |
+| GET | `/person/:personId` | JWT | — | Last inn oppmøterekker for en person |
 
 ## Relaterte sider
 
-- [Medlemskaps-endepunkter](./membership) — Personer, grupper, roller og kirkeadministrasjon
+- [Endepunkter for medlemskap](./membership) — Personer, grupper, roller og menighetsadministrasjon
 - [Autentisering og tillatelser](./authentication) — Innloggingsflyt, JWT, tillatelsesmodell
-- [Modulstruktur](../module-structure) — Kodeorganiseringsmønstre
+- [Modulstruktur](../module-structure) — Mønstre for kodeorganisering

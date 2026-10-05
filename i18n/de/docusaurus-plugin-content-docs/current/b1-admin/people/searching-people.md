@@ -1,51 +1,51 @@
 ---
-title: "Nach Personen suchen"
+title: "Personen suchen"
 ---
 
-# Nach Personen suchen
+# Personen suchen
 
 <div class="article-intro">
 
-Die Seite **Personen** zeigt dein Kirchenverzeichnis in einer durchsuchbaren, sortierbaren Tabelle an. Du kannst schnell jemanden in deiner Gemeinde finden, anpassen, welche Informationen angezeigt werden, und deine Ergebnisse exportieren. Eine effiziente Suche ist für alltägliche Kirchenverwaltungsaufgaben wie die Nachverfolgung von Besuchern, die Vorbereitung von Kontaktlisten und die Verwaltung von Mitgliedsdatensätzen unerlässlich.
+Die Seite **Personen** zeigt Ihr Kirchenverzeichnis in einer durchsuchbaren, sortierbaren Tabelle an. Sie können schnell jemanden in Ihrer Gemeinde finden, anpassen, welche Informationen angezeigt werden, und Ihre Ergebnisse exportieren. Eine effiziente Suche ist für alltägliche Aufgaben der Kirchenverwaltung wie die Nachverfolgung von Besuchern, die Erstellung von Kontaktlisten und die Verwaltung von Mitgliederdatensätzen unerlässlich.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor du beginnst</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Du benötigst ein aktives B1 Admin-Konto mit der Berechtigung, Personen anzuzeigen. Siehe [Rollen & Berechtigungen](roles-permissions.md), wenn du dir über deine Zugriffsstufe nicht sicher bist.
-- Dein Kirchenverzeichnis sollte Personen enthalten. Wenn du noch niemanden hinzugefügt hast, siehe [Personen hinzufügen](adding-people.md) oder [Daten importieren](importing-data.md).
+- Sie benötigen ein aktives B1 Admin-Konto mit Berechtigung zum Anzeigen von Personen. Weitere Informationen finden Sie unter [Rollen & Berechtigungen](roles-permissions.md), falls Sie unsicher sind, welchen Zugriff Sie haben.
+- Ihr Kirchenverzeichnis sollte Personen enthalten. Falls Sie noch niemanden hinzugefügt haben, lesen Sie [Personen hinzufügen](adding-people.md) oder [Daten importieren](importing-data.md).
 
 </div>
 
-## Quick Search
+## Schnellsuche
 
-Die Suchleiste oben auf der Seite Personen ermöglicht dir, Mitglieder in Echtzeit zu finden:
+Mit der Suchleiste oben auf der Seite „Personen" können Sie Mitglieder in Echtzeit finden:
 
-1. Klicke auf das **Suchfeld** oben auf der Seite Personen.
-2. Beginne, einen Namen, eine E-Mail-Adresse oder ein anderes Schlüsselwort einzugeben.
-3. Die Ergebnisse werden automatisch gefiltert, während du eingibst (es gibt eine kurze Verzögerung von etwa einer halben Sekunde, damit die Suche nicht bei jedem Tastenanschlag ausgeführt wird).
-4. Die Tabelle unten wird aktualisiert, um nur die übereinstimmenden Ergebnisse anzuzeigen.
+1. Klicken Sie auf das **Suchfeld** oben auf der Seite „Personen".
+2. Geben Sie einen Namen, eine E-Mail oder ein anderes Schlüsselwort ein.
+3. Ergebnisse werden automatisch gefiltert, während Sie eingeben (es gibt eine kurze Verzögerung von etwa einer halben Sekunde, damit die Suche nicht bei jedem Tastendruck ausgeführt wird).
+4. Die Tabelle unten wird aktualisiert und zeigt nur die übereinstimmenden Ergebnisse.
 
 :::tip
-Du brauchst Enter nicht zu drücken. Die Suche wird automatisch ausgeführt, nachdem du mit der Eingabe fertig bist.
+Sie müssen nicht die Eingabetaste drücken. Die Suche wird automatisch ausgeführt, nachdem Sie fertig eingeben.
 :::
 
-## Sortieren von Ergebnissen
+## Ergebnisse sortieren
 
-Du kannst das Verzeichnis sortieren, indem du eine beliebige Spaltenüberschrift in der Tabelle klickst:
+Sie können das Verzeichnis sortieren, indem Sie auf einen beliebigen Spaltenkopf in der Tabelle klicken:
 
-1. Klicke auf eine **Spaltenüberschrift** (z. B. **Name** oder **E-Mail**), um nach dieser Spalte zu sortieren.
-2. Klicke auf die gleiche Kopfzeile erneut, um die Sortierreihenfolge umzukehren.
+1. Klicken Sie auf einen **Spaltenkopf** (z. B. **Name** oder **E-Mail**), um nach dieser Spalte zu sortieren.
+2. Klicken Sie auf denselben Kopf erneut, um die Sortierreihenfolge umzukehren.
 
-Dies macht es einfach, Personen alphabetisch, nach Alter oder nach einer anderen sichtbaren Spalte zu finden.
+Dies erleichtert es, Personen alphabetisch, nach Alter oder nach einer anderen sichtbaren Spalte zu finden.
 
 ## Spalten anpassen
 
-Nicht alle Informationen müssen auf einmal sichtbar sein. Du kannst auswählen, welche Spalten in der Tabelle angezeigt werden:
+Nicht alle Informationen müssen gleichzeitig sichtbar sein. Sie können auswählen, welche Spalten in der Tabelle angezeigt werden:
 
-1. Suche das **Spaltenauswahl-Dropdown** oben in der Tabelle.
-2. Aktiviere oder deaktiviere Spalten, um sie anzuzeigen oder auszublenden. Verfügbare Spalten umfassen:
+1. Suchen Sie das **Dropdown-Menü Spaltenwähler** oben in der Tabelle.
+2. Aktivieren oder deaktivieren Sie Spalten, um sie anzuzeigen oder auszublenden. Verfügbare Spalten umfassen:
    - **Foto**
    - **Name**
    - **E-Mail**
@@ -56,41 +56,45 @@ Nicht alle Informationen müssen auf einmal sichtbar sein. Du kannst auswählen,
    - **Geschlecht**
    - **Mitgliedschaftsstatus**
    - **Campus**
-3. Die Tabelle wird sofort aktualisiert, um deine Auswahl widerzuspiegeln.
+3. Die Tabelle wird sofort aktualisiert, um Ihre Auswahl widerzuspiegeln.
+
+### Benutzerdefinierte Felder als Spalten anzeigen
+
+Der Spaltenwähler hat zwei Registerkarten: **Standard** enthält die oben aufgelisteten integrierten Spalten, und **Benutzerdefiniert** enthält die [benutzerdefinierten Felder](../settings/custom-fields.md) Ihrer Kirche sowie die Fragen aus allen Personen-Formularen. Aktivieren Sie auf der Registerkarte **Benutzerdefiniert** ein benutzerdefiniertes Feld, um es als Spalte hinzuzufügen, und der Wert jeder Person für dieses Feld wird in der Tabelle angezeigt. Werte werden auf die gleiche Weise angezeigt wie im Profil der Person -- Ja/Nein-Felder zeigen *Ja* oder *Nein*, Felder mit mehreren Optionen zeigen das Label der Option, und Daten werden als Kurzdaten angezeigt. Personen ohne einen Wert für das Feld zeigen eine leere Zelle.
 
 :::info
-Deine Spaltenauswahl beeinflusst, was beim Export in CSV enthalten ist. Passe Spalten vor dem Export an, um genau die benötigten Daten zu erhalten.
+Ihre Spaltenauswahl beeinflusst, was enthalten ist, wenn Sie nach CSV exportieren. Passen Sie die Spalten vor dem Export an, um genau die benötigten Daten zu erhalten.
 :::
 
-## Pagination
+## Seitennummerierung
 
-Wenn dein Verzeichnis viele Datensätze enthält, werden die Ergebnisse auf Seiten aufgeteilt. Verwende die **Seitennummerierungssteuerelemente** unten in der Tabelle, um zwischen Seiten zu navigieren. Die aktuelle Seite und die Gesamtzahl der Datensätze werden angezeigt, damit du immer weißt, wo du dich in der Liste befindest.
+Wenn Ihr Verzeichnis viele Datensätze hat, werden Ergebnisse auf mehrere Seiten aufgeteilt. Verwenden Sie die **Seitennummerierungssteuerelemente** am unteren Ende der Tabelle, um zwischen Seiten zu navigieren. Die aktuelle Seite und die Gesamtanzahl der Datensätze werden angezeigt, damit Sie immer wissen, wo Sie sich in der Liste befinden.
 
 :::tip
-Wenn du mehr Ergebnisse auf einmal sehen möchtest, grenze deine Suche ein, um die Liste einzugrenzen, anstatt durch ein großes Verzeichnis zu navigieren.
+Wenn Sie mehr Ergebnisse auf einmal sehen möchten, verfeinern Sie Ihre Suche, um die Liste einzugrenzen, anstatt durch ein großes Verzeichnis zu blättern.
 :::
 
-## Exportieren von Suchergebnissen
+## Suchergebnisse exportieren
 
-Du kannst deine aktuellen Suchergebnisse jederzeit als CSV-Datei herunterladen:
+Sie können Ihre aktuellen Suchergebnisse jederzeit als CSV-Datei herunterladen:
 
-1. Wende jede Suche oder Filter an, die du möchtest.
-2. Passe deine Spalten an, um die benötigten Daten einzubeziehen.
-3. Klicke auf die Schaltfläche **Exportieren**.
-4. Eine CSV-Datei wird auf deinen Computer heruntergeladen und ist bereit, in Excel, Google Sheets oder einer beliebigen Tabellenkalkulationsanwendung geöffnet zu werden.
+1. Wenden Sie alle gewünschten Suchfilter an.
+2. Passen Sie Ihre Spalten an, um die benötigten Daten zu enthalten.
+3. Klicken Sie auf die Schaltfläche **Exportieren**.
+4. Eine CSV-Datei wird auf Ihren Computer heruntergeladen und ist bereit, in Excel, Google Sheets oder einer beliebigen Tabellenkalkulation geöffnet zu werden.
 
-Weitere Details zum Export findest du unter [Daten exportieren](./exporting-data.md).
+Weitere Informationen zum Export finden Sie unter [Daten exportieren](./exporting-data.md).
 
 :::tip
-Für erweiterte Abfragen - wie das Finden aller, die in den letzten drei Monaten nicht anwesend waren - versuche die Funktion [KI-Suche](./ai-search.md), mit der du einfache Sprachfragen suchen kannst.
+Für komplexere Abfragen -- wie das Finden von Personen, die in den letzten drei Monaten nicht anwesend waren -- versuchen Sie die Funktion [KI-Suche](./ai-search.md), mit der Sie mithilfe von Fragen in natürlicher Sprache suchen können.
 :::
 
 ## Erweiterte Suche
 
-Die erweiterte Suche ermöglicht dir, präzise Filter zu erstellen, indem du Bedingungen kombinierst. Öffne es von der Seite Personen, erweitere dann eine Kategorie und aktiviere die Felder, nach denen du filtern möchtest. Wähle für jeden Operator und Wert. Kategorien umfassen **Namen**, **Demografische Daten**, **Kontakt**, **Mitgliedschaft**, **Aktivität** (Spenden und Anwesenheit) und **Benutzerdefinierte Felder**.
+Mit der erweiterten Suche können Sie genaue Filter erstellen, indem Sie Bedingungen kombinieren. Öffnen Sie sie auf der Seite „Personen" und erweitern Sie dann eine Kategorie und aktivieren Sie die Felder, nach denen Sie filtern möchten, und wählen Sie für jedes einen Operator und einen Wert. Kategorien umfassen **Namen**, **Demografische Daten**, **Kontakt**, **Mitgliedschaft**, **Aktivität** (Spenden und Anwesenheit) und **Benutzerdefinierte Felder**.
 
-Die Kategorie **Benutzerdefinierte Felder** listet die [Benutzerdefinierten Felder](../settings/custom-fields.md) deiner Kirche auf - die Felder, die du in Einstellungen definierst, um deine eigenen Informationen zu verfolgen (wie ein Hintergrund-Check-Ablaufdatum). Die angebotenen Operatoren entsprechen dem Typ jedes Feldes: Textfelder unterstützen *enthält / gleich / beginnt mit / endet mit*, Zahlenfelder unterstützen die Vergleichsoperatoren, Datumsfelder unterstützen *gleich / nach / vor* und Ja/Nein und Mehrfachauswahlfelder ermöglichen es dir, einen Wert zu wählen. Jedes Feld, nach dem du hier filtern kannst, kann als aktive [Liste](./lists.md) gespeichert werden.
+Die Kategorie **Benutzerdefinierte Felder** listet die [benutzerdefinierten Felder](../settings/custom-fields.md) Ihrer Kirche auf -- die Felder, die Sie in „Einstellungen" definieren, um Ihre eigenen Informationen zu verfolgen (z. B. ein Ablaufdatum der Hintergrundüberprüfung). Die angebotenen Operatoren entsprechen dem Typ des Felds: Textfelder unterstützen *enthält / gleich / beginnt mit / endet mit*, Zahlenfelder unterstützen die Vergleichsoperatoren, Datumsfelder unterstützen *gleich / nach / vor*, und Ja/Nein- und Felder mit mehreren Optionen ermöglichen es Ihnen, einen Wert auszuwählen. Jedes Feld, das Sie hier filtern können, kann als Live-[Liste](./lists.md) gespeichert werden.
 
-## Suchanfragen als Listen speichern
+## Suchen als Listen speichern
 
-Nach einer Suche wird eine Schaltfläche **Als Liste speichern** (Lesezeichensymbol) in der Kopfzeile der Seite Personen angezeigt. Klicke darauf, um deine aktuelle Abfrage unter einem Namen und einer optionalen Kategorie zu speichern, damit du sie in zukünftigen Sitzungen sofort neu laden kannst. Siehe [Gespeicherte Listen](./lists.md) für vollständige Details.
+Nach Ausführung einer Suche wird auf der Seite „Personen" eine Schaltfläche **Als Liste speichern** (Lesezeichen-Symbol) in der Kopfzeile angezeigt. Klicken Sie darauf, um Ihre aktuelle Abfrage unter einem Namen und einer optionalen Kategorie zu speichern, damit Sie sie in zukünftigen Sitzungen sofort erneut laden können. Weitere Informationen finden Sie unter [Gespeicherte Listen](./lists.md).

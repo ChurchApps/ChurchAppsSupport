@@ -6,7 +6,7 @@ title: "Revisione della Tua Famiglia"
 
 <div class="article-intro">
 
-Dopo aver selezionato una persona dai risultati della ricerca, l'app carica l'intera famiglia e la mostra nella schermata di revisione della famiglia. Questo è il fulcro centrale del processo di check-in, dove puoi vedere tutti i membri della tua famiglia e gestire le loro assegnazioni di gruppo prima di effettuare il check-in.
+Dopo aver selezionato una persona dai risultati della ricerca, l'app carica l'intera famiglia e la visualizza nella schermata di revisione della famiglia. Questo è l'hub centrale del processo di check-in in cui puoi vedere tutti nella tua famiglia e gestire i loro incarichi di gruppo prima di fare il check-in.
 
 </div>
 
@@ -18,46 +18,47 @@ Dopo aver selezionato una persona dai risultati della ricerca, l'app carica l'in
 
 </div>
 
-## Visualizzare i Membri della Famiglia
+## Visualizzazione dei Membri della Famiglia
 
-Ogni membro della famiglia compare come una scheda con:
+Ogni membro della famiglia appare come una scheda con:
 
-- La sua **foto** (o un'icona segnaposto se non è disponibile alcuna foto)
-- Il suo **nome visualizzato**
-- Un **riepilogo delle sue attuali assegnazioni di gruppo** (mostrato come piccoli chip sotto il nome quando la scheda è compressa)
+- La loro **foto** (o un'icona segnaposto se nessuna foto è in archivio)
+- Il loro **nome visualizzato**
+- Un **riassunto dei loro incarichi di gruppo attuali** (mostrato come piccole schede sotto il nome quando la scheda è compressa)
 - Una **freccia di espansione/compressione** sul lato destro
 
-## Espandere un Membro
+## Espansione di un Membro
 
-Tocca la scheda di un membro per espanderla. Una volta espansa, vedrai una riga per ogni **orario di servizio** all'interno del servizio selezionato. Ogni riga mostra:
+Tocca la scheda di un membro per espanderla. Quando espanso, vedrai una riga per ogni **orario di servizio** all'interno del servizio selezionato. Ogni riga mostra:
 
-- Il **nome dell'orario di servizio** (ad esempio, "9:00" o "11:00")
-- Un **pulsante** che mostra il gruppo attualmente assegnato, oppure "Seleziona Gruppo" se non è stato ancora assegnato alcun gruppo
+- Il **nome dell'orario di servizio** (ad esempio, "9:00 AM" o "11:00 AM")
+- I **gruppi offerti** a quell'orario di servizio, elencati sotto il nome (ad esempio, "Asilo Nido, Materna, Classe Biblica per Adulti"), in modo che tu possa vedere quali classi sono disponibili prima di scegliere
+- Un **pulsante** che mostra il gruppo attualmente assegnato, o "Seleziona Gruppo" se nessun gruppo è stato assegnato finora
 
-Tocca il pulsante del gruppo per andare alla [schermata di selezione del gruppo](./group-assignment), dove puoi scegliere o cambiare il gruppo per quella persona e quell'orario di servizio.
+Tocca il pulsante del gruppo per andare alla [schermata di selezione del gruppo](./group-assignment) dove puoi scegliere o modificare il gruppo per quella persona e orario di servizio.
 
-La scheda espansa mostra anche i chip **Membro**, **Ospite** e **Volontario**. Toccane uno per impostare come questa persona sta effettuando il check-in -- Membro è l'impostazione predefinita. Il tipo è importante per le stanze dei bambini: i volontari contano ai fini del rapporto volontari-bambini della stanza, mentre gli ospiti contano ai fini di eventuali capacità per ospiti impostate dalla tua chiesa.
+La scheda espansa mostra anche i chip **Membro**, **Ospite** e **Volontario**. Tocca uno per impostare come questa persona sta facendo il check-in -- Membro è l'impostazione predefinita. Il tipo è importante per le stanze dei bambini: i volontari contano verso il rapporto volontario-bambino della stanza, e gli ospiti contano verso qualsiasi capacità di ospiti che la tua chiesa ha impostato.
 
 Tocca di nuovo la scheda del membro per comprimerla.
 
 :::tip
-Non è necessario assegnare ogni membro della famiglia a un gruppo. Gli adulti che partecipano al servizio di culto principale possono restare senza un'assegnazione di gruppo. Assegna i gruppi solo per i membri che devono registrarsi in una classe o un programma specifico.
+Non hai bisogno di assegnare ogni membro della famiglia a un gruppo. Gli adulti che partecipano al servizio di culto principale possono essere lasciati senza incarico di gruppo. Assegna i gruppi solo per i membri che hanno bisogno di essere controllati in una classe o programma specifico.
 :::
 
-## Navigare da Questa Schermata
+## Navigazione da Questa Schermata
 
-Dalla schermata di revisione della famiglia hai tre opzioni:
+Dalla schermata di revisione della famiglia, hai tre opzioni:
 
-- **Espandi un membro** e tocca il pulsante di un orario di servizio per [assegnare o cambiare un gruppo](./group-assignment).
+- **Espandi un membro** e tocca un pulsante di orario di servizio per [assegnare o modificare un gruppo](./group-assignment).
 - **Tocca il pulsante Aggiungi Ospite** sotto l'elenco dei membri per [aggiungere un ospite](./adding-guests) alla tua famiglia.
-- **Tocca il pulsante Check-in** in fondo allo schermo per [completare il check-in](./completing-checkin) di tutti i membri della famiglia.
+- **Tocca il pulsante Check-in** in fondo allo schermo per [completare il check-in](./completing-checkin) per tutti nella tua famiglia.
 
 :::info
-Eventuali assegnazioni di gruppo da un check-in precedente allo stesso servizio vengono precaricate automaticamente. Se i tuoi bambini frequentano gli stessi gruppi ogni settimana, potresti non dover cambiare nulla -- basta rivedere ed effettuare il check-in.
+Qualsiasi incarico di gruppo da un check-in precedente allo stesso servizio viene pre-caricato automaticamente. Se i tuoi bambini frequentano gli stessi gruppi ogni settimana, potrebbe non essere necessario cambiare nulla -- basta rivedere e fare il check-in.
 :::
 
-## Prossimi Passi
+## Prossimi Passaggi
 
-- [Assegna i gruppi](./group-assignment) ai membri della famiglia che devono registrarsi in una classe o un programma specifico.
-- [Aggiungi un ospite](./adding-guests) se qualcuno sta visitando insieme alla tua famiglia.
-- [Completa il check-in](./completing-checkin) quando le assegnazioni di tutti risultano corrette.
+- [Assegna gruppi](./group-assignment) ai membri della famiglia che hanno bisogno di fare il check-in in una classe o programma specifico.
+- [Aggiungi un ospite](./adding-guests) se qualcuno sta visitando con la tua famiglia.
+- [Completa il check-in](./completing-checkin) quando gli incarichi di tutti sembrano corretti.

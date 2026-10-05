@@ -1,16 +1,53 @@
 ---
-title: "수업 (지원 중단)"
+title: "수업(지원 중단됨)"
 ---
-# 수업 (지원 중단)
+
+# 수업(지원 중단됨)
+
 :::danger 수업 탭이 FreePlay로 대체되었습니다
-B1.church의 포함된 **수업** 탭은 지원 중단되었습니다. Lessons.church의 교육 과정 재생은 이제 **[FreePlay](/docs/freeplay/)**를 통해 제공됩니다.
-포함된 탭이 제공할 수 없는 오프라인 재생, 교실 페어링, TV 원격 경험을 제공합니다.
-교육 과정을 직접 탐색, 일정, 편집하려면, [Lessons.church](https://lessons.church)에 로그인합니다.
-교실 TV에서 수업을 재생하려면, 해당 TV 기기에 [FreePlay](/docs/freeplay/getting-started/)를 설치합니다.
+B1.church의 내장 **수업** 탭은 지원이 중단되었습니다. Lessons.church의 교과 과정 재생은 이제 **[FreePlay](/docs/freeplay/)** 를 통해 제공됩니다. FreePlay는 교실 화면, Fire TV, Apple TV 및 Android TV용 ChurchApps의 무료 TV 앱이며, 내장 탭이 제공하지 못하는 오프라인 재생, 교실 페어링 및 TV 리모콘 경험을 제공합니다.
+
+교과 과정을 찾아보거나 일정을 정하거나 직접 편집하려면 브라우저에서 [Lessons.church](https://lessons.church)에 로그인하세요. 교실 TV에서 수업을 재생하려면 TV 기기에 [FreePlay](/docs/freeplay/getting-started/)를 설치하세요.
+
+B1Admin에서 수업 계획 유형과 연결된 그룹의 부모는 이 지원 중단된 탭이 아닌 [그룹 세부정보](/docs/b1-church/groups/group-details.md) 페이지에서 **이 주의 수업**을 봅니다.
 :::
+
 <div class="article-intro">
-**수업** 탭은 교회의 교육 과정 및 학습 자료에 대한 액세스를 제공했습니다.
+
+**수업** 탭은 교회의 교과 과정 및 학습 자료에 접근할 수 있게 했습니다. 콘텐츠는 Lessons.church 플랫폼을 통해 제공되었으며 B1.church에 직접 내장되어 있어 별도의 사이트로 이동할 필요가 없었습니다.
+
 </div>
-## 관련 페이지
-- [FreePlay](/docs/freeplay/)
-- [Lessons.church](https://lessons.church)
+
+<div class="prereqs">
+<h4>시작하기 전에</h4>
+
+- B1.church 계정에 [로그인](../getting-started/logging-in.md)해야 합니다. 수업 탭은 회원 영역에 있으며 인증이 필요합니다.
+- 교회에서 Lessons.church를 통해 교과 과정을 구성해야 합니다.
+
+</div>
+
+## 수업 접근
+
+1. B1.church 회원 포털에 로그인합니다.
+2. [회원 네비게이션](../getting-started/navigating.md)에서 **수업** 탭을 클릭합니다.
+3. Lessons.church 콘텐츠가 페이지 내에서 직접 로드됩니다.
+
+수업 탭을 열 때 로그인이 자동으로 이월됩니다. Lessons.church에 별도로 다시 로그인할 필요가 없습니다.
+
+## 할 수 있는 것
+
+수업 탭 내에서 교회에서 제공한 교과 과정을 탐색할 수 있습니다. 교회의 설정 방식에 따라 다음을 찾을 수 있습니다:
+
+- **수업 계획** -- 섹션과 활동이 있는 구조화된 개요
+- **프레젠테이션 및 미디어** -- 수업을 함께 할 슬라이드, 동영상 및 이미지
+- **다운로드 가능한 자료** -- 추가 학습을 위한 파일 및 추가 자료
+
+수업 내의 개별 섹션을 클릭하여 대화 창에서 해당 콘텐츠를 볼 수 있습니다. **뒤로** 버튼을 사용하여 섹션 목록으로 돌아가거나 **닫기**를 클릭하여 대화를 종료합니다.
+
+:::tip
+그룹에 일정이 정해진 수업이 [그룹 세부정보](../groups/group-details.md) 페이지에 **이 주의 수업**으로 표시되어 수업 탭으로 직접 이동하지 않고도 할당된 교과 과정을 쉽게 찾을 수 있습니다.
+:::
+
+## 가용성
+
+수업 탭은 교회에서 Lessons.church를 통해 교과 과정을 구성했을 때 나타납니다. 회원 네비게이션에서 **수업** 탭이 보이지 않으면 교회에서 수업 콘텐츠를 설정하지 않았을 수 있습니다. 자세한 내용은 교회 관리자에게 문의하세요.

@@ -1,36 +1,46 @@
 ---
-title: "Pangkalahatang-tanaw ng FreePlay"
+title: "Pangkalahatang-ideya ng FreePlay"
 ---
 
-# Pangkalahatang-tanaw ng FreePlay
+# Pangkalahatang-ideya ng FreePlay
 
 <div class="article-intro">
 
-Ang FreePlay ay isang TV app para sa mga simbahan na nagpapakita ng nilalaman ng aralin sa mga TV ng silid-aralan. Tumatakbo ito sa Android TV, Amazon Fire TV, at Apple TV, at dinisenyo upang gumana nang walang koneksyon sa internet tuwing umaga ng Linggo. Maaaring mag-pre-download ng mga materyal sa aralin ang mga boluntaryo sa loob ng linggo, pagkatapos ay pindutin na lang ang play kapag nagsimula na ang klase.
+Ang FreePlay ay isang TV app para sa mga simbahan na nagpapakita ng nilalaman ng mga leksyon sa mga TV sa silid-aralan. Tumatakbo ito sa Android TV, Amazon Fire TV, at Apple TV, at idinisenyo para gumana kahit walang internet tuwing Linggo ng umaga. Maaaring i-download nang maaga ng mga volunteer ang mga materyales ng leksyon sa loob ng linggo, at pindutin na lang ang play kapag nagsimula na ang klase.
 
 </div>
 
+:::tip Bago ka ba sa FreePlay? Dito magsimula
+Panoorin ang aming **<a href="/guides/freeplay-quickstart" target="_blank">quick start video</a>** — i-install ang FreePlay at simulan ang pag-play ng nilalaman sa loob lang ng ilang minuto. Hindi kailangan ng kaalaman sa teknolohiya.
+:::
+
+:::tip Handa ka na bang magpatuloy?
+Gagabayan ka ng aming **<a href="/guides/freeplay-b1admin" target="_blank">kumpletong gabay sa pag-set up</a>** sa pag-link ng B1 Admin para awtomatikong ma-download sa TV ng inyong silid-aralan ang tamang leksyon bawat linggo. May kasamang mga video at nakasulat na hakbang.
+:::
+
 ## Mga Pangunahing Tampok
 
-- **Offline playback** - Mag-download ng mga video at image slide nang maaga upang hindi ka kailanman umasa sa Wi-Fi habang may serbisyo
-- **Classroom pairing** - Ikonekta ang iyong TV sa isang partikular na silid at awtomatikong tumanggap ng naka-iskedyul na nilalaman ng aralin
-- **Plan pairing** - I-link ang iyong device sa isang plano ng serbisyo ng simbahan para sa koordinadong nilalaman sa mga silid
-- **Mga content provider** - Mag-browse at mag-download ng nilalaman mula sa mga external na pinagmulan tulad ng [Lessons.church](/docs/lessons-church/) at Bible Project
-- **TV remote friendly** - I-navigate ang buong app gamit ang isang karaniwang TV remote na gumagamit ng directional buttons at select
-- **Collapsible sidebar** - Isang makitid na sidebar ang nagpapanatiling accessible ng navigation nang hindi nagkakalat sa screen
+- **Offline playback** - I-download nang maaga ang mga video at image slide para hindi kayo umaasa sa Wi-Fi habang may serbisyo
+- **Pamamahala ng downloads** - Tingnan at pamahalaan ang lahat ng na-download na nilalaman mula sa **Settings** > **Downloads**
+- **Classroom pairing** - Ikonekta ang inyong TV sa isang partikular na silid at awtomatikong tumanggap ng nakaiskedyul na nilalaman ng leksyon
+- **Plan pairing** - I-link ang inyong device sa plano ng serbisyo ng simbahan para sa koordinadong nilalaman sa iba't ibang silid
+- **Mga content provider** - Mag-browse at mag-download ng nilalaman mula sa mga panlabas na pinagmulan tulad ng [Lessons.church](/docs/lessons-church/) at Bible Project
+- **Mga Anunsyo** - I-loop ang isang folder ng mga slide mula sa nakakonektang provider -- tingnan ang [Mga Anunsyo](./content-providers/announcements)
+- **Madaling gamitin gamit ang TV remote** - I-navigate ang buong app gamit ang karaniwang TV remote sa pamamagitan ng mga directional button at select
+- **Collapsible na sidebar** - Pinananatiling madaling ma-access ang nabigasyon ng isang manipis na sidebar nang hindi sinisiksik ang screen
 
 ## Paano Ito Gumagana
 
-Kapag inilunsad mo ang FreePlay, kumokonekta ito sa iyong mga content provider at nagsusuri ng available na nilalaman. Mula doon maaari kang mag-browse ng mga folder, mag-download ng media, at mag-play ng mga aralin -- lahat ay na-optimize para sa karanasan sa malaking TV screen.
+Kapag binuksan ninyo ang FreePlay, kokonekta ito sa inyong mga content provider at titingnan ang mga available na nilalaman. Mula roon, maaari kayong mag-browse ng mga folder, mag-download ng media, at mag-play ng mga leksyon -- lahat ay optimized para sa karanasan sa malaking TV screen.
 
 ## Mga Seksyon
 
-- **[Pagsisimula](./getting-started/)** - I-install ang app, ilunsad ito, at piliin kung paano kumonekta
-- **[Classroom Mode](./classroom-mode/)** - Mag-pair sa isang silid-aralan at mag-play ng mga naka-iskedyul na aralin
-- **[Plan Mode](./plan-mode/)** - Mag-pair sa isang plano ng serbisyo ng simbahan
-- **[Mga Content Provider](./content-providers/)** - Kumonekta sa mga external na pinagmulan ng nilalaman
-- **[Pagba-browse ng mga Aralin](./browsing-lessons/)** - Galugarin ang buong library ng aralin ayon sa programa at pag-aaral
+- **[Pagsisimula](./getting-started/)** - I-install ang app, buksan ito, at piliin kung paano kokonekta
+- **[Classroom Mode](./classroom-mode/)** - Mag-pair sa isang silid-aralan at mag-play ng mga nakaiskedyul na leksyon
+- **[Plan Mode](./plan-mode/)** - Mag-pair sa plano ng serbisyo ng simbahan
+- **[Mga Content Provider](./content-providers/)** - Kumonekta sa mga panlabas na pinagmumulan ng nilalaman
+- **[Pag-browse ng mga Leksyon](./browsing-lessons/)** - Tuklasin ang buong aklatan ng mga leksyon ayon sa programa at pag-aaral
 
 :::info
-Ang FreePlay ay bahagi ng [ChurchApps](https://churchapps.org) suite ng mga libre, open-source na tool para sa mga simbahan.
+Ang FreePlay ay bahagi ng [ChurchApps](https://churchapps.org), isang suite ng mga libre at open-source na kasangkapan para sa mga simbahan.
 :::

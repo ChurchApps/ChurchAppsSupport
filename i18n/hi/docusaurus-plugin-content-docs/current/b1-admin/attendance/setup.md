@@ -1,66 +1,66 @@
 ---
-title: "उपस्थिति सेटअप"
+title: "उपस्थिति व्यवस्था"
 ---
 
-# Attendance Setup
+# उपस्थिति व्यवस्था
 
 <div class="article-intro">
 
-Before you can track attendance, you need to tell B1 Admin about your church's physical locations, when services happen, and which groups meet at each service. This one-time setup creates the structure that powers all attendance tracking and reporting across your church.
+इससे पहले कि आप उपस्थिति को track कर सकें, आपको B1 Admin को अपने चर्च के भौतिक स्थानों, सेवाएं कब होती हैं, और कौन से समूह प्रत्येक सेवा पर मिलते हैं, के बारे में बताने की आवश्यकता है। यह एक बार setup संरचना बनाता है जो आपके चर्च में सभी उपस्थिति tracking और reporting को power देती है।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- You need an active B1 Admin account with permission to manage attendance. See [Roles & Permissions](../people/roles-permissions.md) if you're unsure about your access level.
-- If you plan to assign groups to service times, make sure your [groups are created](../groups/creating-groups.md) first.
+- आपको उपस्थिति को manage करने की अनुमति के साथ एक सक्रिय B1 Admin खाता चाहिए। यदि आप अपने access level के बारे में निश्चित नहीं हैं तो [Roles & Permissions](../people/roles-permissions.md) देखें।
+- यदि आप groups को service times से assign करना चाहते हैं, तो सुनिश्चित करें कि आपके [groups पहले बनाए गए हैं](../groups/creating-groups.md)।
 
 </div>
 
-## Key Concepts
+## मुख्य अवधारणाएं
 
-- **Campus** -- a physical location where your church meets (e.g., "Main Campus," "North Campus"). Campuses are managed under **Settings**.
-- **Service** -- a recurring gathering at a campus (e.g., "Sunday Service," "Midweek").
-- **Service Time** -- a specific time a service happens (e.g., "9:00 AM," "11:00 AM").
-- **Scheduled Group** -- a group assigned to a specific service time. Attendance is tracked in the context of that service.
-- **Unscheduled Group** -- a group that tracks attendance on its own, without being tied to a service time.
+- **Campus** -- एक भौतिक स्थान जहां आपका चर्च मिलता है (उदाहरण के लिए, "Main Campus," "North Campus")। Campuses को **Settings** के तहत manage किया जाता है।
+- **Service** -- एक कैंपस पर एक recurring gathering (उदाहरण के लिए, "Sunday Service," "Midweek")।
+- **Service Time** -- एक विशिष्ट समय जब एक सेवा होती है (उदाहरण के लिए, "9:00 AM," "11:00 AM")।
+- **Scheduled Group** -- एक group जो एक विशिष्ट सेवा समय को assign किया जाता है। Attendance उस सेवा के context में track किया जाता है।
+- **Unscheduled Group** -- एक group जो एक सेवा समय के tied होने के बिना अपनी attendance को track करता है।
 
-## Setting Up Your Attendance Structure
+## अपनी Attendance Structure को सेट अप करना
 
-1. Open **B1 Admin**, click the **section menu** in the top-left corner (the section name with the small arrow), and choose **People**.
-2. In the navigation bar, click the **Attendance** tab. The **Setup** tab is selected by default.
-3. Click **Manage Campuses** (top right of the Setup panel). This takes you to **Settings → Campuses**. Click **Add Campus**, enter the name of your location (address and time zone are optional), and click **Save**.
-4. Return to **People → Attendance → Setup**. Your campus now appears in the setup table.
-5. Click the **+ button in the Service column** under your campus. Enter a service name such as "Sunday Service" and click **Save**.
-6. Click the **+ button in the Time column** under the service. Enter a time such as "9:00 AM" and click **Save**. Repeat for each service time.
-7. To connect a group to a service time, open the group from the **Groups** tab, click the **Edit** pencil, and use **Add Service Time** — see the next section.
+1. **B1 Admin** खोलें, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (शीर्ष-बाएं खोज बार) खोलें, और **People** विस्तृत करें।
+2. **Attendance** पर क्लिक करें। **Setup** tab डिफ़ॉल्ट रूप से selected है।
+3. **Manage Campuses** पर क्लिक करें (Setup panel के top right पर)। यह आपको **Settings → Campuses** पर ले जाता है। **Add Campus** पर क्लिक करें, अपने स्थान का नाम दर्ज करें (address और time zone optional हैं), और **Save** पर क्लिक करें।
+4. **People → Attendance → Setup** पर वापस लौटें। आपका कैंपस अब setup table में दिखाई देता है।
+5. अपने कैंपस के तहत **Service column में + button** पर क्लिक करें। एक सेवा का नाम दर्ज करें जैसे "Sunday Service" और **Save** पर क्लिक करें।
+6. सेवा के तहत **Time column में + button** पर क्लिक करें। एक समय दर्ज करें जैसे "9:00 AM" और **Save** पर क्लिक करें। प्रत्येक सेवा समय के लिए दोहराएं।
+7. एक group को एक सेवा समय से जोड़ने के लिए, **People > Groups** से group को खोलें, **Edit** pencil पर क्लिक करें, और **Add Service Time** का उपयोग करें — अगले section को देखें।
 
-### Enabling Track Attendance on a Group
+### एक Group पर Track Attendance को सक्षम करना
 
-Before a group can have attendance recorded, Track Attendance must be turned on for that group.
+इससे पहले कि एक group के लिए उपस्थिति दर्ज की जा सके, Track Attendance को उस group के लिए चालू किया जाना चाहिए।
 
-1. Open the **section menu** in the top-left corner and choose **People**, then click the **Groups** tab and select the group.
-2. Click the **Edit** pencil icon.
-3. Set **Track Attendance** to **Yes**.
-4. Click **Save**.
+1. Jump menu में, **People > Groups** चुनें और group को select करें।
+2. **Edit** pencil icon पर क्लिक करें।
+3. **Track Attendance** को **Yes** पर सेट करें।
+4. **Save** पर क्लिक करें।
 
 :::tip
-If you assigned the group to a service time in the previous step, also use the **Add Service Time** option on the group's edit screen to link it to the correct service. This ensures sessions are connected to the right campus and time.
+यदि आपने पिछले step में group को एक सेवा समय assign किया है, तो group के edit screen पर **Add Service Time** option का भी उपयोग करें ताकि इसे सही सेवा से link किया जा सके। यह सुनिश्चित करता है कि sessions सही कैंपस और समय से जुड़े हैं।
 :::
 
 :::tip
-If a group meets outside of a regular service -- like a midweek small group that tracks its own attendance -- you can leave it as an unscheduled group. It will still appear on the Groups tab for attendance reporting.
+यदि कोई समूह एक नियमित सेवा के बाहर मिलता है -- जैसे एक midweek small group जो अपनी attendance को track करता है -- तो आप इसे एक unscheduled group के रूप में छोड़ सकते हैं। यह अभी भी attendance रिपोर्टिंग के लिए Groups tab पर दिखाई देगा।
 :::
 
-## Editing Your Setup
+## अपने Setup को Edit करना
 
-You can update your setup at any time. Select a campus, service time, or group and click **Edit** to change its details, or **Delete** to remove it.
+आप कभी भी अपने setup को update कर सकते हैं। एक कैंपस, सेवा समय, या group select करें और इसके details को change करने के लिए **Edit** पर क्लिक करें, या इसे remove करने के लिए **Delete** पर क्लिक करें।
 
 :::info
-Removing a service time does not delete past attendance records. Your historical data is preserved even if you change your schedule.
+एक सेवा समय को हटाना पिछली उपस्थिति records को delete नहीं करता है। आपकी historical data संरक्षित है भले ही आप अपने schedule को change करें।
 :::
 
-## What's Next
+## अगले क्या हैं
 
-Once your campuses, service times, and groups are in place, you are ready to start [recording attendance](recording-attendance.md) manually or set up [self check-in](check-in.md) for your services.
+एक बार जब आपके कैंपस, सेवा समय, और group सही जगह पर हैं, तो आप [attendance को manually दर्ज करना](recording-attendance.md) शुरू करने के लिए तैयार हैं या अपनी सेवाओं के लिए [self check-in](check-in.md) को सेट अप करें।

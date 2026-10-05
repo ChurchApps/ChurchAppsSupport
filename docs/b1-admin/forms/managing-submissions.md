@@ -20,7 +20,7 @@ Once your form is live, submissions will start coming in. The **Form Submissions
 
 ## Viewing Submissions
 
-1. Open **People** from the section menu, then click **Forms** in the navigation bar.
+1. Open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left of B1 Admin), expand **People**, and click **Forms**.
 2. Click on the form you want to review.
 3. Go to the **Form Submissions** tab.
 
@@ -30,7 +30,7 @@ You will see a list of all responses received for that form. Each submission sho
 
 Click on any submission to view the full details. You will see all the answers the person provided for each question on the form.
 
-Click the **print icon** next to the submission to print that person's filled-in answers -- useful for a paper file or a signed release you need to keep on hand. This is separate from [printing a blank form](./creating-forms.md#printing-a-blank-form); it prints one person's already-submitted answers, not an empty copy. The same print icon appears wherever a submission is shown, including on a [person's profile](../people/adding-people.md#working-with-forms).
+Click the **print icon** next to the submission to print that person's filled-in answers -- useful for a paper file or a signed release you need to keep on hand. The printout shows your church's name at the top. This is separate from [printing a blank form](./creating-forms.md#printing-a-blank-form); it prints one person's already-submitted answers, not an empty copy. The same print icon appears wherever a submission is shown, including on a [person's profile](../people/adding-people.md#working-with-forms).
 
 ## Changing the Person on a Submission
 

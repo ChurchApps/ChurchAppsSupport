@@ -24,7 +24,7 @@ Every B1 account comes with a website ready to go. This guide walks you through 
 Your church automatically receives a subdomain on B1.church (for example, `yourchurch.b1.church`). You can also point your own custom domain to your B1 site.
 
 1. Go to **B1.church Admin** by visiting admin.b1.church or clicking your profile dropdown and choosing **Switch App**.
-2. Open the **section menu** in the top-left corner (the section name with the small arrow) and choose **Settings**.
+2. Open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Settings**, and click **Settings**.
 3. Open the **Church Information** section to view your subdomain. Set it to something short and recognizable with no spaces.
 4. To use a custom domain, log into your DNS provider (such as GoDaddy, Cloudflare, or AWS) and add two records:
    - An **A record** for your root domain pointing to `3.23.251.61`
@@ -37,7 +37,7 @@ If you do not see the Settings option, ask the person who set up your church acc
 
 ## Creating Your First Page
 
-1. In the B1 Admin, click **Website** in the left menu to open the Website Pages view.
+1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Website**, and click **Pages**.
 2. Click **Add Page** in the top right corner.
 3. Choose **Blank** as the page type and name it "Home."
 4. Click **Page Settings** and set the URL path to `/` (a forward slash with no text) for your home page. Other pages use `/page-name`.
@@ -50,7 +50,7 @@ For detailed instructions on working with pages and navigation, see [Managing Pa
 
 ## Configuring Site Appearance
 
-1. From the Website Pages view, click the **Appearance** tab at the top.
+1. In the Jump menu, choose **Website > Appearance**.
 2. Use the **Color Palette** to set your brand colors for primary, secondary, and accent tones.
 3. Under **Typography Settings**, choose your heading and body fonts from the font browser.
 4. Upload your church logo under **Logo** in the Style Settings. Provide both a light background and dark background version.

@@ -1,89 +1,90 @@
 ---
-title: "Etikett-designer for innsjekking"
+title: "Etikettdesigner for innsjekking"
 ---
 
-# Etikett-designer for innsjekking
+# Etikettdesigner for innsjekking
 
 <div class="article-intro">
 
-Etikett-designeren lar deg opprette og tilpasse navn-merke- og uthentings-seddel-maler som skrives ut når familier sjekker inn barna sine. Du kan kontrollere nøyaktig hvilken informasjon som vises på hver etikett, hvor den er plassert, og hvordan den ser ut.
+Etikettdesigneren lar deg lage og tilpasse malene for navnelapper og hentelapper som skrives ut når familier sjekker inn barna sine. Du bestemmer nøyaktig hvilken informasjon som vises på hver etikett, hvor den plasseres og hvordan den ser ut.
 
 </div>
 
 <div class="prereqs">
-<h4>Før du starter</h4>
+<h4>Før du begynner</h4>
 
-- Sett opp [Innsjekking](setup) og konfigurer minst en servicetid med innsjekking aktivert
+- Sett opp [Oppmøte](setup) og konfigurer minst ett samlingstidspunkt med innsjekking aktivert
 - Sett opp [Innsjekking](check-in) slik at etiketter skrives ut
-- Du trenger administratortilgang til innsjekking-delen
+- Du trenger administratortilgang til Oppmøte-seksjonen
 
 </div>
 
-## Åpning av etikett-designeren
+## Åpne etikettdesigneren
 
-I B1 Admin klikker du på **seksjonsmenyen** i øvre venstre hjørne (gjeldende seksjonnavn med den lille pilen ved siden av) og velger **Mobil**. I navigasjonslinjen velger du **B1 Innsjekking** og klikker deretter på **Design-etiketter**-knappen på Innsjekking-etiketter-kortet. Du vil se en liste over dine lagrede etikett-maler, delt etter type: **Merkelapp** og **Uthentings-sedde**.
+Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre) i B1 Admin, utvid **Mobil** og klikk på **B1 CheckIn**. Klikk deretter på knappen **Design etiketter** på kortet Innsjekkingsetiketter. Du ser en liste over lagrede etikettmaler, delt etter type: **Navnelapp** og **Hentelapp**.
 
-## Etikett-typer
+## Etikettyper
 
-- **Merkelapp** — skrives ut og festes på barnet. Inkluderer typisk barnets navn, klasseromet/sesjonen deres og en sikkerhetskode.
-- **Uthentings-sedde** -- gitt til forelder eller foresatt. Inkluderer typisk sikkerhetskoden og en liste over barna de sjekket inn.
+- **Navnelapp** — skrives ut og festes på barnet. Inneholder vanligvis barnets navn, klasserom/økt og en sikkerhetskode.
+- **Hentelapp** — gis til forelderen eller den foresatte. Inneholder vanligvis sikkerhetskoden og en liste over barna som er sjekket inn.
 
-B1 starter deg med en standard merkelapp og en standard uthentings-sedde-mal størrelse for standard 3,5 × 1,1 tomme termisk etiketter.
+B1 gir deg en standardmal for navnelapp og en for hentelapp, tilpasset vanlige termoetiketter på 3,5 × 1,1 tommer.
 
-## Opprette en etikett-mal
+## Opprette en etikettmal
 
-1. Klikk **Legg til merkelapp** eller **Legg til uthentings-sedde** (eller bruk rullegardinlisten for å velge).
-2. En ny mal åpnes i etikett-editoren.
+1. Klikk på **Legg til** og velg et utgangspunkt fra menyen: **Navnelapp 3,5" x 1,1"**, **Hentelapp 3,5" x 1,1"** eller **Tom**.
+2. En ny mal åpnes i etikettredigeringen.
 
-### Etikett-editor
+### Etikettredigering
 
-Editoren viser en skalert forhåndsvisning av etiketten ved konfigurert størrelse. I det venstre panelet kan du konfigurere:
+Redigeringen viser en skalert forhåndsvisning av etiketten i den valgte størrelsen. I panelet til venstre kan du konfigurere:
 
-- **Navn** — malens navn (kun for din referanse)
-- **Etikett-type** -- Merkelapp eller Uthentings-sedde
-- **Bredde / høyde** — etikettstørrelse i tommer
+- **Navn** — malens navn (bare til eget bruk)
+- **Etikettype** — Navnelapp eller Hentelapp
+- **Bredde / Høyde** — etikettens størrelse i tommer
 
 ### Legge til blokker
 
-En etikett er bygget av blokker — individuelle stykker innhold plassert på etikett-lerretet. Klikk **Legg til blokk** for å sette inn en ny blokk og velg dens type:
+En etikett bygges opp av blokker — enkeltstående innholdsdeler som plasseres på etikettflaten. Klikk på **Legg til blokk** for å sette inn en ny blokk og velg type:
 
-- **Felt** -- henter en dataverdi ved utskrivingstidspunkt:
-  - `person.displayName` — personens fullt navn
-  - `sessions` — tjenesten/klasserommet de sjekket inn til
-  - `securityCode` -- den tilfeldig genererte uthentings-sikkerhetskoden
-  - `children` -- liste over barn (for uthentings-sedler)
-  - `person.nametagNotes` -- eventuelle spesielle merknader på personens post
-  - `campus` -- kampusnavn
-- **Tekst** -- statisk tekst du skriver inn (for overskrifter, etiketter eller instruksjoner)
-- **Strekkode** -- en strekkode som koder sikkerhetskoden
+- **Felt** — henter en dataverdi ved utskrift:
+  - `person.displayName` — personens fulle navn
+  - `sessions` — samlingen/klasserommet personen er sjekket inn i
+  - `securityCode` — den tilfeldig genererte sikkerhetskoden for henting
+  - `children` — liste over barn (for hentelapper)
+  - `person.nametagNotes` — spesielle merknader i personens oppføring
+  - `person.isBirthdayWeek` — sann hvis personens fødselsdag (måned og dag) er innenfor 3 dager før eller etter innsjekkingsdatoen
+  - `campus` — campusnavnet
+- **Tekst** — fast tekst du skriver inn selv (for overskrifter, ledetekster eller instruksjoner)
+- **Strekkode** — en strekkode som koder sikkerhetskoden
 
-### Posisjonering av blokker
+### Plassere blokker
 
-Hver blokk har **X**, **Y**, **Bredde** og **Høyde**-felt uttrykt som prosenter av etikett-lerretet (0–100). Juster disse for å plassere innhold nøyaktig. Du kan også sette:
+Hver blokk har feltene **X**, **Y**, **Bredde** og **Høyde**, oppgitt som prosent av etikettflaten (0–100). Juster dem for å plassere innholdet nøyaktig. Du kan også angi:
 
-- **Skriftstørrelse** -- tekststørrelse i poeng
-- **Fet** -- aktiver fet tekst
-- **Justering** -- venstre, sentret eller høyre tekstjustering
-- **Betingelse** -- skjul valgfritt blokken hvis et felt er tomt (for eksempel vis bare nametagNotes hvis det har en verdi)
+- **Skriftstørrelse** — tekststørrelse i punkter
+- **Fet** — slå fet tekst av eller på
+- **Justering** — venstre-, sentrert eller høyrejustert tekst
+- **Betingelse** — skjul eventuelt blokken hvis et felt er tomt (for eksempel vis nametagNotes bare hvis det har en verdi). Dette fungerer også med `person.isBirthdayWeek` for å vise en bursdagsgrafikk eller -tekst bare på navnelapper til barn som har bursdag like før eller etter innsjekkingen.
 
-### Lagring
+### Lagre
 
-Klikk **Lagre** for å lagre malen. Den oppdaterte malen vil bli brukt neste gang etiketter skrives ut i B1 Innsjekking.
+Klikk på **Lagre** for å lagre malen. Den oppdaterte malen brukes neste gang etiketter skrives ut i B1 Checkin.
 
-## Omorganisering av maler
+## Endre rekkefølgen på maler
 
-Hvis du har flere merkelapp- eller uthentings-sedde-maler, vil B1 Innsjekking som standard bruke den første malen i listen. Dra maler for å omorganisere dem.
+Hvis du har flere maler for navnelapper eller hentelapper, bruker B1 Checkin den første malen i listen som standard. Dra malene for å endre rekkefølgen.
 
-## Sletting av en mal
+## Slette en mal
 
-Klikk slettikonet på en malrad og bekreft. Sletting av den siste malen av en type gjenoppretter den innebygde standard-malen.
+Klikk på sletteikonet på en malrad og bekreft. Hvis du sletter den siste malen av en type, gjenopprettes den innebygde standardmalen.
 
 :::tip
-Gjør en testutskrift etter redigering av en mal for å bekrefte at oppsettet ser bra ut før neste servicetid.
+Ta en prøveutskrift etter at du har redigert en mal, for å være sikker på at utformingen ser riktig ut før neste gudstjeneste.
 :::
 
 ## Relaterte artikler
 
-- [Innsjekking-oppsett](setup) -- konfigurer tjenester og grupper for innsjekking
-- [Fullføring av innsjekking](check-in) -- innsjekking-flyt for familier
-- [B1 Innsjekking Komme i gang](../../b1-checkin/getting-started/) -- Innsjekking kiosk-appen
+- [Oppsett av innsjekking](setup) — sett opp gudstjenester og grupper for innsjekking
+- [Fullføre innsjekking](check-in) — innsjekkingsforløpet for familier
+- [Kom i gang med B1 Checkin](../../b1-checkin/getting-started/) — Checkin-kioskappen

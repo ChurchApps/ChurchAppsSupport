@@ -1,66 +1,66 @@
 ---
-title: "Richiesta di Unirsi a un Gruppo"
+title: "Richiedere di Unirti a un Gruppo"
 ---
 
-# Richiesta di Unirsi a un Gruppo
+# Richiedere di Unirti a un Gruppo
 
 <div class="article-intro">
 
-Alcuni gruppi richiedono l'approvazione prima che tu possa diventare un membro. Quando un gruppo ha questa impostazione, invii una richiesta di unione — facoltativamente includendo un messaggio al leader del gruppo — e aspetti che il leader approvi o rifiuti. Puoi visualizzare lo stato delle tue richieste in sospeso e annullarle in qualsiasi momento.
+Alcuni gruppi richiedono l'approvazione prima di potere diventare un membro. Quando un gruppo ha questa impostazione, invii una richiesta di adesione — opzionalmente includendo un messaggio al leader del gruppo — e attendi che il leader approvi o rifiuti. Puoi visualizzare lo stato delle tue richieste in sospeso e cancellarle in qualsiasi momento.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Devi essere [loggato](../getting-started/logging-in.md) al tuo account B1.church per richiedere di unirti a un gruppo.
+- Devi essere [connesso](../getting-started/logging-in.md) al tuo account B1.church per richiedere di unirti a un gruppo.
 
 </div>
 
-## Unirsi vs. Richiesta di Unirsi
+## Unirti vs. Richiedere di Unirti
 
-I gruppi possono avere diverse politiche di adesione impostate dai loro amministratori:
+I gruppi possono avere diverse politiche di unione impostate dai loro amministratori:
 
-- **Open** -- Fai clic su **Join Group** sulla pagina di dettaglio del gruppo e sei immediatamente aggiunto come membro.
-- **Request required** -- Fai clic su **Request to Join** per inviare una richiesta che un leader del gruppo deve approvare prima che tu diventi un membro.
-- **Closed** -- Non appare alcun pulsante di unione. I leader devono aggiungere manualmente i membri.
+- **Aperto** -- Fai clic su **Unisciti al Gruppo** sulla pagina dei dettagli del gruppo e vieni immediatamente aggiunto come membro.
+- **Approvazione richiesta** -- Fai clic su **Richiedi di Unirti** per inviare una richiesta che un leader del gruppo deve approvare prima di diventare un membro.
+- **Chiuso** -- Nessun pulsante di adesione appare. I membri devono essere aggiunti manualmente dai leader.
 
-## Come Inviare una Richiesta di Unione
+## Come Inviare una Richiesta di Adesione
 
-1. Naviga al gruppo che desideri unire. Vedi [Navigazione dei Gruppi](./browsing-groups.md) se hai bisogno di aiuto per trovarlo.
-2. Apri la pagina di dettaglio del gruppo.
-3. Fai clic su **Request to Join**.
-4. Una finestra di dialogo appare dove puoi facoltativamente scrivere un messaggio al leader del gruppo spiegando perché desideri unirti.
-5. Fai clic su **Submit** per inviare la tua richiesta.
+1. Naviga al gruppo a cui vuoi unirti. Vedi [Sfogliare i Gruppi](./browsing-groups.md) se hai bisogno di aiuto a trovarlo.
+2. Apri la pagina dei dettagli del gruppo.
+3. Fai clic su **Richiedi di Unirti**.
+4. Si apre una finestra di dialogo in cui puoi facoltativamente scrivere un messaggio al leader del gruppo spiegando perché vorresti unirti.
+5. Fai clic su **Invia** per inviare la tua richiesta.
 
-I leader del gruppo riceveranno una notifica sulla tua richiesta. Una volta che l'hanno esaminata, riceverai una notifica con il risultato.
+La pagina del gruppo ora mostra un avviso **Richiesta in Sospeso** al posto del pulsante. I leader del gruppo riceveranno una notifica della tua richiesta. Una volta che la esamineranno, riceverai una notifica con il risultato.
 
 :::tip
-Includere un breve messaggio — come dove hai sentito parlare del gruppo o cosa speri di ricavare da esso — può aiutare il leader a prendere una decisione più velocemente.
+Includere un breve messaggio — come da dove hai sentito parlare del gruppo o cosa speriamo di ottenere da esso — può aiutare il leader a prendere una decisione più veloce.
 :::
 
-## Controllo dello Stato delle Tue Richieste
+## Controllare lo Stato delle Tue Richieste
 
-Dopo aver inviato una richiesta, puoi visualizzare il suo stato dalla pagina **Groups**:
+Dopo aver inviato una richiesta, puoi visualizzare il suo stato dalla pagina **Gruppi**:
 
-1. Naviga alla pagina **Groups** sul sito B1.church della tua chiesa.
-2. Scorri fino alla sezione **Pending Requests**.
-3. Ogni richiesta in sospeso mostra il nome del gruppo e la data che l'hai inviata.
+1. Naviga alla pagina **Gruppi** sul sito B1.church della tua chiesa.
+2. Scorri verso il basso fino alla sezione **Richieste in Sospeso**.
+3. Ogni richiesta in sospeso mostra il nome del gruppo e la data in cui l'hai inviata.
 
-Se una richiesta è stata approvata o rifiutata, riceverai una notifica — le richieste approvate ti portano nel gruppo come membro.
+Se una richiesta è stata approvata o rifiutata, riceverai una notifica — le richieste approvate ti spostano nel gruppo come membro.
 
-## Annullamento di una Richiesta
+## Annullare una Richiesta
 
 Se cambi idea prima che un leader esamini la tua richiesta:
 
-1. Vai alla pagina **Groups**.
-2. Trova la tua richiesta nella sezione **Pending Requests**.
-3. Fai clic su **Cancel** accanto alla richiesta.
+1. Vai alla pagina **Gruppi**.
+2. Trova la tua richiesta nella sezione **Richieste in Sospeso**.
+3. Fai clic su **Annulla** accanto alla richiesta.
 
 La richiesta viene immediatamente ritirata e il leader non la vedrà più.
 
 ## Articoli Correlati
 
-- [Navigazione dei Gruppi](./browsing-groups.md) -- Trova i gruppi a cui unirti
-- [Dettagli del Gruppo](./group-details.md) -- Cosa puoi vedere e fare nella pagina di un gruppo
-- [Conversazioni di Gruppo](./conversations.md) -- Partecipa alle discussioni una volta che sei un membro
+- [Sfogliare i Gruppi](./browsing-groups.md) -- Trova gruppi a cui unirti
+- [Dettagli Gruppo](./group-details.md) -- Cosa puoi vedere e fare sulla pagina di un gruppo
+- [Conversazioni di Gruppo](./conversations.md) -- Partecipa alle discussioni dopo che sei diventato un membro

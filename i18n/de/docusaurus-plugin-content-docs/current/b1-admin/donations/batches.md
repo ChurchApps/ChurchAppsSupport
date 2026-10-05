@@ -1,69 +1,69 @@
 ---
-title: Donation Batches
+title: "Spendenbündel"
 ---
 
-# Donation Batches
+# Spendenbündel
 
 <div class="article-intro">
 
-Batches group your donations together for easier tracking and reconciliation. A typical batch represents a single collection, such as a Sunday offering or a special event. Using batches helps you stay organized and makes it simple to verify that your records match the actual deposits.
+Bündel fassen Ihre Spenden zusammen, um die Verfolgung und Abstimmung zu erleichtern. Ein typisches Bündel stellt eine einzelne Sammlung dar, z.B. ein Sonntagsopfer oder ein Spezialereignis. Die Verwendung von Bündeln hilft Ihnen, organisiert zu bleiben und macht es einfach zu überprüfen, dass Ihre Aufzeichnungen mit den tatsächlichen Einzahlungen übereinstimmen.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Make sure you have [set up your funds](funds.md) so they are available when recording donations
-- You will need access to the **Donations** section in B1 Admin
+- Stellen Sie sicher, dass Sie Ihre [Fonds](funds.md) eingerichtet haben, damit sie bei der Spendeneintragung verfügbar sind
+- Sie benötigen Zugriff auf den Bereich **Spenden** in B1 Admin
 
 </div>
 
-## The Batches Page
+## Die Seite Bündel
 
-When you navigate to **Donations > Batches**, you will see a list of all your batches. Each row displays:
+Wenn Sie zu **Spenden > Bündel** navigieren, sehen Sie eine Liste aller Ihrer Bündel. Jede Reihe zeigt:
 
-- **Name** -- the label you gave the batch
-- **Date** -- the date of the collection
-- **Donations** -- the number of individual donations in the batch
-- **Total** -- the combined dollar amount
+- **Name** -- das Label, das Sie dem Bündel gegeben haben
+- **Datum** -- das Datum der Sammlung
+- **Spenden** -- die Anzahl der einzelnen Spenden im Bündel
+- **Gesamt** -- der kombinierte Dollarbetrag
 
-The header at the top shows summary statistics including the total number of batches, the total number of donations across all batches, and the overall dollar amount.
+Die Kopfzeile oben zeigt Zusammenfassungsstatistiken einschließlich der Gesamtzahl der Bündel, der Gesamtzahl der Spenden über alle Bündel und des Gesamtdollarbetrags.
 
-## Creating a New Batch
+## Neues Bündel erstellen
 
-1. Click **Add Batch** at the top of the page.
-2. Enter a descriptive name (e.g., "Sunday Offering - Feb 9").
-3. Select the date of the collection.
-4. Click **Save**.
+1. Klicken Sie oben auf der Seite auf **Bündel hinzufügen**.
+2. Geben Sie einen beschreibenden Namen ein (z.B. „Sonntagsopfer - 9. Feb.").
+3. Wählen Sie das Datum der Sammlung.
+4. Klicken Sie auf **Speichern**.
 
-Your new batch appears in the list, ready for you to add donations.
+Ihr neues Bündel wird in der Liste angezeigt und ist bereit, dass Sie Spenden hinzufügen.
 
-## Working with Batches
+## Mit Bündeln arbeiten
 
-- **View donations** -- click a batch name to open it and see all the individual donations it contains. From there you can add, edit, or remove donations.
-- **Edit batch details** -- click the **Edit** button on a batch row to change its name or date.
-- **Sort** -- use the column headers to sort batches by name or date.
-- **Export** -- click **Export to CSV** to download your batch list as a spreadsheet.
+- **Spenden anzeigen** -- klicken Sie auf einen Bündelnamen, um ihn zu öffnen und alle darin enthaltenen einzelnen Spenden zu sehen. Von dort aus können Sie Spenden hinzufügen, bearbeiten oder entfernen.
+- **Bündeldetails bearbeiten** -- klicken Sie auf die Schaltfläche **Bearbeiten** auf einer Bündelreihe, um seinen Namen oder Datum zu ändern.
+- **Sortieren** -- verwenden Sie die Spaltenköpfe, um Bündel nach Name oder Datum zu sortieren.
+- **Exportieren** -- klicken Sie auf **In CSV exportieren**, um Ihre Bündelliste als Tabelle herunterzuladen.
 
-## Printing a Batch
+## Bündel drucken
 
-Open a batch and click the **Print** (printer) icon at the top of the donations list to print a paper copy for your counting team or deposit records. The printout includes:
+Öffnen Sie ein Bündel und klicken Sie auf das **Druck**-Symbol oben in der Spendenliste, um eine Papierkopie für Ihr Zählteam oder Einzahlungsunterlagen zu drucken. Der Ausdruck enthält:
 
-- The batch name and date
-- Every donation in the batch, with the donor's name, method, notes, date, and amount (refunded gifts are crossed out and marked as refunded)
-- **Fund Subtotals** -- the total given to each fund in the batch
-- **Batch Total** -- the combined amount for the whole batch
+- Den Bündelnamen und das Datum
+- Jede Spende im Bündel mit dem Namen des Spenders, Methode, Notizen, Datum und Betrag (rückgängig gemachte Geschenke sind durchgestrichen und als rückgängig gemacht gekennzeichnet)
+- **Fonds-Zwischensummen** -- der Gesamtbetrag, der jedem Fonds im Bündel gegeben wurde
+- **Bündel-Gesamt** -- der kombinierte Betrag für das ganze Bündel
 
-The Print icon only appears once the batch has at least one donation.
+Das Druck-Symbol wird erst angezeigt, nachdem das Bündel mindestens eine Spende hat.
 
-## Exporting a Batch to QuickBooks Online
+## Bündel nach QuickBooks Online exportieren
 
-Open a batch and click **Export for QuickBooks** to download the batch as a journal entry that QuickBooks Online can import (**Settings > Import Data > Journal Entries**). The file contains one debit to **Undeposited Funds** for the batch total and one credit per fund, using each fund's name as the account name. QuickBooks asks you to match those names to your chart of accounts during import, so name your funds the way your bookkeeper names the income accounts, or map them once on import.
+Öffnen Sie ein Bündel und klicken Sie auf **Für QuickBooks exportieren**, um das Bündel als Journaleintrag herunterzuladen, den QuickBooks Online importieren kann (**Einstellungen > Daten importieren > Journaleinträge**). Die Datei enthält eine Belastung auf **Nicht eingezahlte Mittel** für das Bündel-Gesamt und einen Kredit pro Fonds, wobei jeder Fondsname als Kontoname verwendet wird. QuickBooks bittet Sie, diese Namen während des Imports mit Ihrem Kontenplan abzugleichen, also benennen Sie Ihre Fonds so, wie Ihr Buchhalter die Einnahmekonten benennt, oder ordnen Sie sie einmal beim Import zu.
 
 :::tip
-Name your batches consistently so they are easy to find later. Including the date and collection type (e.g., "Sunday AM - 2025-02-09") keeps your list organized as it grows.
+Nennen Sie Ihre Bündel konsistent, damit sie später leicht zu finden sind. Das Einbeziehen des Datums und des Sammlungstyps (z.B. „Sonntag AM - 2025-02-09") hält Ihre Liste organisiert, während sie wächst.
 :::
 
-## Next Steps
+## Nächste Schritte
 
-Once you have a batch, see [Recording Donations](recording-donations.md) to learn how to add individual donations to it. You can also [import Stripe transactions](stripe-import.md) to automatically create batches from online giving.
+Sobald Sie ein Bündel haben, siehe [Spenden eintragen](recording-donations.md), um zu erfahren, wie Sie einzelne Spenden hinzufügen. Sie können auch [Stripe-Transaktionen importieren](stripe-import.md), um automatisch Bündel aus Online-Geben zu erstellen.

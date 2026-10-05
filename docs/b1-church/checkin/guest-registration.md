@@ -14,17 +14,19 @@ If you are visiting a church for the first time, you can register yourself and y
 <h4>Before You Begin</h4>
 
 - Your church must have QR guest registration enabled
-- Scan the QR code displayed at the check-in kiosk, or receive a link from a church volunteer
+- Scan the QR code displayed at the check-in kiosk, tap **Register here** on the kiosk, or receive a link from a church volunteer
 
 </div>
 
 ## How Guest Registration Works
 
-Guest registration is designed for visitors who do not yet have an account. A QR code is displayed at the church's check-in kiosk that links to the registration page. You can also receive the link from a volunteer or greeter.
+Guest registration is designed for visitors who do not yet have an account. On the church's check-in kiosk, tap **Register as guest** to show a QR code that links to the registration page. You can also receive the link from a volunteer or greeter.
+
+Don't have a phone handy? In the same QR code window on the kiosk, tap **Register here** to fill in the form on the kiosk itself. See [Registering as a Guest](../../b1-checkin/check-in/looking-up-members#registering-as-a-guest) for how this works on the kiosk.
 
 ## Registering Your Family
 
-1. **Scan the QR code** at the check-in kiosk or open the guest registration link on your phone.
+1. **Scan the QR code** at the check-in kiosk or open the guest registration link on your phone. (If you tapped **Register here** on the kiosk, the form is already open.)
 2. The guest registration form appears with fields for the **primary contact**:
    - **First Name** (required)
    - **Last Name** (required)

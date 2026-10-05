@@ -6,15 +6,15 @@ title: "Rechercher des personnes"
 
 <div class="article-intro">
 
-La page **Personnes** affiche votre annuaire d'église dans un tableau consultable et triable. Vous pouvez rapidement trouver n'importe qui dans votre congrégation, personnaliser les informations affichées, et exporter vos résultats. Une recherche efficace est essentielle pour les tâches administratives quotidiennes de l'église comme le suivi des visiteurs, la préparation de listes de contacts, et la gestion des dossiers de membres.
+La page **Personnes** affiche votre répertoire d'église dans un tableau consultable et triable. Vous pouvez rapidement trouver n'importe qui dans votre congrégation, personnaliser les informations affichées et exporter vos résultats. Une recherche efficace est essentielle pour les tâches quotidiennes d'administration de l'église, comme le suivi des visiteurs, la préparation de listes de contacts et la gestion des dossiers de membres.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Vous avez besoin d'un compte B1 Admin actif avec l'autorisation de consulter les personnes. Consultez [Rôles et autorisations](roles-permissions.md) si vous n'êtes pas sûr de votre niveau d'accès.
-- Votre annuaire d'église doit contenir des personnes. Si vous n'avez encore ajouté personne, consultez [Ajouter des personnes](adding-people.md) ou [Importer des données](importing-data.md).
+- Vous avez besoin d'un compte B1 Admin actif avec permission de consulter les personnes. Voir [Rôles et permissions](roles-permissions.md) si vous n'êtes pas sûr de votre niveau d'accès.
+- Votre répertoire d'église devrait avoir des personnes dedans. Si vous n'en avez pas encore ajouté, voir [Ajouter des personnes](adding-people.md) ou [Importer des données](importing-data.md).
 
 </div>
 
@@ -22,75 +22,79 @@ La page **Personnes** affiche votre annuaire d'église dans un tableau consultab
 
 La barre de recherche en haut de la page Personnes vous permet de trouver des membres en temps réel :
 
-1. Cliquez sur la **zone de recherche** en haut de la page Personnes.
-2. Commencez à taper un nom, un e-mail, ou un autre mot-clé.
-3. Les résultats se filtrent automatiquement au fur et à mesure que vous tapez (il y a un bref délai d'environ une demi-seconde afin que la recherche ne se déclenche pas à chaque frappe).
-4. Le tableau ci-dessous se met à jour pour n'afficher que les résultats correspondants.
+1. Cliquez sur la **boîte de recherche** en haut de la page Personnes.
+2. Commencez à taper un nom, un email ou un autre mot-clé.
+3. Les résultats se filtreront automatiquement au fur et à mesure de votre saisie (il y a un bref délai d'environ une demi-seconde afin que la recherche ne se déclenche pas à chaque frappe).
+4. Le tableau ci-dessous se met à jour pour afficher uniquement les résultats correspondants.
 
 :::tip
-Vous n'avez pas besoin d'appuyer sur Entrée. La recherche s'exécute automatiquement lorsque vous arrêtez de taper.
+Vous n'avez pas besoin d'appuyer sur Entrée. La recherche s'exécute automatiquement après que vous ayez arrêté de taper.
 :::
 
 ## Trier les résultats
 
-Vous pouvez trier l'annuaire en cliquant sur n'importe quel en-tête de colonne du tableau :
+Vous pouvez trier le répertoire en cliquant sur n'importe quel en-tête de colonne du tableau :
 
-1. Cliquez sur un **en-tête de colonne** (par exemple, **Nom** ou **E-mail**) pour trier selon cette colonne.
-2. Cliquez de nouveau sur le même en-tête pour inverser l'ordre de tri.
+1. Cliquez sur un **en-tête de colonne** (par exemple, **Nom** ou **Email**) pour trier par cette colonne.
+2. Cliquez sur le même en-tête à nouveau pour inverser l'ordre de tri.
 
-Cela facilite la recherche de personnes par ordre alphabétique, par âge, ou selon n'importe quelle autre colonne visible.
+Cela facilite la recherche de personnes par ordre alphabétique, par âge ou par n'importe quelle autre colonne visible.
 
 ## Personnaliser les colonnes
 
-Toutes les informations n'ont pas besoin d'être visibles en même temps. Vous pouvez choisir quelles colonnes apparaissent dans le tableau :
+Pas besoin d'afficher chaque information en une seule fois. Vous pouvez choisir les colonnes qui apparaissent dans le tableau :
 
-1. Repérez le **menu déroulant de sélection des colonnes** près du haut du tableau.
-2. Cochez ou décochez des colonnes pour les afficher ou les masquer. Les colonnes disponibles incluent :
+1. Recherchez le **menu déroulant du sélecteur de colonnes** près du haut du tableau.
+2. Cochez ou décochez les colonnes pour les afficher ou les masquer. Les colonnes disponibles incluent :
    - **Photo**
    - **Nom**
-   - **E-mail**
+   - **Email**
    - **Téléphone**
    - **Adresse**
    - **Date de naissance**
    - **Âge**
-   - **Sexe**
-   - **Statut de membre**
+   - **Genre**
+   - **Statut d'adhésion**
    - **Campus**
 3. Le tableau se met à jour immédiatement pour refléter vos sélections.
 
+### Affichage des champs personnalisés en tant que colonnes
+
+Le sélecteur de colonnes a deux onglets : **Standard** contient les colonnes intégrées énumérées ci-dessus, et **Personnalisé** contient les [Champs personnalisés](../settings/custom-fields.md) de votre église ainsi que les questions de tous les formulaires Personnes. Cochez un champ personnalisé sur l'onglet **Personnalisé** pour l'ajouter en tant que colonne, et la valeur de ce champ pour chaque personne apparaît dans le tableau. Les valeurs sont affichées de la même manière que sur le profil de la personne -- les champs Oui/Non affichent *Oui* ou *Non*, les champs Choix multiples affichent l'étiquette de l'option, et les dates sont affichées en dates courtes. Les personnes sans valeur pour ce champ affichent une cellule vide.
+
 :::info
-Vos choix de colonnes affectent ce qui est inclus lors de l'export en CSV. Personnalisez les colonnes avant d'exporter pour obtenir exactement les données dont vous avez besoin.
+Vos choix de colonnes affectent ce qui est inclus lorsque vous exportez en CSV. Personnalisez les colonnes avant d'exporter pour obtenir exactement les données dont vous avez besoin.
 :::
 
 ## Pagination
 
-Lorsque votre annuaire contient de nombreux enregistrements, les résultats sont répartis sur plusieurs pages. Utilisez les **contrôles de pagination** en bas du tableau pour naviguer entre les pages. La page actuelle et le nombre total d'enregistrements sont affichés afin que vous sachiez toujours où vous en êtes dans la liste.
+Lorsque votre répertoire contient de nombreux enregistrements, les résultats sont divisés sur plusieurs pages. Utilisez les **contrôles de pagination** en bas du tableau pour vous déplacer entre les pages. La page actuelle et le nombre total d'enregistrements sont affichés afin que vous sachiez toujours où vous êtes dans la liste.
 
 :::tip
-Si vous voulez voir plus de résultats à la fois, affinez votre recherche pour réduire la liste plutôt que de parcourir un grand annuaire page par page.
+Si vous souhaitez voir plus de résultats à la fois, affinez votre recherche pour réduire la liste plutôt que de parcourir un grand répertoire.
 :::
 
 ## Exporter les résultats de recherche
 
 Vous pouvez télécharger vos résultats de recherche actuels sous forme de fichier CSV à tout moment :
 
-1. Appliquez toute recherche ou tout filtre souhaité.
+1. Appliquez les filtres ou recherches que vous souhaitez.
 2. Personnalisez vos colonnes pour inclure les données dont vous avez besoin.
 3. Cliquez sur le bouton **Exporter**.
-4. Un fichier CSV sera téléchargé sur votre ordinateur, prêt à être ouvert dans Excel, Google Sheets, ou n'importe quel tableur.
+4. Un fichier CSV téléchargera sur votre ordinateur, prêt à être ouvert dans Excel, Google Sheets ou toute application de feuille de calcul.
 
-Pour plus de détails sur l'export, consultez [Exporter des données](./exporting-data.md).
+Pour plus de détails sur l'exportation, voir [Exporter des données](./exporting-data.md).
 
 :::tip
-Pour des requêtes plus avancées -- comme trouver tous ceux qui n'ont pas assisté depuis les trois derniers mois -- essayez la fonctionnalité [Recherche IA](./ai-search.md), qui vous permet de rechercher en posant des questions en langage naturel.
+Pour des requêtes plus avancées -- comme trouver tous ceux qui n'ont pas assisté au cours des trois derniers mois -- essayez la fonction [Recherche IA](./ai-search.md), qui vous permet de rechercher en posant des questions en langage naturel.
 :::
 
 ## Recherche avancée
 
-La Recherche avancée vous permet de créer des filtres précis en combinant des conditions. Ouvrez-la depuis la page Personnes, puis développez une catégorie et cochez les champs sur lesquels vous voulez filtrer, en choisissant un opérateur et une valeur pour chacun. Les catégories incluent **Noms**, **Démographie**, **Contact**, **Adhésion**, **Activité** (dons et présences), et **Champs personnalisés**.
+La recherche avancée vous permet de créer des filtres précis en combinant des conditions. Ouvrez-la à partir de la page Personnes, puis développez une catégorie et cochez les champs sur lesquels vous souhaitez filtrer, en choisissant un opérateur et une valeur pour chacun. Les catégories incluent **Noms**, **Démographie**, **Contact**, **Adhésion**, **Activité** (dons et participation) et **Champs personnalisés**.
 
-La catégorie **Champs personnalisés** répertorie les [Champs personnalisés](../settings/custom-fields.md) de votre église — les champs que vous définissez dans Paramètres pour suivre vos propres informations (comme une date d'expiration de vérification de dossier). Les opérateurs proposés correspondent au type de chaque champ : les champs texte prennent en charge *contient / égal à / commence par / se termine par*, les champs numériques prennent en charge les opérateurs de comparaison, les champs date prennent en charge *égal à / après / avant*, et les champs Oui/Non et Choix multiple vous permettent de sélectionner une valeur. Tout champ sur lequel vous pouvez filtrer ici peut être enregistré comme [Liste](./lists.md) en direct.
+La catégorie **Champs personnalisés** énumère les [Champs personnalisés](../settings/custom-fields.md) de votre église -- les champs que vous définissez dans Paramètres pour suivre vos propres informations (comme une date d'expiration de vérification des antécédents). Les opérateurs proposés correspondent au type de chaque champ : les champs de texte supportent *contient / égal / commence par / se termine par*, les champs numériques supportent les opérateurs de comparaison, les champs de date supportent *égal / après / avant*, et les champs Oui/Non et Choix multiples vous permettent de choisir une valeur. N'importe quel champ sur lequel vous pouvez filtrer ici peut être enregistré en tant que [Liste](./lists.md) en direct.
 
-## Enregistrer des recherches comme listes
+## Enregistrer les recherches en tant que listes
 
-Après avoir effectué une recherche, un bouton **Enregistrer comme liste** (icône de signet) apparaît dans l'en-tête de la page Personnes. Cliquez dessus pour stocker votre requête actuelle sous un nom et une catégorie facultative, afin de pouvoir la recharger instantanément lors de sessions futures. Consultez [Listes enregistrées](./lists.md) pour tous les détails.
+Après avoir exécuté une recherche, un bouton **Enregistrer en tant que liste** (icône de signet) apparaît dans l'en-tête de la page Personnes. Cliquez dessus pour stocker votre requête actuelle sous un nom et une catégorie facultative, afin de pouvoir la recharger instantanément dans les sessions futures. Voir [Listes enregistrées](./lists.md) pour plus de détails.

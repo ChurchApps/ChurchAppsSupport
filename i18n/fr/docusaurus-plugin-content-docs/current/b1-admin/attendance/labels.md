@@ -21,7 +21,7 @@ Le Concepteur d'Étiquettes vous permet de créer et de personnaliser les modèl
 
 ## Ouverture du Concepteur d'Étiquettes
 
-Dans B1 Admin, cliquez sur le **menu de section** dans le coin supérieur gauche (le nom de la section actuelle avec la petite flèche à côté) et choisissez **Mobile**. Dans la barre de navigation, sélectionnez **B1 CheckIn**, puis cliquez sur le bouton **Concevoir les Étiquettes** sur la carte Étiquettes de Pointage. Vous verrez une liste de vos modèles d'étiquettes enregistrés, séparés par type : **Badge** et **Bordereau de Récupération**.
+Dans B1 Admin, ouvrez le [menu Sauter](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Mobile**, et cliquez sur **B1 CheckIn**. Cliquez ensuite sur le bouton **Concevoir les Étiquettes** sur la carte Étiquettes de Pointage. Vous verrez une liste de vos modèles d'étiquettes enregistrés, séparés par type : **Badge** et **Bordereau de Récupération**.
 
 ## Types d'Étiquettes
 
@@ -32,7 +32,7 @@ B1 vous commence avec un modèle de badge par défaut et un modèle de bordereau
 
 ## Création d'un Modèle d'Étiquette
 
-1. Cliquez sur **Ajouter Badge** ou **Ajouter Bordereau de Récupération** (ou utilisez la liste déroulante pour choisir).
+1. Cliquez sur **Ajouter** et choisissez un point de départ dans le menu : **Badge 3,5" x 1,1"**, **Bordereau de Récupération 3,5" x 1,1"**, ou **Vierge**.
 2. Un nouveau modèle s'ouvre dans l'éditeur d'étiquettes.
 
 ### Éditeur d'Étiquettes
@@ -53,6 +53,7 @@ Une étiquette est construite à partir de blocs — des éléments de contenu i
   - `securityCode` — le code de sécurité de récupération généré aléatoirement
   - `children` — liste des enfants (pour les bordereaux de récupération)
   - `person.nametagNotes` — toutes les notes spéciales sur le dossier de la personne
+  - `person.isBirthdayWeek` — vrai si l'anniversaire de la personne (mois et jour) se situe dans les 3 jours avant ou après la date d'accueil
   - `campus` — le nom du campus
 - **Texte** — du texte statique que vous tapez (pour les titres, les étiquettes ou les instructions)
 - **Code-barres** — un code-barres encodant le code de sécurité
@@ -64,7 +65,7 @@ Chaque bloc a des champs **X**, **Y**, **Largeur** et **Hauteur** exprimés en p
 - **Taille de Police** — taille du texte en points
 - **Gras** — basculer le texte en gras
 - **Aligner** — alignement du texte à gauche, au centre ou à droite
-- **Condition** — masquer éventuellement le bloc si un champ est vide (par exemple, afficher uniquement nametagNotes s'il a une valeur)
+- **Condition** — masquer éventuellement le bloc si un champ est vide (par exemple, afficher uniquement nametagNotes s'il a une valeur). Cela fonctionne également avec `person.isBirthdayWeek` pour afficher un graphique ou du texte d'anniversaire uniquement sur les badges pour les enfants dont l'anniversaire est à quelques jours du pointage.
 
 ### Sauvegarde
 

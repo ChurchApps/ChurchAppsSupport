@@ -1,12 +1,12 @@
 ---
-title: "Initialoppsett"
+title: "Førstegangsoppsett"
 ---
 
-# Initialoppsett
+# Førstegangsoppsett
 
 <div class="article-intro">
 
-Hver B1-konto kommer med et nettsted klart til bruk. Denne veiledningen gjennomgår oppsetting av kirkens domene, konfigurering av nettstedets utseende, opprettelse av de første sidene dine og organisering av navigasjonen.
+Alle B1-kontoer kommer med et nettsted som er klart til bruk. Denne veiledningen tar deg gjennom oppsett av kirkens domene, utseendet på nettstedet, de første sidene og organiseringen av navigasjonen.
 
 </div>
 
@@ -14,62 +14,62 @@ Hver B1-konto kommer med et nettsted klart til bruk. Denne veiledningen gjennomg
 <h4>Før du begynner</h4>
 
 - Du trenger en B1.church-konto med administratortilgang
-- Hvis du bruker et egendefinert domene, ha påloggingsinformasjonen for DNS-leverandøren din klar (f.eks. GoDaddy, Cloudflare eller AWS)
-- Forbered kirkens logo i PNG-format med transparent bakgrunn for best resultat
+- Hvis du bruker et eget domene, må du ha innloggingsopplysningene til DNS-leverandøren klare (for eksempel GoDaddy, Cloudflare eller AWS)
+- Gjør kirkens logo klar i PNG-format med gjennomsiktig bakgrunn for best resultat
 
 </div>
 
-## Oppsetting av domenet
+## Sette opp domenet
 
-Kirken din mottar automatisk et underdomene på B1.church (for eksempel, `yourchurch.b1.church`). Du kan også peke ditt eget egendefinerte domene til B1-nettstedet.
+Kirken din får automatisk et underdomene på B1.church (for eksempel `yourchurch.b1.church`). Du kan også la ditt eget domene peke til B1-nettstedet.
 
-1. Gå til **B1.church Admin** ved å besøke admin.b1.church eller klikk profilrullegardinmenyen og velg **Bytt app**.
-2. Åpne **seksjonmenyen** i øvre venstre hjørne (seksjonsnavn med liten pil) og velg **Innstillinger**.
-3. Åpne **Kirkeinformasjon**-seksjonen for å vise underdomenet. Sett det til noe kort og gjenkjennelig uten mellomrom.
-4. Hvis du vil bruke et egendefinert domene, logger du inn på DNS-leverandøren din (for eksempel GoDaddy, Cloudflare eller AWS) og legger til to poster:
-   - En **A-post** for rotdomenet som peker på `3.23.251.61`
-   - En **CNAME-post** for `www` som peker på `proxy.b1.church`
-5. Gå tilbake til B1.church Admin, legg til det egendefinerte domenet i listen, og klikk **Legg til** og deretter **Lagre**. Nettstedet vil være tilgjengelig fra det egendefinerte domenet innen noen få minutter.
+1. Gå til **B1.church Admin** ved å besøke admin.b1.church eller ved å klikke på profilmenyen og velge **Bytt app**.
+2. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre), utvid **Innstillinger** og klikk på **Innstillinger**.
+3. Åpne delen **Kirkeinformasjon** for å se underdomenet ditt. Velg noe kort og lett gjenkjennelig uten mellomrom.
+4. Hvis du vil bruke et eget domene, logger du inn hos DNS-leverandøren din (for eksempel GoDaddy, Cloudflare eller AWS) og legger til to oppføringer:
+   - En **A-oppføring** for rotdomenet som peker til `3.23.251.61`
+   - En **CNAME-oppføring** for `www` som peker til `proxy.b1.church`
+5. Gå tilbake til B1.church Admin, legg til det egne domenet i listen og klikk på **Legg til** og deretter **Lagre**. Nettstedet blir tilgjengelig fra ditt eget domene i løpet av få minutter.
 
 :::tip
-Hvis du ikke ser Innstillinger-alternativet, ber du personen som satte opp kirkekontoen din om å gi deg tillatelsen "Rediger kirkeinnstillinger". Se [Roller og tillatelser](../settings/roles-permissions.md) for detaljer.
+Hvis du ikke ser alternativet Innstillinger, ber du personen som opprettet kirkekontoen om å gi deg tillatelsen «Rediger kirkeinnstillinger». Se [Roller og tillatelser](../settings/roles-permissions.md) for mer informasjon.
 :::
 
-## Opprettelse av den første siden
+## Opprette den første siden
 
-1. I B1 Admin klikker du **Nettsted** i venstre meny for å åpne Nettsideperspektivet.
-2. Klikk **Legg til side** i øvre høyre hjørne.
-3. Velg **Blank** som sidetype og gi den navnet "Hjem."
-4. Klikk **Sideinnstillinger** og sett URL-banen til `/` (en skråstrek uten tekst) for hjemmesiden. Andre sider bruker `/page-name`.
-5. Klikk **Rediger innhold** for å begynne å bygge. Hver side må begynne med en **Seksjon** -- dette er beholderen for alle andre elementer.
-6. Etter å ha lagt til en seksjon, klikk **Legg til innhold** igjen for å sette inn tekst, bilder, videoer, kort, skjemaer og mer ved å dra dem inn i seksjonen.
+1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) i B1 Admin (søkefeltet øverst til venstre), utvid **Nettsted** og klikk på **Sider**.
+2. Klikk på **Legg til side** øverst til høyre.
+3. Velg **Tom** som sidetype og gi den navnet «Hjem».
+4. Klikk på **Sideinnstillinger** og sett URL-banen til `/` (en skråstrek uten tekst) for hjemmesiden. Andre sider bruker `/sidenavn`.
+5. Klikk på **Rediger innhold** for å begynne å bygge. Hver side må starte med en **Seksjon** -- dette er beholderen for alle andre elementer.
+6. Når du har lagt til en seksjon, klikker du på **Legg til innhold** igjen for å sette inn tekst, bilder, videoer, kort, skjemaer og mer ved å dra dem inn i seksjonen.
 
 :::info
-For detaljerte instruksjoner om arbeid med sider og navigasjon, se [Administrering av sider](managing-pages). For en fullstendig guide til den visuelle editoren, se [Bruk av sideeditoren](page-editor).
+Du finner en detaljert veiledning om sider og navigasjon under [Administrere sider](managing-pages). En full gjennomgang av den visuelle redigeringen finner du under [Bruke sideredigeringen](page-editor).
 :::
 
-## Konfigurering av nettstedets utseende
+## Konfigurere utseendet på nettstedet
 
-1. Fra Nettsideperspektivet klikker du **Utseende**-fanen øverst.
-2. Bruk **Fargepaletten** for å sette merkevarefarger for primær, sekundær og aksentfarger.
-3. Under **Typografiinnstillinger** velger du skrifter for overskrifter og brødtekst fra skriftleseren.
-4. Last opp kirkens logo under **Logo** i Stilinnstillinger. Gi både en versjon for lys og en for mørk bakgrunn.
-5. Konfigurer **Nettstedsfooter** med kirkens kontaktinformasjon og lenker.
+1. Velg **Nettsted > Utseende** i Jump-menyen.
+2. Bruk **Fargepalett** til å angi profilfargene for primære, sekundære og aksenttoner.
+3. Under **Typografiinnstillinger** velger du skrifttyper for overskrifter og brødtekst i skriftleseren.
+4. Last opp kirkens logo under **Logo** i Stilinnstillinger. Legg inn både en versjon for lys bakgrunn og en for mørk bakgrunn.
+5. Sett opp **Nettstedets bunntekst** med kirkens kontaktinformasjon og lenker.
 
 :::info
-Endringer du gjør under Utseende gjelder hele nettstedet. Se siden [Utseende](appearance) for detaljerte instruksjoner for hver innstilling.
+Endringer du gjør under Utseende, gjelder hele nettstedet. Se siden [Utseende](appearance) for en detaljert veiledning til hver innstilling.
 :::
 
-## Oppsetting av navigasjon
+## Sette opp navigasjon
 
-Navigasjonslenkene dine vises i Nettsideperspektivet. For å organisere dem:
+Navigasjonslenkene dine vises i visningen Nettstedssider. Slik organiserer du dem:
 
-1. Klikk **Legg til** for å opprette en ny navigasjonslenke og pek den til en av sidene dine.
-2. Dra og slipp lenker for å sortere dem eller neste dem under overordnede elementer.
-3. Forhåndsvis nettstedet for å bekrefte at navigasjonen ser riktig ut.
+1. Klikk på **Legg til** for å opprette en ny navigasjonslenke og la den peke til en av sidene dine.
+2. Dra og slipp lenker for å endre rekkefølgen eller legge dem under overordnede elementer.
+3. Forhåndsvis nettstedet for å kontrollere at navigasjonen ser riktig ut.
 
 ## Neste steg
 
-- [Administrering av sider](managing-pages) -- Lær hvordan du arbeider med sider og navigasjon i detalj
-- [Utseende](appearance) -- Fin-justering av farger, skrifter og layout på nettstedet
-- [Filer](files) -- Last opp bilder og dokumenter for nettstedet
+- [Administrere sider](managing-pages) -- Lær mer om sider og navigasjon
+- [Utseende](appearance) -- Finjuster farger, skrifttyper og oppsett
+- [Filer](files) -- Last opp bilder og dokumenter til nettstedet

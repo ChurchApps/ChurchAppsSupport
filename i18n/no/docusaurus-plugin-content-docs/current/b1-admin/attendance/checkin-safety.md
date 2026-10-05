@@ -6,96 +6,96 @@ title: "Sikkerhet ved innsjekking"
 
 <div class="article-intro">
 
-B1 inkluderer et sett med sikkerhetskontroller for barn ved innsjekking: romskapasitetsgrenser og frivillig-til-barn-forhold, aldersog klasseveivising på kiosken, innsjekkingstyper som skiller medlemmer, gjester og frivillige, og en liste over godkjente uthentingspersoner per husstand som blir verifisert ved utsjekking. Denne siden dekker hvordan du konfigurerer hver sikkerhetsfunksjon i B1 Admin.
+B1 har en rekke sikkerhetsfunksjoner for barn ved innsjekking: kapasitetsgrenser for rom og forholdstall mellom frivillige og barn, veiledning om alder og klassetrinn på kiosken, innsjekkingstyper som skiller mellom medlemmer, gjester og frivillige, og en liste over betrodde hentepersoner per husstand som kontrolleres ved utsjekking. Denne siden viser hvordan du setter opp hver av sikkerhetsfunksjonene i B1 Admin.
 
 </div>
 
 <div class="prereqs">
-<h4>Før du starter</h4>
+<h4>Før du begynner</h4>
 
-- Sett opp din [innsjekking-struktur](setup.md) og [innsjekk-kiosker](check-in.md)
-- Rom er [grupper](../groups/creating-groups.md) som er knyttet til servicetider — sikkerhetinnstillingene nedenfor ligger på gruppen
-- Page-a-parent og emergency broadcast krever en tilkoblet tekstmeldingsleverandør ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream), eller Mutual Ministry)
+- Sett opp [strukturen for oppmøte](setup.md) og [innsjekkingskioskene](check-in.md)
+- Rom er [grupper](../groups/creating-groups.md) koblet til samlingstidspunkter – sikkerhetsinnstillingene nedenfor ligger på gruppen
+- Tilkalling av foresatte og nødvarsling krever en tilkoblet tekstmeldingstjeneste ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream) eller Mutual Ministry)
 
 </div>
 
-## Romskapasitet og lukking av rom
+## Romkapasitet og stenging av rom
 
-Hver innsjekk-rom (gruppe) kan håndheve sine egne grenser. Åpne gruppen, klikk på **blyant-ikonet** for å redigere innstillingene, og finn delen **Innsjekk-kapasitet**:
+Hvert innsjekkingsrom (gruppe) kan ha sine egne grenser. Åpne gruppen, klikk på **blyantikonet** for å redigere innstillingene og finn seksjonen **Innsjekkingskapasitet**:
 
-- **Kapasitet** -- Det maksimale antallet personer som kan sjekkes inn i dette rommet på en gang. Når rommet er fullt, blir innsjekking til det blokkert og kiosken viser at rommet er fullt.
-- **Gjestkapasitet** -- En valgfri separat grense for hvor mange gjester rommet kan holde.
-- **Lukket for innsjekking** -- Sett til **Ja** for å stoppe all innsjekking til dette rommet umiddelbart (for eksempel når en klasse blir kansellert eller et rom ikke er tilgjengelig). Utsjekk fungerer fortsatt.
+- **Kapasitet** -- Det høyeste antallet personer som kan være sjekket inn i rommet samtidig. Når rommet er fullt, blokkeres innsjekking dit, og kiosken viser navnet på det fulle rommet.
+- **Gjestekapasitet** -- En valgfri, egen grense for hvor mange gjester rommet kan romme.
+- **Stengt for innsjekking** -- Sett til **Ja** for å stoppe all innsjekking til rommet umiddelbart (for eksempel når en klasse er avlyst eller et rom ikke er tilgjengelig). Utsjekking fungerer fortsatt.
 
-## Frivillig-forhold
+## Forholdstall for frivillige
 
-Den samme **Innsjekk-kapasitet**-delen på gruppen inkluderer bemanningsregler:
+Den samme seksjonen **Innsjekkingskapasitet** på gruppen inneholder regler for bemanning:
 
-- **Barn per frivillig** -- Det maksimale antallet barn som hver innsjekket frivillig kan være ansvarlig for (for eksempel 5 betyr en frivillig per fem barn).
-- **Minimum frivillige** -- Det minste antallet frivillige som må sjekkes inn før barn kan sjekkes inn i rommet.
+- **Barn per frivillig** -- Det høyeste antallet barn hver innsjekkede frivillige kan ha ansvar for (for eksempel betyr 5 én frivillig per fem barn).
+- **Minimum frivillige** -- Det minste antallet frivillige som må være sjekket inn før barn kan sjekkes inn i rommet.
 
-Frivillige teller mot disse reglene når de sjekker inn med typen **Frivillig** på kiosken (se [Innsjekkingstyper](#innsjekkingstyper) nedenfor).
+Frivillige teller med i disse reglene når de sjekker inn med typen **Frivillig** på kiosken (se [Innsjekkingstyper](#check-in-types) nedenfor).
 
-### Valg mellom advarsel og blokk
+### Velge mellom advarsel og blokkering
 
-Hvor strengt forhold blir håndhevet er en innstilling for hele kirken:
+Hvor strengt forholdstallene håndheves, er en innstilling for hele menigheten:
 
-1. Gå til **Innstillinger > Administrer kirke** i B1 Admin og åpne **Innsjekking**-flisen.
-2. Sett **Håndhevelse av frivillig-forhold**:
-   - **Advarsel (tillat med bekreftelse)** -- Kiosken viser en advarsel når et rom er over forhold eller under sine minimale frivillige, og en personalmedlem kan bekrefte for å fortsette likevel. Dette er standardinnstillingen.
-   - **Blokk (forhindre innsjekking)** -- Innsjekking til rommet blir nektet inntil nok frivillige er innsjekket.
+1. Gå til **Innstillinger** i B1 Admin og åpne seksjonen **Innsjekking**.
+2. Angi **Håndheving av forholdstall for frivillige**:
+   - **Advarsel (tillat med bekreftelse)** -- Kiosken viser en advarsel når et rom har for mange barn per frivillig eller for få frivillige, og en medarbeider kan bekrefte for å fortsette likevel. Dette er standard.
+   - **Blokker (hindre innsjekking)** -- Innsjekking til rommet nektes til nok frivillige er sjekket inn.
 
 :::info
-Kapasitet og Lukket for innsjekking er alltid harde grenser — valget advarsel/blokk gjelder kun frivillig-forhold.
+Kapasitet og Stengt for innsjekking er alltid harde grenser – valget mellom advarsel og blokkering gjelder bare forholdstallene for frivillige.
 :::
 
 ## Innsjekkingstyper
 
-Hver innsjekking registrerer om personen er en **Medlem**, **Gjest**, eller **Frivillig**. Typen velges med brikker på kioskens husstandsskjerm (Medlem er standarden). Typer påvirker sikkerhetreglene — frivillige gir forholdsdekning, og gjester teller mot romskapasiteten for gjester.
+Hver innsjekking registrerer om personen er **Medlem**, **Gjest** eller **Frivillig**. Typen velges med knapper på kioskens husstandsskjerm (Medlem er standard). Typene inngår i sikkerhetsreglene – frivillige gir dekning for forholdstallene, og gjester teller mot rommets gjestekapasitet.
 
-## Aldersog klasseveivising for rom
+## Veiledning om alder og klassetrinn for rom
 
-Du kan gi hvert rom alderseller klassegrenser slik at kiosken guider familier til passende rom:
+Du kan angi alders- eller klassetrinnsgrenser for hvert rom, slik at kiosken veileder familiene til passende rom:
 
-- Bruk **Alder & klasse**-delen på gruppens innstillinger for å angi minimum/maksimal alder (år og måneder) og/eller klasse for rommet.
-- På kiosken er rom som et barn kvalifiserer for uthevet og rom de ikke gjør er dimmet. Et dimmet rom kan fortsatt velges med en personalbekreftelse — veiledningen blokkerer aldri hardt.
+- I gruppens innstillinger bruker du seksjonen **Alder og klassetrinn** til å angi laveste/høyeste alder (år og måneder) og/eller klassetrinn for rommet.
+- På kiosken utheves rom som barnet passer inn i, og rom som barnet ikke passer inn i, dempes. Et nedtonet rom kan likevel velges med bekreftelse fra en medarbeider – veiledningen blokkerer aldri helt.
 
-Klassetrinn rulles over på kirkens **klassepromoteringsdato**:
+Klassetrinn rulleres på menighetens **dato for opprykk**:
 
-1. Gå til **Innstillinger > Administrer kirke** i B1 Admin og åpne flisen for klassepromoteringsdato.
-2. Sett måneden og dagen kirken promoterer elever (for eksempel 1. august). Alder og klassetrinn på kiosken beregnes fra den seneste promoteringsdatoen.
+1. Gå til **Innstillinger** i B1 Admin og åpne seksjonen **Opprykk**.
+2. Angi måneden og dagen menigheten rykker elever opp (for eksempel 1. august). Alder og klassetrinn på kiosken beregnes ut fra den siste opprykksdatoen.
 
-## Godkjente og ikke-autoriserte uthentingspersoner
+## Betrodde og ikke-autoriserte hentepersoner
 
-Hver husstand kan ha en liste over personer som — eller ikke er — tillatt å hente ut barnene sine.
+Hver husstand kan ha en liste over personer som har – eller ikke har – lov til å hente barna.
 
-1. Åpne en persons side i **Personer** og finn **Uthenting**-kortet.
-2. Klikk **Legg til**. Søk etter en eksisterende person, eller legg til noen som ikke er i systemet ved å angi deres **Navn**, **Forhold** og et foto.
-3. Sett **Status**:
-   - **Godkjent** -- Ved utsjekking vises denne personen som et uthentingskort med fotoet sitt, noe som gjør verifisert uthenting raskt.
-   - **Ikke autorisert** -- Hvis noen prøver uthenting under dette navnet, blokkerer kiosken utsjekking med en advarsel. En personalmedlem kan åsidosette, og åsidosetelsen er registrert på innsjekk-posten.
+1. Åpne en persons side under **Personer** og finn kortet **Henting**.
+2. Klikk på **Legg til**. Søk etter en eksisterende person, eller legg til noen som ikke finnes i systemet ved å fylle inn **Navn**, **Relasjon** og et bilde.
+3. Angi **Status**:
+   - **Betrodd** -- Ved utsjekking vises denne personen som et hentekort man kan trykke på, med bilde, slik at kontrollert henting går raskt.
+   - **Ikke autorisert** -- Hvis noen forsøker å hente under dette navnet, blokkerer kiosken utsjekkingen med en advarsel. En medarbeider kan overstyre, og overstyringen registreres på oppmøteregistreringen.
 
-Klikk en persons statusbrikke på kortet for å veksle mellom Godkjent og Ikke autorisert.
+Klikk på en persons statusmerke på kortet for å bytte mellom Betrodd og Ikke autorisert.
 
 :::tip
-Legg til fotos til godkjente uthentingspersoner når det er mulig — utsjekk-skjermen viser fotoet slik at frivillige kan visuelt bekrefte personen som står foran dem.
+Legg til bilder av betrodde hentepersoner når det er mulig – utsjekkingsskjermen viser bildet, slik at frivillige kan se at personen som står foran dem, er den rette.
 :::
 
-## Page-a-parent og nødsendelse
+## Tilkalling av foresatte og nødvarsling
 
-Begge funksjoner sender tekstmeldinger gjennom kirkens tilkoblede tekstmeldingsleverandør — det er ingen innebygd SMS-tjeneste, så en av de støttede leverandørene må konfigureres først.
+Begge funksjonene sender tekstmeldinger via menighetens tilkoblede tekstmeldingstjeneste – det finnes ingen innebygd SMS-tjeneste, så en av de støttede tjenestene må settes opp først.
 
-- **Page a parent** -- Fra en bemannt kiosks utsjekk-skjerm kan personalet sende tekstmelding til en innsjekket barns foreldre/foresatte (for eksempel "Vennligst kom til barnestugen").
-- **Nødsendelse** -- Fra kiosken admin-innstillinger kan personalet sende tekstmelding til hver innsjekket husstands foresatte for den valgte servicen på en gang. Sending krever at du skriver **EMERGENCY** for å bekrefte.
+- **Tilkalling av foresatte** -- Fra utsjekkingsskjermen på en bemannet kiosk kan medarbeidere sende tekstmelding til foreldrene/de foresatte til et innsjekket barn (for eksempel «Kom til barnehagen, takk»).
+- **Nødvarsling** -- Fra kioskens administratorinnstillinger kan medarbeidere sende tekstmelding til de foresatte i alle innsjekkede husstander for den valgte samlingen på én gang. For å sende må du skrive **EMERGENCY** som bekreftelse.
 
-Personer som har valgt bort tekstmeldinger, eller som ikke har mobilnummer på fil, hoppes automatisk over — kiosken rapporterer hvor mange meldinger som ble sendt og hvor mange som ble hoppet over.
+Personer som har reservert seg mot tekstmeldinger, eller som ikke har registrert mobilnummer, hoppes automatisk over – kiosken viser hvor mange meldinger som ble sendt og hvor mange som ble hoppet over.
 
-Se kioskside-gjennomgangen i [Utsjekking og barnesikkerhet](../../b1-checkin/check-in/checking-out).
+Se gjennomgangen fra kioskens side i [Utsjekking og barnesikkerhet](../../b1-checkin/check-in/checking-out).
 
 ## Relaterte artikler
 
-- [Innsjekking](check-in.md) — kiosk-oppsett og maskinvare
-- [Utsjekking og barnesikkerhet](../../b1-checkin/check-in/checking-out) — kiosk utsjekk, uthentingsverifisering og paging-flyter
-- [Opprette grupper](../groups/creating-groups.md) — hvor rominnstillinger ligger
-- [Innsjekking-oppsett](setup.md) — tjenester, servicetider og romtildelinger
-- [Minimumsalder for private meldinger](../settings/mobile-app.md#member-directory--messaging-settings) — blokkerer nye private-meldingssamtaler med barn mens de holdes i mappen
+- [Innsjekking](check-in.md) — oppsett av kiosk og utstyr
+- [Utsjekking og barnesikkerhet](../../b1-checkin/check-in/checking-out) — utsjekking på kiosken, kontroll av henting og tilkalling
+- [Opprette grupper](../groups/creating-groups.md) — her ligger rominnstillingene
+- [Oppsett av oppmøte](setup.md) — gudstjenester, samlingstidspunkter og romtildeling
+- [Minimumsalder for private meldinger](../settings/mobile-app.md#member-directory--messaging-settings) — blokkerer nye private samtaler med barn, samtidig som de forblir i medlemsregisteret

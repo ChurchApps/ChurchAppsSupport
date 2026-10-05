@@ -1,109 +1,112 @@
 ---
-title: "Appearance"
+title: "रूप-रंग"
 ---
 
-# Appearance
+# रूप-रंग
 
 <div class="article-intro">
 
-The Appearance page lets you customize the overall look and feel of your church website. From colors and fonts to spacing and custom CSS, you can control every visual aspect of your site from one place.
+उपस्थिति पृष्ठ आपको अपनी चर्च वेबसाइट के समग्र रूप और अनुभव को अनुकूलित करने देता है। रंगों और फॉन्ट से लेकर रिक्ति और कस्टम CSS तक, आप एक जगह से अपनी साइट के हर दृश्य पहलू को नियंत्रित कर सकते हैं।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- Complete the [Initial Setup](initial-setup) for your website
-- Have your church logo ready in PNG format with a transparent background and a 4:1 aspect ratio
-- Know your church's brand colors (hex values) if you have an existing style guide
+- अपनी वेबसाइट के लिए [प्रारंभिक सेटअप](initial-setup) पूरा करें
+- अपने चर्च लोगो को PNG प्रारूप में तैयार रखें जिसमें एक पारदर्शी पृष्ठभूमि और 4:1 पहलू अनुपात हो
+- यदि आपके पास एक मौजूदा शैली गाइड है तो अपने चर्च के ब्रांड रंग (हेक्स मान) जानें
 
 </div>
 
-## Accessing Appearance Settings
+## उपस्थिति सेटिंग्स तक पहुंचना
 
-1. In the B1 Admin, click **Website** in the left menu.
-2. Click the **Appearance** tab at the top of the Website Pages view.
-3. The Site Styles page loads with a live preview of your website on the left and **Style Settings** options on the right.
+1. B1 Admin में, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (ऊपर-बाएं में खोज बार) और **Website** को विस्तृत करें।
+2. **Appearance** पर क्लिक करें।
+3. Site Styles पृष्ठ आपकी वेबसाइट का लाइव पूर्वावलोकन बाईं ओर और दाईं ओर **Style Settings** विकल्पों के साथ लोड होता है।
 
-## Color Palette
+## रंग पैलेट
 
-1. Click **Color Palette** in the Style Settings panel.
-2. You will see **Base Colors** (light, accent, and dark shades) and **Semantic Colors** (Primary, Secondary, Success, Warning, and Error).
-3. Click any color swatch to open the color picker. Drag the selector or enter a hex value to choose your color.
-4. The **Color Combinations Preview** shows how your selected colors work together.
-5. Use **Suggested Palettes** to quickly apply a pre-designed color scheme.
-6. Click **Save** when you are satisfied.
+1. Style Settings पैनल में **Color Palette** पर क्लिक करें।
+2. आप **Base Colors** (हल्का, उच्चारण, और गहरे रंग) और **Semantic Colors** (Primary, Secondary, Success, Warning, और Error) देखेंगे।
+3. रंग चयनकर्ता खोलने के लिए किसी भी रंग नमूने पर क्लिक करें। सेलेक्टर को ड्रैग करें या अपना रंग चुनने के लिए एक हेक्स मान दर्ज करें।
+4. **Color Combinations Preview** दिखाता है कि आपके चयनित रंग कैसे एक साथ काम करते हैं।
+5. एक पूर्व-डिज़ाइन किए गए रंग योजना को जल्दी लागू करने के लिए **Suggested Palettes** का उपयोग करें।
+6. जब आप संतुष्ट हों तो **Save** पर क्लिक करें।
 
-## Typography
+## टाइपोग्राफी
 
-1. Click **Typography Settings** in the Style Settings panel.
-2. Click **Select a Font** to open the font browser. You can search by name or browse categories like Serif, Sans Serif, Display, Handwriting, and Monospace.
-3. Set fonts for both headings and body text.
-4. Click **Typography Scale** to adjust the size hierarchy for Heading 1 through Heading 4. Use the scale multiplier and base size fields to fine-tune.
-5. Click **Save** to apply your font choices.
+1. Style Settings पैनल में **Typography Settings** पर क्लिक करें।
+2. फॉन्ट ब्राउज़र खोलने के लिए **Select a Font** पर क्लिक करें। आप नाम के आधार पर खोज सकते हैं या Serif, Sans Serif, Display, Handwriting, और Monospace जैसी श्रेणियों को ब्राउज़ कर सकते हैं।
+3. शीर्षकों और मुख्य पाठ दोनों के लिए फॉन्ट सेट करें।
+4. Heading 1 से Heading 4 के लिए आकार पदानुक्रम को समायोजित करने के लिए **Typography Scale** पर क्लिक करें। स्केल गुणक और आधार आकार फ़ील्ड का उपयोग करके सूक्ष्म-ट्यूनिंग करें।
+5. अपनी फॉन्ट पसंद लागू करने के लिए **Save** पर क्लिक करें।
 
-## Spacing
+## रिक्ति
 
-1. Click **Spacing Scale** in the Style Settings panel.
-2. Adjust spacing values for Extra Small through Extra Large. Practical examples show how each value affects layout.
-3. Click **Save Spacing** to apply the values across your entire site.
+1. Style Settings पैनल में **Spacing Scale** पर क्लिक करें।
+2. Extra Small से Extra Large तक रिक्ति मानों को समायोजित करें। व्यावहारिक उदाहरण दिखाते हैं कि प्रत्येक मान लेआउट को कैसे प्रभावित करता है।
+3. अपनी पूरी साइट में मानों को लागू करने के लिए **Save Spacing** पर क्लिक करें।
 
-## Logo and Branding
+## लोगो और ब्रांडिंग
 
-1. Click **Logo** in the Style Settings panel.
-2. Upload your **Light Background Logo** and **Dark Background Logo**. Use images with a transparent background and a 4:1 aspect ratio for best results.
-3. Upload a **Social Media Image** for link previews and a **Favicon** for the browser tab icon.
+1. Style Settings पैनल में **Logo** पर क्लिक करें।
+2. अपना **Light Background Logo** और **Dark Background Logo** अपलोड करें। सर्वोत्तम परिणामों के लिए पारदर्शी पृष्ठभूमि और 4:1 पहलू अनुपात वाली छवियों का उपयोग करें।
+3. लिंक पूर्वावलोकन के लिए एक **Social Media Image** और ब्राउज़र टैब आइकन के लिए एक **Favicon** अपलोड करें।
 
 :::tip
-For best results, use a logo with a transparent background in PNG format. This ensures it looks great on both light and dark backgrounds across your website and [mobile app](../settings/mobile-app.md).
+सर्वोत्तम परिणामों के लिए, PNG प्रारूप में पारदर्शी पृष्ठभूमि वाले लोगो का उपयोग करें। यह सुनिश्चित करता है कि यह आपकी वेबसाइट और [mobile app](../settings/mobile-app.md) पर हल्की और गहरी पृष्ठभूमि दोनों पर बहुत अच्छा दिखता है।
 :::
 
-## Navigation Styles
+## नेविगेशन शैलियां
 
-Customize your website's navigation bar colors for both solid and transparent modes:
+ठोस और पारदर्शी दोनों मोड के लिए अपनी वेबसाइट के नेविगेशन बार रंगों को अनुकूलित करें:
 
-1. Scroll to the **Navigation Styles** section
-2. Click **Edit Navigation Styles**
-3. Configure colors for solid navigation (with background) and transparent navigation (overlay mode)
-4. Click **Save** to apply your navigation colors
+1. **Navigation Styles** खंड तक स्क्रॉल करें
+2. **Edit Navigation Styles** पर क्लिक करें
+3. ठोस नेविगेशन (पृष्ठभूमि के साथ) और पारदर्शी नेविगेशन (ओवरले मोड) के लिए रंग कॉन्फ़िगर करें
+4. अपने नेविगेशन रंगों को लागू करने के लिए **Save** पर क्लिक करें
 
-For detailed instructions, see [Navigation Styles](./navigation-styles.md).
+विस्तृत निर्देशों के लिए, [Navigation Styles](./navigation-styles.md) देखें।
 
-## Site Widgets
+## घोषणा और विजेट
 
-Site widgets appear on every page of your site, floating above the page content:
+साइट विजेट आपकी साइट के हर पृष्ठ पर दिखाई देते हैं, पृष्ठ सामग्री के ऊपर तैरते हुए:
 
-- **Announcement Banner** -- A dismissible bar at the top of your site for time-sensitive messages, like an upcoming event or a service change.
-- **Launcher** -- A floating button that opens a quick-access menu, for example links to give, check in, or view the bulletin.
+- **Announcement Banner** -- पृष्ठ के शीर्ष पर एक खारिज करने योग्य बार जो समय के प्रति संवेदनशील संदेशों के लिए है, जैसे कि एक आने वाली घटना या सेवा परिवर्तन।
+- **Launcher** -- एक तैरता हुआ बटन जो एक त्वरित-पहुंच मेनू खोलता है, उदाहरण के लिए देना, चेक-इन, या बुलेटिन देखने के लिंक।
 
-1. Click **Site Widgets** in the Style Settings panel.
-2. Turn on the widgets you want and configure their text, links, and colors.
-3. Click **Save**.
+1. Style Settings पैनल में **Announcement & Widgets** पर क्लिक करें।
+2. जिन विजेट्स को आप चाहते हैं उन्हें चालू करें और उनके पाठ, लिंक और रंगों को कॉन्फ़िगर करें।
+3. **Save** पर क्लिक करें।
 
-## Analytics
+## रीडायरेक्ट और विश्लेषण
 
-Add your **Google Analytics 4 Measurement ID** in the Style Settings panel to track visitor traffic on your website.
+Style Settings में **Redirects & Analytics** पैनल दो संबंधित लेकिन आमतौर पर आवश्यक सेटिंग्स को होल्ड करता है:
 
-## Custom CSS and JavaScript
+- **Analytics** -- आपकी वेबसाइट पर आगंतुक ट्रैफ़िक ट्रैक करने के लिए अपना **Google Analytics 4 Measurement ID** जोड़ें।
+- **Redirects** -- एक पुराने URL पथ को एक नए में मैप करें, इसलिए एक पृष्ठ के लिंक जो आप हटाते हैं या नाम बदलते हैं 404 होने के बजाय काम करते रहते हैं। पुरानी **From** पथ और नई **To** पथ दर्ज करें, फिर **Save** पर क्लिक करें।
 
-1. Click **CSS and Javascript** in the Style Settings panel.
-2. Add **Custom CSS** to override default styles for advanced customization.
-3. Add **Custom HTML** for tracking codes or other scripts.
-4. Use the **Common Javascript Examples** section for snippets like Google Analytics integration.
+## कस्टम CSS और JavaScript
+
+1. Style Settings पैनल में **CSS and Javascript** पर क्लिक करें।
+2. उन्नत अनुकूलन के लिए डिफ़ॉल्ट शैलियों को ओवरराइड करने के लिए **Custom CSS** जोड़ें।
+3. ट्रैकिंग कोड या अन्य स्क्रिप्ट के लिए **Custom HTML** जोड़ें।
+4. Google Analytics एकीकरण जैसे स्निपेट के लिए **Common Javascript Examples** खंड का उपयोग करें।
 
 :::warning
-Custom CSS is powerful but can break your site's layout if used incorrectly. Most churches can achieve the look they want using the built-in color, font, and spacing controls. Only use custom CSS if you are comfortable with web development.
+कस्टम CSS शक्तिशाली है लेकिन गलत तरीके से उपयोग किए जाने पर आपकी साइट के लेआउट को तोड़ सकता है। अधिकांश चर्च बिल्ट-इन रंग, फॉन्ट, और रिक्ति नियंत्रणों का उपयोग करके जो रूप चाहते हैं उसे प्राप्त कर सकते हैं। केवल कस्टम CSS का उपयोग करें यदि आप वेब विकास के साथ सहज हैं।
 :::
 
 :::info
-Your site enforces a Content Security Policy that blocks inline scripts from any other source. The **Custom JavaScript** field is the one trusted exception -- code you save there runs as-is, so only paste scripts from sources you trust (analytics tags, chat widgets, and similar embeds).
+आपकी साइट एक Content Security Policy को लागू करती है जो किसी भी अन्य स्रोत से इनलाइन स्क्रिप्ट को ब्लॉक करती है। **Custom JavaScript** फ़ील्ड एक विश्वसनीय अपवाद है -- जो कोड आप वहां सहेजते हैं वह ज्यों का त्यों चलता है, इसलिए केवल विश्वसनीय स्रोतों से स्क्रिप्ट पेस्ट करें (विश्लेषण टैग, चैट विजेट, और इसी तरह के एम्बेड)।
 :::
 
-## Style Themes
+## शैली विषय
 
-If you want a quick starting point, the **Suggested Palettes** in the Color Palette section offer pre-built themes that set coordinated colors in one click. You can always fine-tune individual settings after applying a theme.
+यदि आप एक त्वरित प्रारंभिक बिंदु चाहते हैं, तो रंग पैलेट खंड में **Suggested Palettes** पूर्व-निर्मित विषय प्रदान करते हैं जो एक क्लिक में समन्वित रंग सेट करते हैं। आप किसी विषय को लागू करने के बाद हमेशा व्यक्तिगत सेटिंग्स को सूक्ष्म-ट्यून कर सकते हैं।
 
-## Next Steps
+## अगले कदम
 
-- [Managing Pages](managing-pages) -- Build and organize your website pages
-- [Files](files) -- Upload media assets for your site
+- [Pages प्रबंधित करें](managing-pages) -- अपनी वेबसाइट पृष्ठों को बनाएं और व्यवस्थित करें
+- [Files](files) -- अपनी साइट के लिए मीडिया संपत्तियां अपलोड करें

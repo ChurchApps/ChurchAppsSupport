@@ -1,36 +1,82 @@
 ---
-title: "Registrering av donasjoner"
+title: "Registrere gaver"
 ---
 
-# Registrering av donasjoner
+# Registrere gaver
 
 <div class="article-intro">
 
-Registrering av donasjoner i B1 Admin gjøres gjennom partier systemet. Du oppretter et partie for å representere en innsamling (som en søndags gave), og legger deretter til individuelle donasjoner til det partiet. Dette holder givergang postene dine organisert og enkle å forsone.
+Gaver registreres i B1 Admin via gavebuntsystemet. Du oppretter en gavebunt som representerer en innsamling (for eksempel søndagens offer), og legger deretter enkeltgaver inn i denne bunten. Slik holder du orden på giverregistreringene dine og gjør avstemming enklere.
 
 </div>
 
 <div class="prereqs">
-<h4>Før du starter</h4>
+<h4>Før du begynner</h4>
 
-- Sett opp fondene dine slik at du kan tilordne donasjoner til riktige kategorier
-- Opprett et partie for å holde donasjoner du er i ferd med å angi
-- Kontroller at donorene er i menneske katalogen din slik at du kan slå dem opp når du angir gaver
+- Sett opp [fondene dine](funds.md) slik at du kan knytte gaver til riktige kategorier
+- Opprett en [gavebunt](batches.md) som skal inneholde gavene du holder på å registrere
+- Sørg for at giverne finnes i [personregisteret ditt](../people/adding-people.md), slik at du kan slå dem opp når du registrerer gaver
 
 </div>
 
-## Opprett et partie og legg til donasjoner
+## Opprette en gavebunt og legge til gaver
 
-1. I B1 Admin, åpne Seksjonsmeny i øvre venstre hjørne og velg Donasjoner, og klikk deretter Partier.
-2. Klikk Legg til partie.
-3. Skriv inn ett navn for partiet (f.eks. "Søndag gave - jan 5") og velg datoen. Klikk Lagre.
-4. Det nye partiet ditt vises i listen som viser null donasjoner og 0 kroner.
-5. Klikk på partie navnet for å åpne det.
+1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) i **B1 Admin** (søkefeltet øverst til venstre), utvid **Gaver** og klikk på **Gavebunter**.
+2. Klikk på **Legg til gavebunt**.
+3. Skriv inn et navn på gavebunten (for eksempel «Søndagsoffer – 5. jan») og velg dato. Klikk på **Lagre**.
+4. Den nye gavebunten vises i listen med null gaver og 0,00 kr.
+5. Klikk på **navnet på gavebunten** for å åpne den.
 
-## Angi individuelle donasjoner
+## Registrere enkeltgaver
 
-1. På partie detalj siden, skriv donor navn i søkefeltet for å finne dem.
-2. Etter valg av en person, vises donasjon innskrivings skjema med felt for dato, betalingsmetode, fond, beløp og sjekknummer.
-3. Fyll inn detaljene og klikk Legg til donasjon.
-4. Donasjonen blir lagt til i tabellen nedenfor og skjemaet tilbakestilles slik at du kan angi den neste.
+1. På detaljsiden for gavebunten skriver du giverens navn i **søkefeltet** for å finne vedkommende.
+2. Etter at du har valgt en person, vises skjemaet for gaveregistrering med feltene **Dato**, **Betalingsmåte**, **Fond**, **Beløp** og **Sjekknummer**.
+3. Fyll ut opplysningene og klikk på **Legg til gave**.
+4. Gaven legges til i tabellen nedenfor, og skjemaet nullstilles slik at du kan registrere neste gave.
 
+:::tip
+Du kan raskt registrere flere gaver på rad uten å forlate gavebuntsiden. Skjemaet nullstilles etter hver registrering, slik at du effektivt kan jobbe deg gjennom en bunke med sjekker eller konvolutter.
+:::
+
+## Dele en gave mellom flere fond
+
+Noen ganger gir en giver til mer enn ett fond i samme transaksjon. Slik gjør du det:
+
+1. Klikk på knappen **Rediger** på gaverader.
+2. Legg til beløp på ulike fond i redigeringsskjemaet. Totalen beregnes automatisk ut fra beløpene på de enkelte fondene.
+3. Klikk på **Lagre** for å oppdatere gaven.
+
+:::info
+Det er vanlig å dele gaver mellom fond når en giver skriver én sjekk som er øremerket flere formål, for eksempel Generelt fond og Misjon.
+:::
+
+## Redigere eller fjerne gaver
+
+For å redigere en gave klikker du på knappen **Rediger** på raden i gavebunten. Du kan endre dato, beløp, fond, betalingsmåte eller andre detaljer. Klikk på **Lagre** når du er ferdig.
+
+:::tip
+Overskriften på gavebuntsiden oppdateres automatisk og viser totalt antall gaver og samlet beløp etter hvert som du legger til eller redigerer registreringer. Bruk dette til å avstemme mot innskuddsslippen.
+:::
+
+## Refundere en gave
+
+Hvis en giver ble belastet ved en feil eller ber om å få pengene tilbake, kan du refundere en fullført gave direkte fra redigeringsskjermen. Du trenger ikke gå til betalingsleverandørens dashbord.
+
+1. Åpne gaven og klikk på **Rediger**.
+2. Klikk på knappen **Refunder** ved siden av Slett nederst i skjemaet.
+3. Bekreft dialogen: «Refundere denne gaven i sin helhet via betalingsgatewayen? Dette kan ikke angres.»
+
+Gaven refunderes i sin helhet via den opprinnelige betalingsgatewayen og merkes som **Refundert** i gavelistene dine.
+
+:::warning
+Refusjoner er bare fulle refusjoner. Det er ikke mulig å refundere et delbeløp fra B1 Admin. Refusjonen kan heller ikke angres når den er bekreftet.
+:::
+
+:::info
+Knappen **Refunder** vises bare for gaver som er betalt online (de har en gatewaytransaksjon) og som fortsatt har statusen **Fullført**. Manuelt registrerte gaver (kontanter, sjekk) har ingen gatewaytransaksjon å refundere. Rediger eller slett dem i stedet.
+:::
+
+## Neste steg
+
+- Gå gjennom registreringene dine med [giverrapporter](donation-reports.md) for å kontrollere at de stemmer
+- Ved årsskiftet oppretter du [giveroppgaver](giving-statements.md) til giverne dine

@@ -1,72 +1,72 @@
 ---
-title: "Tilgjengelighetkalender"
+title: "Tilgjengelighetskalender"
 ---
 
-# Tilgjengelighetkalender
+# Tilgjengelighetskalender
 
 <div class="article-intro">
 
-Tilgjengelighetkalenderen gir deg fugleperspektiv over alle rom- og ressursbookinger på tvers av kirken din. Herfra kan du se hva som er planlagt, oppdage konflikter før de oppstår, og booke et rom eller en ressurs for et arrangement direkte.
+Tilgjengelighetskalenderen gir deg en oversikt over alle bookinger av rom og ressurser i hele menigheten. Her kan du se hva som er planlagt, oppdage konflikter før de oppstår, og booke et rom eller en ressurs direkte for et arrangement.
 
 </div>
 
 <div class="prereqs">
-<h4>Før du starter</h4>
+<h4>Før du begynner</h4>
 
-- Sett opp minst ett [rom eller ressurs](rooms-resources) i Rom & ressurser-seksjonen
-- Du trenger redigeringstilgang til Kalender-seksjonen i B1 Admin
+- Sett opp minst ett [rom eller en ressurs](rooms-resources) i seksjonen Rom og ressurser
+- Du trenger redigeringstilgang til Kalendere-seksjonen i B1 Admin
 
 </div>
 
-## Åpning av tilgjengelighetkalenderen
+## Åpne tilgjengelighetskalenderen
 
-I B1 Admin åpner du **seksjonsmenyen** i øvre venstre hjørne og velger **Kalendere**, deretter velger du **Tilgjengelighet**.
+Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre) i B1 Admin, utvid **Kalendere** og klikk på **Tilgjengelighet**.
 
-## Lesing av kalenderen
+## Lese kalenderen
 
-Kalenderen viser gjeldende måned som standard. Du kan navigere fremover og bakover med pilene øverst, eller bytte mellom måned-, uke- og dagvisninger.
+Kalenderen viser inneværende måned som standard. Du kan bla fremover og bakover med pilene øverst, eller bytte mellom måned-, uke- og dagsvisning.
 
-Hvert arrangement er fargekodifisert etter bookingsstatus:
+Hvert arrangement er fargekodet etter bookingstatus:
 
 | Farge | Betydning |
 |-------|---------|
 | Grønn | Godkjent |
 | Oransje | Venter på godkjenning |
-| Grå | Blokkert ut (ikke tilgjengelig) |
+| Grå | Sperret (ikke tilgjengelig) |
 
-Når du holder markøren over et arrangement vises arrangementstittel og rom- eller ressursen det er knyttet til.
+Hvis du holder musepekeren over et arrangement, vises arrangementets tittel og rommet eller ressursen det er knyttet til.
 
-## Filtrering etter rom eller ressurs
+## Filtrere etter rom eller ressurs
 
-Bruk **Filter**-rullegardinlisten øverst til venstre for å begrense kalenderen til ett rom eller en ressurs. Velg **Alle rom & ressurser** for å returnere til fullvisningen.
+Bruk nedtrekksmenyen **Filter** øverst til venstre for å begrense kalenderen til ett enkelt rom eller én ressurs. Velg **Alle rom og ressurser** for å gå tilbake til hele visningen.
 
-## Booking av rom eller ressurs
+## Booke et rom eller en ressurs
 
-1. Klikk på **Book**-knappen i øvre høyre hjørne av siden.
-2. Fyll ut arrangementdetaljene i dialogboksen som åpnes:
+1. Klikk på knappen **Book** øverst til høyre på siden.
+2. Fyll ut arrangementsdetaljene i dialogboksen som åpnes:
    - **Tittel** — arrangementets navn
    - **Start** og **Slutt** dato/klokkeslett
    - **Synlighet** — Offentlig eller Privat
-   - **Rom** — velg ett eller flere rom å reservere
-   - **Ressurser** — velg en eller flere ressurser å reservere
-3. Angi eventuelt **Oppsett** og **Rivning** tider (i minutter). Disse puter bookingen på begge ender slik at plassen er reservert for oppsett og rydding, selv om arrangementets start-/sluttider forblir de samme.
-4. Gjenta bookingen ved å merke av **Gjentar** og konfigurere gjentakelsen:
-   - **Gjenta hver** -- sett intervallet (for eksempel hver 2 uker).
-   - **Frekvens** -- Daglig, Ukentlig eller Månedlig. Ukentlig lar deg velge spesifikk dag(er) i uken; Månedlig lar deg velge en fast dag i måneden eller et relativt mønster som "andre tirsdag".
-   - **Slutter** -- Aldri, på en bestemt dato, eller etter et bestemt antall forekomster.
-5. For å angi et tilpasset bookingsvindu (annerledes enn arrangementets start-/sluttid), slå av **Tilpasset bookingsvindu** og skriv inn vinduets start- og sluttider. Bruk dette når et rom må være tilgjengelig utenfor arrangementets oppførte timer.
-6. Klikk **Lagre** for å sende inn bookingen.
+   - **Rom** — velg ett eller flere rom som skal reserveres
+   - **Ressurser** — velg én eller flere ressurser som skal reserveres
+3. Angi eventuelt **Oppsett**- og **Nedrigging**-tid (i minutter). Disse legger til tid i begge ender av bookingen, slik at lokalet er reservert til klargjøring og opprydding, selv om arrangementets start- og sluttid forblir de samme.
+4. For å gjenta bookingen krysser du av for **Gjentas** og angir gjentakelsen:
+   - **Gjenta hver** -- angi intervallet (for eksempel hver 2. uke).
+   - **Frekvens** -- Daglig, Ukentlig eller Månedlig. Ved Ukentlig kan du velge bestemte ukedager, og ved Månedlig kan du velge en fast dag i måneden eller et relativt mønster som «andre tirsdag».
+   - **Slutter** -- Aldri, på en bestemt dato eller etter et bestemt antall forekomster.
+5. For å angi et eget bookingvindu (annerledes enn arrangementets start/slutt) slår du på **Eget bookingvindu** og skriver inn start- og sluttid for vinduet. Bruk dette når et rom må være tilgjengelig utenfor arrangementets oppgitte tider.
+6. Klikk på **Lagre** for å sende inn bookingen.
 
 :::info
-Hvis rommet eller ressursen har en **godkjennelsesgruppe** konfigurert, vil bookingen vises som **Venter** inntil en leder av den gruppen godkjenner den. Se [Kalender-godkjenninger](approvals) for godkjenningsarbeidsflyten.
+Hvis rommet eller ressursen har en **Godkjenningsgruppe** konfigurert, vises bookingen som **Venter** til en leder i den gruppen godkjenner den. Se [Godkjenninger i kalenderen](approvals) for godkjenningsrutinen.
 :::
 
 :::tip
-Kalenderen vil markere konflikter før du lagrer. Hvis du ser en konfliktadvarsel, juster tidene dine eller velg et annet rom.
+Kalenderen uthever alle konflikter før du lagrer. Hvis du ser en konfliktadvarsel, justerer du tidspunktene eller velger et annet rom.
 :::
 
 ## Relaterte artikler
 
-- [Rom, ressurser og planlegging](rooms-resources) — sett opp bookbare områder og utstyr
-- [Kalender-godkjenninger](approvals) — godkjenn eller avvis bookingsforespørsler
+- [Rom, ressurser og planlegging](rooms-resources) — sett opp lokaler og utstyr som kan bookes
+- [Godkjenninger i kalenderen](approvals) — godkjenn eller avslå bookingforespørsler
 - [Opprette kalendere](creating-calendars) — administrer arrangementskalendere

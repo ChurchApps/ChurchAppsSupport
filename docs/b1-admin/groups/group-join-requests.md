@@ -32,7 +32,7 @@ When a group uses the **Request** policy, all join attempts go through the appro
 
 ### For Group Leaders
 
-1. Navigate to **Groups** in B1 Admin
+1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) and choose **People > Groups**
 2. Click on the group name
 3. Pending requests for this group appear at the top of the **Members** tab
 
@@ -40,7 +40,7 @@ When a group uses the **Request** policy, all join attempts go through the appro
 
 Administrators with group management permissions can view pending requests across all groups:
 
-1. Navigate to **Groups** in B1 Admin
+1. In the Jump menu, choose **People > Groups**
 2. Click the **pending requests** button in the page header (for example, "3 pending requests"). It only appears when there are requests waiting.
 3. Review all pending requests church-wide
 

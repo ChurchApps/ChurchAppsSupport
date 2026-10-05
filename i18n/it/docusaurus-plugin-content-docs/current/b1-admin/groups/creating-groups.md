@@ -20,11 +20,10 @@ Creare un gruppo in B1 Admin è semplice. Configurerai una categoria, darai un n
 
 ## Aggiunta di un nuovo gruppo
 
-1. Vai alla **dashboard di B1 Admin**.
-2. Fai clic sulla scheda **Gruppi**.
-3. Fai clic su **Aggiungi gruppo** e inserisci un **Nome categoria**. Le categorie ti aiutano a organizzare insieme i gruppi correlati (ad esempio, "Piccoli gruppi," "Ministeri," o "Comitati"). Se una categoria esiste già, puoi selezionarla dall'elenco.
-4. Inserisci il **Nome del gruppo**.
-5. Fai clic su **Aggiungi**. Il tuo nuovo gruppo apparirà nell'elenco sotto la categoria scelta.
+1. Apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin), espandi **Persone** e fai clic su **Gruppi**.
+2. Fai clic su **Aggiungi gruppo** e inserisci un **Nome categoria**. Le categorie ti aiutano a organizzare insieme i gruppi correlati (ad esempio, "Piccoli gruppi," "Ministeri," o "Comitati"). Se una categoria esiste già, puoi selezionarla dall'elenco.
+3. Inserisci il **Nome del gruppo**.
+4. Fai clic su **Aggiungi**. Il tuo nuovo gruppo apparirà nell'elenco sotto la categoria scelta.
 
 ## Configurazione delle impostazioni del gruppo
 
@@ -41,12 +40,18 @@ Una volta creato il tuo gruppo, puoi compilare ulteriori dettagli:
      - **Chiuso** -- I membri devono essere aggiunti manualmente dai leader o dagli amministratori
    - **Etichette** -- Assegna una o più etichette descrittive al gruppo (ad esempio, "In presenza", "Online", "Nuovi membri benvenuti"). Le etichette sono tag liberi che definisci tu; seleziona tutte quelle applicabili. Le etichette possono essere usate per filtrare i gruppi nell'elemento Esplora gruppi del sito web.
    - **Gruppo riservato** -- Nascondi questo gruppo e il suo elenco membri dalle pagine pubbliche, dal ricercatore di gruppi e dai non membri. Usa questa opzione per gruppi sensibili come ministeri di recupero o counseling; solo i membri del gruppo e lo staff della chiesa possono vederlo.
+   - **Discussioni** -- Attiva o disattiva il feed di chat del gruppo, dove qualsiasi membro può pubblicare. Abilitato per impostazione predefinita.
+   - **Annunci** -- Attiva un secondo feed di chat solo per i leader -- i membri possono leggere e reagire, ma solo i leader possono pubblicare. Abilitato per impostazione predefinita.
    - **Monitoraggio presenze** -- Abilita questa opzione se vuoi registrare le [presenze](../attendance/tracking-attendance.md) per questo gruppo.
    - **Orari delle funzioni** -- Associa il gruppo a orari specifici delle funzioni della chiesa, se applicabile. Consulta [Configurazione delle presenze](../attendance/setup.md) per i dettagli sugli orari delle funzioni.
 4. Fai clic su **Salva** per applicare le modifiche.
 
 :::tip
 Aggiungere una descrizione chiara e un orario di incontro aiuta i membri a sapere cosa aspettarsi quando si uniscono a un gruppo.
+:::
+
+:::info
+Spegnere sia le Discussioni che gli Annunci rimuove completamente la scheda Messaggi dal gruppo nel portale dei membri. Spegnere solo uno nasconde la sua scheda; i membri vengono spostati a qualunque feed sia ancora attivo. I messaggi esistenti vengono mantenuti in ogni caso -- gli interruttori controllano solo la nuova pubblicazione.
 :::
 
 ## Duplicazione di un gruppo
@@ -71,7 +76,7 @@ I gruppi archiviati scompaiono dall'elenco principale dei Gruppi. Per ritrovarne
 Archiviare un gruppo non elimina i suoi membri, la cronologia delle presenze o gli eventi del calendario -- nasconde solo il gruppo dall'elenco predefinito finché non lo ripristini.
 :::
 
-## Prossimi passi
+## Passaggi successivi
 
 Dopo aver creato e configurato il tuo gruppo, sei pronto per:
 

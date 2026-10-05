@@ -1,128 +1,129 @@
 ---
-title: Lektionen planen
+title: "Lektionen planen"
 ---
 
-# Scheduling Lessons from Lessons.church
+# Lektionen von Lessons.church planen
 
 <div class="article-intro">
 
-B1 Admin integrates directly with [Lessons.church](https://lessons.church) so you can schedule curriculum for your classrooms right inside your service plans. This keeps everything — volunteers, assignments, and lesson content — in one place.
+B1 Admin integriert sich direkt mit [Lessons.church](https://lessons.church), sodass Sie Lehrplan für Ihre Klassenzimmer direkt in Ihren Serviceplänen planen können. Dies hält alles -- Freiwillige, Zuweisungen und Lektionsinhalte -- an einem Ort.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Set up your ministries in the Serving area
-- Have an active [Lessons.church](https://lessons.church) account — sign up there first if your church doesn't have one yet
+- Richten Sie Ihre Ministerien im Dienst-Bereich ein
+- Haben Sie ein aktives [Lessons.church](https://lessons.church)-Konto -- registrieren Sie sich dort zuerst, wenn Ihre Kirche noch nicht eines hat
 
 </div>
 
-:::tip Follow a guided walkthrough
-Want to see the full setup from start to finish? Our **<a href="/guides/freeplay-b1admin" target="_blank">step-by-step guide</a>** covers linking providers, scheduling a lesson, and connecting FreePlay to your classroom TV — with short videos and written steps you can check off as you go.
+:::tip Folgen Sie einer geführten Anleitung
+Möchten Sie die vollständige Einrichtung von Anfang bis Ende sehen? Unser **<a href="/guides/freeplay-b1admin" target="_blank">Schritt-für-Schritt-Leitfaden</a>** behandelt das Verlinken von Providern, die Planung einer Lektion und die Verbindung von FreePlay mit Ihrem Klassenzimmer-Fernseher -- mit kurzen Videos und geschriebenen Schritten, die Sie abhaken können.
 :::
 
-## Step 1 — Link Your Lessons.church Account
+## Schritt 1 -- Verlinken Sie Ihr Lessons.church-Konto
 
-This is a one-time setup per ministry. You need to connect your Lessons.church account before you can browse and schedule content.
+Dies ist eine einmalige Einrichtung pro Ministerium. Sie müssen Ihr Lessons.church-Konto verbinden, bevor Sie Inhalte durchsuchen und planen können.
 
-1. Log in to [B1 Admin](https://admin.b1.church/) and go to **Serving**
-2. Open the ministry you want to connect (e.g., Children's Ministry)
-3. Scroll down to the **Content Provider Accounts** section
-4. Click **Link New Provider**
-5. Select **Lessons.church** from the list
-6. A device authorization screen will appear with a code
-7. Go to [lessons.church](https://lessons.church), log in, and enter the code to authorize the connection
-8. Once approved, you will see **"Account linked"** under Lessons.church in B1 Admin
+1. Melden Sie sich bei [B1 Admin](https://admin.b1.church/) an und gehen Sie zu **Dienst**
+2. Öffnen Sie das Ministerium, das Sie verbinden möchten (z. B. Kindergottesdienst)
+3. Scrollen Sie nach unten zum Abschnitt **Content-Provider-Konten**
+4. Klicken Sie auf **Neuen Provider verlinken**
+5. Wählen Sie **Lessons.church** aus der Liste aus
+6. Ein Geräteautorisierungsbildschirm mit einem Code wird angezeigt
+7. Gehen Sie zu [lessons.church](https://lessons.church), melden Sie sich an und geben Sie den Code ein, um die Verbindung zu autorisieren
+8. Nach der Genehmigung wird "Konto verlinkt" unter Lessons.church in B1 Admin angezeigt
 
 :::info
-The Content Provider Accounts section is per ministry. If you run multiple ministries (e.g., Children's and Youth), you will need to link Lessons.church for each one separately.
+Der Abschnitt Content-Provider-Konten ist pro Ministerium. Wenn Sie mehrere Ministerien betreiben (z. B. Kinder- und Jugendministerium), müssen Sie Lessons.church für jedes einzeln verlinken.
 :::
 
-## Step 2 — Schedule a Lesson
+## Schritt 2 -- Eine Lektion planen
 
-Once linked, you can schedule lessons directly from Plans.
+Einmal verlinkt, können Sie Lektionen direkt von Plänen aus planen.
 
-1. In B1 Admin, go to **Serving → Plans**
-2. Select your ministry tab and click **Add Plan Type** — give the plan type a name such as Children's Church or Sunday School
-3. Click on the plan type you just made and click **Schedule Lesson**. From that menu you can schedule one lesson, bulk-schedule a series, or **Apply Year Plan** to drop in a published year sequence from Lessons.church.
-4. Select the **date** for the lesson (defaults to the upcoming Sunday)
-5. Click **Select Lesson** — a content browser dialog opens
-6. The dialog opens with **Lessons.church** selected as the provider (or the provider used for this plan type's earlier lessons). If you have linked other providers, you can switch between them at the top of the dialog
-7. Browse through the content:
-   - Select a **Program** (e.g., "Bible Stories for Kids")
-   - Select a **Study** within that program (e.g., "Creation and Early Stories")
-   - Select the specific **Lesson**
-   - Select the **Venue** — this is the age-group version of the lesson
-8. Click **Associate Lesson** to confirm
-9. Choose your **copy option** for volunteers:
-   - **Nothing** — fresh plan, no volunteers carried over
-   - **Positions Only** — copies volunteer roles from the previous plan but not who is assigned
-   - **Positions and Assignments** — copies both roles and assigned volunteers *(most common)*
-10. Click **Save**
+1. Gehen Sie in B1 Admin zu **Dienst → Pläne**
+2. Wählen Sie Ihre Ministerium-Registerkarte und klicken Sie auf **Plantyp hinzufügen** -- geben Sie dem Plantyp einen Namen wie Kindergottesdienst oder Sonntagsschule
+3. Klicken Sie auf den gerade erstellten Plantyp und klicken Sie auf **Lektion planen**. Von diesem Menü aus können Sie eine Lektion planen, eine Serie massiv planen, oder **Year-Plan anwenden**, um eine veröffentlichte Jahresfolge von Lessons.church einzufügen.
+4. Wählen Sie das **Datum** für die Lektion (standardmäßig der kommende Sonntag)
+5. Klicken Sie auf **Lektion auswählen** -- ein Inhaltsbrowser-Dialog wird geöffnet
+6. Der Dialog wird mit **Lessons.church** als ausgewähltem Provider geöffnet (oder dem Provider, der für die früheren Lektionen dieses Plantyps verwendet wird). Wenn Sie andere Provider verlinkt haben, können Sie oben im Dialog zwischen ihnen wechseln
+7. Durchsuchen Sie den Inhalt:
+   - Wählen Sie ein **Programm** (z. B. "Bible Stories for Kids" / "Bibelgeschichten für Kinder")
+   - Wählen Sie eine **Studie** innerhalb dieses Programms (z. B. "Creation and Early Stories" / "Schöpfung und frühe Geschichten")
+   - Wählen Sie die bestimmte **Lektion** aus
+   - Wählen Sie den **Veranstaltungsort** -- dies ist die Altersgruppen-Version der Lektion
+8. Klicken Sie auf **Lektion verknüpfen**, um zu bestätigen
+9. Wählen Sie Ihre **Kopieroption** für Freiwillige:
+   - **Nichts** -- neuer Plan, keine Freiwilligen übertragen
+   - **Nur Positionen** -- kopiert Freiwilligen-Rollen aus dem vorherigen Plan, aber nicht wer zugewiesen ist
+   - **Positionen und Zuordnungen** -- kopiert sowohl Rollen als auch zugewiesene Freiwillige *(am häufigsten)*
+10. Klicken Sie auf **Speichern**
 
-The plan is created and named automatically (e.g., "Feb 23 - Elementary"). Volunteers can open the plan to see their assignments and review the lesson content before Sunday.
+Der Plan wird erstellt und automatisch benannt (z. B. "23. Feb - Grundschule"). Freiwillige können den Plan öffnen, um ihre Zuweisungen zu sehen und den Lektionsinhalt vor Sonntag zu überprüfen.
 
 :::warning
-Make sure to select the correct **Venue** for your classroom's age group. Choosing the wrong venue means your volunteers will see content designed for a different age level.
+Stellen Sie sicher, dass Sie den korrekten **Veranstaltungsort** für die Altersgruppe Ihres Klassenzimmers auswählen. Die Auswahl des falschen Veranstaltungsorts bedeutet, dass Ihre Freiwilligen Inhalte sehen, die für eine andere Altersstufe vorgesehen sind.
 :::
 
-## Apply a Year Plan
+## Year-Plan anwenden
 
-If a curriculum publisher has published a year plan on Lessons.church, you can load the whole sequence onto this plan type in one step:
+Wenn ein Lehrplan-Verleger einen Year-Plan auf Lessons.church veröffentlicht hat, können Sie die gesamte Sequenz in einem Schritt auf diesen Plantyp laden:
 
-1. Click **Schedule Lesson → Apply Year Plan**
-2. Choose the published year plan
-3. If the plan is calendar-anchored (for example Ark Kids), choose the **target year**. Easter and Christmas studies land on that year's dates. Adjust the first and last class dates if you are only scheduling part of the year.
-4. If the plan is not calendar-anchored, set the first class date (week 1 lands on that date; later weeks are seven days apart) and how many weeks to write (12, 24, 44, or 52)
-5. Optionally copy volunteer positions from the previous plan
-6. Preview the list. Uncheck any week you do not want — later lessons in that stretch move onto the next open Sunday instead of leaving a hole. Dates that already have a plan are skipped the same way for calendar-anchored plans.
-7. Save. Each week becomes a serving plan you can edit as usual — change the lesson, volunteers, or date — and FreePlay will play whatever is on that week's plan.
+1. Klicken Sie auf **Lektion planen → Year-Plan anwenden**
+2. Wählen Sie den veröffentlichten Year-Plan
+3. Wenn der Plan kalendergebunden ist (z. B. Ark Kids), wählen Sie das **Zieljahrr**. Ostern- und Weihnachtsstudien fallen auf die Daten dieses Jahres. Passen Sie die erste und letzte Klassendatum an, wenn Sie nur einen Teil des Jahres planen.
+4. Wenn der Plan nicht kalendergebunden ist, legen Sie das erste Klassendatum fest (Woche 1 fällt auf dieses Datum; spätere Wochen sind sieben Tage auseinander) und wie viele Wochen zu schreiben (12, 24, 44 oder 52)
+5. Kopieren Sie optional die Freiwilligen-Positionen aus dem vorherigen Plan
+6. Vorschau der Liste. Deaktivieren Sie alle Wochen, die Sie nicht möchten -- spätere Lektionen dieser Strecke werden stattdessen auf den nächsten offenen Sonntag verschoben, anstatt ein Loch zu hinterlassen. Daten, die bereits einen Plan haben, werden bei kalendergebundenen Plänen auf die gleiche Weise übersprungen.
+7. Speichern. Jede Woche wird ein Serviceplan, den Sie wie gewohnt bearbeiten können -- ändern Sie die Lektion, Freiwillige oder das Datum -- und FreePlay spielt ab, was in dem Plan dieser Woche vorhanden ist.
 
 :::tip
-**Plan ahead** — You can schedule multiple weeks of lessons at once so your team can prepare in advance. Use the past lesson list in the plan view to avoid accidentally repeating content.
+**Planen Sie voraus** -- Sie können mehrere Wochen Lektionen auf einmal planen, damit Ihr Team sich im Voraus vorbereiten kann. Verwenden Sie die Liste der vergangenen Lektionen in der Plan-Ansicht, um versehentlich wiederholte Inhalte zu vermeiden.
 :::
 
-## Customizing Lesson Content
+## Lektionsinhalte anpassen
 
-Once a lesson is scheduled, you can tailor it for your specific classroom — remove sections that don't apply, hide roles your room doesn't use, or reorder the content to match your preferred flow. Customizations can be saved for just one classroom or applied across all classrooms at your church.
+Nach der Planung einer Lektion können Sie diese für Ihr bestimmtes Klassenzimmer anpassen -- entfernen Sie Abschnitte, die nicht anwendbar sind, verstecken Sie Rollen, die Ihr Klassenzimmer nicht verwendet, oder ordnen Sie den Inhalt neu an, um Ihren bevorzugten Ablauf zu entsprechen. Anpassungen können nur für ein Klassenzimmer gespeichert oder auf alle Klassenzimmer in Ihrer Kirche angewendet werden.
 
-See the [Customizing Lessons](/docs/lessons-church/customization/customizing-lessons) guide for step-by-step instructions.
+Siehe den [Customizing Lessons](/docs/lessons-church/customization/customizing-lessons)-Leitfaden für Schritt-für-Schritt-Anweisungen.
 
-## Playing Lessons on a Classroom TV with FreePlay
+## Lektionen auf einem Klassenzimmer-Fernseher mit FreePlay spielen
 
-Scheduling a lesson in B1 Admin pairs perfectly with **[FreePlay](/docs/freeplay/)** — ChurchApps' free media player for classroom TVs and Fire Sticks. When your plan is set up, FreePlay can pull the lesson content directly from Lessons.church and play it full-screen in the classroom. Your teacher controls the pace with a TV remote, advancing through videos and slides as the lesson flows.
+Die Planung einer Lektion in B1 Admin passt perfekt mit **[FreePlay](/docs/freeplay/)** zusammen -- ChurchApps' kostenloser Mediaplayer für Klassenzimmer-Fernseher und Fire Sticks. Wenn Ihr Plan eingerichtet ist, kann FreePlay den Lektionsinhalt direkt von Lessons.church abrufen und ihn vollbildschirm im Klassenzimmer abspielen. Ihr Lehrer kontrolliert das Tempo mit einer Fernbedienung und schreitet durch Videos und Folien voran, während die Lektion abläuft.
 
-This means your volunteers see the plan on their phones while the content plays on the room's TV — no separate setup, no USB drives, no last-minute scrambling.
+Dies bedeutet, dass Ihre Freiwilligen den Plan auf ihren Telefonen sehen, während der Inhalt auf dem Fernseher des Klassenzimmers abgespielt wird -- keine separate Einrichtung, keine USB-Laufwerke, kein letztes Durcheinander.
 
-[Learn how to connect FreePlay to a content provider →](/docs/freeplay/content-providers/connecting-providers)
+[Erfahren Sie, wie Sie FreePlay mit einem Content-Provider verbinden →](/docs/freeplay/content-providers/connecting-providers)
 
-## Don't See Your Curriculum Provider?
+## Sehen Sie Ihren Lehrplan-Provider nicht?
 
-The list of available providers is growing. If your church uses a curriculum provider that isn't showing in B1 Admin yet, reach out to us and we'll work on getting them added.
+Die Liste der verfügbaren Provider wächst. Wenn Ihre Kirche einen Lehrplan-Provider nutzt, der noch nicht in B1 Admin angezeigt wird, wenden Sie sich an uns und wir kümmern uns um die Hinzufügung.
 
-Feel free to copy and send the message below directly to your curriculum provider — once they reach out to us we'll get the integration set up:
-
----
-
-> **Subject: ChurchApps Integration Request**
->
-> Hi [Curriculum Provider Team],
->
-> We love your curriculum and use it every week with our kids. We also use ChurchApps to manage our volunteers and service plans, and we use FreePlay (freeplay.church) to play lesson content directly on our classroom TVs. It has been a game changer for our teachers.
->
-> Right now we have to manage your curriculum separately, but if you were integrated with ChurchApps we could schedule your lessons right inside our service plans and play them through FreePlay on our classroom screens — all without leaving the tools we already use.
->
-> ChurchApps already works with several curriculum providers and their team is ready to work with you too. Could you reach out to them at **support@churchapps.org** to get the conversation started? We'd love to see this happen!
->
-> Thank you!
+Zögern Sie nicht, die unten stehende Nachricht direkt an Ihren Lehrplan-Provider zu kopieren und zu senden -- sobald sie uns erreichen, werden wir die Integration einrichten:
 
 ---
 
-## Related Articles
+> **Betreff: ChurchApps-Integrationseingabe**
+>
+> Hallo [Curriculum-Provider-Team],
+>
+> Wir lieben Ihren Lehrplan und verwenden ihn jede Woche mit unseren Kindern. Wir verwenden auch ChurchApps, um unsere Freiwilligen und Servicepläne zu verwalten, und wir verwenden FreePlay (freeplay.church), um Lektionsinhalte direkt auf unseren Klassenzimmer-Fernsehern abzuspielen. Es hat ein Game-Changer für unsere Lehrer gewesen.
 
-- [Service Plans](./plans.md)
-- [Service Order](./service-order.md)
-- [Customizing Lessons](/docs/lessons-church/customization/customizing-lessons)
-- [FreePlay — Playing Lessons on a Classroom TV](/docs/freeplay/classroom-mode/playing-lessons)
-- [Lessons.church Scheduling Guide](/docs/lessons-church/classrooms/scheduling-lessons)
+>
+> Im Moment müssen wir Ihren Lehrplan separat verwalten, aber wenn Sie mit ChurchApps integriert würden, könnten wir Ihre Lektionen direkt in unseren Serviceplänen planen und sie über FreePlay auf unseren Klassenzimmer-Bildschirmen abspielen -- alles ohne die Tools zu verlassen, die wir bereits verwenden.
+>
+> ChurchApps funktioniert bereits mit mehreren Lehrplan-Providern und ihr Team ist bereit, auch mit Ihnen zu arbeiten. Könnten Sie sie unter **support@churchapps.org** kontaktieren, um das Gespräch zu beginnen? Wir würden uns freuen, dass dies passiert!
+>
+> Danke!
+
+---
+
+## Verwandte Artikel
+
+- [Servicepläne](./plans.md)
+- [Service-Reihenfolge](./service-order.md)
+- [Lektionen anpassen](/docs/lessons-church/customization/customizing-lessons)
+- [FreePlay -- Lektionen auf einem Klassenzimmer-Fernseher spielen](/docs/freeplay/classroom-mode/playing-lessons)
+- [Lessons.church-Planungsleitfaden](/docs/lessons-church/classrooms/scheduling-lessons)

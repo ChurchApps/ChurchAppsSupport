@@ -33,7 +33,7 @@ When you first open the Settings page, you will see your **church name** and **s
 - **Batches** -- Jump directly to donation batches.
 - **Import/Export** -- Transfer data between systems using the import/export tool.
 
-Below the header, open the **Church Information** section to edit your church's name, address, contact information, and branding -- see [Church Settings](./church-settings.md). To manage user roles, click **Roles** in the Settings navigation bar -- see [Roles & Permissions](./roles-permissions.md).
+Below the header, open the **Church Information** section to edit your church's name, address, contact information, and branding -- see [Church Settings](./church-settings.md). To manage user roles, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) and choose **Settings > Roles** -- see [Roles & Permissions](./roles-permissions.md).
 
 :::tip
 Start by configuring your church name and branding under **Church Information**, then set up [Roles](./roles-permissions.md) to invite your team members with the right level of access.

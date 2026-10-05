@@ -1,45 +1,45 @@
 ---
-title: "Geburtstag & Jahrestagsisten"
+title: "Geburtstags- und Jubiläumslisten"
 ---
 
-# Geburtstag & Jahrestagslisten
+# Geburtstags- und Jubiläumslisten
 
 <div class="article-intro">
 
-Benötigen Sie eine Liste aller, die einen Geburtstag oder Jahrestag in einem bestimmten Monat haben — für das Bulletin, Ankündigungen oder Karten? Mit der Personensuche können Sie Ihre Gemeinde nach **Birth Month** und **Anniversary Month** filtern und die Daten direkt in den Ergebnissen anzeigen.
+Benötigen Sie eine Liste aller Personen mit einem Geburtstag oder Jubiläum in einem bestimmten Monat -- für das Bulletin, Ankündigungen oder Karten? Die Personensuche kann Ihre Gemeinde nach **Geburtsmonat** und **Jubiläumsmonat** filtern und die Daten direkt in den Ergebnissen anzeigen.
 
 </div>
 
 <div class="prereqs">
-<h4>Vor dem Start</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Stellen Sie sicher, dass Geburtsdaten (und Jahrestage) in den Profilen jeder Person eingegeben werden. Siehe [Adding People](../people/adding-people.md).
-- Sie benötigen die Berechtigung zum Anzeigen von Personen. Siehe [Roles & Permissions](../settings/roles-permissions.md).
+- Stellen Sie sicher, dass Geburtsdaten (und Jubiläen) in den Profilen der einzelnen Personen eingegeben werden. Weitere Informationen finden Sie unter [Personen hinzufügen](../people/adding-people.md).
+- Sie benötigen Berechtigung zum Anzeigen von Personen. Weitere Informationen finden Sie unter [Rollen & Berechtigungen](../settings/roles-permissions.md).
 
 </div>
 
-## Abrufen einer Geburtstagsliste für einen Monat
+## Geburtstagsliste für einen Monat abrufen
 
-1. Öffnen Sie das **section menu** in der oberen linken Ecke und wählen Sie **People**.
-2. Klicken Sie unter dem Suchfeld auf **Advanced**.
-3. Erweitern Sie den Abschnitt **Demographics** und aktivieren Sie **Birth Month**, wählen Sie dann den Monat.
-4. Führen Sie die Suche aus — jeder mit einem Geburtstag in diesem Monat erscheint in den Ergebnissen.
-5. Um die Daten anzuzeigen, klicken Sie auf das **columns icon** oben rechts in den Ergebnissen und aktivieren Sie die Spalte **Birthday**. Verwenden Sie **Export**, um die Liste als Tabelle herunterzuladen, wenn Sie sie lieber sortieren oder dort drucken möchten.
+1. Öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links in B1 Admin), erweitern Sie **Personen** und klicken Sie auf **Personen**.
+2. Klicken Sie unter dem Suchfeld auf **Erweitert**.
+3. Erweitern Sie den Bereich **Demografische Daten** und aktivieren Sie **Geburtsmonat**, dann wählen Sie den Monat aus.
+4. Führen Sie die Suche aus -- alle Personen mit einem Geburtstag in diesem Monat werden in den Ergebnissen angezeigt.
+5. Um die Daten anzuzeigen, klicken Sie auf das **Spaltensymbol** oben rechts der Ergebnisse und aktivieren Sie die Spalte **Geburtstag**. Verwenden Sie **Exportieren**, um die Liste als Kalkulationstabelle herunterzuladen, falls Sie sie lieber sortieren oder dort drucken möchten.
 
-## Abrufen einer Jahrestagsliste
+## Jubiläumsliste abrufen
 
-Gleiche Schritte — aktivieren Sie im Abschnitt **Demographics** stattdessen (oder auch) **Anniversary Month**, wählen Sie den Monat und aktivieren Sie die Spalte **Anniversary** in den Ergebnissen.
+Die gleichen Schritte -- aktivieren Sie im Bereich **Demografische Daten** stattdessen (oder zusätzlich) **Jubiläumsmonat**, wählen Sie den Monat und aktivieren Sie die Spalte **Jubiläum** in den Ergebnissen.
 
 ## Praktische Anwendungen
 
-- **Weekly bulletins** — Führen Sie die Liste des aktuellen Monats aus und lesen Sie die Namen direkt ins Bulletin.
-- **Birthday & anniversary cards** — Exportieren Sie die Monats-Liste und übergeben Sie sie Ihrem Kartenschreib-Team.
-- **Milestones** — Kombinieren Sie mit dem Filter **Age**, um Geburtstags-Meilensteine zu finden.
+- **Wöchentliche Bulletins** -- Führen Sie die Liste des aktuellen Monats aus und lesen Sie die Namen direkt in das Bulletin.
+- **Geburtstags- und Jubiläumskarten** -- Exportieren Sie die Liste des Monats und übergeben Sie sie Ihrem Kartenschreib-Team.
+- **Meilensteine** -- Kombinieren Sie mit dem Filter **Alter**, um Meilenstein-Geburtstage zu finden.
 
 :::tip
-Beide Listen stammen aus den Geburtsdatum- und Jahrestagsfeldern im Profil jeder Person — wenn jemand fehlt, muss in seinem Profil nur das Datum hinzugefügt werden.
+Beide Listen stammen aus den Feldern „Geburtsdatum" und „Jubiläum" im Profil jeder Person -- falls jemand fehlt, muss sein Profil einfach das Datum hinzugefügt bekommen.
 :::
 
 :::info
-Frühere Versionen von B1 Admin hatten eine separate Berichtseite für Geburtstage. Diese Seite wurde eingestellt — die oben aufgeführten Personensuche-Filter sind die aktuelle Methode, und sie decken auch Jahrestage ab.
+Frühere Versionen von B1 Admin hatten eine separate Seite „Berichte" für Geburtstage. Diese Seite wurde eingestellt -- die Suchfilter „Personen" oben sind der aktuelle Weg und sie decken auch Jubiläen ab.
 :::

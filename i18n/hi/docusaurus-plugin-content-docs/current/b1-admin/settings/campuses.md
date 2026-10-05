@@ -2,70 +2,70 @@
 title: "परिसर"
 ---
 
-# Campuses
+# परिसर
 
 <div class="article-intro">
 
-If your church meets at more than one location, **Campuses** let you track which site each person and group belongs to. Once configured, campuses appear as an option on person profiles, in attendance setup, and in the Demographics dashboard. Multi-site churches can filter, search, and report by campus throughout B1 Admin.
+यदि आपका चर्च एक से अधिक स्थान पर मिलता है, तो **परिसर** आपको यह ट्रैक करने देते हैं कि प्रत्येक व्यक्ति और समूह किस साइट का है। एक बार कॉन्फ़िगर करने के बाद, परिसर व्यक्ति प्रोफाइल पर, उपस्थिति सेटअप में, और जनसांख्यिकी डैशबोर्ड में विकल्प के रूप में दिखाई देते हैं। बहु-स्थल चर्च B1 Admin में परिसर द्वारा फ़िल्टर, खोज, और रिपोर्ट कर सकते हैं।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- You need the **Edit Church Settings** permission to manage campuses. See [Roles & Permissions](./roles-permissions.md).
+- परिसर को प्रबंधित करने के लिए आपको **चर्च सेटिंग्स संपादित करें** अनुमति की आवश्यकता है। [भूमिकाएं और अनुमतियां](./roles-permissions.md) देखें।
 
 </div>
 
-## Opening Campus Settings
+## परिसर सेटिंग्स खोलना
 
-In B1 Admin, open the **section menu** in the top-left corner (the section name with the small arrow), choose **Settings**, and select **Campuses** from the Settings navigation. You will see a list of all configured campuses with their name, location, and timezone.
+B1 Admin में, [जंप मेनू](../introduction.md#getting-around-with-the-jump-menu) (शीर्ष-बाईं ओर खोज पट्टी) खोलें, **सेटिंग्स > सेटिंग्स** चुनें, और **परिसर** कार्ड का चयन करें। आप सीधे **/settings/campuses** पर भी जा सकते हैं। आप अपने सभी कॉन्फ़िगर किए गए परिसरों की सूची देखेंगे जिसमें उनका नाम, स्थान, और समय क्षेत्र है।
 
-## Adding a Campus
+## परिसर जोड़ना
 
-1. Click **Add Campus** (or the **+** button if no campuses exist yet).
-2. Fill in the campus details:
-   - **Name** *(required)* — the display name shown throughout B1 Admin (for example, "Main Campus" or "North Campus").
-   - **Address** — the campus street address (used for informational display; not the same as your main church address in Church Settings).
-   - **City / State / Zip** — the campus location.
-   - **Timezone** — the IANA timezone for this campus (for example, *America/Chicago*). Useful when campuses are in different time zones.
-   - **Website** — an optional URL for this campus's own web presence.
-3. Click **Save**.
+1. **परिसर जोड़ें** पर क्लिक करें (या **+** बटन अगर कोई परिसर अभी तक मौजूद नहीं है)।
+2. परिसर विवरण भरें:
+   - **नाम** *(आवश्यक)* -- प्रदर्शन नाम जो B1 Admin में दिखाया जाता है (उदाहरण के लिए, "मुख्य परिसर" या "उत्तर परिसर")।
+   - **पता** -- परिसर की सड़क पता (सूचनात्मक प्रदर्शन के लिए उपयोग किया जाता है; चर्च सेटिंग्स में आपके मुख्य चर्च पते के समान नहीं)।
+   - **शहर / राज्य / ज़िप** -- परिसर स्थान।
+   - **समय क्षेत्र** -- इस परिसर के लिए IANA समय क्षेत्र (उदाहरण के लिए, *America/Chicago*)। जब परिसर विभिन्न समय क्षेत्रों में हों तो उपयोगी।
+   - **वेबसाइट** -- इस परिसर के अपने वेब उपस्थिति के लिए एक वैकल्पिक URL।
+3. **सहेजें** पर क्लिक करें।
 
-## Editing a Campus
+## परिसर संपादित करना
 
-Click any campus row in the list to open its editor in the panel to the right. Update the fields and click **Save**.
+सूची में किसी भी परिसर की पंक्ति पर क्लिक करें दाईं ओर पैनल में इसके संपादक को खोलने के लिए। फील्ड को अपडेट करें और **सहेजें** पर क्लिक करें।
 
-## Deleting a Campus
+## परिसर हटाना
 
-Open a campus for editing and click **Delete**. You will be asked to confirm. Deleting a campus does not remove the people assigned to it — their campus field simply becomes blank.
+संपादन के लिए एक परिसर खोलें और **हटाएं** पर क्लिक करें। आपको पुष्टि करने के लिए कहा जाएगा। परिसर को हटाने से इसे असाइन किए गए लोग नहीं हटाए जाते -- उनका परिसर फील्ड बस खाली हो जाता है।
 
-## Assigning People to a Campus
+## व्यक्तियों को परिसर को असाइन करना
 
-After creating campuses, staff can assign a person to a campus from their profile:
+परिसर बनाने के बाद, कर्मचारी अपनी प्रोफाइल से एक व्यक्ति को एक परिसर को असाइन कर सकते हैं:
 
-1. Open a person's record in **People**.
-2. Click **Edit**.
-3. Choose the campus from the **Campus** dropdown.
-4. Click **Save**.
+1. **लोगों** में एक व्यक्ति के रिकॉर्ड को खोलें।
+2. **संपादित करें** पर क्लिक करें।
+3. **परिसर** ड्रॉपडाउन से परिसर चुनें।
+4. **सहेजें** पर क्लिक करें।
 
-You can also update campus in bulk from the People page. Select multiple people, use **Bulk Edit**, and set the Campus field for everyone at once.
+आप लोगों पृष्ठ से परिसर को थोक में अपडेट कर सकते हैं। कई लोगों का चयन करें, **बल्क संपादित करें** का उपयोग करें, और एक बार में सभी के लिए परिसर फील्ड सेट करें।
 
-## Filtering by Campus
+## परिसर द्वारा फ़िल्टरिंग
 
-Once campuses are set up, you can filter across B1 Admin by campus:
+एक बार परिसर सेट अप होने के बाद, आप B1 Admin में परिसर द्वारा फ़िल्टर कर सकते हैं:
 
-- **People search** — add a Campus condition in the advanced search, or load a [Saved List](../people/lists.md) scoped to a campus.
-- **Demographics** — the [Demographics dashboard](../people/demographics.md) shows a Campus donut chart when at least one person has a campus assigned.
-- **Attendance Setup** — each service time in Attendance can be tied to a campus.
+- **लोगों की खोज** -- उन्नत खोज में परिसर की स्थिति जोड़ें, या परिसर को [सहेजी गई सूची](../people/lists.md) लोड करें।
+- **जनसांख्यिकी** -- [जनसांख्यिकी डैशबोर्ड](../people/demographics.md) परिसर डोनट चार्ट दिखाता है जब कम से कम एक व्यक्ति को परिसर असाइन किया गया हो।
+- **उपस्थिति सेटअप** -- उपस्थिति में प्रत्येक सेवा समय को एक परिसर से जोड़ा जा सकता है।
 
 :::tip
-Single-location churches don't need to configure campuses. All campus features are optional — if no campuses exist, campus fields and charts simply don't appear.
+एकल-स्थान चर्चों को परिसर कॉन्फ़िगर करने की आवश्यकता नहीं है। सभी परिसर सुविधाएं वैकल्पिक हैं -- यदि कोई परिसर मौजूद नहीं है, तो परिसर फील्ड और चार्ट बस दिखाई नहीं देते हैं।
 :::
 
-## Related Articles
+## संबंधित लेख
 
-- [Church Settings](./church-settings.md) — your main church address and branding (separate from campus addresses)
-- [Demographics](../people/demographics.md) — the Campus breakdown chart
-- [Attendance Setup](../attendance/setup.md) — link service times to a campus
-- [Bulk Editing](../people/bulk-editing.md) — assign campus to many people at once
+- [चर्च सेटिंग्स](./church-settings.md) -- आपका मुख्य चर्च पता और ब्रांडिंग (परिसर पते से अलग)
+- [जनसांख्यिकी](../people/demographics.md) -- परिसर ब्रेकडाउन चार्ट
+- [उपस्थिति सेटअप](../attendance/setup.md) -- सेवा समय को परिसर से लिंक करें
+- [बल्क संपादन](../people/bulk-editing.md) -- एक बार में कई लोगों को परिसर असाइन करें

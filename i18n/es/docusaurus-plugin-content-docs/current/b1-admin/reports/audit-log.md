@@ -1,83 +1,83 @@
 ---
-title: "Registro de auditoría"
+title: "Registro de Auditoría"
 ---
 
-# Registro de auditoría
+# Registro de Auditoría
 
 <div class="article-intro">
 
-El registro de auditoría rastrea todas las acciones y cambios significativos en tu sistema de gestión de iglesia. Úsalo para revisar actividad de inicio de sesión, rastrear quién realizó cambios en registros de personas, monitorear actualizaciones de permisos y mantener responsabilidad en tu equipo.
+El registro de auditoría rastrea todas las acciones y cambios significativos en tu sistema de gestión de iglesia. Úsalo para revisar la actividad de inicio de sesión, rastrear quién realizó cambios en registros de personas, monitorear actualizaciones de permisos y mantener responsabilidad en tu equipo.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de comenzar</h4>
+<h4>Antes de Comenzar</h4>
 
-- Cuenta de B1 Admin con acceso de administrador del servidor
-- Navega a **Configuración** para encontrar el Registro de auditoría
+- Cuenta B1 Admin con acceso de administrador del servidor
+- Navega a **Settings** para encontrar el Audit Log
 
 </div>
 
-## Ver el registro de auditoría
+## Visualización del Registro de Auditoría
 
-1. Ve a **Configuración** en B1 Admin.
-2. Selecciona **Registro de auditoría**.
+1. Abre el [Menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la esquina superior izquierda de B1 Admin) y expande **Settings**.
+2. Haz clic en **Audit Log**.
 3. El registro muestra entradas recientes en una tabla con las siguientes columnas:
-   - **Fecha** -- Cuándo ocurrió la acción.
-   - **Categoría** -- El tipo de acción (codificado por color para escaneo rápido).
-   - **Acción** -- Qué se hizo (p. ej., create, update, delete, login_success).
-   - **Entidad** -- El tipo e ID del registro que fue afectado.
-   - **Dirección IP** -- La dirección IP del usuario que realizó la acción.
-   - **Detalles** -- Un resumen de los cambios específicos realizados.
+   - **Date** -- Cuándo ocurrió la acción.
+   - **Category** -- El tipo de acción (código de colores para escaneo rápido).
+   - **Action** -- Qué se hizo (por ejemplo, create, update, delete, login_success).
+   - **Entity** -- El tipo e ID del registro que se vio afectado.
+   - **IP Address** -- La dirección IP del usuario que realizó la acción.
+   - **Details** -- Un resumen de los cambios específicos realizados.
 
-## Filtrar el registro
+## Filtrado del Registro
 
 Usa los filtros en la parte superior de la página para reducir los resultados:
 
-- **Categoría** -- Filtra por tipo de acción:
-  - **Todas las categorías** -- Muestra todo.
-  - **Inicio de sesión** -- Inicios de sesión exitosos y fallidos.
-  - **Personas** -- Creación, actualización o eliminación de registros de persona.
-  - **Permisos** -- Otorgamiento y revocación de permisos.
-  - **Donaciones** -- Cambios en registros de donación.
-  - **Grupos** -- Acciones de gestión de grupo.
-  - **Formularios** -- Actividad de envío de formulario.
-  - **Configuración** -- Cambios de configuración.
-- **Fecha de inicio** -- Muestra entradas desde esta fecha en adelante.
-- **Fecha de fin** -- Muestra entradas hasta esta fecha.
+- **Category** -- Filtrar por tipo de acción:
+  - **All Categories** -- Mostrar todo.
+  - **Login** -- Inicios de sesión exitosos y fallidos.
+  - **People** -- Creación, actualización o eliminación de registros de personas.
+  - **Permissions** -- Otorgamiento y revocación de permisos.
+  - **Donations** -- Cambios de registros de donaciones.
+  - **Groups** -- Acciones de gestión de grupos.
+  - **Forms** -- Actividad de envío de formularios.
+  - **Settings** -- Cambios de configuración.
+- **Start Date** -- Mostrar entradas a partir de esta fecha en adelante.
+- **End Date** -- Mostrar entradas hasta esta fecha.
 
-Haz clic en **Buscar** después de establecer tus filtros para actualizar los resultados.
+Haz clic en **Search** después de establecer tus filtros para actualizar los resultados.
 
-## Entendiendo categorías
+## Comprensión de Categorías
 
-Cada categoría está codificada por color para identificación rápida:
+Cada categoría tiene un código de color para identificación rápida:
 
-- **Inicio de sesión** -- Chip azul. Rastrea intentos de inicio de sesión exitosos y fallidos.
-- **Personas** -- Chip púrpura. Rastrea creaciones, actualizaciones y eliminaciones de registros de persona.
-- **Permisos** -- Chip rojo. Rastrea cuándo se otorgan o revocan derechos de acceso.
-- **Donaciones** -- Chip verde. Rastrea cambios en registros de donación.
-- **Grupos** -- Chip gris. Rastrea operaciones de gestión de grupo.
-- **Formularios** -- Chip naranja. Rastrea actividad de envío de formulario.
-- **Configuración** -- Chip amarillo. Rastrea cambios de configuración.
+- **Login** -- Chip azul. Rastrea intentos de inicio de sesión exitosos y fallidos.
+- **People** -- Chip púrpura. Rastrea creaciones, actualizaciones y eliminaciones de registros de personas.
+- **Permissions** -- Chip rojo. Rastrea cuándo se otorgan o revocan derechos de acceso.
+- **Donations** -- Chip verde. Rastrea cambios de registros de donaciones.
+- **Groups** -- Chip gris. Rastrea operaciones de gestión de grupos.
+- **Forms** -- Chip naranja. Rastrea actividad de envío de formularios.
+- **Settings** -- Chip amarillo. Rastrea cambios de configuración.
 
-## Exportar el registro
+## Exportación del Registro
 
-Cuando se muestran entradas de registro, aparece un botón de **descarga CSV**. Haz clic para exportar los resultados filtrados actuales a una hoja de cálculo para revisión fuera de línea o mantenimiento de registros.
+Cuando se muestran entradas de registro, aparece un botón **CSV download**. Haz clic en él para exportar los resultados filtrados actuales a una hoja de cálculo para revisión offline o mantenimiento de registros.
 
 ## Paginación
 
-Usa los controles de paginación en la parte inferior de la tabla para navegar a través de los resultados. Puedes mostrar 25, 50 o 100 entradas por página.
+Usa los controles de paginación en la parte inferior de la tabla para navegar por los resultados. Puedes mostrar 25, 50 o 100 entradas por página.
 
 :::info
-Las entradas del registro de auditoría se conservan automáticamente durante un año. Las entradas más antiguas que 365 días se eliminan para mantener el sistema con buen rendimiento.
+Las entradas del registro de auditoría se retienen automáticamente durante un año. Las entradas más antiguas que 365 días se eliminan para mantener el sistema funcionando de manera eficiente.
 :::
 
 :::tip
-Revisa el registro de auditoría regularmente, especialmente después de incorporar nuevos miembros del equipo o hacer cambios de configuración significativos. Ayuda a identificar actividad inesperada temprano.
+Revisa el registro de auditoría regularmente, especialmente después de incorporar nuevos miembros del equipo o realizar cambios de configuración significativos. Ayuda a identificar actividad inesperada temprano.
 :::
 
-## Artículos relacionados
+## Artículos Relacionados
 
-- [Roles y permisos](../settings/roles-permissions) -- Gestiona quién tiene acceso a qué
-- [Seguridad de datos](../settings/data-security) -- Entiende cómo se protegen tus datos
-- [Descripción general de reportes](./index.md) -- Ve todos los reportes disponibles
+- [Roles y Permisos](../settings/roles-permissions) -- Gestiona quién tiene acceso a qué
+- [Data Security](../settings/data-security) -- Comprende cómo se protegen tus datos
+- [Reports Overview](./index.md) -- Ver todos los informes disponibles

@@ -20,7 +20,7 @@ Creating a calendar in B1 Admin lets you build a curated view of events by conne
 
 ## Creating a New Calendar
 
-1. In the B1 Admin, navigate to **Calendars** in the main menu.
+1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Calendars**, and click **Calendars**.
 2. Click **Add Calendar**.
 3. Enter a **name** for your calendar (for example, "Youth Ministry Events" or "Main Church Calendar").
 4. Add an optional **description** to help your team understand what this calendar is for.
@@ -77,7 +77,7 @@ Registration Questions only works with forms that are **not** marked Restricted.
 
 To view and manage registrations for your events:
 
-1. Navigate to the **Registrations** page in B1 Admin.
+1. In the Jump menu, choose **Calendars > Registrations**.
 2. You will see a table of all events with registration enabled, showing the event title, date, current registration count vs. capacity, and tags.
 3. Click on an event to see the full list of registrations, including names, member count, attendee types, payment status, and registration date.
 4. From the detail page, you can:

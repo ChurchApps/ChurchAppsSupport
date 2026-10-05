@@ -6,58 +6,59 @@ title: "Revisando Sua Família"
 
 <div class="article-intro">
 
-Depois de selecionar uma pessoa nos resultados da busca, o aplicativo carrega toda a sua família e a exibe na tela de revisão da família. Este é o centro do processo de check-in, onde você pode ver todos na sua família e gerenciar suas designações de grupo antes de fazer o check-in.
+Depois que você seleciona uma pessoa dos resultados de busca, o aplicativo carrega toda sua família e a exibe na tela de revisão de família. Este é o hub central do processo de check-in onde você pode ver todos em sua família e gerenciar suas atribuições de grupo antes de fazer check-in.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- [Selecione um culto](./selecting-service) na tela de cultos
-- [Procure um membro](./looking-up-members) e selecione-o nos resultados da busca
+- [Selecione um serviço](./selecting-service) da tela de serviços
+- [Busque um membro](./looking-up-members) e selecione-o dos resultados de busca
 
 </div>
 
-## Visualizando os Membros da Família
+## Visualizando Membros da Família
 
 Cada membro da família aparece como um cartão com:
 
-- Sua **foto** (ou um ícone de espaço reservado, se não houver foto registrada)
-- Seu **nome de exibição**
-- Um **resumo das designações de grupo atuais** (exibido como pequenos chips abaixo do nome quando o cartão está recolhido)
-- Uma **seta de expandir/recolher** no lado direito
+- Sua **photo** (ou um ícone de espaço reservado se nenhuma foto está em arquivo)
+- Seu **display name**
+- Um **summary of their current group assignments** (mostrado como pequenos chips abaixo do nome quando o cartão está recolhido)
+- Um **expand/collapse arrow** no lado direito
 
 ## Expandindo um Membro
 
-Toque no cartão de um membro para expandi-lo. Quando expandido, você verá uma linha para cada **horário de culto** dentro do culto selecionado. Cada linha mostra:
+Toque no cartão de um membro para expandir. Quando expandido, você verá uma linha para cada **service time** dentro do serviço selecionado. Cada linha mostra:
 
-- O **nome do horário de culto** (por exemplo, "9h00" ou "11h00")
-- Um **botão** mostrando o grupo atualmente designado, ou "Selecionar Grupo" se nenhum grupo tiver sido designado ainda
+- O **service time name** (por exemplo, "9:00 AM" ou "11:00 AM")
+- Os **groups offered** naquele tempo de serviço, listados abaixo do nome (por exemplo, "Nursery, Preschool, Adult Bible Class"), para que você possa ver quais aulas estão disponíveis antes de escolher
+- Um **button** mostrando o grupo atualmente atribuído, ou "Select Group" se nenhum grupo foi atribuído ainda
 
-Toque no botão de grupo para ir à [tela de seleção de grupo](./group-assignment), onde você pode escolher ou alterar o grupo para aquela pessoa e horário de culto.
+Toque no botão de grupo para ir para a [tela de seleção de grupo](./group-assignment) onde você pode escolher ou alterar o grupo para aquela pessoa e tempo de serviço.
 
-O cartão expandido também mostra os chips **Membro**, **Convidado** e **Voluntário**. Toque em um para definir como essa pessoa está fazendo check-in — Membro é o padrão. O tipo importa para as salas infantis: voluntários contam para a proporção de voluntários por criança da sala, e convidados contam para qualquer capacidade de convidados que sua igreja tenha definido.
+O cartão expandido também mostra chips **Member**, **Guest** e **Volunteer**. Toque em um para definir como essa pessoa está fazendo check-in -- Member é o padrão. O tipo importa para salas de crianças: voluntários contam em relação à proporção voluntário-criança da sala, e convidados contam contra qualquer capacidade de convidado que sua igreja tenha definido.
 
-Toque novamente no cartão do membro para recolhê-lo.
+Toque no cartão do membro novamente para recolhê-lo.
 
 :::tip
-Você não precisa designar todos os membros da família a um grupo. Adultos que estão frequentando o culto principal podem ficar sem designação de grupo. Designe grupos apenas para membros que precisam fazer check-in em uma classe ou programa específico.
+Você não precisa atribuir todo membro da família a um grupo. Adultos que estão comparecendo ao serviço de adoração principal podem ser deixados sem uma atribuição de grupo. Atribua grupos apenas para membros que precisam fazer check-in a uma aula ou programa específico.
 :::
 
-## Navegando a Partir Desta Tela
+## Navegando a partir desta Tela
 
-Na tela de revisão da família, você tem três opções:
+Da tela de revisão de família, você tem três opções:
 
-- **Expandir um membro** e tocar em um botão de horário de culto para [designar ou alterar um grupo](./group-assignment).
-- **Tocar no botão Adicionar Convidado** abaixo da lista de membros para [adicionar um convidado](./adding-guests) à sua família.
-- **Tocar no botão Check-in** na parte inferior da tela para [concluir o check-in](./completing-checkin) de todos na família.
+- **Expanda um membro** e toque um botão de tempo de serviço para [assign or change a group](./group-assignment).
+- **Toque no botão Add Guest** abaixo da lista de membros para [add a guest](./adding-guests) a sua família.
+- **Toque no botão Check-in** no fundo da tela para [complete the check-in](./completing-checkin) para todos em sua família.
 
 :::info
-Quaisquer designações de grupo de um check-in anterior para o mesmo culto são pré-carregadas automaticamente. Se seus filhos frequentam os mesmos grupos toda semana, você talvez não precise alterar nada -- basta revisar e fazer o check-in.
+Qualquer atribuição de grupo de um check-in anterior para o mesmo serviço é pré-carregado automaticamente. Se suas crianças frequentam os mesmos grupos toda semana, você pode não precisar alterar nada -- apenas revise e faça check-in.
 :::
 
-## Próximos Passos
+## Próximas Etapas
 
-- [Designe grupos](./group-assignment) aos membros da família que precisam fazer check-in em uma classe ou programa específico.
-- [Adicione um convidado](./adding-guests) se alguém estiver visitando com sua família.
-- [Conclua o check-in](./completing-checkin) quando as designações de todos parecerem corretas.
+- [Assign groups](./group-assignment) para membros da família que precisam fazer check-in em uma aula ou programa específico.
+- [Add a guest](./adding-guests) se alguém está visitando com sua família.
+- [Complete check-in](./completing-checkin) quando as atribuições de todos parecerem corretas.

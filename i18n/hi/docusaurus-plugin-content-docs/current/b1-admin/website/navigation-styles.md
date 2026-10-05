@@ -2,160 +2,160 @@
 title: "नेविगेशन शैलियां"
 ---
 
-# Navigation Styles
+# नेविगेशन शैलियां
 
 <div class="article-intro">
 
-Customize your church website's navigation bar colors to match your branding. You can configure colors for both solid backgrounds and transparent overlays, giving you complete control over how your navigation looks across different pages.
+अपनी चर्च वेबसाइट के नेविगेशन बार रंगों को अपने ब्रांडिंग से मेल खाने के लिए अनुकूलित करें। आप ठोस पृष्ठभूमि और पारदर्शी ओवरले दोनों के लिए रंग कॉन्फ़िगर कर सकते हैं, आपको अपनी नेविगेशन अलग-अलग पृष्ठों पर कैसे दिखती है इसके ऊपर पूर्ण नियंत्रण देता है।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- You need permission to manage your church website. See [Roles & Permissions](../people/roles-permissions.md) for details.
-- Have your brand colors ready, including hex color codes (e.g., #03A9F4).
-- Understand the difference between solid and transparent navigation styles on your website.
+- आपको अपनी चर्च वेबसाइट का प्रबंधन करने की अनुमति की आवश्यकता है। विवरण के लिए [Roles & Permissions](../people/roles-permissions.md) देखें।
+- आपके ब्रांड रंगों को तैयार करें, हेक्स रंग कोड सहित (जैसे #03A9F4)।
+- आपकी वेबसाइट पर ठोस और पारदर्शी नेविगेशन शैलियों के बीच अंतर को समझें।
 
 </div>
 
-## Understanding Navigation Modes
+## नेविगेशन मोड को समझना
 
-Your website navigation can appear in two different styles depending on the page:
+आपकी वेबसाइट नेविगेशन पृष्ठ के आधार पर दो अलग-अलग शैलियों में दिखाई दे सकती है:
 
-- **Solid navigation** -- Navigation bar with a background color, typically used on content pages
-- **Transparent navigation** -- Navigation that overlays the page content, typically used on pages with hero images or full-screen backgrounds
+- **Solid navigation** -- पृष्ठभूमि रंग के साथ नेविगेशन बार, आमतौर पर सामग्री पृष्ठों पर उपयोग किया जाता है
+- **Transparent navigation** -- नेविगेशन जो पृष्ठ सामग्री को ओवरले करता है, आमतौर पर हीरो छवियों या पूर्ण-स्क्रीन पृष्ठभूमि वाले पृष्ठों पर उपयोग किया जाता है
 
-You can customize colors for both modes independently.
+आप दोनों मोड्स के लिए स्वतंत्र रूप से रंग अनुकूलित कर सकते हैं।
 
-## Accessing Navigation Styles
+## नेविगेशन शैलियों तक पहुंचना
 
-1. Navigate to **Website** in B1 Admin
-2. Click the **Appearance** tab at the top of the Website Pages view
-3. Scroll to the **Navigation Styles** section
-4. Click **Edit Navigation Styles**
+1. B1 Admin में, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (ऊपर-बाएं में खोज बार) और **Website** को विस्तृत करें
+2. **Appearance** पर क्लिक करें
+3. **Navigation Styles** खंड तक स्क्रॉल करें
+4. **Edit Navigation Styles** पर क्लिक करें
 
-## Configuring Solid Navigation
+## ठोस नेविगेशन कॉन्फ़िगर करना
 
-Solid navigation appears with a background color behind the navigation bar. You can customize:
+ठोस नेविगेशन नेविगेशन बार के पीछे पृष्ठभूमि रंग के साथ दिखाई देता है। आप अनुकूलित कर सकते हैं:
 
-### Background Color
+### पृष्ठभूमि रंग
 
-1. Toggle the **Override** switch for **Background Color**
-2. Click the color picker
-3. Choose your desired background color
-4. The default is white (#FFFFFF)
+1. **Background Color** के लिए **Override** स्विच को टॉगल करें
+2. रंग पिकर पर क्लिक करें
+3. अपना वांछित पृष्ठभूमि रंग चुनें
+4. डिफ़ॉल्ट सफेद है (#FFFFFF)
 
-### Link Color
+### लिंक रंग
 
-1. Toggle the **Override** switch for **Link Color**
-2. Choose the color for navigation link text
-3. This affects links in their default state
-4. The default is dark gray (#555555)
+1. **Link Color** के लिए **Override** स्विच को टॉगल करें
+2. नेविगेशन लिंक पाठ के लिए रंग चुनें
+3. यह उनकी डिफ़ॉल्ट स्थिति में लिंक को प्रभावित करता है
+4. डिफ़ॉल्ट गहरा ग्रे है (#555555)
 
-### Link Hover Color
+### लिंक होवर रंग
 
-1. Toggle the **Override** switch for **Link Hover Color**
-2. Choose the color links change to when users hover over them
-3. This provides visual feedback for clickable links
-4. The default is light blue (#03A9F4)
+1. **Link Hover Color** के लिए **Override** स्विच को टॉगल करें
+2. चुनें कि उपयोगकर्ता इन पर होवर करते समय लिंक किस रंग में बदल जाते हैं
+3. यह क्लिक करने योग्य लिंक के लिए दृश्य प्रतिक्रिया प्रदान करता है
+4. डिफ़ॉल्ट हल्का नीला है (#03A9F4)
 
-### Active Color
+### सक्रिय रंग
 
-1. Toggle the **Override** switch for **Active Color**
-2. Choose the color for the currently active page link
-3. This helps users know which page they're on
-4. The default is light blue (#03A9F4)
+1. **Active Color** के लिए **Override** स्विच को टॉगल करें
+2. वर्तमान में सक्रिय पृष्ठ लिंक के लिए रंग चुनें
+3. यह आगंतुकों को यह जानने में मदद करता है कि वे कहाँ हैं
+4. डिफ़ॉल्ट हल्का नीला है (#03A9F4)
 
-## Configuring Transparent Navigation
+## पारदर्शी नेविगेशन कॉन्फ़िगर करना
 
-Transparent navigation overlays your page content with no background. You can customize:
+पारदर्शी नेविगेशन कोई पृष्ठभूमि के साथ आपकी पृष्ठ सामग्री को ओवरले करता है। आप अनुकूलित कर सकते हैं:
 
-### Link Color
+### लिंक रंग
 
-1. Toggle the **Override** switch for **Link Color**
-2. Choose a color that contrasts well with your page background
-3. Often white or light colors work best over dark backgrounds
-4. The default is dark gray (#555555)
+1. **Link Color** के लिए **Override** स्विच को टॉगल करें
+2. ऐसा रंग चुनें जो आपकी पृष्ठ पृष्ठभूमि के साथ अच्छी तरह से विपरीत करता हो
+3. अक्सर सफेद या हल्के रंग गहरी पृष्ठभूमि पर सर्वोत्तम काम करते हैं
+4. डिफ़ॉल्ट गहरा ग्रे है (#555555)
 
-### Link Hover Color
+### लिंक होवर रंग
 
-1. Toggle the **Override** switch for **Link Hover Color**
-2. Choose the hover state color
-3. Ensure it's visible against your page background
-4. The default is light blue (#03A9F4)
+1. **Link Hover Color** के लिए **Override** स्विच को टॉगल करें
+2. होवर स्थिति रंग चुनें
+3. सुनिश्चित करें कि यह आपकी पृष्ठ पृष्ठभूमि के विरुद्ध दृश्यमान है
+4. डिफ़ॉल्ट हल्का नीला है (#03A9F4)
 
-### Active Color
+### सक्रिय रंग
 
-1. Toggle the **Override** switch for **Active Color**
-2. Choose the active page indicator color
-3. Should stand out while still fitting your design
-4. The default is light blue (#03A9F4)
+1. **Active Color** के लिए **Override** स्विच को टॉगल करें
+2. सक्रिय पृष्ठ संकेतक रंग चुनें
+3. आपके डिजाइन के अनुसार फिट होते समय स्पष्ट होना चाहिए
+4. डिफ़ॉल्ट हल्का नीला है (#03A9F4)
 
 :::info
-Transparent navigation does not have a background color setting since it overlays the page content directly.
+पारदर्शी नेविगेशन के पास कोई पृष्ठभूमि रंग सेटिंग नहीं है क्योंकि यह पृष्ठ सामग्री को सीधे ओवरले करता है।
 :::
 
-## Saving Your Changes
+## आपके परिवर्तन सहेजना
 
-1. After configuring your colors, click **Save Navigation Styles**
-2. Your changes apply immediately to your live website
-3. Visit your website to see the navigation in both modes
+1. आपके रंगों को कॉन्फ़िगर करने के बाद, **Save Navigation Styles** पर क्लिक करें
+2. आपके परिवर्तन तुरंत आपकी लाइव वेबसाइट पर लागू होते हैं
+3. अपनी वेबसाइट पर जाएँ नेविगेशन को दोनों मोड्स में देखने के लिए
 
-## Resetting to Defaults
+## डिफ़ॉल्ट पर रीसेट करना
 
-If you want to go back to the default colors:
+यदि आप डिफ़ॉल्ट रंगों पर वापस जाना चाहते हैं:
 
-1. Toggle off the **Override** switches for any custom colors
-2. Click **Save Navigation Styles**
-3. The navigation returns to the default color scheme
+1. किसी भी कस्टम रंगों के लिए **Override** स्विच को बंद करें
+2. **Save Navigation Styles** पर क्लिक करें
+3. नेविगेशन डिफ़ॉल्ट रंग योजना पर वापस आता है
 
-Or click **Cancel** to discard all changes without saving.
+या सहेजे बिना सभी परिवर्तनों को त्यागने के लिए **Cancel** पर क्लिक करें।
 
-## Best Practices
+## सर्वोत्तम प्रथाएं
 
-### Color Contrast
+### रंग विपरीतता
 
-- **Readability** -- Ensure link colors have enough contrast with the background
-- **WCAG compliance** -- Aim for at least 4.5:1 contrast ratio for accessibility
-- **Test both modes** -- Preview your site with both solid and transparent navigation
+- **Readability** -- सुनिश्चित करें कि लिंक रंग पृष्ठभूमि के साथ पर्याप्त विपरीत हैं
+- **WCAG compliance** -- पहुंच-योग्यता के लिए कम से कम 4.5:1 विपरीत अनुपात का लक्ष्य रखें
+- **Test both modes** -- ठोस और पारदर्शी नेविगेशन दोनों के साथ अपनी साइट का पूर्वावलोकन करें
 
-### Brand Consistency
+### ब्रांड सामंजस्य
 
-- **Use your brand colors** -- Match your logo and website theme
-- **Limit your palette** -- Stick to 2-3 colors for a cohesive look
-- **Consider your images** -- If using transparent navigation, test it against typical page backgrounds
+- **Use your brand colors** -- अपने लोगो और वेबसाइट थीम से मेल खाएँ
+- **Limit your palette** -- एक सामंजस्यपूर्ण रूप के लिए 2-3 रंगों को रखें
+- **Consider your images** -- यदि पारदर्शी नेविगेशन का उपयोग कर रहे हैं, तो इसे विशिष्ट पृष्ठ पृष्ठभूमि के विरुद्ध परीक्षण करें
 
-### Hover and Active States
+### होवर और सक्रिय स्थितियां
 
-- **Clear feedback** -- Make hover states obviously different from default links
-- **Distinguish active pages** -- Use a distinct color so users know where they are
-- **Smooth transitions** -- The system automatically animates color changes
+- **Clear feedback** -- होवर स्थितियों को डिफ़ॉल्ट लिंक से स्पष्ट रूप से अलग बनाएँ
+- **Distinguish active pages** -- एक विशिष्ट रंग का उपयोग करें ताकि उपयोगकर्ता जान सकें कि वे कहाँ हैं
+- **Smooth transitions** -- सिस्टम स्वचालित रूप से रंग परिवर्तनों को एनिमेट करता है
 
-## Troubleshooting
+## समस्या निवारण
 
-### Colors Don't Look Right
+### रंग सही नहीं दिखते
 
-- **Clear your cache** -- Browser caching may show old colors
-- **Check hex codes** -- Make sure you entered valid hex color codes
-- **Test on different backgrounds** -- Colors may look different depending on the page
+- **Clear your cache** -- ब्राउज़र कैशिंग पुराने रंगों को दिखा सकता है
+- **Check hex codes** -- सुनिश्चित करें कि आपने वैध हेक्स रंग कोड दर्ज किए हैं
+- **Test on different backgrounds** -- पृष्ठ के आधार पर रंग अलग दिख सकते हैं
 
-### Navigation Not Visible
+### नेविगेशन दृश्यमान नहीं है
 
-- **Transparent mode** -- If using transparent navigation over light images, dark text may be hard to see
-- **Solution** -- Adjust your link colors or use darker page backgrounds
-- **Alternative** -- Add a subtle shadow or background overlay to the navigation area
+- **Transparent mode** -- यदि हल्की छवियों पर पारदर्शी नेविगेशन का उपयोग कर रहे हैं, तो गहरा पाठ देखना मुश्किल हो सकता है
+- **Solution** -- अपने लिंक रंगों को समायोजित करें या गहरी पृष्ठभूमि का उपयोग करें
+- **Alternative** -- नेविगेशन क्षेत्र में एक सूक्ष्म छाया या पृष्ठभूमि ओवरले जोड़ें
 
-## Technical Details
+## तकनीकी विवरण
 
-Navigation styles are stored as JSON and applied using CSS variables:
+नेविगेशन शैलियां JSON के रूप में संग्रहीत होती हैं और CSS चर का उपयोग करके लागू होती हैं:
 
-- Changes take effect immediately without rebuilding the site
-- Colors cascade to all navigation elements
-- Overrides are optional; unset colors use theme defaults
+- साइट को फिर से बनाने के बिना परिवर्तन तुरंत प्रभावी होते हैं
+- रंग सभी नेविगेशन तत्वों को कास्केड करते हैं
+- ओवरराइड वैकल्पिक हैं; अनसेट रंग थीम डिफ़ॉल्ट का उपयोग करते हैं
 
-## Related Articles
+## संबंधित लेख
 
-- [Appearance](./appearance.md) -- Customize your website's overall look and feel
-- [Managing Pages](./managing-pages.md) -- Create and organize your website pages
-- [Page Editor](./page-editor.md) -- Design page layouts and content
+- [Appearance](./appearance.md) -- अपनी वेबसाइट के समग्र रूप और अनुभव को अनुकूलित करें
+- [Pages प्रबंधित करें](./managing-pages.md) -- अपनी वेबसाइट पृष्ठों को बनाएं और व्यवस्थित करें
+- [Page Editor](./page-editor.md) -- पृष्ठ लेआउट और सामग्री डिजाइन करें

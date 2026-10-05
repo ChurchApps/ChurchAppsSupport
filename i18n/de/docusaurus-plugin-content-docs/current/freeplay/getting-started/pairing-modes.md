@@ -1,55 +1,55 @@
 ---
-title: "Einen Kopplungsmodus wählen"
+title: "Pairing-Modus wählen"
 ---
 
-# Einen Kopplungsmodus wählen
+# Pairing-Modus wählen
 
 <div class="article-intro">
 
-FreePlay bietet zwei Kopplungsmodi, um Ihren Fernseher mit Ihrer Kirche zu verbinden, sowie die Möglichkeit, Content-Anbieter direkt zu durchsuchen. Der Bildschirm **Kopplungsmodus auswählen** präsentiert diese Optionen als große Karten, die Sie mit Ihrer TV-Fernbedienung navigieren können.
+FreePlay bietet zwei Pairing-Modi zum Verbinden Ihres Fernsehers mit Ihrer Kirche sowie die Möglichkeit, Content-Provider direkt zu durchsuchen. Der Bildschirm **Select Pairing Mode** zeigt diese Optionen als große Karten, die Sie mit der Fernbedienung Ihres Fernsehers navigieren können.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Installieren Sie FreePlay und starten Sie es zum ersten Mal -- siehe [Erste Schritte](./index.md)
-- Halten Sie Ihre TV-Fernbedienung zur Navigation bereit
+- Installieren Sie FreePlay und starten Sie es zum ersten Mal -- siehe [Getting Started](./index.md)
+- Halten Sie die Fernbedienung Ihres Fernsehers zur Navigation bereit
 
 </div>
 
-## Mit Klassenzimmer koppeln
+## Pair to Classroom
 
-Wählen Sie **Mit Klassenzimmer koppeln**, wenn ein bestimmter Fernseher immer die für einen bestimmten Raum geplante Lektion anzeigen soll. Dies ist die beste Option für Klassenzimmer der Kinderarbeit, in denen Lektionen nach einem wöchentlichen Zeitplan zugewiesen werden.
+Wählen Sie **Pair to Classroom**, wenn ein bestimmter Fernseher immer die Lektion anzeigen soll, die für einen bestimmten Raum geplant ist. Dies ist die beste Option für Klassenzimmer in der Kinderbetreuung, in denen Lektionen wöchentlich zugewiesen werden.
 
-**So funktioniert es:** Sie suchen Ihre Kirche nach Namen, wählen ein Klassenzimmer aus, und FreePlay ruft automatisch die für diesen Raum heute geplante Lektion ab. Jeden Sonntagmorgen schalten Sie einfach den Fernseher ein, und die richtige Lektion ist bereit.
+**So funktioniert es:** Sie suchen nach Ihrer Kirche nach Namen, wählen ein Klassenzimmer aus, und FreePlay ruft automatisch die Lektion ab, die heute für diesen Raum geplant ist. Jeden Sonntagmorgen schalten Sie einfach den Fernseher ein und die richtige Lektion ist bereit.
 
-**Am besten geeignet für:** Fest zugeordnete Klassenzimmer-Fernseher, die immer die geplanten Inhalte für diesen Raum anzeigen sollen.
+**Am besten für:** Dedizierte Klassenzimmer-Fernseher, die immer den geplanten Inhalt für diesen Raum anzeigen sollten.
 
 :::tip
-Richten Sie Ihre Klassenzimmer unter [freeplay.church](https://freeplay.church) ein, bevor Sie Ihren Fernseher koppeln. So wird sichergestellt, dass Ihre Räume erscheinen, wenn Sie nach Ihrer Kirche suchen.
+Richten Sie Ihre Klassenzimmer unter [freeplay.church](https://freeplay.church) ein, bevor Sie Ihren Fernseher verbinden. Dies stellt sicher, dass Ihre Räume angezeigt werden, wenn Sie nach Ihrer Kirche suchen.
 :::
 
-## Mit Plan koppeln
+## Pair to Plan
 
-Wählen Sie **Mit Plan koppeln**, wenn Sie einem Gottesdienstplan folgen möchten. Dieser Modus erzeugt einen Kopplungscode, den Sie in **B1 Admin** eingeben, um den Fernseher mit einem bestimmten Plantyp zu verknüpfen. Der Fernseher lädt dann die dem aktuellen Plan zugewiesenen Inhalte herunter und spielt sie ab.
+Wählen Sie **Pair to Plan**, wenn Sie einem Kirchendienstplan folgen möchten. Dieser Modus generiert einen Pairing-Code, den Sie in **B1 Admin** eingeben, um den Fernseher mit einem bestimmten Plan-Typ zu verknüpfen. Der Fernseher lädt dann den dem aktuellen Plan zugeordneten Inhalt herunter und spielt ihn ab.
 
-**So funktioniert es:** FreePlay zeigt einen Kopplungscode und einen QR-Code auf dem Bildschirm an. Ein Administrator öffnet die verknüpfte Seite in **B1 Admin**, gibt den Code ein und wählt aus einem Dropdown-Menü **Pläne anzeigen für** den Plantyp aus, dem der Bildschirm folgen soll. Nach der Genehmigung lädt der Fernseher automatisch die Inhalte des aktuellen Plans.
+**So funktioniert es:** FreePlay zeigt einen Pairing-Code und einen QR-Code auf dem Bildschirm an. Ein Administrator öffnet die verlinkte Seite in **B1 Admin**, gibt den Code ein und wählt aus einer Dropdown-Liste **Show Plans For** den Plan-Typ aus, dem der Bildschirm folgen sollte. Nach der Genehmigung lädt der Fernseher automatisch den Inhalt des aktuellen Plans.
 
-**Am besten geeignet für:** Fernseher, die Inhalte anzeigen, die an Ihren wöchentlichen Gottesdienstplan gebunden sind, wie Lobpreistexte oder Ankündigungsfolien.
+**Am besten für:** Fernseher, die Inhalte anzeigen, die an Ihren wöchentlichen Kirchendienstplan gebunden sind, wie z. B. Worship-Liedtexte oder Ankündigungsfolien.
 
-## Content-Anbieter
+## Content Providers
 
-Wenn Sie nicht mit einem Klassenzimmer oder Plan koppeln müssen, können Sie Content-Anbieter direkt durchsuchen. Anbieter wie [Lessons.church](../../lessons-church/) und Bible Project bieten Inhalte, die Sie auf Abruf herunterladen und abspielen können.
+Wenn Sie nicht zu einem Klassenzimmer oder Plan verbinden müssen, können Sie Content-Provider direkt durchsuchen. Provider wie [Lessons.church](../../lessons-church/) und Bible Project bieten Inhalte an, die Sie bei Bedarf auf Ihrem Fernseher herunterladen und abspielen können.
 
-**Am besten geeignet für:** Fernseher, bei denen Freiwillige jede Woche manuell auswählen, was abgespielt wird, oder wenn Sie verfügbare Inhalte erkunden möchten.
+**Am besten für:** Fernseher, auf denen Freiwillige manuell auswählen, was jede Woche abgespielt werden soll, oder wenn Sie verfügbare Inhalte erkunden möchten.
 
 :::info
-Sie können jederzeit über die Seitenleiste unten in der Navigation auf den Bildschirm **Anbieter** zugreifen. Sie müssen keinen Kopplungsmodus verwenden, um Inhalte zu durchsuchen und abzuspielen.
+Sie können auf den Bildschirm **Providers** jederzeit aus **Settings** am unteren Rand der Seitenleiste zugreifen. Sie müssen keinen Pairing-Modus verwenden, um Inhalte zu durchsuchen und abzuspielen.
 :::
 
-## Verwandte Artikel
+## Related Articles
 
-- **[Klassenzimmer-Modus](../classroom-mode/)** - Vollständige Anleitung zur Kopplung mit einem Klassenzimmer
-- **[Plan-Modus](../plan-mode/)** - Vollständige Anleitung zur Kopplung mit einem Gottesdienstplan
-- **[Content-Anbieter](../content-providers/)** - Inhalte aus externen Quellen durchsuchen und herunterladen
+- **[Classroom Mode](../classroom-mode/)** - Vollständiger Leitfaden zum Verbinden mit einem Klassenzimmer
+- **[Plan Mode](../plan-mode/)** - Vollständiger Leitfaden zum Verbinden mit einem Kirchendienstplan
+- **[Content Providers](../content-providers/)** - Durchsuchen und herunterladen Sie Inhalte von externen Quellen

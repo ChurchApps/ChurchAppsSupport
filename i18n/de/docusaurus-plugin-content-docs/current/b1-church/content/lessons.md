@@ -1,53 +1,53 @@
 ---
-title: Lessons (Deprecated)
+title: "Lektionen (Veraltet)"
 ---
 
-# Lessons (Deprecated)
+# Lektionen (Veraltet)
 
-:::danger Lessons tab has been replaced by FreePlay
-The embedded **Lessons** tab on B1.church has been deprecated. Curriculum playback from Lessons.church is now delivered through **[FreePlay](/docs/freeplay/)** — ChurchApps' free TV app for classroom screens, Fire TV, Apple TV, and Android TV — which offers offline playback, classroom pairing, and a TV-remote experience the embedded tab could not provide.
+:::danger Die Registerkarte Lektionen wurde durch FreePlay ersetzt
+Die eingebettete Registerkarte **Lektionen** auf B1.church ist veraltet. Die Wiedergabe von Lehrplan aus Lessons.church wird nun über **[FreePlay](/docs/freeplay/)** – ChurchApps' kostenlose TV-App für Klassenzimmerbildschirme, Fire TV, Apple TV und Android TV – bereitgestellt, die Offline-Wiedergabe, Klassenzimmerpairing und ein TV-Fernbedienungserlebnis bietet, das die eingebettete Registerkarte nicht bieten konnte.
 
-To browse, schedule, or edit curriculum directly, sign in to [Lessons.church](https://lessons.church) in your browser. To play lessons on a classroom TV, install [FreePlay](/docs/freeplay/getting-started/) on your TV device.
+Um Lehrplan direkt zu durchsuchen, zu planen oder zu bearbeiten, melden Sie sich in Ihrem Browser bei [Lessons.church](https://lessons.church) an. Um Lektionen auf einem Klassenzimmer-Fernseher abzuspielen, installieren Sie [FreePlay](/docs/freeplay/getting-started/) auf Ihrem Fernseh-Gerät.
 
-Parents of groups associated with a lesson plan type in B1Admin see **this week's lesson** on the [group details](/docs/b1-church/groups/group-details.md) page — not on this deprecated tab.
+Eltern von Gruppen, die einem Lehrplanktyp in B1Admin zugeordnet sind, sehen **diese Woche's Lektion** auf der Seite [Gruppendetails](/docs/b1-church/groups/group-details.md) – nicht auf dieser veralteten Registerkarte.
 :::
 
 <div class="article-intro">
 
-The **Lessons** tab gave you access to your church's curriculum and learning materials. Content was provided through the Lessons.church platform and embedded directly within B1.church, so you did not need to navigate to a separate site.
+Die Registerkarte **Lektionen** gab Ihnen Zugriff auf Ihren Kirchenlehrplan und Lernmaterialien. Die Inhalte wurden durch die Lessons.church-Plattform bereitgestellt und direkt in B1.church eingebettet, sodass Sie keine separate Website besuchen mussten.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Bevor Sie Beginnen</h4>
 
-- You must be [logged in](../getting-started/logging-in.md) to your B1.church account. The Lessons tab is located in the member area and requires authentication.
-- Your church must have configured curriculum through Lessons.church.
+- Sie müssen bei Ihrem B1.church-Konto [angemeldet](../getting-started/logging-in.md) sein. Die Registerkarte Lektionen befindet sich im Mitgliederbereich und erfordert Authentifizierung.
+- Ihre Kirche muss Lehrplan über Lessons.church konfiguriert haben.
 
 </div>
 
-## Accessing Lessons
+## Zugriff auf Lektionen
 
-1. Log in to your B1.church member portal.
-2. Click the **Lessons** tab in the [member navigation](../getting-started/navigating.md).
-3. The Lessons.church content loads directly within the page.
+1. Melden Sie sich bei Ihrem B1.church-Mitgliederportal an.
+2. Klicken Sie auf die Registerkarte **Lektionen** in der [Mitgliedernavigation](../getting-started/navigating.md).
+3. Die Lessons.church-Inhalte laden direkt auf der Seite.
 
-Your login carries over automatically when you open the Lessons tab. You do not need to sign in again separately to Lessons.church.
+Ihr Login wird automatisch übertragen, wenn Sie die Registerkarte Lektionen öffnen. Sie müssen sich nicht separat bei Lessons.church anmelden.
 
-## What You Can Do
+## Was Sie Tun Können
 
-Once inside the Lessons tab, you can browse the curriculum your church has made available. Depending on what your church has set up, you may find:
+Sobald Sie sich in der Registerkarte Lektionen befinden, können Sie den Lehrplan durchsuchen, den Ihre Kirche verfügbar gemacht hat. Abhängig von Ihrer Kircheneinrichtung können Sie Folgendes finden:
 
-- **Lesson plans** -- Structured outlines with sections and activities
-- **Presentations and media** -- Slides, videos, and images to accompany lessons
-- **Downloadable resources** -- Files and add-ons for further study
+- **Lektionenpläne** – Strukturierte Gliederungen mit Abschnitten und Aktivitäten
+- **Präsentationen und Medien** – Folien, Videos und Bilder zur Begleitung von Lektionen
+- **Herunterladbare Ressourcen** – Dateien und Add-ons zum weiteren Studium
 
-You can click on individual sections within a lesson to view their content in a dialog window. Use the **Back** button to return to the section list, or **Close** to exit the dialog.
+Sie können auf einzelne Abschnitte innerhalb einer Lektion klicken, um ihren Inhalt in einem Dialogfenster anzuzeigen. Verwenden Sie die Schaltfläche **Zurück**, um zur Abschnittsliste zurückzukehren, oder **Schließen**, um das Dialogfenster zu beenden.
 
 :::tip
-Lessons scheduled for your groups appear as **This week's lesson** on the [group details](../groups/group-details.md) page, making it easy to find assigned curriculum without navigating to the Lessons tab directly.
+Lektionen, die für Ihre Gruppen geplant sind, werden auf der Seite [Gruppendetails](../groups/group-details.md) als **diese Woche's Lektion** angezeigt, sodass Sie zugewiesene Lehrpläne leicht finden können, ohne direkt zur Registerkarte Lektionen zu navigieren.
 :::
 
-## Availability
+## Verfügbarkeit
 
-The Lessons tab appears when your church has configured curriculum through Lessons.church. If you do not see a **Lessons** tab in your member navigation, your church may not have lesson content set up. Contact your church administrator for more information.
+Die Registerkarte Lektionen wird angezeigt, wenn Ihre Kirche Lehrplan über Lessons.church konfiguriert hat. Falls Sie in Ihrer Mitgliedernavigation keine Registerkarte **Lektionen** sehen, hat Ihre Kirche möglicherweise keine Lektionsinhalte eingerichtet. Wenden Sie sich an Ihren Kirchenadministrator für weitere Informationen.

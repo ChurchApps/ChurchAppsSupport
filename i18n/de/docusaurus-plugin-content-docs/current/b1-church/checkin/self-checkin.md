@@ -1,63 +1,63 @@
 ---
-title: Selbstanmeldung
+title: "Selbstanmeldung"
 ---
 
-# Self Check-In
+# Selbstanmeldung
 
 <div class="article-intro">
 
-The self check-in process lets you record attendance for yourself and your household in just a few steps. It is a quick alternative to using a physical kiosk at the church.
+Der Selbstanmeldungsprozess ermöglicht es Ihnen, Ihre Anwesenheit und die Ihres Haushalts in wenigen Schritten zu verzeichnen. Dies ist eine schnelle Alternative zur Nutzung eines physischen Kiosks in der Kirche.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Bevor Sie Beginnen</h4>
 
-- You must be [logged in](../getting-started/logging-in.md) to your B1.church account.
-- Your household members must be linked to your account. If a family member is missing, ask your church administrator to add them to your household.
+- Sie müssen bei Ihrem B1.church-Konto [angemeldet](../getting-started/logging-in.md) sein.
+- Ihre Haushaltsangehörigen müssen mit Ihrem Konto verknüpft sein. Falls ein Familienmitglied fehlt, bitten Sie Ihren Kirchenadministrator, es zu Ihrem Haushalt hinzuzufügen.
 
 </div>
 
-## The Check-In Flow
+## Der Anmeldeprozess
 
-Check-in follows a simple three-step process. Navigate to the **Check-In** tab in the [sidebar](../getting-started/navigating.md) to get started.
+Die Anmeldung folgt einem einfachen dreistufigen Prozess. Navigieren Sie zur Registerkarte **Anmeldung** in der [Seitenleiste](../getting-started/navigating.md), um zu beginnen.
 
-### Step 1: Select a Service
+### Schritt 1: Wählen Sie einen Gottesdienst
 
-When you open the check-in page, you will see a list of available services (for example, "Sunday Morning" or "Wednesday Evening"). Each service card shows the service name and campus if your church has multiple locations.
+Wenn Sie die Anmeldungsseite öffnen, wird eine Liste mit verfügbaren Gottesdiensten angezeigt (z. B. „Sonntag Morgens" oder „Mittwoch Abends"). Jede Dienstkartenzeigt den Dienstnamen und den Campus an, wenn Ihre Kirche mehrere Standorte hat.
 
-Click on a service to select it and move to the next step.
+Klicken Sie auf einen Gottesdienst, um ihn auszuwählen und zum nächsten Schritt zu wechseln.
 
-### Step 2: Select Household Members and Groups
+### Schritt 2: Wählen Sie Haushaltsangehörige und Gruppen
 
-After selecting a service, you will see a list of your household members. For each person attending:
+Nach Auswahl eines Gottesdienstes wird eine Liste Ihrer Haushaltsangehörigen angezeigt. Für jede Person, die teilnimmt:
 
-1. Tap a household member to expand their entry.
-2. You will see the available **service times** for the service you selected.
-3. Click **Select Group** next to a service time to choose which group the person should be checked into (such as "Main Worship," "Kids Room 1," or "Youth Group").
-4. Repeat for each household member who is attending.
+1. Tippen Sie auf ein Haushaltsangehörigem, um den Eintrag zu erweitern.
+2. Sie sehen die verfügbaren **Gottesdienstzeiten** für den ausgewählten Gottesdienst.
+3. Klicken Sie auf **Gruppe auswählen** neben einer Gottesdienstzeit, um zu wählen, in welche Gruppe die Person eingecheckt werden soll (z. B. „Hauptgottesdienst", „Kinderraum 1" oder „Jugendgruppe").
+4. Wiederholen Sie dies für jedes Haushaltsangehörigem, das teilnimmt.
 
-You do not need to check in every household member -- only expand and assign groups for the people who are actually present.
+Sie müssen nicht jeden Haushaltsangehörigem anmelden – erweitern und weisen Sie Gruppen nur für die Personen zu, die tatsächlich anwesend sind.
 
-### Step 3: Confirmation
+### Schritt 3: Bestätigung
 
-Once you have selected groups for everyone who is attending, click the **Complete Check-in** button at the bottom of the page.
+Nachdem Sie Gruppen für alle teilnehmenden Personen ausgewählt haben, klicken Sie unten auf der Seite auf die Schaltfläche **Anmeldung abgeschlossen**.
 
-You will see a confirmation that your check-in is complete and your attendance has been saved. After a moment the page returns to the service list, ready for the next check-in.
+Ihnen wird eine Bestätigung angezeigt, dass Ihre Anmeldung abgeschlossen ist und Ihre Anwesenheit gespeichert wurde. Nach einer Weile kehrt die Seite zur Dienstliste zurück, bereit für die nächste Anmeldung.
 
-If your church prints name tags at a check-in station, you instead see **You're checked in!** with a QR code and a security code. Show the code at a check-in station to print your name tags, then tap **Done**. At a B1 Checkin kiosk, tap **Scan code** and hold the QR code up to the camera -- see [Printing Labels for a Phone Check-In](../../b1-checkin/check-in/looking-up-members#printing-labels-for-a-phone-check-in).
+Falls Ihre Kirche Name-Tags an einer Anmeldestation druckt, sehen Sie stattdessen **Sie sind angemeldet!** mit einem QR-Code und einem Sicherheitscode. Zeigen Sie den Code an einer Anmeldestation, um Ihre Name-Tags zu drucken, dann tippen Sie auf **Fertig**. Tippen Sie am B1 Checkin-Kiosk auf **Code scannen** und halten Sie den QR-Code vor die Kamera – siehe [Name-Tags für eine Telefonanmeldung drucken](../../b1-checkin/check-in/looking-up-members#printing-labels-for-a-phone-check-in).
 
-If your household is already checked in for the service you select, a **Show check-in code** button appears above your household list. Tap it to bring the QR code and security code back up -- for example, if you closed the page before reaching a check-in station.
+Falls Ihr Haushalt bereits für den ausgewählten Gottesdienst angemeldet ist, wird eine Schaltfläche **Anmeldungscode anzeigen** über Ihrer Haushaltslist angezeigt. Tippen Sie darauf, um den QR-Code und den Sicherheitscode wieder anzuzeigen – zum Beispiel, falls Sie die Seite geschlossen haben, bevor Sie eine Anmeldestation erreichten.
 
 :::tip
-If you need to change a group selection before completing check-in, tap the **Change** button next to any service time to pick a different group.
+Falls Sie eine Gruppenzuweisung vor Abschluss der Anmeldung ändern müssen, tippen Sie neben einer Gottesdienstzeit auf die Schaltfläche **Ändern**, um eine andere Gruppe auszuwählen.
 :::
 
-## Things to Know
+## Wichtige Hinweise
 
-- You can only check in household members that are linked to your account. If a family member is missing, ask your church administrator to add them to your household.
-- If no services appear on the check-in page, your church may not have any services configured for check-in at this time.
+- Sie können nur Haushaltsangehörigem anmelden, die mit Ihrem Konto verknüpft sind. Falls ein Familienmitglied fehlt, bitten Sie Ihren Kirchenadministrator, es zu Ihrem Haushalt hinzuzufügen.
+- Falls auf der Anmeldungsseite keine Gottesdienste angezeigt werden, hat Ihre Kirche möglicherweise noch keine Gottesdienste für die Anmeldung konfiguriert.
 
 :::warning
-Check-in is only available when your church has active services configured. If you do not see any services listed, check with your church office to confirm whether self check-in is enabled.
+Die Anmeldung ist nur verfügbar, wenn Ihre Kirche aktive Gottesdienste konfiguriert hat. Falls keine Gottesdienste aufgelistet sind, überprüfen Sie mit Ihrem Kirchenbüro, ob die Selbstanmeldung aktiviert ist.
 :::

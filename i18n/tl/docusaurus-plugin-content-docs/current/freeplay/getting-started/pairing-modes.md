@@ -6,50 +6,50 @@ title: "Pagpili ng Pairing Mode"
 
 <div class="article-intro">
 
-Nag-aalok ang FreePlay ng dalawang pairing mode para sa pagkonekta ng iyong TV sa iyong simbahan, kasama ang kakayahang mag-browse ng content providers nang direkta. Ang **Select Pairing Mode** screen ay nagpapakita ng mga opsyong ito bilang malalaking card na maaari mong i-navigate gamit ang TV remote mo.
+Nag-aalok ang FreePlay ng dalawang pairing mode para ikonekta ang inyong TV sa inyong simbahan, at maaari ka ring direktang mag-browse ng mga content provider. Ipinapakita ng screen na **Select Pairing Mode** ang mga opsyong ito bilang malalaking card na maaari mong i-navigate gamit ang remote ng inyong TV.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Ka Magsimula</h4>
+<h4>Bago Magsimula</h4>
 
-- I-install ang FreePlay at buksan ito sa unang pagkakataon -- tingnan ang [Getting Started](./index.md)
-- Ihanda ang TV remote mo para sa navigation
+- I-install ang FreePlay at buksan ito sa unang pagkakataon -- tingnan ang [Pagsisimula](./index.md)
+- Ihanda ang remote ng inyong TV para sa pag-navigate
 
 </div>
 
 ## Pair to Classroom
 
-Piliin ang **Pair to Classroom** kapag gusto mong laging ipakita ng isang tiyak na TV ang lesson na naka-schedule para sa isang partikular na silid. Ito ang pinakamainam na opsyon para sa mga classroom ng children's ministry kung saan itinatakda ang mga lesson batay sa lingguhang iskedyul.
+Piliin ang **Pair to Classroom** kung gusto ninyong laging ipakita ng isang partikular na TV ang leksyong nakaiskedyul para sa isang silid. Ito ang pinakamainam na opsyon para sa mga silid-aralan ng children's ministry kung saan ang mga leksyon ay itinatakda sa lingguhang iskedyul.
 
-**Paano ito gumagana:** Hahanapin mo ang iyong simbahan sa pangalan, pipili ng classroom, at awtomatikong kukunin ng FreePlay kung anumang lesson ang naka-schedule para sa silid na iyon ngayon. Bawat umaga ng Linggo, bubuksan mo lang ang TV at handa na ang tamang lesson.
+**Paano ito gumagana:** Hahanapin mo ang inyong simbahan ayon sa pangalan, pipili ka ng silid-aralan, at awtomatikong kukunin ng FreePlay ang leksyong nakaiskedyul para sa silid na iyon ngayong araw. Tuwing Linggo ng umaga, bubuksan mo na lang ang TV at handa na ang tamang leksyon.
 
-**Pinakaangkop para sa:** Mga dedikadong TV ng classroom na dapat laging ipakita ang naka-schedule na content para sa silid na iyon.
+**Pinakamainam para sa:** Mga nakalaang TV sa silid-aralan na dapat laging magpakita ng nakaiskedyul na nilalaman para sa silid na iyon.
 
 :::tip
-I-set up ang iyong mga classroom sa [freeplay.church](https://freeplay.church) bago i-pair ang iyong TV. Sinisiguro nito na lalabas ang iyong mga silid kapag hinanap mo ang iyong simbahan.
+I-set up ang inyong mga silid-aralan sa [freeplay.church](https://freeplay.church) bago i-pair ang inyong TV. Sisiguraduhin nito na lalabas ang inyong mga silid kapag hinanap ang inyong simbahan.
 :::
 
 ## Pair to Plan
 
-Piliin ang **Pair to Plan** kapag gusto mong sundan ang isang plano ng church service. Ang mode na ito ay bumubuo ng isang pairing code na ilalagay mo sa **B1 Admin** para i-link ang TV sa isang tiyak na uri ng plano. Pagkatapos ay ida-download at ipe-play ng TV ang content na nakatalaga sa kasalukuyang plano.
+Piliin ang **Pair to Plan** kung gusto ninyong sundan ang plano ng isang serbisyo ng simbahan. Gumagawa ang mode na ito ng pairing code na ilalagay ninyo sa **B1 Admin** para i-link ang TV sa isang partikular na uri ng plano. Pagkatapos, magda-download at magpe-play ang TV ng nilalamang nakatalaga sa kasalukuyang plano.
 
-**Paano ito gumagana:** Nagpapakita ang FreePlay ng pairing code at QR code sa screen. Binubuksan ng isang administrator ang naka-link na page sa **B1 Admin**, ilalagay ang code, at pipiliin ang uri ng plano na dapat sundan ng screen mula sa isang **Show Plans For** dropdown. Kapag naaprubahan na, awtomatikong ilo-load ng TV ang content ng kasalukuyang plano.
+**Paano ito gumagana:** Magpapakita ang FreePlay ng pairing code at QR code sa screen. Bubuksan ng isang administrator ang naka-link na pahina sa **B1 Admin**, ilalagay ang code, at pipiliin mula sa dropdown na **Show Plans For** ang uri ng plano na dapat sundan ng screen. Kapag naaprubahan na, awtomatikong ilo-load ng TV ang nilalaman ng kasalukuyang plano.
 
-**Pinakaangkop para sa:** Mga TV na nagpapakita ng content na nakatali sa iyong lingguhang plano ng service, tulad ng mga lyrics ng papuri o announcement slides.
+**Pinakamainam para sa:** Mga TV na nagpapakita ng nilalamang nakatali sa lingguhang plano ng serbisyo, gaya ng lyrics ng worship o mga slide ng anunsyo.
 
-## Content Providers
+## Mga Content Provider
 
-Kung hindi mo kailangang mag-pair sa isang classroom o plano, maaari kang direktang mag-browse ng mga content provider. Ang mga provider tulad ng [Lessons.church](../../lessons-church/) at Bible Project ay nag-aalok ng content na maaari mong i-download at i-play kung kailan mo gusto.
+Kung hindi ninyo kailangang mag-pair sa isang silid-aralan o plano, maaari kayong direktang mag-browse ng mga content provider. Ang mga provider tulad ng [Lessons.church](../../lessons-church/) at Bible Project ay nag-aalok ng nilalamang maaari ninyong i-download at i-play kahit kailan ninyo gusto.
 
-**Pinakaangkop para sa:** Mga TV kung saan manu-manong pipili ang mga volunteer kung ano ang ipe-play kada linggo, o kapag gusto mong tuklasin ang mga available na content.
+**Pinakamainam para sa:** Mga TV kung saan manu-manong pinipili ng mga volunteer kung ano ang ipe-play bawat linggo, o kapag gusto ninyong tuklasin ang mga available na nilalaman.
 
 :::info
-Maaari mong i-access ang **Providers** screen kahit kailan mula sa sidebar sa ibaba ng navigation. Hindi mo kailangang gumamit ng pairing mode para mag-browse at mag-play ng content.
+Maaari mong buksan ang screen na **Providers** anumang oras mula sa **Settings** sa ibaba ng sidebar. Hindi ninyo kailangang gumamit ng pairing mode para mag-browse at mag-play ng nilalaman.
 :::
 
-## Kaugnay na mga Artikulo
+## Mga Kaugnay na Artikulo
 
-- **[Classroom Mode](../classroom-mode/)** - Buong gabay sa pag-pair gamit ang classroom
-- **[Plan Mode](../plan-mode/)** - Buong gabay sa pag-pair gamit ang service plan
-- **[Content Providers](../content-providers/)** - Mag-browse at mag-download ng content mula sa mga panlabas na source
+- **[Classroom Mode](../classroom-mode/)** - Kumpletong gabay sa pag-pair sa isang silid-aralan
+- **[Plan Mode](../plan-mode/)** - Kumpletong gabay sa pag-pair sa plano ng serbisyo
+- **[Mga Content Provider](../content-providers/)** - Mag-browse at mag-download ng nilalaman mula sa mga panlabas na pinagmulan

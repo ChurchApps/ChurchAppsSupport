@@ -20,7 +20,7 @@ The Availability Calendar gives you a bird's-eye view of all room and resource b
 
 ## Opening the Availability Calendar
 
-In B1 Admin, open the **section menu** in the top-left corner and choose **Calendars**, then select **Availability**.
+In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Calendars**, and click **Availability**.
 
 ## Reading the Calendar
 

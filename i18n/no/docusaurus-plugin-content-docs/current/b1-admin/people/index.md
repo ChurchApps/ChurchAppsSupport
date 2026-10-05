@@ -1,41 +1,41 @@
 ---
-title: "Mennesker"
+title: "Personer"
 ---
 
-# Mennesker
+# Personer
 
 <div class="article-intro">
 
-**Mennesker**-seksjonen er hjertet av kirkestyringsarbeidet i B1 Admin. Dette er hvor du vedlikeholder kirkens katalog -- søk etter medlemmer, legg til nye mennesker, vis og rediger profiler, og spor hushold. Enten du har en liten forsamling eller en stor, er det å holde menneske-journalene organiserte grunnlaget som driver alle andre funksjoner i B1.
+Delen **Personer** er hjertet i menighetsadministrasjonen i B1 Admin. Her vedlikeholder du menighetsregisteret – du søker etter medlemmer, legger til nye personer, viser og redigerer profiler og holder oversikt over husstander. Enten menigheten er liten eller stor, er ryddige personposter grunnlaget for alle andre funksjoner i B1.
 
 </div>
 
-## Hva du kan gjøre
+## Dette kan du gjøre
 
-Her er en oversikt over viktige funksjoner som er tilgjengelige i Mennesker-seksjonen:
+Her er en oversikt over de viktigste funksjonene i delen Personer:
 
-1. **Søk i katalogen** -- Bruk rask søkestolpen for å finne noen etter navn, eller dra nytte av avanserte filtre og AI-drevet naturlig språksøk for å finne nøyaktig det du trenger. Se [Søk i mennesker](./searching-people.md) og [AI-søk](./ai-search.md) for detaljer.
+1. **Søk i registeret** -- Bruk hurtigsøket for å finne hvem som helst på navn, eller bruk avanserte filtre og AI-drevet søk med naturlig språk for å finne akkurat dem du trenger. Se [Søke etter personer](./searching-people.md) og [AI-søk](./ai-search.md) for detaljer.
 
-2. **Lagre søkespørringer som lister** -- Lagre ethvert søk eller filter som en navngitt liste slik at du kan laste det inn på nytt med ett klikk. Se [Lagrede lister](./lists.md).
+2. **Lagre søk som lister** -- Lagre et hvilket som helst søk eller filter som en navngitt liste, slik at du kan laste det inn igjen med ett klikk. Se [Lagrede lister](./lists.md).
 
-3. **Vis demografi** -- Se en visuell sammenbrudd av forsamlingen etter alder, kjønn, sivilstand, medlemskaps-status og campus -- og klikk et vilkårlig kartegment for å drille inn i disse menneskene. Se [Demografi](./demographics.md).
+3. **Se demografi** -- Se en visuell oversikt over menigheten etter alder, kjønn, sivilstatus, medlemsstatus og avdeling — og klikk på et segment i et diagram for å se nærmere på de personene. Se [Demografi](./demographics.md).
 
-4. **Legg til nye mennesker** -- Legg raskt til individer i katalogen og fyll inn profildetaljene, kontaktinformasjonen og husholdforbindelsene. Se [Legge til mennesker](./adding-people.md) for trinn-for-trinn-instruksjoner.
+4. **Legge til nye personer** -- Legg raskt til enkeltpersoner i registeret og fyll inn profilopplysninger, kontaktinformasjon og husstandskoblinger. Se [Legge til personer](./adding-people.md) for trinnvise instruksjoner.
 
-5. **Bulkrediger mennesker** -- Oppdater flere mennesker på en gang ved å endre medlemskaps-status, sivilstand, kjønn, velg-ut-preferanser eller gruppedeltakelse. Dette sparer tid når du gjør samme endring for mange individer. Se [Bulk redigering](./bulk-editing.md).
+5. **Redigere personer i bulk** -- Oppdater flere personer samtidig ved å endre medlemsstatus, sivilstatus, kjønn, reservasjonsvalg eller gruppemedlemskap. Det sparer tid når du skal gjøre den samme endringen for mange. Se [Bulkredigering](./bulk-editing.md).
 
-6. **Skriv ut katalogen** -- Generer en formatert, skrivbar medlemskatalog grupperet etter hushold, komplett med foto og kontaktinformasjon. Se [Print katalog](./print-directory.md).
+6. **Skrive ut registeret** -- Lag en formatert, utskrivbar medlemskatalog gruppert etter husstand, med bilder og kontaktinformasjon. Se [Skriv ut katalog](./print-directory.md).
 
-7. **Importer og eksporter data** -- Bring inn menneske-data fra CSV-fil eller migrer fra et annet kirkestyrings-system som Breeze. Du kan også eksportere katalogen til CSV når som helst. Se [Importering av data](./importing-data.md) og [Eksportering av data](./exporting-data.md).
+7. **Importere og eksportere data** -- Hent inn medlemsdata fra en CSV-fil eller flytt over fra et annet system for menighetsadministrasjon som Breeze. Du kan også eksportere registeret til CSV når som helst. Se [Importere data](./importing-data.md) og [Eksportere data](./exporting-data.md).
 
-8. **Administrer profiler** -- Vis og rediger detaljerte profiler for hver person, inkludert kontaktinfo, husholdsmedlemmer, [gruppedeltakelse](../groups/group-members.md), [oppmøte-historie](../attendance/tracking-attendance.md), [donasjoner](../donations/recording-donations.md), og [egendefinerte skjemaer](../forms/creating-forms.md). Svev over e-post, adresse eller telefonnummer i det blå profil-hodingspanelet for å kopiere det med ett klikk.
+8. **Administrere profiler** -- Se og rediger detaljerte profiler for hver person, inkludert kontaktinfo, husstandsmedlemmer, [gruppemedlemskap](../groups/group-members.md), [oppmøtehistorikk](../attendance/tracking-attendance.md), [gaver](../donations/recording-donations.md) og [egendefinerte skjemaer](../forms/creating-forms.md). Hold musepekeren over en e-postadresse, adresse eller et telefonnummer i den blå profilbanneren for å kopiere det med ett klikk.
 
-9. **Tildel roller og tillatelser** -- Kontroller hvem på laget som kan få tilgang til forskjellige deler av B1 Admin ved å tildele roller. Se [Tildeling av roller](./roles-permissions.md).
+9. **Tildele roller og tillatelser** -- Bestem hvem i teamet ditt som har tilgang til ulike deler av B1 Admin ved å tildele roller. Se [Tildele roller](./roles-permissions.md).
 
 ## Komme i gang
 
-For å få tilgang til Mennesker-seksjonen, åpne **seksjonsmenyene** i det øvre venstre hjørnet av B1 Admin (seksjonsnavnet med den lille pilen) og velg **Mennesker**. Du vil se kirkens fulle katalog med en søkestolpe øverst og en liste over medlemmer nedenfor.
+For å åpne delen Personer bruker du [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre i B1 Admin), utvider **Personer** og klikker på **Personer**. Du ser hele menighetsregisteret med et søkefelt øverst og en liste over medlemmer under.
 
 :::tip
-Hvis du setter opp B1 for første gang, start med å [importere eksisterende medlems-data](./importing-data.md). Deretter gjennomgår og rengjør du profiler etter behov.
+Hvis du setter opp B1 for første gang, bør du starte med å [importere eksisterende medlemsdata](./importing-data.md). Deretter kan du se gjennom og rydde i profilene etter behov.
 :::

@@ -20,7 +20,7 @@ Uma vez que você criou um grupo, o próximo passo é adicionar membros. Na pág
 
 ## Adicionando Membros a um Grupo
 
-1. Navegue até a página **Grupos** e clique no grupo que deseja gerenciar.
+1. No [menu Jump](../introduction.md#getting-around-with-the-jump-menu), escolha **Pessoas > Grupos** e clique no grupo que deseja gerenciar.
 2. Clique na aba **Membros**.
 3. Na caixa de pesquisa, digite o nome da pessoa que deseja adicionar.
 4. Clique em **Adicionar** ao lado do nome da pessoa nos resultados da pesquisa.
@@ -29,6 +29,10 @@ Uma vez que você criou um grupo, o próximo passo é adicionar membros. Na pág
 :::tip
 Deixe a caixa de pesquisa em branco e clique em **Pesquisar** para procurar em todo o seu diretório. Isso é útil se você não tiver certeza da grafia exata do nome de alguém.
 :::
+
+### Adicionando Alguém Que Não Está em B1 Ainda
+
+Se sua pesquisa não encontrar ninguém, a pesquisa mostra **Nenhum registro encontrado** com um link **Adicionar Nova Pessoa**. Clique nele, digite o primeiro nome, sobrenome e (opcionalmente) email da pessoa e clique em **Adicionar**. A nova pessoa é criada em seu diretório de Pessoas e adicionada ao grupo em uma única etapa -- você não precisa procurá-la novamente.
 
 ## Designando Líderes do Grupo
 
@@ -86,6 +90,17 @@ Até que sua igreja seja aprovada, B1 também não envia [e-mails de acompanhame
 Após a aprovação, uma igreja pode enviar até 150 e-mails escritos pela igreja por dia. O limite aumenta conforme sua igreja constrói um histórico de envio limpo, até 2.000 por dia. Se mensagens recentes ricochetearam ou foram marcadas como spam, o e-mail de grupo pausa e o diálogo pede a você para entrar em contato com o suporte. Se um envio ultrapassar seu limite diário, B1 não o envia e mostra um erro.
 :::
 
+## Enviando Notificações de Texto aos Membros do Grupo
+
+Depois que sua igreja tiver conectado um [provedor de mensagens de texto](../settings/church-settings.md#texting), um ícone de texto (**Enviar texto para este grupo**) aparece no cabeçalho do grupo.
+
+1. Na página de detalhes do grupo, clique no **ícone de texto**.
+2. O diálogo mostra quantos membros receberão a mensagem de texto. Membros sem número de celular registrado ou que optaram por não participar são ignorados.
+3. Digite sua mensagem. Para personalizá-la, clique em um chip de espaço reservado abaixo da caixa de mensagem -- **Primeiro Nome**, **Sobrenome**, **Nome de Exibição** ou **Nome da Igreja** -- para inseri-lo em seu cursor. Cada espaço reservado é preenchido com os próprios detalhes do destinatário quando a mensagem de texto é enviada.
+4. Clique em **Enviar**.
+
+Consulte [Personalizando Textos com Campos de Mesclagem](../settings/church-settings.md#personalizing-texts-with-merge-fields) para mais detalhes.
+
 ## Exportando Dados do Grupo
 
 Para baixar a lista de membros do grupo como um arquivo:
@@ -101,7 +116,7 @@ Uma exportação CSV é útil para importar dados em outras ferramentas ou mante
 
 Você pode enviar uma notificação por push diretamente para todos os membros do grupo que têm o aplicativo B1.church instalado no dispositivo com notificações por push ativadas.
 
-1. Na página de detalhes do grupo, clique no **ícone de sino** na barra de ferramentas do cabeçalho (ao lado dos ícones de e-mail e SMS).
+1. Na página de detalhes do grupo, clique no **ícone de sino** na barra de ferramentas do cabeçalho (ao lado dos ícones de e-mail e texto -- o ícone de texto aparece depois que um [provedor de mensagens de texto](../settings/church-settings.md#texting) está conectado).
 2. Um diálogo abre mostrando quantos membros do seu grupo têm push ativado.
 3. Preencha os detalhes da notificação:
    - **Título** *(obrigatório)* -- Um resumo curto, até 80 caracteres.

@@ -1,128 +1,128 @@
 ---
-title: "पाठों को शेड्यूल करना"
+title: "पाठों की शेड्यूलिंग"
 ---
 
-# Scheduling Lessons from Lessons.church
+# Lessons.church से पाठों की शेड्यूलिंग
 
 <div class="article-intro">
 
-B1 Admin integrates directly with [Lessons.church](https://lessons.church) so you can schedule curriculum for your classrooms right inside your service plans. This keeps everything — volunteers, assignments, and lesson content — in one place.
+B1 Admin [Lessons.church](https://lessons.church) के साथ सीधे एकीकृत करता है ताकि आप अपनी सेवा योजनाओं के अंदर अपनी कक्षाओं के लिए पाठ्यक्रम शेड्यूल कर सकें। यह सब कुछ रखता है -- स्वयंसेवक, असाइनमेंट, और पाठ सामग्री -- एक जगह में।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- Set up your ministries in the Serving area
-- Have an active [Lessons.church](https://lessons.church) account — sign up there first if your church doesn't have one yet
+- सेवा क्षेत्र में अपनी मंत्रालय सेट करें
+- एक सक्रिय [Lessons.church](https://lessons.church) खाता हो -- यदि आपके चर्च के पास अभी तक एक नहीं है तो पहले वहां साइन अप करें
 
 </div>
 
-:::tip Follow a guided walkthrough
-Want to see the full setup from start to finish? Our **<a href="/guides/freeplay-b1admin" target="_blank">step-by-step guide</a>** covers linking providers, scheduling a lesson, and connecting FreePlay to your classroom TV — with short videos and written steps you can check off as you go.
+:::tip एक निर्देशित चलना पालन करें
+शुरू से अंत तक पूरी सेटअप देखना चाहते हैं? हमारा **<a href="/guides/freeplay-b1admin" target="_blank">चरण-दर-चरण मार्गदर्शन</a>** प्रदाता को लिंक करने, एक पाठ शेड्यूल करने, और FreePlay को अपनी कक्षा TV से जोड़ने को कवर करता है -- छोटे वीडियो और लिखित चरणों के साथ आप जा सकते हैं।
 :::
 
-## Step 1 — Link Your Lessons.church Account
+## चरण 1 -- अपने Lessons.church खाते को लिंक करें
 
-This is a one-time setup per ministry. You need to connect your Lessons.church account before you can browse and schedule content.
+यह मंत्रालय प्रति एक बार सेटअप है। आप सामग्री को ब्राउज़ और शेड्यूल करने से पहले अपने Lessons.church खाते को जोड़ने की आवश्यकता है।
 
-1. Log in to [B1 Admin](https://admin.b1.church/) and go to **Serving**
-2. Open the ministry you want to connect (e.g., Children's Ministry)
-3. Scroll down to the **Content Provider Accounts** section
-4. Click **Link New Provider**
-5. Select **Lessons.church** from the list
-6. A device authorization screen will appear with a code
-7. Go to [lessons.church](https://lessons.church), log in, and enter the code to authorize the connection
-8. Once approved, you will see **"Account linked"** under Lessons.church in B1 Admin
+1. [B1 Admin](https://admin.b1.church/) में लॉगिन करें और **सेवा** पर जाएं
+2. जिस मंत्रालय को आप जोड़ना चाहते हैं उसे खोलें (उदा., बाल मंत्रालय)
+3. **सामग्री प्रदाता खाते** अनुभाग तक स्क्रॉल करें
+4. **नया प्रदाता लिंक करें** पर क्लिक करें
+5. सूची से **Lessons.church** का चयन करें
+6. एक डिवाइस प्राधिकरण स्क्रीन एक कोड के साथ दिखाई देगी
+7. [lessons.church](https://lessons.church) पर जाएं, लॉगिन करें, और कनेक्शन को अधिकृत करने के लिए कोड दर्ज करें
+8. मंजूरी के बाद, आप B1 Admin में Lessons.church के तहत **"खाता जुड़ा हुआ"** देखेंगे
 
 :::info
-The Content Provider Accounts section is per ministry. If you run multiple ministries (e.g., Children's and Youth), you will need to link Lessons.church for each one separately.
+सामग्री प्रदाता खाते अनुभाग मंत्रालय प्रति है। यदि आप कई मंत्रालयों को चलाते हैं (उदा., बाल और युवा), आपको Lessons.church को अलग से प्रत्येक के लिए जोड़ने की आवश्यकता होगी।
 :::
 
-## Step 2 — Schedule a Lesson
+## चरण 2 -- एक पाठ शेड्यूल करें
 
-Once linked, you can schedule lessons directly from Plans.
+एक बार जुड़ने के बाद, आप योजनाओं से सीधे पाठ शेड्यूल कर सकते हैं।
 
-1. In B1 Admin, go to **Serving → Plans**
-2. Select your ministry tab and click **Add Plan Type** — give the plan type a name such as Children's Church or Sunday School
-3. Click on the plan type you just made and click **Schedule Lesson**. From that menu you can schedule one lesson, bulk-schedule a series, or **Apply Year Plan** to drop in a published 12–52 week sequence from Lessons.church.
-4. Select the **date** for the lesson (defaults to the upcoming Sunday)
-5. Click **Select Lesson** — a content browser dialog opens
-6. At the top of the dialog, confirm **Lessons.church** is selected as the provider
-7. Browse through the content:
-   - Select a **Program** (e.g., "Bible Stories for Kids")
-   - Select a **Study** within that program (e.g., "Creation and Early Stories")
-   - Select the specific **Lesson**
-   - Select the **Venue** — this is the age-group version of the lesson
-8. Click **Associate Lesson** to confirm
-9. Choose your **copy option** for volunteers:
-   - **Nothing** — fresh plan, no volunteers carried over
-   - **Positions Only** — copies volunteer roles from the previous plan but not who is assigned
-   - **Positions and Assignments** — copies both roles and assigned volunteers *(most common)*
-10. Click **Save**
+1. B1 Admin में, **सेवा → योजनाएं** पर जाएं
+2. अपनी मंत्रालय टैब चुनें और **योजना प्रकार जोड़ें** पर क्लिक करें -- योजना प्रकार को एक नाम दें जैसे बाल चर्च या रविवार स्कूल
+3. आपने अभी बनाई गई योजना प्रकार पर क्लिक करें और **पाठ शेड्यूल करें** पर क्लिक करें। उस मेनू से आप एक पाठ शेड्यूल कर सकते हैं, एक श्रृंखला को बल्क-शेड्यूल कर सकते हैं, या **वर्ष योजना लागू करें** को एक प्रकाशित वर्ष अनुक्रम में ड्रॉप करने के लिए Lessons.church से।
+4. पाठ के लिए **तारीख** चुनें (आने वाली रविवार को डिफ़ॉल्ट करता है)
+5. **पाठ चुनें** पर क्लिक करें -- एक सामग्री ब्राउज़र संवाद खोलता है
+6. संवाद **Lessons.church** के साथ खुलता है चयनित (या इस योजना प्रकार के पहले पाठ के लिए उपयोग किए गए प्रदाता)। यदि आपने अन्य प्रदाताओं को जोड़ा है, तो आप संवाद के शीर्ष पर उनके बीच स्विच कर सकते हैं
+7. सामग्री के माध्यम से ब्राउज़ करें:
+   - एक **कार्यक्रम** चुनें (उदा., "बच्चों के लिए बाइबल की कहानियां")
+   - उस कार्यक्रम के भीतर एक **अध्ययन** चुनें (उदा., "सृष्टि और प्रारंभिक कहानियां")
+   - विशिष्ट **पाठ** चुनें
+   - **स्थान** चुनें -- यह पाठ का आयु-समूह संस्करण है
+8. पुष्टि करने के लिए **पाठ जोड़ें** पर क्लिक करें
+9. स्वयंसेवकों के लिए अपनी **कॉपी विकल्प** चुनें:
+   - **कुछ नहीं** -- ताजा योजना, कोई स्वयंसेवक ले जाया नहीं
+   - **केवल पद** -- पिछली योजना से स्वयंसेवक भूमिकाओं की प्रतिलिपि करता है लेकिन कौन निर्दिष्ट है नहीं
+   - **पद और असाइनमेंट** -- भूमिकाएं और निर्दिष्ट स्वयंसेवकों दोनों की प्रतिलिपि करता है *(सबसे आम)*
+10. **सहेजें** पर क्लिक करें
 
-The plan is created and named automatically (e.g., "Feb 23 - Elementary"). Volunteers can open the plan to see their assignments and review the lesson content before Sunday.
+योजना स्वचालित रूप से बनाई और नाम दी जाती है (उदा., "फरवरी 23 - प्राथमिक")। स्वयंसेवक योजना को खोल सकते हैं अपने असाइनमेंट देखने और रविवार से पहले पाठ सामग्री की समीक्षा करने के लिए।
 
 :::warning
-Make sure to select the correct **Venue** for your classroom's age group. Choosing the wrong venue means your volunteers will see content designed for a different age level.
+अपनी कक्षा के आयु समूह के लिए सही **स्थान** चुनना सुनिश्चित करें। गलत स्थान चुनने का मतलब है आपके स्वयंसेवकों को एक अलग आयु स्तर के लिए डिजाइन की गई सामग्री दिखाई देगी।
 :::
 
-## Apply a Year Plan
+## एक वर्ष योजना लागू करें
 
-If a curriculum publisher has published a year plan on Lessons.church, you can load the whole sequence onto this plan type in one step:
+यदि एक पाठ्यक्रम प्रकाशक ने Lessons.church पर एक वर्ष योजना प्रकाशित की है, तो आप इस योजना प्रकार में एक बार में पूरे अनुक्रम को लोड कर सकते हैं:
 
-1. Click **Schedule Lesson → Apply Year Plan**
-2. Choose the published year plan
-3. Set the first class date (week 1 lands on that date; later weeks are seven days apart)
-4. Choose how many weeks to write (12, 24, 44, or 52)
-5. Optionally copy volunteer positions from the previous plan
-6. Preview the list. Dates that already have a plan are skipped. Uncheck any week you do not want.
-7. Save. Each week becomes a serving plan you can edit as usual — change the lesson, volunteers, or date — and FreePlay will play whatever is on that week's plan.
+1. **पाठ शेड्यूल करें → वर्ष योजना लागू करें** पर क्लिक करें
+2. प्रकाशित वर्ष योजना चुनें
+3. यदि योजना कैलेंडर-लंगर है (उदा. Ark Kids), **लक्ष्य वर्ष** चुनें। ईस्टर और क्रिसमस अध्ययन उस वर्ष की तारीखों पर आते हैं। पहली और अंतिम कक्षा तारीखें समायोजित करें यदि आप केवल वर्ष के हिस्से को शेड्यूल कर रहे हैं।
+4. यदि योजना कैलेंडर-लंगर नहीं है, तो पहली कक्षा तारीख सेट करें (सप्ताह 1 उस तारीख पर आता है; बाद के सप्ताह सात दिन अलग होते हैं) और कितने सप्ताह लिखने के लिए (12, 24, 44, या 52)
+5. वैकल्पिक रूप से पिछली योजना से स्वयंसेवक स्थितियों की प्रतिलिपि करें
+6. सूची पूर्वावलोकन करें। कोई सप्ताह अनचेक करें जो आप नहीं चाहते -- बाद की सामग्री उस खिंचाव में अगले खुले रविवार में ले जाई जाती है बजाय छेद छोड़ने के। तारीखें जिनमें पहले से ही एक योजना है कैलेंडर-लंगर योजनाओं के लिए उसी तरह छोड़ दी जाती हैं।
+7. बचाते हैं। प्रत्येक सप्ताह एक सेवा योजना बन जाता है जिसे आप सामान्य रूप से संपादित कर सकते हैं -- पाठ, स्वयंसेवक, या तारीख बदलें -- और FreePlay जो भी उस सप्ताह की योजना पर है वह खेलेगा।
 
 :::tip
-**Plan ahead** — You can schedule multiple weeks of lessons at once so your team can prepare in advance. Use the past lesson list in the plan view to avoid accidentally repeating content.
+**योजना** -- आप एक बार में कई सप्ताह के पाठ शेड्यूल कर सकते हैं ताकि आपकी टीम अग्रिम में तैयार कर सके। योजना दृश्य में पिछली पाठ सूची का उपयोग करें दुर्घटना से सामग्री को दोहराने से बचने के लिए।
 :::
 
-## Customizing Lesson Content
+## पाठ सामग्री को अनुकूलित करना
 
-Once a lesson is scheduled, you can tailor it for your specific classroom — remove sections that don't apply, hide roles your room doesn't use, or reorder the content to match your preferred flow. Customizations can be saved for just one classroom or applied across all classrooms at your church.
+एक बार जब एक पाठ शेड्यूल हो जाता है, तो आप इसे अपनी विशिष्ट कक्षा के लिए तैयार कर सकते हैं -- अनुभाग हटाएं जो लागू नहीं होते, भूमिकाएं छिपाएं आपकी कक्षा का उपयोग नहीं करती, या सामग्री को पुनर्व्यवस्थित करें अपने पसंदीदा प्रवाह से मेल खाने के लिए। अनुकूलन केवल एक कक्षा के लिए सहेजे जा सकते हैं या आपके चर्च में सभी कक्षाओं में लागू किए जा सकते हैं।
 
-See the [Customizing Lessons](/docs/lessons-church/customization/customizing-lessons) guide for step-by-step instructions.
+[पाठ अनुकूलन](/docs/lessons-church/customization/customizing-lessons) मार्गदर्शन देखें चरण-दर-चरण निर्देशों के लिए।
 
-## Playing Lessons on a Classroom TV with FreePlay
+## FreePlay के साथ एक कक्षा TV पर पाठ चलाना
 
-Scheduling a lesson in B1 Admin pairs perfectly with **[FreePlay](/docs/freeplay/)** — ChurchApps' free media player for classroom TVs and Fire Sticks. When your plan is set up, FreePlay can pull the lesson content directly from Lessons.church and play it full-screen in the classroom. Your teacher controls the pace with a TV remote, advancing through videos and slides as the lesson flows.
+B1 Admin में एक पाठ शेड्यूल करना **[FreePlay](/docs/freeplay/)** के साथ पूरी तरह से जोड़ी जाती है -- कक्षा TVs और Fire Sticks के लिए ChurchApps' मुक्त मीडिया खिलाड़ी। जब आपकी योजना सेट हो जाती है, तो FreePlay पाठ सामग्री को सीधे Lessons.church से खींच सकता है और कक्षा में पूर्ण-स्क्रीन में खेल सकता है। आपका शिक्षक TV रिमोट के साथ गति को नियंत्रित करता है, जैसे-जैसे पाठ बहता है वीडियो और स्लाइड के माध्यम से आगे बढ़ता है।
 
-This means your volunteers see the plan on their phones while the content plays on the room's TV — no separate setup, no USB drives, no last-minute scrambling.
+इसका अर्थ है कि आपके स्वयंसेवक अपने फोन पर योजना देखते हैं जबकि सामग्री कक्षा के TV पर चलती है -- कोई अलग सेटअप नहीं, कोई USB ड्राइव नहीं, कोई आखिरी मिनट का संघर्ष नहीं।
 
-[Learn how to connect FreePlay to a content provider →](/docs/freeplay/content-providers/connecting-providers)
+[FreePlay को एक सामग्री प्रदाता से जोड़ने का तरीका जानें →](/docs/freeplay/content-providers/connecting-providers)
 
-## Don't See Your Curriculum Provider?
+## अपने पाठ्यक्रम प्रदाता को नहीं देख रहे हैं?
 
-The list of available providers is growing. If your church uses a curriculum provider that isn't showing in B1 Admin yet, reach out to us and we'll work on getting them added.
+उपलब्ध प्रदाताओं की सूची बढ़ रही है। यदि आपका चर्च एक पाठ्यक्रम प्रदाता का उपयोग करता है जो B1 Admin में अभी तक दिखाई नहीं दे रहा है, तो हमसे संपर्क करें और हम उन्हें जोड़ने पर काम करेंगे।
 
-Feel free to copy and send the message below directly to your curriculum provider — once they reach out to us we'll get the integration set up:
-
----
-
-> **Subject: ChurchApps Integration Request**
->
-> Hi [Curriculum Provider Team],
->
-> We love your curriculum and use it every week with our kids. We also use ChurchApps to manage our volunteers and service plans, and we use FreePlay (freeplay.church) to play lesson content directly on our classroom TVs. It has been a game changer for our teachers.
->
-> Right now we have to manage your curriculum separately, but if you were integrated with ChurchApps we could schedule your lessons right inside our service plans and play them through FreePlay on our classroom screens — all without leaving the tools we already use.
->
-> ChurchApps already works with several curriculum providers and their team is ready to work with you too. Could you reach out to them at **support@churchapps.org** to get the conversation started? We'd love to see this happen!
->
-> Thank you!
+नीचे सीधे अपने पाठ्यक्रम प्रदाता को संदेश की प्रतिलिपि और भेजने के लिए स्वतंत्र महसूस करें -- एक बार जब वे हमसे संपर्क करते हैं तो हम एकीकरण सेट करेंगे:
 
 ---
 
-## Related Articles
+> **विषय: ChurchApps एकीकरण अनुरोध**
+>
+> नमस्ते [पाठ्यक्रम प्रदाता टीम],
+>
+> हम आपके पाठ्यक्रम से प्यार करते हैं और इसे हर सप्ताह अपने बच्चों के साथ उपयोग करते हैं। हम ChurchApps का भी उपयोग करते हैं अपने स्वयंसेवकों को प्रबंधित करने और सेवा योजनाओं के लिए, और हम FreePlay (freeplay.church) का उपयोग करते हैं पाठ सामग्री को सीधे हमारे कक्षा TVs पर चलाने के लिए। यह हमारे शिक्षकों के लिए एक खेल परिवर्तक रहा है।
+>
+> अभी हम आपके पाठ्यक्रम को अलग से प्रबंधित करते हैं, लेकिन यदि आप ChurchApps के साथ एकीकृत थे तो हम सीधे अपनी सेवा योजनाओं में आपके पाठ शेड्यूल कर सकते हैं और उन्हें FreePlay के माध्यम से हमारी कक्षा स्क्रीन पर चला सकते हैं -- सब कुछ बिना उपकरणों को छोड़े जो हम पहले से उपयोग करते हैं।
+>
+> ChurchApps पहले से कई पाठ्यक्रम प्रदाताओं के साथ काम करता है और उनकी टीम आपके साथ काम करने के लिए तैयार है। क्या आप बातचीत शुरू करने के लिए **support@churchapps.org** पर उनसे संपर्क कर सकते हैं? हम इसे होते हुए देखना पसंद करेंगे!
+>
+> शुक्रिया!
 
-- [Service Plans](./plans.md)
-- [Service Order](./service-order.md)
-- [Customizing Lessons](/docs/lessons-church/customization/customizing-lessons)
-- [FreePlay — Playing Lessons on a Classroom TV](/docs/freeplay/classroom-mode/playing-lessons)
-- [Lessons.church Scheduling Guide](/docs/lessons-church/classrooms/scheduling-lessons)
+---
+
+## संबंधित लेख
+
+- [सेवा योजनाएं](./plans.md)
+- [सेवा क्रम](./service-order.md)
+- [पाठों को अनुकूलित करना](/docs/lessons-church/customization/customizing-lessons)
+- [FreePlay — एक कक्षा TV पर पाठ चलाना](/docs/freeplay/classroom-mode/playing-lessons)
+- [Lessons.church शेड्यूलिंग गाइड](/docs/lessons-church/classrooms/scheduling-lessons)

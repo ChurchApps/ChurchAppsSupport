@@ -1,69 +1,88 @@
 ---
-title: Introduction to B1.church
+title: Einführung in B1.church
 ---
 
-# Welcome to B1.church Admin!
+# Willkommen bei B1.church Admin!
 
 <div class="article-intro">
 
-Thank you for choosing B1.church! This introduction walks you through the basics of getting started with the B1.church Admin platform, from signing in and navigating your Dashboard to setting up your church's information and exploring the available tools.
+Danke, dass Sie sich für B1.church entschieden haben! Diese Einführung führt Sie durch die Grundlagen der ersten Schritte mit der B1.church Admin-Plattform, vom Anmelden und Navigieren auf Ihrem Dashboard bis zur Einrichtung Ihrer Kircheninformationen und Erkundung der verfügbaren Werkzeuge.
 
 </div>
 
-For further support, please email [support@churchapps.org](mailto:support@churchapps.org).
+Für weitere Unterstützung schreiben Sie bitte an [support@churchapps.org](mailto:support@churchapps.org).
 
-## Introduction Video
+## Einführungsvideo
 
 <video controls width="100%">
   <source src="/b1Admin/intro/output.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
+  Ihr Browser unterstützt das Video-Tag nicht.
 </video>
 
-## Walkthrough
+## Anleitung
 
-1. Using Google Chrome, go to [admin.b1.church](https://admin.b1.church) and sign in with your username and password.
-2. This will take you to the **Dashboard**, the B1.church Admin home page. It shows this week's service and who's checked in and serving, along with your tasks and groups. Use the **command palette** (see below) or the menus to reach People, Donations, Website, and the rest of the app.
-3. Click on **Settings** to set up your church's information, administrative roles, and other details.
-4. Click on the **edit pencil** to set up your church information.
-5. Back on Sunday, click the **question mark icon** in the top right corner for help and tutorials.
-6. Click **View Documentation** to see a list of tutorials to help you get started with B1.church.
-7. Navigate back to the Dashboard and click the **arrow next to your profile picture** and choose **Switch App**.
-8. Choose **Lessons.church** to manage your church's online lessons and curriculum.
-9. Switch back to B1.church by clicking the arrow next to your profile picture and choosing **Switch App** again.
-10. You can now enter B1.church through the **member portal** or the **admin portal**. The member portal allows you to see how B1.church looks to your members, view your groups, and manage your personal donations.
-
-:::tip
-Start with the [Settings](./settings/) page to configure your church name, branding, and team permissions. This ensures everything else you set up will display correctly.
-:::
-
-## Finding Anything Quickly with the Command Palette
-
-Instead of clicking through menus, you can jump straight to a person, group, plan, fund, or any admin page from anywhere in B1 Admin:
-
-1. Press **Ctrl+K** (or **Cmd+K** on a Mac), or press **/** while you are not typing in a text field, to open the search bar. You can also click the **Search or jump...** button in the top navigation.
-2. Start typing a name or the page you want (for example, a person's name, "batches", or "songs").
-3. Results are grouped by type -- people, groups, plans, funds, and pages to jump to. Use the arrow keys to move between results and **Enter** to select one, or click a result with your mouse.
-4. Press **Esc** to close the search bar without selecting anything.
-
-The command palette can also start common tasks. Type what you want to do and select it:
-
-- **Create a page**, **Create a group**, **Set up FreeShow**, or **Set up FreePlay** opens the matching quick setup wizard right where you are, without going back to the Dashboard.
-- **Add a person** opens the new person form.
-- **Start check-in** opens the check-in app.
-
-The actions you see depend on your permissions.
+1. Verwenden Sie Google Chrome und gehen Sie zu [admin.b1.church](https://admin.b1.church) und melden Sie sich mit Ihrem Benutzernamen und Passwort an.
+2. Dies führt Sie zum **Dashboard**, der B1.church Admin-Startseite. Es zeigt den Gottesdienst dieser Woche und wer eingecheckt hat und Dienst versieht, zusammen mit Ihren Aufgaben und Gruppen. Verwenden Sie das **Jump-Menü** (die Suchleiste oben links, siehe unten), um auf Personen, Spenden, Website und den Rest der App zuzugreifen. Klicken Sie auf das kleine Kirchenlogo daneben, um jederzeit zum Dashboard zurückzukehren.
+3. Öffnen Sie das Jump-Menü und wählen Sie **Einstellungen**, um Ihre Kircheninformationen, administrative Rollen und andere Details einzurichten.
+4. Klicken Sie auf den **Bearbeitungs-Stift**, um Ihre Kircheninformationen einzurichten.
+5. Am Sonntag klicken Sie auf das **Fragezeichen-Symbol** in der oberen rechten Ecke, um Hilfe und Anleitungen zu erhalten.
+6. Klicken Sie auf **Dokumentation anzeigen**, um eine Liste von Anleitungen zu sehen, die Ihnen bei den ersten Schritten mit B1.church helfen.
+7. Navigieren Sie zurück zum Dashboard und klicken Sie auf den **Pfeil neben Ihrem Profilbild** und wählen Sie **App wechseln**.
+8. Wählen Sie **Lessons.church**, um die Online-Lektionen und den Lehrplan Ihrer Kirche zu verwalten.
+9. Wechseln Sie zurück zu B1.church, indem Sie auf den Pfeil neben Ihrem Profilbild klicken und erneut **App wechseln** wählen.
+10. Sie können jetzt B1.church über das **Mitgliederportal** oder das **Admin-Portal** betreten. Das Mitgliederportal ermöglicht es Ihnen zu sehen, wie B1.church für Ihre Mitglieder aussieht, Ihre Gruppen anzuzeigen und Ihre persönlichen Spenden zu verwalten.
 
 :::tip
-The command palette is often the fastest way to reach a page buried in a sub-menu -- type part of the page name instead of navigating through Settings, Serving, or Donations by hand.
+Beginnen Sie mit der [Einstellungen](./settings/)-Seite, um Ihren Kirchennamen, Branding und Teamberechtigungen zu konfigurieren. Dies stellt sicher, dass alles andere, das Sie einrichten, korrekt angezeigt wird.
 :::
 
-## Next Steps
+<a id="finding-anything-quickly-with-the-command-palette"></a>
 
-After watching this introduction, explore these key features:
+## Navigation mit dem Jump-Menü
 
-- [Adding People](./people/adding-people) -- Learn how to add members to your database
-- [Groups](./groups/) -- Set up and manage church groups
-- [Serving Plans](./serving/plans) -- Organize your serving ministry
-- [Attendance](./attendance/) -- Track attendance and check-in
-- [Website](./website/) -- Build and customize your church website
-- [Settings](./settings/) -- Configure your church information and permissions
+Alle B1 Admin-Inhalte werden vom **Jump-Menü** oben links in der Kopfzeile aufgerufen. Neben dem kleinen Kirchenlogo (das Sie zum Dashboard zurückbringt) ist eine Suchleiste, die anzeigt, wo Sie sich befinden, z. B. **Spenden › Chargen**, zusammen mit einem **Strg K**-Hinweis (oder **⌘ K**).
+
+### Bereiche und Seiten durchsuchen
+
+1. Klicken Sie auf die Suchleiste oder drücken Sie **Strg+K** (**Cmd+K** auf einem Mac) oder drücken Sie **/**, während Sie nicht in ein Textfeld eingeben.
+2. Das Menü listet jeden Bereich auf, auf den Sie Zugriff haben – Dashboard, Personen, Spenden, Dienst, Predigten, Website, Kalender, Mobil und Einstellungen. Der Bereich, in dem Sie sich befinden, wird bereits erweitert und Ihre aktuelle Seite wird hervorgehoben.
+3. Klicken Sie auf einen Bereich, um ihn zu erweitern und seine Seiten anzuzeigen (z. B. enthält **Personen** **Personen**, **Gruppen**, **Besucherverfolgung** und **Formulare**). Jeweils nur ein Bereich ist erweitert.
+4. Klicken Sie auf eine Seite, um dort hinzugehen.
+
+Sie können auch die Tastatur verwenden: Die Pfeile **Nach oben** und **Nach unten** bewegen sich in der Liste, **Nach rechts** erweitert einen Bereich, **Nach links** reduziert ihn und **Eingabe** öffnet das hervorgehobene Element. Drücken Sie **Esc**, um das Menü zu schließen, ohne irgendwo hinzugehen.
+
+In dieser Dokumentation bedeutet ein Schritt wie „Wählen Sie im Jump-Menü **Personen > Gruppen**" das Jump-Menü öffnen, **Personen** erweitern und auf **Gruppen** klicken.
+
+### Suchen
+
+Anstatt zu durchsuchen, können Sie direkt nach dem Öffnen des Menüs anfangen zu tippen, um direkt zu einer Person, Gruppe, einem Plan, einem Fonds oder einer Admin-Seite zu springen:
+
+1. Geben Sie einen Namen oder die Seite ein, auf die Sie gehen möchten (z. B. den Namen einer Person, „Chargen", „Lieder" oder „meine Arbeit").
+2. Die Ergebnisse werden nach Typ gruppiert – Personen, Gruppen, Pläne, Fonds und Seiten zum Springen. Verwenden Sie die Pfeiltasten, um sich in den Ergebnissen zu bewegen, und drücken Sie **Eingabe**, um eins auszuwählen, oder klicken Sie mit Ihrer Maus auf ein Ergebnis.
+
+Die Suche kann auch allgemeine Aufgaben starten. Geben Sie ein, was Sie tun möchten, und wählen Sie es aus:
+
+- **Erstelle eine Seite**, **Erstelle eine Gruppe**, **Richte FreeShow ein** oder **Richte FreePlay ein**, öffnet den passenden schnellen Setup-Assistenten direkt, wo Sie sind, ohne zum Dashboard zurückzugehen.
+- **Eine Person hinzufügen** öffnet das Formular für neue Personen.
+- **Check-in starten** öffnet die Check-in-App.
+
+Die Aktionen, die Sie sehen, hängen von Ihren Berechtigungen ab.
+
+### Schnellaktionen
+
+Die letzte Gruppe im Jump-Menü sind **Schnellaktionen** – die Setup-Verknüpfungen, die früher auf dem Dashboard erschienen. Erweitern Sie es, um Schritte wie **Kirchenlogo hinzufügen**, **Erstelle Deine erste Webseite**, **Richte Online-Geben ein**, **Erstelle Deine erste Gruppe** und **Lade Teammates ein** zu finden. Setup-Aktionen öffnen beim ersten Mal ihren schnellen Setup-Assistenten; sobald Sie dieses Feature eingerichtet haben, führen sie Sie stattdessen zu seiner Seite.
+
+:::tip
+Suchen ist oft der schnellste Weg, um eine Seite zu erreichen – geben Sie einen Teil des Seitennamens ein (z. B. „Rollen" oder „Fonds"), anstatt Einstellungen, Dienst oder Spenden manuell zu erweitern.
+:::
+
+## Nächste Schritte
+
+Nach diesem Video erkunden Sie diese Hauptfunktionen:
+
+- [Personen hinzufügen](./people/adding-people) – Erfahren Sie, wie Sie Mitglieder in Ihre Datenbank eingeben
+- [Gruppen](./groups/) – Richten Sie Kirchengruppen ein und verwalten Sie sie
+- [Dienste-Pläne](./serving/plans) – Organisieren Sie Ihren Dienst-Bereich
+- [Besucherverfolgung](./attendance/) – Verfolgen Sie Besucherzahlen und Check-in
+- [Website](./website/) – Erstellen und passen Sie Ihre Kirchenwebsite an
+- [Einstellungen](./settings/) – Konfigurieren Sie Ihre Kircheninformationen und Berechtigungen

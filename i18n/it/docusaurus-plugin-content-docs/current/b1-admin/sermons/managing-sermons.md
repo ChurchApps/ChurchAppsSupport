@@ -1,74 +1,83 @@
 ---
-title: "Gestione sermoni"
+title: "Gestione dei Sermoni"
 ---
 
-# Gestione sermoni
+# Gestione dei Sermoni
 
 <div class="article-intro">
 
-La pagina Sermoni visualizza la tua intera libreria di sermoni. Da qui puoi aggiungere nuovi sermoni, modificare voci esistenti e organizzare il tuo contenuto per playlist. Ogni sermone può collegare video o audio ospitato su YouTube, Vimeo, Facebook o un URL personalizzato.
+La pagina Sermoni visualizza l'intera libreria di sermoni. Da qui puoi aggiungere nuovi sermoni, modificare le voci esistenti e organizzare i tuoi contenuti per playlist. Ogni sermone può collegare video o audio ospitati su YouTube, Vimeo, Facebook o un URL personalizzato.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di iniziare</h4>
+<h4>Prima di Iniziare</h4>
 
-- Hai bisogno dell'autorizzazione **contentApi.streamingServices.edit**. Vedi [Ruoli e autorizzazioni](../settings/roles-permissions.md) se non hai accesso.
-- Crea almeno una [playlist](playlists) per organizzare i tuoi sermoni in
-- Hai i tuoi ID video o URL pronti da YouTube, Vimeo o Facebook
+- È necessario il permesso **contentApi.streamingServices.edit**. Vedi [Ruoli & Permessi](../settings/roles-permissions.md) se non hai accesso.
+- Crea almeno una [playlist](playlists) per organizzare i tuoi sermoni
+- Tieni pronti i tuoi ID video o URL da YouTube, Vimeo o Facebook
 
 </div>
 
-## Visualizzazione della tua libreria di sermoni
+## Visualizzazione della Libreria di Sermoni
 
-1. In B1 Admin, apri il **menu sezione** nell'angolo in alto a sinistra (il nome della sezione con la piccola freccia) e scegli **Sermoni**.
-2. La pagina Sermoni mostra tutte le tue voci di sermoni, organizzate per playlist. Ogni sermone visualizza l'anteprima, il titolo e la data.
-3. Fai clic su qualsiasi sermone per visualizzare o modificare i suoi dettagli.
+1. In B1 Admin, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Sermoni** e fai clic su **Sermoni**.
+2. La pagina Sermoni mostra tutti i tuoi sermoni, organizzati per playlist. Ogni sermone mostra la sua miniatura, titolo e data.
+3. Fai clic su un qualsiasi sermone per visualizzare o modificare i suoi dettagli.
 
-## Aggiunta di un sermone
+## Aggiungere un Sermone
 
-1. Fai clic sul pulsante **Aggiungi sermone** nell'angolo in alto a destra e seleziona **Aggiungi sermone** dal dropdown.
-2. Seleziona una **Playlist** per assegnare il sermone.
-3. Scegli il tuo **Provider video** -- YouTube, Vimeo, Facebook o URL personalizzato. Consigliamo YouTube in quanto funziona meglio con il sistema B1.
-4. Immetti l'ID video o l'URL e fai clic su **Recupera**. Per YouTube, l'ID video è la stringa di caratteri dopo `v=` nell'URL di YouTube.
-5. Quando fai clic su **Recupera**, i dettagli del sermone vengono importati automaticamente, inclusi la data di pubblicazione, la durata, il titolo, la descrizione e l'anteprima.
-6. Apporta le modifiche desiderate e fai clic su **Salva**.
+1. Fai clic sul pulsante **Aggiungi Sermone** nell'angolo in alto a destra e seleziona **Aggiungi Sermone** dal menu a discesa.
+2. Seleziona una **Playlist** a cui assegnare il sermone.
+3. Scegli il tuo **Fornitore Video** -- YouTube, Vimeo, Facebook o URL Personalizzato. Consigliamo YouTube perché funziona meglio con il sistema B1.
+4. Inserisci l'ID video o l'URL e fai clic su **Recupera**. Per YouTube, l'ID video è la stringa di caratteri dopo `v=` nell'URL di YouTube.
+5. Quando fai clic su **Recupera**, i dettagli del sermone vengono importati automaticamente, inclusa la data di pubblicazione, la durata, il titolo, la descrizione e la miniatura.
+6. Apporta le modifiche che desideri e fai clic su **Salva**.
 
 :::tip
-Puoi anche aggiungere un URL di streaming dal vivo permanente selezionando **Aggiungi URL dal vivo permanente** dal dropdown **Aggiungi sermone**. Questo crea una connessione persistente allo stream dal vivo del canale YouTube usando il tuo ID canale. Vedi [Live streaming](live-streaming) per più dettagli.
+Puoi anche aggiungere un URL di live stream permanente selezionando **Aggiungi URL Live Permanente** dal menu a discesa **Aggiungi Sermone**. Questo crea una connessione persistente al live stream del tuo canale YouTube utilizzando il tuo ID canale. Vedi [Live Streaming](live-streaming) per ulteriori dettagli.
 :::
 
-## Modifica di un sermone
+## Modifica di un Sermone
 
-1. Fai clic su qualsiasi sermone nella tua libreria per aprire i suoi dettagli.
-2. Aggiorna il titolo, l'oratore, la data, la descrizione, l'anteprima o i link ai media come necessario.
+1. Fai clic su un qualsiasi sermone nella tua libreria per aprire i suoi dettagli.
+2. Aggiorna il titolo, il relatore, la data, la descrizione, la miniatura o i link multimediali secondo le tue esigenze.
 3. Fai clic su **Salva** per applicare le tue modifiche.
 
-## Dettagli del sermone
+## Dettagli del Sermone
 
 Ogni voce di sermone può includere:
 
 - **Titolo** -- Il nome del sermone visualizzato ai visitatori
-- **Oratore** -- Chi ha tenuto il sermone
+- **Relatore** -- Chi ha pronunciato il sermone
 - **Data** -- La data di pubblicazione o consegna
-- **Descrizione** -- Un riepilogo del contenuto del sermone
-- **Anteprima** -- Un'immagine di anteprima mostrata nella tua libreria di sermoni
-- **Link video/audio** -- URL al media del sermone su YouTube, Vimeo, Facebook o un host personalizzato
+- **Descrizione** -- Un riassunto del contenuto del sermone
+- **Miniatura** -- Un'immagine di anteprima mostrata nella tua libreria di sermoni
+- **Link Video/Audio** -- URL al contenuto del sermone su YouTube, Vimeo, Facebook o un host personalizzato
+- **URL del File Audio (per il podcast)** -- Un collegamento diretto a un file MP3/M4A per questo sermone. Incolla un URL o fai clic su **Carica Audio** per caricare un file e compilarlo automaticamente. Solo i sermoni con questo campo (o un collegamento diretto a file video) impostato sono inclusi nel tuo feed podcast.
 
-## Programmazione di un sermone per lo streaming dal vivo
+## Il Tuo Feed Podcast
 
-Dopo aver aggiunto un sermone, puoi programmarlo per la trasmissione sulla tua pagina di streaming dal vivo:
-
-1. Vai alla scheda **Orari dello streaming dal vivo**.
-2. Modifica un servizio e sotto **Impostazioni video**, seleziona il tuo sermone dal dropdown.
-3. Il sermone verrà riprodotto all'ora di servizio programmata.
+Una volta che almeno un sermone ha un file audio o video allegato, B1 Admin genera automaticamente un feed RSS podcast per la tua chiesa -- non c'è nulla da attivare. Trovalo nel pannello **Feed Podcast** sotto l'elenco dei sermoni: fai clic sull'icona di copia per copiare l'URL del feed, quindi invia quell'URL ad Apple Podcasts, Spotify o a qualsiasi altra directory podcast.
 
 :::info
-Per importare più sermoni contemporaneamente anziché aggiungerli uno per uno, usa lo strumento [Importazione in massa](bulk-import) per estrarre video direttamente dal tuo account YouTube o Vimeo.
+I sermoni che collegano solo a un lettore incorporato (come un ID video YouTube o Vimeo) non appariranno nel feed podcast -- le app podcast hanno bisogno di un file multimediale diretto e scaricabile. Aggiungi un **URL del File Audio** per includere un sermone.
 :::
 
-## Prossimi passi
+## Pianificazione di un Sermone per il Live Stream
 
-- [Playlist](playlists) -- Organizza sermoni in serie
-- [Live streaming](live-streaming) -- Configura il tuo programma di streaming
-- [Importazione in massa](bulk-import) -- Importa più sermoni contemporaneamente
+Dopo aver aggiunto un sermone, puoi pianificarlo per la trasmissione sulla tua pagina di live stream:
+
+1. Nel menu Jump, scegli **Sermoni > Orari Live Stream**.
+2. Modifica un servizio e sotto **Impostazioni Video**, seleziona il tuo sermone dal menu a discesa.
+3. Il sermone verrà riprodotto all'ora del servizio pianificato.
+
+:::info
+Per importare più sermoni contemporaneamente invece di aggiungerli uno per uno, utilizza lo strumento [Importazione in Blocco](bulk-import) per estrarre i video direttamente dal tuo account YouTube o Vimeo.
+:::
+
+## Passi Successivi
+
+- [Playlist](playlists) -- Organizza i sermoni in serie
+- [Live Streaming](live-streaming) -- Configura la tua pianificazione di streaming
+- [Importazione in Blocco](bulk-import) -- Importa più sermoni contemporaneamente

@@ -6,57 +6,61 @@ title: "Pag-log In"
 
 <div class="article-intro">
 
-Ang pag-log in sa B1.church ay nagbibigay sa iyo ng access sa member portal kung saan mo matitingnan ang iyong timeline, mapamahalaan ang mga grupo, magbigay online, at magamit ang lahat ng tool na itinakda ng iyong simbahan. Sinasaklaw ng artikulong ito kung paano mag-sign in, mag-navigate sa iyong user menu, at mag-log out.
+Ang pag-log in sa B1.church ay nagbibigay sa iyo ng access sa member portal kung saan makikita mo ang mga paparating para sa iyo, mapamamahalaan ang mga grupo, makapagbibigay online, at magagamit ang lahat ng tool na inihanda ng inyong simbahan. Saklaw ng artikulong ito kung paano mag-sign in, gamitin ang iyong user menu, at mag-log out.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Ka Magsimula</h4>
+<h4>Bago Magsimula</h4>
 
-- Kailangan mo ng ChurchApps account. Tingnan ang [Getting Started](../getting-started/) upang lumikha ng isa.
-- Kailangan mo ang B1.church URL ng iyong simbahan (halimbawa, `https://yourchurchname.b1.church`).
+- Kailangan mo ng ChurchApps account. Tingnan ang [Pagsisimula](../getting-started/) para gumawa nito.
+- Kailangan mo ang B1.church URL ng inyong simbahan (halimbawa, `https://yourchurchname.b1.church`).
 
 </div>
 
-## Paano Mag-Log In
+## Paano Mag-log In
 
-1. Pumunta sa B1.church URL ng iyong simbahan (halimbawa, `https://yourchurchname.b1.church`).
-2. I-click ang buton na **Login** sa kanang-itaas na sulok ng header.
-3. Ipasok ang iyong **email address** at **password**, o i-click ang **Continue with Google** o **Continue with Microsoft** kung pinagana ng iyong simbahan ang single sign-on.
+1. Pumunta sa B1.church URL ng inyong simbahan (halimbawa, `https://yourchurchname.b1.church`).
+2. I-click ang button na **Login** sa kanang itaas na sulok ng header.
+3. Ilagay ang iyong **email address** at **password**, o i-click ang **Continue with Google** o **Continue with Microsoft** kung naka-enable ang single sign-on sa inyong simbahan.
 4. I-click ang **Sign In**.
 
-Pagkatapos mag-sign in, ibabalik ka sa pahinang kinaroroonan mo bago mo na-click ang login. Kung direktang nag-navigate ka sa isang page ng member portal habang naka-log out, awtomatiko kang ibabalik sa pahinang iyon pagkatapos mag-sign in.
+Pagkatapos mag-sign in, ibabalik ka sa pahinang kinaroroonan mo bago mo i-click ang login. Kung direkta kang pumunta sa isang pahina ng member portal habang naka-log out, awtomatiko kang ibabalik sa pahinang iyon pagkatapos mag-sign in.
+
+## Pananatiling Naka-Sign In
+
+Mananatili kang naka-sign in sa parehong browser o na-install na app hanggang mag-log out ka, kahit hindi ka bumisita nang matagal -- tumatagal ang iyong session nang hanggang humigit-kumulang 30 araw na walang aktibidad. Kapag nag-sign in ka nang isang beses, mananatili ka ring naka-sign in kapag lumilipat ka sa pagitan ng website ng inyong simbahan at ng member portal (`/mobile`), kaya hindi mo na kailangang mag-log in muli sa bawat isa.
 
 ## Pag-access sa Member Portal
 
-Kapag naka-log in ka na, maaari mong i-access ang member portal sa pamamagitan ng pag-click sa iyong **pangalan** sa kanang-itaas na sulok ng pahina at pagpili ng **Member Portal** mula sa menu. Ang member portal ang kinaroroonan ng lahat ng iyong personal na tool ng simbahan, kabilang ang iyong [timeline](../community/timeline.md), [mga grupo](../groups/), [giving](../giving/), at marami pang iba.
+Kapag naka-log in ka na, maaari mong ma-access ang member portal sa pamamagitan ng pag-click sa iyong **pangalan** sa kanang itaas na sulok ng pahina at pagpili ng **Member Portal** mula sa menu. Nasa member portal ang lahat ng iyong personal na tool sa simbahan, kasama ang iyong [Home dashboard](./navigating.md), [Me page](./me-page.md), [mga grupo](../groups/), [pagbibigay](../giving/), at iba pa.
 
 ## Ang Iyong User Menu
 
-Pagkatapos mag-log in, lalabas ang iyong pangalan bilang isang chip sa kanang-itaas na sulok. I-click ito upang magbukas ng menu na may mga sumusunod na opsyon:
+Pagkatapos mag-log in, lalabas ang iyong pangalan bilang chip sa kanang itaas na sulok. I-click ito para buksan ang menu na may mga sumusunod na opsyon:
 
-- **Member Portal** -- Pumunta sa iyong personal na dashboard ng member portal.
-- **Edit Profile** -- I-update ang mga setting ng iyong account o i-edit ang iyong church profile.
-- **Logout** -- Mag-sign out ng iyong account.
+- **Member Portal** -- Pumunta sa iyong personal na member portal dashboard.
+- **Edit Profile** -- I-update ang settings ng iyong account o i-edit ang iyong profile sa simbahan.
+- **Logout** -- Mag-sign out sa iyong account.
 
 ## Admin Access
 
-Kung ikaw ay isang church administrator na may angkop na permissions, makikita mo rin ang opsyong **Admin Portal** sa iyong user menu. Dadalhin ka ng pag-click dito sa B1 Admin kung saan maaari mong pamahalaan ang mga setting, tao, grupo, at content ng iyong simbahan.
+Kung ikaw ay administrator ng simbahan na may angkop na mga pahintulot, makikita mo rin ang opsyong **Admin Portal** sa iyong user menu. Kapag ni-click ito, dadalhin ka sa B1 Admin kung saan mapamamahalaan mo ang settings, mga tao, mga grupo, at nilalaman ng inyong simbahan.
 
-## Nakalimutan ang Iyong Password
+## Nakalimutan ang Password
 
-Kung hindi mo matandaan ang iyong password:
+Kung hindi mo maalala ang iyong password:
 
-1. I-click ang **Forgot Password** sa login page.
-2. Ipasok ang email address na nakatali sa iyong ChurchApps account at i-submit.
-3. Tingnan ang iyong email para sa mensaheng naglalaman ng isang **6-digit na verification code**. Valid ang code sa loob ng 15 minuto.
-4. Ipasok ang code sa verification screen upang mag-sign in.
-5. Kapag naka-sign in ka na, bisitahin ang iyong profile upang pumili ng bagong password.
+1. I-click ang **Forgot Password** sa pahina ng login.
+2. Ilagay ang email address na naka-link sa iyong ChurchApps account at isumite.
+3. Tingnan ang iyong email para sa mensaheng may **6-digit na verification code**. May bisa ang code sa loob ng 15 minuto.
+4. Ilagay ang code sa verification screen para mag-sign in.
+5. Kapag naka-sign in ka na, pumunta sa iyong profile para pumili ng bagong password.
 
 :::tip
-Kung hindi dumating ang code sa loob ng ilang minuto, tingnan ang iyong spam folder. Pagkatapos ng limang maling pagsubok, nakakandado ang code — humiling ng bago mula sa Forgot Password page kung nangyari iyon.
+Kung hindi dumating ang code sa loob ng ilang minuto, tingnan ang iyong spam folder. Pagkatapos ng limang maling pagtatangka, mala-lock ang code — humiling ng bago mula sa pahina ng Forgot Password kung mangyari ito.
 :::
 
 ## Pag-log Out
 
-Upang mag-log out, i-click ang iyong **pangalan** sa kanang-itaas na sulok at piliin ang **Logout**. Ikaw ay ma-sign out at maibabalik sa pampublikong site.
+Para mag-log out, i-click ang iyong **pangalan** sa kanang itaas na sulok at piliin ang **Logout**. Masa-sign out ka at ibabalik sa pampublikong site.

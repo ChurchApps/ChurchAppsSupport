@@ -1,54 +1,54 @@
 ---
-title: "B1 Admin oversikt"
+title: "Oversikt over B1 Admin"
 ---
 
-# B1 Admin oversikt
+# Oversikt over B1 Admin
 
 <div class="article-intro">
 
-B1 Admin er kirkens ledelsesminipanel. Det gir verktøy til å administrere ethvert aspekt av kirkens operasjoner -- fra medlemskataloger og donasjoner til nettsteddbygging og direkteoverføring -- alt fra ett sted.
+B1 Admin er menighetens administrasjonspanel. Det gir deg verktøy for å styre alle sider av menighetens drift -- fra medlemsregister og gaver til nettstedbygging og direktesending -- alt samlet på ett sted.
 
 </div>
 
 ## Komme i gang
 
-1. Åpne nettleseren din og gå til [admin.b1.church](https://admin.b1.church)
-2. Logg inn med brukernavnet og passordet ditt
-3. Du lander på **Instrumentbordet**, hjemmesiden din. Den viser denne ukes serviceorden, hvem som har sjekket inn og som tjener i sanntid, alle oppgaver som trenger din oppmerksomhet (som ventende godkjenninger eller sammenslutningsforespørsler), gruppene dine og åpne oppgaver
+1. Åpne nettleseren og gå til [admin.b1.church](https://admin.b1.church)
+2. Logg inn med brukernavn og passord
+3. Du havner på **Dashboard**, startsiden din. Her ser du denne ukens gudstjenesteopplegg, hvem som er sjekket inn og tjenestegjør i sanntid, oppgaver som trenger oppmerksomhet (som ventende godkjenninger eller forespørsler om å bli med i grupper), gruppene dine og de åpne oppgavene dine
 
 :::tip
-Ny på B1 Admin? Start med [Introduksjon](./introduction) for en videogjennomgang, og besøk deretter [Innstillinger](./settings/) for å konfigurere kircheinformasjonen din og invitere teamet ditt.
+Ny i B1 Admin? Start med [Introduksjon](./introduction) for en videogjennomgang, og gå deretter til [Innstillinger](./settings/) for å konfigurere menighetsinformasjonen og invitere teamet ditt.
 :::
 
-## Instrumentbordet ditt
+## Ditt Dashboard
 
-Instrumentbordet er B1 Admin-hjemmesiden din (`/`). Det er bygget rundt kirkens ukentlige service:
+Dashboard er startsiden din i B1 Admin (`/`). Det er bygget rundt menighetens ukentlige gudstjeneste:
 
-- **Denne ukens service** -- gjeldende eller kommende plans navn og serviceorden, med en lenke inn i hele planen
-- **Livestatus** -- når folk begynner å sjekke inn på søndag, viser siden hvor mange som er i rommet, hvem som tjener denne timen, førsteganggsgjester og en rom-for-rom-sammenbrudding med kapasitetslinjer
-- **Trenger oppmerksomhet** -- ventende godkjenninger og gruppesammenslutningsforespørsler som krever handling
-- **Gruppene dine** og **Åpne oppgaver** -- gruppene du tilhører og oppgaver tildelt deg eller gruppene dine
+- **Denne ukens gudstjeneste** -- navnet og programmet for den gjeldende eller neste planen, med en lenke til hele planen
+- **Direkte status** -- når folk begynner å sjekke inn på søndag, viser siden hvor mange som er i lokalet, hvem som tjenestegjør i denne timen, førstegangsbesøkende og en oversikt rom for rom med kapasitetsfelt
+- **Trenger oppmerksomhet** -- ventende godkjenninger og forespørsler om å bli med i grupper som krever handling
+- **Dine grupper** og **Åpne oppgaver** -- gruppene du tilhører og oppgaver som er tildelt deg eller gruppene dine
 
 :::tip
-Prekener, Kalendere, Mobil og Innstillinger er fortsatt ett klikk unna i toppnavigasjonen. For alt annet, trykk **Ctrl+K** (eller **Cmd+K**) for å åpne [kommandopaletten](./introduction#finding-anything-quickly-with-the-command-palette).
+Alle deler, inkludert Prekener, Kalendere, Mobil og Innstillinger, finner du i [Jump-menyen](./introduction.md#getting-around-with-the-jump-menu) øverst til venstre i B1 Admin. Klikk på den eller trykk **Ctrl+K** (eller **Cmd+K**), og bla deg fram eller begynn å skrive.
 :::
 
-## Nøkkelfunksjoner
+## Viktige funksjoner
 
-- **[Personer](./people/)** - Administrer kirchens katalog, legg til medlemmer, bulkredigeringer, spor husstander
-- **[Grupper](./groups/)** - Opprett og organiser kirkgrupper med sammenslutningsforespørsler, medlemsstyring og gruppee-post
-- **[Frammøte](./attendance/)** - Sett opp campus, servicetider, spor navngitt frammøte med utskrivbare klasseframmøtelister, og logg enkle frammøtetellinger med trendrapporer
-- **[Donasjoner](./donations/)** - Registrer givende i flere valutaer, administrer fond, generer erklæringer
-- **[Tjenestegørende](./serving/)** - Koordiner frivillige, opprett serviceplaner, administrer oppgaver, og flytt mennesker gjennom trinn-for-trinn arbeitsflyter
-- **[Skjemaer](./forms/)** - Bygg egendefinerte skjemaer for registrasjoner og datasamling
-- **[Rapporter](./reports/)** - Se fødselsdags-, frammøte- og donasjonrapporter
-- **[Nettsted](./website/)** - Bygg og administrer kirchens nettsted med egendefinert navigasjonsstiler, eller slå av offentlig nettsted og behold bare medlemmerportal
-- **[Prekener](./sermons/)** - Administrer prekenerbiblioteket, direkteoverføring og en automatisk podkastfeed
-- **[Kalendere](./calendars/)** - Opprett kuraterte kalendere, administrer rom/ressursreserveringer og se tilgjengelighet
-- **[Innstillinger](./settings/)** - Konfigurer kircheinformasjon, roller, tillatelser og egendefinerte personfelter
+- **[Personer](./people/)** - Administrer menighetsregisteret, legg til medlemmer, rediger data i bulk og hold oversikt over husstander
+- **[Grupper](./groups/)** - Opprett og organiser menighetens grupper med forespørsler om å bli med, medlemsadministrasjon, gruppe-e-post og personlige gruppetekstmeldinger
+- **[Oppmøte](./attendance/)** - Sett opp avdelinger og samlingstider, følg navngitt oppmøte med utskrivbare klasselister, se hvilke klasser som fortsatt mangler registrert oppmøte, og før enkle opptellinger med utviklingsrapporter
+- **[Gaver](./donations/)** - Registrer gaver i flere valutaer, administrer fond, skriv ut gavebunter med delsummer per fond og lag giveroppgaver
+- **[Tjeneste](./serving/)** - Koordiner frivillige, lag gudstjenesteplaner, administrer oppgaver og led folk gjennom trinnvise arbeidsflyter som kan sende e-post og tekstmeldinger automatisk
+- **[Skjemaer](./forms/)** - Bygg egendefinerte skjemaer for påmeldinger og datainnsamling
+- **[Rapporter](./reports/)** - Se rapporter om bursdager, oppmøte og gaver
+- **[Nettsted](./website/)** - Bygg og administrer menighetens nettsted med egendefinerte navigasjonsstiler, eller slå av det offentlige nettstedet og behold bare medlemsportalen
+- **[Prekener](./sermons/)** - Administrer prekenbiblioteket, direktesendinger og en automatisk podkastkanal
+- **[Kalendere](./calendars/)** - Lag kuraterte kalendere, administrer booking av rom og ressurser, og se tilgjengelighet
+- **[Innstillinger](./settings/)** - Konfigurer menighetsinformasjon, region og datoformat, tekstmeldinger, roller, tillatelser og egendefinerte personfelt
 
 :::info
-Klikk på spørsmålstegnet i øverste høyre hjørne av en hvilken som helst side for rask tilgang til hjelp og dokumentasjon.
+Klikk på spørsmålstegnet øverst til høyre på en hvilken som helst side for rask tilgang til hjelp og dokumentasjon.
 :::
 
-For støtte, e-post [support@churchapps.org](mailto:support@churchapps.org).
+For brukerstøtte kan du sende e-post til [support@churchapps.org](mailto:support@churchapps.org).

@@ -1,129 +1,129 @@
 ---
-title: "Sjekk inn"
+title: "Innsjekking"
 ---
 
-# Sjekk inn
+# Innsjekking
 
 <div class="article-intro">
 
-B1 Admin støtter selvsjekk inn ved gudstjenester gjennom appen **B1 Checkin**. Medlemmer kan sjekke inn seg selv og familien sin ved kioskene eller dedikerte enheter når de ankommer, noe som gjør prosessen rask og reduserer belastningen på frivillige. Hver innsjekking blir automatisk registrert som oppmøte.
+B1 Admin støtter selvinnsjekking på samlinger gjennom følgeappen **B1 Checkin**. Medlemmer kan sjekke inn seg selv og familien sin på kiosker eller dedikerte enheter når de kommer, noe som gjør prosessen rask og gir frivillige mindre å gjøre. Hver innsjekking registreres automatisk som oppmøte.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Dine campuser, gudstjenesteklokkeslett og grupper må være konfigurert i [Innsjekking Setup](setup.md).
-- Du trenger [mennesker i databasen din](../people/adding-people.md) med [hushold](../people/adding-people.md#managing-households) opprettet slik at familier kan sjekke inn sammen.
-- Du trenger et nettbrett og eventuelt en Brother-etikettskriver (se [maskinvareanbefalinger](#recommended-hardware) nedenfor).
+- Menighetens campuser, samlingstidspunkter og grupper må være satt opp i [Oppsett av oppmøte](setup.md).
+- Du trenger [personer i databasen din](../people/adding-people.md) med [husstander](../people/adding-people.md#managing-households) satt opp, slik at familier kan sjekke inn sammen.
+- Du trenger et nettbrett og eventuelt en Brother-etikettskriver (se [anbefalt utstyr](#recommended-hardware) nedenfor).
 
 </div>
 
-## Hvordan det fungerer
+## Slik fungerer det
 
-B1 Checkin-appen kobles til B1 Admin-oppsettet for oppmøte. Når et medlem sjekker inn, blir oppmøtet deres automatisk registrert mot riktig campus, gudstjenesteklokkeslett og gruppe. Du trenger ikke å registrere oppmøte manuelt for noen som bruker innsjekkingssystemet.
+B1 Checkin-appen er koblet til oppsettet for oppmøte i B1 Admin. Når et medlem sjekker inn, registreres oppmøtet automatisk på riktig campus, samlingstidspunkt og gruppe. Du trenger ikke å registrere oppmøte manuelt for dem som bruker innsjekkingssystemet.
 
 ## Sette opp innsjekking
 
-1. **Konfigurer oppsettet for oppmøte først.** I B1 Admin, gå til **Oppmøte > Setup** og pass på at campuser, gudstjenesteklokkeslett og grupper er på plass. Innsjekkingsappen er avhengig av denne konfigurasjonen. Se [Innsjekking Setup](setup.md) for detaljer.
-2. **Installer B1 Checkin-appen** på enhetene du planlegger å bruke. Appen er tilgjengelig på følgende plattformer:
+1. **Sett opp strukturen for oppmøte først.** Gå til **Oppmøte > Oppsett** i B1 Admin og kontroller at campuser, samlingstidspunkter og grupper er på plass. Innsjekkingsappen bygger på dette oppsettet. Se [Oppsett av oppmøte](setup.md) for detaljer.
+2. **Installer B1 Checkin-appen** på enhetene du planlegger å bruke. Appen er tilgjengelig på disse plattformene:
    - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Android/Samsung-nettbrett:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
    - **Amazon Fire-nettbrett:** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
-3. **Logg inn i B1 Checkin-appen** med kirkeens kontolegitimering.
-4. **Velg campus og gudstjenesteklokkeslett** for gjeldende forsamling.
-5. Medlemmer kan nå søke etter sitt navn på enheten og sjekke inn.
+3. **Logg inn i B1 Checkin-appen** med menighetens kontoopplysninger.
+4. **Velg campus og samlingstidspunkt** for den aktuelle samlingen.
+5. Medlemmer kan nå søke etter navnet sitt på enheten og sjekke inn.
 
 :::tip
-Plasser innsjekkingsenheter på synlige, lett tilgjengelige steder som lobbyer eller velkommen-skranker. En kort kunngjøring under gudstjenestene hjelper medlemmer til å vite at alternativet er tilgjengelig.
+Plasser innsjekkingsenhetene på synlige steder som er lette å nå, for eksempel ved inngangen eller i vestibylen. En kort kunngjøring under gudstjenesten gjør at medlemmene vet at muligheten finnes.
 :::
 
 :::tip
-Hvis kirken din har flere campuser, må du gjenta oppsettet for hver campus i [Innsjekking Setup](setup.md). Hver innsjekking-enhet kan konfigureres for en annen campus.
+Hvis menigheten har flere campuser, må du gjenta oppsettet for hver campus i [Oppsett av oppmøte](setup.md). Hver innsjekkingsenhet kan settes opp for en egen campus.
 :::
 
-## Anbefalt maskinvare
+## Anbefalt utstyr
 
-**Nettbrett** — noen av disse fungerer godt med appen:
+**Nettbrett** – alle disse fungerer bra med appen:
 
 - **Kompakt:** Samsung Galaxy Tab A7 Lite 8,7"
 - **Stor skjerm:** Samsung Galaxy Tab A8 10,5"
-- **Budsjett:** Amazon Fire HD 10
+- **Rimelig:** Amazon Fire HD 10
 
-**Skrivere** — innsjekking fungerer med Brother-etikettskrivere for utskrift av navneskilt:
+**Skrivere** – innsjekkingen fungerer med Brother-etikettskrivere for utskrift av navnelapper:
 
-- **Beste:** Brother QL-1110NWB (støtter flere nettbrett via Bluetooth og WiFi)
+- **Best:** Brother QL-1110NWB (støtter flere nettbrett via Bluetooth og WiFi)
 - **God:** Brother QL-810W (støtter flere nettbrett via WiFi)
-- **Budsjett:** Brother QL-1100 (kun WiFi)
+- **Rimelig:** Brother QL-1100 (kun WiFi)
 
 **Etiketter:** Brother DK-1201 (1-1/7" x 3-1/2")
 
 :::warning
-Kun Brother-etikettskrivere er kompatible med B1 Checkin-appen. Andre merkeskrivere vil ikke fungere for utskrift av navneskilt.
+Bare Brother-etikettskrivere er kompatible med B1 Checkin-appen. Skrivere fra andre merker fungerer ikke for utskrift av navnelapper.
 :::
 
 :::info
-Følg skriverens oppsettsanvisninger for å koble den til samme WiFi-nettverk som nettbrettet ditt. Du finner Brother-printerdrivere og oppsettveiledninger på [Brother-supportnettstedet](https://support.brother.com).
+Følg skriverens oppsettveiledning for å koble den til det samme WiFi-nettverket som nettbrettet. Du finner Brother-skriverdrivere og oppsettveiledninger på [Brothers støtteside](https://support.brother.com).
 :::
 
-## Tilpasse kioskens utseende
+## Tilpasse utseendet på kiosken
 
-Du kan tilpasse utseendet og følelsen av B1 Checkin-appen for å samsvare med kirkens merkevaresignaler. I B1 Admin, gå til **Oppmøte > Kiosk Theme** for å konfigurere:
+Du kan tilpasse utseendet til B1 Checkin-appen slik at det passer menighetens profil. Gå til **Mobil > B1 CheckIn** i B1 Admin og bruk kortet **Kiosktema** til å konfigurere:
 
 ### Farger
 
-Tilpass åtte fargeinnstillinger for å samsvare med kirkens merkevaresignaler:
+Tilpass åtte fargeinnstillinger slik at de passer menighetens profil:
 
-- **Primær** og **Primær kontrast** -- Hovedmerkefargen og dens tekstfarge.
-- **Sekundær** og **Sekundær kontrast** -- Aksejentfargen og dens tekstfarge.
-- **Hodingsbakgrunn** og **Underhodingsbakgrunn** -- Farger for kioskhodeområdene.
-- **Knappeikke bakgrunn** og **Knappetekst** -- Farger for interaktive knapper.
+- **Primær** og **Primær kontrast** -- Hovedfargen og tekstfargen som brukes på den.
+- **Sekundær** og **Sekundær kontrast** -- Aksentfargen og tekstfargen som brukes på den.
+- **Bakgrunn for topptekst** og **Bakgrunn for undertopptekst** -- Farger for toppområdene på kiosken.
+- **Knappebakgrunn** og **Knappetekst** -- Farger for interaktive knapper.
 
 ### Bakgrunnsbilde
 
-Last opp et valgfritt bakgrunnsbilde for kioskens velkomst- og oppslåskjermene. Anbefalt størrelse er 1920x1080 piksler.
+Last opp et valgfritt bakgrunnsbilde til velkomstskjermen og søkeskjermen på kiosken. Anbefalt størrelse er 1920x1080 piksler.
 
-### Tomgangs-skjerm / Skjermsparer
+### Hvileskjerm / skjermsparer
 
-Konfigurer en skjermsparer som aktiveres etter en periode med inaktivitet:
+Sett opp en skjermsparer som aktiveres etter en periode uten aktivitet:
 
-1. Slå tomgangsskjermen **på** eller **av**.
-2. Sett **tidsavbrudd** (hvor mange sekunder av inaktivitet før skjermsparen starter, minimum 10 sekunder).
-3. Legg til ett eller flere **lysbilder** -- hvert lysbilde har et bilde og en visningsvarighet (minimum 3 sekunder).
+1. Slå hvileskjermen **på** eller **av**.
+2. Angi **tidsavbrudd** (hvor mange sekunder uten aktivitet før skjermspareren starter, minst 10 sekunder).
+3. Legg til ett eller flere **lysbilder** -- hvert lysbilde har et bilde og en visningstid (minst 3 sekunder).
 
 :::tip
-Bruk tomgangsskjermen til å vise kunngjøringer, kommende arrangementer eller velkomsthilsener når kiosken ikke aktivt brukes.
+Bruk hvileskjermen til å vise kunngjøringer, kommende arrangementer eller velkomstmeldinger når kiosken ikke er i bruk.
 :::
 
-## Gjestregistrering via QR-kode
+## Gjesteregistrering via QR-kode
 
-Innsjekkingskiosken kan vise en QR-kode som besøkende skanner for å registrere seg selv og familien sin på sin egen telefon. Dette fremskynder innsjekkingsprosessen for førstegangsbeskjørere.
+Innsjekkingskiosken kan vise en QR-kode som besøkende skanner for å registrere seg selv og familien sin på sin egen telefon. Dette gjør innsjekkingen raskere for førstegangsbesøkende.
 
-Når en gjest skanner QR-koden, blir de tatt til en [gjestregistreringsside](../../b1-church/checkin/guest-registration) der de angir navnet sitt, e-postadressen og familiemedlemmer. En frivillig kan deretter slå dem opp på kiosken og sjekke dem inn.
+Når en gjest skanner QR-koden, kommer vedkommende til en [side for gjesteregistrering](../../b1-church/checkin/guest-registration) der navn, e-post og familiemedlemmer fylles inn. En frivillig kan deretter slå opp gjesten på kiosken og sjekke dem inn.
 
-### Aktivering av QR-gjestregistrering
+### Aktivere QR-gjesteregistrering
 
-For å slå på QR-kodeskjermen:
+Slik slår du på visningen av QR-koden:
 
-1. I B1 Admin, åpne **seksjonsmenyene** i det øvre venstre hjørnet (seksjonsnavnet med den lille pilen) og velg **Mobil**.
-2. Velg **B1 CheckIn**-fanen.
-3. Slå **QR Guest Registration** på og klikk **Lagre**.
+1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre) i B1 Admin og utvid **Mobil**.
+2. Klikk på **B1 CheckIn**.
+3. Slå på **QR-gjesteregistrering** og klikk på **Lagre**.
 
 :::note
-Denne innstillingen er under **Mobil**, ikke under Oppmøte > Kiosk Theme.
+Denne innstillingen finner du under **Mobil > B1 CheckIn** (samme side som kortet **Kiosktema**), ikke under Oppmøte.
 :::
 
-### Deling av registreringslenken
+### Dele registreringslenken
 
-Når QR Guest Registration er aktivert, vises en **Del registrerings-QR-kode**-seksjon under vekslerknappen. Dette gir deg to måter å få gjester til registreringskjemaet utover kioskens QR-kode:
+Når QR-gjesteregistrering er aktivert, vises en seksjon med **Del QR-kode for registrering** under bryteren. Den gir deg to måter å få gjester til registreringsskjemaet på, i tillegg til QR-koden på kiosken:
 
-- **Kopier lenke** — kopierer registrerings-URL-en slik at du kan lime den inn på kirkens nettsted, i e-poster eller hvor som helst online.
-- **Last ned PNG** — laster ned QR-koden som et bilde du kan skrive ut på løpesedler, bulletin eller skilt.
+- **Kopier lenke** — kopierer registreringsadressen slik at du kan lime den inn på menighetens nettsted, i e-poster eller andre steder på nettet.
+- **Last ned PNG** — laster ned QR-koden som et bilde du kan skrive ut på flygeblader, programmer eller skilt.
 
 :::tip
-Legg til registreringslenken på kirkens nettstedsside "Plan Your Visit" eller "I'm New" slik at gjester kan registrere seg før de ankommer.
+Legg registreringslenken på menighetens nettside for «Planlegg besøket» eller «Jeg er ny», slik at gjester kan registrere seg før de i det hele tatt kommer.
 :::
 
-## Hva som blir registrert
+## Hva som registreres
 
-Hver innsjekking oppretter en oppmøteregistrering i B1 Admin. Du kan vise disse registreringene på fanene [Oppmøte](tracking-attendance.md) og [Grupper](../groups/group-members.md) på samme måte som manuelt innført oppmøte. Det er ingen forskjell i hvordan dataene vises -- begge metodene føres inn i samme rapporter.
+Hver innsjekking oppretter en oppmøteregistrering i B1 Admin. Du kan se disse registreringene i fanene [Oppmøte](tracking-attendance.md) og [Grupper](../groups/group-members.md), akkurat som manuelt registrert oppmøte. Dataene vises på samme måte uansett – begge metodene mater de samme rapportene.

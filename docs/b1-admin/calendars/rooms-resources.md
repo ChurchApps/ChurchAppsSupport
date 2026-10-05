@@ -20,7 +20,7 @@ Rooms and Resources let you track your church's bookable spaces and equipment. W
 
 ## Opening Rooms & Resources
 
-In B1 Admin, go to **Calendars** and select **Rooms & Resources**. The page has four tabs: **Rooms**, **Resources**, **Blockouts**, and **Templates**.
+In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Calendars**, and click **Rooms & Resources**. The page has four tabs: **Rooms**, **Resources**, **Blockouts**, and **Templates**.
 
 ## Rooms
 

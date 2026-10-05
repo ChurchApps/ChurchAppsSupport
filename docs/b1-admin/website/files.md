@@ -21,7 +21,7 @@ The Files page is the central repository for all media and documents used on you
 
 ## Uploading Files
 
-1. Navigate to the **Website** section in B1 Admin and click the **Files** tab.
+1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Website**, and click **Files**.
 2. Drag and drop files directly onto the upload area, or click the upload button to browse your computer.
 3. Your files will upload and appear in the file library immediately.
 

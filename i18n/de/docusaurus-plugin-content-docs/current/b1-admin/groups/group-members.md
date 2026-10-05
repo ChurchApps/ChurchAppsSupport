@@ -1,128 +1,143 @@
 ---
-title: Gruppenmitglieder
+title: "Gruppenmitglieder"
 ---
 
-# Group Members
+# Gruppenmitglieder
 
 <div class="article-intro">
 
-Once you have created a group, the next step is adding members. From a group's detail page you can search for people, add them to the group, assign leaders, send messages, and export the member list. Managing group membership is essential for coordinating small groups, committees, and classes.
+Nachdem Sie eine Gruppe erstellt haben, besteht der nächste Schritt darin, Mitglieder hinzuzufügen. Von der Detailseite einer Gruppe aus können Sie Personen suchen, sie zur Gruppe hinzufügen, Leiter zuweisen, Nachrichten senden und die Mitgliederliste exportieren. Die Verwaltung der Gruppenmitgliedschaft ist essentiell für die Koordination von Kleingruppen, Komitees und Klassen.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- You need at least one group set up in B1 Admin. See [Creating Groups](creating-groups.md) if you haven't created one yet.
-- The people you want to add must already exist in your [People](../people/adding-people.md) directory.
+- Sie benötigen mindestens eine in B1 Admin eingerichtete Gruppe. Siehe [Creating Groups](creating-groups.md), falls Sie noch keine erstellt haben.
+- Die Personen, die Sie hinzufügen möchten, sollten bereits in Ihrem [People](../people/adding-people.md)-Verzeichnis sein. Wenn jemand nicht vorhanden ist, können Sie ihn von der Mitgliedersuche aus erstellen (siehe unten).
 
 </div>
 
-## Adding Members to a Group
+## Mitglieder zu einer Gruppe hinzufügen
 
-1. Navigate to the **Groups** page and click on the group you want to manage.
-2. Click the **Members** tab.
-3. In the search box, type the name of the person you want to add.
-4. Click **Add** next to the person's name in the search results.
-5. The person now appears in the group member list.
-
-:::tip
-Leave the search box blank and click **Search** to browse through your entire directory. This is helpful if you are not sure of the exact spelling of someone's name.
-:::
-
-## Designating Group Leaders
-
-Group leaders have special privileges -- they can edit the [group calendar](group-calendar.md), manage events, and help coordinate the group.
-
-1. In the group member list, find the person you want to make a leader.
-2. Click the **green key icon** next to their name.
-3. The person is now designated as a group leader.
-
-To remove leader status, click the green key icon again.
-
-:::info
-Any group member can view the group calendar and events, but only leaders can add or edit calendar events.
-:::
-
-## Sending Messages to Group Members
-
-You can communicate with all members of a group directly from B1 Admin:
-
-1. From the group detail page, look for the messaging area.
-2. Type your message in the text box.
-3. Click **Send**.
-
-Your message will be delivered to all members of the group.
-
-## Emailing Group Members
-
-You can send formatted emails to all members of a group:
-
-1. From the group detail page, click the **email icon**.
-2. The Send Email dialog opens, showing how many members will receive the email and how many have no email address on file.
-3. Optionally select an **email template** from the dropdown, or compose a message from scratch. Click **Manage Templates** to create or edit templates.
-4. Enter a **subject line**. You can insert merge fields by clicking the field chips: `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`.
-5. Compose the **email body** using the HTML editor. The same merge fields are available here.
-6. Click **Send**.
-7. A summary shows how many emails were sent successfully and how many members were skipped (no email on file).
+1. Wählen Sie im [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) **People > Groups** (Personen > Gruppen) und klicken Sie auf die Gruppe, die Sie verwalten möchten.
+2. Klicken Sie auf die Registerkarte **Members** (Mitglieder).
+3. Geben Sie in das Suchfeld den Namen der Person ein, die Sie hinzufügen möchten.
+4. Klicken Sie auf **Add** (Hinzufügen) neben dem Namen der Person in den Suchergebnissen.
+5. Die Person wird jetzt in der Gruppenmitgliederliste angezeigt.
 
 :::tip
-Create reusable email templates for recurring communications like weekly updates, event announcements, or prayer requests. Templates save time and ensure consistent messaging.
+Lassen Sie das Suchfeld leer und klicken Sie auf **Search** (Suchen), um durch Ihr gesamtes Verzeichnis zu blättern. Dies ist hilfreich, wenn Sie sich nicht sicher über die genaue Schreibweise eines Namens sind.
 :::
 
-### Turning On Group Email for Your Church
+### Hinzufügen von jemandem, der noch nicht in B1 ist
 
-All churches on B1 send email from the same address, so they share one sending reputation. To keep everyone's email out of spam folders, the ChurchApps team reviews each church once before it can send group email.
+Wenn Ihre Suche niemanden findet, zeigt die Suche **No records found** (Keine Datensätze gefunden) mit einem Link **Add New Person** (Neue Person hinzufügen). Klicken Sie darauf, geben Sie den Vor- und Nachnamen der Person und (optional) ihre E-Mail ein, und klicken Sie auf **Add** (Hinzufügen). Die neue Person wird in Ihrem Personenverzeichnis erstellt und in einem Schritt zur Gruppe hinzugefügt – Sie müssen nicht danach suchen.
 
-If your church has not been reviewed yet, the Send Email dialog shows **Group email needs a quick review** instead of the message editor:
+## Designieren von Gruppenleitern
 
-1. Click **Request review**. The ChurchApps support team is notified.
-2. The dialog changes to **Review requested**. You can close it.
-3. Group email is usually turned on within one business day. Open the Send Email dialog again after that to send your message.
+Gruppenleiter haben spezielle Privilegien – sie können den [Gruppenkalender](group-calendar.md) bearbeiten, Veranstaltungen verwalten und die Gruppe koordinieren.
 
-Until your church is approved, B1 also does not send [form follow-up emails](../forms/creating-forms.md#sending-a-follow-up-email) or the **Send email** step in [workflows](../serving/workflows.md).
+1. Suchen Sie in der Gruppenmitgliederliste die Person, die Sie zum Leiter machen möchten.
+2. Klicken Sie auf das **grüne Schlüsselsymbol** neben ihrem Namen.
+3. Die Person ist jetzt als Gruppenleiter ausgewiesen.
 
-:::info Sending limits
-After approval, a church can send up to 150 church-written emails a day. The limit grows as your church builds a clean sending history, up to 2,000 a day. If recent messages bounced or were marked as spam, group email pauses and the dialog asks you to contact support. If a send would go over your daily limit, B1 does not send it and shows an error.
-:::
-
-## Exporting Group Data
-
-To download the group member list as a file:
-
-1. From the group detail page, click the **download icon**.
-2. A CSV file containing the group's member information will download to your computer.
-
-To print a sign-in sheet for a class instead, use **Print Roll Sheet** -- see [Printing a Roll Sheet](../attendance/recording-attendance.md#printing-a-roll-sheet).
-
-A CSV export is useful for importing data into other tools, or keeping offline records. For more export options, see [Exporting Data](../people/exporting-data.md).
-
-## Sending Push Notifications to Group Members
-
-You can send a push notification directly to all group members who have the B1.church app installed on their device with push notifications enabled.
-
-1. From the group detail page, click the **bell icon** in the header toolbar (next to the email and text icons -- the text icon appears once a [texting provider](../settings/church-settings.md#texting) is connected).
-2. A dialog opens showing how many of your group's members have push enabled.
-3. Fill in the notification details:
-   - **Title** *(required)* -- A short summary, up to 80 characters.
-   - **Message** *(required)* -- The notification body, up to 240 characters.
-   - **Open link or flyer URL** *(optional)* -- A relative app path (for example, `/mobile/groups`) or a full `https://` URL that the notification opens when tapped.
-   - **Image URL** *(optional)* -- An `https://` URL to an image that appears alongside the notification on supported devices.
-4. A live preview shows how the notification will appear on the device.
-5. Click **Send Notification**.
+Um den Leiterstatus zu entfernen, klicken Sie erneut auf das grüne Schlüsselsymbol.
 
 :::info
-Push notifications are delivered only to group members who have the B1.church PWA installed and have not disabled push notifications. Members without a registered push device or with push turned off are counted as skipped, and the send summary shows how many were reached versus skipped.
+Jedes Gruppenmitglied kann den Gruppenkalender und Veranstaltungen anzeigen, aber nur Leiter können Kalenderereignisse hinzufügen oder bearbeiten.
+:::
+
+## Senden von Nachrichten an Gruppenmitglieder
+
+Sie können direkt von B1 Admin aus mit allen Mitgliedern einer Gruppe kommunizieren:
+
+1. Suchen Sie von der Gruppenseite nach dem Nachrichtenbereich.
+2. Geben Sie Ihre Nachricht in das Textfeld ein.
+3. Klicken Sie auf **Send** (Senden).
+
+Ihre Nachricht wird an alle Mitglieder der Gruppe zugestellt.
+
+## Versenden von E-Mails an Gruppenmitglieder
+
+Sie können formatierte E-Mails an alle Mitglieder einer Gruppe versenden:
+
+1. Klicken Sie von der Gruppenseite aus auf das **E-Mail-Symbol**.
+2. Das Dialog-Fenster "Send Email" (E-Mail senden) wird geöffnet und zeigt, wie viele Mitglieder die E-Mail erhalten und wie viele keine E-Mail-Adresse in der Datei haben.
+3. Wählen Sie optional eine **E-Mail-Vorlage** aus dem Dropdown aus, oder verfassen Sie eine Nachricht von Grund auf. Klicken Sie auf **Manage Templates** (Vorlagen verwalten), um Vorlagen zu erstellen oder zu bearbeiten.
+4. Geben Sie eine **Betreffzeile** ein. Sie können Zusammenführungsfelder einfügen, indem Sie auf die Feldchips klicken: `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`.
+5. Verfassen Sie den **E-Mail-Text** mit dem HTML-Editor. Die gleichen Zusammenführungsfelder sind hier verfügbar.
+6. Klicken Sie auf **Send** (Senden).
+7. Eine Zusammenfassung zeigt, wie viele E-Mails erfolgreich versendet wurden und wie viele Mitglieder übersprungen wurden (keine E-Mail in der Datei).
+
+:::tip
+Erstellen Sie wiederverwendbare E-Mail-Vorlagen für wiederkehrende Kommunikation wie wöchentliche Updates, Veranstaltungsankündigungen oder Gebetsanfragen. Vorlagen sparen Zeit und stellen eine konsistente Nachrichtengestaltung sicher.
+:::
+
+### Aktivieren von Gruppen-E-Mail für Ihre Kirche
+
+Alle Kirchen bei B1 senden E-Mail von derselben Adresse, daher teilen sie einen Sendeinputruf. Um die E-Mails aller aus Spam-Ordnern zu halten, überprüft das ChurchApps-Team jede Kirche einmal, bevor sie Gruppen-E-Mail versenden kann.
+
+Wenn Ihre Kirche noch nicht überprüft wurde, zeigt das Dialog-Fenster "Send Email" (E-Mail senden) statt des Nachrichtmeditors **Group email needs a quick review** (Gruppen-E-Mail benötigt eine schnelle Überprüfung):
+
+1. Klicken Sie auf **Request review** (Überprüfung anfordern). Das ChurchApps-Support-Team wird benachrichtigt.
+2. Das Dialog-Fenster ändert sich zu **Review requested** (Überprüfung angefordert). Sie können es schließen.
+3. Gruppen-E-Mail wird normalerweise innerhalb eines Geschäftstages aktiviert. Öffnen Sie das Dialog-Fenster "Send Email" danach erneut, um Ihre Nachricht zu versenden.
+
+Bis Ihre Kirche genehmigt ist, sendet B1 auch keine [Formular-Follow-up-E-Mails](../forms/creating-forms.md#sending-a-follow-up-email) oder den Schritt **Send email** (E-Mail senden) in [Workflows](../serving/workflows.md).
+
+:::info Sendegrenzen
+Nach der Genehmigung kann eine Kirche bis zu 150 von der Kirche verfasste E-Mails pro Tag versenden. Das Limit wächst, wenn Ihre Kirche eine saubere Versendungshistorie aufbaut, bis zu 2.000 pro Tag. Wenn aktuelle Nachrichten zurückgesprungen oder als Spam markiert wurden, pausiert Gruppen-E-Mail und das Dialog-Fenster fordert Sie auf, Support zu kontaktieren. Wenn ein Versand Ihr tägliches Limit überschreitet, sendet B1 es nicht und zeigt einen Fehler.
+:::
+
+## Textnachrichten an Gruppenmitglieder
+
+Sobald Ihre Kirche einen [Texting-Provider](../settings/church-settings.md#texting) verbunden hat, wird ein Textsymbol (**Text this group** (Diese Gruppe texten)) in der Kopfzeile der Gruppe angezeigt.
+
+1. Klicken Sie von der Gruppenseite aus auf das **Textsymbol**.
+2. Das Dialog-Fenster zeigt, wie viele Mitglieder die Textnachricht erhalten. Mitglieder ohne Mobiltelefonnummer in der Datei oder die sich abgemeldet haben, werden übersprungen.
+3. Geben Sie Ihre Nachricht ein. Um sie zu personalisieren, klicken Sie auf einen Platzhalter-Chip unter dem Nachrichtenfeld – **First Name** (Vorname), **Last Name** (Nachname), **Display Name** (Anzeigename) oder **Church Name** (Kirchenname) – um ihn an Ihrer Cursorposition einzufügen. Jeder Platzhalter wird mit den Einzelheiten des Empfängers ausgefüllt, wenn die Textnachricht versendet wird.
+4. Klicken Sie auf **Send** (Senden).
+
+Siehe [Personalizing Texts with Merge Fields](../settings/church-settings.md#personalizing-texts-with-merge-fields) für weitere Details.
+
+## Exportieren von Gruppendaten
+
+So laden Sie die Gruppenmitgliederliste als Datei herunter:
+
+1. Klicken Sie von der Gruppenseite aus auf das **Download-Symbol**.
+2. Eine CSV-Datei mit den Gruppenmitgliedinformationen wird auf Ihren Computer heruntergeladen.
+
+Um stattdessen ein Anwesenheitsblatt für eine Klasse zu drucken, verwenden Sie **Print Roll Sheet** (Anwesenheitsblatt drucken) – siehe [Printing a Roll Sheet](../attendance/recording-attendance.md#printing-a-roll-sheet).
+
+Ein CSV-Export ist nützlich zum Importieren von Daten in andere Tools oder zum Führen von Offline-Datensätzen. Weitere Exportoptionen finden Sie unter [Exporting Data](../people/exporting-data.md).
+
+## Senden von Push-Benachrichtigungen an Gruppenmitglieder
+
+Sie können eine Push-Benachrichtigung direkt an alle Gruppenmitglieder senden, die die B1.church-App auf ihrem Gerät installiert haben und Push-Benachrichtigungen aktiviert haben.
+
+1. Klicken Sie von der Gruppenseite aus auf das **Glockensymbol** in der Symbolleiste (neben dem E-Mail- und Textsymbol – das Textsymbol wird angezeigt, sobald ein [Texting-Provider](../settings/church-settings.md#texting) verbunden ist).
+2. Ein Dialog-Fenster wird geöffnet und zeigt, wie viele Ihrer Gruppenmitglieder Push aktiviert haben.
+3. Füllen Sie die Benachrichtigungsdetails aus:
+   - **Title** (Titel) *(erforderlich)* -- Eine kurze Zusammenfassung bis zu 80 Zeichen.
+   - **Message** (Nachricht) *(erforderlich)* -- Der Benachrichtigungstext bis zu 240 Zeichen.
+   - **Open link or flyer URL** (Link oder Flyer-URL öffnen) *(optional)* -- Ein relativer App-Pfad (z. B. `/mobile/groups`) oder eine vollständige `https://`-URL, die die Benachrichtigung beim Antippen öffnet.
+   - **Image URL** (Bild-URL) *(optional)* -- Eine `https://`-URL zu einem Bild, das auf unterstützten Geräten neben der Benachrichtigung angezeigt wird.
+4. Eine Live-Vorschau zeigt, wie die Benachrichtigung auf dem Gerät angezeigt wird.
+5. Klicken Sie auf **Send Notification** (Benachrichtigung senden).
+
+:::info
+Push-Benachrichtigungen werden nur an Gruppenmitglieder zugestellt, die die B1.church PWA installiert haben und Push-Benachrichtigungen nicht deaktiviert haben. Mitglieder ohne registriertes Push-Gerät oder mit ausgeschaltetem Push werden als übersprungen gezählt, und die Versend-Zusammenfassung zeigt, wie viele erreicht wurden im Vergleich zu übersprungen.
 :::
 
 :::tip
-After sending, the dialog shows how many notifications were queued successfully. If most members are showing as skipped, remind them to visit their B1.church site, install it as a home-screen app, and allow notifications when prompted.
+Nach dem Versenden zeigt das Dialog-Fenster an, wie viele Benachrichtigungen erfolgreich in die Warteschlange eingereiht wurden. Wenn die meisten Mitglieder als übersprungen angezeigt werden, erinnern Sie sie daran, ihre B1.church-Website zu besuchen, sie als Home-Screen-App zu installieren und Benachrichtigungen zuzulassen, wenn sie dazu aufgefordert werden.
 :::
 
-## Removing Members
+## Entfernen von Mitgliedern
 
-To remove someone from a group, locate their name in the member list and click the **remove** button next to their entry.
+Um jemanden aus einer Gruppe zu entfernen, suchen Sie seinen Namen in der Mitgliederliste und klicken Sie auf die Schaltfläche **Entfernen** neben seinem Eintrag.
 
 :::info
-Removing a person from a group does not delete them from your church directory. They will still appear in the [People](../people/adding-people.md) section and can be re-added to the group at any time.
+Das Entfernen einer Person aus einer Gruppe löscht sie nicht aus Ihrem Kirchenverzeichnis. Sie werden immer noch im Bereich [People](../people/adding-people.md) angezeigt und können jederzeit erneut zur Gruppe hinzugefügt werden.
 :::

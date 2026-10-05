@@ -20,7 +20,7 @@ Need a list of everyone with a wedding anniversary in a given month — for the 
 
 ## Getting an Anniversary List for a Month
 
-1. Open the **section menu** in the top-left corner and choose **People**.
+1. Open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left of B1 Admin), expand **People**, and click **People**.
 2. Under the search box, click **Advanced**.
 3. Expand the **Demographics** section and check **Anniversary Month**, then choose the month.
 4. Run the search — everyone with an anniversary that month appears in the results.

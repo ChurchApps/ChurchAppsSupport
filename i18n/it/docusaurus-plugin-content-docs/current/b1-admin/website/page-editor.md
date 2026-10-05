@@ -1,12 +1,12 @@
 ---
-title: "Utilizzo dell'Editor di Pagina"
+title: "Utilizzo dell'Editor di Pagine"
 ---
 
-# Utilizzo dell'Editor di Pagina
+# Utilizzo dell'Editor di Pagine
 
 <div class="article-intro">
 
-L'editor di pagina di B1 è un builder visivo drag-and-drop che ti permette di progettare le pagine del sito web della tua chiesa senza scrivere codice. Puoi aggiungere sezioni e blocchi di contenuto, personalizzare gli stili, visualizzare in anteprima il tuo lavoro e annullare le modifiche -- tutto dal tuo browser.
+L'editor di pagine B1 è un costruttore visuale drag-and-drop che ti permette di progettare le pagine del tuo sito web della chiesa senza scrivere codice. Puoi aggiungere sezioni e blocchi di contenuto, personalizzare gli stili, visualizzare l'anteprima del tuo lavoro e annullare le modifiche -- tutto dal tuo browser.
 
 </div>
 
@@ -14,152 +14,153 @@ L'editor di pagina di B1 è un builder visivo drag-and-drop che ti permette di p
 <h4>Prima di Iniziare</h4>
 
 - Completa la [Configurazione Iniziale](initial-setup) per configurare il tuo sito web
-- Crea almeno una pagina in [Gestione delle Pagine](managing-pages)
-- Ti serve il permesso **content.edit** per accedere all'editor
+- Crea almeno una pagina in [Gestione Pagine](managing-pages)
+- Hai bisogno del permesso **content.edit** per accedere all'editor
 
 </div>
 
-## Aprire l'Editor
+## Apertura dell'Editor
 
-1. In B1 Admin, clicca su **Sito Web** nel menu a sinistra.
-2. Trova la pagina che vuoi modificare nella tabella Pagine e clicca su **Modifica**.
+1. In B1 Admin, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Website** e fai clic su **Pages**.
+2. Trova la pagina che desideri modificare nella tabella Pagine e fai clic su **Modifica**.
 
-L'editor si apre in modalità a schermo intero. Il pannello sinistro mostra la struttura della pagina e gli elementi di contenuto disponibili; l'area centrale mostra un'anteprima dal vivo della tua pagina.
+L'editor si apre in modalità a schermo intero. Il pannello sinistro mostra la struttura della tua pagina e gli elementi di contenuto disponibili; l'area centrale mostra un'anteprima dal vivo della tua pagina.
 
 :::info
-L'editor viene sempre visualizzato in modalità chiara, indipendentemente dall'impostazione del tema di B1 Admin. Questo garantisce che l'anteprima corrisponda esattamente a come la tua pagina apparirà ai visitatori del sito web.
+L'editor viene sempre visualizzato in modalità chiara, indipendentemente dall'impostazione del tema B1 Admin. Questo assicura che l'anteprima corrisponda accuratamente a come la tua pagina apparirà ai visitatori del sito web.
 :::
 
-## Struttura della Pagina: Sezioni ed Elementi
+## Struttura Pagina: Sezioni ed Elementi
 
-Ogni pagina è costruita su due livelli:
+Ogni pagina è costruita da due livelli:
 
-- **Sezioni** -- I contenitori di primo livello che dividono la tua pagina in fasce orizzontali (ad esempio, una sezione hero, un blocco di contenuto o una striscia di piè di pagina). Ogni pagina deve avere almeno una sezione prima di poter aggiungere contenuto.
-- **Elementi** -- I singoli pezzi di contenuto inseriti all'interno di una sezione, come testo, immagini, pulsanti, schede, moduli e calendari.
+- **Sezioni** -- I contenitori di livello superiore che dividono la tua pagina in bande orizzontali (ad esempio, una sezione hero, un blocco di contenuto o una striscia di piè di pagina). Ogni pagina deve avere almeno una sezione prima di poter aggiungere contenuto.
+- **Elementi** -- I singoli pezzi di contenuto posizionati all'interno di una sezione, come testo, immagini, pulsanti, schede, moduli e calendari.
 
-### Aggiungere una Sezione
+### Aggiunta di una Sezione
 
-1. Clicca su **Aggiungi Sezione** (oppure il pulsante **+** in cima al pannello sinistro).
+1. Fai clic su **Aggiungi Sezione** (o il pulsante **+** in cima al pannello sinistro).
 2. Scegli come iniziare:
-   - **Da un modello** — sfoglia la galleria dei modelli di sezione organizzata per categoria (Hero, Chi Siamo, Servizi, Donazioni, ecc.) e cliccane uno per inserirlo come sezione completamente stilizzata e precompilata. Puoi personalizzare tutto dopo averla aggiunta.
-   - **Sezione vuota** — scegli un layout a colonne (singola, due colonne, tre colonne, ecc.) e costruisci da zero.
-3. La nuova sezione compare nell'anteprima. Cliccaci sopra per selezionarla e configurarne il colore di sfondo, il padding e altre opzioni di stile.
+   - **Da un modello** -- sfoglia la galleria di modelli di sezione organizzata per categoria (Hero, Chi Siamo, Servizi, Donazioni, ecc.) e fai clic su uno per inserirlo come una sezione completamente stilizzata e pre-riempita. Puoi personalizzare tutto dopo che è stato aggiunto.
+   - **Sezione vuota** -- scegli un layout a colonne (singolo, due colonne, tre colonne, ecc.) e costruisci da zero.
+3. La nuova sezione appare nell'anteprima. Fai clic su di essa per selezionarla e configura il suo colore di sfondo, padding e altre opzioni di stile.
 
-### Cambiare il Layout di una Sezione
+### Cambio del Layout di una Sezione
 
-Hai già costruito una sezione ma vuoi una struttura diversa? Usa il selettore di layout su quella sezione per scambiare la sua disposizione a colonne con un'altra dalla galleria, mantenendo il contenuto e gli elementi esistenti al loro posto.
+Hai già costruito una sezione ma desideri una struttura diversa? Usa lo strumento di cambio del layout su quella sezione per scambiare il suo arrangiamento delle colonne con uno diverso dalla galleria mantenendo i tuoi elementi e contenuto esistenti in posizione.
 
-### Aggiungere Elementi a una Sezione
+### Aggiunta di Elementi a una Sezione
 
-1. Clicca all'interno di una sezione nell'anteprima per selezionarla.
-2. Clicca su **Aggiungi Contenuto** e scegli un tipo di elemento dall'elenco:
-   - **Testo** -- Titoli, paragrafi e testo formattato
-   - **Immagine** -- Carica o collega una foto
-   - **Pulsante** -- Un link cliccabile di invito all'azione
+1. Fai clic all'interno di una sezione nell'anteprima per selezionarla.
+2. Fai clic su **Aggiungi Contenuto** e scegli un tipo di elemento dall'elenco:
+   - **Testo** -- Titoli, paragrafi e testo ricco
+   - **Immagine** -- Carica o collega a una foto
+   - **Pulsante** -- Un link call-to-action cliccabile
    - **Scheda** -- Un'immagine con titolo e descrizione
-   - **Modulo** -- Incorpora un [modulo](../forms/creating-forms) direttamente nella pagina
-   - **Calendario** -- Mostra un calendario di eventi
-   - **FAQ** -- Blocchi di domande e risposte in stile fisarmonica
-   - **Video** -- Incorpora un video tramite URL
-   - **Browser Gruppi** -- Una directory filtrabile di tutti i gruppi della chiesa con ricerca opzionale, filtro per categoria e filtro per etichetta
-   - **Funzione con Icona** -- Un'icona con titolo e breve descrizione, per evidenziare funzionalità o ministeri
-   - **Galleria** -- Una griglia multi-foto o un layout a mosaico
+   - **Modulo** -- Incorpora un [modulo](../forms/creating-forms) direttamente sulla pagina
+   - **Calendario** -- Visualizza un calendario di eventi
+   - **FAQ** -- Blocchi di domande e risposte in stile accordion
+   - **Video** -- Incorpora un video per URL
+   - **Sfogliatore Gruppi** -- Una directory filtrabile di tutti i gruppi della chiesa con ricerca opzionale, filtro categoria e filtro etichetta
+   - **Icona Caratteristica** -- Un'icona con titolo e descrizione breve, per evidenziazioni di caratteristiche o ministeri
+   - **Galleria** -- Una griglia multi-foto o layout muratura
    - **Testimonianza** -- Una o più citazioni con nome dell'autore, ruolo e foto
-   - **Icone Social** -- Icone collegate ai profili social della tua chiesa
-   - **Countdown** -- Un timer con conto alla rovescia verso una data o un orario di servizio settimanale
-   - **Statistiche** -- Una riga di numeri in grande con etichette (membri, anni, campus)
-   - **Progresso Campagna** -- Una barra di avanzamento in tempo reale per una campagna di raccolta fondi, che mostra il totale raccolto rispetto a un obiettivo
-   - **Griglia Staff** -- Schede fotografiche per i membri di un gruppo; il gruppo deve avere l'opzione **elenco pubblico** attivata
-   - **Orari dei Servizi** -- Il calendario dei servizi dei tuoi campus, prelevato automaticamente dalla configurazione delle presenze
-   - **Predicazioni** -- La tua libreria di predicazioni, come browser completo o come layout a griglia, elenco o ultima predicazione in evidenza
+   - **Icone Social** -- Icone collegate per i profili dei social media della tua chiesa
+   - **Countdown** -- Un timer che fa il conto alla rovescia verso una data o un'ora di servizio settimanale
+   - **Statistiche** -- Una riga di numeri grandi con etichette (membri, anni, campus)
+   - **Progresso Campagna** -- Una barra di progresso dal vivo per una campagna di donazioni, mostrando il totale raccolto verso un obiettivo di fondo
+   - **Griglia Staff** -- Schede foto per i membri di un gruppo; il gruppo deve avere l'opzione **public roster** attivata
+   - **Orari Servizio** -- La programmazione dei servizi dei tuoi campus, estratta automaticamente dall'impostazione della frequenza
+   - **Sermoni** -- La tua libreria di sermoni, come un browser completo o un layout griglia, elenco o featured-latest
    - **Mappa** -- Una mappa incorporata centrata sull'indirizzo della tua chiesa
-   - **Tabella** -- Una semplice griglia di righe e colonne per contenuti tabellari
+   - **Tabella** -- Una semplice griglia di righe e colonne per contenuto tabulare
    - **Testo con Foto** -- Testo e un'immagine affiancati
-   - **Logo** -- Il logo della tua chiesa, prelevato da [Aspetto](appearance)
-   - **Live Stream** -- Il tuo player di live streaming, incorporato direttamente nella pagina
-   - **Donazione** -- Un pulsante per donare o un modulo di donazione incorporato
-   - **HTML Grezzo** -- Markup HTML personalizzato per casi d'uso avanzati
-   - **iFrame** -- Incorpora contenuto esterno tramite URL
-3. Configura l'elemento usando il pannello delle impostazioni che appare.
+   - **Logo** -- Il logo della tua chiesa, estratto da [Aspetto](appearance)
+   - **Live Stream** -- Il tuo lettore live stream, incorporato direttamente sulla pagina
+   - **Podcast** -- Un elenco di episodi estratti da un URL feed RSS podcast esterno che fornisci, con impostazioni per quanti episodi mostrare e se visualizzare date e descrizioni. Questo è per presentare qualsiasi feed podcast sul tuo sito; per pubblicare i tuoi sermoni come podcast, vedi [Gestione Sermoni](../sermons/managing-sermons.md#your-podcast-feed) invece.
+   - **Donazione** -- Un pulsante di donazione o un modulo di donazione incorporato
+   - **HTML Grezzo** -- Markup HTML personalizzato per casi di utilizzo avanzati
+   - **iFrame** -- Incorpora contenuto esterno per URL
+3. Configura l'elemento utilizzando il pannello di impostazioni che appare.
 
-### Riordinare il Contenuto
+### Riordino del Contenuto
 
-Trascina sezioni o elementi usando l'icona della maniglia (sei puntini) sul lato sinistro di ogni voce per riordinarli. Puoi trascinare gli elementi all'interno di una sezione oppure spostarli tra sezioni diverse.
+Trascina sezioni o elementi utilizzando l'icona di handle (sei punti) sul lato sinistro di ogni elemento per riordinarli. Puoi trascinare elementi all'interno di una sezione o spostarli tra le sezioni.
 
-## Stilizzare la Tua Pagina
+## Stilizzazione della Tua Pagina
 
-### Stili della Sezione
+### Stili Sezione
 
-Clicca su qualsiasi sezione per aprire il suo pannello di stile. Puoi impostare:
+Fai clic su qualsiasi sezione per aprire il suo pannello di stile. Puoi impostare:
 
-- **Sfondo** -- Colore solido, sfumatura o immagine. Quando usi un'immagine di sfondo, un selettore di **Punto Focale** ti permette di cliccare per impostare quale parte dell'immagine resta centrata mentre la sezione si ridimensiona, e un'opzione di colore **Sovrapposizione** ti permette di aggiungere una tinta semi-trasparente sopra l'immagine per migliorare la leggibilità del testo.
+- **Sfondo** -- Colore solido, gradiente o immagine. Quando si utilizza uno sfondo immagine, un selezionatore **Punto Focale** ti permette di fare clic per impostare quale parte dell'immagine rimane centrata mentre la sezione si ridimensiona, e un'opzione di colore **Overlay** ti permette di aggiungere una tinta semi-trasparente sull'immagine per migliorare la leggibilità del testo.
 - **Padding** -- Spaziatura superiore e inferiore all'interno della sezione
-- **Larghezza** -- Larghezza piena o centrata/contenuta
-- **Divisori** -- Divisori decorativi a forma (onda, obliquo, curva, triangolo e altri) sul bordo superiore o inferiore della sezione, con opzioni di colore, altezza e capovolgimento
+- **Larghezza** -- Full-width o centrato/contenuto
+- **Divisori** -- Divisori di forma decorativa (onda, inclinazione, curva, triangolo e altri) sul bordo superiore o inferiore della sezione, con opzioni di colore, altezza e capovolgimento
 
-### Stili dell'Elemento
+### Stili Elemento
 
-Clicca su qualsiasi elemento per aprire il suo pannello di stile. Le opzioni comuni includono dimensione del carattere, colore, allineamento, margine e padding. Per le immagini, puoi impostare il testo alternativo e le destinazioni dei link.
+Fai clic su qualsiasi elemento per aprire il suo pannello di stile. Le opzioni comuni includono dimensione del carattere, colore, allineamento, margine e padding. Per le immagini, puoi impostare il testo alternativo e i target di link.
 
 ### CSS Personalizzato
 
-Per uno stile avanzato, ogni sezione ed elemento ha un campo **CSS Personalizzato** dove puoi scrivere le tue regole CSS. Queste sono limitate a quell'elemento, quindi non influenzeranno involontariamente il resto della pagina.
+Per uno stile avanzato, ogni sezione e elemento ha un campo **CSS Personalizzato** dove puoi scrivere le tue regole CSS. Questi sono limitati a quell'elemento, quindi non influenzeranno accidentalmente il resto della pagina.
 
 :::tip
-Se hai bisogno di applicare stili su tutto il tuo sito -- come un font personalizzato o un colore globale -- usa le impostazioni di [Aspetto](appearance) invece del CSS personalizzato sulle singole pagine.
+Se hai bisogno di applicare stili su tutto il tuo sito -- come un carattere personalizzato o un colore globale -- usa le impostazioni di [Aspetto](appearance) invece del CSS personalizzato su pagine individuali.
 :::
 
-## Visualizzare in Anteprima la Tua Pagina
+## Visualizzazione dell'Anteprima della Tua Pagina
 
-Usa i controlli di anteprima nella barra degli strumenti per verificare come appare la tua pagina su schermi di dimensioni diverse:
+Usa i controlli di anteprima nella barra degli strumenti per verificare come la tua pagina appare a diverse dimensioni dello schermo:
 
-- **Desktop** -- Vista browser a larghezza piena
-- **Mobile** -- Vista stretta, formato telefono
+- **Desktop** -- Visualizzazione browser a larghezza intera
+- **Mobile** -- Visualizzazione ristretta di dimensioni telefoniche
 
-Clicca su **Anteprima** per aprire una versione dal vivo della pagina in una nuova scheda del browser, esattamente come la vedranno i visitatori.
+Fai clic su **Anteprima** per aprire una versione dal vivo della pagina in una nuova scheda del browser, esattamente come la vedranno i visitatori.
 
-## Verificare l'Accessibilità
+## Verifica dell'Accessibilità
 
-Clicca sull'icona **Accessibilità** nella barra degli strumenti per eseguire un controllo rapido dei problemi più comuni -- immagini senza testo alternativo, basso contrasto dei colori o titoli fuori ordine. Ogni problema rimanda direttamente all'elemento che richiede attenzione, così puoi correggerlo sul posto.
+Fai clic sull'icona **Accessibilità** nella barra degli strumenti per eseguire un rapido controllo dei problemi comuni -- immagini senza testo alternativo, basso contrasto dei colori o titoli fuori ordine. Ogni problema si collega direttamente all'elemento che ha bisogno di attenzione in modo che tu possa correggerlo in posizione.
 
-## Annullare le Modifiche
+## Annullamento Delle Modifiche
 
-L'editor tiene traccia automaticamente della cronologia delle tue modifiche. Usa i pulsanti della barra degli strumenti o le scorciatoie da tastiera per navigare:
+L'editor traccia automaticamente la tua cronologia di editing. Usa i pulsanti della barra degli strumenti o i tasti di scelta rapida per navigare:
 
-- **Annulla** (Ctrl+Z / Cmd+Z) -- Annulla la tua ultima azione
-- **Ripristina** (Ctrl+Y / Cmd+Y) -- Riapplica un'azione annullata
+- **Annulla** (Ctrl+Z / Cmd+Z) -- Ripristina l'ultima azione
+- **Ripeti** (Ctrl+Y / Cmd+Y) -- Ri-applica un'azione annullata
 
-Puoi anche ripristinare la pagina a un'istantanea precedente. Clicca su **Cronologia** nella barra degli strumenti per vedere un elenco di istantanee salvate con descrizioni, e clicca su qualsiasi voce per ripristinare quel punto.
+Puoi anche ripristinare la pagina a uno snapshot precedente. Fai clic su **Cronologia** nella barra degli strumenti per vedere un elenco di snapshot salvati con descrizioni, e fai clic su qualsiasi voce per ripristinare a quel punto.
 
 :::warning
-Ripristinare un'istantanea sostituisce il contenuto attuale della pagina con la versione dell'istantanea. Questa operazione non può essere annullata con il pulsante standard di annullamento. Salva un'istantanea del tuo stato attuale prima di ripristinarne una vecchia se vuoi mantenere la possibilità di tornare indietro.
+Ripristinare uno snapshot sostituisce il contenuto della tua pagina corrente con la versione dello snapshot. Questo non può essere annullato con il pulsante undo standard. Salva uno snapshot del tuo stato attuale prima di ripristinare uno vecchio se desideri mantenere l'opzione di tornare.
 :::
 
-## Salvare e Pubblicare
+## Salvataggio e Pubblicazione
 
 Le modifiche vengono salvate automaticamente mentre lavori. Un indicatore di stato nella barra degli strumenti mostra se le tue modifiche sono state salvate.
 
-### Stato di bozza e pubblicato
+### Stato bozza e pubblicato
 
-Le pagine possono avere uno stato **pubblicato**, che controlla quando i visitatori vedono le tue modifiche. La barra degli strumenti mostra un chip di stato con la condizione attuale:
+Le pagine possono avere uno stato **pubblicato**, che controlla quando i visitatori vedono le tue modifiche. La barra degli strumenti visualizza un chip di stato che mostra lo stato attuale:
 
-- **Attivo al Salvataggio** -- La pagina non usa un flusso di pubblicazione. Ogni modifica salvata diventa attiva immediatamente. Questa è l'impostazione predefinita per le nuove pagine.
-- **Modifiche Non Pubblicate** -- La pagina è già stata pubblicata in precedenza, ma hai apportato modifiche dopo l'ultima pubblicazione. I visitatori vedono ancora la versione precedentemente pubblicata.
-- **Pubblicata** -- La pagina è attiva e il contenuto salvato corrisponde a ciò che vedono i visitatori.
+- **Live al Salvataggio** -- La pagina non utilizza un flusso di lavoro di pubblicazione. Ogni modifica salvata viene pubblicata immediatamente. Questo è l'impostazione predefinita per le nuove pagine.
+- **Modifiche Non Pubblicate** -- La pagina è stata pubblicata in precedenza, ma hai apportato modifiche dall'ultima pubblicazione. I visitatori vedono ancora la versione precedentemente pubblicata.
+- **Pubblicato** -- La pagina è live e il tuo contenuto salvato corrisponde a quello che i visitatori vedono.
 
-Per pubblicare le tue modifiche, clicca sul pulsante **Pubblica** nella barra degli strumenti. La pagina diventa attiva immediatamente.
+Per pubblicare le tue modifiche, fai clic sul pulsante **Pubblica** nella barra degli strumenti. La pagina viene pubblicata immediatamente.
 
-Per tornare all'ultima versione pubblicata senza influire su ciò che vedono i visitatori, apri il menu extra (⋮) e clicca su **Scarta Modifiche**.
+Per tornare all'ultima versione pubblicata senza influire su quello che i visitatori vedono, apri il menu overflow (⋮) e fai clic su **Scarta Modifiche**.
 
-Per portare una pagina completamente offline, apri il menu extra e clicca su **Annulla Pubblicazione**. I visitatori non vedranno più quella pagina finché non la pubblichi di nuovo.
+Per disattivare completamente una pagina, apri il menu overflow e fai clic su **Annulla Pubblicazione**. I visitatori non vedranno più quella pagina finché non la pubblichi di nuovo.
 
 :::tip
-Usa il flusso bozza/pubblicazione quando vuoi preparare una pagina -- ad esempio, per un evento imminente -- e renderla attiva solo al momento giusto. Costruisci e visualizza in anteprima la pagina, poi clicca su Pubblica quando sei pronto.
+Usa il flusso di lavoro bozza/pubblicazione quando desideri preparare una pagina -- ad esempio, per un evento imminente -- e fai che sia live solo al momento giusto. Costruisci e visualizza l'anteprima della pagina, poi fai clic su Pubblica quando sei pronto.
 :::
 
 ## Articoli Correlati
 
-- [Gestione delle Pagine](managing-pages) -- Crea pagine, imposta gli URL e gestisci la navigazione del sito
-- [Aspetto](appearance) -- Imposta colori, font e identità visiva a livello di sito
+- [Gestione Pagine](managing-pages) -- Crea pagine, imposta URL e gestisci la navigazione del sito
+- [Aspetto](appearance) -- Imposta colori, caratteri e branding a livello di sito
 - [File](files) -- Carica immagini e documenti da usare nell'editor
-- [Creazione dei Moduli](../forms/creating-forms) -- Costruisci moduli da incorporare nelle pagine
+- [Creazione di Moduli](../forms/creating-forms) -- Costruisci moduli che puoi incorporare su pagine

@@ -1,60 +1,60 @@
 ---
-title: "Nedlasting av innhold"
+title: "Laste ned leksjonsinnhold"
 ---
 
-# Nedlasting av leksjonsinnhold
+# Laste ned leksjonsinnhold
 
 <div class="article-intro">
 
-Når du har valgt en kirke og klasserom, henter FreePlay automatisk leksjonen planlagt for i dag og begynner å laste ned alle mediefiler. Dette er hvor du venter på at innholdet skal være klart før du starter leksjonen.
+Når du har valgt en kirke og et klasserom, henter FreePlay automatisk leksjonen som er planlagt for i dag og begynner å laste ned alle mediefilene. På denne skjermen venter du til innholdet er klart før du starter leksjonen.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Velg kirken og klasserommet ditt -- se [Valg av kirke og rom](./selecting-room)
-- Kontroller at TV-en er koblet til internett for den innledende nedlastingen
+- Velg kirke og klasserom -- se [Velge kirke og rom](./selecting-room)
+- Sørg for at TV-en er koblet til internett under den første nedlastingen
 
 </div>
 
-## Hvordan nedlasting fungerer
+## Slik fungerer nedlastingen
 
-1. FreePlay sjekker tidsplanen for klasserommet og laster den tildelte leksjonen
+1. FreePlay sjekker planen for klasserommet ditt og laster inn den tildelte leksjonen
 2. Leksjonens navn, tittel og beskrivelse vises på skjermen, lagt over leksjonens omslagsbilde
-3. En progresjonindikator viser **Laster ned element X av Y** når hver fil lagres på enheten
-4. Når alle filer er lastet ned, vises **Start leksjon**-knappen med et avspillingsikon
+3. En fremdriftsindikator viser **Downloading item X of Y** etter hvert som hver fil lagres på enheten
+4. Når alle filene er lastet ned, vises knappen **Start Lesson** med et avspillingsikon
 
-Du trenger ikke å gjøre noe under nedlastingen. FreePlay håndterer alt automatisk.
+Du trenger ikke gjøre noe under nedlastingen. FreePlay tar seg av alt automatisk.
 
 ## Oppløsning
 
-FreePlay laster ned innhold på 720p som standard. Oppløsningsinnstillingen (720p eller 1080p) bestemmer kvaliteten på nedlastede video- og bildefiler. Høyere oppløsning ser skarpere ut på store TV-er, men tar lengre tid å laste ned og bruker mer lagring.
+FreePlay laster ned innhold i 720p som standard. Oppløsningsinnstillingen (720p eller 1080p) bestemmer kvaliteten på nedlastede video- og bildefiler. Høyere oppløsning ser skarpere ut på store TV-er, men tar lengre tid å laste ned og bruker mer lagringsplass.
 
 :::info
-Oppløsningen er satt til 720p som standard. Innholdet blir lastet ned ved oppløsningen som er konfigurert for enheten.
+Oppløsningen er satt til 720p som standard. Innholdet lastes ned i oppløsningen som er konfigurert for enheten din.
 :::
 
-## Start av leksjonen
+## Starte leksjonen
 
-Når nedlastingen er fullført, falmer **Start leksjon**-knappen inn på bunnen av skjermen. Bruk TV-fjernkontrollen for å utheve den og trykk **Velg** for å begynne avspilling.
+Når nedlastingen er ferdig, toner knappen **Start Lesson** inn nederst på skjermen. Bruk TV-fjernkontrollen til å markere den, og trykk på **Select** for å starte avspillingen.
 
-## Automatisk oppfrisking
+## Automatisk oppdatering
 
-FreePlay sjekker for oppdatert innhold hver time. Hvis tidsplanen endres i løpet av dagen, plukker appen opp den nye leksjonen automatisk. Du kan også trykke **Tilbake** på fjernkontrollen for å gå tilbake til romvalg-skjermen og gå inn i nedlastingsskjermen på nytt for å tvinge en oppfrisking.
+FreePlay ser etter oppdatert innhold hver time. Hvis planen endres i løpet av dagen, henter appen den nye leksjonen automatisk. Du kan også trykke på **Back** på fjernkontrollen for å gå tilbake til skjermen for romvalg og åpne nedlastingsskjermen på nytt for å tvinge fram en oppdatering.
 
 :::tip
-Last ned leksjoner før søndagsmorgen mens bygningen din har en sterk internetttilkobling. Når den er lastet ned, spilles innholdet av uten noen nettverksavhengighet.
+Last ned leksjonene før søndag morgen, mens bygget har en god internettforbindelse. Når innholdet er lastet ned, spilles det av uten nettverk.
 :::
 
-## Nedlastinger-fanen
+## Skjermen Downloads
 
-FreePlay inkluderer en **Nedlastinger**-fane der du kan vise og administrere alt innhold som har blitt lastet ned til enheten. Dette gir deg oversikt over hva som lagres lokalt og er klart for offline-avspilling. Bruk Nedlastinger-fanen for å bekrefte at leksjoner er fullstendig lastet ned før søndagsmorgen eller for å frigjøre lagringsplass ved å fjerne gammelt innhold.
+FreePlay har en skjerm kalt **Downloads** der du kan se og administrere alt innhold som er lastet ned til enheten. Åpne **Settings** nederst i sidefeltet, og velg deretter **Downloads**. Her ser du hva som er lagret lokalt og klart for avspilling uten nett. Bruk skjermen Downloads til å kontrollere at leksjonene er fullstendig nedlastet før søndag morgen, eller til å frigjøre lagringsplass ved å fjerne gammelt innhold.
 
-## Hvis tidsplanen er tom
+## Hvis planen er tom
 
-Hvis ingen leksjon er planlagt for det valgte klasserommet, vil du se meldingen "Tidsplanen kunne ikke lastes inn. Kontroller at en leksjon er planlagt for denne klassen." Sjekk tidsplanen på [freeplay.church](https://freeplay.church) og kontroller at riktig leksjon er tilordnet dette rommet.
+Hvis ingen leksjon er planlagt for det valgte klasserommet, ser du meldingen «The schedule could not be loaded. Make sure a lesson is scheduled for this class.» Sjekk planen din på [freeplay.church](https://freeplay.church) og kontroller at riktig leksjon er tildelt dette rommet.
 
-## Neste trinn
+## Neste steg
 
-- **[Avspilling av leksjoner](./playing-lessons)** - Lær om medieavspeillerkontroller for navigering av leksjonsinnhold
+- **[Spille av leksjoner](./playing-lessons)** - Lær kontrollene i mediespilleren for å navigere i leksjonsinnholdet

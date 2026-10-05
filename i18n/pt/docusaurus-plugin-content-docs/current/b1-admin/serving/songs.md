@@ -1,84 +1,93 @@
 ---
-title: "Canções"
+title: "Músicas"
 ---
 
-# Canções
+# Músicas
 
 <div class="article-intro">
 
-The Songs page manages your worship song library. Keep all your song details, lyrics, and arrangements in one place so your worship team can easily prepare for upcoming services and maintain a consistent repertoire.
+A página de Músicas gerencia sua biblioteca de músicas de adoração. Mantenha todos os detalhes de música, letras e arranjos em um único lugar para que sua equipe de adoração possa facilmente se preparar para os próximos serviços e manter um repertório consistente.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Antes de começar</h4>
 
-- Navigate to the **Serving** section in B1 Admin to access the Songs page
-- Optionally, have your [service plans](./plans.md) set up so you can link songs directly into the [service order](./service-order.md)
+- No [menu Jump](../introduction.md#getting-around-with-the-jump-menu) em B1 Admin, escolha **Servindo > Músicas** para acessar a página de Músicas
+- Opcionalmente, tenha seus [planos de serviço](./plans.md) configurados para que você possa vincular músicas diretamente à [ordem de serviço](./service-order.md)
 
 </div>
 
-## Browsing Your Song Library
+## Navegando sua Biblioteca de Músicas
 
-When you open the **Songs** page, your songs are displayed as cards. Each card shows the song's thumbnail image, title, artist, and duration. Scroll through the library or use search to find what you need.
+Quando você abre a página **Músicas**, suas músicas são exibidas como cartões. Cada cartão mostra a imagem de miniatura da música, título, artista e duração. Role pela biblioteca ou use a busca para encontrar o que você precisa.
 
-## Searching for Songs
+## Procurando Músicas
 
-1. Click the **Search** button on the Songs page.
-2. Type a song **title** or **artist** name.
-3. The results will filter as you type, showing matching songs from your library.
+1. Clique no botão **Procurar** na página de Músicas.
+2. Digite um **título** de música ou nome de **artista**.
+3. Os resultados filtrarão conforme você digita, mostrando músicas correspondentes de sua biblioteca.
 
-## Adding a Song
+## Adicionando uma Música
 
-1. Click **Add Song** on the Songs page.
-2. Search the external song database by title or artist.
-3. Select the song you want to add.
-4. The song will be added to your library with its basic details pre-filled.
+1. Clique em **Adicionar Música** na página de Músicas.
+2. Procure o banco de dados externo de músicas por título ou artista.
+3. Selecione a música que você quer adicionar.
+4. A música será adicionada à sua biblioteca com seus detalhes básicos pré-preenchidos.
 
 :::tip
-After adding a song, click on it to review and update its details, add arrangements, or attach external links like YouTube videos or chord charts.
+Depois de adicionar uma música, clique nela para revisar e atualizar seus detalhes, adicionar arranjos ou anexar links externos como vídeos do YouTube ou gráficos de acordes.
 :::
 
-## Viewing and Editing a Song
+### Músicas Livres de WorshipCommons
 
-Click on any song card to open its detail page. From here you can:
+Seus resultados de busca também podem incluir uma seção **WorshipCommons — grátis** ao lado dos resultados regulares. Estas são músicas prontas para domingo de [WorshipCommons](https://worshipcommons.org) que foram revisadas e licenciadas para uso em adoração. Cada resultado mostra um crachá de licença -- **Grátis para adoração** ou **Domínio público** -- para que você saiba os termos antes de adicionar.
 
-- **Edit song details** -- Update the title, artist, duration, and other metadata.
-- **Manage arrangements** -- Each song can have multiple arrangements (for example, different keys or versions). Add, edit, or remove arrangements as needed.
-- **Add lyrics** -- Enter or update the lyrics for each arrangement using ChordPro notation (for example, `[G]Amazing grace`). A live preview next to the editor renders the formatted chord chart as you type, so you can see exactly what your team will see.
-- **Set the key** -- Specify the musical key for each arrangement using the key picker next to the lyrics. Changing the key transposes the displayed chords immediately, both on the arrangement page and when opening the song from a service plan, so your team always sees chords in the key they're actually playing.
-- **Add external links** -- Attach links to resources like YouTube videos, chord charts, or sheet music hosted elsewhere.
+- Clique em um resultado de WorshipCommons para adicioná-lo à sua biblioteca, como um resultado de busca regular.
+- Clique em **Ver em WorshipCommons** para abrir o anúncio original em uma nova aba.
 
-## Arrangements
+Apenas músicas que passaram pelo processo de revisão de WorshipCommons aparecem aqui, então a seleção pode ser menor que o banco de dados de música principal.
 
-An arrangement represents a distinct version of a song — for example, a faster modern version versus a slower acoustic take, or the same song in a different key for a different team. Each arrangement of the same song shares the song title and artist but has its own independent settings:
+## Visualizando e Editando uma Música
 
-- **Key** — the musical key the arrangement is performed in
-- **BPM** — tempo in beats per minute
-- **Length** — duration in seconds
-- **Meter** — time signature (e.g., 4/4, 3/4, 6/8)
-- **Sequence** — the chord/section structure (e.g., Intro → Verse → Chorus → Bridge)
-- **Lyrics** — for display or projection
-- **External links** — chord charts, YouTube recordings, sheet music, or other resources
+Clique em qualquer cartão de música para abrir sua página de detalhes. A partir daqui você pode:
 
-When you add a song to a [Service Order](./service-order.md), you can choose which arrangement to use for that specific service, so your team always rehearses and plays the right version.
+- **Editar detalhes da música** -- Atualize o título, artista, duração e outros metadados.
+- **Gerenciar arranjos** -- Cada música pode ter múltiplos arranjos (por exemplo, diferentes chaves ou versões). Adicione, edite ou remova arranjos conforme necessário.
+- **Adicionar letras** -- Digite ou atualize as letras para cada arranjo usando notação ChordPro (por exemplo, `[G]Graça Incrível`). Uma visualização ao vivo ao lado do editor renderiza o gráfico de acordes formatado conforme você digita, para que você possa ver exatamente o que sua equipe verá.
+- **Defina a chave** -- Especifique a chave musical para cada arranjo usando o seletor de chave ao lado das letras. Mudar a chave transpõe os acordes exibidos imediatamente, tanto na página do arranjo quanto ao abrir a música de um plano de serviço, para que sua equipe sempre veja acordes na chave que eles realmente estão tocando.
+- **Adicionar links externos** -- Anexe links para recursos como vídeos do YouTube, gráficos de acordes ou partituras hospedadas em outro lugar.
 
-### Rehearsal Audio
+## Arranjos
 
-Worship admins can attach a rehearsal audio track to an arrangement so the team can listen ahead of practice:
+Um arranjo representa uma versão distinta de uma música -- por exemplo, uma versão moderna mais rápida versus uma interpretação acústica mais lenta, ou a mesma música em uma chave diferente para uma equipe diferente. Cada arranjo da mesma música compartilha o título e artista da música mas tem suas próprias configurações independentes:
 
-1. Open the song and select the arrangement.
-2. Click **Upload Audio**.
-3. Choose an MP3, M4A, or AAC file (up to 25 MB -- WAV isn't accepted, to keep storage usage manageable).
-4. Save. The track plays inline wherever that arrangement appears -- on the arrangement page in B1 Admin and in the service plan when a team member opens it in the B1.church member portal. Plan items with audio show a music-note icon instead of a thumbnail.
+- **Chave** -- a chave musical em que o arranjo é executado
+- **BPM** -- tempo em batidas por minuto
+- **Comprimento** -- duração em segundos
+- **Métrica** -- assinatura de tempo (por exemplo, 4/4, 3/4, 6/8)
+- **Sequência** -- a estrutura de acordes/seção (por exemplo, Intro → Verso → Refrão → Ponte)
+- **Letras** -- para exibição ou projeção
+- **Links externos** -- gráficos de acordes, gravações do YouTube, partituras ou outros recursos
 
-Deleting the arrangement also removes its uploaded audio file.
+Quando você adiciona uma música a uma [Ordem de Serviço](./service-order.md), você pode escolher qual arranjo usar para aquele serviço específico, para que sua equipe sempre ensaie e toque a versão certa.
+
+### Áudio de Ensaio
+
+Administradores de adoração podem anexar uma faixa de áudio de ensaio a um arranjo para que a equipe possa ouvir antes da prática:
+
+1. Abra a música e selecione o arranjo.
+2. Clique em **Carregar Áudio**.
+3. Escolha um arquivo MP3, M4A ou AAC (até 25 MB -- WAV não é aceito, para manter o uso de armazenamento gerenciável).
+4. Salve. A faixa toca inline em qualquer lugar que aquele arranjo apareça -- na página do arranjo em B1 Admin e no plano de serviço quando um membro da equipe o abre no portal de membros B1.church. Itens do plano com áudio mostram um ícone de nota musical em vez de uma miniatura.
+
+Deletar o arranjo também remove seu arquivo de áudio carregado.
 
 :::info
-Songs from your library can be added directly to a [Service Order](./service-order.md) within a plan, linking the song details and the chosen arrangement to that specific service.
+Músicas de sua biblioteca podem ser adicionadas diretamente a uma [Ordem de Serviço](./service-order.md) dentro de um plano, vinculando os detalhes da música e o arranjo escolhido para aquele serviço específico.
 :::
 
-## Next Steps
+## Próximas Etapas
 
-- Add songs to your [Service Order](./service-order.md) when building out a [service plan](./plans.md)
-- Coordinate with your worship team using [Tasks](./tasks.md) for song preparation and practice
+- Adicione músicas à sua [Ordem de Serviço](./service-order.md) ao construir um [plano de serviço](./plans.md)
+- Coordene com sua equipe de adoração usando [Tarefas](./tasks.md) para preparação de música e prática

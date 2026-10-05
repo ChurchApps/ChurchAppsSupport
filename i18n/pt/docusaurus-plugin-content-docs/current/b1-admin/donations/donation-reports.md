@@ -6,7 +6,7 @@ title: "Relatórios de Doações"
 
 <div class="article-intro">
 
-O B1 Admin oferece várias maneiras de visualizar e analisar dados de doações da sua igreja. A página Resumo de Doações oferece uma visão geral visual com gráficos e filtros, enquanto a seção Relatórios oferece um relatório Resumo de Doações mais detalhado. Use estas ferramentas para rastrear tendências de doações, preparar para reuniões de conselho ou reconciliar seus registros.
+B1 Admin oferece várias maneiras de visualizar e analisar os dados de doações de sua igreja. O painel de doações na página **Resumo** das Doações fornece uma visão geral visual com gráficos e filtros, enquanto a seção de Relatórios oferece um relatório mais detalhado de Resumo de Doações. Use essas ferramentas para rastrear tendências de doações, se preparar para reuniões do conselho ou reconciliar seus registros.
 
 </div>
 
@@ -20,70 +20,62 @@ O B1 Admin oferece várias maneiras de visualizar e analisar dados de doações 
 
 ## Painel de Doações
 
-O **Painel de Doações** é a primeira coisa que você vê ao abrir a seção **Doações**. Ele fornece uma visão de alto nível de sua atividade de doações com indicadores-chave de desempenho.
+O painel de doações é a aba **Painel** da página **Resumo**, a primeira página que você vê quando abre a seção **Doações**.
 
-1. Abra o **menu de seção** no canto superior esquerdo e escolha **Doações** para abrir o painel.
-2. No topo, quatro **cartões de KPI** exibem suas métricas de doações em um relance:
-   - **Total de Doações** -- O valor total doado no período selecionado.
-   - **Doação Média** -- O valor médio de doação.
+1. Abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo de B1 Admin), expanda **Doações** e clique em **Resumo**. A página **Resumo** abre na aba **Painel**.
+2. Use o toggle **Semanal**, **Mensal** e **Trimestral** acima do relatório para escolher como as doações são agrupadas.
+3. No painel **Filtrar Relatório**, defina a **Data de Início** e **Data de Término** (por padrão, o ano passado até ontem) e opcionalmente escolha um **Fundo**, depois clique em **Executar Relatório**. O relatório é executado automaticamente com os padrões quando a página abre.
+4. Quatro **cards KPI** exibem suas métricas de doações para o intervalo selecionado:
+   - **Total de Doações** -- O valor total doado.
+   - **Doação Média** -- O valor da doação média.
    - **Doadores Únicos** -- O número de pessoas distintas que doaram.
    - **Total de Doações** -- O número total de doações individuais.
-3. Use o **alternador de período** para alternar entre visualizações **Semanais**, **Mensais** e **Trimestrais**.
-4. Abaixo dos KPIs, um gráfico exibe tendências de doações para o período selecionado.
-5. Clique em **Baixar** para exportar um arquivo CSV com totais de doações.
+5. Abaixo dos KPIs, um gráfico de barras mostra doações por semana, mês ou trimestre, dividido por fundo.
+6. Clique em **Opções de Download** e escolha **Resumo** para exportar um CSV dos totais por período e fundo, ou clique no ícone de impressão para imprimir o relatório. O nome de sua igreja aparece no topo do relatório impresso.
 
-Se as doações no período foram feitas em mais de uma moeda, os totais de KPI são convertidos para a moeda da sua igreja e uma nota de **Convertido para as taxas de câmbio atuais** aparece abaixo dos cartões. Consulte [Suporte Multi-Moeda](./multi-currency.md#converted-totals) para detalhes.
+Se as doações no período foram dadas em mais de uma moeda, os totais de KPI são convertidos para a moeda de sua igreja e uma nota **Convertido às taxas de câmbio atuais** aparece abaixo dos cards. Veja [Suporte Multimoeda](./multi-currency.md#converted-totals) para detalhes.
+
+:::info
+O painel mostra dados de doações agregadas. Não inclui nomes individuais de doadores. Para detalhes em nível de doador, use a página [Lotes](batches.md).
+:::
 
 ## Doadores Inativos
 
-A guia **Doadores Inativos** ao lado do painel lista pessoas que doaram durante um período, mas não desde então. Por padrão, compara o ano calendário anterior com o ano atual até agora; altere qualquer intervalo de datas para ampliar ou restringir a pesquisa. Cada linha mostra a pessoa, a data de sua última doação e seu total do período anterior, e **Exportar** baixa a lista como CSV para correspondência de acompanhamento ou lista de chamadas.
-
-## Página de Resumo de Doações
-
-A página de **Resumo** fornece dados de doações agregados mais detalhados.
-
-1. Abra o **menu de seção** no canto superior esquerdo e escolha **Doações** para abrir a página de Resumo.
-2. Use o **filtro de intervalo de datas** para selecionar o período que deseja revisar. Defina a data anterior no topo e a data mais recente na parte inferior.
-3. A página exibe um gráfico de doações semanais para que você possa ver tendências em um relance.
-4. Clique em **Baixar** para exportar um arquivo CSV com o valor total doado, a semana em que foi doado e o fundo para o qual foi doado.
-
-:::info
-A página de Resumo mostra dados de doações agregados. Não inclui nomes individuais de doadores. Para detalhes em nível de doador, use a página [Lotes](batches.md).
-:::
+A aba **Doadores Inativos** ao lado da aba **Painel** lista pessoas que doaram durante um período mas não desde então. Por padrão, compara o ano calendário passado com este ano até a data; altere qualquer intervalo de data para ampliar ou estreitar a pesquisa. Cada linha mostra a pessoa, a data de seu último presente e seu total para o período anterior, e **Opções de Download > Resumo** baixa a lista como um CSV para uma correspondência de acompanhamento ou lista de chamadas.
 
 ## Visualizando Detalhes em Nível de Doador
 
-Para um detalhamento de quem doou, quanto doou e para qual fundo:
+Para uma divisão de quem doou, quanto e para qual fundo:
 
-1. Navegue até **Doações > Lotes**.
+1. Navegue para **Doações > Lotes**.
 2. Clique em um **nome de lote** para abri-lo.
 3. A página de detalhes do lote lista cada doação com o nome do doador, valor, fundo, data e método de pagamento.
-4. Clique no **nome de um doador** para ver um detalhamento de quantas vezes ele doou e quanto em cada vez.
-5. Clique em um **ID de doação** para abrir um painel lateral com os detalhes completos dessa doação individual.
+4. Clique em um **nome de doador** para ver uma divisão de quantas vezes eles doaram e quanto cada vez.
+5. Clique em um **ID de doação** para abrir um painel lateral com os detalhes completos para essa doação individual.
 6. Clique em **Baixar** para exportar um CSV com todas as informações de doador e doação para esse lote.
 
 ## Relatório de Resumo de Doações
 
-O relatório de doações é incorporado diretamente na seção Doações -- a página de Resumo funciona como seu relatório de resumo de doações:
+Os relatórios de doações são construídos diretamente na seção de Doações -- a página Resumo serve como seu relatório de resumo de doações:
 
-1. Abra o **menu de seção** no canto superior esquerdo e escolha **Doações** para abrir a página de Resumo.
-2. Use o **filtro de intervalo de datas** para selecionar o período sobre o qual deseja reportar.
-3. Clique em **Baixar** para exportar o relatório como um arquivo CSV.
+1. No menu Jump, escolha **Doações > Resumo**.
+2. Na aba **Painel**, defina a **Data de Início** e **Data de Término** no painel **Filtrar Relatório** e clique em **Executar Relatório**.
+3. Clique em **Opções de Download** e escolha **Resumo** para exportar o relatório como um arquivo CSV.
 
 ## Exportando Dados
 
-Você pode exportar dados de doações de vários locais:
+Você pode exportar dados de doações de vários lugares:
 
-- **Página de Resumo** -- baixe um CSV de totais de doações semanais por fundo
+- **Página de Resumo** -- baixe um CSV dos totais de doações por semana, mês ou trimestre e fundo
 - **Página de detalhes do lote** -- baixe um CSV de doações individuais com detalhes do doador
-- **Página de detalhes de fundo** -- baixe histórico de doações para um fundo específico
+- **Página de detalhes do fundo** -- baixe o histórico de doações para um fundo específico
 
 :::tip
-Para relatório de final de ano, combine a exportação da página de Resumo com a ferramenta [Declarações de Doações](giving-statements.md) para obter tendências agregadas e declarações individuais de doadores.
+Para relatórios de fim de ano, combine a exportação da página Resumo com a ferramenta [Declarações de Doações](giving-statements.md) para obter tendências agregadas e declarações de doadores individuais.
 :::
 
-## Próximos Passos
+## Próximas Etapas
 
 - Gere [Declarações de Doações](giving-statements.md) para seus doadores no final do ano
 - Revise [lotes](batches.md) individuais para verificar detalhes de doações
-- Verifique as páginas de detalhes de [fundo](funds.md) para detalhamentos de doações por categoria
+- Verifique as páginas de detalhes de [fundos](funds.md) para divisões de doações por categoria

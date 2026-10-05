@@ -32,7 +32,7 @@ Quando um grupo usa a política de **Pedido**, todas as tentativas de ingresso p
 
 ### Para Líderes de Grupo
 
-1. Navegue até **Grupos** no B1 Admin
+1. Em B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) e escolha **Pessoas > Grupos**
 2. Clique no nome do grupo
 3. Os pedidos pendentes para este grupo aparecem no topo da guia **Membros**
 
@@ -40,7 +40,7 @@ Quando um grupo usa a política de **Pedido**, todas as tentativas de ingresso p
 
 Administradores com permissões de gerenciamento de grupos podem ver pedidos pendentes em todos os grupos:
 
-1. Navegue até **Grupos** no B1 Admin
+1. No menu Jump, escolha **Pessoas > Grupos**
 2. Clique no botão **pedidos pendentes** no cabeçalho da página (por exemplo, "3 pedidos pendentes"). Ele aparece apenas quando há pedidos esperando.
 3. Revise todos os pedidos pendentes em toda a igreja
 

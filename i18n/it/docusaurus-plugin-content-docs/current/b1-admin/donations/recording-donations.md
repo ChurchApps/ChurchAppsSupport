@@ -1,64 +1,82 @@
 ---
-title: "Registrazione Donazioni"
+title: "Registrazione donazioni"
 ---
 
-# Recording Donations
+# Registrazione donazioni
 
 <div class="article-intro">
 
-Recording donations in B1 Admin is done through the Batches system. You Crea a batch Per represent a collection (such as a Sunday offering), then Aggiungi individual donations Per that batch. This keeps your giving records organized and easy Per reconcile.
+La registrazione delle donazioni in B1 Admin viene effettuata attraverso il sistema dei lotti. Crei un lotto per rappresentare una raccolta (come un'offerta domenicale), quindi aggiungi singole donazioni a quel lotto. Questo mantiene i tuoi registri di donazioni organizzati e facili da riconciliare.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Set up your [funds](funds.md) so you can assign donations Per the correct categories
-- Crea a [batch](batches.md) Per hold the donations you are about Per Inserisci
-- Make sure the donors are in your [people directory](../people/adding-people.md) so you can look them up when entering gifts
+- Configura i tuoi [fondi](funds.md) in modo da poter assegnare le donazioni alle categorie corrette
+- Crea un [lotto](batches.md) per contenere le donazioni che stai per inserire
+- Assicurati che i donatori siano nella tua [directory persone](../people/adding-people.md) in modo da poterli cercare quando inserisci le offerte
 
 </div>
 
-## Creating a Batch and Adding Donations
+## Creazione di un lotto e aggiunta di donazioni
 
-1. In **B1 Admin**, Apri the **menu della sezione** in the angolo in alto a sinistra and Scegli **Donations**, then Fai clic **Batches**.
-2. Fai clic **Aggiungi Batch**.
-3. Inserisci a name for the batch (e.g., "Sunday Offering - Jan 5") and Seleziona the Data. Fai clic **Salva**.
-4. Your new batch appears in the list showing zero donations and $0.00.
-5. Fai clic on the **batch name** Per Apri it.
+1. In **B1 Admin**, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Donazioni** e fai clic su **Lotti**.
+2. Fai clic su **Aggiungi lotto**.
+3. Inserisci un nome per il lotto (ad esempio, "Offerta domenicale - 5 gennaio") e seleziona la data. Fai clic su **Salva**.
+4. Il tuo nuovo lotto appare nell'elenco mostrando zero donazioni e $0,00.
+5. Fai clic sul **nome del lotto** per aprirlo.
 
-## Entering Individual Donations
+## Inserimento di singole donazioni
 
-1. In the batch detail page, Digita the donor's name in the **Cerca field** Per Trova them.
-2. After selecting a person, the donation entry form appears with fields for **Data**, **Payment Method**, **Fund**, **Amount**, and **Check Number**.
-3. Fill in the details and Fai clic **Aggiungi Donazione**.
-4. The donation is added Per the table below, and the form resets so you can Inserisci the Avanti one.
+1. Nella pagina dei dettagli del lotto, digita il nome del donatore nel **campo di ricerca** per trovarlo.
+2. Dopo aver selezionato una persona, appare il modulo di inserimento della donazione con campi per **Data**, **Metodo di pagamento**, **Fondo**, **Importo** e **Numero di assegno**.
+3. Compila i dettagli e fai clic su **Aggiungi donazione**.
+4. La donazione viene aggiunta alla tabella sottostante e il modulo si ripristina in modo da poter inserire quella successiva.
 
 :::tip
-You can quickly Inserisci multiple donations in a row without leaving the batch page. The form resets after each entry so you can move through a stack of checks or envelopes efficiently.
+Puoi inserire rapidamente più donazioni di seguito senza lasciare la pagina del lotto. Il modulo si ripristina dopo ogni voce in modo da poter scorrere efficientemente uno stack di assegni o buste.
 :::
 
-## Splitting a Donazione Across Multiple Funds
+## Suddivisione di una donazione tra più fondi
 
-Sometimes a single donor gives Per more than one fund in one transaction. Per handle this:
+A volte un singolo donatore dona più di un fondo in una transazione. Per gestire ciò:
 
-1. Fai clic the **Modifica** button on the donation row.
-2. In the Modifica form, Aggiungi amounts Per different funds. The total will automatically calculate from the individual fund amounts.
-3. Fai clic **Salva** Per update the donation.
+1. Fai clic sul pulsante **Modifica** sulla riga di donazione.
+2. Nel modulo di modifica, aggiungi importi a fondi diversi. Il totale verrà calcolato automaticamente dagli importi dei fondi individuali.
+3. Fai clic su **Salva** per aggiornare la donazione.
 
 :::info
-Splitting donations across funds is common when a donor writes a single check designated for multiple purposes, such as General Fund and Missions.
+Suddividere le donazioni tra i fondi è comune quando un donatore scrive un assegno singolo destinato a scopi multipli, come Fondo generale e Missioni.
 :::
 
-## Editing or Removing Donations
+## Modifica o rimozione di donazioni
 
-Per Modifica a donation, Fai clic the **Modifica** button on its row in the batch. You can change the Data, amount, fund, payment method, or any other detail. Fai clic **Salva** when you are done.
+Per modificare una donazione, fai clic sul pulsante **Modifica** sulla sua riga nel lotto. Puoi modificare la data, l'importo, il fondo, il metodo di pagamento o qualsiasi altro dettaglio. Fai clic su **Salva** al termine.
 
 :::tip
-The batch page header updates automatically Per show the total number of donations and the combined dollar amount as you Aggiungi or Modifica entries. Use this Per reconcile against your deposit slip.
+L'intestazione della pagina del lotto si aggiorna automaticamente per mostrare il numero totale di donazioni e l'importo in dollari combinato mentre aggiungi o modifichi le voci. Utilizzalo per riconciliare contro il tuo foglio di deposito.
 :::
 
-## Avanti Steps
+## Rimborso di una donazione
 
-- Review your entries using [Donation Reports](donation-reports.md) Per verify accuracy
-- At Anno-end, generate [Giving Statements](giving-statements.md) for your donors
+Se un donatore è stato addebitato per errore o richiede il rimborso del denaro, puoi rimborsare una donazione completata direttamente dalla sua schermata di modifica - non è necessario andare al dashboard del tuo gateway di pagamento.
+
+1. Apri la donazione e fai clic su **Modifica**.
+2. Fai clic sul pulsante **Rimborso** accanto a Elimina in fondo al modulo.
+3. Conferma la finestra di dialogo: "Rimborsare completamente questa donazione tramite il gateway di pagamento? Questo non può essere annullato."
+
+La donazione viene rimborsata integralmente tramite il gateway di pagamento originale e contrassegnata come **Rimborsata** negli elenchi delle donazioni.
+
+:::warning
+I rimborsi sono solo rimborsi completi - non c'è modo di rimborsare un importo parziale da B1 Admin. Inoltre, il rimborso non può essere annullato una volta confermato.
+:::
+
+:::info
+Il pulsante **Rimborso** appare solo per le donazioni pagate online (hanno una transazione gateway) e che sono ancora nello stato **Completata**. Le donazioni inserite manualmente (contanti, assegno) non hanno una transazione gateway da rimborsare - modifica o elimina quelle invece.
+:::
+
+## Passaggi successivi
+
+- Rivedi le tue voci utilizzando [Rapporti di donazione](donation-reports.md) per verificare l'accuratezza
+- Alla fine dell'anno, genera [Estratti conto dei doni](giving-statements.md) per i tuoi donatori

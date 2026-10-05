@@ -1,135 +1,135 @@
 ---
-title: "Tjenesterekkefølge"
+title: "Gudstjenesteforløp"
 ---
 
-# Tjenesterekkefølge
+# Gudstjenesteforløp
 
 <div class="article-intro">
 
-Tjenesterekkefølgen definerer sekvensen av elementer i gudstjenesten. Bruk den til å legge ut alt fra åpningssangen til avsluttende bønn, slik at hele laget ditt kjenner tjenestens flyt på forhånd.
+Gudstjenesteforløpet definerer rekkefølgen på elementene i gudstjenesten. Bruk det til å legge opp alt fra åpningssangen til avslutningsbønnen, slik at hele laget ditt kjenner forløpet i god tid.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- [Opprett en tjensteplan](./plans.md) for datoen du vil bygge en tjenesterekkefølge for
-- Valgfritt, legg til [sanger](./songs.md) i biblioteket ditt slik at du kan lenke dem direkte inn i tjenesterekkefølgen
+- [Opprett en gudstjenesteplan](./plans.md) for datoen du vil bygge et gudstjenesteforløp for
+- Legg eventuelt til [sanger](./songs.md) i biblioteket ditt, slik at du kan knytte dem direkte til gudstjenesteforløpet
 
 </div>
 
-## Tilgang til tjenesterekkefølgen
+## Åpne gudstjenesteforløpet
 
-1. Naviger til **Tjeneste** og velg ministeriet ditt.
+1. Gå til **Tjeneste** og velg tjenesteområdet ditt.
 2. Klikk på en **plantype**, og åpne deretter en bestemt **plan**.
-3. Klikk på fanen **Tjenesterekkefølge** på siden med plandetaljer.
+3. Klikk på fanen **Gudstjenesteforløp** på plandetaljsiden.
 
-## Bygge tjenesterekkefølgen
+## Bygge gudstjenesteforløpet
 
-Tjenesterekkefølgen er en liste over elementer ordnet i sekvensen de vil skje under tjenesten. Vanlige elementer inkluderer:
+Gudstjenesteforløpet er en liste over elementer ordnet i den rekkefølgen de kommer i under gudstjenesten. Vanlige elementer er:
 
-- Tilbedelses sanger
+- Lovsanger
 - Bønner
 - Skriftlesninger
 - Kunngjøringer
 - Preken eller budskap
-- Kollekt
+- Offer
 - Avslutning
 
-## Legge til elementer til tjenesterekkefølgen
+## Legge til elementer i gudstjenesteforløpet
 
-1. På fanen **Tjenesterekkefølge** klikker du **Legg til element**.
-2. Velg typen element du vil legge til (for eksempel en sang fra biblioteket ditt, et egendefinert element, en overskrift eller et **Eksternt element**).
-3. Skriv inn detaljene for elementet, for eksempel tittel og eventuelle notater.
-4. Klikk **Lagre**.
-
-:::tip
-Du kan legge til sanger direkte fra biblioteket ditt for [Sanger](./songs.md). Dette lenker sangdetaljer, inkludert tekster og arrangementer, til tjenesteplanen slik at tilbedelsesteamet ditt har alt de trenger.
-:::
-
-### Importering av flere elementer fra en ekstern leverandør
-
-Hvis du velger **Eksternt element** åpnes en nettleser for de tilkoblede leksjonsleverandørene i stedet for et enkeltpart-skjema. Bla gjennom (eller søk) inn i en leverandørs innhold, og marker av boksen ved siden av hver seksjon eller handling du vil ha. Dialogen sporer hvor mange du har valgt (for eksempel "3 valgt") -- klikk **Importer (3)** for å legge til alle på en gang til tjenesterekkefølgen, i stedet for å gjenta add-item-flyt for hver enkelt.
+1. Klikk på **Legg til element** i fanen **Gudstjenesteforløp**.
+2. Velg typen element du vil legge til (for eksempel en sang fra biblioteket ditt, et egendefinert element, en overskrift eller et **eksternt element**).
+3. Fyll inn detaljene for elementet, som tittel og eventuelle notater.
+4. Klikk på **Lagre**.
 
 :::tip
-Dette er den raskeste måten å hente en hel leksjon verdt seksjoner og instruksjoner inn i en tjenesterekkefølge på en gang, i stedet for å legge til hvert element individuelt.
+Du kan legge til sanger direkte fra [Sanger](./songs.md)-biblioteket ditt. Da knyttes sangdetaljene, inkludert tekster og arrangementer, til gudstjenesteplanen, slik at lovsangsteamet har alt de trenger.
 :::
 
-## Omorganisering av elementer
+### Importere flere elementer fra en ekstern leverandør
 
-Dra elementer med håndtaket til venstre for hver rad for å omorganisere rekkefølgen — slipp på den blå linjen hvor du vil at elementet skal lande, eller på en seksjonsoverskrift for å flytte det inn i den seksjonen. Sekvensen som vises på skjermen er rekkefølgen laget ditt vil følge under tjenesten.
+Hvis du velger **Eksternt element**, åpnes en leser for de tilkoblede leksjonsleverandørene dine i stedet for et skjema for ett enkelt element. Bla (eller søk) i leverandørens innhold, og kryss av for hver del eller handling du vil ha. Dialogboksen holder oversikt over hvor mange du har valgt (for eksempel «3 valgt») -- klikk på **Importer (3)** for å legge til alle på én gang i gudstjenesteforløpet, i stedet for å gjenta prosessen for å legge til element for hvert enkelt.
 
-## Redigering av en leksjonsseksjon
+:::tip
+Dette er den raskeste måten å hente inn alle delene og innsatsene fra en hel leksjon i et gudstjenesteforløp i én omgang, i stedet for å legge til hvert element for seg.
+:::
 
-Leksjon- og læreplansseksjoner (for eksempel "Stor gruppe" eller "Engasjer 1") har sine egne skriptlinjer, lysbilder og videoer. For å endre hva som er inni en, klikker du seksjonen i tjenesterekkefølgen. Seksjonen åpnes og viser alt i den: talte og instruks-linjer vises som full tekst merket **Si**, **Gjør** eller **Notat**, og lysbilder eller videoer vises med en miniatyrbilde.
+## Endre rekkefølgen på elementer
 
-- Klikk på **x** ved siden av en hvilken som helst linje for å ta den ut av planen. Den forblir i listen, gjennomstreket, med en pil for å legge den tilbake.
-- Klikk på en tekst for å omformulere den. En omformulert linje tilbyr **gjenopprett original formulering**.
-- Klikk **Lagre**. Seksjonen forblir en enkelt rad i tjenesterekkefølgen, med en liten etikett som **6 av 8 elementer** som viser at du har tilpasset den, og kjøretiden oppdateres.
+Dra elementer i håndtaket til venstre på hver rad for å endre rekkefølgen — slipp dem på den blå linjen der elementet skal havne, eller på en seksjonsoverskrift for å flytte det inn i den seksjonen. Rekkefølgen som vises på skjermen, er den laget ditt følger under gudstjenesten.
 
-Åpne seksjonen igjen når som helst for å se endringene dine, legge linjer tilbake, eller velg **Gjenopprett original seksjon** for å angre alle. Endringene påvirker bare planen din -- den originale leksjonen blir aldri endret -- og de går gjennom til utskrevne planer og til det frivillige ser.
+## Redigere en leksjonsdel
 
-Hvis du trenger et element fra seksjonen som sin egen rad (for eksempel for å plassere en sang mellom to linjer), klikker du pilen på høyre ende av seksjonsraden for å vise innholdet som separate rader. Klikk pilen på den første av disse radene for å folde dem tilbake til en. Dette fungerer på samme måte for innhold fra en hvilken som helst tilkoblet leverandør.
+Leksjons- og læreplandeler (for eksempel «Storgruppe» eller «Engage 1») har sine egne manuslinjer, lysbilder og videoer. For å endre innholdet i en slik del klikker du på delen i gudstjenesteforløpet. Delen åpnes og viser alt den inneholder: muntlige linjer og instruksjonslinjer vises som full tekst merket **Si**, **Gjør** eller **Merk**, og lysbilder eller videoer vises med et miniatyrbilde.
 
-Frivillige tildelt et element dukker opp ved siden av det i tjenesterekkefølgen, slik at alle som gjennomgår planen kan se hvem som dekker hver del på et øyeblikk.
+- Klikk på **x** ved siden av en linje for å ta den ut av planen din. Den blir stående i listen, overstreket, med en pil for å sette den tilbake.
+- Klikk på en tekst for å omformulere den. En omformulert linje har alternativet **gjenopprett opprinnelig ordlyd**.
+- Klikk på **Lagre**. Delen forblir én enkelt rad i gudstjenesteforløpet ditt, med en liten merkelapp som **6 av 8 elementer** som viser at du har tilpasset den, og den løpende tiden oppdateres.
 
-## Timing og medier
+Åpne delen igjen når som helst for å se endringene dine, sette linjer tilbake eller velge **Gjenopprett opprinnelig del** for å angre alle. Endringene dine påvirker bare din egen plan -- den opprinnelige leksjonen endres aldri -- og de følger med i utskrevne planer og i det de frivillige ser.
 
-Hvert element og seksjon viser hvor lenge det kjøres og når det begynner:
+Hvis du trenger et element fra delen som en egen rad (for eksempel for å plassere en sang mellom to linjer), klikker du på pilen helt til høyre på delraden for å vise innholdet som separate rader. Klikk på pilen på den første av disse radene for å slå dem sammen til én igjen. Dette fungerer på samme måte for innhold fra alle tilkoblede leverandører.
 
-- Hvis planen har en enkelt tjeneste tid valgt, viser den venstre skinnene den faktiske **klokketiden** hvert element begynner (for eksempel 09:14). Ellers vises det som gangen tid fra starten av tjenesten.
-- Seksjonsoverskrifter legger opp kjøretiden for alt inni dem.
-- Sanger og egendefinerte elementer teller til denne timingen når du skriver inn **Minutter**/**Sekunder** på elementets rediger-skjerm.
-- Elementer du legger til fra mediebiblioteket ditt (bilder eller videosnutt) viser et **miniatyrbilde** og tidsinnstilles automatisk — varigheten av en video måles fra selve filen, mens et bilde bidrar med en ~5:00 planleggingsestimate (vist i kursiv) siden det forblir på skjermen til en operatør avanserer det. Du kan fortsatt redigere enten til en spesifikk varighet.
+Frivillige som er tildelt et element, vises ved siden av det i gudstjenesteforløpet, slik at alle som går gjennom planen, kan se hvem som har ansvaret for hver del med et øyekast.
 
-## Redigering og fjerning av elementer
+## Tidsbruk og medier
 
-- Klikk på et element i tjenesterekkefølgen for å **redigere** detaljer.
-- Bruk **slettalternativet** for å fjerne et element fra rekkefølgen.
+Hvert element og hver del viser hvor lenge det varer og når det starter:
+
+- Hvis planen har ett enkelt gudstjenestetidspunkt valgt, viser venstre kant det faktiske **klokkeslettet** hvert element starter (for eksempel 09:14). Ellers vises tiden som har gått siden gudstjenestens start.
+- Seksjonsoverskrifter summerer den løpende tiden for alt som ligger i dem.
+- Sanger og egendefinerte elementer regnes med i denne tidsplanen når du har skrevet inn **minutter**/**sekunder** på elementets redigeringsskjerm.
+- Elementer du legger til fra mediebiblioteket ditt (bilder eller videoklipp), viser et **miniatyrbilde** og tidfestes automatisk — varigheten til en video måles fra selve filen, mens et bilde bidrar med et planleggingsanslag på ca. 5:00 (vist i kursiv), siden det blir stående på skjermen til en operatør går videre. Du kan fortsatt redigere begge til en bestemt varighet.
+
+## Redigere og fjerne elementer
+
+- Klikk på et element i gudstjenesteforløpet for å **redigere** detaljene.
+- Bruk alternativet **slett** for å fjerne et element fra forløpet.
 
 :::info
-Tjenesterekkefølgen er spesifikk for hver plan. Endringer du gjør her påvirker kun den valgte planen og vil ikke endre andre planer eller sangbiblioteket ditt.
+Gudstjenesteforløpet er spesifikt for hver plan. Endringer du gjør her, påvirker bare den valgte planen og endrer ikke andre planer eller sangbiblioteket ditt.
 :::
 
-### Massevalg og sletting av elementer
+### Velge og slette flere elementer samtidig
 
-For å fjerne flere elementer i en seksjon på en gang i stedet for å slette dem en etter en:
+For å fjerne flere elementer i en seksjon på én gang i stedet for å slette dem ett etter ett:
 
-1. Klikk **Velg elementer** på seksjonsoverskriften.
-2. Kryss av elementene du vil fjerne, eller kryss av **Velg alt i seksjon** for å få alt direkte under den seksjonen.
-3. Klikk **Slett valgte** og bekreft.
-4. Klikk **Slutt å velge** for å gå ut av utvalgmodus.
+1. Klikk på **Velg elementer** i seksjonsoverskriften.
+2. Kryss av for elementene du vil fjerne, eller kryss av for **Velg alle i seksjonen** for å ta alt som ligger direkte under seksjonen.
+3. Klikk på **Slett valgte** og bekreft.
+4. Klikk på **Ferdig med å velge** for å gå ut av valgmodus.
 
 :::info
-Massevalg gjelder bare en seksjons direkte barn, ikke elementer som er nestet inni en undermapp.
+Valg av flere gjelder bare for en seksjons direkte underordnede elementer, ikke for elementer som ligger i en undermappe i seksjonen.
 :::
 
-## Inkludering av elementer i spesifikke tjeneste tider
+## Ta med elementer i bestemte gudstjenestetidspunkter
 
-Hvis planen din har mer enn en tjeneste tid (for eksempel en 08.00 og 10.00-tjeneste), kan du velge hvilke tjenester hvert element skal dukke opp i. Dette er nyttig når en kunngjøring bare er relevant for en tjeneste, eller når en sang synges i en tjeneste men ikke en annen.
+Hvis planen din har mer enn ett gudstjenestetidspunkt (for eksempel en gudstjeneste kl. 08 og en kl. 10), kan du velge hvilke gudstjenester hvert element skal vises i. Det er nyttig når en kunngjøring bare er relevant for én gudstjeneste, eller når en sang synges i den ene gudstjenesten, men ikke i den andre.
 
-1. Åpne en plan som har to eller flere tjeneste tider definert på fanen **Tider**.
-2. På fanen **Tjenesterekkefølge** klikker du på et element for å redigere det.
-3. Under **Inkluder i tjenester** vil du se en avmerkingsboks for hver tjeneste tid, merket med tiden.
-4. Fjern merket fra en hvilken som helst tjeneste der elementet skal hoppes over.
-5. Klikk **Lagre**.
+1. Åpne en plan som har to eller flere gudstjenestetidspunkter definert i kortet **Tidspunkter** i fanen **Tildelinger**.
+2. Klikk på et element i fanen **Gudstjenesteforløp** for å redigere det.
+3. Under **Ta med i gudstjenester** ser du en avkrysningsboks for hvert gudstjenestetidspunkt, merket med klokkeslettet.
+4. Fjern avkrysningen for gudstjenester der elementet skal hoppes over.
+5. Klikk på **Lagre**.
 
-Som standard er hvert element inkludert i alle tjenester. Ekskluderte tjeneste tider er skjult når du skriver ut planen filtrert til den tjenesten, slik at hver tjeneste mottar et rent ark med bare relevante elementer.
+Som standard er hvert element med i alle gudstjenester. Utelatte gudstjenestetidspunkter skjules når du skriver ut planen filtrert på den gudstjenesten, slik at hver gudstjeneste får et rent løpeark med bare de relevante elementene.
 
 :::tip
-Delen **Inkluder i tjenester** vises bare når planen har mer enn en tjeneste tid. Hvis du bare ser en tjeneste, rediger planens fane **Tider** for å legge til flere tjenester først.
+Delen **Ta med i gudstjenester** vises bare når planen har mer enn ett gudstjenestetidspunkt. Hvis du bare ser én gudstjeneste, bruker du først kortet **Tidspunkter** i planens fane **Tildelinger** for å legge til flere gudstjenester.
 :::
 
-### Vise en annen stilling per tjeneste
+### Vise en annen posisjon per gudstjeneste
 
-Hvis et element har en **Stilling** satt, får hver merket tjeneste tid i **Inkluder i tjenester** også sin egen **Stilling for denne tjenesten** rullelisten. Bruk den når samme seksjon dekkes av en annen frivillig ved hver tjeneste -- la den stå på **Samme som ovenfor** for å holde elementets standardstilling, eller velg en annen stilling for å overstyre den bare for den tjeneste tiden.
+Hvis et element har en **posisjon** satt, får hvert avkrysset gudstjenestetidspunkt under **Ta med i gudstjenester** også sin egen nedtrekksmeny **Posisjon for denne gudstjenesten**. Bruk den når den samme delen dekkes av ulike frivillige i hver gudstjeneste -- la den stå på **Samme som over** for å beholde elementets standardposisjon, eller velg en annen posisjon for å overstyre den bare for det gudstjenestetidspunktet.
 
-## Deling av tjenesterekkefølgen
+## Dele gudstjenesteforløpet
 
-Når tjenesterekkefølgen er ferdig, kan du skrive ut hele planen (inkludert tjenesterekkefølgen) fra siden med plandetaljer. Dette gir laget ditt en fullstendig oversikt over tjenesten. Når **Vis frivilligs navn** er på for utskriften, skriver hver seksjonsoverskrift også med den tildelte frivilliges stilling ved siden av, så laget kan se hvem som dekker den seksjonen uten å åpne appen. Hvis en overskrifts stilling blir overstyrt for spesifikke tjenester, viser utskriften alle distinkte stillingsnavn den løses til på tvers av tjenestene på den planen (for eksempel "Tilbedelseslag / Ungdomslag").
+Når gudstjenesteforløpet er ferdig, kan du skrive ut hele planen (inkludert gudstjenesteforløpet) fra plandetaljsiden. Dette gir laget ditt en fullstendig oversikt over gudstjenesten, med menighetens navn og planens navn øverst. Når **Vis navn på frivillige** er slått på for utskriften, skrives hver seksjonsoverskrift også ut med den tildelte frivilliges posisjon ved siden av, slik at laget ditt kan se hvem som dekker den delen uten å åpne appen. Hvis posisjonen til en overskrift er overstyrt for bestemte gudstjenester, viser utskriften alle de ulike posisjonsnavnene den løses til på tvers av gudstjenestene i planen (for eksempel «Lovsangsteam / Ungdomsteam»).
 
-## Neste trinn
+## Neste steg
 
-- Administrer repertoaret ditt på siden [Sanger](./songs.md)
-- Tildel frivillige til tjenesten på fanen [Planer](./plans.md) Tildelinger
-- Opprett [oppgaver](./tasks.md) for alle oppfølgingselementer relatert til tjenesten
+- Administrer lovsangsrepertoaret ditt på siden [Sanger](./songs.md)
+- Tildel frivillige til gudstjenesten i fanen Tildelinger under [Planer](./plans.md)
+- Opprett [Oppgaver](./tasks.md) for oppfølgingspunkter knyttet til gudstjenesten

@@ -20,7 +20,7 @@ title: "Custom Fields"
 
 ## Opening Custom Fields
 
-In B1 Admin, open the **section menu** in the top-left corner (the section name with the small arrow), choose **Settings**, and select the **Custom Fields** card. You can also go straight there at **/settings/custom-fields**. You'll see a list of every field you've defined, showing its **Name** and **Field Type**. If you haven't created any yet, the panel reads *"No custom fields have been added yet."*
+In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), choose **Settings > Settings**, and select the **Custom Fields** card. You can also go straight there at **/settings/custom-fields**. You'll see a list of every field you've defined, showing its **Name** and **Field Type**. If you haven't created any yet, the panel reads *"No custom fields have been added yet."*
 
 ## Adding a Field
 
@@ -83,13 +83,17 @@ Custom fields are fully searchable:
 
 Save any custom-field search as a [List](../people/lists.md). Lists are live queries, so a list built on *Background check expires is before today* re-checks every person each time you open it — no manual upkeep.
 
+## Showing a Custom Field as a Column
+
+To see a field's values for everyone at once, add it as a column on the **People** page. Open the column chooser, switch to the **Custom** tab, and check the field. Each person's value appears in its own column next to the built-in ones. See [Showing Custom Fields as Columns](../people/searching-people.md#showing-custom-fields-as-columns).
+
 ## What Happens on Merge
 
 When you [merge two person records](../people/adding-people.md), custom-field values carry over automatically. The person you keep holds on to their own values; for any field where only the removed person had a value, that value is copied over so nothing is lost.
 
 ## Related Articles
 
-- [Searching People](../people/searching-people.md) — advanced search, including the Custom Fields category
+- [Searching People](../people/searching-people.md) — advanced search, including the Custom Fields category, and showing custom fields as columns
 - [Saved Lists](../people/lists.md) — save a custom-field search and re-run it live
 - [Roles & Permissions](./roles-permissions.md) — who can define fields and edit values
 - [Creating Forms](../forms/creating-forms.md) — for multi-question data collection where a full form fits better than single fields

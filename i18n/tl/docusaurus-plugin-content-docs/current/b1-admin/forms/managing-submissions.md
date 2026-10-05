@@ -1,68 +1,82 @@
 ---
-title: "Pag-manage ng mga Submission"
+title: "Pamamahala ng mga Submission"
 ---
 
-# Pag-manage ng mga Submission
+# Pamamahala ng mga Submission
 
 <div class="article-intro">
 
-Kapag live na ang iyong form, ang mga submission ay magsisimulang dumating. Ang tab na Submissions ay nagpapahintulot sa iyo na suriin ang bawat tugon, subaybayan kung sino ang nag-submit, at gamitin ang data upang sumunod sa iyong congregation sa tamang oras.
+Kapag live na ang inyong form, magsisimula nang dumating ang mga submission. Hinahayaan kayo ng tab na **Form Submissions** na suriin ang bawat sagot, subaybayan kung sino ang nag-submit, at gamitin ang datos para makapag-follow up sa inyong kongregasyon sa tamang oras.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago ka magsimula</h4>
+<h4>Bago Magsimula</h4>
 
-- [Lumikha ng isang form](./creating-forms.md) na may hindi bababa sa isang tanong
-- Ibahagi ang form sa pamamagitan ng kanyang pang-publiko na URL o i-embed ito sa iyong [website](../website/managing-pages.md)
+- [Gumawa ng form](./creating-forms.md) na may kahit isang tanong
+- Ibahagi ang form sa pamamagitan ng pampublikong URL nito o i-embed ito sa inyong [website](../website/managing-pages.md)
 
 </div>
 
-## Pagsusuri ng mga Submission
+## Pagtingin sa mga Submission
 
-1. Buksan ang **People** mula sa section menu, pagkatapos ay i-click ang **Forms** sa navigation bar.
-2. I-click ang form na nais mong suriin.
-3. Pumunta sa tab na **Submissions**.
+1. Buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas ng B1 Admin), i-expand ang **People**, at i-click ang **Forms**.
+2. I-click ang form na nais ninyong suriin.
+3. Pumunta sa tab na **Form Submissions**.
 
-Makikita mo ang isang listahan ng lahat ng mga tugon na natanggap para sa form na iyon. Bawat submission ay nagpapakita ng impormasyon ng respondent at ang petsa na ito ay naitala.
+Makikita ninyo ang listahan ng lahat ng sagot na natanggap para sa form na iyon. Ipinapakita ng bawat submission ang impormasyon ng sumagot at ang petsa ng pagsumite, kasunod ang isang column para sa bawat tanong sa form. Kung maraming tanong ang inyong form, i-scroll nang pahalang ang talaan para makita ang iba pang column.
 
-## Pagsusuri ng Mga Indibidwal na Submission
+## Pagsusuri ng mga Indibidwal na Submission
 
-I-click ang anumang submission upang tingnan ang buong mga detalye. Makikita mo ang lahat ng mga sagot na ibinigay ng tao para sa bawat tanong sa form.
+I-click ang anumang submission para makita ang buong detalye. Makikita ninyo ang lahat ng sagot na ibinigay ng tao sa bawat tanong sa form.
 
-I-click ang **print icon** sa tabi ng submission upang i-print ang mga mga sagot na puno-puno ng taong iyon -- kapaki-pakinabang para sa isang papel file o isang signed release na kailangan mong panatilihin sa kamay. Ito ay hiwalay mula sa [pagpapahayag ng isang walang laman na form](./creating-forms.md#printing-a-blank-form); ito ay nag-print ng isang taon na itinatama-submit na mga sagot, hindi isang walang laman na kopya. Ang parehong print icon ay lumalabas saanman ang isang submission ay ipinapakita, kabilang sa [profile ng tao](../people/adding-people.md#working-with-forms).
+I-click ang **print icon** sa tabi ng submission para i-print ang mga nasagutang form ng taong iyon -- kapaki-pakinabang para sa papel na file o pirmadong release na kailangan ninyong itago. Nakalagay sa itaas ng printout ang pangalan ng inyong simbahan. Hiwalay ito sa [pag-print ng blangkong form](./creating-forms.md#printing-a-blank-form); ipini-print nito ang mga naisumiteng sagot ng isang tao, hindi ang blangkong kopya. Lumalabas ang parehong print icon saanman ipinapakita ang isang submission, kabilang sa [profile ng isang tao](../people/adding-people.md#working-with-forms).
 
-## Paano Kinokopya ang mga Submission
+## Pagpapalit ng Tao sa Isang Submission
 
-Ang mga submission ay maaaring dumating sa pamamagitan ng ilang mga channel:
+Kung naka-link ang isang submission sa maling tao — halimbawa, iisang email address ang gamit ng dalawang miyembro ng pamilya — maaari ninyo itong ilipat sa tamang tao o i-unlink.
 
-- **Public URL** -- Kung ang iyong form ay may isang pang-publiko na URL (Stand Alone forms), ang sinuman na may link ay maaaring magpadala ng isang tugon. Ibahagi ang URL sa pamamagitan ng email, social media, o mga text message.
-- **I-embed sa iyong website** -- Ang mga form na i-embed sa iyong website ng B1 ay kumakolekta ng mga submission nang awtomatiko kapag pinag-urong ng mga bisita ang mga ito.
-- **Internal use** -- Ang mga staff at volunteer ay maaari din na magpadala ng mga form sa ngalan ng iba nang direkta sa loob ng B1 Admin.
+1. Sa tab na **Form Submissions**, i-click ang icon na **Change person** (dalawang arrow) sa tabi ng pangalan ng tao. Lumalabas din ang parehong icon sa tabi ng submission sa [profile ng isang tao](../people/adding-people.md#working-with-forms).
+2. Sa dialog na **Change person**, hanapin ang tamang tao at i-click ang **Move to this person**.
+3. O i-click ang **Unlink (Anonymous)** para tanggalin ang submission sa anumang tao. Lalabas na ito bilang **Anonymous**.
 
-:::tip
-Suriin ang tab na **Submissions** nang regular para sa mga form tulad ng mga card ng bisita o mga kahilingan para sa panalangin, upang maaari kang sumunod nang dalubhasa.
-:::
-
-## Paggamit ng Data ng Submission
-
-Ang data na nakolekta sa pamamagitan ng mga form ay maaaring tulungan ka na:
-
-- Subaybayan ang mga registration ng kaganapan at planuhin nang naaayon
-- Sumunod sa mga bisita o mga bagong miyembro
-- Makolekta ang feedback sa survey para sa pagpaplano ng ministeri
-- Magproseso ng mga pagbabayad para sa mga kaganapan o programa
+Ang link lang ang nagbabago. Hindi nagbabago ang mga sagot, at hindi na muling ipapadala ang mga follow-up email.
 
 :::info
-Ang mga miyembro ng form na may mga tungkulin ng **Admin** o **View Only** ay maaaring mag-access ng tab na Submissions. Tiyakin na ang tamang mga tao sa iyong koponan ay may access sa mga form na kailangan nila sa pamamagitan ng pagsasalin ng mga tungkulin sa tab na **Members**.
+Sa mga form na naka-set na gumawa ng person record, kapag naka-sign in sa site ng inyong simbahan ang taong nagsa-submit, naka-link ang submission sa sarili niyang record, kahit may ibang taong nasa inyong database na may parehong email address. Kapag [pinagsama ninyo ang dalawang person record](../people/adding-people.md), ililipat sa taong iniwan ang mga form submission ng taong inalis.
+:::
+
+## Paano Kinokolekta ang mga Submission
+
+Maaaring dumating ang mga submission sa iba't ibang paraan:
+
+- **Public URL** -- Kung may pampublikong URL ang inyong form (mga Stand Alone na form), sinumang may link ay maaaring magsumite ng sagot. Ibahagi ang URL sa pamamagitan ng email, social media, o text message.
+- **Naka-embed sa inyong website** -- Awtomatikong nangongolekta ng mga submission ang mga form na naka-embed sa inyong B1 website kapag pinunan ito ng mga bisita.
+- **Panloob na paggamit** -- Maaari ring magsumite ng mga form ang mga staff at volunteer para sa iba, direkta sa B1 Admin.
+
+:::tip
+Regular na tingnan ang tab na **Form Submissions** para sa mga form tulad ng visitor card o prayer request, para agad kayong makapag-follow up.
+:::
+
+## Paggamit ng Datos ng Submission
+
+Makakatulong ang datos na nakolekta sa pamamagitan ng mga form para:
+
+- Subaybayan ang mga event registration at magplano nang naaayon
+- Mag-follow up sa mga bisita o bagong miyembro
+- Mangolekta ng feedback sa survey para sa pagpaplano ng ministeryo
+- Magproseso ng mga bayad para sa mga event o programa
+
+:::info
+Maaaring ma-access ng mga form member na may role na **Admin** o **View Only** ang tab na **Form Submissions**. Tiyaking may access ang tamang mga tao sa inyong team sa mga form na kailangan nila sa pamamagitan ng pamamahala ng mga role sa tab na **Form Members**.
 :::
 
 :::tip
-Kung ang isang **Stand Alone** form ay nakatakda upang lumikha ng isang talaan ng tao, ang anumang mga submission na tumugma sa isang umiiral na tao ay nagpapakita rin sa sariling tab ng **Forms** ng taong iyon sa seksyon ng People -- hindi lamang uri ng mga form na People.
+Kung ang isang **Stand Alone** na form ay naka-set na gumawa ng person record, ang anumang submission na natugma sa isang umiiral na tao ay lalabas din sa sarili niyang tab na **Forms** sa seksyong People — hindi lang ang mga form na uri ng People.
 :::
 
 ## Mga Susunod na Hakbang
 
-- Matuto kung paano bumuo at mag-customize ng mga form sa [Lumilikha ng Mga Form](./creating-forms.md)
-- Magdagdag ng mga tao mula sa mga submission ng form sa iyong [people directory](../people/adding-people.md) para sa patuloy na sundan
-- [Awtomatikong magdagdag ng mga nag-submit sa isang grupo](./creating-forms.md#automatically-adding-submitters-to-a-group) upang ang isang stand-alone sign-up form ay bumubuo sa kanyang sariling roster
+- Alamin kung paano bumuo at mag-customize ng mga form sa [Paggawa ng mga Form](./creating-forms.md)
+- Idagdag ang mga tao mula sa mga form submission sa inyong [people directory](../people/adding-people.md) para sa tuloy-tuloy na follow-up
+- [Awtomatikong idagdag ang mga nag-submit sa isang group](./creating-forms.md#automatically-adding-submitters-to-a-group) para makabuo ng sariling roster ang isang stand-alone na sign-up form

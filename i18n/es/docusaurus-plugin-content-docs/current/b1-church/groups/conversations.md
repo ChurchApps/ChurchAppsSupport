@@ -13,7 +13,7 @@ La pestaña Mensajes en tu página de grupo es un espacio donde los miembros del
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- Debes estar [registrado](../getting-started/logging-in.md) en tu cuenta de B1.church.
+- Debes estar [iniciado sesión](../getting-started/logging-in.md) en tu cuenta B1.church.
 - Debes ser miembro del grupo para acceder a la pestaña Mensajes. Consulta [Detalles del Grupo](./group-details.md) para saber cómo unirte a un grupo.
 
 </div>
@@ -21,17 +21,17 @@ La pestaña Mensajes en tu página de grupo es un espacio donde los miembros del
 ## Accediendo a Conversaciones
 
 1. Navega a la página de detalles del grupo haciendo clic en un grupo desde la [página de grupos](./browsing-groups.md).
-2. Asegúrate de que has iniciado sesión.
+2. Asegúrate de que estás iniciado sesión.
 3. Haz clic en la pestaña **Mensajes** en la barra lateral.
 
 ## Discusiones y Anuncios
 
-La pestaña Mensajes puede mostrar dos sub-pestañas, dependiendo de qué fuentes tu iglesia haya habilitado para este grupo:
+La pestaña Mensajes puede mostrar dos sub-pestañas, dependiendo de qué fuentes tu iglesia haya activado para este grupo:
 
 - **Discusiones** -- Un espacio donde cualquier miembro del grupo puede publicar mensajes y responder a otros.
-- **Anuncios** -- Mensajes publicados por líderes de grupo que son importantes para que todos los miembros vean. Los miembros regulares pueden leer anuncios y reaccionar a ellos, pero solo los líderes pueden publicar. Si intentas publicar como miembro regular, verás una nota de que solo los líderes pueden publicar anuncios y de que debes responder por mensaje directo en su lugar.
+- **Anuncios** -- Mensajes publicados por líderes de grupo que son importantes para que todos los miembros vean. Los miembros regulares pueden leer anuncios y reaccionar a ellos, pero solo los líderes pueden publicar. Si intentas publicar como miembro regular, verás una nota indicando que solo los líderes pueden publicar anuncios y que debes responder por mensaje directo en su lugar.
 
-Si tu iglesia ha habilitado solo una de las dos fuentes para este grupo, verás solo esa fuente sin barra de pestañas. Si ambas están desactivadas, el grupo no tiene pestaña de Mensajes en absoluto.
+Si tu iglesia ha activado solo una de las dos fuentes para este grupo, verás solo esa fuente sin barra de pestañas. Si ambas están desactivadas, el grupo no tiene pestaña de Mensajes en absoluto.
 
 ## Publicando un Mensaje
 
@@ -42,7 +42,7 @@ Si tu iglesia ha habilitado solo una de las dos fuentes para este grupo, verás 
 
 Tu mensaje será visible para todos los miembros del grupo.
 
-## Editando o Eliminando Tus Mensajes
+## Editando o Eliminando tus Mensajes
 
 Puedes editar o eliminar cualquier mensaje que hayas publicado:
 
@@ -60,13 +60,13 @@ Solo puedes editar o eliminar tus propios mensajes. Los mensajes publicados por 
 
 En el chat de grupo, puedes reaccionar a cualquier mensaje con un emoji:
 
-1. Toca o pasa el ratón sobre un mensaje y elige **Agregar reacción**.
+1. Toca o pasa el ratón sobre un mensaje y elige **Añadir reacción**.
 2. Elige uno de los seis emoji: 👍 ❤️ 😂 🎉 🙏 😮.
 
-Las reacciones aparecen como pequeños chips debajo del mensaje con un conteo de cuántas personas usaron cada uno. Tu propia reacción se resalta — toca el chip (o elige el mismo emoji de nuevo) para eliminarlo, o elige un emoji diferente para agregar otro. Las reacciones se muestran en vivo para todos en el chat.
+Las reacciones aparecen como pequeños chips debajo del mensaje con un conteo de cuántas personas usaron cada uno. Tu propia reacción se resalta -- toca el chip (o elige el mismo emoji de nuevo) para eliminarlo, o elige un emoji diferente para añadir otro. Las reacciones se muestran en vivo para todos en el chat.
 
 :::tip
-Las conversaciones del grupo también aparecen en tu [Línea de Tiempo](../community/timeline.md), para que puedas estar al tanto de las discusiones sin visitar cada grupo individualmente.
+Las conversaciones del grupo viven en la pestaña **Mensajes** de cada grupo -- el anterior feed combinado de [Línea de Tiempo](../community/timeline.md) ha sido retirado. La actividad que necesita tu atención llega como una notificación bajo el icono de **campana** en la barra de la aplicación.
 :::
 
 ## Características del Líder

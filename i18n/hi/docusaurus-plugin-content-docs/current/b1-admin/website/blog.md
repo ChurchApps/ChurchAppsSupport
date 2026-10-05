@@ -2,67 +2,67 @@
 title: "ब्लॉग"
 ---
 
-# Blog
+# ब्लॉग
 
 <div class="article-intro">
 
-The Blog page lets you publish news, updates, and devotionals to your church website. Posts appear in a card listing at `/blog`, at their own URL, and in an RSS feed that other tools (like Zapier) can watch for new posts.
+ब्लॉग पृष्ठ आपको अपनी चर्च वेबसाइट पर समाचार, अपडेट और आध्यात्मिक प्रार्थनाएं प्रकाशित करने देता है। पोस्ट एक कार्ड सूची में `/blog` पर, अपने स्वयं के URL पर, और एक RSS फ़ीड में दिखाई देते हैं जो अन्य टूल (जैसे Zapier) नई पोस्ट के लिए देख सकते हैं।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरू करने से पहले</h4>
 
-- Complete the [Initial Setup](initial-setup) for your website
-- Add a navigation link to `/blog` from [Managing Pages](managing-pages) if you want visitors to find your blog from the menu
+- अपनी वेबसाइट के लिए [प्रारंभिक सेटअप](initial-setup) पूरा करें
+- यदि आप चाहते हैं कि आगंतुक मेनू से आपका ब्लॉग खोज सकें तो [Pages प्रबंधित करें](managing-pages) से `/blog` के लिए एक नेविगेशन लिंक जोड़ें
 
 </div>
 
-## Accessing the Blog
+## ब्लॉग तक पहुंचना
 
-1. In the B1 Admin, click **Website** in the left menu.
-2. Click the **Blog** tab at the top of the Website Pages view.
-3. The Blog page lists every post along with its state and publish date.
+1. B1 Admin में, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (ऊपर-बाएं में खोज बार) और **Website** को विस्तृत करें।
+2. **Blog** पर क्लिक करें।
+3. ब्लॉग पृष्ठ प्रत्येक पोस्ट को इसकी स्थिति और प्रकाशन तारीख के साथ सूचीबद्ध करता है।
 
-## Adding a Post
+## एक पोस्ट जोड़ना
 
-1. Click **Add Post** in the top right corner.
-2. Enter a **Title**. A URL-friendly slug is generated for you automatically as you type -- you can edit it directly if you want a different address.
-3. Add an **Excerpt** -- a short summary shown in the post listing, meta descriptions, and RSS feed. If you leave it blank, one is generated automatically from the start of your post content.
-4. Write the post body in the **Content** editor using Markdown. Click **Preview** to see how the formatted post will look.
-5. Choose a **Category** (pick an existing one or type a new one) and optional comma-separated **Tags**.
-6. Click **Select Image** to choose a photo from your [Files](files) gallery, or upload a new one. Uploaded photos open in a built-in crop tool locked to a 16:9 ratio, so you can frame any photo to fit the post header and listing cards.
-7. Set the **Author** -- it defaults to you, but you can search for and select any person in your database.
-8. Turn on **Published** and set a **Publish Date** when you are ready to make the post public. Leave it off to save the post as a draft.
+1. ऊपर दाएं कोने में **Add Post** पर क्लिक करें।
+2. एक **Title** दर्ज करें। जैसे ही आप टाइप करते हैं, एक URL-अनुकूल स्लग आपके लिए स्वचालित रूप से उत्पन्न होता है -- यदि आप एक अलग पता चाहते हैं तो आप इसे सीधे संपादित कर सकते हैं।
+3. एक **Excerpt** जोड़ें -- एक संक्षिप्त सारांश जो पोस्ट सूची, मेटा विवरण और RSS फ़ीड में दिखाया जाता है। यदि आप इसे खाली छोड़ते हैं, तो एक आपकी पोस्ट सामग्री की शुरुआत से स्वचालित रूप से उत्पन्न होता है।
+4. **Content** संपादक में Markdown का उपयोग करके पोस्ट बॉडी लिखें। स्वरूपित पोस्ट कैसा दिखेगा यह देखने के लिए **Preview** पर क्लिक करें।
+5. एक **Category** चुनें (एक मौजूदा चुनें या एक नया टाइप करें) और वैकल्पिक अल्पविराम-अलग किए गए **Tags**।
+6. अपनी [Files](files) गैलरी से एक फ़ोटो चुनने के लिए **Select Image** पर क्लिक करें, या एक नया अपलोड करें। अपलोड की गई तस्वीरें एक बिल्ट-इन क्रॉप टूल में खुलती हैं जो 16:9 अनुपात तक सीमित होती हैं, इसलिए आप किसी भी फ़ोटो को पोस्ट हेडर और सूची कार्ड में फ़िट करने के लिए फ्रेम कर सकते हैं।
+7. **Author** सेट करें -- यह आपको डिफ़ॉल्ट करता है, लेकिन आप अपने डेटाबेस में किसी भी व्यक्ति को खोज सकते हैं और चुन सकते हैं।
+8. **Published** को चालू करें और जब आप पोस्ट को सार्वजनिक करने के लिए तैयार हों तो एक **Publish Date** सेट करें। इसे ड्राफ्ट के रूप में पोस्ट सहेजने के लिए बंद रखें।
 
 :::tip
-Set a **Publish Date** in the future to schedule a post. It stays hidden from visitors and shows a **Scheduled** chip in the Blog list until that date arrives.
+भविष्य में एक **Publish Date** सेट करें एक पोस्ट शेड्यूल करने के लिए। यह आगंतुकों से छिपा रहता है और जब तक वह तारीख नहीं आती तब तक ब्लॉग सूची में एक **Scheduled** चिप दिखाता है।
 :::
 
-## Post States
+## पोस्ट स्थितियां
 
-Each post in the list shows one of three states:
+सूची में प्रत्येक पोस्ट तीन स्थितियों में से एक दिखाता है:
 
-- **Draft** -- Not published. Only visible in the admin.
-- **Scheduled** -- Published is on, but the publish date is in the future.
-- **Published** -- Live on your website and included in the RSS feed.
+- **Draft** -- प्रकाशित नहीं। केवल प्रशासक में दृश्यमान।
+- **Scheduled** -- प्रकाशित है, लेकिन प्रकाशन तारीख भविष्य में है।
+- **Published** -- आपकी वेबसाइट पर लाइव और RSS फ़ीड में शामिल।
 
-## Editing, Previewing, and Deleting Posts
+## पोस्ट्स को संपादित करना, पूर्वावलोकन करना और हटाना
 
-- Click the **Edit** icon next to a post to make changes.
-- Click the **View** icon (visible on published posts) to open the live post on your website in a new tab.
-- Click the **Delete** icon to permanently remove a post.
+- एक पोस्ट के आगे **Edit** आइकन पर क्लिक करें परिवर्तन करने के लिए।
+- प्रकाशित पोस्ट पर **View** आइकन पर क्लिक करें (दृश्यमान) अपनी वेबसाइट पर लाइव पोस्ट को एक नए टैब में खोलने के लिए।
+- एक पोस्ट को स्थायी रूप से हटाने के लिए **Delete** आइकन पर क्लिक करें।
 
-## How Visitors See Your Blog
+## आगंतुक आपका ब्लॉग कैसे देखते हैं
 
-Published posts appear at `{yoursite}/blog`, 10 per page with **Older**/**Newer** links to page through your archive, along with a category filter and each post's byline and photo. Tags render as clickable chips too, letting visitors filter the list by tag the same way. Individual posts live at `{yoursite}/blog/{slug}` and include related posts from the same category. The blog page also publishes an RSS feed, auto-discoverable by feed readers and automation tools like Zapier.
+प्रकाशित पोस्ट `{yoursite}/blog` पर दिखाई देते हैं, प्रति पृष्ठ 10 पोस्ट के साथ **Older**/**Newer** लिंक के साथ आपकी अभिलेखागार के माध्यम से पृष्ठ, एक श्रेणी फ़िल्टर और प्रत्येक पोस्ट का बायलाइन और फ़ोटो। टैग को क्लिक करने योग्य चिप्स के रूप में भी प्रस्तुत किया जाता है, जिससे आगंतुक सूची को टैग के समान तरीके से फ़िल्टर कर सकते हैं। अलग-अलग पोस्ट `{yoursite}/blog/{slug}` पर रहते हैं और एक ही श्रेणी से संबंधित पोस्ट शामिल करते हैं। ब्लॉग पृष्ठ एक RSS फ़ीड भी प्रकाशित करता है, जो फ़ीड रीडर और Zapier जैसे ऑटोमेशन टूल द्वारा स्वचालित रूप से खोज योग्य है।
 
 :::info
-Blog posts are a separate content type from regular website pages -- they are not built in the [page editor](page-editor) and do not appear in the Pages list. This keeps blog authoring fast and focused on writing.
+ब्लॉग पोस्ट नियमित वेबसाइट पृष्ठों से एक अलग सामग्री प्रकार हैं -- वे [page editor](page-editor) में नहीं बनाई जाती हैं और Pages सूची में दिखाई नहीं देते हैं। यह ब्लॉग लेखन को तेज़ और लेखन पर केंद्रित रखता है।
 :::
 
-## Next Steps
+## अगले कदम
 
-- [Managing Pages](managing-pages) -- Add a navigation link to your blog
-- [Files](files) -- Upload photos to use in your posts
-- [Zapier Integration](../integrations/zapier.md) -- Trigger automations when new posts are published
+- [Pages प्रबंधित करें](managing-pages) -- अपने ब्लॉग के लिए एक नेविगेशन लिंक जोड़ें
+- [Files](files) -- अपनी पोस्ट में उपयोग करने के लिए फ़ोटो अपलोड करें
+- [Zapier Integration](../integrations/zapier.md) -- नई पोस्ट प्रकाशित होने पर ऑटोमेशन ट्रिगर करें

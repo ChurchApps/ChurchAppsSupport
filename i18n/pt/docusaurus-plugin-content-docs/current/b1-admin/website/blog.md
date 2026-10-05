@@ -6,63 +6,63 @@ title: "Blog"
 
 <div class="article-intro">
 
-The Blog page lets you publish news, updates, and devotionals to your church website. Posts appear in a card listing at `/blog`, at their own URL, and in an RSS feed that other tools (like Zapier) can watch for new posts.
+A página Blog permite que você publique notícias, atualizações e devocionais no site da sua igreja. Os posts aparecem em uma listagem de cartões em `/blog`, em sua própria URL e em um feed RSS que outras ferramentas (como Zapier) podem monitorar para novos posts.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Antes de Começar</h4>
 
-- Complete the [Initial Setup](initial-setup) for your website
-- Add a navigation link to `/blog` from [Managing Pages](managing-pages) if you want visitors to find your blog from the menu
+- Complete a [Configuração Inicial](initial-setup) do seu site
+- Adicione um link de navegação para `/blog` a partir de [Managing Pages](managing-pages) se deseja que visitantes encontrem seu blog no menu
 
 </div>
 
-## Accessing the Blog
+## Acessando o Blog
 
-1. In the B1 Admin, click **Website** in the left menu.
-2. Click the **Blog** tab at the top of the Website Pages view.
-3. The Blog page lists every post along with its state and publish date.
+1. No B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo) e expanda **Website**.
+2. Clique em **Blog**.
+3. A página Blog lista cada post junto com seu estado e data de publicação.
 
-## Adding a Post
+## Adicionando um Post
 
-1. Click **Add Post** in the top right corner.
-2. Enter a **Title**. A URL-friendly slug is generated for you automatically as you type -- you can edit it directly if you want a different address.
-3. Add an **Excerpt** -- a short summary shown in the post listing, meta descriptions, and RSS feed. If you leave it blank, one is generated automatically from the start of your post content.
-4. Write the post body in the **Content** editor using Markdown. Click **Preview** to see how the formatted post will look.
-5. Choose a **Category** (pick an existing one or type a new one) and optional comma-separated **Tags**.
-6. Click **Select Image** to choose a photo from your [Files](files) gallery, or upload a new one. Uploaded photos open in a built-in crop tool locked to a 16:9 ratio, so you can frame any photo to fit the post header and listing cards.
-7. Set the **Author** -- it defaults to you, but you can search for and select any person in your database.
-8. Turn on **Published** and set a **Publish Date** when you are ready to make the post public. Leave it off to save the post as a draft.
+1. Clique em **Add Post** no canto superior direito.
+2. Digite um **Title**. Um slug amigável para URL é gerado automaticamente conforme você digita -- você pode editá-lo diretamente se quiser um endereço diferente.
+3. Adicione um **Excerpt** -- um resumo curto mostrado na listagem de posts, descrições de meta e feed RSS. Se deixar em branco, um é gerado automaticamente a partir do início do conteúdo do seu post.
+4. Escreva o corpo do post no editor **Content** usando Markdown. Clique em **Preview** para ver como o post formatado será exibido.
+5. Escolha uma **Category** (escolha uma existente ou digite uma nova) e **Tags** opcionais separadas por vírgula.
+6. Clique em **Select Image** para escolher uma foto de sua galeria [Files](files), ou envie uma nova. Fotos enviadas abrem em uma ferramenta de corte integrada travada em uma proporção 16:9, para que você possa enquadrar qualquer foto de modo a se ajustar ao cabeçalho do post e aos cartões da listagem.
+7. Defina o **Author** -- padrão é você, mas você pode pesquisar e selecionar qualquer pessoa em seu banco de dados.
+8. Ative **Published** e defina uma **Publish Date** quando estiver pronto para tornar o post público. Deixe desativado para salvar o post como rascunho.
 
 :::tip
-Set a **Publish Date** in the future to schedule a post. It stays hidden from visitors and shows a **Scheduled** chip in the Blog list until that date arrives.
+Defina uma **Publish Date** no futuro para agendar um post. Ele permanece oculto dos visitantes e mostra um chip **Scheduled** na lista Blog até essa data chegar.
 :::
 
-## Post States
+## Estados de Posts
 
-Each post in the list shows one of three states:
+Cada post na lista mostra um de três estados:
 
-- **Draft** -- Not published. Only visible in the admin.
-- **Scheduled** -- Published is on, but the publish date is in the future.
-- **Published** -- Live on your website and included in the RSS feed.
+- **Draft** -- Não publicado. Visível apenas no admin.
+- **Scheduled** -- Published está ativado, mas a data de publicação é no futuro.
+- **Published** -- Ao vivo no seu site e incluído no feed RSS.
 
-## Editing, Previewing, and Deleting Posts
+## Editando, Visualizando e Deletando Posts
 
-- Click the **Edit** icon next to a post to make changes.
-- Click the **View** icon (visible on published posts) to open the live post on your website in a new tab.
-- Click the **Delete** icon to permanently remove a post.
+- Clique no ícone **Edit** ao lado de um post para fazer alterações.
+- Clique no ícone **View** (visível em posts publicados) para abrir o post ao vivo no seu site em uma nova aba.
+- Clique no ícone **Delete** para remover permanentemente um post.
 
-## How Visitors See Your Blog
+## Como Visitantes Veem Seu Blog
 
-Published posts appear at `{yoursite}/blog`, 10 per page with **Older**/**Newer** links to page through your archive, along with a category filter and each post's byline and photo. Tags render as clickable chips too, letting visitors filter the list by tag the same way. Individual posts live at `{yoursite}/blog/{slug}` and include related posts from the same category. The blog page also publishes an RSS feed, auto-discoverable by feed readers and automation tools like Zapier.
+Posts publicados aparecem em `{yoursite}/blog`, 10 por página com links **Older**/**Newer** para navegar pelo seu arquivo, junto com um filtro de categoria e a linha de rodapé e foto de cada post. Tags são renderizadas como chips clicáveis também, permitindo que visitantes filtrem a listagem por tag da mesma forma. Posts individuais estão em `{yoursite}/blog/{slug}` e incluem posts relacionados da mesma categoria. A página de blog também publica um feed RSS, descoberto automaticamente por leitores de feed e ferramentas de automação como Zapier.
 
 :::info
-Blog posts are a separate content type from regular website pages -- they are not built in the [page editor](page-editor) and do not appear in the Pages list. This keeps blog authoring fast and focused on writing.
+Posts de blog são um tipo de conteúdo separado de páginas normais de site -- eles não são construídos no [editor de página](page-editor) e não aparecem na lista de Páginas. Isso mantém a autoria de blog rápida e focada na escrita.
 :::
 
-## Next Steps
+## Próximas Etapas
 
-- [Managing Pages](managing-pages) -- Add a navigation link to your blog
-- [Files](files) -- Upload photos to use in your posts
-- [Zapier Integration](../integrations/zapier.md) -- Trigger automations when new posts are published
+- [Managing Pages](managing-pages) -- Adicione um link de navegação para seu blog
+- [Files](files) -- Envie fotos para usar em seus posts
+- [Zapier Integration](../integrations/zapier.md) -- Dispare automações quando novos posts são publicados

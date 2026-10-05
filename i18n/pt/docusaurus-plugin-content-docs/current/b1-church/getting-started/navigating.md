@@ -1,79 +1,81 @@
 ---
-title: "Navegando em B1App"
+title: "Navegando no B1App"
 ---
 
-# Navegando em B1App
+# Navegando no B1App
 
 <div class="article-intro">
 
-O portal de membros em B1.church é um aplicativo web otimizado para telefone que fica em `/mobile`. Funciona em qualquer navegador e pode ser instalado na sua tela inicial. Esta página explica o painel Home, a barra de abas inferior, o menu Mais e a página Meu Perfil.
+O portal de membros em B1.church é um aplicativo web primeiro para telefone que fica sob `/mobile`. Funciona em qualquer navegador e pode ser instalado na sua tela inicial. Esta página explica o painel inicial, a barra de guias inferior, o menu Mais e a página Me.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Você precisa estar [conectado](./logging-in.md) para ver suas informações pessoais. Visitantes não conectados ainda podem navegar conteúdo público e são oferecidos um botão **Conectar** onde um recurso requer uma conta.
+- Você precisa estar [conectado](./logging-in.md) para ver suas informações pessoais. Visitantes desconectados ainda podem navegar conteúdo público e são oferecidos um botão **Entrar** onde um recurso requer uma conta.
 
 </div>
 
 ## Home
 
-Abrir `https://yourchurchname.b1.church/mobile` leva você ao painel **Home** em `/mobile/dashboard`. Home é a página de destino do portal de membros e mostra:
+Abrir `https://yourchurchname.b1.church/mobile` leva você ao painel **Home** em `/mobile/dashboard`. Home é a página de desembarque do portal de membros e mostra:
 
 - Uma saudação com seu nome
 - O versículo do dia
-- Um cartão em destaque para tudo o que sua igreja destacou
-- Uma grade **Explorar** das ferramentas que sua igreja ativou -- grupos, doações, registro, sermões, planos, e mais
+- Um cartão em destaque para o que sua igreja destacou
+- Uma grade **Explorar** das ferramentas que sua igreja ativou -- grupos, doações, check-in, sermões, planos, e muito mais
 
-Tocar em um cartão em Explorar abre essa ferramenta. Se sua igreja tem mais ferramentas do que cabem no painel, o último cartão é **Mais**, que abre a lista completa em `/mobile/more`.
+Tocar em um cartão no Explorar abre essa ferramenta. Se sua igreja tem mais ferramentas do que cabem no painel, o último cartão é **Mais**, que abre a lista completa em `/mobile/more`.
 
-## A Barra de Abas Inferior
+Se você está desconectado, Home mostra um título **Bem-vindo** no lugar da saudação, com um aviso curto ("Faça login para ver seus grupos, doações e muito mais.") e um botão **Entrar**. Sua igreja pode reescrever este aviso ou ocultá-lo -- veja [Configurações de App Móvel](../../b1-admin/settings/mobile-app.md#home-screen-sign-in-prompt). Quando está oculto, você ainda pode entrar no menu ou na guia Me.
 
-Em um telefone, uma barra de abas fica fixa na parte inferior da tela:
+## A Barra de Guias Inferior
 
-- **Home** -- sempre a primeira aba
-- Até três das abas que sua igreja configurou
+Em um telefone, uma barra de guias é fixada na parte inferior da tela:
+
+- **Home** -- sempre a primeira guia
+- Até três das guias que sua igreja configurou
 - **Mais** -- abre o menu de navegação
 
-Se sua igreja configurou mais de três abas, o resto não é perdido: elas aparecem no menu **Mais** e na grade Explorar do painel. Os administradores da igreja definem a ordem das abas em B1 Admin sob **Mobile → Navegação**.
+Se sua chiesa configurou mais de três guias, o resto não é perdido: eles aparecem no menu **Mais** e na grade Explorar do painel. Os administradores da iglesia definem a ordem das guias no B1 Admin em **Mobile → Navigation**.
 
 ## O Menu
 
-Tocar em **Mais** abre o menu de navegação. Em um tablet ou desktop o mesmo menu é sempre visível ao longo do lado esquerdo da tela. Contém:
+Tocar em **Mais** abre o menu de navegação. Em um tablet ou desktop o mesmo menu está sempre visível ao longo do lado esquerdo da tela. Ele contém:
 
-- Seu nome e foto, com um atalho **Editar Perfil** — veja [Editando Seu Perfil](./editing-your-profile.md)
-- **Home** e **Meu Perfil**
-- **Portal do Admin** -- apenas mostrado se você tem permissões de administrador em sua igreja; abre B1 Admin
-- Cada aba que sua igreja configurou, em ordem
+- Seu nome e foto, com um atalho **Editar Perfil** -- veja [Editando Seu Perfil](./editing-your-profile.md)
+- **Home** e **Me**
+- **Portal de Administrador** -- apenas mostrado se você tem permissões de administrador em sua igreja; ele abre B1 Admin
+- Cada guia que sua chiesa configurou, em ordem
 - **Instalar App** -- abre as [instruções de instalação](./installing-pwa.md) em `/mobile/install`
-- Um alternador de modo claro/escuro
-- **Conectar** ou **Desconectar**
-- O nome de sua igreja e um link para a política de privacidade
+- Um botão de alternância de modo claro/escuro
+- **Entrar** ou **Logout**
+- O nome da sua iglesia e um link para a política de privacidade
 
-## A Barra de Apps
+## A Barra de Aplicativo
 
-A barra na parte superior de cada tela mostra:
+A barra no topo de cada tela mostra:
 
-- O título da tela, ou o nome de sua igreja em Home
-- Uma seta para trás quando você explorou para uma tela de detalhes
-- Um ícone de **sino** para notificações e mensagens, com um badge para itens não lidos
-- Sua **foto de perfil**, que abre seu perfil em `/mobile/profileEdit` — veja [Editando Seu Perfil](./editing-your-profile.md)
+- O título da tela, ou o nome da sua iglesia em Home
+- Uma seta voltar quando você detalhou uma tela de detalhes
+- Um ícone de **sino** para notificações e mensagens, com um distintivo para itens não lidos
+- Sua **foto de perfil**, que abre seu perfil em `/mobile/profileEdit` -- veja [Editando Seu Perfil](./editing-your-profile.md)
 
-## A Página Meu Perfil
+## A Página Me
 
-**Meu Perfil** (`/mobile/me`) é seu hub pessoal. Lista atalhos para seu perfil, [preferências de notificação](./notification-preferences.md), mensagens, [doações](../giving/), e [registros](../events/my-registrations.md), seguidos pelo que está vindo para você -- atribuições de serviço, registros de eventos e eventos de grupos -- e suas notificações mais recentes. Veja [A Página Meu Perfil](./me-page) para detalhes.
+**Me** (`/mobile/me`) é seu centro pessoal. Lista atalhos para seu perfil, [preferências de notificação](./notification-preferences.md), mensagens, [doações](../giving/), e [registros](../events/my-registrations.md), seguido pelo que vem por aí para você -- atribuições de serviço, registros de evento e eventos de grupo -- e suas notificações mais recentes. Veja [A Página Me](./me-page) para detalhes.
 
-Se você está desconectado, a página Meu Perfil mostra um botão **Conectar** em vez disso.
+Se você está desconectado, a página Me mostra um botão **Entrar** em vez disso.
 
 ## Instalando na Sua Tela Inicial
 
-O portal de membros é um Aplicativo Web Progressivo. Visite `/mobile/install` (ou escolha **Instalar App** no menu) para instruções passo a passo para seu dispositivo. Depois de instalado, ele abre em tela inteira de sua tela inicial sem chrome do navegador. Veja [Instalando como um App (PWA)](./installing-pwa.md).
+O portal de membros é um Progressive Web App. Visite `/mobile/install` (ou escolha **Instalar App** no menu) para instruções passo a passo para seu dispositivo. Após instalado, ele abre em tela cheia a partir da sua tela inicial sem interface do navegador. Veja [Instalando como um App (PWA)](./installing-pwa.md).
 
-## O Site Público de Sua Igreja
+## Site Público da Sua Igreja
 
-Fora do portal de membros, o site público de sua igreja tem sua própria navegação de cabeçalho com links que seus administradores configuraram -- páginas como [sermões](../content/sermons.md), a [Bíblia](../content/bible.md), [transmissão ao vivo](../content/live-streaming.md), e uma lista de grupos públicos. Em um telefone esses links vivem atrás do ícone de menu no topo direito do cabeçalho.
+Fora do portal de membros, o site público da sua iglesia tem seu próprio cabeçalho de navegação com links que seus administradores configuraram -- páginas como [sermões](../content/sermons.md), a [Bíblia](../content/bible.md), [transmissão ao vivo](../content/live-streaming.md), e uma lista de grupo público. Em um telefone esses links ficam atrás do ícone de hambúrguer no topo direito do cabeçalho.
 
 :::info
-As abas e ferramentas que você vê variam por igreja. Os administradores controlam quais seções são visíveis para membros através de B1 Admin, então se você não vir um recurso descrito aqui, sua igreja pode não tê-lo ativado.
+As guias e ferramentas que você vê variam por iglesia. Os administradores controlam quais seções são visíveis aos membros através do B1 Admin, portanto, se você não vir um recurso descrito aqui, sua iglesia pode não tê-lo ativado.
 :::

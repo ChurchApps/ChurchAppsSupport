@@ -21,7 +21,7 @@ The Plans Overview gives you a bird's-eye view of all your volunteer assignments
 
 ## Accessing the Overview
 
-1. Navigate to **Serving** from the main menu in B1 Admin.
+1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Serving**, and click **Plans**.
 2. Select a **ministry tab** at the top of the page.
 3. Click on a **plan type** to open its plan list.
 4. Click the **Overview** button near the top of the page.

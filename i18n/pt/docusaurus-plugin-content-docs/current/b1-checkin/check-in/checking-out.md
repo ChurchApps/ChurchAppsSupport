@@ -1,69 +1,70 @@
 ---
-title: "Checkout e Segurança da Criança"
+title: "Saída e Segurança da Criança"
 ---
 
-# Checkout e Segurança da Criança
+# Saída e Segurança da Criança
 
 <div class="article-intro">
 
-Check-out closes the loop on child check-in: a parent presents the security code from their pickup label, the kiosk verifies who is picking up, and the children are checked out. Manned stations also get safety tools — trusted-pickup verification, page-a-parent texts, security-label reprints, and an emergency broadcast.
+Check-out fecha o ciclo de check-in infantil: um pai apresenta o código de segurança de seu rótulo de retirada, o quiosque verifica quem está retirando, e as crianças são feitas check-out. Estações gerenciadas também obtêm ferramentas de segurança -- verificação de retirada confiável, textos de página de pai, reimpressões de rótulo de segurança e uma transmissão de emergência.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Antes de Começar</h4>
 
-- Check-out is available on stations set to **manned** mode in the kiosk admin settings
-- Children must have been [checked in](./completing-checkin) with a printed pickup label carrying the security code
-- Paging and emergency broadcasts require your church to have a texting provider connected in B1 Admin
+- Check-out está disponível em estações definidas para modo **manned** nas configurações de admin do quiosque
+- As crianças devem ter sido [checked in](./completing-checkin) com um rótulo de retirada impresso carregando o código de segurança
+- Paging e transmissões de emergência requerem que sua igreja tenha um provedor de textos conectado no B1 Admin
 
 </div>
 
-## Starting a Check-Out
+## Iniciando um Check-Out
 
-1. On a manned station, tap **Check Out** on the lookup screen.
-2. Enter the 4-character **security code** from the family's pickup label. You can type it, use the on-screen keypad, or scan the label's barcode with a USB or Bluetooth scanner — the code submits automatically once all 4 characters are entered.
-3. The kiosk shows the children checked in under that code.
+1. Em uma estação gerenciada, toque em **Check Out** na tela de busca.
+2. Digite o **security code** de 4 caracteres do rótulo de retirada da família. Você pode digitá-lo, usar o teclado na tela ou escanear o código de barras do rótulo com um scanner USB ou Bluetooth -- o código é enviado automaticamente uma vez que todos os 4 caracteres são digitados.
+   - Sem scanner? Toque em **Scan** abaixo do campo de código para usar a câmera do tablet em seu lugar. Segure o código QR ou código de barras do rótulo de retirada até a câmera na janela **Scan pickup code** e o código é digitado para você. A câmera traseira é usada por padrão; toque no botão de flip para trocar câmeras, ou toque em **Cancel** para voltar a digitar.
+3. O quiosque mostra as crianças registradas sob aquele código.
 
-## Verifying Who Is Picking Up
+## Verificando Quem Está Retirando
 
-The check-out screen asks who is picking the children up:
+A tela de check-out pergunta quem está retirando as crianças:
 
-- **Trusted pickup people** for the household appear as tappable cards with their photo and relationship — tap the person standing in front of you.
-- **Household adults** also appear in a photo grid.
-- **Other** lets you type a name for someone not on the list.
+- **Trusted pickup people** para a família aparecem como cartões tocáveis com sua foto e relacionamento -- toque a pessoa na sua frente.
+- **Household adults** também aparecem em uma grade de fotos.
+- **Other** permite que você digite um nome para alguém não na lista.
 
-If a typed name matches someone marked **Not Authorized** for that household, the kiosk blocks the check-out with a warning. A staff member can choose **Override** to proceed anyway — the override is recorded on the attendance record with the person's name.
+Se um nome digitado corresponder a alguém marcado como **Not Authorized** para aquela família, o quiosque bloqueia o check-out com um aviso. Um membro da equipe pode escolher **Override** para continuar mesmo assim -- o override é registrado no registro de comparecimento com o nome da pessoa.
 
-Once the picker is confirmed, tap check out. The pickup person's name is stored with the attendance record.
+Uma vez que o quem está retirando é confirmado, toque em check out. O nome da pessoa de retirada é armazenado com o registro de comparecimento.
 
 :::info
-Trusted and not-authorized pickup people are managed by church staff on each person's page in B1 Admin — see [Check-In Safety](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+Pessoas confiáveis de retirada e não autorizadas são gerenciadas pela equipe da igreja na página de cada pessoa no B1 Admin -- consulte [Check-In Safety](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
 :::
 
-## Paging a Parent
+## Paging de um Pai
 
-Need a parent during the service — a diaper change, a crying child? From the check-out screen on a manned station, staff can send a **page**: a text message to the child's parents or guardians through the church's texting provider. Parents who opted out of texts or have no mobile number are skipped, and the kiosk shows how many messages were sent.
+Precisa de um pai durante o serviço -- uma mudança de fralda, uma criança chorando? Da tela de check-out em uma estação gerenciada, a equipe pode enviar um **page**: uma mensagem de texto para os pais ou guardiões da criança através do provedor de textos da igreja. Pais que optaram por sair de textos ou não têm número móvel são pulados, e o quiosque mostra quantas mensagens foram enviadas.
 
-## Reprinting Labels
+## Reimprimindo Rótulos
 
-If a nametag or pickup label is lost or damaged, staff on a manned station can **reprint** the family's labels from the check-out screen after entering the security code. The reprint uses the same printer and label templates as the original check-in.
+Se um nome ou rótulo de retirada for perdido ou danificado, a equipe em uma estação gerenciada pode **reprint** os rótulos da família da tela de check-out após digitar o código de segurança. A reimpressão usa a mesma impressora e modelos de rótulo como o check-in original.
 
-## Emergency Broadcast
+## Transmissão de Emergência
 
-In an emergency, staff can text the guardians of **every checked-in child** for the current service at once:
+Em uma emergência, a equipe pode enviar um texto aos guardiões de **every checked-in child** para o serviço atual de uma vez:
 
-1. Open the kiosk **admin settings** (7 rapid taps on the header logo, plus the PIN if one is set).
-2. Tap **Emergency broadcast**.
-3. Enter the message, then type **EMERGENCY** in the confirmation field — the **Send broadcast** button stays disabled until you do.
-4. The kiosk reports how many phones received the message and how many people were skipped (opted out or no mobile number).
+1. Abra as **admin settings** do quiosque (7 toques rápidos no logo do cabeçalho, mais o PIN se um for definido).
+2. Toque em **Emergency broadcast**.
+3. Digite a mensagem, depois digite **EMERGENCY** no campo de confirmação -- o botão **Send broadcast** permanece desativado até que você o faça.
+4. O quiosque relata quantos telefones receberam a mensagem e quantas pessoas foram puladas (optaram por sair ou não têm número móvel).
 
 :::warning
-The broadcast goes to every checked-in household for the selected service. Use it for genuine emergencies — evacuations, lockdowns, severe weather.
+A transmissão vai para toda família de check-in para o serviço selecionado. Use para emergências genuínas -- evacuações, lockdowns, tempo severo.
 :::
 
 ## Artigos Relacionados
 
-- [Completing Check-In](./completing-checkin) — where security codes and pickup labels come from
-- [Check-In Safety](../../b1-admin/attendance/checkin-safety) — configuring capacities, ratios, pickup people, and the texting provider requirement
-- [Printer Setup](../getting-started/printer-setup) — label printer configuration
+- [Completing Check-In](./completing-checkin) — de onde códigos de segurança e rótulos de retirada vêm
+- [Check-In Safety](../../b1-admin/attendance/checkin-safety) -- configurando capacidades, proporções, pessoas de retirada e o requisito de provedor de textos
+- [Printer Setup](../getting-started/printer-setup) -- configuração de impressora de rótulo

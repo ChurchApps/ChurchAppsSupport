@@ -6,36 +6,36 @@ title: "Persone"
 
 <div class="article-intro">
 
-La sezione **Persone** è il cuore della gestione della tua chiesa in B1 Admin. Qui è dove mantieni la tua directory della chiesa -- cercando i membri, aggiungendo nuove persone, visualizzando e modificando i profili, e tracciando le famiglie. Che tu abbia una piccola congregazione o una grande, mantenere i tuoi record di persone organizzati è la base che alimenta ogni altra funzione in B1.
+La sezione **Persone** è il cuore della gestione della tua chiesa in B1 Admin. È qui che mantieni la directory della tua chiesa -- cercando i membri, aggiungendo nuove persone, visualizzando e modificando i profili e tracciando i nuclei familiari. Che tu abbia una congregazione piccola o grande, mantenere i tuoi record di persone organizzati è il fondamento che alimenta ogni altra funzionalità in B1.
 
 </div>
 
-## Cosa puoi fare
+## Cosa Puoi Fare
 
-Ecco una panoramica delle caratteristiche chiave disponibili nella sezione Persone:
+Ecco una panoramica delle funzionalità chiave disponibili nella sezione Persone:
 
-1. **Ricerca nella tua directory** -- Usa la barra di ricerca veloce per trovare chiunque per nome, o sfrutta i filtri avanzati e la ricerca del linguaggio naturale alimentata dall'IA per localizzare esattamente chi ti serve. Vedi [Ricerca persone](./searching-people.md) e [Ricerca IA](./ai-search.md) per i dettagli.
+1. **Cerca nella tua directory** -- Utilizza la barra di ricerca veloce per trovare chiunque per nome, o approfitta dei filtri avanzati e della ricerca in linguaggio naturale alimentata dall'IA per trovare esattamente chi ti serve. Vedi [Ricerca Persone](./searching-people.md) e [Ricerca IA](./ai-search.md) per i dettagli.
 
-2. **Salva query di ricerca come liste** -- Salva qualsiasi ricerca o filtro come lista denominata in modo da poterla ricaricare con un clic. Vedi [Liste salvate](./lists.md).
+2. **Salva le query di ricerca come Elenchi** -- Salva qualsiasi ricerca o filtro come elenco denominato in modo da poterlo ricaricare con un clic. Vedi [Elenchi Salvati](./lists.md).
 
-3. **Visualizza demografica** -- Vedi una suddivisione visuale della tua congregazione per età, genere, stato civile, stato di iscrizione e campus — e fai clic su qualsiasi segmento di grafico per analizzare quelle persone. Vedi [Demografica](./demographics.md).
+3. **Visualizza Dati Demografici** -- Vedi un'analisi visiva della tua congregazione per età, genere, stato coniugale, stato di iscrizione e campus — e fai clic su qualsiasi segmento del grafico per approfondire quelle persone. Vedi [Dati Demografici](./demographics.md).
 
-4. **Aggiungi nuove persone** -- Aggiungi rapidamente individui alla tua directory e riempi i dettagli del loro profilo, informazioni di contatto e connessioni familiari. Vedi [Aggiunta di persone](./adding-people.md) per istruzioni passo dopo passo.
+4. **Aggiungi nuove persone** -- Aggiungi rapidamente persone alla tua directory e compila i dettagli del loro profilo, le informazioni di contatto e le connessioni familiari. Vedi [Aggiunta di Persone](./adding-people.md) per istruzioni passo dopo passo.
 
-5. **Modifica in massa le persone** -- Aggiorna più persone contemporaneamente cambiando il loro stato di iscrizione, stato civile, genere, preferenze di disabilitazione o iscrizioni ai gruppi. Questo risparmia tempo quando si apporta la stessa modifica a molti individui. Vedi [Modifica in massa](./bulk-editing.md).
+5. **Modifica in massa le persone** -- Aggiorna più persone contemporaneamente modificando il loro stato di iscrizione, stato coniugale, genere, preferenze di esclusione o appartenenze ai gruppi. Questo consente di risparmiare tempo quando si apporta la stessa modifica a molti individui. Vedi [Modifica in Massa](./bulk-editing.md).
 
-6. **Stampa la tua directory** -- Genera una directory membro formattata e stampabile raggruppata per famiglia, completa di foto e informazioni di contatto. Vedi [Stampa directory](./print-directory.md).
+6. **Stampa la tua directory** -- Genera una directory dei membri formattata e stampabile, raggruppata per nucleo familiare, completa di foto e informazioni di contatto. Vedi [Stampa Directory](./print-directory.md).
 
-7. **Importa ed esporta dati** -- Porta dati di membri da un file CSV o esegui la migrazione da un altro sistema di gestione della chiesa come Breeze. Puoi anche esportare la tua directory su CSV in qualsiasi momento. Vedi [Importazione dati](./importing-data.md) ed [Esportazione dati](./exporting-data.md).
+7. **Importa ed esporta dati** -- Porta i dati dei membri da un file CSV o migra da un altro sistema di gestione della chiesa come Breeze. Puoi anche esportare la tua directory su CSV in qualsiasi momento. Vedi [Importazione dei Dati](./importing-data.md) e [Esportazione dei Dati](./exporting-data.md).
 
-8. **Gestisci profili** -- Visualizza e modifica profili dettagliati per ogni persona, inclusi informazioni di contatto, membri della famiglia, [iscrizioni ai gruppi](../groups/group-members.md), [cronologia presenze](../attendance/tracking-attendance.md), [donazioni](../donations/recording-donations.md) e [moduli personalizzati](../forms/creating-forms.md). Passa il mouse su un'email, indirizzo o numero di telefono nell'intestazione del profilo blu per copiarlo con un clic.
+8. **Gestisci i profili** -- Visualizza e modifica i profili dettagliati per ogni persona, incluse le informazioni di contatto, i membri del nucleo familiare, le [appartenenze ai gruppi](../groups/group-members.md), la [cronologia della frequenza](../attendance/tracking-attendance.md), le [donazioni](../donations/recording-donations.md) e i [moduli personalizzati](../forms/creating-forms.md). Passa il mouse sopra un indirizzo email, un indirizzo o un numero di telefono nell'intestazione del profilo blu per copiarlo con un clic.
 
-9. **Assegna ruoli e autorizzazioni** -- Controlla chi nel tuo team può accedere a diverse parti di B1 Admin assegnando ruoli. Vedi [Assegnazione di ruoli](./roles-permissions.md).
+9. **Assegna ruoli e autorizzazioni** -- Controlla chi del tuo team può accedere a diverse parti di B1 Admin assegnando ruoli. Vedi [Assegnazione di Ruoli](./roles-permissions.md).
 
-## Guida introduttiva
+## Primi Passi
 
-Per accedere alla sezione Persone, apri il **menu sezione** nell'angolo in alto a sinistra di B1 Admin (il nome della sezione con la piccola freccia) e scegli **Persone**. Vedrai la tua directory della chiesa completa con una barra di ricerca in alto e un elenco di membri sotto.
+Per accedere alla sezione Persone, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin), espandi **Persone** e fai clic su **Persone**. Vedrai la tua intera directory della chiesa con una barra di ricerca in alto e un elenco di membri sottostante.
 
 :::tip
-Se stai configurando B1 per la prima volta, inizia [importando i tuoi dati di membri esistenti](./importing-data.md). Quindi rivedi e pulisci i profili come necessario.
+Se stai configurando B1 per la prima volta, inizia [importando i dati dei tuoi membri esistenti](./importing-data.md). Quindi esamina e pulisci i profili secondo le esigenze.
 :::

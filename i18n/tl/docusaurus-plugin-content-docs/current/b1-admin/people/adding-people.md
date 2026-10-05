@@ -1,83 +1,101 @@
 ---
-title: "Pagdagdag ng Mga Tao"
+title: "Pagdaragdag ng mga Tao"
 ---
 
-# Pagdagdag ng Mga Tao
+# Pagdaragdag ng mga Tao
 
 <div class="article-intro">
 
-Ang seksyon ng Mga Tao ay ang pundasyon ng B1 Admin -- ito ay ang iyong church member database. Bawat ibang feature (mga grupo, dumalo, mga donation, mga form) ay nababaligtad sa mga record ng tao. Ang gabay na ito ay gumagabay sa iyo sa pagdagdag ng isang tao sa iyong database, pag-edit ng kanilang mga detalye, at pag-link ng mga miyembro ng pamilya sa mga tahanan.
+Ang seksyong People ang pundasyon ng B1 Admin — ito ang database ng mga miyembro ng inyong simbahan. Ang bawat iba pang tampok (mga grupo, attendance, mga donasyon, mga form) ay konektado sa mga record ng tao. Ginagabayan ka ng gabay na ito sa pagdaragdag ng isang tao sa iyong database, pag-edit ng kanyang mga detalye, at pag-uugnay ng mga miyembro ng pamilya sa mga sambahayan.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Ka Magsimula</h4>
+<h4>Bago Magsimula</h4>
 
-- Kailangan mo ng isang active B1 Admin account na may pahintulot upang pamahalaan ang mga tao. Tingnan ang [Mga Papel & Pahintulot](roles-permissions.md) kung hindi ka sigurado tungkol sa iyong antas ng access.
-- Kung nagdagdag ka ng higit sa iilan na mga tao, isaalang-alang ang paggamit ng [CSV Import](importing-data.md) tool sa halip.
+- Kailangan mo ng aktibong B1 Admin account na may pahintulot na pamahalaan ang mga tao. Tingnan ang [Mga Tungkulin at Pahintulot](roles-permissions.md) kung hindi ka sigurado sa antas ng iyong access.
+- Kung higit sa ilang tao ang idadagdag mo, isaalang-alang na gamitin na lang ang [CSV Import](importing-data.md).
 
 </div>
 
-## Pagdagdag ng isang Tao
+## Pagdaragdag ng Isang Tao
 
-1. Mag-navigate sa B1.church Admin dashboard.
-2. Buksan ang **section menu** sa itaas-kaliwa na sulok at pumili ng **Mga Tao**.
-3. I-click ang **Add Person** button sa itaas na kanang sulok.
-4. Punan ang pangalan, pangalawang pangalan, at email address ng tao, pagkatapos i-click ang **Idagdag**.
+1. Pumunta sa dashboard ng B1.church Admin.
+2. Buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), i-expand ang **People**, at i-click ang **People**.
+3. I-click ang button na **Add Person** sa kanang itaas na sulok.
+4. Ilagay ang first name, last name, at email address ng tao, pagkatapos ay i-click ang **Add**.
 
-Ang pahina ng profile ng tao ay bubuksan, handa na sa iyo na magdagdag ng higit pang mga detalye.
+Bubuksan ang profile page ng tao, handa para sa pagdaragdag mo ng iba pang detalye.
 
 :::tip
-Kung gumagalaw ka mula sa ibang church management system, ang [Import Data](importing-data.md) feature ay nagbibigay-daan sa iyo na dalhin ang buong directory mula sa isang CSV file -- mas mabilis kaysa magdagdag ng mga tao ng isa.
+Kung lilipat ka mula sa ibang church management system, hinahayaan ka ng tampok na [Import Data](importing-data.md) na dalhin ang buong direktoryo mo mula sa isang CSV file — mas mabilis kaysa isa-isang pagdaragdag ng mga tao.
 :::
 
-### Mga Babala ng Duplicate
+### Mga Babala sa Duplicate
 
-Kung ang email address (o, kapag lumilikha ng isang tao mula sa buong Edit form, ang telepono o tumutugma na pangalan + pangalawang pangalan + araw ng pagkapanganakan) ay tumutugma sa isang taong nasa iyong database, isang **Posibleng Duplicate** dialog ay lilitaw bago ang bagong record ay i-save. Ito ay nagbabahagi ng bawat tumutugmang tao kasama ang kanilang email, telepono, at araw ng pagkapanganakan upang maaari mong ihambing.
+Kung ang email address (o, kapag lumilikha ng tao mula sa buong Edit form, ang numero ng telepono o ang magkatugmang first name + last name + petsa ng kapanganakan) ay tumutugma sa isang taong nasa database mo na, may lalabas na dialog na **Possible Duplicate** bago i-save ang bagong record. Inililista nito ang bawat katugmang tao kasama ang kanyang email, telepono, at petsa ng kapanganakan para maikumpara mo.
 
-- I-click ang **Gamitin ang Kasalukuyang** sa tabi ng isang tugma upang gamitin ang record ng taong iyon sa halip na lumikha ng isang bagong isa.
-- I-click ang **Lumikha Anyway** upang idagdag ang bagong tao kahit na ang isang posibleng tugma ay natuklasan.
+- I-click ang **Use Existing** sa tabi ng isang tugma para gamitin ang record ng taong iyon sa halip na lumikha ng bago.
+- I-click ang **Create Anyway** para idagdag ang bagong tao kahit may nakitang posibleng tugma.
 
-Ito ay nag-check lamang para sa mga duplicate kapag lumilikha ka ng isang brand-new na tao -- ang pag-edit ng isang umiiral na record ay hindi kailanman nag-trigger nito. Ito ay lamang pumipigil sa mga bagong duplicate; hindi ito nagsasama ng mga record na umiiral na.
+Sinusuri lang nito ang mga duplicate kapag lumilikha ka ng ganap na bagong tao — hindi ito kailanman na-trigger sa pag-edit ng umiiral na record. Pinipigilan lang nito ang mga bagong duplicate; hindi nito pinagsasama ang dalawang record na umiiral na.
 
-## Pag-edit ng Mga Detalye
+## Pag-edit ng mga Detalye
 
-1. Sa pahina ng profile ng tao, i-click ang **edit pencil** sa tabi ng kanilang pangalan.
-2. Punan ang karagdagang impormasyon tulad ng pangalawang pangalan, status ng pagiging miyembro, mga petsa, address, mga telepono, at (para sa mga bata at mag-aaral) grade at paaralan.
-3. I-click ang **I-save** upang magtipid ng personal na impormasyon.
+1. Sa profile page ng tao, i-click ang **edit pencil** sa tabi ng kanyang pangalan.
+2. Ilagay ang karagdagang impormasyon tulad ng middle name, katayuan ng pagiging miyembro, mga petsa, address, mga numero ng telepono, at (para sa mga bata at estudyante) grade at paaralan.
+3. I-click ang **Save** para i-store ang personal na impormasyon.
 
-Ang profile ay kinabibilangan din ng maraming mga tab para sa kaugnay na impormasyon:
+May ilang tab din ang profile para sa kaugnay na impormasyon:
 
-- **Mga Tala** -- Magdagdag ng mga tala tungkol sa tao (pastoral care, mga follow-up, atbp.)
-- **Mga Grupo** -- Tingnan at pamahalaan ang [group memberships](../groups/group-members.md)
-- **Dumalo** -- Tingnan ang kasaysayan ng indibidwal na bisita ng taong ito, kabilang ang campus, serbisyo, oras ng serbisyo, grupo, at isang **Nag-check In** na haligi na may oras ng pag-check in ng kiosk (ipinakita bilang isang dash para sa mga bisita na naitala nang walang pag-check in ng kiosk). Para sa mga trend sa buong simbahan kaysa sa kasaysayan ng isang tao, tingnan ang [Pag-track ng Dumalo](../attendance/tracking-attendance.md)
-- **Mga Donation** -- Tingnan ang [kasaysayan ng donation](../donations/recording-donations.md)
+- **Notes** — Magdagdag ng mga tala tungkol sa tao (pastoral care, follow-up, atbp.)
+- **Groups** — Tingnan at pamahalaan ang [pagiging miyembro sa mga grupo](../groups/group-members.md)
+- **Attendance** — Tingnan ang indibidwal na kasaysayan ng pagdalo ng taong ito, kasama ang campus, serbisyo, oras ng serbisyo, grupo, at isang column na **Checked In** na may oras ng kiosk check-in (ipinapakita bilang gitling para sa mga pagdalong na-record nang walang kiosk check-in). Para sa mga trend ng buong simbahan sa halip na kasaysayan ng isang tao, tingnan ang [Pagsubaybay ng Attendance](../attendance/tracking-attendance.md)
+- **Donations** — Tingnan ang [kasaysayan ng donasyon](../donations/recording-donations.md)
 
-## Pagtrabaho sa Mga Form
+## Pag-email sa Isang Tao
 
-Maaari kang magpuno ng mga customized na form nang direkta mula sa profile ng tao. Ito ay mga user-defined na form na maaari mong bumuo sa pamamagitan ng pagsunod sa [Paglikha ng Mga Form](../forms/creating-forms.md) gabay.
+Kung may email address na nakatala ang tao, may lalabas na button na **Email this person** (icon ng sobre) sa header ng profile.
 
-1. Sa profile ng tao, i-click ang **Forms** dropdown upang pumili ng isang form.
-2. I-click ang **Magdagdag ng Form** upang buksan ito.
-3. Punan ang mga detalye ng form at i-click ang **I-save**.
+1. Sa profile ng tao, i-click ang **icon ng sobre**.
+2. Magbubukas ang dialog na **Email** na may pangalan ng tao bilang pamagat, na nagpapakita ng **Sending to** kasama ang address ng tao.
+3. Opsyonal, pumili ng naka-save na template mula sa **Load Template (optional)**.
+4. Maglagay ng **Subject** at isulat ang mensahe.
+5. I-click ang **Send Email**.
 
-Pagkatapos magsumite ng isang form, i-click ang **print icon** sa tabi nito upang i-print ang mga sasagot na puno ng tao sa form.
+Para isulat ang mensahe sa sarili mong mail program, i-click ang **Open in my email app**.
 
 :::info
-Ang mga form na naka-link sa profile ng tao ay gumagamit ng uri ng **Mga Tao**. Kung kailangan mo ng isang standalone form (tulad ng event registration), tingnan ang [Stand Alone form option](../forms/creating-forms.md) sa gabay ng mga form.
+Ang pagpapadala mula sa B1 ay gumagamit ng parehong pag-apruba at pang-araw-araw na limitasyon gaya ng group email. Kung hindi pa naaprubahan ang inyong simbahan, hihilingin ng dialog na humiling ka ng review — maaari mo pa ring i-click ang **Open in my email app** sa pansamantala. Tingnan ang [Pag-on ng Group Email para sa Inyong Simbahan](../groups/group-members.md#turning-on-group-email-for-your-church). Ang mga user na walang pahintulot na mag-edit ng mga miyembro ng grupo ay direktang mapupunta sa kanilang email app kapag nag-click sila sa icon ng sobre.
+:::
+
+## Pagtatrabaho sa mga Form
+
+Maaari kang mag-fill out ng mga custom na form direkta mula sa profile ng isang tao. Ito ay mga form na tinukoy ng user na maaari mong buuin sa pamamagitan ng pagsunod sa gabay na [Paglikha ng mga Form](../forms/creating-forms.md).
+
+1. Sa profile ng tao, i-click ang dropdown na **Forms** para pumili ng form.
+2. I-click ang **Add Form** para buksan ito.
+3. Punan ang mga detalye ng form at i-click ang **Save**.
+
+Kapag naisumite na ang form, i-click ang **icon ng print** sa tabi nito para i-print ang mga sagot ng taong iyon.
+
+Kung napunta ang isang submission sa maling tao, i-click ang icon na **Change person** (dalawang arrow) sa tabi nito para ilipat ito sa iba o tanggalin ang pagkakaugnay. Tingnan ang [Pagpapalit ng Tao sa isang Submission](../forms/managing-submissions.md#changing-the-person-on-a-submission).
+
+:::info
+Ang mga form na nakaugnay sa profile ng isang tao ay gumagamit ng uri ng form na **People**. Kung kailangan mo ng standalone na form (tulad ng rehistrasyon sa event), tingnan ang [opsyong Stand Alone form](../forms/creating-forms.md) sa gabay sa mga form.
 :::
 
 :::tip
-Kung kailangan mo lamang na subaybayan ang isang o dalawang karagdagang piraso ng impormasyon sa mga tao -- isang petsa, isang numero, isang oo/hindi na sumagot -- gamitin ang [Custom Fields](../settings/custom-fields.md) sa halip na isang form. Sila ay mas mabilis na mapapuno at ay maaaring mahanap nang direkta sa Advanced Search.
+Kung isa o dalawang karagdagang impormasyon lang ang kailangan mong subaybayan sa mga tao — isang petsa, isang numero, isang sagot na oo/hindi — gamitin ang [Custom Fields](../settings/custom-fields.md) sa halip na form. Mas mabilis itong punan at direkta itong mahahanap sa Advanced Search.
 :::
 
-## Pag-manage ng mga Tahanan
+## Pamamahala ng mga Sambahayan
 
-Ang mga tahanan ay nagbibigay-daan sa iyo na i-link ang mga miyembro ng pamilya nang magkasama. Ito ay partikular na kapaki-pakinabang para sa [check-in](../attendance/check-in.md), kung saan ang magulang ay maaaring mag-check in ng lahat ng kanilang mga anak nang sabay-sabay.
+Hinahayaan ka ng mga sambahayan na iugnay ang mga miyembro ng pamilya. Lalo itong kapaki-pakinabang sa [check-in](../attendance/check-in.md), kung saan maaaring i-check in ng magulang ang lahat ng kanyang anak nang sabay-sabay.
 
-1. Sa profile ng tao, i-click ang **edit pencil** sa tabi ng pangalan ng tahanan.
-2. Ang editor ng tahanan ay bubuksan. Pumili ng **household role** para sa kasalukuyang tao (hal., Ulo, Asawa, Anak).
-3. I-click ang **Idagdag** upang magdagdag ng ibang miyembro ng tahanan.
-4. I-type ang pangalan ng tao sa search box at i-click ang **Maghanap**.
-5. Kapag ang tao ay lilitaw sa mga resulta ng paghahanap, i-click ang **Pumili**.
-6. Pumili ng kanilang household role at i-click ang **I-save** upang tapusin ang pag-setup ng tahanan.
+1. Sa profile ng isang tao, i-click ang **edit pencil** sa tabi ng pangalan ng sambahayan.
+2. Magbubukas ang household editor. Piliin ang **tungkulin sa sambahayan** ng kasalukuyang tao (hal., Head, Spouse, Child).
+3. I-click ang **Add** para magdagdag ng isa pang miyembro ng sambahayan.
+4. I-type ang pangalan ng tao sa search box at i-click ang **Search**.
+5. Kapag lumabas ang tao sa mga resulta ng paghahanap, i-click ang **Select**.
+6. Piliin ang kanyang tungkulin sa sambahayan at i-click ang **Save** para makumpleto ang setup ng sambahayan.

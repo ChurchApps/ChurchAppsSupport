@@ -6,124 +6,124 @@ title: "Check-In"
 
 <div class="article-intro">
 
-Sinusuportahan ng B1 Admin ang self check-in sa mga serbisyo sa pamamagitan ng kasama na **B1 Checkin** app. Maaaring mag-check-in ang mga miyembro ng kanilang sarili at ng kanilang mga pamilya sa mga kiosk o dedikadong device pagdating nila, na nagpapabilis ng proseso at binabawasan ang workload ng iyong mga volunteer. Bawat check-in ay awtomatikong nire-record bilang attendance.
+Sinusuportahan ng B1 Admin ang self check-in sa mga serbisyo sa pamamagitan ng kasamang app na **B1 Checkin**. Maaaring i-check in ng mga miyembro ang kanilang sarili at ang kanilang pamilya sa mga kiosk o nakalaang device pagdating nila, kaya mabilis ang proseso at nababawasan ang trabaho ng inyong mga volunteer. Awtomatikong naitatala bilang attendance ang bawat check-in.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Magsimula</h4>
 
-- Dapat na configured ang iyong mga campus, service time, at group sa [Attendance Setup](setup.md).
-- Kailangan mo ng [mga tao sa iyong database](../people/adding-people.md) na may [household](../people/adding-people.md#managing-households) na naka-setup para makasama-sama ang mga pamilya sa check-in.
-- Kailangan mo ng tablet at opsyonal na Brother label printer (tingnan ang [hardware recommendations](#recommended-hardware) sa ibaba).
+- Dapat naka-configure na ang inyong mga campus, oras ng serbisyo, at mga grupo sa [Attendance Setup](setup.md).
+- Kailangan ninyo ng [mga tao sa inyong database](../people/adding-people.md) na may naka-set up na [mga sambahayan](../people/adding-people.md#managing-households) para makapag-check in nang sama-sama ang mga pamilya.
+- Kakailanganin ninyo ng tablet at, kung nais, isang Brother label printer (tingnan ang [mga inirerekomendang hardware](#recommended-hardware) sa ibaba).
 
 </div>
 
 ## Paano Ito Gumagana
 
-Ang B1 Checkin app ay nag-connect sa iyong B1 Admin attendance setup. Kapag nag-check-in ang isang miyembro, ang kanilang attendance ay awtomatikong nire-record laban sa tamang campus, service time, at group. Hindi mo kailangang manu-manong ipasok ang attendance para sa sinumang gumagamit ng check-in system.
+Nakakonekta ang B1 Checkin app sa attendance setup ninyo sa B1 Admin. Kapag nag-check in ang isang miyembro, awtomatikong naitatala ang kanyang attendance sa tamang campus, oras ng serbisyo, at grupo. Hindi na ninyo kailangang manu-manong ilagay ang attendance ng sinumang gumagamit ng check-in system.
 
 ## Pag-set Up ng Check-In
 
-1. **Configure ang iyong attendance structure muna.** Sa B1 Admin, pumunta sa **Attendance > Setup** at siguraduhin na nandoon ang iyong mga campus, service time, at group. Nakadepende ang check-in app sa configuration na ito. Tingnan ang [Attendance Setup](setup.md) para sa mga detalye.
-2. **I-install ang B1 Checkin app** sa mga device na plano mong gamitin. Available ang app sa mga sumusunod na platform:
+1. **I-configure muna ang inyong attendance structure.** Sa B1 Admin, pumunta sa **Attendance > Setup** at tiyaking nakalagay na ang inyong mga campus, oras ng serbisyo, at mga grupo. Umaasa ang check-in app sa configuration na ito. Tingnan ang [Attendance Setup](setup.md) para sa mga detalye.
+2. **I-install ang B1 Checkin app** sa mga device na balak ninyong gamitin. Available ang app sa mga sumusunod na platform:
    - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Android/Samsung Tablets:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
    - **Amazon Fire Tablets:** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
-3. **Mag-sign in sa B1 Checkin app** gamit ang credentials ng iyong simbahan.
-4. **Piliin ang campus at service time** para sa kasalukuyang gathering.
-5. Maaari na ngayong ang mga miyembro na maghanap ng kanilang pangalan sa device at mag-check-in.
+3. **Mag-sign in sa B1 Checkin app** gamit ang account credentials ng inyong simbahan.
+4. **Piliin ang campus at oras ng serbisyo** para sa kasalukuyang pagtitipon.
+5. Maaari nang hanapin ng mga miyembro ang kanilang pangalan sa device at mag-check in.
 
 :::tip
-Ilagay ang check-in device sa nakikitang, madaling maabot na lokasyon tulad ng lobby entrance o welcome desk. Ang maikling announcement sa panahon ng mga serbisyo ay tumutulong sa mga miyembro na malaman na available ang opsyon.
+Ilagay ang mga check-in device sa mga lugar na kitang-kita at madaling abutin, tulad ng pasukan ng lobby o welcome desk. Makakatulong ang maikling anunsyo habang may serbisyo para malaman ng mga miyembro na may ganitong opsyon.
 :::
 
 :::tip
-Kung may mga campus ang iyong simbahan, kailangan mong ulitin ang setup para sa bawat campus sa [Attendance Setup](setup.md). Bawat check-in device ay maaaring i-configure para sa ibang campus.
+Kung may maraming campus ang inyong simbahan, kailangan ninyong ulitin ang setup para sa bawat campus sa [Attendance Setup](setup.md). Maaaring i-configure ang bawat check-in device para sa ibang campus.
 :::
 
-## Inirerekomendasyon na Hardware
+## Mga Inirerekomendang Hardware
 
-**Tablet** — ang sinumang ito ay gumagana nang maayos sa app:
+**Mga Tablet** — alinman sa mga ito ay mahusay gumana sa app:
 
 - **Compact:** Samsung Galaxy Tab A7 Lite 8.7"
-- **Large Screen:** Samsung Galaxy Tab A8 10.5"
+- **Malaking Screen:** Samsung Galaxy Tab A8 10.5"
 - **Budget:** Amazon Fire HD 10
 
-**Printer** — gumagana ang check-in sa Brother label printer para sa pag-print ng name tag:
+**Mga Printer** — gumagana ang check-in sa mga Brother label printer para sa pag-print ng name tag:
 
-- **Best:** Brother QL-1110NWB (sumusuporta ng maraming tablet via Bluetooth at WiFi)
-- **Good:** Brother QL-810W (sumusuporta ng maraming tablet via WiFi)
-- **Budget:** Brother QL-1100 (WiFi lang)
+- **Pinakamahusay:** Brother QL-1110NWB (sumusuporta sa maraming tablet sa pamamagitan ng Bluetooth at WiFi)
+- **Maganda:** Brother QL-810W (sumusuporta sa maraming tablet sa pamamagitan ng WiFi)
+- **Budget:** Brother QL-1100 (WiFi lamang)
 
-**Labels:** Brother DK-1201 (1-1/7" x 3-1/2")
+**Mga Label:** Brother DK-1201 (1-1/7" x 3-1/2")
 
 :::warning
-Lamang ang Brother label printer ang compatible sa B1 Checkin app. Hindi gumagana ang ibang brand ng printer para sa pag-print ng name tag.
+Mga Brother label printer lamang ang compatible sa B1 Checkin app. Hindi gagana ang ibang brand ng printer sa pag-print ng name tag.
 :::
 
 :::info
-Sundin ang setup instruction ng iyong printer para ikonekta ito sa parehong WiFi network ng iyong tablet. Makikita mo ang Brother printer driver at setup guide sa [Brother support site](https://support.brother.com).
+Sundin ang mga tagubilin sa setup ng inyong printer para ikonekta ito sa parehong WiFi network ng inyong tablet. Makikita ninyo ang mga driver at gabay sa setup ng Brother printer sa [Brother support site](https://support.brother.com).
 :::
 
-## Pagkusubaybayan ang Hitsura ng Kiosk
+## Pag-customize ng Hitsura ng Kiosk
 
-Maaari mong i-customize ang look at feel ng B1 Checkin app upang tumugma sa branding ng iyong simbahan. Sa B1 Admin, pumunta sa **Attendance > Kiosk Theme** upang i-configure:
+Maaari ninyong i-customize ang hitsura at dating ng B1 Checkin app para tumugma sa branding ng inyong simbahan. Sa B1 Admin, pumunta sa **Mobile > B1 CheckIn** at gamitin ang card na **Kiosk Theme** para i-configure ang:
 
-### Kulay
+### Mga Kulay
 
-I-customize ang walong color setting upang tumugma sa iyong church branding:
+I-customize ang walong setting ng kulay para tumugma sa branding ng inyong simbahan:
 
-- **Primary** at **Primary Contrast** -- Pangunahing brand color at ang text color nito.
-- **Secondary** at **Secondary Contrast** -- Accent color at ang text color nito.
-- **Header Background** at **Subheader Background** -- Kulay para sa kiosk header area.
-- **Button Background** at **Button Text** -- Kulay para sa interactive button.
+- **Primary** at **Primary Contrast** -- Ang pangunahing kulay ng brand at ang kulay ng teksto nito.
+- **Secondary** at **Secondary Contrast** -- Ang accent color at ang kulay ng teksto nito.
+- **Header Background** at **Subheader Background** -- Mga kulay para sa mga bahagi ng header ng kiosk.
+- **Button Background** at **Button Text** -- Mga kulay para sa mga button.
 
 ### Background Image
 
-I-upload ang optional background image para sa kiosk welcome at lookup screen. Ang inirerekomendasyon na laki ay 1920x1080 pixels.
+Mag-upload ng opsyonal na background image para sa welcome at lookup screen ng kiosk. Ang inirerekomendang laki ay 1920x1080 pixels.
 
 ### Idle Screen / Screensaver
 
-Mag-configure ng screensaver na nag-activate pagkatapos ng panahon ng inactivity:
+Mag-configure ng screensaver na gagana pagkatapos ng ilang sandaling walang gumagamit:
 
-1. I-toggle ang idle screen **on** o **off**.
-2. Itakda ang **timeout** (ilang segundo ng inactivity bago magsimula ang screensaver, minimum 10 segundo).
-3. Magdagdag ng isa o higit pang **slide** -- bawat slide ay may larawan at display duration (minimum 3 segundo).
+1. I-toggle ang idle screen na **on** o **off**.
+2. I-set ang **timeout** (ilang segundong walang gumagamit bago magsimula ang screensaver, minimum na 10 segundo).
+3. Magdagdag ng isa o higit pang **slide** -- may larawan at tagal ng pagpapakita ang bawat slide (minimum na 3 segundo).
 
 :::tip
-Gamitin ang idle screen upang ipakita ang mga announcement, paparating na event, o welcome message kapag hindi aktibong ginagamit ang kiosk.
+Gamitin ang idle screen para magpakita ng mga anunsyo, paparating na event, o mga mensahe ng pagtanggap kapag hindi aktibong ginagamit ang kiosk.
 :::
 
 ## Guest Registration sa pamamagitan ng QR Code
 
-Ang check-in kiosk ay maaaring magpakita ng QR code na sinuscan ng mga bisita upang i-register ang kanilang sarili at pamilya sa sariling kanilang telepono. Nagpapabilis ito ng check-in process para sa first-time guest.
+Maaaring magpakita ang check-in kiosk ng QR code na i-scan ng mga bisita para irehistro ang kanilang sarili at pamilya sa sarili nilang telepono. Pinabibilis nito ang check-in ng mga unang beses na bisita.
 
-Kapag sincan ng guest ang QR code, sila ay dadalhin sa [guest registration page](../../b1-church/checkin/guest-registration) kung saan sila nagpapasok ng kanilang pangalan, email, at mga miyembro ng pamilya. Ang isang volunteer ay maaaring tukuyin sila sa kiosk at i-check-in sila.
+Kapag na-scan ng bisita ang QR code, madadala siya sa [pahina ng guest registration](../../b1-church/checkin/guest-registration) kung saan ilalagay niya ang kanyang pangalan, email, at mga miyembro ng pamilya. Pagkatapos, maaari siyang hanapin ng isang volunteer sa kiosk at i-check in.
 
-### Pagpapagana ng QR Guest Registration
+### Pag-enable ng QR Guest Registration
 
-Upang i-on ang QR code display:
+Para i-on ang pagpapakita ng QR code:
 
-1. Sa B1 Admin, buksan ang **section menu** sa top-left corner (ang pangalan ng section na may maliit na arrow) at piliin ang **Mobile**.
-2. Piliin ang **B1 CheckIn** tab.
-3. I-toggle ang **QR Guest Registration** on at i-click ang **Save**.
+1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas) at i-expand ang **Mobile**.
+2. I-click ang **B1 CheckIn**.
+3. I-toggle na on ang **QR Guest Registration** at i-click ang **Save**.
 
 :::note
-Ang setting na ito ay nasa ilalim ng **Mobile**, hindi sa Attendance > Kiosk Theme.
+Ang setting na ito ay nasa **Mobile > B1 CheckIn** (parehong pahina ng card na **Kiosk Theme**), hindi sa Attendance.
 :::
 
 ### Pagbabahagi ng Registration Link
 
-Pagkatapos i-enable ang QR Guest Registration, ang **Share registration QR code** section ay lumilitaw sa ibaba ng toggle. Ito ay nagbibigay sa iyo ng dalawang paraan upang makarating ang mga bisita sa registration form bukod sa kiosk QR code:
+Kapag naka-enable na ang QR Guest Registration, may lalabas na seksyong **Share registration QR code** sa ilalim ng toggle. May dalawa kayong paraan dito para maihatid ang mga bisita sa registration form, bukod sa QR code sa kiosk:
 
-- **Copy link** — kinokopya ang registration URL para maaari mong i-paste ito sa iyong church website, sa mga email, o kahit saan online.
-- **Download PNG** — nag-download ng QR code bilang larawan na maaari mong i-print sa mga flyer, bulletin, o signage.
+- **Copy link** — kinokopya ang registration URL para mai-paste ninyo ito sa website ng simbahan, sa mga email, o saanman online.
+- **Download PNG** — dina-download ang QR code bilang larawan na maaari ninyong i-print sa mga flyer, bulletin, o signage.
 
 :::tip
-Idagdag ang registration link sa "Plan Your Visit" o "I'm New" page ng iyong church website upang ang mga bisita ay makapag-register kahit bago pa sila dumating.
+Idagdag ang registration link sa pahinang "Plan Your Visit" o "I'm New" ng website ng inyong simbahan para makapagrehistro ang mga bisita bago pa man sila dumating.
 :::
 
-## Ano ang Nire-record
+## Ano ang Naitatala
 
-Bawat check-in ay lumilikha ng attendance record sa B1 Admin. Maaari mong tingnan ang mga record na ito sa [Attendance](tracking-attendance.md) at [Groups](../groups/group-members.md) tabs tulad ng manu-manong ipinasok na attendance. Walang pagkakaiba kung paano lumilitaw ang data — ang parehong paraan ay nagsusumite sa parehong report.
+Bawat check-in ay lumilikha ng attendance record sa B1 Admin. Makikita ninyo ang mga record na ito sa mga tab na [Attendance](tracking-attendance.md) at [Groups](../groups/group-members.md), gaya ng attendance na manu-manong inilagay. Walang pagkakaiba sa paraan ng paglabas ng datos -- pareho silang napupunta sa iisang mga report.

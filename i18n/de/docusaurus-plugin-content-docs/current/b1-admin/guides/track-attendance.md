@@ -1,98 +1,98 @@
 ---
-title: 'Guide: Track Church Attendance'
+title: "Anleitung: Besucherzahlen im Blick behalten"
 ---
 
-# Track Church Attendance
+# Besucherzahlen im Blick behalten
 
 <div class="article-intro">
 
-Set up attendance tracking for your services and groups — from configuring campuses and service times, to recording attendance manually or via the self-service check-in app, to viewing trends in reports. By the end, you'll have a complete picture of who's attending and when.
+Richten Sie die Besucherverfolgung für Ihre Gottesdienste und Gruppen ein – von der Konfiguration von Standorten und Gottesdienstzeiten über die manuelle Erfassung von Besucherzahlen oder über die Selbstbedienungs-Check-in-App bis zur Anzeige von Trends in Berichten. Am Ende haben Sie einen umfassenden Überblick darüber, wer kommt und wann.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- B1 Admin account with admin access
-- [People added to your directory](../people/adding-people.md)
-- [Groups created](../groups/creating-groups.md) for the ministries you want to track
+- B1 Admin-Konto mit Administratorzugriff
+- [Personen in Ihr Verzeichnis eingefügt](../people/adding-people.md)
+- [Gruppen erstellt](../groups/creating-groups.md) für die Dienste, die Sie verfolgen möchten
 
 </div>
 
-## Step 1: Configure Campuses & Services
+## Schritt 1: Standorte und Gottesdienste konfigurieren
 
-Define where and when your church meets.
+Definieren Sie, wo und wann Ihre Kirche zusammenkommt.
 
-Follow the [Attendance Setup](../attendance/setup.md) guide to:
+Folgen Sie der [Anleitung zur Besuchererfassung](../attendance/setup.md):
 
-1. Add your campus (e.g., "Main Campus")
-2. Add service times (e.g., "Sunday 9:00 AM", "Sunday 11:00 AM", "Wednesday 7:00 PM")
-3. Assign groups to each service time to define what classes/ministries meet during that service
+1. Fügen Sie Ihren Standort hinzu (z. B. „Hauptgebäude")
+2. Fügen Sie Gottesdienstzeiten hinzu (z. B. „Sonntag 9:00 Uhr", „Sonntag 11:00 Uhr", „Mittwoch 19:00 Uhr")
+3. Weisen Sie Gruppen jeder Gottesdienstzeit zu, um zu definieren, welche Klassen/Dienste während dieses Gottesdienstes stattfinden
 
-## Step 2: Enable Group Attendance Tracking
+## Schritt 2: Besucherverfolgung für Gruppen aktivieren
 
-Turn on attendance tracking for the groups you want to monitor.
+Aktivieren Sie die Besucherverfolgung für die Gruppen, die Sie überwachen möchten.
 
-Follow the [Creating Groups](../groups/creating-groups.md) guide to:
+Folgen Sie der [Anleitung zum Erstellen von Gruppen](../groups/creating-groups.md):
 
-1. Edit each group you want to track and turn on "Track Attendance"
-2. Associate groups with service times so attendance is recorded against the right service
+1. Bearbeiten Sie jede Gruppe, die Sie verfolgen möchten, und aktivieren Sie „Besucherzahlen verfolgen"
+2. Verbinden Sie Gruppen mit Gottesdienstzeiten, damit die Besucherzahl gegen die richtige Andacht erfasst wird
 
 :::info
-Not every group needs attendance tracking. Enable it for groups where you want to monitor participation — children's classes, small groups, Sunday school, etc.
+Nicht jede Gruppe benötigt eine Besucherverfolgung. Aktivieren Sie sie für Gruppen, bei denen Sie die Teilnahme überwachen möchten – Kindergottesdienste, Kleingruppen, Sonntagsschule usw.
 :::
 
-## Step 3: Record Attendance Manually
+## Schritt 3: Besucherzahlen manuell erfassen
 
-Check off who attended each service and group.
+Markieren Sie, wer den jeweiligen Gottesdienst und jede Gruppe besuchte.
 
-Follow the [Recording Attendance](../attendance/recording-attendance.md) guide to:
+Folgen Sie der [Anleitung zur Besuchererfassung](../attendance/recording-attendance.md):
 
-1. Open a group's **Sessions** tab and add a session for the date and service time. Check **Also add for the other groups** to create sessions for every class at that service time at once.
-2. Check off who attended each group
+1. Öffnen Sie die Registerkarte **Sitzungen** einer Gruppe und fügen Sie eine Sitzung für das Datum und die Gottesdienstzeit hinzu. Kreuzen Sie **Auch für die anderen Gruppen hinzufügen** an, um Sitzungen für jede Klasse dieses Gottesdienstes gleichzeitig zu erstellen.
+2. Markieren Sie, wer jede Gruppe besuchte
 
 :::tip
-Manual tracking works great for adult services, small groups, and any situation where a check-in kiosk isn't practical.
+Die manuelle Verfolgung funktioniert hervorragend für Gottesdienste für Erwachsene, Kleingruppen und jede Situation, in der ein Check-in-Kiosk nicht praktisch ist.
 :::
 
-## Step 4: Set Up Self Check-In (Optional)
+## Schritt 4: Selbst-Check-in einrichten (optional)
 
-Let members check themselves in using a tablet kiosk.
+Lassen Sie Mitglieder sich selbst über einen Tablet-Kiosk einchecken.
 
-Follow the [Check-In](../attendance/check-in.md) guide to:
+Folgen Sie der [Check-in-Anleitung](../attendance/check-in.md):
 
-1. Install the B1 Checkin app on a tablet for self-service check-in
-2. Members search for their name and check in themselves and their family
-3. Check-in attendance records appear alongside manually entered records — no difference in the data
+1. Installieren Sie die B1 Checkin-App auf einem Tablet zur Selbstbedienung beim Check-in
+2. Mitglieder suchen nach ihrem Namen und checken sich selbst und ihre Familie ein
+3. Check-in-Besucherzahlen erscheinen neben manuell eingefügten Einträgen – kein Unterschied in den Daten
 
 :::info
-For a complete children's ministry setup including hardware and printer configuration, see the [Children's Check-In Guide](./childrens-checkin.md).
+Für ein komplettes Kindergottesdienst-Setup, einschließlich Hardware- und Druckerkonfiguration, siehe die [Kindergottesdienst-Check-in-Anleitung](./childrens-checkin.md).
 :::
 
-## Step 5: View Attendance Reports
+## Schritt 5: Besucherberichte anzeigen
 
-See the big picture of participation across your church.
+Sehen Sie das große Bild der Teilnahme in Ihrer gesamten Kirche.
 
-Follow the [Attendance Reports](../reports/attendance-reports.md) guide. Three report views are available:
+Folgen Sie der [Anleitung zu Besucherberichten](../reports/attendance-reports.md). Drei Berichtsansichten sind verfügbar:
 
-1. **Attendance Trend** — see attendance over time to spot growth or decline
-2. **Group Attendance** — see who attended each group session in a date range, with a CSV download
-3. **Daily Group Attendance** — day-by-day breakdown for detailed analysis
+1. **Besuchertrend** – sehen Sie die Besucherzahlen im Laufe der Zeit, um Wachstum oder Rückgang zu erkennen
+2. **Gruppenbelegung** – sehen Sie, wer jede Gruppensitzung in einem Zeitraum besuchte, mit CSV-Download
+3. **Tägliche Gruppenbelegung** – Aufschlüsselung nach Tag für detaillierte Analyse
 
 :::info
-Reports combine both manually recorded and self-check-in attendance. There's no difference in how the data appears — both methods feed into the same reports.
+Berichte kombinieren sowohl manuell erfasste als auch automatische Check-in-Besucherzahlen. Es gibt keinen Unterschied in der Darstellung der Daten – beide Methoden fließen in die gleichen Berichte ein.
 :::
 
-## You're Done!
+## Fertig!
 
-Your attendance tracking is set up. Whether you record attendance manually, use the check-in app, or both — all the data flows into the same reports so you have a clear picture of participation across your church.
+Ihre Besucherverfolgung ist eingerichtet. Egal ob Sie die Besucherzahlen manuell erfassen, die Check-in-App verwenden oder beides – alle Daten fließen in die gleichen Berichte ein, sodass Sie einen klaren Überblick über die Teilnahme in Ihrer gesamten Kirche haben.
 
-## Related Articles
+## Verwandte Artikel
 
-- [Attendance Setup](../attendance/setup.md) — configure campuses and services
-- [Recording Attendance](../attendance/recording-attendance.md) — record attendance manually
-- [Tracking Attendance](../attendance/tracking-attendance.md) — review attendance trends
-- [Check-In](../attendance/check-in.md) — self-service check-in app
-- [Creating Groups](../groups/creating-groups.md) — set up groups with attendance tracking
-- [Attendance Reports](../reports/attendance-reports.md) — view attendance trends
-- [Children's Check-In Guide](./childrens-checkin.md) — full kids ministry check-in setup
+- [Besuchererfassung einrichten](../attendance/setup.md) – konfigurieren Sie Standorte und Gottesdienste
+- [Besucherzahlen erfassen](../attendance/recording-attendance.md) – erfassen Sie Besucherzahlen manuell
+- [Besucherzahlen verfolgen](../attendance/tracking-attendance.md) – überprüfen Sie Besuchertrends
+- [Check-in](../attendance/check-in.md) – Selbstbedienung-Check-in-App
+- [Gruppen erstellen](../groups/creating-groups.md) – richten Sie Gruppen mit Besucherverfolgung ein
+- [Besucherberichte](../reports/attendance-reports.md) – sehen Sie Besuchertrends
+- [Kindergottesdienst-Check-in-Anleitung](./childrens-checkin.md) – komplettes Kindergottesdienst-Check-in-Setup

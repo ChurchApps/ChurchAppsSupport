@@ -24,7 +24,7 @@ Headcounts are a total-only alternative to [Recording Attendance](recording-atte
 
 ## Recording a Headcount
 
-1. Open **B1 Admin**, open the **section menu** in the top-left corner and choose **People**, then click the **Attendance** tab.
+1. Open **B1 Admin**, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **People**, and click **Attendance**.
 2. Select the **Headcounts** sub-tab.
 3. Fill in the form:
    - **Service** *(required)*
@@ -38,7 +38,7 @@ The **Recent Headcounts** table on the right lists your last several entries wit
 
 ## Headcount Trend Report
 
-1. From the same **Attendance** tab, select the **Headcount Trend** sub-tab.
+1. From the same **Attendance** page, select the **Headcount Trend** tab.
 2. Use the **Campus**, **Service**, **Service Time**, and **Group** filters to narrow the report.
 
 The report shows your recorded headcounts summed by week, as both a line chart and a table -- the same report style used by the [Attendance and Groups trend tabs](tracking-attendance.md).

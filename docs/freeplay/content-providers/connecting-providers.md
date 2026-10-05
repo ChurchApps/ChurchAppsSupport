@@ -25,7 +25,7 @@ Our **<a href="/guides/freeplay-b1admin" target="_blank">step-by-step guide</a>*
 
 ## Browsing Available Providers
 
-1. Open the **Content Providers** screen from the sidebar (select the **Providers** icon at the bottom)
+1. Open **Settings** at the bottom of the sidebar, then select **Providers** to open the **Content Providers** screen
 2. You will see a grid of provider cards, each showing the provider's logo and name
 3. Connected providers display a green **Connected** badge below their name
 4. Providers that are not yet available show a **Coming Soon** label
@@ -65,16 +65,29 @@ Other providers use a traditional email and password login:
 Use the directional pad on your remote to move between the email field, password field, and sign-in button. Press **Select** on a text field to open the on-screen keyboard.
 :::
 
+## Finding a Provider on Your Network
+
+**FreeShow** is found on your local network instead of through a sign-in: FreePlay searches the network, lists each computer running FreeShow that it finds, and connects to the one you select (choose **Scan Again** if none appear).
+
+## Provider Settings
+
+Selecting a provider card that shows the **Connected** badge opens its **Provider Settings** screen:
+
+- **Browse Library** -- Show or hide this provider's content library in the sidebar
+- **Auto-Download Today's Lesson** -- Use this provider as the source of today's lesson and pre-download its files (only shown for providers that offer a current lesson)
+- **Use for Announcements** -- Pick a folder from this provider to loop from the **Announcements** item in the sidebar. See [Announcements](./announcements)
+- **Check for Announcement Updates** -- Shown once an announcements folder is chosen; downloads new slides and removes deleted ones
+- **Disconnect** -- Remove the connection
+
 ## Disconnecting a Provider
 
 To disconnect from a provider you have already connected:
 
-1. Go to the **Content Providers** screen
+1. Go to the **Content Providers** screen (**Settings** > **Providers**)
 2. Select the provider card that shows the **Connected** badge
-3. A confirmation prompt asks if you want to disconnect
-4. Choose **Disconnect** to remove the connection
+3. On the **Provider Settings** screen, select **Disconnect**
 
-After disconnecting, the provider's content will no longer appear in your sidebar.
+After disconnecting, the provider's content will no longer appear in your sidebar. If you were using one of its folders for announcements, those slides are removed as well.
 
 :::warning
 Disconnecting removes the saved authentication from your device. You will need to sign in again if you want to reconnect later.
@@ -83,4 +96,5 @@ Disconnecting removes the saved authentication from your device. You will need t
 ## Related Articles
 
 - **[Browsing and Downloading Content](./browsing-content)** - Navigate folders and play content after connecting
+- **[Announcements](./announcements)** - Loop a folder of slides from a connected provider
 - **[Content Providers Overview](./index.md)** - See all available providers

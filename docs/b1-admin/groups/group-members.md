@@ -14,13 +14,13 @@ Once you have created a group, the next step is adding members. From a group's d
 <h4>Before You Begin</h4>
 
 - You need at least one group set up in B1 Admin. See [Creating Groups](creating-groups.md) if you haven't created one yet.
-- The people you want to add must already exist in your [People](../people/adding-people.md) directory.
+- The people you want to add should already be in your [People](../people/adding-people.md) directory. If someone isn't, you can create them from the member search (see below).
 
 </div>
 
 ## Adding Members to a Group
 
-1. Navigate to the **Groups** page and click on the group you want to manage.
+1. In the [Jump menu](../introduction.md#getting-around-with-the-jump-menu), choose **People > Groups** and click on the group you want to manage.
 2. Click the **Members** tab.
 3. In the search box, type the name of the person you want to add.
 4. Click **Add** next to the person's name in the search results.
@@ -29,6 +29,10 @@ Once you have created a group, the next step is adding members. From a group's d
 :::tip
 Leave the search box blank and click **Search** to browse through your entire directory. This is helpful if you are not sure of the exact spelling of someone's name.
 :::
+
+### Adding Someone Who Isn't in B1 Yet
+
+If your search finds no one, the search shows **No records found** with an **Add New Person** link. Click it, enter the person's first name, last name, and (optionally) email, and click **Add**. The new person is created in your People directory and added to the group in one step -- you don't need to search for them again.
 
 ## Designating Group Leaders
 
@@ -85,6 +89,17 @@ Until your church is approved, B1 also does not send [form follow-up emails](../
 :::info Sending limits
 After approval, a church can send up to 150 church-written emails a day. The limit grows as your church builds a clean sending history, up to 2,000 a day. If recent messages bounced or were marked as spam, group email pauses and the dialog asks you to contact support. If a send would go over your daily limit, B1 does not send it and shows an error.
 :::
+
+## Texting Group Members
+
+Once your church has connected a [texting provider](../settings/church-settings.md#texting), a text icon (**Text this group**) appears in the group's header.
+
+1. From the group detail page, click the **text icon**.
+2. The dialog shows how many members will get the text. Members with no mobile phone on file or who have opted out are skipped.
+3. Type your message. To personalize it, click a placeholder chip below the message box -- **First Name**, **Last Name**, **Display Name**, or **Church Name** -- to insert it at your cursor. Each placeholder is filled in with the recipient's own details when the text is sent.
+4. Click **Send**.
+
+See [Personalizing Texts with Merge Fields](../settings/church-settings.md#personalizing-texts-with-merge-fields) for more detail.
 
 ## Exporting Group Data
 

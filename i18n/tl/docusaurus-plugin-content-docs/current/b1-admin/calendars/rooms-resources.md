@@ -1,82 +1,82 @@
 ---
-title: "Rooms, Resources & Scheduling"
+title: "Mga Kuwarto, Resources at Pag-iiskedyul"
 ---
 
-# Rooms, Resources & Scheduling
+# Mga Kuwarto, Resources at Pag-iiskedyul
 
 <div class="article-intro">
 
-Ang mga kwarto at resource ay nagbibigay-daan sa iyo na masubaybayan ang mga bookable space at equipment ng iyong simbahan. Kapag ang isang grupo o koponan ay gustong gumamit ng isang kwarto o hiramin ang isang resource para sa isang event, maaari nilang isikap ito sa pamamagitan ng B1 — at maaari mong aprubahan o tanggihan ang mga request na ito upang maiwasan ang double-booking.
+Pinapahintulutan ka ng Rooms at Resources na subaybayan ang mga espasyo at kagamitan ng simbahan mo na maaaring i-book. Kapag nais ng isang grupo o team na gumamit ng kuwarto o manghiram ng resource para sa isang event, maaari nila itong hilingin sa pamamagitan ng B1 — at maaari mong aprubahan o tanggihan ang mga kahilingang iyon para maiwasan ang double-booking.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Magsimula</h4>
 
-- Kailangan mo ng administrative access sa Calendars section sa B1 Admin
-- I-setup ang [groups](../groups/creating-groups) na ang mga miyembro nito ay magsusumite ng mga booking request
+- Kailangan mo ng administratibong access sa seksyong Calendars sa B1 Admin
+- I-set up ang mga [grupo](../groups/creating-groups) na ang mga miyembro ay magsusumite ng mga kahilingan sa booking
 
 </div>
 
 ## Pagbubukas ng Rooms & Resources
 
-Sa B1 Admin, pumunta sa **Calendars** at piliin ang **Rooms & Resources**. Ang pahina ay may apat na tab: **Rooms**, **Resources**, **Blockouts**, at **Templates**.
+Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), palawakin ang **Calendars**, at i-click ang **Rooms & Resources**. May apat na tab ang pahina: **Rooms**, **Resources**, **Blockouts**, at **Templates**.
 
-## Rooms
+## Mga Kuwarto (Rooms)
 
-Ang mga kwarto ay pisikal na mga puwang na maaaring i-reserve kasama ang mga calendar event — isang sanctuary, isang fellowship hall, isang classroom, atbp.
+Ang mga kuwarto ay mga pisikal na espasyong maaaring i-reserve kasabay ng mga event sa kalendaryo — isang sanctuary, fellowship hall, silid-aralan, atbp.
 
-### Pagdagdag ng Kwarto
+### Pagdaragdag ng Kuwarto
 
-1. Sa **Rooms** tab, i-click ang **Add Room**.
-2. Magpasok ng isang **name** para sa kwarto.
-3. Opsyonal na itakda ang **capacity** (maximum na bilang ng mga tao).
-4. Itakda ang **Approval Group** — kapag ang isang grupo ay nagsisikap ng kwartong ito, ang mga lider ng napiling grupo ay nabe-notify at dapat na aprubahan ang booking. Iwanan blangko kung walang approval ang kailangan.
+1. Sa tab na **Rooms**, i-click ang **Add Room**.
+2. Maglagay ng **pangalan** para sa kuwarto.
+3. Opsyonal na magtakda ng **capacity** (pinakamaraming bilang ng tao).
+4. Magtakda ng **Approval Group** — kapag humiling ang isang grupo ng kuwartong ito, aabisuhan ang mga lider ng napiling grupo at kailangan nilang aprubahan ang booking. Iwanang blangko kung hindi kailangan ng pag-apruba.
 5. I-click ang **Save**.
 
-### Pag-edit o Pagsasara ng Kwarto
+### Pag-edit o Pagtanggal ng Kuwarto
 
-I-click ang edit icon sa tabi ng kahit anong kwarto, gumawa ng iyong mga pagbabago, at i-click ang **Save**. Gamitin ang **Delete** upang palitan ang isang kwarto nang permanente.
+I-click ang edit icon sa tabi ng anumang kuwarto, gawin ang mga pagbabago, at i-click ang **Save**. Gamitin ang **Delete** para permanenteng alisin ang kuwarto.
 
-## Resources
+## Mga Resource
 
-Ang mga resource ay mga item na maaaring i-book kasama ang isang event — AV equipment, projectors, mga upuan, isang van, atbp.
+Ang mga resource ay mga bagay na maaaring i-book kasabay ng isang event — kagamitang AV, mga projector, mga upuan, isang van, atbp.
 
-### Pagdagdag ng Resource
+### Pagdaragdag ng Resource
 
-1. I-click ang **Resources** tab, pagkatapos ay **Add Resource**.
-2. Magpasok ng **name** at opsyonal na **description**.
-3. Itakda ang **Approval Group** kung kailangan ng isang tao na mag-sign off sa mga loan ng resource.
+1. I-click ang tab na **Resources**, tapos **Add Resource**.
+2. Maglagay ng **pangalan** at opsyonal na **paglalarawan**.
+3. Magtakda ng **Approval Group** kung kailangang may pumirma sa pagpapahiram ng resource.
 4. I-click ang **Save**.
 
-## Blockouts
+## Mga Blockout
 
-Ang mga blockout ay nagpapigil sa mga kwarto o resource mula sa pag-book sa panahon ng ilang oras — para sa renovations, nakalaan na mga panahon, o maintenance.
+Pinipigilan ng mga blockout ang pag-book ng mga kuwarto o resource sa ilang partikular na oras — para sa renovation, mga nakareserbang panahon, o maintenance.
 
-### Pagdagdag ng Blockout
+### Pagdaragdag ng Blockout
 
-1. I-click ang **Blockouts** tab, pagkatapos ay **Add Blockout**.
-2. Pumili kung dapat i-block ang **Room**, **Resource**, o lahat ng mga kwarto at resource.
-3. Itakda ang **start** at **end** date/time para sa blockout.
-4. Opsyonal na magdagdag ng **reason** note.
+1. I-click ang tab na **Blockouts**, tapos **Add Blockout**.
+2. Piliin kung haharangan ang isang **Room**, isang **Resource**, o lahat ng kuwarto at resource.
+3. Itakda ang **simula** at **katapusan** na petsa/oras ng blockout.
+4. Opsyonal na magdagdag ng tala ng **dahilan**.
 5. I-click ang **Save**.
 
-## Event Templates
+## Mga Template ng Event
 
-Ang mga template ay nagbibigay-daan sa iyo na mag-save ng isang reusable event configuration — title, description, at kaassociated na grupo — upang ang mga recurring event ay maaaring gawing pare-pareho.
+Pinapahintulutan ka ng mga template na mag-save ng magagamit muling configuration ng event — pamagat, paglalarawan, at mga kaugnay na grupo — para maging pare-pareho ang paggawa ng mga paulit-ulit na event.
 
-### Pagdagdag ng Template
+### Pagdaragdag ng Template
 
-1. I-click ang **Templates** tab, pagkatapos ay **Add Template**.
-2. Magpasok ng isang **name** para sa template.
-3. Opsyonal na i-link ang **group** upang ang event ay awtomatikong konektado sa gruong iyon kapag ginawa mula sa template.
+1. I-click ang tab na **Templates**, tapos **Add Template**.
+2. Maglagay ng **pangalan** para sa template.
+3. Opsyonal na iugnay ang isang **grupo** para awtomatikong maikonekta ang event sa grupong iyon kapag ginawa mula sa template.
 4. I-click ang **Save**.
 
-Kapag lumilikha ng isang bagong event, ang staff ay maaaring pumili ng isang umiiral na template upang paunang-punan ang detalye ng event.
+Kapag gumagawa ng bagong event, maaaring pumili ang staff ng umiiral na template para mapunan na agad ang mga detalye ng event.
 
 ## Mga Kaugnay na Artikulo
 
-- [Availability Calendar](availability) — tingnan ang lahat ng booking nang sabay-sabay at mag-book ng mga kwarto o resource nang direkta
-- [Calendar Approvals](approvals) — aprubahan o tanggihan ang mga room at resource booking request
-- [Creating Calendars](creating-calendars) — i-setup ang mga event calendar
-- [Creating Groups](../groups/creating-groups) — i-setup ang mga grupo na maaaring mag-book ng mga kwarto at resource
+- [Availability Calendar](availability) — tingnan ang lahat ng booking sa isang sulyap at direktang mag-book ng mga kuwarto o resource
+- [Calendar Approvals](approvals) — aprubahan o tanggihan ang mga kahilingan sa booking ng kuwarto at resource
+- [Creating Calendars](creating-calendars) — mag-set up ng mga kalendaryo ng event
+- [Creating Groups](../groups/creating-groups) — mag-set up ng mga grupong maaaring mag-book ng mga kuwarto at resource

@@ -20,7 +20,7 @@ The Approvals page is where administrators review and act on pending room and re
 
 ## Opening Approvals
 
-In B1 Admin, go to **Calendars** and select **Approvals**. Pending booking requests and events awaiting review are listed here.
+In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Calendars**, and click **Approvals**. Pending booking requests and events awaiting review are listed here.
 
 ## Booking Requests
 

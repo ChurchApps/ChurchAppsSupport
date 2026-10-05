@@ -1,49 +1,45 @@
 ---
-title: "Reporte de Aniversarios"
+title: "Lista de Aniversarios"
 ---
 
-# Reporte de Aniversarios
+# Lista de Aniversarios
 
 <div class="article-intro">
 
-El Reporte de Aniversarios te ayuda a mantenerte conectado con tu congregación mostrando miembros con aniversarios de boda próximos. Úsalo para planificar celebraciones, enviar tarjetas o hacer anuncios durante servicios.
+¿Necesitas una lista de todos con aniversario de bodas en un mes determinado -- para el boletín, tarjetas o anuncios? La búsqueda People te permite filtrar por **Anniversary Month** y mostrar las fechas directamente en los resultados.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- Asegúrate de que las fechas de aniversario estén ingresadas en el perfil de cada persona. Ver [Agregar Personas](../people/adding-people.md) para detalles.
-- Necesitas los [permisos](../settings/roles-permissions.md) apropiados para acceder a los reportes
+- Asegúrate de que las fechas de aniversario se ingresan en el perfil de cada persona. Consulta [Agregar Personas](../people/adding-people.md) para obtener detalles.
+- Necesitas permiso para ver People. Consulta [Roles y Permisos](../settings/roles-permissions.md).
 
 </div>
 
-## Ejecutar el Reporte
+## Obtener una Lista de Aniversarios para un Mes
 
-1. Ve directamente a **admin.b1.church/reports/anniversaries** en tu navegador (los reportes no tienen entrada en el menú de navegación — marcar la dirección es la forma más fácil de volver a ella).
-2. Elige el **Mes** que deseas del desplegable. Opcionalmente puedes limitar los resultados a un solo **Grupo**.
-3. Haz clic en **Ejecutar Reporte**. El reporte lista a todos con aniversarios en ese mes, con la fecha — listo para leer directamente en un boletín o lista de anuncios.
-
-## Qué Muestra el Reporte
-
-El Reporte de Aniversarios muestra:
-
-- **Aniversario** -- La fecha de su aniversario de boda.
-- **Nombre** -- El nombre de la persona en tu base de datos de la iglesia.
-
-Los resultados cubren el mes que seleccionaste, haciendo fácil ver quién tiene un aniversario próximo.
+1. Abre el [Menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la esquina superior izquierda de B1 Admin), expande **People** y haz clic en **People**.
+2. Bajo la caja de búsqueda, haz clic en **Advanced**.
+3. Expande la sección **Demographics** y marca **Anniversary Month**, luego elige el mes.
+4. Ejecuta la búsqueda -- todos los que tengan un aniversario ese mes aparecerán en los resultados.
+5. Para ver las fechas, haz clic en el **icono de columnas** en la parte superior derecha de los resultados y activa la columna **Anniversary**. Usa **Export** para descargar la lista como una hoja de cálculo si prefieres ordenarla o imprimirla.
 
 ## Usos Prácticos
 
-- **Anuncios semanales** -- Ejecuta el reporte para la próxima semana e incluye aniversarios en tu boletín o anuncios.
-- **Tarjetas de aniversario** -- Genera una lista para el mes y que tu equipo envíe tarjetas de aniversario personales.
-- **Líderes de grupos pequeños** -- Los líderes de grupo pueden ejecutar el reporte para recordar aniversarios de miembros en su grupo.
-- **Celebraciones de hitos** -- Filtra para rangos de fechas específicos para planificar celebraciones de aniversarios importantes.
+- **Boletines semanales** -- Ejecuta la lista del mes actual e incluye aniversarios en tu boletín o anuncios.
+- **Tarjetas de aniversario** -- Exporta la lista del mes y entrégala a tu equipo de escritura de tarjetas.
+- **Celebraciones de hitos** -- Combina con el filtro **Years Married** para encontrar aniversarios de hitos.
 
 :::tip
-Ejecuta este reporte al inicio de cada mes para planificar con anticipación. Puedes establecer el rango de fechas para cubrir el mes completo para que tengas tiempo de preparar tarjetas o anuncios.
+Ejecuta esto a principios de cada mes para que tengas tiempo de preparar tarjetas o anuncios antes de que lleguen los aniversarios.
 :::
 
 :::info
-Los datos de aniversarios provienen del campo de aniversario en el perfil de cada persona. Asegúrate de que tus [registros de membresía](../people/adding-people.md) estén actualizados para resultados precisos.
+Los datos de aniversario provienen del campo de aniversario en el perfil de cada persona. Si falta alguien, su perfil solo necesita que se agregue la fecha. Consulta [Agregar Personas](../people/adding-people.md).
 :::
+
+## Ver También
+
+¿Buscas cumpleaños al mismo tiempo? Consulta [Birthday & Anniversary Lists](./birthday-report.md) para obtener ambos en una búsqueda.

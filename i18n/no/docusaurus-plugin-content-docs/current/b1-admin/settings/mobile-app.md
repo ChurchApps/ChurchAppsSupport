@@ -1,80 +1,96 @@
 ---
-title: "Innstillinger for mobilapp"
+title: "Innstillinger for mobilappen"
 ---
 
-# Innstillinger for mobilapp
+# Innstillinger for mobilappen
 
 <div class="article-intro">
 
-Siden Innstillinger for mobilapp lar deg konfigurere navigasjonsfanene som vises i **B1.church mobilopplevelse (PWA)** for kirkamedlemmene dine. Du kontrollerer hvilke faner som er synlige, hva de lenker til, og hvordan de vises.
+På siden Innstillinger for mobilappen konfigurerer du navigasjonsfanene som vises i **B1.church-mobilopplevelsen (PWA)** for kirkens medlemmer. Du styrer hvilke faner som er synlige, hva de lenker til og hvordan de vises.
 
 </div>
 
-:::info Den innebygde B1 Mobile-appen er avskrevet
-Faner som er konfigurert her leveres gjennom [B1.church Progressive Web App (PWA)](/docs/b1-church/getting-started/installing-pwa), som har erstattet den innebygde B1 Mobile-appen. Del kirkas installeringsside med medlemmene -- `https://yourchurchname.b1.church/mobile/install` -- med medlemmene; det gjennomgår dem gjennom installering av appen på enheten deres, uten App Store eller Google Play-nedlasting påkrevd.
+:::info Den innebygde B1 Mobile-appen er utfaset
+Fanene som konfigureres her, leveres gjennom [B1.church Progressive Web App (PWA)](/docs/b1-church/getting-started/installing-pwa), som har erstattet den innebygde B1 Mobile-appen. Del kirkens installasjonsside — `https://yourchurchname.b1.church/mobile/install` — med medlemmene; den veileder dem gjennom installasjon av appen på enheten sin, uten nedlasting fra App Store eller Google Play.
 :::
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du trenger tillatelsen "Rediger kirkeinnstillinger". Se [Roller & rettigheter](./roles-permissions.md) hvis du ikke har tilgang.
-- Konfigurer [Kirkeinnstillinger](./church-settings.md) dine først, inkludert kirkanavn og merkevarebygging
+- Du trenger tillatelsen «Rediger kirkeinnstillinger». Se [Roller og tillatelser](./roles-permissions.md) hvis du ikke har tilgang.
+- Konfigurer [Kirkeinnstillinger](./church-settings.md) først, inkludert kirkens navn og profilering
 
 </div>
 
-## Få tilgang til innstillinger for mobilapp
+## Åpne navigasjonsinnstillingene
 
-1. I B1 Admin åpner du **seksjonsmenyen** i det øvre venstre hjørnet (seksjonsnavnet med liten pil) og velger **Innstillinger**.
-2. Klikk **Mobilapper**-knappen i toppteksten.
-3. Siden Innstillinger for mobilapp viser gjeldende app-faner dine.
+1. I B1 Admin åpner du [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre) og utvider **Mobil**.
+2. Klikk på **Navigasjon** (`/mobile/navigation`).
+3. Navigasjonssiden viser appfanene du har nå.
 
-## Legg til en ny fane
+## Legge til en ny fane
 
-1. Klikk **Legg til fane**-knappen øverst på siden.
-2. Fyll inn fanedetaljene:
-   - **Navn** -- Etiketten som vises på fanen (for eksempel "Preken" eller "Gi").
-   - **Ikon** -- Klikk ikonikovelgeren for å velge et ikon for fanen. Du kan også laste opp et egendefinert bilde.
-   - **Fanetype** -- Velg fra alternativer som Bibel, Direktestrøm, Donasjon, Nettsted og mer.
-   - **URL** -- Skriv inn nettadressen som fanen skal lenke til.
-   - **Synlighet** -- Kontroller hvem som kan se denne fanen (alle, bare medlemmer, etc.).
-3. Klikk **Lagre fane** for å legge den til i appen.
+1. Klikk på knappen **Legg til fane** øverst på siden.
+2. Fyll ut detaljene for fanen:
+   - **Navn** -- Etiketten som vises på fanen (for eksempel «Prekener» eller «Gi»).
+   - **Ikon** -- Klikk på ikonvelgeren for å velge et ikon til fanen. Du kan også laste opp et eget bilde.
+   - **Fanetype** -- Velg blant alternativer som Bibel, Direktesending, Donasjon, Nettsted og flere.
+   - **URL** -- Skriv inn nettadressen fanen skal lenke til.
+   - **Synlighet** -- Styr hvem som kan se denne fanen (alle, bare medlemmer osv.).
+3. Klikk på **Lagre fane** for å legge den til i appen din.
 
-## Rediger en eksisterende fane
+## Redigere en eksisterende fane
 
-1. Klikk en hvilken som helst eksisterende fane i listen **App-faner**.
+1. Klikk på en av fanene i listen **Appfaner**.
 2. Oppdater fanens navn, ikon, URL, type eller synlighetsinnstillinger.
-3. Klikk **Lagre fane** for å bruke endringene dine.
+3. Klikk på **Lagre fane** for å ta i bruk endringene.
 
-## Omordner faner
+## Endre rekkefølgen på fanene
 
-Du kan endre rekkefølgen som faner vises på i mobilappen. Dra og slipp faner i listen for å ordne dem på nytt. Rekkefølgen som vises på denne siden samsvarer med rekkefølgen medlemmene dine vil se i appen.
+Du kan endre rekkefølgen fanene vises i i mobilappen. Dra og slipp fanene i listen for å omorganisere dem. Rekkefølgen på denne siden tilsvarer rekkefølgen medlemmene dine ser i appen.
 
 :::info
-Noen faner kan vises automatisk når bestemte betingelser er oppfylt -- for eksempel kan en Direktestrømfane dukke opp når en strøm er aktiv. Manuelt tilføyde faner gir deg full kontroll over hva medlemmene dine ser til enhver tid.
+Noen faner kan dukke opp automatisk når bestemte vilkår er oppfylt -- for eksempel kan en Direktesending-fane vises når en sending er aktiv. Faner du legger til manuelt, gir deg full kontroll over hva medlemmene ser til enhver tid.
 :::
 
 :::tip
-Hold fanenes antall håndterbar. Tre til fem faner fungerer bra for de fleste kirker. For mange faner kan gjøre navigasjonen forvirrende for medlemmene dine.
+Hold antallet faner overkommelig. Tre til fem faner fungerer bra for de fleste kirker. For mange faner kan gjøre navigasjonen forvirrende for medlemmene.
 :::
 
-## Innstillinger for medlemsregister & meldinger
+## Innstillinger for medlemsregister og meldinger
 
-**B1 Mobile**-fanen i samme Mobilseksjon inneholder innstillingene som styrer medlemsmappen og privat meldinger i B1.church-opplevelsen:
+Punktet **Medlemsportal** i samme Mobil-del inneholder innstillingene som styrer medlemsregisteret og private meldinger i B1.church-opplevelsen:
 
-- **Directory Approval Group** -- Gruppen som gjennomgår medlemsmappeoppdateringer før de brukes.
-- **Vis i katalog** -- Hvem som kan vises i medlemsmappen (Bare ansatte gjennom alle).
-- **Synlighetspreferanser** -- Standardsynlighet for medlemsadresser, telefonnumre og e-postadresser.
-- **Minimumnalder for private meldinger** -- En sikkerhetskontroll for barn. B1 åpner ikke en **ny** privat meldingssamtale når en av personene er under denne alderen, basert på deres fødselsdato (husholdsrolle brukes som reservasjon når ingen fødselsdato er arkivert). Mennesker under alderen forblir fullt synlige i katalogen -- bare direkte meldinger blokkeres, i **begge retninger**, for alle inkludert ansatte. Gruppesamtaler og meldinger til et barns foreldre virker fortsatt. Alternativene er Av, 13, 16 eller 18; standard er **18**. Eksisterende samtaler påvirkes ikke.
+- **Godkjenningsgruppe for registeret** -- Gruppen som gjennomgår oppdateringer av medlemsregisteret, og [forespørsler om sletting av konto](../profile/account-deletion.md), før de trer i kraft.
+- **Vis i registeret** -- Hvem som kan vises i medlemsregisteret (fra Bare ansatte til Alle).
+- **Synlighetspreferanse** -- Setter kirkens standard for medlemmer som ikke har valgt sin egen innstilling ennå. **Adresse**, **Telefonnummer** og **E-post** har hver sin nedtrekksmeny, med de samme fem nivåene overalt der synlighet konfigureres:
+  - **Alle** -- synlig for alle, også anonyme besøkende
+  - **Medlemmer** -- synlig bare for personer med en medlems- eller ansattpost
+  - **Bare grupper** -- synlig bare for personer som deler en gruppe med denne personen
+  - **Mine gruppeledere og ansatte** -- synlig bare for ledere i en gruppe denne personen tilhører, pluss ansatte
+  - **Bare ansatte** -- synlig bare for ansatte med tillatelsen Personer &gt; Vis, og for personen selv
+
+  Medlemmer kan overstyre disse standardene for sin egen profil fra fanen **Personvern** i profilen sin i B1.church PWA -- se [Redigere profilen din](/docs/b1-church/getting-started/me-page).
+- **Minimumsalder for private meldinger** -- En barnesikkerhetskontroll. B1 åpner ikke en **ny** privat samtale når en av personene er under denne alderen, basert på fødselsdato (husstandsrolle brukes som reserve når ingen fødselsdato er registrert). Personer under aldersgrensen er fortsatt fullt synlige i registeret -- bare direktemeldinger blokkeres, i **begge retninger**, for alle inkludert ansatte. Gruppesamtaler og meldinger til et barns foreldre fungerer fortsatt. Alternativene er Av, 13, 16 eller 18; standard er **18**. Eksisterende samtaler påvirkes ikke.
 
 :::tip
-Fordi minimumnalder-kontrollen er avhengig av fødselsdatoer, sørger du for at fødselsdatoer er fylt inn for barn i menigheten din. Denne innstillingen tilhører samme sikkerhetsfamilie som [check-in sikkerhetskontrollene](../attendance/checkin-safety.md).
+Fordi aldersgrensekontrollen bygger på fødselsdato, bør du sørge for at fødselsdato er fylt ut for barn i menigheten. Denne innstillingen hører til samme barnesikkerhetsfamilie som [sikkerhetskontrollene for innsjekking](../attendance/checkin-safety.md).
 :::
 
-## Der disse fanene vises
+### Innloggingsmelding på startskjermen
 
-Fanene du konfigurerer her vises i **B1.church PWA** som medlemmene dine installerer fra en hvilken som helst side på `https://yourchurchname.b1.church`. Endringer du gjør på denne siden reflekteres neste gang et medlem åpner appen. (Faner gjenngis også av den eldre [B1 Mobile innebygd app](/docs/b1-mobile/) for alle medlemmer som fortsatt kjører den, men denne appen er avskrevet og får ikke lenger oppdateringer.)
+Besøkende som åpner appens [startskjerm](/docs/b1-church/getting-started/navigating#home) uten å logge inn, ser en kort melding -- som standard *«Logg inn for å se gruppene dine, giving og mer.»* -- ved siden av en **Logg inn**-knapp. Innstillingene for **Innloggingsmelding på startskjermen** på den samme Medlemsportal-siden (`/mobile/b1-mobile`) lar deg endre den:
 
-## Neste trinn
+- **Vis innloggingsmelding på appens startskjerm** -- Slå av dette for å skjule både meldingen og **Logg inn**-knappen fra startskjermen. Besøkende kan fortsatt logge inn fra appmenyen.
+- **Tekst for innloggingsmelding** -- Erstatt standardteksten med din egen melding (opptil 150 tegn). La feltet stå tomt for å bruke standarden. Dette feltet er deaktivert mens meldingen er slått av.
 
-- [Kirkeinnstillinger](./church-settings.md) -- Konfigurer kirkeinformasjonen og merkevarebyggingen din
-- [Roller & rettigheter](./roles-permissions.md) -- Administrer tilgang for teamet ditt
+Klikk på **Lagre** for å ta det i bruk. Lagring oppdaterer appens hurtigbufrede innstillinger, så endringen vises neste gang startskjermen lastes.
+
+## Hvor disse fanene vises
+
+Fanene du konfigurerer her, vises i **B1.church PWA** som medlemmene installerer fra hvilken som helst side på `https://yourchurchname.b1.church`. Endringer du gjør på denne siden, vises neste gang et medlem åpner appen. (Fanene vises også i den eldre [innebygde B1 Mobile-appen](/docs/b1-mobile/) for medlemmer som fortsatt bruker den, men den appen er utfaset og oppdateres ikke lenger.)
+
+## Neste steg
+
+- [Kirkeinnstillinger](./church-settings.md) -- Konfigurer kirkeinformasjon og profilering
+- [Roller og tillatelser](./roles-permissions.md) -- Administrer tilgang for teamet ditt

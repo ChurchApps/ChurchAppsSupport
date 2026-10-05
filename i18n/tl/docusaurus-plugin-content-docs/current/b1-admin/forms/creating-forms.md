@@ -1,100 +1,102 @@
 ---
-title: "Lumilikha ng Mga Form"
+title: "Paggawa ng mga Form"
 ---
 
-# Lumilikha ng Mga Form
+# Paggawa ng mga Form
 
 <div class="article-intro">
 
-Bumuo ng mga custom form upang makolekta ang impormasyon mula sa iyong congregation. Maaari kang lumikha ng mga form para sa mga registration ng kaganapan, mga survey, mga card ng bisita, mga application sa membership, at marami pang iba. Ang mga form ay maaaring ilink sa mga taong nasa iyong database o gamitin bilang mga standalone na pahina na may sarili nilang pang-publiko na URL.
+Gumawa ng mga custom na form para mangolekta ng impormasyon mula sa inyong kongregasyon. Maaari kayong gumawa ng mga form para sa event registration, survey, visitor card, aplikasyon sa pagiging miyembro, at iba pa. Maaaring i-link ang mga form sa mga tao sa inyong database o gamitin bilang hiwalay na page na may sariling pampublikong URL.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago ka magsimula</h4>
+<h4>Bago Magsimula</h4>
 
-- Para sa mga form na **People** (nakalink sa mga talaan ng tao), kailangan mo ng [mga tao sa iyong database](../people/adding-people.md) muna.
-- Para sa mga form na kumakolekta ng **mga pagbabayad**, dapat kang mayroon [Stripe configured para sa online giving](../donations/online-giving-setup.md).
+- Para sa mga form na **People** (naka-link sa mga person record), kailangan muna ninyo ng [mga tao sa inyong database](../people/adding-people.md).
+- Para sa mga form na nangongolekta ng **bayad**, kailangang [naka-configure ang Stripe para sa online giving](../donations/online-giving-setup.md).
 
 </div>
 
-## Lumilikha ng Bagong Form
+## Paggawa ng Bagong Form
 
-1. Buksan ang **People** mula sa section menu, pagkatapos ay i-click ang **Forms** sa navigation bar.
+1. Buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas ng B1 Admin), i-expand ang **People**, at i-click ang **Forms**.
 2. I-click ang **Add Form**.
-3. Ipasok ang **pangalan** para sa iyong form.
-4. Pumili ng uri ng form mula sa dropdown:
-   - **People** — Nauugnay ang mga submission sa [mga talaan ng tao](../people/adding-people.md) sa iyong database.
-   - **Stand Alone** — Lumilikha ng isang independent form na may sarili nitong pang-publiko na URL, ideal para sa mga panlabas na registration.
-5. I-click ang **Save** upang lumikha ng form.
+3. Maglagay ng **pangalan** para sa inyong form.
+4. Piliin ang uri ng form mula sa dropdown:
+   - **People** — Iniuugnay ang mga submission sa [mga person record](../people/adding-people.md) sa inyong database.
+   - **Stand Alone** — Gumagawa ng independiyenteng form na may sariling pampublikong URL, mainam para sa mga panlabas na registration.
+5. I-click ang **Save** para likhain ang form.
 
-Ang iyong bagong form ay lalabas sa listahan. I-click ito upang magsimulang magdagdag ng mga tanong.
+Lalabas ang inyong bagong form sa listahan. I-click ito para magsimulang magdagdag ng mga tanong.
 
-## Pagpapahayag ng Walang Laman na Form
+## Pag-print ng Blangkong Form
 
-Kailangan ng papel copy upang ihatid -- para sa isang card ng bisita sa welcome desk, o isang form na maaaring mapunan ng kamay ng someone nang wala ang internet access? I-click ang **print icon** sa tabi ng isang form sa pangunahing Forms list upang magbukas ng isang preview, pagkatapos ay i-click ang **Print**. Ang mga blankong field ay nagsasagawa na may underline o checkbox para sa bawat tanong upang ang mga tao ay maaaring puno ang mga ito sa pamamagitan ng kamay; ang mga kinakailangang tanong ay minarkahan na may asterisk. Walang ibang mga opsyon sa pag-print -- i-print ang buong form o wala.
+Kailangan ng papel na kopya na ipamimigay -- para sa visitor card sa welcome desk, o form na maaaring sulatan ng kamay ng taong walang internet? I-click ang **print icon** sa tabi ng isang form sa pangunahing listahan ng Forms para magbukas ng preview, pagkatapos ay i-click ang **Print**. Ipi-print ang mga blangkong field na may guhit o checkbox sa bawat tanong para masulatan ito ng kamay; may asterisk ang mga kinakailangang tanong. Nakaprint sa itaas ang pangalan ng inyong simbahan, sa ibabaw ng pangalan ng form. Wala nang ibang opsyon sa pag-print -- i-print ang buong form o huwag na lang.
 
 ## Pagdaragdag ng mga Tanong
 
-1. Buksan ang iyong form at pumunta sa tab na **Questions**.
+1. Buksan ang inyong form at pumunta sa tab na **Questions**.
 2. I-click ang **Add Question**.
-3. Pumili ng **uri ng larangan** mula sa Provider dropdown. Ang mga available na uri ay kinabibilangan:
-   - **Textbox** — Para sa maikling mga response sa teksto
-   - **Date** — Para sa mga pagpili ng petsa
+3. Pumili ng **field type** mula sa Provider dropdown. Kabilang sa mga available na uri ang:
+   - **Textbox** — Para sa maikling sagot na teksto
+   - **Date** — Para sa pagpili ng petsa
    - **Email** — Para sa mga email address
-   - **Phone Number** — Para sa input ng telepono
-   - **Multiple Choice** — Para sa pagpili mula sa mga naunang natukoy na opsyon
-   - **Payment** — Para sa pagkolekta ng mga pagbabayad
-4. Ipasok ang **Pamagat** at opsyonal na **Paglalarawan** para sa tanong.
-5. Suriin ang **Require an answer** kung ang larangan ay mandatory.
+   - **Phone Number** — Para sa numero ng telepono
+   - **Multiple Choice** — Para sa pagpili mula sa mga paunang itinakdang opsyon
+   - **Payment** — Para sa pangongolekta ng bayad
+4. Maglagay ng **Title** at opsyonal na **Description** para sa tanong.
+5. Lagyan ng check ang **Require an answer** kung sapilitan ang field.
 6. I-click ang **Save**.
-7. Ulitin upang magdagdag ng higit pang mga tanong.
+7. Ulitin para magdagdag ng iba pang tanong.
 
 :::warning
-Ang uri ng field na **Payment** ay nangangailangan ng Stripe na maging na-configure. Kung hindi ka pa nag-setup ng online giving, makita ang [Online Giving Setup](../donations/online-giving-setup.md) bago magdagdag ng mga field ng pagbabayad.
+Kailangang naka-configure ang Stripe para sa field type na **Payment**. Kung hindi pa kayo nakapag-set up ng online giving, tingnan ang [Pag-set Up ng Online Giving](../donations/online-giving-setup.md) bago magdagdag ng mga payment field.
 :::
 
-## Pagsasalin ng mga Miyembro ng Form
+## Pamamahala ng mga Miyembro ng Form
 
-1. Buksan ang iyong form at pumunta sa tab na **Members**.
-2. Maghanap ng isang tao at idagdag ang mga ito na may tungkulin:
-   - **Admin** — Maaaring i-edit ang form at tingnan ang lahat ng mga submission.
-   - **View Only** — Maaaring tingnan ang mga submission ngunit hindi maaaring i-edit ang form.
+1. Buksan ang inyong form at pumunta sa tab na **Form Members**.
+2. Maghanap ng tao at idagdag siya na may role:
+   - **Admin** — Maaaring mag-edit ng form at tumingin ng lahat ng submission.
+   - **View Only** — Maaaring tumingin ng mga submission pero hindi makakapag-edit ng form.
 
-## Awtomatikong Pagdaragdag ng mga Nag-submit sa isang Grupo
+## Awtomatikong Pagdaragdag ng mga Nag-submit sa Isang Group
 
-Kapag ang **Create a person record from submissions** ay enabled, maaari mo ring ilink ang form sa isang grupo upang bawat nag-submit ay awtomatikong idinadagdag sa roster ng grupo:
+Kapag naka-enable ang **Create a person record from submissions**, maaari rin ninyong i-link ang form sa isang group para awtomatikong maidagdag sa roster ng group na iyon ang bawat nag-submit:
 
-1. Buksan ang **Details** ng iyong form, at i-turn on ang **Create a person record from submissions**.
-2. Sa ilalim ng **Add submitters to a group**, pumili ng grupo upang idagdag ang mga nag-submit, o iwanan ito na nakatakda sa **None**.
+1. Buksan ang **Details** ng inyong form, at i-on ang **Create a person record from submissions**.
+2. Sa ilalim ng **Add submitters to a group**, piliin ang group na paglalagyan ng mga nag-submit, o iwanan itong nakatakda sa **None**.
 3. I-click ang **Save**.
 
-Sa bawat oras na may nag-submit sa form, ang tugmang o bagong lumilikha na tao ay idinadagdag sa grupo (ang mga naging miyembro ng grupo ay natatanggihan). Ito ay kapaki-pakinabang para sa mga bagay tulad ng isang form ng camp sign-up na dapat awtomatikong bumuo ng roster group ng camp.
+Sa tuwing may mag-submit ng form, idaragdag sa group ang natugmang o bagong likhang tao (lalaktawan ang mga umiiral nang miyembro ng group). Kapaki-pakinabang ito sa mga bagay tulad ng camp sign-up form na dapat awtomatikong bumuo ng roster group ng camp.
 
 ### Pagpapadala ng Follow-up Email
 
-Na may **Create a person record from submissions** na naka-on, maaari mo ring i-email ang bawat taong nag-submit ng form. Punan ang **Follow-up Email Subject** at **Follow-up Email Body** sa mga detalye ng form. Maaari mong gamitin ang `{firstName}` at `{churchName}` tokens sa pareho. Ang email ay ipinadala lamang kapag pareho ng mga field ay napuno.
+Kapag naka-on ang **Create a person record from submissions**, maaari rin ninyong i-email ang bawat taong nag-submit ng form. Punan ang **Follow-up Email Subject** at **Follow-up Email Body** sa mga detalye ng form. Maaari ninyong gamitin ang mga token na `{firstName}` at `{churchName}` sa pareho. Ipapadala lang ang email kapag napunan ang parehong field.
 
 :::info
-Ang mga follow-up email ay lumalabas lamang pagkatapos na ang iyong simbahan ay aprubado upang magpadala ng group email, at bilang bilang sa araw-araw na limitasyon ng email ng iyong simbahan. Makita ang [Pagbubukas ng Group Email para sa Iyong Simbahan](../groups/group-members.md#turning-on-group-email-for-your-church).
+Lalabas lang ang mga follow-up email pagkatapos maaprubahan ang inyong simbahan na magpadala ng group email, at binibilang ang mga ito sa pang-araw-araw na limitasyon ng email ng inyong simbahan. Tingnan ang [Pag-on ng Group Email para sa Inyong Simbahan](../groups/group-members.md#turning-on-group-email-for-your-church).
 :::
 
-## Duplicating ng isang Form
+## Pag-duplicate ng Form
 
-Upang muling gamitin ang isang form bilang panimulang punto para sa isang bago, i-click ang **Duplicate** icon (copy icon) sa tabi ng form sa Forms list. Ang B1 ay lumilikha ng isang eksaktong kopya ng form -- kabilang ang lahat ng mga tanong -- na maaari mo nang baguhin ang pangalan at i-edit nang nagsasara.
+Para gamitin ang isang form bilang panimulang punto ng bago, i-click ang **Duplicate** icon (copy icon) sa tabi ng form sa listahan ng Forms. Gagawa ang B1 ng eksaktong kopya ng form — kasama ang lahat ng tanong — na maaari ninyong palitan ng pangalan at i-edit nang hiwalay.
 
 :::tip
-Ang duplication ay kapaki-pakinabang para sa mga paulit-ulit na kaganapan kung saan ang mga tanong sa registration ay nananatiling pareho mula taon hanggang taon. I-duplicate ang form ng nakaraang taon, i-update ang pangalan at petsa, at handa ka na.
+Madaling gamitin ang pag-duplicate para sa mga paulit-ulit na event kung saan pareho ang mga tanong sa registration taon-taon. I-duplicate ang form noong nakaraang taon, i-update ang pangalan at mga petsa, at handa na kayo.
 :::
 
 ## Pag-configure ng mga Property ng Form
 
-Maaari mong i-update ang pangalan at mga setting ng iyong form sa anumang oras. Para sa Stand Alone forms, makikita mo rin ang isang natatanging **pang-publiko na URL** na maaari mong ibahagi sa sinuman, kasama ng isang field na **Paglalarawan** -- teksto na ipinapakita sa itaas ng mga tanong sa pang-publiko na pahina ng form, kapaki-pakinabang para sa pagsasabi sa mga tao kung saan ginagamit ang form bago nila simulan ang pagpuno nito.
+Maaari ninyong i-update ang pangalan at mga setting ng inyong form anumang oras. Para sa mga Stand Alone na form, makikita rin ninyo ang natatanging **public URL** na maaari ninyong ibahagi kaninuman, kasama ang field na **Description** -- tekstong ipinapakita sa itaas ng mga tanong sa pampublikong page ng form, na kapaki-pakinabang para sabihin sa mga tao kung para saan ang form bago nila ito simulang sagutan.
+
+Gamitin ang field na **Thank You Message** para itakda ang makikita ng mga tao pagkatapos nilang mag-submit ng form, kasama na sa page ng pampublikong URL ng form. Kung iiwanan itong blangko, makikita nila ang "Thank you for submitting the form!"
 
 :::tip
-Ang Stand Alone forms ay lubhang mahusay para sa mga registration ng kaganapan. Ibahagi ang pang-publiko na URL sa pamamagitan ng email, social media, o i-embed ang form direkta sa iyong website ng simbahan.
+Mainam ang mga Stand Alone na form para sa event registration. Ibahagi ang pampublikong URL sa pamamagitan ng email, social media, o i-embed ang form direkta sa website ng inyong simbahan.
 :::
 
 :::info
-Upang i-embed ang isang form sa iyong website ng B1, pumunta sa iyong website editor, magdagdag ng isang bagong seksyon, at pumili ng elemento na **Form**. Pagkatapos ay pumili ng form na nais mong ipakita. Makita ang [Managing Pages](../website/managing-pages.md) para sa mga detalye sa pag-edit ng iyong website.
+Para mag-embed ng form sa inyong B1 website, pumunta sa inyong website editor, magdagdag ng bagong section, at piliin ang elementong **Form**. Pagkatapos ay piliin ang form na nais ninyong ipakita. Tingnan ang [Pamamahala ng mga Page](../website/managing-pages.md) para sa mga detalye sa pag-edit ng inyong website.
 :::

@@ -1,58 +1,58 @@
 ---
-title: "Eksportering av data"
+title: "Eksportere data"
 ---
 
-# Eksportering av data
+# Eksportere data
 
 <div class="article-intro">
 
-B1 Admin lar deg eksportere kirkens data slik at du kan bruke det i regneark, dele det med laget eller oppbevare en sikkerhetskopi. Enten du trenger en rask liste over navn og e-post eller en fullstendig databaseksport, finnes det alternativer som passer dine behov.
+Med B1 Admin kan du eksportere menighetens data slik at du kan bruke dem i regneark, dele dem med teamet eller ta sikkerhetskopi. Enten du trenger en rask liste over navn og e-postadresser eller en fullstendig databaseeksport, finnes det et alternativ som passer.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du trenger en aktiv B1 Admin-konto med tillatelse til å vise dataene du vil eksportere. Se [Roller og tillatelser](roles-permissions.md) hvis du er usikker på tilgangsnivået ditt.
-- For en fullstendig databaseksport, trenger du tilgang til **Innstillinger**-området.
+- Du trenger en aktiv B1 Admin-konto med tillatelse til å se dataene du vil eksportere. Se [Roller og tillatelser](roles-permissions.md) hvis du er usikker på tilgangsnivået ditt.
+- For en fullstendig databaseeksport må du ha tilgang til området **Innstillinger**.
 
 </div>
 
-## Eksportering fra mennesker-siden
+## Eksportere fra siden Personer
 
-Den raskeste måten å eksportere mappen på er direkte fra **Mennesker**-siden:
+Den raskeste måten å eksportere registeret på er direkte fra siden **Personer**:
 
-1. Åpne **seksjonsmenyene** i det øvre venstre hjørnet og velg **Mennesker**.
-2. Bruk søkestolpen eller filterene for å begrense resultatene du vil eksportere (eller la det være ufiltrert for å eksportere alle). Se [Søk i mennesker](searching-people.md) for tips om filtrering.
-3. Bruk **kolonnevelgeren** for å velge hvilke kolonner du vil inkludere i eksporten (for eksempel navn, e-post, telefon, adresse).
-4. Klikk **Eksport**-knappen.
-5. En CSV-fil blir lastet ned til datamaskinen din med dataene som vises i tabellen for øyeblikket.
+1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre i B1 Admin), utvid **Personer** og klikk på **Personer**.
+2. Bruk søkefeltet eller filtrene for å avgrense resultatene du vil eksportere (eller la det stå ufiltrert for å eksportere alle). Se [Søke etter personer](searching-people.md) for tips om filtrering.
+3. Bruk **kolonnevelgeren** for å velge hvilke kolonner som skal være med i eksporten (for eksempel Navn, E-post, Telefon, Adresse).
+4. Klikk på knappen **Eksporter**.
+5. En CSV-fil lastes ned til datamaskinen din med dataene som vises i tabellen akkurat nå.
 
 :::tip
-Tilpass kolonnene dine før eksportering. CSV-filen vil inkludere nøyaktig kolonnene du har synlige, slik at du kan tilpasse eksporten til dine behov uten å redigere filen etterpå.
+Tilpass kolonnene før du eksporterer. CSV-filen inneholder nøyaktig de kolonnene som er synlige, slik at du kan tilpasse eksporten uten å redigere filen etterpå.
 :::
 
-## Fullstendig dataksport fra innstillinger
+## Fullstendig dataeksport fra Innstillinger
 
-For en fullstendig eksport av alle B1-data (ikke bare mennesker), bruk eksportverktøyet i Innstillinger:
+For en komplett eksport av alle B1-dataene dine (ikke bare personer) bruker du eksportverktøyet i Innstillinger:
 
-1. Åpne **seksjonsmenyene** i det øvre venstre hjørnet og velg **Innstillinger**.
-2. Klikk **Importer/Eksport** i den øverste navigasjonen.
-3. Velg **B1-database** fra **Datakilde**-rullemenyene.
-4. Gjennomgå dataforhåndsvisningen og klikk **Fortsett til destinasjon**.
-5. Velg **B1 Export Zip** som eksportdestinasjon.
-6. Overvåk eksportfremgangen til alle elementer viser grønne haker.
-7. Eksportfilen blir lastet ned automatisk. Se etter filen `B1Export` i nedlastingsmappen.
-8. Pakk opp filen for å få tilgang til individuelle CSV-filer (som `people.csv`) som du kan åpne i Excel, Google Sheets eller Numbers.
+1. I Jump-menyen velger du **Innstillinger > Innstillinger**.
+2. Klikk på knappen **Import/eksport** øverst til høyre i sidehodet.
+3. Velg **B1 Database** i nedtrekkslisten **Datakilde**.
+4. Se gjennom dataforhåndsvisningen og klikk på **Fortsett til mål**.
+5. Velg **B1 Export Zip** som eksportmål.
+6. Følg med på eksportfremdriften til alle elementer har grønne haker.
+7. Eksportfilen lastes ned automatisk. Se etter filen `B1Export` i nedlastingsmappen.
+8. Pakk ut filen for å få tilgang til enkeltstående CSV-filer (som `people.csv`) som du kan åpne i Excel, Google Sheets eller Numbers.
 
 :::info
-Fullstendige dataeksporter inkluderer mennesker, grupper, donasjoner, oppmøte og mer -- alt i B1-databasen. Dette er også en fin måte å lage en periodisk sikkerhetskopi av kirkens journaler.
+Fullstendige dataeksporter inneholder personer, grupper, gaver, oppmøte og mer -- alt som ligger i B1-databasen din. Dette er også en fin måte å lage en jevnlig sikkerhetskopi av menighetens registre på.
 :::
 
-## Eksportering av gruppedata
+## Eksportere gruppedata
 
-Du kan også eksportere medlemslister for individuelle grupper. Fra **Grupper**-siden, åpne en gruppe og klikk **nedlastingsikonet** for å eksportere gruppens medlemsliste. Se [Gruppemedlemmer](../groups/group-members.md) for mer informasjon.
+Du kan også eksportere medlemslister for enkeltgrupper. Fra siden **Grupper** åpner du en gruppe og klikker på **nedlastingsikonet** for å eksportere gruppens medlemsliste. Se [Gruppemedlemmer](../groups/group-members.md) for mer informasjon.
 
 :::info
-Eksporterte CSV-filer fungerer med alle større regnearksprogram inkludert Microsoft Excel, Google Sheets og Apple Numbers.
+Eksporterte CSV-filer fungerer i alle store regnearkprogrammer, inkludert Microsoft Excel, Google Sheets og Apple Numbers.
 :::

@@ -1,83 +1,101 @@
 ---
-title: "Legge til mennesker"
+title: "Legge til personer"
 ---
 
-# Legge til mennesker
+# Legge til personer
 
 <div class="article-intro">
 
-Mennesker-seksjonen er grunnlaget for B1 Admin -- det er kirchens medlemsdatabase. Alle andre funksjoner (grupper, frammøte, donasjoner, skjemaer) knytter seg tilbake til personnosposter. Denne veiledningen leder deg gjennom tillegg av noen til databasen din, redigering av detaljer deres og lenking av familiemedlemmer til husstander.
+Delen Personer er grunnmuren i B1 Admin – det er menighetens medlemsdatabase. Alle andre funksjoner (grupper, oppmøte, gaver, skjemaer) er knyttet til personkort. Denne veiledningen viser deg hvordan du legger en person inn i databasen, redigerer opplysningene og knytter familiemedlemmer sammen i husstander.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du må ha en aktiv B1 Admin-konto med tillatelse til å administrere mennesker. Se [Roller og tillatelser](roles-permissions.md) hvis du er usikker på tilgangsnivå ditt.
-- Hvis du legger til mer enn en håndful mennesker, vurder å bruke [CSV-import](importing-data.md)-verktøyet i stedet.
+- Du trenger en aktiv B1 Admin-konto med tillatelse til å administrere personer. Se [Roller og tillatelser](roles-permissions.md) hvis du er usikker på tilgangsnivået ditt.
+- Hvis du skal legge til mer enn en håndfull personer, bør du heller bruke verktøyet for [CSV-import](importing-data.md).
 
 </div>
 
 ## Legge til en person
 
-1. Naviger til B1.church Admin-instrumentbordet.
-2. Åpne **seksjonsmeny** i øverste venstre hjørne og velg **Personer**.
-3. Klikk på **Legg til person**-knappen i øverste høyre hjørne.
-4. Fyll inn personens fornavn, etternavn og e-postadresse, og klikk **Legg til**.
+1. Gå til dashbordet i B1.church Admin.
+2. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre), utvid **Personer** og klikk på **Personer**.
+3. Klikk på knappen **Legg til person** øverst til høyre.
+4. Fyll inn personens fornavn, etternavn og e-postadresse, og klikk deretter på **Legg til**.
 
-Personens profilside åpnes, klar for deg til å legge til flere detaljer.
+Personens profilside åpnes, klar for at du kan legge til flere opplysninger.
 
 :::tip
-Hvis du migrerer fra et annet kirkledelsessystem, [Importer data](importing-data.md)-funksjonen lar deg bringe inn hele mappen fra en CSV-fil -- mye raskere enn å legge til mennesker en om gangen.
+Hvis du flytter over fra et annet system for menighetsadministrasjon, kan du med funksjonen [Importer data](importing-data.md) hente inn hele registeret fra en CSV-fil – mye raskere enn å legge til personer én og én.
 :::
 
-### Duplikatadvarler
+### Advarsler om duplikater
 
-Hvis e-postadressen (eller, når du oppretter en person fra det fulle redigeringsskjemaet, telefonnummeret eller sammenslåtte fornavn + etternavn + fødselsdato) samsvarer med noen allerede i databasen din, en **Mulig duplikat**-dialogboks vises før den nye posten lagres. Den viser hver sammenslåtte person sammen med e-post, telefon og fødselsdato, slik at du kan sammenligne.
+Hvis e-postadressen (eller, når du oppretter en person fra det fullstendige redigeringsskjemaet, telefonnummeret eller kombinasjonen av fornavn, etternavn og fødselsdato) samsvarer med noen som allerede finnes i databasen, vises en dialog med **Mulig duplikat** før den nye posten lagres. Den viser hver samsvarende person med e-post, telefon og fødselsdato, slik at du kan sammenligne.
 
-- Klikk **Bruk eksisterende** ved siden av en kamp for å bruke den personens oppføring i stedet for å opprette en ny.
-- Klikk **Opprett uansett** for å legge til den nye personen selv om en mulig kamp ble funnet.
+- Klikk på **Bruk eksisterende** ved siden av et treff for å bruke den personens post i stedet for å opprette en ny.
+- Klikk på **Opprett likevel** for å legge til den nye personen selv om det ble funnet et mulig treff.
 
-Dette kontrollerer kun duplikater når du oppretter en helt ny person -- redigering av en eksisterende oppføring utløser det aldri. Den forhindrer bare nye duplikater; den fletter ikke to poster som allerede finnes.
+Dette kontrolleres bare når du oppretter en helt ny person – redigering av en eksisterende post utløser det aldri. Det forhindrer bare nye duplikater; det slår ikke sammen to poster som allerede finnes.
 
-## Redigering av detaljer
+## Redigere opplysninger
 
-1. På personens profilside, klikk på **rediger blyan** ved siden av deres navn.
-2. Fyll inn tilleggsinformasjon som mellomnavnet, medlemskapsstatus, datoer, adresse, telefonnumre og (for barn og elever) klasse og skole.
-3. Klikk **Lagre** for å lagre personinformasjonen.
+1. På personens profilside klikker du på **blyanten for redigering** ved siden av navnet.
+2. Fyll inn tilleggsopplysninger som mellomnavn, medlemsstatus, datoer, adresse, telefonnumre og (for barn og elever) klassetrinn og skole.
+3. Klikk på **Lagre** for å lagre de personlige opplysningene.
 
-Profilen inneholder også flere faner for tilknyttet informasjon:
+Profilen har også flere faner for relatert informasjon:
 
-- **Notater** -- Legg til notater om personen (pastoralomsorga, oppfølging osv.)
-- **Grupper** -- Vis og administrer [gruppemedlemskap](../groups/group-members.md)
-- **Frammøte** -- Vis denne personens individuelle besøkshistorikk, inkludert campus, service, servicetid, gruppe og en **Sjekket inn**-kolonne med kiosksjekk-inn-tiden (vist som en bindestrek for besøk registrert uten kiosksjekk-inn). For kirkeflemme trender i stedet for en persons historie, se [Spor frammøte](../attendance/tracking-attendance.md)
-- **Donasjoner** -- Vis [donasjonhistorie](../donations/recording-donations.md)
+- **Notater** — Legg til notater om personen (sjelesorg, oppfølging osv.)
+- **Grupper** — Se og administrer [gruppemedlemskap](../groups/group-members.md)
+- **Oppmøte** — Se personens egen besøkshistorikk, inkludert avdeling, samling, samlingstid, gruppe og en kolonne **Sjekket inn** med tidspunktet for innsjekking på kiosken (vises som en strek for besøk som er registrert uten kioskinnsjekking). For utvikling i hele menigheten i stedet for én persons historikk, se [Følge opp oppmøte](../attendance/tracking-attendance.md)
+- **Gaver** — Se [giverhistorikk](../donations/recording-donations.md)
+
+## Sende e-post til en person
+
+Hvis personen har en e-postadresse registrert, vises en knapp **Send e-post til denne personen** (konvoluttikon) i profilhodet.
+
+1. Klikk på **konvoluttikonet** i personens profil.
+2. En dialog **E-post** med personens navn som tittel åpnes, og viser **Sendes til** med personens adresse.
+3. Velg eventuelt en lagret mal under **Last inn mal (valgfritt)**.
+4. Skriv inn et **Emne** og skriv meldingen.
+5. Klikk på **Send e-post**.
+
+Hvis du heller vil skrive meldingen i ditt eget e-postprogram, klikker du på **Åpne i e-postappen min**.
+
+:::info
+Sending fra B1 bruker samme godkjenning og daglige grenser som gruppe-e-post. Hvis menigheten din ikke er godkjent ennå, ber dialogen deg om å be om en gjennomgang – du kan fortsatt klikke på **Åpne i e-postappen min** i mellomtiden. Se [Slå på gruppe-e-post for menigheten din](../groups/group-members.md#turning-on-group-email-for-your-church). Brukere som ikke har tillatelse til å redigere gruppemedlemmer, går rett til e-postappen sin når de klikker på konvoluttikonet.
+:::
 
 ## Arbeide med skjemaer
 
-Du kan fylle ut egendefinerte skjemaer direkte fra en persons profil. Dette er brukerdefinerte skjemaer som du kan bygge ved å følge [Opprett skjemaer](../forms/creating-forms.md)-veiledningen.
+Du kan fylle ut egendefinerte skjemaer direkte fra en persons profil. Dette er brukerdefinerte skjemaer som du kan bygge ved å følge veiledningen [Opprette skjemaer](../forms/creating-forms.md).
 
-1. På personens profil, klikk **Skjemaer**-rullegardinmenyen for å velge et skjema.
-2. Klikk **Legg til skjema** for å åpne det.
-3. Fyll ut skjemadetaljer og klikk **Lagre**.
+1. Klikk på nedtrekkslisten **Skjemaer** i personens profil for å velge et skjema.
+2. Klikk på **Legg til skjema** for å åpne det.
+3. Fyll inn opplysningene i skjemaet og klikk på **Lagre**.
 
-Når et skjema er sendt inn, klikk på **skriv ut ikon** ved siden av det for å skrive ut den personens utfylte svar.
+Når et skjema er sendt inn, klikker du på **utskriftsikonet** ved siden av det for å skrive ut personens utfylte svar.
+
+Hvis en innsending havnet hos feil person, klikker du på ikonet **Bytt person** (to piler) ved siden av den for å flytte den til noen andre eller fjerne koblingen. Se [Bytte person på en innsending](../forms/managing-submissions.md#changing-the-person-on-a-submission).
 
 :::info
-Skjemaer lenket til en persons profil bruker **Mennesker**-skjematypen. Hvis du trenger et frittstående skjema (som en eventregistrering), se [frittstående skjema-valget](../forms/creating-forms.md) i skjemaer-veiledningen.
+Skjemaer som er knyttet til en persons profil, bruker skjematypen **Personer**. Hvis du trenger et frittstående skjema (for eksempel en arrangementspåmelding), kan du se [alternativet for frittstående skjema](../forms/creating-forms.md) i veiledningen om skjemaer.
 :::
 
 :::tip
-Hvis du bare trenger å spore en eller to ekstra stykker informasjon på mennesker -- en dato, et tall, et ja/nei-svar -- bruk [Egendefinerte felt](../settings/custom-fields.md) i stedet for et skjema. De er raskere å fylle inn og er søkbare direkte i avansert søk.
+Hvis du bare trenger å registrere én eller to ekstra opplysninger om personer – en dato, et tall, et ja/nei-svar – kan du bruke [Egendefinerte felt](../settings/custom-fields.md) i stedet for et skjema. De er raskere å fylle ut og kan søkes direkte i avansert søk.
 :::
 
-## Administrering av husstander
+## Administrere husstander
 
-Husstander lar deg lenke familiemedlemmer sammen. Dette er spesielt nyttig for [sjekk-inn](../attendance/check-in.md), hvor en forelder kan sjekke inn alle barnene deres på en gang.
+Med husstander kan du knytte familiemedlemmer sammen. Det er særlig nyttig for [innsjekking](../attendance/check-in.md), der en forelder kan sjekke inn alle barna sine samtidig.
 
-1. På en persons profil, klikk på **rediger blyan** ved siden av husstandsnavnet.
-2. Husstandsredigeringen åpnes. Velg **husstandsrollen** for gjeldende person (f.eks. Hode, ektefelle, barn).
-3. Klikk **Legg til** for å legge til et annet husstandsmedlem.
-4. Skriv inn personens navn i søkefeltet og klikk **Søk**.
-5. Når personen vises i søkeresultatene, klikk **Velg**.
-6. Velg deres husstandsrolle og klikk **Lagre** for å fullføre husstandsoppsettet.
+1. Klikk på **blyanten for redigering** ved siden av husstandsnavnet i en persons profil.
+2. Husstandsredigereren åpnes. Velg **husstandsrollen** for den aktuelle personen (for eksempel Hode, Ektefelle, Barn).
+3. Klikk på **Legg til** for å legge til et nytt husstandsmedlem.
+4. Skriv inn personens navn i søkefeltet og klikk på **Søk**.
+5. Når personen vises i søkeresultatene, klikker du på **Velg**.
+6. Velg husstandsrollen til personen og klikk på **Lagre** for å fullføre husstandsoppsettet.

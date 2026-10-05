@@ -1,58 +1,57 @@
 ---
-title: "Curated na Kalendaryo"
+title: "Curated Calendar"
 ---
 
-# Curated na Kalendaryo
+# Curated Calendar
 
 <div class="article-intro">
 
-Ang isang curated na kalendaryo ay nag-a-aggregate ng mga kaganapan mula sa maraming grupo sa isang pinag-isang kalendaryo view. Ito ay perpekto para sa paglikha ng isang pangkalahatang kalendaryo ng simbahan na nagpapakita ng lahat ng nangyayari sa lahat ng iyong mga ministeryo at grupo sa isang lugar.
+Pinagsasama ng curated calendar ang mga event mula sa maraming grupo sa iisang pinag-isang tanaw ng kalendaryo. Mainam ito para gumawa ng kalendaryo ng buong simbahan na nagpapakita ng lahat ng nangyayari sa lahat ng ministeryo at grupo mo sa iisang lugar.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Ka Magsimula</h4>
+<h4>Bago Magsimula</h4>
 
-- I-set up ang mga [grupo](../groups/creating-groups.md) na ang mga kaganapan ay gusto mong isama
-- Tiyaking nagdagdag na ang mga lider ng grupo ng mga kaganapan sa kani-kanilang mga grupo
-- Maging pamilyar sa mga pangunahing kaalaman ng [Paglikha ng Mga Kalendaryo](creating-calendars)
+- I-set up ang mga [grupo](../groups/creating-groups.md) na ang mga event ay nais mong isama
+- Tiyaking nakapagdagdag na ng mga event ang mga lider ng grupo sa kani-kanilang grupo
+- Alamin muna ang mga pangunahing kaalaman sa [Paggawa ng mga Kalendaryo](creating-calendars)
 
 </div>
 
-## Paglikha ng Curated na Kalendaryo
+## Paggawa ng Curated Calendar
 
-1. Mula sa B1 Admin, pumunta sa seksyon ng **Website**.
-2. I-click ang **Mga Kalendaryo** sa itaas na nabigasyon.
-3. I-click ang **Magdagdag ng Kalendaryo** upang lumikha ng bagong curated na kalendaryo.
-4. Bigyan ang iyong kalendaryo ng isang **pangalan** (halimbawa, "Mga Kaganapan ng Simbahan" o "Ngayong Linggo sa Ating Simbahan").
-5. I-click ang **Lumikha** upang i-save ito.
+1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), palawakin ang **Calendars**, at i-click ang **Calendars**.
+2. I-click ang **Add Calendar** para gumawa ng bagong curated calendar.
+3. Bigyan ng **pangalan** ang kalendaryo mo (halimbawa, "Church Events" o "This Week at Our Church").
+4. I-click ang **Create** para i-save ito.
 
-## Pagdaragdag ng mga Grupo sa Iyong Kalendaryo
+## Pagdaragdag ng mga Grupo sa Kalendaryo Mo
 
-1. I-click ang iyong bagong kalendaryo upang buksan ito.
-2. Sa seksyon ng **Mga Grupo sa Kalendaryo** sa kanang bahagi, i-click ang **Magdagdag**.
+1. I-click ang bago mong kalendaryo para buksan ito.
+2. Sa seksyong **Groups in Calendar** sa kanang bahagi, i-click ang **Add**.
 3. Pumili ng grupo mula sa dropdown menu.
-4. Piliin kung idadagdag ang **lahat ng kaganapan** mula sa grupong iyon o **mga partikular na kaganapan** lamang.
-5. I-click ang **I-save**.
-6. Ulitin ang prosesong ito upang magdagdag ng maraming grupo na gusto mong isama.
+4. Piliin kung idadagdag ang **lahat ng event** mula sa grupong iyon o ang **mga partikular na event** lamang.
+5. I-click ang **Save**.
+6. Ulitin ang prosesong ito para makapagdagdag ng kasindami ng grupo na gusto mong isama.
 
 :::tip
-Idagdag ang lahat ng iyong mga aktibong grupo ng ministeryo upang lumikha ng isang komprehensibong kalendaryo na nagbibigay sa iyong kongregasyon ng kumpletong larawan ng lahat ng nangyayari sa iyong simbahan bawat linggo.
+Idagdag ang lahat ng aktibo mong ministeryo para makabuo ng kumpletong kalendaryo na magbibigay sa kongregasyon mo ng buong larawan ng mga nangyayari sa simbahan mo kada linggo.
 :::
 
-## Pagbabahagi ng Iyong Kalendaryo
+## Pagbabahagi ng Kalendaryo Mo
 
-Kapag na-set up na ang iyong curated na kalendaryo, maaari mo itong ibahagi sa iba't ibang paraan:
+Kapag naka-set up na ang curated calendar mo, maaari mo itong ibahagi sa iba't ibang paraan:
 
-- **I-embed sa iyong website** -- Ang kalendaryo ay maaaring ipakita nang direkta sa mga pahina ng iyong B1.church na website upang ma-browse ng mga bisita.
-- **Mag-subscribe sa pamamagitan ng ICS** -- I-click ang **Mag-subscribe** upang kopyahin ang ICS link. Ang iyong kongregasyon ay maaaring i-paste ang link na ito sa Google Calendar, Apple Calendar, Outlook, o anumang iba pang calendar app upang manatiling naka-sync.
-- **I-download ang ICS file** -- I-download ang calendar file upang i-import ito sa isang calendar application.
+- **I-embed sa website mo** -- Maaaring direktang ipakita ang kalendaryo sa mga pahina ng B1.church website mo para mabrowse ng mga bisita.
+- **Mag-subscribe sa pamamagitan ng ICS** -- I-click ang **Subscribe** para kopyahin ang ICS link. Maaaring i-paste ng kongregasyon mo ang link na ito sa Google Calendar, Apple Calendar, Outlook, o anumang ibang calendar app para manatiling sabay-sabay.
+- **I-download ang ICS file** -- I-download ang file ng kalendaryo para i-import sa isang calendar application.
 
 :::info
-Kapag ang mga lider ng grupo ay nagdagdag ng mga bagong kaganapan sa kanilang mga [grupo](../groups/creating-groups.md), awtomatikong lalabas ang mga kaganapang iyon sa iyong curated na kalendaryo. Hindi mo kailangang manu-manong i-update ang curated na kalendaryo sa bawat pagkakataong may idadagdag na bagong kaganapan.
+Kapag nagdagdag ng mga bagong event ang mga lider ng grupo sa kanilang mga [grupo](../groups/creating-groups.md), awtomatikong lalabas ang mga event na iyon sa curated calendar mo. Hindi mo kailangang manu-manong i-update ang curated calendar sa bawat pagdagdag ng bagong event.
 :::
 
 ## Mga Susunod na Hakbang
 
-- [Paglikha ng Mga Kalendaryo](creating-calendars) -- Alamin ang mga pangunahing kaalaman sa paglikha ng kalendaryo
-- [Pangkalahatang-tanaw ng Mga Kalendaryo](./) -- Bumalik sa pangkalahatang-tanaw ng mga kalendaryo
+- [Creating Calendars](creating-calendars) -- Alamin ang mga pangunahing kaalaman sa paggawa ng kalendaryo
+- [Calendars Overview](./) -- Bumalik sa pangkalahatang-ideya ng mga kalendaryo

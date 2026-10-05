@@ -6,96 +6,96 @@ title: "Kaligtasan sa Check-In"
 
 <div class="article-intro">
 
-Kasama ng B1 ang isang hanay ng mga kontrol sa kaligtasan ng bata para sa check-in: mga limitasyon sa kapasidad ng kwarto at mga ratio ng volunteer-sa-bata, gabay sa edad at antas sa kiosk, mga uri ng check-in na nagpapahiwalay ng mga miyembro, bisita, at volunteer, at isang listahan ng mga pinagkakatiwalaang taong maaaring magpakuha bawat pamilya na sinusuri sa checkout. Ang pahinang ito ay sumasaklaw sa paano i-configure ang bawat tampok sa kaligtasan sa B1 Admin.
+May kasamang mga kontrol sa kaligtasan ng mga bata ang B1 para sa check-in: limitasyon sa kapasidad ng silid at ratio ng volunteer sa bata, gabay sa edad at grade sa kiosk, mga uri ng check-in na nagbubukod sa miyembro, bisita, at volunteer, at isang listahan ng mapagkakatiwalaang sumusundo para sa bawat sambahayan na bine-verify sa check-out. Tinatalakay ng pahinang ito kung paano i-configure ang bawat tampok pangkaligtasan sa B1 Admin.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Magsimula</h4>
 
-- I-setup ang inyong [attendance structure](setup.md) at [check-in kiosks](check-in.md)
-- Ang mga kwarto ay [groups](../groups/creating-groups.md) na naka-link sa mga oras ng serbisyo — ang mga setting sa kaligtasan sa ibaba ay nasa group
-- Ang page-a-parent at emergency broadcast ay nangangailangan ng konektadong texting provider ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream), o Mutual Ministry)
+- I-set up ang inyong [attendance structure](setup.md) at [mga check-in kiosk](check-in.md)
+- Ang mga silid ay [mga grupo](../groups/creating-groups.md) na naka-link sa mga oras ng serbisyo — nasa grupo ang mga setting pangkaligtasan sa ibaba
+- Ang page-a-parent at emergency broadcast ay nangangailangan ng nakakonektang texting provider ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream), o Mutual Ministry)
 
 </div>
 
-## Kapasidad ng Kwarto at Pagsasara ng Isang Kwarto
+## Kapasidad ng Silid at Pagsasara ng Silid
 
-Bawat check-in na kwarto (group) ay maaaring magpatupad ng sariling mga limitasyon. Buksan ang group, i-click ang **pencil icon** upang baguhin ang mga setting nito, at hanapin ang **Check-In Capacity** na seksyon:
+Maaaring magpatupad ng sariling limitasyon ang bawat check-in room (grupo). Buksan ang grupo, i-click ang **pencil icon** para i-edit ang mga setting nito, at hanapin ang seksyong **Check-In Capacity**:
 
-- **Capacity** -- Ang maximum na bilang ng mga taong maaaring checked in sa kwartong ito nang sabay-sabay. Kapag puno ang kwarto, ang check-in ay naharang at ang kiosk ay nagpapakita ng puno na kwarto.
-- **Guest Capacity** -- Isang opsyonal na hiwalay na cap sa kung gaano karaming bisita ang maaaring hawakan ng kwarto.
-- **Closed for Check-In** -- I-set sa **Yes** upang ihinto ang lahat ng check-in sa kwartong ito kaagad (halimbawa, kapag kinansela ang isang klase o ang kwarto ay hindi available). Ang mga checkout ay patuloy na gumagana.
+- **Capacity** -- Ang pinakamaraming taong maaaring naka-check in sa silid na ito nang sabay-sabay. Kapag puno na ang silid, hinaharangan ang check-in dito at pinangangalanan ng kiosk ang punong silid.
+- **Guest Capacity** -- Opsyonal na hiwalay na limitasyon sa dami ng bisitang kayang tanggapin ng silid.
+- **Closed for Check-In** -- Itakda sa **Yes** para agad na ihinto ang lahat ng check-in sa silid na ito (halimbawa, kapag kanselado ang klase o hindi magagamit ang silid). Gumagana pa rin ang mga check-out.
 
 ## Mga Ratio ng Volunteer
 
-Ang parehong **Check-In Capacity** na seksyon sa group ay kasama ang mga patakaran sa pag-staff:
+Ang parehong seksyong **Check-In Capacity** sa grupo ay may kasamang mga patakaran sa staffing:
 
-- **Children per Volunteer** -- Ang maximum na bilang ng mga bata na bawat checked-in volunteer ay maaaring suportahan (hal. 5 ay nangangahulugang isang volunteer para sa limang mga bata).
-- **Minimum Volunteers** -- Ang pinakamaliit na bilang ng mga volunteer na dapat na naka-check in bago ang mga bata ay maaaring mag-check in sa kwarto.
+- **Children per Volunteer** -- Ang pinakamaraming batang maaaring bantayan ng bawat naka-check in na volunteer (hal. ang 5 ay nangangahulugang isang volunteer sa bawat limang bata).
+- **Minimum Volunteers** -- Ang pinakamaliit na bilang ng volunteer na dapat naka-check in bago makapag-check in ang mga bata sa silid.
 
-Ang mga volunteer ay binabalanse sa mga panuntunang ito kapag nag-check in nila gamit ang **Volunteer** na uri sa kiosk (tingnan ang [Check-In Types](#check-in-types) sa ibaba).
+Nabibilang ang mga volunteer sa mga patakarang ito kapag nag-check in sila gamit ang uri na **Volunteer** sa kiosk (tingnan ang [Mga Uri ng Check-In](#check-in-types) sa ibaba).
 
-### Pagpili ng Warn vs. Block
+### Pagpili sa Warn o Block
 
-Kung gaano kahigpit ang mga ratio ay ipinapatupad ay isang setting sa buong simbahan:
+Ang higpit ng pagpapatupad ng mga ratio ay isang setting para sa buong simbahan:
 
-1. Sa B1 Admin, pumunta sa **Settings > Manage Church** at buksan ang **Check-In** tile.
+1. Sa B1 Admin, pumunta sa **Settings** at buksan ang seksyong **Check-In**.
 2. I-set ang **Volunteer Ratio Enforcement**:
-   - **Warn (allow with confirmation)** -- Ang kiosk ay nagpapakita ng babala kapag ang kwarto ay higit sa ratio o mas mababa sa minimum na volunteer nito, at ang staff member ay maaaring magpatuloy kahit gaano. Ito ang default.
-   - **Block (prevent check-in)** -- Ang check-in sa kwarto ay tinatanggihan hanggang sa may sapat na volunteer na naka-check in.
+   - **Warn (allow with confirmation)** -- Nagpapakita ang kiosk ng babala kapag sobra na ang ratio ng silid o kulang ito sa minimum na volunteer, at maaaring kumpirmahin ng staff na magpatuloy pa rin. Ito ang default.
+   - **Block (prevent check-in)** -- Tatanggihan ang check-in sa silid hangga't hindi sapat ang mga naka-check in na volunteer.
 
 :::info
-Ang Capacity at Closed for Check-In ay palaging mahigpit na limitasyon — ang pagpili ng warn/block ay nalalapat lamang sa mga ratio ng volunteer.
+Ang Capacity at Closed for Check-In ay palaging mahigpit na limitasyon — ang pagpili ng warn/block ay para lamang sa mga ratio ng volunteer.
 :::
 
 ## Mga Uri ng Check-In
 
-Bawat check-in ay nag-record kung ang taong ito ay isang **Member**, **Guest**, o **Volunteer**. Ang uri ay pinili ng mga chip sa kiosk household screen (Member ang default). Ang mga uri ay nagpapakain sa mga patakaran sa kaligtasan — ang mga volunteer ay nagbibigay ng coverage sa ratio, at ang mga bisita ay bumubuo laban sa Guest Capacity ng kwarto.
+Itinatala ng bawat check-in kung ang tao ay **Member**, **Guest**, o **Volunteer**. Pinipili ang uri gamit ang mga chip sa household screen ng kiosk (ang Member ang default). Nakakaapekto ang mga uri sa mga patakarang pangkaligtasan — ang mga volunteer ang nagbibigay ng saklaw sa ratio, at ang mga bisita ay nabibilang sa Guest Capacity ng silid.
 
-## Gabay sa Edad at Antas ng Kwarto
+## Gabay sa Edad at Grade ng Silid
 
-Maaari kayong magbigay sa bawat kwarto ng mga hangganan sa edad o antas upang ang kiosk ay gumagabay sa mga pamilya sa mga naaangkop na kwarto:
+Maaari kayong magtakda ng saklaw ng edad o grade sa bawat silid para magabayan ng kiosk ang mga pamilya sa angkop na silid:
 
-- Sa mga setting ng group, gamitin ang **Age & Grade** na seksyon upang i-set ang minimum/maximum na edad (taon at buwan) at/o antas para sa kwarto.
-- Sa kiosk, ang mga kwarto na angkop ang bata ay naka-highlight at ang mga hindi angkop ay hindi maliwanag. Ang isang hindi maliwanag na kwarto ay maaaring pa rin pumili gamit ang staff confirmation — ang gabay ay hindi kailanman mahigpit na nagsasara.
+- Sa mga setting ng grupo, gamitin ang seksyong **Age & Grade** para itakda ang minimum/maximum na edad (taon at buwan) at/o grade para sa silid.
+- Sa kiosk, naka-highlight ang mga silid na akma sa bata at malabo ang mga hindi. Maaari pa ring piliin ang malabong silid kung may kumpirmasyon ng staff — hindi kailanman ganap na humaharang ang gabay na ito.
 
-Ang mga antas ay lumilipat sa **grade promotion date** ng inyong simbahan:
+Nagpapalit ang mga grade sa **grade promotion date** ng inyong simbahan:
 
-1. Sa B1 Admin, pumunta sa **Settings > Manage Church** at buksan ang grade promotion tile.
-2. I-set ang buwan at araw ng pagpo-promote ng mga estudyante sa inyong simbahan (halimbawa, Agosto 1). Ang mga edad at antas sa kiosk ay kinukwenta mula sa pinakabagong promotion date.
+1. Sa B1 Admin, pumunta sa **Settings** at buksan ang seksyong **Grade Promotion**.
+2. Itakda ang buwan at araw kung kailan nagpo-promote ng mga estudyante ang inyong simbahan (halimbawa, Agosto 1). Kinakalkula ang mga edad at grade sa kiosk batay sa pinakahuling promotion date.
 
-## Mga Taong Mapagkakatiwalaan at Hindi Awtorisadong Pagkuha
+## Mga Mapagkakatiwalaan at Hindi Awtorisadong Sumusundo
 
-Bawat pamilya ay maaaring magdulot ng isang listahan ng mga taong — o hindi — pinapayagan na magpakuha ng mga bata nito.
+Maaaring magkaroon ang bawat sambahayan ng listahan ng mga taong pinapayagan — o hindi pinapayagan — na sumundo sa mga anak nito.
 
-1. Buksan ang pahina ng isang tao sa **People** at hanapin ang **Pickup** card.
-2. I-click ang **Add**. Maghanap ng isang umiiral na taong, o magdagdag ng sino nang hindi nasa system sa pamamagitan ng pagpasok ng kanilang **Name**, **Relationship**, at larawan.
-3. I-set ang **Status**:
-   - **Trusted** -- Sa checkout, ang taong ito ay lumalabas bilang isang tappable pickup card na may kanilang larawan, na ginagawang mabilis ang napatunayan na pickup.
-   - **Not Authorized** -- Kung ang sino ay sumusubok sa pagkuha sa ilalim ng taong pangalan, ang kiosk ay nagsasara ng checkout gamit ang babala. Ang staff member ay maaaring magbigay-daan, at ang override ay naitala sa attendance record.
+1. Buksan ang pahina ng isang tao sa **People** at hanapin ang card na **Pickup**.
+2. I-click ang **Add**. Maghanap ng kasalukuyang tao, o magdagdag ng taong wala pa sa sistema sa pamamagitan ng paglalagay ng kanyang **Name**, **Relationship**, at larawan.
+3. Itakda ang **Status**:
+   - **Trusted** -- Sa check-out, lalabas ang taong ito bilang pickup card na maaaring i-tap, kasama ang kanyang larawan, para mabilis ang na-verify na pagsundo.
+   - **Not Authorized** -- Kung may magtangkang sumundo gamit ang pangalang ito, haharangin ng kiosk ang check-out at magpapakita ng babala. Maaaring mag-override ang isang staff, at naitatala ang override sa attendance record.
 
-I-click ang status chip ng isang taong sa card upang palitan ang Trusted at Not Authorized.
+I-click ang status chip ng isang tao sa card para magpalit sa pagitan ng Trusted at Not Authorized.
 
 :::tip
-Magdagdag ng mga larawan sa mga pinagkakatiwalaang taong magpakuha kung posible — ang checkout screen ay nagpapakita ng larawan upang ang mga volunteer ay maaaring biswal na mapatunayan ang taong nakatayo sa harap nila.
+Magdagdag ng mga larawan sa mga mapagkakatiwalaang sumusundo hangga't maaari — ipinapakita ng check-out screen ang larawan para makumpirma ng mga volunteer sa pamamagitan ng paningin ang taong nasa harap nila.
 :::
 
 ## Page-a-Parent at Emergency Broadcast
 
-Ang parehong mga feature ay nagpapadala ng text message sa pamamagitan ng konektadong texting provider ng inyong simbahan — walang built-in na SMS service, kaya ang isa sa mga suportadong provider ay dapat na i-configure muna.
+Parehong nagpapadala ng text message ang dalawang tampok sa pamamagitan ng nakakonektang texting provider ng inyong simbahan — walang built-in na SMS service, kaya dapat munang i-configure ang isa sa mga sinusuportahang provider.
 
-- **Page a parent** -- Mula sa isang manned kiosk's checkout screen, ang staff ay maaaring mag-text sa mga magulang/guardians ng isang checked-in child (halimbawa, "Mangyaring dumalo sa nursery").
-- **Emergency broadcast** -- Mula sa mga setting ng admin ng kiosk, ang staff ay maaaring mag-text sa bawat checked-in household's guardians para sa napiling serbisyo nang sabay-sabay. Ang pagpapadala ay nangangailangan ng pag-type ng **EMERGENCY** upang kumpirmahin.
+- **Page a parent** -- Mula sa check-out screen ng kiosk na may nagbabantay, maaaring i-text ng staff ang mga magulang/guardian ng isang naka-check in na bata (halimbawa, "Pakipuntahan po ang nursery").
+- **Emergency broadcast** -- Mula sa admin settings ng kiosk, maaaring i-text ng staff nang sabay-sabay ang mga guardian ng bawat naka-check in na sambahayan para sa napiling serbisyo. Kailangang i-type ang **EMERGENCY** para makumpirma ang pagpapadala.
 
-Ang mga taong nag-opt out ng mga text, o walang mobile number sa file, ay awtomatikong na-skip — ang kiosk ay nag-report kung gaano karaming mensahe ang ipinadala at gaano karaming ay na-skip.
+Awtomatikong nilalaktawan ang mga taong nag-opt out sa mga text, o walang mobile number na nakatala — iuulat ng kiosk kung ilang mensahe ang naipadala at ilan ang nalaktawan.
 
-Tingnan ang kiosk-side walkthrough sa [Check-Out & Child Safety](../../b1-checkin/check-in/checking-out).
+Tingnan ang gabay sa panig ng kiosk sa [Check-Out at Kaligtasan ng Bata](../../b1-checkin/check-in/checking-out).
 
 ## Mga Kaugnay na Artikulo
 
-- [Check-In](check-in.md) — kiosk setup at hardware
-- [Check-Out & Child Safety](../../b1-checkin/check-in/checking-out) — ang kiosk checkout, pickup verification, at paging flows
-- [Creating Groups](../groups/creating-groups.md) — kung saan ang mga setting ng kwarto ay nabubuhay
-- [Attendance Setup](setup.md) — mga serbisyo, oras ng serbisyo, at assignment sa kwarto
-- [Minimum Age for Private Messages](../settings/mobile-app.md#member-directory--messaging-settings) — naghaharang ng mga bagong private-message na pag-uusap sa mga bata habang pinapanatili sila sa directory
+- [Check-In](check-in.md) — setup ng kiosk at hardware
+- [Check-Out at Kaligtasan ng Bata](../../b1-checkin/check-in/checking-out) — ang check-out sa kiosk, pag-verify ng sumusundo, at mga paraan ng paging
+- [Paglikha ng mga Grupo](../groups/creating-groups.md) — kung nasaan ang mga setting ng silid
+- [Attendance Setup](setup.md) — mga serbisyo, oras ng serbisyo, at pagtatalaga ng silid
+- [Minimum na Edad para sa Private Message](../settings/mobile-app.md#member-directory--messaging-settings) — hinaharangan ang bagong private-message na usapan sa mga bata habang nananatili sila sa directory

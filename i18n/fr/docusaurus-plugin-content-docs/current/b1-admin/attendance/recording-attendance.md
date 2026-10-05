@@ -22,7 +22,7 @@ Une fois que vos campus, heures de service et groupes sont configurés, vous pou
 
 Une session représente une occurrence d'une réunion de groupe -- par exemple, votre classe des maternelle à 3e année un dimanche spécifique.
 
-1. Ouvrez **B1 Admin**, ouvrez le **menu de section** dans le coin supérieur gauche et choisissez **Personnes**, puis cliquez sur l'onglet **Groupes**.
+1. Ouvrez **B1 Admin**, ouvrez le [menu Sauter](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Personnes**, et cliquez sur **Groupes**.
 2. Sélectionnez le groupe pour lequel vous souhaitez enregistrer la présence.
 3. Cliquez sur l'onglet **Sessions**.
 4. Cliquez sur **Nouveau** pour créer une nouvelle session.
@@ -30,11 +30,21 @@ Une session représente une occurrence d'une réunion de groupe -- par exemple, 
 6. Sélectionnez la **Date de la session** -- cela peut être aujourd'hui, une date passée ou une date future.
 7. Cliquez sur **Enregistrer**.
 
+### Ajouter des sessions pour chaque classe dans une heure de service
+
+Si d'autres groupes se réunissent à la même heure de service (par exemple, tous vos cours pour enfants le dimanche à 9h00), vous pouvez créer leurs sessions en une seule étape au lieu de visiter chaque groupe.
+
+1. Suivez les étapes ci-dessus et choisissez une **Heure de service**.
+2. Cochez **Ajouter également pour les autres _N_ groupes dans _heure de service_**. La case à cocher affiche le nombre d'autres groupes assignés à cette heure de service. Elle n'apparaît que lors de l'ajout d'une nouvelle session et au moins un autre groupe se réunit à cette heure.
+3. Cliquez sur **Enregistrer**.
+
+Une session est créée pour le groupe actuel et pour chacun des autres groupes à la même date et heure de service. Les groupes qui ont déjà une session pour cette date et heure de service sont ignorés, vous n'obtiendrez donc pas de doublons.
+
 :::tip
 Vous pouvez créer des sessions pour des dates passées pour rattraper la présence que vous n'avez pas encore enregistrée, ou les créer à l'avance pour qu'elles soient prêtes quand votre groupe se réunit.
 :::
 
-## Marquer la présence
+## Marquer la présence (enregistrer la présence)
 
 Sélectionnez une session pour voir sa liste de présence. Chaque membre du groupe est listé avec une case à cocher, trié par nom de famille, et toute personne déjà enregistrée comme présente est cochée.
 
@@ -49,6 +59,20 @@ Décocher quelqu'un qui a été déjà enregistré comme présent et ensuite enr
 Pour enregistrer quelqu'un qui n'est pas membre du groupe, recherchez-le dans la barre de recherche de personnes à côté de la liste de présence. S'il n'est pas encore dans votre base de données, vous pouvez le créer à partir de la recherche. Il est ajouté à la liste déjà coché. Cliquez sur **Enregistrer la Présence** pour l'enregistrer.
 
 Les personnes qui se sont enregistrées à un kiosque affichent une puce **Bénévole** ou **Invité**. Les personnes qui ne sont pas des membres du groupe affichent une puce **Invité**.
+
+## Vérifier quels groupes ont encore besoin de présence
+
+Lorsque plusieurs classes se réunissent à la même heure de service, vous pouvez voir d'un coup d'œil lesquels ont encore besoin que leur présence soit entrée pour cette date.
+
+1. Ouvrez une session qui a une heure de service.
+2. Cliquez sur **Qui a encore besoin de Présence** en haut de la liste de présence.
+3. Une boîte de dialogue répertorie chaque groupe assigné à cette heure de service, avec un résumé tel que "5 de 8 groupes entrés" en haut.
+
+Les groupes sans personne marquée comme présente pour cette date affichent une puce **Non entré** et sont listés en premier. Les groupes qui ont une présence affichent **Entré** avec le nombre de personnes marquées présentes (par exemple, "Entré (12)"). Cliquez sur le nom d'un groupe pour accéder à ce groupe et enregistrer sa présence.
+
+:::tip
+Associez ceci avec **Imprimer Toutes les Classes** et [ajouter des sessions pour chaque classe dans une heure de service](#ajouter-des-sessions-pour-chaque-classe-dans-une-heure-de-service) : créez les sessions, distribuez les feuilles d'appel, puis utilisez **Qui a encore besoin de Présence** pour voir quelles feuilles n'ont pas encore été entrées.
+:::
 
 ## Impression d'une feuille d'appel
 
@@ -73,7 +97,7 @@ Vous pouvez télécharger un enregistrement de la session sous la forme d'un fic
 Après avoir enregistré les sessions, les données apparaissent dans vos rapports de présence.
 
 - **Onglet Tendance de Présence** -- affiche les tendances à l'échelle de l'église au fil du temps. Voir [Suivi de la Présence](tracking-attendance.md).
-- **Onglet Présence du Groupe** -- affiche la présence ventilée par groupe individuel.
+- **Onglet Présence du Groupe** -- affiche la présence ventilée par groupe individuel. Voir [Rapports de Présence](../reports/attendance-reports.md#group-attendance).
 
 :::tip
 Si une session que vous venez de créer n'apparaît pas immédiatement dans les rapports, assurez-vous que la date de la session se situe dans la plage de dates sélectionnée dans les filtres des rapports.

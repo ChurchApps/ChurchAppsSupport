@@ -6,7 +6,7 @@ title: "Audit Log"
 
 <div class="article-intro">
 
-Ang audit log ay sumusubaybay sa lahat ng mahalagang aksyon at pagbabago sa buong church management system. Gamitin ito upang suriin ang login activity, subaybayan kung sino ang gumawa ng mga pagbabago sa records ng mga tao, subaybayan ang mga pagbabago ng pahintulot, at panatilihing accountable ang inyong koponan.
+Sinusubaybayan ng audit log ang lahat ng mahahalagang aksyon at pagbabago sa buong sistema ng pamamahala ng inyong simbahan. Gamitin ito para suriin ang aktibidad sa pag-log in, alamin kung sino ang gumawa ng mga pagbabago sa mga talaan ng tao, bantayan ang mga update sa pahintulot, at panatilihin ang pananagutan sa buong inyong team.
 
 </div>
 
@@ -14,70 +14,70 @@ Ang audit log ay sumusubaybay sa lahat ng mahalagang aksyon at pagbabago sa buon
 <h4>Bago Magsimula</h4>
 
 - B1 Admin account na may server admin access
-- Mag-navigate sa **Settings** upang mahanap ang Audit Log
+- Pumunta sa **Settings** para makita ang Audit Log
 
 </div>
 
 ## Pagtingin sa Audit Log
 
-1. Magpunta sa **Settings** sa B1 Admin.
-2. Piliin ang **Audit Log**.
-3. Ang log ay nagpapakita ng mga kamakailan na entry sa isang table na may mga susunod na kolumn:
-   - **Date** -- Kailan ang aksyon ay nangyari.
-   - **Category** -- Ang uri ng aksyon (may kulay para sa mabilis na pagsusuri).
-   - **Action** -- Kung ano ang ginawa (e.g., create, update, delete, login_success).
-   - **Entity** -- Ang uri at ID ng record na naaapektuhan.
-   - **IP Address** -- Ang IP address ng user na nagsagawa ng aksyon.
-   - **Details** -- Isang summary ng tiyak na mga pagbabago na ginawa.
+1. Buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas ng B1 Admin) at palawakin ang **Settings**.
+2. I-click ang **Audit Log**.
+3. Ipinapakita ng log ang mga kamakailang entry sa isang talahanayan na may mga sumusunod na column:
+   - **Date** -- Kailan naganap ang aksyon.
+   - **Category** -- Ang uri ng aksyon (may kulay para madaling makilala).
+   - **Action** -- Ang ginawa (hal., create, update, delete, login_success).
+   - **Entity** -- Ang uri at ID ng talaang naapektuhan.
+   - **IP Address** -- Ang IP address ng user na gumawa ng aksyon.
+   - **Details** -- Buod ng mga partikular na pagbabagong ginawa.
 
 ## Pag-filter ng Log
 
-Gamitin ang mga filter sa itaas ng pahina upang mabawasan ang mga resulta:
+Gamitin ang mga filter sa itaas ng pahina para paliitin ang mga resulta:
 
 - **Category** -- I-filter ayon sa uri ng aksyon:
   - **All Categories** -- Ipakita ang lahat.
-  - **Login** -- Mga successful at failed login attempts.
-  - **People** -- Paglikha, pag-update, o pagbura ng mga record ng tao.
-  - **Permissions** -- Mga grant at revocation ng pahintulot.
-  - **Donations** -- Mga pagbabago ng record ng donasyon.
-  - **Groups** -- Mga aksyon ng pamamahala ng grupo.
-  - **Forms** -- Aktibidad ng pag-submit ng form.
-  - **Settings** -- Mga pagbabago ng pagsasaayos.
-- **Start Date** -- Ipakita ang mga entry mula sa pinting na ito hanggang sa hinaharap.
-- **End Date** -- Ipakita ang mga entry hanggang sa pinting na ito.
+  - **Login** -- Mga matagumpay at nabigong pag-log in.
+  - **People** -- Paggawa, pag-update, o pagbura ng mga talaan ng tao.
+  - **Permissions** -- Pagbibigay at pagbawi ng mga pahintulot.
+  - **Donations** -- Mga pagbabago sa talaan ng donasyon.
+  - **Groups** -- Mga aksyon sa pamamahala ng group.
+  - **Forms** -- Aktibidad sa pagsusumite ng form.
+  - **Settings** -- Mga pagbabago sa configuration.
+- **Start Date** -- Ipakita ang mga entry mula sa petsang ito pasulong.
+- **End Date** -- Ipakita ang mga entry hanggang sa petsang ito.
 
-I-click ang **Search** pagkatapos itakda ang inyong mga filter upang i-update ang mga resulta.
+I-click ang **Search** matapos i-set ang inyong mga filter para i-update ang mga resulta.
 
-## Pag-unawa sa Mga Kategorya
+## Pag-unawa sa mga Kategorya
 
-Bawat kategorya ay may kulay para sa mabilis na pagkilala:
+May kulay ang bawat kategorya para madaling makilala:
 
-- **Login** -- Blue chip. Sumusubaybay sa mga successful at failed login attempts.
-- **People** -- Purple chip. Sumusubaybay sa paglikha, pag-update, at pagbura ng records ng tao.
-- **Permissions** -- Red chip. Sumusubaybay sa pagbibigay o pagsasaad ng access rights.
-- **Donations** -- Green chip. Sumusubaybay sa mga pagbabago ng record ng donasyon.
-- **Groups** -- Gray chip. Sumusubaybay sa mga operasyon ng pamamahala ng grupo.
-- **Forms** -- Orange chip. Sumusubaybay sa aktibidad ng pag-submit ng form.
-- **Settings** -- Yellow chip. Sumusubaybay sa mga pagbabago ng pagsasaayos.
+- **Login** -- Asul na chip. Sinusubaybayan ang mga matagumpay at nabigong pagtatangkang mag-log in.
+- **People** -- Lilang chip. Sinusubaybayan ang paggawa, pag-update, at pagbura ng mga talaan ng tao.
+- **Permissions** -- Pulang chip. Sinusubaybayan kapag ibinibigay o binabawi ang mga karapatan sa access.
+- **Donations** -- Berdeng chip. Sinusubaybayan ang mga pagbabago sa talaan ng donasyon.
+- **Groups** -- Abuhing chip. Sinusubaybayan ang mga operasyon sa pamamahala ng group.
+- **Forms** -- Kahel na chip. Sinusubaybayan ang aktibidad sa pagsusumite ng form.
+- **Settings** -- Dilaw na chip. Sinusubaybayan ang mga pagbabago sa configuration.
 
 ## Pag-export ng Log
 
-Kapag ang mga entry ng log ay ipinapakita, isang **CSV download** button ay lilitaw. I-click ito upang i-export ang kasalukuyang filtered results sa isang spreadsheet para sa offline review o pag-recording.
+Kapag may ipinapakitang mga entry sa log, lalabas ang button na **CSV download**. I-click ito para i-export ang kasalukuyang na-filter na mga resulta sa isang spreadsheet para sa offline na pagsusuri o pag-iingat ng talaan.
 
 ## Pagination
 
-Gamitin ang pagination controls sa ilalim ng table upang mag-navigate sa mga resulta. Maaari ninyong ipakita ang 25, 50, o 100 na mga entry bawat pahina.
+Gamitin ang mga kontrol ng pagination sa ibaba ng talahanayan para mag-navigate sa mga resulta. Maaari kayong magpakita ng 25, 50, o 100 entry kada pahina.
 
 :::info
-Ang mga audit log entries ay awtomatikong pinanatili para sa isang taon. Ang mga entry na mas lumang kaysa 365 days ay tinanggal upang panatilihing performant ang system.
+Awtomatikong iniingatan ang mga entry ng audit log sa loob ng isang taon. Inaalis ang mga entry na mas matanda sa 365 araw para mapanatiling mabilis ang sistema.
 :::
 
 :::tip
-Suriin ang audit log nang regular, lalo na pagkatapos ng pag-onboard ng mga bagong miyembro ng koponan o gumawa ng mga malaking pagbabago sa pagsasaayos. Ito ay tumutulong na matukoy ang hindi inaasahang aktibidad nang maaga.
+Regular na suriin ang audit log, lalo na pagkatapos mag-onboard ng mga bagong miyembro ng team o gumawa ng malalaking pagbabago sa configuration. Nakakatulong ito para maagang matukoy ang hindi inaasahang aktibidad.
 :::
 
-## Related Articles
+## Mga Kaugnay na Artikulo
 
-- [Roles & Permissions](../settings/roles-permissions) -- Pamahalaan kung sino ang may access sa ano
-- [Data Security](../settings/data-security) -- Maunawaan kung paano ang inyong data ay protektado
-- [Reports Overview](./index.md) -- Tingnan ang lahat ng available reports
+- [Mga Role at Pahintulot](../settings/roles-permissions) -- Pamahalaan kung sino ang may access sa ano
+- [Seguridad ng Datos](../settings/data-security) -- Unawain kung paano pinoprotektahan ang inyong datos
+- [Pangkalahatang-ideya ng mga Ulat](./index.md) -- Tingnan ang lahat ng available na ulat

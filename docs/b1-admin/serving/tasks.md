@@ -14,13 +14,13 @@ Tasks let you assign action items to people or groups in your church. Whether it
 <h4>Before You Begin</h4>
 
 - Make sure the people or [groups](../groups/creating-groups.md) you want to assign tasks to exist in B1 Admin
-- Navigate to the **Serving** section and open **My Work** to see tasks
+- In the [Jump menu](../introduction.md#getting-around-with-the-jump-menu), choose **Serving > My Work** to see tasks
 
 </div>
 
 ## Viewing Tasks
 
-Navigate to **Serving** and open **My Work**. You will see a list of your open tasks. Each task shows its title, assignee, and status.
+In the Jump menu, choose **Serving > My Work** (or search for "My Work"). You will see a list of your open tasks. Each task shows its title, assignee, and status.
 
 :::tip
 By default, only open tasks are shown. Toggle **Show Closed** to see completed tasks as well.

@@ -1,53 +1,53 @@
 ---
-title: "Lessons (Deprecated)"
+title: "पाठ (पदावनत)"
 ---
 
-# Lessons (Deprecated)
+# पाठ (पदावनत)
 
-:::danger Lessons tab has been replaced by FreePlay
-The embedded **Lessons** tab on B1.church has been deprecated. Curriculum playback from Lessons.church is now delivered through **[FreePlay](/docs/freeplay/)** — ChurchApps' free TV app for classroom screens, Fire TV, Apple TV, and Android TV — which offers offline playback, classroom pairing, and a TV-remote experience the embedded tab could not provide.
+:::danger Lessons टैब को FreePlay ने प्रतिस्थापित किया है
+B1.church पर एम्बेडेड **Lessons** टैब को पदावनत कर दिया गया है। Lessons.church से पाठ्यक्रम प्लेबैक अब **[FreePlay](/docs/freeplay/)** के माध्यम से वितरित किया जाता है -- क्लासरूम स्क्रीन, Fire TV, Apple TV, और Android TV के लिए ChurchApps का मुफ्त TV ऐप -- जो ऑफलाइन प्लेबैक, क्लासरूम पेयरिंग, और एक TV-रिमोट अनुभव प्रदान करता है जो एम्बेडेड टैब प्रदान नहीं कर सकता।
 
-To browse, schedule, or edit curriculum directly, sign in to [Lessons.church](https://lessons.church) in your browser. To play lessons on a classroom TV, install [FreePlay](/docs/freeplay/getting-started/) on your TV device.
+पाठ्यक्रम को ब्राउज़ करने, शेड्यूल करने, या संपादित करने के लिए, अपने ब्राउज़र में [Lessons.church](https://lessons.church) में साइन इन करें। किसी क्लासरूम TV पर पाठ चलाने के लिए, अपने TV डिवाइस पर [FreePlay](/docs/freeplay/getting-started/) स्थापित करें।
 
-Parents of groups associated with a lesson plan type in B1Admin see **this week's lesson** on the [group details](/docs/b1-church/groups/group-details.md) page — not on this deprecated tab.
+समूहों के माता-पिता जो B1Admin में एक पाठ योजना प्रकार से जुड़े हैं, [समूह विवरण](/docs/b1-church/groups/group-details.md) पृष्ठ पर **इस सप्ताह का पाठ** देखते हैं -- इस पदावनत टैब पर नहीं।
 :::
 
 <div class="article-intro">
 
-The **Lessons** tab gave you access to your church's curriculum and learning materials. Content was provided through the Lessons.church platform and embedded directly within B1.church, so you did not need to navigate to a separate site.
+**Lessons** टैब आपको अपने चर्च के पाठ्यक्रम और शिक्षण सामग्री तक पहुंच दी गई। सामग्री Lessons.church प्लेटफॉर्म द्वारा प्रदान की गई थी और B1.church के भीतर सीधे एम्बेड की गई थी, इसलिए आपको एक अलग साइट पर नेविगेट करने की आवश्यकता नहीं थी।
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>शुरुआत करने से पहले</h4>
 
-- You must be [logged in](../getting-started/logging-in.md) to your B1.church account. The Lessons tab is located in the member area and requires authentication.
-- Your church must have configured curriculum through Lessons.church.
+- आप [लॉग इन](../getting-started/logging-in.md) अपने B1.church खाते में होना चाहिए। Lessons टैब सदस्य क्षेत्र में स्थित है और प्रमाणीकरण की आवश्यकता है।
+- आपके चर्च के पास Lessons.church के माध्यम से पाठ्यक्रम कॉन्फ़िगर होना चाहिए।
 
 </div>
 
-## Accessing Lessons
+## पाठ तक पहुंचना
 
-1. Log in to your B1.church member portal.
-2. Click the **Lessons** tab in the [member navigation](../getting-started/navigating.md).
-3. The Lessons.church content loads directly within the page.
+1. अपने B1.church सदस्य पोर्टल में लॉग इन करें।
+2. [सदस्य नेविगेशन](../getting-started/navigating.md) में **Lessons** टैब पर क्लिक करें।
+3. Lessons.church सामग्री सीधे पृष्ठ के भीतर लोड होती है।
 
-Your login carries over automatically when you open the Lessons tab. You do not need to sign in again separately to Lessons.church.
+आपका लॉगिन स्वचालित रूप से स्थानांतरित हो जाता है जब आप Lessons टैब खोलते हैं। आपको Lessons.church में अलग से साइन इन करने की आवश्यकता नहीं है।
 
-## What You Can Do
+## आप क्या कर सकते हैं
 
-Once inside the Lessons tab, you can browse the curriculum your church has made available. Depending on what your church has set up, you may find:
+एक बार Lessons टैब के अंदर, आप पाठ्यक्रम को ब्राउज़ कर सकते हैं जो आपके चर्च ने उपलब्ध कराया है। आपके चर्च के द्वारा क्या सेट अप किया गया है इसके आधार पर, आप निम्न पा सकते हैं:
 
-- **Lesson plans** -- Structured outlines with sections and activities
-- **Presentations and media** -- Slides, videos, and images to accompany lessons
-- **Downloadable resources** -- Files and add-ons for further study
+- **पाठ योजनाएं** -- अनुभागों और गतिविधियों के साथ संरचित रूपरेखाएं
+- **प्रस्तुतियां और मीडिया** -- पाठ के साथ स्लाइड, वीडियो और छवियां
+- **डाउनलोड करने योग्य संसाधन** -- आगे के अध्ययन के लिए फाइलें और ऐड-ऑन
 
-You can click on individual sections within a lesson to view their content in a dialog window. Use the **Back** button to return to the section list, or **Close** to exit the dialog.
+आप एक पाठ के भीतर व्यक्तिगत अनुभागों पर क्लिक कर सकते हैं उनकी सामग्री को एक संवाद विंडो में देखने के लिए। अनुभाग सूची पर लौटने के लिए **वापस** बटन का उपयोग करें, या **बंद करें** संवाद से बाहर निकलने के लिए।
 
 :::tip
-Lessons shared with your groups will also appear on your [Timeline](../community/timeline.md), making it easy to find assigned curriculum without navigating to the Lessons tab directly.
+आपके समूहों के लिए निर्धारित पाठ [समूह विवरण](../groups/group-details.md) पृष्ठ पर **इस सप्ताह का पाठ** के रूप में दिखाई देते हैं, जिससे Lessons टैब पर सीधे नेविगेट किए बिना असाइन किए गए पाठ्यक्रम को खोजना आसान हो जाता है।
 :::
 
-## Availability
+## उपलब्धता
 
-The Lessons tab appears when your church has configured curriculum through Lessons.church. If you do not see a **Lessons** tab in your member navigation, your church may not have lesson content set up. Contact your church administrator for more information.
+Lessons टैब तब दिखाई देता है जब आपके चर्च के पास Lessons.church के माध्यम से पाठ्यक्रम कॉन्फ़िगर किया जाता है। यदि आप अपने सदस्य नेविगेशन में **Lessons** टैब नहीं देखते हैं, तो आपके चर्च के पास पाठ सामग्री सेट अप नहीं हो सकती है। अधिक जानकारी के लिए अपने चर्च प्रशासक से संपर्क करें।

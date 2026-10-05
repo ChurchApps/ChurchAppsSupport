@@ -1,43 +1,43 @@
 ---
-title: "Attendance Endpoints"
+title: "Mga Endpoint ng Attendance"
 ---
 
-# Attendance Endpoints
+# Mga Endpoint ng Attendance
 
 <div class="article-intro">
 
-Pinamamahalaan ng Attendance module ang mga lokasyon ng campus, serbisyo, oras ng serbisyo, attendance session, visit, at visit session. Nagbibigay ito ng imprastraktura para subaybayan kung sino ang dumalo sa aling serbisyo o pagpupulong ng grupo, sinusuportahan ang mga check-in workflow, at nag-aalok ng trend at summary reporting ng attendance.
+Pinamamahalaan ng Attendance module ang mga lokasyon ng campus, mga serbisyo, mga oras ng serbisyo, mga sesyon ng attendance, mga visit, at mga visit session. Ito ang nagbibigay ng imprastraktura para masubaybayan kung sino ang dumalo sa aling serbisyo o pagtitipon ng grupo, sumusuporta sa mga workflow ng check-in, at nag-aalok ng pag-uulat ng mga trend at buod ng attendance.
 
 </div>
 
 **Base path:** `/attendance`
 
-## Campuses
+## Mga Campus
 
 Base path: `/attendance/campuses`
 
-Standard na CRUD controller (nag-e-extend ng GenericCrudController). Nagbibigay ng mga route na `getById`, `getAll`, `post`, at `delete` sa pamamagitan ng CRUD base class.
+Karaniwang CRUD controller (nag-e-extend ng GenericCrudController). Nagbibigay ng mga route na `getById`, `getAll`, `post`, at `delete` sa pamamagitan ng CRUD base class.
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Ilista ang lahat ng campus para sa simbahan |
+| GET | `/` | JWT | — | Ilista ang lahat ng campus ng simbahan |
 | GET | `/:id` | JWT | — | Kunin ang isang campus ayon sa ID |
-| POST | `/` | JWT | Services.Edit | Lumikha o mag-update ng mga campus |
-| DELETE | `/:id` | JWT | Services.Edit | Tanggalin ang isang campus |
+| POST | `/` | JWT | Services.Edit | Gumawa o mag-update ng mga campus |
+| DELETE | `/:id` | JWT | Services.Edit | Magtanggal ng campus |
 
-## Services
+## Mga Serbisyo
 
 Base path: `/attendance/services`
 
-Nag-e-extend ng GenericCrudController na may mga CRUD route na `getById`, `getAll`, `post`, at `delete`. Ang `getAll` (`GET /`) at `search` endpoint ay na-override gamit ang custom na implementasyon.
+Nag-e-extend ng GenericCrudController na may mga CRUD route na `getById`, `getAll`, `post`, at `delete`. Ang mga endpoint na `getAll` (`GET /`) at `search` ay pinalitan ng mga custom na implementasyon.
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
 | GET | `/` | JWT | — | Ilista ang lahat ng serbisyo (kasama ang impormasyon ng campus) |
 | GET | `/:id` | JWT | — | Kunin ang isang serbisyo ayon sa ID |
 | GET | `/search?campusId=` | JWT | — | Maghanap ng mga serbisyo ayon sa campus ID |
-| POST | `/` | JWT | Services.Edit | Lumikha o mag-update ng mga serbisyo |
-| DELETE | `/:id` | JWT | Services.Edit | Tanggalin ang isang serbisyo |
+| POST | `/` | JWT | Services.Edit | Gumawa o mag-update ng mga serbisyo |
+| DELETE | `/:id` | JWT | Services.Edit | Magtanggal ng serbisyo |
 
 ### Halimbawa: Maghanap ng mga Serbisyo ayon sa Campus
 
@@ -57,49 +57,50 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Service Times
+## Mga Oras ng Serbisyo
 
 Base path: `/attendance/servicetimes`
 
-Nag-e-extend ng GenericCrudController na may mga CRUD route na `getById`, `post`, at `delete`. Ang `getAll` at `search` endpoint ay mga custom na implementasyon.
+Nag-e-extend ng GenericCrudController na may mga CRUD route na `getById`, `post`, at `delete`. Ang mga endpoint na `getAll` at `search` ay mga custom na implementasyon.
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Ilista ang lahat ng oras ng serbisyo. I-filter sa pamamagitan ng `?serviceId=`. Idagdag ang `?include=groups` upang isama ang data ng grupo |
+| GET | `/` | JWT | — | Ilista ang lahat ng oras ng serbisyo. I-filter gamit ang `?serviceId=`. Idagdag ang `?include=groups` para isama ang data ng grupo |
 | GET | `/:id` | JWT | — | Kunin ang isang oras ng serbisyo ayon sa ID |
 | GET | `/search?campusId=&serviceId=` | JWT | — | Maghanap ng mga oras ng serbisyo ayon sa campus at serbisyo |
-| GET | `/public/:churchId` | Public | — | Kunin ang campus → serbisyo → time tree para sa isang simbahan. Nagpapatakbo sa `serviceTimes` element ng website builder |
-| POST | `/` | JWT | Services.Edit | Lumikha o mag-update ng mga oras ng serbisyo |
-| DELETE | `/:id` | JWT | Services.Edit | Tanggalin ang isang oras ng serbisyo |
+| GET | `/public/:churchId` | Public | — | Kunin ang puno ng campus → serbisyo → oras para sa isang simbahan. Ito ang nagpapagana sa elementong `serviceTimes` ng website builder |
+| POST | `/` | JWT | Services.Edit | Gumawa o mag-update ng mga oras ng serbisyo |
+| DELETE | `/:id` | JWT | Services.Edit | Magtanggal ng oras ng serbisyo |
 
-## Group Service Times
+## Mga Oras ng Serbisyo ng Grupo
 
 Base path: `/attendance/groupservicetimes`
 
-Nag-uugnay ng mga grupo sa partikular na mga oras ng serbisyo.
+Nag-uugnay ng mga grupo sa mga partikular na oras ng serbisyo.
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Ilista ang lahat ng ugnayan ng group-service-time. I-filter sa pamamagitan ng `?groupId=` upang makuha ang mga ugnayan na may pangalan ng serbisyo |
-| GET | `/:id` | JWT | — | Kunin ang isang ugnayan ng group-service-time ayon sa ID |
-| POST | `/` | JWT | Services.Edit | Lumikha o mag-update ng mga ugnayan ng group-service-time |
-| DELETE | `/:id` | JWT | Services.Edit | Tanggalin ang isang ugnayan ng group-service-time |
+| GET | `/` | JWT | — | Ilista ang lahat ng ugnayan ng grupo at oras ng serbisyo. I-filter gamit ang `?groupId=` para makuha ang mga ugnayan kasama ang mga pangalan ng serbisyo |
+| GET | `/:id` | JWT | — | Kunin ang isang ugnayan ng grupo at oras ng serbisyo ayon sa ID |
+| POST | `/` | JWT | Services.Edit | Gumawa o mag-update ng mga ugnayan ng grupo at oras ng serbisyo |
+| DELETE | `/:id` | JWT | Services.Edit | Magtanggal ng ugnayan ng grupo at oras ng serbisyo |
 
-## Attendance Records
+## Mga Tala ng Attendance
 
 Base path: `/attendance/attendancerecords`
 
-Nagbibigay ng read-only na aggregate view ng attendance data para sa reporting at pagpapakita.
+Nagbibigay ng mga read-only na pinagsama-samang tanaw ng data ng attendance para sa pag-uulat at pagpapakita.
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Attendance.View | I-load ang mga attendance record para sa isang tao. Kailangan ang `?personId=` |
-| GET | `/tree` | JWT | — | I-load ang buong attendance tree (mga campus, serbisyo, oras ng serbisyo, grupo) |
-| GET | `/trend?campusId=&serviceId=&serviceTimeId=&groupId=` | JWT | Attendance.View Summary | I-load ang attendance trend data na may opsyonal na mga filter |
-| GET | `/groups?serviceId=&week=` | JWT | Attendance.View | I-load ang group attendance para sa isang serbisyo sa isang naibigay na linggo |
-| GET | `/search?campusId=&serviceId=&serviceTimeId=&groupId=&startDate=&endDate=` | JWT | Attendance.View | Maghanap ng mga attendance record na may mga filter (campus, serbisyo, oras ng serbisyo, grupo, saklaw ng petsa) |
+| GET | `/` | JWT | Attendance.View | Kunin ang mga tala ng attendance ng isang tao. Kailangan ang `?personId=` |
+| GET | `/tree` | JWT | — | Kunin ang buong puno ng attendance (mga campus, serbisyo, oras ng serbisyo, grupo) |
+| GET | `/trend?campusId=&serviceId=&serviceTimeId=&groupId=` | JWT | Attendance.View Summary | Kunin ang data ng trend ng attendance na may opsyonal na mga filter |
+| GET | `/groups?serviceId=&week=` | JWT | Attendance.View | Kunin ang attendance ng mga grupo para sa isang serbisyo sa isang partikular na linggo |
+| GET | `/sessionStatus?serviceTimeId=&date=` | JWT | Attendance.View | Para sa bawat grupong nakatalaga sa oras ng serbisyo, ibabalik ang `{ groupId, sessionId, attendanceCount }` para sa petsang iyon (ang `date` ay `YYYY-MM-DD`; ang `sessionId` ay null kapag walang sesyon ang grupo). Ito ang sumusuporta sa dialog na **Who Still Needs Attendance** ng B1Admin |
+| GET | `/search?campusId=&serviceId=&serviceTimeId=&groupId=&startDate=&endDate=` | JWT | Attendance.View | Maghanap ng mga tala ng attendance gamit ang mga filter (campus, serbisyo, oras ng serbisyo, grupo, saklaw ng petsa) |
 
-### Halimbawa: Attendance Trend
+### Halimbawa: Trend ng Attendance
 
 ```
 GET /attendance/attendancerecords/trend?serviceId=svc-001
@@ -114,37 +115,37 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Sessions
+## Mga Sesyon
 
 Base path: `/attendance/sessions`
 
-Nag-e-extend ng GenericCrudController na may mga CRUD route na `getById` at `delete`. Ang `getAll` at `save` endpoint ay mga custom na implementasyon na nagpapahintulot din sa mga leader ng grupo na pamahalaan ang mga session para sa kanilang mga grupo.
+Nag-e-extend ng GenericCrudController na may mga CRUD route na `getById` at `delete`. Ang mga endpoint na `getAll` at `save` ay mga custom na implementasyon na nagpapahintulot din sa mga lider ng grupo na pamahalaan ang mga sesyon ng kanilang mga grupo.
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Attendance.View o Group Leader | Ilista ang lahat ng session. I-filter sa pamamagitan ng `?groupId=` (kasama ang mga pangalan). Maaaring tingnan ng mga leader ng grupo ang mga session para sa kanilang sariling mga grupo |
-| GET | `/:id` | JWT | Attendance.View | Kunin ang isang session ayon sa ID |
-| POST | `/` | JWT | Attendance.Edit o Group Leader | Lumikha o mag-update ng mga session. Maaaring mag-save ng mga session ang mga leader ng grupo para sa kanilang sariling mga grupo |
-| DELETE | `/:id` | JWT | Attendance.Edit | Tanggalin ang isang session |
+| GET | `/` | JWT | Attendance.View o Group Leader | Ilista ang lahat ng sesyon. I-filter gamit ang `?groupId=` (kasama ang mga pangalan). Makikita ng mga lider ng grupo ang mga sesyon ng sarili nilang mga grupo |
+| GET | `/:id` | JWT | Attendance.View | Kunin ang isang sesyon ayon sa ID |
+| POST | `/` | JWT | Attendance.Edit o Group Leader | Gumawa o mag-update ng mga sesyon. Maaaring i-save ng mga lider ng grupo ang mga sesyon ng sarili nilang mga grupo |
+| DELETE | `/:id` | JWT | Attendance.Edit | Magtanggal ng sesyon |
 
-## Visits
+## Mga Visit
 
 Base path: `/attendance/visits`
 
-Pinamamahalaan ang mga indibidwal na visit record (isang tao na dumalo sa isang partikular na petsa) at nagbibigay ng check-in workflow.
+Pinamamahalaan ang mga indibidwal na tala ng visit (isang taong dumalo sa isang partikular na petsa) at nagbibigay ng workflow ng check-in.
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Attendance.View | Ilista ang lahat ng visit. I-filter sa pamamagitan ng `?personId=` |
+| GET | `/` | JWT | Attendance.View | Ilista ang lahat ng visit. I-filter gamit ang `?personId=` |
 | GET | `/:id` | JWT | Attendance.View | Kunin ang isang visit ayon sa ID |
-| GET | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.View o Attendance.Checkin | I-load ang check-in data para sa mga tao sa isang serbisyo. Nagbabalik ng mga visit na may mga visit session mula sa huling naka-log na petsa |
-| POST | `/` | JWT | Attendance.Edit | Lumikha o mag-update ng mga visit |
-| POST | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.Edit o Attendance.Checkin | Isumite ang check-in data. Lumilikha/nag-a-update ng mga visit at visit session, inaalis ang mga lipas nang record |
-| DELETE | `/:id` | JWT | Attendance.Edit | Tanggalin ang isang visit |
+| GET | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.View o Attendance.Checkin | Kunin ang data ng check-in para sa mga tao sa isang serbisyo. Ibinabalik ang mga visit kasama ang mga visit session mula sa huling naka-log na petsa |
+| POST | `/` | JWT | Attendance.Edit | Gumawa o mag-update ng mga visit |
+| POST | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.Edit o Attendance.Checkin | Isumite ang data ng check-in. Gumagawa/nag-a-update ng mga visit at visit session, at nag-aalis ng mga lumang tala |
+| DELETE | `/:id` | JWT | Attendance.Edit | Magtanggal ng visit |
 
 ### Halimbawa: Daloy ng Check-in
 
-**Hakbang 1 -- I-load ang umiiral nang check-in data:**
+**Hakbang 1 -- Kunin ang kasalukuyang data ng check-in:**
 
 ```
 GET /attendance/visits/checkin?serviceId=svc-001&peopleIds=person-1,person-2
@@ -192,21 +193,21 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Visit Sessions
+## Mga Visit Session
 
 Base path: `/attendance/visitsessions`
 
-Pinamamahalaan ang ugnayan sa pagitan ng mga visit at session (kung aling partikular na session ang dinaluhan ng isang tao sa panahon ng isang visit). Nagbibigay din ng mabilisang log endpoint at isang download/export endpoint.
+Pinamamahalaan ang ugnayan ng mga visit at mga sesyon (kung aling partikular na sesyon ang dinaluhan ng isang tao sa isang visit). Nagbibigay din ng endpoint para sa mabilisang pag-log at endpoint para sa pag-download/pag-export.
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Attendance.View o Group Leader | Ilista ang mga visit session. I-filter sa pamamagitan ng `?sessionId=`. Maaaring tingnan ng mga leader ng grupo ang mga visit session para sa kanilang sariling mga grupo |
+| GET | `/` | JWT | Attendance.View o Group Leader | Ilista ang mga visit session. I-filter gamit ang `?sessionId=`. Makikita ng mga lider ng grupo ang mga visit session ng sarili nilang mga grupo |
 | GET | `/:id` | JWT | Attendance.View | Kunin ang isang visit session ayon sa ID |
-| GET | `/download/:sessionId` | JWT | Attendance.View | I-download ang attendance para sa isang session (nagbabalik ng mga pangalan ng tao kasama ang katayuang present/absent) |
-| POST | `/` | JWT | Attendance.Edit | Lumikha o mag-update ng mga visit session |
-| POST | `/log` | JWT | Attendance.Edit o Group Leader | Mabilis na i-log ang attendance ng isang tao sa isang session. Awtomatikong lumilikha ng visit kung kailangan. Maaaring mag-log ng attendance ang mga leader ng grupo para sa kanilang sariling mga grupo |
-| DELETE | `/:id` | JWT | Attendance.Edit | Tanggalin ang isang visit session ayon sa ID |
-| DELETE | `/?personId=&sessionId=` | JWT | Attendance.Edit o Group Leader | Alisin ang isang tao mula sa isang session. Tinatanggal ang visit session at ang parent visit kung walang natitirang session. Maaaring alisin ng mga leader ng grupo ang attendance para sa kanilang sariling mga grupo |
+| GET | `/download/:sessionId` | JWT | Attendance.View | I-download ang attendance ng isang sesyon (ibinabalik ang mga pangalan ng tao kasama ang katayuang present/absent) |
+| POST | `/` | JWT | Attendance.Edit | Gumawa o mag-update ng mga visit session |
+| POST | `/log` | JWT | Attendance.Edit o Group Leader | Mabilisang i-log ang attendance ng isang tao sa isang sesyon. Awtomatikong gumagawa ng visit kung kailangan. Maaaring i-log ng mga lider ng grupo ang attendance ng sarili nilang mga grupo |
+| DELETE | `/:id` | JWT | Attendance.Edit | Magtanggal ng visit session ayon sa ID |
+| DELETE | `/?personId=&sessionId=` | JWT | Attendance.Edit o Group Leader | Alisin ang isang tao sa isang sesyon. Tinatanggal ang visit session at ang parent na visit kung wala nang natitirang sesyon. Maaaring alisin ng mga lider ng grupo ang attendance ng sarili nilang mga grupo |
 
 ### Halimbawa: Mabilisang Pag-log ng Attendance
 
@@ -226,7 +227,7 @@ Authorization: Bearer <token>
 {}
 ```
 
-### Halimbawa: I-download ang Attendance ng Session
+### Halimbawa: I-download ang Attendance ng Sesyon
 
 ```
 GET /attendance/visitsessions/download/sess-001
@@ -254,18 +255,18 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Streaks
+## Mga Streak
 
 Base path: `/attendance/streaks`
 
-Sinusubaybayan ang mga attendance streak ng mga indibidwal -- ang magkakasunod na linggo na dumalo ang isang tao. Kapaki-pakinabang para sa mga engagement metric at gamification.
+Sinusubaybayan ang mga streak ng attendance ng mga indibidwal -- ang magkakasunod na linggong dumalo ang isang tao. Kapaki-pakinabang para sa mga sukatan ng pakikilahok at gamification.
 
-| Method | Path | Auth | Permission | Description |
+| Method | Path | Auth | Permission | Paglalarawan |
 |--------|------|------|------------|-------------|
-| GET | `/person/:personId` | JWT | — | I-load ang mga attendance streak para sa isang tao |
+| GET | `/person/:personId` | JWT | — | Kunin ang mga streak ng attendance ng isang tao |
 
 ## Mga Kaugnay na Pahina
 
-- [Membership Endpoints](./membership) — Mga tao, grupo, tungkulin, at pamamahala ng simbahan
-- [Authentication & Permissions](./authentication) — Daloy ng pag-login, JWT, permission model
-- [Module Structure](../module-structure) — Mga pattern ng pag-oorganisa ng code
+- [Mga Endpoint ng Membership](./membership) — Mga tao, grupo, role, at pamamahala ng simbahan
+- [Authentication at Mga Permission](./authentication) — Daloy ng login, JWT, modelo ng permission
+- [Istruktura ng Module](../module-structure) — Mga pattern sa pag-aayos ng code

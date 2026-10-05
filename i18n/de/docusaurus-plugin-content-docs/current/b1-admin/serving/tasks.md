@@ -6,67 +6,67 @@ title: "Aufgaben"
 
 <div class="article-intro">
 
-Aufgaben ermöglichen es Ihnen, Aktionselemente Personen oder Gruppen in Ihrer Kirche zuzuweisen. Ob es sich um eine einmalige Aufgabe oder eine wiederkehrende Verantwortung handelt, Aufgaben helfen Ihnen, zu verfolgen, was getan werden muss und wer verantwortlich ist, damit nichts übersehen wird.
+Aufgaben ermöglichen es Ihnen, Aktionselemente Personen oder Gruppen in Ihrer Kirche zuzuweisen. Ob es sich um eine einmalige Aufgabe oder eine wiederkehrende Verantwortung handelt, Aufgaben helfen Ihnen zu verfolgen, was getan werden muss und wer verantwortlich ist, damit nichts übersehen wird.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Stellen Sie sicher, dass die Personen oder [Gruppen](../groups/creating-groups.md), denen Sie Aufgaben zuweisen möchten, in B1 Admin vorhanden sind
-- Navigieren Sie zum Bereich **Serving** (Dienst) und öffnen Sie **My Work** (Meine Aufgaben), um Aufgaben anzuzeigen
+- Stellen Sie sicher, dass die Personen oder [Gruppen](../groups/creating-groups.md), denen Sie Aufgaben zuweisen möchten, in B1 Admin existieren
+- Wählen Sie im [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) **Dienst > Meine Arbeit**, um Aufgaben anzusehen
 
 </div>
 
 ## Aufgaben anzeigen
 
-Navigieren Sie zu **Serving** (Dienst) und öffnen Sie **My Work** (Meine Aufgaben). Sie sehen eine Liste Ihrer offenen Aufgaben. Jede Aufgabe zeigt ihren Titel, die zugeordnete Person und den Status.
+Wählen Sie im Sprungmenü **Dienst > Meine Arbeit** (oder suchen Sie nach "Meine Arbeit"). Sie sehen eine Liste Ihrer offenen Aufgaben. Jede Aufgabe zeigt ihren Titel, Zuordnungsempfänger und Status an.
 
 :::tip
-Standardmäßig werden nur offene Aufgaben angezeigt. Schalten Sie **Show Closed** (Abgeschlossene anzeigen) um, um auch abgeschlossene Aufgaben zu sehen.
+Standardmäßig werden nur offene Aufgaben angezeigt. Schalten Sie **Geschlossene anzeigen**, um auch abgeschlossene Aufgaben zu sehen.
 :::
 
-## Aufgabe erstellen
+## Eine Aufgabe erstellen
 
-1. Klicken Sie auf der Seite "Aufgaben" auf **Add Task** (Aufgabe hinzufügen).
+1. Klicken Sie auf der Seite Aufgaben auf **Aufgabe hinzufügen**.
 2. Geben Sie einen **Titel** für die Aufgabe ein.
-3. Klicken Sie auf das Feld **Assign To** (Zuweisen an) und geben Sie den Namen einer Person ein, oder wechseln Sie zu **Group** (Gruppe) und geben Sie einen Gruppennamen ein.
-4. Klicken Sie auf **Search** (Suchen) und wählen Sie die Person oder Gruppe aus den Ergebnissen aus.
-5. Fügen Sie eine **Notiz** mit Details oder Anweisungen für die zugeordnete Person hinzu.
-6. Klicken Sie auf **Save** (Speichern).
+3. Klicken Sie auf das Feld **Zuweisen an** und geben Sie den Namen einer Person ein, oder wechseln Sie zu **Gruppe** und geben Sie einen Gruppennamen ein.
+4. Klicken Sie auf **Suchen** und wählen Sie die Person oder Gruppe aus den Ergebnissen aus.
+5. Fügen Sie eine **Notiz** mit allen Details oder Anweisungen für den Zuordnungsempfänger hinzu.
+6. Klicken Sie auf **Speichern**.
 
-Die Aufgabe wird nun in der Aufgabenliste angezeigt und ist für die zugeordnete Person auf ihrem Dashboard und in der mobilen App sichtbar.
+Die Aufgabe wird jetzt in der Aufgabenliste angezeigt und ist für den Zuordnungsempfänger auf seinem Dashboard und der mobilen App sichtbar.
 
-## Aufgabe verwalten
+## Eine Aufgabe verwalten
 
 Klicken Sie auf eine beliebige Aufgabe, um ihre Detailseite zu öffnen. Von hier aus können Sie:
 
-- **Status ändern** — Wechseln Sie zwischen **Open** (Offen) und **Closed** (Abgeschlossen) über die Status-Dropdown.
-- **Aufgabe erneut zuweisen** — Aktualisieren Sie die zugeordnete Person auf eine andere Person oder Gruppe.
-- **Notizen hinzufügen** — Fügen Sie zusätzliche Informationen oder Updates für die zugeordnete Person hinzu.
-- **Titel bearbeiten** — Aktualisieren Sie den Aufgabentitel nach Bedarf.
+- **Den Status ändern** -- Wechseln Sie mit dem Status-Dropdown zwischen **Offen** und **Geschlossen**.
+- **Die Aufgabe neu zuweisen** -- Aktualisieren Sie den Zuordnungsempfänger zu einer anderen Person oder Gruppe.
+- **Notizen hinzufügen** -- Schließen Sie zusätzliche Informationen oder Updates für den Zuordnungsempfänger ein.
+- **Den Titel bearbeiten** -- Aktualisieren Sie den Aufgabentitel nach Bedarf.
 
 ## Aufgaben-Lebenszyklus
 
-1. Eine neue Aufgabe beginnt mit dem Status **Open** (Offen).
-2. Die zugeordnete Person erhält eine Benachrichtigung und kann die Aufgabe von ihrem Dashboard, **Serving > My Work** (Dienst > Meine Aufgaben) oder der mobilen App anzeigen.
-3. Sobald die Arbeit abgeschlossen ist, ändert die zugeordnete Person (oder ein Admin) den Status zu **Closed** (Abgeschlossen).
-4. Abgeschlossene Aufgaben werden aus der Standardansicht entfernt, können aber weiterhin durch Aktivieren von **Show Closed** (Abgeschlossene anzeigen) abgerufen werden.
+1. Eine neue Aufgabe beginnt mit einem Status von **Offen**.
+2. Der Zuordnungsempfänger erhält eine Benachrichtigung und kann die Aufgabe von seinem Dashboard, **Dienst > Meine Arbeit** oder der mobilen App anzeigen.
+3. Nachdem die Arbeit abgeschlossen ist, ändert der Zuordnungsempfänger (oder ein Admin) den Status zu **Geschlossen**.
+4. Geschlossene Aufgaben werden aus der Standardansicht entfernt, können aber durch Aktivierung von **Geschlossene anzeigen** noch zugegriffen werden.
 
 :::info
-B1 Admin erstellt nicht mehr automatisch wiederkehrende Aufgaben nach Plan. Für wiederholte Nachverfolgung mit Personen verwenden Sie einen [Workflow](./workflows.md) mit einem [Zeitplantrigger](./workflows.md#schedule-triggers).
+B1 Admin erstellt nicht länger wiederkehrende Aufgaben nach einem Zeitplan. Für wiederholte Verfolgung mit Personen verwenden Sie einen [Workflow](./workflows.md) mit einem [Zeitplan-Trigger](./workflows.md#schedule-triggers).
 :::
 
 :::tip
-Wenn Sie viele Personen durch die gleiche Reihe von Stufen verschieben müssen – wie z. B. Nachverfolgung von neuen Besuchern oder einen Mitgliedschaftsprozess – verwenden Sie [Workflows](./workflows.md). Workflows verwandeln Aufgaben in Karten auf einem Drag-and-Drop-Board mit Schritten, Fälligkeitsdaten und Weiterleitungen.
+Wenn Sie viele Menschen durch den gleichen Satz von Phasen bewegen müssen -- z. B. Verfolgung von neuen Besuchern oder einen Mitgliedschaftsprozess -- verwenden Sie [Workflows](./workflows.md). Workflows verwandeln Aufgaben in Karten auf einem Drag-and-Drop-Board mit Schritten, Fälligkeitsdaten und Routingvorgängen.
 :::
 
 :::info
-Einige Aufgaben werden automatisch von anderen Teilen von B1 erstellt und geöffnet zu einer speziellen Überprüfungskarte statt zur Standardansicht mit Notizen/Neuzuweisung — [Gruppenbeitritte](../groups/group-join-requests.md#approving-from-the-tasks-page), [Profiländerungsanfragen](../profile/approving-profile-changes.md) und [Kontolöschanfragen](../profile/account-deletion.md) funktionieren auf diese Weise.
+Einige Aufgaben werden automatisch von anderen Teilen von B1 erstellt und öffnen sich auf einer speziellen Überprüfungskarte anstelle der Standardnotiz-/Neuzuweisungsansicht -- [Gruppenbeitritt-Anfragen](../groups/group-join-requests.md#approving-from-the-tasks-page), [Profileinanderngs-Anfragen](../profile/approving-profile-changes.md) und [Anfragen zum Löschen von Konten](../profile/account-deletion.md) funktionieren auf diese Weise.
 :::
 
 ## Nächste Schritte
 
-- Führen Sie Personen mit [Workflows](./workflows.md) durch einen mehrstufigen Prozess
-- Verwenden Sie [Workflows](./workflows.md), um Personen automatisch durch wiederholbare Prozesse zu verschieben
-- Verwenden Sie Aufgaben zusammen mit [Serviceplänen](./plans.md), um Aktionselemente zur Dienstvorbereitung zu verfolgen
+- Bewegen Sie Menschen mit [Workflows](./workflows.md) durch einen mehrschrittigen Prozess
+- Verwenden Sie [Workflows](./workflows.md), um Menschen automatisch durch wiederholbare Prozesse zu bewegen
+- Verwenden Sie Aufgaben neben [Serviceplänen](./plans.md), um Aktionselemente zur Service-Vorbereitung zu verfolgen

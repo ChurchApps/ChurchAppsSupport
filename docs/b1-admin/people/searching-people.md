@@ -58,6 +58,10 @@ Not every piece of information needs to be visible at once. You can choose which
    - **Campus**
 3. The table updates immediately to reflect your selections.
 
+### Showing Custom Fields as Columns
+
+The column chooser has two tabs: **Standard** holds the built-in columns listed above, and **Custom** holds your church's [Custom Fields](../settings/custom-fields.md) along with the questions from any People forms. Check a custom field on the **Custom** tab to add it as a column, and each person's value for that field appears in the table. Values are shown the same way as on the person's profile -- Yes/No fields read *Yes* or *No*, Multiple Choice fields show the option's label, and dates are shown as short dates. People with no value for the field show a blank cell.
+
 :::info
 Your column choices affect what is included when you export to CSV. Customize columns before exporting to get exactly the data you need.
 :::

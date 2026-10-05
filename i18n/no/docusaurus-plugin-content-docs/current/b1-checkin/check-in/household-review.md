@@ -1,63 +1,64 @@
 ---
-title: "Gjennomgå husstanden din"
+title: "Gjennomgang av husstanden"
 ---
 
-# Gjennomgå husstanden din
+# Gjennomgang av husstanden
 
 <div class="article-intro">
 
-Etter at du velger en person fra søkeresultatene, laster appen inn hele husstanden din og viser den på husstandsgjennomgangsskjermen. Dette er det sentrale knutepunktet i innsjekkingsprosessen, hvor du kan se alle i familien din og administrere gruppetildelingene deres før innsjekking.
+Når du har valgt en person fra søkeresultatene, laster appen hele husstanden din og viser den på skjermen for gjennomgang av husstanden. Dette er det sentrale punktet i innsjekkingen, der du ser alle i familien og kan administrere gruppetilhørigheten deres før du sjekker inn.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- [Velg en gudstjeneste](./selecting-service) fra gudstjenesteskjermen
-- [Slå opp et medlem](./looking-up-members) og velg dem fra søkeresultatene
+- [Velg en gudstjeneste](./selecting-service) på gudstjenesteskjermen
+- [Slå opp et medlem](./looking-up-members) og velg vedkommende fra søkeresultatene
 
 </div>
 
-## Vise husstandsmedlemmer
+## Se husstandsmedlemmer
 
 Hvert husstandsmedlem vises som et kort med:
 
-- **Bildet** deres (eller et plassholderikon hvis intet bilde er registrert)
-- **Visningsnavnet** deres
-- Et **sammendrag av deres nåværende gruppetildelinger** (vist som små merker under navnet når kortet er sammenslått)
-- En **utvid/slå sammen-pil** på høyre side
+- **Bilde** (eller et plassholderikon hvis det ikke finnes noe bilde)
+- **Visningsnavn**
+- En **oversikt over gjeldende gruppetilhørighet** (vist som små merker under navnet når kortet er lukket)
+- En **pil for å utvide/lukke** på høyre side
 
 ## Utvide et medlem
 
-Trykk på et medlems kort for å utvide det. Når utvidet, ser du en rad for hvert **gudstjenestetidspunkt** innenfor den valgte gudstjenesten. Hver rad viser:
+Trykk på et medlems kort for å utvide det. Når kortet er utvidet, ser du en rad for hvert **gudstjenestetidspunkt** i den valgte gudstjenesten. Hver rad viser:
 
-- **Navnet på gudstjenestetidspunktet** (for eksempel «09:00» eller «11:00»)
-- En **knapp** som viser den for øyeblikket tildelte gruppen, eller «Velg gruppe» hvis ingen gruppe er tildelt ennå
+- **Navnet på tidspunktet** (for eksempel «09:00» eller «11:00»)
+- **Gruppene som tilbys** på det tidspunktet, listet under navnet (for eksempel «Barnehage, Førskole, Voksenbibelklasse»), slik at du ser hvilke klasser som er tilgjengelige før du velger
+- En **knapp** som viser gjeldende tildelte gruppe, eller «Velg gruppe» hvis ingen gruppe er tildelt ennå
 
-Trykk på gruppeknappen for å gå til [skjermen for gruppevalg](./group-assignment), der du kan velge eller endre gruppen for den personen og det gudstjenestetidspunktet.
+Trykk på gruppeknappen for å gå til [skjermen for gruppevalg](./group-assignment), der du kan velge eller endre gruppe for den personen og det tidspunktet.
 
-Det utvidede kortet viser også merkene **Medlem**, **Gjest** og **Frivillig**. Trykk på ett for å angi hvordan denne personen sjekker inn — Medlem er standard. Typen har betydning for barnerom: frivillige teller med i rommets forhold mellom frivillige og barn, og gjester teller mot en eventuell gjestekapasitet kirken din har satt.
+Det utvidede kortet viser også merkene **Medlem**, **Gjest** og **Frivillig**. Trykk på ett for å angi hvordan denne personen sjekker inn — Medlem er standard. Typen har betydning for barnerommene: frivillige teller med i rommets forhold mellom frivillige og barn, og gjester teller mot en eventuell gjestekapasitet kirken har satt.
 
-Trykk på medlemmets kort igjen for å slå det sammen.
+Trykk på medlemmets kort igjen for å lukke det.
 
 :::tip
-Du trenger ikke å tildele hvert familiemedlem til en gruppe. Voksne som deltar på hovedgudstjenesten, kan la stå uten gruppetildeling. Tildel bare grupper for medlemmer som trenger å sjekke inn på en bestemt klasse eller et bestemt program.
+Du trenger ikke tildele alle i familien en gruppe. Voksne som deltar på hovedgudstjenesten, kan stå uten gruppe. Tildel bare grupper for medlemmer som skal sjekkes inn i en bestemt klasse eller et bestemt program.
 :::
 
 ## Navigere fra denne skjermen
 
-Fra husstandsgjennomgangsskjermen har du tre alternativer:
+Fra skjermen for gjennomgang av husstanden har du tre valg:
 
-- **Utvid et medlem** og trykk på en gudstjenestetidspunkt-knapp for å [tildele eller endre en gruppe](./group-assignment).
-- **Trykk på Legg til gjest-knappen** under medlemslisten for å [legge til en gjest](./adding-guests) i husstanden din.
-- **Trykk på Sjekk inn-knappen** nederst på skjermen for å [fullføre innsjekkingen](./completing-checkin) for alle i husstanden.
+- **Utvid et medlem** og trykk på en tidspunktknapp for å [tildele eller endre gruppe](./group-assignment).
+- **Trykk på knappen Legg til gjest** under medlemslisten for å [legge til en gjest](./adding-guests) i husstanden.
+- **Trykk på knappen Sjekk inn** nederst på skjermen for å [fullføre innsjekkingen](./completing-checkin) for alle i husstanden.
 
 :::info
-Eventuelle gruppetildelinger fra en tidligere innsjekking til samme gudstjeneste lastes inn på forhånd automatisk. Hvis barna dine går i de samme gruppene hver uke, trenger du kanskje ikke å endre noe -- bare gjennomgå og sjekk inn.
+Gruppetilhørighet fra en tidligere innsjekking til samme gudstjeneste lastes inn automatisk. Hvis barna går i de samme gruppene hver uke, trenger du kanskje ikke endre noe -- bare gå gjennom og sjekk inn.
 :::
 
 ## Neste steg
 
-- [Tildel grupper](./group-assignment) til familiemedlemmer som trenger å sjekke inn på en bestemt klasse eller et bestemt program.
-- [Legg til en gjest](./adding-guests) hvis noen er på besøk med familien din.
-- [Fullfør innsjekking](./completing-checkin) når alles tildelinger ser riktige ut.
+- [Tildel grupper](./group-assignment) til familiemedlemmer som skal sjekkes inn i en bestemt klasse eller et bestemt program.
+- [Legg til en gjest](./adding-guests) hvis noen er på besøk hos familien din.
+- [Fullfør innsjekkingen](./completing-checkin) når alles tildelinger ser riktige ut.

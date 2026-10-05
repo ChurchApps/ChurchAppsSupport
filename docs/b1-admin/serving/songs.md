@@ -13,7 +13,7 @@ The Songs page manages your worship song library. Keep all your song details, ly
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Navigate to the **Serving** section in B1 Admin to access the Songs page
+- In the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) in B1 Admin, choose **Serving > Songs** to access the Songs page
 - Optionally, have your [service plans](./plans.md) set up so you can link songs directly into the [service order](./service-order.md)
 
 </div>

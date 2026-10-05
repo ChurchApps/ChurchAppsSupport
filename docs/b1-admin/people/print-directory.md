@@ -37,6 +37,12 @@ The print directory includes all **active members** of your church. Specifically
 - People who have **opted out** of the directory are excluded.
 - Everyone else is grouped by **household**.
 
+### Printing Only Your Search Results
+
+After you run a search on the People page -- a quick search, an [Advanced Search](./searching-people.md#advanced-search), a [Saved List](./lists.md), or an [AI Search](./ai-search.md) -- the print icon changes to **Print Results**. Clicking it prints a directory of just the people in your results instead of the whole church, using the same layout.
+
+When printing search results, the membership-status filter above does not apply: everyone you searched for is included, even Visitors or Inactive people. People who have opted out of the directory are still left out. To go back to printing the full directory, clear your search first.
+
 ## Directory Layout
 
 The printed directory has two parts:

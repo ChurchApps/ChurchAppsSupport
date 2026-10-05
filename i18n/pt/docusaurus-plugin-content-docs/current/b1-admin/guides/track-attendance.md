@@ -1,97 +1,98 @@
 ---
-title: "Guia: Controlar a Frequência da Igreja"
+title: "Guia: Acompanhar a Frequência da Igreja"
 ---
 
-# Controlar a Frequência da Igreja
+# Acompanhar a Frequência da Igreja
 
 <div class="article-intro">
 
-Configure o controle de frequência para seus cultos e grupos — desde a configuração de campus e horários de culto, até o registro de frequência manual ou pelo aplicativo de check-in de autoatendimento, até a visualização de tendências nos relatórios. Ao final, você terá uma visão completa de quem está frequentando e quando.
+Configure o rastreamento de frequência para seus serviços e grupos — desde a configuração de campi e horários de serviço, até registrar frequência manualmente ou através do aplicativo de auto-atendimento, até visualizar tendências em relatórios. No final, você terá uma visão completa de quem está assistindo e quando.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Conta B1 Admin com acesso de administrador
+- Conta de B1 Admin com acesso de administrador
 - [Pessoas adicionadas ao seu diretório](../people/adding-people.md)
 - [Grupos criados](../groups/creating-groups.md) para os ministérios que você deseja acompanhar
 
 </div>
 
-## Passo 1: Configurar Campus e Cultos
+## Passo 1: Configurar Campi e Serviços
 
 Defina onde e quando sua igreja se reúne.
 
 Siga o guia de [Configuração de Frequência](../attendance/setup.md) para:
 
-1. Adicionar seu campus (ex.: "Campus Principal")
-2. Adicionar horários de culto (ex.: "Domingo 9:00", "Domingo 11:00", "Quarta-feira 19:00")
-3. Atribuir grupos a cada horário de culto para definir quais classes/ministérios se reúnem durante aquele culto
+1. Adicione seu campi (por exemplo, "Campi Principal")
+2. Adicione horários de serviço (por exemplo, "Domingo 9:00 AM", "Domingo 11:00 AM", "Quarta 7:00 PM")
+3. Atribua grupos a cada horário de serviço para definir quais aulas/ministérios se reúnem durante esse serviço
 
-## Passo 2: Ativar o Controle de Frequência dos Grupos
+## Passo 2: Ativar Rastreamento de Frequência do Grupo
 
-Ative o controle de frequência para os grupos que você deseja monitorar.
+Ative o rastreamento de frequência para os grupos que deseja monitorar.
 
-Siga o guia de [Criação de Grupos](../groups/creating-groups.md) para:
+Siga o guia de [Criando Grupos](../groups/creating-groups.md) para:
 
-1. Editar cada grupo que deseja acompanhar e ativar "Controlar Frequência"
-2. Associar grupos aos horários de culto para que a frequência seja registrada no culto correto
+1. Edite cada grupo que deseja acompanhar e ative "Rastrear Frequência"
+2. Associe grupos aos horários de serviço para que a frequência seja registrada contra o serviço correto
 
 :::info
-Nem todo grupo precisa de controle de frequência. Ative para grupos onde você deseja monitorar a participação — classes infantis, pequenos grupos, escola dominical, etc.
+Nem todos os grupos precisam de rastreamento de frequência. Ative-o para grupos onde você deseja monitorar a participação — aulas infantis, pequenos grupos, escola dominical, etc.
 :::
 
 ## Passo 3: Registrar Frequência Manualmente
 
-Marque quem participou de cada culto e grupo.
+Marque quem frequentou cada serviço e grupo.
 
-Siga o guia de [Registro de Frequência](../attendance/tracking-attendance.md) para:
+Siga o guia de [Registrando Frequência](../attendance/recording-attendance.md) para:
 
-1. Navegar até Frequência, selecionar a data e o culto
-2. Marcar quem participou de cada grupo
+1. Abra a guia **Sessions** de um grupo e adicione uma sessão para a data e horário do serviço. Marque **Also add for the other groups** para criar sessões para todos os cursos naquele horário de serviço de uma vez.
+2. Marque quem frequentou cada grupo
 
 :::tip
-O registro manual funciona muito bem para cultos de adultos, pequenos grupos e qualquer situação em que um quiosque de check-in não seja prático.
+O rastreamento manual funciona bem para serviços de adultos, pequenos grupos e qualquer situação onde um quiosque de check-in não seja prático.
 :::
 
-## Passo 4: Configurar Check-In de Autoatendimento (Opcional)
+## Passo 4: Configurar Auto Check-In (Opcional)
 
-Permita que os membros façam check-in usando um tablet como quiosque.
+Permita que os membros façam o check-in por conta própria usando um quiosque de tablet.
 
 Siga o guia de [Check-In](../attendance/check-in.md) para:
 
-1. Instalar o aplicativo B1 Checkin em um tablet para check-in de autoatendimento
-2. Os membros pesquisam seu nome e fazem check-in deles mesmos e de sua família
-3. Os registros de frequência do check-in aparecem junto com os registros inseridos manualmente — sem diferença nos dados
+1. Instale o aplicativo B1 Checkin em um tablet para auto-serviço
+2. Os membros procuram por seu nome e fazem check-in de si mesmos e de sua família
+3. Os registros de frequência de check-in aparecem ao lado dos registros inseridos manualmente — sem diferença nos dados
 
 :::info
-Para uma configuração completa do ministério infantil, incluindo hardware e configuração de impressora, veja o [Guia de Check-In Infantil](./childrens-checkin.md).
+Para uma configuração completa de ministério infantil, incluindo configuração de hardware e impressora, veja o [Guia de Check-In Infantil](./childrens-checkin.md).
 :::
 
 ## Passo 5: Visualizar Relatórios de Frequência
 
-Veja o panorama geral da participação na sua igreja.
+Veja o panorama geral da participação em toda a sua igreja.
 
 Siga o guia de [Relatórios de Frequência](../reports/attendance-reports.md). Três visualizações de relatório estão disponíveis:
 
 1. **Tendência de Frequência** — veja a frequência ao longo do tempo para identificar crescimento ou declínio
-2. **Frequência por Grupo** — compare totais entre grupos
-3. **Frequência Diária por Grupo** — detalhamento dia a dia para análise detalhada
+2. **Frequência do Grupo** — veja quem frequentou cada sessão de grupo em um intervalo de datas, com download em CSV
+3. **Frequência Diária do Grupo** — análise dia a dia para análise detalhada
 
 :::info
-Os relatórios combinam tanto a frequência registrada manualmente quanto a do check-in de autoatendimento. Não há diferença em como os dados aparecem — ambos os métodos alimentam os mesmos relatórios.
+Os relatórios combinam tanto frequência registrada manualmente quanto auto-check-in. Não há diferença em como os dados aparecem — ambos os métodos alimentam os mesmos relatórios.
 :::
 
 ## Pronto!
 
-Seu controle de frequência está configurado. Seja registrando a frequência manualmente, usando o aplicativo de check-in ou ambos — todos os dados fluem para os mesmos relatórios para que você tenha uma visão clara da participação na sua igreja.
+Seu rastreamento de frequência está configurado. Se você registra frequência manualmente, usa o aplicativo de check-in ou ambos — todos os dados fluem para os mesmos relatórios para que você tenha uma visão clara da participação em toda a sua igreja.
 
 ## Artigos Relacionados
 
-- [Configuração de Frequência](../attendance/setup.md) — configurar campus e cultos
-- [Registro de Frequência](../attendance/tracking-attendance.md) — registrar frequência manualmente
-- [Check-In](../attendance/check-in.md) — aplicativo de check-in de autoatendimento
-- [Criação de Grupos](../groups/creating-groups.md) — configurar grupos com controle de frequência
-- [Relatórios de Frequência](../reports/attendance-reports.md) — visualizar tendências de frequência
-- [Guia de Check-In Infantil](./childrens-checkin.md) — configuração completa de check-in do ministério infantil
+- [Configuração de Frequência](../attendance/setup.md) — configure campi e serviços
+- [Registrando Frequência](../attendance/recording-attendance.md) — registre frequência manualmente
+- [Acompanhando Frequência](../attendance/tracking-attendance.md) — revise tendências de frequência
+- [Check-In](../attendance/check-in.md) — aplicativo de auto-serviço
+- [Criando Grupos](../groups/creating-groups.md) — configure grupos com rastreamento de frequência
+- [Relatórios de Frequência](../reports/attendance-reports.md) — veja tendências de frequência
+- [Guia de Check-In Infantil](./childrens-checkin.md) — configuração completa de ministério infantil

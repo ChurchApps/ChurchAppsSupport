@@ -32,6 +32,7 @@ Each household member appears as a card with:
 Tap a member's card to expand it. When expanded, you will see a row for each **service time** within the selected service. Each row shows:
 
 - The **service time name** (for example, "9:00 AM" or "11:00 AM")
+- The **groups offered** at that service time, listed below the name (for example, "Nursery, Preschool, Adult Bible Class"), so you can see which classes are available before you choose
 - A **button** showing the currently assigned group, or "Select Group" if no group has been assigned yet
 
 Tap the group button to go to the [group selection screen](./group-assignment) where you can choose or change the group for that person and service time.

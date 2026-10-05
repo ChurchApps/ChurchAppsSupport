@@ -20,19 +20,21 @@ Une fois que vos campus, heures de service et groupes sont configurés, B1 Admin
 
 ## Affichage des tendances de présence
 
-1. Ouvrez **B1 Admin**, puis ouvrez le **menu de section** dans le coin supérieur gauche et choisissez **Personnes**.
+1. Ouvrez **B1 Admin**, ouvrez le [menu Sauter](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Personnes**, et cliquez sur **Présence**.
 2. Cliquez sur l'onglet **Tendance de Présence**.
-3. Le rapport s'exécute automatiquement à l'ouverture de l'onglet, montrant la présence sur une plage de dates par défaut.
+3. Le rapport s'exécute automatiquement à l'ouverture de l'onglet, montrant la présence totale pour chaque semaine.
 
 ## Filtrage de vos données
 
-Utilisez les filtres en haut de la page pour affiner les résultats :
+Utilisez les filtres dans la boîte **Filtrer le rapport** pour affiner les résultats, puis cliquez sur **Exécuter le rapport** :
 
-- **Plage de dates** -- choisissez une date de début et de fin pour vous concentrer sur une période spécifique.
 - **Campus** -- sélectionnez un campus pour voir la présence pour cet emplacement uniquement.
+- **Service** -- limitez le rapport à un service.
 - **Heure de service** -- choisissez une heure de service pour approfondir un rassemblement particulier.
+- **Groupe** -- affichage la présence pour un seul groupe.
+- **Date de début** et **Date de fin** -- la plage de dates à inclure. Par défaut, le rapport couvre l'année passée, d'il y a un an jusqu'à aujourd'hui, et la date de fin est incluse en totalité.
 
-Le graphique et les données se mettent à jour dès que vous modifiez un filtre, ce qui vous permet de comparer rapidement différentes périodes ou emplacements.
+Le rapport affiche un graphique à barres et un tableau des visites totales par semaine. Chaque semaine est étiquetée avec la date du dimanche de cette semaine. Le tableau a également une colonne **Dates de session** listant les dates réelles de cette semaine qui avaient une présence (par exemple, « 27/9, 30/9 »), afin que vous puissiez voir quand un rassemblement entre-semaine est compté dans la même semaine que le dimanche.
 
 :::info
 Les rapports s'exécutent automatiquement chaque fois que vous ouvrez l'onglet Tendance de Présence, afin que vous voyiez toujours les chiffres à jour sans avoir besoin de cliquer sur un bouton d'actualisation.
@@ -40,11 +42,16 @@ Les rapports s'exécutent automatiquement chaque fois que vous ouvrez l'onglet T
 
 ## Présence du Groupe
 
-L'onglet **Présence du Groupe** affiche la présence ventilée par groupe individuel. Ceci est utile lorsque vous souhaitez surveiller une classe spécifique, une équipe de ministère ou un petit groupe plutôt que de regarder les chiffres globaux du service.
+L'onglet **Présence du Groupe** affiche qui a assisté à chaque session de groupe. Ceci est utile lorsque vous souhaitez surveiller une classe spécifique, une équipe de ministère ou un petit groupe plutôt que de regarder les chiffres de service globaux.
 
 1. Sélectionnez l'onglet **Présence du Groupe**.
-2. Choisissez un groupe dans la liste pour voir son historique de présence.
-3. Utilisez le filtre de plage de dates pour ajuster la fenêtre de rapport.
+2. Optionnellement choisissez un **Campus** et un **Service**.
+3. Définissez la **Date de début** et la **Date de fin**. Par défaut, le rapport couvre le dimanche dernier jusqu'à aujourd'hui.
+4. Cliquez sur **Exécuter le rapport**.
+
+Les résultats sont groupés par date de session, puis par heure de service et groupe, avec les personnes qui ont assisté listées sous chaque groupe. Les heures de service, les groupes et les noms sont triés alphabétiquement afin que chaque titre n'apparaisse qu'une seule fois. La ligne de chaque personne affiche également une colonne **Enregistré** avec l'heure d'enregistrement de sa présence (vide si aucune heure n'est en dossier) et une colonne **Statut d'adhésion** (par exemple, Membre ou Visiteur), pour que vous puissiez repérer les visiteurs d'un coup d'œil.
+
+Pour télécharger les données, cliquez sur **Options de téléchargement** et choisissez **Résumé**. Le fichier CSV a une ligne par membre du groupe, trié par groupe puis par nom, et une colonne pour chaque session datée dans la plage (par exemple, « Dimanche - 9h00 (27/09/2026) ») marquée **présent** ou **absent**.
 
 :::tip
 La présence du groupe est particulièrement précieuse pour les responsables de [petits groupes](../groups/creating-groups.md) qui souhaitent suivre l'engagement au sein de leur groupe au fil du temps.

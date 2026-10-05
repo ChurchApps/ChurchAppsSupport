@@ -1,16 +1,16 @@
 ---
-title: "Varslings- & påminnelsesarkitektur"
+title: "Arkitektur for varsler og påminnelser"
 ---
 
-# Varslings- & påminnelsesarkitektur
+# Arkitektur for varsler og påminnelser
 
 <div class="article-intro">
 
-Hver melding en kirkemedlem ser utenfor siden de ser på — et merketall, en push-melding, en e-postsammendrag — går gjennom en av to dører i MessagingApi. Denne siden dokumenterer trakten, påminnelsesmotoren som mater den etter en tidsplan, og preferansemodellen som bestemmer hva som faktisk når en person.
+Hver melding et kirkemedlem ser utenfor siden vedkommende er på – en merketeller, et pushvarsel, en sammendrags-e-post – går gjennom en av to dører i MessagingApi. Denne siden beskriver trakten, påminnelsesmotoren som mater det etter en tidsplan, og preferansemodellen som avgjør hva som faktisk når fram til en person.
 
 </div>
 
-## Oversikt — to dører
+## Oversikt – to dører
 
 ```
 scheduled anything ──▶ ReminderEngine (definitions → occurrences → scan) ─┐
@@ -19,17 +19,17 @@ chat / requests / workflow / bulk sends ─────────────�
 account/legal mail ──▶ TransactionalEmailHelper.sendTransactional()  [allowlisted, lint-enforced]
 ```
 
-1. **Alt som forteller en person noe** går gjennom `NotificationHelper.createNotifications()` i meldingsmodulen. Den opprettholder en `notifications` rad og eskalerer socket → push → email, evaluerer `PreferenceGateHelper` per kanal — inkludert `in_app` på nivå 0.
-2. **Alt som er planlagt** er en `reminderDefinition` (enhet-nivå eller omfang-nivå) utvidet til `reminderOccurrences` og sendt av `ReminderEngine.scan()` på en tilbakevendende tidtaker. En ekspander, en dispatcher, en send hovedbok (`reminderSentLog`).
-3. **Direkte e-post** eksisterer bare bak `TransactionalEmailHelper.sendTransactional()`. En ESLint-regel håndhever dette ved kompilering — se nedenfor.
+1. **Alt som forteller en person noe** går gjennom `NotificationHelper.createNotifications()` i meldingsmodulen. Funksjonen lagrer en `notifications`-rad og eskalerer socket → push → e-post, og evaluerer `PreferenceGateHelper` per kanal – inkludert `in_app` på nivå 0.
+2. **Alt som er planlagt** er en `reminderDefinition` (på enhetsnivå eller omfangsnivå) som utvides til `reminderOccurrences` og sendes av `ReminderEngine.scan()` på en tilbakevendende timer. Én utvider, én sender, én sendelogg (`reminderSentLog`).
+3. **Direkte e-post** finnes bare bak `TransactionalEmailHelper.sendTransactional()`. En ESLint-regel håndhever dette ved kompilering – se nedenfor.
 
-:::tip E-post-døren er lint-håndhevet, ikke bare konvensjon
-`Api/tools/eslint-rules/email-door.cjs` definerer `no-direct-email-helper`: enhver kall til `EmailHelper.sendTemplatedEmail()` eller `EmailHelper.sendEmail()` utenfor `NotificationHelper.ts` eller `TransactionalEmailHelper.ts` feiler lint. Hvis du trenger å sende en e-post, rute den gjennom trakten (`createNotifications` med `emailImmediate`) eller gjennom `TransactionalEmailHelper.sendTransactional()` — det er ingen tredje måte som passerer CI.
+:::tip E-postdøren er lint-håndhevet, ikke bare en konvensjon
+`Api/tools/eslint-rules/email-door.cjs` definerer `no-direct-email-helper`: ethvert kall til `EmailHelper.sendTemplatedEmail()` eller `EmailHelper.sendEmail()` utenfor `NotificationHelper.ts` eller `TransactionalEmailHelper.ts` feiler i lint. Hvis du må sende en e-post, send den gjennom traktområdet (`createNotifications` med `emailImmediate`) eller gjennom `TransactionalEmailHelper.sendTransactional()` – det finnes ingen tredje vei som går gjennom CI.
 :::
 
-## Varsltrakten
+## Varseltrakten
 
-`NotificationHelper.createNotifications()` er den eneste inngangspunktet for alt som ikke er planlagt eller transaksjonelt:
+`NotificationHelper.createNotifications()` er det eneste inngangspunktet for alt som ikke er planlagt eller transaksjonelt:
 
 ```typescript
 createNotifications(
@@ -49,26 +49,26 @@ createNotifications(
 )
 ```
 
-For hver mottaker lagrer den en rad i `notifications` og kaller `attemptDeliveryWithEscalation`, som går opp kanalstigningen nedenfor. En fortsatt ulest rad for samme `(contentType, contentId)` undertrykker gjenopprettelse — denne dedupbeskyttelsen hoppes over for `emailImmediate` sendinger (påminnelsesforskyvninger, personallmedarbeidere "e-post alle", arbeidsflyttrinn eier sin egen dedup) og for direktemeldinger, som alltid pinger socketen.
+For hver mottaker lagrer funksjonen en rad i `notifications` og kaller `attemptDeliveryWithEscalation`, som går gjennom kanalstigen nedenfor. En fortsatt ulest rad for samme `(contentType, contentId)` hindrer ny opprettelse – denne duplikatsperren hoppes over for `emailImmediate`-utsendelser (påminnelsesforskyvninger, «send e-post til alle» fra staben og arbeidsflyttrinn har sin egen duplikatkontroll) og for direktemeldinger, som alltid pinger socketen.
 
-`shared/helpers/NotificationService.ts` speiler samme signatur (`NotificationServiceOptions`) for anropere utenfor meldingsmodulen og er registrert med meldingsmodulen ved oppstart.
+`shared/helpers/NotificationService.ts` speiler den samme signaturen (`NotificationServiceOptions`) for kallere utenfor meldingsmodulen og registreres hos meldingsmodulen ved oppstart.
 
-## Kanal-eskaleringskjede
+## Eskaleringskjede for kanaler
 
-Levering starter på et nivå (0 som standard, eller høyere for påminnelser/eksplisitte sendinger) og fortsetter bare til neste kanal hvis den forrige ikke lyktes. Hvert nivå blir sendt gjennom `PreferenceGateHelper` før noe forsøkes.
+Leveringen starter på et nivå (0 som standard, eller høyere for påminnelser og eksplisitte utsendelser) og går bare videre til neste kanal hvis den forrige ikke lyktes. Hvert nivå kontrolleres av `PreferenceGateHelper` før noe forsøkes.
 
-| Nivå | Kanal | Atferd |
+| Nivå | Kanal | Oppførsel |
 |-------|---------|----------|
-| 0 | **in_app / socket** | `in_app`-porten blir sjekket først. Hvis undertrykt (dempet), lagres raden med `isNew=false` og levering stopper helt — ingen socketping, ingen merke, ingen videre eskalering. Ellers ser serveren opp åpne socketforbindelser for personens `alerts` rom og presser en `notification` (eller `privateMessage`) ramme. For ordinære meldinger stopper en vellykket socketlevering kjeden her — 30-minutters-timeren re-sjekker uleste elementer og eskalerer dem senere. Direktemeldinger stopper aldri ved socket: en installert PWA kan holde alerts-socketen åpen i bakgrunnen, som ellers ville undertrykke OS-nivå-pushen. |
-| 1 | **push** | Sendt på `allowPush` / kategori opt-out / stille timer. Sender til både Expo push-tokens og Web Push-abonnementer funnet på personens `devices` rader, deduplicerer etter endepunkt og rydder opp stale tokens underveis. |
-| 2 | **email** | Sendt på `emailFrequency` og kategori opt-out. Umiddelbare sendinger (`emailImmediate`) gjengivelser rett og skriver en `deliveryLogs` rad; ellers er meldingen igjen ventende for batchdigesteret, beskrevet nedenfor. |
-| — | **sms** | Preferanserørleggeriet (`allowSms`, per-kategori kanallister) regner allerede med en SMS-kanal, men ingen produsent sender gjennom den i dag — den forblir reservert for bulk SMS-produktet, som kjører som en separat, isolert flyt via `TextingController` / `@churchapps/texting`. |
+| 0 | **in_app / socket** | `in_app`-porten sjekkes først. Hvis den undertrykkes (dempet), lagres raden med `isNew=false` og leveringen stopper helt – ingen socket-ping, ingen merke, ingen videre eskalering. Ellers slår serveren opp åpne socket-tilkoblinger for personens `alerts`-rom og sender en `notification`-ramme (eller `privateMessage`). For vanlige varsler stopper en vellykket socket-levering kjeden her – 30-minutterstimeren sjekker uleste elementer på nytt og eskalerer dem senere. Direktemeldinger stopper aldri ved socket: en installert PWA kan holde alerts-socketen åpen i bakgrunnen, noe som ellers ville undertrykt push-varselet på OS-nivå. |
+| 1 | **push** | Styres av `allowPush` / reservasjon per kategori / stille timer. Sender til både Expo-pushtokener og Web Push-abonnementer som finnes på personens `devices`-rader, fjerner duplikater per endepunkt og rydder bort utdaterte tokener underveis. |
+| 2 | **e-post** | Styres av `emailFrequency` og reservasjon per kategori. Umiddelbare utsendelser (`emailImmediate`) genereres med en gang og skriver en `deliveryLogs`-rad; ellers blir varselet liggende ventende for samlesendingen (sammendraget), beskrevet nedenfor. |
+| — | **sms** | Preferanseoppsettet (`allowSms`, kanallister per kategori) tar allerede høyde for en SMS-kanal, men ingen produsent sender gjennom den i dag – den er reservert for produktet for masse-SMS, som kjører som en egen, avskilt flyt via `TextingController` / `@churchapps/texting`. Arbeidsflyttrinnets handling **Send Text** (`StepActionHelper.sendText` → `MessagingModuleGateway.sendPersonText`) går også utenom denne trakten: den sender tekstmelding direkte til kortets person gjennom kirkens leverandør, så varselpreferanser og stille timer gjelder ikke – bare personens `optedOut`-flagg respekteres. |
 
-Uleste meldinger igjen på socket eller push blir eskalert av 30-minutters-timeren (`NotificationHelper.escalateDelivery`). Batch-e-post blir sendt av `NotificationHelper.sendEmailNotifications(frequency)`, drevet av hver persons `emailFrequency` preferanse: `individual` kjører på 30-minutters-timeren, `daily` kjører på nattens tidtaker. (`weekly` er en gyldig preferanseverdi men har ingen dedikert batchkjøring ennå.)
+Uleste varsler som er blitt stående på socket eller push, eskaleres av 30-minutterstimeren (`NotificationHelper.escalateDelivery`). Samle-e-post sendes av `NotificationHelper.sendEmailNotifications(frequency)`, styrt av hver persons `emailFrequency`-preferanse: `individual` kjører på 30-minutterstimeren, `daily` kjører på nattetimeren. (`weekly` er en gyldig preferanseverdi, men har ingen egen samlekjøring ennå.)
 
 ## Påminnelsesmotor
 
-Planlagte påminnelser — arrangementspåminnelser, oppgaveforfallsdatoer, betjening/planstillpåminnelser — går alle gjennom en generalisert motor i stedet for spesiell per-funksjon cron-logikk.
+Planlagte påminnelser – arrangementspåminnelser, frister for oppgaver, påminnelser om tjeneste- og planoppdrag – går alle gjennom én generalisert motor i stedet for skreddersydd cron-logikk per funksjon.
 
 ```
 reminderDefinitions ──expand──▶ reminderOccurrences ──scan (30 min)──▶ createNotifications()
@@ -78,93 +78,93 @@ reminderDefinitions ──expand──▶ reminderOccurrences ──scan (30 min
  offsets/channels/message        entity, occurrence, offset)           + reminderSentLog ledger
 ```
 
-**Definisjoner** (`reminderDefinitions`) er enten enhet-nivå (`entityId` satt — et spesifikt arrangement, oppgave eller plan) eller omfang-nivå (`entityId` null, `scopeId` satt — f.eks. alle planer under en tjeneste plan type). En definisjon bærer en CSV av minutt-forskyvninger (`offsets`, f.eks. `"1440,60"` for en dag og en time før), et lokalt sendtidspunkt (`sendLocalTime`), en CSV av kanaler (`channels` — inkludert `email` utløser en umiddelbar rik e-post på sendtidspunktet), en `recipientMode`, og en valgfri egendefinert `message`.
+**Definisjoner** (`reminderDefinitions`) er enten på enhetsnivå (`entityId` satt – et bestemt arrangement, en oppgave eller en plan) eller på omfangsnivå (`entityId` er null, `scopeId` er satt – for eksempel hver plan under en tjenesteplantype). En definisjon har en CSV med minuttforskyvninger (`offsets`, f.eks. `"1440,60"` for én dag og én time før), et lokalt sendetidspunkt (`sendLocalTime`), en CSV med kanaler (`channels` – at `email` er med, utløser en umiddelbar rik e-post ved sendetidspunktet), en `recipientMode` og en valgfri egendefinert `message`.
 
-**Utvidelse** materialiserer brennende rader for horisonten forut (et rullende flerdagers vindu). Det kjører på nattens tidtaker, og synkront når en definisjon blir lagret slik en påminnelse for et siste øyeblikks-arrangement fortsatt brenner. Omfangsdefinisjonerble ut via adaptørens `loadScopeEntities`, som produserer ett oppsett per konkret enhet; enhet-nivå-forekomster bruker nøkkelen `definitionId:occurrenceISO:offset`, mens omfangsforekomster navnerom etter enhets-id slik de aldri kolliderer. Oppsetting av en forekomst **oppstandelse** av en tidligere kansellert rad — avbryt-deretter-re-utvide er standardmåten å re-synk en påminnelse etter at den underliggende enheten endres; rader allerede `sent`, `failed` eller `processing` blir igjen uanfektet.
+**Utvidelse** materialiserer utløserrader for horisonten fremover (et rullerende vindu på flere dager). Den kjører på nattetimeren, og synkront hver gang en definisjon lagres, slik at en påminnelse for et arrangement i siste liten fortsatt utløses. Omfangsdefinisjoner fordeles via adapterens `loadScopeEntities` og gir ett forekomstsett per konkret enhet; forekomster på enhetsnivå bruker nøkkelen `definitionId:occurrenceISO:offset`, mens forekomster på omfangsnivå bruker enhetens id som navnerom slik at de aldri kolliderer. Å upserte en forekomst **gjenoppliver** en tidligere kansellert rad – kansellere og så utvide på nytt er standardmåten å resynkronisere en påminnelse på når den underliggende enheten endres; rader som allerede er `sent`, `failed` eller `processing`, røres ikke.
 
-**Dispatch** (`ReminderEngine.scan()`) kjører på 30-minutters-timeren. Den hevder forfalte forekomster (en leieavtale forhindrer dobbeltbehandling), laster mottakere gjennom enhetens adapter, filtrerer ut alle som allerede er registrert i `reminderSentLog` for denne forekomsten, og kaller `createNotifications` med `deliveryStartLevel: 1` (hopp rett til push) pluss `emailImmediate`/`emailByPerson` når definisjonens kanaler inkluderer e-post.
+**Utsendelse** (`ReminderEngine.scan()`) kjører på 30-minutterstimeren. Den krever forfalte forekomster (en lease hindrer dobbeltbehandling), laster mottakere gjennom enhetens adapter, filtrerer bort alle som allerede er registrert i `reminderSentLog` for den forekomsten, og kaller `createNotifications` med `deliveryStartLevel: 1` (hopper rett til push) pluss `emailImmediate`/`emailByPerson` når definisjonens kanaler inkluderer e-post.
 
-En intern arrangementsbuss reagerer på enhetsendringer uten å vente på nattens utvidelse: innholdsarrangementer (via webhook-dispatcheren) og plan/oppgave oppdateringsarrangementer utløser umiddelbar re-utvidelse eller avbrudd for den berørte enheten, og en planoppdatering re-utvider også alle omfangsdefinisjonerknyttet til dens plantype.
+En intern hendelsesbuss reagerer på endringer i enheter uten å vente på nattlig utvidelse: innholdshendelser (via webhook-dispatcheren) og oppdateringshendelser for planer og oppgaver utløser umiddelbar ny utvidelse eller kansellering for den berørte enheten, og en planoppdatering utvider også på nytt alle omfangsdefinisjoner knyttet til planens type.
 
 ### Adaptere
 
-Motoren er enhet-agnostisk; hver støttet enhettype plugger inn gjennom en adapter (`helpers/adapters/`):
+Motoren er uavhengig av enhetstype; hver støttede enhetstype kobles inn via en adapter (`helpers/adapters/`):
 
-| Enhettype | Adapter | Notater |
+| Enhetstype | Adapter | Merknader |
 |-------------|---------|-------|
-| `event` | `EventReminderAdapter` | Mottakere begrenset til deltakere eller gruppemedlemmer avhengig av arrangementet og `recipientMode`. |
-| `plan` | `PlanReminderAdapter` | Mottakere er Akseptert + Ubekreftet planstillinger. `buildEmails` kaller inn i `DoingModuleGateway.buildPlanReminderEmails`, som gjengivelser stillinger, notater og en egendefinert melding via `doing/helpers/PlanReminderEmailHelper`, inkludert Aksepter/Avslå knapper signert av `ReminderTokenHelper` som poster til et offentlig stillingssvar-endepunkt. |
-| `task` | `TaskReminderAdapter` | Mottakere er oppgavens tilordning(er). |
+| `event` | `EventReminderAdapter` | Mottakere avgrenses til påmeldte eller gruppemedlemmer avhengig av arrangementet og `recipientMode`. |
+| `plan` | `PlanReminderAdapter` | Mottakere er planoppdrag med status Akseptert + Ubekreftet. `buildEmails` kaller `DoingModuleGateway.buildPlanReminderEmails`, som genererer posisjoner, notater og en egendefinert melding via `doing/helpers/PlanReminderEmailHelper`, inkludert Godta/Avslå-knapper signert av `ReminderTokenHelper` som sender til et offentlig endepunkt for oppdragssvar. |
+| `task` | `TaskReminderAdapter` | Mottakere er oppgavens ansvarlige. |
 
 ### Endepunkter
 
-| Metode | Bane | Formål |
+| Metode | Sti | Formål |
 |--------|------|---------|
-| `GET` / `POST` | `/messaging/reminders/:entityType/:entityId` | Last eller lagre påminnelsesdefinisjonen for en enhet. |
-| `GET` / `POST` | `/messaging/reminders/scope/:entityType/:scopeId` | Last eller lagre en omfang-nivå (nedarvet) påminnelsesdefinisjon. |
-| `DELETE` | `/messaging/reminders/:defId` | Slett en definisjon og avbryt dens ventende forekomster. |
-| `GET` | `/messaging/reminders/event/:eventId/preview` | Forhåndsvis mottakerantall og neste brenntider for en arrangementspåminnelse før lagring. |
-| `GET` | `/messaging/reminders/log` | Nylig påminnelsesforekomst historie for en kirke. |
-| `POST` | `/messaging/reminders/mute` | Demp påminnelser for en spesifikk enhet. |
+| `GET` / `POST` | `/messaging/reminders/:entityType/:entityId` | Last eller lagre påminnelsesdefinisjonen for én enhet. |
+| `GET` / `POST` | `/messaging/reminders/scope/:entityType/:scopeId` | Last eller lagre en påminnelsesdefinisjon på omfangsnivå (arvet). |
+| `DELETE` | `/messaging/reminders/:defId` | Slett en definisjon og kanseller de ventende forekomstene. |
+| `GET` | `/messaging/reminders/event/:eventId/preview` | Forhåndsvis antall mottakere og neste utløsningstidspunkter for en arrangementspåminnelse før lagring. |
+| `GET` | `/messaging/reminders/log` | Nylig historikk over påminnelsesforekomster for en kirke. |
+| `POST` | `/messaging/reminders/mute` | Demp påminnelser for en bestemt enhet. |
 
-Lagring av en definisjon utløser en synkron re-utvidelse for den enheten eller omfanget, så redaktørutgivelser ser oppdatert "neste brenner" uten å vente på nattejobben.
+Lagring av en definisjon utløser en synkron ny utvidelse for den enheten eller det omfanget, slik at redaktørene ser oppdaterte «neste utløsning» uten å vente på nattjobben.
 
 ## Direktemeldinger
 
-Direktemeldinger kjører samme trakt som alt annet i stedet for en separat eskalerings-vei. Hver ulest samtale får en **skyggeradl** i `notifications` (`contentType='privateMessage'`, `contentId` = den private meldings-id, `category='direct_messages'`) som eier all leveringstilstand — socket/push/email-eskalering, lest sporing, alt. Tabellen `privateMessages` selv holder meldingsnylasten og en `notifyPersonId` kolonne, som er kilden til det uleste merket og blir klart når mottakeren leser samtalen.
+Direktemeldinger bruker samme trakt som alt annet i stedet for en egen eskaleringsvei. Hver ulest samtale får én **skyggerad** i `notifications` (`contentType='privateMessage'`, `contentId` = id-en til den private meldingen, `category='direct_messages'`) som eier all leveringstilstand – eskalering via socket/push/e-post, lesesporing, alt. Selve `privateMessages`-tabellen beholder meldingsinnholdet og en `notifyPersonId`-kolonne, som er kilden til merket for uleste og tømmes når mottakeren leser samtalen.
 
-Skyggerader er usynlige for varslets klokke: de er ekskludert fra det uleste antallet spørsmål, varsellisten spørsmål og merket-les/slett-spørsmål, som alle filter `contentType <> 'privateMessage'`. Hver DM-ping treffer socketen uavhengig av ulest tilstand (live chat semantikk — ingen dedup), og DM-er stopper aldri på socketlevering slik ordinære meldinger gjør, siden en bakgrunnlagt PWA kan holde en socket åpen mens den fortsatt trenger en OS-nivå-push. Hvis en person demper DM-meldinger, blir skyggeraden parkert (`isNew=false`, `notifyPersonId` klart) — fortsatt synlig inne i samtalen selv, bare uten merker eller advarsler.
+Skyggeradene er usynlige for varselklokken: de utelates fra spørringen for antall uleste, spørringen for varsellisten og spørringene for merk som lest/slett, som alle filtrerer på `contentType <> 'privateMessage'`. Hver DM-ping treffer socketen uavhengig av lesestatus (semantikk som i live chat – ingen duplikatkontroll), og DM-er stopper aldri ved socket-levering slik vanlige varsler gjør, siden en PWA i bakgrunnen kan holde en socket åpen og likevel trenge et push-varsel på OS-nivå. Hvis en person demper DM-varsler, parkeres skyggeraden (`isNew=false`, `notifyPersonId` tømt) – fortsatt synlig inne i selve samtalen, bare uten merker eller varsler.
 
-## Preferanser & sending
+## Preferanser og porter
 
-Hver sending går gjennom `PreferenceGateHelper.evaluate()`, en ren funksjon (all tilstand sendt inn, ingen DB-anrop på varm vei) som returnerer `allow`, `suppress` eller `defer`. Lagene kjører i rekkefølge, og den første som bestemmer vinner:
+Hver utsendelse går gjennom `PreferenceGateHelper.evaluate()`, en ren funksjon (all tilstand sendes inn, ingen databasekall på den kritiske stien) som returnerer `allow`, `suppress` eller `defer`. Lagene kjøres i rekkefølge, og det første som avgjør, vinner:
 
-1. **Låst kategori** — noen kategorier er obligatoriske (nivå 0) og omgår hver annen lag.
-2. **Mester-demp / kanal-slåing av** — `masterMute`, `allowPush`, `allowSms` eller `emailFrequency='never'` undertrykker direkte.
-3. **Stille timer** — push og SMS bare (e-post anses som ikke-påtrengende). Hvis gjeldende veggklokk-tid i personens tidssone faller inn i deres stille vindu, får en transaksjonskategori fortsatt gjennom; en ikke-transaksjonell blir utsatt til slutten av det stille vinduet, beregnet som en DST-korrekt UTC øyeblikk via `TimezoneHelper.wallClockToUtc`.
-4. **Per-kategori preferanse overstyring** — en eksplisitt opt-ut for en kategori × kanal pair; fravær betyr kategoriens standard.
-5. **Per-enhet-demp** — en demp registrert mot en spesifikk enhet (f.eks. ett arrangement, en plan) begrenser videre enn kategori-nivå-innstillingen, men gjelder bare når anroperen leverer en enhets-id/type sammen med meldingen.
+1. **Låst kategori** – noen kategorier er obligatoriske (nivå 0) og går utenom alle andre lag.
+2. **Hoveddemping / kanalstans** – `masterMute`, `allowPush`, `allowSms` eller `emailFrequency='never'` undertrykker direkte.
+3. **Stille timer** – bare push og SMS (e-post regnes som lite påtrengende). Hvis klokkeslettet i personens tidssone faller i vedkommendes stille vindu, kommer en transaksjonell kategori likevel gjennom; en ikke-transaksjonell utsettes til slutten av det stille vinduet, beregnet som et sommertidskorrekt UTC-tidspunkt via `TimezoneHelper.wallClockToUtc`.
+4. **Overstyring av preferanse per kategori** – en eksplisitt reservasjon for ett kategori × kanal-par; fravær betyr kategoriens standard.
+5. **Demping per enhet** – en demping registrert mot en bestemt enhet (f.eks. ett arrangement, én plan) begrenser mer enn innstillingen på kategorinivå, men gjelder bare når kalleren oppgir en enhets-id/-type sammen med varselet.
 
-Tabeller involvert: `notificationPreferences` (global — `masterMute`, `emailFrequency` av `individual|daily|weekly|never`, `allowPush`, stille-timer-vindu + tidssone, `allowSms`), `notificationPreferenceOverrides` (per kategori × kanal), og `notificationEntityMutes` (per enhet).
+Involverte tabeller: `notificationPreferences` (global – `masterMute`, `emailFrequency` med `individual|daily|weekly|never`, `allowPush`, stille vindu + tidssone, `allowSms`), `notificationPreferenceOverrides` (per kategori × kanal) og `notificationEntityMutes` (per enhet).
 
-Denne porten blir håndhevet for in_app (nivå 0), push (nivå 1) og e-post (nivå 2) inne i trakten — inkludert umiddelbar påminnelse/digest e-poster. Transaksjon e-post (auth-koder, passord-gjenoppsettinger, invitasjoner, donasjonskvitteringer) omgår den ved design; det er hele poenget med den andre døren.
+Denne porten håndheves for in-app (nivå 0), push (nivå 1) og e-post (nivå 2) inne i trakten – inkludert umiddelbare påminnelses- og sammendrags-e-poster. Transaksjonell e-post (autentiseringskoder, tilbakestilling av passord, invitasjoner, giverkvitteringer) går utenom den med vilje; det er hele poenget med den andre døren.
 
-## Kirke-forfattet e-postgrenser
+## Grenser for e-post skrevet av kirken
 
-E-post hvis innhold en kirke skrev går ut fra den delte ChurchApps SES-identiteten, så den er målt per kirke av `Api/src/shared/helpers/ChurchEmailLimiter.ts`. Fire stier kaller den: gruppe/malsendingarner (`EmailTemplateController`, innholdstype `email`), form oppfølgings-e-poster (`FormSubmissionController`, `formFollowUp`), arbeidsflyt **Send e-post** handlinger (`NotificationHelper` med `churchAuthored`, `workflowEmail`), og B1 kontoinvitasjoner (`UserController.sendInviteEmail`, `invite`). Systempost (auth-koder, kvitteringer, påminnelser) er ikke målt.
+E-post der innholdet er skrevet av en kirke, sendes fra den delte ChurchApps SES-identiteten, så den måles per kirke av `Api/src/shared/helpers/ChurchEmailLimiter.ts`. Fire stier kaller den: gruppe-/malutsendelser (`EmailTemplateController`, innholdstype `email`), oppfølgings-e-poster fra skjemaer (`FormSubmissionController`, `formFollowUp`), arbeidsflythandlingene **Send email** (`NotificationHelper` med `churchAuthored`, `workflowEmail`) og B1-kontoinvitasjoner (`UserController.sendInviteEmail`, `invite`). Systempost (autentiseringskoder, kvitteringer, påminnelser) måles ikke.
 
-- **Godkjenning gate.** En kirke sender ingenting før en serveradministrator setter `churches.emailApprovedDate` (`POST /membership/churches/:id/emailApproval`, Server Admin → Churches → **Group Email** chip). Arkiverte kirker er alltid blokkert. B1Admin's Send Email dialog leser `GET /messaging/emailTemplates/sendStatus` (`approved`, `paused`, `remaining`, `requested`) og, når den ikke er godkjent, viser en **Request review** kort i stedet for redaktøren. `POST /messaging/emailTemplates/requestApproval` e-poster support, maksimalt en gang per kirke per uke.
-- **Opptjent godtgjørelse.** En godkjent kirke får `max(150, 2 × its best church-authored day in the prior 30 days)`, begrenset til 2.000 per rullet 24 timer. De nåværende 24 timer er ekskludert fra "beste dag" slik en brudd ikke kan øke sin egen grense.
-- **Reserve, deretter oppgjør.** `reserve()` skriver en `deliveryLogs` rad per mottaker før sending, re-sjekker godtgjørelsen med disse radene talt, og backed ut hvis to forespørsler raste forbi grensen (sendingen returnerer 429). `settle()` merker hver rad sendt eller mislykket.
-- **Klage pause.** `sesFeedback` Lambda (`Api/src/lambda/ses-feedback-handler.ts`, fed av SES → SNS) pins hver permanent bounce eller klage til kirken hvis kirke-forfattede e-post nådde den adressen rundt det tidspunktet, lagret som `deliveryMethod` `sesBounce` / `sesComplaint`. En kirke blir pausert på 2+ klager (≥ 0,3 % av sendinger) eller 10+ hard bounces (≥ 5 %) over 7 dager.
+- **Godkjenningsport.** En kirke sender ingenting før en serveradministrator setter `churches.emailApprovedDate` (`POST /membership/churches/:id/emailApproval`, Server Admin → Churches → **Group Email**-brikken). Arkiverte kirker er alltid blokkert. B1Admins dialog for å sende e-post leser `GET /messaging/emailTemplates/sendStatus` (`approved`, `paused`, `remaining`, `requested`) og viser et **Request review**-kort i stedet for redigeringsvinduet når kirken ikke er godkjent. `POST /messaging/emailTemplates/requestApproval` sender e-post til support, høyst én gang per kirke per uke.
+- **Opptjent kvote.** En godkjent kirke får `max(150, 2 × its best church-authored day in the prior 30 days)`, begrenset til 2 000 per rullerende 24 timer. De siste 24 timene er utelatt fra «beste dag», slik at et utbrudd ikke kan heve sin egen grense.
+- **Reserver, deretter avregn.** `reserve()` skriver én `deliveryLogs`-rad per mottaker før sending, sjekker kvoten på nytt med disse radene medregnet, og trekker seg tilbake hvis to forespørsler har passert grensen samtidig (utsendelsen returnerer 429). `settle()` markerer hver rad som sendt eller mislykket.
+- **Pause ved klager.** `sesFeedback`-Lambdaen (`Api/src/lambda/ses-feedback-handler.ts`, matet av SES → SNS) knytter hver permanente avvisning eller klage til kirken hvis kirkeskrevne e-post nådde den adressen omtrent på det tidspunktet, lagret som `deliveryMethod` `sesBounce` / `sesComplaint`. En kirke settes på pause ved 2+ klager (≥ 0,3 % av utsendelsene) eller 10+ harde avvisninger (≥ 5 %) over 7 dager.
 
 ## Planlegging
 
-Både påminnelsesmotoren og varslingens digest kjører eksisterende planlagte tidtakere i stedet for å introdusere ny infrastruktur:
+Både påminnelsesmotoren og varselsammendraget bruker eksisterende planlagte timere i stedet for å innføre ny infrastruktur:
 
-| Tidtaker | Tidsplan | Kjøringer |
+| Timer | Tidsplan | Kjører |
 |-------|----------|------|
-| 30-minutters tidtaker | hver 30 minutter | Eskalere uleste meldinger; sende `individual`-frekvens digest e-poster; dispatch forfalte påminnelsesforekomster (`ReminderEngine.scan`); godkjennelsessammendrag; forfalte automatisering henrettelser |
-| Nattens tidtaker | 05:00 UTC | Gruppeoppmøte påminnelser; fremskynde gjentakende strømmings tjenester; oppfriske auto-oppfriskningsmeldinger; utvide påminnelsesforekomster for den neste horisonten (`ReminderEngine.expandAll`); sende `daily`-frekvens digest e-poster |
+| 30-minutterstimer | hvert 30. minutt | Eskalere uleste varsler; sende sammendrags-e-poster med `individual`-frekvens; sende forfalte påminnelsesforekomster (`ReminderEngine.scan`); godkjenningssammendrag; forfalte automatiseringskjøringer |
+| Nattetimer | 05:00 UTC | Oppmøtepåminnelser for grupper; flytte frem gjentakende strømmetjenester; oppdatere automatisk oppdaterte lister; utvide påminnelsesforekomster for neste horisont (`ReminderEngine.expandAll`); sende sammendrags-e-poster med `daily`-frekvens |
 
-Lokalt kan den samme logikken utløses på forespørsel med `npm run timer:30min` og `npm run timer:midnight` fra `Api` prosjektet.
+Lokalt kan den samme logikken utløses ved behov med `npm run timer:30min` og `npm run timer:midnight` fra `Api`-prosjektet.
 
-## Filbeholdning
+## Filoversikt
 
 | Område | Filer |
 |------|-------|
 | Trakt | `Api/src/modules/messaging/helpers/NotificationHelper.ts`, `PreferenceGateHelper.ts`, `NotificationCategoryHelper.ts`, `WebPushHelper.ts`, `ExpoPushHelper.ts`, `SocketHelper.ts`, `DeliveryHelper.ts` |
-| Delt oppføring | `Api/src/shared/helpers/NotificationService.ts` |
-| Transaksjon dør | `Api/src/shared/helpers/TransactionalEmailHelper.ts`, lint regel `Api/tools/eslint-rules/email-door.cjs` |
-| Kirke e-postgrenser | `Api/src/shared/helpers/ChurchEmailLimiter.ts`, `Api/src/lambda/ses-feedback-handler.ts`, `Api/src/modules/messaging/repositories/DeliveryLogRepo.ts` |
+| Delt inngang | `Api/src/shared/helpers/NotificationService.ts` |
+| Transaksjonell dør | `Api/src/shared/helpers/TransactionalEmailHelper.ts`, lint-regel `Api/tools/eslint-rules/email-door.cjs` |
+| Grenser for kirke-e-post | `Api/src/shared/helpers/ChurchEmailLimiter.ts`, `Api/src/lambda/ses-feedback-handler.ts`, `Api/src/modules/messaging/repositories/DeliveryLogRepo.ts` |
 | Påminnelsesmotor | `Api/src/modules/messaging/helpers/ReminderEngine.ts`, `ReminderBootstrap.ts`, `helpers/adapters/*`, `controllers/ReminderController.ts` |
-| Påminnelse lagringer | `Api/src/modules/messaging/repositories/ReminderDefinitionRepo.ts`, `ReminderOccurrenceRepo.ts`, `ReminderSentLogRepo.ts` |
-| Betjening/plan e-post | `Api/src/modules/doing/helpers/PlanReminderEmailHelper.ts`, `ReminderTokenHelper.ts`, `Api/src/shared/modules/DoingModuleGateway.ts` |
-| Påminnelse redaktører (B1Admin) | `serving/components/PlanTypeReminderEdit.tsx`, `calendars/components/EventReminderEdit.tsx`, `serving/tasks/components/TaskReminderEdit.tsx` |
-| Påminnelse redaktør / preferanser (B1App) | `EventReminderEdit.tsx`, `NotificationPrefsPage.tsx`, `useRealtimeNotifications.ts` |
+| Påminnelsesrepositorier | `Api/src/modules/messaging/repositories/ReminderDefinitionRepo.ts`, `ReminderOccurrenceRepo.ts`, `ReminderSentLogRepo.ts` |
+| E-post for tjeneste/plan | `Api/src/modules/doing/helpers/PlanReminderEmailHelper.ts`, `ReminderTokenHelper.ts`, `Api/src/shared/modules/DoingModuleGateway.ts` |
+| Påminnelseseditorer (B1Admin) | `serving/components/PlanTypeReminderEdit.tsx`, `calendars/components/EventReminderEdit.tsx`, `serving/tasks/components/TaskReminderEdit.tsx` |
+| Påminnelseseditor / preferanser (B1App) | `EventReminderEdit.tsx`, `NotificationPrefsPage.tsx`, `useRealtimeNotifications.ts` |
 
 ## Relaterte sider
 
-- [Sanntids arkitektur](../realtime) — WebSocket-protokollen og klient-primitiver (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) som in_app-leveringsnivået kjører på
-- [Web Push-meldinger](../web-push) — VAPID-oppsett og nettleser Push API-vei som brukes av push-eskalerings nivået
-- [Messaging Endepunkter](../api/endpoints/messaging) — full REST overflate for meldinger, samtaler, forbindelser og varsling/påminnelse-ruter
+- [Sanntidsarkitektur](../realtime) – WebSocket-protokollen og klientprimitivene (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) som leveringsnivået i appen bygger på
+- [Web Push-varsler](../web-push) – VAPID-oppsett og nettleserens Push API-sti som brukes av push-eskaleringsnivået
+- [Meldingsendepunkter](../api/endpoints/messaging) – hele REST-flaten for meldinger, samtaler, tilkoblinger og varsel-/påminnelsesruter

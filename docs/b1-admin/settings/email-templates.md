@@ -19,7 +19,7 @@ Email Templates let you save reusable email content -- a welcome message, an eve
 
 ## Accessing Email Templates
 
-1. In B1 Admin, open the **section menu** in the top-left corner (the section name with the small arrow) and choose **Settings**.
+1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left) and expand **Settings**.
 2. Click **Email Templates**.
 3. You will see a list of existing templates with their subject, category, and last modified date.
 
@@ -33,7 +33,7 @@ Email Templates let you save reusable email content -- a welcome message, an eve
 
 ## Merge Fields
 
-Click a merge field chip above the Subject or Body to insert it at your cursor. When the email is sent, each merge field is replaced with the recipient's actual information:
+Click a merge field chip above the Subject or Body to insert it at your cursor -- click into the text where you want the field first, then click the chip. Your cursor stays in place, so you can keep typing right after the inserted field. If you click a Body chip without first clicking into the body, the field is added at the end of the body. When the email is sent, each merge field is replaced with the recipient's actual information:
 
 - `{{firstName}}`, `{{lastName}}`, `{{displayName}}` -- The recipient's name
 - `{{email}}` -- The recipient's email address

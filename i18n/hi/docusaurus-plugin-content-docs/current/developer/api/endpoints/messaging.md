@@ -6,7 +6,7 @@ title: "Messaging Endpoints"
 
 <div class="article-intro">
 
-The Messaging module manages real-time conversations, chat messages, push notifications, SMS/email delivery, WebSocket connections, private messaging, device registration, and texting providers. It provides the communication layer used across all ChurchApps applications for both live streaming chat and asynchronous notifications.
+Messaging मॉड्यूल रीयल-टाइम वार्तालाप, चैट संदेश, पुश सूचनाएं, SMS/ईमेल डिलीवरी, WebSocket कनेक्शन, निजी संदेश, डिवाइस पंजीकरण, और texting प्रदाताओं को प्रबंधित करता है। यह सभी ChurchApps एप्लिकेशन में लाइव स्ट्रीमिंग चैट और asynchronous सूचनाओं दोनों के लिए उपयोग किए जाने वाले communication layer प्रदान करता है।
 
 </div>
 
@@ -18,22 +18,22 @@ Base path: `/messaging/conversations`
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| GET | `/timeline/ids?ids=` | JWT | — | Load conversations by comma-separated IDs with first/last messages |
-| GET | `/messages/:contentType/:contentId` | JWT | — | Load conversations for content with paginated messages (`?page=&limit=`) |
-| GET | `/posts` | JWT | — | Get post-type conversations for the current user's groups |
-| GET | `/posts/group/:groupId` | JWT | — | Get post-type conversations for a specific group |
-| GET | `/current/:churchId/:contentType/:contentId` | Public | — | Get or create the current conversation for content (auto-decrypts contentId) |
-| GET | `/:churchId/:contentType/:contentId` | Public | — | Load conversations by content type and ID |
-| GET | `/:churchId/:id` | Public | — | Load a single conversation by ID |
-| POST | `/` | JWT | — | Create or update conversations (batch) |
-| POST | `/start` | JWT | — | Start a new conversation with an initial comment message |
-| DELETE | `/:churchId/:id` | JWT | — | Delete a conversation |
+| GET | `/timeline/ids?ids=` | JWT | — | comma-separated IDs के साथ वार्तालाप पहले/आखिरी संदेशों के साथ लोड करें |
+| GET | `/messages/:contentType/:contentId` | JWT | — | paginated संदेशों के साथ सामग्री के लिए वार्तालाप लोड करें (`?page=&limit=`) |
+| GET | `/posts` | JWT | — | वर्तमान उपयोगकर्ता के समूहों के लिए post-type वार्तालाप प्राप्त करें |
+| GET | `/posts/group/:groupId` | JWT | — | किसी विशिष्ट समूह के लिए post-type वार्तालाप प्राप्त करें |
+| GET | `/current/:churchId/:contentType/:contentId` | Public | — | सामग्री के लिए वर्तमान वार्तालाप प्राप्त या बनाएं (auto-decrypts contentId) |
+| GET | `/:churchId/:contentType/:contentId` | Public | — | सामग्री type और ID द्वारा वार्तालाप लोड करें |
+| GET | `/:churchId/:id` | Public | — | ID द्वारा एक एकल वार्तालाप लोड करें |
+| POST | `/` | JWT | — | वार्तालाप बनाएं या अपडेट करें (batch) |
+| POST | `/start` | JWT | — | एक प्रारंभिक comment संदेश के साथ नया वार्तालाप शुरू करें |
+| DELETE | `/:churchId/:id` | JWT | — | एक वार्तालाप हटाएं |
 
-### Person notes access control
+### व्यक्ति नोट्स access control
 
-Conversations with `contentType: "person"` (the Notes tab on a person record) or `contentType: "personConfidential"` (the Confidential Notes section) are gated on every read and write path, including the otherwise-public routes above, which return `401` for these content types. `person` requires the MembershipApi **People / Edit** permission; `personConfidential` requires **People / View Confidential Notes**. For scoped API keys, `people:write` carries both actions (the key's user must still hold the underlying role permission).
+`contentType: "person"` (किसी व्यक्ति रिकॉर्ड पर Notes टैब) या `contentType: "personConfidential"` (Confidential Notes सेक्शन) के साथ वार्तालाप सभी read और write पाथ पर gated हैं, अन्यथा-public routes सहित, जो इन content types के लिए `401` लौटाते हैं। `person` को MembershipApi **People / Edit** अनुमति की आवश्यकता होती है; `personConfidential` को **People / View Confidential Notes** की आवश्यकता होती है। scoped API keys के लिए, `people:write` दोनों actions को carries करता है (key के उपयोगकर्ता को अभी भी अंतर्निहित role अनुमति को hold करना होगा)।
 
-### Example: Start a Conversation
+### उदाहरण: एक वार्तालाप शुरू करें
 
 ```
 POST /messaging/conversations/start
@@ -68,27 +68,27 @@ Base path: `/messaging/messages`
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| GET | `/conversation/:conversationId` | JWT | — | Load all messages for a conversation |
-| GET | `/catchup/:churchId/:conversationId` | Public | — | Load all messages for a conversation (public catchup for live chat) |
-| GET | `/:churchId/:id` | Public | — | Load a single message by ID |
-| POST | `/` | JWT | — | Save messages (batch). Sends real-time updates and triggers notifications. Updating an existing message requires being its author or holding `content.edit`; the stored author is never reassignable |
-| POST | `/send` | Public | — | Send messages (batch, public). Sends real-time updates via WebSocket and triggers notifications |
-| POST | `/setCallout` | JWT | — | (legacy) Broadcast a callout message in real time. No active client; live stream chat no longer renders callouts |
-| DELETE | `/:churchId/:id` | JWT | — | Delete a message and broadcast the deletion in real time. See [Message moderation](#message-moderation) |
+| GET | `/conversation/:conversationId` | JWT | — | किसी वार्तालाप के लिए सभी संदेश लोड करें |
+| GET | `/catchup/:churchId/:conversationId` | Public | — | किसी वार्तालाप के लिए सभी संदेश लोड करें (लाइव चैट के लिए public catchup) |
+| GET | `/:churchId/:id` | Public | — | ID द्वारा एक एकल संदेश लोड करें |
+| POST | `/` | JWT | — | संदेश सहेजें (batch)। रीयल-टाइम अपडेट भेजता है और सूचनाएं trigger करता है। एक existing संदेश को अपडेट करने के लिए उसके author होना या `content.edit` को hold करना आवश्यक है; stored author कभी reassignable नहीं है |
+| POST | `/send` | Public | — | संदेश भेजें (batch, public)। WebSocket के माध्यम से रीयल-टाइम अपडेट भेजता है और सूचनाएं trigger करता है |
+| POST | `/setCallout` | JWT | — | (legacy) रीयल टाइम में एक callout संदेश broadcast करें। कोई active client नहीं; लाइव स्ट्रीम चैट अब callouts render नहीं करता है |
+| DELETE | `/:churchId/:id` | JWT | — | एक संदेश हटाएं और deletion को रीयल टाइम में broadcast करें। [Message moderation](#message-moderation) देखें |
 
 ### Message moderation
 
-Deleting a message is allowed for:
+किसी संदेश को हटाने की अनुमति है:
 
-- the message's author;
-- staff with `content.edit` (anywhere in the church);
-- **group leaders**, for conversations with a `contentType` of `group` or `groupAnnouncement` whose `contentId` is a group they lead (`leaderGroupIds` on the JWT).
+- संदेश के author के लिए;
+- चर्च में कहीं भी `content.edit` के साथ स्टाफ के लिए;
+- **समूह नेताओं** के लिए, `contentType` के साथ वार्तालाप के लिए `group` या `groupAnnouncement` जिनका `contentId` एक ऐसा समूह है जो वे lead करते हैं (`leaderGroupIds` JWT पर)।
 
-Person-note conversations (`person` / `personConfidential`) are never leader-moderated — they use the notes permissions (`people.edit`, `people.viewConfidentialNotes`) instead.
+Person-note वार्तालाप (`person` / `personConfidential`) कभी leader-moderated नहीं होते हैं — वे notes अनुमतियों (`people.edit`, `people.viewConfidentialNotes`) का उपयोग करते हैं।
 
-Leaders get delete only, not edit: rewriting another member's message stays restricted to the author and `content.edit` staff.
+नेताओं को केवल delete मिलता है, edit नहीं: किसी अन्य सदस्य के संदेश को rewrite करना author और `content.edit` स्टाफ के लिए restricted रहता है।
 
-### Example: Send a Message
+### उदाहरण: एक संदेश भेजें
 
 ```
 POST /messaging/messages/send
@@ -126,10 +126,10 @@ Base path: `/messaging/privatemessages`
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Load all private messages for the current user (includes last message per conversation, marks all as read) |
-| GET | `/existing/:personId` | JWT | — | Find an existing private conversation with a specific person |
-| GET | `/:id` | JWT | — | Load a private message by ID (clears notification if addressed to current user) |
-| POST | `/` | JWT | — | Send private messages (batch). Triggers push notification to recipient |
+| GET | `/` | JWT | — | वर्तमान उपयोगकर्ता के लिए सभी private संदेश लोड करें (प्रति वार्तालाप last संदेश शामिल, सभी को read के रूप में मार्क करता है) |
+| GET | `/existing/:personId` | JWT | — | किसी विशिष्ट व्यक्ति के साथ मौजूदा private वार्तालाप खोजें |
+| GET | `/:id` | JWT | — | ID द्वारा एक private संदेश लोड करें (यदि वर्तमान उपयोगकर्ता को संबोधित है तो सूचना को clear करता है) |
+| POST | `/` | JWT | — | private संदेश भेजें (batch)। प्राप्तकर्ता को push सूचना trigger करता है |
 
 ## Notifications
 
@@ -137,19 +137,19 @@ Base path: `/messaging/notifications`
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| GET | `/unreadCount` | JWT | — | Get unread notification count for the current user |
-| GET | `/my` | JWT | — | Load all notifications for the current user (marks all as read) |
-| GET | `/tmpEmail` | Public | — | Trigger daily email notification digest (debug/cron endpoint) |
-| GET | `/:churchId/person/:personId` | JWT | — | Load notifications for a specific person |
-| GET | `/:churchId/:id` | JWT | — | Load a notification by ID |
-| POST | `/` | JWT | — | Create or update notifications (batch) |
-| POST | `/create` | JWT | — | Create notifications for multiple people. Body: `{ peopleIds, contentType, contentId, message, link }` |
-| POST | `/markRead/:churchId/:personId` | JWT | — | Mark all notifications as read for a person |
-| POST | `/sendTest` | JWT | — | Send a test push notification. Body: `{ personId, title }` |
-| POST | `/ping` | Public | — | Create a notification from an external trigger. Body: `{ personId, churchId, contentType, contentId, message, triggeredByPersonId }` |
-| DELETE | `/:churchId/:id` | JWT | — | Delete a notification |
+| GET | `/unreadCount` | JWT | — | वर्तमान उपयोगकर्ता के लिए unread सूचना count प्राप्त करें |
+| GET | `/my` | JWT | — | वर्तमान उपयोगकर्ता के लिए सभी सूचनाएं लोड करें (सभी को read के रूप में मार्क करता है) |
+| GET | `/tmpEmail` | Public | — | दैनिक ईमेल सूचना digest trigger करें (debug/cron endpoint) |
+| GET | `/:churchId/person/:personId` | JWT | — | किसी विशिष्ट व्यक्ति के लिए सूचनाएं लोड करें |
+| GET | `/:churchId/:id` | JWT | — | ID द्वारा एक सूचना लोड करें |
+| POST | `/` | JWT | — | सूचनाएं बनाएं या अपडेट करें (batch) |
+| POST | `/create` | JWT | — | कई लोगों के लिए सूचनाएं बनाएं। Body: `{ peopleIds, contentType, contentId, message, link }` |
+| POST | `/markRead/:churchId/:personId` | JWT | — | किसी व्यक्ति के लिए सभी सूचनाओं को read के रूप में मार्क करें |
+| POST | `/sendTest` | JWT | — | एक test push सूचना भेजें। Body: `{ personId, title }` |
+| POST | `/ping` | Public | — | एक external trigger से एक सूचना बनाएं। Body: `{ personId, churchId, contentType, contentId, message, triggeredByPersonId }` |
+| DELETE | `/:churchId/:id` | JWT | — | एक सूचना हटाएं |
 
-### Example: Create Notifications
+### उदाहरण: सूचनाएं बनाएं
 
 ```
 POST /messaging/notifications/create
@@ -168,46 +168,46 @@ Authorization: Bearer <token>
 
 Base path: `/messaging/notificationpreferences`
 
-Extends standard CRUD. The base class provides POST `/` (create or update, no permission required).
+Standard CRUD को extend करता है। Base class `POST /` (create या update, कोई अनुमति की आवश्यकता नहीं) प्रदान करता है।
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| POST | `/` | JWT | — | Create or update notification preferences (from CRUD base class) |
-| GET | `/my` | JWT | — | Load notification preferences for the current user (auto-creates defaults if none exist) |
+| POST | `/` | JWT | — | सूचना preferences बनाएं या अपडेट करें (CRUD base class से) |
+| GET | `/my` | JWT | — | वर्तमान उपयोगकर्ता के लिए सूचना preferences लोड करें (यदि कोई मौजूद नहीं है तो स्वचालित रूप से defaults बनाता है) |
 
 ## Connections
 
 Base path: `/messaging/connections`
 
-Manages WebSocket/real-time connections for chat, group conversations, private messages, and live streaming. See [Real-time Architecture](../../realtime) for the end-to-end protocol.
+चैट, समूह वार्तालाप, private संदेश, और लाइव स्ट्रीमिंग के लिए WebSocket/रीयल-टाइम कनेक्शन को प्रबंधित करता है। [Real-time Architecture](../../realtime) के लिए end-to-end protocol देखें।
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| GET | `/:churchId/:conversationId` | Public | — | Load all connections for a conversation |
-| POST | `/` | Public | — | Register connections (batch). Triggers an attendance broadcast on the conversation. Body items: `{ churchId, conversationId, socketId, displayName?, personId? }` |
-| POST | `/setName` | Public | — | Update the display name for a connection by socket ID. Body: `{ socketId, name }` |
-| DELETE | `/:churchId/:conversationId/:socketId` | Public | — | Drop a connection from a conversation. Triggers an attendance broadcast |
-| POST | `/tmpSendAlert` | Public | — | Send a notification alert to a person's connections. Body: `{ churchId, personId }` |
+| GET | `/:churchId/:conversationId` | Public | — | किसी वार्तालाप के लिए सभी कनेक्शन लोड करें |
+| POST | `/` | Public | — | कनेक्शन पंजीकृत करें (batch)। वार्तालाप पर attendance broadcast trigger करता है। Body items: `{ churchId, conversationId, socketId, displayName?, personId? }` |
+| POST | `/setName` | Public | — | socket ID द्वारा कनेक्शन के लिए display name अपडेट करें। Body: `{ socketId, name }` |
+| DELETE | `/:churchId/:conversationId/:socketId` | Public | — | किसी वार्तालाप से कनेक्शन को drop करें। attendance broadcast trigger करता है |
+| POST | `/tmpSendAlert` | Public | — | किसी व्यक्ति के कनेक्शन को एक सूचना alert भेजें। Body: `{ churchId, personId }` |
 
 ## Devices
 
 Base path: `/messaging/devices`
 
-Manages device registration for push notifications and content pairing (e.g., Lessons app on TV displays).
+पुश सूचनाओं और content pairing (उदाहरण के लिए, TV प्रदर्शन पर Lessons ऐप) के लिए device पंजीकरण को प्रबंधित करता है।
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| POST | `/enroll` | JWT | — | Enroll or update a device (mobile push registration). Matches by FCM token or device ID |
-| POST | `/enrollAnon` | Public | — | Enroll an anonymous device and generate a 4-character pairing code |
-| POST | `/` | Public | — | Save devices (batch) |
-| GET | `/pair/:pairingCode` | JWT | — | Pair a device using its pairing code. Optional `?contentType=&contentId=` to assign content |
-| GET | `/status/:deviceId` | Public | — | Check pairing status of a device |
-| GET | `/:churchId` | JWT | — | Load all devices for a church |
-| GET | `/:churchId/person/:personId` | JWT | — | Load all devices for a person |
-| GET | `/:churchId/:id` | JWT | — | Load a device by ID |
-| DELETE | `/:churchId/:id` | JWT | — | Delete a device |
+| POST | `/enroll` | JWT | — | एक device को enroll या अपडेट करें (mobile push पंजीकरण)। FCM token या device ID द्वारा match करता है |
+| POST | `/enrollAnon` | Public | — | एक anonymous device को enroll करें और एक 4-character pairing code उत्पन्न करें |
+| POST | `/` | Public | — | devices को सहेजें (batch) |
+| GET | `/pair/:pairingCode` | JWT | — | एक pairing code का उपयोग करके device को pair करें। Optional `?contentType=&contentId=` content को assign करने के लिए |
+| GET | `/status/:deviceId` | Public | — | device की pairing status check करें |
+| GET | `/:churchId` | JWT | — | किसी चर्च के लिए सभी devices लोड करें |
+| GET | `/:churchId/person/:personId` | JWT | — | किसी व्यक्ति के लिए सभी devices लोड करें |
+| GET | `/:churchId/:id` | JWT | — | ID द्वारा एक device लोड करें |
+| DELETE | `/:churchId/:id` | JWT | — | एक device हटाएं |
 
-### Example: Enroll a Device
+### उदाहरण: एक Device को Enroll करें
 
 ```
 POST /messaging/devices/enroll
@@ -237,32 +237,32 @@ Authorization: Bearer <token>
 
 Base path: `/messaging/devicecontents`
 
-Manages content assignments for paired devices (e.g., which lesson is displayed on a TV).
+paired devices के लिए content assignments को प्रबंधित करता है (उदाहरण के लिए, कौन सा पाठ TV पर प्रदर्शित होता है)।
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| GET | `/deviceId/:deviceId` | JWT | — | Load content assignments for a device |
-| POST | `/` | JWT | — | Save device content assignments (batch) |
-| DELETE | `/:id` | JWT | — | Delete a device content assignment |
+| GET | `/deviceId/:deviceId` | JWT | — | एक device के लिए content assignments लोड करें |
+| POST | `/` | JWT | — | device content assignments को सहेजें (batch) |
+| DELETE | `/:id` | JWT | — | एक device content assignment हटाएं |
 
 ## Texting
 
 Base path: `/messaging/texting`
 
-Manages SMS texting providers, group text messaging, and delivery tracking.
+SMS texting providers, समूह text messaging, और delivery tracking को प्रबंधित करता है।
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| GET | `/providers` | JWT | — | Load texting providers for the church (credentials are masked) |
-| GET | `/preview/:groupId` | JWT | — | Preview recipients for a group text (eligible, opted-out, no-phone counts) |
-| GET | `/sent` | JWT | — | Load all sent text message records for the church |
-| GET | `/sent/:id/details` | JWT | — | Load a sent text with per-recipient delivery logs |
-| POST | `/providers` | JWT | — | Save texting providers (batch). Encrypts API credentials |
-| POST | `/send` | JWT | — | Send an SMS to all eligible members of a group. Body: `{ groupId, message }` |
-| POST | `/sendPerson` | JWT | — | Send an SMS to a single person. Body: `{ personId, phoneNumber, message }` |
-| DELETE | `/providers/:id` | JWT | — | Delete a texting provider |
+| GET | `/providers` | JWT | — | चर्च के लिए texting providers लोड करें (credentials को mask किया गया है) |
+| GET | `/preview/:groupId` | JWT | — | एक समूह text के लिए प्राप्तकर्ताओं को preview करें (eligible, opted-out, no-phone counts) |
+| GET | `/sent` | JWT | — | चर्च के लिए सभी sent text संदेश रिकॉर्ड लोड करें |
+| GET | `/sent/:id/details` | JWT | — | एक sent text को per-recipient delivery logs के साथ लोड करें |
+| POST | `/providers` | JWT | — | texting providers को सहेजें (batch)। API credentials को encrypts करता है |
+| POST | `/send` | JWT | — | किसी समूह के सभी eligible सदस्यों को SMS भेजें। Body: `{ groupId, message }`। Merge fields (`{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{churchName}}`) प्रत्येक प्राप्तकर्ता के लिए resolved होते हैं |
+| POST | `/sendPerson` | JWT | — | एक एकल व्यक्ति को SMS भेजें। Body: `{ personId, phoneNumber, message }`। Merge fields को resolved किया जाता है, और resolved text वह है जो logged होता है |
+| DELETE | `/providers/:id` | JWT | — | एक texting provider हटाएं |
 
-### Example: Send Group Text
+### उदाहरण: समूह Text भेजें
 
 ```
 POST /messaging/texting/send
@@ -289,18 +289,18 @@ Authorization: Bearer <token>
 
 Base path: `/messaging/emailTemplates`
 
-Manages reusable email templates and sending templated emails to groups.
+reusable email templates को प्रबंधित करता है और templated emails को समूहों में भेजता है।
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Load all email templates for the church |
-| GET | `/:id` | JWT | — | Load a single email template by ID |
-| GET | `/preview/:groupId` | JWT | — | Preview email delivery for a group (eligible recipient count, members with no email) |
-| POST | `/` | JWT | — | Create or update email templates (batch) |
-| POST | `/send` | JWT | — | Send a templated email to all members of a group. Body: `{ groupId, subject, htmlContent }` |
-| DELETE | `/:id` | JWT | — | Delete an email template |
+| GET | `/` | JWT | — | चर्च के लिए सभी email templates लोड करें |
+| GET | `/:id` | JWT | — | ID द्वारा एक एकल email template लोड करें |
+| GET | `/preview/:groupId` | JWT | — | एक समूह के लिए email delivery को preview करें (eligible recipient count, कोई ईमेल के बिना सदस्य) |
+| POST | `/` | JWT | — | email templates बनाएं या अपडेट करें (batch) |
+| POST | `/send` | JWT | — | एक समूह के सभी सदस्यों को एक templated email भेजें। Body: `{ groupId, subject, htmlContent }` |
+| DELETE | `/:id` | JWT | — | एक email template हटाएं |
 
-### Example: Send Email to Group
+### उदाहरण: समूह को ईमेल भेजें
 
 ```
 POST /messaging/emailTemplates/send
@@ -308,8 +308,8 @@ Authorization: Bearer <token>
 
 {
   "groupId": "group-123",
-  "subject": "This Week's Update - `{{churchName}}`",
-  "htmlContent": "<p>Hello `{{firstName}}`,</p><p>Here's what's happening this week...</p>"
+  "subject": "This Week's Update - {{churchName}}",
+  "htmlContent": "<p>Hello {{firstName}},</p><p>Here's what's happening this week...</p>"
 }
 ```
 
@@ -323,37 +323,37 @@ Authorization: Bearer <token>
 }
 ```
 
-**Supported merge fields:** `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`
+**समर्थित merge fields:** `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`
 
 ## Blocked IPs
 
 Base path: `/messaging/blockedips`
 
-(legacy) IP-blocking for live streaming chat. The B1App client no longer calls `POST /` — IP blocking was removed in the unified-delivery migration. The `/clear` route is still invoked server-to-server by `StreamingServiceController` when streaming services are saved.
+(legacy) लाइव स्ट्रीमिंग चैट के लिए IP-blocking। B1App client अब `POST /` को कॉल नहीं करता है -- IP blocking को unified-delivery migration में हटाया गया था। `/clear` route अभी भी `StreamingServiceController` द्वारा server-to-server को invoke किया जाता है जब streaming services को saved किया जाता है।
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| POST | `/` | JWT | — | (legacy) Save blocked IPs (batch). No active client |
-| POST | `/clear` | JWT | — | Clear all blocked IPs for specific services. Body: `[{ serviceId, churchId }]` |
+| POST | `/` | JWT | — | (legacy) blocked IPs को सहेजें (batch)। कोई active client नहीं |
+| POST | `/clear` | JWT | — | विशिष्ट services के लिए सभी blocked IPs को clear करें। Body: `[{ serviceId, churchId }]` |
 
 ## Delivery Logs
 
 Base path: `/messaging/deliverylogs`
 
-Tracks delivery status for sent messages (SMS, push notifications, email).
+sent messages (SMS, पुश सूचनाएं, email) के लिए delivery status को ट्रैक करता है।
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| GET | `/content/:contentType/:contentId` | JWT | — | Load delivery logs by content type and ID |
-| GET | `/person/:personId` | JWT | — | Load delivery logs for a person. Optional `?startDate=&endDate=` filters |
-| GET | `/recent` | JWT | — | Load recent delivery logs for the church. Optional `?limit=` (default 100) |
-| GET | `/:id` | JWT | — | Load a delivery log by ID |
+| GET | `/content/:contentType/:contentId` | JWT | — | content type और ID द्वारा delivery logs लोड करें |
+| GET | `/person/:personId` | JWT | — | किसी व्यक्ति के लिए delivery logs लोड करें। Optional `?startDate=&endDate=` filters |
+| GET | `/recent` | JWT | — | चर्च के लिए recent delivery logs लोड करें। Optional `?limit=` (default 100) |
+| GET | `/:id` | JWT | — | ID द्वारा एक delivery log लोड करें |
 
-## Related Pages
+## संबंधित पृष्ठ
 
-- [Real-time Architecture](../../realtime) -- WebSocket protocol, room subscriptions, and the unified delivery framework
-- [Web Push Notifications](../../web-push) -- Browser push enrollment and delivery
-- [Membership Endpoints](./membership) -- People, groups, roles, and core identity
-- [Attendance Endpoints](./attendance) -- Service and visit tracking
-- [Authentication & Permissions](./authentication) -- Login flow, JWT, OAuth, permission model
-- [Module Structure](../module-structure) -- Code organization patterns
+- [Real-time Architecture](../../realtime) -- WebSocket protocol, room subscriptions, और unified delivery framework
+- [Web Push Notifications](../../web-push) -- Browser push enrollment और delivery
+- [Membership Endpoints](./membership) -- लोग, समूह, भूमिकाएं, और core identity
+- [Attendance Endpoints](./attendance) -- Service और visit tracking
+- [Authentication & Permissions](./authentication) -- लॉगिन flow, JWT, OAuth, अनुमति मॉडल
+- [Module Structure](../module-structure) -- कोड संगठन पैटर्न

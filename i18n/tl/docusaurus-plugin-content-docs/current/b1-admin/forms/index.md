@@ -6,45 +6,45 @@ title: "Mga Form"
 
 <div class="article-intro">
 
-Ang seksyon ng Mga Form ay nagbibigay-daan sa iyo na lumikha ng mga custom na form para sa mga pagpaparehistro, survey, pangongolekta ng datos, at marami pa. Kung kailangan mo man ng visitor card, event sign-up, o prayer request form, maaari mo itong buuin dito at ibahagi sa iyong kongregasyon sa pamamagitan ng isang pampublikong link o sa iyong B1.church website.
+Hinahayaan kayo ng seksyong Forms na gumawa ng mga custom na form para sa mga registration, survey, pangongolekta ng datos, at iba pa. Kailangan man ninyo ng visitor card, sign-up para sa event, o form para sa prayer request, maaari ninyo itong buuin dito at ibahagi sa inyong kongregasyon sa pamamagitan ng public link o ng inyong B1.church website.
 
 </div>
 
-## Ang Pahina ng Mga Form
+## Ang Forms Page
 
-Kapag binuksan mo ang **Forms**, makikita mo ang dalawang tab:
+Kapag binuksan ninyo ang **Forms**, makikita ninyo ang mga sumusunod na tab:
 
-- **Forms** -- Ipinapakita ang lahat ng iyong mga aktibong form.
-- **Archived** -- Ipinapakita ang mga form na na-archive. Maaari mong ibalik ang mga na-archive na form anumang oras.
+- **Forms** -- Ipinapakita ang lahat ng inyong aktibong form.
+- **Archived Forms** -- Ipinapakita ang mga form na na-archive na. Maaari ninyong ibalik ang mga naka-archive na form anumang oras. Lalabas lang ang tab na ito kapag may kahit isang form nang na-archive.
 
-Ang bawat form sa listahan ay nagpapakita ng pangalan nito at, kung na-configure, isang pampublikong URL na maaari mong ibahagi sa labas.
+Ipinapakita ng bawat form sa listahan ang pangalan nito at, kung na-configure, ang pampublikong URL na maaari ninyong ibahagi sa labas.
 
-## Ano ang Maaari Mong Gawin
+## Ano ang Magagawa Ninyo
 
-Mula sa pahina ng Mga Form, maaari kang:
+Mula sa Forms page, maaari ninyong:
 
-- **Magdagdag ng form** -- I-click ang **Add Form** upang lumikha ng bagong custom na form.
-- **Mag-edit ng form** -- I-click ang pangalan ng form upang buksan ito at baguhin ang mga tanong, miyembro, o mga setting nito.
-- **Mag-archive ng form** -- Ilipat ang mga form na hindi mo na kailangan sa tab na **Archived** upang mapanatiling maayos ang iyong listahan.
-- **Mag-restore ng form** -- Lumipat sa tab na **Archived** at ibalik ang anumang form na gusto mong gawing aktibo muli.
+- **Magdagdag ng form** -- I-click ang **Add Form** para gumawa ng bagong custom na form.
+- **Mag-edit ng form** -- I-click ang pangalan ng form para buksan ito at baguhin ang mga tanong, miyembro, o setting nito.
+- **Mag-archive ng form** -- Ilipat sa tab na **Archived Forms** ang mga form na hindi na ninyo kailangan para manatiling malinis ang inyong listahan.
+- **Mag-restore ng form** -- Lumipat sa tab na **Archived Forms** at ibalik ang anumang form na gusto ninyong gawing aktibo muli.
 
-## Pagtatrabaho sa isang Form
+## Paggamit ng Isang Form
 
-I-click ang anumang pangalan ng form upang buksan ito. Ang form editor ay may tatlong tab:
+I-click ang pangalan ng anumang form para buksan ito. May hanggang tatlong tab ang form editor:
 
-- **Questions** -- Buuin ang istruktura ng form sa pamamagitan ng pagdaragdag ng mga field na may iba't ibang uri. Tingnan ang [Paglikha ng Mga Form](./creating-forms.md) para sa mga detalye.
-- **Members** -- Kontrolin kung sino ang maaaring mag-access at mamahala ng form.
-- **Submissions** -- Tingnan ang mga sagot na naisumite. Tingnan ang [Pamamahala ng mga Sagot](./managing-submissions.md) para sa mga detalye.
+- **Questions** -- Buuin ang istruktura ng form sa pamamagitan ng pagdaragdag ng mga field na may iba't ibang uri. Tingnan ang [Paggawa ng mga Form](./creating-forms.md) para sa mga detalye.
+- **Form Members** -- Kontrolin kung sino ang maaaring mag-access at mamahala sa form (para sa mga stand-alone na form lang).
+- **Form Submissions** -- Tingnan ang mga sagot na naisumite na. Tingnan ang [Pamamahala ng mga Submission](./managing-submissions.md) para sa mga detalye.
 
 :::tip
-Ang mga form na may pampublikong URL ay maaaring ibahagi sa pamamagitan ng link, i-embed sa iyong website, o isama sa mga email. Pinapadali nito ang pangongolekta ng impormasyon mula sa mga tao na maaaring walang church account.
+Ang mga form na may pampublikong URL ay maaaring ibahagi sa pamamagitan ng link, i-embed sa inyong website, o isama sa mga email. Mas madali nitong makokolekta ang impormasyon mula sa mga taong maaaring walang church account.
 :::
 
 :::info
-Maaari mong kontrolin kung sino ang may access sa bawat form gamit ang tab na **Members**. Mag-assign ng mga role na **Admin** o **View Only** upang mabigyan ang iyong team ng tamang antas ng access.
+Makokontrol ninyo kung sino ang may access sa bawat form gamit ang tab na **Form Members**. Magtalaga ng role na **Admin** o **View Only** para mabigyan ang inyong team ng angkop na antas ng access.
 :::
 
 ## Matuto Pa
 
-- [Paglikha ng Mga Form](./creating-forms.md) -- Sunud-sunod na gabay sa pagbuo ng mga form at pagdaragdag ng mga tanong.
-- [Pamamahala ng mga Sagot](./managing-submissions.md) -- Paano tingnan at pamahalaan ang mga sagot sa form.
+- [Paggawa ng mga Form](./creating-forms.md) -- Hakbang-hakbang na gabay sa pagbuo ng mga form at pagdaragdag ng mga tanong.
+- [Pamamahala ng mga Submission](./managing-submissions.md) -- Paano tingnan at pamahalaan ang mga sagot sa form.

@@ -20,8 +20,8 @@ The audit log tracks all significant actions and changes across your church mana
 
 ## Viewing the Audit Log
 
-1. Go to **Settings** in B1 Admin.
-2. Select **Audit Log**.
+1. Open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left of B1 Admin) and expand **Settings**.
+2. Click **Audit Log**.
 3. The log displays recent entries in a table with the following columns:
    - **Date** -- When the action occurred.
    - **Category** -- The type of action (color-coded for quick scanning).

@@ -6,44 +6,44 @@ title: "Grupper"
 
 <div class="article-intro">
 
-**Grupper**-seksjonen lar deg organisere kirkens medlemmer i ministrier, smågrupper, bibelstudier, komiteer og mer. Grupper er ryggraden av fellesskap-livet i kirken, og denne seksjonen gir deg verktøyene til å opprette, administrere og kommunisere med hver gruppe på ett sted. Merk at **Teams** er atskilt fra Grupper -- Teams brukes for tjeneste og frivillig planlegging.
+I delen **Grupper** kan du organisere menighetens medlemmer i tjenestegrener, smågrupper, bibelstudier, komiteer og mer. Grupper er bærebjelken i fellesskapslivet i menigheten, og her får du verktøyene du trenger for å opprette, administrere og kommunisere med alle gruppene på ett sted. Merk at **Team** er noe annet enn grupper – team brukes til tjeneste og vaktplanlegging for frivillige.
 
 </div>
 
 ## Oversikt
 
-Grupper er organisert etter **kategori**. En kategori er en toppnivå-etikett som "Smågrupper", "Ministrier" eller "Komiteer". Hver kategori kan inneholde flere grupper, noe som gjør det enkelt å holde beslektede grupper sammen.
+Gruppene er organisert etter **kategori**. En kategori er en overordnet merkelapp, for eksempel «Smågrupper», «Tjenestegrener» eller «Komiteer». Hver kategori kan inneholde flere grupper, slik at det er enkelt å holde beslektede grupper samlet.
 
-Når du åpner gruppesiden, vil du se en sammendrag øverst som viser:
+Når du åpner siden Grupper, ser du en oppsummering øverst som viser:
 
-- **Totalt antall grupper** -- antall grupper på tvers av alle kategorier
+- **Grupper totalt** -- antall grupper på tvers av alle kategorier
 - **Kategorier** -- antall gruppekategorier du har opprettet
-- **Totalt medlemmer** -- det kombinerte antallet medlemmer på tvers av alle grupper
+- **Medlemmer totalt** -- samlet antall medlemmer i alle grupper
 
-Nedenfor sammendraget er gruppene dine oppført etter kategori med medlemstallet som vises for hver gruppe.
+Under oppsummeringen vises gruppene dine sortert etter kategori, med antall medlemmer for hver gruppe.
 
-## Hva du kan gjøre
+## Dette kan du gjøre
 
-Her er hva du kan oppnå i Grupper-seksjonen:
+Dette kan du gjøre i delen Grupper:
 
-1. **Opprett og organiser grupper** -- Legg til nye grupper innen kategorier for å gjenspeile hvordan kirken din er strukturert. Se [Opprett grupper](./creating-groups.md).
+1. **Opprette og organisere grupper** -- Legg til nye grupper i kategorier slik at de gjenspeiler hvordan menigheten er bygget opp. Se [Opprette grupper](./creating-groups.md).
 
-2. **Administrer gruppemedlemmer** -- Legg til og fjern medlemmer, utnevn ledere og kommunisere med gruppene. Se [Gruppemedlemmer](./group-members.md).
+2. **Administrere gruppemedlemmer** -- Legg til og fjern medlemmer, utpek ledere og kommuniser med gruppene dine. Se [Gruppemedlemmer](./group-members.md).
 
-3. **Planlegg hendelser** -- Hver gruppe kan ha sin egen kalender for møter, hendelser og gjentakende aktiviteter. Se [Gruppekalender](./group-calendar.md).
+3. **Planlegge arrangementer** -- Hver gruppe kan ha sin egen kalender for møter, arrangementer og gjentakende aktiviteter. Se [Gruppekalender](./group-calendar.md).
 
-4. **Administrer tilmeldingsforespørsler** -- Når en gruppe bruker **Forespørsel**-tilmeldingspolicy, vurder og godkjenn eller avslå innkommende medlemskapsforespørsler fra mennesker som ønsker å bli med. Se [Gruppetilmeldingsforespørsler](./group-join-requests.md).
+4. **Behandle forespørsler om å bli med** -- Når en gruppe bruker innmeldingsregelen **Forespørsel**, kan du gå gjennom og godkjenne eller avslå innkommende medlemsforespørsler fra folk som vil bli med. Se [Forespørsler om gruppemedlemskap](./group-join-requests.md).
 
-5. **Eksporter gruppedata** -- Last ned medlemslister for enhver gruppe som CSV-fil for bruk i regneark eller sending. Se [Gruppemedlemmer](./group-members.md) for eksportinstruksjoner.
+5. **Eksportere gruppedata** -- Last ned medlemslister for en hvilken som helst gruppe som CSV-fil til bruk i regneark eller utsendelser. Se [Gruppemedlemmer](./group-members.md) for veiledning om eksport.
 
 ## Komme i gang
 
-For å få tilgang til Grupper, åpne **seksjonsmenyene** i det øvre venstre hjørnet av B1 Admin-instrumentpanelet og velg **Mennesker**, deretter klikker du **Grupper**-fanen i navigasjonslinjen. Du vil se alle eksisterende grupper organisert etter kategori.
+For å åpne Grupper bruker du [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre i B1 Admin), utvider **Personer** og klikker på **Grupper**. Da ser du alle eksisterende grupper organisert etter kategori.
 
 :::tip
-Hvis du bare begynner, start med å opprette noen få kategorier som samsvarer med kirkens struktur (for eksempel, "Ministrier", "Smågrupper", "Komiteer"). Deretter legger du til individuelle grupper innen hver kategori. Se [Opprett grupper](./creating-groups.md) for en trinn-for-trinn-gjennomgang.
+Hvis du akkurat har begynt, kan du starte med å opprette noen kategorier som passer til menighetens struktur (for eksempel «Tjenestegrener», «Smågrupper», «Komiteer»). Legg deretter til enkeltgrupper i hver kategori. Se [Opprette grupper](./creating-groups.md) for en trinnvis gjennomgang.
 :::
 
 :::info
-Gruppemedlemmer må først eksistere i [Mennesker](../people/adding-people.md)-mappen før de kan legges til en gruppe. Hvis du setter opp B1 for første gang, [importer medlemsdataene](../people/importing-data.md) før du oppretter grupper.
+Gruppemedlemmer må først finnes i [Personer](../people/adding-people.md)-registeret ditt før de kan legges til i en gruppe. Hvis du setter opp B1 for første gang, bør du [importere medlemsdataene dine](../people/importing-data.md) før du oppretter grupper.
 :::

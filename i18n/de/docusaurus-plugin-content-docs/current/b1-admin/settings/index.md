@@ -1,52 +1,52 @@
 ---
-title: Einstellungen
+title: "Settings"
 ---
 
 # Settings
 
 <div class="article-intro">
 
-The Settings section is where you configure your church's account, branding, and administrative options in B1 Admin. From here you can manage everything from your church name and subdomain to user permissions and mobile app configuration.
+Der Abschnitt Settings ist der Ort, an dem Sie die Kontoeinstellungen, das Branding und die administrativen Optionen Ihrer Kirche in B1 Admin konfigurieren. Von hier aus können Sie alles verwalten, vom Kirchennamen und der Subdomain bis zu Benutzerberechtigungen und der Konfiguration der mobilen App.
 
 </div>
 
-## What You Will Find Here
+## Was Sie hier finden werden
 
-The Settings area is organized into the following sub-sections:
+Der Settings-Bereich ist in die folgenden Unterabschnitte organisiert:
 
-1. **Settings** -- Configure your church's basic information, branding, subdomain, region (date format), texting provider, and file storage. See [Church Settings](./church-settings.md) for details. To use your own domain name (e.g. yourchurch.org), see [Custom Domain](./custom-domain.md).
-2. **Campuses** -- Add and manage multiple physical locations for your church. Once created, campuses appear on person profiles, in attendance setup, and in the Demographics dashboard. Reached as a card on the main Settings page rather than a separate navigation item. See [Campuses](./campuses.md) for details.
-3. **Custom Fields** -- Define your own fields to track on people (a date, number, yes/no answer, or pick-list), then fill them in on profiles and search on them. Also reached as a card on the main Settings page. See [Custom Fields](./custom-fields.md) for details.
-4. **Email Templates** -- Save reusable email content for sending manually or from a workflow. See [Email Templates](./email-templates.md) for details.
-5. **Server Admin** -- Access advanced administration tools for managing your church's server-level settings.
+1. **Settings** -- Konfigurieren Sie die grundlegenden Informationen, das Branding, die Subdomain, die Region (Datumsformat), den Texting-Anbieter und den Dateispeicher Ihrer Kirche. Siehe [Church Settings](./church-settings.md) für Details. Um Ihren eigenen Domain-Namen zu verwenden (z. B. yourchurch.org), lesen Sie [Custom Domain](./custom-domain.md).
+2. **Campuses** -- Hinzufügen und Verwalten von mehreren physischen Orten für Ihre Kirche. Nach der Erstellung werden Campuses auf Personenprofilen, im Attendance-Setup und im Demographics-Dashboard angezeigt. Wird auf der Haupteinstellungsseite als Karte erreicht, nicht als separates Navigationselement. Siehe [Campuses](./campuses.md) für Details.
+3. **Custom Fields** -- Definieren Sie Ihre eigenen Felder, um auf Personen zu verfolgen (ein Datum, eine Zahl, eine Ja/Nein-Antwort oder eine Pick-List), füllen Sie sie dann auf Profilen ein und suchen Sie sie. Wird auch auf der Haupteinstellungsseite als Karte erreicht. Siehe [Custom Fields](./custom-fields.md) für Details.
+4. **Email Templates** -- Speichern Sie wiederverwendbare E-Mail-Inhalte für den manuellen Versand oder von einem Workflow aus. Siehe [Email Templates](./email-templates.md) für Details.
+5. **Server Admin** -- Zugriff auf erweiterte Verwaltungstools zur Verwaltung der Server-Level-Einstellungen Ihrer Kirche.
 
 :::info
-**Mobile Apps** configuration and **Forms** now have their own top-level navigation items -- **Mobile** and **Forms** (found under **People**) -- rather than living inside Settings. See [Mobile App Settings](./mobile-app.md) and [Creating Forms](/docs/b1-admin/forms/creating-forms) for details.
+**Mobile Apps** Konfiguration und **Forms** haben jetzt ihre eigenen Top-Level-Navigationselemente – **Mobile** und **Forms** (unter **People** zu finden) – anstatt innerhalb von Settings zu leben. Siehe [Mobile App Settings](./mobile-app.md) und [Creating Forms](/docs/b1-admin/forms/creating-forms) für Details.
 :::
 
-## The Main Settings Page
+## Die Haupteinstellungsseite
 
-When you first open the Settings page, you will see your **church name** and **subdomain** displayed at the top. The header provides quick-access buttons for common tasks:
+Wenn Sie die Einstellungsseite zum ersten Mal öffnen, sehen Sie Ihren **Kirchennamen** und Ihre **Subdomain** oben angezeigt. Die Kopfzeile bietet schnelle Zugriffstastenverbindungen für häufige Aufgaben:
 
-- **Email Templates** -- Jump directly to email template management.
-- **Audit Log** -- View a log of changes made across your church's account.
-- **Batches** -- Jump directly to donation batches.
-- **Import/Export** -- Transfer data between systems using the import/export tool.
+- **Email Templates** -- Direkt zur E-Mail-Template-Verwaltung.
+- **Audit Log** -- Anzeigen eines Änderungsprotokolls über Ihr Kirchenkonto.
+- **Batches** -- Direkt zu Spendenchanrgen.
+- **Import/Export** -- Übertragen Sie Daten zwischen Systemen mit dem Import/Export-Tool.
 
-Below the header, open the **Church Information** section to edit your church's name, address, contact information, and branding -- see [Church Settings](./church-settings.md). To manage user roles, click **Roles** in the Settings navigation bar -- see [Roles & Permissions](./roles-permissions.md).
+Öffnen Sie darunter den Abschnitt **Church Information**, um den Namen, die Adresse, die Kontaktinformationen und das Branding Ihrer Kirche zu bearbeiten – siehe [Church Settings](./church-settings.md). Um Benutzerrollen zu verwalten, öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) und wählen Sie **Settings > Roles** – siehe [Rollen & Berechtigungen](./roles-permissions.md).
 
 :::tip
-Start by configuring your church name and branding under **Church Information**, then set up [Roles](./roles-permissions.md) to invite your team members with the right level of access.
+Beginnen Sie damit, Ihren Kirchennamen und das Branding unter **Church Information** zu konfigurieren, dann richten Sie [Roles](./roles-permissions.md) ein, um Ihre Teamkollegen mit der richtigen Zugriffsstufe einzuladen.
 :::
 
 :::info
-For information about how your data is protected, see [Data Security](./data-security.md).
+Informationen darüber, wie Ihre Daten geschützt werden, finden Sie unter [Data Security](./data-security.md).
 :::
 
-## Next Steps
+## Nächste Schritte
 
-- [Church Settings](./church-settings.md) -- Configure your church information and branding
-- [Campuses](./campuses.md) -- Add locations for multi-site churches
-- [Roles & Permissions](./roles-permissions.md) -- Set up user roles and access control
-- [Mobile App Settings](./mobile-app.md) -- Customize the navigation tabs shown in the B1.church PWA
-- [Data Security](./data-security.md) -- Learn how your data is protected
+- [Church Settings](./church-settings.md) -- Konfigurieren Sie Ihre Kircheninformationen und das Branding
+- [Campuses](./campuses.md) -- Hinzufügen von Orten für Multi-Site-Kirchen
+- [Rollen & Berechtigungen](./roles-permissions.md) -- Richten Sie Benutzerrollen und Zugriffskontrolle ein
+- [Mobile App Settings](./mobile-app.md) -- Passen Sie die Navigationsreiter an, die in der B1.church PWA angezeigt werden
+- [Data Security](./data-security.md) -- Erfahren Sie, wie Ihre Daten geschützt werden

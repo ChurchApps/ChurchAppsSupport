@@ -6,34 +6,34 @@ title: "Mga Email Template"
 
 <div class="article-intro">
 
-Ang mga Email Template ay nagbibigay-daan sa iyo na makatipid ng nilalaman ng email na maaaring gamitin muli -- isang mensahe ng pagdating, isang reminder ng kaganapan, isang pasasalamat sa pagbibigay -- upang ikaw (o isang [workflow](../serving/workflows.md)) ay maaaring magpadala nito sa isang pag-click sa halip na isulat ito mula simula bawat pagkakataon.
+Hinahayaan ka ng mga Email Template na mag-save ng email na magagamit muli -- welcome message, paalala sa event, pasasalamat sa pagbibigay -- para ikaw (o isang [workflow](../serving/workflows.md)) ay makapagpadala nito sa isang click sa halip na isulat ito mula sa simula sa bawat pagkakataon.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Ka Magsimula</h4>
+<h4>Bago Magsimula</h4>
 
 - Kailangan mo ng access sa lugar ng Settings sa B1 Admin.
 
 </div>
 
-## Pag-access ng mga Email Template
+## Pagpunta sa Email Templates
 
-1. Sa B1 Admin, buksan ang **section menu** sa tuktok-kaliwa (ang pangalan ng seksyon na may maliit na arrow) at pumili ng **Settings**.
+1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa itaas na kaliwa) at i-expand ang **Settings**.
 2. I-click ang **Email Templates**.
-3. Makikita mo ang isang listahan ng mga umiiral na template na may paksa, kategorya, at huling petsa ng pagbabago.
+3. Makikita mo ang listahan ng mga umiiral na template kasama ang kanilang subject, kategorya, at petsa ng huling pagbabago.
 
-## Lumilikha ng Template
+## Paggawa ng Template
 
 1. I-click ang **New Template**.
-2. Magpasok ng isang **Template Name** upang matukoy ito sa listahan, at pumili ng isang **Category** (General, Events, Groups, Giving, o Welcome) upang makatulong sa pag-ayos ng iyong mga template.
-3. Magpasok ng linya ng **Subject**.
+2. Maglagay ng **Template Name** para makilala ito sa listahan, at pumili ng **Category** (General, Events, Groups, Giving, o Welcome) para mapadali ang pag-aayos ng iyong mga template.
+3. Ilagay ang **Subject** line.
 4. Isulat ang **Body** gamit ang rich text editor.
 5. I-click ang **Save**.
 
-## Merge Fields
+## Mga Merge Field
 
-I-click ang isang merge field chip sa itaas ng Subject o Body upang ilagay ito sa iyong cursor. Kapag ipinadala ang email, bawat merge field ay pinalitan ng aktwal na impormasyon ng tatanggap:
+I-click ang isang merge field chip sa itaas ng Subject o Body para ipasok ito sa kinaroroonan ng cursor mo -- i-click muna ang text kung saan mo gustong ilagay ang field, saka i-click ang chip. Mananatili ang iyong cursor sa lugar nito, kaya maaari kang magpatuloy sa pag-type pagkatapos mismo ng ipinasok na field. Kung mag-click ka ng chip ng Body nang hindi muna nag-click sa loob ng body, idaragdag ang field sa dulo ng body. Kapag ipinadala ang email, papalitan ang bawat merge field ng aktwal na impormasyon ng tatanggap:
 
 - `{{firstName}}`, `{{lastName}}`, `{{displayName}}` -- Ang pangalan ng tatanggap
 - `{{email}}` -- Ang email address ng tatanggap
@@ -41,16 +41,16 @@ I-click ang isang merge field chip sa itaas ng Subject o Body upang ilagay ito s
 
 ## Pag-preview ng Template
 
-I-click ang **Preview** upang makita kung paano ang paksa at katawan ay magmukhang puno ng sample data para sa mga merge field, bago mo i-save o ipadala.
+I-click ang **Preview** para makita kung paano magiging hitsura ng subject at body na may sample na datos sa mga merge field, bago ka mag-save o magpadala.
 
 ## Paggamit ng Template
 
-Ang mga na-save na template ay available upang piliin kapag bumubuo ng email sa mga tao o grupo, at bilang aksyon sa [Workflows](../serving/workflows.md). Bago ang iyong simbahan ay maaaring magpadala ng mga ito, ang koponan ng ChurchApps ay kailangang aprubahan ito para sa group email minsan. Tingnan ang [Turning On Group Email for Your Church](../groups/group-members.md#turning-on-group-email-for-your-church).
+Ang mga naka-save na template ay maaaring piliin kapag gumagawa ng email para sa mga tao o grupo, at bilang aksyon sa [Workflows](../serving/workflows.md). Bago makapagpadala ang iyong simbahan, kailangang aprubahan muna ito ng team ng ChurchApps para sa group email nang isang beses. Tingnan ang [Pag-on ng Group Email para sa Iyong Simbahan](../groups/group-members.md#turning-on-group-email-for-your-church).
 
 ## Pag-edit at Pagbura
 
-I-click ang icon ng **Edit** sa tabi ng template upang i-update ito, o ang icon ng **Delete** upang permanent na alisin ito.
+I-click ang icon na **Edit** sa tabi ng template para i-update ito, o ang icon na **Delete** para permanenteng alisin ito.
 
 ## Mga Susunod na Hakbang
 
-- [Workflows](../serving/workflows.md) -- Mag-trigger ng isang email ng template nang awtomatiko batay sa mga patakaran
+- [Workflows](../serving/workflows.md) -- Awtomatikong mag-trigger ng email mula sa template batay sa mga alituntunin

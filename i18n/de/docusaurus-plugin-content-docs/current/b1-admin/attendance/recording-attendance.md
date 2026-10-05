@@ -1,90 +1,104 @@
 ---
-title: Anwesenheit erfassen
+title: "Teilnahme aufzeichnen"
 ---
 
-# Recording Attendance
+# Teilnahme aufzeichnen
 
 <div class="article-intro">
 
-Once your campuses, service times, and groups are set up, you can manually record attendance after each gathering. B1 Admin organizes attendance around **sessions** -- one session per group per meeting date. You create the session, mark who showed up, and the data feeds directly into your attendance reports.
+Sobald Ihre Standorte, Gottesdienstzeiten und Gruppen eingerichtet sind, können Sie nach jeder Versammlung manuell die Teilnahme aufzeichnen. B1 Admin organisiert die Teilnahme um **Sitzungen** – eine Sitzung pro Gruppe pro Treffendatum. Sie erstellen die Sitzung, markieren, wer anwesend war, und die Daten fließen direkt in Ihre Teilnahmeberichte.
 
 </div>
 
 <div class="prereqs">
-<h4>Before You Begin</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Your campuses, service times, and groups must be configured. See [Attendance Setup](setup.md) if you haven't done this yet.
-- The groups you want to track must have **Track Attendance** enabled. See [Attendance Setup](setup.md) for details.
+- Ihre Standorte, Gottesdienstzeiten und Gruppen müssen konfiguriert werden. Siehe [Anwesenheitseinrichtung](setup.md), falls Sie dies noch nicht getan haben.
+- Die Gruppen, die Sie verfolgen möchten, müssen **Teilnahme verfolgen** aktiviert haben. Weitere Informationen finden Sie unter [Anwesenheitseinrichtung](setup.md).
 
 </div>
 
-## Creating a Session
+## Sitzung erstellen
 
-A session represents one occurrence of a group meeting -- for example, your K--3rd grade class on a specific Sunday.
+Eine Sitzung stellt ein Vorkommen eines Gruppentreffens dar – zum Beispiel Ihre Klasse für Kinder der Klassen K–3 an einem bestimmten Sonntag.
 
-1. Open **B1 Admin**, open the **section menu** in the top-left corner and choose **People**, then click the **Groups** tab.
-2. Select the group you want to record attendance for.
-3. Click the **Sessions** tab.
-4. Click **New** to create a new session.
-5. If the group is assigned to a service time, choose the **Service Time**. If it is an unscheduled group, this field will not appear.
-6. Select the **Session Date** -- this can be today, a past date, or a future date.
-7. Click **Save**.
+1. Öffnen Sie **B1 Admin**, öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), erweitern Sie **Personen**, und klicken Sie auf **Gruppen**.
+2. Wählen Sie die Gruppe aus, für die Sie Teilnahme aufzeichnen möchten.
+3. Klicken Sie auf die Registerkarte **Sitzungen**.
+4. Klicken Sie auf **Neu**, um eine neue Sitzung zu erstellen.
+5. Wenn die Gruppe einer Gottesdienstzeit zugeordnet ist, wählen Sie die **Gottesdienstzeit** aus. Wenn es sich um eine ungeplante Gruppe handelt, wird dieses Feld nicht angezeigt.
+6. Wählen Sie das **Sitzungsdatum** – dies kann heute, ein früheres Datum oder ein zukünftiges Datum sein.
+7. Klicken Sie auf **Speichern**.
 
-### Adding Sessions for Every Class in a Service Time
+### Sitzungen für jede Klasse in einer Gottesdienstzeit hinzufügen
 
-If other groups meet at the same service time (for example, all of your children's classes at Sunday 9:00 AM), you can create their sessions in one step instead of visiting each group.
+Wenn andere Gruppen zur gleichen Gottesdienstzeit zusammenkommen (z.B. alle Ihre Kinderklassen um Sonntag 9:00 Uhr), können Sie ihre Sitzungen in einem Schritt erstellen, anstatt jede Gruppe zu besuchen.
 
-1. Follow the steps above and choose a **Service Time**.
-2. Check **Also add for the other _N_ groups in _service time_**. The checkbox shows how many other groups are assigned to that service time. It only appears when adding a new session and at least one other group meets at that time.
-3. Click **Save**.
+1. Folgen Sie den obigen Schritten und wählen Sie eine **Gottesdienstzeit**.
+2. Überprüfen Sie **Auch für die anderen _N_ Gruppen in _Gottesdienstzeit_ hinzufügen**. Das Kontrollkästchen zeigt, wie viele andere Gruppen dieser Gottesdienstzeit zugeordnet sind. Es wird nur angezeigt, wenn eine neue Sitzung hinzugefügt wird und mindestens eine andere Gruppe zu dieser Zeit zusammenkommt.
+3. Klicken Sie auf **Speichern**.
 
-A session is created for the current group and for each of the other groups on the same date and service time. Groups that already have a session for that date and service time are skipped, so you won't get duplicates.
+Eine Sitzung wird für die aktuelle Gruppe und für jede der anderen Gruppen am gleichen Datum und zur gleichen Gottesdienstzeit erstellt. Gruppen, die bereits eine Sitzung für das Datum und die Gottesdienstzeit haben, werden übersprungen, sodass Sie keine Duplikate erhalten.
 
 :::tip
-You can create sessions for past dates to catch up on attendance you haven't recorded yet, or create them in advance so they are ready when your group meets.
+Sie können Sitzungen für frühere Daten erstellen, um die Teilnahme zu erfassen, die Sie noch nicht aufgezeichnet haben, oder sie im Voraus erstellen, damit sie bereit sind, wenn sich Ihre Gruppe trifft.
 :::
 
-## Marking Attendance
+## Teilnahme markieren
 
-Select a session to see its attendance list. Every group member is listed with a checkbox, sorted by last name, and anyone already recorded as present is checked.
+Wählen Sie eine Sitzung aus, um ihre Teilnahmeliste zu sehen. Jedes Gruppenmitglied wird mit einem Kontrollkästchen aufgelistet, alphabetisch nach Nachname sortiert, und alle, die bereits als anwesend aufgezeichnet wurden, sind angekreuzt.
 
-1. Check the box next to each person who attended. Use **Select All** or **Select None** to change everyone at once.
-2. The count above the list (for example, "12 of 15 present") updates as you check boxes.
-3. Click **Save Attendance**. Nothing is recorded until you save, and a message confirms when the save is done.
+1. Überprüfen Sie das Kästchen neben jeder Person, die anwesend war. Verwenden Sie **Alles auswählen** oder **Keine auswählen**, um alle auf einmal zu ändern.
+2. Der Zähler über der Liste (z.B. "12 von 15 anwesend") wird aktualisiert, wenn Sie Kästchen aktivieren.
+3. Klicken Sie auf **Teilnahme speichern**. Nichts wird aufgezeichnet, bis Sie speichern, und eine Meldung bestätigt, wenn das Speichern abgeschlossen ist.
 
-Unchecking someone who was already recorded as present and then saving removes them from the session.
+Wenn Sie jemanden, der bereits als anwesend aufgezeichnet wurde, abwählen und dann speichern, werden sie aus der Sitzung entfernt.
 
-### Adding Visitors
+### Besucher hinzufügen
 
-To record someone who is not a member of the group, search for them in the person search beside the attendance list. If they are not in your database yet, you can create them from the search. They are added to the list already checked. Click **Save Attendance** to record them.
+Um jemanden aufzuzeichnen, der nicht Mitglied der Gruppe ist, suchen Sie in der Personensuche neben der Teilnahmeliste nach ihm. Wenn er noch nicht in Ihrer Datenbank ist, können Sie ihn aus der Suche erstellen. Sie werden bereits angekreuzt zur Liste hinzugefügt. Klicken Sie auf **Teilnahme speichern**, um sie aufzuzeichnen.
 
-People who checked in at a kiosk show a **Volunteer** or **Guest** chip. People who are not group members show a **Guest** chip.
+Personen, die sich bei einem Kiosk angemeldet haben, zeigen einen **Freiwilliger**- oder **Gast**-Chip an. Personen, die keine Gruppenmitglieder sind, zeigen einen **Gast**-Chip an.
 
-## Printing a Roll Sheet
+## Überprüfen, welche Gruppen noch Teilnahme benötigen
 
-A roll sheet is a printable class list that teachers can mark by hand and give back to you to enter later. Each sheet shows the church name, the class, a large **Date** line under the class name, and the service time. Members are listed in two columns (read down the left column, then the right) so more names fit on a page, and every member has **Present** and **Absent** boxes. There are blank lines for visitors and a **Teacher / Notes** area.
+Wenn mehrere Klassen zur gleichen Gottesdienstzeit zusammenkommen, können Sie auf einen Blick sehen, welche noch ihre Teilnahme für dieses Datum eingeben müssen.
 
-- **From a session** -- Click the **Print Roll Sheet** (printer) icon at the top of the session's attendance list. The sheet is dated with the session's date.
-- **All classes for a service** -- If the session has a service time, click **Print All Classes** to print one sheet per class assigned to that service time. Each class prints on its own page.
-- **From the Members tab** -- Click the **Print Roll Sheet** icon above the group's member list to print an undated sheet.
+1. Öffnen Sie eine Sitzung, die eine Gottesdienstzeit hat.
+2. Klicken Sie auf **Wer benötigt noch Teilnahme** oben in der Teilnahmeliste.
+3. Ein Dialog listet jede Gruppe auf, die dieser Gottesdienstzeit zugeordnet ist, mit einer Zusammenfassung wie "5 von 8 Gruppen eingegeben" oben.
 
-The sheet opens in a new tab and your browser's print dialog appears automatically.
-
-## Exporting Attendance to a Spreadsheet
-
-You can download a record of the session as a CSV file to use in Excel, Numbers, or Google Sheets.
-
-1. Open the session you want to export.
-2. Click the **Export** button at the top of the attendance list.
-3. Open the downloaded file in your spreadsheet application.
-
-## Viewing Recorded Attendance
-
-After recording sessions, the data appears in your attendance reports.
-
-- **Attendance Trend tab** -- shows church-wide trends over time. See [Tracking Attendance](tracking-attendance.md).
-- **Group Attendance tab** -- shows attendance broken down by individual group. See [Attendance Reports](../reports/attendance-reports.md#group-attendance).
+Gruppen, bei denen für dieses Datum niemand als anwesend markiert ist, zeigen einen **Nicht eingegeben**-Chip an und werden zuerst aufgelistet. Gruppen, die Teilnahme haben, zeigen **Eingegeben** mit der Anzahl der als anwesend markierten Personen (z.B. "Eingegeben (12)"). Klicken Sie auf den Namen einer Gruppe, um zu dieser Gruppe zu springen und ihre Teilnahme aufzuzeichnen.
 
 :::tip
-If a session you just created does not appear in reports right away, make sure the session date falls within the date range selected in the report filters.
+Koppeln Sie dies mit **Alle Klassen drucken** und [Sitzungen für jede Klasse in einer Gottesdienstzeit hinzufügen](#adding-sessions-for-every-class-in-a-service-time): erstellen Sie die Sitzungen, teilen Sie die Anwesenheitslisten aus, verwenden Sie dann **Wer benötigt noch Teilnahme**, um zu sehen, welche Listen noch nicht eingegeben wurden.
+:::
+
+## Anwesenheitsliste drucken
+
+Eine Anwesenheitsliste ist eine druckbare Klassenliste, die Lehrer mit der Hand markieren und Ihnen zum späteren Eintragen zurückgeben können. Jedes Blatt zeigt den Kirchennamen, die Klasse, eine große **Datum**-Zeile unter dem Klassennamen und die Gottesdienstzeit. Mitglieder werden in zwei Spalten aufgelistet (lesen Sie die linke Spalte nach unten, dann die rechte), damit mehr Namen auf einer Seite passen, und jedes Mitglied hat Kästchen für **Anwesend** und **Abwesend**. Es gibt leere Zeilen für Besucher und einen Bereich **Lehrer / Notizen**.
+
+- **Aus einer Sitzung** – Klicken Sie auf das Symbol **Anwesenheitsliste drucken** (Drucker) oben in der Teilnahmeliste der Sitzung. Das Blatt ist mit dem Sitzungsdatum datiert.
+- **Alle Klassen für einen Service** – Wenn die Sitzung eine Gottesdienstzeit hat, klicken Sie auf **Alle Klassen drucken**, um ein Blatt pro Klasse zu drucken, die dieser Gottesdienstzeit zugeordnet ist. Jede Klasse wird auf ihrer eigenen Seite gedruckt.
+- **Aus der Registerkarte Mitglieder** – Klicken Sie auf das Symbol **Anwesenheitsliste drucken** über der Mitgliederliste der Gruppe, um ein undatiertes Blatt zu drucken.
+
+Das Blatt wird in einer neuen Registerkarte geöffnet und der Druckdialog Ihres Browsers erscheint automatisch.
+
+## Teilnahme in eine Tabellenkalkulation exportieren
+
+Sie können einen Eintrag der Sitzung als CSV-Datei herunterladen, um sie in Excel, Numbers oder Google Sheets zu verwenden.
+
+1. Öffnen Sie die Sitzung, die Sie exportieren möchten.
+2. Klicken Sie oben in der Teilnahmeliste auf die Schaltfläche **Exportieren**.
+3. Öffnen Sie die heruntergeladene Datei in Ihrer Tabellenkalkulationsanwendung.
+
+## Aufgezeichnete Teilnahme anzeigen
+
+Nach dem Aufzeichnen von Sitzungen erscheinen die Daten in Ihren Teilnahmeberichten.
+
+- **Registerkarte Teilnahme-Trend** – zeigt kirchenweite Trends im Laufe der Zeit. Siehe [Teilnahme verfolgen](tracking-attendance.md).
+- **Registerkarte Gruppenteilnahme** – zeigt Teilnahme nach Einzelgruppe aufgebrochen. Siehe [Teilnahmeberichte](../reports/attendance-reports.md#group-attendance).
+
+:::tip
+Wenn eine gerade erstellte Sitzung nicht sofort in den Berichten angezeigt wird, stellen Sie sicher, dass das Sitzungsdatum in den in den Berichtsfiltern ausgewählten Datumsbereich fällt.
 :::

@@ -1,101 +1,101 @@
 ---
-title: "Opprett kalendere"
+title: "Opprette kalendere"
 ---
 
-# Opprett kalendere
+# Opprette kalendere
 
 <div class="article-intro">
 
-Opprett en kalender i B1 Admin lar deg bygge en kuratert visning av hendelser ved å koble en eller flere grupper. Hendelser administreres av gruppeleder innen gruppene deres, og kalendarvisningen viser disse hendelsene på ett sted. Administratorer med redigeingstilgang kan legge til eller redigere hendelser for en gruppe. Ikke-admin gruppeleder kan bare administrere hendelser for grupper de leder.
+Når du oppretter en kalender i B1 Admin, kan du bygge en kuratert oversikt over arrangementer ved å koble til én eller flere grupper. Arrangementene administreres av gruppelederne i deres egne grupper, og kalenderen din viser dem samlet på ett sted. Administratorer med redigeringstilgang kan legge til eller redigere arrangementer for alle grupper. Gruppeledere som ikke er administratorer, kan bare administrere arrangementer for gruppene de leder.
 
 </div>
 
 <div class="prereqs">
-<h4>Før du starter</h4>
+<h4>Før du begynner</h4>
 
-- Sett opp [gruppene](../groups/creating-groups.md) hvis hendelser du vil inkludere i kalendarvisningen
-- Du trenger administrasjonstilgang til Kalendere-delen i B1 Admin
+- Sett opp [gruppene](../groups/creating-groups.md) du vil ha med arrangementer fra i kalenderen
+- Du trenger administratortilgang til Kalendere-delen i B1 Admin
 
 </div>
 
-## Opprett en ny kalender
+## Opprette en ny kalender
 
-1. I B1 Admin, naviger til **Nettsted**, og deretter til **Kalendere**-delen.
-2. Klikk **Legg til kalender**.
-3. Skriv inn et **navn** for kalendarvisningen (for eksempel, "Ungdommens ministeri-hendelser" eller "Hoved kirkegalender").
-4. Legg til en valgfri **beskrivelse** for å hjelpe teamet ditt å forstå hva kalendarvisningen er for.
-5. Klikk **Opprett** for å lagre den nye kalendarvisningen.
+1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) i B1 Admin (søkefeltet øverst til venstre), utvid **Kalendere** og klikk på **Kalendere**.
+2. Klikk på **Legg til kalender**.
+3. Skriv inn et **navn** på kalenderen (for eksempel «Ungdomsarrangementer» eller «Menighetens hovedkalender»).
+4. Du kan legge til en **beskrivelse** som hjelper teamet ditt å forstå hva kalenderen brukes til.
+5. Klikk på **Opprett** for å lagre den nye kalenderen.
 
-## Kalendarets detalj-side
+## Kalenderens detaljside
 
-Etter opprettelse av en kalender, klikk på den for å åpne detalj-siden. Denne siden har to hovedområder:
+Når du har opprettet en kalender, klikker du på den for å åpne detaljsiden. Siden har to hovedområder:
 
-- **Venstre kolonne** -- En visning av kalendarvisningen som viser hendelser fra tilkoblede grupper.
-- **Høyre kolonne** -- Den tilknyttede gruppelisten. Dette er hvor du administrerer hvilke grupper som er inkludert i denne kalendarvisningen.
+- **Venstre kolonne** -- En kalendervisning med arrangementer hentet fra de tilkoblede gruppene.
+- **Høyre kolonne** -- Listen over tilknyttede grupper. Her bestemmer du hvilke grupper som skal inngå i kalenderen.
 
-## Tilknytting av grupper
+## Koble til grupper
 
-Grupper som har hendelser i kalendarvisningen vises automatisk i grupplisten på høyre side av detalj-siden.
+Grupper som har arrangementer i kalenderen, vises automatisk i gruppelisten til høyre på detaljsiden.
 
-1. Klikk **Legg til** i gruppedelen for å knytte en gruppe til kalendarvisningen.
-2. Velg gruppen fra rullegardinlisten.
-3. Velg om du vil inkludere **alle hendelser** fra gruppen eller bare **spesifikke hendelser**.
-4. Klikk **Lagre**.
+1. Klikk på **Legg til** i gruppeseksjonen for å knytte en gruppe til kalenderen.
+2. Velg gruppen fra nedtrekkslisten.
+3. Velg om du vil ta med **alle arrangementer** fra gruppen eller bare **bestemte arrangementer**.
+4. Klikk på **Lagre**.
 
 :::tip
-Tilknytting av grupper til kalendarvisningen er en kraftig måte å automatisk aggregere hendelser. Når en gruppeleder legger til en hendelse til sin [gruppe](../groups/creating-groups.md), kan den flyte inn i kirkegalendarvisningen uten ekstra arbeid fra deg.
+Å koble grupper til kalenderen er en effektiv måte å samle arrangementer automatisk på. Når en gruppeleder legger til et arrangement i [gruppen](../groups/creating-groups.md) sin, kan det vises i menighetens felles kalender uten at du trenger å gjøre noe ekstra.
 :::
 
 :::info
-Hvis du vil opprette en enkelt kalender som trekker hendelser fra mange grupper på tvers av kirken, se [Kuratert kalender](curated-calendar) for en strømlinjeformet tilnærming.
+Hvis du vil lage én kalender som henter arrangementer fra mange grupper i menigheten, kan du se [Kuratert kalender](curated-calendar) for en enklere fremgangsmåte.
 :::
 
-## Aktiver hendelsesregistrering
+## Aktivere påmelding til arrangementer
 
-Du kan aktivere registrering for en hendelse slik at medlemmer kan melde seg på via B1-nettstedet eller mobilapper.
+Du kan aktivere påmelding for alle kalenderarrangementer, slik at medlemmer kan melde seg på via B1-nettstedet eller mobilappen.
 
-1. Klikk på en eksisterende hendelse eller opprett en ny.
-2. I hendelses-redigeringsprogrammet, slå på **Registrering** for å aktivere det.
-3. Konfigurer registreringsinnstellingene:
-   - **Kapasitet** (valgfri) -- Sett et maksimalt antall registreringer. La stå blank for ubegrenset.
-   - **Registrering åpner** -- Datoen og tidspunktet når registrering blir tilgjengelig.
-   - **Registrering lukkes** -- Datoen og tidspunktet når registrering lukkes.
-   - **Merker** -- Kommaseparerte etiketter (f.eks. "ungdommer, retreat, vbs") for å hjelpe til med kategorisering av registrerbare hendelser.
-   - **Registrering spørsmål** -- Vedlegg valgfritt [form](../forms/creating-forms.md) så registranter svarer på ekstra spørsmål (matallergier, t-skjorte størrelse, nødkontakt, osv.) som del av påmeldingen. Velg **Ingen** for å hoppe over spørsmål.
-   - **Aktiver venteliste** -- Når hendelsen blir fylt, lar du ytterlige registranter bli med på ventelisten i stedet for å bli avvist. Se [Betalte registreringer](paid-registrations#venteliste).
-4. Lagre hendelsen.
+1. Klikk på et eksisterende arrangement eller opprett et nytt.
+2. Slå på **Påmelding** i arrangementsredigeringen.
+3. Konfigurer påmeldingsinnstillingene:
+   - **Kapasitet** (valgfritt) -- Angi et maksimalt antall påmeldinger. La feltet stå tomt for ubegrenset.
+   - **Påmeldingen åpner** -- Dato og klokkeslett når påmeldingen blir tilgjengelig.
+   - **Påmeldingen stenger** -- Dato og klokkeslett når påmeldingen stenger.
+   - **Etiketter** -- Kommaseparerte merkelapper (for eksempel «ungdom, weekendtur, sommerleir») som hjelper deg å kategorisere arrangementer med påmelding.
+   - **Påmeldingsspørsmål** -- Du kan knytte et [skjema](../forms/creating-forms.md) til arrangementet, slik at deltakerne svarer på tilleggsspørsmål (matallergier, t-skjortestørrelse, nødkontakt osv.) når de melder seg på. Velg **Ingen** hvis du ikke vil stille spørsmål.
+   - **Aktiver venteliste** -- Når arrangementet er fullt, kan flere påmeldte settes på en venteliste i stedet for å bli avvist. Se [Betalte påmeldinger](paid-registrations#waitlist).
+4. Lagre arrangementet.
 
-For betalte hendelser, bruker den samme innstillingssiden definere priced **Deltaker-typer**, valgfri **Valg** (tillegg), og **rabattkoder**, med betaling samlet gjennom kirkens givergang-leverandør. Se [Betalte registreringer](paid-registrations) for hele gjennomgangen.
+For betalte arrangementer kan du på den samme innstillingssiden definere prisede **deltakertyper**, valgfrie **tilvalg** og **rabattkoder**, og betalingen innhentes gjennom menighetens betalingsleverandør. Se [Betalte påmeldinger](paid-registrations) for en fullstendig gjennomgang.
 
-Når registrering er aktivert, vil medlemmer se en **Registrer deg for denne hendelsen**-knapp når de viser hendelsen på [B1 nettsted](../../b1-church/events/registering) eller [B1 mobilapp](../../b1-mobile/events/registering). Hvis du vedla et skjema, ser registranter et **Spørsmål**-trinn under registrering og svarene deres lagres sammen med registreringen.
+Når påmelding er aktivert, ser medlemmene en knapp med teksten **Meld deg på dette arrangementet** når de åpner arrangementet på [B1-nettstedet](../../b1-church/events/registering) eller i [B1 Mobile-appen](../../b1-mobile/events/registering). Hvis du har knyttet til et skjema, ser deltakerne et **Spørsmål**-trinn under påmeldingen, og svarene lagres sammen med påmeldingen.
 
 :::info
-Registrering spørsmål fungerer bare med skjemaer som **ikke** er merket Begrenset. Et begrenset skjema hoppes over automatisk under registrering i stedet for å vises, så bruk et ubegrenset skjema når du vedlegger spørsmål til en hendelse.
+Påmeldingsspørsmål fungerer bare med skjemaer som **ikke** er merket som begrenset. Et begrenset skjema hoppes automatisk over under påmeldingen i stedet for å vises, så bruk et ubegrenset skjema når du knytter spørsmål til et arrangement.
 :::
 
-### Administrering av registreringer
+### Administrere påmeldinger
 
-For å vise og administrere registreringer for hendelsene dine:
+Slik viser og administrerer du påmeldinger til arrangementene dine:
 
-1. Naviger til **Registreringer**-siden i B1 Admin.
-2. Du vil se en tabell over alle hendelser med registrering aktivert, viser hendelsestittelen, datoen, gjeldende registreringsantall mot kapasitet, og merker.
-3. Klikk på en hendelse for å se hele listen over registreringer, inkludert navn, medlemsantall, deltaker-typer, betalingsstatus og registreringsdato.
-4. Fra detalj-siden kan du:
-   - **Legg til deltaker** -- Registrer manuelt noen som meldte seg på frakoblet eller over telefonen.
-   - **Avbryt** individuelle registreringer
-   - **Slett** registreringer permanent
-   - **Fremme** ventelistede registreringer når en plass åpner
-   - **Eksport CSV** -- Last ned alle registreringer, inkludert deltaker-typer, valg, betalingsbeløp og svar på spørsmål
+1. Velg **Kalendere > Påmeldinger** i Jump-menyen.
+2. Du ser en tabell over alle arrangementer med påmelding aktivert, med tittel, dato, antall påmeldte sammenlignet med kapasitet, og etiketter.
+3. Klikk på et arrangement for å se hele listen over påmeldinger, med navn, antall medlemmer, deltakertyper, betalingsstatus og påmeldingsdato.
+4. Fra detaljsiden kan du:
+   - **Legg til deltaker** -- Melde på noen manuelt som har meldt seg på utenfor nettet eller over telefon.
+   - **Avbryt** enkeltpåmeldinger
+   - **Slett** påmeldinger permanent
+   - **Flytt opp** påmeldte fra ventelisten når en plass blir ledig
+   - **Eksporter CSV** -- Laste ned alle påmeldinger, inkludert deltakertyper, tilvalg, betalingsbeløp og svar på spørsmål
 
-Hvis hendelsen har registrering spørsmål vedlagt, viser detalj-siden også **Ubesvart spørsmål bare** filter for raskt finne registranter som ikke har sendt svar ennå, og en **Vis svar**-knapp på hver besvart registrering for å se deres svar. Betalte hendelser legger til en **Type**-kolonne, en **Betalt / Total**-kolonne, per-type teller, og en betalingsdetalj dialog -- se [Betalte registreringer](paid-registrations#registrerings-lista).
+Hvis arrangementet har påmeldingsspørsmål, har detaljsiden også et filter, **Bare ubesvarte spørsmål**, som raskt viser deltakere som ennå ikke har sendt inn svar, og en knapp, **Vis svar**, på hver besvarte påmelding for å se svarene. Betalte arrangementer får i tillegg en **Type**-kolonne, en **Betalt / Totalt**-kolonne, antall per type og en dialog med betalingsdetaljer -- se [Betalte påmeldinger](paid-registrations#the-registration-roster).
 
 :::tip
-Bruk kapasitetsprosesslinjen for å overvåke hvor raskt hendelsene fylles. Linjen blir rød når en hendelse er på eller over kapasitet.
+Bruk fremdriftsindikatoren for kapasitet til å følge med på hvor raskt arrangementene fylles opp. Indikatoren blir rød når et arrangement er fullt eller overbooket.
 :::
 
 ## Neste steg
 
-- [Kuratert kalender](curated-calendar) -- Opprett en kalender som trekker fra flere grupper
-- [Betalte registreringer](paid-registrations) -- Deltaker-typer, tillegg valg, rabattkoder, betalinger og ventelister
-- [Hendelsesregistrering veiledning](../guides/event-registration) -- Steg-for-steg veiledning for oppsett av hendelsesregistrering
-- [Kalendere oversikt](./) -- Returner til kalendaroversikten
+- [Kuratert kalender](curated-calendar) -- Lag en kalender som henter fra flere grupper
+- [Betalte påmeldinger](paid-registrations) -- Deltakertyper, tilvalg, rabattkoder, betalinger og ventelister
+- [Veiledning for arrangementspåmelding](../guides/event-registration) -- Trinnvis veiledning for å sette opp påmelding til arrangementer
+- [Oversikt over kalendere](./) -- Tilbake til kalenderoversikten

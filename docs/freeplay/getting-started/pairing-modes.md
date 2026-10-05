@@ -45,7 +45,7 @@ If you do not need to pair to a classroom or plan, you can browse content provid
 **Best for:** TVs where volunteers manually choose what to play each week, or when you want to explore available content.
 
 :::info
-You can access the **Providers** screen at any time from the sidebar at the bottom of the navigation. You do not need to use a pairing mode to browse and play content.
+You can access the **Providers** screen at any time from **Settings** at the bottom of the sidebar. You do not need to use a pairing mode to browse and play content.
 :::
 
 ## Related Articles

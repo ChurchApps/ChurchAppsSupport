@@ -6,15 +6,15 @@ title: "Navegando e Baixando Conteúdo"
 
 <div class="article-intro">
 
-Depois de se conectar a um provedor de conteúdo, você pode navegar pela sua biblioteca, baixar arquivos e reproduzi-los na sua TV. O navegador de conteúdo fornece uma grade visual de pastas e arquivos que você navega com o controle remoto da TV.
+Uma vez que você se conectou a um provedor de conteúdo, você pode navegar sua biblioteca, baixar arquivos e reproduzi-los em sua TV. O navegador de conteúdo fornece uma grade visual de pastas e arquivos que você navega com seu controle remoto de TV.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Conecte-se a pelo menos um provedor de conteúdo -- veja [Conectando a Provedores](./connecting-providers)
-- Tenha o controle remoto da TV pronto para navegação
+- Conecte a pelo menos um provedor de conteúdo -- veja [Conectando a Provedores](./connecting-providers)
+- Tenha seu controle remoto de TV pronto para navegação
 
 </div>
 
@@ -22,57 +22,57 @@ Depois de se conectar a um provedor de conteúdo, você pode navegar pela sua bi
 
 O navegador de conteúdo exibe itens em uma grade de 3 colunas de cartões. Cada cartão mostra uma imagem em miniatura e um título. Existem dois tipos de itens:
 
-- **Pastas** - Representadas por uma miniatura ou ícone de pasta. Selecione uma pasta para ver seu conteúdo.
-- **Arquivos** - Itens de mídia individuais (vídeos ou imagens). Arquivos de vídeo exibem um ícone de reprodução sobreposto na miniatura.
+- **Pastas** - Representadas por uma imagem em miniatura ou ícone de pasta. Selecione uma pasta para ver seus conteúdos.
+- **Arquivos** - Itens de mídia individual (vídeos ou imagens). Arquivos de vídeo exibem uma sobreposição de ícone de play em sua miniatura.
 
-O cabeçalho no topo da tela mostra o nome da pasta atual, ou o nome do provedor se você estiver no nível raiz.
+O cabeçalho no topo da tela mostra o nome da pasta atual, ou o nome do provedor se você está no nível raiz.
 
-## Navegando por Pastas
+## Navegando Pastas
 
-1. Use o direcional no controle remoto para destacar uma pasta
-2. Pressione **Selecionar** para abri-la
+1. Use o direcional em seu controle remoto para destacar uma pasta
+2. Pressione **Select** para abri-la
 3. O navegador carrega o conteúdo da pasta, que pode ser mais pastas ou arquivos reproduzíveis
-4. Pressione **Voltar** no controle remoto para subir um nível
+4. Pressione **Back** em seu controle remoto para subir um nível
 
-Você pode navegar tão fundo quanto a estrutura de conteúdo do provedor permitir. O navegador mantém o registro do caminho da pasta para que você possa navegar de volta por cada nível.
+Você pode perfurar tão profundamente quanto a estrutura de conteúdo do provedor permite. O navegador acompanha seu caminho de pasta para que você possa navegar de volta através de cada nível.
 
-## Baixando e Reproduzindo Conteúdo
+## Baixando e Tocando Conteúdo
 
-Quando você seleciona uma pasta que contém arquivos reproduzíveis (ou seleciona um arquivo individual), o FreePlay passa para uma tela de download:
+Quando você seleciona uma pasta que contém arquivos reproduzíveis (ou seleciona um arquivo individual), FreePlay se move para uma tela de download:
 
 1. O título do conteúdo aparece na tela com uma imagem de capa da pasta selecionada
-2. Uma barra de progresso mostra **Baixando item X de Y** conforme os arquivos são salvos no dispositivo
-3. Quando o download é concluído, o botão **Iniciar** aparece com um ícone de reprodução
-4. Pressione **Selecionar** para iniciar a reprodução
+2. Uma barra de progresso mostra **Downloading item X of Y** enquanto arquivos são salvos em seu dispositivo
+3. Uma vez que o download está completo, o botão **Start** aparece com um ícone de play
+4. Pressione **Select** para iniciar a reprodução
 
 :::tip
-O conteúdo baixado é armazenado em cache na sua TV. Se você reproduzir o mesmo conteúdo novamente mais tarde, ele carrega instantaneamente sem precisar baixar novamente.
+Conteúdo baixado é armazenado em cache em sua TV. Se você tocar o mesmo conteúdo novamente mais tarde, ele carrega instantaneamente sem re-download.
 :::
 
-## Reproduzindo Conteúdo de Provedores
+## Tocando Conteúdo do Provedor
 
-A reprodução funciona da mesma forma que a reprodução de lições. Use estes controles:
+A reprodução funciona da mesma forma que a reprodução de aula. Use estes controles:
 
 - **Seta direita** - Próximo item
 - **Seta esquerda** - Item anterior
-- **Selecionar / Play-Pause** - Pausar ou retomar vídeo
-- **Seta para cima** - Abrir o seletor de mensagens para ir a um item específico
-- **Voltar** - Sair para o navegador de conteúdo
+- **Select / Play-Pause** - Pausar ou retomar vídeo
+- **Seta acima** - Abrir o seletor de mensagem para pular para um item específico
+- **Back** - Sair para o navegador de conteúdo
 
-Quando você sai do reprodutor, retorna ao navegador de conteúdo no nível raiz do provedor atual.
+Quando você sai do player, você retorna ao navegador de conteúdo no nível raiz do provedor atual.
 
 :::info
-Para uma referência completa de todos os controles do reprodutor, veja [Reproduzindo Lições](../classroom-mode/playing-lessons).
+Para uma referência completa de todos os controles do player, veja [Tocando Aulas](../classroom-mode/playing-lessons).
 :::
 
-## Alternando Entre Provedores
+## Mudando Entre Provedores
 
-Os provedores conectados aparecem como itens na barra lateral à esquerda. Para mudar para um provedor diferente:
+Provedores conectados aparecem como itens sob o heading **Browse** na barra lateral esquerda. Para mudar para um provedor diferente:
 
-1. Pressione a seta **Esquerda** no controle remoto para expandir a barra lateral
+1. Pressione a seta **Left** em seu controle remoto para expandir a barra lateral
 2. Selecione o provedor que deseja navegar
-3. O navegador de conteúdo é atualizado com a biblioteca desse provedor
+3. O navegador de conteúdo atualiza com a biblioteca daquele provedor
 
 :::warning
-Se uma pasta mostrar "Nenhum conteúdo disponível", o provedor não possui nenhum item nesse nível. Tente navegar para uma pasta diferente ou verifique novamente mais tarde.
+Se uma pasta mostra "No content available," o provedor não tem nenhum item naquele nível. Tente navegar para uma pasta diferente ou verificar mais tarde.
 :::

@@ -20,7 +20,7 @@ The Groups Health dashboard gives you a bird's-eye view of how all your groups a
 
 ## Opening Groups Health
 
-In B1 Admin, open the **section menu** in the top-left corner and choose **People**, then click **Groups** in the navigation bar and click the **Group Health** button in the page header. The dashboard loads a table with one row per group.
+In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **People**, click **Groups**, and then click the **Group Health** button in the page header. The dashboard loads a table with one row per group.
 
 ## Columns
 

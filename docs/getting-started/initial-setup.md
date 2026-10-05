@@ -20,14 +20,14 @@ After creating your account and church, there are a few important steps to confi
 
 ## Step 1: Configure Your Church Information
 
-1. Open the **section menu** in the top-left corner (the section name with the small arrow) and choose **Settings**.
+1. Open the [Jump menu](../b1-admin/introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left of B1 Admin), expand **Settings**, and click **Settings**.
 2. Click **Edit Settings**.
 3. Enter your church's **name**, **address**, and **contact details**.
 4. Click **Save** to apply your changes.
 
 ## Step 2: Set Up Your Branding
 
-1. From the **Dashboard** (your home page), navigate to **Website**, then select **Appearance**.
+1. In the Jump menu, choose **Website > Appearance**.
 2. Upload your **church logo**.
 3. Configure any additional branding options such as colors and images.
 4. Your branding will appear on your B1.church website and in the B1 Mobile app.
@@ -38,7 +38,7 @@ Having your logo and branding ready before inviting team members gives a polishe
 
 ## Step 3: Configure Roles and Invite Your Team
 
-1. Click **Roles** from the **Settings** page.
+1. In the Jump menu, choose **Settings > Roles**.
 2. Create roles for your team (for example, "Pastor", "Secretary", "Treasurer").
 3. Assign the appropriate permissions to each role.
 4. Add team members by searching for their accounts and assigning them to roles.
