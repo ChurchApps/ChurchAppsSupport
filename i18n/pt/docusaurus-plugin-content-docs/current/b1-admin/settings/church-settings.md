@@ -90,7 +90,7 @@ Uma vez que um provedor está conectado, a equipe com permissão para enviar tex
 
 ### Personalizando Textos com Campos de Mesclagem
 
-Abaixo da caixa de mensagem, o diálogo Text mostra crachás de espaço reservado: **First Name** (Primeiro Nome), **Last Name** (Sobrenome), **Display Name** (Nome de Exibição) e **Church Name** (Nome da Igreja). Clique em um crachá para inserir seu espaço reservado (`{{firstName}}`, `{{lastName}}`, `{{displayName}}` ou `{{churchName}}`) no seu cursor. Quando o texto é enviado, cada espaço reservado é substituído pelos detalhes do destinatário, para que um texto de grupo como `Hi {{firstName}}, see you Sunday!` (Oi {{firstName}}, vejo você no domingo!) chegue a cada membro com seu próprio nome. Os espaços reservados funcionam tanto para textos de grupo quanto para textos para uma única pessoa.
+Abaixo da caixa de mensagem, o diálogo Text mostra crachás de espaço reservado: **First Name** (Primeiro Nome), **Last Name** (Sobrenome), **Display Name** (Nome de Exibição) e **Church Name** (Nome da Igreja). Clique em um crachá para inserir seu espaço reservado (`{{firstName}}`, `{{lastName}}`, `{{displayName}}` ou `{{churchName}}`) no seu cursor. Quando o texto é enviado, cada espaço reservado é substituído pelos detalhes do destinatário, para que um texto de grupo como `Hi {{firstName}}, see you Sunday!` (`Oi {{firstName}}, vejo você no domingo!`) chegue a cada membro com seu próprio nome. Os espaços reservados funcionam tanto para textos de grupo quanto para textos para uma única pessoa.
 
 :::info
 O limite de 1.600 caracteres se aplica à mensagem conforme você a digita. Depois que os espaços reservados são preenchidos, qualquer texto mais longo que 1.600 caracteres é cortado nesse comprimento.

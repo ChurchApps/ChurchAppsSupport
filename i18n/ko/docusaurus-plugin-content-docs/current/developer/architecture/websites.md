@@ -60,7 +60,7 @@ title: "웹사이트 라우팅 및 다중 사이트"
 
 `B1App/next.config.mjs`는 호스트별로 들어오는 요청을 다시 씁니다. 패턴 `(?<subdomain>.*?)\..*`이 있는 호스트 규칙은 호스트의 **첫 번째 레이블**을 캡처하고 `/` 및 `/:path*`를 `/{subdomain}` - `[sdSlug]` App-Router 세그먼트로 다시 씁니다. 그래서 `grace.b1.church/about`은 `/grace/about`이 됩니다.
 
-`src/app/[sdSlug]/ 내에서 `ConfigHelper.load(sdSlug)`(`src/helpers/ConfigHelper.ts`)는 `GET /membership/churches/lookup/?subDomain={sdSlug}`을 호출합니다. `ChurchController.getBySubDomain` 응답에는 이제 두 가지 분기가 있습니다:
+`src/app/[sdSlug]/` 내에서 `ConfigHelper.load(sdSlug)`(`src/helpers/ConfigHelper.ts`)는 `GET /membership/churches/lookup/?subDomain={sdSlug}`을 호출합니다. `ChurchController.getBySubDomain` 응답에는 이제 두 가지 분기가 있습니다:
 
 | 슬러그 일치 | 응답 | 의미 |
 |--------------|----------|---------|
