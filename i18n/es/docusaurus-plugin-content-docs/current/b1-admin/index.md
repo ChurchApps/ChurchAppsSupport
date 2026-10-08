@@ -36,16 +36,16 @@ Cada sección, incluyendo Sermons, Calendars, Mobile, y Settings, está en el [m
 ## Características Principales
 
 - **[People](./people/)** - Gestiona tu directorio de iglesia, agrega miembros, edita datos en masa, rastrea hogares
-- **[Groups](./groups/)** - Crea y organiza grupos de iglesia con solicitudes de adhesión, gestión de miembros, correo de grupo y textos de grupo personalizados
+- **[Groups](./groups/)** - Crea y organiza grupos de iglesia con solicitudes de adhesión, gestión de miembros, correo de grupo, textos de grupo personalizados y listas de contactos imprimibles
 - **[Attendance](./attendance/)** - Configura sedes, horarios de servicio, rastrea asistencia nombrada con hojas de clase imprimibles, ve qué clases aún necesitan asistencia registrada, y registra simples conteos generales con reportes de tendencias
-- **[Donations](./donations/)** - Registra donaciones en múltiples monedas, gestiona fondos, imprime lotes con subtotales de fondos, genera estados
+- **[Donations](./donations/)** - Registra donaciones en múltiples monedas, gestiona fondos, imprime lotes (uno a la vez o todos los de un rango de fechas) con subtotales de fondos, genera estados
 - **[Serving](./serving/)** - Coordina voluntarios, crea planes de servicio, gestiona tareas, y mueve a las personas a través de flujos de trabajo paso a paso que pueden enviar correos electrónicos y textos automáticamente
 - **[Forms](./forms/)** - Construye formularios personalizados para registros y recopilación de datos
 - **[Reports](./reports/)** - Ver reportes de cumpleaños, asistencia y donaciones
 - **[Website](./website/)** - Construye y gestiona tu sitio web de iglesia con estilos de navegación personalizados, o desactiva el sitio público y mantén solo el portal de miembros
 - **[Sermons](./sermons/)** - Gestiona tu biblioteca de sermones, transmisión en vivo y un feed de podcast automático
 - **[Calendars](./calendars/)** - Crea calendarios curados, gestiona reservas de salas/recursos, y ve disponibilidad
-- **[Settings](./settings/)** - Configura la información de la iglesia, región y formato de fecha, mensajes de texto, roles, permisos y campos de persona personalizados
+- **[Settings](./settings/)** - Configura la información de la iglesia, región, formato de fecha y de teléfono, mensajes de texto, roles, permisos y campos de persona personalizados
 
 :::info
 Haz clic en el icono de signo de interrogación en la esquina superior derecha de cualquier página para acceder rápidamente a la ayuda y documentación.

@@ -85,7 +85,7 @@ Os widgets do site aparecem em todas as páginas do seu site, flutuando acima do
 O painel **Redirects & Analytics** nas Configurações de Estilo contém duas configurações não relacionadas mas frequentemente necessárias:
 
 - **Analytics** -- Adicione seu **Google Analytics 4 Measurement ID** para rastrear o tráfego de visitantes no seu site.
-- **Redirects** -- Mapeie um caminho de URL antigo para um novo, para que links para uma página que você moveu ou renomeou continuem funcionando em vez de resultarem em 404. Digite o caminho **From** antigo e o caminho **To** novo, depois clique em **Save**.
+- **Redirects** -- Mapeie um caminho de URL antigo para um novo, para que links para uma página que você moveu ou renomeou continuem funcionando em vez de resultarem em 404. Digite o caminho **From** antigo e o caminho **To** novo, depois clique em **Save**. Um redirecionamento também tem prioridade sobre as páginas integradas do B1 (`/sermons`, `/stream`, `/donate`, `/bible` e `/votd`), então você pode enviar esse endereço para outro lugar (por exemplo, para sua própria página de sermões ou um canal do YouTube). Ele não substitui uma página que você mesmo criou no mesmo endereço. Exclua essa página primeiro se quiser que o redirecionamento seja aplicado.
 
 ## CSS e JavaScript Personalizados
 

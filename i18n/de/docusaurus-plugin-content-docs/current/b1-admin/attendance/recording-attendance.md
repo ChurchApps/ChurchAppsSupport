@@ -80,7 +80,7 @@ Eine Anwesenheitsliste ist eine druckbare Klassenliste, die Lehrer mit der Hand 
 
 - **Aus einer Sitzung** – Klicken Sie auf das Symbol **Anwesenheitsliste drucken** (Drucker) oben in der Teilnahmeliste der Sitzung. Das Blatt ist mit dem Sitzungsdatum datiert.
 - **Alle Klassen für einen Service** – Wenn die Sitzung eine Gottesdienstzeit hat, klicken Sie auf **Alle Klassen drucken**, um ein Blatt pro Klasse zu drucken, die dieser Gottesdienstzeit zugeordnet ist. Jede Klasse wird auf ihrer eigenen Seite gedruckt.
-- **Aus der Registerkarte Mitglieder** – Klicken Sie auf das Symbol **Anwesenheitsliste drucken** über der Mitgliederliste der Gruppe, um ein undatiertes Blatt zu drucken.
+- **Aus der Registerkarte Mitglieder** – Klicken Sie auf das Symbol **Anwesenheitsliste drucken** über der Mitgliederliste der Gruppe und wählen Sie **Anwesenheitsblatt**, um ein undatiertes Blatt zu drucken. Dasselbe Menü bietet ein Layout **Kontaktliste** mit Telefonnummer, E-Mail und Adresse jedes Mitglieds – siehe [Mitgliederliste drucken](../groups/group-members.md#printing-the-member-list).
 
 Das Blatt wird in einer neuen Registerkarte geöffnet und der Druckdialog Ihres Browsers erscheint automatisch.
 

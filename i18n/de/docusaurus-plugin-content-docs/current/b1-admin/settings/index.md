@@ -14,7 +14,7 @@ Der Abschnitt Settings ist der Ort, an dem Sie die Kontoeinstellungen, das Brand
 
 Der Settings-Bereich ist in die folgenden Unterabschnitte organisiert:
 
-1. **Settings** -- Konfigurieren Sie die grundlegenden Informationen, das Branding, die Subdomain, die Region (Datumsformat), den Texting-Anbieter und den Dateispeicher Ihrer Kirche. Siehe [Church Settings](./church-settings.md) für Details. Um Ihren eigenen Domain-Namen zu verwenden (z. B. yourchurch.org), lesen Sie [Custom Domain](./custom-domain.md).
+1. **Settings** -- Konfigurieren Sie die grundlegenden Informationen, das Branding, die Subdomain, die Region (Datums- und Telefonformat), den Texting-Anbieter und den Dateispeicher Ihrer Kirche. Siehe [Church Settings](./church-settings.md) für Details. Um Ihren eigenen Domain-Namen zu verwenden (z. B. yourchurch.org), lesen Sie [Custom Domain](./custom-domain.md).
 2. **Campuses** -- Hinzufügen und Verwalten von mehreren physischen Orten für Ihre Kirche. Nach der Erstellung werden Campuses auf Personenprofilen, im Attendance-Setup und im Demographics-Dashboard angezeigt. Wird auf der Haupteinstellungsseite als Karte erreicht, nicht als separates Navigationselement. Siehe [Campuses](./campuses.md) für Details.
 3. **Custom Fields** -- Definieren Sie Ihre eigenen Felder, um auf Personen zu verfolgen (ein Datum, eine Zahl, eine Ja/Nein-Antwort oder eine Pick-List), füllen Sie sie dann auf Profilen ein und suchen Sie sie. Wird auch auf der Haupteinstellungsseite als Karte erreicht. Siehe [Custom Fields](./custom-fields.md) für Details.
 4. **Email Templates** -- Speichern Sie wiederverwendbare E-Mail-Inhalte für den manuellen Versand oder von einem Workflow aus. Siehe [Email Templates](./email-templates.md) für Details.

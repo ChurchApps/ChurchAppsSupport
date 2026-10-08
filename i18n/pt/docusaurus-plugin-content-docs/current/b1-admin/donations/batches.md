@@ -43,18 +43,24 @@ Seu novo lote aparece na lista, pronto para você adicionar doações.
 - **Ver doações** -- clique em um nome de lote para abri-lo e ver todas as doações individuais que contém. De lá você pode adicionar, editar ou remover doações.
 - **Editar detalhes do lote** -- clique no botão **Editar** em uma linha de lote para alterar seu nome ou data.
 - **Ordenar** -- use os cabeçalhos de coluna para ordenar lotes por nome ou data.
-- **Exportar** -- clique em **Exportar para CSV** para baixar sua lista de lotes como uma planilha.
+- **Exportar** -- clique em **Exportar** para baixar sua lista de lotes como uma planilha (CSV).
 
 ## Imprimindo um Lote
 
 Abra um lote e clique no ícone **Imprimir** (impressora) no topo da lista de doações para imprimir uma cópia em papel para sua equipe de contagem ou registros de depósito. O impresso inclui:
 
-- O nome e data do lote
+- O nome da sua igreja, o nome do lote e a data do lote
 - Cada doação no lote, com o nome do doador, método, notas, data e valor (doações reembolsadas são riscadas e marcadas como reembolsadas)
 - **Subtotais de Fundos** -- o total dado a cada fundo no lote
 - **Total do Lote** -- o valor combinado para o lote inteiro
 
 O ícone de Imprimir só aparece uma vez que o lote tem pelo menos uma doação.
+
+### Imprimindo Vários Lotes de Uma Vez
+
+Para imprimir todos os lotes de um período de uma só vez -- por exemplo, todos os depósitos do mês passado -- clique no ícone **Imprimir** (impressora) no cabeçalho da lista **Lotes**, ao lado de **Exportar**. A página **Imprimir Lotes** abre com uma **Data Inicial** e uma **Data Final** que, por padrão, cobrem os últimos 30 dias. Altere qualquer uma das datas para escolher um intervalo diferente.
+
+Todos os lotes com data dentro do intervalo (incluindo as datas inicial e final) são impressos em ordem de data, um lote por página, usando o mesmo layout da impressão de um único lote. Lotes sem doações ficam de fora, e se nenhum dos lotes do intervalo tiver doações você verá "Nenhum lote com doações neste intervalo de datas." Clique em **Imprimir** para abrir a caixa de diálogo de impressão do seu navegador, ou em **Fechar** para voltar à lista de lotes.
 
 ## Exportando um Lote para QuickBooks Online
 

@@ -57,7 +57,7 @@ For best results, use a logo with a transparent background in PNG format. This e
 
 Choose which day your calendars start on. The **First Day of Week** dropdown on the Church Info section defaults to **Sunday**, but can be set to any day. Once changed, it's honored across calendar grids in B1 Admin and the B1.church member portal -- group calendars, curated calendars, and the event editor all lay out weeks starting on the day you choose.
 
-## Region (Date Format)
+## Region (Date and Phone Format)
 
 The **Region** setting controls how dates and times are written throughout B1. By default dates use the United States format (for example, "Sep 28, 2026" and "9/28/2026"). Churches outside the US can switch to their own format -- for example, choosing English (United Kingdom) shows "28 Sept 2026" and "28/09/2026" instead.
 
@@ -65,7 +65,20 @@ The **Region** setting controls how dates and times are written throughout B1. B
 2. Choose your region from the **Region** dropdown. Each option shows a sample date so you can see exactly how dates will look.
 3. Click **Save**.
 
-The Region card then shows your selected region and a sample of the **Date format**.
+The Region card then shows your selected region, a sample of the **Date format**, and your **Phone numbers** format.
+
+### Phone Number Format
+
+The same Region card has a **Phone numbers** setting that controls how phone numbers are entered on a person's record:
+
+- **International (with country code)** -- the default. Phone fields show a country flag picker and save numbers with the country code (for example, +1 918 555 1234).
+- **Local (as typed)** -- phone fields become plain text boxes and save numbers exactly as you type them, with no country code added (for example, 0701 234 5678). Choose this if your church writes numbers in a local format and doesn't want B1 to add a country code.
+
+When **Local** is selected, the Region card also shows "Local phone numbers" next to your region.
+
+:::tip
+Texting works best when numbers include the country code. If you send texts from B1, keep the **International** format, or make sure numbers you type in Local mode include the country code.
+:::
 
 Your region applies to dates and times across B1 Admin and on your B1.church website and member portal, including sermons, blog posts, group calendars, and serving plans, so members see dates in the same format your staff do.
 

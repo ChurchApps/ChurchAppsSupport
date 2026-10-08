@@ -33,7 +33,7 @@ L'accès complet en tant qu'administrateur n'est pas requis pour gérer les plan
 
 1. À partir de la vue du type de plan, cliquez sur **Nouveau plan**.
 2. Donnez au plan un nom ou utilisez la date comme nom. Sélectionnez la **date** du service.
-3. Si vous souhaitez copier à partir d'un plan antérieur, choisissez positions uniquement ou positions et assignations. Si vous ne souhaitez pas copier, choisissez simplement rien. Vous pouvez également copier l'ordre de service de mon plan précédent.
+3. Si vous souhaitez copier à partir d'un plan antérieur, choisissez positions uniquement ou positions et assignations. Si vous ne souhaitez pas copier, choisissez simplement rien. Vous pouvez également copier l'ordre de service du plan précédent. Lorsque vous copiez à partir d'un plan précédent, le nouveau plan conserve aussi les **Notes** et la **Date limite d'inscription** de ce plan, ce qui vous évite de les saisir de nouveau chaque semaine. Vous pouvez modifier l'un ou l'autre dans les paramètres du nouveau plan.
 4. Enregistrez le plan. Vous pouvez maintenant commencer à assigner des membres d'équipe et à construire l'[ordre de service](./service-order.md).
 
 ## La page de détail du plan
@@ -63,7 +63,7 @@ Configurez vos équipes dans les paramètres du ministère avant de créer les p
 Chaque plan a des paramètres supplémentaires que vous pouvez configurer en cliquant sur l'icône édition (crayon) du plan. Ceux-ci incluent :
 
 - **Date limite de inscription** -- Le nombre d'heures avant le service lorsque les inscriptions de bénévoles se ferment. Entrez un nombre négatif pour garder les inscriptions ouvertes au-delà de l'heure de début du service.
-- **Afficher les noms des bénévoles sur la page d'inscription** -- Lorsque coché, les bénévoles peuvent voir qui d'autre est déjà inscrit pour chaque position.
+- **Afficher les noms des bénévoles sur la page d'inscription** -- Lorsque coché, les bénévoles connectés peuvent voir qui d'autre est déjà inscrit pour chaque position sur la page d'inscription de B1.church. Les noms ne sont jamais affichés aux visiteurs qui ne sont pas connectés.
 - **Crayon** -- Masque les assignations aux bénévoles jusqu'à ce que vous soyez prêt à publier le calendrier.
 - **Planifier automatiquement un remplacement quand un bénévole décline** -- Lorsque coché, si un bénévole assigné décline sa position, B1 contactera automatiquement la prochaine personne disponible sur la liste d'équipe et demandera si elle peut servir. Cela continue dans la liste jusqu'à ce que quelqu'un accepte, gardant vos positions remplies sans suivi manuel.
 

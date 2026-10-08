@@ -57,7 +57,7 @@ Verwenden Sie für beste Ergebnisse ein Logo mit transparentem Hintergrund im PN
 
 Wählen Sie, mit welchem Tag Ihre Kalender beginnen. Die **First Day of Week**-Dropdown im Abschnitt Church Info ist standardmäßig auf **Sunday** eingestellt, kann aber auf jeden beliebigen Tag eingestellt werden. Nach der Änderung wird sie in Calendar-Gittern in B1 Admin und im B1.church-Mitgliederportal berücksichtigt – Gruppenkalender, kuratierte Kalender und der Event-Editor layouten Wochen alle ab dem Tag, den Sie wählen.
 
-## Region (Datumsformat)
+## Region (Datums- und Telefonformat)
 
 Die **Region**-Einstellung steuert, wie Daten und Uhrzeiten in B1 geschrieben werden. Standardmäßig verwenden Daten das Format der Vereinigten Staaten (z. B. "Sep 28, 2026" und "9/28/2026"). Kirchen außerhalb der USA können zu ihrem eigenen Format wechseln – zum Beispiel zeigt die Auswahl von English (United Kingdom) stattdessen "28 Sept 2026" und "28/09/2026".
 
@@ -65,7 +65,20 @@ Die **Region**-Einstellung steuert, wie Daten und Uhrzeiten in B1 geschrieben we
 2. Wählen Sie Ihre Region aus der **Region**-Dropdown aus. Jede Option zeigt ein Beispieldatum, damit Sie genau sehen können, wie Daten aussehen werden.
 3. Klicken Sie auf **Save**.
 
-Die Region-Karte zeigt dann Ihre ausgewählte Region und ein Beispiel des **Date format**.
+Die Region-Karte zeigt dann Ihre ausgewählte Region, ein Beispiel des **Date format** und das Format Ihrer **Phone numbers**.
+
+### Telefonnummernformat
+
+Die gleiche Region-Karte enthält eine Einstellung **Phone numbers**, die steuert, wie Telefonnummern im Datensatz einer Person eingegeben werden:
+
+- **International (with country code)** -- die Standardeinstellung. Telefonfelder zeigen eine Länderflaggen-Auswahl und speichern Nummern mit der Landesvorwahl (zum Beispiel +1 918 555 1234).
+- **Local (as typed)** -- Telefonfelder werden zu einfachen Textfeldern und speichern Nummern genau so, wie Sie sie eingeben, ohne hinzugefügte Landesvorwahl (zum Beispiel 0701 234 5678). Wählen Sie dies, wenn Ihre Kirche Nummern in einem lokalen Format schreibt und nicht möchte, dass B1 eine Landesvorwahl hinzufügt.
+
+Wenn **Local** ausgewählt ist, zeigt die Region-Karte neben Ihrer Region zusätzlich „Local phone numbers“ an.
+
+:::tip
+Textnachrichten funktionieren am besten, wenn Nummern die Landesvorwahl enthalten. Wenn Sie Textnachrichten aus B1 versenden, behalten Sie das Format **International** bei, oder stellen Sie sicher, dass Nummern, die Sie im Local-Modus eingeben, die Landesvorwahl enthalten.
+:::
 
 Ihre Region gilt für Daten und Uhrzeiten in B1 Admin und auf Ihrer B1.church-Website und Ihrem Mitgliederportal, einschließlich Predigten, Blog-Beiträgen, Gruppenkalendern und Dienst-Plänen, damit Mitglieder Daten im gleichen Format wie Ihre Mitarbeiter sehen.
 

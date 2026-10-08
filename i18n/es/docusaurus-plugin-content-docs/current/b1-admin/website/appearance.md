@@ -85,7 +85,7 @@ Los widgets del sitio aparecen en cada página de tu sitio, flotando sobre el co
 El panel **Redirects & Analytics** en Style Settings contiene dos configuraciones no relacionadas pero comúnmente necesarias:
 
 - **Analytics** -- Agrega tu **Google Analytics 4 Measurement ID** para rastrear el tráfico de visitantes en tu sitio web.
-- **Redirects** -- Mapea una ruta de URL antigua a una nueva, para que los enlaces a una página que moviste o renombraste sigan funcionando en lugar de mostrar 404. Ingresa la ruta **From** antigua y la ruta **To** nueva, luego haz clic en **Save**.
+- **Redirects** -- Mapea una ruta de URL antigua a una nueva, para que los enlaces a una página que moviste o renombraste sigan funcionando en lugar de mostrar 404. Ingresa la ruta **From** antigua y la ruta **To** nueva, luego haz clic en **Save**. Un redireccionamiento también tiene prioridad sobre las páginas integradas de B1 (`/sermons`, `/stream`, `/donate`, `/bible` y `/votd`), por lo que puedes enviar esa dirección a otro lugar (por ejemplo, a tu propia página de sermones o a un canal de YouTube). No reemplaza una página que hayas creado tú mismo en la misma dirección. Elimina primero esa página si quieres que se aplique el redireccionamiento.
 
 ## CSS y JavaScript Personalizados
 

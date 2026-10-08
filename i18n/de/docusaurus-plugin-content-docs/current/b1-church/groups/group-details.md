@@ -41,7 +41,7 @@ Die verfügbaren Reiter sind:
 - **Nachrichten** -- Ein Bereich für Gruppenmitglieder zum Posten von Nachrichten und zur Interaktion miteinander. Wird nur Mitgliedern angezeigt und nur, wenn Ihre Kirche den Gruppen-Chat für diese Gruppe aktiviert hat. Weitere Informationen finden Sie unter [Gruppengespräche](./conversations.md).
 - **Mitglieder** -- Eine Liste aller Mitglieder in der Gruppe mit ihrem Foto und Namen. Sie können auf den Namen eines Mitglieds klicken, um sein Profil im [Mitgliedsverzeichnis](../community/member-directory.md) anzuzeigen.
 - **Anwesenheit** -- Sichtbar nur für Gruppenleiter (und Personal mit Anwesenheitsberechtigung). Ermöglicht die Verfolgung, wer an Gruppentreffen teilgenommen hat.
-- **Events** -- Der Kalender der Gruppe mit Treffen und Events. Sie können bevorstehende und frühere Events durchsuchen.
+- **Events** -- Der Kalender der Gruppe mit Treffen und Events. Mit den Pfeilen wechseln Sie zwischen den Monaten. Zwei Schaltflächen unter dem Monatsnamen wechseln die Ansicht: Die **Monatsansicht** (das Kalendersymbol) zeigt ein Kalenderraster, in dem Sie auf einen Tag tippen, um dessen Events zu sehen, und die **Listenansicht** (das Listensymbol) zeigt die Events des Monats in zeitlicher Reihenfolge, nach Tagen gruppiert. Wenn Sie den aktuellen Monat ansehen, beginnt die Liste heute und zeigt daher nur, was noch bevorsteht.
 - **Ressourcen** -- Freigegebene Dateien und Links, die für die Gruppe gepostet wurden. Sie können hochgeladene Dateien herunterladen oder auf verknüpfte Ressourcen zugreifen.
 
 ## Leiter-Funktionen

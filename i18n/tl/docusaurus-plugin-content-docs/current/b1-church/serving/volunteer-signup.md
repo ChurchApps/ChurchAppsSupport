@@ -29,6 +29,7 @@ Ang mga posisyon ay nakagrupo ayon sa kategorya (halimbawa, "Band", "Hospitality
 - **Position name** -- Ang tungkulin na iyong papupunan (hal., "Drummer", "Greeter", "Coffee Server").
 - **Description** -- Mga detalye tungkol sa tungkulin, kung itinayong ng administrator.
 - **Available spots** -- Isang progress bar na nagpapakita kung gaano karaming mga slot ay napuno at gaano karaming nananatili.
+- **Who has signed up** -- Kung binuksan ng simbahan ninyo ang **Show volunteer names on signup page** para sa plano, ililista ng linyang "Signed up:" ang mga pangalan ng mga taong naglilingkod na sa posisyong iyon. Ipinapakita lamang ang mga pangalan kapag naka-sign in kayo.
 
 ## Pag-sign Up
 

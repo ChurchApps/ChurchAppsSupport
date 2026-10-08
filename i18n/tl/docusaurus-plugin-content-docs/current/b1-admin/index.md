@@ -36,16 +36,16 @@ Ang bawat seksyon, kasama ang Sermons, Calendars, Mobile, at Settings, ay nasa [
 ## Mga Pangunahing Tampok
 
 - **[People](./people/)** - Pamahalaan ang direktoryo ng inyong simbahan, magdagdag ng mga miyembro, mag-bulk edit ng datos, subaybayan ang mga sambahayan
-- **[Groups](./groups/)** - Lumikha at mag-ayos ng mga grupo sa simbahan na may mga kahilingang sumali, pamamahala ng miyembro, group email, at personalized na group text
+- **[Groups](./groups/)** - Lumikha at mag-ayos ng mga grupo sa simbahan na may mga kahilingang sumali, pamamahala ng miyembro, group email, personalized na group text, at mga napi-print na contact roster
 - **[Attendance](./attendance/)** - Mag-set up ng mga campus at oras ng serbisyo, subaybayan ang named attendance gamit ang mga napi-print na class roll sheet, tingnan kung aling mga klase ang kailangan pang lagyan ng attendance, at itala ang simpleng headcount na may mga trend report
-- **[Donations](./donations/)** - I-record ang mga handog sa iba't ibang currency, pamahalaan ang mga pondo, mag-print ng mga batch na may subtotal ng bawat pondo, gumawa ng mga statement
+- **[Donations](./donations/)** - I-record ang mga handog sa iba't ibang currency, pamahalaan ang mga pondo, mag-print ng mga batch (isa-isa o bawat batch sa isang saklaw ng petsa) na may subtotal ng bawat pondo, gumawa ng mga statement
 - **[Serving](./serving/)** - I-coordinate ang mga boluntaryo, gumawa ng mga plano ng serbisyo, pamahalaan ang mga gawain, at gabayan ang mga tao sa mga hakbang-hakbang na workflow na kayang awtomatikong magpadala ng mga email at text
 - **[Forms](./forms/)** - Gumawa ng mga custom na form para sa mga rehistrasyon at pangangalap ng datos
 - **[Reports](./reports/)** - Tingnan ang mga report ng kaarawan, attendance, at donasyon
 - **[Website](./website/)** - Buuin at pamahalaan ang website ng inyong simbahan na may mga custom na estilo ng nabigasyon, o i-off ang pampublikong site at iwanan lamang ang member portal
 - **[Sermons](./sermons/)** - Pamahalaan ang inyong library ng mga sermon, live streaming, at awtomatikong podcast feed
 - **[Calendars](./calendars/)** - Gumawa ng mga piniling kalendaryo, pamahalaan ang pag-book ng mga silid/kagamitan, at tingnan ang availability
-- **[Settings](./settings/)** - I-configure ang impormasyon ng simbahan, rehiyon at format ng petsa, texting, mga tungkulin, mga pahintulot, at custom na field ng tao
+- **[Settings](./settings/)** - I-configure ang impormasyon ng simbahan, rehiyon, format ng petsa at numero ng telepono, texting, mga tungkulin, mga pahintulot, at custom na field ng tao
 
 :::info
 I-click ang icon na tandang pananong sa kanang itaas ng anumang pahina para mabilis na makapunta sa tulong at dokumentasyon.

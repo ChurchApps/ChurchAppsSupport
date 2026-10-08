@@ -51,6 +51,10 @@ Once your curated calendar is set up, you can share it in several ways:
 When group leaders add new events to their [groups](../groups/creating-groups.md), those events automatically appear in your curated calendar. You do not need to manually update the curated calendar each time a new event is added.
 :::
 
+:::note Private events
+Only **public** events appear on the curated calendar on your website and in its ICS subscription. In B1 Admin, staff who can edit content also see the group's **private** events on the curated calendar, so you can check the full schedule while you put the calendar together.
+:::
+
 ## Next Steps
 
 - [Creating Calendars](creating-calendars) -- Learn the basics of calendar creation

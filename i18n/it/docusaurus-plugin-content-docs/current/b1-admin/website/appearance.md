@@ -85,7 +85,7 @@ I widget del sito compaiono su ogni pagina del tuo sito, fluttuando sopra il con
 Il pannello **Reindirizzamenti e Analitiche** nelle Impostazioni Stile contiene due impostazioni non correlate ma comunemente necessarie:
 
 - **Analitiche** -- Aggiungi il tuo **ID Misura Google Analytics 4** per tracciare il traffico dei visitatori sul tuo sito web.
-- **Reindirizzamenti** -- Mappa un vecchio percorso URL a uno nuovo, in modo che i link a una pagina che hai spostato o rinominato continuino a funzionare invece di 404ing. Inserisci il vecchio percorso **Da** e il nuovo percorso **A**, quindi fai clic su **Salva**.
+- **Reindirizzamenti** -- Mappa un vecchio percorso URL a uno nuovo, in modo che i link a una pagina che hai spostato o rinominato continuino a funzionare invece di 404ing. Inserisci il vecchio percorso **Da** e il nuovo percorso **A**, quindi fai clic su **Salva**. Un reindirizzamento ha anche la priorità sulle pagine integrate di B1 (`/sermons`, `/stream`, `/donate`, `/bible` e `/votd`), quindi puoi inviare quell'indirizzo altrove (ad esempio, alla tua pagina dei sermoni o a un canale YouTube). Non sostituisce una pagina che hai creato tu allo stesso indirizzo. Elimina prima quella pagina se vuoi che il reindirizzamento venga applicato.
 
 ## CSS e JavaScript Personalizzati
 

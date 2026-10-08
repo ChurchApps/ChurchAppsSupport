@@ -108,9 +108,18 @@ To download the group member list as a file:
 1. From the group detail page, click the **download icon**.
 2. A CSV file containing the group's member information will download to your computer.
 
-To print a sign-in sheet for a class instead, use **Print Roll Sheet** -- see [Printing a Roll Sheet](../attendance/recording-attendance.md#printing-a-roll-sheet).
-
 A CSV export is useful for importing data into other tools, or keeping offline records. For more export options, see [Exporting Data](../people/exporting-data.md).
+
+## Printing the Member List
+
+Click the **Print Roll Sheet** (printer) icon above the member list and choose a layout. The page opens in a new tab and your browser's print dialog appears automatically.
+
+- **Attendance Sheet** -- an undated class list with **Present** and **Absent** boxes for teachers to mark by hand. See [Printing a Roll Sheet](../attendance/recording-attendance.md#printing-a-roll-sheet).
+- **Contact Roster** -- a contact list for the group, dated today and headed with your church's name and the group name. Each member has a row with their **Name**, **Phone**, **Email**, and **Address**. Leaders are listed first and marked **Leader**, then everyone else by last name. The phone shown is the member's mobile number, or their home or work number if there is no mobile. Contact details are left blank for anyone who has opted out.
+
+:::warning
+A contact roster contains members' personal contact information. Share printed copies only with the group's leaders and others who need them.
+:::
 
 ## Sending Push Notifications to Group Members
 

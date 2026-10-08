@@ -36,16 +36,16 @@ Alle deler, inkludert Prekener, Kalendere, Mobil og Innstillinger, finner du i [
 ## Viktige funksjoner
 
 - **[Personer](./people/)** - Administrer menighetsregisteret, legg til medlemmer, rediger data i bulk og hold oversikt over husstander
-- **[Grupper](./groups/)** - Opprett og organiser menighetens grupper med forespørsler om å bli med, medlemsadministrasjon, gruppe-e-post og personlige gruppetekstmeldinger
+- **[Grupper](./groups/)** - Opprett og organiser menighetens grupper med forespørsler om å bli med, medlemsadministrasjon, gruppe-e-post, personlige gruppetekstmeldinger og utskrivbare kontaktlister
 - **[Oppmøte](./attendance/)** - Sett opp avdelinger og samlingstider, følg navngitt oppmøte med utskrivbare klasselister, se hvilke klasser som fortsatt mangler registrert oppmøte, og før enkle opptellinger med utviklingsrapporter
-- **[Gaver](./donations/)** - Registrer gaver i flere valutaer, administrer fond, skriv ut gavebunter med delsummer per fond og lag giveroppgaver
+- **[Gaver](./donations/)** - Registrer gaver i flere valutaer, administrer fond, skriv ut gavebunter (én om gangen eller alle gavebunter i et datointervall) med delsummer per fond og lag giveroppgaver
 - **[Tjeneste](./serving/)** - Koordiner frivillige, lag gudstjenesteplaner, administrer oppgaver og led folk gjennom trinnvise arbeidsflyter som kan sende e-post og tekstmeldinger automatisk
 - **[Skjemaer](./forms/)** - Bygg egendefinerte skjemaer for påmeldinger og datainnsamling
 - **[Rapporter](./reports/)** - Se rapporter om bursdager, oppmøte og gaver
 - **[Nettsted](./website/)** - Bygg og administrer menighetens nettsted med egendefinerte navigasjonsstiler, eller slå av det offentlige nettstedet og behold bare medlemsportalen
 - **[Prekener](./sermons/)** - Administrer prekenbiblioteket, direktesendinger og en automatisk podkastkanal
 - **[Kalendere](./calendars/)** - Lag kuraterte kalendere, administrer booking av rom og ressurser, og se tilgjengelighet
-- **[Innstillinger](./settings/)** - Konfigurer menighetsinformasjon, region og datoformat, tekstmeldinger, roller, tillatelser og egendefinerte personfelt
+- **[Innstillinger](./settings/)** - Konfigurer menighetsinformasjon, region, dato- og telefonnummerformat, tekstmeldinger, roller, tillatelser og egendefinerte personfelt
 
 :::info
 Klikk på spørsmålstegnet øverst til høyre på en hvilken som helst side for rask tilgang til hjelp og dokumentasjon.

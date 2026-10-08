@@ -57,7 +57,7 @@ Para sa pinakamagandang resulta, gumamit ng logo na may transparent na backgroun
 
 Piliin kung anong araw nagsisimula ang iyong mga kalendaryo. Ang dropdown na **First Day of Week** sa seksyong Church Info ay naka-default sa **Sunday**, pero maaaring itakda sa anumang araw. Kapag binago, susundin ito sa mga calendar grid sa B1 Admin at sa B1.church member portal -- ang mga kalendaryo ng grupo, curated na kalendaryo, at event editor ay pawang magsisimula ng linggo sa araw na pinili mo.
 
-## Rehiyon (Format ng Petsa)
+## Rehiyon (Format ng Petsa at Telepono)
 
 Kinokontrol ng setting na **Region** kung paano isinusulat ang mga petsa at oras sa buong B1. Bilang default, gumagamit ang mga petsa ng format ng Estados Unidos (halimbawa, "Sep 28, 2026" at "9/28/2026"). Ang mga simbahang nasa labas ng US ay maaaring lumipat sa sarili nilang format -- halimbawa, kapag pinili ang English (United Kingdom), ipapakita ang "28 Sept 2026" at "28/09/2026".
 
@@ -65,7 +65,20 @@ Kinokontrol ng setting na **Region** kung paano isinusulat ang mga petsa at oras
 2. Piliin ang iyong rehiyon mula sa dropdown na **Region**. Ang bawat opsyon ay may sample na petsa para makita mo nang eksakto kung paano lalabas ang mga petsa.
 3. I-click ang **Save**.
 
-Ipapakita na ng card na Region ang napili mong rehiyon at isang sample ng **Date format**.
+Ipapakita na ng card na Region ang napili mong rehiyon, isang sample ng **Date format**, at ang iyong format ng **Phone numbers**.
+
+### Format ng Numero ng Telepono
+
+May setting na **Phone numbers** ang parehong Region card na kumokontrol kung paano inilalagay ang mga numero ng telepono sa record ng isang tao:
+
+- **International (with country code)** -- ang default. Ang mga phone field ay may country flag picker at sine-save ang mga numero kasama ang country code (halimbawa, +1 918 555 1234).
+- **Local (as typed)** -- nagiging simpleng text box ang mga phone field at sine-save ang mga numero nang eksakto sa pagkaka-type mo, nang walang idinaragdag na country code (halimbawa, 0701 234 5678). Piliin ito kung lokal na format ang gamit ng simbahan mo sa pagsulat ng mga numero at ayaw mong magdagdag ang B1 ng country code.
+
+Kapag napili ang **Local**, ipinapakita rin ng Region card ang "Local phone numbers" sa tabi ng iyong rehiyon.
+
+:::tip
+Pinakamahusay gumana ang texting kapag may country code ang mga numero. Kung nagpapadala ka ng mga text mula sa B1, panatilihin ang **International** na format, o tiyaking may country code ang mga numerong tina-type mo sa Local mode.
+:::
 
 Naaangkop ang iyong rehiyon sa mga petsa at oras sa buong B1 Admin at sa iyong B1.church website at member portal, kasama ang mga sermon, blog post, kalendaryo ng grupo, at serving plan, para makita ng mga miyembro ang mga petsa sa parehong format na nakikita ng iyong staff.
 

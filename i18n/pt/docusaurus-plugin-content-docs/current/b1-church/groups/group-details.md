@@ -41,7 +41,7 @@ As abas disponíveis são:
 - **Mensagens** -- Um espaço para os membros do grupo postarem mensagens e interagirem uns com os outros. Mostrado apenas para membros e apenas se sua igreja tiver ativado o bate-papo em grupo para este grupo. Veja [Conversas em Grupo](./conversations.md) para mais detalhes.
 - **Membros** -- Uma lista de todos os membros do grupo, mostrando sua foto e nome. Você pode clicar no nome de um membro para visitar seu perfil no [diretório de membros](../community/member-directory.md).
 - **Presença** -- Visível apenas para líderes do grupo (e funcionários com permissão de presença). Permite rastreamento de quem frequentou as reuniões do grupo.
-- **Eventos** -- O calendário do grupo mostrando reuniões e eventos. Você pode navegar entre eventos futuros e passados.
+- **Eventos** -- O calendário do grupo mostrando reuniões e eventos. Use as setas para mover entre os meses. Dois botões abaixo do nome do mês alternam as visualizações: **Visualização mensal** (o ícone de calendário) mostra uma grade de calendário onde você toca em um dia para ver seus eventos, e **Visualização em lista** (o ícone de lista) mostra os eventos do mês em ordem de data, agrupados por dia. Ao olhar o mês atual, a lista começa a partir de hoje, então mostra apenas o que ainda está por vir.
 - **Recursos** -- Arquivos compartilhados e links que foram postados para o grupo. Você pode baixar arquivos enviados ou abrir recursos vinculados.
 
 ## Capacidades de Líder

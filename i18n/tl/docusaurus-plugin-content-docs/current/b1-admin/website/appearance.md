@@ -85,7 +85,7 @@ Lumalabas ang mga site widget sa bawat pahina ng iyong site, na nakalutang sa ib
 Ang panel na **Redirects & Analytics** sa Style Settings ay may dalawang magkaibang setting na madalas kailanganin:
 
 - **Analytics** -- Idagdag ang iyong **Google Analytics 4 Measurement ID** para masubaybayan ang trapiko ng mga bisita sa iyong website.
-- **Redirects** -- I-map ang lumang URL path sa bago, para patuloy na gumana ang mga link sa pahinang inilipat o pinalitan ng pangalan at hindi mauwi sa 404. Ilagay ang lumang **From** path at ang bagong **To** path, pagkatapos ay i-click ang **Save**.
+- **Redirects** -- I-map ang lumang URL path sa bago, para patuloy na gumana ang mga link sa pahinang inilipat o pinalitan ng pangalan at hindi mauwi sa 404. Ilagay ang lumang **From** path at ang bagong **To** path, pagkatapos ay i-click ang **Save**. Mas inuuna rin ng redirect ang mga built-in na pahina ng B1 (`/sermons`, `/stream`, `/donate`, `/bible`, at `/votd`), kaya maaari mong ipadala sa ibang lugar ang address na iyon (halimbawa, sa sarili mong pahina ng mga sermon o sa isang YouTube channel). Hindi nito pinapawalang-bisa ang pahinang ikaw mismo ang gumawa sa parehong address. Burahin muna ang pahinang iyon kung gusto mong umiral ang redirect.
 
 ## Custom CSS at JavaScript
 

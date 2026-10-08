@@ -29,6 +29,7 @@ Las posiciones están agrupadas por categoría (por ejemplo, "Banda", "Hospitali
 - **Nombre de la posición** -- El rol que llenarías (p. ej., "Baterista", "Anfitrión", "Servidor de Café").
 - **Descripción** -- Detalles sobre el rol, si el administrador los proporcionó.
 - **Lugares disponibles** -- Una barra de progreso mostrando cuántos espacios están llenos y cuántos quedan.
+- **Quién se ha inscrito** -- Si tu iglesia ha activado **Mostrar nombres de voluntarios en la página de inscripción** para el plan, una línea "Inscritos:" enumera los nombres de las personas que ya sirven en esa posición. Los nombres solo se muestran cuando has iniciado sesión.
 
 ## Inscribiéndose
 

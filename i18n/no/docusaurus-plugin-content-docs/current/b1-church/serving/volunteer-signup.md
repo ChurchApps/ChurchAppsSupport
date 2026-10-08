@@ -29,6 +29,7 @@ Stillingene er gruppert etter kategori (for eksempel "Band", "Gjestfrihet", "Bar
 - **Stillingsnavnet** -- Rollen du ville fylle (f.eks. "Trommelslager", "Hilser", "Kaffe Server").
 - **Beskrivelse** -- Detaljer om rollen, hvis gitt av administratoren.
 - **Tilgjengelige plasser** -- En progresjonslinje som viser hvor mange plasser som er fylt og hvor mange som gjenstår.
+- **Hvem som har meldt seg på** -- Hvis menigheten din har slått på **Vis navn på frivillige på påmeldingssiden** for planen, viser en linje med «Påmeldt:» navnene på dem som allerede tjenestegjør i den stillingen. Navn vises bare når du er innlogget.
 
 ## Melding Av Seg På
 

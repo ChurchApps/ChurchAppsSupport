@@ -33,7 +33,7 @@ Full admin access is not required to manage plans. Anyone who is a member of a m
 
 1. From the plan type view, click **New Plan**.
 2. Give the plan a name or use the date as the name. Select the **date** for the service.
-3. If you would like to copy from a previous plan, choose positions only or positions and assignments. If you do not want to copy, just choose nothing. You can also copy the order of service from my previous plan.
+3. If you would like to copy from a previous plan, choose positions only or positions and assignments. If you do not want to copy, just choose nothing. You can also copy the order of service from the previous plan. When you copy from a previous plan, the new plan also keeps that plan's **Notes** and **Signup Deadline**, so you don't have to re-enter them each week. You can change either one in the new plan's settings.
 4. Save the plan. You can now begin assigning team members and building out the [service order](./service-order.md).
 
 ## The Plan Detail Page
@@ -63,7 +63,7 @@ Set up your teams in the ministry settings before creating plans. This way, you 
 Each plan has additional settings you can configure by clicking the edit (pencil) icon on the plan. These include:
 
 - **Signup Deadline** — the number of hours before the service when volunteer signups close. Enter a negative number to keep signups open past the service start time.
-- **Show volunteer names on signup page** — when checked, volunteers can see who else is already signed up for each position.
+- **Show volunteer names on signup page** — when checked, signed-in volunteers can see who else is already signed up for each position on the B1.church signup page. Names are never shown to visitors who aren't signed in.
 - **Penciled in** — hides assignments from volunteers until you are ready to publish the schedule.
 - **Automatically schedule a replacement when a volunteer declines** — when checked, if an assigned volunteer declines their position B1 will automatically contact the next available person on the team roster and ask if they can serve. This continues down the list until someone accepts, keeping your positions filled without manual follow-up.
 

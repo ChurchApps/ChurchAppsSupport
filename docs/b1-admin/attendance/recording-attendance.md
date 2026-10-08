@@ -80,7 +80,7 @@ A roll sheet is a printable class list that teachers can mark by hand and give b
 
 - **From a session** -- Click the **Print Roll Sheet** (printer) icon at the top of the session's attendance list. The sheet is dated with the session's date.
 - **All classes for a service** -- If the session has a service time, click **Print All Classes** to print one sheet per class assigned to that service time. Each class prints on its own page.
-- **From the Members tab** -- Click the **Print Roll Sheet** icon above the group's member list to print an undated sheet.
+- **From the Members tab** -- Click the **Print Roll Sheet** icon above the group's member list and choose **Attendance Sheet** to print an undated sheet. The same menu has a **Contact Roster** layout with each member's phone, email, and address -- see [Printing the Member List](../groups/group-members.md#printing-the-member-list).
 
 The sheet opens in a new tab and your browser's print dialog appears automatically.
 

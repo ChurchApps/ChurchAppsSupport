@@ -85,7 +85,7 @@ Website-Widgets werden auf jeder Seite Ihrer Website angezeigt und schweben übe
 Das **Redirects & Analytics**-Panel im Style Settings enthält zwei nicht zusammenhängende, aber häufig benötigte Einstellungen:
 
 - **Analytics** -- Fügen Sie Ihre **Google Analytics 4 Measurement ID** hinzu, um den Besucherverkehr auf Ihrer Website zu verfolgen.
-- **Redirects** -- Ordnen Sie einen alten URL-Pfad einem neuen zu, damit Links zu einer Seite, die Sie verschoben oder umbenannt haben, funktionieren statt 404 anzuzeigen. Geben Sie den alten **From**-Pfad und den neuen **To**-Pfad ein, und klicken Sie auf **Save**.
+- **Redirects** -- Ordnen Sie einen alten URL-Pfad einem neuen zu, damit Links zu einer Seite, die Sie verschoben oder umbenannt haben, funktionieren statt 404 anzuzeigen. Geben Sie den alten **From**-Pfad und den neuen **To**-Pfad ein, und klicken Sie auf **Save**. Eine Weiterleitung hat zudem Vorrang vor den integrierten Seiten von B1 (`/sermons`, `/stream`, `/donate`, `/bible` und `/votd`), sodass Sie diese Adresse woandershin umleiten können (zum Beispiel zu Ihrer eigenen Predigtseite oder einem YouTube-Kanal). Sie überschreibt keine Seite, die Sie selbst unter derselben Adresse erstellt haben. Löschen Sie zuerst diese Seite, wenn die Weiterleitung greifen soll.
 
 ## Benutzerdefiniertes CSS und JavaScript
 

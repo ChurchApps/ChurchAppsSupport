@@ -41,7 +41,7 @@ Le schede disponibili sono:
 - **Messaggi** -- Uno spazio in cui i membri del gruppo possono pubblicare messaggi e interagire tra loro. Visualizzato solo ai membri e solo se la tua chiesa ha attivato la chat di gruppo per questo gruppo. Vedi [Conversazioni di Gruppo](./conversations.md) per maggiori dettagli.
 - **Membri** -- Un elenco di tutti i membri del gruppo, mostrando la loro foto e il nome. Puoi fare clic sul nome di un membro per visitare il suo profilo nella [directory dei membri](../community/member-directory.md).
 - **Presenze** -- Visibile solo ai leader del gruppo (e al personale con permesso di presenze). Consente il monitoraggio di chi ha partecipato alle riunioni del gruppo.
-- **Eventi** -- Il calendario del gruppo che mostra riunioni ed eventi. Puoi sfogliare eventi futuri e passati.
+- **Eventi** -- Il calendario del gruppo che mostra riunioni ed eventi. Usa le frecce per spostarti tra i mesi. Due pulsanti sotto il nome del mese cambiano la vista: la **Vista mensile** (l'icona del calendario) mostra una griglia del calendario in cui tocchi un giorno per vedere i suoi eventi, e la **Vista elenco** (l'icona dell'elenco) mostra gli eventi del mese in ordine di data, raggruppati per giorno. Quando guardi il mese corrente, l'elenco parte da oggi, quindi mostra solo ciò che deve ancora arrivare.
 - **Risorse** -- File e link condivisi che sono stati pubblicati per il gruppo. Puoi scaricare file caricati o aprire risorse collegate.
 
 ## Capacità dei Leader

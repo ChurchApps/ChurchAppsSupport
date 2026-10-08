@@ -29,6 +29,7 @@ Positionen sind nach Kategorien gruppiert (zum Beispiel „Band", „Hospitality
 - **Positionsname** – Die Rolle, die Sie ausfüllen würden (z. B. „Drummer", „Greeter", „Coffee Server").
 - **Beschreibung** – Details über die Rolle, falls vom Administrator bereitgestellt.
 - **Verfügbare Plätze** – Eine Fortschrittsleiste, die zeigt, wie viele Plätze belegt sind und wie viele verbleiben.
+- **Wer sich angemeldet hat** – Wenn Ihre Kirche für den Plan **Freiwilligennamen auf der Anmeldeseite anzeigen** aktiviert hat, listet eine Zeile „Angemeldet:“ die Namen der Personen auf, die bereits in dieser Position dienen. Namen werden nur angezeigt, wenn Sie angemeldet sind.
 
 ## Anmeldung
 

@@ -85,7 +85,7 @@ Site widgets appear on every page of your site, floating above the page content:
 The **Redirects & Analytics** panel in Style Settings holds two unrelated but commonly-needed settings:
 
 - **Analytics** -- Add your **Google Analytics 4 Measurement ID** to track visitor traffic on your website.
-- **Redirects** -- Map an old URL path to a new one, so links to a page you moved or renamed keep working instead of 404ing. Enter the old **From** path and the new **To** path, then click **Save**.
+- **Redirects** -- Map an old URL path to a new one, so links to a page you moved or renamed keep working instead of 404ing. Enter the old **From** path and the new **To** path, then click **Save**. A redirect also takes priority over B1's built-in pages (`/sermons`, `/stream`, `/donate`, `/bible`, and `/votd`), so you can send that address somewhere else (for example, to your own sermons page or a YouTube channel). It doesn't override a page you built yourself at the same address. Delete that page first if you want the redirect to apply.
 
 ## Custom CSS and JavaScript
 

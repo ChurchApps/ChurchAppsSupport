@@ -43,18 +43,24 @@ Den nye gavebunten vises i listen, klar til at du legger til donasjoner.
 - **Se donasjoner** -- klikk på navnet til en gavebunt for å åpne den og se alle enkeltdonasjonene den inneholder. Derfra kan du legge til, redigere eller fjerne donasjoner.
 - **Redigere gavebuntdetaljer** -- klikk på knappen **Rediger** på en gavebuntrad for å endre navn eller dato.
 - **Sortere** -- bruk kolonneoverskriftene til å sortere gavebuntene etter navn eller dato.
-- **Eksportere** -- klikk på **Eksporter til CSV** for å laste ned gavebuntlisten som et regneark.
+- **Eksportere** -- klikk på **Eksporter** for å laste ned gavebuntlisten som et regneark (CSV).
 
 ## Skrive ut en gavebunt
 
 Åpne en gavebunt og klikk på **Skriv ut**-ikonet (skriveren) øverst i donasjonslisten for å skrive ut en papirkopi til telleteamet eller til innskuddsdokumentasjonen. Utskriften inneholder:
 
-- Gavebuntens navn og dato
+- Menighetens navn, gavebuntens navn og gavebuntens dato
 - Alle donasjoner i gavebunten, med giverens navn, metode, notater, dato og beløp (refunderte gaver er overstreket og merket som refundert)
 - **Delsummer per fond** -- totalbeløpet gitt til hvert fond i gavebunten
 - **Gavebunttotal** -- det samlede beløpet for hele gavebunten
 
 Skriv ut-ikonet vises først når gavebunten har minst én donasjon.
+
+### Skrive ut flere gavebunter samtidig
+
+For å skrive ut alle gavebunter fra en periode i én operasjon -- for eksempel alle innskudd fra forrige måned -- klikker du på **Skriv ut**-ikonet (skriveren) i overskriften på listen **Gavebunter**, ved siden av **Eksporter**. Siden **Skriv ut gavebunter** åpnes med en **Startdato** og en **Sluttdato** som som standard dekker de siste 30 dagene. Endre en av datoene for å velge et annet tidsrom.
+
+Hver gavebunt med dato innenfor tidsrommet (inkludert start- og sluttdatoen) skrives ut i datorekkefølge, én gavebunt per side, med samme oppsett som utskriften av en enkelt gavebunt. Gavebunter uten donasjoner utelates, og hvis ingen av gavebuntene i tidsrommet har donasjoner, ser du teksten «No batches with donations in this date range.» Klikk på **Skriv ut** for å åpne utskriftsdialogen i nettleseren, eller på **Lukk** for å gå tilbake til gavebuntlisten.
 
 ## Eksportere en gavebunt til QuickBooks Online
 

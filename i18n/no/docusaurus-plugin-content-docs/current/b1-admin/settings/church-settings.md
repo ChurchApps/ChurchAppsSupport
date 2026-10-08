@@ -57,7 +57,7 @@ For best resultat bruker du en logo med gjennomsiktig bakgrunn i PNG-format. Da 
 
 Velg hvilken dag kalenderne dine starter på. Nedtrekksmenyen **Første dag i uken** i delen Kirkeinformasjon er som standard **søndag**, men kan settes til en hvilken som helst dag. Når den er endret, respekteres den i kalenderrutenett i B1 Admin og i medlemsportalen på B1.church -- gruppekalendere, kuraterte kalendere og hendelsesredigereren legger alle ut ukene med start på dagen du velger.
 
-## Region (datoformat)
+## Region (dato- og telefonformat)
 
 Innstillingen **Region** styrer hvordan datoer og klokkeslett skrives i hele B1. Som standard bruker datoer amerikansk format (for eksempel «Sep 28, 2026» og «9/28/2026»). Kirker utenfor USA kan bytte til sitt eget format -- for eksempel viser valget engelsk (Storbritannia) «28 Sept 2026» og «28/09/2026» i stedet.
 
@@ -65,7 +65,20 @@ Innstillingen **Region** styrer hvordan datoer og klokkeslett skrives i hele B1.
 2. Velg region i nedtrekksmenyen **Region**. Hvert alternativ viser en eksempeldato, slik at du ser nøyaktig hvordan datoene kommer til å se ut.
 3. Klikk på **Lagre**.
 
-Kortet Region viser deretter den valgte regionen og et eksempel på **Datoformat**.
+Kortet Region viser deretter den valgte regionen, et eksempel på **Datoformat** og formatet for **Telefonnumre**.
+
+### Format for telefonnumre
+
+Det samme Region-kortet har en innstilling for **Telefonnumre** som styrer hvordan telefonnumre skrives inn på en persons profil:
+
+- **Internasjonalt (med landskode)** -- standardvalget. Telefonfeltene viser en landsflagg-velger og lagrer numrene med landskode (for eksempel +1 918 555 1234).
+- **Lokalt (som skrevet)** -- telefonfeltene blir vanlige tekstfelt og lagrer numrene nøyaktig slik du skriver dem, uten at det legges til landskode (for eksempel 0701 234 5678). Velg dette hvis menigheten din skriver numre i et lokalt format og ikke vil at B1 skal legge til landskode.
+
+Når **Lokalt** er valgt, viser Region-kortet også «Lokale telefonnumre» ved siden av regionen din.
+
+:::tip
+Tekstmeldinger fungerer best når numrene inneholder landskode. Hvis du sender tekstmeldinger fra B1, bør du beholde formatet **Internasjonalt**, eller sørge for at numre du skriver inn i Lokalt-modus inneholder landskode.
+:::
 
 Regionen din gjelder for datoer og klokkeslett i hele B1 Admin og på B1.church-nettstedet og medlemsportalen din, inkludert prekener, blogginnlegg, gruppekalendere og tjenesteplaner, slik at medlemmene ser datoer i samme format som de ansatte.
 

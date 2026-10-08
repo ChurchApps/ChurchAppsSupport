@@ -24,8 +24,10 @@ Base path: `/doing/plans`
 | GET | `/types/:planTypeId` | JWT | — | Kunin ang mga plano ayon sa uri ng plano |
 | GET | `/presenter` | JWT | — | Kunin ang mga plano para sa susunod na 7 araw (presenter view) |
 | GET | `/public/current/:planTypeId` | Pampubliko | — | Kunin ang kasalukuyang plano para sa isang uri ng plano |
+| GET | `/public/signup/:churchId` | Pampubliko | — | Mga planong bukas para sa self-signup, bawat isa may mga posisyon nito para sa self-signup (kasama ang `filledCount` ng mga assignment na Accepted/Unconfirmed) at mga oras. Walang pangalan ng boluntaryo |
+| GET | `/signup/:planId/volunteers` | JWT | — | `[{ positionId, names }]` para sa mga posisyon ng plano para sa self-signup (mga display name ng mga naka-assign na Accepted/Unconfirmed). Nagbabalik ng `[]` maliban kung naka-on ang `showVolunteerNames` ng plano |
 | POST | `/` | JWT | — | Lumikha o mag-update ng mga plano (tumatanggap ng isang object o array) |
-| POST | `/copy/:id` | JWT | — | Kopyahin ang isang plano kasama ang mga posisyon, oras, takdang-aralin, at mga item ng service order. Kasama sa body ang `copyMode` ("none", "positions", "all") at `copyServiceOrder` (boolean) |
+| POST | `/copy/:id` | JWT | — | Kopyahin ang isang plano kasama ang mga posisyon, oras, takdang-aralin, at mga item ng service order. Kasama sa body ang `copyMode` ("none", "positions", "all") at `copyServiceOrder` (boolean). Ang `notes` at `signupDeadlineHours` ay dinadala mula sa pinagmulang plano maliban kung ibigay ang mga ito ng body |
 | POST | `/autofill/:id` | JWT | — | Awtomatikong punan ang mga takdang-aralin ng boluntaryo para sa isang plano. Body: `{ teams: [{ positionId, personIds }] }` |
 | DELETE | `/:id` | JWT | — | Burahin ang isang plano at lahat ng kaugnay na oras, takdang-aralin, posisyon, at mga item ng plano |
 

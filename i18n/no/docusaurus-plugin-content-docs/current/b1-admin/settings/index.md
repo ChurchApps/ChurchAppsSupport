@@ -14,7 +14,7 @@ I Innstillinger konfigurerer du kirkens konto, profilering og administrative val
 
 Innstillingsområdet er organisert i følgende underdeler:
 
-1. **Innstillinger** -- Konfigurer kirkens grunnleggende informasjon, profilering, underdomene, region (datoformat), tekstmeldingsleverandør og fillagring. Se [Kirkeinnstillinger](./church-settings.md) for detaljer. Hvis du vil bruke ditt eget domenenavn (f.eks. dinkirke.no), se [Eget domene](./custom-domain.md).
+1. **Innstillinger** -- Konfigurer kirkens grunnleggende informasjon, profilering, underdomene, region (dato- og telefonformat), tekstmeldingsleverandør og fillagring. Se [Kirkeinnstillinger](./church-settings.md) for detaljer. Hvis du vil bruke ditt eget domenenavn (f.eks. dinkirke.no), se [Eget domene](./custom-domain.md).
 2. **Menighetssteder** -- Legg til og administrer flere fysiske steder for kirken din. Når de er opprettet, vises menighetsstedene på personprofiler, i oppsett av oppmøte og i demografidashbordet. Nås som et kort på hovedsiden for Innstillinger i stedet for som et eget navigasjonspunkt. Se [Menighetssteder](./campuses.md) for detaljer.
 3. **Egendefinerte felt** -- Definer dine egne felt for å registrere opplysninger om personer (en dato, et tall, et ja/nei-svar eller en nedtrekksliste), fyll dem deretter inn på profiler og søk på dem. Nås også som et kort på hovedsiden for Innstillinger. Se [Egendefinerte felt](./custom-fields.md) for detaljer.
 4. **E-postmaler** -- Lagre gjenbrukbart e-postinnhold for manuell sending eller fra en arbeidsflyt. Se [E-postmaler](./email-templates.md) for detaljer.

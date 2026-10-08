@@ -41,7 +41,7 @@ The available tabs are:
 - **Messages** -- A space for group members to post messages and interact with each other. Only shown to members, and only if your church has turned on group chat for this group. See [Group Conversations](./conversations.md) for more details.
 - **Members** -- A list of all members in the group, showing their photo and name. You can click a member's name to visit their profile in the [member directory](../community/member-directory.md).
 - **Attendance** -- Visible to group leaders (and staff with attendance permission) only. Allows tracking of who attended group meetings.
-- **Events** -- The group's calendar showing meetings and events. You can browse upcoming and past events.
+- **Events** -- The group's calendar showing meetings and events. Use the arrows to move between months. Two buttons under the month name switch views: **Month view** (the calendar icon) shows a calendar grid where you tap a day to see its events, and **List view** (the list icon) shows the month's events in date order, grouped by day. When you are looking at the current month, the list starts from today, so it only shows what's still coming up.
 - **Resources** -- Shared files and links that have been posted for the group. You can download uploaded files or open linked resources.
 
 ## Leader Capabilities

@@ -41,7 +41,7 @@ Følgende faner er tilgjengelige:
 - **Meldinger** -- Et sted der gruppemedlemmer kan skrive meldinger og snakke med hverandre. Vises bare for medlemmer, og bare hvis menigheten din har slått på gruppechat for denne gruppen. Se [Gruppesamtaler](./conversations.md) for mer informasjon.
 - **Medlemmer** -- En liste over alle medlemmene i gruppen, med bilde og navn. Du kan klikke på et medlems navn for å gå til profilen i [medlemskatalogen](../community/member-directory.md).
 - **Oppmøte** -- Vises kun for gruppeledere (og ansatte med tillatelse til oppmøte). Gjør det mulig å holde oversikt over hvem som møtte opp på gruppemøtene.
-- **Hendelser** -- Gruppens kalender med møter og hendelser. Du kan bla gjennom kommende og tidligere hendelser.
+- **Hendelser** -- Gruppens kalender med møter og hendelser. Bruk pilene for å bytte mellom måneder. To knapper under månedsnavnet bytter visning: **Månedsvisning** (kalenderikonet) viser et kalenderrutenett der du trykker på en dag for å se hendelsene den dagen, og **Listevisning** (listeikonet) viser månedens hendelser i datorekkefølge, gruppert per dag. Når du ser på inneværende måned, starter listen fra i dag, slik at den bare viser det som fortsatt kommer.
 - **Ressurser** -- Delte filer og lenker som er lagt ut for gruppen. Du kan laste ned opplastede filer eller åpne lenkede ressurser.
 
 ## Lederens muligheter

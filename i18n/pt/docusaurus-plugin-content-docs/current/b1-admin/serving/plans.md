@@ -33,7 +33,7 @@ Acesso de administrador completo não é necessário para gerenciar planos. Qual
 
 1. Na visualização do tipo de plano, clique em **Novo Plano**.
 2. Dê ao plano um nome ou use a data como nome. Selecione a **data** para o serviço.
-3. Se você gostaria de copiar de um plano anterior, escolha apenas posições ou posições e atribuições. Se você não quer copiar, basta não escolher nada. Você também pode copiar a ordem de serviço do meu plano anterior.
+3. Se você gostaria de copiar de um plano anterior, escolha apenas posições ou posições e atribuições. Se você não quer copiar, basta não escolher nada. Você também pode copiar a ordem de serviço do plano anterior. Ao copiar de um plano anterior, o novo plano também mantém as **Notas** e o **Prazo de Inscrição** desse plano, para que você não precise digitá-los novamente toda semana. Você pode alterar qualquer um deles nas configurações do novo plano.
 4. Salve o plano. Você pode agora começar a atribuir membros da equipe e construir a [ordem de serviço](./service-order.md).
 
 ## A Página de Detalhes do Plano
@@ -63,7 +63,7 @@ Configure suas equipes nas configurações de ministério antes de criar planos.
 Cada plano tem configurações adicionais que você pode configurar clicando no ícone de edição (lápis) no plano. Estas incluem:
 
 - **Prazo de Inscrição** -- o número de horas antes do serviço quando as inscrições de voluntários fecham. Digite um número negativo para manter as inscrições abertas após o horário de início do serviço.
-- **Mostrar nomes de voluntários na página de inscrição** -- quando marcado, os voluntários podem ver quem mais já se inscreveu para cada posição.
+- **Mostrar nomes de voluntários na página de inscrição** -- quando marcado, os voluntários que entraram na conta podem ver quem mais já se inscreveu para cada posição na página de inscrição do B1.church. Os nomes nunca são mostrados a visitantes que não entraram na conta.
 - **Esboçado** -- oculta atribuições dos voluntários até você estar pronto para publicar o cronograma.
 - **Agendar automaticamente um substituto quando um voluntário recusa** -- quando marcado, se um voluntário atribuído recusar sua posição B1 entrará em contato automaticamente com a próxima pessoa disponível no escalão da equipe e perguntará se eles podem servir. Isso continua descendo a lista até que alguém aceite, mantendo suas posições preenchidas sem acompanhamento manual.
 

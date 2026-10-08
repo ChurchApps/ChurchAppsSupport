@@ -20,7 +20,7 @@ Les événements de groupe peuvent collecter des réponses pour que les leaders 
 
 ## Réponse à un Événement
 
-1. Ouvrez votre groupe dans le portail des membres et allez à sa vue **Événements** / calendrier.
+1. Ouvrez votre groupe dans le portail des membres et allez à son onglet **Événements**. En **vue Mois**, touchez un jour pour voir ses événements, ou passez à la **vue Liste** pour voir d'un coup tous les événements à venir de ce mois.
 2. Chaque carte d'événement à venir affiche **Allez-vous participer?** avec trois boutons : **Y vais**, **Peut-être**, et **Impossible**.
 3. Appuyez sur votre réponse. Votre choix se met en évidence, et chaque bouton affiche un comptage en direct du nombre de personnes qui ont donné cette réponse.
 4. Appuyez à nouveau sur votre réponse mise en évidence pour l'effacer, ou appuyez sur un bouton différent pour modifier votre réponse.

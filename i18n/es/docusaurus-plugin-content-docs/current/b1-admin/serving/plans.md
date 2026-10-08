@@ -33,7 +33,7 @@ El acceso de administrador completo no es necesario para gestionar planes. Cualq
 
 1. Desde la vista del tipo de plan, haz clic en **Nuevo Plan**.
 2. Dale un nombre al plan o usa la fecha como nombre. Selecciona la **fecha** para el servicio.
-3. Si te gustaría copiar desde un plan anterior, elige solo posiciones o posiciones y asignaciones. Si no quieres copiar, simplemente no elijas nada. También puedes copiar el orden del servicio de mi plan anterior.
+3. Si te gustaría copiar desde un plan anterior, elige solo posiciones o posiciones y asignaciones. Si no quieres copiar, simplemente no elijas nada. También puedes copiar el orden del servicio del plan anterior. Cuando copias de un plan anterior, el nuevo plan también conserva las **Notas** y la **Fecha límite de inscripción** de ese plan, para que no tengas que volver a ingresarlas cada semana. Puedes cambiar cualquiera de las dos en la configuración del nuevo plan.
 4. Guarda el plan. Ahora puedes comenzar a asignar miembros del equipo y construir el [orden del servicio](./service-order.md).
 
 ## La Página de Detalle del Plan
@@ -63,7 +63,7 @@ Configura tus equipos en la configuración del ministerio antes de crear planes.
 Cada plan tiene configuración adicional que puedes configurar haciendo clic en el icono editar (lápiz) en el plan. Estos incluyen:
 
 - **Fecha Límite de Inscripción** -- el número de horas antes del servicio cuando se cierran las inscripciones de voluntarios. Ingresa un número negativo para mantener las inscripciones abiertas después de la hora de inicio del servicio.
-- **Mostrar nombres de voluntarios en la página de inscripción** -- cuando está marcado, los voluntarios pueden ver quién más ya se ha inscrito para cada posición.
+- **Mostrar nombres de voluntarios en la página de inscripción** -- cuando está marcado, los voluntarios que han iniciado sesión pueden ver quién más ya se ha inscrito para cada posición en la página de inscripción de B1.church. Los nombres nunca se muestran a los visitantes que no han iniciado sesión.
 - **Anotado** -- oculta asignaciones a los voluntarios hasta que estés listo para publicar el horario.
 - **Programar automáticamente un reemplazo cuando un voluntario rechaza** -- cuando está marcado, si un voluntario asignado rechaza su posición, B1 contactará automáticamente a la siguiente persona disponible en la lista del equipo y preguntará si pueden servir. Esto continúa por la lista hasta que alguien acepte, manteniendo tus posiciones llenas sin seguimiento manual.
 

@@ -20,7 +20,7 @@ Gruppenereignisse können RSVPs sammeln, damit Leiter wissen, wer kommt. Im Kale
 
 ## Reagieren auf ein Ereignis
 
-1. Öffnen Sie Ihre Gruppe im Mitgliedsportal und gehen Sie zur Ansicht **Ereignisse** / Kalender.
+1. Öffnen Sie Ihre Gruppe im Mitgliedsportal und gehen Sie zum Reiter **Ereignisse**. Tippen Sie in der **Monatsansicht** auf einen Tag, um dessen Ereignisse zu sehen, oder wechseln Sie zur **Listenansicht**, um alle bevorstehenden Ereignisse dieses Monats auf einmal zu sehen.
 2. Jede bevorstehende Ereigniskarte zeigt **Werden Sie teilnehmen?** mit drei Knöpfen: **Gehen**, **Vielleicht** und **Kann nicht gehen**.
 3. Tippen Sie auf Ihre Antwort. Ihre Wahl wird hervorgehoben, und jeder Knopf zeigt eine Live-Anzahl, wie viele Menschen diese Antwort gegeben haben.
 4. Tippen Sie erneut auf Ihre hervorgehobene Antwort, um sie zu löschen, oder tippen Sie auf einen anderen Knopf, um Ihre Antwort zu ändern.

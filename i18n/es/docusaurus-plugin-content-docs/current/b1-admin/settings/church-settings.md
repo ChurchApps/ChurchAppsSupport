@@ -57,7 +57,7 @@ Para mejores resultados, usa un logo con fondo transparente en formato PNG. Esto
 
 Elige qué día comienzan tus calendarios. El menú desplegable **Primer día de la semana** en la sección Información de iglesia tiene como predeterminado **Domingo**, pero puede establecerse en cualquier día. Una vez cambiado, se respeta en todas las cuadrículas de calendario en B1 Admin y el portal de miembros B1.church: calendarios de grupos, calendarios curados y el editor de eventos se distribuyen semanas comenzando el día que elijas.
 
-## Región (formato de fecha)
+## Región (formato de fecha y de teléfono)
 
 La configuración **Región** controla cómo se escriben las fechas y horas en todo B1. Por defecto, las fechas usan el formato de Estados Unidos (por ejemplo, "28 de sep de 2026" y "28/9/2026"). Las iglesias fuera de EE.UU. pueden cambiar a su propio formato: por ejemplo, elegir Inglés (Reino Unido) muestra "28 Sept 2026" y "28/09/2026" en su lugar.
 
@@ -65,7 +65,20 @@ La configuración **Región** controla cómo se escriben las fechas y horas en t
 2. Elige tu región del menú desplegable **Región**. Cada opción muestra una fecha de ejemplo para que veas exactamente cómo se verán las fechas.
 3. Haz clic en **Guardar**.
 
-La tarjeta Región muestra tu región seleccionada y una muestra del **Formato de fecha**.
+La tarjeta Región muestra tu región seleccionada, una muestra del **Formato de fecha** y tu formato de **Números de teléfono**.
+
+### Formato de números de teléfono
+
+La misma tarjeta Región tiene una configuración de **Números de teléfono** que controla cómo se ingresan los números de teléfono en el registro de una persona:
+
+- **Internacional (con código de país)** -- el valor predeterminado. Los campos de teléfono muestran un selector de bandera de país y guardan los números con el código de país (por ejemplo, +1 918 555 1234).
+- **Local (tal como se escribe)** -- los campos de teléfono se convierten en cuadros de texto simples y guardan los números exactamente como los escribes, sin agregar código de país (por ejemplo, 0701 234 5678). Elige esta opción si tu iglesia escribe los números en un formato local y no quiere que B1 agregue un código de país.
+
+Cuando se selecciona **Local**, la tarjeta Región también muestra "Números de teléfono locales" junto a tu región.
+
+:::tip
+Los mensajes de texto funcionan mejor cuando los números incluyen el código de país. Si envías mensajes de texto desde B1, mantén el formato **Internacional**, o asegúrate de que los números que escribes en modo Local incluyan el código de país.
+:::
 
 Tu región se aplica a fechas y horas en todo B1 Admin y en tu sitio web B1.church y portal de miembros, incluyendo sermones, publicaciones de blog, calendarios de grupos y planes de servicio, para que los miembros vean fechas en el mismo formato que tu personal.
 

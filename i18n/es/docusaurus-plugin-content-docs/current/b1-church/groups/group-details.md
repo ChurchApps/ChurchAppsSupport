@@ -41,7 +41,7 @@ Las pestañas disponibles son:
 - **Mensajes** -- Un espacio para que los miembros del grupo publiquen mensajes e interactúen entre sí. Solo se muestra a los miembros, y solo si su iglesia ha activado el chat grupal para este grupo. Ver [Conversaciones de Grupo](./conversations.md) para más detalles.
 - **Miembros** -- Una lista de todos los miembros del grupo, mostrando su foto y nombre. Puede hacer clic en el nombre de un miembro para visitar su perfil en el [directorio de miembros](../community/member-directory.md).
 - **Asistencia** -- Visible solo para líderes de grupo (y personal con permiso de asistencia). Permite el seguimiento de quién asistió a las reuniones del grupo.
-- **Eventos** -- El calendario del grupo que muestra reuniones y eventos. Puede examinar eventos próximos y pasados.
+- **Eventos** -- El calendario del grupo que muestra reuniones y eventos. Use las flechas para moverse entre meses. Dos botones debajo del nombre del mes cambian la vista: la **vista de mes** (el icono de calendario) muestra una cuadrícula de calendario donde toca un día para ver sus eventos, y la **vista de lista** (el icono de lista) muestra los eventos del mes en orden de fecha, agrupados por día. Cuando está viendo el mes actual, la lista comienza desde hoy, por lo que solo muestra lo que aún está por venir.
 - **Recursos** -- Archivos compartidos y enlaces que se han publicado para el grupo. Puede descargar archivos cargados o abrir recursos vinculados.
 
 ## Capacidades del Líder

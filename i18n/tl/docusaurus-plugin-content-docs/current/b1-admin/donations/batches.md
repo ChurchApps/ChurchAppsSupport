@@ -43,18 +43,24 @@ Lalabas sa listahan ang bago mong batch, handa nang dagdagan ng mga donasyon.
 - **Tingnan ang mga donasyon** -- i-click ang pangalan ng batch para buksan ito at makita ang lahat ng indibidwal na donasyong nilalaman nito. Mula rito, maaari kang magdagdag, mag-edit, o mag-alis ng mga donasyon.
 - **I-edit ang detalye ng batch** -- i-click ang button na **Edit** sa row ng batch para palitan ang pangalan o petsa nito.
 - **Mag-sort** -- gamitin ang mga header ng column para i-sort ang mga batch ayon sa pangalan o petsa.
-- **Mag-export** -- i-click ang **Export to CSV** para i-download ang listahan ng batch mo bilang spreadsheet.
+- **Mag-export** -- i-click ang **Export** para i-download ang listahan ng batch mo bilang spreadsheet (CSV).
 
 ## Pag-print ng Batch
 
 Buksan ang isang batch at i-click ang icon na **Print** (printer) sa itaas ng listahan ng mga donasyon para mag-print ng papel na kopya para sa counting team mo o sa mga talaan ng deposito. Kasama sa printout ang:
 
-- Ang pangalan at petsa ng batch
+- Ang pangalan ng iyong simbahan, ang pangalan ng batch, at ang petsa ng batch
 - Bawat donasyon sa batch, kasama ang pangalan ng nagbigay, paraan, mga tala, petsa, at halaga (ang mga na-refund na handog ay may guhit at may markang na-refund)
 - **Fund Subtotals** -- ang kabuuang naibigay sa bawat fund sa batch
 - **Batch Total** -- ang pinagsamang halaga ng buong batch
 
 Lalabas lamang ang Print icon kapag may kahit isang donasyon na ang batch.
+
+### Pag-print ng Ilang Batch nang Sabay-sabay
+
+Para i-print ang bawat batch mula sa isang panahon nang minsanan -- halimbawa, lahat ng deposito noong nakaraang buwan -- i-click ang icon na **Print** (printer) sa header ng listahan ng **Batches**, katabi ng **Export**. Magbubukas ang pahinang **Print Batches** na may **Start Date** at **End Date** na naka-default sa nakaraang 30 araw. Palitan ang alinman sa dalawang petsa para pumili ng ibang saklaw.
+
+Ipi-print ayon sa pagkakasunod ng petsa ang bawat batch na may petsang nasa loob ng saklaw (kasama ang start at end date), isang batch kada pahina, gamit ang parehong layout ng printout ng iisang batch. Hindi isinasama ang mga batch na walang donasyon, at kung walang donasyon ang alinman sa mga batch sa saklaw, makikita mo ang "No batches with donations in this date range." I-click ang **Print** para buksan ang print dialog ng iyong browser, o **Close** para bumalik sa listahan ng batch.
 
 ## Pag-export ng Batch sa QuickBooks Online
 

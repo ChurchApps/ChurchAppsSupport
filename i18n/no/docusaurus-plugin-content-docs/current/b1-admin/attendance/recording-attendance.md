@@ -80,7 +80,7 @@ En oppmøteliste er en utskrivbar klasseliste som lærere kan fylle ut for hånd
 
 - **Fra en økt** -- Klikk på ikonet **Skriv ut oppmøteliste** (skriver) øverst i øktens oppmøteliste. Listen får øktens dato.
 - **Alle klasser for en gudstjeneste** -- Hvis økten har et samlingstidspunkt, klikker du på **Skriv ut alle klasser** for å skrive ut én liste per klasse som er tilordnet samlingstidspunktet. Hver klasse skrives ut på sin egen side.
-- **Fra fanen Medlemmer** -- Klikk på ikonet **Skriv ut oppmøteliste** over gruppens medlemsliste for å skrive ut en liste uten dato.
+- **Fra fanen Medlemmer** -- Klikk på ikonet **Skriv ut oppmøteliste** over gruppens medlemsliste og velg **Oppmøteliste** for å skrive ut en liste uten dato. Den samme menyen har også oppsettet **Kontaktliste** med hvert medlems telefonnummer, e-postadresse og adresse. Se [Skrive ut medlemslisten](../groups/group-members.md#printing-the-member-list).
 
 Listen åpnes i en ny fane, og nettleserens utskriftsdialog vises automatisk.
 

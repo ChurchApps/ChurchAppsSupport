@@ -24,8 +24,10 @@ title: "事务端点"
 | GET | `/types/:planTypeId` | JWT | — | 按计划类型获取计划 |
 | GET | `/presenter` | JWT | — | 获取未来 7 天的计划（演示视图） |
 | GET | `/public/current/:planTypeId` | 公开 | — | 获取某计划类型的当前计划 |
+| GET | `/public/signup/:churchId` | 公开 | — | 开放自助报名的计划，每个计划附带其自助报名职位（以及已接受/未确认分配的 `filledCount`）和时间。不含志愿者姓名 |
+| GET | `/signup/:planId/volunteers` | JWT | — | 该计划自助报名职位的 `[{ positionId, names }]`（已接受/未确认分配人员的显示名称）。除非该计划的 `showVolunteerNames` 已开启，否则返回 `[]` |
 | POST | `/` | JWT | — | 创建或更新计划（接受单个对象或数组） |
-| POST | `/copy/:id` | JWT | — | 复制计划，包括职位、时间、分配和礼拜流程项目。请求体包含 `copyMode`（"none"、"positions"、"all"）和 `copyServiceOrder`（布尔值） |
+| POST | `/copy/:id` | JWT | — | 复制计划，包括职位、时间、分配和礼拜流程项目。请求体包含 `copyMode`（"none"、"positions"、"all"）和 `copyServiceOrder`（布尔值）。除非请求体中提供了 `notes` 和 `signupDeadlineHours`，否则它们会从源计划沿用 |
 | POST | `/autofill/:id` | JWT | — | 自动填充计划的志愿者分配。请求体：`{ teams: [{ positionId, personIds }] }` |
 | DELETE | `/:id` | JWT | — | 删除计划及所有相关的时间、分配、职位和计划项目 |
 

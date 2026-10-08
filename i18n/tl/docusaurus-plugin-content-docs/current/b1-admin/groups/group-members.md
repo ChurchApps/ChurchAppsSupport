@@ -108,9 +108,18 @@ Para i-download ang listahan ng mga miyembro ng group bilang file:
 1. Mula sa group detail page, i-click ang **download icon**.
 2. Magda-download sa inyong computer ang isang CSV file na naglalaman ng impormasyon ng mga miyembro ng group.
 
-Para mag-print ng sign-in sheet para sa isang klase, gamitin ang **Print Roll Sheet** -- tingnan ang [Pag-print ng Roll Sheet](../attendance/recording-attendance.md#printing-a-roll-sheet).
-
 Kapaki-pakinabang ang CSV export para mag-import ng datos sa ibang mga tool, o magtago ng mga offline na record. Para sa higit pang opsyon sa pag-export, tingnan ang [Pag-export ng Datos](../people/exporting-data.md).
+
+## Pag-print ng Listahan ng mga Miyembro {#printing-the-member-list}
+
+I-click ang icon na **Print Roll Sheet** (printer) sa itaas ng listahan ng mga miyembro at pumili ng layout. Magbubukas ang pahina sa bagong tab at awtomatikong lalabas ang print dialog ng iyong browser.
+
+- **Attendance Sheet** -- isang listahan ng klase na walang petsa, na may mga kahong **Present** at **Absent** para markahan ng mga guro nang mano-mano. Tingnan ang [Pag-print ng Roll Sheet](../attendance/recording-attendance.md#printing-a-roll-sheet).
+- **Contact Roster** -- isang listahan ng contact para sa group, may petsa ngayong araw at may heading na pangalan ng iyong simbahan at pangalan ng group. May row ang bawat miyembro na may kanyang **Name**, **Phone**, **Email**, at **Address**. Nauuna sa listahan ang mga lider at minamarkahan ng **Leader**, kasunod ang iba pa ayon sa apelyido. Ang ipinapakitang telepono ay ang mobile number ng miyembro, o ang kanyang numero sa bahay o trabaho kung walang mobile. Iniiwang blangko ang mga detalye ng contact ng sinumang nag-opt out.
+
+:::warning
+Naglalaman ang contact roster ng personal na impormasyon sa pakikipag-ugnayan ng mga miyembro. Ibahagi lamang ang mga naka-print na kopya sa mga lider ng group at sa iba pang nangangailangan nito.
+:::
 
 ## Pagpapadala ng mga Push Notification sa mga Miyembro ng Group
 

@@ -80,7 +80,7 @@ Una hoja de rol es una lista de clase imprimible que los maestros pueden marcar 
 
 - **Desde una sesión** -- Haga clic en el icono **Print Roll Sheet** (impresora) en la parte superior de la lista de asistencia de la sesión. La hoja está fechada con la fecha de la sesión.
 - **Todas las clases para un servicio** -- Si la sesión tiene un horario de servicio, haga clic en **Print All Classes** para imprimir una hoja por cada clase asignada a ese horario de servicio. Cada clase se imprime en su propia página.
-- **Desde la pestaña Members** -- Haga clic en el icono **Print Roll Sheet** arriba de la lista de miembros del grupo para imprimir una hoja sin fecha.
+- **Desde la pestaña Members** -- Haga clic en el icono **Print Roll Sheet** arriba de la lista de miembros del grupo y elija **Attendance Sheet** para imprimir una hoja sin fecha. El mismo menú tiene un diseño **Contact Roster** con el teléfono, correo electrónico y dirección de cada miembro; vea [Imprimir la lista de miembros](../groups/group-members.md#printing-the-member-list).
 
 La hoja se abre en una nueva pestaña y el diálogo de impresión de su navegador aparece automáticamente.
 

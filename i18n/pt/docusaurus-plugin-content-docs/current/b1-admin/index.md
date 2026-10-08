@@ -36,16 +36,16 @@ Toda seção, incluindo Sermões, Calendários, Celular e Configurações, está
 ## Recursos Principais
 
 - **[Pessoas](./people/)** - Gerenciar seu diretório de igreja, adicionar membros, editar dados em massa, rastrear famílias
-- **[Grupos](./groups/)** - Criar e organizar grupos de igreja com solicitações de adesão, gerenciamento de membros, email de grupo e textos de grupo personalizados
+- **[Grupos](./groups/)** - Criar e organizar grupos de igreja com solicitações de adesão, gerenciamento de membros, email de grupo, textos de grupo personalizados e listas de contatos imprimíveis
 - **[Frequência](./attendance/)** - Configurar campi, horários de serviço, rastrear frequência nomeada com folhas de classe imprimíveis, ver quais aulas ainda precisam de frequência inserida e registrar contagens simples com relatórios de tendência
-- **[Doações](./donations/)** - Registrar ofertas em múltiplas moedas, gerenciar fundos, imprimir lotes com subtotais de fundos, gerar declarações
+- **[Doações](./donations/)** - Registrar ofertas em múltiplas moedas, gerenciar fundos, imprimir lotes (um de cada vez ou todos os lotes de um intervalo de datas) com subtotais de fundos, gerar declarações
 - **[Serviços](./serving/)** - Coordenar voluntários, criar planos de serviço, gerenciar tarefas e mover pessoas através de fluxos de trabalho passo a passo que podem enviar emails e textos automaticamente
 - **[Formulários](./forms/)** - Construir formulários personalizados para registros e coleta de dados
 - **[Relatórios](./reports/)** - Ver relatórios de aniversários, frequência e doações
 - **[Website](./website/)** - Construir e gerenciar seu website de igreja com estilos de navegação personalizados ou desativar o site público e manter apenas o portal de membros
 - **[Sermões](./sermons/)** - Gerenciar sua biblioteca de sermões, transmissão ao vivo e um feed de podcast automático
 - **[Calendários](./calendars/)** - Criar calendários curados, gerenciar reservas de sala/recursos e visualizar disponibilidade
-- **[Configurações](./settings/)** - Configurar informações da igreja, região e formato de data, textos, funções, permissões e campos de pessoa personalizados
+- **[Configurações](./settings/)** - Configurar informações da igreja, região, formato de data e de número de telefone, textos, funções, permissões e campos de pessoa personalizados
 
 :::info
 Clique no ícone de interrogação no canto superior direito de qualquer página para acesso rápido à ajuda e documentação.

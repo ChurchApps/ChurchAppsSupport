@@ -108,9 +108,18 @@ So laden Sie die Gruppenmitgliederliste als Datei herunter:
 1. Klicken Sie von der Gruppenseite aus auf das **Download-Symbol**.
 2. Eine CSV-Datei mit den Gruppenmitgliedinformationen wird auf Ihren Computer heruntergeladen.
 
-Um stattdessen ein Anwesenheitsblatt für eine Klasse zu drucken, verwenden Sie **Print Roll Sheet** (Anwesenheitsblatt drucken) – siehe [Printing a Roll Sheet](../attendance/recording-attendance.md#printing-a-roll-sheet).
-
 Ein CSV-Export ist nützlich zum Importieren von Daten in andere Tools oder zum Führen von Offline-Datensätzen. Weitere Exportoptionen finden Sie unter [Exporting Data](../people/exporting-data.md).
+
+## Mitgliederliste drucken {#printing-the-member-list}
+
+Klicken Sie auf das Symbol **Print Roll Sheet** (Anwesenheitsblatt drucken, Drucker) über der Mitgliederliste und wählen Sie ein Layout. Die Seite öffnet sich in einem neuen Tab, und der Druckdialog Ihres Browsers erscheint automatisch.
+
+- **Anwesenheitsblatt** – eine undatierte Klassenliste mit Kästchen für **Anwesend** und **Abwesend**, die Lehrer von Hand markieren können. Siehe [Printing a Roll Sheet](../attendance/recording-attendance.md#printing-a-roll-sheet).
+- **Kontaktliste** – eine Kontaktliste für die Gruppe, mit dem heutigen Datum sowie dem Namen Ihrer Kirche und dem Gruppennamen in der Kopfzeile. Jedes Mitglied hat eine Zeile mit **Name**, **Telefon**, **E-Mail** und **Adresse**. Leiter werden zuerst aufgeführt und mit **Leiter** gekennzeichnet, danach alle anderen nach Nachnamen. Als Telefonnummer wird die Mobilnummer des Mitglieds angezeigt, oder die private bzw. geschäftliche Nummer, falls keine Mobilnummer vorhanden ist. Die Kontaktdaten bleiben leer bei allen, die sich dagegen entschieden haben.
+
+:::warning
+Eine Kontaktliste enthält die persönlichen Kontaktdaten von Mitgliedern. Geben Sie ausgedruckte Exemplare nur an die Leiter der Gruppe und andere Personen weiter, die sie benötigen.
+:::
 
 ## Senden von Push-Benachrichtigungen an Gruppenmitglieder
 

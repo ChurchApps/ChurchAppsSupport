@@ -29,6 +29,7 @@ As posições são agrupadas por categoria (por exemplo, "Banda", "Hospitalidade
 - **Nome da posição** -- O papel que você preencheria (por exemplo, "Baterista", "Anfitrião", "Servidor de Café").
 - **Descrição** -- Detalhes sobre o papel, se fornecido pelo administrador.
 - **Lugares disponíveis** -- Uma barra de progresso mostrando quantos lugares estão preenchidos e quantos restam.
+- **Quem já se inscreveu** -- Se sua igreja ativou **Mostrar nomes de voluntários na página de inscrição** para o plano, uma linha "Inscritos:" lista os nomes das pessoas que já servem nessa posição. Os nomes só são mostrados quando você está conectado.
 
 ## Se Inscrevendo
 

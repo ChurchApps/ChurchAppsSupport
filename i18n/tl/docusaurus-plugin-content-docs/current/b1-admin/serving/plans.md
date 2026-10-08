@@ -33,7 +33,7 @@ Hindi kailangan ng buong admin access para pamahalaan ang mga plano. Sinumang mi
 
 1. Mula sa view ng plan type, i-click ang **New Plan**.
 2. Bigyan ng pangalan ang plano o gamitin ang petsa bilang pangalan. Piliin ang **petsa** ng service.
-3. Kung nais ninyong kopyahin mula sa nakaraang plano, piliin ang mga posisyon lamang o ang mga posisyon at assignment. Kung ayaw ninyong kopyahin, huwag pumili ng anuman. Maaari rin ninyong kopyahin ang order of service mula sa nakaraang plano.
+3. Kung nais ninyong kopyahin mula sa nakaraang plano, piliin ang mga posisyon lamang o ang mga posisyon at assignment. Kung ayaw ninyong kopyahin, huwag pumili ng anuman. Maaari rin ninyong kopyahin ang order of service mula sa nakaraang plano. Kapag kumopya kayo mula sa nakaraang plano, pananatilihin din ng bagong plano ang **Notes** at **Signup Deadline** ng planong iyon, kaya hindi na ninyo kailangang ilagay muli ang mga ito bawat linggo. Maaari ninyong baguhin ang alinman sa mga ito sa mga setting ng bagong plano.
 4. I-save ang plano. Maaari na kayong magsimulang magtalaga ng mga miyembro ng team at buuin ang [service order](./service-order.md).
 
 ## Ang Pahina ng Detalye ng Plano
@@ -63,7 +63,7 @@ I-set up ang inyong mga team sa mga setting ng ministry bago gumawa ng mga plano
 Ang bawat plano ay may karagdagang mga setting na maaari ninyong i-configure sa pamamagitan ng pag-click sa edit (lapis) icon sa plano. Kabilang dito ang:
 
 - **Signup Deadline** -- ang bilang ng oras bago ang service kung kailan magsasara ang mga signup ng boluntaryo. Maglagay ng negatibong numero para panatilihing bukas ang mga signup lampas sa simula ng service.
-- **Show volunteer names on signup page** -- kapag naka-check, makikita ng mga boluntaryo kung sino pa ang naka-sign up na sa bawat posisyon.
+- **Show volunteer names on signup page** -- kapag naka-check, makikita ng mga boluntaryong naka-sign in kung sino pa ang naka-sign up na sa bawat posisyon sa signup page ng B1.church. Hindi kailanman ipinapakita ang mga pangalan sa mga bisitang hindi naka-sign in.
 - **Penciled in** -- itinatago ang mga assignment mula sa mga boluntaryo hanggang handa na kayong i-publish ang iskedyul.
 - **Automatically schedule a replacement when a volunteer declines** -- kapag naka-check, kung tumanggi ang isang nakatalagang boluntaryo sa kanyang posisyon, awtomatikong makikipag-ugnayan ang B1 sa susunod na available na tao sa roster ng team at itatanong kung maaari silang maglingkod. Nagpapatuloy ito sa listahan hanggang may tumanggap, kaya nananatiling puno ang inyong mga posisyon nang hindi na kailangang mag-follow up nang mano-mano.
 

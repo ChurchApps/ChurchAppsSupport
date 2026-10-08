@@ -33,7 +33,7 @@ Du trenger ikke full administratortilgang for å administrere planer. Alle som e
 
 1. Klikk på **Ny plan** i plantypevisningen.
 2. Gi planen et navn, eller bruk datoen som navn. Velg **dato** for gudstjenesten.
-3. Hvis du vil kopiere fra en tidligere plan, velger du bare posisjoner eller posisjoner og tildelinger. Hvis du ikke vil kopiere, velger du ingenting. Du kan også kopiere gudstjenesteforløpet fra den forrige planen min.
+3. Hvis du vil kopiere fra en tidligere plan, velger du bare posisjoner eller posisjoner og tildelinger. Hvis du ikke vil kopiere, velger du ingenting. Du kan også kopiere gudstjenesteforløpet fra den forrige planen. Når du kopierer fra en tidligere plan, beholder den nye planen også den planens **Notater** og **Påmeldingsfrist**, slik at du slipper å skrive dem inn på nytt hver uke. Du kan endre begge i den nye planens innstillinger.
 4. Lagre planen. Nå kan du begynne å tildele teammedlemmer og bygge opp [gudstjenesteforløpet](./service-order.md).
 
 ## Plandetaljsiden
@@ -63,7 +63,7 @@ Sett opp lagene dine i innstillingene for tjenesteområdet før du oppretter pla
 Hver plan har flere innstillinger du kan konfigurere ved å klikke på redigeringsikonet (blyanten) på planen. Disse omfatter:
 
 - **Påmeldingsfrist** — antall timer før gudstjenesten når påmeldingen for frivillige stenger. Skriv inn et negativt tall for å holde påmeldingen åpen etter at gudstjenesten har startet.
-- **Vis navn på frivillige på påmeldingssiden** — når dette er avkrysset, kan frivillige se hvem andre som allerede er påmeldt hver posisjon.
+- **Vis navn på frivillige på påmeldingssiden** — når dette er avkrysset, kan innloggede frivillige se hvem andre som allerede er påmeldt hver posisjon på påmeldingssiden på B1.church. Navn vises aldri for besøkende som ikke er innlogget.
 - **Foreløpig** — skjuler tildelinger for frivillige til du er klar til å publisere timeplanen.
 - **Sett automatisk opp en erstatter når en frivillig takker nei** — når dette er avkrysset, kontakter B1 automatisk den neste tilgjengelige personen på lagets liste og spør om vedkommende kan tjenestegjøre hvis en tildelt frivillig takker nei til posisjonen sin. Dette fortsetter nedover listen til noen sier ja, slik at posisjonene dine holdes fylt uten manuell oppfølging.
 

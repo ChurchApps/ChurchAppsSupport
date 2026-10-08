@@ -24,8 +24,10 @@ Caminho base: `/doing/plans`
 | GET | `/types/:planTypeId` | JWT | — | Obter planos por tipo de plano |
 | GET | `/presenter` | JWT | — | Obter planos dos próximos 7 dias (visualização do apresentador) |
 | GET | `/public/current/:planTypeId` | Público | — | Obter o plano atual para um tipo de plano |
+| GET | `/public/signup/:churchId` | Público | — | Planos abertos para auto-inscrição, cada um com suas posições de auto-inscrição (mais `filledCount` de atribuições Accepted/Unconfirmed) e horários. Sem nomes de voluntários |
+| GET | `/signup/:planId/volunteers` | JWT | — | `[{ positionId, names }]` para as posições de auto-inscrição do plano (nomes de exibição dos designados Accepted/Unconfirmed). Retorna `[]` a menos que `showVolunteerNames` do plano esteja ativado |
 | POST | `/` | JWT | — | Criar ou atualizar planos (aceita objeto único ou array) |
-| POST | `/copy/:id` | JWT | — | Copiar um plano incluindo posições, horários, atribuições e itens de ordem de culto. O body inclui `copyMode` ("none", "positions", "all") e `copyServiceOrder` (booleano) |
+| POST | `/copy/:id` | JWT | — | Copiar um plano incluindo posições, horários, atribuições e itens de ordem de culto. O body inclui `copyMode` ("none", "positions", "all") e `copyServiceOrder` (booleano). `notes` e `signupDeadlineHours` são herdados do plano de origem, a menos que o body os forneça |
 | POST | `/autofill/:id` | JWT | — | Preencher automaticamente atribuições de voluntários para um plano. Body: `{ teams: [{ positionId, personIds }] }` |
 | DELETE | `/:id` | JWT | — | Excluir um plano e todos os horários, atribuições, posições e itens de plano relacionados |
 

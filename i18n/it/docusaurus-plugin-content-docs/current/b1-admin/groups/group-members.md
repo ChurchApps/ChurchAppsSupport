@@ -110,9 +110,18 @@ Per scaricare l'elenco dei membri del gruppo come file:
 1. Dalla pagina dei dettagli del gruppo, fai clic sull'**icona di download**.
 2. Un file CSV contenente le informazioni dei membri del gruppo verrà scaricato sul tuo computer.
 
-Per stampare un foglio di firma per una classe invece, usa **Stampa Foglio di Presenza** -- vedi [Stampa di un Foglio di Presenza](../attendance/recording-attendance.md#printing-a-roll-sheet).
-
 Un'esportazione CSV è utile per importare dati in altri strumenti o mantenere record offline. Per più opzioni di esportazione, vedi [Esportazione dei Dati](../people/exporting-data.md).
+
+## Stampa dell'elenco dei membri {#printing-the-member-list}
+
+Fai clic sull'icona **Stampa Foglio di Presenza** (stampante) sopra l'elenco dei membri e scegli un layout. La pagina si apre in una nuova scheda e la finestra di stampa del tuo browser appare automaticamente.
+
+- **Foglio di presenza** -- un elenco di classe senza data con caselle **Presente** e **Assente** che gli insegnanti possono segnare a mano. Vedi [Stampa di un Foglio di Presenza](../attendance/recording-attendance.md#printing-a-roll-sheet).
+- **Rubrica dei contatti** -- un elenco di contatti per il gruppo, con la data di oggi e intestato con il nome della tua chiesa e il nome del gruppo. Ogni membro ha una riga con il suo **Nome**, **Telefono**, **Email** e **Indirizzo**. I leader sono elencati per primi e contrassegnati come **Leader**, poi tutti gli altri in ordine di cognome. Il telefono mostrato è il numero di cellulare del membro, oppure il numero di casa o di lavoro se non c'è un cellulare. I dati di contatto sono lasciati vuoti per chi ha rinunciato.
+
+:::warning
+Una rubrica dei contatti contiene le informazioni di contatto personali dei membri. Condividi le copie stampate solo con i leader del gruppo e con altre persone che ne hanno bisogno.
+:::
 
 ## Invio di notifiche push ai membri del gruppo
 

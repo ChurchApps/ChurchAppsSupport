@@ -108,9 +108,18 @@ Para baixar a lista de membros do grupo como um arquivo:
 1. Na página de detalhes do grupo, clique no **ícone de download**.
 2. Um arquivo CSV contendo as informações dos membros do grupo será baixado para seu computador.
 
-Para imprimir uma folha de presença para uma classe, use **Imprimir Folha de Chamada** -- consulte [Imprimindo uma Folha de Chamada](../attendance/recording-attendance.md#printing-a-roll-sheet).
-
 Uma exportação CSV é útil para importar dados em outras ferramentas ou manter registros offline. Para mais opções de exportação, consulte [Exportando Dados](../people/exporting-data.md).
+
+## Imprimindo a Lista de Membros {#printing-the-member-list}
+
+Clique no ícone **Imprimir Folha de Chamada** (impressora) acima da lista de membros e escolha um layout. A página abre em uma nova aba e a caixa de diálogo de impressão do seu navegador aparece automaticamente.
+
+- **Folha de Presença** -- uma lista de classe sem data com caixas **Presente** e **Ausente** para os professores marcarem à mão. Consulte [Imprimindo uma Folha de Chamada](../attendance/recording-attendance.md#printing-a-roll-sheet).
+- **Lista de Contatos** -- uma lista de contatos do grupo, datada de hoje e com o nome da sua igreja e o nome do grupo no cabeçalho. Cada membro tem uma linha com seu **Nome**, **Telefone**, **E-mail** e **Endereço**. Os líderes são listados primeiro e marcados como **Líder**, depois todos os demais por sobrenome. O telefone exibido é o número de celular do membro, ou o número residencial ou comercial se não houver celular. Os dados de contato ficam em branco para quem optou por não participar.
+
+:::warning
+Uma lista de contatos contém informações pessoais de contato dos membros. Compartilhe cópias impressas apenas com os líderes do grupo e outras pessoas que precisem delas.
+:::
 
 ## Enviando Notificações por Push aos Membros do Grupo
 

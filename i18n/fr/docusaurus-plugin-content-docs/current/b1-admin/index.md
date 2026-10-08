@@ -36,16 +36,16 @@ Chaque section, y compris les sermons, les calendriers, mobiles et les paramètr
 ## Caractéristiques principales
 
 - **[Personnes](./people/)** - Gérez votre répertoire d'église, ajoutez des membres, modifiez les données en masse, suivez les ménages
-- **[Groupes](./groups/)** - Créez et organisez des groupes d'église avec demandes d'adhésion, gestion des membres, e-mail de groupe et textes de groupe personnalisés
+- **[Groupes](./groups/)** - Créez et organisez des groupes d'église avec demandes d'adhésion, gestion des membres, e-mail de groupe, textes de groupe personnalisés et listes de contacts imprimables
 - **[Présence](./attendance/)** - Configurez les sites, heures de service, suivi de la présence nommée avec feuilles de présence de classe imprimables, voyez quelles classes ont encore besoin de présence saisie, et enregistrez les décomptes simples avec rapports de tendance
-- **[Dons](./donations/)** - Enregistrez les dons en plusieurs devises, gérez les fonds, imprimez les lots avec les sous-totaux des fonds, générez les relevés
+- **[Dons](./donations/)** - Enregistrez les dons en plusieurs devises, gérez les fonds, imprimez les lots (un à la fois ou tous les lots d'une période) avec les sous-totaux des fonds, générez les relevés
 - **[Service](./serving/)** - Coordonnez les bénévoles, créez des plans de service, gérez les tâches et déplacez les gens à travers des flux de travail étape par étape qui peuvent envoyer automatiquement des e-mails et des textes
 - **[Formulaires](./forms/)** - Créez des formulaires personnalisés pour les inscriptions et la collecte de données
 - **[Rapports](./reports/)** - Afficher les rapports d'anniversaire, de présence et de dons
 - **[Site web](./website/)** - Créez et gérez votre site web d'église avec des styles de navigation personnalisés, ou désactivez le site public et gardez uniquement le portail des membres
 - **[Sermons](./sermons/)** - Gérez votre bibliothèque de sermons, la diffusion en direct et un flux de podcast automatique
 - **[Calendriers](./calendars/)** - Créez des calendriers organisés, gérez les réservations de salles/ressources et affichez la disponibilité
-- **[Paramètres](./settings/)** - Configurez les informations d'église, le format régional et date, la messagerie texte, les rôles, les permissions et les champs de personne personnalisés
+- **[Paramètres](./settings/)** - Configurez les informations d'église, la région, le format de date et de numéro de téléphone, la messagerie texte, les rôles, les permissions et les champs de personne personnalisés
 
 :::info
 Cliquez sur l'icône du point d'interrogation dans le coin supérieur droit de n'importe quelle page pour un accès rapide à l'aide et à la documentation.

@@ -29,6 +29,7 @@ Les positions sont groupées par catégorie (par exemple, « Bande », « Hospit
 - **Nom de la position** — Le rôle que vous rempliriez (par exemple, « Batteur », « Accueilleur », « Serveur de café »).
 - **Description** — Détails sur le rôle, si fournis par l'administrateur.
 - **Spots disponibles** — Une barre de progression montrant combien de slots sont remplis et combien restent.
+- **Qui s'est inscrit** — Si votre église a activé **Afficher les noms des bénévoles sur la page d'inscription** pour le plan, une ligne « Inscrits : » liste les noms des personnes qui servent déjà à cette position. Les noms ne sont affichés que lorsque vous êtes connecté.
 
 ## S'inscrire
 

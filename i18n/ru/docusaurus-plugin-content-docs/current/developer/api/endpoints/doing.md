@@ -24,8 +24,10 @@ title: "Эндпоинты Doing"
 | GET | `/types/:planTypeId` | JWT | — | Получить планы по типу плана |
 | GET | `/presenter` | JWT | — | Получить планы на ближайшие 7 дней (режим презентации) |
 | GET | `/public/current/:planTypeId` | Public | — | Получить текущий план для типа плана |
+| GET | `/public/signup/:churchId` | Public | — | Планы, открытые для самостоятельной записи, каждый со своими позициями для самостоятельной записи (плюс `filledCount` назначений Accepted/Unconfirmed) и временами. Без имён волонтёров |
+| GET | `/signup/:planId/volunteers` | JWT | — | `[{ positionId, names }]` для позиций плана, доступных для самостоятельной записи (отображаемые имена назначенных со статусом Accepted/Unconfirmed). Возвращает `[]`, если у плана не включён `showVolunteerNames` |
 | POST | `/` | JWT | — | Создать или обновить планы (принимает один объект или массив) |
-| POST | `/copy/:id` | JWT | — | Копировать план, включая позиции, времена, назначения и элементы порядка служения. Тело включает `copyMode` ("none", "positions", "all") и `copyServiceOrder` (boolean) |
+| POST | `/copy/:id` | JWT | — | Копировать план, включая позиции, времена, назначения и элементы порядка служения. Тело включает `copyMode` ("none", "positions", "all") и `copyServiceOrder` (boolean). `notes` и `signupDeadlineHours` переносятся из исходного плана, если тело запроса не задаёт их |
 | POST | `/autofill/:id` | JWT | — | Автозаполнение назначений волонтёров для плана. Тело: `{ teams: [{ positionId, personIds }] }` |
 | DELETE | `/:id` | JWT | — | Удалить план и все связанные времена, назначения, позиции и элементы плана |
 

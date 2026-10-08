@@ -36,16 +36,16 @@ Every section, including Sermons, Calendars, Mobile, and Settings, is in the [Ju
 ## Key Features
 
 - **[People](./people/)** - Manage your church directory, add members, bulk edit data, track households
-- **[Groups](./groups/)** - Create and organize church groups with join requests, member management, group email, and personalized group texts
+- **[Groups](./groups/)** - Create and organize church groups with join requests, member management, group email, personalized group texts, and printable contact rosters
 - **[Attendance](./attendance/)** - Set up campuses, service times, track named attendance with printable class roll sheets, see which classes still need attendance entered, and log simple headcounts with trend reports
-- **[Donations](./donations/)** - Record giving in multiple currencies, manage funds, print batches with fund subtotals, generate statements
+- **[Donations](./donations/)** - Record giving in multiple currencies, manage funds, print batches (one at a time or every batch in a date range) with fund subtotals, generate statements
 - **[Serving](./serving/)** - Coordinate volunteers, create service plans, manage tasks, and move people through step-by-step workflows that can send emails and texts automatically
 - **[Forms](./forms/)** - Build custom forms for registrations and data collection
 - **[Reports](./reports/)** - View birthday, attendance, and donation reports
 - **[Website](./website/)** - Build and manage your church website with custom navigation styles, or turn off the public site and keep only the member portal
 - **[Sermons](./sermons/)** - Manage your sermon library, live streaming, and an automatic podcast feed
 - **[Calendars](./calendars/)** - Create curated calendars, manage room/resource bookings, and view availability
-- **[Settings](./settings/)** - Configure church info, region and date format, texting, roles, permissions, and custom person fields
+- **[Settings](./settings/)** - Configure church info, region, date and phone number format, texting, roles, permissions, and custom person fields
 
 :::info
 Click the question mark icon in the top-right corner of any page for quick access to help and documentation.

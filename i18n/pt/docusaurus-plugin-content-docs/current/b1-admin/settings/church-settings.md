@@ -57,7 +57,7 @@ Para melhores resultados, use um logotipo com fundo transparente em formato PNG.
 
 Escolha qual dia seus calendários começam. O menu suspenso **First Day of Week** (Primeiro Dia da Semana) na seção Informações da Igreja usa como padrão **Sunday** (Domingo), mas pode ser definido para qualquer dia. Uma vez alterado, é respeitado em todas as grades de calendário no B1 Admin e no portal de membros B1.church -- calendários de grupo, calendários curados e o editor de eventos são todos dispostos a partir do dia que você escolher.
 
-## Região (Formato de Data)
+## Região (Formato de Data e de Telefone)
 
 A configuração **Region** (Região) controla como datas e horas são escritas em todo o B1. Por padrão, as datas usam o formato dos Estados Unidos (por exemplo, "Sep 28, 2026" (28 de setembro de 2026) e "9/28/2026"). Igrejas fora dos EUA podem mudar para seu próprio formato -- por exemplo, escolher English (United Kingdom) (Inglês (Reino Unido)) mostra "28 Sept 2026" (28 de setembro de 2026) e "28/09/2026" em vez disso.
 
@@ -65,7 +65,20 @@ A configuração **Region** (Região) controla como datas e horas são escritas 
 2. Escolha sua região no menu suspenso **Region** (Região). Cada opção mostra uma amostra de data para que você possa ver exatamente como as datas parecerão.
 3. Clique em **Save** (Salvar).
 
-O cartão Region então mostra sua região selecionada e uma amostra do **Date format** (Formato de Data).
+O cartão Region então mostra sua região selecionada, uma amostra do **Date format** (Formato de Data) e o formato de **Phone numbers** (Números de telefone).
+
+### Formato de Número de Telefone
+
+O mesmo cartão Region tem uma configuração **Phone numbers** (Números de telefone) que controla como os números de telefone são digitados no registro de uma pessoa:
+
+- **International (with country code)** (Internacional, com código do país) -- o padrão. Os campos de telefone mostram um seletor de bandeira do país e salvam os números com o código do país (por exemplo, +1 918 555 1234).
+- **Local (as typed)** (Local, como digitado) -- os campos de telefone viram caixas de texto simples e salvam os números exatamente como você os digita, sem adicionar código do país (por exemplo, 0701 234 5678). Escolha esta opção se sua igreja escreve os números em formato local e não quer que o B1 adicione um código do país.
+
+Quando **Local** está selecionado, o cartão Region também mostra "Local phone numbers" (Números de telefone locais) ao lado da sua região.
+
+:::tip
+As mensagens de texto funcionam melhor quando os números incluem o código do país. Se você envia textos pelo B1, mantenha o formato **International**, ou certifique-se de que os números digitados no modo Local incluam o código do país.
+:::
 
 Sua região se aplica a datas e horas em todo o B1 Admin e em seu site B1.church e portal de membros, incluindo sermões, posts de blog, calendários de grupo e planos de serviço, para que os membros vejam datas no mesmo formato que sua equipe.
 
@@ -90,7 +103,7 @@ Uma vez que um provedor está conectado, a equipe com permissão para enviar tex
 
 ### Personalizando Textos com Campos de Mesclagem
 
-Abaixo da caixa de mensagem, o diálogo Text mostra crachás de espaço reservado: **First Name** (Primeiro Nome), **Last Name** (Sobrenome), **Display Name** (Nome de Exibição) e **Church Name** (Nome da Igreja). Clique em um crachá para inserir seu espaço reservado (`{{firstName}}`, `{{lastName}}`, `{{displayName}}` ou `{{churchName}}`) no seu cursor. Quando o texto é enviado, cada espaço reservado é substituído pelos detalhes do destinatário, para que um texto de grupo como `Hi {{firstName}}, see you Sunday!` (Oi {{firstName}}, vejo você no domingo!) chegue a cada membro com seu próprio nome. Os espaços reservados funcionam tanto para textos de grupo quanto para textos para uma única pessoa.
+Abaixo da caixa de mensagem, o diálogo Text mostra crachás de espaço reservado: **First Name** (Primeiro Nome), **Last Name** (Sobrenome), **Display Name** (Nome de Exibição) e **Church Name** (Nome da Igreja). Clique em um crachá para inserir seu espaço reservado (`{{firstName}}`, `{{lastName}}`, `{{displayName}}` ou `{{churchName}}`) no seu cursor. Quando o texto é enviado, cada espaço reservado é substituído pelos detalhes do destinatário, para que um texto de grupo como `Hi {{firstName}}, see you Sunday!` (`Oi {{firstName}}, vejo você no domingo!`) chegue a cada membro com seu próprio nome. Os espaços reservados funcionam tanto para textos de grupo quanto para textos para uma única pessoa.
 
 :::info
 O limite de 1.600 caracteres se aplica à mensagem conforme você a digita. Depois que os espaços reservados são preenchidos, qualquer texto mais longo que 1.600 caracteres é cortado nesse comprimento.

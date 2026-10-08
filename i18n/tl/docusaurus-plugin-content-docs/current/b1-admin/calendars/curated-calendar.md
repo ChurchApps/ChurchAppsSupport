@@ -51,6 +51,10 @@ Kapag naka-set up na ang curated calendar mo, maaari mo itong ibahagi sa iba't i
 Kapag nagdagdag ng mga bagong event ang mga lider ng grupo sa kanilang mga [grupo](../groups/creating-groups.md), awtomatikong lalabas ang mga event na iyon sa curated calendar mo. Hindi mo kailangang manu-manong i-update ang curated calendar sa bawat pagdagdag ng bagong event.
 :::
 
+:::note Mga pribadong event
+Mga **public** na event lamang ang lumalabas sa curated calendar sa iyong website at sa ICS subscription nito. Sa B1 Admin, nakikita rin ng mga staff na maaaring mag-edit ng content ang mga **private** na event ng grupo sa curated calendar, para masuri mo ang buong iskedyul habang binubuo mo ang kalendaryo.
+:::
+
 ## Mga Susunod na Hakbang
 
 - [Creating Calendars](creating-calendars) -- Alamin ang mga pangunahing kaalaman sa paggawa ng kalendaryo

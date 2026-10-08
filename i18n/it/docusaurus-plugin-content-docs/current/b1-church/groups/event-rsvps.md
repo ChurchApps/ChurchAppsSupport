@@ -20,7 +20,7 @@ Gli eventi di gruppo possono raccogliere RSVP in modo che i leader sappiamo chi 
 
 ## Risposta a un Evento
 
-1. Apri il tuo gruppo nel portale dei membri e vai alla vista **Events** / calendario.
+1. Apri il tuo gruppo nel portale dei membri e vai alla scheda **Eventi**. Nella **Vista mensile**, tocca un giorno per vedere i suoi eventi, oppure passa alla **Vista elenco** per vedere tutti i prossimi eventi di questo mese in una volta sola.
 2. Ogni scheda di evento imminente mostra **Will you attend?** con tre pulsanti: **Going**, **Maybe** e **Can't go**.
 3. Tocca la tua risposta. La tua scelta si evidenzia e ogni pulsante mostra un conteggio dal vivo di quante persone hanno dato quella risposta.
 4. Tocca di nuovo la tua risposta evidenziata per cancellarla, o tocca un pulsante diverso per cambiare la tua risposta.

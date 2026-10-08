@@ -14,7 +14,7 @@ La sezione Impostazioni è dove configuri l'account della tua chiesa, il marchio
 
 L'area Impostazioni è organizzata nelle seguenti sottosezioni:
 
-1. **Impostazioni** -- Configura le informazioni di base della tua chiesa, il marchio, il sottodominio, la regione (formato della data), il provider di messaggistica di testo e l'archiviazione dei file. Vedi [Church Settings](./church-settings.md) per i dettagli. Per utilizzare il tuo nome di dominio (ad esempio yourchurch.org), vedi [Custom Domain](./custom-domain.md).
+1. **Impostazioni** -- Configura le informazioni di base della tua chiesa, il marchio, il sottodominio, la regione (formato della data e del telefono), il provider di messaggistica di testo e l'archiviazione dei file. Vedi [Church Settings](./church-settings.md) per i dettagli. Per utilizzare il tuo nome di dominio (ad esempio yourchurch.org), vedi [Custom Domain](./custom-domain.md).
 2. **Campus** -- Aggiungi e gestisci più sedi fisiche per la tua chiesa. Una volta creati, i campus appaiono nei profili delle persone, nella configurazione della partecipazione e nella dashboard dei dati demografici. Raggiunto come una scheda sulla pagina Impostazioni principale piuttosto che come elemento di navigazione separato. Vedi [Campuses](./campuses.md) per i dettagli.
 3. **Campi personalizzati** -- Definisci i tuoi campi da tracciare sulle persone (una data, numero, risposta sì/no, o lista di scelta), quindi compilali nei profili e cercali. Raggiunto anche come una scheda sulla pagina Impostazioni principale. Vedi [Custom Fields](./custom-fields.md) per i dettagli.
 4. **Modelli di email** -- Salva il contenuto dell'email riutilizzabile per inviarlo manualmente o da un flusso di lavoro. Vedi [Email Templates](./email-templates.md) per i dettagli.

@@ -51,6 +51,10 @@ Una volta configurato il tuo calendario curato, puoi condividerlo in diversi mod
 Quando i leader del gruppo aggiungono nuovi eventi ai loro [gruppi](../groups/creating-groups.md), questi eventi appaiono automaticamente nel tuo calendario curato. Non è necessario aggiornare manualmente il calendario curato ogni volta che viene aggiunto un nuovo evento.
 :::
 
+:::note Eventi privati
+Solo gli eventi **pubblici** appaiono nel calendario curato sul tuo sito web e nel relativo abbonamento ICS. In B1 Admin, lo staff che può modificare i contenuti vede anche gli eventi **privati** del gruppo nel calendario curato, così puoi controllare il programma completo mentre prepari il calendario.
+:::
+
 ## Passaggi Successivi
 
 - [Creazione di Calendari](creating-calendars) -- Impara le basi della creazione di calendari

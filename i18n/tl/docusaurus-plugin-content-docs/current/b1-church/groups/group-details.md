@@ -41,7 +41,7 @@ Ang mga available na tab ay:
 - **Mga Mensahe** -- Isang lugar para sa mga miyembro ng grupo na mag-post ng mga mensahe at makipag-ugnayan sa isa't isa. Ipinapakita lamang sa mga miyembro, at kung binuksan lamang ng iyong simbahan ang group chat para sa grupong ito. Tingnan ang [Mga Usapan sa Grupo](./conversations.md) para sa higit pang detalye.
 - **Mga Miyembro** -- Listahan ng lahat ng miyembro ng grupo, kasama ang kanilang larawan at pangalan. Maaari mong i-click ang pangalan ng miyembro para bisitahin ang kanyang profile sa [direktoryo ng mga miyembro](../community/member-directory.md).
 - **Attendance** -- Nakikita lamang ng mga lider ng grupo (at ng mga staff na may pahintulot sa attendance). Pinapayagan nitong masubaybayan kung sino ang dumalo sa mga pagtitipon ng grupo.
-- **Mga Event** -- Ang kalendaryo ng grupo na nagpapakita ng mga pagtitipon at event. Maaari mong tingnan ang mga paparating at nakaraang event.
+- **Mga Event** -- Ang kalendaryo ng grupo na nagpapakita ng mga pagtitipon at event. Gamitin ang mga arrow para lumipat sa pagitan ng mga buwan. Dalawang button sa ilalim ng pangalan ng buwan ang nagpapalit ng view: ang **Month view** (ang icon ng kalendaryo) ay nagpapakita ng calendar grid kung saan mo ita-tap ang isang araw para makita ang mga event nito, at ang **List view** (ang icon ng listahan) ay nagpapakita ng mga event ng buwan ayon sa pagkakasunod ng petsa, nakagrupo kada araw. Kapag tinitingnan mo ang kasalukuyang buwan, nagsisimula ang listahan sa araw na ito, kaya mga paparating na lamang ang ipinapakita.
 - **Mga Resource** -- Mga ibinahaging file at link na na-post para sa grupo. Maaari mong i-download ang mga na-upload na file o buksan ang mga naka-link na resource.
 
 ## Mga Kakayahan ng Lider

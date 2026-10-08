@@ -85,7 +85,7 @@ Les widgets du site apparaissent sur chaque page de votre site, flottant au-dess
 Le panneau **Redirections et analyse** dans Paramètres de style contient deux paramètres non liés mais couramment nécessaires :
 
 - **Analyse** -- Ajoutez votre **ID de mesure Google Analytics 4** pour suivre le trafic des visiteurs sur votre site web.
-- **Redirections** -- Mappez un ancien chemin d'URL vers un nouveau, afin que les liens vers une page que vous avez déplacée ou renommée continuent à fonctionner au lieu de donner 404. Entrez l'ancien chemin **De** et le nouveau chemin **À**, puis cliquez sur **Enregistrer**.
+- **Redirections** -- Mappez un ancien chemin d'URL vers un nouveau, afin que les liens vers une page que vous avez déplacée ou renommée continuent à fonctionner au lieu de donner 404. Entrez l'ancien chemin **De** et le nouveau chemin **À**, puis cliquez sur **Enregistrer**. Une redirection a aussi priorité sur les pages intégrées de B1 (`/sermons`, `/stream`, `/donate`, `/bible` et `/votd`), ce qui vous permet d'envoyer cette adresse ailleurs (par exemple, vers votre propre page de sermons ou une chaîne YouTube). Elle ne remplace pas une page que vous avez créée vous-même à la même adresse. Supprimez d'abord cette page si vous voulez que la redirection s'applique.
 
 ## CSS et JavaScript personnalisés
 

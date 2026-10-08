@@ -29,6 +29,7 @@ Le posizioni sono raggruppate per categoria (ad esempio, "Banda", "Ospitalità",
 - **Nome della posizione** -- Il ruolo che ricopriresti (ad esempio, "Batterista", "Accogliente", "Cameriere del Caffè").
 - **Descrizione** -- Dettagli sul ruolo, se forniti dall'amministratore.
 - **Posti disponibili** -- Una barra di progresso che mostra quanti slot sono riempiti e quanti rimangono.
+- **Chi si è iscritto** -- Se la tua chiesa ha attivato **Mostra i nomi dei volontari sulla pagina di iscrizione** per il piano, una riga "Iscritti:" elenca i nomi delle persone che già servono in quella posizione. I nomi vengono mostrati solo se hai effettuato l'accesso.
 
 ## Iscrizione
 

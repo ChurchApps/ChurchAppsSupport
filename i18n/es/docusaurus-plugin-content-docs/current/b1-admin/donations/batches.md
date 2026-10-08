@@ -43,18 +43,24 @@ Tu nuevo lote aparece en la lista, listo para que agregues donaciones.
 - **Ver donaciones** -- haz clic en un nombre de lote para abrirlo y ver todas las donaciones individuales que contiene. Desde allí puedes agregar, editar o eliminar donaciones.
 - **Editar detalles del lote** -- haz clic en el botón **Editar** en una fila de lote para cambiar su nombre o fecha.
 - **Ordenar** -- usa los encabezados de columna para ordenar lotes por nombre o fecha.
-- **Exportar** -- haz clic en **Exportar a CSV** para descargar tu lista de lotes como una hoja de cálculo.
+- **Exportar** -- haz clic en **Exportar** para descargar tu lista de lotes como una hoja de cálculo (CSV).
 
 ## Imprimir un Lote
 
 Abre un lote y haz clic en el icono **Imprimir** (impresora) en la parte superior de la lista de donaciones para imprimir una copia en papel para tu equipo de conteo o registros de depósito. La impresión incluye:
 
-- El nombre y fecha del lote
+- El nombre de tu iglesia, el nombre del lote y la fecha del lote
 - Cada donación en el lote, con el nombre del donante, método, notas, fecha y monto (los regalos reembolsados están tachados y marcados como reembolsados)
 - **Subtotales por Fondo** -- el total donado a cada fondo en el lote
 - **Total del Lote** -- la cantidad combinada para todo el lote
 
 El icono Imprimir solo aparece una vez que el lote tiene al menos una donación.
+
+### Imprimir Varios Lotes a la Vez
+
+Para imprimir todos los lotes de un período de una sola vez, por ejemplo, todos los depósitos del mes pasado, haz clic en el icono **Imprimir** (impresora) en el encabezado de la lista **Lotes**, junto a **Exportar**. Se abre la página **Imprimir Lotes** con una **Fecha de Inicio** y una **Fecha de Fin** que por defecto abarcan los últimos 30 días. Cambia cualquiera de las dos fechas para elegir un rango diferente.
+
+Cada lote con fecha dentro del rango (incluyendo las fechas de inicio y fin) se imprime en orden de fecha, un lote por página, con el mismo diseño que la impresión de un solo lote. Los lotes sin donaciones se omiten, y si ninguno de los lotes del rango tiene donaciones verás "No hay lotes con donaciones en este rango de fechas." Haz clic en **Imprimir** para abrir el cuadro de diálogo de impresión de tu navegador, o en **Cerrar** para volver a la lista de lotes.
 
 ## Exportar un Lote a QuickBooks Online
 

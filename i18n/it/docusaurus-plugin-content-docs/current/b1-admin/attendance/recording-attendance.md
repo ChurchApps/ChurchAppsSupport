@@ -80,7 +80,7 @@ Un foglio di controllo è un elenco di classe stampabile che gli insegnanti poss
 
 - **Da una sessione** -- Fate clic sull'icona **Stampa foglio di controllo** (stampante) in cima all'elenco delle presenze della sessione. Il foglio è datato con la data della sessione.
 - **Tutte le classi per un servizio** -- Se la sessione ha un orario di servizio, fate clic su **Stampa tutte le classi** per stampare un foglio per classe assegnata a quell'orario di servizio. Ogni classe stampa sulla sua propria pagina.
-- **Dalla scheda Membri** -- Fate clic sull'icona **Stampa foglio di controllo** sopra l'elenco dei membri del gruppo per stampare un foglio senza data.
+- **Dalla scheda Membri** -- Fate clic sull'icona **Stampa foglio di controllo** sopra l'elenco dei membri del gruppo e scegliete **Foglio di presenza** per stampare un foglio senza data. Lo stesso menu offre un layout **Rubrica dei contatti** con telefono, email e indirizzo di ogni membro -- vedi [Stampa dell'elenco dei membri](../groups/group-members.md#printing-the-member-list).
 
 Il foglio si apre in una nuova scheda e la finestra di dialogo di stampa del vostro browser appare automaticamente.
 

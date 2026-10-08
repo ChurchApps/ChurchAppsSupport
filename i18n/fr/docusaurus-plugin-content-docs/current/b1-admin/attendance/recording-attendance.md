@@ -80,7 +80,7 @@ Une feuille d'appel est une liste de classe imprimable que les enseignants peuve
 
 - **À partir d'une session** -- Cliquez sur l'icône **Imprimer la Feuille d'Appel** (imprimante) en haut de la liste de présence de la session. La feuille est datée avec la date de la session.
 - **Toutes les classes pour un service** -- Si la session a une heure de service, cliquez sur **Imprimer Toutes les Classes** pour imprimer une feuille par classe assignée à cette heure de service. Chaque classe s'imprime sur sa propre page.
-- **À partir de l'onglet Membres** -- Cliquez sur l'icône **Imprimer la Feuille d'Appel** au-dessus de la liste des membres du groupe pour imprimer une feuille sans date.
+- **À partir de l'onglet Membres** -- Cliquez sur l'icône **Imprimer la Feuille d'Appel** au-dessus de la liste des membres du groupe et choisissez **Feuille de présence** pour imprimer une feuille sans date. Le même menu propose une mise en page **Liste de contacts** avec le téléphone, l'e-mail et l'adresse de chaque membre -- voir [Printing the Member List](../groups/group-members.md#printing-the-member-list).
 
 La feuille s'ouvre dans un nouvel onglet et la boîte de dialogue d'impression de votre navigateur apparaît automatiquement.
 

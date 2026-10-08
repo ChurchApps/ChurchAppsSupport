@@ -41,7 +41,7 @@ Les onglets disponibles sont :
 - **Messages** -- Un espace pour les membres du groupe de publier des messages et d'interagir les uns avec les autres. Affiché uniquement aux membres et uniquement si votre église a activé le chat de groupe pour ce groupe. Voir [Conversations de groupe](./conversations.md) pour plus de détails.
 - **Membres** -- Une liste de tous les membres du groupe, affichant leur photo et leur nom. Vous pouvez cliquer sur le nom d'un membre pour visiter son profil dans l'[annuaire des membres](../community/member-directory.md).
 - **Présence** -- Visible uniquement aux leaders du groupe (et aux membres du personnel ayant la permission de présence). Permet le suivi de ceux qui ont assisté aux réunions du groupe.
-- **Événements** -- Le calendrier du groupe montrant les réunions et les événements. Vous pouvez parcourir les événements à venir et passés.
+- **Événements** -- Le calendrier du groupe montrant les réunions et les événements. Utilisez les flèches pour passer d'un mois à l'autre. Deux boutons sous le nom du mois permettent de changer de vue : la **vue Mois** (l'icône de calendrier) affiche une grille de calendrier où vous touchez un jour pour voir ses événements, et la **vue Liste** (l'icône de liste) affiche les événements du mois par ordre de date, regroupés par jour. Lorsque vous consultez le mois en cours, la liste commence à partir d'aujourd'hui et n'affiche donc que ce qui est encore à venir.
 - **Ressources** -- Fichiers partagés et liens qui ont été publiés pour le groupe. Vous pouvez télécharger les fichiers téléchargés ou ouvrir les ressources liées.
 
 ## Capacités des leaders

@@ -51,6 +51,10 @@ Una vez que tu calendario curado está configurado, puedes compartirlo de varias
 Cuando los líderes de grupo agregan nuevos eventos a sus [grupos](../groups/creating-groups.md), esos eventos aparecen automáticamente en tu calendario curado. No necesitas actualizar manualmente el calendario curado cada vez que se agrega un nuevo evento.
 :::
 
+:::note Eventos privados
+Solo los eventos **públicos** aparecen en el calendario curado de tu sitio web y en su suscripción ICS. En B1 Admin, el personal que puede editar contenido también ve los eventos **privados** del grupo en el calendario curado, para que puedas revisar el horario completo mientras armas el calendario.
+:::
+
 ## Próximos Pasos
 
 - [Creación de Calendarios](creating-calendars) -- Aprende lo básico sobre la creación de calendarios

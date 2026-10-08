@@ -80,7 +80,7 @@ Ang roll sheet ay nai-print na listahan ng klase na maaaring markahan ng mga gur
 
 - **Mula sa isang session** -- I-click ang icon na **Print Roll Sheet** (printer) sa itaas ng listahan ng attendance ng session. May petsa ng session ang sheet.
 - **Lahat ng klase para sa isang serbisyo** -- Kung may oras ng serbisyo ang session, i-click ang **Print All Classes** para mag-print ng isang sheet kada klase na nakatalaga sa oras ng serbisyong iyon. Bawat klase ay nagpi-print sa sarili nitong pahina.
-- **Mula sa tab na Members** -- I-click ang icon na **Print Roll Sheet** sa itaas ng listahan ng miyembro ng grupo para mag-print ng sheet na walang petsa.
+- **Mula sa tab na Members** -- I-click ang icon na **Print Roll Sheet** sa itaas ng listahan ng miyembro ng grupo at piliin ang **Attendance Sheet** para mag-print ng sheet na walang petsa. May **Contact Roster** na layout din ang parehong menu, na may telepono, email, at address ng bawat miyembro -- tingnan ang [Pag-print ng Listahan ng mga Miyembro](../groups/group-members.md#printing-the-member-list).
 
 Bubukas ang sheet sa bagong tab at awtomatikong lalabas ang print dialog ng inyong browser.
 

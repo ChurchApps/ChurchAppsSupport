@@ -24,8 +24,10 @@ Basispfad: `/doing/plans`
 | GET | `/types/:planTypeId` | JWT | — | Pläne nach Plan-Typ abrufen |
 | GET | `/presenter` | JWT | — | Pläne für die nächsten 7 Tage (Präsentatoransicht) |
 | GET | `/public/current/:planTypeId` | Öffentlich | — | Aktuellen Plan für einen Plan-Typ abrufen |
+| GET | `/public/signup/:churchId` | Öffentlich | — | Pläne, die für die Selbstanmeldung offen sind, jeweils mit ihren Selbstanmeldungs-Positionen (plus `filledCount` der Accepted-/Unconfirmed-Zuweisungen) und Zeiten. Keine Freiwilligennamen |
+| GET | `/signup/:planId/volunteers` | JWT | — | `[{ positionId, names }]` für die Selbstanmeldungs-Positionen des Plans (Anzeigenamen der Accepted-/Unconfirmed-Zugewiesenen). Gibt `[]` zurück, sofern `showVolunteerNames` des Plans nicht aktiviert ist |
 | POST | `/` | JWT | — | Pläne erstellen oder aktualisieren (akzeptiert einzelnes Objekt oder Array) |
-| POST | `/copy/:id` | JWT | — | Einen Plan einschließlich Positionen, Zeiten, Zuweisungen und Service-Order-Elementen kopieren. Body enthält `copyMode` ("none", "positions", "all") und `copyServiceOrder` (boolean) |
+| POST | `/copy/:id` | JWT | — | Einen Plan einschließlich Positionen, Zeiten, Zuweisungen und Service-Order-Elementen kopieren. Body enthält `copyMode` ("none", "positions", "all") und `copyServiceOrder` (boolean). `notes` und `signupDeadlineHours` werden vom Quellplan übernommen, sofern der Body sie nicht angibt |
 | POST | `/autofill/:id` | JWT | — | Freiwilligenaufgaben für einen Plan automatisch ausfüllen. Body: `{ teams: [{ positionId, personIds }] }` |
 | DELETE | `/:id` | JWT | — | Plan und alle zugehörigen Zeiten, Zuweisungen, Positionen und Planelemente löschen |
 

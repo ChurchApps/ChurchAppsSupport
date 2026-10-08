@@ -85,7 +85,7 @@ Nettstedswidgeter vises på hver side og svever over sideinnholdet:
 Panelet **Omdirigeringer og statistikk** i Stilinnstillinger inneholder to urelaterte, men ofte nødvendige innstillinger:
 
 - **Statistikk** -- Legg inn **målings-ID-en for Google Analytics 4** for å følge med på besøkstrafikken på nettstedet.
-- **Omdirigeringer** -- Koble en gammel URL-bane til en ny, slik at lenker til en side du har flyttet eller gitt nytt navn fortsetter å fungere i stedet for å gi 404-feil. Skriv inn den gamle banen under **Fra** og den nye under **Til**, og klikk på **Lagre**.
+- **Omdirigeringer** -- Koble en gammel URL-bane til en ny, slik at lenker til en side du har flyttet eller gitt nytt navn fortsetter å fungere i stedet for å gi 404-feil. Skriv inn den gamle banen under **Fra** og den nye under **Til**, og klikk på **Lagre**. En omdirigering har også forrang over B1s innebygde sider (`/sermons`, `/stream`, `/donate`, `/bible` og `/votd`), slik at du kan sende den adressen et annet sted (for eksempel til din egen prekenside eller en YouTube-kanal). Den overstyrer ikke en side du har bygget selv på samme adresse. Slett den siden først hvis du vil at omdirigeringen skal gjelde.
 
 ## Egendefinert CSS og JavaScript
 

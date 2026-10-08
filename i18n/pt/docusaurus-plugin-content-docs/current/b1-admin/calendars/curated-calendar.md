@@ -51,6 +51,10 @@ Assim que seu calendário selecionado estiver configurado, você pode compartilh
 Quando os líderes de grupo adicionam novos eventos aos seus [grupos](../groups/creating-groups.md), esses eventos aparecem automaticamente em seu calendário selecionado. Você não precisa atualizar manualmente o calendário selecionado cada vez que um novo evento é adicionado.
 :::
 
+:::note Eventos privados
+Apenas eventos **públicos** aparecem no calendário selecionado em seu site e em sua inscrição ICS. No B1 Admin, a equipe que pode editar conteúdo também vê os eventos **privados** do grupo no calendário selecionado, para que você possa conferir a programação completa enquanto monta o calendário.
+:::
+
 ## Próximas Etapas
 
 - [Criando Calendários](creating-calendars) -- Aprenda o básico de criação de calendários

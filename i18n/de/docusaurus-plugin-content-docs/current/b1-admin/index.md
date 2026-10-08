@@ -36,16 +36,16 @@ Jeder Bereich, einschließlich Predigten, Kalender, Mobil und Einstellungen, ist
 ## Hauptfunktionen
 
 - **[Personen](./people/)** - Verwalten Sie Ihr Kirchenverzeichnis, fügen Sie Mitglieder hinzu, bearbeiten Sie Daten in Massen, verfolgen Sie Haushalte
-- **[Gruppen](./groups/)** - Erstellen und organisieren Sie Kirchengruppen mit Beitrittsanfragen, Mitgliederverwaltung, Gruppen-E-Mail und personalisierten Gruppennachrichten
+- **[Gruppen](./groups/)** - Erstellen und organisieren Sie Kirchengruppen mit Beitrittsanfragen, Mitgliederverwaltung, Gruppen-E-Mail, personalisierten Gruppennachrichten und druckbaren Kontaktlisten
 - **[Besucherverfolgung](./attendance/)** - Richten Sie Standorte und Gottesdienstzeiten ein, verfolgen Sie namentliche Besucherzahlen mit druckbaren Klassenlisten, sehen Sie, welche Klassen noch Besucherzahlen eingeben müssen, und protokollieren Sie einfache Kopfzählungen mit Trendberichten
-- **[Spenden](./donations/)** - Erfassen Sie Spenden in mehreren Währungen, verwalten Sie Fonds, drucken Sie Chargen mit Funduntersummen, generieren Sie Auszüge
+- **[Spenden](./donations/)** - Erfassen Sie Spenden in mehreren Währungen, verwalten Sie Fonds, drucken Sie Chargen (einzeln oder alle Chargen eines Zeitraums) mit Funduntersummen, generieren Sie Auszüge
 - **[Dienst](./serving/)** - Koordinieren Sie Freiwillige, erstellen Sie Dienste-Pläne, verwalten Sie Aufgaben und führen Sie Personen durch schrittweise Workflows durch, die automatisch E-Mails und Nachrichten senden können
 - **[Formulare](./forms/)** - Erstellen Sie benutzerdefinierte Formulare für Anmeldungen und Datenerfassung
 - **[Berichte](./reports/)** - Sehen Sie Geburtstags-, Besucher- und Spendenberichte
 - **[Website](./website/)** - Erstellen und verwalten Sie Ihre Kirchenwebsite mit benutzerdefinierten Navigationsstilen, oder deaktivieren Sie die öffentliche Website und behalten Sie nur das Mitgliederportal
 - **[Predigten](./sermons/)** - Verwalten Sie Ihre Predigtbibliothek, Live-Streaming und einen automatischen Podcast-Feed
 - **[Kalender](./calendars/)** - Erstellen Sie verwahrte Kalender, verwalten Sie Raum-/Ressourcenbuchungen und sehen Sie die Verfügbarkeit
-- **[Einstellungen](./settings/)** - Konfigurieren Sie Kircheninformationen, Region und Datumsformat, Nachrichten, Rollen, Berechtigungen und benutzerdefinierte Personenfelder
+- **[Einstellungen](./settings/)** - Konfigurieren Sie Kircheninformationen, Region, Datums- und Telefonnummernformat, Nachrichten, Rollen, Berechtigungen und benutzerdefinierte Personenfelder
 
 :::info
 Klicken Sie auf das Fragezeichen-Symbol in der oberen rechten Ecke einer beliebigen Seite, um schnell auf Hilfe und Dokumentation zuzugreifen.

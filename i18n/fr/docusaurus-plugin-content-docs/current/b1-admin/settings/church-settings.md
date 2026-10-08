@@ -57,7 +57,7 @@ Pour de meilleurs résultats, utilisez un logo avec un arrière-plan transparent
 
 Choisissez le jour par lequel vos calendriers commencent. La liste déroulante **Premier jour de la semaine** de la section Infos d'église est par défaut **Dimanche**, mais peut être définie sur n'importe quel jour. Une fois changé, il est respecté dans les grilles de calendrier de B1 Admin et du portail des membres B1.church -- les calendriers de groupe, les calendriers soignés et l'éditeur d'événements disposent tous les semaines à partir du jour que vous choisissez.
 
-## Région (format de date)
+## Région (format de date et de téléphone)
 
 Le paramètre **Région** contrôle la façon dont les dates et les heures sont écrites dans tout B1. Par défaut, les dates utilisent le format américain (par exemple, « 28 sept 2026 » et « 28/09/2026 »). Les églises en dehors des États-Unis peuvent passer à leur propre format -- par exemple, en choisissant Anglais (Royaume-Uni), on affiche « 28 Sept 2026 » et « 28/09/2026 » à la place.
 
@@ -65,7 +65,20 @@ Le paramètre **Région** contrôle la façon dont les dates et les heures sont 
 2. Choisissez votre région dans la liste déroulante **Région**. Chaque option affiche une date d'exemple pour que vous puissiez voir exactement comment les dates seront affichées.
 3. Cliquez sur **Enregistrer**.
 
-La fiche Région affiche alors votre région sélectionnée et un échantillon du **format de date**.
+La fiche Région affiche alors votre région sélectionnée, un échantillon du **format de date** et votre format de **numéros de téléphone**.
+
+### Format des numéros de téléphone
+
+La même fiche Région comporte un paramètre **Numéros de téléphone** qui contrôle la façon dont les numéros de téléphone sont saisis dans la fiche d'une personne :
+
+- **International (avec indicatif du pays)** -- la valeur par défaut. Les champs de téléphone affichent un sélecteur de drapeau de pays et enregistrent les numéros avec l'indicatif du pays (par exemple, +1 918 555 1234).
+- **Local (tel que saisi)** -- les champs de téléphone deviennent de simples zones de texte et enregistrent les numéros exactement comme vous les saisissez, sans ajouter d'indicatif du pays (par exemple, 0701 234 5678). Choisissez cette option si votre église écrit les numéros dans un format local et ne veut pas que B1 ajoute un indicatif du pays.
+
+Lorsque **Local** est sélectionné, la fiche Région affiche aussi « Numéros de téléphone locaux » à côté de votre région.
+
+:::tip
+Les SMS fonctionnent mieux lorsque les numéros comprennent l'indicatif du pays. Si vous envoyez des textos depuis B1, gardez le format **International**, ou assurez-vous que les numéros saisis en mode Local comprennent l'indicatif du pays.
+:::
 
 Votre région s'applique aux dates et heures dans tout B1 Admin et sur votre site web B1.church et le portail des membres, y compris les sermons, les articles de blog, les calendriers de groupe et les plans de service, afin que les membres voient les dates au même format que votre personnel.
 

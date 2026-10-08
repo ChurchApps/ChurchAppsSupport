@@ -14,7 +14,7 @@ Ang seksyong Settings ay kung saan mo isinasaayos ang account, branding, at mga 
 
 Nakaayos ang lugar ng Settings sa mga sumusunod na sub-seksyon:
 
-1. **Settings** -- I-configure ang pangunahing impormasyon ng iyong simbahan, branding, subdomain, rehiyon (format ng petsa), texting provider, at file storage. Tingnan ang [Church Settings](./church-settings.md) para sa mga detalye. Para gamitin ang sarili mong domain name (hal. yourchurch.org), tingnan ang [Custom Domain](./custom-domain.md).
+1. **Settings** -- I-configure ang pangunahing impormasyon ng iyong simbahan, branding, subdomain, rehiyon (format ng petsa at telepono), texting provider, at file storage. Tingnan ang [Church Settings](./church-settings.md) para sa mga detalye. Para gamitin ang sarili mong domain name (hal. yourchurch.org), tingnan ang [Custom Domain](./custom-domain.md).
 2. **Campuses** -- Magdagdag at mamahala ng maraming pisikal na lokasyon para sa iyong simbahan. Kapag nagawa na, lilitaw ang mga campus sa mga profile ng tao, sa setup ng attendance, at sa Demographics dashboard. Mararating ito bilang card sa pangunahing pahina ng Settings sa halip na hiwalay na item sa nabigasyon. Tingnan ang [Campuses](./campuses.md) para sa mga detalye.
 3. **Custom Fields** -- Mag-define ng sarili mong mga field na susubaybayan sa mga tao (petsa, numero, sagot na oo/hindi, o pick-list), pagkatapos ay punan ang mga ito sa mga profile at maghanap gamit ang mga ito. Mararating din ito bilang card sa pangunahing pahina ng Settings. Tingnan ang [Custom Fields](./custom-fields.md) para sa mga detalye.
 4. **Email Templates** -- Mag-save ng email na magagamit muli para sa manu-manong pagpapadala o mula sa isang workflow. Tingnan ang [Email Templates](./email-templates.md) para sa mga detalye.

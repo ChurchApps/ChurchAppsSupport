@@ -57,7 +57,7 @@ Per ottenere i migliori risultati, utilizza un logo con uno sfondo trasparente i
 
 Scegli quale giorno iniziano i tuoi calendari. L'elenco a discesa **First Day of Week** nella sezione Church Info è predefinito su **Sunday**, ma può essere impostato su qualsiasi giorno. Una volta modificato, viene rispettato in tutte le griglie del calendario in B1 Admin e nel portale dei membri B1.church, i calendari dei gruppi, i calendari curati e l'editor degli eventi tutti iniziano le settimane a partire dal giorno che scegli.
 
-## Regione (Formato della data)
+## Regione (Formato della data e del telefono)
 
 L'impostazione **Region** controlla come le date e gli orari sono scritti in tutto B1. Per impostazione predefinita, le date utilizzano il formato degli Stati Uniti (ad esempio, "Sep 28, 2026" e "9/28/2026"). Le chiese al di fuori degli Stati Uniti possono passare al loro formato, ad esempio scegliendo Inglese (Regno Unito) mostra "28 Sept 2026" e "28/09/2026" invece.
 
@@ -65,7 +65,20 @@ L'impostazione **Region** controlla come le date e gli orari sono scritti in tut
 2. Scegli la tua regione dall'elenco a discesa **Region**. Ogni opzione mostra una data di esempio in modo che tu possa vedere esattamente come appariranno le date.
 3. Fai clic su **Save**.
 
-La scheda Region mostra quindi la tua regione selezionata e un esempio del **Date format**.
+La scheda Region mostra quindi la tua regione selezionata, un esempio del **Date format** e il formato dei **Phone numbers**.
+
+### Formato del numero di telefono
+
+La stessa scheda Region ha un'impostazione **Phone numbers** che controlla come vengono inseriti i numeri di telefono nella scheda di una persona:
+
+- **International (with country code)** -- l'impostazione predefinita. I campi telefono mostrano un selettore con la bandiera del paese e salvano i numeri con il prefisso internazionale (ad esempio, +1 918 555 1234).
+- **Local (as typed)** -- i campi telefono diventano semplici caselle di testo e salvano i numeri esattamente come li digiti, senza aggiungere alcun prefisso internazionale (ad esempio, 0701 234 5678). Scegli questa opzione se la tua chiesa scrive i numeri in un formato locale e non vuole che B1 aggiunga un prefisso internazionale.
+
+Quando è selezionato **Local**, la scheda Region mostra anche "Local phone numbers" accanto alla tua regione.
+
+:::tip
+Gli SMS funzionano meglio quando i numeri includono il prefisso internazionale. Se invii SMS da B1, mantieni il formato **International**, oppure assicurati che i numeri digitati in modalità Local includano il prefisso internazionale.
+:::
 
 La tua regione si applica a date e orari in B1 Admin e sul tuo sito web B1.church e portale dei membri, inclusi sermoni, post di blog, calendari di gruppo e piani di servizio, in modo che i membri vedano le date nello stesso formato degli staff.
 

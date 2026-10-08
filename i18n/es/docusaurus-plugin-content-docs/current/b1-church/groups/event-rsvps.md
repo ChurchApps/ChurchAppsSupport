@@ -20,7 +20,7 @@ Los eventos de grupo pueden recopilar confirmaciones de asistencia para que los 
 
 ## Responder a un Evento
 
-1. Abre tu grupo en el portal de miembros y ve a su vista de **Eventos** / calendario.
+1. Abre tu grupo en el portal de miembros y ve a su pestaña **Eventos**. En la **vista de mes**, toca un día para ver sus eventos, o cambia a la **vista de lista** para ver de una vez todos los eventos próximos de este mes.
 2. Cada tarjeta de próximo evento muestra **¿Asistirás?** con tres botones: **Voy a ir**, **Tal vez** y **No puedo ir**.
 3. Toca tu respuesta. Tu elección se resalta, y cada botón muestra un recuento en vivo de cuántas personas han dado esa respuesta.
 4. Toca tu respuesta resaltada de nuevo para borrarla, o toca un botón diferente para cambiar tu respuesta.

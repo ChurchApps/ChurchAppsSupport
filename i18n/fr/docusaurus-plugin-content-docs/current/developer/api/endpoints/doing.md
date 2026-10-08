@@ -24,8 +24,10 @@ Chemin de base : `/doing/plans`
 | GET | `/types/:planTypeId` | JWT | — | Obtenir les plans par type de plan |
 | GET | `/presenter` | JWT | — | Obtenir les plans des 7 prochains jours (vue présentateur) |
 | GET | `/public/current/:planTypeId` | Public | — | Obtenir le plan actuel pour un type de plan |
+| GET | `/public/signup/:churchId` | Public | — | Plans ouverts à l'auto-inscription, chacun avec ses positions d'auto-inscription (plus `filledCount` des assignations Accepted/Unconfirmed) et ses horaires. Sans noms de bénévoles |
+| GET | `/signup/:planId/volunteers` | JWT | — | `[{ positionId, names }]` pour les positions d'auto-inscription du plan (noms d'affichage des personnes assignées Accepted/Unconfirmed). Retourne `[]` sauf si `showVolunteerNames` du plan est activé |
 | POST | `/` | JWT | — | Créer ou mettre à jour les plans (accepte un objet unique ou un tableau) |
-| POST | `/copy/:id` | JWT | — | Copier un plan y compris les postes, les horaires, les assignments et les éléments d'ordre de service. Le corps inclut `copyMode` ("none", "positions", "all") et `copyServiceOrder` (booléen) |
+| POST | `/copy/:id` | JWT | — | Copier un plan y compris les postes, les horaires, les assignments et les éléments d'ordre de service. Le corps inclut `copyMode` ("none", "positions", "all") et `copyServiceOrder` (booléen). `notes` et `signupDeadlineHours` sont repris du plan source, sauf si le corps les fournit |
 | POST | `/autofill/:id` | JWT | — | Remplissage automatique des assignments de bénévoles pour un plan. Corps : `{ teams: [{ positionId, personIds }] }` |
 | DELETE | `/:id` | JWT | — | Supprimer un plan et tous les horaires, assignments, postes et éléments de plan connexes |
 

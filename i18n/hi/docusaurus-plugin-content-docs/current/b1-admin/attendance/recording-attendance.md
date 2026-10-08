@@ -80,7 +80,7 @@ title: "उपस्थिति दर्ज करना"
 
 - **एक session से** -- session की attendance list के शीर्ष पर **Print Roll Sheet** (printer) icon पर क्लिक करें। sheet को session की date के साथ dated किया जाता है।
 - **एक सेवा के लिए सभी classes** -- यदि session का एक सेवा समय है, तो **Print All Classes** पर क्लिक करके उस सेवा समय को assign किए गए प्रत्येक class के लिए एक sheet print करें। हर class अपने ही page पर print होता है।
-- **Members tab से** -- समूह की member list के ऊपर **Print Roll Sheet** icon पर क्लिक करके एक undated sheet print करें।
+- **Members tab से** -- समूह की member list के ऊपर **Print Roll Sheet** icon पर क्लिक करें और एक undated sheet print करने के लिए **Attendance Sheet** चुनें। उसी menu में **Contact Roster** layout भी है, जिसमें हर सदस्य का फ़ोन, ईमेल और पता होता है -- [सदस्य सूची प्रिंट करना](../groups/group-members.md#printing-the-member-list) देखें।
 
 sheet एक नए tab में खुल जाता है और आपके browser की print dialog स्वचालित रूप से दिखाई देता है।
 

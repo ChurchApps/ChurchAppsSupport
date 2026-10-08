@@ -20,7 +20,7 @@ Group events can collect RSVPs so leaders know who is coming. On your group's ca
 
 ## Responding to an Event
 
-1. Open your group in the member portal and go to its **Events** / calendar view.
+1. Open your group in the member portal and go to its **Events** tab. In **Month view**, tap a day to see its events, or switch to **List view** to see all of this month's upcoming events at once.
 2. Each upcoming event card shows **Will you attend?** with three buttons: **Going**, **Maybe**, and **Can't go**.
 3. Tap your answer. Your choice highlights, and each button shows a live count of how many people have given that response.
 4. Tap your highlighted answer again to clear it, or tap a different button to change your response.

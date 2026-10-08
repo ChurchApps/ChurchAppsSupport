@@ -29,6 +29,7 @@ Positions are grouped by category (for example, "Band", "Hospitality", "Kids Min
 - **Position name** -- The role you would fill (e.g., "Drummer", "Greeter", "Coffee Server").
 - **Description** -- Details about the role, if provided by the administrator.
 - **Available spots** -- A progress bar showing how many slots are filled and how many remain.
+- **Who has signed up** -- If your church has turned on **Show volunteer names on signup page** for the plan, a "Signed up:" line lists the names of the people already serving in that position. Names are only shown when you are signed in.
 
 ## Signing Up
 

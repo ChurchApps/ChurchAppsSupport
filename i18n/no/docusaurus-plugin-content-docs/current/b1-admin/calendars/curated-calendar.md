@@ -51,6 +51,10 @@ Når den kuraterte kalenderen er satt opp, kan du dele den på flere måter:
 Når gruppeledere legger til nye arrangementer i [gruppene](../groups/creating-groups.md) sine, vises de automatisk i den kuraterte kalenderen. Du trenger ikke å oppdatere kalenderen manuelt hver gang et nytt arrangement legges til.
 :::
 
+:::note Private arrangementer
+Bare **offentlige** arrangementer vises i den kuraterte kalenderen på nettstedet ditt og i ICS-abonnementet. I B1 Admin ser ansatte som kan redigere innhold også gruppens **private** arrangementer i den kuraterte kalenderen, slik at du kan kontrollere hele timeplanen mens du setter sammen kalenderen.
+:::
+
 ## Neste steg
 
 - [Opprette kalendere](creating-calendars) -- Lær det grunnleggende om å opprette kalendere

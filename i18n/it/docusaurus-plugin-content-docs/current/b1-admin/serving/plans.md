@@ -33,7 +33,7 @@ Non è richiesto l'accesso amministrativo completo per gestire i piani. Chiunque
 
 1. Dalla visualizzazione del tipo di piano, fai clic su **Nuovo Piano**.
 2. Dai un nome al piano o utilizza la data come nome. Seleziona la **data** per il servizio.
-3. Se desideri copiare da un piano precedente, scegli solo posizioni o posizioni e incarichi. Se non desideri copiare, scegli semplicemente niente. Puoi anche copiare l'ordine di servizio dal mio piano precedente.
+3. Se desideri copiare da un piano precedente, scegli solo posizioni o posizioni e incarichi. Se non desideri copiare, scegli semplicemente niente. Puoi anche copiare l'ordine di servizio dal piano precedente. Quando copi da un piano precedente, il nuovo piano mantiene anche le **Note** e la **Scadenza iscrizione** di quel piano, così non devi reinserirle ogni settimana. Puoi modificare entrambe nelle impostazioni del nuovo piano.
 4. Salva il piano. Ora puoi iniziare ad assegnare i membri del team e costruire l'[ordine di servizio](./service-order.md).
 
 ## La Pagina Dettagli Piano
@@ -63,7 +63,7 @@ Configura i tuoi team nelle impostazioni del ministero prima di creare i piani. 
 Ogni piano ha impostazioni aggiuntive che puoi configurare facendo clic sull'icona modifica (matita) sul piano. Questi includono:
 
 - **Scadenza Iscrizione** -- il numero di ore prima del servizio quando le iscrizioni dei volontari si chiudono. Inserisci un numero negativo per mantenere le iscrizioni aperte dopo l'ora di inizio del servizio.
-- **Mostra i nomi dei volontari sulla pagina di iscrizione** -- quando selezionato, i volontari possono vedere chi altro si è già iscritto per ogni posizione.
+- **Mostra i nomi dei volontari sulla pagina di iscrizione** -- quando selezionato, i volontari che hanno effettuato l'accesso possono vedere chi altro si è già iscritto per ogni posizione sulla pagina di iscrizione di B1.church. I nomi non vengono mai mostrati ai visitatori che non hanno effettuato l'accesso.
 - **Scritto a matita** -- nasconde gli incarichi dai volontari fino a quando non sei pronto a pubblicare il programma.
 - **Pianifica automaticamente una sostituzione quando un volontario declina** -- quando selezionato, se un volontario assegnato declina la sua posizione B1 contatterà automaticamente la prossima persona disponibile nel roster del team e chiederà se possono servire. Questo continua lungo l'elenco finché qualcuno non accetta, mantenendo le tue posizioni riempite senza follow-up manuale.
 

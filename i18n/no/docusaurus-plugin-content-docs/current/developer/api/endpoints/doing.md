@@ -24,8 +24,10 @@ Basissti: `/doing/plans`
 | GET | `/types/:planTypeId` | JWT | — | Hent planer etter plantype |
 | GET | `/presenter` | JWT | — | Hent planer for de neste 7 dagene (presentasjonsvisning) |
 | GET | `/public/current/:planTypeId` | Public | — | Hent gjeldende plan for en plantype |
+| GET | `/public/signup/:churchId` | Public | — | Planer som er åpne for selvpåmelding, hver med sine selvpåmeldingsposisjoner (pluss `filledCount` for tildelinger med status Accepted/Unconfirmed) og tider. Ingen frivilligenavn |
+| GET | `/signup/:planId/volunteers` | JWT | — | `[{ positionId, names }]` for planens selvpåmeldingsposisjoner (visningsnavn på dem som er tildelt med status Accepted/Unconfirmed). Returnerer `[]` med mindre planens `showVolunteerNames` er slått på |
 | POST | `/` | JWT | — | Opprett eller oppdater planer (aksepterer enkeltobjekt eller liste) |
-| POST | `/copy/:id` | JWT | — | Kopier en plan inkludert posisjoner, tider, tildelinger og gudstjenesterekkefølge-elementer. Body inkluderer `copyMode` ("none", "positions", "all") og `copyServiceOrder` (boolean) |
+| POST | `/copy/:id` | JWT | — | Kopier en plan inkludert posisjoner, tider, tildelinger og gudstjenesterekkefølge-elementer. Body inkluderer `copyMode` ("none", "positions", "all") og `copyServiceOrder` (boolean). `notes` og `signupDeadlineHours` overføres fra kildeplanen med mindre body oppgir dem |
 | POST | `/autofill/:id` | JWT | — | Autofyll frivilligtildelinger for en plan. Body: `{ teams: [{ positionId, personIds }] }` |
 | DELETE | `/:id` | JWT | — | Slett en plan og alle relaterte tider, tildelinger, posisjoner og planelementer |
 

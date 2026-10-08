@@ -80,7 +80,7 @@ Uma folha de presença é uma lista de classe imprimível que professores podem 
 
 - **De uma sessão** -- Clique no ícone **Imprimir Folha de Presença** (impressora) no topo da lista de presença da sessão. A folha é datada com a data da sessão.
 - **Todas as classes para um serviço** -- Se a sessão tem um horário de serviço, clique em **Imprimir Todas as Classes** para imprimir uma folha por classe atribuída àquele horário de serviço. Cada classe imprime em sua própria página.
-- **Da aba Membros** -- Clique no ícone **Imprimir Folha de Presença** acima da lista de membros do grupo para imprimir uma folha sem data.
+- **Da aba Membros** -- Clique no ícone **Imprimir Folha de Presença** acima da lista de membros do grupo e escolha **Folha de Presença** para imprimir uma folha sem data. O mesmo menu tem um layout **Lista de Contatos** com o telefone, e-mail e endereço de cada membro -- consulte [Imprimindo a Lista de Membros](../groups/group-members.md#printing-the-member-list).
 
 A folha abre em uma nova aba e o diálogo de impressão do seu navegador aparece automaticamente.
 

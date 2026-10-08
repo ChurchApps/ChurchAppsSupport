@@ -51,6 +51,10 @@ Une fois votre calendrier organisé configuré, vous pouvez le partager de plusi
 Lorsque les responsables de groupe ajoutent de nouveaux événements à leurs [groupes](../groups/creating-groups.md), ces événements apparaissent automatiquement dans votre calendrier organisé. Vous n'avez pas besoin de mettre à jour manuellement le calendrier organisé chaque fois qu'un nouvel événement est ajouté.
 :::
 
+:::note Événements privés
+Seuls les événements **publics** apparaissent dans le calendrier organisé sur votre site web et dans son abonnement ICS. Dans B1 Admin, le personnel autorisé à modifier le contenu voit aussi les événements **privés** du groupe dans le calendrier organisé, ce qui vous permet de vérifier l'horaire complet pendant que vous composez le calendrier.
+:::
+
 ## Étapes suivantes
 
 - [Créer des calendriers](creating-calendars) – Apprenez les bases de la création de calendrier

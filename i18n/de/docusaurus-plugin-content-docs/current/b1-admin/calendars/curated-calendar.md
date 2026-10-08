@@ -51,6 +51,10 @@ Sobald Ihr kuratierter Kalender eingerichtet ist, können Sie ihn auf mehrere Ar
 Wenn Gruppenführer neue Ereignisse zu ihren [Gruppen](../groups/creating-groups.md) hinzufügen, werden diese Ereignisse automatisch in Ihrem kuratierten Kalender angezeigt. Sie müssen den kuratierten Kalender nicht jedes Mal manuell aktualisieren, wenn ein neues Ereignis hinzugefügt wird.
 :::
 
+:::note Private Ereignisse
+Nur **öffentliche** Ereignisse erscheinen im kuratierten Kalender auf Ihrer Website und in dessen ICS-Abonnement. In B1 Admin sehen Mitarbeiter, die Inhalte bearbeiten dürfen, im kuratierten Kalender auch die **privaten** Ereignisse der Gruppe, damit Sie beim Zusammenstellen des Kalenders den vollständigen Terminplan prüfen können.
+:::
+
 ## Nächste Schritte
 
 - [Kalender erstellen](creating-calendars) -- Lernen Sie die Grundlagen der Kalendergestaltung

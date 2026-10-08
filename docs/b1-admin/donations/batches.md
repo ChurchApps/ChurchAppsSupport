@@ -43,18 +43,24 @@ Your new batch appears in the list, ready for you to add donations.
 - **View donations** -- click a batch name to open it and see all the individual donations it contains. From there you can add, edit, or remove donations.
 - **Edit batch details** -- click the **Edit** button on a batch row to change its name or date.
 - **Sort** -- use the column headers to sort batches by name or date.
-- **Export** -- click **Export to CSV** to download your batch list as a spreadsheet.
+- **Export** -- click **Export** to download your batch list as a spreadsheet (CSV).
 
 ## Printing a Batch
 
 Open a batch and click the **Print** (printer) icon at the top of the donations list to print a paper copy for your counting team or deposit records. The printout includes:
 
-- The batch name and date
+- Your church's name, the batch name, and the batch date
 - Every donation in the batch, with the donor's name, method, notes, date, and amount (refunded gifts are crossed out and marked as refunded)
 - **Fund Subtotals** -- the total given to each fund in the batch
 - **Batch Total** -- the combined amount for the whole batch
 
 The Print icon only appears once the batch has at least one donation.
+
+### Printing Several Batches at Once
+
+To print every batch from a period in one go -- for example, all of last month's deposits -- click the **Print** (printer) icon in the header of the **Batches** list, next to **Export**. The **Print Batches** page opens with a **Start Date** and **End Date** that default to the last 30 days. Change either date to choose a different range.
+
+Every batch dated within the range (including the start and end dates) prints in date order, one batch per page, using the same layout as a single-batch printout. Batches with no donations are left out, and if none of the batches in the range have donations you will see "No batches with donations in this date range." Click **Print** to open your browser's print dialog, or **Close** to return to the batch list.
 
 ## Exporting a Batch to QuickBooks Online
 

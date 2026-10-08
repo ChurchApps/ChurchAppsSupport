@@ -33,7 +33,7 @@ Vollständiger Admin-Zugriff ist nicht erforderlich, um Pläne zu verwalten. Jed
 
 1. Klicken Sie in der Plantyp-Ansicht auf **Neuer Plan**.
 2. Geben Sie dem Plan einen Namen oder verwenden Sie das Datum als Namen. Wählen Sie das **Datum** für den Dienst.
-3. Wenn Sie von einem vorherigen Plan kopieren möchten, wählen Sie nur Positionen oder Positionen und Zuordnungen. Wenn Sie nicht kopieren möchten, wählen Sie einfach nichts. Sie können auch die Reihenfolge des Gottesdiensts von meinem vorherigen Plan kopieren.
+3. Wenn Sie von einem vorherigen Plan kopieren möchten, wählen Sie nur Positionen oder Positionen und Zuordnungen. Wenn Sie nicht kopieren möchten, wählen Sie einfach nichts. Sie können auch die Reihenfolge des Gottesdiensts vom vorherigen Plan kopieren. Wenn Sie von einem vorherigen Plan kopieren, übernimmt der neue Plan auch dessen **Notizen** und **Anmeldungsdeadline**, sodass Sie diese nicht jede Woche neu eingeben müssen. Sie können beides in den Einstellungen des neuen Plans ändern.
 4. Speichern Sie den Plan. Sie können jetzt beginnen, Teamkollegen zuzuweisen und die [Service-Reihenfolge](./service-order.md) zu erstellen.
 
 ## Die Plan-Detailseite
@@ -63,7 +63,7 @@ Richten Sie Ihre Teams in den Ministerium-Einstellungen ein, bevor Sie Pläne er
 Jeder Plan hat zusätzliche Einstellungen, die Sie konfigurieren können, indem Sie auf das Bearbeitungssymbol (Stift) für den Plan klicken. Diese umfassen:
 
 - **Anmeldungsdeadline** -- die Anzahl der Stunden vor dem Dienst, wenn Freiwilligen-Anmeldungen geschlossen werden. Geben Sie eine negative Zahl ein, um Anmeldungen nach der Servicestart-Zeit offen zu halten.
-- **Freiwilligennamen auf der Anmeldeseite anzeigen** -- wenn aktiviert, können Freiwillige sehen, wer sonst noch für jede Position angemeldet ist.
+- **Freiwilligennamen auf der Anmeldeseite anzeigen** -- wenn aktiviert, können angemeldete Freiwillige auf der Anmeldeseite von B1.church sehen, wer sonst noch für jede Position angemeldet ist. Besuchern, die nicht angemeldet sind, werden die Namen nie angezeigt.
 - **Tentativ** -- verbergt Zuweisungen von Freiwilligen, bis Sie bereit sind, den Zeitplan zu veröffentlichen.
 - **Automatisch einen Ersatz planen, wenn ein Freiwilliger ablehnt** -- wenn aktiviert, wird B1 automatisch die nächste verfügbare Person aus der Team-Liste kontaktieren und fragen, ob sie dienen kann, wenn ein zugewiesener Freiwilliger seine Position ablehnt. Dies setzt sich in der Liste fort, bis jemand zustimmt, wodurch Ihre Positionen ohne manuelle Nachverfolgung besetzt bleiben.
 

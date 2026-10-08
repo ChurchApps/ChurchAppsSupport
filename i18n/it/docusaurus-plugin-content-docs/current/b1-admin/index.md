@@ -36,16 +36,16 @@ Ogni sezione, inclusi Sermoni, Calendari, Mobile e Impostazioni, si trova nel [m
 ## Funzionalità Chiave
 
 - **[Persone](./people/)** - Gestisci la directory della tua chiesa, aggiungi membri, modifica in massa i dati, traccia le famiglie
-- **[Gruppi](./groups/)** - Crea e organizza i gruppi della chiesa con richieste di adesione, gestione dei membri, email di gruppo e messaggi di testo personalizzati per il gruppo
+- **[Gruppi](./groups/)** - Crea e organizza i gruppi della chiesa con richieste di adesione, gestione dei membri, email di gruppo e messaggi di testo personalizzati per il gruppo ed elenchi di contatti stampabili
 - **[Frequenza](./attendance/)** - Configura campus, orari dei servizi, traccia la frequenza nominativa con fogli di registrazione di classe stampabili, vedi quali classi hanno ancora bisogno che la frequenza sia inserita, e registra semplici conteggi con report di tendenza
-- **[Donazioni](./donations/)** - Registra le donazioni in più valute, gestisci i fondi, stampa batch con subtotali dei fondi, genera rendiconti
+- **[Donazioni](./donations/)** - Registra le donazioni in più valute, gestisci i fondi, stampa batch (uno alla volta o tutti i batch di un intervallo di date) con subtotali dei fondi, genera rendiconti
 - **[Servizio](./serving/)** - Coordina i volontari, crea piani di servizio, gestisci attività e sposta le persone attraverso flussi di lavoro passo dopo passo che possono inviare email e messaggi di testo automaticamente
 - **[Moduli](./forms/)** - Crea moduli personalizzati per registrazioni e raccolta dati
 - **[Report](./reports/)** - Visualizza report di compleanni, frequenza e donazioni
 - **[Sito Web](./website/)** - Crea e gestisci il sito web della tua chiesa con stili di navigazione personalizzati, o disattiva il sito pubblico e mantieni solo il portale dei membri
 - **[Sermoni](./sermons/)** - Gestisci la tua libreria di sermoni, la trasmissione in diretta e un feed podcast automatico
 - **[Calendari](./calendars/)** - Crea calendari curati, gestisci prenotazioni di stanze/risorse e visualizza la disponibilità
-- **[Impostazioni](./settings/)** - Configura le informazioni della chiesa, la regione e il formato della data, la messaggistica di testo, i ruoli, le autorizzazioni e i campi persona personalizzati
+- **[Impostazioni](./settings/)** - Configura le informazioni della chiesa, la regione, il formato della data e del numero di telefono, la messaggistica di testo, i ruoli, le autorizzazioni e i campi persona personalizzati
 
 :::info
 Fai clic sull'icona del punto interrogativo nell'angolo in alto a destra di qualsiasi pagina per accedere rapidamente alla guida e alla documentazione.

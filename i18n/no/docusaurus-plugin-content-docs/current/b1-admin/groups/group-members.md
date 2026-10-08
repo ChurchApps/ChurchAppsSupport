@@ -108,9 +108,18 @@ For å laste ned gruppens medlemsliste som en fil:
 1. Klikk på **nedlastingsikonet** på gruppens detaljside.
 2. En CSV-fil med gruppens medlemsinformasjon lastes ned til datamaskinen din.
 
-For å skrive ut en oppmøteliste for et kurs bruker du i stedet **Skriv ut navneliste**. Se [Skrive ut en navneliste](../attendance/recording-attendance.md#printing-a-roll-sheet).
-
 En CSV-eksport er nyttig for å importere data til andre verktøy eller for å ha offline-registre. For flere eksportalternativer, se [Eksportere data](../people/exporting-data.md).
+
+## Skrive ut medlemslisten {#printing-the-member-list}
+
+Klikk på ikonet **Skriv ut oppmøteliste** (skriveren) over medlemslisten og velg et oppsett. Siden åpnes i en ny fane, og utskriftsdialogen i nettleseren vises automatisk.
+
+- **Oppmøteliste** -- en klasseliste uten dato med ruter for **Til stede** og **Fraværende** som lærere kan krysse av for hånd. Se [Skrive ut en oppmøteliste](../attendance/recording-attendance.md#printing-a-roll-sheet).
+- **Kontaktliste** -- en kontaktliste for gruppen, datert med dagens dato og med menighetens navn og gruppens navn i overskriften. Hvert medlem har en rad med **Navn**, **Telefon**, **E-post** og **Adresse**. Ledere står først og er merket **Leder**, deretter kommer alle andre sortert etter etternavn. Telefonnummeret som vises er medlemmets mobilnummer, eller hjemme- eller jobbnummeret hvis det ikke finnes noe mobilnummer. Kontaktopplysninger er blanke for alle som har reservert seg.
+
+:::warning
+En kontaktliste inneholder medlemmenes personlige kontaktopplysninger. Del utskrevne eksemplarer bare med gruppens ledere og andre som trenger dem.
+:::
 
 ## Sende pushvarsler til gruppemedlemmer
 

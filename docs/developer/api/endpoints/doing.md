@@ -24,8 +24,10 @@ Base path: `/doing/plans`
 | GET | `/types/:planTypeId` | JWT | — | Get plans by plan type |
 | GET | `/presenter` | JWT | — | Get plans for the next 7 days (presenter view) |
 | GET | `/public/current/:planTypeId` | Public | — | Get the current plan for a plan type |
+| GET | `/public/signup/:churchId` | Public | — | Plans open for self-signup, each with its self-signup positions (plus `filledCount` of Accepted/Unconfirmed assignments) and times. No volunteer names |
+| GET | `/signup/:planId/volunteers` | JWT | — | `[{ positionId, names }]` for the plan's self-signup positions (display names of Accepted/Unconfirmed assignees). Returns `[]` unless the plan's `showVolunteerNames` is on |
 | POST | `/` | JWT | — | Create or update plans (accepts single object or array) |
-| POST | `/copy/:id` | JWT | — | Copy a plan including positions, times, assignments, and service order items. Body includes `copyMode` ("none", "positions", "all") and `copyServiceOrder` (boolean) |
+| POST | `/copy/:id` | JWT | — | Copy a plan including positions, times, assignments, and service order items. Body includes `copyMode` ("none", "positions", "all") and `copyServiceOrder` (boolean). `notes` and `signupDeadlineHours` carry over from the source plan unless the body supplies them |
 | POST | `/autofill/:id` | JWT | — | Auto-fill volunteer assignments for a plan. Body: `{ teams: [{ positionId, personIds }] }` |
 | DELETE | `/:id` | JWT | — | Delete a plan and all related times, assignments, positions, and plan items |
 
