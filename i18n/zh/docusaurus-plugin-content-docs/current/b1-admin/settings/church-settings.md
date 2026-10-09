@@ -40,7 +40,7 @@ title: "教会设置"
 你的子域必须在所有 ChurchApps 教会中是唯一的。如果你首选的名称已被使用，请尝试添加你的城市或州（例如，"gracechurch-dallas"）。
 :::
 
-如果你想让访客在你自己的域（例如，**www.gracechurch.org**）访问你的网站，请参见[自定义域](./custom-domain.md)。
+如果你想让访客在你自己的域（例如，**`www.gracechurch.org`**）访问你的网站，请参见[自定义域](./custom-domain.md)。
 
 ## 配置品牌
 

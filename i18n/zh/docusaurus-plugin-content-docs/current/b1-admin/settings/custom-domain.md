@@ -6,7 +6,7 @@ title: "自定义域"
 
 <div class="article-intro">
 
-你可以指向你自己的域（例如，**www.yourchurch.org**）到你的 B1 网站，以便访客在你教会的真实网址访问它，而不是默认的 yourchurch.1.church 地址。
+你可以指向你自己的域（例如，**`www.yourchurch.org`**）到你的 B1 网站，以便访客在你教会的真实网址访问它，而不是默认的 yourchurch.1.church 地址。
 
 </div>
 
