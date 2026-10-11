@@ -38,7 +38,7 @@ Magsimula sa pahina ng [Settings](./settings/) para i-configure ang pangalan ng 
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
 
-## Pag-navigate Gamit ang Jump menu
+## Pag-navigate Gamit ang Jump menu {#getting-around-with-the-jump-menu}
 
 Ang buong B1 Admin ay maaabot mula sa **Jump menu** sa kaliwang itaas ng header. Sa tabi ng maliit na logo ng simbahan (na magbabalik sa iyo sa Dashboard) ay may search bar na nagpapakita kung nasaan ka, tulad ng **Donations › Batches**, kasama ang pahiwatig na **Ctrl K** (o **⌘ K**).
 

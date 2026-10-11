@@ -38,7 +38,7 @@ Inizia con la pagina [Impostazioni](./settings/) per configurare il nome della t
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
 
-## Come Muoversi con il Menu Jump
+## Come Muoversi con il Menu Jump {#getting-around-with-the-jump-menu}
 
 Tutto di B1 Admin è raggiungibile dal **menu Jump** in alto a sinistra dell'intestazione. Accanto al piccolo logo della chiesa (che ti riporta al Dashboard) c'è una barra di ricerca che mostra dove ti trovi, come **Donazioni › Batch**, insieme a un suggerimento **Ctrl K** (o **⌘ K**).
 

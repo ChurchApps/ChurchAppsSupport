@@ -82,7 +82,7 @@ Textnachrichten funktionieren am besten, wenn Nummern die Landesvorwahl enthalte
 
 Ihre Region gilt für Daten und Uhrzeiten in B1 Admin und auf Ihrer B1.church-Website und Ihrem Mitgliederportal, einschließlich Predigten, Blog-Beiträgen, Gruppenkalendern und Dienst-Plänen, damit Mitglieder Daten im gleichen Format wie Ihre Mitarbeiter sehen.
 
-## Texting
+## Texting {#texting}
 
 Verbinden Sie einen Texting-Anbieter, um SMS-Nachrichten an eine Person oder eine ganze Gruppe von B1 Admin aus zu senden. Texte werden über Ihr eigenes Konto mit dem Anbieter versendet, daher gelten dessen Preise und Limits.
 
@@ -101,7 +101,7 @@ Sobald ein Anbieter verbunden ist, sehen Mitarbeiter mit der Berechtigung zum Ve
 - Mitglieder, die sich für **Hide me from the member directory** entschieden haben, werden als abgemeldet gezählt und übersprungen.
 - Familienmitglieder, die eine Mobilnummer teilen, erhalten den Text nur einmal.
 
-### Personalisierung von Texten mit Merge Fields
+### Personalisierung von Texten mit Merge Fields {#personalizing-texts-with-merge-fields}
 
 Unter der Nachrichtenbox zeigt das Text-Dialogfeld Platzhalter-Chips: **First Name**, **Last Name**, **Display Name** und **Church Name**. Klicken Sie auf einen Chip, um seinen Platzhalter (`{{firstName}}`, `{{lastName}}`, `{{displayName}}` oder `{{churchName}}`) an Ihrem Cursor einzufügen. Wenn der Text versendet wird, wird jeder Platzhalter durch die Details des Empfängers ersetzt, daher erreicht eine Gruppentext wie `Hi {{firstName}}, see you Sunday!` jedes Mitglied mit seinem eigenen Namen. Platzhalter funktionieren sowohl für Gruppentext als auch für Text an eine einzelne Person.
 

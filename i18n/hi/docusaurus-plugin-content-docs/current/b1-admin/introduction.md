@@ -38,7 +38,7 @@ B1.church चुनने के लिए धन्यवाद! यह पर�
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
 
-## Jump Menu के साथ चारों ओर जाएं
+## Jump Menu के साथ चारों ओर जाएं {#getting-around-with-the-jump-menu}
 
 B1 Admin के सभी हेडर के शीर्ष-बाएं में **Jump menu** से पहुंचा जाता है। छोटे चर्च लोगो के बगल में (जो आपको Dashboard पर वापस ले जाता है) एक खोज पट्टी है जो दिखाती है कि आप कहाँ हैं, जैसे **Donations › Batches**, साथ ही एक **Ctrl K** (या **⌘ K**) संकेत के साथ।
 

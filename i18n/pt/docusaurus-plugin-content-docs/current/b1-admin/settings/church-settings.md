@@ -82,7 +82,7 @@ As mensagens de texto funcionam melhor quando os números incluem o código do p
 
 Sua região se aplica a datas e horas em todo o B1 Admin e em seu site B1.church e portal de membros, incluindo sermões, posts de blog, calendários de grupo e planos de serviço, para que os membros vejam datas no mesmo formato que sua equipe.
 
-## Mensagens de Texto
+## Mensagens de Texto {#texting}
 
 Conecte um provedor de mensagens de texto para enviar mensagens SMS para uma pessoa ou um grupo inteiro a partir do B1 Admin. Os textos são enviados através de sua própria conta com o provedor, portanto seus preços e limites se aplicam.
 
@@ -101,7 +101,7 @@ Uma vez que um provedor está conectado, a equipe com permissão para enviar tex
 - Membros que escolheram **Hide me from the member directory** (Esconda-me do diretório de membros) são contados como optando por não receber e ignorados.
 - Membros da família que compartilham um número de telefone celular recebem o texto apenas uma vez.
 
-### Personalizando Textos com Campos de Mesclagem
+### Personalizando Textos com Campos de Mesclagem {#personalizing-texts-with-merge-fields}
 
 Abaixo da caixa de mensagem, o diálogo Text mostra crachás de espaço reservado: **First Name** (Primeiro Nome), **Last Name** (Sobrenome), **Display Name** (Nome de Exibição) e **Church Name** (Nome da Igreja). Clique em um crachá para inserir seu espaço reservado (`{{firstName}}`, `{{lastName}}`, `{{displayName}}` ou `{{churchName}}`) no seu cursor. Quando o texto é enviado, cada espaço reservado é substituído pelos detalhes do destinatário, para que um texto de grupo como `Hi {{firstName}}, see you Sunday!` (`Oi {{firstName}}, vejo você no domingo!`) chegue a cada membro com seu próprio nome. Os espaços reservados funcionam tanto para textos de grupo quanto para textos para uma única pessoa.
 

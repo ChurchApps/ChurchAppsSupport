@@ -38,7 +38,7 @@ Comienza con la página [Settings](./settings/) para configurar el nombre de tu 
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
 
-## Navegar con el Menú Saltar
+## Navegar con el Menú Saltar {#getting-around-with-the-jump-menu}
 
 Todo B1 Admin se alcanza desde el **menú Saltar** en la parte superior izquierda del encabezado. Junto al pequeño logo de iglesia (que te lleva de vuelta al Dashboard) hay una barra de búsqueda que muestra dónde estás, como **Donations › Batches**, junto con una pista **Ctrl K** (o **⌘ K**).
 

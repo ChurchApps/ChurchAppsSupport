@@ -38,7 +38,7 @@ B1.church를 선택해주셔서 감사합니다! 이 소개는 B1.church Admin �
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
 
-## Jump 메뉴로 탐색하기
+## Jump 메뉴로 탐색하기 {#getting-around-with-the-jump-menu}
 
 B1 Admin의 모든 부분은 헤더의 왼쪽 상단에 있는 **Jump 메뉴**에서 도달할 수 있습니다. 작은 교회 로고 (대시보드로 돌아갑니다) 옆에는 **기부금 › 배치**와 같은 현재 위치를 표시하는 검색창과 **Ctrl K** (또는 **⌘ K**) 힌트가 있습니다.
 
