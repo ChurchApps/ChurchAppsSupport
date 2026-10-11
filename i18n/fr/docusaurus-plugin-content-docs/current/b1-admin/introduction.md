@@ -38,7 +38,7 @@ Commencez par la page [Paramètres](./settings/) pour configurer le nom, la marq
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
 
-## S'orienter avec le menu Sauter
+## S'orienter avec le menu Sauter {#getting-around-with-the-jump-menu}
 
 Tout B1 Admin est accessible depuis le **menu Sauter** en haut à gauche de l'en-tête. À côté du petit logo d'église (qui vous ramène au Tableau de bord) se trouve une barre de recherche qui montre où vous êtes, comme **Dons › Lots**, avec un indice **Ctrl K** (ou **⌘ K**).
 

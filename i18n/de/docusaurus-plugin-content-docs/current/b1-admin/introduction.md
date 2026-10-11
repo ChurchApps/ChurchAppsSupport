@@ -38,7 +38,7 @@ Beginnen Sie mit der [Einstellungen](./settings/)-Seite, um Ihren Kirchennamen, 
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
 
-## Navigation mit dem Jump-Menü
+## Navigation mit dem Jump-Menü {#getting-around-with-the-jump-menu}
 
 Alle B1 Admin-Inhalte werden vom **Jump-Menü** oben links in der Kopfzeile aufgerufen. Neben dem kleinen Kirchenlogo (das Sie zum Dashboard zurückbringt) ist eine Suchleiste, die anzeigt, wo Sie sich befinden, z. B. **Spenden › Chargen**, zusammen mit einem **Strg K**-Hinweis (oder **⌘ K**).
 

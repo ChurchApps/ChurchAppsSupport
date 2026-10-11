@@ -82,7 +82,7 @@ Texting works best when numbers include the country code. If you send texts from
 
 Your region applies to dates and times across B1 Admin and on your B1.church website and member portal, including sermons, blog posts, group calendars, and serving plans, so members see dates in the same format your staff do.
 
-## Texting
+## Texting {#texting}
 
 Connect a texting provider to send SMS messages to a person or a whole group from B1 Admin. Texts are sent through your own account with the provider, so their pricing and limits apply.
 
@@ -101,7 +101,7 @@ Once a provider is connected, staff with permission to send texts see a text ico
 - Members who chose **Hide me from the member directory** are counted as opted out and skipped.
 - Family members who share a mobile number get the text only once.
 
-### Personalizing Texts with Merge Fields
+### Personalizing Texts with Merge Fields {#personalizing-texts-with-merge-fields}
 
 Below the message box, the Text dialog shows placeholder chips: **First Name**, **Last Name**, **Display Name**, and **Church Name**. Click a chip to insert its placeholder (`{{firstName}}`, `{{lastName}}`, `{{displayName}}`, or `{{churchName}}`) at your cursor. When the text is sent, each placeholder is replaced with that recipient's details, so a group text like `Hi {{firstName}}, see you Sunday!` reaches each member with their own name. Placeholders work for both group texts and texts to a single person.
 

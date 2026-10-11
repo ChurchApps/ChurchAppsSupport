@@ -38,7 +38,7 @@ title: B1.church简介
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
 
-## 用Jump 菜单导航
+## 用Jump 菜单导航 {#getting-around-with-the-jump-menu}
 
 B1 Admin的所有内容都可以通过标题左上角的**Jump 菜单**访问。在小教会标志(它将你带回仪表板)旁边是一个搜索栏,显示你在哪里,例如**捐赠 › 批次**,以及一个**Ctrl K**(或**⌘ K**)的提示。
 

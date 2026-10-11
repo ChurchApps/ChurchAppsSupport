@@ -38,7 +38,7 @@ Comece pela página [Configurações](./settings/) para configurar o nome da sua
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
 
-## Navegando com o menu Jump
+## Navegando com o menu Jump {#getting-around-with-the-jump-menu}
 
 Todo o B1 Admin é acessado a partir do **menu Jump** no canto superior esquerdo do cabeçalho. Ao lado do pequeno logotipo da igreja (que o leva de volta ao Dashboard) está uma barra de pesquisa que mostra onde você está, como **Doações › Lotes**, juntamente com uma dica de **Ctrl K** (ou **⌘ K**).
 

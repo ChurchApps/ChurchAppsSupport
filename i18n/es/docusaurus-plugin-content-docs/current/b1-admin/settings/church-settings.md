@@ -82,7 +82,7 @@ Los mensajes de texto funcionan mejor cuando los números incluyen el código de
 
 Tu región se aplica a fechas y horas en todo B1 Admin y en tu sitio web B1.church y portal de miembros, incluyendo sermones, publicaciones de blog, calendarios de grupos y planes de servicio, para que los miembros vean fechas en el mismo formato que tu personal.
 
-## Mensajes de texto
+## Mensajes de texto {#texting}
 
 Conecta un proveedor de mensajes de texto para enviar mensajes SMS a una persona o a un grupo completo desde B1 Admin. Los textos se envían a través de tu propia cuenta con el proveedor, por lo que se aplican su precios y límites.
 
@@ -101,7 +101,7 @@ Una vez que se conecta un proveedor, el personal con permiso para enviar textos 
 - Los miembros que eligieron **Ocúltame del directorio de miembros** se cuentan como rechazados y se omiten.
 - Los miembros de la familia que comparten un número móvil reciben el texto solo una vez.
 
-### Personalizar textos con campos de fusión
+### Personalizar textos con campos de fusión {#personalizing-texts-with-merge-fields}
 
 Debajo del cuadro de mensaje, el diálogo de Texto muestra fichas de marcador de posición: **Nombre**, **Apellido**, **Nombre de visualización** y **Nombre de iglesia**. Haz clic en una ficha para insertar su marcador de posición (`{{firstName}}`, `{{lastName}}`, `{{displayName}}`, o `{{churchName}}`) en tu cursor. Cuando se envía el texto, cada marcador de posición se reemplaza con los detalles del destinatario, para que un texto grupal como `Hola {{firstName}}, ¡nos vemos el domingo!` llegue a cada miembro con su propio nombre. Los marcadores de posición funcionan tanto para textos de grupo como para textos a una sola persona.
 

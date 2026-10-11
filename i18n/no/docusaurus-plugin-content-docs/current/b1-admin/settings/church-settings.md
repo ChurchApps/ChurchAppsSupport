@@ -82,7 +82,7 @@ Tekstmeldinger fungerer best når numrene inneholder landskode. Hvis du sender t
 
 Regionen din gjelder for datoer og klokkeslett i hele B1 Admin og på B1.church-nettstedet og medlemsportalen din, inkludert prekener, blogginnlegg, gruppekalendere og tjenesteplaner, slik at medlemmene ser datoer i samme format som de ansatte.
 
-## Tekstmeldinger
+## Tekstmeldinger {#texting}
 
 Koble til en tekstmeldingsleverandør for å sende SMS til en person eller en hel gruppe fra B1 Admin. Meldingene sendes via din egen konto hos leverandøren, så leverandørens priser og begrensninger gjelder.
 
@@ -101,7 +101,7 @@ Når en leverandør er koblet til, ser medarbeidere med tillatelse til å sende 
 - Medlemmer som valgte **Skjul meg fra medlemsregisteret** regnes som reservert og hoppes over.
 - Familiemedlemmer som deler mobilnummer får meldingen bare én gang.
 
-### Personalisere tekstmeldinger med flettefelt
+### Personalisere tekstmeldinger med flettefelt {#personalizing-texts-with-merge-fields}
 
 Under meldingsboksen viser tekstdialogen plassholderbrikker: **Fornavn**, **Etternavn**, **Visningsnavn** og **Kirkens navn**. Klikk på en brikke for å sette inn plassholderen (`{{firstName}}`, `{{lastName}}`, `{{displayName}}` eller `{{churchName}}`) der markøren står. Når meldingen sendes, erstattes hver plassholder med mottakerens opplysninger, slik at en gruppemelding som `Hei {{firstName}}, vi sees på søndag!` når hvert medlem med deres eget navn. Plassholdere fungerer både for gruppemeldinger og meldinger til én enkelt person.
 

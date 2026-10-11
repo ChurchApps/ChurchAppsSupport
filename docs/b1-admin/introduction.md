@@ -38,7 +38,7 @@ Start with the [Settings](./settings/) page to configure your church name, brand
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
 
-## Getting Around with the Jump Menu
+## Getting Around with the Jump Menu {#getting-around-with-the-jump-menu}
 
 All of B1 Admin is reached from the **Jump menu** at the top-left of the header. Next to the small church logo (which takes you back to the Dashboard) is a search bar that shows where you are, such as **Donations › Batches**, along with a **Ctrl K** (or **⌘ K**) hint.
 

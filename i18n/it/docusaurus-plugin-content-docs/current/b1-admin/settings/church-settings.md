@@ -82,7 +82,7 @@ Gli SMS funzionano meglio quando i numeri includono il prefisso internazionale. 
 
 La tua regione si applica a date e orari in B1 Admin e sul tuo sito web B1.church e portale dei membri, inclusi sermoni, post di blog, calendari di gruppo e piani di servizio, in modo che i membri vedano le date nello stesso formato degli staff.
 
-## Messaggistica di testo
+## Messaggistica di testo {#texting}
 
 Connetti un provider di messaggistica di testo per inviare SMS a una persona o a un intero gruppo da B1 Admin. I messaggi vengono inviati tramite il tuo account con il provider, quindi i loro prezzi e limiti si applicano.
 
@@ -101,7 +101,7 @@ Una volta collegato un provider, lo staff con l'autorizzazione per inviare SMS v
 - I membri che hanno scelto **Hide me from the member directory** vengono contati come rinunciati e saltati.
 - I membri della famiglia che condividono un numero di telefono cellulare ricevono il messaggio una sola volta.
 
-### Personalizzazione dei messaggi di testo con campi di unione
+### Personalizzazione dei messaggi di testo con campi di unione {#personalizing-texts-with-merge-fields}
 
 Sotto la casella del messaggio, la finestra di dialogo Testo mostra chip segnaposto: **First Name**, **Last Name**, **Display Name**, e **Church Name**. Fai clic su un chip per inserire il suo segnaposto (`{{firstName}}`, `{{lastName}}`, `{{displayName}}`, o `{{churchName}}`) al tuo cursore. Quando il messaggio viene inviato, ogni segnaposto viene sostituito con i dettagli di quel destinatario, quindi un messaggio di gruppo come `Hi {{firstName}}, see you Sunday!` raggiunge ogni membro con il suo nome. I segnaposti funzionano sia per i messaggi di gruppo che per i messaggi a una singola persona.
 

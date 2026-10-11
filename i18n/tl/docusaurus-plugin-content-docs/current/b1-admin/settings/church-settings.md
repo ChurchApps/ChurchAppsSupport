@@ -82,7 +82,7 @@ Pinakamahusay gumana ang texting kapag may country code ang mga numero. Kung nag
 
 Naaangkop ang iyong rehiyon sa mga petsa at oras sa buong B1 Admin at sa iyong B1.church website at member portal, kasama ang mga sermon, blog post, kalendaryo ng grupo, at serving plan, para makita ng mga miyembro ang mga petsa sa parehong format na nakikita ng iyong staff.
 
-## Texting
+## Texting {#texting}
 
 Mag-connect ng texting provider para makapagpadala ng SMS sa isang tao o sa buong grupo mula sa B1 Admin. Ipinapadala ang mga text sa pamamagitan ng sarili mong account sa provider, kaya umiiral ang kanilang presyo at mga limitasyon.
 
@@ -101,7 +101,7 @@ Kapag may naka-connect nang provider, ang staff na may pahintulot na magpadala n
 - Ang mga miyembrong pumili ng **Hide me from the member directory** ay ibibilang na nag-opt out at lalaktawan.
 - Ang mga miyembro ng pamilya na iisa ang mobile number ay makakatanggap lang ng text nang isang beses.
 
-### Pag-personalize ng mga Text gamit ang Merge Field
+### Pag-personalize ng mga Text gamit ang Merge Field {#personalizing-texts-with-merge-fields}
 
 Sa ibaba ng message box, ipinapakita ng Text dialog ang mga placeholder chip: **First Name**, **Last Name**, **Display Name**, at **Church Name**. I-click ang isang chip para ipasok ang placeholder nito (`{{firstName}}`, `{{lastName}}`, `{{displayName}}`, o `{{churchName}}`) sa kinaroroonan ng iyong cursor. Kapag ipinadala ang text, papalitan ang bawat placeholder ng detalye ng tatanggap, kaya ang group text na `Hi {{firstName}}, see you Sunday!` ay makakarating sa bawat miyembro na may sarili nilang pangalan. Gumagana ang mga placeholder sa mga group text at sa mga text sa iisang tao.
 

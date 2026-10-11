@@ -38,7 +38,7 @@ title: Введение в B1.church
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
 
-## Навигация с помощью меню Jump
+## Навигация с помощью меню Jump {#getting-around-with-the-jump-menu}
 
 На весь B1 Admin можно получить доступ из **меню Jump** в верхнем левом углу заголовка. Рядом с маленьким логотипом церкви (который возвращает вас на Dashboard) находится поисковая строка, которая показывает, где вы находитесь, например **Donations › Batches**, с подсказкой **Ctrl K** (или **⌘ K**).
 

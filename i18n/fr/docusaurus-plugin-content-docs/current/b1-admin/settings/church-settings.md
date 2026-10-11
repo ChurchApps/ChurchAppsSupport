@@ -82,7 +82,7 @@ Les SMS fonctionnent mieux lorsque les numéros comprennent l'indicatif du pays.
 
 Votre région s'applique aux dates et heures dans tout B1 Admin et sur votre site web B1.church et le portail des membres, y compris les sermons, les articles de blog, les calendriers de groupe et les plans de service, afin que les membres voient les dates au même format que votre personnel.
 
-## SMS
+## SMS {#texting}
 
 Connectez un fournisseur de SMS pour envoyer des messages texte à une personne ou à un groupe entier à partir de B1 Admin. Les textes sont envoyés via votre propre compte auprès du fournisseur, de sorte que ses tarifs et limites s'appliquent.
 
@@ -101,7 +101,7 @@ Une fois qu'un fournisseur est connecté, le personnel autorisé à envoyer des 
 - Les membres qui ont choisi **Me cacher de l'annuaire des membres** sont comptés comme désabonnés et ignorés.
 - Les membres de la famille qui partagent un numéro de téléphone mobile ne reçoivent le texte qu'une seule fois.
 
-### Personnalisation des textes avec des champs de fusion
+### Personnalisation des textes avec des champs de fusion {#personalizing-texts-with-merge-fields}
 
 Sous la zone de message, la boîte de dialogue Texte affiche les puces d'espace réservé : **Prénom**, **Nom**, **Nom d'affichage**, et **Nom de l'église**. Cliquez sur une puce pour insérer son espace réservé (`{{firstName}}`, `{{lastName}}`, `{{displayName}}`, ou `{{churchName}}`) à votre curseur. Lorsque le texte est envoyé, chaque espace réservé est remplacé par les détails du destinataire, donc un texte de groupe comme `Bonjour {{firstName}}, à bientôt le dimanche !` atteint chaque membre avec son propre nom. Les espaces réservés fonctionnent à la fois pour les textes de groupe et les textes à une seule personne.
 
