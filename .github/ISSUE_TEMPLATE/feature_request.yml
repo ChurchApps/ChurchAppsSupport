@@ -20,6 +20,7 @@ body:
       options:
         - B1.church
         - Lessons.church
+        - WorshipCommons.org
         - Other
     validations:
       required: true

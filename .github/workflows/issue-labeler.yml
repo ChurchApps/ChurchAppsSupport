@@ -33,6 +33,10 @@ jobs:
             if (body.includes('Application\n\nLessons.church')) {
               labels.push('lessons');
             }
+            if (body.includes('Application\n\nWorshipCommons.org')
+                || (body.includes('Application\n\nOther') && /worship\s*commons/i.test(`${issue.title}\n${body}`))) {
+              labels.push('worshipcommons');
+            }
 
             if (labels.length > 0) {
               await github.rest.issues.addLabels({
