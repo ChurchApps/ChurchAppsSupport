@@ -6,149 +6,149 @@ title: "Membres du groupe"
 
 <div class="article-intro">
 
-Une fois que vous avez créé un groupe, l'étape suivante consiste à ajouter des membres. À partir de la page de détail d'un groupe, vous pouvez rechercher des personnes, les ajouter au groupe, assigner des leaders, envoyer des messages et exporter la liste des membres. Gérer l'adhésion au groupe est essentiel pour coordonner les petits groupes, les comités et les classes.
+Une fois que vous avez créé un groupe, l'étape suivante consiste à ajouter des membres. Depuis la page de détail d'un groupe, vous pouvez rechercher des personnes, les ajouter au groupe, désigner des responsables, envoyer des messages et exporter la liste des membres. La gestion des membres d'un groupe est essentielle pour coordonner les petits groupes, les comités et les classes.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Vous avez besoin d'au moins un groupe configuré dans B1 Admin. Voir [Creating Groups](creating-groups.md) si vous n'en avez pas créé un encore.
-- Les personnes que vous voulez ajouter doivent déjà être dans votre [People](../people/adding-people.md) directory. Si quelqu'un ne l'est pas, vous pouvez les créer à partir de la recherche de membre (voir ci-dessous).
+- Vous devez avoir au moins un groupe configuré dans B1 Admin. Consultez [Créer des groupes](creating-groups.md) si vous n'en avez pas encore créé.
+- Les personnes que vous souhaitez ajouter doivent déjà figurer dans votre répertoire [Personnes](../people/adding-people.md). Si ce n'est pas le cas, vous pouvez les créer depuis la recherche de membres (voir ci-dessous).
 
 </div>
 
 ## Ajouter des membres à un groupe
 
-1. Dans le [menu de saut](../introduction.md#getting-around-with-the-jump-menu), choisissez **People > Groups** et cliquez sur le groupe que vous voulez gérer.
-2. Dans la section **Members** de la page du groupe, cliquez sur **All members**. (Les équipes et les ministères s'ouvrent directement sur leur liste de membres.)
-3. Dans la boîte **Add Person** sous la liste des membres, tapez le nom de la personne que vous voulez ajouter et appuyez sur **Enter** ou cliquez sur l'icône de recherche.
-4. Cliquez sur le nom de la personne, ou sur l'icône d'ajout à côté, dans les résultats de la recherche.
+1. Dans le [menu de navigation rapide](../introduction.md#getting-around-with-the-jump-menu), choisissez **Personnes > Groupes** puis cliquez sur le groupe que vous souhaitez gérer.
+2. Dans la section **Membres** de la page du groupe, cliquez sur **Tous les membres**. (Les équipes et les ministères ouvrent directement leur liste de membres.)
+3. Dans la zone **Ajouter une personne** sous la liste des membres, saisissez le nom de la personne à ajouter, puis appuyez sur **Entrée** ou cliquez sur l'icône de recherche.
+4. Cliquez sur le nom de la personne, ou sur l'icône d'ajout à côté, dans les résultats de recherche.
 5. La personne apparaît maintenant dans la liste des membres du groupe.
 
 :::tip
-Avant de taper quoi que ce soit, la boîte **Add Person** affiche une courte liste de **Recent people** que vous pouvez ajouter en un clic.
+Avant de saisir quoi que ce soit, la zone **Ajouter une personne** affiche une courte liste de **Personnes récentes** que vous pouvez ajouter en un clic.
 :::
 
-Une fois terminé, cliquez sur le lien **Back to** avec le nom du groupe pour revenir à la page du groupe. La page du groupe affiche un résumé des **Members**, **Sessions**, **Calendar** et **Health** du groupe, chacun avec un lien vers sa vue complète.
+Lorsque vous avez terminé, cliquez sur le lien **Retour à** suivi du nom du groupe pour revenir à la page du groupe. La page du groupe affiche un résumé des **Membres**, des **Sessions**, du **Calendrier** et de l'**État**, chacun avec un lien vers sa vue complète.
 
-### Ajouter quelqu'un qui n'est pas encore dans B1
+### Ajouter une personne qui n'est pas encore dans B1
 
-Si votre recherche ne trouve personne, la recherche affiche **No records found** avec un lien **Add New Person**. Cliquez dessus, entrez le prénom, le nom et (optionnellement) l'email de la personne, et cliquez sur **Add**. La nouvelle personne est créée dans votre répertoire des personnes et ajoutée au groupe en une seule étape -- vous n'avez pas besoin de la rechercher à nouveau.
+Si votre recherche ne donne aucun résultat, la recherche affiche **Aucun enregistrement trouvé** avec un lien **Ajouter une nouvelle personne**. Cliquez dessus, saisissez le prénom, le nom et (facultativement) l'adresse e-mail de la personne, puis cliquez sur **Ajouter**. La nouvelle personne est créée dans votre répertoire Personnes et ajoutée au groupe en une seule étape : vous n'avez pas besoin de la rechercher à nouveau.
 
-## Désigner les leaders de groupe
+## Désigner des responsables de groupe
 
-Les leaders de groupe ont des privilèges spéciaux -- ils peuvent modifier le [calendrier du groupe](group-calendar.md), gérer les événements et aider à coordonner le groupe.
+Les responsables de groupe disposent de privilèges particuliers : ils peuvent modifier le [calendrier du groupe](group-calendar.md), gérer les événements et aider à coordonner le groupe.
 
-1. Dans la liste des membres du groupe, trouvez la personne que vous voulez faire leader.
-2. Cliquez sur l'**icône en forme d'étoile** (**Nommer responsable**) à côté de son nom.
-3. La personne est maintenant désignée en tant que leader de groupe et affiche un badge **Leader**.
+1. Dans la liste des membres du groupe, repérez la personne que vous souhaitez nommer responsable.
+2. Cliquez sur l'**icône étoile** (**Nommer responsable**) à côté de son nom.
+3. La personne est maintenant désignée comme responsable de groupe et affiche un badge **Responsable**.
 
-Pour supprimer le statut de leader, cliquez à nouveau sur l'icône en forme d'étoile (**Retirer l'accès responsable**).
+Pour retirer le statut de responsable, cliquez à nouveau sur l'icône étoile (**Retirer l'accès responsable**).
 
 :::info
-N'importe quel membre du groupe peut consulter le calendrier du groupe et les événements, mais seuls les leaders peuvent ajouter ou modifier les événements du calendrier.
+Tous les membres du groupe peuvent consulter le calendrier et les événements du groupe, mais seuls les responsables peuvent ajouter ou modifier des événements du calendrier.
 :::
 
 ## Envoyer des messages aux membres du groupe
 
-Vous pouvez communiquer avec tous les membres d'un groupe directement depuis B1 Admin :
+Vous pouvez communiquer directement avec tous les membres d'un groupe depuis B1 Admin :
 
-1. Dans la liste des membres du groupe, cliquez sur l'icône **Send a message to members** au-dessus de la liste.
-2. Tapez votre message dans la boîte de texte (ou choisissez-en un dans **Templates**).
-3. Cliquez sur **Send**.
+1. Dans la liste des membres du groupe, cliquez sur l'icône **Envoyer un message aux membres** au-dessus de la liste.
+2. Saisissez votre message dans la zone de texte (ou choisissez-en un dans les **Modèles**).
+3. Cliquez sur **Envoyer**.
 
-Votre message sera livré à tous les membres du groupe.
+Votre message sera distribué à tous les membres du groupe.
 
-## Envoyer des emails aux membres du groupe
+## Envoyer des e-mails aux membres du groupe
 
-Vous pouvez envoyer des emails formatés à tous les membres d'un groupe :
+Vous pouvez envoyer des e-mails mis en forme à tous les membres d'un groupe :
 
-1. Depuis la page de détail du groupe, cliquez sur le bouton **Email** à gauche de la page.
-2. La boîte de dialogue Envoyer un email s'ouvre, affichant combien de membres recevront l'email et combien n'ont pas d'adresse email enregistrée.
-3. Sélectionnez optionnellement un **email template** dans la liste déroulante, ou composez un message à partir de zéro. Cliquez sur **Manage Templates** pour créer ou modifier les templates.
-4. Entrez une **subject line**. Vous pouvez insérer les champs de fusion en cliquant sur les chips de champ : `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`.
-5. Composez le **corps de l'email** en utilisant l'éditeur HTML. Les mêmes champs de fusion sont disponibles ici.
-6. Cliquez sur **Send**.
-7. Un résumé affiche combien d'emails ont été envoyés avec succès et combien de membres ont été ignorés (pas d'email enregistré).
+1. Depuis la page de détail du groupe, cliquez sur le bouton **E-mail** à gauche de la page.
+2. La boîte de dialogue Envoyer un e-mail s'ouvre et indique combien de membres recevront l'e-mail et combien n'ont pas d'adresse e-mail enregistrée.
+3. Vous pouvez éventuellement sélectionner un **modèle d'e-mail** dans la liste déroulante, ou rédiger un message à partir de zéro. Cliquez sur **Gérer les modèles** pour créer ou modifier des modèles.
+4. Saisissez un **objet**. Vous pouvez insérer des champs de fusion en cliquant sur les puces de champs : `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`.
+5. Rédigez le **corps de l'e-mail** à l'aide de l'éditeur HTML. Les mêmes champs de fusion sont disponibles ici.
+6. Cliquez sur **Envoyer**.
+7. Un récapitulatif indique le nombre d'e-mails envoyés avec succès et le nombre de membres ignorés (aucune adresse e-mail enregistrée).
 
 :::tip
-Créez des templates d'email réutilisables pour les communications récurrentes comme les mises à jour hebdomadaires, les annonces d'événements ou les demandes de prière. Les templates économisent du temps et garantissent une messagerie cohérente.
+Créez des modèles d'e-mails réutilisables pour les communications récurrentes, comme les mises à jour hebdomadaires, les annonces d'événements ou les demandes de prière. Les modèles vous font gagner du temps et garantissent la cohérence des messages.
 :::
 
-### Activer le courrier électronique de groupe pour votre église
+### Activer l'e-mail de groupe pour votre église
 
-Toutes les églises sur B1 envoient des emails à partir de la même adresse, elles partagent donc une réputation d'envoi. Pour garder l'email de tout le monde hors des dossiers de spam, l'équipe ChurchApps examine chaque église une fois avant qu'elle puisse envoyer du courrier électronique de groupe.
+Toutes les églises utilisant B1 envoient des e-mails depuis la même adresse, et partagent donc la même réputation d'envoi. Pour que les e-mails de chacun restent hors des dossiers de courrier indésirable, l'équipe ChurchApps examine chaque église une fois avant qu'elle puisse envoyer des e-mails de groupe.
 
-Si votre église n'a pas encore été examinée, la boîte de dialogue Envoyer un email affiche **Group email needs a quick review** à la place de l'éditeur de message :
+Si votre église n'a pas encore été examinée, la boîte de dialogue Envoyer un e-mail affiche **L'e-mail de groupe nécessite un examen rapide** à la place de l'éditeur de messages :
 
-1. Cliquez sur **Request review**. L'équipe de support ChurchApps est notifiée.
-2. La boîte de dialogue change à **Review requested**. Vous pouvez la fermer.
-3. Le courrier électronique de groupe est généralement activé dans un jour ouvrable. Ouvrez à nouveau la boîte de dialogue Envoyer un email après cela pour envoyer votre message.
+1. Cliquez sur **Demander un examen**. L'équipe de support ChurchApps est alertée.
+2. La boîte de dialogue affiche **Examen demandé**. Vous pouvez la fermer.
+3. L'e-mail de groupe est généralement activé dans un délai d'un jour ouvrable. Ouvrez à nouveau la boîte de dialogue Envoyer un e-mail après ce délai pour envoyer votre message.
 
-Jusqu'à ce que votre église soit approuvée, B1 n'envoie pas non plus d'[emails de suivi de formulaire](../forms/creating-forms.md#sending-a-follow-up-email) ou l'étape **Send email** dans les [workflows](../serving/workflows.md).
+Tant que votre église n'est pas approuvée, B1 n'envoie pas non plus les [e-mails de suivi des formulaires](../forms/creating-forms.md#sending-a-follow-up-email) ni l'étape **Envoyer un e-mail** des [flux de travail](../serving/workflows.md).
 
 :::info Limites d'envoi
-Après approbation, une église peut envoyer jusqu'à 150 emails écrits par l'église par jour. La limite augmente à mesure que votre église établit un historique d'envoi propre, jusqu'à 2 000 par jour. Si les messages récents ont rebondi ou ont été marqués comme spam, le courrier électronique du groupe s'arrête et la boîte de dialogue vous demande de contacter le support. Si un envoi dépasserait votre limite quotidienne, B1 ne l'envoie pas et affiche une erreur.
+Après approbation, une église peut envoyer jusqu'à 150 e-mails rédigés par l'église par jour. Cette limite augmente à mesure que votre église constitue un historique d'envoi propre, jusqu'à 2 000 par jour. Si des messages récents ont fait l'objet de rebonds ou ont été marqués comme spam, l'envoi d'e-mails de groupe est suspendu et la boîte de dialogue vous demande de contacter le support. Si un envoi dépasse votre limite quotidienne, B1 ne l'envoie pas et affiche une erreur.
 :::
 
-## Envoyer des messages texte aux membres du groupe
+## Envoyer des SMS aux membres du groupe
 
-Une fois que votre église a connecté un [prestataire de textos](../settings/church-settings.md#texting), un bouton **Text** (**Text this group**) apparaît à côté du bouton **Email** sur la page du groupe.
+Une fois que votre église a connecté un [fournisseur de SMS](../settings/church-settings.md#texting), un bouton **SMS** (**Envoyer un SMS à ce groupe**) apparaît à côté du bouton **E-mail** sur la page du groupe.
 
-1. Depuis la page de détail du groupe, cliquez sur **Text**.
-2. La boîte de dialogue affiche combien de membres recevront le texte. Les membres sans numéro de téléphone mobile enregistré ou qui se sont désinscrits sont ignorés.
-3. Tapez votre message. Pour le personnaliser, cliquez sur une chip d'espace réservé sous la boîte de message -- **First Name**, **Last Name**, **Display Name** ou **Church Name** -- pour l'insérer à votre curseur. Chaque espace réservé est rempli avec les propres détails du destinataire quand le texte est envoyé.
-4. Cliquez sur **Send**.
+1. Depuis la page de détail du groupe, cliquez sur **SMS**.
+2. La boîte de dialogue indique combien de membres recevront le SMS. Les membres sans numéro de téléphone mobile enregistré, ou ayant refusé les messages, sont ignorés.
+3. Saisissez votre message. Pour le personnaliser, cliquez sur une puce de champ sous la zone de message — **Prénom**, **Nom**, **Nom d'affichage** ou **Nom de l'église** — pour l'insérer à la position de votre curseur. Chaque champ est remplacé par les informations du destinataire au moment de l'envoi du SMS.
+4. Cliquez sur **Envoyer**.
 
-Voir [Personalizing Texts with Merge Fields](../settings/church-settings.md#personalizing-texts-with-merge-fields) pour plus de détails.
+Consultez [Personnaliser les SMS avec des champs de fusion](../settings/church-settings.md#personalizing-texts-with-merge-fields) pour plus de détails.
 
 ## Exporter les données du groupe
 
-Pour télécharger la liste des membres du groupe en tant que fichier :
+Pour télécharger la liste des membres du groupe sous forme de fichier :
 
-1. Dans la liste des membres du groupe, cliquez sur **Export** au-dessus de la liste.
+1. Dans la liste des membres du groupe, cliquez sur **Exporter** au-dessus de la liste.
 2. Un fichier CSV contenant les informations des membres du groupe sera téléchargé sur votre ordinateur.
 
-Un export CSV est utile pour importer des données dans d'autres outils, ou pour conserver des enregistrements hors ligne. Pour plus d'options d'export, voir [Exporting Data](../people/exporting-data.md).
+Un export CSV est utile pour importer des données dans d'autres outils ou conserver des archives hors ligne. Pour d'autres options d'exportation, consultez [Exporter les données](../people/exporting-data.md).
 
-## Impression de la liste des membres {#printing-the-member-list}
+## Imprimer la liste des membres
 
-Dans la liste des membres du groupe, cliquez sur l'icône **Print Roll Sheet** (imprimante) au-dessus de la liste et choisissez une mise en page. La page s'ouvre dans un nouvel onglet et la boîte de dialogue d'impression de votre navigateur apparaît automatiquement.
+Dans la liste des membres du groupe, cliquez sur l'icône **Imprimer la feuille d'appel** (imprimante) au-dessus de la liste, puis choisissez une mise en page. La page s'ouvre dans un nouvel onglet et la boîte de dialogue d'impression de votre navigateur apparaît automatiquement.
 
-- **Feuille de présence** -- une liste de classe sans date avec des cases **Présent** et **Absent** que les enseignants peuvent cocher à la main. Voir [Printing a Roll Sheet](../attendance/recording-attendance.md#printing-a-roll-sheet).
-- **Liste de contacts** -- une liste de contacts du groupe, datée d'aujourd'hui et titrée avec le nom de votre église et le nom du groupe. Chaque membre a une ligne avec son **Nom**, son **Téléphone**, son **E-mail** et son **Adresse**. Les leaders sont listés en premier et marqués **Leader**, puis tous les autres par nom de famille. Le téléphone affiché est le numéro de mobile du membre, ou son numéro de domicile ou de travail s'il n'a pas de mobile. Les coordonnées sont laissées vides pour toute personne qui s'est désinscrite.
+- **Feuille de présence** — Une liste de classe non datée avec des cases **Présent** et **Absent** que les enseignants peuvent cocher à la main. Consultez [Imprimer une feuille d'appel](../attendance/recording-attendance.md#printing-a-roll-sheet).
+- **Liste de contacts** — Une liste de contacts pour le groupe, datée du jour et en-tête avec le logo de votre église (le **logo pour fond clair** défini dans [Site web > Apparence](../website/appearance.md), si vous en avez téléversé un) suivi du nom de votre église, ainsi que du nom du groupe. Chaque membre occupe une ligne avec son **Nom**, son **Téléphone**, son **E-mail** et son **Adresse**. Les responsables sont listés en premier et marqués **Responsable**, puis les autres membres par nom de famille. Le téléphone affiché est le numéro mobile du membre ou, à défaut, son numéro de domicile ou professionnel. Les coordonnées restent vides pour les personnes qui ont refusé de les partager.
 
 :::warning
-Une liste de contacts contient les coordonnées personnelles des membres. Ne partagez les copies imprimées qu'avec les leaders du groupe et les autres personnes qui en ont besoin.
+Une liste de contacts contient les coordonnées personnelles des membres. Ne partagez les copies imprimées qu'avec les responsables du groupe et les autres personnes qui en ont besoin.
 :::
 
 ## Envoyer des notifications push aux membres du groupe
 
-Vous pouvez envoyer une notification push directement à tous les membres du groupe qui ont l'application B1.church installée sur leur appareil avec les notifications push activées.
+Vous pouvez envoyer une notification push directement à tous les membres du groupe qui ont installé l'application B1.church sur leur appareil et activé les notifications push.
 
-1. Depuis la page de détail du groupe, cliquez sur **Notify** (sous les boutons **Email** et **Text** -- le bouton **Text** apparaît une fois qu'un [prestataire de textos](../settings/church-settings.md#texting) est connecté).
-2. Une boîte de dialogue s'ouvre affichant combien de membres de votre groupe ont le push activé.
-3. Remplissez les détails de la notification :
-   - **Title** *(requis)* -- Un bref résumé, jusqu'à 80 caractères.
-   - **Message** *(requis)* -- Le corps de la notification, jusqu'à 240 caractères.
-   - **Open link or flyer URL** *(optionnel)* -- Un chemin d'application relatif (par exemple, `/mobile/groups`) ou une URL complète `https://` que la notification ouvre quand elle est cliquée.
-   - **Image URL** *(optionnel)* -- Une URL `https://` vers une image qui apparaît à côté de la notification sur les appareils pris en charge.
-4. Un aperçu en direct affiche comment la notification apparaîtra sur l'appareil.
-5. Cliquez sur **Send Notification**.
+1. Depuis la page de détail du groupe, cliquez sur **Notifier** (sous les boutons **E-mail** et **SMS** — le bouton **SMS** apparaît dès qu'un [fournisseur de SMS](../settings/church-settings.md#texting) est connecté).
+2. Une boîte de dialogue s'ouvre et indique combien de membres de votre groupe ont activé les notifications push.
+3. Renseignez les détails de la notification :
+   - **Titre** *(obligatoire)* — Un bref résumé, de 80 caractères maximum.
+   - **Message** *(obligatoire)* — Le contenu de la notification, de 240 caractères maximum.
+   - **Lien à ouvrir ou URL du dépliant** *(facultatif)* — Un chemin relatif de l'application (par exemple, `/mobile/groups`) ou une URL `https://` complète que la notification ouvre lorsqu'on la touche.
+   - **URL de l'image** *(facultatif)* — Une URL `https://` vers une image qui s'affiche avec la notification sur les appareils compatibles.
+4. Un aperçu en direct montre l'apparence de la notification sur l'appareil.
+5. Cliquez sur **Envoyer la notification**.
 
 :::info
-Les notifications push ne sont livrées qu'aux membres du groupe qui ont l'application web B1.church PWA installée et qui n'ont pas désactivé les notifications push. Les membres sans appareil push enregistré ou avec le push désactivé sont comptés comme ignorés, et le résumé d'envoi affiche combien ont été atteints par rapport à ignorés.
+Les notifications push ne sont distribuées qu'aux membres du groupe qui ont installé la PWA B1.church et n'ont pas désactivé les notifications push. Les membres sans appareil enregistré pour les notifications push, ou dont les notifications sont désactivées, sont comptés comme ignorés, et le récapitulatif d'envoi indique combien de personnes ont été atteintes et combien ont été ignorées.
 :::
 
 :::tip
-Après l'envoi, la boîte de dialogue affiche combien de notifications ont été mises en file d'attente avec succès. Si la plupart des membres s'affichent comme ignorés, rappelez-leur de visiter leur site B1.church, d'l'installer comme application d'écran d'accueil, et d'autoriser les notifications quand il le demande.
+Après l'envoi, la boîte de dialogue indique combien de notifications ont été mises en file d'attente avec succès. Si la plupart des membres apparaissent comme ignorés, rappelez-leur de visiter leur site B1.church, de l'installer comme application sur l'écran d'accueil et d'autoriser les notifications lorsqu'on le leur demande.
 :::
 
-## Supprimer des membres
+## Retirer des membres
 
-Pour supprimer quelqu'un d'un groupe, localisez son nom dans la liste des membres et cliquez sur le bouton **remove** à côté de son entrée.
+Pour retirer une personne d'un groupe, repérez son nom dans la liste des membres et cliquez sur le bouton **retirer** à côté de son entrée.
 
 :::info
-Supprimer une personne d'un groupe ne la supprime pas de votre répertoire d'église. Elle apparaîtra toujours dans la section [People](../people/adding-people.md) et peut être rajoutée au groupe à tout moment.
+Retirer une personne d'un groupe ne la supprime pas de votre annuaire d'église. Elle figurera toujours dans la section [Personnes](../people/adding-people.md) et pourra être ajoutée à nouveau au groupe à tout moment.
 :::

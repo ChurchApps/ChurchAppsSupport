@@ -32,7 +32,7 @@ Your new form will appear in the list. Click on it to start adding questions.
 
 ## Printing a Blank Form
 
-Need a paper copy to hand out -- for a visitor card at the welcome desk, or a form someone without internet access can fill in by hand? Click **Print** next to a form on the main Forms list to open a preview, then click **Print**. Blank fields print with an underline or checkbox for each question so people can fill them in by hand; required questions are marked with an asterisk. Your church's name prints at the top above the form name. There are no other print options -- print the whole form or nothing.
+Need a paper copy to hand out -- for a visitor card at the welcome desk, or a form someone without internet access can fill in by hand? Click **Print** next to a form on the main Forms list to open a preview, then click **Print**. Blank fields print with an underline or checkbox for each question so people can fill them in by hand; required questions are marked with an asterisk. The top of the page shows your church logo (the **Light Background Logo** from [Website > Appearance](../website/appearance.md), if you've uploaded one) with your church's name beneath it, then the form name. There are no other print options -- print the whole form or nothing.
 
 ## Adding Questions
 

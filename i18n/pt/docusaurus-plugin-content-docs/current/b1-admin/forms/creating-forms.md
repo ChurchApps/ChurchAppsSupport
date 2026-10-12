@@ -6,15 +6,15 @@ title: "Criando Formulários"
 
 <div class="article-intro">
 
-Crie formulários personalizados para coletar informações de sua congregação. Você pode criar formulários para inscrições em eventos, pesquisas, cartões de visitante, inscrições de membros e muito mais. Os formulários podem ser vinculados a pessoas em seu banco de dados ou usados como páginas autônomas com sua própria URL pública.
+Crie formulários personalizados para coletar informações da sua congregação. Você pode criar formulários para inscrições em eventos, pesquisas, cartões de visitantes, pedidos de membresia e muito mais. Os formulários podem ser vinculados a pessoas no seu banco de dados ou usados como páginas independentes com sua própria URL pública.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Para formulários de **Pessoas** (vinculados a registros de pessoas), você precisa ter [pessoas em seu banco de dados](../people/adding-people.md) primeiro.
-- Para formulários que coletam **pagamentos**, você deve ter [Stripe configurado para doação online](../donations/online-giving-setup.md).
+- Para formulários de **Pessoas** (vinculados a registros de pessoas), você precisa primeiro de [pessoas cadastradas no seu banco de dados](../people/adding-people.md).
+- Para formulários que coletam **pagamentos**, você precisa ter o [Stripe configurado para doações online](../donations/online-giving-setup.md).
 
 </div>
 
@@ -22,81 +22,81 @@ Crie formulários personalizados para coletar informações de sua congregação
 
 1. Abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo do B1 Admin), expanda **Pessoas** e clique em **Formulários**.
 2. Clique em **Adicionar Formulário**.
-3. Insira um **nome** para seu formulário.
-4. Escolha o tipo de formulário no menu suspenso:
-   - **Pessoas** — Associa submissões com [registros de pessoas](../people/adding-people.md) em seu banco de dados.
+3. Digite um **nome** para o seu formulário.
+4. Escolha o tipo de formulário na lista suspensa:
+   - **Pessoas** — Associa as submissões a [registros de pessoas](../people/adding-people.md) no seu banco de dados.
    - **Autônomo** — Cria um formulário independente com sua própria URL pública, ideal para inscrições externas.
 5. Clique em **Salvar** para criar o formulário.
 
 Seu novo formulário aparecerá na lista. Clique nele para começar a adicionar perguntas.
 
-## Imprimindo um Formulário em Branco
+## Imprimindo um Formulário em Branco {#printing-a-blank-form}
 
-Precisa de uma cópia em papel para distribuir -- para um cartão de visitante na mesa de boas-vindas ou um formulário que alguém sem acesso à internet possa preencher manualmente? Clique em **Imprimir** ao lado de um formulário na lista principal de Formulários para abrir uma visualização, depois clique em **Imprimir**. Os campos em branco são impressos com uma linha ou caixa de seleção para cada pergunta para que as pessoas possam preenchê-los manualmente; perguntas obrigatórias são marcadas com um asterisco. Não há outras opções de impressão -- imprima o formulário inteiro ou nada.
+Precisa de uma cópia impressa para distribuir -- por exemplo, um cartão de visitante na recepção, ou um formulário que alguém sem acesso à internet possa preencher à mão? Clique em **Imprimir** ao lado de um formulário na lista principal de Formulários para abrir uma prévia e depois clique em **Imprimir**. Os campos em branco são impressos com uma linha ou uma caixa de seleção para cada pergunta, para que as pessoas possam preenchê-los à mão; as perguntas obrigatórias são marcadas com um asterisco. No topo da página aparecem o logotipo da sua igreja (o **Logotipo para Fundo Claro** em [Website > Aparência](../website/appearance.md), se você tiver enviado um) com o nome da sua igreja abaixo, seguido do nome do formulário. Não há outras opções de impressão -- imprima o formulário inteiro ou nada.
 
 ## Adicionando Perguntas
 
-1. Abra seu formulário e vá para a guia **Perguntas**.
+1. Abra seu formulário e vá para a aba **Perguntas**.
 2. Clique em **Adicionar Pergunta**.
-3. Selecione um **tipo de campo** no menu suspenso do Provedor. Os tipos disponíveis incluem:
-   - **Caixa de Texto** — Para respostas de texto curto
-   - **Data** — Para seleção de data
+3. Selecione um **tipo de campo** na lista suspensa Provider. Os tipos disponíveis incluem:
+   - **Caixa de Texto** — Para respostas curtas de texto
+   - **Data** — Para seleção de datas
    - **E-mail** — Para endereços de e-mail
    - **Número de Telefone** — Para entrada de telefone
    - **Múltipla Escolha** — Para selecionar entre opções predefinidas
    - **Pagamento** — Para coletar pagamentos
-4. Insira um **Título** e **Descrição** opcional para a pergunta.
-5. Marque **Exigir uma resposta** se o campo é obrigatório.
+4. Digite um **Título** e, opcionalmente, uma **Descrição** para a pergunta.
+5. Marque **Exigir uma resposta** se o campo for obrigatório.
 6. Clique em **Salvar**.
 7. Repita para adicionar mais perguntas.
 
 :::warning
-O tipo de campo **Pagamento** requer que Stripe seja configurado. Se você ainda não configurou a doação online, consulte [Configuração de Doação Online](../donations/online-giving-setup.md) antes de adicionar campos de pagamento.
+O tipo de campo **Pagamento** exige que o Stripe esteja configurado. Se você ainda não configurou as doações online, consulte [Configuração de Doações Online](../donations/online-giving-setup.md) antes de adicionar campos de pagamento.
 :::
 
 ## Gerenciando Membros do Formulário
 
-1. Abra seu formulário e vá para a guia **Membros do Formulário**.
-2. Procure por uma pessoa e adicione-a com uma função:
-   - **Admin** — Pode editar o formulário e visualizar todas as submissões.
-   - **Apenas Visualizar** — Pode visualizar submissões, mas não pode editar o formulário.
+1. Abra seu formulário e vá para a aba **Membros do Formulário**.
+2. Pesquise uma pessoa e adicione-a com uma função:
+   - **Admin** — Pode editar o formulário e ver todas as submissões.
+   - **Apenas Visualizar** — Pode ver as submissões, mas não pode editar o formulário.
 
-## Adicionando Automaticamente Submissores a um Grupo
+## Adicionando Automaticamente Submissores a um Grupo {#automatically-adding-submitters-to-a-group}
 
-Quando **Criar um registro de pessoa a partir de submissões** está ativado, você também pode vincular o formulário a um grupo para que cada submetedor seja adicionado automaticamente à lista de um grupo:
+Quando **Criar um registro de pessoa a partir de submissões** está ativado, você também pode vincular o formulário a um grupo para que cada pessoa que enviar o formulário seja adicionada automaticamente à lista desse grupo:
 
 1. Abra os **Detalhes** do seu formulário e ative **Criar um registro de pessoa a partir de submissões**.
-2. Em **Adicionar submissores a um grupo**, selecione o grupo para adicionar submissores ou deixe definido como **Nenhum**.
+2. Em **Adicionar submissores a um grupo**, selecione o grupo ao qual os submissores devem ser adicionados, ou deixe em **Nenhum**.
 3. Clique em **Salvar**.
 
-Cada vez que alguém envia o formulário, a pessoa correspondente ou recém-criada é adicionada ao grupo (membros do grupo existentes são pulados). Isso é útil para coisas como um formulário de inscrição em acampamento que deve construir automaticamente a lista de acampamento.
+Sempre que alguém enviar o formulário, a pessoa correspondente ou recém-criada será adicionada ao grupo (membros que já estiverem no grupo são ignorados). Isso é útil para casos como um formulário de inscrição para acampamento que deve montar automaticamente a lista do grupo do acampamento.
 
-### Enviando um E-mail de Acompanhamento
+### Enviando um E-mail de Acompanhamento {#sending-a-follow-up-email}
 
-Com **Criar um registro de pessoa a partir de submissões** ativado, você também pode enviar um e-mail para cada pessoa que envia o formulário. Preencha **Assunto do E-mail de Acompanhamento** e **Corpo do E-mail de Acompanhamento** nos detalhes do formulário. Você pode usar os tokens `{firstName}` e `{churchName}` em ambos. O e-mail é enviado apenas quando ambos os campos estão preenchidos.
+Com **Criar um registro de pessoa a partir de submissões** ativado, você também pode enviar um e-mail para cada pessoa que enviar o formulário. Preencha **Assunto do E-mail de Acompanhamento** e **Corpo do E-mail de Acompanhamento** nos detalhes do formulário. Você pode usar os tokens `{firstName}` e `{churchName}` em ambos. O e-mail só é enviado quando os dois campos estiverem preenchidos.
 
 :::info
-Os e-mails de acompanhamento são enviados apenas após sua igreja ser aprovada para enviar e-mail em grupo, e contam em relação ao limite diário de e-mail de sua igreja. Consulte [Ativando E-mail em Grupo para Sua Igreja](../groups/group-members.md#turning-on-group-email-for-your-church).
+Os e-mails de acompanhamento só são enviados depois que sua igreja for aprovada para enviar e-mail em grupo, e contam para o limite diário de e-mails da sua igreja. Consulte [Ativando E-mail em Grupo para Sua Igreja](../groups/group-members.md#turning-on-group-email-for-your-church).
 :::
 
 ## Duplicando um Formulário
 
-Para reutilizar um formulário como ponto de partida para um novo, clique em **Duplicar** ao lado do formulário na lista de Formulários e confirme. B1 cria uma cópia exata do formulário — incluindo todas as perguntas — que você pode então renomear e editar independentemente.
+Para usar um formulário como ponto de partida para um novo, clique em **Duplicar** ao lado do formulário na lista de Formulários e confirme. O B1 cria uma cópia exata do formulário -- incluindo todas as perguntas -- que você pode então renomear e editar de forma independente.
 
 :::tip
-A duplicação é útil para eventos recorrentes onde as perguntas de inscrição permanecem iguais de ano para ano. Duplique o formulário do ano passado, atualize o nome e as datas e você está pronto.
+Duplicar é útil para eventos recorrentes em que as perguntas de inscrição permanecem as mesmas de ano para ano. Duplique o formulário do ano passado, atualize o nome e as datas, e pronto.
 :::
 
-## Configurando Propriedades do Formulário
+## Configurando as Propriedades do Formulário
 
-Você pode atualizar o nome e as configurações de seu formulário a qualquer momento. Para formulários Autônomos, você também verá uma **URL pública** única que você pode compartilhar com qualquer pessoa, juntamente com um campo **Descrição** -- texto mostrado acima das perguntas na página de formulário público, útil para dizer às pessoas qual é o propósito do formulário antes de começarem a preenchê-lo.
+Você pode atualizar o nome e as configurações do seu formulário a qualquer momento. Para formulários Autônomos, você também verá uma **URL pública** exclusiva que pode compartilhar com qualquer pessoa, além de um campo **Descrição** -- um texto exibido acima das perguntas na página pública do formulário, útil para explicar a finalidade do formulário antes de as pessoas começarem a preenchê-lo.
 
-Use o campo **Mensagem de Obrigado** para configurar o que as pessoas veem após enviar o formulário, incluindo na página de URL pública do formulário. Se deixar em branco, elas verão "Obrigado por enviar o formulário!"
+Use o campo **Mensagem de Obrigado** para definir o que as pessoas veem depois de enviar o formulário, inclusive na página da URL pública. Se você deixar o campo em branco, elas verão "Obrigado por enviar o formulário!"
 
 :::tip
-Formulários autônomos são ótimos para inscrições em eventos. Compartilhe a URL pública por e-mail, mídia social ou incorpore o formulário diretamente no site de sua igreja.
+Formulários Autônomos são ótimos para inscrições em eventos. Compartilhe a URL pública por e-mail ou redes sociais, ou incorpore o formulário diretamente no site da sua igreja.
 :::
 
 :::info
-Para incorporar um formulário no seu site B1, vá para o editor do seu site, adicione uma nova seção e selecione o elemento **Formulário**. Depois escolha o formulário que deseja exibir. Consulte [Gerenciando Páginas](../website/managing-pages.md) para detalhes sobre como editar seu site.
+Para incorporar um formulário no seu site do B1, acesse o editor do site, adicione uma nova seção e selecione o elemento **Formulário**. Depois, escolha o formulário que deseja exibir. Consulte [Gerenciando Páginas](../website/managing-pages.md) para mais detalhes sobre como editar seu site.
 :::

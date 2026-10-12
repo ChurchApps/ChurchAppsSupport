@@ -1,12 +1,12 @@
 ---
-title: "Übermittlungen verwalten"
+title: "Einsendungen verwalten"
 ---
 
-# Übermittlungen verwalten
+# Einsendungen verwalten
 
 <div class="article-intro">
 
-Sobald Ihr Formular live ist, werden Übermittlungen eingehen. Die Registerkarte **Form Submissions** (Formularübermittlungen) ermöglicht es Ihnen, jede Antwort zu überprüfen, zu verfolgen, wer eingereicht hat, und die Daten zu verwenden, um Ihre Gemeinde rechtzeitig nachzufassen.
+Sobald Ihr Formular online ist, treffen die ersten Einsendungen ein. Der Tab **Formulareinsendungen** ermöglicht es Ihnen, jede Antwort zu prüfen, nachzuverfolgen, wer das Formular ausgefüllt hat, und die Daten zu nutzen, um zeitnah auf Ihre Gemeinde zuzugehen.
 
 </div>
 
@@ -14,69 +14,69 @@ Sobald Ihr Formular live ist, werden Übermittlungen eingehen. Die Registerkarte
 <h4>Bevor Sie beginnen</h4>
 
 - [Erstellen Sie ein Formular](./creating-forms.md) mit mindestens einer Frage
-- Teilen Sie das Formular über seine öffentliche URL oder betten Sie es auf Ihrer [Website](../website/managing-pages.md) ein
+- Teilen Sie das Formular über seine öffentliche URL oder binden Sie es in Ihre [Website](../website/managing-pages.md) ein
 
 </div>
 
-## Anzeigen von Übermittlungen
+## Einsendungen einsehen
 
-1. Öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links in B1 Admin), erweitern Sie **People** (Personen) und klicken Sie auf **Forms** (Formulare).
-2. Klicken Sie auf das Formular, das Sie überprüfen möchten.
-3. Gehen Sie zur Registerkarte **Form Submissions** (Formularübermittlungen).
+1. Öffnen Sie das [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) (das Suchfeld oben links in B1 Admin), klappen Sie **Personen** auf und klicken Sie auf **Formulare**.
+2. Klicken Sie auf das Formular, das Sie prüfen möchten.
+3. Wechseln Sie zum Tab **Formulareinsendungen**.
 
-Sie werden eine Liste aller für dieses Formular eingegangenen Antworten sehen. Jede Übermittlung zeigt die Informationen des Respondenten und das Datum der Übermittlung, gefolgt von einer Spalte für jede Frage im Formular. Wenn Ihr Formular viele Fragen hat, scrollen Sie in der Tabelle nach rechts, um die übrigen Spalten zu sehen.
+Sie sehen eine Liste aller Antworten, die für dieses Formular eingegangen sind. Jede Einsendung zeigt die Informationen der antwortenden Person und das Datum der Einsendung, gefolgt von einer Spalte für jede Frage im Formular. Wenn Ihr Formular viele Fragen enthält, scrollen Sie die Tabelle seitlich, um die übrigen Spalten zu sehen.
 
-## Überprüfen einzelner Übermittlungen
+## Einzelne Einsendungen prüfen
 
-Klicken Sie auf eine beliebige Übermittlung, um alle Details anzuzeigen. Sie werden alle Antworten sehen, die die Person für jede Frage im Formular gegeben hat.
+Klicken Sie auf eine beliebige Einsendung, um alle Details anzuzeigen. Sie sehen alle Antworten, die die Person zu den einzelnen Fragen des Formulars gegeben hat.
 
-Klicken Sie auf das **Druckersymbol** neben der Übermittlung, um die ausgefüllten Antworten dieser Person zu drucken – nützlich für ein Papierdossier oder eine unterzeichnete Freigabe, die Sie zur Hand haben müssen. Der Ausdruck zeigt den Namen Ihrer Kirche oben. Dies ist getrennt vom [Drucken eines leeren Formulars](./creating-forms.md#printing-a-blank-form); es druckt die bereits eingereichten Antworten einer Person, nicht eine leere Kopie. Das gleiche Druckersymbol wird überall dort angezeigt, wo eine Übermittlung angezeigt wird, einschließlich auf dem [Profil einer Person](../people/adding-people.md#working-with-forms).
+Klicken Sie neben der Einsendung auf das **Druck-Symbol**, um die ausgefüllten Antworten dieser Person zu drucken – nützlich für eine Papierakte oder eine unterschriebene Einverständniserklärung, die Sie griffbereit halten müssen. Der Ausdruck zeigt oben Ihr Gemeindelogo (das **Logo für helle Hintergründe** aus [Website > Erscheinungsbild](../website/appearance.md), falls Sie eines hochgeladen haben), darunter den Namen Ihrer Gemeinde. Dies ist unabhängig vom [Drucken eines leeren Formulars](./creating-forms.md#printing-a-blank-form); hier wird nur die bereits übermittelte Antwort einer Person gedruckt, nicht ein leeres Exemplar. Das Druck-Symbol erscheint überall dort, wo eine Einsendung angezeigt wird, auch im [Profil einer Person](../people/adding-people.md#working-with-forms).
 
-## Ändern der Person bei einer Übermittlung
+## Die Person einer Einsendung ändern
 
-Wenn eine Übermittlung mit der falschen Person verknüpft ist – zum Beispiel teilen zwei Familienmitglieder eine E-Mail-Adresse – können Sie sie in die richtige Person verschieben oder die Verknüpfung aufheben.
+Wenn eine Einsendung der falschen Person zugeordnet ist – etwa weil zwei Familienmitglieder dieselbe E-Mail-Adresse verwenden –, können Sie sie der richtigen Person zuordnen oder die Verknüpfung aufheben.
 
-1. Klicken Sie auf der Registerkarte **Form Submissions** (Formularübermittlungen) auf das Symbol **Change person** (Person ändern) (zwei Pfeile) neben dem Namen der Person. Das gleiche Symbol wird neben einer Übermittlung auf dem [Profil einer Person](../people/adding-people.md#working-with-forms) angezeigt.
-2. Suchen Sie im Dialog **Change person** (Person ändern) nach der richtigen Person und klicken Sie auf **Move to this person** (In diese Person verschieben).
-3. Oder klicken Sie auf **Unlink (Anonymous)** (Link aufheben (Anonym)), um die Übermittlung von einer Person zu trennen. Sie wird dann als **Anonymous** (Anonym) angezeigt.
+1. Klicken Sie im Tab **Formulareinsendungen** neben dem Namen der Person auf das Symbol **Person ändern** (zwei Pfeile). Dasselbe Symbol erscheint neben einer Einsendung im [Profil einer Person](../people/adding-people.md#working-with-forms).
+2. Suchen Sie im Dialog **Person ändern** nach der richtigen Person und klicken Sie auf **Dieser Person zuordnen**.
+3. Alternativ klicken Sie auf **Verknüpfung aufheben (Anonym)**, um die Einsendung von jeder Person zu lösen. Sie wird dann als **Anonym** angezeigt.
 
-Nur die Verknüpfung ändert sich. Die Antworten bleiben gleich, und es werden keine Follow-up-E-Mails erneut versendet.
-
-:::info
-Bei Formularen, die als Personendatensatz erstellen eingestellt sind, wenn jemand auf der Website Ihrer Kirche angemeldet ist, während er das Formular einreicht, wird die Übermittlung mit seinem eigenen Datensatz verknüpft, selbst wenn eine andere Person in Ihrer Datenbank seine E-Mail-Adresse teilt. Wenn Sie [zwei Personendatensätze zusammenführen](../people/adding-people.md), werden die Formularübermittlungen der entfernten Person an die Person verschoben, die Sie behalten.
-:::
-
-## Wie Übermittlungen gesammelt werden
-
-Übermittlungen können durch mehrere Kanäle eingehen:
-
-- **Öffentliche URL** -- Wenn Ihr Formular eine öffentliche URL hat (Stand Alone-Formulare), kann jeder mit dem Link eine Antwort einreichen. Teilen Sie die URL per E-Mail, Social Media oder Textnachrichten.
-- **Auf Ihrer Website eingebettet** -- Auf Ihrer B1-Website eingebettete Formulare sammeln automatisch Übermittlungen, wenn Besucher sie ausfüllen.
-- **Interne Verwendung** -- Mitarbeiter und Freiwillige können auch Formulare für andere direkt in B1 Admin im Namen anderer einreichen.
-
-:::tip
-Überprüfen Sie die Registerkarte **Form Submissions** (Formularübermittlungen) regelmäßig auf Formulare wie Besucherkarten oder Gebetsanfragen, damit Sie rechtzeitig nachfassen können.
-:::
-
-## Verwendung von Übermittlungsdaten
-
-Die durch Formulare gesammelten Daten können Ihnen helfen:
-
-- Veranstaltungsregistrierungen zu verfolgen und entsprechend zu planen
-- Besuchern oder neuen Mitgliedern nachzufassen
-- Umfrage-Feedback für Ministeriumsplanung zu sammeln
-- Zahlungen für Veranstaltungen oder Programme zu verarbeiten
+Nur die Verknüpfung ändert sich. Die Antworten bleiben gleich, und es werden keine Nachfass-E-Mails erneut versendet.
 
 :::info
-Formularmitglieder mit **Admin**- oder **View Only** (Nur anzeigen)-Rollen können auf die Registerkarte **Form Submissions** (Formularübermittlungen) zugreifen. Stellen Sie sicher, dass die richtigen Personen in Ihrem Team Zugriff auf die Formulare haben, die sie benötigen, indem Sie Rollen in der Registerkarte **Form Members** (Formularmitglieder) verwalten.
+Bei Formularen, die einen Personendatensatz erstellen, wird die Einsendung dann mit dem eigenen Datensatz der Person verknüpft, wenn sie beim Absenden auf der Website Ihrer Gemeinde angemeldet ist – auch dann, wenn eine andere Person in Ihrer Datenbank dieselbe E-Mail-Adresse hat. Wenn Sie [zwei Personendatensätze zusammenführen](../people/adding-people.md), werden die Formulareinsendungen der entfernten Person zu der Person übertragen, die Sie behalten.
+:::
+
+## So werden Einsendungen erfasst
+
+Einsendungen können über mehrere Kanäle eingehen:
+
+- **Öffentliche URL** – Wenn Ihr Formular eine öffentliche URL hat (eigenständige Formulare), kann jeder, der den Link besitzt, eine Antwort einsenden. Teilen Sie die URL per E-Mail, in sozialen Medien oder per Textnachricht.
+- **Auf Ihrer Website eingebettet** – Formulare, die in Ihre B1-Website eingebettet sind, erfassen Einsendungen automatisch, sobald Besucher sie ausfüllen.
+- **Interne Nutzung** – Mitarbeiter und Ehrenamtliche können Formulare auch direkt in B1 Admin im Auftrag anderer absenden.
+
+:::tip
+Prüfen Sie regelmäßig den Tab **Formulareinsendungen** bei Formularen wie Besucherkarten oder Gebetsanliegen, damit Sie zeitnah nachfassen können.
+:::
+
+## Die Formulardaten nutzen
+
+Die über Formulare erfassten Daten können Ihnen helfen,
+
+- Veranstaltungsanmeldungen nachzuverfolgen und entsprechend zu planen
+- Besucher oder neue Mitglieder zu begleiten
+- Umfragefeedback für die Planung des Dienstes zu sammeln
+- Zahlungen für Veranstaltungen oder Programme abzuwickeln
+
+:::info
+Formularmitglieder mit der Rolle **Administrator** oder **Nur Ansicht** können auf den Tab **Formulareinsendungen** zugreifen. Achten Sie darauf, dass die richtigen Personen in Ihrem Team Zugriff auf die Formulare haben, die sie benötigen, und verwalten Sie die Rollen im Tab **Formularmitglieder**.
 :::
 
 :::tip
-Wenn ein **Stand Alone**-Formular so eingestellt ist, dass es einen Personendatensatz erstellt, werden alle mit einer vorhandenen Person übereinstimmenden Übermittlungen auch im Abschnitt **Forms** (Formulare) auf der Seite dieser Person im Bereich "People" angezeigt – nicht nur Formulare vom Typ "People" (Personen).
+Wenn ein **Eigenständiges** Formular so eingestellt ist, dass ein Personendatensatz erstellt wird, erscheinen Einsendungen, die einer bestehenden Person zugeordnet wurden, auch im Bereich **Formulare** auf der Seite dieser Person im Bereich Personen – nicht nur bei Formularen vom Typ „Personen“.
 :::
 
 ## Nächste Schritte
 
-- Erfahren Sie, wie Sie Formulare in [Creating Forms](./creating-forms.md) (Formulare erstellen) erstellen und anpassen
-- Fügen Sie Personen aus Formularübermittlungen Ihrem [Personenverzeichnis](../people/adding-people.md) hinzu, um die Nachverfolgung fortzusetzen
-- [Übermittler automatisch zu einer Gruppe hinzufügen](./creating-forms.md#automatically-adding-submitters-to-a-group), sodass ein Stand-Alone-Anmeldungsformular seine eigene Lister erstellt
+- Erfahren Sie, wie Sie Formulare erstellen und anpassen, unter [Formulare erstellen](./creating-forms.md)
+- Fügen Sie Personen aus Formulareinsendungen Ihrem [Personenverzeichnis](../people/adding-people.md) hinzu, um sie weiter zu betreuen
+- [Absender automatisch einer Gruppe hinzufügen](./creating-forms.md#automatically-adding-submitters-to-a-group), damit ein eigenständiges Anmeldeformular seine eigene Teilnehmerliste aufbaut

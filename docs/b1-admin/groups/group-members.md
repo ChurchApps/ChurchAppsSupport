@@ -117,7 +117,7 @@ A CSV export is useful for importing data into other tools, or keeping offline r
 In the group's member list, click the **Print Roll Sheet** (printer) icon above the list and choose a layout. The page opens in a new tab and your browser's print dialog appears automatically.
 
 - **Attendance Sheet** -- an undated class list with **Present** and **Absent** boxes for teachers to mark by hand. See [Printing a Roll Sheet](../attendance/recording-attendance.md#printing-a-roll-sheet).
-- **Contact Roster** -- a contact list for the group, dated today and headed with your church's name and the group name. Each member has a row with their **Name**, **Phone**, **Email**, and **Address**. Leaders are listed first and marked **Leader**, then everyone else by last name. The phone shown is the member's mobile number, or their home or work number if there is no mobile. Contact details are left blank for anyone who has opted out.
+- **Contact Roster** -- a contact list for the group, dated today and headed with your church logo (the **Light Background Logo** from [Website > Appearance](../website/appearance.md), if you've uploaded one) with your church's name beneath it, and the group name. Each member has a row with their **Name**, **Phone**, **Email**, and **Address**. Leaders are listed first and marked **Leader**, then everyone else by last name. The phone shown is the member's mobile number, or their home or work number if there is no mobile. Contact details are left blank for anyone who has opted out.
 
 :::warning
 A contact roster contains members' personal contact information. Share printed copies only with the group's leaders and others who need them.

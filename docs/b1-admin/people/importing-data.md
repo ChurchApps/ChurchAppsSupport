@@ -179,7 +179,7 @@ Once the transfer is complete, take a few minutes to verify your data:
 
 1. Browse the [People](../people/adding-people.md) page and spot-check a few profiles.
 2. Confirm that names, emails, phone numbers, and addresses came through correctly.
-3. Check that household connections are intact.
+3. Check that household connections are intact. Each person's household role (Head, Spouse, Child, or Other) is carried over when the source has one: the **householdRole** column in a B1 Import Zip, **Family Role** in Breeze or Tithe.ly, and **Family Position** in CCB / Pushpay. Roles such as "Head of Household", "Primary", "Wife", or "Son" are converted to the matching B1 role. Planning Center and Custom CSV / Excel imports have no role column, so those people are set to **Other**; you can change a role from the person's household on the [People](../people/adding-people.md#managing-households) page.
 4. Review any imported groups and giving records.
 
 If you notice issues, you can edit individual profiles from the People page. You can also run the transfer tool again to [export your data](exporting-data.md) as a backup.

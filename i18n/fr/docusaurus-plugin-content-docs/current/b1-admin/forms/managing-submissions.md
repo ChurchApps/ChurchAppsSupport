@@ -1,82 +1,82 @@
 ---
-title: "Gérer les soumissions"
+title: "Gérer les réponses"
 ---
 
-# Gérer les soumissions
+# Gérer les réponses
 
 <div class="article-intro">
 
-Une fois que votre formulaire est actif, les soumissions commenceront à arriver. L'onglet **Form Submissions** vous permet de consulter chaque réponse, de suivre qui a soumis, et d'utiliser les données pour suivre votre congrégation en temps opportun.
+Une fois votre formulaire en ligne, les réponses commencent à arriver. L'onglet **Réponses du formulaire** vous permet de consulter chaque réponse, de suivre qui a répondu et d'utiliser les données pour faire un suivi auprès de votre communauté en temps opportun.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- [Créez un formulaire](./creating-forms.md) avec au moins une question
+- [Créez un formulaire](./creating-forms.md) comportant au moins une question
 - Partagez le formulaire via son URL publique ou intégrez-le sur votre [site web](../website/managing-pages.md)
 
 </div>
 
-## Consulter les soumissions
+## Consulter les réponses
 
-1. Ouvrez le [menu de saut](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche de B1 Admin), développez **People**, et cliquez sur **Forms**.
-2. Cliquez sur le formulaire que vous voulez consulter.
-3. Allez à l'onglet **Form Submissions**.
+1. Ouvrez le [menu de navigation rapide](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche de B1 Admin), développez **Personnes**, puis cliquez sur **Formulaires**.
+2. Cliquez sur le formulaire que vous souhaitez consulter.
+3. Accédez à l'onglet **Réponses du formulaire**.
 
-Vous verrez une liste de toutes les réponses reçues pour ce formulaire. Chaque soumission affiche les informations du répondant et la date à laquelle elle a été soumise, suivie d'une colonne pour chaque question sur le formulaire. Si votre formulaire a beaucoup de questions, faites défiler le tableau horizontalement pour voir le reste des colonnes.
+Vous verrez la liste de toutes les réponses reçues pour ce formulaire. Chaque réponse affiche les informations du répondant et la date d'envoi, suivies d'une colonne pour chaque question du formulaire. Si votre formulaire comporte de nombreuses questions, faites défiler le tableau horizontalement pour voir les autres colonnes.
 
-## Consulter les soumissions individuelles
+## Consulter les réponses individuelles
 
-Cliquez sur n'importe quelle soumission pour consulter les détails complets. Vous verrez toutes les réponses que la personne a fournies pour chaque question du formulaire.
+Cliquez sur une réponse pour en afficher tous les détails. Vous verrez toutes les réponses fournies par la personne pour chaque question du formulaire.
 
-Cliquez sur l'**icône d'impression** à côté de la soumission pour imprimer les réponses remplies de cette personne -- utile pour un dossier papier ou une autorisation signée que vous devez conserver à portée de main. L'impression affiche le nom de votre église en haut. C'est différent d'[imprimer un formulaire vierge](./creating-forms.md#printing-a-blank-form) ; elle imprime les réponses déjà soumises par une personne, pas une copie vide. La même icône d'impression apparaît partout où une soumission est affichée, y compris sur le [profil d'une personne](../people/adding-people.md#working-with-forms).
+Cliquez sur l'**icône d'impression** à côté de la réponse pour imprimer les réponses remplies de cette personne, utile pour un dossier papier ou une autorisation signée que vous devez conserver. L'impression affiche en haut le logo de votre église (le **logo pour fond clair** défini dans [Site web > Apparence](../website/appearance.md), si vous en avez téléversé un), suivi du nom de votre église. Cette fonction est distincte de [l'impression d'un formulaire vierge](./creating-forms.md#printing-a-blank-form) : elle imprime les réponses déjà envoyées par une personne, et non un formulaire vide. L'icône d'impression apparaît partout où une réponse est affichée, y compris sur le [profil d'une personne](../people/adding-people.md#working-with-forms).
 
-## Modifier la personne sur une soumission
+## Changer la personne associée à une réponse
 
-Si une soumission est liée à la mauvaise personne — par exemple, deux membres de la famille partagent une adresse email — vous pouvez la déplacer vers la bonne personne ou la délier.
+Si une réponse est associée à la mauvaise personne, par exemple lorsque deux membres d'une famille partagent la même adresse e-mail, vous pouvez la transférer à la bonne personne ou la dissocier.
 
-1. Dans l'onglet **Form Submissions**, cliquez sur l'**icône Change person** (deux flèches) à côté du nom de la personne. La même icône apparaît à côté d'une soumission sur le [profil d'une personne](../people/adding-people.md#working-with-forms).
-2. Dans la boîte de dialogue **Change person**, recherchez la bonne personne et cliquez sur **Move to this person**.
-3. Ou cliquez sur **Unlink (Anonymous)** pour détacher la soumission d'une personne quelconque. Elle s'affiche alors comme **Anonymous**.
+1. Dans l'onglet **Réponses du formulaire**, cliquez sur l'icône **Changer de personne** (deux flèches) à côté du nom de la personne. Cette même icône apparaît à côté d'une réponse sur le [profil d'une personne](../people/adding-people.md#working-with-forms).
+2. Dans la boîte de dialogue **Changer de personne**, recherchez la bonne personne et cliquez sur **Transférer vers cette personne**.
+3. Ou cliquez sur **Dissocier (Anonyme)** pour détacher la réponse de toute personne. Elle s'affichera alors comme **Anonyme**.
 
-Seul le lien change. Les réponses restent les mêmes, et aucun email de suivi n'est renvoyé.
+Seul le lien est modifié. Les réponses restent les mêmes, et aucun e-mail de suivi n'est renvoyé.
 
 :::info
-Sur les formulaires définis pour créer un dossier de personne, lorsque quelqu'un est connecté au site de votre église lors de la soumission, la soumission est liée à son propre dossier, même si une autre personne dans votre base de données partage son adresse email. Quand vous [fusionnez deux dossiers de personnes](../people/adding-people.md), les soumissions de formulaire de la personne supprimée se déplacent vers la personne que vous conservez.
+Pour les formulaires configurés pour créer une fiche de personne, lorsqu'une personne est connectée au site de votre église au moment de remplir le formulaire, la réponse est associée à sa propre fiche, même si une autre personne de votre base de données partage son adresse e-mail. Lorsque vous [fusionnez deux fiches de personnes](../people/adding-people.md), les réponses de formulaire de la personne supprimée sont transférées à la personne que vous conservez.
 :::
 
-## Comment les soumissions sont collectées
+## Comment les réponses sont recueillies
 
-Les soumissions peuvent provenir de plusieurs canaux :
+Les réponses peuvent arriver par plusieurs canaux :
 
-- **Public URL** -- Si votre formulaire a une URL publique (formulaires autonomes), n'importe qui ayant le lien peut soumettre une réponse. Partagez l'URL par email, sur les réseaux sociaux ou par texto.
-- **Intégré sur votre site web** -- Les formulaires intégrés sur votre site web B1 collectent les soumissions automatiquement quand les visiteurs les remplissent.
-- **Utilisation interne** -- Le personnel et les bénévoles peuvent également soumettre des formulaires au nom d'autres directement dans B1 Admin.
+- **URL publique** — Si votre formulaire dispose d'une URL publique (formulaires autonomes), toute personne disposant du lien peut envoyer une réponse. Partagez l'URL par e-mail, sur les réseaux sociaux ou par SMS.
+- **Intégré sur votre site web** — Les formulaires intégrés sur votre site web B1 recueillent les réponses automatiquement lorsque les visiteurs les remplissent.
+- **Usage interne** — Le personnel et les bénévoles peuvent également remplir des formulaires au nom d'autres personnes directement dans B1 Admin.
 
 :::tip
-Consultez régulièrement l'onglet **Form Submissions** pour les formulaires comme les cartes de visite ou les demandes de prière, afin de pouvoir faire un suivi rapidement.
+Consultez régulièrement l'onglet **Réponses du formulaire** pour les formulaires comme les fiches de visiteurs ou les demandes de prière, afin de pouvoir faire un suivi rapidement.
 :::
 
-## Utiliser les données de soumission
+## Utiliser les données des réponses
 
-Les données collectées via les formulaires peuvent vous aider à :
+Les données recueillies grâce aux formulaires peuvent vous aider à :
 
 - Suivre les inscriptions aux événements et planifier en conséquence
-- Faire un suivi avec les visiteurs ou les nouveaux membres
-- Collecter les commentaires des enquêtes pour la planification du ministère
+- Faire un suivi auprès des visiteurs ou des nouveaux membres
+- Recueillir les avis de sondages pour la planification des ministères
 - Traiter les paiements pour les événements ou les programmes
 
 :::info
-Les membres du formulaire avec les rôles **Admin** ou **View Only** peuvent accéder à l'onglet **Form Submissions**. Assurez-vous que les bonnes personnes de votre équipe ont accès aux formulaires dont elles ont besoin en gérant les rôles dans l'onglet **Form Members**.
+Les membres du formulaire ayant le rôle **Administrateur** ou **Consultation seule** peuvent accéder à l'onglet **Réponses du formulaire**. Assurez-vous que les personnes appropriées de votre équipe ont accès aux formulaires dont elles ont besoin en gérant les rôles dans l'onglet **Membres du formulaire**.
 :::
 
 :::tip
-Si un formulaire **Stand Alone** est défini pour créer un dossier de personne, les soumissions appariées à une personne existante apparaissent également dans la section **Forms** de la page de cette personne dans People — pas seulement les formulaires de type People.
+Si un formulaire **Autonome** est configuré pour créer une fiche de personne, les réponses associées à une personne existante apparaissent aussi dans la section **Formulaires** de la page de cette personne dans Personnes, et pas seulement pour les formulaires de type Personnes.
 :::
 
-## Prochaines étapes
+## Étapes suivantes
 
-- Apprenez comment construire et personnaliser des formulaires dans [Creating Forms](./creating-forms.md)
-- Ajoutez les personnes des soumissions de formulaire à votre [répertoire des personnes](../people/adding-people.md) pour un suivi continu
-- [Ajoutez automatiquement les soumetteurs à un groupe](./creating-forms.md#automatically-adding-submitters-to-a-group) pour qu'un formulaire d'inscription autonome construise sa propre liste
+- Découvrez comment créer et personnaliser des formulaires dans [Créer des formulaires](./creating-forms.md)
+- Ajoutez les personnes issues des réponses de formulaire à votre [annuaire de personnes](../people/adding-people.md) pour un suivi continu
+- [Ajoutez automatiquement les personnes qui répondent à un groupe](./creating-forms.md#automatically-adding-submitters-to-a-group) afin qu'un formulaire d'inscription autonome constitue sa propre liste de membres
